@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 673310, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,7 +15,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk277716 = require("./277716.js");
 
-function h(e) {
+function g(e) {
   let {
     item: t
   } = e, n = i.useCallback(e => {
@@ -41,12 +41,12 @@ function h(e) {
     }
   }, [t]);
   return (0, r.jsxs)(l.DUT, {
-    className: f.k,
+    className: h.k,
     onClick: n,
     children: [(0, r.jsx)(d.A, {
       item: t
     }), (0, r.jsx)("div", {
-      className: f.o,
+      className: h.o,
       children: (0, r.jsx)(u.A, {
         item: t
       })

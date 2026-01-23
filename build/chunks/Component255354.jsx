@@ -2,7 +2,7 @@
 /** chunk id: 255354, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -43,12 +43,12 @@ function u(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = Chunk64700.memo(function(e) {
+let g = Chunk64700.memo(function(e) {
   let {
     rule: t,
     onlyRoles: n = false,
     onChangeRule: i
-  } = e, f = (0, r.jsx)(s.A, {
+  } = e, g = (0, r.jsx)(s.A, {
     guildId: t.guildId,
     selectedChannelIds: t.exemptChannels,
     selectedRoleIds: t.exemptRoles,
@@ -59,20 +59,20 @@ let f = Chunk64700.memo(function(e) {
     disableEveryoneRole: true,
     includeRoleRestrictedPrivateChannels: true
   });
-  return n && (f = (0, r.jsx)(a.A, {
+  return n && (g = (0, r.jsx)(a.A, {
     guildId: t.guildId,
     selectedRoleIds: t.exemptRoles,
     onChange: e => i(u(d({}, t), {
       exemptRoles: e
     })),
-    placeholder: c.intl.string(c.t.aFO1I6),
+    placeholder: o.intl.string(o.t.aFO1I6),
     disableEveryoneRole: true
   })), (0, r.jsxs)("div", {
-    children: [f, (0, r.jsx)(l.Text, {
+    children: [g, (0, r.jsx)(l.Text, {
       color: "text-default",
       variant: "text-xs/normal",
-      className: o.d,
-      children: c.intl.string(c.t.GKlYaS)
+      className: c.d,
+      children: o.intl.string(o.t.GKlYaS)
     })]
   })
 })

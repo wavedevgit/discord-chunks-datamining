@@ -59,12 +59,12 @@ function E() {
   m = {}
 }
 
-function b(e, t) {
+function y(e, t) {
   let n = f[e];
   return null != n && (f[e] = n.filter(e => e.id !== t), delete p[t], delete _[t], n.length !== f[e].length)
 }
 
-function y() {
+function b() {
   E()
 }
 
@@ -72,7 +72,7 @@ function O() {
   E()
 }
 
-function A(e) {
+function v(e) {
   var t, n;
   let {
     channelId: r,
@@ -92,23 +92,23 @@ function A(e) {
   })), null != (n = s.nonce) || s.id
 }
 
-function v(e) {
+function A(e) {
   let {
     channelId: t,
     file: n
   } = e;
-  I(t, n)
+  S(t, n)
 }
 
-function S(e) {
+function I(e) {
   let {
     channelId: t,
     file: n
   } = e;
-  I(t, n)
+  S(t, n)
 }
 
-function I(e, t) {
+function S(e, t) {
   let n = f[e];
   if (null == n) returnfalse;
   f[e] = n.map(e => e.id === t.id ? l({}, e, t) : e);
@@ -121,7 +121,7 @@ function T(e) {
     channelId: t,
     file: n
   } = e;
-  return b(t, n.id)
+  return y(t, n.id)
 }
 
 function C(e) {
@@ -129,7 +129,7 @@ function C(e) {
     channelId: t,
     file: n
   } = e;
-  return b(t, n.id)
+  return y(t, n.id)
 }
 
 function N(e) {
@@ -161,7 +161,7 @@ function w(e) {
     var i;
     null != (i = r.nonce) || r.id
   }
-  I(t, n)
+  S(t, n)
 }
 
 function P(e) {
@@ -191,11 +191,11 @@ class D extends(r = Chunk311907.Ay.Store) {
 }
 o(D, "displayName", "UploadStore");
 let x = new D(Chunk73153.h, {
-  CONNECTION_OPEN: y,
+  CONNECTION_OPEN: b,
   LOGOUT: O,
-  UPLOAD_START: A,
-  UPLOAD_COMPRESSION_PROGRESS: S,
-  UPLOAD_PROGRESS: v,
+  UPLOAD_START: v,
+  UPLOAD_COMPRESSION_PROGRESS: I,
+  UPLOAD_PROGRESS: A,
   UPLOAD_COMPLETE: T,
   UPLOAD_FAIL: C,
   UPLOAD_CANCEL_REQUEST: N,

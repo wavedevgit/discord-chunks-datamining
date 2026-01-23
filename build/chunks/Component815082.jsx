@@ -61,17 +61,17 @@ let w = e => {
         return null == (e = L[t]) ? true : e[n]
       }, [L, U]);
     switch (null == G ? true : G.type) {
-      case S.bm.EMOJI:
+      case I.bm.EMOJI:
         t = null == G ? true : G.emoji;
         break;
-      case S.bm.EXPAND_OR_COLLAPSE_EMOJIS:
+      case I.bm.EXPAND_OR_COLLAPSE_EMOJIS:
         t = {
           type: "EXPAND_OR_COLLAPSE_EMOJI",
           guildId: null == G ? true : G.guildId,
           allNamesString: null == G ? true : G.name
         };
         break;
-      case S.bm.SOUNDMOJI:
+      case I.bm.SOUNDMOJI:
       default:
         t = null
     }
@@ -83,23 +83,23 @@ let w = e => {
       W = (0, a.bG)([c.Ay], () => c.Ay.expandedSectionsByGuildIds),
       {
         newlyAddedEmojis: K
-      } = (0, A.A)(j, M),
-      z = (null == G ? true : G.type) === S.bm.EMOJI ? G.subCategory : I.tm.NONE;
+      } = (0, v.A)(j, M),
+      z = (null == G ? true : G.type) === I.bm.EMOJI ? G.subCategory : S.tm.NONE;
     if (i.useEffect(() => {
         let e = Date.now();
         return () => {
-          Date.now() - e >= N && R(t) && z !== I.tm.NONE && (z === I.tm.NEWLY_ADDED_EMOJI && null !== t && t.type === u.i.GUILD && (0, f.mz)(t.guildId, K[0].id), null != U.source && (0, O.yB)({
+          Date.now() - e >= N && R(t) && z !== S.tm.NONE && (z === S.tm.NEWLY_ADDED_EMOJI && null !== t && t.type === u.i.GUILD && (0, f.mz)(t.guildId, K[0].id), null != U.source && (0, O.yB)({
             emoji: t,
             subCategory: z,
             position: G.columnIndex + 1,
-            newlyAddedHighlight: z === I.tm.NEWLY_ADDED_EMOJI && d.A.isNewerThanLastSeen(j, t.id)
+            newlyAddedHighlight: z === S.tm.NEWLY_ADDED_EMOJI && d.A.isNewerThanLastSeen(j, t.id)
           }))
         }
       }), null == t) return null;
     let q = h.A.theme;
     if (R(t)) {
       var X;
-      let e = null != t.id ? b.Ay.getEmojiURL({
+      let e = null != t.id ? y.Ay.getEmojiURL({
         id: t.id,
         animated: H && t.animated,
         size: 28
@@ -109,7 +109,7 @@ let w = e => {
         className: C.J_,
         children: "surrogates" in t ? t.surrogates : null
       }) : (0, r.jsx)("img", {
-        alt: null != (X = (0, y.N)(t)) ? X : "",
+        alt: null != (X = (0, b.N)(t)) ? X : "",
         src: e,
         className: C.Zg
       })
@@ -128,12 +128,12 @@ let w = e => {
         alt: ""
       })
     }
-    let Z = null != V ? (0, r.jsx)(v.A, {
+    let Z = null != V ? (0, r.jsx)(A.A, {
       className: C.__invalid_guildIcon,
       guild: V,
       shouldAnimate: !B && F
     }) : null;
-    D = "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? W.has(t.guildId) ? T.intl.string(T.t["/K2RDH"]) : T.intl.string(T.t.NZI2Zk) : (0, y.N)(t);
+    D = "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? W.has(t.guildId) ? T.intl.string(T.t["/K2RDH"]) : T.intl.string(T.t.NZI2Zk) : (0, b.N)(t);
     let Q = w({
       inspectedEmoji: t,
       channel: k,

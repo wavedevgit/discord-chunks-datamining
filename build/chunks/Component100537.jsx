@@ -40,13 +40,13 @@ let w = {
 function L(e) {
   let {
     frame: t
-  } = e, n = (0, m.h)(t.applicationId), l = (0, d.A)(), {
+  } = e, n = (0, A.h)(t.applicationId), l = (0, d.A)(), {
     selectedChannelId: L,
     selectedVoiceChannelId: R
   } = (0, s.cf)([I.A], () => ({
     selectedChannelId: I.A.getChannelId(),
     selectedVoiceChannelId: I.A.getVoiceChannelId()
-  })), D = (0, s.bG)([b.A], () => null != R && L === R && b.A.getChatOpen(R), [L, R]), M = (0, s.bG)([_.Ay], () => _.Ay.callChatSidebarWidth), k = (0, u.rdh)(o.A.modules.chat.RESIZE_HANDLE_WIDTH), U = i.useRef(null), G = i.useRef(null), [V, B] = i.useState({
+  })), D = (0, s.bG)([_.A], () => null != R && L === R && _.A.getChatOpen(R), [L, R]), M = (0, s.bG)([b.Ay], () => b.Ay.callChatSidebarWidth), k = (0, u.rdh)(o.A.modules.chat.RESIZE_HANDLE_WIDTH), U = i.useRef(null), G = i.useRef(null), [V, B] = i.useState({
     width: 0,
     height: 0
   }), H = i.useCallback(() => {
@@ -82,22 +82,22 @@ function L(e) {
   }, [t.applicationId, l]);
   let Y = V.width / Math.max(V.height, 1) < j.B5,
     K = 0,
-    z = 0,
-    W = (0, f.A)(null == n ? true : n.id);
-  if (!W) {
+    W = 0,
+    q = (0, h.A)(null == n ? true : n.id);
+  if (!q) {
     let e = V.width,
       t = V.height;
-    Y ? ((t = V.width / j.B5) > V.height && (e = (t = V.height) * j.B5), z = (V.height - t) / 2) : ((e = Math.min(V.height * j.B5, V.width)) > V.width && (t = (e = V.width) / j.B5), K = (V.width - e) / 2)
+    Y ? ((t = V.width / j.B5) > V.height && (e = (t = V.height) * j.B5), W = (V.height - t) / 2) : ((e = Math.min(V.height * j.B5, V.width)) > V.width && (t = (e = V.width) / j.B5), K = (V.width - e) / 2)
   }
-  let q = j.E8.NO_CHAT,
-    Q = (0, A.G)();
+  let z = j.E8.NO_CHAT,
+    Q = (0, f.G)();
   if (null == n) return null;
   let X = (null != M ? M : T.da6) + k,
     Z = (0, C.YY)(t);
   return (0, r.jsx)(u.NPJ, {
     theme: T.NJ8.DARK,
     children: e => (0, r.jsxs)("div", {
-      className: a()(P.iE, w[q], e),
+      className: a()(P.iE, w[z], e),
       ref: U,
       style: {
         right: D && !Number.isNaN(X) ? X : 0
@@ -106,13 +106,13 @@ function L(e) {
         className: P.lq,
         children: (0, r.jsx)("div", {
           className: a()(P.ht, {
-            [P.kK]: W
+            [P.kK]: q
           }),
           style: {
             paddingLeft: K,
             paddingRight: K,
-            paddingTop: z,
-            paddingBottom: z
+            paddingTop: W,
+            paddingBottom: W
           },
           ref: G,
           children: (0, r.jsx)(S.A, {
@@ -153,7 +153,7 @@ function L(e) {
         }), Q ? (0, r.jsx)(y.A, {
           popoutOpen: false,
           onOpenPopout: () => {
-            (0, g.zV)(T.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, h.A)({
+            (0, m.zV)(T.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, g.A)({
               onConfirm: async () => {
                 (null == n ? true : n.id) != null && await v.A.refreshProxyTicket({
                   applicationId: n.id

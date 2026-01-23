@@ -52,11 +52,11 @@ class _ extends(r = Chunk64700.PureComponent) {
       onVolumeShow: g,
       onVolumeHide: E
     } = this.props, {
-      hovered: b,
-      focused: y,
+      hovered: y,
+      focused: b,
       dragging: O
-    } = this.state, A = l.HKD;
-    return f || m === _ ? A = l._RO : m < h / 2 && (A = l.S24), (0, i.jsxs)("div", {
+    } = this.state, v = l.HKD;
+    return f || m === _ ? v = l._RO : m < h / 2 && (v = l.S24), (0, i.jsxs)("div", {
       className: o()(n, d.kL),
       onMouseEnter: () => {
         clearTimeout(this._hoverTimeout), this.setState({
@@ -76,7 +76,7 @@ class _ extends(r = Chunk64700.PureComponent) {
       onKeyDown: this.handleKeyDown,
       children: [(0, i.jsx)("div", {
         className: o()(d.QS, r, {
-          [d.OZ]: b || y || O
+          [d.OZ]: y || b || O
         }),
         onMouseEnter: () => {
           clearTimeout(this._hoverTimeout), this.setState({
@@ -102,7 +102,7 @@ class _ extends(r = Chunk64700.PureComponent) {
         className: d.bk,
         "aria-label": u.intl.string(u.t["19lt24"]),
         onClick: this.handleToggleMute,
-        children: (0, i.jsx)(A, {
+        children: (0, i.jsx)(v, {
           color: t,
           className: e
         })

@@ -2,9 +2,9 @@
 /** chunk id: 935159, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Lx: () => i,
-  Nt: () => s,
+  Nt: () => a,
   iF: () => l,
-  pE: () => a
+  pE: () => s
 });
 var Chunk73153 = require("./73153.js");
 
@@ -27,14 +27,14 @@ function i(e) {
   })
 }
 
-function a(e) {
+function s(e) {
   r.h.dispatch({
     type: "UPCOMING_GUILD_EVENT_NOTICE_SEEN",
     guildEventId: e
   })
 }
 
-function s(e) {
+function a(e) {
   r.h.dispatch({
     type: "EVENT_BANNER_DISMISS",
     eventId: e

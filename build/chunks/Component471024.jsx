@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Ay: () => O,
-  de: () => A,
-  sI: () => y
+  de: () => m,
+  sI: () => A
 });
 var i, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -25,16 +25,16 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let f = e => e.stopPropagation(),
-  b = () => (0, r.jsx)("div", {
+  g = () => (0, r.jsx)("div", {
     className: u.tR,
     onClick: f,
     onMouseEnter: f,
     onMouseOver: f
   }),
-  g = () => (0, r.jsx)("div", {
+  y = () => (0, r.jsx)("div", {
     className: u.yF
   }),
-  y = (e, t, n) => (0, r.jsx)("div", {
+  A = (e, t, n) => (0, r.jsx)("div", {
     className: u.qD,
     children: d.intl.format(n, {
       keybind: t,
@@ -44,11 +44,11 @@ let f = e => e.stopPropagation(),
       }, n)
     })
   }),
-  A = (e, t) => (0, r.jsx)("div", {
+  m = (e, t) => (0, r.jsx)("div", {
     className: u.g2,
     children: t
   });
-class m extends(i = Chunk64700.PureComponent) {
+class b extends(i = Chunk64700.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     let {
       expand: n
@@ -97,11 +97,11 @@ class m extends(i = Chunk64700.PureComponent) {
     if ("function" == typeof e) {
       let i = e(n, t);
       return null != i ? (0, r.jsxs)(s.Fragment, {
-        children: [(0, r.jsx)(g, {}), i]
+        children: [(0, r.jsx)(y, {}), i]
       }, "hint-custom") : null
     }
     return (0, r.jsxs)(s.Fragment, {
-      children: [(0, r.jsx)(g, {}), (0, r.jsx)("div", {
+      children: [(0, r.jsx)(y, {}), (0, r.jsx)("div", {
         className: "string" == typeof e ? u.dx : true,
         children: e
       }, "hint-text")]
@@ -124,11 +124,11 @@ class m extends(i = Chunk64700.PureComponent) {
     if (null != this.props.renderFooter) {
       let e = this.props.renderFooter(o);
       return null != e ? (0, r.jsxs)(s.Fragment, {
-        children: [(0, r.jsx)(g, {}), e]
+        children: [(0, r.jsx)(y, {}), e]
       }, "footer-custom-content") : null
     }
     return null != n || null != i ? (0, r.jsxs)(s.Fragment, {
-      children: [(0, r.jsx)(g, {}), (0, r.jsxs)(a.ButtonGroup, {
+      children: [(0, r.jsx)(y, {}), (0, r.jsxs)(a.ButtonGroup, {
         fullWidth: true,
         children: [null != n ? (0, r.jsx)(a.Button, {
           variant: "active",
@@ -200,7 +200,7 @@ class m extends(i = Chunk64700.PureComponent) {
         [u.gr]: true,
         [u.vk]: null != e && !t
       }),
-      children: [this.renderCloseButton(), this.renderContent(), this.renderFooter(), t ? (0, r.jsx)(b, {}) : null]
+      children: [this.renderCloseButton(), this.renderContent(), this.renderFooter(), t ? (0, r.jsx)(g, {}) : null]
     })
   }
   constructor(e) {
@@ -235,9 +235,9 @@ class m extends(i = Chunk64700.PureComponent) {
     }
   }
 }
-p(m, "defaultProps", {
+p(b, "defaultProps", {
   maxBodyLines: true,
   expand: false,
   disabled: false
 });
-let O = m
+let O = b

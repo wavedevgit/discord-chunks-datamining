@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 933057, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function b(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,40 +48,40 @@ function g(e, t) {
   }), e
 }
 
-function m(e) {
+function b(e) {
   let {
     channel: t
-  } = e, n = (0, u.X)(t), [m, A] = l.useState(false), y = l.useRef(null), O = (0, i.bG)([o.A], () => null != t.guild_id && o.A.isLurking(t.guild_id));
+  } = e, n = (0, u.X)(t), [b, A] = l.useState(false), y = l.useRef(null), _ = (0, i.bG)([o.A], () => null != t.guild_id && o.A.isLurking(t.guild_id));
   if (l.useEffect(() => {
       let e = () => A(true);
-      return c._.subscribe(p.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
-        c._.unsubscribe(p.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
+      return c._.subscribe(h.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
+        c._.unsubscribe(h.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
       }
-    }, []), O) return null;
-  let j = h.intl.string(h.t.h850Ss);
-  return (0, r.jsx)(a.YNO, {
+    }, []), _) return null;
+  let O = f.intl.string(f.t.h850Ss);
+  return (0, r.jsx)(s.YNO, {
     targetElementRef: y,
-    shouldShow: m,
-    animation: a.YNO.Animation.NONE,
+    shouldShow: b,
+    animation: s.YNO.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: false,
     onRequestClose: () => A(false),
-    renderPopout: e => (0, r.jsx)(d.A, g(b({}, e), {
+    renderPopout: e => (0, r.jsx)(d.A, m(g({}, e), {
       channel: t,
       navId: "thread-context",
-      label: h.intl.string(h.t["1NBjqb"])
+      label: f.intl.string(f.t["1NBjqb"])
     })),
     children: (e, t) => {
       let {
         isShown: l
       } = t;
-      return (0, r.jsx)(s.Ay.Icon, g(b({}, e), {
+      return (0, r.jsx)(a.Ay.Icon, m(g({}, e), {
         ref: y,
         onClick: () => A(e => !e),
-        tooltip: l ? null : j,
-        icon: n === f.CP.NO_MESSAGES ? a.a_I : a.XFE,
-        "aria-label": j,
+        tooltip: l ? null : O,
+        icon: n === p.CP.NO_MESSAGES ? s.a_I : s.XFE,
+        "aria-label": O,
         selected: l
       }))
     }

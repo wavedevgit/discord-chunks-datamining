@@ -1,7 +1,7 @@
 /** Chunk was on 24921 **/
-/** chunk id: 969611, original params: e,t,a (module,exports,require) **/
+/** chunk id: 969611, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  default: () => v
+  default: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,88 +15,88 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk670455 = require("./670455.js"),
   Chunk985018 = require("./985018.jsx");
-let p = [Chunk360469.CS.OTHER, Chunk360469.CS.ADS, Chunk360469.CS.NOT_FUN];
+let m = [Chunk360469.CS.OTHER, Chunk360469.CS.ADS, Chunk360469.CS.NOT_FUN];
 
-function v(e) {
-  var t;
+function f(t) {
+  var e;
   let {
-    channel: v,
-    embeddedActivityLocation: g,
-    activityApplication: m,
-    onClose: O,
-    transitionState: y,
+    channel: f,
+    embeddedActivityLocation: v,
+    activityApplication: g,
+    onClose: y,
+    transitionState: O,
     analyticsData: S
-  } = e;
-  n.useEffect(() => {
+  } = t;
+  l.useEffect(() => {
     r.default.track(u.HAw.OPEN_MODAL, {
       type: "Activity Feedback Modal",
-      application_id: m.id,
-      application_name: m.name,
-      game_id: m.id,
+      application_id: g.id,
+      application_name: g.name,
+      game_id: g.id,
       source: "Activity End"
     })
-  }, [m]);
-  let A = (null == (t = m.embeddedActivityConfig) ? true : t.displays_advertisements) === true;
-  return (0, i.jsx)(c.A, {
+  }, [g]);
+  let A = (null == (e = g.embeddedActivityConfig) ? true : e.displays_advertisements) === true;
+  return (0, n.jsx)(c.A, {
     modalType: "activity",
-    header: _.intl.formatToPlainString(_.t.QXYwoD, {
-      applicationName: m.name
+    header: p.intl.formatToPlainString(p.t.QXYwoD, {
+      applicationName: g.name
     }),
-    body: _.intl.string(_.t["9hk2KF"]),
-    problemTitle: _.intl.string(_.t.g1q5fr),
-    problems: (0, o.A)(true, A),
-    freeformNeededProblems: p,
-    onSubmit: function(e) {
-      var t;
+    body: p.intl.string(p.t["9hk2KF"]),
+    problemTitle: p.intl.string(p.t.g1q5fr),
+    problems: (0, _.A)(true, A),
+    freeformNeededProblems: m,
+    onSubmit: function(t) {
+      var e;
       let {
-        rating: n,
+        rating: l,
         problem: c,
-        dontShowAgain: o,
-        feedback: b
-      } = e;
-      o && (r.default.track(u.HAw.ACTIVITY_REPORT_DONT_SHOW, {
-        application_id: m.id,
-        rating: n
-      }), (0, d.n3)({
-        feedbackType: s.MW.ACTIVITY,
+        dontShowAgain: _,
+        feedback: s
+      } = t;
+      _ && (r.default.track(u.HAw.ACTIVITY_REPORT_DONT_SHOW, {
+        application_id: g.id,
+        rating: l
+      }), (0, o.n3)({
+        feedbackType: b.MW.ACTIVITY,
         location: "ActivityFeedback"
-      })), null == n || ((0, f.A)({
-        problem: null != (t = null == c ? true : c.value) ? t : null,
-        channel: v,
-        embeddedActivityLocation: g,
-        feedback: b,
-        activityApplication: m,
+      })), null == l || ((0, d.A)({
+        problem: null != (e = null == c ? true : c.value) ? e : null,
+        channel: f,
+        embeddedActivityLocation: v,
+        feedback: s,
+        activityApplication: g,
         analyticsData: S,
         location: "Activity End",
-        rating: n
-      }), null != c && (0, l.mMO)(async () => {
+        rating: l
+      }), null != c && (0, a.mMO)(async () => {
         let {
-          default: e
-        } = await a.e("37836").then(a.bind(a, 845671));
-        return t => (0, i.jsx)(e, function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var a = null != arguments[t] ? arguments[t] : {},
-              i = Object.keys(a);
-            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(a, e).enumerable
-            }))), i.forEach(function(t) {
-              var i;
-              i = a[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
+          default: t
+        } = await i.e("37836").then(i.bind(i, 845671));
+        return e => (0, n.jsx)(t, function(t) {
+          for (var e = 1; e < arguments.length; e++) {
+            var i = null != arguments[e] ? arguments[e] : {},
+              n = Object.keys(i);
+            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(t) {
+              return Object.getOwnPropertyDescriptor(i, t).enumerable
+            }))), n.forEach(function(e) {
+              var n;
+              n = i[e], e in t ? Object.defineProperty(t, e, {
+                value: n,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = i
+              }) : t[e] = n
             })
           }
-          return e
+          return t
         }({
-          body: _.intl.string(_.t["zuHR+y"])
-        }, t))
+          body: p.intl.string(p.t["zuHR+y"])
+        }, e))
       }))
     },
-    onClose: O,
-    transitionState: y,
-    otherKey: b.CS.OTHER
+    onClose: y,
+    transitionState: O,
+    otherKey: s.CS.OTHER
   })
 }

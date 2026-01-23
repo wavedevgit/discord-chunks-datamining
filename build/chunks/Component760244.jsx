@@ -1,7 +1,7 @@
 /** Chunk was on 13419 **/
-/** chunk id: 760244, original params: e,t,a (module,exports,require) **/
+/** chunk id: 760244, original params: e,t,s (module,exports,require) **/
 require.d(exports, {
-  A: () => i
+  A: () => c
 }), require("./896048.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,30 +12,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk595244 = require("./595244.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function i() {
-  let e, t = (0, n.zy)(),
-    [a, i] = c.useState(false),
-    [p, _] = c.useState(false);
-  return c.useEffect(() => {
+function c() {
+  let e, t = (0, r.zy)(),
+    [s, c] = o.useState(false),
+    [u, d] = o.useState(false);
+  return o.useEffect(() => {
     !async function() {
-      let e = (0, d.parse)(t.search);
+      let e = (0, _.parse)(t.search);
       try {
-        var a;
-        await (0, f.Kf)(null != (a = e.token) ? a : ""), i(true)
+        var s;
+        await (0, n.Kf)(null != (s = e.token) ? s : ""), c(true)
       } catch (e) {
-        _(true)
+        d(true)
       }
     }()
-  }, [t.search]), e = a ? (0, s.jsx)(r.jX, {
-    message: o.intl.string(o.t.Tqu3OQ),
+  }, [t.search]), e = s ? (0, a.jsx)(p.jX, {
+    message: l.intl.string(l.t.Tqu3OQ),
     showsCloseWindowText: true
-  }) : p ? (0, s.jsx)(r.gz, {
-    message: o.intl.string(o.t.J8LsCs),
+  }) : u ? (0, a.jsx)(p.gz, {
+    message: l.intl.string(l.t.J8LsCs),
     showsCloseWindowText: true
-  }) : (0, s.jsx)(r.Ay, {
-    message: o.intl.string(o.t.BAcf6a),
+  }) : (0, a.jsx)(p.Ay, {
+    message: l.intl.string(l.t.BAcf6a),
     spinner: true
-  }), (0, s.jsx)(b.$, {
+  }), (0, a.jsx)(i.$, {
     children: e
   })
 }

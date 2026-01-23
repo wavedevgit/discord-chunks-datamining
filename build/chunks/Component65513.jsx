@@ -98,15 +98,15 @@ function T(e) {
     onQuestCtaClick: n
   } = e, l = (0, s.zy)(), T = (0, s.W6)(), {
     enabled: j
-  } = (0, h.Z)({
+  } = (0, g.Z)({
     location: E.rE.QUEST_HOME_DESKTOP
   }), x = (0, p.Ay)(), [P, w] = i.useState("display-lg"), L = i.useCallback(e => {
     e.contentRect.width < 500 ? w("display-md") : w("display-lg")
   }, []), R = (0, d.w)(L, [], {
     fireOnMount: true
-  }), D = (0, c.bG)([m.A], () => m.A.quests);
+  }), D = (0, c.bG)([A.A], () => A.A.quests);
   return i.useEffect(() => {
-    A.default.track(O.HAw.QUEST_CONTENT_VIEWED, C(S({}, (0, g.fF)(b.uF.QUEST_HOME_TAKEOVER)), {
+    f.default.track(O.HAw.QUEST_CONTENT_VIEWED, C(S({}, (0, m.fF)(_.uF.QUEST_HOME_TAKEOVER)), {
       quest_id: t.campaignId,
       is_targeted: false
     }))
@@ -155,12 +155,12 @@ function T(e) {
           }), (0, r.jsxs)(u.ButtonGroup, {
             children: [(0, r.jsx)(u.Button, {
               onClick: () => {
-                (0, f.A)(t.ctaSponsorUrl.url), A.default.track(O.HAw.QUEST_CONTENT_CLICKED, S({
+                (0, h.A)(t.ctaSponsorUrl.url), f.default.track(O.HAw.QUEST_CONTENT_CLICKED, S({
                   quest_id: t.campaignId,
-                  cta_name: g.Cy.OPEN_GAME_LINK,
+                  cta_name: m.Cy.OPEN_GAME_LINK,
                   click_id: (0, o.A)(),
                   is_targeted: false
-                }, (0, g.fF)(b.uF.QUEST_HOME_TAKEOVER)))
+                }, (0, m.fF)(_.uF.QUEST_HOME_TAKEOVER)))
               },
               size: "md",
               text: t.ctaSponsorUrl.title,
@@ -170,15 +170,15 @@ function T(e) {
                 T.replace(C(S({}, l), {
                   hash: true
                 })), null == n || n(), window.requestIdleCallback(() => {
-                  (0, _.navigateToQuestHome)({
+                  (0, b.navigateToQuestHome)({
                     questId: e.questId
                   })
-                }), A.default.track(O.HAw.QUEST_CONTENT_CLICKED, S({
+                }), f.default.track(O.HAw.QUEST_CONTENT_CLICKED, S({
                   quest_id: t.campaignId,
-                  cta_name: g.Cy.LEARN_MORE,
+                  cta_name: m.Cy.LEARN_MORE,
                   click_id: (0, o.A)(),
                   is_targeted: false
-                }, (0, g.fF)(b.uF.QUEST_HOME_TAKEOVER)))
+                }, (0, m.fF)(_.uF.QUEST_HOME_TAKEOVER)))
               },
               size: "md",
               text: e.title,

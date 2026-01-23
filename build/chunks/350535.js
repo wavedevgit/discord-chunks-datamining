@@ -6,8 +6,8 @@ require.d(exports, {
   OH: () => k,
   Qd: () => T,
   Xt: () => G,
-  Z0: () => A,
-  _$: () => S,
+  Z0: () => v,
+  _$: () => I,
   dI: () => U,
   pi: () => M,
   sg: () => V
@@ -64,20 +64,20 @@ let m = __OVERLAY__ ? Chunk650583.Nu : (0, Chunk723702.isLinux)() ? Chunk650583.
   g = s().invert(Chunk650583.C8);
 g["223"] = "`", Object.freeze(g);
 let E = Object.freeze(s().invert(Chunk650583.V8)),
-  b = s().invert(Chunk650583.Nu);
-b["223"] = "`", Object.freeze(b);
-let y = s().invert(null != m ? m : {});
+  y = s().invert(Chunk650583.Nu);
+y["223"] = "`", Object.freeze(y);
+let b = s().invert(null != m ? m : {});
 
 function O(e) {
   return "+" === e ? "plus" : e
 }
 
-function A(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : S();
+function v(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : I();
   return t === d.g$.BROWSER ? i()(e) : m[e]
 }
 
-function v(e, t, n) {
+function A(e, t, n) {
   if (null != n && n !== d.g$.WINDOWS || !u.Kh.has(e)) return t;
   let r = (0, u.Ze)().get("Backquote");
   if (t === r) return O(t);
@@ -90,11 +90,11 @@ function v(e, t, n) {
   return "\\" === t && "`" === r ? t : null == a ? O(null != r ? r : t) : O(a.key)
 }
 
-function S() {
+function I() {
   return (0, c.isLinux)() ? d.g$.LINUX : (0, c.isMac)() ? d.g$.MACOS : (0, c.isWindows)() ? d.g$.WINDOWS : __OVERLAY__ ? d.g$.WINDOWS : d.g$.BROWSER
 }
 
-function I(e) {
+function S(e) {
   let t, [, n, r] = e;
   switch (r) {
     case d.g$.LINUX:
@@ -104,7 +104,7 @@ function I(e) {
       t = E["" + n];
       break;
     case d.g$.WINDOWS:
-      t = b["" + n];
+      t = y["" + n];
       break;
     case d.g$.BROWSER: {
       let e = i()(n);
@@ -113,20 +113,20 @@ function I(e) {
       break
     }
     default:
-      t = y["" + n]
+      t = b["" + n]
   }
   return null != t ? t : null
 }
 
 function T(e) {
-  let [, t, n] = e, r = I(e);
-  if (null != r) return v(t, r, n);
+  let [, t, n] = e, r = S(e);
+  if (null != r) return A(t, r, n);
   let i = (0, u.Pk)(t);
-  return null != i ? v(i.keyCode, i.key, n) : null
+  return null != i ? A(i.keyCode, i.key, n) : null
 }
 
 function C(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : S(),
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : I(),
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.zY.KEYBOARD_KEY,
     r = R(e, t, n);
   if (null != r) return r;
@@ -140,7 +140,7 @@ function N(e) {
 }
 
 function R(e) {
-  let t, n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : S(),
+  let t, n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : I(),
     r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.zY.KEYBOARD_KEY;
   if (null == e) return null;
   let a = r === d.zY.KEYBOARD_KEY || r === d.zY.KEYBOARD_MODIFIER_KEY;
@@ -170,7 +170,7 @@ function R(e) {
       throw Error("Unrecognized DeviceType ".concat(r, "."))
   }
   return null != t ? t : null
-}(0, Chunk723702.isMac)() || (y["223"] = "`"), Object.freeze(y);
+}(0, Chunk723702.isMac)() || (b["223"] = "`"), Object.freeze(b);
 let w = [
     ["META", "⌘"],
     ["CMD", "⌘"],
@@ -242,7 +242,7 @@ function M(e) {
 }
 
 function k(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : S(),
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : I(),
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.zY.KEYBOARD_KEY;
   return e.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, o.A.modKey).split("+").map(e => e.trim().replace("plus", "+")).reduce((e, r) => {
     let i = C(D(r), t, n);
@@ -253,7 +253,7 @@ function k(e) {
 function U(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     r = e.map(e => {
-      let [t, n, r] = e, i = "number" == typeof r ? r : S();
+      let [t, n, r] = e, i = "number" == typeof r ? r : I();
       if (t === d.zY.KEYBOARD_KEY || t === d.zY.KEYBOARD_MODIFIER_KEY) {
         var a;
         return null != (a = T(null != i ? [t, n, i] : [t, n])) ? a : "UNK".concat(n)

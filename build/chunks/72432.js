@@ -24,7 +24,7 @@ var Chunk141931 = require("./141931.js"),
   Chunk753070 = require("./753070.js"),
   Chunk765682 = require("./765682.js");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,20 +33,20 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,8 +57,8 @@ function S(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -72,7 +72,7 @@ function C(e) {
   if (T(e)) return {
     pid: e.pid
   };
-  let n = (0, b.A)(true, e, a.Ay.getRunningGames()),
+  let n = (0, y.A)(true, e, a.Ay.getRunningGames()),
     i = !(0, _.isWindows)() || null == n || (null == e ? true : e.id.startsWith(r.fS.CAMERA)),
     s = null != n ? n.pid : null;
   return i || null == s ? (null == s && (null == (t = e.id) ? true : t.startsWith("prepicked:")) && (s = E.Ay.getLastPickedContentPID()), {
@@ -85,7 +85,7 @@ function C(e) {
   }
 }
 async function N(e, t) {
-  var n, _, E, b, A, S, T, N;
+  var n, _, E, y, v, I, T, N;
   let R = p.default.getCurrentUser(),
     w = f.A.getVoiceChannelId(),
     P = c.A.getChannel(w),
@@ -107,19 +107,19 @@ async function N(e, t) {
   } = (0, h.eO)({
     location: "startStreamWithSource"
   });
-  G !== y.jQ.PRESET_AUTO || V || (G = y.jQ.PRESET_VIDEO);
-  let F = G === y.jQ.PRESET_AUTO ? y.jQ.PRESET_VIDEO : G,
+  G !== b.jQ.PRESET_AUTO || V || (G = b.jQ.PRESET_VIDEO);
+  let F = G === b.jQ.PRESET_AUTO ? b.jQ.PRESET_VIDEO : G,
     [B, H] = null != (_ = (0, g.A)(F, R, x)) ? _ : [],
     Y = null != (E = null != B ? B : null == t ? true : t.resolution) ? E : M,
-    W = null != (b = null != H ? H : null == t ? true : t.fps) ? b : k,
-    K = null != (A = null == t ? true : t.previewDisabled) ? A : o.uh.getSetting(),
-    z = null != (S = null == t ? true : t.soundshareEnabled) ? S : U;
-  return (0, m.A)(F, Y, W, R, x, P) || (G = y.jQ.PRESET_VIDEO, Y = y.on.RESOLUTION_720, W = y.kn.FPS_30), (0, i.Xd)({
+    W = null != (y = null != H ? H : null == t ? true : t.fps) ? y : k,
+    K = null != (v = null == t ? true : t.previewDisabled) ? v : o.uh.getSetting(),
+    z = null != (I = null == t ? true : t.soundshareEnabled) ? I : U;
+  return (0, m.A)(F, Y, W, R, x, P) || (G = b.jQ.PRESET_VIDEO, Y = b.on.RESOLUTION_720, W = b.kn.FPS_30), (0, i.Xd)({
     preset: G,
     resolution: Y,
     frameRate: W,
     soundshareEnabled: z
-  }), (0, i.XI)(D, w, I(v({}, C(L)), {
+  }), (0, i.XI)(D, w, S(A({}, C(L)), {
     audioSourceId: (null == (N = L.id) ? true : N.startsWith(r.fS.CAMERA)) ? null == t ? true : t.audioSourceId : true,
     sound: z,
     previewDisabled: K,

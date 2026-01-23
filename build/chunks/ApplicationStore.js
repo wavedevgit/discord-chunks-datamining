@@ -57,17 +57,17 @@ let d = [],
   },
   E = 10;
 
-function b(e) {
+function y(e) {
   let t = f.get(e.id);
   h.set(e.id, Date.now());
   let n = e;
   for (let r of (null != t && (n = t.mergeFromApplicationUpdate(e)), f.set(e.id, n), _.set(e.name.toLowerCase(), n), e.aliases)) _.set(r.toLowerCase(), n);
   if (null != e.linkedGames)
-    for (let t of e.linkedGames) null != t.application && b(t.application instanceof s.Ay ? t.application : s.Ay.createFromServer(t.application));
+    for (let t of e.linkedGames) null != t.application && y(t.application instanceof s.Ay ? t.application : s.Ay.createFromServer(t.application));
   m.delete(e.id)
 }
 
-function y() {
+function b() {
   f.clear(), p.clear(), _.clear(), h.clear(), m.clear()
 }
 
@@ -78,34 +78,34 @@ function O(e) {
     }
   } = e;
   if (null == t || 0 === t.length) returnfalse;
-  for (let e of t) b(e)
-}
-
-function A(e) {
-  let {
-    application: t
-  } = e;
-  b(t)
+  for (let e of t) y(e)
 }
 
 function v(e) {
+  let {
+    application: t
+  } = e;
+  y(t)
+}
+
+function A(e) {
   let {
     storefront: {
       application: t
     }
   } = e;
   if (null == t) returnfalse;
-  b(t)
-}
-
-function S(e) {
-  let {
-    applications: t
-  } = e;
-  for (let e of t) b(new s.Ay(e))
+  y(t)
 }
 
 function I(e) {
+  let {
+    applications: t
+  } = e;
+  for (let e of t) y(new s.Ay(e))
+}
+
+function S(e) {
   let {
     applicationId: t
   } = e, n = m.get(t);
@@ -127,7 +127,7 @@ function C(e) {
 }
 
 function N(e) {
-  b(s.Ay.createFromServer(e))
+  y(s.Ay.createFromServer(e))
 }
 
 function R(e) {
@@ -174,14 +174,14 @@ function D(e) {
   let {
     libraryApplications: t
   } = e;
-  for (let e of t) b(s.Ay.createFromServer(e.application))
+  for (let e of t) y(s.Ay.createFromServer(e.application))
 }
 
 function x(e) {
   let {
     applications: t
   } = e;
-  for (let e of t) b(s.Ay.createFromServer(e))
+  for (let e of t) y(s.Ay.createFromServer(e))
 }
 
 function L(e) {
@@ -224,7 +224,7 @@ function k(e) {
   for (let {
       sku: e
     }
-    of t)(null == e ? true : e.application) != null && (b(s.Ay.createFromServer(e.application)), n = true);
+    of t)(null == e ? true : e.application) != null && (y(s.Ay.createFromServer(e.application)), n = true);
   return n
 }
 
@@ -233,7 +233,7 @@ function U(e) {
     guildId: t,
     applications: n
   } = e, r = [];
-  for (let e of n) r.push(e.id), b(s.Ay.createFromServer(e));
+  for (let e of n) r.push(e.id), y(s.Ay.createFromServer(e));
   p.set(t, r)
 }
 
@@ -244,7 +244,7 @@ function G(e) {
   for (let e of t) {
     var r;
     let t = null == (r = e.sku) ? true : r.application;
-    null == t || n.has(t.id) || b(s.Ay.createFromServer(t))
+    null == t || n.has(t.id) || y(s.Ay.createFromServer(t))
   }
   return n.size > 0
 }
@@ -255,7 +255,7 @@ function V(e) {
     payment: n
   } = e;
   if ((null == (t = n.sku) ? true : t.application) == null) returnfalse;
-  b(s.Ay.createFromServer(n.sku.application))
+  y(s.Ay.createFromServer(n.sku.application))
 }
 
 function F(e) {
@@ -264,7 +264,7 @@ function F(e) {
     giftCode: n
   } = e;
   if ((null == (t = n.store_listing) ? true : t.sku.application) == null) returnfalse;
-  b(s.Ay.createFromServer(n.store_listing.sku.application))
+  y(s.Ay.createFromServer(n.store_listing.sku.application))
 }
 
 function B(e) {
@@ -272,7 +272,7 @@ function B(e) {
     invite: t
   } = e;
   if (null == t.target_application) returnfalse;
-  b(s.Ay.createFromServer(t.target_application))
+  y(s.Ay.createFromServer(t.target_application))
 }
 
 function H(e) {
@@ -280,7 +280,7 @@ function H(e) {
     storeListing: t
   } = e;
   if (null == t.sku.application) returnfalse;
-  b(s.Ay.createFromServer(t.sku.application))
+  y(s.Ay.createFromServer(t.sku.application))
 }
 
 function Y(e) {
@@ -293,7 +293,7 @@ function Y(e) {
 function W(e) {
   var t;
   null == (t = e.attachments) || t.forEach(e => {
-    null != e.application && b(s.Ay.createFromServer(e.application))
+    null != e.application && y(s.Ay.createFromServer(e.application))
   })
 }
 
@@ -301,12 +301,12 @@ function K(e) {
   let {
     application: t
   } = e;
-  b(s.Ay.createFromServer(t))
+  y(s.Ay.createFromServer(t))
 }
 
 function z(e) {
   e.tokens.forEach(e => {
-    b(s.Ay.createFromServer(e.application));
+    y(s.Ay.createFromServer(e.application));
     let t = e.application.bot;
     null != t && R({
       userId: t.id,
@@ -317,7 +317,7 @@ function z(e) {
 
 function q(e) {
   e.items.forEach(e => {
-    null != e.application && b(s.Ay.createFromServer(e.application))
+    null != e.application && y(s.Ay.createFromServer(e.application))
   })
 }
 class X extends(r = Chunk311907.Ay.PersistedStore) {
@@ -376,9 +376,9 @@ class X extends(r = Chunk311907.Ay.PersistedStore) {
 }
 o(X, "displayName", "ApplicationStore"), o(X, "persistKey", "ApplicationStore");
 let Z = new X(Chunk73153.h, {
-  LOGOUT: y,
-  OVERLAY_INITIALIZE: S,
-  APPLICATION_FETCH: I,
+  LOGOUT: b,
+  OVERLAY_INITIALIZE: I,
+  APPLICATION_FETCH: S,
   APPLICATION_FETCH_SUCCESS: C,
   APPLICATION_FETCH_FAIL: w,
   APPLICATIONS_FETCH: P,
@@ -404,6 +404,6 @@ let Z = new X(Chunk73153.h, {
   WISHLIST_FETCH_SUCCESS: O,
   WISHLIST_ADD_SKU_SUCCESS: O,
   WISHLIST_REMOVE_SKU_SUCCESS: O,
-  SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS: v,
-  SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_SUCCESS: A
+  SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS: A,
+  SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_SUCCESS: v
 })

@@ -58,33 +58,33 @@ function m(e, t, n) {
   let u = (0, a.bG)([s.A], () => s.A.hasLoadedExperiments),
     f = null == e ? true : e.includeBundles,
     m = i.g.VARIANTS_GROUP,
-    [g, E, b, y, O, A, v] = (0, a.yK)([l.A], () => {
+    [g, E, y, b, O, v, A] = (0, a.yK)([l.A], () => {
       var e, t;
       return [l.A.isFetchingCategories, l.A.lastFetchOptions, l.A.error, null != (e = l.A.lastErrorTimestamp) ? e : 0, null != (t = l.A.lastSuccessfulFetch) ? t : 0, l.A.categories, l.A.skipNumCategories]
     });
   return (0, r.useEffect)(() => {
     if (!u || g) return;
-    let r = Date.now() - y < h;
-    if (b && r) return;
+    let r = Date.now() - b < h;
+    if (y && r) return;
     let i = p(d({}, e), {
         variantsReturnStyle: m,
         includeBundles: f,
-        skipNumCategories: v
+        skipNumCategories: A
       }),
       a = !(0, o.gn)(E, i),
       s = Date.now() - O < _;
     (a || !s) && (0, o.CK)(i, t, n)
-  }, [u, g, E, O, e, b, f, y, t, n, v, m]), {
+  }, [u, g, E, O, e, y, f, b, t, n, A, m]), {
     isFetching: g,
-    categories: A,
-    fetchCategoriesError: b,
+    categories: v,
+    fetchCategoriesError: y,
     refreshCategories: (0, r.useCallback)(() => {
       let t = p(d({}, e), {
         variantsReturnStyle: m,
         includeBundles: f,
-        skipNumCategories: v
+        skipNumCategories: A
       });
       (0, o.CK)(t, true, n)
-    }, [e, f, n, v, m])
+    }, [e, f, n, A, m])
   }
 }

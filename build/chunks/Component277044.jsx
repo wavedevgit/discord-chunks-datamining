@@ -38,23 +38,23 @@ function T(e) {
       await u.A.joinGuild(t), u.A.transitionToGuildSync(t)
     } catch (e) {}
   }, [n, t]);
-  return a === y.E.GET_NITRO ? (0, r.jsx)(E.A, {
+  return a === b.E.GET_NITRO ? (0, r.jsx)(E.A, {
     fullWidth: true,
     showGradient: true,
     premiumModalAnalyticsLocation: {
-      section: A.JJy.PREMIUM_SOUNDMOJI_GUILD_INFO_POPOUT
+      section: v.JJy.PREMIUM_SOUNDMOJI_GUILD_INFO_POPOUT
     },
     subscriptionTier: O.pe.TIER_2,
     size: l.$n.Sizes.SMALL,
     color: l.$n.Colors.CUSTOM,
     onClick: n,
     textOptions: {
-      textOverride: S.intl.string(S.t.pj0XBN)
+      textOverride: I.intl.string(I.t.pj0XBN)
     }
-  }) : a === y.E.JOIN_GUILD ? (0, r.jsx)(c.Button, {
+  }) : a === b.E.JOIN_GUILD ? (0, r.jsx)(c.Button, {
     variant: "primary",
     size: "sm",
-    text: S.intl.string(S.t.riu2R5),
+    text: I.intl.string(I.t.riu2R5),
     fullWidth: true,
     onClick: s
   }) : null
@@ -66,9 +66,9 @@ function C(e) {
     channel: n,
     closePopout: l,
     refreshPosition: u
-  } = e, E = t.guildId === v.mV, O = (0, s.bG)([g.A], () => g.A.getGuild(t.guildId)), A = !E && null != O, [C, N] = i.useState(), R = (0, b.tj)({
+  } = e, E = t.guildId === A.mV, O = (0, s.bG)([g.A], () => g.A.getGuild(t.guildId)), v = !E && null != O, [C, N] = i.useState(), R = (0, y.tj)({
     location: "SoundmojiGuildInfo"
-  }), w = E || A || null != C || !R, [P, D] = i.useState(!w);
+  }), w = E || v || null != C || !R, [P, D] = i.useState(!w);
   i.useEffect(() => {
     w || (D(true), (0, _.nh)(t.soundId, t.guildId).then(e => {
       N(e)
@@ -79,12 +79,12 @@ function C(e) {
   let {
     buttonType: x,
     description: L
-  } = (0, y.A)(t, n, A, C), j = x === y.E.JOIN_GUILD, M = !E && P, k = i.useMemo(() => A ? d.GO.createFromGuildRecord(O) : null != C ? d.GO.createFromDiscoverableGuild(C) : true, [O, A, C]);
+  } = (0, b.A)(t, n, v, C), j = x === b.E.JOIN_GUILD, M = !E && P, k = i.useMemo(() => v ? d.GO.createFromGuildRecord(O) : null != C ? d.GO.createFromDiscoverableGuild(C) : true, [O, v, C]);
   return M ? (0, r.jsx)(p.Y0, {}) : (0, r.jsxs)("div", {
-    className: I.op,
+    className: S.op,
     children: [(0, r.jsxs)(p.Uq, {
       children: [(0, r.jsxs)("div", {
-        className: I.g4,
+        className: S.g4,
         children: [(0, r.jsx)(m.Ay, {
           buttonOverlay: h.If.NONE,
           sound: t,
@@ -96,17 +96,17 @@ function C(e) {
           children: L
         })]
       }), null != k && (0, r.jsxs)("div", {
-        className: I.Qe,
+        className: S.Qe,
         children: [(0, r.jsx)(a.EYj, {
           variant: "eyebrow",
           color: "text-muted",
-          className: I.x$,
-          children: A ? S.intl.string(S.t.tGDabk) : S.intl.string(S.t.rnOmOa)
+          className: S.x$,
+          children: v ? I.intl.string(I.t.tGDabk) : I.intl.string(I.t.rnOmOa)
         }), (0, r.jsx)("div", {
-          className: I.Ff,
+          className: S.Ff,
           children: (0, r.jsx)(f.G7, {
             expressionSourceGuild: k,
-            hasJoinedExpressionSourceGuild: A,
+            hasJoinedExpressionSourceGuild: v,
             isDisplayingJoinGuildButtonInPopout: j
           })
         }), (0, r.jsx)(T, {
@@ -118,7 +118,7 @@ function C(e) {
     }), (0, r.jsx)(c.LpS, {
       text: "BETA",
       color: o.A.colors.BACKGROUND_BRAND.css,
-      className: I.aZ
+      className: S.aZ
     })]
   })
 }

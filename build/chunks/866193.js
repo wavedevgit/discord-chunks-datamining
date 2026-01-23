@@ -17,23 +17,23 @@ var Chunk557939 = require("./557939.js"),
   m = Chunk380744("replace"),
   g = TypeError,
   E = Chunk410323("".indexOf),
-  b = Chunk410323("".replace),
-  y = Chunk410323("".slice),
+  y = Chunk410323("".replace),
+  b = Chunk410323("".slice),
   O = Math.max;
 Chunk557939({
   target: "String",
   proto: true
 }, {
   replaceAll: function(e, t) {
-    var n, r, a, _, A, v, S, I, T, C = s(this),
+    var n, r, a, _, v, A, I, S, T, C = s(this),
       N = 0,
       R = "";
     if (!l(e)) {
       if ((n = c(e)) && !~E(u(s(f(e))), "g")) throw new g("`.replaceAll` does not allow non-global regexes");
       if (r = d(e, m)) return i(r, e, C, t);
-      if (h && n) return b(u(C), e, t)
+      if (h && n) return y(u(C), e, t)
     }
-    for (a = u(C), _ = u(e), (A = o(t)) || (t = u(t)), S = O(1, v = _.length), I = E(a, _); false !== I;) T = A ? u(t(_, I, a)) : p(_, a, I, [], true, t), R += y(a, N, I) + T, N = I + v, I = I + S > a.length ? false : E(a, _, I + S);
-    return N < a.length && (R += y(a, N)), R
+    for (a = u(C), _ = u(e), (v = o(t)) || (t = u(t)), I = O(1, A = _.length), S = E(a, _); false !== S;) T = v ? u(t(_, S, a)) : p(_, a, S, [], true, t), R += b(a, N, S) + T, N = S + A, S = S + I > a.length ? false : E(a, _, S + I);
+    return N < a.length && (R += b(a, N)), R
   }
 })

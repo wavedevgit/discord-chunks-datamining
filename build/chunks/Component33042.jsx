@@ -1,7 +1,7 @@
 /** Chunk was on 22477 **/
 /** chunk id: 33042, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Q: () => g,
+  Q: () => b,
   T: () => v
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
@@ -17,7 +17,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk423648 = require("./423648.js");
-let f = [{
+let x = [{
     duration: 15 * Chunk927813.A.Millis.MINUTE,
     label: () => p.intl.string(p.t["8ot6gv"])
   }, {
@@ -36,36 +36,36 @@ let f = [{
     duration: true,
     label: () => p.intl.string(p.t["46dqJY"])
   }],
-  x = "forever";
+  g = "forever";
 
-function b(e) {
+function f(e) {
   let {
     status: t,
     currentStatus: n,
-    description: i
-  } = e, r = t !== m.clD.ONLINE, s = (0, a.jsx)(a.Fragment, {
-    children: f.map(e => {
+    description: r
+  } = e, i = t !== m.clD.ONLINE, s = (0, a.jsx)(a.Fragment, {
+    children: x.map(e => {
       let {
-        duration: i,
-        label: r
+        duration: r,
+        label: i
       } = e;
       return (0, a.jsx)(l.Drp, {
-        id: "".concat(t, "-").concat(i),
-        label: r(),
+        id: "".concat(t, "-").concat(r),
+        label: i(),
         action: () => (0, u.A)({
           nextStatus: t,
           prevStatus: n,
-          durationMillis: i
+          durationMillis: r
         }),
         dontCloseOnAction: true
-      }, null != i ? i : x)
+      }, null != r ? r : g)
     })
   });
   return (0, a.jsx)(l.Drp, {
     id: t,
     className: h.pn,
     keepItemStyles: true,
-    hasSubmenu: r,
+    hasSubmenu: i,
     label: e => {
       let {
         isFocused: n
@@ -80,9 +80,9 @@ function b(e) {
         }), (0, a.jsx)("div", {
           className: h.h5,
           children: (0, c.MU)(t)
-        }), null != i && (0, a.jsx)("div", {
+        }), null != r && (0, a.jsx)("div", {
           className: h.h_,
-          children: i
+          children: r
         })]
       })
     },
@@ -93,11 +93,11 @@ function b(e) {
       })
     },
     dontCloseOnAction: true,
-    children: r ? s : true
+    children: i ? s : true
   })
 }
 
-function g(e) {
+function b(e) {
   if (null == e || "0" === e) return;
   let {
     kind: t,
@@ -114,14 +114,14 @@ function g(e) {
 
 function v(e) {
   let t = s.CY.useSetting(),
-    n = (0, i.kB)(),
-    o = r.P.useExperiment({
+    n = (0, r.kB)(),
+    o = i.P.useExperiment({
       location: "UserProfileAccountPopout"
     }).allowQuietMode || n,
     c = s.Jr.useSetting(),
     d = e === m.clD.DND,
     u = n => {
-      let a = g(t);
+      let a = b(t);
       if (e === n && null != a) return a;
       switch (n) {
         case m.clD.DND:
@@ -133,42 +133,42 @@ function v(e) {
       }
     },
     v = (0, a.jsx)(a.Fragment, {
-      children: f.map(t => {
+      children: x.map(t => {
         let {
           duration: n,
-          label: r
+          label: i
         } = t;
         return (0, a.jsx)(l.Drp, {
           id: "".concat(e, "-").concat(n),
-          label: r(),
+          label: i(),
           action: () => {
-            (0, i.ES)(true, n)
+            (0, r.ES)(true, n)
           },
           dontCloseOnAction: true
-        }, null != n ? n : x)
+        }, null != n ? n : g)
       })
     }),
-    j = b({
+    j = f({
       status: m.clD.ONLINE,
       currentStatus: e
     }),
-    y = b({
+    _ = f({
       status: m.clD.IDLE,
       currentStatus: e,
       description: u(m.clD.IDLE)
     }),
-    _ = b({
+    y = f({
       status: m.clD.DND,
       currentStatus: e,
       description: u(m.clD.DND)
     }),
-    A = b({
+    A = f({
       status: m.clD.INVISIBLE,
       currentStatus: e,
       description: u(m.clD.INVISIBLE)
     });
   return (0, a.jsxs)(a.Fragment, {
-    children: [j, (0, a.jsx)(l.bXX, {}, "menu-separator-statuses"), y, _, A, o || n ? (0, a.jsxs)(a.Fragment, {
+    children: [j, (0, a.jsx)(l.bXX, {}, "menu-separator-statuses"), _, y, A, o || n ? (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(l.bXX, {}, "menu-separator-statuses"), (0, a.jsx)(l.Drp, {
         id: "quiet-mode",
         "aria-label": "focus mode",
@@ -199,7 +199,7 @@ function v(e) {
           })]
         }),
         action: () => {
-          (0, i.ES)(!n)
+          (0, r.ES)(!n)
         },
         dontCloseOnAction: true,
         children: v

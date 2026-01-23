@@ -2,15 +2,15 @@
 /** chunk id: 453771, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Aw: () => I,
-  GD: () => y,
+  Aw: () => S,
+  GD: () => b,
   Hb: () => O,
   Iu: () => C,
-  SH: () => v,
-  TX: () => b,
+  SH: () => A,
+  TX: () => y,
   VE: () => g,
   bB: () => T,
-  o2: () => A,
+  o2: () => v,
   ww: () => m
 }), require("./747238.js"), require("./896048.js");
 var Chunk796873 = require("./796873.js"),
@@ -80,11 +80,11 @@ let E = [{
   klass: "audio"
 }];
 
-function b(e) {
-  return y(e.name, e.type)
+function y(e) {
+  return b(e.name, e.type)
 }
 
-function y(e, t) {
+function b(e, t) {
   var n;
   e = null != (n = null == e ? true : e.toLowerCase()) ? n : "";
   let r = s().find(E, n => null != n.reType && null != t ? n.reType.test(t) : null != n.reName && "" !== e && n.reName.test(e));
@@ -95,7 +95,7 @@ function O(e) {
   return i().filesize(e)
 }
 
-function A(e) {
+function v(e) {
   let t = l.default.getCurrentUser(),
     n = u.Ay.getUserMaxFileSize(t);
   if (null == e) return n;
@@ -103,19 +103,19 @@ function A(e) {
   return Math.max(null != r ? f.TG[r.premiumTier].limits.fileSize : d.TbF, n)
 }
 
-function v(e, t) {
-  let n = A(t);
+function A(e, t) {
+  let n = v(t);
   return Array.from(e).some(e => e.size > n)
 }
 
-function S(e) {
+function I(e) {
   let t = 0;
   for (let n of e) t += n.size;
   return t
 }
 
-function I(e) {
-  return S(e) > T()
+function S(e) {
+  return I(e) > T()
 }
 
 function T() {
@@ -127,7 +127,7 @@ function C(e) {
   let {
     guildId: t,
     onClick: n
-  } = e, r = (0, c.Xq)(A(t) / 1024, {
+  } = e, r = (0, c.Xq)(v(t) / 1024, {
     useKibibytes: true
   }), i = (0, c.Xq)(f.f3 / 1024, {
     useKibibytes: true

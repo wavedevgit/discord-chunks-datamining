@@ -2,7 +2,7 @@
 /** chunk id: 128747, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 }), require("./896048.js"), require("./747238.js"), require("./812715.js"), require("./733351.js"), require("./492834.js"), require("./321073.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js"), require("./638769.js");
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438),
@@ -21,7 +21,7 @@ var Chunk735438 = require("./735438.js"),
   Chunk989133 = require("./989133.js"),
   Chunk926140 = require("./926140.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,26 +30,26 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
 let O = 100,
-  A = Object.freeze({}),
-  v = 300;
+  v = Object.freeze({}),
+  A = 300;
 
-function S(e, t) {
+function I(e, t) {
   return t.frecencyBoosters ? (0, p.X3)(e) : {}
 }
-class I {
+class S {
   createSearchContext() {
     null == this.userSearchContext && (this.userSearchContext = m.A.getUserSearchContext(this.parseUserResults, this._limit))
   }
@@ -74,7 +74,7 @@ class I {
   }
   setOptions(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    t ? this.options = y({}, this.options, e) : this.options = e, null != this.options.blacklist ? this._userBlacklist = Array.from(this.options.blacklist).map(e => e.startsWith("user:") ? e.replace("user:", "") : "").filter(e => "" !== e) : this._userBlacklist = null
+    t ? this.options = b({}, this.options, e) : this.options = e, null != this.options.blacklist ? this._userBlacklist = Array.from(this.options.blacklist).map(e => e.startsWith("user:") ? e.replace("user:", "") : "").filter(e => "" !== e) : this._userBlacklist = null
   }
   _willRefetchIfSingleCategoryResults() {
     return !this._refetched && !(this._refetchForSingleCategoryLimit <= 5) && null == this.options.voiceChannelGuildFilter && null == this.options.userFilters && 1 === [this._userResults, this._groupDMResults, this._textChannelResults, this._voiceChannelResults, this._guildResults, this._applicationResults, this._linkResults, this._inAppNavigations].filter(e => e.length > 0).length
@@ -90,7 +90,7 @@ class I {
       this.clear(), this.updateAllResults();
       return
     }(this.options.frecencyBoosters ? l.bW.loadIfNecessary() : Promise.resolve()).finally(() => {
-      this.queryUsers(e, t, this._limit), this._groupDMResults = this.queryGroupDMs(e, this._limit), this._textChannelResults = this.queryTextChannels(e, this._limit), this._voiceChannelResults = this.queryVoiceChannels(e, this._limit), this._guildResults = this.queryGuilds(e, this._limit), this._applicationResults = this.queryApplications(e, this._limit), this._linkResults = this.queryLink(e, this._limit), this._inAppNavigations = this.queryInAppNavigations(e, this._limit), this._isAsyncSearch() ? (clearTimeout(this._asyncTimeout), this._asyncTimeout = setTimeout(this.updateAllResults, v)) : this._include(E.rD.USER) || this.updateAllResults()
+      this.queryUsers(e, t, this._limit), this._groupDMResults = this.queryGroupDMs(e, this._limit), this._textChannelResults = this.queryTextChannels(e, this._limit), this._voiceChannelResults = this.queryVoiceChannels(e, this._limit), this._guildResults = this.queryGuilds(e, this._limit), this._applicationResults = this.queryApplications(e, this._limit), this._linkResults = this.queryLink(e, this._limit), this._inAppNavigations = this.queryInAppNavigations(e, this._limit), this._isAsyncSearch() ? (clearTimeout(this._asyncTimeout), this._asyncTimeout = setTimeout(this.updateAllResults, A)) : this._include(E.rD.USER) || this.updateAllResults()
     })
   }
   clear() {
@@ -118,7 +118,7 @@ class I {
   }
   queryTextChannels(e, t) {
     if (!this._include(E.rD.TEXT_CHANNEL)) return [];
-    let n = S(E.rD.TEXT_CHANNEL, this.options),
+    let n = I(E.rD.TEXT_CHANNEL, this.options),
       {
         allowSnowflake: r,
         blacklist: i
@@ -139,7 +139,7 @@ class I {
     let {
       allowSnowflake: n,
       voiceChannelGuildFilter: r
-    } = this.options, i = S(E.rD.VOICE_CHANNEL, this.options);
+    } = this.options, i = I(E.rD.VOICE_CHANNEL, this.options);
     return p.Ay.queryChannels({
       query: e,
       guildId: r,
@@ -152,7 +152,7 @@ class I {
   }
   queryGuilds(e, t) {
     if (!this._include(E.rD.GUILD)) return [];
-    let n = S(E.rD.GUILD, this.options),
+    let n = I(E.rD.GUILD, this.options),
       {
         allowSnowflake: r,
         blacklist: i
@@ -175,7 +175,7 @@ class I {
     let {
       allowSnowflake: i,
       userFilters: a
-    } = this.options, s = S(E.rD.USER, this.options);
+    } = this.options, s = I(E.rD.USER, this.options);
     if ((null == a ? true : a.thread) != null) {
       let t = o.A.getMemberListSections(a.thread),
         r = [];
@@ -209,7 +209,7 @@ class I {
     if (!this._include(E.rD.GROUP_DM)) return [];
     let {
       blacklist: n
-    } = this.options, r = S(E.rD.GROUP_DM, this.options), i = null != n ? e => !n.has("channel:".concat(e.id)) : true;
+    } = this.options, r = I(E.rD.GROUP_DM, this.options), i = null != n ? e => !n.has("channel:".concat(e.id)) : true;
     return p.Ay.queryGroupDMs({
       query: e,
       limit: t,
@@ -252,8 +252,8 @@ class I {
       fuzzy: true
     }) : []
   }
-  constructor(e, t, n = O, r = A, a = 0) {
-    b(this, "query", ""), b(this, "options", A), b(this, "results", []), b(this, "_userResults", []), b(this, "_groupDMResults", []), b(this, "_textChannelResults", []), b(this, "_voiceChannelResults", []), b(this, "_guildResults", []), b(this, "_applicationResults", []), b(this, "_linkResults", []), b(this, "_inAppNavigations", []), b(this, "_asyncTimeout", true), b(this, "userSearchContext", true), b(this, "onResultsChange", true), b(this, "resultTypes", true), b(this, "_userBlacklist", null), b(this, "_limit", true), b(this, "_refetchForSingleCategoryLimit", true), b(this, "_refetched", false), b(this, "parseUserResults", e => {
+  constructor(e, t, n = O, r = v, a = 0) {
+    y(this, "query", ""), y(this, "options", v), y(this, "results", []), y(this, "_userResults", []), y(this, "_groupDMResults", []), y(this, "_textChannelResults", []), y(this, "_voiceChannelResults", []), y(this, "_guildResults", []), y(this, "_applicationResults", []), y(this, "_linkResults", []), y(this, "_inAppNavigations", []), y(this, "_asyncTimeout", true), y(this, "userSearchContext", true), y(this, "onResultsChange", true), y(this, "resultTypes", true), y(this, "_userBlacklist", null), y(this, "_limit", true), y(this, "_refetchForSingleCategoryLimit", true), y(this, "_refetched", false), y(this, "parseUserResults", e => {
       let {
         results: t
       } = e;
@@ -274,7 +274,7 @@ class I {
       }
       let n = this._willRefetchIfSingleCategoryResults();
       !n && this._userResults.length > this._limit && (this._userResults.length = this._limit), n && this.refetchIfSingleCategoryResults(), this.updateAllResults()
-    }), b(this, "updateAllResults", () => {
+    }), y(this, "updateAllResults", () => {
       clearTimeout(this._asyncTimeout), this.results = i()([...this._userResults, ...this._groupDMResults, ...this._textChannelResults, ...this._voiceChannelResults, ...this._guildResults, ...this._linkResults, ...this._inAppNavigations]).uniqBy(e => "".concat(e.type, "-").concat(e.record.id)).sort(g.A).value(), this.onResultsChange(this.results, this.query)
     }), this.onResultsChange = e, this.setOptions(r, true), this._limit = n, this._refetchForSingleCategoryLimit = a, this.createSearchContext(), this.setResultTypes(t)
   }

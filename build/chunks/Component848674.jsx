@@ -24,11 +24,11 @@ function p(e) {
     onClose: _,
     appContext: h,
     disableAutoFocus: m = false
-  } = e, g = (0, c.A)(t.id, n), E = (0, s.p)(a.A.USER_PROFILE_POPOUT), b = (0, i.bG)([o.Ay], () => o.Ay.canShowProfilePopoutGiftIntents(t.id), [t.id]), y = E && b;
+  } = e, g = (0, c.A)(t.id, n), E = (0, s.p)(a.A.USER_PROFILE_POPOUT), y = (0, i.bG)([o.Ay], () => o.Ay.canShowProfilePopoutGiftIntents(t.id), [t.id]), b = E && y;
   return (0, r.jsxs)("div", {
     className: f.qr,
     children: [g && (0, r.jsxs)(r.Fragment, {
-      children: [y && (0, r.jsx)(l.O, {
+      children: [b && (0, r.jsx)(l.O, {
         profileUserId: t.id
       }), (0, r.jsx)(d.A, {
         user: t,
@@ -36,7 +36,7 @@ function p(e) {
         channelId: p,
         onClose: _,
         disableAutoFocus: m,
-        upsell: y
+        upsell: b
       })]
     }), !g && (0, r.jsx)(u.A, {
       user: t,

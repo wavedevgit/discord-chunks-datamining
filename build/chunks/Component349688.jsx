@@ -2,8 +2,8 @@
 /** chunk id: 349688, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I,
-  L: () => A
+  A: () => S,
+  L: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -52,13 +52,13 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -77,15 +77,15 @@ function O(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-var A = function(e) {
+var v = function(e) {
   return e[e.SMALL = 0] = "SMALL", e[e.MEDIUM = 1] = "MEDIUM", e[e.CLIP = 2] = "CLIP", e[e.XXSMALL = 3] = "XXSMALL", e[e.XSMALL = 4] = "XSMALL", e
 }({});
 
-function v(e) {
+function A(e) {
   e.stopPropagation()
 }
 
-function S(e, t) {
+function I(e, t) {
   let {
     id: n,
     channelId: i,
@@ -93,26 +93,26 @@ function S(e, t) {
     children: m,
     actions: E,
     handleEditModal: O,
-    keyboardModeEnabled: A,
-    onKeyDown: S,
-    draftType: I,
+    keyboardModeEnabled: v,
+    onKeyDown: I,
+    draftType: S,
     size: T = 1
   } = e, C = (0, o.rm)(n), {
     onFocus: N
-  } = C, R = y(C, ["onFocus"]), {
+  } = C, R = b(C, ["onFocus"]), {
     handleFocus: w,
     handleBlur: P
   } = (0, f.G)(N), D = 0 === T, x = null != E, L = e => {
-    if (A) {
+    if (v) {
       switch (e.which) {
         case p.Ks6.D:
-          e.preventDefault(), c.A.remove(i, n, I);
+          e.preventDefault(), c.A.remove(i, n, S);
           return;
         case p.Ks6.E:
           null != O && (e.preventDefault(), O(e));
           return;
         case p.Ks6.BACKSPACE:
-          e.ctrlKey ? (e.preventDefault(), c.A.clearAll(i, I)) : (e.preventDefault(), c.A.remove(i, n, I));
+          e.ctrlKey ? (e.preventDefault(), c.A.clearAll(i, S)) : (e.preventDefault(), c.A.remove(i, n, S));
           return;
         case p.Ks6.ARROW_UP:
           let t = e.shiftKey || e.altKey || e.ctrlKey || e.metaKey;
@@ -121,11 +121,11 @@ function S(e, t) {
             atEnd: true
           })
       }
-      null == S || S(e)
+      null == I || I(e)
     }
   };
   return (0, r.jsx)(l.vN3, {
-    children: (0, r.jsx)("li", b(g({}, R), {
+    children: (0, r.jsx)("li", y(g({}, R), {
       onFocus: w,
       onBlur: P,
       onKeyDown: L,
@@ -141,7 +141,7 @@ function S(e, t) {
             className: s()(h.KY, {
               [h.BN]: D
             }),
-            onContextMenu: v,
+            onContextMenu: A,
             "aria-label": _.intl.string(_.t["8Lu3Du"]),
             children: (0, r.jsx)(u.Ay, {
               className: s()({
@@ -155,4 +155,4 @@ function S(e, t) {
     }))
   })
 }
-let I = Chunk64700.forwardRef(S)
+let S = Chunk64700.forwardRef(I)

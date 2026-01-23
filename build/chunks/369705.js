@@ -16,18 +16,18 @@ var Chunk574366 = require("./574366.js"),
   m = "[object RegExp]",
   g = "[object Set]",
   E = "[object String]",
-  b = "[object Symbol]",
-  y = "[object ArrayBuffer]",
+  y = "[object Symbol]",
+  b = "[object ArrayBuffer]",
   O = "[object DataView]",
-  A = Chunk574366 ? Chunk574366.prototype : true,
-  v = A ? A.valueOf : true;
-module.exports = function(e, t, n, r, A, S, I) {
+  v = Chunk574366 ? Chunk574366.prototype : true,
+  A = v ? v.valueOf : true;
+module.exports = function(e, t, n, r, v, I, S) {
   switch (n) {
     case O:
       if (e.byteLength != t.byteLength || e.byteOffset != t.byteOffset) break;
       e = e.buffer, t = t.buffer;
-    case y:
-      if (e.byteLength != t.byteLength || !S(new i(e), new i(t))) break;
+    case b:
+      if (e.byteLength != t.byteLength || !I(new i(e), new i(t))) break;
       returntrue;
     case d:
     case f:
@@ -43,13 +43,13 @@ module.exports = function(e, t, n, r, A, S, I) {
     case g:
       var C = r & c;
       if (T || (T = l), e.size != t.size && !C) break;
-      var N = I.get(e);
+      var N = S.get(e);
       if (N) return N == t;
-      r |= u, I.set(e, t);
-      var R = s(T(e), T(t), r, A, S, I);
-      return I.delete(e), R;
-    case b:
-      if (v) return v.call(e) == v.call(t)
+      r |= u, S.set(e, t);
+      var R = s(T(e), T(t), r, v, I, S);
+      return S.delete(e), R;
+    case y:
+      if (A) return A.call(e) == A.call(t)
   }
   returnfalse
 }

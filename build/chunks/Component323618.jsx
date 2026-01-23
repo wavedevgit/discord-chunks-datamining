@@ -2,7 +2,7 @@
 /** chunk id: 323618, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -25,7 +25,7 @@ var Chunk627968 = require("./627968.js"),
 
 function O() {
   return (0, r.jsxs)("svg", {
-    className: y.JR,
+    className: b.JR,
     width: "68",
     height: "68",
     viewBox: "0 0 68 68",
@@ -58,7 +58,7 @@ function O() {
   })
 }
 
-function A(e) {
+function v(e) {
   let {
     isDisabled: t,
     onSelect: n
@@ -66,9 +66,9 @@ function A(e) {
     var e, t;
     return null == (t = _.A.settings.appearance) || null == (e = t.clientThemeSettings) ? true : e.customUserThemeSettings
   }), {
-    shouldShowNewBadge: A,
-    markNewBadgeAsDismissed: v
-  } = (0, g.L)(), S = (0, p.JZ)(c.M.CUSTOM_THEME_ENTRYPOINT_GRADIENT), I = (0, f.Ay)(), T = (0, d.Mwr)(I) ? y.Xu : y.VO, C = null != a && null != a.colors && a.colors.length > 0, N = (0, l.bG)([h.A], () => h.A.getSavedCustomTheme()), R = C, w = C || null != N, P = i.useMemo(() => {
+    shouldShowNewBadge: v,
+    markNewBadgeAsDismissed: A
+  } = (0, g.L)(), I = (0, p.JZ)(c.M.CUSTOM_THEME_ENTRYPOINT_GRADIENT), S = (0, f.Ay)(), T = (0, d.Mwr)(S) ? b.Xu : b.VO, C = null != a && null != a.colors && a.colors.length > 0, N = (0, l.bG)([h.A], () => h.A.getSavedCustomTheme()), R = C, w = C || null != N, P = i.useMemo(() => {
     let e, t;
     if (C) e = a.colors, t = a.gradientAngle;
     else {
@@ -80,28 +80,28 @@ function A(e) {
       background: "var(--background-gradient), ".concat(n)
     }
   }, [C, a, N]), D = w ? u.A.unsafe_rawColors.WHITE.css : true, x = i.useCallback(() => {
-    A && v(), null == n || n()
-  }, [A, v, n]);
+    v && A(), null == n || n()
+  }, [v, A, n]);
   return (0, r.jsxs)("div", {
-    className: y.fC,
+    className: b.fC,
     children: [(0, r.jsxs)(m.S4, {
       onSelect: t ? true : x,
       isSelected: false,
       showSelectionCircle: R,
-      name: b.intl.string(E.default.KSBBpC),
-      className: s()(y.kL, w && T, t && y.r9),
+      name: y.intl.string(E.default.KSBBpC),
+      className: s()(b.kL, w && T, t && b.r9),
       showBadge: false,
       showLockedBadge: false,
       style: P,
-      children: [!S && !w && (0, r.jsx)(O, {}), (0, r.jsx)("div", {
-        className: y.JU
+      children: [!I && !w && (0, r.jsx)(O, {}), (0, r.jsx)("div", {
+        className: b.JU
       }), (0, r.jsx)(o.PaintPaletteIcon, {
         color: D,
-        className: y.vL
+        className: b.vL
       })]
-    }), A && (0, r.jsx)(d.LpS, {
-      className: y.Ad,
-      text: b.intl.string(b.t.y2b7CA),
+    }), v && (0, r.jsx)(d.LpS, {
+      className: b.Ad,
+      text: y.intl.string(y.t.y2b7CA),
       color: u.A.unsafe_rawColors.RED_430.css
     })]
   })

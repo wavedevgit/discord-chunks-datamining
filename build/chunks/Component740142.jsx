@@ -21,9 +21,9 @@ function u(e) {
     location: "AccountProfilePopoutUpsell"
   }), h = l.useMemo(() => {
     let e = [];
-    return m || e.push(i.M.GAME_WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_UPSELL), p && e.push(i.M.WISHLIST_USER_PROFILE_ACCOUNT_POPOUT_UPSELL), e
+    return m || e.push(r.M.GAME_WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_UPSELL), p && e.push(r.M.WISHLIST_USER_PROFILE_ACCOUNT_POPOUT_UPSELL), e
   }, [m, p]);
-  return (0, a.jsx)(r.Ay, {
+  return (0, a.jsx)(i.Ay, {
     contentTypes: h,
     bypassAutoDismiss: true,
     children: e => {
@@ -33,13 +33,13 @@ function u(e) {
       } = e;
       if (null == u) return null;
       switch (t) {
-        case i.M.GAME_WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_UPSELL:
+        case r.M.GAME_WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_UPSELL:
           return (0, a.jsx)(d.A, {
             handleOpenUserProfileModal: n,
             markAsDismissed: l,
             height: u
           });
-        case i.M.WISHLIST_USER_PROFILE_ACCOUNT_POPOUT_UPSELL:
+        case r.M.WISHLIST_USER_PROFILE_ACCOUNT_POPOUT_UPSELL:
           return (0, a.jsx)(o.A, {
             handleOpenUserProfileModal: n,
             markAsDismissed: l

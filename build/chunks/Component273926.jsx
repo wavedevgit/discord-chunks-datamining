@@ -1,9 +1,9 @@
 /** Chunk was on 35894 **/
 /** chunk id: 273926, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  IJ: () => u,
-  LK: () => f,
-  Ot: () => b,
+  IJ: () => d,
+  LK: () => m,
+  Ot: () => p,
   xs: () => C
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
@@ -16,23 +16,23 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk712104 = require("./712104.js");
 
-function u(e) {
+function d(e) {
   let {
     terms: t,
     channelId: n,
     className: l
   } = e;
   return (0, r.jsx)("div", {
-    className: i()(d.qE, l),
+    className: i()(u.qE, l),
     children: t.map((e, t) => (0, r.jsxs)("div", {
-      className: d.gJ,
+      className: u.gJ,
       children: [(0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         children: "".concat(t + 1, ".")
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        className: d.RQ,
+        className: u.RQ,
         children: a.A.parseGuildVerificationFormRule(e, true, {
           channelId: n
         })
@@ -48,7 +48,7 @@ function C(e) {
     disabled: l
   } = e;
   return (0, r.jsx)("div", {
-    className: d.kv,
+    className: u.kv,
     children: (0, r.jsx)(o.Checkbox, {
       checked: !!n,
       onChange: t,
@@ -58,7 +58,7 @@ function C(e) {
   })
 }
 
-function f(e) {
+function m(e) {
   let {
     formField: t
   } = e;
@@ -68,7 +68,7 @@ function f(e) {
     meetsRequirement: !!t.response
   })
 }
-let b = e => {
+let p = e => {
   let {
     channelId: t,
     formField: n,
@@ -76,8 +76,8 @@ let b = e => {
   } = e;
   return (0, r.jsxs)(s.cS, {
     title: c.intl.string(c.t["Q8OFN+"]),
-    children: [(0, r.jsx)(u, {
-      className: d.n_,
+    children: [(0, r.jsx)(d, {
+      className: u.n_,
       terms: n.values,
       channelId: t
     }), (0, r.jsx)(C, {

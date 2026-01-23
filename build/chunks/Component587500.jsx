@@ -106,12 +106,12 @@ let et = {
 function es(e) {
   let {
     header: t
-  } = e, n = x.A.getCameraComponent(), a = (0, l.bG)([x.A], () => x.A.getVideoDeviceId()), s = (0, v.A)();
+  } = e, n = x.A.getCameraComponent(), a = (0, l.bG)([x.A], () => x.A.getVideoDeviceId()), s = (0, A.A)();
   return i.useEffect(() => {
     let e = L.default.getCurrentUser();
     if (s && null != e) {
       let t = (0, O.i)(e);
-      (0, A.S1)(t, a, {
+      (0, v.S1)(t, a, {
         track: false
       }).catch(Y.tEg)
     }
@@ -142,7 +142,7 @@ function eo(e) {
   } = (0, m.Ay)(), {
     cameraUnavailable: l,
     enabled: d
-  } = (0, S.A)(), p = (0, I.A)(n), _ = i.useRef(null), g = a > 1;
+  } = (0, I.A)(), p = (0, S.A)(n), _ = i.useRef(null), g = a > 1;
   return (0, r.jsxs)("div", {
     className: s()(X.iE, X.o1),
     children: [(0, r.jsx)(C.A, {
@@ -197,7 +197,7 @@ function eo(e) {
             (0, F.X)(o, F.O.JOIN_VIDEO_CALL), M.default.track(Y.HAw.RING_CALL_ACCEPTED, $({
               location: o,
               guild_id: n.guild_id
-            }, (0, h.dI)(n))), f.default.selectVoiceChannel(n.id, true), (0, y.uh)(null != (e = n.guild_id) ? e : Y.ME, n.id)
+            }, (0, h.dI)(n))), f.default.selectVoiceChannel(n.id, true), (0, b.uh)(null != (e = n.guild_id) ? e : Y.ME, n.id)
           }
         })
       }
@@ -222,12 +222,12 @@ function el(e) {
     x: f,
     channel: h
   } = e, {
-    analyticsLocations: y
-  } = (0, m.Ay)(_.A.INCOMING_CALL_MODAL), [O, A] = i.useState(false), v = (0, l.bG)([D.A], () => D.A.getGuild(h.guild_id)), S = null != v ? k.Ay.getGuildIconURL({
-    id: v.id,
-    icon: v.icon,
+    analyticsLocations: b
+  } = (0, m.Ay)(_.A.INCOMING_CALL_MODAL), [O, v] = i.useState(false), A = (0, l.bG)([D.A], () => D.A.getGuild(h.guild_id)), I = null != A ? k.Ay.getGuildIconURL({
+    id: A.id,
+    icon: A.icon,
     size: ea
-  }) : null, I = null != (t = (0, g.Y)(h, ea, true)) ? t : S, T = (0, E.Ay)(h), [C, N] = (0, l.yK)([x.A], () => [x.A.supports(K.O5.VIDEO), Object.keys(x.A.getVideoDevices()).length]), R = null != v ? "".concat(T, ", ").concat(v.name) : T, L = (0, l.bG)([j.A], () => j.A.isFocused()), M = (0, l.bG)([U.A], () => U.A.getMode(h.id)), V = i.useCallback(e => {
+  }) : null, S = null != (t = (0, g.Y)(h, ea, true)) ? t : I, T = (0, E.Ay)(h), [C, N] = (0, l.yK)([x.A], () => [x.A.supports(K.O5.VIDEO), Object.keys(x.A.getVideoDevices()).length]), R = null != A ? "".concat(T, ", ").concat(A.name) : T, L = (0, l.bG)([j.A], () => j.A.isFocused()), M = (0, l.bG)([U.A], () => U.A.getMode(h.id)), V = i.useCallback(e => {
     null != e.top && null != e.left && d.A.move(e.left, e.top)
   }, []), F = (0, c.zhh)({
     value: +!!O,
@@ -250,25 +250,25 @@ function el(e) {
     }),
     Q = M === Y._Of.VOICE || H && h.type === Y.rbe.GUILD_VOICE ? z.intl.string(z.t.Js8cK3) : z.intl.string(z.t.KcnWCO),
     J = (0, r.jsxs)(r.Fragment, {
-      children: [null != v && null == S ? (0, r.jsx)("div", {
+      children: [null != A && null == I ? (0, r.jsx)("div", {
         className: s()(X.Kk, q.iE, q.hs),
-        children: (0, r.jsx)(b.Ay, {
+        children: (0, r.jsx)(y.Ay, {
           className: X.dK,
-          mask: b.hW.AVATAR_DEFAULT,
+          mask: y.hW.AVATAR_DEFAULT,
           width: O ? 40 : 80,
           height: O ? 40 : 80,
           children: (0, r.jsx)("div", {
             className: s()(X.$f, X.Gc),
             children: (0, r.jsx)("div", {
               className: X.Hj,
-              children: (0, P.Rb)(v)
+              children: (0, P.Rb)(A)
             })
           })
         })
       }) : (0, r.jsx)(G.A, {
         className: X.Kk,
         ringing: L,
-        src: null != I ? I : "",
+        src: null != S ? S : "",
         ringingType: G.A.RingingType.INCOMING,
         size: O ? c._3J.SIZE_40 : c._3J.SIZE_80
       }), (0, r.jsxs)("div", {
@@ -289,7 +289,7 @@ function el(e) {
     el = B ? et : en,
     ec = (0, l.bG)([j.A], () => j.A.windowSize());
   return (0, r.jsx)(m.f5, {
-    value: y,
+    value: b,
     children: (0, r.jsx)(p.A, {
       className: X.iE,
       selector: ".".concat(X.zr),
@@ -329,7 +329,7 @@ function el(e) {
               size: "sm",
               text: z.intl.string(z.t["8B0UDr"]),
               fullWidth: true,
-              onClick: () => A(true)
+              onClick: () => v(true)
             })
           }) : null]
         })

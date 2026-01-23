@@ -2,7 +2,7 @@
 /** chunk id: 533406, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B: () => y,
+  B: () => b,
   a: () => g
 });
 var Chunk627968 = require("./627968.js"),
@@ -77,7 +77,7 @@ function g(e, t) {
       location_stack: f,
       sku_product_line: e.productLine
     }), (0, s.ET)(), (0, o.z)()
-  }, y = () => {
+  }, b = () => {
     p = true
   }, O = {
     loadId: _,
@@ -89,10 +89,10 @@ function g(e, t) {
     giftingOrigin: a,
     additionalUserIds: c,
     onCloseCallback: g,
-    onComplete: y,
+    onComplete: b,
     modalKey: m
   };
-  h ? E(O) : b(O)
+  h ? E(O) : y(O)
 }
 let E = e => {
     let {
@@ -124,7 +124,7 @@ let E = e => {
       }
     })
   },
-  b = e => {
+  y = e => {
     let {
       loadId: t,
       applicationId: i,
@@ -159,7 +159,7 @@ let E = e => {
     })
   };
 
-function y() {
+function b() {
   (0, a.mMO)(async () => {
     let {
       default: e

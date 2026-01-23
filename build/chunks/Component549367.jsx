@@ -1,5 +1,5 @@
 /** Chunk was on 59275 **/
-/** chunk id: 549367, original params: e,t,l (module,exports,require) **/
+/** chunk id: 549367, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   A: () => u
@@ -17,32 +17,32 @@ function u() {
     itemTypeFilters: e,
     searchQuery: t
   } = (0, i.v)(e => e), {
-    totalCount: l,
+    totalCount: n,
     isFetchingResults: u
-  } = (0, o.S)(), d = (0, i.v)(e => e.hasFilters()), f = r.useCallback(() => {
+  } = (0, o.S)(), d = (0, i.v)(e => e.hasFilters()), g = l.useCallback(() => {
     if (!d) return "";
     if (u) return c.intl.string(c.t["/FaMSE"]);
     if ("" !== t) {
       let e = t.length > 40 ? "".concat(t.slice(0, 40), "...") : t;
       return c.intl.format(c.t.KJMJOz, {
-        count: l,
+        count: n,
         search: e
       })
     }
     return 1 === e.size && e.has(s.q.AVATAR_DECORATION) ? c.intl.format(c.t.s1UzGQ, {
-      count: l
+      count: n
     }) : 1 === e.size && e.has(s.q.NAMEPLATE) ? c.intl.format(c.t.ZWGN9T, {
-      count: l
+      count: n
     }) : 1 === e.size && e.has(s.q.PROFILE_EFFECT) ? c.intl.format(c.t["v/7apu"], {
-      count: l
+      count: n
     }) : 1 === e.size && e.has(s.q.BUNDLE) ? c.intl.format(c.t.fZ1rdk, {
-      count: l
+      count: n
     }) : c.intl.format(c.t["/rPvmQ"], {
-      count: l
+      count: n
     })
-  }, [e, l, d, t, u]);
-  return (0, n.jsx)(a.Heading, {
+  }, [e, n, d, t, u]);
+  return (0, r.jsx)(a.Heading, {
     variant: "heading-lg/semibold",
-    children: f()
+    children: g()
   })
 }

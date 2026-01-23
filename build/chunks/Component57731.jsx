@@ -2,7 +2,7 @@
 /** chunk id: 57731, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
@@ -16,13 +16,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk436151 = require("./436151.js");
 
-function b() {
+function p() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, s.O)(), [, b] = a.$7(e, t), [m, p] = a.xR(e, t), x = a.It(e, t);
+  } = (0, s.O)(), [, p] = a.$7(e, t), [f, b] = a.xR(e, t), h = a.It(e, t);
 
-  function h() {
+  function x() {
     (0, i.mMO)(async () => {
       let {
         default: e
@@ -48,11 +48,11 @@ function b() {
           return e
         }({}, n), l = l = {
           guildId: t,
-          onUploadIcon: e => b({
+          onUploadIcon: e => p({
             icon: e,
             unicodeEmoji: null
           }),
-          onSelectUnicodeEmoji: e => b({
+          onSelectUnicodeEmoji: e => p({
             icon: null,
             unicodeEmoji: e
           })
@@ -70,52 +70,52 @@ function b() {
     })
   }
   let j = (0, l.gN)();
-  return (0, r.jsx)(c.A, {
-    title: f.intl.string(f.t["Ah+sQ9"]),
-    description: f.intl.string(f.t.ixbWiB),
+  return (0, r.jsx)(o.A, {
+    title: g.intl.string(g.t["Ah+sQ9"]),
+    description: g.intl.string(g.t.ixbWiB),
     children: (0, r.jsxs)(i.BJc, {
       direction: "vertical",
       gap: 24,
       children: [(0, r.jsx)(i.D0$, {
-        label: f.intl.string(f.t["6OUqDa"]),
+        label: g.intl.string(g.t["6OUqDa"]),
         disabled: j,
         children: (0, r.jsx)(d.A, {
-          value: m,
-          onChange: p,
+          value: f,
+          onChange: b,
           disabled: j
         })
       }), (0, r.jsx)(i.D0$, {
-        label: f.intl.string(f.t["zn8/AX"]),
+        label: g.intl.string(g.t["zn8/AX"]),
         disabled: j,
-        description: f.intl.string(f.t.AqHUrU),
+        description: g.intl.string(g.t.AqHUrU),
         children: (0, r.jsxs)(i.BJc, {
           direction: "horizontal",
           gap: 16,
           children: [(0, r.jsx)(u.A, {
-            role: x,
-            "aria-label": f.intl.string(f.t.mD1oGB),
-            onClick: h,
+            role: h,
+            "aria-label": g.intl.string(g.t.mD1oGB),
+            onClick: x,
             disabled: j
           }), (0, r.jsx)(i.Button, {
             variant: "secondary",
-            onClick: h,
+            onClick: x,
             disabled: j,
-            text: f.intl.string(f.t.mD1oGB)
+            text: g.intl.string(g.t.mD1oGB)
           })]
         })
       }), (0, r.jsx)(i.M1G, {
         children: (0, r.jsxs)("div", {
-          className: g.i,
+          className: m.i,
           "aria-hidden": true,
-          children: [(0, r.jsx)(o.A, {
+          children: [(0, r.jsx)(c.A, {
             guildId: t,
-            role: x,
-            className: g.z,
+            role: h,
+            className: m.z,
             theme: "light"
-          }), (0, r.jsx)(o.A, {
+          }), (0, r.jsx)(c.A, {
             guildId: t,
-            role: x,
-            className: g.z,
+            role: h,
+            className: m.z,
             theme: "dark"
           })]
         })

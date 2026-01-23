@@ -19,33 +19,33 @@ function d(e) {
     onUpdateGames: d,
     disabled: u
   } = e, {
-    topGames: f,
-    tryFetchTopGames: g
-  } = (0, s.f)(), b = f.get(t), [m, p] = i.useState(false);
+    topGames: g,
+    tryFetchTopGames: m
+  } = (0, s.f)(), p = g.get(t), [f, b] = i.useState(false);
   i.useEffect(() => {
-    p(true), g(t).finally(() => {
-      p(false)
+    b(true), m(t).finally(() => {
+      b(false)
     })
-  }, [t, g]);
-  let x = i.useMemo(() => null == b ? [] : Object.keys(b).filter(e => !n.includes(e)).sort((e, t) => b[t].score - b[e].score), [b, n]),
-    h = i.useCallback(e => {
+  }, [t, m]);
+  let h = i.useMemo(() => null == p ? [] : Object.keys(p).filter(e => !n.includes(e)).sort((e, t) => p[t].score - p[e].score), [p, n]),
+    x = i.useCallback(e => {
       n.includes(e) ? d(n.filter(t => t !== e)) : d([...n, e])
     }, [d, n]);
-  return m && null == b ? (0, r.jsx)(l.y$y, {}) : null == x || 0 === x.length ? null : (0, r.jsxs)(r.Fragment, {
+  return f && null == p ? (0, r.jsx)(l.y$y, {}) : null == h || 0 === h.length ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: o.me
+      className: c.me
     }), (0, r.jsxs)("div", {
-      className: o.rS,
+      className: c.rS,
       children: [(0, r.jsx)(l.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
-        children: c.intl.string(c.t.bFGpua)
+        children: o.intl.string(o.t.bFGpua)
       }), (0, r.jsx)("div", {
-        className: o.CW,
-        children: x.map(e => (0, r.jsx)(a.A, {
+        className: c.CW,
+        children: h.map(e => (0, r.jsx)(a.A, {
           applicationId: e,
           selected: false,
-          onClick: h,
+          onClick: x,
           disabled: u
         }, e))
       })]

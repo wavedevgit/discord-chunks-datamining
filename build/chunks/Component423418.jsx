@@ -24,47 +24,47 @@ var Chunk627968 = require("./627968.js"),
 function j(e) {
   let {
     guild: t
-  } = e, n = i.useRef(null), j = (0, c.M5)(t.id, "GuildSettingsBoostPerks"), O = (0, l.bG)([o.A], () => o.A.hideInstantInvites);
-  (0, u.A)(n, p.nd0.BOOST_PERKS_VANITY_URL);
+  } = e, n = i.useRef(null), j = (0, o.M5)(t.id, "GuildSettingsBoostPerks"), _ = (0, l.bG)([c.A], () => c.A.hideInstantInvites);
+  (0, u.A)(n, b.nd0.BOOST_PERKS_VANITY_URL);
   let {
-    vanityURLCode: y,
+    vanityURLCode: O,
     vanityURLUses: v,
-    originalVanityURLCode: A,
-    errorDetails: E,
-    fetched: N
-  } = (0, l.cf)([g.A], () => ({
-    vanityURLCode: g.A.vanityURLCode,
-    vanityURLUses: g.A.vanityURLUses,
-    originalVanityURLCode: g.A.originalVanityURLCode,
-    errorDetails: g.A.errorDetails,
-    fetched: g.A.fetchedVanityURL
-  })), _ = null == t ? true : t.id;
+    originalVanityURLCode: y,
+    errorDetails: A,
+    fetched: E
+  } = (0, l.cf)([m.A], () => ({
+    vanityURLCode: m.A.vanityURLCode,
+    vanityURLUses: m.A.vanityURLUses,
+    originalVanityURLCode: m.A.originalVanityURLCode,
+    errorDetails: m.A.errorDetails,
+    fetched: m.A.fetchedVanityURL
+  })), N = null == t ? true : t.id;
   return (i.useEffect(() => {
-    null == _ || N || (0, f.Je)(_)
-  }, [N, _]), null == t) ? null : O ? (0, r.jsx)(a.A, {}) : (0, r.jsxs)("div", {
+    null == N || E || (0, g.Je)(N)
+  }, [E, N]), null == t) ? null : _ ? (0, r.jsx)(a.A, {}) : (0, r.jsxs)("div", {
     ref: n,
     children: [(0, r.jsxs)(s.Heading, {
       variant: "heading-md/medium",
       color: "text-strong",
-      className: h.D,
-      children: [x.intl.string(x.t["5XZKy/"]), (0, r.jsx)(b.rV, {
+      className: x.D,
+      children: [h.intl.string(h.t["5XZKy/"]), (0, r.jsx)(p.rV, {
         guild: t
       })]
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "text-subtle",
-      className: h.h,
-      children: j ? x.intl.format(x.t["J/v84B"], {
-        helpCenterArticle: d.A.getArticleURL(p.MVz.GUILD_VANITY_URL)
-      }) : x.intl.format(x.t.koklFG, {
-        helpCenterArticle: d.A.getArticleURL(p.MVz.GUILD_VANITY_URL)
+      className: x.h,
+      children: j ? h.intl.format(h.t["J/v84B"], {
+        helpCenterArticle: d.A.getArticleURL(b.MVz.GUILD_VANITY_URL)
+      }) : h.intl.format(h.t.koklFG, {
+        helpCenterArticle: d.A.getArticleURL(b.MVz.GUILD_VANITY_URL)
       })
-    }), (0, r.jsx)(m.C, {
+    }), (0, r.jsx)(f.C, {
       guild: t,
-      vanityURLCode: y,
+      vanityURLCode: O,
       vanityURLUses: v,
-      originalVanityURLCode: A,
-      errorDetails: E
+      originalVanityURLCode: y,
+      errorDetails: A
     })]
   })
 }

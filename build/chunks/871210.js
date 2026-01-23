@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   Bj: () => h,
-  C4: () => A,
-  b5: () => _,
-  et: () => f,
-  h_: () => x,
+  C4: () => _,
+  b5: () => x,
+  et: () => p,
+  h_: () => A,
   z2: () => E
 }), require("./747238.js"), require("./812715.js"), require("./896048.js"), require("./801541.js");
 var Chunk989349 = require("./989349.js"),
@@ -29,32 +29,32 @@ function h(e) {
   }, t, 80)
 }
 
-function f(e) {
+function p(e) {
   let t = (0, o.sS)(e.username).replace(u.uA, "").replace(u.SY, ".").toLowerCase();
   return "".concat(t).concat(e.discriminator).substring(0, 32)
 }
-let p = ["@", "#", ":"],
-  g = ["```", "discord", "hypesquad", "system message", "system mesage", "sustem message", "sustem mesage", "clyde"],
-  m = ["discordtag", "everyone", "here", "discord nitro", "discord", "snowsgiving"];
+let g = ["@", "#", ":"],
+  m = ["```", "discord", "hypesquad", "system message", "system mesage", "sustem message", "sustem mesage", "clyde"],
+  f = ["discordtag", "everyone", "here", "discord nitro", "discord", "snowsgiving"];
 
-function A(e) {
+function _(e) {
   var t;
   let n = e.username.toLowerCase();
   if ((t = u.RS, n.split("").filter(e => !t.includes(e.charCodeAt(0))).join("")).length < 2) returntrue;
-  for (let e of p)
-    if (n.includes(e)) returntrue;
-  for (let e of m)
-    if (n === e.toLowerCase()) returntrue;
   for (let e of g)
+    if (n.includes(e)) returntrue;
+  for (let e of f)
+    if (n === e.toLowerCase()) returntrue;
+  for (let e of m)
     if (n.includes(e.toLowerCase())) returntrue;
   returnfalse
 }
 
-function x(e) {
+function A(e) {
   return e.toLowerCase().replace(/\s/g, "").replace("@", "")
 }
 
-function _(e) {
+function x(e) {
   let t = a.default.extractTimestamp(e);
   try {
     return i()(new Date(t)).format("MMM DD, YYYY")

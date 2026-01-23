@@ -2,9 +2,9 @@
 /** chunk id: 660834, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Ay: () => h,
-  N8: () => p,
-  Q$: () => x
+  Ay: () => x,
+  N8: () => b,
+  Q$: () => h
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -20,38 +20,38 @@ var Chunk735438 = require("./735438.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk118856 = require("./118856.js");
 
-function m(e) {
+function f(e) {
   if (null == e) returnfalse;
-  let t = e.features.has(f.GuildFeatures.COMMUNITY),
-    n = e.features.has(f.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+  let t = e.features.has(g.GuildFeatures.COMMUNITY),
+    n = e.features.has(g.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
   return t || n
 }
 
-function p() {
+function b() {
   let e = u.A.getProps().guild;
-  null != e && (m(e) ? (d.A.close(), (0, c.aZ)(e.id)) : d.A.open(e.id, f.BEX.MEMBERS))
+  null != e && (f(e) ? (d.A.close(), (0, o.aZ)(e.id)) : d.A.open(e.id, g.BEX.MEMBERS))
 }
 
-function x() {
-  let e = m((0, l.bG)([u.A], () => u.A.getProps().guild, []));
+function h() {
+  let e = f((0, l.bG)([u.A], () => u.A.getProps().guild, []));
   return (0, r.jsxs)("div", {
-    className: b.q,
+    className: p.q,
     children: [(0, r.jsx)("div", {
-      children: g.intl.string(g.t["9Oq93m"])
+      children: m.intl.string(m.t["9Oq93m"])
     }), e && (0, r.jsx)(s.tfB, {
       size: "xs",
       color: "currentColor",
-      className: b.w
+      className: p.w
     })]
   })
 }
 
-function h() {
+function x() {
   var e;
   let {
     guild: t
-  } = (0, l.bG)([u.A], () => u.A.getProps(), [], i.isEqual), n = null != (e = null == t ? true : t.id) ? e : f.dJq;
-  return (0, a.fw)(n) ? (0, r.jsx)(o.A, {
+  } = (0, l.bG)([u.A], () => u.A.getProps(), [], i.isEqual), n = null != (e = null == t ? true : t.id) ? e : g.dJq;
+  return (0, a.fw)(n) ? (0, r.jsx)(c.A, {
     guildId: n
   }) : null
 }

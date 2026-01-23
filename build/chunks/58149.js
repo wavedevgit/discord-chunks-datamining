@@ -81,7 +81,7 @@ function j(e) {
     s = d.Ay.getChannels(e),
     o = s[d.I6].length,
     l = s[d.vM].length,
-    u = I.A.getVoiceStates(e);
+    u = S.A.getVoiceStates(e);
   return {
     guild_id: n.id,
     guild_size_total: f.A.getMemberCount(e),
@@ -137,7 +137,7 @@ function G(e) {
   let t = u.A.getChannel(e);
   if (null == t) return null;
   let n = m.A.isVideoEnabled(),
-    r = b.A.getMediaSessionId();
+    r = y.A.getMediaSessionId();
   return x({
     channel_id: t.id,
     channel_type: t.type,
@@ -156,7 +156,7 @@ function F(e) {
     n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   if (T.default.isThrottled(e)) return;
   let r = !("location" in t) || t.location !== w.ThZ.GUILD_CREATE_INVITE_SUGGESTION,
-    i = "guild_id" in t ? t.guild_id : r ? A.A.getGuildId() : null,
+    i = "guild_id" in t ? t.guild_id : r ? v.A.getGuildId() : null,
     a = "channel_id" in t ? t.channel_id : r ? O.A.getChannelId(i) : null,
     s = u.A.getChannel(a),
     o = x({}, t, j(V(s, i)), null != i && null != a && (0, P.jq)(a) ? M(i, a) : U(s));
@@ -177,7 +177,7 @@ function B(e) {
   if (null == n) {
     let n = false;
     if (t.isDM()) {
-      let e = S.default.getUser(t.recipients[0]);
+      let e = I.default.getUser(t.recipients[0]);
       null != e && (n = e.bot)
     }
     return {
@@ -185,21 +185,21 @@ function B(e) {
       is_app_dm: n
     }
   }
-  let r = y.Ay.getSnapshot(e, 10 * C.A.Millis.SECOND);
+  let r = b.Ay.getSnapshot(e, 10 * C.A.Millis.SECOND);
   return {
     channel_id: e,
     channel_was_unread: r.unread,
     channel_mention_count: r.mentionCount,
-    channel_is_muted: v.Ay.isChannelMuted(t.guild_id, t.id),
+    channel_is_muted: A.Ay.isChannelMuted(t.guild_id, t.id),
     channel_is_nsfw: t.isNSFW(),
-    channel_resolved_unread_setting: v.Ay.resolveUnreadSetting(t),
-    channel_preset: (0, o.jU)(v.Ay.resolveUnreadSetting(t), v.Ay.resolvedMessageNotifications(t)),
+    channel_resolved_unread_setting: A.Ay.resolveUnreadSetting(t),
+    channel_preset: (0, o.jU)(A.Ay.resolveUnreadSetting(t), A.Ay.resolvedMessageNotifications(t)),
     guild_id: t.guild_id,
     guild_was_unread: r.guildUnread,
     guild_mention_count: r.guildMentionCount,
-    guild_is_muted: v.Ay.isMuted(t.guild_id),
-    guild_resolved_unread_setting: v.Ay.resolveGuildUnreadSetting(n),
-    guild_preset: (0, o.jU)(v.Ay.resolveGuildUnreadSetting(n), v.Ay.getMessageNotifications(t.guild_id)),
+    guild_is_muted: A.Ay.isMuted(t.guild_id),
+    guild_resolved_unread_setting: A.Ay.resolveGuildUnreadSetting(n),
+    guild_preset: (0, o.jU)(A.Ay.resolveGuildUnreadSetting(n), A.Ay.getMessageNotifications(t.guild_id)),
     parent_id: t.parent_id,
     parent_channel_type: t.parentChannelThreadType,
     has_pending_member_action: (0, s.c)(t.guild_id, e),
@@ -214,7 +214,7 @@ function H(e, t, n) {
     video_stream_count: 0,
     video_enabled: n
   };
-  return i()(I.A.getVoiceStates(e)).filter(e => e.channelId === t).filter(e => e.userId !== c.default.getId()).forEach(e => {
+  return i()(S.A.getVoiceStates(e)).filter(e => e.channelId === t).filter(e => e.userId !== c.default.getId()).forEach(e => {
     r.voice_state_count++, (e.selfVideo || e.selfStream) && r.video_stream_count++
   }), r
 }
@@ -223,7 +223,7 @@ function Y(e, t) {
   let n = {
     custom_status_count: 0
   };
-  return i()(I.A.getVoiceStates(e)).forEach(e => {
+  return i()(S.A.getVoiceStates(e)).forEach(e => {
     e.channelId === t && null != E.A.findActivity(e.userId, e => e.type === w.$pd.CUSTOM_STATUS) && n.custom_status_count++
   }), n
 }

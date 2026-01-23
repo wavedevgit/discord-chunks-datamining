@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 885969, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 }), require("./65821.js"), require("./896048.js"), require("./457529.js");
 var Chunk86980 = require("./86980.jsx"),
   Chunk793574 = require("./793574.js"),
@@ -14,12 +14,12 @@ var Chunk86980 = require("./86980.jsx"),
   Chunk613057 = require("./613057.js"),
   Chunk652215 = require("./652215.js"),
   Chunk788868 = require("./788868.js");
-let h = [Chunk793574.A.RPC];
+let g = [Chunk793574.A.RPC];
 
-function A(e, t) {
+function f(e, t) {
   let n = {
-    subscriptionTier: f.pe.TIER_2,
-    analyticsLocations: h,
+    subscriptionTier: h.pe.TIER_2,
+    analyticsLocations: g,
     analyticsObject: t
   };
   switch (e) {
@@ -31,7 +31,7 @@ function A(e, t) {
       throw Error("Unexpected app context: ".concat(e))
   }
 }
-let g = {
+let m = {
   [Chunk652215.e$_.START_PURCHASE]: {
     [Chunk613057.sm.ANY]: [Chunk613057.VH, Chunk613057.hj],
     validation: e => (0, s.A)(e).required().keys({
@@ -53,12 +53,12 @@ let g = {
       }, "No application.");
       let {
         lock: s,
-        context: f
+        context: h
       } = (0, u.d5)(t.transport !== d.z4.POST_MESSAGE ? i : null);
       if (null == (0, o.A)()) throw new a.A({
         errorCode: p.Lw6.INVALID_CHANNEL
       }, "Invalid channel");
-      let g = {
+      let m = {
         page: p.liQ.IN_APP
       };
       return (async () => {
@@ -66,10 +66,10 @@ let g = {
           let e = await (0, r.j)({
             applicationId: l,
             skuId: n,
-            openPremiumPaymentModal: () => A(f, g),
-            analyticsLocations: h,
-            analyticsLocationObject: g,
-            context: f
+            openPremiumPaymentModal: () => f(h, m),
+            analyticsLocations: g,
+            analyticsLocationObject: m,
+            context: h
           });
           return s(), e
         } catch (e) {
@@ -105,7 +105,7 @@ let g = {
         lock: r,
         context: i
       } = (0, u.d5)(t.transport !== d.z4.POST_MESSAGE ? n : null);
-      return A(i, {
+      return f(i, {
         page: p.liQ.IN_APP
       }).then(() => {
         r()

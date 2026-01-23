@@ -8,7 +8,7 @@ require.d(exports, {
   RK: () => E,
   UU: () => m,
   cY: () => p,
-  jD: () => b,
+  jD: () => y,
   we: () => f
 });
 var Chunk193439 = require("./193439.js"),
@@ -71,25 +71,25 @@ function f(e) {
     transform: h = true,
     whileElementsMounted: m,
     open: g
-  } = e, [E, b] = i.useState({
+  } = e, [E, y] = i.useState({
     x: 0,
     y: 0,
     strategy: n,
     placement: t,
     middlewareData: {},
     isPositioned: false
-  }), [y, O] = i.useState(s);
-  l(y, s) || O(s);
-  let [A, v] = i.useState(null), [S, I] = i.useState(null), T = i.useCallback(e => {
-    e !== w.current && (w.current = e, v(e))
+  }), [b, O] = i.useState(s);
+  l(b, s) || O(s);
+  let [v, A] = i.useState(null), [I, S] = i.useState(null), T = i.useCallback(e => {
+    e !== w.current && (w.current = e, A(e))
   }, []), C = i.useCallback(e => {
-    e !== P.current && (P.current = e, I(e))
-  }, []), N = p || A, R = _ || S, w = i.useRef(null), P = i.useRef(null), D = i.useRef(E), x = null != m, L = d(m), j = d(f), M = d(g), k = i.useCallback(() => {
+    e !== P.current && (P.current = e, S(e))
+  }, []), N = p || v, R = _ || I, w = i.useRef(null), P = i.useRef(null), D = i.useRef(E), x = null != m, L = d(m), j = d(f), M = d(g), k = i.useCallback(() => {
     if (!w.current || !P.current) return;
     let e = {
       placement: t,
       strategy: n,
-      middleware: y
+      middleware: b
     };
     j.current && (e.platform = j.current), (0, r.rD)(w.current, P.current, e).then(e => {
       let t = {
@@ -97,12 +97,12 @@ function f(e) {
         isPositioned: false !== M.current
       };
       U.current && !l(D.current, t) && (D.current = t, a.flushSync(() => {
-        b(t)
+        y(t)
       }))
     })
-  }, [y, t, n, j, M]);
+  }, [b, t, n, j, M]);
   o(() => {
-    false === g && D.current.isPositioned && (D.current.isPositioned = false, b(e => ({
+    false === g && D.current.isPositioned && (D.current.isPositioned = false, y(e => ({
       ...e,
       isPositioned: false
     })))
@@ -179,7 +179,7 @@ let p = (e, t) => ({
     ...(0, r.RK)(e),
     options: [e, t]
   }),
-  b = (e, t) => ({
+  y = (e, t) => ({
     ...(0, r.jD)(e),
     options: [e, t]
   })

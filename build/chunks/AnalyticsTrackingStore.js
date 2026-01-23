@@ -55,13 +55,13 @@ function h(e, t) {
 let m = "x-science-test",
   g = 1500,
   E = 1e4,
-  b = 36e5,
-  y = 6e4,
+  y = 36e5,
+  b = 6e4,
   O = 36e5,
-  A = b,
   v = y,
-  S = O,
-  I = g,
+  A = b,
+  I = O,
+  S = g,
   T = 0,
   C = 0,
   N = 0,
@@ -105,8 +105,8 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
       actionHandler: a,
       getFingerprint: u,
       getSessionId: _ = z,
-      TRACKING_URL: b,
-      drainTimeoutOverride: y,
+      TRACKING_URL: y,
+      drainTimeoutOverride: b,
       waitFor: O,
       scheduleWhenIdle: q = B,
       getLaunchSignature: X = () => null
@@ -128,7 +128,7 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         shouldFlushOnNextTick: t = false
       } = e;
       null == K && Q() && (K = t ? setTimeout(J, 0) : q(J, {
-        timeout: I
+        timeout: S
       }))
     }
 
@@ -154,7 +154,7 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     }
 
     function ee(e) {
-      let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : b,
+      let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : y,
         n = Date.now(),
         i = e.map(e => h(p({}, e), {
           properties: h(p({}, e.properties), {
@@ -222,26 +222,26 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     function er() {
       if (null != M) return;
       let e = () => {
-        let t = .1 * A;
+        let t = .1 * v;
         M = {
           type: "timeout",
           id: setTimeout(() => {
             et(), e()
-          }, Math.max(A + (Math.floor(Math.random() * t * 2) - t), v))
+          }, Math.max(v + (Math.floor(Math.random() * t * 2) - t), A))
         }
       };
       M = {
         type: "timeout",
         id: setTimeout(() => {
           et(), e()
-        }, Math.floor(Math.random() * (S - v) + v))
+        }, Math.floor(Math.random() * (I - A) + A))
       }
     }
 
     function ei() {
       if (!en()) return
     }
-    I = null != y ? y : g, Y.handleConnectionOpen = function(e) {
+    S = null != b ? b : g, Y.handleConnectionOpen = function(e) {
       let {
         analyticsToken: t,
         user: n

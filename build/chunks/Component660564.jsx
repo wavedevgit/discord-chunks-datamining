@@ -19,26 +19,26 @@ function p(e) {
     index: t,
     className: n,
     channel: p,
-    user: f,
-    hasSingleMessageRequest: h
+    user: h,
+    hasSingleMessageRequest: g
   } = e, {
-    channelId: A
+    channelId: f
   } = (0, o.N)();
   return (0, r.jsx)(c.A, {
     index: t,
     className: n,
-    isFocused: A === p.id,
+    isFocused: f === p.id,
     channel: p,
-    user: f,
+    user: h,
     onClick: e => {
       e.stopPropagation(), i.A.openPrivateChannelAsSidebar({
         channelId: p.id,
         baseChannelId: l.fe,
-        hasSingleMessageRequest: h
+        hasSingleMessageRequest: g
       }), a.default.track(d.HAw.MESSAGE_REQUEST_PREVIEW_VIEWED, {
         is_spam: false,
         channel_id: p.id,
-        other_user_id: f.id
+        other_user_id: h.id
       }), setTimeout(() => {
         s._.dispatch(d.jej.FOCUS_CHANNEL_TEXT_AREA, {
           channelId: p.id
@@ -47,7 +47,7 @@ function p(e) {
     },
     children: e => (0, r.jsx)(u.v, {
       active: e,
-      user: f,
+      user: h,
       channel: p
     })
   })

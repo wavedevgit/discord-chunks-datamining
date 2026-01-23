@@ -37,10 +37,10 @@ var Chunk627968 = require("./627968.js"),
 
 function x(e, t) {
   var n;
-  let r = (0, b.d)(e),
-    i = (0, a.bG)([p.A, y.A], () => {
+  let r = (0, y.d)(e),
+    i = (0, a.bG)([p.A, b.A], () => {
       let t = p.A.getApplication(e);
-      return null != t ? y.A.getGameByApplication(t) : null
+      return null != t ? b.A.getGameByApplication(t) : null
     }, [e]);
   return {
     openGameProfileModal: (0, E.A)({
@@ -58,9 +58,9 @@ function L(e, t) {
   var n, r, i, a;
   let {
     bot: s
-  } = t, o = (null == (r = e.activity) ? true : r.icon_override) != null ? (0, A.uD)(t.id, null == (i = e.activity) ? true : i.icon_override) : null;
+  } = t, o = (null == (r = e.activity) ? true : r.icon_override) != null ? (0, v.uD)(t.id, null == (i = e.activity) ? true : i.icon_override) : null;
   return {
-    iconSrc: null != o ? o : v.Ay.getApplicationIconURL({
+    iconSrc: null != o ? o : A.Ay.getApplicationIconURL({
       id: t.id,
       icon: t.icon,
       bot: s
@@ -75,24 +75,24 @@ function j(e) {
     analyticsLocations: p,
     application: g,
     channel: E,
-    currentUserId: b,
-    currentUserPresenceActivity: y,
-    hideParty: A,
-    message: v,
+    currentUserId: y,
+    currentUserPresenceActivity: b,
+    hideParty: v,
+    message: A,
     onView: j,
     partyStatusElement: M,
     presenceActivity: k
   } = e, U = (0, c.Ag)(g), {
     iconSrc: G,
     name: V
-  } = L(v, g), F = null != (t = (0, N.I)({
-    messageId: v.id,
+  } = L(A, g), F = null != (t = (0, N.I)({
+    messageId: A.id,
     presenceActivity: k,
     application: g
   })) ? t : true, {
     openGameProfileModal: B,
     launchableAppId: H
-  } = x(g.id, v.author.id), Y = (0, C.A)({
+  } = x(g.id, A.author.id), Y = (0, C.A)({
     application: g,
     analyticsLocations: p
   }), W = i.useMemo(() => {
@@ -108,9 +108,9 @@ function j(e) {
     canStartAuthorization: X,
     hasAlreadyLinked: Z,
     startAuthorization: Q
-  } = (0, f.RD)(g), $ = (0, d.z)(Q, Z), J = !(0, I.A)(k, v, g.id), ee = (0, S.n$)(V, null == (n = v.activity) ? true : n.type, J), et = i.useRef(null), en = (0, a.bG)([O.A], () => O.A.getMessages(E.id)), er = () => {
+  } = (0, f.RD)(g), $ = (0, d.z)(Q, Z), J = !(0, S.A)(k, A, g.id), ee = (0, I.n$)(V, null == (n = A.activity) ? true : n.type, J), et = i.useRef(null), en = (0, a.bG)([O.A], () => O.A.getMessages(E.id)), er = () => {
     let e = [];
-    return (0, T.G)(v.id, en) && X && !Z && q.enabled && e.push(s.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, r.jsx)(m.Ay, {
+    return (0, T.G)(A.id, en) && X && !Z && q.enabled && e.push(s.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, r.jsx)(m.Ay, {
       contentTypes: e,
       children: e => {
         let {
@@ -141,12 +141,12 @@ function j(e) {
     })
   };
   return J ? (0, r.jsx)(R.A, {
-    message: v,
+    message: A,
     application: g,
     applicationName: V,
     channel: E,
     header: ee,
-    currentUserId: b,
+    currentUserId: y,
     launchableAppId: H,
     isEmbeddedApplication: U,
     tryWithGdnAction: W,
@@ -161,12 +161,12 @@ function j(e) {
     accountLinkButtonRef: et,
     renderAccountLinkUpsell: er
   }) : (0, r.jsx)(w.A, {
-    message: v,
+    message: A,
     application: g,
     applicationName: V,
     channel: E,
     header: ee,
-    currentUserId: b,
+    currentUserId: y,
     launchableAppId: H,
     isEmbeddedApplication: U,
     tryWithGdnAction: W,
@@ -175,8 +175,8 @@ function j(e) {
     iconSrc: G,
     onView: j,
     presenceActivity: k,
-    currentUserPresenceActivity: y,
-    hideParty: A,
+    currentUserPresenceActivity: b,
+    hideParty: v,
     partyStatusElement: M,
     analyticsLocations: p,
     showAuthButton: X && !Z && q.enabled,

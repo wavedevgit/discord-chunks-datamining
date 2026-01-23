@@ -78,7 +78,7 @@ function E(e, t, n, r) {
   }), delete h[m(r, e)]
 }
 
-function b(e) {
+function y(e) {
   let {
     user: t,
     sessionId: n
@@ -86,7 +86,7 @@ function b(e) {
   f = t.id, p = n
 }
 
-function y(e) {
+function b(e) {
   let {
     user: t,
     sessionId: n
@@ -104,7 +104,7 @@ function O(e) {
   null != r ? E(t, n, r, i) : g(t, n, i)
 }
 
-function A(e) {
+function v(e) {
   let {
     voiceStates: t
   } = e;
@@ -127,7 +127,7 @@ function A(e) {
   }, false)
 }
 
-function v(e) {
+function A(e) {
   let {
     videoStreamId: t,
     userId: n,
@@ -142,7 +142,7 @@ function v(e) {
   }
 }
 
-function S(e) {
+function I(e) {
   let {
     mediaContext: t,
     userId: n
@@ -150,7 +150,7 @@ function S(e) {
   if (null == h[r]) returnfalse;
   delete h[r]
 }
-class I extends(r = Chunk311907.Ay.Store) {
+class S extends(r = Chunk311907.Ay.Store) {
   getStreamId(e, t) {
     var n, r, i;
     let a = arguments.length > 2 && true !== arguments[2] ? arguments[2] : o.x.DEFAULT;
@@ -168,12 +168,12 @@ class I extends(r = Chunk311907.Ay.Store) {
     return h[m(e, t)]
   }
 }
-l(I, "displayName", "VideoStreamStore");
-let T = new I(Chunk73153.h, {
-  CONNECTION_OPEN: b,
-  OVERLAY_INITIALIZE: y,
+l(S, "displayName", "VideoStreamStore");
+let T = new S(Chunk73153.h, {
+  CONNECTION_OPEN: y,
+  OVERLAY_INITIALIZE: b,
   RTC_CONNECTION_VIDEO: O,
-  VOICE_STATE_UPDATES: A,
-  VIDEO_STREAM_READY_TIMEOUT: v,
-  CLEAR_VIDEO_STREAM_READY_TIMEOUT: S
+  VOICE_STATE_UPDATES: v,
+  VIDEO_STREAM_READY_TIMEOUT: A,
+  CLEAR_VIDEO_STREAM_READY_TIMEOUT: I
 })

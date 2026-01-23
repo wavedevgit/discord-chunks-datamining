@@ -89,7 +89,7 @@ function Y(e) {
   let {
     shouldMergeGameSettings: t,
     showRedesignedThirdPartyAccessSettings: n
-  } = e, r = v.A.isDeveloper, i = [{
+  } = e, r = A.A.isDeveloper, i = [{
     header: G.intl.string(G.t.cduTBL),
     settings: n ? [k.H.ACCOUNT, k.H.GAMES, k.H.PROFILE_CUSTOMIZATION, k.H.CONTENT_SOCIAL, k.H.DATA_PRIVACY, k.H.PRIVACY_FAMILY_CENTER, k.H.THIRD_PARTY_ACCESS, k.H.SESSIONS, k.H.CLIPS] : [k.H.ACCOUNT, k.H.GAMES, k.H.PROFILE_CUSTOMIZATION, k.H.CONTENT_SOCIAL, k.H.DATA_PRIVACY, k.H.PRIVACY_FAMILY_CENTER, k.H.AUTHORIZED_APPS, k.H.SESSIONS, k.H.CONNECTIONS, k.H.CLIPS, k.H.PRIVATE_BROWSING_PERK]
   }, {
@@ -147,7 +147,7 @@ function W() {
 
 function K() {
   var e, t, n, s;
-  let v = (0, m.IO)().length,
+  let A = (0, m.IO)().length,
     P = (0, h.l)(),
     M = (0, i.bG)([C.A], () => C.A.getSearchParams()),
     k = (0, _.VT)(),
@@ -163,19 +163,19 @@ function K() {
     Y = (0, O.Lc)({
       location: "settings"
     }),
-    W = (0, y.Rv)({
+    W = (0, b.Rv)({
       location: "settings"
     }),
     K = (0, l.H)(),
     z = (0, g.H)({
       location: U.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
     }),
-    q = (0, i.bG)([S.A], () => S.A.hasLibraryApplication()),
-    X = (0, i.bG)([A.default], () => A.default.hasTOTPEnabled()),
+    q = (0, i.bG)([I.A], () => I.A.hasLibraryApplication()),
+    X = (0, i.bG)([v.default], () => v.default.hasTOTPEnabled()),
     Z = D.Q_.useSetting(),
     Q = (0, f.A)(),
     $ = null == (t = (0, p.A)()) || t,
-    J = (null == (s = (0, b.G)()) ? true : s.length) > 0,
+    J = (null == (s = (0, y.G)()) ? true : s.length) > 0,
     {
       hasBlockedUsers: ee,
       hasIgnoredUsers: et
@@ -190,10 +190,10 @@ function K() {
       inputMode: ea,
       activeInputProfile: es,
       isInputProfileCustom: eo
-    } = (0, i.cf)([I.A], () => ({
-      activeInputProfile: I.A.getActiveInputProfile(),
-      inputMode: I.A.getMode(),
-      isInputProfileCustom: I.A.isInputProfileCustom()
+    } = (0, i.cf)([S.A], () => ({
+      activeInputProfile: S.A.getActiveInputProfile(),
+      inputMode: S.A.getMode(),
+      isInputProfileCustom: S.A.isInputProfileCustom()
     })),
     {
       enabled: el
@@ -203,7 +203,7 @@ function K() {
     ec = (0, x.t0)("useGenerateUserSettingsSections"),
     eu = (0, o.i)("useGenerateUserSettingsSections");
   return r.useMemo(() => (0, L.zj)({
-    unseenGiftCount: v,
+    unseenGiftCount: A,
     showPrepaidPaymentPastDueWarning: P,
     searchParams: M,
     numOfPendingFamilyRequests: k,
@@ -230,7 +230,7 @@ function K() {
     isChatMentionSuggestionsSettingEnabled: el,
     isRedesignedNotificationsEnabled: ec,
     isHDRAccessibilitySettingExperimentEnabled: eu
-  }), [Z, F, ee, et, q, J, X, M, $, z, W, Y, G, H, Q, k, K, B, P, v, ei, ea, es, eo, el, ec, eu])
+  }), [Z, F, ee, et, q, J, X, M, $, z, W, Y, G, H, Q, k, K, B, P, A, ei, ea, es, eo, el, ec, eu])
 }
 
 function z(e) {

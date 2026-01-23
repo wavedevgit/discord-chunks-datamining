@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 419615, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => f
 });
 var Chunk119966 = require("./119966.js"),
   Chunk478437 = require("./478437.js"),
@@ -15,7 +15,7 @@ var Chunk119966 = require("./119966.js"),
   Chunk613057 = require("./613057.js"),
   Chunk652215 = require("./652215.js"),
   Chunk818348 = require("./818348.js");
-let A = {
+let f = {
   [Chunk818348.e$.INVITE_USER_EMBEDDED]: (0, Chunk420970.T)(Chunk818348.e$.INVITE_USER_EMBEDDED, {
     scope: {
       [Chunk613057.sm.ANY]: [Chunk179771.F.RELATIONSHIPS_READ]
@@ -30,31 +30,31 @@ let A = {
         } = e,
         p = n.application.id;
       if (null == p) throw new r.G({
-        errorCode: h.Lw.INVALID_COMMAND
+        errorCode: g.Lw.INVALID_COMMAND
       }, "No application.");
-      let A = c.Ay.getConnectedActivityLocation();
-      if (null == A) throw new r.G({
-        errorCode: h.Lw.NO_ELIGIBLE_ACTIVITY
+      let f = c.Ay.getConnectedActivityLocation();
+      if (null == f) throw new r.G({
+        errorCode: g.Lw.NO_ELIGIBLE_ACTIVITY
       }, "No eligible activity for application. Ensure an activity was set using setActivity.");
-      switch (A.kind) {
+      switch (f.kind) {
         case l.T.GUILD_CHANNEL:
         case l.T.GUILD_CHANNEL_MESSAGE:
           t = (0, d.W)().channel;
           break;
         case l.T.PRIVATE_CHANNEL:
         case l.T.PRIVATE_CHANNEL_MESSAGE:
-          let g = u.A.getChannel(A.channel_id);
-          if (null == g) throw new r.G({
-            errorCode: h.Lw.INVALID_CHANNEL
+          let m = u.A.getChannel(f.channel_id);
+          if (null == m) throw new r.G({
+            errorCode: g.Lw.INVALID_CHANNEL
           }, "Invalid channel");
-          if (g.type === i.r.DM) throw new r.G({
-            errorCode: h.Lw.INVALID_CHANNEL
+          if (m.type === i.r.DM) throw new r.G({
+            errorCode: g.Lw.INVALID_CHANNEL
           }, "Cannot send invite to a DM");
-          t = g;
+          t = m;
           break;
         default:
           throw new r.G({
-            errorCode: h.Lw.NO_ELIGIBLE_ACTIVITY
+            errorCode: g.Lw.NO_ELIGIBLE_ACTIVITY
           }, "Unsupported activity location")
       }
       try {
@@ -65,12 +65,12 @@ let A = {
           prefixedContent: s,
           location: "RPC_ACTIVITY_INVITE_USER",
           inviteAnalyticsMetadata: {
-            source: f.PE1.ACTIVITY_INVITE
+            source: h.PE1.ACTIVITY_INVITE
           }
         })
       } catch (e) {
         throw new r.G({
-          errorCode: h.Lw.UNKNOWN_ERROR
+          errorCode: g.Lw.UNKNOWN_ERROR
         }, "Failed to invite user")
       }
     }

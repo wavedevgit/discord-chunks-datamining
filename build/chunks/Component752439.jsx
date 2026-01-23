@@ -87,13 +87,13 @@ function m(e, t) {
       children: m,
       className: g,
       onResize: E,
-      contentClassName: b,
-      onScroll: y,
+      contentClassName: y,
+      onScroll: b,
       dir: O = "ltr",
-      fade: A = false,
-      customTheme: v = false,
-      style: S
-    } = f, I = _(f, ["children", "className", "onResize", "contentClassName", "onScroll", "dir", "fade", "customTheme", "style"]), [T] = h, C = i.useRef(null), N = i.useRef(null), [R, w] = i.useState(false), {
+      fade: v = false,
+      customTheme: A = false,
+      style: I
+    } = f, S = _(f, ["children", "className", "onResize", "contentClassName", "onScroll", "dir", "fade", "customTheme", "style"]), [T] = h, C = i.useRef(null), N = i.useRef(null), [R, w] = i.useState(false), {
       scrollerRef: P,
       getScrollerState: D
     } = (0, l.s$)(), x = (0, l.kR)(P);
@@ -105,8 +105,8 @@ function m(e, t) {
     let L = i.useCallback(e => {
       null == C.current ? w(true) : clearTimeout(C.current), C.current = setTimeout(() => {
         C.current = null, w(false)
-      }, 200), null != y && y(e)
-    }, [y]);
+      }, 200), null != b && b(e)
+    }, [b]);
     return i.useEffect(() => () => clearTimeout(C.current), []), (0, l.Bb)({
       ref: P,
       key: "container",
@@ -122,21 +122,21 @@ function m(e, t) {
     }), (0, r.jsx)("div", p(d({
       ref: P,
       className: s()(g, {
-        [c.Rv]: A,
-        [c.D8]: v,
+        [c.Rv]: v,
+        [c.D8]: A,
         [e]: true,
         [c.fs]: true,
-        [c.qw]: R && A
+        [c.qw]: R && v
       }),
-      style: S,
+      style: I,
       dir: O,
       onScroll: L
-    }, I), {
+    }, S), {
       children: (0, r.jsx)(o.xp, {
         containerRef: N,
         children: (0, r.jsxs)("div", {
           ref: N,
-          className: s()(b, c.Qs),
+          className: s()(y, c.Qs),
           children: [m, R && (0, r.jsx)("div", {
             className: c.X3
           })]

@@ -16,5 +16,5 @@ function u(e, t) {
   let r = null != (n = e.sessionId) ? n : "";
   (0, o.Fc)(r), (0, o.ZG)();
   let u = null != t ? t : e.channelId;
-  l()(null != u, "attempted to transfer to unknown channel"), e.selfMute !== s.A.isSelfMute() && i.A.toggleSelfMute(), e.selfDeaf !== s.A.isSelfDeaf() && i.A.toggleSelfDeaf(), (0, c.A)(u, "discord_client", r), a.default.selectVoiceChannel(u, false)
+  l()(null != u, "attempted to transfer to unknown channel"), e.selfMute !== a.A.isSelfMute() && i.A.toggleSelfMute(), e.selfDeaf !== a.A.isSelfDeaf() && i.A.toggleSelfDeaf(), (0, c.A)(u, "discord_client", r), s.default.selectVoiceChannel(u, false)
 }

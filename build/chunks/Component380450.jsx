@@ -2,7 +2,7 @@
 /** chunk id: 380450, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -57,7 +57,7 @@ function E(e, t) {
   }), e
 }
 
-function b() {
+function y() {
   let {
     saturation: e,
     useReducedMotion: t,
@@ -70,13 +70,13 @@ function b() {
     roleStyle: o.A.roleStyle,
     highContrastMode: o.A.isHighContrastModeEnabled,
     switchIconsEnabled: o.A.isSwitchIconsEnabled
-  })), b = (0, i.bG)([o.A], () => o.A.displayNameStylesEnabled), y = (0, c.y)("useAccessibilityItems"), O = (0, i.bG)([d.Ay], () => d.Ay.hdrDynamicRange), A = (0, l.i)("useAccessibilityItems"), v = [{
+  })), y = (0, i.bG)([o.A], () => o.A.displayNameStylesEnabled), b = (0, c.y)("useAccessibilityItems"), O = (0, i.bG)([d.Ay], () => d.Ay.hdrDynamicRange), v = (0, l.i)("useAccessibilityItems"), A = [{
     name: p.intl.string(p.t.D5Fma9),
     value: "no-limit"
   }, {
     name: p.intl.string(p.t.ldcGIH),
     value: "standard"
-  }], S = [{
+  }], I = [{
     name: p.intl.string(p.t.YEOEi6),
     value: "username"
   }, {
@@ -87,10 +87,10 @@ function b() {
     value: "hidden"
   }];
 
-  function I() {
+  function S() {
     u.default.track(f.HAw.DISPLAY_NAME_STYLES_ACCESSIBILITY_TOGGLE, {
-      enabled: !b
-    }), (0, s.Dm)(!b)
+      enabled: !y
+    }), (0, s.Dm)(!y)
   }
   let T = [(0, r.jsx)(a.rXV, {
     children: (0, r.jsx)(a.sLh, {
@@ -118,11 +118,11 @@ function b() {
       }))
     })
   }, "input")];
-  return A && T.push((0, r.jsx)(a.rXV, {
+  return v && T.push((0, r.jsx)(a.rXV, {
     children: (0, r.jsx)(a.Drp, {
       id: "hdr-dynamic-range",
       label: p.intl.string(p.t.nemtgW),
-      children: v.map(e => {
+      children: A.map(e => {
         let {
           name: t,
           value: n
@@ -140,7 +140,7 @@ function b() {
     children: (0, r.jsx)(a.Drp, {
       id: "role-colors",
       label: p.intl.string(p.t.uSOPWm),
-      children: S.map(e => {
+      children: I.map(e => {
         let {
           name: t,
           value: i
@@ -158,10 +158,10 @@ function b() {
     children: (0, r.jsx)(a.sLh, {
       id: "display-name-styles",
       label: p.intl.string(_.default["2gFUEw"]),
-      checked: b,
-      action: I
+      checked: y,
+      action: S
     })
-  }, "display-name-styles")), y && T.push((0, r.jsx)(a.rXV, {
+  }, "display-name-styles")), b && T.push((0, r.jsx)(a.rXV, {
     children: (0, r.jsx)(a.sLh, {
       id: "switch-icons",
       label: p.intl.string(p.t["S3z+pV"]),

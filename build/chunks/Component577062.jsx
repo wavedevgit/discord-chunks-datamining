@@ -17,12 +17,12 @@ function d(e) {
     selfMute: t,
     serverMute: n,
     suppress: d,
-    centerButton: f = false,
-    awaitingRemote: p,
-    onMouseEnter: h,
-    onMouseLeave: b,
-    onClick: g
-  } = e, m = function(e, t) {
+    centerButton: p = false,
+    awaitingRemote: h,
+    onMouseEnter: f,
+    onMouseLeave: g,
+    onClick: m
+  } = e, b = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -40,12 +40,12 @@ function d(e) {
     return i
   }(e, ["selfMute", "serverMute", "suppress", "centerButton", "awaitingRemote", "onMouseEnter", "onMouseLeave", "onClick"]), {
     parentAnalyticsLocation: A
-  } = (0, a.Ay)(), y = t || n || d, O = f ? u.l : u.A, j = (0, s.A)(t, n, d, p), {
-    events: v,
-    play: x,
-    Component: E
-  } = (0, c.q)(y), _ = n || d ? i.O1p : E;
-  return l.useEffect(() => () => x(), [x, y]), (0, r.jsx)(O, function(e) {
+  } = (0, s.Ay)(), y = t || n || d, _ = p ? u.l : u.A, O = (0, a.A)(t, n, d, h), {
+    events: j,
+    play: v,
+    Component: x
+  } = (0, c.q)(y), E = n || d ? i.O1p : x;
+  return l.useEffect(() => () => v(), [v, y]), (0, r.jsx)(_, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -63,19 +63,19 @@ function d(e) {
     }
     return e
   }({
-    iconComponent: _,
+    iconComponent: E,
     isTrayButton: true,
     caretColor: y ? "red" : "primaryDark",
     color: y ? "red" : true,
-    label: j,
+    label: O,
     onMouseEnter: e => {
-      null == h || h(e), v.onMouseEnter()
+      null == f || f(e), j.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == b || b(e), v.onMouseLeave()
+      null == g || g(e), j.onMouseLeave()
     },
     onClick: e => {
-      null == g || g(e), (0, o.X)(A, o.O.MIC, t)
+      null == m || m(e), (0, o.X)(A, o.O.MIC, t)
     }
-  }, m))
+  }, b))
 }

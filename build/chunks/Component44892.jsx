@@ -14,8 +14,8 @@ function a(e) {
   var t, n;
   let {
     children: a,
-    disabled: c,
-    disabledTooltip: o,
+    disabled: o,
+    disabledTooltip: c,
     id: d
   } = e, u = function(e, t) {
     if (null == e) return {};
@@ -36,7 +36,7 @@ function a(e) {
   }(e, ["children", "disabled", "disabledTooltip", "id"]);
   return (0, r.jsx)(i.m, {
     asContainer: true,
-    text: c ? o : null,
+    text: o ? c : null,
     children: (0, r.jsx)(l.VQ0.Item, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -57,7 +57,7 @@ function a(e) {
     }({
       className: s.Y,
       id: d,
-      disabled: c
+      disabled: o
     }, u), n = n = {
       children: a
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

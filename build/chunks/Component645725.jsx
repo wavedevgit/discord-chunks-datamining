@@ -78,18 +78,18 @@ function L(e) {
     context: w,
     className: D,
     sectionName: L
-  } = e, j = i.useRef(null), M = (0, l.bG)([v.A], () => v.A.entrypoint()), k = (0, S.Pp)(a), U = (0, _.Ie)(k), G = (0, f.G)(a.id), V = (0, l.bG)([E.A], () => {
+  } = e, j = i.useRef(null), M = (0, l.bG)([A.A], () => A.A.entrypoint()), k = (0, I.Pp)(a), U = (0, _.Ie)(k), G = (0, f.G)(a.id), V = (0, l.bG)([E.A], () => {
     var e;
     return null != (e = E.A.getGuildId()) ? e : true
   }, []), F = {
     location: d.Oh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU,
     application_id: a.id,
     section_name: L,
-    source: v.A.lastShownEntrypoint()
-  }, B = b.default.getCurrentUser(), H = (0, h.A)({
+    source: A.A.lastShownEntrypoint()
+  }, B = y.default.getCurrentUser(), H = (0, h.A)({
     id: a.id,
     label: N.intl.string(N.t["+NP/b2"])
-  }), Y = (0, I.r)({
+  }), Y = (0, S.r)({
     application: a
   }), W = (0, o.Lt)(null != (t = a.flags) ? t : 0, C.gfo.EMBEDDED), K = "channel" === w.type ? w.channel : true;
   return (0, r.jsxs)("div", {
@@ -102,7 +102,7 @@ function L(e) {
         }) : (0, p.V)(P({
           id: a.id
         }, k));
-        (0, O.C)(e, () => (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["L/PwZf"]), c.ToastType.SUCCESS))), y.default.track(C.HAw.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
+        (0, O.C)(e, () => (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["L/PwZf"]), c.ToastType.SUCCESS))), b.default.track(C.HAw.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
           application_id: a.id,
           source: M
         })
@@ -146,7 +146,7 @@ function L(e) {
               id: "add-app",
               label: N.intl.string(N.t.NgXl3C),
               action: () => {
-                null == k.customInstallUrl && (0, u.zV)(C.HAw.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, F), (0, A.o)(x(P({}, k), {
+                null == k.customInstallUrl && (0, u.zV)(C.HAw.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, F), (0, v.o)(x(P({}, k), {
                   oauth2Callback: e => {
                     let {
                       location: t

@@ -2,8 +2,8 @@
 /** chunk id: 32605, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  default: () => b,
-  z: () => y
+  default: () => y,
+  z: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -61,18 +61,18 @@ function E(e, t) {
   return i
 }
 
-function b(e) {
+function y(e) {
   var t, n;
   let {
     onClose: i,
     analyticsSource: h
-  } = e, E = g(e, ["onClose", "analyticsSource"]), b = f.intl.format(f.t["JmbS+T"], {
+  } = e, E = g(e, ["onClose", "analyticsSource"]), y = f.intl.format(f.t["JmbS+T"], {
     onClick: () => {
       (0, s.openUserSettings)(a.X.NITRO_PANEL, {
         section: d.nc_.PREMIUM
       }), i()
     }
-  }), y = (0, l.V)(), O = (0, o.O)(), A = null != y || null != O;
+  }), b = (0, l.V)(), O = (0, o.O)(), v = null != b || null != O;
   return (0, r.jsx)(c.A, m({
     artURL: _,
     artContainerClassName: p.JS,
@@ -80,21 +80,21 @@ function b(e) {
     bodyClassName: p.IP,
     type: u.e.BURST_REACTION_UPSELL,
     title: f.intl.string(f.t.N4SCJ0),
-    body: b,
-    glowUp: b,
+    body: y,
+    glowUp: y,
     analyticsSource: h,
     analyticsLocation: {
       page: d.liQ.PREMIUM_UPSELL_BURST_REACTIONS,
       object: d.ZSU.BUTTON_CTA
     },
     onClose: i,
-    subscribeButtonText: A ? true : f.intl.string(f.t["8x0jKT"]),
-    subscriptionTier: null != (t = null == y || null == (n = y.subscription_trial) ? true : n.sku_id) ? t : u.pe.TIER_2,
+    subscribeButtonText: v ? true : f.intl.string(f.t["8x0jKT"]),
+    subscriptionTier: null != (t = null == b || null == (n = b.subscription_trial) ? true : n.sku_id) ? t : u.pe.TIER_2,
     backButtonText: f.intl.string(f.t.f3Pet9)
   }, E))
 }
 
-function y(e) {
+function b(e) {
   let {
     analytics: t
   } = e;

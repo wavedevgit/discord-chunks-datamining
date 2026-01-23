@@ -20,7 +20,7 @@ var r, Chunk735438 = require("./735438.js"),
   Chunk652215 = require("./652215.js"),
   Chunk613057 = require("./613057.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,12 +28,12 @@ function b(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let y = [Chunk613057.Hi.AUTHENTICATION_FAILED, Chunk613057.Hi.NOT_ENTITLED],
+let b = [Chunk613057.Hi.AUTHENTICATION_FAILED, Chunk613057.Hi.NOT_ENTITLED],
   O = "DispatchManagerStore",
-  A = [],
   v = [],
-  S = false,
-  I = null,
+  A = [],
+  I = false,
+  S = null,
   T = null,
   C = false,
   N = new Map,
@@ -42,19 +42,19 @@ let y = [Chunk613057.Hi.AUTHENTICATION_FAILED, Chunk613057.Hi.NOT_ENTITLED],
 
 function P() {
   let e = {
-    queue: A,
-    paused: S,
+    queue: v,
+    paused: I,
     userActions: Array.from(N)
   };
   o.w.set(O, e)
 }
 
 function D(e, t) {
-  return null != I && I.applicationId === e && I.branchId === t || null != T && T.applicationId === e && T.branchId === t
+  return null != S && S.applicationId === e && S.branchId === t || null != T && T.applicationId === e && T.branchId === t
 }
 
 function x() {
-  let e = A[0];
+  let e = v[0];
   if (null != e) {
     let {
       comboId: t,
@@ -74,7 +74,7 @@ function x() {
 
 function L(e, t) {
   let n = (0, p.gW)(e, t);
-  return A.findIndex(e => e.comboId === n)
+  return v.findIndex(e => e.comboId === n)
 }
 
 function j(e, t, n, r) {
@@ -83,18 +83,18 @@ function j(e, t, n, r) {
       comboId: i,
       action: r
     },
-    s = v.indexOf(i);
-  false !== s && v.splice(s, 1);
+    s = A.indexOf(i);
+  false !== s && A.splice(s, 1);
   let o = L(e, t);
-  0 !== o && (n ? false === o && (A.push(a), x()) : (o > 0 && A.splice(o, 1), A.unshift(a), x())), !n && S && _.A.resume(), P()
+  0 !== o && (n ? false === o && (v.push(a), x()) : (o > 0 && v.splice(o, 1), v.unshift(a), x())), !n && I && _.A.resume(), P()
 }
 
 function M(e, t) {
   let n = (0, p.gW)(e, t),
-    r = v.indexOf(n);
-  false !== r && v.splice(r, 1);
+    r = A.indexOf(n);
+  false !== r && A.splice(r, 1);
   let i = L(e, t);
-  false !== i && (A.splice(i, 1), P()), x()
+  false !== i && (v.splice(i, 1), P()), x()
 }
 
 function k(e) {
@@ -140,26 +140,26 @@ function B(e) {
     branchId: n
   } = e, r = L(t, n);
   if (r < 1) returnfalse;
-  A.splice(0, 0, A.splice(r, 1)[0]), x(), S && _.A.resume(), P()
+  v.splice(0, 0, v.splice(r, 1)[0]), x(), I && _.A.resume(), P()
 }
 
 function H(e) {
   let {
     applicationId: t,
     branchId: n
-  } = e, r = (0, p.gW)(t, n), i = v.indexOf(r);
-  false !== i && v.splice(i, 1)
+  } = e, r = (0, p.gW)(t, n), i = A.indexOf(r);
+  false !== i && A.splice(i, 1)
 }
 
 function Y(e) {
   let {
     state: t
   } = e;
-  !C && (C = true, x(), S || _.A.resume());
-  let n = S;
-  S = t.paused, I = t.currentTask, T = t.nextTask;
+  !C && (C = true, x(), I || _.A.resume());
+  let n = I;
+  I = t.paused, S = t.currentTask, T = t.nextTask;
   let r = false;
-  A = A.filter(e => {
+  v = v.filter(e => {
     let {
       comboId: t
     } = e, {
@@ -167,7 +167,7 @@ function Y(e) {
       branchId: i
     } = (0, p.r0)(t), s = m.A.getState(n, i), o = f.A.getTargetBuildId(n, i), l = f.A.getTargetManifests(n, i);
     if (null != s && s.type === g.WTw.UP_TO_DATE && s.buildId === s.targetBuildId && s.buildId === o && a().isEqual(s.manifestIds, s.targetManifestIds) && a().isEqual(s.manifestIds, l)) {
-      if (v.push(t), N.has(t)) {
+      if (A.push(t), N.has(t)) {
         switch (N.get(t)) {
           case "Install":
             c.BK(n, s);
@@ -180,7 +180,7 @@ function Y(e) {
       return r = true, false
     }
     returntrue
-  }), x(), (r || n !== S) && P()
+  }), x(), (r || n !== I) && P()
 }
 
 function W() {
@@ -196,7 +196,7 @@ function K(e) {
     code: n
   } = t;
   if (null != n) {
-    if (y.includes(n)) W();
+    if (b.includes(n)) W();
     else if (n === E.Hi.APPLICATION_NOT_FOUND) {
       let {
         context: e
@@ -215,7 +215,7 @@ function K(e) {
 function z() {
   for (let e of u.Ay.getRunningDiscordApplicationIds()) c.ZT(e, e);
   let e = u.Ay.getVisibleGame();
-  return S || null == e || e.pid === w || c.v7(), w = null == e ? null : e.pid, false
+  return I || null == e || e.pid === w || c.v7(), w = null == e ? null : e.pid, false
 }
 
 function q() {
@@ -240,10 +240,10 @@ class Q extends(r = Chunk311907.Ay.Store) {
       paused: null,
       userActions: null
     };
-    null != t.queue && (A = Z(t.queue)), null != t.paused && (S = t.paused), null != t.userActions && (N = new Map(Array.from(t.userActions))), this.waitFor(m.A, u.Ay), this.syncWith([u.Ay], z), this.waitFor(f.A, d.default, m.A)
+    null != t.queue && (v = Z(t.queue)), null != t.paused && (I = t.paused), null != t.userActions && (N = new Map(Array.from(t.userActions))), this.waitFor(m.A, u.Ay), this.syncWith([u.Ay], z), this.waitFor(f.A, d.default, m.A)
   }
   get activeItems() {
-    return A.map(e => {
+    return v.map(e => {
       let {
         comboId: t
       } = e;
@@ -251,10 +251,10 @@ class Q extends(r = Chunk311907.Ay.Store) {
     })
   }
   get finishedItems() {
-    return v.map(p.r0)
+    return A.map(p.r0)
   }
   get paused() {
-    return S
+    return I
   }
   getQueuePosition(e, t) {
     return L(e, t)
@@ -263,7 +263,7 @@ class Q extends(r = Chunk311907.Ay.Store) {
     return R
   }
 }
-b(Q, "displayName", "DispatchManagerStore");
+y(Q, "displayName", "DispatchManagerStore");
 let $ = new Q(Chunk73153.h, {
   DISPATCH_APPLICATION_INSTALL: k,
   DISPATCH_APPLICATION_UPDATE: V,

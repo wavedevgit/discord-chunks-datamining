@@ -1,5 +1,5 @@
 /** Chunk was on 36456 **/
-/** chunk id: 575957, original params: n,e,t (module,exports,require) **/
+/** chunk id: 575957, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   A: () => c
 });
@@ -12,36 +12,36 @@ var Chunk55187 = require("./55187.jsx"),
   Chunk523659 = require("./523659.js"),
   Chunk289595 = require("./289595.js");
 
-function c(n) {
+function c(e) {
   let {
-    isWaitingForConnection: e,
+    isWaitingForConnection: n,
     onWaitingForConnection: t,
     expectedCallbackState: c,
     onAuthToken: C,
-    onError: b,
-    onClose: g
-  } = n, h = e ? (0, i.jsx)("img", {
-    src: l,
+    onError: _,
+    onClose: u
+  } = e, g = n ? (0, o.jsx)("img", {
+    src: d,
     width: "168",
     height: "124",
     alt: ""
-  }) : (0, i.jsx)("img", {
-    src: d,
+  }) : (0, o.jsx)("img", {
+    src: a,
     width: "152",
     height: "123",
     alt: ""
-  }), x = e ? a.intl.string(a.t.tZ6ze7) : a.intl.string(a.t.siPkNp), f = e ? a.intl.string(a.t.VgWnwP) : a.intl.string(a.t.oS4NEH);
-  return (0, i.jsx)(o.b, {
+  }), h = n ? l.intl.string(l.t.tZ6ze7) : l.intl.string(l.t.siPkNp), x = n ? l.intl.string(l.t.VgWnwP) : l.intl.string(l.t.oS4NEH);
+  return (0, o.jsx)(i.b, {
     platformType: s.fg2.CRUNCHYROLL,
-    isWaitingForConnection: e,
+    isWaitingForConnection: n,
     onWaitingForConnection: t,
     expectedCallbackState: c,
     onAuthToken: C,
-    onError: b,
-    onClose: g,
-    img: h,
-    title: x,
-    body: f,
+    onError: _,
+    onClose: u,
+    img: g,
+    title: h,
+    body: x,
     redirectDestination: r.v7
   })
 }

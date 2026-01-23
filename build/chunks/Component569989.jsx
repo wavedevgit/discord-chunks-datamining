@@ -18,17 +18,17 @@ function o(e) {
     roleColor: c,
     roleName: u
   } = e;
-  return t = o ? (0, r.jsx)(a.A, {
+  return t = o ? (0, r.jsx)(s.A, {
     size: 12,
     color: c,
-    className: s.TS
+    className: a.TS
   }) : (0, r.jsx)("div", {
-    className: s.yY,
+    className: a.yY,
     style: {
       backgroundColor: c
     }
   }), (0, r.jsxs)("div", {
-    className: i()(n, s.JC),
+    className: i()(n, a.JC),
     style: {
       "--custom-role-label-color": c
     },

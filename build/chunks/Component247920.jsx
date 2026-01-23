@@ -1,5 +1,5 @@
 /** Chunk was on 63401 **/
-/** chunk id: 247920, original params: e,a,t (module,exports,require) **/
+/** chunk id: 247920, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
   default: () => x
 });
@@ -13,21 +13,21 @@ var Chunk108531 = require("./108531.js"),
   Chunk447110 = require("./447110.js");
 let o = e => {
     let {
-      currentNumber: a,
-      thresholdNumber: t,
+      currentNumber: t,
+      thresholdNumber: a,
       currentLabel: l,
       isPercent: o = false
-    } = e, x = null != t ? Math.floor(a / t * 100) : 0, m = d.intl.formatToPlainString(d.t.YMor7k, {
-      count: a
-    }), h = null != t ? d.intl.formatToPlainString(d.t.YMor7k, {
+    } = e, x = null != a ? Math.floor(t / a * 100) : 0, m = d.intl.formatToPlainString(d.t.YMor7k, {
       count: t
-    }) : "--", b = (0, n.rdh)(r.A.unsafe_rawColors.RED_400).hex(), u = (0, n.rdh)(r.A.unsafe_rawColors.YELLOW_300).hex();
-    return (0, s.jsxs)(s.Fragment, {
-      children: [(0, s.jsxs)("div", {
+    }), h = null != a ? d.intl.formatToPlainString(d.t.YMor7k, {
+      count: a
+    }) : "--", u = (0, n.rdh)(i.A.unsafe_rawColors.RED_400).hex(), _ = (0, n.rdh)(i.A.unsafe_rawColors.YELLOW_300).hex();
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsxs)("div", {
         className: c.Tr,
-        children: [(0, s.jsx)("div", {
+        children: [(0, r.jsx)("div", {
           className: c.yZ
-        }), (0, s.jsx)(n.c7X, {
+        }), (0, r.jsx)(n.c7X, {
           from: {
             width: 0
           },
@@ -43,40 +43,40 @@ let o = e => {
           shouldAnimate: "animate-always",
           children: e => {
             let {
-              width: a
+              width: t
             } = e;
-            return (0, s.jsx)(i.animated.div, {
+            return (0, r.jsx)(s.animated.div, {
               className: c.hr,
               style: {
-                width: a.interpolate(e => "".concat(e, "%")),
-                backgroundColor: a.interpolate(e => e < 33 ? b : u)
+                width: t.interpolate(e => "".concat(e, "%")),
+                backgroundColor: t.interpolate(e => e < 33 ? u : _)
               }
             })
           }
         })]
-      }), (0, s.jsxs)("div", {
+      }), (0, r.jsxs)("div", {
         className: c.ei,
-        children: [(0, s.jsxs)("div", {
+        children: [(0, r.jsxs)("div", {
           className: c.__invalid_current,
-          children: [(0, s.jsx)(n.Text, {
+          children: [(0, r.jsx)(n.Text, {
             variant: "text-md/semibold",
             color: x < 33 ? "text-feedback-critical" : "text-feedback-warning",
             children: o ? "".concat(m, "%") : m
-          }), (0, s.jsxs)(n.Text, {
+          }), (0, r.jsxs)(n.Text, {
             "aria-describedby": "health-score-details-score-explain",
             variant: "text-xs/normal",
             color: "text-default",
-            children: [l, (0, s.jsx)("sup", {
+            children: [l, (0, r.jsx)("sup", {
               "aria-hidden": true,
               children: "1"
             })]
           })]
-        }), (0, s.jsxs)("div", {
+        }), (0, r.jsxs)("div", {
           className: c.aS,
-          children: [(0, s.jsx)(n.Text, {
+          children: [(0, r.jsx)(n.Text, {
             variant: "text-sm/semibold",
             children: o ? "".concat(h, "%") : h
-          }), (0, s.jsx)(n.Text, {
+          }), (0, r.jsx)(n.Text, {
             "aria-describedby": "health-score-details-requirement-explain",
             variant: "text-xs/normal",
             color: "text-default",
@@ -87,62 +87,62 @@ let o = e => {
     })
   },
   x = e => {
-    let a, t, i, {
-        guildChecklist: r,
+    let t, a, s, {
+        guildChecklist: i,
         transitionState: x,
         onClose: m
       } = e,
       h = (0, l.GV)(),
       {
-        retentionHealthy: b,
-        engagementHealthy: u,
-        healthScore: j
-      } = r,
+        retentionHealthy: u,
+        engagementHealthy: _,
+        healthScore: g
+      } = i,
       {
-        avg_nonnew_participators: v,
-        avg_nonnew_communicators: g,
-        perc_ret_w1_intentful: f
-      } = j;
-    if (!u && null != v && v < 40 && (t = (0, s.jsxs)("div", {
+        avg_nonnew_participators: j,
+        avg_nonnew_communicators: b,
+        perc_ret_w1_intentful: p
+      } = g;
+    if (!_ && null != j && j < 40 && (a = (0, r.jsxs)("div", {
         className: c.cl,
-        children: [(0, s.jsx)(n.Heading, {
+        children: [(0, r.jsx)(n.Heading, {
           className: c.xd,
           variant: "heading-md/semibold",
           children: d.intl.string(d.t.sEzDIR)
-        }), (0, s.jsx)(n.Text, {
+        }), (0, r.jsx)(n.Text, {
           variant: "text-sm/normal",
           children: d.intl.string(d.t.zNp3Kg)
-        }), (0, s.jsx)(o, {
-          currentNumber: v,
+        }), (0, r.jsx)(o, {
+          currentNumber: j,
           thresholdNumber: 40,
           currentLabel: d.intl.string(d.t.BtTX9L)
         })]
-      })), !u && null != g && g < 20 && (i = (0, s.jsxs)("div", {
+      })), !_ && null != b && b < 20 && (s = (0, r.jsxs)("div", {
         className: c.cl,
-        children: [(0, s.jsx)(n.Heading, {
+        children: [(0, r.jsx)(n.Heading, {
           className: c.xd,
           variant: "heading-md/semibold",
           children: d.intl.string(d.t.fWQTbv)
-        }), (0, s.jsx)(n.Text, {
+        }), (0, r.jsx)(n.Text, {
           variant: "text-sm/normal",
           children: d.intl.string(d.t.Tl8MR6)
-        }), (0, s.jsx)(o, {
-          currentNumber: g,
+        }), (0, r.jsx)(o, {
+          currentNumber: b,
           thresholdNumber: 20,
           currentLabel: d.intl.string(d.t.PFQI7l)
         })]
-      })), !b && null != f) {
-      let e = Math.floor(100 * f);
-      a = (0, s.jsxs)("div", {
+      })), !u && null != p) {
+      let e = Math.floor(100 * p);
+      t = (0, r.jsxs)("div", {
         className: c.cl,
-        children: [(0, s.jsx)(n.Heading, {
+        children: [(0, r.jsx)(n.Heading, {
           className: c.xd,
           variant: "heading-md/semibold",
           children: d.intl.string(d.t.YF6x21)
-        }), (0, s.jsx)(n.Text, {
+        }), (0, r.jsx)(n.Text, {
           variant: "text-sm/normal",
           children: d.intl.format(d.t.kMBzFj, {})
-        }), (0, s.jsx)(o, {
+        }), (0, r.jsx)(o, {
           currentNumber: e,
           thresholdNumber: 10,
           currentLabel: d.intl.string(d.t.WpwyIi),
@@ -150,38 +150,38 @@ let o = e => {
         })]
       })
     }
-    return (0, s.jsxs)(n.EOs, {
+    return (0, r.jsxs)(n.EOs, {
       transitionState: x,
       size: n.rIJ.MEDIUM,
       className: c.__invalid_modal,
       "aria-labelledby": h,
       parentComponent: "HealthScoreDetailsModal",
-      children: [(0, s.jsxs)(n.$mQ, {
+      children: [(0, r.jsxs)(n.$mQ, {
         className: c.Qs,
-        children: [(0, s.jsx)(n.Heading, {
+        children: [(0, r.jsx)(n.Heading, {
           variant: "heading-xl/semibold",
           className: c.Hc,
           id: h,
           children: d.intl.string(d.t["+GHxPy"])
-        }), (0, s.jsx)(n.Text, {
+        }), (0, r.jsx)(n.Text, {
           className: c.xd,
           variant: "text-sm/normal",
           children: d.intl.string(d.t.QOs3XA)
-        }), (0, s.jsx)("div", {
+        }), (0, r.jsx)("div", {
           className: c.me
-        }), t, i, a, (0, s.jsx)("div", {
+        }), a, s, t, (0, r.jsx)("div", {
           className: c.me
-        }), (0, s.jsxs)(n.Text, {
+        }), (0, r.jsxs)(n.Text, {
           className: c.xd,
           color: "text-default",
           id: "health-score-details-score-explain",
           variant: "text-sm/normal",
-          children: [(0, s.jsx)("sup", {
+          children: [(0, r.jsx)("sup", {
             "aria-hidden": true,
             children: "1 "
           }), d.intl.string(d.t.tN5kb2)]
         })]
-      }), (0, s.jsx)(n.s_y, {
+      }), (0, r.jsx)(n.s_y, {
         onClick: m,
         className: c.b
       })]

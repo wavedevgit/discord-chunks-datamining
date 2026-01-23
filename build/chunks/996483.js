@@ -14,7 +14,7 @@ require.d(exports, {
   tB: () => s,
   ti: () => u,
   uf: () => c,
-  zW: () => b,
+  zW: () => y,
   zr: () => p
 });
 var Chunk374372 = require("./374372.js"),
@@ -92,7 +92,7 @@ function E(e, t = 15) {
   return n.imply("meridiem", a.FF.PM), n.imply("hour", t), n.imply("minute", 0), n.imply("second", 0), n.imply("millisecond", 0), n.addTag("casualReference/afternoon"), n
 }
 
-function b(e) {
+function y(e) {
   let t = new r.BP(e, {});
   return t.imply("meridiem", a.FF.AM), t.assign("hour", 12), t.imply("minute", 0), t.imply("second", 0), t.imply("millisecond", 0), t.addTag("casualReference/noon"), t
 }

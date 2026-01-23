@@ -1,12 +1,12 @@
 /** Chunk was on 22477 **/
 /** chunk id: 158265, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => y
+  A: () => _
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk106778 = require("./106778.js"),
   Chunk340287 = require("./340287.js"),
   Chunk108531 = require("./108531.js"),
@@ -21,37 +21,37 @@ var Chunk627968 = require("./627968.js"),
   Chunk307725 = require("./307725.js"),
   Chunk231901 = require("./231901.js");
 let j = ["#51BC9D"],
-  y = e => {
+  _ = e => {
     var t;
     let {
       overlayRef: n,
-      progressBarRef: i,
-      isHovered: y
+      progressBarRef: r,
+      isHovered: _
     } = e, {
-      quest: _,
+      quest: y,
       isExpanded: A
-    } = l.useContext(f.T), {
+    } = l.useContext(x.T), {
       expansionSpring: C
     } = l.useContext(h.PW), {
       completionSpring: S,
       startCompletionAnimation: O
-    } = (0, x.Ry)(), E = (null == (t = _.userStatus) ? true : t.completedAt) != null, N = l.useRef(false), T = (0, d.bG)([m.A], () => m.A.useReducedMotion), I = l.useRef(null), k = (0, d.bG)([p.A], () => p.A.hasLayers()), w = (0, u.A)(k), [P, R] = l.useState(null), [D, M] = l.useState(null), L = l.useRef(new s.OH({
+    } = (0, g.Ry)(), E = (null == (t = y.userStatus) ? true : t.completedAt) != null, T = l.useRef(false), N = (0, d.bG)([m.A], () => m.A.useReducedMotion), w = l.useRef(null), I = (0, d.bG)([p.A], () => p.A.hasLayers()), k = (0, u.A)(I), [P, R] = l.useState(null), [D, M] = l.useState(null), L = l.useRef(new s.OH({
       gravity: 0,
       wind: 0
     })), U = (0, s.f9)(P, D), B = l.useCallback(() => {
-      if (T) return;
-      let e = i.current,
-        t = I.current;
+      if (N) return;
+      let e = r.current,
+        t = w.current;
       if (null != t && null != e && U.isReady) {
-        var n, a, l, r, s, o;
+        var n, a, l, i, s, o;
         let {
-          x: i,
+          x: r,
           y: c
         } = e.getBoundingClientRect(), {
           x: d,
           y: u
         } = t.getBoundingClientRect();
-        U.createMultipleConfetti((n = i - d, a = c - u, l = e.clientHeight, r = e.clientWidth, s = function(e) {
+        U.createMultipleConfetti((n = r - d, a = c - u, l = e.clientHeight, i = e.clientWidth, s = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               a = Object.keys(n);
@@ -68,7 +68,7 @@ let j = ["#51BC9D"],
             })
           }
           return e
-        }({}, b.Mw), o = o = {
+        }({}, f.Mw), o = o = {
           position: {
             type: "static-random",
             minValue: {
@@ -77,7 +77,7 @@ let j = ["#51BC9D"],
             },
             maxValue: {
               x: n + l,
-              y: a + r
+              y: a + i
             }
           },
           velocity: {
@@ -116,33 +116,33 @@ let j = ["#51BC9D"],
           Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(o, e))
         }), s), 100)
       }
-    }, [i, I, U, T]), G = (0, u.A)(A);
+    }, [r, w, U, N]), G = (0, u.A)(A);
     return (l.useEffect(() => {
       E && A && !G && (O(), B())
     }, [A, E, O, B, G]), l.useEffect(() => {
-      E && !k && w && setTimeout(() => {
+      E && !I && k && setTimeout(() => {
         O(), B()
       }, 200)
-    }, [E, w, k, O, B]), l.useEffect(() => {
-      U.isReady && (!N.current && E && (O(), B()), N.current = E)
-    }, [E, N, B, O, U]), l.useEffect(() => {
-      y && E && (O(), B())
-    }, [y, E, O, B]), T) ? null : (0, a.jsxs)("div", {
-      className: g.iE,
+    }, [E, k, I, O, B]), l.useEffect(() => {
+      U.isReady && (!T.current && E && (O(), B()), T.current = E)
+    }, [E, T, B, O, U]), l.useEffect(() => {
+      _ && E && (O(), B())
+    }, [_, E, O, B]), N) ? null : (0, a.jsxs)("div", {
+      className: b.iE,
       "aria-hidden": "true",
-      ref: I,
+      ref: w,
       children: [(0, a.jsx)(c.animated.div, {
-        className: g.Tp,
+        className: b.Tp,
         style: {
           opacity: S
         }
       }), (0, a.jsx)(c.animated.div, {
-        className: r()(g.sJ, g.ix),
+        className: i()(b.sJ, b.ix),
         style: {
           opacity: S
         }
       }), (0, a.jsxs)(c.animated.div, {
-        className: g.KG,
+        className: b.KG,
         style: {
           transform: C.to({
             range: [0, 1],
@@ -151,16 +151,16 @@ let j = ["#51BC9D"],
         },
         children: [(0, a.jsx)(s.Fk, {
           ref: R,
-          className: g.t_,
+          className: b.t_,
           environment: L.current
         }), (0, a.jsx)(s.K_, {
           ref: M,
           sprites: [v],
           colors: j,
-          spriteWidth: b.wn,
-          spriteHeight: b.wn
+          spriteWidth: f.wn,
+          spriteHeight: f.wn
         }), null != n.current && (0, o.createPortal)((0, a.jsx)(c.animated.div, {
-          className: r()(g.sJ, g.d7),
+          className: i()(b.sJ, b.d7),
           style: {
             opacity: S
           }

@@ -2,20 +2,20 @@
 /** chunk id: 715493, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Mm: () => c,
+  Mm: () => o,
   eX: () => u,
   lV: () => s,
   p2: () => h,
-  xA: () => i
+  xA: () => a
 });
 var Chunk64700 = require("./64700.js"),
   Chunk635377 = require("./635377.js"),
-  a = require.n(Chunk635377);
-let i = 0,
+  i = require.n(Chunk635377);
+let a = 0,
   s = 4,
-  c = 4,
-  o = "absolute",
-  d = new(a())({
+  o = 4,
+  c = "absolute",
+  d = new(i())({
     max: 100
   });
 
@@ -30,8 +30,8 @@ function u(e) {
       numAttachments: t,
       containerWidth: n,
       containerHeight: l
-    } = e, r = "".concat(t, "-").concat(n, "-").concat(l), a = d.get(r);
-    if (null != a) return a;
+    } = e, r = "".concat(t, "-").concat(n, "-").concat(l), i = d.get(r);
+    if (null != i) return i;
     {
       let e = ((e, t, n, l) => {
         if (0 === n) return [];
@@ -40,20 +40,20 @@ function u(e) {
           height: t,
           top: 0,
           left: 0,
-          position: o
+          position: c
         }];
         if (2 === n) {
           let n = Math.ceil((e - l) / 2);
           return [{
             top: 0,
             left: 0,
-            position: o,
+            position: c,
             width: n,
             height: t
           }, {
             top: 0,
             left: n + l,
-            position: o,
+            position: c,
             width: n,
             height: t
           }]
@@ -64,19 +64,19 @@ function u(e) {
           return [{
             top: 0,
             left: 0,
-            position: o,
+            position: c,
             width: n,
             height: t
           }, {
             top: 0,
             left: n + l,
-            position: o,
+            position: c,
             width: n,
             height: r
           }, {
             top: r + l,
             left: n + l,
-            position: o,
+            position: c,
             width: n,
             height: r
           }]
@@ -86,25 +86,25 @@ function u(e) {
           return [{
             top: 0,
             left: 0,
-            position: o,
+            position: c,
             width: n,
             height: r
           }, {
             top: r + l,
             left: 0,
-            position: o,
+            position: c,
             width: n,
             height: r
           }, {
             top: 0,
             left: n + l,
-            position: o,
+            position: c,
             width: n,
             height: r
           }, {
             top: r + l,
             left: n + l,
-            position: o,
+            position: c,
             width: n,
             height: r
           }]
@@ -133,6 +133,6 @@ function h(e) {
     imageContainerStyles: t,
     containerWidth: n,
     containerHeight: r
-  } = e, a = l.useRef(m(t)), i = l.useRef(n), s = l.useRef(r), c = n > i.current + 100, o = r > s.current + 100;
-  return (c || o) && (a.current = m(t)), a.current
+  } = e, i = l.useRef(m(t)), a = l.useRef(n), s = l.useRef(r), o = n > a.current + 100, c = r > s.current + 100;
+  return (o || c) && (i.current = m(t)), i.current
 }

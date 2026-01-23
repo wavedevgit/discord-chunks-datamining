@@ -9,28 +9,28 @@ var r, i, l, a, Chunk735438 = require("./735438.js"),
   Chunk967198 = require("./967198.js"),
   Chunk661191 = require("./661191.js"),
   Chunk746080 = require("./746080.js");
-let A = {},
-  g = {},
+let f = {},
   m = {},
-  b = {};
+  A = {},
+  _ = {};
 
-function _(e) {
-  let t = g[e];
+function b(e) {
+  let t = m[e];
   if (null == t) return;
-  let n = f.default.fromTimestamp(Date.now() - 9e5),
-    r = o().findIndex(t, e => f.default.compare(e.id, n) > 0);
-  if (false === r) g[e] = [];
+  let n = h.default.fromTimestamp(Date.now() - 9e5),
+    r = o().findIndex(t, e => h.default.compare(e.id, n) > 0);
+  if (false === r) m[e] = [];
   else {
     let n = Math.max(r, t.length - 26);
-    g[e] = o().slice(t, n)
+    m[e] = o().slice(t, n)
   }
-  m[e] = Date.now()
+  A[e] = Date.now()
 }
 
 function E(e, t, n, r) {
-  A[e].add(t);
-  let i = m[t];
-  (null == i || i + 3e5 > Date.now()) && _(t), null == g[t] && (g[t] = []), g[t].push({
+  f[e].add(t);
+  let i = A[t];
+  (null == i || i + 3e5 > Date.now()) && b(t), null == m[t] && (m[t] = []), m[t].push({
     id: n,
     userId: r
   })
@@ -40,24 +40,24 @@ function O(e) {
   let {
     channel: t
   } = e;
-  delete g[t.id], delete m[t.id]
+  delete m[t.id], delete A[t.id]
 }
 class y extends(a = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(d.A, p.A)
   }
   getActiveChannelsFetchStatus(e) {
-    return b[e]
+    return _[e]
   }
   getActiveChannelIds(e) {
-    return A[e]
+    return f[e]
   }
   getChannelMessageData(e) {
-    return g[e]
+    return m[e]
   }
   shouldFetch(e) {
     var t;
-    return null == A[e] && !(null == (t = b[e]) ? true : t.loading)
+    return null == f[e] && !(null == (t = _[e]) ? true : t.loading)
   }
 }
 l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty(r, i, {
@@ -71,18 +71,18 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
       channelId: t,
       guildId: n
     } = e;
-    if (!(0, h.mP)(t) || null == n) returnfalse;
-    let r = A[n];
+    if (!(0, g.mP)(t) || null == n) returnfalse;
+    let r = f[n];
     if (null == r) returnfalse;
     r.forEach(e => {
       var t;
-      _(e), (null == (t = g[e]) ? true : t.length) === 0 && delete g[e]
+      b(e), (null == (t = m[e]) ? true : t.length) === 0 && delete m[e]
     });
-    let i = o().chain(Array.from(r)).filter(e => e in g).sortBy(e => {
+    let i = o().chain(Array.from(r)).filter(e => e in m).sortBy(e => {
       var t, n;
-      return -(null != (t = null == (n = g[e]) ? true : n.length) ? t : 0)
+      return -(null != (t = null == (n = m[e]) ? true : n.length) ? t : 0)
     }).value();
-    A[n] = new Set(i)
+    f[n] = new Set(i)
   },
   MESSAGE_CREATE: function(e) {
     var t;
@@ -96,14 +96,14 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
     let a = d.A.getChannel(n);
     if (null == a) returnfalse;
     let s = a.guild_id;
-    if (null == s || null == A[s]) returnfalse;
+    if (null == s || null == f[s]) returnfalse;
     E(s, n, r.id, null == (t = r.author) ? true : t.id)
   },
   GUILD_DELETE: function(e) {
     let {
       guild: t
     } = e;
-    delete A[t.id]
+    delete f[t.id]
   },
   CHANNEL_DELETE: O,
   THREAD_DELETE: O,
@@ -111,7 +111,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
     let {
       guildId: t
     } = e;
-    b[t] = {
+    _[t] = {
       loading: true,
       error: null,
       fetchedAt: Date.now()
@@ -122,11 +122,11 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
       guildId: t,
       channels: n
     } = e;
-    b[t] = {
+    _[t] = {
       loading: false,
       error: null,
       fetchedAt: Date.now()
-    }, A[t] = new Set, n.forEach(e => {
+    }, f[t] = new Set, n.forEach(e => {
       let {
         channel_id: n,
         messages: r
@@ -141,7 +141,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
       guildId: t,
       error: n
     } = e;
-    b[t] = {
+    _[t] = {
       loading: false,
       error: n,
       fetchedAt: null

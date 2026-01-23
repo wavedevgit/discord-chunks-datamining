@@ -13,8 +13,8 @@ function a(e) {
   let {
     guildId: t,
     triggerType: n
-  } = e, a = i.useMemo(() => () => (0, l._I)(t, n), [t, n]), [c] = i.useState(a);
+  } = e, a = i.useMemo(() => () => (0, l._I)(t, n), [t, n]), [o] = i.useState(a);
   return (0, r.jsx)(s.A, {
-    rule: c
+    rule: o
   })
 }

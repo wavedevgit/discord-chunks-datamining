@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 55294, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m,
+  A: () => b,
   N: () => y
 });
 var Chunk64700 = require("./64700.js"),
@@ -19,41 +19,41 @@ var Chunk64700 = require("./64700.js"),
   Chunk381941 = require("./381941.js"),
   Chunk985018 = require("./985018.jsx");
 
-function m(e) {
+function b(e) {
   let {
     parentChannel: t,
     parentMessageId: n,
     threadSettings: l,
     privateThreadMode: c,
     location: u,
-    onThreadCreated: m,
+    onThreadCreated: b,
     useDefaultThreadName: A
   } = e, y = r.useCallback((e, t, n, r) => {
-    a.A.sendMessage(e.id, d.Ay.parse(e, n), true, {
+    s.A.sendMessage(e.id, d.Ay.parse(e, n), true, {
       eagerDispatch: false,
-      location: b.Hx.THREAD_CREATION,
+      location: g.Hx.THREAD_CREATION,
       stickerIds: r,
       attachmentsToUpload: t,
-      onAttachmentUploadError: (r, l, a, c) => {
+      onAttachmentUploadError: (r, l, s, c) => {
         var u;
         (0, o.openUploadError)({
-          title: g.intl.string(g.t.B3vFdU),
-          help: null != (u = null == c ? true : c.message) ? u : g.intl.string(g.t.zMEjJg)
-        }), "" !== n && "" === f.A.getDraft(e.id, f.C.FirstThreadMessage) && i.A.saveDraft(e.id, n, f.C.FirstThreadMessage), 0 === p.A.getUploadCount(e.id, f.C.FirstThreadMessage) && s.A.setUploads({
+          title: m.intl.string(m.t.B3vFdU),
+          help: null != (u = null == c ? true : c.message) ? u : m.intl.string(m.t.zMEjJg)
+        }), "" !== n && "" === p.A.getDraft(e.id, p.C.FirstThreadMessage) && i.A.saveDraft(e.id, n, p.C.FirstThreadMessage), 0 === h.A.getUploadCount(e.id, p.C.FirstThreadMessage) && a.A.setUploads({
           channelId: e.id,
           uploads: t,
-          draftType: f.C.FirstThreadMessage
+          draftType: p.C.FirstThreadMessage
         })
       }
     })
   }, []);
-  return (0, h.r$)({
+  return (0, f.r$)({
     parentChannel: t,
     parentMessageId: n,
     threadSettings: l,
     privateThreadMode: c,
     location: u,
-    onThreadCreated: m,
+    onThreadCreated: b,
     useDefaultThreadName: A,
     uploadHandler: y
   })
@@ -83,7 +83,7 @@ function y(e) {
       appliedTags: n
     }
   }, l.x);
-  return (0, h.w0)({
+  return (0, f.w0)({
     parentChannel: t,
     name: n,
     appliedTags: r,

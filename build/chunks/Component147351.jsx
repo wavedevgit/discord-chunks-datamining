@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk48447 = require("./48447.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,14 +30,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -54,13 +54,13 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function v(e) {
+function A(e) {
   let {
     channel: t,
     message: n,
@@ -78,7 +78,7 @@ function v(e) {
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     assets: t,
     currentUser: n,
@@ -87,7 +87,7 @@ function S(e) {
   return t[i]
 }
 
-function I(e) {
+function S(e) {
   let {
     channel: t,
     message: n,
@@ -107,7 +107,7 @@ function T(e) {
     event: n,
     eventProperties: r
   } = e;
-  null != n && _.default.track(n, A(y({}, r), {
+  null != n && _.default.track(n, v(b({}, r), {
     sticker_id: t.id
   }))
 }
@@ -121,11 +121,11 @@ function C(e) {
     stickers: u,
     event: d,
     eventProperties: f
-  } = e, p = i.useMemo(() => S({
+  } = e, p = i.useMemo(() => I({
     assets: u,
     currentUser: t,
     message: a
-  }), [u, t, a]), _ = i.useMemo(() => S({
+  }), [u, t, a]), _ = i.useMemo(() => I({
     assets: o,
     currentUser: t,
     message: a
@@ -137,7 +137,7 @@ function C(e) {
       content: "",
       channel: n
     });
-    e && (I({
+    e && (S({
       channel: n,
       message: a,
       sticker: p
@@ -167,7 +167,7 @@ function N(e) {
     stickers: a,
     event: s,
     eventProperties: o
-  } = e, l = p.default.getCurrentUser(), c = v({
+  } = e, l = p.default.getCurrentUser(), c = A({
     channel: t,
     message: n,
     currentUser: l

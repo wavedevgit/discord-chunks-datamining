@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 901319, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,27 +13,27 @@ var Chunk627968 = require("./627968.js"),
   Chunk775602 = require("./775602.js"),
   Chunk652215 = require("./652215.js"),
   Chunk520936 = require("./520936.js");
-let f = function(e) {
+let h = function(e) {
   let {
     rows: t,
     renderRow: n,
-    renderSection: f,
-    hasSearchQuery: h,
-    sectionFilter: A,
-    footer: g,
-    renderSectionFooter: m
-  } = e, b = (0, s.bG)([u.A], () => u.A.keyboardModeEnabled), _ = (0, s.bG)([u.A], () => u.A.useReducedMotion), E = (0, l.Ay)({
+    renderSection: h,
+    hasSearchQuery: g,
+    sectionFilter: f,
+    footer: m,
+    renderSectionFooter: A
+  } = e, _ = (0, s.bG)([u.A], () => u.A.keyboardModeEnabled), b = (0, s.bG)([u.A], () => u.A.useReducedMotion), E = (0, l.Ay)({
     id: "people",
-    isEnabled: b,
+    isEnabled: _,
     async scrollToStart() {},
     async scrollToEnd() {}
-  }), O = A !== d.m3P.ONLINE && A !== d.m3P.ALL, y = _ || h || O, I = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : y ? (0, r.jsxs)("div", {
-    children: [f(t), e.map(e => n(e, t)), null == m ? true : m(t)]
+  }), O = f !== d.m3P.ONLINE && f !== d.m3P.ALL, y = b || g || O, I = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : y ? (0, r.jsxs)("div", {
+    children: [h(t), e.map(e => n(e, t)), null == A ? true : A(t)]
   }, t) : (0, r.jsxs)(o.F, {
     transitionAppear: false,
     component: "div",
-    children: [f(t), e.map(e => n(e, t)), null == m ? true : m(t)]
-  }, t)), [n, f, m, t, y]);
+    children: [h(t), e.map(e => n(e, t)), null == A ? true : A(t)]
+  }, t)), [n, h, A, t, y]);
   return (0, r.jsx)(a.hD, {
     navigator: E,
     children: (0, r.jsx)(a.PR, {
@@ -79,7 +79,7 @@ let f = function(e) {
           ref: i,
           className: p.e3
         }, l), n = n = {
-          children: [I, g]
+          children: [I, m]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

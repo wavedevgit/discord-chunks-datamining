@@ -24,24 +24,24 @@ let d = function(e) {
       emoji: null,
       icon: null
     })
-  }, [n]), f = null != (t = (0, s.gU)(n)) ? t : l.N$i;
+  }, [n]), g = null != (t = (0, s.gU)(n)) ? t : l.N$i;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: o.TG,
-      children: [(0, r.jsx)(f, {
-        className: o.cC
+      className: c.TG,
+      children: [(0, r.jsx)(g, {
+        className: c.cC
       }), (0, r.jsx)(l.Text, {
-        className: o.g7,
+        className: c.g7,
         variant: "text-sm/normal",
         children: n.name
       }), (0, r.jsx)(l.Button, {
         size: "sm",
         variant: "primary",
         onClick: u,
-        text: c.intl.string(c.t.OYkgVk)
+        text: o.intl.string(o.t.OYkgVk)
       })]
     }), d && (0, r.jsx)("div", {
-      className: o.p3
+      className: c.p3
     })]
   })
 }

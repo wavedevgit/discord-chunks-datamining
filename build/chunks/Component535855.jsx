@@ -102,8 +102,8 @@ let et = async (e, t, n) => {
 
 function en(e, t) {
   return i.useMemo(() => {
-    let n = v.f[null != t ? t : Y.c8.ONE];
-    return e === Y.P7.END ? n : ee($({}, v.g[e]), {
+    let n = A.f[null != t ? t : Y.c8.ONE];
+    return e === Y.P7.END ? n : ee($({}, A.g[e]), {
       backgroundOverlayColor: n.backgroundOverlayColor
     })
   }, [t, e])
@@ -116,28 +116,28 @@ function er(e) {
 function ei(e) {
   let {
     onClose: t
-  } = e, n = (0, T.A)(), a = (0, I.A)(), [g, b] = i.useState(0), v = a[g], L = Y.jS[v], Z = en(L, (0, h.bG)([S.A], () => S.A.getCheckpointData()).cardId), Q = (0, m.rdh)(Z.primaryColor).hex(), [$] = i.useState(new N.B4), [J, ee] = i.useState(false), et = (0, C.V)(d.A), ei = (0, C.V)(u.A), es = (0, C.V)(o.A), eo = (0, C.V)(l.A), el = (0, C.V)(c.A), ec = i.useRef(Y.Wf.WELCOME), eu = i.useCallback(() => {
+  } = e, n = (0, T.A)(), a = (0, S.A)(), [g, y] = i.useState(0), A = a[g], L = Y.jS[A], Z = en(L, (0, h.bG)([I.A], () => I.A.getCheckpointData()).cardId), Q = (0, m.rdh)(Z.primaryColor).hex(), [$] = i.useState(new N.B4), [J, ee] = i.useState(false), et = (0, C.V)(d.A), ei = (0, C.V)(u.A), es = (0, C.V)(o.A), eo = (0, C.V)(l.A), el = (0, C.V)(c.A), ec = i.useRef(Y.Wf.WELCOME), eu = i.useCallback(() => {
     ee(true), ei()
   }, [ei]), ed = i.useCallback(() => {
-    v === Y.Wf.END_CLAIM ? es() : v === Y.Wf.END_REWARD ? el() : Y.eg.has(v) || eo()
-  }, [v, es, eo, el]), ef = i.useCallback(() => {
-    g >= a.length - 1 ? eu() : (ed(), b(g + 1))
+    A === Y.Wf.END_CLAIM ? es() : A === Y.Wf.END_REWARD ? el() : Y.eg.has(A) || eo()
+  }, [A, es, eo, el]), ef = i.useCallback(() => {
+    g >= a.length - 1 ? eu() : (ed(), y(g + 1))
   }, [eu, ed, g, a.length]);
   i.useEffect(() => {
-    y.default.track(W.HAw.CHECKPOINT_STEP_VIEWED, {
-      step_name: er(v)
-    }), ec.current = v, v === Y.Wf.END_SUMMARY && E.Ay.fireSurveyAction(f.w.CHECKPOINT_COMPLETED)
-  }, [v]);
+    b.default.track(W.HAw.CHECKPOINT_STEP_VIEWED, {
+      step_name: er(A)
+    }), ec.current = A, A === Y.Wf.END_SUMMARY && E.Ay.fireSurveyAction(f.w.CHECKPOINT_COMPLETED)
+  }, [A]);
   let ep = i.useCallback(() => {
-    v !== Y.Wf.WELCOME && (ed(), b(g - 1))
-  }, [v, ed, g]);
+    A !== Y.Wf.WELCOME && (ed(), y(g - 1))
+  }, [A, ed, g]);
   i.useEffect(() => {
     let e = e => {
       (0, p.vq)(e.target, HTMLTextAreaElement) || (0, p.vq)(e.target, HTMLInputElement) || ("ArrowRight" === e.key ? ef() : "ArrowLeft" === e.key && ep())
     };
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
   }, [ep, ef]), i.useEffect(() => (et(), () => {
-    y.default.track(W.HAw.CHECKPOINT_CLOSED, {
+    b.default.track(W.HAw.CHECKPOINT_CLOSED, {
       step_name: er(ec.current)
     })
   }), []);
@@ -147,14 +147,14 @@ function ei(e) {
         let [n, r] = t;
         return Y.jS[r] === e
       })) ? t : [], r = Number.parseInt(null != n ? n : "0");
-      ed(), b(r)
+      ed(), y(r)
     }, [ed, a]),
     eh = i.useCallback(() => {
       J && ((0, O.hv)(), t())
     }, [J, t]);
   return (0, r.jsx)(N.GD.Provider, {
     value: $,
-    children: (0, r.jsx)(A.P.Provider, {
+    children: (0, r.jsx)(v.P.Provider, {
       value: Z,
       children: (0, r.jsx)(m.NPJ, {
         theme: K.NJ.DARKER,
@@ -189,7 +189,7 @@ function ei(e) {
               }), (0, r.jsx)(m.q7S, {
                 id: Y.P7.FRIENDS,
                 children: (0, r.jsx)(k.A, {
-                  step: v,
+                  step: A,
                   onNextStep: ef,
                   onPreviousStep: ep
                 })
@@ -202,7 +202,7 @@ function ei(e) {
               }), (0, r.jsx)(m.q7S, {
                 id: Y.P7.END,
                 children: (0, r.jsx)(M.A, {
-                  step: v,
+                  step: A,
                   onNext: ef
                 })
               })]
@@ -252,7 +252,7 @@ function ei(e) {
                   colorClass: X.d7,
                   color: Q
                 })
-              }), v !== Y.Wf.END_REWARD && v !== Y.Wf.END_SUMMARY && (0, r.jsx)(R.A, {
+              }), A !== Y.Wf.END_REWARD && A !== Y.Wf.END_SUMMARY && (0, r.jsx)(R.A, {
                 onClick: ef,
                 contentClassName: X.jR,
                 className: X.E5,
@@ -261,7 +261,7 @@ function ei(e) {
                   colorClass: X.d7,
                   color: Q
                 })
-              }), v === Y.Wf.END_SUMMARY && (0, r.jsx)(ea, {
+              }), A === Y.Wf.END_SUMMARY && (0, r.jsx)(ea, {
                 primaryColor: Q
               })]
             })]
@@ -275,8 +275,8 @@ function ei(e) {
 function ea(e) {
   let {
     primaryColor: t
-  } = e, n = (0, h.bG)([S.A], () => S.A.getCheckpointData()), i = () => {
-    let e = new b.Ay({
+  } = e, n = (0, h.bG)([I.A], () => I.A.getCheckpointData()), i = () => {
+    let e = new y.Ay({
       content: "",
       components: [{
         type: 20,

@@ -49,21 +49,21 @@
               if (null != m)
                 for (var g = 0; g < m.length; g++) {
                   var E = m[g],
-                    b = e[E],
-                    y = b.order;
-                  if (y > p) break;
+                    y = e[E],
+                    b = y.order;
+                  if (b > p) break;
                   var O = null == r.prevCapture ? "" : r.prevCapture[0],
-                    A = b.match(t, r, O);
-                  if (A) {
-                    var v = b.quality ? b.quality(A, r, O) : 0;
-                    (y < p || v > f) && (l = E, c = b, u = A, f = v, p = y)
+                    v = y.match(t, r, O);
+                  if (v) {
+                    var A = y.quality ? y.quality(v, r, O) : 0;
+                    (b < p || A > f) && (l = E, c = y, u = v, f = A, p = b)
                   }
                 }
             }
             if (null == c || null == u) throw Error("Could not find a matching rule for the below content. The rule with highest `order` should always match content provided to it. Check the definition of `match` for '" + a[a.length - 1] + "'. It seems to not match the following source:\n" + t);
             if (u.index) throw Error("`match` must return a capture starting at index 0 (the current parse index). Did you forget a ^ at the start of the RegExp?");
-            var S = c.parse(u, d, r);
-            Array.isArray(S) ? Array.prototype.push.apply(i, S) : (null == S.type && (S.type = l), i.push(S)), r.prevCapture = u, t = t.substring(r.prevCapture[0].length)
+            var I = c.parse(u, d, r);
+            Array.isArray(I) ? Array.prototype.push.apply(i, I) : (null == I.type && (I.type = l), i.push(I)), r.prevCapture = u, t = t.substring(r.prevCapture[0].length)
           }
           return i
         },
@@ -141,13 +141,13 @@
     E = function(e) {
       return e.replace(g, "$1")
     },
-    b = function(e, t, n) {
+    y = function(e, t, n) {
       var r = n.inline || false;
       n.inline = true;
       var i = e(t, n);
       return n.inline = r, i
     },
-    y = function(e, t, n) {
+    b = function(e, t, n) {
       var r = n.inline || false;
       n.inline = false;
       var i = e(t + "\n\n", n);
@@ -155,21 +155,21 @@
     },
     O = function(e, t, n) {
       return {
-        content: b(t, e[1], n)
+        content: y(t, e[1], n)
       }
     },
-    A = function() {
+    v = function() {
       return {}
     },
-    v = "(?:[*+-]|\\d+\\.)",
-    S = "( *)(" + v + ") +",
-    I = RegExp("^" + S),
-    T = RegExp(S + "[^\\n]*(?:\\n(?!\\1" + v + " )[^\\n]*)*(\n|$)", "gm"),
+    A = "(?:[*+-]|\\d+\\.)",
+    I = "( *)(" + A + ") +",
+    S = RegExp("^" + I),
+    T = RegExp(I + "[^\\n]*(?:\\n(?!\\1" + A + " )[^\\n]*)*(\n|$)", "gm"),
     C = /\n{2,}$/,
     N = /^ (?= *`)|(` *) $/g,
     R = C,
     w = / *\n+$/,
-    P = RegExp("^( *)(" + v + ") [\\s\\S]+?(?:\n{2,}(?! )(?!\\1" + v + " )\\n*|\\s*\n*$)"),
+    P = RegExp("^( *)(" + A + ") [\\s\\S]+?(?:\n{2,}(?! )(?!\\1" + A + " )\\n*|\\s*\n*$)"),
     D = /(?:^|\n)( *)$/,
     x = function() {
       var e = /^ *\| *| *\| *$/g,
@@ -271,7 +271,7 @@
         parse: function(e, t, n) {
           return {
             level: e[1].length,
-            content: b(t, e[2].trim(), n)
+            content: y(t, e[2].trim(), n)
           }
         },
         react: function(e, t, n) {
@@ -297,7 +297,7 @@
           return {
             type: "heading",
             level: "=" === e[2] ? 1 : 2,
-            content: b(t, e[1], n)
+            content: y(t, e[1], n)
           }
         },
         react: null,
@@ -306,7 +306,7 @@
       hr: {
         order: G++,
         match: o(/^( *[-*_]){3,} *(?:\n *)+\n/),
-        parse: A,
+        parse: v,
         react: function(e, t, n) {
           return u("hr", n.key, f)
         },
@@ -388,9 +388,9 @@
             ordered: i,
             start: a,
             items: s.map(function(e, r) {
-              var i, a = I.exec(e),
+              var i, a = S.exec(e),
                 l = RegExp("^ {1," + (a ? a[0].length : 0) + "}", "gm"),
-                c = e.replace(l, "").replace(I, ""),
+                c = e.replace(l, "").replace(S, ""),
                 u = r === s.length - 1,
                 d = false !== c.indexOf("\n\n") || u && o;
               o = d;
@@ -510,7 +510,7 @@
         order: G++,
         requiredFirstCharacters: ["\n"],
         match: o(/^(?:\n *)*\n/),
-        parse: A,
+        parse: v,
         react: function(e, t, n) {
           return "\n"
         },
@@ -783,7 +783,7 @@
         order: G++,
         requiredFirstCharacters: [" "],
         match: l(/^ {2,}\n/),
-        parse: A,
+        parse: v,
         react: function(e, t, n) {
           return u("br", n.key, f)
         },
@@ -873,8 +873,8 @@
     inlineRegex: s,
     blockRegex: o,
     anyScopeRegex: l,
-    parseInline: b,
-    parseBlock: y,
+    parseInline: y,
+    parseBlock: b,
     markdownToReact: Q,
     markdownToHtml: function(e, t) {
       return Z(K(e, t), t)

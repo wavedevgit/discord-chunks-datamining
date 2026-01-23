@@ -1,9 +1,9 @@
 /** Chunk was on 97492 **/
 /** chunk id: 396787, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F5: () => f,
-  XA: () => h,
-  jv: () => p
+  F5: () => p,
+  XA: () => f,
+  jv: () => h
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,7 +15,7 @@ var Chunk653922 = require("./653922.js"),
   Chunk576470 = require("./576470.jsx"),
   Chunk339984 = require("./339984.js"),
   Chunk985018 = require("./985018.jsx");
-let f = (e, t) => (0, i.mMO)(async () => {
+let p = (e, t) => (0, i.mMO)(async () => {
     let {
       default: l
     } = await Promise.all([n.e("79149"), n.e("53653"), n.e("92812")]).then(n.bind(n, 551028));
@@ -47,16 +47,16 @@ let f = (e, t) => (0, i.mMO)(async () => {
       allowRecentAvatarsSelection: false
     }, n))
   }),
-  p = (e, t) => {
-    f(n => {
-      s.A.setIcon(e, n.imageUri, t).catch(h)
+  h = (e, t) => {
+    p(n => {
+      a.A.setIcon(e, n.imageUri, t).catch(f)
     }, [t])
   },
-  h = e => {
+  f = e => {
     var t;
     if ((null == e || null == (t = e.body) ? true : t.retry_after) != null) {
       let t = (0, l.A)(new Date, e.body.retry_after);
-      a.A.show({
+      s.A.show({
         title: d.intl.string(d.t.Whhv4w),
         body: d.intl.format(d.t.VIJkAy, {
           duration: (0, r.jsx)(c.A, {

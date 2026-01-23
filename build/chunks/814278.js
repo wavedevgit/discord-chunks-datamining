@@ -57,7 +57,7 @@ function w() {
 }
 
 function P(e, t, n, r, i) {
-  n ? O.A.createSecureFramesVerifiedKey(e, t) : O.A.createSecureFramesTransientKey(e, t), (0, S.cw)({
+  n ? O.A.createSecureFramesVerifiedKey(e, t) : O.A.createSecureFramesTransientKey(e, t), (0, I.cw)({
     channelId: r,
     userId: e,
     analyticsLocation: i
@@ -72,25 +72,25 @@ function D(e, t, n) {
 }
 
 function x(e, t) {
-  v.A.openSecureFramesUpdateConfirmation({
+  A.A.openSecureFramesUpdateConfirmation({
     title: C.intl.string(C.t.hdL152),
     subtitle: C.intl.string(C.t["8VGYKg"]),
     onConfirm: () => {
-      O.A.deleteSecureFramesVerifiedKey(e, t), (0, S.Jk)()
+      O.A.deleteSecureFramesVerifiedKey(e, t), (0, I.Jk)()
     }
   })
 }
 
 function L(e) {
   let t = h.default.getUser(e),
-    n = y.Ay.getName(t);
-  v.A.openSecureFramesUpdateConfirmation({
+    n = b.Ay.getName(t);
+  A.A.openSecureFramesUpdateConfirmation({
     title: C.intl.formatToPlainString(C.t.K6NGBy, {
       username: n
     }),
     subtitle: C.intl.string(C.t.F1BQK3),
     onConfirm: () => {
-      O.A.deleteSecureFramesUserVerifiedKeys(e), (0, S.YT)()
+      O.A.deleteSecureFramesUserVerifiedKeys(e), (0, I.YT)()
     }
   })
 }
@@ -175,7 +175,7 @@ async function G(e, t, n) {
       rejectWithError: false
     })).body.is_match
   } catch (e) {
-    throw b.A.captureException(e), e
+    throw y.A.captureException(e), e
   }
 }
 async function V(e) {
@@ -194,12 +194,12 @@ async function V(e) {
       rejectWithError: false
     }), O.A.addUploadedKeyVersion(e)
   } catch (e) {
-    throw b.A.captureException(e), e
+    throw y.A.captureException(e), e
   }
 }
 
 function F(e) {
-  return A.A.getUploadedKeyVersionsCached().includes(e)
+  return v.A.getUploadedKeyVersionsCached().includes(e)
 }
 async function B(e) {
   F(e) || await V(e)
@@ -211,7 +211,7 @@ async function H(e) {
       key: n
     } = await k(e),
     r = await G(t, n, e);
-  return r || (0, S.XS)(e), r
+  return r || (0, I.XS)(e), r
 }
 
 function Y(e, t) {
@@ -237,11 +237,11 @@ function W(e) {
     channelId: n,
     nickname: r
   } = e;
-  (0, S.kF)({
+  (0, I.kF)({
     userId: t,
     channelId: n,
     keyVersion: 1,
-    reason: I.m4.OTHER_USER_INCONSISTENT_KEYS
+    reason: S.m4.OTHER_USER_INCONSISTENT_KEYS
   }), u.A.show({
     title: C.intl.string(C.t.mznLyR),
     body: C.intl.format(C.t.WY6IKb, {

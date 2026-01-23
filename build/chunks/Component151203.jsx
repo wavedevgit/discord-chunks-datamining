@@ -45,7 +45,7 @@ function w(e) {
     guildOwnerId: s,
     member: u
   } = e, l = g.default.getUser(u.userId), o = i.useRef(null);
-  return (0, n.jsx)(f.A, {
+  return (0, n.jsx)(p.A, {
     targetElementRef: o,
     userId: u.userId,
     guildId: t,
@@ -100,12 +100,12 @@ function I(e) {
     guild: t,
     transitionState: r,
     onClose: s
-  } = e, d = i.useMemo(() => b.A.getFriendIDs(), []);
+  } = e, d = i.useMemo(() => f.A.getFriendIDs(), []);
   i.useEffect(() => {
     m.A.fetchFriendMembersIfNotFetched(t.id, d)
   }, [t.id, d]);
-  let a = (0, o.bG)([p.Ay], () => p.Ay.getMembers(t.id)),
-    f = i.useMemo(() => u()(a).filter(e => !!d.includes(e.userId) && null != g.default.getUser(e.userId)).sortBy(e => {
+  let a = (0, o.bG)([b.Ay], () => b.Ay.getMembers(t.id)),
+    p = i.useMemo(() => u()(a).filter(e => !!d.includes(e.userId) && null != g.default.getUser(e.userId)).sortBy(e => {
       var t;
       let r = g.default.getUser(e.userId);
       return (null != r ? null != (t = e.nick) ? t : r.username : "").toLocaleLowerCase()
@@ -119,11 +119,11 @@ function I(e) {
     title: O.intl.string(O.t.kYxEcH),
     subtitle: O.intl.format(y ? O.t.EtQnZi : O.t.OgMdNS, {
       guildName: t.name,
-      numFriends: f.length
+      numFriends: p.length
     }),
     actions: true,
     transitionState: r,
     onClose: s,
-    children: [y && (0, n.jsx)(c.y$y, {}), f]
+    children: [y && (0, n.jsx)(c.y$y, {}), p]
   })
 }

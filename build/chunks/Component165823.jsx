@@ -145,11 +145,11 @@ let D = e => {
       isGift: i,
       giftingOrigin: a
     } = e;
-    return i ? (0, r.jsx)(y.A, {
+    return i ? (0, r.jsx)(b.A, {
       step: t,
       onClose: () => n(false),
       giftingOrigin: a
-    }) : (0, r.jsx)(S.A, {
+    }) : (0, r.jsx)(I.A, {
       step: t,
       onClose: () => n(false)
     })
@@ -167,12 +167,12 @@ function G(e) {
     giftRecipient: u,
     giftMessage: f,
     giftingOrigin: p,
-    analyticsLocations: y,
-    returnRef: S
+    analyticsLocations: b,
+    returnRef: I
   } = e, {
     analyticsLocations: T
   } = D({
-    analyticsLocations: y
+    analyticsLocations: b
   }), {
     confettiCanvas: C,
     environment: R,
@@ -199,9 +199,9 @@ function G(e) {
     step: n,
     onClose: t,
     giftingOrigin: p
-  }), q = i.useMemo(() => [b.kJ, ...c ? [v.gA] : [], O.p, ...b.hh, b.r2, {
+  }), q = i.useMemo(() => [y.kJ, ...c ? [A.gA] : [], O.p, ...y.hh, y.r2, {
     key: m.pn.CONFIRM,
-    renderStep: e => (0, r.jsx)(A.v, P({
+    renderStep: e => (0, r.jsx)(v.v, P({
       confettiCanvas: C,
       analyticsLocations: T,
       hideConfetti: B
@@ -218,7 +218,7 @@ function G(e) {
     }), (0, r.jsx)(h.PaymentContextProvider, {
       loadId: o,
       stepConfigs: q,
-      applicationId: I.FYj,
+      applicationId: S.FYj,
       skuIDs: H,
       isGift: c,
       activeSubscription: null,
@@ -234,14 +234,14 @@ function G(e) {
             skuId: Y,
             onClose: W,
             onComplete: K,
-            applicationId: I.FYj,
+            applicationId: S.FYj,
             initialPlanId: null,
             analyticsLocations: T,
             renderHeader: z,
             onStepChange: a,
             hideShadow: true,
             transitionState: s,
-            returnRef: S
+            returnRef: I
           })
         })
       })

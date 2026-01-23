@@ -2,7 +2,7 @@
 /** chunk id: 224640, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  d: () => y,
+  d: () => b,
   i: () => _.i
 });
 var Chunk627968 = require("./627968.js"),
@@ -52,13 +52,13 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e) {
+function b(e) {
   var t;
   let {
     transitionState: n,
@@ -66,29 +66,29 @@ function y(e) {
     size: _ = "md",
     paddingSize: m = "sm",
     fullScreenOnMobile: E = true,
-    returnRef: y,
+    returnRef: b,
     role: O = "dialog",
-    "aria-label": A,
-    dismissable: v = true,
-    onClose: S,
-    contentOutsideContainer: I,
+    "aria-label": v,
+    dismissable: A = true,
+    onClose: I,
+    contentOutsideContainer: S,
     trackingProps: T,
     children: C
   } = e, N = i.useId(), R = i.useMemo(() => ({
     id: N,
     headingId: "heading-".concat(N),
-    onClose: S,
-    dismissable: v
-  }), [v, N, S]), w = (0, p.kS)(n, a), P = i.useRef(null);
+    onClose: I,
+    dismissable: A
+  }), [A, N, I]), w = (0, p.kS)(n, a), P = i.useRef(null);
   return (0, r.jsx)(f.V.Provider, {
     value: R,
     children: (0, r.jsx)(c.l, {
       id: N,
       role: O,
-      "aria-label": A,
-      "aria-labelledby": null != A ? true : R.headingId,
-      returnRef: y,
-      trackingProps: b(g({}, T), {
+      "aria-label": v,
+      "aria-labelledby": null != v ? true : R.headingId,
+      returnRef: b,
+      trackingProps: y(g({}, T), {
         impressionType: null != (t = null == T ? true : T.impressionType) ? t : l.ImpressionTypes.MODAL
       }),
       children: (0, r.jsx)(u.xp, {
@@ -100,7 +100,7 @@ function y(e) {
             className: s()(h.outerContainer, {
               [h.fullScreenOnMobile]: E
             }),
-            children: [I, (0, r.jsx)(o.animated.div, {
+            children: [S, (0, r.jsx)(o.animated.div, {
               "data-mana-component": "modal",
               className: s()(h.container, h["size-".concat(_)], h["padding-size-".concat(m)]),
               style: w,

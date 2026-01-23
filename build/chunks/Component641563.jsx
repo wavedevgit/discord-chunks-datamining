@@ -1,7 +1,7 @@
 /** Chunk was on 1784 **/
 /** chunk id: 641563, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -10,20 +10,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk532794 = require("./532794.jsx"),
   Chunk788868 = require("./788868.js"),
   Chunk376435 = require("./376435.js");
-let d = e => {
+let u = e => {
   let {
     text: t
   } = e, {
     analyticsLocations: n
-  } = (0, i.Ay)(), d = l.useRef(null);
-  return (0, r.jsx)(a.DUT, {
-    className: o.F,
-    innerRef: d,
+  } = (0, a.Ay)(), u = l.useRef(null);
+  return (0, r.jsx)(i.DUT, {
+    className: c.F,
+    innerRef: u,
     onClick: () => {
       (0, s.A)({
-        subscriptionTier: c.pe.TIER_2,
+        subscriptionTier: o.pe.TIER_2,
         analyticsLocations: n,
-        returnRef: d
+        returnRef: u
       })
     },
     children: t

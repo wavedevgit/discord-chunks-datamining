@@ -1,7 +1,7 @@
 /** Chunk was on 83006 **/
 /** chunk id: 137508, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  t: () => p
+  t: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,46 +14,46 @@ var Chunk627968 = require("./627968.js"),
   Chunk457417 = require("./457417.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk316582 = require("./316582.js");
-let p = () => {
+let b = () => {
   let {
     message: e,
     channel: t,
     updateMessageText: r
-  } = (0, d.Vw)(), p = (0, l.bG)([u.A], () => u.A.getDraft(e.channel_id, u.C.ChannelMessage)), [g, y] = a.useState(() => (0, c.ur)(p)), {
-    textValue: h,
+  } = (0, d.Vw)(), b = (0, l.bG)([u.A], () => u.A.getDraft(e.channel_id, u.C.ChannelMessage)), [g, h] = a.useState(() => (0, i.ur)(b)), {
+    textValue: y,
     richValue: O
   } = g;
   (0, a.useEffect)(() => {
-    r(h)
-  }, [r, h]);
-  let m = a.useCallback((t, r, n) => {
-      y({
+    r(y)
+  }, [r, y]);
+  let _ = a.useCallback((t, r, n) => {
+      h({
         textValue: r,
         richValue: n
       }), o.A.saveDraft(e.channel_id, r, u.C.ChannelMessage)
     }, [e]),
-    [j, w] = a.useState(false),
-    C = a.useCallback(() => w(true), []),
-    v = a.useCallback(() => w(false), []);
+    [m, j] = a.useState(false),
+    w = a.useCallback(() => j(true), []),
+    C = a.useCallback(() => j(false), []);
   (0, a.useEffect)(() => () => {
     o.A.clearDraft(e.channel_id, u.C.ChannelMessage)
   }, [e]);
-  let P = async () => ({
+  let v = async () => ({
     shouldClear: true,
     shouldRefocus: false
   });
-  return (0, n.jsx)(i.Ay, {
-    innerClassName: b.O,
-    onChange: m,
+  return (0, n.jsx)(c.Ay, {
+    innerClassName: p.O,
+    onChange: _,
     placeholder: f.intl.string(f.t.ZroO3G),
     channel: t,
-    textValue: h,
+    textValue: y,
     richValue: O,
     type: s.oU.SHARE_CUSTOM_CLIENT_THEME_INPUT,
-    onBlur: v,
-    onFocus: C,
-    focused: j,
-    onSubmit: P,
+    onBlur: C,
+    onFocus: w,
+    focused: m,
+    onSubmit: v,
     parentModalKey: d.dJ,
     autoCompletePosition: "bottom",
     emojiPickerCloseOnModalOuterClick: true,

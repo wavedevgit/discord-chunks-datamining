@@ -4,11 +4,11 @@
 require.d(exports, {
   Bs: () => O,
   HB: () => g,
-  K2: () => S,
-  ME: () => y,
-  N5: () => v,
+  K2: () => I,
+  ME: () => b,
+  N5: () => A,
   OI: () => m,
-  wz: () => A
+  wz: () => v
 });
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -41,11 +41,11 @@ function E(e) {
   return null != e.quality || null != e.guildPremiumTier
 }
 
-function b(e, t, n) {
+function y(e, t, n) {
   return f.ZV.find(r => (null == r.preset || r.preset === e) && r.resolution === t && r.fps === n)
 }
 
-function y(e) {
+function b(e) {
   return e.type === _.ei.SOURCE ? h.intl.string(h.t.XjXqzh) : h.intl.formatToPlainString(h.t.TEOC0I, {
     resolution: e.height
   })
@@ -57,14 +57,14 @@ function O(e) {
   })
 }
 
-function A(e) {
+function v(e) {
   return null == e.maxResolution || null == e.maxFrameRate ? null : {
     maxFrameRate: e.maxFrameRate,
     maxResolution: e.maxResolution
   }
 }
 
-function v(e) {
+function A(e) {
   let t = (0, i.cf)([a.A], () => a.A.getState()),
     n = (0, i.bG)([s.default], () => s.default.getId());
   return r.useMemo(() => n === e.user.id ? {
@@ -74,11 +74,11 @@ function v(e) {
       width: 0,
       type: 0 === t.resolution ? _.ei.SOURCE : _.ei.FIXED
     }
-  } : A(e), [n, e, t])
+  } : v(e), [n, e, t])
 }
 
-function S(e, t, n) {
-  let r = b(e, t, n),
+function I(e, t, n) {
+  let r = y(e, t, n),
     i = c.default.getCurrentUser(),
     a = l.A.getGuildId(),
     s = null != a ? o.A.getGuild(a) : null;

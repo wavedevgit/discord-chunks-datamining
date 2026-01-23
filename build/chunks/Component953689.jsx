@@ -2,7 +2,7 @@
 /** chunk id: 953689, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -40,7 +40,7 @@ function E(e) {
   }
   return e
 }
-class b extends Chunk64700.Component {
+class y extends Chunk64700.Component {
   componentDidMount() {
     this.props.onChange(this.hasAcceptedNeccessaryTerms(this.props, this.state))
   }
@@ -62,24 +62,24 @@ class b extends Chunk64700.Component {
       className: c,
       finePrint: d,
       showPricingLink: g,
-      showWithdrawalWaiver: b,
-      isTrial: y,
+      showWithdrawalWaiver: y,
+      isTrial: b,
       inReverseTrial: O,
-      isDiscount: A,
-      subscriptionPlan: v,
-      finePrintClassname: S
+      isDiscount: v,
+      subscriptionPlan: A,
+      finePrintClassname: I
     } = this.props, {
-      hasAcceptedEULA: I,
+      hasAcceptedEULA: S,
       hasAcceptedWithdrawalWaiver: T
     } = this.state;
-    return (l()(!y || null != v, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), a || null != e && !i || b) ? (0, r.jsxs)("div", {
+    return (l()(!b || null != A, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), a || null != e && !i || y) ? (0, r.jsxs)("div", {
       className: c,
-      children: [b && (0, r.jsx)(u.Heading, {
+      children: [y && (0, r.jsx)(u.Heading, {
         variant: "heading-md/semibold",
         className: m.Hc,
         children: h.intl.string(h.t.Ogvn5o)
       }), null != e && (a || !i) ? (0, r.jsx)(u.Checkbox, {
-        checked: I,
+        checked: S,
         onChange: e => this.setState({
           hasAcceptedEULA: e
         }),
@@ -98,9 +98,9 @@ class b extends Chunk64700.Component {
           }
         })
       }) : null, null == d ? null : (0, r.jsx)("div", {
-        className: s()(m.aO, S),
+        className: s()(m.aO, I),
         children: d
-      }), b ? (0, r.jsxs)("div", {
+      }), y ? (0, r.jsxs)("div", {
         className: c,
         children: [(0, r.jsx)(u.Checkbox, {
           checked: T,
@@ -118,30 +118,30 @@ class b extends Chunk64700.Component {
         children: ["*", h.intl.format(h.t["5zmY3F"], {
           documentationLink: f.A.getArticleURL(_.MVz.LOCALIZED_PRICING)
         })]
-      }), y && null != v && (0, r.jsx)(u.Text, {
+      }), b && null != A && (0, r.jsx)(u.Text, {
         variant: "text-xs/medium",
         color: "interactive-text-default",
         children: h.intl.format(h.t["Hvo/Z5"], {
-          buttonText: (0, p.ff)(null, v),
-          interval: p.Ay.formatInterval(null == v ? true : v.interval),
+          buttonText: (0, p.ff)(null, A),
+          interval: p.Ay.formatInterval(null == A ? true : A.interval),
           cancelSubscriptionArticle: f.A.getArticleURL(_.MVz.PREMIUM_DETAILS_CANCEL_SUB),
           paidServiceTermsArticle: f.A.getArticleURL(_.MVz.PAID_TERMS)
         })
-      }), O && null != v && (0, r.jsx)(u.Text, {
+      }), O && null != A && (0, r.jsx)(u.Text, {
         variant: "text-xs/medium",
         color: "interactive-text-default",
         children: h.intl.format(h.t.Oo2FeS, {
-          buttonText: (0, p.ff)(null, v),
-          interval: p.Ay.formatInterval(null == v ? true : v.interval),
+          buttonText: (0, p.ff)(null, A),
+          interval: p.Ay.formatInterval(null == A ? true : A.interval),
           cancelSubscriptionArticle: f.A.getArticleURL(_.MVz.PREMIUM_DETAILS_CANCEL_SUB),
           paidServiceTermsArticle: f.A.getArticleURL(_.MVz.PAID_TERMS)
         })
-      }), A && null != v && (0, r.jsx)(u.Text, {
+      }), v && null != A && (0, r.jsx)(u.Text, {
         variant: "text-xs/medium",
         color: "interactive-text-default",
         children: h.intl.format(h.t["Z2c+aV"], {
-          buttonText: (0, p.ff)(null, v),
-          interval: p.Ay.formatInterval(null == v ? true : v.interval),
+          buttonText: (0, p.ff)(null, A),
+          interval: p.Ay.formatInterval(null == A ? true : A.interval),
           cancelSubscriptionArticle: f.A.getArticleURL(_.MVz.PREMIUM_DETAILS_CANCEL_SUB),
           paidServiceTermsArticle: f.A.getArticleURL(_.MVz.PAID_TERMS)
         })
@@ -155,11 +155,11 @@ class b extends Chunk64700.Component {
     })
   }
 }
-let y = Chunk311907.Ay.connectStores([Chunk293066.A], e => {
+let b = Chunk311907.Ay.connectStores([Chunk293066.A], e => {
   let {
     eulaId: t
   } = e;
   return {
     hasPreviouslyAcceptedEULA: null != t && d.A.hasAcceptedEULA(t)
   }
-})(b)
+})(y)

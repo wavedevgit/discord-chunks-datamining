@@ -2,7 +2,7 @@
 /** chunk id: 451802, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y,
+  A: () => b,
   E: () => g
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -34,7 +34,7 @@ let E = {
   DEFAULT: Chunk181204.__invalid_default,
   RECORDING: Chunk181204.oz
 };
-class b extends Chunk64700.PureComponent {
+class y extends Chunk64700.PureComponent {
   componentWillUnmount() {
     null != this._unregisterNativeRecorder && this._unregisterNativeRecorder()
   }
@@ -125,4 +125,4 @@ class b extends Chunk64700.PureComponent {
     })
   }
 }
-let y = b
+let b = y

@@ -39,7 +39,7 @@ function x(e) {
       channel_id: t
     },
     socket: n
-  } = e, r = f.A.getChannel(t);
+  } = e, r = h.A.getChannel(t);
   if (null == r || !(0, O.B_)(r, n.application.id, n.authorization.scopes)) throw new E.A({
     errorCode: T.Lw6.INVALID_CHANNEL
   }, "Invalid channel id: ".concat(t));
@@ -57,7 +57,7 @@ function w(e) {
       channel_id: t
     }
   } = e;
-  if (null != t && null == f.A.getChannel(t)) throw new E.A({
+  if (null != t && null == h.A.getChannel(t)) throw new E.A({
     errorCode: T.Lw6.INVALID_CHANNEL
   }, "Invalid channel id: ".concat(t))
 }
@@ -73,7 +73,7 @@ let L = {
           guild_id: t
         }
       } = e;
-      if (null == A.A.getGuild(t)) throw new E.A({
+      if (null == f.A.getGuild(t)) throw new E.A({
         errorCode: T.Lw6.INVALID_GUILD
       }, "Invalid guild id: ".concat(t));
       return e => {
@@ -81,7 +81,7 @@ let L = {
         let {
           prevState: r,
           dispatch: l
-        } = e, a = A.A.getGuild(t);
+        } = e, a = f.A.getGuild(t);
         if (null == a) return;
         let s = {
           guild: {
@@ -108,17 +108,17 @@ let L = {
           channel_id: t
         }
       } = e;
-      if (null == f.A.getChannel(t)) throw new E.A({
+      if (null == h.A.getChannel(t)) throw new E.A({
         errorCode: T.Lw6.INVALID_CHANNEL
       }, "Invalid channel id: ".concat(t));
       return e => {
         let {
           prevState: n,
           dispatch: r
-        } = e, l = f.A.getChannel(t);
+        } = e, l = h.A.getChannel(t);
         if (null == l) return;
         let a = l.getGuildId(),
-          s = Object.values(_.A.getVoiceStatesForChannel(l.id));
+          s = Object.values(b.A.getVoiceStatesForChannel(l.id));
         return n && i().differenceBy(s, n, e => {
           let {
             userId: t
@@ -141,17 +141,17 @@ let L = {
           channel_id: t
         }
       } = e;
-      if (null == f.A.getChannel(t)) throw new E.A({
+      if (null == h.A.getChannel(t)) throw new E.A({
         errorCode: T.Lw6.INVALID_CHANNEL
       }, "Invalid channel id: ".concat(t));
       return e => {
         let {
           prevState: n,
           dispatch: r
-        } = e, l = f.A.getChannel(t);
+        } = e, l = h.A.getChannel(t);
         if (null == l) return;
         let a = l.getGuildId(),
-          s = Object.values(_.A.getVoiceStatesForChannel(l.id));
+          s = Object.values(b.A.getVoiceStatesForChannel(l.id));
         return i().differenceBy(n, s, e => {
           let {
             userId: t
@@ -174,17 +174,17 @@ let L = {
           channel_id: t
         }
       } = e;
-      if (null == f.A.getChannel(t)) throw new E.A({
+      if (null == h.A.getChannel(t)) throw new E.A({
         errorCode: T.Lw6.INVALID_CHANNEL
       }, "Invalid channel id: ".concat(t));
       return e => {
         let {
           prevState: n,
           dispatch: r
-        } = e, l = f.A.getChannel(t);
+        } = e, l = h.A.getChannel(t);
         if (null == l) return;
         let a = l.getGuildId(),
-          s = Object.values(_.A.getVoiceStatesForChannel(l.id)).map(e => (0, O.qG)(a, l.id, e));
+          s = Object.values(b.A.getVoiceStatesForChannel(l.id)).map(e => (0, O.qG)(a, l.id, e));
         return i().differenceWith(s, n, i().isEqual).forEach(e => r(e)), s
       }
     }
@@ -198,11 +198,11 @@ let L = {
         prevState: t,
         dispatch: n
       } = e, r = {
-        state: (0, O.SK)(m.A.getState()),
-        hostname: m.A.getHostname(),
-        pings: m.A.getPings(),
-        average_ping: m.A.getAveragePing(),
-        last_ping: m.A.getLastPing()
+        state: (0, O.SK)(A.A.getState()),
+        hostname: A.A.getHostname(),
+        pings: A.A.getPings(),
+        average_ping: A.A.getAveragePing(),
+        last_ping: A.A.getLastPing()
       };
       return i().isEqual(r, t) || n(r), r
     }
@@ -336,7 +336,7 @@ let L = {
         prevState: t,
         dispatch: n
       } = e, r = {
-        currentUser: b.default.getCurrentUser()
+        currentUser: _.default.getCurrentUser()
       };
       return null == r.currentUser || null != t && (0, s.A)(r, t) || n((0, C.A)(r.currentUser)), r
     }
@@ -356,7 +356,7 @@ let L = {
           prevState: n,
           dispatch: r
         } = e, i = {
-          currentGuildMember: h.Ay.getSelfMember(t)
+          currentGuildMember: g.Ay.getSelfMember(t)
         };
         return null == i.currentGuildMember || null != n && (0, s.A)(i, n) || r((0, S.A)(i.currentGuildMember)), i
       }
@@ -383,14 +383,14 @@ let L = {
       let {
         prevState: n,
         dispatch: r
-      } = e, l = p.A.getStreamerActiveStreamMetadata(), a = (null == l ? true : l.pid) != null ? u.Ay.getGameForPID(l.pid) : null, s = (null == a ? true : a.id) != null ? c.A.getApplication(a.id) : null, o = null != s ? (0, v.A)(s) : null, d = null == l ? true : l.sourceName, f = {
+      } = e, l = p.A.getStreamerActiveStreamMetadata(), a = (null == l ? true : l.pid) != null ? u.Ay.getGameForPID(l.pid) : null, s = (null == a ? true : a.id) != null ? c.A.getApplication(a.id) : null, o = null != s ? (0, v.A)(s) : null, d = null == l ? true : l.sourceName, h = {
         active: null != l,
         pid: null != (t = null == l ? true : l.pid) ? t : null,
         application: null != o ? {
           name: d
         } : null
       };
-      return i().isEqual(f, n) || r(f), f
+      return i().isEqual(h, n) || r(h), h
     }
   },
   [Chunk652215.ZE4.VIDEO_STATE_UPDATE]: {
@@ -402,7 +402,7 @@ let L = {
         prevState: t,
         dispatch: n
       } = e, r = {
-        active: g.A.isVideoEnabled()
+        active: m.A.isVideoEnabled()
       };
       return i().isEqual(r, t) || n(r), r
     }

@@ -5,10 +5,10 @@ require.d(exports, {
 });
 var r, l, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
-let s = {};
+let a = {};
 class o extends(l = Chunk311907.Ay.Store) {
   getFollowerStatsForChannel(e) {
-    return s[e]
+    return a[e]
   }
 }(r = "displayName") in o ? Object.defineProperty(o, r, {
   value: "ChannelFollowerStatsStore",
@@ -18,14 +18,14 @@ class o extends(l = Chunk311907.Ay.Store) {
 }) : o[r] = "ChannelFollowerStatsStore";
 let c = new o(Chunk73153.h, {
   CONNECTION_OPEN: function() {
-    s = {}
+    a = {}
   },
   CHANNEL_FOLLOWER_STATS_FETCH_SUCCESS: function(e) {
     let {
       channelId: t,
       stats: n
     } = e;
-    n = null != n ? n : {}, s[t] = {
+    n = null != n ? n : {}, a[t] = {
       loadingStatus: "succeeded",
       lastFetched: Date.now(),
       channelsFollowing: n.channels_following,
@@ -40,7 +40,7 @@ let c = new o(Chunk73153.h, {
     let {
       channelId: t
     } = e;
-    s[t] = {
+    a[t] = {
       loadingStatus: "failed",
       lastFetched: Date.now(),
       channelsFollowing: 0,

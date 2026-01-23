@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   IQ: () => O,
-  WO: () => b
+  WO: () => y
 }), require("./896048.js"), require("./321073.js"), require("./747238.js"), require("./812715.js");
 var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
@@ -57,13 +57,13 @@ function E(e, t) {
   }), e
 }
 
-function b(e, t) {
+function y(e, t) {
   let {
     mode: n,
     ignoreTrailingEmptyNodes: r,
     preventEmojiSurrogates: i
   } = null != t ? t : {}, [a, s] = (null == t ? true : t.range) != null ? _.ZF.edges(t.range) : [true, true];
-  return y(e, {
+  return b(e, {
     mode: n,
     start: a,
     end: s,
@@ -72,7 +72,7 @@ function b(e, t) {
   })
 }
 
-function y(e, t) {
+function b(e, t) {
   var n, r;
   let {
     mode: i,
@@ -132,16 +132,16 @@ function O(e, t) {
     allowBlockQuotePrefix: i = false,
     preventEmojiSurrogates: h = false
   } = null != t ? t : {};
-  if (_.l5.isText(e)) return A(e.text, t);
+  if (_.l5.isText(e)) return v(e.text, t);
   switch (e.type) {
     case "gameMentionInput":
     case "testInlineVoid":
       return "";
     case "line":
     case "testInline":
-      return y(e.children, t);
+      return b(e.children, t);
     case "blockQuote": {
-      let n = y(e.children, t),
+      let n = b(e.children, t),
         a = null != r && 1 === r.path.length && 0 === r.path[0] && 0 === r.offset;
       if (i && (null == r || a)) return "> ".concat(n);
       return n
@@ -202,24 +202,24 @@ function O(e, t) {
     case "gameMention":
       return "<@$".concat(e.applicationId, ">");
     case "timestampMentionInput": {
-      let n = y(e.children, t);
+      let n = b(e.children, t);
       if (null == r) return "<@time:".concat(n, ">");
       return n
     }
     case "applicationCommand":
-      return y(e.children, E(m({}, t), {
+      return b(e.children, E(m({}, t), {
         separator: " ",
         ignoreEmptyNodes: true
       }));
     case "applicationCommandOption": {
-      let n = y(e.children, t);
+      let n = b(e.children, t);
       if (null == r) return "".concat(e.optionDisplayName, ":").concat(n);
       return n
     }
   }
 }
 
-function A(e, t) {
+function v(e, t) {
   var n, r;
   let {
     start: a,

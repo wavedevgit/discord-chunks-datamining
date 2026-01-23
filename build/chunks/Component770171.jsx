@@ -24,13 +24,13 @@ let f = 20,
       renderSection: m,
       renderSectionHeader: g,
       renderSectionFooter: E,
-      renderInspector: b,
-      renderEmptySearchState: y,
+      renderInspector: y,
+      renderEmptySearchState: b,
       rowCount: O,
-      rowCountBySection: A,
-      rowHeight: v,
-      sectionHeaderHeight: S,
-      sectionFooterHeight: I,
+      rowCountBySection: v,
+      rowHeight: A,
+      sectionHeaderHeight: I,
+      sectionFooterHeight: S,
       renderUpsell: T,
       onScroll: C
     } = e, N = i.useRef(false), R = i.useRef(null), w = (0, l.RQ)(e => e.searchQuery), P = a.useStore(e => e.activeCategoryIndex), D = i.useMemo(() => n.map(e => (0, o.Em)(e.categoryInfo) ? {
@@ -96,7 +96,7 @@ let f = 20,
       }
     }), []), (0, r.jsxs)("div", {
       className: d.i,
-      children: [w.length > 0 && !c && null != y ? y() : (0, r.jsx)(s.A, {
+      children: [w.length > 0 && !c && null != b ? b() : (0, r.jsx)(s.A, {
         role: "none presentation",
         listPadding: p,
         onScroll: L,
@@ -105,13 +105,13 @@ let f = 20,
         renderSectionHeader: g,
         renderSectionFooter: E,
         rowCount: O,
-        rowCountBySection: A,
-        rowHeight: v,
-        sectionHeaderHeight: S,
-        sectionFooterHeight: I,
+        rowCountBySection: v,
+        rowHeight: A,
+        sectionHeaderHeight: I,
+        sectionFooterHeight: S,
         stickyHeaders: true,
         ref: R
-      }), null == T ? true : T(), null == b ? true : b()]
+      }), null == T ? true : T(), null == y ? true : y()]
     })
   }),
   _ = (0, Chunk735438.throttle)(h, 300, {

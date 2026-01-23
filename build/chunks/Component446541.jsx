@@ -30,25 +30,25 @@ function m(e) {
     opacity: .1
   }), E = (0, c.rdh)(f).spring({
     opacity: 0
-  }), b = (0, c.rdh)(f).spring({
+  }), y = (0, c.rdh)(f).spring({
     opacity: 1
-  }), y = e => {
+  }), b = e => {
     e.finished && (null == a || a())
-  }, [O, A] = (0, c.zhh)(() => ({
+  }, [O, v] = (0, c.zhh)(() => ({
     from: {
       backgroundColor: m,
       borderColor: m
     }
-  }), "animate-never"), v = {
+  }), "animate-never"), A = {
     startColor: m,
-    handleRest: y,
+    handleRest: b,
     endColor: E,
-    targetBorderColor: b,
+    targetBorderColor: y,
     targetColor: g,
     animationDelay: u
-  }, S = i.useRef(v);
+  }, I = i.useRef(A);
   return i.useEffect(() => {
-    S.current = v
+    I.current = A
   }), i.useEffect(() => {
     let {
       startColor: e,
@@ -57,10 +57,10 @@ function m(e) {
       targetBorderColor: r,
       targetColor: i,
       animationDelay: a
-    } = S.current, {
+    } = I.current, {
       useReducedMotion: s
     } = d.A, o = s ? 0 : _, c = a + _ + h;
-    A({
+    v({
       reset: true,
       immediate: false,
       to: {
@@ -71,7 +71,7 @@ function m(e) {
         duration: o,
         easing: l.A.Easing.ease
       }
-    }), A({
+    }), v({
       delay: a,
       immediate: s,
       to: [{
@@ -82,7 +82,7 @@ function m(e) {
         duration: o,
         easing: l.A.Easing.ease
       }
-    }), A({
+    }), v({
       delay: c,
       immediate: s,
       to: [{
@@ -95,7 +95,7 @@ function m(e) {
       },
       onRest: t
     })
-  }, [A]), (0, r.jsx)(o.animated.div, {
+  }, [v]), (0, r.jsx)(o.animated.div, {
     style: O,
     className: s()(p.h, n),
     children: t

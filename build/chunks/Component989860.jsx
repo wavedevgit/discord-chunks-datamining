@@ -2,7 +2,7 @@
 /** chunk id: 989860, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  I: () => g
+  I: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,12 +15,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk347953 = require("./347953.js"),
   Chunk622327 = require("./622327.js");
 
-function g(e) {
+function m(e) {
   let {
     canManageGuild: t,
     premiumProgressBarEnabled: n
-  } = e, g = (0, a.Ay)(), b = i.useCallback(e => {
-    c.A.updateGuild({
+  } = e, m = (0, a.Ay)(), p = i.useCallback(e => {
+    o.A.updateGuild({
       premiumProgressBarEnabled: e
     })
   }, []);
@@ -29,17 +29,17 @@ function g(e) {
     children: [(0, r.jsx)("div", {
       className: d.fi,
       children: (0, r.jsx)(s.dOG, {
-        label: o.intl.string(o.t.Dl4mJS),
-        description: o.intl.string(o.t.xzHcod),
+        label: c.intl.string(c.t.Dl4mJS),
+        description: c.intl.string(c.t.xzHcod),
         checked: n,
-        onChange: b,
+        onChange: p,
         disabled: !t
       })
     }), (0, r.jsx)("div", {
       className: d.fi,
       children: (0, r.jsx)("img", {
-        alt: o.intl.string(o.t.UOJp5a),
-        src: (0, l.qB)(g) ? f : u,
+        alt: c.intl.string(c.t.UOJp5a),
+        src: (0, l.qB)(m) ? g : u,
         className: d.WI
       })
     })]

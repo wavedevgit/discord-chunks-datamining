@@ -1,7 +1,7 @@
 /** Chunk was on 88615 **/
-/** chunk id: 931936, original params: e,t,l (module,exports,require) **/
+/** chunk id: 931936, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk158954 = require("./158954.js"),
@@ -21,35 +21,35 @@ function v(e) {
     text: t
   } = e;
   return (0, r.jsx)("div", {
-    className: m.ac,
-    children: (0, r.jsx)(n.EYj, {
+    className: f.ac,
+    children: (0, r.jsx)(l.EYj, {
       variant: "text-sm/medium",
       children: t
     })
   })
 }
 
-function A(e) {
+function g(e) {
   let {
     guildId: t
-  } = e, l = (0, o.A)(t), A = (0, i.A)(t), g = (0, s.A)(t), x = (0, c.A)(A.shouldShow || g.shouldShow);
-  return l.shouldShow || A.shouldShow || g.shouldShow || x.shouldShow ? (0, r.jsxs)("div", {
-    className: m.kL,
-    children: [(0, r.jsx)(n.EYj, {
+  } = e, n = (0, s.A)(t), g = (0, i.A)(t), A = (0, o.A)(t), _ = (0, c.A)(g.shouldShow || A.shouldShow);
+  return n.shouldShow || g.shouldShow || A.shouldShow || _.shouldShow ? (0, r.jsxs)("div", {
+    className: f.kL,
+    children: [(0, r.jsx)(l.EYj, {
       variant: "eyebrow",
       color: "text-subtle",
-      children: p.intl.string(f.default["3FRirU"])
-    }), l.shouldShow && (0, r.jsx)(v, {
-      text: l.text
-    }), A.shouldShow && (0, r.jsx)(d.A, {
+      children: m.intl.string(p.default["3FRirU"])
+    }), n.shouldShow && (0, r.jsx)(v, {
+      text: n.text
+    }), g.shouldShow && (0, r.jsx)(d.A, {
       guildId: t,
-      powerupNames: A.expiringPowerupNames,
-      warnings: A.warnings
-    }), g.shouldShow && null != g.notificationConfig && (0, r.jsx)(u.A, {
-      notificationConfig: g.notificationConfig,
-      markAsDismissed: g.markAsDismissed
-    }), x.shouldShow && (0, r.jsx)(a.A, {
-      markAsDismissed: x.markAsDismissed
+      powerupNames: g.expiringPowerupNames,
+      warnings: g.warnings
+    }), A.shouldShow && null != A.notificationConfig && (0, r.jsx)(u.A, {
+      notificationConfig: A.notificationConfig,
+      markAsDismissed: A.markAsDismissed
+    }), _.shouldShow && (0, r.jsx)(a.A, {
+      markAsDismissed: _.markAsDismissed
     })]
   }) : null
 }

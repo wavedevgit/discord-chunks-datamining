@@ -55,10 +55,10 @@ async function E() {
   }
 }
 
-function b(e) {
+function y(e) {
   return [f.cl.ONLINE, f.cl.STREAMING].includes(e)
 }
-class y extends Chunk439372.A {
+class b extends Chunk439372.A {
   _initialize() {}
   _terminate() {
     this.clear()
@@ -71,12 +71,12 @@ class y extends Chunk439372.A {
       CONNECTION_INTERRUPTED: () => this.clear(),
       SELF_PRESENCE_STORE_UPDATE: () => this.start()
     }), p(this, "start", () => {
-      m() && u.A.isCooldownElapsed() && null == this.timerId && b(s.A.getStatus()) && (this.timerId = setTimeout(() => {
-        this.timerId = null, !b(s.A.getStatus()) || u.A.isCooldownElapsed() && E()
+      m() && u.A.isCooldownElapsed() && null == this.timerId && y(s.A.getStatus()) && (this.timerId = setTimeout(() => {
+        this.timerId = null, !y(s.A.getStatus()) || u.A.isCooldownElapsed() && E()
       }, g()))
     }), p(this, "clear", () => {
       null != this.timerId && (clearTimeout(this.timerId), this.timerId = null)
     })
   }
 }
-let O = new y
+let O = new b

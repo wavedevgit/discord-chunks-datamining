@@ -27,33 +27,33 @@ function x(t) {
   var e, n, x, C, O, A, E, v, L, k, D, P;
   let {
     text: w,
-    editor: G,
-    target: M,
-    onHeightUpdate: _,
+    editor: _,
+    target: G,
+    onHeightUpdate: M,
     onSelect: I
   } = t, N = (0, p.us)("SlateTextAreaContextMenu", {
     autoTrackExposure: false
   }).enabled, V = r.useCallback(t => {
-    i.rL.focus(G), setTimeout(() => {
-      null == t || t(), m.VW.focus(G)
+    i.rL.focus(_), setTimeout(() => {
+      null == t || t(), m.VW.focus(_)
     }, 0)
-  }, [G]), H = r.useCallback(() => {
+  }, [_]), H = r.useCallback(() => {
     (0, c.Z_)(V)
   }, [V]), R = r.useCallback(() => {
     let t = y.Ay.readClipboard();
     0 !== t.length && V(() => {
-      a.gB.insertText(G, t)
+      a.gB.insertText(_, t)
     })
-  }, [V, G]), [U, X] = (0, b.A)({
+  }, [V, _]), [U, X] = (0, b.A)({
     text: w,
-    target: M,
-    onHeightUpdate: _
-  }), K = (0, T.A)(G), W = (0, s.bG)([d.A], () => d.A.isSubmitButtonEnabled), F = g._3.useSetting(), Z = g.ng.useSetting();
+    target: G,
+    onHeightUpdate: M
+  }), K = (0, T.A)(_), W = (0, s.bG)([d.A], () => d.A.isSubmitButtonEnabled), F = g._3.useSetting(), Z = g.ng.useSetting();
   if (!h.isPlatformEmbedded) return null;
-  let Y = null != (e = null == (A = G.chatInputType) || null == (O = A.commands) ? true : O.enabled) && e,
-    q = null != (n = null == (v = G.chatInputType) || null == (E = v.stickers) ? true : E.autoSuggest) && n,
-    B = null != (x = null == (k = G.chatInputType) || null == (L = k.submit) ? true : L.button) && x,
-    Q = null != (C = null == (P = G.chatInputType) || null == (D = P.autocomplete) ? true : D.mentionSuggestions) && C,
+  let Y = null != (e = null == (A = _.chatInputType) || null == (O = A.commands) ? true : O.enabled) && e,
+    q = null != (n = null == (v = _.chatInputType) || null == (E = v.stickers) ? true : E.autoSuggest) && n,
+    B = null != (x = null == (k = _.chatInputType) || null == (L = k.submit) ? true : L.button) && x,
+    Q = null != (C = null == (P = _.chatInputType) || null == (D = P.autocomplete) ? true : D.mentionSuggestions) && C,
     z = Y || q,
     J = h.isPlatformEmbedded && y.Ay.clipboardHasMixedContent(),
     $ = "" !== w ? [(0, l.jsx)(o.Drp, {

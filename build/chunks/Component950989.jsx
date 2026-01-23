@@ -1,7 +1,7 @@
 /** Chunk was on 47326 **/
 /** chunk id: 950989, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => y
+  default: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,27 +20,27 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk465161 = require("./465161.js");
 
-function y(e) {
+function f(e) {
   var n;
   let {
     transitionState: t,
-    onClose: y,
+    onClose: f,
     channelId: h,
     guildId: O,
-    tag: k
-  } = e, C = i.useRef(null), x = null != k, [N, P] = i.useState(null != (n = null == k ? true : k.name) ? n : ""), [w, S] = i.useState(null != k ? {
-    id: k.emojiId,
-    name: k.emojiName
-  } : null), [A, E] = i.useState(null == k ? true : k.moderated), I = (0, a.bG)([m.Ay], () => (null == w ? true : w.id) != null ? m.Ay.getUsableCustomEmojiById(w.id) : null), D = (null == k ? true : k.name) !== N || (null == k ? true : k.emojiId) !== (null == w ? true : w.id) || (null == k ? true : k.emojiName) !== (null == w ? true : w.name) || A !== (null == k ? true : k.moderated), T = () => {
-    if (null != N && D) {
+    tag: C
+  } = e, k = i.useRef(null), x = null != C, [N, P] = i.useState(null != (n = null == C ? true : C.name) ? n : ""), [w, S] = i.useState(null != C ? {
+    id: C.emojiId,
+    name: C.emojiName
+  } : null), [A, _] = i.useState(null == C ? true : C.moderated), E = (0, a.bG)([m.Ay], () => (null == w ? true : w.id) != null ? m.Ay.getUsableCustomEmojiById(w.id) : null), I = (null == C ? true : C.name) !== N || (null == C ? true : C.emojiId) !== (null == w ? true : w.id) || (null == C ? true : C.emojiName) !== (null == w ? true : w.name) || A !== (null == C ? true : C.moderated), D = () => {
+    if (null != N && I) {
       if (x) {
         p.A.updateForumTag({
-          id: k.id,
+          id: C.id,
           name: N,
           emojiId: null == w ? true : w.id,
           emojiName: null == w ? true : w.name,
           moderated: A
-        }, h), y();
+        }, h), f();
         return
       }
       p.A.createForumTag({
@@ -48,55 +48,55 @@ function y(e) {
         emojiId: null == w ? true : w.id,
         emojiName: null == w ? true : w.name,
         moderated: A
-      }, h), y()
+      }, h), f()
     }
-  }, R = i.useCallback(e => P(e), []), B = i.useRef(null);
+  }, T = i.useCallback(e => P(e), []), B = i.useRef(null);
   return (0, d.Ay)(() => {
     null != B.current && B.current.focus()
   }), (0, l.jsxs)(o.Modal, {
-    title: x ? f.intl.string(f.t.zeVg5d) : f.intl.string(f.t["/jubeD"]),
-    subtitle: f.intl.string(f.t["3v8kZH"]),
+    title: x ? b.intl.string(b.t.zeVg5d) : b.intl.string(b.t["/jubeD"]),
+    subtitle: b.intl.string(b.t["3v8kZH"]),
     transitionState: t,
-    onClose: y,
+    onClose: f,
     actions: [{
       variant: "secondary",
-      text: f.intl.string(f.t["ETE/oC"]),
+      text: b.intl.string(b.t["ETE/oC"]),
       onClick: () => {
-        y()
+        f()
       }
     }, {
       variant: "primary",
-      text: f.intl.string(f.t["R3BPH+"]),
-      onClick: T,
-      disabled: 0 === N.length || !D,
+      text: b.intl.string(b.t["R3BPH+"]),
+      onClick: D,
+      disabled: 0 === N.length || !I,
       autoFocus: true
     }],
     actionBarInput: x ? (0, l.jsx)(r.Button, {
       variant: "critical-secondary",
-      text: f.intl.string(f.t.huYSMr),
+      text: b.intl.string(b.t.huYSMr),
       onClick: () => {
-        x && (p.A.deleteForumTag(h, k.id), y())
+        x && (p.A.deleteForumTag(h, C.id), f())
       }
     }) : true,
     children: [(0, l.jsx)("div", {
-      className: j.Kf,
+      className: y.Kf,
       children: (0, l.jsx)(r.ksK, {
         inputRef: B,
         maxLength: 20,
         value: N,
-        placeholder: f.intl.string(f.t["5vpeb4"]),
-        onChange: R,
+        placeholder: b.intl.string(b.t["5vpeb4"]),
+        onChange: T,
         autoFocus: true,
         leading: {
           type: "emoji",
           button: (0, l.jsx)("div", {
-            className: j.S0,
+            className: y.S0,
             children: (0, l.jsx)(r.YNO, {
-              targetElementRef: C,
+              targetElementRef: k,
               renderPopout: e => {
                 let {
                   closePopout: n
-                } = e, t = b.Ay.getDefaultChannel(O);
+                } = e, t = j.Ay.getDefaultChannel(O);
                 return (0, l.jsx)(s.A, {
                   guildId: O,
                   closePopout: n,
@@ -114,7 +114,7 @@ function y(e) {
                     }), l && n()
                   },
                   pickerIntention: v.b_.COMMUNITY_CONTENT,
-                  onNavigateAway: y,
+                  onNavigateAway: f,
                   channel: t
                 })
               },
@@ -144,19 +144,19 @@ function y(e) {
                   }
                   return e
                 }({}, e), i = i = {
-                  ref: C,
+                  ref: k,
                   onClick: n => {
                     var t;
                     null == (t = e.onClick) || t.call(e, n)
                   },
                   active: o,
-                  className: j.Z8,
+                  className: y.Z8,
                   tabIndex: 0,
                   renderButtonContents: null != w && (null != w.id || null != w.name) ? () => (0, l.jsx)(u.A, {
-                    className: j.Zg,
+                    className: y.Zg,
                     emojiId: w.id,
                     emojiName: w.name,
-                    animated: !!(null == I ? true : I.animated)
+                    animated: !!(null == E ? true : E.animated)
                   }) : null
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, n) {
                   var t = Object.keys(e);
@@ -173,22 +173,22 @@ function y(e) {
           })
         },
         onKeyDown: e => {
-          e.key === g.dh.ENTER && N.length > 0 && (N.length > 0 && T(), e.preventDefault())
+          e.key === g.dh.ENTER && N.length > 0 && (N.length > 0 && D(), e.preventDefault())
         },
         trailing: N.length > 0 || null != w ? {
           icon: r.aXh,
           onClick: () => {
             P(""), S(null)
           },
-          "aria-label": f.intl.string(f.t.o8lsHe)
+          "aria-label": b.intl.string(b.t.o8lsHe)
         } : true
       })
     }), (0, l.jsx)(r.hKd, {
       size: 16
     }), (0, l.jsx)(r.Checkbox, {
       checked: null != A && A,
-      onChange: e => E(e || (null == k ? true : k.moderated) == null && true),
-      label: f.intl.string(f.t["rMH+rt"]),
+      onChange: e => _(e || (null == C ? true : C.moderated) == null && true),
+      label: b.intl.string(b.t["rMH+rt"]),
       labelType: "secondary"
     })]
   })

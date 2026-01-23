@@ -9,26 +9,26 @@ var Chunk344390 = require("./344390.js"),
   Chunk430452 = require("./430452.js"),
   Chunk392128 = require("./392128.js"),
   Chunk985018 = require("./985018.jsx");
-let o = ["GQgGHISKZ5aYqYeYhX9isDUHGw", "bAgKFITWhoVvmHVRuokCdjVQaA", "XAgGDIJ/ipadd3iCiYUcWpCZBA", "HRkGDIT5aXRneomGdlvUawB7qA", "I9gNDISmlqqPmHiKd3isTp/5lg", "XxgGBIIwT2ZGpneUeZev6fWLXQ", "KzsKNIZDeYmfd3ihe1bXfr8Jxg", "J9cRDIJ6iHd/d4h4eIUJf5LyRw", "DggKFIQwtndKe3hVfXnAWQmddQ", "WggKDILeh3ePZpd6l4jln1b5SQ", "4PgJJIJVl3eAaod2iJeHj7tE8Q"];
+let c = ["GQgGHISKZ5aYqYeYhX9isDUHGw", "bAgKFITWhoVvmHVRuokCdjVQaA", "XAgGDIJ/ipadd3iCiYUcWpCZBA", "HRkGDIT5aXRneomGdlvUawB7qA", "I9gNDISmlqqPmHiKd3isTp/5lg", "XxgGBIIwT2ZGpneUeZev6fWLXQ", "KzsKNIZDeYmfd3ihe1bXfr8Jxg", "J9cRDIJ6iHd/d4h4eIUJf5LyRw", "DggKFIQwtndKe3hVfXnAWQmddQ", "WggKDILeh3ePZpd6l4jln1b5SQ", "4PgJJIJVl3eAaod2iJeHj7tE8Q"];
 async function d(e) {
   var t;
   let r, {
       width: d,
-      height: f,
-      types: u = [l.fS.CAMERA, l.fS.SCREEN, l.fS.WINDOW]
+      height: u,
+      types: f = [i.fS.CAMERA, i.fS.SCREEN, i.fS.WINDOW]
     } = e,
-    h = i.A.getVideoDevices(),
-    p = (0, s.A)(i.A.getMediaEngine(), u, {
+    h = s.A.getVideoDevices(),
+    p = (0, l.A)(s.A.getMediaEngine(), f, {
       width: d,
-      height: f
+      height: u
     }),
     x = (0, a.e)(),
-    j = await x,
-    m = await p,
-    g = m.filter(e => e.id.startsWith(l.fS.SCREEN)).map(e => {
+    m = await x,
+    j = await p,
+    g = j.filter(e => e.id.startsWith(i.fS.SCREEN)).map(e => {
       var t, r;
       let n = e.name;
-      return "Entire screen" === n ? n = c.intl.string(c.t.R4wpLN) : /^Screen \d+$/.test(n) && (n = c.intl.formatToPlainString(c.t["y/R7n4"], {
+      return "Entire screen" === n ? n = o.intl.string(o.t.R4wpLN) : /^Screen \d+$/.test(n) && (n = o.intl.formatToPlainString(o.t["y/R7n4"], {
         index: parseInt(n.split(" ")[1])
       })), t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -60,24 +60,24 @@ async function d(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
       }), t
     }),
-    b = (t = m.filter(e => e.id.startsWith(l.fS.WINDOW)), r = {}, j.forEach(e => {
+    _ = (t = j.filter(e => e.id.startsWith(i.fS.WINDOW)), r = {}, m.forEach(e => {
       r[e.id] = e
     }), t.forEach(e => {
       r[e.id] = e
     }), Object.values(r)),
     v = [];
-  return u.includes(l.fS.CAMERA) && (v = Object.entries(h).filter(e => {
+  return f.includes(i.fS.CAMERA) && (v = Object.entries(h).filter(e => {
     let [t, r] = e;
     return !r.disabled
   }).map((e, t) => {
-    let [r, l] = e, s = o[t % o.length], i = Uint8Array.from(atob(s), e => e.charCodeAt(0)), a = (0, n.V1)(i);
+    let [r, i] = e, l = c[t % c.length], s = Uint8Array.from(atob(l), e => e.charCodeAt(0)), a = (0, n.V1)(s);
     return {
-      id: "camera:" + l.id,
-      name: l.name,
+      id: "camera:" + i.id,
+      name: i.name,
       url: a
     }
   })), {
-    windowSources: b,
+    windowSources: _,
     screenSources: g,
     cameraSources: v
   }

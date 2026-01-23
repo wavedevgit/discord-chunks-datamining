@@ -86,15 +86,15 @@ function m(e) {
     enabled: m = true,
     closeMenu: g,
     defaultIsUsingKeyboardNavigation: E = false
-  } = e, b = r.useRef(m);
+  } = e, y = r.useRef(m);
   r.useLayoutEffect(() => {
-    b.current = m
+    y.current = m
   }, [m]);
-  let [y, O] = r.useReducer(i.A, {
+  let [b, O] = r.useReducer(i.A, {
     items: n,
     focusPath: o,
     focusIndex: false
-  }), A = r.useMemo(() => (0, s.nF)(O, 30), [O]);
+  }), v = r.useMemo(() => (0, s.nF)(O, 30), [O]);
   r.useEffect(() => {
     O({
       type: i.g.UPDATE_ITEMS,
@@ -102,13 +102,13 @@ function m(e) {
     })
   }, [n]);
   let {
-    focusPath: v
-  } = y, [S, I] = r.useState(false), [T, C] = r.useState(E), [{
+    focusPath: A
+  } = b, [I, S] = r.useState(false), [T, C] = r.useState(E), [{
     onItemFocusMemoizer: N,
     onItemMouseEnterMemoizer: R
   }] = r.useState(() => ({
     onItemFocusMemoizer: new s.Lp(e => () => {
-      I(true), O({
+      S(true), O({
         type: i.g.SET_FOCUS_PATH,
         path: e.split(d)
       })
@@ -120,7 +120,7 @@ function m(e) {
       })
     })
   })), w = r.useCallback(e => {
-    if (!b.current) return;
+    if (!y.current) return;
     e.key === a.D$.ESCAPE && null != g && (e.stopPropagation(), e.preventDefault(), g());
     let n = f(e);
     switch (n) {
@@ -128,29 +128,29 @@ function m(e) {
       case a.X2.NAVIGATE_DOWN:
       case a.X2.NAVIGATE_IN:
       case a.X2.NAVIGATE_OUT:
-        e.preventDefault(), e.stopPropagation(), C(true), A({
+        e.preventDefault(), e.stopPropagation(), C(true), v({
           type: n
         });
         return;
       case a.X2.SELECT_FOCUSED_ITEM:
         var r;
         if (e.repeat || h(e.target)) return;
-        if (e.preventDefault(), e.stopPropagation(), C(false), A({
+        if (e.preventDefault(), e.stopPropagation(), C(false), v({
             type: n
-          }), null != c) return void c(v);
-        let i = _(null != (r = e.target.ownerDocument) ? r : document, p(t, v));
+          }), null != c) return void c(A);
+        let i = _(null != (r = e.target.ownerDocument) ? r : document, p(t, A));
         null == i || i.click()
     }
-  }, [A, t, v, c, g]), P = r.useCallback(() => {
-    S || I(true)
-  }, [S]), D = r.useCallback(e => {
-    e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && S && I(false)
-  }, [S]), x = r.useCallback(() => {
+  }, [v, t, A, c, g]), P = r.useCallback(() => {
+    I || S(true)
+  }, [I]), D = r.useCallback(e => {
+    e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && I && S(false)
+  }, [I]), x = r.useCallback(() => {
     O({
       type: i.g.SET_FOCUS_PATH,
       path: []
-    }), I(false)
-  }, []), L = r.useCallback(e => e.every((e, t) => v[t] === e), [v]), j = r.useCallback(() => ({
+    }), S(false)
+  }, []), L = r.useCallback(e => e.every((e, t) => A[t] === e), [A]), j = r.useCallback(() => ({
     role: "menu",
     id: t,
     tabIndex: false,
@@ -158,19 +158,19 @@ function m(e) {
     onFocus: P,
     onBlur: D,
     onMouseLeave: x,
-    "aria-activedescendant": v.length > 0 ? (0, s.M4)(t, v.join(d)) : true
-  }), [t, w, P, D, x, v]), M = r.useCallback(e => {
+    "aria-activedescendant": A.length > 0 ? (0, s.M4)(t, A.join(d)) : true
+  }), [t, w, P, D, x, A]), M = r.useCallback(e => {
     let {
       path: n
     } = e;
     return {
       role: "menu",
       tabIndex: false,
-      "aria-activedescendant": L(n) ? (0, s.M4)(t, v.join(d)) : true,
-      focusIndex: y.focusIndex,
+      "aria-activedescendant": L(n) ? (0, s.M4)(t, A.join(d)) : true,
+      focusIndex: b.focusIndex,
       isUsingKeyboardNavigation: T
     }
-  }, [t, v, L, y.focusIndex, T]), k = r.useCallback(e => {
+  }, [t, A, L, b.focusIndex, T]), k = r.useCallback(e => {
     let {
       path: n,
       hasSubmenu: r = false,
@@ -189,11 +189,11 @@ function m(e) {
     })
   }, [t, L, N, R]);
   return r.useMemo(() => ({
-    dispatch: A,
+    dispatch: v,
     getContainerProps: j,
     getSubmenuProps: M,
     getItemProps: k,
     isFocused: L,
     isUsingKeyboardNavigation: T
-  }), [A, j, M, k, L, T])
+  }), [v, j, M, k, L, T])
 }

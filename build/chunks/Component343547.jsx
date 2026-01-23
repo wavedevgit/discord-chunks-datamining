@@ -44,12 +44,12 @@ function D(e, t, n) {
       if (null == a || a < 0) return null;
       return {
         displayTotalLifetimeRewards: null != o, displayProgressBar: true, actionButton: (0, r.jsx)(c.$nd, {
-          text: T.intl.string(I.default.BxjHiu),
+          text: T.intl.string(S.default.BxjHiu),
           variant: t ? "overlay-primary" : "secondary",
-          onClick: () => (0, h.pX)(S.BV.COLLECTIBLES_SHOP_WITH_TAB(v.G2.ORBS))
-        }), headerText: T.intl.format(I.default.cfE8Oh, {
+          onClick: () => (0, h.pX)(I.BV.COLLECTIBLES_SHOP_WITH_TAB(A.G2.ORBS))
+        }), headerText: T.intl.format(S.default.cfE8Oh, {
           days: Math.max(1, a)
-        }), subheaderText: T.intl.format(I.default.JCLEQp, {
+        }), subheaderText: T.intl.format(S.default.JCLEQp, {
           orbsCount: n,
           helpdeskArticle: w
         })
@@ -57,47 +57,47 @@ function D(e, t, n) {
     case _.L.PAYMENT_PROCESSING:
       return {
         displayTotalLifetimeRewards: false, displayProgressBar: false, actionButton: (0, r.jsx)(c.$nd, {
-          text: T.intl.string(I.default.KVCfnE),
+          text: T.intl.string(S.default.KVCfnE),
           variant: t ? "overlay-primary" : "secondary",
           onClick: () => (0, g.openUserSettings)(m.X.BILLING_PANEL, {
-            section: A.nc_.BILLING
+            section: v.nc_.BILLING
           })
-        }), headerText: T.intl.string(I.default.uuZJXR), subheaderText: T.intl.format(I.default.dkeEV7, {
+        }), headerText: T.intl.string(S.default.uuZJXR), subheaderText: T.intl.format(S.default.dkeEV7, {
           helpdeskArticle: w
         })
       };
     case _.L.PAYMENT_ERROR:
       return {
         displayTotalLifetimeRewards: null != o, displayProgressBar: false, actionButton: (0, r.jsx)(c.$nd, {
-          text: T.intl.string(I.default.KVCfnE),
+          text: T.intl.string(S.default.KVCfnE),
           variant: "critical-secondary",
           onClick: () => (0, g.openUserSettings)(m.X.BILLING_PANEL, {
-            section: A.nc_.BILLING
+            section: v.nc_.BILLING
           })
-        }), headerText: T.intl.string(I.default["+O9Asn"]), subheaderText: T.intl.format(I.default.nWKEBZ, {
+        }), headerText: T.intl.string(S.default["+O9Asn"]), subheaderText: T.intl.format(S.default.nWKEBZ, {
           helpdeskArticle: w
         })
       };
     case _.L.PROGRAM_ROLLBACK:
       return {
         displayTotalLifetimeRewards: null != o, displayProgressBar: null != a, actionButton: (0, r.jsx)(c.$nd, {
-          text: T.intl.string(I.default["wLAd/+"]),
+          text: T.intl.string(S.default["wLAd/+"]),
           variant: t ? "overlay-primary" : "secondary",
-          onClick: () => (0, h.pX)(S.BV.COLLECTIBLES_SHOP_WITH_TAB(v.G2.ORBS))
-        }), headerText: T.intl.string(I.default.zF0HnJ), subheaderText: T.intl.format(I.default["5tzNTa"], {
+          onClick: () => (0, h.pX)(I.BV.COLLECTIBLES_SHOP_WITH_TAB(A.G2.ORBS))
+        }), headerText: T.intl.string(S.default.zF0HnJ), subheaderText: T.intl.format(S.default["5tzNTa"], {
           helpdeskArticle: w
         })
       };
     case _.L.PREMIUM_CHURNING:
       return {
         displayTotalLifetimeRewards: null != o, displayProgressBar: null != a, actionButton: (0, r.jsx)(c.$nd, {
-          text: T.intl.string(I.default.FToh6D),
+          text: T.intl.string(S.default.FToh6D),
           variant: t ? "overlay-primary" : "secondary",
           icon: c.tvc,
           onClick: () => (0, g.openUserSettings)(m.X.BILLING_PANEL, {
-            section: A.nc_.BILLING
+            section: v.nc_.BILLING
           })
-        }), headerText: T.intl.string(I.default.ISnOet), subheaderText: T.intl.format(I.default.agletO, {
+        }), headerText: T.intl.string(S.default.ISnOet), subheaderText: T.intl.format(S.default.agletO, {
           orbsCount: n,
           helpdeskArticle: w
         })
@@ -117,16 +117,16 @@ let x = e => {
     programReward: p.A.getRewardForProgram(_.W.NITRO)
   })), s = (0, d.A)("(min-width: ".concat(P, "px)")), {
     orbsRewardAmount: h
-  } = (0, b.uX)("PremiumTenureRewardsOrbsCard");
+  } = (0, y.uX)("PremiumTenureRewardsOrbsCard");
   if (!n || null == i) return null;
   let m = D(i, s, h);
   if (null == m) return null;
   let {
     displayTotalLifetimeRewards: g,
     displayProgressBar: E,
-    actionButton: A,
-    headerText: v,
-    subheaderText: S
+    actionButton: v,
+    headerText: A,
+    subheaderText: I
   } = m;
   return (0, r.jsxs)("div", {
     className: a()(C.Hc, t),
@@ -136,7 +136,7 @@ let x = e => {
         type: "beta",
         variant: "expressive"
       })
-    }), (0, r.jsxs)(y.A, {
+    }), (0, r.jsxs)(b.A, {
       cardType: u.sl2.CUSTOM,
       cardClassName: C.Nr,
       children: [(0, r.jsx)(f.A, {
@@ -161,11 +161,11 @@ let x = e => {
         children: [(0, r.jsx)(c.DZT, {
           variant: "heading-xxl/bold",
           className: C.R_,
-          children: v
+          children: A
         }), (0, r.jsx)(c.EYj, {
           variant: "text-md/medium",
           className: C.G3,
-          children: S
+          children: I
         }), E && (0, r.jsx)(O.A, {
           className: C.L$
         }), g && (0, r.jsxs)("div", {
@@ -173,7 +173,7 @@ let x = e => {
           children: [(0, r.jsx)(c.EYj, {
             variant: "text-md/medium",
             className: C.G3,
-            children: T.intl.string(I.default["/1mWUn"])
+            children: T.intl.string(S.default["/1mWUn"])
           }), (0, r.jsx)(c.Cp8, {
             size: "sm",
             color: l.A.colors.TEXT_DEFAULT.css
@@ -185,7 +185,7 @@ let x = e => {
         }), (0, r.jsx)("div", {
           className: C.WT,
           children: (0, r.jsx)(c.e2v, {
-            children: A
+            children: v
           })
         })]
       })]

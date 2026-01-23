@@ -2,7 +2,7 @@
 /** chunk id: 869003, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -23,7 +23,7 @@ var Chunk158954 = require("./158954.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,14 +39,14 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
-let A = false,
-  v = false;
-class S extends Chunk458664.A {
+let v = false,
+  A = false;
+class I extends Chunk458664.A {
   _initialize() {
     super._initialize(), o.A.addChangeListener(this.handlePopoutWindowUpdate), s.h.subscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
   }
@@ -59,12 +59,12 @@ class S extends Chunk458664.A {
       message: n
     } = e;
     (0, a.mMO)(async () => e => (0, r.jsx)(i.Modal, O({
-      title: b.intl.formatToPlainString(b.t.hbiAO6, {
+      title: y.intl.formatToPlainString(y.t.hbiAO6, {
         code: t
       }),
       subtitle: n,
       actions: [{
-        text: b.intl.string(b.t.BddRzS),
+        text: y.intl.string(y.t.BddRzS),
         onClick: e.onClose,
         variant: "primary"
       }]
@@ -72,17 +72,17 @@ class S extends Chunk458664.A {
   }
   showLaunchErrorModal(e) {
     (0, a.mMO)(async () => t => (0, r.jsx)(i.Modal, O({
-      title: b.intl.string(b.t.PtobXW),
+      title: y.intl.string(y.t.PtobXW),
       subtitle: e,
       actions: [{
-        text: b.intl.string(b.t.BddRzS),
+        text: y.intl.string(y.t.BddRzS),
         onClick: t.onClose,
         variant: "primary"
       }]
     }, t)))
   }
   showDevShelfOverrideEnabled() {
-    (0, a.showToast)((0, a.createToast)(b.intl.string(b.t.JfA7IK), a.ToastType.SUCCESS))
+    (0, a.showToast)((0, a.createToast)(y.intl.string(y.t.JfA7IK), a.ToastType.SUCCESS))
   }
   leaveActivity(e) {
     let {
@@ -108,7 +108,7 @@ class S extends Chunk458664.A {
   }
   releaseWebView() {}
   constructor(...e) {
-    super(...e), y(this, "handleRPCDisconnect", e => {
+    super(...e), b(this, "handleRPCDisconnect", e => {
       let {
         reason: t,
         application: n
@@ -117,30 +117,30 @@ class S extends Chunk458664.A {
         reason: t,
         application: n
       })
-    }), y(this, "handlePopoutWindowOpen", e => {
+    }), b(this, "handlePopoutWindowOpen", e => {
       let {
         key: t
       } = e;
-      t === E.MLl.ACTIVITY_POPOUT && (v = false)
-    }), y(this, "popInActivity", () => {
-      v = true, l.close(E.MLl.ACTIVITY_POPOUT);
+      t === E.MLl.ACTIVITY_POPOUT && (A = false)
+    }), b(this, "popInActivity", () => {
+      A = true, l.close(E.MLl.ACTIVITY_POPOUT);
       let e = p.Ay.getCurrentEmbeddedActivity();
       if (null != e) {
         let t = (0, _.H)(e.location);
         null != t && (0, c.iN)(t), (0, d.gk)(g.Gd.PANEL)
       }
-    }), y(this, "handlePopoutWindowUpdate", () => {
-      let e = A,
+    }), b(this, "handlePopoutWindowUpdate", () => {
+      let e = v,
         t = o.A.getWindowOpen(E.MLl.ACTIVITY_POPOUT);
-      if (e && !t && !v) {
+      if (e && !t && !A) {
         let e = p.Ay.getCurrentEmbeddedActivity();
         null != e && this.leaveActivity({
           location: e.location,
           applicationId: e.applicationId
         })
       }
-      A = t
+      v = t
     })
   }
 }
-let I = new S
+let S = new I

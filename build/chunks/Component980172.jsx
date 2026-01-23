@@ -103,13 +103,13 @@ function en(e) {
   let {
     className: o,
     user: l
-  } = e, c = i.useRef(null), p = (0, v.Jz)(), _ = (0, S.g)(), h = (0, O.EC)(), m = null != (t = null == h || null == (a = h.nick) ? true : a[0]) ? t : null, [g, E] = i.useState(false);
+  } = e, c = i.useRef(null), p = (0, A.Jz)(), _ = (0, I.g)(), h = (0, O.EC)(), m = null != (t = null == h || null == (a = h.nick) ? true : a[0]) ? t : null, [g, E] = i.useState(false);
   i.useEffect(() => {
     E(null != c.current && c.current.scrollWidth > c.current.clientWidth)
   }, [l.username]);
-  let b = !l.isClaimed(),
-    y = p && !l.hasUniqueUsername() && !l.hasVerifiedEmailOrPhone() || b,
-    A = y ? q.intl.string(q.t["7Ngnyr"]) : true;
+  let y = !l.isClaimed(),
+    b = p && !l.hasUniqueUsername() && !l.hasVerifiedEmailOrPhone() || y,
+    v = b ? q.intl.string(q.t["7Ngnyr"]) : true;
   return (0, r.jsxs)("div", {
     className: s()(X.ZZ, o),
     children: [(0, r.jsx)("div", {
@@ -160,7 +160,7 @@ function en(e) {
         })
       })
     }), (0, r.jsx)(d.m, {
-      text: A,
+      text: v,
       children: (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: X.pr,
@@ -168,7 +168,7 @@ function en(e) {
           variant: "secondary",
           size: "sm",
           text: g ? q.intl.string(q.t["16kTw/"]) : q.intl.string(q.t.bt75uw),
-          disabled: y,
+          disabled: b,
           "aria-label": q.intl.string(q.t.JECa91),
           onClick: () => (0, f.mMO)(async () => {
             if (_) {
@@ -358,7 +358,7 @@ function es(e) {
         default: e
       } = await Promise.resolve().then(n.bind(n, 615715));
       return t => (0, r.jsx)(e, Q({
-        reason: A.d.USER_SETTINGS_UPDATE
+        reason: v.d.USER_SETTINGS_UPDATE
       }, t))
     }, {
       modalKey: K.V
@@ -370,7 +370,7 @@ function es(e) {
       title: q.intl.string(q.t["3CTiKi"]),
       children: a.hasFlag(W.nhx.MFA_SMS) ? q.intl.string(q.t.jrhJyo) : true,
       actionText: q.intl.string(q.t.N86XcP),
-      handleSubmit: e => A.A.removePhone(e, A.d.USER_SETTINGS_UPDATE)
+      handleSubmit: e => v.A.removePhone(e, v.d.USER_SETTINGS_UPDATE)
     })))
   }
   return t = c ? (0, r.jsx)(ei, {
@@ -425,7 +425,7 @@ function es(e) {
 function eo(e) {
   let {
     user: t
-  } = e, n = (0, b.A)({
+  } = e, n = (0, y.A)({
     id: t.id,
     label: q.intl.string(q.t["/AXYnE"])
   }), a = V.Q_.useSetting(), s = i.useRef(null);
@@ -513,7 +513,7 @@ function ec() {
       size: f._3J.SIZE_80
     }),
     _ = (0, C.A)(),
-    h = (0, I.fk)(),
+    h = (0, S.fk)(),
     m = (0, G.j)("UserSettingsAccountProfileCard"),
     g = h || m;
   return (0, r.jsxs)("div", {
@@ -543,7 +543,7 @@ function ec() {
             user: t,
             className: X.a1,
             discriminatorClass: X.D2,
-            displayNameStylesType: y.G.STATIC
+            displayNameStylesType: b.G.STATIC
           }), (0, r.jsx)(eo, {
             user: t
           })]

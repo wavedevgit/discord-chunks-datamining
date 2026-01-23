@@ -1,7 +1,7 @@
 /** Chunk was on 36456 **/
-/** chunk id: 24987, original params: n,e,t (module,exports,require) **/
+/** chunk id: 24987, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,70 +16,70 @@ var Chunk397927 = require("./397927.js"),
   Chunk652215 = require("./652215.js"),
   Chunk689588 = require("./689588.js");
 
-function h(n) {
+function g(e) {
   let {
-    transitionState: e,
+    transitionState: n,
     onClose: t,
-    analyticsLocation: h
-  } = n, {
-    slide: x,
-    gotoNext: f,
-    gotoError: u,
-    handleWaitingForConnection: p,
+    analyticsLocation: g
+  } = e, {
+    slide: h,
+    gotoNext: x,
+    gotoError: p,
+    handleWaitingForConnection: b,
     handleAuthToken: N,
     expectedCallbackState: j,
-    callbackData: _
-  } = (0, r.m)(h, b.fg2.CRUNCHYROLL);
-  return (0, i.jsx)(o.EOs, {
+    callbackData: v
+  } = (0, r.m)(g, _.fg2.CRUNCHYROLL);
+  return (0, o.jsx)(i.EOs, {
     "data-migration-pending": true,
-    className: g.yl,
-    transitionState: e,
+    className: u.yl,
+    transitionState: n,
     disableTrack: true,
     parentComponent: "CrunchyrollLinkModal",
-    children: (0, i.jsxs)(o.tN_, {
-      activeSlide: x,
+    children: (0, o.jsxs)(i.tN_, {
+      activeSlide: h,
       width: 408,
-      children: [(0, i.jsx)(o.q7S, {
+      children: [(0, o.jsx)(i.q7S, {
         id: C.N.LANDING,
-        children: (0, i.jsx)(d.A, {
-          onContinue: f,
+        children: (0, o.jsx)(a.A, {
+          onContinue: x,
           onClose: t
         })
-      }), (0, i.jsx)(o.q7S, {
+      }), (0, o.jsx)(i.q7S, {
         id: C.N.PRE_CONNECT,
-        children: (0, i.jsx)(l.A, {
+        children: (0, o.jsx)(d.A, {
           isWaitingForConnection: false,
-          onWaitingForConnection: p,
+          onWaitingForConnection: b,
           onAuthToken: N,
-          onError: u,
+          onError: p,
           onClose: t
         })
-      }), (0, i.jsx)(o.q7S, {
+      }), (0, o.jsx)(i.q7S, {
         id: C.N.PRE_CONNECT_WAITING,
-        children: (0, i.jsx)(l.A, {
+        children: (0, o.jsx)(d.A, {
           isWaitingForConnection: true,
           expectedCallbackState: j,
           onAuthToken: N,
-          onError: u,
+          onError: p,
           onClose: t
         })
-      }), (0, i.jsx)(o.q7S, {
+      }), (0, o.jsx)(i.q7S, {
         id: C.N.DISCORD_CONSENT,
-        children: (0, i.jsx)(s.A, {
-          authToken: _,
-          onContinue: f,
-          onError: u,
+        children: (0, o.jsx)(s.A, {
+          authToken: v,
+          onContinue: x,
+          onError: p,
           onClose: t
         })
-      }), (0, i.jsx)(o.q7S, {
+      }), (0, o.jsx)(i.q7S, {
         id: C.N.ERROR,
-        children: (0, i.jsx)(a.A, {
-          onContinue: f,
+        children: (0, o.jsx)(l.A, {
+          onContinue: x,
           onClose: t
         })
-      }), (0, i.jsx)(o.q7S, {
+      }), (0, o.jsx)(i.q7S, {
         id: C.N.SUCCESS,
-        children: (0, i.jsx)(c.A, {
+        children: (0, o.jsx)(c.A, {
           onClose: t
         })
       })]

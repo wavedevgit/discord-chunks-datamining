@@ -1,7 +1,7 @@
 /** Chunk was on 64228 **/
-/** chunk id: 347805, original params: e,l,t (module,exports,require) **/
+/** chunk id: 347805, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => m
 }), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,42 +14,42 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk75945 = require("./75945.js");
 
-function p(e) {
+function m(e) {
   let {
-    autoFocus: l = false,
-    className: t,
-    userId: p,
-    onUpdate: m
-  } = e, x = (0, r.bG)([d.A], () => d.A.hidePersonalInformation), {
-    loading: A,
+    autoFocus: t = false,
+    className: n,
+    userId: m,
+    onUpdate: f
+  } = e, A = (0, r.bG)([c.A], () => c.A.hidePersonalInformation), {
+    loading: x,
     note: j
-  } = (0, o.A)(p), h = i.useRef(null);
+  } = (0, a.A)(m), h = i.useRef(null);
   return (i.useEffect(() => {
-    if (!l || x) return;
+    if (!t || A) return;
     let e = h.current;
     (null == e ? true : e.selectionStart) != null && (e.focus(), e.setSelection(e.value.length, e.value.length))
-  }, [l, x]), x) ? null : (0, n.jsx)("div", {
-    className: t,
-    children: (0, n.jsx)(s.d4u, {
+  }, [t, A]), A) ? null : (0, l.jsx)("div", {
+    className: n,
+    children: (0, l.jsx)(s.d4u, {
       ref: h,
-      className: f.P,
-      disabled: A,
-      placeholder: A ? u.intl.string(u.t["WLKx/9"]) : u.intl.string(u.t.VBhOe2),
+      className: p.P,
+      disabled: x,
+      placeholder: x ? u.intl.string(u.t["WLKx/9"]) : u.intl.string(u.t.VBhOe2),
       "aria-label": u.intl.string(u.t.PbMNh2),
       onBlur: e => {
-        let l = e.currentTarget.value;
-        (null != j ? j : "") !== l && (null == m || m(), a.A.updateNote(p, l))
+        let t = e.currentTarget.value;
+        (null != j ? j : "") !== t && (null == f || f(), o.A.updateNote(m, t))
       },
       onKeyPress: e => {
         if (13 === e.which)
           if (e.shiftKey) {
-            var l;
-            (null != (l = e.currentTarget.value.match(/\n/g)) ? l : []).length >= 5 && e.preventDefault()
+            var t;
+            (null != (t = e.currentTarget.value.match(/\n/g)) ? t : []).length >= 5 && e.preventDefault()
           } else e.preventDefault(), e.currentTarget.blur();
-        else e.which === c.Ks6.SPACE && e.stopPropagation()
+        else e.which === d.Ks6.SPACE && e.stopPropagation()
       },
       defaultValue: null != j ? j : true,
-      maxLength: c.T7x
+      maxLength: d.T7x
     })
   })
 }

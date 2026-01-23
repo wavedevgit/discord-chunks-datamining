@@ -2,10 +2,10 @@
 /** chunk id: 326433, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => S,
-  Uz: () => A,
+  Ay: () => I,
+  Uz: () => v,
   lm: () => O,
-  xu: () => v
+  xu: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,7 +24,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk90444 = require("./90444.js"),
   Chunk785294 = require("./785294.js"),
   Chunk473169 = require("./473169.js");
-let y = (0, Chunk915089.Ld)();
+let b = (0, Chunk915089.Ld)();
 
 function O() {
   let [e, t] = i.useState(false), [n, r] = i.useState(false);
@@ -45,7 +45,7 @@ function O() {
   }
 }
 
-function A(e) {
+function v(e) {
   let {
     isSpeaking: t,
     className: n,
@@ -68,7 +68,7 @@ function A(e) {
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     volume: t,
     id: n,
@@ -104,7 +104,7 @@ function v(e) {
       fillStyles: {
         background: u.A.unsafe_rawColors.YELLOW_300.css
       },
-      "aria-labelledby": y,
+      "aria-labelledby": b,
       disabled: l,
       children: (0, r.jsxs)("div", {
         className: s()(g.NU, g.TL, g.Jx, E.bar),
@@ -121,7 +121,7 @@ function v(e) {
   })
 }
 
-function S() {
+function I() {
   let {
     threshold: e,
     autoThreshold: t
@@ -154,18 +154,18 @@ function S() {
       onChange: t => c(e, t)
     }), t ? (0, r.jsxs)("section", {
       className: g.Mo,
-      children: [(0, r.jsx)(A, {
+      children: [(0, r.jsx)(v, {
         isSpeaking: s
       }), (0, r.jsx)(d.Text, {
         variant: "text-md/normal",
-        className: b.QB,
+        className: y.QB,
         children: m.intl.string(m.t.W3K5Im)
       })]
-    }) : (0, r.jsx)(v, {
+    }) : (0, r.jsx)(A, {
       volume: a
     }), !l && (0, r.jsx)(d.po8, {
       messageType: d.YCn.WARNING,
-      className: b.QB,
+      className: y.QB,
       children: m.intl.format(m.t["O13I+O"], {
         onEnableClick: () => f.A.enable(true)
       })

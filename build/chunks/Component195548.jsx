@@ -26,30 +26,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
 
-function S() {
-  return (0, r.jsxs)(b.A, {
-    title: v.intl.string(v.t.WWaFn5),
-    description: v.intl.format(v.t["/6sFWa"], {
+function I() {
+  return (0, r.jsxs)(y.A, {
+    title: A.intl.string(A.t.WWaFn5),
+    description: A.intl.format(A.t["/6sFWa"], {
       helpArticle: (0, l.aW)()
     }),
-    webSetting: A.H.PRIVACY_AND_SAFETY_VOICE_SECURITY,
+    webSetting: v.H.PRIVACY_AND_SAFETY_VOICE_SECURITY,
     children: [(0, r.jsx)(E.A, {}), (0, r.jsx)(O.A, {})]
   })
 }
 
-function I() {
-  return (0, r.jsx)(b.A, {
-    title: v.intl.string(v.t.BG7QsQ),
-    webSetting: A.H.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
+function S() {
+  return (0, r.jsx)(y.A, {
+    title: A.intl.string(A.t.BG7QsQ),
+    webSetting: v.H.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
     children: (0, r.jsx)(f.A, {})
   })
 }
 
 function T() {
   let e = (0, u.$m)("UserSettingsDataAndPrivacy");
-  return (0, r.jsxs)(b.A, {
-    title: v.intl.string(v.t.SRZyHg),
-    webSetting: A.H.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
+  return (0, r.jsxs)(y.A, {
+    title: A.intl.string(A.t.SRZyHg),
+    webSetting: v.H.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
     children: [(0, r.jsx)(g.A, {}), (0, r.jsx)(m.A, {}), (0, r.jsx)(h.A, {}), (0, r.jsx)(_.A, {}), e && (0, r.jsx)(o.A, {}), (0, r.jsx)(p.z, {})]
   })
 }
@@ -58,12 +58,12 @@ function C() {
   return (0, s.Ay)(() => {
     (0, a.Q)(), (0, c.s)()
   }), (0, r.jsx)(d.R, {
-    header: v.intl.string(v.t.OAuOHD),
-    notice: (0, r.jsx)(y.A, {
-      page: y.R.DATA_AND_PRIVACY
+    header: A.intl.string(A.t.OAuOHD),
+    notice: (0, r.jsx)(b.A, {
+      page: b.R.DATA_AND_PRIVACY
     }),
     children: (0, r.jsxs)(i.lVW, {
-      children: [(0, r.jsx)(T, {}), (0, r.jsx)(I, {}), (0, r.jsx)(S, {})]
+      children: [(0, r.jsx)(T, {}), (0, r.jsx)(S, {}), (0, r.jsx)(I, {})]
     })
   })
 }

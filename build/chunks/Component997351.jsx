@@ -2,7 +2,7 @@
 /** chunk id: 997351, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk950503 = require("./950503.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,14 +30,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -50,12 +50,12 @@ function O(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = A(e, t), Object.getOwnPropertySymbols)
+  if (a = v(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function A(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -63,21 +63,21 @@ function A(e, t) {
   return i
 }
 
-function v(e) {
+function A(e) {
   let {
     onClose: t,
     handleLearnMore: n
-  } = e, b = O(e, ["onClose", "handleLearnMore"]), A = (0, a.bG)([c.default], () => c.default.getCurrentUser()), v = (0, a.bG)([o.A], () => o.A.theme), S = (0, a.bG)([l.A], () => l.A.getGuildId()), I = v === m.NJ8.LIGHT ? "light" : "dark", T = (0, r.jsx)("img", {
+  } = e, y = O(e, ["onClose", "handleLearnMore"]), v = (0, a.bG)([c.default], () => c.default.getCurrentUser()), A = (0, a.bG)([o.A], () => o.A.theme), I = (0, a.bG)([l.A], () => l.A.getGuildId()), S = A === m.NJ8.LIGHT ? "light" : "dark", T = (0, r.jsx)("img", {
     className: E.Qw,
     alt: "File Upload Nitro Perk",
-    src: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_".concat(I, "_v2.png")
+    src: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_".concat(S, "_v2.png")
   }), C = i.useMemo(() => {
-    let e = p.Ay.getUserMaxFileSize(A);
+    let e = p.Ay.getUserMaxFileSize(v);
     return (0, u.Xq)(e / 1024, {
       useKibibytes: true
     })
-  }, [A]), N = (0, d.Iu)({
-    guildId: S,
+  }, [v]), N = (0, d.Iu)({
+    guildId: I,
     onClick: () => {
       window.open(f.A.getArticleURL(m.MVz.NITRO_FAQ), "_blank")
     }
@@ -88,7 +88,7 @@ function v(e) {
       children: N
     })
   });
-  return (0, r.jsx)(_.A, y({
+  return (0, r.jsx)(_.A, b({
     artElement: T,
     artContainerClassName: E.JS,
     enableArtBoxShadow: false,
@@ -107,5 +107,5 @@ function v(e) {
     secondaryCTA: g.intl.string(g.t.ZnqyZ2),
     onSecondaryClick: n,
     showEnhancedUpsell: true
-  }, b))
+  }, y))
 }

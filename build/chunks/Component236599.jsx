@@ -17,12 +17,12 @@ var Chunk627968 = require("./627968.js"),
 function p(e) {
   let {
     className: t
-  } = e, i = ["en-US", "en-GB"].includes((0, s.bG)([c.default], () => c.default.locale)) ? d.intl.string(d.t.OYlggR) : d.intl.string(d.t.Y55Tua), {
+  } = e, i = ["en-US", "en-GB"].includes((0, o.bG)([c.default], () => c.default.locale)) ? d.intl.string(d.t.OYlggR) : d.intl.string(d.t.Y55Tua), {
     trackUserProfileEditAction: p
-  } = (0, u.NJ)(), b = l.useCallback(() => {
+  } = (0, u.NJ)(), g = l.useCallback(() => {
     p({
       action: "PRESS_ADD_WIDGET"
-    }), (0, o.mMO)(async () => {
+    }), (0, s.mMO)(async () => {
       let {
         default: e
       } = await n.e("87591").then(n.bind(n, 333114));
@@ -64,16 +64,16 @@ function p(e) {
   }, [p]);
   return (0, r.jsxs)("div", {
     className: a()(f.w, t),
-    children: [(0, r.jsx)(o.Text, {
+    children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/semibold",
       color: "text-subtle",
       children: i
-    }), (0, r.jsx)(o.Button, {
-      icon: o.j96,
+    }), (0, r.jsx)(s.Button, {
+      icon: s.j96,
       text: d.intl.string(d.t["lBG2s/"]),
       size: "sm",
       variant: "secondary",
-      onClick: b
+      onClick: g
     })]
   })
 }

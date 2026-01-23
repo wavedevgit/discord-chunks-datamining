@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 466444, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 }), require("./896048.js");
 var Chunk179771 = require("./179771.js"),
   Chunk827343 = require("./827343.js"),
@@ -14,14 +14,14 @@ var Chunk179771 = require("./179771.js"),
   Chunk652215 = require("./652215.js"),
   Chunk731854 = require("./731854.js");
 
-function f(e) {
+function h(e) {
   let t = e.application.id;
   if (null == t) throw new o.A({
     errorCode: d.Lw6.INVALID_COMMAND
   }, "No application.");
   return t
 }
-let h = {
+let g = {
   [Chunk652215.e$_.SET_VOICE_SETTINGS_2]: {
     scope: Chunk613057.hj,
     validation: e => (0, c.A)(e).required().keys({
@@ -40,7 +40,7 @@ let h = {
           self_mute: r,
           self_deaf: l
         }
-      } = e, o = f(t);
+      } = e, o = h(t);
       null != n && i.A.setMode(n.type, {
         shortcut: (0, s.OH)(n.shortcut)
       }, o), null != r && r !== a.A.isSelfMute(o) && i.A.toggleSelfMute({
@@ -65,7 +65,7 @@ let h = {
           mute: r,
           volume: l
         }
-      } = e, s = f(t);
+      } = e, s = h(t);
       null != r && r !== a.A.isLocalMute(n, s) && i.A.toggleLocalMute(n, s), null != l && i.A.setLocalVolume(n, l, s)
     }
   },

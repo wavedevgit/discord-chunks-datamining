@@ -2,7 +2,7 @@
 /** chunk id: 835498, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 }), require("./896048.js");
 var r, Chunk735438 = require("./735438.js"),
   a = require.n(Chunk735438),
@@ -53,8 +53,8 @@ function g(e, t) {
   let {
     oldId: n
   } = t;
-  if (!S.isSampling(e)) returnfalse;
-  S.stopSampling(e, n), S.startSampling(e)
+  if (!I.isSampling(e)) returnfalse;
+  I.stopSampling(e, n), I.startSampling(e)
 }
 
 function E(e) {
@@ -68,17 +68,17 @@ function E(e) {
   let a = null == (t = d.default.getCurrentUser()) ? true : t.id;
   if (null == a) returnfalse;
   let s = r === a ? f.oh.AUDIO_INPUT : f.oh.AUDIO_OUTPUT;
-  if (i === f.ME.NONE && S.isSampling(s)) S.stopSampling(s);
+  if (i === f.ME.NONE && I.isSampling(s)) I.stopSampling(s);
   else {
-    if (i === f.ME.NONE || S.isSampling(s)) returnfalse;
-    S.startSampling(s)
+    if (i === f.ME.NONE || I.isSampling(s)) returnfalse;
+    I.startSampling(s)
   }
 }
 
-function b() {
-  S.reset()
+function y() {
+  I.reset()
 }
-let y = {
+let b = {
     [Chunk731854.oh.AUDIO_INPUT]: new Chunk499979.W0,
     [Chunk731854.oh.AUDIO_OUTPUT]: new Chunk499979.W0,
     [Chunk731854.oh.VIDEO_INPUT]: new Chunk499979.W0
@@ -88,35 +88,35 @@ let y = {
     [Chunk731854.oh.AUDIO_OUTPUT]: {},
     [Chunk731854.oh.VIDEO_INPUT]: {}
   },
-  A = {
+  v = {
     [Chunk731854.oh.AUDIO_INPUT]: new Chunk283047.A(h),
     [Chunk731854.oh.AUDIO_OUTPUT]: new Chunk283047.A(h),
     [Chunk731854.oh.VIDEO_INPUT]: new Chunk283047.A(h)
   };
-class v extends(r = Chunk311907.Ay.PersistedStore) {
+class A extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     this.waitFor(u.A, d.default), [f.oh.AUDIO_INPUT, f.oh.AUDIO_OUTPUT, f.oh.VIDEO_INPUT].forEach(t => {
-      (null == e ? true : e[t]) != null && A[t].overwriteHistory(e[t]), y[t].reset()
+      (null == e ? true : e[t]) != null && v[t].overwriteHistory(e[t]), b[t].reset()
     })
   }
   reset() {
     [f.oh.AUDIO_INPUT, f.oh.AUDIO_OUTPUT, f.oh.VIDEO_INPUT].forEach(e => {
-      y[e].reset(), O[e] = {}
+      b[e].reset(), O[e] = {}
     })
   }
   track(e, t, n) {
-    null == O[e][t] && (O[e][t] = 0), O[e][t] += n, A[e].track(t, {
+    null == O[e][t] && (O[e][t] = 0), O[e][t] += n, v[e].track(t, {
       usesSinceLastTrack: n
     })
   }
   isSampling(e) {
-    return y[e].isRunning()
+    return b[e].isRunning()
   }
   startSampling(e) {
-    y[e].start()
+    b[e].start()
   }
   stopSampling(e, t) {
-    let n = y[e];
+    let n = b[e];
     n.stop();
     let r = n.elapsed().asMilliseconds();
     if (r > 0) {
@@ -127,13 +127,13 @@ class v extends(r = Chunk311907.Ay.PersistedStore) {
   }
   getState() {
     return {
-      [f.oh.AUDIO_INPUT]: A[f.oh.AUDIO_INPUT].usageHistory,
-      [f.oh.AUDIO_OUTPUT]: A[f.oh.AUDIO_OUTPUT].usageHistory,
-      [f.oh.VIDEO_INPUT]: A[f.oh.VIDEO_INPUT].usageHistory
+      [f.oh.AUDIO_INPUT]: v[f.oh.AUDIO_INPUT].usageHistory,
+      [f.oh.AUDIO_OUTPUT]: v[f.oh.AUDIO_OUTPUT].usageHistory,
+      [f.oh.VIDEO_INPUT]: v[f.oh.VIDEO_INPUT].usageHistory
     }
   }
   getDeviceIdsSortedByFrecency(e) {
-    return A[e].frequently
+    return v[e].frequently
   }
   getUsageStats() {
     let e = {
@@ -163,12 +163,12 @@ class v extends(r = Chunk311907.Ay.PersistedStore) {
     }
   }
 }
-p(v, "displayName", "DeviceFrecencyStore"), p(v, "persistKey", "DeviceFrecencyStore"), p(v, "migrations", [e => a().mapKeys(e, (e, t) => _[t])]);
-let S = new v(Chunk73153.h, {
+p(A, "displayName", "DeviceFrecencyStore"), p(A, "persistKey", "DeviceFrecencyStore"), p(A, "migrations", [e => a().mapKeys(e, (e, t) => _[t])]);
+let I = new A(Chunk73153.h, {
     AUDIO_SET_INPUT_DEVICE: e => g(f.oh.AUDIO_INPUT, e),
     AUDIO_SET_OUTPUT_DEVICE: e => g(f.oh.AUDIO_OUTPUT, e),
     MEDIA_ENGINE_SET_VIDEO_DEVICE: e => g(f.oh.VIDEO_INPUT, e),
     SPEAKING: E,
-    RTC_CONNECTION_CLIENT_CONNECT: b
+    RTC_CONNECTION_CLIENT_CONNECT: y
   }),
-  I = S
+  S = I

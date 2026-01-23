@@ -2,7 +2,7 @@
 /** chunk id: 254847, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b,
+  A: () => y,
   Y: () => g
 });
 var Chunk627968 = require("./627968.js"),
@@ -63,4 +63,4 @@ let E = Chunk64700.memo(e => {
   })
 });
 E.displayName = "FamilyCenterActivityGuildRow";
-let b = E
+let y = E

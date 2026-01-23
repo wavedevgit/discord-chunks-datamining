@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk73153 = require("./73153.js"),
@@ -23,7 +23,7 @@ function p() {
       value: a,
       idx: t
     }
-  }), [], s.My), i = l.useMemo(() => 0 === e.length ? n : n.filter(t => {
+  }), [], s.My), r = l.useMemo(() => 0 === e.length ? n : n.filter(t => {
     let {
       word: n
     } = t;
@@ -34,12 +34,12 @@ function p() {
     })
   }, []);
   return (0, a.jsxs)("div", {
-    className: r()(u.nd, m.nd),
+    className: i()(u.nd, m.nd),
     children: [n.length > 0 && (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsxs)(o.Text, {
         variant: "text-md/semibold",
         className: m.Gf,
-        children: ["Word Frequencies (", i.length, " unique words)"]
+        children: ["Word Frequencies (", r.length, " unique words)"]
       }), (0, a.jsx)(o.Text, {
         variant: "text-sm/normal",
         children: "This is a list of the most common short words found in messages sent and received by this client. They're ignored by the mention suggestions experiment to avoid distracting suggestions. These statistics are stored locally only."
@@ -64,7 +64,7 @@ function p() {
           children: (0, a.jsxs)("div", {
             className: m.r6,
             children: [(0, a.jsxs)("div", {
-              className: r()(u.ZR, m.qd),
+              className: i()(u.ZR, m.qd),
               children: [(0, a.jsx)("div", {
                 className: m.Xd,
                 children: "Index"
@@ -75,14 +75,14 @@ function p() {
                 className: m.gR,
                 children: "Count"
               })]
-            }), i.map(e => {
+            }), r.map(e => {
               let {
                 word: t,
                 value: n,
                 idx: l
               } = e;
               return (0, a.jsxs)("div", {
-                className: r()(u.jD, m.jD),
+                className: i()(u.jD, m.jD),
                 children: [(0, a.jsx)("div", {
                   className: m.Xd,
                   children: (0, a.jsx)(o.Text, {
@@ -114,7 +114,7 @@ function p() {
         color: "text-muted",
         children: "Load messages in a channel to see word frequency analysis."
       })
-    }), n.length > 0 && 0 === i.length && e.length > 0 && (0, a.jsx)("div", {
+    }), n.length > 0 && 0 === r.length && e.length > 0 && (0, a.jsx)("div", {
       className: m.p$,
       children: (0, a.jsxs)(o.Text, {
         variant: "text-md/normal",

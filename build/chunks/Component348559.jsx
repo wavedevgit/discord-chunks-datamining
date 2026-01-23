@@ -23,14 +23,14 @@ function g(t) {
     quest: T
   } = t, _ = (t => {
     switch (t) {
-      case l.uF.QUEST_BAR:
-      case l.uF.QUEST_BAR_V2:
+      case c.uF.QUEST_BAR:
+      case c.uF.QUEST_BAR_V2:
         return {
           location: true, age: true, activity: true
         };
-      case l.uF.ACTIVITY_PANEL:
-      case l.uF.QUESTS_EMBED:
-      case l.uF.QUEST_LIVE_STREAM:
+      case c.uF.ACTIVITY_PANEL:
+      case c.uF.QUESTS_EMBED:
+      case c.uF.QUEST_LIVE_STREAM:
         return {
           activity: true
         };
@@ -67,7 +67,7 @@ function g(t) {
       variant: "text-xs/medium",
       color: "text-muted",
       children: x.intl.format(x.t.tzq9Wa, {
-        privacySettingsUrl: c.A.getArticleURL(d.MVz.QUESTS_PRIVACY_CONTROLS)
+        privacySettingsUrl: l.A.getArticleURL(d.MVz.QUESTS_PRIVACY_CONTROLS)
       })
     })]
   })

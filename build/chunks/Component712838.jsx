@@ -55,7 +55,7 @@ class A extends Chunk64700.PureComponent {
       searchOffset: n,
       index: r,
       totalResults: a
-    } = this.props, s = c.A.getChannel(e.channel_id);
+    } = this.props, s = u.A.getChannel(e.channel_id);
     if (null == s) return null;
     let d = "search-result-".concat(e.id);
     return (0, l.jsx)(i.vN3, {
@@ -95,7 +95,7 @@ class A extends Chunk64700.PureComponent {
           children: (0, l.jsx)(i.DUT, {
             className: E.x6,
             onClick: this.jumpTo,
-            children: u.intl.string(u.t.k5WiPf)
+            children: c.intl.string(c.t.k5WiPf)
           })
         })]
       }))
@@ -103,7 +103,7 @@ class A extends Chunk64700.PureComponent {
   }
   constructor(...e) {
     super(...e), d(this, "containerRef", r.createRef()), d(this, "hitRef", r.createRef()), d(this, "handleContextMenu", (e, t) => {
-      let r = c.A.getChannel(t.channel_id);
+      let r = u.A.getChannel(t.channel_id);
       null != r && (e.stopPropagation(), (0, s.L3)(e, async () => {
         let {
           default: e

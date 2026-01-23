@@ -2,12 +2,12 @@
 /** chunk id: 940622, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => v,
+  C: () => A,
   Iv: () => N,
-  JE: () => y,
+  JE: () => b,
   NE: () => O,
   br: () => R,
-  mb: () => A,
+  mb: () => v,
   od: () => C
 }), require("./896048.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js"), require("./638769.js"), require("./747238.js"), require("./812715.js");
 var Chunk64700 = require("./64700.js"),
@@ -79,11 +79,11 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  if ("object" !== b(e) || null === e) return e;
+  if ("object" !== y(e) || null === e) return e;
   var n = e[Symbol.toPrimitive];
   if (true !== n) {
     var r = n.call(e, t || "default");
-    if ("object" !== b(r)) return r;
+    if ("object" !== y(r)) return r;
     throw TypeError("@@toPrimitive must return a primitive value.")
   }
   return ("string" === t ? String : Number)(e)
@@ -91,13 +91,13 @@ function g(e, t) {
 
 function E(e) {
   var t = g(e, "string");
-  return "symbol" === b(t) ? t : String(t)
+  return "symbol" === y(t) ? t : String(t)
 }
 
-function b(e) {
+function y(e) {
   return e && "u" > typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
-let y = (0, Chunk353640.v)(e => ({
+let b = (0, Chunk353640.v)(e => ({
     previewEnabled: false,
     collectionAssets: {},
     avatarDecorationAssets: {},
@@ -191,22 +191,22 @@ let y = (0, Chunk353640.v)(e => ({
     }))
   })),
   O = () => {
-    let e = y(e => e.collectionAssets),
-      t = y(e => e.avatarDecorationAssets);
+    let e = b(e => e.collectionAssets),
+      t = b(e => e.avatarDecorationAssets);
     return r.useMemo(() => ({
       collectionAssets: Object.values(e).sort((e, t) => e.name.localeCompare(t.name)),
       avatarDecorationAssets: Object.values(t).sort((e, t) => e.name.localeCompare(t.name))
     }), [e, t])
   },
-  A = e => y(t => {
+  v = e => b(t => {
     var n;
     return t.previewEnabled ? null == (n = t.collectionAssets[e]) ? true : n.src : null
   }),
-  v = e => {
+  A = e => {
     let {
       previewEnabled: t,
       previewProfileEffectSkuId: n
-    } = y(), a = t ? n : null, s = (0, l.ZK)(a);
+    } = b(), a = t ? n : null, s = (0, l.ZK)(a);
     return r.useMemo(() => {
       if (null == s || null == e) return null;
       let {
@@ -227,15 +227,15 @@ let y = (0, Chunk353640.v)(e => ({
       return a
     }, [s, e])
   },
-  S = (e, t) => _(f({}, e), {
+  I = (e, t) => _(f({}, e), {
     asset: t.src
   }),
-  I = (e, t) => {
+  S = (e, t) => {
     if (e.type !== s.R.AVATAR_DECORATION) return e;
     let n = (0, i.cloneDeep)(e);
     if (n.items.length > 0) {
       let r = n.items[0];
-      e.name = t.name.replace(".png", ""), n.items[0] = S(r, t)
+      e.name = t.name.replace(".png", ""), n.items[0] = I(r, t)
     }
     return n
   },
@@ -247,17 +247,17 @@ let y = (0, Chunk353640.v)(e => ({
     let {
       previewEnabled: t,
       previewAvatarDecorationSkuId: n
-    } = y(), i = y(e => e.avatarDecorationAssets);
+    } = b(), i = b(e => e.avatarDecorationAssets);
     return r.useMemo(() => {
       let r = Object.values(i);
       if (!t || 0 === r.length || 0 === e.length) return e;
       if (null != n) {
         let t = i[n];
-        return null == t ? e : e.map(e => I(e, t))
+        return null == t ? e : e.map(e => S(e, t))
       }
       return e.map((e, t) => {
         let n = t % r.length;
-        return I(e, r[n])
+        return S(e, r[n])
       })
     }, [e, t, n, i])
   },
@@ -265,21 +265,21 @@ let y = (0, Chunk353640.v)(e => ({
     let {
       previewEnabled: t,
       previewAvatarDecorationSkuId: n
-    } = y(), i = y(e => e.avatarDecorationAssets);
+    } = b(), i = b(e => e.avatarDecorationAssets);
     return r.useMemo(() => {
       if (null == e || e.type !== s.R.AVATAR_DECORATION || 0 === e.items.length) return e;
       let r = T(t, i, n);
-      return null == r ? e : I(e, r)
+      return null == r ? e : S(e, r)
     }, [e, t, n, i])
   },
   R = e => {
     let {
       previewEnabled: t,
       previewAvatarDecorationSkuId: n
-    } = y(), i = y(e => e.avatarDecorationAssets);
+    } = b(), i = b(e => e.avatarDecorationAssets);
     return r.useMemo(() => {
       if (null == e) return null;
       let r = T(t, i, n);
-      return null == r ? e : S(e, r)
+      return null == r ? e : I(e, r)
     }, [e, t, n, i])
   }

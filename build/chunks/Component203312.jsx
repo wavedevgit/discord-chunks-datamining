@@ -1,5 +1,5 @@
 /** Chunk was on 59275 **/
-/** chunk id: 203312, original params: e,t,l (module,exports,require) **/
+/** chunk id: 203312, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   A: () => u
@@ -15,17 +15,17 @@ var Chunk503698 = require("./503698.js"),
 let u = e => {
   let {
     category: t,
-    daysRemainingText: l = o.t.Io7ozn,
-    className: r
+    daysRemainingText: n = o.t.Io7ozn,
+    className: l
   } = e;
   if (!(0, i.HF)(t.unpublishedAt)) return null;
   let u = (0, i.WU)(t.unpublishedAt),
-    d = u > 1 ? o.intl.formatToPlainString(l, {
+    d = u > 1 ? o.intl.formatToPlainString(n, {
       days: u
     }) : o.intl.string(o.t.Bc13HF);
-  return (0, n.jsx)(a.LpS, {
+  return (0, r.jsx)(a.LpS, {
     disableColor: true,
     text: d,
-    className: s()(c.q, r)
+    className: s()(c.q, l)
   })
 }

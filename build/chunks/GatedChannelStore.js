@@ -27,8 +27,8 @@ function E(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let b = {},
-  y = new Set;
+let y = {},
+  b = new Set;
 
 function O(e, t) {
   if (null == e) returnfalse;
@@ -38,7 +38,7 @@ function O(e, t) {
   return null != r && r.roles.includes(e.id)
 }
 
-function A(e) {
+function v(e) {
   let {
     guildId: t,
     role: n,
@@ -47,12 +47,12 @@ function A(e) {
   return !!(0, o.U)(n) && !!(r || (0, o.X)(null != n ? n : true) || O(n, t))
 }
 
-function v(e, t) {
+function A(e, t) {
   if (!t.features.has(g.GuildFeatures.CREATOR_MONETIZABLE) && !t.features.has(g.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) returnfalse;
   let n = c.A.isViewingServerShop(t.id);
   for (let r of Object.keys(e.permissionOverwrites)) {
     let i = _.A.getRole(t.id, r);
-    if (!A({
+    if (!v({
         guildId: t.id,
         role: i,
         isPreviewingRoles: n
@@ -65,7 +65,7 @@ function v(e, t) {
     a = (0, l.AN)(e, e.permissionOverwrites[t.id]);
   if (i && !a) {
     for (let e of _.A.getSortedRoles(t.id))
-      if (A({
+      if (v({
           guildId: t.id,
           role: e,
           isPreviewingRoles: n
@@ -74,60 +74,60 @@ function v(e, t) {
   returnfalse
 }
 
-function S(e) {
+function I(e) {
   let t = h.A.getGuild(e);
   if (null == t) return;
-  let n = b[e] = new Set;
+  let n = y[e] = new Set;
   if (!t.features.has(g.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED)) return;
   let r = f.A.getMutableGuildChannelsForGuild(e);
   for (let e in r) {
     let i = r[e];
-    v(i, t) && n.add(i.id)
+    A(i, t) && n.add(i.id)
   }
 }
 
-function I(e, t) {
-  let n = b[e];
+function S(e, t) {
+  let n = y[e];
   if (null == n) returnfalse;
   let r = f.A.getChannel(t);
   if (null == r) returnfalse;
   let i = h.A.getGuild(r.getGuildId());
   if (null == i) returnfalse;
   let a = n.has(t),
-    s = v(r, i);
+    s = A(r, i);
   return a !== s && (s ? n.add(t) : n.delete(t), true)
 }
 
 function T() {
-  b = {}, y.clear()
+  y = {}, b.clear()
 }
 
 function C(e) {
   let {
     guild: t
   } = e;
-  delete b[t.id]
+  delete y[t.id]
 }
 
 function N(e) {
   let {
     guildId: t
   } = e;
-  delete b[t]
+  delete y[t]
 }
 
 function R(e) {
   let {
     channel: t
   } = e;
-  return null != t.guild_id && I(t.guild_id, t.id)
+  return null != t.guild_id && S(t.guild_id, t.id)
 }
 
 function w(e) {
   let {
     channels: t
   } = e, n = false;
-  for (let e of t) null != e.guild_id && I(e.guild_id, e.id) && (n = true);
+  for (let e of t) null != e.guild_id && S(e.guild_id, e.id) && (n = true);
   return n
 }
 
@@ -136,14 +136,14 @@ function P(e) {
     guildId: t,
     restrictions: n
   } = e;
-  (0, s.Y5)(n) ? y.add(t): y.delete(t)
+  (0, s.Y5)(n) ? b.add(t): b.delete(t)
 }
 
 function D(e) {
   let {
     guildId: t
   } = e;
-  y.add(t)
+  b.add(t)
 }
 class x extends(r = Chunk311907.Ay.Store) {
   initialize() {
@@ -151,11 +151,11 @@ class x extends(r = Chunk311907.Ay.Store) {
   }
   isChannelGated(e, t) {
     if (null == e) returnfalse;
-    let n = b[e];
-    return null == n && (S(e), n = b[e]), null != n && n.has(t)
+    let n = y[e];
+    return null == n && (I(e), n = y[e]), null != n && n.has(t)
   }
   isChannelGatedAndVisible(e, t) {
-    return null != e && this.isChannelGated(e, t) && !y.has(e)
+    return null != e && this.isChannelGated(e, t) && !b.has(e)
   }
   isChannelOrThreadParentGated(e, t) {
     if (null == e) returnfalse;

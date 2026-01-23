@@ -71,7 +71,7 @@ function w(e) {
     invoicePreview: ea,
     inReverseTrial: es,
     premiumBrandRefreshBackgroundClassName: eo
-  } = (0, A.P5)(), {
+  } = (0, v.P5)(), {
     isGift: el,
     selectedGiftStyle: ec,
     customGiftMessage: eu,
@@ -79,23 +79,23 @@ function w(e) {
     soundEffect: ef,
     giftRecipient: ep,
     selectedGiftingPromotionReward: e_
-  } = (0, O.Pv)(), eh = (0, p.Mq)(z), em = (0, b.lo)(ep), eg = {};
-  eg.gift_style = ec, eg.reward_sku_ids = eh && (null == e_ ? true : e_.skuId) != null ? [null == e_ ? true : e_.skuId] : [], em === b.tB.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && (l()(null != ep, "Gift recipient must be set at purchase review step for these gift options."), eg.recipient_id = ep.id, eg.custom_message = eu, eg.emoji_id = null == ed ? true : ed.id, eg.emoji_name = (null == ed ? true : ed.id) == null ? null == ed ? true : ed.surrogates : true, eg.sound_id = null == ef ? true : ef.soundId);
+  } = (0, O.Pv)(), eh = (0, p.Mq)(z), em = (0, y.lo)(ep), eg = {};
+  eg.gift_style = ec, eg.reward_sku_ids = eh && (null == e_ ? true : e_.skuId) != null ? [null == e_ ? true : e_.skuId] : [], em === y.tB.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && (l()(null != ep, "Gift recipient must be set at purchase review step for these gift options."), eg.recipient_id = ep.id, eg.custom_message = eu, eg.emoji_id = null == ed ? true : ed.id, eg.emoji_name = (null == ed ? true : ed.id) == null ? null == ed ? true : ed.surrogates : true, eg.sound_id = null == ef ? true : ef.soundId);
   let eE = null == z ? true : z.id,
-    eb = (0, S.$o)(k, q.paymentSourceId, eE),
+    ey = (0, I.$o)(k, q.paymentSourceId, eE),
     {
-      analyticsLocations: ey
+      analyticsLocations: eb
     } = (0, d.Ay)(),
     eO = (0, T.W)(J, $),
-    [eA, ev] = i.useState(eb),
-    [eS, eI] = i.useState(false),
+    [ev, eA] = i.useState(ey),
+    [eI, eS] = i.useState(false),
     {
       hasEntitlements: eT
     } = (0, m.X)(eE, el),
-    eC = (0, y.J$)(q.paymentSourceId),
-    eN = eT || eb,
+    eC = (0, b.J$)(q.paymentSourceId),
+    eN = eT || ey,
     eR = (0, _.l)(),
-    ew = (0, c.bG)([I.A], () => I.A.currentOrderId),
+    ew = (0, c.bG)([S.A], () => S.A.currentOrderId),
     eP = null,
     eD = null;
   if (Q === N.VVm.ONE_TIME) {
@@ -106,17 +106,17 @@ function w(e) {
     eD = null != e ? e[t] : null
   }
   let eL = async () => {
-    await (0, v.l)({
+    await (0, A.l)({
       setPurchaseState: n,
       setHasAcceptedTerms: X,
-      setIsSubmitting: ev,
+      setIsSubmitting: eA,
       setPurchaseError: Z,
-      hasRedirectURL: eS,
-      setHasRedirectURL: eI,
+      hasRedirectURL: eI,
+      setHasRedirectURL: eS,
       isGift: el,
       baseAnalyticsData: j,
       analyticsLocation: G,
-      analyticsLocations: ey,
+      analyticsLocations: eb,
       flowStartTime: M,
       subscriptionPlan: z,
       planGroup: U,
@@ -154,11 +154,11 @@ function w(e) {
     let {
       makePurchase: e
     } = eM.current;
-    eb && !el && null == t && e()
-  }, [eb, el, t]);
+    ey && !el && null == t && e()
+  }, [ey, el, t]);
   let ek = null != F || Q === N.VVm.ONE_TIME && !el,
     eU = H && !ek;
-  return eb ? null : (0, r.jsxs)(u.jlY, {
+  return ey ? null : (0, r.jsxs)(u.jlY, {
     "data-migration-pending": true,
     align: f.A.Align.CENTER,
     className: s()(eo, R.H),
@@ -168,7 +168,7 @@ function w(e) {
       planError: x,
       disablePurchase: Y,
       flashLegalTerms: P,
-      isSubmitting: eA,
+      isSubmitting: ev,
       premiumSubscription: t,
       isGift: el,
       planGroup: U,

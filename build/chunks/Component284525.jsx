@@ -73,17 +73,17 @@ function d(e) {
     isJoining: m,
     handleJoinRequest: g,
     buttonCTA: E,
-    tooltip: b,
-    isEnabled: y
+    tooltip: y,
+    isEnabled: b
   } = h;
   return (0, r.jsx)(i.m, {
-    text: b,
+    text: y,
     children: (0, r.jsx)(a.Button, l({
       variant: f,
       size: p,
       text: E,
       onClick: g,
-      disabled: !y,
+      disabled: !b,
       loading: m,
       fullWidth: true
     }, _))

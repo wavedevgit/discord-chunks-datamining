@@ -32,8 +32,8 @@ function d(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(e, ["applicationId"]), l = (0, o.A)(t);
-  return l.length > 0 ? (0, r.jsx)(s.A, function(e) {
+  }(e, ["applicationId"]), l = (0, s.A)(t);
+  return l.length > 0 ? (0, r.jsx)(o.A, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -63,14 +63,14 @@ function f(e) {
   var t, n, d;
   let f, {
       userId: p,
-      applicationId: b,
-      guildId: g,
-      channelId: m,
+      applicationId: g,
+      guildId: m,
+      channelId: b,
       className: y
     } = e,
-    O = (0, o.A)(b),
+    O = (0, s.A)(g),
     j = O.length > 0,
-    x = (t = O, n = g, d = m, f = t.slice(0, 3).map(e => a.Ay.getName(n, d, e)), 1 === t.length ? c.intl.formatToPlainString(c.t.FURqTU, {
+    x = (t = O, n = m, d = b, f = t.slice(0, 3).map(e => a.Ay.getName(n, d, e)), 1 === t.length ? c.intl.formatToPlainString(c.t.FURqTU, {
       name: f[0]
     }) : 2 === t.length ? c.intl.formatToPlainString(c.t["08Usu/"], {
       name1: f[0],
@@ -87,18 +87,18 @@ function f(e) {
     })),
     h = (0, i.A)({
       location: "SocialProofButton",
-      applicationId: b,
+      applicationId: g,
       source: l.Ob.UserProfile,
       sourceUserId: p,
       trackEntryPointImpression: true
     });
-  return j && null != h ? (0, r.jsx)(s.H, {
+  return j && null != h ? (0, r.jsx)(o.H, {
     users: O,
     label: x,
     className: y,
     onClick: h,
-    guildId: g,
-    channelId: m,
+    guildId: m,
+    channelId: b,
     "aria-label": x,
     overflowCountColor: "text-strong",
     overflowCountClassName: u.L

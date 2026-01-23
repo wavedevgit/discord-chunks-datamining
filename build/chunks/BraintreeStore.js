@@ -3,7 +3,7 @@
 "use strict";
 let r, i;
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./65821.js");
 var a, Chunk311907 = require("./311907.js"),
   Chunk562465 = require("./562465.js"),
@@ -59,7 +59,7 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     paymentSourceType: t,
     state: n
@@ -67,7 +67,7 @@ function b(e) {
   t === u.hes.PAYPAL && (r = n)
 }
 
-function y() {
+function b() {
   p = null
 }
 
@@ -79,10 +79,10 @@ function O() {
     return (0, o.TP)() + u.Rsh.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(u.kM_.BRAINTREE, r)
   },
   open: e => {
-    i = e, window.open(e), v.emitChange()
+    i = e, window.open(e), A.emitChange()
   }
 });
-class A extends(a = Chunk311907.Ay.Store) {
+class v extends(a = Chunk311907.Ay.Store) {
   getClient() {
     return f
   }
@@ -96,14 +96,14 @@ class A extends(a = Chunk311907.Ay.Store) {
     return i
   }
 }
-d(A, "displayName", "BraintreeStore");
-let v = new A(Chunk73153.h, {
+d(v, "displayName", "BraintreeStore");
+let A = new v(Chunk73153.h, {
     BRAINTREE_CREATE_CLIENT_SUCCESS: h,
     BRAINTREE_CREATE_PAYPAL_CLIENT_SUCCESS: m,
     BILLING_POPUP_BRIDGE_CALLBACK: E,
-    BILLING_POPUP_BRIDGE_STATE_UPDATE: b,
-    BRAINTREE_TEARDOWN_PAYPAL_CLIENT: y,
+    BILLING_POPUP_BRIDGE_STATE_UPDATE: y,
+    BRAINTREE_TEARDOWN_PAYPAL_CLIENT: b,
     BRAINTREE_CREATE_VENMO_CLIENT_SUCCESS: g,
     BRAINTREE_TEARDOWN_VENMO_CLIENT: O
   }),
-  S = v
+  I = A

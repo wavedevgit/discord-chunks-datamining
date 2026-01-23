@@ -12,32 +12,32 @@ var r, i, a, s, o, Chunk860511 = require("./860511.js"),
   Chunk13570 = require("./13570.js"),
   g = Chunk860511.MutationObserver || Chunk860511.WebKitMutationObserver,
   E = Chunk860511.document,
-  b = Chunk860511.process,
-  y = Chunk860511.Promise,
+  y = Chunk860511.process,
+  b = Chunk860511.Promise,
   O = Chunk745730("queueMicrotask");
 if (!O) {
-  var A = new Chunk246202,
-    v = function() {
+  var v = new Chunk246202,
+    A = function() {
       var e, t;
-      for (m && (e = b.domain) && e.exit(); t = A.get();) try {
+      for (m && (e = y.domain) && e.exit(); t = v.get();) try {
         t()
       } catch (e) {
-        throw A.head && r(), e
+        throw v.head && r(), e
       }
       e && e.enter()
     };
-  Chunk705333 || Chunk13570 || Chunk78235 || !g || !E ? !Chunk633006 && y && y.resolve ? ((s = y.resolve(true)).constructor = y, o = Chunk221015(s.then, s), r = function() {
-    o(v)
+  Chunk705333 || Chunk13570 || Chunk78235 || !g || !E ? !Chunk633006 && b && b.resolve ? ((s = b.resolve(true)).constructor = b, o = Chunk221015(s.then, s), r = function() {
+    o(A)
   }) : Chunk13570 ? r = function() {
-    b.nextTick(v)
+    y.nextTick(A)
   } : (d = Chunk221015(d, Chunk860511), r = function() {
-    d(v)
-  }) : (i = true, a = E.createTextNode(""), new g(v).observe(a, {
+    d(A)
+  }) : (i = true, a = E.createTextNode(""), new g(A).observe(a, {
     characterData: true
   }), r = function() {
     a.data = i = !i
   }), O = function(e) {
-    A.head || r(), A.add(e)
+    v.head || r(), v.add(e)
   }
 }
 module.exports = O

@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  y: () => y
+  y: () => b
 });
 var i, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -72,8 +72,8 @@ function g(e, t) {
   return i
 }
 let E = "\n  visibility:hidden;\n  overflow:hidden;\n  position:absolute;\n  z-index:-1000;\n  top:0;\n  right:0;\n",
-  b = ["letter-spacing", "line-height", "padding-top", "padding-bottom", "font-family", "font-weight", "font-size", "text-transform", "width", "padding-left", "padding-right", "border-width", "box-sizing"];
-class y extends(i = Chunk64700.PureComponent) {
+  y = ["letter-spacing", "line-height", "padding-top", "padding-bottom", "font-family", "font-weight", "font-size", "text-transform", "width", "padding-left", "padding-right", "border-width", "box-sizing"];
+class b extends(i = Chunk64700.PureComponent) {
   componentDidMount() {
     var e, t;
     null == (e = (t = this.props).onResize) || e.call(t, true), Promise.resolve().then(() => this.calculateSize())
@@ -117,7 +117,7 @@ class y extends(i = Chunk64700.PureComponent) {
       r = parseFloat(t.getPropertyValue("padding-bottom")) + parseFloat(t.getPropertyValue("padding-top")),
       i = parseFloat(t.getPropertyValue("border-bottom-width")) + parseFloat(t.getPropertyValue("border-top-width"));
     return {
-      sizingStyle: b.map(e => "".concat(e, ":").concat(t.getPropertyValue(e))).join(";"),
+      sizingStyle: y.map(e => "".concat(e, ":").concat(t.getPropertyValue(e))).join(";"),
       paddingSize: r,
       borderSize: i,
       boxSizing: n
@@ -185,7 +185,7 @@ class y extends(i = Chunk64700.PureComponent) {
     }
   }
 }
-f(y, "defaultProps", {
+f(b, "defaultProps", {
   autoFocus: false,
   disabled: false,
   autoCorrect: "off"

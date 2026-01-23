@@ -78,31 +78,31 @@ function h(e, t) {
       className: m,
       dir: g = "ltr",
       orientation: E = "vertical",
-      paddingFix: b = true,
-      fade: y = false,
+      paddingFix: y = true,
+      fade: b = false,
       onScroll: O,
-      style: A
-    } = d, v = p(d, ["children", "className", "dir", "orientation", "paddingFix", "fade", "onScroll", "style"]), [S] = _, I = i.useRef(null), T = (0, l._I)({
-      paddingFix: b,
+      style: v
+    } = d, A = p(d, ["children", "className", "dir", "orientation", "paddingFix", "fade", "onScroll", "style"]), [I] = _, S = i.useRef(null), T = (0, l._I)({
+      paddingFix: y,
       orientation: E,
       dir: g,
       className: m,
-      scrollerRef: I,
+      scrollerRef: S,
       specs: n
     });
     return (0, r.jsx)("div", f(u({
       ref: e => {
-        "function" == typeof S ? S(e) : null != S && (S.current = e), I.current = e
+        "function" == typeof I ? I(e) : null != I && (I.current = e), S.current = e
       },
       className: s()(m, {
         [e]: true,
-        [t]: y
+        [t]: b
       }),
-      style: (0, l.Ze)(A, E),
+      style: (0, l.Ze)(v, E),
       dir: g
-    }, v), {
+    }, A), {
       children: (0, r.jsxs)(o.xp, {
-        containerRef: I,
+        containerRef: S,
         children: [h, T]
       })
     }))

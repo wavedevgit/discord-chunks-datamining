@@ -33,13 +33,13 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   let n = e.split("@"),
     r = "";
   return n.length > 1 && (r = n[0] + "@", e = n[1]), r + E((e = e.replace(f, ".")).split("."), t).join(".")
 }
 
-function y(e) {
+function b(e) {
   let t = [],
     n = 0,
     r = e.length;
@@ -55,15 +55,15 @@ function y(e) {
 let O = function(e) {
     return e - 48 < 10 ? e - 22 : e - 65 < 26 ? e - 65 : e - 97 < 26 ? e - 97 : n
   },
-  A = function(e, t) {
+  v = function(e, t) {
     return e + 22 + 75 * (e < 26) - ((0 != t) << 5)
   },
-  v = function(e, t, r) {
+  A = function(e, t, r) {
     let o = 0;
     for (e = r ? h(e / s) : e >> 1, e += h(e / t); e > _ * i >> 1; o += n) e = h(e / _);
     return h(o + (_ + 1) * e / (e + a))
   },
-  S = function(e) {
+  I = function(e) {
     let a = [],
       s = e.length,
       u = 0,
@@ -84,13 +84,13 @@ let O = function(e) {
         a > h(t / p) && g("overflow"), a *= p
       }
       let c = a.length + 1;
-      f = v(u - l, c, 0 == l), h(u / c) > t - d && g("overflow"), d += h(u / c), u %= c, a.splice(u++, 0, d)
+      f = A(u - l, c, 0 == l), h(u / c) > t - d && g("overflow"), d += h(u / c), u %= c, a.splice(u++, 0, d)
     }
     return String.fromCodePoint(...a)
   },
-  I = function(e) {
+  S = function(e) {
     let a = [],
-      s = (e = y(e)).length,
+      s = (e = b(e)).length,
       u = l,
       d = 0,
       f = o;
@@ -109,31 +109,31 @@ let O = function(e) {
             if (e < s) break;
             let o = e - s,
               l = n - s;
-            a.push(m(A(s + o % l, 0))), e = h(o / l)
+            a.push(m(v(s + o % l, 0))), e = h(o / l)
           }
-          a.push(m(A(e, 0))), f = v(d, o, _ == p), d = 0, ++_
+          a.push(m(v(e, 0))), f = A(d, o, _ == p), d = 0, ++_
         }++ d, ++u
     }
     return a.join("")
   },
   T = function(e) {
-    return b(e, function(e) {
-      return u.test(e) ? S(e.slice(4).toLowerCase()) : e
+    return y(e, function(e) {
+      return u.test(e) ? I(e.slice(4).toLowerCase()) : e
     })
   },
   C = function(e) {
-    return b(e, function(e) {
-      return d.test(e) ? "xn--" + I(e) : e
+    return y(e, function(e) {
+      return d.test(e) ? "xn--" + S(e) : e
     })
   };
 module.exports = {
   version: "2.1.0",
   ucs2: {
-    decode: y,
+    decode: b,
     encode: e => String.fromCodePoint(...e)
   },
-  decode: S,
-  encode: I,
+  decode: I,
+  encode: S,
   toASCII: C,
   toUnicode: T
 }

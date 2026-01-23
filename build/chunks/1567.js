@@ -1,8 +1,8 @@
 /** Chunk was on 21738 **/
 /** chunk id: 1567, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  wp: "a3b9361add57f2ab",
-  Oo: "_442a16e0f0653973",
-  RE: "dba94a11e1d3425b",
-  Z: "_740f84d32c415185"
+  wp: "barCard_d8a230",
+  Oo: "barHeading_d8a230",
+  RE: "fixedBarContainer_d8a230",
+  Z: "fixedBarWrapper_d8a230"
 }

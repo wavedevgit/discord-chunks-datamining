@@ -12,10 +12,10 @@ let o = e => {
   let {
     surface: t,
     skipFetchingShelf: n = true
-  } = e, o = (0, l.bG)([s.Ay], () => s.Ay.getState());
+  } = e, o = (0, l.bG)([a.Ay], () => a.Ay.getState());
   return (0, r.useEffect)(() => {
     var e;
-    (null == (e = o.lastCheckedForBadgeableActivities) || new Date(e).getTime() < Date.now() - 432e5) && !n && (0, a.LV)({
+    (null == (e = o.lastCheckedForBadgeableActivities) || new Date(e).getTime() < Date.now() - 432e5) && !n && (0, s.LV)({
       guildId: null
     })
   }, [o.lastCheckedForBadgeableActivities, n]), (0, r.useMemo)(() => (0, i.C)({

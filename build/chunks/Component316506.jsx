@@ -2,8 +2,8 @@
 /** chunk id: 316506, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => p,
-  u: () => m
+  A: () => b,
+  u: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,7 +18,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk286420 = require("./286420.js");
 
-function m() {
+function f() {
   let [e, t] = i.useState(true);
   return {
     scrolledToTop: e,
@@ -28,34 +28,34 @@ function m() {
   }
 }
 
-function p(e) {
+function b(e) {
   let {
     guild: t,
-    role: m,
-    selectedSection: p,
-    setSelectedSection: x
-  } = e, h = i.useCallback(e => {
-    x(e)
-  }, [x]), j = (0, l.bG)([d.A], () => {
+    role: f,
+    selectedSection: b,
+    setSelectedSection: h
+  } = e, x = i.useCallback(e => {
+    h(e)
+  }, [h]), j = (0, l.bG)([d.A], () => {
     var e;
-    return null == (e = d.A.getRoleMemberCount(t.id)) ? true : e[m.id]
-  }, [m.id, t.id]), O = (0, o.Oy)(m), y = (0, u.A)(t.id, m);
+    return null == (e = d.A.getRoleMemberCount(t.id)) ? true : e[f.id]
+  }, [f.id, t.id]), _ = (0, c.Oy)(f), O = (0, u.A)(t.id, f);
   i.useEffect(() => {
-    O && x(f.T$.PERMISSIONS)
-  }, [O, x]);
-  let v = (0, c.x)(t, m);
+    _ && h(g.T$.PERMISSIONS)
+  }, [_, h]);
+  let v = (0, o.x)(t, f);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: b.gn,
+      className: p.gn,
       children: [(0, r.jsx)(s.Text, {
-        className: b.Qw,
+        className: p.Qw,
         color: "text-strong",
         variant: "text-md/semibold",
-        children: g.intl.format(g.t.BUdGkE, {
-          roleName: m.name
+        children: m.intl.format(m.t.BUdGkE, {
+          roleName: f.name
         })
       }), v ? (0, r.jsx)(s.DUT, {
-        className: b.MK,
+        className: p.MK,
         onClick: function(e) {
           (0, a.L3)(e, async () => {
             let {
@@ -82,7 +82,7 @@ function p(e) {
                 return e
               }({}, n), l = l = {
                 guild: t,
-                role: m
+                role: f
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -96,41 +96,41 @@ function p(e) {
             }
           })
         },
-        "aria-label": g.intl.string(g.t.PdRCRg),
+        "aria-label": m.intl.string(m.t.PdRCRg),
         children: (0, r.jsx)(s.jNK, {
           size: "md",
           color: "currentColor"
         })
       }) : null]
-    }), null != y ? (0, r.jsx)(s.po8, {
+    }), null != O ? (0, r.jsx)(s.po8, {
       messageType: s.YCn.WARNING,
-      children: y
+      children: O
     }) : null, (0, r.jsxs)(s.VQ0, {
-      className: b.$H,
-      "aria-label": g.intl.string(g.t["+1H47t"]),
-      selectedItem: p,
+      className: p.$H,
+      "aria-label": m.intl.string(m.t["+1H47t"]),
+      selectedItem: b,
       type: "top",
       look: "brand",
-      onItemSelect: h,
+      onItemSelect: x,
       children: [(0, r.jsx)(s.VQ0.Item, {
-        className: b.YU,
-        id: f.T$.DISPLAY,
-        disabled: O,
-        children: g.intl.string(g.t.hmdomw)
+        className: p.YU,
+        id: g.T$.DISPLAY,
+        disabled: _,
+        children: m.intl.string(m.t.hmdomw)
       }), (0, r.jsx)(s.VQ0.Item, {
-        className: b.YU,
-        id: f.T$.PERMISSIONS,
-        children: g.intl.string(g.t.WIDE1L)
+        className: p.YU,
+        id: g.T$.PERMISSIONS,
+        children: m.intl.string(m.t.WIDE1L)
       }), (0, r.jsx)(s.VQ0.Item, {
-        className: b.YU,
-        id: f.T$.VERIFICATIONS,
-        disabled: O,
-        children: g.intl.string(g.t["5//Muu"])
+        className: p.YU,
+        id: g.T$.VERIFICATIONS,
+        disabled: _,
+        children: m.intl.string(m.t["5//Muu"])
       }), (0, r.jsx)(s.VQ0.Item, {
-        className: b.YU,
-        id: f.T$.MEMBERS,
-        disabled: O,
-        children: O ? g.intl.string(g.t["kg//+7"]) : g.intl.formatToPlainString(g.t.bHnZWW, {
+        className: p.YU,
+        id: g.T$.MEMBERS,
+        disabled: _,
+        children: _ ? m.intl.string(m.t["kg//+7"]) : m.intl.formatToPlainString(m.t.bHnZWW, {
           numMembers: String(j)
         })
       })]

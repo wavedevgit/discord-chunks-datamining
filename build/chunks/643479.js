@@ -6,7 +6,7 @@ require.d(exports, {
   BD: () => o,
   C5: () => _,
   CF: () => h,
-  FH: () => b,
+  FH: () => y,
   Gl: () => E,
   L$: () => f,
   MS: () => a,
@@ -15,7 +15,7 @@ require.d(exports, {
   dP: () => d,
   gq: () => l,
   hT: () => s,
-  mF: () => y,
+  mF: () => b,
   tp: () => g,
   z6: () => c
 });
@@ -105,10 +105,10 @@ function m(e, t) {
 function g(e, t) {
   return Array(t + 1).join(e)
 }
-let E, b = 0;
+let E, y = 0;
 
-function y(e, t, n, r = "string") {
-  if (t === b && "function" == typeof DecompressionStream) {
+function b(e, t, n, r = "string") {
+  if (t === y && "function" == typeof DecompressionStream) {
     let t = new DecompressionStream("deflate"),
       i = new Blob([e]).stream().pipeThrough(t);
     return "dataview" === r ? new Response(i).arrayBuffer().then(e => new DataView(e)) : new Response(i).arrayBuffer().then(e => new TextDecoder(n).decode(e))

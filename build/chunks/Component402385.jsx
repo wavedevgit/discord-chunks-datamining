@@ -55,18 +55,18 @@ class D extends Chunk64700.PureComponent {
       callActive: n,
       callUnavailable: l,
       isBlocked: i,
-      channel: a,
-      mode: s,
+      channel: s,
+      mode: a,
       isProvisional: c
     } = this.props;
-    if (t || n && s === I._Of.VOICE) return null;
-    let u = a.isManaged(),
+    if (t || n && a === I._Of.VOICE) return null;
+    let u = s.isManaged(),
       d = null,
-      f = false;
-    return c ? (f = true, d = w.intl.string(w.t.izMR7o)) : v.A.supports(P.O5.VIDEO) ? i ? (d = w.intl.string(w.t.PHzjvX), f = true) : n && s === I._Of.VIDEO ? (e = this.handleJoinVideoCall, d = u ? w.intl.string(w.t.S0W8Z5) : w.intl.string(w.t.W68MhH)) : (e = this.handleStartVideoCall, d = u ? w.intl.string(w.t.S0W8Z5) : w.intl.string(w.t.oCqlGG)) : (f = true, e = this.handleBrowserNotSupported, d = w.intl.string(w.t.UVpg3U)), (0, r.jsx)(S.Ay.Icon, {
+      p = false;
+    return c ? (p = true, d = w.intl.string(w.t.izMR7o)) : j.A.supports(P.O5.VIDEO) ? i ? (d = w.intl.string(w.t.PHzjvX), p = true) : n && a === I._Of.VIDEO ? (e = this.handleJoinVideoCall, d = u ? w.intl.string(w.t.S0W8Z5) : w.intl.string(w.t.W68MhH)) : (e = this.handleStartVideoCall, d = u ? w.intl.string(w.t.S0W8Z5) : w.intl.string(w.t.oCqlGG)) : (p = true, e = this.handleBrowserNotSupported, d = w.intl.string(w.t.UVpg3U)), (0, r.jsx)(S.Ay.Icon, {
       icon: o.npA,
       onClick: e,
-      disabled: f || l,
+      disabled: p || l,
       tooltip: d
     })
   }
@@ -81,25 +81,25 @@ class D extends Chunk64700.PureComponent {
       isProvisional: d
     } = this.props;
     if (t) return null;
-    let f = c.isManaged(),
-      p = false;
-    d ? (p = true, e = w.intl.string(w.t.izMR7o)) : l ? (e = f ? w.intl.string(w.t.LW2Ghr) : w.intl.string(w.t.rF7lN5), p = true) : i ? (e = w.intl.string(w.t.PHzjvX), p = true) : e = n ? f ? w.intl.string(w.t.S0W8Z5) : w.intl.string(w.t.fdEeb5) : f ? w.intl.string(w.t.S0W8Z5) : w.intl.string(w.t.focH1t);
-    let h = (0, r.jsx)(S.Ay.Icon, {
+    let p = c.isManaged(),
+      h = false;
+    d ? (h = true, e = w.intl.string(w.t.izMR7o)) : l ? (e = p ? w.intl.string(w.t.LW2Ghr) : w.intl.string(w.t.rF7lN5), h = true) : i ? (e = w.intl.string(w.t.PHzjvX), h = true) : e = n ? p ? w.intl.string(w.t.S0W8Z5) : w.intl.string(w.t.fdEeb5) : p ? w.intl.string(w.t.S0W8Z5) : w.intl.string(w.t.focH1t);
+    let f = (0, r.jsx)(S.Ay.Icon, {
       ref: this.iconRef,
       icon: o._jp,
       onClick: this.handleVoiceClick,
-      disabled: p,
+      disabled: h,
       tooltip: e
     });
     return (0, r.jsxs)(r.Fragment, {
-      children: [h, (0, r.jsx)(b.Ay, {
+      children: [f, (0, r.jsx)(g.Ay, {
         contentTypes: u,
         children: e => {
           let {
             visibleContent: t,
             markAsDismissed: n
           } = e;
-          return t === a.M.ACTIVITY_GDM_CALL_TOOLTIP ? (0, r.jsx)(s.AM, {
+          return t === s.M.ACTIVITY_GDM_CALL_TOOLTIP ? (0, r.jsx)(a.AM, {
             targetElementRef: this.iconRef,
             title: w.intl.string(w.t.HOPqzR),
             body: w.intl.format(w.t.xAW71b, {
@@ -127,8 +127,8 @@ class D extends Chunk64700.PureComponent {
         channel: n,
         notFriend: r,
         appContext: l
-      } = this.props, i = r ? n.getRecipientId() : null, a = () => c.A.call(n.id, t, !r && !n.isManaged() && !(null == e ? true : e.shiftKey), i);
-      t ? (0, y.A)(a, l) : a()
+      } = this.props, i = r ? n.getRecipientId() : null, s = () => c.A.call(n.id, t, !r && !n.isManaged() && !(null == e ? true : e.shiftKey), i);
+      t ? (0, y.A)(s, l) : s()
     }), R(this, "handleJoinCall", e => {
       u.default.selectVoiceChannel(this.props.channel.id, e)
     }), R(this, "handleVoiceClick", e => {
@@ -137,7 +137,7 @@ class D extends Chunk64700.PureComponent {
         callActive: n,
         dismissibleContentTypes: r
       } = this.props;
-      if (r.includes(a.M.ACTIVITY_GDM_CALL_TOOLTIP) && (0, h.Dr)(a.M.ACTIVITY_GDM_CALL_TOOLTIP, {
+      if (r.includes(s.M.ACTIVITY_GDM_CALL_TOOLTIP) && (0, f.Dr)(s.M.ACTIVITY_GDM_CALL_TOOLTIP, {
           dismissAction: T.i.AUTO
         }), t);
       else if (n) return this.handleJoinCall(false);
@@ -159,26 +159,26 @@ function M(e) {
   var t;
   let {
     channel: n
-  } = e, l = (0, g.A)(), s = (0, i.bG)([p.A], () => p.A.getMode(n.id)), o = (0, i.bG)([_.A], () => _.A.isInChannel(n.id)), c = (0, i.bG)([d.A], () => d.A.useReducedMotion), {
+  } = e, l = (0, m.A)(), a = (0, i.bG)([h.A], () => h.A.getMode(n.id)), o = (0, i.bG)([E.A], () => E.A.isInChannel(n.id)), c = (0, i.bG)([d.A], () => d.A.useReducedMotion), {
     callActive: u,
-    callUnavailable: h
-  } = (0, i.cf)([O.A], () => ({
-    callActive: O.A.isCallActive(n.id),
-    callUnavailable: O.A.isCallUnavailable(n.id)
-  })), b = n.getRecipientId(), {
+    callUnavailable: f
+  } = (0, i.cf)([_.A], () => ({
+    callActive: _.A.isCallActive(n.id),
+    callUnavailable: _.A.isCallUnavailable(n.id)
+  })), g = n.getRecipientId(), {
     notFriend: A,
     isBlocked: y
-  } = (0, i.cf)([x.A], () => ({
-    notFriend: n.type === I.rbe.DM && null != b && !x.A.isFriend(b),
-    isBlocked: n.type === I.rbe.DM && null != b && x.A.isBlocked(b)
-  })), v = (0, i.bG)([E.default], () => E.default.getUser(b)), C = (0, m.Us)(), S = [], N = (0, f.A)(n.id), T = (0, i.bG)([j.A], () => j.A.hasLayers());
-  return (N && !T && S.push(a.M.ACTIVITY_GDM_CALL_TOOLTIP), l || (null == v ? true : v.bot)) ? null : (0, r.jsx)(D, {
+  } = (0, i.cf)([v.A], () => ({
+    notFriend: n.type === I.rbe.DM && null != g && !v.A.isFriend(g),
+    isBlocked: n.type === I.rbe.DM && null != g && v.A.isBlocked(g)
+  })), j = (0, i.bG)([x.default], () => x.default.getUser(g)), C = (0, b.Us)(), S = [], N = (0, p.A)(n.id), T = (0, i.bG)([O.A], () => O.A.hasLayers());
+  return (N && !T && S.push(s.M.ACTIVITY_GDM_CALL_TOOLTIP), l || (null == j ? true : j.bot)) ? null : (0, r.jsx)(D, {
     channel: n,
-    mode: s,
+    mode: a,
     inCall: o,
     callActive: u,
-    isProvisional: null != (t = null == v ? true : v.isProvisional) && t,
-    callUnavailable: h,
+    isProvisional: null != (t = null == j ? true : j.isProvisional) && t,
+    callUnavailable: f,
     notFriend: A,
     isBlocked: y,
     appContext: C,

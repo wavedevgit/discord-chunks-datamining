@@ -1,5 +1,5 @@
 /** Chunk was on 71138 **/
-/** chunk id: 244920, original params: e,t,n (module,exports,require) **/
+/** chunk id: 244920, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   A: () => F
 }), require("./134528.js"), require("./947204.js");
@@ -29,54 +29,54 @@ class R extends Chunk64700.PureComponent {
   render() {
     var e, t;
     let {
-      transport: n,
+      transport: r,
       mediaSessionId: a,
       hidePersonalInformation: i,
       hostname: s
     } = this.props;
-    if (null == n) return (0, r.jsx)(o.y$y, {
+    if (null == r) return (0, n.jsx)(o.y$y, {
       type: o.y$y.Type.SPINNING_CIRCLE
     });
     let c = (e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          var r = null != arguments[t] ? arguments[t] : {},
+            n = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(r, e).enumerable
+          }))), n.forEach(function(t) {
+            var n;
+            n = r[t], t in e ? Object.defineProperty(e, t, {
+              value: n,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : e[t] = n
           })
         }
         return e
-      }({}, n), t = t = {
+      }({}, r), t = t = {
         hostname: s
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
+        var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var n = Object.getOwnPropertySymbols(e);
+          r.push.apply(r, n)
         }
-        return n
-      })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+        return r
+      })(Object(t)).forEach(function(r) {
+        Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
       }), e),
       u = l().map(c, (e, t) => {
-        if ("receiverReports" !== t && (!i || "localAddress" !== t)) return (0, r.jsx)(b.q7, {
+        if ("receiverReports" !== t && (!i || "localAddress" !== t)) return (0, n.jsx)(b.q7, {
           label: t,
           value: e
         }, t)
       }),
       p = l().map(c.receiverReports, e => {
-        let t = Array.isArray(e.bitrate) ? null == (r = e.bitrate.at(false)) ? true : r.value : e.bitrate,
-          n = h.default.getUser(e.id);
-        var r, a = g.Ay.getNickname(m.A.getGuildId(), true, n);
-        return null == a && (a = null != n ? n.username : e.id), {
+        let t = Array.isArray(e.bitrate) ? null == (n = e.bitrate.at(false)) ? true : n.value : e.bitrate,
+          r = h.default.getUser(e.id);
+        var n, a = g.Ay.getNickname(m.A.getGuildId(), true, r);
+        return null == a && (a = null != r ? r.username : e.id), {
           displayName: a,
           bitrate: t / 1e3,
           lost: 100 * e.fractionLost / 256
@@ -84,36 +84,36 @@ class R extends Chunk64700.PureComponent {
       }),
       y = l().sortBy(p, e => e.displayName),
       A = l().map(y, e => {
-        var t, n, a;
+        var t, r, a;
         let i, l;
-        return t = e.displayName, n = e.bitrate, a = e.lost, i = (0, r.jsxs)(d.A, {
+        return t = e.displayName, r = e.bitrate, a = e.lost, i = (0, n.jsxs)(d.A, {
           id: "bitrate-".concat(t),
           justify: d.A.Justify.BETWEEN,
-          children: [(0, r.jsx)("span", {
+          children: [(0, n.jsx)("span", {
             children: "Bitrate:"
-          }), (0, r.jsxs)("span", {
-            children: [n.toFixed(2), " Kbps"]
+          }), (0, n.jsxs)("span", {
+            children: [r.toFixed(2), " Kbps"]
           })]
-        }), l = (0, r.jsxs)(d.A, {
+        }), l = (0, n.jsxs)(d.A, {
           id: "lost-".concat(t),
           justify: d.A.Justify.BETWEEN,
-          children: [(0, r.jsx)("span", {
+          children: [(0, n.jsx)("span", {
             children: "Packet Loss:"
-          }), (0, r.jsxs)("span", {
+          }), (0, n.jsxs)("span", {
             children: [a.toFixed(0), "%"]
           })]
-        }), (0, r.jsx)(v.A, {
+        }), (0, n.jsx)(v.A, {
           label: t,
           valueRendered: [i, l],
           children: t
         }, t)
       });
-    return (0, r.jsxs)(o.BJc, {
+    return (0, n.jsxs)(o.BJc, {
       className: x._8,
-      children: [(0, r.jsx)(o.Heading, {
+      children: [(0, n.jsx)(o.Heading, {
         variant: "heading-md/medium",
         children: E.intl.string(E.t.wU9IN2) + (null != a ? " - " + a : "")
-      }), (0, f.C6)(u), 0 === A.length ? null : (0, r.jsx)(o.cGx, {
+      }), (0, f.C6)(u), 0 === A.length ? null : (0, n.jsx)(o.cGx, {
         className: D.SX
       }), (0, f.C6)(A)]
     })
@@ -122,9 +122,9 @@ class R extends Chunk64700.PureComponent {
 let F = Chunk311907.Ay.connectStores([Chunk412780.Ay, Chunk383501.A, Chunk351906.A, Chunk162605.A], e => {
   var t;
   let {
-    context: n,
-    index: r
-  } = e, a = u.Ay.getAllStats(n)[r], i = n === C.x.STREAM ? Object.values(p.A.getRTCConnections()).find(e => e.getMediaEngineConnectionId() === a.mediaEngineConnectionId) : null, l = null != (t = null == i ? true : i.hostname) ? t : "";
+    context: r,
+    index: n
+  } = e, a = u.Ay.getAllStats(r)[n], i = r === C.x.STREAM ? Object.values(p.A.getRTCConnections()).find(e => e.getMediaEngineConnectionId() === a.mediaEngineConnectionId) : null, l = null != (t = null == i ? true : i.hostname) ? t : "";
   return {
     hidePersonalInformation: y.A.hidePersonalInformation,
     transport: null != a ? a.transport : null,

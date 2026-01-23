@@ -33,7 +33,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,12 +57,12 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = new Chunk626584.A("AuthenticationActionCreators"),
+let S = new Chunk626584.A("AuthenticationActionCreators"),
   T = 5e3,
   C = null;
 var N = function(e) {
@@ -70,17 +70,17 @@ var N = function(e) {
 }({});
 
 function R(e) {
-  let t = A({
+  let t = v({
     type: "LOGOUT"
   }, e);
   l.h.dispatch(t).catch(e => {
     var t;
-    throw I.error("Error while dispatching LOGOUT", e), null == (t = window.DiscordErrors) || t.softCrash(e), e
+    throw S.error("Error while dispatching LOGOUT", e), null == (t = window.DiscordErrors) || t.softCrash(e), e
   })
 }
 
 function w(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : b.BVt.DEFAULT_LOGGED_OUT;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : y.BVt.DEFAULT_LOGGED_OUT;
   if (R(), null == t) return;
   let n = (0, f.Y)();
   null == n ? (0, p.pX)(t, {
@@ -114,8 +114,8 @@ let P = {
     return l.h.dispatch({
       type: "LOGIN",
       isPasswordAttempt: true
-    }), g.A.post(S(A({
-      url: b.Rsh.LOGIN,
+    }), g.A.post(I(v({
+      url: y.Rsh.LOGIN,
       body: {
         login: t,
         password: n,
@@ -177,19 +177,19 @@ let P = {
         suspendedUserToken: null == (a = e.body) ? true : a.suspended_user_token
       }), s;
       let o = null == (i = e.body) ? true : i.code;
-      throw o === b.t02.ACCOUNT_SCHEDULED_FOR_DELETION && null != n && "" !== n ? l.h.dispatch({
+      throw o === y.t02.ACCOUNT_SCHEDULED_FOR_DELETION && null != n && "" !== n ? l.h.dispatch({
         type: "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION",
         credentials: {
           login: t,
           password: n
         }
-      }) : o === b.t02.ACCOUNT_DISABLED && null != n && "" !== n ? l.h.dispatch({
+      }) : o === y.t02.ACCOUNT_DISABLED && null != n && "" !== n ? l.h.dispatch({
         type: "LOGIN_ACCOUNT_DISABLED",
         credentials: {
           login: t,
           password: n
         }
-      }) : o === b.t02.PHONE_VERIFICATION_REQUIRED ? l.h.dispatch({
+      }) : o === y.t02.PHONE_VERIFICATION_REQUIRED ? l.h.dispatch({
         type: "LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED",
         credentials: {
           login: t,
@@ -212,7 +212,7 @@ let P = {
       loginInstanceId: c
     } = e;
     return g.A.post({
-      url: b.Rsh.LOGIN_MFA(o),
+      url: y.Rsh.LOGIN_MFA(o),
       body: {
         code: t,
         ticket: n,
@@ -237,7 +237,7 @@ let P = {
         type: "LOGIN_SUSPENDED_USER",
         suspendedUserToken: e.body.suspended_user_token
       });
-      if ((null == (t = e.body) ? true : t.code) === b.t02.MFA_INVALID_CODE) throw Error(e.body.message);
+      if ((null == (t = e.body) ? true : t.code) === y.t02.MFA_INVALID_CODE) throw Error(e.body.message);
       throw e
     })
   },
@@ -276,7 +276,7 @@ let P = {
       giftCodeSKUId: a
     } = e;
     return g.A.post({
-      url: b.Rsh.WEBAUTHN_CONDITIONAL_UI_LOGIN,
+      url: y.Rsh.WEBAUTHN_CONDITIONAL_UI_LOGIN,
       body: {
         credential: n,
         ticket: t,
@@ -334,7 +334,7 @@ let P = {
     });
     try {
       let t = (await g.A.post({
-        url: b.Rsh.ONE_TIME_LOGIN,
+        url: y.Rsh.ONE_TIME_LOGIN,
         body: {
           ticket: e
         },
@@ -369,15 +369,15 @@ let P = {
   },
   logout(e) {
     var t;
-    let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : b.BVt.DEFAULT_LOGGED_OUT,
+    let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : y.BVt.DEFAULT_LOGGED_OUT,
       r = arguments.length > 2 ? arguments[2] : true;
-    return g.A.post(S(A({
-      url: b.Rsh.LOGOUT,
+    return g.A.post(I(v({
+      url: y.Rsh.LOGOUT,
       body: {
-        provider: (0, y.oH)(),
-        token: o.w.get(b.Xlh),
-        voip_provider: y.vz,
-        voip_token: o.w.get(b.Ahp)
+        provider: (0, b.oH)(),
+        token: o.w.get(y.Xlh),
+        voip_provider: b.vz,
+        voip_token: o.w.get(y.Ahp)
       },
       oldFormErrors: true,
       trackedActionData: {
@@ -399,7 +399,7 @@ let P = {
   switchAccountToken(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
       n = h.default.getToken();
-    return I.log("Switching accounts", {
+    return S.log("Switching accounts", {
       wasLoggedIn: null != n,
       tokenHasChanged: e !== n
     }), R({
@@ -407,22 +407,22 @@ let P = {
       goHomeAfterSwitching: t
     }), this.loginToken(e, true).then(() => {
       let t = e === h.default.getToken();
-      return I.log("Switched accounts finished", {
+      return S.log("Switched accounts finished", {
         isCorrectToken: t
       }), t
     })
   },
   verifySSOToken(e) {
-    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : b.BVt.DEFAULT_LOGGED_OUT;
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : y.BVt.DEFAULT_LOGGED_OUT;
     return s.Bo.get({
-      url: b.Rsh.ME,
+      url: y.Rsh.ME,
       oldFormErrors: true,
       rejectWithError: true
     }).catch(() => w(e, t))
   },
   async verify(e) {
     let t = await g.A.post({
-      url: b.Rsh.VERIFY,
+      url: y.Rsh.VERIFY,
       body: {
         token: e
       },
@@ -437,7 +437,7 @@ let P = {
     }), t.body.user_id
   },
   authorizePayment: e => g.A.post({
-    url: b.Rsh.AUTHORIZE_PAYMENT,
+    url: y.Rsh.AUTHORIZE_PAYMENT,
     body: {
       token: e
     },
@@ -447,7 +447,7 @@ let P = {
     rejectWithError: true
   }),
   authorizeIPAddress: e => g.A.post({
-    url: b.Rsh.AUTHORIZE_IP,
+    url: y.Rsh.AUTHORIZE_IP,
     body: {
       token: e
     },
@@ -457,7 +457,7 @@ let P = {
     rejectWithError: true
   }),
   verifyResend: () => g.A.post({
-    url: b.Rsh.VERIFY_RESEND,
+    url: y.Rsh.VERIFY_RESEND,
     oldFormErrors: true,
     trackedActionData: {
       event: i.NetworkActionNames.USER_VERIFY_RESEND
@@ -473,11 +473,11 @@ let P = {
         password: t,
         source: n
       },
-      a = o.w.get(b.Xlh),
-      s = (0, y.oH)();
+      a = o.w.get(y.Xlh),
+      s = (0, b.oH)();
     null != s && null != a && (r.push_provider = s, r.push_token = a);
-    let u = o.w.get(b.Ahp);
-    null != y.vz && null != u && (r.push_voip_provider = y.vz, r.push_voip_token = u);
+    let u = o.w.get(y.Ahp);
+    null != b.vz && null != u && (r.push_voip_provider = b.vz, r.push_voip_token = u);
     try {
       let {
         body: {
@@ -490,7 +490,7 @@ let P = {
           totp: l
         }
       } = await g.A.post({
-        url: b.Rsh.RESET_PASSWORD,
+        url: y.Rsh.RESET_PASSWORD,
         body: r,
         oldFormErrors: true,
         trackedActionData: {
@@ -527,7 +527,7 @@ let P = {
     return l.h.dispatch({
       type: "LOGIN_MFA"
     }), (await g.A.post({
-      url: b.Rsh.RESET_PASSWORD,
+      url: y.Rsh.RESET_PASSWORD,
       body: {
         code: n,
         ticket: r,
@@ -552,7 +552,7 @@ let P = {
     });
     try {
       let t = await g.A.post({
-        url: b.Rsh.FORGOT_PASSWORD,
+        url: y.Rsh.FORGOT_PASSWORD,
         body: {
           login: e
         },
@@ -567,7 +567,7 @@ let P = {
       }), t.body.method
     } catch (n) {
       let t = new c.Wl(n);
-      if (t.code === b.t02.PHONE_VERIFICATION_REQUIRED) return l.h.dispatch({
+      if (t.code === y.t02.PHONE_VERIFICATION_REQUIRED) return l.h.dispatch({
         type: "LOGIN_PASSWORD_RECOVERY_PHONE_VERIFICATION",
         credentials: {
           login: e
@@ -597,7 +597,7 @@ let P = {
       consentRequired: true
     })
   }, T), C = s.Bo.get({
-    url: b.Rsh.AUTH_LOCATION_METADATA,
+    url: y.Rsh.AUTH_LOCATION_METADATA,
     retries: 2,
     oldFormErrors: true,
     rejectWithError: true

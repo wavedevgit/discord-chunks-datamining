@@ -2,7 +2,7 @@
 /** chunk id: 593100, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 }), require("./896048.js");
 var r, i, Chunk615300 = require("./615300.js");
 
@@ -27,7 +27,7 @@ function a(e) {
   }
   return e
 }
-class c {
+class o {
   start() {
     return new Promise(e => {
       this.animation.start(() => {
@@ -42,7 +42,7 @@ class c {
     s(this, "animation", true), this.animation = e
   }
 }
-class o {
+class c {
   _map(e) {
     return this.animations.map(e)
   }
@@ -72,9 +72,9 @@ class d {
 }
 
 function u(e, t, n) {
-  return new c(n(e, a({}, t)))
+  return new o(n(e, a({}, t)))
 }
-let f = (r = a({}, Chunk615300.A), i = i = {
+let g = (r = a({}, Chunk615300.A), i = i = {
   timing: function(e, t) {
     return u(e, t, l.A.timing)
   },
@@ -82,7 +82,7 @@ let f = (r = a({}, Chunk615300.A), i = i = {
     return u(e, t, l.A.spring)
   },
   parallel: function(e) {
-    return new o(e)
+    return new c(e)
   },
   sequence: function(e) {
     return new d(e)

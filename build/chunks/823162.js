@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 823162, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => z
+  A: () => W
 }), require("./747238.js"), require("./812715.js"), require("./667532.js");
 var Chunk989349 = require("./989349.js"),
   i = require.n(Chunk989349),
@@ -38,16 +38,16 @@ let x = [],
   R = /\|\|([\s\S]+?)\|\|/g;
 
 function D(e, t, n, r) {
-  let l = b.A.getGuild(n),
+  let l = _.A.getGuild(n),
     a = e.replace(R, j.intl.string(j.t["F+x38C"])).replace(/<@!?(\d+)>/g, (e, t) => {
       var r;
       let i = v.default.getUser(t);
-      return null == i ? e : null != (r = g.Ay.getNick(n, i.id)) ? r : S.Ay.getName(i)
+      return null == i ? e : null != (r = m.Ay.getNick(n, i.id)) ? r : S.Ay.getName(i)
     }).replace(/<@&?(\d+)>/g, (e, t) => {
-      let n = null != l ? m.A.getRole(l.id, t) : null;
+      let n = null != l ? A.A.getRole(l.id, t) : null;
       return null != n && null != n.name ? n.name : j.intl.string(j.t.dRcLA2)
     }).replace(/<#(\d+)>/g, (e, t) => {
-      let n = A.A.getChannel(t);
+      let n = f.A.getChannel(t);
       return null == n ? e : (0, o.m1)(n, v.default, O.A)
     }).replace(/<a?:(\w+):(\d+)>/g, (e, t) => "".concat(j.intl.string(j.t.sMOuuS), " ").concat(t)).replace(/<\/([^\s]+?):(\d+)>/g, (e, t) => "/".concat(t)).replace(/<t:(\d+):([A-Z]|[a-z])>/g, (e, t, n) => {
       let r = c.kx[n],
@@ -106,7 +106,7 @@ function B(e) {
   let {
     message: i,
     channel: l
-  } = e, a = i.type === T.lAJ.REPLY ? u.A.getMessageByReference(i.messageReference) : null, s = (null == a ? true : a.state) === u.a.LOADED ? null == a || null == (r = a.message) ? true : r.author : null, o = null != s ? null != (t = g.Ay.getNick(l.guild_id, null == s ? true : s.id)) ? t : S.Ay.getName(s) : null, c = l.getGuildId(), d = null != (n = g.Ay.getNick(c, i.author.id)) ? n : S.Ay.getName(i.author);
+  } = e, a = i.type === T.lAJ.REPLY ? u.A.getMessageByReference(i.messageReference) : null, s = (null == a ? true : a.state) === u.a.LOADED ? null == a || null == (r = a.message) ? true : r.author : null, o = null != s ? null != (t = m.Ay.getNick(l.guild_id, null == s ? true : s.id)) ? t : S.Ay.getName(s) : null, c = l.getGuildId(), d = null != (n = m.Ay.getNick(c, i.author.id)) ? n : S.Ay.getName(i.author);
   return U(D(i.content, d, c, o), true, l.id, i.id), true
 }
 
@@ -117,23 +117,23 @@ function H(e) {
     message: o,
     optimistic: c
   } = e;
-  if (c || _.A.isSelfDeaf()) returnfalse;
-  let u = A.A.getChannel(s);
+  if (c || b.A.isSelfDeaf()) returnfalse;
+  let u = f.A.getChannel(s);
   if (null == u) returnfalse;
   let d = y.A.getChannelId(),
-    m = h.Ay.getCurrentSidebarChannelId(d),
-    b = s === d || s === m,
-    v = p.on.getSetting() && o.tts && b,
+    A = g.Ay.getCurrentSidebarChannelId(d),
+    _ = s === d || s === A,
+    v = p.on.getSetting() && o.tts && _,
     C = E.A.getTTSType(),
-    N = (null == (t = o.author) ? true : t.id) !== f.default.getId() && (C === T.aVn.ALL_CHANNELS || C === T.aVn.SELECTED_CHANNEL && b);
+    N = (null == (t = o.author) ? true : t.id) !== h.default.getId() && (C === T.aVn.ALL_CHANNELS || C === T.aVn.SELECTED_CHANNEL && _);
   if ((v || N) && !O.A.isBlockedOrIgnoredForMessage(o)) {
     if (x.indexOf(o.id) >= 0) returnfalse;
     x.unshift(o.id) > 10 && x.pop();
     let e = u.getGuildId();
     if (null != e && I.Ay.getMutedChannels(e).has(s)) returnfalse;
-    let t = null != (n = null != (r = g.Ay.getNick(e, null == (l = o.author) ? true : l.id)) ? r : S.Ay.getName(o.author)) ? n : "",
+    let t = null != (n = null != (r = m.Ay.getNick(e, null == (l = o.author) ? true : l.id)) ? r : S.Ay.getName(o.author)) ? n : "",
       c = o.type === T.lAJ.REPLY ? null == (a = o.referenced_message) ? true : a.author : null,
-      d = null != c ? null != (i = g.Ay.getNick(e, null == c ? true : c.id)) ? i : S.Ay.getName(c) : null;
+      d = null != c ? null != (i = m.Ay.getNick(e, null == c ? true : c.id)) ? i : S.Ay.getName(c) : null;
     U(D(o.content, t, e, d), false, u.id, o.id, 200)
   }
   returnfalse
@@ -148,7 +148,7 @@ function F(e) {
 }
 
 function Y() {
-  _.A.isSelfDeaf() && s._X()
+  b.A.isSelfDeaf() && s._X()
 }
 
 function K(e) {
@@ -157,7 +157,7 @@ function K(e) {
   } = e, n = N.A.currentMessage;
   null != n && n.channelId !== t && (0, C.pr)()
 }
-let z = {
+let W = {
   init() {
     l.h.subscribe("SPEAK_TEXT", G), l.h.subscribe("SPEAK_MESSAGE", B), l.h.subscribe("STOP_SPEAKING", V), l.h.subscribe("MESSAGE_CREATE", H), l.h.subscribe("MESSAGE_DELETE", F), l.h.subscribe("AUDIO_TOGGLE_SELF_DEAF", Y), l.h.subscribe("CHANNEL_SELECT", K), l.h.subscribe("USER_SETTINGS_PROTO_UPDATE", M), (0, a.I)(M)
   }

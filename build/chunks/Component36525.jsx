@@ -24,19 +24,19 @@ let f = function(e) {
     onSaveText: m,
     onResetText: g,
     onSaveButtonColor: E,
-    disabled: b,
-    saveButtonTooltip: y
-  } = e, O = i.useRef(null), [A, v] = i.useState(false);
+    disabled: y,
+    saveButtonTooltip: b
+  } = e, O = i.useRef(null), [v, A] = i.useState(false);
   return i.useEffect(() => {
     function e() {
-      v(true), setTimeout(() => v(false), 1e3)
+      A(true), setTimeout(() => A(false), 1e3)
     }
     return l._.subscribe(c.jej.EMPHASIZE_NOTICE, e), () => {
       l._.unsubscribe(c.jej.EMPHASIZE_NOTICE, e)
     }
   }, []), (0, r.jsx)("div", {
     className: d.kL,
-    "data-emphasized": A,
+    "data-emphasized": v,
     children: (0, r.jsx)("div", {
       className: d.nP,
       ref: O,
@@ -60,12 +60,12 @@ let f = function(e) {
               children: null != g ? g : u.intl.string(u.t.yBZMsQ)
             })
           }), null != h ? (0, r.jsx)(a.m, {
-            text: y,
+            text: b,
             children: (0, r.jsx)(s.$n, {
               size: s.$n.Sizes.SMALL,
               color: null != E ? E : s.$n.Colors.GREEN,
               submitting: p,
-              disabled: b,
+              disabled: y,
               onClick: h,
               children: null != m ? m : u.intl.string(u.t.K344S7)
             })

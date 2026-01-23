@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ay: () => C,
-  LP: () => I,
+  LP: () => S,
   nK: () => T
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -26,28 +26,28 @@ var Chunk627968 = require("./627968.js"),
   Chunk193291 = require("./193291.js");
 let O = 5;
 
-function A(e) {
+function v(e) {
   let {
     listType: t,
     numberOfUsers: n
   } = e, i = "blocked" === t;
   return (0, r.jsxs)("div", {
-    className: y.wx,
+    className: b.wx,
     children: [(0, r.jsx)("div", {
-      className: y.zc,
+      className: b.zc,
       children: i ? (0, r.jsx)(l.KTN, {}) : (0, r.jsx)(l.G3N, {})
     }), (0, r.jsxs)("div", {
-      className: y.Qq,
+      className: b.Qq,
       children: [(0, r.jsx)(l.Text, {
         variant: "text-md/semibold",
         color: "interactive-text-active",
-        children: b.intl.string(i ? b.t.PFOUKW : b.t["93ZDWE"])
+        children: y.intl.string(i ? y.t.PFOUKW : y.t["93ZDWE"])
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/medium",
         color: "text-default",
-        children: i ? b.intl.format(b.t["r91W/h"], {
+        children: i ? y.intl.format(y.t["r91W/h"], {
           numberOfBlockedUsers: n
-        }) : b.intl.format(b.t.rXUeOl, {
+        }) : y.intl.format(y.t.rXUeOl, {
           numberOfIgnoredUsers: n
         })
       })]
@@ -55,7 +55,7 @@ function A(e) {
   })
 }
 
-function v(e) {
+function A(e) {
   var t;
   let {
     userId: n,
@@ -68,16 +68,16 @@ function v(e) {
     })
   }, [_, n]);
   return null == h ? null : (0, r.jsxs)("div", {
-    className: s()(y.nM, {
-      [y.fW]: a
+    className: s()(b.nM, {
+      [b.fW]: a
     }),
     children: [(0, r.jsxs)("div", {
-      className: y.eF,
+      className: b.eF,
       children: [(0, r.jsx)(u.A, {
         user: h,
         size: l._3J.SIZE_40
       }), (0, r.jsxs)("div", {
-        className: y.Qq,
+        className: b.Qq,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-md/semibold",
           color: "text-strong",
@@ -90,14 +90,14 @@ function v(e) {
       })]
     }), (0, r.jsx)(l.Button, {
       variant: "secondary",
-      text: b.intl.string(_ ? b.t.XyHpKH : b.t["8wXU9B"]),
+      text: y.intl.string(_ ? y.t.XyHpKH : y.t["8wXU9B"]),
       onClick: E,
       loading: m
     })]
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     setting: t,
     userIds: n,
@@ -108,25 +108,25 @@ function S(e) {
   return (0, r.jsx)(h.h, {
     setting: t,
     children: (0, r.jsxs)("div", {
-      className: y.Nr,
-      children: [(0, r.jsx)(A, {
+      className: b.Nr,
+      children: [(0, r.jsx)(v, {
         listType: a,
         numberOfUsers: n.length
       }), (0, r.jsx)("div", {
-        className: y.jS,
-        children: n.slice(0, s).map((e, t) => (0, r.jsx)(v, {
+        className: b.jS,
+        children: n.slice(0, s).map((e, t) => (0, r.jsx)(A, {
           userId: e,
           last: t === n.length - 1
         }, e))
       }), s < n.length ? (0, r.jsx)("div", {
-        className: y.vM,
+        className: b.vM,
         children: (0, r.jsx)(l.DUT, {
           onClick: c,
-          className: y.Qf,
+          className: b.Qf,
           children: (0, r.jsx)(l.Text, {
             variant: "text-sm/semibold",
             color: "text-default",
-            children: b.intl.format(b.t.jULEDr, {
+            children: y.intl.format(y.t.jULEDr, {
               numberOfUsers: s + O < n.length ? O : n.length - s
             })
           })
@@ -136,9 +136,9 @@ function S(e) {
   })
 }
 
-function I() {
+function S() {
   let e = (0, o.yK)([f.A], () => f.A.getBlockedIDs());
-  return (0, r.jsx)(S, {
+  return (0, r.jsx)(I, {
     setting: g.H.BLOCKED_USERS,
     userIds: e,
     listType: "blocked"
@@ -147,7 +147,7 @@ function I() {
 
 function T() {
   let e = (0, o.yK)([f.A], () => f.A.getIgnoredIDs());
-  return (0, r.jsx)(S, {
+  return (0, r.jsx)(I, {
     setting: g.H.IGNORED_USERS,
     userIds: e,
     listType: "ignored"
@@ -160,10 +160,10 @@ function C() {
     scrollPosition: m.d1.RESTRICTED_ACCOUNTS,
     scrollHighlightDelay: 900,
     children: [(0, r.jsx)(h._, {
-      header: b.intl.string(b.t["3wRort"]),
-      description: b.intl.format(b.t["0aNQo9"], {
+      header: y.intl.string(y.t["3wRort"]),
+      description: y.intl.format(y.t["0aNQo9"], {
         helpArticle: _.A.getArticleURL(E.MVz.STEALTH_REMEDIATION_FEATURE_GUIDE)
       })
-    }), (0, r.jsx)(I, {}), (0, r.jsx)(T, {})]
+    }), (0, r.jsx)(S, {}), (0, r.jsx)(T, {})]
   })
 }

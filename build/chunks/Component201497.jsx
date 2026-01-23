@@ -50,28 +50,28 @@ function p(e) {
   return d("Thing", e)
 }
 
-function f(e) {
+function h(e) {
   return d("Product", e)
 }
-f.Image = function(e) {
+h.Image = function(e) {
   if (null == e) return null;
   let t = e.filter(e => null != e && "" !== e);
   return 0 === t.length ? null : 1 === t.length ? t[0] : t
 };
-var h = ((i = h || {}).DAMAGED = "http://schema.org/DamagedCondition", i.NEW = "http://schema.org/NewCondition", i.REFURBISHED = "http://schema.org/RefurbishedCondition", i.USED = "http://schema.org/UsedCondition", i),
-  A = ((l = A || {}).DISCONTINUED = "http://schema.org/Discontinued", l.IN_STOCK = "http://schema.org/InStock", l.IN_STORE_ONLY = "http://schema.org/InStoreOnly", l.LIMITED_AVAILABILITY = "http://schema.org/LimitedAvailability", l.ONLINE_ONLY = "http://schema.org/OnlineOnly", l.OUT_OF_STOCK = "http://schema.org/OutOfStock", l.PREORDER = "http://schema.org/PreOrder", l.PRESALE = "http://schema.org/PreSale", l.SOLD_OUT = "http://schema.org/SoldOut", l);
+var g = ((i = g || {}).DAMAGED = "http://schema.org/DamagedCondition", i.NEW = "http://schema.org/NewCondition", i.REFURBISHED = "http://schema.org/RefurbishedCondition", i.USED = "http://schema.org/UsedCondition", i),
+  f = ((l = f || {}).DISCONTINUED = "http://schema.org/Discontinued", l.IN_STOCK = "http://schema.org/InStock", l.IN_STORE_ONLY = "http://schema.org/InStoreOnly", l.LIMITED_AVAILABILITY = "http://schema.org/LimitedAvailability", l.ONLINE_ONLY = "http://schema.org/OnlineOnly", l.OUT_OF_STOCK = "http://schema.org/OutOfStock", l.PREORDER = "http://schema.org/PreOrder", l.PRESALE = "http://schema.org/PreSale", l.SOLD_OUT = "http://schema.org/SoldOut", l);
 
-function g(e) {
+function m(e) {
   return d("Offer", e)
 }
-g.ItemConditions = h, g.ItemAvailability = A;
-var m = ((a = m || {}).YEARLY = "ANN", a.MONTHLY = "MON", a);
+m.ItemConditions = g, m.ItemAvailability = f;
+var A = ((a = A || {}).YEARLY = "ANN", a.MONTHLY = "MON", a);
 
-function b(e) {
+function _(e) {
   return d("QuantitativeValue", e)
 }
-b.UnitCodes = m;
-class _ extends(r = Chunk64700.Component) {
+_.UnitCodes = A;
+class b extends(r = Chunk64700.Component) {
   render() {
     let {
       debug: e,
@@ -85,19 +85,19 @@ class _ extends(r = Chunk64700.Component) {
     })
   }
 }
-c(_, "Thing", p), c(_, "Brand", p), c(_, "Person", function(e) {
+c(b, "Thing", p), c(b, "Brand", p), c(b, "Person", function(e) {
   return d("Person", e)
-}), c(_, "Organization", function(e) {
+}), c(b, "Organization", function(e) {
   return d("Organization", e)
-}), c(_, "ItemPage", function(e) {
+}), c(b, "ItemPage", function(e) {
   return d("ItemPage", e)
-}), c(_, "Product", f), c(_, "Offer", g), c(_, "Rating", function(e) {
+}), c(b, "Product", h), c(b, "Offer", m), c(b, "Rating", function(e) {
   return d("Rating", e)
-}), c(_, "AggregateRating", function(e) {
+}), c(b, "AggregateRating", function(e) {
   return d("AggregateRating", e)
-}), c(_, "AggregateOffer", function(e) {
+}), c(b, "AggregateOffer", function(e) {
   return d("AggregateOffer", e)
-}), c(_, "QuantitativeValue", b), c(_, "UnitPriceSpecification", function(e) {
+}), c(b, "QuantitativeValue", _), c(b, "UnitPriceSpecification", function(e) {
   return d("UnitPriceSpecification", e)
 });
-let E = _
+let E = b

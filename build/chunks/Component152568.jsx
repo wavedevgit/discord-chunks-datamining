@@ -1,8 +1,8 @@
 /** Chunk was on 59275 **/
-/** chunk id: 152568, original params: e,t,l (module,exports,require) **/
+/** chunk id: 152568, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => _
+  A: () => O
 }), require("./896048.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,17 +26,17 @@ var Chunk627968 = require("./627968.js"),
   Chunk818348 = require("./818348.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk201073 = require("./201073.js");
-let _ = e => {
-  var t, l, s;
+let O = e => {
+  var t, n, s;
   let {
-    wideBannerBlock: _,
+    wideBannerBlock: O,
     tab: y
-  } = e, j = p.A.getCategoryByStoreListingId(_.categoryStoreListingId), L = r.useRef(null), T = r.useRef(null), [I, N] = r.useState(), [k, R] = r.useState(false);
-  r.useEffect(() => {
-    let e = T.current;
+  } = e, j = _.A.getCategoryByStoreListingId(O.categoryStoreListingId), T = l.useRef(null), L = l.useRef(null), [I, k] = l.useState(), [N, R] = l.useState(false);
+  l.useEffect(() => {
+    let e = L.current;
     if (null == e) return;
     let t = () => {
-      e.naturalWidth > 0 && e.naturalHeight > 0 && N(1080 * (e.naturalHeight / e.naturalWidth))
+      e.naturalWidth > 0 && e.naturalHeight > 0 && k(1080 * (e.naturalHeight / e.naturalWidth))
     };
     return e.complete ? t() : e.onload = t, () => {
       e.onload = null
@@ -44,27 +44,27 @@ let _ = e => {
   }, []);
   let P = null != (t = null == j ? true : j.skuId) ? t : "",
     {
-      handleCardVisibilityChange: D
-    } = (0, h.Z)(P, "home", "marketing wide banner"),
+      handleCardVisibilityChange: B
+    } = (0, b.Z)(P, "home", "marketing wide banner"),
     w = (0, m.uM)(),
     {
-      bannerURL: B
-    } = (0, E.w$)(_),
-    M = y === v.G2.ORBS,
-    H = null != _.ctaRoute && "" !== _.ctaRoute,
-    G = true !== _.disableCta && (null != _.ctaText && "" !== _.ctaText || H),
-    U = null != _.logoURL && "" !== _.logoURL,
-    F = r.useCallback(() => {
-      if (R(true), _.isDismissible) {
+      bannerURL: D
+    } = (0, h.w$)(O),
+    M = y === E.G2.ORBS,
+    H = null != O.ctaRoute && "" !== O.ctaRoute,
+    G = true !== O.disableCta && (null != O.ctaText && "" !== O.ctaText || H),
+    U = null != O.logoURL && "" !== O.logoURL,
+    F = l.useCallback(() => {
+      if (R(true), O.isDismissible) {
         var e;
-        let t = null != (e = _.dismissibleContentVersion) ? e : 0;
+        let t = null != (e = O.dismissibleContentVersion) ? e : 0;
         (0, u.$l)(i.M.COLLECTIBLES_SHOP_WIDE_BANNER, t, {
-          dismissAction: x.i.USER_DISMISS
+          dismissAction: C.i.USER_DISMISS
         })
       }
-    }, [_.isDismissible, _.dismissibleContentVersion]),
-    z = r.useCallback(e => {
-      b.default.track(A.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+    }, [O.isDismissible, O.dismissibleContentVersion]),
+    z = l.useCallback(e => {
+      f.default.track(v.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == w ? true : w.sessionId,
         sku_id: P,
         page_type: y,
@@ -75,109 +75,109 @@ let _ = e => {
         cta_name: e
       })
     }, [w, P, y]),
-    V = r.useCallback(function() {
+    V = l.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null;
-      if (z(e), null != _.ctaRoute && "" !== _.ctaRoute) {
-        let e = _.ctaRoute;
+      if (z(e), null != O.ctaRoute && "" !== O.ctaRoute) {
+        let e = O.ctaRoute;
         if (e.includes("game-shop")) {
           let t = e.match(/\/channels\/([0-9]+)\/game-shop\/([0-9]+)/);
           if (null != t) {
             let e = t[1],
-              l = parseInt(t[2], 10);
-            (0, f.default)({
+              n = parseInt(t[2], 10);
+            (0, g.default)({
               guildId: e,
-              pageIndex: l
+              pageIndex: n
             })
           }
         } else(0, d.pX)(e)
       }
-    }, [_.ctaRoute, z]);
-  if (null == B || k) return null;
-  let K = a()(O.nM, O.Tq, O.TS, O.YB, {
-      [O._1]: M,
-      [O.vb]: H
+    }, [O.ctaRoute, z]);
+  if (null == D || N) return null;
+  let K = a()(S.nM, S.Tq, S.TS, S.YB, {
+      [S._1]: M,
+      [S.vb]: H
     }),
-    W = (0, n.jsxs)(n.Fragment, {
-      children: [_.isDismissible && (0, n.jsx)("div", {
-        className: O.Mh,
-        children: (0, n.jsx)(c.JnF, {
+    W = (0, r.jsxs)(r.Fragment, {
+      children: [O.isDismissible && (0, r.jsx)("div", {
+        className: S.Mh,
+        children: (0, r.jsx)(c.JnF, {
           size: "sm",
           onClick: e => {
             e.stopPropagation(), F()
           },
-          "aria-label": C.intl.string(C.t.WAI6xu)
+          "aria-label": x.intl.string(x.t.WAI6xu)
         })
-      }), (0, n.jsx)("div", {
-        className: a()(O.zK, {
-          [O._1]: M
+      }), (0, r.jsx)("div", {
+        className: a()(S.zK, {
+          [S._1]: M
         }),
         style: null != I ? {
           height: "".concat(I, "px")
         } : true,
-        children: (0, n.jsx)("img", {
-          ref: T,
-          src: B,
-          alt: _.title,
-          className: a()(O.LN, {
-            [O.d5]: M
+        children: (0, r.jsx)("img", {
+          ref: L,
+          src: D,
+          alt: O.title,
+          className: a()(S.LN, {
+            [S.d5]: M
           })
         })
-      }), (0, n.jsx)("div", {
-        className: a()(O.Ep, {
-          [O.Qq]: G
+      }), (0, r.jsx)("div", {
+        className: a()(S.Ep, {
+          [S.Qq]: G
         }),
         style: {
           maxHeight: null != I ? "".concat(I, "px") : "auto"
         },
-        children: (0, n.jsxs)("div", {
-          className: O.E8,
-          children: [(0, n.jsx)(c.Heading, {
+        children: (0, r.jsxs)("div", {
+          className: S.E8,
+          children: [(0, r.jsx)(c.Heading, {
             style: {
-              color: null != (l = _.bannerTextColor) ? l : "var(--text-strong)"
+              color: null != (n = O.bannerTextColor) ? n : "var(--text-strong)"
             },
-            className: M ? O.O2 : true,
+            className: M ? S.O2 : true,
             variant: "heading-xl/bold",
-            children: _.title
-          }), (0, n.jsx)(c.Text, {
+            children: O.title
+          }), (0, r.jsx)(c.Text, {
             style: {
               color: "var(--text-muted)"
             },
             lineClamp: 2,
             variant: M ? "text-md/medium" : "text-sm/medium",
-            children: M ? C.intl.format(C.t.SFFP7K, {
-              helpdeskArticle: g.A.getArticleURL(A.MVz.VIRTUAL_CURRENCY_LEARN_MORE)
-            }) : _.body
-          }), G && (0, n.jsxs)("div", {
-            className: O.nP,
-            children: [(0, n.jsx)(c.Button, {
+            children: M ? x.intl.format(x.t.SFFP7K, {
+              helpdeskArticle: p.A.getArticleURL(v.MVz.VIRTUAL_CURRENCY_LEARN_MORE)
+            }) : O.body
+          }), G && (0, r.jsxs)("div", {
+            className: S.nP,
+            children: [(0, r.jsx)(c.Button, {
               variant: "overlay-primary",
               onClick: e => {
                 var t;
-                e.stopPropagation(), V(null != (t = _.ctaText) ? t : C.intl.string(C.t.jVcuVY))
+                e.stopPropagation(), V(null != (t = O.ctaText) ? t : x.intl.string(x.t.jVcuVY))
               },
-              text: null != (s = _.ctaText) ? s : C.intl.string(C.t.jVcuVY)
-            }), U && (0, n.jsx)("img", {
-              src: _.logoURL,
+              text: null != (s = O.ctaText) ? s : x.intl.string(x.t.jVcuVY)
+            }), U && (0, r.jsx)("img", {
+              src: O.logoURL,
               alt: "",
-              className: O.bU
+              className: S.bU
             })]
           })]
         })
       })]
     });
-  return (0, n.jsx)(c.NPJ, {
-    theme: M ? true : S.NJ.DARK,
-    children: e => (0, n.jsx)(o.L, {
-      innerRef: L,
-      onChange: D,
+  return (0, r.jsx)(c.NPJ, {
+    theme: M ? true : A.NJ.DARK,
+    children: e => (0, r.jsx)(o.L, {
+      innerRef: T,
+      onChange: B,
       threshold: 0,
-      children: H ? (0, n.jsx)(c.DUT, {
-        innerRef: L,
+      children: H ? (0, r.jsx)(c.DUT, {
+        innerRef: T,
         onClick: () => V(null),
         className: a()(e, K),
         children: W
-      }) : (0, n.jsx)("div", {
-        ref: L,
+      }) : (0, r.jsx)("div", {
+        ref: T,
         className: a()(e, K),
         children: W
       })

@@ -2,7 +2,7 @@
 /** chunk id: 633148, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,14 +16,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk659002 = require("./659002.js");
 
-function f(e) {
+function g(e) {
   let {
     channelName: t,
-    guildId: f,
-    tagFilter: g,
-    channel: x
-  } = e, b = (0, o.S4)(x), p = (0, s.AI)(x), j = x.isMediaChannel(), v = r.useCallback(() => {
-    (0, d.zd)(), (0, i.mMO)(async () => {
+    guildId: g,
+    tagFilter: x,
+    channel: f
+  } = e, p = (0, c.S4)(f), b = (0, s.AI)(f), j = f.isMediaChannel(), v = r.useCallback(() => {
+    (0, d.zd)(), (0, a.mMO)(async () => {
       let {
         default: e
       } = await n.e("7937").then(n.bind(n, 420472));
@@ -47,7 +47,7 @@ function f(e) {
           }
           return e
         }({}, t), r = r = {
-          guildId: f
+          guildId: g
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -60,30 +60,30 @@ function f(e) {
         }), n))
       }
     })
-  }, [f]), y = g.size > 0, A = p || b, C = !y && b && !j, O = r.useCallback(() => C ? v() : p ? void c._.dispatch(u.jej.FOCUS_COMPOSER_TITLE) : (0, u.FXj)(), [v, C, p]);
+  }, [g]), _ = x.size > 0, y = b || p, A = !_ && p && !j, C = r.useCallback(() => A ? v() : b ? void o._.dispatch(u.jej.FOCUS_COMPOSER_TITLE) : (0, u.FXj)(), [v, A, b]);
   return (0, l.jsxs)("div", {
     className: h.k,
-    children: [(0, l.jsx)(i.Heading, {
+    children: [(0, l.jsx)(a.Heading, {
       className: h.w,
       variant: "heading-md/semibold",
-      children: y ? m.intl.formatToPlainString(m.t.lvPci0, {
-        numTags: g.size
+      children: _ ? m.intl.formatToPlainString(m.t.lvPci0, {
+        numTags: x.size
       }) : m.intl.string(m.t.PwTMG0)
-    }), (0, l.jsx)(i.Text, {
+    }), (0, l.jsx)(a.Text, {
       color: "text-default",
       variant: "text-sm/normal",
-      children: y ? m.intl.formatToPlainString(m.t.AAeye1, {
-        numTags: g.size
+      children: _ ? m.intl.formatToPlainString(m.t.AAeye1, {
+        numTags: x.size
       }) : m.intl.formatToPlainString(m.t.YtsXFD, {
         channelName: t
       })
-    }), A && (0, l.jsxs)(l.Fragment, {
-      children: [(0, l.jsx)(i.hKd, {
+    }), y && (0, l.jsxs)(l.Fragment, {
+      children: [(0, l.jsx)(a.hKd, {
         size: 16
-      }), (0, l.jsx)(a.$nd, {
-        text: C ? m.intl.string(m.t.DgatTQ) : m.intl.string(m.t.wOKE8I),
+      }), (0, l.jsx)(i.$nd, {
+        text: A ? m.intl.string(m.t.DgatTQ) : m.intl.string(m.t.wOKE8I),
         variant: "secondary",
-        onClick: O
+        onClick: C
       })]
     })]
   })

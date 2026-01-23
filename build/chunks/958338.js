@@ -16,61 +16,61 @@ function u(e) {
   let {
     bump: t,
     bumpMultiple: n,
-    gameIds: s
+    gameIds: o
   } = (0, c.s)();
   ! function(e) {
     let {
       remove: t,
       peekedGameIds: n
-    } = (0, c.s)(), s = r.useMemo(() => {
+    } = (0, c.s)(), o = r.useMemo(() => {
       var t;
       return null != (t = n[e]) ? t : []
     }, [n, e]);
     r.useEffect(() => {
-      let e = s.filter(e => a.A.canFetch(e));
+      let e = o.filter(e => a.A.canFetch(e));
       e.length > 0 && i.A.getDetectableGamesSupplemental(e)
-    }, [s]);
-    let o = (0, l.yK)([a.A], () => s.map(e => a.A.isFetching(e)));
+    }, [o]);
+    let s = (0, l.yK)([a.A], () => o.map(e => a.A.isFetching(e)));
     r.useEffect(() => {
-      for (let n of s) {
+      for (let n of o) {
         let r = !a.A.canFetch(n) && !a.A.isFetching(n),
           l = null != a.A.getCoverImageUrl(n);
         r && !l && t(n, e)
       }
-    }, [s, t, e, o])
+    }, [o, t, e, s])
   }(e);
-  let o = r.useMemo(() => {
+  let s = r.useMemo(() => {
       var t;
-      return null != (t = s[e]) ? t : []
-    }, [s, e]),
+      return null != (t = o[e]) ? t : []
+    }, [o, e]),
     u = r.useCallback(n => {
       t(n, e)
     }, [t, e]),
-    d = (0, l.yK)([a.A], () => o.map(e => a.A.isFetching(e)));
+    d = (0, l.yK)([a.A], () => s.map(e => a.A.isFetching(e)));
   r.useEffect(() => {
-    let t = o.filter(e => {
+    let t = s.filter(e => {
       let t = !a.A.canFetch(e) && !a.A.isFetching(e),
         n = null != a.A.getCoverImageUrl(e);
       return t && !n
     });
     t.length > 0 && n(t, e)
-  }, [o, e, n, d]);
-  let f = r.useMemo(() => o.map(e => ({
+  }, [s, e, n, d]);
+  let f = r.useMemo(() => s.map(e => ({
     applicationId: e
-  })), [o]);
+  })), [s]);
   return {
-    applicationIds: o,
+    applicationIds: s,
     games: f,
     onAddGame: u
   }
 }
 
 function d(e, t) {
-  let [n, i, a, u] = (0, l.yK)([o.A], () => [o.A.suggestedFetchAttempted, o.A.suggestedFetchError, o.A.suggestedGameIds, o.A.suggestedFetchIsLoading]), {
+  let [n, i, a, u] = (0, l.yK)([s.A], () => [s.A.suggestedFetchAttempted, s.A.suggestedFetchError, s.A.suggestedGameIds, s.A.suggestedFetchIsLoading]), {
     onLoad: d
   } = (0, c.s)();
   r.useEffect(() => {
-    !n && e && s.A.fetchSuggestedGames()
+    !n && e && o.A.fetchSuggestedGames()
   }, [n, e]);
   let f = n && !u;
   r.useEffect(() => {

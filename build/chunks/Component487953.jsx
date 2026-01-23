@@ -17,49 +17,49 @@ let h = function(e) {
   var t, n, h;
   let {
     application: m,
-    onSelectApplication: b,
-    showCategory: f = false
-  } = e, g = a.useRef(null), x = null == (n = m.categories) ? true : n[0], [v, j] = a.useState(false), A = a.useCallback(e => {
-    e && j(true)
-  }, []), _ = (0, s.NO)(m), y = a.useCallback(() => {
-    b(m.id)
-  }, [b, m.id]), O = a.useMemo(() => v ? o.Ay.getApplicationIconURL({
+    onSelectApplication: g,
+    showCategory: _ = false
+  } = e, b = l.useRef(null), f = null == (n = m.categories) ? true : n[0], [x, v] = l.useState(false), j = l.useCallback(e => {
+    e && v(true)
+  }, []), A = (0, s.NO)(m), y = l.useCallback(() => {
+    g(m.id)
+  }, [g, m.id]), C = l.useMemo(() => x ? c.Ay.getApplicationIconURL({
     id: m.id,
     icon: m.icon,
     size: 48
-  }) : true, [v, m]), S = f && null != x;
-  return (0, l.jsx)(r.L, {
-    innerRef: g,
-    onChange: A,
-    active: !v,
-    children: (0, l.jsx)("div", {
-      ref: g,
+  }) : true, [x, m]), O = _ && null != f;
+  return (0, r.jsx)(i.L, {
+    innerRef: b,
+    onChange: j,
+    active: !x,
+    children: (0, r.jsx)("div", {
+      ref: b,
       className: p.kL,
-      children: (0, l.jsxs)(c.A, {
+      children: (0, r.jsxs)(o.A, {
         className: p.Nr,
         onClick: y,
         onContextMenu: () => {},
         "aria-label": u.intl.string(u.t.np1Wru),
-        children: [(0, l.jsxs)("div", {
+        children: [(0, r.jsxs)("div", {
           className: p.wx,
-          children: [(0, l.jsx)("div", {
+          children: [(0, r.jsx)("div", {
             style: {
               width: "100%",
               display: "block",
               aspectRatio: 16 / 9
             },
-            children: v ? (0, l.jsx)(d.A, {
+            children: x ? (0, r.jsx)(d.A, {
               application: m,
               bannerType: "card",
-              iconURL: O
+              iconURL: C
             }) : null
-          }), (0, l.jsx)("div", {
+          }), (0, r.jsx)("div", {
             className: p.H,
             style: {
               height: 28
             },
-            children: v ? (0, l.jsx)("img", {
-              src: O,
+            children: x ? (0, r.jsx)("img", {
+              src: C,
               alt: "",
               className: p.my,
               height: 48,
@@ -70,40 +70,40 @@ let h = function(e) {
               }
             }) : null
           })]
-        }), (0, l.jsxs)("div", {
+        }), (0, r.jsxs)("div", {
           className: p.eV,
-          children: [(0, l.jsx)("div", {
+          children: [(0, r.jsx)("div", {
             className: p.gn,
-            children: (0, l.jsx)("div", {
+            children: (0, r.jsx)("div", {
               className: p.DD,
-              children: (0, l.jsx)(i.Heading, {
+              children: (0, r.jsx)(a.Heading, {
                 variant: "heading-md/semibold",
                 color: "text-strong",
                 className: p.JB,
                 children: m.name
               })
             })
-          }), S || _ ? (0, l.jsxs)("div", {
+          }), O || A ? (0, r.jsxs)("div", {
             className: p.op,
-            children: [S ? (0, l.jsx)(i.Text, {
+            children: [O ? (0, r.jsx)(a.Text, {
               className: p.m4,
               variant: "text-xs/medium",
               color: "text-default",
-              children: x.name
-            }) : null, S && _ ? (0, l.jsx)(i.Text, {
+              children: f.name
+            }) : null, O && A ? (0, r.jsx)(a.Text, {
               variant: "text-xs/medium",
               color: "text-subtle",
               children: "•"
-            }) : null, _ ? (0, l.jsx)(i.Text, {
+            }) : null, A ? (0, r.jsx)(a.Text, {
               variant: "text-xs/medium",
               color: "text-subtle",
               children: u.intl.string(u.t["/eVltv"])
             }) : null]
-          }) : null, (0, l.jsx)(i.Text, {
+          }) : null, (0, r.jsx)(a.Text, {
             className: p.h_,
             variant: "text-sm/medium",
             color: "text-default",
-            lineClamp: S || _ ? 2 : 3,
+            lineClamp: O || A ? 2 : 3,
             children: null != (t = null == (h = m.directory_entry) ? true : h.short_description) ? t : m.description
           })]
         })]

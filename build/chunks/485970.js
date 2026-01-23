@@ -14,11 +14,11 @@ var Chunk64700 = require("./64700.js"),
 function u(e, t) {
   var n;
   let u = (0, l.bG)([i.A], () => i.A.getGuild(e)),
-    d = (0, l.bG)([s.A], () => s.A.getStateForGuild(e)),
+    d = (0, l.bG)([a.A], () => a.A.getStateForGuild(e)),
     {
-      spent: f
+      spent: p
     } = (0, o.A)(e),
-    p = r.useMemo(() => {
+    h = r.useMemo(() => {
       if (null == t || t.type !== c.o9.LEVEL || null == d) return [];
       let e = c.y7[t.skuId];
       return null == e ? [] : Object.entries(c.wr).filter(t => {
@@ -27,8 +27,8 @@ function u(e, t) {
       }).map(e => {
         let [t] = e;
         return d.allPowerups[t]
-      }).filter(a.Vq)
+      }).filter(s.Vq)
     }, [t, d]),
-    h = null == p ? true : p.reduce((e, t) => e + t.cost, 0);
-  return Math.max((null != (n = null == u ? true : u.premiumSubscriberCount) ? n : 0) - f + (null != h ? h : 0), 0)
+    f = null == h ? true : h.reduce((e, t) => e + t.cost, 0);
+  return Math.max((null != (n = null == u ? true : u.premiumSubscriberCount) ? n : 0) - p + (null != f ? f : 0), 0)
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 2644 **/
-/** chunk id: 763375, original params: e,t,a (module,exports,require) **/
+/** chunk id: 763375, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => P
+  default: () => j
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -25,146 +25,146 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk588187 = require("./588187.js");
 
-function v(e) {
+function P(e) {
   let {
     sku: t,
-    guildId: a
-  } = e, c = (0, i.h)(t.applicationId), l = n.useMemo(() => (0, m.OY)(a, t), [a, t]);
-  return (0, r.jsxs)("div", {
-    className: h.sq,
-    children: [(0, r.jsxs)("div", {
-      className: h.kx,
-      children: [(0, r.jsx)(s.A, {
+    guildId: r
+  } = e, s = (0, c.h)(t.applicationId), l = o.useMemo(() => (0, y.OY)(r, t), [r, t]);
+  return (0, n.jsxs)("div", {
+    className: x.sq,
+    children: [(0, n.jsxs)("div", {
+      className: x.kx,
+      children: [(0, n.jsx)(i.A, {
         title: t.name,
         href: l,
-        children: (0, r.jsx)(o.Text, {
+        children: (0, n.jsx)(a.Text, {
           variant: "text-md/medium",
           color: "text-link",
           lineClamp: 1,
           children: t.name
         })
-      }), (0, r.jsxs)("div", {
-        className: h.Bo,
-        children: [(0, r.jsx)(o.qYV, {
+      }), (0, n.jsxs)("div", {
+        className: x.Bo,
+        children: [(0, n.jsx)(a.qYV, {
           size: "xs",
           color: "currentColor",
-          className: h.ds
-        }), (0, r.jsx)(o.Text, {
+          className: x.ds
+        }), (0, n.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-muted",
-          children: x.intl.formatToPlainString(x.t["CqpEC+"], {
-            applicationName: null == c ? true : c.name
+          children: v.intl.formatToPlainString(v.t["CqpEC+"], {
+            applicationName: null == s ? true : s.name
           })
         })]
       })]
-    }), (0, r.jsx)(_.e, {
-      containerClassName: h.wP,
-      foregroundImageClassName: h.wP,
-      backgroundImageClassName: h.wP,
+    }), (0, n.jsx)(O.e, {
+      containerClassName: x.wP,
+      foregroundImageClassName: x.wP,
+      backgroundImageClassName: x.wP,
       sku: t,
       shape: "square"
     })]
   })
 }
 
-function P(e) {
-  var t, a;
+function j(e) {
+  var t, r;
   let {
-    sku: s,
-    guildId: i,
-    source: _,
-    onClose: h,
-    analyticsLocations: P,
+    sku: i,
+    guildId: c,
+    source: O,
+    onClose: x,
+    analyticsLocations: j,
     analyticsContext: k
   } = e, C = function(e, t) {
     if (null == e) return {};
-    var a, r, n, o = {};
+    var r, n, o, a = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (n = 0, a = Reflect.ownKeys(e); n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
-      return o
+      for (o = 0, r = Reflect.ownKeys(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
+      return a
     }
-    if (o = function(e, t) {
+    if (a = function(e, t) {
         if (null == e) return {};
-        var a, r, n = {},
-          o = Object.getOwnPropertyNames(e);
-        for (r = 0; r < o.length; r++) a = o[r], !(t.indexOf(a) >= 0) && Object.prototype.propertyIsEnumerable.call(e, a) && (n[a] = e[a]);
-        return n
+        var r, n, o = {},
+          a = Object.getOwnPropertyNames(e);
+        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
+        return o
       }(e, t), Object.getOwnPropertySymbols)
-      for (n = 0, a = Object.getOwnPropertySymbols(e); n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
-    return o
+      for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
+    return a
   }(e, ["sku", "guildId", "source", "onClose", "analyticsLocations", "analyticsContext"]), {
-    analyticsLocations: T
-  } = (0, l.Ay)(null != P ? P : []), S = n.useCallback(async (e, t, a) => {
+    analyticsLocations: I
+  } = (0, l.Ay)(null != j ? j : []), T = o.useCallback(async (e, t, r) => {
     let {
-      withMessage: r,
-      closeAfterSend: n
+      withMessage: n,
+      closeAfterSend: o
     } = t;
-    a(true);
+    r(true);
     try {
-      let t = (await Promise.all(e.map(b.pk))).filter(O.Vq);
-      if (0 === t.length) return void a(false);
-      n && h();
-      let l = (0, m.Q6)(i, s);
+      let t = (await Promise.all(e.map(p.pk))).filter(m.Vq);
+      if (0 === t.length) return void r(false);
+      o && x();
+      let l = (0, y.Q6)(c, i);
       for (let e of t) {
-        let t = u.A.getChannel(e);
-        null != t && await c.A.sendMessage(t.id, f.Ay.parse(t, l + (null != r ? r : "")), false, {
-          location: j.Hx.SOCIAL_LAYER_STOREFRONT
+        let t = d.A.getChannel(e);
+        null != t && await s.A.sendMessage(t.id, _.Ay.parse(t, l + (null != n ? n : "")), false, {
+          location: g.Hx.SOCIAL_LAYER_STOREFRONT
         })
-      }(0, o.showToast)((0, o.createToast)(x.intl.string(x.t.kwmYkt), o.ToastType.SUCCESS))
+      }(0, a.showToast)((0, a.createToast)(v.intl.string(v.t.kwmYkt), a.ToastType.SUCCESS))
     } catch (e) {
-      (0, o.showToast)((0, o.createToast)(x.intl.string(x.t.iufib1), o.ToastType.FAILURE))
+      (0, a.showToast)((0, a.createToast)(v.intl.string(v.t.iufib1), a.ToastType.FAILURE))
     } finally {
-      a(false)
+      r(false)
     }
-  }, [h, i, s]), E = n.useMemo(() => [{
+  }, [x, c, i]), S = o.useMemo(() => [{
     variant: "secondary",
     text: true,
     onClick: () => {
-      p.default.track(w.HAw.SLAYER_STOREFRONT_FORWARD_MODAL_ELEMENT_CLICKED, {
+      f.default.track(h.HAw.SLAYER_STOREFRONT_FORWARD_MODAL_ELEMENT_CLICKED, {
         slayer_storefront_session_id: null == k ? true : k.sessionId,
-        guild_id: i,
-        sku_id: s.id,
-        cta_type: g.Ng.COPY_LINK_BUTTON,
-        location_stack: T
-      }), (0, y.C)((0, m.OY)(i, s), () => (0, o.showToast)((0, o.createToast)(x.intl.string(x.t["L/PwZf"]), o.ToastType.SUCCESS)))
+        guild_id: c,
+        sku_id: i.id,
+        cta_type: w.Ng.COPY_LINK_BUTTON,
+        location_stack: I
+      }), (0, b.C)((0, y.OY)(c, i), () => (0, a.showToast)((0, a.createToast)(v.intl.string(v.t["L/PwZf"]), a.ToastType.SUCCESS)))
     },
-    icon: o.qYV
-  }], [i, s, null == k ? true : k.sessionId, T]);
-  return (0, r.jsx)(d.ForwardModal, (t = function(e) {
+    icon: a.qYV
+  }], [c, i, null == k ? true : k.sessionId, I]);
+  return (0, n.jsx)(u.ForwardModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var a = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(a);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(a, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = a[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
+      var r = null != arguments[t] ? arguments[t] : {},
+        n = Object.keys(r);
+      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(r, e).enumerable
+      }))), n.forEach(function(t) {
+        var n;
+        n = r[t], t in e ? Object.defineProperty(e, t, {
+          value: n,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = r
+        }) : e[t] = n
       })
     }
     return e
-  }({}, C), a = a = {
-    onClose: h,
-    source: _,
-    customPreview: (0, r.jsx)(v, {
-      sku: s,
-      guildId: i
+  }({}, C), r = r = {
+    onClose: x,
+    source: O,
+    customPreview: (0, n.jsx)(P, {
+      sku: i,
+      guildId: c
     }),
-    customSubtitle: x.intl.string(x.t.yiaXeN),
-    customSendHandler: S,
-    additionalActions: E
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-    var a = Object.keys(e);
+    customSubtitle: v.intl.string(v.t.yiaXeN),
+    customSendHandler: T,
+    additionalActions: S
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+    var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      a.push.apply(a, r)
+      var n = Object.getOwnPropertySymbols(e);
+      r.push.apply(r, n)
     }
-    return a
-  })(Object(a)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(a, e))
+    return r
+  })(Object(r)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
   }), t))
 }

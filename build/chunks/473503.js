@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   OA: () => O,
-  kB: () => v
+  kB: () => A
 }), require("./896048.js");
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438),
@@ -75,9 +75,9 @@ class g {
   }
 }
 let E = new g,
-  b = null;
+  y = null;
 
-function y(e, t) {
+function b(e, t) {
   return !e && null == t
 }
 
@@ -86,39 +86,39 @@ function O(e) {
     loaded: t,
     firstMessage: n
   } = (0, a.cf)([d.A], () => d.A.getMessage(e.id)), r = (0, a.bG)([l.A], () => l.A.getChannel(e.parent_id));
-  return null != r && y(t, n) && S(r, e.id), {
+  return null != r && b(t, n) && I(r, e.id), {
     loaded: t,
     firstMessage: n
   }
 }
 
-function A(e, t) {
+function v(e, t) {
   let n = false;
   t.forEach(t => {
     let {
       loaded: r,
       firstMessage: i
     } = d.A.getMessage(t);
-    y(r, i) && (E.request(e.id, t), n = true)
-  }), n && null == b && (b = setTimeout(I, 0))
+    b(r, i) && (E.request(e.id, t), n = true)
+  }), n && null == y && (y = setTimeout(S, 0))
 }
 
-function v(e) {
-  A(e, (0, u.S)(e.id).slice(0, _))
+function A(e) {
+  v(e, (0, u.S)(e.id).slice(0, _))
 }
 
-function S(e, t) {
+function I(e, t) {
   if (E.hasRequested(e.id, t)) return;
   let n = (0, u.S)(e.id),
     r = n.findIndex(e => e === t),
     i = n.slice(r, r + h).filter(t => !E.hasRequested(e.id, t));
-  A(e, i)
+  v(e, i)
 }
-async function I() {
+async function S() {
   try {
     for (; E.hasNext();) await T(E.next())
   } finally {
-    b = null
+    y = null
   }
 }
 async function T(e) {

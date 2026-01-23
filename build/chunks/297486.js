@@ -29,7 +29,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,7 +38,7 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,7 +49,7 @@ function I(e, t) {
   return n
 }
 let T = function(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
   }(function(e) {
@@ -59,7 +59,7 @@ let T = function(e, t) {
       "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
       }))), r.forEach(function(t) {
-        S(e, t, n[t])
+        I(e, t, n[t])
       })
     }
     return e
@@ -87,12 +87,12 @@ function R(e) {
     launchingComponentId: h,
     submitting: m = false,
     fetchesApplication: g = true,
-    onConfirmActivityLaunchChecksAlertOpen: S
-  } = e, I = (0, l.p)(), T = (0, c.Hq)({
+    onConfirmActivityLaunchChecksAlertOpen: I
+  } = e, S = (0, l.p)(), T = (0, c.Hq)({
     context: t,
     applicationId: n.id,
     fetchesApplication: g
-  }), C = (0, O.G)(T), N = (0, s.bG)([b.A], () => b.A.entrypoint()), R = r.useMemo(() => {
+  }), C = (0, O.G)(T), N = (0, s.bG)([y.A], () => y.A.entrypoint()), R = r.useMemo(() => {
     var e, r, i;
     if ("channel" !== t.type) return null != (e = null == (r = n.bot) ? true : r.id) ? e : null == (i = (0, f.Sx)(t, n.id).descriptor) ? true : i.botId
   }, [t, n.id, n.bot]), w = (0, c.wK)({
@@ -100,12 +100,12 @@ function R(e) {
     botUserIdForAppDM: R,
     embeddedActivitiesManager: u.A,
     context: t,
-    locationObject: I.location,
+    locationObject: S.location,
     onActivityItemSelectedProp: e => {
       let {
         applicationId: t
       } = e;
-      _ && E.k(y.Se.ACTIVITY), (0, d.zV)(A.HAw.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
+      _ && E.k(b.Se.ACTIVITY), (0, d.zV)(v.HAw.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
         location: i,
         application_id: t,
         section_name: a,
@@ -118,9 +118,9 @@ function R(e) {
     sectionName: a,
     source: N,
     fetchesApplication: g,
-    onConfirmActivityLaunchChecksAlertOpen: S
-  }), P = "primary", D = null != o ? o : v.intl.string(v.t.zKX8Nu);
-  return C === c.o6.JOIN ? (P = "active", D = v.intl.string(v.t.d9PsMj)) : C !== c.o6.LEAVE || m || (P = "critical-primary", D = v.intl.string(v.t["Hi1/aQ"])), {
+    onConfirmActivityLaunchChecksAlertOpen: I
+  }), P = "primary", D = null != o ? o : A.intl.string(A.t.zKX8Nu);
+  return C === c.o6.JOIN ? (P = "active", D = A.intl.string(A.t.d9PsMj)) : C !== c.o6.LEAVE || m || (P = "critical-primary", D = A.intl.string(A.t["Hi1/aQ"])), {
     onActivityItemSelected: w,
     activityAction: C,
     buttonVariant: P,
@@ -129,9 +129,9 @@ function R(e) {
 }
 
 function w(e, t) {
-  let n = b.A.entrypoint(),
+  let n = y.A.entrypoint(),
     a = r.useMemo(() => (0, i.debounce)((e, t) => {
-      (0, d.zV)(A.HAw.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, {
+      (0, d.zV)(v.HAw.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, {
         type: e,
         source: t
       })
@@ -145,7 +145,7 @@ function w(e, t) {
 }
 
 function P(e) {
-  g._.dispatchToLastSubscribed(A.jej.OPEN_APP_LAUNCHER, {
+  g._.dispatchToLastSubscribed(v.jej.OPEN_APP_LAUNCHER, {
     applicationId: e
   })
 }

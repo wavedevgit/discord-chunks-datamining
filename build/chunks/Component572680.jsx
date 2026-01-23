@@ -2,7 +2,7 @@
 /** chunk id: 572680, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -41,7 +41,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,22 +52,22 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let O = 450,
-  A = .5,
-  v = [];
+  v = .5,
+  A = [];
 
-function S(e) {
+function I(e) {
   let {
     messageId: t,
     emoji: n,
     startPosition: g,
-    targetPosition: b
-  } = e, [S, I] = i.useState(0), [T, C] = i.useState(0), [N, R] = i.useState(null), {
+    targetPosition: y
+  } = e, [I, S] = i.useState(0), [T, C] = i.useState(0), [N, R] = i.useState(null), {
     confettiCanvas: w
   } = i.useContext(u.x), P = (0, a.f9)(w, N), D = i.useMemo(() => [{
     src: null == n.id ? _.Ay.getURL(n.name) : p.Ay.getEmojiURL({
@@ -76,7 +76,7 @@ function S(e) {
       size: 22
     }),
     colorize: false
-  }], [n.name, n.id]), x = b.x - b.width / 2 * A, L = b.y - b.height / 2 * A, j = (0, l.zhh)({
+  }], [n.name, n.id]), x = y.x - y.width / 2 * v, L = y.y - y.height / 2 * v, j = (0, l.zhh)({
     from: {
       y: g.y
     },
@@ -101,7 +101,7 @@ function S(e) {
     },
     to: {
       x: x,
-      scale: A,
+      scale: v,
       opacity: .4
     },
     config: {
@@ -115,24 +115,24 @@ function S(e) {
       let {
         x: t
       } = e;
-      I(t)
+      S(t)
     }
   });
   return i.useEffect(() => {
-    S > 0 && T > 0 && P.createConfetti(y(E({}, h.Mw), {
+    I > 0 && T > 0 && P.createConfetti(b(E({}, h.Mw), {
       position: {
         type: "static",
         value: {
-          x: S,
+          x: I,
           y: T
         }
       }
     }))
-  }, [P, S, T]), (0, r.jsxs)(r.Fragment, {
+  }, [P, I, T]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.K_, {
       ref: R,
       sprites: D,
-      colors: v,
+      colors: A,
       spriteWidth: h.wn,
       spriteHeight: h.wn
     }), (0, r.jsx)(d.Ay, {
@@ -140,7 +140,7 @@ function S(e) {
         style: E({}, j),
         className: m.qq,
         children: (0, r.jsx)(s.animated.div, {
-          style: y(E({}, M), {
+          style: b(E({}, M), {
             opacity: M.opacity
           }),
           children: (0, r.jsx)(c.A, {

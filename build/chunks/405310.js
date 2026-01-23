@@ -82,7 +82,7 @@ let p = e => {
     return await (0, s.r)({
       assetsToLoad: d,
       drawImage: e => {
-        y(e, c), b(e), E(e), g(e, o), (0, l.$)({
+        b(e, c), y(e), E(e), g(e, o), (0, l.$)({
           canvas: e,
           badges: u,
           startPosition: 120,
@@ -123,7 +123,7 @@ function E(e) {
   }, 50)
 }
 
-function b(e) {
+function y(e) {
   e.drawRoundedImage("MediaImage", {
     x: 12,
     y: 12
@@ -138,7 +138,7 @@ function b(e) {
   }, true, 2 + 2 / 3)
 }
 
-function y(e, t) {
+function b(e, t) {
   let n = t.map((e, t) => ({
     color: e,
     stop: t

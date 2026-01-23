@@ -23,7 +23,7 @@ function g(e) {
   let {
     transitionState: n,
     onClose: g
-  } = e, h = (0, l.bG)([d.Ay], () => d.Ay.getKeybindForAction(O.hCu.SOUNDBOARD_HOLD)), [j, m] = a.useState(null != (t = null == h ? true : h.shortcut) ? t : []), x = a.useCallback(() => {
+  } = e, h = (0, l.bG)([b.Ay], () => b.Ay.getKeybindForAction(O.hCu.SOUNDBOARD_HOLD)), [j, m] = i.useState(null != (t = null == h ? true : h.shortcut) ? t : []), x = i.useCallback(() => {
     if (0 === j.length) return null != h && c.A.deleteKeybind(h.id), g();
     if (null == h) c.A.addKeybind({
       action: O.hCu.SOUNDBOARD_HOLD,
@@ -65,52 +65,52 @@ function g(e) {
     }
     g()
   }, [h, g, j]);
-  a.useEffect(() => (u.A.disable(), () => {
+  i.useEffect(() => (u.A.disable(), () => {
     u.A.enable()
   }), []);
-  let v = a.useMemo(() => [{
-    text: f.intl.string(f.t["ETE/oC"]),
+  let v = i.useMemo(() => [{
+    text: y.intl.string(y.t["ETE/oC"]),
     onClick: g,
     variant: "secondary"
   }, {
-    text: f.intl.string(f.t["R3BPH+"]),
+    text: y.intl.string(y.t["R3BPH+"]),
     onClick: x,
     variant: "primary"
   }], [g, x]);
-  return (0, r.jsxs)(i.Modal, {
+  return (0, r.jsxs)(a.Modal, {
     transitionState: n,
-    title: f.intl.string(f.t["0Osu3x"]),
+    title: y.intl.string(y.t["0Osu3x"]),
     actions: v,
     onClose: g,
     children: [(0, r.jsx)(s.po8, {
-      className: y.$e,
+      className: f.$e,
       messageType: s.YCn.WARNING,
-      children: f.intl.string(f.t["O2v/eP"])
+      children: y.intl.string(y.t["O2v/eP"])
     }), (0, r.jsx)(s.Heading, {
-      className: y._5,
+      className: f._5,
       variant: "eyebrow",
       color: "text-default",
-      children: f.intl.string(f.t.UUpAD6)
+      children: y.intl.string(y.t.UUpAD6)
     }), (0, r.jsx)(s.Text, {
-      className: y.XI,
+      className: f.XI,
       variant: "text-md/normal",
-      children: f.intl.string(f.t["1xFbP/"])
+      children: y.intl.string(y.t["1xFbP/"])
     }), (0, r.jsx)(s.Text, {
-      className: y.lf,
+      className: f.lf,
       variant: "text-sm/normal",
-      children: f.intl.string(f.t.laNlTl)
+      children: y.intl.string(y.t.laNlTl)
     }), (0, r.jsx)(s.Heading, {
-      className: y._5,
+      className: f._5,
       variant: "eyebrow",
       color: "text-default",
-      children: f.intl.string(f.t["1La4tC"])
+      children: y.intl.string(y.t["1La4tC"])
     }), (0, r.jsx)(o.A, {
       defaultValue: j,
       onChange: m
     }), (0, r.jsx)(s.MzZ, {
-      className: y.WA,
-      onClick: () => m((0, b.OH)(p.XF)),
-      children: f.intl.string(f.t["s7+2rQ"])
+      className: f.WA,
+      onClick: () => m((0, d.OH)(p.XF)),
+      children: y.intl.string(y.t["s7+2rQ"])
     })]
   })
 }

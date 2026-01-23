@@ -6,63 +6,63 @@ require.d(exports, {
 var Chunk64700 = require("./64700.js"),
   Chunk575593 = require("./575593.js"),
   Chunk985018 = require("./985018.jsx");
-let i = function(e) {
+let a = function(e) {
     var t, n;
     let r = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    if (r) return a.intl.formatToPlainString(a.t["/0Yndu"], {
+    if (r) return i.intl.formatToPlainString(i.t["/0Yndu"], {
       num: null == (n = e.bundledProducts) ? true : n.length
     });
-    let i = null != (t = e.bundledProducts) ? t : [],
+    let a = null != (t = e.bundledProducts) ? t : [],
       s = [],
-      c = false;
-    for (let e of i) switch (e.type) {
+      o = false;
+    for (let e of a) switch (e.type) {
       case l.R.AVATAR_DECORATION:
-        s.push(a.intl.formatToPlainString(a.t.Ntv9Jt, {
+        s.push(i.intl.formatToPlainString(i.t.Ntv9Jt, {
           itemName: e.name
         }));
         break;
       case l.R.PROFILE_EFFECT:
-        s.push(a.intl.formatToPlainString(a.t["3Y8q7a"], {
+        s.push(i.intl.formatToPlainString(i.t["3Y8q7a"], {
           itemName: e.name
         }));
         break;
       case l.R.NAMEPLATE:
-        s.push(a.intl.formatToPlainString(a.t["2keXky"], {
+        s.push(i.intl.formatToPlainString(i.t["2keXky"], {
           itemName: e.name
-        })), c = true
+        })), o = true
     }
-    if (c) {
+    if (o) {
       let e = s.join(", ").replace(/, ([^,]*)$/, " & $1");
-      return a.intl.formatToPlainString(a.t.Ofrqj6, {
+      return i.intl.formatToPlainString(i.t.Ofrqj6, {
         joinedItems: e
       })
     }
-    let o = s.join(" & ");
-    return a.intl.formatToPlainString(a.t.Ofrqj6, {
-      joinedItems: o
+    let c = s.join(" & ");
+    return i.intl.formatToPlainString(i.t.Ofrqj6, {
+      joinedItems: c
     })
   },
   s = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = arguments.length > 2 ? arguments[2] : true;
     return (0, r.useMemo)(() => {
-      if (null != n) return 3 === n ? a.intl.string(a.t.QUjmjp) : 7 === n ? a.intl.string(a.t.yPxJA2) : a.intl.string(a.t["o+VpXZ"]);
+      if (null != n) return 3 === n ? i.intl.string(i.t.QUjmjp) : 7 === n ? i.intl.string(i.t.yPxJA2) : i.intl.string(i.t["o+VpXZ"]);
       if (null != e && null != e.summary && "" !== e.summary) {
         if (e.type === l.R.BUNDLE && e.summary.includes("{joinedItems}")) {
-          let n = i(e, t);
+          let n = a(e, t);
           return e.summary.replace("{joinedItems}", n)
         }
         return e.summary
       }
       switch (null == e ? true : e.type) {
         case l.R.AVATAR_DECORATION:
-          return a.intl.string(a.t["3lv7q2"]);
+          return i.intl.string(i.t["3lv7q2"]);
         case l.R.PROFILE_EFFECT:
-          return a.intl.string(a.t.VhJL72);
+          return i.intl.string(i.t.VhJL72);
         case l.R.NAMEPLATE:
-          return a.intl.string(a.t.ik37EZ);
+          return i.intl.string(i.t.ik37EZ);
         case l.R.BUNDLE:
-          return i(e, t);
+          return a(e, t);
         default:
           return ""
       }

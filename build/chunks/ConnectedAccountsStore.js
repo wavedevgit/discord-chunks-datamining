@@ -54,19 +54,19 @@ let _ = new Set([require("./652215.js").fg2.CONTACTS]),
   m = [],
   g = [],
   E = {},
-  b = new Set,
-  y = {},
+  y = new Set,
+  b = {},
   O = {},
-  A = e => {
+  v = e => {
     m = e.filter(e => !_.has(e.type) && o.A.isSupported(e.type)), g = e.filter(e => _.has(e.type)), h = false
   };
 
-function v(e) {
-  A(e.connectedAccounts.map(e => new l.A(e)))
+function A(e) {
+  v(e.connectedAccounts.map(e => new l.A(e)))
 }
 
-function S(e) {
-  e.local && null != e.accounts ? A(e.accounts.map(e => new l.A(p(d({}, e), {
+function I(e) {
+  e.local && null != e.accounts ? v(e.accounts.map(e => new l.A(p(d({}, e), {
     integrations: e.integrations.map(e => p(d({}, e), {
       guild: (0, c.yF)(p(d({}, e.guild), {
         features: []
@@ -75,7 +75,7 @@ function S(e) {
   })))) : s.A.fetch()
 }
 
-function I(e) {
+function S(e) {
   E[e.integrationId] = e.joining
 }
 
@@ -130,23 +130,23 @@ class R extends(r = Chunk311907.Ay.Store) {
     return g.find(t => t.type === e)
   }
   isSuggestedAccountType(e) {
-    return y[e] || false
+    return b[e] || false
   }
   addPendingAuthorizedState(e) {
-    b.add(e)
+    y.add(e)
   }
   deletePendingAuthorizedState(e) {
-    b.delete(e)
+    y.delete(e)
   }
   hasPendingAuthorizedState(e) {
-    return b.has(e)
+    return y.has(e)
   }
 }
 u(R, "displayName", "ConnectedAccountsStore");
 let w = new R(Chunk73153.h, {
-  CONNECTION_OPEN: v,
-  USER_CONNECTIONS_UPDATE: S,
-  USER_CONNECTIONS_INTEGRATION_JOINING: I,
+  CONNECTION_OPEN: A,
+  USER_CONNECTIONS_UPDATE: I,
+  USER_CONNECTIONS_INTEGRATION_JOINING: S,
   USER_CONNECTION_UPDATE: C,
   USER_CONNECTIONS_INTEGRATION_JOINING_ERROR: T,
   USER_CONNECTIONS_CALLBACK: N

@@ -33,7 +33,7 @@ function m(e) {
 }
 let f = [Chunk808380.Y.DESKTOP, Chunk808380.Y.XBOX, Chunk808380.Y.PLAYSTATION, Chunk808380.Y.NINTENDO];
 
-function x(e) {
+function g(e) {
   let {
     platform: t
   } = e, n = function(e, t) {
@@ -75,12 +75,12 @@ function x(e) {
   }
 }
 
-function b(e) {
+function x(e) {
   let {
     platforms: t
   } = e;
   return (0, l.jsx)("div", {
-    className: a()(u.nM, u.Lc),
+    className: a()(d.nM, d.Lc),
     style: {
       alignItems: "center"
     },
@@ -88,18 +88,18 @@ function b(e) {
       text: function(e) {
         switch (e) {
           case s.Y.DESKTOP:
-            return d.intl.string(d.t.KT6uCJ);
+            return u.intl.string(u.t.KT6uCJ);
           case s.Y.XBOX:
-            return d.intl.string(d.t.DDWUJp);
+            return u.intl.string(u.t.DDWUJp);
           case s.Y.PLAYSTATION:
-            return d.intl.string(d.t.fzMz2s);
+            return u.intl.string(u.t.fzMz2s);
           case s.Y.NINTENDO:
-            return d.intl.string(d.t.AMW8je);
+            return u.intl.string(u.t.AMW8je);
           default:
             return null
         }
       }(e),
-      children: (0, l.jsx)(x, {
+      children: (0, l.jsx)(g, {
         platform: e
       })
     }, e))
@@ -116,8 +116,8 @@ function p(e) {
     return !e.has(s.Y.DESKTOP) && (e.has(s.Y.MACOS) || e.has(s.Y.LINUX)) && n.push(s.Y.DESKTOP), n.filter(e => f.includes(e))
   }, [t.platforms]);
   return 0 === i.length ? null : (0, l.jsx)("div", {
-    className: a()(u.fi, u.iH, n),
-    children: i.length > 0 && (0, l.jsx)(b, {
+    className: a()(d.fi, d.iH, n),
+    children: i.length > 0 && (0, l.jsx)(x, {
       platforms: i
     })
   })

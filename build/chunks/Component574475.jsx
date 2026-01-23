@@ -14,19 +14,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk359511 = require("./359511.js");
 let C = [{
   value: "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_NOT_USING_ENOUGH",
-  nameGetter: () => u.intl.string(u.t["+RZgNV"])
+  nameGetter: () => _.intl.string(_.t["+RZgNV"])
 }, {
   value: "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_TOO_EXPENSIVE",
-  nameGetter: () => u.intl.string(u.t.kgPXgv)
+  nameGetter: () => _.intl.string(_.t.kgPXgv)
 }, {
   value: "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_NOT_WORTH",
-  nameGetter: () => u.intl.string(u.t.vujsUK)
+  nameGetter: () => _.intl.string(_.t.vujsUK)
 }, {
   value: "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_NOT_SURE_HOW_TO_USE",
-  nameGetter: () => u.intl.string(u.t.AYAOLF)
+  nameGetter: () => _.intl.string(_.t.AYAOLF)
 }, {
   value: "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_OTHER",
-  nameGetter: () => u.intl.string(u.t.wZLu3Y)
+  nameGetter: () => _.intl.string(_.t.wZLu3Y)
 }];
 
 function A(t) {
@@ -35,33 +35,33 @@ function A(t) {
     subscriptionId: n,
     onClose: A,
     transitionState: d
-  } = t, [N, O] = a.useState(false), [I, p] = a.useState(null), [S, E] = a.useState(""), b = a.useCallback(() => {
-    null != I && (c.default.track(o.HAw.PREMIUM_APP_CANCELLATION_SURVEY_SUBMITTED, {
-      answer: I,
+  } = t, [p, I] = a.useState(false), [N, O] = a.useState(null), [S, E] = a.useState(""), T = a.useCallback(() => {
+    null != N && (c.default.track(o.HAw.PREMIUM_APP_CANCELLATION_SURVEY_SUBMITTED, {
+      answer: N,
       application_id: e.id,
       reason: S,
       subscription_id: n
     }), A())
-  }, [e.id, n, I, A, S]);
+  }, [e.id, n, N, A, S]);
   return a.useEffect(() => {
-    r.Ay.updatedUnsyncedSettings({
-      disableApplicationSubscriptionCancellationSurvey: N
+    s.Ay.updatedUnsyncedSettings({
+      disableApplicationSubscriptionCancellationSurvey: p
     })
-  }, [N]), (0, i.jsxs)(l.Modal, {
-    title: u.intl.string(u.t.zPxMdQ),
-    subtitle: u.intl.string(u.t["QJGdB+"]),
+  }, [p]), (0, i.jsxs)(l.Modal, {
+    title: _.intl.string(_.t.zPxMdQ),
+    subtitle: _.intl.string(_.t["QJGdB+"]),
     actions: [{
       variant: "primary",
-      text: u.intl.string(u.t.geKm7t),
-      onClick: b,
-      disabled: null == I
+      text: _.intl.string(_.t.geKm7t),
+      onClick: T,
+      disabled: null == N
     }],
     onClose: A,
     transitionState: d,
     children: [(0, i.jsx)("div", {
-      className: _.U7,
-      children: (0, i.jsx)(s.z6M, {
-        value: I,
+      className: u.U7,
+      children: (0, i.jsx)(r.z6M, {
+        value: N,
         options: C.map(t => {
           let {
             nameGetter: e,
@@ -72,20 +72,20 @@ function A(t) {
             value: n
           }
         }),
-        onChange: t => p(t)
+        onChange: t => O(t)
       })
-    }), "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_OTHER" === I && (0, i.jsx)("div", {
-      className: _.Xo,
-      children: (0, i.jsx)(s.ksK, {
+    }), "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_OTHER" === N && (0, i.jsx)("div", {
+      className: u.Xo,
+      children: (0, i.jsx)(r.ksK, {
         autoFocus: true,
-        placeholder: u.intl.string(u.t.s6tM8c),
+        placeholder: _.intl.string(_.t.s6tM8c),
         value: S,
         onChange: E
       })
-    }), (0, i.jsx)(s.Checkbox, {
-      checked: N,
-      onChange: t => O(t),
-      label: u.intl.string(u.t["3vPFQi"]),
+    }), (0, i.jsx)(r.Checkbox, {
+      checked: p,
+      onChange: t => I(t),
+      label: _.intl.string(_.t["3vPFQi"]),
       labelType: "secondary"
     })]
   })

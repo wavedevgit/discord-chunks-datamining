@@ -12,10 +12,10 @@ function i(e) {
     videoSpinnerContext: n,
     userId: i,
     streamId: a,
-    loading: s,
-    paused: o = false
-  } = e, [c] = l.useState(() => new r.M(t));
-  l.useEffect(() => {
-    o || (s ? c.onSpinnerStarted() : null != a && c.trackSpinnerDuration(n, i, a))
-  }, [s, o, a, c, n, i])
+    loading: o,
+    paused: s = false
+  } = e, [c] = r.useState(() => new l.M(t));
+  r.useEffect(() => {
+    s || (o ? c.onSpinnerStarted() : null != a && c.trackSpinnerDuration(n, i, a))
+  }, [o, s, a, c, n, i])
 }

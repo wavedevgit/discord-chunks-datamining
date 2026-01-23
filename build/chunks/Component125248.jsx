@@ -1,12 +1,12 @@
 /** Chunk was on 97492 **/
 /** chunk id: 125248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   Chunk835245 = require("./835245.js"),
   Chunk311907 = require("./311907.js"),
@@ -14,17 +14,17 @@ var Chunk627968 = require("./627968.js"),
   Chunk565645 = require("./565645.jsx"),
   Chunk775602 = require("./775602.js"),
   Chunk213966 = require("./213966.js");
-let h = [Chunk213966.u8, Chunk213966.n$, Chunk213966.uN, Chunk213966.no],
-  b = Chunk64700.memo(function(e) {
+let f = [Chunk213966.u8, Chunk213966.n$, Chunk213966.uN, Chunk213966.no],
+  g = Chunk64700.memo(function(e) {
     var t;
     let {
       emoji: n,
       onAnimationEnd: i
-    } = e, o = (0, s.sample)(h), c = l.useCallback(() => {
+    } = e, o = (0, a.sample)(f), c = l.useCallback(() => {
       i(n.key)
     }, [n.key, i]);
     return (0, r.jsx)("div", {
-      className: a()(p.Zg, o),
+      className: s()(h.Zg, o),
       onAnimationEnd: c,
       children: (0, r.jsx)(d.A, {
         emojiId: n.id,
@@ -34,18 +34,18 @@ let h = [Chunk213966.u8, Chunk213966.n$, Chunk213966.uN, Chunk213966.no],
     })
   });
 
-function g(e) {
+function m(e) {
   let {
     channelId: t,
     callHeight: n
-  } = e, i = (0, c.bG)([f.A], () => f.A.useReducedMotion), [a, s] = l.useState([]);
+  } = e, i = (0, c.bG)([p.A], () => p.A.useReducedMotion), [s, a] = l.useState([]);
   l.useEffect(() => {
     function e(e) {
       let {
         channelId: n,
         emoji: r
       } = e;
-      n !== t || i || null == r || s(e => [...e, function(e) {
+      n !== t || i || null == r || a(e => [...e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -71,16 +71,16 @@ function g(e) {
     }
   }, [t, i]);
   let d = l.useCallback(e => {
-    s(t => t.filter(t => t.key !== e))
+    a(t => t.filter(t => t.key !== e))
   }, []);
   return i ? null : (0, r.jsx)("div", {
-    className: p.kL,
+    className: h.kL,
     style: {
       top: n - 50,
       left: "52%"
     },
     "aria-hidden": true,
-    children: a.map(e => (0, r.jsx)(b, {
+    children: s.map(e => (0, r.jsx)(g, {
       emoji: e,
       onAnimationEnd: d
     }, e.key))

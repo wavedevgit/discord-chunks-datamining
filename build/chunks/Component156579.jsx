@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 156579, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,28 +15,28 @@ var Chunk417597 = require("./417597.js"),
   Chunk5867 = require("./5867.js"),
   Chunk652215 = require("./652215.js");
 
-function p(e) {
+function h(e) {
   let {
     maxHeight: t,
     renderExternalHeader: n
   } = e, {
-    connectedChannelId: p,
-    connectedActivity: h,
-    activityPanelMode: b
-  } = (0, l.cf)([s.Ay], () => {
-    let e = s.Ay.getConnectedActivityLocation(),
-      t = s.Ay.getSelfEmbeddedActivityForLocation(e);
+    connectedChannelId: h,
+    connectedActivity: f,
+    activityPanelMode: g
+  } = (0, l.cf)([a.Ay], () => {
+    let e = a.Ay.getConnectedActivityLocation(),
+      t = a.Ay.getSelfEmbeddedActivityForLocation(e);
     return {
       connectedChannelId: (0, o.H)(e),
       connectedActivity: t,
-      activityPanelMode: s.Ay.getActivityPanelMode()
+      activityPanelMode: a.Ay.getActivityPanelMode()
     }
-  }), g = (0, l.bG)([i.A], () => i.A.getWindowOpen(f.MLl.ACTIVITY_POPOUT));
-  if (!(0, a.Gp)(p)) return null;
-  let m = null == h ? true : h.applicationId;
-  return b !== d.Gd.PANEL || null == m || g || null == p || null == h || (0, c.A)(p) ? null : (0, r.jsx)(u.A, {
+  }), m = (0, l.bG)([i.A], () => i.A.getWindowOpen(p.MLl.ACTIVITY_POPOUT));
+  if (!(0, s.Gp)(h)) return null;
+  let b = null == f ? true : f.applicationId;
+  return g !== d.Gd.PANEL || null == b || m || null == h || null == f || (0, c.A)(h) ? null : (0, r.jsx)(u.A, {
     maxHeight: t,
-    connectedLocation: h.location,
+    connectedLocation: f.location,
     renderExternalHeader: n
   })
 }

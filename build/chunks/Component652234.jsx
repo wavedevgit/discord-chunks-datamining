@@ -19,7 +19,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk507133 = require("./507133.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,7 +27,7 @@ function b(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class _ extends Chunk64700.PureComponent {
+class b extends Chunk64700.PureComponent {
   hasParty(e) {
     return e.length > 1
   }
@@ -40,7 +40,7 @@ class _ extends Chunk64700.PureComponent {
       host: t,
       party: n
     } = this.props;
-    return this.hasParty(n) && null != e ? (0, r.jsx)(A.A, {
+    return this.hasParty(n) && null != e ? (0, r.jsx)(f.A, {
       currentUser: e,
       host: t,
       party: n,
@@ -50,7 +50,7 @@ class _ extends Chunk64700.PureComponent {
     }) : null
   }
   constructor(...e) {
-    super(...e), b(this, "handleUserContextMenu", (e, t) => {
+    super(...e), _(this, "handleUserContextMenu", (e, t) => {
       (0, o.L3)(e, async () => {
         let {
           default: e
@@ -64,7 +64,7 @@ class _ extends Chunk64700.PureComponent {
               "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
               }))), r.forEach(function(t) {
-                b(e, t, n[t])
+                _(e, t, n[t])
               })
             }
             return e
@@ -82,13 +82,13 @@ class _ extends Chunk64700.PureComponent {
           }), i))
         }
       })
-    }), b(this, "renderOverflowPopout", () => {
+    }), _(this, "renderOverflowPopout", () => {
       let {
         party: e
       } = this.props;
-      return (0, r.jsx)(g.A, {
+      return (0, r.jsx)(m.A, {
         party: e,
-        header: m.intl.formatToPlainString(m.t.I9et1z, {
+        header: A.intl.formatToPlainString(A.t.I9et1z, {
           count: e.length
         })
       })
@@ -98,15 +98,15 @@ class _ extends Chunk64700.PureComponent {
 let E = Chunk311907.Ay.connectStores([Chunk655116.A, Chunk287809.default, Chunk994500.A, Chunk629016.A], () => {
   let e, t, n = u.A.getSyncingWith(),
     r = u.A.getActivity(),
-    i = f.default.getCurrentUser(),
+    i = h.default.getCurrentUser(),
     l = [];
-  if (null != n ? (e = f.default.getUser(n.userId), t = n.partyId) : null != r && null != r.party && null != r.party.id && (e = i, t = r.party.id), null != t) {
+  if (null != n ? (e = h.default.getUser(n.userId), t = n.partyId) : null != r && null != r.party && null != r.party.id && (e = i, t = r.party.id), null != t) {
     var s;
-    l = a()(Array.from(null != (s = d.A.getParty(t)) ? s : [])).map(e => f.default.getUser(e)).filter(h.Vq).orderBy([t => null == e || e.id === t.id, e => p.A.isFriend(e.id)], ["desc", "desc"]).value()
+    l = a()(Array.from(null != (s = d.A.getParty(t)) ? s : [])).map(e => h.default.getUser(e)).filter(g.Vq).orderBy([t => null == e || e.id === t.id, e => p.A.isFriend(e.id)], ["desc", "desc"]).value()
   }
   return {
     currentUser: i,
     host: e,
     party: l
   }
-})(_)
+})(b)

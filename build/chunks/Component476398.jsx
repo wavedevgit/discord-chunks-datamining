@@ -1,7 +1,7 @@
 /** Chunk was on 22477 **/
 /** chunk id: 476398, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => f
 }), require("./896048.js"), require("./114821.js"), require("./339614.js");
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -17,30 +17,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk424994 = require("./424994.js"),
   Chunk805176 = require("./805176.js");
 
-function x(e) {
+function g(e) {
   let {
     id: t
   } = e, n = (0, l.bG)([o.default], () => o.default.getUser(t));
-  return null == n ? null : (0, a.jsx)(i.DUT, {
-    className: f._,
+  return null == n ? null : (0, a.jsx)(r.DUT, {
+    className: x._,
     onClick: function() {
       (0, s.openUserProfileModal)({
-        sourceAnalyticsLocations: [r.A.DEV_TOOLS],
+        sourceAnalyticsLocations: [i.A.DEV_TOOLS],
         userId: t
       })
     },
-    children: (0, a.jsx)(i.Text, {
+    children: (0, a.jsx)(r.Text, {
       variant: "text-md/semibold",
       children: n.username
     })
   })
 }
 
-function b() {
+function f() {
   var e;
   let t = (0, l.bG)([u.A], () => u.A.getFeed(h.X1.GLOBAL_FEED)),
     n = (0, l.bG)([u.A], () => u.A.getFilters()),
-    r = (0, l.cf)([c.A], () => {
+    i = (0, l.cf)([c.A], () => {
       var e;
       let n = {};
       for (let a of null != (e = null == t ? true : t.entries) ? e : []) n[(0, c.$)(a.content)] = c.A.canRenderContent(a.content);
@@ -53,26 +53,26 @@ function b() {
       content: t
     } = e;
     if (!(0, m.l)(n, t)) return [];
-    let l = r[(0, c.$)(t)];
+    let l = i[(0, c.$)(t)];
     return (0, a.jsxs)("li", {
-      className: f.p,
-      children: [(0, a.jsx)(x, {
+      className: x.p,
+      children: [(0, a.jsx)(g, {
         type: t.author_type,
         id: t.author_id
-      }), !l && (0, a.jsx)(i.Text, {
+      }), !l && (0, a.jsx)(r.Text, {
         variant: "text-md/normal",
         children: "Expired or no matching presence"
-      }), (0, p.I5)(t) && (0, a.jsxs)(i.Text, {
+      }), (0, p.I5)(t) && (0, a.jsxs)(r.Text, {
         variant: "text-md/normal",
         children: ["Expired at ", t.expires_at]
-      }), s.has(t.id) && (0, a.jsx)(i.Text, {
+      }), s.has(t.id) && (0, a.jsx)(r.Text, {
         variant: "text-md/normal",
         children: "Impression capped"
       })]
     }, t.id)
   });
   return (0, a.jsxs)("div", {
-    children: [(0, a.jsx)(i.Heading, {
+    children: [(0, a.jsx)(r.Heading, {
       variant: "heading-md/semibold",
       children: "Selected Content"
     }), null != o ? (0, a.jsx)("ul", {

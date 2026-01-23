@@ -2,7 +2,7 @@
 /** chunk id: 347704, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  t: () => b
+  t: () => y
 }), require("./65821.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -74,31 +74,31 @@ function g(e, t) {
 }
 let E = Chunk64700.createContext(null);
 
-function b(e) {
+function y(e) {
   var t, n, f;
   let {
     steps: _,
     currentStepKey: g,
-    numberedSteps: b,
-    onStepChange: y,
+    numberedSteps: y,
+    onStepChange: b,
     onComplete: O
-  } = e, A = m(e, ["steps", "currentStepKey", "numberedSteps", "onStepChange", "onComplete"]), {
-    i18n: v
-  } = (0, s.G9)(), S = A.onClose, I = _.find(e => e.stepKey === g);
-  if (null == I) throw Error("Step with key ".concat(g, " not found"));
+  } = e, v = m(e, ["steps", "currentStepKey", "numberedSteps", "onStepChange", "onComplete"]), {
+    i18n: A
+  } = (0, s.G9)(), I = v.onClose, S = _.find(e => e.stepKey === g);
+  if (null == S) throw Error("Step with key ".concat(g, " not found"));
   let T = _.findIndex(e => e.stepKey === g),
     C = T === _.length - 1,
     N = 0 === T,
-    R = null == (t = I.nextEnabled) || t,
+    R = null == (t = S.nextEnabled) || t,
     w = i.useCallback(e => {
-      null == y || y(e, g)
-    }, [y, g]),
+      null == b || b(e, g)
+    }, [b, g]),
     P = i.useCallback(async () => {
-      await (null == O ? true : O()), S()
-    }, [O, S]),
+      await (null == O ? true : O()), I()
+    }, [O, I]),
     D = i.useCallback(async () => {
-      (null == I.onNext || await I.onNext()) && (C ? await P() : w(_[T + 1].stepKey))
-    }, [w, T, _, C, P, I]),
+      (null == S.onNext || await S.onNext()) && (C ? await P() : w(_[T + 1].stepKey))
+    }, [w, T, _, C, P, S]),
     x = i.useCallback(() => {
       N || w(_[T - 1].stepKey)
     }, [w, T, _, N]),
@@ -111,35 +111,35 @@ function b(e) {
     }), [g, w, D, x, P]),
     j = {
       variant: "secondary",
-      text: v.BACK
+      text: A.BACK
     },
     M = {
       variant: "primary",
-      text: v.NEXT,
+      text: A.NEXT,
       disabled: !R,
       onClick: () => {
         R && D()
       }
     },
     k = {
-      text: v.CANCEL,
+      text: A.CANCEL,
       variant: "secondary",
-      onClick: S
+      onClick: I
     },
-    U = I.hideBackButton || N ? true : (0, r.jsx)(a.Q, h(p({}, j, I.backButtonProps), {
+    U = S.hideBackButton || N ? true : (0, r.jsx)(a.Q, h(p({}, j, S.backButtonProps), {
       onClick: x
     })),
-    G = I.modalProps,
+    G = S.modalProps,
     V = "graphic" in G ? G : null;
   return (0, r.jsx)(E.Provider, {
     value: L,
-    children: (0, r.jsxs)(o.d, h(p({}, A), {
+    children: (0, r.jsxs)(o.d, h(p({}, v), {
       paddingSize: null != V ? "lg" : "sm",
       children: [null != V ? (0, r.jsx)(u.V6, p({}, V)) : (0, r.jsx)(u.rQ, {
         title: G.title,
         subtitle: G.subtitle,
-        stepNumber: (null == b ? true : b.includes(g)) ? b.indexOf(g) + 1 : true,
-        stepCount: null == b ? true : b.length
+        stepNumber: (null == y ? true : y.includes(g)) ? y.indexOf(g) + 1 : true,
+        stepCount: null == y ? true : y.length
       }), "notice" in G && (0, r.jsx)(d.i, {
         message: null == (n = G.notice) ? true : n.message,
         type: null == (f = G.notice) ? true : f.type
@@ -158,7 +158,7 @@ function b(e) {
       }), (0, r.jsx)(l.H, {
         leading: U,
         actionsFullWidth: N,
-        actions: [...N ? [k] : [], p({}, M, I.nextButtonProps)]
+        actions: [...N ? [k] : [], p({}, M, S.nextButtonProps)]
       })]
     }))
   })

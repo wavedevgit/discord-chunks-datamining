@@ -2,8 +2,8 @@
 /** chunk id: 518960, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  R: () => I,
-  V: () => S
+  R: () => S,
+  V: () => I
 }), require("./896048.js"), require("./65821.js");
 var Chunk367513 = require("./367513.js"),
   Chunk843472 = require("./843472.js"),
@@ -25,7 +25,7 @@ var Chunk367513 = require("./367513.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +34,20 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t, n) {
+function I(e, t, n) {
   let r = p.default.getCurrentUser(),
     i = e.guild_id,
     a = h.o2(i),
@@ -65,14 +65,14 @@ function S(e, t, n) {
       pre_compression_file_sizes: o,
       pre_compression_aggregate_file_size: u,
       num_attachments: f,
-      error_type: b.ty.UPLOAD_ATTACHMENT_MAX_SIZE_ERROR,
+      error_type: y.ty.UPLOAD_ATTACHMENT_MAX_SIZE_ERROR,
       attachment_mimetypes: l,
       post_compression_file_sizes: n,
       post_compression_aggregate_file_size: t
     }), (0, s.openUploadError)({
       title: O.intl.string(O.t["/tGlcj"]),
       help: (0, g.WQ)(r, i),
-      showPremiumUpsell: !(0, m.YE)(r, y.PremiumTypes.TIER_2),
+      showPremiumUpsell: !(0, m.YE)(r, b.PremiumTypes.TIER_2),
       fileSize: d
     });
     return
@@ -83,7 +83,7 @@ function S(e, t, n) {
     })
   })
 }
-async function I(e, t, n) {
+async function S(e, t, n) {
   let {
     filesMetadata: c,
     requireConfirm: p = true,
@@ -92,14 +92,14 @@ async function I(e, t, n) {
   } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
   if (e.length < 1) return;
   if (null != c && c.length !== e.length) throw Error("Unexpected mismatch between files and file metadata");
-  let y = t.getGuildId(),
-    A = Array.from(e),
-    I = A.map(e => ({
+  let b = t.getGuildId(),
+    v = Array.from(e),
+    S = v.map(e => ({
       originalContentType: e.type,
       preCompressionSize: e.size
     }));
-  if (await Promise.resolve(), (0, g.fJ)(A, y)) return void S(t, A);
-  if (f.A.getUploadCount(t.id, n) + A.length > E.XgB) {
+  if (await Promise.resolve(), (0, g.fJ)(v, b)) return void I(t, v);
+  if (f.A.getUploadCount(t.id, n) + v.length > E.XgB) {
     (0, s.openUploadError)({
       title: O.intl.string(O.t.wOr6hB),
       help: O.intl.formatToPlainString(O.t["qqyp/e"], {
@@ -107,17 +107,17 @@ async function I(e, t, n) {
       })
     }), _.default.track(E.HAw.UPLOAD_FILE_LIMIT_ERROR, {
       existing_count: f.A.getUploadCount(t.id, n),
-      new_count: A.length
+      new_count: v.length
     });
     return
   }
   if (t.type !== E.rbe.GUILD_VOICE && t.type !== E.rbe.GUILD_STAGE_VOICE || u.A.getChatOpen(t.id) || r.A.updateChatOpen(t.id, true), p) {
-    let e = A.map((e, t) => v({
+    let e = v.map((e, t) => A({
       file: e,
       platform: l.xz.WEB,
       isThumbnail: h,
       origin: m,
-      compressionMetadata: I[t]
+      compressionMetadata: S[t]
     }, null == c ? true : c[t]));
     a.A.addFiles({
       files: e,
@@ -125,14 +125,14 @@ async function I(e, t, n) {
       draftType: n
     })
   } else {
-    let e = A.map((e, n) => {
+    let e = v.map((e, n) => {
       let r = null != c ? c[n] : {};
-      return new o.bK(v({
+      return new o.bK(A({
         file: e,
         platform: l.xz.WEB,
         isThumbnail: h,
         origin: m,
-        compressionMetadata: I[n]
+        compressionMetadata: S[n]
       }, r), t.id)
     });
     i.A.sendMessage(t.id, {
@@ -143,7 +143,7 @@ async function I(e, t, n) {
     }, true, {
       eagerDispatch: false,
       attachmentsToUpload: e,
-      location: b.Hx.INSTANT_UPLOAD,
+      location: y.Hx.INSTANT_UPLOAD,
       onAttachmentUploadError: (e, n, r) => {
         (0, d.k)({
           file: e,

@@ -2,8 +2,8 @@
 /** chunk id: 853397, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Zt: () => A,
-  yo: () => v
+  Zt: () => v,
+  yo: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -42,7 +42,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,8 +53,8 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -66,14 +66,14 @@ function O(e) {
     viewProfileItem: i,
     appContext: _,
     popoutTargetRef: g,
-    children: b
+    children: y
   } = e, {
-    trackUserProfileAction: y,
+    trackUserProfileAction: b,
     context: O
   } = (0, p.NJ)(), {
-    analyticsLocations: A,
-    newestAnalyticsLocation: v
-  } = (0, o.Ay)(s.A.USER_PROFILE_OVERFLOW_MENU), S = null != O && O.showGuildProfile ? n : true, I = {
+    analyticsLocations: v,
+    newestAnalyticsLocation: A
+  } = (0, o.Ay)(s.A.USER_PROFILE_OVERFLOW_MENU), I = null != O && O.showGuildProfile ? n : true, S = {
     action: h.pt.PRESS_OPTIONS,
     icon: a.jNK,
     tooltipText: m.intl.string(m.t["UKOtz+"]),
@@ -81,79 +81,79 @@ function O(e) {
   }, T = (0, d.A)({
     user: t,
     guildId: n,
-    onAction: () => y({
+    onAction: () => b({
       action: "PRESS_INVITE_TO_SERVER",
-      analyticsLocations: A
+      analyticsLocations: v
     })
   }), C = (0, l.A)({
     user: t,
     guildId: n,
-    location: v,
+    location: A,
     color: "danger",
     appContext: _,
-    onBlock: () => y({
+    onBlock: () => b({
       action: "BLOCK",
-      analyticsLocations: A
+      analyticsLocations: v
     }),
-    onIgnore: () => y({
+    onIgnore: () => b({
       action: "IGNORE",
-      analyticsLocations: A
+      analyticsLocations: v
     }),
-    onUnblock: () => y({
+    onUnblock: () => b({
       action: "UNBLOCK",
-      analyticsLocations: A
+      analyticsLocations: v
     })
   }), N = [
     [i, T],
     [(0, u.A)({
       user: t,
       guildId: n,
-      location: v,
+      location: A,
       appContext: _,
-      onBlock: () => y({
+      onBlock: () => b({
         action: "BLOCK",
-        analyticsLocations: A
+        analyticsLocations: v
       }),
-      onIgnore: () => y({
+      onIgnore: () => b({
         action: "IGNORE",
-        analyticsLocations: A
+        analyticsLocations: v
       }),
-      onUnignore: () => y({
+      onUnignore: () => b({
         action: "UNIGNORE",
-        analyticsLocations: A
+        analyticsLocations: v
       })
     }), C, (0, f.A)({
       user: t,
       guildId: n,
-      location: v,
+      location: A,
       appContext: _,
       color: "danger",
-      onAction: () => y({
+      onAction: () => b({
         action: "REPORT",
-        analyticsLocations: A
+        analyticsLocations: v
       })
     }), (0, f.M)({
       user: t,
       guildId: n,
-      location: v,
+      location: A,
       appContext: _,
       color: "danger",
-      onAction: () => y({
+      onAction: () => b({
         action: "REPORT",
-        analyticsLocations: A
+        analyticsLocations: v
       })
     })],
     [(0, c.A)({
       user: t,
-      guildId: S,
-      onSuccess: () => y({
+      guildId: I,
+      onSuccess: () => b({
         action: "COPY_USER_ID",
-        analyticsLocations: A
+        analyticsLocations: v
       })
     })]
   ];
   return N.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.f5, {
-    value: A,
+    value: v,
     children: (0, r.jsx)(a.YNO, {
       targetElementRef: g,
       renderPopout: e => {
@@ -170,14 +170,14 @@ function O(e) {
           }, t))
         })
       },
-      children: e => b(E({}, e, I))
+      children: e => y(E({}, e, S))
     })
   })
 }
 
-function A(e) {
+function v(e) {
   let t = i.useRef(null);
-  return (0, r.jsx)(O, y(E({}, e), {
+  return (0, r.jsx)(O, b(E({}, e), {
     popoutTargetRef: t,
     children: e => (0, r.jsx)(_.q3, E({
       buttonRef: t
@@ -185,9 +185,9 @@ function A(e) {
   }))
 }
 
-function v(e) {
+function A(e) {
   let t = i.useRef(null);
-  return (0, r.jsx)(O, y(E({}, e), {
+  return (0, r.jsx)(O, b(E({}, e), {
     popoutTargetRef: t,
     children: e => (0, r.jsx)(_.br, E({
       buttonRef: t

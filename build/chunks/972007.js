@@ -16,14 +16,14 @@ let u = e => {
     searchQuery: t,
     selectedUsers: n,
     limit: i
-  } = e, u = (0, s.bG)([c.A], () => c.A.getRecipientStatus()), d = (0, s.bG)([c.A], () => c.A.getReferralsRemaining()), [f, p] = r.useState(0), [_, h] = r.useState([]), [m, g] = r.useState(false), [E, b] = r.useState(false), [y, O] = r.useState(new Map);
+  } = e, u = (0, s.bG)([c.A], () => c.A.getRecipientStatus()), d = (0, s.bG)([c.A], () => c.A.getReferralsRemaining()), [f, p] = r.useState(0), [_, h] = r.useState([]), [m, g] = r.useState(false), [E, y] = r.useState(false), [b, O] = r.useState(new Map);
   a()(null != d, "Referrals remaining should not be null");
-  let A = async (e, r) => {
+  let v = async (e, r) => {
     if (!m && !E && null != e && 0 !== d) try {
       g(true);
-      let i = [...y.values()];
+      let i = [...b.values()];
       for (let [e, t] of u)
-        if (t === l.aK.PENDING && !y.has(e)) {
+        if (t === l.aK.PENDING && !b.has(e)) {
           let t = await (0, o.wz)(e);
           i.push(t)
         } let a = await (0, l.P7)(e, t, r);
@@ -36,36 +36,36 @@ let u = e => {
         return t
       }), p(a.nextIndex)
     } catch (e) {
-      b(true)
+      y(true)
     } finally {
       g(false)
     }
-  }, v = {
+  }, A = {
     limit: i,
-    getNextRows: A,
+    getNextRows: v,
     getLocalReferrals: async () => {
       let e = new Map;
       for (let [t, n] of u)
-        if (n === l.aK.PENDING && !y.has(t)) {
+        if (n === l.aK.PENDING && !b.has(t)) {
           let n = await (0, o.wz)(t);
           e.set(n.id, n)
         } O(e), h(Array.from(e.values()))
     }
-  }, S = r.useRef(v);
+  }, I = r.useRef(A);
   return r.useEffect(() => {
-    S.current = v
+    I.current = A
   }), r.useEffect(() => {
     let {
       getNextRows: e,
       limit: t,
       getLocalReferrals: n
-    } = S.current;
+    } = I.current;
     d > 0 ? e(0, t) : n()
   }, [t, d]), {
     eligibleUsers: _,
-    fetchUsers: () => A(f, i),
+    fetchUsers: () => v(f, i),
     hasError: E,
     isFetching: m,
-    resendUsers: y
+    resendUsers: b
   }
 }

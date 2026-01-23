@@ -17,39 +17,39 @@ function d(e) {
     buttonRef: t,
     dismissed: n,
     onDismiss: d,
-    renderComponent: f,
-    nudgeAlignIntoViewport: p = false,
-    skipForceHide: h = false
-  } = e, b = l.useContext(c.vG), [g, m] = l.useState(""), [A, y] = l.useState(false), O = (0, i.bG)([o.Ay], () => o.Ay.callHeaderHeight), j = l.useRef(null), v = l.useRef(0);
+    renderComponent: p,
+    nudgeAlignIntoViewport: h = false,
+    skipForceHide: f = false
+  } = e, g = l.useContext(c.vG), [m, b] = l.useState(""), [A, y] = l.useState(false), _ = (0, i.bG)([o.Ay], () => o.Ay.callHeaderHeight), O = l.useRef(null), j = l.useRef(0);
   l.useEffect(() => {
     let e = t.current;
     if (null != e) return e.addEventListener("click", d), () => e.removeEventListener("click", d)
   }), l.useEffect(() => {
-    if (!h) {
+    if (!f) {
       var e, t;
-      m(String(v.current)), y(true !== O && O < (null != (e = null == (t = j.current) ? true : t.clientHeight) ? e : 300) + 24), v.current += 1
+      b(String(j.current)), y(true !== _ && _ < (null != (e = null == (t = O.current) ? true : t.clientHeight) ? e : 300) + 24), j.current += 1
     }
-  }, [O, j, h]);
+  }, [_, O, f]);
   let {
-    preventIdle: x,
-    allowIdle: E
+    preventIdle: v,
+    allowIdle: x
   } = (0, u.o)("popup");
-  return (null == t ? true : t.current) == null ? null : (0, r.jsx)(s.Ay, {
-    children: (0, r.jsx)(a.QCO, {
+  return (null == t ? true : t.current) == null ? null : (0, r.jsx)(a.Ay, {
+    children: (0, r.jsx)(s.QCO, {
       targetRef: t,
       position: "top",
       align: "center",
       spacing: 0,
-      positionKey: g,
-      nudgeAlignIntoViewport: p,
+      positionKey: m,
+      nudgeAlignIntoViewport: h,
       children: () => (0, r.jsx)("div", {
-        ref: j,
-        onMouseOver: x,
-        onFocus: x,
-        onBlur: E,
-        onMouseLeave: E,
-        children: f({
-          hidden: A || b || n,
+        ref: O,
+        onMouseOver: v,
+        onFocus: v,
+        onBlur: x,
+        onMouseLeave: x,
+        children: p({
+          hidden: A || g || n,
           onDismiss: d
         })
       })

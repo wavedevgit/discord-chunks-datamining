@@ -46,10 +46,10 @@ let _ = Chunk64700.forwardRef(function(e, t) {
     disabled: m = false,
     hideDivider: g = false,
     showBorder: E = false,
-    borderType: b,
-    hasBackground: y = false,
+    borderType: y,
+    hasBackground: b = false,
     forcedDivider: O = false,
-    showPremiumIcon: A = false
+    showPremiumIcon: v = false
   } = e;
   return (0, r.jsx)("div", {
     className: s()(d.fz, _, {
@@ -63,13 +63,13 @@ let _ = Chunk64700.forwardRef(function(e, t) {
       className: d.D6,
       backgroundClassName: d.fr,
       isShown: E,
-      type: b,
-      hasBackground: y,
+      type: y,
+      hasBackground: b,
       children: [(0, r.jsxs)(o.zEo, {
         className: d.DD,
         id: a,
         "data-migration-pending": true,
-        children: [n, A && (0, r.jsx)(c.A, {}), i]
+        children: [n, v && (0, r.jsx)(c.A, {}), i]
       }), null != l ? (0, r.jsx)(o.ayl, {
         type: o.ayl.Types.DESCRIPTION,
         className: d.yV,

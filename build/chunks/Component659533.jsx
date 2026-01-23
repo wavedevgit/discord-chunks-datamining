@@ -83,14 +83,14 @@ let w = e => {
       size: u._3J.SIZE_32
     }, a)) : (0, r.jsx)(u.Heading, {
       variant: "heading-md/semibold",
-      className: S.n5,
+      className: I.n5,
       children: n
     });
     return (0, r.jsx)(l.m_, {
-      text: v.intl.string(v.t.UnKHdo),
+      text: A.intl.string(A.t.UnKHdo),
       shouldShow: !s,
       children: (0, r.jsx)("div", {
-        className: S.Lg,
+        className: I.Lg,
         children: o
       })
     })
@@ -101,13 +101,13 @@ let w = e => {
       placement: n
     } = e;
     return (0, r.jsxs)("div", {
-      className: S.Ip,
+      className: I.Ip,
       children: [(0, r.jsx)("div", {
-        className: S.Ej
+        className: I.Ej
       }), (0, r.jsx)("div", {
         className: s()({
-          [S.ch]: t > n,
-          [S.q_]: t === n
+          [I.ch]: t > n,
+          [I.q_]: t === n
         })
       })]
     })
@@ -117,7 +117,7 @@ let w = e => {
       userRecords: t
     } = e, n = t.length, i = n < 1 ? null : t[0], a = n < 2 ? null : t[1], s = n < 3 ? null : t[2];
     return (0, r.jsxs)("div", {
-      className: S.ZM,
+      className: I.ZM,
       children: [(0, r.jsx)(w, {
         userRecord: i,
         placement: 1
@@ -140,7 +140,7 @@ let w = e => {
     let {
       analyticsLocations: t
     } = e;
-    h.default.track(A.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+    h.default.track(v.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
       location_stack: t
     }), (0, u.mMO)(async () => {
       let {
@@ -156,7 +156,7 @@ let w = e => {
       isInSettings: t = false
     } = e, n = (0, o.bG)([E.A], () => E.A.getRecipientStatus()), {
       referralSentUsers: a
-    } = (0, b.J)(), l = i.useMemo(() => a.map(e => new _.A(e)), [a]), p = {
+    } = (0, y.J)(), l = i.useMemo(() => a.map(e => new _.A(e)), [a]), p = {
       redeemed: 0,
       converted: 0,
       sent: n.size
@@ -164,27 +164,27 @@ let w = e => {
     n.forEach(e => {
       e === g.aK.REDEEMED && p.redeemed++, e === g.aK.CONVERTED && (p.redeemed++, p.converted++)
     });
-    let h = p.sent === b.Z,
-      T = m.A.getArticleURL(A.MVz.REFERRAL_PROGRAM),
+    let h = p.sent === y.Z,
+      T = m.A.getArticleURL(v.MVz.REFERRAL_PROGRAM),
       {
         analyticsLocations: C
       } = (0, f.Ay)(d.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
       N = i.useRef(null),
-      R = p.sent / b.Z * 100,
+      R = p.sent / y.Z * 100,
       w = (0, r.jsxs)("div", {
-        className: S.hE,
-        children: [(0, r.jsx)(y.Ay, {
+        className: I.hE,
+        children: [(0, r.jsx)(b.Ay, {
           percentage: R,
-          progressCircleVariation: y.BN.NITRO_LOGO,
+          progressCircleVariation: b.BN.NITRO_LOGO,
           iconClassName: s()({
-            [S.VC]: !t,
-            [S.ER]: t
+            [I.VC]: !t,
+            [I.ER]: t
           })
         }), (0, r.jsxs)("div", {
-          className: S.Ns,
+          className: I.Ns,
           children: [(0, r.jsx)(u.Heading, {
             variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
-            className: S.R0,
+            className: I.R0,
             children: (0, O.X8)({
               hasSentAll: h
             })
@@ -197,45 +197,45 @@ let w = e => {
               referralsStatuses: p
             })
           }), (0, r.jsx)("div", {
-            className: s()(S.Fb, {
-              [S.jv]: !t
+            className: s()(I.Fb, {
+              [I.jv]: !t
             }),
             children: (0, r.jsx)(u.wLn, {
               "data-migration-pending": true,
-              className: S.r$,
+              className: I.r$,
               color: c.XD.CUSTOM,
               onClick: () => x({
                 analyticsLocations: C
               }),
               onlyShineOnHover: true,
               children: (0, r.jsxs)("div", {
-                className: S.Zn,
+                className: I.Zn,
                 children: [(0, r.jsx)("img", {
-                  src: I,
+                  src: S,
                   alt: "",
-                  className: S.QH
-                }), h ? v.intl.string(v.t.SY9tyI) : v.intl.string(v.t.Lm2nFc)]
+                  className: I.QH
+                }), h ? A.intl.string(A.t.SY9tyI) : A.intl.string(A.t.Lm2nFc)]
               })
             })
           })]
         })]
       }),
-      P = p.redeemed === b.Z;
+      P = p.redeemed === y.Z;
     return (0, r.jsx)(f.f5, {
       value: C,
       children: (0, r.jsx)("div", {
         className: s()({
-          [S.f5]: P,
-          [S.JY]: !P,
-          [S.VX]: !t,
-          [S.m$]: P && t
+          [I.f5]: P,
+          [I.JY]: !P,
+          [I.VX]: !t,
+          [I.m$]: P && t
         }),
         children: (0, r.jsx)("div", {
           ref: N,
           className: s()({
-            [S.dn]: !t,
-            [S.d_]: t,
-            [S.kS]: P
+            [I.dn]: !t,
+            [I.d_]: t,
+            [I.kS]: P
           }),
           children: w
         })

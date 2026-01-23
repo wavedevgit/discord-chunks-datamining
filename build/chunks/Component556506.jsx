@@ -1,12 +1,12 @@
 /** Chunk was on 10919 **/
-/** chunk id: 556506, original params: e,a,l (module,exports,require) **/
+/** chunk id: 556506, original params: e,n,l (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  t = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk862482 = require("./862482.jsx"),
   Chunk935462 = require("./935462.jsx"),
   Chunk571356 = require("./571356.js"),
@@ -14,89 +14,89 @@ var Chunk627968 = require("./627968.js"),
   Chunk235986 = require("./235986.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk933976 = require("./933976.js");
-let h = e => {
-  let a, l, i, {
-      body: h,
-      cancelText: b,
-      className: p,
-      confirmColor: x,
-      confirmText: j = f.intl.string(f.t.BddRzS),
-      secondaryConfirmText: g,
-      onCancel: N,
-      onClose: A,
-      onConfirm: D,
-      onConfirmSecondary: k,
+let p = e => {
+  let n, l, t, {
+      body: p,
+      cancelText: _,
+      className: x,
+      confirmColor: j,
+      confirmText: g = m.intl.string(m.t.BddRzS),
+      secondaryConfirmText: b,
+      onCancel: f,
+      onClose: N,
+      onConfirm: y,
+      onConfirmSecondary: A,
       title: C,
-      transitionState: _,
-      titleClassName: S
+      transitionState: D,
+      titleClassName: k
     } = e,
-    y = d.$n.Sizes.MEDIUM,
+    S = r.$n.Sizes.MEDIUM,
     [z, E] = s.useState(false);
   return s.useEffect(() => () => {
-    z && (null == k || k())
-  }, [z, k]), null != b && "" !== b && (a = (0, n.jsx)(d.$n, {
+    z && (null == A || A())
+  }, [z, A]), null != _ && "" !== _ && (n = (0, a.jsx)(r.$n, {
     "data-migration-pending": true,
     type: "button",
-    size: y,
-    color: d.$n.Colors.PRIMARY,
+    size: S,
+    color: r.$n.Colors.PRIMARY,
     onClick: () => {
-      null == A || A(), null == N || N()
+      null == N || N(), null == f || f()
     },
-    className: m.zr,
-    children: b
-  })), null != j && "" !== j && (l = (0, n.jsx)(d.$n, {
+    className: h.zr,
+    children: _
+  })), null != g && "" !== g && (l = (0, a.jsx)(r.$n, {
     "data-migration-pending": true,
     type: "submit",
-    color: x,
-    size: y,
-    className: m.FS,
+    color: j,
+    size: S,
+    className: h.FS,
     autoFocus: true,
-    children: j
-  })), null != g && "" !== g && (i = (0, n.jsx)(o.Checkbox, {
+    children: g
+  })), null != b && "" !== b && (t = (0, a.jsx)(c.Checkbox, {
     checked: z,
     onChange: e => E(e),
-    label: g,
+    label: b,
     labelType: "secondary"
-  })), (0, n.jsx)(r.EO, {
+  })), (0, a.jsx)(d.EO, {
     "data-migration-pending": true,
-    transitionState: _,
-    size: r.rI.DYNAMIC,
-    className: t()(p, m.kL),
+    transitionState: D,
+    size: d.rI.DYNAMIC,
+    className: i()(x, h.kL),
     "aria-label": C,
     parentComponent: "Alert",
-    children: (0, n.jsxs)("form", {
+    children: (0, a.jsxs)("form", {
       onSubmit: e => {
-        null != e && e.preventDefault(), null == A || A(), null == D || D()
+        null != e && e.preventDefault(), null == N || N(), null == y || y()
       },
-      className: m.Zd,
-      children: [(0, n.jsx)(r.rQ, {
-        children: null != C ? (0, n.jsx)(o.Heading, {
+      className: h.Zd,
+      children: [(0, a.jsx)(d.rQ, {
+        children: null != C ? (0, a.jsx)(c.Heading, {
           variant: "heading-lg/semibold",
-          className: t()(m.DD, S),
+          className: i()(h.DD, k),
           children: C
-        }) : (0, n.jsx)(o.Heading, {
+        }) : (0, a.jsx)(c.Heading, {
           variant: "heading-md/semibold",
-          className: t()(m.DD, S),
+          className: i()(h.DD, k),
           children: C
         })
-      }), (0, n.jsx)(r.$m, {
-        className: m.jE,
-        children: (0, n.jsx)(u.A, {
+      }), (0, a.jsx)(d.$m, {
+        className: h.jE,
+        children: (0, a.jsx)(u.A, {
           direction: u.A.Direction.VERTICAL,
           justify: u.A.Justify.START,
-          className: m.Qs,
-          children: null != h && (0, n.jsx)(c.E, {
+          className: h.Qs,
+          children: null != p && (0, a.jsx)(o.E, {
             variant: "text-md/normal",
-            className: m.rf,
+            className: h.rf,
             color: "text-default",
-            children: h
+            children: p
           })
         })
-      }), (0, n.jsxs)(r.jl, {
+      }), (0, a.jsxs)(d.jl, {
         justify: true,
         wrap: u.A.Wrap.WRAP,
-        className: m.Hx,
-        children: [l, a, i]
+        className: h.Hx,
+        children: [l, n, t]
       })]
     })
   })

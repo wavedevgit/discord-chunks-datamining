@@ -21,7 +21,7 @@ var Chunk141931 = require("./141931.js"),
   Chunk664335 = require("./664335.js"),
   Chunk652215 = require("./652215.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,27 +29,27 @@ function b(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let y = 1048576,
+let b = 1048576,
   O = 15 * Chunk927813.A.Millis.MINUTE,
-  A = 2 * y,
-  v = 3 * y,
-  S = 4096,
-  I = 12,
+  v = 2 * b,
+  A = 3 * b,
+  I = 4096,
+  S = 12,
   T = true,
   C = true,
   N = 15 * Chunk927813.A.Millis.MINUTE,
-  R = +y,
-  w = 1.5 * y,
+  R = +b,
+  w = 1.5 * b,
   P = 256,
   D = 12,
   x = true,
   L = 15 * Chunk927813.A.Millis.MINUTE,
-  j = .75 * y,
-  M = +y,
+  j = .75 * b,
+  M = +b,
   k = 64,
-  U = 4 * y,
+  U = 4 * b,
   G = 30 * Chunk927813.A.Millis.MINUTE,
-  V = 8 * y,
+  V = 8 * b,
   F = 60 * Chunk927813.A.Millis.MINUTE,
   B = "lastMemoryUsageRestart",
   H = +Chunk927813.A.Millis.DAY,
@@ -80,13 +80,13 @@ class K extends Chunk439372.A {
     let n = _.A.getMemoryUsageElectronProcessTypeDetails();
     if (null == n) return;
     let r = null != (e = null == (t = n.renderer) ? true : t.wss_priv_kb) ? e : 0;
-    !this._nativeHeapHooksInstalled && this._supportedNativeChannel && r > A && _.A.enablePerfMemoryHooks({
-      allocationThresholdKB: I,
+    !this._nativeHeapHooksInstalled && this._supportedNativeChannel && r > v && _.A.enablePerfMemoryHooks({
+      allocationThresholdKB: S,
       enableCallStackTracking: T
     }) && (this._nativeHeapHooksInstalled = true), this._nativeHeapHooksInstalled && await this.trackNativeHeapHookStats(r), this.doRestartIfNeeded(r)
   }
   async trackNativeHeapHookStats(e) {
-    if (e < v) return;
+    if (e < A) return;
     let t = _.A.getPerfAttributedMemory();
     if (null == t) return;
     let n = [],
@@ -120,7 +120,7 @@ class K extends Chunk439372.A {
           return (null != (n = t.total_alloc_kb) ? n : 0) - (null != (r = e.total_alloc_kb) ? r : 0)
         }).slice(0, t).filter(e => {
           var t;
-          return (null != (t = e.total_alloc_kb) ? t : 0) > S
+          return (null != (t = e.total_alloc_kb) ? t : 0) > I
         })) {
         let e = {
           memory_type: "native_heap",
@@ -270,7 +270,7 @@ class K extends Chunk439372.A {
     }
   }
   constructor(...e) {
-    super(...e), b(this, "_checkIntervalNativeHeap", null), b(this, "_checkIntervalPA", null), b(this, "_checkIntervalV8", null), b(this, "_nativeHeapHooksInstalled", false), b(this, "_paHeapHooksInstalled", false), b(this, "_v8ProfilerRunning", false), b(this, "_pushedNativeDeadlockMinidumpCount", 0), b(this, "_startupTime", performance.now()), b(this, "_supportedNativeChannel", true), b(this, "actions", {
+    super(...e), y(this, "_checkIntervalNativeHeap", null), y(this, "_checkIntervalPA", null), y(this, "_checkIntervalV8", null), y(this, "_nativeHeapHooksInstalled", false), y(this, "_paHeapHooksInstalled", false), y(this, "_v8ProfilerRunning", false), y(this, "_pushedNativeDeadlockMinidumpCount", 0), y(this, "_startupTime", performance.now()), y(this, "_supportedNativeChannel", true), y(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
     })
   }

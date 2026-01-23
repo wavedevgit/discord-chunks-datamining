@@ -2,7 +2,7 @@
 /** chunk id: 665816, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  i: () => b
+  i: () => y
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -67,7 +67,7 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     questId: t,
     fallbackReason: n,

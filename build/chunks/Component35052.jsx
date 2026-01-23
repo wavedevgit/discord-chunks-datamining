@@ -1,7 +1,7 @@
 /** Chunk was on 41469 **/
 /** chunk id: 35052, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => x
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -23,7 +23,7 @@ var Chunk793574 = require("./793574.js"),
   Chunk316464 = require("./316464.jsx"),
   Chunk818348 = require("./818348.js");
 
-function w(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -42,7 +42,7 @@ function w(e) {
   return e
 }
 
-function v(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,12 +54,12 @@ function v(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let x = [{
+let v = [{
   key: null,
-  renderStep: e => (0, n.jsx)(O.B, w({}, e))
+  renderStep: e => (0, n.jsx)(O.B, h({}, e))
 }, {
   key: Chunk166532.pn.ADD_PAYMENT_STEPS,
-  renderStep: e => (0, n.jsx)(p.x, v(w({}, e), {
+  renderStep: e => (0, n.jsx)(p.x, w(h({}, e), {
     onReturn: () => {
       0 === Object.keys(d.A.paymentSources).length ? e.handleClose() : e.handleStepChange(u.pn.REVIEW, {
         trackedFromStep: u.pn.ADD_PAYMENT_STEPS
@@ -74,13 +74,13 @@ let x = [{
   renderStep: () => (0, n.jsx)(f.A, {})
 }, {
   key: Chunk166532.pn.REVIEW,
-  renderStep: e => (0, n.jsx)(b._M, w({}, e))
+  renderStep: e => (0, n.jsx)(b._M, h({}, e))
 }, {
   key: Chunk166532.pn.CONFIRM,
-  renderStep: e => (0, n.jsx)(j.A, w({}, e))
+  renderStep: e => (0, n.jsx)(j.A, h({}, e))
 }];
 
-function h(e) {
+function x(e) {
   let {
     guildProductContext: t,
     sourceAnalyticsLocations: r,
@@ -104,18 +104,18 @@ function h(e) {
   }(e, ["guildProductContext", "sourceAnalyticsLocations", "applicationId"]), {
     analyticsLocations: f
   } = (0, l.Ay)(r, o.A.GUILD_PRODUCT_PAYMENT_MODAL);
-  return (0, n.jsx)(g.u, v(w({}, t), {
+  return (0, n.jsx)(g.u, w(h({}, t), {
     children: (0, n.jsx)(l.f5, {
       value: f,
       children: (0, n.jsx)(i.PaymentContextProvider, {
-        stepConfigs: x,
+        stepConfigs: v,
         applicationId: u,
         skuIDs: [p.skuId],
         activeSubscription: null,
         purchaseType: m.VV.ONE_TIME,
         children: (0, n.jsx)(a.Qt, {
           children: (0, n.jsx)(c.dX, {
-            children: (0, n.jsx)(s.PaymentModal, w({
+            children: (0, n.jsx)(s.PaymentModal, h({
               initialPlanId: null,
               analyticsLocations: f,
               renderHeader: P.j

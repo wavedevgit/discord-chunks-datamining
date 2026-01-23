@@ -1,7 +1,7 @@
 /** Chunk was on 3489 **/
-/** chunk id: 225315, original params: a,e,d (module,exports,require) **/
+/** chunk id: 225315, original params: e,t,_ (module,exports,require) **/
 require.d(exports, {
-  default: () => o
+  default: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -9,29 +9,29 @@ var Chunk612479 = require("./612479.jsx"),
   Chunk521732 = require("./521732.js"),
   Chunk670455 = require("./670455.js"),
   Chunk985018 = require("./985018.jsx");
-let i = [Chunk521732.tk.OTHER];
+let n = [Chunk521732.tk.OTHER];
 
-function o(a) {
+function b(e) {
   let {
-    transitionState: e,
-    startRating: d,
-    onClose: o,
-    onSubmit: n
-  } = a;
-  return (0, t.jsx)(f.A, {
+    transitionState: t,
+    startRating: _,
+    onClose: b,
+    onSubmit: s
+  } = e;
+  return (0, o.jsx)(c.A, {
     modalType: "summary",
-    header: r.intl.string(r.t.hghcMh),
-    body: r.intl.string(r.t.QFU785),
-    problemTitle: r.intl.string(r.t.CtiHPm),
-    onSubmit: n,
-    onClose: o,
-    ratingOptions: [c.P0.GOOD, c.P0.BAD],
+    header: a.intl.string(a.t.hghcMh),
+    body: a.intl.string(a.t.QFU785),
+    problemTitle: a.intl.string(a.t.CtiHPm),
+    onSubmit: s,
+    onClose: b,
+    ratingOptions: [r.P0.GOOD, r.P0.BAD],
     ratingEmojiKind: "thumb",
-    transitionState: e,
-    problems: (0, b.j0)(),
-    freeformNeededProblems: i,
-    otherKey: b.tk.OTHER,
-    startRating: d,
+    transitionState: t,
+    problems: (0, i.j0)(),
+    freeformNeededProblems: n,
+    otherKey: i.tk.OTHER,
+    startRating: _,
     hideDontShowAgainCheckbox: true
   })
 }

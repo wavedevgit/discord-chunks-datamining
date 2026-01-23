@@ -95,7 +95,7 @@ function el() {
     t = (0, Y.W)(),
     n = (0, K.A)(),
     l = (0, B.k)(),
-    c = (0, A.w)(),
+    c = (0, f.w)(),
     u = i.useCallback(() => {
       (0, p.showToast)((0, p.createToast)(ee.intl.string(ee.t["EDYbS+"]), p.ToastType.FAILURE))
     }, []),
@@ -104,30 +104,30 @@ function el() {
     } = (0, H.t)({
       onError: u
     }),
-    f = (0, m.A)("message-requests-list"),
+    h = (0, A.A)("message-requests-list"),
     {
-      channelId: h
+      channelId: g
     } = (0, F.N)(),
-    g = i.useCallback(() => {
+    m = i.useCallback(() => {
       d(n.map(e => e.channel.id))
     }, [n, d]),
-    b = i.useCallback(e => {
+    _ = i.useCallback(e => {
       var t, i;
       let {
         row: s
       } = e, o = n[s], c = null == (i = n[s + 1]) || null == (t = i.channel) ? true : t.id, u = o.channel.id;
-      return (0, r.jsx)(q.A, {
+      return (0, r.jsx)(z.A, {
         index: s,
         className: a()({
-          [et.wH]: null != h && h === u,
-          [et.wZ]: null != h && h === c
+          [et.wH]: null != g && g === u,
+          [et.wZ]: null != g && g === c
         }),
         channel: o.channel,
         user: o.user,
         hasSingleMessageRequest: l
       }, u)
-    }, [l, n, h]),
-    _ = i.useCallback(() => (0, r.jsxs)(E.A, {
+    }, [l, n, g]),
+    b = i.useCallback(() => (0, r.jsxs)(E.A, {
       className: et.Gf,
       children: [t > 0 ? ee.intl.formatToPlainString(ee.t.rA4iWY, {
         count: t
@@ -139,19 +139,19 @@ function el() {
           tag: "span",
           children: "•"
         }), (0, r.jsx)(p.QWc, {
-          onClick: g,
+          onClick: m,
           textVariant: "text-sm/normal",
           text: ee.intl.string(ee.t.p6t7RC),
           "aria-label": ee.intl.string(ee.t.p6t7RC)
         })]
       }) : null]
-    }, "title"), [t, g, c]);
+    }, "title"), [t, m, c]);
   return (n.length !== t && S.A.increment({
     name: o.K.MESSAGE_REQUEST_COUNT_DRIFT
-  }), 0 === n.length) ? (0, r.jsx)(W.A, {
+  }), 0 === n.length) ? (0, r.jsx)(q.A, {
     section: X.zz.REQUESTS
   }) : (0, r.jsx)(s.hD, {
-    navigator: f,
+    navigator: h,
     children: (0, r.jsx)(s.PR, {
       children: t => {
         let {
@@ -186,8 +186,8 @@ function el() {
           paddingBottom: 24,
           sectionHeight: 26,
           rowHeight: 73,
-          renderSection: _,
-          renderRow: b,
+          renderSection: b,
+          renderRow: _,
           sections: [n.length],
           chunkSize: 30,
           fade: true
@@ -204,11 +204,11 @@ function ea(e) {
   } = e, i = (0, c.bG)([R.Ay], () => R.Ay.getSidebarState(R.fe)), l = (0, c.bG)([D.A], () => D.A.getChannel(null == i ? true : i.channelId));
   if (null == i || i.type !== T.PE.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
   let a = t - Z.ItT;
-  return (0, r.jsx)(b.A, {
-    sidebarType: b.X.MessageRequestSidebar,
+  return (0, r.jsx)(_.A, {
+    sidebarType: _.X.MessageRequestSidebar,
     maxWidth: a,
     onWidthChange: n,
-    children: (0, r.jsx)(_.A, {
+    children: (0, r.jsx)(b.A, {
       channel: l,
       baseChannelId: R.fe
     })
@@ -231,7 +231,7 @@ let es = e => {
           align: "center"
         },
         shouldShow: true,
-        onRequestClose: () => l(J.i.USER_DISMISS),
+        onRequestClose: () => l($.i.USER_DISMISS),
         targetElementRef: e.targetElementRef
       };
       return i === u.M.MESSAGE_REQUEST_SETTINGS_COACH_MARK ? (0, r.jsxs)(r.Fragment, {
@@ -240,7 +240,7 @@ let es = e => {
           body: ee.intl.string(ee.t.apPgJG),
           actions: [{
             text: ee.intl.string(ee.t.LNoAQW),
-            onClick: () => l(J.i.TAKE_ACTION)
+            onClick: () => l($.i.TAKE_ACTION)
           }]
         })) : (0, r.jsx)(d.AM, ei(er({}, a), {
           title: ee.intl.string(ee.t.hRT8tc),
@@ -252,12 +252,12 @@ let es = e => {
               let t = (0, w.WJ)("MessageRequestCoachmark");
               (0, L.openUserSettings)(t ? P.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING : P.X.CONTENT_AND_SOCIAL_PANEL, {
                 section: Z.nc_.CONTENT_AND_SOCIAL,
-                scrollPosition: t ? true : $.d1.MESSAGE_REQUESTS_V2
-              }), l(J.i.TAKE_ACTION)
+                scrollPosition: t ? true : J.d1.MESSAGE_REQUESTS_V2
+              }), l($.i.TAKE_ACTION)
             }
           }, {
             text: ee.intl.string(ee.t.LNoAQW),
-            onClick: () => l(J.i.USER_DISMISS),
+            onClick: () => l($.i.USER_DISMISS),
             variant: "secondary"
           }]
         }))]
@@ -276,28 +276,28 @@ let ec = (0, Chunk456412.A)(function(e) {
   let {
     width: t
   } = e, n = (0, Y.W)();
-  (0, g.Ay)(() => {
-    f.I(Z.BVt.MESSAGE_REQUESTS), (0, j.d)("message-requests"), k.default.track(Z.HAw.MESSAGE_REQUESTS_VIEWED, {
+  (0, m.Ay)(() => {
+    h.I(Z.BVt.MESSAGE_REQUESTS), (0, j.d)("message-requests"), k.default.track(Z.HAw.MESSAGE_REQUESTS_VIEWED, {
       num_message_requests: n
     }), S.A.increment({
       name: o.K.MESSAGE_REQUEST_VIEW
     })
   });
   let l = (0, c.bG)([x.A], () => x.A.theme),
-    s = (0, z.I)(),
+    s = (0, W.I)(),
     [u, d] = i.useState(false),
-    h = (0, c.bG)([R.Ay], () => {
+    g = (0, c.bG)([R.Ay], () => {
       let e = R.Ay.getSidebarState(R.fe);
       return null != e && e.type === T.PE.VIEW_MESSAGE_REQUEST ? e : null
     }),
-    A = null == h ? true : h.channelId,
-    m = null != h,
-    b = (0, G.c)(A),
-    _ = (0, U.A)(A),
+    f = null == g ? true : g.channelId,
+    A = null != g,
+    _ = (0, G.c)(f),
+    b = (0, U.A)(f),
     E = i.useRef(null);
   i.useEffect(() => {
-    null != A && !b && _ && m && ((0, C.iN)(A), N.A.closeChannelSidebar(R.fe))
-  }, [A, _, m, b]);
+    null != f && !_ && b && A && ((0, C.iN)(f), N.A.closeChannelSidebar(R.fe))
+  }, [f, b, A, _]);
   let [y, I] = i.useState(X.zz.REQUESTS), P = e => {
     I(e)
   };
@@ -306,8 +306,8 @@ let ec = (0, Chunk456412.A)(function(e) {
   }), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: a()(en.TE, et.kL, {
-        [en.js]: m,
-        [en.jl]: m && u
+        [en.js]: A,
+        [en.jl]: A && u
       }),
       children: [(0, r.jsx)(p.NPJ, {
         theme: l,
@@ -347,7 +347,7 @@ let ec = (0, Chunk456412.A)(function(e) {
           section: y
         })
       })]
-    }), m && (0, r.jsx)(ea, {
+    }), A && (0, r.jsx)(ea, {
       pageWidth: t,
       onSidebarResize: (e, t) => {
         d(t)

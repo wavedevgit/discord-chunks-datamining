@@ -76,7 +76,7 @@ module.exports = function(e) {
     m = ["false", "null", "true"],
     g = ["__CLASS__", "__DIR__", "__FILE__", "__FUNCTION__", "__COMPILER_HALT_OFFSET__", "__LINE__", "__METHOD__", "__NAMESPACE__", "__TRAIT__", "die", "echo", "exit", "include", "include_once", "print", "require", "require_once", "array", "abstract", "and", "as", "binary", "bool", "boolean", "break", "callable", "case", "catch", "class", "clone", "const", "continue", "declare", "default", "do", "double", "else", "elseif", "empty", "enddeclare", "endfor", "endforeach", "endif", "endswitch", "endwhile", "enum", "eval", "extends", "final", "finally", "float", "for", "foreach", "from", "global", "goto", "if", "implements", "instanceof", "insteadof", "int", "integer", "interface", "isset", "iterable", "list", "match|0", "mixed", "new", "never", "object", "or", "private", "protected", "public", "readonly", "real", "return", "string", "switch", "throw", "trait", "try", "unset", "use", "var", "void", "while", "xor", "yield"],
     E = ["Error|0", "AppendIterator", "ArgumentCountError", "ArithmeticError", "ArrayIterator", "ArrayObject", "AssertionError", "BadFunctionCallException", "BadMethodCallException", "CachingIterator", "CallbackFilterIterator", "CompileError", "Countable", "DirectoryIterator", "DivisionByZeroError", "DomainException", "EmptyIterator", "ErrorException", "Exception", "FilesystemIterator", "FilterIterator", "GlobIterator", "InfiniteIterator", "InvalidArgumentException", "IteratorIterator", "LengthException", "LimitIterator", "LogicException", "MultipleIterator", "NoRewindIterator", "OutOfBoundsException", "OutOfRangeException", "OuterIterator", "OverflowException", "ParentIterator", "ParseError", "RangeException", "RecursiveArrayIterator", "RecursiveCachingIterator", "RecursiveCallbackFilterIterator", "RecursiveDirectoryIterator", "RecursiveFilterIterator", "RecursiveIterator", "RecursiveIteratorIterator", "RecursiveRegexIterator", "RecursiveTreeIterator", "RegexIterator", "RuntimeException", "SeekableIterator", "SplDoublyLinkedList", "SplFileInfo", "SplFileObject", "SplFixedArray", "SplHeap", "SplMaxHeap", "SplMinHeap", "SplObjectStorage", "SplObserver", "SplPriorityQueue", "SplQueue", "SplStack", "SplSubject", "SplTempFileObject", "TypeError", "UnderflowException", "UnexpectedValueException", "UnhandledMatchError", "ArrayAccess", "BackedEnum", "Closure", "Fiber", "Generator", "Iterator", "IteratorAggregate", "Serializable", "Stringable", "Throwable", "Traversable", "UnitEnum", "WeakReference", "WeakMap", "Directory", "__PHP_Incomplete_Class", "parent", "php_user_filter", "self", "static", "stdClass"],
-    b = {
+    y = {
       keyword: g,
       literal: (e => {
         let t = [];
@@ -86,20 +86,20 @@ module.exports = function(e) {
       })(m),
       built_in: E
     },
-    y = e => e.map(e => e.replace(/\|\d+$/, "")),
+    b = e => e.map(e => e.replace(/\|\d+$/, "")),
     O = {
       variants: [{
-        match: [/new/, t.concat(p, "+"), t.concat("(?!", y(E).join("\\b|"), "\\b)"), i],
+        match: [/new/, t.concat(p, "+"), t.concat("(?!", b(E).join("\\b|"), "\\b)"), i],
         scope: {
           1: "keyword",
           4: "title.class"
         }
       }]
     },
-    A = t.concat(r, "\\b(?!\\()"),
-    v = {
+    v = t.concat(r, "\\b(?!\\()"),
+    A = {
       variants: [{
-        match: [t.concat(/::/, t.lookahead(/(?!class\b)/)), A],
+        match: [t.concat(/::/, t.lookahead(/(?!class\b)/)), v],
         scope: {
           2: "variable.constant"
         }
@@ -109,7 +109,7 @@ module.exports = function(e) {
           2: "variable.language"
         }
       }, {
-        match: [i, t.concat(/::/, t.lookahead(/(?!class\b)/)), A],
+        match: [i, t.concat(/::/, t.lookahead(/(?!class\b)/)), v],
         scope: {
           1: "title.class",
           3: "variable.constant"
@@ -127,27 +127,27 @@ module.exports = function(e) {
         }
       }]
     },
-    S = {
+    I = {
       scope: "attr",
       match: t.concat(r, t.lookahead(":"), t.lookahead(/(?!::)/))
     },
-    I = {
+    S = {
       relevance: 0,
       begin: /\(/,
       end: /\)/,
-      keywords: b,
-      contains: [S, s, v, e.C_BLOCK_COMMENT_MODE, _, h, O]
+      keywords: y,
+      contains: [I, s, A, e.C_BLOCK_COMMENT_MODE, _, h, O]
     },
     T = {
       relevance: 0,
-      match: [/\b/, t.concat("(?!fn\\b|function\\b|", y(g).join("\\b|"), "|", y(E).join("\\b|"), "\\b)"), r, t.concat(p, "*"), t.lookahead(/(?=\()/)],
+      match: [/\b/, t.concat("(?!fn\\b|function\\b|", b(g).join("\\b|"), "|", b(E).join("\\b|"), "\\b)"), r, t.concat(p, "*"), t.lookahead(/(?=\()/)],
       scope: {
         3: "title.function.invoke"
       },
-      contains: [I]
+      contains: [S]
     };
-  I.contains.push(T);
-  let C = [S, v, e.C_BLOCK_COMMENT_MODE, _, h, O],
+  S.contains.push(T);
+  let C = [I, A, e.C_BLOCK_COMMENT_MODE, _, h, O],
     N = {
       begin: t.concat(/#\[\s*\\?/, t.either(i, a)),
       beginScope: "meta",
@@ -176,7 +176,7 @@ module.exports = function(e) {
     };
   return {
     case_insensitive: false,
-    keywords: b,
+    keywords: y,
     contains: [N, e.HASH_COMMENT_MODE, e.COMMENT("//", "$"), e.COMMENT("/\\*", "\\*/", {
       contains: [{
         scope: "doctag",
@@ -197,7 +197,7 @@ module.exports = function(e) {
     }, o, {
       scope: "variable.language",
       match: /\$this\b/
-    }, s, T, v, {
+    }, s, T, A, {
       match: [/const/, /\s/, r],
       scope: {
         1: "keyword",
@@ -221,8 +221,8 @@ module.exports = function(e) {
         end: "\\)",
         excludeBegin: true,
         excludeEnd: true,
-        keywords: b,
-        contains: ["self", N, s, v, e.C_BLOCK_COMMENT_MODE, _, h]
+        keywords: y,
+        contains: ["self", N, s, A, e.C_BLOCK_COMMENT_MODE, _, h]
       }]
     }, {
       scope: "class",

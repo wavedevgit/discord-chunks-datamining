@@ -50,9 +50,9 @@ function u(e) {
     className: u,
     children: d,
     onClick: p,
-    ref: f,
-    noBackground: h = false
-  } = e, A = function(e, t) {
+    ref: h,
+    noBackground: g = false
+  } = e, f = function(e, t) {
     if (null == e) return {};
     var n, r, i, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -70,7 +70,7 @@ function u(e) {
     return l
   }(e, ["padded", "inset", "active", "className", "children", "onClick", "ref", "noBackground"]);
   return null != p ? (0, r.jsx)(a.DUT, c(o({
-    innerRef: f,
+    innerRef: h,
     onClick: p,
     tabIndex: null != p ? 0 : false,
     className: l()(u, {
@@ -79,20 +79,20 @@ function u(e) {
       [s.jC]: t,
       [s.vu]: i,
       [s.bG]: null != p,
-      [s._$]: h
+      [s._$]: g
     })
-  }, A), {
+  }, f), {
     children: d
   })) : (0, r.jsx)("div", c(o({
-    ref: f,
+    ref: h,
     className: l()(u, {
       [s.A7]: !n,
       [s.C5]: n,
       [s.jC]: t,
       [s.vu]: i,
-      [s._$]: h
+      [s._$]: g
     })
-  }, A), {
+  }, f), {
     children: d
   }))
 }

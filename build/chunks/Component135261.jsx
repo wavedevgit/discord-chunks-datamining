@@ -2,7 +2,7 @@
 /** chunk id: 135261, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b,
+  A: () => y,
   P: () => E
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -31,7 +31,7 @@ function E(e) {
   } = e, l = null == (t = n.current) ? true : t.getSlateEditor();
   return null == l ? null : (0, r.jsxs)("div", {
     className: g.Uo,
-    children: [(0, r.jsx)(y, {
+    children: [(0, r.jsx)(b, {
       slateEditor: l,
       markdownSyntax: "bold",
       children: (0, r.jsx)(c.$oz, {
@@ -39,7 +39,7 @@ function E(e) {
         color: "currentColor",
         className: s()(g.Kk, a)
       })
-    }), (0, r.jsx)(y, {
+    }), (0, r.jsx)(b, {
       slateEditor: l,
       markdownSyntax: "italics",
       children: (0, r.jsx)(c.yOR, {
@@ -47,7 +47,7 @@ function E(e) {
         color: "currentColor",
         className: s()(g.Kk, a)
       })
-    }), (0, r.jsx)(y, {
+    }), (0, r.jsx)(b, {
       slateEditor: l,
       markdownSyntax: "strikethrough",
       children: (0, r.jsx)(c.t64, {
@@ -65,7 +65,7 @@ function E(e) {
         color: "currentColor",
         className: s()(g.Kk, a)
       })
-    }), !(null == i ? true : i.disableInlineCode) && (0, r.jsx)(y, {
+    }), !(null == i ? true : i.disableInlineCode) && (0, r.jsx)(b, {
       slateEditor: l,
       markdownSyntax: "inlineCode",
       children: (0, r.jsx)(c.GaO, {
@@ -75,7 +75,7 @@ function E(e) {
         color: "currentColor",
         className: s()(g.Kk, a)
       })
-    }), (0, r.jsx)(y, {
+    }), (0, r.jsx)(b, {
       slateEditor: l,
       markdownSyntax: "spoiler",
       children: (0, r.jsx)(c.bMW, {
@@ -86,22 +86,22 @@ function E(e) {
     })]
   })
 }
-let b = Chunk64700.forwardRef(function(e, t) {
+let y = Chunk64700.forwardRef(function(e, t) {
   var n;
   let {
     editorRef: a,
     containerRef: s,
     options: c
-  } = e, f = i.useRef(null), [p, _] = i.useState(false), m = i.useRef(null), b = i.useContext(d.Ay), y = i.useCallback(() => {
+  } = e, f = i.useRef(null), [p, _] = i.useState(false), m = i.useRef(null), y = i.useContext(d.Ay), b = i.useCallback(() => {
     _(false), clearTimeout(m.current)
   }, []), O = i.useCallback(e => {
     var t;
-    let n = b.renderWindow;
-    e.target instanceof n.Node && (null == (t = f.current) ? true : t.contains(e.target)) || y()
-  }, [b, y]), v = i.useCallback(e => {
-    let t = b.renderWindow;
+    let n = y.renderWindow;
+    e.target instanceof n.Node && (null == (t = f.current) ? true : t.contains(e.target)) || b()
+  }, [y, b]), A = i.useCallback(e => {
+    let t = y.renderWindow;
     if (e.target instanceof t.Element)
-      if (0 !== e.button) y();
+      if (0 !== e.button) b();
       else {
         var n;
         let r = e.target instanceof t.Node && (null == (n = f.current) ? true : n.contains(e.target));
@@ -112,19 +112,19 @@ let b = Chunk64700.forwardRef(function(e, t) {
           _(r || null != n && null != i && i.contains(n))
         }, 100)
       }
-    else y()
-  }, [b, s, y]);
+    else b()
+  }, [y, s, b]);
   i.useImperativeHandle(t, () => ({
-    hide: y
-  }), [y]), i.useEffect(() => {
-    let e = b.renderWindow;
-    return e.document.addEventListener("keydown", y), e.document.addEventListener("mousedown", O), e.document.addEventListener("mouseup", v), e.addEventListener("focus", y), e.addEventListener("blur", y), () => {
-      e.document.removeEventListener("keydown", y), e.document.removeEventListener("mousedown", O), e.document.removeEventListener("mouseup", v), e.removeEventListener("focus", y), e.removeEventListener("blur", y), clearTimeout(m.current)
+    hide: b
+  }), [b]), i.useEffect(() => {
+    let e = y.renderWindow;
+    return e.document.addEventListener("keydown", b), e.document.addEventListener("mousedown", O), e.document.addEventListener("mouseup", A), e.addEventListener("focus", b), e.addEventListener("blur", b), () => {
+      e.document.removeEventListener("keydown", b), e.document.removeEventListener("mousedown", O), e.document.removeEventListener("mouseup", A), e.removeEventListener("focus", b), e.removeEventListener("blur", b), clearTimeout(m.current)
     }
-  }, [b, y, O, v]);
+  }, [y, b, O, A]);
   let {
-    x: S,
-    y: I
+    x: I,
+    y: S
   } = i.useMemo(() => {
     var e, t, n, r;
     let i = null == (t = a.current) ? true : t.getSlateEditor();
@@ -148,19 +148,19 @@ let b = Chunk64700.forwardRef(function(e, t) {
     m.setStart(c.anchorNode, c.anchorOffset), m.setEnd(c.focusNode, c.focusOffset);
     let g = m.getBoundingClientRect(),
       E = d.x === _.x,
-      b = E ? g.x : Math.min(d.x, _.x),
-      y = E ? g.x + g.width : Math.max(d.x, _.x),
+      y = E ? g.x : Math.min(d.x, _.x),
+      b = E ? g.x + g.width : Math.max(d.x, _.x),
       O = null != (e = null == (r = s.current) || null == (n = r.getBoundingClientRect()) ? true : n.y) ? e : 0;
     return {
-      x: b + (y - b) / 2,
+      x: y + (b - y) / 2,
       y: Math.max(O, Math.min(_.y, d.y))
     }
   }, [s, p, a]), [T, C] = i.useState(0), [N, R] = i.useState(0);
   if (i.useLayoutEffect(() => {
-      if (null == S || null == I || null == f.current) return;
+      if (null == I || null == S || null == f.current) return;
       let e = f.current.getBoundingClientRect();
       R(e.width / 2), C(e.height + 12)
-    }, [S, I]), null == S || null == I) return null;
+    }, [I, S]), null == I || null == S) return null;
   let w = null == (n = a.current) ? true : n.getSlateEditor();
   return null == w ? null : (0, r.jsx)(u.Ay, {
     children: (0, r.jsxs)("div", {
@@ -168,8 +168,8 @@ let b = Chunk64700.forwardRef(function(e, t) {
       ref: f,
       className: g.KE,
       style: {
-        top: I - T,
-        left: S - N
+        top: S - T,
+        left: I - N
       },
       onMouseDown: e => {
         e.stopPropagation()
@@ -177,7 +177,7 @@ let b = Chunk64700.forwardRef(function(e, t) {
       onMouseUp: e => {
         e.stopPropagation()
       },
-      children: [(0, r.jsx)(A, {
+      children: [(0, r.jsx)(v, {
         slateEditor: w
       }), (0, r.jsx)(E, {
         editorRef: a,
@@ -187,7 +187,7 @@ let b = Chunk64700.forwardRef(function(e, t) {
   })
 });
 
-function y(e) {
+function b(e) {
   let {
     slateEditor: t,
     markdownSyntax: n,
@@ -223,7 +223,7 @@ function O(e) {
   })
 }
 
-function A(e) {
+function v(e) {
   var t;
   let {
     slateEditor: n

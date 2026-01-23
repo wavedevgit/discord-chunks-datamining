@@ -2,7 +2,7 @@
 /** chunk id: 309198, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -56,16 +56,16 @@ function E(e, t) {
   }), e
 }
 
-function b(e) {
+function y(e) {
   let t, n, {
       currentUser: h,
       togglingSMS: g
     } = e,
-    [b, y] = i.useState(false),
+    [y, b] = i.useState(false),
     O = i.useCallback(e => {
-      e.preventDefault(), y(!b)
-    }, [b]),
-    A = i.useCallback(function() {
+      e.preventDefault(), b(!y)
+    }, [y]),
+    v = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
       (0, a.qfG)(t => (0, r.jsx)(c.default, m({
         reason: o.d.USER_SETTINGS_UPDATE
@@ -73,15 +73,15 @@ function b(e) {
         modalKey: f.V
       })
     }, []),
-    v = i.useCallback(() => {
-      A()
-    }, [A]),
-    S = i.useCallback(() => {
-      null == h.phone ? A({
+    A = i.useCallback(() => {
+      v()
+    }, [v]),
+    I = i.useCallback(() => {
+      null == h.phone ? v({
         onAddedPhone: s.A.enableSMS
       }) : s.A.enableSMS()
-    }, [h, A]),
-    I = i.useCallback(() => {
+    }, [h, v]),
+    S = i.useCallback(() => {
       (0, a.qfG)(e => (0, r.jsx)(l.default, E(m({}, e), {
         handleSubmit: s.A.disableSMS,
         title: p.intl.string(p.t.KLWnit),
@@ -92,7 +92,7 @@ function b(e) {
     C = null != h.phone,
     N = h.hasFlag(d.nhx.MFA_SMS);
   if (C || N) {
-    let e = b ? h.phone : T(h.phone);
+    let e = y ? h.phone : T(h.phone);
     n = (0, r.jsxs)(a.Text, {
       variant: "text-sm/normal",
       children: [p.intl.format(p.t.PXVoEO, {
@@ -100,7 +100,7 @@ function b(e) {
       }), (0, r.jsx)(a.MzZ, {
         onClick: O,
         className: _.vN,
-        children: b ? p.intl.string(p.t.FfltIN) : p.intl.string(p.t.llArAg)
+        children: y ? p.intl.string(p.t.FfltIN) : p.intl.string(p.t.llArAg)
       })]
     })
   }
@@ -109,7 +109,7 @@ function b(e) {
     size: "sm",
     text: p.intl.string(p.t.KLWnit),
     loading: g,
-    onClick: I
+    onClick: S
   });
   else {
     let e = (0, u.B)(h);
@@ -119,14 +119,14 @@ function b(e) {
         variant: "primary",
         size: "sm",
         text: null != e ? e : p.intl.string(p.t.DZQe23),
-        onClick: S,
+        onClick: I,
         loading: g,
         disabled: null != e
       }), C ? (0, r.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",
         text: p.intl.string(p.t.Ulqq6K),
-        onClick: v
+        onClick: A
       }) : null]
     })
   }

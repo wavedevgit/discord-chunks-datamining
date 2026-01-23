@@ -2,9 +2,9 @@
 /** chunk id: 557582, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => v,
+  Ay: () => A,
   Uq: () => O,
-  sC: () => A
+  sC: () => v
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -34,20 +34,20 @@ function O(e) {
     isNew: m,
     guildEvent: g,
     eventPreview: O,
-    recurrenceId: A
-  } = e, v = (0, p.A)(i, g.id, A), S = null != g ? g : O, I = (0, s.bG)([c.Ay], () => c.Ay.getNick(i, null == n ? true : n.id), [i, n]);
-  A = null == S || null != A ? A : (0, h.G3)(S);
+    recurrenceId: v
+  } = e, A = (0, p.A)(i, g.id, v), I = null != g ? g : O, S = (0, s.bG)([c.Ay], () => c.Ay.getNick(i, null == n ? true : n.id), [i, n]);
+  v = null == I || null != v ? v : (0, h.G3)(I);
   let {
     startTime: T
-  } = (0, f.Ay)(null != g ? g : O, A), C = (0, d.A)(A, g.id), N = (null == S ? true : S.scheduled_start_time) != null ? (0, h.j)(C, T, new Date(S.scheduled_start_time)) : null;
-  if (null == S) return null;
+  } = (0, f.Ay)(null != g ? g : O, v), C = (0, d.A)(v, g.id), N = (null == I ? true : I.scheduled_start_time) != null ? (0, h.j)(C, T, new Date(I.scheduled_start_time)) : null;
+  if (null == I) return null;
   let {
     entity_type: R,
     status: w,
     recurrence_rule: P
-  } = S;
+  } = I;
   return (0, r.jsxs)("div", {
-    className: a()(y.II, t),
+    className: a()(b.II, t),
     children: [(0, r.jsx)(E.L, {
       startTime: T.toISOString(),
       status: null != N ? N : w,
@@ -55,40 +55,40 @@ function O(e) {
       isNew: m,
       recurrenceRule: (0, _.Sn)(P),
       guildEventId: g.id,
-      recurrenceId: A
+      recurrenceId: v
     }), (0, r.jsx)("div", {
-      className: y.jH
+      className: b.jH
     }), null != n && (0, r.jsx)(o.m, {
-      text: b.intl.formatToPlainString(b.t["+3iypQ"], {
-        username: null != I ? I : u.Ay.getName(n)
+      text: y.intl.formatToPlainString(y.t["+3iypQ"], {
+        username: null != S ? S : u.Ay.getName(n)
       }),
       children: (0, r.jsx)(l.euF, {
         src: n.getAvatarURL(i, 20),
         size: l._3J.SIZE_20,
-        "aria-label": null != I ? I : n.username,
-        className: y.xL
+        "aria-label": null != S ? S : n.username,
+        className: b.xL
       })
     }), (0, r.jsx)(o.m, {
-      text: b.intl.formatToPlainString(b.t["+DLsD8"], {
-        count: v
+      text: y.intl.formatToPlainString(y.t["+DLsD8"], {
+        count: A
       }),
       children: (0, r.jsxs)("div", {
-        className: y.T_,
+        className: b.T_,
         children: [(0, r.jsx)(l.nFg, {
           size: "xxs",
           color: "currentColor",
-          className: y.pO
+          className: b.pO
         }), (0, r.jsx)(l.Text, {
           color: "text-default",
           variant: "text-sm/normal",
-          children: v
+          children: A
         })]
       })
     })]
   })
 }
 
-function A(e) {
+function v(e) {
   let {
     headerVariant: t = "heading-lg/medium",
     descriptionClassName: n,
@@ -100,34 +100,34 @@ function A(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: a()({
-      [y.dT]: null != u
+      [b.dT]: null != u
     }),
     children: [(0, r.jsxs)("div", {
       className: a()({
-        [y.FD]: null != u
+        [b.FD]: null != u
       }),
       children: [(0, r.jsx)(l.Heading, {
         variant: t,
         selectable: true,
-        className: y.eq,
+        className: b.eq,
         children: i
       }), null != s && (0, r.jsx)(m.A, {
         description: s,
-        className: a()(n, y.h_),
+        className: a()(n, b.h_),
         truncate: o,
         guildId: c
       })]
     }), null != u && (0, r.jsx)("div", {
-      className: y.iT,
+      className: b.iT,
       children: (0, r.jsx)(g.A, {
         source: u,
-        className: y.xn
+        className: b.xn
       })
     })]
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     headerVariant: t,
     descriptionClassName: n,
@@ -143,22 +143,22 @@ function v(e) {
     recurrenceId: p
   } = e;
   return (0, r.jsxs)("div", {
-    className: y.kL,
+    className: b.kL,
     children: [null != o ? (0, r.jsx)("div", {
-      className: y.iT,
+      className: b.iT,
       children: (0, r.jsx)(g.A, {
         source: o,
-        className: y.xn
+        className: b.xn
       })
     }) : null, (0, r.jsx)(O, {
-      className: y.kj,
+      className: b.kj,
       creator: i,
       guildId: c,
       isNew: u,
       guildEvent: d,
       eventPreview: f,
       recurrenceId: p
-    }), (0, r.jsx)(A, {
+    }), (0, r.jsx)(v, {
       name: a,
       description: s,
       headerVariant: t,

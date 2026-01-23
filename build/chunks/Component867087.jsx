@@ -1,7 +1,7 @@
 /** Chunk was on 64676 **/
 /** chunk id: 867087, original params: t,e,s (module,exports,require) **/
 require.d(exports, {
-  default: () => L
+  default: () => N
 }), require("./896048.js"), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -41,9 +41,9 @@ class E extends Chunk64700.Component {
       branchId: e,
       buildId: s,
       manifestIds: l,
-      buildSizeKB: a
+      buildSizeKB: n
     } = this.props;
-    null != s && null != l && null == a && r.h.wait(() => {
+    null != s && null != l && null == n && r.h.wait(() => {
       (0, o.K)(t, e, s, l)
     })
   }
@@ -71,7 +71,7 @@ class E extends Chunk64700.Component {
     } = this.state;
     return (0, l.jsx)(i.Button, {
       variant: "active",
-      text: _.intl.string(_.t.nL0WvC),
+      text: S.intl.string(S.t.nL0WvC),
       disabled: e || null == t || !s,
       onClick: this.handleInstall
     })
@@ -82,16 +82,16 @@ class E extends Chunk64700.Component {
       buildSizeKB: e,
       transitionState: s
     } = this.props, {
-      selectedInstallationPath: a,
-      isInstalling: n
+      selectedInstallationPath: n,
+      isInstalling: a
     } = this.state, r = null != t && t.getSplashURL(440);
     return (0, l.jsxs)(i.EOs, {
       transitionState: s,
       size: i.rIJ.SMALL,
-      "aria-label": _.intl.string(_.t.PphjtJ),
+      "aria-label": S.intl.string(S.t.PphjtJ),
       parentComponent: "ApplicationInstallationModal",
       children: [null != r ? (0, l.jsx)("div", {
-        className: S.Yi,
+        className: b.Yi,
         style: {
           backgroundImage: "url(".concat(r, ")")
         }
@@ -101,7 +101,7 @@ class E extends Chunk64700.Component {
           grow: 1,
           children: (0, l.jsx)(i.Heading, {
             variant: "heading-lg/semibold",
-            children: _.intl.string(_.t.PphjtJ)
+            children: S.intl.string(S.t.PphjtJ)
           })
         }), (0, l.jsx)(A.A.Child, {
           grow: 0,
@@ -115,30 +115,30 @@ class E extends Chunk64700.Component {
           children: [(0, l.jsx)(I.A, {
             game: t,
             size: I.M.MEDIUM,
-            className: S.Gt
+            className: b.Gt
           }), (0, l.jsx)("div", {
-            className: S.mO,
+            className: b.mO,
             children: null != t && t.name
           }), null != e ? (0, l.jsx)("div", {
-            className: S.hc,
-            children: (0, C.Xq)(e, {
+            className: b.hc,
+            children: (0, P.Xq)(e, {
               useKibibytes: true
             })
           }) : null]
         }), (0, l.jsx)("div", {
-          className: S.yF
-        }), (0, l.jsx)(T.A, {
+          className: b.yF
+        }), (0, l.jsx)(C.A, {
           autoFocus: true,
-          className: S.gD,
-          value: a,
+          className: b.gD,
+          value: n,
           requiredDiskKB: e,
           onChange: this.handleChangePath
         }), (0, l.jsx)(c.A, {
           eulaId: t.eulaId,
           applicationName: t.name,
-          disabled: n,
+          disabled: a,
           onChange: this.handlePurchaseTermsChange,
-          className: S.a_
+          className: b.a_
         })]
       }), (0, l.jsx)(i.jlY, {
         children: this.renderButton()
@@ -160,7 +160,7 @@ class E extends Chunk64700.Component {
       let {
         application: s,
         branchId: l,
-        analyticsLocation: a
+        analyticsLocation: n
       } = this.props;
       if (null == s) return null;
       (0, u.oc)({
@@ -169,8 +169,8 @@ class E extends Chunk64700.Component {
         buildId: t,
         manifestIds: e,
         installationPath: this.state.selectedInstallationPath,
-        analyticsLocation: a
-      }), (0, f.pX)(b.BVt.APPLICATION_LIBRARY), this.close()
+        analyticsLocation: n
+      }), (0, g.pX)(T.BVt.APPLICATION_LIBRARY), this.close()
     }), y(this, "handleInstall", () => {
       let {
         application: t,
@@ -189,17 +189,17 @@ class E extends Chunk64700.Component {
     })
   }
 }
-let L = Chunk311907.Ay.connectStores([Chunk568004.A, Chunk775228.A, Chunk293066.A, Chunk587895.A], t => {
+let N = Chunk311907.Ay.connectStores([Chunk568004.A, Chunk775228.A, Chunk293066.A, Chunk587895.A], t => {
   let {
     applicationId: e,
     branchId: s
-  } = t, l = g.A.getTargetBuildId(e, s);
+  } = t, l = m.A.getTargetBuildId(e, s);
   return {
     application: p.A.getApplication(e),
-    defaultInstallationPath: P.A.defaultInstallationPath,
+    defaultInstallationPath: f.A.defaultInstallationPath,
     buildId: l,
-    manifestIds: g.A.getTargetManifests(e, s),
-    buildSizeKB: null != l ? g.A.getBuildSize(l) : null,
-    hasPreviouslyAcceptedStoreTerms: m.A.hasAcceptedStoreTerms
+    manifestIds: m.A.getTargetManifests(e, s),
+    buildSizeKB: null != l ? m.A.getBuildSize(l) : null,
+    hasPreviouslyAcceptedStoreTerms: _.A.hasAcceptedStoreTerms
   }
 })(E)

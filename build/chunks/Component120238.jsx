@@ -16,24 +16,24 @@ let d = e => {
     disabled: n
   } = e, d = l.useCallback(async () => {
     await t({
-      type: r.Ij.Empty
+      type: i.Ij.Empty
     }), window.location.reload()
   }, [t]);
   return (0, a.jsxs)("div", {
     className: c.kL,
-    children: [(0, a.jsx)(i.Heading, {
+    children: [(0, a.jsx)(r.Heading, {
       variant: "heading-lg/bold",
       className: c.DD,
       children: o.intl.string(s.default.v52itt)
-    }), (0, a.jsx)(i.Text, {
+    }), (0, a.jsx)(r.Text, {
       variant: "text-md/normal",
       color: "text-muted",
       className: c.h_,
       children: o.intl.string(s.default["5am8D3"])
-    }), (0, a.jsx)(i.BJc, {
+    }), (0, a.jsx)(r.BJc, {
       direction: "horizontal",
       justify: "end",
-      children: (0, a.jsx)(i.Button, {
+      children: (0, a.jsx)(r.Button, {
         variant: "primary",
         text: o.intl.string(s.default["GDsHl+"]),
         onClick: d,

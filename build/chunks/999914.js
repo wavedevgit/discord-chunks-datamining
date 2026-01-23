@@ -43,12 +43,12 @@ function h(e) {
   let {
     locale: h,
     createCalendar: g,
-    hideTimeZone: y,
+    hideTimeZone: b,
     isDisabled: O = false,
-    isReadOnly: A = false,
-    isRequired: v = false,
-    minValue: S,
-    maxValue: I,
+    isReadOnly: v = false,
+    isRequired: A = false,
+    minValue: I,
+    maxValue: S,
     isDateUnavailable: T
   } = e, C = e.value || e.defaultValue || e.placeholderValue || null, [N, R] = (0, r.bf)(C, e.granularity), w = R || "UTC";
   if (C && !(N in C)) throw Error("Invalid granularity " + N + " for value " + C.toString());
@@ -69,12 +69,12 @@ function h(e) {
         granularity: N,
         maxGranularity: null != (t = e.maxGranularity) ? t : "year",
         timeZone: R,
-        hideTimeZone: y,
+        hideTimeZone: b,
         hourCycle: e.hourCycle,
         showEra: V,
         shouldForceLeadingZeros: e.shouldForceLeadingZeros
       }
-    }, [e.maxGranularity, N, e.hourCycle, e.shouldForceLeadingZeros, R, y, V]),
+    }, [e.maxGranularity, N, e.hourCycle, e.shouldForceLeadingZeros, R, b, V]),
     B = (0, d.useMemo)(() => (0, r.id)({}, F), [F]),
     H = (0, d.useMemo)(() => new(0, a.p)(h, B), [h, B]),
     Y = (0, d.useMemo)(() => H.resolvedOptions(), [H]),
@@ -119,7 +119,7 @@ function h(e) {
         (t.length >= n.length || t.length === n.length - 1 && W.dayPeriod && !K.dayPeriod) && Q(Z)
       }
     },
-    en = (0, d.useMemo)(() => (0, r.nz)(x, S, I, T, F), [x, S, I, T, F]),
+    en = (0, d.useMemo)(() => (0, r.nz)(x, I, S, T, F), [x, I, S, T, F]),
     er = (0, c.KZ)({
       ...e,
       value: x,
@@ -141,8 +141,8 @@ function h(e) {
     granularity: N,
     maxGranularity: null != (i = e.maxGranularity) ? i : "year",
     isDisabled: O,
-    isReadOnly: A,
-    isRequired: v,
+    isReadOnly: v,
+    isRequired: A,
     increment(e) {
       et(e, 1)
     },
@@ -156,7 +156,7 @@ function h(e) {
       et(e, -(p[e] || 1))
     },
     setSegment(e, t) {
-      ee(e), Q(b(Z, e, t, Y))
+      ee(e), Q(y(Z, e, t, Y))
     },
     confirmPlaceholder() {
       if (e.isDisabled || e.isReadOnly) return;
@@ -328,7 +328,7 @@ function E(e, t, n, r) {
   throw Error("Unknown segment: " + t)
 }
 
-function b(e, t, n, r) {
+function y(e, t, n, r) {
   switch (t) {
     case "day":
     case "month":

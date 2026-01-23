@@ -17,8 +17,8 @@ let d = e => {
     description: n,
     guild: d,
     guildMetadata: u,
-    disabled: f
-  } = e, g = (0, l.yK)([c.A], () => c.A.getAllCategories()), b = i.useMemo(() => g.map(e => {
+    disabled: g
+  } = e, m = (0, l.yK)([o.A], () => o.A.getAllCategories()), p = i.useMemo(() => m.map(e => {
     let {
       categoryId: t,
       name: n
@@ -28,23 +28,23 @@ let d = e => {
       value: t,
       label: n
     }
-  }), [g]);
-  return 0 === b.length ? (0, r.jsx)(s.y$y, {}) : (0, r.jsx)(s.ZiE, {
+  }), [m]);
+  return 0 === p.length ? (0, r.jsx)(s.y$y, {}) : (0, r.jsx)(s.ZiE, {
     selectionMode: "multiple",
     label: t,
     description: n,
     value: u.secondaryCategoryIds,
-    options: b,
+    options: p,
     onSelectionChange: e => {
       let {
         secondaryCategoryIds: t
       } = u;
       if (e.length < t.length) t.filter(t => !e.includes(t)).forEach(e => (0, a.Tz)(d.id, e));
       else {
-        if (t.length >= o._4) return;
+        if (t.length >= c._4) return;
         e.filter(e => !t.includes(e)).forEach(e => (0, a.nA)(d.id, e))
       }
     },
-    disabled: f
+    disabled: g
   })
 }

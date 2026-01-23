@@ -42,7 +42,7 @@ function l(e, t) {
       labelable: true
     }),
     {
-      focusWithinProps: b
+      focusWithinProps: y
     } = (0, o.R)({
       onBlurWithin: e.onBlur,
       onFocusWithin: e.onFocus,
@@ -53,7 +53,7 @@ function l(e, t) {
       role: "group",
       "aria-disabled": n || true,
       ...h,
-      ...b
+      ...y
     }),
     labelProps: _,
     descriptionProps: m,

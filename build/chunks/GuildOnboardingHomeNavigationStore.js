@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 220706, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 });
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -21,7 +21,7 @@ let c = {},
 class d extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var t;
-    this.waitFor(a.A), c = null != (t = null == e ? true : e.selectedResourceChannelIdByGuildId) ? t : {}
+    this.waitFor(s.A), c = null != (t = null == e ? true : e.selectedResourceChannelIdByGuildId) ? t : {}
   }
   getState() {
     return {
@@ -37,14 +37,14 @@ class d extends(r = Chunk311907.Ay.PersistedStore) {
   }
 }
 o(d, "displayName", "GuildOnboardingHomeNavigationStore"), o(d, "persistKey", "GuildOnboardingHomeNavigationStore");
-let f = new d(Chunk73153.h, {
+let p = new d(Chunk73153.h, {
   CHANNEL_SELECT: function(e) {
     let {
       channelId: t,
       guildId: n
     } = e;
-    if (null == n || t === s.VV.GUILD_HOME) return;
-    let r = a.A.getChannel(t),
+    if (null == n || t === a.VV.GUILD_HOME) return;
+    let r = s.A.getChannel(t),
       l = c[n],
       i = u[n];
     (null == r ? true : r.isThread()) && (null == r ? true : r.parent_id) != null && [i, l].includes(null == r ? true : r.parent_id) || (t !== l && delete c[n], t !== i && delete u[n])

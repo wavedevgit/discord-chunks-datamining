@@ -6,18 +6,18 @@ require.d(exports, {
   CE: () => u,
   Cq: () => E,
   G8: () => l,
-  G_: () => A,
+  G_: () => v,
   HU: () => p,
   PT: () => g,
-  QJ: () => b,
+  QJ: () => y,
   VE: () => d,
-  Yl: () => I,
-  b0: () => S,
-  dR: () => y,
+  Yl: () => S,
+  b0: () => I,
+  dR: () => b,
   f1: () => _,
   l6: () => m,
   mx: () => h,
-  uk: () => v,
+  uk: () => A,
   wb: () => T,
   y4: () => O
 });
@@ -75,12 +75,12 @@ let c = "manual",
       control_name: "color_intensity_input"
     })
   },
-  b = () => {
+  y = () => {
     c = "manual", a.default.track(s.HAw.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "color_intensity"
     })
   },
-  y = () => {
+  b = () => {
     c = "manual", a.default.track(s.HAw.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "base_theme"
     })
@@ -88,18 +88,18 @@ let c = "manual",
   O = () => {
     c = "surprise_me", a.default.track(s.HAw.CUSTOM_THEMES_SURPRISE_BUTTON_CLICKED, {})
   },
-  A = () => {
+  v = () => {
     c = "manual", a.default.track(s.HAw.CUSTOM_THEME_RESET_BUTTON_CLICKED, {})
   },
-  v = () => {
+  A = () => {
     a.default.track(s.HAw.CUSTOM_THEMES_BACK_BUTTON_CLICKED, {})
   },
-  S = e => {
+  I = e => {
     a.default.track(s.HAw.CUSTOM_THEMES_BANNER_CLICKED, {
       banner_location: e
     })
   },
-  I = (e, t, n, r, i) => {
+  S = (e, t, n, r, i) => {
     a.default.track(s.HAw.CUSTOM_THEMES_UPDATED, {
       colors: e,
       color_intensity: t,

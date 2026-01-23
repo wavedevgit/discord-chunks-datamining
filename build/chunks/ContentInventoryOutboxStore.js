@@ -76,11 +76,11 @@ function E(e) {
   f.delete(t)
 }
 
-function b() {
+function y() {
   p = null, _ = true
 }
 
-function y(e) {
+function b(e) {
   let {
     entry: t,
     userId: n
@@ -101,20 +101,20 @@ function O(e) {
   p = t, _ = false
 }
 
-function A() {
+function v() {
   p = null, _ = false
 }
 
-function v() {
+function A() {
   d = new Map, f = new Set, p = null, _ = false
 }
 
-function S() {
-  v(), h = true
+function I() {
+  A(), h = true
 }
 
-function I() {
-  v()
+function S() {
+  A()
 }
 class T extends(r = Chunk311907.Ay.Store) {
   getMatchingOutboxEntry(e) {
@@ -142,13 +142,13 @@ class T extends(r = Chunk311907.Ay.Store) {
 }
 o(T, "displayName", "ContentInventoryOutboxStore");
 let C = new T(Chunk73153.h, {
-  CONNECTION_OPEN: S,
-  LOGOUT: I,
+  CONNECTION_OPEN: I,
+  LOGOUT: S,
   CONTENT_INVENTORY_FETCH_OUTBOX_START: m,
   CONTENT_INVENTORY_FETCH_OUTBOX_SUCCESS: g,
   CONTENT_INVENTORY_FETCH_OUTBOX_FAILURE: E,
-  CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_START: b,
-  CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_SUCCESS: y,
+  CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_START: y,
+  CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_SUCCESS: b,
   CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_FAILURE: O,
-  CONTENT_INVENTORY_CLEAR_DELETE_HISTORY_ERROR: A
+  CONTENT_INVENTORY_CLEAR_DELETE_HISTORY_ERROR: v
 })

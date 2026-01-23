@@ -6,13 +6,13 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk993408 = require("./993408.js"),
   Chunk821701 = require("./821701.js"),
-  Chunk764999 = require("./764999.js"),
+  Chunk645178 = require("./645178.js"),
   Chunk702211 = require("./702211.js"),
   Chunk773669 = require("./773669.js"),
   Chunk290863 = require("./290863.js"),
@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk291661 = require("./291661.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk455509 = require("./455509.js");
-let y = [{
+let _ = [{
     avatarSize: Chunk397927._3J.SIZE_40,
     showStatus: false
   }, {
@@ -37,27 +37,27 @@ let y = [{
   j = e => {
     let {
       purchase: t
-    } = e, r = (0, c.bG)([x.default], () => x.default.locale), l = (0, u.gA)(t), i = null != t.expiresAt ? (0, b.Tf)(Date.now(), t.expiresAt) : null, a = (0, m.Tk)(t), s = t.purchasedAt.toLocaleDateString(r, {
+    } = e, r = (0, o.bG)([x.default], () => x.default.locale), l = (0, u.gA)(t), i = null != t.expiresAt ? (0, h.Tf)(Date.now(), t.expiresAt) : null, s = (0, m.Tk)(t), a = t.purchasedAt.toLocaleDateString(r, {
       month: "long",
       year: "numeric"
     });
     return (0, n.jsxs)("div", {
-      className: v.c6,
-      children: [(0, n.jsx)(o.Text, {
+      className: y.c6,
+      children: [(0, n.jsx)(c.Text, {
         variant: "text-sm/semibold",
         color: "text-strong",
-        children: a
-      }), null != i && (0, n.jsx)(o.Text, {
+        children: s
+      }), null != i && (0, n.jsx)(c.Text, {
         variant: "text-xxs/normal",
         color: "text-muted",
         children: f.intl.format(f.t.Io7ozn, {
           days: i.days.toString()
         })
-      }), (0, n.jsxs)(o.Text, {
+      }), (0, n.jsxs)(c.Text, {
         variant: "text-xxs/normal",
         color: "text-muted",
         children: [f.intl.format(f.t.gW9R4B, {
-          date: s
+          date: a
         }), null != t.expiresAt && (0, n.jsxs)(n.Fragment, {
           children: [(0, n.jsx)("br", {}), f.intl.format(f.t.eZSTa5, {
             date: t.expiresAt.toLocaleDateString(r, {
@@ -69,7 +69,7 @@ let y = [{
             })
           })]
         })]
-      }), l && (0, n.jsx)(o.Text, {
+      }), l && (0, n.jsx)(c.Text, {
         variant: "text-xxs/normal",
         color: "text-muted",
         children: f.intl.string(f.t.nKdAlO)
@@ -82,62 +82,62 @@ let y = [{
       guildId: r,
       avatarDecoration: i,
       className: x
-    } = e, b = (0, c.bG)([g.A], () => g.A.getStatus(t.id)), {
+    } = e, h = (0, o.bG)([g.A], () => g.A.getStatus(t.id)), {
       product: O,
-      purchase: _
-    } = (0, d.A)(null == i ? true : i.skuId), S = A.Ay.canUseCollectibles(t), E = null != _ ? (0, u.gA)(_) : (0, u.G0)(O), I = !S && (0, u.gA)(_), k = (0, p.b)(!E || S), T = (0, m.Tk)(_), P = (0, m.o7)(O), C = l.useMemo(() => I ? f.intl.string(f.t["7vkeu5"]) : E && S && !k ? f.intl.string(f.t.hmyYK8) : E && !S && k ? f.intl.string(f.t.q0PlFn) : !E || S || k ? f.intl.string(f.t.fEGjVQ) : f.intl.string(f.t["0xs2sA"]), [I, E, S, k]);
-    return null != i && (null == _ || I) ? (0, n.jsxs)("div", {
-      className: a()(v.kk, v.O7, x),
+      purchase: b
+    } = (0, d.A)(null == i ? true : i.skuId), I = v.Ay.canUseCollectibles(t), S = null != b ? (0, u.gA)(b) : (0, u.G0)(O), E = !I && (0, u.gA)(b), P = (0, p.b)(!S || I), w = (0, m.Tk)(b), C = (0, m.o7)(O), T = l.useMemo(() => E ? f.intl.string(f.t["7vkeu5"]) : S && I && !P ? f.intl.string(f.t.hmyYK8) : S && !I && P ? f.intl.string(f.t.q0PlFn) : !S || I || P ? f.intl.string(f.t.fEGjVQ) : f.intl.string(f.t["0xs2sA"]), [E, S, I, P]);
+    return null != i && (null == b || E) ? (0, n.jsxs)("div", {
+      className: s()(y.kk, y.O7, x),
       children: [(0, n.jsx)("div", {
-        className: v.Bo,
-        children: (0, n.jsx)(h.A, {
+        className: y.Bo,
+        children: (0, n.jsx)(A.A, {
           user: t,
           guildId: r,
           avatarDecorationOverride: i
         })
       }), (0, n.jsxs)("div", {
-        className: v.hx,
-        children: [(0, n.jsx)(o.Text, {
+        className: y.hx,
+        children: [(0, n.jsx)(c.Text, {
           variant: "text-sm/semibold",
-          children: (0, s.isEmpty)(T) ? P : T
-        }), (0, n.jsx)(o.Text, {
+          children: (0, a.isEmpty)(w) ? C : w
+        }), (0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: C
+          children: T
         })]
       })]
     }) : (0, n.jsxs)("div", {
-      className: a()(v.kk, x),
+      className: s()(y.kk, x),
       children: [(0, n.jsxs)("div", {
-        className: v.$M,
+        className: y.$M,
         children: [(0, n.jsx)("div", {
-          className: v.TB,
-          children: (0, n.jsx)(h.A, {
+          className: y.TB,
+          children: (0, n.jsx)(A.A, {
             user: t,
             guildId: r,
             avatarDecorationOverride: i
           })
         }), (0, n.jsx)("div", {
-          className: v.Kh,
-          children: y.map(e => {
+          className: y.Kh,
+          children: _.map(e => {
             let {
               avatarSize: l,
-              showStatus: a
+              showStatus: s
             } = e;
             return (0, n.jsx)("div", {
-              className: v.CX,
-              children: (0, n.jsx)(h.A, {
+              className: y.CX,
+              children: (0, n.jsx)(A.A, {
                 user: t,
                 guildId: r,
                 avatarSize: l,
                 avatarDecorationOverride: i,
-                status: a ? b : true,
+                status: s ? h : true,
                 "aria-hidden": true
               })
-            }, "".concat(l).concat(a))
+            }, "".concat(l).concat(s))
           })
         })]
-      }), null != _ && (0, n.jsx)(j, {
-        purchase: _
+      }), null != b && (0, n.jsx)(j, {
+        purchase: b
       })]
     })
   }

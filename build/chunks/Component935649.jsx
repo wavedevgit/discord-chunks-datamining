@@ -2,7 +2,7 @@
 /** chunk id: 935649, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -57,19 +57,19 @@ function E(e, t) {
   }), e
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = y(e, t), Object.getOwnPropertySymbols)
+  if (a = b(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -80,7 +80,7 @@ function y(e, t) {
 function O(e) {
   if (null != e) return (0, f.Sr)(e) ? a.F2Z.LIGHTBOX : true
 }
-let A = {
+let v = {
   showAgeVerification: e => {
     let {
       onClose: t,
@@ -89,7 +89,7 @@ let A = {
       verificationVendorName: f,
       verificationRequestId: h,
       webviewUrl: g
-    } = e, E = b(e, ["onClose", "entryPoint", "shouldShowExpressiveModal", "verificationVendorName", "verificationRequestId", "webviewUrl"]);
+    } = e, E = y(e, ["onClose", "entryPoint", "shouldShowExpressiveModal", "verificationVendorName", "verificationRequestId", "webviewUrl"]);
     if (f === p.XM.PERSONA) {
       if (!(0, d.g)("AgeVerificationActionCreators") || null == h) return;
       new i.Client({
@@ -107,7 +107,7 @@ let A = {
       return
     }
     if (null == g) return;
-    let y = {
+    let b = {
       modalKey: p.SW,
       onCloseCallback: t,
       backdropStyle: O(o),
@@ -120,14 +120,14 @@ let A = {
       return t => (0, r.jsx)(e, m({
         webviewUrl: g
       }, E, t))
-    }, y) : (0, a.mMO)(async () => {
+    }, b) : (0, a.mMO)(async () => {
       let {
         default: e
       } = await n.e("23425").then(n.bind(n, 745336));
       return t => (0, r.jsx)(e, m({
         webviewUrl: g
       }, E, t))
-    }, y)
+    }, b)
   },
   showAgeVerificationGetStartedModal: e => {
     let {

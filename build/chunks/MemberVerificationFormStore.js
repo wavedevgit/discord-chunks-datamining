@@ -1,7 +1,7 @@
 /** Chunk was on 39579 **/
 /** chunk id: 60175, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p,
+  A: () => f,
   U: () => d
 }), require("./228524.js");
 var r, Chunk735438 = require("./735438.js"),
@@ -10,7 +10,7 @@ var r, Chunk735438 = require("./735438.js"),
   Chunk73153 = require("./73153.js"),
   Chunk513461 = require("./513461.js");
 
-function o(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ let d = {
     formFields: []
   },
   u = {};
-class f extends(r = Chunk311907.Ay.Store) {
+class p extends(r = Chunk311907.Ay.Store) {
   get(e) {
     if (null != e) return u[e]
   }
@@ -33,8 +33,8 @@ class f extends(r = Chunk311907.Ay.Store) {
     return l().find(null == (t = u[e]) ? true : t.formFields, a.i7)
   }
 }
-o(f, "displayName", "MemberVerificationFormStore");
-let p = new f(Chunk73153.h, {
+c(p, "displayName", "MemberVerificationFormStore");
+let f = new p(Chunk73153.h, {
   INVITE_ACCEPT_SUCCESS: function(e) {
     let {
       invite: t
@@ -70,7 +70,7 @@ let p = new f(Chunk73153.h, {
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            c(e, t, n[t])
           })
         }
         return e

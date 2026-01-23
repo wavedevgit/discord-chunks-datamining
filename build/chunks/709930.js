@@ -35,11 +35,11 @@ function E(e) {
   return "[object Set]" === u(e)
 }
 
-function b(e) {
+function y(e) {
   return "[object WeakMap]" === u(e)
 }
 
-function y(e) {
+function b(e) {
   return "[object WeakSet]" === u(e)
 }
 
@@ -47,21 +47,21 @@ function O(e) {
   return "[object ArrayBuffer]" === u(e)
 }
 
-function A(e) {
+function v(e) {
   return !("u" < typeof ArrayBuffer) && (O.working ? O(e) : e instanceof ArrayBuffer)
 }
 
-function v(e) {
+function A(e) {
   return "[object DataView]" === u(e)
 }
 
-function S(e) {
-  return !("u" < typeof DataView) && (v.working ? v(e) : e instanceof DataView)
+function I(e) {
+  return !("u" < typeof DataView) && (A.working ? A(e) : e instanceof DataView)
 }
 exports.isArgumentsObject = Chunk626800, exports.isGeneratorFunction = Chunk133491, exports.isTypedArray = Chunk634587, exports.isPromise = function(e) {
   return "u" > typeof Promise && e instanceof Promise || null !== e && "object" == typeof e && "function" == typeof e.then && "function" == typeof e.catch
 }, exports.isArrayBufferView = function(e) {
-  return "u" > typeof ArrayBuffer && ArrayBuffer.isView ? ArrayBuffer.isView(e) : s(e) || S(e)
+  return "u" > typeof ArrayBuffer && ArrayBuffer.isView ? ArrayBuffer.isView(e) : s(e) || I(e)
 }, exports.isUint8Array = function(e) {
   return "Uint8Array" === a(e)
 }, exports.isUint8ClampedArray = function(e) {
@@ -88,19 +88,19 @@ exports.isArgumentsObject = Chunk626800, exports.isGeneratorFunction = Chunk1334
   return !("u" < typeof Map) && (g.working ? g(e) : e instanceof Map)
 }, E.working = "u" > typeof Set && E(new Set), exports.isSet = function(e) {
   return !("u" < typeof Set) && (E.working ? E(e) : e instanceof Set)
-}, b.working = "u" > typeof WeakMap && b(new WeakMap), exports.isWeakMap = function(e) {
-  return !("u" < typeof WeakMap) && (b.working ? b(e) : e instanceof WeakMap)
-}, y.working = "u" > typeof WeakSet && y(new WeakSet), exports.isWeakSet = function(e) {
-  return y(e)
-}, O.working = "u" > typeof ArrayBuffer && O(new ArrayBuffer), exports.isArrayBuffer = A, v.working = "u" > typeof ArrayBuffer && "u" > typeof DataView && v(new DataView(new ArrayBuffer(1), 0, 1)), exports.isDataView = S;
-var I = "u" > typeof SharedArrayBuffer ? SharedArrayBuffer : true;
+}, y.working = "u" > typeof WeakMap && y(new WeakMap), exports.isWeakMap = function(e) {
+  return !("u" < typeof WeakMap) && (y.working ? y(e) : e instanceof WeakMap)
+}, b.working = "u" > typeof WeakSet && b(new WeakSet), exports.isWeakSet = function(e) {
+  return b(e)
+}, O.working = "u" > typeof ArrayBuffer && O(new ArrayBuffer), exports.isArrayBuffer = v, A.working = "u" > typeof ArrayBuffer && "u" > typeof DataView && A(new DataView(new ArrayBuffer(1), 0, 1)), exports.isDataView = I;
+var S = "u" > typeof SharedArrayBuffer ? SharedArrayBuffer : true;
 
 function T(e) {
   return "[object SharedArrayBuffer]" === u(e)
 }
 
 function C(e) {
-  return true !== I && (true === T.working && (T.working = T(new I)), T.working ? T(e) : e instanceof I)
+  return true !== S && (true === T.working && (T.working = T(new S)), T.working ? T(e) : e instanceof S)
 }
 
 function N(e) {
@@ -135,7 +135,7 @@ exports.isSharedArrayBuffer = C, exports.isAsyncFunction = function(e) {
 }, exports.isNumberObject = N, exports.isStringObject = R, exports.isBooleanObject = w, exports.isBigIntObject = P, exports.isSymbolObject = D, exports.isBoxedPrimitive = function(e) {
   return N(e) || R(e) || w(e) || P(e) || D(e)
 }, exports.isAnyArrayBuffer = function(e) {
-  return "u" > typeof Uint8Array && (A(e) || C(e))
+  return "u" > typeof Uint8Array && (v(e) || C(e))
 }, ["isProxy", "isExternal", "isModuleNamespaceObject"].forEach(function(e) {
   Object.defineProperty(t, e, {
     enumerable: false,

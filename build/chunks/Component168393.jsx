@@ -24,16 +24,16 @@ function g(e) {
   let {
     appId: g,
     subscriptionType: E,
-    onClose: b,
-    skuId: y,
+    onClose: y,
+    skuId: b,
     guildId: O,
-    transitionState: A,
-    onHeaderTitleClick: v
+    transitionState: v,
+    onHeaderTitleClick: A
   } = e, {
-    data: S
-  } = (0, c.A)(y), I = null == S ? true : S[0], {
+    data: I
+  } = (0, c.A)(b), S = null == I ? true : I[0], {
     data: T
-  } = (0, l.d)(y), C = i.useMemo(() => {
+  } = (0, l.d)(b), C = i.useMemo(() => {
     var e;
     return (null == T ? true : T.thumbnail) != null && null != (e = p.A.toURLSafe((0, f.YE)(g, T.thumbnail, 256))) ? e : true
   }, [g, null == T ? true : T.thumbnail]), N = i.useMemo(() => {
@@ -48,26 +48,26 @@ function g(e) {
     openModal: R,
     subscriptionPurchaseButtonState: w
   } = (0, d.A)({
-    skuId: y,
+    skuId: b,
     initialSubscribeForGuild: null != O ? O : true
   });
   return null == T ? null : (0, r.jsx)(_.C, {
     appId: g,
-    skuId: y,
-    transitionState: A,
-    onHeaderTitleClick: null != v ? v : b,
-    onClose: b,
+    skuId: b,
+    transitionState: v,
+    onHeaderTitleClick: null != A ? A : y,
+    onClose: y,
     footer: (0, r.jsx)(h.rc, {
       onClick: R,
       appId: g,
       subscriptionType: E,
-      skuId: y,
-      subscriptionPlan: I,
+      skuId: b,
+      subscriptionPlan: S,
       state: w
     }),
     children: (0, r.jsx)(m.D, {
       appId: g,
-      skuId: y,
+      skuId: b,
       benefits: null != N ? N.map(e => (0, r.jsx)(a.FY, {
         header: e.title,
         icon: e.icon,
@@ -75,7 +75,7 @@ function g(e) {
       }, e.id)) : true,
       description: null != (t = T.description) ? t : true,
       imgSrc: C,
-      title: null != (n = null == I ? true : I.name) ? n : T.summary,
+      title: null != (n = null == S ? true : S.name) ? n : T.summary,
       tag: (0, r.jsx)(s.M, {
         type: E
       }),

@@ -35,7 +35,7 @@ function N(e) {
     guild: t,
     onClick: l,
     onView: s
-  } = e, [h, A] = i.useState(false), [_, N] = i.useState(false), [T, j] = i.useState(false), x = i.useRef(null), P = i.useCallback(async () => {
+  } = e, [g, f] = i.useState(false), [b, N] = i.useState(false), [T, j] = i.useState(false), x = i.useRef(null), P = i.useCallback(async () => {
     N(true);
     try {
       await l(t.id)
@@ -43,8 +43,8 @@ function N(e) {
       N(false)
     }
   }, [t.id, l]), w = i.useCallback(e => {
-    e && !h && (A(true), null == s || s(t.id))
-  }, [t.id, h, s]), L = i.useCallback(e => {
+    e && !g && (f(true), null == s || s(t.id))
+  }, [t.id, g, s]), L = i.useCallback(e => {
     (0, u.L3)(e, async () => {
       let {
         default: e
@@ -83,10 +83,10 @@ function N(e) {
       }
     })
   }, [t]), R = (0, d.Ay)(), D = t.features.has(O.GuildFeatures.HUB), M = i.useMemo(() => {
-    let e = b.Ay.getGuildDiscoverySplashURL({
+    let e = _.Ay.getGuildDiscoverySplashURL({
       id: t.id,
       splash: t.discoverySplash,
-      size: 300 * (0, m.mZ)()
+      size: 300 * (0, A.mZ)()
     });
     if (null != e) return e;
     if (D) return C;
@@ -96,14 +96,14 @@ function N(e) {
       case O.NJ8.LIGHT:
         return S
     }
-  }, [t.discoverySplash, t.id, D, R]), k = i.useMemo(() => b.Ay.getGuildIconURL({
+  }, [t.discoverySplash, t.id, D, R]), k = i.useMemo(() => _.Ay.getGuildIconURL({
     id: t.id,
     icon: t.icon,
     size: 48
   }), [t.icon, t.id]);
   return (0, r.jsxs)("div", {
     className: I.kL,
-    children: [_ && (0, r.jsx)("div", {
+    children: [b && (0, r.jsx)("div", {
       className: I.dc,
       children: (0, r.jsx)(c.y$y, {
         type: c.y$y.Type.PULSING_ELLIPSIS,
@@ -112,13 +112,13 @@ function N(e) {
     }), (0, r.jsx)(o.L, {
       innerRef: x,
       onChange: w,
-      active: !h,
+      active: !g,
       threshold: .55,
-      children: (0, r.jsxs)(f.A, {
+      children: (0, r.jsxs)(h.A, {
         ref: x,
         className: I.Nr,
         onClick: P,
-        disabled: _,
+        disabled: b,
         onContextMenu: L,
         "aria-label": y.intl.string(y.t["M9wQ+f"]),
         children: [(0, r.jsxs)("div", {
@@ -161,7 +161,7 @@ function N(e) {
           className: I.gI,
           children: [(0, r.jsxs)("div", {
             className: I.DD,
-            children: [(0, r.jsx)(g.A, {
+            children: [(0, r.jsx)(m.A, {
               className: I.n2,
               guild: t,
               tooltipColor: c.STz.Colors.PRIMARY
@@ -214,7 +214,7 @@ function T(e) {
     guildId: t,
     onClick: n,
     onView: i
-  } = e, l = (0, s.bG)([_.A], () => _.A.getGuild(t));
+  } = e, l = (0, s.bG)([b.A], () => b.A.getGuild(t));
   return null == l ? null : (0, r.jsx)(N, {
     guild: l,
     onClick: n,
@@ -228,13 +228,13 @@ function j(e) {
     index: n,
     onClick: l,
     onView: a
-  } = e, s = i.useRef(null == t), o = i.useCallback((e, t, n, i) => null == t.guildId ? (0, r.jsx)(A.A, {
+  } = e, s = i.useRef(null == t), o = i.useCallback((e, t, n, i) => null == t.guildId ? (0, r.jsx)(f.A, {
     state: n,
     cleanUp: i,
-    children: (0, r.jsx)(h.A, {
+    children: (0, r.jsx)(g.A, {
       className: I.qf
     })
-  }, e) : (0, r.jsx)(A.A, {
+  }, e) : (0, r.jsx)(f.A, {
     state: n,
     cleanUp: i,
     animate: s.current,

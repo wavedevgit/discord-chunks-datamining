@@ -19,17 +19,17 @@ let o = Chunk64700.memo(function(e) {
     className: s.Dz,
     children: (0, a.jsxs)("div", {
       className: s.ur,
-      children: [(0, a.jsx)(i._, {
+      children: [(0, a.jsx)(r._, {
         showStatus: true,
         width: c,
         opacity: .7,
         size: o
-      }), (0, a.jsx)(i._, {
+      }), (0, a.jsx)(r._, {
         showStatus: true,
         width: d,
         opacity: .85,
         size: o
-      }), (0, a.jsx)(r.A, {
+      }), (0, a.jsx)(i.A, {
         user: t,
         nameplate: n,
         className: s.tZ,
@@ -37,12 +37,12 @@ let o = Chunk64700.memo(function(e) {
         showPlaceholderUser: !l,
         showStatus: true,
         nameplatePreviewSize: "small" === o ? "small" : "default"
-      }), (0, a.jsx)(i._, {
+      }), (0, a.jsx)(r._, {
         showStatus: true,
         width: d,
         opacity: .85,
         size: o
-      }), (0, a.jsx)(i._, {
+      }), (0, a.jsx)(r._, {
         showStatus: true,
         width: c,
         opacity: .7,

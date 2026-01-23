@@ -20,12 +20,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk649542 = require("./649542.js");
 let E = () => [m.intl.string(m.t["EgWTY+"]), m.intl.string(m.t.umBn5f), m.intl.string(m.t.dG1wD1), m.intl.string(m.t.SesI4S), m.intl.string(m.t.RnMLvl)],
-  b = () => {
+  y = () => {
     var e;
     return null != (e = l().sample(E())) ? e : m.intl.string(m.t["EgWTY+"])
   };
 
-function y(e) {
+function b(e) {
   let {
     id: t,
     className: n,
@@ -34,10 +34,10 @@ function y(e) {
     tabIndex: l,
     children: p,
     locked: m = false
-  } = e, [E, y] = i.useState((0, _.gG)(t).name), O = t === f.Ic.PIRATE;
+  } = e, [E, b] = i.useState((0, _.gG)(t).name), O = t === f.Ic.PIRATE;
   return (0, r.jsx)(c.m, {
     text: E,
-    onTooltipShow: () => O && y(b()),
+    onTooltipShow: () => O && b(y()),
     children: (0, r.jsxs)("div", {
       className: g.Co,
       children: [(0, r.jsx)(u.DUT, {
@@ -70,7 +70,7 @@ function O(e) {
     onSelect: s,
     locked: o
   } = e;
-  return (0, r.jsx)(y, {
+  return (0, r.jsx)(b, {
     onSelect: i ? true : s,
     isSelected: n,
     id: t.id,

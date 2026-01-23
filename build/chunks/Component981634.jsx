@@ -20,9 +20,9 @@ function u(e) {
     avatarURL: n,
     name: i,
     bot: u,
-    verifiedBot: f,
-    userTag: g
-  } = e, b = (0, s.bG)([o.A], () => o.A.hidePersonalInformation);
+    verifiedBot: g,
+    userTag: m
+  } = e, p = (0, s.bG)([c.A], () => c.A.hidePersonalInformation);
   return (0, r.jsxs)("div", {
     className: l()(d.kL, t),
     children: [(0, r.jsx)(a.euF, {
@@ -38,15 +38,15 @@ function u(e) {
         color: "text-strong",
         variant: "text-sm/semibold",
         children: i
-      }), u ? (0, r.jsx)(c.A, {
+      }), u ? (0, r.jsx)(o.A, {
         className: d.AO,
-        verified: f
-      }) : null, b ? null : (0, r.jsx)(a.Text, {
+        verified: g
+      }) : null, p ? null : (0, r.jsx)(a.Text, {
         tag: "span",
         color: "interactive-text-default",
         className: d.a1,
         variant: "text-sm/normal",
-        children: g
+        children: m
       })]
     })]
   })

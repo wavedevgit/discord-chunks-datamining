@@ -27,19 +27,19 @@ function x(e) {
     selectedSku: j,
     selectedStoreListing: h,
     application: v
-  } = (0, d.P5)(), y = (0, a.A)(b.Y), P = (0, l.bG)([u.A], () => u.A.getGuild(null == x ? true : x.guild_id)), O = i.useCallback(() => t(p.pn.REVIEW), [t]);
+  } = (0, d.P5)(), y = (0, a.A)(b.Y), P = (0, l.bG)([u.A], () => u.A.getGuild(null == x ? true : x.guild_id)), S = i.useCallback(() => t(p.pn.REVIEW), [t]);
   if (null == j) return null;
-  let S = (0, s.bg)(j.flags);
+  let O = (0, s.bg)(j.flags);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.dZ, {
       children: y ? (0, r.jsx)(c.E, {
         confirmCta: g.intl.string(g.t.PBHFSq),
-        onConfirm: O,
+        onConfirm: S,
         onCancel: n,
         title: g.intl.format(g.t["6n6oXA"], {
           tier: j.name
         }),
-        subtitle: S ? g.intl.string(g.t.lzAoKB) : g.intl.formatToPlainString(g.t["GqaY/j"], {
+        subtitle: O ? g.intl.string(g.t.lzAoKB) : g.intl.formatToPlainString(g.t["GqaY/j"], {
           guildName: null == P ? true : P.name
         }),
         showOpenDiscord: false
@@ -50,8 +50,8 @@ function x(e) {
         title: g.intl.format(g.t.haiCxc, {
           tier: j.name
         }),
-        subtitle: S ? g.intl.string(g.t.RvtbP5) : g.intl.string(g.t.zY39Zu),
-        description: S ? g.intl.formatToPlainString(g.t.QCe4rY, {
+        subtitle: O ? g.intl.string(g.t.RvtbP5) : g.intl.string(g.t.zY39Zu),
+        description: O ? g.intl.formatToPlainString(g.t.QCe4rY, {
           applicationName: null == v ? true : v.name
         }) : g.intl.string(g.t.n1Pu8C)
       })
@@ -59,7 +59,7 @@ function x(e) {
       children: (0, r.jsx)(m.A, {
         onBack: n,
         backText: g.intl.string(g.t.TQBY1J),
-        onPrimary: O,
+        onPrimary: S,
         primaryCTA: m.t.CONTINUE,
         primaryText: g.intl.string(g.t["gZhF+3"])
       })

@@ -2,7 +2,7 @@
 /** chunk id: 531685, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./896048.js");
 var r, Chunk284009 = require("./284009.js"),
   a = require.n(Chunk284009),
@@ -98,14 +98,14 @@ function E(e) {
   })), true)
 }
 
-function b(e) {
+function y(e) {
   let t = h(e.windowId);
   return t.visible !== e.visible && (_.set(e.windowId, f(u({}, t), {
     visible: e.visible
   })), true)
 }
 
-function y(e) {
+function b(e) {
   let t = h(e.windowId);
   return (t.windowSize.width !== e.width || t.windowSize.height !== e.height) && (_.set(e.windowId, f(u({}, t), {
     windowSize: {
@@ -118,7 +118,7 @@ function y(e) {
 function O(e) {
   return _.delete(e.windowId), p === e.windowId && (p = null), true
 }
-class A extends(r = Chunk311907.Ay.Store) {
+class v extends(r = Chunk311907.Ay.Store) {
   isFocused() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, l.Xg)();
     return h(e).focused
@@ -148,14 +148,14 @@ class A extends(r = Chunk311907.Ay.Store) {
     return h(e).windowSize
   }
 }
-c(A, "displayName", "WindowStore");
-let v = new A(Chunk73153.h, {
+c(v, "displayName", "WindowStore");
+let A = new v(Chunk73153.h, {
   WINDOW_INIT: m,
   WINDOW_FULLSCREEN_CHANGE: g,
   WINDOW_FOCUS: E,
-  WINDOW_RESIZED: y,
+  WINDOW_RESIZED: b,
   WINDOW_UNLOAD: O,
-  WINDOW_VISIBILITY_CHANGE: b
+  WINDOW_VISIBILITY_CHANGE: y
 });
 Promise.resolve().then(require.bind(require, 954571)).then(e => {
   let {
@@ -163,10 +163,10 @@ Promise.resolve().then(require.bind(require, 954571)).then(e => {
   } = e;
   t(e => {
     {
-      e.client_app_state = v.isAppFocused() ? "focused" : "unfocused";
-      let t = v.windowSize();
+      e.client_app_state = A.isAppFocused() ? "focused" : "unfocused";
+      let t = A.windowSize();
       e.client_viewport_width = t.width, e.client_viewport_height = t.height
     }
   })
 });
-let S = v
+let I = A

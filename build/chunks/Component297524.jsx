@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  i = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk775602 = require("./775602.js"),
   Chunk321774 = require("./321774.js");
@@ -14,26 +14,26 @@ let d = Chunk64700.memo(function(e) {
   let {
     className: t,
     animated: r = false
-  } = e, s = l.useId();
+  } = e, l = i.useId();
 
   function d(e) {
-    return "".concat(s, "-").concat(e)
+    return "".concat(l, "-").concat(e)
   }
 
-  function f(e) {
+  function u(e) {
     return "url(#".concat(d(e), ")")
   }
-  let u = (0, a.bG)([c.A], () => c.A.useReducedMotion);
+  let f = (0, a.bG)([o.A], () => o.A.useReducedMotion);
   return (0, n.jsx)("svg", {
-    className: i()(o.gx, t),
+    className: s()(c.gx, t),
     width: "392",
     height: "254",
     viewBox: "0 0 392 254",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
-    children: true !== r || u ? (0, n.jsxs)(n.Fragment, {
+    children: true !== r || f ? (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsxs)("g", {
-        clipPath: f("clip0"),
+        clipPath: u("clip0"),
         children: [(0, n.jsx)("rect", {
           width: "392",
           height: "254",
@@ -41,7 +41,7 @@ let d = Chunk64700.memo(function(e) {
           fill: "#1A1C37",
           fillOpacity: "0.8"
         }), (0, n.jsx)("g", {
-          filter: f("filter0"),
+          filter: u("filter0"),
           children: (0, n.jsx)("rect", {
             x: "21",
             y: "-0.21051",
@@ -51,7 +51,7 @@ let d = Chunk64700.memo(function(e) {
             fill: "#F47FFF"
           })
         }), (0, n.jsx)("g", {
-          filter: f("filter1"),
+          filter: u("filter1"),
           children: (0, n.jsx)("rect", {
             x: "57.8317",
             y: "47.8552",
@@ -61,7 +61,7 @@ let d = Chunk64700.memo(function(e) {
             fill: "#5865F2"
           })
         }), (0, n.jsx)("g", {
-          filter: f("filter2"),
+          filter: u("filter2"),
           children: (0, n.jsx)("rect", {
             x: "223.574",
             y: "11.5128",
@@ -71,7 +71,7 @@ let d = Chunk64700.memo(function(e) {
             fill: "#FFD836"
           })
         }), (0, n.jsx)("g", {
-          filter: f("filter3"),
+          filter: u("filter3"),
           children: (0, n.jsx)("rect", {
             x: "142.545",
             y: "67.785",
@@ -81,14 +81,14 @@ let d = Chunk64700.memo(function(e) {
             fill: "#AEC7FF"
           })
         }), (0, n.jsx)("g", {
-          filter: f("filter4"),
+          filter: u("filter4"),
           children: (0, n.jsx)("rect", {
             x: "152.558",
             y: "84",
             width: "86",
             height: "86",
             rx: "24",
-            fill: f("paint0")
+            fill: u("paint0")
           })
         }), (0, n.jsx)("path", {
           fillRule: "evenodd",
@@ -360,11 +360,11 @@ let d = Chunk64700.memo(function(e) {
           gradientUnits: "objectBoundingBox",
           gradientTransform: "translate(0 0)",
           children: [(0, n.jsx)("stop", {
-            className: o.Ym,
+            className: c.Ym,
             offset: "0%",
             stopColor: "#5f6be9"
           }), (0, n.jsx)("stop", {
-            className: o.rl,
+            className: c.rl,
             offset: "100%",
             stopColor: "#4d58ce"
           })]
@@ -483,11 +483,11 @@ let d = Chunk64700.memo(function(e) {
           gradientUnits: "objectBoundingBox",
           gradientTransform: "translate(0 0)",
           children: [(0, n.jsx)("stop", {
-            className: o.Pq,
+            className: c.Pq,
             offset: "0%",
             stopColor: "#606ceb"
           }), (0, n.jsx)("stop", {
-            className: o.I9,
+            className: c.I9,
             offset: "100%",
             stopColor: "#4b56cb"
           })]
@@ -502,7 +502,7 @@ let d = Chunk64700.memo(function(e) {
         }), (0, n.jsxs)("g", {
           opacity: "0.7",
           children: [(0, n.jsx)("g", {
-            filter: f("filter0"),
+            filter: u("filter0"),
             children: (0, n.jsx)("rect", {
               width: "241.861",
               height: "148.887",
@@ -512,7 +512,7 @@ let d = Chunk64700.memo(function(e) {
               fill: "#f47fff"
             })
           }), (0, n.jsx)("g", {
-            filter: f("filter1"),
+            filter: u("filter1"),
             children: (0, n.jsx)("rect", {
               width: "335.168",
               height: "206.331",
@@ -522,7 +522,7 @@ let d = Chunk64700.memo(function(e) {
               fill: "#5865f2"
             })
           }), (0, n.jsx)("g", {
-            filter: f("filter2"),
+            filter: u("filter2"),
             children: (0, n.jsx)("rect", {
               width: "154.693",
               height: "101.993",
@@ -532,7 +532,7 @@ let d = Chunk64700.memo(function(e) {
               fill: "#ffd836"
             })
           }), (0, n.jsx)("g", {
-            filter: f("filter3"),
+            filter: u("filter3"),
             children: (0, n.jsx)("rect", {
               width: "232.04",
               height: "143.025",
@@ -543,15 +543,15 @@ let d = Chunk64700.memo(function(e) {
             })
           })]
         }), (0, n.jsx)("g", {
-          className: o.Yp,
+          className: c.Yp,
           transform: "translate(195.557999,127)",
           children: (0, n.jsx)("g", {
-            className: o.Yv,
+            className: c.Yv,
             transform: "scale(1,1)",
             children: (0, n.jsxs)("g", {
-              className: o.AT,
+              className: c.AT,
               transform: "translate(-195.557999,-127)",
-              filter: f("filter4"),
+              filter: u("filter4"),
               children: [(0, n.jsx)("rect", {
                 width: "86",
                 height: "86",
@@ -572,13 +572,13 @@ let d = Chunk64700.memo(function(e) {
             })
           })
         }), (0, n.jsx)("g", {
-          className: o.xi,
+          className: c.xi,
           transform: "translate(87,127)",
           children: (0, n.jsx)("g", {
-            className: o.x_,
+            className: c.x_,
             transform: "scale(1,1)",
             children: (0, n.jsxs)("g", {
-              className: o.$2,
+              className: c.$2,
               transform: "translate(-87,-127)",
               children: [(0, n.jsx)("rect", {
                 width: "86",
@@ -596,22 +596,22 @@ let d = Chunk64700.memo(function(e) {
             })
           })
         }), (0, n.jsx)("g", {
-          className: o.m6,
+          className: c.m6,
           transform: "translate(304,127)",
           children: (0, n.jsx)("g", {
-            className: o.mm,
+            className: c.mm,
             transform: "scale(1,1)",
             children: (0, n.jsxs)("g", {
-              className: o.KG,
+              className: c.KG,
               transform: "translate(-304,-127)",
               children: [(0, n.jsx)("rect", {
-                className: o.Cq,
+                className: c.Cq,
                 width: "86",
                 height: "86",
                 rx: "24",
                 ry: "24",
                 transform: "translate(261 84)",
-                fill: f("screenIconHighlight-fill"),
+                fill: u("screenIconHighlight-fill"),
                 fillOpacity: "0.2"
               }), (0, n.jsxs)("g", {
                 transform: "translate(217.000001 0)",
@@ -626,17 +626,17 @@ let d = Chunk64700.memo(function(e) {
             })
           })
         }), (0, n.jsx)("g", {
-          className: o.Fq,
+          className: c.Fq,
           transform: "translate(194.2121,124.850005) scale(0.5,0.5)",
           children: (0, n.jsxs)("g", {
-            className: o.Dm,
+            className: c.Dm,
             transform: "translate(-109,-73.046998)",
             opacity: "0",
             children: [(0, n.jsxs)("g", {
-              clipPath: f("windowCard-clip"),
+              clipPath: u("windowCard-clip"),
               children: [(0, n.jsxs)("g", {
                 children: [(0, n.jsx)("g", {
-                  filter: f("filter5"),
+                  filter: u("filter5"),
                   children: (0, n.jsx)("rect", {
                     width: "218",
                     height: "150",
@@ -648,16 +648,16 @@ let d = Chunk64700.memo(function(e) {
                   opacity: "0.4",
                   children: [(0, n.jsx)("path", {
                     d: "M173.774,75.7111l1.235-7.2965c-2.097.1074-4.142.6951-5.974,1.7174-1.832,1.0222-3.404,2.4515-4.592,4.177-7.414,11.7126-17.41,21.5865-29.228,28.871-2.955,3.383-6.746,5.937-10.996,7.411l1.722,7.068l4.537,18.57.459-.143c28.711-12.647,43.239-27.755,56.044-46.5831.173-.2289.316-.4864.46-.7153.871-1.4703,1.456-3.0916,1.722-4.7785l-10.824-1.8313c-1.449-.2855-2.733-1.1169-3.583-2.3213s-1.202-2.6892-.982-4.1454Z",
-                    fill: f("fill0")
+                    fill: u("fill0")
                   }), (0, n.jsx)("path", {
                     d: "M21.319,122.295c-1.1695-.128-2.3297-.329-3.4741-.601-.4737.269-.9249.575-1.3494.915-9.85782,7.969-18.49529,17.329-25.63905,27.785h26.44295l2.3543-16.31l1.6653-11.789Z",
-                    fill: f("fill1")
+                    fill: u("fill1")
                   }), (0, n.jsx)("path", {
                     d: "M19.6537,134.083l-2.3256,16.31h116.5959l-3.445-14.049-4.537-18.571-106.2883,16.31Z",
                     fill: "#6a94ff"
                   }), (0, n.jsx)("path", {
                     d: "M26.8024,122.266c-1.8232.186-3.6606.186-5.4838,0l-1.6653,11.789l106.2307-16.31-1.722-7.068c-1.854.673-3.782,1.124-5.742,1.345L26.8024,122.266Z",
-                    fill: f("fill2")
+                    fill: u("fill2")
                   }), (0, n.jsx)("path", {
                     d: "M117.041,19.7425l-2.325.2576c3.708.5198,7.261,1.8289,10.416,3.8384c3.156,2.0094,5.841,4.6722,7.873,7.8074c5.35.4964,10.453,2.4792,14.729,5.7228-1.981-7.8825-6.768-14.7792-13.47-19.4062-6.703-4.6269-14.864-6.6688-22.965-5.7454L12.9922,23.3193L108.141,12.6749c2.118-.2257,4.24.3896,5.906,1.7126s2.742,3.247,2.994,5.355v0Z",
                     fill: "#f47fff"
@@ -696,7 +696,7 @@ let d = Chunk64700.memo(function(e) {
                     fill: "#3e70dd"
                   })]
                 }), (0, n.jsx)("g", {
-                  filter: f("filter6"),
+                  filter: u("filter6"),
                   children: (0, n.jsx)("rect", {
                     width: "218",
                     height: "150",
@@ -737,20 +737,20 @@ let d = Chunk64700.memo(function(e) {
             })]
           })
         }), (0, n.jsx)("g", {
-          className: o.Hl,
+          className: c.Hl,
           transform: "translate(197,127) scale(0.8,0.8)",
           children: (0, n.jsxs)("g", {
-            className: o.no,
+            className: c.no,
             transform: "translate(-87,-127)",
             opacity: "0",
             children: [(0, n.jsx)("rect", {
-              className: o.DP,
+              className: c.DP,
               width: "86",
               height: "86",
               rx: "24",
               ry: "24",
               transform: "translate(44 84)",
-              fill: f("buttonOverWindowHighlight-fill"),
+              fill: u("buttonOverWindowHighlight-fill"),
               fillOpacity: "0.2"
             }), (0, n.jsxs)("g", {
               transform: "translate(.750001 0)",
@@ -764,13 +764,13 @@ let d = Chunk64700.memo(function(e) {
             })]
           })
         }), (0, n.jsx)("g", {
-          className: o.Rq,
+          className: c.Rq,
           transform: "translate(206.707,213.525767)",
           children: (0, n.jsx)("g", {
-            className: o.DF,
+            className: c.DF,
             transform: "scale(1,1)",
             children: (0, n.jsxs)("g", {
-              className: o.Dy,
+              className: c.Dy,
               transform: "translate(-206.5,-172.653503)",
               children: [(0, n.jsx)("path", {
                 d: "M194,187.542L194,153l25,25.06h-14.626l-.886.268L194,187.542Z",

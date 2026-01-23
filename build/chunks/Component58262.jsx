@@ -2,7 +2,7 @@
 /** chunk id: 58262, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,14 +22,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk563111 = require("./563111.js");
 
-function y(e) {
+function b(e) {
   var t;
   let {
     invite: n,
-    message: y,
+    message: b,
     getAcceptInviteContext: O
-  } = e, A = (0, s.bG)([p.default], () => p.default.getId()), v = (null == (t = n.inviter) ? true : t.id) === A, S = n.state === g.elq.ACCEPTING, {
-    analyticsLocations: I
+  } = e, v = (0, s.bG)([p.default], () => p.default.getId()), A = (null == (t = n.inviter) ? true : t.id) === v, I = n.state === g.elq.ACCEPTING, {
+    analyticsLocations: S
   } = (0, u.Ay)(c.A.INVITE_EMBED), T = (0, s.bG)([h.A], () => {
     var e;
     return null != n.inviter && h.A.isFriend(null == (e = n.inviter) ? true : e.id)
@@ -40,28 +40,28 @@ function y(e) {
     })), (0, l.he)({
       invite: n,
       action: e,
-      inviter_id: y.author.id,
-      invite_message_id: y.id
-    }, I)
-  }, [n, y, I]), N = i.useCallback(() => {
+      inviter_id: b.author.id,
+      invite_message_id: b.id
+    }, S)
+  }, [n, b, S]), N = i.useCallback(() => {
     (0, l.he)({
       invite: n,
       action: "accept",
-      inviter_id: y.author.id,
-      invite_message_id: y.id
-    }, I);
+      inviter_id: b.author.id,
+      invite_message_id: b.id
+    }, S);
     let e = O("Invite Button Embed");
     l.Ay.acceptInviteAndTransitionToInviteChannel({
       inviteKey: n.code,
       context: e
     })
-  }, [n, y, I, O]);
+  }, [n, b, S, O]);
   if (null == n.inviter) return null;
   let R = T ? C : N,
     w = E.intl.string(E.t.ib7Ng1),
     P = "active";
-  T ? (w = E.intl.string(E.t.xhxnPn), P = "secondary") : v && (w = E.intl.string(E.t.ib7Ng1), P = "secondary");
-  let D = v ? E.intl.string(E.t.eQyu1F) : E.intl.string(E.t.PYJHW6),
+  T ? (w = E.intl.string(E.t.xhxnPn), P = "secondary") : A && (w = E.intl.string(E.t.ib7Ng1), P = "secondary");
+  let D = A ? E.intl.string(E.t.eQyu1F) : E.intl.string(E.t.PYJHW6),
     x = null != n.inviter ? "".concat(n.inviter.username) : "",
     L = null != n.inviter ? m.Ay.getUserTag(n.inviter) : "";
   return (0, r.jsxs)(d.A, {
@@ -69,7 +69,7 @@ function y(e) {
       text: D
     }), (0, r.jsxs)(d.A.Body, {
       children: [(0, r.jsxs)("div", {
-        className: b.iH,
+        className: y.iH,
         children: [(0, r.jsx)(d.A.Icon, {
           user: new f.A(n.inviter),
           onClick: T ? R : true
@@ -81,8 +81,8 @@ function y(e) {
       }), (0, r.jsx)(a.$nd, {
         onClick: R,
         text: w,
-        loading: S,
-        disabled: v,
+        loading: I,
+        disabled: A,
         variant: P
       })]
     })]

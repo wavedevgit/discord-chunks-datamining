@@ -18,11 +18,11 @@ let p = e => {
     onRequestClose: n,
     onClick: p
   } = e, {
-    analyticsLocations: f
-  } = (0, s.Ay)(a.A.HOME_PAGE_SHOP_TAB), h = i.useRef(n);
-  return h.current = n, i.useEffect(() => () => {
+    analyticsLocations: h
+  } = (0, s.Ay)(a.A.HOME_PAGE_SHOP_TAB), g = i.useRef(n);
+  return g.current = n, i.useEffect(() => () => {
     var e;
-    null == (e = h.current) || e.call(h)
+    null == (e = g.current) || e.call(g)
   }, []), (0, r.jsx)(l.AM, {
     targetElementRef: t,
     position: "right",
@@ -44,7 +44,7 @@ let p = e => {
       variant: "primary",
       onClick: () => {
         null == p || p(), (0, o.Cz)({
-          analyticsLocations: f,
+          analyticsLocations: h,
           analyticsSource: a.A.HOME_PAGE_SHOP_TAB,
           tab: c.G2.HOME
         })

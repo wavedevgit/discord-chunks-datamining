@@ -2,7 +2,7 @@
 /** chunk id: 619029, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -52,13 +52,13 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -78,7 +78,7 @@ function O(e, t) {
   return i
 }
 
-function A(e) {
+function v(e) {
   let {
     guildId: t,
     analyticsLocations: n
@@ -95,7 +95,7 @@ function A(e) {
   })
 }
 
-function v() {
+function A() {
   let e = (0, l.A)({
     scrollPosition: _._F.GUILD_TAG
   });
@@ -108,19 +108,19 @@ function v() {
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     analyticsLocations: t
-  } = e, n = y(e, ["analyticsLocations"]), {
+  } = e, n = b(e, ["analyticsLocations"]), {
     analyticsLocations: a
   } = (0, o.Ay)(t, s.A.AUTOMOD_NAGBAR_NOTICE), l = (0, i.bG)([c.default, u.Ay], () => {
     if (null == n.guildId) return new Set;
     let e = c.default.getId();
     return (0, d.wj)(u.Ay.getMember(n.guildId, e))
   }, [n.guildId]);
-  return l.has(p.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || l.has(p.D.AUTOMOD_QUARANTINED_BIO) ? (0, r.jsx)(A, b(g({}, n), {
+  return l.has(p.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || l.has(p.D.AUTOMOD_QUARANTINED_BIO) ? (0, r.jsx)(v, y(g({}, n), {
     analyticsLocations: a
-  })) : l.has(p.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, r.jsx)(v, {}) : (0, r.jsx)(A, b(g({}, n), {
+  })) : l.has(p.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, r.jsx)(A, {}) : (0, r.jsx)(v, y(g({}, n), {
     analyticsLocations: a
   }))
 }

@@ -15,23 +15,23 @@ function a(e) {
     guildId: t,
     selectedChannelIds: n,
     selectedRoleIds: a,
-    onChange: c,
-    placeholder: o,
+    onChange: o,
+    placeholder: c,
     disableEveryoneRole: d,
     includeRoleRestrictedPrivateChannels: u = false,
-    includeStageVoiceChannels: f = false,
-    helperText: g,
-    className: b
-  } = e, m = (0, l.q)(t, n, u, f), p = (0, s.H)(t, a, d);
+    includeStageVoiceChannels: g = false,
+    helperText: m,
+    className: p
+  } = e, f = (0, l.q)(t, n, u, g), b = (0, s.H)(t, a, d);
   return (0, r.jsx)(i.Ay, {
-    channelRows: m,
-    roleRows: p,
+    channelRows: f,
+    roleRows: b,
     guildId: t,
     selectedChannelIds: n,
     selectedRoleIds: a,
-    onChange: c,
-    placeholder: o,
-    helperText: g,
-    className: b
+    onChange: o,
+    placeholder: c,
+    helperText: m,
+    className: p
   })
 }

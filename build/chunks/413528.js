@@ -2,7 +2,7 @@
 /** chunk id: 413528, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 }), require("./896048.js");
 var Chunk439372 = require("./439372.js"),
   Chunk400492 = require("./400492.js"),
@@ -42,11 +42,11 @@ function E(e, t) {
   return h(e, n)
 }
 
-function b(e, t, n) {
+function y(e, t, n) {
   _(e, t), t.set(e, n)
 }
 
-function y(e, t, n) {
+function b(e, t, n) {
   var r = g(e, t, "set");
   return m(e, r, n), n
 }
@@ -59,14 +59,14 @@ function O(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let A = (0, Chunk400492.aN)("call_calling", Chunk312671.A.getSoundpack());
-var v = new WeakMap;
-class S extends Chunk439372.A {
+let v = (0, Chunk400492.aN)("call_calling", Chunk312671.A.getSoundpack());
+var A = new WeakMap;
+class I extends Chunk439372.A {
   _initialize() {
     this.stores = new Map().set(s.A, this.handleRingUpdate).set(l.A, this.handleRingUpdate).set(u.A, this.handleRingUpdate).set(d.A, this.handleRingUpdate).set(p.A, this.handleChannelRTCStoreChange).set(a.A, this.handleSoundpackUpdate)
   }
   constructor(...e) {
-    super(...e), b(this, v, {
+    super(...e), y(this, A, {
       writable: true,
       value: new Set
     }), O(this, "actions", {
@@ -75,46 +75,46 @@ class S extends Chunk439372.A {
     }), O(this, "_handleRing", (e, t) => {
       let n = d.A.getCurrentClientVoiceChannelId(t),
         r = null != n && f.Ay.countVoiceStatesForChannel(n) >= 2;
-      null == n || r || !e || l.A.isSoundDisabled("call_calling") || u.A.disableSounds ? A.stop() : A.loop()
+      null == n || r || !e || l.A.isSoundDisabled("call_calling") || u.A.disableSounds ? v.stop() : v.loop()
     }), O(this, "handleSoundpackUpdate", () => {
-      A.stop(), A = (0, i.aN)("call_calling", a.A.getSoundpack())
+      v.stop(), v = (0, i.aN)("call_calling", a.A.getSoundpack())
     }), O(this, "handleRingUpdate", () => {
       var e, t;
       let n = c.A.getVoiceChannelId(),
         r = null != (e = null == (t = o.A.getChannel(n)) ? true : t.guild_id) ? e : null,
         i = s.A.getCalls().some(e => e.ringing.length > 0 && d.A.getCurrentClientVoiceChannelId(null) === e.channelId);
-      this._handleRing(i || E(this, v).size > 0, r)
+      this._handleRing(i || E(this, A).size > 0, r)
     }), O(this, "handleGuildRingStart", e => {
       let {
         ringing: t,
         guildId: n
       } = e;
       t.forEach(e => {
-        E(this, v).add(e)
-      }), this._handleRing(E(this, v).size > 0, n)
+        E(this, A).add(e)
+      }), this._handleRing(E(this, A).size > 0, n)
     }), O(this, "handleGuildRingStop", e => {
       let {
         ringing: t,
         guildId: n
       } = e;
       t.forEach(e => {
-        E(this, v).delete(e)
-      }), this._handleRing(E(this, v).size > 0, n)
+        E(this, A).delete(e)
+      }), this._handleRing(E(this, A).size > 0, n)
     }), O(this, "handleChannelRTCStoreChange", () => {
       let e = c.A.getVoiceChannelId(),
-        t = E(this, v).size > 0;
+        t = E(this, A).size > 0;
       if (!t) return;
       if (null == e && t) {
-        y(this, v, new Set), this._handleRing(E(this, v).size > 0, null);
+        b(this, A, new Set), this._handleRing(E(this, A).size > 0, null);
         return
       }
       if (null == e) return;
       let n = p.A.getGuildRingingUsers(e),
-        r = new Set([...E(this, v)].filter(e => !n.has(e)));
+        r = new Set([...E(this, A)].filter(e => !n.has(e)));
       r.size > 0 && (r.forEach(e => {
-        E(this, v).delete(e)
-      }), this._handleRing(E(this, v).size > 0, null))
+        E(this, A).delete(e)
+      }), this._handleRing(E(this, A).size > 0, null))
     })
   }
 }
-let I = new S
+let S = new I

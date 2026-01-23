@@ -35,14 +35,14 @@ var Chunk627968 = require("./627968.js"),
 function w() {
   let e = (0, _.dk)("ProfileCustomizationSettingsPage"),
     t = (0, o.bG)([d.A], () => d.A.getGuild()),
-    n = (0, A.A)(),
+    n = (0, v.A)(),
     a = (0, o.bG)([d.A, E.A], () => d.A.showNotice() || E.A.showNotice()),
     w = null != t ? t : n,
-    P = (0, o.bG)([b.default], () => b.default.getCurrentUser()),
+    P = (0, o.bG)([y.default], () => y.default.getCurrentUser()),
     {
       subsection: D,
       setSubsection: x
-    } = (0, v.A)(),
+    } = (0, A.A)(),
     L = g.a.useField("hasSearchResults"),
     j = g.a.useField("searchResults");
 
@@ -52,14 +52,14 @@ function w() {
         (0, O.fO)({
           duration: 300,
           intensity: c.n3
-        }), y._.dispatch(S.jej.EMPHASIZE_NOTICE);
+        }), b._.dispatch(I.jej.EMPHASIZE_NOTICE);
         return
       }
       e === T.Eq.GUILD && null == t && null != w && (0, u.V2)(w), x(e)
     }
   }
   i.useEffect(() => {
-    null != P && (null == w ? true : w.id) !== I.V && (0, p.A)(P.id, P.getAvatarURL(null == w ? true : w.id, 80), {
+    null != P && (null == w ? true : w.id) !== S.V && (0, p.A)(P.id, P.getAvatarURL(null == w ? true : w.id, 80), {
       guildId: null == w ? true : w.id
     })
   }, [null == w ? true : w.id, P]);

@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 /** chunk id: 752319, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a, s, o, l, c, u, d, f, p, _, h, m, g, E, b, y, O;
+let r, i, a, s, o, l, c, u, d, f, p, _, h, m, g, E, y, b, O;
 require.d(exports, {
   A: () => ec
 });
-var A, Chunk575593 = require("./575593.js"),
+var v, Chunk575593 = require("./575593.js"),
   Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk652215 = require("./652215.js");
@@ -71,7 +71,7 @@ function U(e) {
   let {
     item: t
   } = e;
-  t.type === v.R.AVATAR_DECORATION ? a = t.value : t.type === v.R.PROFILE_EFFECT ? s = t.value : t.type === v.R.NAMEPLATE && (o = t.value)
+  t.type === A.R.AVATAR_DECORATION ? a = t.value : t.type === A.R.PROFILE_EFFECT ? s = t.value : t.type === A.R.NAMEPLATE && (o = t.value)
 }
 
 function G(e) {
@@ -148,14 +148,14 @@ function X(e) {
   let {
     profileEffect: t
   } = e;
-  b = t
+  y = t
 }
 
 function Z(e) {
   let {
     banner: t
   } = e;
-  y = t
+  b = t
 }
 
 function Q(e) {
@@ -172,7 +172,7 @@ function $(e) {
     avatarDecoration: r,
     displayNameStyles: i
   } = e;
-  y = t, m = n, E = r, O = i
+  b = t, m = n, E = r, O = i
 }
 
 function J() {
@@ -196,7 +196,7 @@ function er() {
 }
 
 function ei() {
-  g = true, E = true, b = true, y = true, m = true, O = true
+  g = true, E = true, y = true, b = true, m = true, O = true
 }
 
 function ea() {
@@ -210,7 +210,7 @@ function es() {
 function eo() {
   et(), ei(), P()
 }
-class el extends(A = Chunk311907.Ay.Store) {
+class el extends(v = Chunk311907.Ay.Store) {
   getFormState() {
     return N
   }
@@ -283,10 +283,10 @@ class el extends(A = Chunk311907.Ay.Store) {
     return E
   }
   getTryItOutProfileEffect() {
-    return b
+    return y
   }
   getTryItOutBanner() {
-    return y
+    return b
   }
   getTryItOutDisplayNameStyles() {
     return O
@@ -296,8 +296,8 @@ class el extends(A = Chunk311907.Ay.Store) {
       tryItOutThemeColors: m,
       tryItOutAvatar: g,
       tryItOutAvatarDecoration: E,
-      tryItOutProfileEffect: b,
-      tryItOutBanner: y,
+      tryItOutProfileEffect: y,
+      tryItOutBanner: b,
       tryItOutDisplayNameStyles: O
     }
   }

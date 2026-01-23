@@ -6,10 +6,10 @@ require.d(exports, {
   _t: () => d,
   av: () => u,
   iV: () => c,
-  yO: () => b
+  yO: () => g
 });
 var Chunk440745 = require("./440745.js"),
-  r = require.n(Chunk440745),
+  l = require.n(Chunk440745),
   Chunk317097 = require("./317097.js"),
   Chunk654107 = require("./654107.js"),
   Chunk287809 = require("./287809.js"),
@@ -24,13 +24,13 @@ function c(e) {
 function u(e, t) {
   let {
     width: n,
-    height: l,
-    left: r,
+    height: r,
+    left: l,
     top: i
   } = e.getBoundingClientRect();
   return {
-    x: (t.clientX - r) / n,
-    y: (t.clientY - i) / l
+    x: (t.clientX - l) / n,
+    y: (t.clientY - i) / r
   }
 }
 
@@ -47,19 +47,19 @@ function f(e, t, n) {
 }
 
 function p(e) {
-  return e.type === o.Z.LINE
+  return e.type === s.Z.LINE
 }
 
-function b(e, t, n, l) {
-  var o;
-  let c = s.default.getUser(e),
+function g(e, t, n, r) {
+  var s;
+  let c = o.default.getUser(e),
     u = null == c ? true : c.getAvatarURL(null, 80),
-    d = null != u ? null == (o = a.Ip.getState().palette[u]) ? true : o[0] : null,
-    f = null != d ? "#".concat(r()({
+    d = null != u ? null == (s = a.Ip.getState().palette[u]) ? true : s[0] : null,
+    f = null != d ? "#".concat(l()({
       r: d[0],
       g: d[1],
       b: d[2]
-    }).toHex()) : l,
+    }).toHex()) : r,
     p = (0, i.OK)((0, i.LX)(f)) > .5 ? n : t;
   return {
     fillColor: f,

@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function a(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -14,19 +14,19 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = {};
+let a = {};
 class o extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    null != e && (s = e)
+    null != e && (a = e)
   }
   getState() {
-    return s
+    return a
   }
   getCountForGuild(e) {
-    return s[e]
+    return a[e]
   }
 }
-a(o, "displayName", "GuildBoostingProgressBarPersistedStore"), a(o, "persistKey", "PremiumGuildProgressBarPersistedStore");
+s(o, "displayName", "GuildBoostingProgressBarPersistedStore"), s(o, "persistKey", "PremiumGuildProgressBarPersistedStore");
 let c = new o(Chunk73153.h, {
   APPLIED_GUILD_BOOST_COUNT_UPDATE: e => {
     var t, n;
@@ -41,11 +41,11 @@ let c = new o(Chunk73153.h, {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          a(e, t, n[t])
+          s(e, t, n[t])
         })
       }
       return e
-    }({}, s), n = n = {
+    }({}, a), n = n = {
       [r]: l
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -56,9 +56,9 @@ let c = new o(Chunk73153.h, {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), s = t
+    }), a = t
   },
   APPLIED_GUILD_BOOST_COUNT_RESET: function() {
-    s = {}
+    a = {}
   }
 })

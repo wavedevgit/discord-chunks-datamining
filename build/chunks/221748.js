@@ -17,27 +17,27 @@ var Chunk446474 = require("./446474.js"),
   m = Chunk410323("".charAt),
   g = Chunk410323("".indexOf),
   E = Chunk410323("".replace),
-  b = Chunk410323("".slice),
-  y = function() {
+  y = Chunk410323("".slice),
+  b = function() {
     var e = /a/,
       t = /b*/g;
     return r(_, e, "a"), r(_, t, "a"), 0 !== e.lastIndex || 0 !== t.lastIndex
   }(),
   O = Chunk603526.BROKEN_CARET,
-  A = true !== /()??/.exec("")[1];
-(y || A || O || Chunk614886 || Chunk919971) && (h = function(e) {
-  var t, n, i, o, l, d, f, v = this,
-    S = u(v),
-    I = a(e),
-    T = S.raw;
-  if (T) return T.lastIndex = v.lastIndex, t = r(h, T, I), v.lastIndex = T.lastIndex, t;
-  var C = S.groups,
-    N = O && v.sticky,
-    R = r(s, v),
-    w = v.source,
+  v = true !== /()??/.exec("")[1];
+(b || v || O || Chunk614886 || Chunk919971) && (h = function(e) {
+  var t, n, i, o, l, d, f, A = this,
+    I = u(A),
+    S = a(e),
+    T = I.raw;
+  if (T) return T.lastIndex = A.lastIndex, t = r(h, T, S), A.lastIndex = T.lastIndex, t;
+  var C = I.groups,
+    N = O && A.sticky,
+    R = r(s, A),
+    w = A.source,
     P = 0,
-    D = I;
-  if (N && (false === g(R = E(R, "y", ""), "g") && (R += "g"), D = b(I, v.lastIndex), v.lastIndex > 0 && (!v.multiline || v.multiline && "\n" !== m(I, v.lastIndex - 1)) && (w = "(?: " + w + ")", D = " " + D, P++), n = RegExp("^(?:" + w + ")", R)), A && (n = RegExp("^" + w + "$(?!\\s)", R)), y && (i = v.lastIndex), o = r(_, N ? n : v, D), N ? o ? (o.input = b(o.input, P), o[0] = b(o[0], P), o.index = v.lastIndex, v.lastIndex += o[0].length) : v.lastIndex = 0 : y && o && (v.lastIndex = v.global ? o.index + o[0].length : i), A && o && o.length > 1 && r(p, o[0], n, function() {
+    D = S;
+  if (N && (false === g(R = E(R, "y", ""), "g") && (R += "g"), D = y(S, A.lastIndex), A.lastIndex > 0 && (!A.multiline || A.multiline && "\n" !== m(S, A.lastIndex - 1)) && (w = "(?: " + w + ")", D = " " + D, P++), n = RegExp("^(?:" + w + ")", R)), v && (n = RegExp("^" + w + "$(?!\\s)", R)), b && (i = A.lastIndex), o = r(_, N ? n : A, D), N ? o ? (o.input = y(o.input, P), o[0] = y(o[0], P), o.index = A.lastIndex, A.lastIndex += o[0].length) : A.lastIndex = 0 : b && o && (A.lastIndex = A.global ? o.index + o[0].length : i), v && o && o.length > 1 && r(p, o[0], n, function() {
       for (l = 1; l < arguments.length - 2; l++) true === arguments[l] && (o[l] = true)
     }), o && C)
     for (l = 0, o.groups = d = c(null); l < C.length; l++) d[(f = C[l])[0]] = o[f[1]];

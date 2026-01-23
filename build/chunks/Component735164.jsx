@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Sd: () => E,
-  X0: () => b,
+  X0: () => y,
   Xd: () => _,
   Yx: () => p,
   f0: () => m,
@@ -161,7 +161,7 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     children: t,
     className: n

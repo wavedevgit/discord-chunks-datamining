@@ -2,7 +2,7 @@
 /** chunk id: 792105, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -29,7 +29,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,43 +54,43 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e) {
+function v(e) {
   let {
     guildId: t,
     role: n,
     theme: a,
     content: E = m.intl.string(m.t["6OSasb"]),
-    className: y
-  } = e, A = (0, o.bG)([p.default], () => p.default.getCurrentUser()), v = _.Ay.useName(t, null, A), S = (0, c.ox)(n), I = i.useMemo(() => (0, u.rh)(O(b({}, (0, d.Ay)({
+    className: b
+  } = e, v = (0, o.bG)([p.default], () => p.default.getCurrentUser()), A = _.Ay.useName(t, null, v), I = (0, c.ox)(n), S = i.useMemo(() => (0, u.rh)(O(y({}, (0, d.Ay)({
     channelId: "0",
     content: E,
     tts: true,
     type: true,
     messageReference: true,
     allowedMentions: true,
-    author: A
+    author: v
   })), {
     state: h.cmJ.SENT,
     id: "0"
-  })), [A, E]), T = {
-    nick: v,
+  })), [v, E]), T = {
+    nick: A,
     colorString: n.colorString,
     colorStrings: n.colorStrings
   };
   return (0, r.jsx)(l.NPJ, {
     theme: a,
     children: e => (0, r.jsx)("div", {
-      className: s()(e, g.k, y),
+      className: s()(e, g.k, b),
       children: (0, r.jsx)(f.A, {
         hideTimestamp: true,
         author: T,
-        roleIcon: S,
-        message: I,
+        roleIcon: I,
+        message: S,
         isGroupStart: true,
         disableInteraction: true
       })

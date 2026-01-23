@@ -43,7 +43,7 @@ function _(e) {
     channelContext: f,
     customGiftMessage: _,
     giftInfo: h
-  } = e, m = false, g = null, E = a.default.getCurrentUser(), b = (0, l.CC)(null == E ? true : E.premiumType, u.PremiumTypes.TIER_0);
+  } = e, m = false, g = null, E = a.default.getCurrentUser(), y = (0, l.CC)(null == E ? true : E.premiumType, u.PremiumTypes.TIER_0);
   (0, i.mMO)(async () => {
     let {
       default: e
@@ -64,7 +64,7 @@ function _(e) {
   }, {
     onCloseCallback: () => {
       var e;
-      m && null != g && !b && g.isSubscription && (null == g || null == (e = g.subscriptionPlan) ? true : e.premiumSubscriptionType) === u.PremiumTypes.TIER_2 && o._.dispatch(d.jej.PREMIUM_SUBSCRIPTION_CREATED)
+      m && null != g && !y && g.isSubscription && (null == g || null == (e = g.subscriptionPlan) ? true : e.premiumSubscriptionType) === u.PremiumTypes.TIER_2 && o._.dispatch(d.jej.PREMIUM_SUBSCRIPTION_CREATED)
     }
   })
 }

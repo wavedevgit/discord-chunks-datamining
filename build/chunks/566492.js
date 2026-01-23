@@ -2,7 +2,7 @@
 /** chunk id: 566492, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => A
+  P: () => v
 });
 var Chunk508425 = require("./508425.js"),
   Chunk945096 = require("./945096.js");
@@ -55,9 +55,9 @@ let c = "--custom-display-name-styles-gradient-start-color",
   m = "--custom-display-name-styles-toon-stroke-color",
   g = "--custom-display-name-styles-neon-stroke-color",
   E = "--custom-display-name-styles-wrap",
-  b = "--custom-display-name-styles-font-opacity";
+  y = "--custom-display-name-styles-font-opacity";
 
-function y(e) {
+function b(e) {
   let {
     main: t,
     light1: n,
@@ -86,7 +86,7 @@ function O(e) {
   }
 }
 
-function A(e, t) {
+function v(e, t) {
   let {
     shouldWrap: n = false,
     fontOpacity: i = 1
@@ -101,10 +101,10 @@ function A(e, t) {
     case r.z.TOON:
     case r.z.SOLID:
     default:
-      t.length > 0 && (a = y(t[0]))
+      t.length > 0 && (a = b(t[0]))
   }
   return l(s({}, a), {
     [E]: n ? "wrap" : "nowrap",
-    [b]: i
+    [y]: i
   })
 }

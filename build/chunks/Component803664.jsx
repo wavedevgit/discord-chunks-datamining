@@ -46,12 +46,12 @@ function _(e) {
   } = e, {
     id: g,
     username: E,
-    bot: b
-  } = t, y = (0, a.bG)([u.default], () => {
+    bot: y
+  } = t, b = (0, a.bG)([u.default], () => {
     var e;
     return (null == (e = u.default.getCurrentUser()) ? true : e.id) === g
-  }, [g]), O = (0, l.D)(g), [A, v] = (0, a.yK)([c.A], () => [c.A.isFriend(g), c.A.isBlocked(g)], [g]), [S, I] = i.useState(false);
-  if (b || y) return null;
+  }, [g]), O = (0, l.D)(g), [v, A] = (0, a.yK)([c.A], () => [c.A.isFriend(g), c.A.isBlocked(g)], [g]), [I, S] = i.useState(false);
+  if (y || b) return null;
 
   function T() {
     (0, s.mMO)(async () => {
@@ -70,28 +70,28 @@ function _(e) {
         onConfirm: () => {
           o.A.removeFriend(g, {
             location: f
-          }), I(false), null == h || h()
+          }), S(false), null == h || h()
         }
       }, t))
     }, {
       contextKey: null != m ? (0, s.TId)(m) : true
     })
   }
-  return A ? (0, r.jsx)(s.Drp, {
+  return v ? (0, r.jsx)(s.Drp, {
     id: "remove-friend",
     label: d.intl.string(d.t.cvSt1J),
     action: T
   }) : (0, r.jsx)(s.Drp, {
     id: "add-friend",
-    label: S ? d.intl.string(d.t.xMH6vD) : O,
+    label: I ? d.intl.string(d.t.xMH6vD) : O,
     action: () => {
-      S || (o.A.addRelationship({
+      I || (o.A.addRelationship({
         userId: g,
         context: {
           location: f
         }
-      }), I(true), null == _ || _())
+      }), S(true), null == _ || _())
     },
-    disabled: v || S && !A
+    disabled: A || I && !v
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 22220 **/
-/** chunk id: 639719, original params: t,s,e (module,exports,require) **/
+/** chunk id: 639719, original params: t,i,s (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => h
 }), require("./896048.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,76 +17,76 @@ var Chunk627968 = require("./627968.js"),
   Chunk665763 = require("./665763.js"),
   Chunk546 = require("./546.js");
 
-function h(t) {
+function _(t) {
   let {
-    text: s
+    text: i
   } = t;
-  return (0, i.jsxs)("li", {
-    className: p.nf,
-    children: [s, " ", (0, i.jsx)(a.I9m, {
+  return (0, n.jsxs)("li", {
+    className: d.nf,
+    children: [i, " ", (0, n.jsx)(l.I9m, {
       size: "sm",
       color: "currentColor"
     })]
   })
 }
 
-function j(t) {
+function h(t) {
   let {
-    transitionState: s
-  } = t, e = (0, l.bG)([x.A], () => x.A.getAction()), [a, j] = n.useState(false);
-  async function b() {
-    return j(true), e === d.a3B.AGREEMENTS && j(await (0, o.Q9)()), null
+    transitionState: i
+  } = t, s = (0, a.bG)([x.A], () => x.A.getAction()), [l, h] = e.useState(false);
+  async function j() {
+    return h(true), s === m.a3B.AGREEMENTS && h(await (0, o.Q9)()), null
   }
   return (0, u.A)({
     type: r.ImpressionTypes.VIEW,
     name: r.ImpressionNames.USER_AGREEMENTS,
     properties: {
-      required_action: e
+      required_action: s
     }
-  }, {}, []), (0, i.jsx)(c.kpP, {
+  }, {}, []), (0, n.jsx)(c.kpP, {
     graphic: {
       src: E.A,
       type: "image"
     },
     gradientColor: "blue",
     dismissable: false,
-    title: m.intl.string(m.t["7glvXu"]),
-    subtitle: m.intl.string(m.t["+USXQE"]),
+    title: p.intl.string(p.t["7glvXu"]),
+    subtitle: p.intl.string(p.t["+USXQE"]),
     actions: [{
       variant: "primary",
-      text: m.intl.string(m.t["+TBKL1"]),
-      onClick: b,
-      loading: a
+      text: p.intl.string(p.t["+TBKL1"]),
+      onClick: j,
+      loading: l
     }],
-    transitionState: s,
-    onClose: d.js$,
-    children: (0, i.jsxs)(c.BJc, {
+    transitionState: i,
+    onClose: m.js$,
+    children: (0, n.jsxs)(c.BJc, {
       gap: 20,
-      children: [e === d.a3B.AGREEMENTS ? (0, i.jsx)(c.Text, {
+      children: [s === m.a3B.AGREEMENTS ? (0, n.jsx)(c.Text, {
         variant: "text-md/normal",
-        className: p.h_,
-        children: m.intl.format(m.t.CN0Hvb, {
-          url: d.X7G.TERMS_SUMMARY
+        className: d.h_,
+        children: p.intl.format(p.t.CN0Hvb, {
+          url: m.X7G.TERMS_SUMMARY
         })
-      }) : null, (0, i.jsx)("div", {
-        className: p.kL,
-        children: (0, i.jsxs)("ul", {
-          className: p.yJ,
-          children: [(0, i.jsx)(h, {
-            text: m.intl.format(m.t.iw0hFi, {
-              url: d.X7G.TERMS
+      }) : null, (0, n.jsx)("div", {
+        className: d.kL,
+        children: (0, n.jsxs)("ul", {
+          className: d.yJ,
+          children: [(0, n.jsx)(_, {
+            text: p.intl.format(p.t.iw0hFi, {
+              url: m.X7G.TERMS
             })
-          }), (0, i.jsx)(c.cGx, {}), (0, i.jsx)(h, {
-            text: m.intl.format(m.t["36klnD"], {
-              url: d.X7G.PAID_TERMS
+          }), (0, n.jsx)(c.cGx, {}), (0, n.jsx)(_, {
+            text: p.intl.format(p.t["36klnD"], {
+              url: m.X7G.PAID_TERMS
             })
-          }), (0, i.jsx)(c.cGx, {}), (0, i.jsx)(h, {
-            text: m.intl.format(m.t.TquFBF, {
-              url: d.X7G.PRIVACY
+          }), (0, n.jsx)(c.cGx, {}), (0, n.jsx)(_, {
+            text: p.intl.format(p.t.TquFBF, {
+              url: m.X7G.PRIVACY
             })
-          }), (0, i.jsx)(c.cGx, {}), (0, i.jsx)(h, {
-            text: m.intl.format(m.t.ia96Tb, {
-              url: d.X7G.GUIDELINES
+          }), (0, n.jsx)(c.cGx, {}), (0, n.jsx)(_, {
+            text: p.intl.format(p.t.ia96Tb, {
+              url: m.X7G.GUIDELINES
             })
           })]
         })

@@ -29,7 +29,7 @@ let d = new Chunk118356.Vy("LegacyOverlayClient"),
   g = null,
   E = null;
 
-function b(e) {
+function y(e) {
   let {
     level: t,
     message: n,
@@ -59,7 +59,7 @@ function b(e) {
   returntrue
 }
 
-function y() {
+function b() {
   null == E && (E = setInterval(() => {
     if (null != g) {
       let e = Date.now() - g;
@@ -72,23 +72,23 @@ function O() {
   null != E && (clearInterval(E), E = null)
 }
 
-function A(e) {
+function v(e) {
   let {
     enabled: t,
     mode: n
   } = e;
-  return n === l.x7.LegacyOverlayLogging && (t ? y() : O()), false
+  return n === l.x7.LegacyOverlayLogging && (t ? b() : O()), false
 }
 
-function v(e) {
+function A(e) {
   let {
     logs: t
   } = e;
-  return t.forEach(e => b(e)), true
+  return t.forEach(e => y(e)), true
 }
-class S extends(r = Chunk311907.Ay.Store) {
+class I extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(c.A), c.A.hasRenderDebugMode(l.x7.LegacyOverlayLogging) && y()
+    this.waitFor(c.A), c.A.hasRenderDebugMode(l.x7.LegacyOverlayLogging) && b()
   }
   getAllLogs() {
     return m
@@ -100,7 +100,7 @@ class S extends(r = Chunk311907.Ay.Store) {
     return m.filter(e => "error" === e.level || "crash" === e.level)
   }
 }
-u(S, "displayName", "OverlayRPCLogStore"), new S(Chunk73153.h, {
-  OVERLAY_RENDER_DEBUG_MODE: A,
-  OVERLAY_ADD_LOGS_BATCH: v
+u(I, "displayName", "OverlayRPCLogStore"), new I(Chunk73153.h, {
+  OVERLAY_RENDER_DEBUG_MODE: v,
+  OVERLAY_ADD_LOGS_BATCH: A
 })

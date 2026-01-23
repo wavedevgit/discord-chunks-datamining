@@ -1,7 +1,7 @@
 /** Chunk was on 28636 **/
 /** chunk id: 489253, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => f
 }), require("./228524.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,137 +17,137 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk265005 = require("./265005.js");
 
-function f(e) {
+function _(e) {
   let {
     applicationId: t,
     similarApplications: n,
-    onSelectApplication: i,
+    onSelectApplication: a,
     similarLoadId: s
-  } = e, c = function(e) {
+  } = e, o = function(e) {
     let {
       applicationId: t,
       similarAppIds: n
-    } = e, [l, i] = a.useState(), s = (0, r.K)(e => {
-      e && i(t)
+    } = e, [r, a] = l.useState(), s = (0, i.K)(e => {
+      e && a(t)
     });
-    return a.useEffect(() => {
-      l === t && (0, o.TR)(h.HAw.APP_DIRECTORY_RECOMMENDATIONS_VIEWED, {
+    return l.useEffect(() => {
+      r === t && (0, c.TR)(h.HAw.APP_DIRECTORY_RECOMMENDATIONS_VIEWED, {
         application_id: t,
         suggested_application_ids: n
       })
-    }, [l, t, n]), s
+    }, [r, t, n]), s
   }({
     applicationId: t,
-    similarAppIds: a.useMemo(() => n.map(e => e.id), [n])
+    similarAppIds: l.useMemo(() => n.map(e => e.id), [n])
   });
-  return (0, l.jsx)("div", {
-    className: b.hQ,
-    ref: c,
-    children: n.map((e, n) => (0, l.jsx)(g, {
+  return (0, r.jsx)("div", {
+    className: g.hQ,
+    ref: o,
+    children: n.map((e, n) => (0, r.jsx)(b, {
       applicationId: t,
       similarApplication: e,
-      onSelectApplication: i,
+      onSelectApplication: a,
       similarLoadId: s,
       position: n
     }, e.id))
   })
 }
 
-function g(e) {
-  var t, n, r;
+function b(e) {
+  var t, n, i;
   let {
-    applicationId: c,
+    applicationId: o,
     similarApplication: u,
     onSelectApplication: m,
-    position: f,
-    similarLoadId: g
-  } = e, x = (0, p.A)({
+    position: _,
+    similarLoadId: b
+  } = e, f = (0, p.A)({
     application: u
-  }), v = null == (n = u.categories) ? true : n[0], j = a.useMemo(() => s.Ay.getApplicationIconURL({
+  }), x = null == (n = u.categories) ? true : n[0], v = l.useMemo(() => s.Ay.getApplicationIconURL({
     id: u.id,
     icon: u.icon,
     size: 48
-  }), [u]), A = a.useCallback(() => {
-    (0, o.TR)(h.HAw.APP_DIRECTORY_RECOMMENDATION_CLICKED, {
+  }), [u]), j = l.useCallback(() => {
+    (0, c.TR)(h.HAw.APP_DIRECTORY_RECOMMENDATION_CLICKED, {
       current_page: "product",
-      application_id: c,
+      application_id: o,
       suggested_application_id: u.id,
-      position: f,
-      load_id: g,
-      shown_mutual_guilds_count: x.length
+      position: _,
+      load_id: b,
+      shown_mutual_guilds_count: f.length
     }), m(u.id)
-  }, [m, u.id, c, x.length, g, f]);
-  return (0, l.jsxs)(i.DUT, {
-    onClick: A,
-    className: b.vU,
-    children: [(0, l.jsxs)("div", {
-      className: b.nT,
-      children: [(0, l.jsx)("img", {
-        src: j,
+  }, [m, u.id, o, f.length, b, _]);
+  return (0, r.jsxs)(a.DUT, {
+    onClick: j,
+    className: g.vU,
+    children: [(0, r.jsxs)("div", {
+      className: g.nT,
+      children: [(0, r.jsx)("img", {
+        src: v,
         alt: "",
-        className: b.my,
+        className: g.my,
         height: 48,
         width: 48
-      }), (0, l.jsxs)("div", {
-        className: b.gn,
-        children: [(0, l.jsx)("div", {
+      }), (0, r.jsxs)("div", {
+        className: g.gn,
+        children: [(0, r.jsx)("div", {
           style: {
             flex: 1,
             minWidth: 0,
             overflow: "hidden"
           },
-          children: (0, l.jsx)(i.Heading, {
+          children: (0, r.jsx)(a.Heading, {
             variant: "heading-md/semibold",
             color: "text-strong",
-            className: b.JB,
+            className: g.JB,
             children: u.name
           })
-        }), null != v ? (0, l.jsx)(i.Text, {
-          className: b.m4,
+        }), null != x ? (0, r.jsx)(a.Text, {
+          className: g.m4,
           variant: "text-xs/medium",
           color: "text-muted",
-          children: v.name
+          children: x.name
         }) : null]
       })]
-    }), (0, l.jsx)(i.Text, {
-      className: b.i3,
+    }), (0, r.jsx)(a.Text, {
+      className: g.i3,
       variant: "text-sm/medium",
       color: "text-default",
       lineClamp: 2,
-      children: null != (t = null == (r = u.directory_entry) ? true : r.short_description) ? t : u.description
-    }), (0, l.jsx)(d.A, {
+      children: null != (t = null == (i = u.directory_entry) ? true : i.short_description) ? t : u.description
+    }), (0, r.jsx)(d.A, {
       application: u,
       textVariant: "text-xs/medium",
-      mutualGuilds: x,
+      mutualGuilds: f,
       mutualGuildShownMax: 3,
       guildIconSize: d.I.SMALL,
       compact: true
     })]
   })
 }
-let x = function(e) {
+let f = function(e) {
   let {
     applicationId: t,
     fetchState: n,
-    similarApplications: a,
-    onSelectApplication: r,
+    similarApplications: l,
+    onSelectApplication: i,
     similarLoadId: s
   } = e;
-  return n !== c.e.FETCHING && (null == a || 0 === a.length) ? null : (0, l.jsxs)("div", {
-    className: b.hd,
-    children: [(0, l.jsx)("div", {
-      className: b.yF
-    }), (0, l.jsx)(i.Heading, {
+  return n !== o.e.FETCHING && (null == l || 0 === l.length) ? null : (0, r.jsxs)("div", {
+    className: g.hd,
+    children: [(0, r.jsx)("div", {
+      className: g.yF
+    }), (0, r.jsx)(a.Heading, {
       variant: "heading-sm/semibold",
       color: "text-strong",
-      className: b.bV,
+      className: g.bV,
       children: m.intl.string(m.t.E8wCnk)
-    }), (0, l.jsx)(u.A, {
-      loading: n === c.e.FETCHING,
-      children: null != a ? (0, l.jsx)(f, {
+    }), (0, r.jsx)(u.A, {
+      loading: n === o.e.FETCHING,
+      children: null != l ? (0, r.jsx)(_, {
         applicationId: t,
-        similarApplications: a,
-        onSelectApplication: r,
+        similarApplications: l,
+        onSelectApplication: i,
         similarLoadId: s
       }) : null
     })]

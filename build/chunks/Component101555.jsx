@@ -89,9 +89,9 @@ let m = Chunk64700.forwardRef(function(e, t) {
       children: h,
       disabled: m = false,
       dangerous: g
-    } = n, E = p(n, ["onClick", "onContextMenu", "className", "selected", "children", "disabled", "dangerous"]), [b] = i;
+    } = n, E = p(n, ["onClick", "onContextMenu", "className", "selected", "children", "disabled", "dangerous"]), [y] = i;
     return (0, r.jsx)(o.DUT, f(u({
-      innerRef: b,
+      innerRef: y,
       onClick: m ? true : a,
       onContextMenu: m ? true : c,
       className: s()(d, {

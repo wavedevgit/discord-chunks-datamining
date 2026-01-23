@@ -27,15 +27,15 @@ function d() {
     }),
     d = (0, l.bG)([s.A], () => s.A.getLastFeedFetchDate(c.X1.GLOBAL_FEED));
   return (0, a.jsxs)("div", {
-    children: [t ? (0, a.jsx)(i.Text, {
+    children: [t ? (0, a.jsx)(r.Text, {
       variant: "text-md/normal",
       children: "(fetching)"
-    }) : (0, a.jsxs)(i.Text, {
+    }) : (0, a.jsxs)(r.Text, {
       variant: "text-md/normal",
-      children: ["Next fetch: ", null != n ? (0, a.jsx)(r.A, {
+      children: ["Next fetch: ", null != n ? (0, a.jsx)(i.A, {
         deadline: n
       }) : e ? "(awaiting push)" : "(unscheduled)"]
-    }), (0, a.jsxs)(i.Text, {
+    }), (0, a.jsxs)(r.Text, {
       variant: "text-md/normal",
       children: ["Last fetch:", " ", null != d ? (0, a.jsx)(o.z, {
         inline: true,

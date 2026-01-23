@@ -55,25 +55,25 @@ let m = function(e) {
     code: m,
     outboundPromotion: g,
     transitionState: E
-  } = e, [b, y] = i.useState(null), O = (0, d.GV)(), {
-    analyticsLocations: A
+  } = e, [y, b] = i.useState(null), O = (0, d.GV)(), {
+    analyticsLocations: v
   } = (0, u.Ay)(c.A.USER_SETTINGS_GIFT_INVENTORY);
   if (i.useEffect(() => {
       null == m && (0, f.kd)({
         promotionId: g.id,
-        analyticsLocations: A
+        analyticsLocations: v
       }).then(e => n(e)).catch(e => {
         var t;
-        return y(null == e || null == (t = e.body) ? true : t.code)
+        return b(null == e || null == (t = e.body) ? true : t.code)
       })
-    }, [m, g.id, n, A]), null != b) return (0, r.jsx)(h, {
+    }, [m, g.id, n, v]), null != y) return (0, r.jsx)(h, {
     onClose: t,
     transitionState: E
   });
   if (null == m) return (0, r.jsx)(o.y$y, {
     className: _.Lq
   });
-  let v = () => (0, r.jsxs)("div", {
+  let A = () => (0, r.jsxs)("div", {
     className: _.N1,
     children: [(0, r.jsx)("div", {
       className: _.Qw
@@ -90,7 +90,7 @@ let m = function(e) {
     title: "",
     size: "md",
     onClose: async () => await t(),
-    input: v(),
+    input: A(),
     actions: [{
       text: p.intl.string(p.t.TulDPl),
       variant: "secondary",

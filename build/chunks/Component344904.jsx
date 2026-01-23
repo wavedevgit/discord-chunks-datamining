@@ -48,13 +48,13 @@ let m = e => {
       percentage: h,
       initialPercentage: g,
       progressCircleVariation: E = 0,
-      avatarDecoAssetId: b,
-      avatarDecoAssetDescription: y,
+      avatarDecoAssetId: y,
+      avatarDecoAssetDescription: b,
       ellipseOpacity: O,
-      customAnimationClassName: A,
-      circleColor: v,
-      circleStroke: S
-    } = e, I = (0, o.bG)([c.A], () => c.A.useReducedMotion), T = t && !I, C = () => {
+      customAnimationClassName: v,
+      circleColor: A,
+      circleStroke: I
+    } = e, S = (0, o.bG)([c.A], () => c.A.useReducedMotion), T = t && !S, C = () => {
       switch (E) {
         case 0:
           return (0, r.jsx)(d.A, {
@@ -64,13 +64,13 @@ let m = e => {
           });
         case 1:
           return (0, r.jsx)(f.A, {
-            circleColor: v,
+            circleColor: A,
             ellipseOpacity: O
           });
         case 2:
-          if (null != b) return (0, r.jsx)(m, {
-            avatarDecoAssetId: b,
-            avatarDecoAssetDescription: y
+          if (null != y) return (0, r.jsx)(m, {
+            avatarDecoAssetId: y,
+            avatarDecoAssetDescription: b
           });
           return null;
         default:
@@ -82,9 +82,9 @@ let m = e => {
       children: (0, r.jsx)(p.A, {
         animationClassName: s()(_._0, {
           [_.uJ]: T,
-          [null != A ? A : ""]: T
+          [null != v ? v : ""]: T
         }),
-        progressCircleStroke: S,
+        progressCircleStroke: I,
         progressCircleStrokeSize: l,
         percentage: null != i ? i : h,
         initialPercentage: null != i ? i : g,

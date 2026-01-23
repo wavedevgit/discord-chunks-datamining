@@ -26,41 +26,41 @@ function p(e) {
     postThread: m,
     user: g,
     selectedGuildId: E,
-    canAccess: b = false
+    canAccess: y = false
   } = e;
   if (null == c) return null;
-  let y = (0, l.et)(c.thumbnail),
-    O = !b && c.has_media_attachment,
-    A = b ? d.intl.string(d.t.UsZEBI) : d.intl.string(d.t.ReFzYZ),
-    v = null != g ? o.Ay.getName(c.guild_id, c.channel_id, g) : true,
-    S = null == g ? true : g.getAvatarURL(null == p ? true : p.id, f);
-  (null == S || E !== c.guild_id) && (S = s.Ay.getGuildIconURL({
+  let b = (0, l.et)(c.thumbnail),
+    O = !y && c.has_media_attachment,
+    v = y ? d.intl.string(d.t.UsZEBI) : d.intl.string(d.t.ReFzYZ),
+    A = null != g ? o.Ay.getName(c.guild_id, c.channel_id, g) : true,
+    I = null == g ? true : g.getAvatarURL(null == p ? true : p.id, f);
+  (null == I || E !== c.guild_id) && (I = s.Ay.getGuildIconURL({
     id: c.guild_id,
     icon: c.guild_icon,
     size: f,
     canAnimate: false
   }));
-  let I = h(c.thumbnail) && !O,
+  let S = h(c.thumbnail) && !O,
     T = (null == (r = c.thumbnail) ? true : r.filename) != null && (null == (a = c.thumbnail) || null == (i = a.filename) ? true : i.startsWith(u._W));
   return {
     title: null != (t = c.title) ? t : "",
     subtitle: c.description,
-    ctaText: A,
-    coverImage: y,
+    ctaText: v,
+    coverImage: b,
     coverImageOverlayText: O ? d.intl.string(d.t.Yonlia) : true,
     parentChannelId: c.parent_channel_id,
     threadId: c.channel_id,
     postThread: m,
     messageId: c.message_id,
-    canAccess: b,
+    canAccess: y,
     guildId: c.guild_id,
     guildName: null != (n = null == p ? true : p.name) ? n : c.guild_name,
     authorId: null == c ? true : c.author_id,
-    authorName: v,
+    authorName: A,
     channelName: null == _ ? true : _.name,
-    avatarUrl: S,
+    avatarUrl: I,
     shouldShowBlurredThumbnailImage: O,
-    shouldContainMediaWithBackground: I,
+    shouldContainMediaWithBackground: S,
     shouldSpoiler: T,
     obscureAwaitingScan: false,
     flags: c.flags,

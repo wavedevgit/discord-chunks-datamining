@@ -30,13 +30,13 @@ function E(e, t, n) {
   let {
     id: m,
     features: g
-  } = e, E = (0, s.bG)([c.default], () => c.default.getId()), b = (0, s.bG)([d.A], () => d.A.getGuild(m)), y = (0, s.bG)([p.default], () => p.default.getUser(E), [E]), O = (0, s.bG)([u.Ay], () => {
+  } = e, E = (0, s.bG)([c.default], () => c.default.getId()), y = (0, s.bG)([d.A], () => d.A.getGuild(m)), b = (0, s.bG)([p.default], () => p.default.getUser(E), [E]), O = (0, s.bG)([u.Ay], () => {
     var e;
     return (null == (e = null != m ? u.Ay.getMember(m, E) : null) ? true : e.joinedAt) != null
   }, [m, E]), {
-    validInviteKey: A,
-    isBypassInvite: v,
-    inviteRoles: S
+    validInviteKey: v,
+    isBypassInvite: A,
+    inviteRoles: I
   } = (0, s.cf)([f.A], () => {
     var e;
     let t = null != n ? n : f.A.getInviteKeyForGuildId(m),
@@ -50,23 +50,23 @@ function E(e, t, n) {
       isBypassInvite: (0, a.Lt)(null != (e = r.flags) ? e : 0, i.Q.IS_APPLICATION_BYPASS),
       inviteRoles: r.roles
     }
-  }, [m, n]), I = (0, l.A)(), T = r.useMemo(() => {
+  }, [m, n]), S = (0, l.A)(), T = r.useMemo(() => {
     if (O) {
-      if ("INVITE" === t && null != S && S.length > 0 && null != y) {
+      if ("INVITE" === t && null != I && I.length > 0 && null != b) {
         var n;
-        let e = u.Ay.getMember(m, y.id),
+        let e = u.Ay.getMember(m, b.id),
           t = new Set(null != (n = null == e ? true : e.roles) ? n : []);
-        if (S.some(e => !t.has(e.id))) return 6
+        if (I.some(e => !t.has(e.id))) return 6
       }
-      let r = null == y ? true : y.primaryGuild,
+      let r = null == b ? true : b.primaryGuild,
         i = (null == r ? true : r.identityGuildId) === m && (null == r ? true : r.identityEnabled) === true;
-      return "INVITE" !== t && null != e.tag && !i && null != b && (0, o.Rg)(b) ? 1 : 0
+      return "INVITE" !== t && null != e.tag && !i && null != y && (0, o.Rg)(y) ? 1 : 0
     }
-    return I.includes(m) ? 2 : (null == g ? true : g.includes(h.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == g ? true : g.includes(h.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && (null != A || e.visibility === _.n.PUBLIC_WITH_RECRUITMENT) && !v ? 3 : null != A ? 5 : (null == g ? true : g.includes(h.GuildFeatures.DISCOVERABLE)) ? 4 : null
-  }, [O, I, m, g, A, e.visibility, e.tag, v, t, b, S, y]);
+    return S.includes(m) ? 2 : (null == g ? true : g.includes(h.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == g ? true : g.includes(h.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && (null != v || e.visibility === _.n.PUBLIC_WITH_RECRUITMENT) && !A ? 3 : null != v ? 5 : (null == g ? true : g.includes(h.GuildFeatures.DISCOVERABLE)) ? 4 : null
+  }, [O, S, m, g, v, e.visibility, e.tag, A, t, y, I, b]);
   return {
     guildId: m,
     ctaType: T,
-    validInviteKey: A
+    validInviteKey: v
   }
 }

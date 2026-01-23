@@ -30,11 +30,11 @@ Chunk116740.List, module.exports = function(e) {
       m = t.getKey(),
       g = t.getText(),
       E = h.size - 1,
-      b = this.props.children || h.map(function(e, c) {
+      y = this.props.children || h.map(function(e, c) {
         var h = e.get("decoratorKey"),
-          b = e.get("leaves"),
-          y = b.size - 1,
-          O = b.map(function(e, n) {
+          y = e.get("leaves"),
+          b = y.size - 1,
+          O = y.map(function(e, n) {
             var i = s.encode(m, c, n),
               u = e.get("start"),
               d = e.get("end");
@@ -49,7 +49,7 @@ Chunk116740.List, module.exports = function(e) {
               styleSet: t.getInlineStyleAt(u),
               customStyleMap: o,
               customStyleFn: r,
-              isLast: h === E && n === y
+              isLast: h === E && n === b
             })
           }).toArray();
         return h && u ? l.createElement(i, {
@@ -71,6 +71,6 @@ Chunk116740.List, module.exports = function(e) {
         "public/DraftStyleDefault/ltr": "LTR" === d,
         "public/DraftStyleDefault/rtl": "RTL" === d
       })
-    }, b)
+    }, y)
   }, t
 }(Chunk64700.Component)

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   $V: () => w,
-  Fg: () => b,
-  KM: () => A,
+  Fg: () => y,
+  KM: () => v,
   LE: () => D,
   M: () => C,
   O8: () => O,
@@ -13,11 +13,11 @@ require.d(exports, {
   f: () => G,
   gh: () => P,
   ku: () => E,
-  mS: () => I,
+  mS: () => S,
   nx: () => V,
   qo: () => R,
   s9: () => T,
-  y5: () => v
+  y5: () => A
 }), require("./896048.js"), require("./114821.js"), require("./339614.js"), require("./938796.js"), require("./321073.js");
 var Chunk665260 = require("./665260.js"),
   Chunk873298 = require("./873298.js"),
@@ -38,14 +38,14 @@ let g = false,
     var t;
     return null == e.isEligible || (null == (t = e.isEligible) ? true : t.call(e))
   }),
-  b = e => {
+  y = e => {
     let {
       channelId: t,
       authorId: n
     } = V(e);
-    return null == t || null == e ? m.LO.NONE : y(t, n)
+    return null == t || null == e ? m.LO.NONE : b(t, n)
   },
-  y = (e, t) => {
+  b = (e, t) => {
     let n = f.default.getCurrentUser();
     if (null == n || t === n.id) return m.LO.NONE;
     let r = L(e, t, [c.A, d.A]);
@@ -56,12 +56,12 @@ let g = false,
     return null == e ? m.LO.NONE : D(t.map(t => G(t.getUserSettingsWithDefaults()[e]) ? t.harmType : null).filter(p.Vq))
   };
 
-function A(e) {
-  let t = b(e);
-  return v(e, t)
+function v(e) {
+  let t = y(e);
+  return A(e, t)
 }
 
-function v(e, t) {
+function A(e, t) {
   var n, r;
   if (t === m.LO.NONE || null == e) returnfalse;
   if ((null == (n = e.attachments) ? true : n.some(e => N({
@@ -74,11 +74,11 @@ function v(e, t) {
   let i = null;
   if ("messageSnapshots" in e ? i = e.messageSnapshots : "message_snapshots" in e && (i = e.message_snapshots), null == i || 0 === i.length) returnfalse;
   for (let e of i)
-    if (v(e.message, t)) returntrue;
+    if (A(e.message, t)) returntrue;
   returnfalse
 }
 
-function S(e) {
+function I(e) {
   return (Array.isArray(e) ? e : [e]).flatMap(e => {
     switch (e.type) {
       case a.I5.MEDIA_GALLERY:
@@ -89,16 +89,16 @@ function S(e) {
         return e.file;
       case a.I5.SECTION:
       case a.I5.ACTION_ROW:
-        return e.components.flatMap(S);
+        return e.components.flatMap(I);
       default:
         return []
     }
   }).map(e => "proxy_url" in e ? (0, l.Uv)(e) : e)
 }
 
-function I(e, t) {
+function S(e, t) {
   var n, r;
-  let i = null != t ? t : b(e);
+  let i = null != t ? t : y(e);
   if (i === m.LO.NONE) returnfalse;
   if ((null == (n = e.attachments) ? true : n.some(e => w({
       type: _.D.Attachment,
@@ -106,24 +106,24 @@ function I(e, t) {
     }, i))) || (null == (r = e.embeds) ? true : r.some(e => w({
       type: _.D.Embed,
       media: e
-    }, i))) || null != e.components && S(e.components).some(e => w({
+    }, i))) || null != e.components && I(e.components).some(e => w({
       type: _.D.GenericMedia,
       media: e
     }, i))) returntrue;
   let a = null;
   if ("messageSnapshots" in e ? a = e.messageSnapshots : "message_snapshots" in e && (a = e.message_snapshots), null == a || 0 === a.length) returnfalse;
   for (let e of a)
-    if (I(e.message, i)) returntrue;
+    if (S(e.message, i)) returntrue;
   returnfalse
 }
 
 function T(e) {
-  return !(null != e.components && S(e.components).some(e => e.loadingState === a.TD.LOADING)) && true
+  return !(null != e.components && I(e.components).some(e => e.loadingState === a.TD.LOADING)) && true
 }
 
 function C(e) {
   var t, n, r, i;
-  let a = b(e);
+  let a = y(e);
   if (a === m.LO.NONE) return {
     attachmentIds: [],
     embedIds: []

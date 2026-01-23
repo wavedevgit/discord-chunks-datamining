@@ -2,7 +2,7 @@
 /** chunk id: 663572, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => m
+  A: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,7 +17,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk140030 = require("./140030.js");
 
-function p(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function p(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,19 +49,19 @@ function g(e, t) {
   }), e
 }
 
-function m(e) {
+function f(e) {
   let {
     invite: t,
     onAcceptInvite: n,
-    disableUser: m = false
+    disableUser: f = false
   } = e;
   if (null == t) return null;
-  let A = null != t.guild ? (0, o.DY)(t.guild) : null,
-    x = null != t.channel ? (0, l.OY)(t.channel) : null,
-    _ = null != t.target_application ? new s.Ay(t.target_application) : null,
-    E = m || null == t.inviter ? null : new a.A(t.inviter),
-    b = !(null != t.approximate_member_count && t.approximate_member_count > c.FC || null != A && A.features.has(d.GuildFeatures.COMMUNITY)) && null != E && (0, c.B_)(t),
-    v = (e => {
+  let _ = null != t.guild ? (0, o.DY)(t.guild) : null,
+    A = null != t.channel ? (0, l.OY)(t.channel) : null,
+    x = null != t.target_application ? new s.Ay(t.target_application) : null,
+    E = f || null == t.inviter ? null : new a.A(t.inviter),
+    v = !(null != t.approximate_member_count && t.approximate_member_count > c.FC || null != _ && _.features.has(d.GuildFeatures.COMMUNITY)) && null != E && (0, c.B_)(t),
+    j = (e => {
       let {
         state: t
       } = e;
@@ -73,36 +73,36 @@ function m(e) {
           returnfalse
       }
     })(t),
-    j = {
+    y = {
       invite: t,
       user: E,
-      guild: A,
-      channel: x,
-      application: _
+      guild: _,
+      channel: A,
+      application: x
     };
   return (0, c.Fk)(t) ? (0, r.jsx)(u.A, {
     invite: t,
-    channel: x,
-    isSubmitting: v,
+    channel: A,
+    isSubmitting: j,
     onAcceptInvite: n
   }) : (0, r.jsxs)("div", {
-    className: f.kL,
+    className: p.kL,
     children: [(0, r.jsx)(c.zN, {
-      application: _,
-      guild: A,
-      user: b || (0, c.PX)(t) ? E : null
-    }), (0, c.PX)(t) ? null : (0, r.jsx)(c.ji, g(p({}, j), {
-      showBigUserIcon: b
-    })), (0, r.jsx)(c.TZ, g(p({}, j), {
-      showBigUserIcon: b
-    })), (0, r.jsx)(c.IK, p({}, j)), (0, r.jsx)("div", {
-      className: f.xG,
+      application: x,
+      guild: _,
+      user: v || (0, c.PX)(t) ? E : null
+    }), (0, c.PX)(t) ? null : (0, r.jsx)(c.ji, m(g({}, y), {
+      showBigUserIcon: v
+    })), (0, r.jsx)(c.TZ, m(g({}, y), {
+      showBigUserIcon: v
+    })), (0, r.jsx)(c.IK, g({}, y)), (0, r.jsx)("div", {
+      className: p.xG,
       children: (0, r.jsx)(i.Button, {
         variant: "primary",
         size: "md",
         text: h.intl.string(h.t.ohMvm1),
         onClick: n,
-        loading: v,
+        loading: j,
         fullWidth: true
       })
     })]

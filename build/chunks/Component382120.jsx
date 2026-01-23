@@ -1,7 +1,7 @@
 /** Chunk was on 64228 **/
-/** chunk id: 382120, original params: e,l,t (module,exports,require) **/
+/** chunk id: 382120, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 }), require("./228524.js"), require("./938796.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,26 +15,26 @@ var Chunk158954 = require("./158954.js"),
 
 function u(e) {
   let {
-    icon: l,
-    title: t,
+    icon: t,
+    title: n,
     description: i
   } = e;
-  return (0, n.jsxs)("div", {
-    className: c.nM,
-    children: [(0, n.jsx)("div", {
-      className: c.aL,
-      children: (0, n.jsx)(l, {
+  return (0, l.jsxs)("div", {
+    className: d.nM,
+    children: [(0, l.jsx)("div", {
+      className: d.aL,
+      children: (0, l.jsx)(t, {
         size: "custom",
         width: 20,
         height: 20,
         color: "currentColor"
       })
-    }), (0, n.jsxs)("div", {
-      className: c.qg,
-      children: [(0, n.jsx)(s.Heading, {
+    }), (0, l.jsxs)("div", {
+      className: d.qg,
+      children: [(0, l.jsx)(s.Heading, {
         variant: "text-xs/semibold",
-        children: t
-      }), (0, n.jsx)(s.Text, {
+        children: n
+      }), (0, l.jsx)(s.Text, {
         variant: "text-sm/normal",
         children: i
       })]
@@ -42,37 +42,37 @@ function u(e) {
   })
 }
 
-function f(e) {
+function p(e) {
   let {
-    user: l
-  } = e, t = (0, r.bG)([o.A], () => {
+    user: t
+  } = e, n = (0, r.bG)([a.A], () => {
     var e;
-    return null == (e = o.A.getUserProfile(l.id)) ? true : e.application
+    return null == (e = a.A.getUserProfile(t.id)) ? true : e.application
   }), {
-    hasMessageContent: f,
-    hasGuildPresences: p,
-    hasGuildMembers: m
-  } = (0, a.Z)({
-    flags: null == t ? true : t.flags
+    hasMessageContent: p,
+    hasGuildPresences: m,
+    hasGuildMembers: f
+  } = (0, o.Z)({
+    flags: null == n ? true : n.flags
   });
-  return (0, n.jsxs)(i.IpV, {
+  return (0, l.jsxs)(i.IpV, {
     fade: true,
-    className: c.XG,
-    children: [f && (0, n.jsx)(u, {
+    className: d.XG,
+    children: [p && (0, l.jsx)(u, {
       icon: s.oyn,
-      title: d.intl.string(d.t["7Tmhfu"]),
-      description: d.intl.string(d.t.eu5x7z)
-    }), p && (0, n.jsx)(u, {
+      title: c.intl.string(c.t["7Tmhfu"]),
+      description: c.intl.string(c.t.eu5x7z)
+    }), m && (0, l.jsx)(u, {
       icon: s._xR,
-      title: d.intl.string(d.t.awYSsM),
-      description: d.intl.string(d.t.TpsXoC)
-    }), m && (0, n.jsx)(u, {
+      title: c.intl.string(c.t.awYSsM),
+      description: c.intl.string(c.t.TpsXoC)
+    }), f && (0, l.jsx)(u, {
       icon: s.nFg,
-      title: d.intl.string(d.t.WuKeSJ),
-      description: d.intl.string(d.t.wOBmtV)
-    }), (0, n.jsx)(s.Text, {
+      title: c.intl.string(c.t.WuKeSJ),
+      description: c.intl.string(c.t.wOBmtV)
+    }), (0, l.jsx)(s.Text, {
       variant: "text-xs/normal",
-      children: d.intl.format(d.t.b6nqk0, {
+      children: c.intl.format(c.t.b6nqk0, {
         helpCenterUrl: "https://support.discord.com/hc/articles/7933951485975"
       })
     })]

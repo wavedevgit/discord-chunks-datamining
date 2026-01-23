@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 220628, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => g
 });
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -15,18 +15,18 @@ var Chunk64700 = require("./64700.js"),
   Chunk568065 = require("./568065.js"),
   Chunk652215 = require("./652215.js");
 
-function h(e, t, n) {
+function f(e, t, n) {
   n && (0, i.s7G)(), (0, d.h)(e, t)
 }
 
-function b(e, t) {
+function g(e, t) {
   let {
     analyticsLocations: n
-  } = (0, a.Ay)(), {
+  } = (0, s.Ay)(), {
     onToggle: i,
     isLoading: d,
-    error: b
-  } = (0, u.A)(e, t), g = (0, l.bG)([o.A], () => o.A.getGuild(e)), m = (0, c.A)(e, t);
+    error: g
+  } = (0, u.A)(e, t), m = (0, l.bG)([o.A], () => o.A.getGuild(e)), b = (0, c.A)(e, t);
   return {
     onActivate: r.useCallback(function() {
       var e;
@@ -34,26 +34,26 @@ function b(e, t) {
         {
           shouldCloseAllModals: l = true
         } = r;
-      if (null != g && null != t) return m < t.cost ? void(0, s.g)({
+      if (null != m && null != t) return b < t.cost ? void(0, a.g)({
         analyticsLocation: {
-          page: p.liQ.GUILD_POWERUPS_OVERVIEW,
-          section: p.JJy.GUILD_POWERUPS_OVERVIEW_CARD
+          page: h.liQ.GUILD_POWERUPS_OVERVIEW,
+          section: h.JJy.GUILD_POWERUPS_OVERVIEW_CARD
         },
-        numberOfBoostsToAdd: t.cost - m,
+        numberOfBoostsToAdd: t.cost - b,
         analyticsLocations: n,
-        guild: g,
-        intent: t.type === f.o9.LEVEL ? f.Pn.LEVEL : f.Pn.PERK,
+        guild: m,
+        intent: t.type === p.o9.LEVEL ? p.Pn.LEVEL : p.Pn.PERK,
         onSubscribeComplete: () => {
           var e;
           return null == (e = i(true)) ? true : e.then(() => {
-            h(g.id, t, l)
+            f(m.id, t, l)
           })
         }
       }) : null == (e = i(true)) ? true : e.then(() => {
-        h(g.id, t, l)
+        f(m.id, t, l)
       })
-    }, [i, t, m, n, g]),
+    }, [i, t, b, n, m]),
     isLoading: d,
-    error: b
+    error: g
   }
 }

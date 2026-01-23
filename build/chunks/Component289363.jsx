@@ -1,5 +1,5 @@
 /** Chunk was on 38672 **/
-/** chunk id: 289363, original params: a,s,e (module,exports,require) **/
+/** chunk id: 289363, original params: e,s,a (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => u
 });
@@ -11,31 +11,31 @@ var Chunk627968 = require("./627968.js"),
   Chunk287809 = require("./287809.js"),
   Chunk486020 = require("./486020.js"),
   Chunk239031 = require("./239031.js");
-let u = Chunk64700.memo(function(a) {
+let u = Chunk64700.memo(function(e) {
   let {
     application: s
-  } = a, e = (0, d.bG)([t.default], () => t.default.getCurrentUser()), r = m.Ay.getUserAvatarURL(e);
-  return (0, c.jsxs)("div", {
+  } = e, a = (0, c.bG)([d.default], () => d.default.getCurrentUser()), r = m.Ay.getUserAvatarURL(a);
+  return (0, l.jsxs)("div", {
     className: p.Y,
-    children: [(0, c.jsx)(i.A, {
+    children: [(0, l.jsx)(t.A, {
       className: p.my,
       game: s,
-      size: i.M.MEDIUM,
+      size: t.M.MEDIUM,
       "aria-label": s.name
-    }), (0, c.jsxs)("div", {
+    }), (0, l.jsxs)("div", {
       className: p.I5,
-      children: [(0, c.jsx)("div", {
+      children: [(0, l.jsx)("div", {
         className: p.pw
-      }), (0, c.jsx)("div", {
+      }), (0, l.jsx)("div", {
         className: p.pw
-      }), (0, c.jsx)("div", {
+      }), (0, l.jsx)("div", {
         className: p.pw
       })]
-    }), (0, c.jsx)(l.euF, {
+    }), (0, l.jsx)(i.euF, {
       className: p.my,
       src: r,
-      size: l._3J.SIZE_48,
-      "aria-label": e.username
+      size: i._3J.SIZE_48,
+      "aria-label": a.username
     })]
   })
 })

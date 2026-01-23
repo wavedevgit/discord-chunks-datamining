@@ -43,21 +43,21 @@ async function h(e) {
     showGuildProfile: m,
     hideRestrictedProfile: g,
     sourceAnalyticsLocations: E,
-    appContext: b,
-    customStatusPrompt: y = null,
+    appContext: y,
+    customStatusPrompt: b = null,
     disableActionsForPreview: O = false
-  } = e, A = c.default.getUser(t);
-  _(t), null == A ? await (0, a.eO)(t, {
+  } = e, v = c.default.getUser(t);
+  _(t), null == v ? await (0, a.eO)(t, {
     type: "modal",
     guildId: m && null != n ? n : true,
     withMutualFriendsCount: true,
     withMutualFriends: false,
     withMutualGuilds: true,
     joinRequestId: u
-  }) : (0, d.A)(A.id, A.getAvatarURL(true, f), {
+  }) : (0, d.A)(v.id, v.getAvatarURL(true, f), {
     type: "modal",
     guildId: m && null != n ? n : true,
-    withMutualFriendsCount: !A.bot,
+    withMutualFriendsCount: !v.bot,
     withMutualFriends: false,
     withMutualGuilds: true,
     joinRequestId: u
@@ -70,13 +70,13 @@ async function h(e) {
     roleId: null != o ? o : true,
     sessionId: null != l ? l : true,
     openedAt: Date.now(),
-    customStatusPrompt: y,
+    customStatusPrompt: b,
     tabSection: p,
     scrollTarget: h,
     showGuildProfile: m,
     hideRestrictedProfile: g,
     sourceAnalyticsLocations: E,
-    appContext: b,
+    appContext: y,
     disableActionsForPreview: O
   })
 }

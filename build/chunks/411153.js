@@ -1,7 +1,7 @@
 /** Chunk was on 94503 **/
 /** chunk id: 411153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ag: () => u,
+  Ag: () => c,
   Ay: () => g,
   QO: () => d,
   pq: () => E
@@ -13,7 +13,7 @@ var Chunk989349 = require("./989349.js"),
   Chunk661191 = require("./661191.js"),
   Chunk652215 = require("./652215.js");
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,7 +22,7 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 
-function u(e) {
+function c(e) {
   if (e === o.F_X.ALL) return o.GaG.ALL;
   if (e <= o.F_X.GUILD_UPDATE) return o.GaG.GUILD;
   if (e <= o.F_X.CHANNEL_DELETE || e === o.F_X.MESSAGE_BULK_DELETE) return o.GaG.CHANNEL;
@@ -146,13 +146,13 @@ function E(e) {
 }
 class d {
   constructor(e, t, n) {
-    c(this, "key", true), c(this, "oldValue", true), c(this, "newValue", true), c(this, "subtarget", true), this.key = e, this.oldValue = t, this.newValue = n
+    u(this, "key", true), u(this, "oldValue", true), u(this, "newValue", true), u(this, "subtarget", true), this.key = e, this.oldValue = t, this.newValue = n
   }
 }
 class _ extends Chunk315069.A {
   constructor(e) {
     var t, n, l, a, i, o;
-    super(), c(this, "id", true), c(this, "actionType", true), c(this, "action", true), c(this, "targetType", true), c(this, "targetId", true), c(this, "target", true), c(this, "userId", true), c(this, "changes", true), c(this, "timestampStart", true), c(this, "timestampEnd", true), c(this, "user", true), c(this, "options", true), this.id = e.id, this.action = e.action, this.actionType = E(this.action), this.targetId = e.targetId, this.timestampStart = null != (t = e.timestampStart) ? t : r()(s.default.extractTimestamp(this.id)), this.timestampEnd = null != (n = e.timestampEnd) ? n : this.timestampStart, this.userId = e.userId, this.changes = null != (l = e.changes) ? l : [], this.targetType = u(this.action), this.options = null != (a = e.options) ? a : {}, this.target = null != (i = e.target) ? i : e.id, this.user = null != (o = e.user) ? o : null
+    super(), u(this, "id", true), u(this, "actionType", true), u(this, "action", true), u(this, "targetType", true), u(this, "targetId", true), u(this, "target", true), u(this, "userId", true), u(this, "changes", true), u(this, "timestampStart", true), u(this, "timestampEnd", true), u(this, "user", true), u(this, "options", true), this.id = e.id, this.action = e.action, this.actionType = E(this.action), this.targetId = e.targetId, this.timestampStart = null != (t = e.timestampStart) ? t : r()(s.default.extractTimestamp(this.id)), this.timestampEnd = null != (n = e.timestampEnd) ? n : this.timestampStart, this.userId = e.userId, this.changes = null != (l = e.changes) ? l : [], this.targetType = c(this.action), this.options = null != (a = e.options) ? a : {}, this.target = null != (i = e.target) ? i : e.id, this.user = null != (o = e.user) ? o : null
   }
 }
 let g = _

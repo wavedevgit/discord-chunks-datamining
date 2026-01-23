@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 193699, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,20 +17,20 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk786983 = require("./786983.js");
 
-function A(e) {
+function f(e) {
   let {
     className: t,
     markAsDismissed: n
   } = e;
   return (0, r.jsxs)(o.A, {
-    className: l()(h.Nr, t),
+    className: l()(g.Nr, t),
     children: [(0, r.jsx)(a.Heading, {
       variant: "heading-md/semibold",
-      className: h.wx,
-      children: f.intl.string(f.t.HcbnMM)
+      className: g.wx,
+      children: h.intl.string(h.t.HcbnMM)
     }), (0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
-      children: f.intl.format(f.t.NkFrzN, {
+      children: h.intl.format(h.t.NkFrzN, {
         onPrivacyClick: () => {
           (0, u.openUserSettings)(c.X.DATA_AND_PRIVACY_PANEL, {
             section: d.nc_.DATA_AND_PRIVACY
@@ -38,18 +38,18 @@ function A(e) {
         }
       })
     }), (0, r.jsxs)("div", {
-      className: h.UD,
+      className: g.UD,
       children: [(0, r.jsx)(a.Button, {
         variant: "primary",
         size: "sm",
         fullWidth: true,
-        text: f.intl.string(f.t.ebojgD),
+        text: h.intl.string(h.t.ebojgD),
         onClick: () => (0, s.U)([d.YAq.PERSONALIZATION], [])
       }), (0, r.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",
         fullWidth: true,
-        text: f.intl.string(f.t.f3Pet9),
+        text: h.intl.string(h.t.f3Pet9),
         onClick: () => n(p.i.DISMISS)
       })]
     })]

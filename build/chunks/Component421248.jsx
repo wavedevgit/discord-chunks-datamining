@@ -22,7 +22,7 @@ var Chunk873298 = require("./873298.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk842130 = require("./842130.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,14 +31,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -48,19 +48,19 @@ function O() {
   var e;
   let t = null == (e = (0, f.A)()) || e,
     n = (0, d.uM)(),
-    b = (0, u.G)(),
+    y = (0, u.G)(),
     {
       explicitContentGuilds: O,
-      explicitContentFriendDm: A,
-      explicitContentNonFriendDm: v
+      explicitContentFriendDm: v,
+      explicitContentNonFriendDm: A
     } = (0, c.R)(),
-    S = e => {
+    I = e => {
       let t = Object.values(e);
       (0, o.hK)() && t.includes(i.TO.SHOW) ? a.A.showAgeVerificationGetStartedModal({
         entryPoint: s.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
       }) : (0, l.Jz)(e)
     },
-    I = [{
+    S = [{
       value: i.TO.BLUR,
       label: g.intl.string(g.t.S49Uad)
     }, {
@@ -75,36 +75,36 @@ function O() {
       value: i.TO.SHOW,
       label: g.intl.string(g.t["5k5OFp"])
     };
-  t && (I.unshift(C), T.unshift(C));
+  t && (S.unshift(C), T.unshift(C));
   let N = {
-    isDisabled: b,
+    isDisabled: y,
     tooltipText: n ? g.intl.string(E.default["6Af/cw"]) : true
   };
   return (0, r.jsxs)(p.E, {
     setting: m.H.PRIVACY_SENSITIVE_MEDIA_V2,
     scrollPosition: h.d1.EXPLICIT_MEDIA_REDACTION_V2,
     description: g.intl.string(g.t.Wnojv1),
-    children: [(0, r.jsx)(_.A, y({
+    children: [(0, r.jsx)(_.A, b({
       title: g.intl.string(g.t["+uI23H"]),
-      value: A,
-      onChange: e => S({
+      value: v,
+      onChange: e => I({
         explicitContentFriendDm: e
       }),
-      options: I
-    }, N)), (0, r.jsx)(_.A, y({
+      options: S
+    }, N)), (0, r.jsx)(_.A, b({
       title: g.intl.string(g.t["Yh+HX1"]),
-      value: v,
-      onChange: e => S({
+      value: A,
+      onChange: e => I({
         explicitContentNonFriendDm: e
       }),
-      options: I
+      options: S
     }, N)), (0, r.jsx)(_.A, {
       title: g.intl.string(g.t["FP+a42"]),
       value: O,
-      onChange: e => S({
+      onChange: e => I({
         explicitContentGuilds: e
       }),
-      isDisabled: !t || b,
+      isDisabled: !t || y,
       tooltipText: n ? g.intl.string(E.default["6Af/cw"]) : true,
       options: T
     })]

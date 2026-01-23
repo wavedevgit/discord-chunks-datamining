@@ -36,19 +36,19 @@ let s = (e, t) => {
   m = /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i,
   g = (0, Chunk723702.isIOS)() ? _ : (0, Chunk723702.isAndroid)() ? h : m,
   E = e => null != e && g.test(e),
-  b = /\.(webm)$/i,
-  y = /\.(mp4|mov|qt)$/i,
+  y = /\.(webm)$/i,
+  b = /\.(mp4|mov|qt)$/i,
   O = /\.(mp4|webm|mov|qt)$/i,
-  A = /\.(mp4|webm|mov|qt)$/i,
-  v = /\.(riv)$/i,
-  S = (0, Chunk723702.isIOS)() ? y : (0, Chunk723702.isAndroid)() ? O : A,
-  I = e => (0, a.D)() && i.A.getConfig({
+  v = /\.(mp4|webm|mov|qt)$/i,
+  A = /\.(riv)$/i,
+  I = (0, Chunk723702.isIOS)() ? b : (0, Chunk723702.isAndroid)() ? O : v,
+  S = e => (0, a.D)() && i.A.getConfig({
     location: "isWebPlayerVideoUrl"
-  }).enabled && s(e, b),
-  T = e => s(e, S) || I(e),
+  }).enabled && s(e, y),
+  T = e => s(e, I) || S(e),
   C = e => null != e && (0, a.D)() && i.A.getConfig({
     location: "isWebPlayerVideoFile"
-  }).enabled && b.test(e),
-  N = e => null != e && (S.test(e) || C(e)),
-  R = e => null != e && v.test(e),
+  }).enabled && y.test(e),
+  N = e => null != e && (I.test(e) || C(e)),
+  R = e => null != e && A.test(e),
   w = e => o(e, "video")

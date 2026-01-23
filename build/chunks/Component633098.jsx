@@ -27,13 +27,13 @@ function h(e) {
     className: t
   } = e, {
     trackUserProfileEditSaved: n
-  } = (0, f.NJ)(), [i, h] = l.useState(false), v = (0, o.yK)([g.A], () => {
+  } = (0, f.NJ)(), [i, h] = l.useState(false), v = (0, s.yK)([m.A], () => {
     var e;
-    return null != (e = g.A.getSaveablePendingWidgets()) ? e : []
-  }), A = (0, o.yK)([g.A], () => g.A.getChangedWidgets()), w = (0, o.yK)([g.A], () => g.A.getRemovedWidgets()), I = (0, o.bG)([g.A], () => g.A.hasUnsavedChanges()), P = (0, o.bG)([g.A], () => g.A.canSaveChanges()), E = (0, o.bG)([g.A], () => g.A.isSubmitting), S = (0, o.bG)([u.A], () => u.A.useReducedMotion), T = (0, c.pnh)(I, {
+    return null != (e = m.A.getSaveablePendingWidgets()) ? e : []
+  }), _ = (0, s.yK)([m.A], () => m.A.getChangedWidgets()), A = (0, s.yK)([m.A], () => m.A.getRemovedWidgets()), I = (0, s.bG)([m.A], () => m.A.hasUnsavedChanges()), w = (0, s.bG)([m.A], () => m.A.canSaveChanges()), P = (0, s.bG)([m.A], () => m.A.isSubmitting), E = (0, s.bG)([u.A], () => u.A.useReducedMotion), S = (0, c.pnh)(I, {
     from: {
       opacity: 0,
-      y: 80 * !S
+      y: 80 * !E
     },
     enter: {
       opacity: 1,
@@ -41,7 +41,7 @@ function h(e) {
     },
     leave: {
       opacity: 0,
-      y: 80 * !S
+      y: 80 * !E
     }
   });
   l.useEffect(() => {
@@ -56,15 +56,15 @@ function h(e) {
   }, []), l.useEffect(() => {
     I && c.ORC.announce(j.intl.string(j.t["0Y/qkL"]))
   }, [I]);
-  let _ = l.useCallback(async () => {
-      if (g.A.canSaveChanges()) {
+  let T = l.useCallback(async () => {
+      if (m.A.canSaveChanges()) {
         try {
-          await b.A.savePendingWidgets(v)
+          await g.A.savePendingWidgets(v)
         } catch (e) {
-          (0, m.XA)(y.jM.WIDGET_SAVE_FAILURE);
+          (0, b.XA)(y.jM.WIDGET_SAVE_FAILURE);
           return
         }
-        for (let e of A) {
+        for (let e of _) {
           let t = {
             widgetEdited: e.type,
             isWidgetRemoved: false
@@ -77,16 +77,16 @@ function h(e) {
             return e + (null != (n = null == (r = t.comment) ? true : r.length) ? n : 0)
           }, 0)), n(t)
         }
-        for (let e of w) n({
+        for (let e of A) n({
           widgetEdited: e.type,
           isWidgetRemoved: true
         })
       }
-    }, [v, A, w, n]),
+    }, [v, _, A, n]),
     N = l.useCallback(() => {
-      b.A.clearPendingWidgets()
+      g.A.clearPendingWidgets()
     }, []);
-  return T((e, n) => n ? (0, r.jsx)(s.animated.div, {
+  return S((e, n) => n ? (0, r.jsx)(o.animated.div, {
     className: t,
     style: e,
     children: (0, r.jsxs)("section", {
@@ -106,14 +106,14 @@ function h(e) {
           variant: "secondary",
           text: j.intl.string(j.t.yBZMsQ),
           onClick: N,
-          disabled: !I || E
+          disabled: !I || P
         }), (0, r.jsx)(c.Button, {
           size: "sm",
           variant: "primary",
           text: j.intl.string(j.t["R3BPH+"]),
-          onClick: _,
-          loading: E,
-          disabled: !P || !I || E
+          onClick: T,
+          loading: P,
+          disabled: !w || !I || P
         })]
       })]
     })

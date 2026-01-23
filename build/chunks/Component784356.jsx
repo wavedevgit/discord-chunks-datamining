@@ -24,27 +24,27 @@ let d = e => {
     onCtaClick: m,
     perkComponent: g,
     subtitle: E = "",
-    descriptionCta: b = "",
-    customContent: y,
+    descriptionCta: y = "",
+    customContent: b,
     cardVariant: O,
-    subtitleClassName: A,
-    imageOverlayText: v
-  } = e, S = e => (null == e ? true : e.onlyShowOnHover) !== true, I = (0, l.Q)(O), T = null != v;
+    subtitleClassName: v,
+    imageOverlayText: A
+  } = e, I = e => (null == e ? true : e.onlyShowOnHover) !== true, S = (0, l.Q)(O), T = null != A;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: a()(u.Iv, u.Gz)
     }), (0, r.jsx)(c.A, {
       title: d,
-      shouldShowElement: S,
-      cardVariantStyleInfo: I,
+      shouldShowElement: I,
+      cardVariantStyleInfo: S,
       titleClassName: f,
       subtitle: E,
-      subtitleClassName: A
+      subtitleClassName: v
     }), null != _ && (0, r.jsxs)("div", {
       className: a()(u.V8, {
         [u.wP]: !h,
-        [u.QN]: !h && !(null == I || null == (t = I.perkImage) ? true : t.disableHoverAnimation)
-      }, null == I || null == (n = I.perkImage) ? true : n.className),
+        [u.QN]: !h && !(null == S || null == (t = S.perkImage) ? true : t.disableHoverAnimation)
+      }, null == S || null == (n = S.perkImage) ? true : n.className),
       children: [(0, r.jsx)("img", {
         src: _,
         alt: "",
@@ -54,21 +54,21 @@ let d = e => {
         children: (0, r.jsx)(o.Text, {
           className: u.nj,
           variant: "text-md/bold",
-          children: v
+          children: A
         })
       }) : null]
     }), null != g && (0, r.jsxs)("div", {
       className: u.wX,
-      children: [g, 0 !== b.length && null != m && (0, r.jsx)(s.$n, {
+      children: [g, 0 !== y.length && null != m && (0, r.jsx)(s.$n, {
         "data-migration-pending": true,
         className: p,
         fullWidth: true,
         onClick: m,
         children: (0, r.jsx)("div", {
-          className: null == I || null == (i = I.descriptionCta) ? true : i.className,
-          children: b
+          className: null == S || null == (i = S.descriptionCta) ? true : i.className,
+          children: y
         })
       })]
-    }), y]
+    }), b]
   })
 }

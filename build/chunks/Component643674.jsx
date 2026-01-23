@@ -2,7 +2,7 @@
 /** chunk id: 643674, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => m
+  A: () => f
 }), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,24 +15,24 @@ var Chunk627968 = require("./627968.js"),
   Chunk555337 = require("./555337.js"),
   Chunk307731 = require("./307731.js"),
   Chunk985018 = require("./985018.jsx");
-let b = e => {
+let p = e => {
     var t;
     let {
       reason: n = "",
       emoji_name: d,
-      onSetReason: g,
-      onSelectEmoji: b,
-      onClearPressed: m,
-      reasonMinLength: p,
-      reasonMaxLength: x,
-      placeholder: h,
+      onSetReason: m,
+      onSelectEmoji: p,
+      onClearPressed: f,
+      reasonMinLength: b,
+      reasonMaxLength: h,
+      placeholder: x,
       position: j
-    } = e, O = i.useRef(null), [y, v] = i.useState(false), A = (0, l.bG)([u.A], () => u.A.isGuildMetadataLoaded()), E = (0, r.jsx)(s.YNO, {
-      targetElementRef: O,
+    } = e, _ = i.useRef(null), [O, v] = i.useState(false), y = (0, l.bG)([u.A], () => u.A.isGuildMetadataLoaded()), A = (0, r.jsx)(s.YNO, {
+      targetElementRef: _,
       onRequestClose: () => {
         v(false)
       },
-      shouldShow: y,
+      shouldShow: O,
       position: "right",
       align: "top",
       animation: s.YNO.Animation.NONE,
@@ -40,19 +40,19 @@ let b = e => {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsx)(o.A, {
-          pickerIntention: f.b_.COMMUNITY_CONTENT,
+        return (0, r.jsx)(c.A, {
+          pickerIntention: g.b_.COMMUNITY_CONTENT,
           closePopout: t,
           onSelectEmoji: e => {
             let {
               emoji: n,
               willClose: r
             } = e;
-            null != n && b(n), r && t()
+            null != n && p(n), r && t()
           }
         })
       },
-      children: () => (0, r.jsx)(c.A, {
+      children: () => (0, r.jsx)(o.A, {
         active: false,
         onClick: () => {
           v(true)
@@ -62,36 +62,36 @@ let b = e => {
           emojiName: d,
           animated: false
         }) : null,
-        ref: O
+        ref: _
       })
     });
     return (0, r.jsx)(s.ksK, {
-      placeholder: h,
+      placeholder: x,
       value: n,
-      minLength: p,
-      maxLength: x,
+      minLength: b,
+      maxLength: h,
       defaultDirty: (null == n ? true : n.length) > 0,
       leading: {
         type: "emoji",
-        button: E
+        button: A
       },
       onChange: e => {
-        g(e)
+        m(e)
       },
       clearable: {
         show: (null != (t = null == n ? true : n.length) ? t : 0) > 0 || null != d
       },
-      onClear: m
-    }, "text-input-".concat(j, "-").concat(A))
+      onClear: f
+    }, "text-input-".concat(j, "-").concat(y))
   },
-  m = e => {
+  f = e => {
     let {
       reasonMinLength: t,
       reasonMaxLength: n,
       guildId: i,
       reasons: l
-    } = e, a = [g.intl.string(g.t["9dhBGo"]), g.intl.string(g.t["8RmhKF"]), g.intl.string(g.t["2t0V83"]), g.intl.string(g.t.l8WqCR)], c = [];
-    for (let e = 0; e < 4; e++) c.push((0, r.jsx)(b, function(e, t) {
+    } = e, a = [m.intl.string(m.t["9dhBGo"]), m.intl.string(m.t["8RmhKF"]), m.intl.string(m.t["2t0V83"]), m.intl.string(m.t.l8WqCR)], o = [];
+    for (let e = 0; e < 4; e++) o.push((0, r.jsx)(p, function(e, t) {
       return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -150,6 +150,6 @@ let b = e => {
     }), "reasonListItem-" + e));
     return (0, r.jsx)(s.BJc, {
       gap: 16,
-      children: c
+      children: o
     })
   }

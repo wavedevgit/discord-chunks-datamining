@@ -2,7 +2,7 @@
 /** chunk id: 50249, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => c
+  A: () => o
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -11,7 +11,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk97145 = require("./97145.js");
 
-function c(e) {
+function o(e) {
   let {
     role: t,
     onClick: n

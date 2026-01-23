@@ -108,7 +108,7 @@ async function Y() {
 
 function W(e, t) {
   var n;
-  return null != (n = (0, b.A)(null != t ? t : E.A.getSoundpack())[e]) ? n : e
+  return null != (n = (0, y.A)(null != t ? t : E.A.getSoundpack())[e]) ? n : e
 }
 async function K(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1,
@@ -220,11 +220,11 @@ function ee(e) {
 }
 async function et(e, t, n, r, i) {
   var a, s, o, c, d, f, g;
-  let E, b = await F(),
-    D = (null == b ? true : b.authorizationStatus) === "authorized" || (null == b ? true : b.authorizationStatus) === "provisional",
-    L = null != b ? D : await $(),
+  let E, y = await F(),
+    D = (null == y ? true : y.authorizationStatus) === "authorized" || (null == y ? true : y.authorizationStatus) === "provisional",
+    L = null != y ? D : await $(),
     k = D,
-    B = S.A.disableNotifications && null == i.overrideStreamerMode,
+    B = I.A.disableNotifications && null == i.overrideStreamerMode,
     H = !R.isPlatformEmbedded || (0, R.isMac)() && k || w.Ay.shouldDisplayNotifications(),
     Y = !B && L && H,
     K = j(x({}, r), {
@@ -243,14 +243,14 @@ async function et(e, t, n, r, i) {
   }
   t.includes("\0") && (G.warn("Notification title contains null character, setting to empty string"), t = ""), n.includes("\0") && (G.warn("Notification body contains null character, setting to empty string"), n = "");
   let Q = null != (a = null == i ? true : i.tag) ? a : null,
-    J = k && (null == b ? true : b.sound) === true && (null == b ? true : b.authorizationStatus) === "authorized",
+    J = k && (null == y ? true : y.sound) === true && (null == y ? true : y.authorizationStatus) === "authorized",
     et = (e, t) => {
       var n;
       null == (n = i.onShown) || n.call(i), i.omitViewTracking || (T.default.track(P.HAw.NOTIFICATION_ACTION, x({
         action: "VIEW"
       }, t)), T.default.track(P.HAw.NOTIFICATION_VIEWED, q)), V && setTimeout(() => e.close(), 5e3)
     };
-  if (null == i.sound || J || (ee(i.sound, null != (o = i.volume) ? o : 1, i.soundpack), r.ping = true), i.isUserAvatar && null != e && (e = await (0, m.w)(e)), M && A.A.taskbarFlash && w.Ay.flashFrame(true), k) {
+  if (null == i.sound || J || (ee(i.sound, null != (o = i.volume) ? o : 1, i.soundpack), r.ping = true), i.isUserAvatar && null != e && (e = await (0, m.w)(e)), M && v.A.taskbarFlash && w.Ay.flashFrame(true), k) {
     let a = {
       title: t,
       body: n
@@ -267,11 +267,11 @@ async function et(e, t, n, r, i) {
         t = i.messageRecord.author;
       a.threadIdentifier = e;
       let n = O.A.getChannel(e);
-      null != n && (a.groupName = (0, u.m1)(n, I.default, v.A));
+      null != n && (a.groupName = (0, u.m1)(n, S.default, A.A));
       let r = null == n ? true : n.getGuildId();
       if (a.senderIdentifier = t.id, a.senderDisplayName = N.Ay.getName(r, e, t), a.senderAvatar = t.getAvatarURL(r, 128, false, false), a.attachments = [], s.includeStickers)
-        for (let e of (0, y.o6)(i.messageRecord)) {
-          let t = (0, y.zg)(e, {
+        for (let e of (0, b.o6)(i.messageRecord)) {
+          let t = (0, b.zg)(e, {
             isPreview: true
           });
           null != t && a.attachments.push({

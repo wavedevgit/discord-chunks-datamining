@@ -1,12 +1,12 @@
 /** Chunk was on 97492 **/
 /** chunk id: 330465, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => G
+  A: () => k
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk131346 = require("./131346.js"),
   Chunk108531 = require("./108531.js"),
   Chunk837381 = require("./837381.jsx"),
@@ -74,7 +74,7 @@ let M = {
 };
 
 function L(e, t) {
-  (0, h.L3)(e, async () => {
+  (0, f.L3)(e, async () => {
     let {
       default: e
     } = await Promise.all([n.e("68587"), n.e("43600"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("8458"), n.e("47841"), n.e("14360"), n.e("59735"), n.e("54469"), n.e("91838")]).then(n.bind(n, 544676));
@@ -83,15 +83,15 @@ function L(e, t) {
     }))
   })
 }
-let G = Chunk64700.memo(function(e) {
-  var t, n, i, h, G;
+let k = Chunk64700.memo(function(e) {
+  var t, n, i, f, k;
   let {
-    guildNode: k,
+    guildNode: G,
     setRef: U,
-    onDragStart: V,
-    onDragEnd: F,
-    route: H,
-    guild: B,
+    onDragStart: B,
+    onDragEnd: V,
+    route: F,
+    guild: H,
     animatable: K,
     selected: W = false,
     unread: z = false,
@@ -109,126 +109,126 @@ let G = Chunk64700.memo(function(e) {
     "aria-posinset": el
   } = e, {
     id: ei,
-    parentId: ea
-  } = k, es = null != (t = e.upperBadge) ? t : q ? (0, N.em)() : null != Y ? (0, N.oi)(Y) : true, eo = null != (n = e.lowerBadge) ? n : true;
-  null == eo && X > 0 ? eo = null != (h = (0, N.wN)(X, J ? f.LU0.colors.BACKGROUND_MOD_STRONG.css : f.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css)) ? h : true : null == eo && null != et && (eo = null != (G = (0, N.eW)({
+    parentId: es
+  } = G, ea = null != (t = e.upperBadge) ? t : q ? (0, N.em)() : null != Y ? (0, N.oi)(Y) : true, eo = null != (n = e.lowerBadge) ? n : true;
+  null == eo && X > 0 ? eo = null != (f = (0, N.wN)(X, J ? p.LU0.colors.BACKGROUND_MOD_STRONG.css : p.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css)) ? f : true : null == eo && null != et && (eo = null != (k = (0, N.eW)({
     guildJoinRequestStatus: et
-  })) ? G : true);
+  })) ? k : true);
   let ec = null != (i = e.lowerBadgeSize) ? i : {
-      width: (0, f.o6S)(X)
+      width: (0, p.o6S)(X)
     },
     [{
       dragging: eu
-    }, ed] = (0, s.i)({
-      type: v.PJ.GUILD,
+    }, ed] = (0, a.i)({
+      type: j.PJ.GUILD,
       item: () => (requestAnimationFrame(() => {
-        null == V || V()
+        null == B || B()
       }), {
-        type: k.type,
-        nodeId: k.id
+        type: G.type,
+        nodeId: G.id
       }),
       end() {
-        null == F || F(), (0, b.um)(j.Ay.getCompatibleGuildFolders())
+        null == V || V(), (0, g.um)(O.Ay.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
       })
     }),
-    ef = (0, c.Vd)(null != ei ? ei : T.dJq, null != ea ? 2 : 1),
-    [ep, eh] = l.useState(false),
-    eb = !$ && ep,
-    [eg, em] = l.useState(false),
+    ep = (0, c.Vd)(null != ei ? ei : T.dJq, null != es ? 2 : 1),
+    [eh, ef] = l.useState(false),
+    eg = !$ && eh,
+    [em, eb] = l.useState(false),
     [eA, ey] = l.useState(false),
-    [eO] = l.useState(() => new d.J_(70, () => ey(true)));
-  l.useEffect(() => () => eO.cancel(), [eO]);
-  let ej = l.useCallback(() => {
-      null != H ? (0, m.pX)(H, {
+    [e_] = l.useState(() => new d.J_(70, () => ey(true)));
+  l.useEffect(() => () => e_.cancel(), [e_]);
+  let eO = l.useCallback(() => {
+      null != F ? (0, b.pX)(F, {
         state: M
       }) : (0, A.u)(ei, {
         state: M
       })
-    }, [ei, H]),
-    ev = l.useCallback(() => {
-      if (null != H || null == B || q || !ee) return;
-      let e = (0, g.W)(B.id);
-      null != e && p.A.preload(B.id, e)
-    }, [H, B, q, ee]),
-    ex = (0, u.bG)([O.Ay], () => O.Ay.isCurrentUserGuest(ei)),
+    }, [ei, F]),
+    ej = l.useCallback(() => {
+      if (null != F || null == H || q || !ee) return;
+      let e = (0, m.W)(H.id);
+      null != e && h.A.preload(H.id, e)
+    }, [F, H, q, ee]),
+    ev = (0, u.bG)([_.Ay], () => _.Ay.isCurrentUserGuest(ei)),
+    ex = l.useCallback(e => {
+      null == H || ev || Q(e, H)
+    }, [H, Q, ev]),
     eE = l.useCallback(e => {
-      null == B || ex || Q(e, B)
-    }, [B, Q, ex]),
-    e_ = l.useCallback(e => {
-      if ("ArrowLeft" === e.key && null != ea) {
+      if ("ArrowLeft" === e.key && null != es) {
         var t;
-        null == (t = document.querySelector("[aria-owns=folder-items-".concat(ea, "]"))) || t.focus()
+        null == (t = document.querySelector("[aria-owns=folder-items-".concat(es, "]"))) || t.focus()
       }
-    }, [ea]),
+    }, [es]),
     eC = l.useCallback(e => {
-      e ? eO.delay() : (eO.cancel(), ey(false))
-    }, [eO]),
+      e ? e_.delay() : (e_.cancel(), ey(false))
+    }, [e_]),
     eS = l.useCallback(e => {
       null == U || U(ei, e)
     }, [ei, U]),
-    eI = (0, f.rdh)(f.LU0.modules.guildbar.AVATAR_SIZE);
-  if (null == B) return null;
-  let eN = eA || eg ? (0, r.jsx)(E.A, {
-      guild: B,
+    eI = (0, p.rdh)(p.LU0.modules.guildbar.AVATAR_SIZE);
+  if (null == H) return null;
+  let eN = eA || em ? (0, r.jsx)(x.A, {
+      guild: H,
       show: eA,
       active: W,
       onAnimationStart: function() {
-        em(eA)
+        eb(eA)
       },
       onAnimationRest: function() {
-        eA || em(false)
+        eA || eb(false)
       }
-    }) : (0, r.jsx)(f.Qk9, {
+    }) : (0, r.jsx)(p.Qk9, {
       selected: W,
       children: (0, r.jsx)("div", {
         ref: Z ? e => {
           ed(e)
         } : true,
-        "data-dnd-name": B.name,
+        "data-dnd-name": H.name,
         "data-drop-hovering": eA,
-        children: (0, r.jsx)(f.jlP, D(R({
+        children: (0, r.jsx)(p.jlP, D(R({
           ariaLabel: P.intl.formatToPlainString(P.t["/uzRss"], {
-            guildName: B.name,
+            guildName: H.name,
             mentions: X
           }),
-          name: B.name,
-          onClick: ej,
+          name: H.name,
+          onClick: eO,
           onMouseEnter: function() {
-            $ || eh(true)
+            $ || ef(true)
           },
           onMouseLeave: function() {
-            $ || eh(false)
+            $ || ef(false)
           },
-          onMouseDown: ev,
-          onContextMenu: eE,
-          onKeyDown: e_,
-          icon: (0, y.Iv)(B, 2 * eI, eb && K, true),
-          selected: W || eb
-        }, ef), {
+          onMouseDown: ej,
+          onContextMenu: ex,
+          onKeyDown: eE,
+          icon: (0, y.Iv)(H, 2 * eI, eg && K, true),
+          selected: W || eg
+        }, ep), {
           "aria-setsize": er,
           "aria-posinset": el,
           "aria-selected": W
         }))
       })
     }),
-    eT = eu ? (0, r.jsx)(_.g4, {
+    eT = eu ? (0, r.jsx)(E.g4, {
       children: (0, r.jsx)(S.A, {})
     }) : (0, r.jsx)(o.animated.div, {
       style: {
         scale: null == en ? 1 : en
       },
-      className: a()(w.rN, {
+      className: s()(w.rN, {
         [w.p9]: $,
         [w.oR]: eA,
         [w.wH]: eA || W
       }),
       "data-drop-hovering": eA,
-      children: (0, r.jsx)(f.Qk9, {
+      children: (0, r.jsx)(p.Qk9, {
         selected: W,
-        upperBadge: es,
+        upperBadge: ea,
         lowerBadge: eo,
         lowerBadgeSize: ec,
         children: eN
@@ -236,19 +236,19 @@ let G = Chunk64700.memo(function(e) {
     });
   return (0, r.jsxs)(I.c, {
     ref: eS,
-    children: [(0, r.jsx)(x.A, {
-      hovered: !eu && eb,
+    children: [(0, r.jsx)(v.A, {
+      hovered: !eu && eg,
       selected: !eu && W,
       unread: !eu && z,
       className: w.Io
     }), (0, r.jsx)(C.A, {
-      guild: B,
+      guild: H,
       disabled: $,
       isDragging: eu,
       children: eT
-    }), Z ? (0, r.jsx)(_.Ay, {
-      name: B.name,
-      targetNode: k,
+    }), Z ? (0, r.jsx)(E.Ay, {
+      name: H.name,
+      targetNode: G,
       onDragOverChanged: eC
     }) : null]
   })

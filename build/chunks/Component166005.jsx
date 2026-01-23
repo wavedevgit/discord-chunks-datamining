@@ -109,21 +109,21 @@ function G(e) {
     roleId: i.id,
     size: 12,
     guildId: a
-  }), g = (0, u.bG)([m.A], () => m.A.roleStyle), b = (0, y.X_)(a, i, i.colorStrings), A = (null == (n = i.tags) ? true : n.guild_connections) === null, v = (0, p.rdh)(U).hex(), S = null != (t = i.colorString) ? t : v, I = () => "dot" === g ? (0, r.jsx)(p.WYI, {
+  }), g = (0, u.bG)([m.A], () => m.A.roleStyle), y = (0, b.X_)(a, i, i.colorStrings), v = (null == (n = i.tags) ? true : n.guild_connections) === null, A = (0, p.rdh)(U).hex(), I = null != (t = i.colorString) ? t : A, S = () => "dot" === g ? (0, r.jsx)(p.WYI, {
     className: P.m4,
-    color: S,
+    color: I,
     background: false,
-    colors: b,
+    colors: y,
     tooltip: false
   }) : (0, r.jsx)(p.RYH, {
-    color: S,
-    colors: b
+    color: I,
+    colors: y
   });
   return (0, r.jsxs)("div", {
     ref: l,
     className: s()(P.JC, d),
     style: _,
-    children: [I(), A && (0, r.jsx)(p.qYV, {
+    children: [S(), v && (0, r.jsx)(p.qYV, {
       className: P.AP,
       size: "custom",
       width: 12,
@@ -230,13 +230,13 @@ function B(e) {
     showLabel: o = false,
     onAddRole: l,
     buttonRef: c
-  } = e, d = (0, u.bG)([T.default], () => T.default.getCurrentUser()), _ = null != d ? C.HJ(a, d.id) : null, h = (0, u.bG)([S.Ay], () => S.Ay.getMember(a.id, n)), g = null != (t = null == h ? true : h.roles) ? t : [], E = (0, u.bG)([m.A], () => m.A.roleStyle), y = i.useRef(null), O = null != c ? c : y, A = i.useCallback(e => {
+  } = e, d = (0, u.bG)([T.default], () => T.default.getCurrentUser()), _ = null != d ? C.HJ(a, d.id) : null, h = (0, u.bG)([I.Ay], () => I.Ay.getMember(a.id, n)), g = null != (t = null == h ? true : h.roles) ? t : [], E = (0, u.bG)([m.A], () => m.A.roleStyle), b = i.useRef(null), O = null != c ? c : b, v = i.useCallback(e => {
     var t;
     null == l || l();
-    let r = S.Ay.getMember(a.id, n),
+    let r = I.Ay.getMember(a.id, n),
       i = null != (t = null == r ? true : r.roles) ? t : [];
-    i.includes(e) || (i = [...i, e]), b.A.updateMemberRoles(a.id, n, i, [e], [])
-  }, [a.id, n, l]), R = e => !(0, v.Oy)(e) && !e.managed && I.A.isRoleHigher(a, _, e) && false === g.indexOf(e.id);
+    i.includes(e) || (i = [...i, e]), y.A.updateMemberRoles(a.id, n, i, [e], [])
+  }, [a.id, n, l]), R = e => !(0, A.Oy)(e) && !e.managed && S.A.isRoleHigher(a, _, e) && false === g.indexOf(e.id);
   return (0, r.jsx)(p.YNO, {
     targetElementRef: O,
     position: "bottom",
@@ -249,7 +249,7 @@ function B(e) {
         guild: a,
         roleStyle: E,
         roleFilter: R,
-        onSelect: A,
+        onSelect: v,
         onClose: t
       })
     },
@@ -284,7 +284,7 @@ function H(e) {
     roles: r,
     allowEditing: a,
     readOnly: s
-  } = e, o = (0, u.bG)([T.default], () => T.default.getCurrentUser()), l = A.Q_.useSetting(), [c] = (0, u.yK)([I.A], () => [I.A.can(R.xBc.MANAGE_ROLES, n), I.A.getGuildVersion(n.id)]), d = null != o ? C.HJ(n, o.id) : null, f = i.useMemo(() => {
+  } = e, o = (0, u.bG)([T.default], () => T.default.getCurrentUser()), l = v.Q_.useSetting(), [c] = (0, u.yK)([S.A], () => [S.A.can(R.xBc.MANAGE_ROLES, n), S.A.getGuildVersion(n.id)]), d = null != o ? C.HJ(n, o.id) : null, f = i.useMemo(() => {
     let e = new Set;
     return s || !a || r.forEach(r => {
       var i;
@@ -303,9 +303,9 @@ function Y(e, t, n) {
   return i.useCallback(r => {
     var i, a;
     null == n || n();
-    let s = S.Ay.getMember(t, e),
+    let s = I.Ay.getMember(t, e),
       o = (null != (i = null == s ? true : s.roles) ? i : []).filter(e => e !== r.id);
-    (null == (a = r.tags) ? true : a.guild_connections) === null ? h.A.unassignGuildRoleConnection(t, r.id) : b.A.updateMemberRoles(t, e, o, [], [r.id])
+    (null == (a = r.tags) ? true : a.guild_connections) === null ? h.A.unassignGuildRoleConnection(t, r.id) : y.A.updateMemberRoles(t, e, o, [], [r.id])
   }, [n, t, e])
 }
 
@@ -441,9 +441,9 @@ function $(e) {
     roles: a,
     allowEditing: f,
     readOnly: p
-  }), E = _ || h || m, b = Y(t, n.id, c), y = W(), O = i.useRef({}), A = (e, t) => {
+  }), E = _ || h || m, y = Y(t, n.id, c), b = W(), O = i.useRef({}), v = (e, t) => {
     null != t ? O.current[e] = t : delete O.current[e]
-  }, [v, S] = i.useState(a), [I, T] = i.useState(X), [C, N] = i.useState(false), R = i.useRef(null), D = i.useRef(null), x = i.useRef(0);
+  }, [A, I] = i.useState(a), [S, T] = i.useState(X), [C, N] = i.useState(false), R = i.useRef(null), D = i.useRef(null), x = i.useRef(0);
   i.useLayoutEffect(() => {
     x.current = 0
   }, [a]), i.useLayoutEffect(() => {
@@ -466,15 +466,15 @@ function $(e) {
         e += o + q, n.push(i)
       }
     }
-    S(n.length === v.length ? v : n), T(r), x.current++
-  }, [a, v, C]);
-  let L = C ? a : v,
+    I(n.length === A.length ? A : n), T(r), x.current++
+  }, [a, A, C]);
+  let L = C ? a : A,
     j = () => {
       C ? (null == d || d(), N(false)) : (null == u || u(), N(true))
     },
-    M = () => v.length < a.length ? (0, r.jsx)(z, {
+    M = () => A.length < a.length ? (0, r.jsx)(z, {
       isExpanded: C,
-      overflowCount: a.length - v.length,
+      overflowCount: a.length - A.length,
       onClick: j,
       buttonRef: R
     }) : null,
@@ -496,11 +496,11 @@ function $(e) {
         role: e,
         guildId: n.id,
         canRemove: g(e.id),
-        onRemoveRole: h ? b : true,
-        itemRef: t => A(e.id, t),
-        onContextMenu: m ? t => y(t, e.id) : true,
+        onRemoveRole: h ? y : true,
+        itemRef: t => v(e.id, t),
+        onContextMenu: m ? t => b(t, e.id) : true,
         style: {
-          maxWidth: C || t !== v.length - 1 ? X : I
+          maxWidth: C || t !== A.length - 1 ? X : S
         }
       }, e.id)), M(), _ ? k() : null]
     }) : (0, r.jsxs)(r.Fragment, {
@@ -509,11 +509,11 @@ function $(e) {
         "aria-label": w.intl.string(w.t["LPJmL/"]),
         children: L.map((e, t) => (0, r.jsx)("li", {
           children: (0, r.jsx)(G, {
-            itemRef: t => A(e.id, t),
+            itemRef: t => v(e.id, t),
             role: e,
             guildId: n.id,
             style: {
-              maxWidth: C || t !== v.length - 1 ? X : I
+              maxWidth: C || t !== A.length - 1 ? X : S
             }
           })
         }, e.id))

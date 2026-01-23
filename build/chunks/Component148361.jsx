@@ -2,7 +2,7 @@
 /** chunk id: 148361, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,13 +38,13 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,18 +55,18 @@ function A(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = e => {
+let I = e => {
   let t, {
       onClose: n,
-      channel: y,
-      emojiDescriptor: A,
-      pickerIntention: S,
-      analyticsLocation: I,
+      channel: b,
+      emojiDescriptor: v,
+      pickerIntention: I,
+      analyticsLocation: S,
       containerContext: T
     } = e,
     C = (0, a.bG)([f.A], () => f.A.theme) === m.NJ8.LIGHT ? "light" : "dark",
@@ -75,10 +75,10 @@ let S = e => {
     {
       analyticsLocations: w
     } = (0, l.Ay)(o.A.EMOJI_PICKER);
-  t = S === g.b_.REACTION ? E.e.EMOJI_PICKER_REACTION_EMOJI_CLICKED : null == A ? E.e.EMOJI_PICKER_FLOATING_UPSELL : A.subCategory === h.tm.TOP_GUILD_EMOJI ? E.e.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED : A.subCategory === h.tm.NEWLY_ADDED_EMOJI ? E.e.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED : E.e.EMOJI_PICKER_EMOJI_CLICKED;
-  let P = null != A ? A.emoji : true,
+  t = I === g.b_.REACTION ? E.e.EMOJI_PICKER_REACTION_EMOJI_CLICKED : null == v ? E.e.EMOJI_PICKER_FLOATING_UPSELL : v.subCategory === h.tm.TOP_GUILD_EMOJI ? E.e.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED : v.subCategory === h.tm.NEWLY_ADDED_EMOJI ? E.e.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED : E.e.EMOJI_PICKER_EMOJI_CLICKED;
+  let P = null != v ? v.emoji : true,
     D = null != P && P.animated,
-    x = null != P && !p.Ay.isInternalEmojiForGuildId(P, null == y ? true : y.getGuildId()),
+    x = null != P && !p.Ay.isInternalEmojiForGuildId(P, null == b ? true : b.getGuildId()),
     L = null != P ? m.ZSU.EMOJI : m.ZSU.EMOJI_PICKER_FLOATING_UPSELL,
     j = (0, a.bG)([u.A], () => u.A.hasFetched);
   return i.useEffect(() => {
@@ -90,15 +90,15 @@ let S = e => {
       width: 220,
       height: 132
     },
-    title: b.intl.string(b.t["0+11FF"]),
-    description: b.intl.string(b.t.dURIzS),
+    title: y.intl.string(y.t["0+11FF"]),
+    description: y.intl.string(y.t.dURIzS),
     enableSocialProof: false,
     analyticsLocationSection: m.JJy.EMOJI_UPSELL_POPOUT,
     onClose: n,
     upsellViewedTrackingData: {
       type: t,
       is_external: x,
-      location: v(O({}, I), {
+      location: A(O({}, S), {
         object: L
       }),
       location_stack: w,

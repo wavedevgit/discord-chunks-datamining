@@ -1,7 +1,7 @@
 /** Chunk was on 4948 **/
 /** chunk id: 847342, original params: e,n,l (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => A
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,46 +18,46 @@ var Chunk621466 = require("./621466.js"),
   Chunk979766 = require("./979766.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e) {
+function A(e) {
   var n;
-  let l, b, v, {
+  let l, A, v, {
       channel: x,
-      message: g,
-      target: j,
-      attachment: m,
+      message: m,
+      target: _,
+      attachment: j,
       onSelect: V
     } = e,
-    k = j;
-  if (null != m) b = l = m.url;
+    b = _;
+  if (null != j) A = l = j.url;
   else
     for (;
-      (0, r.vq)(k);)(0, r.vq)(k, HTMLImageElement) && null != k.src && (b = k.src), (0, r.vq)(k, HTMLAnchorElement) && null != k.href && (l = k.href, v = k.textContent), k = k.parentNode;
-  let C = null == (n = document.getSelection()) ? true : n.toString(),
-    X = (0, d.A)(C),
-    _ = (0, o.A)(C),
-    w = (0, A.A)(g, x),
-    q = (0, f.A)(g, x),
-    H = (0, h.A)(g, x),
-    I = (0, u.A)(g, x),
-    M = (0, a.A)(null != l ? l : b, v),
-    N = (0, s.A)({
-      id: g.id,
-      label: p.intl.string(p.t.zBoHlf),
-      shiftId: "".concat(g.channel_id, "-").concat(g.id)
+      (0, r.vq)(b);)(0, r.vq)(b, HTMLImageElement) && null != b.src && (A = b.src), (0, r.vq)(b, HTMLAnchorElement) && null != b.href && (l = b.href, v = b.textContent), b = b.parentNode;
+  let k = null == (n = document.getSelection()) ? true : n.toString(),
+    C = (0, d.A)(k),
+    X = (0, o.A)(k),
+    w = (0, f.A)(m, x),
+    q = (0, p.A)(m, x),
+    H = (0, h.A)(m, x),
+    I = (0, u.A)(m, x),
+    M = (0, a.A)(null != l ? l : A, v),
+    N = (0, c.A)({
+      id: m.id,
+      label: g.intl.string(g.t.zBoHlf),
+      shiftId: "".concat(m.channel_id, "-").concat(m.id)
     }),
-    S = (0, s.A)({
-      id: g.author.id,
-      label: p.intl.string(p.t.Muw4wm)
+    S = (0, c.A)({
+      id: m.author.id,
+      label: g.intl.string(g.t.Muw4wm)
     });
   return (0, t.jsxs)(i.W1t, {
     navId: "message",
-    onClose: c.Z_,
-    "aria-label": p.intl.string(p.t.ChPNkN),
+    onClose: s.Z_,
+    "aria-label": g.intl.string(g.t.ChPNkN),
     onSelect: V,
     children: [(0, t.jsx)(i.rXV, {
-      children: X
+      children: C
     }), (0, t.jsx)(i.rXV, {
-      children: _
+      children: X
     }), (0, t.jsxs)(i.rXV, {
       children: [w, q, H, I]
     }), (0, t.jsx)(i.rXV, {

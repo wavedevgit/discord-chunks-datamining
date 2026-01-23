@@ -1,7 +1,7 @@
 /** Chunk was on 28386 **/
-/** chunk id: 623161, original params: e,t,a (module,exports,require) **/
+/** chunk id: 623161, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => h
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,42 +19,42 @@ var Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk202501 = require("./202501.js");
 
-function _(e) {
+function h(e) {
   let {
     transitionState: t,
-    onClose: a
+    onClose: n
   } = e, {
-    currentUser: _,
+    currentUser: h,
     multiAccountUsers: g
-  } = (0, r.cf)([o.default, u.A], () => ({
-    currentUser: o.default.getCurrentUser(),
+  } = (0, r.cf)([d.default, u.A], () => ({
+    currentUser: d.default.getCurrentUser(),
     multiAccountUsers: u.A.getUsers()
-  })), [h, C] = s.useState(false), [N, p] = s.useState(x.dJq), [T, U] = s.useState(null);
+  })), [C, b] = s.useState(false), [p, N] = s.useState(x.dJq), [T, U] = s.useState(null);
   return s.useEffect(() => {
-    if (h) U((0, n.jsx)(c.po8, {
+    if (C) U((0, a.jsx)(c.po8, {
       messageType: c.YCn.ERROR,
-      className: b.u,
+      className: f.u,
       children: A.intl.format(A.t.HAuRSM, {
         maxNumAccounts: 5
       })
-    })), p(x.dJq);
-    else if (null != N) {
-      let e = o.default.getUser(N);
-      null != e && U((0, n.jsx)(c.po8, {
+    })), N(x.dJq);
+    else if (null != p) {
+      let e = d.default.getUser(p);
+      null != e && U((0, a.jsx)(c.po8, {
         messageType: c.YCn.POSITIVE,
-        className: b.u,
+        className: f.u,
         children: A.intl.format(A.t["09qide"], {
           username: e.username
         })
-      })), C(false)
+      })), b(false)
     }
-  }, [N, h]), s.useEffect(() => {
-    g.length < 5 && C(false)
-  }, [g]), (0, d.A)({
+  }, [p, C]), s.useEffect(() => {
+    g.length < 5 && b(false)
+  }, [g]), (0, o.A)({
     type: i.ImpressionTypes.MODAL,
     name: i.ImpressionNames.MULTI_ACCOUNT_SWITCH_LANDING
-  }), (0, n.jsxs)(l.Modal, {
-    onClose: a,
+  }), (0, a.jsxs)(l.Modal, {
+    onClose: n,
     transitionState: t,
     size: "md",
     "aria-label": A.intl.string(A.t.WbFpq4),
@@ -64,21 +64,21 @@ function _(e) {
       text: A.intl.string(A.t["9g2mqT"]),
       variant: "secondary",
       onClick: () => {
-        g.length >= 5 ? C(true) : (a(), (0, f.D)())
+        g.length >= 5 ? b(true) : (n(), (0, _.D)())
       }
     }],
-    children: [T, (0, n.jsx)(m.A, {
+    children: [T, (0, a.jsx)(m.A, {
       actionText: A.intl.string(A.t.Wf421J),
       onAction: (e, t) => {
         switch (e) {
           case m.X.LOGIN_REQUIRED:
-            a(), (0, f.D)();
+            n(), (0, _.D)();
             break;
           case m.X.SWITCHED:
-            a();
+            n();
             break;
           case m.X.REMOVED:
-            t === (null == _ ? true : _.id) && a(), p(t)
+            t === (null == h ? true : h.id) && n(), N(t)
         }
       }
     })]

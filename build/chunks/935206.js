@@ -10,7 +10,7 @@ var Chunk131346 = require("./131346.js"),
 function l(e, t, n, l) {
   let [{
     isDragging: s
-  }, a, c] = (0, r.i)({
+  }, a, o] = (0, r.i)({
     type: t,
     item: () => ({
       index: n
@@ -18,7 +18,7 @@ function l(e, t, n, l) {
     collect: e => ({
       isDragging: e.isDragging()
     })
-  }), [, o] = (0, i.H)({
+  }), [, c] = (0, i.H)({
     accept: t,
     hover(t, r) {
       if (null == e.current) return;
@@ -26,14 +26,14 @@ function l(e, t, n, l) {
       if (i === n) return;
       let s = e.current.getBoundingClientRect(),
         a = (s.bottom - s.top) / 2,
-        c = r.getClientOffset().y - s.top;
-      i < n && c < a || i > n && c > a || (l(i, n), t.index = n)
+        o = r.getClientOffset().y - s.top;
+      i < n && o < a || i > n && o > a || (l(i, n), t.index = n)
     }
   });
   return {
     drag: a,
-    dragPreview: c,
-    drop: o,
+    dragPreview: o,
+    drop: c,
     isDragging: s
   }
 }

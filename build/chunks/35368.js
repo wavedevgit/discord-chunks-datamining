@@ -2,6 +2,6 @@
 /** chunk id: 35368, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  O: "_08324d505e09f946",
-  A: "_88ff884cbc9cda96"
+  O: "group__3d4a0",
+  A: "item__3d4a0"
 }

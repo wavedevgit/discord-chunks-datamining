@@ -1,7 +1,7 @@
 /** Chunk was on 58652 **/
 /** chunk id: 688927, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => c
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -10,18 +10,18 @@ var Chunk627968 = require("./627968.js"),
   Chunk861662 = require("./861662.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk888791 = require("./888791.js");
-let d = e => {
+let c = e => {
   let {
     node: {
       header: t,
       subheader: n,
-      button: d
+      button: c
     },
     isModeratorReport: u,
     isTidaReport: m = false
-  } = e, b = (null == d ? true : d.type) === "submit", p = r.useMemo(() => {
+  } = e, p = (null == c ? true : c.type) === "submit", b = r.useMemo(() => {
     var e, t;
-    return i.A.reactParserFor((e = function(e) {
+    return a.A.reactParserFor((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           l = Object.keys(n);
@@ -38,7 +38,7 @@ let d = e => {
         })
       }
       return e
-    }({}, i.A.defaultRules), t = t = {
+    }({}, a.A.defaultRules), t = t = {
       link: s.B
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
@@ -52,16 +52,16 @@ let d = e => {
     }), e))
   }, []);
   return (0, l.jsxs)("div", {
-    className: c.N,
-    children: [null != t && "" !== t ? (0, l.jsx)(a.Heading, {
+    className: d.N,
+    children: [null != t && "" !== t ? (0, l.jsx)(i.Heading, {
       variant: "heading-xl/semibold",
       color: "text-strong",
       children: t
-    }) : null, null != n && "" !== t ? (0, l.jsx)(a.Text, {
+    }) : null, null != n && "" !== t ? (0, l.jsx)(i.Text, {
       variant: "text-md/normal",
       color: "text-default",
-      children: p(n)
-    }) : null, b && !u && !m && (0, l.jsx)(a.Text, {
+      children: b(n)
+    }) : null, p && !u && !m && (0, l.jsx)(i.Text, {
       variant: "text-sm/normal",
       children: o.intl.format(o.t.Q0tSKT, {})
     })]

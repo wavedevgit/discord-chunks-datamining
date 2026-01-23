@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ct: () => E,
-  oO: () => b
+  oO: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -112,7 +112,7 @@ let E = Chunk64700.memo(function(e) {
       startLeftAligned: e.enablePremiumBrandRefreshDesign
     }, e))
   }),
-  b = Chunk64700.memo(function(e) {
+  y = Chunk64700.memo(function(e) {
     let {
       bestOfBoxes: t
     } = (0, l.Ay)();

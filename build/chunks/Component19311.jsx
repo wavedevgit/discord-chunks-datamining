@@ -2,7 +2,7 @@
 /** chunk id: 19311, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y,
+  A: () => b,
   t: () => g
 });
 var Chunk627968 = require("./627968.js");
@@ -84,7 +84,7 @@ let E = e => {
       variant: 0 === n ? "primary" : "active"
     }))
   },
-  b = e => {
+  y = e => {
     let {
       onBack: t,
       backText: n,
@@ -92,31 +92,31 @@ let E = e => {
       primaryCTA: p,
       primaryType: h,
       primaryText: g,
-      primaryTooltip: b,
-      primaryDisabled: y,
+      primaryTooltip: y,
+      primaryDisabled: b,
       primarySubmitting: O,
-      onPrimary: A
+      onPrimary: v
     } = e, {
-      premiumBrandRefreshBackgroundClassName: v
-    } = (0, c.P5)(), S = () => {
+      premiumBrandRefreshBackgroundClassName: A
+    } = (0, c.P5)(), I = () => {
       if (null == p || null == g) return null;
       let e = {
         primaryIcon: f,
         primaryCTA: p,
         primaryType: h,
         primaryText: g,
-        primaryDisabled: y,
+        primaryDisabled: b,
         primarySubmitting: O,
-        onPrimary: A
+        onPrimary: v
       };
-      return null != b ? (0, r.jsx)(a.m, {
-        text: b,
+      return null != y ? (0, r.jsx)(a.m, {
+        text: y,
         asContainer: true,
         children: (0, r.jsx)(E, _({}, e))
       }) : (0, r.jsx)(E, m(_({}, e), {
-        onPrimary: A
+        onPrimary: v
       }))
-    }, I = () => null == t ? null : (0, r.jsx)(s.QWc, {
+    }, S = () => null == t ? null : (0, r.jsx)(s.QWc, {
       text: null != n ? n : d.intl.string(d.t["13/7kX"]),
       onClick: t,
       variant: "secondary"
@@ -125,15 +125,15 @@ let E = e => {
       "data-migration-pending": true,
       justify: l.A.Justify.BETWEEN,
       align: l.A.Align.CENTER,
-      className: v,
+      className: A,
       children: [(0, r.jsxs)(i.BJc, {
         direction: "horizontal-reverse",
         align: "center",
         gap: 0,
         padding: 0,
-        children: [S(), (0, r.jsx)(u.A, {})]
-      }), I()]
+        children: [I(), (0, r.jsx)(u.A, {})]
+      }), S()]
     })
   };
-b.CTAType = g;
-let y = b
+y.CTAType = g;
+let b = y

@@ -3,16 +3,16 @@
 require.d(exports, {
   A: () => f
 });
-var l, r, Chunk311907 = require("./311907.js"),
+var r, l, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk652215 = require("./652215.js");
-let o = {};
+let s = {};
 
 function c(e) {
-  let t = o[e = null != e ? e : "null"];
-  return null == t && (t = o[e] = {
-    state: s.S7L.DISCONNECTED,
-    quality: s.bFR.UNKNOWN,
+  let t = s[e = null != e ? e : "null"];
+  return null == t && (t = s[e] = {
+    state: o.S7L.DISCONNECTED,
+    quality: o.bFR.UNKNOWN,
     pings: [],
     hostname: null,
     lossRate: null
@@ -20,17 +20,17 @@ function c(e) {
 }
 
 function u(e, t, n) {
-  let l = o[e = null != e ? e : "null"];
-  return null != l ? t(l) : n
+  let r = s[e = null != e ? e : "null"];
+  return null != r ? t(r) : n
 }
-class d extends(r = Chunk311907.Ay.Store) {
+class d extends(l = Chunk311907.Ay.Store) {
   getConnectionState(e) {
     return u(e, e => {
       let {
         state: t
       } = e;
       return t
-    }, s.S7L.DISCONNECTED)
+    }, o.S7L.DISCONNECTED)
   }
   getQuality(e) {
     return u(e, e => {
@@ -38,7 +38,7 @@ class d extends(r = Chunk311907.Ay.Store) {
         quality: t
       } = e;
       return t
-    }, s.bFR.UNKNOWN)
+    }, o.bFR.UNKNOWN)
   }
   getHostname(e) {
     return u(e, e => {
@@ -73,15 +73,15 @@ class d extends(r = Chunk311907.Ay.Store) {
       return t
     }, null)
   }
-}(l = "displayName") in d ? Object.defineProperty(d, l, {
+}(r = "displayName") in d ? Object.defineProperty(d, r, {
   value: "OverlayRTCConnectionStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : d[l] = "OverlayRTCConnectionStore";
+}) : d[r] = "OverlayRTCConnectionStore";
 let f = new d(Chunk73153.h, {
   OVERLAY_INITIALIZE: function(e) {
-    o = e.rtcConnectionStates
+    s = e.rtcConnectionStates
   },
   RTC_CONNECTION_STATE: function(e) {
     if (null != e.streamKey) returnfalse;

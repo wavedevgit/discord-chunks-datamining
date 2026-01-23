@@ -20,7 +20,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk661191 = require("./661191.js"),
   Chunk652215 = require("./652215.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,18 +28,18 @@ function b(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let y = new Set,
+let b = new Set,
   O = {},
-  A = {};
+  v = {};
 
-function v(e) {
+function A(e) {
   let {
     guild: t
   } = e;
   delete O[t.id]
 }
 
-function S(e) {
+function I(e) {
   var t;
   let {
     channel: n
@@ -47,7 +47,7 @@ function S(e) {
   n.isVocal() || (O[n.guild_id] = null != (t = O[n.guild_id]) ? t : new Set, O[n.guild_id].add(n.id))
 }
 
-function I(e) {
+function S(e) {
   let {
     guildId: t,
     channelIds: n
@@ -61,7 +61,7 @@ function T(e) {
     guildId: t,
     channelId: n
   } = e;
-  return null != t && (null == O[t] || A[t] < Date.now() - m.A.Millis.HOUR ? (w(t), true) : (null != n && R(t, n), false))
+  return null != t && (null == O[t] || v[t] < Date.now() - m.A.Millis.HOUR ? (w(t), true) : (null != n && R(t, n), false))
 }
 
 function C(e) {
@@ -103,7 +103,7 @@ function w(e) {
   0 !== n.length && (O[e] = new Set(n.filter(t => {
     let n = g.default.extractTimestamp(t);
     return null == _.Ay.getTrackedAckMessageId(t) && n > Date.now() - m.A.Millis.WEEK && n > l.A.getGuildRecentsDismissedAt(e) && n > i && !h.Ay.isChannelOrParentOptedIn(e, t)
-  })), A[e] = Date.now())
+  })), v[e] = Date.now())
 }
 
 function P() {
@@ -118,7 +118,7 @@ class D extends(r = Chunk311907.Ay.Store) {
   }
   getNewChannelIds(e) {
     var t;
-    return null != e && null == O[e] && w(e), null != e && null != (t = O[e]) ? t : y
+    return null != e && null == O[e] && w(e), null != e && null != (t = O[e]) ? t : b
   }
   shouldIndicateNewChannel(e, t) {
     var n;
@@ -127,13 +127,13 @@ class D extends(r = Chunk311907.Ay.Store) {
     return null != r && !!r.features.has(E.GuildFeatures.COMMUNITY) && (null != e && null == O[e] && w(e), (null == (n = O[e]) ? true : n.has(t)) && null == _.Ay.getTrackedAckMessageId(t))
   }
 }
-b(D, "displayName", "NewChannelsStore");
+y(D, "displayName", "NewChannelsStore");
 let x = new D(Chunk73153.h, {
-  BULK_CLEAR_RECENTS: I,
+  BULK_CLEAR_RECENTS: S,
   CHANNEL_ACK: () => true,
   CHANNEL_SELECT: T,
   SIDEBAR_VIEW_CHANNEL: C,
   SIDEBAR_VIEW_GUILD: N,
-  GUILD_DELETE: v,
-  CHANNEL_CREATE: S
+  GUILD_DELETE: A,
+  CHANNEL_CREATE: I
 })

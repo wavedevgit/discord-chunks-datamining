@@ -34,11 +34,11 @@ class g extends Chunk64700.PureComponent {
       onClose: t
     } = this.props, {
       name: r,
-      color: s
+      color: o
     } = this.state;
     return (0, n.jsx)("form", {
       onSubmit: this.handleSubmit,
-      children: (0, n.jsx)(o.aFV, {
+      children: (0, n.jsx)(s.aFV, {
         title: u.intl.string(u.t.Dx7im5),
         actions: [{
           variant: "primary",
@@ -62,7 +62,7 @@ class g extends Chunk64700.PureComponent {
               className: b.E,
               defaultColor: p.DO,
               colors: h._tK,
-              value: null != s ? s : p.DO,
+              value: null != o ? o : p.DO,
               onChange: this.handleColorChange
             })
           })]
@@ -92,9 +92,9 @@ class g extends Chunk64700.PureComponent {
       } = this.props, {
         name: r,
         color: n
-      } = this.state, s = c.Ay.getGuildFolders().map(e => {
-        var s, o;
-        return e.folderId === t ? (s = function(e) {
+      } = this.state, o = c.Ay.getGuildFolders().map(e => {
+        var o, s;
+        return e.folderId === t ? (o = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
               n = Object.keys(r);
@@ -105,21 +105,21 @@ class g extends Chunk64700.PureComponent {
             })
           }
           return e
-        }({}, e), o = o = {
+        }({}, e), s = s = {
           folderName: r,
           folderColor: n
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var n = Object.getOwnPropertySymbols(e);
             r.push.apply(r, n)
           }
           return r
-        })(Object(o)).forEach(function(e) {
-          Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(o, e))
-        }), s) : e
+        })(Object(s)).forEach(function(e) {
+          Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(s, e))
+        }), o) : e
       });
-      (0, l.um)(s), this.close()
+      (0, l.um)(o), this.close()
     })
   }
 }

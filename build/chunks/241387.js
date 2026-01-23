@@ -70,11 +70,11 @@ function f(e) {
     itemGutter: m,
     removeEdgeItemGutters: g,
     sectionGutter: E,
-    padding: b,
-    paddingVertical: y,
+    padding: y,
+    paddingVertical: b,
     paddingHorizontal: O,
-    dir: A
-  } = e, v = (0, a.A)(), S = (0, r.useRef)(d), [I] = (0, r.useState)(() => new i.Ay), T = _(), C = Math.min(null != h ? h : 1 / 0, T.offsetWidth), N = null != h ? Math.max(0, T.offsetWidth - h) : 0, {
+    dir: v
+  } = e, A = (0, a.A)(), I = (0, r.useRef)(d), [S] = (0, r.useState)(() => new i.Ay), T = _(), C = Math.min(null != h ? h : 1 / 0, T.offsetWidth), N = null != h ? Math.max(0, T.offsetWidth - h) : 0, {
     dirty: R,
     chunkStart: w,
     chunkEnd: P,
@@ -82,9 +82,9 @@ function f(e) {
   } = (0, s.A)({
     chunkSize: p,
     getScrollerState: _,
-    forceUpdate: v
+    forceUpdate: A
   });
-  return S.current = (0, r.useMemo)(() => R > 0 ? S.current : (I.mergeProps({
+  return I.current = (0, r.useMemo)(() => R > 0 ? I.current : (S.mergeProps({
     sections: t,
     columns: n,
     getItemKey: o,
@@ -94,14 +94,14 @@ function f(e) {
     itemGutter: m,
     removeEdgeItemGutters: g,
     sectionGutter: E,
-    padding: b,
-    paddingVertical: y,
+    padding: y,
+    paddingVertical: b,
     paddingHorizontal: O,
     marginLeft: N / 2,
-    dir: A
-  }), I.computeVisibleSections(Math.max(0, w * p), P * p), I.getState()), [R, I, t, n, o, c, f, w, P, p, m, g, E, b, y, O, C, N, A]), u(l({}, S.current), {
-    masonryComputer: I,
+    dir: v
+  }), S.computeVisibleSections(Math.max(0, w * p), P * p), S.getState()), [R, S, t, n, o, c, f, w, P, p, m, g, E, y, b, O, C, N, v]), u(l({}, I.current), {
+    masonryComputer: S,
     forceUpdateOnChunkChange: D,
-    forceUpdate: v
+    forceUpdate: A
   })
 }

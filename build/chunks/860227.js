@@ -49,16 +49,16 @@ function f(e, t, n) {
     m = e.components.length > 0,
     g = e.hasFlag(a.pr7.HAS_THREAD),
     E = f || p || _ || h || g || m || e.type === a.lAJ.THREAD_CREATED,
-    b = f && e.content === e.embeds[0].url && e.embeds[0].type === a.Auw.GIFV,
-    y = e.type !== a.lAJ.DEFAULT || !b && "" !== e.content,
+    y = f && e.content === e.embeds[0].url && e.embeds[0].type === a.Auw.GIFV,
+    b = e.type !== a.lAJ.DEFAULT || !y && "" !== e.content,
     O = (0, i.A)(e),
-    A = !O && (null == n ? true : n.hasTimestamp) !== false,
-    v = !O,
-    S = l(e, t),
-    I = o(e),
-    T = u ? I : S,
-    C = v ? "".concat(T, " ").concat(r.lW) : "";
-  if (y) {
+    v = !O && (null == n ? true : n.hasTimestamp) !== false,
+    A = !O,
+    I = l(e, t),
+    S = o(e),
+    T = u ? S : I,
+    C = A ? "".concat(T, " ").concat(r.lW) : "";
+  if (b) {
     let t = s(e);
     C += " ".concat(t)
   }
@@ -66,7 +66,7 @@ function f(e, t, n) {
     let t = d(e);
     C += " ".concat(t)
   }
-  if (A) {
+  if (v) {
     let t = c(e);
     C += " ".concat(r.l6, " ").concat(t)
   }

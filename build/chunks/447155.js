@@ -1,8 +1,8 @@
 /** Chunk was on 97492 **/
 /** chunk id: 447155, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h,
-  v: () => p
+  A: () => f,
+  v: () => h
 }), require("./321073.js");
 var r, Chunk827734 = require("./827734.js"),
   Chunk397927 = require("./397927.js"),
@@ -13,99 +13,99 @@ var r, Chunk827734 = require("./827734.js"),
   Chunk184761 = require("./184761.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
-  p = ((r = {}).UPLOAD_A_FILE = "UPLOAD_A_FILE", r.UPLOAD_TEXT_AS_FILE = "UPLOAD_TEXT_AS_FILE", r.INVITE_TO_PLAY_GAME = "INVITE_TO_GAME", r.INVITE_TO_LISTEN = "INVITE_TO_LISTEN", r.INVITE_TO_WATCH = "INVITE_TO_WATCH", r.CREATE_THREAD = "CREATE_THREAD", r.SLASH_COMMAND = "SLASH_COMMAND", r.CLIPS = "CLIPS", r.POLL = "POLL", r.ACTIVITY = "ACTIVITY", r.APP_LAUNCHER = "APP_LAUNCHER", r.SCHEDULED_MESSAGE = "SCHEDULED_MESSAGE", r.SUMMARIZE_THREAD = "SUMMARIZE_THREAD", r);
+  h = ((r = {}).UPLOAD_A_FILE = "UPLOAD_A_FILE", r.UPLOAD_TEXT_AS_FILE = "UPLOAD_TEXT_AS_FILE", r.INVITE_TO_PLAY_GAME = "INVITE_TO_GAME", r.INVITE_TO_LISTEN = "INVITE_TO_LISTEN", r.INVITE_TO_WATCH = "INVITE_TO_WATCH", r.CREATE_THREAD = "CREATE_THREAD", r.SLASH_COMMAND = "SLASH_COMMAND", r.CLIPS = "CLIPS", r.POLL = "POLL", r.ACTIVITY = "ACTIVITY", r.APP_LAUNCHER = "APP_LAUNCHER", r.SCHEDULED_MESSAGE = "SCHEDULED_MESSAGE", r.SUMMARIZE_THREAD = "SUMMARIZE_THREAD", r);
 
-function h(e) {
+function f(e) {
   let {
     canAttachFiles: t,
     canStartThreads: n,
     useSlate: r,
-    canUseApplicationCommands: p,
-    hasClips: h,
-    channel: b,
-    activities: g,
-    newClipsCount: m,
+    canUseApplicationCommands: h,
+    hasClips: f,
+    channel: g,
+    activities: m,
+    newClipsCount: b,
     canPostPolls: A,
     canLaunchActivities: y,
-    appContext: O,
-    canSendScheduledMessages: j,
-    canSummarizeThreads: v,
-    showAppLauncher: x
-  } = e, E = [];
-  t && (E.push({
+    appContext: _,
+    canSendScheduledMessages: O,
+    canSummarizeThreads: j,
+    showAppLauncher: v
+  } = e, x = [];
+  t && (x.push({
     type: "UPLOAD_A_FILE",
     icon: i.H8$,
-    display: f.intl.string(f.t["d3+iYs"])
-  }), E.push({
+    display: p.intl.string(p.t["d3+iYs"])
+  }), x.push({
     type: "UPLOAD_TEXT_AS_FILE",
     icon: i.H8$,
-    display: f.intl.string(f.t["G9s+EM"])
-  })), h && t && O !== d.BRT.POPOUT && E.push({
+    display: p.intl.string(p.t["G9s+EM"])
+  })), f && t && _ !== d.BRT.POPOUT && x.push({
     type: "CLIPS",
     icon: i.xgA,
-    display: f.intl.string(f.t.o034cv),
-    badgeVal: m,
+    display: p.intl.string(p.t.o034cv),
+    badgeVal: b,
     badgeColor: l.A.colors.BACKGROUND_BRAND.css
-  }), n && E.push({
+  }), n && x.push({
     type: "CREATE_THREAD",
     icon: i.G_k,
-    display: f.intl.string(f.t.rBIGBL)
-  }), A && E.push({
+    display: p.intl.string(p.t.rBIGBL)
+  }), A && x.push({
     type: "POLL",
     icon: i.YRe,
-    display: f.intl.string(f.t.Flr51u)
+    display: p.intl.string(p.t.Flr51u)
   });
   let {
-    renameAppsToAppCommandsInOverflow: _,
+    renameAppsToAppCommandsInOverflow: E,
     moveAppsEntrypointToOverflow: C
   } = u.C.getConfig({
     location: "getChannelAttachOptions"
   });
-  return C ? x && E.push({
+  return C ? v && x.push({
     type: "APP_LAUNCHER",
     icon: i.k9F,
-    display: f.intl.string(f.t.nqswKn)
-  }) : r && p && E.push({
+    display: p.intl.string(p.t.nqswKn)
+  }) : r && h && x.push({
     type: "SLASH_COMMAND",
     icon: i.k9F,
-    display: f.intl.string(_ ? f.t["5Y0Fam"] : f.t.Bbvp6G)
-  }), y && E.push({
+    display: p.intl.string(E ? p.t["5Y0Fam"] : p.t.Bbvp6G)
+  }), y && x.push({
     type: "ACTIVITY",
     icon: i.bxf,
-    display: f.intl.string(f.t["16Lfrb"])
-  }), g.forEach(e => {
-    !(0, a.A)(e, d.jUm.EMBEDDED) && (e.type === d.$pd.PLAYING && (0, a.A)(e, d.jUm.JOIN) && E.push({
+    display: p.intl.string(p.t["16Lfrb"])
+  }), m.forEach(e => {
+    !(0, s.A)(e, d.jUm.EMBEDDED) && (e.type === d.$pd.PLAYING && (0, s.A)(e, d.jUm.JOIN) && x.push({
       type: "INVITE_TO_GAME",
       icon: i.LVO,
-      display: f.intl.formatToPlainString(f.t["KHLo+F"], {
-        channel: (0, s.m1)(b, c.default, o.A, true),
+      display: p.intl.formatToPlainString(p.t["KHLo+F"], {
+        channel: (0, a.m1)(g, c.default, o.A, true),
         game: null != e ? e.name : ""
       }),
       activity: e
-    }), e.type === d.$pd.LISTENING && (0, a.A)(e, d.jUm.SYNC) && E.push({
+    }), e.type === d.$pd.LISTENING && (0, s.A)(e, d.jUm.SYNC) && x.push({
       type: "INVITE_TO_LISTEN",
       icon: i.J2m,
-      display: f.intl.formatToPlainString(f.t.I479px, {
-        channel: (0, s.m1)(b, c.default, o.A, true),
+      display: p.intl.formatToPlainString(p.t.I479px, {
+        channel: (0, a.m1)(g, c.default, o.A, true),
         name: null != e ? e.name : ""
       }),
       activity: e
-    }), e.type === d.$pd.WATCHING && (0, a.A)(e, d.jUm.SYNC) && E.push({
+    }), e.type === d.$pd.WATCHING && (0, s.A)(e, d.jUm.SYNC) && x.push({
       type: "INVITE_TO_WATCH",
       icon: i.bMW,
-      display: f.intl.formatToPlainString(f.t["EvCP/g"], {
-        channel: (0, s.m1)(b, c.default, o.A, true),
+      display: p.intl.formatToPlainString(p.t["EvCP/g"], {
+        channel: (0, a.m1)(g, c.default, o.A, true),
         name: null != e ? e.name : ""
       }),
       activity: e
     }))
-  }), j && E.push({
+  }), O && x.push({
     type: "SCHEDULED_MESSAGE",
     icon: i.O4,
-    display: f.intl.string(f.t["3+ii4F"])
-  }), b.isThread() && v && E.push({
+    display: p.intl.string(p.t["3+ii4F"])
+  }), g.isThread() && j && x.push({
     type: "SUMMARIZE_THREAD",
     icon: i.Dud,
-    display: f.intl.string(f.t.EXfguE)
-  }), E
+    display: p.intl.string(p.t.EXfguE)
+  }), x
 }

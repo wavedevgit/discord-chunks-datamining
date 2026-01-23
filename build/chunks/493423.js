@@ -38,17 +38,17 @@ function _(e, t) {
     errorMessageId: E,
     selectedDateDescription: g
   });
-  let [b, y] = (0, f.useState)(false), O = e.isDisabled || t.isNextVisibleRangeInvalid();
-  O && b && (y(false), t.setFocused(true));
-  let [A, v] = (0, f.useState)(false), S = e.isDisabled || t.isPreviousVisibleRangeInvalid();
-  S && A && (v(false), t.setFocused(true));
-  let I = (0, c.b)({
+  let [y, b] = (0, f.useState)(false), O = e.isDisabled || t.isNextVisibleRangeInvalid();
+  O && y && (b(false), t.setFocused(true));
+  let [v, A] = (0, f.useState)(false), I = e.isDisabled || t.isPreviousVisibleRangeInvalid();
+  I && v && (A(false), t.setFocused(true));
+  let S = (0, c.b)({
     id: e.id,
     "aria-label": [e["aria-label"], m].filter(Boolean).join(", "),
     "aria-labelledby": e["aria-labelledby"]
   });
   return {
-    calendarProps: (0, u.v)(_, I, {
+    calendarProps: (0, u.v)(_, S, {
       role: "application",
       "aria-details": e["aria-details"] || true,
       "aria-describedby": e["aria-describedby"] || true
@@ -57,13 +57,13 @@ function _(e, t) {
       onPress: () => t.focusNextPage(),
       "aria-label": n.format("next"),
       isDisabled: O,
-      onFocusChange: y
+      onFocusChange: b
     },
     prevButtonProps: {
       onPress: () => t.focusPreviousPage(),
       "aria-label": n.format("previous"),
-      isDisabled: S,
-      onFocusChange: v
+      isDisabled: I,
+      onFocusChange: A
     },
     errorMessageProps: {
       id: E

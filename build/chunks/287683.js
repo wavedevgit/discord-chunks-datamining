@@ -21,7 +21,7 @@ var Chunk852015 = require("./852015.js"),
   Chunk670474 = require("./670474.js"),
   Chunk108094 = require("./108094.js"),
   Chunk232582 = require("./232582.js");
-class y extends Chunk324281.G {
+class b extends Chunk324281.G {
   create(e) {
     let t = {
       properties: {
@@ -49,7 +49,7 @@ class y extends Chunk324281.G {
         case 2:
           a.properties = {
             oneofKind: "announcementModalVariant1",
-            announcementModalVariant1: b.ih.internalBinaryRead(e, e.uint32(), n, a.properties.announcementModalVariant1)
+            announcementModalVariant1: y.ih.internalBinaryRead(e, e.uint32(), n, a.properties.announcementModalVariant1)
           };
           break;
         case 4:
@@ -130,14 +130,14 @@ class y extends Chunk324281.G {
         default:
           let s = n.readUnknownField;
           if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
-          let y = e.skip(i);
-          false !== s && (true === s ? r.f$.onRead : s)(this.typeName, a, t, i, y)
+          let b = e.skip(i);
+          false !== s && (true === s ? r.f$.onRead : s)(this.typeName, a, t, i, b)
       }
     }
     return a
   }
   internalBinaryWrite(e, t, n) {
-    "placeholder" === e.properties.oneofKind && t.tag(1, r.O0.LengthDelimited).string(e.properties.placeholder), "announcementModalVariant1" === e.properties.oneofKind && b.ih.internalBinaryWrite(e.properties.announcementModalVariant1, t.tag(2, r.O0.LengthDelimited).fork(), n).join(), "premiumTab" === e.properties.oneofKind && E.x.internalBinaryWrite(e.properties.premiumTab, t.tag(4, r.O0.LengthDelimited).fork(), n).join(), "marketingPageBanner" === e.properties.oneofKind && g.C.internalBinaryWrite(e.properties.marketingPageBanner, t.tag(5, r.O0.LengthDelimited).fork(), n).join(), "paymentModalBanner" === e.properties.oneofKind && m.Y.internalBinaryWrite(e.properties.paymentModalBanner, t.tag(6, r.O0.LengthDelimited).fork(), n).join(), "mobileBottomSheet" === e.properties.oneofKind && h.L.internalBinaryWrite(e.properties.mobileBottomSheet, t.tag(7, r.O0.LengthDelimited).fork(), n).join(), "giftIcon" === e.properties.oneofKind && _.o.internalBinaryWrite(e.properties.giftIcon, t.tag(8, r.O0.LengthDelimited).fork(), n).join(), "giftIconCoachmark" === e.properties.oneofKind && p.l.internalBinaryWrite(e.properties.giftIconCoachmark, t.tag(9, r.O0.LengthDelimited).fork(), n).join(), "giftPlanSelectionCardBanner" === e.properties.oneofKind && f.s.internalBinaryWrite(e.properties.giftPlanSelectionCardBanner, t.tag(10, r.O0.LengthDelimited).fork(), n).join(), "giftCustomizationBanner" === e.properties.oneofKind && d.E.internalBinaryWrite(e.properties.giftCustomizationBanner, t.tag(11, r.O0.LengthDelimited).fork(), n).join(), "billingSettingsNitroGiftBanner" === e.properties.oneofKind && u.v.internalBinaryWrite(e.properties.billingSettingsNitroGiftBanner, t.tag(12, r.O0.LengthDelimited).fork(), n).join(), "giftReminderNagbar" === e.properties.oneofKind && c.s.internalBinaryWrite(e.properties.giftReminderNagbar, t.tag(13, r.O0.LengthDelimited).fork(), n).join(), "giftReminderCoachmark" === e.properties.oneofKind && l.m.internalBinaryWrite(e.properties.giftReminderCoachmark, t.tag(14, r.O0.LengthDelimited).fork(), n).join(), "premiumTabTooltip" === e.properties.oneofKind && o.G.internalBinaryWrite(e.properties.premiumTabTooltip, t.tag(15, r.O0.LengthDelimited).fork(), n).join(), "" !== e.contentIdentifier && t.tag(3, r.O0.LengthDelimited).string(e.contentIdentifier);
+    "placeholder" === e.properties.oneofKind && t.tag(1, r.O0.LengthDelimited).string(e.properties.placeholder), "announcementModalVariant1" === e.properties.oneofKind && y.ih.internalBinaryWrite(e.properties.announcementModalVariant1, t.tag(2, r.O0.LengthDelimited).fork(), n).join(), "premiumTab" === e.properties.oneofKind && E.x.internalBinaryWrite(e.properties.premiumTab, t.tag(4, r.O0.LengthDelimited).fork(), n).join(), "marketingPageBanner" === e.properties.oneofKind && g.C.internalBinaryWrite(e.properties.marketingPageBanner, t.tag(5, r.O0.LengthDelimited).fork(), n).join(), "paymentModalBanner" === e.properties.oneofKind && m.Y.internalBinaryWrite(e.properties.paymentModalBanner, t.tag(6, r.O0.LengthDelimited).fork(), n).join(), "mobileBottomSheet" === e.properties.oneofKind && h.L.internalBinaryWrite(e.properties.mobileBottomSheet, t.tag(7, r.O0.LengthDelimited).fork(), n).join(), "giftIcon" === e.properties.oneofKind && _.o.internalBinaryWrite(e.properties.giftIcon, t.tag(8, r.O0.LengthDelimited).fork(), n).join(), "giftIconCoachmark" === e.properties.oneofKind && p.l.internalBinaryWrite(e.properties.giftIconCoachmark, t.tag(9, r.O0.LengthDelimited).fork(), n).join(), "giftPlanSelectionCardBanner" === e.properties.oneofKind && f.s.internalBinaryWrite(e.properties.giftPlanSelectionCardBanner, t.tag(10, r.O0.LengthDelimited).fork(), n).join(), "giftCustomizationBanner" === e.properties.oneofKind && d.E.internalBinaryWrite(e.properties.giftCustomizationBanner, t.tag(11, r.O0.LengthDelimited).fork(), n).join(), "billingSettingsNitroGiftBanner" === e.properties.oneofKind && u.v.internalBinaryWrite(e.properties.billingSettingsNitroGiftBanner, t.tag(12, r.O0.LengthDelimited).fork(), n).join(), "giftReminderNagbar" === e.properties.oneofKind && c.s.internalBinaryWrite(e.properties.giftReminderNagbar, t.tag(13, r.O0.LengthDelimited).fork(), n).join(), "giftReminderCoachmark" === e.properties.oneofKind && l.m.internalBinaryWrite(e.properties.giftReminderCoachmark, t.tag(14, r.O0.LengthDelimited).fork(), n).join(), "premiumTabTooltip" === e.properties.oneofKind && o.G.internalBinaryWrite(e.properties.premiumTabTooltip, t.tag(15, r.O0.LengthDelimited).fork(), n).join(), "" !== e.contentIdentifier && t.tag(3, r.O0.LengthDelimited).string(e.contentIdentifier);
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.f$.onWrite : i)(this.typeName, e, t), t
   }
@@ -153,7 +153,7 @@ class y extends Chunk324281.G {
       name: "announcement_modal_variant_1",
       kind: "message",
       oneof: "properties",
-      T: () => b.ih
+      T: () => y.ih
     }, {
       no: 4,
       name: "premium_tab",
@@ -234,4 +234,4 @@ class y extends Chunk324281.G {
     }])
   }
 }
-let O = new y
+let O = new b

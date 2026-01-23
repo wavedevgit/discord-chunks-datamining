@@ -55,11 +55,11 @@ function E(e) {
   return f.J[e.type]
 }
 
-function b(e) {
+function y(e) {
   let t = E(e);
   return "".concat(e.type, ":").concat(null == t ? true : t.makeErrorContextKey(e))
 }
-class y extends Chunk439372.A {
+class b extends Chunk439372.A {
   updateActiveErrors() {
     var e, t;
     if (__OVERLAY__) return;
@@ -74,7 +74,7 @@ class y extends Chunk439372.A {
         activeStreams: a
       });
       if (null != t)
-        for (let e of t) u.set(b(e), e)
+        for (let e of t) u.set(y(e), e)
     }
     let p = d.A.getActiveErrors();
     if (!(p instanceof Map)) return void m.error("existingErrors is not a Map: ".concat(p, " type: ").concat(Object.prototype.toString.call(p)));
@@ -137,4 +137,4 @@ class y extends Chunk439372.A {
     })
   }
 }
-let O = new y
+let O = new b

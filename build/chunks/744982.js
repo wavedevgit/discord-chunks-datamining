@@ -2,7 +2,7 @@
 /** chunk id: 744982, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./747238.js"), require("./733351.js"), require("./812715.js");
 var Chunk155718 = require("./155718.js"),
   Chunk842209 = require("./842209.js"),
@@ -41,7 +41,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,8 +52,8 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -71,7 +71,7 @@ function O(e) {
   }
   return null
 }
-let A = y(E({}, Chunk114323.A), {
+let v = b(E({}, Chunk114323.A), {
   sentinel: true,
   focusMode: Chunk374803.e.MANUAL,
   matches(e, t, n, r, i) {
@@ -177,7 +177,7 @@ let A = y(E({}, Chunk114323.A), {
       guild: o,
       location: s.Oh.SUGGESTION
     });
-    return null == l ? null : y(E({}, l), {
+    return null == l ? null : b(E({}, l), {
       type: _.kc.COMMAND_SUGGESTION
     })
   }

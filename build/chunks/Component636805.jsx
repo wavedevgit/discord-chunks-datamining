@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 636805, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => A
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,7 +17,7 @@ var Chunk554146 = require("./554146.js"),
   Chunk853742 = require("./853742.js"),
   Chunk652215 = require("./652215.js"),
   Chunk49999 = require("./49999.js");
-class g extends Chunk272355.A {
+class m extends Chunk272355.A {
   _initialize() {
     a.h.subscribe("CHANNEL_SELECT", this.handleChannelSelect)
   }
@@ -26,13 +26,13 @@ class g extends Chunk272355.A {
   }
   handleChannelSelect(e) {
     var t;
-    let a, s, g, m, b, {
-      guildId: _
+    let a, s, m, A, _, {
+      guildId: b
     } = e;
-    if (null == _ || (s = !!(null == (a = d.A.getGuild(_)) ? true : a.features.has(h.GuildFeatures.COMMUNITY)), g = p.A.can(h.xBc.MANAGE_CHANNELS, a), m = (0, o.k8)(i.M.FORUM_CHANNEL_UPSELL_MODAL), b = null != (t = u.A.getMemberCount(_)) ? t : 0, !s || !g || m || !(b >= 200))) return;
-    (0, f.zd)(), (0, c.Vh)(i.M.FORUM_CHANNEL_UPSELL_MODAL);
+    if (null == b || (s = !!(null == (a = d.A.getGuild(b)) ? true : a.features.has(g.GuildFeatures.COMMUNITY)), m = p.A.can(g.xBc.MANAGE_CHANNELS, a), A = (0, o.k8)(i.M.FORUM_CHANNEL_UPSELL_MODAL), _ = null != (t = u.A.getMemberCount(b)) ? t : 0, !s || !m || A || !(_ >= 200))) return;
+    (0, h.zd)(), (0, c.Vh)(i.M.FORUM_CHANNEL_UPSELL_MODAL);
     let E = function() {
-      let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : A.i.DISMISS;
+      let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : f.i.DISMISS;
       (0, o.Dr)(i.M.FORUM_CHANNEL_UPSELL_MODAL, {
         dismissAction: e
       })
@@ -64,7 +64,7 @@ class g extends Chunk272355.A {
           onClose: e => {
             E(e), t.onClose()
           },
-          guildId: _,
+          guildId: b,
           shouldUpsellCreation: true
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
@@ -79,10 +79,10 @@ class g extends Chunk272355.A {
       }
     }, {
       onCloseCallback: () => (0, o.Dr)(i.M.FORUM_CHANNEL_UPSELL_MODAL, {
-        dismissAction: A.i.DISMISS
+        dismissAction: f.i.DISMISS
       }),
-      onCloseRequest: h.FXj
+      onCloseRequest: g.FXj
     })
   }
 }
-let m = new g
+let A = new m

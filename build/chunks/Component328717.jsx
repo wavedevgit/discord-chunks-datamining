@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 328717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,16 +16,16 @@ var Chunk43105 = require("./43105.jsx"),
   Chunk49999 = require("./49999.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk398932 = require("./398932.js");
-let A = e => {
+let f = e => {
   let {
     targetElementRef: t,
-    discountOffer: A,
-    premiumSubscription: g,
-    dismissCoachmark: m,
-    children: b
+    discountOffer: f,
+    premiumSubscription: m,
+    dismissCoachmark: A,
+    children: _
   } = e, {
-    analyticsLocations: _
-  } = (0, s.Ay)(a.A.CHURN_DISCOUNT_POPOVER), E = (0, c.iU)(d.gD.PREMIUM_MONTH_TIER_2, A, g), O = (0, r.jsx)(i.h, {
+    analyticsLocations: b
+  } = (0, s.Ay)(a.A.CHURN_DISCOUNT_POPOVER), E = (0, c.iU)(d.gD.PREMIUM_MONTH_TIER_2, f, m), O = (0, r.jsx)(i.h, {
     targetElementRef: t,
     position: "right",
     align: "top",
@@ -33,24 +33,24 @@ let A = e => {
     caretConfig: {
       align: "start"
     },
-    title: f.intl.format(f.t["3yZP0G"], {
-      percent: A.discount.amount
+    title: h.intl.format(h.t["3yZP0G"], {
+      percent: f.discount.amount
     }).toString(),
-    body: f.intl.format(f.t["3Q4wCy"], {
+    body: h.intl.format(h.t["3Q4wCy"], {
       discountedPrice: E,
-      billingPeriod: (0, o.Ke)(A.discount.user_usage_limit_interval),
-      numMonths: A.discount.user_usage_limit
+      billingPeriod: (0, o.Ke)(f.discount.user_usage_limit_interval),
+      numMonths: f.discount.user_usage_limit
     }),
     graphic: {
       type: "image",
-      src: h.A
+      src: g.A
     },
     gradientColor: "nitro-pink",
     actions: [{
-      text: f.intl.string(f.t.zrCzVB),
+      text: h.intl.string(h.t.zrCzVB),
       variant: "expressive",
       onClick: () => {
-        m(p.i.TAKE_ACTION), (0, l.mMO)(async () => {
+        A(p.i.TAKE_ACTION), (0, l.mMO)(async () => {
           let {
             PremiumBrandRefreshSubscriptionCancellationModal: e
           } = await n.e("72820").then(n.bind(n, 281439));
@@ -74,8 +74,8 @@ let A = e => {
               }
               return e
             }({}, t), i = i = {
-              premiumSubscription: g,
-              analyticsLocations: _,
+              premiumSubscription: m,
+              analyticsLocations: b,
               initialStep: u.g.CONFIRM_DISCOUNT
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
@@ -93,12 +93,12 @@ let A = e => {
       icon: l.tvc
     }],
     onRequestClose: () => {
-      m(p.i.USER_DISMISS)
+      A(p.i.USER_DISMISS)
     }
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      children: b
+      children: _
     }), O]
   })
 }

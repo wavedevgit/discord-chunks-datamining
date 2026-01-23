@@ -31,27 +31,27 @@ function h() {
       guildId: t,
       channelId: n
     }
-  }, i.x), n = (0, a.bG)([d.A], () => d.A.getGuild(e)), h = (0, a.bG)([u.A], () => null == n ? u.A.getChannel(t) : null), m = (0, a.bG)([f.default], () => f.default.getCurrentUser()), g = null != h ? (0, o.Y)(h) : null, E = null != m ? m.getAvatarURL(e, 80) : p.vI["0"], b = (0, r.jsx)(s.euF, {
+  }, i.x), n = (0, a.bG)([d.A], () => d.A.getGuild(e)), h = (0, a.bG)([u.A], () => null == n ? u.A.getChannel(t) : null), m = (0, a.bG)([f.default], () => f.default.getCurrentUser()), g = null != h ? (0, o.Y)(h) : null, E = null != m ? m.getAvatarURL(e, 80) : p.vI["0"], y = (0, r.jsx)(s.euF, {
     src: E,
     "aria-hidden": true,
     size: s._3J.SIZE_80,
     className: _.HT
-  }), y = null;
-  return y = null != n ? (0, r.jsx)(l.A, {
+  }), b = null;
+  return b = null != n ? (0, r.jsx)(l.A, {
     guild: n
   }) : null != g ? (0, r.jsx)(s.euF, {
     "aria-hidden": true,
     src: g,
     size: s._3J.SIZE_80,
     className: _.HT
-  }) : b, (0, r.jsxs)("div", {
+  }) : y, (0, r.jsxs)("div", {
     className: _.kL,
     children: [(0, r.jsx)("div", {
       className: _.$H,
-      children: b
+      children: y
     }), (0, r.jsx)("div", {
       className: _.XN,
-      children: y
+      children: b
     }), (0, r.jsx)("svg", {
       className: _.bm,
       xmlns: "http://www.w3.org/2000/svg",

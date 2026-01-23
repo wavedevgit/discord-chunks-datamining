@@ -21,12 +21,12 @@ var Chunk627968 = require("./627968.js"),
 function m(e) {
   let {
     isRedesign: t = false
-  } = e, n = (0, s.p)(), m = i.useRef(false), g = (0, a.bG)([f.A], () => f.A.getVideoDeviceId()), [E, b] = i.useState((0, l.i)(p.default.getCurrentUser())), y = i.useRef(E);
+  } = e, n = (0, s.p)(), m = i.useRef(false), g = (0, a.bG)([f.A], () => f.A.getVideoDeviceId()), [E, y] = i.useState((0, l.i)(p.default.getCurrentUser())), b = i.useRef(E);
   i.useEffect(() => () => {
-    m.current && (0, c._C)(y.current)
+    m.current && (0, c._C)(b.current)
   }, []);
   let O = e => {
-    m.current = true, y.current = e, b(e), (0, u.gB)(e, {
+    m.current = true, b.current = e, y(e), (0, u.gB)(e, {
       location: n.location
     }).catch(h.tEg)
   };

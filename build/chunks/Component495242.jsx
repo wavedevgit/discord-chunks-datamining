@@ -28,7 +28,7 @@ function m(e) {
         questContent: o.uF.QUEST_BAR_V2,
         questContentCTA: s.Cy.VIEW_CONSOLE_CONNECTIONS_LINK,
         sourceQuestContent: d
-      }), (0, r.openUserSettings)(i.X.CONNECTIONS_PANEL, {
+      }), (0, i.openUserSettings)(r.X.CONNECTIONS_PANEL, {
         section: c.nc_.CONNECTIONS
       })
     },

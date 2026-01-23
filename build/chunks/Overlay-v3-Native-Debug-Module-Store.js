@@ -27,17 +27,17 @@ function m(e, t, n) {
 }
 let g = new Chunk118356.Vy("OverlayV3NativeClickZoneStore"),
   E = 3e4,
-  b = null,
-  y = [],
+  y = null,
+  b = [],
   O = [],
-  A = {},
-  v = false;
-
-function S(e) {
-  return !a()(e, y)
-}
+  v = {},
+  A = false;
 
 function I(e) {
+  return !a()(e, b)
+}
+
+function S(e) {
   let t = setTimeout(() => {
     R(t)
   }, E);
@@ -49,62 +49,62 @@ function I(e) {
         right: e.right,
         bottom: e.bottom
       },
-      r = A[e.name];
-    return null != r && clearTimeout(r), A[e.name] = t, n
+      r = v[e.name];
+    return null != r && clearTimeout(r), v[e.name] = t, n
   })
 }
 
 function T(e, t) {
   var n;
-  if (null == b) return void g.error("Overlay module not found");
-  let r = null != (n = null == b ? true : b.getLastAssociatedPID()) ? n : u.UNSET_PID;
+  if (null == y) return void g.error("Overlay module not found");
+  let r = null != (n = null == y ? true : y.getLastAssociatedPID()) ? n : u.UNSET_PID;
   try {
-    let n = I(e);
-    S(e) && (0, d._r)(r, "capture_zones_set", {
+    let n = S(e);
+    I(e) && (0, d._r)(r, "capture_zones_set", {
       source: t,
       capture_zones: n,
       rawZones: e
-    }), b.setCaptureZones(n)
+    }), y.setCaptureZones(n)
   } catch (e) {
     g.error("Error setting capture zones:", e)
   }
 }
 
 function C(e) {
-  return Object.keys(A).filter(t => A[t] === e)
+  return Object.keys(v).filter(t => v[t] === e)
 }
 
 function N() {
-  return O.length > 0 && 0 === y.length
+  return O.length > 0 && 0 === b.length
 }
 
 function R(e) {
   let t = C(e);
-  for (let n of (null != e && clearTimeout(e), t)) delete A[n];
+  for (let n of (null != e && clearTimeout(e), t)) delete v[n];
   let n = O.filter(e => !t.includes(e.name));
-  N() || (y = n, T(n, "timer_expired")), O = [...n]
+  N() || (b = n, T(n, "timer_expired")), O = [...n]
 }
 
 function w(e, t) {
   if (!f.A.isOverlayEnabled) {
-    if (0 === y.length) return;
+    if (0 === b.length) return;
     P("overlay_disabled");
     return
   }
-  T(e, t), y = e, O = [...e]
+  T(e, t), b = e, O = [...e]
 }
 
 function P(e) {
-  for (let e of Object.values(A)) null != e && clearTimeout(e);
-  A = {}, y = [], O = [], T([], e)
+  for (let e of Object.values(v)) null != e && clearTimeout(e);
+  v = {}, b = [], O = [], T([], e)
 }
 
 function D() {
-  0 !== y.length && (O = [...y], y = [], T([], "store_click_zones"))
+  0 !== b.length && (O = [...b], b = [], T([], "store_click_zones"))
 }
 
 function x() {
-  y.length > 0 || T(y = [...O], "refresh_click_zones")
+  b.length > 0 || T(b = [...O], "refresh_click_zones")
 }
 
 function L(e, t, n, r) {
@@ -140,11 +140,11 @@ function k() {
 }
 
 function U() {
-  return null == (b = f.A.getNativeModule()) || !!v || (v = true, b.setCaptureZoneCallback(L), true)
+  return null == (y = f.A.getNativeModule()) || !!A || (A = true, y.setCaptureZoneCallback(L), true)
 }
 
 function G() {
-  return b = null, true
+  return y = null, true
 }
 
 function V(e) {
@@ -158,7 +158,7 @@ class F extends(r = Chunk311907.Ay.Store) {
     this.waitFor(f.A, c.A)
   }
   getClickZones() {
-    return y
+    return b
   }
   getFocusLostStoredClickZones() {
     return O

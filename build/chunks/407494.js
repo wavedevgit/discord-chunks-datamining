@@ -2,7 +2,7 @@
 /** chunk id: 407494, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  Nr: "_485882c8e27b5996",
-  GC: "_2c307b3d3e50c6a2",
-  wP: "_3ea061be312048c9"
+  Nr: "card__46c9e",
+  GC: "cardBackgroundImage__46c9e",
+  wP: "cardImage__46c9e"
 }

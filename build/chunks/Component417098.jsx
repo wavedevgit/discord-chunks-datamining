@@ -4,10 +4,10 @@
 require.d(exports, {
   $T: () => T,
   Hv: () => E,
-  PM: () => I,
-  Z_: () => v,
-  eC: () => S,
-  zr: () => b
+  PM: () => S,
+  Z_: () => A,
+  eC: () => I,
+  zr: () => y
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -94,7 +94,7 @@ let E = Object.freeze({
   PREMIUM_TIER_2: Chunk1624.NS
 });
 
-function b(e) {
+function y(e) {
   let {
     children: t,
     className: n,
@@ -111,7 +111,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   null != e && l.default.track(c.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
     notice_type: e
   })
@@ -123,27 +123,27 @@ function O(e) {
   })
 }
 
-function A(e, t) {
+function v(e, t) {
   l.default.track(c.HAw.APP_NOTICE_ANCHOR_CLICKED, {
     notice_type: e,
     href: t
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     children: t,
     noticeType: n
   } = e, i = m(e, ["children", "noticeType"]);
-  return (0, r.jsx)(b, h(p({}, i), {
+  return (0, r.jsx)(y, h(p({}, i), {
     onClick: e => {
-      null != i.onClick && i.onClick(e), y(n)
+      null != i.onClick && i.onClick(e), b(n)
     },
     children: t
   }))
 }
 
-function S(e) {
+function I(e) {
   let {
     children: t,
     href: n,
@@ -154,13 +154,13 @@ function S(e) {
     href: n,
     onClick: e => {
       var t;
-      null == (t = a.onClick) || t.call(a, e), A(i, n)
+      null == (t = a.onClick) || t.call(a, e), v(i, n)
     },
     children: t
   }))
 }
 
-function I(e) {
+function S(e) {
   let {
     onClick: t,
     noticeType: n,

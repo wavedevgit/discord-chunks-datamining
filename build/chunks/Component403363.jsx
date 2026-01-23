@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 403363, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,7 +14,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk721983 = require("./721983.js"),
   Chunk630907 = require("./630907.js");
 
-function f(e) {
+function p(e) {
   let {
     guildId: t
   } = e;
@@ -41,7 +41,7 @@ function f(e) {
             variant: "primary",
             text: c.intl.string(c.t["I/XhUn"]),
             onClick: () => {
-              (0, a.rf)(t), i.A.open(t, o.BEX.ROLE_SUBSCRIPTIONS, true, o.nd0.ROLE_SUBSCRIPTION_TIERS), (0, s.Fx)(t)
+              (0, s.rf)(t), i.A.open(t, o.BEX.ROLE_SUBSCRIPTIONS, true, o.nd0.ROLE_SUBSCRIPTION_TIERS), (0, a.Fx)(t)
             }
           })
         })]

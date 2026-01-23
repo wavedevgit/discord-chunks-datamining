@@ -13,15 +13,15 @@ var Chunk64700 = require("./64700.js"),
   Chunk418208 = require("./418208.js");
 
 function d(e) {
-  let t = (0, l.bG)([s.default], () => s.default.getId()),
+  let t = (0, l.bG)([a.default], () => a.default.getId()),
     n = (0, c.Ay)(t, e.id),
     d = n === c.zF.REQUESTED_TO_SPEAK || n === c.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK,
-    [f, p] = r.useState(d);
+    [p, h] = r.useState(d);
   return r.useEffect(() => {
-    p(d)
-  }, [d]), [f, function() {
+    h(d)
+  }, [d]), [p, function() {
     (0, u.Cf)(e.id) ? i.A.showAgeVerificationGetStartedModal({
-      entryPoint: a.q1.STAGE_CHANNEL_RAISE_HAND
-    }): (n === c.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK ? (0, o.e7)(e, true) : (0, o.J7)(e, !f), p(!f))
+      entryPoint: s.q1.STAGE_CHANNEL_RAISE_HAND
+    }): (n === c.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK ? (0, o.e7)(e, true) : (0, o.J7)(e, !p), h(!p))
   }]
 }

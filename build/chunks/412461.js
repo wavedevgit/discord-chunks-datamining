@@ -16,64 +16,64 @@ var Chunk323125 = require("./323125.js"),
   Chunk652215 = require("./652215.js");
 
 function u(e, t) {
-  var n, l, a;
-  let r = o.h.getField("sessionId"),
-    i = o.h.getField("guildId"),
-    d = null == (n = o.h.getField("entrypoint")) ? true : n.name,
+  var n, r, l;
+  let i = c.h.getField("sessionId"),
+    a = c.h.getField("guildId"),
+    d = null == (n = c.h.getField("entrypoint")) ? true : n.name,
     u = s.default.getCurrentUser(),
-    p = (l = function(e) {
+    p = (r = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          l = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), l.forEach(function(t) {
-          var l;
-          l = n[t], t in e ? Object.defineProperty(e, t, {
-            value: l,
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = l
+          }) : e[t] = r
         })
       }
       return e
-    }({}, t), a = a = {
-      guild_id: i,
-      directory_session_id: r,
+    }({}, t), l = l = {
+      guild_id: a,
+      directory_session_id: i,
       source: d,
       user_id: null == u ? true : u.id
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, l)
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
       }
       return n
-    })(Object(a)).forEach(function(e) {
-      Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
-    }), l);
-  return c.default.track(e, p)
+    })(Object(l)).forEach(function(e) {
+      Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
+    }), r);
+  return o.default.track(e, p)
 }
 
 function p() {
-  return (0, a.bG)([i.default], () => i.default.isAuthenticated())
+  return (0, l.bG)([a.default], () => a.default.isAuthenticated())
 }
 
 function h() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     t = new URL(location.href);
   for (let n in e) {
-    let l = e[n];
-    t.searchParams.set(n, l)
+    let r = e[n];
+    t.searchParams.set(n, r)
   }
   let n = t.pathname + t.search,
-    a = (0, l.T2)(n, false);
-  (0, r.pX)(a)
+    l = (0, r.T2)(n, false);
+  (0, i.pX)(l)
 }
 
 function m() {
   let e = new URL(location.href),
     t = "?redirect_to=".concat(encodeURIComponent(e.pathname + e.search));
-  (0, r.pX)(d.BVt.REGISTER + t)
+  (0, i.pX)(d.BVt.REGISTER + t)
 }

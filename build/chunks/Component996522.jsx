@@ -2,7 +2,7 @@
 /** chunk id: 996522, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -23,7 +23,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk868320 = require("./868320.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,25 +39,25 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e) {
+function v(e) {
   let {
     message: t,
     compact: n
   } = e, i = (0, s.bG)([u.A], () => u.A.getChannel(d.default.castMessageIdAsChannelId(t.id)));
-  return null == i ? null : (0, r.jsx)(v, {
+  return null == i ? null : (0, r.jsx)(A, {
     channel: i,
     compact: n,
     isSystemMessage: (0, c.A)(t)
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     channel: t,
     compact: i,
@@ -86,33 +86,33 @@ function v(e) {
     })
   }
   let h = (0, s.bG)([p.A], () => p.A.getCount(t.id)),
-    y = S(t),
-    A = null != h && h > 0;
+    b = I(t),
+    v = null != h && h > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: a()(b.GI, {
-        [b.E]: !i,
-        [b.E_]: c
+      className: a()(y.GI, {
+        [y.E]: !i,
+        [y.E_]: c
       })
     }), (0, r.jsx)(o.DUT, {
       onClick: u,
       onKeyDown: d,
       onContextMenu: _,
       "aria-roledescription": E.intl.string(E.t["8ipxiY"]),
-      className: a()(b.kL, {
-        [b.og]: c
+      className: a()(y.kL, {
+        [y.og]: c
       }),
       children: (0, r.jsxs)(o.RDc, {
         children: [(0, r.jsxs)("div", {
-          className: b.kq,
+          className: y.kq,
           children: [(0, r.jsx)(o.AC4, {
             children: E.intl.string(E.t["7Xm5QI"])
           }), (0, r.jsx)("span", {
-            className: b.UU,
+            className: y.UU,
             children: t.name
           }), (0, r.jsx)("span", {
-            className: b.lO,
-            "aria-hidden": !A,
+            className: y.lO,
+            "aria-hidden": !v,
             children: (0, f.ub)(h, t.id)
           })]
         }), (0, r.jsx)(o.Text, {
@@ -120,15 +120,15 @@ function v(e) {
           "aria-hidden": true,
           lineClamp: 1,
           color: "text-default",
-          className: b.sb,
-          children: y
+          className: y.sb,
+          children: b
         })]
       })
     })]
   })
 }
 
-function S(e) {
+function I(e) {
   var t;
   let n = (0, s.bG)([p.A], () => p.A.getMostRecentMessage(e.id)),
     i = (0, s.bG)([p.A], () => p.A.getCount(e.id)),
@@ -137,7 +137,7 @@ function S(e) {
     children: [(0, r.jsx)("span", {
       children: E.intl.string(E.t.ZTo4HS)
     }), (0, r.jsx)("span", {
-      className: b.vE,
+      className: y.vE,
       children: (0, _.aK)(a)
     })]
   }) : (0, r.jsxs)(r.Fragment, {
@@ -145,7 +145,7 @@ function S(e) {
       message: n,
       channel: e
     }), (0, r.jsx)("span", {
-      className: b.vE,
+      className: y.vE,
       children: (0, _.aK)(a)
     })]
   })

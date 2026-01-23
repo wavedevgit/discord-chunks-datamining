@@ -1,7 +1,7 @@
 /** Chunk was on 67299 **/
 /** chunk id: 165508, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => o
+  default: () => c
 }), require("./65821.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -28,11 +28,11 @@ function l(e) {
   }
   return e
 }
-let o = {
+let c = {
   showCaptcha: function(e, t) {
     let s = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
       {
-        sitekey: o,
+        sitekey: c,
         captchaService: d,
         options: u
       } = e;
@@ -46,22 +46,22 @@ let o = {
           captcha_rqtoken: n
         }),
         captchaService: d,
-        sitekey: o
+        sitekey: c
       }, s, u, n))
     }, {
       Layer: i.Ay,
-      modalKey: c.f
+      modalKey: o.f
     })
   },
   showCaptchaAsync: function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
       {
-        sitekey: o,
+        sitekey: c,
         captchaService: d,
         captchaSessionId: u,
-        options: f
+        options: m
       } = e;
-    return new Promise((e, m) => {
+    return new Promise((e, f) => {
       (0, a.mMO)(async () => {
         let {
           default: a
@@ -73,18 +73,18 @@ let o = {
             captcha_session_id: u
           }),
           captchaService: d,
-          sitekey: o,
+          sitekey: c,
           onReject: e => {
-            e === s.CaptchaError.CANCEL ? m(new s.CaptchaCancelError) : m(Error("cancel captcha"))
+            e === s.CaptchaError.CANCEL ? f(new s.CaptchaCancelError) : f(Error("cancel captcha"))
           }
-        }, t, f, n))
+        }, t, m, n))
       }, {
         Layer: i.Ay,
-        modalKey: c.f
+        modalKey: o.f
       })
     })
   },
   useIsCaptchaModalOpen: function() {
-    return (0, a.red)(e => (0, a.fDT)(e, c.f))
+    return (0, a.red)(e => (0, a.fDT)(e, o.f))
   }
 }

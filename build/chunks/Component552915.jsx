@@ -19,7 +19,7 @@ var Chunk575593 = require("./575593.js"),
   Chunk245068 = require("./245068.jsx"),
   Chunk704751 = require("./704751.js");
 let g = Chunk397927._3J.SIZE_152,
-  m = (0, Chunk954921.Te)(g),
+  b = (0, Chunk954921.Te)(g),
   O = e => {
     var t, r;
     let {
@@ -31,10 +31,10 @@ let g = Chunk397927._3J.SIZE_152,
     } = (0, o.A)({
       user: a,
       avatarDecorationOverride: i,
-      size: m
+      size: b
     });
     return (0, n.jsx)("div", {
-      className: b._P,
+      className: y._P,
       children: (0, n.jsx)(s.euF, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
@@ -74,7 +74,7 @@ let g = Chunk397927._3J.SIZE_152,
       item: t
     } = e;
     return (0, n.jsx)("div", {
-      className: b.xC,
+      className: y.xC,
       children: (0, n.jsx)(p.A, {
         isHighlighted: true,
         skuId: null == t ? true : t.skuId
@@ -86,10 +86,10 @@ let g = Chunk397927._3J.SIZE_152,
       item: t
     } = e;
     return (0, n.jsx)("div", {
-      className: b.M4,
+      className: y.M4,
       children: (0, n.jsx)(c.A, {
         nameplate: t,
-        className: b.qF,
+        className: y.qF,
         nameplatePreviewSize: "xlarge",
         isHighlighted: true,
         showPlaceholderUser: true
@@ -101,8 +101,8 @@ let g = Chunk397927._3J.SIZE_152,
       product: t
     } = e;
     return (0, n.jsx)("div", {
-      className: b.hT,
-      children: (0, n.jsx)(y.X, {
+      className: y.hT,
+      children: (0, n.jsx)(m.X, {
         product: t,
         isHighlighted: false
       })
@@ -116,7 +116,7 @@ let g = Chunk397927._3J.SIZE_152,
       isFetching: l
     } = (0, h.q)(t.skuId, true);
     if (l || null == r) return (0, n.jsx)("div", {
-      className: b.dc,
+      className: y.dc,
       children: (0, n.jsx)(s.y$y, {})
     });
     if (r.type === i.R.BUNDLE) return 0 === r.items.length ? null : (0, n.jsx)(x, {
@@ -140,7 +140,7 @@ let g = Chunk397927._3J.SIZE_152,
         return null != t.giftStyle ? (0, n.jsx)(d.A, {
           defaultAnimationState: u.oA.ACTION,
           idleAnimationState: u.oA.LOOP,
-          className: b.l$,
+          className: y.l$,
           giftStyle: t.giftStyle
         }) : null
     }

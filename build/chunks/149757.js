@@ -2,7 +2,7 @@
 /** chunk id: 149757, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => A,
+  I: () => v,
   N: () => O
 });
 var Chunk788868 = require("./788868.js"),
@@ -22,7 +22,7 @@ var Chunk788868 = require("./788868.js"),
   Chunk907990 = require("./907990.js"),
   Chunk164331 = require("./164331.js"),
   Chunk997734 = require("./997734.js");
-let y = {
+let b = {
     [Chunk788868.Ac.PREMIUM_TENURE_1_MONTH]: {
       standard: Chunk714206,
       ambient: Chunk122725.A
@@ -60,14 +60,14 @@ let y = {
     let {
       ambient: t = false
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-    return null != e ? A(e, {
+    return null != e ? v(e, {
       ambient: t
     }) : null
   };
 
-function A(e) {
+function v(e) {
   let {
     ambient: t = false
-  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, n = y[e];
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, n = b[e];
   return t ? n.ambient : n.standard
 }

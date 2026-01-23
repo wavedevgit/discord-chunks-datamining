@@ -2,7 +2,7 @@
 /** chunk id: 531260, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 }), require("./638769.js"), require("./264879.js"), require("./896048.js"), require("./65821.js");
 var Chunk64700 = require("./64700.js"),
   Chunk284009 = require("./284009.js"),
@@ -21,7 +21,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk652215 = require("./652215.js"),
   Chunk788868 = require("./788868.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,14 +30,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -54,12 +54,12 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = e => {
+let A = e => {
   var t;
   let {
     isFetching: n = false,
@@ -78,7 +78,7 @@ let v = e => {
     unactivatedUnits: [],
     fetched: c
   };
-  if (n) return A(y({}, d), {
+  if (n) return v(b({}, d), {
     fetched: false
   });
   if (null == s || 0 === r.length && 0 === i.length) return d;
@@ -95,23 +95,23 @@ let v = e => {
   let p = null != (t = f[0]) ? t : null,
     _ = E.xc.NONE;
   null != p && (_ = null != o && o.status === g.Dmq.PAUSED ? E.xc.FP_SUB_PAUSED : E.xc.FP_ONLY);
-  let b = u && (null == p ? true : p.sourceType) === g.GD.REVERSE_TRIAL;
+  let y = u && (null == p ? true : p.sourceType) === g.GD.REVERSE_TRIAL;
   return {
     isFractionalPremiumActive: null != p,
     fractionalState: _,
     startsAt: null != p ? l()(p.startsAt) : l()(0),
-    endsAt: null != p ? l()((0, m._e)(p.endsAt, i, true, b)) : l()(0),
+    endsAt: null != p ? l()((0, m._e)(p.endsAt, i, true, y)) : l()(0),
     currentEntitlementId: null != p ? p.id : "",
     unactivatedUnits: i,
     fetched: c
   }
 };
 
-function S(e, t) {
+function I(e, t) {
   return null != t && !_.A.fetchingAllEntitlements && (!_.A.fetchedAllEntitlements || e)
 }
 
-function I() {
+function S() {
   let {
     forceFetch: e,
     excludeReverseTrial: t,
@@ -122,8 +122,8 @@ function I() {
     excludeReverseTrialFromCountdown: false
   }, i = (0, c.bG)([f.default], () => f.default.getCurrentUser()), a = (0, c.yK)([_.A], () => _.A.getFractionalPremium({
     excludeReverseTrial: t
-  })), o = (0, c.bG)([_.A], () => _.A.fetchedAllEntitlements), l = (0, c.yK)([_.A], () => _.A.getUnactivatedFractionalPremiumUnits()), h = (0, c.bG)([p.A], () => p.A.getPremiumTypeSubscription()), [m, E] = r.useState(v({
-    isFetching: S(e, i) || _.A.fetchingAllEntitlements,
+  })), o = (0, c.bG)([_.A], () => _.A.fetchedAllEntitlements), l = (0, c.yK)([_.A], () => _.A.getUnactivatedFractionalPremiumUnits()), h = (0, c.bG)([p.A], () => p.A.getPremiumTypeSubscription()), [m, E] = r.useState(A({
+    isFetching: I(e, i) || _.A.fetchingAllEntitlements,
     entitlements: a,
     unactivatedFractionalPremiumUnits: l,
     currentUser: i,
@@ -132,11 +132,11 @@ function I() {
     excludeReverseTrialFromCountdown: n
   }));
   return (0, d.Ay)(() => {
-    S(e, i) && (0, u.qw)({
+    I(e, i) && (0, u.qw)({
       entitlementType: g.zF_.FRACTIONAL_REDEMPTION
     })
   }), r.useEffect(() => {
-    let e = v({
+    let e = A({
       entitlements: a,
       unactivatedFractionalPremiumUnits: l,
       currentUser: i,

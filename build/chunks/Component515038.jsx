@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -28,17 +28,17 @@ var Chunk627968 = require("./627968.js"),
 let S = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
 
 function O(e) {
-  var t, n, i, O, N;
+  var t, n, r, O, T;
   let {
-    quest: T,
-    questContent: I,
-    isHovering: k,
-    contentPosition: w,
+    quest: N,
+    questContent: w,
+    isHovering: I,
+    contentPosition: k,
     rowIndex: P,
     isVisibleInViewport: R,
     onReceiveErrorHints: D,
     sourceQuestContent: M
-  } = e, L = l.useRef(null), U = (0, x.mq)(T.config), B = (0, x.mH)(T.config), G = (null == (t = T.userStatus) ? true : t.enrolledAt) != null, {
+  } = e, L = l.useRef(null), U = (0, g.mq)(N.config), B = (0, g.mH)(N.config), G = (null == (t = N.userStatus) ? true : t.enrolledAt) != null, {
     ref: F,
     scrollHeight: V
   } = (0, d.wR)(), W = 104 !== V, {
@@ -46,7 +46,7 @@ function O(e) {
   } = l.useContext(v.M), {
     expansionSpring: K
   } = (0, c.zhh)({
-    expansionSpring: +!!k,
+    expansionSpring: +!!I,
     config: (O = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -64,48 +64,48 @@ function O(e) {
         })
       }
       return e
-    }({}, _.N), N = N = {
+    }({}, y.N), T = T = {
       clamp: true
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(O, Object.getOwnPropertyDescriptors(N)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(O, Object.getOwnPropertyDescriptors(T)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var a = Object.getOwnPropertySymbols(e);
         n.push.apply(n, a)
       }
       return n
-    })(Object(N)).forEach(function(e) {
-      Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(N, e))
+    })(Object(T)).forEach(function(e) {
+      Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(T, e))
     }), O)
-  }), z = (null == (n = T.userStatus) ? true : n.completedAt) != null, q = (null == (i = T.userStatus) ? true : i.claimedAt) != null, Q = (0, x.ks)(T.config), Y = (0, x._Z)(T.config), {
+  }), z = (null == (n = N.userStatus) ? true : n.completedAt) != null, q = (null == (r = N.userStatus) ? true : r.claimedAt) != null, Q = (0, g.ks)(N.config), Y = (0, g._Z)(N.config), {
     completedRatio: J,
     completedRatioDisplay: X
-  } = (0, h.O9)(T), Z = (0, p.gj)(T, M, L), $ = l.useMemo(() => q && Q ? A.intl.format(A.t["8Op4c4"], {
+  } = (0, h.O9)(N), Z = (0, p.gj)(N, M, L), $ = l.useMemo(() => q && Q ? A.intl.format(A.t["8Op4c4"], {
     balanceHook: () => (0, a.jsxs)(E, {
-      questId: T.id,
+      questId: N.id,
       children: [(0, a.jsx)(m.A, {
         shouldUseThemeColor: true,
         className: C.Kq,
         customSize: 14
       }), Y]
-    }, T.id)
+    }, N.id)
   }) : q ? (0, a.jsx)(E, {
-    questId: T.id,
+    questId: N.id,
     children: U
   }) : Q ? A.intl.format(A.t.ro1sze, {
     balanceHook: () => (0, a.jsxs)(E, {
-      questId: T.id,
+      questId: N.id,
       children: [(0, a.jsx)(m.A, {
         shouldUseThemeColor: true,
         className: C.Kq,
         customSize: 14
       }), Y]
-    }, T.id)
+    }, N.id)
   }) : A.intl.format(A.t["0IUT4Y"], {
     rewardWithArticleHook: () => (0, a.jsx)(E, {
-      questId: T.id,
+      questId: N.id,
       children: B
-    }, T.id)
-  }), [U, q, B, T.id, Y, Q]), ee = l.useMemo(() => {
+    }, N.id)
+  }), [U, q, B, N.id, Y, Q]), ee = l.useMemo(() => {
     if (null != Z) return (0, a.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
@@ -137,28 +137,28 @@ function O(e) {
               loop: false,
               autoplay: false,
               shouldAnimate: !et
-            }), (0, a.jsx)(b.A, {
-              quest: T,
+            }), (0, a.jsx)(f.A, {
+              quest: N,
               size: 76,
               percentComplete: J,
-              percentCompleteText: k && !(0, f.Ic)(T) ? X : true,
+              percentCompleteText: I && !(0, x.Ic)(N) ? X : true,
               children: (0, a.jsx)("div", {
                 className: C.yv,
-                children: (0, a.jsx)(g.A, {
-                  quest: T,
-                  questContent: I,
+                children: (0, a.jsx)(b.A, {
+                  quest: N,
+                  questContent: w,
                   className: C.ve,
-                  autoplay: k,
+                  autoplay: I,
                   onLoadComplete: H,
                   lazyLoad: true,
                   sourceQuestContent: M
                 })
               })
             })]
-          }) : (0, a.jsx)(g.A, {
-            quest: T,
-            autoplay: k,
-            questContent: I,
+          }) : (0, a.jsx)(b.A, {
+            quest: N,
+            autoplay: I,
+            questContent: w,
             className: C.eB,
             onLoadComplete: H,
             lazyLoad: true,
@@ -167,7 +167,7 @@ function O(e) {
         })
       }), (0, a.jsxs)("div", {
         ref: F,
-        className: r()(C.FS, {
+        className: i()(C.FS, {
           [C.wq]: !W
         }),
         children: [(0, a.jsx)(c.Heading, {
@@ -175,7 +175,7 @@ function O(e) {
           color: "text-brand",
           className: C.G$,
           children: A.intl.format(A.t.EAYZAr, {
-            questName: T.config.messages.questName
+            questName: N.config.messages.questName
           })
         }), (0, a.jsx)(c.Text, {
           variant: "text-md/semibold",
@@ -189,10 +189,10 @@ function O(e) {
         },
         className: C.hS
       })]
-    }), (0, a.jsx)(y.A, {
-      quest: T,
-      questContent: I,
-      contentPosition: w,
+    }), (0, a.jsx)(_.A, {
+      quest: N,
+      questContent: w,
+      contentPosition: k,
       rowIndex: P,
       onReceiveErrorHints: D,
       sourceQuestContent: M

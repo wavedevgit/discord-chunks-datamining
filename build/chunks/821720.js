@@ -22,10 +22,10 @@ function d(e, t) {
         }),
         r = n.map(e => e.id);
       return [n, r]
-    })(e, t), [e, t]), a = (0, l.yK)([s.A], () => {
+    })(e, t), [e, t]), s = (0, l.yK)([a.A], () => {
       let e = [];
       return n.forEach(t => {
-        null != s.A.findActivity(t.author.id, e => {
+        null != a.A.findActivity(t.author.id, e => {
           var n, r, l;
           return e.application_id === (null == (n = t.application) ? true : n.id) && (null == (r = e.party) ? true : r.id) === (null == (l = t.activity) ? true : l.party_id)
         }, null, true) && e.push(t.id)
@@ -37,22 +37,22 @@ function d(e, t) {
       return e.forEach(e => {
         var r, l;
         let i = null == (r = e.application) ? true : r.id,
-          a = null == (l = e.activity) ? true : l.party_id;
-        if (e.id in t || null == i || null == a) return;
-        let s = e.timestamp.getTime(),
+          s = null == (l = e.activity) ? true : l.party_id;
+        if (e.id in t || null == i || null == s) return;
+        let a = e.timestamp.getTime(),
           o = {
             userId: e.author.id,
             applicationId: i,
-            partyId: a,
+            partyId: s,
             messageId: e.id,
             channelId: e.channel_id,
-            inviteTime: s
+            inviteTime: a
           };
         n.push(o)
       }), n
-    })(n, a), [n, a])]
+    })(n, s), [n, s])]
   }(e, t);
   return r.useEffect(() => {
-    for (let e of d) a.A.isSubscribed(e) || (0, i.B)(e)
+    for (let e of d) s.A.isSubscribed(e) || (0, i.B)(e)
   }, [d]), [n, d]
 }

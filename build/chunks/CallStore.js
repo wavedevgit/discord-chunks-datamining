@@ -55,7 +55,7 @@ function m(e, t) {
 let g = {},
   E = {};
 
-function b() {
+function y() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : u.A.getChannelId(),
     n = c.A.getChannel(t);
@@ -72,8 +72,8 @@ function b() {
   returnfalse
 }
 
-function y() {
-  return b(true)
+function b() {
+  return y(true)
 }
 
 function O(e) {
@@ -83,22 +83,22 @@ function O(e) {
   g = _({}, t.calls), E = _({}, t.enqueuedRings)
 }
 
-function A() {
+function v() {
   g = {}, E = {}
 }
 
-function v() {
-  return b(true)
-}
-
-function S(e) {
-  let {
-    channelId: t
-  } = e;
-  return b(false, t)
+function A() {
+  return y(true)
 }
 
 function I(e) {
+  let {
+    channelId: t
+  } = e;
+  return y(false, t)
+}
+
+function S(e) {
   let {
     channel: t
   } = e;
@@ -211,12 +211,12 @@ class P extends(r = Chunk311907.Ay.Store) {
 }
 p(P, "displayName", "CallStore");
 let D = new P(Chunk73153.h, {
-  CONNECTION_OPEN: y,
-  CONNECTION_CLOSED: A,
+  CONNECTION_OPEN: b,
+  CONNECTION_CLOSED: v,
   OVERLAY_INITIALIZE: O,
-  CONNECTION_RESUMED: v,
-  CHANNEL_SELECT: S,
-  CHANNEL_DELETE: I,
+  CONNECTION_RESUMED: A,
+  CHANNEL_SELECT: I,
+  CHANNEL_DELETE: S,
   CALL_CREATE: T,
   CALL_UPDATE: N,
   CALL_DELETE: R,

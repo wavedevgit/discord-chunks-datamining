@@ -2,7 +2,7 @@
 /** chunk id: 964892, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  e: () => v,
+  e: () => A,
   x: () => P
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -42,7 +42,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,8 +53,8 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -66,21 +66,21 @@ function O(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = A(e, t), Object.getOwnPropertySymbols)
+  if (a = v(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function A(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let v = Chunk64700.createContext(null),
-  S = 20,
-  I = 22,
+let A = Chunk64700.createContext(null),
+  I = 20,
+  S = 22,
   T = 240,
   C = 10,
   N = 4,
@@ -94,7 +94,7 @@ function w() {
   if ("center" === e || "custom" === e) return 0;
   let i = "left" === t || "right" === t,
     a = i ? r : null != n ? n : T,
-    s = i ? I : S;
+    s = i ? S : I;
   if (0 === a) return 0;
   let o = a / 2 - s;
   switch (e) {
@@ -114,8 +114,8 @@ function P(e) {
     targetElementRef: a,
     shouldShow: h = true,
     onRequestClose: g,
-    position: b = "top",
-    align: A,
+    position: y = "top",
+    align: v,
     alignmentStrategy: P = "trigger-center",
     caretConfig: D,
     hasVideo: x = false,
@@ -128,7 +128,7 @@ function P(e) {
     returnRef: V,
     experimental_ignoreModalClicks: F = true,
     closeOnClickOutside: B = false
-  } = e, [H, Y] = i.useState(h), [W, K] = i.useState(b), z = i.useRef(b), q = i.useRef(0), {
+  } = e, [H, Y] = i.useState(h), [W, K] = i.useState(y), z = i.useRef(y), q = i.useRef(0), {
     ref: X,
     width: Z,
     height: Q
@@ -147,8 +147,8 @@ function P(e) {
   i.useEffect(() => {
     en && h ? Y(true) : en || Y(false)
   }, [en, h]), i.useEffect(() => {
-    et(b)
-  }, [b, et]);
+    et(y)
+  }, [y, et]);
   let er = () => {
       Y(false)
     },
@@ -158,15 +158,15 @@ function P(e) {
       onExitComplete: er
     }),
     ea = i.useMemo(() => {
-      if ("edge" === P && null != A) {
+      if ("edge" === P && null != v) {
         let e = "top" === W || "bottom" === W,
           t = "left" === W || "right" === W;
         if (e) {
-          if ("left" === A || "center" === A || "right" === A) return A
-        } else if (t && ("top" === A || "center" === A || "bottom" === A)) return A;
+          if ("left" === v || "center" === v || "right" === v) return v
+        } else if (t && ("top" === v || "center" === v || "bottom" === v)) return v;
       }
       return "center"
-    }, [P, A, W]),
+    }, [P, v, W]),
     es = i.useMemo(() => {
       var e;
       if ("edge" !== P) return w(null != (e = null == D ? true : D.align) ? e : "center", W, Z, Q)
@@ -185,14 +185,14 @@ function P(e) {
       } = e, c = O(e, ["setPopoutRef", "position", "nudge"]);
       return et(i), a !== q.current && (q.current = a, null == k || k(a)), ei((e, i) => {
         if (!i) return null;
-        let u = (0, r.jsx)(l.lGe, y(E({}, c), {
+        let u = (0, r.jsx)(l.lGe, b(E({}, c), {
           setDialogRef: t,
           modal: G,
           className: s()(null != L ? m.popoverContentWithGradient : m.popover, {
             [m["popover--video"]]: x
           }),
           returnRef: V,
-          children: (0, r.jsx)(v.Provider, {
+          children: (0, r.jsx)(A.Provider, {
             value: eo,
             children: n
           })
@@ -200,9 +200,9 @@ function P(e) {
         return (0, r.jsx)(o.animated.div, {
           ref: X,
           "data-mana-component": "popover",
-          style: y(E({}, e), {
-            "--custom-caret-edge-offset-horizontal": "".concat(S, "px"),
-            "--custom-caret-edge-offset-vertical": "".concat(I, "px"),
+          style: b(E({}, e), {
+            "--custom-caret-edge-offset-horizontal": "".concat(I, "px"),
+            "--custom-caret-edge-offset-vertical": "".concat(S, "px"),
             "--custom-caret-edge-offset-horizontal-nudge": "".concat(a, "px"),
             "--custom-popover-width": "".concat(T, "px")
           }),

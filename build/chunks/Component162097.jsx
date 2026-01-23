@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk266770 = require("./266770.js"),
   Chunk268920 = require("./268920.js"),
   Chunk633217 = require("./633217.js");
-let y = () => {
+let b = () => {
     let e = (0, o.bG)([u.A], () => u.A.useReducedMotion);
     return (0, r.jsx)("div", {
       className: m.s,
@@ -34,7 +34,7 @@ let y = () => {
         loop: true,
         className: m.Cb,
         children: [(0, r.jsx)("source", {
-          src: b.A,
+          src: y.A,
           type: "video/webm"
         }), (0, r.jsx)("img", {
           src: E.A,
@@ -60,7 +60,7 @@ let y = () => {
     }, [a]);
     return (0, r.jsxs)("div", {
       className: s()(m.kL, g.O),
-      children: [(0, r.jsx)(y, {}), (0, r.jsx)(l.$nd, {
+      children: [(0, r.jsx)(b, {}), (0, r.jsx)(l.$nd, {
         text: t,
         variant: "primary",
         size: "sm",

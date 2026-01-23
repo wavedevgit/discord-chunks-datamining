@@ -1,11 +1,11 @@
 /** Chunk was on 31748 **/
 /** chunk id: 921652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g,
+  A: () => m,
   m: () => p
 }), require("./321073.js");
 var Chunk735438 = require("./735438.js"),
-  r = require.n(Chunk735438),
+  l = require.n(Chunk735438),
   Chunk835245 = require("./835245.js"),
   Chunk353640 = require("./353640.js"),
   Chunk121894 = require("./121894.js"),
@@ -20,60 +20,60 @@ let p = (0, Chunk353640.v)(() => ({
   lastSpawned: {}
 }));
 
-function b(e, t) {
+function g(e, t) {
   var n;
-  r()(null != (n = p.getState().particles[e.id]) ? n : {}).forEach(t)
+  l()(null != (n = p.getState().particles[e.id]) ? n : {}).forEach(t)
 }
 
-function g(e) {
-  var t, n, l, a;
-  let g, m, {
+function m(e) {
+  var t, n, r, a;
+  let m, _, {
     emojiHose: h,
-    context: A,
-    canvasWidth: y,
-    canvasHeight: _,
+    context: y,
+    canvasWidth: A,
+    canvasHeight: b,
     fallbackColor: E,
     outlineColorDark: v,
     outlineColorLight: O,
     streamerId: x,
     deadDrawables: S
   } = e;
-  A.save();
-  let N = c.A.getEmojiImage(null != (t = null != (n = h.emojiId) ? n : h.emojiName) ? t : ""),
-    C = (0, d._t)(h.x, y),
-    j = (0, d._t)(h.y, _),
+  y.save();
+  let C = c.A.getEmojiImage(null != (t = null != (n = h.emojiId) ? n : h.emojiName) ? t : ""),
+    N = (0, d._t)(h.x, A),
+    I = (0, d._t)(h.y, b),
     {
-      outlineColor: T
+      outlineColor: j
     } = (0, d.yO)(h.userId, v, O, E);
-  b(h, e => {
-    e.x += e.xSpeed * window.devicePixelRatio, e.y += e.ySpeed * window.devicePixelRatio, e.opacity -= e.opacitySpeed, e.opacity <= 0 && (0, s.r)(() => {
+  g(h, e => {
+    e.x += e.xSpeed * window.devicePixelRatio, e.y += e.ySpeed * window.devicePixelRatio, e.opacity -= e.opacitySpeed, e.opacity <= 0 && (0, o.r)(() => {
       p.setState(t => (delete t.particles[h.id][e.id], 0 === Object.keys(t.particles[h.id]).length && delete t.particles[h.id], t))
     })
-  }), g = null != (l = p.getState().lastSpawned[h.id]) ? l : 0, g + 100 > (m = Date.now()) || h.state === u.B.STOP || (.8 >= Math.random() || g + 300 < m) && (0, s.r)(() => {
+  }), m = null != (r = p.getState().lastSpawned[h.id]) ? r : 0, m + 100 > (_ = Date.now()) || h.state === u.B.STOP || (.8 >= Math.random() || m + 300 < _) && (0, o.r)(() => {
     p.setState(e => {
       var t;
       let n = null != (t = e.particles[h.id]) ? t : {},
-        l = r().random(1, 2);
-      for (let e = 0; e < l; e++) {
+        r = l().random(1, 2);
+      for (let e = 0; e < r; e++) {
         let e = {
           id: (0, i.A)(),
-          x: C + r().random(false, 96),
-          y: j + r().random(false, 25),
-          xSpeed: r().random(false, .5),
-          ySpeed: r().random(false, false),
+          x: N + l().random(false, 96),
+          y: I + l().random(false, 25),
+          xSpeed: l().random(false, .5),
+          ySpeed: l().random(false, false),
           opacity: 1,
-          opacitySpeed: r().random(.01, .05),
-          size: r().random(24, 48)
+          opacitySpeed: l().random(.01, .05),
+          size: l().random(24, 48)
         };
         n[e.id] = e
       }
       return e.particles[h.id] = n, e.lastSpawned[h.id] = Date.now(), e
     })
-  }), (0, f.y)(A, C, j, T, 3), (0, f.k)(A, C, j, h.userId), b(h, e => (function(e, t, n) {
+  }), (0, f.y)(y, N, I, j, 3), (0, f.k)(y, N, I, h.userId), g(h, e => (function(e, t, n) {
     if (null == t) return;
-    let l = n.size * window.devicePixelRatio,
-      r = n.x - l / 2 * window.devicePixelRatio,
-      i = n.y - 1.2 * l * window.devicePixelRatio;
-    e.globalAlpha = n.opacity, e.drawImage(t, l / 2 + r, l / 2 + i, l, l)
-  })(A, N, e)), h.lastUpdatedAt + 5e3 < Date.now() && (0, o.RB)(x, h), h.state !== u.B.STOP || Object.keys(null != (a = p.getState().particles[h.id]) ? a : {}).length > 0 || S.push(h), A.restore()
+    let r = n.size * window.devicePixelRatio,
+      l = n.x - r / 2 * window.devicePixelRatio,
+      i = n.y - 1.2 * r * window.devicePixelRatio;
+    e.globalAlpha = n.opacity, e.drawImage(t, r / 2 + l, r / 2 + i, r, r)
+  })(y, C, e)), h.lastUpdatedAt + 5e3 < Date.now() && (0, s.RB)(x, h), h.state !== u.B.STOP || Object.keys(null != (a = p.getState().particles[h.id]) ? a : {}).length > 0 || S.push(h), y.restore()
 }

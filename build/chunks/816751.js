@@ -1,9 +1,9 @@
 /** Chunk was on 21738 **/
 /** chunk id: 816751, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  B0: "_65cbbfb5545bd7d9",
-  x3: "ee71e7ef420dfb21",
-  R_: "_7ba7b43b4e1a4b43",
-  d: "_6b1c21bbad66ecef",
-  YT: "_44a4854a7e4f3b8b"
+  B0: "previewCard__8d6f9",
+  x3: "previewBackground__8d6f9",
+  R_: "heading__8d6f9",
+  d: "questTile__8d6f9",
+  YT: "questChannelCallHeaderWrapper__8d6f9"
 }

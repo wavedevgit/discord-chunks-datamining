@@ -47,11 +47,11 @@ function E(e) {
   f.suggestedGamesIds = t, f.suggestedWishlistGamesIds = n, _ = false, p = false
 }
 
-function b() {
+function y() {
   p = true, _ = false
 }
 
-function y() {
+function b() {
   _ = true, p = false, h = true
 }
 
@@ -59,21 +59,21 @@ function O(e) {
   d = true
 }
 
-function A(e) {
+function v(e) {
   d = false, null !== c && (u = null, c = null)
 }
 
-function v(e) {
+function A(e) {
   d = false
 }
 
-function S(e) {
+function I(e) {
   let {
     applicationId: t
   } = e;
   f.suggestedGamesIds = f.suggestedGamesIds.filter(e => e !== t), f.suggestedWishlistGamesIds = f.suggestedWishlistGamesIds.filter(e => e !== t)
 }
-class I extends Chunk311907.Ay.Store {
+class S extends Chunk311907.Ay.Store {
   initialize() {
     this.waitFor(o.default)
   }
@@ -156,14 +156,14 @@ class I extends Chunk311907.Ay.Store {
     return f
   }
 }
-let T = new I(Chunk73153.h, {
+let T = new S(Chunk73153.h, {
   WIDGET_PENDING_SET: m,
   WIDGET_PENDING_SAVE_START: O,
-  WIDGET_PENDING_SAVE_SUCCESS: A,
-  WIDGET_PENDING_SAVE_FAILURE: v,
+  WIDGET_PENDING_SAVE_SUCCESS: v,
+  WIDGET_PENDING_SAVE_FAILURE: A,
   WIDGET_SUGGESTED_FETCH_SUCCESS: E,
-  WIDGET_SUGGESTED_FETCH_FAILURE: b,
-  WIDGET_SUGGESTED_FETCH_START: y,
+  WIDGET_SUGGESTED_FETCH_FAILURE: y,
+  WIDGET_SUGGESTED_FETCH_START: b,
   WIDGET_PENDING_CLEAR: g,
-  WIDGET_SUGGESTED_REMOVE_GAME: S
+  WIDGET_SUGGESTED_REMOVE_GAME: I
 })

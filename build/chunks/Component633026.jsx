@@ -1,8 +1,8 @@
 /** Chunk was on 59275 **/
-/** chunk id: 633026, original params: e,t,l (module,exports,require) **/
+/** chunk id: 633026, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -19,7 +19,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk695413 = require("./695413.jsx"),
   Chunk201073 = require("./201073.js");
 (0, Chunk993408.$b)(90);
-let p = {
+let _ = {
     rankedSkuIds: [],
     name: "",
     unpublishedAt: true,
@@ -29,72 +29,72 @@ let p = {
     categoryStoreListingId: "",
     rewardSkuId: true
   },
-  h = e => {
+  b = e => {
     var t;
     let {
-      isLoading: l = false,
-      heroBlock: r,
+      isLoading: n = false,
+      heroBlock: l,
       tab: i,
       onVisibilityChange: d
-    } = e, h = (0, a.K)(e => {
+    } = e, b = (0, a.K)(e => {
       null == d || d(e)
-    }, .1, null != d), E = (0, o.bG)([u.default], () => u.default.getCurrentUser()), {
-      bannerDisplayConfig: v,
-      logoDisplayConfig: A,
-      heroLogo: x,
-      heroBannerStatic: S,
-      heroBannerAnimated: C
-    } = (0, f.Kk)(r), O = null != (t = null == v ? true : v.responsive) && t, _ = null == v ? true : v.backgroundStyle;
-    return null != E && (l || r !== p) ? (0, n.jsxs)("div", {
-      ref: h,
+    }, .1, null != d), h = (0, o.bG)([u.default], () => u.default.getCurrentUser()), {
+      bannerDisplayConfig: E,
+      logoDisplayConfig: v,
+      heroLogo: C,
+      heroBannerStatic: A,
+      heroBannerAnimated: x
+    } = (0, g.Kk)(l), S = null != (t = null == E ? true : E.responsive) && t, O = null == E ? true : E.backgroundStyle;
+    return null != h && (n || l !== _) ? (0, r.jsxs)("div", {
+      ref: b,
       className: m.os,
-      children: [(0, n.jsx)("div", {
+      children: [(0, r.jsx)("div", {
         className: s()(m.vK, {
-          [m.no]: O
+          [m.no]: S
         }),
-        style: null != _ ? {
-          background: _
+        style: null != O ? {
+          background: O
         } : true,
-        children: null != S && (0, n.jsx)(b.A, {
-          bannerStatic: S,
-          bannerAnimated: C,
-          isResponsive: O
+        children: null != A && (0, r.jsx)(f.A, {
+          bannerStatic: A,
+          bannerAnimated: x,
+          isResponsive: S
         })
-      }), (0, n.jsxs)("div", {
+      }), (0, r.jsxs)("div", {
         className: m.xX,
-        children: [(0, n.jsx)("div", {
+        children: [(0, r.jsx)("div", {
           className: s()(m.bC, {
-            [m.no]: O
+            [m.no]: S
           }),
-          children: l ? (0, n.jsx)("div", {
+          children: n ? (0, r.jsx)("div", {
             className: m.Hw
-          }) : (0, n.jsx)("div", {
+          }) : (0, r.jsx)("div", {
             className: m.Hw,
-            children: (0, n.jsxs)("div", {
+            children: (0, r.jsxs)("div", {
               className: m.Wq,
-              children: [null != x && (0, n.jsx)("img", {
+              children: [null != C && (0, r.jsx)("img", {
                 className: m.rm,
-                src: x,
-                alt: r.name,
-                style: null == A ? true : A.toDesktopStyles()
-              }), null != r.title && (0, n.jsx)(c.Heading, {
+                src: C,
+                alt: l.name,
+                style: null == v ? true : v.toDesktopStyles()
+              }), null != l.title && (0, r.jsx)(c.Heading, {
                 variant: "heading-xxl/bold",
                 className: m.DD,
                 color: "text-strong",
-                children: r.title
-              }), "" !== r.summary && (0, n.jsx)(c.Text, {
+                children: l.title
+              }), "" !== l.summary && (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
                 className: m.Tm,
-                style: null != r.bannerTextColor ? {
-                  color: r.bannerTextColor
+                style: null != l.bannerTextColor ? {
+                  color: l.bannerTextColor
                 } : true,
-                children: r.summary
+                children: l.summary
               })]
             })
           })
-        }), (0, n.jsx)(g.A, {
-          isBlockLoading: l,
-          heroBlock: r,
+        }), (0, r.jsx)(p.A, {
+          isBlockLoading: n,
+          heroBlock: l,
           tab: i
         })]
       })]

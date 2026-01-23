@@ -2,7 +2,7 @@
 /** chunk id: 860371, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./114821.js"), require("./339614.js"), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk980504 = require("./980504.js"),
   Chunk818348 = require("./818348.js"),
   Chunk343743 = require("./343743.js");
-let y = 4;
+let b = 4;
 
 function O(e) {
   let t = (0, o.bG)([h.default], () => m.Ay.canUseSoundboardEverywhere(h.default.getCurrentUser())),
@@ -35,16 +35,16 @@ function O(e) {
         var t, n;
         return null != (t = null == (n = u.A.getSoundsForGuild(e)) ? true : n.filter(e => e.available)) ? t : []
       });
-      i.push(...s().sampleSize(e, y))
+      i.push(...s().sampleSize(e, b))
     } else if ((null == e ? true : e.guild_id) != null) {
       var o;
       let t = null == (o = u.A.getSoundsForGuild(null == e ? true : e.guild_id)) ? true : o.filter(e => e.available);
-      i.push(...s().sampleSize(t, y))
+      i.push(...s().sampleSize(t, b))
     }
-    return i.length < y && i.push(...s().sampleSize(null != n ? n : [], y - i.length)), i
+    return i.length < b && i.push(...s().sampleSize(null != n ? n : [], b - i.length)), i
   }, [a, null == e ? true : e.guild_id, n, r, t])
 }
-let A = Chunk64700.memo(function(e) {
+let v = Chunk64700.memo(function(e) {
   let {
     channelId: t,
     onSelectSoundmoji: n
@@ -52,7 +52,7 @@ let A = Chunk64700.memo(function(e) {
   return (i.useEffect(() => {
     (0, c.E7)()
   }, [a]), 0 === p.length) ? (0, r.jsx)(l.y$y, {}) : (0, r.jsx)("div", {
-    className: b.q,
+    className: y.q,
     children: p.map((e, t) => (0, r.jsx)(d.Ay, {
       suppressPlaySound: true,
       enableSecondaryActions: true,

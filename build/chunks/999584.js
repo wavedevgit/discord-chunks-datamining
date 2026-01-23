@@ -2,5 +2,5 @@
 /** chunk id: 999584, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  Gt: "_60142111e284ad66"
+  Gt: "gameIcon__5a366"
 }

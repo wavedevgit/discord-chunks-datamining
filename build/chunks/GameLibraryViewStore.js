@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  A: () => A
+  A: () => v
 });
 var i, Chunk735438 = require("./735438.js"),
   s = require.n(Chunk735438),
@@ -37,7 +37,7 @@ function E(e) {
   n && (m = true, g()), r = t
 }
 
-function b(e) {
+function y(e) {
   let {
     direction: t,
     key: n
@@ -47,7 +47,7 @@ function b(e) {
     sortKey: h
   })
 }
-class y extends(i = Chunk311907.Ay.Store) {
+class b extends(i = Chunk311907.Ay.Store) {
   initialize() {
     var e;
     let t = null != (e = l.w.get(f)) ? e : {};
@@ -66,9 +66,9 @@ class y extends(i = Chunk311907.Ay.Store) {
     return m
   }
 }
-d(y, "displayName", "GameLibraryViewStore");
-let O = new y(Chunk73153.h, {
-    LIBRARY_TABLE_SORT_UPDATE: b,
+d(b, "displayName", "GameLibraryViewStore");
+let O = new b(Chunk73153.h, {
+    LIBRARY_TABLE_SORT_UPDATE: y,
     LIBRARY_TABLE_ACTIVE_ROW_ID_UPDATE: E
   }),
-  A = O
+  v = O

@@ -16,42 +16,42 @@ function u(t) {
     onClose: n,
     guildName: u,
     transitionState: c
-  } = t, [d, m] = i.useState(""), [p, x] = i.useState(null), f = i.useMemo(() => [{
-    text: s.intl.string(s.t["ETE/oC"]),
+  } = t, [m, p] = i.useState(""), [d, x] = i.useState(null), f = i.useMemo(() => [{
+    text: o.intl.string(o.t["ETE/oC"]),
     onClick: n,
     variant: "secondary"
   }, {
-    text: s.intl.string(s.t.l3hWP6),
+    text: o.intl.string(o.t.l3hWP6),
     variant: "critical-primary",
     type: "submit"
   }], [n]);
   return (0, a.jsx)("form", {
     onSubmit: function(t) {
-      (t.preventDefault(), d.toLowerCase() !== u.toLowerCase()) ? x(s.intl.string(s.t["c2/DS/"])): (null == e || e(), n())
+      (t.preventDefault(), m.toLowerCase() !== u.toLowerCase()) ? x(o.intl.string(o.t["c2/DS/"])): (null == e || e(), n())
     },
-    children: (0, a.jsxs)(l.aFV, {
-      title: s.intl.formatToPlainString(s.t.us7mC1, {
+    children: (0, a.jsxs)(r.aFV, {
+      title: o.intl.formatToPlainString(o.t.us7mC1, {
         name: u
       }),
-      subtitle: s.intl.format(s.t["Zuo+Vd"], {
+      subtitle: o.intl.format(o.t["Zuo+Vd"], {
         name: u
       }),
       actions: f,
       onClose: n,
       transitionState: c,
-      children: [(0, a.jsx)(r.ksK, {
+      children: [(0, a.jsx)(l.ksK, {
         id: "text-entry-confirm",
         type: "text",
-        label: s.intl.string(s.t.abprOC),
-        value: d,
+        label: o.intl.string(o.t.abprOC),
+        value: m,
         autoComplete: "off",
-        onChange: m,
+        onChange: p,
         autoFocus: true
-      }), null != p && "" !== p ? (0, a.jsx)(r.Text, {
+      }), null != d && "" !== d ? (0, a.jsx)(l.Text, {
         color: "text-feedback-critical",
         variant: "text-xs/normal",
-        className: o.z,
-        children: p
+        className: s.z,
+        children: d
       }) : null]
     })
   })

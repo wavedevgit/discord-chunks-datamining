@@ -65,12 +65,12 @@ function p(e) {
     triggerProps: E
   } = (0, s.f)(c({
     targetElementRef: h.targetElementRef
-  }, _)), b = p ? true : m, y = (0, i.o)(r.isValidElement(t) ? t : f, E, b, h.triggerRef), O = (0, a.w)(l, t, E, h.triggerRef, m, p, d), A = null != O ? O : y;
+  }, _)), y = p ? true : m, b = (0, i.o)(r.isValidElement(t) ? t : f, E, y, h.triggerRef), O = (0, a.w)(l, t, E, h.triggerRef, m, p, d), v = null != O ? O : b;
   return {
     tooltipId: m,
     isVisible: g,
     targetElementRef: h.targetElementRef,
-    trigger: A,
-    describedById: b
+    trigger: v,
+    describedById: y
   }
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 19750 **/
 /** chunk id: 486180, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => y
+  A: () => h
 });
 var r, a, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,7 +18,7 @@ var r, a, Chunk627968 = require("./627968.js"),
   Chunk294726 = require("./294726.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk979402 = require("./979402.js");
-let h = (r = function(e) {
+let b = (r = function(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,56 +48,56 @@ let h = (r = function(e) {
   Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
 }), r);
 
-function y(e) {
+function h(e) {
   let {
     guildId: t
   } = e;
-  i.useEffect(() => {
+  l.useEffect(() => {
     (0, u.z9)(t)
   }, [t]);
-  let n = (0, c.bG)([f.A], () => f.A.getStateForGuild(t)),
+  let n = (0, o.bG)([m.A], () => m.A.getStateForGuild(t)),
     {
       catalog: r,
       instances: a
-    } = i.useMemo(() => {
+    } = l.useMemo(() => {
       var e, t;
       return {
         catalog: Object.values(null != (e = null == n ? true : n.catalog) ? e : {}),
         instances: Object.values(null != (t = null == n ? true : n.instances) ? t : {})
       }
     }, [null == n ? true : n.catalog, null == n ? true : n.instances]),
-    y = a.length >= j.ZI;
-  return 0 === r.length ? (0, l.jsx)("div", {
+    h = a.length >= x.ZI;
+  return 0 === r.length ? (0, i.jsx)("div", {
     className: p.kL,
-    children: (0, l.jsx)(o.y$y, {
-      type: o.tVU.SPINNING_CIRCLE,
+    children: (0, i.jsx)(c.y$y, {
+      type: c.tVU.SPINNING_CIRCLE,
       className: p.u1
     })
-  }) : (0, l.jsxs)("div", {
+  }) : (0, i.jsxs)("div", {
     className: p.kL,
-    children: [(0, l.jsx)(s.DZT, {
+    children: [(0, i.jsx)(s.DZT, {
       className: p.R_,
       variant: "heading-md/semibold",
-      children: g.intl.string(v.default["3vWDMz"])
-    }), y && (0, l.jsx)("div", {
+      children: j.intl.string(v.default["3vWDMz"])
+    }), h && (0, i.jsx)("div", {
       className: p.Bq,
-      children: (0, l.jsx)(m.k, {})
-    }), (0, l.jsx)(s.IpV, {
+      children: (0, i.jsx)(g.k, {})
+    }), (0, i.jsx)(s.IpV, {
       className: p.nd,
-      children: (0, l.jsx)("div", {
+      children: (0, i.jsx)("div", {
         className: p.Y_,
-        children: r.map((e, n) => (0, l.jsx)(b.A, {
+        children: r.map((e, n) => (0, i.jsx)(f.A, {
           guildId: t,
           game: e,
-          onClick: () => (0, x.A)({
+          onClick: () => (0, _.A)({
             guildId: t,
-            stepConfig: h,
+            stepConfig: b,
             initialGameServerGame: e,
             analyticsLocation: d.A.GAME_SERVER_PAGE_SIDEBAR
           }),
           imageClassName: p.Sl,
           titleClassName: p.DD,
-          disabled: y,
+          disabled: h,
           location: d.A.GAME_SERVER_PAGE_SIDEBAR
         }, "sidebar-game-".concat(n, "-").concat(e.id)))
       })

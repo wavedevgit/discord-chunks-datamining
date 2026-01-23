@@ -51,12 +51,12 @@ function m(e) {
   } = e, l = (0, o.bG)([c.A], () => c.A.getBasicChannel(t.channelId)), m = (0, o.bG)([u.A], () => null != l && u.A.canBasicChannel(f.hVb.CONNECT, l)), {
     previewUrl: g,
     isLoading: E
-  } = (0, d.A)(t.guildId, t.channelId, t.ownerId), b = i.useRef(E ? null : g);
+  } = (0, d.A)(t.guildId, t.channelId, t.ownerId), y = i.useRef(E ? null : g);
   i.useEffect(() => {
-    E || (b.current = g)
+    E || (y.current = g)
   }, [g, E]);
-  let y = null == g || E ? b.current : g;
-  return null == y ? (0, r.jsx)(h, {
+  let b = null == g || E ? y.current : g;
+  return null == b ? (0, r.jsx)(h, {
     className: n,
     isLoading: E,
     noText: a,
@@ -65,7 +65,7 @@ function m(e) {
   }) : (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsx)("img", {
-      src: y,
+      src: b,
       alt: "",
       className: _.Sl
     })

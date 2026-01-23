@@ -2,7 +2,7 @@
 /** chunk id: 980545, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk608821 = require("./608821.js"),
   Chunk641701 = require("./641701.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,19 +38,19 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
-let A = "https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png";
+let v = "https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png";
 
-function v(e) {
+function A(e) {
   let {
     inOldSettings: t = false
   } = e, n = (0, l.Mw)((0, u.Ay)()), a = i.useMemo(() => ({
-    backgroundImage: "url(".concat(A, ")")
-  }), []), y = i.useCallback(() => {
+    backgroundImage: "url(".concat(v, ")")
+  }), []), b = i.useCallback(() => {
     (0, d.default)(), (0, h.navigateToQuestHome)({
       fromContent: _.uF.QUEST_HOME_MOVE_CALLOUT
     }), f.default.track(m.HAw.QUEST_CONTENT_CLICKED, O({
@@ -73,7 +73,7 @@ function v(e) {
           className: E.N1,
           children: [(0, r.jsx)("img", {
             alt: "",
-            src: b,
+            src: y,
             className: E.Kk
           }), (0, r.jsx)(c.Heading, {
             variant: "heading-lg/bold",
@@ -88,7 +88,7 @@ function v(e) {
       }), (0, r.jsx)(c.Button, {
         variant: n ? "primary" : "overlay-primary",
         text: g.intl.string(g.t.GURBQl),
-        onClick: y
+        onClick: b
       })]
     })
   })

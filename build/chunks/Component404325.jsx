@@ -21,13 +21,13 @@ let h = 40,
   m = .5,
   g = 294,
   E = 45,
-  b = 1,
-  y = 4,
+  y = 1,
+  b = 4,
   O = 6,
-  A = 24,
-  v = 2,
-  S = 4,
-  I = [0, 0, 0, 0, 0],
+  v = 24,
+  A = 2,
+  I = 4,
+  S = [0, 0, 0, 0, 0],
   T = 200;
 
 function C(e) {
@@ -55,13 +55,13 @@ function N(e, t) {
 
 function R(e) {
   let t;
-  return Math.floor(((t = e <= m ? h : e >= E ? g : (Math.min(e, E) - m) / (E - m) * (g - h) + h) + y) / O) * O - y
+  return Math.floor(((t = e <= m ? h : e >= E ? g : (Math.min(e, E) - m) / (E - m) * (g - h) + h) + b) / O) * O - b
 }
 
 function w(e) {
   if (null == e) return;
-  let t = 2 * b + y;
-  return Math.floor((e + y) / t)
+  let t = 2 * y + b;
+  return Math.floor((e + b) / t)
 }
 
 function P(e, t, n, r, i) {
@@ -86,8 +86,8 @@ function x(e) {
     segmentValue: i,
     segmentIndex: a,
     constrainMin: s
-  } = e, o = s ? (A - v) * i + v : A * i;
-  0 === o || P(t, a * (2 * b + y) * n, (r / 2 - o / 2) * n, o * n, b * n)
+  } = e, o = s ? (v - A) * i + A : v * i;
+  0 === o || P(t, a * (2 * y + b) * n, (r / 2 - o / 2) * n, o * n, y * n)
 }
 
 function L(e, t) {
@@ -95,7 +95,7 @@ function L(e, t) {
     r = i.useMemo(() => w(t), [t]);
   return i.useMemo(() => {
     var e;
-    return null != (e = N(null != n ? n : [], r)) ? e : I
+    return null != (e = N(null != n ? n : [], r)) ? e : S
   }, [n, r])
 }
 
@@ -148,7 +148,7 @@ function U(e) {
   } = e, {
     ref: g,
     width: E
-  } = (0, c.Ay)(), b = i.useMemo(() => R(o), [o]), y = i.useRef(true), O = L(n, E), v = i.useRef(l), I = i.useRef(d), C = i.useRef(null), N = window.devicePixelRatio, {
+  } = (0, c.Ay)(), y = i.useMemo(() => R(o), [o]), b = i.useRef(true), O = L(n, E), A = i.useRef(l), S = i.useRef(d), C = i.useRef(null), N = window.devicePixelRatio, {
     lastBackgroundFillColor: w,
     backgroundFillColor: P,
     lastActiveFillColor: j,
@@ -173,9 +173,9 @@ function U(e) {
       duration: t,
       numSegments: O.length
     });
-    y.current = O.map((e, t) => new p.A(t < r ? e : 0))
+    b.current = O.map((e, t) => new p.A(t < r ? e : 0))
   }, [O]), i.useEffect(() => {
-    let e = y.current;
+    let e = b.current;
     if (null == e) return;
     let t = D({
       showAll: !l,
@@ -197,10 +197,10 @@ function U(e) {
     function t(n) {
       let r = g.current,
         i = null == r ? true : r.getContext("2d"),
-        a = y.current;
+        a = b.current;
       if (null == r || null == i || null == a) return;
       let s = false;
-      (v.current !== l || I.current !== d) && (v.current = l, I.current = d, C.current = n), null != C.current && n > C.current + T && (C.current = null);
+      (A.current !== l || S.current !== d) && (A.current = l, S.current = d, C.current = n), null != C.current && n > C.current + T && (C.current = null);
       let o = r.height / N;
       i.clearRect(0, 0, r.width, r.height), i.beginPath();
       let [c, u] = k(w, P, n, C.current);
@@ -246,10 +246,10 @@ function U(e) {
     onMouseDown: H,
     className: s()(_.J, t),
     style: {
-      width: b
+      width: y
     },
     ref: g,
-    height: (A + 2 * S) * window.devicePixelRatio,
+    height: (v + 2 * I) * window.devicePixelRatio,
     width: (null != E ? E : 0) * window.devicePixelRatio
   })
 }

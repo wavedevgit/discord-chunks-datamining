@@ -2,7 +2,7 @@
 /** chunk id: 346076, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -39,15 +39,15 @@ function u(e) {
   })
 }
 
-function f() {
+function g() {
   let e = [{
     imageSrc: d,
     description: s.intl.string(s.t.lT0ZNS)
   }, {
-    imageSrc: c,
+    imageSrc: o,
     description: s.intl.string(s.t.ihN2Wb)
   }, {
-    imageSrc: o,
+    imageSrc: c,
     description: s.intl.string(s.t.c8krDQ)
   }];
   return (0, r.jsxs)("div", {

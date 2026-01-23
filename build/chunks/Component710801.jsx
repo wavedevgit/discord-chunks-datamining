@@ -31,7 +31,7 @@ function o(e) {
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
   }(e, ["channel"]);
-  return (0, r.jsx)(a.l, (t = function(e) {
+  return (0, r.jsx)(s.l, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -50,7 +50,7 @@ function o(e) {
     return e
   }({}, c), n = n = {
     iconComponent: l.PGe,
-    label: s.intl.string(s.t.WAI6xu),
+    label: a.intl.string(a.t.WAI6xu),
     onClick: () => i.A.stopRinging(o.id)
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

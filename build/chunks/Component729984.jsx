@@ -37,51 +37,51 @@ var Chunk627968 = require("./627968.js"),
 function P(e) {
   let {
     guild: t
-  } = e, s = (0, l.bG)([d.A], () => d.A.getEnabled(t.id)), m = (0, l.bG)([b.A], () => b.A.hasFetched(t.id)), p = (0, A.A)(t), x = (0, l.bG)([O.A], () => O.A.editedDefaultChannelIds), h = p.filter(e => !x.has(e.id)), [y, v] = i.useState(false);
+  } = e, s = (0, l.bG)([d.A], () => d.A.getEnabled(t.id)), f = (0, l.bG)([p.A], () => p.A.hasFetched(t.id)), b = (0, y.A)(t), h = (0, l.bG)([_.A], () => _.A.editedDefaultChannelIds), x = b.filter(e => !h.has(e.id)), [O, v] = i.useState(false);
   return (i.useEffect(() => {
-    m || s || (0, g.A)(t.id)
-  }, [t.id, m, s]), y || 0 === h.length) ? null : (0, r.jsxs)("div", {
-    className: I.Jl,
-    children: [(0, r.jsx)(c.Text, {
+    f || s || (0, m.A)(t.id)
+  }, [t.id, f, s]), O || 0 === x.length) ? null : (0, r.jsxs)("div", {
+    className: T.Jl,
+    children: [(0, r.jsx)(o.Text, {
       variant: "text-md/medium",
       color: "text-strong",
-      children: T.intl.string(T.t.NN7rD3)
+      children: I.intl.string(I.t.NN7rD3)
     }), (0, r.jsxs)("div", {
-      className: I.j7,
-      children: [(0, r.jsx)(c.Text, {
+      className: T.j7,
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: T.intl.string(T.t["3Uuql+"])
-      }), (0, r.jsxs)(c.DUT, {
-        className: I.AC,
+        children: I.intl.string(I.t["3Uuql+"])
+      }), (0, r.jsxs)(o.DUT, {
+        className: T.AC,
         onClick: () => v(true),
-        children: [(0, r.jsx)(c.A9s, {
+        children: [(0, r.jsx)(o.A9s, {
           size: "xxs",
           color: "currentColor",
-          className: I.AI
-        }), (0, r.jsx)(c.Text, {
-          className: I.fx,
+          className: T.AI
+        }), (0, r.jsx)(o.Text, {
+          className: T.fx,
           variant: "text-xs/medium",
           color: "text-brand",
-          children: T.intl.string(T.t.ZC3PJ2)
+          children: I.intl.string(I.t.ZC3PJ2)
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: I.IF,
-      children: h.map((e, i) => (0, r.jsxs)(r.Fragment, {
+      className: T.IF,
+      children: x.map((e, i) => (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-          className: I.WG,
+          className: T.WG,
           children: [(0, r.jsxs)("div", {
-            className: I.yW,
+            className: T.yW,
             children: [(0, r.jsxs)("div", {
-              className: I.HA,
+              className: T.HA,
               children: [(0, r.jsx)(u.gm, {
                 channel: e,
                 guild: t
               }), (0, r.jsx)(a.A, {
-                className: I.__invalid_name,
-                children: (0, r.jsx)(c.Text, {
-                  className: I.__invalid_channelText,
+                className: T.__invalid_name,
+                children: (0, r.jsx)(o.Text, {
+                  className: T.__invalid_channelText,
                   variant: "text-md/medium",
                   lineClamp: 1,
                   color: "text-default",
@@ -90,28 +90,28 @@ function P(e) {
               })]
             }), null != e.topic && e.topic.length > 0 ? (0, r.jsx)(a.A, {
               className: C.PT,
-              children: (0, r.jsx)(c.Text, {
-                className: I.At,
+              children: (0, r.jsx)(o.Text, {
+                className: T.At,
                 variant: "text-xs/normal",
-                children: f.A.parseTopic(e.topic, true, {
+                children: g.A.parseTopic(e.topic, true, {
                   channelId: e.id
                 })
               })
             }, "topic") : null]
-          }), (0, o.S)(t.id, e.id) ? (0, r.jsx)(c.Button, {
+          }), (0, c.S)(t.id, e.id) ? (0, r.jsx)(o.Button, {
             size: "sm",
             variant: "primary",
-            text: T.intl.string(T.t.OYkgVk),
+            text: I.intl.string(I.t.OYkgVk),
             onClick: () => (0, j.bN)(e.id)
-          }) : (0, r.jsx)(c.Button, {
+          }) : (0, r.jsx)(o.Button, {
             size: "sm",
             variant: "secondary",
-            text: T.intl.string(T.t.zA9d1J),
-            icon: c.XAi,
+            text: I.intl.string(I.t.zA9d1J),
+            icon: o.XAi,
             iconPosition: "start",
             onClick: () => {
               var i;
-              return i = e.id, void(0, c.mMO)(async () => {
+              return i = e.id, void(0, o.mMO)(async () => {
                 let {
                   default: e
                 } = await n.e("54857").then(n.bind(n, 147696));
@@ -151,12 +151,12 @@ function P(e) {
               })
             }
           })]
-        }), i < h.length - 1 ? (0, r.jsx)("div", {
-          className: I.me
+        }), i < x.length - 1 ? (0, r.jsx)("div", {
+          className: T.me
         }) : null]
       }))
     }), (0, r.jsx)("div", {
-      className: I.FZ
+      className: T.FZ
     })]
   })
 }
@@ -164,70 +164,70 @@ function P(e) {
 function w(e) {
   let {
     saveOnClose: t = false
-  } = e, n = (0, l.bG)([h.A], () => h.A.getGuild()), s = (0, l.bG)([d.A], () => d.A.isLoading()), a = (0, l.bG)([p.Ay], () => p.Ay.getChannels(null == n ? true : n.id)), o = (0, l.bG)([m.A], () => m.A.getCategories(null == n ? true : n.id)), u = (0, l.bG)([v.A], () => v.A.advancedMode), f = i.useRef(null), [g, b] = i.useState(false), O = i.useRef(n);
+  } = e, n = (0, l.bG)([x.A], () => x.A.getGuild()), s = (0, l.bG)([d.A], () => d.A.isLoading()), a = (0, l.bG)([b.Ay], () => b.Ay.getChannels(null == n ? true : n.id)), c = (0, l.bG)([f.A], () => f.A.getCategories(null == n ? true : n.id)), u = (0, l.bG)([v.A], () => v.A.advancedMode), g = i.useRef(null), [m, p] = i.useState(false), _ = i.useRef(n);
   return (i.useEffect(() => {
-    O.current = n
+    _.current = n
   }), i.useEffect(() => {
     if (t) {
       let {
         current: e
-      } = O;
+      } = _;
       return () => {
         null != e && (0, j.jr)(e).then(() => {
-          u && (0, y.dm)(e, {
+          u && (0, O.dm)(e, {
             ignoreDefaultPrompt: true
           }).catch(() => {})
         }).catch(() => {})
       }
     }
-  }, [t, u]), null == n) ? null : s ? (0, r.jsx)(c.y$y, {}) : (0, r.jsxs)("div", {
-    className: I.YB,
+  }, [t, u]), null == n) ? null : s ? (0, r.jsx)(o.y$y, {}) : (0, r.jsxs)("div", {
+    className: T.YB,
     children: [(0, r.jsxs)("div", {
-      className: I.U5,
-      children: [(0, r.jsx)(c.DUT, {
-        className: I.cS,
-        onClick: () => b(e => !e),
-        children: (0, r.jsx)(x.A, {
-          direction: g ? x.A.Directions.DOWN : x.A.Directions.UP,
+      className: T.U5,
+      children: [(0, r.jsx)(o.DUT, {
+        className: T.cS,
+        onClick: () => p(e => !e),
+        children: (0, r.jsx)(h.A, {
+          direction: m ? h.A.Directions.DOWN : h.A.Directions.UP,
           height: 16,
           width: 16
         })
-      }), (0, r.jsx)(c.Heading, {
-        className: I.wx,
+      }), (0, r.jsx)(o.Heading, {
+        className: T.wx,
         variant: "heading-lg/extrabold",
-        children: T.intl.string(T.t["4GSygh"])
-      }), (0, r.jsx)(c.Text, {
+        children: I.intl.string(I.t["4GSygh"])
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: T.intl.string(T.t.Kq7FAS)
-      }), (0, r.jsx)(E.mU, {
-        className: I.kr,
+        children: I.intl.string(I.t.Kq7FAS)
+      }), (0, r.jsx)(A.mU, {
+        className: T.kr,
         guildId: n.id
-      }), g ? null : (0, r.jsxs)(r.Fragment, {
+      }), m ? null : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(P, {
           guild: n
-        }), (0, r.jsx)(N.A, {
-          className: I.bE,
+        }), (0, r.jsx)(E.A, {
+          className: T.bE,
           guild: n,
-          categories: o,
+          categories: c,
           channels: a,
           hasSidebar: false
         })]
       }), u && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: I.FZ
-        }), (0, r.jsx)(c.Heading, {
-          className: I.RH,
+          className: T.FZ
+        }), (0, r.jsx)(o.Heading, {
+          className: T.RH,
           variant: "heading-lg/extrabold",
-          children: T.intl.string(T.t.g2RnpV)
-        }), (0, r.jsx)(c.Text, {
-          className: I.nd,
+          children: I.intl.string(I.t.g2RnpV)
+        }), (0, r.jsx)(o.Text, {
+          className: T.nd,
           variant: "text-sm/normal",
           color: "text-default",
-          children: T.intl.string(T.t.bLDQ1Q)
+          children: I.intl.string(I.t.bLDQ1Q)
         }), (0, r.jsx)("div", {
-          ref: f,
-          className: I.di,
+          ref: g,
+          className: T.di,
           children: (0, r.jsx)(S.A, {
             guildId: n.id,
             prejoinOnly: true,
@@ -236,10 +236,10 @@ function w(e) {
           })
         })]
       })]
-    }), (0, r.jsx)(_.A, {
+    }), (0, r.jsx)(N.A, {
       guild: n,
       scrollToQuestions: () => {
-        null != f.current && f.current.scrollIntoView({
+        null != g.current && g.current.scrollIntoView({
           behavior: "smooth"
         })
       }
@@ -248,19 +248,19 @@ function w(e) {
 }
 
 function R() {
-  let e = (0, l.bG)([h.A], () => h.A.getProps().guild),
-    t = (0, l.bG)([O.A], () => O.A.submitting),
+  let e = (0, l.bG)([x.A], () => x.A.getProps().guild),
+    t = (0, l.bG)([_.A], () => _.A.submitting),
     n = (0, l.bG)([v.A], () => v.A.advancedMode);
   return null == e ? null : (0, r.jsx)(s.A, {
     onSave: () => {
       (0, j.jr)(e).then(() => {
-        n && (0, y.dm)(e, {
+        n && (0, O.dm)(e, {
           ignoreDefaultPrompt: true
         }).catch(() => {})
       }).catch(() => {})
     },
     onReset: j.nx,
     submitting: t,
-    onSaveText: T.intl.string(T.t["R3BPH+"])
+    onSaveText: I.intl.string(I.t["R3BPH+"])
   })
 }

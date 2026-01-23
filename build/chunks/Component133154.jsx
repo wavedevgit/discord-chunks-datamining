@@ -2,7 +2,7 @@
 /** chunk id: 133154, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,19 +16,19 @@ var Chunk627968 = require("./627968.js"),
 function u(e) {
   let {
     guildId: t
-  } = e, n = (0, l.bG)([o.A], () => o.A.getSettings()), a = (0, l.bG)([o.A], () => o.A.getSubmitting()), u = i.useCallback(() => {
+  } = e, n = (0, l.bG)([c.A], () => c.A.getSettings()), a = (0, l.bG)([c.A], () => c.A.getSubmitting()), u = i.useCallback(() => {
     try {
-      (0, c.W5)(t, n)
+      (0, o.W5)(t, n)
     } catch (e) {}
   }, [t, n]);
   return (0, r.jsx)(s.A, {
     onSave: u,
-    onReset: c.sk,
+    onReset: o.sk,
     submitting: a,
     onSaveText: d.intl.string(d.t["R3BPH+"])
   })
 }
-let f = function() {
+let g = function() {
   let e = (0, l.bG)([a.A], () => a.A.getGuild());
   return null == e ? null : (0, r.jsx)(u, {
     guildId: e.id

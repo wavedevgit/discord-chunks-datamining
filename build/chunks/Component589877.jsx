@@ -1,7 +1,7 @@
 /** Chunk was on 44900 **/
-/** chunk id: 589877, original params: e,s,a (module,exports,require) **/
+/** chunk id: 589877, original params: e,t,s (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => A
+  default: () => E
 }), require("./896048.js"), require("./747238.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,109 +24,109 @@ var Chunk627968 = require("./627968.js"),
   Chunk604880 = require("./604880.js"),
   Chunk318808 = require("./318808.js");
 Chunk311907.Ay.initialize();
-let E = Chunk607399.Fr || Chunk607399.v1;
+let A = Chunk607399.Fr || Chunk607399.v1;
 
-function A(e) {
+function E(e) {
   let {
-    match: s
-  } = e, a = (0, i.bG)([m.A], () => m.A.getState("quest-preview")), r = s.params.questId, A = function(e) {
-    let [s, a] = l.useState(null);
-    return l.useEffect(() => {
-      (0, u.xB)(e).then(e => a({
+    match: t
+  } = e, s = (0, l.bG)([g.A], () => g.A.getState("quest-preview")), i = t.params.questId, E = function(e) {
+    let [t, s] = r.useState(null);
+    return r.useEffect(() => {
+      (0, x.xB)(e).then(e => s({
         status: "ok",
         value: e
-      })).catch(() => a({
+      })).catch(() => s({
         status: "error"
       }))
-    }, [a, e]), s
-  }(r);
-  l.useEffect(() => {
-    if (!E) {
-      if (null == a) h.A.openNativeAppModal("quest-preview", N.e$_.DEEP_LINK, {
+    }, [s, e]), t
+  }(i);
+  r.useEffect(() => {
+    if (!A) {
+      if (null == s) m.A.openNativeAppModal("quest-preview", N.e$_.DEEP_LINK, {
         type: j.XK.QUEST_PREVIEW_TOOL,
         params: {
-          questId: r
+          questId: i
         }
       });
-      else if (a === N.fAW.OPEN_FAIL) {
+      else if (s === N.fAW.OPEN_FAIL) {
         let e = new URLSearchParams;
-        e.set(f.L1.TAB, f.NC.PREVIEW_TOOL), e.set(f.L1.QUEST_ID, r), (0, x.bG)({
+        e.set(o.L1.TAB, o.NC.PREVIEW_TOOL), e.set(o.L1.QUEST_ID, i), (0, h.bG)({
           pathname: N.BVt.QUEST_HOME_V2,
           search: "?".concat(e.toString())
         })
       }
     }
-  }, [a, r]);
-  let k = l.useCallback(() => (0, g.q$)(r), [r]);
-  if (E) return (0, t.jsxs)("div", {
-    className: p.MY,
-    children: [(0, t.jsx)("img", {
-      className: p.Bg,
-      src: _.Ay,
+  }, [s, i]);
+  let T = r.useCallback(() => (0, u.q$)(i), [i]);
+  if (A) return (0, a.jsxs)("div", {
+    className: v.MY,
+    children: [(0, a.jsx)("img", {
+      className: v.Bg,
+      src: k.Ay,
       alt: ""
-    }), (0, t.jsx)("div", {
-      className: p.r$,
-      children: (0, t.jsx)("img", {
-        src: v,
+    }), (0, a.jsx)("div", {
+      className: v.r$,
+      children: (0, a.jsx)("img", {
+        src: f,
         alt: ""
       })
-    }), null != A && (0, t.jsx)("div", {
-      className: p.Nr,
-      children: "ok" === A.status ? (0, t.jsxs)(t.Fragment, {
-        children: [(0, t.jsx)("div", {
-          className: p.rC,
-          children: (0, t.jsx)("img", {
-            src: "".concat(o.CI).concat(r, "/dark/").concat(A.value.assets.gameTile),
+    }), null != E && (0, a.jsx)("div", {
+      className: v.Nr,
+      children: "ok" === E.status ? (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)("div", {
+          className: v.rC,
+          children: (0, a.jsx)("img", {
+            src: "".concat(_.CI).concat(i, "/dark/").concat(E.value.assets.gameTile),
             alt: "",
-            className: p.o4
+            className: v.o4
           })
-        }), (0, t.jsx)(n.Heading, {
+        }), (0, a.jsx)(n.Heading, {
           variant: "heading-lg/semibold",
           color: "text-default",
-          className: p.ky,
-          children: A.value.messages.questName
-        }), (0, t.jsx)(n.Text, {
+          className: v.ky,
+          children: E.value.messages.questName
+        }), (0, a.jsx)(n.Text, {
           variant: "text-md/normal",
-          className: p.G3,
-          children: b.intl.string(b.t.bWuKqh)
-        }), (0, t.jsx)(n.Button, {
+          className: v.G3,
+          children: p.intl.string(p.t.bWuKqh)
+        }), (0, a.jsx)(n.Button, {
           variant: "primary",
-          text: b.intl.string(b.t.UQvCf7),
+          text: p.intl.string(p.t.UQvCf7),
           fullWidth: true,
-          onClick: k
+          onClick: T
         })]
-      }) : (0, t.jsxs)(t.Fragment, {
-        children: [(0, t.jsx)(n.Heading, {
+      }) : (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)(n.Heading, {
           variant: "heading-lg/semibold",
           color: "text-default",
-          className: p.ky,
-          children: b.intl.string(b.t.k4z4er)
-        }), (0, t.jsx)(n.Text, {
+          className: v.ky,
+          children: p.intl.string(p.t.k4z4er)
+        }), (0, a.jsx)(n.Text, {
           variant: "text-md/normal",
-          className: p.G3,
-          children: b.intl.string(b.t.gtZK09)
+          className: v.G3,
+          children: p.intl.string(p.t.gtZK09)
         })]
       })
     })]
   });
-  let L = null == a || a === N.fAW.OPENING || a === N.fAW.OPEN_FAIL;
-  return (0, t.jsxs)(t.Fragment, {
-    children: [(0, t.jsx)(c.A, {
-      className: p.Lq,
+  let C = null == s || s === N.fAW.OPENING || s === N.fAW.OPEN_FAIL;
+  return (0, a.jsxs)(a.Fragment, {
+    children: [(0, a.jsx)(c.A, {
+      className: v.Lq,
       preserveAspectRatio: "xMinYMin slice"
-    }), (0, t.jsx)("div", {
-      className: p.kL,
-      children: (0, t.jsx)(d.Ay, {
-        children: L ? (0, t.jsxs)(t.Fragment, {
-          children: [(0, t.jsx)(d.hE, {
-            children: b.intl.string(b.t["Z+hCVU"])
-          }), (0, t.jsx)(d.CK, {})]
-        }) : (0, t.jsxs)(t.Fragment, {
-          children: [(0, t.jsx)(d.hE, {
-            className: p.Ns,
-            children: b.intl.string(b.t.csrAMJ)
-          }), (0, t.jsx)(d.tK, {
-            children: b.intl.string(b.t.ghBJz9)
+    }), (0, a.jsx)("div", {
+      className: v.kL,
+      children: (0, a.jsx)(d.Ay, {
+        children: C ? (0, a.jsxs)(a.Fragment, {
+          children: [(0, a.jsx)(d.hE, {
+            children: p.intl.string(p.t["Z+hCVU"])
+          }), (0, a.jsx)(d.CK, {})]
+        }) : (0, a.jsxs)(a.Fragment, {
+          children: [(0, a.jsx)(d.hE, {
+            className: v.Ns,
+            children: p.intl.string(p.t.csrAMJ)
+          }), (0, a.jsx)(d.tK, {
+            children: p.intl.string(p.t.ghBJz9)
           })]
         })
       })

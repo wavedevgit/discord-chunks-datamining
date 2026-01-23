@@ -2,7 +2,7 @@
 /** chunk id: 924985, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -53,7 +53,7 @@ function E(e) {
       for (let e of t.channel_overrides) e.collapsed ? f[e.channel_id] = true : delete f[e.channel_id]
 }
 
-function b(e) {
+function y(e) {
   let {
     userGuildSettings: t
   } = e, n = new Set(t.map(e => e.guild_id).filter(s.Vq));
@@ -65,7 +65,7 @@ function b(e) {
     for (let t of e.channel_overrides) t.collapsed && (f[t.channel_id] = true)
 }
 
-function y(e) {
+function b(e) {
   let {
     channel: {
       id: t
@@ -86,7 +86,7 @@ function O(e) {
   })
 }
 
-function A(e) {
+function v(e) {
   let {
     guildId: t
   } = e;
@@ -97,7 +97,7 @@ function A(e) {
     delete f[t.id]
   })
 }
-class v extends(r = Chunk311907.Ay.PersistedStore) {
+class A extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     this.waitFor(o.A, l.A, c.Ay), this.removeChangeListener(_), this.addChangeListener(_), f = null != e ? e : {}
   }
@@ -114,13 +114,13 @@ class v extends(r = Chunk311907.Ay.PersistedStore) {
     return p
   }
 }
-d(v, "displayName", "CategoryCollapseStore"), d(v, "persistKey", "collapsedCategories");
-let S = new v(Chunk73153.h, {
+d(A, "displayName", "CategoryCollapseStore"), d(A, "persistKey", "collapsedCategories");
+let I = new A(Chunk73153.h, {
   CONNECTION_OPEN: E,
-  USER_GUILD_SETTINGS_FULL_UPDATE: b,
+  USER_GUILD_SETTINGS_FULL_UPDATE: y,
   CATEGORY_COLLAPSE: m,
   CATEGORY_EXPAND: g,
   CATEGORY_COLLAPSE_ALL: O,
-  CATEGORY_EXPAND_ALL: A,
-  CHANNEL_DELETE: y
+  CATEGORY_EXPAND_ALL: v,
+  CHANNEL_DELETE: b
 })

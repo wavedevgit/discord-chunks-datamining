@@ -2,7 +2,7 @@
 /** chunk id: 123653, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => p
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,18 +19,18 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk553017 = require("./553017.js");
 
-function b() {
+function p() {
   return Promise.resolve()
 }
 
-function p(e) {
+function b(e) {
   let {
     channel: t,
     closePopout: n,
-    setPopoutRef: p
+    setPopoutRef: b
   } = e, j = (0, u.OT)(t), {
     tagFilter: v
-  } = (0, d.R)(t.id), y = (0, d.p)(), A = (0, s.bG)([o.A], () => o.A.keyboardModeEnabled), C = r.useCallback(e => {
+  } = (0, d.R)(t.id), _ = (0, d.p)(), y = (0, s.bG)([c.A], () => c.A.keyboardModeEnabled), A = r.useCallback(e => {
     (0, m.UA)({
       guildId: t.guild_id,
       channelId: t.id,
@@ -38,46 +38,46 @@ function p(e) {
       filterTagIds: Array.from(v),
       added: !v.has(e),
       location: {
-        page: f.liQ.GUILD_CHANNEL,
-        section: f.JJy.FORUM_CHANNEL_HEADER,
-        object: f.ZSU.CHANNEL_TAG
+        page: g.liQ.GUILD_CHANNEL,
+        section: g.JJy.FORUM_CHANNEL_HEADER,
+        object: g.ZSU.CHANNEL_TAG
       }
-    }), y.getState().toggleTagFilter(t.id, e)
-  }, [t, v, y]), O = r.useCallback(() => {
-    y.getState().setTagFilter(t.id, new Set), A || n()
-  }, [y, t.id, A, n]), N = (0, a.Ay)({
+    }), _.getState().toggleTagFilter(t.id, e)
+  }, [t, v, _]), C = r.useCallback(() => {
+    _.getState().setTagFilter(t.id, new Set), y || n()
+  }, [_, t.id, y, n]), T = (0, i.Ay)({
     id: "".concat(t.id, "-all-tags-dropdown-navigator"),
     isEnabled: true,
     wrap: true,
-    scrollToStart: b,
-    scrollToEnd: b
-  }), S = r.useRef(null);
+    scrollToStart: p,
+    scrollToEnd: p
+  }), O = r.useRef(null);
   return r.useEffect(() => {
     requestAnimationFrame(() => {
-      if (null != S.current) {
-        let e = S.current.querySelector(".".concat(x.Tc));
+      if (null != O.current) {
+        let e = O.current.querySelector(".".concat(f.Tc));
         null != e && e.focus()
       }
     })
-  }, []), (0, l.jsxs)(c.lGe, {
+  }, []), (0, l.jsxs)(o.lGe, {
     ref: e => {
-      null == p || p(e)
+      null == b || b(e)
     },
-    "aria-label": g.intl.string(g.t.TdqRTh),
-    className: x.kL,
+    "aria-label": x.intl.string(x.t.TdqRTh),
+    className: f.kL,
     children: [(0, l.jsx)("div", {
-      className: x.wx,
+      className: f.wx,
       children: (0, l.jsxs)("div", {
-        className: x.LD,
-        children: [(0, l.jsx)(c.Heading, {
+        className: f.LD,
+        children: [(0, l.jsx)(o.Heading, {
           color: "interactive-text-default",
           variant: "heading-md/semibold",
-          className: x.TK,
-          children: g.intl.string(g.t.HPu3kq)
+          className: f.TK,
+          children: x.intl.string(x.t.HPu3kq)
         }), (0, l.jsx)("div", {
-          className: x.d1,
-          children: (0, l.jsx)(c.Text, {
-            className: x.lT,
+          className: f.d1,
+          children: (0, l.jsx)(o.Text, {
+            className: f.lT,
             color: "none",
             variant: "text-xs/medium",
             tabularNumbers: true,
@@ -85,29 +85,29 @@ function p(e) {
           })
         })]
       })
-    }), (0, l.jsx)(i.hD, {
-      navigator: N,
-      children: (0, l.jsx)(i.PR, {
+    }), (0, l.jsx)(a.hD, {
+      navigator: T,
+      children: (0, l.jsx)(a.PR, {
         children: e => {
           var t, n;
           let {
             ref: r
-          } = e, a = function(e, t) {
+          } = e, i = function(e, t) {
             if (null == e) return {};
-            var n, l, r, a = {};
+            var n, l, r, i = {};
             if ("u" > typeof Reflect && Reflect.ownKeys) {
-              for (r = 0, n = Reflect.ownKeys(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (a[l] = e[l]);
-              return a
+              for (r = 0, n = Reflect.ownKeys(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
+              return i
             }
-            if (a = function(e, t) {
+            if (i = function(e, t) {
                 if (null == e) return {};
                 var n, l, r = {},
-                  a = Object.getOwnPropertyNames(e);
-                for (l = 0; l < a.length; l++) n = a[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n]);
+                  i = Object.getOwnPropertyNames(e);
+                for (l = 0; l < i.length; l++) n = i[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n]);
                 return r
               }(e, t), Object.getOwnPropertySymbols)
-              for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (a[l] = e[l]);
-            return a
+              for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
+            return i
           }(e, ["ref"]);
           return (0, l.jsx)("div", (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -128,15 +128,15 @@ function p(e) {
             return e
           }({
             ref: e => {
-              r.current = e, S.current = e
+              r.current = e, O.current = e
             }
-          }, a), n = n = {
-            className: x.I8,
+          }, i), n = n = {
+            className: f.I8,
             children: j.map(e => (0, l.jsx)(h.A, {
-              className: x.Tc,
+              className: f.Tc,
               tag: e,
               selected: v.has(e.id),
-              onClick: () => C(e.id)
+              onClick: () => A(e.id)
             }, e.id))
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
@@ -151,11 +151,11 @@ function p(e) {
         }
       })
     }), (0, l.jsx)("div", {
-      className: x.me
-    }), (0, l.jsx)(c.QWc, {
-      "aria-label": g.intl.string(g.t["98EPQP"]),
-      onClick: O,
-      text: g.intl.string(g.t["98EPQP"])
+      className: f.me
+    }), (0, l.jsx)(o.QWc, {
+      "aria-label": x.intl.string(x.t["98EPQP"]),
+      onClick: C,
+      text: x.intl.string(x.t["98EPQP"])
     })]
   })
 }

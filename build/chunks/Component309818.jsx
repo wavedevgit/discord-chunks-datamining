@@ -28,24 +28,24 @@ function O(e) {
       invite: n,
       message: a,
       currentUserId: O,
-      onTransitionToInviteChannel: A,
-      onAcceptInstantInvite: v
+      onTransitionToInviteChannel: v,
+      onAcceptInstantInvite: A
     } = e,
-    S = O === a.author.id,
-    I = n.state === E.elq.ACCEPTING,
+    I = O === a.author.id,
+    S = n.state === E.elq.ACCEPTING,
     T = (0, l.bG)([_.A], () => null != n.channel ? _.A.getChannel(n.channel.id) : null, [n]);
   s()(null == T || T.isPrivate(), "must be a private channel");
   let {
     analyticsLocations: C
   } = (0, d.Ay)(u.A.INVITE_EMBED), N = null != T, R = i.useCallback(() => {
     let e = "noop";
-    N ? (A(), e = "transition") : (v(), e = "accept"), (0, c.he)({
+    N ? (v(), e = "transition") : (A(), e = "accept"), (0, c.he)({
       invite: n,
       action: e,
       inviter_id: a.author.id,
       invite_message_id: a.id
     }, C)
-  }, [n, a, C, N, A, v]);
+  }, [n, a, C, N, v, A]);
   if (null == T) {
     if (null == n.channel) return (0, r.jsx)(g.A, {});
     T = (0, p.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
@@ -58,17 +58,17 @@ function O(e) {
     N && null != e && t.push(e)
   }
   let w = T.name;
-  (null == w || "" === w) && (w = t.length > 0 ? t.filter(m.Vq).map(e => e.username).join(", ") : b.intl.string(b.t.LJpTRF));
-  let P = b.intl.string(b.t.XpeFYr),
+  (null == w || "" === w) && (w = t.length > 0 ? t.filter(m.Vq).map(e => e.username).join(", ") : y.intl.string(y.t.LJpTRF));
+  let P = y.intl.string(y.t.XpeFYr),
     D = "active";
-  N && (P = b.intl.string(b.t.cEnaWx), D = "secondary");
-  let x = b.intl.string(b.t["3p3/BK"]);
-  return S && (x = b.intl.string(b.t.qmtuXE)), (0, r.jsxs)(f.A, {
+  N && (P = y.intl.string(y.t.cEnaWx), D = "secondary");
+  let x = y.intl.string(y.t["3p3/BK"]);
+  return I && (x = y.intl.string(y.t.qmtuXE)), (0, r.jsxs)(f.A, {
     children: [(0, r.jsx)(f.A.Header, {
       text: x
     }), (0, r.jsxs)(f.A.Body, {
       children: [(0, r.jsxs)("div", {
-        className: y.iH,
+        className: b.iH,
         children: [(0, r.jsx)(f.A.Icon, {
           channel: T,
           onClick: N ? R : true
@@ -81,7 +81,7 @@ function O(e) {
         })]
       }), (0, r.jsx)(o.$nd, {
         onClick: R,
-        loading: I,
+        loading: S,
         disabled: N,
         variant: D,
         text: P,

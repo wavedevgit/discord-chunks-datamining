@@ -75,15 +75,15 @@ let _ = Chunk64700.forwardRef(function(e, t) {
     onClick: _,
     onKeyPress: h,
     focusProps: m
-  } = n, g = f(n, ["href", "children", "onClick", "onKeyPress", "focusProps"]), [E] = l, b = i.useCallback(e => {
+  } = n, g = f(n, ["href", "children", "onClick", "onKeyPress", "focusProps"]), [E] = l, y = i.useCallback(e => {
     e.repeat || ((e.charCode === o.Ks6.SPACE || e.charCode === o.Ks6.ENTER) && (e.preventDefault(), null != u && (0, s.pX)(u), null == _ || _()), null == h || h(e))
-  }, [u, h, _]), y = i.useCallback(e => {
+  }, [u, h, _]), b = i.useCallback(e => {
     e.metaKey || e.shiftKey || 0 !== e.button || (e.preventDefault(), e.stopPropagation(), null != u && (0, s.pX)(u), null == _ || _())
   }, [u, _]), O = (0, r.jsx)("a", d(c({
     ref: E,
     href: u,
-    onClick: y,
-    onKeyPress: b
+    onClick: b,
+    onKeyPress: y
   }, g), {
     children: p
   }));

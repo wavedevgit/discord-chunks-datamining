@@ -33,16 +33,16 @@ function p(e) {
   let {
     className: t,
     focusSectionProps: n
-  } = e, [s, o] = i.useState(false), [c, p] = i.useState(0), f = i.useRef(null), h = e => {
+  } = e, [s, o] = i.useState(false), [c, p] = i.useState(0), h = i.useRef(null), g = e => {
     clearTimeout(c), p(setTimeout(() => {
       o(e)
     }, 100))
   };
   return (0, r.jsx)("div", {
-    onMouseEnter: () => h(true),
-    onMouseLeave: () => h(false),
+    onMouseEnter: () => g(true),
+    onMouseLeave: () => g(false),
     children: (0, r.jsx)(l.YNO, {
-      targetElementRef: f,
+      targetElementRef: h,
       shouldShow: s,
       animation: l.YNO.Animation.NONE,
       position: "bottom",
@@ -75,7 +75,7 @@ function p(e) {
           }
           return e
         }({
-          ref: f,
+          ref: h,
           onClick: () => (0, a.Ft)(),
           icon: l.VaJ,
           "aria-label": "DevTools",

@@ -16,7 +16,7 @@ function d() {
   let {
     trackUserProfileAction: e,
     trackUserProfileEditAction: t
-  } = (0, a.NJ)(), n = l.useRef(false), d = (0, s.A)({
+  } = (0, a.NJ)(), n = l.useRef(false), d = (0, o.A)({
     location: "UserProfileModalV2WidgetsEmptyState"
   });
   return l.useEffect(() => {
@@ -40,7 +40,7 @@ function d() {
       className: u.ZW,
       "aria-label": c.intl.string(c.t["+EIBSA"]),
       children: d.map(e => (0, r.jsx)("li", {
-        children: (0, r.jsx)(o.A, {
+        children: (0, r.jsx)(s.A, {
           widget: e,
           size: "small",
           trackUserProfileEditAction: t

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Ay: () => R,
-  ip: () => v,
-  wY: () => S
+  ip: () => A,
+  wY: () => I
 }), require("./321073.js"), require("./896048.js");
 var Chunk713402 = require("./713402.js"),
   Chunk90575 = require("./90575.js"),
@@ -23,7 +23,7 @@ var Chunk713402 = require("./713402.js"),
   Chunk105530 = require("./105530.js"),
   Chunk905278 = require("./905278.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,14 +32,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -56,19 +56,19 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var v = function(e) {
+var A = function(e) {
     return e.SPEAKER = "SPEAKER", e.AUDIENCE = "AUDIENCE", e.NO_ROLE = "NO_ROLE", e.ALL_REQUESTED_TO_SPEAK = "ALL_REQUESTED_TO_SPEAK", e.REQUESTED_TO_SPEAK_ONLY = "REQUESTED_TO_SPEAK_ONLY", e.BLOCKED = "BLOCKED", e.IGNORED = "IGNORED", e.FRIEND = "FRIEND", e.SELECTED = "SELECTED", e.MEDIA = "MEDIA", e
   }({}),
-  S = function(e) {
+  I = function(e) {
     return e.VOICE = "VOICE", e.STREAM = "STREAM", e
   }({});
 
-function I(e) {
+function S(e) {
   var t;
   let {
     speaker: n,
@@ -108,44 +108,44 @@ function N(e) {
 class R {
   _getParticipantsForUser(e, t) {
     var n, r, i;
-    let o, b = [],
+    let o, y = [],
       O = f.A.getVoiceStateForChannel(this.channelId, e);
-    if (null == O) return b;
-    let v = d.default.getUser(e);
-    if (null == v) return null != this.guildId && m.A.isPublic(this.channelId) && l.A.requestMember(this.guildId, e), b;
-    let S = null != t ? t[0] : null,
-      I = null != this.guildId ? c.Ay.getMember(this.guildId, e) : null,
-      T = null != (n = null == I ? true : I.nick) ? n : _.Ay.getName(this.guildId, this.channelId, v),
+    if (null == O) return y;
+    let A = d.default.getUser(e);
+    if (null == A) return null != this.guildId && m.A.isPublic(this.channelId) && l.A.requestMember(this.guildId, e), y;
+    let I = null != t ? t[0] : null,
+      S = null != this.guildId ? c.Ay.getMember(this.guildId, e) : null,
+      T = null != (n = null == S ? true : S.nick) ? n : _.Ay.getName(this.guildId, this.channelId, A),
       C = {
-        user: v,
-        userNick: _.Ay.getName(this.guildId, this.channelId, v),
+        user: A,
+        userNick: _.Ay.getName(this.guildId, this.channelId, A),
         nick: T,
         comparator: (0, p.hz)(O, T),
         voiceState: O,
         role: (0, E.l)(this.guildId, e),
         speaker: h.Ay.isSpeaker(e, this.channelId),
-        member: I,
-        blocked: u.A.isBlocked(v.id),
-        ignored: u.A.isIgnored(v.id),
-        isFriend: u.A.isFriend(v.id),
-        connectedOn: null != (r = null == S ? true : S.connectedOn) ? r : Date.now()
+        member: S,
+        blocked: u.A.isBlocked(A.id),
+        ignored: u.A.isIgnored(A.id),
+        isFriend: u.A.isFriend(A.id),
+        connectedOn: null != (r = null == I ? true : I.connectedOn) ? r : Date.now()
       },
-      N = A(y({}, C), {
+      N = v(b({}, C), {
         type: "VOICE",
-        id: v.id,
+        id: A.id,
         rtsState: (0, g.eY)(O)
       });
-    b.push(N);
+    y.push(N);
     let R = null != (i = s.A.getStreamForUser(e, this.guildId)) ? i : s.A.getActiveStreamForUser(e, this.guildId);
     if (null != R && R.channelId === this.channelId) {
       let e = (0, a._z)(R);
-      o = A(y({}, C), {
+      o = v(b({}, C), {
         id: e,
         type: "STREAM",
         rtsState: g.zF.NONE
-      }), b.push(o)
+      }), y.push(o)
     }
-    return b
+    return y
   }
   updateParticipant(e) {
     let t = this.participants[e],
@@ -183,6 +183,6 @@ class R {
   }
   constructor(e) {
     var t;
-    b(this, "channelId", true), b(this, "guildId", true), b(this, "participants", {}), b(this, "_participantsIndex", new r.J(N, I)), b(this, "_requestToSpeakIndex", new r.J(() => [], T)), this.channelId = e, this.guildId = null == (t = o.A.getChannel(e)) ? true : t.getGuildId()
+    y(this, "channelId", true), y(this, "guildId", true), y(this, "participants", {}), y(this, "_participantsIndex", new r.J(N, S)), y(this, "_requestToSpeakIndex", new r.J(() => [], T)), this.channelId = e, this.guildId = null == (t = o.A.getChannel(e)) ? true : t.getGuildId()
   }
 }

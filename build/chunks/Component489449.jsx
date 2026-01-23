@@ -47,7 +47,7 @@ function v(e) {
   let {
     selectedDuration: t,
     onSelect: n
-  } = e, l = (0, b.A)(), a = l[t];
+  } = e, l = (0, m.A)(), a = l[t];
   return (0, r.jsx)("div", {
     className: y.p0,
     children: (0, r.jsx)(o.l6P, {
@@ -75,7 +75,7 @@ function w(e) {
   let {
     channel: t,
     transitionState: n,
-    onClose: b,
+    onClose: m,
     initialQuestion: P,
     initialAnswers: A,
     initialDuration: C
@@ -84,52 +84,52 @@ function w(e) {
     type: O.z.MODAL,
     name: a.I.POLL_EDITOR_VIEWED
   });
-  let R = l.useRef(null),
-    k = l.useRef([]),
-    E = l.useRef(null),
-    x = l.useCallback(e => {
+  let k = l.useRef(null),
+    R = l.useRef([]),
+    x = l.useRef(null),
+    E = l.useCallback(e => {
       var t, n;
       let {
         indexToRemove: r,
         numberOfAnswers: l
       } = e;
-      l === g.FW + 1 ? null == (t = E.current) || t.focus() : null == (n = k.current[r === l - 1 ? r - 1 : r + 1]) || n.focusDeleteButton()
+      l === g.FW + 1 ? null == (t = x.current) || t.focus() : null == (n = R.current[r === l - 1 ? r - 1 : r + 1]) || n.focusDeleteButton()
     }, []),
     {
-      answers: S,
-      question: D,
-      allowMultiSelect: N,
+      answers: _,
+      question: S,
+      allowMultiSelect: D,
       setAllowMultiSelect: I,
-      duration: _,
+      duration: N,
       setDuration: T,
       handleQuestionChange: U,
       handleAnswerTextChange: L,
       handleEmojiSelect: K,
       canAddMoreAnswers: Y,
-      handleRemoveAnswerImage: q,
-      canRemoveMoreAnswers: z,
-      handleAddAnswer: F,
-      handleRemoveAnswer: B,
-      createPollError: G,
-      handleSubmitPoll: W,
+      handleRemoveAnswerImage: B,
+      canRemoveMoreAnswers: W,
+      handleAddAnswer: q,
+      handleRemoveAnswer: z,
+      createPollError: F,
+      handleSubmitPoll: G,
       fieldErrors: M,
       submitting: V,
       shouldFocusOnInvalidField: H,
       setShouldFocusOnInvalidField: Z
-    } = (0, d.A)(t, b, x, {
+    } = (0, d.A)(t, m, E, {
       initialQuestion: P,
       initialAnswers: A,
       initialDuration: C
     }),
     {
       trackPollCreationCancelled: X
-    } = (0, m.I)(S, N),
-    Q = l.useRef(S.length),
+    } = (0, b.I)(_, D),
+    Q = l.useRef(_.length),
     $ = l.useCallback(() => {
-      X(), b()
-    }, [b, X]),
+      X(), m()
+    }, [m, X]),
     J = l.useCallback(() => {
-      (0, f.Wn)(D, S) ? $(): c.A.show({
+      (0, f.Wn)(S, _) ? $(): c.A.show({
         title: j.intl.string(j.t.HMrgcp),
         body: j.intl.string(j.t["Wxa/j8"]),
         confirmText: j.intl.string(j.t.TzJA4g),
@@ -139,7 +139,7 @@ function w(e) {
           $()
         }
       })
-    }, [$, S, D]);
+    }, [$, _, S]);
   l.useEffect(() => {
     (0, o.zbz)(g.sm, e => {
       var n, l;
@@ -174,25 +174,25 @@ function w(e) {
       }), n))
     }, J)
   }, [J, t]), l.useEffect(() => {
-    if (S.length > Q.current) {
+    if (_.length > Q.current) {
       var e;
-      null == (e = k.current[S.length - 1]) || e.focusInput()
+      null == (e = R.current[_.length - 1]) || e.focusInput()
     }
-    Q.current = S.length
-  }, [S.length]), l.useEffect(() => {
+    Q.current = _.length
+  }, [_.length]), l.useEffect(() => {
     if (H) {
       var e, t;
-      if ((null == M ? true : M.question) != null) null == (e = R.current) || e.focus();
+      if ((null == M ? true : M.question) != null) null == (e = k.current) || e.focus();
       else {
-        let e = S.findIndex(e => M["answer-".concat(e.localCreationAnswerId)]);
-        false !== e && (null == (t = k.current[e]) || t.focusInput())
+        let e = _.findIndex(e => M["answer-".concat(e.localCreationAnswerId)]);
+        false !== e && (null == (t = R.current[e]) || t.focusInput())
       }
       Z(false)
     }
-  }, [M, S, H, Z, k]);
+  }, [M, _, H, Z, R]);
   let ee = l.useCallback(() => {
-      n === o.ip4.ENTERED && W()
-    }, [W, n]),
+      n === o.ip4.ENTERED && G()
+    }, [G, n]),
     et = (0, u.A)({
       disabled: V,
       onSubmit: ee
@@ -205,62 +205,62 @@ function w(e) {
     }], [ee, V]);
   return (0, r.jsx)(i.Modal, {
     transitionState: n,
-    onClose: b,
+    onClose: m,
     title: j.intl.string(j.t["GD/8X8"]),
     actions: en,
     actionBarInput: (0, r.jsx)(o.Checkbox, {
-      checked: N,
+      checked: D,
       onChange: e => I(e),
       label: j.intl.string(j.t["Ux+iQU"])
     }),
     children: (0, r.jsxs)("div", {
       className: y.Qs,
       onKeyDown: et,
-      children: [null != G && (0, r.jsx)(o.wx6, {
+      children: [null != F && (0, r.jsx)(o.wx6, {
         type: "critical",
-        children: G.getAnyErrorMessage()
+        children: F.getAnyErrorMessage()
       }), (0, r.jsx)(h, {
-        question: D,
+        question: S,
         onChange: U,
         error: null == M ? true : M.question,
-        inputRef: R
+        inputRef: k
       }), (0, r.jsx)(o.hKd, {
         size: 26
       }), (0, r.jsxs)(o.D0$, {
         role: "group",
         label: j.intl.string(j.t.oMBfeS),
-        children: [S.map((e, n) => (0, r.jsx)(p.A, {
+        children: [_.map((e, n) => (0, r.jsx)(p.A, {
           answer: e,
           channelId: t.id,
           index: n,
-          isLastAnswer: n === S.length - 1,
+          isLastAnswer: n === _.length - 1,
           onEmojiSelect: K,
-          onEmojiRemove: q,
+          onEmojiRemove: B,
           onAnswerTextChange: L,
-          onRemoveAnswer: B,
-          addAnswer: F,
+          onRemoveAnswer: z,
+          addAnswer: q,
           submitPoll: ee,
-          answerRowRefs: k,
+          answerRowRefs: R,
           error: null == M ? true : M["answer-".concat(e.localCreationAnswerId)],
-          canRemoveAnswer: z,
+          canRemoveAnswer: W,
           ref: e => {
-            k.current[n] = e
+            R.current[n] = e
           }
         }, e.localCreationAnswerId)), Y && (0, r.jsx)("div", {
           className: y.Ox,
           children: (0, r.jsx)(o.Button, {
             icon: o.j96,
             variant: "secondary",
-            onClick: F,
+            onClick: q,
             "aria-label": j.intl.string(j.t.B2Uvme),
-            buttonRef: E,
+            buttonRef: x,
             text: j.intl.string(j.t.B2Uvme)
           })
         })]
       }), (0, r.jsx)(o.hKd, {
         size: 18
       }), (0, r.jsx)(v, {
-        selectedDuration: _,
+        selectedDuration: N,
         onSelect: T
       })]
     })

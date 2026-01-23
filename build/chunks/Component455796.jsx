@@ -16,14 +16,14 @@ function c(e) {
     onClose: t,
     initialPercent: s,
     numActions: c
-  } = e, [l, p] = i.useState(s), {
-    createMultipleConfetti: x
-  } = i.useContext(r.x);
-  return i.useEffect(() => {
+  } = e, [l, p] = n.useState(s), {
+    createMultipleConfetti: h
+  } = n.useContext(r.x);
+  return n.useEffect(() => {
     setTimeout(() => p(1), 200), setTimeout(() => {
       let e = window.innerWidth / 2,
         t = window.innerHeight / 2;
-      x({
+      h({
         position: {
           type: "static-random",
           minValue: {
@@ -37,16 +37,16 @@ function c(e) {
         }
       }, 25)
     }, 700), setTimeout(t, 2e3)
-  }, [x, t]), (0, a.jsxs)("div", {
-    children: [(0, a.jsx)(o.Heading, {
+  }, [h, t]), (0, i.jsxs)("div", {
+    children: [(0, i.jsx)(o.Heading, {
       className: d.R,
       variant: "heading-xl/semibold",
       color: "text-strong",
       children: u.intl.format(u.t.pGj5u2, {
         count: c
       })
-    }), (0, a.jsx)(o.kej, {
-      foregroundGradientColor: [n.A.unsafe_rawColors.GREEN_300.css, n.A.unsafe_rawColors.GREEN_230.css],
+    }), (0, i.jsx)(o.kej, {
+      foregroundGradientColor: [a.A.unsafe_rawColors.GREEN_300.css, a.A.unsafe_rawColors.GREEN_230.css],
       percent: 100 * l,
       animate: true
     })]

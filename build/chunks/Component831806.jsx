@@ -39,87 +39,87 @@ function P(e) {
     hasValidApplication: n
   } = e, {
     listingsLoaded: P
-  } = (0, A.bb)(t), w = (0, s.bG)([O.A], () => O.A.getGuild(t)), R = (0, s.bG)([y.default], () => y.default.getCurrentUser()), D = null != w && (0, h.bM)(w, R), {
+  } = (0, y.bb)(t), w = (0, s.bG)([_.A], () => _.A.getGuild(t)), R = (0, s.bG)([O.default], () => O.default.getCurrentUser()), D = null != w && (0, x.bM)(w, R), {
     loading: G
-  } = (0, o.G)(t), [L, k] = i.useState(n ? "manage_listings" : "payment");
-  (0, f.T)(w);
+  } = (0, c.G)(t), [L, k] = i.useState(n ? "manage_listings" : "payment");
+  (0, g.T)(w);
   let M = i.useCallback(() => {
     if (null == w) return;
     let e = j.A.getEveryoneRole(w);
-    b.A.close();
+    p.A.close();
     let t = {
       [e.id]: e
     };
-    (0, m.Tk)(w.id, {
-      type: p._.SERVER_SHOP,
+    (0, f.Tk)(w.id, {
+      type: b._.SERVER_SHOP,
       roles: t,
       initialTab: "guild_products",
       returnToSection: S.BEX.GUILD_PRODUCTS
-    }), (0, x.pX)(S.BVt.CHANNEL(w.id, T.VV.GUILD_SHOP))
+    }), (0, h.pX)(S.BVt.CHANNEL(w.id, I.VV.GUILD_SHOP))
   }, [w]);
-  if (!P || G) return (0, r.jsx)(c.y$y, {});
+  if (!P || G) return (0, r.jsx)(o.y$y, {});
   if (null == w) return null;
   let U = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(c.Heading, {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
-        children: I.intl.string(I.t.X6h2gz)
-      }), (0, r.jsx)(c.Text, {
+        children: T.intl.string(T.t.X6h2gz)
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
-        children: I.intl.format(I.t.xiYuDt, {
+        children: T.intl.format(T.t.xiYuDt, {
           monetizationPolicyLink: v.A.getArticleURL(S.MVz.CREATOR_POLICY),
           serverProductsSupportLink: v.A.getCreatorSupportArticleURL(S.MVz.SERVER_PRODUCTS)
         })
       })]
     }),
-    F = (0, r.jsxs)(c.VQ0, {
+    B = (0, r.jsxs)(o.VQ0, {
       type: "top",
       look: "brand",
       className: C.$H,
-      "aria-label": I.intl.string(I.t.X6h2gz),
+      "aria-label": T.intl.string(T.t.X6h2gz),
       selectedItem: L,
       onItemSelect: k,
       children: [(0, r.jsx)(u.A, {
         id: "basic_info",
-        disabledTooltip: I.intl.string(I.t.NVDuUX),
+        disabledTooltip: T.intl.string(T.t.NVDuUX),
         disabled: !n,
-        children: I.intl.string(I.t.w27QAR)
+        children: T.intl.string(T.t.w27QAR)
       }), (0, r.jsx)(u.A, {
         id: "manage_listings",
-        disabledTooltip: I.intl.string(I.t.NVDuUX),
+        disabledTooltip: T.intl.string(T.t.NVDuUX),
         disabled: !n,
-        children: I.intl.string(I.t.wlZ1mh)
-      }), D ? (0, r.jsx)(c.VQ0.Item, {
+        children: T.intl.string(T.t.wlZ1mh)
+      }), D ? (0, r.jsx)(o.VQ0.Item, {
         id: "payment",
         className: C.YU,
-        children: I.intl.string(I.t.YBrFe6)
+        children: T.intl.string(T.t.YBrFe6)
       }) : null, n ? (0, r.jsx)("div", {
         className: C.jc,
         children: (0, r.jsx)(a.$nd, {
-          text: I.intl.string(I.t.vM81yY),
+          text: T.intl.string(T.t.vM81yY),
           variant: "secondary",
           onClick: M,
           size: "sm"
         })
       }) : null]
     }),
-    B = (0, l.YW)(L).with("basic_info", () => (0, r.jsx)(E.A, {
+    F = (0, l.YW)(L).with("basic_info", () => (0, r.jsx)(A.A, {
       guildId: t
-    })).with("manage_listings", () => (0, r.jsx)(N.A, {
+    })).with("manage_listings", () => (0, r.jsx)(E.A, {
       guildId: t
-    })).with("payment", () => (0, r.jsx)(_.A, {
+    })).with("payment", () => (0, r.jsx)(N.A, {
       guildId: t
     })).exhaustive(),
-    H = P ? (0, r.jsx)(c.VQ0.Panel, {
+    H = P ? (0, r.jsx)(o.VQ0.Panel, {
       id: L,
-      children: B
-    }) : (0, r.jsx)(c.y$y, {});
+      children: F
+    }) : (0, r.jsx)(o.y$y, {});
   return (0, r.jsxs)(d.ZV, {
     guildId: t,
-    children: [U, (0, r.jsx)(g.A, {
+    children: [U, (0, r.jsx)(m.A, {
       guild: w
     }), (0, r.jsx)("div", {
       className: C.Mv,
-      children: F
+      children: B
     }), H]
   })
 }

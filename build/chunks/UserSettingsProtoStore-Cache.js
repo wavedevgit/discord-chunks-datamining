@@ -44,19 +44,19 @@ let E = {
     lazyLoaded: false,
     editInfo: (0, Chunk355097.O9)()
   },
-  b = {
+  y = {
     ProtoClass: Chunk803805.aw,
     proto: Chunk803805.aw.create(),
     lazyLoaded: true,
     editInfo: (0, Chunk355097.O9)()
   },
-  y = {
+  b = {
     [Chunk355097.oD.PRELOADED_USER_SETTINGS]: E,
-    [Chunk355097.oD.FRECENCY_AND_FAVORITES_SETTINGS]: b
+    [Chunk355097.oD.FRECENCY_AND_FAVORITES_SETTINGS]: y
   },
   O = false;
 
-function A(e) {
+function v(e) {
   let {
     userSettingsProto: t
   } = e;
@@ -66,23 +66,23 @@ function A(e) {
     isDirty: r,
     cleanupFuncs: i
   } = (0, _.vI)(E.proto, p.A[h.oD.PRELOADED_USER_SETTINGS]);
-  r && T(E), E.proto = n, a()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = true, Object.values(y).forEach(e => {
+  r && T(E), E.proto = n, a()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = true, Object.values(b).forEach(e => {
     e.lazyLoaded && (e.editInfo.loaded = false, e.editInfo.loading = false)
-  }), I()
+  }), S()
 }
 
-function v() {
-  I()
+function A() {
+  S()
 }
 
-function S() {
-  I(), Object.values(y).forEach(e => {
+function I() {
+  S(), Object.values(b).forEach(e => {
     e.proto = e.ProtoClass.create(), e.editInfo = (0, h.O9)()
   })
 }
 
-function I() {
-  Object.values(y).forEach(e => {
+function S() {
+  Object.values(b).forEach(e => {
     if (null != e.editInfo.timeout) {
       var t, n;
       clearTimeout(e.editInfo.timeout), e.editInfo.timeout = true, e.editInfo.timeoutDelay = Number.MAX_SAFE_INTEGER, e.editInfo.rateLimited = false, e.editInfo.offlineEditDataVersion = null != (t = null == (n = e.proto.versions) ? true : n.dataVersion) ? t : 0
@@ -112,7 +112,7 @@ function N(e) {
     local: s
   } = e;
   O = !s;
-  let o = y[n];
+  let o = b[n];
   i && T(o), r ? (o.proto = (0, _.RK)(o.ProtoClass, o.proto, t), a()("string" != typeof o.proto, "UserSettingsProto cannot be a string")) : (o.proto = t, a()("string" != typeof o.proto, "UserSettingsProto cannot be a string"), o.editInfo.loaded = true, o.editInfo.loading = false)
 }
 
@@ -124,7 +124,7 @@ function R(e) {
     }
   } = e;
   a()(!__OVERLAY__, "this cannot run in the overlay");
-  let r = y[t];
+  let r = b[t];
   return r.editInfo = g({}, r.editInfo, n), false
 }
 
@@ -136,7 +136,7 @@ function w(e) {
 }
 
 function P(e) {
-  null != e && o().forEach(y, (t, n) => {
+  null != e && o().forEach(b, (t, n) => {
     var r, i;
     let s = e[Number(n)];
     if (null == s) return;
@@ -158,7 +158,7 @@ class D extends(r = Chunk311907.Ay.PersistedStore) {
     return this.computeState()
   }
   computeState() {
-    return o().mapValues(y, e => {
+    return o().mapValues(b, e => {
       let t = {
         proto: (0, _.ob)(e.ProtoClass, e.proto)
       };
@@ -166,19 +166,19 @@ class D extends(r = Chunk311907.Ay.PersistedStore) {
     })
   }
   hasLoaded(e) {
-    return y[e].editInfo.loaded
+    return b[e].editInfo.loaded
   }
   get settings() {
     return E.proto
   }
   get frecencyWithoutFetchingLatest() {
-    return b.proto
+    return y.proto
   }
   get wasMostRecentUpdateFromServer() {
     return O
   }
   getFullState() {
-    return y
+    return b
   }
   getGuildFolders() {
     var e;
@@ -220,9 +220,9 @@ let x = new D(Chunk73153.h, {
   USER_SETTINGS_PROTO_UPDATE: N,
   USER_SETTINGS_PROTO_ENQUEUE_UPDATE: N,
   USER_SETTINGS_PROTO_UPDATE_EDIT_INFO: R,
-  CONNECTION_OPEN: A,
-  CONNECTION_CLOSED: v,
-  CONNECTION_RESUMED: v,
+  CONNECTION_OPEN: v,
+  CONNECTION_CLOSED: A,
+  CONNECTION_RESUMED: A,
   OVERLAY_INITIALIZE: C,
-  LOGOUT: S
+  LOGOUT: I
 })

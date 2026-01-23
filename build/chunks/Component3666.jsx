@@ -119,18 +119,18 @@ function m(e) {
     ref: g,
     width: E = 0
   } = (0, l.Ay)(), {
-    lastVisibleIndex: b,
-    onItemLayout: y,
+    lastVisibleIndex: y,
+    onItemLayout: b,
     overflowItemsRef: O
   } = f({
     items: n,
     itemGapPx: o,
     maxLines: d,
     containerWidth: E
-  }), A = i.useCallback(e => (0, r.jsx)(p, {
+  }), v = i.useCallback(e => (0, r.jsx)(p, {
     items: e,
     renderItem: a
-  }), [a]), v = null != m ? m : A, S = i.useMemo(() => n.slice(0, b + 1), [n, b]), I = i.useMemo(() => n.slice(b + 1), [n, b]);
+  }), [a]), A = null != m ? m : v, I = i.useMemo(() => n.slice(0, y + 1), [n, y]), S = i.useMemo(() => n.slice(y + 1), [n, y]);
   return (0, r.jsxs)("div", {
     className: s()(t, u.ld),
     ref: g,
@@ -141,7 +141,7 @@ function m(e) {
         className: u.R5,
         children: n.map((e, t) => (0, r.jsx)(_, {
           index: t,
-          onItemLayout: y,
+          onItemLayout: b,
           children: a(e)
         }, h(e)))
       }), (0, r.jsx)("div", {
@@ -151,6 +151,6 @@ function m(e) {
           count: Number("1".concat(n.length))
         }))
       })]
-    }), S.map(a), I.length > 0 && v(I)]
+    }), I.map(a), S.length > 0 && A(S)]
   })
 }

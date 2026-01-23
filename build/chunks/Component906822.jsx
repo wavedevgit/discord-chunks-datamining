@@ -88,8 +88,8 @@ class M {
   }
   getBrandSafetyContext() {
     var e;
-    let t = (0, S.xn)(this.questContent),
-      n = (0, S.vZ)(this.questContent),
+    let t = (0, I.xn)(this.questContent),
+      n = (0, I.vZ)(this.questContent),
       r = (0, p.pc)(),
       i = (0, p.Ld)();
     if (!(null == n ? true : n.is_campaign_ias_enabled) || !t || true === r || true === i) return null;
@@ -141,15 +141,15 @@ class M {
   constructor(e) {
     var t = this;
     T(this, "id", true), T(this, "entity", true), T(this, "questContent", true), T(this, "triggeredByStatusChange", true), T(this, "trackGuildAndChannelMetadata", true), T(this, "questContentPosition", true), T(this, "questContentRowIndex", true), T(this, "sourceQuestContent", true), T(this, "heartbeatTimeoutId", true), T(this, "lastBeatTime", true), T(this, "minViewTimeReachedTimeoutId", true), T(this, "minViewTimeSeconds", true), T(this, "minViewportPercentage", true), T(this, "isQuestEnrollmentBlocked", true), T(this, "isRunning", false), T(this, "trackViewedPlacement", e => {
-      let t = (0, S.HN)(this.questContent);
-      null != t && (0, S.xn)(this.questContent) && L.add(j(e, t))
+      let t = (0, I.HN)(this.questContent);
+      null != t && (0, I.xn)(this.questContent) && L.add(j(e, t))
     }), T(this, "shouldExtendSession", e => {
-      let t = (0, S.HN)(this.questContent);
-      return null != t && !L.has(j(e, t)) && (0, S.xn)(this.questContent)
+      let t = (0, I.HN)(this.questContent);
+      return null != t && !L.has(j(e, t)) && (0, I.xn)(this.questContent)
     }), T(this, "onMinViewTimeReached", async () => {
-      let e = (0, S.Li)(this.questContent),
-        t = (0, S.L4)(this.questContent),
-        n = await (0, d.N)((0, y.jO)(this.questContent)),
+      let e = (0, I.Li)(this.questContent),
+        t = (0, I.L4)(this.questContent),
+        n = await (0, d.N)((0, b.jO)(this.questContent)),
         r = {
           trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata,
           sourceQuestContent: this.sourceQuestContent
@@ -158,8 +158,8 @@ class M {
           min_view_time_seconds: this.minViewTimeSeconds,
           min_viewport_percentage: this.minViewportPercentage,
           triggered_by_status_change: this.triggeredByStatusChange,
-          apple_advertising_id: null != n && (0, b.isIOS)() ? n.advertisingId : null,
-          android_advertising_id: null != n && (0, b.isAndroid)() ? n.advertisingId : null,
+          apple_advertising_id: null != n && (0, y.isIOS)() ? n.advertisingId : null,
+          android_advertising_id: null != n && (0, y.isAndroid)() ? n.advertisingId : null,
           metadata_raw: null != e ? e : null,
           metadata_sealed: null != t ? t : null
         }, (0, f.A)(), this.getBrandSafetyContext());
@@ -169,26 +169,26 @@ class M {
           var a, o, l;
           let e = this.entity.adContentIds[t],
             s = O.A.getQuest(e);
-          (0, v.L)().info("".concat(null != (a = null == s ? true : s.config.messages.questName) ? a : e, " Quest viewed for at least ").concat(this.minViewTimeSeconds, "s at ").concat((0, y.jO)(this.questContent)), {
+          (0, A.L)().info("".concat(null != (a = null == s ? true : s.config.messages.questName) ? a : e, " Quest viewed for at least ").concat(this.minViewTimeSeconds, "s at ").concat((0, b.jO)(this.questContent)), {
             impressionId: this.id
-          }), (0, y.av)(R(C({}, r), {
+          }), (0, b.av)(R(C({}, r), {
             shouldExtendSession: n,
             questId: e,
-            event: I.HAw.QUEST_CONTENT_VIEWED,
+            event: S.HAw.QUEST_CONTENT_VIEWED,
             properties: R(C({}, i, this.commonProperties(s)), {
-              traffic_metadata_raw: null != (o = (0, S.yI)(this.questContent, null == s ? true : s.id)) ? o : null,
-              traffic_metadata_sealed: null != (l = (0, S.Gp)(this.questContent, null == s ? true : s.id)) ? l : null
+              traffic_metadata_raw: null != (o = (0, I.yI)(this.questContent, null == s ? true : s.id)) ? o : null,
+              traffic_metadata_sealed: null != (l = (0, I.Gp)(this.questContent, null == s ? true : s.id)) ? l : null
             })
           }))
         } else {
           let e = this.entity.adContentIds[t];
-          (0, v.L)().info("".concat(e, " ad content viewed for at least ").concat(this.minViewTimeSeconds, "s at ").concat((0, y.jO)(this.questContent)), {
+          (0, A.L)().info("".concat(e, " ad content viewed for at least ").concat(this.minViewTimeSeconds, "s at ").concat((0, b.jO)(this.questContent)), {
             impressionId: this.id
-          }), (0, y.Qg)(R(C({}, r), {
+          }), (0, b.Qg)(R(C({}, r), {
             shouldExtendSession: n,
             adContentId: e,
             adCreativeType: this.entity.adCreativeType,
-            event: I.HAw.QUEST_CONTENT_VIEWED,
+            event: S.HAw.QUEST_CONTENT_VIEWED,
             properties: C({}, i, this.commonProperties())
           }))
         }
@@ -211,21 +211,21 @@ class M {
             var l;
             let a = t.entity.adContentIds[o],
               s = O.A.getQuest(a);
-            (0, v.L)().info("".concat(null != (l = null == s ? true : s.config.messages.questName) ? l : a, " Quest impression ").concat(e ? "terminal " : "", "heartbeat: ").concat(n, "ms since last heartbeat"), {
+            (0, A.L)().info("".concat(null != (l = null == s ? true : s.config.messages.questName) ? l : a, " Quest impression ").concat(e ? "terminal " : "", "heartbeat: ").concat(n, "ms since last heartbeat"), {
               impressionId: t.id
-            }), (0, y.av)(R(C({}, r), {
+            }), (0, b.av)(R(C({}, r), {
               questId: a,
-              event: I.HAw.QUEST_CONTENT_VIEW_TIME,
+              event: S.HAw.QUEST_CONTENT_VIEW_TIME,
               properties: C({}, i, t.commonProperties(s))
             }))
           } else {
             let a = t.entity.adContentIds[o];
-            (0, v.L)().info("".concat(a, " ad content impression ").concat(e ? "terminal " : "", "heartbeat: ").concat(n, "ms since last heartbeat"), {
+            (0, A.L)().info("".concat(a, " ad content impression ").concat(e ? "terminal " : "", "heartbeat: ").concat(n, "ms since last heartbeat"), {
               impressionId: t.id
-            }), (0, y.Qg)(R(C({}, r), {
+            }), (0, b.Qg)(R(C({}, r), {
               adContentId: a,
               adCreativeType: t.entity.adCreativeType,
-              event: I.HAw.QUEST_CONTENT_VIEW_TIME,
+              event: S.HAw.QUEST_CONTENT_VIEW_TIME,
               properties: C({}, i, t.commonProperties())
             }))
           }
@@ -235,8 +235,8 @@ class M {
     }), T(this, "commonProperties", e => C({
       impression_id: this.id,
       is_quest_enrollment_blocked: this.isQuestEnrollmentBlocked,
-      quest_status: null == e ? true : (0, y.NI)(e)
-    }, (0, y.fF)(this.questContent, this.questContentPosition, this.questContentRowIndex))), T(this, "clone", e => {
+      quest_status: null == e ? true : (0, b.NI)(e)
+    }, (0, b.fF)(this.questContent, this.questContentPosition, this.questContentRowIndex))), T(this, "clone", e => {
       let {
         triggeredByStatusChange: t
       } = e;
@@ -251,8 +251,8 @@ class M {
       }, this.entity))
     }), T(this, "start", () => {
       this.stop(false), this.lastBeatTime = Date.now(), this.heartbeatTimeoutId = window.setInterval(() => this.beat(), 1e3 * P), this.minViewTimeReachedTimeoutId = window.setTimeout(this.onMinViewTimeReached, 1e3 * this.minViewTimeSeconds);
-      let e = (0, S.Li)(this.questContent),
-        t = (0, S.L4)(this.questContent),
+      let e = (0, I.Li)(this.questContent),
+        t = (0, I.L4)(this.questContent),
         n = {
           trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata,
           sourceQuestContent: this.sourceQuestContent
@@ -267,30 +267,30 @@ class M {
           var i, a, o;
           let e = this.entity.adContentIds[t],
             s = O.A.getQuest(e);
-          (0, v.L)().info("".concat(null != (i = null == s ? true : s.config.messages.questName) ? i : e, " Quest became visible at ").concat((0, y.jO)(this.questContent)), {
+          (0, A.L)().info("".concat(null != (i = null == s ? true : s.config.messages.questName) ? i : e, " Quest became visible at ").concat((0, b.jO)(this.questContent)), {
             impressionId: this.id
-          }), (0, y.av)(R(C({}, n), {
+          }), (0, b.av)(R(C({}, n), {
             questId: e,
-            event: I.HAw.QUEST_CONTENT_LOADED,
+            event: S.HAw.QUEST_CONTENT_LOADED,
             properties: R(C({}, r, this.commonProperties(s)), {
-              traffic_metadata_raw: null != (a = (0, S.yI)(this.questContent, null == s ? true : s.id)) ? a : null,
-              traffic_metadata_sealed: null != (o = (0, S.Gp)(this.questContent, null == s ? true : s.id)) ? o : null
+              traffic_metadata_raw: null != (a = (0, I.yI)(this.questContent, null == s ? true : s.id)) ? a : null,
+              traffic_metadata_sealed: null != (o = (0, I.Gp)(this.questContent, null == s ? true : s.id)) ? o : null
             })
           }))
         } else {
           let e = this.entity.adContentIds[t];
-          (0, v.L)().info("".concat(e, " ad content became visible at ").concat((0, y.jO)(this.questContent)), {
+          (0, A.L)().info("".concat(e, " ad content became visible at ").concat((0, b.jO)(this.questContent)), {
             impressionId: this.id
-          }), (0, y.Qg)(R(C({}, n), {
+          }), (0, b.Qg)(R(C({}, n), {
             adContentId: e,
             adCreativeType: this.entity.adCreativeType,
-            event: I.HAw.QUEST_CONTENT_LOADED,
+            event: S.HAw.QUEST_CONTENT_LOADED,
             properties: C({}, r, this.commonProperties())
           }))
         }
-      }), (0, A.x)("QuestImpressionTracker") && _.A.increment({
+      }), (0, v.x)("QuestImpressionTracker") && _.A.increment({
         name: o.K.QUEST_CONTENT_IMPRESSION,
-        tags: ["quest_content:".concat((0, y.jO)(this.questContent))]
+        tags: ["quest_content:".concat((0, b.jO)(this.questContent))]
       }), this.isRunning = true
     }), T(this, "stop", function() {
       let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
@@ -347,7 +347,7 @@ function V(e) {
   let {
     adContentIds: t,
     adCreativeType: n
-  } = e, r = (0, l.bG)([O.A], () => n !== s.p.QUEST || 1 !== t.length ? null : O.A.getQuest(t[0]), [t, n]), a = i.useMemo(() => null == r ? null : (0, y.NI)(r), [r]), o = (0, u.A)(a);
+  } = e, r = (0, l.bG)([O.A], () => n !== s.p.QUEST || 1 !== t.length ? null : O.A.getQuest(t[0]), [t, n]), a = i.useMemo(() => null == r ? null : (0, b.NI)(r), [r]), o = (0, u.A)(a);
   return a !== o
 }
 let F = Chunk64700.createContext(true);

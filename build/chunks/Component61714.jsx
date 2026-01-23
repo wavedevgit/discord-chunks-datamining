@@ -104,54 +104,54 @@ function es(e) {
     onClick: h,
     onContextMenu: p,
     context: f,
-    guildId: b,
-    voiceState: g
-  } = e, A = (0, Q.A)({
+    guildId: g,
+    voiceState: y
+  } = e, m = (0, Q.A)({
     location: "overlay_voice_widget"
-  }), m = (0, a.bG)([H.default], () => H.default.showKeybindIndicators), O = (0, a.bG)([k.default], () => k.default.getId()), v = (0, a.bG)([G.A], () => G.A.isLocalMute(i.id)), E = (0, a.bG)([R.A], () => R.A.getCurrentUserActiveStream()), x = (0, a.yK)([R.A], () => null != E ? R.A.getViewerIds(E) : []), S = (0, y.A)({
+  }), b = (0, a.bG)([H.default], () => H.default.showKeybindIndicators), O = (0, a.bG)([k.default], () => k.default.getId()), _ = (0, a.bG)([G.A], () => G.A.isLocalMute(i.id)), v = (0, a.bG)([R.A], () => R.A.getCurrentUserActiveStream()), E = (0, a.yK)([R.A], () => null != v ? R.A.getViewerIds(v) : []), x = (0, A.A)({
     userId: i.id,
     context: f
-  }), j = (0, a.bG)([U.A], () => U.A.isPrioritySpeaker(i.id, f)), _ = (0, a.bG)([R.A], () => null != R.A.getStreamForUser(i.id, b)), I = s.useMemo(() => null != E && E.ownerId !== i.id && x.includes(i.id), [E, i.id, x]);
-  if (d === q.f5z.ONLY_WHILE_SPEAKING && n && !S) return null;
+  }), S = (0, a.bG)([U.A], () => U.A.isPrioritySpeaker(i.id, f)), j = (0, a.bG)([R.A], () => null != R.A.getStreamForUser(i.id, g)), I = s.useMemo(() => null != v && v.ownerId !== i.id && E.includes(i.id), [v, i.id, E]);
+  if (d === q.f5z.ONLY_WHILE_SPEAKING && n && !x) return null;
   let C = i.id === O,
     {
       mute: w,
       selfMute: N,
       suppress: P,
-      deaf: D,
+      deaf: T,
       selfDeaf: L
-    } = g,
-    M = A && m,
+    } = y,
+    M = m && b,
     V = N && (!C || !M);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(T.Ay, {
-      guildId: b,
+    children: [(0, r.jsx)(D.Ay, {
+      guildId: g,
       onClick: n ? true : e => null == h ? true : h(e, i),
       onContextMenu: n ? true : e => null == p ? true : p(e, i),
       className: o()(et.TX, {
-        [et.zj]: !S,
+        [et.zj]: !x,
         [et.bG]: !n
       }),
       user: i,
       nick: l,
       speaking: false,
       flipped: t,
-      isStreaming: _,
+      isStreaming: j,
       iconClassName: o()(et.Ow, {
         [et.xt]: n
       }),
       isWatching: I,
       isOverlay: true,
       size: u,
-      priority: j,
-      mute: w || V || v,
-      localMute: v,
+      priority: S,
+      mute: w || V || _,
+      localMute: _,
       serverMute: w || P,
-      deaf: D || L,
-      serverDeaf: D,
+      deaf: T || L,
+      serverDeaf: T,
       userNameClassName: o()(et.Xh, {
         [et.xt]: n,
-        [et.R]: n && (c === q.pwA.NEVER || !S && c === q.pwA.ONLY_WHILE_SPEAKING)
+        [et.R]: n && (c === q.pwA.NEVER || !x && c === q.pwA.ONLY_WHILE_SPEAKING)
       })
     }), C && M && (0, r.jsx)(Z.A, {
       value: N,
@@ -201,7 +201,7 @@ class el extends(i = Chunk64700.PureComponent) {
         [u.A.VOICE_WIDGET_TOP_MARGIN]: s,
         [et.mn]: s
       }),
-      children: (0, r.jsx)(T.Wr, {
+      children: (0, r.jsx)(D.Wr, {
         className: et.tA,
         children: p
       })
@@ -274,7 +274,7 @@ class el extends(i = Chunk64700.PureComponent) {
     let {
       sanitizedTitle: p,
       title: f
-    } = (0, S.A)(a);
+    } = (0, x.A)(a);
     return (0, r.jsx)(X.Ay.Bar, {
       className: o()(et.Wm, {
         [et.R]: i,
@@ -285,10 +285,10 @@ class el extends(i = Chunk64700.PureComponent) {
         dynamicSize: true,
         children: [(0, r.jsxs)("div", {
           className: et.gk,
-          children: [(null == c ? true : c.id) != null && c.id === (null == l ? true : l.id) ? (0, r.jsx)(E.A, {
+          children: [(null == c ? true : c.id) != null && c.id === (null == l ? true : l.id) ? (0, r.jsx)(v.A, {
             className: et.Gt,
             game: l
-          }) : (0, r.jsx)(j.A, {
+          }) : (0, r.jsx)(S.A, {
             title: p
           }), (0, r.jsxs)(O.A, {
             direction: O.A.Direction.VERTICAL,
@@ -313,7 +313,7 @@ class el extends(i = Chunk64700.PureComponent) {
             })
           }), (0, r.jsx)("div", {
             className: et.yf,
-            children: (0, r.jsx)(D.A, {
+            children: (0, r.jsx)(T.A, {
               stream: u,
               appContext: q.BRT.OVERLAY
             })
@@ -415,7 +415,7 @@ class el extends(i = Chunk64700.PureComponent) {
     }), en(this, "handlePin", () => {
       var e, t, n;
       let i = !this.props.pinned;
-      b.A.track(q.HAw.OVERLAY_PIN_TOGGLED, {
+      g.A.track(q.HAw.OVERLAY_PIN_TOGGLED, {
         pinned: i,
         guild_id: null == (e = this.props.channel) ? true : e.guild_id,
         channel_id: null == (t = this.props.channel) ? true : t.id,
@@ -430,7 +430,7 @@ class el extends(i = Chunk64700.PureComponent) {
       let {
         stream: e
       } = this.props;
-      null != e && g.vN((0, x._z)(e))
+      null != e && y.vN((0, E._z)(e))
     })
   }
 }
@@ -438,7 +438,7 @@ class el extends(i = Chunk64700.PureComponent) {
 function eo(e) {
   var t;
   let n = (0, a.bG)([V.A, L.A], () => L.A.getChannel(V.A.getVoiceChannelId())),
-    i = (0, m.Ay)(n),
+    i = (0, b.Ay)(n),
     l = function() {
       let [e] = (0, a.bG)([K.Ay, w.A, V.A, L.A], () => {
         let e = L.A.getChannel(V.A.getVoiceChannelId());
@@ -451,14 +451,14 @@ function eo(e) {
       return s.useMemo(() => n ? [...e].sort((e, n) => e.user.id === t ? false : +(n.user.id === t)) : e, [e, t, n])
     }(),
     o = (0, a.bG)([R.A], () => R.A.getStreamerActiveStreamMetadata()),
-    c = (0, a.bG)([v.Ay, z.A, M.A], () => {
+    c = (0, a.bG)([_.Ay, z.A, M.A], () => {
       var e;
-      let t = (0, _.A)(v.Ay, z.A);
+      let t = (0, j.A)(_.Ay, z.A);
       return null != t ? null == (e = M.A.getGameByGameData(t)) ? true : e.id : null
     }),
-    d = (0, A.h)(c),
-    u = (0, a.cf)([v.Ay, z.A, R.A, H.default], () => {
-      let e = (0, _.A)(v.Ay, z.A),
+    d = (0, m.h)(c),
+    u = (0, a.cf)([_.Ay, z.A, R.A, H.default], () => {
+      let e = (0, j.A)(_.Ay, z.A),
         t = R.A.getCurrentUserActiveStream();
       return {
         displayUserMode: H.default.getDisplayUserMode(),

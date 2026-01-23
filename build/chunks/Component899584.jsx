@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 899584, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,20 +17,20 @@ var Chunk311907 = require("./311907.js"),
   Chunk58736 = require("./58736.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e) {
+function g(e) {
   let {
     channel: t
-  } = e, n = (0, u.S4)(t), b = (0, l.bG)([a.A], () => a.A.hasHidden(t.id)), g = (0, d.l)(t.id), {
-    sortOrder: m,
+  } = e, n = (0, u.S4)(t), g = (0, l.bG)([s.A], () => s.A.hasHidden(t.id)), m = (0, d.l)(t.id), {
+    sortOrder: b,
     tagFilter: A,
     tagSetting: y
-  } = (0, c.R)(t.id), O = (0, l.bG)([o.A, f.A], () => !!(o.A.getThreadIds(t.id, m, A, y).length > 0) || !!(f.A.getThreads(t.id, m, A, y).length > 0), [t.id, m, A, y]), j = t.isMediaChannel();
-  if (!n || g || j && O) return null;
-  let v = b ? j ? h.intl.string(h.t["WP/IE1"]) : h.intl.string(h.t.zfq9V4) : j ? h.intl.string(h.t.p60yF1) : h.intl.string(h.t.SNOqYC);
-  return (0, r.jsx)(p.In, {
-    tooltip: v,
+  } = (0, c.R)(t.id), _ = (0, l.bG)([o.A, p.A], () => !!(o.A.getThreadIds(t.id, b, A, y).length > 0) || !!(p.A.getThreads(t.id, b, A, y).length > 0), [t.id, b, A, y]), O = t.isMediaChannel();
+  if (!n || m || O && _) return null;
+  let j = g ? O ? f.intl.string(f.t["WP/IE1"]) : f.intl.string(f.t.zfq9V4) : O ? f.intl.string(f.t.p60yF1) : f.intl.string(f.t.SNOqYC);
+  return (0, r.jsx)(h.In, {
+    tooltip: j,
     icon: i.mir,
-    onClick: () => s.A.hideAdminOnboarding(t.id, !b),
-    selected: !b
+    onClick: () => a.A.hideAdminOnboarding(t.id, !g),
+    selected: !g
   })
 }

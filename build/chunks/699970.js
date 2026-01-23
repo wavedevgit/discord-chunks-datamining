@@ -12,9 +12,9 @@ var Chunk64700 = require("./64700.js"),
 
 function c(e) {
   let t = (0, l.bG)([i.A], () => i.A.getChannel(e), [e]),
-    n = a.MJ(o.xBc.REQUEST_TO_SPEAK, t),
+    n = s.MJ(o.xBc.REQUEST_TO_SPEAK, t),
     [c, u] = r.useState(n);
   return n !== c && u(n), [c, e => {
-    null != t && (u(e), (0, s.b6)(t, o.xBc.REQUEST_TO_SPEAK, e))
+    null != t && (u(e), (0, a.b6)(t, o.xBc.REQUEST_TO_SPEAK, e))
   }]
 }

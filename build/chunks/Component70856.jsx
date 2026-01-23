@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 70856, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => h
 }), require("./321073.js"), require("./896048.js"), require("./114821.js"), require("./339614.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -50,13 +50,13 @@ function p(e) {
     totalMembers: i,
     activity: a,
     guildId: p,
-    sourceAnalyticsLocations: f
-  } = e, h = [];
+    sourceAnalyticsLocations: h
+  } = e, g = [];
   for (let {
       user: e,
       status: n
     }
-    of t) h.push((0, r.jsx)(l.Drp, {
+    of t) g.push((0, r.jsx)(l.Drp, {
     id: e.id,
     keepItemStyles: true,
     render: t => (0, r.jsx)(o.A, d(u({}, t), {
@@ -67,10 +67,10 @@ function p(e) {
     action: () => (0, s.openUserProfileModal)({
       userId: e.id,
       guildId: p,
-      sourceAnalyticsLocations: f
+      sourceAnalyticsLocations: h
     })
   }));
-  for (let e of n) h.push((0, r.jsx)(l.Drp, {
+  for (let e of n) g.push((0, r.jsx)(l.Drp, {
     id: e.id,
     keepItemStyles: true,
     render: t => (0, r.jsx)(o.A, d(u({}, t), {
@@ -80,21 +80,21 @@ function p(e) {
     action: () => (0, s.openUserProfileModal)({
       userId: e.id,
       guildId: p,
-      sourceAnalyticsLocations: f
+      sourceAnalyticsLocations: h
     })
   }));
-  let A = i - h.length;
-  return A > 0 && h.push((0, r.jsx)(l.Drp, {
+  let f = i - g.length;
+  return f > 0 && g.push((0, r.jsx)(l.Drp, {
     id: "unknown-members-".concat(null == a ? true : a.session_id),
     render: e => (0, r.jsx)(o.x, d(u({}, e), {
       label: c.intl.formatToPlainString(c.t["6Kqn9M"], {
-        count: A
+        count: f
       })
     }))
-  })), h
+  })), g
 }
 
-function f(e) {
+function h(e) {
   let {
     priorityMembers: t,
     partiedMembers: n,
@@ -106,8 +106,8 @@ function f(e) {
     } = e;
     return t.id
   })), d = n.filter(e => !u.has(e.id)), {
-    analyticsLocations: f
-  } = (0, a.Ay)(), h = i.useMemo(() => {
+    analyticsLocations: h
+  } = (0, a.Ay)(), g = i.useMemo(() => {
     let e = s.flatMap(e => {
       let {
         playingMembers: t
@@ -116,8 +116,8 @@ function f(e) {
     }).map(e => e.id);
     return n.filter(t => !e.includes(t.id))
   }, [n, s]);
-  if (s.length <= 1 && 0 === h.length) {
-    var A, g;
+  if (s.length <= 1 && 0 === g.length) {
+    var f, m;
     return (0, r.jsx)(l.rXV, {
       label: n.length > 1 ? c.intl.formatToPlainString(c.t.C4WXvc, {
         memberCount: n.length
@@ -126,13 +126,13 @@ function f(e) {
         priorityMembers: t,
         otherMembers: d,
         totalMembers: n.length,
-        activity: null != (A = null == (g = s[0]) ? true : g.activity) ? A : true,
+        activity: null != (f = null == (m = s[0]) ? true : m.activity) ? f : true,
         guildId: null == o ? true : o.id,
-        sourceAnalyticsLocations: f
+        sourceAnalyticsLocations: h
       })
     })
   }
-  let m = s.map((e, n) => {
+  let A = s.map((e, n) => {
       let {
         playingMembers: i,
         game: a,
@@ -151,24 +151,24 @@ function f(e) {
           totalMembers: i.length,
           activity: null != s ? s : true,
           guildId: null == o ? true : o.id,
-          sourceAnalyticsLocations: f
+          sourceAnalyticsLocations: h
         })
       }, n)
     }),
-    b = h.map(e => e.id);
-  return [...m, (0, r.jsx)(l.rXV, {
-    label: "".concat(c.intl.string(c.t["mIx+gG"]), " - ").concat(h.length),
+    _ = g.map(e => e.id);
+  return [...A, (0, r.jsx)(l.rXV, {
+    label: "".concat(c.intl.string(c.t["mIx+gG"]), " - ").concat(g.length),
     children: p({
       priorityMembers: t.filter(e => {
         let {
           user: t
         } = e;
-        return b.includes(t.id)
+        return _.includes(t.id)
       }),
-      otherMembers: h.filter(e => !u.has(e.id)),
-      totalMembers: h.length,
+      otherMembers: g.filter(e => !u.has(e.id)),
+      totalMembers: g.length,
       guildId: null == o ? true : o.id,
-      sourceAnalyticsLocations: f
+      sourceAnalyticsLocations: h
     })
   })]
 }

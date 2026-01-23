@@ -2,8 +2,8 @@
 /** chunk id: 855790, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Ay: () => x,
-  q0: () => g
+  Ay: () => E,
+  q0: () => y
 }), require("./65821.js");
 var i, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,14 +24,14 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let b = Chunk652215.UVF.DEFAULT,
-  g = 1,
-  y = Chunk64700.createContext({
-    type: b,
-    opacity: g
+let g = Chunk652215.UVF.DEFAULT,
+  y = 1,
+  A = Chunk64700.createContext({
+    type: g,
+    opacity: y
   }),
-  A = Chunk64700.createContext(true),
-  m = e => {
+  m = Chunk64700.createContext(true),
+  b = e => {
     let {
       children: t,
       className: n
@@ -52,12 +52,12 @@ let b = Chunk652215.UVF.DEFAULT,
         for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) i = n[r], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (s[i] = e[i]);
       return s
     }(e, ["children", "className"]);
-    return (0, r.jsx)(y.Consumer, {
+    return (0, r.jsx)(A.Consumer, {
       children: e => {
         let {
           type: s
         } = e;
-        return (0, r.jsx)(A.Consumer, {
+        return (0, r.jsx)(m.Consumer, {
           children: e => {
             var l, a;
             return (0, r.jsx)("div", (l = function(e) {
@@ -98,8 +98,8 @@ class O extends(i = Chunk64700.PureComponent) {
       children: t,
       className: n
     } = this.props;
-    return (0, r.jsx)(A.Consumer, {
-      children: i => (0, r.jsx)(y.Consumer, {
+    return (0, r.jsx)(m.Consumer, {
+      children: i => (0, r.jsx)(A.Consumer, {
         children: s => {
           let l = o()(p.body, p[c()(s.type)], n);
           return e ? (0, r.jsx)("div", {
@@ -119,17 +119,17 @@ class O extends(i = Chunk64700.PureComponent) {
 f(O, "defaultProps", {
   disableScroll: false
 });
-let v = e => {
+let _ = e => {
     let {
-      type: t = b,
+      type: t = g,
       width: n,
       height: i,
       children: s,
       className: l,
-      opacity: a = g,
+      opacity: a = y,
       onClick: d
     } = e;
-    return (0, r.jsx)(y.Provider, {
+    return (0, r.jsx)(A.Provider, {
       value: {
         type: t,
         opacity: a
@@ -145,13 +145,13 @@ let v = e => {
       })
     })
   },
-  E = e => {
+  v = e => {
     let {
       children: t,
       className: n,
       dynamicSize: i = false
     } = e;
-    return (0, r.jsx)(A.Consumer, {
+    return (0, r.jsx)(m.Consumer, {
       children: e => (0, r.jsx)("div", {
         className: o()(p.content, {
           [p.staticSize]: !i
@@ -161,14 +161,14 @@ let v = e => {
       })
     })
   };
-v.Background = e => {
+_.Background = e => {
   let {
     children: t,
     opacityOverride: n
   } = e;
   if (null == t) return null;
-  let i = [m, O, E];
-  return (0, r.jsx)(y.Consumer, {
+  let i = [b, O, v];
+  return (0, r.jsx)(A.Consumer, {
     children: e => {
       let {
         opacity: l
@@ -179,7 +179,7 @@ v.Background = e => {
         style: o
       });
       {
-        if (i.includes(t.type)) return (0, r.jsx)(A.Provider, {
+        if (i.includes(t.type)) return (0, r.jsx)(m.Provider, {
           value: o,
           children: t
         });
@@ -188,7 +188,7 @@ v.Background = e => {
       }
     }
   })
-}, v.Body = O, v.Content = E, v.Icon = e => {
+}, _.Body = O, _.Content = v, _.Icon = e => {
   let {
     ref: t,
     icon: n,
@@ -223,5 +223,5 @@ v.Background = e => {
       })
     })
   })
-}, v.Bar = m;
-let x = v
+}, _.Bar = b;
+let E = _

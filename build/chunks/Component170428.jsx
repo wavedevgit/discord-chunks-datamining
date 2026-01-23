@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 170428, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,22 +18,22 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk641131 = require("./641131.js");
 
-function m(e) {
+function b(e) {
   var t, n;
   let {
-    channel: m
-  } = e, A = l.useContext(f.AnalyticsContext), y = (0, c.aL)(), O = b.intl.string(g.default["Beo/7v"]), {
-    firstMessage: j
-  } = (0, a.OA)(m), v = null == j || null == (t = j.messageSnapshots) ? true : t[0], x = null == v || null == (n = v.moderatorReport) ? true : n.reported_user_id;
-  return m.isModeratorReportChannel() && null != x ? (0, r.jsx)(o.Ay.Icon, {
+    channel: b
+  } = e, A = l.useContext(p.AnalyticsContext), y = (0, c.aL)(), _ = g.intl.string(m.default["Beo/7v"]), {
+    firstMessage: O
+  } = (0, s.OA)(b), j = null == O || null == (t = O.messageSnapshots) ? true : t[0], v = null == j || null == (n = j.moderatorReport) ? true : n.reported_user_id;
+  return b.isModeratorReportChannel() && null != v ? (0, r.jsx)(o.Ay.Icon, {
     onClick: () => {
-      (0, d.iN)(m.id), (0, u.A)(), (0, s.z)(m.guild_id, x, m.id, {
-        modViewPanel: h.g.INFO,
+      (0, d.iN)(b.id), (0, u.A)(), (0, a.z)(b.guild_id, v, b.id, {
+        modViewPanel: f.g.INFO,
         sourceLocation: null != location ? location : A.location
-      }), y.dispatch(p.jej.POPOUT_CLOSE)
+      }), y.dispatch(h.jej.POPOUT_CLOSE)
     },
-    tooltip: O,
+    tooltip: _,
     icon: i.quN,
-    "aria-label": O
+    "aria-label": _
   }) : null
 }

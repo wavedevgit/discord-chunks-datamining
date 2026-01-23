@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 584257, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 }), require("./896048.js");
 var Chunk73153 = require("./73153.js"),
   Chunk272355 = require("./272355.js"),
@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let p = new Set;
-class f extends Chunk272355.A {
+class h extends Chunk272355.A {
   _initialize() {
     r.h.subscribe("MESSAGE_CREATE", this.handleMessageCreate), r.h.subscribe("POGGERMODE_SETTINGS_UPDATE", this.handleSettingsUpdate)
   }
@@ -45,20 +45,20 @@ class f extends Chunk272355.A {
         }
       } = e;
       if (!c.A.isEnabled()) returnfalse;
-      let f = l.default.getId();
-      if ((null == d ? true : d.find(e => e.id === f)) != null ? (0, a._)(o.sn.PING_ME) : (null != (t = null == d ? true : d.length) ? t : 0) > 0 && (null == r ? true : r.id) === f && (0, a._)(o.sn.PING_SOMEONE), !(0, u.gN)(null == r ? true : r.id, f, i, p)) returnfalse;
-      let h = u.Ay.getMostRecentMessageCombo(n),
+      let h = l.default.getId();
+      if ((null == d ? true : d.find(e => e.id === h)) != null ? (0, a._)(o.sn.PING_ME) : (null != (t = null == d ? true : d.length) ? t : 0) > 0 && (null == r ? true : r.id) === h && (0, a._)(o.sn.PING_SOMEONE), !(0, u.gN)(null == r ? true : r.id, h, i, p)) returnfalse;
+      let g = u.Ay.getMostRecentMessageCombo(n),
         {
-          combo: A
-        } = null != h ? h : {};
-      if (null == A) returnfalse;
+          combo: f
+        } = null != g ? g : {};
+      if (null == f) returnfalse;
       Object.values(o.sn).forEach(e => {
         if (null != s.A.getUnlocked(e)) return;
         let t = (0, o.vM)(e),
           n = null == t ? true : t.checkUnlock;
-        null == n || false !== n(A) && (0, a._)(e)
+        null == n || false !== n(f) && (0, a._)(e)
       })
     })
   }
 }
-let h = new f
+let g = new h

@@ -1,7 +1,7 @@
 /** Chunk was on 22477 **/
 /** chunk id: 568834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => x
 }), require("./896048.js"), require("./264879.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,19 +16,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk594061 = require("./594061.js"),
   Chunk304932 = require("./304932.js");
 
-function f() {
+function x() {
   let {
     dailyCapReached: e,
     dailyCapOverridden: t,
     newUserMinAgeRequiredOverridden: n
-  } = (0, i.cf)([c.A], () => ({
+  } = (0, r.cf)([c.A], () => ({
     dailyCapReached: c.A.hasUserHitDCCap(),
     dailyCapOverridden: c.A.dailyCapOverridden,
     newUserMinAgeRequiredOverridden: c.A.newUserMinAgeRequiredOverridden
-  })), [f, x] = l.useState(""), [b, g] = l.useState(20), v = l.useMemo(() => Object.keys(r.M).filter(e => e.toLowerCase().includes(f.toLowerCase())).reverse(), [f]), j = l.useCallback(e => {
+  })), [x, g] = l.useState(""), [f, b] = l.useState(20), v = l.useMemo(() => Object.keys(i.M).filter(e => e.toLowerCase().includes(x.toLowerCase())).reverse(), [x]), j = l.useCallback(e => {
     let t = e.currentTarget;
-    t.scrollHeight - t.scrollTop <= t.clientHeight + 100 && b < v.length && g(e => e + 100)
-  }, [b, v.length]);
+    t.scrollHeight - t.scrollTop <= t.clientHeight + 100 && f < v.length && b(e => e + 100)
+  }, [f, v.length]);
   return (0, a.jsx)(s.ChK, {
     onScroll: j,
     children: (0, a.jsxs)("div", {
@@ -70,11 +70,11 @@ function f() {
       }), (0, a.jsx)(m.A, {}), (0, a.jsx)(u.A, {}), (0, a.jsxs)(s.nVY, {
         label: "All Dismissible Contents",
         children: [(0, a.jsx)(s.IWV, {
-          query: f,
-          onChange: x,
-          onClear: () => x("")
+          query: x,
+          onChange: g,
+          onClear: () => g("")
         }), (0, a.jsx)(d.A, {
-          items: v.slice(0, b)
+          items: v.slice(0, f)
         })]
       })]
     })

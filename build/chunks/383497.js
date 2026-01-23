@@ -2,7 +2,7 @@
 /** chunk id: 383497, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  O: () => y
+  O: () => b
 }), require("./938796.js");
 var Chunk344351 = require("./344351.js"),
   Chunk665260 = require("./665260.js"),
@@ -83,7 +83,7 @@ async function E(e) {
   }
   returntrue
 }
-async function b(e) {
+async function y(e) {
   var t;
   let {
     application: n,
@@ -103,10 +103,10 @@ async function b(e) {
     })
   }))
 }
-async function y(e) {
+async function b(e) {
   return !!await g({
     currentEmbeddedApplication: e.currentEmbeddedApplication,
     shouldClosePopoutOnLeaveCurrentEmbeddedApplication: e.shouldClosePopoutOnLeaveCurrentEmbeddedApplication,
     onConfirmActivityLaunchChecksAlertOpen: e.onConfirmActivityLaunchChecksAlertOpen
-  }) && !!await E(e) && !!await b(e)
+  }) && !!await E(e) && !!await y(e)
 }

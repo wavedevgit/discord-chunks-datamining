@@ -66,23 +66,23 @@ function A(e, t, n) {
       var e;
       return null == n ? x.A.getEditedApplication() : null == (e = x.A.getEditedCommand()) ? true : e.permissions
     }, [n]),
-    N = null != n ? n : t,
-    E = null != n ? A : a,
-    T = i.useMemo(() => null != v ? v : y({}, null != E ? E : {}), [v, E]),
-    w = i.useMemo(() => Object.keys(T).length, [T]),
-    C = i.useMemo(() => null == E || null == T ? null : !s().isEqual(E, T), [E, T]);
+    _ = null != n ? n : t,
+    N = null != n ? A : a,
+    w = i.useMemo(() => null != v ? v : y({}, null != N ? N : {}), [v, N]),
+    T = i.useMemo(() => Object.keys(w).length, [w]),
+    E = i.useMemo(() => null == N || null == w ? null : !s().isEqual(N, w), [N, w]);
   return i.useEffect(() => {
-    N === t && (C ? c.A.startEditingCommandPermissions(N) : c.A.stopEditingCommandPermissions(N))
-  }, [t, C, N]), {
+    _ === t && (E ? c.A.startEditingCommandPermissions(_) : c.A.stopEditingCommandPermissions(_))
+  }, [t, E, _]), {
     originalApplicationPermissions: a,
     originalCommandPermissions: A,
     editedTargetPermissions: function(e, t) {
-      let n = (0, o.bG)([p.A], () => p.A.getGuild(e), [e]);
+      let n = (0, o.bG)([g.A], () => g.A.getGuild(e), [e]);
       l()(null != n, "guild must be present to be editing its integration settings");
-      let r = (0, o.bG)([m.A], () => m.A.getHighestRole(n), [n]),
-        a = (0, o.bG)([g.default], () => {
+      let r = (0, o.bG)([b.A], () => b.A.getHighestRole(n), [n]),
+        a = (0, o.bG)([f.default], () => {
           var e;
-          return null == (e = g.default.getCurrentUser()) ? true : e.id
+          return null == (e = f.default.getCurrentUser()) ? true : e.id
         });
       l()(null != a, "useComputePermissions: currentUserId must not be null");
       let s = a === n.ownerId,
@@ -101,9 +101,9 @@ function A(e, t, n) {
             userIds: i
           }
         }, [t]),
-        A = (0, o.cf)([b.A], () => Object.fromEntries(c.map(b.A.getChannel).filter(h.Vq).map(e => [e.id, e])), [c]),
-        v = (0, o.cf)([f.A], () => Object.fromEntries(x.map(t => f.A.getRole(e, t)).filter(h.Vq).map(e => [e.id, e])), [x, e]),
-        N = (0, o.cf)([g.default], () => Object.fromEntries(j.map(g.default.getUser).filter(h.Vq).map(e => [e.id, e])), [j]);
+        A = (0, o.cf)([p.A], () => Object.fromEntries(c.map(p.A.getChannel).filter(h.Vq).map(e => [e.id, e])), [c]),
+        v = (0, o.cf)([m.A], () => Object.fromEntries(x.map(t => m.A.getRole(e, t)).filter(h.Vq).map(e => [e.id, e])), [x, e]),
+        _ = (0, o.cf)([f.default], () => Object.fromEntries(j.map(f.default.getUser).filter(h.Vq).map(e => [e.id, e])), [j]);
       return i.useMemo(() => {
         let e = n.id,
           i = (0, u.Ap)(n.id),
@@ -114,14 +114,14 @@ function A(e, t, n) {
           if (o.type === d.RA.CHANNEL) {
             let e = o.id === i,
               n = A[o.id];
-            t = e || m.A.can(O.xBc.VIEW_CHANNEL, n), c = true
+            t = e || b.A.can(O.xBc.VIEW_CHANNEL, n), c = true
           } else if (o.type === d.RA.ROLE) {
             let i = o.id === e,
               l = v[o.id];
-            t = i || null != l, c = s || i || m.A.isRoleHigher(n, r, l)
+            t = i || null != l, c = s || i || b.A.isRoleHigher(n, r, l)
           } else if (o.type === d.RA.USER) {
-            let e = N[o.id];
-            t = null != e, c = null != e && (s || m.A.canManageUser(O.xBc.USE_APPLICATION_COMMANDS, e, n))
+            let e = _[o.id];
+            t = null != e, c = null != e && (s || b.A.canManageUser(O.xBc.USE_APPLICATION_COMMANDS, e, n))
           }
           l[a] = function(e, t) {
             return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
@@ -140,9 +140,9 @@ function A(e, t, n) {
           })
         }
         return l
-      }, [A, n, r, s, t, v, N])
-    }(e, T),
-    hasChanges: C,
-    selectedPermissionCount: w
+      }, [A, n, r, s, t, v, _])
+    }(e, w),
+    hasChanges: E,
+    selectedPermissionCount: T
   }
 }

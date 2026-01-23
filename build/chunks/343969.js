@@ -31,7 +31,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,18 +56,18 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = false,
-  v = new Chunk626584.A("MemberSafetySearchManager");
+let v = false,
+  A = new Chunk626584.A("MemberSafetySearchManager");
 
-function S(e) {
+function I(e) {
   return "guild_".concat(e)
 }
 
-function I(e) {
+function S(e) {
   return {
     requestState: e,
     abortController: null,
@@ -83,8 +83,8 @@ let T = (0, Chunk353640.v)(e => ({}));
 
 function C(e, t) {
   let n = T.getState()[e];
-  return null == n && (n = I(1)), n = b({}, n, t), (0, o.r)(() => {
-    T.setState(t => O(b({}, t), {
+  return null == n && (n = S(1)), n = y({}, n, t), (0, o.r)(() => {
+    T.setState(t => O(y({}, t), {
       [e]: n
     }))
   }), n
@@ -96,13 +96,13 @@ function N(e) {
 
 function R(e) {
   let t = N(e);
-  return null == t && C(e, t = I(1)), t
+  return null == t && C(e, t = S(1)), t
 }
 
 function w(e) {
   (0, o.r)(() => {
     T.setState(t => {
-      let n = b({}, t);
+      let n = y({}, t);
       return delete n[e], n
     })
   })
@@ -149,7 +149,7 @@ function L(e) {
 }
 
 function j(e) {
-  w(S(e))
+  w(I(e))
 }
 
 function M(e) {
@@ -208,7 +208,7 @@ function k(e) {
   } = e;
   if (null != p.afterDate) {
     let e = t.user_id;
-    t.user_id = O(b({}, e), {
+    t.user_id = O(y({}, e), {
       range: {
         gte: f.default.fromTimestamp(p.afterDate),
         lte: null != p.beforeDate ? f.default.fromTimestamp(p.beforeDate) : true
@@ -232,13 +232,13 @@ function k(e) {
       and_query: t
     },
     {
-      selectedSort: y
+      selectedSort: b
     } = e;
-  return null != y && (E.sort = y), E
+  return null != b && (E.sort = b), E
 }
 
 function U(e, t) {
-  return null == t ? e : b({}, e, t)
+  return null == t ? e : y({}, e, t)
 }
 
 function G(e, t) {
@@ -265,7 +265,7 @@ function F(e, t) {
     nextPageChunkNumber: a
   } = V(t), {
     previousPagination: s
-  } = R(S(e)), o = t.currentPage, l = null != (n = null == s ? true : s.currentPage) ? n : 0, c = g.A.getElasticSearchPaginationByGuildId(e);
+  } = R(I(e)), o = t.currentPage, l = null != (n = null == s ? true : s.currentPage) ? n : 0, c = g.A.getElasticSearchPaginationByGuildId(e);
   switch (true) {
     case null == c:
     case r === a && 0 === r:
@@ -320,7 +320,7 @@ async function Y(e) {
   var t, n, r;
   let i = g.A.getSearchStateByGuildId(e),
     s = g.A.getPaginationStateByGuildId(e),
-    o = S(e),
+    o = I(e),
     l = R(o),
     [c, u] = B(e, l, s),
     d = U(k(i), u),
@@ -328,7 +328,7 @@ async function Y(e) {
   if (H(o, d) && (0, a.isEqual)(c, l.cursor)) return;
   let p = P(o, d, c, s, f);
   try {
-    if (v.info("Making member search request", {
+    if (A.info("Making member search request", {
         query: p.query,
         guildId: e
       }), null == p.query) throw Error("Query is null");
@@ -336,7 +336,7 @@ async function Y(e) {
       signal: null != (n = null == (r = p.abortController) ? true : r.signal) ? n : true
     })
   } catch (e) {
-    if (A === e.code) return;
+    if (v === e.code) return;
     D(o);
     return
   }
@@ -346,14 +346,14 @@ async function Y(e) {
 function W(e) {
   return T(t => {
     var n;
-    return (null == (n = t[S(e)]) ? true : n.requestState) === 2
+    return (null == (n = t[I(e)]) ? true : n.requestState) === 2
   })
 }
 
 function K(e) {
   return T(t => {
     var n;
-    return (null == (n = t[S(e)]) ? true : n.requestState) === 4
+    return (null == (n = t[I(e)]) ? true : n.requestState) === 4
   })
 }
 class z extends Chunk439372.A {
@@ -385,13 +385,13 @@ class z extends Chunk439372.A {
     let {
       guildId: t
     } = e;
-    return x(S(t))
+    return x(I(t))
   }
   handleGuildMemberSearchStillIndexing(e) {
     let {
       guildId: t
     } = e;
-    return L(S(t))
+    return L(I(t))
   }
   handleNewMemberTimestampRefresh(e) {
     let {

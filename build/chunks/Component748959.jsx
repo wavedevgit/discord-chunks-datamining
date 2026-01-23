@@ -17,21 +17,21 @@ function o(e) {
     applicationId: o,
     guildId: c,
     analyticsLocations: u,
-    analyticsSectionId: f
-  } = e, g = a.useMemo(() => ({
-    pageSection: f
-  }), [f]);
+    analyticsSectionId: g
+  } = e, _ = s.useMemo(() => ({
+    pageSection: g
+  }), [g]);
   return null == l ? null : (0, n.jsx)(i.E9, {
-    newValue: g,
+    newValue: _,
     children: (0, n.jsxs)("div", {
       className: r.kL,
       children: [(0, n.jsxs)("div", {
         className: r.FS,
-        children: [(0, n.jsx)(s.Heading, {
+        children: [(0, n.jsx)(a.Heading, {
           variant: "display-lg",
           color: "text-strong",
           children: l.title
-        }), (0, n.jsx)(s.Text, {
+        }), (0, n.jsx)(a.Text, {
           variant: "text-lg/semibold",
           color: "text-subtle",
           children: l.description

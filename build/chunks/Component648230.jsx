@@ -6,9 +6,9 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  i = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk299855 = require("./299855.js"),
-  c = require.n(Chunk299855),
+  o = require.n(Chunk299855),
   Chunk110259 = require("./110259.js"),
   Chunk141931 = require("./141931.js"),
   Chunk311907 = require("./311907.js"),
@@ -52,47 +52,47 @@ function Q(e) {
   var t;
   let {
     onClose: r,
-    transitionState: s,
+    transitionState: l,
     sourcePID: a,
     analyticsLocations: Q = [],
     selectSource: q = true
-  } = e, K = (0, f.bG)([v.Ay], () => {
+  } = e, K = (0, u.bG)([v.Ay], () => {
     var e;
     return null != a && null != (e = v.Ay.getGameForPID(a)) ? e : true
-  }), Y = l.useRef(performance.now()), X = (0, f.bG)([S.A], () => (S.A.getUseSystemScreensharePicker() || S.A.getUseGamescopeCapture()) && ((0, C.isLinux)() || (0, C.isMac)() && c().satisfies(null === j.A || true === j.A ? true : j.A.os.release, B.WZ))), {
+  }), Y = i.useRef(performance.now()), X = (0, u.bG)([y.A], () => (y.A.getUseSystemScreensharePicker() || y.A.getUseGamescopeCapture()) && ((0, w.isLinux)() || (0, w.isMac)() && o().satisfies(null === m.A || true === m.A ? true : m.A.os.release, W.WZ))), {
     analyticsLocations: J
-  } = (0, b.Ay)(Q, g.A.GO_LIVE_MODAL_V2), $ = (0, f.bG)([_.default], () => _.default.getCurrentUser()), ee = (0, Z.A)(), {
+  } = (0, _.Ay)(Q, g.A.GO_LIVE_MODAL_V2), $ = (0, u.bG)([O.default], () => O.default.getCurrentUser()), ee = (0, H.A)(), {
     state: et,
     dispatch: er
-  } = (0, M.yB)(K, $, ee), en = (0, x.A)((0, C.isWindows)() && null != K && q ? "confirm" : "source_select");
-  (0, H.A)(X, er, "confirm" === en);
-  let el = !w.Ay.canStreamQuality(w.Ay.StreamQuality.HIGH, $),
-    es = !(0, C.isLinux)(),
-    ei = "confirm" === en,
-    ea = !q && null != K && !ei,
-    ec = ei || et.sourceType === d.fS.CAMERA,
-    eo = X && et.sourceType !== d.fS.CAMERA,
-    ed = l.useMemo(() => {
+  } = (0, M.yB)(K, $, ee), en = (0, x.A)((0, w.isWindows)() && null != K && q ? "confirm" : "source_select");
+  (0, B.A)(X, er, "confirm" === en);
+  let ei = !C.Ay.canStreamQuality(C.Ay.StreamQuality.HIGH, $),
+    el = !(0, w.isLinux)(),
+    es = "confirm" === en,
+    ea = !q && null != K && !es,
+    eo = es || et.sourceType === d.fS.CAMERA,
+    ec = X && et.sourceType !== d.fS.CAMERA,
+    ed = i.useMemo(() => {
       let e = [{
-        name: z.intl.string(z.t.tHoi7u),
+        name: V.intl.string(V.t.tHoi7u),
         value: d.fS.WINDOW,
         icon: h.WxK
       }, {
-        name: z.intl.string(z.t.MhJ43A),
+        name: V.intl.string(V.t.MhJ43A),
         value: d.fS.CAMERA,
         icon: h.npA
       }];
       return X || e.splice(1, 0, {
-        name: z.intl.string(z.t.slM8rG),
+        name: V.intl.string(V.t.slM8rG),
         value: d.fS.SCREEN,
         icon: h.kN9
       }), e
     }, [X]),
     {
-      sourceType: ef
+      sourceType: eu
     } = et,
-    eu = l.useCallback(async e => {
-      y.wv.updateSetting(et.notifyFriends), y.uh.updateSetting(et.hidePreview);
+    ef = i.useCallback(async e => {
+      b.wv.updateSetting(et.notifyFriends), b.uh.updateSetting(et.hidePreview);
       let [t, n] = await (0, T.A)(e.hasOwnProperty("pid") ? e.pid : e, {
         preset: et.preset,
         fps: et.fps,
@@ -105,57 +105,57 @@ function Q(e) {
       });
       if (t) return r();
       "no permission" === n && p.A.show({
-        title: z.intl.string(z.t["X+mXeq"]),
-        body: z.intl.string(z.t.MIJCzr)
+        title: V.intl.string(V.t["X+mXeq"]),
+        body: V.intl.string(V.t.MIJCzr)
       }), r()
     }, [r, et, J]);
   async function eh(e) {
-    await (0, m.A)({
+    await (0, j.A)({
       channelId: e
-    }) && null != K && eu(K)
+    }) && null != K && ef(K)
   }
-  let ep = l.useCallback(() => {
+  let ep = i.useCallback(() => {
     var e;
-    eu({
+    ef({
       id: ("gamescope" === et.nativeSourceType ? "screen:" : "prepicked:") + et.nativeSourceType,
-      name: null != (e = N.Ay.getLastPickedContentTitle()) ? e : z.intl.string(z.t.KKcy95),
+      name: null != (e = I.Ay.getLastPickedContentTitle()) ? e : V.intl.string(V.t.KKcy95),
       url: ""
     })
-  }, [eu, et.nativeSourceType]);
+  }, [ef, et.nativeSourceType]);
   return (0, n.jsx)(M.KL, {
     state: et,
     dispatch: er,
     children: (0, n.jsx)(h.dWK, {
-      transitionState: s,
+      transitionState: l,
       onClose: r,
       size: "xl",
       trackingProps: {
         impression: {
-          impressionName: o.ImpressionNames.GO_LIVE_MODAL,
+          impressionName: c.ImpressionNames.GO_LIVE_MODAL,
           impressionProperties: {
             location_stack: J,
-            application_id: (0, C.isWindows)() ? null == (t = (0, I.A)(v.Ay, O.A)) ? true : t.id : true,
-            parent_media_session_id: A.A.getMediaSessionId()
+            application_id: (0, w.isWindows)() ? null == (t = (0, N.A)(v.Ay, A.A)) ? true : t.id : true,
+            parent_media_session_id: S.A.getMediaSessionId()
           }
         }
       },
       children: (0, n.jsxs)("div", {
-        className: i()(W.zr, {
-          [W._g]: X && null == K,
-          [W.Tb]: ea,
-          [W.Fe]: ei
+        className: s()(z.zr, {
+          [z._g]: X && null == K,
+          [z.Tb]: ea,
+          [z.Fe]: es
         }),
         children: [ea ? (0, n.jsx)(R.A, {
-          className: i()(W.or, W.Ym),
+          className: s()(z.or, z.Ym),
           onSelectChannel: eh
-        }) : ei ? (0, n.jsx)(P.A, {}) : (0, n.jsxs)(n.Fragment, {
+        }) : es ? (0, n.jsx)(P.A, {}) : (0, n.jsxs)(n.Fragment, {
           children: [(0, n.jsx)("div", {
-            className: W.wx,
+            className: z.wx,
             children: (0, n.jsx)(h.IzF, {
-              className: W.q0,
-              value: ef,
+              className: z.q0,
+              value: eu,
               look: "pill",
-              optionClassName: W.LD,
+              optionClassName: z.LD,
               onChange: e => {
                 let {
                   value: t
@@ -167,9 +167,9 @@ function Q(e) {
               },
               options: ed
             })
-          }), (0, n.jsx)(u.ArX, {
-            className: W.Qs,
-            children: X && ef !== d.fS.CAMERA ? (0, n.jsx)(D.A, {
+          }), (0, n.jsx)(f.ArX, {
+            className: z.Qs,
+            children: X && eu !== d.fS.CAMERA ? (0, n.jsx)(D.A, {
               onSourceSelect: ep
             }) : (0, n.jsx)(U.A, {
               onClick: function(e) {
@@ -177,32 +177,32 @@ function Q(e) {
                 (null == (t = e.id) ? true : t.startsWith(d.fS.CAMERA)) ? er({
                   type: "set_selected_source",
                   source: e
-                }): eu(e)
+                }): ef(e)
               }
             })
           })]
         }), (0, n.jsxs)("div", {
-          className: W.qr,
+          className: z.qr,
           children: [(0, n.jsxs)("div", {
-            className: W.z8,
+            className: z.z8,
             children: [(0, n.jsx)(F.A, {}), (0, n.jsxs)("div", {
-              className: W.gt,
-              children: [el && (0, n.jsx)(G.A, {
+              className: z.gt,
+              children: [ei && (0, n.jsx)(L.A, {
                 onClose: r
-              }), (eo || ec) && (0, n.jsx)(h.Button, {
+              }), (ec || eo) && (0, n.jsx)(h.Button, {
                 variant: "primary",
                 size: "md",
-                text: z.intl.string(eo && "gamescope" !== et.nativeSourceType ? z.t.FiBjwU : V.default["5AyH/p"]),
+                text: V.intl.string(ec && "gamescope" !== et.nativeSourceType ? V.t.FiBjwU : Z.default["5AyH/p"]),
                 onClick: () => {
-                  eo ? "gamescope" === et.nativeSourceType ? ep() : ((0, E.E)(), (0, E.a)(et.nativeSourceType)) : null != et.selectedChannel ? eh(et.selectedChannel) : null != et.selectedSource && eu(et.selectedSource)
+                  ec ? "gamescope" === et.nativeSourceType ? ep() : ((0, E.E)(), (0, E.a)(et.nativeSourceType)) : null != et.selectedChannel ? eh(et.selectedChannel) : null != et.selectedSource && ef(et.selectedSource)
                 },
-                disabled: eo && !es && "" === et.nativeSourceType || ec && null == et.selectedSource
-              }), (0, n.jsx)(L.A, {
+                disabled: ec && !el && "" === et.nativeSourceType || eo && null == et.selectedSource
+              }), (0, n.jsx)(G.A, {
                 align: "right"
               })]
             })]
-          }), el && (0, n.jsx)("div", {
-            className: W.rO,
+          }), ei && (0, n.jsx)("div", {
+            className: z.rO,
             children: (0, n.jsx)(k.A, {
               onClose: r
             })

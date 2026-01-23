@@ -66,7 +66,7 @@ class c extends Chunk64700.Component {
       onNotificationClick: h,
       onConfirmClick: p,
       onCancelClick: f
-    } = o, b = function(e, t) {
+    } = o, g = function(e, t) {
       if (null == e) return {};
       var n, i, r, s = {};
       if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -94,7 +94,7 @@ class c extends Chunk64700.Component {
         })
       }
       return e
-    }({}, b), t = t = {
+    }({}, g), t = t = {
       locked: r,
       onNotificationShow: this.handleNotificationShow,
       onDismissClick: null != u ? this.handleDismissClick : true,

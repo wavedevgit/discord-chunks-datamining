@@ -23,34 +23,34 @@ var Chunk423090 = require("./423090.jsx"),
 function g(e) {
   var t, n, g, E;
   let {
-    onClose: b,
-    transitionState: y,
+    onClose: y,
+    transitionState: b,
     skuId: O,
-    appId: A,
-    onHeaderTitleClick: v
-  } = e, S = (0, a.bG)([l.A], () => l.A.getForSKU(O), [O]), I = (0, a.bG)([o.A], () => o.A.get(O), [O]), T = (0, d.L)(O);
-  if (null == I) return null;
-  let C = null != (t = I.name) ? t : "",
-    N = null != (n = null == S || null == (E = S.description) ? true : E.trim()) ? n : true,
-    R = (null == S ? true : S.headerBackground) != null && null != (g = u.A.toURLSafe((0, c.YE)(A, S.headerBackground, 256))) ? g : true,
-    w = I.type === h.Puh.DURABLE && T,
-    P = I.type === h.Puh.DURABLE ? w ? m.intl.string(m.t.bm82mm) : m.intl.string(m.t["6gprwf"]) : true,
+    appId: v,
+    onHeaderTitleClick: A
+  } = e, I = (0, a.bG)([l.A], () => l.A.getForSKU(O), [O]), S = (0, a.bG)([o.A], () => o.A.get(O), [O]), T = (0, d.L)(O);
+  if (null == S) return null;
+  let C = null != (t = S.name) ? t : "",
+    N = null != (n = null == I || null == (E = I.description) ? true : E.trim()) ? n : true,
+    R = (null == I ? true : I.headerBackground) != null && null != (g = u.A.toURLSafe((0, c.YE)(v, I.headerBackground, 256))) ? g : true,
+    w = S.type === h.Puh.DURABLE && T,
+    P = S.type === h.Puh.DURABLE ? w ? m.intl.string(m.t.bm82mm) : m.intl.string(m.t["6gprwf"]) : true,
     {
       price: D
-    } = I;
+    } = S;
   return null == D ? null : (0, r.jsx)(f.C, {
-    appId: A,
-    skuId: I.id,
-    transitionState: y,
-    onHeaderTitleClick: null != v ? v : b,
-    onClose: b,
+    appId: v,
+    skuId: S.id,
+    transitionState: b,
+    onHeaderTitleClick: null != A ? A : y,
+    onClose: y,
     footer: (0, r.jsx)(p.$P, {
-      appId: A,
-      sku: I
+      appId: v,
+      sku: S
     }),
     children: (0, r.jsx)(_.D, {
-      appId: A,
-      skuId: I.id,
+      appId: v,
+      skuId: S.id,
       title: C,
       description: N,
       imgSrc: R,

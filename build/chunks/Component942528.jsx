@@ -1,7 +1,7 @@
 /** Chunk was on 13530 **/
 /** chunk id: 942528, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,28 +19,28 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk505502 = require("./505502.js"),
   Chunk851822 = require("./851822.js");
-let h = e => {
+let v = e => {
   let {
     entry: t,
     onClose: n,
     onReaction: i,
-    onRequestOpen: h,
-    disableActivityProfileLinks: v,
+    onRequestOpen: v,
+    disableActivityProfileLinks: b,
     customCTA: y,
     popoutClassname: O,
     popoutPosition: A = "right"
-  } = e, I = r.useRef(null), N = (0, s.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), w = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
-    nick: S,
-    avatar: E
+  } = e, _ = r.useRef(null), I = (0, s.bG)([u.A, c.A], () => c.A.getChannel(u.A.getChannelId())), w = (0, s.bG)([d.default], () => d.default.getUser(t.author_id)), {
+    nick: N,
+    avatar: S
   } = r.useMemo(() => {
-    let e = null == w ? true : w.getAvatarURL(null == N ? true : N.guild_id, 48, false);
+    let e = null == w ? true : w.getAvatarURL(null == I ? true : I.guild_id, 48, false);
     return {
-      nick: m.Ay.getName(null == N ? true : N.guild_id, null == N ? true : N.id, w),
+      nick: m.Ay.getName(null == I ? true : I.guild_id, null == I ? true : I.id, w),
       avatar: e
     }
-  }, [w, N]);
+  }, [w, I]);
   return null == w ? null : (0, l.jsx)(o.YNO, {
-    targetElementRef: I,
+    targetElementRef: _,
     position: A,
     renderPopout: e => {
       let {
@@ -58,13 +58,13 @@ let h = e => {
           },
           onUserPopoutClosed: () => r(),
           disableGameProfileLinks: true,
-          disableActivityProfileLinks: v
+          disableActivityProfileLinks: b
         })
       })
     },
     positionKey: "'content-entry-".concat(t.id),
     onRequestOpen: () => {
-      null == h || h()
+      null == v || v()
     },
     children: e => {
       var n, r;
@@ -86,9 +86,9 @@ let h = e => {
         }
         return e
       }({
-        innerRef: I
+        innerRef: _
       }, e), r = r = {
-        className: g.GA,
+        className: j.GA,
         children: (0, l.jsx)(o.vN3, {
           offset: {
             top: 4,
@@ -98,29 +98,29 @@ let h = e => {
           },
           children: (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)("img", {
-              className: g.my,
-              src: E,
+              className: j.my,
+              src: S,
               alt: p.intl.formatToPlainString(p.t.IzVXxY, {
-                userName: S
+                userName: N
               })
             }), (0, l.jsx)("div", {
-              className: g.Su,
+              className: j.Su,
               children: (0, l.jsxs)("div", {
-                className: a()(j.fi, j.Kt),
+                className: a()(h.fi, h.Kt),
                 children: [(0, l.jsx)(o.Text, {
                   variant: "text-md/medium",
                   color: "text-strong",
                   lineClamp: 1,
-                  children: S
-                }), (0, l.jsx)(b.mG, {
-                  location: b.N5.APP_LAUNCHER,
-                  children: x.n.map((e, n) => (0, l.jsx)(e, {
+                  children: N
+                }), (0, l.jsx)(x.mG, {
+                  location: x.N5.APP_LAUNCHER,
+                  children: g.n.map((e, n) => (0, l.jsx)(e, {
                     entry: t
                   }, n))
                 })]
               })
             }), null != y ? y : (0, l.jsx)("div", {
-              className: g.Br,
+              className: j.Br,
               children: (0, l.jsx)(o.W4J, {
                 size: "sm"
               })

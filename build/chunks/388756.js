@@ -1,9 +1,9 @@
 /** Chunk was on 21738 **/
 /** chunk id: 388756, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  qT: "_7d9ebf92e3a44218",
-  nM: "d2bced5a541745f6",
-  $8: "a613ceaf12b1b3a0",
-  AD: "_01e13164849ec999",
-  oo: "_98cdae05775953ab"
+  qT: "features_c85137",
+  nM: "row_c85137",
+  $8: "checkmarkIcon_c85137",
+  AD: "featureIcon_c85137",
+  oo: "featureText_c85137"
 }

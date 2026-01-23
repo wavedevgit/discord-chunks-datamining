@@ -12,10 +12,10 @@ require.d(exports, {
   RI: () => c,
   Sg: () => m,
   T9: () => o,
-  TV: () => y,
-  WJ: () => v,
+  TV: () => b,
+  WJ: () => A,
   _3: () => _,
-  aD: () => S,
+  aD: () => I,
   bV: () => P,
   jk: () => s,
   lP: () => w,
@@ -23,7 +23,7 @@ require.d(exports, {
   qE: () => p,
   r_: () => r,
   sq: () => E,
-  w7: () => A
+  w7: () => v
 });
 let r = ["top", "right", "bottom", "left"],
   i = ["start", "end"],
@@ -70,17 +70,17 @@ function g(e) {
 function E(e) {
   return "y" === e ? "height" : "width"
 }
-let b = new Set(["top", "bottom"]);
+let y = new Set(["top", "bottom"]);
 
-function y(e) {
-  return b.has(h(e)) ? "y" : "x"
+function b(e) {
+  return y.has(h(e)) ? "y" : "x"
 }
 
 function O(e) {
-  return g(y(e))
+  return g(b(e))
 }
 
-function A(e, t, n) {
+function v(e, t, n) {
   true === n && (n = false);
   let r = m(e),
     i = O(e),
@@ -89,15 +89,15 @@ function A(e, t, n) {
   return t.reference[a] > t.floating[a] && (s = P(s)), [s, P(s)]
 }
 
-function v(e) {
+function A(e) {
   let t = P(e);
-  return [S(e), t, S(t)]
+  return [I(e), t, I(t)]
 }
 
-function S(e) {
+function I(e) {
   return e.replace(/start|end/g, e => f[e])
 }
-let I = ["left", "right"],
+let S = ["left", "right"],
   T = ["right", "left"],
   C = ["top", "bottom"],
   N = ["bottom", "top"];
@@ -106,8 +106,8 @@ function R(e, t, n) {
   switch (e) {
     case "top":
     case "bottom":
-      if (n) return t ? T : I;
-      return t ? I : T;
+      if (n) return t ? T : S;
+      return t ? S : T;
     case "left":
     case "right":
       return t ? C : N;
@@ -119,7 +119,7 @@ function R(e, t, n) {
 function w(e, t, n, r) {
   let i = m(e),
     a = R(h(e), "start" === n, r);
-  return i && (a = a.map(e => e + "-" + i), t && (a = a.concat(a.map(S)))), a
+  return i && (a = a.map(e => e + "-" + i), t && (a = a.concat(a.map(I)))), a
 }
 
 function P(e) {

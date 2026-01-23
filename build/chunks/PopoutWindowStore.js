@@ -21,7 +21,7 @@ var r, Chunk284009 = require("./284009.js"),
   Chunk265383 = require("./265383.js"),
   Chunk652215 = require("./652215.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,13 +37,13 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,25 +54,25 @@ function A(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = I(e, t), Object.getOwnPropertySymbols)
+  if (a = S(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -153,7 +153,7 @@ function H(e) {
     features: n,
     render: r
   } = e;
-  if (h.isPlatformEmbedded && !m.Ay.supportsFeature(b.BYE.POPOUT_WINDOWS)) throw Error("Popout windows not supported on this native module version!");
+  if (h.isPlatformEmbedded && !m.Ay.supportsFeature(y.BYE.POPOUT_WINDOWS)) throw Error("Popout windows not supported on this native module version!");
   let i = true === n.outOfProcessOverlay,
     a = R[t],
     s = null != a && !a.closed;
@@ -163,7 +163,7 @@ function H(e) {
     defaultWidth: o,
     defaultHeight: l,
     defaultAlwaysOnTop: c = false
-  } = n, u = S(n, ["defaultWidth", "defaultHeight", "defaultAlwaysOnTop"]), d = v(O({}, u), {
+  } = n, u = I(n, ["defaultWidth", "defaultHeight", "defaultAlwaysOnTop"]), d = A(O({}, u), {
     width: null != o ? o : u.width,
     height: null != l ? l : u.height
   }), _ = c, g = C[t];
@@ -175,33 +175,33 @@ function H(e) {
       y: r,
       alwaysOnTop: i
     } = g;
-    _ = null != i ? i : c, d = v(O({}, d), {
+    _ = null != i ? i : c, d = A(O({}, d), {
       width: null != e && 0 !== e ? e : o,
       height: null != t && 0 !== t ? t : l,
       left: n,
       top: r
     })
   }
-  let y = (0, E.A)(d);
+  let b = (0, E.A)(d);
   T.info("Opening popout window", {
     key: t,
-    encodedFeatures: y
+    encodedFeatures: b
   });
-  let A = window.open(b.BVt.POPOUT_WINDOW, t, y);
+  let v = window.open(y.BVt.POPOUT_WINDOW, t, b);
   try {
-    A.windowKey = t
+    v.windowKey = t
   } catch (e) {
     throw (0, f.pj)(e, i ? p.Ue.OutOfProcess : null, {
       extra: {
         windowKey: t,
         totalWindowCount: Object.keys(R).length,
         features: d,
-        encodedFeatures: y,
+        encodedFeatures: b,
         isPlatformEmbedded: h.isPlatformEmbedded
       }
     }), e
   }
-  i ? T.verbose("Opening out of process overlay window", t) : null == A || A.focus(), R[t] = A, P[t] = r, h.isPlatformEmbedded && (m.Ay.setAlwaysOnTop(t, _), N[t] = _, m.Ay.isAlwaysOnTop(t).then(e => N[t] = e)), D.add(t)
+  i ? T.verbose("Opening out of process overlay window", t) : null == v || v.focus(), R[t] = v, P[t] = r, h.isPlatformEmbedded && (m.Ay.setAlwaysOnTop(t, _), N[t] = _, m.Ay.isAlwaysOnTop(t).then(e => N[t] = e)), D.add(t)
 }
 
 function Y(e) {
@@ -222,9 +222,9 @@ function K(e) {
   if (!(t instanceof Object && t.discordPopoutEvent instanceof Object)) return;
   let n = t.discordPopoutEvent;
   if (null != n.key) switch (n.type) {
-    case b.hK1.LOADED:
+    case y.hK1.LOADED:
       return Y(n.key);
-    case b.hK1.UNLOADED:
+    case y.hK1.UNLOADED:
       return W(n.key)
   }
 }
@@ -311,7 +311,7 @@ class $ extends(r = Chunk311907.Ay.PersistedStore) {
     return this.isWindowFullyInitialized(e) || T.warn("Attempted to unmount partially initialized window ".concat(e)), W(e)
   }
 }
-y($, "displayName", "PopoutWindowStore"), y($, "persistKey", "PopoutWindowStore");
+b($, "displayName", "PopoutWindowStore"), b($, "persistKey", "PopoutWindowStore");
 let J = new $(Chunk73153.h, {
     POPOUT_WINDOW_OPEN: H,
     POPOUT_WINDOW_ADD_STYLESHEET: Q,

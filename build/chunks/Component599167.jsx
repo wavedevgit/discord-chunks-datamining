@@ -26,32 +26,32 @@ function j() {
     {
       application: n,
       loading: j
-    } = (0, c.A)(null == t ? true : t.id, x.S7.GUILD_ROLE_SUBSCRIPTIONS),
-    O = i.useRef(null),
-    y = (0, u.A)(null != t ? t : true);
+    } = (0, o.A)(null == t ? true : t.id, h.S7.GUILD_ROLE_SUBSCRIPTIONS),
+    _ = i.useRef(null),
+    O = (0, u.A)(null != t ? t : true);
   i.useEffect(() => {
-    null != t && (0, f.aV)(t) && (0, o.Dr)(s.M.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE)
+    null != t && (0, g.aV)(t) && (0, c.Dr)(s.M.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE)
   }, [t]);
-  let v = (null == t ? true : t.features.has(p.GuildFeatures.CREATOR_MONETIZABLE)) === false && (null == t ? true : t.features.has(p.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) === false;
-  return e = null == t || j ? (0, r.jsx)(a.y$y, {}) : null != y ? (0, r.jsx)(b.A, {
+  let v = (null == t ? true : t.features.has(b.GuildFeatures.CREATOR_MONETIZABLE)) === false && (null == t ? true : t.features.has(b.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) === false;
+  return e = null == t || j ? (0, r.jsx)(a.y$y, {}) : null != O ? (0, r.jsx)(p.A, {
     guild: t,
-    config: y
-  }) : v ? (0, r.jsx)(m.A, {
+    config: O
+  }) : v ? (0, r.jsx)(f.A, {
     guild: t
-  }) : (0, r.jsx)(g.A, {
+  }) : (0, r.jsx)(m.A, {
     guild: t,
     application: n
   }), (0, r.jsx)("div", {
-    className: h.ed,
+    className: x.ed,
     children: (0, r.jsx)("div", {
-      className: h.V1,
+      className: x.V1,
       children: (0, r.jsx)(a.ArX, {
-        className: h.iL,
+        className: x.iL,
         children: (0, r.jsx)("main", {
-          ref: O,
-          className: h.z1,
+          ref: _,
+          className: x.z1,
           children: (0, r.jsx)(a.xpW, {
-            containerRef: O,
+            containerRef: _,
             children: e
           })
         })

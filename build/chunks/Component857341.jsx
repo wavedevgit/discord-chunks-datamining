@@ -1,7 +1,7 @@
 /** Chunk was on 31748 **/
 /** chunk id: 857341, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,53 +17,53 @@ require("./603266.js");
 var Chunk985018 = require("./985018.jsx"),
   Chunk922401 = require("./922401.js");
 
-function g(e) {
+function m(e) {
   let {
     channelId: t
-  } = e, n = (0, i.bG)([s.A], () => {
+  } = e, n = (0, i.bG)([o.A], () => {
     var e;
-    return null == (e = s.A.getSecureFramesState()) ? true : e.epochAuthenticator
-  }), g = (0, u.z)({
+    return null == (e = o.A.getSecureFramesState()) ? true : e.epochAuthenticator
+  }), m = (0, u.z)({
     fingerprintBase64: n,
     chunkSize: 5,
     desiredLength: 30
-  }), m = r.useCallback(() => {
-    (0, o.k0)({
+  }), _ = l.useCallback(() => {
+    (0, s.k0)({
       channelId: t
     })
   }, [t]);
-  return (0, l.jsxs)("div", {
-    className: b.kL,
-    children: [(0, l.jsxs)("div", {
-      className: b.Tc,
-      children: [(0, l.jsx)(a.XAi, {
+  return (0, r.jsxs)("div", {
+    className: g.kL,
+    children: [(0, r.jsxs)("div", {
+      className: g.Tc,
+      children: [(0, r.jsx)(a.XAi, {
         size: "xxs",
         color: a.LU0.colors.TEXT_FEEDBACK_POSITIVE
-      }), (0, l.jsx)(a.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "text-feedback-positive",
         children: p.intl.string(p.t["3BogKe"])
       })]
-    }), (0, l.jsx)(a.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "text-subtle",
       children: p.intl.string(p.t.B9JNsl)
-    }), (0, l.jsxs)("div", {
-      className: b.wx,
-      children: [(0, l.jsx)(a.Heading, {
+    }), (0, r.jsxs)("div", {
+      className: g.wx,
+      children: [(0, r.jsx)(a.Heading, {
         variant: "text-sm/bold",
         color: "text-strong",
         children: p.intl.string(p.t.cTQI5t)
-      }), null != g && (0, l.jsx)(f.c, {
-        chunks: g,
+      }), null != m && (0, r.jsx)(f.c, {
+        chunks: m,
         color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT.css,
-        onCopy: m
+        onCopy: _
       })]
-    }), (0, l.jsx)(d.j, {
-      className: b.aY,
-      chunks: g,
+    }), (0, r.jsx)(d.j, {
+      className: g.aY,
+      chunks: m,
       columns: 3
-    }), (0, l.jsx)(a.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "text-subtle",
       children: p.intl.format(p.t.wKxADe, {

@@ -26,44 +26,44 @@ let y = e => {
     guildId: r,
     closePopout: A
   } = e, y = (0, u.GV)(), {
-    notClaimed: O,
-    notEmailVerified: j,
-    notPhoneVerified: v,
-    newAccount: x,
-    newMember: E
-  } = (0, i.bG)([f.A], () => f.A.getCheck(r), [r]), _ = 0 === t ? g.intl.string(g.t["6zY8BI"]) : null, C = null, S = null;
-  return (0 === t && (O ? (C = g.intl.string(g.t.IRxUlG), S = g.intl.string(g.t.fiNVin)) : v ? (C = g.intl.string(g.t.vW8iUF), S = g.intl.string(g.t["50gfOv"])) : j ? (C = g.intl.string(g.t.vdSOpz), S = g.intl.string(g.t.lm1UKt)) : E ? (C = g.intl.formatToPlainString(g.t.v1ktYb, {
-    min: h.$8o.MEMBER_AGE
-  }), S = g.intl.string(g.t.BddRzS)) : x && (C = g.intl.formatToPlainString(g.t.sncw41, {
-    min: h.$8o.ACCOUNT_AGE
-  }), S = g.intl.string(g.t.BddRzS))), null == _ || null == C) ? null : (0, l.jsxs)(s.lGe, {
-    className: m.kL,
+    notClaimed: _,
+    notEmailVerified: O,
+    notPhoneVerified: j,
+    newAccount: v,
+    newMember: x
+  } = (0, i.bG)([p.A], () => p.A.getCheck(r), [r]), E = 0 === t ? m.intl.string(m.t["6zY8BI"]) : null, C = null, S = null;
+  return (0 === t && (_ ? (C = m.intl.string(m.t.IRxUlG), S = m.intl.string(m.t.fiNVin)) : j ? (C = m.intl.string(m.t.vW8iUF), S = m.intl.string(m.t["50gfOv"])) : O ? (C = m.intl.string(m.t.vdSOpz), S = m.intl.string(m.t.lm1UKt)) : x ? (C = m.intl.formatToPlainString(m.t.v1ktYb, {
+    min: f.$8o.MEMBER_AGE
+  }), S = m.intl.string(m.t.BddRzS)) : v && (C = m.intl.formatToPlainString(m.t.sncw41, {
+    min: f.$8o.ACCOUNT_AGE
+  }), S = m.intl.string(m.t.BddRzS))), null == E || null == C) ? null : (0, l.jsxs)(a.lGe, {
+    className: b.kL,
     "aria-labelledby": y,
     children: [(0, l.jsx)("img", {
       alt: "",
-      className: m.Sl,
+      className: b.Sl,
       src: n(303528)
     }), (0, l.jsxs)("div", {
-      className: m.Qs,
-      children: [(0, l.jsx)(s.Heading, {
+      className: b.Qs,
+      children: [(0, l.jsx)(a.Heading, {
         variant: "heading-md/semibold",
         id: y,
-        children: _
-      }), (0, l.jsx)(s.Text, {
+        children: E
+      }), (0, l.jsx)(a.Text, {
         color: "text-default",
         variant: "text-sm/normal",
         children: C
       }), (0, l.jsxs)("div", {
-        className: m.UD,
+        className: b.UD,
         children: [null != S ? (0, l.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: m.FS,
-          children: (0, l.jsx)(s.Button, {
+          className: b.FS,
+          children: (0, l.jsx)(a.Button, {
             variant: "primary",
             text: S,
             onClick: () => {
-              if (O) c.R();
-              else if (v)(0, s.mMO)(async () => {
+              if (_) c.R();
+              else if (j)(0, a.mMO)(async () => {
                 let {
                   default: e
                 } = await Promise.resolve().then(n.bind(n, 615715));
@@ -88,23 +88,23 @@ let y = e => {
                   reason: d.d.GUILD_PHONE_REQUIRED
                 }, t))
               }, {
-                modalKey: b.V
+                modalKey: g.V
               });
-              else if (j) {
+              else if (O) {
                 var e;
-                o.A.verifyResend(), (0, a.A)({
-                  title: g.intl.string(g.t.LykQYk),
-                  subtitle: g.intl.format(g.t.azKEPy, {
-                    email: null == (e = p.default.getCurrentUser()) ? true : e.email
+                o.A.verifyResend(), (0, s.A)({
+                  title: m.intl.string(m.t.LykQYk),
+                  subtitle: m.intl.format(m.t.azKEPy, {
+                    email: null == (e = h.default.getCurrentUser()) ? true : e.email
                   })
                 })
               }
               A()
             }
           })
-        }) : null, O || v || j ? (0, l.jsx)(s.QWc, {
+        }) : null, _ || j || O ? (0, l.jsx)(a.QWc, {
           onClick: A,
-          text: g.intl.string(g.t.oEAioF),
+          text: m.intl.string(m.t.oEAioF),
           variant: "secondary"
         }) : null]
       })]

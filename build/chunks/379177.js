@@ -1,11 +1,11 @@
 /** Chunk was on 59275 **/
-/** chunk id: 379177, original params: e,t,l (module,exports,require) **/
+/** chunk id: 379177, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   eJ: () => s,
-  rR: () => r
+  rR: () => l
 });
-let n = (0, require("./945810.js").mj)({
+let r = (0, require("./945810.js").mj)({
     name: "2025-10-orb-rental",
     kind: "user",
     defaultConfig: {
@@ -31,9 +31,9 @@ let n = (0, require("./945810.js").mj)({
       }
     }
   }),
-  r = e => n.useConfig({
+  l = e => r.useConfig({
     location: e
   }).enabled,
-  s = e => n.useConfig({
+  s = e => r.useConfig({
     location: e
   }).rentalDuration

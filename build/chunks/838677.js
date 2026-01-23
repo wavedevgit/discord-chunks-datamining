@@ -12,13 +12,13 @@ let r = function() {
       className: "emoji",
       convert: {
         fromCodePoint: E,
-        toCodePoint: A
+        toCodePoint: v
       },
       onerror: function() {
         this.parentNode && this.parentNode.replaceChild(l(this.alt, false), this)
       },
-      parse: b,
-      replace: y,
+      parse: y,
+      replace: b,
       test: O
     },
     t = {
@@ -54,12 +54,12 @@ let r = function() {
   }
 
   function f(e) {
-    return A(0 > e.indexOf(i) ? e.replace(r, "") : e)
+    return v(0 > e.indexOf(i) ? e.replace(r, "") : e)
   }
 
   function p(e, t) {
-    for (var r, i, a, s, o, c, u, p, _, h, m, g, E, b = d(e, []), y = b.length; y--;) {
-      for (a = false, s = document.createDocumentFragment(), c = (o = b[y]).nodeValue, p = 0; u = n.exec(c);) {
+    for (var r, i, a, s, o, c, u, p, _, h, m, g, E, y = d(e, []), b = y.length; b--;) {
+      for (a = false, s = document.createDocumentFragment(), c = (o = y[b]).nodeValue, p = 0; u = n.exec(c);) {
         if ((_ = u.index) !== p && s.appendChild(l(c.slice(p, _), true)), g = f(m = u[0]), p = _ + m.length, E = t.callback(g, t), g && E) {
           for (i in (h = new Image).onerror = t.onerror, h.setAttribute("draggable", "false"), r = t.attributes(m, g)) r.hasOwnProperty(i) && 0 !== i.indexOf("on") && !h.hasAttribute(i) && h.setAttribute(i, r[i]);
           h.className = t.className, h.alt = m, h.src = E, a = true, s.appendChild(h)
@@ -72,7 +72,7 @@ let r = function() {
   }
 
   function _(e, t) {
-    return y(e, function(e) {
+    return b(e, function(e) {
       var n, r, i = e,
         a = f(e),
         s = t.callback(a, t);
@@ -101,7 +101,7 @@ let r = function() {
     return t < 65536 ? o(t) : o(55296 + ((t -= 65536) >> 10), 56320 + (1023 & t))
   }
 
-  function b(t, n) {
+  function y(t, n) {
     return n && "function" != typeof n || (n = {
       callback: n
     }), ("string" == typeof t ? _ : p)(t, {
@@ -115,7 +115,7 @@ let r = function() {
     })
   }
 
-  function y(e, t) {
+  function b(e, t) {
     return String(e).replace(n, t)
   }
 
@@ -125,7 +125,7 @@ let r = function() {
     return n.lastIndex = 0, t
   }
 
-  function A(e, t) {
+  function v(e, t) {
     for (var n = [], r = 0, i = 0, a = 0; a < e.length;) r = e.charCodeAt(a++), i ? (n.push((65536 + (i - 55296 << 10) + (r - 56320)).toString(16)), i = 0) : 55296 <= r && r <= 56319 ? i = r : n.push(r.toString(16));
     return n.join(t || "-")
   }

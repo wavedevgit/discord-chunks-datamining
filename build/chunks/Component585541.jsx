@@ -2,7 +2,7 @@
 /** chunk id: 585541, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => x
+  A: () => A
 }), require("./896048.js"), require("./65821.js"), require("./492834.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,58 +20,58 @@ var Chunk627968 = require("./627968.js"),
   Chunk497039 = require("./497039.js"),
   Chunk473169 = require("./473169.js");
 
-function x(e) {
+function A(e) {
   let {
     setOriginalEmail: t,
     setSlide: s,
-    ready: x,
-    token: _
-  } = e, [E, b] = i.useState(false), [v, j] = i.useState(null), [y, S] = i.useState(null), [N, O] = i.useState(""), I = i.useRef(null);
+    ready: A,
+    token: x
+  } = e, [E, v] = i.useState(false), [j, y] = i.useState(null), [b, S] = i.useState(null), [I, N] = i.useState(""), O = i.useRef(null);
   return i.useEffect(() => {
-    if (x) {
+    if (A) {
       var e;
-      null == (e = I.current) || e.focus()
+      null == (e = O.current) || e.focus()
     }
-  }, [x]), (0, r.jsxs)("div", {
+  }, [A]), (0, r.jsxs)("div", {
     children: [(0, r.jsx)(u._V, {
-      src: null == y ? n(79418) : n(579656),
-      className: l()(A.SX, A.Ot)
+      src: null == b ? n(79418) : n(579656),
+      className: l()(_.SX, _.Ot)
     }), (0, r.jsx)(u.hE, {
-      children: g.intl.string(g.t.IfBQ56)
-    }), null != y && "" !== y ? (0, r.jsx)(o.Text, {
+      children: m.intl.string(m.t.IfBQ56)
+    }), null != b && "" !== b ? (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "text-feedback-critical",
-      children: y
+      children: b
     }) : null, (0, r.jsxs)(u.eB, {
-      className: l()(A.SX, A.QX),
+      className: l()(_.SX, _.QX),
       children: [(0, r.jsx)(u.pd, {
         name: "password",
         type: "password",
-        label: g.intl.string(g.t["8dM4FO"]),
-        setRef: I,
-        className: A.SX,
-        value: N,
-        onChange: O,
-        error: v,
+        label: m.intl.string(m.t["8dM4FO"]),
+        setRef: O,
+        className: _.SX,
+        value: I,
+        onChange: N,
+        error: j,
         autoComplete: "new-password",
         maxLength: 72,
-        placeholder: g.intl.string(g.t["yY/PXY"])
+        placeholder: m.intl.string(m.t["yY/PXY"])
       }), (0, r.jsx)("div", {
-        className: A.Ot,
+        className: _.Ot,
         children: (0, r.jsx)(o.Button, {
-          text: g.intl.string(g.t.ezv91b),
+          text: m.intl.string(m.t.ezv91b),
           fullWidth: true,
           onClick: () => {
             if (!E) {
-              if (0 === N.length) {
-                j(g.intl.string(g.t.R98xD5)), d._.dispatch(p.jej.WAVE_EMPHASIZE);
+              if (0 === I.length) {
+                y(m.intl.string(m.t.R98xD5)), d._.dispatch(g.jej.WAVE_EMPHASIZE);
                 return
               }
-              return null != y && S(null), null != v && j(null), t(""), b(true), h.A.post({
-                url: p.Rsh.ACCOUNT_REVERT,
+              return null != b && S(null), null != j && y(null), t(""), v(true), h.A.post({
+                url: g.Rsh.ACCOUNT_REVERT,
                 body: {
-                  token: _,
-                  password: N
+                  token: x,
+                  password: I
                 },
                 trackedActionData: {
                   event: a.NetworkActionNames.ACCOUNT_REVERT
@@ -83,31 +83,31 @@ function x(e) {
                     email: n
                   }
                 } = e;
-                O(""), t(n), s(f.k.SUCCESS)
+                N(""), t(n), s(p.k.SUCCESS)
               }).catch(e => {
-                if (e instanceof Error) S(g.intl.formatToPlainString(g.t.aTVNes, {
-                  statusPageURL: p.qF7.STATUS
+                if (e instanceof Error) S(m.intl.formatToPlainString(m.t.aTVNes, {
+                  statusPageURL: g.qF7.STATUS
                 }));
                 else {
                   let t = new c.A(e);
-                  t.hasFieldErrors() ? j(t.getAnyErrorMessage()) : S((function(e) {
+                  t.hasFieldErrors() ? y(t.getAnyErrorMessage()) : S((function(e) {
                     switch (e) {
-                      case p.t02.ACCOUNT_REVERT_INVALID_TOKEN:
-                        return g.intl.string(g.t["11zzGR"]);
-                      case p.t02.ACCOUNT_REVERT_EMAIL_ALREADY_TAKEN:
-                        return g.intl.string(g.t["6qmgaI"]);
-                      case p.t02.ACCOUNT_REVERT_ACCOUNT_NOT_FOUND:
-                        return g.intl.string(g.t.bChnKs);
+                      case g.t02.ACCOUNT_REVERT_INVALID_TOKEN:
+                        return m.intl.string(m.t["11zzGR"]);
+                      case g.t02.ACCOUNT_REVERT_EMAIL_ALREADY_TAKEN:
+                        return m.intl.string(m.t["6qmgaI"]);
+                      case g.t02.ACCOUNT_REVERT_ACCOUNT_NOT_FOUND:
+                        return m.intl.string(m.t.bChnKs);
                       default:
-                        return g.intl.format(g.t.aTVNes, {
-                          statusPageURL: p.qF7.STATUS
+                        return m.intl.format(m.t.aTVNes, {
+                          statusPageURL: g.qF7.STATUS
                         })
                     }
                   })(t.code).toString())
                 }
-                d._.dispatch(p.jej.WAVE_EMPHASIZE)
+                d._.dispatch(g.jej.WAVE_EMPHASIZE)
               }).finally(() => {
-                b(false)
+                v(false)
               })
             }
           },
@@ -116,13 +116,13 @@ function x(e) {
         })
       })]
     }), (0, r.jsx)("div", {
-      className: m.UD,
+      className: f.UD,
       children: (0, r.jsx)(o.Button, {
-        text: g.intl.string(g.t.rzxnQ8),
+        text: m.intl.string(m.t.rzxnQ8),
         variant: "secondary",
         fullWidth: true,
         onClick: () => {
-          O(""), s(f.k.START)
+          N(""), s(p.k.START)
         }
       })
     })]

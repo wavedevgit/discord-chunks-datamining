@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   EC: () => E,
-  j8: () => b,
+  j8: () => y,
   uZ: () => g
 }), require("./938796.js");
 var Chunk64700 = require("./64700.js"),
@@ -54,7 +54,7 @@ function E(e) {
   }, [e])
 }
 
-function b(e) {
+function y(e) {
   let {
     guildId: t,
     scrollPosition: o,

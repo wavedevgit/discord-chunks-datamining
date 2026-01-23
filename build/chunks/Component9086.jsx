@@ -20,54 +20,54 @@ function h(e) {
   } = e, {
     hasMessageContent: n,
     hasGuildPresences: s,
-    hasGuildMembers: o,
+    hasGuildMembers: c,
     hasIntents: h
-  } = (0, i.Z)({
+  } = (0, a.Z)({
     flags: null == t ? true : t.flags
-  }), b = a.useCallback(() => {
-    null != t.privacy_policy_url && (0, c.h)({
+  }), g = l.useCallback(() => {
+    null != t.privacy_policy_url && (0, o.h)({
       href: t.privacy_policy_url
     })
   }, [t.privacy_policy_url]);
-  return (0, l.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: u.hd,
-    children: [(0, l.jsx)(r.Heading, {
+    children: [(0, r.jsx)(i.Heading, {
       variant: "heading-lg/semibold",
       color: "text-strong",
       children: d.intl.string(d.t.QzDgMq)
-    }), (0, l.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       className: u.hQ,
-      children: [h && (0, l.jsxs)("ul", {
+      children: [h && (0, r.jsxs)("ul", {
         className: u.In,
-        children: [(0, l.jsx)(r.Heading, {
+        children: [(0, r.jsx)(i.Heading, {
           variant: "heading-md/semibold",
           color: "text-default",
           children: d.intl.string(d.t.U6KH5S)
-        }), n && (0, l.jsx)(m, {
-          icon: r.oyn,
+        }), n && (0, r.jsx)(m, {
+          icon: i.oyn,
           heading: d.intl.string(d.t.gJpBO2),
           body: d.intl.string(d.t["L+QVbh"])
-        }), s && (0, l.jsx)(m, {
-          icon: r.nRI,
+        }), s && (0, r.jsx)(m, {
+          icon: i.nRI,
           heading: d.intl.string(d.t["jo0oj/"]),
           body: d.intl.string(d.t.Dm0jqx)
-        }), o && (0, l.jsx)(m, {
-          icon: r.nFg,
+        }), c && (0, r.jsx)(m, {
+          icon: i.nFg,
           heading: d.intl.string(d.t.QZql7O),
           body: d.intl.string(d.t["ez/N/R"])
         })]
-      }), (0, l.jsx)(r.Text, {
+      }), (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "text-default",
         children: d.intl.format(d.t.b6nqk0, {
           helpCenterUrl: p
         })
-      }), null != t.privacy_policy_url && (0, l.jsx)(r.Text, {
+      }), null != t.privacy_policy_url && (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "text-default",
         className: u.hM,
         children: d.intl.format(d.t.agYVY5, {
-          onClick: b
+          onClick: g
         })
       })]
     })]
@@ -78,23 +78,23 @@ function m(e) {
   let {
     icon: t,
     heading: n,
-    body: a
+    body: l
   } = e;
-  return (0, l.jsxs)("li", {
+  return (0, r.jsxs)("li", {
     className: u.KT,
-    children: [(0, l.jsx)(t, {
+    children: [(0, r.jsx)(t, {
       color: "currentColor",
       size: "md"
-    }), (0, l.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       className: u.D6,
-      children: [(0, l.jsx)(r.Heading, {
+      children: [(0, r.jsx)(i.Heading, {
         variant: "heading-md/semibold",
         color: "text-default",
         children: n
-      }), (0, l.jsx)(r.Text, {
+      }), (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        children: a
+        children: l
       })]
     })]
   })

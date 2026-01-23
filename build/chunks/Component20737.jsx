@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk554146 = require("./554146.js"),
   Chunk397927 = require("./397927.js"),
@@ -86,19 +86,19 @@ let z = Chunk64700.memo(function(e) {
     setValue: J,
     canOnlyUseTextCommands: Q,
     chatInputType: Z
-  } = e, $ = (0, v.Us)(), ee = l.useRef(null), et = l.useRef(null), en = (0, s.bG)([P.A], () => P.A.getActivities()), er = (0, m.Et)(), el = (0, s.bG)([g.A], () => g.A.getLastClipsSession()), ei = (0, s.yK)([g.A], () => g.A.getNewClipIds()), ea = (0, s.bG)([S.Ay], () => null == S.Ay.getCurrentSidebarChannelId(Y.id)), {
-    showClipsHeaderEntrypoint: es
-  } = b.L_.useExperiment({
+  } = e, $ = (0, j.Us)(), ee = l.useRef(null), et = l.useRef(null), en = (0, a.bG)([P.A], () => P.A.getActivities()), er = (0, b.Et)(), el = (0, a.bG)([m.A], () => m.A.getLastClipsSession()), ei = (0, a.yK)([m.A], () => m.A.getNewClipIds()), es = (0, a.bG)([S.Ay], () => null == S.Ay.getCurrentSidebarChannelId(Y.id)), {
+    showClipsHeaderEntrypoint: ea
+  } = g.L_.useExperiment({
     location: "ChannelAttachButton"
   }, {
     autoTrackExposure: false
   }), {
     onShareClick: eo
-  } = (0, y.A)(Y.id), ec = (0, s.bG)([j.HP], () => j.HP.hasHotspot(j._2.CLIPS_CHANNEL_ATTACH_REMINDER)), eu = (0, c.red)(e => (0, c.fDT)(e, V.nm)), ed = (0, s.bG)([I.A], () => I.A.hasLayers()), ef = (0, s.bG)([g.A], () => g.A.hasClips()), [ep, eh] = l.useState(null), eb = (0, b.sw)() && (er || ef), eg = Y.isPrivate(), em = (0, s.bG)([T.A], () => eg || T.A.can(U.xBc.ATTACH_FILES, Y) && T.A.can(U.xBc.SEND_MESSAGES, Y)), eA = (0, d.A)(el);
-  (null == eA ? true : eA.newClipIds.length) !== (null == el ? true : el.newClipIds.length) && (null != (t = null == el ? true : el.newClipIds.length) ? t : 0) > 0 && null == ep && ec && ea && !eu && !es && !ed && eh("recentClips");
-  let ey = (0, s.bG)([N.A], () => N.A.hasCurrentUserSentMessageSinceAppStart());
+  } = (0, y.A)(Y.id), ec = (0, a.bG)([O.HP], () => O.HP.hasHotspot(O._2.CLIPS_CHANNEL_ATTACH_REMINDER)), eu = (0, c.red)(e => (0, c.fDT)(e, B.nm)), ed = (0, a.bG)([I.A], () => I.A.hasLayers()), ep = (0, a.bG)([m.A], () => m.A.hasClips()), [eh, ef] = l.useState(null), eg = (0, g.sw)() && (er || ep), em = Y.isPrivate(), eb = (0, a.bG)([T.A], () => em || T.A.can(U.xBc.ATTACH_FILES, Y) && T.A.can(U.xBc.SEND_MESSAGES, Y)), eA = (0, d.A)(el);
+  (null == eA ? true : eA.newClipIds.length) !== (null == el ? true : el.newClipIds.length) && (null != (t = null == el ? true : el.newClipIds.length) ? t : 0) > 0 && null == eh && ec && es && !eu && !ea && !ed && ef("recentClips");
+  let ey = (0, a.bG)([N.A], () => N.A.hasCurrentUserSentMessageSinceAppStart());
 
-  function eO() {
+  function e_() {
     (0, c.mMO)(async () => {
       let {
         default: e
@@ -110,8 +110,8 @@ let z = Chunk64700.memo(function(e) {
         })
       }))
     }, {
-      modalKey: V.nm
-    }), eh(null)
+      modalKey: B.nm
+    }), ef(null)
   }
   l.useEffect(() => {
     let e = e => {
@@ -127,69 +127,69 @@ let z = Chunk64700.memo(function(e) {
       w._.unsubscribe(U.jej.UPLOAD_FILE, e)
     }
   });
-  let ej = (0, _.n)(Y),
-    ev = (0, _.Tb)(Y),
-    ex = !C.D_.useSetting() && !(0, R.isAndroidWeb)() && null != window.ResizeObserver,
-    eE = (0, h.H)({
+  let eO = (0, E.n)(Y),
+    ej = (0, E.Tb)(Y),
+    ev = !C.D_.useSetting() && !(0, R.isAndroidWeb)() && null != window.ResizeObserver,
+    ex = (0, f.H)({
       channel: Y,
       chatInputType: Z
     }),
-    e_ = (0, x.I7)(null != Y ? Y : true),
-    eC = (0, f.t8)(),
-    eS = (0, E.Sc)({
+    eE = (0, v.I7)(null != Y ? Y : true),
+    eC = (0, p.t8)(),
+    eS = (0, x.Sc)({
       location: "ChannelAttachButton"
     }),
-    eI = (0, p.b)(),
+    eI = (0, h.b)(),
     eN = null != (i = null == ei ? true : ei.length) ? i : 0,
-    eT = (0, k.A)({
-      canAttachFiles: em,
-      canStartThreads: ej || ev,
-      useSlate: ex,
-      hasClips: eb,
+    eT = (0, G.A)({
+      canAttachFiles: eb,
+      canStartThreads: eO || ej,
+      useSlate: ev,
+      hasClips: eg,
       canUseApplicationCommands: !Q,
       channel: Y,
       activities: en,
       newClipsCount: eN,
-      canPostPolls: e_,
+      canPostPolls: eE,
       canLaunchActivities: eC,
       appContext: $,
       canSendScheduledMessages: eS,
       canSummarizeThreads: eI,
-      showAppLauncher: eE
+      showAppLauncher: ex
     });
   if (0 === eT.length) return null;
   let eP = (0, r.jsx)(c.pa$, {
       size: "refresh_sm",
       color: "currentColor",
-      colorClass: B.dW
+      colorClass: H.dW
     }),
     ew = (0, r.jsx)(c.YNO, {
       targetElementRef: et,
-      shouldShow: null != ep,
+      shouldShow: null != eh,
       animation: c.YNO.Animation.NONE,
-      align: "recentClips" === ep ? "center" : "left",
+      align: "recentClips" === eh ? "center" : "left",
       position: "top",
-      positionKey: null != ep ? ep : "null",
+      positionKey: null != eh ? eh : "null",
       onRequestOpen: () => {
-        ey && (0, O.Dr)(o.M.ACTIVITIES_CHAT_BUTTON_NUX_V2, {
-          dismissAction: F.i.TAKE_ACTION
-        }), eh("attachMenu")
+        ey && (0, _.Dr)(o.M.ACTIVITIES_CHAT_BUTTON_NUX_V2, {
+          dismissAction: V.i.TAKE_ACTION
+        }), ef("attachMenu")
       },
       onRequestClose: () => {
-        (0, c.ueM)() || (ey && (0, O.Dr)(o.M.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
-          dismissAction: F.i.TAKE_ACTION
-        }), eh(null))
+        (0, c.ueM)() || (ey && (0, _.Dr)(o.M.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
+          dismissAction: V.i.TAKE_ACTION
+        }), ef(null))
       },
       renderPopout: e => {
-        switch (ep) {
+        switch (eh) {
           case "recentClips":
             return (0, r.jsx)(A.A, W(K({}, e), {
-              onOpenClips: eO,
+              onOpenClips: e_,
               lastClipsSession: el
             }));
           case "attachMenu":
-            return (0, r.jsx)(G.A, W(K({}, e), {
-              onClose: () => eh(null),
+            return (0, r.jsx)(k.A, W(K({}, e), {
+              onClose: () => ef(null),
               options: eT,
               channel: Y,
               onFileUpload: () => {
@@ -199,7 +199,7 @@ let z = Chunk64700.memo(function(e) {
               draftType: q,
               editorTextContent: X,
               setValue: J,
-              openClips: eO,
+              openClips: e_,
               chatInputType: Z
             }));
           default:
@@ -208,11 +208,11 @@ let z = Chunk64700.memo(function(e) {
       },
       children: e => (0, r.jsx)(L.A, W(K({
         ref: et,
-        className: a()(B.g$, z),
-        childClassName: B.wh,
+        className: s()(H.g$, z),
+        childClassName: H.wh,
         isActive: false,
-        "aria-label": H.intl.string(H.t.d56gCa),
-        onDoubleClick: em ? () => {
+        "aria-label": F.intl.string(F.t.d56gCa),
+        onDoubleClick: eb ? () => {
           var e;
           return null == (e = ee.current) ? true : e.activateUploadDialogue()
         } : true,
@@ -223,7 +223,7 @@ let z = Chunk64700.memo(function(e) {
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: B.EJ,
+      className: H.EJ,
       children: (0, r.jsx)(u.A, {
         ref: ee,
         onChange: e => {
@@ -238,15 +238,15 @@ let z = Chunk64700.memo(function(e) {
         "aria-hidden": true
       })
     }), (0, r.jsx)("div", {
-      className: B.Jd,
+      className: H.Jd,
       children: (0, r.jsx)(M.A, {
         channel: Y,
-        isOmniMenuOpen: "attachMenu" === ep,
-        openOmniMenu: () => eh("attachMenu"),
+        isOmniMenuOpen: "attachMenu" === eh,
+        openOmniMenu: () => ef("attachMenu"),
         enabled: eC,
-        animationContainerClassName: B.Vk,
-        glowClassName: B.im,
-        trinketsClassName: B.xK,
+        animationContainerClassName: H.Vk,
+        glowClassName: H.im,
+        trinketsClassName: H.xK,
         children: ew
       })
     })]

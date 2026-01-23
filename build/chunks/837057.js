@@ -24,9 +24,9 @@ function h(e) {
       selectedTab: E
     }), E) {
     case d.GlobalDiscoveryTab.SERVERS:
-      let b = e.selectedServersTab;
-      return null != b ? a.A.setState({
-        selectedTab: b,
+      let y = e.selectedServersTab;
+      return null != y ? a.A.setState({
+        selectedTab: y,
         entrypoint: null != (t = e.entrypoint) ? t : _.J8.UNKNOWN
       }) : a.A.setState({
         entrypoint: null != (n = e.entrypoint) ? n : _.J8.UNKNOWN

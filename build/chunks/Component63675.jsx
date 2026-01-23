@@ -28,37 +28,37 @@ function E(e) {
     pendingColors: i,
     onThemeColorsChange: s,
     preventDisabled: E,
-    guildId: b,
-    className: y,
+    guildId: y,
+    className: b,
     showPremiumIcon: O = true,
-    showResetThemeButton: A = false,
-    forcedDivider: v
-  } = e, S = (0, d.Ay)(t.id, b), {
-    primaryColor: I,
+    showResetThemeButton: v = false,
+    forcedDivider: A
+  } = e, I = (0, d.Ay)(t.id, y), {
+    primaryColor: S,
     secondaryColor: T
   } = (0, f.A)({
     user: t,
-    displayProfile: S,
+    displayProfile: I,
     pendingThemeColors: i,
     isPreview: true
-  }), C = p.Ay.canUsePremiumProfileCustomization(t), N = null != n ? n : t.getAvatarURL(b, 80), R = (0, c.rdh)(l.A.unsafe_rawColors.PRIMARY_530).hex(), w = (0, u.rh)(N, R, false);
-  if (null == I || null == T) return null;
+  }), C = p.Ay.canUsePremiumProfileCustomization(t), N = null != n ? n : t.getAvatarURL(y, 80), R = (0, c.rdh)(l.A.unsafe_rawColors.PRIMARY_530).hex(), w = (0, u.rh)(N, R, false);
+  if (null == S || null == T) return null;
   let P = e => {
-    s(o()(e, null == S ? true : S.themeColors) ? true : e)
+    s(o()(e, null == I ? true : I.themeColors) ? true : e)
   };
   return (0, r.jsx)(h.A, {
     title: m.intl.string(m.t.DMeO2X),
     disabled: !C && !E,
-    className: a()(g.__invalid_profileThemesSection, y),
+    className: a()(g.__invalid_profileThemesSection, b),
     showPremiumIcon: O,
-    forcedDivider: v,
+    forcedDivider: A,
     children: (0, r.jsxs)("div", {
       className: g.hd,
       children: [(0, r.jsx)("div", {
         className: g.YX,
         children: (0, r.jsx)(_.A, {
           onChange: e => P([e, T]),
-          color: I,
+          color: S,
           suggestedColors: w,
           showEyeDropper: true,
           label: (0, r.jsx)(c.Text, {
@@ -72,7 +72,7 @@ function E(e) {
       }), (0, r.jsx)("div", {
         className: g.YX,
         children: (0, r.jsx)(_.A, {
-          onChange: e => P([I, e]),
+          onChange: e => P([S, e]),
           color: T,
           suggestedColors: w,
           showEyeDropper: true,
@@ -84,7 +84,7 @@ function E(e) {
             children: m.intl.string(m.t["8elvy6"])
           })
         })
-      }), A && null != b && (0, r.jsx)("div", {
+      }), v && null != y && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: g.WA,
         children: (0, r.jsx)(c.Button, {

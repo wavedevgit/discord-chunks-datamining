@@ -23,13 +23,13 @@ require("./827669.js");
 var Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk440874 = require("./440874.js");
-let y = 8,
+let b = 8,
   O = 4,
-  A = 4,
-  v = 40,
-  S = 6;
+  v = 4,
+  A = 40,
+  I = 6;
 
-function I(e, t) {
+function S(e, t) {
   return (0, r.jsx)(d.A, {
     sticker: e,
     isInteracting: t,
@@ -54,7 +54,7 @@ let N = {
     let s = r.allowSoundmoji && (0, a.AA)({
         location: "queryResults"
       }),
-      c = r.allowStickers || s ? 0 : v,
+      c = r.allowStickers || s ? 0 : A,
       u = g.rs7 + c,
       {
         emojis: {
@@ -77,14 +77,14 @@ let N = {
     if (r.allowStickers) {
       (0, l.YB)();
       let t = _.Ay.queryStickers([n], true, [e, (e, t) => t === o.Ux.SENDABLE]),
-        r = Math.max(O, y - d.length);
+        r = Math.max(O, b - d.length);
       f = t.slice(0, r), "-" === n[0] && (f = t.filter(e => e.sticker.name === n))
     }
     let p = [];
     s && (p = _.Ay.querySoundmoji(n, e).map(e => ({
       sound: e
-    })).slice(0, A), "-" === n[0] && (p = p.filter(e => e.sound.name === n)));
-    let h = d.slice(0, Math.max(S, u - f.length - p.length));
+    })).slice(0, v), "-" === n[0] && (p = p.filter(e => e.sound.name === n)));
+    let h = d.slice(0, Math.max(I, u - f.length - p.length));
     return {
       results: {
         emojis: h,
@@ -129,7 +129,7 @@ let N = {
         getQuery: e => "".concat(":").concat(e),
         key: "emoji"
       }), u && d && (0, r.jsx)(i.Ay.Divider, {
-        className: b.y
+        className: y.y
       }), (0, h.GM)({
         query: o,
         selectedIndex: s,
@@ -145,7 +145,7 @@ let N = {
             sticker: n
           } = e;
           return {
-            renderSticker: I,
+            renderSticker: S,
             queryMatch: t !== n.name.toLocaleLowerCase() ? t : true,
             sticker: n,
             key: n.id
@@ -154,9 +154,9 @@ let N = {
         getQuery: e => e,
         key: "stickers",
         indexOffset: t.length,
-        headerClassName: u ? b._ : true
+        headerClassName: u ? y._ : true
       }), (u || d) && a.length > 0 && (0, r.jsx)(i.Ay.Divider, {
-        className: b.y
+        className: y.y
       }), (0, h.GM)({
         query: o,
         selectedIndex: s,
@@ -178,7 +178,7 @@ let N = {
         getQuery: e => e,
         key: "soundmoji",
         indexOffset: t.length + n.length,
-        headerClassName: u || d ? b._ : true
+        headerClassName: u || d ? y._ : true
       })]
     })
   },

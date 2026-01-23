@@ -29,16 +29,16 @@ function O(e) {
   } = (0, f.R)(), h = i.useMemo(() => (function(e, t) {
     let r, n;
     switch (t) {
-      case b.p$.NAME:
+      case C.p$.NAME:
         r = e => e.name.toLowerCase(), n = "asc";
         break;
-      case b.p$.PRICE_ASC:
+      case C.p$.PRICE_ASC:
         r = "price_tier", n = "asc";
         break;
-      case b.p$.PRICE_DESC:
+      case C.p$.PRICE_DESC:
         r = "price_tier", n = "desc";
         break;
-      case b.p$.NEWEST_ARRIVALS:
+      case C.p$.NEWEST_ARRIVALS:
         r = "published_at", n = "desc";
         break;
       default:
@@ -47,13 +47,13 @@ function O(e) {
     return c().orderBy(e, [r], [n])
   })(s, g), [s, g]);
   return o ? (0, n.jsx)("ul", {
-    className: j.Ui,
-    "aria-label": C.intl.string(C.t.qe4kTa),
+    className: b.Ui,
+    "aria-label": j.intl.string(j.t.qe4kTa),
     children: h.map(e => (0, n.jsx)("li", {
-      className: j.Nr,
+      className: b.Nr,
       children: (0, n.jsx)("div", {
-        className: l()(j.Ux, {
-          [j.Oj]: e.id === r
+        className: l()(b.Ux, {
+          [b.Oj]: e.id === r
         }),
         ref: e.id === r ? O : true,
         onLoad: () => {
@@ -62,7 +62,7 @@ function O(e) {
             behavior: "smooth",
             block: "center"
           }), setTimeout(() => {
-            t.classList.remove(j.Oj)
+            t.classList.remove(b.Oj)
           }, 2e3))
         },
         children: (0, n.jsx)(p.i, {

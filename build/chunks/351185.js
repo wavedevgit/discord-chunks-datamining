@@ -57,13 +57,13 @@ function m(e, t) {
 let g = 3,
   E = 9;
 
-function b() {}
-let y = 20 * Chunk927813.A.Millis.SECOND,
+function y() {}
+let b = 20 * Chunk927813.A.Millis.SECOND,
   O = 3,
-  A = +Chunk927813.A.Millis.MINUTE,
-  v = .25,
-  S = .1,
-  I = 5 * Chunk927813.A.Millis.SECOND,
+  v = +Chunk927813.A.Millis.MINUTE,
+  A = .25,
+  I = .1,
+  S = 5 * Chunk927813.A.Millis.SECOND,
   T = 2,
   C = 8;
 
@@ -127,7 +127,7 @@ class x extends Chunk972347.A {
     this.logger.info("[CONNECT] ".concat(this.url)), null !== this.webSocket && (this.logger.error("Connect called with already existing websocket"), this.cleanupWebSocket(e => e.close(4e3))), this.connectionStartTime = (0, o.tB)(), this.helloTimeout = setTimeout(() => {
       let e = (0, o.tB)() - this.connectionStartTime;
       this.handleClose(false, 0, "The connection timed out after ".concat(e, " ms - did not receive OP_HELLO in time."))
-    }, y);
+    }, b);
     let e = this.webSocket = new WebSocket("".concat(this.url, "?v=").concat(E));
     e.binaryType = "arraybuffer", e.onopen = () => {
       1 === this.connectionState ? this.emit("connect") : 5 === this.connectionState && this.doResumeOrClose(), this.connectionState = 4;
@@ -257,7 +257,7 @@ class x extends Chunk972347.A {
   }
   doResumeOrClose() {
     let e = (0, o.tB)();
-    null !== this.serverId && null !== this.channelId && null !== this.token && null !== this.sessionId && this.resumable && (null == this.lastHeartbeatAckTime || e - this.lastHeartbeatAckTime <= A) ? (this.doResume(), this.lastHeartbeatAckTime = e) : this.disconnect(false, 4801, "Cannot resume connection.")
+    null !== this.serverId && null !== this.channelId && null !== this.token && null !== this.sessionId && this.resumable && (null == this.lastHeartbeatAckTime || e - this.lastHeartbeatAckTime <= v) ? (this.doResume(), this.lastHeartbeatAckTime = e) : this.disconnect(false, 4801, "Cannot resume connection.")
   }
   doResume() {
     var e, t, n, r;
@@ -273,9 +273,9 @@ class x extends Chunk972347.A {
   handleHello(e) {
     var t, n, r;
     if (this.serverVersion = null != (t = e.v) ? t : g, this.serverVersion <= 3) {
-      let t = d.isPlatformEmbedded ? v : S;
+      let t = d.isPlatformEmbedded ? A : I;
       this.heartbeatInterval = e.heartbeat_interval * t
-    } else this.heartbeatInterval = e.heartbeat_interval * this.heartbeatIntervalModifier, d.isPlatformEmbedded || (this.heartbeatInterval = Math.min(I, null != (r = this.heartbeatInterval) ? r : NaN));
+    } else this.heartbeatInterval = e.heartbeat_interval * this.heartbeatIntervalModifier, d.isPlatformEmbedded || (this.heartbeatInterval = Math.min(S, null != (r = this.heartbeatInterval) ? r : NaN));
     let i = (0, o.tB)() - this.connectionStartTime;
     this.logger.info("[HELLO] heartbeat interval: ".concat(null != (n = this.heartbeatInterval) ? n : "??", ", version: ").concat(this.serverVersion, ", took ").concat(i, " ms")), this.startHeartbeater()
   }
@@ -304,7 +304,7 @@ class x extends Chunk972347.A {
   cleanupWebSocket(e) {
     this.stopHeartbeater(), this.clearHelloTimeout();
     let t = this.webSocket;
-    this.webSocket = null, null != t && (t.onopen = b, t.onmessage = b, t.onerror = b, t.onclose = b, null == e || e(t)), this.backoff.cancel()
+    this.webSocket = null, null != t && (t.onopen = y, t.onmessage = y, t.onerror = y, t.onclose = y, null == e || e(t)), this.backoff.cancel()
   }
   cleanupState() {
     this.serverId = null, this.channelId = null, this.sessionId = null, this.token = null, this.resumable = false, this.lastRecvSeqNum = null

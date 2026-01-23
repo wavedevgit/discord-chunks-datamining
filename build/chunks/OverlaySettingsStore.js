@@ -2,7 +2,7 @@
 /** chunk id: 592598, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./896048.js"), require("./446912.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -76,7 +76,7 @@ function E(e) {
   }, true
 }
 
-function b(e) {
+function y(e) {
   let {
     setting: t,
     disabled: n
@@ -84,7 +84,7 @@ function b(e) {
   return n ? m.notificationSettings.add(t) : m.notificationSettings.delete(t), m.notificationSettings = new Set(m.notificationSettings), true
 }
 
-function y(e) {
+function b(e) {
   switch (e) {
     case c.KS.TextChat:
       return l.M.TEXT_CHAT;
@@ -133,7 +133,7 @@ function O(e) {
   }));
   m.gameSettings = d({}, m.gameSettings, n)
 }
-class A extends(r = Chunk311907.Ay.PersistedStore) {
+class v extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var t;
     let n = h();
@@ -164,20 +164,20 @@ class A extends(r = Chunk311907.Ay.PersistedStore) {
     return m.notificationSettings.has(e)
   }
   isNotificationDisabled(e) {
-    let t = y(e);
+    let t = b(e);
     return null != t && m.notificationSettings.has(t)
   }
   getDisabledNotifications() {
     return m.notificationSettings
   }
   getDisabledSettingByNotificationType(e) {
-    return y(e)
+    return b(e)
   }
 }
-u(A, "displayName", "OverlaySettingsStore"), u(A, "persistKey", "OverlaySettingsStore");
-let v = new A(Chunk73153.h, {
+u(v, "displayName", "OverlaySettingsStore"), u(v, "persistKey", "OverlaySettingsStore");
+let A = new v(Chunk73153.h, {
   LOGOUT: _,
   OVERLAY_SET_LIMITED_INTERACTION_OVERRIDE: E,
-  OVERLAY_SET_NOTIFICATION_DISABLED_SETTING: b,
+  OVERLAY_SET_NOTIFICATION_DISABLED_SETTING: y,
   OVERLAY_INITIALIZE: O
 })

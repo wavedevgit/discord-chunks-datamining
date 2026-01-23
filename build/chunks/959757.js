@@ -17,14 +17,14 @@ function d(e) {
   switch (t) {
     case a.qS.NEEDS_COMMUNITY:
       return {
-        visibility: t, noticeText: o.intl.string(o.t["0Z2Qxt"]), ctaLabel: o.intl.string(o.t.BOJpl0), ctaClickable: null != e, onCtaClicked() {
+        visibility: t, noticeText: c.intl.string(c.t["0Z2Qxt"]), ctaLabel: c.intl.string(c.t.BOJpl0), ctaClickable: null != e, onCtaClicked() {
           var t;
-          i()(null != e, "Guild must be not null open COMMUNITY settings"), s.A.open(null != (t = null == e ? true : e.id) ? t : "", c.BEX.COMMUNITY)
+          i()(null != e, "Guild must be not null open COMMUNITY settings"), s.A.open(null != (t = null == e ? true : e.id) ? t : "", o.BEX.COMMUNITY)
         }
       };
     case a.qS.WAITLIST_ONLY:
       return {
-        visibility: t, noticeText: o.intl.string(o.t["5vz88G"]), ctaLabel: o.intl.string(o.t["6yjvmg"]), ctaClickable: true, onCtaClicked() {
+        visibility: t, noticeText: c.intl.string(c.t["5vz88G"]), ctaLabel: c.intl.string(c.t["6yjvmg"]), ctaClickable: true, onCtaClicked() {
           (0, l.A)("https://dis.gd/creators-waitlist")
         }
       };

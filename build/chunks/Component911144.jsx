@@ -2,7 +2,7 @@
 /** chunk id: 911144, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  C: () => E
+  C: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -29,12 +29,12 @@ function v(e) {
     originalVanityURLCode: t
   } = e;
   if (null != t && t.length > 0) {
-    let e = (0, o.A)(t);
+    let e = (0, c.A)(t);
     return (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "text-subtle",
-      className: y.YQ,
-      children: O.intl.format(O.t["1qTOvn"], {
+      className: O.YQ,
+      children: _.intl.format(_.t["1qTOvn"], {
         urlText: e,
         urlValue: e
       })
@@ -43,85 +43,85 @@ function v(e) {
   return null
 }
 
-function A(e) {
+function y(e) {
   let {
     guild: t,
     vanityURLCode: n,
     vanityURLUses: l,
     originalVanityURLCode: a,
-    errorDetails: c
-  } = e, o = (null == t ? true : t.features.has(h.GuildFeatures.VANITY_URL)) === true, d = i.useCallback(() => {
-    (0, g.OH)("")
+    errorDetails: o
+  } = e, c = (null == t ? true : t.features.has(x.GuildFeatures.VANITY_URL)) === true, d = i.useCallback(() => {
+    (0, m.OH)("")
   }, []), u = i.useCallback(e => {
-    (0, g.OH)(e)
+    (0, m.OH)(e)
   }, []);
   if (null == n) return (0, r.jsx)(s.y$y, {});
-  let f = null != c ? (0, b.z)(c.code) : null;
+  let g = null != o ? (0, p.z)(o.code) : null;
   return (0, r.jsxs)(s.ZpM, {
     editable: true,
-    className: y.pU,
+    className: O.pU,
     children: [(0, r.jsxs)("div", {
-      className: y.p2,
+      className: O.p2,
       children: [(0, r.jsx)(s.Heading, {
         variant: "heading-sm/semibold",
         color: "text-default",
-        children: O.intl.string(O.t["6oJyq5"])
+        children: _.intl.string(_.t["6oJyq5"])
       }), n.length > 0 ? (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-subtle",
-        children: O.intl.format(O.t.MVWOUY, {
+        children: _.intl.format(_.t.MVWOUY, {
           uses: l
         })
       }) : null]
-    }), (0, r.jsx)(x.A, {
+    }), (0, r.jsx)(h.A, {
       value: n,
       onChange: u,
-      error: f,
-      disabled: !o
+      error: g,
+      disabled: !c
     }), null != a && a.length > 0 ? (0, r.jsx)("div", {
-      className: y.J9,
+      className: O.J9,
       children: (0, r.jsx)(s.Button, {
         variant: "critical-secondary",
         onClick: d,
-        text: O.intl.string(O.t["3ggb6K"])
+        text: _.intl.string(_.t["3ggb6K"])
       })
     }) : null]
   })
 }
 
-function E(e) {
+function A(e) {
   let {
     guild: t,
     vanityURLCode: n,
     vanityURLUses: s,
-    originalVanityURLCode: o,
-    errorDetails: g
+    originalVanityURLCode: c,
+    errorDetails: m
   } = e, {
-    analyticsLocations: x
-  } = (0, c.Ay)(), O = (0, d.M5)(t.id, "GuildSettingsBoostPerks"), E = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), O ? (f.A.close(), (0, u.A)(t.id, a.A.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.FB)) : (0, p.p_)({
+    analyticsLocations: h
+  } = (0, o.Ay)(), _ = (0, d.M5)(t.id, "GuildSettingsBoostPerks"), A = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), _ ? (g.A.close(), (0, u.A)(t.id, a.A.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.FB)) : (0, b.p_)({
       guild: t,
-      analyticsLocations: x,
-      analyticsSection: h.JJy.GUILD_SETTINGS_VANITY_URL,
-      analyticsObject: h.ZSU.BUTTON_CTA,
+      analyticsLocations: h,
+      analyticsSection: x.JJy.GUILD_SETTINGS_VANITY_URL,
+      analyticsObject: x.ZSU.BUTTON_CTA,
       perks: (0, j.DU)(),
-      targetPremiumGuildTier: h.TVA.TIER_3
+      targetPremiumGuildTier: x.TVA.TIER_3
     })
-  }, [x, t, O]);
+  }, [h, t, _]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, b.d)(t) ? (0, r.jsx)(A, {
+    children: [(0, p.d)(t) ? (0, r.jsx)(y, {
       guild: t,
       vanityURLCode: n,
       vanityURLUses: s,
-      originalVanityURLCode: o,
-      errorDetails: g
+      originalVanityURLCode: c,
+      errorDetails: m
     }) : (0, r.jsx)("div", {
-      className: y.Oy,
-      children: (0, r.jsx)(m.u, {
-        onClick: E
+      className: O.Oy,
+      children: (0, r.jsx)(f.u, {
+        onClick: A
       })
     }), (0, r.jsx)(v, {
-      originalVanityURLCode: o
+      originalVanityURLCode: c
     })]
   })
 }

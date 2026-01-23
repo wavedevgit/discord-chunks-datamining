@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 778983, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -16,32 +16,32 @@ var Chunk627968 = require("./627968.js"),
   Chunk641131 = require("./641131.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e) {
+function g(e) {
   let {
     message: t,
     user: n,
-    guild: b,
-    channel: g
-  } = e, m = (0, l.bG)([d.A], () => null != n && null != b && (0, s.Kd)(n, b, [d.A])), {
+    guild: g,
+    channel: m
+  } = e, b = (0, l.bG)([d.A], () => null != n && null != g && (0, a.Kd)(n, g, [d.A])), {
     messageReference: A
-  } = t, y = (0, l.bG)([u.A], () => null != A ? u.A.getMessage(A.channel_id, A.message_id) : null), O = (0, l.bG)([c.A], () => null != y ? c.A.getChannel(y.channel_id) : null), j = (0, l.bG)([c.A], () => {
+  } = t, y = (0, l.bG)([u.A], () => null != A ? u.A.getMessage(A.channel_id, A.message_id) : null), _ = (0, l.bG)([c.A], () => null != y ? c.A.getChannel(y.channel_id) : null), O = (0, l.bG)([c.A], () => {
     var e, t;
-    return null != (e = null == (t = c.A.getChannel(g.id)) ? true : t.isArchivedThread()) && e
+    return null != (e = null == (t = c.A.getChannel(m.id)) ? true : t.isArchivedThread()) && e
   });
-  if (!m) return null;
-  let v = null == y ? h.intl.string(p.default["0IZbwC"]) : h.intl.string(p.default.Uj6oD4),
-    x = null == y,
-    E = "delete-message-".concat(t.id);
-  return (0, r.jsx)(f.A, {
-    text: v,
-    icon: a.ucK,
+  if (!b) return null;
+  let j = null == y ? f.intl.string(h.default["0IZbwC"]) : f.intl.string(h.default.Uj6oD4),
+    v = null == y,
+    x = "delete-message-".concat(t.id);
+  return (0, r.jsx)(p.A, {
+    text: j,
+    icon: s.ucK,
     onClick: () => {
-      null != O && null != y && o.A.confirmDelete(O, y, false, {
-        isFlagResolved: j,
-        moderatorReportChannelId: g.id
+      null != _ && null != y && o.A.confirmDelete(_, y, false, {
+        isFlagResolved: O,
+        moderatorReportChannelId: m.id
       })
     },
-    disabled: x,
+    disabled: v,
     color: i.$n.Colors.RED
-  }, E)
+  }, x)
 }

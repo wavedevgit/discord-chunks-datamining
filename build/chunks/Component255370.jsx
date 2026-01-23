@@ -20,35 +20,35 @@ function h(e) {
   let {
     parentChannel: t
   } = e, n = (0, r.yK)([d.A], () => {
-    let e = d.A.getUploads(t.id, i.oU.CREATE_FORUM_POST.drafts.type);
+    let e = d.A.getUploads(t.id, a.oU.CREATE_FORUM_POST.drafts.type);
     return null == e ? true : e.filter(e => true !== e.isThumbnail)
   });
   return (0, l.jsxs)("div", {
     className: m.kL,
-    children: [(0, l.jsx)(a.Text, {
+    children: [(0, l.jsx)(i.Text, {
       variant: "text-md/semibold",
       color: "text-muted",
       children: u.intl.string(u.t.omKGKu)
-    }), (0, l.jsx)(a.Text, {
+    }), (0, l.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
       children: u.intl.string(u.t["zUjLl+"])
     }), (0, l.jsx)("div", {
-      children: (0, l.jsx)(a.IpV, {
+      children: (0, l.jsx)(i.IpV, {
         className: m.mw,
         orientation: "horizontal",
         paddingFix: false,
         fade: true,
         children: (0, l.jsxs)("div", {
           className: m.p8,
-          children: [n.map(e => (0, l.jsx)(c.A, {
+          children: [n.map(e => (0, l.jsx)(o.A, {
             channelId: t.id,
-            draftType: i.oU.CREATE_FORUM_POST.drafts.type,
+            draftType: a.oU.CREATE_FORUM_POST.drafts.type,
             upload: e,
             keyboardModeEnabled: true,
             hideFileName: true,
             size: s.L.SMALL
-          }, e.id)), (0, l.jsx)(o.A, {
+          }, e.id)), (0, l.jsx)(c.A, {
             channelId: t.id
           })]
         })

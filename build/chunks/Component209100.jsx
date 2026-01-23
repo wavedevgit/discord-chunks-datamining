@@ -11,8 +11,8 @@ function i(e) {
   var t, n;
   let {
     width: i = 45,
-    height: a = 46
-  } = e, s = function(e, t) {
+    height: s = 46
+  } = e, a = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -46,9 +46,9 @@ function i(e) {
       })
     }
     return e
-  }({}, (0, l.A)(s)), n = n = {
+  }({}, (0, l.A)(a)), n = n = {
     width: i,
-    height: a,
+    height: s,
     viewBox: "0 0 49 50",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",

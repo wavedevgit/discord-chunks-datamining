@@ -3,7 +3,7 @@
 "use strict";
 require.r(exports), require.d(exports, {
   IGNORE_CLASS_NAME: () => E,
-  default: () => y
+  default: () => b
 });
 var r, Chunk64700 = require("./64700.js"),
   Chunk340287 = require("./340287.js");
@@ -70,11 +70,11 @@ var p = function() {
   g = ["touchstart", "touchmove"],
   E = "ignore-react-onclickoutside";
 
-function b(e, t) {
+function y(e, t) {
   var n = {};
   return false !== g.indexOf(t) && r && (n.passive = !e.props.preventDefault), n
 }
-let y = function(e, t) {
+let b = function(e, t) {
   var n, o, u = e.displayName || e.name || "Component";
   return o = n = function(n) {
     function o(e) {
@@ -95,7 +95,7 @@ let y = function(e, t) {
           e.forEach || (e = [e]), h[i._uid] = function(e) {
             null === i.componentNode || i.initTimeStamp > e.timeStamp || (i.props.preventDefault && e.preventDefault(), i.props.stopPropagation && e.stopPropagation(), i.props.excludeScrollbar && f(e) || d(e.composed && e.composedPath && e.composedPath().shift() || e.target, i.componentNode, i.props.outsideClickIgnoreClass) === document && i.__outsideClickHandler(e))
           }, e.forEach(function(e) {
-            document.addEventListener(e, h[i._uid], b(c(i), e))
+            document.addEventListener(e, h[i._uid], y(c(i), e))
           })
         }
       }, i.disableOnClickOutside = function() {
@@ -104,7 +104,7 @@ let y = function(e, t) {
         if (e && "u" > typeof document) {
           var t = i.props.eventTypes;
           t.forEach || (t = [t]), t.forEach(function(t) {
-            return document.removeEventListener(t, e, b(c(i), t))
+            return document.removeEventListener(t, e, y(c(i), t))
           }), delete h[i._uid]
         }
       }, i.getRef = function(e) {

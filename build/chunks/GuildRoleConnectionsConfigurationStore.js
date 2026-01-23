@@ -7,26 +7,26 @@ require.d(exports, {
 var r, i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk71393 = require("./71393.js");
-let c = new Map;
-class o extends(r = Chunk311907.Ay.Store) {
+let o = new Map;
+class c extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(a.A)
   }
   getGuildRoleConnectionsConfiguration(e) {
-    return c.get(e)
+    return o.get(e)
   }
-}(i = "displayName") in o ? Object.defineProperty(o, i, {
+}(i = "displayName") in c ? Object.defineProperty(c, i, {
   value: "GuildRoleConnectionsConfigurationStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : o[i] = "GuildRoleConnectionsConfigurationStore";
-let d = new o(Chunk73153.h, {
+}) : c[i] = "GuildRoleConnectionsConfigurationStore";
+let d = new c(Chunk73153.h, {
   GUILD_ROLE_CONNECTIONS_CONFIGURATIONS_FETCH_SUCCESS: e => {
     let {
       roleId: t,
       roleConnectionConfigurations: n
     } = e;
-    c.set(t, n)
+    o.set(t, n)
   }
 })

@@ -68,11 +68,11 @@ module.exports = function(e) {
         end: /\}\}/
       })
     }),
-    b = e.inherit(f, {
+    y = e.inherit(f, {
       keywords: n,
       className: "name"
     }),
-    y = e.inherit(f, {
+    b = e.inherit(f, {
       className: "name",
       keywords: n,
       starts: e.inherit(g, {
@@ -104,7 +104,7 @@ module.exports = function(e) {
       className: "template-tag",
       begin: /\{\{\{\{\//,
       end: /\}\}\}\}/,
-      contains: [b]
+      contains: [y]
     }, {
       className: "template-tag",
       begin: /\{\{#/,
@@ -124,17 +124,17 @@ module.exports = function(e) {
       className: "template-tag",
       begin: /\{\{\//,
       end: /\}\}/,
-      contains: [b]
+      contains: [y]
     }, {
       className: "template-variable",
       begin: /\{\{\{/,
       end: /\}\}\}/,
-      contains: [y]
+      contains: [b]
     }, {
       className: "template-variable",
       begin: /\{\{/,
       end: /\}\}/,
-      contains: [y]
+      contains: [b]
     }]
   }
 }

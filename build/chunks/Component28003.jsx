@@ -26,7 +26,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk303930 = require("./303930.js"),
   Chunk241988 = require("./241988.js");
 
-function v(e) {
+function A(e) {
   let {
     isOneStepCheckout: t,
     headerText: n,
@@ -53,10 +53,10 @@ function v(e) {
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     isTier2: t
-  } = e, n = t ? b : g, i = t ? y : E;
+  } = e, n = t ? y : g, i = t ? b : E;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
       src: n,
@@ -73,7 +73,7 @@ function S(e) {
     })]
   })
 }
-let I = (e, t) => t ? (0, _.DP)() : e ? h.intl.string(h.t.lG6a5x) : h.intl.string(h.t["t9uG/o"]),
+let S = (e, t) => t ? (0, _.DP)() : e ? h.intl.string(h.t.lG6a5x) : h.intl.string(h.t["t9uG/o"]),
   T = function(e) {
     var t, n, i;
     let {
@@ -82,10 +82,10 @@ let I = (e, t) => t ? (0, _.DP)() : e ? h.intl.string(h.t.lG6a5x) : h.intl.strin
       onClose: h,
       upgradeToPremiumType: g,
       isEligibleForTrial: E = false,
-      showTrialBadge: b = false,
-      showDiscountBadge: y = false,
+      showTrialBadge: y = false,
+      showDiscountBadge: b = false,
       isPremiumGroupPurchase: T = false
-    } = e, C = g === p.PremiumTypes.TIER_2, N = (0, c.lp)(E), R = (0, d.O)(), w = null == R || null == (n = R.discount) ? true : n.amount, P = C ? A : O, {
+    } = e, C = g === p.PremiumTypes.TIER_2, N = (0, c.lp)(E), R = (0, d.O)(), w = null == R || null == (n = R.discount) ? true : n.amount, P = C ? v : O, {
       step: D,
       breadcrumbs: x,
       startedPaymentFlowWithPaymentSourcesRef: L,
@@ -112,7 +112,7 @@ let I = (e, t) => t ? (0, _.DP)() : e ? h.intl.string(h.t.lG6a5x) : h.intl.strin
       G = null != U && null != D,
       V = N && G && D === l.pn.REVIEW,
       F = C ? "nitro-pink" : "nitro-green",
-      B = I(C, T);
+      B = S(C, T);
     return j ? (0, r.jsx)("div", {
       className: m.kL,
       children: (0, r.jsx)(s.hLv, {
@@ -126,7 +126,7 @@ let I = (e, t) => t ? (0, _.DP)() : e ? h.intl.string(h.t.lG6a5x) : h.intl.strin
         className: a()(m.N1, {
           [m.s1]: !G
         }),
-        children: [(0, r.jsx)(S, {
+        children: [(0, r.jsx)(I, {
           isTier2: C
         }), !u && (0, r.jsx)(s.s_y, {
           "data-migration-pending": true,
@@ -152,9 +152,9 @@ let I = (e, t) => t ? (0, _.DP)() : e ? h.intl.string(h.t.lG6a5x) : h.intl.strin
             children: B
           })]
         })]
-      }), (b || y) && (0, r.jsx)(f.A, {
+      }), (y || b) && (0, r.jsx)(f.A, {
         discountAmount: w
-      }), G && (0, r.jsx)(v, {
+      }), G && (0, r.jsx)(A, {
         isOneStepCheckout: N,
         headerText: U,
         step: D,

@@ -1,9 +1,9 @@
 /** Chunk was on 31748 **/
 /** chunk id: 502633, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => l
+  A: () => r
 });
-let l = (0, require("./600975.js").C)({
+let r = (0, require("./600975.js").C)({
   kind: "guild",
   id: "2023-01_shared_canvas",
   label: "Shared Canvas",

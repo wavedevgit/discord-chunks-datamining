@@ -14,22 +14,22 @@ function i(e) {
   let {
     chunks: t,
     columns: r,
-    className: o
-  } = e, i = c.useMemo(() => ({
+    className: c
+  } = e, i = o.useMemo(() => ({
     "--secure-frames-columns": r
   }), [r]);
   return null == t ? (0, n.jsx)("div", {
-    className: s.Lq,
-    children: (0, n.jsx)(a.y$y, {})
+    className: a.Lq,
+    children: (0, n.jsx)(s.y$y, {})
   }) : (0, n.jsx)("div", {
     style: i,
-    className: l()(s.aY, o),
+    className: l()(a.aY, c),
     children: t.map((e, t) => (0, n.jsx)("div", {
-      className: l()(s.iv, {
-        [s.yF]: t > r - 1
+      className: l()(a.iv, {
+        [a.yF]: t > r - 1
       }),
-      children: (0, n.jsx)(a.Text, {
-        className: s.ph,
+      children: (0, n.jsx)(s.Text, {
+        className: a.ph,
         variant: "code",
         color: "text-default",
         children: e

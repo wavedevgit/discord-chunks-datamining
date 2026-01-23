@@ -68,7 +68,7 @@ function D(e, t) {
 }
 
 function G() {
-  let e = (0, s.bG)([m.A], () => m.A.getGuild());
+  let e = (0, s.bG)([f.A], () => f.A.getGuild());
   return null == e ? null : (0, r.jsx)(L, {
     guild: e
   })
@@ -77,7 +77,7 @@ function G() {
 function L(e) {
   let {
     guild: t
-  } = e, m = t.id, G = (0, s.bG)([v.A], () => v.A.getCurrentPage()), L = (0, E.A)(m), {
+  } = e, f = t.id, G = (0, s.bG)([v.A], () => v.A.getCurrentPage()), L = (0, A.A)(f), {
     hasChanges: k,
     hasConfiguredAnythingForCurrentStep: M,
     hasErrors: U
@@ -85,10 +85,10 @@ function L(e) {
     hasChanges: v.A.hasChanges(),
     hasConfiguredAnythingForCurrentStep: v.A.hasConfiguredAnythingForCurrentStep(),
     hasErrors: v.A.hasErrors()
-  })), F = (0, s.bG)([v.A], () => {
-    let e = (0, A.ql)(G);
+  })), B = (0, s.bG)([v.A], () => {
+    let e = (0, y.ql)(G);
     return null != e && !v.A.isEducationUpsellDismissed(e)
-  }), B = (0, u.Ay)(), H = i.useRef(null), [{
+  }), F = (0, u.Ay)(), H = i.useRef(null), [{
     spring: V
   }, K] = (0, d.zhh)(() => ({
     spring: 0
@@ -104,66 +104,66 @@ function L(e) {
         delay: 1e3
       })
     }
-    return b._.subscribe(C.jej.EMPHASIZE_NOTICE, e), () => {
-      b._.unsubscribe(C.jej.EMPHASIZE_NOTICE, e)
+    return p._.subscribe(C.jej.EMPHASIZE_NOTICE, e), () => {
+      p._.unsubscribe(C.jej.EMPHASIZE_NOTICE, e)
     }
   }, [K]);
   let z = (0, d.rdh)(a.A.colors.BACKGROUND_SURFACE_HIGH).hex(),
-    Y = (0, d.rdh)(a.A.unsafe_rawColors.PRIMARY_160).hex(),
-    W = (0, o.Mw)(B) ? z : Y,
+    W = (0, d.rdh)(a.A.unsafe_rawColors.PRIMARY_160).hex(),
+    Y = (0, c.Mw)(F) ? z : W,
     X = V.to({
       range: [0, 1],
-      output: [W, (0, d.rdh)(a.A.colors.BACKGROUND_FEEDBACK_CRITICAL).hex()]
+      output: [Y, (0, d.rdh)(a.A.colors.BACKGROUND_FEEDBACK_CRITICAL).hex()]
     });
   if (L) {
-    if (G === A.Hy.DEFAULT_CHANNELS) return (0, r.jsx)(_.G, {});
-    else if (G === A.Hy.CUSTOMIZATION_QUESTIONS) return (0, r.jsx)(T.fO, {});
-    else if (G === A.Hy.HOME_SETTINGS) return (0, r.jsx)(I.A, {});
-    else if (G === A.Hy.CONNECTIONS) return (0, r.jsx)(S.R, {});
-    else if ((G === A.Hy.LANDING || G === A.Hy.REVIEW) && j.A.hasChanges()) return (0, r.jsx)(I.A, {})
+    if (G === y.Hy.DEFAULT_CHANNELS) return (0, r.jsx)(N.G, {});
+    else if (G === y.Hy.CUSTOMIZATION_QUESTIONS) return (0, r.jsx)(I.fO, {});
+    else if (G === y.Hy.HOME_SETTINGS) return (0, r.jsx)(T.A, {});
+    else if (G === y.Hy.CONNECTIONS) return (0, r.jsx)(S.R, {});
+    else if ((G === y.Hy.LANDING || G === y.Hy.REVIEW) && j.A.hasChanges()) return (0, r.jsx)(T.A, {})
   }
-  let J = G === A.kd[A.kd.length - 1],
+  let J = G === y.kd[y.kd.length - 1],
     Z = async () => {
-      let e = y.A.advancedMode;
+      let e = O.A.advancedMode;
       if (k) try {
-        if (G === A.Hy.DEFAULT_CHANNELS) await (0, p.jr)(t).then(() => e ? (0, O.dm)(t, {
+        if (G === y.Hy.DEFAULT_CHANNELS) await (0, b.jr)(t).then(() => e ? (0, _.dm)(t, {
           ignoreDefaultPrompt: true
         }) : Promise.resolve());
-        else if (G === A.Hy.CUSTOMIZATION_QUESTIONS) await (0, O.dm)(t, {
+        else if (G === y.Hy.CUSTOMIZATION_QUESTIONS) await (0, _.dm)(t, {
           ignoreDefaultPrompt: true
         });
-        else if (G === A.Hy.HOME_SETTINGS) {
+        else if (G === y.Hy.HOME_SETTINGS) {
           let e = j.A.getSettings();
-          await (0, h.W5)(t.id, e)
+          await (0, x.W5)(t.id, e)
         }
       } catch (e) {
         returnfalse
       }
       returntrue
-    }, Q = async () => {
-      g.default.track(C.HAw.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, f.H$)(m)), {
-        step: A.Hy[G],
+    }, q = async () => {
+      m.default.track(C.HAw.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.H$)(f)), {
+        step: y.Hy[G],
         back: false,
         skip: !k
-      })), (0, x.Ay)((0, A.ql)(G)), await Z() && (0, x._k)(m, G)
-    }, q = async () => {
-      g.default.track(C.HAw.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, f.H$)(m)), {
-        step: A.Hy[G],
+      })), (0, h.Ay)((0, y.ql)(G)), await Z() && (0, h._k)(f, G)
+    }, Q = async () => {
+      m.default.track(C.HAw.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.H$)(f)), {
+        step: y.Hy[G],
         back: true,
         skip: false
-      })), await Z() && (0, x.kP)(m, G)
+      })), await Z() && (0, h.kP)(f, G)
     }, $ = null;
-  F && (G === A.Hy.SAFETY_CHECK ? $ = (0, r.jsx)(N.Et, {}) : G === A.Hy.DEFAULT_CHANNELS ? $ = (0, r.jsx)(N.hz, {}) : G === A.Hy.CUSTOMIZATION_QUESTIONS ? $ = (0, r.jsx)(N.yP, {}) : G === A.Hy.HOME_SETTINGS && ($ = (0, r.jsx)(N.QS, {})));
+  B && (G === y.Hy.SAFETY_CHECK ? $ = (0, r.jsx)(E.Et, {}) : G === y.Hy.DEFAULT_CHANNELS ? $ = (0, r.jsx)(E.hz, {}) : G === y.Hy.CUSTOMIZATION_QUESTIONS ? $ = (0, r.jsx)(E.yP, {}) : G === y.Hy.HOME_SETTINGS && ($ = (0, r.jsx)(E.QS, {})));
   let ee = (0, r.jsx)("div", {
-      className: F ? w.R : true,
+      className: B ? w.R : true,
       children: (0, r.jsx)(d.Button, {
         size: "sm",
         variant: "secondary",
         text: P.intl.string(P.t["13/7kX"]),
         icon: d.rJJ,
         iconPosition: "start",
-        onClick: q,
-        disabled: F || U
+        onClick: Q,
+        disabled: B || U
       })
     }),
     et = (0, r.jsx)(d.Button, {
@@ -172,10 +172,10 @@ function L(e) {
       text: M ? P.intl.string(P.t.PDTjLN) : P.intl.string(P.t["5Wxrcd"]),
       icon: d.EdP,
       iconPosition: "end",
-      onClick: Q,
-      disabled: F || U
+      onClick: q,
+      disabled: B || U
     });
-  return (0, r.jsx)(c.F, {
+  return (0, r.jsx)(o.F, {
     component: "div",
     children: (0, r.jsx)(d.FQk, {
       className: w.hE,
@@ -187,7 +187,7 @@ function L(e) {
         children: (0, r.jsxs)("div", {
           className: w.nP,
           ref: H,
-          children: [F ? (0, r.jsxs)("div", {
+          children: [B ? (0, r.jsxs)("div", {
             className: w.cZ,
             children: [(0, r.jsx)("img", {
               className: w.kX,

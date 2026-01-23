@@ -14,7 +14,7 @@ var Chunk592653 = require("./592653.js"),
   Chunk360469 = require("./360469.js");
 
 function d(e, t, n) {
-  var d, p, f, h, A, g, m, b;
+  var d, p, h, g, f, m, A, _;
   switch (t) {
     case c.ZE4.ACTIVITY_PIP_MODE_UPDATE: {
       let t = null == (d = e.application) ? true : d.id,
@@ -31,7 +31,7 @@ function d(e, t, n) {
       } : null
     }
     case c.ZE4.FRAME_LAYOUT_MODE_UPDATE: {
-      let t = null != (null == (f = e.application) ? true : f.id) ? null == (h = l.A.getConnectedFrame()) ? true : h.layoutMode : null;
+      let t = null != (null == (h = e.application) ? true : h.id) ? null == (g = l.A.getConnectedFrame()) ? true : g.layoutMode : null;
       return null != t ? {
         layout_mode: t
       } : null
@@ -54,11 +54,11 @@ function d(e, t, n) {
       if (!t) return null;
       let r = a.A.getQuest(t),
         i = (0, s.TP)(r);
-      if (null == r || null == i || i !== (null == (g = e.application) ? true : g.id)) return null;
+      if (null == r || null == i || i !== (null == (m = e.application) ? true : m.id)) return null;
       return {
         quest_id: t,
-        is_enrolled: (null == (m = r.userStatus) ? true : m.enrolledAt) != null,
-        enrolled_at: null != (A = null == (b = r.userStatus) ? true : b.enrolledAt) ? A : null
+        is_enrolled: (null == (A = r.userStatus) ? true : A.enrolledAt) != null,
+        enrolled_at: null != (f = null == (_ = r.userStatus) ? true : _.enrolledAt) ? f : null
       }
     }
     default:

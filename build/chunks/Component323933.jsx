@@ -1,12 +1,12 @@
 /** Chunk was on 28636 **/
 /** chunk id: 323933, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => A
 }), require("./896048.js");
-var l, a, Chunk627968 = require("./627968.js"),
+var r, l, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  c = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   d = require.n(Chunk735438),
   Chunk451988 = require("./451988.js"),
@@ -18,7 +18,7 @@ var l, a, Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk881425 = require("./881425.js");
 
-function v(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,84 +26,84 @@ function v(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class j extends(l = Chunk64700.PureComponent) {
+class v extends(r = Chunk64700.PureComponent) {
   componentDidMount() {
-    b._.subscribe(f.jej.CAROUSEL_PREV, this.handlePrevious), b._.subscribe(f.jej.CAROUSEL_NEXT, this.handleNext)
+    g._.subscribe(_.jej.CAROUSEL_PREV, this.handlePrevious), g._.subscribe(_.jej.CAROUSEL_NEXT, this.handleNext)
   }
   componentWillUnmount() {
-    b._.unsubscribe(f.jej.CAROUSEL_PREV, this.handlePrevious), b._.unsubscribe(f.jej.CAROUSEL_NEXT, this.handleNext)
+    g._.unsubscribe(_.jej.CAROUSEL_PREV, this.handlePrevious), g._.unsubscribe(_.jej.CAROUSEL_NEXT, this.handleNext)
   }
   render() {
     let {
       current: e,
       count: t,
       includeHitboxPadding: n,
-      arrowClassName: l,
-      paginationDotClassName: a,
-      paginationDotSelectedClassName: i,
+      arrowClassName: r,
+      paginationDotClassName: l,
+      paginationDotSelectedClassName: a,
       paginationArrowIconType: s = "arrow"
-    } = this.props, o = c()(x.sb, {
-      [x.JU]: n
-    }, l);
-    return (0, r.jsxs)("div", {
-      className: c()(x.ne, this.props.className),
-      children: [(0, r.jsx)("div", {
-        className: o,
-        children: (0, r.jsx)(p.K0, {
+    } = this.props, c = o()(f.sb, {
+      [f.JU]: n
+    }, r);
+    return (0, i.jsxs)("div", {
+      className: o()(f.ne, this.props.className),
+      children: [(0, i.jsx)("div", {
+        className: c,
+        children: (0, i.jsx)(p.K0, {
           variant: "icon-only",
           icon: "caret" === s ? p.n2b : p.rJJ,
-          "aria-label": g.intl.string(g.t.vgfxaA),
+          "aria-label": b.intl.string(b.t.vgfxaA),
           onClick: this.handlePrevious
         })
-      }), (0, r.jsx)("div", {
-        className: x.r$,
-        children: d().times(t, t => (0, r.jsx)(p.DUT, {
+      }), (0, i.jsx)("div", {
+        className: f.r$,
+        children: d().times(t, t => (0, i.jsx)(p.DUT, {
           onClick: () => this.handleDotClick(t),
-          className: t === e ? c()(x.NU, i) : c()(x.Lw, a),
-          "aria-label": g.intl.formatToPlainString(g.t["2SXOrM"], {
+          className: t === e ? o()(f.NU, a) : o()(f.Lw, l),
+          "aria-label": b.intl.formatToPlainString(b.t["2SXOrM"], {
             pageNumber: t + 1
           })
         }, "dot-".concat(t)))
-      }), (0, r.jsx)("div", {
-        className: o,
-        children: (0, r.jsx)(p.K0, {
+      }), (0, i.jsx)("div", {
+        className: c,
+        children: (0, i.jsx)(p.K0, {
           variant: "icon-only",
           icon: "caret" === s ? p._BQ : p.EdP,
-          "aria-label": g.intl.string(g.t.XiOHRX),
+          "aria-label": b.intl.string(b.t.XiOHRX),
           onClick: this.handleNext
         })
       })]
     })
   }
   constructor(...e) {
-    super(...e), v(this, "handleDotClick", e => {
+    super(...e), x(this, "handleDotClick", e => {
       let {
         onSetItem: t,
         onIntentionalChange: n,
-        current: l
+        current: r
       } = this.props;
-      null == n || n(l, e, "jump"), t(e)
-    }), v(this, "handleNext", () => {
+      null == n || n(r, e, "jump"), t(e)
+    }), x(this, "handleNext", () => {
       let {
         onIntentionalChange: e,
         current: t,
         onChangePage: n
-      } = this.props, l = n(1);
-      null == e || e(t, l, "next")
-    }), v(this, "handlePrevious", () => {
+      } = this.props, r = n(1);
+      null == e || e(t, r, "next")
+    }), x(this, "handlePrevious", () => {
       let {
         onIntentionalChange: e,
         current: t,
         onChangePage: n
-      } = this.props, l = n(false);
-      null == e || e(t, l, "previous")
+      } = this.props, r = n(false);
+      null == e || e(t, r, "previous")
     })
   }
 }
-v(j, "defaultProps", {
+x(v, "defaultProps", {
   includeHitboxPadding: true
 });
-class A extends(a = Chunk64700.PureComponent) {
+class j extends(l = Chunk64700.PureComponent) {
   componentDidMount() {
     h.h.subscribe("WINDOW_FOCUS", this.handleWindowFocusChange), this.props.initialPaused || this.state.paused || this.startTimer()
   }
@@ -112,15 +112,15 @@ class A extends(a = Chunk64700.PureComponent) {
   }
   componentDidUpdate(e, t) {
     let n = (e, t) => !e.initialPaused && !t.paused,
-      l = n(this.props, this.state),
-      a = n(e, t);
-    l && !a ? this.startTimer() : !l && a && this.stopTimer();
+      r = n(this.props, this.state),
+      l = n(e, t);
+    r && !l ? this.startTimer() : !r && l && this.stopTimer();
     let {
-      items: r
+      items: i
     } = this.props, {
-      visibleIndex: i
+      visibleIndex: a
     } = this.state;
-    null == r[i] && this.changeItem(r, 1)
+    null == i[a] && this.changeItem(i, 1)
   }
   startTimer() {
     null != this.props.delay && this.timer.start(this.props.delay, this.nextItem)
@@ -132,13 +132,13 @@ class A extends(a = Chunk64700.PureComponent) {
     let n = this.state.visibleIndex + t;
     n < 0 ? n = e.length - 1 : n > e.length - 1 && (n = 0);
     let {
-      onChangeItem: l
+      onChangeItem: r
     } = this.props;
-    null == l || l(e[n], this.state.visibleIndex, n);
-    let a = t > 0 ? m.f.LEFT : m.f.RIGHT;
+    null == r || r(e[n], this.state.visibleIndex, n);
+    let l = t > 0 ? m.f.LEFT : m.f.RIGHT;
     return this.setState({
       visibleIndex: n,
-      direction: a
+      direction: l
     }), n
   }
   render() {
@@ -146,46 +146,46 @@ class A extends(a = Chunk64700.PureComponent) {
       items: e,
       renderItem: t,
       className: n,
-      slideAnimatorClassName: l,
-      slideAnimatorSpringSettings: a,
-      slideAnimatorFadeInOut: i,
+      slideAnimatorClassName: r,
+      slideAnimatorSpringSettings: l,
+      slideAnimatorFadeInOut: a,
       paginationClassName: s,
-      paginationArrowClassName: o,
+      paginationArrowClassName: c,
       paginationArrowIconType: d,
       paginationDotClassName: u,
       paginationDotSelectedClassName: p,
       themedPagination: h,
-      includeHitboxPadding: b,
-      style: f,
-      aspectRatio: g,
-      children: v
+      includeHitboxPadding: g,
+      style: _,
+      aspectRatio: b,
+      children: x
     } = this.props, {
-      visibleIndex: A
+      visibleIndex: j
     } = this.state;
-    return (0, r.jsxs)("div", {
-      className: x.zr,
-      children: [(0, r.jsxs)("div", {
-        className: c()(x.Cf, n),
-        style: f,
+    return (0, i.jsxs)("div", {
+      className: f.zr,
+      children: [(0, i.jsxs)("div", {
+        className: o()(f.Cf, n),
+        style: _,
         onMouseEnter: this.handleMouseEnter,
         onMouseLeave: this.handleMouseLeave,
-        children: [(0, r.jsx)("div", {
+        children: [(0, i.jsx)("div", {
           style: {
-            aspectRatio: g
+            aspectRatio: b
           },
-          children: (0, r.jsx)(m.A, {
-            className: c()(x.Dk, l),
-            step: A,
+          children: (0, i.jsx)(m.A, {
+            className: o()(f.Dk, r),
+            step: j,
             direction: this.getCurrentDirection(),
-            springSettings: a,
-            fadeInOut: i,
-            children: t(e[A], A)
+            springSettings: l,
+            fadeInOut: a,
+            children: t(e[j], j)
           })
-        }), e.length > 1 && (0, r.jsx)(j, {
-          className: c()(s, h ? x.S$ : x.X$),
-          arrowClassName: o,
-          includeHitboxPadding: b,
-          current: A,
+        }), e.length > 1 && (0, i.jsx)(v, {
+          className: o()(s, h ? f.S$ : f.X$),
+          arrowClassName: c,
+          includeHitboxPadding: g,
+          current: j,
           count: e.length,
           onChangePage: t => this.changeItem(e, t),
           onSetItem: this.handleSetItem,
@@ -194,51 +194,51 @@ class A extends(a = Chunk64700.PureComponent) {
           paginationDotClassName: u,
           paginationDotSelectedClassName: p
         })]
-      }), null != v && v({
-        step: A,
+      }), null != x && x({
+        step: j,
         direction: this.getCurrentDirection()
       })]
     })
   }
   constructor(e) {
-    super(e), v(this, "timer", new u.IX), v(this, "handleWindowFocusChange", e => {
+    super(e), x(this, "timer", new u.IX), x(this, "handleWindowFocusChange", e => {
       let {
         focused: t
       } = e;
       this.setState({
         paused: !t
       })
-    }), v(this, "getCurrentDirection", () => this.state.direction), v(this, "nextItem", () => {
+    }), x(this, "getCurrentDirection", () => this.state.direction), x(this, "nextItem", () => {
       let {
         items: e
       } = this.props;
       this.changeItem(e, 1)
-    }), v(this, "previousItem", () => {
+    }), x(this, "previousItem", () => {
       let {
         items: e
       } = this.props;
       this.changeItem(e, false)
-    }), v(this, "handleSetItem", e => {
+    }), x(this, "handleSetItem", e => {
       let {
         visibleIndex: t
       } = this.state, {
         items: n
       } = this.props;
       this.changeItem(n, e - t)
-    }), v(this, "handleMouseEnter", () => {
+    }), x(this, "handleMouseEnter", () => {
       this.setState({
         paused: true
       })
-    }), v(this, "handleMouseLeave", () => {
+    }), x(this, "handleMouseLeave", () => {
       this.setState({
         paused: false
       })
-    }), v(this, "handleIntentionalChange", (e, t, n) => {
+    }), x(this, "handleIntentionalChange", (e, t, n) => {
       let {
-        items: l,
-        onIntentionalChange: a
+        items: r,
+        onIntentionalChange: l
       } = this.props;
-      return null == a ? true : a(l[t], e, t, n)
+      return null == l ? true : l(r[t], e, t, n)
     }), this.state = {
       visibleIndex: true === e.randomize ? d().random(0, e.items.length - 1) : 0,
       direction: m.f.LEFT,
@@ -246,7 +246,7 @@ class A extends(a = Chunk64700.PureComponent) {
     }
   }
 }
-v(A, "defaultProps", {
+x(j, "defaultProps", {
   aspectRatio: 16 / 9
 });
-let _ = A
+let A = j

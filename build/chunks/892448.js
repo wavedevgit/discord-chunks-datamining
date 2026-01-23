@@ -2,5 +2,5 @@
 /** chunk id: 892448, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  t: "_3c5502e5d865a162"
+  t: "emptySearchResultsContainer__9eabf"
 }

@@ -54,32 +54,32 @@ function h(e, t) {
 let m = false,
   g = null,
   E = false,
-  b = {};
+  y = {};
 
-function y(e) {
+function b(e) {
   let {
     assets: t
   } = e, n = {};
-  t.forEach(e => n[e.id] = e), b = n
+  t.forEach(e => n[e.id] = e), y = n
 }
 
 function O(e) {
   let {
     videoFilterAsset: t
   } = e;
-  b = h(p({}, b), {
+  y = h(p({}, y), {
     [t.id]: t
   })
 }
 
-function A(e) {
+function v(e) {
   let {
     videoFilterAsset: t
   } = e;
-  b = p({}, b), delete b[t.id]
+  y = p({}, y), delete y[t.id]
 }
 
-function v(e) {
+function A(e) {
   var t;
   let n = u.default.getCurrentUser();
   if (null == n) returnfalse;
@@ -87,14 +87,14 @@ function v(e) {
   return null != c.A.getVoiceChannelId() && l.A.isVideoEnabled() && null != r
 }
 
-function S(e) {
+function I(e) {
   let {
     backgroundOption: t
   } = e;
-  v(t) && (E = true)
+  A(t) && (E = true)
 }
 
-function I(e) {
+function S(e) {
   let {
     settings: t
   } = e;
@@ -102,18 +102,18 @@ function I(e) {
 }
 
 function T() {
-  g !== c.A.getVoiceChannelId() && (E = false), v() && (E = true), g = c.A.getVoiceChannelId()
+  g !== c.A.getVoiceChannelId() && (E = false), A() && (E = true), g = c.A.getVoiceChannelId()
 }
 
 function C() {
-  m = false, E = false, g = null, b = {}
+  m = false, E = false, g = null, y = {}
 }
 class N extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(l.A, c.A, o.A, u.default), this.syncWith([c.A, l.A], T)
   }
   get videoFilterAssets() {
-    return b
+    return y
   }
   get hasBeenApplied() {
     return m
@@ -124,10 +124,10 @@ class N extends(r = Chunk311907.Ay.Store) {
 }
 f(N, "displayName", "VideoBackgroundStore");
 let R = new N(Chunk73153.h, {
-  VIDEO_FILTER_ASSETS_FETCH_SUCCESS: y,
+  VIDEO_FILTER_ASSETS_FETCH_SUCCESS: b,
   VIDEO_FILTER_ASSET_UPLOAD_SUCCESS: O,
-  VIDEO_FILTER_ASSET_DELETE_SUCCESS: A,
-  VIDEO_SAVE_LAST_USED_BACKGROUND_OPTION: S,
-  MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS: I,
+  VIDEO_FILTER_ASSET_DELETE_SUCCESS: v,
+  VIDEO_SAVE_LAST_USED_BACKGROUND_OPTION: I,
+  MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS: S,
   LOGOUT: C
 })

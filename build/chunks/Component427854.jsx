@@ -2,7 +2,7 @@
 /** chunk id: 427854, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./896048.js"), require("./264879.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -67,12 +67,12 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     guild: t,
     themeResponsive: n = true,
     onButtonClick: a
-  } = e, _ = (0, u.A)(t.id), [m, b] = i.useState(false), [y, O] = (0, c.zhh)(() => ({
+  } = e, _ = (0, u.A)(t.id), [m, y] = i.useState(false), [b, O] = (0, c.zhh)(() => ({
     scale: .8,
     config: {
       tension: 500,
@@ -83,11 +83,11 @@ function b(e) {
     let e = setTimeout(() => {
       O({
         scale: 1
-      }), b(true)
+      }), y(true)
     }, 300);
     return () => clearTimeout(e)
   }, [O]);
-  let A = i.useMemo(() => {
+  let v = i.useMemo(() => {
     let e;
     if (null == _ || 0 === _.length) return "";
     if (1 === _.length) e = (0, r.jsx)(E, {
@@ -120,7 +120,7 @@ function b(e) {
     className: s()(p.kL, {
       [p.Vz]: n
     }),
-    style: g(h({}, y), {
+    style: g(h({}, b), {
       opacity: +!!m
     }),
     children: [(0, r.jsx)(l.EYj, {
@@ -130,7 +130,7 @@ function b(e) {
         [p.Qq]: !n,
         [p.sl]: n
       }),
-      children: A
+      children: v
     }), (0, r.jsx)(l.$nd, {
       variant: "primary",
       text: f.intl.string(d.default.E5V5KK),

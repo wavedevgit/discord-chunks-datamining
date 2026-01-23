@@ -2,7 +2,7 @@
 /** chunk id: 98919, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  a: () => v
+  a: () => A
 }), require("./457529.js");
 var Chunk562465 = require("./562465.js"),
   Chunk306173 = require("./306173.js"),
@@ -20,11 +20,11 @@ var Chunk562465 = require("./562465.js"),
   Chunk652215 = require("./652215.js");
 let g = 9437184,
   E = 0xe00000,
-  b = new Chunk626584.A("DebugUploadManager"),
-  y = null,
+  y = new Chunk626584.A("DebugUploadManager"),
+  b = null,
   O = null;
 
-function A(e) {
+function v(e) {
   switch (e.code) {
     case a.ct.GENERAL:
       return o.B6.UploadErrorGeneral;
@@ -40,19 +40,19 @@ function A(e) {
       return
   }
 }
-async function v(e, t) {
+async function A(e, t) {
   try {
-    await S(e), await (0, s.c)(E, t)
+    await I(e), await (0, s.c)(E, t)
   } catch (t) {
     let e;
-    throw t instanceof a._ && (e = A(t)), (0, o.QW)({
+    throw t instanceof a._ && (e = v(t)), (0, o.QW)({
       type: o.iy.DEBUG_LOG_UPLOAD_FAILED,
       underlyingError: e,
       errorMessage: t.message
     }), t
   }
 }
-async function S(e) {
+async function I(e) {
   try {
     let n, a, s, o;
     try {
@@ -61,7 +61,7 @@ async function S(e) {
       n = "Logs failed: ".concat(e)
     }
     try {
-      a = (null == y ? true : y.getSystemLog) != null ? await new Promise(e => y.getSystemLog(e)) : ""
+      a = (null == b ? true : b.getSystemLog) != null ? await new Promise(e => b.getSystemLog(e)) : ""
     } catch (e) {
       a = "System Logs failed ".concat(e)
     }
@@ -82,12 +82,12 @@ async function S(e) {
       n = n.slice(n.length - Math.floor(n.length * e)), a = a.slice(a.length - Math.floor(a.length * e)), s = s.slice(s.length - Math.floor(s.length * e)), o = o.slice(o.length - Math.floor(o.length * e))
     }
     let E = (null == O ? true : O.AppOpenedTimestamp) != null ? O.AppOpenedTimestamp : null,
-      b = "\n    ".concat((0, _.A)(E), "\n\n    ").concat((0, l.CI)(), "\n\n    Metadata:\n    ").concat(JSON.stringify((0, f.A)(), true, 2), "\n\n    ChannelStore:\n    ").concat(JSON.stringify(c.A.getDebugInfo(), true, 2), "\n\n    Logs:\n    ").concat(n, "\n\n    System logs:\n    ").concat(a, "\n\n    LibDiscore logs:\n    ").concat(o, "\n\n    Push Notifications:\n    ").concat(s, "\n    ");
+      y = "\n    ".concat((0, _.A)(E), "\n\n    ").concat((0, l.CI)(), "\n\n    Metadata:\n    ").concat(JSON.stringify((0, f.A)(), true, 2), "\n\n    ChannelStore:\n    ").concat(JSON.stringify(c.A.getDebugInfo(), true, 2), "\n\n    Logs:\n    ").concat(n, "\n\n    System logs:\n    ").concat(a, "\n\n    LibDiscore logs:\n    ").concat(o, "\n\n    Push Notifications:\n    ").concat(s, "\n    ");
     u.IU();
-    let A = m.Rsh.DEBUG_LOG(e, "discord_app_logs");
+    let v = m.Rsh.DEBUG_LOG(e, "discord_app_logs");
     await r.Bo.post({
-      url: A,
-      body: b,
+      url: v,
+      body: y,
       retries: 3,
       headers: {
         "Content-Type": "text/plain"
@@ -96,6 +96,6 @@ async function S(e) {
       rejectWithError: false
     })
   } catch (e) {
-    b.error("uploadAppLogFiles: upload app log files error ".concat(e.message))
+    y.error("uploadAppLogFiles: upload app log files error ".concat(e.message))
   }
 }

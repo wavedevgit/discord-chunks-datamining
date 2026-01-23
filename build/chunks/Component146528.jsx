@@ -72,13 +72,13 @@ let M = e => {
       subscription: t
     } = e, {
       analyticsLocations: n
-    } = (0, _.Ay)(), [i] = (0, b.Kq)({
+    } = (0, _.Ay)(), [i] = (0, y.Kq)({
       subscriptionId: t.id,
       renewal: true,
       analyticsLocations: n,
       analyticsLocation: p.A.GUILD_ROLE_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE
-    }), a = (0, o.bG)([I.A], () => I.A.hasFetchedPaymentSources);
-    return null != i && a ? (0, r.jsx)(y.A, {
+    }), a = (0, o.bG)([S.A], () => S.A.hasFetchedPaymentSources);
+    return null != i && a ? (0, r.jsx)(b.A, {
       subscription: t,
       currentInvoicePreview: i,
       dropdownClassName: j.Nw
@@ -124,15 +124,15 @@ let M = e => {
       guild: o,
       expanded: p,
       handleToggleExpanded: h,
-      subscriptionInfo: b
-    } = (0, T.A)(t), [y, I] = i.useState(false), G = (0, m.GV)(), {
+      subscriptionInfo: y
+    } = (0, T.A)(t), [b, S] = i.useState(false), G = (0, m.GV)(), {
       analyticsLocations: V
     } = (0, _.Ay)(), {
       shouldHideGuildPurchaseEntryPoints: F
     } = (0, g.MH)(null == o ? true : o.id), B = null == t ? true : t.isPurchasedViaAppleGeneric;
-    if (null == a || null == n || null == b) return null;
+    if (null == a || null == n || null == y) return null;
     let H = () => {
-        null != o && ((0, O.pX)(P.BVt.CHANNEL(o.id, D.VV.ROLE_SUBSCRIPTIONS)), (0, v.default)(), f.A.show(P.kqX.BACK_TO_PREVIOUS_SCREEN, true, L.intl.string(L.t.DvbaM4), () => (0, S.openUserSettings)(A.X.SUBSCRIPTIONS_PANEL, {
+        null != o && ((0, O.pX)(P.BVt.CHANNEL(o.id, D.VV.ROLE_SUBSCRIPTIONS)), (0, A.default)(), f.A.show(P.kqX.BACK_TO_PREVIOUS_SCREEN, true, L.intl.string(L.t.DvbaM4), () => (0, I.openUserSettings)(v.X.SUBSCRIPTIONS_PANEL, {
           section: P.nc_.SUBSCRIPTIONS,
           subsection: x.nR
         })))
@@ -146,9 +146,9 @@ let M = e => {
       },
       W = async () => {
         try {
-          I(true), await d.QP(t, V), (0, w.q)()
+          S(true), await d.QP(t, V), (0, w.q)()
         } finally {
-          I(false)
+          S(false)
         }
       }, {
         isCancelled: K,
@@ -158,7 +158,7 @@ let M = e => {
         nextRenewalDate: Z,
         nextRenewalLabel: Q,
         isTrial: $
-      } = b, J = n.soft_deleted || null == o || B, ee = () => p ? (0, r.jsxs)("div", {
+      } = y, J = n.soft_deleted || null == o || B, ee = () => p ? (0, r.jsxs)("div", {
         id: G,
         children: [(0, r.jsx)("div", {
           className: j.yF
@@ -190,7 +190,7 @@ let M = e => {
         }), !J && (0, r.jsx)(U, {
           isTrial: $,
           isCancelled: K,
-          isResubscribing: y,
+          isResubscribing: b,
           shouldHideRoleSubscriptionEntryPoints: F,
           onCancelSubscriptionClick: Y,
           onChangePlanClick: H,

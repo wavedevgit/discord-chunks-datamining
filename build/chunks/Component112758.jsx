@@ -41,7 +41,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk81437 = require("./81437.js"),
   Chunk652215 = require("./652215.js");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -50,14 +50,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -93,11 +93,11 @@ function R(e, t, n) {
     let i = h.default.getUser(e);
     if (null == i) return;
     if (r.preventDefault(), r.stopPropagation(), !r.shiftKey) return void n();
-    let a = "@".concat(b.Ay.getUserTag(i, {
+    let a = "@".concat(y.Ay.getUserTag(i, {
         decoration: "never"
       })),
       s = "<@".concat(e, ">");
-    g._.dispatchToLastSubscribed(v.jej.INSERT_TEXT, {
+    g._.dispatchToLastSubscribed(A.jej.INSERT_TEXT, {
       plainText: a,
       rawText: s
     }), c.A.startTyping(t)
@@ -148,7 +148,7 @@ function U(e, t, a, l) {
   } = t, {
     id: d,
     flags: h
-  } = e, g = (0, s.Lt)(h, v.pr7.EPHEMERAL), b = (0, u.Us)();
+  } = e, g = (0, s.Lt)(h, A.pr7.EPHEMERAL), y = (0, u.Us)();
   return i.useCallback((e, t) => {
     if (g) return;
     if (!E.isPlatformEmbedded) {
@@ -160,7 +160,7 @@ function U(e, t, a, l) {
     let i = f.A.getChannel(c),
       s = _.A.getMessage(c, d),
       u = p.A.isEditing(c, d);
-    null == i || null == s || u || (m.default.track(v.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
+    null == i || null == s || u || (m.default.track(A.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
       message_id: d,
       channel: c,
       location: "right_click"
@@ -170,7 +170,7 @@ function U(e, t, a, l) {
       let {
         default: e
       } = await Promise.all([n.e("24202"), n.e("6502"), n.e("1636"), n.e("27687"), n.e("42897")]).then(n.bind(n, 547983));
-      return n => (0, r.jsx)(e, C(I({}, n), {
+      return n => (0, r.jsx)(e, C(S({}, n), {
         message: s,
         channel: i,
         mediaItem: t,
@@ -180,16 +180,16 @@ function U(e, t, a, l) {
       onClose: () => a({
         contextMenu: false
       }),
-      context: b
+      context: y
     }))
-  }, [g, c, d, a, b, l])
+  }, [g, c, d, a, y, l])
 }
 
 function G(e, t) {
   return i.useCallback(n => {
     let r = h.default.getUser(e),
       i = f.A.getChannel(t);
-    null != r && null != i && (n.stopPropagation(), (0, y.wQ)(n, r, i))
+    null != r && null != i && (n.stopPropagation(), (0, b.wQ)(n, r, i))
   }, [e, t])
 }
 
@@ -197,7 +197,7 @@ function V(e, t, n) {
   return i.useCallback(r => {
     let i = h.default.getUser(e),
       a = f.A.getChannel(t);
-    null != i && null != a && (r.stopPropagation(), (0, y.B8)(r, {
+    null != i && null != a && (r.stopPropagation(), (0, b.B8)(r, {
       user: i,
       channel: a,
       moderationAlertId: n
@@ -209,7 +209,7 @@ function F(e, t) {
   return i.useCallback(n => {
     let r = h.default.getUser(e),
       i = f.A.getChannel(t);
-    null != r && null != i && (n.stopPropagation(), (0, y.pB)(n, r, i.guild_id))
+    null != r && null != i && (n.stopPropagation(), (0, b.pB)(n, r, i.guild_id))
   }, [e, t])
 }
 
@@ -232,10 +232,10 @@ function H(e) {
   } = e, a = n.author.id, s = "".concat(t, ":").concat(a), o = i.useRef(r), [l, c] = i.useState(r);
   o.current = l || o.current;
   let u = i.useCallback(() => {
-      (0, d.cE)(), l || (g._.dispatchKeyed(v.zOV.ANIMATE_CHAT_AVATAR, s, true), c(true))
+      (0, d.cE)(), l || (g._.dispatchKeyed(A.zOV.ANIMATE_CHAT_AVATAR, s, true), c(true))
     }, [l, s]),
     f = i.useCallback(() => {
-      g._.dispatchKeyed(v.zOV.ANIMATE_CHAT_AVATAR, s, false), c(false)
+      g._.dispatchKeyed(A.zOV.ANIMATE_CHAT_AVATAR, s, false), c(false)
     }, [s]);
   return {
     hasHovered: o.current,
@@ -275,7 +275,7 @@ function W(e, t) {
         returnMessageId: e.id
       })
     };
-    (null == t || (0, A.A)(t, r)) && r()
+    (null == t || (0, v.A)(t, r)) && r()
   }, [t, e])
 }
 

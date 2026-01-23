@@ -2,7 +2,7 @@
 /** chunk id: 5558, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  N: () => f
+  N: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,31 +14,31 @@ var Chunk660496 = require("./660496.js"),
   Chunk412977 = require("./412977.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let f = e => {
+let g = e => {
   let t = [{
-    renderComponent: () => (0, r.jsx)(o.A, {
+    renderComponent: () => (0, r.jsx)(c.A, {
       guild: e
     }, "verification-level"),
     enabled: true
   }, {
-    renderComponent: () => (0, r.jsx)(c.A, {
+    renderComponent: () => (0, r.jsx)(o.A, {
       title: u.intl.string(u.t.QiONL5),
       details: u.intl.string(u.t.dSRTMB)
     }, "hide-suspicious-dms"),
     enabled: true
   }, {
-    renderComponent: () => (0, r.jsx)(c.A, {
+    renderComponent: () => (0, r.jsx)(o.A, {
       title: u.intl.string(u.t["f+8F8F"]),
       details: u.intl.string(u.t.qChrI2)
     }, "filter-unknown-dms"),
     enabled: true
   }, {
-    renderComponent: () => (0, r.jsx)(c.A, {
+    renderComponent: () => (0, r.jsx)(o.A, {
       title: u.intl.string(u.t.EkSAHZ)
     }, "outbound-links-warn"),
     enabled: true
   }, {
-    renderComponent: () => (0, r.jsx)(c.A, {
+    renderComponent: () => (0, r.jsx)(o.A, {
       title: u.intl.string(u.t["7cAQmj"])
     }, "delete-spam"),
     enabled: true
@@ -50,12 +50,12 @@ let f = e => {
       }, "raid-alerts"),
       enabled: !e.features.has(d.GuildFeatures.RAID_ALERTS_DISABLED)
     }, {
-      renderComponent: () => (0, r.jsx)(c.A, {
+      renderComponent: () => (0, r.jsx)(o.A, {
         title: u.intl.string(u.t.gOkFfI)
       }, "captcha-suspicious-joins"),
       enabled: true
     }, {
-      renderComponent: () => (0, r.jsx)(c.A, {
+      renderComponent: () => (0, r.jsx)(o.A, {
         title: u.intl.string(u.t.r3esyC)
       }, "captcha-raid-joins"),
       enabled: true

@@ -1,7 +1,7 @@
 /** Chunk was on 38663 **/
 /** chunk id: 294868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function b(e) {
+function g(e) {
   let {
     games: t,
     user: n,
@@ -56,8 +56,8 @@ function b(e) {
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
   }(e, ["games", "user", "widgetType"]), {
-    registerItemRef: s,
-    manageFocusOnDelete: o
+    registerItemRef: o,
+    manageFocusOnDelete: s
   } = (0, a.r)();
   return (0, r.jsx)("ul", {
     className: f.h,
@@ -67,27 +67,27 @@ function b(e) {
         user: n,
         game: e,
         widgetType: l,
-        coverRef: s(e.applicationId),
-        onRemoveGame: o
+        coverRef: o(e.applicationId),
+        onRemoveGame: s
       }, i))
     }, e.applicationId))
   })
 }
 
-function g(e) {
+function m(e) {
   var t, n;
   let {
     user: u,
     widgetType: f,
-    disableInteraction: g,
-    games: m
+    disableInteraction: m,
+    games: b
   } = e, y = (0, l.bG)([i.default], () => i.default.getId() === u.id), {
     getManageButtonForWidget: O
   } = (0, d.r)(), j = O(f), {
     expanded: x,
     setExpanded: h
-  } = (0, o.B)(), v = x ? m : m.slice(0, 2), A = m.length > 2, w = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(b, (t = p({}, e), n = n = {
+  } = (0, s.B)(), v = x ? b : b.slice(0, 2), _ = b.length > 2, A = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(g, (t = p({}, e), n = n = {
       games: v
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -98,18 +98,18 @@ function g(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), A && (0, r.jsx)(c.A, {
+    }), t)), _ && (0, r.jsx)(c.A, {
       expanded: x,
       onClick: () => h(e => !e)
     })]
   });
-  return y && !g ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.A, {
+  return y && !m ? (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(o.A, {
       widgetType: f,
-      gameCount: m.length
+      gameCount: b.length
     }), (0, r.jsx)(a.B, {
       emptyListFallbackRef: j,
-      children: w
+      children: A
     })]
-  }) : w
+  }) : A
 }

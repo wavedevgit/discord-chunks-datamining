@@ -2,9 +2,9 @@
 /** chunk id: 291812, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => y,
+  Ay: () => b,
   _A: () => g,
-  sP: () => b
+  sP: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -34,12 +34,12 @@ function E(e) {
     content: c,
     onUpdate: _,
     contentRef: E,
-    compact: b
-  } = e, y = a.state === p.cmJ.SEND_FAILED, O = a.state === p.cmJ.SENDING, A = a.isCommandType(), v = null == (t = a.editedTimestamp) ? true : t.toString(), S = i.useRef(false);
+    compact: y
+  } = e, b = a.state === p.cmJ.SEND_FAILED, O = a.state === p.cmJ.SENDING, v = a.isCommandType(), A = null == (t = a.editedTimestamp) ? true : t.toString(), I = i.useRef(false);
   i.useLayoutEffect(() => {
-    S.current ? null != _ && _() : S.current = true
-  }, [_, a.content, c, v, o]);
-  let I = u._.useConfig({
+    I.current ? null != _ && _() : I.current = true
+  }, [_, a.content, c, A, o]);
+  let S = u._.useConfig({
     location: "MessageContent"
   }).alignMessagesStart;
   return (0, r.jsxs)("div", {
@@ -47,21 +47,21 @@ function E(e) {
     ref: E,
     className: s()(n, m.PT, {
       [h.BK]: true,
-      [h.Tn]: O && !A,
-      [h.Dk]: I,
-      [h.nB]: !I && "rtl" === l()(a.content),
-      [h.Ix]: y,
+      [h.Tn]: O && !v,
+      [h.Dk]: S,
+      [h.nB]: !S && "rtl" === l()(a.content),
+      [h.Ix]: b,
       [h.w3]: a.isUnsupported
     }),
     children: [null != o ? o : g(a, c), (0, r.jsx)(f.A, {
       message: a,
-      compact: b,
+      compact: y,
       location: f.O.WITH_CONTENT
     })]
   })
 }
 
-function b(e, t) {
+function y(e, t) {
   var n, r;
   let {
     message: i
@@ -70,4 +70,4 @@ function b(e, t) {
   } = e;
   return (0, c.A)(e, t, ["message"]) && i.content === a.content && i.state === a.state && (null == (n = i.editedTimestamp) ? true : n.toString()) === (null == (r = a.editedTimestamp) ? true : r.toString())
 }
-let y = Chunk64700.memo(E, b)
+let b = Chunk64700.memo(E, y)

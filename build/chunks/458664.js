@@ -60,7 +60,7 @@ let B = 2e3,
 function K(e) {
   var t;
   return {
-    releasePhase: null == e || null == (t = e.activity) ? true : t.client_platform_config[(0, j.A)((0, v.getOS)())].release_phase
+    releasePhase: null == e || null == (t = e.activity) ? true : t.client_platform_config[(0, j.A)((0, A.getOS)())].release_phase
   }
 }
 
@@ -120,7 +120,7 @@ async function Q(e) {
     c = (0, L.H)(r),
     u = (0, L.D)(r),
     d = g.A.getChannel(c),
-    f = y.default.getCurrentUser();
+    f = b.default.getCurrentUser();
   if (null == l || null == f) return;
   let p = C.Ay.getShelfActivities(u),
     h = (0, N.A)({
@@ -130,7 +130,7 @@ async function Q(e) {
     {
       releasePhase: E
     } = K(h),
-    b = _.A.getRawThermalState();
+    y = _.A.getRawThermalState();
   O.default.track(G.HAw.ACTIVITY_SESSION_LEFT, {
     channel_id: c,
     guild_id: u,
@@ -139,7 +139,7 @@ async function Q(e) {
     application_id: n,
     duration_ms: s,
     user_premium_tier: f.premiumType,
-    raw_thermal_state: b,
+    raw_thermal_state: y,
     release_phase: E,
     shelf_rank: null == h || null == (t = h.activity) ? true : t.shelf_rank,
     activity_user_session_id: l.activityUserSessionId,
@@ -153,7 +153,7 @@ async function Q(e) {
     instance_ids: null != l.launchId ? [l.launchId] : true,
     media_session_ids: l.mediaSessionIds,
     activity_user_session_id: l.activityUserSessionId,
-    raw_thermal_state: b,
+    raw_thermal_state: y,
     duration_ms: s,
     embedded_activity_location_kind: r.kind
   }), delete H[n]
@@ -174,21 +174,21 @@ function $(e) {
       applicationId: r
     })) return;
   let h = m.default.getId(),
-    b = l.find(e => e.userId === h),
-    A = (0, L.H)(u),
-    v = (0, L.D)(u),
-    T = g.A.getChannel(A);
-  if (s && null != T && T.isPrivate() && a && null == b && o.A.selectParticipant(T.id, null), null == b) return;
+    y = l.find(e => e.userId === h),
+    v = (0, L.H)(u),
+    A = (0, L.D)(u),
+    T = g.A.getChannel(v);
+  if (s && null != T && T.isPrivate() && a && null == y && o.A.selectParticipant(T.id, null), null == y) return;
   let R = E.A.getMediaSessionId(),
     w = c.compositeInstanceId,
     P = null == R && (null == T ? true : T.isVocal()) === true && (null == T ? true : T.isPrivate()) === false;
   if (null == w || P) return;
   let D = (0, i.A)(),
     x = "location" in c ? 2 : 1,
-    j = y.default.getCurrentUser();
+    j = b.default.getCurrentUser();
   if (null == j) return;
-  let M = C.Ay.getShelfActivities(v),
-    k = I.A.getState().shelfOrder,
+  let M = C.Ay.getShelfActivities(A),
+    k = S.A.getState().shelfOrder,
     V = (0, N.A)({
       applicationId: r,
       activityConfigs: M
@@ -208,9 +208,9 @@ function $(e) {
     };
   H[r] = q;
   let X = Y[r];
-  (0, S.uJ)(b.nonce) || b.nonce === (null == X ? true : X.nonce) || (X = true), O.default.track(G.HAw.ACTIVITY_SESSION_JOINED, {
-    channel_id: A,
-    guild_id: v,
+  (0, I.uJ)(y.nonce) || y.nonce === (null == X ? true : X.nonce) || (X = true), O.default.track(G.HAw.ACTIVITY_SESSION_JOINED, {
+    channel_id: v,
+    guild_id: A,
     media_session_id: z[0],
     activity_session_id: w,
     application_id: r,
@@ -231,9 +231,9 @@ function $(e) {
     embedded_activity_location_kind: u.kind
   }), O.default.track(G.HAw.ACTIVITY_IFRAME_MOUNT, {
     location_stack: null == X ? true : X.locations,
-    channel_id: A,
+    channel_id: v,
     channel_type: null == T ? true : T.type,
-    guild_id: v,
+    guild_id: A,
     application_id: r,
     instance_id: c.launchId,
     initial_media_session_id: z[0],
@@ -252,14 +252,14 @@ function J(e) {
 }
 class ee extends Chunk272355.A {
   _initialize() {
-    b.A.addChangeListener(this.handleSelectedChannelUpdate), A._.subscribe(G.jej.RELEASE_ACTIVITY_WEB_VIEW, this.handleActivityWebViewRelease), A._.subscribe(G.jej.OPEN_EMBEDDED_ACTIVITY, $), s.h.subscribe("EMBEDDED_ACTIVITY_LAUNCH_START", Z), s.h.subscribe("EMBEDDED_ACTIVITY_LAUNCH_SUCCESS", this.handleActivityLaunchSuccess), s.h.subscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), s.h.subscribe("EMBEDDED_ACTIVITY_LAUNCH_CANCEL", this.handleActivityLaunchCancel), s.h.subscribe("EMBEDDED_ACTIVITY_CLOSE", Q), s.h.subscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), s.h.subscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), s.h.subscribe("CALL_DELETE", this.handleCallDelete), s.h.subscribe("RTC_CONNECTION_STATE", this.handleRTCConnectionState), s.h.subscribe("GUILD_DELETE", this.handleGuildDelete), s.h.subscribe("CHANNEL_DELETE", this.handleChannelDelete), s.h.subscribe("INTERACTION_QUEUE", this.handleInteractionQueue), s.h.subscribe("INTERACTION_CREATE", this.handleInteractionCreate), s.h.subscribe("INTERACTION_SUCCESS", this.handleInteractionSuccess), s.h.subscribe("INTERACTION_FAILURE", this.handleInteractionFailure)
+    y.A.addChangeListener(this.handleSelectedChannelUpdate), v._.subscribe(G.jej.RELEASE_ACTIVITY_WEB_VIEW, this.handleActivityWebViewRelease), v._.subscribe(G.jej.OPEN_EMBEDDED_ACTIVITY, $), s.h.subscribe("EMBEDDED_ACTIVITY_LAUNCH_START", Z), s.h.subscribe("EMBEDDED_ACTIVITY_LAUNCH_SUCCESS", this.handleActivityLaunchSuccess), s.h.subscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), s.h.subscribe("EMBEDDED_ACTIVITY_LAUNCH_CANCEL", this.handleActivityLaunchCancel), s.h.subscribe("EMBEDDED_ACTIVITY_CLOSE", Q), s.h.subscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), s.h.subscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), s.h.subscribe("CALL_DELETE", this.handleCallDelete), s.h.subscribe("RTC_CONNECTION_STATE", this.handleRTCConnectionState), s.h.subscribe("GUILD_DELETE", this.handleGuildDelete), s.h.subscribe("CHANNEL_DELETE", this.handleChannelDelete), s.h.subscribe("INTERACTION_QUEUE", this.handleInteractionQueue), s.h.subscribe("INTERACTION_CREATE", this.handleInteractionCreate), s.h.subscribe("INTERACTION_SUCCESS", this.handleInteractionSuccess), s.h.subscribe("INTERACTION_FAILURE", this.handleInteractionFailure)
   }
   _terminate() {
-    b.A.removeChangeListener(this.handleSelectedChannelUpdate), A._.unsubscribe(G.jej.RELEASE_ACTIVITY_WEB_VIEW, this.handleActivityWebViewRelease), A._.unsubscribe(G.jej.OPEN_EMBEDDED_ACTIVITY, $), s.h.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_START", Z), s.h.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_SUCCESS", this.handleActivityLaunchSuccess), s.h.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), s.h.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_CANCEL", this.handleActivityLaunchCancel), s.h.unsubscribe("EMBEDDED_ACTIVITY_CLOSE", Q), s.h.unsubscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), s.h.unsubscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), s.h.unsubscribe("CALL_DELETE", this.handleCallDelete), s.h.unsubscribe("RTC_CONNECTION_STATE", this.handleRTCConnectionState), s.h.unsubscribe("GUILD_DELETE", this.handleGuildDelete), s.h.unsubscribe("CHANNEL_DELETE", this.handleChannelDelete), s.h.unsubscribe("INTERACTION_QUEUE", this.handleInteractionQueue), s.h.unsubscribe("INTERACTION_CREATE", this.handleInteractionCreate), s.h.unsubscribe("INTERACTION_SUCCESS", this.handleInteractionSuccess), s.h.unsubscribe("INTERACTION_FAILURE", this.handleInteractionFailure)
+    y.A.removeChangeListener(this.handleSelectedChannelUpdate), v._.unsubscribe(G.jej.RELEASE_ACTIVITY_WEB_VIEW, this.handleActivityWebViewRelease), v._.unsubscribe(G.jej.OPEN_EMBEDDED_ACTIVITY, $), s.h.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_START", Z), s.h.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_SUCCESS", this.handleActivityLaunchSuccess), s.h.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), s.h.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_CANCEL", this.handleActivityLaunchCancel), s.h.unsubscribe("EMBEDDED_ACTIVITY_CLOSE", Q), s.h.unsubscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), s.h.unsubscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), s.h.unsubscribe("CALL_DELETE", this.handleCallDelete), s.h.unsubscribe("RTC_CONNECTION_STATE", this.handleRTCConnectionState), s.h.unsubscribe("GUILD_DELETE", this.handleGuildDelete), s.h.unsubscribe("CHANNEL_DELETE", this.handleChannelDelete), s.h.unsubscribe("INTERACTION_QUEUE", this.handleInteractionQueue), s.h.unsubscribe("INTERACTION_CREATE", this.handleInteractionCreate), s.h.unsubscribe("INTERACTION_SUCCESS", this.handleInteractionSuccess), s.h.unsubscribe("INTERACTION_FAILURE", this.handleInteractionFailure)
   }
   constructor(...e) {
     super(...e), F(this, "handleSelectedChannelUpdate", () => {
-      let e = b.A.getVoiceChannelId();
+      let e = y.A.getVoiceChannelId();
       for (let {
           location: t,
           applicationId: n
@@ -353,7 +353,7 @@ class ee extends Chunk272355.A {
     }), F(this, "handleCallDelete", e => {
       let {
         channelId: t
-      } = e, n = b.A.getVoiceChannelId();
+      } = e, n = y.A.getVoiceChannelId();
       null != n && n === t && this.handleCallEnded(t)
     }), F(this, "handleRTCConnectionState", e => {
       if (e.state !== G.S7L.DISCONNECTED) return;
@@ -374,7 +374,7 @@ class ee extends Chunk272355.A {
         commandOrigin: o,
         inviterUserId: l
       } = e, c = g.A.getChannel(i);
-      if (true === c || h.OU.has(null == c ? true : c.type) && b.A.getVoiceChannelId() !== i) return;
+      if (true === c || h.OU.has(null == c ? true : c.type) && y.A.getVoiceChannelId() !== i) return;
       let u = C.Ay.getSelfEmbeddedActivityForChannel(i);
       if ((null == u ? true : u.applicationId) === a) return;
       let d = await f.Ay.fetchApplication(a);

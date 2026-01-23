@@ -48,9 +48,9 @@ class d {
       g = t - s(h, m, 1, 1),
       E = 2;
     t < s(h, m, 3, 1) ? E = 0 : o(m) && (E = 1);
-    let b = Math.floor(((g + E) * 12 + 373) / 367),
-      y = t - s(h, m, b, 1) + 1;
-    return new(0, r.ng)(h, m, b, y)
+    let y = Math.floor(((g + E) * 12 + 373) / 367),
+      b = t - s(h, m, y, 1) + 1;
+    return new(0, r.ng)(h, m, y, b)
   }
   toJulianDay(e) {
     return s(e.era, e.year, e.month, e.day)

@@ -2,7 +2,7 @@
 /** chunk id: 286911, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => c
 }), require("./114821.js"), require("./339614.js"), require("./896048.js"), require("./321073.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js"), require("./228524.js");
 var Chunk64700 = require("./64700.js"),
   Chunk417597 = require("./417597.js"),
@@ -11,20 +11,20 @@ var Chunk64700 = require("./64700.js"),
   Chunk304162 = require("./304162.js"),
   Chunk835134 = require("./835134.js");
 
-function o(e, t) {
-  var n, o;
+function c(e, t) {
+  var n, c;
   let {
     mediaAttachments: d,
     hasThumbnail: u
   } = function(e) {
-    let [t, n] = l.useState(null), c = (0, r.yK)([i.A], () => {
-      let t = i.A.getUploads(e.id, a.oU.CREATE_FORUM_POST.drafts.type),
+    let [t, n] = l.useState(null), o = (0, r.yK)([a.A], () => {
+      let t = a.A.getUploads(e.id, i.oU.CREATE_FORUM_POST.drafts.type),
         n = t.find(e => e.isThumbnail);
       return null != n ? [n] : t.filter(e => e.isVideo || e.isImage)
-    }), o = l.useMemo(() => c.some(e => e.isThumbnail), [c]);
+    }), c = l.useMemo(() => o.some(e => e.isThumbnail), [o]);
     return l.useEffect(() => {
       let e = [];
-      return n(c.slice(0, s.A8).flatMap(t => {
+      return n(o.slice(0, s.A8).flatMap(t => {
         var n;
         let l = null == t || null == (n = t.item) ? true : n.file;
         if (null == l) return [];
@@ -41,13 +41,13 @@ function o(e, t) {
       })), () => {
         n(null), e.forEach(e => URL.revokeObjectURL(e))
       }
-    }, [c]), {
+    }, [o]), {
       mediaAttachments: t,
-      hasThumbnail: o
+      hasThumbnail: c
     }
   }(e), m = Math.max(s.A8 - (null != (n = null == d ? true : d.length) ? n : 0), 0), {
     embeds: h
-  } = (0, c.w)(u, m, t), f = l.useMemo(() => null == h ? true : h.flatMap(e => {
+  } = (0, o.w)(u, m, t), g = l.useMemo(() => null == h ? true : h.flatMap(e => {
     let t = (0, s.m3)(e);
     return null == t ? [] : {
       id: t,
@@ -55,6 +55,6 @@ function o(e, t) {
       spoiler: false,
       alt: e.title
     }
-  }), [h]), g = [...null != d ? d : []];
-  return !u && m > 0 && g.push(...null != (o = null == f ? true : f.slice(0, m)) ? o : []), g
+  }), [h]), x = [...null != d ? d : []];
+  return !u && m > 0 && x.push(...null != (c = null == g ? true : g.slice(0, m)) ? c : []), x
 }

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => J,
-  _: () => y
+  _: () => b
 });
 var r, Chunk311907 = require("./311907.js"),
   Chunk506774 = require("./506774.js"),
@@ -62,19 +62,19 @@ function E(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = b(e, t), Object.getOwnPropertySymbols)
+  if (a = y(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-var y = function(e) {
+var b = function(e) {
   return e.DEFAULT = "default", e.HIGH = "high", e
 }({});
 let O = {
@@ -104,8 +104,8 @@ let O = {
     enableCustomCursor: true,
     switchIconsEnabled: false
   },
-  A = O,
-  v = {
+  v = O,
+  A = {
     12: "font-size-12",
     14: "font-size-14",
     15: "font-size-15",
@@ -115,127 +115,127 @@ let O = {
     24: "font-size-24"
   };
 
-function S(e) {
+function I(e) {
   return f.hH7.FONT_SIZES.indexOf(e) >= 0 ? e : f.hH7.FONT_SIZE_DEFAULT
 }
 
-function I(e) {
-  let t = S(e.fontSize);
-  if (t > f.hH7.FONT_SIZE_MAX || t < f.hH7.FONT_SIZE_MIN || A.fontSize === t) returnfalse;
-  (A = h({}, A)).fontSize = t
+function S(e) {
+  let t = I(e.fontSize);
+  if (t > f.hH7.FONT_SIZE_MAX || t < f.hH7.FONT_SIZE_MIN || v.fontSize === t) returnfalse;
+  (v = h({}, v)).fontSize = t
 }
 
 function T(e) {
-  if (e.zoom < f.hH7.ZOOM_MIN || e.zoom > f.hH7.ZOOM_MAX || A.zoom === e.zoom) returnfalse;
-  (A = h({}, A)).zoom = e.zoom, d.A.setZoomFactor(A.zoom)
+  if (e.zoom < f.hH7.ZOOM_MIN || e.zoom > f.hH7.ZOOM_MAX || v.zoom === e.zoom) returnfalse;
+  (v = h({}, v)).zoom = e.zoom, d.A.setZoomFactor(v.zoom)
 }
 
 function C() {
-  let e = A.fontSize !== f.hH7.FONT_SIZE_DEFAULT,
-    t = A.zoom !== f.hH7.ZOOM_DEFAULT;
+  let e = v.fontSize !== f.hH7.FONT_SIZE_DEFAULT,
+    t = v.zoom !== f.hH7.ZOOM_DEFAULT;
   if (!e && !t) returnfalse;
-  (A = h({}, A)).fontSize !== f.hH7.FONT_SIZE_DEFAULT && (A.fontSize = f.hH7.FONT_SIZE_DEFAULT), A.zoom !== f.hH7.ZOOM_DEFAULT && (A.zoom = f.hH7.ZOOM_DEFAULT, d.A.setZoomFactor(A.zoom))
+  (v = h({}, v)).fontSize !== f.hH7.FONT_SIZE_DEFAULT && (v.fontSize = f.hH7.FONT_SIZE_DEFAULT), v.zoom !== f.hH7.ZOOM_DEFAULT && (v.zoom = f.hH7.ZOOM_DEFAULT, d.A.setZoomFactor(v.zoom))
 }
 
 function N() {
-  if (A.keyboardModeEnabled) returnfalse;
-  (A = h({}, A)).keyboardModeEnabled = true
+  if (v.keyboardModeEnabled) returnfalse;
+  (v = h({}, v)).keyboardModeEnabled = true
 }
 
 function R() {
-  if (!A.keyboardModeEnabled) returnfalse;
-  (A = h({}, A)).keyboardModeEnabled = false
+  if (!v.keyboardModeEnabled) returnfalse;
+  (v = h({}, v)).keyboardModeEnabled = false
 }
 
 function w() {
-  (A = h({}, A)).colorblindMode = !A.colorblindMode
+  (v = h({}, v)).colorblindMode = !v.colorblindMode
 }
 
 function P() {
-  (A = h({}, A)).lowContrastMode = !A.lowContrastMode
+  (v = h({}, v)).lowContrastMode = !v.lowContrastMode
 }
 
 function D(e) {
-  A.syncForcedColors = e.syncForcedColors
+  v.syncForcedColors = e.syncForcedColors
 }
 
 function x(e) {
-  (A = h({}, A)).saturation = e.saturation
+  (v = h({}, v)).saturation = e.saturation
 }
 
 function L() {
-  (A = h({}, A)).desaturateUserColors = !A.desaturateUserColors
+  (v = h({}, v)).desaturateUserColors = !v.desaturateUserColors
 }
 
 function j(e) {
-  A.roleStyle = e.roleStyle
+  v.roleStyle = e.roleStyle
 }
 
 function M(e) {
-  A.displayNameStylesEnabled = e.enabled
+  v.displayNameStylesEnabled = e.enabled
 }
 
 function k() {
-  (A = h({}, A)).submitButtonEnabled = !A.submitButtonEnabled
+  (v = h({}, v)).submitButtonEnabled = !v.submitButtonEnabled
 }
 
 function U() {
-  (A = h({}, A)).syncProfileThemeWithUserTheme = !A.syncProfileThemeWithUserTheme
+  (v = h({}, v)).syncProfileThemeWithUserTheme = !v.syncProfileThemeWithUserTheme
 }
 
 function G(e) {
-  if (A.systemPrefersReducedMotion === e.systemPrefersReducedMotion) returnfalse;
-  A = g(h({}, A), {
+  if (v.systemPrefersReducedMotion === e.systemPrefersReducedMotion) returnfalse;
+  v = g(h({}, v), {
     systemPrefersReducedMotion: e.systemPrefersReducedMotion
   })
 }
 
 function V(e) {
-  if (A.systemPrefersCrossfades === e.systemPrefersCrossfades) returnfalse;
-  A = g(h({}, A), {
+  if (v.systemPrefersCrossfades === e.systemPrefersCrossfades) returnfalse;
+  v = g(h({}, v), {
     systemPrefersCrossfades: e.systemPrefersCrossfades
   })
 }
 
 function F(e) {
-  if (A.prefersReducedMotion === e.prefersReducedMotion) returnfalse;
-  A = g(h({}, A), {
+  if (v.prefersReducedMotion === e.prefersReducedMotion) returnfalse;
+  v = g(h({}, v), {
     prefersReducedMotion: e.prefersReducedMotion
   })
 }
 
 function B(e) {
-  if (A.systemPrefersContrast === e.systemPrefersContrast) returnfalse;
-  A = g(h({}, A), {
+  if (v.systemPrefersContrast === e.systemPrefersContrast) returnfalse;
+  v = g(h({}, v), {
     systemPrefersContrast: e.systemPrefersContrast
   })
 }
 
 function H(e) {
-  A = g(h({}, A), {
+  v = g(h({}, v), {
     alwaysShowLinkDecorations: e.alwaysShowLinkDecorations
   })
 }
 
 function Y(e) {
-  A = g(h({}, A), {
+  v = g(h({}, v), {
     enableCustomCursor: e.enableCustomCursor
   })
 }
 
 function W(e) {
   var t;
-  return A = g(h({}, A), {
+  return v = g(h({}, v), {
     systemForcedColors: null != (t = e.systemForcedColors) ? t : "none"
   }), true
 }
 
 function K() {
-  A.forcedColorsModalSeen = true
+  v.forcedColorsModalSeen = true
 }
 
 function z() {
-  A = g(h({}, A), {
+  v = g(h({}, v), {
     keyboardNavigationExplainerModalSeen: true
   })
 }
@@ -244,7 +244,7 @@ function q(e) {
   let {
     messageGroupSpacing: t
   } = e;
-  A = g(h({}, A), {
+  v = g(h({}, v), {
     messageGroupSpacing: t
   })
 }
@@ -253,7 +253,7 @@ function X(e) {
   let {
     contrast: t
   } = e;
-  A = g(h({}, A), {
+  v = g(h({}, v), {
     contrast: t
   })
 }
@@ -262,72 +262,72 @@ function Z(e) {
   let {
     contrastMode: t
   } = e;
-  A = g(h({}, A), {
+  v = g(h({}, v), {
     contrastMode: t
   })
 }
 
 function Q(e) {
-  A = g(h({}, A), {
+  v = g(h({}, v), {
     switchIconsEnabled: e.switchIconsEnabled
   })
 }
 class $ extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   initialize(e) {
-    this.waitFor(u.A), this.waitFor(l.A), isNaN((A = h({}, O, null != e ? e : null)).fontSize) && (A.fontSize = f.hH7.FONT_SIZE_DEFAULT), 0 > p.qh.indexOf(null != A.messageGroupSpacing ? A.messageGroupSpacing : false) && (A.messageGroupSpacing = null)
+    this.waitFor(u.A), this.waitFor(l.A), isNaN((v = h({}, O, null != e ? e : null)).fontSize) && (v.fontSize = f.hH7.FONT_SIZE_DEFAULT), 0 > p.qh.indexOf(null != v.messageGroupSpacing ? v.messageGroupSpacing : false) && (v.messageGroupSpacing = null)
   }
   get fontScale() {
-    return A.fontSize / f.hH7.FONT_SIZE_DEFAULT * 100
+    return v.fontSize / f.hH7.FONT_SIZE_DEFAULT * 100
   }
   get fontSize() {
-    return A.fontSize
+    return v.fontSize
   }
   get isFontScaledUp() {
-    return A.fontSize > f.hH7.FONT_SIZE_DEFAULT
+    return v.fontSize > f.hH7.FONT_SIZE_DEFAULT
   }
   get isFontScaledDown() {
-    return A.fontSize < f.hH7.FONT_SIZE_DEFAULT
+    return v.fontSize < f.hH7.FONT_SIZE_DEFAULT
   }
   get fontScaleClass() {
     var e;
-    let t = null != (e = v[this.fontSize]) ? e : "";
+    let t = null != (e = A[this.fontSize]) ? e : "";
     return this.isFontScaledUp ? "a11y-font-scaled-up ".concat(t) : this.isFontScaledDown ? "a11y-font-scaled-down ".concat(t) : "".concat(t)
   }
   get zoom() {
-    return A.zoom
+    return v.zoom
   }
   get isZoomedIn() {
-    return A.zoom > f.hH7.ZOOM_DEFAULT
+    return v.zoom > f.hH7.ZOOM_DEFAULT
   }
   get isZoomedOut() {
-    return A.zoom < f.hH7.ZOOM_DEFAULT
+    return v.zoom < f.hH7.ZOOM_DEFAULT
   }
   get keyboardModeEnabled() {
-    return A.keyboardModeEnabled
+    return v.keyboardModeEnabled
   }
   get colorblindMode() {
-    return A.colorblindMode
+    return v.colorblindMode
   }
   get lowContrastMode() {
-    return A.lowContrastMode
+    return v.lowContrastMode
   }
   get saturation() {
-    return A.saturation
+    return v.saturation
   }
   get contrast() {
-    return A.contrast
+    return v.contrast
   }
   get desaturateUserColors() {
-    return A.desaturateUserColors
+    return v.desaturateUserColors
   }
   get forcedColorsModalSeen() {
-    return A.forcedColorsModalSeen
+    return v.forcedColorsModalSeen
   }
   get keyboardNavigationExplainerModalSeen() {
-    return A.keyboardNavigationExplainerModalSeen
+    return v.keyboardNavigationExplainerModalSeen
   }
   get messageGroupSpacing() {
-    return null != A.messageGroupSpacing ? A.messageGroupSpacing : c.hH.getSetting() ? p.y5 : p.ES
+    return null != v.messageGroupSpacing ? v.messageGroupSpacing : c.hH.getSetting() ? p.y5 : p.ES
   }
   get isMessageGroupSpacingIncreased() {
     let e = c.hH.getSetting() ? p.y5 : p.ES;
@@ -338,63 +338,63 @@ class $ extends(r = Chunk311907.Ay.DeviceSettingsStore) {
     return this.messageGroupSpacing < e
   }
   get isSubmitButtonEnabled() {
-    return A.submitButtonEnabled
+    return v.submitButtonEnabled
   }
   get syncProfileThemeWithUserTheme() {
-    return A.syncProfileThemeWithUserTheme
+    return v.syncProfileThemeWithUserTheme
   }
   get systemPrefersReducedMotion() {
-    return A.systemPrefersReducedMotion
+    return v.systemPrefersReducedMotion
   }
   get rawPrefersReducedMotion() {
-    return A.prefersReducedMotion
+    return v.prefersReducedMotion
   }
   get useReducedMotion() {
     if (l.A.active) returntrue;
-    switch (A.prefersReducedMotion) {
+    switch (v.prefersReducedMotion) {
       case "no-preference":
         returnfalse;
       case "reduce":
         returntrue;
       default:
-        return "reduce" === A.systemPrefersReducedMotion
+        return "reduce" === v.systemPrefersReducedMotion
     }
   }
   get systemForcedColors() {
-    return A.systemForcedColors
+    return v.systemForcedColors
   }
   get syncForcedColors() {
-    return A.syncForcedColors
+    return v.syncForcedColors
   }
   get useForcedColors() {
-    return !!A.syncForcedColors && "active" === A.systemForcedColors
+    return !!v.syncForcedColors && "active" === v.systemForcedColors
   }
   get systemPrefersContrast() {
-    return A.systemPrefersContrast
+    return v.systemPrefersContrast
   }
   get systemPrefersCrossfades() {
-    return A.systemPrefersCrossfades
+    return v.systemPrefersCrossfades
   }
   get alwaysShowLinkDecorations() {
-    return A.alwaysShowLinkDecorations
+    return v.alwaysShowLinkDecorations
   }
   get enableCustomCursor() {
-    return A.enableCustomCursor
+    return v.enableCustomCursor
   }
   get roleStyle() {
-    return A.roleStyle
+    return v.roleStyle
   }
   get displayNameStylesEnabled() {
-    return A.displayNameStylesEnabled
+    return v.displayNameStylesEnabled
   }
   get isHighContrastModeEnabled() {
-    return "high" === A.contrastMode
+    return "high" === v.contrastMode
   }
   get isSwitchIconsEnabled() {
-    return A.switchIconsEnabled
+    return v.switchIconsEnabled
   }
   getUserAgnosticState() {
-    return A
+    return v
   }
 }
 _($, "displayName", "AccessibilityStore"), _($, "persistKey", "AccessibilityStore"), _($, "migrations", [() => {
@@ -461,7 +461,7 @@ _($, "displayName", "AccessibilityStore"), _($, "persistKey", "AccessibilityStor
   enableCustomCursor: true
 })]);
 let J = new $(Chunk73153.h, {
-  ACCESSIBILITY_SET_FONT_SIZE: I,
+  ACCESSIBILITY_SET_FONT_SIZE: S,
   ACCESSIBILITY_SET_ZOOM: T,
   ACCESSIBILITY_RESET_TO_DEFAULT: C,
   ACCESSIBILITY_KEYBOARD_MODE_ENABLE: N,

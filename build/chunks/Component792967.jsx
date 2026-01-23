@@ -17,30 +17,30 @@ function d(e, t, n) {
   let {
     markChannelRead: l,
     markGuildRead: d,
-    deleteChannel: f,
-    toggle: p,
-    getNumUnreadChannels: h
-  } = t, b = null;
+    deleteChannel: p,
+    toggle: h,
+    getNumUnreadChannels: f
+  } = t, g = null;
   return i().flatMap(e, e => {
-    let t = e.sortOrder !== b;
-    b = e.sortOrder;
+    let t = e.sortOrder !== g;
+    g = e.sortOrder;
     let i = [];
-    return t && (e.hasLoadedAnything && e.sortOrder === o.xB.ReallyOldChannel ? i.push((0, r.jsx)(a.A, {
+    return t && (e.hasLoadedAnything && e.sortOrder === o.xB.ReallyOldChannel ? i.push((0, r.jsx)(s.A, {
       className: u.y,
       contentClassName: u.$,
       children: c.intl.string(c.t.roBMzj)
-    }, "old-divider")) : e.hasLoadedAnything && e.sortOrder === o.xB.NoNotifications && i.push((0, r.jsx)(a.A, {
+    }, "old-divider")) : e.hasLoadedAnything && e.sortOrder === o.xB.NoNotifications && i.push((0, r.jsx)(s.A, {
       className: u.y,
       contentClassName: u.$,
       children: c.intl.string(c.t["2Ys7nu"])
-    }, "disabled-divider"))), i.push((0, r.jsx)(s.A, {
+    }, "disabled-divider"))), i.push((0, r.jsx)(a.A, {
       channel: e,
       markChannelRead: l,
       markGuildRead: d,
-      toggle: p,
-      deleteChannel: f,
+      toggle: h,
+      deleteChannel: p,
       onJump: n,
-      getNumUnreadChannels: h
+      getNumUnreadChannels: f
     }, e.channelId)), i
   })
 }

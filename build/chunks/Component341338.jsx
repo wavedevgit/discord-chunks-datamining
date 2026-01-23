@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 341338, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => eh
+  A: () => eg
 }), require("./65821.js"), require("./228524.js"), require("./321073.js"), require("./667532.js"), require("./896048.js"), require("./938796.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -99,7 +99,7 @@ function ep(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class ef extends Chunk64700.PureComponent {
+class eh extends Chunk64700.PureComponent {
   get isChannelType() {
     return null != this.props.channel
   }
@@ -120,7 +120,7 @@ class ef extends Chunk64700.PureComponent {
       } = l.state;
       this._analyticsSource = e, this._extraAnalyticsProperties = t
     } else this._analyticsSource = ea.$OG;
-    (null == t || t.isSlimDirectoryVersion()) && a(), null != e && (n || i || (0, g.LM)(e.applicationId), r && h.h.wait(() => (0, A.n)(e.applicationId))), this.trackViewed(), this.replaceUrlWithSlug()
+    (null == t || t.isSlimDirectoryVersion()) && a(), null != e && (n || i || (0, m.LM)(e.applicationId), r && g.h.wait(() => (0, f.n)(e.applicationId))), this.trackViewed(), this.replaceUrlWithSlug()
   }
   componentDidUpdate(e) {
     let {
@@ -133,12 +133,12 @@ class ef extends Chunk64700.PureComponent {
       storeListing: s,
       fetchStoreListing: o
     } = this.props;
-    if (s !== e.storeListing && null != s && (0, z.W)(es.XK.STORE_LISTING, {
+    if (s !== e.storeListing && null != s && (0, W.W)(es.XK.STORE_LISTING, {
         skuId: i,
         slug: a
       }), (t !== e.locale || i !== e.skuId) && o(), r && !e.shouldFetchStatistics) {
       if (null == n) throw Error("Unexpected missing sku");
-      h.h.wait(() => (0, A.n)(n.applicationId))
+      g.h.wait(() => (0, f.n)(n.applicationId))
     }(i !== e.skuId || l !== e.storeListingId) && (this._trackedViewed = false), this.trackViewed(), this.replaceUrlWithSlug()
   }
   componentWillUnmount() {
@@ -187,21 +187,21 @@ class ef extends Chunk64700.PureComponent {
       toolbar: this.renderHeaderToolbar(e, t),
       children: null != n ? (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(x.A.Icon, {
-          icon: f.gqV,
+          icon: h.gqV,
           "aria-label": eo.intl.string(eo.t["P1/Erq"])
         }), (0, r.jsx)(x.A.Title, {
           children: n.name
         })]
       }) : null != t && t.premium ? (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(x.A.Icon, {
-          icon: f.tvc,
+          icon: h.tvc,
           "aria-label": eo.intl.string(eo.t.Ipxkog)
         }), (0, r.jsx)(et.A, {
           sku: t
         })]
       }) : null != t ? (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(x.A.Icon, {
-          icon: f.gqV,
+          icon: h.gqV,
           "aria-label": eo.intl.string(eo.t["P1/Erq"])
         }), (0, r.jsx)(x.A.Title, {
           children: t.name
@@ -306,7 +306,7 @@ class ef extends Chunk64700.PureComponent {
         children: eo.intl.format(eo.t.tluX4B, {
           name: n.name
         })
-      }), (0, r.jsx)(_.A, {}), (0, r.jsx)(q.A, {
+      }), (0, r.jsx)(b.A, {}), (0, r.jsx)(z.A, {
         applicationId: e.id,
         blurb: t.summary,
         description: l,
@@ -316,7 +316,7 @@ class ef extends Chunk64700.PureComponent {
     })
   }
   renderApplicationContentRating(e) {
-    return (0, r.jsx)(W.A, {
+    return (0, r.jsx)(q.A, {
       sku: e,
       className: ec.ZL
     })
@@ -399,7 +399,7 @@ class ef extends Chunk64700.PureComponent {
       children: [this.renderHeader(e, t), (0, r.jsx)(S.A, {
         align: S.A.Align.CENTER,
         justify: S.A.Justify.CENTER,
-        children: (0, r.jsx)(f.y$y, {
+        children: (0, r.jsx)(h.y$y, {
           className: ec.u1
         })
       })]
@@ -412,7 +412,7 @@ class ef extends Chunk64700.PureComponent {
       return (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(N.HI, {
           location: e.name
-        }), this.renderJsonLD(), this.renderHeader(e, t), (0, r.jsx)(J.A, {
+        }), this.renderJsonLD(), this.renderHeader(e, t), (0, r.jsx)($.A, {
           game: e
         }), n]
       })
@@ -421,10 +421,10 @@ class ef extends Chunk64700.PureComponent {
       className: ec.I,
       children: [(0, r.jsx)(N.HI, {
         location: e.name
-      }), this.renderJsonLD(), (0, r.jsx)(b.A, {
+      }), this.renderJsonLD(), (0, r.jsx)(_.A, {
         section: ea.JJy.NAVIGATION,
         children: this.renderHeader(e, t)
-      }), (0, r.jsx)(b.A, {
+      }), (0, r.jsx)(_.A, {
         section: ea.JJy.BODY,
         children: this.renderListing()
       })]
@@ -465,7 +465,7 @@ class ef extends Chunk64700.PureComponent {
         channel: e,
         guild: t
       } = this.props;
-      null != e && null != t && (0, f.mMO)(async () => {
+      null != e && null != t && (0, h.mMO)(async () => {
         let {
           default: i
         } = await Promise.all([n.e("43600"), n.e("65202")]).then(n.bind(n, 234355));
@@ -486,7 +486,7 @@ class ef extends Chunk64700.PureComponent {
         size: p.$n.Sizes.NONE,
         onClick: this.handleCreateInstantInvite,
         className: ec.nf,
-        children: (0, r.jsx)(f.qYV, {
+        children: (0, r.jsx)(h.qYV, {
           size: "md",
           color: "currentColor",
           className: ec.wP
@@ -506,7 +506,7 @@ class ef extends Chunk64700.PureComponent {
           size: p.$n.Sizes.NONE,
           onClick: this.copyCurrentUrl,
           className: ec.nf,
-          children: (0, r.jsx)(f.qYV, {
+          children: (0, r.jsx)(h.qYV, {
             size: "md",
             color: "currentColor",
             className: ec.wP
@@ -537,7 +537,7 @@ class ef extends Chunk64700.PureComponent {
             className: ec.eZ,
             currentStoreListingId: null != l ? l.id : null,
             onStoreListingSelect: e => {
-              null != t && (0, m.ct)(t.id, {
+              null != t && (0, A.ct)(t.id, {
                 slug: i,
                 analyticsSource: {
                   page: s.page,
@@ -556,8 +556,8 @@ class ef extends Chunk64700.PureComponent {
             }),
             children: [null != t ? (0, j.A)(t) : null, null != e && null != t ? (0, r.jsx)("div", {
               children: "deprecated!"
-            }) : null, (0, r.jsx)($.A, {
-              messageStyle: $.g.SHORT,
+            }) : null, (0, r.jsx)(J.A, {
+              messageStyle: J.g.SHORT,
               className: ec.Mb
             })]
           })
@@ -569,7 +569,7 @@ class ef extends Chunk64700.PureComponent {
         pageSize: n,
         isFocused: i
       } = this.props;
-      return (0, r.jsx)(b.A, {
+      return (0, r.jsx)(_.A, {
         section: ea.JJy.HERO,
         children: (0, r.jsx)(Z.A, {
           pageSize: n,
@@ -589,12 +589,12 @@ class ef extends Chunk64700.PureComponent {
       return null == e || null == n || null == t || t.isSlimDirectoryVersion() ? (0, r.jsx)(S.A, {
         align: S.A.Align.CENTER,
         justify: S.A.Justify.CENTER,
-        children: (0, r.jsx)(f.y$y, {})
+        children: (0, r.jsx)(h.y$y, {})
       }) : i === el.q.SMALL ? this.renderSmall(e, t, n) : this.renderLarge(e, t, n)
     })
   }
 }
-let eh = (0, Chunk707606.A)((0, Chunk490415.A)(Chunk311907.Ay.connectStores([Chunk286805.A, Chunk544028.A, Chunk773669.default, Chunk531685.A, Chunk328968.A, Chunk67480.A, Chunk147964.A, Chunk10716.A, Chunk587895.A, Chunk609276.A, Chunk71393.A, Chunk469778.A], e => {
+let eg = (0, Chunk707606.A)((0, Chunk490415.A)(Chunk311907.Ay.connectStores([Chunk286805.A, Chunk544028.A, Chunk773669.default, Chunk531685.A, Chunk328968.A, Chunk67480.A, Chunk147964.A, Chunk10716.A, Chunk587895.A, Chunk609276.A, Chunk71393.A, Chunk469778.A], e => {
   let t, n, r, {
     inputSkuId: i,
     applicationId: l,
@@ -630,4 +630,4 @@ let eh = (0, Chunk707606.A)((0, Chunk490415.A)(Chunk311907.Ay.connectStores([Chu
     locale: P.default.locale,
     guild: null != c ? L.A.getGuild(c.getGuildId()) : null
   }
-})(ef)))
+})(eh)))

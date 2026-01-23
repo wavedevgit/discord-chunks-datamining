@@ -2,7 +2,7 @@
 /** chunk id: 86980, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  j: () => b
+  j: () => y
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -28,7 +28,7 @@ function E(e) {
     n = null != t ? p.A.getWindow(t) : true;
   return null == n || n.closed ? s.SYi : s.KX8
 }
-async function b(e) {
+async function y(e) {
   let {
     applicationId: t,
     skuId: n,
@@ -60,10 +60,10 @@ async function b(e) {
       onClose: o
     })
   });
-  await y(t, n, r, s, i)
+  await b(t, n, r, s, i)
 }
 
-function y(e, t, n, i, a) {
+function b(e, t, n, i, a) {
   let s = (e, t, n) => (0, r.jsx)(h.fs, {
     step: n,
     onClose: () => t(false)

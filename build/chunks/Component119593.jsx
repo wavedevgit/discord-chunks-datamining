@@ -1,7 +1,7 @@
 /** Chunk was on 33957 **/
 /** chunk id: 119593, original params: e,n,l (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => I
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,92 +21,92 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk159453 = require("./159453.js");
-let v = Chunk64700.memo(function(e) {
+let _ = Chunk64700.memo(function(e) {
     let {
       guild: n
     } = e, {
       guildProfile: l,
-      fetchGuildProfile: r
-    } = (0, d.u)(n.id);
-    return (a.useEffect(() => {
-      r()
-    }, [r]), null == l) ? null : (0, t.jsx)(o.Ay, {
+      fetchGuildProfile: a
+    } = (0, o.u)(n.id);
+    return (r.useEffect(() => {
+      a()
+    }, [a]), null == l) ? null : (0, t.jsx)(d.Ay, {
       profile: l,
       disableCTA: true,
       disableGuildNameClick: true
     })
   }),
-  y = e => {
+  v = e => {
     let n, {
         channelId: l,
-        title: d,
-        icon: o
+        title: o,
+        icon: d
       } = e,
-      g = (0, r.bG)([f.A], () => f.A.getChannel(l)),
-      A = (0, r.bG)([h.A], () => h.A.getMessages(l)),
-      v = (0, r.bG)([b.A], () => b.A.can(j.xBc.VIEW_CHANNEL, g)),
-      y = A.first(),
-      N = (0, c.yC)(y, false),
-      O = (null == N ? true : N.length) > 0 ? N[0] : null,
-      I = null != g && null == y && !A.loadingMore && !A.ready && !A.hasFetched && v;
-    return a.useEffect(() => {
-      I && s.A.fetchMessages({
+      b = (0, a.bG)([m.A], () => m.A.getChannel(l)),
+      p = (0, a.bG)([h.A], () => h.A.getMessages(l)),
+      _ = (0, a.bG)([f.A], () => f.A.can(j.xBc.VIEW_CHANNEL, b)),
+      v = p.first(),
+      y = (0, c.yC)(v, false),
+      I = (null == y ? true : y.length) > 0 ? y[0] : null,
+      N = null != b && null == v && !p.loadingMore && !p.ready && !p.hasFetched && _;
+    return r.useEffect(() => {
+      N && s.A.fetchMessages({
         channelId: l,
         after: l,
         limit: 5
       })
-    }, [l, I]), (0, t.jsx)(i.DUT, {
-      className: p.Km,
+    }, [l, N]), (0, t.jsx)(i.DUT, {
+      className: A.Km,
       onClick: e => {
-        null != g && (e.shiftKey ? (0, x.bN)(g.guild_id, g.id) : u.A.openResourceChannelAsSidebar({
-          guildId: g.guild_id,
-          channelId: g.id
+        null != b && (e.shiftKey ? (0, x.bN)(b.guild_id, b.id) : u.A.openResourceChannelAsSidebar({
+          guildId: b.guild_id,
+          channelId: b.id
         }))
       },
       children: (0, t.jsxs)(t.Fragment, {
-        children: [(n = m.Ay.getResourceChannelIconURL({
+        children: [(n = g.Ay.getResourceChannelIconURL({
           channelId: l,
-          icon: o
-        }), null != o && null != n ? (0, t.jsx)("img", {
+          icon: d
+        }), null != d && null != n ? (0, t.jsx)("img", {
           src: n,
-          className: p.Oz,
+          className: A.Oz,
           alt: "",
           "aria-hidden": true
-        }) : null != O ? (0, t.jsx)("img", {
-          className: p.Oz,
-          src: O.src,
-          alt: O.alt
+        }) : null != I ? (0, t.jsx)("img", {
+          className: A.Oz,
+          src: I.src,
+          alt: I.alt
         }) : (0, t.jsx)("div", {
-          className: p.jM,
+          className: A.jM,
           children: (0, t.jsx)(i.ueQ, {
             size: "xs",
             color: "currentColor"
           })
         })), (0, t.jsx)(i.Text, {
-          className: p.T2,
+          className: A.T2,
           variant: "text-sm/semibold",
           color: "none",
-          children: d
+          children: o
         })]
       })
     }, l)
   },
-  N = Chunk64700.memo(function(e) {
+  y = Chunk64700.memo(function(e) {
     let {
       guild: n
-    } = e, l = (0, g.A)(n.id);
+    } = e, l = (0, b.A)(n.id);
     return 0 === l.length ? null : (0, t.jsx)(i.ZpM, {
-      className: p.u2,
+      className: A.u2,
       children: (0, t.jsxs)("div", {
-        className: p.Ln,
+        className: A.Ln,
         children: [(0, t.jsx)(i.Heading, {
-          className: p.cx,
+          className: A.cx,
           variant: "heading-md/bold",
           color: "text-strong",
-          children: A.intl.string(A.t.xwY4La)
+          children: p.intl.string(p.t.xwY4La)
         }), (0, t.jsx)("div", {
-          className: p.Tb,
-          children: l.map(e => (0, t.jsx)(y, {
+          className: A.Tb,
+          children: l.map(e => (0, t.jsx)(v, {
             channelId: e.channelId,
             title: e.title,
             icon: e.icon
@@ -115,16 +115,16 @@ let v = Chunk64700.memo(function(e) {
       })
     })
   }),
-  O = Chunk64700.memo(function(e) {
+  I = Chunk64700.memo(function(e) {
     let {
       guild: n,
       isNewMember: l
     } = e;
     return (0, t.jsxs)("aside", {
-      className: p.pz,
-      children: [(0, t.jsx)(v, {
+      className: A.pz,
+      children: [(0, t.jsx)(_, {
         guild: n
-      }), l && (0, t.jsx)(N, {
+      }), l && (0, t.jsx)(y, {
         guild: n
       })]
     })

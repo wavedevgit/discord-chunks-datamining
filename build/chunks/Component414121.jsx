@@ -2,9 +2,9 @@
 /** chunk id: 414121, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Ay: () => _,
-  Lx: () => x,
-  Zs: () => p
+  Ay: () => x,
+  Lx: () => A,
+  Zs: () => g
 });
 var r, i, s, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,7 +22,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,13 +34,13 @@ function f(e) {
   }
   return e
 }
-var p = ((r = {}).SIZE_40 = "SIZE_40", r.SIZE_60 = "SIZE_60", r);
-let g = Object.freeze({
+var g = ((r = {}).SIZE_40 = "SIZE_40", r.SIZE_60 = "SIZE_60", r);
+let m = Object.freeze({
     SIZE_40: "size-40",
     SIZE_60: "size-60"
   }),
   Chunk906118 = require("./906118.js");
-class A extends(i = Chunk64700.PureComponent) {
+class _ extends(i = Chunk64700.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -71,39 +71,39 @@ class A extends(i = Chunk64700.PureComponent) {
         backgroundColor: r.bgColor
       },
       className: c()(d.qrCodeContainer, t),
-      children: (0, l.jsx)(u.default, f({
+      children: (0, l.jsx)(u.default, p({
         value: n,
         level: "M"
       }, r))
     })
   }
 }
-h(A, "defaultProps", {
+h(_, "defaultProps", {
   size: 128,
   bgColor: "#ffffff",
   fgColor: "#000000"
 });
-class x extends(s = Chunk64700.PureComponent) {
+class A extends(s = Chunk64700.PureComponent) {
   render() {
     let {
       overlaySize: e
-    } = this.props, t = g[null != e ? e : "SIZE_40"];
+    } = this.props, t = m[null != e ? e : "SIZE_40"];
     return (0, l.jsxs)("div", {
       className: d.qrCodeOverlayContainer,
-      children: [(0, l.jsx)(A, f({}, this.props)), (0, l.jsx)("div", {
+      children: [(0, l.jsx)(_, p({}, this.props)), (0, l.jsx)("div", {
         className: d.qrCodeOverlay,
         children: (0, l.jsx)("img", {
           className: d[t],
-          src: m,
+          src: f,
           alt: ""
         })
       })]
     })
   }
 }
-h(x, "defaultProps", {
+h(A, "defaultProps", {
   size: 144,
   bgColor: "#ffffff",
   fgColor: "#000000"
 });
-let _ = A
+let x = _

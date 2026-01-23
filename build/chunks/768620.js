@@ -40,11 +40,11 @@ function l(e) {
     var E = h.getSource(m).beginDrag(_, m);
     if (null != E) {
       d(E), h.pinSource(m);
-      var b = h.getSourceType(m);
+      var y = h.getSourceType(m);
       return {
         type: s.Vw,
         payload: {
-          itemType: b,
+          itemType: y,
           item: E,
           sourceId: m,
           clientOffset: l || null,

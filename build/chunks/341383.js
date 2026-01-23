@@ -67,7 +67,7 @@ function k(e, t, n, r) {
     u = s.latched.size > 0,
     d = c || u,
     p = s.priorityHeldOrLatched.size > 0;
-  (0, b.N)(c, p, d)
+  (0, _.N)(c, p, d)
 }
 let U = {
   [Chunk652215.hCu.TOGGLE_PRIORITY_SPEAKER]: {
@@ -191,8 +191,8 @@ let U = {
   [Chunk652215.hCu.TOGGLE_GO_LIVE_STREAMING]: {
     onTrigger() {
       let e = I.A.getCurrentUserActiveStream();
-      if (null != e) return (0, s.vN)((0, g._z)(e));
-      (0, m.A)(true, [d.A.GO_LIVE_KEYBIND])
+      if (null != e) return (0, s.vN)((0, m._z)(e));
+      (0, A.A)(true, [d.A.GO_LIVE_KEYBIND])
     },
     keyEvents: {
       keyup: true,
@@ -209,7 +209,7 @@ let U = {
     }
   },
   [Chunk652215.hCu.NAVIGATE_BACK]: {
-    onTrigger: () => (0, A.OE)("global_keybind"),
+    onTrigger: () => (0, f.OE)("global_keybind"),
     keyEvents: {
       keyup: true,
       keydown: false,
@@ -218,7 +218,7 @@ let U = {
     }
   },
   [Chunk652215.hCu.NAVIGATE_FORWARD]: {
-    onTrigger: () => (0, A.Qb)("global_keybind"),
+    onTrigger: () => (0, f.Qb)("global_keybind"),
     keyEvents: {
       keyup: true,
       keydown: false,
@@ -230,7 +230,7 @@ let U = {
     onTrigger: () => {
       let e = (0, P.A)();
       if (null != e)
-        if (_.A.enabled)(0, O.Lk)(e);
+        if (b.A.enabled)(0, O.Lk)(e);
         else {
           if (!(0, E.l)()) return;
           (0, O.hK)(true, e)
@@ -259,7 +259,7 @@ let U = {
   },
   [Chunk652215.hCu.SAVE_CLIP]: {
     onTrigger: () => {
-      (0, f.TD)() && (x.default.track(L.HAw.CLIP_SAVE_KEYBIND_PRESSED), (0, h.l0)())
+      (0, h.TD)() && (x.default.track(L.HAw.CLIP_SAVE_KEYBIND_PRESSED), (0, g.l0)())
     },
     keyEvents: {
       keyup: false,
@@ -268,7 +268,7 @@ let U = {
   },
   [Chunk652215.hCu.SAVE_SCREENSHOT]: {
     onTrigger: () => {
-      !(0, f.TD)() || (0, p.cx)() && (x.default.track(L.HAw.CLIP_SAVE_KEYBIND_PRESSED), (0, h.yT)())
+      !(0, h.TD)() || (0, p.cx)() && (x.default.track(L.HAw.CLIP_SAVE_KEYBIND_PRESSED), (0, g.yT)())
     },
     keyEvents: {
       keyup: false,
@@ -305,7 +305,7 @@ let U = {
 };
 
 function G() {
-  M.clear(), (0, b.N)(false, false, false)
+  M.clear(), (0, _.N)(false, false, false)
 }
 
 function V(e) {

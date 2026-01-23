@@ -2,7 +2,7 @@
 /** chunk id: 103355, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  L: () => S
+  L: () => I
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk719247 = require("./719247.js");
 let E = 20;
 
-function b(e, t) {
+function y(e, t) {
   let n = t.toDate(),
     r = n.toLocaleString(m.intl.currentLocale, {
       weekday: "long"
@@ -57,7 +57,7 @@ function b(e, t) {
   }
 }
 
-function y(e, t, n, i, a) {
+function b(e, t, n, i, a) {
   switch (e) {
     case 1:
       return a > 0 ? m.intl.formatToPlainString(m.t.PQlCWk, {
@@ -115,7 +115,7 @@ function O(e) {
   }
 }
 
-function A() {
+function v() {
   return (0, r.jsx)(d.LpS, {
     className: g.Ad,
     color: c.A.unsafe_rawColors.BRAND_260.css,
@@ -127,7 +127,7 @@ function A() {
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     children: t,
     className: n,
@@ -147,7 +147,7 @@ function v(e) {
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     startTime: t,
     status: n,
@@ -155,8 +155,8 @@ function S(e) {
     className: o,
     endTime: u,
     liveText: _,
-    textVariant: S = "text-sm/semibold",
-    isNew: I,
+    textVariant: I = "text-sm/semibold",
+    isNew: S,
     recurrenceRule: T,
     guildEventId: C,
     recurrenceId: N
@@ -183,7 +183,7 @@ function S(e) {
     end: L
   }));
   let V = i.useMemo(() => n === h.XG.CANCELED || (null == D ? true : D.is_canceled) ? 5 : n === h.XG.ACTIVE ? 3 : h.lV.has(n) ? 4 : j ? 2 : +!!M, [n, null == D ? true : D.is_canceled, j, M]),
-    F = y(V, G, _, L, k),
+    F = b(V, G, _, L, k),
     {
       Icon: B,
       iconColor: H,
@@ -204,14 +204,14 @@ function S(e) {
       recurrenceRule: e.toText()
     });
     let n = l()(t);
-    K = b((0, p.z7)(n, T), n)
+    K = y((0, p.z7)(n, T), n)
   }
-  return (0, r.jsxs)(v, {
+  return (0, r.jsxs)(A, {
     className: s()(o, {
       [g.AD]: null != K
     }),
     tooltipText: W,
-    children: [I && n === h.XG.SCHEDULED ? (0, r.jsx)(A, {}) : (0, r.jsx)(B, {
+    children: [S && n === h.XG.SCHEDULED ? (0, r.jsx)(v, {}) : (0, r.jsx)(B, {
       color: H,
       size: "custom",
       width: E,
@@ -220,7 +220,7 @@ function S(e) {
       className: g.Zy,
       children: [(0, r.jsx)(d.Text, {
         color: Y,
-        variant: S,
+        variant: I,
         children: F
       }), null != K && (0, r.jsx)(d.Text, {
         color: "text-default",

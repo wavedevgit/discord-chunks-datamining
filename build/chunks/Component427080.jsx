@@ -67,16 +67,16 @@ let P = (e, t) => n => {
       x(a)(e)
     }, [a]);
     if (null == p) return null;
-    let y = null == _ ? true : _.IconComponent,
+    let b = null == _ ? true : _.IconComponent,
       O = (0, r.jsxs)(r.Fragment, {
-        children: [null != y && (0, r.jsx)(y, {
+        children: [null != b && (0, r.jsx)(b, {
           size: "xs",
           color: "currentColor",
           className: w.p
         }), (0, r.jsx)(l.Text, {
           className: w.I0,
           variant: "text-xs/normal",
-          children: (0, b.l)(null != (t = null == _ ? true : _.locationName) ? t : "", true)
+          children: (0, y.l)(null != (t = null == _ ? true : _.locationName) ? t : "", true)
         })]
       });
     return (0, r.jsxs)("div", {
@@ -167,7 +167,7 @@ let P = (e, t) => n => {
       recurrenceId: u,
       onAcceptInstantInvite: d,
       onTransitionToInviteChannel: p
-    } = e, _ = null != u ? u : null != n ? (0, A.G3)(n) : null, h = (null == n ? true : n.recurrence_rule) == null || null == _ || (0, A.p$)((0, O.Sn)(null == n ? true : n.recurrence_rule), _), m = (0, y.A)(n), b = i.useCallback(() => {
+    } = e, _ = null != u ? u : null != n ? (0, v.G3)(n) : null, h = (null == n ? true : n.recurrence_rule) == null || null == _ || (0, v.p$)((0, O.Sn)(null == n ? true : n.recurrence_rule), _), m = (0, b.A)(n), y = i.useCallback(() => {
       c && null != n && (0, g.uR)({
         eventId: n.id,
         recurrenceId: _
@@ -182,11 +182,11 @@ let P = (e, t) => n => {
         [w.vk]: c
       }),
       children: (0, r.jsxs)(l.DUT, {
-        onClick: b,
-        children: [null != n.image && (0, r.jsx)(S.A, {
-          source: (0, v.A)(n),
+        onClick: y,
+        children: [null != n.image && (0, r.jsx)(I.A, {
+          source: (0, A.A)(n),
           className: w.vK
-        }), (0, r.jsx)(I.Ay, {
+        }), (0, r.jsx)(S.Ay, {
           name: n.name,
           description: null != (t = n.description) ? t : true,
           descriptionClassName: w.tj,

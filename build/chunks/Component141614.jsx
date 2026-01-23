@@ -20,18 +20,18 @@ let h = 200,
   m = 250,
   g = 36,
   E = 660,
-  b = [Chunk652215.TVA.NONE, Chunk652215.TVA.TIER_1, Chunk652215.TVA.TIER_2, Chunk652215.TVA.TIER_3];
+  y = [Chunk652215.TVA.NONE, Chunk652215.TVA.TIER_1, Chunk652215.TVA.TIER_2, Chunk652215.TVA.TIER_3];
 
-function y(e) {
+function b(e) {
   let {
     fillFactor: t,
     guildBoostCount: n,
     premiumTier: r,
     isRevealed: a,
     useReducedMotion: s
-  } = e, [l, c] = i.useState(s ? r : false), [u, p] = i.useState(0 === n), [_, m] = i.useState(false), b = i.useRef(true);
+  } = e, [l, c] = i.useState(s ? r : false), [u, p] = i.useState(0 === n), [_, m] = i.useState(false), y = i.useRef(true);
 
-  function y(e) {
+  function b(e) {
     let {
       widthFactor: t
     } = e;
@@ -55,18 +55,18 @@ function y(e) {
       friction: 7,
       clamp: true
     },
-    onChange: y,
+    onChange: b,
     onStart: () => {
       p(false)
     },
     onRest: () => {
       p(true), r === f.TVA.TIER_3 && (m(true), window.setTimeout(() => {
-        b.current && m(false)
+        y.current && m(false)
       }, h))
     }
   });
   return i.useEffect(() => () => {
-    b.current = false
+    y.current = false
   }, []), {
     isProgressBarAnimationComplete: u,
     progressBarFillWidthFactor: O,
@@ -79,21 +79,21 @@ function y(e) {
 function O(e) {
   let {
     guild: t
-  } = e, n = (0, s.bG)([l.A], () => l.A.useReducedMotion), [o, h] = i.useState(false), [g, E] = i.useState(0), O = i.useRef(null), A = o || n, {
-    fillFactor: v,
-    totalAvailableBoostsCount: S
+  } = e, n = (0, s.bG)([l.A], () => l.A.useReducedMotion), [o, h] = i.useState(false), [g, E] = i.useState(0), O = i.useRef(null), v = o || n, {
+    fillFactor: A,
+    totalAvailableBoostsCount: I
   } = i.useMemo(() => (0, c.$U)(t), [t]), {
-    progressBarFillWidthFactor: I,
+    progressBarFillWidthFactor: S,
     isProgressBarAnimationComplete: T,
     setShouldFireConfetti: C,
     shouldFireConfetti: N,
     tierMarkerAnimationPosition: R
-  } = y({
-    fillFactor: v,
-    isRevealed: A,
+  } = b({
+    fillFactor: A,
+    isRevealed: v,
     useReducedMotion: n,
     premiumTier: t.premiumTier,
-    guildBoostCount: S
+    guildBoostCount: I
   });
   return i.useEffect(() => {
     let e = window.setTimeout(() => {
@@ -105,11 +105,11 @@ function O(e) {
   }, []), (0, r.jsxs)("div", {
     className: _.hr,
     role: "progressbar",
-    "aria-valuenow": S,
+    "aria-valuenow": I,
     "aria-valuetext": t.premiumTier === f.TVA.NONE ? p.intl.formatToPlainString(p.t.Ukqm9v, {
-      numSubscriptionsApplied: S
+      numSubscriptionsApplied: I
     }) : p.intl.formatToPlainString(p.t.qWunaU, {
-      numSubscriptionsApplied: S,
+      numSubscriptionsApplied: I,
       tierName: (0, c.gb)(t.premiumTier, {
         useLevels: false
       })
@@ -119,7 +119,7 @@ function O(e) {
       children: [(0, r.jsx)(a.animated.div, {
         className: _.SX,
         style: {
-          width: I.to({
+          width: S.to({
             range: [0, 1],
             output: [0, 100]
           }).to(e => "".concat(e, "%"))
@@ -127,7 +127,7 @@ function O(e) {
       }), (0, r.jsx)("div", {
         className: _.mv
       })]
-    }), b.map(e => (0, r.jsx)(d.A, {
+    }), y.map(e => (0, r.jsx)(d.A, {
       confettiTriggerRef: O,
       guild: t,
       isProgressBarAnimationComplete: T,
@@ -135,7 +135,7 @@ function O(e) {
       setShouldFireConfetti: C,
       tier: e,
       tierMarkerAnimationPosition: R,
-      totalAvailableBoostsCount: S,
+      totalAvailableBoostsCount: I,
       children: (0, c.gb)(e)
     }, e)), (0, r.jsx)(u.A, {
       confettiCount: g,

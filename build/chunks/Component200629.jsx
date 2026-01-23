@@ -16,7 +16,7 @@ function o(t) {
     onAccept: r,
     transitionState: o,
     onClose: c
-  } = t, d = (0, l.mT)(e.id), u = (0, l.Iv)(e.id);
+  } = t, d = (0, s.mT)(e.id), u = (0, s.Iv)(e.id);
   return (0, n.jsx)(i.Modal, {
     onClose: c,
     transitionState: o,
@@ -65,11 +65,11 @@ function o(t) {
       let {
         user: r,
         id: i,
-        speaker: l
+        speaker: s
       } = t;
-      return (0, n.jsx)(s.ld, {
+      return (0, n.jsx)(l.ld, {
         user: r,
-        speaker: l,
+        speaker: s,
         showStatus: true,
         channelId: e.id
       }, i)

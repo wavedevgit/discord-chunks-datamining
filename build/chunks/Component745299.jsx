@@ -2,7 +2,7 @@
 /** chunk id: 745299, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./65821.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -22,7 +22,7 @@ var Chunk110259 = require("./110259.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk237082 = require("./237082.js");
 
-function b(e) {
+function y(e) {
   switch (e) {
     case h.pe.TIER_0:
       return o.A.PREMIUM_TIER_0_TRIAL_ENDING_NOTICE;
@@ -33,7 +33,7 @@ function b(e) {
   }
 }
 
-function y(e) {
+function b(e) {
   switch (e) {
     case h.pe.TIER_0:
       return a.Hv$.PREMIUM_TIER_0;
@@ -54,29 +54,29 @@ function O(e) {
       throw Error("Unsupported subscription tier: ".concat(e))
   }
 }
-let A = function(e) {
+let v = function(e) {
   var t;
   let {
     dismissCurrentNotice: n,
     subscriptionTier: o
   } = e, {
     analyticsLocations: g
-  } = (0, l.Ay)(b(o)), A = (0, f.V)(), v = (0, s.A)(null != A && null != A.expires_at ? Date.parse(A.expires_at) : 0), {
-    variant: S,
-    showNagbar: I
-  } = (0, d.Ay)("PremiumTrialEndingNotice"), T = null == A || (null == (t = A.subscription_trial) ? true : t.sku_id) !== o || null == A.expires_at || Object.values(v).every(e => 0 === e) || A.trial_id !== h.Dw && !I;
+  } = (0, l.Ay)(y(o)), v = (0, f.V)(), A = (0, s.A)(null != v && null != v.expires_at ? Date.parse(v.expires_at) : 0), {
+    variant: I,
+    showNagbar: S
+  } = (0, d.Ay)("PremiumTrialEndingNotice"), T = null == v || (null == (t = v.subscription_trial) ? true : t.sku_id) !== o || null == v.expires_at || Object.values(A).every(e => 0 === e) || v.trial_id !== h.Dw && !S;
   if ((0, c.A)({
       type: i.ImpressionTypes.VIEW,
       name: i.ImpressionNames.TRIAL_NOTICE,
       properties: {
-        trial_id: null == A ? true : A.trial_id
+        trial_id: null == v ? true : v.trial_id
       }
     }, {
       disableTrack: T
     }), T) return null;
   let C = () => {
     (0, u.A)({
-      trialId: A.trial_id,
+      trialId: v.trial_id,
       subscriptionTier: o,
       analyticsLocations: g,
       analyticsObject: {
@@ -86,16 +86,16 @@ let A = function(e) {
       }
     })
   };
-  return S === d.CJ.NAGBAR_REFRESH && (null == A ? true : A.trial_id) !== h.Dw ? (0, r.jsxs)(p.T0, {
+  return I === d.CJ.NAGBAR_REFRESH && (null == v ? true : v.trial_id) !== h.Dw ? (0, r.jsxs)(p.T0, {
     onClick: n,
     children: [(0, r.jsx)(p.In, {
-      children: (0, _.GZ)(o, v)
+      children: (0, _.GZ)(o, A)
     }), (0, r.jsx)(p.fY, {
       onClick: C,
       text: O(o)
     })]
   }) : (0, r.jsxs)(a.$Td, {
-    color: y(o),
+    color: b(o),
     children: [(0, r.jsx)(a.PMB, {
       noticeType: o === h.pe.TIER_2 ? m.kqX.PREMIUM_TIER_2_TRIAL_ENDING : m.kqX.PREMIUM_TIER_0_TRIAL_ENDING,
       onClick: n
@@ -103,7 +103,7 @@ let A = function(e) {
       size: "md",
       color: "currentColor",
       className: E.PC
-    }), (0, _.GZ)(o, v), (0, r.jsx)(a.zr9, {
+    }), (0, _.GZ)(o, A), (0, r.jsx)(a.zr9, {
       onClick: C,
       children: O(o)
     })]

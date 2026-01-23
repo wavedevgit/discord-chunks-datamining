@@ -2,7 +2,7 @@
 /** chunk id: 979849, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -41,7 +41,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,25 +52,25 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let O = Chunk837921.Ay.getEnableHardwareAcceleration() ? Chunk397927.JsQ : Chunk397927.euF;
 
-function A(e) {
+function v(e) {
   let {
     user: t,
     guild: n,
     displayProfile: a,
     canUsePremiumCustomization: f,
     previewAvatar: g,
-    previewAvatarDecorationSrc: b,
-    previewTheme: A,
-    previewPrimaryColor: v,
-    className: S,
-    disabledInputs: I,
+    previewAvatarDecorationSrc: y,
+    previewTheme: v,
+    previewPrimaryColor: A,
+    className: I,
+    disabledInputs: S,
     isTryItOut: T,
     onUpsellClick: C
   } = e, N = i.useRef(null), {
@@ -78,17 +78,17 @@ function A(e) {
     newestAnalyticsLocation: w
   } = (0, c.Ay)(), P = (0, o.bG)([d.A], () => d.A.getStatus(t.id)), D = null == n || (null == a ? true : a.canUsePremiumProfileCustomization) || f, x = (0, r.jsx)(O, {
     src: g,
-    avatarDecoration: b,
-    imageClassName: s()(S, {
-      [m.Lw]: !I
+    avatarDecoration: y,
+    imageClassName: s()(I, {
+      [m.Lw]: !S
     }),
     size: l._3J.SIZE_80,
     "aria-label": t.username,
     status: P,
     statusTooltip: false,
-    statusBackdropColor: null != v ? (0, l.C$5)(A) : true
+    statusBackdropColor: null != A ? (0, l.C$5)(v) : true
   });
-  return I ? (0, r.jsx)("div", {
+  return S ? (0, r.jsx)("div", {
     className: m.my,
     children: x
   }) : D ? (0, r.jsx)(l.YNO, {
@@ -114,7 +114,7 @@ function A(e) {
         }
       })
     },
-    children: e => (0, r.jsxs)(l.DUT, y(E({}, e), {
+    children: e => (0, r.jsxs)(l.DUT, b(E({}, e), {
       innerRef: N,
       className: s()(m.my, m.vk),
       children: [x, (0, r.jsx)(l.R2l, {

@@ -18,12 +18,12 @@ var Chunk257943 = require("./257943.js"),
   Chunk693655 = require("./693655.js"),
   Chunk503628 = require("./503628.js"),
   Chunk210140 = require("./210140.js"),
-  y = require("./883972.js").enforce,
+  b = require("./883972.js").enforce,
   Chunk274574 = require("./274574.js"),
   Chunk380744 = require("./380744.js"),
   Chunk614886 = require("./614886.js"),
   Chunk919971 = require("./919971.js"),
-  I = Chunk380744("match"),
+  S = Chunk380744("match"),
   T = Chunk860511.RegExp,
   C = T.prototype,
   N = Chunk860511.SyntaxError,
@@ -39,7 +39,7 @@ var Chunk257943 = require("./257943.js"),
   U = Chunk603526.MISSED_STICKY,
   G = Chunk603526.UNSUPPORTED_Y,
   V = Chunk257943 && (!k || U || Chunk614886 || Chunk919971 || Chunk503628(function() {
-    return M[I] = false, T(j) !== j || T(M) === M || "/a/i" !== String(T(j, "i"))
+    return M[S] = false, T(j) !== j || T(M) === M || "/a/i" !== String(T(j, "i"))
   })),
   F = function(e) {
     for (var t, n = e.length, r = 0, i = "", a = false; r <= n; r++) {
@@ -64,7 +64,7 @@ var Chunk257943 = require("./257943.js"),
           R(L, x(e, r + 1)) && (r += 2, l = true), u++;
           continue;
         case ">" === t && l:
-          if ("" === d || b(s, d)) throw new N("Invalid capture group name");
+          if ("" === d || y(s, d)) throw new N("Invalid capture group name");
           s[d] = true, a[a.length] = [d, u], l = false, d = "";
           continue
       }
@@ -80,7 +80,7 @@ if (Chunk521351("RegExp", V)) {
         g = [],
         E = e;
       if (!u && h && m && e.constructor === H) return e;
-      if ((h || d(C, e)) && (e = e.source, m && (t = _(E))), e = true === e ? "" : p(e), t = true === t ? "" : p(t), E = e, v && "dotAll" in j && (r = !!t && D(t, "s") > false) && (t = P(t, /s/g, "")), n = t, U && "sticky" in j && (i = !!t && D(t, "y") > false) && G && (t = P(t, /y/g, "")), S && (e = (a = B(e))[0], g = a[1]), s = o(T(e, t), u ? this : C, H), (r || i || g.length) && (c = y(s), r && (c.dotAll = true, c.raw = H(F(e), n)), i && (c.sticky = true), g.length && (c.groups = g)), e !== E) try {
+      if ((h || d(C, e)) && (e = e.source, m && (t = _(E))), e = true === e ? "" : p(e), t = true === t ? "" : p(t), E = e, A && "dotAll" in j && (r = !!t && D(t, "s") > false) && (t = P(t, /s/g, "")), n = t, U && "sticky" in j && (i = !!t && D(t, "y") > false) && G && (t = P(t, /y/g, "")), I && (e = (a = B(e))[0], g = a[1]), s = o(T(e, t), u ? this : C, H), (r || i || g.length) && (c = b(s), r && (c.dotAll = true, c.raw = H(F(e), n)), i && (c.sticky = true), g.length && (c.groups = g)), e !== E) try {
         l(s, "source", "" === E ? "(?:)" : E)
       } catch (e) {}
       return s

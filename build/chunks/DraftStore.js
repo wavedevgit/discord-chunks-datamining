@@ -57,18 +57,18 @@ let g = require("./652215.js").CS1 + 500;
 var E = function(e) {
   return e[e.ChannelMessage = 0] = "ChannelMessage", e[e.ThreadSettings = 1] = "ThreadSettings", e[e.FirstThreadMessage = 2] = "FirstThreadMessage", e[e.ApplicationLauncherCommand = 3] = "ApplicationLauncherCommand", e[e.Poll = 4] = "Poll", e[e.SlashCommand = 5] = "SlashCommand", e[e.ForwardContextMessage = 6] = "ForwardContextMessage", e[e.InteractionModal = 7] = "InteractionModal", e
 }({});
-let b = {};
+let y = {};
 
-function y(e) {
+function b(e) {
   return e.length > g && (e = e.substr(0, g)), e
 }
 
 function O(e) {
-  let t = b[e];
-  return null == t && (t = b[e] = {}), t
+  let t = y[e];
+  return null == t && (t = y[e] = {}), t
 }
 
-function A(e) {
+function v(e) {
   let {
     type: t,
     channelId: n,
@@ -81,23 +81,23 @@ function A(e) {
     var o;
     let e = O(s),
       t = e[n];
-    null == t && (t = e[n] = {}), (r = y(r)) !== (null == (o = t[i]) ? true : o.draft) && (t[i] = {
+    null == t && (t = e[n] = {}), (r = b(r)) !== (null == (o = t[i]) ? true : o.draft) && (t[i] = {
       timestamp: Date.now(),
       draft: r
     })
-  } else I(n, i);
+  } else S(n, i);
   return "DRAFT_SAVE" === t
 }
 
-function v(e) {
+function A(e) {
   let {
     channelId: t,
     draftType: n
   } = e;
-  return I(t, n)
+  return S(t, n)
 }
 
-function S(e) {
+function I(e) {
   let {
     channelId: t,
     draft: n
@@ -112,7 +112,7 @@ function S(e) {
   })
 }
 
-function I(e, t) {
+function S(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : u.default.getId();
   if (null == n) returnfalse;
   let r = O(n),
@@ -130,7 +130,7 @@ function T() {
 
 function C() {
   let e = u.default.getId();
-  return e in b || (b[e] = {}), T(), false
+  return e in y || (y[e] = {}), T(), false
 }
 
 function N() {
@@ -168,31 +168,31 @@ function w(e) {
         timestamp: Date.now(),
         draft: n
       }
-    }), I(t.parent_id, 1), I(t.parent_id, 2)
+    }), S(t.parent_id, 1), S(t.parent_id, 2)
   }
 }
 
 function P(e) {
-  e.isSwitchingAccount || (b = {})
+  e.isSwitchingAccount || (y = {})
 }
 
 function D(e) {
-  e.userId in b && delete b[e.userId]
+  e.userId in y && delete y[e.userId]
 }
 
 function x() {
-  for (let [e, t] of c.default.entries(b))
+  for (let [e, t] of c.default.entries(y))
     for (let [n, r] of c.default.entries(t)) {
       let t = r[0];
-      null != t && ("" === t.draft || "" === t.draft.trim()) && I(n, 0, e)
+      null != t && ("" === t.draft || "" === t.draft.trim()) && S(n, 0, e)
     }
 }
 class L extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    b = null != e ? e : {}, x(), this.waitFor(u.default, d.A, f.A)
+    y = null != e ? e : {}, x(), this.waitFor(u.default, d.A, f.A)
   }
   getState() {
-    return b
+    return y
   }
   getThreadDraftWithParentMessageId(e) {
     let t = u.default.getId();
@@ -264,8 +264,8 @@ let j = new L(Chunk73153.h, {
   CHANNEL_DELETE: R,
   THREAD_DELETE: R,
   THREAD_CREATE: w,
-  DRAFT_SAVE: A,
-  DRAFT_CHANGE: A,
-  DRAFT_CLEAR: v,
-  THREAD_SETTINGS_DRAFT_CHANGE: S
+  DRAFT_SAVE: v,
+  DRAFT_CHANGE: v,
+  DRAFT_CLEAR: A,
+  THREAD_SETTINGS_DRAFT_CHANGE: I
 })

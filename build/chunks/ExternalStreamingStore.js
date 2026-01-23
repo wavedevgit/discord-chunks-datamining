@@ -27,20 +27,20 @@ function m(e, t, n) {
 }
 let g = "33kozedd0zs6fbauka98psnc7zwom2s",
   E = +Chunk927813.A.Millis.MINUTE,
-  b = e => "https://youtube.com/watch?v=".concat(e),
-  y = 5 * Chunk927813.A.Millis.MINUTE,
+  y = e => "https://youtube.com/watch?v=".concat(e),
+  b = 5 * Chunk927813.A.Millis.MINUTE,
   O = "https://api.twitch.tv/helix",
-  A = /live_user_(.*)-\{width\}/,
-  v = 128,
-  S = null,
-  I = 0,
+  v = /live_user_(.*)-\{width\}/,
+  A = 128,
+  I = null,
+  S = 0,
   T = null,
   C = new Set,
   N = {};
 
 function R(e) {
   var t;
-  return null == (t = A.exec(e)) ? true : t[1]
+  return null == (t = v.exec(e)) ? true : t[1]
 }
 
 function w(e, t, n) {
@@ -72,7 +72,7 @@ class D {
     this._started || (this._started = true, p.A.isFetching() ? c.A.fetch() : this._check())
   }
   stop() {
-    this._started = false, T = null, I = 0, null != this._nextCheck && clearTimeout(this._nextCheck), l.h.dispatch({
+    this._started = false, T = null, S = 0, null != this._nextCheck && clearTimeout(this._nextCheck), l.h.dispatch({
       type: "STREAMING_UPDATE",
       stream: null
     })
@@ -97,7 +97,7 @@ class D {
         title: c
       } = s, f = {
         large_image: null != o && null != (n = (0, d.Di)(h.fg2.TWITCH, o)) ? n : true
-      }, p = await P(l, t), _ = u.A.get(h.fg2.TWITCH), m = null != (r = R(o)) ? r : e.name, g = null != c && "" !== c ? c.slice(0, v) : true, E = null != p && "" !== p ? p.slice(0, v) : true;
+      }, p = await P(l, t), _ = u.A.get(h.fg2.TWITCH), m = null != (r = R(o)) ? r : e.name, g = null != c && "" !== c ? c.slice(0, A) : true, E = null != p && "" !== p ? p.slice(0, A) : true;
       return {
         url: null == (i = _.getPlatformUserUrl) ? true : i.call(_, {
           id: e.id,
@@ -144,9 +144,9 @@ class D {
         }
       } = r[0], l = {
         large_image: null != (n = (0, d.Di)(h.fg2.YOUTUBE, s.high.url)) ? n : true
-      }, c = null != a && "" !== a ? a.slice(0, v) : true;
+      }, c = null != a && "" !== a ? a.slice(0, A) : true;
       return T = {
-        url: b(i),
+        url: y(i),
         name: u.A.get(h.fg2.YOUTUBE).name,
         details: c,
         assets: l
@@ -163,7 +163,7 @@ class D {
     null != this._nextCheck && clearTimeout(this._nextCheck);
     let t = [h.fg2.TWITCH],
       n = Date.now();
-    I <= n && (t.push(h.fg2.YOUTUBE), I = n + y), Promise.allSettled(e.filter(e => t.includes(e.type)).map(e => e.type === h.fg2.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
+    S <= n && (t.push(h.fg2.YOUTUBE), S = n + b), Promise.allSettled(e.filter(e => t.includes(e.type)).map(e => e.type === h.fg2.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
       if (this._started) {
         var t;
         let n = null == (t = e.find(e => "fulfilled" === e.status && null != e.value)) ? true : t.value;
@@ -190,15 +190,15 @@ function L() {
 
 function j(e) {
   var t;
-  if (a()(e.stream, S)) returnfalse;
-  S = null != (t = e.stream) ? t : null
+  if (a()(e.stream, I)) returnfalse;
+  I = null != (t = e.stream) ? t : null
 }
 class M extends(r = Chunk311907.Ay.Store) {
   initialize() {
     L(), this.waitFor(p.A, _.A), this.syncWith([_.A], L)
   }
   getStream() {
-    return S
+    return I
   }
 }
 m(M, "displayName", "ExternalStreamingStore");

@@ -79,15 +79,15 @@ function g(e) {
     options: p,
     selectedValues: m,
     disabled: g = false
-  } = e, E = h(e, ["onChange", "options", "selectedValues", "disabled"]), b = i.useContext(c.VO), y = null == b || null == (n = b.experiments) || null == (t = n.enabledExperiments) ? true : t.includes("mana-toggle-inputs"), O = e => {
+  } = e, E = h(e, ["onChange", "options", "selectedValues", "disabled"]), y = i.useContext(c.VO), b = null == y || null == (n = y.experiments) || null == (t = n.enabledExperiments) ? true : t.includes("mana-toggle-inputs"), O = e => {
     null == d || d(e)
-  }, A = (e, t) => {
+  }, v = (e, t) => {
     let n = t ? [...m, e] : m.filter(t => t !== e);
     null == d || d(n)
   };
   return (0, r.jsx)(l.D, _(f({}, E), {
     role: "group",
-    children: y ? (0, r.jsx)(a.$Q, {
+    children: b ? (0, r.jsx)(a.$Q, {
       className: u.O,
       value: m.map(String),
       onChange: O,
@@ -111,7 +111,7 @@ function g(e) {
           label: e.label,
           description: e.description,
           leadingIcon: e.leadingIcon,
-          onChange: t => A(e.value, t)
+          onChange: t => v(e.value, t)
         })
       }, String(e.value)))
     })

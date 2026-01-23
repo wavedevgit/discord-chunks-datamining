@@ -1,7 +1,7 @@
 /** Chunk was on 8798 **/
 /** chunk id: 751394, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  q: () => b
+  q: () => p
 }), require("./896048.js"), require("./228524.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -25,7 +25,7 @@ let u = {
     useIsGuildSupported: () => (0, l.bG)([d.A], () => e => d.A.canAccessGuildSettings(e), [], l.My)
   };
 
-function b(e) {
+function p(e) {
   var t;
   let [i] = n.useState(null == e ? true : u[e]), l = c.useIsGuildSupported(), r = null == i || null == (t = i.useIsGuildSupported) ? true : t.call(i), a = function(e) {
     for (var t = 1; t < arguments.length; t++) {

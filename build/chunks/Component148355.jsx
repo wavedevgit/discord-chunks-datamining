@@ -24,10 +24,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk378058 = require("./378058.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk259843 = require("./259843.js");
-let A = e => e.preventDefault(),
-  v = .7,
-  S = 33,
-  I = 1.55,
+let v = e => e.preventDefault(),
+  A = .7,
+  I = 33,
+  S = 1.55,
   T = {
     tension: 1100,
     friction: 40
@@ -48,7 +48,7 @@ function N(e, t) {
 
 function R(e) {
   let t = "description" in e && null != e.description ? "".concat(e.name, ", ").concat(e.description) : e.name;
-  return y.intl.formatToPlainString(y.t.rk6pOw, {
+  return b.intl.formatToPlainString(b.t.rk6pOw, {
     stickerName: t
   })
 }
@@ -60,7 +60,7 @@ let w = e => {
       maskAsset: a,
       size: o,
       withLoadingIndicator: l = true
-    } = e, c = o >= S;
+    } = e, c = o >= I;
     return (0, r.jsxs)("div", {
       className: s()(O.c6, {
         [O.v2]: n || a
@@ -81,7 +81,7 @@ let w = e => {
           className: O.kc,
           color: "text-default",
           variant: "text-sm/normal",
-          children: y.intl.string(y.t["tWYWJ+"])
+          children: b.intl.string(b.t["tWYWJ+"])
         })]
       }) : t, l && i && (0, r.jsx)("div", {
         className: O.Mz
@@ -101,9 +101,9 @@ let w = e => {
       positionRef: p,
       withLoadingIndicator: h,
       onError: m
-    } = e, g = i.useRef(null), E = i.useRef(null), [A, v] = i.useState(true), [S, I] = i.useState(false), T = i.useRef(false);
+    } = e, g = i.useRef(null), E = i.useRef(null), [v, A] = i.useState(true), [I, S] = i.useState(false), T = i.useRef(false);
     T.current = t && u;
-    let C = null == o ? (0, b.zg)(s) : o;
+    let C = null == o ? (0, y.zg)(s) : o;
     return (l()(null != C, "Unable to determine sticker asset URL. Sticker ID: ".concat(s.id)), i.useEffect(() => {
       if (null == g.current || null == C) return;
       let e = Math.min(2, (0, _.mZ)());
@@ -119,10 +119,10 @@ let w = e => {
           assetUrl: C,
           assetData: c,
           onInitialDraw: () => {
-            t || v(false)
+            t || A(false)
           },
           onError: () => {
-            t || (v(false), I(true), null == m || m())
+            t || (A(false), S(true), null == m || m())
           }
         }), T.current && E.current.setState(true))
       })(), () => {
@@ -136,11 +136,11 @@ let w = e => {
     }, [s, t, u]), null == C) ? null : (0, r.jsx)("div", {
       role: "img",
       className: d,
-      "aria-label": S ? y.intl.string(y.t.yEvsK9) : R(s),
+      "aria-label": I ? b.intl.string(b.t.yEvsK9) : R(s),
       ref: p,
       children: (0, r.jsx)(w, {
-        hasError: S,
-        isLoading: A,
+        hasError: I,
+        isLoading: v,
         maskAsset: f,
         size: a,
         withLoadingIndicator: h,
@@ -162,29 +162,29 @@ let w = e => {
       positionRef: u,
       withLoadingIndicator: f,
       fileUri: p
-    } = e, [_, h] = i.useState(false), [m, g] = i.useState(true), [E, y] = i.useState(false), S = i.useRef(null), I = i.useRef(null), T = null != p ? p : (0, b.zg)(n, {
+    } = e, [_, h] = i.useState(false), [m, g] = i.useState(true), [E, b] = i.useState(false), I = i.useRef(null), S = i.useRef(null), T = null != p ? p : (0, y.zg)(n, {
       isPreview: !t || !_ || !a,
       size: o
     }), C = i.useCallback(() => {
       g(false)
     }, []), P = i.useCallback(() => {
-      y(true)
+      b(true)
     }, []);
     return (i.useEffect(() => {
-      if (null != S.current) {
+      if (null != I.current) {
         let {
           isVisible: e
-        } = S.current;
+        } = I.current;
         h(e)
       }
     }, []), i.useLayoutEffect(() => {
       var e;
-      (null == (e = I.current) ? true : e.complete) === true && g(false)
+      (null == (e = S.current) ? true : e.complete) === true && g(false)
     }, []), null == T) ? null : (0, r.jsx)(d.L, {
       innerRef: u,
-      ref: S,
+      ref: I,
       onChange: h,
-      threshold: v,
+      threshold: A,
       children: (0, r.jsx)("div", {
         className: s()(l, O.__invalid_pngImageWrapper),
         ref: u,
@@ -201,8 +201,8 @@ let w = e => {
             draggable: false,
             onError: P,
             onLoad: C,
-            onContextMenu: A,
-            ref: I
+            onContextMenu: v,
+            ref: S
           }), n)
         })
       })
@@ -229,13 +229,13 @@ let w = e => {
       },
       leave: g,
       config: T
-    }), b = i.useRef(null), y = (0, f.zhh)({
-      ref: b,
+    }), y = i.useRef(null), b = (0, f.zhh)({
+      ref: y,
       transform: s || _ ? "translateY(0)" : "translateY(-25px)",
       opacity: +!!s,
       config: C
     }, "animate-always");
-    return (0, c.useChain)(s ? [m, b] : [b, m], s ? [0, .0625] : [0, 0]), E((e, i) => i && (0, r.jsx)(h.nE, {
+    return (0, c.useChain)(s ? [m, y] : [y, m], s ? [0, .0625] : [0, 0]), E((e, i) => i && (0, r.jsx)(h.nE, {
       className: O.O2,
       fixed: true,
       align: "center",
@@ -258,7 +258,7 @@ let w = e => {
           })
         }), a && (0, r.jsx)(c.animated.div, {
           className: O.av,
-          style: y,
+          style: b,
           children: (0, r.jsx)(f.Text, {
             variant: "text-sm/medium",
             className: O.FZ,
@@ -274,7 +274,7 @@ let w = e => {
       disableAnimation: n = false,
       enlargeOnInteraction: a = false,
       enlargeWithName: s = true,
-      enlargeScaleFactor: o = I,
+      enlargeScaleFactor: o = S,
       maskAsset: l = false,
       size: c,
       sticker: u,
@@ -283,13 +283,13 @@ let w = e => {
       assetData: p,
       fileUri: _,
       onError: h
-    } = e, b = (0, m.j)(), y = (0, g.Th)(t) && !n, O = i.useRef(null);
+    } = e, y = (0, m.j)(), b = (0, g.Th)(t) && !n, O = i.useRef(null);
     if (null == u) return null;
-    let A = u.format_type === E.TG.LOTTIE ? P : D;
+    let v = u.format_type === E.TG.LOTTIE ? P : D;
     return (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(A, {
-        shouldAnimate: y,
-        isFocused: b,
+      children: [(0, r.jsx)(v, {
+        shouldAnimate: b,
+        isFocused: y,
         size: c,
         sticker: u,
         className: d,

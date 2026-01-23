@@ -2,7 +2,7 @@
 /** chunk id: 643501, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  default: () => S
+  default: () => I
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -60,7 +60,7 @@ function E(e) {
   _.add(t)
 }
 
-function b(e) {
+function y(e) {
   let {
     platform: t,
     devices: n
@@ -72,7 +72,7 @@ function b(e) {
   p = i
 }
 
-function y(e) {
+function b(e) {
   let {
     platform: t
   } = e;
@@ -86,8 +86,8 @@ function O(e) {
   } = e;
   p[t] = n
 }
-let A = Object.freeze({});
-class v extends(r = Chunk311907.Ay.DeviceSettingsStore) {
+let v = Object.freeze({});
+class A extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   initialize(e) {
     null != e && (p = e.lastSelectedDeviceByPlatform), this.waitFor(s.A, o.A)
   }
@@ -98,7 +98,7 @@ class v extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   }
   getDevicesForPlatform(e) {
     var t;
-    return null != (t = f[e]) ? t : A
+    return null != (t = f[e]) ? t : v
   }
   getLastSelectedDeviceByPlatform(e) {
     return p[e]
@@ -120,13 +120,13 @@ class v extends(r = Chunk311907.Ay.DeviceSettingsStore) {
     return u
   }
 }
-l(v, "displayName", "GameConsoleStore"), l(v, "persistKey", "GameConsoleStore");
-let S = new v(Chunk73153.h, {
+l(A, "displayName", "GameConsoleStore"), l(A, "persistKey", "GameConsoleStore");
+let I = new A(Chunk73153.h, {
   REMOTE_SESSION_CONNECT: h,
   REMOTE_SESSION_DISCONNECT: m,
   WAIT_FOR_REMOTE_SESSION: g,
   GAME_CONSOLE_FETCH_DEVICES_START: E,
-  GAME_CONSOLE_FETCH_DEVICES_SUCCESS: b,
-  GAME_CONSOLE_FETCH_DEVICES_FAIL: y,
+  GAME_CONSOLE_FETCH_DEVICES_SUCCESS: y,
+  GAME_CONSOLE_FETCH_DEVICES_FAIL: b,
   GAME_CONSOLE_SELECT_DEVICE: O
 })

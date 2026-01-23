@@ -1,12 +1,12 @@
 /** Chunk was on 96811 **/
 /** chunk id: 191850, original params: e,t,r (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => i,
-  messagesLoader: () => l
+  default: () => s,
+  messagesLoader: () => i
 });
 let {
   createLoader: n
-} = require("./932433.js"), l = n({
+} = require("./932433.js"), i = n({
   bg: () => r.e("58858").then(r.t.bind(r, 670097, 19)),
   cs: () => r.e("66825").then(r.t.bind(r, 351088, 19)),
   da: () => r.e("84186").then(r.t.bind(r, 103329, 19)),
@@ -39,5 +39,5 @@ let {
   "zh-TW": () => r.e("61209").then(r.t.bind(r, 820128, 19)),
   "en-US": () => r.e("61184").then(r.bind(r, 807299))
 }, "en-US"), {
-  makeMessagesProxy: s
-} = require("./932433.js"), i = s(l)
+  makeMessagesProxy: l
+} = require("./932433.js"), s = l(i)

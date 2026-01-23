@@ -57,7 +57,7 @@ let P = "seenQSTutorial",
   K = null;
 
 function z() {
-  G = y.A.getGuildCount() >= 3 || s().size(m.A.getMutablePrivateChannels()) >= 20, Y = []
+  G = b.A.getGuildCount() >= 3 || s().size(m.A.getMutablePrivateChannels()) >= 20, Y = []
 }
 
 function q(e) {
@@ -85,8 +85,8 @@ function X(e) {
 
 function Z() {
   var e, t;
-  let n = null != (e = S.A.getGuildId()) ? e : true,
-    r = null != (t = v.A.getChannelId()) ? t : true;
+  let n = null != (e = I.A.getGuildId()) ? e : true,
+    r = null != (t = A.A.getChannelId()) ? t : true;
   switch (V) {
     case u.rD.USER: {
       let e = h.default.getId();
@@ -112,7 +112,7 @@ function Z() {
     case u.rD.TEXT_CHANNEL:
       return T.Ay.queryChannels({
         query: "",
-        guildId: S.A.getGuildId(),
+        guildId: I.A.getGuildId(),
         limit: 100,
         fuzzy: true,
         allowEmptyQueries: true
@@ -120,7 +120,7 @@ function Z() {
     case u.rD.VOICE_CHANNEL:
       return T.Ay.queryChannels({
         query: "",
-        guildId: S.A.getGuildId(),
+        guildId: I.A.getGuildId(),
         limit: 100,
         fuzzy: true,
         filter: () => true,
@@ -133,13 +133,13 @@ function Z() {
     s = q(e => e === r || W.includes(e) || a.has(e));
   if (s.length > 0)
     for (let e of (i.push((0, u.jF)(R.intl.string(R.t["4B63jZ"]))), s)) a.add(e.channelId), i.push(e.record);
-  let o = A.Ay.getMentionChannelIds().filter(e => e !== r && !W.includes(e) && !a.has(e)).map(e => X(e)).filter(C.Vq).reverse();
+  let o = v.Ay.getMentionChannelIds().filter(e => e !== r && !W.includes(e) && !a.has(e)).map(e => X(e)).filter(C.Vq).reverse();
   if (o.length > 0)
     for (let e of (i.push((0, u.jF)(R.intl.string(R.t["61Df13"]))), o)) a.add(e.record.id), i.push(e);
   if (null != n) {
     let e = E.Ay.getSelectableChannelIds(n).filter(e => {
       let t = m.A.getChannel(e);
-      return !(null == t || e === r || W.includes(e) || a.has(e) || I.Ay.isChannelMuted(t.guild_id, e) || null != t.parent_id && I.Ay.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.Y)(t)
+      return !(null == t || e === r || W.includes(e) || a.has(e) || S.Ay.isChannelMuted(t.guild_id, e) || null != t.parent_id && S.Ay.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.Y)(t)
     }).map(e => X(e)).filter(e => e);
     Object.values(p.A.getActiveJoinedUnreadThreadsForGuild(n)).forEach(t => {
       for (let n in t) {
@@ -160,7 +160,7 @@ function Z() {
 function Q(e, t) {
   switch (V) {
     case u.rD.USER: {
-      let t = y.A.getGuild(S.A.getGuildId());
+      let t = b.A.getGuild(I.A.getGuildId());
       e.unshift((0, u.jF)(null != t ? R.intl.formatToPlainString(R.t.FREzQs, {
         name: t.name
       }) : R.intl.string(R.t.XFYW1o))), F = e;
@@ -194,7 +194,7 @@ function $(e) {
   let {
     query: n,
     queryMode: i
-  } = e, a = n.trim(), s = null != (t = S.A.getGuildId()) ? t : true, o = new Set(["user:".concat(h.default.getId())]);
+  } = e, a = n.trim(), s = null != (t = I.A.getGuildId()) ? t : true, o = new Set(["user:".concat(h.default.getId())]);
   null != s && o.add("guild:".concat(s)), K = Date.now(), r = null != r ? r : new u.Ay(et, M, null != i ? j : D, {
     frecencyBoosters: true,
     blacklist: o,
@@ -237,7 +237,7 @@ function er(e) {
   if (null == r) returnfalse;
   if (V !== a) {
     r.setResultTypes(null != a ? [a] : M), r.setLimit(null != a ? j : D);
-    let e = null != (t = S.A.getGuildId()) ? t : true;
+    let e = null != (t = I.A.getGuildId()) ? t : true;
     a === u.rD.USER && null != e ? r.setOptions({
       userFilters: {
         guild: e,
@@ -251,7 +251,7 @@ function er(e) {
     }, true)
   }
   if ((V = a) === u.rD.USER) {
-    let e = null != (n = S.A.getGuildId()) ? n : null;
+    let e = null != (n = I.A.getGuildId()) ? n : null;
     r.search(s, e)
   } else r.search(s, true)
 }
@@ -267,7 +267,7 @@ function ea() {
 class es extends(i = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var t;
-    this.waitFor(p.A, h.default, m.A, g.A, E.Ay, b.Ay, y.A, O.A, A.Ay, v.A, S.A, _.A, I.Ay), this.syncWith([_.A], () => true), U = l.w.get(P) || false, W = null != (t = null == e ? true : e.channelHistory) ? t : []
+    this.waitFor(p.A, h.default, m.A, g.A, E.Ay, y.Ay, b.A, O.A, v.Ay, A.A, I.A, _.A, S.Ay), this.syncWith([_.A], () => true), U = l.w.get(P) || false, W = null != (t = null == e ? true : e.channelHistory) ? t : []
   }
   getState() {
     return {

@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 804052, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -25,7 +25,7 @@ let p = e => {
       })
     })
   },
-  f = e => {
+  h = e => {
     let {
       circle: t,
       smallHeader: n,
@@ -46,13 +46,13 @@ let p = e => {
       })]
     })
   };
-class h extends Chunk64700.Component {
+class g extends Chunk64700.Component {
   render() {
     let {
       reason: e,
       className: t
     } = this.props;
-    if (e.type === c.g_B.RECENT_RELEASE_DATE) return (0, r.jsx)(f, {
+    if (e.type === c.g_B.RECENT_RELEASE_DATE) return (0, r.jsx)(h, {
       className: t,
       circle: (0, r.jsx)(p, {
         IconComponent: s.CTc
@@ -60,7 +60,7 @@ class h extends Chunk64700.Component {
       smallHeader: u.intl.string(u.t.u81aYY),
       text: (0, o.i$)(e.releaseDate, "LL")
     });
-    if (e.type === c.g_B.RELEASE_DATE) return (0, r.jsx)(f, {
+    if (e.type === c.g_B.RELEASE_DATE) return (0, r.jsx)(h, {
       className: t,
       circle: (0, r.jsx)(p, {
         IconComponent: s.CTc
@@ -69,7 +69,7 @@ class h extends Chunk64700.Component {
       text: (0, o.i$)(e.releaseDate, "LL")
     });
     if (e.type === c.g_B.EARLY_ACCESS)
-      if (null != e.releaseDate) return (0, r.jsx)(f, {
+      if (null != e.releaseDate) return (0, r.jsx)(h, {
         className: t,
         circle: (0, r.jsx)(p, {
           IconComponent: s.wUM,
@@ -78,7 +78,7 @@ class h extends Chunk64700.Component {
         smallHeader: u.intl.string(u.t.HYys0s),
         text: (0, o.i$)(e.releaseDate, "LL")
       });
-      else return (0, r.jsx)(f, {
+      else return (0, r.jsx)(h, {
         className: t,
         circle: (0, r.jsx)(p, {
           IconComponent: s.wUM,
@@ -86,13 +86,13 @@ class h extends Chunk64700.Component {
         }),
         text: u.intl.string(u.t.HYys0s)
       });
-    return e.type === c.g_B.FLAVOR_TEXT ? (0, r.jsx)(f, {
+    return e.type === c.g_B.FLAVOR_TEXT ? (0, r.jsx)(h, {
       circle: (0, r.jsx)(p, {
         IconComponent: s.A9s
       }),
       text: e.flavorText,
       className: t
-    }) : e.type === c.g_B.HAS_FREE_PREMIUM_CONTENT ? (0, r.jsx)(f, {
+    }) : e.type === c.g_B.HAS_FREE_PREMIUM_CONTENT ? (0, r.jsx)(h, {
       className: t,
       circle: (0, r.jsx)(p, {
         IconComponent: s.tvc,

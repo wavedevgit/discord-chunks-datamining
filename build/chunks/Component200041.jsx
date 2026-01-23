@@ -64,26 +64,26 @@ function _(e) {
     canTruncate: m = true,
     hideTooltip: g = false,
     hideText: E = false
-  } = e, b = i.useRef(null), [y, O] = i.useState(false), A = {
+  } = e, y = i.useRef(null), [b, O] = i.useState(false), v = {
     variant: u,
     color: "none",
     className: s()(m && c.ps, f)
-  }, v = null != n && null == a && m, S = !g && (null != a || v || E), I = null != (t = null != a ? a : n) ? t : "", T = (null == u ? true : u.startsWith("text-sm")) ? c.WV : c.Dk, C = i.useCallback(() => {
-    if (v) {
+  }, A = null != n && null == a && m, I = !g && (null != a || A || E), S = null != (t = null != a ? a : n) ? t : "", T = (null == u ? true : u.startsWith("text-sm")) ? c.WV : c.Dk, C = i.useCallback(() => {
+    if (A) {
       let {
         current: e
-      } = b;
+      } = y;
       O(null != e && e.offsetWidth < e.scrollWidth || null != a || E)
     } else O(true)
-  }, [v, a, E]), N = i.useCallback(() => {
+  }, [A, a, E]), N = i.useCallback(() => {
     O(false)
   }, []);
-  return null == h && E ? null : S ? (0, r.jsx)(o.u, {
-    body: I,
+  return null == h && E ? null : I ? (0, r.jsx)(o.u, {
+    body: S,
     asset: h,
     assetSize: 16,
     delay: 150,
-    shouldShow: y,
+    shouldShow: b,
     asContainer: true,
     children: (0, r.jsxs)("div", {
       className: s()(c.kL, c.O1, T),
@@ -91,14 +91,14 @@ function _(e) {
       onMouseEnter: C,
       onMouseLeave: N,
       children: [h, !E && (0, r.jsx)(l.Text, p(d({
-        ref: b
-      }, A), {
+        ref: y
+      }, v), {
         children: n
       }))]
     })
   }) : (0, r.jsxs)("div", {
     className: s()(c.kL, c.O1, T),
-    children: [h, !E && (0, r.jsx)(l.Text, p(d({}, A), {
+    children: [h, !E && (0, r.jsx)(l.Text, p(d({}, v), {
       children: n
     }))]
   })

@@ -101,21 +101,21 @@ function U(e, t) {
     case o.I5.MENTIONABLE_SELECT:
       return (0, r.jsx)(m.A, L({}, e), t);
     case o.I5.TEXT_INPUT:
-      return (0, r.jsx)(b.A, L({}, e), t);
+      return (0, r.jsx)(y.A, L({}, e), t);
     case o.I5.SECTION:
       return (0, r.jsx)(P.A, M(L({}, e), {
         renderComponents: k
       }), t);
     case o.I5.TEXT_DISPLAY:
-      return (0, r.jsx)(S.A, L({}, e), t);
-    case o.I5.MEDIA_GALLERY:
-      return (0, r.jsx)(A.A, L({}, e), t);
-    case o.I5.THUMBNAIL:
       return (0, r.jsx)(I.A, L({}, e), t);
+    case o.I5.MEDIA_GALLERY:
+      return (0, r.jsx)(v.A, L({}, e), t);
+    case o.I5.THUMBNAIL:
+      return (0, r.jsx)(S.A, L({}, e), t);
     case o.I5.FILE:
       return (0, r.jsx)(O.A, L({}, e), t);
     case o.I5.SEPARATOR:
-      return (0, r.jsx)(v.A, L({}, e), t);
+      return (0, r.jsx)(A.A, L({}, e), t);
     case o.I5.CONTENT_INVENTORY_ENTRY:
       return (0, r.jsx)(C.A, L({}, e), t);
     case o.I5.CONTAINER:
@@ -129,7 +129,7 @@ function U(e, t) {
     case o.I5.FILE_UPLOAD:
       return (0, r.jsx)(h.A, L({}, e), t);
     case o.I5.CHECKPOINT_CARD:
-      return (0, r.jsx)(y.A, L({}, e), t);
+      return (0, r.jsx)(b.A, L({}, e), t);
     case o.I5.RADIO_GROUP:
       return (0, r.jsx)(g.A, L({}, e), t);
     case o.I5.CHECKBOX_GROUP:

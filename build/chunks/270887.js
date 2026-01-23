@@ -2,7 +2,7 @@
 /** chunk id: 270887, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438),
@@ -27,7 +27,7 @@ function E(e) {
   let n = e.indexOf(t);
   return false === n ? m : n
 }
-let b = i().throttle(function() {
+let y = i().throttle(function() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 1,
     t = d.Ay.getFlattenedGuildIds(),
     n = E(t);

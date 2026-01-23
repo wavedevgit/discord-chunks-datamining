@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk284009 = require("./284009.js"),
-  o = require.n(Chunk284009),
+  i = require.n(Chunk284009),
   Chunk397927 = require("./397927.js"),
   Chunk10005 = require("./10005.js"),
   Chunk208993 = require("./208993.jsx"),
@@ -17,7 +17,7 @@ let b = e => {
   let {
     currentUser: t,
     otherUser: r,
-    transitionState: c,
+    transitionState: o,
     onClose: b
   } = e, [f, y] = l.useState(false), j = l.useCallback(() => {
     y(true)
@@ -26,12 +26,12 @@ let b = e => {
   }, [b]), O = t.nsfwAllowed, {
     declineLinkRequest: h,
     isDeclineLoading: m
-  } = (0, i.A)({
+  } = (0, c.A)({
     onError: j,
     onSuccess: x
   });
-  return o()(!O, "FamilyCenterDeclineLinkModal should only be rendered for teens."), (0, n.jsxs)(s.dWK, {
-    transitionState: c,
+  return i()(!O, "FamilyCenterDeclineLinkModal should only be rendered for teens."), (0, n.jsxs)(s.dWK, {
+    transitionState: o,
     onClose: b,
     children: [f && (0, n.jsx)(s.wx6, {
       type: "critical",

@@ -27,15 +27,15 @@ let E = {
       [Chunk613057.sm.ALL]: [Chunk179771.F.RPC, Chunk179771.F.RPC_VIDEO_WRITE]
     },
     handler() {
-      let e = f.A.isVideoEnabled();
-      null != (0, m.A)() && (e ? a.A.setVideoEnabled(false) : (0, d.A)(() => a.A.setVideoEnabled(true), _.BRT.APP))
+      let e = h.A.isVideoEnabled();
+      null != (0, A.A)() && (e ? a.A.setVideoEnabled(false) : (0, d.A)(() => a.A.setVideoEnabled(true), b.BRT.APP))
     }
   },
   [Chunk652215.e$_.TOGGLE_SCREENSHARE]: {
     scope: {
       [Chunk613057.sm.ALL]: [Chunk179771.F.RPC, Chunk179771.F.RPC_SCREENSHARE_WRITE]
     },
-    validation: e => (0, g.A)(e).optional().keys({
+    validation: e => (0, m.A)(e).optional().keys({
       pid: e.number().optional().min(0)
     }),
     handler(e) {
@@ -43,12 +43,12 @@ let E = {
         args: {
           pid: t
         }
-      } = e, i = p.A.getCurrentUserActiveStream(), a = p.A.getStreamerActiveStreamMetadata(), d = (0, u.A)(c.Ay, h.A), f = (0, m.A)();
-      null != f && (null != t && null != a && a.pid !== t && (0, A.isWindows)() ? (0, s.XI)(f.guild_id, f.id, {
+      } = e, i = p.A.getCurrentUserActiveStream(), a = p.A.getStreamerActiveStreamMetadata(), d = (0, u.A)(c.Ay, g.A), h = (0, A.A)();
+      null != h && (null != t && null != a && a.pid !== t && (0, f.isWindows)() ? (0, s.XI)(h.guild_id, h.id, {
         pid: t
-      }) : null != i ? (0, s.nO)(false) : null != t && (0, A.isWindows)() ? (0, s.XI)(f.guild_id, f.id, {
+      }) : null != i ? (0, s.nO)(false) : null != t && (0, f.isWindows)() ? (0, s.XI)(h.guild_id, h.id, {
         pid: t
-      }) : null != d ? (0, s.XI)(f.guild_id, f.id, {
+      }) : null != d ? (0, s.XI)(h.guild_id, h.id, {
         pid: d.pid
       }) : (0, l.mMO)(async () => {
         let {

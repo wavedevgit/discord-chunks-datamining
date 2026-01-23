@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 5658, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => v
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,7 +23,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk391900 = require("./391900.js");
 
-function v(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,23 +41,23 @@ function v(e) {
   }
   return e
 }
-let x = Chunk64700.memo(function(e) {
+let v = Chunk64700.memo(function(e) {
     let {
       channel: t,
       deleteChannel: n
-    } = e, a = l.useRef(null), [
-      [s, o], u
-    ] = l.useState([0, 0]), d = t.deleted && s > 0;
-    if (t.deleted && 0 === s && null != a.current) {
-      let e = a.current.offsetHeight,
-        t = a.current.offsetTop,
-        n = a.current.parentElement.scrollTop,
+    } = e, s = l.useRef(null), [
+      [a, o], u
+    ] = l.useState([0, 0]), d = t.deleted && a > 0;
+    if (t.deleted && 0 === a && null != s.current) {
+      let e = s.current.offsetHeight,
+        t = s.current.offsetTop,
+        n = s.current.parentElement.scrollTop,
         r = n > t ? e - (n - t) : e;
       u([e, e - r])
     }
     let {
-      opacity: f,
-      size: p
+      opacity: p,
+      size: h
     } = (0, c.zhh)({
       config: {
         clamp: true,
@@ -69,26 +69,26 @@ let x = Chunk64700.memo(function(e) {
       onRest: () => {
         n(t.channelId)
       }
-    }, "animate-always"), h = {
-      opacity: f,
-      height: p.to(e => {
+    }, "animate-always"), f = {
+      opacity: p,
+      height: h.to(e => {
         var t, n;
-        return d ? (t = s, (n = o) + (t - n) * e) : "auto"
+        return d ? (t = a, (n = o) + (t - n) * e) : "auto"
       })
     };
     return (0, r.jsx)(i.animated.div, {
-      ref: a,
-      style: h,
-      children: (0, r.jsx)(E, v({}, e))
+      ref: s,
+      style: f,
+      children: (0, r.jsx)(x, j({}, e))
     })
   }),
-  E = Chunk64700.memo(function(e) {
+  x = Chunk64700.memo(function(e) {
     let {
       channel: t,
       onJump: n,
       deleteChannel: i,
-      toggle: a
-    } = e, o = (0, s.bG)([h.A], () => h.A.getChannel(t.channelId));
+      toggle: s
+    } = e, o = (0, a.bG)([f.A], () => f.A.getChannel(t.channelId));
     if (l.useEffect(() => {
         null == o || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || u.h.wait(() => {
           (0, d.ack)(t.channelId, {
@@ -98,38 +98,38 @@ let x = Chunk64700.memo(function(e) {
           }, true), i(t.channelId)
         })
       }), null == o || !t.hasLoadedAnything) return null;
-    let O = (e, r) => {
-      (0, f.zV)(y.HAw.INBOX_CHANNEL_CLICKED, {
+    let _ = (e, r) => {
+      (0, p.zV)(y.HAw.INBOX_CHANNEL_CLICKED, {
         channel_id: t.channelId,
         guild_id: t.guildId
       });
       let l = null != r ? r : t.oldestUnreadMessageId;
-      (0, p.pX)(y.BVt.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : l)), n(e)
+      (0, h.pX)(y.BVt.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : l)), n(e)
     };
     return (0, r.jsx)("div", {
-      className: j.Ix,
+      className: O.Ix,
       children: (0, r.jsx)(c.Fmo, {
-        component: (0, r.jsx)(g.A, {
+        component: (0, r.jsx)(m.A, {
           channel: o,
-          gotoChannel: O,
+          gotoChannel: _,
           mentionCount: t.mentionCount,
-          toggleCollapsed: a,
+          toggleCollapsed: s,
           showCollapseButton: true,
           channelState: t,
           getNumUnreadChannels: e.getNumUnreadChannels,
           children: (0, r.jsxs)(c.ButtonGroup, {
             size: "sm",
-            className: j.GC,
-            children: [(0, r.jsx)(b.A, {
+            className: O.GC,
+            children: [(0, r.jsx)(g.A, {
               channel: o
-            }), (0, r.jsx)(_, v({}, e))]
+            }), (0, r.jsx)(E, j({}, e))]
           })
         }),
         children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(A.A, {
           channel: t,
           channelRecord: o,
-          gotoChannel: O
-        }) : "forum" === t.type ? (0, r.jsx)(m.A, {
+          gotoChannel: _
+        }) : "forum" === t.type ? (0, r.jsx)(b.A, {
           channel: t,
           channelRecord: o,
           deleteChannel: i
@@ -138,22 +138,22 @@ let x = Chunk64700.memo(function(e) {
     })
   });
 
-function _(e) {
+function E(e) {
   let {
     channel: t,
     markChannelRead: n,
     markGuildRead: l,
     getNumUnreadChannels: i
-  } = e, s = (0, a.A)() && null != t.guildId;
+  } = e, a = (0, s.A)() && null != t.guildId;
   return (0, r.jsx)(o.m_, {
-    text: s ? O.intl.string(O.t["5lLMhM"]) : O.intl.string(O.t.e6RscS),
+    text: a ? _.intl.string(_.t["5lLMhM"]) : _.intl.string(_.t.e6RscS),
     children: (0, r.jsx)(c.K0, {
       variant: "secondary",
-      "aria-label": s ? O.intl.string(O.t["5lLMhM"]) : O.intl.string(O.t.e6RscS),
+      "aria-label": a ? _.intl.string(_.t["5lLMhM"]) : _.intl.string(_.t.e6RscS),
       size: "sm",
-      icon: s ? c.iA$ : c.A9s,
+      icon: a ? c.iA$ : c.A9s,
       onClick: function() {
-        s && null != t.guildId ? l(t.guildId) : n(t), (0, f.zV)(y.HAw.INBOX_CHANNEL_ACKED, {
+        a && null != t.guildId ? l(t.guildId) : n(t), (0, p.zV)(y.HAw.INBOX_CHANNEL_ACKED, {
           channel_id: t.channelId,
           guild_id: t.guildId,
           marked_all_channels_as_read: false,

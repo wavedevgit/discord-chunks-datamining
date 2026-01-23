@@ -45,8 +45,8 @@ let d = e => {
       h = c.intl.string(c.t["9RNkeF"])
   }
   let E = n === l.nu.ORIGINAL_POSTER,
-    b = null;
-  d && (b = (0, r.jsx)(s.m, {
+    y = null;
+  d && (y = (0, r.jsx)(s.m, {
     text: m,
     align: "center",
     position: "top",
@@ -55,11 +55,11 @@ let d = e => {
       color: o.LU0.colors.WHITE
     })
   }));
-  let y = () => (0, r.jsxs)("span", {
+  let b = () => (0, r.jsxs)("span", {
     className: a()(i, g, p ? u.D0 : u.px, {
       [u.rV]: E
     }),
-    children: [f ? null : b, _, (0, r.jsx)("span", {
+    children: [f ? null : y, _, (0, r.jsx)("span", {
       className: u.lc,
       children: h
     })]
@@ -68,8 +68,8 @@ let d = e => {
     text: c.intl.string(c.t.uN6Emt),
     position: "top",
     asContainer: true,
-    children: y()
-  }) : y()
+    children: b()
+  }) : b()
 };
 d.Types = Chunk705751.nu;
 let f = d

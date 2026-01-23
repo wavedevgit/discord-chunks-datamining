@@ -160,7 +160,7 @@ function g(e) {
 }
 let E = 25;
 
-function b(e, t) {
+function y(e, t) {
   let n = (0, a.zk)(e),
     r = (0, a.ep)(e),
     i = n.visualViewport,
@@ -189,7 +189,7 @@ function b(e, t) {
     y: c
   }
 }
-let y = new Set(["absolute", "fixed"]);
+let b = new Set(["absolute", "fixed"]);
 
 function O(e, t) {
   let n = f(e, true, "fixed" === t),
@@ -206,9 +206,9 @@ function O(e, t) {
   }
 }
 
-function A(e, t, n) {
+function v(e, t, n) {
   let i;
-  if ("viewport" === t) i = b(e, n);
+  if ("viewport" === t) i = y(e, n);
   else if ("document" === t) i = g((0, a.ep)(e));
   else if ((0, a.vq)(t)) i = O(t, n);
   else {
@@ -223,12 +223,12 @@ function A(e, t, n) {
   return (0, r.B1)(i)
 }
 
-function v(e, t) {
+function A(e, t) {
   let n = (0, a.$4)(e);
-  return !(n === t || !(0, a.vq)(n) || (0, a.eu)(n)) && ("fixed" === (0, a.L9)(n).position || v(n, t))
+  return !(n === t || !(0, a.vq)(n) || (0, a.eu)(n)) && ("fixed" === (0, a.L9)(n).position || A(n, t))
 }
 
-function S(e, t) {
+function I(e, t) {
   let n = t.get(e);
   if (n) return n;
   let r = (0, a.v9)(e, [], false).filter(e => (0, a.vq)(e) && "body" !== (0, a.mq)(e)),
@@ -239,21 +239,21 @@ function S(e, t) {
     (0, a.vq)(o) && !(0, a.eu)(o);) {
     let t = (0, a.L9)(o),
       n = (0, a.sQ)(o);
-    n || "fixed" !== t.position || (i = null), (s ? !n && !i : !n && "static" === t.position && !!i && y.has(i.position) || (0, a.ZU)(o) && !n && v(e, o)) ? r = r.filter(e => e !== o) : i = t, o = (0, a.$4)(o)
+    n || "fixed" !== t.position || (i = null), (s ? !n && !i : !n && "static" === t.position && !!i && b.has(i.position) || (0, a.ZU)(o) && !n && A(e, o)) ? r = r.filter(e => e !== o) : i = t, o = (0, a.$4)(o)
   }
   return t.set(e, r), r
 }
 
-function I(e) {
+function S(e) {
   let {
     element: t,
     boundary: n,
     rootBoundary: i,
     strategy: s
-  } = e, o = [..."clippingAncestors" === n ? (0, a.Tf)(t) ? [] : S(t, this._c) : [].concat(n), i], l = o[0], c = o.reduce((e, n) => {
-    let i = A(t, n, s);
+  } = e, o = [..."clippingAncestors" === n ? (0, a.Tf)(t) ? [] : I(t, this._c) : [].concat(n), i], l = o[0], c = o.reduce((e, n) => {
+    let i = v(t, n, s);
     return e.top = (0, r.T9)(i.top, e.top), e.right = (0, r.jk)(i.right, e.right), e.bottom = (0, r.jk)(i.bottom, e.bottom), e.left = (0, r.T9)(i.left, e.left), e
-  }, A(t, l, s));
+  }, v(t, l, s));
   return {
     width: c.right - c.left,
     height: c.bottom - c.top,
@@ -349,7 +349,7 @@ function D(e) {
 let x = {
   convertOffsetParentRelativeRectToViewportRelativeRect: h,
   getDocumentElement: Chunk84157.ep,
-  getClippingRect: I,
+  getClippingRect: S,
   getOffsetParent: w,
   getElementRects: P,
   getClientRects: m,
@@ -438,11 +438,11 @@ function M(e, t, n, r) {
   }), p && !d && g.observe(p), g.observe(t));
   let E = d ? f(e) : null;
 
-  function b() {
+  function y() {
     let t = f(e);
-    E && !L(E, t) && n(), E = t, i = requestAnimationFrame(b)
+    E && !L(E, t) && n(), E = t, i = requestAnimationFrame(y)
   }
-  return d && b(), n(), () => {
+  return d && y(), n(), () => {
     var e;
     _.forEach(e => {
       s && e.removeEventListener("scroll", n), l && e.removeEventListener("resize", n)

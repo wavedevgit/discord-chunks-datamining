@@ -14,10 +14,10 @@ module.exports = function(e, t, n, o) {
       m = true !== h,
       g = null === h,
       E = h == h,
-      b = r(h);
-    if (u) var y = o || E;
-    else y = p ? E && (o || m) : d ? E && m && (o || !g) : f ? E && m && !g && (o || !b) : !g && !b && (o ? h <= t : h < t);
-    y ? l = _ + 1 : c = _
+      y = r(h);
+    if (u) var b = o || E;
+    else b = p ? E && (o || m) : d ? E && m && (o || !g) : f ? E && m && !g && (o || !y) : !g && !y && (o ? h <= t : h < t);
+    b ? l = _ + 1 : c = _
   }
   return s(c, i)
 }

@@ -27,23 +27,23 @@ function _(e) {
     disabled: m = false,
     showPremiumIcon: g = true,
     isTryItOut: E = false,
-    forcedDivider: b,
-    withHighlight: y = false
+    forcedDivider: y,
+    withHighlight: b = false
   } = e, {
     newestAnalyticsLocation: O
-  } = (0, l.Ay)(), A = y ? o.wLn : s.$n;
+  } = (0, l.Ay)(), v = b ? o.wLn : s.$n;
   return (0, r.jsx)(u.A, {
     className: h,
     title: f.intl.string(f.t.Vgdusv),
     showPremiumIcon: g,
     errors: n,
     disabled: m,
-    forcedDivider: b,
+    forcedDivider: y,
     children: (0, r.jsxs)("div", {
       className: p.NC,
-      children: [(0, r.jsx)(A, {
+      children: [(0, r.jsx)(v, {
         className: a()({
-          [p.yj]: y
+          [p.yj]: b
         }),
         size: s.$n.Sizes.SMALL,
         onClick: () => (0, c.XD)({

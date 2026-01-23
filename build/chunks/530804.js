@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $n: () => E,
-  uy: () => A,
+  uy: () => v,
   vp: () => O
 }), require("./896048.js"), require("./321073.js");
 var Chunk64700 = require("./64700.js"),
@@ -59,7 +59,7 @@ function E(e, t) {
   return r.useMemo(() => g(n, t, h), [n, t, h])
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e || 0 === e.length) return t;
   let n = [...t];
   return e.forEach(e => {
@@ -67,16 +67,16 @@ function b(e, t) {
   }), n
 }
 
-function y(e) {
+function b(e) {
   return (0, a.bG)([f.A, p.A], () => e === p.A.getChannelId() ? f.A.getDesyncedParticipants() : null)
 }
 
 function O(e, t) {
-  let n = y(e);
-  return r.useMemo(() => b(n, t), [n, t])
+  let n = b(e);
+  return r.useMemo(() => y(n, t), [n, t])
 }
 
-function A(e, t) {
+function v(e, t) {
   let n = (0, a.bG)([c.default], () => c.default.getId() === t),
     i = (0, a.bG)([p.A], () => p.A.getChannelId()),
     s = r.useRef(null),

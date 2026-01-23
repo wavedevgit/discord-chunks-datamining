@@ -2,5 +2,5 @@
 /** chunk id: 986588, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  u: "d2ea9275d7929ec3"
+  u: "spinner__255ba"
 }

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk975807 = require("./975807.js"),
   Chunk985018 = require("./985018.jsx"),
@@ -21,27 +21,27 @@ let u = e => {
       is_localized: o
     }
   } = e;
-  return o ? (0, l.jsxs)(i.DUT, {
+  return o ? (0, l.jsxs)(a.DUT, {
     role: "link",
-    className: a()(d.$J, c.lD),
+    className: i()(c.$J, d.lD),
     onClick: () => {
       (0, s.A)(t)
     },
     children: [(0, l.jsxs)("div", {
-      className: d.xU,
-      children: [(0, l.jsx)(i.Text, {
-        className: d.__invalid_linkText,
+      className: c.xU,
+      children: [(0, l.jsx)(a.Text, {
+        className: c.__invalid_linkText,
         variant: "text-md/semibold",
         children: n
-      }), null != r && "" !== r && (0, l.jsx)(i.Text, {
+      }), null != r && "" !== r && (0, l.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         children: r
       })]
-    }), (0, l.jsx)(i.I9m, {
+    }), (0, l.jsx)(a.I9m, {
       size: "sm",
       color: "currentColor",
-      className: d.wP
+      className: c.wP
     })]
   }) : null
 };
@@ -71,11 +71,11 @@ function m(e) {
       return t.is_header_hidden
     });
   return (0, l.jsxs)("div", {
-    className: a()(d.nV, c.E8),
-    children: [!r && (0, l.jsx)(i.Heading, {
+    className: i()(c.nV, d.E8),
+    children: [!r && (0, l.jsx)(a.Heading, {
       variant: "heading-sm/semibold",
       color: "text-default",
-      className: d.wx,
+      className: c.wx,
       children: o.intl.string(o.t.hvVgAZ)
     }), n]
   })

@@ -26,33 +26,33 @@ function g(e) {
 function E(e, t, n) {
   let {
     keyboardDelegate: E,
-    isVirtualized: b,
-    layoutDelegate: y,
+    isVirtualized: y,
+    layoutDelegate: b,
     layout: O
-  } = e, A = (0, p.Q)({
+  } = e, v = (0, p.Q)({
     usage: "search",
     sensitivity: "base"
   }), {
-    direction: v
-  } = (0, _.Y)(), S = t.selectionManager.disabledBehavior, I = (0, m.useMemo)(() => E || new(0, a.h)({
+    direction: A
+  } = (0, _.Y)(), I = t.selectionManager.disabledBehavior, S = (0, m.useMemo)(() => E || new(0, a.h)({
     collection: t.collection,
     disabledKeys: t.disabledKeys,
-    disabledBehavior: S,
+    disabledBehavior: I,
     ref: n,
-    direction: v,
-    collator: A,
-    layoutDelegate: y,
+    direction: A,
+    collator: v,
+    layoutDelegate: b,
     layout: O
-  }), [E, t.collection, t.disabledKeys, S, n, v, A, y, O]), T = (0, l.Bi)(e.id);
+  }), [E, t.collection, t.disabledKeys, I, n, A, v, b, O]), T = (0, l.Bi)(e.id);
   r.V4.set(t, T);
   let {
     gridProps: C
   } = (0, o.E)({
     ...e,
     id: T,
-    keyboardDelegate: I
+    keyboardDelegate: S
   }, t, n);
-  b && (C["aria-rowcount"] = t.collection.size + t.collection.headerRows.length), (0, f.D5)() && "expandedKeys" in t && (C.role = "treegrid");
+  y && (C["aria-rowcount"] = t.collection.size + t.collection.headerRows.length), (0, f.D5)() && "expandedKeys" in t && (C.role = "treegrid");
   let {
     column: N,
     direction: R

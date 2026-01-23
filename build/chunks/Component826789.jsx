@@ -63,10 +63,10 @@ function O(e) {
   });
 
   function g() {
-    (0, l.A)(), (0, o.closeAllModals)(), b.default.track(f.HAw.PREMIUM_PROMOTION_OPENED, {
-      location_section: f.JJy.STREAM_UPSELL_MODAL,
-      location_object: f.ZSU.NAVIGATION_LINK
-    }), (0, s.pX)(f.BVt.APPLICATION_STORE)
+    (0, l.A)(), (0, o.closeAllModals)(), p.default.track(b.HAw.PREMIUM_PROMOTION_OPENED, {
+      location_section: b.JJy.STREAM_UPSELL_MODAL,
+      location_object: b.ZSU.NAVIGATION_LINK
+    }), (0, s.pX)(b.BVt.APPLICATION_STORE)
   }
   let w = u.intl.string(u.t.ewxv3J),
     j = u.intl.string(u.t.qlsCDB);
@@ -81,10 +81,10 @@ function O(e) {
     body: j,
     artElement: m,
     artContainerClassName: y.JS,
-    type: p.e.STREAM_QUALITY_UPSELL,
+    type: f.e.STREAM_QUALITY_UPSELL,
     analyticsLocation: {
-      section: f.JJy.STREAM_UPSELL_MODAL,
-      object: f.ZSU.BUTTON_CTA
+      section: b.JJy.STREAM_UPSELL_MODAL,
+      object: b.ZSU.BUTTON_CTA
     },
     analyticsSource: r,
     onClose: t,

@@ -20,26 +20,26 @@ function u(e) {
   } = e, {
     horizontalScrollNotice: u,
     handleScroll: d,
-    handleSetScrollerRef: f,
-    handleSetContainerRef: p
-  } = (0, o.A)(t), h = (0, r.jsx)("div", {
+    handleSetScrollerRef: p,
+    handleSetContainerRef: h
+  } = (0, o.A)(t), f = (0, r.jsx)("div", {
     className: c.vi,
     children: (0, r.jsx)("div", {
       className: i()(c._s, l),
       children: n
     })
   });
-  return a.Fr || (h = (0, r.jsxs)(r.Fragment, {
-    children: [u, (0, r.jsx)(s.T7Y, {
+  return s.Fr || (f = (0, r.jsxs)(r.Fragment, {
+    children: [u, (0, r.jsx)(a.T7Y, {
       className: c.XG,
       orientation: "horizontal",
-      ref: f,
+      ref: p,
       onScroll: d,
-      children: h
+      children: f
     })]
   })), (0, r.jsx)("div", {
     className: c.Rc,
-    ref: p,
-    children: h
+    ref: h,
+    children: f
   })
 }

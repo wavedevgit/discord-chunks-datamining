@@ -2,8 +2,8 @@
 /** chunk id: 750770, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => A,
-  s: () => S
+  f: () => v,
+  s: () => I
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -24,25 +24,25 @@ var Chunk64700 = require("./64700.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 let O = 3,
-  A = 0,
-  v = 3e3;
+  v = 0,
+  A = 3e3;
 
-function S(e) {
+function I(e) {
   let {
     memberStoreProps: {
       groups: t,
       rows: n,
-      version: A
+      version: v
     },
-    channelId: S,
-    guildId: I
+    channelId: I,
+    guildId: S
   } = e, [T, C] = r.useState(false), {
     requestId: N,
     entries: R,
     impressionCappedEntryIds: w
-  } = (0, h.A)(S), P = (0, i.bG)([f.A], () => f.A.hidden), D = (0, i.bG)([c.A], () => c.A.isFocused()), x = (0, i.bG)([o.A], () => o.A.getChannel(S)), L = (0, i.bG)([l.A], () => l.A.getGuild(I), [I]), j = (0, p.T)(L), M = null != j && j && (null == x ? true : x.isForumChannel()) === false, [k, U, G, V] = r.useMemo(() => {
+  } = (0, h.A)(I), P = (0, i.bG)([f.A], () => f.A.hidden), D = (0, i.bG)([c.A], () => c.A.isFocused()), x = (0, i.bG)([o.A], () => o.A.getChannel(I)), L = (0, i.bG)([l.A], () => l.A.getGuild(S), [S]), j = (0, p.T)(L), M = null != j && j && (null == x ? true : x.isForumChannel()) === false, [k, U, G, V] = r.useMemo(() => {
     let e;
-    if (null == R || 0 === R.length || null == N || !M) return [t, n, A];
+    if (null == R || 0 === R.length || null == N || !M) return [t, n, v];
     let r = O,
       i = T ? R.length : r,
       a = R.slice(0, i);
@@ -56,9 +56,9 @@ function S(e) {
     let o = () => {
         C(e => {
           let t = !e;
-          return u.default.track(b.HAw.MEMBERLIST_CONTENT_FEED_TOGGLED, {
-            channel_id: S,
-            guild_id: I,
+          return u.default.track(y.HAw.MEMBERLIST_CONTENT_FEED_TOGGLED, {
+            channel_id: I,
+            guild_id: S,
             expanded: t
           }), t
         })
@@ -69,7 +69,7 @@ function S(e) {
         key: E.C,
         count: e.length,
         index: n.length,
-        title: y.intl.string(y.t["6gwSFY"]),
+        title: b.intl.string(b.t["6gwSFY"]),
         onToggleExpand: o,
         expanded: T,
         expandedCount: R.length,
@@ -79,7 +79,7 @@ function S(e) {
       [l, ...t],
       [...n, l, ...e], Math.random(), e
     ]
-  }, [S, R, T, t, I, N, n, A, P, M]), F = r.useRef(0), B = r.useRef(R), H = r.useRef(true), Y = r.useRef({
+  }, [I, R, T, t, S, N, n, v, P, M]), F = r.useRef(0), B = r.useRef(R), H = r.useRef(true), Y = r.useRef({
     impressionCappedEntryIds: w
   }), W = r.useCallback(e => {
     var t;
@@ -95,23 +95,23 @@ function S(e) {
     }
   }, [w]), r.useEffect(() => (F.current = 0, H.current = Date.now(), () => {
     var e, t;
-    if (null == N || null == H.current || Date.now() - H.current < v) return;
+    if (null == N || null == H.current || Date.now() - H.current < A) return;
     let n = null != (e = null == (t = B.current) ? true : t.map(e => e.id)) ? e : [],
       r = n.slice(0, F.current);
-    !P && D && M && ((0, _.D)(b.HAw.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
+    !P && D && M && ((0, _.D)(y.HAw.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
       request_id: N,
       first_shown_at: H.current,
       item_ids: r,
       surface_type: g.UG.GUILD_MEMBER_LIST,
-      channel_id: S,
-      guild_id: I,
+      channel_id: I,
+      guild_id: S,
       all_item_ids: n,
       impression_capped_item_ids: [...Y.current.impressionCappedEntryIds]
     }), (0, d.sE)("useInjectContentInventoryFeed") && a.h.dispatch({
       type: "CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS",
       itemIds: r
     }))
-  }), [N, S, I, P, D, M]), {
+  }), [N, I, S, P, D, M]), {
     groups: k,
     rows: U,
     version: G,

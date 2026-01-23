@@ -1,9 +1,9 @@
 /** Chunk was on 31748 **/
 /** chunk id: 533117, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => b
 }), require("./321073.js"), require("./896048.js");
-var l, Chunk311907 = require("./311907.js"),
+var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk7584 = require("./7584.js"),
   Chunk287809 = require("./287809.js"),
@@ -23,10 +23,10 @@ function d(e, t, n) {
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
+    }))), r.forEach(function(t) {
       d(e, t, n[t])
     })
   }
@@ -34,53 +34,53 @@ function f(e) {
 }
 require("./824217.js");
 let p = {},
-  b = {},
   g = {},
-  m = true,
+  m = {},
+  _ = true,
   h = null;
 
-function A(e) {
-  if (null == b[e]) {
-    let t = s.default.getUser(e);
+function y(e) {
+  if (null == g[e]) {
+    let t = o.default.getUser(e);
     if (null == t) return;
     let n = t.getAvatarURL(null, 80),
-      l = new Image;
-    l.src = n, b[e] = l
+      r = new Image;
+    r.src = n, g[e] = r
   }
 }
-class y extends(l = Chunk311907.Ay.Store) {
+class A extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(s.default)
+    this.waitFor(o.default)
   }
   get visibleOverlayCanvas() {
-    return m
+    return _
   }
   getDrawables(e) {
     return null != p[e] ? p[e] : []
   }
   getAvatarImage(e) {
-    return b[e]
+    return g[e]
   }
   getEmojiImage(e) {
-    return g[e]
+    return m[e]
   }
   getDrawMode() {
     return h
   }
 }
-d(y, "displayName", "SharedCanvasStore");
-let _ = new y(Chunk73153.h, {
+d(A, "displayName", "SharedCanvasStore");
+let b = new A(Chunk73153.h, {
   SHARED_CANVAS_UPDATE_LINE_POINTS: function(e) {
     let {
       lineId: t,
       newPoints: n,
-      userId: l,
-      streamerId: r
-    } = e, i = p[r];
-    if (null == i) p[r] = [{
+      userId: r,
+      streamerId: l
+    } = e, i = p[l];
+    if (null == i) p[l] = [{
       type: c.Z.LINE,
       id: t,
-      userId: l,
+      userId: r,
       points: n
     }];
     else {
@@ -88,45 +88,45 @@ let _ = new y(Chunk73153.h, {
       null == e ? i.push({
         type: c.Z.LINE,
         id: t,
-        userId: l,
+        userId: r,
         points: n
       }) : (0, u.PA)(e) && e.points.push(...n)
     }
-    A(l)
+    y(r)
   },
   SHARED_CANVAS_UPDATE_EMOJI_HOSE: function(e) {
-    var t, n, l, r, i;
+    var t, n, r, l, i;
     let {
-      emojiHose: s,
+      emojiHose: o,
       streamerId: u,
       userId: d
-    } = e, b = (r = f({}, s), i = i = {
+    } = e, g = (l = f({}, o), i = i = {
       type: c.Z.EMOJI_HOSE
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, l)
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
       }
       return n
     })(Object(i)).forEach(function(e) {
-      Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
-    }), r);
-    if (null == p[u]) p[u] = [b];
+      Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
+    }), l);
+    if (null == p[u]) p[u] = [g];
     else {
-      let e = p[u].findIndex(e => e.id === s.id);
-      e >= 0 ? p[u][e] = f({}, p[u][e], b) : p[u].push(b)
+      let e = p[u].findIndex(e => e.id === o.id);
+      e >= 0 ? p[u][e] = f({}, p[u][e], g) : p[u].push(g)
     }
-    let m = null != (t = null != (n = s.emojiId) ? n : s.emojiName) ? t : "";
-    if (null == g[m]) {
-      let e = null != s.emojiName ? a.Ay.convertNameToSurrogate(s.emojiName) : null;
-      g[m] = new Image, g[m].src = (0, o.Ez)({
-        id: s.emojiId,
-        name: null != (l = null != e ? e : s.emojiName) ? l : "",
+    let _ = null != (t = null != (n = o.emojiId) ? n : o.emojiName) ? t : "";
+    if (null == m[_]) {
+      let e = null != o.emojiName ? a.Ay.convertNameToSurrogate(o.emojiName) : null;
+      m[_] = new Image, m[_].src = (0, s.Ez)({
+        id: o.emojiId,
+        name: null != (r = null != e ? e : o.emojiName) ? r : "",
         animated: false
       }, 48)
     }
-    A(d)
+    y(d)
   },
   SHARED_CANVAS_CLEAR_DRAWABLES: function(e) {
     let {
@@ -146,6 +146,6 @@ let _ = new y(Chunk73153.h, {
   },
   TOGGLE_OVERLAY_CANVAS: function(e) {
     let {} = e;
-    m = !m
+    _ = !_
   }
 })

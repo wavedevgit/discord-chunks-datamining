@@ -115,8 +115,8 @@ let B = new Chunk877166.A(Chunk531013.sZ, (e, t) => {
       type: "CHANNEL_UPDATES",
       channels: []
     };
-    let r = (0, y.UE)(t),
-      i = v.A.getChannel(t.id),
+    let r = (0, b.UE)(t),
+      i = A.A.getChannel(t.id),
       a = null == i ? true : i.merge(k(j({}, r), {
         recipients: i.recipients,
         bitrate: null != (n = r.bitrate) ? n : i.bitrate
@@ -213,11 +213,11 @@ function $(e, t, n) {
     pending: m,
     joined_at: g,
     communication_disabled_until: E,
-    unusual_dm_activity_until: b,
-    collectibles: y,
+    unusual_dm_activity_until: y,
+    collectibles: b,
     display_name_styles: O
-  } = n, A = S.Ay.getMember(e, t.id), v = (0, f.mT)(O);
-  null != A && A.nick === c && A.avatar === d && i().isEqual(A.roles, l) && (0, u.kn)(null != (r = A.avatarDecoration) ? r : null, null != p ? p : null) && A.premiumSince === h && A.isPending === m && A.joinedAt === g && A.communicationDisabledUntil === E && A.flags === _ && (null != (a = A.unusualDMActivityUntil) ? a : null) === (null != b ? b : null) && i().isEqual(null != (s = A.collectibles) ? s : null, null != y ? y : null) && i().isEqual(null != (o = A.displayNameStyles) ? o : null, null != v ? v : null) || Q({
+  } = n, v = I.Ay.getMember(e, t.id), A = (0, f.mT)(O);
+  null != v && v.nick === c && v.avatar === d && i().isEqual(v.roles, l) && (0, u.kn)(null != (r = v.avatarDecoration) ? r : null, null != p ? p : null) && v.premiumSince === h && v.isPending === m && v.joinedAt === g && v.communicationDisabledUntil === E && v.flags === _ && (null != (a = v.unusualDMActivityUntil) ? a : null) === (null != y ? y : null) && i().isEqual(null != (s = v.collectibles) ? s : null, null != b ? b : null) && i().isEqual(null != (o = v.displayNameStyles) ? o : null, null != A ? A : null) || Q({
     type: "GUILD_MEMBER_ADD",
     guildId: e,
     user: t,
@@ -229,10 +229,10 @@ function $(e, t, n) {
     isPending: m,
     joinedAt: g,
     communicationDisabledUntil: E,
-    unusualDMActivityUntil: b,
+    unusualDMActivityUntil: y,
     flags: _,
-    collectibles: y,
-    displayNameStyles: v
+    collectibles: b,
+    displayNameStyles: A
   })
 }
 
@@ -288,7 +288,7 @@ function et(e) {
     processedAtTimestamp: o
   })
 }
-q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.D.loadGuildIds([e.id]), e => {
+q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : A.D.loadGuildIds([e.id]), e => {
   E.A.initialGuild.measure(() => {
     a.Ay.Emitter.batched(() => {
       let t = P.fq(e, x.sZ.identifyStartTime);
@@ -336,7 +336,7 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.D.loadGuildIds([e.id
         e.presences = n(e.presences || [])
       });
       let i = e.presences ? n(e.presences) : [],
-        a = (null != (t = e.lazy_private_channels) ? t : []).map(e => (0, y.UE)(e));
+        a = (null != (t = e.lazy_private_channels) ? t : []).map(e => (0, b.UE)(e));
       E.A.dispatchReadySupplemental.measure(() => {
         var t;
         Q({
@@ -383,7 +383,7 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.D.loadGuildIds([e.id
       var t, n;
       return !e.unavailable && "partial" === e.data_mode && ((null != (t = e.partial_updates.channels) ? t : []).length > 0 || (null != (n = e.partial_updates.deleted_channel_ids) ? n : []).length > 0 || true)
     }).map(e => e.id);
-  return Promise.all([n, null != (t = v.D.loadGuildIds(r)) ? t : Promise.resolve()]).then(e => {
+  return Promise.all([n, null != (t = A.D.loadGuildIds(r)) ? t : Promise.resolve()]).then(e => {
     let [t] = e;
     return t
   })
@@ -392,14 +392,14 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.D.loadGuildIds([e.id
     type: "LOGOUT"
   }) : E.A.ready.measure(() => {
     a.Ay.Emitter.batched(() => {
-      let t = (e = E.A.hydrateReady.measure(() => P.un(e, x.sZ.identifyStartTime, n))).private_channels.map(e => (0, y.UE)(e)),
+      let t = (e = E.A.hydrateReady.measure(() => P.un(e, x.sZ.identifyStartTime, n))).private_channels.map(e => (0, b.UE)(e)),
         r = e.guilds.filter(e => true === e.unavailable && true !== e.geo_restricted).map(e => e.id),
         i = e.guilds.filter(e => true !== e.unavailable),
         a = e.guilds.filter(e => true === e.geo_restricted);
       i.forEach(e => {
         e.presences = []
       });
-      let s = null == e.user_settings_proto ? true : (0, b.Gd)(e.user_settings_proto);
+      let s = null == e.user_settings_proto ? true : (0, y.Gd)(e.user_settings_proto);
       E.A.dispatchReady.measure(() => {
         var n, o, l, c;
         Q({
@@ -509,7 +509,7 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.D.loadGuildIds([e.id
     channelId: e.channel_id,
     messageId: e.message_id
   })
-}), q(["MESSAGE_CREATE"], e => v.D.loadGuildIds([e.guild_id]), e => {
+}), q(["MESSAGE_CREATE"], e => A.D.loadGuildIds([e.guild_id]), e => {
   J(e), null != e.author && Q({
     type: "MESSAGE_CREATE",
     guildId: e.guild_id,
@@ -518,27 +518,27 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.D.loadGuildIds([e.id
     optimistic: false,
     isPushNotification: false
   })
-}), q(["MESSAGE_UPDATE"], e => v.D.loadGuildIds([e.guild_id]), e => {
+}), q(["MESSAGE_UPDATE"], e => A.D.loadGuildIds([e.guild_id]), e => {
   J(e), Q({
     type: "MESSAGE_UPDATE",
     guildId: e.guild_id,
     message: e
   })
-}), q(["MESSAGE_DELETE"], e => v.D.loadGuildIds([e.guild_id]), e => {
+}), q(["MESSAGE_DELETE"], e => A.D.loadGuildIds([e.guild_id]), e => {
   Q({
     type: "MESSAGE_DELETE",
     guildId: e.guild_id,
     id: e.id,
     channelId: e.channel_id
   })
-}), q(["MESSAGE_DELETE_BULK"], e => v.D.loadGuildIds([e.guild_id]), e => {
+}), q(["MESSAGE_DELETE_BULK"], e => A.D.loadGuildIds([e.guild_id]), e => {
   Q({
     type: "MESSAGE_DELETE_BULK",
     guildId: e.guild_id,
     ids: e.ids,
     channelId: e.channel_id
   })
-}), q(["MESSAGE_ACK"], e => v.D.loadGuildFromChannelId(e.channel_id), e => {
+}), q(["MESSAGE_ACK"], e => A.D.loadGuildFromChannelId(e.channel_id), e => {
   Q({
     type: "MESSAGE_ACK",
     channelId: e.channel_id,
@@ -560,23 +560,23 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.D.loadGuildIds([e.id
     ackType: e.ack_type,
     ackedId: e.entity_id
   })
-}), q(["CHANNEL_PINS_ACK"], e => v.D.loadGuildIds([e.guild_id]), e => {
+}), q(["CHANNEL_PINS_ACK"], e => A.D.loadGuildIds([e.guild_id]), e => {
   Q({
     type: "CHANNEL_PINS_ACK",
     channelId: e.channel_id,
     timestamp: e.timestamp,
     version: e.version
   })
-}), q(["CHANNEL_PINS_UPDATE"], e => v.D.loadGuildIds([e.guild_id]), e => {
+}), q(["CHANNEL_PINS_UPDATE"], e => A.D.loadGuildIds([e.guild_id]), e => {
   Q({
     type: "CHANNEL_PINS_UPDATE",
     channelId: e.channel_id,
     lastPinTimestamp: e.last_pin_timestamp
   })
-}), q(["CHANNEL_CREATE", "CHANNEL_DELETE"], e => v.D.loadGuildIds([e.guild_id]), (e, t) => {
+}), q(["CHANNEL_CREATE", "CHANNEL_DELETE"], e => A.D.loadGuildIds([e.guild_id]), (e, t) => {
   Q({
     type: t,
-    channel: (0, y.UE)(e)
+    channel: (0, b.UE)(e)
   })
 }), z(["VOICE_CHANNEL_STATUS_UPDATE"], (e, t) => {
   Q({
@@ -617,24 +617,24 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.D.loadGuildIds([e.id
     online: e.presence_count,
     total: e.member_count
   })
-}), q(["CHANNEL_UPDATE"], e => v.D.loadGuildIds([e.guild_id]), e => {
+}), q(["CHANNEL_UPDATE"], e => A.D.loadGuildIds([e.guild_id]), e => {
   B.add(e)
-}), q(["THREAD_CREATE", "THREAD_UPDATE", "THREAD_DELETE"], e => v.D.loadGuildIds([e.guild_id]), (e, t) => {
+}), q(["THREAD_CREATE", "THREAD_UPDATE", "THREAD_DELETE"], e => A.D.loadGuildIds([e.guild_id]), (e, t) => {
   let {
     newly_created: n
   } = e, r = U(e, ["newly_created"]);
   Q({
     type: t,
     isNewlyCreated: n,
-    channel: (0, y.UE)(r)
+    channel: (0, b.UE)(r)
   })
-}), q(["THREAD_LIST_SYNC"], e => v.D.loadGuildIds([e.guild_id]), e => {
+}), q(["THREAD_LIST_SYNC"], e => A.D.loadGuildIds([e.guild_id]), e => {
   Q({
     type: "THREAD_LIST_SYNC",
     guildId: e.guild_id,
     threads: e.threads.map(e => {
-      let t = v.A.getChannel(e.parent_id);
-      return null != t && (e.nsfw = t.nsfw, e.parentChannelThreadType = t.type), (0, y.UE)(e)
+      let t = A.A.getChannel(e.parent_id);
+      return null != t && (e.nsfw = t.nsfw, e.parentChannelThreadType = t.type), (0, b.UE)(e)
     }),
     mostRecentMessages: e.most_recent_messages,
     members: e.members ? i().map(e.members, g.A) : true,
@@ -681,7 +681,7 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.D.loadGuildIds([e.id
 }), z(["SOUNDBOARD_SOUNDS"], e => {
   H.add(e)
 }), z(["CHANNEL_RECIPIENT_ADD", "CHANNEL_RECIPIENT_REMOVE"], (e, t) => {
-  let n = v.A.getBasicChannel(e.channel_id);
+  let n = A.A.getBasicChannel(e.channel_id);
   Q({
     type: t,
     channelId: e.channel_id,
@@ -689,7 +689,7 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.D.loadGuildIds([e.id
     nick: e.nick,
     isMember: null != n
   })
-}), q(["GUILD_CREATE"], e => "full" === e.data_mode ? null : v.D.loadGuildIds([e.id]), e => {
+}), q(["GUILD_CREATE"], e => "full" === e.data_mode ? null : A.D.loadGuildIds([e.id]), e => {
   if (e.unavailable) Q({
     type: "GUILD_UNAVAILABLE",
     guildId: e.id
@@ -810,13 +810,13 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.D.loadGuildIds([e.id
     collectibles: e.collectibles,
     displayNameStyles: (0, f.mT)(e.display_name_styles)
   })
-}), q(["GUILD_ROLE_CREATE", "GUILD_ROLE_UPDATE"], e => v.D.loadGuildIds([e.guild_id]), (e, t) => {
+}), q(["GUILD_ROLE_CREATE", "GUILD_ROLE_UPDATE"], e => A.D.loadGuildIds([e.guild_id]), (e, t) => {
   Q({
     type: t,
     guildId: e.guild_id,
     role: e.role
   })
-}), q(["GUILD_ROLE_DELETE"], e => v.D.loadGuildIds([e.guild_id]), e => {
+}), q(["GUILD_ROLE_DELETE"], e => A.D.loadGuildIds([e.guild_id]), e => {
   Q({
     type: "GUILD_ROLE_DELETE",
     guildId: e.guild_id,
@@ -858,7 +858,7 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.D.loadGuildIds([e.id
     user: e
   })
 }), z(["USER_SETTINGS_PROTO_UPDATE"], e => {
-  let t = (0, b.Y5)(e.settings.type, e.settings.proto);
+  let t = (0, y.Y5)(e.settings.type, e.settings.proto);
   if (null != t) {
     if ("string" == typeof t) throw console.error("Invalid proto: |".concat(t, "| |").concat(e.settings.proto, "|")), console.error({
       parsed: t,
@@ -1138,9 +1138,9 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.D.loadGuildIds([e.id
     entitlement: e
   })
 }), z(["USER_PAYMENT_SOURCES_UPDATE"], () => {
-  I.A.hasLayers() && (n(384904).$o(), l.jv(N.A.getFetchedSKUIDs()))
+  S.A.hasLayers() && (n(384904).$o(), l.jv(N.A.getFetchedSKUIDs()))
 }), z(["USER_SUBSCRIPTIONS_UPDATE"], () => {
-  c.rQ(), I.A.hasLayers() && n(384904).hP()
+  c.rQ(), S.A.hasLayers() && n(384904).hP()
 }), z(["WISHLIST_ITEM_PURCHASED"], e => {
   Q({
     type: "WISHLIST_ITEM_PURCHASED",
@@ -1527,7 +1527,7 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.D.loadGuildIds([e.id
       guildId: e.guild_id,
       name: e.name,
       soundId: e.sound_id,
-      user: new A.A(e.user),
+      user: new v.A(e.user),
       userId: e.user_id,
       volume: e.volume,
       emojiId: e.emoji_id,
@@ -1542,7 +1542,7 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.D.loadGuildIds([e.id
       guildId: e.guild_id,
       name: e.name,
       soundId: e.sound_id,
-      user: new A.A(e.user),
+      user: new v.A(e.user),
       userId: e.user_id,
       volume: e.volume,
       emojiId: e.emoji_id,
@@ -1571,7 +1571,7 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.D.loadGuildIds([e.id
       guildId: e.guild_id
     }))
   })
-}), q(["EMBEDDED_ACTIVITY_UPDATE_V2"], e => v.D.loadGuildIds([e.guild_id]), e => {
+}), q(["EMBEDDED_ACTIVITY_UPDATE_V2"], e => A.D.loadGuildIds([e.guild_id]), e => {
   Q({
     type: "EMBEDDED_ACTIVITY_UPDATE_V2",
     applicationId: e.application_id,
@@ -1604,7 +1604,7 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.D.loadGuildIds([e.id
   Q(j({
     type: "DELETED_ENTITY_IDS"
   }, e))
-}), q(["CHANNEL_SYNC"], e => v.D.loadGuildIds([e.guild_id]), e => {
+}), q(["CHANNEL_SYNC"], e => A.D.loadGuildIds([e.guild_id]), e => {
   e.channels.forEach(e => {
     B.add(e)
   }), Q({
@@ -1620,7 +1620,7 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.D.loadGuildIds([e.id
     result: e.result,
     error: e.error
   })
-}), q(["PASSIVE_UPDATE_V2"], e => v.D.loadGuildIds([e.guild_id]), e => {
+}), q(["PASSIVE_UPDATE_V2"], e => A.D.loadGuildIds([e.guild_id]), e => {
   Q({
     type: "PASSIVE_UPDATE_V2",
     guildId: e.guild_id,

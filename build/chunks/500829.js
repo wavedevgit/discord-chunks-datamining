@@ -14,16 +14,16 @@ var Chunk221015 = require("./221015.js"),
   p = Array;
 module.exports = function(e) {
   var t, n, _, h, m, g, E = a(e),
-    b = l(this),
-    y = arguments.length,
-    O = y > 1 ? arguments[1] : true,
-    A = true !== O;
-  A && (O = r(O, y > 2 ? arguments[2] : true));
-  var v = f(E),
-    S = 0;
-  if (v && !(this === p && o(v)))
-    for (n = b ? new this : [], m = (h = d(E, v)).next; !(_ = i(m, h)).done; S++) g = A ? s(h, O, [_.value, S], true) : _.value, u(n, S, g);
+    y = l(this),
+    b = arguments.length,
+    O = b > 1 ? arguments[1] : true,
+    v = true !== O;
+  v && (O = r(O, b > 2 ? arguments[2] : true));
+  var A = f(E),
+    I = 0;
+  if (A && !(this === p && o(A)))
+    for (n = y ? new this : [], m = (h = d(E, A)).next; !(_ = i(m, h)).done; I++) g = v ? s(h, O, [_.value, I], true) : _.value, u(n, I, g);
   else
-    for (t = c(E), n = b ? new this(t) : p(t); t > S; S++) g = A ? O(E[S], S) : E[S], u(n, S, g);
-  return n.length = S, n
+    for (t = c(E), n = y ? new this(t) : p(t); t > I; I++) g = v ? O(E[I], I) : E[I], u(n, I, g);
+  return n.length = I, n
 }

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   CH: () => E,
-  av: () => y,
-  cy: () => b,
+  av: () => b,
+  cy: () => y,
   jA: () => O
 });
 var Chunk686956 = require("./686956.js"),
@@ -23,24 +23,24 @@ var Chunk686956 = require("./686956.js"),
   Chunk766219 = require("./766219.js");
 
 function g(e, t) {
-  return !!d.A.can(h.Gk, e) && (!p.j6(e.id) || t === e.id || (p.W0(e, () => y(e, true)), false))
+  return !!d.A.can(h.Gk, e) && (!p.j6(e.id) || t === e.id || (p.W0(e, () => b(e, true)), false))
 }
 
 function E(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   return new Promise(async i => {
     let a = c.A.getChannel(t);
-    if (null != a) return b(a, n), i(a);
+    if (null != a) return y(a, n), i(a);
     await (0, o.A)([e]), await r.A.joinGuild(e, {
       lurker: true
     }), u.A.addConditionalChangeListener(() => {
       let e = c.A.getChannel(t);
-      return null == e || (b(e), m.A.initialize(), i(e), false)
+      return null == e || (y(e), m.A.initialize(), i(e), false)
     })
   })
 }
 
-function b(e) {
+function y(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = f.A.getVoiceChannelId();
   if (!t && !g(e, n) || (_.A.initialize(), i.default.selectVoiceChannel(e.id), (n = f.A.getVoiceChannelId()) !== e.id)) returnfalse;
@@ -50,12 +50,12 @@ function b(e) {
   }), true
 }
 
-function y(e) {
+function b(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     i = f.A.getVoiceChannelId();
-  !r && i !== e.id && (0, s.H)(e) && p.E9(e, () => y(e, t, n, true)) || b(e, t) && O(e, i)
+  !r && i !== e.id && (0, s.H)(e) && p.E9(e, () => b(e, t, n, true)) || y(e, t) && O(e, i)
 }
 
 function O(e, t) {

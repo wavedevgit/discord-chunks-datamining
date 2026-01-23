@@ -13,14 +13,14 @@ function o(e) {
   let {
     application: t,
     showMutualGuilds: n = true
-  } = e, o = (0, r.bG)([s.A], () => s.A.getGuildIdsForApplication(null == t ? true : t.id), [t]), c = (0, r.bG)([a.A], () => a.A.isConnected());
+  } = e, o = (0, r.bG)([s.A], () => s.A.getGuildIdsForApplication(null == t ? true : t.id), [t]), d = (0, r.bG)([i.A], () => i.A.isConnected());
   return l.useMemo(() => {
     let e = [];
-    if (!c || !n || null == o || null == t) return e;
+    if (!d || !n || null == o || null == t) return e;
     for (let t of o) {
-      let n = i.A.getGuild(t);
+      let n = a.A.getGuild(t);
       null != n && e.push(n)
     }
     return e
-  }, [c, o, t, n])
+  }, [d, o, t, n])
 }

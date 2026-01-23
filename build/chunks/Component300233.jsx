@@ -42,10 +42,10 @@ function f(e) {
       includeSoftDeleted: f,
       countryCode: p
     }))
-  }, [h, t, f, p, _]), b = u(m, g);
+  }, [h, t, f, p, _]), y = u(m, g);
   return (0, r.jsx)(c.Provider, {
     value: {
-      listingsLoaded: b,
+      listingsLoaded: y,
       fetchGroupListingsForGuild: E
     },
     children: n

@@ -92,15 +92,15 @@ module.exports = function(e) {
         var g = r = t + m * u / 2,
           E = this._tension * (this._toValue - n) - this._friction * r;
         n = e + h * u / 2, r = t + m * u / 2;
-        var b = (f + 2 * (_ + m) + E) / 6;
-        e += (d + 2 * (p + h) + g) / 6 * u, t += b * u
+        var y = (f + 2 * (_ + m) + E) / 6;
+        e += (d + 2 * (p + h) + g) / 6 * u, t += y * u
       }
       if (this._lastTime = a, this._lastPosition = e, this._lastVelocity = t, this._onUpdate(e), this.__active) {
-        var y = false;
-        this._overshootClamping && 0 !== this._tension && (y = this._startPosition < this._toValue ? e > this._toValue : e < this._toValue);
+        var b = false;
+        this._overshootClamping && 0 !== this._tension && (b = this._startPosition < this._toValue ? e > this._toValue : e < this._toValue);
         var O = Math.abs(t) <= this._restSpeedThreshold,
-          A = true;
-        if (0 !== this._tension && (A = Math.abs(this._toValue - e) <= this._restDisplacementThreshold), y || O && A) {
+          v = true;
+        if (0 !== this._tension && (v = Math.abs(this._toValue - e) <= this._restDisplacementThreshold), b || O && v) {
           0 !== this._tension && this._onUpdate(this._toValue), this.__debouncedOnEnd({
             finished: true
           });

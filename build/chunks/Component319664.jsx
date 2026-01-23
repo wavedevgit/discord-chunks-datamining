@@ -18,14 +18,14 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk587106 = require("./587106.js");
 
-function j(e) {
+function b(e) {
   let {
     pills: t
   } = e;
   return (0, n.jsx)("div", {
-    className: C.nM,
+    className: j.nM,
     children: t.map(e => (0, n.jsx)("div", {
-      className: C.Io,
+      className: j.Io,
       children: (0, n.jsx)(s.Text, {
         variant: "text-sm/normal",
         children: e
@@ -40,32 +40,32 @@ function O(e) {
     showCTA: r,
     responsive: i = true
   } = e, O = [
-    [b.intl.string(b.t["73h51J"]), b.intl.string(b.t["gbjs/6"])],
-    [b.intl.string(b.t.mCoH0V), b.intl.string(b.t["l/BuSI"])],
-    [b.intl.string(b.t.psQktv), b.intl.string(b.t.nMhIZQ)],
-    [b.intl.string(b.t["0ItLmF"]), b.intl.string(b.t.yQHqsC)]
+    [C.intl.string(C.t["73h51J"]), C.intl.string(C.t["gbjs/6"])],
+    [C.intl.string(C.t.mCoH0V), C.intl.string(C.t["l/BuSI"])],
+    [C.intl.string(C.t.psQktv), C.intl.string(C.t.nMhIZQ)],
+    [C.intl.string(C.t["0ItLmF"]), C.intl.string(C.t.yQHqsC)]
   ];
   return (0, n.jsx)("div", {
     className: o()({
-      [C.no]: i
+      [j.no]: i
     }),
     children: (0, n.jsxs)("div", {
-      className: C.kL,
+      className: j.kL,
       children: [(0, n.jsxs)("div", {
-        className: C.Qs,
+        className: j.Qs,
         children: [(0, n.jsx)("div", {
-          className: C.V_,
-          children: O.map((e, t) => (0, n.jsx)(j, {
+          className: j.V_,
+          children: O.map((e, t) => (0, n.jsx)(b, {
             pills: e
           }, "pill-row-".concat(t)))
         }), (0, n.jsxs)("div", {
-          className: C.mv,
+          className: j.mv,
           children: [(0, n.jsx)(s.Text, {
             variant: "text-lg/medium",
             color: "text-strong",
-            children: b.intl.string(b.t["67arYL"])
+            children: C.intl.string(C.t["67arYL"])
           }), r && (0, n.jsx)(l.$nd, {
-            text: b.intl.string(b.t.oyzLpD),
+            text: C.intl.string(C.t.oyzLpD),
             icon: s.EdP,
             iconPosition: "end",
             size: "md",
@@ -104,15 +104,15 @@ function O(e) {
           })]
         })]
       }), (0, n.jsxs)("div", {
-        className: C.SN,
+        className: j.SN,
         children: [(0, n.jsx)("img", {
           src: (0, a.n)("server_products/storefront/preview-mural.png"),
           alt: "",
-          className: C.$G
+          className: j.$G
         }), (0, n.jsx)("img", {
           src: (0, a.n)("server_products/storefront/preview-mural-reduced.png"),
           alt: "",
-          className: C.rp
+          className: j.rp
         })]
       })]
     })

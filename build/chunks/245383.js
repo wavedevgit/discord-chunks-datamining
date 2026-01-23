@@ -20,22 +20,22 @@ function f(e) {
     subscriptionPlanId: n,
     buttonTextOverride: f,
     defaultTextOverride: _
-  } = e, h = (0, r.bG)([a.default], () => a.default.getCurrentUser()), m = (0, r.bG)([s.A], () => s.A.getPremiumTypeSubscription()), g = (0, r.bG)([l.A], () => l.A.getPremiumTypeOverride()), E = null != _ ? _ : d.intl.string(d.t["2pG5Ga"]), b = null != m ? (0, o.EL)(m) : null, y = true !== g ? g : null != b ? (0, o.m6)(b.planId) : null == h ? true : h.premiumType, O = t === c.pe.TIER_2 && null != y && [c.PremiumTypes.TIER_0, c.PremiumTypes.TIER_1].includes(y), A = null != n && null != b && (null == b ? true : b.planId) !== n;
-  (O || A) && (E = d.intl.string(d.t.IJI7yk));
-  let v = null != m && (0, o.Nc)(m);
-  if (!(null != m && m.status !== u.Dmq.ACCOUNT_HOLD && !(0, i.m1)(m.planId) && !O && !A && true === g || v)) return {
+  } = e, h = (0, r.bG)([a.default], () => a.default.getCurrentUser()), m = (0, r.bG)([s.A], () => s.A.getPremiumTypeSubscription()), g = (0, r.bG)([l.A], () => l.A.getPremiumTypeOverride()), E = null != _ ? _ : d.intl.string(d.t["2pG5Ga"]), y = null != m ? (0, o.EL)(m) : null, b = true !== g ? g : null != y ? (0, o.m6)(y.planId) : null == h ? true : h.premiumType, O = t === c.pe.TIER_2 && null != b && [c.PremiumTypes.TIER_0, c.PremiumTypes.TIER_1].includes(b), v = null != n && null != y && (null == y ? true : y.planId) !== n;
+  (O || v) && (E = d.intl.string(d.t.IJI7yk));
+  let A = null != m && (0, o.Nc)(m);
+  if (!(null != m && m.status !== u.Dmq.ACCOUNT_HOLD && !(0, i.m1)(m.planId) && !O && !v && true === g || A)) return {
     buttonText: null != f ? f : E
   };
   {
-    var S, I;
+    var I, S;
     let e = p({
       ctaSubscriptionSkuId: t,
-      currentPremiumType: y,
-      isSwitchingDisabled: v,
+      currentPremiumType: b,
+      isSwitchingDisabled: A,
       subscription: m
     });
     return {
-      buttonText: null != (S = null != (I = e.disabledButtonText) ? I : f) ? S : E,
+      buttonText: null != (I = null != (S = e.disabledButtonText) ? S : f) ? I : E,
       buttonTooltipText: e.disabledButtonTooltipText,
       disabled: true
     }

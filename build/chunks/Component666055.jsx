@@ -1,7 +1,7 @@
 /** Chunk was on 22477 **/
 /** chunk id: 666055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk661191 = require("./661191.js"),
   Chunk652215 = require("./652215.js"),
   Chunk788868 = require("./788868.js");
-let x = [{
+let g = [{
   id: "1week",
   label: "1 Week",
   value: 0
@@ -54,9 +54,9 @@ let x = [{
   value: 72
 }];
 
-function b() {
+function f() {
   var e, t;
-  let [n, b] = l.useState(false), g = (0, i.bG)([u.default], () => u.default.getCurrentUser()), v = (0, d.Lh)(), j = (0, i.bG)([m.A], () => m.A.getPremiumTypeSubscription()), y = null != v && null != (e = null == (t = f.VD[v]) ? true : t.tenureReqNumMonths) ? e : 0, _ = l.useCallback(async e => {
+  let [n, f] = l.useState(false), b = (0, r.bG)([u.default], () => u.default.getCurrentUser()), v = (0, d.Lh)(), j = (0, r.bG)([m.A], () => m.A.getPremiumTypeSubscription()), _ = null != v && null != (e = null == (t = x.VD[v]) ? true : t.tenureReqNumMonths) ? e : 0, y = l.useCallback(async e => {
     let t = new Date;
     e > 0 ? t.setMonth(t.getMonth() - e) : t.setDate(t.getDate() - 7), t.setDate(t.getDate() - 2);
     let n = {
@@ -64,19 +64,19 @@ function b() {
       endedAt: true,
       premium_streak_started_at: p.default.fromTimestamp(t.getTime())
     };
-    b(true), await r.Bo.patch({
+    f(true), await i.Bo.patch({
       url: "/debug/subscriptions/".concat(j.id),
       body: n,
       rejectWithError: false
-    }), await (0, c.eO)(g.id), await (0, o.hP)(), b(false)
-  }, [j, g]);
-  if (null != g && null != j) return (0, a.jsx)(s.l6P, {
+    }), await (0, c.eO)(b.id), await (0, o.hP)(), f(false)
+  }, [j, b]);
+  if (null != b && null != j) return (0, a.jsx)(s.l6P, {
     label: "Tenure",
     hideLabel: true,
     selectionMode: "single",
     disabled: n,
-    value: y,
-    options: x,
-    onSelectionChange: _
+    value: _,
+    options: g,
+    onSelectionChange: y
   })
 }

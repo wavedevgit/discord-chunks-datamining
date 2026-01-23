@@ -40,11 +40,11 @@ function _(e) {
     location: "PresenceActivityStatusWithCombinedTooltip"
   }), {
     text: E,
-    tooltip: b
-  } = (0, c.A)(t, m || g), y = p(t), O = null != y && !o;
+    tooltip: y
+  } = (0, c.A)(t, m || g), b = p(t), O = null != b && !o;
   return (0, r.jsx)(d.A, {
     icon: O ? (0, r.jsx)(u.A, {
-      icon: y,
+      icon: b,
       className: a
     }) : true,
     text: null != E ? E : "",
@@ -52,7 +52,7 @@ function _(e) {
     textClassName: i,
     hideTooltip: _,
     canTruncate: h,
-    "aria-label": null != b ? b : "",
+    "aria-label": null != y ? y : "",
     hideText: f
   })
 }

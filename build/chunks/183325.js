@@ -16,22 +16,22 @@ function d(e) {
   let {
     streamId: t,
     userId: n,
-    videoSpinnerContext: o,
+    videoSpinnerContext: s,
     streamKey: d,
     loading: f,
     paused: p = false
-  } = e, b = l.useRef(new i.Ep), g = o === a.u.SELF_STREAM || o === a.u.REMOTE_STREAM ? r.x.STREAM : r.x.DEFAULT;
-  return l.useEffect(() => {
-    if (!f || p || !s.X.isIncomingVideoEnabled()) return;
-    let e = b.current;
+  } = e, g = r.useRef(new i.Ep), m = s === a.u.SELF_STREAM || s === a.u.REMOTE_STREAM ? l.x.STREAM : l.x.DEFAULT;
+  return r.useEffect(() => {
+    if (!f || p || !o.X.isIncomingVideoEnabled()) return;
+    let e = g.current;
     return e.start(u, () => {
-      (0, c.Z)(t, n, g, d)
+      (0, c.Z)(t, n, m, d)
     }), () => {
       e.stop()
     }
-  }, [p, t, f, g, d, n]), {
-    onReady: l.useCallback(() => {
-      b.current.stop(), (0, c.W)(g, n)
-    }, [n, g])
+  }, [p, t, f, m, d, n]), {
+    onReady: r.useCallback(() => {
+      g.current.stop(), (0, c.W)(m, n)
+    }, [n, m])
   }
 }

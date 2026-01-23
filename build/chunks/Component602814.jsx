@@ -2,7 +2,7 @@
 /** chunk id: 602814, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,30 +24,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk123564 = require("./123564.js"),
   Chunk291071 = require("./291071.js");
-let v = 2048,
-  S = 84;
+let A = 2048,
+  I = 84;
 
-function I(e) {
+function S(e) {
   var t;
   let {
     context: n,
     application: l,
     sectionName: c
-  } = e, v = "channel" === n.type ? n.channel : true, I = (0, a.bG)([f.A], () => f.A.entrypoint()), C = null != (t = (0, d.h)(l.id === b.Ik.BUILT_IN ? null : l.id)) ? t : l, N = (0, _.Ag)(C) ? T : E.A, R = i.useRef(null), [w, P] = i.useState(false), {
+  } = e, A = "channel" === n.type ? n.channel : true, S = (0, a.bG)([f.A], () => f.A.entrypoint()), C = null != (t = (0, d.h)(l.id === y.Ik.BUILT_IN ? null : l.id)) ? t : l, N = (0, _.Ag)(C) ? T : E.A, R = i.useRef(null), [w, P] = i.useState(false), {
     iconURL: D,
     name: x
   } = i.useMemo(() => (0, _.X2)(C, {
-    fakeAppIconURL: A,
-    size: S
-  }), [C]), L = (0, u.A4)(true, true), j = (0, u.ON)(null == v ? true : v.guild_id, true), M = i.useMemo(() => (0, u.Sx)(n, C.id), [L, j, n, C.id]), k = !M.isGuildInstalled && !M.isUserInstalled;
+    fakeAppIconURL: v,
+    size: I
+  }), [C]), L = (0, u.A4)(true, true), j = (0, u.ON)(null == A ? true : A.guild_id, true), M = i.useMemo(() => (0, u.Sx)(n, C.id), [L, j, n, C.id]), k = !M.isGuildInstalled && !M.isUserInstalled;
   return i.useEffect(() => {
-    k && u.Ay.queryInstallOnDemandApp(C.id, null == v ? true : v.id)
-  }, [C.id, null == v ? true : v.id, k]), (0, r.jsxs)(o.d_W, {
+    k && u.Ay.queryInstallOnDemandApp(C.id, null == A ? true : A.id)
+  }, [C.id, null == A ? true : A.id, k]), (0, r.jsxs)(o.d_W, {
     className: O.k,
     fade: true,
     ref: R,
     role: "region",
-    "aria-label": y.intl.formatToPlainString(y.t["4OP4Uk"], {
+    "aria-label": b.intl.formatToPlainString(b.t["4OP4Uk"], {
       applicationName: x
     }),
     children: [(0, r.jsx)(g.A, {
@@ -67,7 +67,7 @@ function I(e) {
       application: C,
       sectionName: c,
       hasCommands: w
-    }), I === p.s4.TEXT ? (0, r.jsx)(m.A, {
+    }), S === p.s4.TEXT ? (0, r.jsx)(m.A, {
       context: n,
       application: C,
       sectionName: c,
@@ -85,7 +85,7 @@ function T(e) {
     hasCommands: a
   } = e, s = (0, c.A)({
     applicationId: n.id,
-    size: v,
+    size: A,
     names: ["embedded_cover"],
     format: "webp"
   }), o = (0, _.Cx)(n), u = null != o && null != o.activity_preview_video_asset_id ? (0, l.A)(n.id, o.activity_preview_video_asset_id) : null;

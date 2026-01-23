@@ -78,11 +78,11 @@ let p = e => {
     secondaryColorClass: _ = "",
     color: h = i.A.colors.INTERACTIVE_ICON_DEFAULT,
     colorClass: m = ""
-  } = e, g = d(e, ["size", "width", "height", "secondaryColor", "secondaryColorClass", "color", "colorClass"]), E = (0, s.J)(o), b = null != (t = null == E ? true : E.width) ? t : c, y = null != (n = null == E ? true : E.height) ? n : f;
+  } = e, g = d(e, ["size", "width", "height", "secondaryColor", "secondaryColorClass", "color", "colorClass"]), E = (0, s.J)(o), y = null != (t = null == E ? true : E.width) ? t : c, b = null != (n = null == E ? true : E.height) ? n : f;
   return (0, r.jsxs)("svg", u(l({}, (0, a.A)(g)), {
     xmlns: "http://www.w3.org/2000/svg",
-    width: b,
-    height: y,
+    width: y,
+    height: b,
     fill: "none",
     viewBox: "0 0 24 24",
     children: [(0, r.jsx)("circle", {

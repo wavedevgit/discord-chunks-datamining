@@ -24,13 +24,13 @@ function f(e) {
     alignment: m,
     style: g,
     eventTargetRef: E,
-    artboard: b,
-    withReducedMotion: y = "halt",
+    artboard: y,
+    withReducedMotion: b = "halt",
     ref: O,
-    artboardProperties: A,
-    dataBinding: v,
-    onDataBindingChange: S,
-    touchScrollEnabled: I = true,
+    artboardProperties: v,
+    dataBinding: A,
+    onDataBindingChange: I,
+    touchScrollEnabled: S = true,
     dynamicDataBinding: T,
     listenOnDocumentBody: C,
     eventCapture: N,
@@ -44,13 +44,13 @@ function f(e) {
     buffer: f,
     autoplay: p,
     stateMachines: L,
-    artboard: b,
+    artboard: y,
     useOffscreenRenderer: true,
     layout: new s.Layout({
       fit: null != h ? u.i[h] : s.Fit.Cover,
       alignment: null != m ? u.y[m] : s.Alignment.Center
     }),
-    isTouchScrollEnabled: I,
+    isTouchScrollEnabled: S,
     listenOnDocumentBody: C,
     eventCapture: N,
     assetLoader: R,
@@ -88,13 +88,13 @@ function f(e) {
     }
   }), [k]), (0, d.J)({
     rive: k,
-    artboard: b,
-    artboardProperties: A,
-    dataBinding: v,
+    artboard: y,
+    artboardProperties: v,
+    dataBinding: A,
     dynamicDataBinding: T,
-    onDataBindingChange: S
+    onDataBindingChange: I
   }), i.useEffect(() => {
-    if (null != k && "short-loop" === y && P.reducedMotion.enabled) {
+    if (null != k && "short-loop" === b && P.reducedMotion.enabled) {
       let e = () => {
           k.isPlaying && (M.current = setTimeout(() => {
             k.pause()
@@ -107,7 +107,7 @@ function f(e) {
         k.off(s.EventType.Play, e), k.off(s.EventType.Pause, t), k.off(s.EventType.Stop, t)
       }
     }
-  }, [k, y, P.reducedMotion.enabled]), i.useLayoutEffect(() => {
+  }, [k, b, P.reducedMotion.enabled]), i.useLayoutEffect(() => {
     if (null != k && "layout" === h) {
       k.resizeDrawingSurfaceToCanvas();
       let e = setTimeout(() => {
@@ -119,20 +119,20 @@ function f(e) {
     null != k && null == L && (j(k.stateMachineNames), k.reset({
       stateMachines: k.stateMachineNames,
       autoplay: p,
-      artboard: b,
+      artboard: y,
       autoBind: true
     }), k.setupRiveListeners())
-  }, [k, p, L, b]);
+  }, [k, p, L, y]);
   let G = i.useRef(0);
   i.useEffect(() => {
     if (null == k) return;
     let e = t => {
-      null != t.data && "number" == typeof t.data && (G.current = t.data, t.data > 0 && ("halt" === y && P.reducedMotion.enabled && k.isPlaying && k.pause(), k.off(s.EventType.Advance, e)))
+      null != t.data && "number" == typeof t.data && (G.current = t.data, t.data > 0 && ("halt" === b && P.reducedMotion.enabled && k.isPlaying && k.pause(), k.off(s.EventType.Advance, e)))
     };
     return k.on(s.EventType.Advance, e), p && k.play(), () => {
       k.off(s.EventType.Advance, e)
     }
-  }, [k, P.reducedMotion.enabled, y, p]);
+  }, [k, P.reducedMotion.enabled, b, p]);
   let V = i.useRef(false);
   return i.useEffect(() => {
     if (null != k) return !x && V.current && k.isPlaying && G.current > 0 ? k.pause() : x && !k.isPlaying && V.current && k.play(), () => {

@@ -25,11 +25,11 @@ function E(e) {
     media: t,
     spoiler: n,
     description: a
-  } = e, E = (0, u.wz)(t), b = (0, o.Lt)(t.flags, c.e5.IS_ANIMATED), {
-    gifAutoPlay: y
-  } = (0, d.X)(), [O, A] = i.useState(n), [v, S] = i.useState(n);
-  n !== O && (A(n), S(n));
-  let I = e => {
+  } = e, E = (0, u.wz)(t), y = (0, o.Lt)(t.flags, c.e5.IS_ANIMATED), {
+    gifAutoPlay: b
+  } = (0, d.X)(), [O, v] = i.useState(n), [A, I] = i.useState(n);
+  n !== O && (v(n), I(n));
+  let S = e => {
     var n, i;
     return "IMAGE" !== E ? (0, r.jsx)(_.m, {
       className: m.Dg,
@@ -56,17 +56,17 @@ function E(e) {
       maxHeight: 2 * g,
       minWidth: g,
       minHeight: g,
-      autoPlay: y && !e,
+      autoPlay: b && !e,
       mediaLayoutType: h.dG.MOSAIC,
       reducedSizeAltTextButton: true,
-      srcIsAnimated: b
+      srcIsAnimated: y
     })
   };
   return n ? (0, r.jsx)(p.Ay, {
     type: p.Ay.Types.ATTACHMENT,
     reason: l.Oc.SPOILER,
-    obscured: v,
-    onToggleObscurity: () => S(e => !e),
-    children: e => I(e)
-  }) : I(false)
+    obscured: A,
+    onToggleObscurity: () => I(e => !e),
+    children: e => S(e)
+  }) : S(false)
 }

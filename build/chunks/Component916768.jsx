@@ -146,7 +146,7 @@ let ek = e => {
     return i ? (0, r.jsx)(f.DUT, {
       tag: "span",
       className: eD.wz,
-      onClick: () => i && open(ev.A.getArticleURL(eT.MVz.AV_ERROR_CODES)),
+      onClick: () => i && open(eA.A.getArticleURL(eT.MVz.AV_ERROR_CODES)),
       children: o
     }) : o
   },
@@ -164,7 +164,7 @@ let ek = e => {
       }), eP.intl.string(eP.t.o3zuYz), (0, r.jsx)(ek, {
         error: G.iy.NO_INPUT_DEVICES
       }), (0, r.jsx)(f.eCN, {
-        href: ev.A.getArticleURL(eT.MVz.NO_INPUT_DETECTED),
+        href: eA.A.getArticleURL(eT.MVz.NO_INPUT_DETECTED),
         noticeType: t,
         children: eP.intl.string(eP.t.RYKKox)
       })]
@@ -173,7 +173,7 @@ let ek = e => {
   eG = "ms-settings:sound-properties";
 
 function eV(e) {
-  return (0, eS.isWindows)() && c().satisfies(null === C.A || true === C.A ? true : C.A.os.release, eC.PH) ? "".concat(eG, "?endpointId=").concat(e) : "ms-settings:sound"
+  return (0, eI.isWindows)() && c().satisfies(null === C.A || true === C.A ? true : C.A.os.release, eC.PH) ? "".concat(eG, "?endpointId=").concat(e) : "ms-settings:sound"
 }
 let eF = e => {
     let {
@@ -231,7 +231,7 @@ let eF = e => {
       }), eP.intl.string(eP.t.nCO9bI), (0, r.jsx)(ek, {
         error: G.iy.NO_AUDIO_INPUT_DETECTED
       }), (0, r.jsx)(f.eCN, {
-        href: ev.A.getArticleURL(eT.MVz.NO_INPUT_DETECTED),
+        href: eA.A.getArticleURL(eT.MVz.NO_INPUT_DETECTED),
         noticeType: t,
         children: eP.intl.string(eP.t.RYKKox)
       })]
@@ -266,7 +266,7 @@ function eW(e, t) {
   let n = {
     notice_type: e
   };
-  null != t && (n.guild_id = t), eA.default.track(eT.HAw.APP_NOTICE_VIEWED, n)
+  null != t && (n.guild_id = t), ev.default.track(eT.HAw.APP_NOTICE_VIEWED, n)
 }
 
 function eK(e) {
@@ -297,18 +297,18 @@ let ez = Chunk64700.memo(function() {
       } = c, t = F.A.getUserExperimentDescriptor(e.id);
       null != t && (0, V.LQ)(e.id, t), (async () => {
         var e, t;
-        (null == (e = c.metadata) ? true : e.id) != null && await (0, v.oX)(null == (t = c.metadata) ? true : t.id)
+        (null == (e = c.metadata) ? true : e.id) != null && await (0, A.oX)(null == (t = c.metadata) ? true : t.id)
       })()
     }
   }, [c]);
   let G = (0, J.x5)(ew.oh.AUDIO_INPUT),
-    [ep, eA] = i.useState(""),
+    [ep, ev] = i.useState(""),
     [eC, ex] = i.useState(null),
     [ej, ek] = i.useState(null);
   if (i.useEffect(() => {
-      if ((0, eS.isWindows)() && R) {
+      if ((0, eI.isWindows)() && R) {
         let e = null == G ? true : G.guid;
-        null != e && "" !== e && (eA(e), eI.Ay.ensureModule("discord_voice").then(() => {
+        null != e && "" !== e && (ev(e), eS.Ay.ensureModule("discord_voice").then(() => {
           try {
             var t, n, r, i;
             let a = (0, d.lE)();
@@ -363,7 +363,7 @@ let ez = Chunk64700.memo(function() {
           onClick: () => eK(eQ),
           noticeType: c.type
         }), eP.intl.format(eP.t["08KQ1P"], {
-          helpCenterLink: ev.A.getArticleURL(eT.MVz.WIN32_DEPRECATE)
+          helpCenterLink: eA.A.getArticleURL(eT.MVz.WIN32_DEPRECATE)
         })]
       });
     case eT.kqX.WIN7_8_DEPRECATED_MESSAGE:
@@ -376,7 +376,7 @@ let ez = Chunk64700.memo(function() {
           onClick: () => eK(e$),
           noticeType: c.type
         }), eP.intl.format(eP.t["8Je+dX"], {
-          helpCenterLink: ev.A.getArticleURL(eT.MVz.WIN7_8_DEPRECATE)
+          helpCenterLink: eA.A.getArticleURL(eT.MVz.WIN7_8_DEPRECATE)
         })]
       });
     case eT.kqX.MACOS_19_DEPRECATED_MESSAGE:
@@ -389,7 +389,7 @@ let ez = Chunk64700.memo(function() {
           onClick: () => eK(eJ),
           noticeType: c.type
         }), eP.intl.format(eP.t.q8VPLo, {
-          helpCenterLink: ev.A.getArticleURL(eT.MVz.MACOS_19_DEPRECATE)
+          helpCenterLink: eA.A.getArticleURL(eT.MVz.MACOS_19_DEPRECATE)
         })]
       });
     case eT.kqX.GENERIC:
@@ -427,7 +427,7 @@ let ez = Chunk64700.memo(function() {
         }), eP.intl.string(eP.t.bOQ3jV), (0, r.jsx)(f.Z_L, {
           onClick: () => {
             let e = em.A.getRemoteDisconnectVoiceChannelId();
-            null != e && null != e_.A.getChannel(e) && b.default.selectVoiceChannel(e)
+            null != e && null != e_.A.getChannel(e) && y.default.selectVoiceChannel(e)
           },
           noticeType: c.type,
           children: eP.intl.string(eP.t.vD60Pv)
@@ -444,7 +444,7 @@ let ez = Chunk64700.memo(function() {
         }), eP.intl.string(eP.t.jY2lUA), (0, r.jsx)(f.Z_L, {
           onClick: () => {
             let e = em.A.getLastSessionVoiceChannelId();
-            null != e && null != e_.A.getChannel(e) && b.default.selectVoiceChannel(e)
+            null != e && null != e_.A.getChannel(e) && y.default.selectVoiceChannel(e)
           },
           noticeType: c.type,
           children: eP.intl.string(eP.t.vD60Pv)
@@ -469,7 +469,7 @@ let ez = Chunk64700.memo(function() {
           children: eP.intl.string(eP.t.NiTd0e)
         }), (0, r.jsx)(f.MzZ, {
           className: eD.N0,
-          href: ev.A.getArticleURL(eT.MVz.SPOTIFY_AUTO_PAUSED),
+          href: eA.A.getArticleURL(eT.MVz.SPOTIFY_AUTO_PAUSED),
           target: "_blank",
           children: eP.intl.string(eP.t.CiqAIU)
         })]
@@ -506,7 +506,7 @@ let ez = Chunk64700.memo(function() {
       return (0, r.jsxs)(f.$Td, {
         color: f.Hv$.DEFAULT,
         children: [(0, r.jsx)(f.PMB, {
-          onClick: () => y.A.ackScheduledMaintenance(),
+          onClick: () => b.A.ackScheduledMaintenance(),
           noticeType: c.type
         }), eP.intl.format(eP.t["yb96S+"], c.metadata), (0, r.jsx)(f.eCN, {
           href: "".concat(eT.qF7.STATUS, "/incidents/").concat(c.metadata.id),
@@ -517,7 +517,7 @@ let ez = Chunk64700.memo(function() {
     case eT.kqX.NO_INPUT_DETECTED:
       if ((0, $.F)({
           location: "AppNotice.trueTriggerPoint"
-        }), (0, eS.isWindows)() && R) {
+        }), (0, eI.isWindows)() && R) {
         if (true === eC) return (0, r.jsx)(eF, {
           deviceGuid: ep,
           noticeType: c.type
@@ -567,7 +567,7 @@ let ez = Chunk64700.memo(function() {
           onClick: () => eK(),
           noticeType: eT.kqX.STREAMER_MODE
         }), eP.intl.string(eP.t.iEgBXp), (0, r.jsx)(f.Z_L, {
-          onClick: () => A.A.setEnabled(false),
+          onClick: () => v.A.setEnabled(false),
           noticeType: eT.kqX.STREAMER_MODE,
           children: eP.intl.string(eP.t.R9GHya)
         })]
@@ -576,7 +576,7 @@ let ez = Chunk64700.memo(function() {
       if (null == c.metadata) return null;
       let {
         skuId: e3, applicationId: e6
-      } = c.metadata, e4 = eb.A.get(e3), e5 = P.A.getApplication(e6);
+      } = c.metadata, e4 = ey.A.get(e3), e5 = P.A.getApplication(e6);
       if (null == e4 || null == e5) return null;
       let e7 = {
         page: eT.liQ.IN_APP
@@ -595,7 +595,7 @@ let ez = Chunk64700.memo(function() {
           skuName: e4.name
         }), (0, r.jsx)(f.Z_L, {
           noticeType: eT.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK,
-          onClick: () => (0, I.j)({
+          onClick: () => (0, S.j)({
             applicationId: e5.id,
             skuId: e4.id,
             openPremiumPaymentModal: () => {
@@ -618,7 +618,7 @@ let ez = Chunk64700.memo(function() {
       let {
         skuId: e,
         applicationId: t
-      } = c.metadata, n = eb.A.get(e), i = P.A.getApplication(t);
+      } = c.metadata, n = ey.A.get(e), i = P.A.getApplication(t);
       if (null == n || null == i) return null;
       return (0, r.jsxs)(f.$Td, {
         color: f.Hv$.PREMIUM_TIER_1,
@@ -662,12 +662,12 @@ let ez = Chunk64700.memo(function() {
         children: [(0, r.jsx)(f.PMB, {
           noticeType: eT.kqX.SURVEY,
           onClick: () => {
-            (0, v.pX)(t, true)
+            (0, A.pX)(t, true)
           }
         }), n, (0, r.jsx)(f.Z_L, {
           noticeType: eT.kqX.SURVEY,
           onClick: () => {
-            s ? (0, er.K)(o) : window.open(a, "_blank"), (0, v.pX)(t, false)
+            s ? (0, er.K)(o) : window.open(a, "_blank"), (0, A.pX)(t, false)
           },
           children: i
         })]
@@ -677,7 +677,7 @@ let ez = Chunk64700.memo(function() {
       return (0, r.jsxs)(f.$Td, {
         color: f.Hv$.DANGER,
         children: [eP.intl.string(eP.t["ugxmk/"]), (0, r.jsx)(f.eCN, {
-          href: ev.A.getArticleURL(eT.MVz.CORRUPT_INSTALLATION),
+          href: eA.A.getArticleURL(eT.MVz.CORRUPT_INSTALLATION),
           target: "_blank",
           noticeType: c.type,
           children: eP.intl.string(eP.t["6ik4Xk"])
@@ -752,7 +752,7 @@ let ez = Chunk64700.memo(function() {
       });
     case eT.kqX.APPLICATION_TEST_MODE:
       if (null == c.metadata) return null;
-      if (null != ey.A.testModeEmbeddedApplicationId) return (0, r.jsx)(f.$Td, {
+      if (null != eb.A.testModeEmbeddedApplicationId) return (0, r.jsx)(f.$Td, {
         color: f.Hv$.WARNING,
         children: (0, r.jsxs)(x.A, {
           justify: x.A.Justify.CENTER,
@@ -762,7 +762,7 @@ let ez = Chunk64700.memo(function() {
               applicationName: c.metadata.applicationName
             })
           }), (0, r.jsx)(f.PMB, {
-            onClick: S.cL,
+            onClick: I.cL,
             noticeType: eT.kqX.APPLICATION_TEST_MODE
           })]
         })
@@ -792,7 +792,7 @@ let ez = Chunk64700.memo(function() {
             applicationId: c.metadata.applicationId,
             children: eP.intl.string(eP.t.Q5ZgpK)
           }), (0, r.jsx)(f.PMB, {
-            onClick: S.cL,
+            onClick: I.cL,
             noticeType: eT.kqX.APPLICATION_TEST_MODE
           })]
         })
@@ -947,7 +947,7 @@ let ez = Chunk64700.memo(function() {
           noticeType: c.type,
           children: eP.intl.string(eP.t.kvHdFN)
         }), (0, r.jsx)(f.MzZ, {
-          href: ev.A.getArticleURL(eT.MVz.QUARANTINE),
+          href: eA.A.getArticleURL(eT.MVz.QUARANTINE),
           target: "_blank",
           className: eD.yw,
           children: eP.intl.string(eP.t.hvVgAZ)

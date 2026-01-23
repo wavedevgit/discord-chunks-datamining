@@ -1,12 +1,12 @@
 /** Chunk was on 96811 **/
 /** chunk id: 864057, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => S
+  A: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk299855 = require("./299855.js"),
   a = require.n(Chunk299855),
   Chunk158954 = require("./158954.js"),
@@ -23,27 +23,27 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk687637 = require("./687637.js");
 
-function y(e) {
+function b(e) {
   let {
     id: t,
     text: r,
-    icon: l,
-    selected: i,
+    icon: i,
+    selected: s,
     onClick: a
   } = e;
-  return (0, n.jsx)(o.DUT, {
+  return (0, n.jsx)(c.DUT, {
     role: "radio",
-    "aria-checked": i,
+    "aria-checked": s,
     onClick: () => a(t),
     tabIndex: 0,
-    className: s()(v.tp, v.ey, {
-      [v.wH]: i
+    className: l()(v.tp, v.ey, {
+      [v.wH]: s
     }),
     children: (0, n.jsxs)("div", {
       className: v.DD,
-      children: [(0, n.jsx)(l, {
+      children: [(0, n.jsx)(i, {
         size: "lg"
-      }), (0, n.jsx)(c.EYj, {
+      }), (0, n.jsx)(o.EYj, {
         variant: "text-sm/medium",
         color: "none",
         children: r
@@ -52,54 +52,54 @@ function y(e) {
   })
 }
 
-function S(e) {
+function y(e) {
   let {
     onSourceSelect: t
   } = e;
   (0, h.jd)(), (0, p.A)(t, g.FX);
   let [{
     nativeSourceType: r
-  }, l] = (0, x.tS)(), s = (0, u.isMac)() && a().satisfies(null === d.A || true === d.A ? true : d.A.os.release, m.WZ), i = f.A.getUseGamescopeCapture(), S = i ? "gamescope" : "screen";
+  }, i] = (0, x.tS)(), l = (0, f.isMac)() && a().satisfies(null === d.A || true === d.A ? true : d.A.os.release, j.WZ), s = u.A.getUseGamescopeCapture(), y = s ? "gamescope" : "screen";
   return (0, n.jsxs)("div", {
     className: v.zr,
-    children: [(0, n.jsx)(c.DZT, {
+    children: [(0, n.jsx)(o.DZT, {
       className: v.wx,
       variant: "heading-lg/semibold",
       color: "text-default",
-      children: b.intl.string(b.t.XyYoFc)
-    }), s ? (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)(c.EYj, {
+      children: _.intl.string(_.t.XyYoFc)
+    }), l ? (0, n.jsxs)(n.Fragment, {
+      children: [(0, n.jsx)(o.EYj, {
         className: v.rf,
         variant: "text-sm/medium",
         color: "text-subtle",
-        children: b.intl.format(b.t.sbbPhW, {
-          buttonName: b.intl.string(b.t.FiBjwU)
+        children: _.intl.format(_.t.sbbPhW, {
+          buttonName: _.intl.string(_.t.FiBjwU)
         })
-      }), (0, n.jsx)(j.A, {})]
+      }), (0, n.jsx)(m.A, {})]
     }) : (0, n.jsxs)("div", {
       className: v.Ro,
-      children: [(0, n.jsx)(y, {
-        selected: r === S,
+      children: [(0, n.jsx)(b, {
+        selected: r === y,
         onClick: () => {
-          l({
+          i({
             type: "set_native_source_type",
-            sourceType: S
+            sourceType: y
           })
         },
         id: "screen",
-        text: b.intl.string(b.t.cVUFXY),
-        icon: o.kN9
-      }), !i && (0, n.jsx)(y, {
+        text: _.intl.string(_.t.cVUFXY),
+        icon: c.kN9
+      }), !s && (0, n.jsx)(b, {
         selected: "window" === r,
         onClick: () => {
-          l({
+          i({
             type: "set_native_source_type",
             sourceType: "window"
           })
         },
         id: "window",
-        text: b.intl.string(b.t.dG2A1E),
-        icon: o.WxK
+        text: _.intl.string(_.t.dG2A1E),
+        icon: c.WxK
       })]
     })]
   })

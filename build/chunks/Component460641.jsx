@@ -1,7 +1,7 @@
 /** Chunk was on 21968 **/
 /** chunk id: 460641, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk582754 = require("./582754.js"),
@@ -16,11 +16,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk734087 = require("./734087.js"),
   Chunk609621 = require("./609621.js");
 
-function m(e) {
+function b(e) {
   var t;
   let n, {
-      followedChannelWebhooks: m,
-      editedWebhook: g,
+      followedChannelWebhooks: b,
+      editedWebhook: f,
       selectableWebhookChannels: h,
       errors: x,
       canNavigate: j
@@ -33,26 +33,26 @@ function m(e) {
         helpdeskArticle: o.A.getArticleURL(d.MVz.CHANNEL_FOLLOWING)
       })
     }), (0, i.jsx)(l.cGx, {
-      className: b.zN
-    }), m.length > 0 ? (0, i.jsx)(c.A, {
-      webhooks: m,
-      editedWebhook: g,
+      className: p.zN
+    }), b.length > 0 ? (0, i.jsx)(c.A, {
+      webhooks: b,
+      editedWebhook: f,
       selectableWebhookChannels: h,
       errors: x,
       canNavigate: j
-    }) : (t = () => open(o.A.getArticleURL(d.MVz.CHANNEL_FOLLOWING)), n = (0, r.Mw)(O) ? f : p, (0, i.jsxs)(s.A, {
+    }) : (t = () => open(o.A.getArticleURL(d.MVz.CHANNEL_FOLLOWING)), n = (0, r.Mw)(O) ? m : g, (0, i.jsxs)(s.A, {
       direction: s.A.Direction.VERTICAL,
       align: s.A.Align.CENTER,
       children: [(0, i.jsx)("img", {
         alt: "",
         src: n,
-        className: b.QT
+        className: p.QT
       }), (0, i.jsx)(l.Heading, {
         variant: "heading-md/semibold",
         children: u.intl.string(u.t.gzuVH0)
       }), (0, i.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: b.nM,
+        className: p.nM,
         children: (0, i.jsx)(l.Button, {
           variant: "primary",
           text: u.intl.string(u.t["ZwSt+T"]),

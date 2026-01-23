@@ -2,7 +2,7 @@
 /** chunk id: 709913, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -56,7 +56,7 @@ function E(e, t) {
   }), e
 }
 
-function b(e) {
+function y(e) {
   let {
     backupCodes: t,
     hasTOTPEnabled: n,
@@ -67,7 +67,7 @@ function b(e) {
     })), {
       stackingBehavior: "stack"
     })
-  }, []), b = i.useCallback(() => {
+  }, []), y = i.useCallback(() => {
     (0, a.qfG)(e => (0, r.jsx)(d.default, E(m({}, e), {
       handleSubmit: e => s.A.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
         g(e)
@@ -75,7 +75,7 @@ function b(e) {
       title: _.intl.string(_.t.PsQmzU),
       actionText: _.intl.string(_.t.ajkYcF)
     })))
-  }, [g]), y = i.useCallback(() => {
+  }, [g]), b = i.useCallback(() => {
     let e = t.map(e => {
         let {
           consumed: t,
@@ -88,7 +88,7 @@ function b(e) {
       });
     return "".concat(n, "\r\n\r\n").concat(e)
   }, [t, h.email]), O = i.useMemo(() => t.length > 0 ? (0, r.jsx)(l.A, {
-    fileContents: y,
+    fileContents: b,
     contentType: "text/plain",
     fileName: "discord_backup_codes.txt",
     children: (0, r.jsx)(a.Button, {
@@ -102,9 +102,9 @@ function b(e) {
       variant: "primary",
       size: "sm",
       text: _.intl.string(_.t.xZEzbu),
-      onClick: b
+      onClick: y
     })
-  }), [t.length, y, b]), A = i.useCallback(() => {
+  }), [t.length, b, y]), v = i.useCallback(() => {
     o.A.show({
       title: _.intl.string(_.t["D+aE7g"]),
       body: _.intl.string(_.t.EA4ZEk),
@@ -123,7 +123,7 @@ function b(e) {
           variant: "critical-secondary",
           size: "sm",
           text: _.intl.string(_.t["D+aE7g"]),
-          onClick: A
+          onClick: v
         })
       }), !n && (0, r.jsx)(u.x, {
         setting: p.H.ACCOUNT_ENABLE_2FA,

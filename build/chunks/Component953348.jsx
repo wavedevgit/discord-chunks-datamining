@@ -2,7 +2,7 @@
 /** chunk id: 953348, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => c
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -10,12 +10,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk872430 = require("./872430.js");
 
-function c(e) {
+function o(e) {
   let {
     showSecondaryColor: t,
     palette: n,
-    onPrimaryColorChange: c,
-    onSecondaryColorChange: o
+    onPrimaryColorChange: o,
+    onSecondaryColorChange: c
   } = e, d = i.useRef(null);
   return (0, l.tjt)(d), (0, r.jsxs)("div", {
     className: a.jC,
@@ -44,7 +44,7 @@ function c(e) {
           eagerUpdate: true,
           wrapperComponentType: "div",
           showEyeDropper: true,
-          onChange: c
+          onChange: o
         })]
       }), t && (0, r.jsxs)("div", {
         className: a.sg,
@@ -63,30 +63,30 @@ function c(e) {
           eagerUpdate: true,
           wrapperComponentType: "div",
           showEyeDropper: true,
-          onChange: o
+          onChange: c
         })]
       })]
     })]
   })
 }
 
-function o(e) {
+function c(e) {
   let {
     shouldShow: t,
     showSecondaryColor: n,
     onRequestClose: i,
     children: s,
     palette: a,
-    onPrimaryColorChange: o,
+    onPrimaryColorChange: c,
     onSecondaryColorChange: d,
     popoutTargetRef: u
   } = e;
   return (0, r.jsx)(l.YNO, {
     targetElementRef: u,
-    renderPopout: () => (0, r.jsx)(c, {
+    renderPopout: () => (0, r.jsx)(o, {
       showSecondaryColor: n,
       palette: a,
-      onPrimaryColorChange: o,
+      onPrimaryColorChange: c,
       onSecondaryColorChange: d
     }),
     position: "top",

@@ -1,12 +1,12 @@
 /** Chunk was on 22477 **/
 /** chunk id: 680108, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => y
+  A: () => _
 }), require("./896048.js"), require("./228524.js"), require("./747238.js"), require("./801460.js"), require("./508300.js"), require("./650828.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk835245 = require("./835245.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -23,67 +23,67 @@ let v = "Make sure you're only uploading text files!",
   j = e => {
     var t, n, l;
     let {
-      effect: i,
-      onClick: r
+      effect: r,
+      onClick: i
     } = e, {
       deleteConfig: s
-    } = (0, f.wu)();
+    } = (0, x.wu)();
     return (0, a.jsxs)(c.DUT, {
-      className: g.B0,
+      className: b.B0,
       onClick: () => {
-        r(i)
+        i(r)
       },
       children: [(0, a.jsx)("div", {
-        className: g.yV,
+        className: b.yV,
         style: {
-          backgroundImage: "url(".concat(null == (l = i.config) || null == (n = l.effects) || null == (t = n[0]) ? true : t.base64, ")")
+          backgroundImage: "url(".concat(null == (l = r.config) || null == (n = l.effects) || null == (t = n[0]) ? true : t.base64, ")")
         }
       }), (0, a.jsxs)("div", {
-        className: g.eL,
+        className: b.eL,
         children: [(0, a.jsx)(c.Text, {
           variant: "text-md/bold",
-          children: i.name
+          children: r.name
         }), (0, a.jsx)(c.Button, {
           variant: "critical-secondary",
           text: "Delete",
           onClick: e => {
-            e.preventDefault(), e.stopPropagation(), s(i.skuId)
+            e.preventDefault(), e.stopPropagation(), s(r.skuId)
           }
         })]
       })]
     })
   };
 
-function y() {
+function _() {
   let {
     profileEffects: e,
     upsertConfig: t,
     clearAll: n
-  } = (0, f.wu)(), [i, y] = l.useState(), _ = l.useRef(null), A = (0, o.yK)([h.A], () => h.A.getAllProfileEffects());
+  } = (0, x.wu)(), [r, _] = l.useState(), y = l.useRef(null), A = (0, o.yK)([h.A], () => h.A.getAllProfileEffects());
   (0, m.A)();
   let [C, S] = l.useState(""), O = l.useMemo(() => "" === C ? A : A.filter(e => {
     var t, n, a, l;
-    let i = C.toLowerCase(),
-      r = null != (t = null == (a = e.config.title) ? true : a.toLowerCase()) ? t : "",
+    let r = C.toLowerCase(),
+      i = null != (t = null == (a = e.config.title) ? true : a.toLowerCase()) ? t : "",
       s = null != (n = null == (l = e.config.description) ? true : l.toLowerCase()) ? n : "";
-    return r.includes(i) || s.includes(i)
+    return i.includes(r) || s.includes(r)
   }), [C, A]), E = l.useCallback((e, n) => {
     if (null == n || !e.type.startsWith("text/")) return (0, p.Ni)(v);
     let [a, l] = n.split(",");
     if (!a.includes("text/plain")) return (0, p.Ni)(v);
-    let i = JSON.parse(atob(l));
-    i.skuId = (0, s.A)(), t(i), (0, p.GF)("Profile Effect (maybe??) imported!")
-  }, [t]), N = l.useCallback(e => {
+    let r = JSON.parse(atob(l));
+    r.skuId = (0, s.A)(), t(r), (0, p.GF)("Profile Effect (maybe??) imported!")
+  }, [t]), T = l.useCallback(e => {
     var t;
     (null == (t = e.currentTarget) ? true : t.files) == null ? (0, p.Ni)("Error uploading file. Try again!") : (0, p.KE)(e.currentTarget.files, E, p.Ni)
   }, [E]);
   return (0, a.jsxs)("div", {
-    className: g.zr,
-    children: [null == i && (0, a.jsxs)(a.Fragment, {
+    className: b.zr,
+    children: [null == r && (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsxs)("div", {
-        className: g.nz,
+        className: b.nz,
         children: [(0, a.jsxs)("div", {
-          className: r()(g.uW, g.nM),
+          className: i()(b.uW, b.nM),
           children: [(0, a.jsx)(c.Heading, {
             variant: "heading-xl/bold",
             children: "Custom Profile Effects"
@@ -100,25 +100,25 @@ function y() {
             }
           })]
         }), (0, a.jsx)("div", {
-          className: g.Iv,
+          className: b.Iv,
           children: Object.values(e).map(e => (0, a.jsx)(j, {
             effect: e,
             onClick: e => {
-              y(e)
+              _(e)
             }
           }, e.skuId))
         })]
       }), (0, a.jsxs)("div", {
-        className: r()(g.nM, g._N, g.uW),
+        className: i()(b.nM, b._N, b.uW),
         children: [(0, a.jsxs)("div", {
-          className: g.au,
+          className: b.au,
           children: [(0, a.jsx)(c.Text, {
             variant: "text-md/normal",
             color: "always-white",
             children: "Import Shared Config"
           }), (0, a.jsx)(u.A, {
-            ref: _,
-            onChange: N,
+            ref: y,
+            onChange: T,
             multiple: false
           })]
         }), (0, a.jsx)(c.Button, {
@@ -135,7 +135,7 @@ function y() {
           }
         })]
       }), (0, a.jsx)("hr", {}), (0, a.jsxs)("div", {
-        className: g.uW,
+        className: b.uW,
         children: [(0, a.jsx)(c.Heading, {
           variant: "heading-xl/bold",
           children: "All Effects"
@@ -145,31 +145,31 @@ function y() {
             S(e)
           }
         }), (0, a.jsx)("div", {
-          className: g.xm,
+          className: b.xm,
           children: O.map(e => (0, a.jsx)(c.DUT, {
-            className: g.S5,
+            className: b.S5,
             style: {
               backgroundImage: "url(".concat(e.config.thumbnailPreviewSrc, ")")
             },
             onClick: () => {
               let t = {
-                [x.qH.THUMBNAIL]: null != e.config.thumbnailPreviewSrc && "" !== e.config.thumbnailPreviewSrc ? {
+                [g.qH.THUMBNAIL]: null != e.config.thumbnailPreviewSrc && "" !== e.config.thumbnailPreviewSrc ? {
                   src: e.config.thumbnailPreviewSrc,
                   name: "thumbnail.png",
                   base64: ""
                 } : null,
-                [x.qH.STATIC]: null != e.config.staticFrameSrc && "" !== e.config.staticFrameSrc ? {
+                [g.qH.STATIC]: null != e.config.staticFrameSrc && "" !== e.config.staticFrameSrc ? {
                   src: e.config.staticFrameSrc,
                   name: "static.png",
                   base64: ""
                 } : null,
-                [x.qH.REDUCED_MOTION]: null != e.config.reducedMotionSrc && "" !== e.config.reducedMotionSrc ? {
+                [g.qH.REDUCED_MOTION]: null != e.config.reducedMotionSrc && "" !== e.config.reducedMotionSrc ? {
                   src: e.config.reducedMotionSrc,
                   name: "reduced_motion.png",
                   base64: ""
                 } : null
               };
-              y({
+              _({
                 skuId: e.skuId,
                 name: e.config.title,
                 readonly: true,
@@ -180,7 +180,7 @@ function y() {
               })
             },
             children: (0, a.jsx)("div", {
-              className: g.Hd,
+              className: b.Hd,
               children: (0, a.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "always-white",
@@ -190,8 +190,8 @@ function y() {
           }, e.skuId))
         })]
       })]
-    }), null != i && (0, a.jsx)(b.A, {
-      effect: i
+    }), null != r && (0, a.jsx)(f.A, {
+      effect: r
     })]
   })
 }

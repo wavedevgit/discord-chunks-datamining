@@ -2,7 +2,7 @@
 /** chunk id: 528153, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 }), require("./896048.js");
 var Chunk110259 = require("./110259.js"),
   Chunk478437 = require("./478437.js"),
@@ -31,9 +31,9 @@ function O(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let A = 1e3,
-  v = new Chunk626584.A("PremiumGiftingIntentManager");
-class S extends Chunk439372.A {
+let v = 1e3,
+  A = new Chunk626584.A("PremiumGiftingIntentManager");
+class I extends Chunk439372.A {
   isChannelEligible(e) {
     switch (e.type) {
       case i.r.DM:
@@ -45,13 +45,13 @@ class S extends Chunk439372.A {
     }
   }
   maybeSendGiftingPromptSystemMessageDelayed(e, t, n, r) {
-    new a.J_(A, () => {
+    new a.J_(v, () => {
       this.maybeSendGiftingPromptSystemMessage(e, t, n, r)
     }).delay()
   }
   maybeSendGiftingPromptSystemMessage(e, t, n, r) {
     let i = m.A.getChannelId(),
-      a = b.Ay.isGiftIntentMessageInCooldown(n),
+      a = y.Ay.isGiftIntentMessageInCooldown(n),
       s = h.A.isReady(e);
     if (!a && e === i) {
       if (!s) return void h.A.whenReady(e, () => {
@@ -72,10 +72,10 @@ class S extends Chunk439372.A {
     }), n = _.A.getChannel(e);
     if (t && null != n && this.isChannelEligible(n)) {
       let e = new Set(n.recipients),
-        t = b.Ay.getFriendAnniversaries().filter(t => e.has(t));
+        t = y.Ay.getFriendAnniversaries().filter(t => e.has(t));
       if (t.length > 0) {
         let e = t[0];
-        this.maybeSendGiftingPromptSystemMessageDelayed(n.id, y.np.FRIEND_ANNIVERSARY, e, y.l1.SEND_MESSAGE)
+        this.maybeSendGiftingPromptSystemMessageDelayed(n.id, b.np.FRIEND_ANNIVERSARY, e, b.l1.SEND_MESSAGE)
       }
     }
   }
@@ -86,7 +86,7 @@ class S extends Chunk439372.A {
       location: "PremiumGiftingIntentManager handleTopAffinityUnreadNotification"
     }), t = p.oz.getSetting();
     if (!e || !t) return;
-    let n = b.Ay.getNextRecipientUserIDForNotification();
+    let n = y.Ay.getNextRecipientUserIDForNotification();
     if (null != n) try {
       let e = await s.A.getOrEnsurePrivateChannel(n),
         t = _.A.getChannel(e);
@@ -94,29 +94,29 @@ class S extends Chunk439372.A {
       if (h.A.isReady(t.id) || await d.A.fetchMessages({
           channelId: t.id,
           isPreload: true
-        }), h.A.getMessages(t.id).cached) return void v.info("Skipping gift intent notification - fetched messages marked as stale", {
+        }), h.A.getMessages(t.id).cached) return void A.info("Skipping gift intent notification - fetched messages marked as stale", {
         channelId: t.id,
         recipientUserID: n
       });
-      let i = b.Ay.getNextRecipientUserIDForNotification();
+      let i = y.Ay.getNextRecipientUserIDForNotification();
       if (i !== n) return;
       o.A.sendGiftingPromptSystemMessage(t.id, {
-        giftIntentType: y.np.FRIEND_ANNIVERSARY,
+        giftIntentType: b.np.FRIEND_ANNIVERSARY,
         recipientUserId: i,
-        giftIntentSecondaryAction: y.l1.SEND_MESSAGE
+        giftIntentSecondaryAction: b.l1.SEND_MESSAGE
       });
       let a = f.A.getUserAffinity(i);
       (0, c.x)({
         name: r.ImpressionNames.GIFT_INTENT_UNREAD_NOTIFICATION,
         type: r.ImpressionTypes.VIEW,
         properties: {
-          gift_intent_type: y.np.FRIEND_ANNIVERSARY,
+          gift_intent_type: b.np.FRIEND_ANNIVERSARY,
           dm_affinity: null == a ? true : a.dmProbability,
           channel_id: t.id
         }
       }), (0, E.xs)(i), (0, E.BT)()
     } catch (e) {
-      v.error("Failed to fetch DM channel data for gifting notification", {
+      A.error("Failed to fetch DM channel data for gifting notification", {
         recipientUserID: n,
         error: e
       })
@@ -140,4 +140,4 @@ class S extends Chunk439372.A {
     })
   }
 }
-let I = new S
+let S = new I

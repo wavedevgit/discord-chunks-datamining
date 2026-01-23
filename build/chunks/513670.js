@@ -2,5 +2,5 @@
 /** chunk id: 513670, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  B: "_432017862c339221"
+  B: "checkoutModalFooter_e3bd55"
 }

@@ -2,8 +2,8 @@
 /** chunk id: 130946, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v,
-  c: () => A
+  A: () => A,
+  c: () => v
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -25,15 +25,15 @@ var Chunk503698 = require("./503698.js"),
   Chunk967521 = require("./967521.js"),
   Chunk767032 = require("./767032.js"),
   Chunk990521 = require("./990521.js"),
-  A = function(e) {
+  v = function(e) {
     return e.SUBSCRIBER_HOME = "SUBSCRIBER_HOME", e.NITRO_SETTINGS = "SETTINGS", e.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", e
   }({});
-let v = function(e) {
+let A = function(e) {
   let {
     variant: t
-  } = e, n = (0, f.cg)(), i = (0, l.Ay)(), A = (0, o.Mwr)(i) ? s.XD.BRAND_INVERTED : s.XD.BRAND;
+  } = e, n = (0, f.cg)(), i = (0, l.Ay)(), v = (0, o.Mwr)(i) ? s.XD.BRAND_INVERTED : s.XD.BRAND;
   if (!n) return null;
-  let v = () => (0, r.jsxs)("div", {
+  let A = () => (0, r.jsxs)("div", {
       className: g.jo,
       children: [(0, r.jsx)("div", {
         className: g.yk,
@@ -64,7 +64,7 @@ let v = function(e) {
         hasActivePromotion: true
       })]
     }),
-    S = () => (0, r.jsx)(u.Y, {
+    I = () => (0, r.jsx)(u.Y, {
       newLocations: [c.A.PREMIUM_SETTINGS],
       children: (0, r.jsxs)("div", {
         className: g.O3,
@@ -72,7 +72,7 @@ let v = function(e) {
           className: g.V9,
           children: (0, r.jsx)("img", {
             alt: "",
-            src: y.A,
+            src: b.A,
             className: g.$V
           })
         }), (0, r.jsxs)("div", {
@@ -97,7 +97,7 @@ let v = function(e) {
             subscriptionTier: _.pe.TIER_2,
             showIcon: false,
             className: g.xF,
-            color: A
+            color: v
           })]
         }), (0, r.jsx)("div", {
           className: g.m0,
@@ -109,7 +109,7 @@ let v = function(e) {
         })]
       })
     }),
-    I = () => (0, r.jsx)(u.Y, {
+    S = () => (0, r.jsx)(u.Y, {
       newLocations: [c.A.PREMIUM_MARKETING_PAGE_BANNER],
       children: (0, r.jsxs)("div", {
         className: g._G,
@@ -147,17 +147,17 @@ let v = function(e) {
             subscriptionTier: _.pe.TIER_2,
             showIcon: false,
             className: g.xF,
-            color: A
+            color: v
           })]
         }), (0, r.jsx)("div", {
           className: g.ZS,
           children: (0, r.jsx)("img", {
             alt: "",
-            src: b.A,
+            src: y.A,
             className: g.F$
           })
         })]
       })
     });
-  return "APPLICATION_NITRO_HOME" === t ? (0, r.jsx)(I, {}) : "SETTINGS" === t ? (0, r.jsx)(S, {}) : (0, r.jsx)(v, {})
+  return "APPLICATION_NITRO_HOME" === t ? (0, r.jsx)(S, {}) : "SETTINGS" === t ? (0, r.jsx)(I, {}) : (0, r.jsx)(A, {})
 }

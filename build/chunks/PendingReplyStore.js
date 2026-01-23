@@ -95,14 +95,14 @@ function E(e) {
   }))
 }
 
-function b(e) {
+function y(e) {
   let {
     channelId: t
   } = e;
   delete p[t], delete _[t]
 }
 
-function y(e) {
+function b(e) {
   var t, n, r;
   let {
     id: i,
@@ -130,13 +130,6 @@ function O(e) {
   }, delete _[e]
 }
 
-function A(e) {
-  let {
-    channelId: t
-  } = e;
-  O(t)
-}
-
 function v(e) {
   let {
     channelId: t
@@ -144,13 +137,20 @@ function v(e) {
   O(t)
 }
 
-function S() {
+function A(e) {
+  let {
+    channelId: t
+  } = e;
+  O(t)
+}
+
+function I() {
   l.default.keys(_).forEach(e => {
     null == s.A.getChannel(e) && delete _[e]
   })
 }
 
-function I() {
+function S() {
   p = {}, _ = {}, h = {}
 }
 class T extends(r = Chunk311907.Ay.PersistedStore) {
@@ -179,10 +179,10 @@ let C = new T(Chunk73153.h, {
   CREATE_PENDING_REPLY: m,
   CREATE_SHALLOW_PENDING_REPLY: g,
   SET_PENDING_REPLY_SHOULD_MENTION: E,
-  DELETE_PENDING_REPLY: b,
-  CONNECTION_OPEN: S,
-  LOGOUT: I,
-  MESSAGE_DELETE: y,
-  CHANNEL_SELECT: A,
-  LOAD_MESSAGES_SUCCESS: v
+  DELETE_PENDING_REPLY: y,
+  CONNECTION_OPEN: I,
+  LOGOUT: S,
+  MESSAGE_DELETE: b,
+  CHANNEL_SELECT: v,
+  LOAD_MESSAGES_SUCCESS: A
 })

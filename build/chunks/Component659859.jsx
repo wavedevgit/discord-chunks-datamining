@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   HN: () => O,
-  _W: () => v,
-  _x: () => A
+  _W: () => A,
+  _x: () => v
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -30,10 +30,10 @@ function O(e) {
     message: t,
     rendered: n
   } = e;
-  return null == (0, g.Ys)(t.content) ? b.intl.format(b.t.k6Jc9Y, {
+  return null == (0, g.Ys)(t.content) ? y.intl.format(y.t.k6Jc9Y, {
     username: null,
     usernameHook: () => null
-  }) : b.intl.format(b.t.IihHB0, {
+  }) : y.intl.format(y.t.IihHB0, {
     emojiPreview: n,
     emojiName: null,
     username: null,
@@ -41,7 +41,7 @@ function O(e) {
   })
 }
 
-function A(e) {
+function v(e) {
   let {
     message: t,
     className: n
@@ -64,7 +64,7 @@ function A(e) {
       messageId: t.id
     }),
     children: (0, r.jsx)(c.DUT, {
-      className: s()(n, y.qx),
+      className: s()(n, b.qx),
       onClick: p,
       onMouseEnter: () => {
         o(true)
@@ -75,8 +75,8 @@ function A(e) {
       children: (0, r.jsx)(c.Text, {
         variant: "text-sm/semibold",
         color: "text-subtle",
-        className: y.Ic,
-        children: b.intl.format(b.t.z5Rnl8, {
+        className: b.Ic,
+        children: y.intl.format(y.t.z5Rnl8, {
           renderedEmoji: (0, r.jsx)(u.A, {
             emojiName: f.name,
             size: "default",
@@ -85,7 +85,7 @@ function A(e) {
             isInteracting: a,
             channelId: d,
             messageId: t.id,
-            className: y.ti
+            className: b.ti
           })
         })
       })
@@ -93,58 +93,58 @@ function A(e) {
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     message: t,
     compact: n,
     usernameHook: a
-  } = e, s = t.content, [l, u] = i.useState(false), _ = (0, d.Ay)(t), O = a(_), A = (0, g.Ys)(s), v = i.useCallback(() => {
-    null != A && m._.dispatchToLastSubscribed(E.jej.INSERT_TEXT, {
-      plainText: ":".concat(A.name, ":"),
+  } = e, s = t.content, [l, u] = i.useState(false), _ = (0, d.Ay)(t), O = a(_), v = (0, g.Ys)(s), A = i.useCallback(() => {
+    null != v && m._.dispatchToLastSubscribed(E.jej.INSERT_TEXT, {
+      plainText: ":".concat(v.name, ":"),
       rawText: s,
       addSpace: true
     })
-  }, [A, s]), S = i.useMemo(() => null == A ? null : {
+  }, [v, s]), I = i.useMemo(() => null == v ? null : {
     src: h.Ay.getEmojiURL({
-      id: A.id,
-      animated: A.animated,
+      id: v.id,
+      animated: v.animated,
       size: 48
     }),
-    emojiId: A.id,
-    name: ":".concat(A.name, ":"),
-    animated: A.animated
-  }, [A]);
+    emojiId: v.id,
+    name: ":".concat(v.name, ":"),
+    animated: v.animated
+  }, [v]);
   return (0, r.jsx)(p.A, {
     iconNode: (0, r.jsx)(o.ReactionIcon, {
       size: "refresh_sm",
       color: "currentColor"
     }),
-    iconContainerClassName: y.zc,
+    iconContainerClassName: b.zc,
     timestamp: t.timestamp,
     compact: n,
-    contentClassName: y.Qs,
+    contentClassName: b.Qs,
     children: (0, r.jsx)("span", {
-      children: null == A || null == S ? b.intl.format(b.t.k6Jc9Y, {
+      children: null == v || null == I ? y.intl.format(y.t.k6Jc9Y, {
         username: _.nick,
         usernameHook: O
-      }) : b.intl.format(b.t.IihHB0, {
+      }) : y.intl.format(y.t.IihHB0, {
         username: _.nick,
         usernameHook: O,
         emojiPreview: (0, r.jsx)(f.X, {
-          node: S,
+          node: I,
           isInteracting: l
         }),
         emojiName: (0, r.jsx)(c.DUT, {
-          className: y.hX,
+          className: b.hX,
           tag: "span",
-          onClick: v,
+          onClick: A,
           onMouseEnter: () => u(true),
           onMouseLeave: () => u(false),
           children: (0, r.jsx)(c.Text, {
             tag: "span",
             variant: "text-md/medium",
             color: "text-strong",
-            children: ":".concat(A.name, ":")
+            children: ":".concat(v.name, ":")
           })
         })
       })

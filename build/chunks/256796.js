@@ -75,12 +75,12 @@ let E = {
       onFetchStart: _,
       onFetchSuccess: h,
       searchMode: E
-    } = e, b = (0, l._o)(r), y = (0, l.Zf)(b);
-    m(y);
-    let O = p({}, y, (0, l.nm)(E)),
-      A = (0, l.mt)(t);
-    null != A && (0, l.L5)(O, A);
-    let v = u.A.create({
+    } = e, y = (0, l._o)(r), b = (0, l.Zf)(y);
+    m(b);
+    let O = p({}, b, (0, l.nm)(E)),
+      v = (0, l.mt)(t);
+    null != v && (0, l.L5)(O, v);
+    let A = u.A.create({
       id: (0, l.bS)(t),
       searchContext: t,
       searchQuery: O,
@@ -94,17 +94,17 @@ let E = {
       searchQueryString: r,
       searchQuery: O
     });
-    let S = n.map(e => d(e));
+    let I = n.map(e => d(e));
     return a.h.dispatch({
       type: "SEARCH_MESSAGES_START",
-      ids: S
-    }), v.fetch(e => {
+      ids: I
+    }), A.fetch(e => {
       let {
         body: n
       } = e, r = Object.entries(n.tabs);
       a.h.dispatch({
         type: "SEARCH_MESSAGES_SUCCESS",
-        guildId: g(A),
+        guildId: g(v),
         data: r.map(e => {
           var t, r, a;
           let [o, l] = e, c = d(o), u = l.cursor;
@@ -128,12 +128,12 @@ let E = {
     }, () => {
       a.h.dispatch({
         type: "SEARCH_MESSAGES_INDEXING",
-        ids: S
+        ids: I
       })
     }, e => {
       a.h.dispatch({
         type: "SEARCH_MESSAGES_FAILURE",
-        ids: S,
+        ids: I,
         error: e
       })
     }), true

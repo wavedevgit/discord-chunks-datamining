@@ -1,7 +1,7 @@
 /** Chunk was on 8939 **/
-/** chunk id: 181094, original params: a,t,e (module,exports,require) **/
+/** chunk id: 181094, original params: t,a,e (module,exports,require) **/
 require.d(exports, {
-  default: () => m
+  default: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk189213 = require("./189213.jsx"),
@@ -16,44 +16,44 @@ var Chunk627968 = require("./627968.js"),
   Chunk620944 = require("./620944.js"),
   Chunk206314 = require("./206314.js");
 
-function m(a) {
-  var t, e;
+function b(t) {
+  var a, e;
   let {
-    channel: m,
-    guild: b,
-    onClose: v,
-    transitionState: f
-  } = a, N = null != (t = (0, c.gU)(m, b)) ? t : true, j = (0, d.Ay)(m, false), k = (0, s.h)(null == (e = m.linkedLobby) ? true : e.application_id);
-  return (0, l.jsxs)(i.Modal, {
+    channel: b,
+    guild: m,
+    onClose: N,
+    transitionState: k
+  } = t, v = null != (a = (0, c.gU)(b, m)) ? a : true, f = (0, s.Ay)(b, false), j = (0, o.h)(null == (e = b.linkedLobby) ? true : e.application_id);
+  return (0, i.jsxs)(l.Modal, {
     title: h.intl.string(h.t.X8jMDh),
-    subtitle: null != j ? {
-      text: j,
-      leadingIcon: N
+    subtitle: null != f ? {
+      text: f,
+      leadingIcon: v
     } : true,
     actions: true,
-    transitionState: f,
-    onClose: v,
-    children: [(0, l.jsx)(n.Text, {
+    transitionState: k,
+    onClose: N,
+    children: [(0, i.jsx)(n.Text, {
       selectable: true,
       variant: "text-md/normal",
       className: x.PT,
-      children: o.A.parseTopic(m.topic, true, {
-        channelId: m.id
+      children: d.A.parseTopic(b.topic, true, {
+        channelId: b.id
       })
-    }), null != k ? (0, l.jsxs)("div", {
+    }), null != j ? (0, i.jsxs)("div", {
       className: u.a6,
-      children: [(0, l.jsx)(n.fNY, {
+      children: [(0, i.jsx)(n.fNY, {
         className: u.NB
-      }), (0, l.jsx)(n.Text, {
+      }), (0, i.jsx)(n.Text, {
         variant: "text-sm/normal",
         color: "text-default",
         children: h.intl.format(h.t.Ud5ryv, {
-          applicationName: k.name,
+          applicationName: j.name,
           helpdeskArticle: r.A.getArticleURL(p.MVz.LINKED_LOBBIES),
-          separatorHook: (a, t) => (0, l.jsx)("span", {
+          separatorHook: (t, a) => (0, i.jsx)("span", {
             className: u.fY,
-            children: a
-          }, t)
+            children: t
+          }, a)
         })
       })]
     }) : null]

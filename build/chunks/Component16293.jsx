@@ -33,57 +33,57 @@ function T(e) {
     guild: t,
     checkpointGuild: n,
     primaryColor: i
-  } = e, a = (0, y.vy)(), {
+  } = e, a = (0, b.vy)(), {
     unit: o,
     duration: l
   } = (0, h.oO)(n.numVoiceMinutes);
-  return (0, r.jsx)(y.vw, {
-    className: s()(I.bo, I.dl),
+  return (0, r.jsx)(b.vw, {
+    className: s()(S.bo, S.dl),
     spring: a,
     children: (0, r.jsxs)(m.A, {
-      innerClassName: I.lm,
+      innerClassName: S.lm,
       useTopRightClipPath: true,
       children: [(0, r.jsxs)("div", {
-        className: I.OA,
+        className: S.OA,
         children: [(0, r.jsx)(d.A, {
           guild: t,
           size: d.A.Sizes.LARGER,
-          className: I.$f
-        }), (0, r.jsx)(b.A, {
-          className: I.J5,
+          className: S.$f
+        }), (0, r.jsx)(y.A, {
+          className: S.J5,
           variant: "heading-xl/medium",
           children: t.name
         })]
       }), (0, r.jsx)("div", {
-        className: I.Tm,
+        className: S.Tm,
         style: {
           backgroundColor: i
         },
-        children: (0, r.jsx)(b.A, {
+        children: (0, r.jsx)(y.A, {
           variant: "text-lg/normal",
-          className: S.sH,
+          className: I.sH,
           children: "#1"
         })
       }), (0, r.jsxs)("div", {
-        className: I.dX,
+        className: S.dX,
         children: [(0, r.jsxs)("div", {
-          children: [(0, r.jsx)(b.A, {
+          children: [(0, r.jsx)(y.A, {
             variant: "eyebrow",
-            children: v.intl.string(A.default.wWKySP)
-          }), (0, r.jsx)(b.A, {
+            children: A.intl.string(v.default.wWKySP)
+          }), (0, r.jsx)(y.A, {
             variant: "heading-xxl/normal",
-            className: S.sH,
+            className: I.sH,
             children: n.numMessagesSent
           })]
         }), (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(b.A, {
+          children: [(0, r.jsx)(y.A, {
             variant: "eyebrow",
-            children: o === c.pJ.HOURS ? v.intl.format(A.default.Xu0QsX, {
+            children: o === c.pJ.HOURS ? A.intl.format(v.default.Xu0QsX, {
               numHours: l
-            }) : v.intl.string(A.default.RmVTph)
-          }), (0, r.jsx)(b.A, {
+            }) : A.intl.string(v.default.RmVTph)
+          }), (0, r.jsx)(y.A, {
             variant: "heading-xxl/normal",
-            className: S.sH,
+            className: I.sH,
             children: l
           })]
         })]
@@ -97,32 +97,32 @@ function C(e) {
     guild: t,
     rank: n,
     primaryColor: i
-  } = e, a = (0, y.vy)();
-  return (0, r.jsx)(y.vw, {
-    className: I.bo,
+  } = e, a = (0, b.vy)();
+  return (0, r.jsx)(b.vw, {
+    className: S.bo,
     spring: a,
     children: (0, r.jsxs)(m.A, {
-      innerClassName: I.oQ,
+      innerClassName: S.oQ,
       useTopRightClipPath: true,
       children: [(0, r.jsxs)("div", {
-        className: I.OA,
+        className: S.OA,
         children: [(0, r.jsx)(d.A, {
           guild: t,
           size: d.A.Sizes.LARGER,
-          className: I.$f
-        }), (0, r.jsx)(b.A, {
-          className: I.J5,
+          className: S.$f
+        }), (0, r.jsx)(y.A, {
+          className: S.J5,
           variant: "heading-xl/medium",
           children: t.name
         })]
       }), (0, r.jsx)("div", {
-        className: I.Tm,
+        className: S.Tm,
         style: {
           backgroundColor: i
         },
-        children: (0, r.jsxs)(b.A, {
+        children: (0, r.jsxs)(y.A, {
           variant: "text-lg/normal",
-          className: S.sH,
+          className: I.sH,
           children: ["#", n]
         })
       })]
@@ -161,29 +161,29 @@ function N() {
   return (0, r.jsx)(E.A, {
     verticalFlow: true,
     children: (0, r.jsxs)("div", {
-      className: I.kL,
+      className: S.kL,
       children: [(0, r.jsxs)("div", {
-        className: S.DD,
+        className: I.DD,
         children: [(0, r.jsx)(o.RR9, {
           size: "refresh_sm",
           color: t,
-          colorClass: S.d7
-        }), (0, r.jsx)(b.A, {
+          colorClass: I.d7
+        }), (0, r.jsx)(y.A, {
           variant: "eyebrow",
-          className: S.UP,
-          children: v.intl.string(A.default.mAroeJ)
+          className: I.UP,
+          children: A.intl.string(v.default.mAroeJ)
         })]
       }), (0, r.jsxs)("div", {
-        className: I.wx,
-        children: [(0, r.jsx)(b.A, {
+        className: S.wx,
+        children: [(0, r.jsx)(y.A, {
           variant: "display-lg",
-          className: I.Vy,
-          children: v.intl.string(v.t["7hB4kg"])
+          className: S.Vy,
+          children: A.intl.string(A.t["7hB4kg"])
         }), (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(b.A, {
+          children: [(0, r.jsx)(y.A, {
             variant: "heading-xxl/medium",
-            className: I.VA,
-            children: v.intl.string(A.default.Q0EMOP)
+            className: S.VA,
+            children: A.intl.string(v.default.Q0EMOP)
           }), (0, r.jsx)(g.e, {
             slide: O.P7.GUILDS
           })]
@@ -193,7 +193,7 @@ function N() {
         checkpointGuild: a[0],
         primaryColor: t
       }), (0, r.jsx)("div", {
-        className: I.Pl,
+        className: S.Pl,
         children: a.map((e, n) => {
           let {
             guild: i

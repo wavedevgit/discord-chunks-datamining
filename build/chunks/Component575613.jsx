@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 575613, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h,
+  A: () => g,
   J: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -27,7 +27,7 @@ let p = {
   Colors: Chunk543594.A.Colors,
   Looks: Chunk543594.A.Looks
 };
-class f extends Chunk64700.PureComponent {
+class h extends Chunk64700.PureComponent {
   render() {
     var e, t;
     let n = this.props,
@@ -55,8 +55,8 @@ class f extends Chunk64700.PureComponent {
           for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
         return l
       }(n, ["storeListings", "primaryStoreListing", "skuId", "onStoreListingSelect", "currentStoreListingId"]),
-      f = +(null != l);
-    return (f += i.length) < 2 ? null : (0, r.jsx)(o.A, (e = function(e) {
+      h = +(null != l);
+    return (h += i.length) < 2 ? null : (0, r.jsx)(o.A, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -110,7 +110,7 @@ class f extends Chunk64700.PureComponent {
     })
   }
 }
-let h = Chunk311907.Ay.connectStores([Chunk328968.A], e => {
+let g = Chunk311907.Ay.connectStores([Chunk328968.A], e => {
   let {
     skuId: t
   } = e;
@@ -118,4 +118,4 @@ let h = Chunk311907.Ay.connectStores([Chunk328968.A], e => {
     storeListings: c.A.getUnpublishedForSKU(t),
     primaryStoreListing: c.A.getForSKU(t)
   }
-})(f)
+})(h)

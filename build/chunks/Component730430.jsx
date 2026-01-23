@@ -2,7 +2,7 @@
 /** chunk id: 730430, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -75,26 +75,26 @@ function E(e, t) {
   return i
 }
 
-function b(e) {
+function y(e) {
   let {
     variant: t = "active",
     size: n = "sm",
     hangStatusChannel: p,
     onAction: h,
     userId: E
-  } = e, b = g(e, ["variant", "size", "hangStatusChannel", "onAction", "userId"]), y = (0, i.bG)([c.A], () => c.A.getChannelId() === p.id), O = () => {
+  } = e, y = g(e, ["variant", "size", "hangStatusChannel", "onAction", "userId"]), b = (0, i.bG)([c.A], () => c.A.getChannelId() === p.id), O = () => {
     null == h || h(), s.default.selectVoiceChannel(p.id), (0, l.iN)(p.id), u.default.track(d.HAw.HANG_STATUS_CTA_CLICKED, m(_({
       source: "UserProfilePopout"
     }, (0, o.A)(p.id)), {
       other_user_id: E,
-      cta_type: y ? "open" : "join"
+      cta_type: b ? "open" : "join"
     }))
   };
   return (0, r.jsx)(a.Button, _({
-    text: y ? f.intl.string(f.t.BXxdl7) : f.intl.string(f.t["9C444m"]),
+    text: b ? f.intl.string(f.t.BXxdl7) : f.intl.string(f.t["9C444m"]),
     onClick: O,
     variant: t,
     size: n,
     fullWidth: true
-  }, b))
+  }, y))
 }

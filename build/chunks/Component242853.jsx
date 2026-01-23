@@ -1,7 +1,7 @@
 /** Chunk was on 15682 **/
 /** chunk id: 242853, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => _
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,27 +18,27 @@ var Chunk503698 = require("./503698.js"),
   Chunk880203 = require("./880203.js"),
   Chunk317857 = require("./317857.js");
 
-function x(e) {
+function _(e) {
   let {
     selectedEffectId: t,
     setSelectedEffectId: l,
-    className: a
+    className: r
   } = e;
   return (0, n.jsxs)("div", {
-    className: a,
-    children: [(0, n.jsxs)(r.DZT, {
+    className: r,
+    children: [(0, n.jsxs)(a.DZT, {
       variant: "heading-md/semibold",
-      className: b.s,
-      children: [m.intl.string(f.default["1wilM1"]), (0, n.jsx)(i.tvc, {
+      className: f.s,
+      children: [p.intl.string(m.default["1wilM1"]), (0, n.jsx)(o.tvc, {
         size: "xs",
-        color: i.LU0.colors.TEXT_DEFAULT
+        color: o.LU0.colors.TEXT_DEFAULT
       })]
-    }), (0, n.jsx)(r.BJc, {
+    }), (0, n.jsx)(a.BJc, {
       direction: "horizontal",
       align: "center",
       wrap: true,
       gap: 8,
-      children: u.re.map(e => (0, n.jsx)(g, {
+      children: u.re.map(e => (0, n.jsx)(x, {
         effectId: e,
         selected: e === t,
         onClick: () => l(e)
@@ -47,22 +47,22 @@ function x(e) {
   })
 }
 
-function g(e) {
+function x(e) {
   let {
     effectId: t,
     selected: l,
-    onClick: a
-  } = e, r = (0, o._)(t);
-  return (0, n.jsx)(i.DUT, {
-    className: s()(p.Tw, {
-      [p.wH]: l
+    onClick: r
+  } = e, a = (0, i._)(t);
+  return (0, n.jsx)(o.DUT, {
+    className: s()(g.Tw, {
+      [g.wH]: l
     }),
-    onClick: a,
+    onClick: r,
     children: (0, n.jsx)(d.A, {
-      userName: r.name,
+      userName: a.name,
       effectDisplayType: c.G.STATIC,
-      displayNameStyles: r.previewStyles,
-      textClassName: p.tr,
+      displayNameStyles: a.previewStyles,
+      textClassName: g.tr,
       inProfile: true
     })
   }, t)

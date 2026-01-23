@@ -2,7 +2,7 @@
 /** chunk id: 685944, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -28,7 +28,7 @@ let O = e => {
     style: n
   } = e;
   return (0, l.bG)([d.A], () => d.A.useReducedMotion) ? (0, r.jsx)("img", {
-    src: b.A,
+    src: y.A,
     className: t,
     style: n,
     alt: ""
@@ -39,10 +39,10 @@ let O = e => {
     autoPlay: true,
     loop: true,
     children: [(0, r.jsx)("source", {
-      src: y.A,
+      src: b.A,
       type: "video/webm"
     }), (0, r.jsx)("img", {
-      src: b.A,
+      src: y.A,
       className: t,
       style: n,
       alt: ""
@@ -50,29 +50,29 @@ let O = e => {
   })
 };
 
-function A(e) {
+function v(e) {
   let {
     step: t,
     onClose: n,
     isOrbCheckout: a
   } = e, l = (0, u.A)(m.T), {
     footerNode: d
-  } = (0, _.P5)(), f = (0, p.nr)() && !o.Fr, b = null != d ? d.offsetWidth : true, y = i.useMemo(() => f && null != b && (t === h.pn.ADD_PAYMENT_STEPS || a) ? b : true, [f, b, t, a]);
+  } = (0, _.P5)(), f = (0, p.nr)() && !o.Fr, y = null != d ? d.offsetWidth : true, b = i.useMemo(() => f && null != y && (t === h.pn.ADD_PAYMENT_STEPS || a) ? y : true, [f, y, t, a]);
   if (t === h.pn.BENEFITS || t === h.pn.CONFIRM) return null;
-  let A = null != y ? {
-      width: y + 2
+  let v = null != b ? {
+      width: b + 2
     } : true,
-    v = null != y ? {
-      width: y + 3
+    A = null != b ? {
+      width: b + 3
     } : true;
   return (0, r.jsxs)("div", {
     className: g.N1,
-    style: A,
+    style: v,
     children: [!l && (0, r.jsx)("div", {
       className: g.oZ,
       "aria-hidden": "true",
       "data-accessibility": "desaturate",
-      style: v,
+      style: A,
       children: a ? (0, r.jsx)(O, {
         className: s()(g.F0, g.WL)
       }) : (0, r.jsx)("img", {

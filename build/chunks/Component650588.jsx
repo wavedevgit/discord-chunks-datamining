@@ -25,10 +25,10 @@ function h(e) {
     location: "GiftSoundboard"
   }), E = s()(p.Qq, g && p.Ow);
 
-  function b(e) {
+  function y(e) {
     h(false), null == t || t(e)
   }
-  let y = e => (0, r.jsxs)("div", {
+  let b = e => (0, r.jsxs)("div", {
     className: p.Ry,
     children: [(0, r.jsxs)("div", {
       className: p.__invalid_customGiftHeaderText,
@@ -61,11 +61,11 @@ function h(e) {
           guildId: null,
           channel: null,
           onClose: t,
-          onSelect: b,
+          onSelect: y,
           analyticsSource: "gift soundboard",
           soundButtonOverlay: u.If.ADD,
           listPadding: _,
-          renderHeader: y,
+          renderHeader: b,
           defaultSoundsOnly: true
         })
       })

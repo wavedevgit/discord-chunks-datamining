@@ -1,7 +1,7 @@
 /** Chunk was on 94503 **/
 /** chunk id: 39255, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f,
+  A: () => h,
   _: () => A
 }), require("./321073.js"), require("./896048.js");
 var l, r, Chunk627968 = require("./627968.js"),
@@ -59,31 +59,31 @@ class T extends(l = Chunk64700.Component) {
       onSelectionChange: i,
       onSelect: s,
       onRemoveTag: o,
-      preventEscapePropagation: c
+      preventEscapePropagation: u
     } = this.props;
     if (0 !== l.length) {
       switch (e.key) {
-        case u.dh.BACKSPACE:
+        case c.dh.BACKSPACE:
           (null == r || 0 === r.length) && null != a && a.length > 0 && (e.preventDefault(), e.stopPropagation(), null == o || o(a.length - 1));
           break;
-        case u.dh.ARROW_DOWN:
+        case c.dh.ARROW_DOWN:
           e.preventDefault(), e.stopPropagation(), false === t ? (t = 0, n = 0) : ((t += 1) >= l.length && (t = l.length - 1), n >= l[t] && (n = l[t] - 1));
           break;
-        case u.dh.ARROW_UP:
+        case c.dh.ARROW_UP:
           e.preventDefault(), e.stopPropagation(), (t -= 1) < 0 ? (t = 0, n = 0) : n >= l[t] && (n = l[t] - 1);
           break;
-        case u.dh.ARROW_LEFT:
+        case c.dh.ARROW_LEFT:
           e.preventDefault(), e.stopPropagation(), false === t && (t = 0), (n -= 1) < 0 && ((t -= 1) >= 0 ? n = l[t] - 1 : t < 0 && (t = 0, n = 0));
           break;
-        case u.dh.ARROW_RIGHT:
+        case c.dh.ARROW_RIGHT:
           e.preventDefault(), e.stopPropagation(), false === t && (t = 0), (n += 1) >= l[t] && (n = 0, (t += 1) >= l.length && (t = l.length - 1, n = l[t] - 1));
           break;
-        case u.dh.ENTER:
+        case c.dh.ENTER:
           if (e.preventDefault(), e.stopPropagation(), false === t && (t = 0), false === n && (n = 0), t >= l.length || n >= l[t]) return;
           null != s && s(t, n, e);
           return;
-        case u.dh.ESCAPE:
-          e.preventDefault(), c && e.stopPropagation(), null != s && s(null, null, e);
+        case c.dh.ESCAPE:
+          e.preventDefault(), u && e.stopPropagation(), null != s && s(null, null, e);
           return;
         default:
           return
@@ -102,26 +102,26 @@ class T extends(l = Chunk64700.Component) {
       tags: s,
       preventEscapePropagation: o
     } = this.props, {
-      current: c
+      current: u
     } = this.ref;
-    if (null != c) switch (e.key) {
-      case u.dh.BACKSPACE:
+    if (null != u) switch (e.key) {
+      case c.dh.BACKSPACE:
         if ((null == i || 0 === i.length) && null != s && s.length > 0) {
           var E, d;
           e.preventDefault(), e.stopPropagation(), null == (E = (d = this.props).onRemoveTag) || E.call(d, s.length - 1)
         }
         break;
-      case u.dh.ARROW_DOWN:
+      case c.dh.ARROW_DOWN:
         e.preventDefault(), e.stopPropagation(), t.length > n && ++l >= t[n] && (++n >= t.length && (n = 0), l = 0), null == a || a(n, l);
         break;
-      case u.dh.ARROW_UP:
+      case c.dh.ARROW_UP:
         e.preventDefault(), e.stopPropagation(), --l < 0 && (--n < 0 && (n = t.length - 1), l = t[n] - 1), null == a || a(n, l);
         break;
-      case u.dh.ENTER:
+      case c.dh.ENTER:
         e.preventDefault(), e.stopPropagation(), t.length > n && t[n] > l && (null == r || r(n, l, e));
         break;
-      case u.dh.ESCAPE:
-        e.preventDefault(), o && e.stopPropagation(), null == r || r(null, null, e), c.blur()
+      case c.dh.ESCAPE:
+        e.preventDefault(), o && e.stopPropagation(), null == r || r(null, null, e), u.blur()
     }
   }
   render() {
@@ -133,31 +133,31 @@ class T extends(l = Chunk64700.Component) {
       disabled: r,
       size: i,
       maxHeight: s,
-      tags: u,
+      tags: c,
       onActivate: g,
       className: A,
       inputProps: T,
-      focusAfterReady: f
-    } = this.props, h = false, I = [];
-    return null != u && u.length > 0 && ("string" == typeof u[0] ? u.forEach((e, t) => I.push((0, a.jsxs)(c.MzZ, {
+      focusAfterReady: h
+    } = this.props, I = false, O = [];
+    return null != c && c.length > 0 && ("string" == typeof c[0] ? c.forEach((e, t) => O.push((0, a.jsxs)(u.MzZ, {
       focusProps: {
         offset: 4
       },
       className: d.Tc,
       onClick: this.handleRemoveTag.bind(this, t),
-      children: [e, (0, a.jsx)(c.PGe, {
+      children: [e, (0, a.jsx)(u.PGe, {
         size: "md",
         color: "currentColor",
         className: d.VN,
         "aria-label": E.intl.string(E.t.N86XcP)
       })]
-    }, t))) : (h = true, u.forEach((e, t) => I.push((0, a.jsxs)(c.MzZ, {
+    }, t))) : (I = true, c.forEach((e, t) => O.push((0, a.jsxs)(u.MzZ, {
       className: o()(d.Tc, d.J2),
       onClick: this.handleRemoveTag.bind(this, t),
-      children: [("MEMBER" === e.type || "USER" === e.type) && null != e.avatar && (0, a.jsx)(c.euF, {
+      children: [("MEMBER" === e.type || "USER" === e.type) && null != e.avatar && (0, a.jsx)(u.euF, {
         src: e.avatar,
         "aria-hidden": true,
-        size: c._3J.SIZE_16
+        size: u._3J.SIZE_16
       }), "ROLE" === e.type && null != e.color && (0, a.jsx)("span", {
         className: d.Mk,
         style: {
@@ -166,28 +166,28 @@ class T extends(l = Chunk64700.Component) {
       }), (0, a.jsx)("span", {
         className: d.v6,
         children: e.label
-      }), (0, a.jsx)(c.PGe, {
+      }), (0, a.jsx)(u.PGe, {
         size: "md",
         color: "currentColor",
         className: d.VN,
         "aria-label": E.intl.string(E.t.N86XcP)
       })]
-    }, t))))), (0, a.jsx)(c.vN3, {
+    }, t))))), (0, a.jsx)(u.vN3, {
       focusTarget: this.ref,
       ringTarget: this.containerRef,
-      children: (0, a.jsx)(c.NPJ, {
+      children: (0, a.jsx)(u.NPJ, {
         theme: l,
         children: l => (0, a.jsx)("div", {
           ref: this.containerRef,
           className: o()(A, d.kL, i, l, {
             [d.r9]: r
           }),
-          children: (0, a.jsxs)(c.IpV, {
+          children: (0, a.jsxs)(u.IpV, {
             className: d.vW,
             style: {
               maxHeight: s
             },
-            children: [I, (0, a.jsx)("input", function(e) {
+            children: [O, (0, a.jsx)("input", function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   l = Object.keys(n);
@@ -200,7 +200,7 @@ class T extends(l = Chunk64700.Component) {
               return e
             }({
               className: o()(d.hF, {
-                [d.He]: h
+                [d.He]: I
               }),
               type: "text",
               ref: this.ref,
@@ -212,7 +212,7 @@ class T extends(l = Chunk64700.Component) {
               onFocus: this.handleFocus,
               disabled: r,
               "aria-disabled": r,
-              autoFocus: !f && e,
+              autoFocus: !h && e,
               onMouseDown: g
             }, this.defaultInputProps, T))]
           })
@@ -237,10 +237,10 @@ class T extends(l = Chunk64700.Component) {
         current: a
       } = this.ref;
       if (null == a || null != t) {
-        e.key !== u.dh.TAB && (null == t || t(e));
+        e.key !== c.dh.TAB && (null == t || t(e));
         return
       }
-      if (e.key === u.dh.ESCAPE && null != a.value && "" !== a.value && a.value.length > 0) {
+      if (e.key === c.dh.ESCAPE && null != a.value && "" !== a.value && a.value.length > 0) {
         a.value = "", null != l && l("");
         return
       }
@@ -281,4 +281,4 @@ _(T, "Sizes", g), _(T, "defaultProps", {
   preventEscapePropagation: true,
   useKeyboardNavigation: true
 });
-let f = T
+let h = T

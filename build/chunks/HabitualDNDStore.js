@@ -19,10 +19,10 @@ function u(e, t, n) {
 let d = [],
   p = false;
 
-function f() {
+function h() {
   return d.length >= 4 && d.some(e => e < Date.now() - 3 * o.A.Millis.DAY)
 }
-class h extends(r = Chunk311907.Ay.PersistedStore) {
+class g extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     this.waitFor(s.A), null != e && Array.isArray(e.sessionStartsWithDND) && (d = e.sessionStartsWithDND)
   }
@@ -40,15 +40,15 @@ class h extends(r = Chunk311907.Ay.PersistedStore) {
     }
   }
 }
-u(h, "displayName", "HabitualDNDStore"), u(h, "persistKey", "habitualDND"), new h(Chunk73153.h, {
+u(g, "displayName", "HabitualDNDStore"), u(g, "persistKey", "habitualDND"), new g(Chunk73153.h, {
   POST_CONNECTION_OPEN: function() {
-    s.A.getStatus() === c.clD.DND && "0" === a.CY.getSetting() ? (d.push(Date.now()), d = d.filter(e => e > Date.now() - 5 * o.A.Millis.DAY), f() && setTimeout(() => {
+    s.A.getStatus() === c.clD.DND && "0" === a.CY.getSetting() ? (d.push(Date.now()), d = d.filter(e => e > Date.now() - 5 * o.A.Millis.DAY), h() && setTimeout(() => {
       l.h.dispatch({
         type: "HABITUAL_DND_CLEAR"
       })
     }, 15 * o.A.Millis.SECOND)) : d = []
   },
   HABITUAL_DND_CLEAR: function() {
-    p = !!f(), d = []
+    p = !!h(), d = []
   }
 })

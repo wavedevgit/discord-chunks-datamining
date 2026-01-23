@@ -4,12 +4,12 @@
 require.d(exports, {
   DI: () => m,
   bD: () => p,
-  h4: () => y,
+  h4: () => b,
   hl: () => d,
   i_: () => f,
   k9: () => _,
   kK: () => h,
-  qU: () => I,
+  qU: () => S,
   vS: () => E
 }), require("./747238.js"), require("./801460.js"), require("./508300.js"), require("./650828.js"), require("./591487.js"), require("./727858.js"), require("./896048.js");
 var Chunk664294 = require("./664294.js"),
@@ -36,7 +36,7 @@ function p() {
 }
 
 function _(e) {
-  if (y(e)) return Promise.resolve(O(e));
+  if (b(e)) return Promise.resolve(O(e));
   let t = o.A.safeParseWithQuery(e);
   return null == t ? Promise.resolve(null) : (t.search = null, t.query.meta = "true", d && (t.query.version = d), t.host = window.location.host, a.Bo.get({
     url: i.format(t),
@@ -64,14 +64,14 @@ let g = RegExp("^https://(?:ptb\\.|canary\\.)?(discordapp|discord)\\.com/__devel
 function E(e) {
   return null != e && g.test(e)
 }
-let b = RegExp("^dev://branch/([\\w-./]+)$", "i");
+let y = RegExp("^dev://branch/([\\w-./]+)$", "i");
 
-function y(e) {
-  return null != e && b.test(e)
+function b(e) {
+  return null != e && y.test(e)
 }
 
 function O(e) {
-  let t = e.match(b);
+  let t = e.match(y);
   if (null == t || 2 !== t.length) return null;
   let n = (0, s.getNativePlatform)(),
     r = t[1];
@@ -86,20 +86,20 @@ function O(e) {
     expiresAt: "Mon, 1 Jan 2038 00:00:00 GMT"
   }
 }
-let A = "s",
-  v = new Set(["canary.discord.com", "ptb.discord.com", "discord.com", "canary.discordapp.com", "ptb.discordapp.com", "discordapp.com"]),
-  S = new Set(["/__development/link", "/__development/link/"]);
+let v = "s",
+  A = new Set(["canary.discord.com", "ptb.discord.com", "discord.com", "canary.discordapp.com", "ptb.discordapp.com", "discordapp.com"]),
+  I = new Set(["/__development/link", "/__development/link/"]);
 
-function I(e) {
-  if (y(e)) return {
+function S(e) {
+  if (b(e)) return {
     payload: null,
     url: e
   };
   let t = o.A.safeParseWithQuery(e);
-  if (null == t || !v.has(t.hostname) || !(A in t.query) || !S.has(t.pathname)) return null;
-  for (let e in t.query) e !== A && delete t.query[e];
+  if (null == t || !A.has(t.hostname) || !(v in t.query) || !I.has(t.pathname)) return null;
+  for (let e in t.query) e !== v && delete t.query[e];
   return {
-    payload: t.query[A],
+    payload: t.query[v],
     url: i.format(t)
   }
 }

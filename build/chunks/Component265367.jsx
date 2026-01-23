@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 265367, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -40,11 +40,11 @@ class d extends Chunk272355.A {
     }({}, e)), {
       modalKey: u,
       instant: true,
-      onCloseCallback: s.jD
+      onCloseCallback: a.jD
     })
   }
   handleHide() {
     (0, l.OoC)(u)
   }
 }
-let f = new d
+let p = new d

@@ -20,7 +20,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk652215 = require("./652215.js"),
   Chunk835002 = require("./835002.js");
 
-function b(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function b(e) {
   }
   return e
 }
-class _ extends Chunk272355.A {
+class b extends Chunk272355.A {
   _initialize() {
     l.h.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), l.h.subscribe("CHANNEL_SELECT", this.handleChannelSelect), l.h.subscribe("AGE_GATE_MODAL_OPEN", this.handleAgeGateModalOpen), l.h.subscribe("AGE_GATE_MODAL_CLOSE", this.handleAgeGateModalClose), l.h.subscribe("AGE_GATE_SUCCESS_MODAL_OPEN", this.handleAgeGateSuccess), l.h.subscribe("AGE_GATE_FAILURE_MODAL_OPEN", this.handleAgeGateFailure), l.h.subscribe("GUILD_UPDATE", this.handleGuildUpdate)
   }
@@ -65,34 +65,34 @@ class _ extends Chunk272355.A {
       let {
         default: e
       } = await Promise.all([n.e("10136"), n.e("40709")]).then(n.bind(n, 776971));
-      return n => (0, r.jsx)(e, b({
+      return n => (0, r.jsx)(e, _({
         source: t
       }, n))
     }, {
-      modalKey: A.Uy,
-      onCloseRequest: g.tEg,
+      modalKey: f.Uy,
+      onCloseRequest: m.tEg,
       backdropStyle: (0, s.lU)(t) ? i.F2Z.LIGHTBOX : true
     })
   }
   handleAgeGateSuccess() {
-    o.A.showSuccessToast(m.OB.EXISTING_USER_AGE_GATE_SUCCESS), (0, i.OoC)(A.Uy)
+    o.A.showSuccessToast(A.OB.EXISTING_USER_AGE_GATE_SUCCESS), (0, i.OoC)(f.Uy)
   }
   handleAgeGateFailure(e) {
     let {
       underageMessage: t
     } = e;
-    (0, i.zbz)(A.Uy, e => (0, r.jsx)(h.default, b({
+    (0, i.zbz)(f.Uy, e => (0, r.jsx)(g.default, _({
       underageMessage: t
     }, e)))
   }
   handleAgeGateModalClose() {
-    (0, i.OoC)(A.Uy)
+    (0, i.OoC)(f.Uy)
   }
   handleGuildUpdate(e) {
     let {
       guild: t
     } = e, n = d.A.getGuildId();
-    if (null != n && t.id === n && (t.owner_configured_content_level === g.ftr.AGE_RESTRICTED || (0, f.v)("age_gate_manager") && c.uA.has(t.nsfw_level))) return void(0, p.kK)(t.id, null)
+    if (null != n && t.id === n && (t.owner_configured_content_level === m.ftr.AGE_RESTRICTED || (0, h.v)("age_gate_manager") && c.uA.has(t.nsfw_level))) return void(0, p.kK)(t.id, null)
   }
 }
-let E = new _
+let E = new b

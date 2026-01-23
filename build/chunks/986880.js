@@ -18,66 +18,66 @@ var Chunk73153 = require("./73153.js"),
   Chunk998740 = require("./998740.js"),
   Chunk652215 = require("./652215.js");
 
-function m(e) {
+function A(e) {
   return "haven:".concat(e)
 }
 
-function b() {
+function _() {
   let e = r;
   if (null == e) returnfalse;
-  let t = m(e);
+  let t = A(e);
   if (!u.A.isOpen(t)) returnfalse;
   let n = u.A.pipHavenWindow;
   if (null == n || n.id !== t) return r = null, false;
   i.h.wait(() => l.VN(t)), r = null
 }
 
-function _() {
+function b() {
   return c.A.hasLayers()
 }
 
 function E() {
   let e, t, n = d.A.getChannelId(),
     a = null != n ? o.A.getChannel(n) : null;
-  if (e = d.A.getChannelId(), t = p.A.getChannelId(), null == e || !A.A.isUserConnected(e) || e === t || s.A.getWindowOpen(g.MLl.CHANNEL_CALL_POPOUT) || 0) return b();
-  if (null != a && A.A.isUserConnected(a.id)) {
+  if (e = d.A.getChannelId(), t = p.A.getChannelId(), null == e || !f.A.isUserConnected(e) || e === t || s.A.getWindowOpen(m.MLl.CHANNEL_CALL_POPOUT) || 0) return _();
+  if (null != a && f.A.isUserConnected(a.id)) {
     if (r !== a.id) {
-      let e = m(a.id);
+      let e = A(a.id);
       if (u.A.isOpen(e)) returnfalse;
       if (null != r) {
         let e = r;
         i.h.wait(() => l.VN(e))
       }
       return i.h.wait(() => {
-        l.ho(e, g.o1q.HAVEN, {
+        l.ho(e, m.o1q.HAVEN, {
           channel: a
-        }), _() && l.jD(e)
+        }), b() && l.jD(e)
       }), r = a.id, true
     }
     returnfalse
   }
-  return b()
+  return _()
 }
 
 function O() {
-  if (_()) {
+  if (b()) {
     let e = r;
     if (null == e) return;
-    let t = m(e);
+    let t = A(e);
     u.A.isOpen(t) && i.h.wait(() => l.jD(t));
     return
   }
   let e = r;
   if (null == e) return;
-  let t = m(e);
+  let t = A(e);
   u.A.isOpen(t) && i.h.wait(() => l.WU(t))
 }
 class y extends Chunk272355.A {
   _initialize() {
-    p.A.addChangeListener(E), f.A.addChangeListener(E), d.A.addChangeListener(E), h.A.addChangeListener(E), c.A.addChangeListener(O), A.A.addChangeListener(E), s.A.addChangeListener(E)
+    p.A.addChangeListener(E), h.A.addChangeListener(E), d.A.addChangeListener(E), g.A.addChangeListener(E), c.A.addChangeListener(O), f.A.addChangeListener(E), s.A.addChangeListener(E)
   }
   _terminate() {
-    p.A.removeChangeListener(E), f.A.removeChangeListener(E), d.A.removeChangeListener(E), h.A.removeChangeListener(E), c.A.removeChangeListener(O), A.A.removeChangeListener(E), s.A.removeChangeListener(E)
+    p.A.removeChangeListener(E), h.A.removeChangeListener(E), d.A.removeChangeListener(E), g.A.removeChangeListener(E), c.A.removeChangeListener(O), f.A.removeChangeListener(E), s.A.removeChangeListener(E)
   }
 }
 let I = new y

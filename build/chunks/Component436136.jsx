@@ -33,7 +33,7 @@ function u(e) {
       icon: l.ejX,
       size: "sm",
       onClick: () => {
-        (0, a.A)(t.guild_id, t.id, s.vv.UNREADS_ONLY_MENTIONS), n()
+        (0, s.A)(t.guild_id, t.id, a.vv.UNREADS_ONLY_MENTIONS), n()
       }
     })]
   })

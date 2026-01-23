@@ -103,28 +103,28 @@ function m(e) {
   let {
     state: g,
     recommendations: E,
-    skuIdToUserIdsReasons: b
+    skuIdToUserIdsReasons: y
   } = _({
     applicationId: s,
     userIds: p,
     numItems: n,
     isEligible: d && c,
     includeWishlists: l
-  }), y = d && "error" !== g, {
+  }), b = d && "error" !== g, {
     state: O,
-    recommendations: A
+    recommendations: v
   } = h({
     guildId: t,
     numItems: n,
-    isEligible: !y && c
+    isEligible: !b && c
   });
-  return c && 0 !== n ? y ? {
+  return c && 0 !== n ? b ? {
     state: g,
     recommendations: E,
-    skuIdToUserIdsReasons: b
+    skuIdToUserIdsReasons: y
   } : {
     state: O,
-    recommendations: A,
+    recommendations: v,
     skuIdToUserIdsReasons: {}
   } : {
     state: "success",

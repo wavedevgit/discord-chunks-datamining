@@ -2,9 +2,9 @@
 /** chunk id: 31457, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZK: () => C,
-  _H: () => d,
+  _H: () => u,
   cS: () => c,
-  fu: () => u
+  fu: () => d
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -30,7 +30,7 @@ function c(e) {
   })
 }
 
-function d(e) {
+function u(e) {
   let {
     title: t,
     children: n
@@ -46,7 +46,7 @@ function d(e) {
   })
 }
 
-function u(e) {
+function d(e) {
   let {
     icon: t,
     text: n,
@@ -84,12 +84,12 @@ function C(e) {
     text: n,
     footnote: l,
     meetsRequirement: c,
-    children: d,
-    className: u
+    children: u,
+    className: d
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: i()(s.xP, u),
+      className: i()(s.xP, d),
       children: [(0, r.jsx)(t, {
         className: s.jt,
         height: 20,
@@ -105,7 +105,7 @@ function C(e) {
         color: "currentColor",
         className: s.Fl,
         secondaryColor: o.A.colors.WHITE.css
-      }) : d]
+      }) : u]
     }), null != l && (0, r.jsx)(a.Text, {
       color: "text-default",
       className: s.xA,

@@ -2,7 +2,7 @@
 /** chunk id: 930101, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H: () => I,
+  H: () => S,
   X: () => T
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -33,7 +33,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,12 +57,12 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = e => {
+let S = e => {
     var t;
     let {
       node: n,
@@ -78,12 +78,12 @@ let I = e => {
       animated: false,
       channelId: d,
       messageId: f
-    }), v = e => {
+    }), A = e => {
       var t;
-      return (0, r.jsx)(l.un, S(A({
+      return (0, r.jsx)(l.un, I(v({
         asset: O("jumbo"),
         title: null != (t = n.name) ? t : "",
-        body: o ? b.intl.string(b.t["515vjG"]) : "",
+        body: o ? y.intl.string(y.t["515vjG"]) : "",
         ariaHidden: true
       }, h.Uk), {
         position: a,
@@ -94,23 +94,23 @@ let I = e => {
             isCustomEmoji: false
           })
         },
-        children: (0, r.jsx)(c.DUT, S(A({}, e), {
+        children: (0, r.jsx)(c.DUT, I(v({}, e), {
           innerRef: p,
           tag: "span",
           onClick: t => {
             var n;
             E(true), null == e || null == (n = e.onClick) || n.call(e, t)
           },
-          className: s()(y.qq, {
-            [y._Y]: o,
-            [y.gp]: n.jumboable
+          className: s()(b.qq, {
+            [b._Y]: o,
+            [b.gp]: n.jumboable
           }),
           children: O()
         }))
       }))
     };
-    if (!o) return v();
-    let I = e => (0, r.jsx)(_.MV, S(A({}, e), {
+    if (!o) return A();
+    let S = e => (0, r.jsx)(_.MV, I(v({}, e), {
       node: n
     }));
     return (0, r.jsx)(c.YNO, {
@@ -122,9 +122,9 @@ let I = e => {
       onRequestClose: () => {
         E(false)
       },
-      renderPopout: I,
+      renderPopout: S,
       targetElementRef: p,
-      children: v
+      children: A
     })
   },
   T = e => {
@@ -135,7 +135,7 @@ let I = e => {
       enableClick: d = true,
       channelId: E,
       messageId: O
-    } = e, [v, I] = i.useState(String(Date.now())), [T, N] = i.useState(false), [R, w] = i.useState(false), P = i.useRef(null), D = e => (0, r.jsx)(u.A, {
+    } = e, [A, S] = i.useState(String(Date.now())), [T, N] = i.useState(false), [R, w] = i.useState(false), P = i.useRef(null), D = e => (0, r.jsx)(u.A, {
       emojiName: t.name,
       size: null != e ? e : t.jumboable ? "jumbo" : "default",
       emojiId: t.emojiId,
@@ -143,10 +143,10 @@ let I = e => {
       isInteracting: n,
       channelId: E,
       messageId: O
-    }), x = (0, o.A)(), L = e => (0, r.jsx)(l.un, S(A({
+    }), x = (0, o.A)(), L = e => (0, r.jsx)(l.un, I(v({
       asset: D("jumbo"),
       title: t.name,
-      body: d ? b.intl.string(b.t["515vjG"]) : "",
+      body: d ? y.intl.string(y.t["515vjG"]) : "",
       ariaHidden: true
     }, h.Uk), {
       position: a,
@@ -158,7 +158,7 @@ let I = e => {
           nonce: x
         }), (0, f.K)(g.Vl.CustomEmojiTooltipShown))
       },
-      children: (0, r.jsx)(c.DUT, S(A({}, e), {
+      children: (0, r.jsx)(c.DUT, I(v({}, e), {
         innerRef: P,
         onMouseEnter: () => {
           var t;
@@ -174,17 +174,17 @@ let I = e => {
           }), N(false))
         },
         tag: "span",
-        className: s()(y.qq, {
-          [y._Y]: d,
-          [y.gp]: t.jumboable
+        className: s()(b.qq, {
+          [b._Y]: d,
+          [b.gp]: t.jumboable
         }),
         children: D()
       }))
     }));
     if (!d) return L();
-    let j = e => (0, r.jsx)(_.iP, S(A({}, e), {
+    let j = e => (0, r.jsx)(_.iP, I(v({}, e), {
       node: t,
-      refreshPositionKey: () => I(String(Date.now())),
+      refreshPositionKey: () => S(String(Date.now())),
       nonce: x
     }));
     return (0, r.jsx)(c.YNO, {
@@ -199,7 +199,7 @@ let I = e => {
       nudgeAlignIntoViewport: true,
       position: "right",
       renderPopout: j,
-      positionKey: v,
+      positionKey: A,
       targetElementRef: P,
       children: L
     })

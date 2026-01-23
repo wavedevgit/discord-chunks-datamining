@@ -29,7 +29,7 @@ let d = e => {
     variant: d,
     override: f,
     labelledBy: p
-  } = e, _ = null != f && "unset" === d, h = (0, o.Ay)(), m = null != (t = null == f ? true : f[h]) ? t : null == f ? true : f.default, g = i.useMemo(() => (n - a) / (c - a) * 100, [n, a, c]), E = n === a, b = _ ? {
+  } = e, _ = null != f && "unset" === d, h = (0, o.Ay)(), m = null != (t = null == f ? true : f[h]) ? t : null == f ? true : f.default, g = i.useMemo(() => (n - a) / (c - a) * 100, [n, a, c]), E = n === a, y = _ ? {
     "--custom-background": null == m ? true : m.background,
     "--custom-gradient-start": null == m ? true : m.gradientStart,
     "--custom-gradient-end": null == m ? true : m.gradientEnd,
@@ -37,7 +37,7 @@ let d = e => {
   } : {};
   return (0, r.jsx)("div", {
     className: s()(l.progressContainer, l[u], l[d]),
-    style: b,
+    style: y,
     children: (0, r.jsxs)("div", {
       className: s()(l.progress, {
         [l.empty]: E

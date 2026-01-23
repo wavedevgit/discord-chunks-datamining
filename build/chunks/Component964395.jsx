@@ -30,13 +30,13 @@ function E(e) {
   let {
     content: l,
     onClick: t,
-    ariaLabel: a,
-    className: s
+    ariaLabel: s,
+    className: a
   } = e;
   return (0, n.jsx)(d.DUT, {
-    className: i()(j.gb, s),
+    className: i()(b.gb, a),
     onClick: t,
-    "aria-label": a,
+    "aria-label": s,
     children: l
   })
 }
@@ -45,30 +45,30 @@ function S(e) {
   let {
     guildId: l,
     storefront: t,
-    selectedPageIndex: s
-  } = e, S = (0, d.Mwr)((0, o.Ay)()), N = (0, r.bG)([p.default], () => p.default.getCurrentUser()), L = (0, h.jM)(), {
-    analyticsLocations: R
-  } = (0, u.Ay)(), T = a.useCallback(() => {
-    (null == N ? true : N.id) != null && (0, g.openUserProfileModal)({
-      userId: N.id,
-      tabSection: k.RP.WISHLIST,
+    selectedPageIndex: a
+  } = e, S = (0, d.Mwr)((0, o.Ay)()), C = (0, r.bG)([p.default], () => p.default.getCurrentUser()), N = (0, h.jM)(), {
+    analyticsLocations: L
+  } = (0, u.Ay)(), R = s.useCallback(() => {
+    (null == C ? true : C.id) != null && (0, _.openUserProfileModal)({
+      userId: C.id,
+      tabSection: v.RP.WISHLIST,
       showGuildProfile: false,
       sourceAnalyticsLocations: [c.A.SOCIAL_LAYER_STOREFRONT]
     })
-  }, [N]), C = a.useCallback(() => {
-    I.default.track(m.HAw.SLAYER_STOREFRONT_PAGE_ELEMENT_CLICKED, {
-      slayer_storefront_session_id: null == L ? true : L.sessionId,
-      cta_type: b.ST.LEARN_MORE,
-      location_stack: R
-    }), window.open(_.A.getArticleURL(m.MVz.SOCIAL_LAYER_STOREFRONT))
-  }, [L, R]);
+  }, [C]), T = s.useCallback(() => {
+    I.default.track(k.HAw.SLAYER_STOREFRONT_PAGE_ELEMENT_CLICKED, {
+      slayer_storefront_session_id: null == N ? true : N.sessionId,
+      cta_type: m.ST.LEARN_MORE,
+      location_stack: L
+    }), window.open(f.A.getArticleURL(k.MVz.SOCIAL_LAYER_STOREFRONT))
+  }, [N, L]);
   if (null == t) return null;
   let y = null != t.logoAssetId ? (0, x.YE)(t.applicationId, t.logoAssetId, 75) : null,
     M = null != t.lightThemeLogoAssetId ? (0, x.YE)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,
     O = null;
-  return O = S ? null != y ? y : M : null != M ? M : y, (0, n.jsxs)(f.A, {
+  return O = S ? null != y ? y : M : null != M ? M : y, (0, n.jsxs)(g.A, {
     disableDoubleClick: true,
-    className: j.N1,
+    className: b.N1,
     children: [(0, n.jsxs)(d.DUT, {
       onClick: () => {
         (0, A.default)({
@@ -76,26 +76,26 @@ function S(e) {
           pageIndex: 0
         })
       },
-      className: j.gn,
+      className: b.gn,
       children: [null != O && (0, n.jsx)("img", {
-        className: j.wm,
+        className: b.wm,
         src: O,
         alt: t.title
-      }), (0, n.jsx)(f.A.Title, {
+      }), (0, n.jsx)(g.A.Title, {
         children: t.title
       })]
     }), (0, n.jsx)("div", {
-      className: j.YC,
-      children: t.pages.map((e, t) => (0, n.jsx)(f.A.Title, {
+      className: b.YC,
+      children: t.pages.map((e, t) => (0, n.jsx)(g.A.Title, {
         onClick: () => {
           (0, A.default)({
             guildId: l,
             pageIndex: t
           })
         },
-        wrapperClassName: j.oB,
-        className: i()(j.xT, {
-          [j.ys]: s === t
+        wrapperClassName: b.oB,
+        className: i()(b.xT, {
+          [b.ys]: a === t
         }),
         children: (0, n.jsx)(d.EYj, {
           variant: "text-sm/medium",
@@ -103,23 +103,23 @@ function S(e) {
         })
       }, "".concat(e.title, "-").concat(t)))
     }), (0, n.jsxs)("div", {
-      className: j.sZ,
+      className: b.sZ,
       children: [(0, n.jsx)(E, {
         content: (0, n.jsx)(d.C3E, {
           size: "xs",
           color: "currentColor"
         }),
-        onClick: T,
-        ariaLabel: v.intl.string(v.t["7lZ31J"]),
-        className: j.ij
+        onClick: R,
+        ariaLabel: j.intl.string(j.t["7lZ31J"]),
+        className: b.ij
       }), (0, n.jsx)(E, {
-        onClick: C,
-        ariaLabel: v.intl.string(v.t.hvVgAZ),
+        onClick: T,
+        ariaLabel: j.intl.string(j.t.hvVgAZ),
         content: (0, n.jsx)(d.EYj, {
           variant: "text-sm/medium",
-          children: v.intl.string(v.t.hvVgAZ)
+          children: j.intl.string(j.t.hvVgAZ)
         }),
-        className: j.AJ
+        className: b.AJ
       })]
     })]
   })

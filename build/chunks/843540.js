@@ -8,17 +8,17 @@ var Chunk873298 = require("./873298.js"),
   Chunk17372 = require("./17372.js"),
   Chunk985018 = require("./985018.jsx");
 let s = {
-  getTitle: () => i.intl.string(i.t["Gtck/t"]),
-  getDisabledTitle: () => i.intl.string(i.t.E6UmXa),
-  getDescription: () => i.intl.string(i.t.jcRSp6),
+  getTitle: () => a.intl.string(a.t["Gtck/t"]),
+  getDisabledTitle: () => a.intl.string(a.t.E6UmXa),
+  getDescription: () => a.intl.string(a.t.jcRSp6),
   eligibleReportSubtypes: [Chunk17372.TS.SUB_CSAM, Chunk17372.TS.SUB_LOLI, Chunk17372.TS.SUB_NCP, Chunk17372.TS.SUB_SEXUALLY_DEGRADING_CONTENT, Chunk17372.TS.SUB_UNSOLICITED_PORN],
   onApply: () => (0, r.Jz)(function() {
     let {
       explicitContentGuilds: e,
       explicitContentFriendDm: t,
       explicitContentNonFriendDm: n
-    } = (0, r.C$)(), a = {};
-    return e === l.TO.SHOW && (a.explicitContentGuilds = l.TO.BLUR), t === l.TO.SHOW && (a.explicitContentFriendDm = l.TO.BLUR), n === l.TO.SHOW && (a.explicitContentNonFriendDm = l.TO.BLUR), a
+    } = (0, r.C$)(), i = {};
+    return e === l.TO.SHOW && (i.explicitContentGuilds = l.TO.BLUR), t === l.TO.SHOW && (i.explicitContentFriendDm = l.TO.BLUR), n === l.TO.SHOW && (i.explicitContentNonFriendDm = l.TO.BLUR), i
   }()),
   predicate: () => {
     let {

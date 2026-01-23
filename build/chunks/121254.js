@@ -36,7 +36,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,13 +60,13 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -96,10 +96,10 @@ function P(e, t) {
     guilds: a,
     merged_members: s,
     merged_presences: o
-  } = r, l = I(r, ["guilds", "merged_members", "merged_presences"]), [c] = i, u = k(w, null == o ? true : o.friends), d = null != (n = null == a ? true : a.map((e, t) => {
+  } = r, l = S(r, ["guilds", "merged_members", "merged_presences"]), [c] = i, u = k(w, null == o ? true : o.friends), d = null != (n = null == a ? true : a.map((e, t) => {
     let n = k(w, null == o ? true : o.guilds[t]),
       r = k(w, null == s ? true : s[t]);
-    return S(A({}, e), {
+    return I(v({}, e), {
       unavailable: true === e.voice_states,
       presences: n,
       members: r
@@ -112,7 +112,7 @@ function P(e, t) {
     voice_states: e.voice_states,
     unavailable: false
   }));
-  return null != f && d.push(f), w = {}, S(A({}, l), {
+  return null != f && d.push(f), w = {}, I(v({}, l), {
     presences: u,
     guilds: d
   })
@@ -138,7 +138,7 @@ function x(e, t, n) {
     private_channels: u,
     merged_members: d,
     guilds: f
-  } = a, p = I(a, ["users", "relationships", "private_channels", "merged_members", "guilds"]), [_, ...h] = o, [m] = h;
+  } = a, p = S(a, ["users", "relationships", "private_channels", "merged_members", "guilds"]), [_, ...h] = o, [m] = h;
   G(m);
   let g = k(w = s().keyBy(l, e => e.id), c);
   null == u || u.forEach(e => {
@@ -146,8 +146,8 @@ function x(e, t, n) {
     null != t && (e.recipients = t.map(e => (i()(null != w[e], "Missing user in compressed ready payload"), w[e]))), delete e.recipient_ids
   });
   let E = null != (r = null == f ? true : f.map((e, t) => true === e.unavailable ? e : (e.members = k(w, null == d ? true : d[t]), F(e)))) ? r : [],
-    b = L(_, f, e => F(e));
-  return null != b && E.push(b), S(A({}, p), {
+    y = L(_, f, e => F(e));
+  return null != y && E.push(y), I(v({}, p), {
     users: l,
     presences: [],
     relationships: g,
@@ -169,7 +169,7 @@ function M(e, t) {
   var n;
   let r = E.A.getGuild(e.id),
     i = B(e, null == r ? true : {
-      properties: b.yN(r),
+      properties: y.yN(r),
       roles: g.A.getRolesSnapshot(r.id),
       emojis: j(r.id),
       stickers: null != (n = h.A.getRawStickersByGuild().get(r.id)) ? n : null
@@ -201,7 +201,7 @@ function G(e) {
   for (let i of t) {
     var r;
     i.id in e.guildVersions && e.guildChannels.has(i.id) && (N[i.id] = {
-      properties: b.yN(i),
+      properties: y.yN(i),
       roles: g.A.getRolesSnapshot(i.id),
       emojis: j(i.id),
       stickers: null != (r = n.get(i.id)) ? r : null
@@ -275,7 +275,7 @@ function F(e) {
     members: e.members,
     premium_subscription_count: e.premium_subscription_count,
     properties: null != (r = e.properties) ? r : null,
-    roles: (0, y.ly)(e.id, c.roles, e.partial_updates.roles, e.partial_updates.deleted_role_ids),
+    roles: (0, b.ly)(e.id, c.roles, e.partial_updates.roles, e.partial_updates.deleted_role_ids),
     stage_instances: e.stage_instances,
     stickers: V(c.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
     unableToSyncDeletes: e.unable_to_sync_deletes,
@@ -338,7 +338,7 @@ function B(e, t) {
     premium_subscription_count: e.premium_subscription_count,
     presences: e.presences,
     properties: null != (i = e.properties) ? i : t.properties,
-    roles: (0, y.ly)(e.id, t.roles, e.partial_updates.roles, e.partial_updates.deleted_role_ids),
+    roles: (0, b.ly)(e.id, t.roles, e.partial_updates.roles, e.partial_updates.deleted_role_ids),
     stage_instances: e.stage_instances,
     stickers: V(t.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
     unableToSyncDeletes: e.unable_to_sync_deletes,

@@ -105,15 +105,15 @@ function E(e) {
     themeType: p,
     onClose: m,
     children: E
-  } = e, b = h(e, ["user", "guildId", "channelId", "themeType", "onClose", "children"]), {
-    interactionType: y,
+  } = e, y = h(e, ["user", "guildId", "channelId", "themeType", "onClose", "children"]), {
+    interactionType: b,
     interactionSource: O,
-    resetInteraction: A,
-    interactionSourceId: v,
-    interactionPopoutTargetRef: S
-  } = (0, a.Pq)(), I = [u.d.MODAL, u.d.MODAL_V2].includes(p) ? (0, s.n)(t.id, n) : true, T = O === b.sourceType && y === c.AQ.REACT, C = O === b.sourceType && y === c.AQ.REPLY, N = (T || C) && v === b.sourceId;
+    resetInteraction: v,
+    interactionSourceId: A,
+    interactionPopoutTargetRef: I
+  } = (0, a.Pq)(), S = [u.d.MODAL, u.d.MODAL_V2].includes(p) ? (0, s.n)(t.id, n) : true, T = O === y.sourceType && b === c.AQ.REACT, C = O === y.sourceType && b === c.AQ.REPLY, N = (T || C) && A === y.sourceId;
   return (0, r.jsx)(i.YNO, _(f({
-    targetElementRef: null != S ? S : true,
+    targetElementRef: null != I ? I : true,
     renderPopout: e => {
       let {
         setPopoutRef: i
@@ -124,16 +124,16 @@ function E(e) {
         channelId: d,
         themeType: p,
         onClose: m,
-        modalKey: I,
+        modalKey: S,
         setPopoutRef: i
-      }, b))
+      }, y))
     },
     onRequestClose: () => {
-      A(), null == m || m()
+      v(), null == m || m()
     },
     shouldShow: N
   }, g({
-    interactionType: y,
+    interactionType: b,
     interactionSource: O,
     themeType: p
   })), {

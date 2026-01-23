@@ -1,12 +1,12 @@
 /** Chunk was on 97492 **/
 /** chunk id: 522556, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk686956 = require("./686956.js"),
   Chunk935649 = require("./935649.jsx"),
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk635510 = require("./635510.js");
 
-function b(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,14 +35,14 @@ function b(e) {
   return e
 }
 
-function g(e) {
+function m(e) {
   var t, n;
   let {
     guild: i,
-    channelId: a
-  } = e, s = (0, d.k$)(i), {
-    modalType: h
-  } = s, g = function(e, t) {
+    channelId: s
+  } = e, a = (0, d.k$)(i), {
+    modalType: f
+  } = a, m = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -58,7 +58,7 @@ function g(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(s, ["modalType"]), m = l.useCallback(() => {
+  }(a, ["modalType"]), b = l.useCallback(() => {
     null != i && o.A.nsfwReturnToSafety(i.id)
   }, [i]), A = l.useCallback(() => {
     null != i && o.A.nsfwAgree(i.id)
@@ -66,10 +66,10 @@ function g(e) {
     c.A.showAgeVerificationGetStartedModal({
       entryPoint: u.q1.NSFW_GUILD
     })
-  }, []), O = (t = b({}, g), n = n = {
+  }, []), _ = (t = g({}, m), n = n = {
     guildId: null == i ? true : i.id,
-    channelId: a,
-    disagreement: p.intl.string(p.t["/g10LC"])
+    channelId: s,
+    disagreement: h.intl.string(h.t["/g10LC"])
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -80,23 +80,23 @@ function g(e) {
   })(Object(n)).forEach(function(e) {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t);
-  switch (h) {
+  switch (f) {
     case u.A5.NSFW_CHANNEL_AGE_VERIFY:
     case u.A5.GUILD_LARGE_SERVER:
-      return (0, r.jsx)(f.A, b({
+      return (0, r.jsx)(p.A, g({
         onAgree: y,
-        onDisagree: m,
-        modalType: h
-      }, O));
+        onDisagree: b,
+        modalType: f
+      }, _));
     default:
-      return (0, r.jsx)(f.A, b({
+      return (0, r.jsx)(p.A, g({
         onAgree: A,
-        onDisagree: m,
-        modalType: h
-      }, O))
+        onDisagree: b,
+        modalType: f
+      }, _))
   }
 }
-let m = function(e) {
+let b = function(e) {
   let {
     guild: t,
     channelId: n,
@@ -107,12 +107,12 @@ let m = function(e) {
       current: e
     } = o;
     null == e || e.scrollToBottom()
-  }, []), (0, r.jsx)(s.T7Y, {
+  }, []), (0, r.jsx)(a.T7Y, {
     ref: o,
-    className: h.X,
+    className: f.X,
     children: (0, r.jsx)("div", {
-      className: a()(i, h.i),
-      children: (0, r.jsx)(g, {
+      className: s()(i, f.i),
+      children: (0, r.jsx)(m, {
         guild: t,
         channelId: n
       })

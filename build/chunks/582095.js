@@ -44,12 +44,12 @@ class j {
     for (let [e, t] of Object.entries(this.rpcEventHandlers)) this.rpcServer.setEventHandler(e, t)
   }
   init() {
-    this.rpcServer.getCurrentUser = () => g.default.getCurrentUser(), this.rpcServer.onConnect = e => {
+    this.rpcServer.getCurrentUser = () => m.default.getCurrentUser(), this.rpcServer.onConnect = e => {
       i.h.dispatch({
         type: "RPC_APP_CONNECTED",
         socketId: e.id,
         application: e.application
-      }), b.default.track(v.HAw.AUTHORIZED_APP_CONNECTED, {
+      }), _.default.track(v.HAw.AUTHORIZED_APP_CONNECTED, {
         app_id: e.application.id,
         transport: e.transport
       })
@@ -61,7 +61,7 @@ class j {
         reason: t
       })
     };
-    let e = [o.A, c.Ay, p.A, m.A, d.A, f.A];
+    let e = [o.A, c.Ay, p.A, A.A, d.A, h.A];
     new r.ru(e.concat(this.stores), () => this.rpcServer.updateSubscriptions()).attach("RPCServerManager"), i.h.subscribe("MESSAGE_CREATE", this.handleMessage), i.h.subscribe("MESSAGE_UPDATE", this.handleMessage), i.h.subscribe("MESSAGE_DELETE", this.handleMessage), i.h.subscribe("SPEAKING", this.handleSpeaking), i.h.subscribe("OAUTH2_TOKEN_REVOKE", this.handleOAuth2TokenRevoke), i.h.subscribe("GUILD_CREATE", this.handleGuildCreate), i.h.subscribe("CHANNEL_CREATE", this.handleChannelCreate), i.h.subscribe("LOGOUT", this.handleLogout), i.h.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), i.h.subscribe("RPC_NOTIFICATION_CREATE", this.handleNotificationCreate), i.h.subscribe("ACTIVITY_JOIN", this.handleActivityJoin), i.h.subscribe("ACTIVITY_LAYOUT_MODE_UPDATE", this.handleActivityLayoutModeUpdate), i.h.subscribe("FRAME_UPDATE_LAYOUT_MODE", this.handleFrameUpdateLayoutMode), i.h.subscribe("THERMAL_STATE_CHANGE", this.handleThermalStateChange), i.h.subscribe("ACTIVITY_SCREEN_ORIENTATION_UPDATE", this.handleScreenOrientationUpdate), i.h.subscribe("EMBEDDED_ACTIVITY_UPDATE", this.handleEmbeddedActivityUpdate), i.h.subscribe("RELATIONSHIP_ADD", this.handleRelationshipAdd), i.h.subscribe("RELATIONSHIP_UPDATE", this.handleRelationshipUpdate), i.h.subscribe("RELATIONSHIP_REMOVE", this.handleRelationshipRemove), i.h.subscribe("PRESENCE_UPDATES", this.handlePresenceUpdates), i.h.subscribe("PRESENCES_REPLACE", this.handlePresencesReplace), i.h.subscribe("USER_UPDATE", this.handleUserUpdate), i.h.subscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate), i.h.subscribe("ENTITLEMENT_DELETE", this.handleEntitlementDelete), i.h.subscribe("QUESTS_ENROLL_SUCCESS", this.handleQuestEnrollSuccess)
   }
   terminate() {
@@ -87,7 +87,7 @@ class j {
           }, i = "".concat(t).concat(e.id);
           break;
         default:
-          return (0, _.xb)(e)
+          return (0, b.xb)(e)
       }
       null != n && this.rpcServer.dispatchToSubscriptions(t, {
         channel_id: n
@@ -99,11 +99,11 @@ class j {
       if (0 === this.rpcServer.subscriptions.length) return;
       let t = 0 !== e.speakingFlags ? v.ZE4.SPEAKING_START : v.ZE4.SPEAKING_STOP;
       if (e.context === N.x.DEFAULT) {
-        let n = A.A.getVoiceChannelId();
+        let n = f.A.getVoiceChannelId();
         if (null != n) {
           let r = o.A.getChannel(n);
           if (null == r) return;
-          let i = m.A.getVoiceState(r.getGuildId(), e.userId);
+          let i = A.A.getVoiceState(r.getGuildId(), e.userId);
           if (null == i) return;
           this.rpcServer.dispatchToSubscriptions(t, {
             channel_id: i.channelId
@@ -210,9 +210,9 @@ class j {
         activity: l
       } = r;
       if (null == i || null == l || null == l.party_id) return;
-      let a = g.default.getUser(null == (t = r.author) ? true : t.id);
+      let a = m.default.getUser(null == (t = r.author) ? true : t.id);
       if (null == a) return;
-      let s = g.default.getCurrentUser();
+      let s = m.default.getCurrentUser();
       if (null == s || a.id === s.id) return;
       let o = l.type === v.xL.JOIN_REQUEST ? p.A.getApplicationActivity(s.id, i.id) : p.A.getApplicationActivity(a.id, i.id);
       if (null == o || null == o.party || o.party.id !== l.party_id) return;
@@ -276,7 +276,7 @@ class j {
         }
       } = e;
       if (0 === this.rpcServer.subscriptions.length) return;
-      let r = g.default.getUser(t);
+      let r = m.default.getUser(t);
       if (null == r) return;
       let i = (0, O.Gc)(n, r);
       this.rpcServer.dispatchToSubscriptions(v.ZE4.RELATIONSHIP_UPDATE, {}, e => (0, O.LP)(i, e.socket.application.id))
@@ -288,7 +288,7 @@ class j {
         }
       } = e;
       if (0 === this.rpcServer.subscriptions.length) return;
-      let r = g.default.getUser(t);
+      let r = m.default.getUser(t);
       if (null == r) return;
       let i = (0, O.Gc)(n, r);
       this.rpcServer.dispatchToSubscriptions(v.ZE4.RELATIONSHIP_UPDATE, {}, e => (0, O.LP)(i, e.socket.application.id))
@@ -299,7 +299,7 @@ class j {
         }
       } = e;
       if (0 === this.rpcServer.subscriptions.length) return;
-      let n = g.default.getUser(t);
+      let n = m.default.getUser(t);
       if (null == n) return;
       let r = (0, O.Gc)(v.eA$.NONE, n);
       this.rpcServer.dispatchToSubscriptions(v.ZE4.RELATIONSHIP_UPDATE, {}, e => (0, O.LP)(r, e.socket.application.id))
@@ -314,18 +314,18 @@ class j {
             } = e;
             return t.id
           })).values()) {
-          let t = h.A.getRelationshipType(e);
+          let t = g.A.getRelationshipType(e);
           if (t === v.eA$.NONE) continue;
-          let n = g.default.getUser(e);
+          let n = m.default.getUser(e);
           if (null == n) continue;
           let r = (0, O.Gc)(t, n);
           this.rpcServer.dispatchToSubscriptions(v.ZE4.RELATIONSHIP_UPDATE, {}, e => (0, O.LP)(r, e.socket.application.id))
         }
     }), T(this, "handlePresencesReplace", () => {
       if (0 !== this.rpcServer.subscriptions.length)
-        for (let [e, t] of h.A.getMutableRelationships().entries()) {
+        for (let [e, t] of g.A.getMutableRelationships().entries()) {
           if (t === v.eA$.NONE) continue;
-          let n = g.default.getUser(e);
+          let n = m.default.getUser(e);
           if (null == n) continue;
           let r = (0, O.Gc)(t, n);
           this.rpcServer.dispatchToSubscriptions(v.ZE4.RELATIONSHIP_UPDATE, {}, e => (0, O.LP)(r, e.socket.application.id))
@@ -337,9 +337,9 @@ class j {
         }
       } = e;
       if (0 === this.rpcServer.subscriptions.length) return;
-      let n = h.A.getRelationshipType(t);
+      let n = g.A.getRelationshipType(t);
       if (n === v.eA$.NONE) return;
-      let r = g.default.getUser(t);
+      let r = m.default.getUser(t);
       if (null == r) return;
       let i = (0, O.Gc)(n, r);
       this.rpcServer.dispatchToSubscriptions(v.ZE4.RELATIONSHIP_UPDATE, {}, e => (0, O.LP)(i, e.socket.application.id))

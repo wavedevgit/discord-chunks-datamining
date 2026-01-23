@@ -126,16 +126,16 @@ function w(e) {
   } = e, {
     onClose: F,
     transitionState: Y
-  } = x, K = (0, m.GV)(), z = G.length % 2 == 0, W = (0, c.bG)([f.A], () => f.A.useReducedMotion), [q, Q] = i.useState(Date.now()), [X, Z] = i.useState(0), [J, $] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(q), el = i.useRef(X), ea = i.useRef(J), es = i.useRef(ee), eo = i.useRef(en), [ec, eu] = i.useState(j), ed = i.useRef(false);
+  } = x, K = (0, A.GV)(), W = G.length % 2 == 0, q = (0, c.bG)([h.A], () => h.A.useReducedMotion), [z, Q] = i.useState(Date.now()), [X, Z] = i.useState(0), [$, J] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(z), el = i.useRef(X), ea = i.useRef($), es = i.useRef(ee), eo = i.useRef(en), [ec, eu] = i.useState(j), ed = i.useRef(false);
 
   function ep() {
     let e = Date.now(),
       t = e - ei.current,
       n = el.current,
       r = ea.current;
-    return es.current && (Z(n += t), eo.current || $(r += t)), Q(e), [n, r]
+    return es.current && (Z(n += t), eo.current || J(r += t)), Q(e), [n, r]
   }
-  return (0, h.A)({
+  return (0, g.A)({
     type: s.ImpressionTypes.MODAL,
     name: s.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
     properties: {
@@ -170,8 +170,8 @@ function w(e) {
       URL.revokeObjectURL(e.src)
     })
   }, [ec]), i.useEffect(() => {
-    ei.current = q, el.current = X, ea.current = J, es.current = ee, eo.current = en
-  }, [q, X, J, ee, en]), i.useEffect(() => () => {
+    ei.current = z, el.current = X, ea.current = $, es.current = ee, eo.current = en
+  }, [z, X, $, ee, en]), i.useEffect(() => () => {
     if ("video" === w.type || "embed" === w.type) {
       let [e, t] = ep();
       O.default.track(I.HAw.CHANGE_LOG_VIDEO_PLAYED, {
@@ -183,7 +183,7 @@ function w(e) {
       })
     }
   }, [V, w.type]), i.useEffect(() => {
-    (0, _.Vh)(u.M.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL);
+    (0, b.Vh)(u.M.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL);
     let e = Date.now();
     return O.default.track(I.HAw.CHANGE_LOG_OPENED, {
       change_log_id: V
@@ -191,7 +191,7 @@ function w(e) {
       O.default.track(I.HAw.CHANGE_LOG_CLOSED, {
         change_log_id: V,
         seconds_open: Math.round((Date.now() - e) / 1e3)
-      }), (0, _.qr)(u.M.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, n, {
+      }), (0, b.qr)(u.M.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, n, {
         dismissAction: v.i.DISMISS
       })
     }
@@ -212,9 +212,9 @@ function w(e) {
       }), null == R ? true : R(), (0, r.jsxs)(p.$mQ, {
         "data-migration-pending": true,
         className: C.Qs,
-        children: ["video" === w.type ? (0, r.jsx)(b.A, {
+        children: ["video" === w.type ? (0, r.jsx)(_.A, {
           className: a()(C.Ki, L),
-          autoPlay: !W,
+          autoPlay: !q,
           loop: true,
           muted: true,
           controls: true,
@@ -246,13 +246,13 @@ function w(e) {
               default: e.isDefault
             }, e.locale)
           })
-        }) : "embed" === w.type ? (0, r.jsx)(A.rr, {
+        }) : "embed" === w.type ? (0, r.jsx)(f.rr, {
           className: a()(C.Ki, L),
           allowFullScreen: false,
           href: w.href,
           thumbnail: w.thumbnail,
           video: w.embed,
-          provider: g.mt.YOUTUBE,
+          provider: m.mt.YOUTUBE,
           maxWidth: w.embed.width,
           maxHeight: w.embed.height,
           renderVideoComponent: E.$o,
@@ -282,10 +282,10 @@ function w(e) {
           children: H
         }), G.length > 0 && (0, r.jsx)("div", {
           className: a()(C.IS, {
-            [C.tF]: z
+            [C.tF]: W
           }),
           children: G.map((e, t) => (0, r.jsx)(P, T(N({}, e), {
-            wideStyle: z
+            wideStyle: W
           }), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)("div", {
           className: C.UD,

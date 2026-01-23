@@ -26,7 +26,7 @@ var Chunk284009 = require("./284009.js"),
   Chunk731854 = require("./731854.js"),
   Chunk985018 = require("./985018.jsx");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let I = new Chunk626584.A("GameConsoleManager"),
+let S = new Chunk626584.A("GameConsoleManager"),
   T = 3e3,
   C = 6e4,
   N = 18e4;
@@ -52,13 +52,13 @@ function w(e) {
   return e.find(e => {
     let n = O.hv.has(e.clientInfo.os),
       r = null != _.A.getVoiceStateForSession(u.default.getId(), e.sessionId),
-      i = null == t || (0, b.X)(t.type) === e.clientInfo.os;
+      i = null == t || (0, y.X)(t.type) === e.clientInfo.os;
     return n && i && r
   })
 }
 class P extends Chunk439372.A {
   constructor(...e) {
-    super(...e), S(this, "rollbackCommandTimeout", new a.Ep), S(this, "awaitRemoteTimeout", new a.Ep), S(this, "actions", {
+    super(...e), I(this, "rollbackCommandTimeout", new a.Ep), I(this, "awaitRemoteTimeout", new a.Ep), I(this, "actions", {
       WAIT_FOR_REMOTE_SESSION: () => this.handleWaitForRemoteSession(),
       POST_CONNECTION_OPEN: () => this.handleSessionsChanged(),
       SESSIONS_REPLACE: () => this.handleSessionsChanged(),
@@ -68,18 +68,18 @@ class P extends Chunk439372.A {
       CONSOLE_COMMAND_UPDATE: e => this.handleConsoleCommandUpdate(e),
       PASSIVE_UPDATE_V2: e => this.handleVoiceStateUpdates(e),
       REMOTE_SESSION_DISCONNECT: () => this.handleRemoteSessionDisconnect()
-    }), S(this, "maybeConnect", e => {
+    }), I(this, "maybeConnect", e => {
       let t = w(e);
       if (null == t) return null;
       this.awaitRemoteTimeout.stop(), (0, m.m9)(t.sessionId);
       let n = _.A.getVoiceStateForSession(u.default.getId(), t.sessionId);
       null != n && R(n)
-    }), S(this, "handleAudioStateToggle", e => {
+    }), I(this, "handleAudioStateToggle", e => {
       let {
         syncRemote: t,
         context: n
       } = e;
-      if (!t || n !== A.x.DEFAULT) return;
+      if (!t || n !== v.x.DEFAULT) return;
       let r = d.A.isSelfDeaf(),
         i = d.A.isSelfMute(),
         a = u.default.getId(),
@@ -92,7 +92,7 @@ class P extends Chunk439372.A {
       }), this.rollbackCommandTimeout.start(T, () => {
         R(o)
       }))
-    }), S(this, "handleVoiceStateUpdates", e => {
+    }), I(this, "handleVoiceStateUpdates", e => {
       let t = e.voiceStates,
         n = E.default.getRemoteSessionId();
       if (null == n) {
@@ -111,17 +111,17 @@ class P extends Chunk439372.A {
         return t === n
       });
       null != r && (this.rollbackCommandTimeout.stop(), R(r))
-    }), S(this, "handleSessionsChanged", () => {
+    }), I(this, "handleSessionsChanged", () => {
       let e = E.default.getRemoteSessionId();
       null != e && null == p.A.getSessionById(e) && (0, m.ZG)(), null == e && this.maybeConnect(Object.values(p.A.getSessions()))
-    }), S(this, "handleWaitForRemoteSession", () => {
+    }), I(this, "handleWaitForRemoteSession", () => {
       this.awaitRemoteTimeout.start(C, () => {
         (0, m.ZG)(), s.A.show({
-          title: v.intl.string(v.t.wGMxr3),
-          body: v.intl.string(v.t.i5k8b5)
+          title: A.intl.string(A.t.wGMxr3),
+          body: A.intl.string(A.t.i5k8b5)
         })
       })
-    }), S(this, "handleConsoleCommandUpdate", e => {
+    }), I(this, "handleConsoleCommandUpdate", e => {
       var t;
       let {
         id: n,
@@ -129,14 +129,14 @@ class P extends Chunk439372.A {
         error: i
       } = e;
       if ("failed" !== r && "n/a" !== r || null == i) return;
-      I.info("Console command Error result:", r, i);
+      S.info("Console command Error result:", r, i);
       let a = E.default.getAwaitingRemoteSessionInfo();
       if ((null == a ? true : a.commandId) !== n) return;
       let s = E.default.getDevice(a.type, null != (t = a.deviceId) ? t : ""),
-        o = (0, y.A)(null != s ? s : {
+        o = (0, b.A)(null != s ? s : {
           id: "id",
-          platform: v.intl.string(v.t["UQMV/E"]),
-          name: v.intl.string(v.t["UQMV/E"])
+          platform: A.intl.string(A.t["UQMV/E"]),
+          name: A.intl.string(A.t["UQMV/E"])
         }, r, i);
       null != o && g.A.showSelfDismissableAlert({
         title: o.title,
@@ -144,7 +144,7 @@ class P extends Chunk439372.A {
         errorCodeMessage: o.errorCodeMessage,
         reconnectPlatformType: o.isAccountLinkError ? a.type : true
       }), O.v_.has(i.code) && this.awaitRemoteTimeout.isStarted() ? this.awaitRemoteTimeout.start(N, () => (0, m.ZG)(), true) : "failed" === r && (0, m.ZG)()
-    }), S(this, "handleRemoteSessionDisconnect", () => {
+    }), I(this, "handleRemoteSessionDisconnect", () => {
       this.awaitRemoteTimeout.stop()
     })
   }

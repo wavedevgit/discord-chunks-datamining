@@ -69,16 +69,16 @@ module.exports = function(e, t) {
       characterList: _.slice(p),
       data: c()
     }),
-    b = a.toSeq().takeUntil(function(e) {
+    y = a.toSeq().takeUntil(function(e) {
       return e === l
     }),
-    y = a.toSeq().skipUntil(function(e) {
+    b = a.toSeq().skipUntil(function(e) {
       return e === l
     }).rest(),
-    O = b.concat([
+    O = y.concat([
       [n, g],
       [h, E]
-    ], y).toOrderedMap();
+    ], b).toOrderedMap();
   return m && (l.getChildKeys().isEmpty() || s(false), O = d(O, g, E)), e.merge({
     blockMap: O,
     selectionBefore: t,

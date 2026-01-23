@@ -95,7 +95,7 @@ class k extends Chunk64700.Component {
       let e;
       e = this.props.useSlate ? this.props.textValue : (0, C.WO)(this.props.richValue, {
         mode: "plain"
-      }), null == (t = (n = this.props).onChange) || t.call(n, null, e, (0, A.x7)(e))
+      }), null == (t = (n = this.props).onChange) || t.call(n, null, e, (0, v.x7)(e))
     } else this.props.textValue !== e.textValue && this.saveCurrentTextThrottled()
   }
   componentWillUnmount() {
@@ -219,10 +219,10 @@ class k extends Chunk64700.Component {
       onSubmit: h,
       onSubmitFailure: m,
       channel: g,
-      type: b,
-      useSlate: y,
-      spellcheckEnabled: v,
-      useNewSlashCommands: S,
+      type: y,
+      useSlate: b,
+      spellcheckEnabled: A,
+      useNewSlashCommands: I,
       canOnlyUseTextCommands: C,
       className: R,
       id: P,
@@ -241,7 +241,7 @@ class k extends Chunk64700.Component {
     } = this.state, W = {
       channel: g,
       className: s()(R, w.Tg, {
-        [w.w5]: y,
+        [w.w5]: b,
         [w.Rr]: d || H
       }),
       id: P,
@@ -250,7 +250,7 @@ class k extends Chunk64700.Component {
       accessibilityLabel: F,
       disabled: d || false,
       submitting: H,
-      isEdit: b === O.oU.EDIT,
+      isEdit: y === O.oU.EDIT,
       onFocus: this.handleFocus,
       onBlur: this.handleBlur,
       onPaste: this.handlePaste,
@@ -265,17 +265,17 @@ class k extends Chunk64700.Component {
       onKeyDown: p,
       onSubmit: h,
       textAreaPaddingClassName: s()({
-        [w.H$]: b === O.oU.CREATE_FORUM_POST,
-        [w.g_]: b === O.oU.CUSTOM_GIFT,
-        [w.Yg]: b === O.oU.USER_PROFILE,
-        [w.$$]: b === O.oU.OVERLAY_INLINE_REPLY
+        [w.H$]: y === O.oU.CREATE_FORUM_POST,
+        [w.g_]: y === O.oU.CUSTOM_GIFT,
+        [w.Yg]: y === O.oU.USER_PROFILE,
+        [w.$$]: y === O.oU.OVERLAY_INLINE_REPLY
       }),
-      spellcheckEnabled: v,
-      useNewSlashCommands: S,
+      spellcheckEnabled: A,
+      useNewSlashCommands: I,
       isEditorIdle: k,
       currentAutocompleteType: U,
-      disableAutoFocus: c.Fr || null != (e = b.disableAutoFocus) && e,
-      disableEnterToSubmit: null != (t = null == (a = b.submit) ? true : a.disableEnterToSubmit) && t,
+      disableAutoFocus: c.Fr || null != (e = y.disableAutoFocus) && e,
+      disableEnterToSubmit: null != (t = null == (a = y.submit) ? true : a.disableEnterToSubmit) && t,
       "aria-controls": null != (n = Y.id) ? n : true,
       "aria-haspopup": "listbox",
       "aria-expanded": null !== Y.id || true,
@@ -284,15 +284,15 @@ class k extends Chunk64700.Component {
       "aria-describedby": G,
       "aria-labelledby": V,
       "aria-autocomplete": "list"
-    }, K = y ? (0, r.jsx)(T.A, L(D({
+    }, K = b ? (0, r.jsx)(T.A, L(D({
       ref: this.ref
     }, W), {
-      type: b,
-      value: d && !B ? (0, A.x7)("") : u,
-      canUseCommands: null == (o = b.commands) ? true : o.enabled,
+      type: y,
+      value: d && !B ? (0, v.x7)("") : u,
+      canUseCommands: null == (o = y.commands) ? true : o.enabled,
       canOnlyUseTextCommands: C,
       onSubmitFailure: m
-    })) : (0, r.jsx)(I.A, L(D({
+    })) : (0, r.jsx)(S.A, L(D({
       ref: this.ref
     }, W), {
       value: d && !B ? "" : l
@@ -350,7 +350,7 @@ class k extends Chunk64700.Component {
       u.A.saveDraft(e, this.props.textValue, this.props.type.drafts.type)
     }), P(this, "handleClearText", () => {
       var e, t;
-      null == (e = (t = this.props).onChange) || e.call(t, null, "", (0, A.x7)(""))
+      null == (e = (t = this.props).onChange) || e.call(t, null, "", (0, v.x7)(""))
     }), P(this, "handleInsertText", e => {
       let {
         plainText: t,
@@ -387,25 +387,25 @@ class k extends Chunk64700.Component {
           maxCharacterCount: c,
           type: u
         } = this.props,
-        m = null != i ? (0, S.VG)(i) : null,
-        E = (0, S.W7)(),
-        b = null != (t = null != m ? m : E) ? t : a,
-        y = (0, S.qH)(i, this._getEditorWindow()) ? a : b;
-      if (null == l || !y.isPrivate() && !s || y.isPrivate() && y.isManaged()) returnfalse;
+        m = null != i ? (0, I.VG)(i) : null,
+        E = (0, I.W7)(),
+        y = null != (t = null != m ? m : E) ? t : a,
+        b = (0, I.qH)(i, this._getEditorWindow()) ? a : y;
+      if (null == l || !b.isPrivate() && !s || b.isPrivate() && b.isManaged()) returnfalse;
       let O = e => {
           var t, n;
-          let r = h.A.getActiveCommand(y.id);
-          if (null == r) return l(e, y, u.drafts.type, {
+          let r = h.A.getActiveCommand(b.id);
+          if (null == r) return l(e, b, u.drafts.type, {
             requireConfirm: true,
             origin: "clipboard"
           });
           let i = null != (t = u.drafts.commandType) ? t : u.drafts.type,
             a = null,
-            s = h.A.getActiveOption(y.id);
+            s = h.A.getActiveOption(b.id);
           null != (a = (null == s ? true : s.type) === p.n4.ATTACHMENT ? s : null == (n = r.options) ? true : n.find(e => {
-            if (e.type === p.n4.ATTACHMENT) return null == g.A.getUpload(y.id, e.name, i)
+            if (e.type === p.n4.ATTACHMENT) return null == g.A.getUpload(b.id, e.name, i)
           })) && d.A.setFile({
-            channelId: y.id,
+            channelId: b.id,
             id: a.name,
             draftType: i,
             file: {
@@ -415,11 +415,11 @@ class k extends Chunk64700.Component {
             }
           })
         },
-        A = null != o ? o : c,
+        v = null != o ? o : c,
         {
-          files: v,
-          errors: I
-        } = U(e.clipboardData, u.uploadLongMessages ? A : null);
+          files: A,
+          errors: S
+        } = U(e.clipboardData, u.uploadLongMessages ? v : null);
       return (j("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
           kind: e.kind,
@@ -434,7 +434,7 @@ class k extends Chunk64700.Component {
             path: null == t ? true : t.path
           }
         }
-      })), 0 === v.length) ? ((null == I ? true : I.some(e => {
+      })), 0 === A.length) ? ((null == S ? true : S.some(e => {
         let {
           error: t
         } = e;
@@ -442,8 +442,8 @@ class k extends Chunk64700.Component {
       })) && (0, f.openUploadError)({
         title: R.intl.string(R.t.azO1Pe),
         help: R.intl.string(R.t["Koklr/"])
-      }), false) : (e.preventDefault(), e.stopPropagation(), this.saveCurrentText(), O(v), this.focus(), true)
-    }), this._unsubscribe = v.Y0.subscribe(e => {
+      }), false) : (e.preventDefault(), e.stopPropagation(), this.saveCurrentText(), O(A), this.focus(), true)
+    }), this._unsubscribe = A.Y0.subscribe(e => {
       requestAnimationFrame(() => {
         this.setState({
           popup: e
@@ -452,7 +452,7 @@ class k extends Chunk64700.Component {
     }), this.state = {
       focused: false,
       submitting: false,
-      popup: v.Y0.getState()
+      popup: A.Y0.getState()
     }
   }
 }
@@ -487,7 +487,7 @@ function U(e, t) {
       let t = l[0],
         n = null != (s = G(e.getData(u.type))) ? s : t.name;
       return {
-        files: [(0, b.VE)(t, n, t.type)],
+        files: [(0, y.VE)(t, n, t.type)],
         errors: d
       }
     }
@@ -503,7 +503,7 @@ function U(e, t) {
         type: "text/plain"
       });
       return {
-        files: [(0, b.VE)(e, "message.txt", "text/plain")],
+        files: [(0, y.VE)(e, "message.txt", "text/plain")],
         convertedStringToFile: true,
         errors: d
       }
@@ -523,7 +523,7 @@ function G(e) {
       let {
         pathname: n
       } = new URL(t.src);
-      null != n && n.length > 0 && (e = (0, y.kh)(n))
+      null != n && n.length > 0 && (e = (0, b.kh)(n))
     } catch (e) {}
     if (null != e && e.length > 0) return "".concat(e, ".png")
   }

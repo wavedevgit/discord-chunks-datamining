@@ -2,7 +2,7 @@
 /** chunk id: 409110, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => _
+  A: () => j
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,7 +23,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk61714 = require("./61714.jsx"),
   Chunk652215 = require("./652215.js");
 
-function v(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,7 +31,7 @@ function v(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let E = {
+let v = {
   [Chunk652215.uss.TEXT](e) {
     let {
       dragging: t,
@@ -40,7 +40,7 @@ let E = {
       dragStart: s,
       className: l
     } = e;
-    return (0, i.jsx)(A.A, {
+    return (0, i.jsx)(m.A, {
       dragStart: s,
       locked: n,
       pinned: r,
@@ -54,7 +54,7 @@ let E = {
       dragStart: n,
       className: r
     } = e;
-    return (0, i.jsx)(b.A, {
+    return (0, i.jsx)(g.A, {
       dragStart: n,
       locked: t,
       className: r
@@ -68,7 +68,7 @@ let E = {
       locked: s,
       pinned: l
     } = e;
-    return (0, i.jsx)(m.A, {
+    return (0, i.jsx)(b.A, {
       anchor: n,
       id: t,
       locked: s,
@@ -84,7 +84,7 @@ let E = {
       dragStart: r,
       className: s
     } = e;
-    return (0, i.jsx)(g.A, {
+    return (0, i.jsx)(y.A, {
       dragStart: r,
       dragging: t,
       locked: n,
@@ -93,7 +93,7 @@ let E = {
     })
   }
 };
-class x extends Chunk64700.PureComponent {
+class E extends Chunk64700.PureComponent {
   componentDidUpdate(e) {
     this.props.locked && !e.locked && null != this.state.lastLayoutUpdate && (o.A.track(O.HAw.OVERLAY_LAYOUT_UPDATED, this.state.lastLayoutUpdate), this.setState({
       lastLayoutUpdate: null
@@ -108,7 +108,7 @@ class x extends Chunk64700.PureComponent {
       state: {
         dragging: s
       }
-    } = this, l = E[e.type];
+    } = this, l = v[e.type];
     return null == l ? null : o => l({
       id: e.id,
       locked: i,
@@ -137,29 +137,29 @@ class x extends Chunk64700.PureComponent {
       size: u,
       anchor: h,
       minSize: f
-    } = e, b = (0, p.fd)(u, n), g = (0, p.Nv)(h, n), {
-      resizeX: A,
-      resizeY: m,
+    } = e, g = (0, p.fd)(u, n), y = (0, p.Nv)(h, n), {
+      resizeX: m,
+      resizeY: b,
       dragAnywhere: O
-    } = t, v = (0, y.AE)({
+    } = t, _ = (0, A.AE)({
       locked: r,
       isPreviewingInGame: s,
       pinned: a
-    }), E = {
+    }), v = {
       minX: 0,
       minY: 0,
       maxX: n.width,
       maxY: n.height
-    }, x = this.renderWidget(e, g, b);
-    return null == x ? null : (0, i.jsx)(c.A, {
+    }, E = this.renderWidget(e, y, g);
+    return null == E ? null : (0, i.jsx)(c.A, {
       id: o,
-      size: b,
-      anchor: g,
-      container: E,
+      size: g,
+      anchor: y,
+      container: v,
       minSize: f,
-      hidden: !v,
-      resizeX: A,
-      resizeY: m,
+      hidden: !_,
+      resizeX: m,
+      resizeY: b,
       style: {
         zIndex: d
       },
@@ -169,14 +169,14 @@ class x extends Chunk64700.PureComponent {
       onClick: this.handleFocus,
       onDragStart: this.handleDragStart,
       onDragEnd: this.handleDragEnd,
-      children: x
+      children: E
     })
   }
   constructor(...e) {
-    super(...e), v(this, "state", {
+    super(...e), _(this, "state", {
       lastLayoutUpdate: null,
       dragging: false
-    }), v(this, "handleUpdate", (e, t, n, i, r) => {
+    }), _(this, "handleUpdate", (e, t, n, i, r) => {
       let {
         props: {
           layoutSize: s
@@ -194,7 +194,7 @@ class x extends Chunk64700.PureComponent {
         size: u
       });
       let h = e === c.P.MOVE,
-        b = (0, p.Ly)(n, s.width, s.height, r.width, r.height);
+        g = (0, p.Ly)(n, s.width, s.height, r.width, r.height);
       this.setState({
         lastLayoutUpdate: {
           was_resized: null != o && o.was_resized || !h,
@@ -204,23 +204,23 @@ class x extends Chunk64700.PureComponent {
           window_height: s.height,
           widget_width: r.width,
           widget_height: r.height,
-          widget_left: b.left,
-          widget_top: b.top
+          widget_left: g.left,
+          widget_top: g.top
         }
       })
-    }), v(this, "handleFocus", e => {
+    }), _(this, "handleFocus", e => {
       let {
         layoutSize: t
       } = this.props;
       (0, f.validResolution)(t) && (0, l.uD)(e)
-    }), v(this, "handleDragStart", () => {
+    }), _(this, "handleDragStart", () => {
       let {
         widget: e
       } = this.props;
       null != e && (e.pinned && o.A.setPreviewInGameMode(true), this.setState({
         dragging: true
       }))
-    }), v(this, "handleDragEnd", () => {
+    }), _(this, "handleDragEnd", () => {
       let {
         widget: e
       } = this.props;
@@ -230,7 +230,7 @@ class x extends Chunk64700.PureComponent {
     })
   }
 }
-let S = Chunk311907.Ay.connectStores([Chunk555528.A, Chunk256415.default], e => {
+let x = Chunk311907.Ay.connectStores([Chunk555528.A, Chunk256415.default], e => {
   let {
     widgetId: t
   } = e, n = d.A.getWidget(t), i = u.default.getActiveRegions();
@@ -241,19 +241,19 @@ let S = Chunk311907.Ay.connectStores([Chunk555528.A, Chunk256415.default], e => 
     isPreviewingInGame: u.default.isPreviewingInGame(),
     isActiveRegion: null != n && n.type === O.uss.TEXT && i.has(O.ajI.TEXT_WIDGET)
   }
-})(x);
+})(E);
 
-function j(e, t) {
-  return (0, i.jsx)(S, {
+function S(e, t) {
+  return (0, i.jsx)(x, {
     widgetId: e,
     layoutSize: t
   }, e)
 }
-let _ = Chunk311907.Ay.connectStores([Chunk555528.A, Chunk531685.A], () => {
+let j = Chunk311907.Ay.connectStores([Chunk555528.A, Chunk531685.A], () => {
   var e;
   return {
     layout: null != (e = d.A.getLayout(f.OVERLAY_LAYOUT_ID)) ? e : true,
     layoutSize: h.A.windowSize(),
-    renderWidget: j
+    renderWidget: S
   }
 })(Chunk231679.A)

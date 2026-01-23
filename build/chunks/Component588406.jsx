@@ -25,8 +25,8 @@ function f(e) {
     } = e;
     return t
   }) : d, [p, t]), g = (0, s.A)(m, p), E = i.useMemo(() => g.filter(o.Vq), [g]), {
-    tooltipText: b,
-    ariaLabel: y
+    tooltipText: y,
+    ariaLabel: b
   } = i.useMemo(() => {
     if (t.length > 0) {
       var e;
@@ -55,8 +55,8 @@ function f(e) {
   }, [E, t.length, n, f]);
   return {
     onMouseEnter: h,
-    ariaLabel: y,
-    tooltipText: b,
+    ariaLabel: b,
+    tooltipText: y,
     icon: i.useMemo(() => {
       if (t.length > 0) return a._CD;
       if (n || f) return a.lI8;

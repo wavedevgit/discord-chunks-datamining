@@ -1,7 +1,7 @@
 /** Chunk was on 66003 **/
-/** chunk id: 258942, original params: t,e,s (module,exports,require) **/
+/** chunk id: 258942, original params: t,i,s (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,51 +19,51 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk449488 = require("./449488.js");
 
-function _(t) {
+function A(t) {
   let {
-    guildId: e,
-    transitionState: _,
-    onClose: b,
-    analyticsType: f = r.M.APP_DIRECTORY_UPSELL_MODAL
+    guildId: i,
+    transitionState: A,
+    onClose: h,
+    analyticsType: I = l.M.APP_DIRECTORY_UPSELL_MODAL
   } = t;
-  return i.useEffect(() => {
-    x.default.track(u.HAw.DISMISSIBLE_CONTENT_SHOWN, {
-      type: r.M[f],
-      guild_id: e
+  return n.useEffect(() => {
+    d.default.track(x.HAw.DISMISSIBLE_CONTENT_SHOWN, {
+      type: l.M[I],
+      guild_id: i
     })
-  }, [e, f]), (0, a.jsx)(c.ExpressiveModal, {
-    title: A.intl.string(A.t["2tv5YG"]),
-    subtitle: A.intl.string(A.t.pgwlD7),
-    transitionState: _,
+  }, [i, I]), (0, e.jsx)(r.ExpressiveModal, {
+    title: C.intl.string(C.t["2tv5YG"]),
+    subtitle: C.intl.string(C.t.pgwlD7),
+    transitionState: A,
     size: "sm",
     graphic: {
       type: "lottie",
       lottie: () => s.e("95947").then(s.t.bind(s, 604902, 19)),
       aspectRatio: "6/4"
     },
-    onClose: b,
+    onClose: h,
     actions: [{
       variant: "secondary",
-      text: A.intl.string(A.t.L5eIZ2),
+      text: C.intl.string(C.t.L5eIZ2),
       onClick: () => {
-        b(), (0, n.Dr)(f, {
+        h(), (0, o.Dr)(I, {
           forceTrack: true,
-          dismissAction: p.i.SECONDARY,
-          guildId: e
+          dismissAction: u.i.SECONDARY,
+          guildId: i
         })
       }
     }, {
       variant: "primary",
-      text: A.intl.string(A.t["5e8Mrp"]),
+      text: C.intl.string(C.t["5e8Mrp"]),
       onClick: () => {
-        b(), (0, n.Dr)(f, {
+        h(), (0, o.Dr)(I, {
           forceTrack: true,
-          dismissAction: p.i.PRIMARY,
-          guildId: e
-        }), (0, d.transitionToGlobalDiscovery)({
-          tab: C.GlobalDiscoveryTab.APPS,
+          dismissAction: u.i.PRIMARY,
+          guildId: i
+        }), (0, c.transitionToGlobalDiscovery)({
+          tab: _.GlobalDiscoveryTab.APPS,
           newSessionState: {
-            guildId: e,
+            guildId: i,
             entrypoint: {
               name: m.sW.APPLICATION_DIRECTORY_UPSELL_MODAL
             }
@@ -71,41 +71,41 @@ function _(t) {
         })
       }
     }],
-    children: (0, a.jsxs)("ul", {
-      className: h.qI,
-      children: [(0, a.jsxs)("li", {
-        className: h.Aw,
-        children: [(0, a.jsx)(l.Dud, {
+    children: (0, e.jsxs)("ul", {
+      className: p.qI,
+      children: [(0, e.jsxs)("li", {
+        className: p.Aw,
+        children: [(0, e.jsx)(a.Dud, {
           color: "currentColor",
-          className: h.Kb
-        }), (0, a.jsx)(l.Text, {
+          className: p.Kb
+        }), (0, e.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: A.intl.string(A.t["0vKo5F"])
+          children: C.intl.string(C.t["0vKo5F"])
         })]
-      }), (0, a.jsx)(o.A, {
-        className: h.yF
-      }), (0, a.jsxs)("li", {
-        className: h.Aw,
-        children: [(0, a.jsx)(l.CnV, {
+      }), (0, e.jsx)(b.A, {
+        className: p.yF
+      }), (0, e.jsxs)("li", {
+        className: p.Aw,
+        children: [(0, e.jsx)(a.CnV, {
           color: "currentColor",
-          className: h.EQ
-        }), (0, a.jsx)(l.Text, {
+          className: p.EQ
+        }), (0, e.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: A.intl.string(A.t.CprEDO)
+          children: C.intl.string(C.t.CprEDO)
         })]
-      }), (0, a.jsx)(o.A, {
-        className: h.yF
-      }), (0, a.jsxs)("li", {
-        className: h.Aw,
-        children: [(0, a.jsx)(l.nm2, {
+      }), (0, e.jsx)(b.A, {
+        className: p.yF
+      }), (0, e.jsxs)("li", {
+        className: p.Aw,
+        children: [(0, e.jsx)(a.nm2, {
           color: "currentColor",
-          className: h.Cf
-        }), (0, a.jsx)(l.Text, {
+          className: p.Cf
+        }), (0, e.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: A.intl.string(A.t.wQJMPC)
+          children: C.intl.string(C.t.wQJMPC)
         })]
       })]
     })

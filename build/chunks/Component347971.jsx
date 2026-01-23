@@ -30,20 +30,20 @@ function u() {
         urlOrigin: "devtools"
       })
     }, []);
-  return (0, a.jsxs)(i.nVY, {
+  return (0, a.jsxs)(r.nVY, {
     label: "Settings Deep Link Tool",
-    children: [(0, a.jsx)(r.ksK, {
+    children: [(0, a.jsx)(i.ksK, {
       label: "URL",
       placeholder: "e.g. /settings/appearance",
       onChange: e => d.setState({
         urlString: e,
         error: null
       })
-    }), (0, a.jsx)(i.$nd, {
+    }), (0, a.jsx)(r.$nd, {
       variant: "primary",
       onClick: t,
       text: "Open User Settings for URL"
-    }), null != e && (0, a.jsx)(i.EYj, {
+    }), null != e && (0, a.jsx)(r.EYj, {
       variant: "text-sm/normal",
       color: "text-feedback-critical",
       children: e

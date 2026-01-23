@@ -13,6 +13,6 @@ function o(e) {
   let t = (0, l.bG)([i.Ay], () => i.Ay.getGuilds()),
     n = r.useRef([]);
   return r.useEffect(() => {
-    a.Ay.forEach(e => n.current.push(e))
-  }, []), r.useMemo(() => [...Object.values(t).map(t => t.emojis.filter(t => (0, s.n)(t, e))).flat(), ...n.current], [t, e])
+    s.Ay.forEach(e => n.current.push(e))
+  }, []), r.useMemo(() => [...Object.values(t).map(t => t.emojis.filter(t => (0, a.n)(t, e))).flat(), ...n.current], [t, e])
 }

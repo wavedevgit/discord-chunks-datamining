@@ -1,5 +1,5 @@
 /** Chunk was on 7937 **/
-/** chunk id: 439309, original params: t,e,a (module,exports,require) **/
+/** chunk id: 439309, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   A: () => x
 });
@@ -17,17 +17,17 @@ var Chunk985018 = require("./985018.jsx"),
 
 function x(t) {
   return [{
-    tags: [n.intl.string(n.t["/XjSo3"]), n.intl.string(n.t["Af/56e"]), n.intl.string(n.t.LNsW0L)],
+    tags: [a.intl.string(a.t["/XjSo3"]), a.intl.string(a.t["Af/56e"]), a.intl.string(a.t.LNsW0L)],
     posts: [{
       user: {
         name: "pocketman",
         avatarSrc: g
       },
       tagId: 2,
-      title: n.intl.string(n.t.g1hPkw),
+      title: a.intl.string(a.t.g1hPkw),
       messageCount: 8,
       reactionCount: 0,
-      activeAgo: n.intl.formatToPlainString(n.t.N9M4N1, {
+      activeAgo: a.intl.formatToPlainString(a.t.N9M4N1, {
         count: 10
       }),
       attachment: r
@@ -37,10 +37,10 @@ function x(t) {
         avatarSrc: d
       },
       tagId: 1,
-      title: n.intl.string(n.t["5GM0TY"]),
+      title: a.intl.string(a.t["5GM0TY"]),
       messageCount: 17,
       reactionCount: 11,
-      activeAgo: n.intl.formatToPlainString(n.t.N9M4N1, {
+      activeAgo: a.intl.formatToPlainString(a.t.N9M4N1, {
         count: 24
       })
     }, {
@@ -49,10 +49,10 @@ function x(t) {
         avatarSrc: m
       },
       tagId: 2,
-      title: n.intl.string(n.t["2LpQS8"]),
+      title: a.intl.string(a.t["2LpQS8"]),
       messageCount: 18,
       reactionCount: 15,
-      activeAgo: n.intl.formatToPlainString(n.t.N9M4N1, {
+      activeAgo: a.intl.formatToPlainString(a.t.N9M4N1, {
         count: 40
       })
     }, {
@@ -61,52 +61,52 @@ function x(t) {
         avatarSrc: u
       },
       tagId: 0,
-      title: n.intl.string(n.t.gFI7Lw),
+      title: a.intl.string(a.t.gFI7Lw),
       messageCount: 2,
       reactionCount: 0,
-      activeAgo: n.intl.formatToPlainString(n.t.p0KedC, {
+      activeAgo: a.intl.formatToPlainString(a.t.p0KedC, {
         count: 1
       }),
       attachment: s
     }],
     postPreview: {
-      title: n.intl.string(n.t["5GM0TY"]),
+      title: a.intl.string(a.t["5GM0TY"]),
       messages: [{
         author: {
           name: "skaterdood12",
           avatarSrc: d,
           isOP: true
         },
-        content: n.intl.string(n.t.zEDYfk)
+        content: a.intl.string(a.t.zEDYfk)
       }, {
         author: {
           name: "pocketman",
           avatarSrc: g,
           isOP: false
         },
-        content: n.intl.string(n.t["+XGMDs"])
+        content: a.intl.string(a.t["+XGMDs"])
       }, {
         author: {
           name: "ladydaisy",
           avatarSrc: m,
           isOP: false
         },
-        content: n.intl.string(n.t.z0qmHN)
+        content: a.intl.string(a.t.z0qmHN)
       }]
     },
-    ariaLabel: n.intl.string(n.t.TDOyPg)
+    ariaLabel: a.intl.string(a.t.TDOyPg)
   }, {
-    tags: [n.intl.string(n.t.ogyxel), n.intl.string(n.t.S97ZXx), n.intl.string(n.t.d6GdP4)],
+    tags: [a.intl.string(a.t.ogyxel), a.intl.string(a.t.S97ZXx), a.intl.string(a.t.d6GdP4)],
     posts: [{
       user: {
         name: "ladydaisy",
         avatarSrc: m
       },
       tagId: 0,
-      title: n.intl.string(n.t.aOyKZ9),
+      title: a.intl.string(a.t.aOyKZ9),
       messageCount: 8,
       reactionCount: 11,
-      activeAgo: n.intl.formatToPlainString(n.t.N9M4N1, {
+      activeAgo: a.intl.formatToPlainString(a.t.N9M4N1, {
         count: 10
       }),
       attachment: i
@@ -116,10 +116,10 @@ function x(t) {
         avatarSrc: g
       },
       tagId: 1,
-      title: n.intl.string(n.t.EQIrvX),
+      title: a.intl.string(a.t.EQIrvX),
       messageCount: 24,
       reactionCount: 0,
-      activeAgo: n.intl.formatToPlainString(n.t.N9M4N1, {
+      activeAgo: a.intl.formatToPlainString(a.t.N9M4N1, {
         count: 24
       })
     }, {
@@ -128,10 +128,10 @@ function x(t) {
         avatarSrc: d
       },
       tagId: 1,
-      title: n.intl.string(n.t.f9n6Ue),
+      title: a.intl.string(a.t.f9n6Ue),
       messageCount: 15,
       reactionCount: 17,
-      activeAgo: n.intl.formatToPlainString(n.t.N9M4N1, {
+      activeAgo: a.intl.formatToPlainString(a.t.N9M4N1, {
         count: 40
       })
     }, {
@@ -140,65 +140,65 @@ function x(t) {
         avatarSrc: u
       },
       tagId: 2,
-      title: n.intl.string(n.t.lCjd1A),
+      title: a.intl.string(a.t.lCjd1A),
       messageCount: 2,
       reactionCount: 0,
-      activeAgo: n.intl.formatToPlainString(n.t.p0KedC, {
+      activeAgo: a.intl.formatToPlainString(a.t.p0KedC, {
         count: 1
       }),
       attachment: l
     }],
     postPreview: {
-      title: n.intl.string(n.t.f9n6Ue),
+      title: a.intl.string(a.t.f9n6Ue),
       messages: [{
         author: {
           name: "skaterdood12",
           avatarSrc: d,
           isOP: true
         },
-        content: n.intl.string(n.t.VeQaUn)
+        content: a.intl.string(a.t.VeQaUn)
       }, {
         author: {
           name: "pocketman",
           avatarSrc: g,
           isOP: false
         },
-        content: n.intl.string(n.t.lwjElH)
+        content: a.intl.string(a.t.lwjElH)
       }, {
         author: {
           name: "ladydaisy",
           avatarSrc: m,
           isOP: false
         },
-        content: n.intl.string(n.t.RNqQmI)
+        content: a.intl.string(a.t.RNqQmI)
       }]
     },
-    ariaLabel: n.intl.string(n.t.iLeWrd)
+    ariaLabel: a.intl.string(a.t.iLeWrd)
   }, {
-    tags: [n.intl.string(n.t["5jLvfc"]), n.intl.string(n.t.lRgWdQ), n.intl.string(n.t.Hy4EP0)],
+    tags: [a.intl.string(a.t["5jLvfc"]), a.intl.string(a.t.lRgWdQ), a.intl.string(a.t.Hy4EP0)],
     posts: [{
       user: {
         name: "skaterdood12",
         avatarSrc: d
       },
       tagId: null,
-      title: n.intl.string(n.t.to6uUe),
+      title: a.intl.string(a.t.to6uUe),
       messageCount: 11,
       reactionCount: 17,
-      activeAgo: n.intl.formatToPlainString(n.t.N9M4N1, {
+      activeAgo: a.intl.formatToPlainString(a.t.N9M4N1, {
         count: 10
       }),
-      attachment: c
+      attachment: o
     }, {
       user: {
         name: "pocketman",
         avatarSrc: g
       },
       tagId: 1,
-      title: n.intl.string(n.t.dsQXOj),
+      title: a.intl.string(a.t.dsQXOj),
       messageCount: 24,
       reactionCount: 0,
-      activeAgo: n.intl.formatToPlainString(n.t.N9M4N1, {
+      activeAgo: a.intl.formatToPlainString(a.t.N9M4N1, {
         count: 24
       })
     }, {
@@ -207,10 +207,10 @@ function x(t) {
         avatarSrc: m
       },
       tagId: 0,
-      title: n.intl.string(n.t["XL/bba"]),
+      title: a.intl.string(a.t["XL/bba"]),
       messageCount: 18,
       reactionCount: 15,
-      activeAgo: n.intl.formatToPlainString(n.t.N9M4N1, {
+      activeAgo: a.intl.formatToPlainString(a.t.N9M4N1, {
         count: 40
       })
     }, {
@@ -219,39 +219,39 @@ function x(t) {
         avatarSrc: u
       },
       tagId: null,
-      title: n.intl.string(n.t.XSYHP3),
+      title: a.intl.string(a.t.XSYHP3),
       messageCount: 2,
       reactionCount: 0,
-      activeAgo: n.intl.formatToPlainString(n.t.p0KedC, {
+      activeAgo: a.intl.formatToPlainString(a.t.p0KedC, {
         count: 1
       }),
-      attachment: o
+      attachment: c
     }],
     postPreview: {
-      title: n.intl.string(n.t.to6uUe),
+      title: a.intl.string(a.t.to6uUe),
       messages: [{
         author: {
           name: "skaterdood12",
           avatarSrc: d,
           isOP: true
         },
-        content: n.intl.string(n.t["6DyhGl"])
+        content: a.intl.string(a.t["6DyhGl"])
       }, {
         author: {
           name: "pocketman",
           avatarSrc: g,
           isOP: false
         },
-        content: n.intl.string(n.t.BLiuYI)
+        content: a.intl.string(a.t.BLiuYI)
       }, {
         author: {
           name: "ladydaisy",
           avatarSrc: m,
           isOP: false
         },
-        content: n.intl.string(n.t.PYLKhH)
+        content: a.intl.string(a.t.PYLKhH)
       }]
     },
-    ariaLabel: n.intl.string(n.t.kEMWrG)
+    ariaLabel: a.intl.string(a.t.kEMWrG)
   }][t]
 }

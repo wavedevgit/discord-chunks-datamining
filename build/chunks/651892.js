@@ -8,10 +8,10 @@ require.d(exports, {
   Xm: () => E,
   YT: () => u,
   fx: () => h,
-  oK: () => y,
+  oK: () => b,
   up: () => _,
   wr: () => f,
-  xv: () => b
+  xv: () => y
 }), require("./65821.js");
 var Chunk957565 = require("./957565.js"),
   Chunk723702 = require("./723702.js"),
@@ -117,11 +117,11 @@ let E = (e, t) => {
   }), (0, r.C)(m(e))
 };
 
-function b(e) {
+function y(e) {
   if (0 === e.rewardsConfig.rewards.length) throw Error("Quest ".concat(e.id, " has no rewards configured"));
   return e.rewardsConfig.rewards[0]
 }
-let y = e => {
+let b = e => {
   let {
     hasVideoAsset: t,
     playerState: n,

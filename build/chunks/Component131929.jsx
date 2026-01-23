@@ -2,8 +2,8 @@
 /** chunk id: 131929, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => g,
-  s: () => p
+  A: () => m,
+  s: () => g
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,7 +17,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk979533 = require("./979533.js");
 
-function f(e) {
+function p(e) {
   var t;
   let {
     guildScheduledEvent: n,
@@ -55,7 +55,7 @@ function f(e) {
   })
 }
 
-function p(e) {
+function g(e) {
   var t;
   let {
     invite: n
@@ -103,7 +103,7 @@ function p(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     invite: t,
     channel: n,
@@ -112,7 +112,7 @@ function g(e) {
   } = e, {
     guild_scheduled_event: l
   } = t;
-  return null != l ? (0, r.jsx)(f, {
+  return null != l ? (0, r.jsx)(p, {
     guildScheduledEvent: l,
     channel: n,
     isSubmitting: i,

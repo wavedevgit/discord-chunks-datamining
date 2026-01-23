@@ -21,7 +21,7 @@ var Chunk284009 = require("./284009.js"),
   Chunk900090 = require("./900090.js"),
   Chunk144667 = require("./144667.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,14 +30,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -54,13 +54,13 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = new Chunk626584.A("MarkdownToSlate"),
-  S = {
+let A = new Chunk626584.A("MarkdownToSlate"),
+  I = {
     link: {
       type: "skip"
     },
@@ -226,19 +226,19 @@ let v = new Chunk626584.A("MarkdownToSlate"),
       after: ""
     }
   },
-  I = new Set(["*", "_", "\\"]),
+  S = new Set(["*", "_", "\\"]),
   T = {},
   C = {};
 for (let e in Chunk542664.A.RULES) {
-  if (!(module in S)) throw Error("Slate: Unknown markdown rule: ".concat(module, ".  If you have just added a new markdown rule ") + "then you probably need to add it to this file so that the rich chat box understands it.");
-  let t = S[module];
+  if (!(module in I)) throw Error("Slate: Unknown markdown rule: ".concat(module, ".  If you have just added a new markdown rule ") + "then you probably need to add it to this file so that the rich chat box understands it.");
+  let t = I[module];
   "skip" !== exports.type && (T[module] = N(Chunk542664.A.RULES[module])), "skip" !== exports.type && "inlineObject" !== exports.type && (C[module] = N("text" === module ? Chunk704726.Ay : Chunk542664.A.RULES[module]))
 }
 
 function N(e) {
   i()(null != e.parse, "Slate: rule must have a parse function");
   let t = e.parse;
-  return A(y({}, e), {
+  return v(b({}, e), {
     parse(e, n, r) {
       let i = t.call(this, e, n, r);
       return i instanceof Array || (i.originalMatch = e), i
@@ -357,7 +357,7 @@ function V(e, t) {
       n += 3 + (null != s.match(E.b) ? s : "").length;
       let l = e.substring(a, n);
       "" !== l && G(l, t, r).forEach(e => {
-        o.push(A(y({}, e), {
+        o.push(v(b({}, e), {
           start: e.start + a
         }))
       })
@@ -547,7 +547,7 @@ function H(e, t, n, r) {
     before: P.exec(r.input)[1],
     after: ""
   };
-  let i = S["link" === t ? "url" : t];
+  let i = I["link" === t ? "url" : t];
   if ("inlineStyle" === i.type) return i;
   throw Error("Slate: rule must be an inlineStyle")
 }
@@ -610,13 +610,13 @@ function z(e, t) {
 }
 
 function q(e, t, n) {
-  if (t.split("").some(e => I.has(e))) return v.error(e), n;
+  if (t.split("").some(e => S.has(e))) return A.error(e), n;
   throw Error(e)
 }
 
 function X(e, t, n, r) {
   for (; n < r;)
-    if (I.has(t[n])) n = W(e, t, t[n], n, "syntaxBefore"), n = z(t, n);
+    if (S.has(t[n])) n = W(e, t, t[n], n, "syntaxBefore"), n = z(t, n);
     else break;
   return n
 }

@@ -2,7 +2,7 @@
 /** chunk id: 717995, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  R: () => b
+  R: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,32 +21,32 @@ let m = 11,
   g = ["left", "center", "right"],
   E = ["top", "center", "bottom"];
 
-function b(e) {
+function y(e) {
   let {
     isVisible: t,
     isRendered: n = t,
     targetElementRef: a,
-    targetElement: b,
-    anchorRef: y,
+    targetElement: y,
+    anchorRef: b,
     id: O,
-    content: A,
-    position: v = "top",
-    align: S = "center",
-    spacing: I = m,
+    content: v,
+    position: A = "top",
+    align: I = "center",
+    spacing: S = m,
     caretConfig: T,
     layerContext: C,
     animationStyle: N,
     positionKey: R
   } = e, {
     isRichTooltip: w
-  } = (0, p.w6)(), P = (0, u.D)("Tooltip"), D = i.useMemo(() => ("left" === v || "right" === v ? E : g).includes(S) ? S : "center", [v, S]);
+  } = (0, p.w6)(), P = (0, u.D)("Tooltip"), D = i.useMemo(() => ("left" === A || "right" === A ? E : g).includes(I) ? I : "center", [A, I]);
   if (!n) return null;
   let x = e => {
     var t, n, i, a;
     let {
       position: l,
       nudge: c
-    } = e, u = null != l ? l : v, p = null != (t = null == T ? true : T.align) ? t : null != c && 0 !== c ? "custom" : "center", m = null != (n = null != (i = null == T ? true : T.customOffset) ? i : c) ? n : 0, g = {
+    } = e, u = null != l ? l : A, p = null != (t = null == T ? true : T.align) ? t : null != c && 0 !== c ? "custom" : "center", m = null != (n = null != (i = null == T ? true : T.customOffset) ? i : c) ? n : 0, g = {
       position: null != (a = null == T ? true : T.position) ? a : (0, _.l8)(u),
       align: p,
       customOffset: "custom" === p ? m : true
@@ -62,10 +62,10 @@ function b(e) {
         caretConfig: g
       }), (0, r.jsx)("div", {
         className: h.rv,
-        children: "string" == typeof A ? (0, r.jsx)(d.Text, {
+        children: "string" == typeof v ? (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
-          children: A
-        }) : A
+          children: v
+        }) : v
       })]
     });
     return N ? (0, r.jsx)(o.animated.div, {
@@ -74,12 +74,12 @@ function b(e) {
     }) : E
   };
   if (P) {
-    let e = (0, l.Pv)(v, S),
-      t = null != b ? b : a.current;
+    let e = (0, l.Pv)(A, I),
+      t = null != y ? y : a.current;
     return (0, r.jsx)(l.Ow, {
       className: h.BM,
       open: n,
-      spacing: I,
+      spacing: S,
       placement: e,
       reference: t,
       renderLayer: e => {
@@ -97,10 +97,10 @@ function b(e) {
     })
   }
   let L = (0, r.jsx)(d.QCO, {
-    targetRef: null != y ? y : a,
-    position: v,
+    targetRef: null != b ? b : a,
+    position: A,
     align: D,
-    spacing: I,
+    spacing: S,
     positionKey: R,
     autoInvert: true,
     nudgeAlignIntoViewport: true,

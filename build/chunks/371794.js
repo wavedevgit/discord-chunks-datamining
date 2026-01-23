@@ -2,7 +2,7 @@
 /** chunk id: 371794, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  QB: () => S,
+  QB: () => I,
   VH: () => w,
   YE: () => C,
   ZH: () => M,
@@ -31,7 +31,7 @@ require("./723702.js");
 var Chunk661191 = require("./661191.js"),
   Chunk652215 = require("./652215.js");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,21 +40,21 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 require("./985018.jsx"), l().shim();
-let S = !Chunk607399.Fr && !Chunk607399.v1 && false !== (0, Chunk676279.Z5)(),
-  I = 3;
+let I = !Chunk607399.Fr && !Chunk607399.v1 && false !== (0, Chunk676279.Z5)(),
+  S = 3;
 
 function T(e, t) {
   let {
@@ -71,7 +71,7 @@ function T(e, t) {
     },
     search: null != i ? "?store_listing_id=".concat(i) : ""
   };
-  return v({
+  return A({
     pathname: null != s && null != o ? O.BVt.CHANNEL(o, s, e) : O.BVt.APPLICATION_STORE_LISTING_SKU(e, a)
   }, l)
 }
@@ -90,7 +90,7 @@ function C(e, t, n, r) {
     default:
       r = "webp"
   }
-  "webp" !== r || S || (r = "png");
+  "webp" !== r || I || (r = "png");
   let o = "string" == typeof t ? t : t.id,
     l = i = "https:";
   return a = null != s ? "".concat(l, "//").concat(s, "/app-assets/").concat(e, "/store/").concat(o, ".").concat(r) : "".concat(l).concat(window.GLOBAL_ENV.API_ENDPOINT).concat(O.Rsh.STORE_ASSET(e, o, r)), null != n && (a += "?size=".concat((0, p.kr)(n * (0, p.mZ)()))), a
@@ -126,7 +126,7 @@ async function R(e) {
         oldFormErrors: true,
         rejectWithError: false
       }), "string" == typeof e.query) throw Error("string query not supported");
-    e.query = v({}, u, e.query)
+    e.query = A({}, u, e.query)
   }
   return d.Bo.get(e)
 }
@@ -139,13 +139,13 @@ function w(e, t, n) {
 function P(e, t, n) {
   var r;
   let i = null != (r = n.getNowPlaying(e)) ? r : {},
-    a = y.default.keys(i).map(e => {
+    a = b.default.keys(i).map(e => {
       let n = t.getUser(e);
       return null == n ? null : {
         user: n,
         startTime: i[n.id].startedPlaying
       }
-    }).filter(b.Vq).sort((e, t) => t.startTime - e.startTime);
+    }).filter(y.Vq).sort((e, t) => t.startTime - e.startTime);
   return 0 === a.length ? null : {
     type: O.g_B.NOW_PLAYING,
     userInfo: a
@@ -161,7 +161,7 @@ function D(e, t, n) {
       user: n,
       endTime: Date.parse(e.last_played_at)
     }
-  }).filter(b.Vq).sort((e, t) => t.endTime - e.endTime);
+  }).filter(y.Vq).sort((e, t) => t.endTime - e.endTime);
   return 0 === i.length ? null : {
     type: O.g_B.EVER_PLAYED,
     userInfo: i
@@ -203,7 +203,7 @@ function M(e, t, n) {
     type: O.g_B.HAS_FREE_PREMIUM_CONTENT
   });
   let o = r.releaseDate;
-  return null != o && s()().diff(o, "months") < I && (r.accessType === O.ds3.EARLY_ACCESS ? a.push({
+  return null != o && s()().diff(o, "months") < S && (r.accessType === O.ds3.EARLY_ACCESS ? a.push({
     type: O.g_B.EARLY_ACCESS,
     releaseDate: o
   }) : a.push({

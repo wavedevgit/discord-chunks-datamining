@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 787331, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,15 +17,15 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk276991 = require("./276991.js");
 
-function A(e) {
+function f(e) {
   let {
     user: t,
     nickname: n,
-    status: A,
-    isFocused: g
+    status: f,
+    isFocused: m
   } = e, {
-    analyticsLocations: m
-  } = (0, a.Ay)(), b = e => {
+    analyticsLocations: A
+  } = (0, a.Ay)(), _ = e => {
     null == e || e.stopPropagation(), l.A.addRelationship({
       userId: t.id,
       context: {
@@ -34,42 +34,42 @@ function A(e) {
       type: true,
       fromFriendSuggestion: true
     })
-  }, _ = e => {
+  }, b = e => {
     null == e || e.stopPropagation(), s.A.ignore(t.id)
-  }, E = A === p.clD.OFFLINE ? p.clD.UNKNOWN : A;
+  }, E = f === p.clD.OFFLINE ? p.clD.UNKNOWN : f;
   return (0, r.jsx)(u.A, {
-    isFocused: g,
+    isFocused: m,
     user: t,
     onClick: () => (0, o.openUserProfileModal)({
       userId: t.id,
-      sourceAnalyticsLocations: m
+      sourceAnalyticsLocations: A
     }),
     children: e => {
       let l = (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(c.A, {
           icon: i.A9s,
           actionType: c.A.ActionTypes.ACCEPT,
-          tooltip: f.intl.string(f.t.Zcibdf),
-          onClick: b,
+          tooltip: h.intl.string(h.t.Zcibdf),
+          onClick: _,
           shouldHighlight: e
         }), (0, r.jsx)(c.A, {
           icon: i.PGe,
           actionType: c.A.ActionTypes.DENY,
-          tooltip: f.intl.string(f.t.xuio0C),
-          onClick: _,
+          tooltip: h.intl.string(h.t.xuio0C),
+          onClick: b,
           shouldHighlight: e
         })]
       });
       return (0, r.jsxs)("div", {
-        className: h.a,
+        className: g.a,
         children: [(0, r.jsx)(d.A, {
           user: t,
           hovered: e,
           status: E,
           subText: n,
-          className: h.__invalid_userInfo
+          className: g.__invalid_userInfo
         }), (0, r.jsx)("div", {
-          className: h.o,
+          className: g.o,
           children: l
         })]
       })

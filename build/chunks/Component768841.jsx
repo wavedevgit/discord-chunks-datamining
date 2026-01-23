@@ -18,7 +18,7 @@ class c extends Chunk272355.A {
     i.h.unsubscribe("SHOW_KEYBOARD_SHORTCUTS", this.showKeyboardShortcuts), i.h.unsubscribe("HIDE_KEYBOARD_SHORTCUTS", this.hideKeyboardShortcuts)
   }
   showKeyboardShortcuts() {
-    (0, l.qfG)(e => (0, r.jsx)(s.A, function(e) {
+    (0, l.qfG)(e => (0, r.jsx)(a.A, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

@@ -25,19 +25,19 @@ let h = function(e) {
     title: h,
     guildId: m,
     className: g
-  } = e, E = (0, c.h)(i), b = (0, s.yK)([u.default], () => {
+  } = e, E = (0, c.h)(i), y = (0, s.yK)([u.default], () => {
     var e;
     return null != (e = n.map(e => u.default.getUser(e)).filter(f.Vq)) ? e : []
-  }), y = null == E ? true : E.name, O = null != t ? (0, d.Fe)(new Date(t)) : null, A = null == E ? true : E.getIconURL(32);
+  }), b = null == E ? true : E.name, O = null != t ? (0, d.Fe)(new Date(t)) : null, v = null == E ? true : E.getIconURL(32);
   if (null == t) return null;
-  let v = null == h || "" === h;
+  let A = null == h || "" === h;
   return (0, r.jsxs)("div", {
     className: a()(g, _.kL),
     children: [(0, r.jsx)("div", {
       className: _.gS,
       "aria-hidden": "true",
-      children: null != A ? (0, r.jsx)("img", {
-        src: A,
+      children: null != v ? (0, r.jsx)("img", {
+        src: v,
         alt: "",
         className: _.NH
       }) : (0, r.jsx)(l.kN9, {
@@ -49,13 +49,13 @@ let h = function(e) {
       children: [(0, r.jsx)(l.Text, {
         className: _.NV,
         variant: "text-md/normal",
-        color: v ? "text-subtle" : "text-default",
-        children: v ? p.intl.string(p.t.Cyxddp) : h
-      }), null != y && "" !== y && (0, r.jsx)(l.Text, {
+        color: A ? "text-subtle" : "text-default",
+        children: A ? p.intl.string(p.t.Cyxddp) : h
+      }), null != b && "" !== b && (0, r.jsx)(l.Text, {
         className: _.xD,
         color: "text-subtle",
         variant: "text-sm/medium",
-        children: y
+        children: b
       }), (0, r.jsx)(l.Text, {
         className: _.xD,
         color: "text-subtle",
@@ -66,7 +66,7 @@ let h = function(e) {
       className: _.jW,
       children: (0, r.jsx)(o.A, {
         maxUsers: 4,
-        users: b,
+        users: y,
         guildId: m,
         size: l._3J.SIZE_24,
         "aria-label": p.intl.string(p.t.WTozwe)

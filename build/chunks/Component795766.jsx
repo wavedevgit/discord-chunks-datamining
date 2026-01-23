@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 795766, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,23 +15,23 @@ var Chunk311907 = require("./311907.js"),
   Chunk515610 = require("./515610.js"),
   Chunk985018 = require("./985018.jsx");
 
-function p(e) {
+function h(e) {
   let {
     channel: t
   } = e, {
     isFavoritesPerk: n
-  } = (0, u.l)("ChannelFavoritesHeaderButton"), p = (0, d.A)(), {
-    notifyFavoriteAdded: h
-  } = (0, c.CJ)(), b = (0, l.bG)([s.A], () => s.A.isFavorite(t.id));
-  if (!n || p) return null;
-  let g = b ? i.Gg5 : i.yA2,
-    m = b ? f.intl.string(f.t.Bou7lT) : f.intl.string(f.t["4wcdE/"]);
-  return (0, r.jsx)(a.Ay.Icon, {
-    icon: g,
-    tooltip: m,
-    "aria-label": m,
+  } = (0, u.l)("ChannelFavoritesHeaderButton"), h = (0, d.A)(), {
+    notifyFavoriteAdded: f
+  } = (0, c.CJ)(), g = (0, l.bG)([a.A], () => a.A.isFavorite(t.id));
+  if (!n || h) return null;
+  let m = g ? i.Gg5 : i.yA2,
+    b = g ? p.intl.string(p.t.Bou7lT) : p.intl.string(p.t["4wcdE/"]);
+  return (0, r.jsx)(s.Ay.Icon, {
+    icon: m,
+    tooltip: b,
+    "aria-label": b,
     onClick: () => {
-      b ? (0, o.i_)(t.id) : (h(), (0, o.Jz)(t.id))
+      g ? (0, o.i_)(t.id) : (f(), (0, o.Jz)(t.id))
     }
   })
 }

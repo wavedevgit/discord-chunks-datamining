@@ -17,10 +17,10 @@ module.exports = function(e, t, n, l, c, u) {
     g = n & o ? new r : true;
   for (u.set(e, t), u.set(t, e); ++h < f;) {
     var E = e[h],
-      b = t[h];
-    if (l) var y = d ? l(b, E, h, t, e, u) : l(E, b, h, e, t, u);
-    if (true !== y) {
-      if (y) continue;
+      y = t[h];
+    if (l) var b = d ? l(y, E, h, t, e, u) : l(E, y, h, e, t, u);
+    if (true !== b) {
+      if (b) continue;
       m = false;
       break
     }
@@ -31,7 +31,7 @@ module.exports = function(e, t, n, l, c, u) {
         m = false;
         break
       }
-    } else if (!(E === b || c(E, b, n, l, u))) {
+    } else if (!(E === y || c(E, y, n, l, u))) {
       m = false;
       break
     }

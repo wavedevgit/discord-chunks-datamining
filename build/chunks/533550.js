@@ -2,14 +2,14 @@
 /** chunk id: 533550, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   RX: () => u,
-  q8: () => f
+  q8: () => p
 });
 var Chunk64700 = require("./64700.js"),
   Chunk942381 = require("./942381.js"),
   Chunk265690 = require("./265690.js"),
   Chunk121894 = require("./121894.js");
 
-function s(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,7 +61,7 @@ function d(e) {
   }
 }
 
-function f(e, t) {
+function p(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     l = r.useRef(null);
   return r.useLayoutEffect(() => {
@@ -75,12 +75,12 @@ function f(e, t) {
             guildId: e,
             disabled: n,
             boundingRect: null != d ? d : null
-          }, (0, a.r)(() => {
+          }, (0, s.r)(() => {
             c.setState(e => {
               var t, n;
               return {
-                upsellsByGuildId: o(s({}, null != (t = e.upsellsByGuildId) ? t : {}), {
-                  [u.guildId]: o(s({}, null != (n = e.upsellsByGuildId[u.guildId]) ? n : {}), {
+                upsellsByGuildId: o(a({}, null != (t = e.upsellsByGuildId) ? t : {}), {
+                  [u.guildId]: o(a({}, null != (n = e.upsellsByGuildId[u.guildId]) ? n : {}), {
                     [u.name]: u
                   })
                 })

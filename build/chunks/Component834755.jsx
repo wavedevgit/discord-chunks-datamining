@@ -198,13 +198,13 @@ function Q(e) {
   }), eo = (0, x.RQ)(e => e.activeView), el = (0, C.ZO)(W), {
     renderWindow: ec,
     windowDispatch: eu
-  } = i.useContext(S.Ay), ed = (0, d.bG)([N.A], () => !N.A.hasLoadedStickerPacks), ef = (0, I.tj)({
+  } = i.useContext(I.Ay), ed = (0, d.bG)([N.A], () => !N.A.hasLoadedStickerPacks), ef = (0, S.tj)({
     location: "expression_picker"
   }), ep = (0, d.bG)([P.A], () => P.A.isOpen()), e_ = null != ee, eh = (0, p.useIsModalAtTop)(null != ee ? ee : ""), {
     reorderExpressionPickerTabs: em
-  } = b.C.useConfig({
+  } = y.C.useConfig({
     location: "expression_picker"
-  }), eg = (null == (t = K.gifs) ? true : t.allowSending) && !c.Fr && null != w, eE = (null == (n = K.stickers) ? true : n.allowSending) && null != H, eb = !(null == (a = K.expressionPicker) ? true : a.onlyEmojis) && (eg || eE), ey = i.useCallback(e => {
+  }), eg = (null == (t = K.gifs) ? true : t.allowSending) && !c.Fr && null != w, eE = (null == (n = K.stickers) ? true : n.allowSending) && null != H, ey = !(null == (a = K.expressionPicker) ? true : a.onlyEmojis) && (eg || eE), eb = i.useCallback(e => {
     var t;
     if (!e_ && (0, p.hasAnyModalOpen)() || e_ && !(eh && J) || ep || e.defaultPrevented) return;
     let {
@@ -225,16 +225,16 @@ function Q(e) {
     let e = () => {
       eo === L.kx.GIF && (0, x.v8)()
     };
-    return ec.addEventListener("mousedown", ey), ec.addEventListener("contextmenu", ey), eu.subscribe(j.jej.POPOUT_CLOSE, eO), D._.subscribe(j.jej.CLOSE_GIF_PICKER, e), () => {
-      ec.removeEventListener("mousedown", ey), ec.removeEventListener("contextmenu", ey), eu.unsubscribe(j.jej.POPOUT_CLOSE, eO), D._.unsubscribe(j.jej.CLOSE_GIF_PICKER, e)
+    return ec.addEventListener("mousedown", eb), ec.addEventListener("contextmenu", eb), eu.subscribe(j.jej.POPOUT_CLOSE, eO), D._.subscribe(j.jej.CLOSE_GIF_PICKER, e), () => {
+      ec.removeEventListener("mousedown", eb), ec.removeEventListener("contextmenu", eb), eu.unsubscribe(j.jej.POPOUT_CLOSE, eO), D._.unsubscribe(j.jej.CLOSE_GIF_PICKER, e)
     }
-  }, [eo, eO, ey, ec, eu]), (0, _.tjt)(et);
-  let [eA, ev] = (0, y.kn)(ef ? [f.M.SOUNDMOJI_BADGE] : [], true, false), [eS, eI] = i.useState(false);
+  }, [eo, eO, eb, ec, eu]), (0, _.tjt)(et);
+  let [ev, eA] = (0, b.kn)(ef ? [f.M.SOUNDMOJI_BADGE] : [], true, false), [eI, eS] = i.useState(false);
   i.useEffect(() => {
-    eo === L.kx.SOUNDBOARD && eI(true)
+    eo === L.kx.SOUNDBOARD && eS(true)
   }, [eo]), i.useEffect(() => () => {
-    eS && ev(M.i.TAKE_ACTION)
-  }, [eS, ev]), i.useEffect(() => {
+    eI && eA(M.i.TAKE_ACTION)
+  }, [eI, eA]), i.useEffect(() => {
     (0, x.Ri)("")
   }, []), i.useEffect(() => {
     (!e_ && (0, p.hasAnyModalOpen)() || e_ && !eh) && (0, x.v8)()
@@ -283,7 +283,7 @@ function Q(e) {
     });
   return (0, r.jsx)(m.A, {
     section: j.JJy.EXPRESSION_PICKER,
-    children: (0, r.jsx)(v.nE, {
+    children: (0, r.jsx)(A.nE, {
       className: s()(F.T8, ew),
       targetRef: l,
       position: z,
@@ -298,7 +298,7 @@ function Q(e) {
         } = e;
         return (0, r.jsx)("section", {
           className: s()(F.V6, {
-            [F.D0]: !eb
+            [F.D0]: !ey
           }),
           ref: et,
           role: "dialog",
@@ -318,7 +318,7 @@ function Q(e) {
               }
             }), (0, r.jsxs)("div", {
               className: F.FG,
-              children: [eb ? (0, r.jsx)("nav", {
+              children: [ey ? (0, r.jsx)("nav", {
                 className: F.C$,
                 children: (0, r.jsxs)("div", {
                   className: F.CT,
@@ -336,7 +336,7 @@ function Q(e) {
                     viewType: L.kx.SOUNDBOARD,
                     children: (0, r.jsxs)("div", {
                       className: F.sd,
-                      children: [V.intl.string(V.t.EHlAMc), null != eA && (0, r.jsx)(_.LpS, {
+                      children: [V.intl.string(V.t.EHlAMc), null != ev && (0, r.jsx)(_.LpS, {
                         text: V.intl.string(V.t.y2b7CA)
                       })]
                     })
@@ -351,13 +351,13 @@ function Q(e) {
                 ref: e => {
                   er.current = e
                 }
-              }) : null, eo === L.kx.GIF && eg ? (0, r.jsx)(A.A, {
+              }) : null, eo === L.kx.GIF && eg ? (0, r.jsx)(v.A, {
                 onSelectGIF: w,
                 hideFavorites: h,
                 persistSearch: true
               }) : null, eo === L.kx.EMOJI ? (0, r.jsx)(O.A, {
                 hasTabWrapper: true,
-                containerContext: eb ? O.f.TABS_EXPRESSION_PICKER : O.f.NO_TABS_EXPRESSION_PICKER,
+                containerContext: ey ? O.f.TABS_EXPRESSION_PICKER : O.f.NO_TABS_EXPRESSION_PICKER,
                 persistSearch: true,
                 channel: W,
                 containerWidth: ea,

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Oi: () => s,
-  Tj: () => c,
-  ZM: () => o
+  Tj: () => o,
+  ZM: () => c
 }), require("./65821.js"), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,11 +16,11 @@ let a = Chunk64700.createContext({
   }
 });
 
-function c() {
+function o() {
   return l.useContext(a)
 }
 
-function o(e) {
+function c(e) {
   let {
     initialTab: t,
     children: n

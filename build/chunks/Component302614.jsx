@@ -2,7 +2,7 @@
 /** chunk id: 302614, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -32,7 +32,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e, t) {
+function v(e, t) {
   return {
     name: e,
     left: Math.ceil(t.left),
@@ -41,12 +41,12 @@ function A(e, t) {
     bottom: Math.ceil(t.bottom)
   }
 }
-class v {
+class A {
   observe(e) {
     var t;
     if (null == this.resizeObserver && (this.resizeObserver = new this.window.ResizeObserver(this.handleResize)), null == this.mutationObserver) {
       this.mutationObserver = new MutationObserver(this.handleMutations);
-      let e = p.A.getWindow(b.f);
+      let e = p.A.getWindow(y.f);
       null != e && this.mutationObserver.observe(null == e ? true : e.document.body, {
         subtree: true,
         attributes: true
@@ -57,7 +57,7 @@ class v {
     let r = e.getBoundingClientRect();
     this.zones.set(e, {
       element: e,
-      zone: A(null != (t = null == n ? true : n.zone.name) ? t : (0, c.A)(), r)
+      zone: v(null != (t = null == n ? true : n.zone.name) ? t : (0, c.A)(), r)
     }), this.elements.add(e), this.resizeObserver.observe(e), this.updateZones()
   }
   unobserve(e) {
@@ -66,7 +66,7 @@ class v {
   }
   updateZones() {
     if (!h.isPlatformEmbedded) return;
-    let e = p.A.getWindow(b.f);
+    let e = p.A.getWindow(y.f);
     null != e && f.A.setClickZones(Array.from(this.zones.values()).map(t => {
       let {
         zone: n
@@ -93,7 +93,7 @@ class v {
       let e = false;
       for (let [t, n] of this.zones) {
         let r = t.getBoundingClientRect(),
-          i = A(n.zone.name, r);
+          i = v(n.zone.name, r);
         (0, d.A)(i, n.zone) || (e = true, n = {
           element: n.element,
           zone: i
@@ -106,15 +106,15 @@ class v {
     })), this.window = e
   }
 }
-let S = Chunk64700.createContext(new v((0, Chunk545807.b)()));
+let I = Chunk64700.createContext(new A((0, Chunk545807.b)()));
 
-function I(e) {
+function S(e) {
   let {
     observe: t = true,
     className: n,
     style: a,
     children: o
-  } = e, l = i.useContext(S), c = (0, u.bG)([g.A], () => g.A.hasRenderDebugMode(m.x7.ClickZones)), d = (0, u.bG)([_.default], () => _.default.disableClickableRegions), [{
+  } = e, l = i.useContext(I), c = (0, u.bG)([g.A], () => g.A.hasRenderDebugMode(m.x7.ClickZones)), d = (0, u.bG)([_.default], () => _.default.disableClickableRegions), [{
     refHandler: f,
     setObserve: p
   }] = i.useState(() => {
@@ -133,7 +133,7 @@ function I(e) {
   }, [t, p, d]), (0, r.jsx)("div", {
     ref: f,
     style: a,
-    className: s()(n, y.v, c && y.p),
+    className: s()(n, b.v, c && b.p),
     "data-click-zone": true,
     children: o
   })

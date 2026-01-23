@@ -32,83 +32,83 @@ let O = e => {
   } = e, n = (0, u.L)(), {
     installationStatus: O,
     perkAvailableToUser: E,
-    isSupportedPrivateBrowsingPerkPlatform: N,
-    isWeb: T,
-    connectionStatus: I
-  } = (0, v.lV)(), k = (0, b.lM)("private_browsing_perk_settings_page"), w = (0, l.useCallback)(() => {
+    isSupportedPrivateBrowsingPerkPlatform: T,
+    isWeb: N,
+    connectionStatus: w
+  } = (0, v.lV)(), I = (0, f.lM)("private_browsing_perk_settings_page"), k = (0, l.useCallback)(() => {
     (0, c.A)(j.BVt.NITRO_HOME), t()
   }, [t]), P = (0, l.useCallback)(() => {
     (0, p.openUserSettings)(m.X.PRIVATE_BROWSING_PANEL, {
       section: j.nc_.PRIVATE_BROWSING
     })
-  }, []), R = [x.l7.CONNECTED].includes(I), D = N && k && ![x.Lk.ZERO_TRUST, x.Lk.ERROR].includes(O) && !T && (!n || E), M = (0, l.useMemo)(() => {
-    switch (I) {
-      case x.l7.CONNECTED:
-        return A.intl.string(_.default.FBu3XJ);
-      case x.l7.INITIALIZING:
-        return A.intl.string(_.default["00vkCU"]);
+  }, []), R = [g.l7.CONNECTED].includes(w), D = T && I && ![g.Lk.ZERO_TRUST, g.Lk.ERROR].includes(O) && !N && (!n || E), M = (0, l.useMemo)(() => {
+    switch (w) {
+      case g.l7.CONNECTED:
+        return A.intl.string(y.default.FBu3XJ);
+      case g.l7.INITIALIZING:
+        return A.intl.string(y.default["00vkCU"]);
       default:
-        return A.intl.string(_.default["A70/wR"])
+        return A.intl.string(y.default["A70/wR"])
     }
-  }, [I]), L = (0, l.useMemo)(() => {
-    if (!E) return A.intl.string(_.default.KN6HOb);
+  }, [w]), L = (0, l.useMemo)(() => {
+    if (!E) return A.intl.string(y.default.KN6HOb);
     switch (O) {
-      case x.Lk.INSTALLED:
-      case x.Lk.EXISTING_INSTALLATION:
+      case g.Lk.INSTALLED:
+      case g.Lk.EXISTING_INSTALLATION:
         return M;
       default:
-        return A.intl.string(_.default.KN6HOb)
+        return A.intl.string(y.default.KN6HOb)
     }
   }, [O, E, M]), U = (0, l.useMemo)(() => {
-    if (!E) return (0, a.jsx)(i.EYj, {
+    if (!E) return (0, a.jsx)(r.EYj, {
       variant: "text-sm/normal",
       color: "text-subtle",
-      children: A.intl.format(_.default.UDPKcX, {
-        helpdeskArticle: f.V
+      children: A.intl.format(y.default.UDPKcX, {
+        helpdeskArticle: x.V
       })
     });
     switch (O) {
-      case x.Lk.INSTALLED:
-      case x.Lk.EXISTING_INSTALLATION:
-        return (0, a.jsx)(i.EYj, {
+      case g.Lk.INSTALLED:
+      case g.Lk.EXISTING_INSTALLATION:
+        return (0, a.jsx)(r.EYj, {
           variant: "text-sm/normal",
           color: "text-subtle",
-          children: R ? A.intl.format(_.default.zwW10o, {
+          children: R ? A.intl.format(y.default.zwW10o, {
             onClick: () => {
-              (0, r.u)(j.HAw.NITRO_PRIVACY_UPSELL_PERKS_CLICKED, {}), w()
+              (0, i.u)(j.HAw.NITRO_PRIVACY_UPSELL_PERKS_CLICKED, {}), k()
             }
-          }) : A.intl.format(_.default.D4hu0v, {
+          }) : A.intl.format(y.default.D4hu0v, {
             onClick: () => {
-              (0, r.u)(j.HAw.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), P()
+              (0, i.u)(j.HAw.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), P()
             }
           })
         });
       default:
-        return (0, a.jsx)(i.EYj, {
+        return (0, a.jsx)(r.EYj, {
           variant: "text-sm/normal",
           color: "text-subtle",
-          children: A.intl.format(_.default.D4hu0v, {
+          children: A.intl.format(y.default.D4hu0v, {
             onClick: () => {
-              (0, r.u)(j.HAw.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), P()
+              (0, i.u)(j.HAw.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), P()
             }
           })
         })
     }
-  }, [O, E, R, P, w]), {
+  }, [O, E, R, P, k]), {
     analyticsLocations: B
   } = (0, o.Ay)(s.A.MASKED_LINK);
   return ((0, l.useEffect)(() => {
     D && h.default.track(j.HAw.PREMIUM_UPSELL_VIEWED, {
-      type: y.e.PRIVACY_PERK_EXIT_MODAL,
+      type: _.e.PRIVACY_PERK_EXIT_MODAL,
       location_stack: B
     })
   }, [B, D]), D) ? (0, a.jsxs)("div", {
     className: C.kL,
-    children: [(0, a.jsx)(g.q, {
+    children: [(0, a.jsx)(b.q, {
       className: C.aZ
     }), (0, a.jsxs)("div", {
       className: C.hQ,
-      children: [E && (0, a.jsx)(i.hLv, {
+      children: [E && (0, a.jsx)(r.hLv, {
         className: C.h4,
         offsetBottom: false,
         color: "nitro-pink",
@@ -122,7 +122,7 @@ let O = e => {
         })
       }), (0, a.jsxs)("div", {
         className: C.zH,
-        children: [(0, a.jsx)(i.DZT, {
+        children: [(0, a.jsx)(r.DZT, {
           variant: "heading-md/semibold",
           children: L
         }), U]
@@ -130,7 +130,7 @@ let O = e => {
         className: C.OQ,
         children: (0, a.jsx)(d.A, {
           buttonTextOverride: A.intl.string(A.t["8x0jKT"]),
-          subscriptionTier: y.pe.TIER_2,
+          subscriptionTier: _.pe.TIER_2,
           size: "sm",
           premiumModalAnalyticsLocation: {
             page: s.A.MASKED_LINK

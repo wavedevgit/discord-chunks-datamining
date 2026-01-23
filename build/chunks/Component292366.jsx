@@ -2,7 +2,7 @@
 /** chunk id: 292366, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -22,7 +22,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk592392 = require("./592392.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,14 +31,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -55,13 +55,13 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function v(e) {
+function A(e) {
   switch (e) {
     case d.in.PRIMARY:
     case d.in.PREMIUM:
@@ -75,7 +75,7 @@ function v(e) {
   }
 }
 
-function S(e) {
+function I(e) {
   let {
     url: t,
     onSelect: n
@@ -95,17 +95,17 @@ function S(e) {
   }) : null
 }
 
-function I(e) {
+function S(e) {
   let t, {
       label: n,
       style: i,
       disabled: p,
       emoji: g,
-      url: b,
+      url: y,
       skuId: O
     } = e,
     {
-      executeStateUpdate: I,
+      executeStateUpdate: S,
       visualState: T,
       isDisabled: C
     } = (0, h.At)(e),
@@ -115,22 +115,22 @@ function I(e) {
     P = R ? null == N ? true : N.label : n,
     D = null != g,
     x = null != P && P.length > 0,
-    L = i === d.in.LINK && null != b && b.length > 0,
+    L = i === d.in.LINK && null != y && y.length > 0,
     j = T === m.BB.LOADING || R && null == N;
   return t = L ? () => {
     (0, _.h)({
-      href: null != b ? b : "",
+      href: null != y ? y : "",
       shouldConfirm: true
     })
-  } : R ? null != N && false === N.disabled ? N.onClick : s.noop : () => I(), (0, r.jsxs)(o.$n, {
+  } : R ? null != N && false === N.disabled ? N.onClick : s.noop : () => S(), (0, r.jsxs)(o.$n, {
     "data-migration-pending": true,
-    color: v(i),
+    color: A(i),
     size: o.$n.Sizes.SMALL,
     disabled: p || T === m.BB.DISABLED || C || w,
     onClick: t,
     onContextMenu: e => {
-      L && (0, c.jA)(e, e => (0, r.jsx)(S, A(y({}, e), {
-        url: b
+      L && (0, c.jA)(e, e => (0, r.jsx)(I, v(b({}, e), {
+        url: y
       })))
     },
     role: L ? "link" : "button",

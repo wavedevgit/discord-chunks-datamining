@@ -23,25 +23,25 @@ function f(e) {
       var e;
       return null != (e = null == f ? true : f.map(e => e.applicationId)) ? e : []
     }, [f]),
-    b = (0, a.A)(p),
+    g = (0, a.A)(p),
     {
-      tokens: g,
-      fetched: m
+      tokens: m,
+      fetched: b
     } = (0, i.j)(p),
-    y = (0, o.A)(null == t ? true : t.id),
-    O = null == t || null == f || null == g || !m;
+    y = (0, s.A)(null == t ? true : t.id),
+    O = null == t || null == f || null == m || !b;
   return r.useMemo(() => O ? {
     isLoading: O
   } : {
     isLoading: O,
     suggestions: f.map(e => {
-      let t = b.find(t => (null == t ? true : t.id) === e.applicationId);
-      return null == t || null == g.find(t => t.application.id === e.applicationId) || null != y.find(t => t instanceof s.R && t.applicationId === e.applicationId) ? null : {
+      let t = g.find(t => (null == t ? true : t.id) === e.applicationId);
+      return null == t || null == m.find(t => t.application.id === e.applicationId) || null != y.find(t => t instanceof o.R && t.applicationId === e.applicationId) ? null : {
         config: e,
         application: t,
         dismissibleContent: e.suggestedWidgetLinkedDc
       }
     }).filter(u.Vq),
     currentUser: t
-  }, [O, f, t, b, g, y])
+  }, [O, f, t, g, m, y])
 }

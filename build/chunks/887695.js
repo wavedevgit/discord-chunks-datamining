@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   FV: () => m,
-  Ff: () => b,
+  Ff: () => y,
   Fk: () => E,
   JZ: () => O,
   ci: () => g,
   oV: () => h,
-  se: () => y
+  se: () => b
 }), require("./896048.js"), require("./321073.js");
 var Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
@@ -120,7 +120,7 @@ let p = (0, Chunk23339.xI)(Chunk319060.A.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDI
       i.current = true, d(), p(e)
     }, [i, d, p])
   },
-  b = e => {
+  y = e => {
     let {
       columnCounts: t,
       gridNavigatorId: n,
@@ -174,8 +174,8 @@ let p = (0, Chunk23339.xI)(Chunk319060.A.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDI
       autoFocusElement: false,
       useVirtualFocus: true
     }), {
-      gridContainerProps: b,
-      handleGridContainerKeyDown: y
+      gridContainerProps: y,
+      handleGridContainerKeyDown: b
     } = r.useMemo(() => {
       let e = E();
       return {
@@ -192,13 +192,13 @@ let p = (0, Chunk23339.xI)(Chunk319060.A.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDI
       gridDispatch: h,
       getItemProps: m,
       getRowProps: g,
-      gridContainerProps: b,
-      handleGridContainerKeyDown: y,
+      gridContainerProps: y,
+      handleGridContainerKeyDown: b,
       isUsingKeyboardNavigation: u
     }
   };
 
-function y(e) {
+function b(e) {
   let {
     categories: t,
     collapsedCategories: n,
@@ -267,7 +267,7 @@ function O(e) {
     gridContainerProps: p,
     handleGridContainerKeyDown: _,
     isUsingKeyboardNavigation: h
-  } = b({
+  } = y({
     columnCounts: t,
     gridNavigatorId: s,
     itemGrid: n,

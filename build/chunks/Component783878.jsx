@@ -82,14 +82,14 @@ function h(e) {
     required: m,
     onQueryChange: g,
     onKeyDown: E,
-    onFocus: b,
-    onBlur: y,
+    onFocus: y,
+    onBlur: b,
     placeholder: O,
-    closeOnSelect: A,
-    selectionMode: v
+    closeOnSelect: v,
+    selectionMode: A
   } = d, {
-    isOpen: S,
-    setIsOpen: I,
+    isOpen: I,
+    setIsOpen: S,
     refs: T,
     floatingStyles: C,
     getFloatingProps: N,
@@ -98,9 +98,9 @@ function h(e) {
   } = (0, o.G)();
   return (0, r.jsxs)(a.iS, f(u({}, d), {
     isCollapsible: true,
-    isOpen: S,
-    setIsOpen: I,
-    closeOnSelect: null != A ? A : "single" === v,
+    isOpen: I,
+    setIsOpen: S,
+    closeOnSelect: null != v ? v : "single" === A,
     children: [(0, r.jsx)(a.a3, f(u({
       hideTags: t,
       required: m,
@@ -111,10 +111,10 @@ function h(e) {
       placeholder: O
     }, _, R()), {
       onKeyDown: E,
-      onBlur: y,
+      onBlur: b,
       onQueryChange: g,
-      onFocus: b
-    })), S && (0, r.jsx)("div", f(u({
+      onFocus: y
+    })), I && (0, r.jsx)("div", f(u({
       ref: T.setFloating,
       className: l.S_,
       style: u({}, C, w)

@@ -1,5 +1,5 @@
 /** Chunk was on 71138 **/
-/** chunk id: 140539, original params: e,t,n (module,exports,require) **/
+/** chunk id: 140539, original params: e,t,r (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => F
 });
@@ -30,11 +30,11 @@ let R = [Chunk877991.L, Chunk332779.T, Chunk568765.w, Chunk512513.z];
 function F(e) {
   let {
     windowKey: t,
-    channelId: n
-  } = e, a = (0, o.bG)([b.A], () => b.A.getChannel(n));
+    channelId: r
+  } = e, a = (0, o.bG)([b.A], () => b.A.getChannel(r));
   s()(null != a, "channel cannot be null for popout");
   let l = (0, o.bG)([g.Ay], () => g.Ay.getSelfEmbeddedActivityForChannel(a.id), [a]);
-  return (0, r.jsx)(v.A, {
+  return (0, n.jsx)(v.A, {
     withTitleBar: true,
     keybinds: R,
     windowKey: t,
@@ -43,29 +43,29 @@ function F(e) {
     onBeforeUnload: e => {
       let {
         e: t,
-        unmountWindow: n
+        unmountWindow: r
       } = e;
       if (null != l) {
         let e = (0, h.od)(l.applicationId, a.id);
         t.preventDefault(), (0, A.A)({
           onConfirm: async () => {
-            await e, n()
+            await e, r()
           },
           usesPopoutContext: true
         })
-      } else n()
+      } else r()
     },
-    children: (0, r.jsx)("div", {
+    children: (0, n.jsx)("div", {
       className: i()("root", D.M),
-      children: (0, r.jsxs)(f.A.Provider, {
+      children: (0, n.jsxs)(f.A.Provider, {
         value: a.guild_id,
-        children: [(0, r.jsx)(c.A, {
+        children: [(0, n.jsx)(c.A, {
           channel: a,
           draftType: C.C.ChannelMessage
-        }), (0, r.jsx)(x.A, {
+        }), (0, n.jsx)(x.A, {
           channel: a,
           popoutType: E.N.VOICE_UI
-        }), (0, r.jsx)(d.A, {
+        }), (0, n.jsx)(d.A, {
           popoutWindowKey: t,
           popoutWindowHasTitleBar: true
         })]

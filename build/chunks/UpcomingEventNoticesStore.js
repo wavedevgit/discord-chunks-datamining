@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 11550, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -31,79 +31,79 @@ function d(e) {
   }
   return e
 }
-let f = {},
-  p = {};
+let p = {},
+  h = {};
 
-function h(e) {
-  let t = d({}, f);
-  delete t[e], f = t;
-  let n = d({}, p);
-  delete n[e], p = n
+function f(e) {
+  let t = d({}, p);
+  delete t[e], p = t;
+  let n = d({}, h);
+  delete n[e], h = n
 }
-class b extends(r = Chunk311907.Ay.PersistedStore) {
+class g extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(a.default, s.Ay), null != e) {
+    if (this.waitFor(s.default, a.Ay), null != e) {
       var t, n;
-      f = null != (t = e.upcomingEventDismissals) ? t : {}, p = null != (n = e.upcomingEventSeenTimestamps) ? n : {}
+      p = null != (t = e.upcomingEventDismissals) ? t : {}, h = null != (n = e.upcomingEventSeenTimestamps) ? n : {}
     }
   }
   getGuildEventNoticeDismissalTime(e) {
-    return f[e]
-  }
-  getAllEventDismissals() {
-    return f
-  }
-  getUpcomingNoticeSeenTime(e) {
     return p[e]
   }
-  getAllUpcomingNoticeSeenTimes() {
+  getAllEventDismissals() {
     return p
+  }
+  getUpcomingNoticeSeenTime(e) {
+    return h[e]
+  }
+  getAllUpcomingNoticeSeenTimes() {
+    return h
   }
   getState() {
     return {
-      upcomingEventDismissals: f,
-      upcomingEventSeenTimestamps: p
+      upcomingEventDismissals: p,
+      upcomingEventSeenTimestamps: h
     }
   }
 }
-u(b, "displayName", "UpcomingEventNoticesStore"), u(b, "persistKey", "UpcomingEventNotices");
-let g = new b(Chunk73153.h, {
+u(g, "displayName", "UpcomingEventNoticesStore"), u(g, "persistKey", "UpcomingEventNotices");
+let m = new g(Chunk73153.h, {
   UPCOMING_GUILD_EVENT_NOTICE_HIDE: function(e) {
     let {
       eventId: t
-    } = e, n = d({}, f);
-    n[t] = Date.now(), f = n
+    } = e, n = d({}, p);
+    n[t] = Date.now(), p = n
   },
   GUILD_SCHEDULED_EVENT_UPDATE: function(e) {
     let {
       guildScheduledEvent: t
     } = e;
-    (t.status === c.XG.CANCELED || t.status === c.XG.COMPLETED) && h(t.id)
+    (t.status === c.XG.CANCELED || t.status === c.XG.COMPLETED) && f(t.id)
   },
   GUILD_SCHEDULED_EVENT_DELETE: function(e) {
     let {
       guildScheduledEvent: t
     } = e;
-    h(t.id)
+    f(t.id)
   },
   GUILD_SCHEDULED_EVENT_USER_ADD: function(e) {
     let {
       userId: t,
       guildEventId: n
     } = e;
-    if (t !== a.default.getId()) return;
-    let r = s.Ay.getGuildScheduledEvent(n);
-    if (null == r || r.status !== c.XG.SCHEDULED || null != f[n]) return;
-    let l = p[n];
+    if (t !== s.default.getId()) return;
+    let r = a.Ay.getGuildScheduledEvent(n);
+    if (null == r || r.status !== c.XG.SCHEDULED || null != p[n]) return;
+    let l = h[n];
     if ((0, o.F)(r, true, l, false) === c.w0.NEW_EVENT) {
-      let e = d({}, f);
-      e[n] = Date.now(), f = e
+      let e = d({}, p);
+      e[n] = Date.now(), p = e
     }
   },
   UPCOMING_GUILD_EVENT_NOTICE_SEEN: function(e) {
     let {
       guildEventId: t
-    } = e, n = d({}, p);
-    n[t] = Date.now(), p = n
+    } = e, n = d({}, h);
+    n[t] = Date.now(), h = n
   }
 })

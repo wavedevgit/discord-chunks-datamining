@@ -1,5 +1,5 @@
 /** Chunk was on 64228 **/
-/** chunk id: 399122, original params: e,l,t (module,exports,require) **/
+/** chunk id: 399122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
 });
@@ -15,17 +15,17 @@ var Chunk347805 = require("./347805.jsx"),
 
 function u(e) {
   let {
-    userId: l
-  } = e, t = (0, s.g)(), {
+    userId: t
+  } = e, n = (0, s.g)(), {
     trackUserProfileAction: u
   } = (0, r.NJ)();
-  return (0, n.jsx)(a.A, {
-    heading: d.intl.string(d.t["mQKv+v"]),
-    scrollTargetId: o.bk.NOTE,
-    children: (0, n.jsx)(i.A, {
-      userId: l,
-      className: c.N,
-      autoFocus: t === o.bk.NOTE,
+  return (0, l.jsx)(o.A, {
+    heading: c.intl.string(c.t["mQKv+v"]),
+    scrollTargetId: a.bk.NOTE,
+    children: (0, l.jsx)(i.A, {
+      userId: t,
+      className: d.N,
+      autoFocus: n === a.bk.NOTE,
       onUpdate: () => u({
         action: "SET_NOTE"
       })

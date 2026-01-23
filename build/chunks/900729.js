@@ -2,9 +2,9 @@
 /** chunk id: 900729, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  yl: "a26544591a423e05",
-  PG: "_520813f25217a36d",
-  $g: "_59341fe4e8e1d944",
-  Pu: "_8a4eb6cb63c55417",
-  z: "_76f567865d1eb4c0"
+  yl: "modal_ab9bdf",
+  PG: "sizeSmall_ab9bdf",
+  $g: "sizeMedium_ab9bdf",
+  Pu: "sizeLarge_ab9bdf",
+  z: "fullscreenOnMobile_ab9bdf"
 }

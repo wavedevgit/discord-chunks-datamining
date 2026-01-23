@@ -24,22 +24,22 @@ module.exports = function(e, t) {
     if (m.nodeType === Node.TEXT_NODE && (null !== m.previousSibling || null !== m.nextSibling)) {
       var E = m.parentNode;
       m.nodeValue = E.textContent;
-      for (var b = E.firstChild; null !== b; b = b.nextSibling) b !== m && E.removeChild(b)
+      for (var y = E.firstChild; null !== y; y = y.nextSibling) y !== m && E.removeChild(y)
     }
-    var y = m.textContent,
+    var b = m.textContent,
       O = e._latestEditorState,
-      A = u(l(m)),
-      v = i.decode(A),
-      S = v.blockKey,
-      I = v.decoratorKey,
-      T = v.leafKey,
-      C = O.getBlockTree(S).getIn([I, "leaves", T]),
+      v = u(l(m)),
+      A = i.decode(v),
+      I = A.blockKey,
+      S = A.decoratorKey,
+      T = A.leafKey,
+      C = O.getBlockTree(I).getIn([S, "leaves", T]),
       N = C.start,
       R = C.end,
       w = O.getCurrentContent(),
-      P = w.getBlockForKey(S),
+      P = w.getBlockForKey(I),
       D = P.getText().slice(N, R);
-    if (y.endsWith(f) && (y = y.slice(0, false)), y === D) {
+    if (b.endsWith(f) && (b = b.slice(0, false)), b === D) {
       var x = t.nativeEvent.inputType;
       if (x) {
         var L = p(x, O);
@@ -58,10 +58,10 @@ module.exports = function(e, t) {
       G = null != U ? U.getMutability() : null,
       V = "MUTABLE" === G,
       F = V ? "spellcheck-change" : "apply-entity",
-      B = r.replaceText(w, M, y, P.getInlineStyleAt(N), V ? P.getEntityAt(N) : null);
+      B = r.replaceText(w, M, b, P.getInlineStyleAt(N), V ? P.getEntityAt(N) : null);
     if (d) n = h.anchorOffset, _ = (c = N + Math.min(n, s = h.focusOffset)) + Math.abs(n - s), n = c, s = _;
     else {
-      var H = y.length - D.length;
+      var H = b.length - D.length;
       c = j.getStartOffset(), _ = j.getEndOffset(), n = g ? _ + H : c, s = _ + H
     }
     var Y = B.merge({

@@ -8,22 +8,22 @@ require("./64700.js");
 var Chunk503698 = require("./503698.js"),
   i = require.n(Chunk503698),
   Chunk387780 = require("./387780.js");
-let s = () => (0, r.jsx)("div", {
-    className: a.jH
+let a = () => (0, r.jsx)("div", {
+    className: s.jH
   }),
   o = () => (0, r.jsx)("div", {
-    className: a.L1
+    className: s.L1
   }),
   c = e => {
     let {
       width: t
     } = e;
     return (0, r.jsxs)("div", {
-      className: a.Ix,
+      className: s.Ix,
       children: [(0, r.jsx)("div", {
-        className: a.p
+        className: s.p
       }), (0, r.jsx)("div", {
-        className: a.HA,
+        className: s.HA,
         style: {
           width: "".concat(t, "px")
         }
@@ -35,8 +35,8 @@ let s = () => (0, r.jsx)("div", {
       withBannerPadding: t
     } = e;
     return (0, r.jsxs)("div", {
-      className: i()(a.kL, {
-        [a.o5]: t
+      className: i()(s.kL, {
+        [s.o5]: t
       }),
       children: [(0, r.jsx)(o, {}), (0, r.jsx)(c, {
         width: 100
@@ -50,7 +50,7 @@ let s = () => (0, r.jsx)("div", {
         width: 112
       }), (0, r.jsx)(c, {
         width: 175
-      }), (0, r.jsx)(s, {}), (0, r.jsx)(o, {}), (0, r.jsx)(c, {
+      }), (0, r.jsx)(a, {}), (0, r.jsx)(o, {}), (0, r.jsx)(c, {
         width: 100
       }), (0, r.jsx)(c, {
         width: 74

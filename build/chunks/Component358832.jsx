@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 358832, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk892513 = require("./892513.js");
 
-function A(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function A(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class g extends Chunk64700.PureComponent {
+class m extends Chunk64700.PureComponent {
   static getDerivedStateFromProps(e, t) {
     return e.mode !== t.memoizedMode ? {
       memoizedMode: e.mode,
@@ -39,7 +39,7 @@ class g extends Chunk64700.PureComponent {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          A(e, t, n[t])
+          f(e, t, n[t])
         })
       }
       return e
@@ -51,17 +51,17 @@ class g extends Chunk64700.PureComponent {
     switch (this.props.mode) {
       case "UPDATE_AVAILABLE":
         return (0, r.jsx)(p.In, {
-          tooltip: f.intl.string(f.t["zp9d/4"]),
-          foreground: h.el,
-          background: h.gg,
+          tooltip: h.intl.string(h.t["zp9d/4"]),
+          foreground: g.el,
+          background: g.gg,
           icon: a.s3U,
           className: this.props.className
         });
       case "UPDATE_MANUALLY":
       case "UPDATE_DOWNLOADED":
         return (0, r.jsx)(p.In, {
-          tooltip: f.intl.string(f.t.u18OXF),
-          foreground: h.wV,
+          tooltip: h.intl.string(h.t.u18OXF),
+          foreground: g.wV,
           onClick: this.handleInstallDownload,
           icon: a.s3U,
           className: this.props.className
@@ -71,25 +71,25 @@ class g extends Chunk64700.PureComponent {
     }
   }
   constructor(...e) {
-    super(...e), A(this, "state", {
+    super(...e), f(this, "state", {
       memoizedMode: this.props.mode,
       clicked: false
-    }), A(this, "handleInstallDownload", () => {
+    }), f(this, "handleInstallDownload", () => {
       d.A.isConnected() ? s.A.show({
-        title: f.intl.string(f.t.tiu1ly),
-        body: f.intl.string(f.t["zK+lqW"]),
+        title: h.intl.string(h.t.tiu1ly),
+        body: h.intl.string(h.t["zK+lqW"]),
         onConfirm: this.doUpdate,
-        cancelText: f.intl.string(f.t["ETE/oC"]),
-        confirmText: f.intl.string(f.t["QDX/qu"]),
+        cancelText: h.intl.string(h.t["ETE/oC"]),
+        confirmText: h.intl.string(h.t["QDX/qu"]),
         confirmVariant: "critical-primary"
       }) : this.doUpdate()
-    }), A(this, "doUpdate", () => {
+    }), f(this, "doUpdate", () => {
       this.state.clicked || (this.setState({
         clicked: true
       }), (0, o.a)())
     })
   }
 }
-let m = Chunk311907.Ay.connectStores([Chunk598384.A], () => ({
+let A = Chunk311907.Ay.connectStores([Chunk598384.A], () => ({
   mode: u.A.getState()
-}))(g)
+}))(m)

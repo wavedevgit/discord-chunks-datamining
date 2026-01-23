@@ -22,7 +22,7 @@ let u = {
       state: n,
       cleanUp: d,
       children: p
-    } = e, f = (0, a.bG)([o.A], () => o.A.useReducedMotion), h = i.useMemo(() => false === t || f ? {
+    } = e, h = (0, a.bG)([o.A], () => o.A.useReducedMotion), g = i.useMemo(() => false === t || h ? {
       opacity: 1
     } : n === s.wLy.ENTERED || n === s.wLy.MOUNTED ? {
       from: {
@@ -43,9 +43,9 @@ let u = {
       onRest: () => {
         d()
       }
-    }, [t, d, f, n]), A = (0, s.zhh)(h);
+    }, [t, d, h, n]), f = (0, s.zhh)(g);
     return (0, r.jsx)(l.animated.div, {
-      style: A,
+      style: f,
       className: c.Hp,
       children: p
     })

@@ -18,21 +18,21 @@ var Chunk627968 = require("./627968.js"),
 function p(t) {
   let {
     onClose: e,
-    source: n = o.y.KEYBIND,
+    source: n = l.y.KEYBIND,
     transitionState: p
-  } = t, f = (0, i.bG)([u.A], () => u.A.useReducedMotion), [S, U] = a.useState(f), h = a.useRef(null), A = a.useRef(null);
+  } = t, f = (0, a.bG)([u.A], () => u.A.useReducedMotion), [S, U] = i.useState(f), h = i.useRef(null), A = i.useRef(null);
   async function N() {
     await e()
   }
-  return a.useEffect(() => {
+  return i.useEffect(() => {
     let t = new Date;
     return s.default.track(_.HAw.VIBING_WUMPUS_VIEWED, {
       source: n
-    }), f || (0, l.q0)(), () => {
+    }), f || (0, o.q0)(), () => {
       s.default.track(_.HAw.VIBING_WUMPUS_CLOSED, {
         duration_open_ms: new Date().getTime() - t.getTime(),
         source: n
-      }), (0, l.S9)()
+      }), (0, o.S9)()
     }
   }, [n]), (0, r.jsxs)("div", {
     className: I._q,
@@ -58,7 +58,7 @@ function p(t) {
         text: d.intl.string(d.t["8eKkaf"]),
         onClick: () => {
           e(), s.default.track(_.HAw.VIBING_WUMPUS_ACTION, {
-            action: o.r.BACK_TO_CONVERSATION
+            action: l.r.BACK_TO_CONVERSATION
           })
         },
         variant: "secondary"
@@ -66,10 +66,10 @@ function p(t) {
         text: d.intl.string(S ? d.t.RscU7I : d.t.ZcgDJX),
         onClick: () => {
           var t, e, n, r;
-          S ? ((0, l.q0)(), s.default.track(_.HAw.VIBING_WUMPUS_ACTION, {
-            action: o.r.PLAY
-          }), null == (t = h.current) || t.play(), null == (e = A.current) || e.play()) : ((0, l.O$)(), s.default.track(_.HAw.VIBING_WUMPUS_ACTION, {
-            action: o.r.PAUSE
+          S ? ((0, o.q0)(), s.default.track(_.HAw.VIBING_WUMPUS_ACTION, {
+            action: l.r.PLAY
+          }), null == (t = h.current) || t.play(), null == (e = A.current) || e.play()) : ((0, o.O$)(), s.default.track(_.HAw.VIBING_WUMPUS_ACTION, {
+            action: l.r.PAUSE
           }), null == (n = h.current) || n.pause(), null == (r = A.current) || r.pause()), U(!S)
         },
         icon: S ? c.udU : c.E$n

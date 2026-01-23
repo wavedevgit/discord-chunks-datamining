@@ -14,7 +14,7 @@ function o() {
   return (0, a.jsxs)(s.Hq, {
     label: "Open New Revenue Storybook",
     direction: "vertical",
-    children: [(0, a.jsx)(i.Text, {
+    children: [(0, a.jsx)(r.Text, {
       variant: "text-md/normal",
       color: "text-feedback-info",
       style: {
@@ -22,7 +22,7 @@ function o() {
       },
       children: "This section is deprecated. Use button to open the new Revenue Storybook instead."
     }), (0, a.jsx)(l.$nd, {
-      onClick: () => (0, r.j)(r.l.VIRTUAL_CURRENCY),
+      onClick: () => (0, i.j)(i.l.VIRTUAL_CURRENCY),
       text: "Open New Revenue Storybook"
     })]
   })

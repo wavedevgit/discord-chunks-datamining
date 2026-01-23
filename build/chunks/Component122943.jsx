@@ -29,13 +29,13 @@ let y = Chunk64700.memo(function(e) {
     loaded: n,
     error: l,
     message: y
-  } = (0, g.I)(t), {
+  } = (0, m.I)(t), {
     isBlocked: I,
     isIgnored: v
-  } = (0, s.cf)([A.A], () => ({
-    isBlocked: null != y && A.A.isBlockedForMessage(y),
-    isIgnored: null != y && A.A.isIgnoredForMessage(y)
-  }), [y]), S = (0, s.bG)([h.A], () => h.A.can(m.xBc.MANAGE_MESSAGES, t)), C = f.gs.useSetting(), {
+  } = (0, s.cf)([f.A], () => ({
+    isBlocked: null != y && f.A.isBlockedForMessage(y),
+    isIgnored: null != y && f.A.isIgnoredForMessage(y)
+  }), [y]), S = (0, s.bG)([g.A], () => g.A.can(A.xBc.MANAGE_MESSAGES, t)), C = h.gs.useSetting(), {
     content: N
   } = i.useMemo(() => (null == y ? true : y.content) != null && "" !== y.content ? (0, u.Ay)(y, {
     formatInline: true,
@@ -47,20 +47,20 @@ let y = Chunk64700.memo(function(e) {
     className: E.G4,
     variant: "text-sm/normal",
     color: "text-muted",
-    children: _.intl.string(_.t.BZHld2)
+    children: b.intl.string(b.t.BZHld2)
   });
   else if (n)
     if (null != y && I) T = (0, r.jsx)(o.Text, {
       className: E.G4,
       variant: "text-sm/normal",
       color: "text-muted",
-      children: _.intl.string(_.t["WPe+xL"])
+      children: b.intl.string(b.t["WPe+xL"])
     });
     else if (null != y && v) T = (0, r.jsx)(o.Text, {
     className: E.G4,
     variant: "text-sm/normal",
     color: "text-muted",
-    children: _.intl.string(_.t.uxrh1O)
+    children: b.intl.string(b.t.uxrh1O)
   });
   else if (null != y) {
     let {
@@ -69,7 +69,7 @@ let y = Chunk64700.memo(function(e) {
     } = (0, d.o)(y, N, I, v, a()(E.BK, O.tZ), {
       leadingIconClass: E.AF,
       trailingIconClass: E.AF,
-      iconSize: b.eJ
+      iconSize: _.eJ
     });
     T = null != t ? (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
@@ -87,7 +87,7 @@ let y = Chunk64700.memo(function(e) {
     className: E.G4,
     variant: "text-sm/normal",
     color: "text-muted",
-    children: _.intl.string(_.t["0KfDxM"])
+    children: b.intl.string(b.t["0KfDxM"])
   });
   else T = null;
   return (0, r.jsx)(p.Bs.Provider, {

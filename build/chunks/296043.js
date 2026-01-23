@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   Bl: () => N,
-  Gv: () => A,
-  I5: () => y,
+  Gv: () => v,
+  I5: () => b,
   fK: () => C,
   h0: () => T,
   sW: () => R,
-  wy: () => I
+  wy: () => S
 }), require("./896048.js");
 var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
@@ -35,7 +35,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,14 +48,14 @@ function b(e) {
   return e
 }
 
-function y(e) {
+function b(e) {
   return null == e || "" === e || Number.isNaN(e) ? Date.now() : d.default.extractTimestamp(e) + 9e5
 }
 
 function O(e) {
   return null == e || "" === e || Number.isNaN(e) ? Date.now() : d.default.extractTimestamp(e) + 3e3
 }
-let A = async e => {
+let v = async e => {
   let {
     componentType: t,
     messageId: n,
@@ -76,9 +76,9 @@ let A = async e => {
       customId: a,
       componentId: o
     },
-    onFailure: (e, t) => S(_, e, t)
+    onFailure: (e, t) => I(_, e, t)
   }), null != g && (0, f.Sw)(n, E, g, o);
-  let y = {
+  let b = {
     type: s.G4.MESSAGE_COMPONENT,
     nonce: E,
     guild_id: h,
@@ -87,22 +87,22 @@ let A = async e => {
     message_id: n,
     application_id: l,
     session_id: u.default.getSessionId(),
-    data: b({
+    data: y({
       component_type: t,
       custom_id: a
-    }, v(g))
+    }, A(g))
   };
   await r.Bo.post({
     url: m.Rsh.INTERACTIONS,
-    body: y,
+    body: b,
     timeout: 3e3,
     rejectWithError: false
   }, e => {
-    I(E, e, l, _, h)
+    S(E, e, l, _, h)
   })
 };
 
-function v(e) {
+function A(e) {
   if (null == e) return null;
   switch (e.type) {
     case s.I5.TEXT_INPUT:
@@ -125,10 +125,10 @@ function v(e) {
       return null
   }
 }
-let S = (e, t, n) => {
+let I = (e, t, n) => {
     null == n && null != t && a.A.sendClydeError(e, t)
   },
-  I = (e, t, n, r, a) => {
+  S = (e, t, n, r, a) => {
     if (!t.ok) {
       if (!t.hasErr)
         if (t.status >= 400 && t.status < 500 && t.body)
@@ -159,7 +159,7 @@ var T = function(e) {
 }({});
 let C = (e, t) => {
   let n = null == t ? true : t.state,
-    r = e.state === m.cmJ.SENT && y(e.id) < Date.now(),
+    r = e.state === m.cmJ.SENT && b(e.id) < Date.now(),
     i = e.state === m.cmJ.SEND_FAILED && O(e.id) < Date.now(),
     a = (null == t ? true : t.data.interactionType) === s.G4.APPLICATION_COMMAND,
     o = e.isCommandType();

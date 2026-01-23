@@ -30,7 +30,7 @@ var Chunk58149 = require("./58149.js"),
   Chunk652215 = require("./652215.js"),
   Chunk818348 = require("./818348.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,14 +39,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -63,12 +63,12 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = e => {
+let A = e => {
     let {
       user: t,
       userProfile: n,
@@ -85,12 +85,12 @@ let v = e => {
     }
     return (null == a ? true : a.bio) && s.push(m.d6.BIO), (null == a ? true : a.themeColors) != null && true !== a.themeColors.find(e => null !== e) && s.push(m.d6.THEME), (null == t ? true : t.avatarDecoration) != null && s.push(m.d6.AVATAR_DECORATION), (null == a ? true : a.profileEffect) != null && s.push(m.d6.PROFILE_EFFECT), s
   },
-  S = e => {
+  I = e => {
     let t = l.A.getStatus(e),
       n = l.A.isMobileOnline(e);
     return t === E.cl.ONLINE && n ? "".concat(t, "-mobile") : t === E.cl.ONLINE ? "".concat(t, "-desktop") : t
   },
-  I = e => null == e ? e : "VOICE" === e ? "VOICE" : Object.keys(g.$pd)[Object.values(g.$pd).indexOf(e)],
+  S = e => null == e ? e : "VOICE" === e ? "VOICE" : Object.keys(g.$pd)[Object.values(g.$pd).indexOf(e)],
   T = e => {
     var t, n, r;
     let {
@@ -108,11 +108,11 @@ let v = e => {
       profile_layout: i,
       profile_session_id: c,
       source_profile_session_id: d,
-      profile_properties: v({
+      profile_properties: A({
         user: p,
         userProfile: null == _ ? true : _._userProfile
       }),
-      guild_profile_properties: v({
+      guild_profile_properties: A({
         guildMember: m,
         guildMemberProfile: null == _ ? true : _._guildMemberProfile
       }),
@@ -130,7 +130,7 @@ let v = e => {
       }),
       avatar_decoration_sku_id: null == (n = p.avatarDecoration) ? true : n.skuId,
       profile_effect_sku_id: null == _ || null == (r = _.profileEffect) ? true : r.skuId,
-      user_status: S(p.id),
+      user_status: I(p.id),
       is_guild_profile: (null == _ ? true : _.guildId) != null,
       is_bot_profile: p.bot
     }
@@ -168,7 +168,7 @@ let v = e => {
       section: c,
       applicationId: u
     } = e;
-    d.default.track(g.HAw.USER_PROFILE_ACTION, A(y({}, (0, r.H$)(t), (0, r.Ou)(n), T(e), C(e), N(u)), {
+    d.default.track(g.HAw.USER_PROFILE_ACTION, v(b({}, (0, r.H$)(t), (0, r.Ou)(n), T(e), C(e), N(u)), {
       location_stack: o,
       profile_action: l,
       profile_section: c,
@@ -192,7 +192,7 @@ let v = e => {
       timeToLoadMs: c,
       timeToFetchMs: u
     } = e;
-    (null != l ? l : 0) <= 0 || (null != c ? c : 0) <= 0 || (null != u ? u : 0) <= 0 || d.default.track(g.HAw.USER_PROFILE_UI_VIEWED, A(y({}, (0, r.H$)(t), (0, r.Ou)(n), T(e), C(e)), {
+    (null != l ? l : 0) <= 0 || (null != c ? c : 0) <= 0 || (null != u ? u : 0) <= 0 || d.default.track(g.HAw.USER_PROFILE_UI_VIEWED, v(b({}, (0, r.H$)(t), (0, r.Ou)(n), T(e), C(e)), {
       location_stack: i,
       profile_ui: a,
       view_started_at: s,
@@ -215,11 +215,11 @@ let v = e => {
       outbox: u,
       voiceChannelId: f
     } = e;
-    d.default.track(g.HAw.USER_PROFILE_ACTIVITY_ACTION, A(y({}, (0, r.H$)(t), (0, r.Ou)(n), T(e), C(e)), {
+    d.default.track(g.HAw.USER_PROFILE_ACTIVITY_ACTION, v(b({}, (0, r.H$)(t), (0, r.Ou)(n), T(e), C(e)), {
       location_stack: i,
       activity_action: a,
       activity_display: s,
-      activity_type: I(null != l ? g.$pd.STREAMING : null == o ? true : o.type),
+      activity_type: S(null != l ? g.$pd.STREAMING : null == o ? true : o.type),
       activity_name: null == o ? true : o.name,
       activity_platform: null == o ? true : o.platform,
       activity_session_id: null == o ? true : o.session_id,
@@ -248,7 +248,7 @@ let v = e => {
       analyticsLocations: i,
       badge: a
     } = e;
-    d.default.track(g.HAw.USER_PROFILE_BADGE_PRESSED, A(y({}, (0, r.H$)(t), (0, r.Ou)(n), T(e), C(e)), {
+    d.default.track(g.HAw.USER_PROFILE_BADGE_PRESSED, v(b({}, (0, r.H$)(t), (0, r.Ou)(n), T(e), C(e)), {
       location_stack: i,
       badge: a
     }))
@@ -260,7 +260,7 @@ let v = e => {
       analyticsLocations: i,
       badge: a
     } = e;
-    d.default.track(g.HAw.USER_PROFILE_BADGE_HOVERED, A(y({}, (0, r.H$)(t), (0, r.Ou)(n), T(e), C(e)), {
+    d.default.track(g.HAw.USER_PROFILE_BADGE_HOVERED, v(b({}, (0, r.H$)(t), (0, r.Ou)(n), T(e), C(e)), {
       location_stack: i,
       badge: a
     }))
@@ -298,9 +298,9 @@ let v = e => {
       numCharacters: c,
       applicationId: u
     } = e;
-    R(A(y({}, e), {
+    R(v(b({}, e), {
       action: a
-    })), d.default.track(g.HAw.USER_PROFILE_EDIT_ACTION, A(y({}, (0, r.H$)(t), (0, r.Ou)(n), T(e), N(u)), {
+    })), d.default.track(g.HAw.USER_PROFILE_EDIT_ACTION, v(b({}, (0, r.H$)(t), (0, r.Ou)(n), T(e), N(u)), {
       location_stack: i,
       edit_action: a,
       widget_edited: s,
@@ -321,9 +321,9 @@ let v = e => {
       numCharactersCommentary: l,
       isWidgetRemoved: c
     } = e;
-    R(A(y({}, e), {
+    R(v(b({}, e), {
       action: "EDIT_SAVED"
-    })), d.default.track(g.HAw.USER_PROFILE_EDIT_SAVED, A(y({}, (0, r.H$)(t), (0, r.Ou)(n), T(e)), {
+    })), d.default.track(g.HAw.USER_PROFILE_EDIT_SAVED, v(b({}, (0, r.H$)(t), (0, r.Ou)(n), T(e)), {
       location_stack: i,
       widget_edited: a,
       game_ids: s,
@@ -342,9 +342,9 @@ let v = e => {
       skuId: o,
       productLines: l
     } = e;
-    R(A(y({}, e), {
+    R(v(b({}, e), {
       action: a
-    })), d.default.track(g.HAw.USER_PROFILE_WISHLIST_ACTION, A(y({}, (0, r.H$)(t), (0, r.Ou)(n), T(e)), {
+    })), d.default.track(g.HAw.USER_PROFILE_WISHLIST_ACTION, v(b({}, (0, r.H$)(t), (0, r.Ou)(n), T(e)), {
       location_stack: i,
       action_type: a,
       wishlist_id: s,

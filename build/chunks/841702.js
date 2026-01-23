@@ -2,11 +2,10 @@
 /** chunk id: 841702, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => E,
-  Bf: () => b,
-  Mv: () => g,
-  Wg: () => h,
-  b5: () => m
+  Ay: () => g,
+  Bf: () => E,
+  Mv: () => m,
+  Wg: () => h
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk635358 = require("./635358.js"),
@@ -87,16 +86,15 @@ function h() {
   }
 }
 require("./259248.js");
-let m = () => h(true),
-  g = function(e) {
-    let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-      {
-        purchases: n
-      } = h(t);
-    return null != e ? n.get(e) : true
-  };
+let m = function(e) {
+  let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
+    {
+      purchases: n
+    } = h(t);
+  return null != e ? n.get(e) : true
+};
 
-function E(e, t) {
+function g(e, t) {
   let n = null == e ? true : e.paymentGateway,
     {
       isFetching: r,
@@ -131,6 +129,6 @@ function E(e, t) {
     hasPreviouslyFetched: p
   }
 }
-let b = e => E(_(f({}, null != e ? e : {}), {
+let E = e => g(_(f({}, null != e ? e : {}), {
   stalePurchasesOK: true
 }))

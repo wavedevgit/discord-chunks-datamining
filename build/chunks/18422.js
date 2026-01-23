@@ -19,18 +19,18 @@ function d(e) {
     path: i,
     paramsBuilder: d,
     search: p
-  } = e, f = (0, l.bG)([o.default], () => {
+  } = e, h = (0, l.bG)([o.default], () => {
     var e;
     return null != (e = o.default.getFingerprint()) ? e : o.default.getId()
-  }), h = (0, l.bG)([s.A], () => s.A.getState(i), [i]), A = r.useMemo(() => null == d ? {
+  }), g = (0, l.bG)([s.A], () => s.A.getState(i), [i]), f = r.useMemo(() => null == d ? {
     path: i,
-    fingerprint: f,
+    fingerprint: h,
     search: p
-  } : d(i, f, p), [i, d, f, p]);
+  } : d(i, h, p), [i, d, h, p]);
   return r.useEffect(() => {
-    u || null == h && a.A.openNativeAppModal(i, c.e$_.DEEP_LINK, {
+    u || null == g && a.A.openNativeAppModal(i, c.e$_.DEEP_LINK, {
       type: n,
-      params: A
+      params: f
     })
-  }, [h, i, A, n]), t
+  }, [g, i, f, n]), t
 }

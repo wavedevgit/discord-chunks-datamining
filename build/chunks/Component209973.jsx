@@ -50,13 +50,13 @@ function w() {
   } = (0, o.bG)([f.A], () => f.A.getCheckpointData()), {
     duration: w,
     unit: P
-  } = (0, p.oO)(e), D = P === l.pJ.HOURS, x = i.useContext(h.GD), L = i.useRef(null), j = i.useContext(b.Aq), M = i.useContext(d.P), k = (0, c.rdh)(M.primaryColor).hex(), U = (0, o.bG)([u.A], () => u.A.useReducedMotion), G = i.useCallback(e => {
+  } = (0, p.oO)(e), D = P === l.pJ.HOURS, x = i.useContext(h.GD), L = i.useRef(null), j = i.useContext(y.Aq), M = i.useContext(d.P), k = (0, c.rdh)(M.primaryColor).hex(), U = (0, o.bG)([u.A], () => u.A.useReducedMotion), G = i.useCallback(e => {
     let t = L.current;
     if (null == t || t.readyState < HTMLMediaElement.HAVE_CURRENT_DATA) return;
     let n = 0,
       r = 1,
       i = 0;
-    null == j || j((e, t) => (t === A.P7.VOICE && (n = Math.max(e.opacity.get(), 0), r = e.backgroundScale.get(), i = e.backgroundY.get()), null));
+    null == j || j((e, t) => (t === v.P7.VOICE && (n = Math.max(e.opacity.get(), 0), r = e.backgroundScale.get(), i = e.backgroundY.get()), null));
     let {
       canvas: a,
       context: s
@@ -71,7 +71,7 @@ function w() {
   }, [U]);
   let {
     monthName: V
-  } = (0, p.od)(n, S.intl.currentLocale), F = null != t;
+  } = (0, p.od)(n, I.intl.currentLocale), F = null != t;
   return (0, r.jsxs)(E.A, {
     children: [(0, r.jsx)(a.A, {
       autoPlay: !U,
@@ -88,44 +88,44 @@ function w() {
     }), (0, r.jsxs)("div", {
       className: T.Qs,
       children: [(0, r.jsxs)("div", {
-        className: I.DD,
+        className: S.DD,
         children: [(0, r.jsx)(s.cNw, {
           size: "refresh_sm",
           color: k,
-          className: I.gr,
-          colorClass: I.d7
-        }), D ? (0, r.jsx)(y.A, {
+          className: S.gr,
+          colorClass: S.d7
+        }), D ? (0, r.jsx)(b.A, {
           variant: "eyebrow",
-          className: I.UP,
-          children: S.intl.format(v.default.Xu0QsX, {
+          className: S.UP,
+          children: I.intl.format(A.default.Xu0QsX, {
             numHours: w
           })
-        }) : (0, r.jsx)(y.A, {
+        }) : (0, r.jsx)(b.A, {
           variant: "eyebrow",
-          className: I.UP,
-          children: S.intl.format(v.default.UZbUtl, {
+          className: S.UP,
+          children: I.intl.format(A.default.UZbUtl, {
             numMinutes: w
           })
         })]
       }), (0, r.jsx)(O.A, {
         end: w,
         alignment: "center"
-      }), (0, r.jsx)(y.A, {
+      }), (0, r.jsx)(b.A, {
         variant: "heading-xxl/medium",
         className: T.VA,
-        children: F ? S.intl.format(v.default["36PZwu"], {
+        children: F ? I.intl.format(A.default["36PZwu"], {
           percent: 100 - t,
           percentHook: (e, t) => (0, r.jsx)(m.A, {
             children: e
           }, t)
-        }) : S.intl.format(v.default.VaydtR, {
+        }) : I.intl.format(A.default.VaydtR, {
           month: V,
           monthHook: (e, t) => (0, r.jsx)(m.A, {
             children: e
           }, t)
         })
       }), (0, r.jsx)(g.e, {
-        slide: A.P7.VOICE
+        slide: v.P7.VOICE
       })]
     })]
   })

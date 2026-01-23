@@ -2,7 +2,7 @@
 /** chunk id: 580043, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -69,13 +69,13 @@ class d extends Chunk64700.Component {
   }
 }
 let u = (0, Chunk108531.animated)(d),
-  f = function(e) {
+  g = function(e) {
     let {
       className: t,
       name: n,
       icon: i,
       iconClassName: l
-    } = e, a = (0, c.pnh)({
+    } = e, a = (0, o.pnh)({
       name: n,
       icon: i,
       iconClassName: l
@@ -93,7 +93,7 @@ let u = (0, Chunk108531.animated)(d),
       }
     }, "animate-always");
     return (0, r.jsx)("div", {
-      className: s()(o.t, t),
+      className: s()(c.t, t),
       children: a((e, t) => {
         let {
           icon: n,
@@ -101,7 +101,7 @@ let u = (0, Chunk108531.animated)(d),
         } = t;
         return (0, r.jsx)(u, {
           icon: n,
-          className: s()(o.K, i),
+          className: s()(c.K, i),
           style: e
         })
       })

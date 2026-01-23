@@ -30,7 +30,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,38 +55,38 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = v(e, t), Object.getOwnPropertySymbols)
+  if (a = A(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function v(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let S = {
+let I = {
   mass: 1,
   tension: 300,
   friction: 28,
   clamp: true
 };
 
-function I(e, t) {
+function S(e, t) {
   return null == e ? null : e.index > t.index ? "backwards" : e.index < t.index ? "forwards" : null
 }
 
@@ -108,11 +108,11 @@ function N(e) {
   var t, n, a;
   let {
     contentDisplay: E,
-    fadeInOut: y = false
-  } = e, v = A(e, ["contentDisplay", "fadeInOut"]), C = {}, {
+    fadeInOut: b = false
+  } = e, A = v(e, ["contentDisplay", "fadeInOut"]), C = {}, {
     analyticsLocations: N
   } = (0, m.Ay)();
-  i.Children.forEach(v.children, (e, t) => {
+  i.Children.forEach(A.children, (e, t) => {
     C[e.props.id] = {
       children: e.props.children,
       impressionName: e.props.impressionName,
@@ -120,15 +120,15 @@ function N(e) {
       index: t
     }
   });
-  let R = v.activeSlide,
-    w = (0, _.A)(v.activeSlide),
-    P = null != (t = v.directionOverride) ? t : I(null != w ? C[w] : null, C[R]),
+  let R = A.activeSlide,
+    w = (0, _.A)(A.activeSlide),
+    P = null != (t = A.directionOverride) ? t : S(null != w ? C[w] : null, C[R]),
     {
       reducedMotion: D
     } = i.useContext(d.CZY),
     x = i.useContext(h.A),
     L = C[R].impressionName,
-    j = O(b({}, C[R].impressionProperties), {
+    j = O(y({}, C[R].impressionProperties), {
       location_stack: N
     });
   x({
@@ -143,10 +143,10 @@ function N(e) {
     ref: M,
     width: k = 0,
     height: U = 0
-  } = (0, p.Ay)(R), G = b({}, S, v.springConfig, D.enabled ? {
+  } = (0, p.Ay)(R), G = y({}, I, A.springConfig, D.enabled ? {
     clamp: true
   } : null), V = (0, f.zhh)({
-    width: null != (n = v.width) ? n : k,
+    width: null != (n = A.width) ? n : k,
     height: U,
     config: G
   }, null == w ? "animate-never" : "respect-motion-settings"), F = (0, f.pnh)(R, {
@@ -165,29 +165,29 @@ function N(e) {
       let {
         item: n
       } = t;
-      n === R && null != v.onSlideReady && v.onSlideReady(n)
+      n === R && null != A.onSlideReady && A.onSlideReady(n)
     }
   }, null == w ? "animate-never" : "respect-motion-settings"), B = (0, c.A)(P), {
     width: H,
     centered: Y = true
-  } = v, W = u.Fr && !v.shouldUseMediaQueriesForSizing ? "100%" : V.width.to(e => "string" == typeof e ? e : Math.round(e)), K = u.Fr && !v.shouldUseMediaQueriesForSizing ? "100%" : V.height.to(e => Math.round(e)), z = u.Fr ? {} : Y ? {
+  } = A, W = u.Fr && !A.shouldUseMediaQueriesForSizing ? "100%" : V.width.to(e => "string" == typeof e ? e : Math.round(e)), K = u.Fr && !A.shouldUseMediaQueriesForSizing ? "100%" : V.height.to(e => Math.round(e)), z = u.Fr ? {} : Y ? {
     transform: "translate3d(0, -50%, 0) scale(1.0, 1.0)",
     top: "50%"
   } : {
     transform: "scale(1.0, 1.0)"
   }, q = u.Fr ? {} : {
-    overflow: null != (a = v.overflow) ? a : "hidden"
+    overflow: null != (a = A.overflow) ? a : "hidden"
   }, X = i.useMemo(() => ({
-    width: u.Fr && !v.shouldUseMediaQueriesForSizing ? "100%" : H
-  }), [v.shouldUseMediaQueriesForSizing, H]);
+    width: u.Fr && !A.shouldUseMediaQueriesForSizing ? "100%" : H
+  }), [A.shouldUseMediaQueriesForSizing, H]);
   return (0, r.jsx)(o.animated.div, {
-    style: b({
+    style: y({
       position: "relative",
       minWidth: W,
       minHeight: K
     }, q),
     className: s()({
-      [g.f]: v.shouldUseMediaQueriesForSizing
+      [g.f]: A.shouldUseMediaQueriesForSizing
     }),
     children: F((e, t, n) => {
       let {
@@ -197,17 +197,17 @@ function N(e) {
       };
       return (0, r.jsx)(o.animated.div, {
         ref: t === R ? M : null,
-        style: b({
+        style: y({
           position: "absolute",
           display: E,
           flexDirection: "column",
           backfaceVisibility: "hidden"
-        }, X, z, D.enabled ? a : b({
+        }, X, z, D.enabled ? a : y({
           left: e.value.to(T("left", B)),
           right: e.value.to(T("right", B))
-        }, y && a)),
+        }, b && a)),
         className: s()({
-          [g.o]: v.shouldUseMediaQueriesForSizing
+          [g.o]: A.shouldUseMediaQueriesForSizing
         }),
         children: C[t].children
       }, i)

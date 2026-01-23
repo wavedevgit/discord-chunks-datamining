@@ -22,13 +22,13 @@ function p(e) {
     onSuccess: m,
     onClose: g,
     requirementsUpdated: E
-  } = e, [b, y] = i.useState(""), [O, A] = i.useState(""), [v, S] = i.useState(""), [I, T] = i.useState(null), [C, N] = i.useState(null), R = (0, s.bG)([c.A], () => c.A.getErrors()), w = (0, s.bG)([c.A], () => c.A.getFormState()), P = i.useRef(null);
+  } = e, [y, b] = i.useState(""), [O, v] = i.useState(""), [A, I] = i.useState(""), [S, T] = i.useState(null), [C, N] = i.useState(null), R = (0, s.bG)([c.A], () => c.A.getErrors()), w = (0, s.bG)([c.A], () => c.A.getFormState()), P = i.useRef(null);
   async function D(e) {
     e.preventDefault(), (0, l.x8)();
     let t = false;
-    if ("" === O ? (T(f.intl.string(f.t["/7/oPU"])), t = true) : T(null), O !== v ? (N(f.intl.string(f.t["IEKYZ/"])), t = true) : N(null), t) return;
+    if ("" === O ? (T(f.intl.string(f.t["/7/oPU"])), t = true) : T(null), O !== A ? (N(f.intl.string(f.t["IEKYZ/"])), t = true) : N(null), t) return;
     let n = await (0, l.yu)({
-      password: b,
+      password: y,
       newPassword: O
     });
     if (null == n ? true : n.ok) m();
@@ -65,25 +65,25 @@ function p(e) {
           label: f.intl.string(f.t.WBqMRQ),
           error: null == R || null == (p = R.password) ? true : p[0],
           type: "password",
-          value: b,
-          onChange: y,
+          value: y,
+          onChange: b,
           inputRef: P,
           autoComplete: "current-password",
           required: true
         }), (0, r.jsx)(o.ksK, {
           label: f.intl.string(f.t["8dM4FO"]),
-          error: null != (t = null != (n = null == R || null == (_ = R.new_password) ? true : _[0]) ? n : I) ? t : true,
+          error: null != (t = null != (n = null == R || null == (_ = R.new_password) ? true : _[0]) ? n : S) ? t : true,
           type: "password",
           value: O,
-          onChange: A,
+          onChange: v,
           autoComplete: "new-password",
           required: true
         }), (0, r.jsx)(o.ksK, {
           label: f.intl.string(f.t.iQG2KC),
           error: null != C ? C : true,
           type: "password",
-          value: v,
-          onChange: S,
+          value: A,
+          onChange: I,
           autoComplete: "new-password",
           required: true
         })]

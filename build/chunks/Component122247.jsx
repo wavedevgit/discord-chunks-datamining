@@ -2,7 +2,7 @@
 /** chunk id: 122247, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => p
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk406947 = require("./406947.js");
 
-function b(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function b(e) {
   return e
 }
 
-function m(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,107 +48,107 @@ function m(e, t) {
   }), e
 }
 
-function p(e) {
+function b(e) {
   var t, n;
   let {
-    rule: p,
-    onChangeRule: x
-  } = e, [h, j] = i.useState(null == (t = p.triggerMetadata) ? true : t.mentionTotalLimit), O = (0, s._)(p.guildId, false);
+    rule: b,
+    onChangeRule: h
+  } = e, [x, j] = i.useState(null == (t = b.triggerMetadata) ? true : t.mentionTotalLimit), _ = (0, s._)(b.guildId, false);
   return (0, r.jsxs)("div", {
-    className: g.sp,
-    children: [(0, r.jsxs)(o.A, {
+    className: m.sp,
+    children: [(0, r.jsxs)(c.A, {
       step: 1,
-      header: f.intl.string(f.t.IGfuTa),
+      header: g.intl.string(g.t.IGfuTa),
       children: [(0, r.jsxs)("div", {
-        className: g.$I,
+        className: m.$I,
         children: [(0, r.jsx)("div", {
-          className: g.U$,
+          className: m.U$,
           children: (0, r.jsx)(l.XxR, {
             size: "md",
             color: "currentColor",
-            className: g.B_
+            className: m.B_
           })
         }), (0, r.jsxs)("div", {
-          className: g.ej,
+          className: m.ej,
           children: [(0, r.jsx)(l.Heading, {
             variant: "heading-sm/semibold",
-            children: f.intl.string(f.t["s/26oQ"])
+            children: g.intl.string(g.t["s/26oQ"])
           }), (0, r.jsx)(l.Text, {
             color: "interactive-text-default",
             variant: "text-xs/medium",
-            className: g.mu,
-            children: f.intl.string(f.t["8uW4/N"])
+            className: m.mu,
+            children: g.intl.string(g.t["8uW4/N"])
           })]
         }), (0, r.jsx)("div", {
-          className: g.Ld,
+          className: m.Ld,
           children: (0, r.jsx)(l.lw3, {
-            value: h,
+            value: x,
             onChange: e => {
-              j(e), x(m(b({}, p), {
-                triggerMetadata: m(b({}, p.triggerMetadata), {
+              j(e), h(f(p({}, b), {
+                triggerMetadata: f(p({}, b.triggerMetadata), {
                   mentionTotalLimit: e
                 })
               }))
             },
             minValue: u.Us,
             maxValue: u.M3,
-            className: g.Im
+            className: m.Im
           })
         })]
-      }), O ? (0, r.jsxs)("div", {
-        className: g.$I,
+      }), _ ? (0, r.jsxs)("div", {
+        className: m.$I,
         children: [(0, r.jsx)("div", {
-          className: g.U$,
+          className: m.U$,
           children: (0, r.jsx)(l.ERh, {
             size: "md",
             color: "currentColor",
-            className: g.B_
+            className: m.B_
           })
         }), (0, r.jsxs)("div", {
-          className: g.ej,
+          className: m.ej,
           children: [(0, r.jsx)(l.Heading, {
             variant: "heading-sm/semibold",
-            children: f.intl.string(f.t.XnuC9g)
+            children: g.intl.string(g.t.XnuC9g)
           }), (0, r.jsx)(l.Text, {
             color: "interactive-text-default",
             variant: "text-xs/medium",
-            className: g.mu,
-            children: f.intl.string(f.t.EDBe5m)
+            className: m.mu,
+            children: g.intl.string(g.t.EDBe5m)
           })]
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(l.DUT, {
-            onClick: O ? () => {
+            onClick: _ ? () => {
               var e, t;
-              return t = !(null == (e = p.triggerMetadata) ? true : e.mentionRaidProtectionEnabled), void x(m(b({}, p), {
-                triggerMetadata: m(b({}, p.triggerMetadata), {
+              return t = !(null == (e = b.triggerMetadata) ? true : e.mentionRaidProtectionEnabled), void h(f(p({}, b), {
+                triggerMetadata: f(p({}, b.triggerMetadata), {
                   mentionRaidProtectionEnabled: t
                 })
               }))
             } : true,
             children: (0, r.jsx)(l.P7L, {
-              checked: null == (n = p.triggerMetadata) ? true : n.mentionRaidProtectionEnabled,
-              disabled: !O
+              checked: null == (n = b.triggerMetadata) ? true : n.mentionRaidProtectionEnabled,
+              disabled: !_
             })
           })
         })]
       }) : null]
     }), (0, r.jsx)(d.A, {
       type: d.A.Type.ARROW_DOWN
-    }), (0, r.jsx)(o.A, {
+    }), (0, r.jsx)(c.A, {
       step: 2,
-      header: f.intl.string(f.t["18TOiQ"]),
+      header: g.intl.string(g.t["18TOiQ"]),
       children: (0, r.jsx)(a.A, {
-        rule: p,
-        onChangeRule: x
+        rule: b,
+        onChangeRule: h
       })
     }), (0, r.jsx)(d.A, {
       type: d.A.Type.CROSS
-    }), (0, r.jsx)(o.A, {
+    }), (0, r.jsx)(c.A, {
       step: 3,
-      header: f.intl.string(f.t.eq3gjh),
-      children: (0, r.jsx)(c.A, {
-        rule: p,
-        onChangeRule: x
+      header: g.intl.string(g.t.eq3gjh),
+      children: (0, r.jsx)(o.A, {
+        rule: b,
+        onChangeRule: h
       })
     })]
   })

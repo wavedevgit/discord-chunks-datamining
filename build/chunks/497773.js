@@ -13,23 +13,23 @@ var Chunk64700 = require("./64700.js"),
   Chunk652215 = require("./652215.js");
 
 function u(e) {
-  let t = (0, a.bG)([i.A], () => i.A.getCategories()),
-    n = (0, r.A)(),
-    u = l.useMemo(() => [{
+  let t = (0, l.bG)([a.A], () => a.A.getCategories()),
+    n = (0, i.A)(),
+    u = r.useMemo(() => [{
       id: n.id.toString(),
       label: n.name
     }, ...t.map(e => ({
       id: e.id.toString(),
       label: e.name
     }))], [t, n]),
-    p = (0, c.R4)(),
-    h = l.useCallback(e => {
+    p = (0, o.R4)(),
+    h = r.useCallback(e => {
       let t = u.find(t => t.id === e);
       null != t && ((0, s.TR)(d.HAw.APP_DIRECTORY_CATEGORY_CLICKED, {
         category: t.label,
         category_id: Number(t.id),
         current_page: null == p ? true : p.type
-      }), (0, o.kq)({
+      }), (0, c.kq)({
         categoryId: e
       }))
     }, [null == p ? true : p.type, u]),

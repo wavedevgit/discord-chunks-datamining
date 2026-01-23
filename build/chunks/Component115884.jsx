@@ -1,14 +1,14 @@
 /** Chunk was on 27084 **/
 /** chunk id: 115884, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => k
+  A: () => S
 }), require("./896048.js"), require("./733351.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  c = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
-  i = require.n(Chunk284009),
+  c = require.n(Chunk284009),
   Chunk421380 = require("./421380.js"),
   Chunk397927 = require("./397927.js"),
   Chunk49229 = require("./49229.js"),
@@ -20,7 +20,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk680982 = require("./680982.js"),
   Chunk473169 = require("./473169.js");
 
-function g(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,49 +58,49 @@ let Chunk892799 = require("./892799.js"),
     success: null,
     error: null
   },
-  R = (0, Chunk915089.Ld)(),
-  w = "".concat(R, "-decription"),
-  N = "".concat(R, "-error");
+  _ = (0, Chunk915089.Ld)(),
+  R = "".concat(_, "-decription"),
+  w = "".concat(_, "-error");
 
-function S(e, t) {
+function N(e, t) {
   switch (t.type) {
     case "RESET":
       return O;
     case "SUCCESS":
-      return y(g({}, O), {
+      return y(v({}, O), {
         success: t.text
       });
     case "HINT":
-      return y(g({}, O), {
+      return y(v({}, O), {
         canSend: true,
         hint: t.text
       });
     case "ERROR":
-      return y(g({}, e), {
+      return y(v({}, e), {
         canSend: true,
         error: t.text
       })
   }
 }
 
-function k(e) {
+function S(e) {
   let {
     placeholder: t = m.intl.string(m.t["Rn/sLl"])
-  } = e, n = l.useRef(null), a = l.useRef(null), [s, f] = l.useReducer(S, O), {
-    canSend: g,
+  } = e, n = i.useRef(null), a = i.useRef(null), [s, p] = i.useReducer(N, O), {
+    canSend: v,
     hint: y,
-    error: k,
-    success: E
+    error: S,
+    success: k
   } = s;
-  return l.useEffect(() => {
-    null != E && (i()(null != n.current, "Input is submitting when not mounted"), n.current.value = "", n.current.focus())
-  }, [E, n]), (0, r.jsxs)("form", {
+  return i.useEffect(() => {
+    null != k && (c()(null != n.current, "Input is submitting when not mounted"), n.current.value = "", n.current.focus())
+  }, [k, n]), (0, r.jsxs)("form", {
     onSubmit: e => {
-      e.preventDefault(), i()(null != n.current, "Input is submitted when not mounted");
+      e.preventDefault(), c()(null != n.current, "Input is submitted when not mounted");
       let t = n.current.value.trim();
       !t.includes("#") && t.startsWith("@") && (t = t.substring(1));
-      let r = (0, p.Ty)(t);
-      null != r ? f({
+      let r = (0, b.Ty)(t);
+      null != r ? p({
         type: "ERROR",
         text: r
       }) : d.A.sendRequest({
@@ -108,23 +108,23 @@ function k(e) {
         context: {
           location: "Add Friend"
         }
-      }).then(() => f({
+      }).then(() => p({
         type: "SUCCESS",
         text: m.intl.format(m.t.Rtl1Ep, {
           discordTag: t
         })
       }), e => {
         var n;
-        return f({
+        return p({
           type: "ERROR",
-          text: (0, p.vU)(null == (n = e.body) ? true : n.code, t)
+          text: (0, b.vU)(null == (n = e.body) ? true : n.code, t)
         })
       })
     },
     autoComplete: "off",
     children: [(0, r.jsxs)("div", {
-      className: v.QR,
-      children: [(0, r.jsx)(u.Text, {
+      className: x.QR,
+      children: [(0, r.jsx)(o.Text, {
         tag: "div",
         variant: "heading-md/normal",
         children: m.intl.string(m.t["Rn/sLl"])
@@ -132,39 +132,39 @@ function k(e) {
         src: j,
         alt: "Wumpus Waving"
       })]
-    }), (0, r.jsx)(u.vN3, {
+    }), (0, r.jsx)(o.vN3, {
       focusTarget: n,
       ringTarget: a,
-      ringClassName: v.hN,
+      ringClassName: x.hN,
       children: (0, r.jsxs)("div", {
         ref: a,
-        className: c()(v.fc, {
-          [v.kX]: E,
-          [v.z3]: k
+        className: l()(x.fc, {
+          [x.kX]: k,
+          [x.z3]: S
         }),
-        children: [(0, r.jsx)(o.ob, {
-          id: R,
+        children: [(0, r.jsx)(u.ob, {
+          id: _,
           inputRef: n,
-          className: v.QP,
-          inputClassName: v.hF,
+          className: x.QP,
+          inputClassName: x.hF,
           onKeyPress: e => {
             let t = e.currentTarget.value;
             if (e.key !== h.N$.Enter && t.includes("#")) {
-              i()(null != n.current, "Input is handling keypress when not mounted");
+              c()(null != n.current, "Input is handling keypress when not mounted");
               let r = t.indexOf("#"),
-                l = n.current.selectionStart,
+                i = n.current.selectionStart,
                 a = e.key === h.N$.Backspace || e.key === h.N$.ArrowRight || e.key === h.N$.ArrowLeft,
-                c = e.which >= 48 && e.which <= 57;
-              null != l && l > r && /^(.+?#\d{4})$/.test(t) && !a ? e.preventDefault() : null == l || !(l > r) || c || a || e.preventDefault()
+                l = e.which >= 48 && e.which <= 57;
+              null != i && i > r && /^(.+?#\d{4})$/.test(t) && !a ? e.preventDefault() : null == i || !(i > r) || l || a || e.preventDefault()
             }
           },
           onChange: e => {
-            if (e.length <= 0) return void f({
+            if (e.length <= 0) return void p({
               type: "RESET"
             });
             let t = "",
               [, n] = e.split("#");
-            null != n && (t = e + b.RoK.slice(null != n ? n.length + 1 : 0)), f({
+            null != n && (t = e + f.RoK.slice(null != n ? n.length + 1 : 0)), p({
               type: "HINT",
               text: t
             })
@@ -178,36 +178,36 @@ function k(e) {
           "data-1p-ignore": true,
           placeholder: t,
           "aria-label": t,
-          "aria-invalid": null != k || true,
-          "aria-describedby": null != k ? N : w
+          "aria-invalid": null != S || true,
+          "aria-describedby": null != S ? w : R
         }), null != y && (0, r.jsx)("div", {
-          className: v.dQ,
+          className: x.dQ,
           "aria-hidden": true,
           children: y
-        }), (0, r.jsx)(u.Button, {
+        }), (0, r.jsx)(o.Button, {
           variant: "primary",
           size: "sm",
           text: m.intl.string(m.t["PMsq/b"]),
-          disabled: !g,
+          disabled: !v,
           type: "submit"
         })]
       })
-    }), null != k && (0, r.jsx)("div", {
+    }), null != S && (0, r.jsx)("div", {
       role: "alert",
-      children: (0, r.jsx)(u.Text, {
-        id: N,
+      children: (0, r.jsx)(o.Text, {
+        id: w,
         variant: "text-sm/normal",
-        className: x.Ot,
+        className: g.Ot,
         color: "text-feedback-critical",
-        children: k
+        children: S
       })
-    }), null != E && (0, r.jsx)("div", {
+    }), null != k && (0, r.jsx)("div", {
       role: "status",
-      children: (0, r.jsx)(u.Text, {
+      children: (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
-        className: x.Ot,
+        className: g.Ot,
         color: "text-feedback-positive",
-        children: E
+        children: k
       })
     })]
   })

@@ -6,9 +6,9 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  i = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk299855 = require("./299855.js"),
-  c = require.n(Chunk299855),
+  o = require.n(Chunk299855),
   Chunk141931 = require("./141931.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -33,31 +33,31 @@ var Chunk627968 = require("./627968.js"),
   Chunk146896 = require("./146896.js");
 
 function T(e, t, r, n) {
-  let l = (0, b.isWindows)() ? (0, A.A)(h.Ay, m.A) : null,
-    s = h.Ay.getRunningGames(),
-    i = null == r ? true : r.split(":")[1],
+  let i = (0, _.isWindows)() ? (0, S.A)(h.Ay, j.A) : null,
+    l = h.Ay.getRunningGames(),
+    s = null == r ? true : r.split(":")[1],
     a = e.id.split(":")[1];
-  if (null != i && i === a) return 0;
+  if (null != s && s === a) return 0;
   if (null != t && t === e.id) return 5;
-  if (null != l && (0, S.A)(e.id, l.windowHandle)) return 4;
-  if (null != s.find(t => (0, S.A)(e.id, t.windowHandle))) return 3;
-  let c = null == n ? true : n[a];
-  return null != c && C.F2.has(c) ? 2 : 1
+  if (null != i && (0, y.A)(e.id, i.windowHandle)) return 4;
+  if (null != l.find(t => (0, y.A)(e.id, t.windowHandle))) return 3;
+  let o = null == n ? true : n[a];
+  return null != o && w.F2.has(o) ? 2 : 1
 }
 
 function R(e) {
   let {
     source: t
   } = e;
-  return t.id.startsWith(o.fS.SCREEN) ? (0, n.jsx)(f.kN9, {
+  return t.id.startsWith(c.fS.SCREEN) ? (0, n.jsx)(u.kN9, {
     size: "xs"
-  }) : t.id.startsWith(o.fS.WINDOW) ? null != t.icon && "" !== t.icon ? (0, n.jsx)("img", {
+  }) : t.id.startsWith(c.fS.WINDOW) ? null != t.icon && "" !== t.icon ? (0, n.jsx)("img", {
     src: t.icon,
-    className: I.pI,
+    className: N.pI,
     alt: ""
-  }) : (0, n.jsx)(f.WxK, {
+  }) : (0, n.jsx)(u.WxK, {
     size: "xs"
-  }) : (0, n.jsx)(f.npA, {
+  }) : (0, n.jsx)(u.npA, {
     size: "xs"
   })
 }
@@ -66,43 +66,43 @@ function P(e) {
   let {
     source: t,
     selected: r,
-    onClick: l
+    onClick: i
   } = e, {
-    url: s,
+    url: l,
     name: a
   } = t;
-  return (0, n.jsxs)(f.DUT, {
-    onClick: () => l(t),
-    className: i()(I.sP, {
-      [I.Lv]: r
+  return (0, n.jsxs)(u.DUT, {
+    onClick: () => i(t),
+    className: s()(N.sP, {
+      [N.Lv]: r
     }),
     children: [(0, n.jsx)("div", {
-      className: I.ji,
+      className: N.ji,
       children: (0, n.jsxs)("div", {
-        className: I.KG,
+        className: N.KG,
         children: [(0, n.jsx)("img", {
-          src: s,
-          className: I.f5,
+          src: l,
+          className: N.f5,
           alt: ""
         }), (0, n.jsx)("div", {
-          className: I.qe,
+          className: N.qe,
           children: (0, n.jsx)("div", {
-            className: I.K3,
-            children: (0, n.jsx)(f.Text, {
+            className: N.K3,
+            children: (0, n.jsx)(u.Text, {
               variant: "text-sm/medium",
               color: "currentColor",
-              children: N.intl.string(N.t.z7WGhv)
+              children: I.intl.string(I.t.z7WGhv)
             })
           })
         })]
       })
     }), (0, n.jsxs)("div", {
-      className: I.Uw,
+      className: N.Uw,
       children: [(0, n.jsx)(R, {
         source: t
-      }), (0, n.jsx)(f.Text, {
+      }), (0, n.jsx)(u.Text, {
         variant: "text-sm/medium",
-        className: I.VZ,
+        className: N.VZ,
         children: a
       })]
     })]
@@ -114,84 +114,84 @@ function M(e) {
     onClick: t
   } = e, [{
     windowSources: r,
-    deviceSources: s,
-    screenSources: i,
+    deviceSources: l,
+    screenSources: s,
     sourceType: a,
-    fetchingSources: m,
+    fetchingSources: j,
     selectedSource: g,
-    discordSourceId: A,
-    hasPermission: C
-  }] = (0, _.tS)(), {
+    discordSourceId: S,
+    hasPermission: w
+  }] = (0, O.tS)(), {
     smarterSourceOrdering: E
-  } = (0, y.s)({
+  } = (0, b.s)({
     location: "GoLiveSourceGrid"
   }), R = (0, d.bG)([h.Ay], () => h.Ay.getRunningGames()), M = (0, d.cf)([h.Ay], () => {
     let e = h.Ay.getCandidateGames(),
       t = {};
     for (let r of e) null != r.windowHandle && (t[r.windowHandle] = r.exeName);
     return t
-  }), U = (0, d.bG)([j.A], () => j.A.quests), L = (0, O.A)(U, R, r);
-  l.useEffect(() => ((0, p.a2)(), p.e0), []);
-  let G = l.useMemo(() => E ? [...r].sort((e, t) => T(t, null == L ? true : L.source.id, A, M) - T(e, null == L ? true : L.source.id, A, M)) : r, [L, E, r, A, M]);
-  if (m) {
-    if (false === C) {
+  }), U = (0, d.bG)([m.A], () => m.A.quests), G = (0, A.A)(U, R, r);
+  i.useEffect(() => ((0, p.a2)(), p.e0), []);
+  let L = i.useMemo(() => E ? [...r].sort((e, t) => T(t, null == G ? true : G.source.id, S, M) - T(e, null == G ? true : G.source.id, S, M)) : r, [G, E, r, S, M]);
+  if (j) {
+    if (false === w) {
       let e = false;
-      if ((0, b.isMac)()) {
+      if ((0, _.isMac)()) {
         var k, F;
-        let t = null === u.A || true === u.A || null == (F = u.A.remoteApp) || null == (k = F.getVersion) ? true : k.call(F);
-        e = !v.M || "0.0.0" === t || c().satisfies(t, "0.0.363")
+        let t = null === f.A || true === f.A || null == (F = f.A.remoteApp) || null == (k = F.getVersion) ? true : k.call(F);
+        e = !v.M || "0.0.0" === t || o().satisfies(t, "0.0.363")
       }
       return (0, n.jsxs)("div", {
-        className: I.Ye,
-        children: [(0, n.jsxs)(f.Text, {
-          className: I.kc,
+        className: N.Ye,
+        children: [(0, n.jsxs)(u.Text, {
+          className: N.kc,
           variant: "text-md/normal",
           color: "text-feedback-critical",
-          children: [N.intl.string(N.t["kW5h/W"]), (0, n.jsx)("br", {}), N.intl.string(N.t["5Jvu1R"])]
-        }), e && (0, n.jsx)(f.Button, {
-          text: N.intl.string(N.t["XgZk+u"]),
+          children: [I.intl.string(I.t["kW5h/W"]), (0, n.jsx)("br", {}), I.intl.string(I.t["5Jvu1R"])]
+        }), e && (0, n.jsx)(u.Button, {
+          text: I.intl.string(I.t["XgZk+u"]),
           onClick: () => {
-            x.A.openSettings(w.iL.SCREEN_RECORDING)
+            x.A.openSettings(C.iL.SCREEN_RECORDING)
           }
         })]
       })
     }
     return (0, n.jsx)("div", {
-      className: I.Lq,
-      children: (0, n.jsx)(f.y$y, {})
+      className: N.Lq,
+      children: (0, n.jsx)(u.y$y, {})
     })
   }
-  let Z = [];
-  return (Z = a === o.fS.WINDOW ? G : a === o.fS.SCREEN ? i : s, a === o.fS.CAMERA && 0 === Z.length) ? (0, n.jsx)(D, {}) : (0, n.jsx)("div", {
-    className: I.zr,
-    children: Z.map(e => (0, n.jsx)(P, {
+  let H = [];
+  return (H = a === c.fS.WINDOW ? L : a === c.fS.SCREEN ? s : l, a === c.fS.CAMERA && 0 === H.length) ? (0, n.jsx)(D, {}) : (0, n.jsx)("div", {
+    className: N.zr,
+    children: H.map(e => (0, n.jsx)(P, {
       onClick: t,
       source: e,
-      selected: null != g && "windowHandle" in g ? (0, S.A)(e.id, g.windowHandle) : (null == g ? true : g.id) === e.id
+      selected: null != g && "windowHandle" in g ? (0, y.A)(e.id, g.windowHandle) : (null == g ? true : g.id) === e.id
     }, e.id))
   })
 }
 
 function D() {
   return (0, n.jsxs)("div", {
-    className: I.p$,
-    children: [(0, n.jsx)(f.npA, {
+    className: N.p$,
+    children: [(0, n.jsx)(u.npA, {
       size: "md",
-      color: f.LU0.colors.ICON_MUTED,
-      className: I.Dw
-    }), (0, n.jsx)(f.Text, {
+      color: u.LU0.colors.ICON_MUTED,
+      className: N.Dw
+    }), (0, n.jsx)(u.Text, {
       variant: "text-lg/medium",
       color: "text-strong",
-      className: I.jU,
-      children: N.intl.string(E.default["/z3YaZ"])
-    }), (0, n.jsx)(f.Text, {
+      className: N.jU,
+      children: I.intl.string(E.default["/z3YaZ"])
+    }), (0, n.jsx)(u.Text, {
       variant: "text-sm/medium",
       color: "text-subtle",
-      className: I.C3,
-      children: N.intl.string(E.default.agwSGA)
-    }), (0, n.jsx)(f.Text, {
+      className: N.C3,
+      children: I.intl.string(E.default.agwSGA)
+    }), (0, n.jsx)(u.Text, {
       variant: "text-sm/semibold",
-      children: N.intl.format(E.default.xpVzr3, {
+      children: I.intl.format(E.default.xpVzr3, {
         helpdeskURL: g.A.getArticleURL(0x53d41ade17)
       })
     })]

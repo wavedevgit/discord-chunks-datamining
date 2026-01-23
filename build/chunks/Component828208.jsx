@@ -14,8 +14,8 @@ function l(e) {
     width: l = 17,
     height: s = 16,
     color: a = "currentColor",
-    foreground: c
-  } = e, o = function(e, t) {
+    foreground: o
+  } = e, c = function(e, t) {
     if (null == e) return {};
     var n, r, i, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -49,20 +49,20 @@ function l(e) {
       })
     }
     return e
-  }({}, (0, i.A)(o)), n = n = {
+  }({}, (0, i.A)(c)), n = n = {
     width: l,
     height: s,
     viewBox: "0 0 17 16",
     xmlns: "http://www.w3.org/2000/svg",
     children: [(0, r.jsx)("rect", {
-      className: c,
+      className: o,
       y: "5",
       width: "16",
       height: "2",
       rx: "1",
       fill: a
     }), (0, r.jsx)("rect", {
-      className: c,
+      className: o,
       y: "9",
       width: "8",
       height: "2",

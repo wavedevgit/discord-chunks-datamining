@@ -31,7 +31,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,13 +55,13 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -117,7 +117,7 @@ class w extends Chunk64700.PureComponent {
       iconSrc: t
     } = this.props;
     return null != e.icon || null != t ? null : (0, i.jsx)("div", {
-      className: y.acronym,
+      className: b.acronym,
       children: (0, m.Rb)(e)
     })
   }
@@ -130,7 +130,7 @@ class w extends Chunk64700.PureComponent {
       badgeTooltipDelay: a
     } = this.props;
     return e ? (0, i.jsx)(h.A, {
-      className: y.guildIconBadge,
+      className: b.guildIconBadge,
       guild: t,
       badgeStrokeColor: n,
       tooltipColor: r,
@@ -154,28 +154,28 @@ class w extends Chunk64700.PureComponent {
         to: g,
         badgeStrokeColor: E,
         animate: O,
-        tabIndex: v,
+        tabIndex: A,
         iconSrc: T,
         "aria-hidden": C,
         lossless: N,
         iconSize: w
       } = n,
-      P = I(n, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
+      P = S(n, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
       D = R[c],
       x = null != h ? f.DUT : "div",
       L = (0, m.Rb)(r);
-    return (0, i.jsxs)(x, S(A({
-      className: o()(y.icon, a, (0, b.t)(y, "iconSize", c), {
-        [null != (e = (0, b.t)(y, "iconActive", c)) ? e : ""]: l,
-        [y.iconInactive]: !l,
-        [y.noIcon]: null == r.icon
+    return (0, i.jsxs)(x, I(v({
+      className: o()(b.icon, a, (0, y.t)(b, "iconSize", c), {
+        [null != (e = (0, y.t)(b, "iconActive", c)) ? e : ""]: l,
+        [b.iconInactive]: !l,
+        [b.noIcon]: null == r.icon
       }),
       "aria-hidden": C,
-      style: null == r.icon ? A({
+      style: null == r.icon ? v({
         fontSize: (null != (t = D[L.length]) ? t : D[D.length - 1]) * d
       }, u) : u,
       onClick: null != g || null == h ? true : h,
-      tabIndex: v
+      tabIndex: A
     }, P), {
       children: [this.renderAcronym(), this.renderBadge()]
     }))
@@ -226,14 +226,14 @@ let P = Chunk311907.Ay.connectStores([Chunk531685.A], e => {
     lossless: o
   } = e;
   return null == r && (r = t instanceof _.GO ? t.getIconURL(null != s ? s : N[a], n && g.A.isFocused()) : (0, m.Iv)(t, null != s ? s : N[a], n && g.A.isFocused(), o)), {
-    style: S(A({}, i), {
+    style: I(v({}, i), {
       backgroundImage: (0, E.wU)(r)
     })
   }
-})((0, Chunk162532.Y)(e => (0, i.jsx)(w, A({}, e))));
+})((0, Chunk162532.Y)(e => (0, i.jsx)(w, v({}, e))));
 class D extends(r = Chunk64700.PureComponent) {
   render() {
-    return (0, i.jsx)(P, A({}, this.props))
+    return (0, i.jsx)(P, v({}, this.props))
   }
 }
 O(D, "Sizes", C), O(D, "defaultProps", {

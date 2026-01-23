@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk397927 = require("./397927.js"),
   Chunk63415 = require("./63415.jsx"),
@@ -22,7 +22,7 @@ let m = [{
   h = () => {
     let [e, t] = l.useState("private_browsing_perk"), n = l.useMemo(() => p[e], [e]);
     return (0, a.jsxs)("div", {
-      className: r()(d.nd, u.kL),
+      className: i()(d.nd, u.kL),
       children: [(0, a.jsx)(o.VQ0, {
         className: u.$H,
         selectedItem: e,

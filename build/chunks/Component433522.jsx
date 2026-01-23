@@ -18,12 +18,12 @@ let d = () => {
   } = (0, i.bG)([s.A], () => s.A.getProps()), {
     submitting: t,
     welcomeSettings: n
-  } = (0, i.bG)([c.A], () => c.A.getSettingsProps());
+  } = (0, i.bG)([o.A], () => o.A.getSettingsProps());
   return null == e ? null : (0, r.jsx)(l.A, {
     onSave: () => (0, a.i4)(e.id, n),
     onReset: a.oZ,
     submitting: t,
-    onSaveText: o.intl.string(o.t["7NqTJn"]),
-    message: o.intl.string(o.t["Z0/Wme"])
+    onSaveText: c.intl.string(c.t["7NqTJn"]),
+    message: c.intl.string(c.t["Z0/Wme"])
   })
 }

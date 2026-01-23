@@ -47,7 +47,7 @@ function d(e) {
     trackUserProfileAction: m
   } = (0, o.NJ)(), {
     analyticsLocations: g
-  } = (0, a.Ay)(), E = null != _ ? _ : g, b = (0, i.bG)([s.A], () => s.A.getUserOutbox(t.id));
+  } = (0, a.Ay)(), E = null != _ ? _ : g, y = (0, i.bG)([s.A], () => s.A.getUserOutbox(t.id));
   return (0, r.useCallback)(e => {
     let {
       action: t
@@ -61,9 +61,9 @@ function d(e) {
       activity: c,
       entry: d,
       stream: f,
-      outbox: b,
+      outbox: y,
       voiceChannelId: p,
       analyticsLocations: E
     }, h))
-  }, [m, h, n, c, f, d, b, p, E])
+  }, [m, h, n, c, f, d, y, p, E])
 }

@@ -9,29 +9,29 @@ var Chunk51082 = require("./51082.js"),
 function i(e, t) {
   var n, i;
   let a = null,
-    s = null,
     o = null,
+    s = null,
     c = false,
     u = false,
     d = false;
   switch (e.type) {
-    case r.lp.ACTIVITY:
+    case l.lp.ACTIVITY:
       break;
-    case r.lp.USER:
-      a = e.streamId, o = e.voiceState, c = e.speaking, u = e.latched, d = e.ringing;
+    case l.lp.USER:
+      a = e.streamId, s = e.voiceState, c = e.speaking, u = e.latched, d = e.ringing;
       break;
-    case r.lp.STREAM:
-      a = e.streamId, s = e.stream
+    case l.lp.STREAM:
+      a = e.streamId, o = e.stream
   }
   return {
     streamId: a,
-    stream: s,
+    stream: o,
     speaking: c,
     latched: u,
     ringing: d,
-    muted: null != (n = null == o ? true : o.isVoiceMuted()) && n,
-    deafen: null != (i = null == o ? true : o.isVoiceDeafened()) && i,
-    mirror: e.type === r.lp.USER && e.user.id === t,
-    hasVideo: (0, l.Ay)(e)
+    muted: null != (n = null == s ? true : s.isVoiceMuted()) && n,
+    deafen: null != (i = null == s ? true : s.isVoiceDeafened()) && i,
+    mirror: e.type === l.lp.USER && e.user.id === t,
+    hasVideo: (0, r.Ay)(e)
   }
 }

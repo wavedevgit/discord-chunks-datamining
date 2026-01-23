@@ -27,10 +27,10 @@ let O = function(e) {
       className: n,
       quest: a,
       autoplay: O = true,
-      learnMoreStyle: A = null,
-      learnMoreFontSize: v,
-      sourceQuestContent: S,
-      lazyLoad: I = false,
+      learnMoreStyle: v = null,
+      learnMoreFontSize: A,
+      sourceQuestContent: I,
+      lazyLoad: S = false,
       style: T
     } = e,
     C = (0, f.Ut)(),
@@ -44,12 +44,12 @@ let O = function(e) {
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,
         questContentCTA: f.Cy.REWARD_LEARN_MORE,
-        sourceQuestContent: S
+        sourceQuestContent: I
       }), (0, E.navigateToQuestHome)({
         fromContent: e.questContent,
         questId: a.id
       }), null == (n = e.onClick) || n.call(e, t)
-    }, [C, a.id, e, S]),
+    }, [C, a.id, e, I]),
     D = i.useRef(null),
     x = i.useRef(O),
     L = (0, _.K9)(a.config);
@@ -65,20 +65,20 @@ let O = function(e) {
     id: "QuestRewardTile_rewardTileNitro",
     children: e => (0, r.jsx)(g.A, {
       ref: e,
-      className: y.eB
+      className: b.eB
     })
-  }) : I ? (0, r.jsx)(m.N, {
+  }) : S ? (0, r.jsx)(m.N, {
     showVideo: O,
     imageAsset: null != w ? {
       asset: w,
       assetId: "QuestRewardTile_rewardTileStatic",
-      className: y.XM,
-      alt: b.intl.string(b.t.UMclVN)
+      className: b.XM,
+      alt: y.intl.string(y.t.UMclVN)
     } : true,
     videoAsset: {
       asset: R,
       assetId: "QuestRewardTile_rewardTileAnimated",
-      className: s()(y.eB, y.tv)
+      className: s()(b.eB, b.tv)
     },
     onLoadComplete: e.onLoadComplete
   }) : R.isAnimated ? (0, r.jsx)(h.Sn, {
@@ -93,7 +93,7 @@ let O = function(e) {
         loop: true,
         muted: true,
         playsInline: true,
-        className: y.eB,
+        className: b.eB,
         controls: false,
         onProgress: e.onLoadComplete,
         children: (0, r.jsx)("source", {
@@ -107,28 +107,28 @@ let O = function(e) {
     children: t => (0, r.jsx)("img", {
       ref: t,
       alt: (0, _.mq)(a.config),
-      className: s()(y.eB, y.Qz),
+      className: s()(b.eB, b.Qz),
       src: R.url,
       onLoad: e.onLoadComplete
     })
-  }), null == A ? (0, r.jsx)("div", {
-    className: s()(y.al, n),
+  }), null == v ? (0, r.jsx)("div", {
+    className: s()(b.al, n),
     style: T,
     children: t
   }) : (0, r.jsxs)(c.DUT, {
-    className: s()(y.a$, y.al, y.Yi, n),
+    className: s()(b.a$, b.al, b.Yi, n),
     onClick: P,
     style: T,
-    children: [t, "text" === A && (0, r.jsx)(c.Text, {
+    children: [t, "text" === v && (0, r.jsx)(c.Text, {
       color: "always-white",
       variant: "text-xs/normal",
-      className: y.n_,
+      className: b.n_,
       style: {
-        fontSize: v
+        fontSize: A
       },
-      children: b.intl.format(b.t.DYAleT, {})
-    }), "icon" === A && (0, r.jsx)("div", {
-      className: y.n_,
+      children: y.intl.format(y.t.DYAleT, {})
+    }), "icon" === v && (0, r.jsx)("div", {
+      className: b.n_,
       children: (0, r.jsx)(c.mir, {
         size: "xxs",
         color: c.LU0.colors.WHITE.css

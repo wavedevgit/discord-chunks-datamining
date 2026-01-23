@@ -2,6 +2,6 @@
 /** chunk id: 752375, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  uZ: "_200c49cafabeb4f7",
-  Gl: "_8814ccd07944fa14"
+  uZ: "externalLink__900c6",
+  Gl: "currency__900c6"
 }

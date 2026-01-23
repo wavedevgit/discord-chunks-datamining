@@ -21,21 +21,21 @@ function c(e) {
     },
     isFocused: d,
     buttonProps: {
-      message: f,
-      channel: p,
-      groupId: h,
-      compact: b = false
+      message: p,
+      channel: h,
+      groupId: f,
+      compact: g = false
     },
-    messageWindow: g
-  } = e, m = f.state === s.cmJ.SENDING, A = f.id === h, y = (0, l.Lt)(f.flags, s.pr7.EPHEMERAL), O = f.state === s.cmJ.SEND_FAILED;
-  return m || y && !O ? null : (0, r.jsx)(a.A, {
+    messageWindow: m
+  } = e, b = p.state === a.cmJ.SENDING, A = p.id === f, y = (0, l.Lt)(p.flags, a.pr7.EPHEMERAL), _ = p.state === a.cmJ.SEND_FAILED;
+  return b || y && !_ ? null : (0, r.jsx)(s.A, {
     className: o.Uo,
     innerClassName: o.Mc,
-    isHeader: !b && A && !(0, i.A)(f),
-    isReply: !b && f.type === s.lAJ.REPLY && null != f.messageReference,
-    channel: p,
-    message: f,
-    messageWindow: g,
+    isHeader: !g && A && !(0, i.A)(p),
+    isReply: !g && p.type === a.lAJ.REPLY && null != p.messageReference,
+    channel: h,
+    message: p,
+    messageWindow: m,
     setPopout: t,
     showEmojiPicker: n,
     showEmojiBurstPicker: c,

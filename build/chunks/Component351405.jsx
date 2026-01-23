@@ -26,7 +26,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk272984 = require("./272984.js"),
   Chunk609653 = require("./609653.js");
-let I = 8;
+let S = 8;
 
 function T(e) {
   let {
@@ -40,15 +40,15 @@ function T(e) {
     partySize: l,
     activityActionType: o
   }), u = [...t];
-  for (; u.length < n && u.length < I;) u.push(b.mt);
-  for (; u.length < i && u.length < I;) u.push(null);
+  for (; u.length < n && u.length < S;) u.push(y.mt);
+  for (; u.length < i && u.length < S;) u.push(null);
   return (0, r.jsxs)("div", {
-    className: S.UF,
-    children: [u.length > 0 && (0, r.jsx)(b.Ay, {
+    className: I.UF,
+    children: [u.length > 0 && (0, r.jsx)(y.Ay, {
       guildId: a,
       users: u,
-      max: i > 0 ? Math.min(i, I) : I,
-      size: b.DN.SIZE_16,
+      max: i > 0 ? Math.min(i, S) : S,
+      size: y.DN.SIZE_16,
       dimEmptyUsers: true
     }), (0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
@@ -60,7 +60,7 @@ function T(e) {
 
 function C(e) {
   var t;
-  return (null == (t = e.activity) ? true : t.type) === A.xL.STREAM_REQUEST
+  return (null == (t = e.activity) ? true : t.type) === v.xL.STREAM_REQUEST
 }
 
 function N(e) {
@@ -68,17 +68,17 @@ function N(e) {
   let {
     analyticsLocations: s,
     app: m,
-    channel: S,
-    message: I,
+    channel: I,
+    message: S,
     hideParty: N,
     onView: R
   } = e, w = (0, o.b)(m), P = (0, a.bG)([u.default], () => u.default.getId()), D = (0, a.bG)([p.A], () => {
-    if (null == I.application) return p.A.findActivity(I.author.id, e => e.type === A.$pd.LISTENING);
+    if (null == S.application) return p.A.findActivity(S.author.id, e => e.type === v.$pd.LISTENING);
     {
-      let e = I.author.id;
-      return (0, g.v)(I) && (e = e === P && S.isPrivate() ? S.getRecipientId() : P), p.A.getApplicationActivity(e, I.application.id)
+      let e = S.author.id;
+      return (0, g.v)(S) && (e = e === P && I.isPrivate() ? I.getRecipientId() : P), p.A.getApplicationActivity(e, S.application.id)
     }
-  }, [I, S, P]), x = (0, a.bG)([f.A, _.A], () => {
+  }, [S, I, P]), x = (0, a.bG)([f.A, _.A], () => {
     var e;
     return null != (e = f.A.getApplicationActivity(w.id)) ? e : _.A.getApplicationActivity(w.id, true)
   }, [w.id]), L = (0, a.yK)([d.A], () => {
@@ -89,40 +89,40 @@ function N(e) {
     maxPartySize: M
   } = (0, E._)(D), k = i.useMemo(() => L.map(e => {
     let t = h.default.getUser(e);
-    return null != t ? t : b.mt
+    return null != t ? t : y.mt
   }), [L]), U = i.useMemo(() => {
     var e;
     return (0, r.jsx)(T, {
       partyMembers: k,
       partySize: j,
       maxPartySize: M,
-      guildId: S.guild_id,
-      activityActionType: null == (e = I.activity) ? true : e.type
+      guildId: I.guild_id,
+      activityActionType: null == (e = S.activity) ? true : e.type
     })
-  }, [k, j, M, S.guild_id, null == (t = I.activity) ? true : t.type]);
-  return (0, v.pH)(null == D || null == (n = D.party) ? true : n.id) || w.id === c.HT.id ? (0, r.jsx)(O.A, {
+  }, [k, j, M, I.guild_id, null == (t = S.activity) ? true : t.type]);
+  return (0, A.pH)(null == D || null == (n = D.party) ? true : n.id) || w.id === c.HT.id ? (0, r.jsx)(O.A, {
     application: w,
     currentUserPresenceActivity: x,
     hideParty: N,
-    message: I,
+    message: S,
     onView: R,
     partyStatusElement: U,
     presenceActivity: D,
-    guildId: S.guild_id
-  }) : C(I) ? (0, r.jsx)(l.A, {
+    guildId: I.guild_id
+  }) : C(S) ? (0, r.jsx)(l.A, {
     analyticsLocations: s,
     application: w,
-    channel: S,
+    channel: I,
     currentUserId: P,
-    message: I
-  }) : (0, r.jsx)(y.A, {
+    message: S
+  }) : (0, r.jsx)(b.A, {
     analyticsLocations: s,
     application: w,
-    channel: S,
+    channel: I,
     currentUserId: P,
     currentUserPresenceActivity: x,
     hideParty: N,
-    message: I,
+    message: S,
     onView: R,
     partyStatusElement: U,
     presenceActivity: D

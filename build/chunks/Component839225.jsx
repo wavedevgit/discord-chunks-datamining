@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  c = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk554146 = require("./554146.js"),
   Chunk732955 = require("./732955.js"),
   Chunk397927 = require("./397927.js"),
@@ -24,30 +24,30 @@ var Chunk627968 = require("./627968.js"),
 
 function v(e) {
   n.useEffect(() => {
-    b.default.track(x.HAw.OPEN_MODAL, {
+    u.default.track(f.HAw.OPEN_MODAL, {
       type: "Social Layer Storefront Announcement Modal"
-    }), (0, o.d6)(a.M.GAME_SHOP_ANNOUNCEMENT_MODAL, {
-      dismissAction: f.i.AUTO_DISMISS
+    }), (0, d.d6)(c.M.GAME_SHOP_ANNOUNCEMENT_MODAL, {
+      dismissAction: j.i.AUTO_DISMISS
     })
   }, []);
   let t = n.useCallback(() => {
-      (0, j.X)({
-        guildId: (0, m.zf)()
+      (0, m.X)({
+        guildId: (0, b.zf)()
       })
     }, []),
     {
       onClose: s
     } = e,
     i = n.useCallback(() => {
-      (0, j.default)({
-        guildId: (0, m.zf)()
+      (0, m.default)({
+        guildId: (0, b.zf)()
       }), s()
     }, [s]);
   return (0, r.jsx)(l.NPJ, {
-    theme: u.NJ.DARK,
+    theme: x.NJ.DARK,
     children: n => {
-      var a, o;
-      return (0, r.jsx)(d.dWK, (a = function(e) {
+      var c, d;
+      return (0, r.jsx)(o.dWK, (c = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var s = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(s);
@@ -64,10 +64,10 @@ function v(e) {
           })
         }
         return e
-      }({}, e), o = o = {
+      }({}, e), d = d = {
         size: "lg",
         children: (0, r.jsxs)("div", {
-          className: c()(n, p.Qs),
+          className: a()(n, p.Qs),
           children: [(0, r.jsx)("div", {
             className: p.b,
             children: (0, r.jsx)(l.JnF, {
@@ -143,16 +143,16 @@ function v(e) {
             onMouseDown: t
           })]
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
         var s = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           s.push.apply(s, r)
         }
         return s
-      })(Object(o)).forEach(function(e) {
-        Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(o, e))
-      }), a))
+      })(Object(d)).forEach(function(e) {
+        Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(d, e))
+      }), c))
     }
   })
 }

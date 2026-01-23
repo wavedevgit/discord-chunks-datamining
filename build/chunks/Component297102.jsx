@@ -29,31 +29,31 @@ let O = function(t) {
   } = t, {
     loading: T,
     initiateAgeVerification: h
-  } = (0, b.nn)({
+  } = (0, m.nn)({
     onComplete: O,
-    entryPoint: d.q1.RETRY_MODAL,
+    entryPoint: u.q1.RETRY_MODAL,
     isRetry: true
-  }), A = r.useMemo(() => (0, l.A)(), []), v = (0, m.I)("age_verification_retry_modal"), y = (0, p.t)("age_verification_retry_modal"), k = (0, g.W)(R.intl.string(R.t["5l3R/m"]), R.intl.string(R.t.JSdbBe)), L = (0, g.W)(R.intl.string(R.t.O7SO0D), R.intl.string(R.t.JNK1ue)), j = (0, g.W)(R.intl.string(R.t.RtOE1v), R.intl.string(R.t.mFvt9M));
+  }), A = r.useMemo(() => (0, l.A)(), []), v = (0, f.I)("age_verification_retry_modal"), y = (0, p.t)("age_verification_retry_modal"), k = (0, g.W)(E.intl.string(E.t["5l3R/m"]), E.intl.string(E.t.JSdbBe)), L = (0, g.W)(E.intl.string(E.t.O7SO0D), E.intl.string(E.t.JNK1ue)), j = (0, g.W)(E.intl.string(E.t.RtOE1v), E.intl.string(E.t.mFvt9M));
   r.useEffect(() => {
-    (0, d.Bs)(A, d.WU.RETRY, n)
+    (0, u.Bs)(A, u.WU.RETRY, n)
   }, [A, n]);
-  let P = r.useMemo(() => {
+  let M = r.useMemo(() => {
     let t = [{
-      title: R.intl.string(R.t.FYkioq),
-      description: y ? null : R.intl.string(R.t.xMfbRz),
+      title: E.intl.string(E.t.FYkioq),
+      description: y ? null : E.intl.string(E.t.xMfbRz),
       buttonText: j,
       buttonLoading: T,
       onButtonPress: () => {
-        h(), (0, d.St)(A, d.WU.RETRY, d._7.GET_STARTED)
+        h(), (0, u.St)(A, u.WU.RETRY, u._7.GET_STARTED)
       }
     }];
     return v || t.push({
-      title: R.intl.string(R.t["LZO+Hd"]),
-      description: R.intl.string(R.t.N2mHaK),
-      buttonText: R.intl.string(R.t["LZO+Hd"]),
+      title: E.intl.string(E.t["LZO+Hd"]),
+      description: E.intl.string(E.t.N2mHaK),
+      buttonText: E.intl.string(E.t["LZO+Hd"]),
       buttonLoading: T,
       onButtonPress: () => {
-        u.A.openUrl(E.d$.APPEALS_LINK), (0, d.St)(A, d.WU.RETRY, d._7.MANUAL_REVIEW_REQUEST)
+        d.A.openUrl(b.d$.APPEALS_LINK), (0, u.St)(A, u.WU.RETRY, u._7.MANUAL_REVIEW_REQUEST)
       }
     }), t
   }, [h, A, T, v, y, j]);
@@ -72,11 +72,11 @@ let O = function(t) {
       gap: 16,
       children: [(0, i.jsx)(s.po8, {
         messageType: s.YCn.INFO,
-        className: _.e,
+        className: R.e,
         textColor: "text-feedback-info",
         textVariant: "text-sm/medium",
-        children: R.intl.string(R.t.El4aXl)
-      }), P.map((t, e) => (0, i.jsx)(a.PQ, function(t) {
+        children: E.intl.string(E.t.El4aXl)
+      }), M.map((t, e) => (0, i.jsx)(a.PQ, function(t) {
         for (var e = 1; e < arguments.length; e++) {
           var n = null != arguments[e] ? arguments[e] : {},
             i = Object.keys(n);
@@ -98,10 +98,10 @@ let O = function(t) {
       }, t), e)), (0, i.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
-        className: _.Z,
-        children: R.intl.format(R.t["L+FgkZ"], {
+        className: R.Z,
+        children: E.intl.format(E.t["L+FgkZ"], {
           handleOnHelpUrlHook: () => {
-            u.A.openUrl(c.A.getArticleURL(f.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, d.St)(A, d.WU.RETRY, d._7.LEARN_MORE)
+            d.A.openUrl(c.A.getArticleURL(_.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, u.St)(A, u.WU.RETRY, u._7.LEARN_MORE)
           }
         })
       })]

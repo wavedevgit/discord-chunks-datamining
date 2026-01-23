@@ -2,7 +2,7 @@
 /** chunk id: 870758, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => c
+  A: () => o
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -11,24 +11,24 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk86181 = require("./86181.js");
 
-function c(e) {
+function o(e) {
   let {
     action: t,
     triggerType: n,
-    toggled: c,
-    onToggleAction: o
-  } = e, d = e => () => o(e), u = (0, l.x)(t.type, t, n);
+    toggled: o,
+    onToggleAction: c
+  } = e, d = e => () => c(e), u = (0, l.x)(t.type, t, n);
   if (null == u) return null;
   let {
-    headerText: f,
-    descriptionText: g,
-    icon: b
+    headerText: g,
+    descriptionText: m,
+    icon: p
   } = u;
   return (0, r.jsxs)("div", {
     className: a.Ik,
     children: [(0, r.jsx)("div", {
       className: a.TV,
-      children: (0, r.jsx)(b, {
+      children: (0, r.jsx)(p, {
         size: "custom",
         color: "currentColor",
         className: a.gE
@@ -37,12 +37,12 @@ function c(e) {
       className: a.xj,
       children: [(0, r.jsx)(i.Heading, {
         variant: "heading-sm/semibold",
-        children: f
+        children: g
       }), (0, r.jsx)(i.Text, {
         color: "interactive-text-default",
         variant: "text-xs/medium",
-        children: g
-      }), c ? (0, r.jsxs)(i.Text, {
+        children: m
+      }), o ? (0, r.jsxs)(i.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
         children: [s.intl.string(s.t.Oa9oWJ), (0, r.jsx)(i.DUT, {
@@ -57,7 +57,7 @@ function c(e) {
       children: (0, r.jsx)(i.DUT, {
         onClick: u.isEditable ? d(false) : true,
         children: (0, r.jsx)(i.P7L, {
-          checked: c,
+          checked: o,
           disabled: !u.isEditable
         })
       })

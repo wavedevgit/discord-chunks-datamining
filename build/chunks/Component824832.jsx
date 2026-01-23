@@ -101,31 +101,31 @@ let h = e => {
       filters: m,
       setLoading: g,
       title: E
-    } = e, b = i.useRef(null), [y, O] = i.useState(false);
+    } = e, y = i.useRef(null), [b, O] = i.useState(false);
     i.useEffect(() => {
-      y && A()
-    }, [y]);
-    let A = () => {
-        null !== b.current && ((0, a.OoC)(b.current), b.current = null)
+      b && v()
+    }, [b]);
+    let v = () => {
+        null !== y.current && ((0, a.OoC)(y.current), y.current = null)
       },
-      v = async e => {
+      A = async e => {
         null == g || g(true), await _(e, l), O(true), null == g || g(false)
-      }, S = async e => {
+      }, I = async e => {
         var t, i, s;
         if (e.stopPropagation(), e.preventDefault(), (null == (t = e.currentTarget) ? true : t.files) == null || (null == (s = e.currentTarget) || null == (i = s.files) ? true : i.length) === 0) return;
         let o = e.currentTarget.files;
-        b.current = await (0, a.mMO)(async () => {
+        y.current = await (0, a.mMO)(async () => {
           let {
             default: e
           } = await n.e("17259").then(n.bind(n, 897126));
           return t => (0, r.jsx)(e, d({
-            processFiles: () => v(o)
+            processFiles: () => A(o)
           }, t))
         })
       };
     return (0, r.jsx)(s.A, {
       ref: t,
-      onChange: S,
+      onChange: I,
       filters: null != m ? m : (0, o.gA)(),
       multiple: c,
       disabled: u,

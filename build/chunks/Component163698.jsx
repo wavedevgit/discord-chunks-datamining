@@ -2,7 +2,7 @@
 /** chunk id: 163698, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,7 +17,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk497039 = require("./497039.js"),
   Chunk473169 = require("./473169.js");
 
-function p(e) {
+function g(e) {
   let {
     children: t
   } = e;
@@ -31,7 +31,7 @@ function p(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     setSlide: t,
     transitionTo: i
@@ -39,28 +39,28 @@ function g(e) {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(a._V, {
       src: n(79418),
-      className: s()(f.SX, f.Ot)
+      className: s()(p.SX, p.Ot)
     }), (0, r.jsx)(a.hE, {
-      className: f.QB,
+      className: p.QB,
       children: d.intl.string(d.t["8UcxI6"])
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       children: d.intl.string(d.t.O37hMl)
     }), (0, r.jsxs)(a.eB, {
-      className: s()(f.SX, f.QX),
+      className: s()(p.SX, p.QX),
       children: [(0, r.jsx)(l.Text, {
         variant: "text-sm/normal"
       }), (0, r.jsxs)("ul", {
         className: h.qI,
-        children: [(0, r.jsx)(p, {
+        children: [(0, r.jsx)(g, {
           children: d.intl.string(d.t.Gj1Zry)
-        }), (0, r.jsx)(o.A, {}), (0, r.jsx)(p, {
+        }), (0, r.jsx)(o.A, {}), (0, r.jsx)(g, {
           children: d.intl.string(d.t["8C6t3B"])
-        }), (0, r.jsx)(o.A, {}), (0, r.jsx)(p, {
+        }), (0, r.jsx)(o.A, {}), (0, r.jsx)(g, {
           children: d.intl.string(d.t.mToZMA)
-        }), (0, r.jsx)(o.A, {}), (0, r.jsx)(p, {
+        }), (0, r.jsx)(o.A, {}), (0, r.jsx)(g, {
           children: d.intl.string(d.t.TPEvkc)
-        }), (0, r.jsx)(o.A, {}), (0, r.jsx)(p, {
+        }), (0, r.jsx)(o.A, {}), (0, r.jsx)(g, {
           children: d.intl.string(d.t.H8Y1Ln)
         })]
       })]

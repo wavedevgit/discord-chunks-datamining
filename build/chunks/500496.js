@@ -48,8 +48,8 @@ class g extends Chunk173618.A {
       location: "computeVoiceFlags"
     }, {
       autoTrackExposure: false
-    }), b = E && _ && a.A.getSettings().viewerClipsEnabled;
-    return (0, r.lA)(i, h.Ajs.ALLOW_ANY_VIEWER_CLIPS, b)
+    }), y = E && _ && a.A.getSettings().viewerClipsEnabled;
+    return (0, r.lA)(i, h.Ajs.ALLOW_ANY_VIEWER_CLIPS, y)
   }
   getInitialState() {
     return {

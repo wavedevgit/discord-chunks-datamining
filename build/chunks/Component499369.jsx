@@ -26,13 +26,13 @@ function h(e) {
     premiumType: m,
     onClose: g,
     hideCloseButton: E,
-    showTrialBadge: b,
-    showDiscountBadge: y,
+    showTrialBadge: y,
+    showDiscountBadge: b,
     isGift: O,
-    giftRecipient: A,
-    isEligibleForTrial: v,
-    enablePremiumBrandRefresh: S,
-    isDisplayingWowMomentConfirmation: I,
+    giftRecipient: v,
+    isEligibleForTrial: A,
+    enablePremiumBrandRefresh: I,
+    isDisplayingWowMomentConfirmation: S,
     isPremiumGroupPurchase: T
   } = e, C = (0, i.bG)([s.A], () => s.A.useReducedMotion), N = () => {
     switch (t) {
@@ -46,7 +46,7 @@ function h(e) {
         return p.intl.string(p.t["7YWj6+"])
     }
   };
-  return O && (0, l.Ik)(A) && t !== o.pn.CONFIRM ? (0, r.jsxs)(a.rQ0, {
+  return O && (0, l.Ik)(v) && t !== o.pn.CONFIRM ? (0, r.jsxs)(a.rQ0, {
     className: _.sA,
     separator: false,
     "data-migration-pending": true,
@@ -59,14 +59,14 @@ function h(e) {
       innerClassName: _.Dd,
       "data-migration-pending": true
     })]
-  }) : S || I ? (0, r.jsx)(c.A, {
+  }) : I || S ? (0, r.jsx)(c.A, {
     hideCloseOnFullScreen: true,
     hideCloseButton: E,
     upgradeToPremiumType: m,
     onClose: g,
-    isEligibleForTrial: v,
-    showTrialBadge: b,
-    showDiscountBadge: y,
+    isEligibleForTrial: A,
+    showTrialBadge: y,
+    showDiscountBadge: b,
     isPremiumGroupPurchase: T
   }) : (0, r.jsx)("div", {
     className: n,
@@ -95,8 +95,8 @@ function h(e) {
       isGift: false,
       className: _.wx,
       onClose: g,
-      showTrialBadge: b,
-      showDiscountBadge: y
+      showTrialBadge: y,
+      showDiscountBadge: b
     })
   })
 }

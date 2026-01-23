@@ -15,7 +15,7 @@ let o = e => {
       selectedVariantIndex: n,
       isCardHovered: l
     } = e;
-    return (0, a.jsx)(r.R, {
+    return (0, a.jsx)(i.R, {
       product: t,
       selectedVariantIndex: n,
       isCardHovered: l,
@@ -26,9 +26,9 @@ let o = e => {
     let {
       skuId: t,
       isCardHovered: n
-    } = e, r = (0, i.Vm)(t), s = (0, l.Q)(r);
-    return null == r ? null : (0, a.jsx)(o, {
-      product: r,
+    } = e, i = (0, r.Vm)(t), s = (0, l.Q)(i);
+    return null == i ? null : (0, a.jsx)(o, {
+      product: i,
       selectedVariantIndex: s,
       isCardHovered: n
     })

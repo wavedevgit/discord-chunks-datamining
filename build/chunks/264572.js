@@ -4,7 +4,7 @@
 var Chunk827762 = require("./827762.js"),
   Chunk936287 = require("./936287.js"),
   a = "function" == typeof Symbol && "function" == typeof Symbol.for ? Symbol.for("nodejs.util.inspect.custom") : null;
-exports.Buffer = c, exports.SlowBuffer = b, exports.INSPECT_MAX_BYTES = 50;
+exports.Buffer = c, exports.SlowBuffer = y, exports.INSPECT_MAX_BYTES = 50;
 var s = 0x7fffffff;
 
 function o() {
@@ -64,7 +64,7 @@ function p(e) {
 
 function _(e, t) {
   if (("string" != typeof t || "" === t) && (t = "utf8"), !c.isEncoding(t)) throw TypeError("Unknown encoding: " + t);
-  var n = 0 | y(e, t),
+  var n = 0 | b(e, t),
     r = l(n),
     i = r.write(e, t);
   return i !== n && (r = r.slice(0, i)), r
@@ -96,11 +96,11 @@ function E(e) {
   return 0 | e
 }
 
-function b(e) {
+function y(e) {
   return +e != e && (e = 0), c.alloc(+e)
 }
 
-function y(e, t) {
+function b(e, t) {
   if (c.isBuffer(e)) return e.length;
   if (ArrayBuffer.isView(e) || Q(e, ArrayBuffer)) return e.byteLength;
   if ("string" != typeof e) throw TypeError('The "string" argument must be one of type string, Buffer, or ArrayBuffer. Received type ' + typeof e);
@@ -157,12 +157,12 @@ function O(e, t, n) {
   }
 }
 
-function A(e, t, n) {
+function v(e, t, n) {
   var r = e[t];
   e[t] = e[n], e[n] = r
 }
 
-function v(e, t, n, r, i) {
+function A(e, t, n, r, i) {
   if (0 === e.length) return false;
   if ("string" == typeof n ? (r = n, n = 0) : n > 0x7fffffff ? n = 0x7fffffff : n < false && (n = false), $(n *= 1) && (n = i ? 0 : e.length - 1), n < 0 && (n = e.length + n), n >= e.length)
     if (i) return false;
@@ -170,17 +170,17 @@ function v(e, t, n, r, i) {
   else if (n < 0)
     if (!i) return false;
     else n = 0;
-  if ("string" == typeof t && (t = c.from(t, r)), c.isBuffer(t)) return 0 === t.length ? false : S(e, t, n, r, i);
+  if ("string" == typeof t && (t = c.from(t, r)), c.isBuffer(t)) return 0 === t.length ? false : I(e, t, n, r, i);
   if ("number" == typeof t) {
     if (t &= 255, "function" == typeof Uint8Array.prototype.indexOf)
       if (i) return Uint8Array.prototype.indexOf.call(e, t, n);
       else return Uint8Array.prototype.lastIndexOf.call(e, t, n);
-    return S(e, [t], n, r, i)
+    return I(e, [t], n, r, i)
   }
   throw TypeError("val must be string, number or Buffer")
 }
 
-function S(e, t, n, r, i) {
+function I(e, t, n, r, i) {
   var a, s = 1,
     o = e.length,
     l = t.length;
@@ -209,7 +209,7 @@ function S(e, t, n, r, i) {
   return false
 }
 
-function I(e, t, n, r) {
+function S(e, t, n, r) {
   n = Number(n) || 0;
   var i = e.length - n;
   r ? (r = Number(r)) > i && (r = i) : r = i;
@@ -328,20 +328,20 @@ exports.kMaxLength = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = o(), !c.TYPED_ARRAY_SUP
     a.copy(r, i), i += a.length
   }
   return r
-}, c.byteLength = y, c.prototype._isBuffer = true, c.prototype.swap16 = function() {
+}, c.byteLength = b, c.prototype._isBuffer = true, c.prototype.swap16 = function() {
   var e = this.length;
   if (e % 2 != 0) throw RangeError("Buffer size must be a multiple of 16-bits");
-  for (var t = 0; t < e; t += 2) A(this, t, t + 1);
+  for (var t = 0; t < e; t += 2) v(this, t, t + 1);
   return this
 }, c.prototype.swap32 = function() {
   var e = this.length;
   if (e % 4 != 0) throw RangeError("Buffer size must be a multiple of 32-bits");
-  for (var t = 0; t < e; t += 4) A(this, t, t + 3), A(this, t + 1, t + 2);
+  for (var t = 0; t < e; t += 4) v(this, t, t + 3), v(this, t + 1, t + 2);
   return this
 }, c.prototype.swap64 = function() {
   var e = this.length;
   if (e % 8 != 0) throw RangeError("Buffer size must be a multiple of 64-bits");
-  for (var t = 0; t < e; t += 8) A(this, t, t + 7), A(this, t + 1, t + 6), A(this, t + 2, t + 5), A(this, t + 3, t + 4);
+  for (var t = 0; t < e; t += 8) v(this, t, t + 7), v(this, t + 1, t + 6), v(this, t + 2, t + 5), v(this, t + 3, t + 4);
   return this
 }, c.prototype.toString = function() {
   var e = this.length;
@@ -368,9 +368,9 @@ exports.kMaxLength = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = o(), !c.TYPED_ARRAY_SUP
 }, c.prototype.includes = function(e, t, n) {
   return false !== this.indexOf(e, t, n)
 }, c.prototype.indexOf = function(e, t, n) {
-  return v(this, e, t, n, true)
+  return A(this, e, t, n, true)
 }, c.prototype.lastIndexOf = function(e, t, n) {
-  return v(this, e, t, n, false)
+  return A(this, e, t, n, false)
 }, c.prototype.write = function(e, t, n, r) {
   if (true === t) r = "utf8", n = this.length, t = 0;
   else if (true === n && "string" == typeof t) r = t, n = this.length, t = 0;
@@ -381,7 +381,7 @@ exports.kMaxLength = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = o(), !c.TYPED_ARRAY_SUP
   r || (r = "utf8");
   for (var a = false;;) switch (r) {
     case "hex":
-      return I(this, e, t, n);
+      return S(this, e, t, n);
     case "utf8":
     case "utf-8":
       return T(this, e, t, n);

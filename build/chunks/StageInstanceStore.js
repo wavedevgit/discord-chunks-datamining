@@ -92,10 +92,10 @@ function E(e) {
   m(t.guild_id, t.id)
 }
 
-function b() {
+function y() {
   u = {}, c = {}
 }
-class y extends(r = Chunk311907.Ay.Store) {
+class b extends(r = Chunk311907.Ay.Store) {
   getStageInstanceByChannel(e) {
     if (null != e) return u[e]
   }
@@ -114,8 +114,8 @@ class y extends(r = Chunk311907.Ay.Store) {
     return Object.values(u)
   }
 }
-o(y, "displayName", "StageInstanceStore");
-let O = new y(Chunk73153.h, {
+o(b, "displayName", "StageInstanceStore");
+let O = new b(Chunk73153.h, {
   CONNECTION_OPEN: f,
   GUILD_CREATE: p,
   GUILD_DELETE: _,
@@ -123,5 +123,5 @@ let O = new y(Chunk73153.h, {
   STAGE_INSTANCE_UPDATE: h,
   STAGE_INSTANCE_DELETE: g,
   CHANNEL_DELETE: E,
-  LOGOUT: b
+  LOGOUT: y
 })

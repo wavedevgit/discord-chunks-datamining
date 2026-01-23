@@ -37,7 +37,7 @@ function x(e) {
       })]
     }), n.map(e => {
       var t;
-      return (0, i.jsx)(p.q, {
+      return (0, i.jsx)(g.q, {
         channel: e,
         application: r,
         name: e.name,
@@ -55,17 +55,17 @@ function x(e) {
 function j(e) {
   let {
     guild: t
-  } = e, n = (0, b.A)(t.id), l = a().groupBy(n, e => {
+  } = e, n = (0, p.A)(t.id), l = a().groupBy(n, e => {
     var t;
     return null == (t = e.linkedLobby) ? true : t.application_id
   }), c = Object.keys(l);
   return r.useEffect(() => {
-    0 === n.length && o.A.setSection(m.wLn.OVERVIEW)
+    0 === n.length && o.A.setSection(b.wLn.OVERVIEW)
   }, [n]), (0, i.jsxs)("div", {
     children: [(0, i.jsx)(s.Text, {
       variant: "text-sm/normal",
-      children: g.intl.format(g.t["9gsSLu"], {
-        helpdeskArticle: f.A.getArticleURL(m.MVz.LINKED_LOBBIES)
+      children: f.intl.format(f.t["9gsSLu"], {
+        helpdeskArticle: m.A.getArticleURL(b.MVz.LINKED_LOBBIES)
       })
     }), (0, i.jsx)(s.cGx, {
       className: h.zN

@@ -41,8 +41,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk139674 = require("./139674.js");
 
 function k() {
-  let e = (0, o.bG)([y.default], () => {
-      let e = y.default.getCurrentUser();
+  let e = (0, o.bG)([b.default], () => {
+      let e = b.default.getCurrentUser();
       return s()(null != e, "SecuritySettingsTab: currentUser cannot be undefined"), e
     }),
     t = (0, o.bG)([g.A], () => g.A.getBackupCodes()),
@@ -101,9 +101,9 @@ class G extends Chunk64700.PureComponent {
     let {
       subsection: e
     } = this.props;
-    return (0, r.jsx)(S.R, {
+    return (0, r.jsx)(I.R, {
       header: j.intl.string(j.t["JAIM/m"]),
-      children: (0, r.jsx)(I.A, {
+      children: (0, r.jsx)(S.A, {
         parentSetting: x.H.ACCOUNT,
         settingsSection: L.nc_.ACCOUNT,
         panelClassName: M.SZ,
@@ -130,11 +130,11 @@ class G extends Chunk64700.PureComponent {
   }
 }
 let V = () => {
-  let e = (0, o.bG)([y.default], () => y.default.getCurrentUser()),
+  let e = (0, o.bG)([b.default], () => b.default.getCurrentUser()),
     t = (0, o.bG)([E.A], () => E.A.hidePersonalInformation),
-    n = (0, o.bG)([v.A], () => v.A.theme),
-    i = (0, o.bG)([A.default], () => A.default.locale),
-    a = (0, o.bG)([b.A], () => b.A.getSubsection());
+    n = (0, o.bG)([A.A], () => A.A.theme),
+    i = (0, o.bG)([v.default], () => v.default.locale),
+    a = (0, o.bG)([y.A], () => y.A.getSubsection());
   return null == e ? null : (0, r.jsx)(G, {
     theme: n,
     currentUser: e,

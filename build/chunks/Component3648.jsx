@@ -106,13 +106,13 @@ function x(e) {
     align: "center",
     onRequestClose: n,
     actions: [{
-      text: v.intl.string(v.t.uB4Gax),
+      text: A.intl.string(A.t.uB4Gax),
       variant: "primary",
       onClick: i
     }],
     targetElementRef: t,
-    title: v.intl.string(v.t.qh9t5c),
-    body: v.intl.string(v.t.iM6fxV),
+    title: A.intl.string(A.t.qh9t5c),
+    body: A.intl.string(A.t.iM6fxV),
     graphic: {
       type: "image",
       src: T.A
@@ -127,21 +127,21 @@ function L(e) {
     onCardClick: l
   } = e, c = P(e, ["showPopover", "onViewWishlist", "onCardClick"]), u = i.useRef(null), d = (0, o.useHasAnyModalOpen)(), f = (0, a.bG)([m.A], () => m.A.hasLayers()), h = (0, g.Jw)({
     location: "wishlist-card"
-  }), [E, b] = (0, p.kn)(h ? [s.M.GAME_SHOP_WISHLIST_POPOVER] : [], O.m.SIDEBAR, true), y = i.useCallback(() => {
-    b(O.i.USER_DISMISS), l()
-  }, [l, b]), A = i.useCallback(() => {
-    b(O.i.USER_DISMISS)
-  }, [b]), v = i.useCallback(() => {
-    b(O.i.USER_DISMISS), n()
-  }, [n, b]);
+  }), [E, y] = (0, p.kn)(h ? [s.M.GAME_SHOP_WISHLIST_POPOVER] : [], O.m.SIDEBAR, true), b = i.useCallback(() => {
+    y(O.i.USER_DISMISS), l()
+  }, [l, y]), v = i.useCallback(() => {
+    y(O.i.USER_DISMISS)
+  }, [y]), A = i.useCallback(() => {
+    y(O.i.USER_DISMISS), n()
+  }, [n, y]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(_.A, w(N({}, c), {
-      onCardClick: y,
+      onCardClick: b,
       ref: u
     })), t && E === s.M.GAME_SHOP_WISHLIST_POPOVER && !d && !f && (0, r.jsx)(x, {
       targetElementRef: u,
-      onRequestClose: A,
-      onActionClick: v
+      onRequestClose: v,
+      onActionClick: A
     })]
   })
 }
@@ -157,8 +157,8 @@ function j(e, t) {
     cardSize: c,
     analyticsLocations: d,
     itemSource: p
-  } = t, _ = null != i && i > 0, m = p === h.uS.POPULAR ? v.intl.string(v.t.Ig6VDH) : v.intl.string(v.t.ilhtIa), g = {
-    title: _ ? v.intl.string(v.t.TxBQzD) : v.intl.string(v.t["4yiU7x"]),
+  } = t, _ = null != i && i > 0, m = p === h.uS.POPULAR ? A.intl.string(A.t.Ig6VDH) : A.intl.string(A.t.ilhtIa), g = {
+    title: _ ? A.intl.string(A.t.TxBQzD) : A.intl.string(A.t["4yiU7x"]),
     body: _ ? true : m,
     renderIcon: _ ? true : f.GM,
     shouldShow: true
@@ -166,14 +166,14 @@ function j(e, t) {
     _ ? a() : (0, E.a)(e.sku, {
       isGift: true,
       giftRecipient: o,
-      giftingOrigin: A.vQ.USER_PROFILE_WISHLIST
+      giftingOrigin: v.vQ.USER_PROFILE_WISHLIST
     }, {
       analyticsLocations: [...d, u.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
     })
-  }, I = () => (0, r.jsx)(b.e, {
-    containerClassName: S.Nr,
-    backgroundImageClassName: S.GC,
-    foregroundImageClassName: S.wP,
+  }, S = () => (0, r.jsx)(y.e, {
+    containerClassName: I.Nr,
+    backgroundImageClassName: I.GC,
+    foregroundImageClassName: I.wP,
     sku: e.sku,
     shape: "custom"
   });
@@ -182,11 +182,11 @@ function j(e, t) {
     onCardClick: O,
     tooltipConfig: g,
     shouldScalePreview: false,
-    renderPreview: I,
+    renderPreview: S,
     moreCount: i,
     isSingleCard: s,
     wishlistId: l,
-    showPopover: 0 === n && e.sku.applicationId === y.XR,
+    showPopover: 0 === n && e.sku.applicationId === b.XR,
     onViewWishlist: a,
     cardSize: c,
     itemSource: p
@@ -205,19 +205,19 @@ function M(e) {
     (0, E.a)(t.sku, {
       isGift: true,
       giftRecipient: a,
-      giftingOrigin: A.vQ.USER_PROFILE_WISHLIST
+      giftingOrigin: v.vQ.USER_PROFILE_WISHLIST
     }, {
       analyticsLocations: [...i, u.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
     })
   };
   return (0, r.jsxs)("div", {
-    className: I.D5,
+    className: S.D5,
     children: [n, (0, r.jsx)("div", {
-      className: I.S7,
+      className: S.S7,
       children: (0, r.jsxs)(c.DUT, {
         onClick: o,
-        className: I.Hh,
-        "aria-label": v.intl.string(v.t.pLPjsb),
+        className: S.Hh,
+        "aria-label": A.intl.string(A.t.pLPjsb),
         children: [(0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
@@ -226,7 +226,7 @@ function M(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-default",
-          children: v.intl.format(v.t["CqpEC+"], {
+          children: A.intl.format(A.t["CqpEC+"], {
             applicationName: null == s ? true : s.name
           })
         })]

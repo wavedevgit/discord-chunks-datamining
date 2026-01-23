@@ -113,19 +113,19 @@ function p(e) {
         g = null == l.trackExposureOptions ? true : (0, i.A)(null != (s = l.trackExposureOptions) ? s : {}),
         E = null != (o = null == h ? true : h.triggerDebuggingEnabled) && o,
         [
-          [b, y, O], A
+          [y, b, O], v
         ] = (0, r.useState)(() => {
           let n = null == h || u ? c.RE.NOT_ELIGIBLE : h.bucket;
           return [f(e, n, t, h), n, null == h ? false : h.revision]
         }),
-        v = (0, i.A)(n);
+        A = (0, i.A)(n);
       return (0, r.useEffect)(() => {
-        !u && (_ || E) && null == e.commonTriggerPoint && p(v, g, false === _)
-      }, [u, _, v, g, y, O, E]), (0, r.useEffect)(() => m(v, (e, t, n) => {
-        A(r => r[0] === e && r[1] === t && r[2] === n ? r : [e, t, n])
+        !u && (_ || E) && null == e.commonTriggerPoint && p(A, g, false === _)
+      }, [u, _, A, g, b, O, E]), (0, r.useEffect)(() => m(A, (e, t, n) => {
+        v(r => r[0] === e && r[1] === t && r[2] === n ? r : [e, t, n])
       }, {
         disable: u
-      }), [u, v]), b
+      }), [u, A]), y
     },
     subscribe: m,
     trackExposure: _,

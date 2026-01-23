@@ -32,8 +32,8 @@ function p(e) {
     canJoin: false,
     remoteJoinPlatform: null
   };
-  let b = (0, s._)(n);
-  if (!(0, c.A)(b) || (0, d.U)(b) || (0, a.w)(l, n) || (0, i.v)(_)) return {
+  let y = (0, s._)(n);
+  if (!(0, c.A)(y) || (0, d.U)(y) || (0, a.w)(l, n) || (0, i.v)(_)) return {
     canJoin: false,
     remoteJoinPlatform: null
   };

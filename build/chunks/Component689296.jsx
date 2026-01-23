@@ -89,7 +89,7 @@ function h(e) {
         size: "xs"
       })]
     })
-  }), [E, b] = i.useState(null), y = i.useCallback(() => {
+  }), [E, y] = i.useState(null), b = i.useCallback(() => {
     if (null == E) return;
     let {
       scrollHeight: e,
@@ -101,14 +101,14 @@ function h(e) {
     })
   }, [E]);
   i.useEffect(() => {
-    requestAnimationFrame(y)
-  }, [y, t, n]);
+    requestAnimationFrame(b)
+  }, [b, t, n]);
   let O = "auto";
   return null != h && (O = d ? "".concat(h.expandedHeight, "px") : "".concat(h.truncatedHeight, "px")), (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.Text, f(u({}, c), {
       className: l.Qs,
       lineClamp: d ? true : n,
-      ref: b,
+      ref: y,
       style: {
         height: O
       },

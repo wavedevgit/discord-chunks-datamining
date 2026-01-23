@@ -14,16 +14,16 @@ let s = e => {
     onSuccess: n
   } = e, {
     handleUseNow: s,
-    isApplying: c
-  } = (0, a.p)({
+    isApplying: o
+  } = (0, i.p)({
     product: t,
     onSuccess: n
   });
   return (0, r.jsx)(l.Button, {
     variant: "primary",
     onClick: s,
-    loading: c,
-    text: i.intl.string(i.t.MAS7uK),
+    loading: o,
+    text: a.intl.string(a.t.MAS7uK),
     fullWidth: true
   })
 }

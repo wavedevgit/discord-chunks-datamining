@@ -2,7 +2,7 @@
 /** chunk id: 646696, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./896048.js");
 var Chunk439372 = require("./439372.js"),
   Chunk183636 = require("./183636.js"),
@@ -28,8 +28,8 @@ function h(e, t, n) {
 let m = Chunk927813.A.Millis.DAY,
   g = 30 * Chunk927813.A.Millis.MINUTE,
   E = 5 * Chunk927813.A.Millis.SECOND,
-  b = 5 * Chunk927813.A.Millis.MINUTE,
-  y = 12 * Chunk927813.A.Millis.HOUR;
+  y = 5 * Chunk927813.A.Millis.MINUTE,
+  b = 12 * Chunk927813.A.Millis.HOUR;
 class O extends Chunk439372.A {
   _fetch(e) {
     if (!(0, p.s)({
@@ -59,14 +59,14 @@ class O extends Chunk439372.A {
         !(Date.now() - t < l.A.lastFetchedCurrentQuests) && (e || 0 === l.A.lastFetchedCurrentQuests) && this._fetch("post_connect_initial")
       }, t)
     }), h(this, "handleRunningGamesChange", () => {
-      this.instantiatedAt + y > Date.now() || l.A.lastFetchedCurrentQuests + y > Date.now() || this._fetch("running_games")
+      this.instantiatedAt + b > Date.now() || l.A.lastFetchedCurrentQuests + b > Date.now() || this._fetch("running_games")
     }), h(this, "handleUserSettingsProtoUpdate", e => {
       let {
         partial: t,
         settings: n,
         wasSaved: r
       } = e;
-      !("localization" in n.proto) || !t || r || Date.now() - this.lastFetchedQuestForLocaleChangeAt <= b || (this.lastFetchedQuestForLocaleChangeAt = Date.now(), this._fetch("user_settings"))
+      !("localization" in n.proto) || !t || r || Date.now() - this.lastFetchedQuestForLocaleChangeAt <= y || (this.lastFetchedQuestForLocaleChangeAt = Date.now(), this._fetch("user_settings"))
     }), h(this, "handleLogout", () => {
       window.clearTimeout(this.initialFetchTimerId), window.clearTimeout(this.recurringFetchTimerId), this.lastFetchAttemptedAt = 0, this.lastFetchedQuestForLocaleChangeAt = 0
     }), h(this, "actions", {
@@ -79,4 +79,4 @@ class O extends Chunk439372.A {
     })
   }
 }
-let A = new O
+let v = new O

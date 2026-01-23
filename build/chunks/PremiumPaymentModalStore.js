@@ -65,10 +65,10 @@ function E(e) {
   l = e.error
 }
 
-function b(e) {
+function y(e) {
   e.isGift && (u = e.skuId)
 }
-class y extends(r = Chunk311907.Ay.Store) {
+class b extends(r = Chunk311907.Ay.Store) {
   get paymentError() {
     return l
   }
@@ -76,8 +76,8 @@ class y extends(r = Chunk311907.Ay.Store) {
     return e === u ? c : null
   }
 }
-o(y, "displayName", "PremiumPaymentModalStore");
-let O = new y(Chunk73153.h, {
+o(b, "displayName", "PremiumPaymentModalStore");
+let O = new b(Chunk73153.h, {
   PREMIUM_PAYMENT_SUBSCRIBE_FAIL: d,
   PREMIUM_PAYMENT_UPDATE_FAIL: d,
   PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS: f,
@@ -87,6 +87,6 @@ let O = new y(Chunk73153.h, {
   BRAINTREE_TOKENIZE_VENMO_FAIL: _,
   SKU_PURCHASE_SUCCESS: m,
   SKU_PURCHASE_FAIL: E,
-  SKU_PURCHASE_AWAIT_CONFIRMATION: b,
+  SKU_PURCHASE_AWAIT_CONFIRMATION: y,
   GIFT_CODE_CREATE: g
 })

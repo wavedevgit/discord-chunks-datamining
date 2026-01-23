@@ -4,7 +4,7 @@
 let r;
 require.d(exports, {
   Ay: () => Y,
-  JA: () => v,
+  JA: () => A,
   XA: () => x,
   jd: () => D
 });
@@ -26,7 +26,7 @@ var i, Chunk64700 = require("./64700.js"),
   Chunk731854 = require("./731854.js"),
   Chunk985018 = require("./985018.jsx");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,17 +34,17 @@ function A(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var v = function(e) {
+var A = function(e) {
   return e[e.Present = 0] = "Present", e[e.Update = 1] = "Update", e[e.Cancel = 2] = "Cancel", e[e.Error = 3] = "Error", e
 }({});
-let S = false,
-  I = 0,
+let I = false,
+  S = 0,
   T = 0,
   C = false,
   N = {};
 
 function R() {
-  return f.A.supports(y.O5.NATIVE_SCREENSHARE_PICKER)
+  return f.A.supports(b.O5.NATIVE_SCREENSHARE_PICKER)
 }
 
 function w() {
@@ -52,7 +52,7 @@ function w() {
 }
 
 function P() {
-  let e = w() && (T > 0 || S && 0 === I);
+  let e = w() && (T > 0 || I && 0 === S);
   if (e !== C) {
     var t, n;
     C = e, null == (n = f.A.getMediaEngine()) || null == (t = n.setNativeDesktopVideoSourcePickerActive) || t.call(n, C)
@@ -60,8 +60,8 @@ function P() {
 }
 
 function D() {
-  return (0, a.useEffect)(() => (I++, P(), () => {
-    0 == --I && P()
+  return (0, a.useEffect)(() => (S++, P(), () => {
+    0 == --S && P()
   }), [])
 }
 
@@ -73,7 +73,7 @@ function x() {
 
 function L() {
   let e = u.A.getChannel(_.A.getVoiceChannelId());
-  return S = null != e && (0, m.A)(f.A) && (0, h.vz)(e, d.A, p.A, false), P(), false
+  return I = null != e && (0, m.A)(f.A) && (0, h.vz)(e, d.A, p.A, false), P(), false
 }
 
 function j() {
@@ -107,7 +107,7 @@ class U extends(i = Chunk311907.Ay.Store) {
     return w()
   }
   releasePickerStream() {
-    (0, b.E)()
+    (0, y.E)()
   }
   getPickerState() {
     return N
@@ -133,7 +133,7 @@ function G(e) {
   } = e;
   if (N = {
       lastPickerAction: 1
-    }, r = n, 0 === I && !t) {
+    }, r = n, 0 === S && !t) {
     let e = u.A.getChannel(_.A.getVoiceChannelId());
     null != e && (0, m.A)(f.A) && (0, h.vz)(e, d.A, p.A, false) && (0, l.XI)(e.getGuildId(), e.id, k())
   }
@@ -168,7 +168,7 @@ function B(e) {
 function H() {
   N = {}
 }
-A(U, "displayName", "NativeScreenSharePickerStore");
+v(U, "displayName", "NativeScreenSharePickerStore");
 let Y = new U(Chunk73153.h, {
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: G,
   NATIVE_SCREEN_SHARE_PICKER_CANCEL: V,

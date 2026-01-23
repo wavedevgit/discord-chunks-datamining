@@ -17,9 +17,9 @@ function d(e) {
   let {
     location: n,
     wishlist: d
-  } = e, f = (0, o.kt)({
+  } = e, f = (0, s.kt)({
     location: n
-  }), p = r.useMemo(() => (null == d ? true : d.userId) != null ? [d.userId] : [], [d]), b = (0, l.bG)([a.A], () => a.A.getGuild((0, s.zf)())), g = null != (t = null == d ? true : d.items.some(e => (0, i.$)(e))) && t, m = (0, c.gT)({
+  }), p = r.useMemo(() => (null == d ? true : d.userId) != null ? [d.userId] : [], [d]), g = (0, l.bG)([a.A], () => a.A.getGuild((0, o.zf)())), m = null != (t = null == d ? true : d.items.some(e => (0, i.$)(e))) && t, b = (0, c.gT)({
     gameIds: u.sQ,
     userIds: p
   }), y = (0, c.K6)({
@@ -33,5 +33,5 @@ function d(e) {
   }), x = (0, c.ok)({
     gameIds: u.sQ
   });
-  return f && (null != b || x || g || m || y || O || j)
+  return f && (null != g || x || m || b || y || O || j)
 }

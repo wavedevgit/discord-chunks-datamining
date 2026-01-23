@@ -51,17 +51,17 @@ function h(e) {
     size: m = d.A.Sizes.SMALLER,
     hideOverflowCount: g = false,
     disableGuildNameTooltip: E = false
-  } = e, b = p(m);
+  } = e, y = p(m);
 
-  function y() {
+  function b() {
     let e = i.length - n,
       t = e + 1,
       p = e > 0 && !g,
-      y = Math.min(i.length, n) - 1,
+      b = Math.min(i.length, n) - 1,
       O = o()(i).take(n).map((e, t) => {
         let n = e.name,
-          i = t === y && !p,
-          s = a()(f.my, b, i && f.NE);
+          i = t === b && !p,
+          s = a()(f.my, y, i && f.NE);
         return E ? (0, r.jsx)("div", {
           className: s,
           children: (0, r.jsx)(d.A, {
@@ -83,7 +83,7 @@ function h(e) {
     if (p) {
       let e = _(m);
       O[O.length - 1] = (0, r.jsx)(c.$n, {
-        className: a()(f.ju, b),
+        className: a()(f.ju, y),
         onFocus: s,
         onClick: e => null == h ? true : h(e),
         look: c.$n.Looks.BLANK,
@@ -98,6 +98,6 @@ function h(e) {
   }
   return i.length <= 0 ? null : (0, r.jsx)("div", {
     className: a()(t, f.HD),
-    children: y()
+    children: b()
   })
 }

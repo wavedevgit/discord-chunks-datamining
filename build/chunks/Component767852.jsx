@@ -94,8 +94,8 @@ let R = (0, Chunk240248.xI)(Chunk319060.A.GAME_LIST_ROW_MIN_HEIGHT),
     sort: true,
     cellClassName: Chunk630086.UQ,
     bodyCellClassName: Chunk630086.SJ,
-    render: e => (0, i.jsxs)(b.A, {
-      align: b.A.Align.CENTER,
+    render: e => (0, i.jsxs)(_.A, {
+      align: _.A.Align.CENTER,
       children: [(0, i.jsx)(E.A, {
         game: e.application,
         size: E.M.SMALL,
@@ -107,7 +107,7 @@ let R = (0, Chunk240248.xI)(Chunk319060.A.GAME_LIST_ROW_MIN_HEIGHT),
           children: e.libraryApplication.getBranchedName(e.application)
         }), e.libraryApplication.hasFlag(T.hM6.PREMIUM) ? (0, i.jsx)(d.m, {
           text: j.intl.string(j.t.tG2SzG),
-          children: (0, i.jsx)(f.tvc, {
+          children: (0, i.jsx)(h.tvc, {
             size: "md",
             color: "currentColor",
             className: x.oU
@@ -123,8 +123,8 @@ let R = (0, Chunk240248.xI)(Chunk319060.A.GAME_LIST_ROW_MIN_HEIGHT),
     bodyCellClassName: Chunk630086.iV,
     render(e) {
       let t = e.libraryApplication.getDistributor();
-      return (0, i.jsx)(b.A, {
-        align: b.A.Align.CENTER,
+      return (0, i.jsx)(_.A, {
+        align: _.A.Align.CENTER,
         children: null != t ? T.gG4[t] : j.intl.string(j.t["F+l3Jt"])
       })
     }
@@ -139,8 +139,8 @@ let R = (0, Chunk240248.xI)(Chunk319060.A.GAME_LIST_ROW_MIN_HEIGHT),
       return t = e.isRunning ? j.intl.string(j.t.Md326p) : e.isNew ? j.intl.string(j.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(O.Ay, {
         end: e.lastPlayed,
         location: O.Ay.Locations.GAME_LIBRARY_LAST_PLAYED
-      }) : j.intl.string(j.t.EoWLru), (0, i.jsx)(b.A, {
-        align: b.A.Align.CENTER,
+      }) : j.intl.string(j.t.EoWLru), (0, i.jsx)(_.A, {
+        align: _.A.Align.CENTER,
         className: s()({
           [x.g3]: e.isNew
         }),
@@ -161,12 +161,12 @@ let R = (0, Chunk240248.xI)(Chunk319060.A.GAME_LIST_ROW_MIN_HEIGHT),
           children: [(0, i.jsx)(k, {
             flag: T.hM6.PRIVATE,
             item: e,
-            icon: f.G3N,
+            icon: h.G3N,
             tooltip: j.intl.string(j.t.NozAop)
           }), (0, i.jsx)(k, {
             flag: T.hM6.OVERLAY_DISABLED,
             item: e,
-            icon: f.nkR,
+            icon: h.nkR,
             tooltip: j.intl.string(j.t.Az9eqn)
           }), (0, i.jsx)(N.A, {
             className: s()(x.up, {
@@ -174,7 +174,7 @@ let R = (0, Chunk240248.xI)(Chunk319060.A.GAME_LIST_ROW_MIN_HEIGHT),
             }),
             libraryApplication: e.libraryApplication
           })]
-        }), (0, S.XZ)(e.libraryApplication) ? (0, i.jsx)(m.A, {
+        }), (0, S.XZ)(e.libraryApplication) ? (0, i.jsx)(A.A, {
           analyticsListSort: (r = t.sortKey, a = t.sortDirection, "".concat(M[r], " ").concat(a === T.tSW.ASCENDING ? "ASC" : "DESC")),
           analyticsListIndex: n,
           source: T.ThZ.APPLICATION_LIBRARY,
@@ -247,7 +247,7 @@ class V extends(r = Chunk64700.PureComponent) {
     let t = this.props.activeRowKey;
     if (null != t && e.activeRowKey !== t && this.props.isNavigatingByKeyboard) {
       let e = this._rowRefs[t];
-      null != e && (h.h.wait(A.Z_), this.props.scrollToRow(e, R))
+      null != e && (g.h.wait(f.Z_), this.props.scrollToRow(e, R))
     }
   }
   handleHighlightedApplicationKey() {
@@ -309,7 +309,7 @@ class V extends(r = Chunk64700.PureComponent) {
     }))
   }
   handleSort(e, t) {
-    g.vt(e, t)
+    m.vt(e, t)
   }
   renderImportHelp() {
     let e, {
@@ -323,10 +323,10 @@ class V extends(r = Chunk64700.PureComponent) {
       className: r ? x.MG : x.mv,
       children: [(0, i.jsx)("div", {
         className: x.Zd
-      }), (0, i.jsx)(b.A, {
+      }), (0, i.jsx)(_.A, {
         grow: 0,
         shrink: +!!r,
-        direction: b.A.Direction.VERTICAL,
+        direction: _.A.Direction.VERTICAL,
         children: (0, i.jsxs)("div", {
           className: x.q6,
           children: [(0, i.jsx)("div", {
@@ -352,7 +352,7 @@ class V extends(r = Chunk64700.PureComponent) {
       highlightedApplicationKey: o
     } = this.state;
     return (0, i.jsxs)(l.Fragment, {
-      children: [n.length > 0 ? (0, i.jsx)(_.A, {
+      children: [n.length > 0 ? (0, i.jsx)(b.A, {
         columns: U,
         data: n,
         sortData: false,
@@ -399,9 +399,9 @@ class V extends(r = Chunk64700.PureComponent) {
         overflowMenuRowKey: null
       })
     }), P(this, "handleRowMouseEnter", e => {
-      this.props.isNavigatingByKeyboard || g.pU(e.key)
+      this.props.isNavigatingByKeyboard || m.pU(e.key)
     }), P(this, "handleRowMouseLeave", () => {
-      this.props.isNavigatingByKeyboard || g.pU(null)
+      this.props.isNavigatingByKeyboard || m.pU(null)
     }), P(this, "setRowRef", (e, t) => {
       this._rowRefs[t] = e
     }), P(this, "handleApplicationContextMenu", (e, t) => {
@@ -409,7 +409,7 @@ class V extends(r = Chunk64700.PureComponent) {
       let {
         analyticsContext: r
       } = this.props;
-      (0, A.L3)(e, async () => {
+      (0, f.L3)(e, async () => {
         let {
           default: e
         } = await n.e("881").then(n.bind(n, 163368));
@@ -441,7 +441,7 @@ function B(e) {
       sortKey: u,
       sortDirection: d,
       activeRowKey: p,
-      isNavigatingByKeyboard: f
+      isNavigatingByKeyboard: h
     } = (0, c.cf)([I.A], () => ({
       sortKey: I.A.sortKey,
       sortDirection: I.A.sortDirection,
@@ -457,7 +457,7 @@ function B(e) {
     sortKey: u,
     sortDirection: d,
     activeRowKey: p,
-    isNavigatingByKeyboard: f
+    isNavigatingByKeyboard: h
   }))
 }
 P(V, "defaultProps", {

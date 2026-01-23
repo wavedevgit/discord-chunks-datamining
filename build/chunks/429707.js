@@ -2,9 +2,9 @@
 /** chunk id: 429707, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  At: () => p,
+  At: () => g,
   F6: () => h,
-  Mx: () => f
+  Mx: () => p
 });
 var Chunk247775 = require("./247775.js"),
   Chunk562465 = require("./562465.js"),
@@ -58,7 +58,7 @@ function h() {
   })
 }
 
-function f(e, t) {
+function p(e, t) {
   d.log("Switching account to ".concat(e), {
     switchSynchronously: t
   });
@@ -69,7 +69,7 @@ function f(e, t) {
   }), Promise.resolve()) : l.A.switchAccountToken(n, t)
 }
 
-function p(e) {
+function g(e) {
   s.h.dispatch({
     type: "MULTI_ACCOUNT_REMOVE_ACCOUNT",
     userId: e

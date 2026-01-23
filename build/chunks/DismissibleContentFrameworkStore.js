@@ -77,14 +77,14 @@ function E(e) {
   m.dailyCapOverridden = t
 }
 
-function b(e) {
+function y(e) {
   let {
     value: t
   } = e;
   m.newUserMinAgeRequiredOverridden = t
 }
 
-function y(e, t) {
+function b(e, t) {
   let n = m.seenForGuildId.get(t);
   return null != n && n.has(e)
 }
@@ -97,7 +97,7 @@ function O(e) {
   if (m.renderedAtTimestamps.set(t, r.getTime()), o.C.has(t) || m.dailyCapOverridden) return;
   let i = (0, l.vf)(t) && null != n;
   if (!(!i && m.dismissibleContentSeenDuringSession.has(t))) {
-    if (!(i && y(t, n))) {
+    if (!(i && b(t, n))) {
       if (i) {
         var a;
         let e = null != (a = m.seenForGuildId.get(n)) ? a : new Set;
@@ -116,24 +116,24 @@ function O(e) {
   }
 }
 
-function A(e) {
+function v(e) {
   let {
     dismissibleContent: t
   } = e;
   m.lastDCDismissed = t, m.renderedAtTimestamps.delete(t)
 }
 
-function v(e) {
+function A(e) {
   let {
     dismissibleContent: t
   } = e;
   m.lastDCDismissed = null != t ? t : null
 }
 
-function S() {
+function I() {
   m.dailyCapPeriodStart = null, m.numberOfDCsShownToday = 0, m.dismissibleContentSeenDuringSession = new Set, m.seenForGuildId = new Map, m.lastDCDismissed = null
 }
-class I extends(r = Chunk311907.Ay.PersistedStore) {
+class S extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n, r;
@@ -160,19 +160,19 @@ class I extends(r = Chunk311907.Ay.PersistedStore) {
     if (null != e && (o.C.has(e) || m.dailyCapOverridden)) returnfalse;
     if (null != e) {
       let n = null != t && (0, l.vf)(e);
-      if (n && null != t && y(e, t) || !n && m.dismissibleContentSeenDuringSession.has(e)) returnfalse
+      if (n && null != t && b(e, t) || !n && m.dismissibleContentSeenDuringSession.has(e)) returnfalse
     }
     let n = new Date;
     return n.setHours(0, 0, 0, 0), null != m.dailyCapPeriodStart && m.dailyCapPeriodStart < n.getTime() && (m.numberOfDCsShownToday = 0, m.dailyCapPeriodStart = null), m.numberOfDCsShownToday >= h
   }
 }
-u(I, "displayName", "DismissibleContentFrameworkStore"), u(I, "persistKey", "DismissibleContentFrameworkStore"), u(I, "migrations", [e => d({}, e)]);
-let T = new I(Chunk73153.h, {
+u(S, "displayName", "DismissibleContentFrameworkStore"), u(S, "persistKey", "DismissibleContentFrameworkStore"), u(S, "migrations", [e => d({}, e)]);
+let T = new S(Chunk73153.h, {
   LOGOUT: g,
   DCF_DAILY_CAP_OVERRIDE: E,
-  DCF_NEW_USER_MIN_AGE_REQUIRED_OVERRIDE: b,
+  DCF_NEW_USER_MIN_AGE_REQUIRED_OVERRIDE: y,
   DCF_HANDLE_DC_SHOWN: O,
-  DCF_HANDLE_DC_DISMISSED: A,
-  DCF_OVERRIDE_LAST_DC_DISMISSED: v,
-  DCF_RESET: S
+  DCF_HANDLE_DC_DISMISSED: v,
+  DCF_OVERRIDE_LAST_DC_DISMISSED: A,
+  DCF_RESET: I
 })

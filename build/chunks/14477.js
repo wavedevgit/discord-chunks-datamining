@@ -2,7 +2,7 @@
 /** chunk id: 14477, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./321073.js"), require("./896048.js");
 var Chunk205693 = require("./205693.js"),
   Chunk827343 = require("./827343.js"),
@@ -59,7 +59,7 @@ function E() {
     location: "KrispBVCDeviceManager"
   }), s) ? o.A.getKrispModelOverride() !== p && (_.info("BVC compatible with device, enabling BVC."), i.A.setKrispModelOverride(p)) : i.A.setKrispModelOverride("") : o.A.getKrispModelOverride() && (_.info("Unknown BVC compatibility with device, disabling BVC."), i.A.setKrispModelOverride(""))
 }
-class b extends Chunk439372.A {
+class y extends Chunk439372.A {
   constructor(...e) {
     super(...e), f(this, "actions", {
       AUDIO_SET_INPUT_DEVICE: E,
@@ -75,4 +75,4 @@ class b extends Chunk439372.A {
     })
   }
 }
-let y = new b
+let b = new y

@@ -2,7 +2,7 @@
 /** chunk id: 972982, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,7 +24,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk100817 = require("./100817.jsx"),
   Chunk531525 = require("./531525.js");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,19 +33,19 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
-class S extends Chunk64700.PureComponent {
+class I extends Chunk64700.PureComponent {
   renderEnabled() {
     let {
       backupCodes: e,
@@ -84,18 +84,18 @@ class S extends Chunk64700.PureComponent {
     let {
       currentUser: e
     } = this.props;
-    return _.K7 ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(y.A, {}) : (0, r.jsx)(b.A, {})
+    return _.K7 ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(b.A, {}) : (0, r.jsx)(y.A, {})
   }
 }
 
-function I(e) {
+function S(e) {
   let t = (0, o.bG)([p.default], () => p.default.getCurrentUser());
   s()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
   let n = (0, o.cf)([f.A, d.default], () => ({
     togglingSMS: f.A.togglingSMS,
     hasTOTPEnabled: d.default.hasTOTPEnabled()
   }));
-  return (0, r.jsx)(S, v({
+  return (0, r.jsx)(I, A({
     currentUser: t
   }, n, e))
 }

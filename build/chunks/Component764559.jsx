@@ -2,7 +2,7 @@
 /** chunk id: 764559, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => b,
+  A: () => g,
   B: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
@@ -32,7 +32,7 @@ function f() {
   }
 }
 
-function b(e) {
+function g(e) {
   let {
     markAsDismissed: t
   } = e, {

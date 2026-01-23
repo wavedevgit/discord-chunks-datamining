@@ -2,7 +2,7 @@
 /** chunk id: 652165, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B4: () => b,
+  B4: () => y,
   o6: () => g
 });
 var Chunk627968 = require("./627968.js"),
@@ -65,7 +65,7 @@ function E() {
     })
   })
 }
-let b = e => {
+let y = e => {
     let {
       skuId: t,
       onCheckoutSuccess: n,
@@ -100,9 +100,9 @@ let b = e => {
       rentalDuration: f,
       onCloseRequest: g
     };
-    return p ? y(E) : O(E)
+    return p ? b(E) : O(E)
   },
-  y = e => {
+  b = e => {
     let {
       loadId: t,
       skuId: n,

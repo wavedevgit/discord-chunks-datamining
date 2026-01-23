@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 394727, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => f
 }), require("./747238.js"), require("./896048.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -16,15 +16,15 @@ var Chunk64700 = require("./64700.js"),
   Chunk257269 = require("./257269.js"),
   Chunk985018 = require("./985018.jsx");
 
-function A(e) {
+function f(e) {
   var t, n;
   let {
-    match: A
-  } = e, g = null != (t = (0, u.UC)()) ? t : [], {
-    analyticsLocations: m
-  } = (0, o.Ay)([...g, s.A.ACTIVITY_DETAIL_PAGE]), {
-    applicationId: b
-  } = A.params, [_] = (0, c.A)([b]), E = null == _ || null == (n = _.bot) ? true : n.id, O = (0, i.bG)([d.default], () => d.default.getCurrentUser());
+    match: f
+  } = e, m = null != (t = (0, u.UC)()) ? t : [], {
+    analyticsLocations: A
+  } = (0, o.Ay)([...m, s.A.ACTIVITY_DETAIL_PAGE]), {
+    applicationId: _
+  } = f.params, [b] = (0, c.A)([_]), E = null == b || null == (n = b.bot) ? true : n.id, O = (0, i.bG)([d.default], () => d.default.getCurrentUser());
   return r.useEffect(() => {
     null != E && null != O && (async () => {
       try {
@@ -36,21 +36,21 @@ function A(e) {
           r = null != (e = t.searchParams.get("referrer_id")) ? e : true,
           {
             customId: i
-          } = await (0, f.d9)(b, t.searchParams.get("link_id"), t.searchParams.get("custom_id"));
+          } = await (0, h.d9)(_, t.searchParams.get("link_id"), t.searchParams.get("custom_id"));
         await (0, p.A)({
-          targetApplicationId: b,
+          targetApplicationId: _,
           channelId: n,
-          analyticsLocations: m,
+          analyticsLocations: A,
           customId: i,
           referrerId: r
         })
       } catch (e) {}
     })()
-  }, [m, b, E, O]), r.useEffect(() => {
+  }, [A, _, E, O]), r.useEffect(() => {
     let e = setTimeout(() => {
       null == E && l.A.show({
-        title: h.intl.string(h.t.PtobXW),
-        body: h.intl.string(h.t["IOy+I5"])
+        title: g.intl.string(g.t.PtobXW),
+        body: g.intl.string(g.t["IOy+I5"])
       })
     }, 5e3);
     return () => {

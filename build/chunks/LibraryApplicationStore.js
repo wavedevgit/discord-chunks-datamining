@@ -55,27 +55,27 @@ function g(e, t) {
 }
 let E = "LibraryApplicationStore";
 
-function b() {
+function y() {
   var e;
   return null != (e = l.w.get(E)) ? e : {}
 }
-let y = false,
+let b = false,
   O = {},
-  A = {},
-  v = new Set,
-  S = {},
+  v = {},
+  A = new Set,
   I = {},
+  S = {},
   T = false;
 
 function C() {
-  l.w.set(E, g(h({}, b()), {
-    activeLaunchOptionIds: I
+  l.w.set(E, g(h({}, y()), {
+    activeLaunchOptionIds: S
   }))
 }
 
 function N() {
-  l.w.set(E, g(h({}, b()), {
-    activeLibraryApplicationBranchIds: S
+  l.w.set(E, g(h({}, y()), {
+    activeLibraryApplicationBranchIds: I
   }))
 }
 
@@ -87,14 +87,14 @@ function R(e) {
 }
 
 function w() {
-  y = false
+  b = false
 }
 
 function P(e) {
   let {
     libraryApplications: t
   } = e;
-  O = {}, R(t), y = true
+  O = {}, R(t), b = true
 }
 
 function D(e) {
@@ -110,14 +110,14 @@ function x(e) {
     branchId: n,
     flags: r
   } = e, i = (0, d.gW)(t, n), a = V(t, n);
-  null != a && !a.isHidden() && s.Lt(r, p.hM6.HIDDEN) && (T = true), v.add(i)
+  null != a && !a.isHidden() && s.Lt(r, p.hM6.HIDDEN) && (T = true), A.add(i)
 }
 
 function L(e) {
   let {
     libraryApplication: t
   } = e, n = u.A.createFromServer(t), r = (0, d.gW)(n.id, n.branchId);
-  O[r] = n, v.delete(r)
+  O[r] = n, A.delete(r)
 }
 
 function j(e) {
@@ -126,7 +126,7 @@ function j(e) {
     branchId: n,
     launchOptionId: r
   } = e;
-  I[(0, d.gW)(t, n)] = r, C()
+  S[(0, d.gW)(t, n)] = r, C()
 }
 
 function M(e) {
@@ -134,19 +134,19 @@ function M(e) {
     applicationId: t,
     branchId: n
   } = e;
-  if (S[t] === n) returnfalse;
-  S[t] = n, N()
+  if (I[t] === n) returnfalse;
+  I[t] = n, N()
 }
 
 function k(e) {
   let {
     libraryApplications: t
   } = e;
-  for (let e of t) A[(0, d.gW)(e.id, e.branchId)] = e
+  for (let e of t) v[(0, d.gW)(e.id, e.branchId)] = e
 }
 
 function U() {
-  A = {}
+  v = {}
 }
 
 function G(e) {
@@ -159,17 +159,17 @@ function G(e) {
 function V(e, t) {
   var n;
   let r = (0, d.gW)(e, t);
-  return null != (n = O[r]) ? n : A[r]
+  return null != (n = O[r]) ? n : v[r]
 }
 
 function F() {
-  return h({}, A, O)
+  return h({}, v, O)
 }
 class B extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(f.default);
     let e = l.w.get(E);
-    null != e && (null == e.activeLaunchOptionIds ? C() : I = e.activeLaunchOptionIds, null == e.activeLibraryApplicationBranchIds ? N() : S = e.activeLibraryApplicationBranchIds)
+    null != e && (null == e.activeLaunchOptionIds ? C() : S = e.activeLaunchOptionIds, null == e.activeLibraryApplicationBranchIds ? N() : I = e.activeLibraryApplicationBranchIds)
   }
   get libraryApplications() {
     return G(e => !e.isHidden())
@@ -192,11 +192,11 @@ class B extends(r = Chunk311907.Ay.Store) {
   }
   getActiveLibraryApplication(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      n = S[e];
+      n = I[e];
     if (null != n) {
       var r;
       let i = (0, d.gW)(e, n),
-        a = null != (r = O[i]) ? r : A[i];
+        a = null != (r = O[i]) ? r : v[i];
       if (null != a && (0, d.XZ)(a) && (t || !a.isHidden())) return a
     }
     let i = F();
@@ -207,13 +207,13 @@ class B extends(r = Chunk311907.Ay.Store) {
       }
   }
   isUpdatingFlags(e, t) {
-    return v.has((0, d.gW)(e, t))
+    return A.has((0, d.gW)(e, t))
   }
   getActiveLaunchOptionId(e, t) {
-    return I[(0, d.gW)(e, t)]
+    return S[(0, d.gW)(e, t)]
   }
   get fetched() {
-    return y
+    return b
   }
   get entitledBranchIds() {
     return a()(F()).values().filter(e => (0, d.XZ)(e)).map(e => e.branchId).value()
@@ -223,7 +223,7 @@ class B extends(r = Chunk311907.Ay.Store) {
   }
   whenInitialized(e) {
     this.addConditionalChangeListener(() => {
-      if (y) return setImmediate(e), false
+      if (b) return setImmediate(e), false
     })
   }
 }

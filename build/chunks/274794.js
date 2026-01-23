@@ -2,7 +2,7 @@
 /** chunk id: 274794, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./667532.js"), require("./457529.js"), require("./321073.js"), require("./65821.js"), require("./896048.js");
 var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
@@ -34,7 +34,7 @@ function g(e, t) {
 function E(e) {
   return !!m.includes(e) || (m.unshift(e), m.splice(50), false)
 }
-class b {
+class y {
   registerTransport(e) {
     e.on("connect", e => this.handleConnect(e)), e.on("request", (e, t) => this.handleRequest(e, t)), e.on("disconnect", (e, t) => this.handleDisconnect(e, t))
   }

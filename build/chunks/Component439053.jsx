@@ -2,7 +2,7 @@
 /** chunk id: 439053, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -65,7 +65,7 @@ let g = e => {
       children: _.intl.string(_.t.tcARX0)
     })]
   }),
-  b = e => {
+  y = e => {
     let {
       userId: t,
       onClose: n,
@@ -73,9 +73,9 @@ let g = e => {
     } = e, {
       interactionTypeSent: c,
       showInteractionToast: d
-    } = (0, f.Pq)(), m = c === p.AQ.REPLY ? _.intl.string(_.t.BPaiaa) : _.intl.string(_.t.Ry2EtG), b = (0, o.bG)([u.A], () => u.A.useReducedMotion), y = (0, l.pnh)(d, {
+    } = (0, f.Pq)(), m = c === p.AQ.REPLY ? _.intl.string(_.t.BPaiaa) : _.intl.string(_.t.Ry2EtG), y = (0, o.bG)([u.A], () => u.A.useReducedMotion), b = (0, l.pnh)(d, {
       from: {
-        transform: b ? "translateY(0)" : "translateY(16px)",
+        transform: y ? "translateY(0)" : "translateY(16px)",
         opacity: 0
       },
       enter: {
@@ -83,7 +83,7 @@ let g = e => {
         opacity: 1
       },
       leave: {
-        transform: b ? "translateY(0)" : "translateY(16px)",
+        transform: y ? "translateY(0)" : "translateY(16px)",
         opacity: 0
       },
       config: {
@@ -95,7 +95,7 @@ let g = e => {
       delay: 200
     }, "animate-always");
     return (0, r.jsx)(r.Fragment, {
-      children: y((e, o) => o && (0, r.jsx)(s.animated.div, {
+      children: b((e, o) => o && (0, r.jsx)(s.animated.div, {
         className: a()(h.Jt, i),
         style: e,
         children: null != c ? (0, r.jsx)(l.y8, {

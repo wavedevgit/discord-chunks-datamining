@@ -1,5 +1,5 @@
 /** Chunk was on 71138 **/
-/** chunk id: 974175, original params: e,t,n (module,exports,require) **/
+/** chunk id: 974175, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   R: () => b,
   q7: () => R
@@ -223,9 +223,9 @@ let b = {
     codec: function(e) {
       let {
         id: t,
-        name: n
+        name: r
       } = e;
-      return n = null != (n = "" === n ? "unknown" : n) ? n : "unknown", "".concat(n[0].toUpperCase()).concat(n.slice(1), " (").concat(t, ")")
+      return r = null != (r = "" === r ? "unknown" : r) ? r : "unknown", "".concat(r[0].toUpperCase()).concat(r.slice(1), " (").concat(t, ")")
     },
     cpuLimitedResolution: g,
     currentSampleRate: function(e) {
@@ -260,9 +260,9 @@ let b = {
     resolution: e => {
       let {
         width: t,
-        height: n
+        height: r
       } = e;
-      return "".concat(t, "x").concat(n)
+      return "".concat(t, "x").concat(r)
     },
     sampleRateMismatchPercent: h,
     secondaryDecodedRate: h,
@@ -288,7 +288,7 @@ let b = {
     return t.push({
       value: e.value,
       time: Date.now()
-    }), t.length > 600 && t.shift(), (0, r.jsx)(o.A, {
+    }), t.length > 600 && t.shift(), (0, n.jsx)(o.A, {
       converter: e.converter,
       dataPoints: t,
       width: e.width,
@@ -297,27 +297,27 @@ let b = {
   };
 
 function R(e) {
-  var t, n, a;
+  var t, r, a;
   let {
     label: i,
     value: l,
     section: u
-  } = e, m = null != (t = C[i]) ? t : x, p = E[i], y = s.iA[i] && (Array.isArray(l) && l.length > 0 && "number" == typeof l[0].value ? (0, r.jsx)(o.A, {
+  } = e, m = null != (t = C[i]) ? t : x, p = E[i], y = s.iA[i] && (Array.isArray(l) && l.length > 0 && "number" == typeof l[0].value ? (0, n.jsx)(o.A, {
     converter: p,
     dataPoints: l,
     width: 300,
     height: 100
-  }) : "number" == typeof l ? (0, r.jsx)(D, {
+  }) : "number" == typeof l ? (0, n.jsx)(D, {
     converter: p,
     value: l,
     width: 300,
     height: 100
   }) : true), h = Array.isArray(l) ? null == (a = l.at(false)) ? true : a.value : l;
-  return (0, r.jsx)(d.A, {
+  return (0, n.jsx)(d.A, {
     label: i,
     valueRendered: m(h),
     section: u,
     renderGraph: y,
-    children: null != (n = c[i]) ? n : i
+    children: null != (r = c[i]) ? r : i
   })
 }

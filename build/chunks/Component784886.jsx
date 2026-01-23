@@ -27,7 +27,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk787288 = require("./787288.js");
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function T(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -76,7 +76,7 @@ function w(e) {
     guildId: a,
     channelId: m,
     onClose: O,
-    disableAutoFocus: I = false,
+    disableAutoFocus: S = false,
     upsell: C = false
   } = e, {
     newestAnalyticsLocation: w,
@@ -86,8 +86,8 @@ function w(e) {
   } = (0, E.NJ)(), [x, L] = i.useState(""), [j, M] = i.useState((0, f.x7)(x)), k = i.useRef(false), U = i.useRef(null), G = i.useRef(null), {
     Component: V
   } = (0, o.V)(), F = i.useMemo(() => N(T({}, d.oU.USER_PROFILE), {
-    disableAutoFocus: I
-  }), [I]), B = i.useCallback(async () => {
+    disableAutoFocus: S
+  }), [S]), B = i.useCallback(async () => {
     (0, h.xs)(t.id), await c.A.openPrivateChannel({
       recipientIds: [t.id]
     }), (0, l.mMO)(async () => {
@@ -95,30 +95,30 @@ function w(e) {
         default: e
       } = await n.e("95501").then(n.bind(n, 367516));
       return t => (0, r.jsx)(e, N(T({}, t), {
-        giftIntentType: A.np.FRIEND_ANNIVERSARY,
+        giftIntentType: v.np.FRIEND_ANNIVERSARY,
         analyticsLocationHistory: P
       }))
     })
   }, [t.id, P]), H = i.useCallback(() => (0, r.jsxs)("div", {
-    className: S.Uo,
+    className: I.Uo,
     children: [(0, r.jsx)(l.K0, {
       size: "sm",
       variant: "icon-only",
       icon: V,
-      "aria-label": v.intl.string(v.t.I61IsE),
+      "aria-label": A.intl.string(A.t.I61IsE),
       onClick: B
-    }), (0, r.jsx)(y.A, {
+    }), (0, r.jsx)(b.A, {
       user: t,
       analyticsLocations: P
     })]
   }), [V, B, t, P]);
   return (0, r.jsx)(p.Ay, {
-    className: s()(S.kL, {
-      [S.UX]: C
+    className: s()(I.kL, {
+      [I.UX]: C
     }),
-    editorClassName: S.EN,
+    editorClassName: I.EN,
     type: F,
-    placeholder: v.intl.formatToPlainString(v.t["0ZQw/X"], {
+    placeholder: A.intl.formatToPlainString(A.t["0ZQw/X"], {
       name: g.Ay.getName(a, m, t)
     }),
     channel: R,
@@ -147,7 +147,7 @@ function w(e) {
         var i;
         return D({
           action: "SEND_DIRECT_MESSAGE"
-        }), await (0, b.p)({
+        }), await (0, y.p)({
           userId: t.id,
           content: r,
           openChannel: true,

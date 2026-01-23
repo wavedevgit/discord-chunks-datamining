@@ -30,7 +30,7 @@ function m(e, t, n, r) {
     case ":":
       return O(e, t);
     case "#":
-      return y(e, t)
+      return b(e, t)
   }
   return null
 }
@@ -60,10 +60,10 @@ function E(e, t, n, r, i) {
         userId: t
       } = e;
       return t
-    })).map(e => f.default.getUser(e)).filter(e => true !== e && b(a, s, e));
+    })).map(e => f.default.getUser(e)).filter(e => true !== e && y(a, s, e));
     if (1 === r.length) {
       let e = r[0];
-      if (b(a, s, e, {
+      if (y(a, s, e, {
           requireExact: true
         })) return {
         type: "userMention",
@@ -77,14 +77,14 @@ function E(e, t, n, r, i) {
   return null
 }
 
-function b(e, t, n) {
+function y(e, t, n) {
   let {
     requireExact: r = false
   } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
   return null != n && (r ? n.username === e : n.username.startsWith(e)) && n.discriminator === (null != t ? t : "0")
 }
 
-function y(e, t) {
+function b(e, t) {
   let n;
   if (null == t) return null;
   n = e.length > 3 && '"' === e[1] && '"' === e[e.length - 1] ? (0, r.LG)(e.slice(2, e.length - 1)) : e.slice(1);

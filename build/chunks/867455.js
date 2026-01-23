@@ -2,7 +2,7 @@
 /** chunk id: 867455, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 }), require("./938796.js");
 var Chunk392421 = require("./392421.js"),
   Chunk562465 = require("./562465.js"),
@@ -25,9 +25,9 @@ var Chunk392421 = require("./392421.js"),
   Chunk746080 = require("./746080.js"),
   Chunk985018 = require("./985018.jsx");
 
-function v(e, t) {
+function A(e, t) {
   return i.Bo.patch({
-    url: y.Rsh.CHANNEL(e.id),
+    url: b.Rsh.CHANNEL(e.id),
     body: t,
     rejectWithError: false
   }).then(t => (a.h.dispatch({
@@ -39,7 +39,7 @@ function v(e, t) {
   }), t))
 }
 
-function S(e, t) {
+function I(e, t) {
   a.h.dispatch({
     type: "THREAD_MEMBER_LOCAL_UPDATE",
     id: e.id,
@@ -48,23 +48,23 @@ function S(e, t) {
     isJoining: t
   })
 }
-let I = {
+let S = {
   archiveThread(e, t) {
     let n = {
       archived: true
     };
-    return t && (n.locked = true), v(e, n)
+    return t && (n.locked = true), A(e, n)
   },
   async lockThread(e) {
     let t = e.isArchivedThread();
-    return t && await this.unarchiveThread(e, false), v(e, {
+    return t && await this.unarchiveThread(e, false), A(e, {
       locked: true,
       archived: t
     })
   },
   async unlockThread(e) {
     let t = e.isArchivedThread();
-    return t && await this.unarchiveThread(e, true), v(e, {
+    return t && await this.unarchiveThread(e, true), A(e, {
       locked: false,
       archived: t
     })
@@ -76,38 +76,38 @@ let I = {
       r = e.isForumPost();
     t && (n.locked = false);
     try {
-      return await v(e, n)
+      return await A(e, n)
     } catch (e) {
       var i, a;
-      throw (null == (i = e.body) ? true : i.code) === y.t02.TOO_MANY_THREADS ? s.A.show({
-        title: r ? A.intl.string(A.t.kwyWNX) : A.intl.string(A.t["PeIE/r"]),
-        body: r ? A.intl.string(A.t.KGaiEK) : A.intl.string(A.t.P0wT5S)
-      }) : (null == (a = e.body) ? true : a.code) === y.t02.TOO_MANY_ANNOUNCEMENT_THREADS ? s.A.show({
-        title: A.intl.string(A.t["PeIE/r"]),
-        body: A.intl.string(A.t.jDMxz2)
+      throw (null == (i = e.body) ? true : i.code) === b.t02.TOO_MANY_THREADS ? s.A.show({
+        title: r ? v.intl.string(v.t.kwyWNX) : v.intl.string(v.t["PeIE/r"]),
+        body: r ? v.intl.string(v.t.KGaiEK) : v.intl.string(v.t.P0wT5S)
+      }) : (null == (a = e.body) ? true : a.code) === b.t02.TOO_MANY_ANNOUNCEMENT_THREADS ? s.A.show({
+        title: v.intl.string(v.t["PeIE/r"]),
+        body: v.intl.string(v.t.jDMxz2)
       }) : 429 === e.status ? s.A.show({
-        title: r ? A.intl.string(A.t.kwyWNX) : A.intl.string(A.t["PeIE/r"]),
-        body: A.intl.string(A.t.Whhv4w)
+        title: r ? v.intl.string(v.t.kwyWNX) : v.intl.string(v.t["PeIE/r"]),
+        body: v.intl.string(v.t.Whhv4w)
       }) : s.A.show({
-        title: A.intl.string(A.t.j2d6Km),
-        body: A.intl.string(A.t.fEptJP)
+        title: v.intl.string(v.t.j2d6Km),
+        body: v.intl.string(v.t.fEptJP)
       }), e
     }
   },
   async unarchiveThreadIfNecessary(e) {
     var t;
     let n = f.A.getChannel(e),
-      r = p.A.can(y.xBc.MANAGE_THREADS, n);
+      r = p.A.can(b.xBc.MANAGE_THREADS, n);
     null != n && n.isArchivedThread() && (r || (null == (t = n.threadMetadata) ? true : t.locked) !== true) && await this.unarchiveThread(n, false)
   },
-  setInvitable: (e, t) => v(e, {
+  setInvitable: (e, t) => A(e, {
     invitable: t
   }),
   async joinThread(e, t) {
-    e.isForumPost() && S(e, true);
+    e.isForumPost() && I(e, true);
     try {
       return await i.Bo.post({
-        url: y.Rsh.THREAD_MEMBER(e.id),
+        url: b.Rsh.THREAD_MEMBER(e.id),
         query: {
           location: t
         },
@@ -115,23 +115,23 @@ let I = {
       })
     } catch (t) {
       var n;
-      if ((null == (n = t.body) ? true : n.code) === y.t02.TOO_MANY_THREAD_MEMBERS) {
+      if ((null == (n = t.body) ? true : n.code) === b.t02.TOO_MANY_THREAD_MEMBERS) {
         let t = e.isForumPost();
         s.A.show({
-          title: t ? A.intl.string(A.t.EMYJFi) : A.intl.string(A.t.gtdVcs),
-          body: t ? A.intl.string(A.t.QYyad3) : A.intl.string(A.t.abMwgm)
+          title: t ? v.intl.string(v.t.EMYJFi) : v.intl.string(v.t.gtdVcs),
+          body: t ? v.intl.string(v.t.QYyad3) : v.intl.string(v.t.abMwgm)
         })
       } else s.A.show({
-        title: A.intl.string(A.t.j2d6Km),
-        body: A.intl.string(A.t.fEptJP)
+        title: v.intl.string(v.t.j2d6Km),
+        body: v.intl.string(v.t.fEptJP)
       });
-      e.isForumPost() && S(e, false)
+      e.isForumPost() && I(e, false)
     }
   },
   async addMember(e, t, n) {
     try {
       return await i.Bo.post({
-        url: y.Rsh.THREAD_MEMBER(e.id, t),
+        url: b.Rsh.THREAD_MEMBER(e.id, t),
         query: {
           location: n
         },
@@ -139,34 +139,34 @@ let I = {
       })
     } catch (t) {
       var r;
-      if ((null == (r = t.body) ? true : r.code) === y.t02.TOO_MANY_THREAD_MEMBERS) {
+      if ((null == (r = t.body) ? true : r.code) === b.t02.TOO_MANY_THREAD_MEMBERS) {
         let t = e.isForumPost();
         s.A.show({
-          title: t ? A.intl.string(A.t["0yAqqN"]) : A.intl.string(A.t.YErysD),
-          body: t ? A.intl.string(A.t.QYyad3) : A.intl.string(A.t.abMwgm)
+          title: t ? v.intl.string(v.t["0yAqqN"]) : v.intl.string(v.t.YErysD),
+          body: t ? v.intl.string(v.t.QYyad3) : v.intl.string(v.t.abMwgm)
         })
       } else s.A.show({
-        title: A.intl.string(A.t.j2d6Km),
-        body: A.intl.string(A.t.fEptJP)
+        title: v.intl.string(v.t.j2d6Km),
+        body: v.intl.string(v.t.fEptJP)
       })
     }
   },
-  leaveThread: (e, t) => (e.isForumPost() && S(e, false), i.Bo.del({
-    url: y.Rsh.THREAD_MEMBER(e.id),
+  leaveThread: (e, t) => (e.isForumPost() && I(e, false), i.Bo.del({
+    url: b.Rsh.THREAD_MEMBER(e.id),
     query: {
       location: t
     },
     rejectWithError: false
   })),
   removeMember: (e, t, n) => i.Bo.del({
-    url: y.Rsh.THREAD_MEMBER(e, t),
+    url: b.Rsh.THREAD_MEMBER(e, t),
     query: {
       location: n
     },
     rejectWithError: false
   }),
   setAutoArchiveDuration: (e, t) => i.Bo.patch({
-    url: y.Rsh.CHANNEL(e.id),
+    url: b.Rsh.CHANNEL(e.id),
     body: {
       auto_archive_duration: t
     },
@@ -194,7 +194,7 @@ let I = {
     n && (r.archived = false);
     try {
       await i.Bo.patch({
-        url: y.Rsh.CHANNEL(e.id),
+        url: b.Rsh.CHANNEL(e.id),
         body: r,
         rejectWithError: true
       })
@@ -221,7 +221,7 @@ let I = {
     }), await this.unarchiveThreadIfNecessary(e.id), await this.unarchiveThreadIfNecessary(t.id);
     try {
       await i.Bo.patch({
-        url: y.Rsh.CHANNEL(e.id),
+        url: b.Rsh.CHANNEL(e.id),
         body: {
           flags: e.flags & ~O.lx.PINNED
         },
@@ -239,7 +239,7 @@ let I = {
     }
     try {
       await i.Bo.patch({
-        url: y.Rsh.CHANNEL(t.id),
+        url: b.Rsh.CHANNEL(t.id),
         body: {
           flags: t.flags | O.lx.PINNED
         },
@@ -253,7 +253,7 @@ let I = {
     }
   },
   openThreadCreationForMobile(e, t, n) {
-    (0, l.zV)(y.HAw.THREAD_CREATION_STARTED, {
+    (0, l.zV)(b.HAw.THREAD_CREATION_STARTED, {
       location: n,
       channel_id: e.id,
       guild_id: e.guild_id
@@ -269,7 +269,7 @@ let I = {
   },
   async setNotificationSettings(e, t) {
     return (0, E.hs)(e, t), m.A.hasJoined(e.id) || await this.joinThread(e, "Change Notification Settings"), i.Bo.patch({
-      url: y.Rsh.THREAD_MEMBER_SETTINGS(e.id),
+      url: b.Rsh.THREAD_MEMBER_SETTINGS(e.id),
       body: t,
       rejectWithError: false
     })
@@ -290,7 +290,7 @@ let I = {
       tagFilter: s,
       tagSetting: o
     }), i.Bo.get({
-      url: y.Rsh.THREAD_SEARCH(n),
+      url: b.Rsh.THREAD_SEARCH(n),
       query: {
         archived: true,
         sort_by: "last_message_time",
@@ -329,7 +329,7 @@ let I = {
         threads: i,
         firstMessages: d,
         mostRecentMessages: f,
-        members: (null != c ? c : []).map(e => (0, b.A)(e)),
+        members: (null != c ? c : []).map(e => (0, y.A)(e)),
         owners: i.map(e => e.owner).filter(_.Vq),
         hasMore: u
       })
@@ -354,7 +354,7 @@ let I = {
           most_recent_messages: f
         }
       } = await i.Bo.get({
-        url: y.Rsh.THREAD_SEARCH(t),
+        url: b.Rsh.THREAD_SEARCH(t),
         query: {
           name: n,
           tag: l,
@@ -375,7 +375,7 @@ let I = {
     if (!(!e.isThread() || g.A.isInProgress())) return a.h.dispatch({
       type: "SUMMARIZE_THREAD_START"
     }), i.Bo.post({
-      url: y.Rsh.AI_SUMMARIZE_THREAD(e.id),
+      url: b.Rsh.AI_SUMMARIZE_THREAD(e.id),
       body: {
         ephemeral: null == t || t
       },
@@ -390,8 +390,8 @@ let I = {
         type: "SUMMARIZE_THREAD_FAILURE",
         channelId: e.id
       }), s.A.show({
-        title: A.intl.string(A.t.j2d6Km),
-        body: A.intl.string(A.t.fEptJP)
+        title: v.intl.string(v.t.j2d6Km),
+        body: v.intl.string(v.t.fEptJP)
       })
     })
   }

@@ -16,7 +16,7 @@ function d(e) {
   let {
     profile: t,
     canManageGuild: n
-  } = e, d = t.id, u = (0, l.bG)([c.A], () => c.A.getError("name")), f = i.useCallback(e => {
+  } = e, d = t.id, u = (0, l.bG)([o.A], () => o.A.getError("name")), g = i.useCallback(e => {
     a.A.updateGuild({
       name: e
     }), a.A.updateGuildProfile(d, {
@@ -24,12 +24,12 @@ function d(e) {
     })
   }, [d]);
   return (0, r.jsx)(s.ksK, {
-    label: o.intl.string(o.t.X56QcF),
+    label: c.intl.string(c.t.X56QcF),
     type: "text",
     disabled: !n,
     value: t.name,
     maxLength: 100,
-    onChange: f,
+    onChange: g,
     error: u
   })
 }

@@ -88,13 +88,13 @@ class F extends(o = Chunk311907.Ay.PersistedStore) {
   }
   initialize(e) {
     var t;
-    r = null == (t = null == e ? true : e.shouldShowTopicsBar) || t, this.waitFor(m.A, _.A, g.A, h.A, E.Ay, b.A, y.Ay, O.default), this.syncWith([h.A], V)
+    r = null == (t = null == e ? true : e.shouldShowTopicsBar) || t, this.waitFor(m.A, _.A, g.A, h.A, E.Ay, y.A, b.Ay, O.default), this.syncWith([h.A], V)
   }
   allSummaries() {
     return w
   }
   topSummaries() {
-    return Object.values(w).flat().filter(e => e.people.length > 1 && v.default.extractTimestamp(e.endId) > new Date().getTime() - 5 * A.A.Millis.HOUR).sort((e, t) => v.default.extractTimestamp(t.endId) - v.default.extractTimestamp(e.endId))
+    return Object.values(w).flat().filter(e => e.people.length > 1 && A.default.extractTimestamp(e.endId) > new Date().getTime() - 5 * v.A.Millis.HOUR).sort((e, t) => A.default.extractTimestamp(t.endId) - A.default.extractTimestamp(e.endId))
   }
   summaries(e) {
     var t;
@@ -128,7 +128,7 @@ class F extends(o = Chunk311907.Ay.PersistedStore) {
     if (null != t) {
       let e = null != (r = null == i ? true : i.summaryIdLastRequestedAt) ? r : 0,
         n = Date.now() - e;
-      return t !== (null == i ? true : i.summaryId) || n > I.hf
+      return t !== (null == i ? true : i.summaryId) || n > S.hf
     }
     let s = null != (n = null == i ? true : i.lastReceivedAt) ? n : 0;
     return !(null == i ? true : i.fetching) && 0 === s
@@ -143,7 +143,7 @@ class F extends(o = Chunk311907.Ay.PersistedStore) {
     return j
   }
   shouldFetchChannelAffinities() {
-    return !("fetching" === j.status || null != j.lastResponse && Date.now() - j.lastResponse < 30 * A.A.Millis.SECOND)
+    return !("fetching" === j.status || null != j.lastResponse && Date.now() - j.lastResponse < 30 * v.A.Millis.SECOND)
   }
   defaultChannelIds(e) {
     let {
@@ -154,7 +154,7 @@ class F extends(o = Chunk311907.Ay.PersistedStore) {
     } = e, a = [];
     return t && (a = a.concat(M)), n && (a = a.concat(x.map(e => e.channel_id))), r && (a = a.filter(e => {
       let t = m.A.getChannel(e);
-      return null != t && !y.Ay.isChannelMuted(t.guild_id, e) && E.Ay.hasUnread(e)
+      return null != t && !b.Ay.isChannelMuted(t.guild_id, e) && E.Ay.hasUnread(e)
     })), (a = a.filter(e => {
       let t = m.A.getChannel(e);
       return (0, f.pk)(t, false, false)
@@ -190,7 +190,7 @@ let H = new F(Chunk73153.h, {
       receivedAt: s
     } = e;
     if (null != r && Object.keys(r).length > 0) {
-      let e = (0, S.Ur)(r, i),
+      let e = (0, I.Ur)(r, i),
         t = [...null != (n = w[i]) ? n : []],
         a = t.findIndex(t => t.id === (null == e ? true : e.id));
       a > false ? t[a] = e : t.push(e), w[i] = t
@@ -224,13 +224,13 @@ let H = new F(Chunk73153.h, {
       channelId: n,
       error: r,
       receivedAt: i
-    } = e, a = t.filter(e => Object.keys(e).length > 0).map(e => (0, S.Ur)(e, n));
+    } = e, a = t.filter(e => Object.keys(e).length > 0).map(e => (0, I.Ur)(e, n));
     if (null != s && s.channelId === n && !a.some(e => e.id === (null == s ? true : s.summaryId))) {
       var o;
       let e = (null != (o = w[n]) ? o : []).find(e => e.id === (null == s ? true : s.summaryId));
       null != e && a.push(e)
     }
-    w[n] = (0, l.sortBy)(a, e => v.default.extractTimestamp(e.startId)).reverse();
+    w[n] = (0, l.sortBy)(a, e => A.default.extractTimestamp(e.startId)).reverse();
     let c = R(C({}, P[n]), {
       fetching: false,
       error: true,
@@ -257,7 +257,7 @@ let H = new F(Chunk73153.h, {
     }
   },
   UPDATE_VISIBLE_MESSAGES(e) {
-    let t = b.A.getChannelId();
+    let t = y.A.getChannelId();
     if (null != t)
       if (null != i && i.channelId === t && null != i.summaryId) {
         let e = w[i.channelId];
@@ -330,7 +330,7 @@ let H = new F(Chunk73153.h, {
         channelIds: i
       }
     } = e, a = c().toPairs(t).reduce((e, t) => {
-      let [n, r] = t, i = c().chain(r.map(e => (0, S.Ur)(e, n))).sortBy(e => v.default.extractTimestamp(e.startId)).takeRight(U).reverse().filter(e => Object.keys(e).length > 0).value();
+      let [n, r] = t, i = c().chain(r.map(e => (0, I.Ur)(e, n))).sortBy(e => A.default.extractTimestamp(e.startId)).takeRight(U).reverse().filter(e => Object.keys(e).length > 0).value();
       return e[n] = i, e
     }, {}), s = i.reduce((e, t) => {
       var i;
@@ -353,7 +353,7 @@ let H = new F(Chunk73153.h, {
       channel_id: i,
       summaries: a,
       guild_id: s
-    } = e, o = Date.now(), l = c().chain(a).sortBy(e => v.default.extractTimestamp(e.start_id)).filter(e => Object.keys(e).length > 0).map(e => (0, S.Ur)(e, i)).reverse().value(), u = null != (t = w[i]) ? t : [], d = c().chain(l).concat(u).sortBy(e => v.default.extractTimestamp(e.startId)).takeRight(U).uniqBy("id").reverse().value();
+    } = e, o = Date.now(), l = c().chain(a).sortBy(e => A.default.extractTimestamp(e.start_id)).filter(e => Object.keys(e).length > 0).map(e => (0, I.Ur)(e, i)).reverse().value(), u = null != (t = w[i]) ? t : [], d = c().chain(l).concat(u).sortBy(e => A.default.extractTimestamp(e.startId)).takeRight(U).uniqBy("id").reverse().value();
     w[i] = d, P[i] = R(C({}, P[i]), {
       error: true,
       fetching: null != (n = null == (r = P[i]) ? true : r.fetching) && n,

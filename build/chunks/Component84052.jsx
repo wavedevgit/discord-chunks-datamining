@@ -23,9 +23,9 @@ function d(e) {
   } = e;
   return (0, r.jsx)("div", {
     className: i()(c.Xs, o.U),
-    children: (0, r.jsx)(s.A, {
+    children: (0, r.jsx)(a.A, {
       className: c.gE,
-      color: t ? a.A.colors.CREATOR_REVENUE_LOCKED_CHANNEL_ICON.css : true
+      color: t ? s.A.colors.CREATOR_REVENUE_LOCKED_CHANNEL_ICON.css : true
     })
   })
 }

@@ -20,11 +20,11 @@ var Chunk397927 = require("./397927.js"),
   Chunk546983 = require("./546983.js"),
   Chunk613057 = require("./613057.js"),
   Chunk652215 = require("./652215.js");
-let _ = new Chunk626584.A("RPCCommandsOverlay"),
+let b = new Chunk626584.A("RPCCommandsOverlay"),
   E = {
     [Chunk652215.e$_.SET_OVERLAY_LOCKED]: {
       scope: Chunk613057.hj,
-      validation: e => (0, A.A)(e).required().keys({
+      validation: e => (0, f.A)(e).required().keys({
         locked: e.boolean().required(),
         pid: e.number().min(0).required()
       }),
@@ -38,19 +38,19 @@ let _ = new Chunk626584.A("RPCCommandsOverlay"),
             application: r
           }
         } = e;
-        if (_.verbose("RPCCommands.SET_OVERLAY_LOCKED", {
+        if (b.verbose("RPCCommands.SET_OVERLAY_LOCKED", {
             locked: t,
             pid: n
-          }), null == r.id) throw new f.A({
-          errorCode: b.Lw6.INVALID_COMMAND
+          }), null == r.id) throw new h.A({
+          errorCode: _.Lw6.INVALID_COMMAND
         }, "No application.");
         o.A.setInputLocked(t, n)
       }
     },
     [Chunk652215.e$_.OPEN_OVERLAY_ACTIVITY_INVITE]: {
       scope: Chunk613057.hj,
-      validation: e => (0, A.A)(e).required().keys({
-        type: e.number().required().valid([b.xL.JOIN]),
+      validation: e => (0, f.A)(e).required().keys({
+        type: e.number().required().valid([_.xL.JOIN]),
         pid: e.number().min(0).required()
       }),
       handler(e) {
@@ -61,27 +61,27 @@ let _ = new Chunk626584.A("RPCCommandsOverlay"),
             pid: r
           }
         } = e, i = t.application.id;
-        if (null == i) throw new f.A({
-          errorCode: b.Lw6.INVALID_COMMAND
+        if (null == i) throw new h.A({
+          errorCode: _.Lw6.INVALID_COMMAND
         }, "No application.");
         let l = d.A.getApplicationActivity(i);
-        if (null == l || null == l.secrets || !(0, h.px)(n, l.party, l.secrets)) throw new f.A({
-          errorCode: b.Lw6.NO_ELIGIBLE_ACTIVITY
+        if (null == l || null == l.secrets || !(0, g.px)(n, l.party, l.secrets)) throw new h.A({
+          errorCode: _.Lw6.NO_ELIGIBLE_ACTIVITY
         }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
         let {
           lock: s,
           context: o
-        } = (0, g.d5)(r), u = (0, c.A)(l, p.A);
+        } = (0, m.d5)(r), u = (0, c.A)(l, p.A);
         return (0, a.qf)(l, u, o).then(() => {
-          if (s(), u) throw new f.A({
-            errorCode: b.Lw6.NO_ELIGIBLE_ACTIVITY
+          if (s(), u) throw new h.A({
+            errorCode: _.Lw6.NO_ELIGIBLE_ACTIVITY
           }, "No eligible activity for application. Ensure user does have have privacy enabled.")
         })
       }
     },
     [Chunk652215.e$_.OPEN_OVERLAY_GUILD_INVITE]: {
       scope: Chunk613057.hj,
-      validation: e => (0, A.A)(e).required().keys({
+      validation: e => (0, f.A)(e).required().keys({
         code: e.string().required(),
         pid: e.number().min(0).required()
       }),
@@ -93,21 +93,21 @@ let _ = new Chunk626584.A("RPCCommandsOverlay"),
           },
           socket: r
         } = e;
-        if (null == r.application.id) throw new f.A({
-          errorCode: b.Lw6.INVALID_COMMAND
+        if (null == r.application.id) throw new h.A({
+          errorCode: _.Lw6.INVALID_COMMAND
         }, "No application.");
         return s.Ay.resolveInvite(t, "Game SDK").then(e => {
           let {
             invite: t,
             code: r
           } = e;
-          if (null == t) throw new f.A({
-            errorCode: b.Lw6.INVALID_INVITE
+          if (null == t) throw new h.A({
+            errorCode: _.Lw6.INVALID_INVITE
           }, "Invalid invite id: ".concat(r));
           let {
             context: i,
             lock: a
-          } = (0, g.d5)(n);
+          } = (0, m.d5)(n);
           return new Promise(e => {
             l.h.dispatch({
               type: "INVITE_MODAL_OPEN",
@@ -122,7 +122,7 @@ let _ = new Chunk626584.A("RPCCommandsOverlay"),
     },
     [Chunk652215.e$_.OPEN_OVERLAY_VOICE_SETTINGS]: {
       scope: Chunk613057.hj,
-      validation: e => (0, A.A)(e).required().keys({
+      validation: e => (0, f.A)(e).required().keys({
         pid: e.number().min(0).required()
       }),
       handler(e) {
@@ -132,13 +132,13 @@ let _ = new Chunk626584.A("RPCCommandsOverlay"),
           },
           socket: l
         } = e, a = l.application.id;
-        if (null == a) throw new f.A({
-          errorCode: b.Lw6.INVALID_COMMAND
+        if (null == a) throw new h.A({
+          errorCode: _.Lw6.INVALID_COMMAND
         }, "No application.");
         let {
           lock: s,
           context: o
-        } = (0, g.d5)(t);
+        } = (0, m.d5)(t);
         return new Promise(e => {
           (0, i.mMO)(async () => {
             let {
@@ -178,7 +178,7 @@ let _ = new Chunk626584.A("RPCCommandsOverlay"),
               }), i))
             }
           }, {
-            contextKey: o === b.BRT.POPOUT ? i.KX8 : i.SYi,
+            contextKey: o === _.BRT.POPOUT ? i.KX8 : i.SYi,
             onCloseCallback: () => {
               s(), e()
             }

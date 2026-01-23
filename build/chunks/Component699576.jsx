@@ -1,12 +1,12 @@
 /** Chunk was on 94073 **/
-/** chunk id: 699576, original params: e,t,r (module,exports,require) **/
+/** chunk id: 699576, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  l = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk287809 = require("./287809.js"),
   Chunk927578 = require("./927578.js"),
@@ -17,69 +17,69 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk719154 = require("./719154.js");
 
-function p(e) {
+function m(e) {
   let {
     uploadType: t,
-    analyticsSource: r,
-    className: c
-  } = e, p = function(e, t) {
+    analyticsSource: n,
+    className: o
+  } = e, m = function(e, t) {
     if (null == e) return {};
-    var r, a, n, c = {};
+    var n, r, a, o = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (n = 0, r = Reflect.ownKeys(e); n < r.length; n++) a = r[n], !(t.indexOf(a) >= 0) && Object.prototype.propertyIsEnumerable.call(e, a) && (c[a] = e[a]);
-      return c
+      for (a = 0, n = Reflect.ownKeys(e); a < n.length; a++) r = n[a], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
+      return o
     }
-    if (c = function(e, t) {
+    if (o = function(e, t) {
         if (null == e) return {};
-        var r, a, n = {},
-          c = Object.getOwnPropertyNames(e);
-        for (a = 0; a < c.length; a++) r = c[a], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (n[r] = e[r]);
-        return n
+        var n, r, a = {},
+          o = Object.getOwnPropertyNames(e);
+        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
+        return a
       }(e, t), Object.getOwnPropertySymbols)
-      for (n = 0, r = Object.getOwnPropertySymbols(e); n < r.length; n++) a = r[n], !(t.indexOf(a) >= 0) && Object.prototype.propertyIsEnumerable.call(e, a) && (c[a] = e[a]);
-    return c
-  }(e, ["uploadType", "analyticsSource", "className"]), m = n.useCallback(() => {
-    (0, b.G)({
+      for (a = 0, n = Object.getOwnPropertySymbols(e); a < n.length; a++) r = n[a], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
+    return o
+  }(e, ["uploadType", "analyticsSource", "className"]), p = a.useCallback(() => {
+    (0, _.G)({
       uploadType: t,
-      analyticsSource: r
+      analyticsSource: n
     })
-  }, [t, r]), x = (0, s.bG)([o.default], () => o.default.getCurrentUser()), y = i.Ay.canUseAnimatedAvatar(x), N = n.useMemo(() => {
+  }, [t, n]), y = (0, l.bG)([s.default], () => s.default.getCurrentUser()), g = c.Ay.canUseAnimatedAvatar(y), x = a.useMemo(() => {
     switch (t) {
       case f.HL.AVATAR:
         return A.intl.format(A.t["pvw/HH"], {
-          onClick: m
+          onClick: p
         });
       case f.HL.BANNER:
         return A.intl.format(A.t.aCrz1e, {
-          onClick: m
+          onClick: p
         });
       default:
         return ""
     }
-  }, [t, m]);
-  return t !== f.HL.AVATAR && t !== f.HL.BANNER || t === f.HL.AVATAR && y ? null : (0, a.jsx)(u.d, function(e) {
+  }, [t, p]);
+  return t !== f.HL.AVATAR && t !== f.HL.BANNER || t === f.HL.AVATAR && g ? null : (0, r.jsx)(u.d, function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var r = null != arguments[t] ? arguments[t] : {},
-        a = Object.keys(r);
-      "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(r, e).enumerable
-      }))), a.forEach(function(t) {
-        var a;
-        a = r[t], t in e ? Object.defineProperty(e, t, {
-          value: a,
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = a
+        }) : e[t] = r
       })
     }
     return e
   }({
-    text: N,
+    text: x,
     button: A.intl.string(A.t.BmJkbd),
     buttonAnalyticsObject: {
       section: d.JJy.USER_PROFILE
     },
-    className: l()(_.k, c)
-  }, p))
+    className: i()(b.k, o)
+  }, m))
 }

@@ -2,7 +2,7 @@
 /** chunk id: 931260, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./896048.js");
 var Chunk562465 = require("./562465.js"),
   Chunk439372 = require("./439372.js"),
@@ -58,22 +58,22 @@ function m() {
 }
 
 function g() {
-  __OVERLAY__ || (clearTimeout(_), _ = setTimeout(() => b({}), h))
+  __OVERLAY__ || (clearTimeout(_), _ = setTimeout(() => y({}), h))
 }
 async function E(e, t) {
   null == e || e === l.ME ? await r.Bo.patch({
     url: l.Rsh.USER_GUILD_SETTINGS(l.ME),
     body: t,
     rejectWithError: false
-  }) : await b(null != t ? {
+  }) : await y(null != t ? {
     [null != e ? e : l.ME]: t
   } : {})
 }
-async function b(e) {
+async function y(e) {
   clearTimeout(_);
   let t = 0 !== Object.keys(e).length,
     n = a.A.getCollapsedCategories(),
-    i = y();
+    i = b();
   for (let r in i) {
     let i = s.A.getChannel(r);
     null != i && null != i.guild_id && (i.guild_id in e || (e[i.guild_id] = {}), null == e[i.guild_id].channel_overrides && (e[i.guild_id].channel_overrides = {}), e[i.guild_id].channel_overrides[i.id] = f(u({}, e[i.guild_id].channel_overrides[i.id]), {
@@ -89,7 +89,7 @@ async function b(e) {
   })).body) : []
 }
 
-function y() {
+function b() {
   let e = {},
     t = a.A.getCollapsedCategories();
   for (let n in t) t[n] !== p[n] && (e[n] = true);
@@ -100,7 +100,7 @@ function y() {
 function O() {
   p = u({}, a.A.getCollapsedCategories())
 }
-class A extends Chunk439372.A {
+class v extends Chunk439372.A {
   constructor(...e) {
     super(...e), c(this, "actions", {
       CATEGORY_COLLAPSE: g,
@@ -109,7 +109,7 @@ class A extends Chunk439372.A {
       CATEGORY_EXPAND_ALL: g,
       POST_CONNECTION_OPEN: m,
       USER_GUILD_SETTINGS_FULL_UPDATE: O
-    }), c(this, "saveUserGuildSettings", E), c(this, "saveUserGuildSettingsBulk", b)
+    }), c(this, "saveUserGuildSettings", E), c(this, "saveUserGuildSettingsBulk", y)
   }
 }
-let v = new A
+let A = new v

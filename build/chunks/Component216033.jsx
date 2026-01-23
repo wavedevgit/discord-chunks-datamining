@@ -1,7 +1,7 @@
 /** Chunk was on 58652 **/
 /** chunk id: 216033, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => c
+  A: () => d
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -10,18 +10,18 @@ var Chunk627968 = require("./627968.js"),
   Chunk861662 = require("./861662.jsx"),
   Chunk232409 = require("./232409.js");
 
-function c(e) {
+function d(e) {
   let {
     element: {
       data: {
         header: t,
         body: n,
-        is_localized: c
+        is_localized: d
       }
     }
-  } = e, d = r.useMemo(() => {
+  } = e, c = r.useMemo(() => {
     var e, t;
-    return i.A.reactParserFor((e = function(e) {
+    return a.A.reactParserFor((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           l = Object.keys(n);
@@ -38,7 +38,7 @@ function c(e) {
         })
       }
       return e
-    }({}, i.A.defaultRules), t = t = {
+    }({}, a.A.defaultRules), t = t = {
       link: s.B
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
@@ -51,16 +51,16 @@ function c(e) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
   }, []);
-  return c && (null != t || null != n) ? (0, l.jsxs)("div", {
-    children: [null != t && (0, l.jsx)(a.Heading, {
+  return d && (null != t || null != n) ? (0, l.jsxs)("div", {
+    children: [null != t && (0, l.jsx)(i.Heading, {
       variant: "heading-sm/semibold",
       color: "text-default",
       className: o.w,
       children: t
-    }), null != n && (0, l.jsx)(a.Text, {
+    }), null != n && (0, l.jsx)(i.Text, {
       variant: "text-sm/normal",
       className: o.r,
-      children: d(n)
+      children: c(n)
     })]
   }) : null
 }

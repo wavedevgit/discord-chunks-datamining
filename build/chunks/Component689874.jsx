@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 689874, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk806931 = require("./806931.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk639291 = require("./639291.js");
-let g = e => {
+let m = e => {
   let {
     channelId: t
   } = e;
@@ -25,21 +25,21 @@ let g = e => {
     if (null == t) returnfalse;
     let n = u.A.getCurrentUserActiveStream(),
       r = null == (e = c.Ay.getVisibleGame()) ? true : e.windowHandle;
-    return !!(null != n && (0, f.TD)() || null != r && (0, f.Ao)()) || o.A.getParticipants(t).some(e => e.type === p.lp.USER && d.A.isClipsEnabledForUser(e.user.id))
-  }) ? (0, r.jsx)(a.m, {
-    text: h.intl.string(h.t.DJXW3G),
+    return !!(null != n && (0, p.TD)() || null != r && (0, p.Ao)()) || o.A.getParticipants(t).some(e => e.type === h.lp.USER && d.A.isClipsEnabledForUser(e.user.id))
+  }) ? (0, r.jsx)(s.m, {
+    text: f.intl.string(f.t.DJXW3G),
     children: (0, r.jsxs)("div", {
-      className: b.g0,
-      children: [(0, r.jsx)(s.fkz, {
-        icon: s.xgA,
-        shape: s.EGs.ROUND_LEFT,
+      className: g.g0,
+      children: [(0, r.jsx)(a.fkz, {
+        icon: a.xgA,
+        shape: a.EGs.ROUND_LEFT,
         color: i.A.unsafe_rawColors.PRIMARY_500.css,
-        className: b.Z7
-      }), (0, r.jsx)(s.LpS, {
-        text: h.intl.string(h.t.pCMkDb),
-        shape: s.EGs.ROUND_RIGHT,
+        className: g.Z7
+      }), (0, r.jsx)(a.LpS, {
+        text: f.intl.string(f.t.pCMkDb),
+        shape: a.EGs.ROUND_RIGHT,
         color: i.A.unsafe_rawColors.PRIMARY_500.css,
-        className: b.lm
+        className: g.lm
       })]
     })
   }) : null

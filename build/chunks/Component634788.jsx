@@ -83,10 +83,10 @@ function f(e) {
     key: m,
     indexOffset: g = 0,
     headerClassName: E,
-    headerTrailingContent: b,
-    footer: y
+    headerTrailingContent: y,
+    footer: b
   } = e;
-  if (null == y && (null == a || 0 === a.length)) return null;
+  if (null == b && (null == a || 0 === a.length)) return null;
   let O = null == a ? true : a.map((e, t) => {
     let r = t + g,
       a = _(e, r);
@@ -106,7 +106,7 @@ function f(e) {
       query: t,
       getQuery: h,
       headerClassName: E,
-      headerTrailingContent: b
-    }) : null, O, y]
+      headerTrailingContent: y
+    }) : null, O, b]
   }, m)
 }

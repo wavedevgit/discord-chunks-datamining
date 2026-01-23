@@ -2,9 +2,9 @@
 /** chunk id: 30108, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => v,
+  Ay: () => A,
   Zl: () => O,
-  bF: () => y
+  bF: () => b
 }), require("./896048.js");
 var Chunk311907 = require("./311907.js"),
   Chunk439372 = require("./439372.js"),
@@ -31,7 +31,7 @@ let m = e => e / 400,
   g = false,
   E = (0, Chunk400492.Qh)("stage_waiting", "stage_waiting", m(Chunk430452.A.getOutputVolume()));
 
-function b() {
+function y() {
   let e = l.A.getVoiceChannelId();
   if (null == e) {
     E.stop(), g = false;
@@ -58,7 +58,7 @@ function b() {
   n || g ? n && (E.pause(), g = false) : (E.volume = m(o.A.getOutputVolume()), E.loop(), g = true)
 }
 
-function y(e) {
+function b(e) {
   let t = (0, r.bG)([l.A], () => l.A.getVoiceChannelId() === e),
     n = null != (0, d.E5)(e, f.ip.SPEAKER).find(e => !e.voiceState.isVoiceMuted()),
     i = (0, r.bG)([p.A], () => p.A.getStageInstanceByChannel(e));
@@ -71,14 +71,14 @@ function O(e) {
     r = p.A.getStageInstanceByChannel(e);
   return t && null == r && !n
 }
-class A extends Chunk439372.A {
+class v extends Chunk439372.A {
   handleVoiceChannelSelect(e) {
     let {
       channelId: t
     } = e;
     if (null != t) {
       let e = s.A.getChannel(t);
-      (null == e ? true : e.isGuildStageVoice()) ? b(): (E.stop(), g = false)
+      (null == e ? true : e.isGuildStageVoice()) ? y(): (E.stop(), g = false)
     } else E.stop(), g = false
   }
   handleLogout() {
@@ -88,16 +88,16 @@ class A extends Chunk439372.A {
     let {
       play: t
     } = e;
-    t ? b() : (E.pause(), g = false)
+    t ? y() : (E.pause(), g = false)
   }
   handleMute(e) {
     let {
       muted: t
     } = e;
-    t ? (E.pause(), g = false) : b()
+    t ? (E.pause(), g = false) : y()
   }
   handleVoiceStateUpdates() {
-    b()
+    y()
   }
   handleSetOutputVolume(e) {
     let {
@@ -106,7 +106,7 @@ class A extends Chunk439372.A {
     E.volume = m(t)
   }
   handleToggleSelfDeaf() {
-    b()
+    y()
   }
   constructor(...e) {
     super(...e), h(this, "actions", {
@@ -120,4 +120,4 @@ class A extends Chunk439372.A {
     })
   }
 }
-let v = new A
+let A = new v

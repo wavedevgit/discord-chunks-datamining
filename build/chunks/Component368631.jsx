@@ -276,7 +276,7 @@ let eU = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eD.intl.string(eD.t.URyqtP)],
         label: eD.intl.string(eD.t.URyqtP),
         ariaLabel: eD.intl.string(eD.t.URyqtP),
-        element: eS.A,
+        element: eI.A,
         predicate: () => eX
       },
       [eN.H.GAMES_MY_GAMES]: {
@@ -309,12 +309,12 @@ let eU = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
         newIndicator: (0, r.jsx)(eF, {}),
         newIndicatorDismissibleContentTypes: [...eV()],
         notice: {
-          stores: [V.A, S.A],
+          stores: [V.A, I.A],
           element: j.A
         },
         onSettingsClose: () => {
           c.h.wait(() => {
-            (0, v.sy)(), (0, d.F7)(), f.A.clearSubsection(ew.nc_.PROFILE_CUSTOMIZATION)
+            (0, A.sy)(), (0, d.F7)(), f.A.clearSubsection(ew.nc_.PROFILE_CUSTOMIZATION)
           })
         },
         url: ew.BVt.SETTINGS("profile-customization")
@@ -582,7 +582,7 @@ let eU = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eD.intl.string(eD.t["Ig/XFa"]), eD.intl.string(eD.t["3fe7U5"]), eD.intl.string(eD.t["f6kk+r"])],
         label: eD.intl.string(eD.t["Ig/XFa"]),
         parent: eN.H.CONNECTIONS,
-        element: ey.A
+        element: eb.A
       },
       [eN.H.CONNECTIONS_CONNECTED_ACCOUNTS]: {
         section: ew.nc_.CONNECTIONS,
@@ -596,7 +596,7 @@ let eU = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
         label: eD.intl.string(eD.t.z2jK6X),
         ariaLabel: eD.intl.string(eD.t.z2jK6X),
         icon: eq ? (0, r.jsx)(E.A, {}) : true,
-        element: b.A,
+        element: y.A,
         predicate: () => !eX,
         url: ew.BVt.SETTINGS("clips")
       },
@@ -619,7 +619,7 @@ let eU = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ew.nc_.CONTENT_AND_SOCIAL,
         parent: eN.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
         label: eD.intl.string(eD.t["3wRort"]),
-        element: eI.Ay,
+        element: eS.Ay,
         predicate: () => e7 || e8
       },
       [eN.H.BLOCKED_USERS]: {
@@ -627,7 +627,7 @@ let eU = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
         parent: eN.H.RESTRICTED_USERS,
         label: eD.intl.string(eD.t.PFOUKW),
         searchableTitles: [eD.intl.string(eD.t.PFOUKW)],
-        element: eI.LP,
+        element: eS.LP,
         predicate: () => e8
       },
       [eN.H.IGNORED_USERS]: {
@@ -635,7 +635,7 @@ let eU = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
         parent: eN.H.RESTRICTED_USERS,
         searchableTitles: [eD.intl.string(eD.t["93ZDWE"])],
         label: eD.intl.string(eD.t["93ZDWE"]),
-        element: eI.nK,
+        element: eS.nK,
         predicate: () => e7
       },
       [eN.H.PREMIUM]: {
@@ -798,7 +798,7 @@ let eU = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ew.nc_.ACCESSIBILITY,
         searchableTitles: [eD.intl.string(eD.t["+Isihb"])],
         parent: eN.H.ACCESSIBILITY,
-        predicate: () => (0, y.t)("SettingsRendererConfig")
+        predicate: () => (0, b.t)("SettingsRendererConfig")
       },
       [eN.H.ACCESSIBILITY_ROLE_STYLE]: {
         section: ew.nc_.ACCESSIBILITY,
@@ -1173,7 +1173,7 @@ let eU = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eD.intl.string(eD.t["/VQax8"])],
         label: eD.intl.string(eD.t["/VQax8"]),
         ariaLabel: eD.intl.string(eD.t["/VQax8"]),
-        element: eb.A,
+        element: ey.A,
         url: ew.BVt.SETTINGS("text")
       },
       [eN.H.MESSAGE_SEARCH]: {
@@ -1286,7 +1286,7 @@ let eU = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ew.nc_.TEXT,
         searchableTitles: [eD.intl.string(eD.t.OAOUoQ)],
         parent: eN.H.CHAT,
-        predicate: () => I.t.getConfig({
+        predicate: () => S.t.getConfig({
           location: "SettingsRendererConfig"
         }).showMessagePreviews
       },
@@ -1432,7 +1432,7 @@ let eU = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ew.nc_.NOTIFICATIONS,
         searchableTitles: [eD.intl.string(eL.default["3TO4/r"])],
         parent: eN.H.NOTIFICATIONS,
-        predicate: () => (0, A.Vn)({
+        predicate: () => (0, v.Vn)({
           location: "SettingsRendererConfig"
         })
       },
@@ -1591,7 +1591,7 @@ let eU = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eD.intl.string(eD.t.AVDyEj)],
         label: eD.intl.string(eD.t.AVDyEj),
         element: ec.Ay,
-        predicate: () => !eX && (0, ev.Pi)()
+        predicate: () => !eX && (0, eA.Pi)()
       },
       [eN.H.OVERLAY]: {
         section: ew.nc_.OVERLAY,
@@ -1626,7 +1626,7 @@ let eU = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ew.nc_.EXPERIMENTS,
         searchableTitles: ["Experiments"],
         label: "Experiments",
-        element: eA.A,
+        element: ev.A,
         predicate: () => k.A.isDeveloper,
         url: ew.BVt.SETTINGS("experiments")
       },

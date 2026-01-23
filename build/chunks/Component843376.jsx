@@ -46,20 +46,20 @@ function d(e, t) {
 
 function h(e, t) {
   let h = h => {
-    let f = async () => {
+    let p = async () => {
       await (0, o.TP)(e, h)
-    }, p = async t => await (0, o.G_)(e, h, t), g = n => {
+    }, g = async t => await (0, o.G_)(e, h, t), m = n => {
       let r = null == n ? true : n.token;
       e === l.tY.MESSAGE ? (0, a.bM)(r, t) : e === l.tY.USER ? (0, a.nQ)(r, t) : e === l.tY.GUILD ? (0, a.V3)(r, t) : e === l.tY.MEDIA_TAKEDOWN && (0, a._Y)(r, t)
     };
-    f(), (0, s.mMO)(async () => {
+    p(), (0, s.mMO)(async () => {
       let {
         default: e
       } = await n.e("19840").then(n.bind(n, 79779));
       return t => (0, r.jsx)(e, d(u({}, t), {
-        onFormSubmit: p,
-        onResend: f,
-        onSuccess: g,
+        onFormSubmit: g,
+        onResend: p,
+        onSuccess: m,
         headerText: c.intl.string(c.t.H3Q7U8),
         confirmButtonText: c.intl.string(c.t["13ofGu"]),
         impression: {

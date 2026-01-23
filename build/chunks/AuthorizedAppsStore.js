@@ -3,7 +3,7 @@
 "use strict";
 require.r(exports), require.d(exports, {
   FetchState: () => u,
-  default: () => v
+  default: () => A
 }), require("./896048.js"), require("./321073.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -42,7 +42,7 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   _ = "FETCHED", h.clear(), d = new Map(e.tokens.map(e => [e.application.id, e])), p = (f = e.tokens).filter(e => {
     let {
       application: t
@@ -51,7 +51,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     id: t,
     application: n,
@@ -94,7 +94,7 @@ function O(e) {
     return t !== r.id
   })
 }
-class A extends(r = Chunk311907.Ay.Store) {
+class v extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(s.A, o.A, l.A)
   }
@@ -116,12 +116,12 @@ class A extends(r = Chunk311907.Ay.Store) {
     return "FETCHED" === _ ? _ : null != (t = h.get(e)) ? t : _
   }
 }
-c(A, "displayName", "AuthorizedAppsStore");
-let v = new A(Chunk73153.h, {
+c(v, "displayName", "AuthorizedAppsStore");
+let A = new v(Chunk73153.h, {
   USER_AUTHORIZED_APPS_REQUEST: m,
   USER_AUTHORIZED_APPS_REQUEST_BY_ID: g,
-  USER_AUTHORIZED_APPS_UPDATE: b,
+  USER_AUTHORIZED_APPS_UPDATE: y,
   USER_AUTHORIZED_APPS_UPDATE_BY_ID: E,
-  OAUTH2_TOKEN_CREATE: y,
+  OAUTH2_TOKEN_CREATE: b,
   OAUTH2_TOKEN_DELETE: O
 })

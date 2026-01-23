@@ -383,8 +383,8 @@ let _ = [{
           readOnly: m,
           helperText: g,
           successMessage: E,
-          showCharacterCount: b
-        } = e, y = {
+          showCharacterCount: y
+        } = e, b = {
           label: t,
           hideLabel: n,
           description: i,
@@ -395,34 +395,34 @@ let _ = [{
           placeholder: p,
           readOnly: m,
           helperText: g,
-          showCharacterCount: b,
+          showCharacterCount: y,
           successMessage: E
         };
         return (0, r.jsxs)(s.BJc, {
           gap: 24,
           children: [(0, r.jsxs)(a.nVY, {
             label: "Text Input",
-            children: [(0, r.jsx)(s.ksK, c({}, y)), (0, r.jsx)(s.ksK, d(c({}, y), {
+            children: [(0, r.jsx)(s.ksK, c({}, b)), (0, r.jsx)(s.ksK, d(c({}, b), {
               clearable: true
-            })), (0, r.jsx)(s.ksK, d(c({}, y), {
+            })), (0, r.jsx)(s.ksK, d(c({}, b), {
               leading: {
                 icon: s.XxR,
                 onClick: o.tE,
                 "aria-label": "At"
               }
-            })), (0, r.jsx)(s.ksK, d(c({}, y), {
+            })), (0, r.jsx)(s.ksK, d(c({}, b), {
               leading: s.XxR
-            })), (0, r.jsx)(s.ksK, d(c({}, y), {
+            })), (0, r.jsx)(s.ksK, d(c({}, b), {
               leading: "https://discord.gg/"
-            })), (0, r.jsx)(s.ksK, d(c({}, y), {
+            })), (0, r.jsx)(s.ksK, d(c({}, b), {
               trailing: {
                 icon: s.XxR,
                 onClick: o.tE,
                 "aria-label": "At"
               }
-            })), (0, r.jsx)(s.ksK, d(c({}, y), {
+            })), (0, r.jsx)(s.ksK, d(c({}, b), {
               trailing: s.XxR
-            })), (0, r.jsx)(s.ksK, d(c({}, y), {
+            })), (0, r.jsx)(s.ksK, d(c({}, b), {
               leading: {
                 type: "tags",
                 label: "Tags",
@@ -445,7 +445,7 @@ let _ = [{
             })]
           }), (0, r.jsx)(a.cGx, {}), (0, r.jsx)(a.nVY, {
             label: "Text Area",
-            children: (0, r.jsx)(s.fs1, c({}, y))
+            children: (0, r.jsx)(s.fs1, c({}, b))
           })]
         })
       },

@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   K7: () => _,
-  Os: () => A,
+  Os: () => v,
   V3: () => O,
-  cC: () => y,
+  cC: () => b,
   d4: () => h,
-  tn: () => b
+  tn: () => y
 }), require("./927092.js"), require("./212978.js"), require("./201528.js"), require("./393431.js"), require("./752391.js"), require("./532706.js"), require("./42231.js"), require("./232424.js"), require("./757074.js"), require("./949626.js"), require("./767709.js"), require("./65162.js"), require("./747238.js"), require("./812715.js"), require("./733351.js");
 var r, i, a, Chunk704101 = require("./704101.js"),
   Chunk728458 = require("./728458.js");
@@ -64,20 +64,20 @@ function E(e) {
   return s.encode(e).toString("utf8").replace(/=/g, "").toLowerCase().replace(/(\w{4})/g, "$1 ").trim()
 }
 
-function b() {
+function y() {
   return E(g(m))
 }
 
-function y(e) {
+function b(e) {
   return e.replace(/[\s._-]+/g, "").toUpperCase()
 }
 
 function O(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "Discord";
-  return "otpauth://totp/".concat(encodeURI(n), ":").concat(encodeURI(e), "?secret=").concat(y(t), "&issuer=").concat(encodeURIComponent(n))
+  return "otpauth://totp/".concat(encodeURI(n), ":").concat(encodeURI(e), "?secret=").concat(b(t), "&issuer=").concat(encodeURIComponent(n))
 }
 
-function A(e, t) {
+function v(e, t) {
   o.A.captureException(e, d(c({}, t), {
     tags: d(c({}, null == t ? true : t.tags), {
       app_context: "webauthn"

@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 704761, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,15 +15,15 @@ var Chunk311907 = require("./311907.js"),
   Chunk526162 = require("./526162.js"),
   Chunk635917 = require("./635917.js");
 
-function p() {
-  let [e, t] = (0, l.yK)([s.default, d.A], () => [d.A.getCurrentDesktopIcon(), o.Ay.isPremium(s.default.getCurrentUser())]), n = (0, a.fy)().activePanel === a.HP.APP_ICON, p = (0, f.gG)(e), h = p.id !== c.LW.DEFAULT && (t || n), b = (0, r.jsx)(i.pVd, {
+function h() {
+  let [e, t] = (0, l.yK)([a.default, d.A], () => [d.A.getCurrentDesktopIcon(), o.Ay.isPremium(a.default.getCurrentUser())]), n = (0, s.fy)().activePanel === s.HP.APP_ICON, h = (0, p.gG)(e), f = h.id !== c.LW.DEFAULT && (t || n), g = (0, r.jsx)(i.pVd, {
     size: "custom",
     color: "currentColor",
     width: 24,
     height: 24
   });
-  return null != p && h ? (0, r.jsx)(u.A, {
-    id: p.id,
+  return null != h && f ? (0, r.jsx)(u.A, {
+    id: h.id,
     width: 48
-  }) : b
+  }) : g
 }

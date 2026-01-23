@@ -1,7 +1,7 @@
 /** Chunk was on 13530 **/
 /** chunk id: 94836, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => u
+  A: () => d
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,11 +12,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk851822 = require("./851822.js"),
   Chunk351886 = require("./351886.js");
 
-function u(e) {
+function d(e) {
   let {
     detectedGame: t,
     trackAction: n
-  } = e, u = r.useRef(null), m = r.useMemo(() => {
+  } = e, d = r.useRef(null), m = r.useMemo(() => {
     let e = t.artwork.map(e => ({
       url: e,
       type: "IMAGE"
@@ -27,10 +27,10 @@ function u(e) {
     })), ...e]
   }, [t.artwork, t.screenshots]), f = m.length > 2;
 
-  function x(e) {
-    if (null == u.current) return;
-    let t = u.current.getScrollerState().scrollLeft;
-    u.current.scrollTo({
+  function g(e) {
+    if (null == d.current) return;
+    let t = d.current.getScrollerState().scrollLeft;
+    d.current.scrollTo({
       to: t + 280 * e,
       animate: true
     })
@@ -42,16 +42,16 @@ function u(e) {
       color: "text-strong",
       children: o.intl.string(o.t.bNdK5x)
     }), (0, l.jsxs)("div", {
-      className: f ? d.DA : d.pZ,
+      className: f ? u.DA : u.pZ,
       children: [(0, l.jsx)(i.zCo, {
-        ref: u,
-        className: d.ec,
+        ref: d,
+        className: u.ec,
         orientation: "horizontal",
         children: m.map((e, t) => (0, l.jsx)(i.DUT, {
-          className: d.gw,
+          className: u.gw,
           focusProps: {
             offset: 4,
-            ringClassName: d.jR
+            ringClassName: u.jR
           },
           onClick: () => {
             n(s.Ws.ClickImage), (0, a.R)({
@@ -63,30 +63,30 @@ function u(e) {
           },
           children: (0, l.jsx)("img", {
             src: e.url,
-            className: d.Zm,
+            className: u.Zm,
             alt: o.intl.formatToPlainString(o.t.COYYrn, {
               game: name
             })
           })
         }, t))
       }), f && (0, l.jsxs)("div", {
-        className: d.NA,
+        className: u.NA,
         children: [(0, l.jsx)("div", {
-          className: d.EJ
+          className: u.EJ
         }), (0, l.jsx)(i.DUT, {
-          className: d.G9,
-          onClick: () => x(false),
+          className: u.G9,
+          onClick: () => g(false),
           children: (0, l.jsx)(i.rJJ, {
-            className: d.UE,
+            className: u.UE,
             color: "currentColor"
           })
         }), (0, l.jsx)("div", {
-          className: d.Pj
+          className: u.Pj
         }), (0, l.jsx)(i.DUT, {
-          className: d.G9,
-          onClick: () => x(1),
+          className: u.G9,
+          onClick: () => g(1),
           children: (0, l.jsx)(i.EdP, {
-            className: d.UE,
+            className: u.UE,
             color: "currentColor"
           })
         })]

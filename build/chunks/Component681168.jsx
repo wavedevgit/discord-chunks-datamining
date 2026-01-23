@@ -2,7 +2,7 @@
 /** chunk id: 681168, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -42,7 +42,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,8 +53,8 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -66,12 +66,12 @@ function O(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = A(e, t), Object.getOwnPropertySymbols)
+  if (a = v(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function A(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -79,7 +79,7 @@ function A(e, t) {
   return i
 }
 
-function v(e) {
+function A(e) {
   let {
     className: t,
     clickableClassName: n,
@@ -121,43 +121,43 @@ function v(e) {
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     clickable: t
   } = e, n = O(e, ["clickable"]);
-  return (0, r.jsx)(v, y(E({}, n), {
-    clickable: y(E({}, t), {
+  return (0, r.jsx)(A, b(E({}, n), {
+    clickable: b(E({}, t), {
       ariaDescription: ""
     }),
     clickableClassName: m.v
   }))
 }
 
-function I(e) {
+function S(e) {
   let {
     entry: t,
     channel: n,
     title: i,
     subtitle: m,
     thumbnailUrl: g,
-    titleClickable: b,
-    subtitleClickable: y,
+    titleClickable: y,
+    subtitleClickable: b,
     thumbnailClickable: O,
-    providerIconProps: A,
-    style: I = {}
+    providerIconProps: v,
+    style: S = {}
   } = e, T = (0, f.GV)(), {
     primaryColor: C,
     secondaryColor: N
   } = (0, u.A)(g);
-  return null != g && (I.background = "linear-gradient(45deg, ".concat(C, ", ").concat(N, ")")), (0, r.jsx)(s.NPJ, {
+  return null != g && (S.background = "linear-gradient(45deg, ".concat(C, ", ").concat(N, ")")), (0, r.jsx)(s.NPJ, {
     theme: p.NJ.DARK,
     disableAdaptiveTheme: true,
     children: e => (0, r.jsxs)("figure", {
       "aria-roledescription": _.intl.string(_.t.zFfUhF),
       "aria-labelledby": T,
       className: a()(h.kL, e),
-      style: I,
-      children: [(0, r.jsx)(v, {
+      style: S,
+      children: [(0, r.jsx)(A, {
         className: h.iT,
         clickableClassName: h.vk,
         clickable: O,
@@ -175,8 +175,8 @@ function I(e) {
           className: h.VV
         }), (0, r.jsx)(s.hKd, {
           size: 2
-        }), (0, r.jsx)(S, {
-          clickable: b,
+        }), (0, r.jsx)(I, {
+          clickable: y,
           className: h.sd,
           children: (0, r.jsx)(s.Heading, {
             id: T,
@@ -189,8 +189,8 @@ function I(e) {
         }), null != m ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.hKd, {
             size: 2
-          }), (0, r.jsx)(S, {
-            clickable: y,
+          }), (0, r.jsx)(I, {
+            clickable: b,
             className: h.sd,
             children: (0, r.jsx)(s.Text, {
               variant: "text-sm/normal",
@@ -207,7 +207,7 @@ function I(e) {
         })]
       }), (0, r.jsx)("div", {
         className: h.Y,
-        children: null != A ? (0, r.jsx)(c.A, E({}, A)) : null
+        children: null != v ? (0, r.jsx)(c.A, E({}, v)) : null
       })]
     })
   })

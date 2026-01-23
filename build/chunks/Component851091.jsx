@@ -1,7 +1,7 @@
 /** Chunk was on 6759 **/
 /** chunk id: 851091, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,50 +14,50 @@ var Chunk284009 = require("./284009.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk100135 = require("./100135.js");
 
-function x(e) {
+function m(e) {
   let {
     directoryGuildName: t,
     guildToAdd: n,
     isExistingGuildFlow: i,
-    onClose: x
+    onClose: m
   } = e;
   return s()(null != n, "Missing guild in Hub add guild confirmation"), (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)(a.cwr, {
+    children: [(0, l.jsx)(r.cwr, {
       children: (0, l.jsxs)("div", {
         className: u.Qs,
         children: [(0, l.jsx)(c.A, {
           guild: n,
           size: c.A.Sizes.XLARGE,
           active: true
-        }), (0, l.jsx)(r.Heading, {
+        }), (0, l.jsx)(a.Heading, {
           className: u.DD,
           variant: "heading-xl/semibold",
-          children: o.intl.string(o.t.CueiPY)
-        }), (0, l.jsx)(r.Text, {
+          children: d.intl.string(d.t.CueiPY)
+        }), (0, l.jsx)(a.Text, {
           color: "text-default",
           variant: "text-md/normal",
-          children: i ? o.intl.formatToPlainString(o.t.R7Pqn5, {
+          children: i ? d.intl.formatToPlainString(d.t.R7Pqn5, {
             guildName: t
-          }) : o.intl.formatToPlainString(o.t.eIxPSv, {
+          }) : d.intl.formatToPlainString(d.t.eIxPSv, {
             guildName: t
           })
         })]
       })
-    }), (0, l.jsx)(a.H7u, {
+    }), (0, l.jsx)(r.H7u, {
       actionsFullWidth: true,
       actions: i ? [{
-        text: o.intl.string(o.t["X0WK+6"]),
+        text: d.intl.string(d.t["X0WK+6"]),
         variant: "primary",
-        onClick: x
+        onClick: m
       }] : [{
-        text: o.intl.string(o.t["X/VABv"]),
+        text: d.intl.string(d.t["X/VABv"]),
         variant: "secondary",
-        onClick: x
+        onClick: m
       }, {
-        text: o.intl.string(o.t.DymAQt),
+        text: d.intl.string(d.t.DymAQt),
         variant: "primary",
         onClick: () => {
-          (0, d.uh)(n.id), null == x || x()
+          (0, o.uh)(n.id), null == m || m()
         }
       }]
     })]

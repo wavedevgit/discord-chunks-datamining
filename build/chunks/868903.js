@@ -2,7 +2,7 @@
 /** chunk id: 868903, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CR: () => I,
+  CR: () => S,
   LY: () => C,
   vw: () => R
 });
@@ -26,14 +26,14 @@ var Chunk650682 = require("./650682.js"),
   Chunk533715 = require("./533715.js"),
   Chunk565801 = require("./565801.js"),
   Chunk64700 = require("./64700.js");
-let v = (0, Chunk64700.createContext)(null),
-  S = (0, Chunk64700.createContext)(null),
-  I = (0, Chunk64700.forwardRef)(function(e, t) {
-    return [e, t] = (0, a.JT)(e, t, v), A.createElement(o.DN.Provider, {
+let A = (0, Chunk64700.createContext)(null),
+  I = (0, Chunk64700.createContext)(null),
+  S = (0, Chunk64700.forwardRef)(function(e, t) {
+    return [e, t] = (0, a.JT)(e, t, A), v.createElement(o.DN.Provider, {
       value: null
-    }, A.createElement(m.GQ, {
+    }, v.createElement(m.GQ, {
       content: e.children
-    }, n => A.createElement(T, {
+    }, n => v.createElement(T, {
       props: e,
       forwardedRef: t,
       collection: n
@@ -46,7 +46,7 @@ function T({
   collection: n
 }) {
   var r;
-  let i = (0, A.useRef)(null),
+  let i = (0, v.useRef)(null),
     {
       id: c,
       ...u
@@ -56,41 +56,41 @@ function T({
     filter: p,
     shouldUseVirtualFocus: _,
     ...h
-  } = u, [m, g] = (0, a._E)(!e["aria-label"] && !e["aria-labelledby"]), b = (0, O.p)({
+  } = u, [m, g] = (0, a._E)(!e["aria-label"] && !e["aria-labelledby"]), y = (0, O.p)({
     ...h,
     children: true,
     collection: n
-  }), y = (0, O.Z)(b, p), v = (0, E.$)(u, {
+  }), b = (0, O.Z)(y, p), A = (0, E.$)(u, {
     global: true
-  }), I = Object.fromEntries(Object.entries(v).map(([e, t]) => [e, "id" === e ? t : true])), {
+  }), S = Object.fromEntries(Object.entries(A).map(([e, t]) => [e, "id" === e ? t : true])), {
     gridProps: T,
     labelProps: C,
     descriptionProps: N,
     errorMessageProps: R
   } = (0, f.n)({
     ...h,
-    ...I,
+    ...S,
     label: g
-  }, y, i);
-  return A.createElement("div", {
-    ...v,
+  }, b, i);
+  return v.createElement("div", {
+    ...A,
     id: c,
     ref: t,
     slot: e.slot || true,
     className: null != (r = e.className) ? r : "react-aria-TagGroup",
     style: e.style
-  }, A.createElement(a.Kq, {
+  }, v.createElement(a.Kq, {
     values: [
       [s.I, {
         ...C,
         elementType: "span",
         ref: m
       }],
-      [S, {
+      [I, {
         ...T,
         ref: i
       }],
-      [o.DN, y],
+      [o.DN, b],
       [d.h, {
         slots: {
           description: N,
@@ -101,21 +101,21 @@ function T({
   }, e.children))
 }
 let C = (0, Chunk64700.forwardRef)(function(e, t) {
-  return (0, A.useContext)(o.DN) ? A.createElement(N, {
+  return (0, v.useContext)(o.DN) ? v.createElement(N, {
     props: e,
     forwardedRef: t
-  }) : A.createElement(m.pM, e)
+  }) : v.createElement(m.pM, e)
 });
 
 function N({
   props: e,
   forwardedRef: t
 }) {
-  let n = (0, A.useContext)(o.DN),
+  let n = (0, v.useContext)(o.DN),
     {
       CollectionRoot: r
-    } = (0, A.useContext)(i.zL),
-    [s, l] = (0, a.JT)({}, t, S),
+    } = (0, v.useContext)(i.zL),
+    [s, l] = (0, a.JT)({}, t, I),
     {
       focusProps: c,
       isFocused: d,
@@ -137,20 +137,20 @@ function N({
     g = (0, E.$)(e, {
       global: true
     });
-  return A.createElement("div", {
-    ...(0, b.v)(g, h, s, c),
+  return v.createElement("div", {
+    ...(0, y.v)(g, h, s, c),
     ref: l,
     "data-empty": 0 === n.collection.size || true,
     "data-focused": d || true,
     "data-focus-visible": f || true
-  }, A.createElement(u.D, null, 0 === n.collection.size && e.renderEmptyState ? e.renderEmptyState(_) : A.createElement(r, {
+  }, v.createElement(u.D, null, 0 === n.collection.size && e.renderEmptyState ? e.renderEmptyState(_) : v.createElement(r, {
     collection: n.collection,
     persistedKeys: m
   })))
 }
 let R = (0, Chunk59845.KU)(Chunk178375._B, (e, t, n) => {
-  let s = (0, A.useContext)(o.DN),
-    l = (0, y.U)(t),
+  let s = (0, v.useContext)(o.DN),
+    l = (0, b.U)(t),
     {
       focusProps: u,
       isFocusVisible: d
@@ -166,15 +166,15 @@ let R = (0, Chunk59845.KU)(Chunk178375._B, (e, t, n) => {
       item: n
     }, s, l),
     {
-      hoverProps: v,
-      isHovered: S
+      hoverProps: A,
+      isHovered: I
     } = (0, h.M)({
       isDisabled: !O.allowsSelection,
       onHoverStart: n.props.onHoverStart,
       onHoverChange: n.props.onHoverChange,
       onHoverEnd: n.props.onHoverEnd
     }),
-    I = (0, a.Sl)({
+    S = (0, a.Sl)({
       ...e,
       id: true,
       children: n.rendered,
@@ -182,34 +182,34 @@ let R = (0, Chunk59845.KU)(Chunk178375._B, (e, t, n) => {
       values: {
         ...O,
         isFocusVisible: d,
-        isHovered: S,
+        isHovered: I,
         selectionMode: s.selectionManager.selectionMode,
         selectionBehavior: s.selectionManager.selectionBehavior
       }
     });
-  (0, A.useEffect)(() => {
+  (0, v.useEffect)(() => {
     n.textValue
   }, [n.textValue]);
   let T = (0, E.$)(e, {
     global: true
   });
-  return delete T.id, delete T.onClick, A.createElement("div", {
+  return delete T.id, delete T.onClick, v.createElement("div", {
     ref: l,
-    ...(0, b.v)(T, I, f, u, v),
+    ...(0, y.v)(T, S, f, u, A),
     "data-selected": O.isSelected || true,
     "data-disabled": O.isDisabled || true,
-    "data-hovered": S || true,
+    "data-hovered": I || true,
     "data-focused": O.isFocused || true,
     "data-focus-visible": d || true,
     "data-pressed": O.isPressed || true,
     "data-allows-removing": O.allowsRemoving || true,
     "data-selection-mode": "none" === s.selectionManager.selectionMode ? true : s.selectionManager.selectionMode
-  }, A.createElement("div", {
+  }, v.createElement("div", {
     ...m,
     style: {
       display: "contents"
     }
-  }, A.createElement(a.Kq, {
+  }, v.createElement(a.Kq, {
     values: [
       [r.k, {
         slots: {
@@ -221,5 +221,5 @@ let R = (0, Chunk59845.KU)(Chunk178375._B, (e, t, n) => {
         isSelected: O.isSelected
       }]
     ]
-  }, I.children)))
+  }, S.children)))
 })

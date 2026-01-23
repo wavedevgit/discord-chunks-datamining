@@ -73,19 +73,19 @@ function k(e, t) {
 }
 
 function U(e, t, n) {
-  if (t === v.VL.UPDATE) {
+  if (t === A.VL.UPDATE) {
     var r, i;
     let t = null != (r = e.attachments) ? r : [],
       n = null != (i = e.embeds) ? i : [],
-      a = t.filter(e => (0, T.gh)(I.kn.EXPLICIT, {
-        type: A.D.Attachment,
+      a = t.filter(e => (0, T.gh)(S.kn.EXPLICIT, {
+        type: v.D.Attachment,
         media: e
       })),
-      s = n.filter(e => (0, T.gh)(I.kn.EXPLICIT, {
-        type: A.D.Embed,
+      s = n.filter(e => (0, T.gh)(S.kn.EXPLICIT, {
+        type: v.D.Embed,
         media: e
       }));
-    (0, v.Kl)({
+    (0, A.Kl)({
       messageId: e.id,
       channelId: e.channel_id,
       numOfAttachments: t.length,
@@ -93,18 +93,18 @@ function U(e, t, n) {
       numOfExplicitAttachments: a.length,
       numOfExplicitEmbeds: s.length
     })
-  }(0, v.rA)(n, t)
+  }(0, A.rA)(n, t)
 }
 
 function G(e) {
-  if (k(e, v.VL.TIMEOUT)) {
+  if (k(e, A.VL.TIMEOUT)) {
     let t = m.A.getMessage(e.channel_id, e.id);
     if (null != t) {
       let {
         attachmentIds: n,
         embedIds: r
       } = (0, T.M)(t);
-      (0, v.gm)({
+      (0, A.gm)({
         channelId: e.channel_id,
         messageId: e.id,
         attachmentIds: n,
@@ -172,32 +172,32 @@ function H(e) {
       numOfGoreEmbeds: 0,
       numOfExplicitEmbeds: 0
     });
-    let b = null != (r = null == (d = e.attachments) ? true : d.length) ? r : 0,
-      y = null != (i = null == (f = e.embeds) ? true : f.length) ? i : 0,
+    let y = null != (r = null == (d = e.attachments) ? true : d.length) ? r : 0,
+      b = null != (i = null == (f = e.embeds) ? true : f.length) ? i : 0,
       {
         attachmentIds: O,
-        embedIds: v
+        embedIds: A
       } = (0, T.M)(e),
-      S = t[e.channel_id];
-    S.numOfAttachments += b, S.numOfEmbeds += y, S.numOfAttachmentsPendingScan += O.length, S.numOfEmbedsPendingScan += v.length;
+      I = t[e.channel_id];
+    I.numOfAttachments += y, I.numOfEmbeds += b, I.numOfAttachmentsPendingScan += O.length, I.numOfEmbedsPendingScan += A.length;
     let C = n[e.id];
-    C.numOfAttachments += b, C.numOfEmbeds += y, C.numOfExplicitAttachments = null != (a = null == (p = e.attachments) ? true : p.filter(e => (0, T.gh)(I.kn.EXPLICIT, {
-      type: A.D.Attachment,
+    C.numOfAttachments += y, C.numOfEmbeds += b, C.numOfExplicitAttachments = null != (a = null == (p = e.attachments) ? true : p.filter(e => (0, T.gh)(S.kn.EXPLICIT, {
+      type: v.D.Attachment,
       media: e
-    })).length) ? a : 0, C.numOfExplicitEmbeds = null != (s = null == (_ = e.embeds) ? true : _.filter(e => (0, T.gh)(I.kn.EXPLICIT, {
-      type: A.D.Embed,
+    })).length) ? a : 0, C.numOfExplicitEmbeds = null != (s = null == (_ = e.embeds) ? true : _.filter(e => (0, T.gh)(S.kn.EXPLICIT, {
+      type: v.D.Embed,
       media: e
-    })).length) ? s : 0, C.numOfGoreAttachments = null != (o = null == (h = e.attachments) ? true : h.filter(e => (0, T.gh)(I.kn.GORE, {
-      type: A.D.Attachment,
+    })).length) ? s : 0, C.numOfGoreAttachments = null != (o = null == (h = e.attachments) ? true : h.filter(e => (0, T.gh)(S.kn.GORE, {
+      type: v.D.Attachment,
       media: e
-    })).length) ? o : 0, C.numOfGoreEmbeds = null != (l = null == (m = e.embeds) ? true : m.filter(e => (0, T.gh)(I.kn.GORE, {
-      type: A.D.Embed,
+    })).length) ? o : 0, C.numOfGoreEmbeds = null != (l = null == (m = e.embeds) ? true : m.filter(e => (0, T.gh)(S.kn.GORE, {
+      type: v.D.Embed,
       media: e
-    })).length) ? l : 0, C.numOfSelfHarmAttachments = null != (c = null == (g = e.attachments) ? true : g.filter(e => (0, T.gh)(I.kn.SELF_HARM, {
-      type: A.D.Attachment,
+    })).length) ? l : 0, C.numOfSelfHarmAttachments = null != (c = null == (g = e.attachments) ? true : g.filter(e => (0, T.gh)(S.kn.SELF_HARM, {
+      type: v.D.Attachment,
       media: e
-    })).length) ? c : 0, C.numOfSelfHarmEmbeds = null != (u = null == (E = e.embeds) ? true : E.filter(e => (0, T.gh)(I.kn.SELF_HARM, {
-      type: A.D.Embed,
+    })).length) ? c : 0, C.numOfSelfHarmEmbeds = null != (u = null == (E = e.embeds) ? true : E.filter(e => (0, T.gh)(S.kn.SELF_HARM, {
+      type: v.D.Embed,
       media: e
     })).length) ? u : 0
   }), {
@@ -211,12 +211,12 @@ function Y(e) {
     return null != e
   }
   let n = e.filter(e => {
-      let t = (0, y.b)(e),
+      let t = (0, b.b)(e),
         n = 0 !== (0, T.Fg)(e);
       return t && n
     }),
     r = e.map(e => {
-      if (null != e && "referenced_message" in e && null != e.referenced_message && (0, y.b)(e.referenced_message) && 0 !== (0, T.Fg)(e.referenced_message)) return e.referenced_message
+      if (null != e && "referenced_message" in e && null != e.referenced_message && (0, b.b)(e.referenced_message) && 0 !== (0, T.Fg)(e.referenced_message)) return e.referenced_message
     }).filter(t);
   r.length > 0 && (n = [...n, ...r]);
   let i = s()(n, (e, t) => e.id === t.id && e.channel_id === t.channel_id),
@@ -233,11 +233,11 @@ function W(e) {
   function t(e) {
     return null != e
   }
-  let n = e.filter(e => (0, y.b)(e) && 0 !== (0, T.Fg)(e)),
+  let n = e.filter(e => (0, b.b)(e) && 0 !== (0, T.Fg)(e)),
     r = e.map(e => {
       if (R.sl8.has(e.type) && null != e.messageReference) {
         let t = f.A.getMessageByReference(e.messageReference);
-        if (t.state === f.a.LOADED && null != t.message && (0, y.b)(t.message) && 0 !== (0, T.Fg)(t.message)) return t.message
+        if (t.state === f.a.LOADED && null != t.message && (0, b.b)(t.message) && 0 !== (0, T.Fg)(t.message)) return t.message
       }
     }).filter(t);
   r.length > 0 && (n = [...n, ...r]);
@@ -257,18 +257,18 @@ function K(e, t) {
     attributesByChannelId: r,
     attributesByMessageId: i
   } = Y(e);
-  return b.default.entries(r).forEach(e => {
+  return y.default.entries(r).forEach(e => {
     let [t, n] = e;
-    (0, v.zt)({
+    (0, A.zt)({
       channelId: t,
       numOfAttachments: n.numOfAttachments,
       numOfAttachmentsPendingScan: n.numOfAttachmentsPendingScan,
       numOfEmbeds: n.numOfEmbeds,
       numOfEmbedsPendingScan: n.numOfEmbedsPendingScan
     })
-  }), (0, C.y)() && b.default.entries(i).forEach(e => {
+  }), (0, C.y)() && y.default.entries(i).forEach(e => {
     let [t, n] = e;
-    (0, v.bz)({
+    (0, A.bz)({
       messageId: t,
       channelId: n.channelId,
       numOfAttachments: n.numOfAttachments,
@@ -289,18 +289,18 @@ function z(e) {
     attributesByChannelId: n,
     attributesByMessageId: r
   } = W(e);
-  return b.default.entries(n).forEach(e => {
+  return y.default.entries(n).forEach(e => {
     let [t, n] = e;
-    (0, v.zt)({
+    (0, A.zt)({
       channelId: t,
       numOfAttachments: n.numOfAttachments,
       numOfAttachmentsPendingScan: n.numOfAttachmentsPendingScan,
       numOfEmbeds: n.numOfEmbeds,
       numOfEmbedsPendingScan: n.numOfEmbedsPendingScan
     })
-  }), (0, C.y)() && b.default.entries(r).forEach(e => {
+  }), (0, C.y)() && y.default.entries(r).forEach(e => {
     let [t, n] = e;
-    (0, v.bz)({
+    (0, A.bz)({
       messageId: t,
       channelId: n.channelId,
       numOfAttachments: n.numOfAttachments,
@@ -320,10 +320,10 @@ function q(e) {
   let {
     message: o
   } = e;
-  if (null == o.channel_id || null == o.id || (null == (t = o.author) ? true : t.id) === p.default.getId() || null == o.embeds && null == o.attachments && !(0, v.aY)(o) || (null == (n = o.embeds) ? true : n.length) === 0 && (null == (r = o.attachments) ? true : r.length) === 0 && !(0, v.aY)(o)) returnfalse;
+  if (null == o.channel_id || null == o.id || (null == (t = o.author) ? true : t.id) === p.default.getId() || null == o.embeds && null == o.attachments && !(0, A.aY)(o) || (null == (n = o.embeds) ? true : n.length) === 0 && (null == (r = o.attachments) ? true : r.length) === 0 && !(0, A.aY)(o)) returnfalse;
   if (!(0, T.mS)(o)) {
-    let e = null != (i = null != (a = m.A.getMessage(o.channel_id, o.id)) ? a : S.A.getMessage(o.id, o.channel_id)) ? i : null == (s = f.A.getMessage(o.channel_id, o.id)) ? true : s.message;
-    null == e || (0, T.mS)((0, u.IU)(e, o)) || k(e, v.VL.UPDATE)
+    let e = null != (i = null != (a = m.A.getMessage(o.channel_id, o.id)) ? a : I.A.getMessage(o.id, o.channel_id)) ? i : null == (s = f.A.getMessage(o.channel_id, o.id)) ? true : s.message;
+    null == e || (0, T.mS)((0, u.IU)(e, o)) || k(e, A.VL.UPDATE)
   }
   let l = g.A.getChannelId(),
     c = _.Ay.getCurrentSidebarChannelId(l);
@@ -395,7 +395,7 @@ function J(e) {
     guildId: t,
     threads: n
   } = e;
-  return null != n && E.A.getGuildId() === t && K(b.default.keys(n).map(e => n[e].first_message))
+  return null != n && E.A.getGuildId() === t && K(y.default.keys(n).map(e => n[e].first_message))
 }
 
 function ee(e) {

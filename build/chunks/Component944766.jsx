@@ -25,38 +25,38 @@ let h = 13e3,
       participant: a,
       participants: g,
       channel: E,
-      flip: b,
-      handleHover: y,
+      flip: y,
+      handleHover: b,
       enableAnimations: O = true
-    } = e, A = i.useRef(null), v = i.useRef(new Set), S = (0, f.A)(a), {
-      setAsset: I,
+    } = e, v = i.useRef(null), A = i.useRef(new Set), I = (0, f.A)(a), {
+      setAsset: S,
       sampleAsset: T,
       animationState: C,
       updateAnimationState: N,
       characterAssets: R
-    } = (0, u.u)(null == S ? true : S.name), w = i.useMemo(() => Object.values(null != R ? R : {}).flat(), [R]), P = g.find(e => e.type === p.lp.USER && e.user.id === a.userId), D = i.useMemo(() => g.filter(e => m(e, a.userId)), [g, a.userId]), x = i.useMemo(() => D.flatMap(e => {
+    } = (0, u.u)(null == I ? true : I.name), w = i.useMemo(() => Object.values(null != R ? R : {}).flat(), [R]), P = g.find(e => e.type === p.lp.USER && e.user.id === a.userId), D = i.useMemo(() => g.filter(e => m(e, a.userId)), [g, a.userId]), x = i.useMemo(() => D.flatMap(e => {
       let n = t.find(t => t.claimedBy === e.user.id);
       return null != n ? [n] : []
     }), [D, t]), [L, j] = i.useState(false), [M, k] = i.useState(0), [U, G] = i.useState(0);
     return i.useEffect(() => {
       j(false)
-    }, [S, w]), i.useEffect(() => {
-      let e = v.current;
+    }, [I, w]), i.useEffect(() => {
+      let e = A.current;
       return () => {
         [...e].forEach(e => window.clearTimeout(e))
       }
     }, []), i.useEffect(() => {
       if (!O) return;
-      let e = A.current;
+      let e = v.current;
       if (null == e || true === L) return;
       let t = T(),
         n = w.findIndex(e => e === t);
-      I(t), G(n), [...e.children].forEach((e, t) => {
+      S(t), G(n), [...e.children].forEach((e, t) => {
         if ("VIDEO" !== e.nodeName) return;
         let r = e;
         r.currentTime = 0, t === n && (r.play(), j(true))
       })
-    }, [L, w, T, I, O]), i.useEffect(() => {
+    }, [L, w, T, S, O]), i.useEffect(() => {
       O && ((null == P ? true : P.speaking) ? N(u.f.TALKING) : C === u.f.TALKING && N(u.f.IDLE))
     }, [P, C, N, O]), i.useEffect(() => {
       !O || x.some(e => {
@@ -76,12 +76,12 @@ let h = 13e3,
     }, [x, n, M, N, O]), (0, r.jsxs)(o.DUT, {
       className: _.iE,
       style: {
-        width: S.width,
-        top: S.offset.top,
-        left: b ? -S.offset.left : S.offset.left
+        width: I.width,
+        top: I.offset.top,
+        left: y ? -I.offset.left : I.offset.left
       },
-      onMouseEnter: () => y(true),
-      onMouseLeave: () => y(false),
+      onMouseEnter: () => b(true),
+      onMouseLeave: () => b(false),
       onClick: e => {
         e.preventDefault(), e.stopPropagation();
         let t = (a.avatar + 1) % d.oo.length;
@@ -93,38 +93,38 @@ let h = 13e3,
       children: [(0, r.jsx)("div", {
         className: _.Fk,
         style: {
-          height: 1.25 * S.height,
-          width: 1.25 * S.width
+          height: 1.25 * I.height,
+          width: 1.25 * I.width
         }
       }), (null == R ? true : R.decoration) != null && (0, r.jsx)(l.A, {
         src: R.decoration[0],
         className: s()(_.GG, {
-          [_.UU]: b
+          [_.UU]: y
         }),
         autoPlay: O,
         loop: O,
         style: {
-          width: S.width
+          width: I.width
         }
       }), (0, r.jsx)("div", {
-        ref: A,
+        ref: v,
         children: w.map((e, t) => (0, r.jsx)(l.A, {
           style: {
             opacity: +(t === U),
-            width: S.width
+            width: I.width
           },
           src: e,
           className: s()(_.GG, {
-            [_.UU]: b
+            [_.UU]: y
           }),
           onEnded: () => {
             var t, n;
             if (C === u.f.HEAD_TURN && (null == R || null == (t = R.headTurn) ? true : t.includes(e))) {
               N(u.f.HEAD_TURN_BACK);
               let e = setTimeout(() => {
-                j(false), v.current.delete(e)
+                j(false), A.current.delete(e)
               }, 2e3);
-              v.current.add(e)
+              A.current.add(e)
             } else C === u.f.HEAD_TURN_BACK && (null == R || null == (n = R.headTurnBack) ? true : n.includes(e)) && N(u.f.IDLE), j(false)
           },
           autoPlay: false,

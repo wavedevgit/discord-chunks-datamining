@@ -26,11 +26,11 @@ function p(e) {
     hideTooltip: h = false,
     canTruncate: m = true,
     showChannelName: g = false
-  } = e, E = (0, s.S31)(s.clD.ONLINE), b = (0, o.Ay)(t), y = t.isDM() || t.isGroupDM(), {
+  } = e, E = (0, s.S31)(s.clD.ONLINE), y = (0, o.Ay)(t), b = t.isDM() || t.isGroupDM(), {
     enableTopNavButton: O
   } = (0, l.tR)({
     location: "VoiceActivityStatusWithCombinedTooltip"
-  }), A = O && null != b ? b : y ? d.intl.string(d.t["9FaEzi"]) : t.isGuildStageVoice() ? d.intl.string(d.t.QygGCN) : d.intl.string(d.t.msxteM), v = null == b || O ? A : "".concat(A, " (").concat(b, ")"), S = g ? v : A;
+  }), v = O && null != y ? y : b ? d.intl.string(d.t["9FaEzi"]) : t.isGuildStageVoice() ? d.intl.string(d.t.QygGCN) : d.intl.string(d.t.msxteM), A = null == y || O ? v : "".concat(v, " (").concat(y, ")"), I = g ? A : v;
   return (0, r.jsx)(u.A, {
     icon: (0, r.jsx)(c.A, {
       size: "custom",
@@ -38,13 +38,13 @@ function p(e) {
       channel: t,
       className: a()(f.Kk, p)
     }),
-    text: S,
-    tooltipText: h ? true : v,
+    text: I,
+    tooltipText: h ? true : A,
     textVariant: n,
     textClassName: i,
     hideTooltip: h,
     canTruncate: m,
-    "aria-label": v,
+    "aria-label": A,
     hideText: _
   })
 }

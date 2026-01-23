@@ -54,7 +54,7 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     url: t
   } = e;
@@ -64,7 +64,7 @@ function b(e) {
     trustedProtocols: _
   })
 }
-class y extends(i = Chunk311907.Ay.Store) {
+class b extends(i = Chunk311907.Ay.Store) {
   initialize() {
     var e;
     let t = null != (e = s.w.get(f)) ? e : {};
@@ -84,8 +84,8 @@ class y extends(i = Chunk311907.Ay.Store) {
     return g(e)
   }
 }
-d(y, "displayName", "MaskedLinkStore");
-let O = new y(Chunk73153.h, {
+d(b, "displayName", "MaskedLinkStore");
+let O = new b(Chunk73153.h, {
   MASKED_LINK_ADD_TRUSTED_DOMAIN: E,
-  MASKED_LINK_ADD_TRUSTED_PROTOCOL: b
+  MASKED_LINK_ADD_TRUSTED_PROTOCOL: y
 })

@@ -40,7 +40,7 @@ var Chunk735438 = require("./735438.js"),
   Chunk661191 = require("./661191.js"),
   Chunk652215 = require("./652215.js");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,14 +49,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -72,9 +72,9 @@ let T = Chunk136722.iu(0),
 
 function L(e, t, n) {
   let r = !(arguments.length > 3) || true === arguments[3] || arguments[3];
-  if (r && t.mfaLevel === v.EkJ.ELEVATED && n === h.default.getId()) {
+  if (r && t.mfaLevel === A.EkJ.ELEVATED && n === h.default.getId()) {
     var i;
-    (null == (i = y.default.getCurrentUser()) ? true : i.mfaEnabled) || (e = a.TF(e, v.Lti))
+    (null == (i = b.default.getCurrentUser()) ? true : i.mfaEnabled) || (e = a.TF(e, A.Lti))
   }
   return e
 }
@@ -91,7 +91,7 @@ function j(e, t, n, r) {
     n = a.TF(n, i), n = a.WQ(n, e);
     let s = r[t.userId];
     null != s && (n = a.TF(n, s.deny), n = a.WQ(n, s.allow));
-    let c = a.zy(n, v.xBc.ADMINISTRATOR);
+    let c = a.zy(n, A.xBc.ADMINISTRATOR);
     (0, o.TR)(t) && !c && (n = a.pb(n, D)), (0, l.Z)(t) && !c && (n = a.pb(n, P))
   }
   return n
@@ -109,14 +109,14 @@ function M(e) {
     lurkerPermissionsMask: c = R
   } = e;
   if (l) return j(r.id, n, T, i);
-  let d = (s = null != s ? I({}, E.A.getUnsafeMutableRoles(r.id), s) : E.A.getUnsafeMutableRoles(r.id))[(0, p.af)(r)],
+  let d = (s = null != s ? S({}, E.A.getUnsafeMutableRoles(r.id), s) : E.A.getUnsafeMutableRoles(r.id))[(0, p.af)(r)],
     f = null != d ? d.permissions : N;
   if (null != n)
     for (let e = 0; e < n.roles.length; e++) {
       let t = s[n.roles[e]];
       true !== t && (f = a.WQ(f, t.permissions))
     }
-  return f = a.zy(f, v.xBc.ADMINISTRATOR) ? C : j(r.id, n, f, i), (u.A.isLurking(r.id) || (null == n ? true : n.isPending)) && (f = a.pb(f, c)), g.Ay.isCurrentUserGuest(r.id) && (f = a.pb(f, w)), L(f, r, t, o)
+  return f = a.zy(f, A.xBc.ADMINISTRATOR) ? C : j(r.id, n, f, i), (u.A.isLurking(r.id) || (null == n ? true : n.isPending)) && (f = a.pb(f, c)), g.Ay.isCurrentUserGuest(r.id) && (f = a.pb(f, w)), L(f, r, t, o)
 }
 
 function k(e) {
@@ -143,17 +143,17 @@ function k(e) {
         excludeGuildPermissions: o
       }), false, false)
     }
-    l = null != (c = r.computeLurkerPermissionsAllowList()) ? c : l, i = null != i ? I({}, r.permissionOverwrites, i) : r.permissionOverwrites;
+    l = null != (c = r.computeLurkerPermissionsAllowList()) ? c : l, i = null != i ? S({}, r.permissionOverwrites, i) : r.permissionOverwrites;
     let e = r.getGuildId();
-    t = null != e ? b.A.getGuild(e) : null
+    t = null != e ? y.A.getGuild(e) : null
   } else i = null != i ? i : {}, t = r;
   if (null == t) return T;
   let u = {
-    userId: v.dJq,
+    userId: A.dJq,
     nick: "",
     guildId: t.id,
     guildMemberAvatar: null,
-    roles: A.default.keys(n),
+    roles: v.default.keys(n),
     colorString: null,
     colorStrings: null,
     hoistRoleId: null,
@@ -163,7 +163,7 @@ function k(e) {
     communicationDisabledUntil: null
   };
   return M({
-    userId: v.dJq,
+    userId: A.dJq,
     member: u,
     guild: t,
     overwrites: i,
@@ -192,7 +192,7 @@ function U(e) {
     if (f.Le.has(s.type)) {
       let e = m.A.getChannel(s.parent_id);
       if (null == e || e.isScheduledForDeletion()) return T;
-      let t = h === (null == (n = y.default.getCurrentUser()) ? true : n.id) && d.A.hasJoined(s.id);
+      let t = h === (null == (n = b.default.getCurrentUser()) ? true : n.id) && d.A.hasJoined(s.id);
       return G(s, U({
         user: a,
         context: e,
@@ -202,12 +202,12 @@ function U(e) {
         excludeGuildPermissions: _
       }), t, g.Ay.isCurrentUserGuest(s.guild_id))
     }
-    E = null != (r = s.computeLurkerPermissionsAllowList()) ? r : E, o = null != o ? I({}, s.permissionOverwrites, o) : s.permissionOverwrites;
+    E = null != (r = s.computeLurkerPermissionsAllowList()) ? r : E, o = null != o ? S({}, s.permissionOverwrites, o) : s.permissionOverwrites;
     let e = s.getGuildId();
-    i = null != e ? b.A.getGuild(e) : null
+    i = null != e ? y.A.getGuild(e) : null
   } else o = null != o ? o : {}, i = s;
   if (null == i) return T;
-  if (!(h === (null == (t = y.default.getCurrentUser()) ? true : t.id) && c.A.isViewingRoles(i.id)) && (0, p.bM)(i, h)) return L(C, i, h, u);
+  if (!(h === (null == (t = b.default.getCurrentUser()) ? true : t.id) && c.A.isViewingRoles(i.id)) && (0, p.bM)(i, h)) return L(C, i, h, u);
   let O = g.Ay.getMember(i.id, h);
   return M({
     userId: h,
@@ -222,7 +222,7 @@ function U(e) {
 }
 
 function G(e, t, n, r) {
-  return e.type !== v.rbe.PRIVATE_THREAD || n || r || a.zy(t, v.xBc.MANAGE_THREADS) ? a.zy(t, v.xBc.SEND_MESSAGES_IN_THREADS) ? e.isLockedThread() && !a.zy(t, v.xBc.MANAGE_THREADS) ? a.TF(t, v.xBc.SEND_MESSAGES) : a.kg(t, v.xBc.SEND_MESSAGES) : a.TF(t, v.xBc.SEND_MESSAGES) : T
+  return e.type !== A.rbe.PRIVATE_THREAD || n || r || a.zy(t, A.xBc.MANAGE_THREADS) ? a.zy(t, A.xBc.SEND_MESSAGES_IN_THREADS) ? e.isLockedThread() && !a.zy(t, A.xBc.MANAGE_THREADS) ? a.TF(t, A.xBc.SEND_MESSAGES) : a.kg(t, A.xBc.SEND_MESSAGES) : a.TF(t, A.xBc.SEND_MESSAGES) : T
 }
 
 function V(e, t) {
@@ -231,8 +231,8 @@ function V(e, t) {
     guild_id: n
   } = e;
   if (null == t || null == n || n !== t.guild_id) returnfalse;
-  let r = I({}, e.permissionOverwrites),
-    i = I({}, t.permissionOverwrites);
+  let r = S({}, e.permissionOverwrites),
+    i = S({}, t.permissionOverwrites);
   return null == r[n] && (r[n] = W(n)), null == i[n] && (i[n] = W(n)), Object.keys(r).length === Object.keys(i).length && !Object.keys(r).some(e => {
     let t = r[e],
       n = i[e];
@@ -242,7 +242,7 @@ function V(e, t) {
 
 function F(e) {
   var t;
-  return i().some(E.A.getUnsafeMutableRoles(e.id), e => e.hoist && (0, _._m)(e, v.xBc.ADMINISTRATOR)) ? true : null != (t = e.ownerId) ? t : true
+  return i().some(E.A.getUnsafeMutableRoles(e.id), e => e.hoist && (0, _._m)(e, A.xBc.ADMINISTRATOR)) ? true : null != (t = e.ownerId) ? t : true
 }
 
 function B(e, t, n, r) {
@@ -289,10 +289,10 @@ function K(e) {
 function z(e, t) {
   let n, r = {};
   if (t instanceof f.YB) {
-    if (t.type === v.rbe.PRIVATE_THREAD || f.Le.has(t.type) && null == (t = m.A.getChannel(t.parent_id))) returnfalse;
+    if (t.type === A.rbe.PRIVATE_THREAD || f.Le.has(t.type) && null == (t = m.A.getChannel(t.parent_id))) returnfalse;
     r = t.permissionOverwrites;
     let e = t.getGuildId();
-    n = null != e ? b.A.getGuild(e) : null
+    n = null != e ? y.A.getGuild(e) : null
   } else n = t;
   if (null == n) returnfalse;
   let i = E.A.getEveryoneRole(n).permissions,
@@ -303,10 +303,10 @@ function z(e, t) {
 function q(e, t) {
   let n, r = {};
   if (t instanceof f.YB) {
-    if (t.type === v.rbe.PRIVATE_THREAD || f.Le.has(t.type) && null == (t = m.A.getChannel(t.parent_id))) returnfalse;
+    if (t.type === A.rbe.PRIVATE_THREAD || f.Le.has(t.type) && null == (t = m.A.getChannel(t.parent_id))) returnfalse;
     r = t.permissionOverwrites;
     let e = t.getGuildId();
-    n = null != e ? b.A.getGuild(e) : null
+    n = null != e ? y.A.getGuild(e) : null
   } else n = t;
   if (null == n) returnfalse;
   let s = E.A.getEveryoneRole(n);

@@ -27,39 +27,39 @@ function j(e) {
       customWebhooks: y,
       editedWebhook: A,
       selectableWebhookChannels: v,
-      refToScroller: N,
-      errors: E,
-      canNavigate: T
+      refToScroller: _,
+      errors: N,
+      canNavigate: w
     } = e,
-    w = (0, d.Ay)(),
-    [C, S] = r.useState(null),
-    [_, I] = r.useState(null);
+    T = (0, d.Ay)(),
+    [E, C] = r.useState(null),
+    [S, I] = r.useState(null);
   if (null != O) n = O;
   else {
     let e = Object.values(v);
     n = e.length > 0 ? e[0] : null
   }
   let P = r.useCallback(async () => {
-    if (T() && null !== n) {
+    if (w() && null !== n) {
       let e = await o.A.create(j.id, n.id).catch(e => {
         let {
           body: t,
           status: n
         } = e;
-        return t && t.code === p.t02.TOO_MANY_WEBHOOKS ? s.A.show({
-          title: m.intl.string(m.t.cCqsca),
-          body: m.intl.string(m.t["w+QZoX"])
+        return t && t.code === g.t02.TOO_MANY_WEBHOOKS ? s.A.show({
+          title: b.intl.string(b.t.cCqsca),
+          body: b.intl.string(b.t["w+QZoX"])
         }) : 429 === n ? s.A.show({
-          title: m.intl.string(m.t.cCqsca),
-          body: m.intl.string(m.t["YBM+UW"])
+          title: b.intl.string(b.t.cCqsca),
+          body: b.intl.string(b.t["YBM+UW"])
         }) : s.A.show({
-          title: m.intl.string(m.t.cCqsca),
-          body: m.intl.string(m.t["/4TwKf"])
+          title: b.intl.string(b.t.cCqsca),
+          body: b.intl.string(b.t["/4TwKf"])
         }), null
       });
-      null != e && (I(e.id), S(e))
+      null != e && (I(e.id), C(e))
     }
-  }, [T, n, j]);
+  }, [w, n, j]);
   (0, c.Ay)(() => {
     0 === y.length && P()
   });
@@ -67,47 +67,47 @@ function j(e) {
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)(a.Text, {
       variant: "text-sm/normal",
-      children: m.intl.format(m.t.WL0d0e, {
-        helpdeskArticle: b.A.getArticleURL(p.MVz.WEBHOOKS),
-        developersArticle: p.X7G.API_DOCS_WEBHOOKS
+      children: b.intl.format(b.t.WL0d0e, {
+        helpdeskArticle: p.A.getArticleURL(g.MVz.WEBHOOKS),
+        developersArticle: g.X7G.API_DOCS_WEBHOOKS
       })
     }), (0, i.jsx)(a.cGx, {
-      className: g.zN
+      className: f.zN
     }), y.length > 0 ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: g.Tf,
+        className: f.Tf,
         children: (0, i.jsx)(a.Button, {
           variant: "primary",
           size: "sm",
-          text: m.intl.string(m.t["nrO/HH"]),
+          text: b.intl.string(b.t["nrO/HH"]),
           disabled: !k,
           onClick: P
         })
-      }), (0, i.jsx)(f.A, {
+      }), (0, i.jsx)(m.A, {
         webhooks: y,
         editedWebhook: A,
         selectableWebhookChannels: v,
-        lastCreatedWebhookId: null == C ? true : C.id,
-        errors: E,
-        canNavigate: T
+        lastCreatedWebhookId: null == E ? true : E.id,
+        errors: N,
+        canNavigate: w
       })]
-    }) : (t = (0, l.Mw)(w) ? h : x, (0, i.jsxs)(u.A, {
+    }) : (t = (0, l.Mw)(T) ? h : x, (0, i.jsxs)(u.A, {
       direction: u.A.Direction.VERTICAL,
       align: u.A.Align.CENTER,
       children: [(0, i.jsx)("img", {
         alt: "",
         src: t,
-        className: g.QT
+        className: f.QT
       }), (0, i.jsx)(a.Heading, {
         variant: "heading-md/semibold",
-        children: m.intl.string(m.t.LzmsWl)
+        children: b.intl.string(b.t.LzmsWl)
       }), (0, i.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: g.nM,
+        className: f.nM,
         children: (0, i.jsx)(a.Button, {
           variant: "primary",
-          text: m.intl.string(m.t.lOQqJK),
+          text: b.intl.string(b.t.lOQqJK),
           disabled: !k,
           onClick: P
         })

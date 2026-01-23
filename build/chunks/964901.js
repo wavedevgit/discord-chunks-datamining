@@ -14,7 +14,7 @@ function s(e) {
     isPlaying: t,
     playSound: n,
     preloadSound: s
-  } = (0, i.A)(null != e ? (0, r.A)(e.soundId) : null);
+  } = (0, a.A)(null != e ? (0, r.A)(e.soundId) : null);
   return l.useEffect(() => {
     null != e && s()
   }, [e, s]), {
@@ -22,7 +22,7 @@ function s(e) {
     playSound: l.useCallback(() => {
       var t;
       return !!n({
-        volume: (0, a.A)(null != (t = null == e ? true : e.volume) ? t : 1)
+        volume: (0, i.A)(null != (t = null == e ? true : e.volume) ? t : 1)
       })
     }, [n, null == e ? true : e.volume])
   }

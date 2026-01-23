@@ -2,7 +2,7 @@
 /** chunk id: 107563, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 });
 var Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -94,7 +94,7 @@ function E(e) {
   l(t).data = n
 }
 
-function b(e) {
+function y(e) {
   let {
     wishlistId: t,
     wishlistData: n
@@ -102,7 +102,7 @@ function b(e) {
   r.data = n, r.status = "success", r.error = true
 }
 
-function y(e) {
+function b(e) {
   let {
     wishlistId: t,
     error: n
@@ -118,7 +118,7 @@ function O(e) {
   } = e, a = n(622543).A.getFirstWishlistId(r);
   null != a && null != s[a] && (null == (t = s[a].data) ? true : t.hasSkuId(i)) && (s[a].updatedAt = true)
 }
-class A extends Chunk311907.Ay.Store {
+class v extends Chunk311907.Ay.Store {
   get(e) {
     var t;
     return null != (t = s[e]) ? t : o()
@@ -150,7 +150,7 @@ class A extends Chunk311907.Ay.Store {
     return this.get(e).updatedAt
   }
 }
-let v = new A(Chunk73153.h, {
+let A = new v(Chunk73153.h, {
   WISHLIST_FETCH_START: c,
   WISHLIST_FETCH_SUCCESS: u,
   WISHLIST_FETCH_FAILURE: d,
@@ -161,7 +161,7 @@ let v = new A(Chunk73153.h, {
   WISHLIST_UPDATE_VISIBILITY_SUCCESS: m,
   WISHLIST_UPDATE_VISIBILITY_FAILURE: g,
   WISHLIST_REORDER_START: E,
-  WISHLIST_REORDER_SUCCESS: b,
-  WISHLIST_REORDER_FAILURE: y,
+  WISHLIST_REORDER_SUCCESS: y,
+  WISHLIST_REORDER_FAILURE: b,
   WISHLIST_ITEM_PURCHASED: O
 })

@@ -4,7 +4,7 @@
 require.d(exports, {
   N7: () => c,
   PK: () => g,
-  XW: () => b,
+  XW: () => y,
   bc: () => E,
   e7: () => m,
   fW: () => h
@@ -49,7 +49,7 @@ function E(e, t) {
   return t
 }
 
-function b(e, t, n, r) {
+function y(e, t, n, r) {
   let i = o.A.toURLSafe(e);
   if (null == i || i.host === d) return e;
   let a = (0, l.UB)(e, t),

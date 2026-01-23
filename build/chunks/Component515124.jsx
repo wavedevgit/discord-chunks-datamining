@@ -12,7 +12,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk501068 = require("./501068.jsx"),
   Chunk922529 = require("./922529.jsx"),
   Chunk300902 = require("./300902.js");
-let u = () => (0, a.jsx)(i.B, {
+let u = () => (0, a.jsx)(r.B, {
   children: (0, a.jsxs)("div", {
     className: d.Lm,
     children: [(0, a.jsx)(o.p, {
@@ -24,9 +24,9 @@ let u = () => (0, a.jsx)(i.B, {
         children: "Shop Overrides"
       }), (0, a.jsx)(s.R, {}), (0, a.jsx)(c.A, {
         className: d.yF
-      }), (0, a.jsx)(r.N, {}), (0, a.jsx)(c.A, {
+      }), (0, a.jsx)(i.N, {}), (0, a.jsx)(c.A, {
         className: d.yF
-      }), (0, a.jsx)(i.G, {})]
+      }), (0, a.jsx)(r.G, {})]
     })]
   })
 })

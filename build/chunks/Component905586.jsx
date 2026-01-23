@@ -15,17 +15,17 @@ let s = function(e) {
   return (0, a.jsxs)(l.ButtonGroup, {
     direction: "vertical",
     fullWidth: true,
-    className: r.G,
+    className: i.G,
     size: "sm",
     children: [(0, a.jsx)(l.Button, {
       onClick: t,
-      text: i.intl.string(i.t["QXc01+"]),
+      text: r.intl.string(r.t["QXc01+"]),
       variant: "secondary",
       icon: l.kN9,
       iconPosition: "end"
     }), (0, a.jsx)(l.Button, {
       onClick: n,
-      text: i.intl.string(i.t["8lAfuB"]),
+      text: r.intl.string(r.t["8lAfuB"]),
       variant: "secondary",
       icon: l._xR,
       iconPosition: "end"

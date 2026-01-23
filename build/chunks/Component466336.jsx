@@ -16,7 +16,7 @@ var Chunk342494 = require("./342494.js"),
 let p = e => {
   let {
     targetElementRef: t
-  } = e, p = (0, o.Tp)(), f = () => {
+  } = e, p = (0, o.Tp)(), h = () => {
     (0, o.ne)()
   };
   return (0, r.jsx)(i.AM, {
@@ -40,7 +40,7 @@ let p = e => {
       onClick: () => {
         s.default.track(c.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
           location_stack: [a.A.HOME_PAGE_PREMIUM_TAB]
-        }), f(), (0, l.mMO)(async () => {
+        }), h(), (0, l.mMO)(async () => {
           let {
             default: e
           } = await Promise.resolve().then(n.bind(n, 303682));
@@ -65,6 +65,6 @@ let p = e => {
         })
       }
     }],
-    onRequestClose: f
+    onRequestClose: h
   })
 }

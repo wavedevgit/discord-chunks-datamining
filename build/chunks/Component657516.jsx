@@ -2,7 +2,7 @@
 /** chunk id: 657516, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  default: () => v
+  default: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,14 +24,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk568065 = require("./568065.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk449838 = require("./449838.js");
-let v = e => {
+let A = e => {
   let {
     guildBoostSlots: t,
     selectedGuild: n,
     locationSection: a,
-    intent: v,
-    transitionState: S,
-    onClose: I
+    intent: A,
+    transitionState: I,
+    onClose: S
   } = e, T = (0, h.D$)(p.A.boostSlots);
   s()(null != t || null != n, "Must either provide slots or an initial selected guild"), s()(!(null == t ? true : t.some(e => e.isOnCooldown())), "If slots are provided, they must not be on cooldown");
   let C = [null == t ? "UNUSED_QUANTITY_SELECT" : null, null == n ? "GUILD_SELECT" : null, "CONFIRM", "SUCCESS"].filter(e => null != e),
@@ -50,13 +50,13 @@ let v = e => {
       var e;
       return (null == M || null == (e = M[0]) ? true : e.premiumGuildSubscription) != null
     }, [M]),
-    V = () => (I("SUCCESS" === w), _.default.track(b.HAw.MODAL_DISMISSED, {
-      type: b.JJy.PREMIUM_GUILD_SUBSCRIBE_MODAL,
+    V = () => (S("SUCCESS" === w), _.default.track(y.HAw.MODAL_DISMISSED, {
+      type: y.JJy.PREMIUM_GUILD_SUBSCRIBE_MODAL,
       location_section: a
     }), Promise.resolve()),
     F = {
       UNUSED_QUANTITY_SELECT: () => (s()(null != t || 0 !== T.length, "Cannot provide no slots if there are no other available slots"), (0, r.jsx)(o.Modal, {
-        transitionState: S,
+        transitionState: I,
         onClose: V,
         size: "md",
         title: O.intl.string(O.t["9FFrrT"]),
@@ -70,20 +70,20 @@ let v = e => {
           onClick: () => P("CONFIRM")
         }],
         children: (0, r.jsxs)("div", {
-          className: A.pS,
+          className: v.pS,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-md/normal",
-            className: A.TH,
+            className: v.TH,
             children: O.intl.string(O.t.x5qw5U)
           }), (0, r.jsxs)("div", {
-            className: A.g9,
+            className: v.g9,
             children: [(0, r.jsx)(c.lw3, {
               value: M.length,
               onChange: e => k(T.slice(0, e)),
               minValue: 1,
               maxValue: T.length
             }), (0, r.jsx)(c.Text, {
-              className: A.v$,
+              className: v.v$,
               variant: "text-md/normal",
               children: O.intl.string(O.t["Vl8TC+"])
             })]
@@ -95,7 +95,7 @@ let v = e => {
         onSelectGuild: e => {
           j(e), P("CONFIRM")
         },
-        transitionState: S,
+        transitionState: I,
         isTransfer: G,
         selectedSlotGuilds: U
       }),
@@ -119,14 +119,14 @@ let v = e => {
                     id: t
                   } = e;
                   return t
-                }), v === y.Pn.PERK), P("SUCCESS")
+                }), A === b.Pn.PERK), P("SUCCESS")
               } catch (e) {
                 x(true)
               }
             }
           }, l = G ? O.intl.string(O.t["PR0n//"]) : O.intl.string(O.t["7KP/fI"]);
         return (0, r.jsx)(o.Modal, {
-          transitionState: S,
+          transitionState: I,
           onClose: V,
           size: "md",
           title: l,
@@ -152,7 +152,7 @@ let v = e => {
               slotCount: t,
               guildCount: n
             }),
-            imageClass: A.LA,
+            imageClass: v.LA,
             error: D ? R : null,
             slotCount: t,
             canceledCount: e
@@ -160,10 +160,10 @@ let v = e => {
             guild: L,
             blurb: O.intl.string(O.t.yTlZV0),
             warning: O.intl.formatToPlainString(O.t.KPnDlu, {
-              days: b.FI6,
+              days: y.FI6,
               slotCount: t
             }),
-            imageClass: A.MP,
+            imageClass: v.MP,
             error: D ? R : null,
             slotCount: t,
             canceledCount: e
@@ -173,7 +173,7 @@ let v = e => {
       SUCCESS() {
         let e = G ? O.intl.string(O.t["PR0n//"]) : O.intl.string(O.t["7KP/fI"]);
         return (0, r.jsx)(o.Modal, {
-          transitionState: S,
+          transitionState: I,
           onClose: V,
           size: "md",
           title: e,
@@ -189,8 +189,8 @@ let v = e => {
       }
     };
   i.useEffect(() => {
-    _.default.track(b.HAw.OPEN_MODAL, {
-      type: b.JJy.PREMIUM_GUILD_SUBSCRIBE_MODAL,
+    _.default.track(y.HAw.OPEN_MODAL, {
+      type: y.JJy.PREMIUM_GUILD_SUBSCRIBE_MODAL,
       location_section: a
     })
   }, [a]);

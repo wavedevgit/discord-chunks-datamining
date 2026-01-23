@@ -2,7 +2,7 @@
 /** chunk id: 43105, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y,
+  A: () => b,
   h: () => O
 });
 var Chunk627968 = require("./627968.js"),
@@ -63,12 +63,12 @@ function E(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = b(e, t), Object.getOwnPropertySymbols)
+  if (a = y(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -76,34 +76,34 @@ function b(e, t) {
   return i
 }
 
-function y(e) {
+function b(e) {
   var t;
   let {
     title: n,
     body: a,
     badge: _,
     graphic: m,
-    size: b = "md",
-    actions: y,
+    size: y = "md",
+    actions: b,
     textLink: O,
-    gradientColor: A,
-    onRequestClose: v,
-    popoverRef: S,
-    position: I,
+    gradientColor: v,
+    onRequestClose: A,
+    popoverRef: I,
+    position: S,
     caretConfig: T,
     scrollBehavior: C
   } = e, N = E(e, ["title", "body", "badge", "graphic", "size", "actions", "textLink", "gradientColor", "onRequestClose", "popoverRef", "position", "caretConfig", "scrollBehavior"]), R = i.useCallback((e, t) => {
-    null == v || v(t)
-  }, [v]), w = i.useCallback(() => {
-    null == v || v("user:explicit")
-  }, [v]), P = h({
+    null == A || A(t)
+  }, [A]), w = i.useCallback(() => {
+    null == A || A("user:explicit")
+  }, [A]), P = h({
     targetElementRef: N.targetElementRef,
     shouldShow: N.shouldShow,
     hasVideo: N.hasVideo,
-    position: I,
+    position: S,
     caretConfig: T,
     onRequestClose: R,
-    gradientColor: A,
+    gradientColor: v,
     scrollBehavior: C
   }, "edge" === N.alignmentStrategy ? {
     alignmentStrategy: "edge",
@@ -113,27 +113,27 @@ function y(e) {
   });
   return (0, r.jsx)(l.x, g(h({}, P), {
     children: (0, r.jsxs)("div", {
-      ref: S,
+      ref: I,
       "data-mana-component": "popover",
       children: [(0, r.jsx)(d.q, {
         onClick: w,
-        variant: null != A ? "color-mix" : true
+        variant: null != v ? "color-mix" : true
       }), null != m && (0, r.jsx)("div", {
         className: s()(p.graphic, {
-          [p["graphic--".concat(b)]]: null != b
+          [p["graphic--".concat(y)]]: null != y
         }),
         children: (0, r.jsx)(o.vYh, g(h({}, m), {
-          aspectRatio: null != (t = m.aspectRatio) ? t : "sm" === b ? "2/1" : "16/9"
+          aspectRatio: null != (t = m.aspectRatio) ? t : "sm" === y ? "2/1" : "16/9"
         }))
       }), (0, r.jsx)(f.D, {
         title: n,
         body: a,
         badge: _,
         textLink: O
-      }), null != y && y.length > 0 ? (0, r.jsx)(c.Z, {
-        actions: y
+      }), null != b && b.length > 0 ? (0, r.jsx)(c.Z, {
+        actions: b
       }) : null, (0, r.jsx)(u.F, {})]
     })
   }))
 }
-let O = y
+let O = b

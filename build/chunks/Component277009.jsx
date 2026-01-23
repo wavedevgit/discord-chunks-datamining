@@ -31,7 +31,7 @@ function o(e) {
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
   }(e, ["className", "color"]);
-  return (0, r.jsx)(a.Text, function(e) {
+  return (0, r.jsx)(s.Text, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -50,7 +50,7 @@ function o(e) {
     return e
   }({
     className: i()({
-      [s.Q]: null == n
+      [a.Q]: null == n
     }, t),
     color: n
   }, l))

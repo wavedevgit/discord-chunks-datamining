@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 225437, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => f
 });
 var r, Chunk311907 = require("./311907.js"),
   Chunk506774 = require("./506774.js"),
@@ -45,7 +45,7 @@ let u = "hasSeenGuildTemplatePromotionTooltip",
   d = {},
   p = true === Chunk506774.w.get(u);
 
-function f(e) {
+function h(e) {
   let {
     guildId: t
   } = e;
@@ -53,7 +53,7 @@ function f(e) {
     [t]: false
   })
 }
-class h extends(r = Chunk311907.Ay.Store) {
+class g extends(r = Chunk311907.Ay.Store) {
   shouldShowGuildTemplateDirtyTooltip(e) {
     var t;
     return null != (t = d[e]) && t
@@ -62,8 +62,8 @@ class h extends(r = Chunk311907.Ay.Store) {
     return !p
   }
 }
-s(h, "displayName", "GuildTemplateTooltipStore");
-let A = new h(Chunk73153.h, {
+s(g, "displayName", "GuildTemplateTooltipStore");
+let f = new g(Chunk73153.h, {
   GUILD_TEMPLATE_DIRTY_TOOLTIP_REFRESH: function(e) {
     let {
       guildTemplate: t
@@ -80,6 +80,6 @@ let A = new h(Chunk73153.h, {
       [e.guildTemplate.source_guild_id]: false
     })
   },
-  GUILD_TEMPLATE_DIRTY_TOOLTIP_HIDE: f,
-  GUILD_TEMPLATE_DELETE_SUCCESS: f
+  GUILD_TEMPLATE_DIRTY_TOOLTIP_HIDE: h,
+  GUILD_TEMPLATE_DELETE_SUCCESS: h
 })

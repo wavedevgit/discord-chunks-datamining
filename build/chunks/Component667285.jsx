@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 667285, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,33 +18,33 @@ var Chunk311907 = require("./311907.js"),
   Chunk559868 = require("./559868.js"),
   Chunk985018 = require("./985018.jsx");
 
-function g(e) {
-  var t, g;
+function m(e) {
+  var t, m;
   let {
-    channel: m,
+    channel: b,
     children: A
-  } = e, y = (0, l.bG)([c.A], () => c.A.isBlocked(m.getRecipientId()));
-  (0, s.A)(m.id);
-  let O = (0, o.A)(m.id),
-    j = m.isSystemDM(),
-    v = y && !j && !m.isMultiUserDM(),
-    x = {};
-  if (j) {
-    let e = O ? b.intl.string(b.t["+KSnWX"]) : b.intl.string(b.t.hvVgAZ);
-    x.message = b.intl.string(b.t.Bt2N7D), x.subtitle = b.intl.string(b.t["n/Vzkw"]), x.buttonText = e, x.buttonIcon = O ? i.tfB : true, x.onButtonClick = () => {
-      if (O) {
-        open(h.Do), u.default.track(p.HAw.CHANGE_LOG_CTA_CLICKED, {
+  } = e, y = (0, l.bG)([c.A], () => c.A.isBlocked(b.getRecipientId()));
+  (0, a.A)(b.id);
+  let _ = (0, o.A)(b.id),
+    O = b.isSystemDM(),
+    j = y && !O && !b.isMultiUserDM(),
+    v = {};
+  if (O) {
+    let e = _ ? g.intl.string(g.t["+KSnWX"]) : g.intl.string(g.t.hvVgAZ);
+    v.message = g.intl.string(g.t.Bt2N7D), v.subtitle = g.intl.string(g.t["n/Vzkw"]), v.buttonText = e, v.buttonIcon = _ ? i.tfB : true, v.onButtonClick = () => {
+      if (_) {
+        open(f.Do), u.default.track(h.HAw.CHANGE_LOG_CTA_CLICKED, {
           cta_type: "chat_blocker",
-          target: h.Do
+          target: f.Do
         });
         return
       }
-      open(d.A.getArticleURL(p.MVz.SYSTEM_DMS))
-    }, x.imageSrc = n(388668)
-  } else v && (x.message = b.intl.string(b.t["9T6N5/"]), x.buttonText = b.intl.string(b.t.XyHpKH), x.onButtonClick = () => {
-    a.A.unblockUser(m.getRecipientId())
+      open(d.A.getArticleURL(h.MVz.SYSTEM_DMS))
+    }, v.imageSrc = n(388668)
+  } else j && (v.message = g.intl.string(g.t["9T6N5/"]), v.buttonText = g.intl.string(g.t.XyHpKH), v.onButtonClick = () => {
+    s.A.unblockUser(b.getRecipientId())
   });
-  return (0, r.jsx)(f.A, (t = function(e) {
+  return (0, r.jsx)(p.A, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -61,16 +61,16 @@ function g(e) {
       })
     }
     return e
-  }({}, x), g = g = {
+  }({}, v), m = m = {
     children: A
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(g)) : (function(e, t) {
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(m)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var r = Object.getOwnPropertySymbols(e);
       n.push.apply(n, r)
     }
     return n
-  })(Object(g)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(g, e))
+  })(Object(m)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(m, e))
   }), t))
 }

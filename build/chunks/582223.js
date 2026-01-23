@@ -13,8 +13,8 @@ var Chunk311907 = require("./311907.js"),
 
 function u(e) {
   let t = (0, o.A)(c.uD.CHAT_INPUT),
-    n = (0, r.bG)([a.A], () => a.A.isEnabled({
+    n = (0, r.bG)([s.A], () => s.A.isEnabled({
       shakeLocation: c.uD.CHAT_INPUT
     }));
-  return (0, r.bG)([i.A, s.Ay, l.default], () => n && i.A.isTyping(e, l.default.getId()) ? s.Ay.getUserComboShakeIntensity(l.default.getId(), e, t) : 0)
+  return (0, r.bG)([i.A, a.Ay, l.default], () => n && i.A.isTyping(e, l.default.getId()) ? a.Ay.getUserComboShakeIntensity(l.default.getId(), e, t) : 0)
 }

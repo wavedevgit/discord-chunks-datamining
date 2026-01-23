@@ -2,8 +2,8 @@
 /** chunk id: 292666, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  k: () => S,
-  p: () => I
+  k: () => I,
+  p: () => S
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -57,19 +57,19 @@ function E(e, t) {
   }), e
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = y(e, t), Object.getOwnPropertySymbols)
+  if (a = b(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -90,7 +90,7 @@ function O(e, t) {
   }, [n, e]), n
 }
 
-function A(e) {
+function v(e) {
   let {
     accessory: t,
     inputSize: n,
@@ -105,7 +105,7 @@ function A(e) {
   if ("icon" in t) {
     let {
       tooltip: e
-    } = t, a = b(t, ["tooltip"]), s = "md" === n ? "sm" : "xs", l = (0, r.jsx)(o.TVs, E(m({}, a), {
+    } = t, a = y(t, ["tooltip"]), s = "md" === n ? "sm" : "xs", l = (0, r.jsx)(o.TVs, E(m({}, a), {
       size: s,
       variant: "input-accessory"
     }));
@@ -123,7 +123,7 @@ function A(e) {
   if ("type" in t && "tags" === t.type) {
     let {
       type: e
-    } = t, n = b(t, ["type"]);
+    } = t, n = y(t, ["type"]);
     return (0, r.jsx)(o.CR_, E(m({}, n), {
       layout: "inline"
     }))
@@ -145,7 +145,7 @@ function A(e) {
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     inputSize: t,
     onClick: n
@@ -161,7 +161,7 @@ function v(e) {
   })
 }
 
-function S(e) {
+function I(e) {
   var t;
   let {
     disabled: n = false,
@@ -172,8 +172,8 @@ function S(e) {
     type: p = "text",
     placeholder: h = "",
     maxLength: g,
-    value: y,
-    defaultValue: S,
+    value: b,
+    defaultValue: I,
     minLength: T,
     error: C,
     defaultDirty: N = false,
@@ -184,18 +184,18 @@ function S(e) {
     fullWidth: x = false,
     clearable: L = false,
     showCharacterCount: j = false
-  } = e, M = b(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth", "clearable", "showCharacterCount"]), {
+  } = e, M = y(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth", "clearable", "showCharacterCount"]), {
     fieldProps: k
   } = (0, o.ndh)(M), U = (0, f.Y)({
     validateOn: P,
     error: C,
-    value: y,
+    value: b,
     minLength: T,
     maxLength: g,
     defaultDirty: N
   }), {
     setShouldValidate: G
-  } = U, V = O(y, S), F = "object" == typeof R && "type" in R && "tags" === R.type, B = e => {
+  } = U, V = O(b, I), F = "object" == typeof R && "type" in R && "tags" === R.type, B = e => {
     var t, n;
     let r = e.currentTarget.value;
     null == (t = M.onChange) || t.call(M, r, u), G(true), null == (n = V.setHasValue) || n.call(V, "" !== r)
@@ -214,20 +214,20 @@ function S(e) {
   }, K = i.useRef(null), z = M.readOnly;
   null == z && false === a && (z = true);
   let q = null;
-  ("boolean" == typeof L ? L && null != y && "" !== y && !z : L.show) ? q = (0, r.jsx)(v, {
+  ("boolean" == typeof L ? L && null != b && "" !== b && !z : L.show) ? q = (0, r.jsx)(A, {
     inputSize: D,
     onClick: W
-  }): null != w && (q = (0, r.jsx)(A, {
+  }): null != w && (q = (0, r.jsx)(v, {
     accessory: w,
     inputSize: D
   }));
   let X = null;
-  null != R && (X = (0, r.jsx)(A, {
+  null != R && (X = (0, r.jsx)(v, {
     accessory: R,
     inputSize: D
   }));
   let Z = j ? (0, r.jsx)(d.n, {
-    value: y,
+    value: b,
     maxLength: g
   }) : null;
   return (0, r.jsx)(o.D0$, E(m({}, k), {
@@ -247,7 +247,7 @@ function S(e) {
       children: [X, (0, r.jsx)(o.vN3, E(m({
         ringTarget: K
       }, c), {
-        children: (0, r.jsx)(I, E(m({
+        children: (0, r.jsx)(S, E(m({
           name: u,
           className: _.input,
           disabled: n,
@@ -257,8 +257,8 @@ function S(e) {
           placeholder: h,
           maxLength: g,
           minLength: T,
-          value: y,
-          defaultValue: S,
+          value: b,
+          defaultValue: I,
           "data-mana-component": "text-input"
         }, M), {
           onChange: B,
@@ -271,12 +271,12 @@ function S(e) {
   }))
 }
 
-function I(e) {
+function S(e) {
   let {
     value: t,
     defaultValue: n,
     "aria-labelledby": a
-  } = e, s = b(e, ["value", "defaultValue", "aria-labelledby"]), l = O(t, n), c = i.useContext(o._zY);
+  } = e, s = y(e, ["value", "defaultValue", "aria-labelledby"]), l = O(t, n), c = i.useContext(o._zY);
   return (0, r.jsx)("input", E(m({}, s), {
     value: t,
     defaultValue: n,

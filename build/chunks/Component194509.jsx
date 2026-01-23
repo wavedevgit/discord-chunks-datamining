@@ -29,7 +29,7 @@ let _ = e => e === d.pe.TIER_0 ? f.intl.string(f.t.rk4Uu8) : f.intl.string(f.t.V
       premiumModalAnalyticsLocation: m,
       giftMessage: g,
       onClick: E
-    } = e, b = (0, c.Ay)(), y = _(h);
+    } = e, y = (0, c.Ay)(), b = _(h);
     return (0, r.jsx)(u.A, {
       isGift: true,
       subscriptionTier: h,
@@ -44,7 +44,7 @@ let _ = e => e === d.pe.TIER_0 ? f.intl.string(f.t.rk4Uu8) : f.intl.string(f.t.V
         return (0, r.jsxs)(o.$n, {
           "data-migration-pending": true,
           innerClassName: p.Nq,
-          color: null != i ? i : (0, s.Mw)(b) ? o.XD.WHITE : o.XD.BRAND,
+          color: null != i ? i : (0, s.Mw)(y) ? o.XD.WHITE : o.XD.BRAND,
           look: null != d ? d : o.pR.OUTLINED,
           className: a()(t, p.xP),
           onClick: u,
@@ -54,7 +54,7 @@ let _ = e => e === d.pe.TIER_0 ? f.intl.string(f.t.rk4Uu8) : f.intl.string(f.t.V
             className: p.ez
           }), (0, r.jsx)("span", {
             className: a()(p._d, null == n ? true : n.textClassName),
-            children: null != (c = null == n ? true : n.textOverride) ? c : y
+            children: null != (c = null == n ? true : n.textOverride) ? c : b
           })]
         })
       }

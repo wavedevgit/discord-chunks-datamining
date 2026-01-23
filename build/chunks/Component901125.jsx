@@ -26,12 +26,12 @@ let m = e => {
     } = e,
     E = (0, d.ar)();
   if (null == i) return null;
-  let b = null != i ? u.Ay.getPremiumPlanItem(i) : null;
-  if (u.Ay.isBoostOnlySubscription(i) ? t = _.intl.string(_.t.Uj0md3) : null != b && (t = u.Ay.getTierDisplayNameByPlanId(b.planId)), null == t) return null;
-  let y = () => (0, l.openUserSettings)(o.X.SUBSCRIPTIONS_PANEL, {
+  let y = null != i ? u.Ay.getPremiumPlanItem(i) : null;
+  if (u.Ay.isBoostOnlySubscription(i) ? t = _.intl.string(_.t.Uj0md3) : null != y && (t = u.Ay.getTierDisplayNameByPlanId(y.planId)), null == t) return null;
+  let b = () => (0, l.openUserSettings)(o.X.SUBSCRIPTIONS_PANEL, {
       section: p.nc_.SUBSCRIPTIONS
     }),
-    O = (null != b ? u.Ay.getSkuIdForPlan(b.planId) : null) === f.pe.TIER_1;
+    O = (null != y ? u.Ay.getSkuIdForPlan(y.planId) : null) === f.pe.TIER_1;
   return n = null != g ? g : E ? "always-white" : "text-default", (0, r.jsxs)(s.ZpM, {
     className: a()(h.kL, m, {
       [h.He]: E
@@ -50,10 +50,10 @@ let m = e => {
       color: n,
       children: O ? _.intl.format(_.t["tYuv+T"], {
         helpdeskArticle: c.A.getArticleURL(p.MVz.PREMIUM_DETAILS),
-        onSubscriptionsClick: y
+        onSubscriptionsClick: b
       }) : _.intl.format(_.t.xHRgU2, {
         subscriptionName: t,
-        onSubscriptionsClick: y
+        onSubscriptionsClick: b
       })
     })]
   })

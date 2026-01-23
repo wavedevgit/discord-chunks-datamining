@@ -2,7 +2,7 @@
 /** chunk id: 284605, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  i: () => S
+  i: () => I
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -33,7 +33,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,15 +45,15 @@ function A(e) {
   }
   return e
 }
-let v = 600;
+let A = 600;
 
-function S(e) {
+function I(e) {
   let {
     guildProductListing: t,
     guildId: n,
     location: O,
-    shouldShowFullDescriptionButton: S = true,
-    hideRoleTag: I = false,
+    shouldShowFullDescriptionButton: I = true,
+    hideRoleTag: S = false,
     lineClamp: T = 1,
     cardWidth: C,
     cardHeight: N,
@@ -62,8 +62,8 @@ function S(e) {
     showOpaqueBackground: P = false
   } = e, D = (0, i.bG)([u.A], () => u.A.getGuild(n), [n]), x = (0, i.bG)([c.A], () => {
     var e;
-    return c.A.getRole(n, null != (e = null == t ? true : t.role_id) ? e : y.dJq)
-  }), L = (0, s.R)(t, v), j = (0, m.z)(t), M = (0, f.BB)(D), {
+    return c.A.getRole(n, null != (e = null == t ? true : t.role_id) ? e : b.dJq)
+  }), L = (0, s.R)(t, A), j = (0, m.z)(t), M = (0, f.BB)(D), {
     shouldHideGuildPurchaseEntryPoints: k
   } = (0, l.MH)(n), U = (0, m.X)(t), G = (0, E.A)({
     guildId: n,
@@ -71,7 +71,7 @@ function S(e) {
     sourceAnalyticsLocations: O
   });
   if (null == D || k) return null;
-  let V = () => (0, b.M)({
+  let V = () => (0, y.M)({
       guildId: n,
       guildProductListingId: t.id,
       analyticsLocation: O
@@ -109,14 +109,14 @@ function S(e) {
     description: t.description,
     formattedPrice: U,
     role: x,
-    ctaComponent: (0, r.jsx)(a.$nd, A({}, G)),
+    ctaComponent: (0, r.jsx)(a.$nd, v({}, G)),
     productType: j,
-    shouldShowFullDescriptionButton: S,
+    shouldShowFullDescriptionButton: I,
     onShowFullDescription: V,
     onTapCard: V,
     actionMenu: Y,
     showOpaqueBackground: P,
-    hideRoleTag: I,
+    hideRoleTag: S,
     lineClamp: T,
     cardWidth: C,
     cardHeight: N,

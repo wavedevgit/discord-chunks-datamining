@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $: () => j,
-  n: () => O
+  n: () => _
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,70 +21,70 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk221611 = require("./221611.js");
 
-function h(e) {
+function x(e) {
   let {
     guildId: t,
     emojiId: n,
     emojiName: l,
     title: a,
-    description: o,
+    description: c,
     targetType: d,
     index: u,
-    dndName: g,
-    onEdit: b,
-    onMove: h,
+    dndName: m,
+    onEdit: p,
+    onMove: x,
     disabled: j = false
-  } = e, O = i.useRef(null), y = i.useRef(null), {
+  } = e, _ = i.useRef(null), O = i.useRef(null), {
     drag: v,
-    dragPreview: A,
-    drop: E,
-    isDragging: N
-  } = (0, m.A)(O, d, u, h);
-  return v(y), A(E(O)), (0, r.jsxs)("div", {
-    ref: O,
-    className: s()(x.Nr, {
-      [x.wy]: N,
-      [x.r9]: j
+    dragPreview: y,
+    drop: A,
+    isDragging: E
+  } = (0, f.A)(_, d, u, x);
+  return v(O), y(A(_)), (0, r.jsxs)("div", {
+    ref: _,
+    className: s()(h.Nr, {
+      [h.wy]: E,
+      [h.r9]: j
     }),
     children: [(0, r.jsxs)("div", {
-      className: x.kV,
-      children: [(0, r.jsx)(f.A, {
+      className: h.kV,
+      children: [(0, r.jsx)(g.A, {
         guildId: t,
         emojiId: n,
         emojiName: l,
-        className: x.Zg
+        className: h.Zg
       }), !j && (0, r.jsx)("div", {
-        ref: y,
-        className: x.$p,
-        "data-dnd-name": g,
-        children: (0, r.jsx)(c.WP0, {
+        ref: O,
+        className: h.$p,
+        "data-dnd-name": m,
+        children: (0, r.jsx)(o.WP0, {
           size: "xs",
           color: "currentColor",
-          className: x.co
+          className: h.co
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: x.O,
-      children: [(0, r.jsx)(c.Text, {
+      className: h.O,
+      children: [(0, r.jsx)(o.Text, {
         color: "text-strong",
         variant: "text-md/semibold",
         children: a
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(o.Text, {
         color: "interactive-text-default",
         variant: "text-sm/normal",
-        children: o
+        children: c
       })]
     }), (0, r.jsx)("div", {
-      className: x.eB,
-      children: !j && (0, r.jsx)(c.DUT, {
-        className: x.xQ,
-        onClick: j ? true : b,
-        "aria-label": p.intl.string(p.t.Eoo8h6),
+      className: h.eB,
+      children: !j && (0, r.jsx)(o.DUT, {
+        className: h.xQ,
+        onClick: j ? true : p,
+        "aria-label": b.intl.string(b.t.Eoo8h6),
         "aria-disabled": j,
-        children: (0, r.jsx)(c.R2l, {
+        children: (0, r.jsx)(o.R2l, {
           size: "xs",
           color: "currentColor",
-          className: x.a2
+          className: h.a2
         })
       })
     })]
@@ -96,60 +96,60 @@ function j(e) {
     benefits: t,
     onEdit: n,
     onMove: l,
-    guildId: c
-  } = e, f = (0, o.GV)(), {
-    isDragging: m
+    guildId: o
+  } = e, g = (0, c.GV)(), {
+    isDragging: f
   } = (0, a.V)(e => ({
-    isDragging: e.getItemType() === f
-  })), p = (0, u.gN)();
+    isDragging: e.getItemType() === g
+  })), b = (0, u.gN)();
   return 0 === t.length ? null : (0, r.jsx)("div", {
-    className: s()(x.kL, {
-      [x.Id]: m
+    className: s()(h.kL, {
+      [h.Id]: f
     }),
     children: t.map((e, t) => (0, r.jsxs)(i.Fragment, {
       children: [t > 0 ? (0, r.jsx)("div", {
-        className: x.yF
-      }) : null, (0, r.jsx)(h, {
-        guildId: c,
+        className: h.yF
+      }) : null, (0, r.jsx)(x, {
+        guildId: o,
         emojiId: e.emoji_id,
         emojiName: e.emoji_name,
-        title: (0, g.A)(e),
+        title: (0, m.A)(e),
         description: e.description,
-        targetType: f,
+        targetType: g,
         index: t,
-        dndName: (0, b.A)(e),
+        dndName: (0, p.A)(e),
         onEdit: () => n(t),
         onMove: l,
-        disabled: p
+        disabled: b
       })]
     }, (0, d.nh)(e)))
   })
 }
 
-function O(e) {
+function _(e) {
   let {
     onClick: t,
     children: n,
     disabled: i = false
   } = e;
-  return (0, r.jsx)(c.DUT, {
-    className: x.kL,
+  return (0, r.jsx)(o.DUT, {
+    className: h.kL,
     onClick: i ? true : t,
     "aria-disabled": i,
     children: (0, r.jsxs)("div", {
-      className: s()(x.Nr, x.xB, {
-        [x.r9]: i
+      className: s()(h.Nr, h.xB, {
+        [h.r9]: i
       }),
       children: [(0, r.jsx)("div", {
-        className: x.kV,
-        children: (0, r.jsx)(c.U1e, {
+        className: h.kV,
+        children: (0, r.jsx)(o.U1e, {
           size: "xs",
           color: "currentColor",
-          className: x.Ak
+          className: h.Ak
         })
       }), (0, r.jsx)("div", {
-        className: x.O,
-        children: (0, r.jsx)(c.Text, {
+        className: h.O,
+        children: (0, r.jsx)(o.Text, {
           color: "text-strong",
           variant: "text-md/normal",
           children: n

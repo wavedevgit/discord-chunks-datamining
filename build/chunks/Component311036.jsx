@@ -89,7 +89,7 @@ let g = {
         status: e.status,
         hidePersonalInformation: h.hidePersonalInformation
       }, e.user.id)),
-      b = o.map((e, t) => (0, r.jsx)(a.Ay.Generic, {
+      y = o.map((e, t) => (0, r.jsx)(a.Ay.Generic, {
         onClick: g,
         onHover: m,
         selected: f === t + s.length,
@@ -99,7 +99,7 @@ let g = {
         "aria-label": e.text,
         badge: "@game" === e.text || "@time" === e.text ? "new" : true
       }, e.text)),
-      y = l.map((e, t) => (0, r.jsx)(a.Ay.Role, {
+      b = l.map((e, t) => (0, r.jsx)(a.Ay.Role, {
         onClick: g,
         onHover: m,
         selected: f === t + s.length + o.length,
@@ -114,7 +114,7 @@ let g = {
         titleWithoutQuery: n,
         query: _,
         getQuery: e => "".concat("@").concat(e)
-      }), E, s.length > 0 && o.length > 0 ? (0, r.jsx)(a.Ay.Divider, {}) : null, b, s.length > 0 && l.length > 0 || o.length > 0 && l.length > 0 ? (0, r.jsx)(a.Ay.Divider, {}) : null, y]
+      }), E, s.length > 0 && o.length > 0 ? (0, r.jsx)(a.Ay.Divider, {}) : null, y, s.length > 0 && l.length > 0 || o.length > 0 && l.length > 0 ? (0, r.jsx)(a.Ay.Divider, {}) : null, b]
     }, "mentions")
   },
   onSelect(e) {

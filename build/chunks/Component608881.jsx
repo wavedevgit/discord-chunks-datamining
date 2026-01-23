@@ -25,35 +25,35 @@ var Chunk503698 = require("./503698.js"),
 function E() {
   let {
     analyticsLocations: e
-  } = (0, d.Ay)(u.A.ACTIVE_NOW_COLUMN), t = (0, a.bG)([A.A], () => A.A.hasConsented(m.YAq.PERSONALIZATION)) ? [] : [s.M.NOW_PLAYING_CONSENT_CARD], n = (0, p.GV)();
+  } = (0, d.Ay)(u.A.ACTIVE_NOW_COLUMN), t = (0, a.bG)([f.A], () => f.A.hasConsented(A.YAq.PERSONALIZATION)) ? [] : [s.M.NOW_PLAYING_CONSENT_CARD], n = (0, p.GV)();
   return (0, r.jsx)(d.f5, {
     value: e,
     children: (0, r.jsx)(c.A, {
-      section: m.JJy.ACTIVE_NOW_COLUMN,
+      section: A.JJy.ACTIVE_NOW_COLUMN,
       children: (0, r.jsx)("aside", {
-        className: l()(_.kL, "refresh-active-now"),
+        className: l()(b.kL, "refresh-active-now"),
         "aria-labelledby": n,
         children: (0, r.jsx)(o.HOs, {
-          className: _.XG,
+          className: b.XG,
           children: (0, r.jsxs)("div", {
             children: [(0, r.jsx)(o.Heading, {
               variant: "heading-lg/semibold",
-              className: _.wx,
+              className: b.wx,
               id: n,
-              children: b.intl.string(b.t.F4Zggw)
-            }), (0, r.jsx)(f.Ay, {
+              children: _.intl.string(_.t.F4Zggw)
+            }), (0, r.jsx)(h.Ay, {
               contentTypes: t,
               children: e => {
                 let {
                   visibleContent: t,
                   markAsDismissed: n
                 } = e;
-                if (t === s.M.NOW_PLAYING_CONSENT_CARD) return (0, r.jsx)(h.A, {
-                  className: _.__invalid_consentCard,
+                if (t === s.M.NOW_PLAYING_CONSENT_CARD) return (0, r.jsx)(g.A, {
+                  className: b.__invalid_consentCard,
                   markAsDismissed: n
                 })
               }
-            }), (0, r.jsx)(g.A, {})]
+            }), (0, r.jsx)(m.A, {})]
           })
         })
       })

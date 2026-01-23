@@ -2,7 +2,7 @@
 /** chunk id: 520165, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./896048.js");
 var Chunk15285 = require("./15285.js"),
   Chunk652896 = require("./652896.js"),
@@ -58,22 +58,22 @@ function E(e) {
       }
     })(),
     E = null != (t = null == f ? true : f.id) ? t : null == m ? true : m.id,
-    b = null != (n = null == f ? true : f.sourceName) ? n : null == m ? true : m.name,
-    y = c.A.getChannelId(),
-    O = null == b && null != y;
+    y = null != (n = null == f ? true : f.sourceName) ? n : null == m ? true : m.name,
+    b = c.A.getChannelId(),
+    O = null == y && null != b;
   if (O) {
-    let e = null != y ? o.A.getChannel(y) : null;
-    b = null != (d = null == e ? true : e.name) ? d : ""
+    let e = null != b ? o.A.getChannel(b) : null;
+    y = null != (d = null == e ? true : e.name) ? d : ""
   }
   return {
-    sourceName: b,
+    sourceName: y,
     sourceApplicationId: E,
     activity: g(u.A.getActivities(false).find(e => e.type === h.$pd.PLAYING && e.application_id === E)),
     isVoiceOnly: O
   }
 }
 
-function b(e) {
+function y(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "manual",
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : p.nQ.CLIP,
     r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : [],
@@ -86,14 +86,14 @@ function b(e) {
     } = E(e),
     h = c.A.getChannelId(),
     g = c.A.getGuildId(),
-    b = new Set([s.default.getId()]);
-  null != h && (b = b.union(new Set(Object.keys(d.A.getVoiceStatesForChannel(h)))));
-  let y = "auto" === t;
+    y = new Set([s.default.getId()]);
+  null != h && (y = y.union(new Set(Object.keys(d.A.getVoiceStatesForChannel(h)))));
+  let b = "auto" === t;
   r.forEach(e => {
     let {
       signal: t
     } = e;
-    "userId" in t && null != t.userId && b.add(t.userId)
+    "userId" in t && null != t.userId && y.add(t.userId)
   });
   let O = u && n === p.nQ.CLIP ? p.nQ.VOICE_CLIP : n;
   return {
@@ -102,9 +102,9 @@ function b(e) {
     applicationName: null != a ? a : m.intl.string(m.t.qtSJxb),
     applicationId: o,
     activity: l,
-    users: Array.from(b),
+    users: Array.from(y),
     clipMethod: t,
-    isTemporary: y,
+    isTemporary: b,
     guildId: null != g ? g : true,
     channelId: null != h ? h : true,
     timeline: r,

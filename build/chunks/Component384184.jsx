@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 384184, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,20 +18,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk360830 = require("./360830.js");
 
-function m(e) {
+function A(e) {
   let {
     active: t,
     user: n,
-    channel: m
-  } = e, b = (0, d.r)(), _ = i.useCallback(() => {
-    (0, a.showToast)((0, a.createToast)(A.intl.string(A.t.pIQ3h4), a.ToastType.FAILURE)), s.A.increment({
+    channel: A
+  } = e, _ = (0, d.r)(), b = i.useCallback(() => {
+    (0, a.showToast)((0, a.createToast)(f.intl.string(f.t.pIQ3h4), a.ToastType.FAILURE)), s.A.increment({
       name: l.K.SPAM_MESSAGE_REQUEST_ERROR_VIEW
     })
   }, []), E = i.useCallback(() => {
     c.A.closeChannelSidebar(u.fe)
   }, []), O = i.useCallback(() => {
-    c.A.closeChannelSidebar(u.fe), b && (0, o.iN)(m.id)
-  }, [m.id, b]), {
+    c.A.closeChannelSidebar(u.fe), _ && (0, o.iN)(A.id)
+  }, [A.id, _]), {
     acceptMessageRequest: y,
     isAcceptLoading: I,
     isUserProfileLoading: v,
@@ -40,27 +40,27 @@ function m(e) {
     user: n,
     onAcceptSuccess: O,
     onRejectSuccess: E,
-    onError: _
+    onError: b
   }), C = I || v, N = C || S;
   return (0, r.jsxs)("div", {
-    className: g.kL,
-    children: [(0, r.jsx)(f.A, {
+    className: m.kL,
+    children: [(0, r.jsx)(h.A, {
       otherUser: n,
-      channel: m,
+      channel: A,
       active: t
     }), (0, r.jsxs)("div", {
-      className: g.o1,
+      className: m.o1,
       children: [(0, r.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",
-        text: A.intl.string(A.t.vicfl6),
+        text: f.intl.string(f.t.vicfl6),
         onClick: e => {
-          y(m.id), e.stopPropagation()
+          y(A.id), e.stopPropagation()
         },
         disabled: N,
         loading: C
-      }), (0, r.jsx)(h.A, {
-        channel: m
+      }), (0, r.jsx)(g.A, {
+        channel: A
       })]
     })]
   })

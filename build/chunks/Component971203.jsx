@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 971203, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,7 +17,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,34 +49,34 @@ function m(e, t) {
   }), e
 }
 
-function b(e) {
-  let t = i.useContext(f.AnalyticsContext),
+function _(e) {
+  let t = i.useContext(h.AnalyticsContext),
     n = e.voiceChannels[0],
-    b = (0, l.bG)([d.A], () => null != n && d.A.can(h.xBc.CONNECT, n.channel));
+    _ = (0, l.bG)([d.A], () => null != n && d.A.can(g.xBc.CONNECT, n.channel));
   return null == n ? null : [(0, r.jsx)(a.Drp, {
     id: "join-voice",
     action: function() {
-      (0, c.iN)(n.channel.id), s.default.selectVoiceChannel(n.channel.id), o.Ay.trackWithMetadata(h.HAw.ACTIVITY_FEED_VOICE_CHANNEL_VISITED, g({
-        source: m(g({}, t.location), {
-          object: h.ZSU.LIST_ITEM
+      (0, c.iN)(n.channel.id), s.default.selectVoiceChannel(n.channel.id), o.Ay.trackWithMetadata(g.HAw.ACTIVITY_FEED_VOICE_CHANNEL_VISITED, m({
+        source: A(m({}, t.location), {
+          object: g.ZSU.LIST_ITEM
         }),
         guild_id: n.guild.id,
         channel_id: n.channel.id
       }, (0, p.o)(e)))
     },
-    label: A.intl.string(A.t["8yOlh9"]),
-    disabled: !b
+    label: f.intl.string(f.t["8yOlh9"]),
+    disabled: !_
   }, "join-voice"), (0, r.jsx)(a.Drp, {
     id: "goto-server",
     action: function() {
-      (0, u.u)(n.guild.id), o.Ay.trackWithMetadata(h.HAw.ACTIVITY_FEED_GUILD_VISITED, g({
-        source: m(g({}, t.location), {
-          object: h.ZSU.LIST_ITEM
+      (0, u.u)(n.guild.id), o.Ay.trackWithMetadata(g.HAw.ACTIVITY_FEED_GUILD_VISITED, m({
+        source: A(m({}, t.location), {
+          object: g.ZSU.LIST_ITEM
         }),
         guild_id: n.guild.id,
         af_recently_played: false
       }, (0, p.o)(e)))
     },
-    label: A.intl.string(A.t.RGgqm1)
+    label: f.intl.string(f.t.RGgqm1)
   }, "goto-server")]
 }

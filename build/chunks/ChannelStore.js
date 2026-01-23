@@ -26,7 +26,7 @@ var r, Chunk735438 = require("./735438.js"),
   Chunk287809 = require("./287809.js"),
   Chunk652215 = require("./652215.js");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -153,7 +153,7 @@ function X(e, t, n) {
 
 function Z(e) {
   if (N.fileOnly("Deleting guild channels for ".concat(e)), null != P[e]) {
-    for (let t of b.default.keys(P[e])) delete w[t];
+    for (let t of y.default.keys(P[e])) delete w[t];
     delete P[e]
   }
   null != j[e] && delete j[e]
@@ -175,7 +175,7 @@ function J(e) {
 
 function ee(e) {
   if (null != e.recipients.find(e => (0, _.A)(e))) returnfalse;
-  D[e.id] = e, e.type === v.rbe.DM && (M[e.getRecipientId()] = e.id), k += 1
+  D[e.id] = e, e.type === A.rbe.DM && (M[e.getRecipientId()] = e.id), k += 1
 }
 
 function et(e) {
@@ -227,7 +227,7 @@ function es(e) {
       for (let e of (N.fileOnly("ConnectionOpen contained full channels for ".concat(t, " #:").concat(n.items.length)), Z(t), V.add(t), f.A.restored(t), n.items)) en(e);
       break;
     case "update":
-      for (let e of ((n.writes.length > 0 || n.deletes.length > 0) && f.A.invalidate(t), n.deletes)) eA(w[e]);
+      for (let e of ((n.writes.length > 0 || n.deletes.length > 0) && f.A.invalidate(t), n.deletes)) ev(w[e]);
       for (let e of n.writes) en(e)
   }
   if (null != r)
@@ -251,7 +251,7 @@ function el(e) {
       var t, r;
       N.fileOnly("Restoring guild channels b/c partial in bg sync, for ".concat(e.id, " #:").concat(eL(e.id))), a().forEach(n[e.id], en);
       let i = null != (t = e.partial_updates.deleted_channel_ids) ? t : [];
-      i.length > 0 && (q(e.id, 1, "handleBackgroundSync"), i.forEach(e => eA(w[e]))), null == (r = e.partial_updates.channels) || r.forEach(t => en((0, g.UE)(t, e.id)))
+      i.length > 0 && (q(e.id, 1, "handleBackgroundSync"), i.forEach(e => ev(w[e]))), null == (r = e.partial_updates.channels) || r.forEach(t => en((0, g.UE)(t, e.id)))
     } else N.fileOnly("BG sync contained full channels for ".concat(e.id, " #:").concat(e.channels.length)), Z(e.id), V.add(e.id), f.A.restored(e.id), e.channels.forEach(t => en((0, g.UE)(t, e.id)))
   })
 }
@@ -302,7 +302,7 @@ function eh(e) {
   if (null == t) t = e.channel;
   else {
     var n;
-    t = t.merge(C(I({}, e.channel.toJS()), {
+    t = t.merge(C(S({}, e.channel.toJS()), {
       bitrate: null != (n = e.channel.bitrate) ? n : t.bitrate
     }))
   }
@@ -315,7 +315,7 @@ function em(e) {
     overwrite: n
   } = e, r = $(t);
   if (null == r) returnfalse;
-  J(r.set("permissionOverwrites", C(I({}, r.permissionOverwrites), {
+  J(r.set("permissionOverwrites", C(S({}, r.permissionOverwrites), {
     [n.id]: n
   })))
 }
@@ -326,7 +326,7 @@ function eg(e) {
     overwriteId: n
   } = e, r = $(t);
   if (null == r) returnfalse;
-  let i = I({}, r.permissionOverwrites);
+  let i = S({}, r.permissionOverwrites);
   delete i[n], J(r.set("permissionOverwrites", i))
 }
 
@@ -340,7 +340,7 @@ function eE(e) {
   t && Object.values(L).forEach(e => J(e))
 }
 
-function eb(e) {
+function ey(e) {
   let {
     threads: t
   } = e;
@@ -349,7 +349,7 @@ function eb(e) {
   })
 }
 
-function ey(e) {
+function eb(e) {
   let {
     threads: t
   } = e;
@@ -359,37 +359,37 @@ function ey(e) {
 }
 
 function eO(e) {
-  if ("basicPermissions" in e || e.type !== v.rbe.DM) return;
+  if ("basicPermissions" in e || e.type !== A.rbe.DM) return;
   let t = e.getRecipientId();
   M[t] === e.id && delete M[t]
 }
 
-function eA(e) {
+function ev(e) {
   if (null == e) return;
   let t = e.guild_id;
   e.id in D && delete D[e.id], e.id in w && delete w[e.id], e.id in L && delete L[e.id], null != t && (null != P[t] && e.id in P[t] && delete P[t][e.id], null != j[t] && e.id in j[t] && delete j[t][e.id]), ei(e)
 }
 
-function ev(e) {
+function eA(e) {
   var t, n;
   let {
     channel: r
   } = e, i = null != (t = null != (n = w[r.id]) ? n : D[r.id]) ? t : L[r.id];
   if (null == i) returnfalse;
-  eA(i), eO(i)
-}
-
-function eS(e) {
-  es(e.guild)
+  ev(i), eO(i)
 }
 
 function eI(e) {
+  es(e.guild)
+}
+
+function eS(e) {
   N.fileOnly("GuildDelete of ".concat(e.guild.id)), Z(e.guild.id), V.delete(e.guild.id), f.A.invalidate(e.guild.id)
 }
 
 function eT(e) {
   let t = $(e.channelId),
-    n = y.default.getId();
+    n = b.default.getId();
   return null != t && !!t.isPrivate() && (J(t.addRecipient(e.user.id, e.nick, n)), true)
 }
 
@@ -444,7 +444,7 @@ function eD() {
 }
 class ex extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(y.default, f.A, m.A, O.A, A.default), this.syncWith([m.A], eP)
+    this.waitFor(b.default, f.A, m.A, O.A, v.default), this.syncWith([m.A], eP)
   }
   hasChannel(e) {
     return null != Q(e)
@@ -457,11 +457,11 @@ class ex extends(r = Chunk311907.Ay.Store) {
   }
   loadAllGuildAndPrivateChannelsFromDisk() {
     for (let e of O.A.getGuildIds()) q(e, 1, "loadAllGuildAndPrivateChannelsFromDisk");
-    return I({}, w, D)
+    return S({}, w, D)
   }
   getChannelIds(e) {
     var t, n;
-    return (q(e, 0, "getChannelIds"), null == e) ? b.default.keys(D) : b.default.keys(null != (t = null != (n = f.A.getGuildBasicChannels(e)) ? n : P[e]) ? t : R)
+    return (q(e, 0, "getChannelIds"), null == e) ? y.default.keys(D) : y.default.keys(null != (t = null != (n = f.A.getGuildBasicChannels(e)) ? n : P[e]) ? t : R)
   }
   getMutablePrivateChannels() {
     return D
@@ -476,10 +476,10 @@ class ex extends(r = Chunk311907.Ay.Store) {
   }
   getSortedLinkedChannelsForGuild(e) {
     var t;
-    return a().values(null != (t = j[e]) ? t : R).sort((e, t) => b.default.compare(e.id, t.id))
+    return a().values(null != (t = j[e]) ? t : R).sort((e, t) => y.default.compare(e.id, t.id))
   }
   getSortedPrivateChannels() {
-    return a()(D).values().sort((e, t) => b.default.compare(e.lastMessageId, t.lastMessageId)).reverse().value()
+    return a()(D).values().sort((e, t) => y.default.compare(e.lastMessageId, t.lastMessageId)).reverse().value()
   }
   getDMFromUserId(e) {
     if (null != e) return M[e]
@@ -491,7 +491,7 @@ class ex extends(r = Chunk311907.Ay.Store) {
     return M
   }
   getDMUserIds() {
-    return b.default.keys(M)
+    return y.default.keys(M)
   }
   getPrivateChannelsVersion() {
     return k
@@ -507,13 +507,13 @@ class ex extends(r = Chunk311907.Ay.Store) {
     return a().values(L).filter(t => t.guild_id === e)
   }
   getInitialOverlayState() {
-    return I({}, w, D, L)
+    return S({}, w, D, L)
   }
   getDebugInfo() {
     return {
-      loadedGuildIds: Array.from(V).sort(b.default.compare),
-      pendingGuildLoads: Object.keys(F).sort(b.default.compare),
-      guildSizes: Object.keys(P).sort(b.default.compare).map(e => "".concat(e, ": ").concat(eL(e)))
+      loadedGuildIds: Array.from(V).sort(y.default.compare),
+      pendingGuildLoads: Object.keys(F).sort(y.default.compare),
+      guildSizes: Object.keys(P).sort(y.default.compare).map(e => "".concat(e, ": ").concat(eL(e)))
     }
   }
 }
@@ -521,13 +521,13 @@ class ex extends(r = Chunk311907.Ay.Store) {
 function eL(e) {
   return null == P[e] ? null : Object.keys(P[e]).length
 }
-S(ex, "displayName", "ChannelStore");
+I(ex, "displayName", "ChannelStore");
 let ej = new ex(Chunk73153.h, {
   BACKGROUND_SYNC: el,
   CACHE_LOADED_LAZY: ep,
   CACHE_LOADED: ed,
   CHANNEL_CREATE: e_,
-  CHANNEL_DELETE: ev,
+  CHANNEL_DELETE: eA,
   CHANNEL_RECIPIENT_ADD: eT,
   CHANNEL_RECIPIENT_REMOVE: eC,
   CHANNEL_UPDATES: eE,
@@ -535,19 +535,19 @@ let ej = new ex(Chunk73153.h, {
   CONNECTION_OPEN: ea,
   CHANNEL_PERMISSIONS_PUT_OVERWRITE_SUCCESS: em,
   CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: eg,
-  GUILD_CREATE: eS,
-  GUILD_DELETE: eI,
-  LOAD_ARCHIVED_THREADS_SUCCESS: ey,
+  GUILD_CREATE: eI,
+  GUILD_DELETE: eS,
+  LOAD_ARCHIVED_THREADS_SUCCESS: eb,
   LOAD_CHANNELS: ec,
   LOAD_MESSAGES_AROUND_SUCCESS: eN,
   LOAD_MESSAGES_SUCCESS: eN,
-  LOAD_THREADS_SUCCESS: ey,
+  LOAD_THREADS_SUCCESS: eb,
   LOGOUT: eD,
   OVERLAY_INITIALIZE: ef,
   SEARCH_MESSAGES_SUCCESS: eR,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: eR,
   THREAD_CREATE: eh,
-  THREAD_DELETE: ev,
-  THREAD_LIST_SYNC: eb,
+  THREAD_DELETE: eA,
+  THREAD_LIST_SYNC: ey,
   THREAD_UPDATE: eh
 })

@@ -24,9 +24,9 @@ var Chunk284009 = require("./284009.js"),
   Chunk502075 = require("./502075.js"),
   Chunk652215 = require("./652215.js"),
   Chunk731854 = require("./731854.js");
-let v = 3e5,
-  S = 6e4,
-  I = new Chunk451988.Ep,
+let A = 3e5,
+  I = 6e4,
+  S = new Chunk451988.Ep,
   T = false,
   C = window.document.createElement("canvas"),
   N = 512,
@@ -35,11 +35,11 @@ C.width = 512, C.height = R;
 let w = C.getContext("2d");
 
 function P() {
-  I.stop(), null != r && (r = null)
+  S.stop(), null != r && (r = null)
 }
 let D = o().debounce((e, t, n, r) => {
-  L(e, (0, b._z)({
-    streamType: null != t ? y.U4.GUILD : y.U4.CALL,
+  L(e, (0, y._z)({
+    streamType: null != t ? b.U4.GUILD : b.U4.CALL,
     guildId: t,
     channelId: n,
     ownerId: r
@@ -85,10 +85,10 @@ async function L(e, t) {
       rejectWithError: false
     })
   } catch (t) {
-    new p.A("ApplicationStreamPreviewUploadManager").error("Failed to post stream preview", t), r === e && I.start(S, n);
+    new p.A("ApplicationStreamPreviewUploadManager").error("Failed to post stream preview", t), r === e && S.start(I, n);
     return
   }
-  r === e && (T ? I.start(S, n) : I.start(v, n))
+  r === e && (T ? S.start(I, n) : S.start(A, n))
 }
 
 function j(e, t) {
@@ -149,7 +149,7 @@ let U = {
         streamId: a,
         context: s
       } = e;
-      null == a || s !== A.x.STREAM || i !== m.default.getId() || __OVERLAY__ || (P(), r = a, D(a, t, n, i))
+      null == a || s !== v.x.STREAM || i !== m.default.getId() || __OVERLAY__ || (P(), r = a, D(a, t, n, i))
     }), f.h.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
       let {
         videoState: t

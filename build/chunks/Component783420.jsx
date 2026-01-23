@@ -2,7 +2,7 @@
 /** chunk id: 783420, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -42,7 +42,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,8 +53,8 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -66,12 +66,12 @@ function O(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = A(e, t), Object.getOwnPropertySymbols)
+  if (a = v(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function A(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -79,15 +79,15 @@ function A(e, t) {
   return i
 }
 
-function v(e) {
+function A(e) {
   let {
     onClick: t,
     subscriptionTier: g,
-    postSuccessGuild: b,
-    onSubscribeModalClose: A,
-    premiumModalAnalyticsLocation: v,
-    applicationId: S,
-    giftMessage: I,
+    postSuccessGuild: y,
+    onSubscribeModalClose: v,
+    premiumModalAnalyticsLocation: A,
+    applicationId: I,
+    giftMessage: S,
     confirmationFooter: T,
     isGift: C,
     initialPlanId: N = null,
@@ -104,7 +104,7 @@ function v(e) {
       if (null == t || t(e), (null == P ? true : P.status) === m.Dmq.ACCOUNT_HOLD) {
         (0, o.xf)(), (0, d.openUserSettings)(u.X.NITRO_PANEL, {
           section: m.nc_.PREMIUM
-        }), null == A || A(false);
+        }), null == v || v(false);
         return
       }
       if (!w.isClaimed()) return void(0, a.mMO)(async () => {
@@ -115,7 +115,7 @@ function v(e) {
           let {
             onClose: n
           } = t, i = O(t, ["onClose"]);
-          return (0, r.jsx)(e, y(E({}, i), {
+          return (0, r.jsx)(e, b(E({}, i), {
             onClose: n
           }))
         }
@@ -128,7 +128,7 @@ function v(e) {
           let {
             onClose: n
           } = t, i = O(t, ["onClose"]);
-          return (0, r.jsx)(e, y(E({}, i), {
+          return (0, r.jsx)(e, b(E({}, i), {
             onClose: n
           }))
         }
@@ -143,12 +143,12 @@ function v(e) {
         analyticsObject: E({
           object: m.ZSU.BUTTON_CTA,
           objectType: f
-        }, v),
+        }, A),
         trialId: s,
-        postSuccessGuild: b,
-        onClose: A,
-        applicationId: S,
-        giftMessage: I,
+        postSuccessGuild: y,
+        onClose: v,
+        applicationId: I,
+        giftMessage: S,
         confirmationFooter: T
       })
     }

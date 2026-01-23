@@ -2,9 +2,9 @@
 /** chunk id: 930861, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  _J: () => b,
-  kF: () => A,
-  wL: () => v
+  _J: () => y,
+  kF: () => v,
+  wL: () => A
 });
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -74,10 +74,10 @@ function E(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-var b = function(e) {
+var y = function(e) {
   return e.DEFAULT = "default", e.SMALL = "small", e
 }({});
-let y = {
+let b = {
     default: Chunk767997.hk,
     small: Chunk767997.p$
   },
@@ -85,7 +85,7 @@ let y = {
     default: Chunk767997.VE,
     small: Chunk767997.TY
   };
-class A extends(r = Chunk64700.PureComponent) {
+class v extends(r = Chunk64700.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -101,7 +101,7 @@ class A extends(r = Chunk64700.PureComponent) {
       children: (0, i.jsx)(u.A, {
         align: u.A.Align.CENTER,
         justify: u.A.Justify.CENTER,
-        className: y[n],
+        className: b[n],
         children: (0, i.jsx)("div", {
           className: O[n]
         })
@@ -109,10 +109,10 @@ class A extends(r = Chunk64700.PureComponent) {
     }))
   }
 }
-p(A, "defaultProps", {
+p(v, "defaultProps", {
   shineSize: "default"
 });
-let v = e => {
+let A = e => {
   let {
     children: t,
     className: n,
@@ -123,15 +123,15 @@ let v = e => {
     shinePaused: p,
     buttonShineClassName: h,
     onlyShineOnHover: E
-  } = e, b = g(e, ["children", "className", "disabled", "submitting", "pauseAnimation", "shineSize", "shinePaused", "buttonShineClassName", "onlyShineOnHover"]), y = a.useRef(null), O = (0, d.M)(y), v = !r && !s && true !== l && (!E || O);
+  } = e, y = g(e, ["children", "className", "disabled", "submitting", "pauseAnimation", "shineSize", "shinePaused", "buttonShineClassName", "onlyShineOnHover"]), b = a.useRef(null), O = (0, d.M)(b), A = !r && !s && true !== l && (!E || O);
   return (0, i.jsxs)(c.$n, m(_({
     "data-migration-pending": true,
-    buttonRef: y
-  }, b), {
+    buttonRef: b
+  }, y), {
     className: o()(f.WE, n),
     disabled: r,
     submitting: s,
-    children: [t, v ? (0, i.jsx)(A, {
+    children: [t, A ? (0, i.jsx)(v, {
       "data-migration-pending": true,
       shinePaused: p,
       className: o()(f.Qr, E ? f.PK : true, h),
@@ -139,4 +139,4 @@ let v = e => {
     }) : null]
   }))
 };
-v.ShineSizes = b
+A.ShineSizes = y

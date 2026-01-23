@@ -2,7 +2,7 @@
 /** chunk id: 663551, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  i: () => b
+  i: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -56,35 +56,35 @@ function E(e, t) {
   }), e
 }
 
-function b(e) {
+function y(e) {
   let {
     color: t = "default",
     label: n,
     checked: a,
     subtext: h,
     disabled: g,
-    isFocused: b,
-    menuItemProps: y,
+    isFocused: y,
+    menuItemProps: b,
     action: O
   } = e, {
-    onInteraction: A
-  } = i.useContext(c.x), v = i.useRef(null);
+    onInteraction: v
+  } = i.useContext(c.x), A = i.useRef(null);
   i.useEffect(() => {
-    b && (0, u.Y)(v)
-  }, [b]);
-  let S = i.useCallback(e => {
-    O(e), null == A || A({
+    y && (0, u.Y)(A)
+  }, [y]);
+  let I = i.useCallback(e => {
+    O(e), null == v || v({
       type: c.Q.RADIO
     })
-  }, [O, A]);
+  }, [O, v]);
   return (0, r.jsxs)(o.DUT, E(m({
-    innerRef: v,
+    innerRef: A,
     className: s()(_.item, _.labelContainer, p.jV[t], {
       [_.disabled]: g,
-      [_.focused]: b
+      [_.focused]: y
     }),
-    onClick: g ? true : S
-  }, y), {
+    onClick: g ? true : I
+  }, b), {
     "aria-checked": a,
     "aria-disabled": g,
     children: [(0, r.jsxs)("div", {

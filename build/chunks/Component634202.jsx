@@ -133,7 +133,7 @@ function B(e) {
         d = c.find(e => null != e.application),
         p = E.A.get(e),
         h = null == d ? true : d.application,
-        g = (null == h ? true : h.bot) != null ? new v.A(h.bot) : null;
+        g = (null == h ? true : h.bot) != null ? new A.A(h.bot) : null;
       return T.iC.includes(null != (t = null == h ? true : h.id) ? t : "") ? l = (0, r.jsx)(w.A, {
         className: M.AO,
         color: i,
@@ -190,14 +190,14 @@ function H(e) {
     guildId: d
   } = e;
   i.useEffect(() => {
-    I.default.track(x.HAw.PASSPORT_ROLE_POPOUT_VIEWED, U({
+    S.default.track(x.HAw.PASSPORT_ROLE_POPOUT_VIEWED, U({
       other_user_id: o,
       role_id: l
-    }, (0, b.Ou)(u), (0, b.H$)(d)))
+    }, (0, y.Ou)(u), (0, y.H$)(d)))
   }, [o, l, u, d]);
-  let f = (0, c.bG)([S.Ay], () => {
+  let f = (0, c.bG)([I.Ay], () => {
     var e, t;
-    return null != (e = null == (t = S.Ay.getSelfMember(d)) ? true : t.roles.includes(l)) && e
+    return null != (e = null == (t = I.Ay.getSelfMember(d)) ? true : t.roles.includes(l)) && e
   }, [d, l]);
   return t = 1 === s.length && 1 === s[0].length ? j.intl.string(j.t.jDym4E) : 1 === s.length ? j.intl.format(j.t["0eBj3x"], {}) : j.intl.format(j.t.D7uftB, {}), (0, r.jsxs)("div", {
     className: M.SW,
@@ -238,13 +238,13 @@ function Y(e) {
     channel: o
   } = e, {
     analyticsLocations: l
-  } = (0, y.Ay)(), u = (0, N.A)(a, t, o.id, true), f = (0, c.bG)([C.A], () => C.A.getGuildRoleConnectionEligibility(null == u ? true : u.id)), [p, m] = i.useState(null == f), g = i.useRef(null);
+  } = (0, b.Ay)(), u = (0, N.A)(a, t, o.id, true), f = (0, c.bG)([C.A], () => C.A.getGuildRoleConnectionEligibility(null == u ? true : u.id)), [p, m] = i.useState(null == f), g = i.useRef(null);
   if (null == u) return null;
   async function E() {
     s()(null != u, "visibleConnectionsRole is null"), p && null == f && (await h.A.fetchGuildRoleConnectionsEligibility(a.id, u.id), m(false))
   }
 
-  function b() {
+  function y() {
     return Promise.resolve(e => {
       let {
         closePopout: i
@@ -259,7 +259,7 @@ function Y(e) {
           (0, P.c0)(a.id)
         },
         onOpenProfile: () => {
-          (0, A.openUserProfileModal)({
+          (0, v.openUserProfileModal)({
             userId: t,
             messageId: n,
             guildId: a.id,
@@ -275,7 +275,7 @@ function Y(e) {
   return (0, r.jsx)(_.QCx, {
     targetElementRef: g,
     onRequestOpen: E,
-    renderPopout: b,
+    renderPopout: y,
     align: "top",
     nudgeAlignIntoViewport: true,
     children: e => (0, r.jsx)(d.m, {

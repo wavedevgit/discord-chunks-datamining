@@ -159,7 +159,7 @@ function c(e) {
   } = e;
   return fetch(t).then(e => e.arrayBuffer()).then(e => new Promise((t, n) => {
     let a = new Uint8Array(e);
-    i.$1(a, (e, a) => {
+    r.$1(a, (e, a) => {
       null != e && n(e);
       let l = Object.keys(a).reduce((e, t) => {
           var n, l;
@@ -181,7 +181,7 @@ function c(e) {
             }
             return e
           }({}, e), l = l = {
-            [t]: JSON.parse(i.he(a[t]))
+            [t]: JSON.parse(r.he(a[t]))
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -193,19 +193,19 @@ function c(e) {
             Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
           }), n
         }, {}),
-        r = l["manifest.json"];
-      t(l["animations/".concat(r.animations[0].id, ".json")])
+        i = l["manifest.json"];
+      t(l["animations/".concat(i.animations[0].id, ".json")])
     })
   }))
 }
 
 function d() {
-  let [e, t] = l.useState(true), [n, i] = l.useState(400), [d, u] = l.useState(400);
+  let [e, t] = l.useState(true), [n, r] = l.useState(400), [d, u] = l.useState(400);
   return (0, a.jsx)("div", {
     style: {
       margin: 24
     },
-    children: (0, a.jsxs)(r.BJc, {
+    children: (0, a.jsxs)(i.BJc, {
       gap: 24,
       children: [(0, a.jsx)(s.ZiE, {
         options: Object.keys(o).map(e => ({
@@ -216,12 +216,12 @@ function d() {
         value: e,
         onSelectionChange: t,
         selectionMode: "single"
-      }), (0, a.jsxs)(r.BJc, {
+      }), (0, a.jsxs)(i.BJc, {
         gap: 8,
         direction: "horizontal",
         children: [(0, a.jsx)(s.ksK, {
           value: n.toString(),
-          onChange: e => i(Number(e)),
+          onChange: e => r(Number(e)),
           label: "Width"
         }), (0, a.jsx)(s.ksK, {
           value: d.toString(),

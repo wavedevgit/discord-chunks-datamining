@@ -49,7 +49,7 @@ function E(e) {
     globalOption: n,
     onChange: a,
     renderOptionSuffix: s
-  } = e, u = (0, o.bG)([_.A], () => _.A.showNotice()), g = (0, o.bG)([f.Ay], () => f.Ay.getFlattenedGuildIds()), E = (0, o.bG)([d.A], () => d.A.getGuilds()), b = i.useMemo(() => {
+  } = e, u = (0, o.bG)([_.A], () => _.A.showNotice()), g = (0, o.bG)([f.Ay], () => f.Ay.getFlattenedGuildIds()), E = (0, o.bG)([d.A], () => d.A.getGuilds()), y = i.useMemo(() => {
     let e = g.map(e => {
       let t = E[e];
       return null == t ? null : {
@@ -58,7 +58,7 @@ function E(e) {
       }
     }).filter(p.Vq);
     return null != n && e.unshift(n), e
-  }, [g, E, n]), y = i.useCallback(e => {
+  }, [g, E, n]), b = i.useCallback(e => {
     let t = (null == e ? true : e.label) === (null == n ? true : n.label) && (null == e ? true : e.value) === (null == n ? true : n.value);
     return null == e || "" === e.value || t ? null : (0, r.jsx)(c.A, {
       className: m.c,
@@ -75,8 +75,8 @@ function E(e) {
     isDisabled: u,
     onChange: O,
     value: t,
-    options: b,
-    renderOptionPrefix: y,
+    options: y,
+    renderOptionPrefix: b,
     renderOptionSuffix: s,
     placeholder: h.intl.string(h.t["kMgj+e"]),
     "data-migration-pending": true

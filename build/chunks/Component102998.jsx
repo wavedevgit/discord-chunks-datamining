@@ -59,7 +59,7 @@ let l = {
         h.length > 0 && _(h[0].value)
       }, [h]), E = i.useCallback(() => {
         h.length > 0 && _(h[h.length - 1].value)
-      }, [h]), b = i.useCallback(() => {
+      }, [h]), y = i.useCallback(() => {
         _(true)
       }, []);
       return (0, r.jsxs)(s.BJc, {
@@ -93,7 +93,7 @@ let l = {
             variant: "primary",
             size: "sm",
             text: "Clear",
-            onClick: b,
+            onClick: y,
             disabled: t
           })]
         })]

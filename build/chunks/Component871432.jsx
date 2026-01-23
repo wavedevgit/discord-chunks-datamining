@@ -59,10 +59,10 @@ function v(e, t) {
 function S(e) {
   let {
     className: t
-  } = e, n = (0, a.bG)([A.A], () => A.A.getPendingCount() > 0), m = (0, s.rdh)(s.LU0.modules.chat.INPUT_ICON_SIZE), S = function() {
+  } = e, n = (0, a.bG)([f.A], () => f.A.getPendingCount() > 0), A = (0, s.rdh)(s.LU0.modules.chat.INPUT_ICON_SIZE), S = function() {
     let [e, t] = i.useState(null), {
       showActivityTicker: n
-    } = (0, _.A)(), r = i.useRef({}), l = i.useRef(null);
+    } = (0, b.A)(), r = i.useRef({}), l = i.useRef(null);
     return i.useEffect(() => {
       if (!n) {
         t(null), null != l.current && (window.clearTimeout(l.current), l.current = null);
@@ -72,40 +72,40 @@ function S(e) {
           null == r.current[e] && (r.current[e] = {}), null == n ? delete r.current[e][t] : r.current[e][t] = n, 0 === Object.keys(r.current[e]).length && delete r.current[e]
         },
         i = (n, i, a) => {
-          var s, o, c, u, d, p, h, m, b, _;
-          if (!A.A.isFriend(n)) returnfalse;
-          let O = g.default.getUser(n);
+          var s, o, c, u, d, p, g, A, _, b;
+          if (!f.A.isFriend(n)) returnfalse;
+          let O = m.default.getUser(n);
           if (null == O) returnfalse;
           let y = false,
             I = null;
           if (null != i) {
             let t, l = i.type;
-            if (null != l && ((t = (_ = i).type) === E.$pd.PLAYING && null != _.application_id || t === E.$pd.LISTENING || t === E.$pd.WATCHING)) {
+            if (null != l && ((t = (b = i).type) === E.$pd.PLAYING && null != b.application_id || t === E.$pd.LISTENING || t === E.$pd.WATCHING)) {
               let t = l === E.$pd.WATCHING || l === E.$pd.LISTENING ? "".concat(l, "-").concat(null != (c = i.name) ? c : "", "-").concat(null != (u = i.state) ? u : "", "-").concat(null != (d = i.details) ? d : "") : "".concat(l, "-").concat(null != (p = i.name) ? p : "");
-              (null == (h = r.current[n]) ? true : h.presence) !== t && (y = true, e(n, "presence", t), I = {
+              (null == (g = r.current[n]) ? true : g.presence) !== t && (y = true, e(n, "presence", t), I = {
                 user: O,
                 activity: i
               })
             } else(null == (o = r.current[n]) ? true : o.presence) != null && (y = true, e(n, "presence", null))
           }
           if (null != a) {
-            let t = f.A.getChannel(a);
+            let t = h.A.getChannel(a);
             if (null != t) {
               let i = "voice-".concat(t.id);
-              (null == (m = r.current[n]) ? true : m.voice) !== i && (y = true, e(n, "voice", i), I = {
+              (null == (A = r.current[n]) ? true : A.voice) !== i && (y = true, e(n, "voice", i), I = {
                 user: O,
                 voiceChannel: t
               })
             }
           } else(null == (s = r.current[n]) ? true : s.voice) != null && (y = true, e(n, "voice", null));
-          return y && null != I && (b = I, null != l.current && (window.clearTimeout(l.current), l.current = null), t(b), l.current = window.setTimeout(() => {
+          return y && null != I && (_ = I, null != l.current && (window.clearTimeout(l.current), l.current = null), t(_), l.current = window.setTimeout(() => {
             t(null), l.current = null
           }, 1e4)), y
         },
         a = e => {
           for (let t of e.updates) {
             let e = t.user.id,
-              n = h.A.getPrimaryActivity(e);
+              n = g.A.getPrimaryActivity(e);
             if (i(e, n)) break
           }
         },
@@ -169,7 +169,7 @@ function S(e) {
           }))
         }
       }))
-    }), (0, r.jsx)(b.lD, {
+    }), (0, r.jsx)(_.lD, {
       popoutPosition: "bottom",
       popoutAlign: "left",
       children: (e, i, l, a) => (0, r.jsx)(d.In, v(I({}, l), {
@@ -177,7 +177,7 @@ function S(e) {
         className: t,
         onClick: e,
         icon: s.$yI,
-        iconSize: m,
+        iconSize: A,
         "aria-label": O.intl.string(O.t.TdEu5X),
         tooltip: i ? null : O.intl.string(O.t.TdEu5X),
         selected: i,
@@ -192,7 +192,7 @@ function C(e) {
     className: t
   } = e, {
     enableTopNavButton: n
-  } = (0, m.tR)({
+  } = (0, A.tR)({
     location: "friends-button"
   });
   return n ? (0, r.jsx)(S, {

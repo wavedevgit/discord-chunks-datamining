@@ -3,7 +3,7 @@
 require.d(exports, {
   DY: () => d,
   UF: () => u,
-  bG: () => f
+  bG: () => p
 });
 var Chunk311907 = require("./311907.js"),
   Chunk652896 = require("./652896.js"),
@@ -20,31 +20,31 @@ function u(e) {
   } = e, l = (0, c.k)({
     channelId: n
   });
-  return (0, r.bG)([s.A, i.default, a.A], () => null != t && l && a.A.isUserConnected(t) && i.default.getId() !== t && s.A.isUserVerified(t), [l, t])
+  return (0, r.bG)([a.A, i.default, s.A], () => null != t && l && s.A.isUserConnected(t) && i.default.getId() !== t && a.A.isUserVerified(t), [l, t])
 }
 
 function d(e) {
   let {
     streamKey: t,
     channelId: n
-  } = e, a = (0, c.k)({
+  } = e, s = (0, c.k)({
     channelId: n
   }), u = (0, o.w)(t);
-  return (0, r.bG)([s.A, i.default], () => {
-    if (!a || u || null == t) returnfalse;
+  return (0, r.bG)([a.A, i.default], () => {
+    if (!s || u || null == t) returnfalse;
     let e = i.default.getId(),
       {
         ownerId: n
       } = (0, l.Iy)(t);
-    return n !== e && s.A.isStreamVerified(t)
-  }, [u, a, t])
+    return n !== e && a.A.isStreamVerified(t)
+  }, [u, s, t])
 }
 
-function f(e) {
+function p(e) {
   let {
     channelId: t
   } = e, n = (0, c.k)({
     channelId: t
   }), l = (0, o.c)();
-  return (0, r.bG)([s.A], () => !!n && !l && s.A.isCallVerified(), [l, n])
+  return (0, r.bG)([a.A], () => !!n && !l && a.A.isCallVerified(), [l, n])
 }

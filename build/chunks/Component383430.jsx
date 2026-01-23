@@ -18,12 +18,12 @@ function d(e) {
     handleOpenCollectiblesShop: n,
     handleOpenGameShop: d,
     socialLayerStorefrontApplicationId: f
-  } = e, p = l.useRef(null), [b, g] = l.useState(false), m = (0, a.h)(f), y = l.useMemo(() => {
-    let e = null == m || m.id !== o.XR ? c.intl.string(c.t.apFNLU) : c.intl.string(c.t["kq/75v"]);
-    if (null == m) return e;
-    let t = s.Ay.getApplicationIconURL({
-      id: m.id,
-      icon: m.icon,
+  } = e, p = l.useRef(null), [g, m] = l.useState(false), b = (0, a.h)(f), y = l.useMemo(() => {
+    let e = null == b || b.id !== s.XR ? c.intl.string(c.t.apFNLU) : c.intl.string(c.t["kq/75v"]);
+    if (null == b) return e;
+    let t = o.Ay.getApplicationIconURL({
+      id: b.id,
+      icon: b.icon,
       size: 20
     });
     return (0, r.jsxs)("div", {
@@ -38,7 +38,7 @@ function d(e) {
         children: e
       })]
     })
-  }, [m]), O = l.useMemo(() => (0, r.jsxs)(i.rXV, {
+  }, [b]), O = l.useMemo(() => (0, r.jsxs)(i.rXV, {
     children: [(0, r.jsx)(i.Drp, {
       id: "browse-collectibles-shop",
       label: c.intl.string(c.t["5upuqx"]),
@@ -47,15 +47,15 @@ function d(e) {
     }), (0, r.jsx)(i.Drp, {
       id: "browse-social-layer-storefront",
       label: y,
-      iconLeft: null != m ? true : i.U1X,
+      iconLeft: null != b ? true : i.U1X,
       action: d
     })]
-  }), [n, d, y, m]);
+  }), [n, d, y, b]);
   return (0, r.jsx)(i.YNO, {
     targetElementRef: p,
     position: "bottom",
-    onRequestOpen: () => g(true),
-    onRequestClose: () => g(false),
+    onRequestOpen: () => m(true),
+    onRequestClose: () => m(false),
     renderPopout: e => {
       let {
         closePopout: t
@@ -89,7 +89,7 @@ function d(e) {
       buttonRef: p,
       variant: "secondary",
       size: "sm",
-      icon: b ? i.PGe : i.abt,
+      icon: g ? i.PGe : i.abt,
       iconPosition: "end",
       text: t
     }, e))

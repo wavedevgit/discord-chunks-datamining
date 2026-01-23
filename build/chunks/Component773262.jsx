@@ -1,7 +1,7 @@
 /** Chunk was on 46115 **/
 /** chunk id: 773262, original params: e,t,r (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => d
+  default: () => O
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,58 +17,58 @@ var Chunk627968 = require("./627968.js"),
 require("./603266.js");
 var Chunk985018 = require("./985018.jsx"),
   Chunk42768 = require("./42768.js");
-let d = function(e) {
+let O = function(e) {
   var t, r;
   let {
-    transitionState: d,
+    transitionState: O,
     streamKey: j,
     channelId: m,
     onClose: g
-  } = e, h = (0, l.bG)([s.A], () => {
+  } = e, h = (0, l.bG)([a.A], () => {
     var e;
-    return null == (e = s.A.getSecureFramesState(j)) ? true : e.epochAuthenticator
-  }), v = (0, b.z)({
+    return null == (e = a.A.getSecureFramesState(j)) ? true : e.epochAuthenticator
+  }), v = (0, p.z)({
     fingerprintBase64: h,
     chunkSize: 5,
     desiredLength: 30
-  }), x = c.useCallback(() => {
+  }), x = o.useCallback(() => {
     (0, i.y5)({
       channelId: m
     })
   }, [m]), w = {
-    transitionState: d,
-    title: y.intl.string(y.t.QogHld),
-    subtitle: y.intl.string(y.t.qODBkW)
-  }, P = (0, n.jsxs)(n.Fragment, {
+    transitionState: O,
+    title: b.intl.string(b.t.QogHld),
+    subtitle: b.intl.string(b.t.qODBkW)
+  }, _ = (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)("div", {
-      className: O.Ot,
+      className: y.Ot,
       children: [(0, n.jsxs)("div", {
-        className: O.wx,
-        children: [(0, n.jsx)(a.Heading, {
+        className: y.wx,
+        children: [(0, n.jsx)(s.Heading, {
           variant: "text-sm/bold",
           color: "text-strong",
-          children: y.intl.string(y.t.cgBTyO)
+          children: b.intl.string(b.t.cgBTyO)
         }), null != v && (0, n.jsx)(f.c, {
-          className: O.nJ,
+          className: y.nJ,
           chunks: v,
-          color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
+          color: s.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
           onCopy: x
         })]
-      }), (0, n.jsx)(p.j, {
-        className: O.aY,
+      }), (0, n.jsx)(d.j, {
+        className: y.aY,
         chunks: v,
         columns: 3
       })]
-    }), (0, n.jsx)(a.Text, {
-      className: O.qr,
+    }), (0, n.jsx)(s.Text, {
+      className: y.qr,
       variant: "text-sm/normal",
       color: "text-muted",
-      children: y.intl.format(y.t["H3+ktv"], {
+      children: b.intl.format(b.t["H3+ktv"], {
         helpArticle: (0, u.aW)()
       })
     })]
   });
-  return (0, n.jsx)(o.Modal, (t = function(e) {
+  return (0, n.jsx)(c.Modal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -88,7 +88,7 @@ let d = function(e) {
   }({}, w), r = r = {
     onClose: g,
     actions: [],
-    children: P
+    children: _
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   O1: () => c,
-  oU: () => A,
+  oU: () => v,
   wt: () => u
 });
 var Chunk607399 = require("./607399.js"),
@@ -353,7 +353,7 @@ let d = {
       requireSendMessages: true
     }
   }),
-  b = {
+  y = {
     analyticsName: "create_forum_post",
     attachments: true,
     autocomplete: {
@@ -387,7 +387,7 @@ let d = {
     showSlowmodeIndicator: true,
     layout: 2
   },
-  y = {
+  b = {
     analyticsName: "create_poll",
     attachments: true,
     drafts: {
@@ -432,7 +432,7 @@ let d = {
     toolbarType: 2,
     layout: 1
   },
-  A = {
+  v = {
     NORMAL: d,
     OVERLAY: f,
     OVERLAY_INLINE_REPLY: {
@@ -538,9 +538,9 @@ let d = {
       disableAutoFocus: true,
       hideAccessoryBar: true
     },
-    CREATE_FORUM_POST: b,
+    CREATE_FORUM_POST: y,
     CREATE_ANNOUNCEMENT_POST: E,
-    CREATE_POLL: y,
+    CREATE_POLL: b,
     FORUM_CHANNEL_GUIDELINES: {
       analyticsName: "forum_channel_guidelines",
       drafts: {

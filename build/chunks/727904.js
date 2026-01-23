@@ -12,9 +12,9 @@ var Chunk64700 = require("./64700.js"),
 function a(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [],
     n = arguments.length > 2 ? arguments[2] : true,
-    [a, c] = r.useState((0, s.Mv)(t)),
+    [a, o] = r.useState((0, s.Mv)(t)),
     {
-      errorMessage: o,
+      errorMessage: c,
       handleValidateKeywords: d
     } = function(e) {
       let [t, n] = r.useState(null);
@@ -35,12 +35,12 @@ function a(e) {
     u = r.useCallback(e => 0 !== e.length && (0, s.ir)(e) ? (0, s.Mv)((0, s.c_)(e)) : e, []);
   return {
     value: a,
-    errorMessage: o,
+    errorMessage: c,
     onChange: r.useCallback(t => {
       let n = t.currentTarget.value;
       "insertFromPaste" === t.nativeEvent.inputType && (n = u(n));
       let r = (0, s.c_)(n);
-      c(n), e(r), d(r)
+      o(n), e(r), d(r)
     }, [d, u, e])
   }
 }

@@ -27,23 +27,23 @@ let _ = 0x7fffffff,
   m = new Map,
   g = [],
   E = [],
-  b = [],
-  y = new Set,
+  y = [],
+  b = new Set,
   O = {},
-  A = {},
-  v = new Set;
+  v = {},
+  A = new Set;
 
-function S(e) {
+function I(e) {
   let t = u.A.createFromServer(e),
     n = t.code;
   if (m.has(n)) m.set(n, m.get(n).merge(t));
   else if (m.set(n, t), null != t.expiresAt) {
     let e = new o.Ep;
-    h[n] = e, I(n)
+    h[n] = e, S(n)
   }
 }
 
-function I(e) {
+function S(e) {
   let t = m.get(e);
   if (null == t || null == t.expiresAt) return;
   let n = t.expiresAt.valueOf() - a()().valueOf();
@@ -51,30 +51,30 @@ function I(e) {
   else {
     let t = h[e];
     if (null == t) return;
-    t.start(Math.min(_, n), () => I(e))
+    t.start(Math.min(_, n), () => S(e))
   }
 }
 
 function T(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  if (t && !v.has(e.channel_id)) returnfalse;
+  if (t && !A.has(e.channel_id)) returnfalse;
   let n = (0, d.pF)(e) ? (0, d.e7)((null == e ? true : e.embeds) != null ? null == e ? true : e.embeds[0].url : true) : (0, d.e7)(e.content);
   return 0 !== n.length && (n.forEach(e => {
-    g.includes(e) || b.includes(e) || (R({
+    g.includes(e) || y.includes(e) || (R({
       code: e
     }), l.h.wait(() => c.A.resolveGiftCode(e, false, true).catch(f.FXj)))
   }), false)
 }
 
 function C() {
-  return v.clear(), false
+  return A.clear(), false
 }
 
 function N(e) {
   let {
     channelId: t
   } = e;
-  return null != t && v.add(t), false
+  return null != t && A.add(t), false
 }
 
 function R(e) {
@@ -88,14 +88,14 @@ function w(e) {
   let {
     giftCode: t
   } = e;
-  return g = g.filter(e => e !== t.code), b.includes(t.code) || (b = [...b, t.code]), S(t)
+  return g = g.filter(e => e !== t.code), y.includes(t.code) || (y = [...y, t.code]), I(t)
 }
 
 function P(e) {
   let {
     code: t
   } = e;
-  g = g.filter(e => e !== t), b.includes(t) || (b = [...b, t])
+  g = g.filter(e => e !== t), y.includes(t) || (y = [...y, t])
 }
 
 function D(e) {
@@ -104,7 +104,7 @@ function D(e) {
   } = e;
   m.delete(t);
   let n = h[t];
-  null != n && (n.stop(), delete h[t]), b.includes(t) || (b = [...b, t])
+  null != n && (n.stop(), delete h[t]), y.includes(t) || (y = [...y, t])
 }
 
 function x(e) {
@@ -118,7 +118,7 @@ function L(e) {
   let {
     giftCode: t
   } = e;
-  S(t)
+  I(t)
 }
 
 function j(e) {
@@ -134,7 +134,7 @@ function M(e) {
     skuId: t,
     subscriptionPlanId: n
   } = e;
-  y.add((0, d.Kx)(t, n))
+  b.add((0, d.Kx)(t, n))
 }
 
 function k(e) {
@@ -142,7 +142,7 @@ function k(e) {
     skuId: t,
     subscriptionPlanId: n
   } = e;
-  y.delete((0, d.Kx)(t, n))
+  b.delete((0, d.Kx)(t, n))
 }
 
 function U(e) {
@@ -151,9 +151,9 @@ function U(e) {
     skuId: n,
     subscriptionPlanId: r
   } = e;
-  t.forEach(S);
+  t.forEach(I);
   let i = (0, d.Kx)(n, r);
-  O[i] = Date.now(), y.delete(i)
+  O[i] = Date.now(), b.delete(i)
 }
 
 function G(e) {
@@ -175,7 +175,7 @@ function V(e) {
   } = e;
   E = E.filter(e => e !== t);
   let r = m.get(t);
-  if (A[t] = n, null != r) switch (n.code) {
+  if (v[t] = n, null != r) switch (n.code) {
     case f.t02.UNKNOWN_GIFT_CODE:
       m.set(t, r.set("revoked", true));
       break;
@@ -196,7 +196,7 @@ function B(e) {
     channelId: t,
     messages: n
   } = e;
-  v.add(t), n.forEach(e => T(e, true))
+  A.add(t), n.forEach(e => T(e, true))
 }
 
 function H(e) {
@@ -257,7 +257,7 @@ class q extends(r = Chunk311907.Ay.Store) {
     return null == t || t.isExpired() ? null : t
   }
   getError(e) {
-    return null != e ? A[e] : null
+    return null != e ? v[e] : null
   }
   getForGifterSKUAndPlan(e, t, n) {
     return Array.from(m.values()).filter(r => r.userId === e && r.skuId === t && (null == n || r.subscriptionPlanId === n) && !r.isExpired())
@@ -266,13 +266,13 @@ class q extends(r = Chunk311907.Ay.Store) {
     return g.includes(e)
   }
   getIsResolved(e) {
-    return b.includes(e)
+    return y.includes(e)
   }
   getIsAccepting(e) {
     return E.includes(e)
   }
   getUserGiftCodesFetchingForSKUAndPlan(e, t) {
-    return y.has((0, d.Kx)(e, t))
+    return b.has((0, d.Kx)(e, t))
   }
   getUserGiftCodesLoadedAtForSKUAndPlan(e, t) {
     return O[(0, d.Kx)(e, t)]
@@ -281,7 +281,7 @@ class q extends(r = Chunk311907.Ay.Store) {
     return g
   }
   getResolvedCodes() {
-    return b
+    return y
   }
   getAcceptingCodes() {
     return E

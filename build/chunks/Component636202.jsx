@@ -52,8 +52,8 @@ let k = {
   U = e => {
     var t, n;
     let {
-      channel: b,
-      entry: y,
+      channel: y,
+      entry: b,
       disableGameProfileLinks: U,
       onReaction: G,
       onVoiceChannelPreview: V,
@@ -61,74 +61,74 @@ let k = {
       trackRankingItemInteraction: B
     } = e, {
       largeImage: H
-    } = (0, A.nO)({
-      entry: y
+    } = (0, v.nO)({
+      entry: b
     }), {
       user: Y,
       details: W,
       appName: K,
       activity: z,
       embeddedActivity: q
-    } = (0, L.u)(y), {
+    } = (0, L.u)(b), {
       primaryColor: X,
       secondaryColor: Z
     } = (0, R.A)(null == H ? true : H.src), Q = (0, s.bG)([E.default], () => E.default.locale), {
       streamPreviewUrl: $,
       stream: J
-    } = (0, S.A)(y), {
+    } = (0, I.A)(b), {
       displayParticipants: ee,
       participant1: et,
       participant2: en,
       numOtherParticipants: er
-    } = (0, v.A)(y, 3), ei = y.extra.platform, ea = null != ei ? k[ei] : null, es = ei === a.Y.XBOX ? j.fg2.XBOX : ei === a.Y.PLAYSTATION ? j.fg2.PLAYSTATION : true, eo = (0, N.A)(es), {
+    } = (0, A.A)(b, 3), ei = b.extra.platform, ea = null != ei ? k[ei] : null, es = ei === a.Y.XBOX ? j.fg2.XBOX : ei === a.Y.PLAYSTATION ? j.fg2.PLAYSTATION : true, eo = (0, N.A)(es), {
       data: el
-    } = (0, m.YY)(y.extra.application_id), ec = (0, d.J)(el), eu = (0, g.o)(null != (t = null != (n = null == z ? true : z.application_id) ? n : null == q ? true : q.applicationId) ? t : null == el ? true : el.id), ed = i.useCallback(e => {
-      if ((null == H ? true : H.src) == null || null == b || null == Y) return;
+    } = (0, m.YY)(b.extra.application_id), ec = (0, d.J)(el), eu = (0, g.o)(null != (t = null != (n = null == z ? true : z.application_id) ? n : null == q ? true : q.applicationId) ? t : null == el ? true : el.id), ed = i.useCallback(e => {
+      if ((null == H ? true : H.src) == null || null == y || null == Y) return;
       let t = er > 0 ? (0, C.v$)({
-        entry: y,
-        channel: b,
+        entry: b,
+        channel: y,
         users: [et, en],
         countOthers: er
-      }) : (0, C.op)(y, b, Y);
+      }) : (0, C.op)(b, y, Y);
       return (0, T.p6)({
-        entry: y,
+        entry: b,
         applicationImageSrc: null == H ? true : H.src,
-        avatarSrcs: ee.map(e => e.getAvatarURL(b.guild_id, 128)),
+        avatarSrcs: ee.map(e => e.getAvatarURL(y.guild_id, 128)),
         description: t,
-        timestamp: (0, I.As)(y, Q),
+        timestamp: (0, S.As)(b, Q),
         colors: [X, Z],
         channelId: e
       })
-    }, [null == H ? true : H.src, b, ee, y, Q, er, et, en, X, Z, Y]);
+    }, [null == H ? true : H.src, y, ee, b, Q, er, et, en, X, Z, Y]);
     if (null == Y) return null;
     let ef = (0, r.jsx)(P.mG, {
         location: null == $ ? P.N5.POPOUT : P.N5.STREAMING_POPOUT,
         children: w.n.map((e, t) => (0, r.jsx)(e, {
-          entry: y
+          entry: b
         }, t))
       }),
       ep = null == J ? (0, r.jsx)(D.BC, {
-        channel: b,
+        channel: y,
         headerIcons: null == ea ? null : (0, r.jsx)(x.A, {
           onClick: eo,
           Icon: ea,
           "aria-label": M.intl.string(M.t.YR4cHH)
         }),
-        userDescription: (0, I.JM)(y) ? M.t.vPg1JT : M.t.rPqqts,
+        userDescription: (0, S.JM)(b) ? M.t.vPg1JT : M.t.rPqqts,
         title: K,
         subtitle: W,
         badges: ef,
-        entry: y,
+        entry: b,
         disableGameProfileLinks: U,
         onUserPopoutClosed: F,
         trackRankingItemInteraction: B
       }) : (0, r.jsx)(D.Fl, {
-        channel: b,
-        title: y.extra.game_name,
+        channel: y,
+        title: b.extra.game_name,
         subtitle: W,
         badges: ef,
         userDescription: M.t["6oWFUN"],
-        entry: y,
+        entry: b,
         stream: J,
         onUserPopoutClosed: F,
         trackRankingItemInteraction: B
@@ -155,10 +155,10 @@ let k = {
           onReaction: G,
           onVoiceChannelPreview: V,
           user: Y,
-          channel: b,
+          channel: y,
           generateReactionImage: ed,
-          reactionImageAltText: (0, C.uG)(y, Y),
-          entry: y,
+          reactionImageAltText: (0, C.uG)(b, Y),
+          entry: b,
           buttons: eh
         })
       })]

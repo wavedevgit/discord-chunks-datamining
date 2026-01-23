@@ -25,10 +25,10 @@ let p = e => {
     starContainerClassName: m,
     boltAssetClassName: g,
     carAssetClassName: E,
-    hammerAssetClassName: b,
-    keyAssetClassName: y,
+    hammerAssetClassName: y,
+    keyAssetClassName: b,
     starAssetClassName: O,
-    animationSpeedScale: A = 1
+    animationSpeedScale: v = 1
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [null != i && (0, r.jsx)("div", {
@@ -57,7 +57,7 @@ let p = e => {
         } : true,
         animateXAxisWiggle: true,
         isMotionReduced: t,
-        animationSpeedScale: A,
+        animationSpeedScale: v,
         children: (0, r.jsx)("img", {
           src: l.A,
           className: g,
@@ -80,7 +80,7 @@ let p = e => {
         } : true,
         animateXAxisWiggle: true,
         isMotionReduced: t,
-        animationSpeedScale: A,
+        animationSpeedScale: v,
         children: (0, r.jsx)("img", {
           src: c.A,
           className: E,
@@ -103,10 +103,10 @@ let p = e => {
         } : true,
         animateXAxisWiggle: true,
         isMotionReduced: t,
-        animationSpeedScale: A,
+        animationSpeedScale: v,
         children: (0, r.jsx)("img", {
           src: u.A,
-          className: b,
+          className: y,
           alt: ""
         })
       })
@@ -136,10 +136,10 @@ let p = e => {
         } : true,
         animateXAxisWiggle: true,
         isMotionReduced: t,
-        animationSpeedScale: A,
+        animationSpeedScale: v,
         children: (0, r.jsx)("img", {
           src: d.A,
-          className: y,
+          className: b,
           alt: ""
         })
       })
@@ -169,7 +169,7 @@ let p = e => {
         } : true,
         animateXAxisWiggle: true,
         isMotionReduced: t,
-        animationSpeedScale: A,
+        animationSpeedScale: v,
         children: (0, r.jsx)("img", {
           src: f.A,
           className: O,

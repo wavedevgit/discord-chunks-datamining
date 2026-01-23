@@ -43,11 +43,11 @@ function E(e, t) {
   return n.result
 }
 
-function b(e, t) {
+function y(e, t) {
   return (t = t || {}).raw = true, E(e, t)
 }
 
-function y(e, t) {
+function b(e, t) {
   return (t = t || {}).gzip = true, E(e, t)
 }
 g.prototype.push = function(e, t) {
@@ -64,4 +64,4 @@ g.prototype.push = function(e, t) {
   this.chunks.push(e)
 }, g.prototype.onEnd = function(e) {
   e === d && ("string" === this.options.to ? this.result = this.chunks.join("") : this.result = i.flattenChunks(this.chunks)), this.chunks = [], this.err = e, this.msg = this.strm.msg
-}, exports.Deflate = g, exports.deflate = E, exports.deflateRaw = b, exports.gzip = y
+}, exports.Deflate = g, exports.deflate = E, exports.deflateRaw = y, exports.gzip = b

@@ -46,16 +46,16 @@ let d = e => {
       getScrollOffsetForIndex: m,
       categoryHeight: g,
       onScroll: E,
-      renderCategoryListItem: b,
-      rowCountBySection: y,
+      renderCategoryListItem: y,
+      rowCountBySection: b,
       renderSection: O
-    } = e, A = c.useStore(e => e.activeCategoryIndex);
+    } = e, v = c.useStore(e => e.activeCategoryIndex);
     d({
-      activeIndex: A,
+      activeIndex: v,
       categoryListRef: t,
       getScrollOffsetForIndex: m
     });
-    let v = i.useCallback(e => {
+    let A = i.useCallback(e => {
         let {
           searchQuery: t
         } = l.RQ.getState();
@@ -65,20 +65,20 @@ let d = e => {
           null == (r = n.current) || r.scrollToSectionTop(e)
         }
       }, [n, c]),
-      S = i.useCallback(e => b(a[e], e, () => v(e), A === e), [A, a, v, b]),
-      I = i.useMemo(() => "function" == typeof g ? e => g(a[e], e) : g, [a, g]);
+      I = i.useCallback(e => y(a[e], e, () => A(e), v === e), [v, a, A, y]),
+      S = i.useMemo(() => "function" == typeof g ? e => g(a[e], e) : g, [a, g]);
     return (0, r.jsxs)("div", {
       className: s()(u.i, p),
       children: [(0, r.jsx)(o.A, {
         listPadding: _,
         onScroll: E,
         ref: t,
-        renderRow: S,
+        renderRow: I,
         rowCount: h,
-        rowHeight: I,
+        rowHeight: S,
         hideScrollbar: true,
-        rowCountBySection: y,
+        rowCountBySection: b,
         renderSection: O
-      }), null == f ? true : f(v)]
+      }), null == f ? true : f(A)]
     })
   }

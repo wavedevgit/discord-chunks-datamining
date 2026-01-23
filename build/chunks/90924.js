@@ -2,22 +2,22 @@
 /** chunk id: 90924, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   BB: () => et,
-  B_: () => q,
+  B_: () => z,
   D2: () => ei,
   Gc: () => K,
-  IR: () => W,
-  LP: () => z,
+  IR: () => q,
+  LP: () => W,
   SK: () => Q,
   SN: () => H,
   Ub: () => en,
   Yj: () => F,
-  e2: () => $,
+  e2: () => J,
   hk: () => V,
   lG: () => er,
   px: () => X,
   qG: () => Y,
   sq: () => ee,
-  uM: () => J
+  uM: () => $
 }), require("./747238.js"), require("./591487.js"), require("./727858.js"), require("./896048.js"), require("./321073.js"), require("./65821.js"), require("./812715.js"), require("./938796.js"), require("./638769.js"), require("./735438.js");
 var r, i, Chunk567243 = require("./567243.js"),
   Chunk179771 = require("./179771.js"),
@@ -106,7 +106,7 @@ function B(e) {
 function H(e, t) {
   let n = [],
     r = e.getGuildId();
-  return [P.rbe.GUILD_CATEGORY, ...A.OU].includes(e.type) || n.push(new Promise(t => {
+  return [P.rbe.GUILD_CATEGORY, ...f.OU].includes(e.type) || n.push(new Promise(t => {
     E.A.whenReady(e.id, () => t()), c.A.fetchMessages({
       channelId: e.id,
       limit: P.EMb
@@ -134,9 +134,9 @@ function F(e) {
   let t = p.A.parseToAST(e.content, true, {
       channelId: e.channel_id
     }).map(G),
-    n = m.A.getChannel(e.channel_id),
-    r = null != e.author ? new g.A(e.author) : true,
-    i = null != e.author ? (0, f.FT)(r, n) : true;
+    n = A.A.getChannel(e.channel_id),
+    r = null != e.author ? new m.A(e.author) : true,
+    i = null != e.author ? (0, h.FT)(r, n) : true;
   return {
     id: e.id,
     blocked: e.blocked,
@@ -171,9 +171,9 @@ function Y(e, t, n) {
   if (null == c) throw Error("Invalid user id: ".concat(o));
   return {
     nick: S.Ay.getName(e, t, c),
-    mute: _.A.isLocalMute(c.id),
-    volume: _.A.getLocalVolume(c.id),
-    pan: _.A.getLocalPan(c.id),
+    mute: b.A.isLocalMute(c.id),
+    volume: b.A.getLocalVolume(c.id),
+    pan: b.A.getLocalPan(c.id),
     voice_state: {
       mute: r,
       deaf: i,
@@ -196,7 +196,7 @@ function K(e, t) {
   }
 }
 
-function z(e, t) {
+function W(e, t) {
   var n;
   return null == t ? e : L(w({}, e), {
     presence: L(w({}, e.presence), {
@@ -205,7 +205,7 @@ function z(e, t) {
   })
 }
 
-function W(e) {
+function q(e) {
   let t;
   if (null == e) returnfalse;
   let n = window.location.origin;
@@ -218,8 +218,8 @@ function W(e) {
   return window.location.hostname === t && "localhost" === t || null == e.match("staging") && !!(M.test(e) && M.test(n))
 }
 
-function q(e, t, n) {
-  let r = b.A.getGuild(e.getGuildId());
+function z(e, t, n) {
+  let r = _.A.getGuild(e.getGuildId());
   return (null != r ? r.application_id : e.getApplicationId()) === t || n.indexOf(a.F.MESSAGES_READ) > false
 }
 
@@ -255,7 +255,7 @@ function Z(e) {
     }, "Invalid Client ID")
   })
 }
-async function J(e, t, n) {
+async function $(e, t, n) {
   let r = d.A.getApplication(t);
   if ("string" == typeof n)
     if (e.transport === x.z4.POST_MESSAGE) {
@@ -265,10 +265,10 @@ async function J(e, t, n) {
       }, "Invalid Origin")
     } else {
       let e = await Z(t);
-      if (r = h.Ay.createFromServer(e), !B(n, e.rpc_origins)) throw new T.A({
+      if (r = g.Ay.createFromServer(e), !B(n, e.rpc_origins)) throw new T.A({
         closeCode: P.YI$.INVALID_ORIGIN
       }, "Invalid Origin")
-    } null == r && (r = h.Ay.createFromServer(await Z(t)));
+    } null == r && (r = g.Ay.createFromServer(await Z(t)));
   let {
     id: i,
     name: l,
@@ -284,7 +284,7 @@ async function J(e, t, n) {
     flags: o
   }
 }
-async function $(e, t) {
+async function J(e, t) {
   let n = U[e];
   null == n && (n = new o.A(t ? 2 : 60, k), U[e] = n), await n.process()
 }
@@ -294,7 +294,7 @@ function ee(e, t) {
 }
 
 function et(e) {
-  let t = _.A.getSettings(),
+  let t = b.A.getSettings(),
     n = e => Object.values(e).sort((e, t) => e.index - t.index).map(e => ({
       id: e.id,
       name: e.name
@@ -302,12 +302,12 @@ function et(e) {
     r = e(t);
   return {
     input: {
-      available_devices: n(_.A.getInputDevices()),
+      available_devices: n(b.A.getInputDevices()),
       device_id: t.inputDeviceId,
       volume: t.inputVolume
     },
     output: {
-      available_devices: n(_.A.getOutputDevices()),
+      available_devices: n(b.A.getOutputDevices()),
       device_id: t.outputDeviceId,
       volume: t.outputVolume
     },
@@ -329,7 +329,7 @@ function et(e) {
 }
 
 function en(e, t) {
-  let n = _.A.getSettings(e),
+  let n = b.A.getSettings(e),
     r = t(n);
   return {
     input_mode: {

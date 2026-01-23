@@ -16,23 +16,23 @@ function u(e) {
   let {
     channel: t,
     maxWidth: n
-  } = e, u = (0, r.jsx)(s.Ay.Icon, {
+  } = e, u = (0, r.jsx)(a.Ay.Icon, {
     icon: l.XSmallIcon,
     tooltip: c.intl.string(c.t.cpT0Cq),
     onClick: () => i.A.toggleParticipantsList(t.id, false)
   });
-  return (0, r.jsx)(a.A, {
-    sidebarType: a.X.ParticipantsSidebar,
+  return (0, r.jsx)(s.A, {
+    sidebarType: s.X.ParticipantsSidebar,
     maxWidth: n,
     floatingLayer: o.Ay,
-    children: (0, r.jsxs)(s.Ay, {
+    children: (0, r.jsxs)(a.Ay, {
       toolbar: u,
       "aria-label": c.intl.string(c.t["jNqDh/"]),
-      children: [(0, r.jsx)(s.Ay.Icon, {
+      children: [(0, r.jsx)(a.Ay.Icon, {
         icon: l.GroupIcon,
         disabled: true,
         "aria-label": c.intl.string(c.t["jNqDh/"])
-      }), (0, r.jsx)(s.Ay.Title, {
+      }), (0, r.jsx)(a.Ay.Title, {
         children: c.intl.string(c.t["jNqDh/"])
       })]
     })

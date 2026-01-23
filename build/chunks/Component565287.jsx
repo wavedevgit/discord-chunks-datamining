@@ -2,8 +2,8 @@
 /** chunk id: 565287, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Kz: () => b,
-  rP: () => _
+  Kz: () => v,
+  rP: () => x
 }), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,7 +20,7 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk309829 = require("./309829.jsx"),
   Chunk136643 = require("./136643.js");
 
-function x(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,54 +39,54 @@ function x(e) {
   return e
 }
 Chunk311907.Ay.initialize();
-var _ = ((r = {}).SELECTION = "selection", r.DSA = "dsa", r.TIDA = "tida", r);
+var x = ((r = {}).SELECTION = "selection", r.DSA = "dsa", r.TIDA = "tida", r);
 let E = e => {
     let {
       transitionState: t,
       onClose: n
-    } = e, [r, _] = s.useState(true), [b, v] = s.useState([]), [j, y] = s.useState("selection"), S = (0, l.bG)([f.default], () => f.default.isAuthenticated()), N = (0, l.bG)([u.A], () => u.A.hasLoadedExperiments), O = s.useCallback(() => {
+    } = e, [r, x] = s.useState(true), [v, j] = s.useState([]), [y, b] = s.useState("selection"), S = (0, l.bG)([p.default], () => p.default.isAuthenticated()), I = (0, l.bG)([u.A], () => u.A.hasLoadedExperiments), N = s.useCallback(() => {
       (0, h.OY)().then(e => {
         let {
           body: {
             capabilities: t
           }
         } = e;
-        _(false), v(t)
+        x(false), j(t)
       }).catch(() => {
-        _(false), v([])
+        x(false), j([])
       })
     }, []);
     s.useEffect(() => {
-      S ? (_(true), c.rQ({
+      S ? (x(true), c.rQ({
         withAnalyticsToken: true
-      }).then(() => O()).catch(() => _(false))) : O()
-    }, [S, O]), s.useEffect(() => {
+      }).then(() => N()).catch(() => x(false))) : N()
+    }, [S, N]), s.useEffect(() => {
       (async () => {
-        N || (await o.A.getLocationMetadata(), o.A.getExperiments())
+        I || (await o.A.getLocationMetadata(), o.A.getExperiments())
       })()
-    }, [N]);
-    let I = b.filter(e => e !== d.tY.MEDIA_TAKEDOWN),
-      T = b.includes(d.tY.MEDIA_TAKEDOWN),
-      C = I.length > 0,
-      R = C && T;
+    }, [I]);
+    let O = v.filter(e => e !== d.tY.MEDIA_TAKEDOWN),
+      C = v.includes(d.tY.MEDIA_TAKEDOWN),
+      T = O.length > 0,
+      R = T && C;
     s.useEffect(() => {
-      !r && N && !R && (C ? y("dsa") : T && y("tida"))
-    }, [r, N, R, C, T]), s.useEffect(() => {
-      r || !N || C || T || n()
-    }, [r, N, C, T, n]);
+      !r && I && !R && (T ? b("dsa") : C && b("tida"))
+    }, [r, I, R, T, C]), s.useEffect(() => {
+      r || !I || T || C || n()
+    }, [r, I, T, C, n]);
     let w = s.useCallback(e => {
-        y(e)
+        b(e)
       }, []),
       P = s.useCallback(() => {
-        y("selection")
+        b("selection")
       }, []),
       L = s.useCallback(() => {
-        (0, a.mMO)(() => Promise.resolve(e => (0, i.jsx)(E, x({}, e))), {
+        (0, a.mMO)(() => Promise.resolve(e => (0, i.jsx)(E, A({}, e))), {
           dismissable: false
         })
       }, []),
       k = s.useCallback(e => null != e ? (0, i.jsx)(a.jlY, {
-        className: A.q,
+        className: _.q,
         "data-migration-pending": true,
         children: e
       }) : null, []);
@@ -95,9 +95,9 @@ let E = e => {
       parentComponent: "UnauthenticatedReportForm",
       "data-migration-pending": true,
       children: (0, i.jsx)(a.$mQ, {
-        className: A.k,
+        className: _.k,
         "data-migration-pending": true,
-        children: r || !N ? (0, i.jsx)(a.BJc, {
+        children: r || !I ? (0, i.jsx)(a.BJc, {
           gap: 16,
           align: "center",
           justify: "center",
@@ -107,26 +107,26 @@ let E = e => {
           children: (0, i.jsx)(a.y$y, {})
         }) : (0, i.jsxs)(a.tN_, {
           width: "100%",
-          activeSlide: j,
+          activeSlide: y,
           centered: false,
           children: [(0, i.jsx)(a.q7S, {
             id: "selection",
-            children: (0, i.jsx)(g.u, {
+            children: (0, i.jsx)(m.u, {
               onNavigate: w
             })
           }), (0, i.jsx)(a.q7S, {
             id: "dsa",
-            children: (0, i.jsx)(p.c, {
+            children: (0, i.jsx)(g.c, {
               showBackButton: R,
               onBack: R ? P : true,
-              dsaCapabilities: I,
+              dsaCapabilities: O,
               renderFooter: k,
               onClose: n,
               onReopen: L
             })
           }), (0, i.jsx)(a.q7S, {
             id: "tida",
-            children: (0, i.jsx)(m.K, {
+            children: (0, i.jsx)(f.K, {
               showBackButton: R,
               onBack: R ? P : true,
               renderFooter: k,
@@ -138,8 +138,8 @@ let E = e => {
       })
     })
   },
-  b = () => (s.useEffect(() => {
-    (0, a.mMO)(() => Promise.resolve(e => (0, i.jsx)(E, x({}, e))), {
+  v = () => (s.useEffect(() => {
+    (0, a.mMO)(() => Promise.resolve(e => (0, i.jsx)(E, A({}, e))), {
       dismissable: false
     })
   }, []), null)

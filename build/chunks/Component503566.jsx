@@ -1,7 +1,7 @@
 /** Chunk was on 87916 **/
-/** chunk id: 503566, original params: e,t,a (module,exports,require) **/
+/** chunk id: 503566, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  _: () => _
+  _: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,58 +18,58 @@ var Chunk397927 = require("./397927.js"),
 function A(e) {
   let {
     guild: t,
-    banner: a
+    banner: n
   } = e;
-  return (0, n.jsx)("div", {
-    className: f.C1,
+  return (0, a.jsx)("div", {
+    className: _.C1,
     style: {
-      backgroundImage: "url(".concat(a)
+      backgroundImage: "url(".concat(n)
     },
-    children: (0, n.jsxs)("div", {
-      className: f.F,
-      children: [(0, n.jsx)(l.A, {
+    children: (0, a.jsxs)("div", {
+      className: _.F,
+      children: [(0, a.jsx)(r.A, {
         guild: t,
         isBannerVisible: true
-      }), (0, n.jsx)(s.Heading, {
-        className: f.J5,
+      }), (0, a.jsx)(i.Heading, {
+        className: _.J5,
         variant: "heading-md/semibold",
         children: t.name
-      }), (0, n.jsx)(i.A, {
-        className: f.Wm,
+      }), (0, a.jsx)(l.A, {
+        className: _.Wm,
         open: false
       })]
     })
   })
 }
 
-function _(e) {
+function f(e) {
   let {
     analyticsLocations: t,
-    analyticsLocation: a,
-    guild: s,
-    isGIF: i,
-    banner: l
-  } = e, f = i ? (0, r.Ys)(d.GuildFeatures.ANIMATED_BANNER) : (0, r.Ys)(d.GuildFeatures.BANNER);
-  if (null != f) {
+    analyticsLocation: n,
+    guild: i,
+    isGIF: l,
+    banner: r
+  } = e, _ = l ? (0, s.Ys)(d.GuildFeatures.ANIMATED_BANNER) : (0, s.Ys)(d.GuildFeatures.BANNER);
+  if (null != _) {
     let e;
-    (0, c.A)({
+    (0, o.A)({
       analyticsLocations: t,
-      analyticsSourceLocation: a,
-      guild: s,
+      analyticsSourceLocation: n,
+      guild: i,
       headerProps: {
         title: u.intl.string(u.t["rv2H+1"]),
-        subtitle: (e = (0, r.gb)(f), i ? u.intl.formatToPlainString(u.t["TR/Uyt"], {
+        subtitle: (e = (0, s.gb)(_), l ? u.intl.formatToPlainString(u.t["TR/Uyt"], {
           targetLevelOrPlan: e
         }) : u.intl.formatToPlainString(u.t.B253V6, {
           targetLevelOrPlan: e
         })),
-        image: (0, n.jsx)(A, {
-          guild: s,
-          banner: l
+        image: (0, a.jsx)(A, {
+          guild: i,
+          banner: r
         })
       },
       perkIntro: u.intl.string(u.t.ZuItcI),
-      perks: i ? (0, o.Pf)() : (0, o.QR)()
+      perks: l ? (0, c.Pf)() : (0, c.QR)()
     })
   }
 }

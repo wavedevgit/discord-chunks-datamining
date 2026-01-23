@@ -99,7 +99,7 @@ function H(e) {
     onClickContainer: J
   } = e, {
     analyticsLocations: ee
-  } = (0, u.Ay)([...Z, c.A.USER_PROFILE_POPOUT]), et = (0, h.aL)(), en = (0, b.pb)({
+  } = (0, u.Ay)([...Z, c.A.USER_PROFILE_POPOUT]), et = (0, h.aL)(), en = (0, y.pb)({
     layout: "POPOUT",
     userId: n.id,
     guildId: F,
@@ -116,7 +116,7 @@ function H(e) {
       isHoveringOrFocusing: eo,
       isHovering: el
     } = (0, f.A)(ea),
-    ec = (0, A.fC)(),
+    ec = (0, v.fC)(),
     eu = (0, o.zhh)({
       opacity: +(null != ec.interactionType),
       config: {
@@ -133,7 +133,7 @@ function H(e) {
     }),
     e_ = i.useMemo(() => (0, _.A)(), []),
     eh = e => {
-      null == z || z(), et.dispatch(j.jej.POPOUT_CLOSE), (0, v.openUserProfileModal)(B(V({
+      null == z || z(), et.dispatch(j.jej.POPOUT_CLOSE), (0, A.openUserProfileModal)(B(V({
         sourceAnalyticsLocations: ee,
         hideRestrictedProfile: true,
         customStatusPrompt: e_
@@ -145,7 +145,7 @@ function H(e) {
       id: "view-profile",
       label: k.intl.string(k.t["+Xp3hq"]),
       action: () => {
-        eh(), (0, y.Wn)(V({
+        eh(), (0, b.Wn)(V({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: ee
         }, en))
@@ -153,16 +153,16 @@ function H(e) {
     }),
     eg = $ ? "div" : o.lGe,
     eE = (0, d.GV)(),
-    eb = E.Ay.useName(null == er ? true : er.id, H, n);
+    ey = E.Ay.useName(null == er ? true : er.id, H, n);
   return (0, r.jsx)(u.f5, {
     value: ee,
-    children: (0, r.jsx)(b.of, {
+    children: (0, r.jsx)(y.of, {
       value: en,
       openedAt: K,
       fetchStartedAt: null == es ? true : es.fetchStartedAt,
       fetchEndedAt: null == es ? true : es.fetchEndedAt,
       isLoaded: null == es ? true : es.isLoaded,
-      children: (0, r.jsx)(A.Hl, {
+      children: (0, r.jsx)(v.Hl, {
         value: ec,
         children: (0, r.jsxs)(eg, {
           ref: ea,
@@ -172,7 +172,7 @@ function H(e) {
             children: (0, r.jsx)(o.H, {
               id: eE,
               children: k.intl.format(k.t.KRe1Fk, {
-                name: eb
+                name: ey
               })
             })
           }), (0, r.jsxs)(C.A, {
@@ -201,7 +201,7 @@ function H(e) {
               })]
             }), (0, r.jsxs)("div", {
               className: U.wx,
-              children: [(0, r.jsx)(I.A, {
+              children: [(0, r.jsx)(S.A, {
                 user: n,
                 displayProfile: es,
                 guildId: F,
@@ -210,7 +210,7 @@ function H(e) {
                 userId: n.id,
                 className: U.oR,
                 onClose: z
-              }), (0, r.jsx)(S.A, {
+              }), (0, r.jsx)(I.A, {
                 user: n,
                 displayProfile: es,
                 guildId: F,

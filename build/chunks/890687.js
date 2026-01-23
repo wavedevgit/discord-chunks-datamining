@@ -13,7 +13,7 @@ require.d(exports, {
   In: () => eG,
   Iq: () => eg,
   L1: () => eh,
-  LS: () => eb,
+  LS: () => ey,
   NC: () => e_,
   Nb: () => eJ,
   O9: () => eV,
@@ -22,11 +22,11 @@ require.d(exports, {
   RR: () => eM,
   S5: () => eO,
   UX: () => ek,
-  Vn: () => eI,
+  Vn: () => eS,
   Wj: () => ej,
   XD: () => e0,
   YW: () => eD,
-  Yl: () => ey,
+  Yl: () => eb,
   _b: () => e6,
   a5: () => eK,
   aC: () => eH,
@@ -113,7 +113,7 @@ function Z() {
       location: Y.rE.USE_QUESTS
     });
   return r.useEffect(() => {
-    if ("cache-only" !== e.fetchPolicy && ("cache-and-network" === e.fetchPolicy || "cache-or-network" === e.fetchPolicy && 0 === o) && l && !t && !s && !(0, A.I)()) {
+    if ("cache-only" !== e.fetchPolicy && ("cache-and-network" === e.fetchPolicy || "cache-or-network" === e.fetchPolicy && 0 === o) && l && !t && !s && !(0, v.I)()) {
       if (n(true), (0, T.N1)(), u.enabled && "focused" !== f.A.getState()) return;
       let {
         enableNewRequestBehavior: t
@@ -145,14 +145,14 @@ function Q(e, t, n) {
       enabled: g,
       minutes: E
     } = (0, P.L5)(Y.rE.QUEST_HOME_DESKTOP),
-    y = b.A.Millis.MINUTE * E,
-    O = e3(e, y),
-    A = e3(t, y);
+    b = y.A.Millis.MINUTE * E,
+    O = e3(e, b),
+    v = e3(t, b);
   if (f) {
     let {
       takeover: r
     } = n, i = null != r && (0, B.f0)(r, e.id), a = null != r && (0, B.f0)(r, t.id);
-    return i !== a && (i || a) ? i ? q : X : g && O !== A && (O || A) ? O ? X : q : p !== _ ? p ? X : q : h !== m ? h ? q : X : ed(e.config.expiresAt, t.config.expiresAt, 1)
+    return i !== a && (i || a) ? i ? q : X : g && O !== v && (O || v) ? O ? X : q : p !== _ ? p ? X : q : h !== m ? h ? q : X : ed(e.config.expiresAt, t.config.expiresAt, 1)
   }
   return p !== _ ? p ? q : X : h !== m ? h ? q : X : ed(e.config.expiresAt, t.config.expiresAt, 0)
 }
@@ -350,11 +350,11 @@ function eE() {
   return (0, c.bG)([R.A], () => R.A.getExpiredQuestsMap())
 }
 
-function eb(e) {
+function ey(e) {
   return (0, c.bG)([R.A], () => null != e && R.A.isQuestExpired(e.id), [e])
 }
 
-function ey(e, t, n) {
+function eb(e, t, n) {
   var r;
   let i = (0, c.bG)([h.A], () => {
       var e;
@@ -380,23 +380,23 @@ function eO(e) {
   return r.useMemo(() => null == e ? "" : new Date(e).toLocaleDateString(n, t), [e, t, n])
 }
 
-function eA(e) {
+function ev(e) {
   return (0, c.bG)([R.A], () => R.A.isProgressingOnDesktop(e.id))
 }
 
-function ev(e) {
+function eA(e) {
   return r.useMemo(() => (0, F.YL)(e), [e])
 }
 
-function eS(e) {
+function eI(e) {
   let t = (0, c.bG)([R.A], () => R.A.getOptimisticProgress(e.id, s.n.WATCH_VIDEO));
   return r.useMemo(() => (0, H.J$)(e), [e, t])
 }
 
-function eI(e) {
-  let t = eA(e),
-    n = ev(e),
-    r = eS(e);
+function eS(e) {
+  let t = ev(e),
+    n = eA(e),
+    r = eI(e);
   return t || n || r
 }
 let eT = 1,
@@ -404,13 +404,13 @@ let eT = 1,
     let t = r.useCallback(() => (0, F.Yh)(e), [e]),
       [n, i] = r.useState(t()),
       a = r.useCallback(() => i(t()), [t]),
-      s = eI(e);
+      s = eS(e);
     return r.useEffect(() => {
       var t, n, r;
       if ((null == (t = e.userStatus) ? true : t.enrolledAt) == null || (null == (n = e.userStatus) ? true : n.completedAt) != null || (null == (r = e.userStatus) ? true : r.claimedAt) != null || !s) return void a();
       let i = window.setInterval(() => {
         a()
-      }, b.A.Millis.SECOND * eT);
+      }, y.A.Millis.SECOND * eT);
       return () => {
         clearInterval(i), a()
       }
@@ -495,7 +495,7 @@ function eD(e) {
       let n = (0, B.$e)(t, Y.zO);
       return (0, U.BM)(n, e)
     }, [e, t, n]);
-  return eb(i) ? null : i
+  return ey(i) ? null : i
 }
 
 function ex(e) {
@@ -567,14 +567,14 @@ let ej = e => {
       quest: t
     } = e, {
       xboxAndPlaystationAccounts: n
-    } = eL(), r = eI(t), i = 0 === n.length;
+    } = eL(), r = eS(t), i = 0 === n.length;
     return (0, F.g5)(t) && i && !r
   },
   ek = () => {
     let {
       xboxAccounts: e,
       playstationAccounts: t
-    } = eL(), n = e.length > 0, r = t.length > 0, i = n && !r || !n && r, a = y.A.getArticleURL(W.MVz.QUEST_HOW_TO_PLAYSTATION), s = y.A.getArticleURL(W.MVz.QUEST_HOW_TO_XBOX), o = z.intl.format(z.t.beN4DG, {
+    } = eL(), n = e.length > 0, r = t.length > 0, i = n && !r || !n && r, a = b.A.getArticleURL(W.MVz.QUEST_HOW_TO_PLAYSTATION), s = b.A.getArticleURL(W.MVz.QUEST_HOW_TO_XBOX), o = z.intl.format(z.t.beN4DG, {
       psHelpdeskArticle: a,
       xboxHelpdeskArticle: s
     }), l = z.intl.format(z.t.HVS7nh, {
@@ -607,7 +607,7 @@ function eV(e) {
     r = eN(e),
     i = null != r ? r.percentComplete : n,
     a = 100 * i,
-    s = null != r ? "".concat(null == r ? true : r.progress, "/").concat(null == r ? true : r.target) : (0, v.l9)(t, i, {
+    s = null != r ? "".concat(null == r ? true : r.progress, "/").concat(null == r ? true : r.target) : (0, A.l9)(t, i, {
       roundingMode: "floor"
     });
   return {
@@ -622,7 +622,7 @@ function eF(e) {
 }
 
 function eB(e, t) {
-  let [n, i] = eF(e.id), o = r.useMemo(() => (0, G.UR)(e), [e]), l = o.includes(Y.fO.DESKTOP), c = o.includes(Y.fO.CONSOLE), u = eA(e), d = ev(e), f = r.useMemo(() => (0, a.YW)(t).with({
+  let [n, i] = eF(e.id), o = r.useMemo(() => (0, G.UR)(e), [e]), l = o.includes(Y.fO.DESKTOP), c = o.includes(Y.fO.CONSOLE), u = ev(e), d = eA(e), f = r.useMemo(() => (0, a.YW)(t).with({
     percentComplete: 0
   }, () => null).with({
     taskType: s.n.PLAY_ON_DESKTOP
@@ -679,15 +679,15 @@ function eH(e) {
   let r = eN(e),
     i = eC(e),
     [a] = eB(e, i),
-    o = eb(e),
+    o = ey(e),
     l = (null == (t = e.userStatus) ? true : t.enrolledAt) != null,
     c = (null == (n = e.userStatus) ? true : n.completedAt) != null,
     u = null == r,
     d = s.o.DESKTOP.has(i.taskType) && i.percentComplete > 0,
     f = 0 === i.percentComplete,
     p = l && !c && !o && u && (d || f && a === w.X0.DESKTOP),
-    _ = (0, S.isWeb)() && p && !(0, G.W1)(e),
-    h = (0, S.isMac)() && i.taskType === s.n.STREAM_ON_DESKTOP && p,
+    _ = (0, I.isWeb)() && p && !(0, G.W1)(e),
+    h = (0, I.isMac)() && i.taskType === s.n.STREAM_ON_DESKTOP && p,
     m = [];
   return h && m.push(z.intl.string(z.t.MFGxFM)), _ && m.push(z.intl.string(z.t.BV6xDm)), m
 }
@@ -742,7 +742,7 @@ function ez(e) {
     i = (0, V.Y7)(e),
     a = (0, V.JX)(e),
     s = (0, c.bG)([g.default], () => g.default.getCurrentUser()),
-    o = (0, I.TW)(s, K.PremiumTypes.TIER_2);
+    o = (0, S.TW)(s, K.PremiumTypes.TIER_2);
   if (null == n) return z.intl.formatToPlainString(z.t.l9uXL8, {
     decorationName: t
   });
@@ -789,7 +789,7 @@ let eX = () => (0, c.yK)([R.A], () => [...R.A.quests.values()]).some(e => e.prev
   eQ = e => {
     var t;
     let n = (null == e ? true : e.userStatus) != null && (0, k.gO)(e.userStatus, w.uF.ACTIVITY_PANEL),
-      r = eb(null != e ? e : null),
+      r = ey(null != e ? e : null),
       i = (null == e || null == (t = e.userStatus) ? true : t.claimedAt) != null,
       a = (0, c.bG)([R.A], () => null != R.A.questEnrollmentBlockedUntil, []);
     return !n && !r && !i && !a

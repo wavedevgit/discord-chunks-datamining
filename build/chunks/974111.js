@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   OX: () => m,
-  cJ: () => b,
+  cJ: () => y,
   pK: () => g
 });
 var Chunk908909 = require("./908909.js"),
@@ -26,23 +26,23 @@ let m = new WeakMap,
   g = "__role_" + Date.now(),
   E = "__focusManager_" + Date.now();
 
-function b(e, t, n) {
-  var b;
-  let y, {
+function y(e, t, n) {
+  var y;
+  let b, {
       isInvalid: O,
-      validationErrors: A,
-      validationDetails: v
+      validationErrors: v,
+      validationDetails: A
     } = t.displayValidation,
     {
-      labelProps: S,
-      fieldProps: I,
+      labelProps: I,
+      fieldProps: S,
       descriptionProps: T,
       errorMessageProps: C
     } = (0, d.M)({
       ...e,
       labelElementType: "span",
       isInvalid: O,
-      errorMessage: e.errorMessage || A
+      errorMessage: e.errorMessage || v
     }),
     N = (0, u.useRef)(null),
     {
@@ -68,20 +68,20 @@ function b(e, t, n) {
       })
     }) : "",
     L = (0, s.I)(x),
-    j = "presentation" === e[g] ? I["aria-describedby"] : [L["aria-describedby"], I["aria-describedby"]].filter(Boolean).join(" ") || true,
+    j = "presentation" === e[g] ? S["aria-describedby"] : [L["aria-describedby"], S["aria-describedby"]].filter(Boolean).join(" ") || true,
     M = e[E],
     k = (0, u.useMemo)(() => M || (0, a.C7)(n), [M, n]),
     U = (0, i.P)(t, n, "presentation" === e[g]);
   m.set(t, {
     ariaLabel: e["aria-label"],
-    ariaLabelledBy: [S.id, e["aria-labelledby"]].filter(Boolean).join(" ") || true,
+    ariaLabelledBy: [I.id, e["aria-labelledby"]].filter(Boolean).join(" ") || true,
     ariaDescribedBy: j,
     focusManager: k
   });
   let G = (0, u.useRef)(e.autoFocus);
-  y = "presentation" === e[g] ? {
+  b = "presentation" === e[g] ? {
     role: "presentation"
-  } : (0, o.v)(I, {
+  } : (0, o.v)(S, {
     role: "group",
     "aria-disabled": e.isDisabled || true,
     "aria-describedby": j
@@ -97,19 +97,19 @@ function b(e, t, n) {
     type: "hidden",
     name: e.name,
     form: e.form,
-    value: (null == (b = t.value) ? true : b.toString()) || "",
+    value: (null == (y = t.value) ? true : y.toString()) || "",
     disabled: e.isDisabled
   };
   "native" === e.validationBehavior && (V.type = "text", V.hidden = true, V.required = e.isRequired, V.onChange = () => {});
   let F = (0, c.$)(e);
   return {
     labelProps: {
-      ...S,
+      ...I,
       onClick: () => {
         k.focusFirst()
       }
     },
-    fieldProps: (0, o.v)(F, y, U, R, {
+    fieldProps: (0, o.v)(F, b, U, R, {
       onKeyDown(t) {
         e.onKeyDown && e.onKeyDown(t)
       },
@@ -124,7 +124,7 @@ function b(e, t, n) {
     descriptionProps: T,
     errorMessageProps: C,
     isInvalid: O,
-    validationErrors: A,
-    validationDetails: v
+    validationErrors: v,
+    validationDetails: A
   }
 }

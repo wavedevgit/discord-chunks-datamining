@@ -37,7 +37,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,19 +61,19 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = new Chunk427157.A({
+let S = new Chunk427157.A({
   id: "???",
   username: "???"
 });
 
 function T(e) {
   var t;
-  return null == e.author ? I : null != e.webhook_id ? new d.A(e.author) : null != (t = _.default.getUser(e.author.id)) ? t : new d.A(e.author)
+  return null == e.author ? S : null != e.webhook_id ? new d.A(e.author) : null != (t = _.default.getUser(e.author.id)) ? t : new d.A(e.author)
 }
 
 function C(e) {
@@ -82,24 +82,24 @@ function C(e) {
 
 function N(e) {
   var t;
-  return new u.go(S(A({}, e), {
+  return new u.go(I(v({}, e), {
     timestamp: new Date(e.timestamp),
     editedTimestamp: null != e.edited_timestamp ? new Date(e.edited_timestamp) : null,
     attachments: D(e),
     embeds: L(e),
     components: (0, s.ZV)(null != (t = e.components) ? t : []),
-    codedLinks: y.MRS.NON_PARSED.has(e.type) ? [] : (0, a.Ay)(e.content)
+    codedLinks: b.MRS.NON_PARSED.has(e.type) ? [] : (0, a.Ay)(e.content)
   }))
 }
 
 function R(e) {
   var t, n, r, i, a, s, l, d;
   let _, h, {
-      reactions: b,
+      reactions: y,
       interactionData: O
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
-    v = N(e),
-    I = null != (t = null == (s = e.mentions) ? true : s.map(e => e.id)) ? t : [],
+    A = N(e),
+    S = null != (t = null == (s = e.mentions) ? true : s.map(e => e.id)) ? t : [],
     R = null != (n = e.mention_roles) ? n : [],
     w = null != (r = e.mention_channels) ? r : [],
     P = null != (i = e.mention_games) ? i : [],
@@ -109,22 +109,22 @@ function R(e) {
     U = null == e ? true : e.gift_info,
     G = e.gifting_prompt,
     V = null != e.interaction ? c.A.createFromServer(e.interaction) : null,
-    F = e.type === y.lAJ.THREAD_STARTER_MESSAGE ? null == (d = e.referenced_message) || null == (l = d.author) ? true : l.id : true,
+    F = e.type === b.lAJ.THREAD_STARTER_MESSAGE ? null == (d = e.referenced_message) || null == (l = d.author) ? true : l.id : true,
     B = e.content;
-  return new u.Ay((e.type === y.lAJ.PREMIUM_REFERRAL && (_ = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, B = ""), e.type === y.lAJ.PREMIUM_GROUP_INVITE && (h = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, B = ""), C(e)) ? S(A({}, k), {
+  return new u.Ay((e.type === b.lAJ.PREMIUM_REFERRAL && (_ = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, B = ""), e.type === b.lAJ.PREMIUM_GROUP_INVITE && (h = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, B = ""), C(e)) ? I(v({}, k), {
     id: e.id,
     channel_id: e.channel_id,
-    type: y.lAJ.DEFAULT,
+    type: b.lAJ.DEFAULT,
     author: L,
-    timestamp: v.timestamp,
+    timestamp: A.timestamp,
     isUnsupported: true
-  }) : S(A({}, e, k, v.toJS()), {
+  }) : I(v({}, e, k, A.toJS()), {
     author: L,
     webhookId: e.webhook_id,
     blocked: p.A.isBlockedForMessage(e) || null != F && p.A.isBlocked(F),
     ignored: p.A.isIgnoredForMessage(e) || null != F && p.A.isIgnored(F),
     mentionEveryone: e.mention_everyone,
-    mentions: I,
+    mentions: S,
     mentionRoles: R,
     mentionChannels: w,
     mentionGames: P,
@@ -133,7 +133,7 @@ function R(e) {
       userId: f.default.getId(),
       channelId: e.channel_id,
       mentionEveryone: null != (a = e.mention_everyone) && a,
-      mentionUsers: I,
+      mentionUsers: S,
       mentionRoles: R,
       mentionGames: P.map(e => e.id)
     }),
@@ -141,9 +141,9 @@ function R(e) {
     content: B,
     referralTrialOfferId: _,
     premiumGroupInviteId: h,
-    call: x(e.call, v.timestamp),
+    call: x(e.call, A.timestamp),
     messageSnapshots: M(e),
-    reactions: j(null != b ? b : e.reactions, e.poll),
+    reactions: j(null != y ? y : e.reactions, e.poll),
     interaction: V,
     interactionData: null != O ? O : e.interaction_data,
     interactionMetadata: e.interaction_metadata,
@@ -157,10 +157,10 @@ function R(e) {
 }
 
 function w(e, t) {
-  return null != t.edited_timestamp ? S(A({}, t), {
+  return null != t.edited_timestamp ? I(v({}, t), {
     reactions: e.reactions,
     interaction_data: e.interaction_data
-  }) : A({}, e, t)
+  }) : v({}, e, t)
 }
 
 function P(e, t) {
@@ -181,8 +181,8 @@ function P(e, t) {
 }
 
 function D(e) {
-  return null == e.attachments ? [] : e.attachments.map(e => S(A({}, e), {
-    spoiler: e.filename.startsWith(b._W)
+  return null == e.attachments ? [] : e.attachments.map(e => I(v({}, e), {
+    spoiler: e.filename.startsWith(y._W)
   }))
 }
 
@@ -224,7 +224,7 @@ function j(e, t) {
     burst_count: 0
   }));
   return [...null != e ? e : [], ...null != r ? r : []].map(e => {
-    let t = A({}, e);
+    let t = v({}, e);
     if ((null == t ? true : t.count_details) != null) {
       var n, r;
       t.burst_count = null != (n = t.count_details.burst) ? n : 0, t.count = null != (r = t.count_details.normal) ? r : 0
@@ -248,5 +248,5 @@ function M(e) {
 let k = e => 0 === (0, l.o6)(e).length || "" !== e.content;
 
 function U(e) {
-  return e.hasFlag(y.pr7.EPHEMERAL) && e.type !== y.lAJ.IN_GAME_MESSAGE_NUX
+  return e.hasFlag(b.pr7.EPHEMERAL) && e.type !== b.lAJ.IN_GAME_MESSAGE_NUX
 }

@@ -2,12 +2,12 @@
 /** chunk id: 69555, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B7: () => A,
+  B7: () => v,
   Iq: () => m,
   My: () => O,
-  eK: () => b,
+  eK: () => y,
   hS: () => g,
-  jI: () => y,
+  jI: () => b,
   xA: () => E
 }), require("./896048.js");
 var Chunk73153 = require("./73153.js"),
@@ -51,7 +51,7 @@ function h() {
 function m(e, t) {
   var n;
   let i = null == (n = a.A.getChannel(s.A.getVoiceChannelId())) ? true : n.guild_id;
-  null == e || null == i ? b(false, t) : (r.h.dispatch({
+  null == e || null == i ? y(false, t) : (r.h.dispatch({
     type: "UPDATE_HANG_STATUS",
     status: e,
     guildId: i,
@@ -63,7 +63,7 @@ function m(e, t) {
 }
 
 function g(e, t, n) {
-  "" === e || null == t ? b(false, n) : (r.h.dispatch({
+  "" === e || null == t ? y(false, n) : (r.h.dispatch({
     type: "UPDATE_HANG_STATUS_CUSTOM",
     emoji: t,
     status: e,
@@ -78,7 +78,7 @@ function g(e, t, n) {
 }
 
 function E(e, t) {
-  null == e ? b(false, t) : (r.h.dispatch({
+  null == e ? y(false, t) : (r.h.dispatch({
     type: "UPDATE_HANG_STATUS_GAME_ACTIVITY",
     applicationId: e,
     saveAsDefault: t
@@ -88,7 +88,7 @@ function E(e, t) {
   }, h())))
 }
 
-function b(e, t) {
+function y(e, t) {
   r.h.dispatch({
     type: "CLEAR_HANG_STATUS",
     saveAsDefault: t
@@ -97,7 +97,7 @@ function b(e, t) {
   }, h()))
 }
 
-function y() {
+function b() {
   let e = [l.A.getCustomHangStatus(), ...l.A.getRecentStatuses(), ...l.A.getFavoritedStatuses()].filter(e => {
     var t;
     return !(null == e || (0, u.A)(e)) && null != e.emoji && (null == (t = e.emoji) ? true : t.id) != null && null == i.Ay.getCustomEmojiById(e.emoji.id)
@@ -116,7 +116,7 @@ function O(e, t) {
   })
 }
 
-function A() {
+function v() {
   r.h.dispatch({
     type: "RESET_HANG_STATUS_STATE"
   })

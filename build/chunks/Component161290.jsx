@@ -100,7 +100,7 @@ function k() {
         errors: t
       })
     }),
-    Q = (0, S.V7)({
+    Q = (0, I.V7)({
       userId: G.id,
       image: F
     }),
@@ -117,20 +117,20 @@ function k() {
       children: [(0, r.jsx)(E.A, {
         showRemoveBannerButton: et,
         errors: Z.banner,
-        onBannerChange: I.Iz,
+        onBannerChange: S.Iz,
         forcedDivider: true
       }, "banner"), (0, r.jsx)(O.A, {
         user: G,
         pendingAvatarSrc: Q,
         pendingColors: z,
-        onThemeColorsChange: I.Zz,
+        onThemeColorsChange: S.Zz,
         forcedDivider: true
       })]
-    }) : (0, r.jsx)(b.A, {
+    }) : (0, r.jsx)(y.A, {
       user: G,
       savedUserColor: null == V ? true : V.accentColor,
       pendingColor: K,
-      setPendingAccentColor: I.XW
+      setPendingAccentColor: S.XW
     }, "color");
   return (0, r.jsxs)("div", {
     className: D.Q,
@@ -141,13 +141,13 @@ function k() {
       pendingGlobalName: B,
       onGlobalNameChange: o.U6,
       user: G
-    }), (0, r.jsx)(v.A, {
+    }), (0, r.jsx)(A.A, {
       sectionTitle: P.intl.string(P.t["+T3RI/"]),
       errors: Z.pronouns,
-      onPronounsChange: I.Oz,
+      onPronounsChange: S.Oz,
       pendingPronouns: W,
       currentPronouns: null != (x = null == V ? true : V.pronouns) ? x : ""
-    }, "pronouns"), (0, r.jsx)(A.A, {}), (0, r.jsx)(_.A, {
+    }, "pronouns"), (0, r.jsx)(v.A, {}), (0, r.jsx)(_.A, {
       onAvatarChange: o.zq,
       showRemoveAvatarButton: ee,
       errors: Z.avatar,
@@ -158,7 +158,7 @@ function k() {
       sectionTitle: P.intl.string(P.t["7v0T9P"])
     }, "decoration"), (0, r.jsx)(g.A, {
       user: G
-    }), (0, r.jsx)(y.A, {
+    }), (0, r.jsx)(b.A, {
       user: G,
       sectionTitle: P.intl.string(P.t.wR5wOo)
     }, "effect"), eo(), (0, r.jsx)(f.A, {

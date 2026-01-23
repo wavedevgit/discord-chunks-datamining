@@ -2,12 +2,12 @@
 /** chunk id: 351001, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  EZ: () => b,
+  EZ: () => y,
   HU: () => m,
   KX: () => E,
   Kd: () => O,
   L7: () => g,
-  fJ: () => y
+  fJ: () => b
 }), require("./938796.js"), require("./896048.js");
 var Chunk665260 = require("./665260.js"),
   Chunk311907 = require("./311907.js"),
@@ -73,12 +73,12 @@ function E(e, t) {
   return null != t && n.canManageUser(d.xBc.KICK_MEMBERS, e, t) && !e.isNonUserBot()
 }
 
-function b(e, t) {
+function y(e, t) {
   let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [o.A];
-  return null != t && y(e, t, [n]) && !e.isProvisional
+  return null != t && b(e, t, [n]) && !e.isProvisional
 }
 
-function y(e, t) {
+function b(e, t) {
   let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [o.A];
   return null != t && n.canManageUser(d.xBc.BAN_MEMBERS, e, t) && !e.isNonUserBot() && !e.bot
 }

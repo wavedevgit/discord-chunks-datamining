@@ -28,38 +28,38 @@ function h(e) {
     voiceChannel: m,
     hangStatus: g,
     userId: E,
-    textSize: b = "xs",
-    animateEmoji: y = true,
+    textSize: y = "xs",
+    animateEmoji: b = true,
     hideEmoji: O = false,
-    hideTooltip: A = false
-  } = e, v = (0, d.v)("ActivityStatus", m), {
-    defaultStatusVariant: S
+    hideTooltip: v = false
+  } = e, A = (0, d.v)("ActivityStatus", m), {
+    defaultStatusVariant: I
   } = (0, l.$j)({
     guildId: null == m ? true : m.guild_id,
     location: "CustomStatusActivityStatus"
   });
   if (null == t && null == g) return null;
-  let I = null != g && v,
-    T = I && null != E ? (0, c.Au)(E, g, S) : null,
+  let S = null != g && A,
+    T = S && null != E ? (0, c.Au)(E, g, I) : null,
     C = null == t ? true : t.emoji,
     N = null != T ? T : null == t ? true : t.state,
     R = null != N && "" !== N,
     w = null;
-  I && null != E ? w = (0, r.jsx)(u.A, {
+  S && null != E ? w = (0, r.jsx)(u.A, {
     userId: E,
     size: _,
     className: a()(i, p.W9),
     hangStatusActivity: g
   }) : null == C || O || (w = (0, r.jsx)(f.A, {
     emoji: C,
-    animate: y,
+    animate: b,
     className: i,
-    hideTooltip: A || R
+    hideTooltip: v || R
   }));
   let P = R && (null != w ? " ".concat(N) : N),
     D = () => {
       let e = null != C && !O && !R;
-      return A || e ? (0, r.jsxs)(r.Fragment, {
+      return v || e ? (0, r.jsxs)(r.Fragment, {
         children: [w, P]
       }) : (0, r.jsxs)(s.A, {
         delay: 150,
@@ -68,7 +68,7 @@ function h(e) {
       })
     };
   return (0, r.jsx)(o.Text, {
-    variant: "text-".concat(b, "/medium"),
+    variant: "text-".concat(y, "/medium"),
     color: "none",
     className: a()(p.ps, n),
     children: D()

@@ -21,12 +21,12 @@ let d = e => {
     height: f = 32,
     shouldAnimate: p = true,
     isLocked: _ = false
-  } = e, [h, m] = i.useState(false), g = (0, c.Iv)(n, 32, p && a), E = () => m(true), b = () => m(false);
+  } = e, [h, m] = i.useState(false), g = (0, c.Iv)(n, 32, p && a), E = () => m(true), y = () => m(false);
   return (0, r.jsxs)("div", {
     onFocus: E,
-    onBlur: b,
+    onBlur: y,
     onMouseOver: E,
-    onMouseLeave: b,
+    onMouseLeave: y,
     children: [(0, r.jsx)(l.Ay, {
       className: s()(u.dK, t),
       mask: a || h ? l.hW.SQUIRCLE : l.hW.AVATAR_DEFAULT,

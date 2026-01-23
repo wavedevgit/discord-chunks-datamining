@@ -40,9 +40,9 @@ module.exports = function(e) {
       c = n.getDecorator();
     return i !== a || s !== o || l !== c || n.mustForceSelection()
   }, n.render = function() {
-    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, a = e.customStyleMap, u = e.customStyleFn, d = e.editorState, f = e.editorKey, p = e.textDirectionality, _ = d.getCurrentContent(), h = d.getSelection(), m = d.mustForceSelection(), g = d.getDecorator(), E = c(d.getDirectionMap()), b = _.getBlocksAsArray()[0], y = [], O = b; O;) {
-      var A = O.getKey(),
-        v = {
+    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, a = e.customStyleMap, u = e.customStyleFn, d = e.editorState, f = e.editorKey, p = e.textDirectionality, _ = d.getCurrentContent(), h = d.getSelection(), m = d.mustForceSelection(), g = d.getDecorator(), E = c(d.getDirectionMap()), y = _.getBlocksAsArray()[0], b = [], O = y; O;) {
+      var v = O.getKey(),
+        A = {
           blockRenderMap: t,
           blockRendererFn: n,
           blockStyleFn: r,
@@ -55,26 +55,26 @@ module.exports = function(e) {
           forceSelection: m,
           selection: h,
           block: O,
-          direction: p || E.get(A),
-          tree: d.getBlockTree(A)
+          direction: p || E.get(v),
+          tree: d.getBlockTree(v)
         },
-        S = (t.get(O.getType()) || t.get("unstyled")).wrapper;
-      y.push({
+        I = (t.get(O.getType()) || t.get("unstyled")).wrapper;
+      b.push({
         block: l.createElement(s, i({
-          key: A
-        }, v)),
-        wrapperTemplate: S,
-        key: A,
-        offsetKey: o.encode(A, 0, 0)
+          key: v
+        }, A)),
+        wrapperTemplate: I,
+        key: v,
+        offsetKey: o.encode(v, 0, 0)
       });
-      var I = O.getNextSiblingKey();
-      O = I ? _.getBlockForKey(I) : null
+      var S = O.getNextSiblingKey();
+      O = S ? _.getBlockForKey(S) : null
     }
-    for (var T = [], C = 0; C < y.length;) {
-      var N = y[C];
+    for (var T = [], C = 0; C < b.length;) {
+      var N = b[C];
       if (N.wrapperTemplate) {
         var R = [];
-        do R.push(y[C].block), C++; while (C < y.length && y[C].wrapperTemplate === N.wrapperTemplate);
+        do R.push(b[C].block), C++; while (C < b.length && b[C].wrapperTemplate === N.wrapperTemplate);
         var w = l.cloneElement(N.wrapperTemplate, {
           key: N.key + "-wrap",
           "data-offset-key": N.offsetKey

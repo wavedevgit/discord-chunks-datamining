@@ -18,18 +18,18 @@ let p = function(e) {
     onScroll: t,
     onSelectApplication: n
   } = e;
-  return (0, l.jsxs)(c.A, {
+  return (0, r.jsxs)(o.A, {
     onScroll: t,
-    children: [(0, l.jsx)(i.A, {
+    children: [(0, r.jsx)(a.A, {
       title: d.intl.format(d.t.kEcZ97, {}),
       description: d.intl.string(d.t.XxFts9),
-      children: (0, l.jsx)(r.A, {})
-    }), (0, l.jsx)(s.A, {
-      children: (0, l.jsxs)("div", {
+      children: (0, r.jsx)(i.A, {})
+    }), (0, r.jsx)(s.A, {
+      children: (0, r.jsxs)("div", {
         className: u.h,
-        children: [(0, l.jsx)(o.A, {
+        children: [(0, r.jsx)(c.A, {
           onSelectApplication: n
-        }), (0, l.jsx)(a.A, {
+        }), (0, r.jsx)(l.A, {
           padding: true
         })]
       })

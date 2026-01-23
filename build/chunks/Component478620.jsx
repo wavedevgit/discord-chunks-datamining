@@ -36,10 +36,10 @@ function p(e) {
   }
   if (!(0, u.k)(h) || null == m) return null;
   let E = /^\/([a-z]{2}(?:-[a-z]{2})?)\//.test(m) ? 2 : 1,
-    b = null == (t = m.split("/")[E]) ? true : t.toLowerCase();
-  null != g && (b = "song");
-  let y = 450;
-  "song" === b ? y = 175 : "music-video" === b && (y = 371), m = m.substr(1);
+    y = null == (t = m.split("/")[E]) ? true : t.toLowerCase();
+  null != g && (y = "song");
+  let b = 450;
+  "song" === y ? b = 175 : "music-video" === y && (b = 371), m = m.substr(1);
   let O = _ ? "dark" : "light";
   return (0, r.jsx)("iframe", {
     className: a()(f.li, i),
@@ -48,7 +48,7 @@ function p(e) {
       maxWidth: 660,
       minWidth: 300,
       width: "100%",
-      height: y
+      height: b
     },
     frameBorder: 0,
     sandbox: "allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation",

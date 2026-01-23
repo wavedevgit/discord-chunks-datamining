@@ -69,8 +69,8 @@ function w(e, t) {
 }
 
 function P() {
-  let e = (0, y.XT)(),
-    t = (0, y.Et)(),
+  let e = (0, b.XT)(),
+    t = (0, b.Et)(),
     n = (0, h.isWindows)(),
     {
       remindersEnabled: a,
@@ -78,9 +78,9 @@ function P() {
       clipsQuality: R
     } = (0, o.cf)([g.A], () => g.A.getSettings()),
     P = (0, o.bG)([g.A], () => g.A.getHardwareClassification()),
-    D = (0, o.bG)([_.Ay], () => _.Ay.getKeybindForAction(v.hCu.SAVE_CLIP, true)),
-    x = (0, o.bG)([_.Ay], () => _.Ay.getKeybindForAction(v.hCu.SAVE_SCREENSHOT, true)),
-    L = (0, b.A)(p.A),
+    D = (0, o.bG)([_.Ay], () => _.Ay.getKeybindForAction(A.hCu.SAVE_CLIP, true)),
+    x = (0, o.bG)([_.Ay], () => _.Ay.getKeybindForAction(A.hCu.SAVE_SCREENSHOT, true)),
+    L = (0, y.A)(p.A),
     {
       showClipsHeaderEntrypoint: j
     } = m.L_.useExperiment({
@@ -93,69 +93,69 @@ function P() {
   let k = (0, o.bG)([d.default], () => d.default.locale),
     U = i.useMemo(() => [{
       id: "30sec",
-      value: A.LX.SECONDS_30,
-      label: I.intl.formatToPlainString(I.t["bTFv/3"], {
+      value: v.LX.SECONDS_30,
+      label: S.intl.formatToPlainString(S.t["bTFv/3"], {
         count: 30
       })
     }, {
       id: "1min",
-      value: A.LX.MINUTES_1,
-      label: I.intl.formatToPlainString(I.t.ICo9Nk, {
+      value: v.LX.MINUTES_1,
+      label: S.intl.formatToPlainString(S.t.ICo9Nk, {
         count: 1
       })
     }, {
       id: "2min",
-      value: A.LX.MINUTES_2,
-      label: I.intl.formatToPlainString(I.t.ICo9Nk, {
+      value: v.LX.MINUTES_2,
+      label: S.intl.formatToPlainString(S.t.ICo9Nk, {
         count: 2
       })
     }], [k]),
     G = i.useMemo(() => [{
       id: "480p",
-      value: S.on.RESOLUTION_480,
-      label: I.intl.formatToPlainString(I.t.TEOC0I, {
-        resolution: S.on.RESOLUTION_480
+      value: I.on.RESOLUTION_480,
+      label: S.intl.formatToPlainString(S.t.TEOC0I, {
+        resolution: I.on.RESOLUTION_480
       })
     }, {
       id: "720p",
-      value: S.on.RESOLUTION_720,
-      label: I.intl.formatToPlainString(I.t.TEOC0I, {
-        resolution: S.on.RESOLUTION_720
+      value: I.on.RESOLUTION_720,
+      label: S.intl.formatToPlainString(S.t.TEOC0I, {
+        resolution: I.on.RESOLUTION_720
       })
     }, {
       id: "1080p",
-      value: S.on.RESOLUTION_1080,
-      label: I.intl.formatToPlainString(I.t.TEOC0I, {
-        resolution: S.on.RESOLUTION_1080
+      value: I.on.RESOLUTION_1080,
+      label: S.intl.formatToPlainString(S.t.TEOC0I, {
+        resolution: I.on.RESOLUTION_1080
       })
     }, {
       id: "1440p",
-      value: S.on.RESOLUTION_1440,
-      label: I.intl.formatToPlainString(I.t.TEOC0I, {
-        resolution: S.on.RESOLUTION_1440
+      value: I.on.RESOLUTION_1440,
+      label: S.intl.formatToPlainString(S.t.TEOC0I, {
+        resolution: I.on.RESOLUTION_1440
       })
     }, {
       id: "source",
-      value: S.on.RESOLUTION_SOURCE,
-      label: I.intl.string(I.t.XjXqzh)
+      value: I.on.RESOLUTION_SOURCE,
+      label: S.intl.string(S.t.XjXqzh)
     }], [k]),
     V = i.useMemo(() => [{
       id: "15fps",
-      value: S.kn.FPS_15,
-      label: I.intl.formatToPlainString(I.t.Qb44XH, {
-        fps: S.kn.FPS_15
+      value: I.kn.FPS_15,
+      label: S.intl.formatToPlainString(S.t.Qb44XH, {
+        fps: I.kn.FPS_15
       })
     }, {
       id: "30fps",
-      value: S.kn.FPS_30,
-      label: I.intl.formatToPlainString(I.t.Qb44XH, {
-        fps: S.kn.FPS_30
+      value: I.kn.FPS_30,
+      label: S.intl.formatToPlainString(S.t.Qb44XH, {
+        fps: I.kn.FPS_30
       })
     }, {
       id: "60fps",
-      value: S.kn.FPS_60,
-      label: I.intl.formatToPlainString(I.t.Qb44XH, {
-        fps: S.kn.FPS_60
+      value: I.kn.FPS_60,
+      label: S.intl.formatToPlainString(S.t.Qb44XH, {
+        fps: I.kn.FPS_60
       })
     }], [k]),
     F = i.useCallback(e => {
@@ -170,13 +170,13 @@ function P() {
     }, [x]);
   return (0, r.jsxs)(l.nVY, {
     children: [(0, r.jsx)(f.A, {
-      children: I.intl.string(I.t["Z+MfqT"])
+      children: S.intl.string(S.t["Z+MfqT"])
     }), P === E.k9.BELOW_MINIMUM ? (0, r.jsx)(f.A, {
       look: f.k.WARNING,
-      children: I.intl.string(I.t.SIxrIF)
+      children: S.intl.string(S.t.SIxrIF)
     }) : null, (0, r.jsx)(l.dOG, {
-      label: I.intl.string(I.t.h8rgrK),
-      description: I.intl.string(I.t["4Qw3NO"]),
+      label: S.intl.string(S.t.h8rgrK),
+      description: S.intl.string(S.t["4Qw3NO"]),
       checked: t,
       onChange: e => O.yO({
         clipsEnabled: e,
@@ -184,8 +184,8 @@ function P() {
       })
     }), n && L && (0, r.jsx)(r.Fragment, {
       children: (0, r.jsx)(l.dOG, {
-        label: I.intl.string(I.t.yXvykv),
-        description: I.intl.string(I.t.YP3ujk),
+        label: S.intl.string(S.t.yXvykv),
+        description: S.intl.string(S.t.YP3ujk),
         checked: e,
         onChange: e => O.fd({
           enabled: e,
@@ -193,14 +193,14 @@ function P() {
         })
       })
     }), j && (0, r.jsx)(l.dOG, {
-      label: I.intl.string(I.t["3zwNf6"]),
-      description: I.intl.string(I.t.m4Cjj9),
+      label: S.intl.string(S.t["3zwNf6"]),
+      description: S.intl.string(S.t.m4Cjj9),
       checked: a,
       onChange: e => O.Mt(e)
     }), (0, r.jsx)(l.l6P, {
       onSelectionChange: O.h$,
-      label: I.intl.string(I.t.OgfUio),
-      description: I.intl.string(I.t.H7j4tY),
+      label: S.intl.string(S.t.OgfUio),
+      description: S.intl.string(S.t.H7j4tY),
       value: C,
       options: U,
       selectionMode: "single",
@@ -212,8 +212,8 @@ function P() {
           frameRate: R.frameRate
         })
       },
-      label: I.intl.string(I.t.aFudZJ),
-      description: I.intl.string(I.t.nIrkW5),
+      label: S.intl.string(S.t.aFudZJ),
+      description: S.intl.string(S.t.nIrkW5),
       value: R.resolution,
       options: G,
       selectionMode: "single",
@@ -225,15 +225,15 @@ function P() {
           frameRate: e
         })
       },
-      label: I.intl.string(I.t["2wScL1"]),
-      description: I.intl.string(I.t["Rf9+fy"]),
+      label: S.intl.string(S.t["2wScL1"]),
+      description: S.intl.string(S.t["Rf9+fy"]),
       value: R.frameRate,
       options: V,
       selectionMode: "single",
       fullWidth: true
     }), (0, r.jsx)(l.D0$, {
-      label: I.intl.string(I.t.pf54EU),
-      description: I.intl.string(I.t["QyB/jK"]),
+      label: S.intl.string(S.t.pf54EU),
+      description: S.intl.string(S.t["QyB/jK"]),
       layout: "horizontal",
       children: (0, r.jsx)("div", {
         className: T.g,
@@ -243,8 +243,8 @@ function P() {
         })
       })
     }), M && (0, r.jsx)(l.D0$, {
-      label: I.intl.string(I.t["0U/hj7"]),
-      description: I.intl.string(I.t["5zxkdo"]),
+      label: S.intl.string(S.t["0U/hj7"]),
+      description: S.intl.string(S.t["5zxkdo"]),
       layout: "horizontal",
       children: (0, r.jsx)("div", {
         className: T.g,

@@ -1,11 +1,11 @@
-/** Chunk was on 52860 **/
+/** Chunk was on 46952 **/
 /** chunk id: 961883, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  $V: () => L,
+  $V: () => v,
   $k: () => k,
-  aG: () => C,
+  aG: () => L,
   mO: () => M,
-  v8: () => v
+  v8: () => C
 }), require("./321073.js"), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk106778 = require("./106778.js"),
@@ -31,7 +31,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk652215 = require("./652215.js"),
   Chunk22104 = require("./22104.js"),
   Chunk985018 = require("./985018.jsx");
-let T = t => null != t ? S.intl.format(S.t["4kp0AB"], {
+let P = t => null != t ? T.intl.format(T.t["4kp0AB"], {
     itemName: t
   }) : null,
   k = t => {
@@ -45,17 +45,17 @@ let T = t => null != t ? S.intl.format(S.t["4kp0AB"], {
       rentalDuration: s
     } = t;
     if (null != n) return n;
-    if (null != s) return 3 === s ? S.intl.string(S.t["5Gltxj"]) : 7 === s ? S.intl.string(S.t.UpxLQN) : S.intl.string(S.t.sYO0Wl);
-    if (m.Dp.ORB_PROFILE_BADGE === e.skuId) return S.intl.string(P.default.nvaTQq);
+    if (null != s) return 3 === s ? T.intl.string(T.t["5Gltxj"]) : 7 === s ? T.intl.string(T.t.UpxLQN) : T.intl.string(T.t.sYO0Wl);
+    if (m.Dp.ORB_PROFILE_BADGE === e.skuId) return T.intl.string(S.default.nvaTQq);
     if (m.Dp.FRACTIONAL_PREMIUM === e.skuId)
-      if (a) return S.intl.string(S.t.t0xkSB);
-      else return S.intl.string(S.t.g5W1g8);
-    if (i && !r) return S.intl.string(S.t.IMffmm);
-    else return S.intl.formatToPlainString(S.t.YNaxMp, {
+      if (a) return T.intl.string(T.t.t0xkSB);
+      else return T.intl.string(T.t.g5W1g8);
+    if (i && !r) return T.intl.string(T.t.IMffmm);
+    else return T.intl.formatToPlainString(T.t.YNaxMp, {
       itemName: l
     })
   },
-  v = t => {
+  C = t => {
     let {
       product: e,
       overrideDescription: n,
@@ -68,21 +68,21 @@ let T = t => null != t ? S.intl.format(S.t["4kp0AB"], {
       isRental: o = false
     } = t;
     if (null != n) return n;
-    if (o && null != d) return S.intl.format(S.t["HQjw+I"], {
+    if (o && null != d) return T.intl.format(T.t["HQjw+I"], {
       itemName: i,
       date: d
     });
-    if (m.Dp.ORB_PROFILE_BADGE === e.skuId) return S.intl.string(P.default.UnPGii);
+    if (m.Dp.ORB_PROFILE_BADGE === e.skuId) return T.intl.string(S.default.UnPGii);
     if (m.Dp.FRACTIONAL_PREMIUM === e.skuId) {
-      let t = S.intl.formatToPlainString(S.t.Cz1G97, {
+      let t = T.intl.formatToPlainString(T.t.Cz1G97, {
         days: 3
       });
-      return a ? S.intl.format(S.t.bhLChO, {
-        helpCenterLink: R.A.getArticleURL(_.MVz.FRACTIONAL_PREMIUM_ABOUT),
+      return a ? T.intl.format(T.t.bhLChO, {
+        helpCenterLink: g.A.getArticleURL(_.MVz.FRACTIONAL_PREMIUM_ABOUT),
         duration: t,
         expirationDate: d
-      }) : u ? S.intl.string(S.t.fBmhE9) : S.intl.format(S.t["1ZBX4E"], {
-        helpCenterLink: R.A.getArticleURL(_.MVz.FRACTIONAL_PREMIUM_ABOUT),
+      }) : u ? T.intl.string(T.t.fBmhE9) : T.intl.format(T.t["1ZBX4E"], {
+        helpCenterLink: g.A.getArticleURL(_.MVz.FRACTIONAL_PREMIUM_ABOUT),
         duration: t
       })
     }
@@ -90,15 +90,15 @@ let T = t => null != t ? S.intl.format(S.t["4kp0AB"], {
       let {
         itemOneName: t,
         itemTwoName: n
-      } = (0, E.yW)(e);
-      return S.intl.format(S.t.fXw44U, {
+      } = (0, I.yW)(e);
+      return T.intl.format(T.t.fXw44U, {
         itemOneName: t,
         itemTwoName: n
       })
     }
-    return e.type === s.R.AVATAR_DECORATION && r && null != l ? l : T(i)
+    return e.type === s.R.AVATAR_DECORATION && r && null != l ? l : P(i)
   },
-  C = t => {
+  L = t => {
     let {
       product: e,
       onClose: n,
@@ -106,17 +106,17 @@ let T = t => null != t ? S.intl.format(S.t["4kp0AB"], {
       hasRequiredProductItems: r,
       handleUseNow: l,
       isApplying: y,
-      openProfileSettings: R,
-      itemConsumed: g
-    } = t, E = [];
-    if (m.Dp.ORB_PROFILE_BADGE === e.skuId) E.push({
-      text: S.intl.string(P.default.yfwZuy),
+      openProfileSettings: g,
+      itemConsumed: E
+    } = t, I = [];
+    if (m.Dp.ORB_PROFILE_BADGE === e.skuId) I.push({
+      text: T.intl.string(S.default.yfwZuy),
       variant: "primary",
       onClick: () => {
         n(), A._.dispatch(_.jej.SHOW_ACCOUNT_PROFILE_POPOUT, {})
       }
     }, {
-      text: S.intl.string(S.t.H57f41),
+      text: T.intl.string(T.t.H57f41),
       variant: "secondary",
       onClick: () => {
         n(), (0, b.Y)({
@@ -126,22 +126,22 @@ let T = t => null != t ? S.intl.format(S.t["4kp0AB"], {
         }), (0, O.navigateToQuestHome)()
       }
     });
-    else if (m.Dp.FRACTIONAL_PREMIUM === e.skuId) g ? E.push({
-      text: S.intl.string(S.t.cpT0Cq),
+    else if (m.Dp.FRACTIONAL_PREMIUM === e.skuId) E ? I.push({
+      text: T.intl.string(T.t.cpT0Cq),
       variant: "secondary",
       onClick: n
     }, {
-      text: S.intl.string(S.t.ERKK6v),
+      text: T.intl.string(T.t.ERKK6v),
       variant: "primary",
       onClick: () => {
         (0, p.x)(n)
       }
-    }) : E.push({
-      text: S.intl.string(S.t.cpT0Cq),
+    }) : I.push({
+      text: T.intl.string(T.t.cpT0Cq),
       variant: "secondary",
       onClick: n
     }, {
-      text: S.intl.string(S.t["Jr6N+s"]),
+      text: T.intl.string(T.t["Jr6N+s"]),
       variant: "primary",
       onClick: () => {
         (0, f.openUserSettings)(h.X.SUBSCRIPTIONS_PANEL, {
@@ -151,11 +151,11 @@ let T = t => null != t ? S.intl.format(S.t["4kp0AB"], {
     });
     else {
       let [t] = e.items;
-      E.push({
-        text: S.intl.string(S.t["2p2aYz"]),
+      I.push({
+        text: T.intl.string(T.t["2p2aYz"]),
         variant: r ? "secondary" : "primary",
         onClick: () => {
-          if (n(), (0, u.jH)(), null == R || R(), e.type === s.R.AVATAR_DECORATION) {
+          if (n(), (0, u.jH)(), null == g || g(), e.type === s.R.AVATAR_DECORATION) {
             a()(t.type === s.R.AVATAR_DECORATION, "product type and item type are the same"), (0, d.L)({
               initialSelectedDecoration: t,
               analyticsLocations: i
@@ -179,15 +179,15 @@ let T = t => null != t ? S.intl.format(S.t["4kp0AB"], {
         }
       })
     }
-    return r && E.push({
-      text: S.intl.string(S.t.MAS7uK),
+    return r && I.push({
+      text: T.intl.string(T.t.MAS7uK),
       variant: "primary",
       onClick: l,
       loading: y
-    }), E
+    }), I
   },
-  L = (t, e) => {
-    let n = i.useMemo(() => (0, g.V6)(t.type, t.skuId), [t.type, t.skuId]);
+  v = (t, e) => {
+    let n = i.useMemo(() => (0, E.V6)(t.type, t.skuId), [t.type, t.skuId]);
     return i.useEffect(() => {
       y.default.track(_.HAw.OPEN_MODAL, {
         type: _.JJy.COLLECTIBLES_SHOP_COLLECTED_MODAL,
@@ -203,7 +203,7 @@ let T = t => null != t ? S.intl.format(S.t["4kp0AB"], {
     let n = i.useRef(new r.OH),
       l = (0, i.useRef)(null),
       [a, s] = i.useState(null),
-      u = (0, I.AB)({
+      u = (0, R.AB)({
         purchaseType: e,
         skuId: t.skuId
       });

@@ -21,7 +21,7 @@ var Chunk735438 = require("./735438.js"),
   Chunk594061 = require("./594061.js"),
   Chunk731854 = require("./731854.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,14 +30,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -54,14 +54,14 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = 300,
-  S = 2e3,
-  I = e => "AudioContextSettingsMigrated:".concat(e),
+let A = 300,
+  I = 2e3,
+  S = e => "AudioContextSettingsMigrated:".concat(e),
   T = e => e === E.x.STREAM ? a.i.STREAM : a.i.USER;
 
 function C(e, t, n) {
@@ -71,7 +71,7 @@ function C(e, t, n) {
 function N(e) {
   let t = _.default.entries(e),
     n = t.length;
-  if (n <= v) return;
+  if (n <= A) return;
   let r = t.sort((e, t) => {
       let [n, {
         modifiedAt: r
@@ -80,7 +80,7 @@ function N(e) {
       }] = t;
       return Number(r) - Number(a)
     }),
-    i = n - v;
+    i = n - A;
   for (let t = 0; t < i; t++) {
     let [n] = r[t];
     delete e[n]
@@ -95,7 +95,7 @@ function R(e) {
 }
 
 function w() {
-  o.w.get(I(f.default.getId())) || g.wc.updateAsync("audioContextSettings", e => {
+  o.w.get(S(f.default.getId())) || g.wc.updateAsync("audioContextSettings", e => {
     let t = false;
     for (let [n, r] of Object.entries(p.A.getState().settingsByContext)) {
       let i = (0, m.o)(n);
@@ -109,7 +109,7 @@ function w() {
         modifiedAt: s,
         soundboardMuted: false
       };
-      for (let [e, t] of Object.entries(r.localVolumes)) o[e] = A(y({
+      for (let [e, t] of Object.entries(r.localVolumes)) o[e] = v(b({
         muted: false,
         modifiedAt: s
       }, o[e]), {
@@ -117,11 +117,11 @@ function w() {
       });
       let l = Object.keys(a).length;
       for (let [e, [n, r]] of Object.entries(o).entries()) {
-        if (v - l - (e + 1) <= 0) break;
+        if (A - l - (e + 1) <= 0) break;
         null == a[n] && (t = true, a[n] = r)
       }
     }
-    return o.w.set(I(f.default.getId()), true), t
+    return o.w.set(S(f.default.getId()), true), t
   }, g.Sb.AUTOMATED)
 }
 
@@ -139,7 +139,7 @@ function D() {
 }
 let x = i().debounce(() => {
   U()
-}, S);
+}, I);
 
 function L(e, t, n) {
   (0, h.gq)(e, t, {
@@ -212,7 +212,7 @@ function B(e) {
 }
 class H extends Chunk439372.A {
   constructor(...e) {
-    super(...e), b(this, "actions", {
+    super(...e), y(this, "actions", {
       POST_CONNECTION_OPEN: D,
       AUDIO_SET_LOCAL_VOLUME: G,
       AUDIO_TOGGLE_LOCAL_MUTE: V,

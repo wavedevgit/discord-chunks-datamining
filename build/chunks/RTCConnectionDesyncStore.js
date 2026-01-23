@@ -27,17 +27,17 @@ function E(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let b = new Chunk194862.A,
-  y = new Chunk194862.A,
+let y = new Chunk194862.A,
+  b = new Chunk194862.A,
   O = new Set;
 
-function A(e, t, n) {
+function v(e, t, n) {
   let r = new c.A({
       userId: e.id,
       channelId: n
     }),
     i = (0, h.RQ)(r, null != t ? t : m.ME, e.id);
-  b.set(e.id, i);
+  y.set(e.id, i);
   let a = {
     type: g.lp.USER,
     user: e,
@@ -55,17 +55,17 @@ function A(e, t, n) {
     localVideoDisabled: false,
     isPoppedOut: false
   };
-  y.set(e.id, a)
+  b.set(e.id, a)
 }
 
-function v(e) {
-  let t = b.delete(e),
-    n = y.delete(e),
+function A(e) {
+  let t = y.delete(e),
+    n = b.delete(e),
     r = O.delete(e);
   return t || n || r
 }
 
-function S() {
+function I() {
   var e;
   let t = f.A.getChannelId();
   if (null == t) returnfalse;
@@ -74,16 +74,16 @@ function S() {
   return O.forEach(e => {
     if (null != _.A.getVoiceStateForChannel(t, e)) return void O.delete(e);
     let i = p.default.getUser(e);
-    null != i && (r = true, O.delete(e), A(i, n, t))
+    null != i && (r = true, O.delete(e), v(i, n, t))
   }), r
 }
 
-function I() {
-  b.clear(), y.clear(), O.clear()
+function S() {
+  y.clear(), b.clear(), O.clear()
 }
 
 function T() {
-  I()
+  S()
 }
 
 function C(e) {
@@ -92,7 +92,7 @@ function C(e) {
     context: n
   } = e;
   if (n !== a.x.DEFAULT || t !== m.S7L.DISCONNECTED) returnfalse;
-  I()
+  S()
 }
 
 function N(e) {
@@ -104,7 +104,7 @@ function N(e) {
       userId: r,
       channelId: i
     } = t;
-    return i === n && !!v(r) || e
+    return i === n && !!A(r) || e
   }, false)
 }
 
@@ -118,7 +118,7 @@ function R(e) {
   return i === a.x.DEFAULT && t.reduce((e, t) => {
     if (null != _.A.getVoiceStateForChannel(r, t)) return e;
     let i = p.default.getUser(t);
-    return null == i ? (O.add(t), e) : (A(i, n, r), true)
+    return null == i ? (O.add(t), e) : (v(i, n, r), true)
   }, false)
 }
 
@@ -127,29 +127,29 @@ function w(e) {
     userId: t,
     context: n
   } = e;
-  return n === a.x.DEFAULT && v(t)
+  return n === a.x.DEFAULT && A(t)
 }
 class P extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(_.A, p.default, d.A, f.A), this.syncWith([p.default], S)
+    this.waitFor(_.A, p.default, d.A, f.A), this.syncWith([p.default], I)
   }
   get desyncedVoiceStatesCount() {
-    return b.size()
+    return y.size()
   }
   getDesyncedUserIds() {
-    return b.keys()
+    return y.keys()
   }
   getDesyncedVoiceStates() {
-    return b.values()
+    return y.values()
   }
   getDesyncedParticipants() {
-    return y.values()
+    return b.values()
   }
 }
 E(P, "displayName", "RTCConnectionDesyncStore");
 let D = new P(Chunk73153.h, {
   CONNECTION_OPEN: T,
-  VOICE_CHANNEL_SELECT: I,
+  VOICE_CHANNEL_SELECT: S,
   RTC_CONNECTION_STATE: C,
   VOICE_STATE_UPDATES: N,
   RTC_CONNECTION_CLIENT_CONNECT: R,

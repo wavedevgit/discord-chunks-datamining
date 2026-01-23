@@ -43,19 +43,19 @@ function m(e) {
     sourceQuestContent: m
   } = e, g = (0, o.LS)(t), {
     containerRef: E,
-    size: b,
-    height: y
+    size: y,
+    height: b
   } = (0, d.L)(), {
     expansionSpring: O,
-    isAnimating: A,
-    isExpanded: v,
-    toggleExpanded: S
+    isAnimating: v,
+    isExpanded: A,
+    toggleExpanded: I
   } = (0, d.s)({
     initiallyExpanded: _ || (0, f.RA)({
       location: n,
       quest: t
     })
-  }), [I, T] = i.useState(false), C = () => T(true), N = () => T(false), R = null != y ? y : f._B;
+  }), [S, T] = i.useState(false), C = () => T(true), N = () => T(false), R = null != b ? b : f._B;
   return (0, r.jsx)(l.R, {
     questOrQuests: t,
     questContent: n,
@@ -82,22 +82,22 @@ function m(e) {
           isQuestExpired: g,
           location: n,
           quest: t,
-          size: b,
+          size: y,
           expansionSpring: O,
-          isInteracting: I,
-          isAnimating: A,
-          isExpanded: v,
+          isInteracting: S,
+          isAnimating: v,
+          isExpanded: A,
           contentPosition: h,
-          toggleExpanded: S,
+          toggleExpanded: I,
           sourceQuestContent: m
         }), (0, r.jsx)(c.A, {
           quest: t,
           isQuestExpired: g,
           location: n,
-          size: b,
-          isFocused: I,
-          isExpanded: v,
-          isAnimating: A,
+          size: y,
+          isFocused: S,
+          isExpanded: A,
+          isAnimating: v,
           contentPosition: h,
           sourceQuestContent: m
         })]

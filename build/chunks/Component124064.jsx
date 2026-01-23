@@ -2,7 +2,7 @@
 /** chunk id: 124064, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,19 +24,19 @@ let m = (0, Chunk915089.Ld)(),
   }),
   E = (0, Chunk915089.Ld)();
 
-function b(e) {
+function y(e) {
   let {
     sectionTitle: t,
     errors: n,
     onBioChange: c,
     pendingBio: d,
-    placeholder: b,
-    currentBio: y,
+    placeholder: y,
+    currentBio: b,
     disabled: O = false
-  } = e, [A, v] = i.useState(null != d ? d : y), [S, I] = i.useState((0, o.x7)(A)), T = i.useRef(y), C = i.useRef(false);
+  } = e, [v, A] = i.useState(null != d ? d : b), [I, S] = i.useState((0, o.x7)(v)), T = i.useRef(b), C = i.useRef(false);
 
   function N(e, t, n) {
-    t !== A && (v(t), I(n), c(t))
+    t !== v && (A(t), S(n), c(t))
   }
 
   function R() {
@@ -48,12 +48,12 @@ function b(e) {
     })
   }
   return i.useEffect(() => {
-    if (T.current !== y) {
-      let e = (0, o.x7)(y);
-      v(y), I(e)
+    if (T.current !== b) {
+      let e = (0, o.x7)(b);
+      A(b), S(e)
     }
-    T.current = y
-  }, [y]), (0, r.jsxs)(f.A, {
+    T.current = b
+  }, [b]), (0, r.jsxs)(f.A, {
     title: t,
     titleId: m,
     description: _.intl.string(_.t.Bbw6Ac),
@@ -66,10 +66,10 @@ function b(e) {
       innerClassName: h.Z,
       maxCharacterCount: p.NA2,
       onChange: N,
-      placeholder: b,
+      placeholder: y,
       channel: g,
-      textValue: A,
-      richValue: S,
+      textValue: v,
+      richValue: I,
       emojiPickerCloseOnModalOuterClick: true,
       parentModalKey: u.USER_SETTINGS_MODAL_KEY,
       type: s.oU.PROFILE_BIO_INPUT,

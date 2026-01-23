@@ -26,14 +26,14 @@ function h(e) {
     lineClamp: m = 6,
     setLineClamp: g = true,
     textColor: E,
-    userId: b
-  } = e, y = (0, d.GV)(), O = i.useMemo(() => (0, c.A)(b) ? (0, r.jsx)(l.A, {}) : null == t || "" === t ? null : (0, f.parseBioReact)(t), [b, t]);
+    userId: y
+  } = e, b = (0, d.GV)(), O = i.useMemo(() => (0, c.A)(y) ? (0, r.jsx)(l.A, {}) : null == t || "" === t ? null : (0, f.parseBioReact)(t), [y, t]);
   return null == O ? null : (0, r.jsxs)("section", {
     className: s()(n, _.PT),
-    "aria-labelledby": y,
+    "aria-labelledby": b,
     children: [(0, r.jsx)(o.AC4, {
       children: (0, r.jsx)(o.H, {
-        id: y,
+        id: b,
         children: p.intl.string(p.t.jGoPJT)
       })
     }), (0, r.jsx)(o.Text, {

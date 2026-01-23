@@ -33,8 +33,8 @@ function u(e) {
     animateOnHover: f,
     avatarOverride: _
   }), {
-    avatarPlaceholderSrc: b,
-    avatarDecorationSrc: y,
+    avatarPlaceholderSrc: y,
+    avatarDecorationSrc: b,
     eventHandlers: O
   } = (0, o.A)({
     user: h,
@@ -44,8 +44,8 @@ function u(e) {
     onlyAnimateOnHoverOrFocus: f
   });
   return {
-    avatarPlaceholderSrc: b,
-    avatarDecorationSrc: y,
+    avatarPlaceholderSrc: y,
+    avatarDecorationSrc: b,
     avatarSrc: m,
     isAnimating: g,
     eventHandlers: {

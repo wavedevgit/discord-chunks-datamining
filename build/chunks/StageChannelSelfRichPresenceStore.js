@@ -21,7 +21,7 @@ var r, Chunk812729 = require("./812729.js"),
   Chunk516607 = require("./516607.js"),
   Chunk652215 = require("./652215.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,61 +31,61 @@ function y(e, t, n) {
 }
 let O = null;
 
-function A() {
+function v() {
   var e, t, n, r, i, a, s;
   let o = d.A.getVoiceChannelId();
   if (null == o) return null;
   let u = m.A.getStageInstanceByChannel(o);
   if (null == u) return null;
-  let y = l.A.getChannel(o);
-  if (null == y || !f.Ib(b.xBc.VIEW_CHANNEL, y)) return null;
-  let A = c.A.getGuild(y.getGuildId());
-  if (null == A || !A.features.has(b.GuildFeatures.DISCOVERABLE)) return null;
-  let v = (0, h.eL)(y, u),
-    S = (null == O || null == (i = O.party) ? true : i.id) === v ? O : null,
-    I = p.A.getMutableParticipants(y.id, _.ip.SPEAKER),
-    T = I.filter(e => e.type === _.wY.STREAM).length,
-    C = I.length - T,
+  let b = l.A.getChannel(o);
+  if (null == b || !f.Ib(y.xBc.VIEW_CHANNEL, b)) return null;
+  let v = c.A.getGuild(b.getGuildId());
+  if (null == v || !v.features.has(y.GuildFeatures.DISCOVERABLE)) return null;
+  let A = (0, h.eL)(b, u),
+    I = (null == O || null == (i = O.party) ? true : i.id) === A ? O : null,
+    S = p.A.getMutableParticipants(b.id, _.ip.SPEAKER),
+    T = S.filter(e => e.type === _.wY.STREAM).length,
+    C = S.length - T,
     N = p.A.getParticipantCount(o) - T,
-    R = (null == S || null == (a = S.party) ? true : a.size) != null ? S.party.size[1] : 0;
+    R = (null == I || null == (a = I.party) ? true : a.size) != null ? I.party.size[1] : 0;
   return {
     application_id: E.SS,
-    name: null != (e = null != (t = u.topic) ? t : y.topic) ? e : y.name,
-    type: (0, g.xn)(y.id) ? b.$pd.WATCHING : b.$pd.LISTENING,
+    name: null != (e = null != (t = u.topic) ? t : b.topic) ? e : b.name,
+    type: (0, g.xn)(b.id) ? y.$pd.WATCHING : y.$pd.LISTENING,
     timestamps: {
-      start: null != (n = null == S || null == (s = S.timestamps) ? true : s.start) ? n : new Date().getTime()
+      start: null != (n = null == I || null == (s = I.timestamps) ? true : s.start) ? n : new Date().getTime()
     },
     assets: {
-      small_image: null != (r = A.icon) ? r : true,
-      small_text: A.name
+      small_image: null != (r = v.icon) ? r : true,
+      small_text: v.name
     },
     party: {
-      id: v,
+      id: A,
       size: [C, Math.max(N, R)]
     }
   }
 }
 
-function v() {
-  let e = A();
+function A() {
+  let e = v();
   return !a()(e, O) && (O = e, true)
 }
 
-function S(e) {
+function I(e) {
   let {
     voiceStates: t
   } = e;
   if (null == O) return;
   let n = (0, h.UW)(O);
-  null != n && null != t.find(e => e.channelId === n.channelId) && v()
+  null != n && null != t.find(e => e.channelId === n.channelId) && A()
 }
 
-function I(e) {
+function S(e) {
   var t, n, r;
   let {
     state: i
   } = e, a = null != (t = null == O || null == (r = O.party) || null == (n = r.size) ? true : n[1]) ? t : 0;
-  return i === b.S7L.RTC_CONNECTED && !(a > 0) && v()
+  return i === y.S7L.RTC_CONNECTED && !(a > 0) && A()
 }
 class T extends(r = Chunk311907.Ay.Store) {
   initialize() {
@@ -95,13 +95,13 @@ class T extends(r = Chunk311907.Ay.Store) {
     return O
   }
 }
-y(T, "displayName", "StageChannelSelfRichPresenceStore");
+b(T, "displayName", "StageChannelSelfRichPresenceStore");
 let C = new T(Chunk73153.h, {
-  CONNECTION_OPEN: v,
-  STAGE_INSTANCE_CREATE: v,
-  STAGE_INSTANCE_UPDATE: v,
-  STAGE_INSTANCE_DELETE: v,
-  VOICE_CHANNEL_SELECT: v,
-  RTC_CONNECTION_STATE: I,
-  VOICE_STATE_UPDATES: S
+  CONNECTION_OPEN: A,
+  STAGE_INSTANCE_CREATE: A,
+  STAGE_INSTANCE_UPDATE: A,
+  STAGE_INSTANCE_DELETE: A,
+  VOICE_CHANNEL_SELECT: A,
+  RTC_CONNECTION_STATE: S,
+  VOICE_STATE_UPDATES: I
 })

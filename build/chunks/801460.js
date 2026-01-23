@@ -20,21 +20,21 @@ var Chunk557939 = require("./557939.js"),
   Chunk883972 = require("./883972.js"),
   Chunk257943 = require("./257943.js"),
   Chunk105712 = require("./105712.js"),
-  A = "DOMException",
-  v = "DATA_CLONE_ERR",
-  S = Chunk230606("Error"),
-  I = Chunk230606(A) || function() {
+  v = "DOMException",
+  A = "DATA_CLONE_ERR",
+  I = Chunk230606("Error"),
+  S = Chunk230606(v) || function() {
     try {
       new(i("MessageChannel") || a("worker_threads").MessageChannel)().port1.postMessage(new WeakMap)
     } catch (e) {
-      if (e.name === v && 25 === e.code) return e.constructor
+      if (e.name === A && 25 === e.code) return e.constructor
     }
   }(),
-  T = I && I.prototype,
-  C = S.prototype,
+  T = S && S.prototype,
+  C = I.prototype,
   N = Chunk883972.set,
-  R = Chunk883972.getterFor(A),
-  w = "stack" in new S(A),
+  R = Chunk883972.getterFor(v),
+  w = "stack" in new I(v),
   P = function(e) {
     return f(g, e) && g[e].m ? g[e].c : 0
   },
@@ -45,13 +45,13 @@ var Chunk557939 = require("./557939.js"),
       n = m(e < 2 ? true : arguments[1], "Error"),
       r = P(n);
     if (N(this, {
-        type: A,
+        type: v,
         name: n,
         message: t,
         code: r
-      }), y || (this.name = n, this.message = t, this.code = r), w) {
-      var i = new S(t);
-      i.name = A, c(this, "stack", l(1, E(i.stack, 1)))
+      }), b || (this.name = n, this.message = t, this.code = r), w) {
+      var i = new I(t);
+      i.name = v, c(this, "stack", l(1, E(i.stack, 1)))
     }
   },
   x = D.prototype = Chunk482779(C),
@@ -69,26 +69,26 @@ var Chunk557939 = require("./557939.js"),
   };
 Chunk257943 && (Chunk485155(x, "code", j("code")), Chunk485155(x, "message", j("message")), Chunk485155(x, "name", j("name"))), c(x, "constructor", Chunk231977(1, D));
 var M = Chunk503628(function() {
-    return !(new I instanceof S)
+    return !(new S instanceof I)
   }),
   k = M || Chunk503628(function() {
-    return C.toString !== h || "2: 1" !== String(new I(1, 2))
+    return C.toString !== h || "2: 1" !== String(new S(1, 2))
   }),
   U = M || Chunk503628(function() {
-    return 25 !== new I(1, "DataCloneError").code
+    return 25 !== new S(1, "DataCloneError").code
   }),
-  G = M || 25 !== I[v] || 25 !== T[v],
+  G = M || 25 !== S[A] || 25 !== T[A],
   V = Chunk105712 ? k || U || G : M;
 Chunk557939({
   global: true,
   constructor: true,
   forced: V
 }, {
-  DOMException: V ? D : I
+  DOMException: V ? D : S
 });
-var F = Chunk230606(A),
+var F = Chunk230606(v),
   B = F.prototype;
-for (var H in k && (Chunk105712 || I === F) && Chunk693655(B, "toString", Chunk515655), U && Chunk257943 && I === F && Chunk485155(B, "code", L(function() {
+for (var H in k && (Chunk105712 || S === F) && Chunk693655(B, "toString", Chunk515655), U && Chunk257943 && S === F && Chunk485155(B, "code", L(function() {
     return P(_(this).name)
   })), Chunk753609)
   if (Chunk210140(Chunk753609, H)) {

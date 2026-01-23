@@ -1,5 +1,5 @@
 /** Chunk was on 88615 **/
-/** chunk id: 289588, original params: e,t,l (module,exports,require) **/
+/** chunk id: 289588, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
 });
@@ -15,24 +15,24 @@ var Chunk934551 = require("./934551.js"),
 function d(e) {
   let {
     count: t,
-    type: l
+    type: n
   } = e;
   return (0, r.jsxs)("div", {
     className: u.k,
     children: [(0, r.jsxs)("div", {
       className: u.N,
-      children: [(0, r.jsx)(n.BoostGemIcon, {
+      children: [(0, r.jsx)(l.BoostGemIcon, {
         size: "sm",
-        color: l !== a.yG.AVAILABLE ? s.A.colors.TEXT_MUTED : s.A.unsafe_rawColors.GUILD_BOOSTING_PINK
+        color: n !== a.yG.AVAILABLE ? o.A.colors.TEXT_MUTED : o.A.unsafe_rawColors.GUILD_BOOSTING_PINK
       }), (0, r.jsx)(i.DZT, {
-        color: l !== a.yG.AVAILABLE ? "text-muted" : "text-strong",
+        color: n !== a.yG.AVAILABLE ? "text-muted" : "text-strong",
         variant: "heading-lg/semibold",
         children: t
       })]
     }), (0, r.jsx)(i.EYj, {
       color: "text-muted",
       variant: "text-sm/medium",
-      children: (0, o.F)(t, l)
+      children: (0, s.F)(t, n)
     })]
   })
 }

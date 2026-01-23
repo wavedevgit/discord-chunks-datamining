@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,13 +38,13 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,13 +55,13 @@ function A(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = "max_uses",
-  I = "User Invite Context Menu",
+let I = "max_uses",
+  S = "User Invite Context Menu",
   T = "context_menu";
 
 function C(e, t) {
@@ -84,27 +84,27 @@ function N(e) {
       let r = p.A.getGuild(e);
       null != r && (0, u.K)(_.A, r) && r.id !== n && t.push(r)
     }), t
-  }, [n]), [y, A] = i.useState({});
+  }, [n]), [b, v] = i.useState({});
 
   function T(e, t) {
     let n = f.Ay.getDefaultChannel(e.id, true, E.xBc.CREATE_INSTANT_INVITE);
     if (null != n) {
-      if (A(v(O({}, y), {
+      if (v(A(O({}, b), {
           [e.id]: true
         })), !_.A.can(E.xBc.CREATE_INSTANT_INVITE, e) && null != e.vanityURLCode) return void C(t, e.vanityURLCode);
       l.Ay.createInvite(n.id, {
-        [S]: 1,
+        [I]: 1,
         unique: true
-      }, I).then(e => C(t, e.code))
+      }, S).then(e => C(t, e.code))
     }
   }
   return (null == c ? true : c.id) === t.id || t.bot || 0 === d.length || h.A.isBlockedOrIgnored(t.id) ? null : (0, r.jsx)(s.Drp, {
     id: "invite-to-server",
-    label: b.intl.string(b.t.Sd8Ixw),
-    children: d.map(e => y[e.id] ? (0, r.jsx)(s.Drp, {
+    label: y.intl.string(y.t.Sd8Ixw),
+    children: d.map(e => b[e.id] ? (0, r.jsx)(s.Drp, {
       id: e.id,
       disabled: true,
-      label: b.intl.string(b.t.PuLLzP)
+      label: y.intl.string(y.t.PuLLzP)
     }, e.id) : (0, r.jsx)(s.Drp, {
       id: e.id,
       label: e.name,

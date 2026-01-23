@@ -22,7 +22,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk567856 = require("./567856.js");
-let y = () => {
+let b = () => {
     (0, d.nf)(d.HP.APP_ICON), (0, h.default)()
   },
   O = () => {
@@ -36,11 +36,11 @@ let y = () => {
       })
     });
     let d = () => (0, r.jsxs)("div", {
-      className: b.gY,
+      className: y.gY,
       children: [(0, r.jsx)(a.Button, {
         variant: t ? "secondary" : "primary",
         text: E.intl.string(E.t["hb/wE0"]),
-        onClick: () => y()
+        onClick: () => b()
       }), t ? (0, r.jsx)(f.A, {
         subscriptionTier: g.pe.TIER_2,
         defaultTextOverride: E.intl.string(E.t.mr4K7D),
@@ -52,12 +52,12 @@ let y = () => {
       }) : null]
     });
     return (0, r.jsxs)("div", {
-      className: b.Gg,
+      className: y.Gg,
       children: [(0, r.jsx)(u.A, {
         disabled: t,
         renderCTAButtons: d
       }), !n && (0, r.jsx)(a.cGx, {
-        className: b.yF
+        className: y.yF
       })]
     })
   }

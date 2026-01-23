@@ -29,52 +29,52 @@ function S(e) {
     onClose: S,
     connection: v,
     index: L
-  } = e, b = (0, c.Ay)(), m = null != v && null != L, T = A.A.getGuildId(), C = (0, o.bG)([I.A], () => {
+  } = e, m = (0, c.Ay)(), T = null != v && null != L, C = A.A.getGuildId(), N = (0, o.bG)([I.A], () => {
     var e;
-    return null != (e = I.A.getAllowedApplicationIds(T)) ? e : []
-  }, [T]);
-  i.useEffect(() => {
-    null != T && (0, g.$)(T)
-  }, [T]), i.useEffect(() => {
-    for (let e of C) null != p.A.getApplication(e) || p.A.isFetchingApplication(e) || (0, u.TA)(e).catch(() => {})
+    return null != (e = I.A.getAllowedApplicationIds(C)) ? e : []
   }, [C]);
-  let N = (0, o.yK)([p.A], () => {
+  i.useEffect(() => {
+    null != C && (0, g.$)(C)
+  }, [C]), i.useEffect(() => {
+    for (let e of N) null != p.A.getApplication(e) || p.A.isFetchingApplication(e) || (0, u.TA)(e).catch(() => {})
+  }, [N]);
+  let b = (0, o.yK)([p.A], () => {
       let e = [];
-      for (let t of C) {
+      for (let t of N) {
         let l = p.A.getApplication(t);
         null != l && e.push(l)
       }
       return e
-    }, [C]),
-    [y, E] = i.useState(() => null != v ? (0, f.Sq)(v) : true),
+    }, [N]),
+    [y, E] = i.useState(() => null != v ? (0, _.Sq)(v) : true),
     [G, j] = i.useState(null != (t = null == v ? true : v.description) ? t : ""),
     [D, P] = i.useState([]),
     w = i.useMemo(() => {
       let e = [];
-      for (let n of d.A.filter(e => e.enabled && !f.tb.has(e.type))) {
+      for (let n of d.A.filter(e => e.enabled && !_.tb.has(e.type))) {
         var t, l;
-        let i = "light" === b ? null == (t = n.icon) ? true : t.lightPNG : null == (l = n.icon) ? true : l.darkPNG;
+        let i = "light" === m ? null == (t = n.icon) ? true : t.lightPNG : null == (l = n.icon) ? true : l.darkPNG;
         e.push({
           label: n.name,
           value: "provider:".concat(n.type),
           icon: i
         })
       }
-      for (let t of N) e.push({
+      for (let t of b) e.push({
         label: t.name,
         value: "app:".concat(t.id),
         icon: t.getIconURL(128)
       });
-      for (let t of C) null == p.A.getApplication(t) && p.A.isFetchingApplication(t) && e.push({
+      for (let t of N) null == p.A.getApplication(t) && p.A.isFetchingApplication(t) && e.push({
         label: "Loading...",
         value: "app:".concat(t),
         icon: true
       });
       return e.sort((e, t) => e.label.localeCompare(t.label)), e
-    }, [N, C, b]),
-    F = i.useCallback(() => {
+    }, [b, N, m]),
+    R = i.useCallback(() => {
       if (null == y || "" === y) return void P(["Please select a connection"]);
-      let e = (0, f.vK)(y);
+      let e = (0, _.vK)(y);
       if (null == e) return void P(["Invalid connection selected"]);
       let t = G.trim(),
         l = function(e) {
@@ -102,10 +102,10 @@ function S(e) {
         }, null != e.providerId && {
           provider_id: e.providerId
         }),
-        n = (0, f.Ii)(l);
-      n.length > 0 ? P(n) : (m ? (0, _.yM)(L, l) : (0, _.sF)(l), S())
-    }, [y, G, m, L, S]),
-    R = i.useCallback(e => (0, n.jsxs)("div", {
+        n = (0, _.Ii)(l);
+      n.length > 0 ? P(n) : (T ? (0, f.yM)(L, l) : (0, f.sF)(l), S())
+    }, [y, G, T, L, S]),
+    F = i.useCallback(e => (0, n.jsxs)("div", {
       style: {
         display: "flex",
         alignItems: "center",
@@ -151,7 +151,7 @@ function S(e) {
     }, []);
   return (0, n.jsx)(r.Modal, {
     transitionState: l,
-    title: m ? x.intl.string(x.t.yqegs1) : x.intl.string(x.t.B6qOe2),
+    title: T ? x.intl.string(x.t.yqegs1) : x.intl.string(x.t.B6qOe2),
     onClose: S,
     actions: [{
       variant: "secondary",
@@ -159,12 +159,12 @@ function S(e) {
       onClick: S
     }, {
       variant: "primary",
-      text: m ? x.intl.string(x.t["R3BPH+"]) : x.intl.string(x.t.qMOnJu),
-      onClick: F
+      text: T ? x.intl.string(x.t["R3BPH+"]) : x.intl.string(x.t.qMOnJu),
+      onClick: R
     }],
     children: (0, n.jsxs)("div", {
       className: O.Qs,
-      children: [!m && (0, n.jsxs)(n.Fragment, {
+      children: [!T && (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-default",
@@ -178,7 +178,7 @@ function S(e) {
             },
             options: w,
             placeholder: x.intl.string(x.t.Wq1LfI),
-            renderOptionLabel: R,
+            renderOptionLabel: F,
             renderOptionValue: U,
             "data-migration-pending": true
           })
@@ -217,7 +217,7 @@ function S(e) {
           value: G,
           onChange: j,
           placeholder: x.intl.string(x.t["28bQNf"]),
-          maxLength: f.sd
+          maxLength: _.sd
         })]
       })]
     })

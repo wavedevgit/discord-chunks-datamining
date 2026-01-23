@@ -6,20 +6,20 @@ require.d(exports, {
   BZ: () => P,
   CZ: () => x,
   Hd: () => O,
-  I5: () => y,
+  I5: () => b,
   JM: () => E,
-  KH: () => I,
-  L7: () => S,
+  KH: () => S,
+  L7: () => I,
   Pj: () => D,
   Pv: () => g,
-  Rf: () => b,
-  TQ: () => v,
+  Rf: () => y,
+  TQ: () => A,
   W6: () => p,
   aJ: () => h,
   gF: () => N,
   iy: () => w,
   kR: () => C,
-  ty: () => A,
+  ty: () => v,
   us: () => T,
   uw: () => R
 }), require("./747238.js");
@@ -121,35 +121,35 @@ function E(e) {
   return null != (t = null == (n = g(e, s.K.IS_LIVE)) ? true : n.is_live) && t
 }
 
-function b(e) {
+function y(e) {
   var t, n;
   return null != (t = null == (n = g(e, s.K.FIRST_TIME)) ? true : n.first_time) && t
 }
 
-function y(e) {
+function b(e) {
   return null != e.expires_at && new Date(e.expires_at) < new Date
 }
 
 function O(e) {
-  return E(e) && !y(e)
-}
-
-function A(e) {
-  var t;
-  return null == (t = g(e, s.K.DURATION_SECONDS)) ? true : t.duration_seconds
+  return E(e) && !b(e)
 }
 
 function v(e) {
   var t;
+  return null == (t = g(e, s.K.DURATION_SECONDS)) ? true : t.duration_seconds
+}
+
+function A(e) {
+  var t;
   return null == (t = g(e, s.K.AGGREGATE_RANGE)) ? true : t.range
 }
 
-function S(e) {
+function I(e) {
   var t;
   return null == (t = g(e, s.K.MARATHON)) ? true : t.marathon
 }
 
-function I(e) {
+function S(e) {
   let t = g(e, s.K.RESURRECTED);
   return (null == t ? true : t.resurrected_last_played) != null ? new Date(t.resurrected_last_played) : true
 }
@@ -208,7 +208,7 @@ function P(e) {
 }
 
 function D(e) {
-  let t = A(e);
+  let t = v(e);
   if (null == t) return {
     text: null,
     tooltipText: null

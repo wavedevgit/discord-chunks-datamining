@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 580960, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => j
+  A: () => O
 }), require("./65821.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -19,7 +19,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk694080 = require("./694080.js"),
   Chunk70730 = require("./70730.js");
 
-function m(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,7 +35,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -53,7 +53,7 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class O extends Chunk272355.A {
+class _ extends Chunk272355.A {
   _initialize() {
     __OVERLAY__ ? i.h.subscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (i.h.subscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), i.h.subscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), i.h.subscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), i.h.subscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), i.h.subscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities))
   }
@@ -93,8 +93,8 @@ class O extends Chunk272355.A {
       followupSKUInfo: r,
       analyticsObject: l
     } = null != e ? e : {};
-    return new Promise((e, a) => {
-      this._premiumPaymentModalCloseResolve = e, this._premiumPaymentModalCloseReject = a, i.h.dispatch({
+    return new Promise((e, s) => {
+      this._premiumPaymentModalCloseResolve = e, this._premiumPaymentModalCloseReject = s, i.h.dispatch({
         type: "PREMIUM_PAYMENT_MODAL_OPEN",
         initialPlanId: t,
         subscriptionTier: n,
@@ -104,28 +104,28 @@ class O extends Chunk272355.A {
     })
   }
   constructor(...e) {
-    super(...e), m(this, "_premiumPaymentModalCloseResolve", null), m(this, "_premiumPaymentModalCloseReject", null), m(this, "_maybeFetchPremiumOffer", async () => {
+    super(...e), b(this, "_premiumPaymentModalCloseResolve", null), b(this, "_premiumPaymentModalCloseReject", null), b(this, "_maybeFetchPremiumOffer", async () => {
       let e = u.default.getCurrentUser();
       if (null != e && e.verified) {
-        let t = (d.A.canFractionalPremiumUserUseOffer() || !(0, f.TW)(e)) && !d.A.isFetchingOffer();
-        await (0, b._D)("PremiumManager", t)
+        let t = (d.A.canFractionalPremiumUserUseOffer() || !(0, p.TW)(e)) && !d.A.isFetchingOffer();
+        await (0, g._D)("PremiumManager", t)
       }
       i.h.dispatch({
         type: "PREMIUM_MARKETING_DATA_READY"
       })
-    }), m(this, "_maybeFetchCheckoutRecovery", async () => {
+    }), b(this, "_maybeFetchCheckoutRecovery", async () => {
       let e = u.default.getCurrentUser();
-      null != e && e.verified && !(0, f.TW)(e) && h.A.shouldFetchCheckoutRecovery() && await (0, p.c)()
-    }), m(this, "_maybeFetchUserAffinities", () => {
+      null != e && e.verified && !(0, p.TW)(e) && f.A.shouldFetchCheckoutRecovery() && await (0, h.c)()
+    }), b(this, "_maybeFetchUserAffinities", () => {
       let {
         enabled: e
-      } = g.u.getConfig({
+      } = m.u.getConfig({
         location: "PremiumManager"
       });
       e && (0, c.u)()
-    }), m(this, "_handlePremiumPaymentModalOpen", e => {
+    }), b(this, "_handlePremiumPaymentModalOpen", e => {
       (0, o.A)(y(A({}, e), {
-        analyticsLocations: [s.A.OVERLAY],
+        analyticsLocations: [a.A.OVERLAY],
         onClose: e => {
           i.h.dispatch({
             type: "PREMIUM_PAYMENT_MODAL_CLOSE",
@@ -133,7 +133,7 @@ class O extends Chunk272355.A {
           })
         }
       }))
-    }), m(this, "_handlePremiumPaymentModalClose", e => {
+    }), b(this, "_handlePremiumPaymentModalClose", e => {
       let {
         didSucceed: t
       } = e;
@@ -141,4 +141,4 @@ class O extends Chunk272355.A {
     })
   }
 }
-let j = new O
+let O = new _

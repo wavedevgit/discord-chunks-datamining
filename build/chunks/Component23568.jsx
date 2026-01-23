@@ -2,7 +2,7 @@
 /** chunk id: 23568, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -31,18 +31,18 @@ let O = e => {
   } = e, a = ":".concat(t.name, ":");
   switch (r) {
     case h.dS.ACTIVITY:
-      let s = b.intl.formatToPlainString(b.t.EUFEJt, {
+      let s = y.intl.formatToPlainString(y.t.EUFEJt, {
           username: n
         }),
         o = "\n> ".concat(i);
       return null != i ? "".concat(p.c5).concat(s, "*").concat(o, "\n").concat(a) : "".concat(p.c5).concat(s, "*\n").concat(a);
     case h.dS.AVATAR:
-      let l = b.intl.formatToPlainString(b.t.E6H15q, {
+      let l = y.intl.formatToPlainString(y.t.E6H15q, {
         username: n
       });
       return "".concat(p.c5).concat(l, "*\n").concat(a);
     case h.dS.STATUS:
-      let u = b.intl.formatToPlainString(b.t.XPQgL2, {
+      let u = y.intl.formatToPlainString(y.t.XPQgL2, {
           username: n
         }),
         d = "\n> ".concat(i);
@@ -52,46 +52,46 @@ let O = e => {
   }
 };
 
-function A(e) {
+function v(e) {
   let {
     user: t,
     guildId: n,
     entry: c,
     sourceType: p,
-    sourceDetails: b,
-    setPopoutRef: A,
-    onAction: v,
-    onClose: S
+    sourceDetails: y,
+    setPopoutRef: v,
+    onAction: A,
+    onClose: I
   } = e, {
-    resetInteraction: I,
+    resetInteraction: S,
     setInteractionToast: T
   } = (0, f.Pq)(), {
     theme: C
   } = (0, _.E)(), N = (0, a.bG)([l.A], () => l.A.theme), R = (0, s.Mw)(N) ? !(0, s.Mw)(C) : (0, s.Mw)(C), w = i.useRef(null);
   i.useEffect(() => {
-    null == A || A(null == w ? true : w.current)
-  }, [w, A]), i.useEffect(() => {
+    null == v || v(null == w ? true : w.current)
+  }, [w, v]), i.useEffect(() => {
     let e = e => {
-      e.key === E.dh.ESCAPE && (e.stopPropagation(), I())
+      e.key === E.dh.ESCAPE && (e.stopPropagation(), S())
     };
     return document.addEventListener("keydown", e), () => {
       document.removeEventListener("keydown", e)
     }
-  }, [S, I]);
+  }, [I, S]);
   let P = async e => {
     if (null == e) return;
-    p === h.dS.AVATAR ? v({
+    p === h.dS.AVATAR ? A({
       action: "SEND_REACT_AVATAR"
-    }) : p === h.dS.STATUS ? v({
+    }) : p === h.dS.STATUS ? A({
       action: "SEND_REACT_CUSTOM_STATUS"
-    }) : v({
+    }) : A({
       action: "SEND_REACT_ACTIVITY"
     });
     let n = O({
       emoji: e,
       username: u.Ay.getName(t),
       sourceType: p,
-      sourceDetails: b
+      sourceDetails: y
     });
     T(null);
     try {
@@ -107,7 +107,7 @@ function A(e) {
     T(h.AQ.REACT)
   };
   return (0, r.jsx)(o.A, {
-    headerClassName: R ? y.X : true,
+    headerClassName: R ? b.X : true,
     guildId: null != n ? n : true,
     closePopout: g.tE,
     onSelectEmoji: async e => {
@@ -115,7 +115,7 @@ function A(e) {
         emoji: t,
         willClose: n
       } = e;
-      await P(t), n && (I(), null == S || S())
+      await P(t), n && (S(), null == I || I())
     },
     pickerIntention: m.b_.PROFILE
   })

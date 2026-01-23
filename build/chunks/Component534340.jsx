@@ -1,5 +1,5 @@
 /** Chunk was on 40850 **/
-/** chunk id: 534340, original params: t,e,a (module,exports,require) **/
+/** chunk id: 534340, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   default: () => o
 });
@@ -13,12 +13,12 @@ var Chunk397927 = require("./397927.js"),
 function o(t) {
   let {
     url: e,
-    onClose: a,
+    onClose: n,
     transitionState: o
   } = t;
-  return (0, n.jsx)(r.kpP, {
+  return (0, a.jsx)(r.kpP, {
     transitionState: o,
-    onClose: a,
+    onClose: n,
     graphic: {
       src: l.A,
       type: "image"
@@ -28,9 +28,9 @@ function o(t) {
     subtitle: s.intl.format(s.t.jnHyYU, {}),
     actions: [{
       text: s.intl.string(s.t["/g10LC"]),
-      onClick: a
+      onClick: n
     }],
-    children: (0, n.jsx)(i.w, {
+    children: (0, a.jsx)(i.w, {
       url: e
     })
   })

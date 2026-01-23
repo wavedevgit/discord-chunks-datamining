@@ -2,7 +2,7 @@
 /** chunk id: 234091, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -25,23 +25,23 @@ var Chunk627968 = require("./627968.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk48187 = require("./48187.js");
-let S = 80;
+let I = 80;
 
-function I(e) {
+function S(e) {
   var t, n, a;
   let {
-    className: I,
+    className: S,
     onClose: T
   } = e;
   (0, h.XQ)();
   let {
     analyticsLocations: C
-  } = (0, u.Ay)(c.A.EMPTY_STATE), N = (0, o.yK)([m.A], () => b.vX.map(e => m.A.getStickerById(e)));
+  } = (0, u.Ay)(c.A.EMPTY_STATE), N = (0, o.yK)([m.A], () => y.vX.map(e => m.A.getStickerById(e)));
   i.useEffect(() => {
-    _.default.track(y.HAw.PREMIUM_UPSELL_VIEWED, {
+    _.default.track(b.HAw.PREMIUM_UPSELL_VIEWED, {
       type: O.e.EMPTY_STICKER_PICKER_UPSELL,
       source: {
-        section: y.JJy.EMPTY_STICKER_PICKER_UPSELL
+        section: b.JJy.EMPTY_STICKER_PICKER_UPSELL
       },
       location_stack: C
     })
@@ -51,8 +51,8 @@ function I(e) {
     P = null != R || null != w,
     D = (null == R || null == (n = R.subscription_trial) ? true : n.sku_id) === O.pe.TIER_0;
   return (0, r.jsxs)("div", {
-    className: s()(v.p$, I, {
-      [v.Hz]: P
+    className: s()(A.p$, S, {
+      [A.Hz]: P
     }),
     children: [P ? (0, r.jsx)(p.Ay, {
       discountOffer: w,
@@ -60,28 +60,28 @@ function I(e) {
       onClose: T,
       type: O.e.EMPTY_STICKER_PICKER_UPSELL,
       subscriptionTier: null != (t = null == R || null == (a = R.subscription_trial) ? true : a.sku_id) ? t : O.pe.TIER_2,
-      children: A.intl.string(A.t.FnNud4)
+      children: v.intl.string(v.t.FnNud4)
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.Heading, {
-        className: v.wx,
+        className: A.wx,
         variant: "heading-xl/semibold",
-        children: A.intl.string(A.t.HEm04J)
+        children: v.intl.string(v.t.HEm04J)
       }), (0, r.jsx)(l.Text, {
-        className: v.VA,
+        className: A.VA,
         color: "text-default",
         variant: "text-md/normal",
-        children: A.intl.string(A.t.FnNud4)
+        children: v.intl.string(v.t.FnNud4)
       }), (0, r.jsx)("div", {
-        className: v.l1,
+        className: A.l1,
         children: N.filter(e => null != e).map(e => (0, r.jsx)(g.A, {
           sticker: e,
-          className: v.yI,
-          size: S
+          className: A.yI,
+          size: I
         }, null == e ? true : e.id))
       })]
     }), !P && (0, r.jsx)(E.A, {
-      analyticsSection: y.JJy.EXPRESSION_PICKER,
-      buttonText: P ? D ? A.intl.string(A.t.hz78hE) : A.intl.string(A.t["Gd/XHF"]) : true
+      analyticsSection: b.JJy.EXPRESSION_PICKER,
+      buttonText: P ? D ? v.intl.string(v.t.hz78hE) : v.intl.string(v.t["Gd/XHF"]) : true
     })]
   })
 }

@@ -1,12 +1,12 @@
 /** Chunk was on 97492 **/
 /** chunk id: 622770, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 });
 var r, Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk709562 = require("./709562.jsx"),
   Chunk639939 = require("./639939.js"),
@@ -52,12 +52,12 @@ function d(e) {
     }
     return e
   }({
-    className: a()(n, c.U, {
+    className: s()(n, c.U, {
       [c.up]: 0 === t
     }),
-    iconComponent: s.abt,
+    iconComponent: a.abt,
     themeable: r
   }, i))
 }
 d.Directions = u;
-let f = d
+let p = d

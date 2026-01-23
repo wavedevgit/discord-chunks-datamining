@@ -1,8 +1,8 @@
 /** Chunk was on 21738 **/
 /** chunk id: 965966, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  D: () => g,
-  s: () => A
+  D: () => m,
+  s: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk554146 = require("./554146.js"),
@@ -26,7 +26,7 @@ let p = e => {
       })
     })
   },
-  f = e => {
+  h = e => {
     let {
       value: t
     } = e, n = t.toString().padStart(2, "0"), [i, l] = [n[0], n[1]];
@@ -39,21 +39,21 @@ let p = e => {
       })]
     })
   },
-  h = e => {
+  g = e => {
     let {
       expiresAt: t,
       tooltipText: n
     } = e, {
       days: c,
       hours: p,
-      minutes: h,
-      seconds: A
-    } = (0, s.A)(Date.parse(t), 1e3), g = c > 0 ? [c, p, h] : p > 0 ? [p, h, A] : [h, A], m = (0, o.k8)(i.M.NITRO_TAB_BADGE_OFFER_REMINDER);
+      minutes: g,
+      seconds: f
+    } = (0, s.A)(Date.parse(t), 1e3), m = c > 0 ? [c, p, g] : p > 0 ? [p, g, f] : [g, f], A = (0, o.k8)(i.M.NITRO_TAB_BADGE_OFFER_REMINDER);
     return (0, r.jsx)(l.m, {
       text: n,
       position: "right",
       children: (0, r.jsxs)("div", {
-        children: [!m && (0, r.jsx)("img", {
+        children: [!A && (0, r.jsx)("img", {
           src: d,
           alt: "",
           className: u.S1
@@ -61,10 +61,10 @@ let p = e => {
           gap: 0,
           direction: "horizontal",
           className: u.Pc,
-          children: g.map((e, t) => (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(f, {
+          children: m.map((e, t) => (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(h, {
               value: e
-            }, t), t !== g.length - 1 && (0, r.jsx)("div", {
+            }, t), t !== m.length - 1 && (0, r.jsx)("div", {
               className: u.Nm,
               children: ":"
             })]
@@ -73,20 +73,20 @@ let p = e => {
       })
     })
   },
-  A = e => {
+  f = e => {
     let {
       trialOffer: t
     } = e, n = (0, c.Fu)(t);
-    return (0, r.jsx)(h, {
+    return (0, r.jsx)(g, {
       expiresAt: t.expires_at,
       tooltipText: n
     })
   },
-  g = e => {
+  m = e => {
     let {
       discountOffer: t
     } = e, n = (0, c.__)(t);
-    return (0, r.jsx)(h, {
+    return (0, r.jsx)(g, {
       expiresAt: t.expires_at,
       tooltipText: n
     })

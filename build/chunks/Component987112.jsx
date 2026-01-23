@@ -47,13 +47,13 @@ function g(e) {
     channel: g,
     onClick: E
   } = e, {
-    trackUserProfileAction: b
-  } = (0, u.NJ)(), y = i.useMemo(() => ({
+    trackUserProfileAction: y
+  } = (0, u.NJ)(), b = i.useMemo(() => ({
     channel: g,
     type: "channel"
   }), [g]), {
     commands: O
-  } = o.DP(y, t, n), A = i.useMemo(() => null == O ? true : O.filter(e => {
+  } = o.DP(b, t, n), v = i.useMemo(() => null == O ? true : O.filter(e => {
     let {
       nsfw: t,
       options: n
@@ -65,9 +65,9 @@ function g(e) {
       return t === a.n4.SUB_COMMAND || t === a.n4.SUB_COMMAND_GROUP
     })) == null
   }), [O]);
-  if (null == A || 0 === A.length) return null;
-  let v = e => {
-    null == E || E(), b({
+  if (null == v || 0 === v.length) return null;
+  let A = e => {
+    null == E || E(), y({
       action: "PRESS_APP_COMMAND"
     }), c.default.track(f.HAw.POPULAR_APPLICATION_COMMAND_CLICKED, m({
       application_id: t,
@@ -79,12 +79,12 @@ function g(e) {
     heading: p.intl.string(p.t["0hKkS+"]),
     children: (0, r.jsx)("ul", {
       className: _.p,
-      children: A.map(e => (0, r.jsx)("li", {
+      children: v.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(l.Oh, {
           commandId: e.id,
           commandName: e.displayName,
           commandDescription: e.displayDescription,
-          onClick: v,
+          onClick: A,
           guildId: h,
           channelId: g.id,
           applicationId: e.applicationId

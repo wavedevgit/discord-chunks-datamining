@@ -1,9 +1,9 @@
 /** Chunk was on 9795 **/
 /** chunk id: 883456, original params: t,s,e (module,exports,require) **/
 module.exports = {
-  yl: "_67e6da9397ea593b",
-  _J: "_0fd9793ce524cb3c",
-  Sl: "e68f02fee296672b",
-  rf: "_198042b064878714",
-  zr: "d4abb40fc973bb17"
+  yl: "modal__3850a",
+  _J: "followSuccessHeader__3850a",
+  Sl: "image__3850a",
+  rf: "body__3850a",
+  zr: "root__3850a"
 }

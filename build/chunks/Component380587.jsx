@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Ev: () => E,
-  Ow: () => b,
-  aK: () => y,
+  Ow: () => y,
+  aK: () => b,
   m3: () => O
 });
 var Chunk627968 = require("./627968.js"),
@@ -35,7 +35,7 @@ function E() {
   })
 }
 
-function b() {
+function y() {
   let e = () => {
     s.A.showAgeVerificationGetStartedModal({
       entryPoint: o.q1.CONTENT_AND_SOCIAL_NOTICE
@@ -48,7 +48,7 @@ function b() {
   })
 }
 
-function y() {
+function b() {
   let e = (0, f.Z)(),
     t = (0, l.WX)(),
     n = i.useCallback(() => {

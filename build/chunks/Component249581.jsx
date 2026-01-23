@@ -87,14 +87,14 @@ function _(e) {
       clearTimeout(e)
     }
   }, []);
-  let b = null != g && n,
-    y = () => {
-      b && g()
+  let y = null != g && n,
+    b = () => {
+      y && g()
     },
-    O = b ? o.DUT : "div";
+    O = y ? o.DUT : "div";
   return (0, r.jsxs)(O, {
-    className: s()(d.kL, b && d.b),
-    onClick: y,
+    className: s()(d.kL, y && d.b),
+    onClick: b,
     children: [(0, r.jsx)("div", {
       className: d.zc,
       children: (0, r.jsx)(u.A, {

@@ -2,7 +2,7 @@
 /** chunk id: 523173, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -21,8 +21,8 @@ var Chunk73153 = require("./73153.js"),
   Chunk374803 = require("./374803.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let b = 8,
-  y = {
+let y = 8,
+  b = {
     results: {
       command: null,
       stickers: []
@@ -36,7 +36,7 @@ function O(e, t) {
     size: 40
   })
 }
-let A = {
+let v = {
   stores: [Chunk679382.A],
   matches(e, t, n, r, i) {
     var a;
@@ -45,11 +45,11 @@ let A = {
   queryResults(e, t, n, r) {
     var i;
     let a = null == (i = s.A.getActiveCommand(e.id)) ? true : i.untranslatedName;
-    if (null == a) return y;
+    if (null == a) return b;
     let o = [];
     (0, u.YB)();
     let l = _.Ay.queryStickers([n], true, [e, (e, t) => t === c.Ux.SENDABLE]),
-      d = Math.max(b);
+      d = Math.max(y);
     return {
       results: {
         command: a,

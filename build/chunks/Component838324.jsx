@@ -24,12 +24,12 @@ function m(e, t) {
     type: a,
     channelId: m,
     pickerView: g = p.kx.EMOJI
-  } = e, [E, b, y, O] = (0, u.RQ)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], o.x), A = (0, d.p)(l.L), v = a === f.oU.NORMAL, {
-    tooltipsWithKeybinds: S,
-    expressionsCombinedIntoEmojiButton: I
+  } = e, [E, y, b, O] = (0, u.RQ)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], o.x), v = (0, d.p)(l.L), A = a === f.oU.NORMAL, {
+    tooltipsWithKeybinds: I,
+    expressionsCombinedIntoEmojiButton: S
   } = d.C.useConfig({
     location: "EmojiButton"
-  }), T = I ? true : v ? A : true, C = S && I && v ? _.intl.string(_.t.DSBQ6F) : true, N = i.useCallback(() => {
+  }), T = S ? true : A ? v : true, C = I && S && A ? _.intl.string(_.t.DSBQ6F) : true, N = i.useCallback(() => {
     (0, u.r$)(g, a, m)
   }, [a, g, m]);
   return n ? null : (0, r.jsx)("div", {
@@ -40,8 +40,8 @@ function m(e, t) {
       tooltipText: C,
       className: h.Z8,
       onClick: N,
-      active: E === g && b === a && O === m,
-      "aria-controls": y,
+      active: E === g && y === a && O === m,
+      "aria-controls": b,
       tabIndex: 0,
       focusProps: {
         offset: {
@@ -52,7 +52,7 @@ function m(e, t) {
         }
       },
       keyboardShortcut: T,
-      canShowNUXPremiumTooltip: v
+      canShowNUXPremiumTooltip: A
     })
   })
 }

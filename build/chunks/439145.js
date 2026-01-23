@@ -108,18 +108,18 @@ module.exports = {
         c = d, u = f, d = _, f = h, p = false
       }
       var E = c === n && r <= u && i >= u,
-        b = d === n && r <= f && i >= f;
-      if (E && b) {
+        y = d === n && r <= f && i >= f;
+      if (E && y) {
         o.removeAllRanges(), g(o, t, u - r, e), m(o, t, f - r, e);
         return
       }
       if (p) {
-        if (b && (o.removeAllRanges(), g(o, t, f - r, e)), E) {
-          var y = o.focusNode,
+        if (y && (o.removeAllRanges(), g(o, t, f - r, e)), E) {
+          var b = o.focusNode,
             O = o.focusOffset;
-          o.removeAllRanges(), g(o, t, u - r, e), m(o, y, O, e)
+          o.removeAllRanges(), g(o, t, u - r, e), m(o, b, O, e)
         }
-      } else E && (o.removeAllRanges(), g(o, t, u - r, e)), b && m(o, t, f - r, e)
+      } else E && (o.removeAllRanges(), g(o, t, u - r, e)), y && m(o, t, f - r, e)
     }
   },
   addFocusToSelection: m

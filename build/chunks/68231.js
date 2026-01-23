@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   GC: () => h,
-  kh: () => y
+  kh: () => b
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk648335 = require("./648335.js"),
@@ -41,7 +41,7 @@ let o = [Chunk166532.pn.PAYMENT_TYPE],
     SHARED_TYPE_AND_ADDRESS_STEPS: [Chunk166532.pn.PAYMENT_ELEMENT, Chunk166532.pn.ADDRESS]
   },
   E = e => null == e || e === s.he.UNKNOWN || (0, i.PE)(e),
-  b = (e, t) => {
+  y = (e, t) => {
     let {
       prependSteps: n,
       appendSteps: r,
@@ -58,12 +58,12 @@ let o = [Chunk166532.pn.PAYMENT_TYPE],
       }
     })
   },
-  y = e => {
+  b = e => {
     let {
       prependSteps: t,
       appendSteps: n,
       paymentElementsEnabled: i
-    } = e, [a, o, l, c, u, d, f, p, _, h] = (0, r.useMemo)(() => b([{
+    } = e, [a, o, l, c, u, d, f, p, _, h] = (0, r.useMemo)(() => y([{
       sharedStepsKey: "SHARED_TYPE_AND_ADDRESS_STEPS",
       methodType: s.he.UNKNOWN
     }, {

@@ -26,8 +26,8 @@ function m(e) {
     entry: m,
     display: g,
     onAction: E,
-    onClose: b
-  } = e, y = (0, i.bG)([f.default], () => {
+    onClose: y
+  } = e, b = (0, i.bG)([f.default], () => {
     var e;
     return (null == (e = f.default.getCurrentUser()) ? true : e.id) === n.id
   }), O = (0, i.bG)([c.A], () => c.A.hasConnectedAccount());
@@ -42,18 +42,18 @@ function m(e) {
         action: "PRESS_CONNECT_SPOTIFY_MENU_ITEM"
       }), (0, d.openUserSettings)(u.X.CONNECTIONS_PANEL, {
         section: p.nc_.CONNECTIONS
-      }), null == b || b()
+      }), null == y || y()
     }
   });
-  if (y) return null;
-  let A = (0, s.Tq)(m) ? null == (t = m.extra.entries[0]) ? true : t.media : m.extra.media;
-  return null == A ? null : (0, r.jsx)(a.Drp, {
+  if (b) return null;
+  let v = (0, s.Tq)(m) ? null == (t = m.extra.entries[0]) ? true : t.media : m.extra.media;
+  return null == v ? null : (0, r.jsx)(a.Drp, {
     id: "play-on-spotify",
     label: h.intl.string(h.t.rRffNz),
     action: () => {
       null == E || E({
         action: "PRESS_PLAY_ON_SPOTIFY_MENU_ITEM"
-      }), (0, o.n)(_.M0.TRACK, A.external_id)
+      }), (0, o.n)(_.M0.TRACK, v.external_id)
     }
   })
 }

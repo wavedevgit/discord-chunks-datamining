@@ -15,8 +15,8 @@ function o(e) {
     className: t
   } = e;
   return (0, r.jsx)("div", {
-    className: i()(s.L, t),
-    children: (0, r.jsx)(a.LK_, {
+    className: i()(a.L, t),
+    children: (0, r.jsx)(s.LK_, {
       size: "lg",
       color: "currentColor"
     })

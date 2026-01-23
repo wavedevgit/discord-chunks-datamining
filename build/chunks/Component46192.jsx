@@ -27,23 +27,23 @@ function _(e) {
     if ((null == g ? true : g.skuId) == null) return [];
     let e = o.A.getForSku(null == g ? true : g.skuId);
     return null != e ? [...e] : []
-  }), b = null != (t = null == m || null == (n = m.avatarDecoration) ? true : n.skuId) ? t : null, y = null != b && b === (null == g ? true : g.skuId), O = null != E[0], A = () => {
+  }), y = null != (t = null == m || null == (n = m.avatarDecoration) ? true : n.skuId) ? t : null, b = null != y && y === (null == g ? true : g.skuId), O = null != E[0], v = () => {
     O || (0, l.qm)()
-  }, v = async () => {
-    O && !y && await (0, a.yu)({
+  }, A = async () => {
+    O && !b && await (0, a.yu)({
       avatarDecoration: g
     })
   };
   return (0, r.jsx)(u.A, {
-    disabled: y,
-    onClick: O ? y ? true : v : A,
+    disabled: b,
+    onClick: O ? b ? true : A : v,
     className: _,
     children: (0, r.jsx)(d.A, {
       variant: "eyebrow",
       style: {
         fontSize: h
       },
-      children: O ? y ? p.intl.string(p.t["h+WsPb"]) : p.intl.string(p.t.MAS7uK) : p.intl.string(f.default.mDxM7m)
+      children: O ? b ? p.intl.string(p.t["h+WsPb"]) : p.intl.string(p.t.MAS7uK) : p.intl.string(f.default.mDxM7m)
     })
   })
 }

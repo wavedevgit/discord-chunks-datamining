@@ -11,7 +11,7 @@ require.d(exports, {
   ND: () => P,
   VD: () => D,
   Wn: () => w,
-  YP: () => I,
+  YP: () => S,
   aw: () => k
 }), require("./747238.js"), require("./812715.js"), require("./896048.js"), require("./733351.js");
 var Chunk735438 = require("./735438.js"),
@@ -42,7 +42,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,13 +66,13 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function I() {
+function S() {
   return {
     text: true,
     image: true,
@@ -96,7 +96,7 @@ function N(e) {
 }
 
 function R(e) {
-  return (0, o.bG)([_.A], () => null != e && e.id !== l.E && !!b.kvI.POLLS.has(e.type) && (!!e.isPrivate() || _.A.can(b.xBc.SEND_MESSAGES, e) && _.A.can(b.xBc.SEND_POLLS, e)))
+  return (0, o.bG)([_.A], () => null != e && e.id !== l.E && !!y.kvI.POLLS.has(e.type) && (!!e.isPrivate() || _.A.can(y.xBc.SEND_MESSAGES, e) && _.A.can(y.xBc.SEND_POLLS, e)))
 }
 
 function w(e, t) {
@@ -125,19 +125,19 @@ function L(e) {
   let n = null == e || null == (t = e.answers) ? true : t.map((e, t) => {
       var n, r;
       let i = null == (r = e.poll_media) ? true : r.emoji,
-        a = S(A({}, e.poll_media), {
+        a = I(v({}, e.poll_media), {
           emoji: null != i ? {
             id: i.id,
             name: null != (n = i.name) ? n : ""
           } : true
         });
-      return S(A({}, e), {
+      return I(v({}, e), {
         answer_id: t + 1,
         poll_media: a
       })
     }),
     r = (null == e ? true : e.duration) != null ? x(e.duration) : "0";
-  return S(A({}, e), {
+  return I(v({}, e), {
     expiry: r,
     answers: n
   })
@@ -152,7 +152,7 @@ function j(e, t) {
 function M(e) {
   let t = (0, u.p_)(e),
     n = j(e, E.TU);
-  return y.intl.format(y.t.Vn97Ka, {
+  return b.intl.format(b.t.Vn97Ka, {
     username: t.nick,
     title: n
   })
@@ -182,29 +182,29 @@ function U(e, t) {
 function G(e, t) {
   let n = Math.max(0, t - e.length);
   if (1 === e.length)
-    if (n > 0) return y.intl.formatToPlainString(y.t["SV/iZn"], {
+    if (n > 0) return b.intl.formatToPlainString(b.t["SV/iZn"], {
       a: e[0],
       n: n
     });
     else return e[0];
   if (2 === e.length)
-    if (n > 0) return y.intl.formatToPlainString(y.t.YBnZK0, {
+    if (n > 0) return b.intl.formatToPlainString(b.t.YBnZK0, {
       a: e[0],
       b: e[1],
       n: n
     });
-    else return y.intl.formatToPlainString(y.t["O5+f5c"], {
+    else return b.intl.formatToPlainString(b.t["O5+f5c"], {
       a: e[0],
       b: e[1]
     });
-  return 3 !== e.length ? y.intl.formatToPlainString(y.t.yVX6kE, {
+  return 3 !== e.length ? b.intl.formatToPlainString(b.t.yVX6kE, {
     n: n
-  }) : n > 0 ? y.intl.formatToPlainString(y.t["ThXp+N"], {
+  }) : n > 0 ? b.intl.formatToPlainString(b.t["ThXp+N"], {
     a: e[0],
     b: e[1],
     c: e[2],
     n: n
-  }) : y.intl.formatToPlainString(y.t["0UzBM3"], {
+  }) : b.intl.formatToPlainString(b.t["0UzBM3"], {
     a: e[0],
     b: e[1],
     c: e[2]

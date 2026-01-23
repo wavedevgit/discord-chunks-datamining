@@ -79,7 +79,7 @@ var m = 0,
   g = Symbol.for("__REACT_DND_CONTEXT_INSTANCE__"),
   E = (0, Chunk64700.memo)(function(e) {
     var t = e.children,
-      n = l(b(_(e, o)), 2),
+      n = l(y(_(e, o)), 2),
       a = n[0],
       c = n[1];
     return (0, i.useEffect)(function() {
@@ -97,13 +97,13 @@ var m = 0,
     }), true)
   });
 
-function b(e) {
+function y(e) {
   return "manager" in e ? [{
     dragDropManager: e.manager
-  }, false] : [y(e.backend, e.context, e.options, e.debugMode), !e.context]
+  }, false] : [b(e.backend, e.context, e.options, e.debugMode), !e.context]
 }
 
-function y(e) {
+function b(e) {
   var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : O(),
     n = arguments.length > 2 ? arguments[2] : true,
     r = arguments.length > 3 ? arguments[3] : true,

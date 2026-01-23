@@ -160,11 +160,11 @@ function Y(e) {
     channel: u
   } = e, {
     analyticsLocations: d
-  } = (0, _.Ay)(p.A.GIFT_BUTTON), [f, I] = i.useState(false), R = (0, l.bG)([v.A], () => !(null === v.A || true === v.A ? true : v.A.hasLayers())), P = (0, l.bG)([S.default], () => S.default.getCurrentUser()), L = null != P ? T.default.age(P.id) : 0, M = (0, l.bG)([y.A], () => {
-    let e = y.A.getMarketingComponentByType(o.C.GIFT_ICON);
+  } = (0, _.Ay)(p.A.GIFT_BUTTON), [f, S] = i.useState(false), R = (0, l.bG)([A.A], () => !(null === A.A || true === A.A ? true : A.A.hasLayers())), P = (0, l.bG)([I.default], () => I.default.getCurrentUser()), L = null != P ? T.default.age(P.id) : 0, M = (0, l.bG)([b.A], () => {
+    let e = b.A.getMarketingComponentByType(o.C.GIFT_ICON);
     return null == e || "giftIcon" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftIcon
-  }), k = (0, l.bG)([y.A], () => {
-    let e = y.A.getMarketingComponentByType(o.C.GIFT_ICON_COACHMARK);
+  }), k = (0, l.bG)([b.A], () => {
+    let e = b.A.getMarketingComponentByType(o.C.GIFT_ICON_COACHMARK);
     return null == e || "giftIconCoachmark" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftIconCoachmark
   }), U = i.useMemo(() => {
     let e = null == M ? true : M.gradient;
@@ -178,7 +178,7 @@ function Y(e) {
     if ((null == t ? true : t.background) != null) return {
       "--custom-promotion-gradient": t.background
     }
-  }, [null == M ? true : M.gradient]), G = !(0, C.uJ)(null == M ? true : M.boxAnimationUrl), V = (!(0, C.uJ)(null == M ? true : M.trinketAnimationUrl) || !(0, C.uJ)(null == M ? true : M.trinketGlowAnimationUrl)) && !G, Y = null != k && !a && R && L >= H, [W, K] = (0, m.RF)(Y ? c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, h.c)(c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), z = null != W, q = f || z, X = (0, N.R1)(u), Z = u.type === D.rbe.DM, Q = (0, A.tA)({
+  }, [null == M ? true : M.gradient]), G = !(0, C.uJ)(null == M ? true : M.boxAnimationUrl), V = (!(0, C.uJ)(null == M ? true : M.trinketAnimationUrl) || !(0, C.uJ)(null == M ? true : M.trinketGlowAnimationUrl)) && !G, Y = null != k && !a && R && L >= H, [W, K] = (0, m.RF)(Y ? c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, h.c)(c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), z = null != W, q = f || z, X = (0, N.R1)(u), Z = u.type === D.rbe.DM, Q = (0, v.tA)({
     location: "gift-promotion-button",
     isGift: true,
     giftRecipient: X
@@ -208,7 +208,7 @@ function Y(e) {
       })
     },
     J = () => {
-      I(false), K(x.i.TAKE_ACTION), $()
+      S(false), K(x.i.TAKE_ACTION), $()
     },
     ee = G && (null == M ? true : M.boxAnimationUrl) != null ? (0, r.jsx)(F, {
       boxAnimationUrl: M.boxAnimationUrl,
@@ -229,13 +229,13 @@ function Y(e) {
     }),
     style: U,
     onMouseEnter: () => {
-      f || I(true)
+      f || S(true)
     },
     onMouseLeave: () => {
-      I(false)
+      S(false)
     },
-    children: z ? (0, r.jsx)(b.A, {
-      onComplete: () => I(false),
+    children: z ? (0, r.jsx)(y.A, {
+      onComplete: () => S(false),
       onCheckItOutClick: $,
       markAsDismissed: K,
       coachmarkConfig: k,

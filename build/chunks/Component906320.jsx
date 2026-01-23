@@ -69,13 +69,13 @@ let G = e => {
     } = e;
     return (0, r.jsx)(d.m, {
       text: t,
-      children: (0, r.jsx)(f.$n, {
+      children: (0, r.jsx)(h.$n, {
         "aria-label": t,
         className: k.hP,
         innerClassName: k.DX,
-        color: f.$n.Colors.PRIMARY,
+        color: h.$n.Colors.PRIMARY,
         onClick: n,
-        size: f.$n.Sizes.ICON,
+        size: h.$n.Sizes.ICON,
         children: (0, r.jsx)(i, {
           className: k.gE
         })
@@ -247,7 +247,7 @@ function K(e) {
   }
   throw Error("Invalid Dispatch stage")
 }
-class z extends Chunk64700.PureComponent {
+class W extends Chunk64700.PureComponent {
   get isFocused() {
     let {
       cellProps: e
@@ -263,9 +263,9 @@ class z extends Chunk64700.PureComponent {
     } = e;
     return (0, r.jsxs)(y.A, {
       direction: y.A.Direction.VERTICAL,
-      children: [(0, r.jsx)(h.kej, {
+      children: [(0, r.jsx)(g.kej, {
         percent: t,
-        size: h.kej.Sizes.SMALL,
+        size: g.kej.Sizes.SMALL,
         foregroundColor: n,
         foregroundGradientColor: null != i ? [i[0], i[1]] : true,
         animate: this.isFocused
@@ -282,9 +282,9 @@ class z extends Chunk64700.PureComponent {
     } = e;
     return (0, r.jsxs)(y.A, {
       direction: y.A.Direction.VERTICAL,
-      children: [(0, r.jsx)(h.LvI, {
+      children: [(0, r.jsx)(g.LvI, {
         percents: t,
-        size: h.LvI.Sizes.SMALL,
+        size: g.LvI.Sizes.SMALL,
         foregroundColors: V,
         animate: this.isFocused
       }), (0, r.jsx)("div", {
@@ -299,7 +299,7 @@ class z extends Chunk64700.PureComponent {
     } = this.props;
     return this.renderBody({
       message: M.intl.format(M.t.z1oxGO, {
-        remove: () => m.Vt(e.applicationId, e.branchId)
+        remove: () => A.Vt(e.applicationId, e.branchId)
       }),
       foregroundColor: (0, p.qB)(e.theme) ? u.A.unsafe_rawColors.PRIMARY_300.css : u.A.unsafe_rawColors.PRIMARY_500.css,
       percent: 100
@@ -457,24 +457,24 @@ class z extends Chunk64700.PureComponent {
     })
   }
 }
-let W = () => (0, r.jsx)(B, {
-    icon: h.udU,
+let q = () => (0, r.jsx)(B, {
+    icon: g.udU,
     tooltip: M.intl.string(M.t.YGm6SZ),
-    onClick: () => m.U()
+    onClick: () => A.U()
   }),
-  q = () => (0, r.jsx)(B, {
-    icon: h.E$n,
+  z = () => (0, r.jsx)(B, {
+    icon: g.E$n,
     tooltip: M.intl.string(M.t.TVAd5J),
-    onClick: () => m.v7()
+    onClick: () => A.v7()
   }),
   Q = e => {
     let {
       item: t
     } = e;
     return (0, r.jsx)(B, {
-      icon: h.z$m,
+      icon: g.z$m,
       tooltip: M.intl.string(M.t["Eqb+LN"]),
-      onClick: () => m.BO(t.applicationId, t.branchId)
+      onClick: () => A.BO(t.applicationId, t.branchId)
     })
   },
   X = e => {
@@ -482,9 +482,9 @@ let W = () => (0, r.jsx)(B, {
       item: t
     } = e;
     return (0, r.jsx)(B, {
-      icon: h.PGe,
+      icon: g.PGe,
       tooltip: M.intl.string(M.t["0lFmC9"]),
-      onClick: () => m.ZT(t.applicationId, t.branchId)
+      onClick: () => A.ZT(t.applicationId, t.branchId)
     })
   },
   Z = [{
@@ -506,7 +506,7 @@ let W = () => (0, r.jsx)(B, {
     cellClassName: Chunk59790.Ay,
     headerCellClassName: Chunk59790.VD,
     bodyCellClassName: Chunk59790.so,
-    render: (e, t) => (0, r.jsx)(z, {
+    render: (e, t) => (0, r.jsx)(W, {
       item: e,
       cellProps: t
     })
@@ -515,13 +515,13 @@ let W = () => (0, r.jsx)(B, {
     cellClassName: Chunk59790.AT,
     render(e, t) {
       let n, i;
-      return e.finished ? n = null != e.libraryApplication ? (0, r.jsx)(b.A, {
+      return e.finished ? n = null != e.libraryApplication ? (0, r.jsx)(_.A, {
         libraryApplication: e.libraryApplication,
         size: "sm",
         source: D.ThZ.APPLICATION_LIBRARY_UPDATES
       }) : null : null != e.state ? e.state.type !== D.WTw.UP_TO_DATE && (n = e.index > 0 ? (0, r.jsx)(Q, {
         item: e
-      }) : null != t && t.paused ? (0, r.jsx)(W, {}) : (0, r.jsx)(q, {
+      }) : null != t && t.paused ? (0, r.jsx)(q, {}) : (0, r.jsx)(z, {
         item: e
       }), i = (0, r.jsx)(X, {
         item: e
@@ -533,7 +533,7 @@ let W = () => (0, r.jsx)(B, {
       })
     }
   }];
-class J extends Chunk64700.PureComponent {
+class $ extends Chunk64700.PureComponent {
   componentDidMount() {
     window.addEventListener("resize", this.throttledUpdateHeight)
   }
@@ -545,8 +545,8 @@ class J extends Chunk64700.PureComponent {
       applications: e
     } = this.props;
     e.forEach(e => {
-      e.finished && A.h.wait(() => {
-        m.Vt(e.applicationId, e.branchId)
+      e.finished && f.h.wait(() => {
+        A.Vt(e.applicationId, e.branchId)
       })
     }), window.removeEventListener("resize", this.throttledUpdateHeight), this.isUnmounted = true
   }
@@ -593,7 +593,7 @@ class J extends Chunk64700.PureComponent {
         },
         rowProps: {
           onContextMenu: (e, t) => {
-            g.L3(e, async () => {
+            m.L3(e, async () => {
               let {
                 default: e
               } = await n.e("881").then(n.bind(n, 163368));
@@ -644,7 +644,7 @@ class J extends Chunk64700.PureComponent {
   }
 }
 
-function $(e, t, n, r) {
+function J(e, t, n, r) {
   return e.reduce((e, i, l) => {
     let {
       applicationId: a,
@@ -663,8 +663,8 @@ function $(e, t, n, r) {
   }, [])
 }
 let ee = (0, Chunk456412.A)(Chunk311907.Ay.connectStores([Chunk587895.A, Chunk194871.A, Chunk966846.A, Chunk544028.A, Chunk531685.A], () => ({
-  applications: [...$(j.A.activeItems, false, O.A, T.A), ...$(j.A.finishedItems, true, O.A, T.A)],
+  applications: [...J(j.A.activeItems, false, O.A, T.A), ...J(j.A.finishedItems, true, O.A, T.A)],
   paused: j.A.paused,
   isFocused: x.A.isFocused(),
   theme: C.A.theme
-}))((0, Chunk707606.A)(J)))
+}))((0, Chunk707606.A)($)))

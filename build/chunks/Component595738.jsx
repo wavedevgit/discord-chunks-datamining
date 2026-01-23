@@ -1,7 +1,7 @@
 /** Chunk was on 73169 **/
-/** chunk id: 595738, original params: s,e,l (module,exports,require) **/
+/** chunk id: 595738, original params: e,l,s (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => c
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -11,55 +11,55 @@ var Chunk503698 = require("./503698.js"),
   Chunk376092 = require("./376092.js"),
   Chunk565928 = require("./565928.js");
 
-function d(s) {
+function c(e) {
   let {
-    grantedPermissions: e,
-    disabledPermissions: l,
+    grantedPermissions: l,
+    disabledPermissions: s,
     grantedPermissionsHeader: n,
-    disabledPermissionsHeader: d,
-    className: x
-  } = s;
+    disabledPermissionsHeader: c,
+    className: o
+  } = e;
   return (0, a.jsxs)("div", {
-    className: r()(c.p_, x),
-    children: [null != e && e.length > 0 ? (0, a.jsxs)(a.Fragment, {
+    className: r()(d.p_, o),
+    children: [null != l && l.length > 0 ? (0, a.jsxs)(a.Fragment, {
       children: [null != n ? (0, a.jsx)(t.Heading, {
         variant: "heading-sm/semibold",
         color: "text-strong",
-        className: c.wx,
+        className: d.wx,
         children: n
       }) : null, (0, a.jsx)("div", {
-        className: c.kL,
-        children: e.map(s => (0, a.jsxs)("div", {
-          className: c.EK,
+        className: d.kL,
+        children: l.map(e => (0, a.jsxs)("div", {
+          className: d.EK,
           children: [(0, a.jsx)(t.A9s, {
             size: "xs",
             color: "currentColor",
-            className: c.z6
+            className: d.z6
           }), (0, a.jsx)(t.Text, {
             variant: "text-sm/normal",
-            children: (0, i.hx)(s)
+            children: (0, i.hx)(e)
           })]
-        }, s.toString()))
+        }, e.toString()))
       })]
-    }) : null, null != l && l.length > 0 ? (0, a.jsxs)(a.Fragment, {
-      children: [null != d ? (0, a.jsx)(t.Heading, {
+    }) : null, null != s && s.length > 0 ? (0, a.jsxs)(a.Fragment, {
+      children: [null != c ? (0, a.jsx)(t.Heading, {
         variant: "heading-sm/semibold",
         color: "text-strong",
-        className: c.wx,
-        children: d
+        className: d.wx,
+        children: c
       }) : null, (0, a.jsx)("div", {
-        className: c.kL,
-        children: l.map(s => (0, a.jsxs)("div", {
-          className: c.EK,
+        className: d.kL,
+        children: s.map(e => (0, a.jsxs)("div", {
+          className: d.EK,
           children: [(0, a.jsx)(t.PGe, {
             size: "xs",
             color: "currentColor",
-            className: c.$A
+            className: d.$A
           }), (0, a.jsx)(t.Text, {
             variant: "text-sm/normal",
-            children: (0, i.hx)(s)
+            children: (0, i.hx)(e)
           })]
-        }, s.toString()))
+        }, e.toString()))
       })]
     }) : null]
   })

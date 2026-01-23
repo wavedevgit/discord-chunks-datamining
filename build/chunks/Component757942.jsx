@@ -2,7 +2,7 @@
 /** chunk id: 757942, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -42,7 +42,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,8 +53,8 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -65,56 +65,56 @@ function O(e, t) {
   return t > 0 ? n.slice(r).concat(n.slice(0, r), e) : (n.splice(r, 0, e), n.slice(r + 1).concat(n.slice(0, r + 1)))
 }
 
-function A(e, t) {
+function v(e, t) {
   return e === h.ME ? f.A.getPrivateChannelIds() : (0, o.A)(e, {
     withVoiceChannels: t,
     withCurrentVoiceChannel: true
   }).map(e => e.id)
 }
 
-function v(e, t) {
+function A(e, t) {
   return [{
     resourceId: e,
     type: m.P.GUILD_EVENT
-  }, ...A(e, t)]
+  }, ...v(e, t)]
 }
 
-function S(e, t) {
+function I(e, t) {
   var i, a;
   let o, {
       channelPredicate: d = () => true,
       guildPredicate: f = () => true,
       guildFeaturePredicate: m = () => false,
       ensureChatIsVisible: g = () => false,
-      withVoiceChannels: b = false
+      withVoiceChannels: y = false
     } = t,
-    A = null != (i = l.A.getState().guildId) ? i : h.ME,
-    S = l.A.getState().channelId,
-    I = O(A, e),
-    T = e > 0 ? 0 : I.length - 1,
-    C = v(A, b),
-    N = C.indexOf(S) + e;
-  for (; null != A && "" !== A;) {
-    if (o = C[N], f(A))
+    v = null != (i = l.A.getState().guildId) ? i : h.ME,
+    I = l.A.getState().channelId,
+    S = O(v, e),
+    T = e > 0 ? 0 : S.length - 1,
+    C = A(v, y),
+    N = C.indexOf(I) + e;
+  for (; null != v && "" !== v;) {
+    if (o = C[N], f(v))
       for (; null != o && "" !== o;) {
         if ("string" == typeof o) {
-          if (d(A, o)) return (0, _.i)(A, o, false, g(A, o))
-        } else if ("object" == typeof o && m(o.resourceId, o.type)) return A !== u.A.getGuildId() && (0, _.i)(A, null == (a = c.Ay.getDefaultChannel(A)) ? true : a.id), (0, s.mMO)(async () => {
+          if (d(v, o)) return (0, _.i)(v, o, false, g(v, o))
+        } else if ("object" == typeof o && m(o.resourceId, o.type)) return v !== u.A.getGuildId() && (0, _.i)(v, null == (a = c.Ay.getDefaultChannel(v)) ? true : a.id), (0, s.mMO)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("51354"), n.e("7453"), n.e("27728")]).then(n.bind(n, 926956));
-          return t => (0, r.jsx)(e, y(E({}, t), {
-            guildId: A
+          return t => (0, r.jsx)(e, b(E({}, t), {
+            guildId: v
           }))
         });
         N += e, o = C[N]
       }
-    if (T += e, null == (A = I[T]) || "" === A) break;
-    C = v(A, b), N = e < 0 ? C.length - 1 : 0
+    if (T += e, null == (v = S[T]) || "" === v) break;
+    C = A(v, y), N = e < 0 ? C.length - 1 : 0
   }
   p._.dispatch(h.jej.SHAKE_APP, {
     duration: 200,
     intensity: 2
   })
 }
-let I = a().throttle(S, Chunk652215.ugG)
+let S = a().throttle(I, Chunk652215.ugG)

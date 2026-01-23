@@ -40,10 +40,10 @@ let m = {
     name: () => l.intl.string(l.t.ZK9IyY),
     a11yLabel: () => l.intl.string(l.t["m/y43M"])
   },
-  b = {
+  y = {
     gradient: ["rgba(177, 186, 253, 1)", "rgba(91, 108, 242, 1)", "rgba(21, 18, 99, 1)"]
   },
-  y = {
+  b = {
     gradient: ["rgba(74, 87, 192, 1)", "rgba(8, 5, 67, 1)"]
   },
   O = {
@@ -96,7 +96,7 @@ let m = {
       mobileSubheading: e => l.intl.formatToPlainString(l.t["2h5M+X"], {
         availableCount: e
       }),
-      gradientConfig: b,
+      gradientConfig: y,
       getImageUrl: (e, t) => t ? f.A : d.A,
       getBannerImageUrl: () => h.A,
       getBackgroundImageUrl: () => _.A
@@ -105,7 +105,7 @@ let m = {
       desktopBannerText: () => l.intl.string(l.t.Abiuci),
       mobileBannerText: () => l.intl.string(l.t.cMiNit),
       getImageUrl: () => f.A,
-      gradientConfig: () => b,
+      gradientConfig: () => y,
       getBackgroundImageUrl: () => h.A
     },
     billingSettingsMarketingBanner: {
@@ -113,7 +113,7 @@ let m = {
       title: () => l.intl.string(l.t.Eeqjcv),
       body: () => l.intl.string(l.t.IuMZS3),
       getBackgroundImageUrl: () => p.A,
-      gradientConfig: y
+      gradientConfig: b
     },
     giftPurchaseConfirmation: {
       yearGiftText: Chunk985018.t["0Z0G7m"],

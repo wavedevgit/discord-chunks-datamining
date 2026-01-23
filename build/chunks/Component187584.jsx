@@ -2,7 +2,7 @@
 /** chunk id: 187584, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  i: () => y
+  i: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -105,21 +105,21 @@ let h = 1e3 / 60,
     }
   },
   E = ["#FFFFFF"],
-  b = [require("./426560.js"), ...(0, Chunk531301.A)(["snowflake"])];
+  y = [require("./426560.js"), ...(0, Chunk531301.A)(["snowflake"])];
 
-function y(e) {
+function b(e) {
   let {
     children: t
-  } = e, [n, o] = i.useState(false), d = (0, l.Us)(), [p, y] = i.useState(null), {
+  } = e, [n, o] = i.useState(false), d = (0, l.Us)(), [p, b] = i.useState(null), {
     confettiCanvas: O
-  } = i.useContext(s.x), A = (0, a.f9)(O, p), v = i.useMemo(() => ({
+  } = i.useContext(s.x), v = (0, a.f9)(O, p), A = i.useMemo(() => ({
     triggerAnimation: () => o(true),
     untriggerAnimation: () => o(false)
-  }), []), S = i.useCallback(() => {
+  }), []), I = i.useCallback(() => {
     let e = null == O ? true : O.getCanvas();
     if (null == e) return;
     let t = e.getBoundingClientRect();
-    A.createConfetti(_(f({}, g), {
+    v.createConfetti(_(f({}, g), {
       position: {
         type: "static-random",
         minValue: {
@@ -132,16 +132,16 @@ function y(e) {
         }
       }
     }))
-  }, [A, O]);
+  }, [v, O]);
   return (i.useEffect(() => {
-    let e = n ? setInterval(S, h) : null;
+    let e = n ? setInterval(I, h) : null;
     return () => clearInterval(e)
-  }, [n, S]), d === u.BRT.OVERLAY) ? t : (0, r.jsxs)(c.wE.Provider, {
-    value: v,
+  }, [n, I]), d === u.BRT.OVERLAY) ? t : (0, r.jsxs)(c.wE.Provider, {
+    value: A,
     children: [t, (0, r.jsx)(a.K_, {
-      ref: y,
+      ref: b,
       colors: E,
-      sprites: b,
+      sprites: y,
       spriteWidth: m,
       spriteHeight: m
     })]

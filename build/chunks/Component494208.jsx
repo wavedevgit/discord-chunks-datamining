@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 494208, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,28 +13,28 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk498654 = require("./498654.js");
 
-function f(e) {
+function p(e) {
   let {
     channel: t
-  } = e, [n, f] = l.useState(false), p = l.useRef(null), h = (0, a.vL)(t), b = l.useCallback(() => {
-    f(false)
-  }, []), g = l.useCallback(() => {
-    n || (0, o.D3)("Popout"), f(!n)
+  } = e, [n, p] = l.useState(false), h = l.useRef(null), f = (0, s.vL)(t), g = l.useCallback(() => {
+    p(false)
+  }, []), m = l.useCallback(() => {
+    n || (0, o.D3)("Popout"), p(!n)
   }, [n]);
   return (0, r.jsx)(i.YNO, {
-    targetElementRef: p,
+    targetElementRef: h,
     animation: i.YNO.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: false,
     shouldShow: n,
-    onRequestClose: b,
+    onRequestClose: g,
     renderPopout: function() {
       return (0, r.jsx)(i.lGe, {
         children: (0, r.jsx)(c.A, {
           className: d.T,
           channel: t,
-          onClose: b,
+          onClose: g,
           context: "popout"
         })
       })
@@ -43,9 +43,9 @@ function f(e) {
     children: (e, t) => {
       var n, l;
       let {
-        isShown: a
+        isShown: s
       } = t;
-      return (0, r.jsx)(s.In, (n = function(e) {
+      return (0, r.jsx)(a.In, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -63,14 +63,14 @@ function f(e) {
         }
         return e
       }({}, e), l = l = {
-        ref: p,
+        ref: h,
         className: d.Kk,
-        onClick: g,
+        onClick: m,
         icon: i.ysw,
         "aria-label": u.intl.string(u.t.B2panI),
-        tooltip: a ? null : u.intl.string(u.t.B2panI),
-        disabled: h,
-        selected: a
+        tooltip: s ? null : u.intl.string(u.t.B2panI),
+        disabled: f,
+        selected: s
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

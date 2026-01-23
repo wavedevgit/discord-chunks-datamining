@@ -85,17 +85,17 @@ module.exports = function(e) {
         scope: "doctag"
       }, "self"]
     }),
-    b = {
+    y = {
       scope: "subst",
       begin: /%\(/,
       end: /\)/,
       contains: [m, h, l, _, d]
     },
-    y = {
+    b = {
       scope: "string",
       begin: /"/,
       end: /"/,
-      contains: [b, {
+      contains: [y, {
         scope: "char.escape",
         variants: [{
           match: /\\\\|\\["0%abefnrtv]/
@@ -108,14 +108,14 @@ module.exports = function(e) {
         }]
       }]
     };
-  b.contains.push(y);
+  y.contains.push(b);
   let O = [...r, ...a, ...i],
-    A = {
+    v = {
       relevance: 0,
       match: t.concat("\\b(?!", O.join("|"), "\\b)", /[a-zA-Z_]\w*(?:[?!]|\b)/),
       className: "variable"
     },
-    v = {
+    A = {
       scope: "comment",
       variants: [{
         begin: [/#!?/, /[A-Za-z_]+(?=\()/],
@@ -138,6 +138,6 @@ module.exports = function(e) {
       "variable.language": a,
       literal: i
     },
-    contains: [v, m, y, f, E, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, h, u, g, c, l, d, _, p, A]
+    contains: [A, m, b, f, E, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, h, u, g, c, l, d, _, p, v]
   }
 }

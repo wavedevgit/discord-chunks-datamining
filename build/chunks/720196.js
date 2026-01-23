@@ -33,10 +33,10 @@ let d = new Chunk626584.A("OverlayWidgetPinManager"),
   E = e => {
     f[e] = Date.now()
   },
-  b = e => {
+  y = e => {
     delete f[e]
   };
-class y extends Chunk439372.A {
+class b extends Chunk439372.A {
   constructor(...e) {
     super(...e), u(this, "actions", {
       OVERLAY_UPDATE_OVERLAY_STATE: e => {
@@ -52,7 +52,7 @@ class y extends Chunk439372.A {
             let t = s.A.getWidget(e);
             if (null == t || !h.has(t.type)) continue;
             let n = null != (i = null == (a = s.A.getWidgetDefaultSettings(t.type)) ? true : a.pinned) ? i : _;
-            t.pinned !== n && (d.verbose("Widget ".concat(t.type, " is ").concat(t.pinned ? "pinned" : "unpinned", ", toggling to ").concat(n ? "pinned" : "unpinned")), (0, r.v0)(e), b(e))
+            t.pinned !== n && (d.verbose("Widget ".concat(t.type, " is ").concat(t.pinned ? "pinned" : "unpinned", ", toggling to ").concat(n ? "pinned" : "unpinned")), (0, r.v0)(e), y(e))
           }
       },
       LAYOUT_SET_PINNED: e => {
@@ -64,9 +64,9 @@ class y extends Chunk439372.A {
         } = (0, l.Fg)("OverlayWidgetPinManager");
         if (!r) return;
         let i = s.A.getWidget(t);
-        null != i && h.has(i.type) && null != n && (n ? E(t) : b(t))
+        null != i && h.has(i.type) && null != n && (n ? E(t) : y(t))
       }
     })
   }
 }
-let O = new y
+let O = new b

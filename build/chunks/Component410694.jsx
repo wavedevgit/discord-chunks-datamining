@@ -30,13 +30,13 @@ let p = "Stats for Nerds",
   m = "Copied!",
   g = "Resolution",
   E = "Viewport",
-  b = "Video",
-  y = "Audio",
+  y = "Video",
+  b = "Audio",
   O = "Audio Channels",
-  A = "Container",
-  v = "Format",
-  S = "Buffer Health",
-  I = "Error";
+  v = "Container",
+  A = "Format",
+  I = "Buffer Health",
+  S = "Error";
 
 function T(e) {
   var t, n, r, i, a, s, o, l, c, u, d, f, p, _, h;
@@ -139,7 +139,7 @@ function C(e) {
         className: c.N8,
         children: [(0, r.jsx)("span", {
           className: c.Zh,
-          children: A
+          children: v
         }), (0, r.jsx)("span", {
           className: c.cR,
           children: k.codecInfo.containerFormat
@@ -148,7 +148,7 @@ function C(e) {
         className: c.N8,
         children: [(0, r.jsx)("span", {
           className: c.Zh,
-          children: v
+          children: A
         }), (0, r.jsx)("span", {
           className: c.cR,
           children: f(null != (t = k.codecInfo.isProgressive) ? t : null, null != (n = k.codecInfo.isFragmented) ? n : null)
@@ -175,7 +175,7 @@ function C(e) {
         className: c.N8,
         children: [(0, r.jsx)("span", {
           className: c.Zh,
-          children: b
+          children: y
         }), (0, r.jsxs)("span", {
           className: c.cR,
           children: [null != (C = null != (N = k.codecInfo.videoCodecDescription) ? N : k.codecInfo.videoCodec) ? C : "Unknown", null != k.codecInfo.videoBitrate && " @ ".concat((0, l.BZ)(k.codecInfo.videoBitrate))]
@@ -184,7 +184,7 @@ function C(e) {
         className: c.N8,
         children: [(0, r.jsx)("span", {
           className: c.Zh,
-          children: y
+          children: b
         }), (0, r.jsxs)("span", {
           className: c.cR,
           children: [null != (R = null != (w = k.codecInfo.audioCodecDescription) ? w : k.codecInfo.audioCodec) ? R : "Unknown", null != k.codecInfo.audioBitrate && " @ ".concat((0, l.BZ)(k.codecInfo.audioBitrate))]
@@ -202,7 +202,7 @@ function C(e) {
         className: c.N8,
         children: [(0, r.jsx)("span", {
           className: c.Zh,
-          children: S
+          children: I
         }), (0, r.jsx)("span", {
           className: c.cR,
           children: u(k.bufferedSeconds)
@@ -213,7 +213,7 @@ function C(e) {
           className: c.N8,
           children: [(0, r.jsx)("span", {
             className: c.Zh,
-            children: I
+            children: S
           }), (0, r.jsxs)("span", {
             className: c.cR,
             children: [k.errorCode, null !== k.errorMessage && ": ".concat(k.errorMessage)]

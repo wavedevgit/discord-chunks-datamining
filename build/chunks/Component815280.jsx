@@ -1,8 +1,8 @@
 /** Chunk was on 59275 **/
-/** chunk id: 815280, original params: e,t,l (module,exports,require) **/
+/** chunk id: 815280, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,28 +14,28 @@ var Chunk503698 = require("./503698.js"),
   Chunk607470 = require("./607470.jsx"),
   Chunk531685 = require("./531685.js"),
   Chunk402314 = require("./402314.js");
-let f = e => {
+let g = e => {
   let {
     bannerStatic: t,
-    bannerAnimated: l,
-    bannerRive: r,
-    isResponsive: f = false,
-    eventTargetRef: b
-  } = e, g = (0, a.bG)([o.A], () => o.A.useReducedMotion), m = (0, a.bG)([u.A], () => u.A.isFocused()), p = null != l && !g && m;
-  return null != r ? (0, n.jsx)(i._, {
-    src: r,
-    fit: "fit-width",
-    eventTargetRef: b
-  }) : p ? (0, n.jsx)(c.A, {
-    className: s()({
-      [d.no]: f
-    }, d.BW, d.ud),
+    bannerAnimated: n,
+    bannerRive: l,
+    isResponsive: g = false,
+    eventTargetRef: f
+  } = e, p = (0, a.bG)([o.A], () => o.A.useReducedMotion), m = (0, a.bG)([u.A], () => u.A.isFocused()), _ = null != n && !p && m;
+  return null != l ? (0, r.jsx)(i._, {
     src: l,
+    fit: "fit-width",
+    eventTargetRef: f
+  }) : _ ? (0, r.jsx)(c.A, {
+    className: s()({
+      [d.no]: g
+    }, d.BW, d.ud),
+    src: n,
     autoPlay: true,
     loop: true
-  }) : (0, n.jsx)("div", {
+  }) : (0, r.jsx)("div", {
     className: s()({
-      [d.no]: f
+      [d.no]: g
     }, d.BW, d._e),
     style: {
       backgroundImage: "url(".concat(t, ")")

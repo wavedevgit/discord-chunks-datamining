@@ -60,7 +60,7 @@ function h(e, t) {
 let m = new(require("./863620.js")).u,
   g = 3e5,
   E = 36e5,
-  b = () => ({
+  y = () => ({
     candidates: new Map,
     shownFatigableCandidate: null,
     prevFatigableCandidate: null,
@@ -70,27 +70,27 @@ let m = new(require("./863620.js")).u,
     lastWinnerTime: 0,
     postConnectionOpen: false
   }),
-  y = (0, Chunk265690.h)(b),
+  b = (0, Chunk265690.h)(y),
   O = false,
-  A = e => h(p({}, e), {
+  v = e => h(p({}, e), {
     candidates: new Map(e.candidates),
     currentlyShown: new Set(e.currentlyShown),
     currentlyShownGroup: new Set(e.currentlyShownGroup)
   }),
-  v = (e, t) => {
+  A = (e, t) => {
     var n;
     return null == t || (null != t.content && e.currentlyShown.delete(t.content), null != t.groupName && e.currentlyShownGroup.delete(t.groupName), (null == (n = e.shownFatigableCandidate) ? true : n.content) === t.content && (e.shownFatigableCandidate = null)), e
   },
-  S = (e, t) => {
+  I = (e, t) => {
     var n, r;
     if (null == t) return e;
     e.currentlyShown.add(t.content);
     let i = e.recentlyShown.filter(e => e !== t.content);
     return i.unshift(t.content), i.splice(5), e.recentlyShown = i, null != t.groupName && e.currentlyShownGroup.add(t.groupName), d.C.has(t.content) || (e.shownFatigableCandidate = t, (null == (r = e.prevFatigableCandidate) ? true : r.content) !== t.content && (e.prevFatigableCandidate = t, e.lastWinnerTime = new Date().getTime())), null == (n = t.onAdded) || n.call(t), e
   },
-  I = (e, t) => (e.candidates.set(t.content, t), e),
+  S = (e, t) => (e.candidates.set(t.content, t), e),
   T = (e, t) => (e.candidates.delete(t.content), e),
-  C = (e, t) => S(v(e, e.shownFatigableCandidate), t),
+  C = (e, t) => I(A(e, e.shownFatigableCandidate), t),
   N = e => null != e.prevFatigableCandidate ? e.candidates.get(e.prevFatigableCandidate.content) : true,
   R = e => {
     let t = [...e.candidates.keys()];
@@ -105,8 +105,8 @@ let m = new(require("./863620.js")).u,
     let t = new Date().getTime() - e.lastWinnerTime > g;
     return w(e) && !t ? (m.unschedule(), C(e, N(e))) : (null != e.shownFatigableCandidate && !t || m.scheduled() || D(e) || m.schedule(() => {
       (0, a.r)(() => {
-        y.setState(e => {
-          let t = A(e);
+        b.setState(e => {
+          let t = v(e);
           return C(t, R(t))
         })
       })
@@ -119,35 +119,35 @@ let m = new(require("./863620.js")).u,
   x = e => {
     let t = d.C.has(e.content);
     (0, a.r)(() => {
-      y.setState(n => {
-        let r = A(n);
-        return O ? r : t ? S(r, e) : P(I(r, e))
+      b.setState(n => {
+        let r = v(n);
+        return O ? r : t ? I(r, e) : P(S(r, e))
       })
     })
   },
   L = (e, t) => {
     (0, a.r)(() => {
-      y.setState(n => {
-        let r = A(n);
-        return t ? P(v(T(r, e), e)) : v(T(r, e), e)
+      b.setState(n => {
+        let r = v(n);
+        return t ? P(A(T(r, e), e)) : A(T(r, e), e)
       })
     })
   },
-  j = e => y.getState().currentlyShown.has(e),
-  M = e => y(t => t.currentlyShown.has(e)),
+  j = e => b.getState().currentlyShown.has(e),
+  M = e => b(t => t.currentlyShown.has(e)),
   k = () => {
-    let e = [...y.getState().currentlyShown].filter(e => !d.C.has(e)).length;
-    return [y.getState().currentlyShown.size, e]
+    let e = [...b.getState().currentlyShown].filter(e => !d.C.has(e)).length;
+    return [b.getState().currentlyShown.size, e]
   },
   U = () => {
     (0, a.r)(() => {
-      y.setState(() => {
-        let e = b();
+      b.setState(() => {
+        let e = y();
         return e.postConnectionOpen = true, e
       })
     }), m.unschedule()
   },
-  G = () => y.getState().postConnectionOpen;
+  G = () => b.getState().postConnectionOpen;
 class V extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(l.A, u.A), this.syncWith([l.A, u.A], () => this.setHasRequiredAction())
@@ -158,7 +158,7 @@ class V extends(r = Chunk311907.Ay.Store) {
 }
 
 function F(e, t) {
-  return y(e, t)
+  return b(e, t)
 }
 f(V, "displayName", "DismissibleContentShownStateStore"), new V(Chunk73153.h, {
   CONNECTION_OPEN: () => U(),

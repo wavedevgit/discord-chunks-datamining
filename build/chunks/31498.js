@@ -166,19 +166,19 @@ class g extends Chunk143236.EventEmitter {
     else if (null == m || null != g && m.type !== g.type) return void this.clearQuery();
     let {
       type: E,
-      typeInfo: b,
-      query: y
-    } = m, O = f || d && ((null == (t = this.state.query) ? true : t.queryText) !== y || (null == (n = this.state.query) ? true : n.typeInfo) !== b), A = l.ML.getSetting();
-    p.allowStickers = p.allowStickers ? A : p.allowStickers;
-    let v = l.eK.getSetting();
-    p.allowSoundmoji = p.allowSoundmoji ? v : p.allowSoundmoji;
+      typeInfo: y,
+      query: b
+    } = m, O = f || d && ((null == (t = this.state.query) ? true : t.queryText) !== b || (null == (n = this.state.query) ? true : n.typeInfo) !== y), v = l.ML.getSetting();
+    p.allowStickers = p.allowStickers ? v : p.allowStickers;
+    let A = l.eK.getSetting();
+    p.allowSoundmoji = p.allowSoundmoji ? A : p.allowSoundmoji;
     let {
-      results: S,
-      metadata: I
-    } = b.queryResults(this.props.channel, this.props.guild, y, p, O), T = 0;
-    for (let e of Object.values(S)) Array.isArray(e) && (T += e.length);
-    let C = true === S.isLoading,
-      N = this.shouldShow(T, C, b),
+      results: I,
+      metadata: S
+    } = y.queryResults(this.props.channel, this.props.guild, b, p, O), T = 0;
+    for (let e of Object.values(I)) Array.isArray(e) && (T += e.length);
+    let C = true === I.isLoading,
+      N = this.shouldShow(T, C, y),
       R = this.state.selectedIndex;
     !N || C ? R = null : null != R && R >= T && (R = T - 1);
     let w = null != this.props.guild && o.M.getCurrentConfig({
@@ -187,12 +187,12 @@ class g extends Chunk143236.EventEmitter {
     }, {
       autoTrackExposure: true
     }).enabled;
-    N && !this.state.isVisible && (0, a.uA)(E, this.props.channel, I, w), this.setState({
+    N && !this.state.isVisible && (0, a.uA)(E, this.props.channel, S, w), this.setState({
       query: {
         type: E,
-        typeInfo: b,
-        queryText: y,
-        results: S,
+        typeInfo: y,
+        queryText: b,
+        results: I,
         resultCount: T,
         options: p,
         isLoading: C

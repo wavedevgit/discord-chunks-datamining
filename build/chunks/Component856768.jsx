@@ -56,14 +56,14 @@ function y(e, t) {
 function O(e) {
   let {
     guildId: t
-  } = e, O = (0, m.vA)(t), {
+  } = e, O = (0, b.vA)(t), {
     selectedUserIds: v,
-    clearSelection: H
-  } = (0, p.A)(t), w = v.size > 0, A = async (e, t, n, r) => {
+    clearSelection: _
+  } = (0, f.A)(t), H = v.size > 0, w = async (e, t, n, r) => {
     try {
-      let l = await d.A.banMultipleUsers(e, t, n, r);
-      (0, c.showToast)((0, c.createToast)(g.intl.string(g.t.AsCe5I), c.ToastType.SUCCESS)), f.default.track(j.HAw.BULK_MODERATION_ACTION_COMPLETED, y(x({}, (0, u.H$)(e)), {
-        action_type: b.Nj.BAN,
+      let l = await u.A.banMultipleUsers(e, t, n, r);
+      (0, c.showToast)((0, c.createToast)(g.intl.string(g.t.AsCe5I), c.ToastType.SUCCESS)), m.default.track(j.HAw.BULK_MODERATION_ACTION_COMPLETED, y(x({}, (0, d.H$)(e)), {
+        action_type: p.Nj.BAN,
         target_user_ids: [...v],
         mod_user_id: C.default.getId(),
         successful_user_ids: l.body.banned_users,
@@ -72,10 +72,10 @@ function O(e) {
     } catch (e) {
       (0, c.showToast)((0, c.createToast)(g.intl.string(g.t.mICAWY), c.ToastType.FAILURE))
     }
-    H()
-  }, D = l.useCallback(() => {
-    H()
-  }, [H]), S = (0, r.jsxs)("span", {
+    _()
+  }, A = l.useCallback(() => {
+    _()
+  }, [_]), S = (0, r.jsxs)("span", {
     className: h.zC,
     children: [(0, r.jsx)(c.nys, {
       size: "custom",
@@ -90,9 +90,9 @@ function O(e) {
       })
     }), (0, r.jsx)(c.QWc, {
       text: g.intl.string(g.t.yW6ZdE),
-      onClick: D
+      onClick: A
     })]
-  }), _ = (0, r.jsxs)("span", {
+  }), D = (0, r.jsxs)("span", {
     className: h.UD,
     children: [(0, r.jsx)(c.wI0, {
       size: "custom",
@@ -108,11 +108,11 @@ function O(e) {
   return O ? (0, r.jsx)(o.F, {
     component: "div",
     className: h.n2,
-    children: w && (0, r.jsx)(c.FQk, {
+    children: H && (0, r.jsx)(c.FQk, {
       children: (0, r.jsx)(a.A, {
         onSave: () => {
-          f.default.track(j.HAw.BULK_MODERATION_ACTION_STARTED, y(x({}, (0, u.H$)(t)), {
-            action_type: b.Nj.BAN,
+          m.default.track(j.HAw.BULK_MODERATION_ACTION_STARTED, y(x({}, (0, d.H$)(t)), {
+            action_type: p.Nj.BAN,
             target_user_ids: [...v],
             mod_user_id: C.default.getId(),
             location
@@ -124,11 +124,11 @@ function O(e) {
               guildId: t,
               canBulkBan: O,
               userIds: v,
-              onBanMultiple: A
+              onBanMultiple: w
             }))
           })
         },
-        onSaveText: _,
+        onSaveText: D,
         onSaveButtonColor: s.XD.RED,
         message: S
       })

@@ -79,7 +79,7 @@ function x(e) {
 function L(e, t, n, i, a, o) {
   return (0, r.jsx)("img", {
     alt: "",
-    src: (null == t ? true : t.guildMemberAvatar) != null && null != n ? (0, y.s7)({
+    src: (null == t ? true : t.guildMemberAvatar) != null && null != n ? (0, b.s7)({
       guildId: n,
       userId: e.id,
       avatar: t.guildMemberAvatar
@@ -107,7 +107,7 @@ function j(e, t, n) {
     onPopoutRequestClose: m
   } = e, {
     analyticsLocations: E
-  } = (0, d.Ay)(u.A.AVATAR), b = i.useRef(null);
+  } = (0, d.Ay)(u.A.AVATAR), y = i.useRef(null);
   if (o || a.state !== g.a.LOADED || l) return n === N.lAJ.CONTEXT_MENU_COMMAND ? (0, r.jsx)("div", {
     className: w.Do,
     children: (0, r.jsx)(c.oyn, {
@@ -133,20 +133,20 @@ function j(e, t, n) {
     height: C.eJ,
     size: "custom"
   });
-  let y = () => L(a.message.author, f, s.guild_id, _, h, b);
+  let b = () => L(a.message.author, f, s.guild_id, _, h, y);
   return null != t && null != p ? (0, r.jsx)(d.f5, {
     value: E,
     children: (0, r.jsx)(c.YNO, {
-      targetElementRef: b,
+      targetElementRef: y,
       renderPopout: t,
       shouldShow: p,
       position: "right",
       onRequestClose: m,
-      children: y
+      children: b
     })
   }) : (0, r.jsx)(d.f5, {
     value: E,
-    children: y()
+    children: b()
   })
 }
 
@@ -160,7 +160,7 @@ function M(e, t) {
     onContextMenu: l,
     onPopoutRequestClose: c
   } = e, u = (null == a ? true : a.state) === g.a.LOADED ? a.message : true;
-  return null == u || u.type === N.lAJ.USER_JOIN || u.type === N.lAJ.ROLE_SUBSCRIPTION_PURCHASE || u.type === N.lAJ.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION || u.type === N.lAJ.GUILD_DEADCHAT_REVIVE_PROMPT || u.type === N.lAJ.GUILD_GAMING_STATS_PROMPT || u.type === N.lAJ.POLL_RESULT ? null : (0, r.jsx)(I.A, {
+  return null == u || u.type === N.lAJ.USER_JOIN || u.type === N.lAJ.ROLE_SUBSCRIPTION_PURCHASE || u.type === N.lAJ.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION || u.type === N.lAJ.GUILD_DEADCHAT_REVIVE_PROMPT || u.type === N.lAJ.GUILD_GAMING_STATS_PROMPT || u.type === N.lAJ.POLL_RESULT ? null : (0, r.jsx)(S.A, {
     message: u,
     channel: i,
     compact: true,
@@ -229,19 +229,19 @@ function k(e, t, n) {
         })
       });
     default:
-      (0, A.xb)(a)
+      (0, v.xb)(a)
   }
 }
 
 function U(e, t, n, i, a, o) {
   let l, u, d, g, E = (0, _.A)(e),
     {
-      trailingIconClass: y,
+      trailingIconClass: b,
       leadingIconClass: O,
-      iconSize: A
+      iconSize: v
     } = o,
-    v = null == t || "" === t || Array.isArray(t) && 0 === t.length,
-    I = (0, b.o6)(E).length > 0,
+    A = null == t || "" === t || Array.isArray(t) && 0 === t.length,
+    S = (0, y.o6)(E).length > 0,
     T = null != E.interaction,
     C = E.hasFlag(N.pr7.IS_VOICE_MESSAGE),
     D = E.isPoll(),
@@ -249,8 +249,8 @@ function U(e, t, n, i, a, o) {
   if ((0, p.A)(e) && (g = (0, r.jsx)(h.A, {
       size: "custom",
       className: O,
-      width: A,
-      height: A
+      width: v,
+      height: v
     })), n) l = R.intl.string(R.t.XAkOo2);
   else if (i) l = R.intl.string(R.t["G7p6v/"]);
   else if (E.type === N.lAJ.CHANNEL_PINNED_MESSAGE) l = R.intl.string(R.t.sCfDDl);
@@ -258,50 +258,50 @@ function U(e, t, n, i, a, o) {
     message: E,
     rendered: t
   });
-  else if (v)
+  else if (A)
     if (D) {
       var L, j;
       u = (0, r.jsx)("div", {
         className: s()(w.Io, P.PT),
         children: null == E || null == (j = E.poll) || null == (L = j.question) ? true : L.text
       })
-    } else x ? l = (0, m.Il)(E) : I ? l = R.intl.string(R.t.kHdYCW) : T ? l = R.intl.string(R.t["E+6SSY"]) : C ? l = R.intl.string(R.t.XC3A52) : E.hasFlag(N.pr7.IS_COMPONENTS_V2) ? l = R.intl.string(R.t.Xxat6S) : (l = R.intl.string(R.t["6hGo0c"]), d = (0, r.jsx)(c.xfq, {
+    } else x ? l = (0, m.Il)(E) : S ? l = R.intl.string(R.t.kHdYCW) : T ? l = R.intl.string(R.t["E+6SSY"]) : C ? l = R.intl.string(R.t.XC3A52) : E.hasFlag(N.pr7.IS_COMPONENTS_V2) ? l = R.intl.string(R.t.Xxat6S) : (l = R.intl.string(R.t["6hGo0c"]), d = (0, r.jsx)(c.xfq, {
       size: "custom",
       color: "currentColor",
-      className: y,
-      width: A,
-      height: A
+      className: b,
+      width: v,
+      height: v
     }));
-  else u = (0, r.jsx)(S.Ay, {
+  else u = (0, r.jsx)(I.Ay, {
     message: E,
     content: t,
     className: a,
     compact: true
   });
-  return I ? d = (0, r.jsx)(c.s2T, {
+  return S ? d = (0, r.jsx)(c.s2T, {
     size: "custom",
     color: "currentColor",
-    className: y,
-    width: A,
-    height: A
+    className: b,
+    width: v,
+    height: v
   }) : T ? d = (0, r.jsx)(c.kC9, {
     size: "custom",
     color: "currentColor",
-    className: y,
-    width: A,
-    height: A
+    className: b,
+    width: v,
+    height: v
   }) : C ? d = (0, r.jsx)(c.cNw, {
     size: "custom",
     color: "currentColor",
-    className: y,
-    width: 19 / 24 * A,
-    height: A
+    className: b,
+    width: 19 / 24 * v,
+    height: v
   }) : (E.attachments.length > 0 || E.embeds.length > 0) && !x && (d = (0, r.jsx)(c.xfq, {
     size: "custom",
     color: "currentColor",
-    className: y,
-    width: A,
-    height: A
+    className: b,
+    width: v,
+    height: v
   })), {
     contentPlaceholder: l,
     renderedContent: u,
@@ -323,18 +323,18 @@ function G(e) {
     [_, h] = i.useState(false),
     m = i.useMemo(() => null != d && u.state === g.a.LOADED ? e => d(e, u.message) : true, [u, d]),
     E = i.useCallback(() => h(e => !e), []),
-    b = j(e, m, o.type),
-    y = M(e, m),
-    A = k(e, _, E),
-    S = i.useMemo(() => e.compact ? (0, T.A)((0, O.i$)(l()(), "LT")) : null, [e.compact]);
+    y = j(e, m, o.type),
+    b = M(e, m),
+    v = k(e, _, E),
+    I = i.useMemo(() => e.compact ? (0, T.A)((0, O.i$)(l()(), "LT")) : null, [e.compact]);
   null != n && null != a && (t = R.intl.formatToPlainString(R.t.RhbQ2K, {
     author: null == a ? true : a.nick,
     repliedAuthor: null == n ? true : n.nick
   }));
-  let I = o.type === N.lAJ.CONTEXT_MENU_COMMAND;
+  let S = o.type === N.lAJ.CONTEXT_MENU_COMMAND;
   return (0, r.jsxs)("div", {
-    id: (0, v.nS)(o),
-    className: s()(w.JZ, S, I ? w.C4 : {
+    id: (0, A.nS)(o),
+    className: s()(w.JZ, I, S ? w.C4 : {
       [w.NB]: !f && p
     }),
     "aria-label": t,
@@ -347,6 +347,6 @@ function G(e) {
       onClick: e.onClickReply,
       onMouseEnter: E,
       onMouseLeave: E
-    }), b, y, A]
+    }), y, b, v]
   })
 }

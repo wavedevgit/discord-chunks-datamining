@@ -2,7 +2,7 @@
 /** chunk id: 533350, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => O
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -23,14 +23,14 @@ var Chunk158954 = require("./158954.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk574436 = require("./574436.js");
-let y = function() {
+let O = function() {
   let {
     analyticsLocations: e
-  } = (0, c.Ay)(a.A.GUILD_SETTINGS_ENGAGEMENT_PAGE), t = (0, l.bG)([u.A], () => u.A.getProps().guild, []), n = (0, l.bG)([d.A], () => null != t && d.A.can(h.xBc.MANAGE_GUILD, t)), y = (0, o.T)(t), v = (0, s.vC)(null != t ? t : true);
-  return null == t ? null : (0, r.jsx)(c.f5, {
+  } = (0, o.Ay)(a.A.GUILD_SETTINGS_ENGAGEMENT_PAGE), t = (0, l.bG)([u.A], () => u.A.getProps().guild, []), n = (0, l.bG)([d.A], () => null != t && d.A.can(x.xBc.MANAGE_GUILD, t)), O = (0, c.T)(t), v = (0, s.vC)(null != t ? t : true);
+  return null == t ? null : (0, r.jsx)(o.f5, {
     value: e,
     children: (0, r.jsxs)("main", {
-      className: O.kL,
+      className: _.kL,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(i.DZT, {
           variant: "heading-lg/semibold",
@@ -40,42 +40,42 @@ let y = function() {
           variant: "text-sm/medium",
           color: "text-default",
           tag: "p",
-          className: O.h_,
+          className: _.h_,
           children: j.intl.string(j.t.XCGZFk)
         })]
       }), true === v && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(m.c, {
+        children: [(0, r.jsx)(f.c, {
           canManageGuild: n,
           features: t.features
         }), (0, r.jsx)("div", {
-          className: O.yF
+          className: _.yF
         })]
-      }), (0, r.jsx)(p.h, {
+      }), (0, r.jsx)(b.h, {
         canManageGuild: n,
         guild: t
-      }), true !== y && (0, r.jsxs)(r.Fragment, {
+      }), true !== O && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: O.yF
-        }), (0, r.jsx)(f.l, {
-          isInventoryFeedEnabled: y,
+          className: _.yF
+        }), (0, r.jsx)(g.l, {
+          isInventoryFeedEnabled: O,
           canManageGuild: n,
           features: t.features
         })]
       }), (0, r.jsx)("div", {
-        className: O.yF
-      }), (0, r.jsx)(g.P, {
+        className: _.yF
+      }), (0, r.jsx)(m.P, {
         guildId: t.id,
         defaultSettings: t.defaultMessageNotifications,
         canManageGuild: n
       }), (0, r.jsx)("div", {
-        className: O.yF
-      }), (0, r.jsx)(b.R, {
+        className: _.yF
+      }), (0, r.jsx)(p.R, {
         canManageGuild: n,
         guild: t
       }), true === n && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: O.yF
-        }), (0, r.jsx)(x.E, {
+          className: _.yF
+        }), (0, r.jsx)(h.E, {
           guildId: t.id
         })]
       })]

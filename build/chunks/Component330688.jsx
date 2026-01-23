@@ -2,8 +2,8 @@
 /** chunk id: 330688, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => S,
-  TU: () => v,
+  Ay: () => I,
+  TU: () => A,
   hH: () => O
 });
 var Chunk627968 = require("./627968.js"),
@@ -31,7 +31,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,13 +43,13 @@ function b(e) {
   }
   return e
 }
-let y = !Chunk723702.isPlatformEmbedded;
+let b = !Chunk723702.isPlatformEmbedded;
 
 function O(e) {
   return e >= 1e3 ? (e /= 1e3, "".concat(e.toFixed(2), "s")) : "".concat(e.toFixed(0), "\xa0ms")
 }
 
-function A(e) {
+function v(e) {
   let t, {
       inputMode: n
     } = e,
@@ -59,7 +59,7 @@ function A(e) {
       pttLatchingEnabled: E
     } = (0, a.cf)([u.A], () => u.A.getModeOptions()),
     {
-      enableLatching: b
+      enableLatching: y
     } = (0, f.y)({
       location: "PTTTools"
     });
@@ -97,7 +97,7 @@ function A(e) {
         onValueRender: O,
         maxValue: m.IjB
       })]
-    }), b && (0, r.jsx)(s.dOG, {
+    }), y && (0, r.jsx)(s.dOG, {
       label: g.intl.string(g.t.EGn1eN),
       description: g.intl.string(g.t.iT257i),
       checked: null != E && E,
@@ -108,12 +108,12 @@ function A(e) {
   })
 }
 
-function v(e, t) {
-  e === m.TBI.PUSH_TO_TALK && y && (0, s.mMO)(async () => {
+function A(e, t) {
+  e === m.TBI.PUSH_TO_TALK && b && (0, s.mMO)(async () => {
     let {
       default: e
     } = await n.e("10919").then(n.bind(n, 556506));
-    return t => (0, r.jsx)(e, b({
+    return t => (0, r.jsx)(e, y({
       title: g.intl.string(g.t.Kdt0Gb),
       confirmText: g.intl.string(g.t["1WjMbC"]),
       cancelText: g.intl.string(g.t.BddRzS),
@@ -125,7 +125,7 @@ function v(e, t) {
   })
 }
 
-function S() {
+function I() {
   let {
     analyticsLocations: e
   } = (0, c.Ay)(), t = (0, a.bG)([u.A], () => u.A.getMode()), n = [{
@@ -133,12 +133,12 @@ function S() {
     name: g.intl.string(g.t.cHCEOJ)
   }, {
     value: m.TBI.PUSH_TO_TALK,
-    name: y ? g.intl.string(g.t["1AINrB"]) : g.intl.string(g.t.Q8gkVL)
+    name: b ? g.intl.string(g.t["1AINrB"]) : g.intl.string(g.t.Q8gkVL)
   }], o = i.useCallback(t => {
     let {
       value: n
     } = t;
-    v(n, e)
+    A(n, e)
   }, [e]);
   return (0, r.jsxs)(s.BJc, {
     gap: 20,
@@ -149,7 +149,7 @@ function S() {
       }),
       options: n,
       value: t
-    }), t === m.TBI.PUSH_TO_TALK && (0, r.jsx)(A, {
+    }), t === m.TBI.PUSH_TO_TALK && (0, r.jsx)(v, {
       inputMode: t
     })]
   })

@@ -26,15 +26,15 @@ let m = e => {
       }),
       [s, m] = (0, r.useState)(false),
       [g, E] = (0, r.useState)(false),
-      [b, y] = (0, r.useState)(false),
+      [y, b] = (0, r.useState)(false),
       O = (0, r.useRef)(true);
     (0, r.useEffect)(() => (O.current = true, () => {
       O.current = false
     }), []);
-    let A = (0, r.useCallback)(() => null != n.modalGlowEntry && null != n.modalGlowIdle && null != n.modalGlowExit, [n.modalGlowEntry, n.modalGlowIdle, n.modalGlowExit]),
-      v = (0, r.useCallback)(async () => {
-        if (!A() && !b) {
-          y(true), E(false), m(false);
+    let v = (0, r.useCallback)(() => null != n.modalGlowEntry && null != n.modalGlowIdle && null != n.modalGlowExit, [n.modalGlowEntry, n.modalGlowIdle, n.modalGlowExit]),
+      A = (0, r.useCallback)(async () => {
+        if (!v() && !y) {
+          b(true), E(false), m(false);
           try {
             let e = Date.now(),
               [n, r, s] = await Promise.all([a.Bo.get({
@@ -60,19 +60,19 @@ let m = e => {
           } catch (e) {
             O.current && E(true)
           } finally {
-            O.current && y(false)
+            O.current && b(false)
           }
         }
-      }, [A, b, t]);
+      }, [v, y, t]);
     return (0, r.useEffect)(() => {
-      e && v()
-    }, [e, v]), (0, r.useEffect)(() => () => {
+      e && A()
+    }, [e, A]), (0, r.useEffect)(() => () => {
       null != n.modalGlowEntry && window.URL.revokeObjectURL(n.modalGlowEntry), null != n.modalGlowIdle && window.URL.revokeObjectURL(n.modalGlowIdle), null != n.modalGlowExit && window.URL.revokeObjectURL(n.modalGlowExit)
     }, [n.modalGlowEntry, n.modalGlowIdle, n.modalGlowExit]), {
       mediaUrls: n,
       isSuccess: s,
       isFailure: g,
-      isLoading: b
+      isLoading: y
     }
   },
   g = e => {

@@ -18,10 +18,10 @@ var Chunk954055 = require("./954055.js"),
   Chunk70986 = require("./70986.js"),
   Chunk1214 = require("./1214.js"),
   Chunk631735 = require("./631735.js"),
-  y = Chunk868361.isOptionKeyCommand,
+  b = Chunk868361.isOptionKeyCommand,
   O = Chunk573750.isBrowser("Chrome");
 
-function A(e, t, n) {
+function v(e, t, n) {
   switch (e) {
     case "redo":
       return i.redo(t);
@@ -82,19 +82,19 @@ module.exports = function(e, t) {
       if (o("onLeftArrow")) return;
       break;
     case s.SPACE:
-      O && y(t) && t.preventDefault()
+      O && b(t) && t.preventDefault()
   }
   var l = e.props.keyBindingFn(t);
   if (null == l || "" === l) {
-    if (n === s.SPACE && O && y(t)) {
+    if (n === s.SPACE && O && b(t)) {
       var u = r.replaceText(a.getCurrentContent(), a.getSelection(), "\xa0");
       e.update(i.push(a, u, "insert-characters"))
     }
     return
   }
-  if ("undo" === l) return void b(t, a, e.update);
+  if ("undo" === l) return void y(t, a, e.update);
   if (t.preventDefault(), !(e.props.handleKeyCommand && c(e.props.handleKeyCommand(l, a, t.timeStamp)))) {
-    var d = A(l, a, t);
+    var d = v(l, a, t);
     d !== a && e.update(d)
   }
 }

@@ -34,8 +34,8 @@ function d(e) {
   let {
     channel: d,
     application: u,
-    showApplicationImage: b
-  } = e, f = function(e, t) {
+    showApplicationImage: p
+  } = e, m = function(e, t) {
     if (null == e) return {};
     var n, i, r, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -51,7 +51,7 @@ function d(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) i = n[r], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (l[i] = e[i]);
     return l
-  }(e, ["channel", "application", "showApplicationImage"]), p = (0, a.N)(d), m = r.useCallback(() => (0, l.mMO)(async () => {
+  }(e, ["channel", "application", "showApplicationImage"]), g = (0, a.N)(d), b = r.useCallback(() => (0, l.mMO)(async () => {
     let {
       default: e
     } = await n.e("73380").then(n.bind(n, 106895));
@@ -71,12 +71,12 @@ function d(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
       }), n))
     }
-  }), [u, d]), g = b ? null != (t = u.getIconURL(48)) ? t : s.vI["0"] : true;
+  }), [u, d]), f = p ? null != (t = u.getIconURL(48)) ? t : s.vI["0"] : true;
   return (0, i.jsx)(o.A, c({
-    imageSrc: g,
-    onButtonClick: m,
-    details: null != p ? [{
-      text: p
+    imageSrc: f,
+    onButtonClick: b,
+    details: null != g ? [{
+      text: g
     }] : true
-  }, f))
+  }, m))
 }

@@ -17,22 +17,22 @@ function u(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let b = {},
-  f = {},
-  p = false;
+let p = {},
+  m = {},
+  g = false;
 
-function m() {
-  i = true, b = {}, f = {}, r = true, l = true, p = false
+function b() {
+  i = true, p = {}, m = {}, r = true, l = true, g = false
 }
-class g extends(a = Chunk311907.Ay.Store) {
+class f extends(a = Chunk311907.Ay.Store) {
   getApplicationPermissions() {
-    return b
+    return p
   }
   getCommands() {
-    return f
+    return m
   }
   getCommand(e) {
-    return null == f ? true : f[e]
+    return null == m ? true : m[e]
   }
   getEditedApplication() {
     return r
@@ -41,28 +41,28 @@ class g extends(a = Chunk311907.Ay.Store) {
     return l
   }
   isUnavailable() {
-    return p
+    return g
   }
   getApplicationId() {
     return i
   }
 }
-u(g, "displayName", "IntegrationPermissionStore");
-let h = new g(Chunk73153.h, {
-  LOGOUT: m,
+u(f, "displayName", "IntegrationPermissionStore");
+let h = new f(Chunk73153.h, {
+  LOGOUT: b,
   INTEGRATION_PERMISSION_SETTINGS_APPLICATION_PERMISSIONS_FETCH_FAILURE: function(e) {
     let {
       applicationId: t
     } = e;
     if (t !== i) returnfalse;
-    p = true
+    g = true
   },
-  INTEGRATION_PERMISSION_SETTINGS_CLEAR: m,
+  INTEGRATION_PERMISSION_SETTINGS_CLEAR: b,
   INTEGRATION_PERMISSION_SETTINGS_INIT: function(e) {
     let {
       applicationId: t
     } = e;
-    m(), i = t
+    b(), i = t
   },
   INTEGRATION_PERMISSION_SETTINGS_COMMAND_UPDATE: function(e) {
     var t, n;
@@ -73,12 +73,12 @@ let h = new g(Chunk73153.h, {
     } = e;
     if (r !== i) returnfalse;
     if (l === i) {
-      b = (0, d.UZ)(a);
+      p = (0, d.UZ)(a);
       return
     }
-    let s = f[l];
+    let s = m[l];
     if (null == s) returnfalse;
-    f[l] = (t = function(e) {
+    m[l] = (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
@@ -125,7 +125,7 @@ let h = new g(Chunk73153.h, {
       applicationId: t
     } = e;
     if (t !== i) returnfalse;
-    p = true
+    g = true
   },
   INTEGRATION_PERMISSION_SETTINGS_COMMANDS_FETCH_SUCCESS: function(e) {
     let {
@@ -145,6 +145,6 @@ let h = new g(Chunk73153.h, {
           }),
           n = l[e.id];
         null != n && (t.permissions = (0, d.UZ)(n)), a[e.id] = t
-      } f = a
+      } m = a
   }
 })

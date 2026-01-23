@@ -18,16 +18,16 @@ let o = e => {
     children: [(0, l.jsx)(r.Heading, {
       className: s.wx,
       variant: "heading-sm/semibold",
-      children: i.intl.string(i.t["0ox7Hq"])
+      children: a.intl.string(a.t["0ox7Hq"])
     }), (0, l.jsx)("div", {
       className: s.bo,
       children: (0, l.jsxs)("div", {
         className: s.OA,
         children: [(0, l.jsx)("div", {
           className: s.$f,
-          children: (0, l.jsx)(a.A, {
+          children: (0, l.jsx)(i.A, {
             guild: t,
-            size: a.A.Sizes.LARGE
+            size: i.A.Sizes.LARGE
           })
         }), (0, l.jsx)("div", {
           children: (0, l.jsx)(r.Text, {

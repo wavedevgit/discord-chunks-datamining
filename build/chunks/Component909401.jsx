@@ -22,7 +22,7 @@ function h(e) {
     messageId: t,
     transitionState: h,
     onClose: S
-  } = e, _ = (0, s.bG)([c.A], () => c.A.getChannel(l)), [f, C] = (0, u.A)(l), F = null == _ ? true : _.guild_id;
+  } = e, C = (0, s.bG)([c.A], () => c.A.getChannel(l)), [F, b] = (0, u.A)(l), f = null == C ? true : C.guild_id;
   return (0, n.jsx)(i.VoidConfirmModal, {
     header: g.intl.string(g.t.aIz1oV),
     confirmText: g.intl.string(g.t["cY+Oob"]),
@@ -33,19 +33,19 @@ function h(e) {
     onClose: S,
     children: (0, n.jsx)(i.Text, {
       variant: "text-md/normal",
-      className: b.YK,
-      children: C ? (0, n.jsx)(i.y$y, {}) : null != f && null != f.guildsFollowing && f.guildsFollowing > 0 ? (0, n.jsxs)(n.Fragment, {
+      className: _.YK,
+      children: b ? (0, n.jsx)(i.y$y, {}) : null != F && null != F.guildsFollowing && F.guildsFollowing > 0 ? (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(i.Text, {
-          className: b.YK,
+          className: _.YK,
           variant: "text-sm/normal",
           children: g.intl.format(g.t.GCGrNP, {
-            numGuildsFollowing: f.guildsFollowing
+            numGuildsFollowing: F.guildsFollowing
           })
         }), (0, n.jsx)(i.Text, {
           variant: "text-sm/normal",
           children: g.intl.format(g.t.IMhGZz, {
             onClick: () => {
-              null != F && null != S && (S(), a.A.open(F, d.BEX.ANALYTICS))
+              null != f && null != S && (S(), a.A.open(f, d.BEX.ANALYTICS))
             }
           })
         })]

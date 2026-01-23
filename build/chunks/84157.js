@@ -38,19 +38,19 @@ function u(e) {
 require.d(exports, {
   $4: () => C,
   CP: () => T,
-  L9: () => I,
+  L9: () => S,
   Ll: () => o,
   Lv: () => _,
   Ng: () => u,
-  Tc: () => A,
+  Tc: () => v,
   Tf: () => m,
   ZU: () => f,
   _m: () => w,
   ep: () => s,
-  eu: () => S,
+  eu: () => I,
   gJ: () => O,
   mq: () => i,
-  sQ: () => y,
+  sQ: () => b,
   sb: () => c,
   v9: () => R,
   vq: () => l,
@@ -64,7 +64,7 @@ function f(e) {
     overflowX: n,
     overflowY: r,
     display: i
-  } = I(e);
+  } = S(e);
   return /auto|scroll|overlay|hidden|clip/.test(t + r + n) && !d.has(i)
 }
 let p = new Set(["table", "td", "th"]);
@@ -85,34 +85,34 @@ function m(e) {
 }
 let g = ["transform", "translate", "scale", "rotate", "perspective"],
   E = ["transform", "translate", "scale", "rotate", "perspective", "filter"],
-  b = ["paint", "layout", "strict", "content"];
+  y = ["paint", "layout", "strict", "content"];
 
-function y(e) {
-  let t = A(),
-    n = l(e) ? I(e) : e;
-  return g.some(e => !!n[e] && "none" !== n[e]) || !!n.containerType && "normal" !== n.containerType || !t && !!n.backdropFilter && "none" !== n.backdropFilter || !t && !!n.filter && "none" !== n.filter || E.some(e => (n.willChange || "").includes(e)) || b.some(e => (n.contain || "").includes(e))
+function b(e) {
+  let t = v(),
+    n = l(e) ? S(e) : e;
+  return g.some(e => !!n[e] && "none" !== n[e]) || !!n.containerType && "normal" !== n.containerType || !t && !!n.backdropFilter && "none" !== n.backdropFilter || !t && !!n.filter && "none" !== n.filter || E.some(e => (n.willChange || "").includes(e)) || y.some(e => (n.contain || "").includes(e))
 }
 
 function O(e) {
   let t = C(e);
-  for (; c(t) && !S(t);) {
-    if (y(t)) return t;
+  for (; c(t) && !I(t);) {
+    if (b(t)) return t;
     if (m(t)) break;
     t = C(t)
   }
   return null
 }
 
-function A() {
+function v() {
   return !("u" < typeof CSS) && !!CSS.supports && CSS.supports("-webkit-backdrop-filter", "none")
 }
-let v = new Set(["html", "body", "#document"]);
-
-function S(e) {
-  return v.has(i(e))
-}
+let A = new Set(["html", "body", "#document"]);
 
 function I(e) {
+  return A.has(i(e))
+}
+
+function S(e) {
   return a(e).getComputedStyle(e)
 }
 
@@ -134,7 +134,7 @@ function C(e) {
 
 function N(e) {
   let t = C(e);
-  return S(t) ? e.ownerDocument ? e.ownerDocument.body : e.body : c(t) && f(t) ? t : N(t)
+  return I(t) ? e.ownerDocument ? e.ownerDocument.body : e.body : c(t) && f(t) ? t : N(t)
 }
 
 function R(e, t, n) {

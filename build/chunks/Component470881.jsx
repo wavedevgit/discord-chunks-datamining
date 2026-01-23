@@ -16,22 +16,22 @@ var Chunk681154 = require("./681154.js"),
 function d(e) {
   let {
     item: t
-  } = e, n = "contentInventory" === t.data.kind ? t.data.content : null, d = null == n ? true : n.extra, p = null == n ? true : n.author_id, f = null == n ? true : n.content_type, h = (null == d ? true : d.type) === "played_game_extra" || (null == d ? true : d.type) === "launched_activity_extra" ? d.application_id : true, A = (0, s.h)(h), g = (0, l.bG)([o.default], () => null != p ? o.default.getUser(p) : null, [p]), m = f === i.I.TOP_GAME, b = null == A ? true : A.getIconURL(240);
-  return (null == d ? true : d.type) !== "played_game_extra" || "contentInventory" !== t.data.kind || null == A || null == g || null == b ? null : (0, r.jsx)("div", {
+  } = e, n = "contentInventory" === t.data.kind ? t.data.content : null, d = null == n ? true : n.extra, p = null == n ? true : n.author_id, h = null == n ? true : n.content_type, g = (null == d ? true : d.type) === "played_game_extra" || (null == d ? true : d.type) === "launched_activity_extra" ? d.application_id : true, f = (0, s.h)(g), m = (0, l.bG)([o.default], () => null != p ? o.default.getUser(p) : null, [p]), A = h === i.I.TOP_GAME, _ = null == f ? true : f.getIconURL(240);
+  return (null == d ? true : d.type) !== "played_game_extra" || "contentInventory" !== t.data.kind || null == f || null == m || null == _ ? null : (0, r.jsx)("div", {
     className: u.kL,
     children: (0, r.jsxs)("div", {
       className: u.Nr,
       children: [(0, r.jsx)("img", {
-        src: b,
-        alt: A.name,
+        src: _,
+        alt: f.name,
         className: u.Gt
       }), (0, r.jsxs)("div", {
         className: u.Vx,
         children: [(0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
           color: "text-strong",
-          children: A.name
-        }), m && (0, r.jsx)("div", {
+          children: f.name
+        }), A && (0, r.jsx)("div", {
           className: u.qS,
           children: (0, r.jsx)(a.Text, {
             variant: "text-xs/semibold",

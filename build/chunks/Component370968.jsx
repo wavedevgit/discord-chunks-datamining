@@ -2,7 +2,7 @@
 /** chunk id: 370968, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -21,13 +21,13 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk694230 = require("./694230.js");
 let E = "https://cdn.discordapp.com/assets/22_211_SuperReactions_GTM_Hero_v09.mp4",
-  b = 32;
+  y = 32;
 
-function y(e) {
+function b(e) {
   var t, n;
   let {
     onDismiss: i
-  } = e, y = (0, s.bG)([l.A], () => l.A.useReducedMotion), O = m.intl.string(m.t.eikz43), A = (0, d.V)(), v = (0, u.O)(), S = (null == A ? true : A.subscription_trial) != null || null != v, I = {
+  } = e, b = (0, s.bG)([l.A], () => l.A.useReducedMotion), O = m.intl.string(m.t.eikz43), v = (0, d.V)(), A = (0, u.O)(), I = (null == v ? true : v.subscription_trial) != null || null != A, S = {
     object: _.ZSU.BUTTON_CTA,
     section: _.JJy.SUPER_REACTION_PICKER
   };
@@ -47,21 +47,21 @@ function y(e) {
         className: g.jo,
         children: (0, r.jsx)(c.A, {
           className: a()(g.vK, {
-            [g.Vk]: S
+            [g.Vk]: I
           }),
           src: E,
           loop: true,
-          autoPlay: !y,
+          autoPlay: !b,
           muted: true,
           controls: true
         })
-      }), S ? (0, r.jsx)(p.Ay, {
+      }), I ? (0, r.jsx)(p.Ay, {
         type: h.e.BURST_REACTION_QUICK_ACTION_UPSELL,
-        subscriptionTier: null != (t = null == A || null == (n = A.subscription_trial) ? true : n.sku_id) ? t : h.pe.TIER_2,
+        subscriptionTier: null != (t = null == v || null == (n = v.subscription_trial) ? true : n.sku_id) ? t : h.pe.TIER_2,
         headingText: m.intl.string(m.t.Wfl5zp),
-        analyticsLocationObject: I,
-        discountOffer: v,
-        trialOffer: A,
+        analyticsLocationObject: S,
+        discountOffer: A,
+        trialOffer: v,
         children: O
       }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
@@ -70,8 +70,8 @@ function y(e) {
             size: "custom",
             color: "currentColor",
             className: g.ax,
-            width: b,
-            height: b
+            width: y,
+            height: y
           }), (0, r.jsx)(o.Heading, {
             className: g.TK,
             variant: "heading-xl/bold",

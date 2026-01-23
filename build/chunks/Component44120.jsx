@@ -30,7 +30,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,32 +55,32 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = v(e, t), Object.getOwnPropertySymbols)
+  if (a = A(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function v(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let S = "payment-modal",
-  I = "gift-payment-modal",
+let I = "payment-modal",
+  S = "gift-payment-modal",
   T = new Set([Chunk166532.pn.REVIEW, Chunk166532.pn.CONFIRM, Chunk166532.pn.GIFT_CUSTOMIZATION]);
 
 function C(e) {
@@ -89,8 +89,8 @@ function C(e) {
       analyticsLocations: _,
       analyticsObject: m,
       isGift: E = false,
-      giftMessage: y,
-      giftingOrigin: v,
+      giftMessage: b,
+      giftingOrigin: A,
       giftRecipient: C,
       onClose: w,
       onComplete: P,
@@ -101,7 +101,7 @@ function C(e) {
     j = e => {
       t = e
     },
-    M = E ? I : S,
+    M = E ? S : I,
     k = f.default.getCurrentUser();
   if (!(null == k ? true : k.verified)) return void(0, a.mMO)(async () => {
     let {
@@ -110,8 +110,8 @@ function C(e) {
     return t => {
       let {
         onClose: n
-      } = t, i = A(t, ["onClose"]);
-      return (0, r.jsx)(e, O(b({}, i), {
+      } = t, i = v(t, ["onClose"]);
+      return (0, r.jsx)(e, O(y({}, i), {
         onClose: () => {
           n(), null == w || w(false)
         }
@@ -149,8 +149,8 @@ function C(e) {
     onStepChange: j,
     modalKey: M,
     isGift: E,
-    giftMessage: y,
-    giftingOrigin: v,
+    giftMessage: b,
+    giftingOrigin: A,
     giftRecipient: C,
     onClose: w,
     onCloseCallback: G,
@@ -219,8 +219,8 @@ let N = e => {
       let {
         onClose: a,
         returnRef: o
-      } = e, p = A(e, ["onClose", "returnRef"]);
-      return (0, r.jsx)(m.Ay, O(b({}, p), {
+      } = e, p = v(e, ["onClose", "returnRef"]);
+      return (0, r.jsx)(m.Ay, O(y({}, p), {
         loadId: t,
         skuId: n,
         isGift: l,

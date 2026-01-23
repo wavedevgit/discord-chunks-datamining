@@ -38,13 +38,13 @@ function m(e) {
 }
 let g = [],
   E = [],
-  b = null,
   y = null,
+  b = null,
   O = null,
-  A = false,
   v = false,
-  S = Chunk652215.XlH.CLOSED,
-  I = {},
+  A = false,
+  I = Chunk652215.XlH.CLOSED,
+  S = {},
   T = false,
   C = null;
 
@@ -55,7 +55,7 @@ function N(e) {
   if (t !== _.BEX.INTEGRATIONS) returnfalse;
   if (null == r) {
     let e = p.A.getGuildId();
-    null != e && (u.A.fetchForGuild(e), A = true), w(false)
+    null != e && (u.A.fetchForGuild(e), v = true), w(false)
   }
 }
 
@@ -70,32 +70,32 @@ function R(e) {
 function w(e) {
   if (null != (r = p.A.getProps().guild) && d.A.can(_.xBc.MANAGE_GUILD, r)) {
     let e = p.A.getProps().integrations;
-    null == e && (v = true), g = null != e ? e : []
+    null == e && (A = true), g = null != e ? e : []
   } else g = [];
-  if (E = null != r && d.A.can(_.xBc.MANAGE_WEBHOOKS, r) ? f.A.getWebhooksForGuild(r.id) : [], !e && null != y) {
-    let e = z(y.id);
-    null != e && (y = e)
+  if (E = null != r && d.A.can(_.xBc.MANAGE_WEBHOOKS, r) ? f.A.getWebhooksForGuild(r.id) : [], !e && null != b) {
+    let e = z(b.id);
+    null != e && (b = e)
   }
   if (null != O) {
     let e = q(O.id);
     null != e && (O = e)
   }
-  b = null, S = _.XlH.OPEN, I = {}, T = false
+  y = null, I = _.XlH.OPEN, S = {}, T = false
 }
 
 function P() {
-  r = null, g = [], E = [], b = null, y = null, O = null, S = _.XlH.CLOSED, T = false
+  r = null, g = [], E = [], y = null, b = null, O = null, I = _.XlH.CLOSED, T = false
 }
 let D = o().debounce(() => {
-  T && (null != y ? o().isEqual(y, z(y.id)) && (T = false) : null != O && o().isEqual(O, q(O.id)) && (T = false), T || Z.emitChange())
+  T && (null != b ? o().isEqual(b, z(b.id)) && (T = false) : null != O && o().isEqual(O, q(O.id)) && (T = false), T || Z.emitChange())
 }, 500);
 
 function x(e) {
   let {
     settings: t
   } = e;
-  if (null == y) returnfalse;
-  y = m({}, y), null != t.enableEmoticons && y.enable_emoticons !== t.enableEmoticons && (y.enable_emoticons = t.enableEmoticons, T = true), null != t.expireBehavior && y.expire_behavior !== t.expireBehavior && (y.expire_behavior = t.expireBehavior, T = true), null != t.expireGracePeriod && y.expire_grace_period !== t.expireGracePeriod && (y.expire_grace_period = t.expireGracePeriod, T = true), T && D()
+  if (null == b) returnfalse;
+  b = m({}, b), null != t.enableEmoticons && b.enable_emoticons !== t.enableEmoticons && (b.enable_emoticons = t.enableEmoticons, T = true), null != t.expireBehavior && b.expire_behavior !== t.expireBehavior && (b.expire_behavior = t.expireBehavior, T = true), null != t.expireGracePeriod && b.expire_grace_period !== t.expireGracePeriod && (b.expire_grace_period = t.expireGracePeriod, T = true), T && D()
 }
 
 function L(e) {
@@ -107,13 +107,13 @@ function L(e) {
 }
 
 function j() {
-  S = _.XlH.SUBMITTING, I = {}
+  I = _.XlH.SUBMITTING, S = {}
 }
 
 function M(e) {
   var t;
-  if (S !== _.XlH.SUBMITTING) returnfalse;
-  S = _.XlH.OPEN, I = null != (t = e.errors) ? t : {}
+  if (I !== _.XlH.SUBMITTING) returnfalse;
+  I = _.XlH.OPEN, S = null != (t = e.errors) ? t : {}
 }
 
 function k(e) {
@@ -121,8 +121,8 @@ function k(e) {
     guildId: t,
     integrations: n
   } = e;
-  if (null == r || t !== r.id || S === _.XlH.SUBMITTING) returnfalse;
-  for (let e of (v = false, n))
+  if (null == r || t !== r.id || I === _.XlH.SUBMITTING) returnfalse;
+  for (let e of (A = false, n))
     if (null == g.find(t => {
         let {
           id: n
@@ -130,7 +130,7 @@ function k(e) {
         if (n === e.id) returntrue
       })) {
       var i, a;
-      g.push(e), e.type === (null == y ? true : y.type) && (null == (i = e.account) ? true : i.id) === (null == (a = y.account) ? true : a.id) && (y = e)
+      g.push(e), e.type === (null == b ? true : b.type) && (null == (i = e.account) ? true : i.id) === (null == (a = b.account) ? true : a.id) && (b = e)
     } for (let e = g.length - 1; e >= 0; e--) {
     let t = g[e],
       r = n.find(e => {
@@ -141,8 +141,8 @@ function k(e) {
       });
     if (null != r) {
       let n = m({}, t, r);
-      (null == y ? true : y.id) === n.id && (false === n.enabled ? y = null : T || (y = n)), g[e] = n
-    } else(null == y ? true : y.id) === t.id && (y = null), g.splice(e, 1)
+      (null == b ? true : b.id) === n.id && (false === n.enabled ? b = null : T || (b = n)), g[e] = n
+    } else(null == b ? true : b.id) === t.id && (b = null), g.splice(e, 1)
   }
   g = [...g], D()
 }
@@ -153,7 +153,7 @@ function U(e) {
     channelId: n,
     webhooks: i
   } = e;
-  if (A = false, null != r && t === r.id && null != i && S !== _.XlH.SUBMITTING) {
+  if (v = false, null != r && t === r.id && null != i && I !== _.XlH.SUBMITTING) {
     for (let e = E.length - 1; e >= 0; e--) {
       let t = E[e];
       if (null != n && (null == t ? true : t.channel_id) !== n) continue;
@@ -182,15 +182,15 @@ function G(e) {
   let {
     commandId: t
   } = e;
-  b = t, y = null, O = null, I = {}, T = true
+  y = t, b = null, O = null, S = {}, T = true
 }
 
 function V(e) {
   let {
     commandId: t
   } = e;
-  if (null == b || b !== t) returnfalse;
-  b = null, I = {}, T = false
+  if (null == y || y !== t) returnfalse;
+  y = null, S = {}, T = false
 }
 
 function F(e) {
@@ -198,11 +198,11 @@ function F(e) {
     integrationId: t
   } = e, n = z(t);
   if (null == n) returnfalse;
-  y = n, b = null, O = null, I = {}, T = false
+  b = n, y = null, O = null, S = {}, T = false
 }
 
 function B() {
-  y = null, I = {}, T = false
+  b = null, S = {}, T = false
 }
 
 function H(e) {
@@ -210,11 +210,11 @@ function H(e) {
     webhookId: t
   } = e, n = q(t);
   if (null == n) returnfalse;
-  O = n, b = null, y = null, I = {}, T = false
+  O = n, y = null, b = null, S = {}, T = false
 }
 
 function Y() {
-  O = null, I = {}, T = false
+  O = null, S = {}, T = false
 }
 
 function W() {
@@ -259,19 +259,19 @@ class X extends(a = Chunk311907.Ay.Store) {
     return E
   }
   get editedCommandId() {
-    return b
+    return y
   }
   get editedIntegration() {
-    return y
+    return b
   }
   get editedWebhook() {
     return O
   }
   get formState() {
-    return S
+    return I
   }
   getErrors() {
-    return I
+    return S
   }
   getSection() {
     return null != i ? i : _.wLn.OVERVIEW
@@ -286,7 +286,7 @@ class X extends(a = Chunk311907.Ay.Store) {
     return q(e)
   }
   isFetching() {
-    return v || A
+    return A || v
   }
   showNotice() {
     return this.hasChanges()

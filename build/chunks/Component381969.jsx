@@ -27,7 +27,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk634654 = require("./634654.js"),
   Chunk652215 = require("./652215.js");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,14 +36,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -61,21 +61,21 @@ function N(e) {
     children: n,
     initialTab: a,
     guildId: s
-  } = e, S = (0, o.bG)([m.A], () => m.A.getGuild(s)), C = (0, o.bG)([p.A], () => p.A.isViewingServerShop(s)), N = (0, b.P)(S, "guild_shop_page"), R = (0, E.YZ)(s, "guild_shop_page"), w = (null == S ? true : S.features.has(v.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === true, P = (0, f.Oh)(null == S ? true : S.id), D = P && R, x = null == (t = (0, d.Tq)(s)) ? true : t.server_shop_tab_order, L = [], j = y.B.GUILD_SHOP_FULL_PREVIEW;
-  C || w && P ? (L.push(x === O.HA.PRODUCTS_FIRST ? y.B.GUILD_PRODUCTS : y.B.GUILD_ROLE_SUBSCRIPTIONS), L.push(x === O.HA.PRODUCTS_FIRST ? y.B.GUILD_ROLE_SUBSCRIPTIONS : y.B.GUILD_PRODUCTS), j = L[0]) : w && !P ? (L.push(y.B.GUILD_PRODUCTS), j = y.B.GUILD_PRODUCTS) : !w && P && (L.push(y.B.GUILD_ROLE_SUBSCRIPTIONS), j = y.B.GUILD_ROLE_SUBSCRIPTIONS, N && L.push(y.B.GUILD_PRODUCTS_PREVIEW)), a = null != a ? a : j;
-  let [M, k] = i.useState(a), U = N && !D || M === y.B.GUILD_PRODUCTS_PREVIEW;
+  } = e, I = (0, o.bG)([m.A], () => m.A.getGuild(s)), C = (0, o.bG)([p.A], () => p.A.isViewingServerShop(s)), N = (0, y.P)(I, "guild_shop_page"), R = (0, E.YZ)(s, "guild_shop_page"), w = (null == I ? true : I.features.has(A.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === true, P = (0, f.Oh)(null == I ? true : I.id), D = P && R, x = null == (t = (0, d.Tq)(s)) ? true : t.server_shop_tab_order, L = [], j = b.B.GUILD_SHOP_FULL_PREVIEW;
+  C || w && P ? (L.push(x === O.HA.PRODUCTS_FIRST ? b.B.GUILD_PRODUCTS : b.B.GUILD_ROLE_SUBSCRIPTIONS), L.push(x === O.HA.PRODUCTS_FIRST ? b.B.GUILD_ROLE_SUBSCRIPTIONS : b.B.GUILD_PRODUCTS), j = L[0]) : w && !P ? (L.push(b.B.GUILD_PRODUCTS), j = b.B.GUILD_PRODUCTS) : !w && P && (L.push(b.B.GUILD_ROLE_SUBSCRIPTIONS), j = b.B.GUILD_ROLE_SUBSCRIPTIONS, N && L.push(b.B.GUILD_PRODUCTS_PREVIEW)), a = null != a ? a : j;
+  let [M, k] = i.useState(a), U = N && !D || M === b.B.GUILD_PRODUCTS_PREVIEW;
   i.useEffect(() => {
     k(a)
   }, [a]);
   let G = e => {
     (0, u.Dr)(l.M.SERVER_SHOP_PHANTOM_PREVIEW);
-    let t = I({}, (0, c.H$)(s));
-    if (M === y.B.GUILD_PRODUCTS_PREVIEW) e.stopPropagation(), k(y.B.GUILD_ROLE_SUBSCRIPTIONS), t.action_taken = A.hN.DISMISS_TAB_PREVIEW;
+    let t = S({}, (0, c.H$)(s));
+    if (M === b.B.GUILD_PRODUCTS_PREVIEW) e.stopPropagation(), k(b.B.GUILD_ROLE_SUBSCRIPTIONS), t.action_taken = v.hN.DISMISS_TAB_PREVIEW;
     else {
       var n;
-      (0, _.bG)(v.BVt.CHANNEL(s, null == (n = h.Ay.getDefaultChannel(s)) ? true : n.id)), t.action_taken = A.hN.DISMISS_FULL_PREVIEW
+      (0, _.bG)(A.BVt.CHANNEL(s, null == (n = h.Ay.getDefaultChannel(s)) ? true : n.id)), t.action_taken = v.hN.DISMISS_FULL_PREVIEW
     }
-    g.default.track(v.HAw.GUILD_SHOP_PREVIEW_CLICK, t)
+    g.default.track(A.HAw.GUILD_SHOP_PREVIEW_CLICK, t)
   };
   return (0, r.jsx)(T.Provider, {
     value: {

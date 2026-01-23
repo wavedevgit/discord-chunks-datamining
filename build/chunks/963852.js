@@ -46,13 +46,13 @@ function d(e) {
     nonce: m,
     poll: g,
     sharedCustomTheme: E,
-    changelogId: b,
-    giftingPrompt: y,
+    changelogId: y,
+    giftingPrompt: b,
     state: O
-  } = e, A = [];
+  } = e, v = [];
   if (d === c.lAJ.REPLY && (i()(null != f, "Replies must have a message reference"), null == p || p.replied_user)) {
     let e = a.A.getMessageByReference(f);
-    (null == e ? true : e.state) === a.a.LOADED && A.push(u(e.message.author))
+    (null == e ? true : e.state) === a.a.LOADED && v.push(u(e.message.author))
   }
   return null == _ && (_ = o.default.getCurrentUser()), _ instanceof s.A && (_ = u(_)), i()(null != _, "createMessage: author cannot be undefined"), {
     id: null != m ? m : (0, l.m)(),
@@ -63,7 +63,7 @@ function d(e) {
     attachments: [],
     embeds: [],
     pinned: false,
-    mentions: A,
+    mentions: v,
     mention_channels: [],
     mention_roles: [],
     mention_everyone: false,
@@ -76,8 +76,8 @@ function d(e) {
     nonce: m,
     poll: g,
     shared_client_theme: E,
-    changelog_id: b,
-    gifting_prompt: y
+    changelog_id: y,
+    gifting_prompt: b
   }
 }
 

@@ -14,8 +14,8 @@ class o extends Chunk64700.Component {
       to: e,
       from: t,
       isNavLink: a,
-      children: l,
-      tabIndex: r = 0,
+      children: s,
+      tabIndex: l = 0,
       role: i,
       className: o
     } = this.props;
@@ -23,9 +23,9 @@ class o extends Chunk64700.Component {
     let c = "string" == typeof e ? e : e.pathname,
       d = "string" == typeof e ? "" : e.hash,
       u = "string" == typeof e ? "" : e.search;
-    return a ? (0, s.jsx)(n.k2, {
+    return a ? (0, r.jsx)(n.k2, {
       className: o,
-      tabIndex: r,
+      tabIndex: l,
       onClick: this.handleOnClick,
       to: {
         pathname: c,
@@ -36,10 +36,10 @@ class o extends Chunk64700.Component {
         }
       },
       role: i,
-      children: l
-    }) : (0, s.jsx)(n.N_, {
+      children: s
+    }) : (0, r.jsx)(n.N_, {
       className: o,
-      tabIndex: r,
+      tabIndex: l,
       onClick: this.handleOnClick,
       to: {
         pathname: c,
@@ -50,7 +50,7 @@ class o extends Chunk64700.Component {
         }
       },
       role: i,
-      children: l
+      children: s
     })
   }
   constructor(...e) {
@@ -67,12 +67,12 @@ class o extends Chunk64700.Component {
           to: e,
           avoidRouter: t,
           onClick: a,
-          history: s
+          history: r
         } = this.props;
         if (null != a) a();
         else if (t) {
-          let t = "string" == typeof e ? (0, r.yJ)(e, null, true, s.location) : e,
-            a = s.createHref(t);
+          let t = "string" == typeof e ? (0, l.yJ)(e, null, true, r.location) : e,
+            a = r.createHref(t);
           window.location = a
         }
       })

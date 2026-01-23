@@ -40,9 +40,9 @@ function h(e) {
 let m = new Chunk713402.J(h, e => "".concat(e.since)),
   g = 0,
   E = 0,
-  b = 0;
+  y = 0;
 
-function y() {
+function b() {
   let e = 0,
     t = 0,
     n = 0;
@@ -57,40 +57,40 @@ function y() {
       if (o.A.isSpam(a) || o.A.isIgnored(a)) return;
       e += 1
     }
-  }), g = e, E = t, b = n
+  }), g = e, E = t, y = n
 }
 
 function O(e) {
   m.set(d(e.id, e.applicationId), e)
 }
 
-function A(e, t) {
+function v(e, t) {
   m.delete(d(e, t))
 }
 
-function v(e) {
+function A(e) {
   let {
     unknownApplicationIds: t
   } = e;
   if (null != t) {
     for (let e of t)
-      for (let t of m.values(f(e)))(t.type === l.eA$.PENDING_INCOMING || t.type === l.eA$.PENDING_OUTGOING) && A(t.id, e);
-    y()
+      for (let t of m.values(f(e)))(t.type === l.eA$.PENDING_INCOMING || t.type === l.eA$.PENDING_OUTGOING) && v(t.id, e);
+    b()
   }
 }
 
-function S(e) {
+function I(e) {
   m.clear(), e.gameRelationships.forEach(e => {
     O(u(e))
-  }), y()
+  }), b()
 }
 
-function I(e) {
-  O(e.gameRelationship), y()
+function S(e) {
+  O(e.gameRelationship), b()
 }
 
 function T(e) {
-  A(e.userId, e.applicationId), y()
+  v(e.userId, e.applicationId), b()
 }
 class C extends(r = Chunk311907.Ay.Store) {
   initialize() {
@@ -103,7 +103,7 @@ class C extends(r = Chunk311907.Ay.Store) {
     return E
   }
   getGameFriendCount() {
-    return b
+    return y
   }
   getGameFriendsForApplication(e) {
     return m.values(f(e), true).filter(e => e.type === l.eA$.FRIEND)
@@ -132,8 +132,8 @@ class C extends(r = Chunk311907.Ay.Store) {
 }
 c(C, "displayName", "GameRelationshipStore");
 let N = new C(Chunk73153.h, {
-  CONNECTION_OPEN: S,
-  GAME_RELATIONSHIP_ADD: I,
+  CONNECTION_OPEN: I,
+  GAME_RELATIONSHIP_ADD: S,
   GAME_RELATIONSHIP_REMOVE: T,
-  APPLICATIONS_FETCH_SUCCESS: v
+  APPLICATIONS_FETCH_SUCCESS: A
 })

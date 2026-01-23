@@ -2,9 +2,9 @@
 /** chunk id: 627011, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  B6: () => f,
-  bX: () => g,
-  rV: () => b
+  B6: () => g,
+  bX: () => m,
+  rV: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,40 +19,27 @@ function u(e) {
   let {
     guild: t,
     guildFeature: n,
-    analyticsSection: c,
-    analyticsObject: o,
+    analyticsSection: o,
+    analyticsObject: c,
     getPerks: u,
-    targetPremiumGuildTier: f
+    targetPremiumGuildTier: g
   } = e, {
-    analyticsLocations: g
-  } = (0, l.Ay)(), b = i.useCallback(e => {
+    analyticsLocations: m
+  } = (0, l.Ay)(), p = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, a.p_)({
       guild: t,
-      analyticsLocations: g,
-      analyticsSection: c,
-      analyticsObject: o,
+      analyticsLocations: m,
+      analyticsSection: o,
+      analyticsObject: c,
       perks: u(),
-      targetPremiumGuildTier: f
+      targetPremiumGuildTier: g
     })
-  }, [g, o, c, t, u, f]);
+  }, [m, c, o, t, u, g]);
   return (0, r.jsx)(s.A, {
     guild: t,
     guildFeature: n,
     className: d.M,
-    onClick: b
-  })
-}
-
-function f(e) {
-  let {
-    guild: t
-  } = e;
-  return (0, r.jsx)(u, {
-    guild: t,
-    guildFeature: c.GuildFeatures.BANNER,
-    analyticsSection: c.JJy.GUILD_BANNER,
-    analyticsObject: c.ZSU.BADGE,
-    getPerks: o.QR
+    onClick: p
   })
 }
 
@@ -62,23 +49,36 @@ function g(e) {
   } = e;
   return (0, r.jsx)(u, {
     guild: t,
-    guildFeature: c.GuildFeatures.INVITE_SPLASH,
-    analyticsSection: c.JJy.GUILD_INVITE_BACKGROUND,
-    analyticsObject: c.ZSU.BADGE,
-    getPerks: o.Lp
+    guildFeature: o.GuildFeatures.BANNER,
+    analyticsSection: o.JJy.GUILD_BANNER,
+    analyticsObject: o.ZSU.BADGE,
+    getPerks: c.QR
   })
 }
 
-function b(e) {
+function m(e) {
   let {
     guild: t
   } = e;
   return (0, r.jsx)(u, {
     guild: t,
-    guildFeature: c.GuildFeatures.VANITY_URL,
-    analyticsSection: c.JJy.GUILD_SETTINGS_VANITY_URL,
-    analyticsObject: c.ZSU.BADGE,
-    getPerks: o.DU,
-    targetPremiumGuildTier: c.TVA.TIER_3
+    guildFeature: o.GuildFeatures.INVITE_SPLASH,
+    analyticsSection: o.JJy.GUILD_INVITE_BACKGROUND,
+    analyticsObject: o.ZSU.BADGE,
+    getPerks: c.Lp
+  })
+}
+
+function p(e) {
+  let {
+    guild: t
+  } = e;
+  return (0, r.jsx)(u, {
+    guild: t,
+    guildFeature: o.GuildFeatures.VANITY_URL,
+    analyticsSection: o.JJy.GUILD_SETTINGS_VANITY_URL,
+    analyticsObject: o.ZSU.BADGE,
+    getPerks: c.DU,
+    targetPremiumGuildTier: o.TVA.TIER_3
   })
 }

@@ -78,8 +78,8 @@ module.exports = function(e) {
       c = n.getDecorator();
     return i !== a || s !== o || l !== c || n.mustForceSelection()
   }, n.render = function() {
-    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, s = e.customStyleMap, o = e.customStyleFn, d = e.editorState, h = e.editorKey, m = e.preventScroll, g = e.textDirectionality, E = d.getCurrentContent(), b = d.getSelection(), y = d.mustForceSelection(), O = d.getDecorator(), A = p(d.getDirectionMap()), v = E.getBlocksAsArray(), S = [], I = null, T = null, C = 0; C < v.length; C++) {
-      var N = v[C],
+    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, s = e.customStyleMap, o = e.customStyleFn, d = e.editorState, h = e.editorKey, m = e.preventScroll, g = e.textDirectionality, E = d.getCurrentContent(), y = d.getSelection(), b = d.mustForceSelection(), O = d.getDecorator(), v = p(d.getDirectionMap()), A = E.getBlocksAsArray(), I = [], S = null, T = null, C = 0; C < A.length; C++) {
+      var N = A[C],
         R = N.getKey(),
         w = N.getType(),
         P = n(N),
@@ -87,7 +87,7 @@ module.exports = function(e) {
         x = true,
         L = true;
       P && (D = P.component, x = P.props, L = P.editable);
-      var j = g || A.get(R),
+      var j = g || v.get(R),
         M = c.encode(R, 0, 0),
         k = {
           contentState: E,
@@ -98,10 +98,10 @@ module.exports = function(e) {
           customStyleFn: o,
           decorator: O,
           direction: j,
-          forceSelection: y,
+          forceSelection: b,
           offsetKey: M,
           preventScroll: m,
-          selection: b,
+          selection: y,
           tree: d.getBlockTree(R)
         },
         U = t.get(w) || t.get("unstyled"),
@@ -110,7 +110,7 @@ module.exports = function(e) {
         F = N.getDepth(),
         B = "";
       if (r && (B = r(N)), "li" === V) {
-        var H = T !== G || null === I || F > I;
+        var H = T !== G || null === S || F > S;
         B = f(B, _(w, F, H, j))
       }
       var Y = D || l,
@@ -128,18 +128,18 @@ module.exports = function(e) {
       var K = u.createElement(V, W, u.createElement(Y, i({}, k, {
         key: R
       })));
-      S.push({
+      I.push({
         block: K,
         wrapperTemplate: G,
         key: R,
         offsetKey: M
-      }), I = G ? N.getDepth() : null, T = G
+      }), S = G ? N.getDepth() : null, T = G
     }
-    for (var z = [], q = 0; q < S.length;) {
-      var X = S[q];
+    for (var z = [], q = 0; q < I.length;) {
+      var X = I[q];
       if (X.wrapperTemplate) {
         var Z = [];
-        do Z.push(S[q].block), q++; while (q < S.length && S[q].wrapperTemplate === X.wrapperTemplate);
+        do Z.push(I[q].block), q++; while (q < I.length && I[q].wrapperTemplate === X.wrapperTemplate);
         var Q = u.cloneElement(X.wrapperTemplate, {
           key: X.key + "-wrap",
           "data-offset-key": X.offsetKey

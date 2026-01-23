@@ -2,7 +2,7 @@
 /** chunk id: 520761, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => x
+  A: () => h
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,48 +18,48 @@ var Chunk627968 = require("./627968.js"),
   Chunk132514 = require("./132514.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk659233 = require("./659233.js");
-let x = function(e) {
+let h = function(e) {
   let {
     guildId: t,
     resourceChannel: l,
-    index: x,
-    onDragComplete: h,
+    index: h,
+    onDragComplete: x,
     onDragStart: j,
-    onDragReset: O
+    onDragReset: _
   } = e, {
-    title: y,
+    title: O,
     channelId: v,
-    description: A
-  } = l, E = u.A.getChannel(v), N = null;
-  null != E && (0, d.Yt)(E) || (N = m.intl.string(m.t.kTdL8X));
-  let _ = null == A || 0 === A.length,
-    S = f.Ay.getResourceChannelIconURL({
+    description: y
+  } = l, A = u.A.getChannel(v), E = null;
+  null != A && (0, d.Yt)(A) || (E = f.intl.string(f.t.kTdL8X));
+  let N = null == y || 0 === y.length,
+    S = g.Ay.getResourceChannelIconURL({
       channelId: l.channelId,
       icon: l.icon
     }),
     {
-      drag: T,
-      dragSourcePosition: I,
+      drag: I,
+      dragSourcePosition: T,
       drop: C,
       setIsDraggable: P
-    } = (0, o.A)({
+    } = (0, c.A)({
       type: "RESOURCE_CHANNEL",
       optionId: l.channelId,
-      index: x,
+      index: h,
       onDragStart: j,
-      onDragComplete: h,
-      onDragReset: O
+      onDragComplete: x,
+      onDragReset: _
     }),
     w = i.useCallback(e => {
-      (0, g.z4)(l.channelId, e)
+      (0, m.z4)(l.channelId, e)
     }, [l.channelId]),
     R = i.useCallback((e, n) => {
-      let r = b.A.getSettings();
-      null != r && ((0, g.z4)(l.channelId, e), (0, g.W5)(t, r).then(() => {
-        (0, g.E0)(t, e.channelId, n)
+      let r = p.A.getSettings();
+      null != r && ((0, m.z4)(l.channelId, e), (0, m.W5)(t, r).then(() => {
+        (0, m.E0)(t, e.channelId, n)
       }))
     }, [t, l]),
-    D = i.useCallback(() => (0, c.mMO)(async () => {
+    D = i.useCallback(() => (0, o.mMO)(async () => {
       let {
         default: e
       } = await n.e("36354").then(n.bind(n, 983161));
@@ -86,7 +86,7 @@ let x = function(e) {
           guildId: t,
           resourceChannel: l,
           onSave: w,
-          onDelete: () => (0, g.XD)(l.channelId),
+          onDelete: () => (0, m.XD)(l.channelId),
           onIconUpload: R
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
@@ -100,64 +100,64 @@ let x = function(e) {
         }), i))
       }
     }), [t, l, w, R]);
-  return null == E ? null : (0, r.jsxs)("div", {
-    className: p.l5,
+  return null == A ? null : (0, r.jsxs)("div", {
+    className: b.l5,
     children: [(0, r.jsxs)("div", {
-      className: s()(p.Km, {
-        [p.A]: null != I && x < I,
-        [p.Ze]: null != I && x > I,
-        [p._t]: null != N
+      className: s()(b.Km, {
+        [b.A]: null != T && h < T,
+        [b.Ze]: null != T && h > T,
+        [b._t]: null != E
       }),
       ref: e => {
-        T(C(e))
+        I(C(e))
       },
       children: [(0, r.jsx)("div", {
-        className: p.cK,
+        className: b.cK,
         onMouseEnter: () => P(true),
         onMouseLeave: () => P(false),
-        children: (0, r.jsx)(c.WP0, {
+        children: (0, r.jsx)(o.WP0, {
           size: "xs",
           color: "currentColor",
-          className: p.co
+          className: b.co
         })
       }), null != S && (0, r.jsx)("div", {
-        className: p.P0,
+        className: b.P0,
         children: (0, r.jsx)("img", {
           src: S,
-          className: p.Kk,
+          className: b.Kk,
           width: 32,
           height: 32,
           alt: "",
           "aria-hidden": true
         })
       }), (0, r.jsxs)("div", {
-        className: p.DP,
-        children: [(0, r.jsx)(c.Text, {
-          className: p.qj,
+        className: b.DP,
+        children: [(0, r.jsx)(o.Text, {
+          className: b.qj,
           variant: "text-md/semibold",
           color: "text-strong",
-          children: y
-        }), !_ && (0, r.jsx)(c.Text, {
-          className: p.ur,
+          children: O
+        }), !N && (0, r.jsx)(o.Text, {
+          className: b.ur,
           variant: "text-xs/medium",
           color: "text-muted",
           lineClamp: 1,
-          children: A
+          children: y
         })]
       }), (0, r.jsx)(a.m, {
-        text: m.intl.string(m.t.bt75uw),
-        children: (0, r.jsx)(c.K0, {
-          icon: c.R2l,
+        text: f.intl.string(f.t.bt75uw),
+        children: (0, r.jsx)(o.K0, {
+          icon: o.R2l,
           size: "sm",
           variant: "primary",
           onClick: D,
-          "aria-label": m.intl.string(m.t.bt75uw)
+          "aria-label": f.intl.string(f.t.bt75uw)
         })
       })]
-    }), null != N && (0, r.jsx)(c.Text, {
+    }), null != E && (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
       color: "text-feedback-critical",
-      children: N
+      children: E
     })]
   })
 }

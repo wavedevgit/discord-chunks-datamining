@@ -19,33 +19,33 @@ function p(e) {
   let {
     handleOpenUserProfileModal: p,
     markAsDismissed: h
-  } = e, f = function(e, t) {
+  } = e, x = function(e, t) {
     if (null == e) return {};
-    var n, a, l, i = {};
+    var n, a, l, r = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) a = n[l], !(t.indexOf(a) >= 0) && Object.prototype.propertyIsEnumerable.call(e, a) && (i[a] = e[a]);
-      return i
+      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) a = n[l], !(t.indexOf(a) >= 0) && Object.prototype.propertyIsEnumerable.call(e, a) && (r[a] = e[a]);
+      return r
     }
-    if (i = function(e, t) {
+    if (r = function(e, t) {
         if (null == e) return {};
         var n, a, l = {},
-          i = Object.getOwnPropertyNames(e);
-        for (a = 0; a < i.length; a++) n = i[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
+          r = Object.getOwnPropertyNames(e);
+        for (a = 0; a < r.length; a++) n = r[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
         return l
       }(e, t), Object.getOwnPropertySymbols)
-      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) a = n[l], !(t.indexOf(a) >= 0) && Object.prototype.propertyIsEnumerable.call(e, a) && (i[a] = e[a]);
-    return i
+      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) a = n[l], !(t.indexOf(a) >= 0) && Object.prototype.propertyIsEnumerable.call(e, a) && (r[a] = e[a]);
+    return r
   }(e, ["handleOpenUserProfileModal", "markAsDismissed"]), {
-    trackUserProfileEditAction: x
-  } = (0, r.NJ)(), b = l.useMemo(() => c.Zc.filter(s.hL).map(e => new s.Yy({
+    trackUserProfileEditAction: g
+  } = (0, i.NJ)(), f = l.useMemo(() => c.Zc.filter(s.hL).map(e => new s.Yy({
     type: e,
     games: []
-  })), []), g = l.useCallback(() => {
-    h(d.i.TAKE_ACTION), x({
+  })), []), b = l.useCallback(() => {
+    h(d.i.TAKE_ACTION), g({
       action: "PRESS_ADD_WIDGET"
     }), p()
-  }, [p, h, x]);
-  return (0, a.jsx)(i.A, (t = function(e) {
+  }, [p, h, g]);
+  return (0, a.jsx)(r.A, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         a = Object.keys(n);
@@ -66,15 +66,15 @@ function p(e) {
     heading: u.intl.string(u.t["oqalC+"]),
     subheading: u.intl.string(u.t.O9SQ1c),
     markAsDismissed: h
-  }, f), n = n = {
+  }, x), n = n = {
     children: (0, a.jsx)("ul", {
       "aria-label": u.intl.string(u.t["+EIBSA"]),
       className: m.f,
-      children: b.map(e => (0, a.jsx)(o.A, {
+      children: f.map(e => (0, a.jsx)(o.A, {
         widget: e,
         size: "medium",
-        onAddWidget: g,
-        trackUserProfileEditAction: x
+        onAddWidget: b,
+        trackUserProfileEditAction: g
       }, e.getUniqueKey()))
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

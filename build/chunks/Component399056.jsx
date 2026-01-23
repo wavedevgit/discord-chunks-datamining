@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk659233 = require("./659233.js");
 
-function b(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function b(e) {
   return e
 }
 
-function m(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,15 +47,15 @@ function m(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = [];
+let b = [];
 
-function x() {
+function h() {
   return (0, r.jsx)("div", {
-    className: g.L8,
+    className: m.L8,
     children: (0, r.jsxs)("div", {
-      className: g.kv,
+      className: m.kv,
       children: [(0, r.jsx)("div", {
-        className: g.zV,
+        className: m.zV,
         children: (0, r.jsx)(s.B8Q, {
           size: "custom",
           color: "currentColor",
@@ -63,18 +63,18 @@ function x() {
           width: 22
         })
       }), (0, r.jsx)("div", {
-        className: g.tV,
+        className: m.tV,
         children: (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
           color: "text-strong",
-          children: f.intl.string(f.t["K/i3iQ"])
+          children: g.intl.string(g.t["K/i3iQ"])
         })
       })]
     })
   })
 }
 
-function h(e) {
+function x(e) {
   let {
     guildId: t,
     onAddAction: l
@@ -83,14 +83,14 @@ function h(e) {
       let {
         default: e
       } = await Promise.all([n.e("54569"), n.e("76945")]).then(n.bind(n, 251632));
-      return n => (0, r.jsx)(e, m(b({}, n), {
+      return n => (0, r.jsx)(e, f(p({}, n), {
         guildId: t,
         onSave: l
       }))
     })
   }, [t, l]);
   return (0, r.jsxs)(s.DUT, {
-    className: g.Bw,
+    className: m.Bw,
     onClick: a,
     children: [(0, r.jsx)(s.U1e, {
       size: "xs",
@@ -98,7 +98,7 @@ function h(e) {
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "none",
-      children: f.intl.string(f.t.qce3EM)
+      children: g.intl.string(g.t.qce3EM)
     })]
   })
 }
@@ -107,39 +107,39 @@ let j = function(e) {
     guildId: t
   } = e, n = (0, l.yK)([d.A], () => {
     var e;
-    return null != (e = d.A.getSettings().newMemberActions) ? e : p
+    return null != (e = d.A.getSettings().newMemberActions) ? e : b
   }), s = i.useCallback((e, t) => {
-    (0, o.G$)(e, t)
-  }, []), f = i.useCallback((e, r, i, l) => {
+    (0, c.G$)(e, t)
+  }, []), g = i.useCallback((e, r, i, l) => {
     var s;
     let a = null == (s = n[e]) ? true : s.channelId,
-      c = r.channelId;
-    null == a || null == d.A.getSettings() || (null == d.A.getPendingDataForChannel(c) && l && (0, o.Wh)(t, a, i), (0, o.A4)(a, r))
+      o = r.channelId;
+    null == a || null == d.A.getSettings() || (null == d.A.getPendingDataForChannel(o) && l && (0, c.Wh)(t, a, i), (0, c.A4)(a, r))
   }, [n, t]), j = i.useCallback(e => {
     var t;
     let r = null == (t = n[e]) ? true : t.channelId;
-    null != r && (0, o.sd)(r)
-  }, [n]), O = n.map(e => m(b({}, e), {
+    null != r && (0, c.sd)(r)
+  }, [n]), _ = n.map(e => f(p({}, e), {
     id: e.channelId
-  })), y = i.useCallback(e => {
-    (0, o.DE)(e)
+  })), O = i.useCallback(e => {
+    (0, c.DE)(e)
   }, []), {
     handleDragStart: v,
-    handleDragReset: A,
-    handleDragComplete: E
-  } = (0, a.A)(O, y);
+    handleDragReset: y,
+    handleDragComplete: A
+  } = (0, a.A)(_, O);
   return (0, r.jsxs)("div", {
-    className: g.uW,
+    className: m.uW,
     children: [n.map((e, n) => (0, r.jsx)(u.A, {
       guildId: t,
       action: e,
       actionIndex: n,
-      onChange: f,
+      onChange: g,
       onDelete: j,
       onDragStart: v,
-      onDragReset: A,
-      onDragComplete: E
-    }, e.channelId)), (0, r.jsx)(x, {}), n.length < c._7 && (0, r.jsx)(h, {
+      onDragReset: y,
+      onDragComplete: A
+    }, e.channelId)), (0, r.jsx)(h, {}), n.length < o._7 && (0, r.jsx)(x, {
       guildId: t,
       onAddAction: s
     })]

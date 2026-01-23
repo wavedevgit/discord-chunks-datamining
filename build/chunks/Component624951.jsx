@@ -2,7 +2,7 @@
 /** chunk id: 624951, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk554146 = require("./554146.js"),
@@ -21,20 +21,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk468115 = require("./468115.js");
 
-function b(e) {
+function y(e) {
   var t;
   let {
     applicationId: n,
-    onAction: b,
-    onClose: y,
+    onAction: y,
+    onClose: b,
     activity: O
   } = e, {
-    analyticsLocations: A
+    analyticsLocations: v
   } = (0, c.Ay)(l.A.USER_PROFILE_ACTIVITY_CLOUD_PLAY_SECTION), {
-    data: v
-  } = (0, u.YY)(n), S = (0, o.J)(v), {
-    themeType: I
-  } = (0, _.E)(), T = I === m.d.MODAL || I === m.d.MODAL_V2, C = (0, f.o)(null != (t = null == O ? true : O.application_id) ? t : n), N = S && T && null != v && !C, R = N ? [i.M.CLOUD_PLAY_NEW_BADGE] : [], [w] = (0, d.kn)(R);
+    data: A
+  } = (0, u.YY)(n), I = (0, o.J)(A), {
+    themeType: S
+  } = (0, _.E)(), T = S === m.d.MODAL || S === m.d.MODAL_V2, C = (0, f.o)(null != (t = null == O ? true : O.application_id) ? t : n), N = I && T && null != A && !C, R = N ? [i.M.CLOUD_PLAY_NEW_BADGE] : [], [w] = (0, d.kn)(R);
   return N ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p.A, {
       className: E.Xl
@@ -50,10 +50,10 @@ function b(e) {
           children: g.intl.string(g.t.IQjdmV)
         })]
       }), (0, r.jsx)(h.A, {
-        application: v,
-        onAction: b,
-        onClose: y,
-        analyticsLocations: A
+        application: A,
+        onAction: y,
+        onClose: b,
+        analyticsLocations: v
       })]
     })]
   }) : null

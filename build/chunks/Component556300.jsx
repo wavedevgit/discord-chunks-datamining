@@ -2,7 +2,7 @@
 /** chunk id: 556300, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -30,7 +30,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,11 +55,11 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function A(e, t, n) {
+async function v(e, t, n) {
   if (null == t) return;
   if (o.A.trackDiscordLinkClicked({
       guildId: e,
@@ -79,12 +79,12 @@ async function A(e, t, n) {
   null != r && null == n && (0, f.ay)(r.type) && (0, l.nc)(r) ? s.default.selectVoiceChannel(r.id) : (0, c.A)(g.BVt.CHANNEL(e, t, n))
 }
 
-function v(e) {
+function A(e) {
   return {
     react(t, s, o) {
       let l = p.A.getChannel(t.channelId),
         c = o.noStyleAndInteraction ? true : n => {
-          e.shouldStopPropagation && (null == n || n.stopPropagation()), A(t.guildId, t.channelId, t.messageId), e.shouldCloseDefaultModals && (0, i.s7G)()
+          e.shouldStopPropagation && (null == n || n.stopPropagation()), v(t.guildId, t.channelId, t.messageId), e.shouldCloseDefaultModals && (0, i.s7G)()
         },
         f = o.noStyleAndInteraction || null == t.channelId || null == l && null == t.originalLink ? g.tEg : e => {
           (0, a.L3)(e, async () => {
@@ -93,7 +93,7 @@ function v(e) {
             } = await n.e("99041").then(n.bind(n, 612856));
             return n => {
               var i;
-              return (0, r.jsx)(e, O(b({}, n), {
+              return (0, r.jsx)(e, O(y({}, n), {
                 channel: l,
                 channelId: null != (i = null == l ? true : l.id) ? i : t.channelId,
                 originalLink: t.originalLink,

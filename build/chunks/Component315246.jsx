@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => O,
-  n: () => y
+  n: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -52,12 +52,12 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = "content-inventory-context";
+let b = "content-inventory-context";
 
 function O(e) {
   var t;
@@ -66,13 +66,13 @@ function O(e) {
     guildId: m,
     channel: E,
     entry: O,
-    onSelect: A,
-    disableGameProfileLinks: v
-  } = e, S = i.useRef(null), I = i.useContext(p.Jd), T = (0, d.A)({
+    onSelect: v,
+    disableGameProfileLinks: A
+  } = e, I = i.useRef(null), S = i.useContext(p.Jd), T = (0, d.A)({
     userId: n.id,
     guildId: m,
     channelId: null == E ? true : E.id,
-    onAction: I
+    onAction: S
   }), C = (0, l.A)({
     id: n.id,
     label: _.intl.string(_.t["/AXYnE"])
@@ -81,13 +81,13 @@ function O(e) {
     label: _.intl.string(_.t["FfCL+6"])
   }), w = (0, f.zD)(O), P = (0, u.A)({
     location: "ContentPopoutContextMenu",
-    applicationId: w && true !== v ? null == (t = O.extra) ? true : t.application_id : true,
+    applicationId: w && true !== A ? null == (t = O.extra) ? true : t.application_id : true,
     source: c.Ob.ActivityCardContextMenu,
     trackEntryPointImpression: true,
     sourceUserId: O.author_id
   });
   return (0, r.jsx)(s.YNO, {
-    targetElementRef: S,
+    targetElementRef: I,
     align: "top",
     position: "right",
     disablePointerEvents: false,
@@ -96,19 +96,19 @@ function O(e) {
         closePopout: t
       } = e;
       return (0, r.jsx)(s.W1t, {
-        navId: y,
+        navId: b,
         onClose: () => {
           (0, o.Z_)(), t()
         },
         "aria-label": _.intl.string(_.t.liqwPJ),
-        onSelect: A,
+        onSelect: v,
         children: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)(s.rXV, {
             children: [T, null != P && (0, r.jsx)(s.Drp, {
               id: "game-profile",
               label: _.intl.string(_.t.f7aVGn),
               action: e => {
-                P(e), null == I || I()
+                P(e), null == S || S()
               }
             })]
           }), (0, r.jsxs)(s.rXV, {
@@ -120,8 +120,8 @@ function O(e) {
     children: e => (0, r.jsx)(a.m, {
       asContainer: true,
       text: _.intl.string(_.t["UKOtz+"]),
-      children: (0, r.jsx)(s.DUT, b(g({
-        innerRef: S,
+      children: (0, r.jsx)(s.DUT, y(g({
+        innerRef: I,
         className: h.r
       }, e), {
         children: (0, r.jsx)(s.jNK, {

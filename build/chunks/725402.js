@@ -39,15 +39,15 @@ module.exports = function(e) {
       built_in: l,
       "variable.language": o
     },
-    b = "[0-9](_?[0-9])*",
-    y = `\\.(${b})`,
+    y = "[0-9](_?[0-9])*",
+    b = `\\.(${y})`,
     O = "0|[1-9](_?[0-9])*|0[0-7]*[89][0-9]*",
-    A = {
+    v = {
       className: "number",
       variants: [{
-        begin: `(\\b(${O})((${y})|\\.)?|(${y}))[eE][+-]?(${b})\\b`
+        begin: `(\\b(${O})((${b})|\\.)?|(${b}))[eE][+-]?(${y})\\b`
       }, {
-        begin: `\\b(${O})\\b((${y})\\b|\\.)?|(${y})\\b`
+        begin: `\\b(${O})\\b((${b})\\b|\\.)?|(${b})\\b`
       }, {
         begin: "\\b(0|[1-9](_?[0-9])*)n\\b"
       }, {
@@ -61,30 +61,30 @@ module.exports = function(e) {
       }],
       relevance: 0
     },
-    v = {
+    A = {
       className: "subst",
       begin: "\\$\\{",
       end: "\\}",
       keywords: E,
       contains: []
     },
-    S = {
+    I = {
       begin: ".?html`",
       end: "",
       starts: {
         end: "`",
         returnEnd: false,
-        contains: [e.BACKSLASH_ESCAPE, v],
+        contains: [e.BACKSLASH_ESCAPE, A],
         subLanguage: "xml"
       }
     },
-    I = {
+    S = {
       begin: ".?css`",
       end: "",
       starts: {
         end: "`",
         returnEnd: false,
-        contains: [e.BACKSLASH_ESCAPE, v],
+        contains: [e.BACKSLASH_ESCAPE, A],
         subLanguage: "css"
       }
     },
@@ -94,7 +94,7 @@ module.exports = function(e) {
       starts: {
         end: "`",
         returnEnd: false,
-        contains: [e.BACKSLASH_ESCAPE, v],
+        contains: [e.BACKSLASH_ESCAPE, A],
         subLanguage: "graphql"
       }
     },
@@ -102,7 +102,7 @@ module.exports = function(e) {
       className: "string",
       begin: "`",
       end: "`",
-      contains: [e.BACKSLASH_ESCAPE, v]
+      contains: [e.BACKSLASH_ESCAPE, A]
     },
     N = {
       className: "comment",
@@ -133,16 +133,16 @@ module.exports = function(e) {
         }]
       }), e.C_BLOCK_COMMENT_MODE, e.C_LINE_COMMENT_MODE]
     },
-    R = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, S, I, T, C, {
+    R = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, I, S, T, C, {
       match: /\$\d+/
-    }, A];
-  v.contains = R.concat({
+    }, v];
+  A.contains = R.concat({
     begin: /\{/,
     end: /\}/,
     keywords: E,
     contains: ["self"].concat(R)
   });
-  let w = [].concat(N, v.contains),
+  let w = [].concat(N, A.contains),
     P = w.concat([{
       begin: /(\s*)\(/,
       end: /\)/,
@@ -258,9 +258,9 @@ module.exports = function(e) {
       label: "shebang",
       binary: "node",
       relevance: 5
-    }), j, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, S, I, T, C, N, {
+    }), j, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, I, S, T, C, N, {
       match: /\$\d+/
-    }, A, L, {
+    }, v, L, {
       scope: "attr",
       match: d + c.lookahead(":"),
       relevance: 0

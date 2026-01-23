@@ -45,31 +45,31 @@ module.exports = {
       f = l.getSelectionAfter(),
       p = c.splitBlock(l, f),
       _ = p.getSelectionAfter(),
-      b = c.setBlockType(p, _, "atomic"),
-      y = s.create({
+      y = c.setBlockType(p, _, "atomic"),
+      b = s.create({
         entity: t
       }),
       O = {
         key: d(),
         type: "atomic",
         text: n,
-        characterList: g(E(y, n.length))
+        characterList: g(E(b, n.length))
       },
-      A = {
+      v = {
         key: d(),
         type: "unstyled"
       };
     h && (O = r({}, O, {
-      nextSibling: A.key
-    }), A = r({}, A, {
+      nextSibling: v.key
+    }), v = r({}, v, {
       prevSibling: O.key
     }));
-    var v = [new m(O), new m(A)],
-      S = a.createFromArray(v),
-      I = c.replaceWithFragment(b, _, S),
-      T = I.merge({
+    var A = [new m(O), new m(v)],
+      I = a.createFromArray(A),
+      S = c.replaceWithFragment(y, _, I),
+      T = S.merge({
         selectionBefore: o,
-        selectionAfter: I.getSelectionAfter().set("hasFocus", true)
+        selectionAfter: S.getSelectionAfter().set("hasFocus", true)
       });
     return u.push(e, T, "insert-fragment")
   },

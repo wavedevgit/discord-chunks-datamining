@@ -29,18 +29,18 @@ let O = e => {
     compact: a,
     channel: o,
     messageId: O,
-    reportedTimestamp: A
-  } = e, v = _.default.getUser(t), S = i.useMemo(() => a ? (0, f.A)((0, h.i$)(l()(), "LT")) : null, [a]), I = (0, p.P)({
-    user: v,
+    reportedTimestamp: v
+  } = e, A = _.default.getUser(t), I = i.useMemo(() => a ? (0, f.A)((0, h.i$)(l()(), "LT")) : null, [a]), S = (0, p.P)({
+    user: A,
     channelId: o.id,
     guildId: n,
     messageId: O
-  })((0, u.m2)(v, o)), T = null != v ? v.getAvatarURL(n, (0, c.FT9)(c._3J.SIZE_16)) : y, C = null != v ? g.intl.format(m.default["+zqXZs"], {
-    username: v.username,
-    onUserClick: I
+  })((0, u.m2)(A, o)), T = null != A ? A.getAvatarURL(n, (0, c.FT9)(c._3J.SIZE_16)) : b, C = null != A ? g.intl.format(m.default["+zqXZs"], {
+    username: A.username,
+    onUserClick: S
   }) : g.intl.string(m.default.xpRjfS);
   return (0, r.jsxs)("div", {
-    className: s()(b.NB, b.JZ, S),
+    className: s()(y.NB, y.JZ, I),
     children: [(0, r.jsx)(c.euF, {
       src: T,
       size: c._3J.SIZE_16,
@@ -58,7 +58,7 @@ let O = e => {
         className: E.Ek,
         children: "•"
       }), (0, r.jsx)(d.A, {
-        timestamp: A,
+        timestamp: v,
         className: E.vE
       })]
     })]

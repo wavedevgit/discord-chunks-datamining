@@ -12,46 +12,46 @@ let s = e => {
       element: t,
       onChange: n,
       initialOption: s
-    } = e, [o, c] = r.useState("");
+    } = e, [o, d] = r.useState("");
     r.useEffect(() => {
-      c(null != s ? s : "")
+      d(null != s ? s : "")
     }, [s]);
-    let d = t.name,
+    let c = t.name,
       {
         title: u,
         options: m
       } = t.data,
-      b = r.useCallback(e => {
-        null != e && (c(e), n(e))
+      p = r.useCallback(e => {
+        null != e && (d(e), n(e))
       }, [n]);
     return (0, l.jsx)("div", {
-      className: i.QB,
-      children: (0, l.jsx)(a.l6P, {
+      className: a.QB,
+      children: (0, l.jsx)(i.l6P, {
         label: u,
         value: o,
         required: t.should_submit_data,
-        onSelectionChange: b,
+        onSelectionChange: p,
         options: m,
         selectionMode: "single",
         fullWidth: true
       })
-    }, d)
+    }, c)
   },
   o = e => {
     let {
       elements: t,
       onChange: n,
       state: r
-    } = e, a = t.map(e => {
-      var t, a;
-      let i = e.name;
+    } = e, i = t.map(e => {
+      var t, i;
+      let a = e.name;
       return (0, l.jsx)(s, {
         element: e,
-        initialOption: null != (t = null == r || null == (a = r[i]) ? true : a.value) ? t : true,
-        onChange: e => n(i, e)
-      }, i)
+        initialOption: null != (t = null == r || null == (i = r[a]) ? true : i.value) ? t : true,
+        onChange: e => n(a, e)
+      }, a)
     });
     return (0, l.jsx)("div", {
-      children: a
+      children: i
     })
   }

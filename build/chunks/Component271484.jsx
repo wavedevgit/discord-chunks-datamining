@@ -1,8 +1,8 @@
 /** Chunk was on 88615 **/
-/** chunk id: 271484, original params: e,t,l (module,exports,require) **/
+/** chunk id: 271484, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x,
-  g: () => g
+  A: () => _,
+  g: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,45 +19,45 @@ var Chunk627968 = require("./627968.js"),
   Chunk870166 = require("./870166.js"),
   Chunk849630 = require("./849630.js");
 
-function g(e, t) {
-  var g;
-  let x = null != (g = (0, d.A)(t)) && g,
-    b = (0, s.bG)([u.A], () => {
+function A(e, t) {
+  var A;
+  let _ = null != (A = (0, d.A)(t)) && A,
+    x = (0, o.bG)([u.A], () => {
       var e;
       return null == (e = u.A.getStateForGuild(t)) ? true : e.allPowerups
     }),
-    h = (0, s.bG)([u.A], () => {
+    h = (0, o.bG)([u.A], () => {
       var e;
       return null == (e = u.A.getStateForGuild(t)) ? true : e.unlockedPowerups
     });
-  return n.useMemo(() => {
-    let n = e => "guildTagsBadgePacks" === e ? function(e) {
+  return l.useMemo(() => {
+    let l = e => "guildTagsBadgePacks" === e ? function(e) {
         let {
           guildId: t,
-          canUseBoosts: n,
-          allPowerups: s,
+          canUseBoosts: l,
+          allPowerups: o,
           unlockedPowerups: u
-        } = e, d = m.intl.string(p.default.KC9HRW), g = m.intl.string(p.default.GJiSmP), x = null == s ? true : s[i.SL], b = (null == u ? true : u[i.SL]) != null, h = m.intl.string(p.default["/egwJA"]), j = b ? true : m.intl.string(p.default.W6Vwn3), _ = b ? true : m.intl.string(p.default.lvk1Gc), E = b ? m.intl.string(p.default["9CfkLO"]) : m.intl.string(m.t["+7XY31"]), y = b ? "secondary" : "expressive", I = n ? () => {
-          b ? a.A.open(t, f.BEX.TAG, f.JJy.GUILD_POWERUPS_OVERVIEW_CARD) : null != x && (0, c.A)(t, x), (0, o.s7G)()
+        } = e, d = f.intl.string(m.default.KC9HRW), A = f.intl.string(m.default.GJiSmP), _ = null == o ? true : o[i.SL], x = (null == u ? true : u[i.SL]) != null, h = f.intl.string(m.default["/egwJA"]), b = x ? true : f.intl.string(m.default.W6Vwn3), j = x ? true : f.intl.string(m.default.lvk1Gc), E = x ? f.intl.string(m.default["9CfkLO"]) : f.intl.string(f.t["+7XY31"]), w = x ? "secondary" : "expressive", y = l ? () => {
+          x ? a.A.open(t, p.BEX.TAG, p.JJy.GUILD_POWERUPS_OVERVIEW_CARD) : null != _ && (0, c.A)(t, _), (0, s.s7G)()
         } : true;
         return {
           title: d,
-          description: g,
+          description: A,
           openModal: function(e) {
             let i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-            (0, o.mMO)(async () => {
+            (0, s.mMO)(async () => {
               let {
                 default: i
-              } = await l.e("56065").then(l.bind(l, 534904));
-              return l => (0, r.jsx)(i, function(e) {
+              } = await n.e("56065").then(n.bind(n, 534904));
+              return n => (0, r.jsx)(i, function(e) {
                 for (var t = 1; t < arguments.length; t++) {
-                  var l = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(l);
-                  "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(l, e).enumerable
+                  var n = null != arguments[t] ? arguments[t] : {},
+                    r = Object.keys(n);
+                  "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                    return Object.getOwnPropertyDescriptor(n, e).enumerable
                   }))), r.forEach(function(t) {
                     var r;
-                    r = l[t], t in e ? Object.defineProperty(e, t, {
+                    r = n[t], t in e ? Object.defineProperty(e, t, {
                       value: r,
                       enumerable: true,
                       configurable: true,
@@ -69,42 +69,42 @@ function g(e, t) {
               }({
                 guildId: t,
                 title: d,
-                description: m.intl.string(p.default.BBRFRd),
+                description: f.intl.string(m.default.BBRFRd),
                 powerups: e,
-                footerInfoText: _,
-                footerAction: n && null != I && null != E ? {
-                  variant: y,
+                footerInfoText: j,
+                footerAction: l && null != y && null != E ? {
+                  variant: w,
                   text: E,
-                  icon: "expressive" === y ? o._Jp : true,
-                  onClick: I
+                  icon: "expressive" === w ? s._Jp : true,
+                  onClick: y
                 } : true
-              }, l))
+              }, n))
             }, {
               onCloseCallback: null == i ? true : i.onModalClose
             })
           },
           viewCta: h,
-          viewCtaTooltip: j,
+          viewCtaTooltip: b,
           image: {
-            staticUrl: A.A,
+            staticUrl: g.A,
             animatedUrl: v.A
           }
         }
       }({
         guildId: t,
-        canUseBoosts: x,
-        allPowerups: b,
+        canUseBoosts: _,
+        allPowerups: x,
         unlockedPowerups: h
       }) : true,
-      s = {};
+      o = {};
     for (let t of e) {
-      let e = n(t);
-      null != e && (s[t] = e)
+      let e = l(t);
+      null != e && (o[t] = e)
     }
-    return s
-  }, [e, t, x, b, h])
+    return o
+  }, [e, t, _, x, h])
 }
 
-function x(e, t) {
-  return g([e], t)[e]
+function _(e, t) {
+  return A([e], t)[e]
 }

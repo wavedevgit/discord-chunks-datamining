@@ -37,12 +37,12 @@ function o() {
     return t => (0, a.jsx)(e, s({}, t))
   }, {
     onCloseCallback: () => {
-      i.h.dispatch({
+      r.h.dispatch({
         type: "LOGIN_RESET",
         isMultiAccount: true
       })
     },
-    modalKey: r.ov
+    modalKey: i.ov
   })
 }
 
@@ -68,11 +68,11 @@ function c() {
     }
   }, {
     onCloseCallback: () => {
-      i.h.dispatch({
+      r.h.dispatch({
         type: "LOGIN_RESET",
         isMultiAccount: true
       })
     },
-    modalKey: r.Gl
+    modalKey: i.Gl
   })
 }

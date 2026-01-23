@@ -32,7 +32,7 @@ function h(e) {
   }), [u]);
   (0, r.N)(() => {
     let e = h || U.root;
-    if (U.getTreeNode(e.scopeRef) && _ && !S(_, e.scopeRef)) {
+    if (U.getTreeNode(e.scopeRef) && _ && !I(_, e.scopeRef)) {
       let t = U.getTreeNode(_);
       t && (e = t)
     }
@@ -49,25 +49,25 @@ function h(e) {
     return u.current = n, () => {
       for (let e of n) e.removeEventListener(p, r)
     }
-  }, [t]), R(u, s, n), y(u, n), P(u, s, n), N(u, o), (0, d.useEffect)(() => {
+  }, [t]), R(u, s, n), b(u, n), P(u, s, n), N(u, o), (0, d.useEffect)(() => {
     let e = (0, i.bq)((0, a.TW)(u.current ? u.current[0] : true)),
       t = null;
-    if (A(e, u.current)) {
-      for (let n of U.traverse()) n.scopeRef && A(e, n.scopeRef.current) && (t = n);
+    if (v(e, u.current)) {
+      for (let n of U.traverse()) n.scopeRef && v(e, n.scopeRef.current) && (t = n);
       t === U.getTreeNode(u) && (_ = t.scopeRef)
     }
   }, [u]), (0, r.N)(() => () => {
     var e, t, n;
     let r = null != (n = null == (t = U.getTreeNode(u)) || null == (e = t.parent) ? true : e.scopeRef) ? n : null;
-    (u === _ || S(u, _)) && (!r || U.getTreeNode(r)) && (_ = r), U.removeTreeNode(u)
+    (u === _ || I(u, _)) && (!r || U.getTreeNode(r)) && (_ = r), U.removeTreeNode(u)
   }, [u]);
   let E = (0, d.useMemo)(() => m(u), []),
-    b = (0, d.useMemo)(() => ({
+    y = (0, d.useMemo)(() => ({
       focusManager: E,
       parentNode: g
     }), [g, E]);
   return d.createElement(f.Provider, {
-    value: b
+    value: y
   }, d.createElement("span", {
     "data-focus-scope-start": true,
     hidden: true,
@@ -96,9 +96,9 @@ function m(e) {
           tabbable: o,
           accept: c
         }, r);
-      f.currentNode = A(u, r) ? u : d;
+      f.currentNode = v(u, r) ? u : d;
       let p = f.nextNode();
-      return !p && l && (f.currentNode = d, p = f.nextNode()), p && I(p, true), p
+      return !p && l && (f.currentNode = d, p = f.nextNode()), p && S(p, true), p
     },
     focusPrevious(t = {}) {
       var n;
@@ -115,9 +115,9 @@ function m(e) {
           tabbable: o,
           accept: c
         }, r);
-      f.currentNode = A(u, r) ? u : d;
+      f.currentNode = v(u, r) ? u : d;
       let p = f.previousNode();
-      return !p && l && (f.currentNode = d, p = f.previousNode()), p && I(p, true), p
+      return !p && l && (f.currentNode = d, p = f.previousNode()), p && S(p, true), p
     },
     focusFirst(t = {}) {
       let n = e.current,
@@ -131,7 +131,7 @@ function m(e) {
         }, n);
       a.currentNode = n[0].previousElementSibling;
       let s = a.nextNode();
-      return s && I(s, true), s
+      return s && S(s, true), s
     },
     focusLast(t = {}) {
       let n = e.current,
@@ -145,7 +145,7 @@ function m(e) {
         }, n);
       a.currentNode = n[n.length - 1].nextElementSibling;
       let s = a.previousNode();
-      return s && I(s, true), s
+      return s && S(s, true), s
     }
   }
 }
@@ -163,7 +163,7 @@ function E(e) {
   returntrue
 }
 
-function b(e) {
+function y(e) {
   if (e.checked) returntrue;
   let t = [];
   if (e.form) {
@@ -174,7 +174,7 @@ function b(e) {
   return !!t && !t.some(e => e.checked)
 }
 
-function y(e, t) {
+function b(e, t) {
   let n = (0, d.useRef)(true),
     o = (0, d.useRef)(true);
   (0, r.N)(() => {
@@ -188,24 +188,24 @@ function y(e, t) {
         if ("Tab" !== t.key || t.altKey || t.ctrlKey || t.metaKey || !E(e) || t.isComposing) return;
         let n = (0, i.bq)(l),
           r = e.current;
-        if (!r || !A(n, r)) return;
+        if (!r || !v(n, r)) return;
         let a = x(g(r), {
           tabbable: true
         }, r);
         if (!n) return;
         a.currentNode = n;
         let s = t.shiftKey ? a.previousNode() : a.nextNode();
-        s || (a.currentNode = t.shiftKey ? r[r.length - 1].nextElementSibling : r[0].previousElementSibling, s = t.shiftKey ? a.previousNode() : a.nextNode()), t.preventDefault(), s && I(s, true)
+        s || (a.currentNode = t.shiftKey ? r[r.length - 1].nextElementSibling : r[0].previousElementSibling, s = t.shiftKey ? a.previousNode() : a.nextNode()), t.preventDefault(), s && S(s, true)
       },
       d = t => {
-        (!_ || S(_, e)) && A((0, i.wt)(t), e.current) ? (_ = e, n.current = (0, i.wt)(t)) : E(e) && !v((0, i.wt)(t), e) ? n.current ? n.current.focus() : _ && _.current && C(_.current) : E(e) && (n.current = (0, i.wt)(t))
+        (!_ || I(_, e)) && v((0, i.wt)(t), e.current) ? (_ = e, n.current = (0, i.wt)(t)) : E(e) && !A((0, i.wt)(t), e) ? n.current ? n.current.focus() : _ && _.current && C(_.current) : E(e) && (n.current = (0, i.wt)(t))
       },
       f = t => {
         o.current && cancelAnimationFrame(o.current), o.current = requestAnimationFrame(() => {
           let r = (0, c.ME)(),
             a = ("virtual" === r || null === r) && (0, s.m0)() && (0, s.H8)(),
             o = (0, i.bq)(l);
-          if (!a && o && E(e) && !v(o, e)) {
+          if (!a && o && E(e) && !A(o, e)) {
             _ = e;
             let r = (0, i.wt)(t);
             if (r && r.isConnected) {
@@ -224,24 +224,24 @@ function y(e, t) {
 }
 
 function O(e) {
-  return v(e)
+  return A(e)
 }
 
-function A(e, t) {
+function v(e, t) {
   return !!e && !!t && t.some(t => t.contains(e))
 }
 
-function v(e, t = null) {
+function A(e, t = null) {
   if (e instanceof Element && e.closest("[data-react-aria-top-layer]")) returntrue;
   for (let {
       scopeRef: n
     }
     of U.traverse(U.getTreeNode(t)))
-    if (n && A(e, n.current)) returntrue;
+    if (n && v(e, n.current)) returntrue;
   returnfalse
 }
 
-function S(e, t) {
+function I(e, t) {
   var n;
   let r = null == (n = U.getTreeNode(t)) ? true : n.parent;
   for (; r;) {
@@ -251,7 +251,7 @@ function S(e, t) {
   returnfalse
 }
 
-function I(e, t = false) {
+function S(e, t = false) {
   if (null == e || t) {
     if (null != e) try {
       e.focus()
@@ -275,7 +275,7 @@ function T(e, t = true) {
 }
 
 function C(e, t = true) {
-  I(T(e, t))
+  S(T(e, t))
 }
 
 function N(e, t) {
@@ -284,7 +284,7 @@ function N(e, t) {
     if (n.current) {
       _ = e;
       let t = (0, a.TW)(e.current ? e.current[0] : true);
-      !A((0, i.bq)(t), _.current) && e.current && C(e.current)
+      !v((0, i.bq)(t), _.current) && e.current && C(e.current)
     }
     n.current = false
   }, [e])
@@ -297,7 +297,7 @@ function R(e, t, n) {
       s = (0, a.TW)(r ? r[0] : true),
       o = t => {
         let n = (0, i.wt)(t);
-        A(n, e.current) ? _ = e : O(n) || (_ = null)
+        v(n, e.current) ? _ = e : O(n) || (_ = null)
       };
     return s.addEventListener("focusin", o, false), null == r || r.forEach(e => e.addEventListener("focusin", o, false)), () => {
       s.removeEventListener("focusin", o, false), null == r || r.forEach(e => e.removeEventListener("focusin", o, false))
@@ -321,7 +321,7 @@ function P(e, t, n) {
       s = (0, a.TW)(r ? r[0] : true);
     if (!t || n) return;
     let o = () => {
-      (!_ || S(_, e)) && A((0, i.bq)(s), e.current) && (_ = e)
+      (!_ || I(_, e)) && v((0, i.bq)(s), e.current) && (_ = e)
     };
     return s.addEventListener("focusin", o, false), null == r || r.forEach(e => e.addEventListener("focusin", o, false)), () => {
       s.removeEventListener("focusin", o, false), null == r || r.forEach(e => e.removeEventListener("focusin", o, false))
@@ -332,7 +332,7 @@ function P(e, t, n) {
     let i = t => {
       if ("Tab" !== t.key || t.altKey || t.ctrlKey || t.metaKey || !E(e) || t.isComposing) return;
       let n = r.activeElement;
-      if (!v(n, e) || !w(e)) return;
+      if (!A(n, e) || !w(e)) return;
       let i = U.getTreeNode(e);
       if (!i) return;
       let a = i.nodeToRestore,
@@ -341,10 +341,10 @@ function P(e, t, n) {
         });
       s.currentNode = n;
       let o = t.shiftKey ? s.previousNode() : s.nextNode();
-      if (a && a.isConnected && a !== r.body || (a = true, i.nodeToRestore = true), (!o || !v(o, e)) && a) {
+      if (a && a.isConnected && a !== r.body || (a = true, i.nodeToRestore = true), (!o || !A(o, e)) && a) {
         s.currentNode = a;
-        do o = t.shiftKey ? s.previousNode() : s.nextNode(); while (v(o, e));
-        t.preventDefault(), t.stopPropagation(), o ? I(o, true) : O(a) ? I(a, true) : n.blur()
+        do o = t.shiftKey ? s.previousNode() : s.nextNode(); while (A(o, e));
+        t.preventDefault(), t.stopPropagation(), o ? S(o, true) : O(a) ? S(a, true) : n.blur()
       }
     };
     return n || r.addEventListener("keydown", i, true), () => {
@@ -360,7 +360,7 @@ function P(e, t, n) {
       if (!n) return;
       let a = n.nodeToRestore,
         s = (0, i.bq)(r);
-      if (t && a && (s && v(s, e) || s === r.body && w(e))) {
+      if (t && a && (s && A(s, e) || s === r.body && w(e))) {
         let t = U.clone();
         requestAnimationFrame(() => {
           if (r.activeElement === r.body) {
@@ -384,7 +384,7 @@ function D(e) {
   e.dispatchEvent(new CustomEvent(p, {
     bubbles: true,
     cancelable: true
-  })) && I(e)
+  })) && S(e)
 }
 
 function x(e, t, n) {
@@ -394,7 +394,7 @@ function x(e, t, n) {
     c = (0, l.H)(s, e || s, NodeFilter.SHOW_ELEMENT, {
       acceptNode(e) {
         var i;
-        return (null == t || null == (i = t.from) ? true : i.contains(e)) || (null == t ? true : t.tabbable) && "INPUT" === e.tagName && "radio" === e.getAttribute("type") && (!b(e) || "INPUT" === c.currentNode.tagName && "radio" === c.currentNode.type && c.currentNode.name === e.name) ? NodeFilter.FILTER_REJECT : r(e) && (!n || A(e, n)) && (!(null == t ? true : t.accept) || t.accept(e)) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP
+        return (null == t || null == (i = t.from) ? true : i.contains(e)) || (null == t ? true : t.tabbable) && "INPUT" === e.tagName && "radio" === e.getAttribute("type") && (!y(e) || "INPUT" === c.currentNode.tagName && "radio" === c.currentNode.type && c.currentNode.name === e.name) ? NodeFilter.FILTER_REJECT : r(e) && (!n || v(e, n)) && (!(null == t ? true : t.accept) || t.accept(e)) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP
       }
     });
   return (null == t ? true : t.from) && (c.currentNode = t.from), c
@@ -416,7 +416,7 @@ function L(e, t = {}) {
       });
       r.contains(u) && (d.currentNode = u);
       let f = d.nextNode();
-      return !f && l && (d.currentNode = r, f = d.nextNode()), f && I(f, true), f
+      return !f && l && (d.currentNode = r, f = d.nextNode()), f && S(f, true), f
     },
     focusPrevious(n = t) {
       let r = e.current;
@@ -433,7 +433,7 @@ function L(e, t = {}) {
       if (r.contains(u)) d.currentNode = u;
       else {
         let e = j(d);
-        return e && I(e, true), null != e ? e : null
+        return e && S(e, true), null != e ? e : null
       }
       let f = d.previousNode();
       if (!f && l) {
@@ -442,7 +442,7 @@ function L(e, t = {}) {
         if (!e) return null;
         f = e
       }
-      return f && I(f, true), null != f ? f : null
+      return f && S(f, true), null != f ? f : null
     },
     focusFirst(n = t) {
       let r = e.current;
@@ -454,7 +454,7 @@ function L(e, t = {}) {
         tabbable: i,
         accept: a
       }).nextNode();
-      return s && I(s, true), s
+      return s && S(s, true), s
     },
     focusLast(n = t) {
       let r = e.current;
@@ -466,7 +466,7 @@ function L(e, t = {}) {
         tabbable: i,
         accept: a
       }));
-      return s && I(s, true), null != s ? s : null
+      return s && S(s, true), null != s ? s : null
     }
   }
 }
@@ -499,7 +499,7 @@ class M {
     let t = this.fastMap.get(e);
     if (!t) return;
     let n = t.parent;
-    for (let e of this.traverse()) e !== t && t.nodeToRestore && e.nodeToRestore && t.scopeRef && t.scopeRef.current && A(e.nodeToRestore, t.scopeRef.current) && (e.nodeToRestore = t.nodeToRestore);
+    for (let e of this.traverse()) e !== t && t.nodeToRestore && e.nodeToRestore && t.scopeRef && t.scopeRef.current && v(e.nodeToRestore, t.scopeRef.current) && (e.nodeToRestore = t.nodeToRestore);
     let r = t.children;
     n && (n.removeChild(t), r.size > 0 && r.forEach(e => n && n.addChild(e))), this.fastMap.delete(t.scopeRef)
   }* traverse(e = this.root) {

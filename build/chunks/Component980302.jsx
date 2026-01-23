@@ -18,16 +18,16 @@ function u(e) {
     isOpen: t,
     dropdownLinks: a,
     TrackClick: u,
-    avoidRouter: N,
-    id: A,
-    "aria-label": p
-  } = e, h = (0, r.dI)({
-    history: (0, l.W6)()
-  }), b = a.map((e, t) => e.divider ? (0, s.jsx)("hr", {
+    avoidRouter: _,
+    id: N,
+    "aria-label": A
+  } = e, p = (0, l.dI)({
+    history: (0, s.W6)()
+  }), h = a.map((e, t) => e.divider ? (0, r.jsx)("hr", {
     className: c.divider
-  }, "divider-".concat(t)) : e.external ? (0, s.jsx)("li", {
+  }, "divider-".concat(t)) : e.external ? (0, r.jsx)("li", {
     className: c.moreListItemInactive,
-    children: (0, s.jsx)(u, {
+    children: (0, r.jsx)(u, {
       className: c.moreListLink,
       eventName: d,
       data: {
@@ -35,20 +35,20 @@ function u(e) {
       },
       href: e.route,
       rel: "me",
-      children: (0, s.jsx)("span", {
+      children: (0, r.jsx)("span", {
         className: c.moreListLinkCopy,
         children: e.title
       })
     })
-  }, e.route) : (0, s.jsx)("li", {
-    className: (0, n.t)(c, "moreListItem", h(e.route) ? "Active" : "Inactive"),
-    children: (0, s.jsx)(i.A, {
-      avoidRouter: N,
+  }, e.route) : (0, r.jsx)("li", {
+    className: (0, n.t)(c, "moreListItem", p(e.route) ? "Active" : "Inactive"),
+    children: (0, r.jsx)(i.A, {
+      avoidRouter: _,
       className: c.moreListLink,
       to: e.route,
       from: o.sE.MAIN_NAVIGATION_MENU,
       role: "menuitem",
-      children: (0, s.jsx)(u, {
+      children: (0, r.jsx)(u, {
         tag: "span",
         className: c.moreListLinkCopy,
         eventName: d,
@@ -59,10 +59,10 @@ function u(e) {
       })
     })
   }, e.route));
-  return (0, s.jsx)("ul", {
-    id: A,
+  return (0, r.jsx)("ul", {
+    id: N,
     className: (0, n.t)(c, "moreList", t ? "Open" : "Closed"),
-    "aria-label": p,
-    children: b
+    "aria-label": A,
+    children: h
   })
 }

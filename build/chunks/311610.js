@@ -98,13 +98,13 @@ module.exports = function(e, t, n, a) {
     }),
     E = o();
   if ("before" === a) {
-    var b = e.getBlockBefore(l);
-    b && b.getKey() === t.getKey() && s(false), E = h.concat([].concat(g, [
+    var y = e.getBlockBefore(l);
+    y && y.getKey() === t.getKey() && s(false), E = h.concat([].concat(g, [
       [l, n]
     ]), m).toOrderedMap()
   } else if ("after" === a) {
-    var y = e.getBlockAfter(l);
-    y && y.getKey() === c && s(false), E = h.concat([
+    var b = e.getBlockAfter(l);
+    b && b.getKey() === c && s(false), E = h.concat([
       [l, n]
     ].concat(g), m).toOrderedMap()
   }

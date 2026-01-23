@@ -33,7 +33,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,13 +57,13 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -95,7 +95,7 @@ function C(e) {
     onAction: u
   } = e;
   return (0, r.jsx)(l.A, {
-    className: (0, E.t)(y, "actions", t),
+    className: (0, E.t)(b, "actions", t),
     type: t,
     source: n,
     activity: i,
@@ -114,14 +114,14 @@ function N(e) {
     user: n,
     useStoreStream: l = true,
     showActions: E = true,
-    hideHeader: y = false,
+    hideHeader: b = false,
     showChannelDetails: O = false
-  } = e, v = I(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]), T = (0, a.bG)([m.A, _.A], () => {
+  } = e, A = S(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]), T = (0, a.bG)([m.A, _.A], () => {
     var e;
     return _.A.getChannel(null == (e = m.A.getVoiceStateForUser(n.id)) ? true : e.channelId)
-  }), N = (0, d.v)("UserActivityContainer", T), R = (0, a.bG)([p.A], () => l ? p.A.getAnyStreamForUser(n.id) : null), w = (null == t ? true : t.type) === b.$pd.HANG_STATUS && N ? T : null, P = (0, a.bG)([h.A, m.A, _.A], () => {
+  }), N = (0, d.v)("UserActivityContainer", T), R = (0, a.bG)([p.A], () => l ? p.A.getAnyStreamForUser(n.id) : null), w = (null == t ? true : t.type) === y.$pd.HANG_STATUS && N ? T : null, P = (0, a.bG)([h.A, m.A, _.A], () => {
     var e, r;
-    return (0, s.A)(t, b.jUm.EMBEDDED) ? h.A.getGuild(null == (e = _.A.getChannel(null == (r = m.A.getVoiceStateForSession(n.id, null == t ? true : t.session_id)) ? true : r.channelId)) ? true : e.getGuildId()) : null != w ? h.A.getGuild(w.getGuildId()) : null
+    return (0, s.A)(t, y.jUm.EMBEDDED) ? h.A.getGuild(null == (e = _.A.getChannel(null == (r = m.A.getVoiceStateForSession(n.id, null == t ? true : t.session_id)) ? true : r.channelId)) ? true : e.getGuildId()) : null != w ? h.A.getGuild(w.getGuildId()) : null
   }), D = (0, a.bG)([h.A], () => null != R ? h.A.getGuild(R.guildId) : null), x = (0, a.bG)([c.A], () => {
     if (null != t)
       if (null != t.application_id) return c.A.getApplication(t.application_id);
@@ -129,19 +129,19 @@ function N(e) {
     return null
   });
   return (i.useEffect(() => {
-    (null == t ? true : t.type) === b.$pd.HANG_STATUS && N && g.default.track(b.HAw.VIEW_HANG_STATUS, A({
+    (null == t ? true : t.type) === y.$pd.HANG_STATUS && N && g.default.track(y.HAw.VIEW_HANG_STATUS, v({
       source: "UserActivity",
       other_user_id: n.id
     }, (0, u.A)(null == w ? true : w.id)))
-  }, [null == t ? true : t.type, N, w, n.id]), (null == t ? true : t.type) !== b.$pd.HANG_STATUS || N) ? (0, r.jsx)(o.A, S(A({}, v), {
+  }, [null == t ? true : t.type, N, w, n.id]), (null == t ? true : t.type) !== y.$pd.HANG_STATUS || N) ? (0, r.jsx)(o.A, I(v({}, A), {
     activity: t,
     user: n,
     application: x,
-    hideHeader: y,
+    hideHeader: b,
     activityGuild: null != P ? P : D,
     showChannelDetails: O,
     channel: O ? T : true,
-    renderActions: E ? () => (0, r.jsx)(C, S(A({}, v), {
+    renderActions: E ? () => (0, r.jsx)(C, I(v({}, A), {
       applicationStream: R,
       activity: t,
       user: n

@@ -30,13 +30,13 @@ var Chunk792976 = require("./792976.js"),
 class T {
   createCasualConfiguration(e = false) {
     let t = this.createConfiguration(false, e);
-    return t.parsers.push(new h.A), t.parsers.push(new m.A), t.parsers.push(new s.A), t.parsers.push(new E.A), t.parsers.push(new y.A), t.refiners.push(new I.A), t
+    return t.parsers.push(new h.A), t.parsers.push(new m.A), t.parsers.push(new s.A), t.parsers.push(new E.A), t.parsers.push(new b.A), t.refiners.push(new S.A), t
   }
   createConfiguration(e = true, t = false) {
     let n = (0, _.i)({
-      parsers: [new b.A(t), new r.A(e), new i.A, new a.A(t), new g.A, new l.A, new c.A(e), new u.A(e), new d.A(e)],
+      parsers: [new y.A(t), new r.A(e), new i.A, new a.A(t), new g.A, new l.A, new c.A(e), new u.A(e), new d.A(e)],
       refiners: [new p.A]
     }, e);
-    return n.parsers.unshift(new o.A(e)), n.refiners.unshift(new A.A), n.refiners.unshift(new O.A), n.refiners.unshift(new v.A), n.refiners.push(new p.A), n.refiners.push(new S.A), n.refiners.push(new f.A), n
+    return n.parsers.unshift(new o.A(e)), n.refiners.unshift(new v.A), n.refiners.unshift(new O.A), n.refiners.unshift(new A.A), n.refiners.push(new p.A), n.refiners.push(new I.A), n.refiners.push(new f.A), n
   }
 }

@@ -2,7 +2,7 @@
 /** chunk id: 991023, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -62,12 +62,12 @@ function E(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = b(e, t), Object.getOwnPropertySymbols)
+  if (a = y(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -75,7 +75,7 @@ function b(e, t) {
   return i
 }
 
-function y(e) {
+function b(e) {
   let {
     section: t,
     channel: {
@@ -84,22 +84,22 @@ function y(e) {
     isSelected: a,
     width: _,
     height: m,
-    className: b,
-    selectable: y = false,
+    className: y,
+    selectable: b = false,
     isSquircle: O,
-    onFocus: A,
-    onBlur: v,
-    onMouseOver: S,
-    onMouseLeave: I
+    onFocus: v,
+    onBlur: A,
+    onMouseOver: I,
+    onMouseLeave: S
   } = e, T = E(e, ["section", "channel", "isSelected", "width", "height", "className", "selectable", "isSquircle", "onFocus", "onBlur", "onMouseOver", "onMouseLeave"]), [C, N] = i.useState(false), R = i.useCallback(() => {
-    N(true), null == A || A()
-  }, [A]), w = i.useCallback(() => {
-    N(false), null == v || v()
-  }, [v]), P = i.useCallback(() => {
-    N(true), null == S || S()
-  }, [S]), D = i.useCallback(() => {
-    N(false), null == I || I()
-  }, [I]), x = (0, o.bG)([c.Ay], () => {
+    N(true), null == v || v()
+  }, [v]), w = i.useCallback(() => {
+    N(false), null == A || A()
+  }, [A]), P = i.useCallback(() => {
+    N(true), null == I || I()
+  }, [I]), D = i.useCallback(() => {
+    N(false), null == S || S()
+  }, [S]), x = (0, o.bG)([c.Ay], () => {
     var e, r, i, a;
     return (null == (r = t.application) || null == (e = r.bot) ? true : e.id) != null ? c.Ay.getMember(n, null == (a = t.application) || null == (i = a.bot) ? true : i.id) : null
   }), L = i.useMemo(() => {
@@ -114,9 +114,9 @@ function y(e) {
     })
   }, [t, _, x]);
   return (0, r.jsx)("div", g(h({}, T), {
-    className: s()(f.iE, b, {
-      [f.rb]: y,
-      [f.wH]: y && a
+    className: s()(f.iE, y, {
+      [f.rb]: b,
+      [f.wH]: b && a
     }),
     onFocus: R,
     onBlur: w,
@@ -124,7 +124,7 @@ function y(e) {
     onMouseLeave: D,
     children: (0, r.jsx)(l.Ay, {
       className: f.dK,
-      mask: O || y && (a || C) ? l.hW.SQUIRCLE : l.hW.AVATAR_DEFAULT,
+      mask: O || b && (a || C) ? l.hW.SQUIRCLE : l.hW.AVATAR_DEFAULT,
       width: _,
       height: m,
       children: (0, r.jsx)("img", {

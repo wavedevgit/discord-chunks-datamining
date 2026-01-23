@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 428899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => A
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk190323 = require("./190323.js");
 
-function A(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function A(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class g extends Chunk64700.PureComponent {
+class m extends Chunk64700.PureComponent {
   componentDidMount() {
     let {
       sku: e,
@@ -39,9 +39,9 @@ class g extends Chunk64700.PureComponent {
       primarySku: t
     } = this.props, n = [], i = null;
     if (null != e) {
-      let r = f.BVt.APPLICATION_STORE_LISTING_SKU(e.id, e.slug);
+      let r = h.BVt.APPLICATION_STORE_LISTING_SKU(e.id, e.slug);
       i = r, null != t && n.push({
-        id: f.BVt.APPLICATION_STORE_LISTING_SKU(t.id, t.slug),
+        id: h.BVt.APPLICATION_STORE_LISTING_SKU(t.id, t.slug),
         label: t.name
       }), n.push({
         id: r,
@@ -56,27 +56,27 @@ class g extends Chunk64700.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), A(this, "handleClick", e => {
+    super(...e), f(this, "handleClick", e => {
       let {
         sku: t
       } = this.props;
       (0, d.pX)(e.id, {
         state: {
           analyticsSource: {
-            object: f.ZSU.NAVIGATION_LINK,
-            section: f.JJy.NAVIGATION,
-            page: null == t ? f.liQ.STORE_DIRECTORY_BROWSE : f.liQ.STORE_LISTING
+            object: h.ZSU.NAVIGATION_LINK,
+            section: h.JJy.NAVIGATION,
+            page: null == t ? h.liQ.STORE_DIRECTORY_BROWSE : h.liQ.STORE_LISTING
           }
         }
       })
-    }), A(this, "renderCustomBreadcrumb", (e, t) => (0, r.jsx)(u.A.Title, {
-      className: t ? null : h.Q,
+    }), f(this, "renderCustomBreadcrumb", (e, t) => (0, r.jsx)(u.A.Title, {
+      className: t ? null : g.Q,
       muted: !t,
       children: e.label
     }))
   }
 }
-let m = (0, Chunk707606.A)(Chunk311907.Ay.connectStores([Chunk587895.A, Chunk67480.A], e => {
+let A = (0, Chunk707606.A)(Chunk311907.Ay.connectStores([Chunk587895.A, Chunk67480.A], e => {
   let {
     sku: t
   } = e, n = null != t ? c.A.getApplication(t.applicationId) : null, r = null != n && null != n.primarySkuId && n.primarySkuId !== t.id ? n.primarySkuId : null;
@@ -85,4 +85,4 @@ let m = (0, Chunk707606.A)(Chunk311907.Ay.connectStores([Chunk587895.A, Chunk674
     isFetchingPrimarySku: null != r && p.A.isFetching(r),
     primarySku: null != r ? p.A.get(r) : null
   }
-})(g))
+})(m))

@@ -1,7 +1,7 @@
 /** Chunk was on 41031 **/
 /** chunk id: 112895, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => N
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,27 +12,27 @@ var Chunk627968 = require("./627968.js"),
   Chunk818348 = require("./818348.js"),
   Chunk563853 = require("./563853.js"),
   Chunk138649 = require("./138649.js");
-let N = Chunk818348.sE.MAIN_NAVIGATION_MENU;
+let _ = Chunk818348.sE.MAIN_NAVIGATION_MENU;
 
-function A(e) {
+function N(e) {
   let {
     TrackClick: t,
     title: a,
-    links: A,
-    onClose: p,
-    onOpen: h,
-    isOpen: b = false,
-    isMobile: f,
-    avoidRouter: k
-  } = e, I = (0, n.dI)({
-    history: (0, r.W6)()
-  }), O = l.useId(), m = () => p(), g = () => h(a), _ = () => b ? p() : h(a), T = f && b ? (0, s.jsx)("ul", {
+    links: N,
+    onClose: A,
+    onOpen: p,
+    isOpen: h = false,
+    isMobile: m,
+    avoidRouter: I
+  } = e, k = (0, n.dI)({
+    history: (0, l.W6)()
+  }), g = s.useId(), O = () => A(), T = () => p(a), b = () => h ? A() : p(a), f = m && h ? (0, r.jsx)("ul", {
     className: u.Er,
-    id: O,
-    children: A.map(e => e.external ? (0, s.jsx)("li", {
+    id: g,
+    children: N.map(e => e.external ? (0, r.jsx)("li", {
       className: u.ni,
-      children: (0, s.jsx)(t, {
-        eventName: N,
+      children: (0, r.jsx)(t, {
+        eventName: _,
         className: u.qz,
         data: {
           linkClicked: "mobile-".concat(e.linkClicked)
@@ -41,16 +41,16 @@ function A(e) {
         href: e.route,
         children: e.title
       })
-    }, e.route) : (0, s.jsx)("li", {
-      className: I(e.route) ? u.wL : u.ni,
-      children: (0, s.jsx)(i.A, {
-        avoidRouter: k,
+    }, e.route) : (0, r.jsx)("li", {
+      className: k(e.route) ? u.wL : u.ni,
+      children: (0, r.jsx)(i.A, {
+        avoidRouter: I,
         to: e.route,
         from: c.sE.MAIN_NAVIGATION_MENU,
-        children: (0, s.jsx)(t, {
+        children: (0, r.jsx)(t, {
           className: u.qz,
           tag: "span",
-          eventName: N,
+          eventName: _,
           data: {
             linkClicked: "mobile-".concat(e.linkClicked)
           },
@@ -59,53 +59,53 @@ function A(e) {
       })
     }, e.route))
   }) : null;
-  return f ? (0, s.jsxs)("li", {
+  return m ? (0, r.jsxs)("li", {
     className: u.__invalid_subListHeading,
     tabIndex: false,
-    onClick: _,
+    onClick: b,
     onKeyDown: e => {
-      ("Enter" === e.key || " " === e.key) && (e.preventDefault(), _())
+      ("Enter" === e.key || " " === e.key) && (e.preventDefault(), b())
     },
-    children: [(0, s.jsxs)("span", {
+    children: [(0, r.jsxs)("span", {
       className: u.DC,
       "aria-label": "Open ".concat(a, " Nav"),
-      "aria-expanded": b,
-      "aria-controls": O,
+      "aria-expanded": h,
+      "aria-controls": g,
       "aria-haspopup": "true",
       role: "menuitem",
       tabIndex: 0,
-      children: [a, (0, s.jsx)("img", {
+      children: [a, (0, r.jsx)("img", {
         src: d.T.ICON_ARROW_DOWN,
         className: u.fr,
         alt: "Open Nav"
       })]
-    }, "more"), T]
-  }, "dropdown_".concat(a)) : (0, s.jsxs)("li", {
+    }, "more"), f]
+  }, "dropdown_".concat(a)) : (0, r.jsxs)("li", {
     role: "none",
     tabIndex: false,
-    onFocus: g,
-    onBlur: m,
-    onMouseEnter: g,
-    onMouseLeave: m,
+    onFocus: T,
+    onBlur: O,
+    onMouseEnter: T,
+    onMouseLeave: O,
     className: u.pX,
-    children: [(0, s.jsxs)("span", {
+    children: [(0, r.jsxs)("span", {
       className: u.Bc,
       role: "menuitem",
       tabIndex: 0,
       "aria-haspopup": "true",
-      "aria-expanded": b,
-      "aria-controls": O,
-      children: [a, (0, s.jsx)("img", {
+      "aria-expanded": h,
+      "aria-controls": g,
+      children: [a, (0, r.jsx)("img", {
         src: d.T.ICON_ARROW_DOWN,
         className: u.fr,
         alt: "Open Nav"
       })]
-    }, "more"), (0, s.jsx)(o.r, {
-      id: O,
-      avoidRouter: k,
+    }, "more"), (0, r.jsx)(o.r, {
+      id: g,
+      avoidRouter: I,
       TrackClick: t,
-      isOpen: b,
-      dropdownLinks: A,
+      isOpen: h,
+      dropdownLinks: N,
       "aria-label": a
     })]
   }, "dropdown_".concat(a))

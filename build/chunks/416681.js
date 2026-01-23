@@ -13,11 +13,11 @@ function o(e, t, n) {
   return null != n ? "#".concat(e(t, n)) : "#".concat(t)
 }
 
-function c(e) {
+function u(e) {
   return document.querySelector(e)
 }
 
-function u(e) {
+function c(e) {
   var t;
   null == (t = document.getElementById(e)) || t.focus()
 }
@@ -32,21 +32,21 @@ function E(e) {
     getNewFocusIndex: g,
     maintainFocusPosition: A = true,
     includeSetSizes: T = true,
-    focusOnMount: f = true,
-    enabled: h = true,
-    onDispatch: I
-  } = e, O = l.useCallback((e, t) => {
+    focusOnMount: h = true,
+    enabled: I = true,
+    onDispatch: O
+  } = e, m = l.useCallback((e, t) => {
     let n = (0, r.A)(e, t);
-    return null != I && I(e, n, t), n
-  }, [I]), [N, m] = l.useReducer(O, {
+    return null != O && O(e, n, t), n
+  }, [O]), [N, f] = l.useReducer(m, {
     focusedIndex: E,
     itemCount: n
   }), {
-    itemCount: S,
-    focusedIndex: p
-  } = N, [b] = l.useState(() => (0, i.nF)(m, 16));
+    itemCount: p,
+    focusedIndex: S
+  } = N, [G] = l.useState(() => (0, i.nF)(f, 16));
   return l.useEffect(() => {
-      m({
+      f({
         type: r.D.UPDATE_ITEM_COUNT,
         itemCount: n
       })
@@ -57,48 +57,48 @@ function E(e) {
         itemCount: n,
         focusedIndex: E,
         onSelect: d,
-        setFocus: _ = u,
+        setFocus: _ = c,
         getNewFocusIndex: g,
         dispatch: A,
         maintainFocusPosition: T,
-        includeSetSizes: f,
-        focusOnMount: h,
-        enabled: I,
-        makeId: O = i.M4,
+        includeSetSizes: h,
+        focusOnMount: I,
+        enabled: O,
+        makeId: m = i.M4,
         getIndexFromId: N
-      } = e, m = l.useRef(n), S = l.useRef(N);
-      S.current = N, m.current = n;
-      let p = l.useRef(I);
+      } = e, f = l.useRef(n), p = l.useRef(N);
+      p.current = N, f.current = n;
+      let S = l.useRef(O);
       l.useEffect(() => {
-        p.current = I
-      }, [I]);
-      let [b, G] = l.useState(false), [R] = l.useState(() => new i.Lp(e => () => {
-        let t = null != S.current && "string" == typeof e ? S.current(e) : e;
+        S.current = O
+      }, [O]);
+      let [G, R] = l.useState(false), [D] = l.useState(() => new i.Lp(e => () => {
+        let t = null != p.current && "string" == typeof e ? p.current(e) : e;
         "number" != typeof t || t < 0 || A({
           type: r.D.SET_FOCUSED_INDEX,
           index: t
         })
       }));
-      l.useEffect(() => () => R.clean(), [R]);
-      let D = l.useCallback((e, t) => {
-          p.current && _(e, t)
+      l.useEffect(() => () => D.clean(), [D]);
+      let C = l.useCallback((e, t) => {
+          S.current && _(e, t)
         }, [_]),
-        [L, x] = l.useState(true);
+        [L, b] = l.useState(true);
       l.useEffect(() => {
-        L && !h ? x(false) : D(O(t, E), E)
+        L && !I ? b(false) : C(m(t, E), E)
       }, [E]);
-      let C = l.useCallback(function() {
+      let x = l.useCallback(function() {
           let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
             n = null != g ? g(E) : E;
           n !== E && A({
             type: r.D.SET_FOCUSED_INDEX,
             index: n
-          }), e && D(O(t, n), n)
-        }, [O, E, g, A, t, D]),
+          }), e && C(m(t, n), n)
+        }, [m, E, g, A, t, C]),
         M = l.useCallback(e => {
-          if (!p.current) return;
+          if (!S.current) return;
           if (s.includes(e.key) && !(e.shiftKey || e.altKey || e.metaKey || e.ctrlKey) && e.currentTarget === e.target) {
-            e.preventDefault(), e.stopPropagation(), C();
+            e.preventDefault(), e.stopPropagation(), x();
             return
           }
           let n = function(e) {
@@ -126,25 +126,25 @@ function E(e) {
               });
               return;
             case a.X2.SELECT_FOCUSED_ITEM:
-              let l = c(o(O, t, E));
+              let l = u(o(m, t, E));
               if ((null == l ? true : l.ownerDocument.activeElement) !== l || e.repeat) return;
               if (e.preventDefault(), e.stopPropagation(), A({
                   type: n
                 }), null != d) return void d(E);
               null == l || l.click()
           }
-        }, [O, t, A, E, C, d]),
+        }, [m, t, A, E, x, d]),
         v = l.useCallback(() => {
-          b || G(true)
-        }, [b]),
+          G || R(true)
+        }, [G]),
         j = l.useCallback(() => {
-          b || (T ? D(O(t, E), E) : C(true))
-        }, [O, t, D, T, b, E, C]),
+          G || (T ? C(m(t, E), E) : x(true))
+        }, [m, t, C, T, G, E, x]),
         U = l.useCallback(e => {
           e.currentTarget.contains(e.relatedTarget) || requestAnimationFrame(() => {
-            null == c(o(O, t, E)) ? D(t) : G(false)
+            null == u(o(m, t, E)) ? C(t) : R(false)
           })
-        }, [O, t, E, D]),
+        }, [m, t, E, C]),
         y = l.useRef(null);
       l.useLayoutEffect(() => {
         let e = y.current;
@@ -152,42 +152,42 @@ function E(e) {
           e.removeEventListener("focusin", v), e.removeEventListener("focus", j), e.removeEventListener("focusout", U)
         }
       }, [j, v, U]);
-      let P = l.useCallback(() => ({
+      let k = l.useCallback(() => ({
           role: "list",
-          tabIndex: b && T ? false : 0,
+          tabIndex: G && T ? false : 0,
           id: t,
           onKeyDown: M,
           ref: y
-        }), [t, b, M, T]),
-        k = l.useCallback(e => {
+        }), [t, G, M, T]),
+        P = l.useCallback(e => {
           let {
             index: n
           } = e;
           return {
             role: "listitem",
-            "aria-setsize": f ? m.current : true,
-            "aria-posinset": f ? n + 1 : true,
-            id: O(t, n),
+            "aria-setsize": h ? f.current : true,
+            "aria-posinset": h ? n + 1 : true,
+            id: m(t, n),
             tabIndex: T && n === E ? 0 : false,
-            onFocus: R.get(null != S.current ? O(t, n) : n)
+            onFocus: D.get(null != p.current ? m(t, n) : n)
           }
-        }, [O, t, E, T, R, f]);
+        }, [m, t, E, T, D, h]);
       return l.useMemo(() => ({
         dispatch: A,
-        getContainerProps: P,
-        getItemProps: k
-      }), [A, P, k])
+        getContainerProps: k,
+        getItemProps: P
+      }), [A, k, P])
     }({
       navId: t,
-      itemCount: S,
-      focusedIndex: p,
-      dispatch: b,
+      itemCount: p,
+      focusedIndex: S,
+      dispatch: G,
       onSelect: d,
       setFocus: _,
       getNewFocusIndex: g,
       maintainFocusPosition: A,
       includeSetSizes: T,
-      focusOnMount: f,
-      enabled: h
+      focusOnMount: h,
+      enabled: I
     })
 }

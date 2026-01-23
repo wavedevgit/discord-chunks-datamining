@@ -45,7 +45,7 @@ let v = new Set([Chunk360469.AM, Chunk360469.eK]),
       scope: {
         [Chunk613057.sm.ANY]: [Chunk613057.VH, Chunk613057.W_]
       },
-      validation: e => (0, _.A)(e).required().keys({
+      validation: e => (0, b.A)(e).required().keys({
         url: e.string().required()
       }),
       handler(e) {
@@ -55,32 +55,32 @@ let v = new Set([Chunk360469.AM, Chunk360469.eK]),
             url: n
           }
         } = e;
-        (0, b.lG)(t.transport);
+        (0, _.lG)(t.transport);
         let r = s.Ay.getCurrentEmbeddedActivity();
         try {
           var i, c;
           let e = new URL(n),
             s = e.toString();
-          if (g.isPlatformEmbedded) {
+          if (m.isPlatformEmbedded) {
             let e = (0, a.f)() ? O.MLl.ACTIVITY_POPOUT : null;
-            h.A.focus(e, true)
+            g.A.focus(e, true)
           }
           let p = d.A.getApplication(null == (i = t.application) ? true : i.id),
-            m = (0, u.H)(null == r ? true : r.location),
-            b = (null == p ? true : p.id) !== true ? C.get(p.id) : true;
-          if (true !== b && b.trustedUntilEpochMs >= Date.now() && b.trustedHosts.has(e.host)) return (0, l.A)(s), f.default.track(O.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+            A = (0, u.H)(null == r ? true : r.location),
+            _ = (null == p ? true : p.id) !== true ? C.get(p.id) : true;
+          if (true !== _ && _.trustedUntilEpochMs >= Date.now() && _.trustedHosts.has(e.host)) return (0, l.A)(s), h.default.track(O.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
             application_id: null == (c = t.application) ? true : c.id,
             url: s,
             opened: true
           }), Promise.resolve({
             opened: true
           });
-          return new Promise(e => (0, A.h)({
+          return new Promise(e => (0, f.h)({
             href: s,
             shouldConfirm: true,
             onConfirm: () => {
               var n;
-              (0, l.A)(s), f.default.track(O.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+              (0, l.A)(s), h.default.track(O.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                 application_id: null == (n = t.application) ? true : n.id,
                 url: s,
                 opened: true
@@ -90,7 +90,7 @@ let v = new Set([Chunk360469.AM, Chunk360469.eK]),
             },
             onCancel: () => {
               var n;
-              f.default.track(O.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+              h.default.track(O.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                 application_id: null == (n = t.application) ? true : n.id,
                 url: s,
                 opened: false
@@ -100,17 +100,17 @@ let v = new Set([Chunk360469.AM, Chunk360469.eK]),
             }
           }, true, true, (0, o.j)({
             application: p,
-            channelId: m
+            channelId: A
           })))
         } catch (e) {
-          throw new m.A({
+          throw new A.A({
             errorCode: O.Lw6.INVALID_COMMAND
           }, "Invalid URL: ".concat(n))
         }
       }
     },
     [Chunk652215.e$_.NAVIGATE_TO_CONNECTIONS]: {
-      validation: e => (0, _.A)(e),
+      validation: e => (0, b.A)(e),
       scope: {
         [Chunk613057.sm.ANY]: [Chunk613057.VH]
       },
@@ -118,9 +118,9 @@ let v = new Set([Chunk360469.AM, Chunk360469.eK]),
         let {
           socket: t
         } = e;
-        (0, b.lG)(t.transport);
-        let r = (0, b.D2)(t.application);
-        if (!v.has(r)) throw new m.A({
+        (0, _.lG)(t.transport);
+        let r = (0, _.D2)(t.application);
+        if (!v.has(r)) throw new A.A({
           errorCode: O.Lw6.UNAUTHORIZED_FOR_APPLICATION
         }, "Command not available for this application");
         {
@@ -147,12 +147,12 @@ let v = new Set([Chunk360469.AM, Chunk360469.eK]),
             link_id: a
           }
         } = e;
-        (0, b.lG)(n.transport);
-        let s = (0, b.D2)(n.application);
-        if (null == s) throw new m.A({
+        (0, _.lG)(n.transport);
+        let s = (0, _.D2)(n.application);
+        if (null == s) throw new A.A({
           errorCode: O.Lw6.INVALID_COMMAND
         }, "No application.");
-        if (!(0, r.Lt)(null != (t = n.application.flags) ? t : 0, O.gfo.EMBEDDED)) throw new m.A({
+        if (!(0, r.Lt)(null != (t = n.application.flags) ? t : 0, O.gfo.EMBEDDED)) throw new A.A({
           errorCode: O.Lw6.INVALID_COMMAND
         }, "This application cannot access this API");
         return new Promise(e => {

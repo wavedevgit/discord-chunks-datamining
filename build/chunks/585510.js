@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Li: () => E,
-  _g: () => y,
-  dj: () => b
+  _g: () => b,
+  dj: () => y
 }), require("./896048.js");
 var Chunk136722 = require("./136722.js"),
   Chunk417597 = require("./417597.js"),
@@ -52,7 +52,7 @@ function E(e) {
   }
 }
 
-function b() {
+function y() {
   var e;
   let t = g(c.A.getGuildId()),
     n = null != (e = a.A.getGuildsProto()) ? e : {},
@@ -64,7 +64,7 @@ function b() {
   }
 }
 
-function y(e) {
+function b(e) {
   let t = (0, s.t0)("useShowAntiRaidInGuildNotifSettings"),
     n = (0, i.bG)([l.A, o.A], () => {
       let t = o.A.getGuild(e);

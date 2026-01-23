@@ -25,9 +25,9 @@ let {
   Shadows: g
 } = Chunk857526.z, {
   Spacing: E
-} = Chunk677370.z, b = Symbol("semanticColor");
+} = Chunk677370.z, y = Symbol("semanticColor");
 
-function y(e) {
+function b(e) {
   if ("string" == typeof e) {
     let t = e.toUpperCase();
     if (!(t in _)) throw Error("Invalid theme: ".concat(e));
@@ -38,7 +38,7 @@ function y(e) {
 let O = {
   themes: _,
   colors: s()(h, (e, t) => ({
-    [b]: t
+    [y]: t
   })),
   unsafe_rawColors: m,
   shadows: s()(g, e => {
@@ -58,12 +58,12 @@ let O = {
   radii: Chunk199222.T,
   spacing: E,
   internal: {
-    isSemanticColor: e => "object" == typeof e && null !== e && b in e,
-    getSemanticColorName: e => e[b],
+    isSemanticColor: e => "object" == typeof e && null !== e && y in e,
+    getSemanticColorName: e => e[y],
     resolveSemanticColor(e, t, n) {
       var r, a;
-      e = y(e);
-      let s = h[t[b]],
+      e = b(e);
+      let s = h[t[y]],
         {
           category: o
         } = s,

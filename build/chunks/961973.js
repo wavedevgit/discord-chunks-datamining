@@ -2,15 +2,15 @@
 /** chunk id: 961973, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $Y: () => A,
-  A2: () => y,
+  $Y: () => v,
+  A2: () => b,
   G4: () => R,
   H_: () => k,
-  L1: () => v,
+  L1: () => A,
   Lx: () => T,
   OG: () => U,
   VU: () => C,
-  _N: () => I,
+  _N: () => S,
   a: () => j,
   rs: () => O,
   sZ: () => N,
@@ -34,9 +34,9 @@ var Chunk665260 = require("./665260.js"),
   Chunk539916 = require("./539916.js"),
   Chunk652215 = require("./652215.js"),
   Chunk340837 = require("./340837.js");
-let b = new Date(16824888e5);
+let y = new Date(16824888e5);
 
-function y(e) {
+function b(e) {
   return (0, i.bG)([u.A, d.A], () => {
     let t = u.A.getGuild(e),
       n = !!(null == t ? true : t.features.has(g.GuildFeatures.COMMUNITY)),
@@ -54,18 +54,18 @@ function O(e) {
   return n && r && i
 }
 
-function A(e, t) {
+function v(e, t) {
   var n;
-  if (null == e || !e.features.has(g.GuildFeatures.GUILD_ONBOARDING) || null == t || null == t.joinedAt || new Date(t.joinedAt) < b) returnfalse;
+  if (null == e || !e.features.has(g.GuildFeatures.GUILD_ONBOARDING) || null == t || null == t.joinedAt || new Date(t.joinedAt) < y) returnfalse;
   let i = null != (n = t.flags) ? n : 0;
   return r.Lt(i, E.D.STARTED_ONBOARDING) && !r.Lt(i, E.D.COMPLETED_ONBOARDING)
 }
 
-function v(e, t) {
+function A(e, t) {
   return !(null != e && e.features.has(g.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && e.features.has(g.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)) && null != t
 }
 
-function S(e, t, n) {
+function I(e, t, n) {
   let r = new Set;
   e.forEach(e => {
     e.options.forEach(e => {
@@ -79,8 +79,8 @@ function S(e, t, n) {
   return [i.filter(e => r.has(e.id) || null != e.parent_id && r.has(e.parent_id)), i.filter(e => !r.has(e.id) && !(null != e.parent_id && r.has(e.parent_id)))]
 }
 
-function I(e, t, n) {
-  return S(t, n, c.Ay.getChannels(e)[c.I6].map(e => {
+function S(e, t, n) {
+  return I(t, n, c.Ay.getChannels(e)[c.I6].map(e => {
     let {
       channel: t
     } = e;
@@ -89,7 +89,7 @@ function I(e, t, n) {
 }
 
 function T(e, t, n) {
-  return S(t, n, (0, i.bG)([c.Ay], () => c.Ay.getChannels(e))[c.I6].map(e => {
+  return I(t, n, (0, i.bG)([c.Ay], () => c.Ay.getChannels(e))[c.I6].map(e => {
     let {
       channel: t
     } = e;

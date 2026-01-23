@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => O,
-  n: () => b
+  n: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,22 +21,22 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk22589 = require("./22589.js"),
   Chunk332225 = require("./332225.js");
-let b = [Chunk506326.iq, Chunk506326.Zc, Chunk506326.Xy, Chunk506326.$X, Chunk506326.tR, Chunk506326.K7, Chunk506326.fg, Chunk506326.sp, Chunk506326.MK],
-  y = e => {
+let y = [Chunk506326.iq, Chunk506326.Zc, Chunk506326.Xy, Chunk506326.$X, Chunk506326.tR, Chunk506326.K7, Chunk506326.fg, Chunk506326.sp, Chunk506326.MK],
+  b = e => {
     let {
       entry: t,
       channel: n,
       selected: i,
-      hovered: y,
+      hovered: b,
       isFirstApplicationOccurrence: O
     } = e, {
-      largeImage: A
+      largeImage: v
     } = (0, f.nO)({
       entry: t,
       showCoverImage: false
     }), {
-      data: v
-    } = (0, c.YY)(t.extra.application_id), S = (0, l.J)(v) && O, I = S ? [s.M.CLOUD_PLAY_NEW_BADGE] : [], [T] = (0, u.kn)(I);
+      data: A
+    } = (0, c.YY)(t.extra.application_id), I = (0, l.J)(A) && O, S = I ? [s.M.CLOUD_PLAY_NEW_BADGE] : [], [T] = (0, u.kn)(S);
     return (0, r.jsxs)(h.Zp, {
       selected: i,
       usesCardRows: true,
@@ -56,21 +56,21 @@ let b = [Chunk506326.iq, Chunk506326.Zc, Chunk506326.Xy, Chunk506326.$X, Chunk50
                 children: t.extra.game_name
               }), (0, r.jsx)(_.mG, {
                 location: _.N5.CARD,
-                children: b.map((e, n) => (0, r.jsx)(e, {
+                children: y.map((e, n) => (0, r.jsx)(e, {
                   entry: t,
-                  hovered: y
+                  hovered: b
                 }, n))
               })]
             }), (0, r.jsx)(p.V, {
-              alt: null != (i = null == A ? true : A.text) ? i : null == A ? true : A.alt,
-              src: null == A ? true : A.src,
+              alt: null != (i = null == v ? true : v.text) ? i : null == v ? true : v.alt,
+              src: null == v ? true : v.src,
               size: 48,
               className: E.xn,
-              showTooltip: (null == A ? true : A.text) != null
+              showTooltip: (null == v ? true : v.text) != null
             })]
           })
         }
-      }), S && (0, r.jsxs)(r.Fragment, {
+      }), I && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h.ik, {}), (0, r.jsxs)(h.dM, {
           className: g.D,
           children: [(0, r.jsxs)("div", {
@@ -91,4 +91,4 @@ let b = [Chunk506326.iq, Chunk506326.Zc, Chunk506326.Xy, Chunk506326.$X, Chunk50
       })]
     })
   },
-  O = Chunk64700.memo(y)
+  O = Chunk64700.memo(b)

@@ -2,7 +2,7 @@
 /** chunk id: 919301, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  WT: () => S
+  WT: () => I
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -56,19 +56,19 @@ function E(e, t) {
   }), e
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = y(e, t), Object.getOwnPropertySymbols)
+  if (a = b(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -76,10 +76,10 @@ function y(e, t) {
   return i
 }
 let O = (0, Chunk736843.Mz)(),
-  A = {
+  v = {
     renderStep: e => (0, r.jsx)(d.M, m({}, e))
   },
-  v = e => {
+  A = e => {
     let {
       renderStep: t,
       paymentModalStepProps: n
@@ -104,7 +104,7 @@ let O = (0, Chunk736843.Mz)(),
       }), [s, o])
     })
   },
-  S = {
+  I = {
     CustomPaymentContextProvider: e => {
       let {
         children: t,
@@ -113,7 +113,7 @@ let O = (0, Chunk736843.Mz)(),
         isGift: s,
         skuId: o,
         analyticsLocations: c = []
-      } = e, d = b(e, ["children", "loadId", "applicationId", "isGift", "skuId", "analyticsLocations"]), {
+      } = e, d = y(e, ["children", "loadId", "applicationId", "isGift", "skuId", "analyticsLocations"]), {
         analyticsLocations: f
       } = (0, u.P)(m({
         applicationId: i,
@@ -163,13 +163,13 @@ let O = (0, Chunk736843.Mz)(),
         loadId: n,
         flowSpecificOptions: f,
         analyticsLocations: _
-      }), [t, n, f, _]), b = i.useMemo(() => ({
+      }), [t, n, f, _]), y = i.useMemo(() => ({
         sharedCheckoutContext: E,
         paymentModalProps: g,
         renderModalProps: c
       }), [E, g, c]);
       return (0, r.jsx)(O.Provider, {
-        value: b,
+        value: y,
         children: p
       })
     },
@@ -188,11 +188,11 @@ let O = (0, Chunk736843.Mz)(),
     },
     UnifiedCheckoutStepDefinitions: {
       [Chunk166532.pn.GIFT_CUSTOMIZATION]: {
-        StepController: v
+        StepController: A
       },
       [Chunk166532.pn.REVIEW]: {
         legacyStepConfig: true
       }
     },
-    CUSTOM_CONFIRM_STEP_CONFIG: A
+    CUSTOM_CONFIRM_STEP_CONFIG: v
   }

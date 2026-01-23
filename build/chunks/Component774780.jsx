@@ -28,21 +28,21 @@ function v(e) {
   var t, n;
   let {
     guildId: v,
-    setPreventNavigation: A = () => {}
+    setPreventNavigation: y = () => {}
   } = e, {
-    editingRule: E,
-    setEditingRule: N
-  } = (0, b.U)(), {
-    guild: _,
+    editingRule: A,
+    setEditingRule: E
+  } = (0, p.U)(), {
+    guild: N,
     subsection: S
-  } = (0, l.cf)([a.A], () => a.A.getProps()), T = null != (t = null != (n = null == _ ? true : _.id) ? n : v) ? t : j.dJq, I = null != E, [C] = (0, u.qv)(T), {
+  } = (0, l.cf)([a.A], () => a.A.getProps()), I = null != (t = null != (n = null == N ? true : N.id) ? n : v) ? t : j.dJq, T = null != A, [C] = (0, u.qv)(I), {
     rulesByTriggerType: P
-  } = (0, u.wP)(T), w = {
-    [f.yT.MEMBERS]: O.intl.string(O.t.sx4E5v),
-    [f.yT.CONTENT]: O.intl.string(O.t.fphZb0)
-  }, R = i.useMemo(() => Object.values(null != P ? P : {}).flat().filter(o.Vq), [P]), D = {
-    isInEditMode: I,
-    setEditingRule: N
+  } = (0, u.wP)(I), w = {
+    [g.yT.MEMBERS]: _.intl.string(_.t.sx4E5v),
+    [g.yT.CONTENT]: _.intl.string(_.t.fphZb0)
+  }, R = i.useMemo(() => Object.values(null != P ? P : {}).flat().filter(c.Vq), [P]), D = {
+    isInEditMode: T,
+    setEditingRule: E
   }, G = i.useRef(D);
   i.useEffect(() => {
     G.current = D
@@ -52,7 +52,7 @@ function v(e) {
       setEditingRule: t
     } = G.current;
     e && t(null)
-  }, [T]);
+  }, [I]);
   let L = i.useCallback((e, t) => {
       if (null != e) {
         var n, r;
@@ -63,42 +63,42 @@ function v(e) {
           return n === e
         })) ? true : r.name) ? n : null
       }
-      return null != t ? f.i$[t].getDefaultRuleName() : null
+      return null != t ? g.i$[t].getDefaultRuleName() : null
     }, [R]),
     k = i.useMemo(() => {
       var e, t;
-      return L(null != (e = null == E ? true : E.id) ? e : null, null != (t = null == E ? true : E.triggerType) ? t : null)
-    }, [L, E]);
+      return L(null != (e = null == A ? true : A.id) ? e : null, null != (t = null == A ? true : A.triggerType) ? t : null)
+    }, [L, A]);
   i.useEffect(() => {
-    A(I, (0, x.cT)(k))
-  }, [A, I, k]);
-  let M = (0, f.ws)(T);
+    y(T, (0, h.cT)(k))
+  }, [y, T, k]);
+  let M = (0, g.ws)(I);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.Heading, {
       variant: "heading-lg/semibold",
       color: "text-strong",
-      children: O.intl.string(O.t.uRelgx)
+      children: _.intl.string(_.t.uRelgx)
     }), (0, r.jsx)("div", {
-      className: y.iQ,
+      className: O.iQ,
       children: (0, r.jsxs)("div", {
-        className: y.h_,
+        className: O.h_,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: O.intl.string(O.t.EwuSCR)
+          children: _.intl.string(_.t.EwuSCR)
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
-          className: y.xR,
-          children: O.intl.format(O.t["B+sgGt"], {
+          className: O.xR,
+          children: _.intl.format(_.t["B+sgGt"], {
             helpUrl: d.A.getArticleURL(j.MVz.GUILD_AUTOMOD_BLOCKED_MESSAGE)
           })
         })]
       })
-    }), C ? (0, r.jsx)(g.A, {}) : Object.entries(M).map(e => {
+    }), C ? (0, r.jsx)(m.A, {}) : Object.entries(M).map(e => {
       let [t, n] = e;
       if (0 === n.length) return (0, r.jsx)(i.Fragment, {}, t);
       let l = null != w[t] ? (0, r.jsx)("div", {
-        className: y.Km,
+        className: O.Km,
         children: (0, r.jsx)(s.Text, {
           variant: "text-lg/normal",
           color: "text-strong",
@@ -106,28 +106,28 @@ function v(e) {
         })
       }) : null;
       return (0, r.jsxs)("div", {
-        className: y.Wk,
+        className: O.Wk,
         children: [l, (0, r.jsx)(r.Fragment, {
           children: n.map(e => {
             var t;
-            return (0, r.jsx)(p.A, {
-              guildId: T,
+            return (0, r.jsx)(b.A, {
+              guildId: I,
               triggerType: e,
               rules: null != (t = P[e]) ? t : [],
-              initWithEdit: S === j.nd0.AUTOMOD_MENTION_SPAM && e === h.uh.MENTION_SPAM
+              initWithEdit: S === j.nd0.AUTOMOD_MENTION_SPAM && e === x.uh.MENTION_SPAM
             }, e)
           })
         })]
       }, t)
-    }), null != _ && (0, r.jsx)(c.t9, {
-      guild: _,
+    }), null != N && (0, r.jsx)(o.t9, {
+      guild: N,
       withDivider: false,
-      className: y.Vf
-    }), (0, r.jsx)(m.A, {
-      guildId: T,
+      className: O.Vf
+    }), (0, r.jsx)(f.A, {
+      guildId: I,
       existingRules: R
-    }), I && (0, r.jsx)("div", {
-      className: y.OL
+    }), T && (0, r.jsx)("div", {
+      className: O.OL
     })]
   })
 }

@@ -70,49 +70,49 @@ async function E(e) {
     scrollTarget: f,
     guildId: h,
     channelId: E,
-    showGuildProfile: b = true,
-    appContext: y,
+    showGuildProfile: y = true,
+    appContext: b,
     customStatusPrompt: O,
-    disableActionsForPreview: A = false
-  } = e, v = _(e, ["userId", "tabSection", "scrollTarget", "guildId", "channelId", "showGuildProfile", "appContext", "customStatusPrompt", "disableActionsForPreview"]), S = l.default.getUser(a);
-  if (null == S) return;
-  let I = l.default.getCurrentUser();
+    disableActionsForPreview: v = false
+  } = e, A = _(e, ["userId", "tabSection", "scrollTarget", "guildId", "channelId", "showGuildProfile", "appContext", "customStatusPrompt", "disableActionsForPreview"]), I = l.default.getUser(a);
   if (null == I) return;
-  let T = g(a, b ? h : true);
+  let S = l.default.getCurrentUser();
+  if (null == S) return;
+  let T = g(a, y ? h : true);
   m.add(await (0, i.mMO)(async () => {
-    let e = (await Promise.all([n.e("10614"), n.e("42944"), n.e("10117"), n.e("13696"), n.e("38663"), n.e("64228")]).then(n.bind(n, 293071))).default;
+    let e = (await Promise.all([n.e("10614"), n.e("20088"), n.e("42944"), n.e("10117"), n.e("13696"), n.e("38663"), n.e("64228")]).then(n.bind(n, 293071))).default;
     return t => (0, r.jsx)(e, p({
-      user: S,
-      currentUser: I,
+      user: I,
+      currentUser: S,
       guildId: h,
       initialTabSection: s,
       initialScrollTarget: f,
       channelId: E,
-      showGuildProfile: b,
+      showGuildProfile: y,
       customStatusPrompt: O,
-      disableActionsForPreview: A
-    }, t, v))
+      disableActionsForPreview: v
+    }, t, A))
   }, {
     modalKey: T,
-    contextKey: (0, i.TId)(null != (t = null != y ? y : (0, o.zd)()) ? t : d.BRT.APP),
+    contextKey: (0, i.TId)(null != (t = null != b ? b : (0, o.zd)()) ? t : d.BRT.APP),
     onCloseRequest: () => {
       u.A.hasUnsavedChanges() ? c.A.notifyUnsavedWidgets() : ((0, i.OoC)(T), m.delete(T), c.A.clearPendingWidgets())
     }
   }))
 }
 
-function b() {
+function y() {
   if (0 !== m.size) {
     for (let e of m)(0, i.OoC)(e);
     m.clear(), c.A.clearPendingWidgets()
   }
 }
-class y extends Chunk272355.A {
+class b extends Chunk272355.A {
   _initialize() {
-    a.h.subscribe("USER_PROFILE_MODAL_OPEN", E), a.h.subscribe("USER_PROFILE_MODAL_CLOSE", b)
+    a.h.subscribe("USER_PROFILE_MODAL_OPEN", E), a.h.subscribe("USER_PROFILE_MODAL_CLOSE", y)
   }
   _terminate() {
-    a.h.unsubscribe("USER_PROFILE_MODAL_OPEN", E), a.h.unsubscribe("USER_PROFILE_MODAL_CLOSE", b)
+    a.h.unsubscribe("USER_PROFILE_MODAL_OPEN", E), a.h.unsubscribe("USER_PROFILE_MODAL_CLOSE", y)
   }
 }
-let O = new y
+let O = new b

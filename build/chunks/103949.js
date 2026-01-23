@@ -25,8 +25,8 @@ let d = {
       (0, c.lG)(i.transport);
       let d = (0, c.D2)(i.application),
         p = l.A.getQuest(s),
-        f = (0, a.TP)(p);
-      if (null == p || null == f || f !== d) throw new o.A({
+        h = (0, a.TP)(p);
+      if (null == p || null == h || h !== d) throw new o.A({
         errorCode: u.Lw6.INVALID_COMMAND
       }, "Quest not found: ".concat(s));
       return {
@@ -49,8 +49,8 @@ let d = {
       (0, c.lG)(n.transport);
       let d = (0, c.D2)(n.application),
         p = l.A.getQuest(r),
-        f = (0, a.vS)(p);
-      if (null == p || null == f || f !== d) throw new o.A({
+        h = (0, a.vS)(p);
+      if (null == p || null == h || h !== d) throw new o.A({
         errorCode: u.Lw6.INVALID_COMMAND
       }, "Quest not found: ".concat(r));
       if ((null == (t = p.userStatus) ? true : t.enrolledAt) == null) throw new o.A({

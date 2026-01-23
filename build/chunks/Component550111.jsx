@@ -57,12 +57,12 @@ let R = {
       nameplatePreviewSize: F = "default",
       skipEffectDisplayName: B = false,
       width: H
-    } = e, Y = (0, u.Ay)(), W = (0, l.Mw)(Y), K = null != a ? (0, p.D)(a) : w, z = (0, o.bG)([A.A], () => null != t ? A.A.getStatus(t.id) : c.clD.ONLINE), q = W ? "#706F74" : "#aaaab2", X = i.useRef(null), Z = (0, o.bG)([O.Ay], () => null != n && null != t ? O.Ay.getMember(n, t.id) : null), Q = null != t ? (0, y.eh)({
+    } = e, Y = (0, u.Ay)(), W = (0, l.Mw)(Y), K = null != a ? (0, p.D)(a) : w, z = (0, o.bG)([v.A], () => null != t ? v.A.getStatus(t.id) : c.clD.ONLINE), q = W ? "#706F74" : "#aaaab2", X = i.useRef(null), Z = (0, o.bG)([O.Ay], () => null != n && null != t ? O.Ay.getMember(n, t.id) : null), Q = null != t ? (0, b.eh)({
       pendingNickname: k,
       pendingGlobalName: M,
       user: t,
       guildMember: Z
-    }) : true, $ = (0, b.lw)({
+    }) : true, $ = (0, y.lw)({
       pendingValue: U,
       userValue: null == t ? true : t.avatarDecoration,
       guildValue: null == Z ? true : Z.avatarDecoration,
@@ -71,9 +71,9 @@ let R = {
       userId: null == t ? true : t.id,
       guildId: n,
       pendingDisplayNameStyles: G
-    }), et = (0, g.gS)(V), en = i.useMemo(() => null != a ? I.intl.formatToPlainString(I.t.YJig7C, {
+    }), et = (0, g.gS)(V), en = i.useMemo(() => null != a ? S.intl.formatToPlainString(S.t.YJig7C, {
       a11y_text: a.label
-    }) : I.intl.string(I.t.SZeUdR), [a]);
+    }) : S.intl.string(S.t.SZeUdR), [a]);
     return (0, r.jsx)("div", {
       role: "img",
       "aria-label": en,
@@ -89,10 +89,10 @@ let R = {
           [T.AQ]: "xlarge" === F,
           [T.gf]: null != H
         }),
-        children: [null != K && (0, r.jsx)(S.A, {
+        children: [null != K && (0, r.jsx)(I.A, {
           nameplate: K,
           hovered: x,
-          placement: v.u.PREVIEW,
+          placement: A.u.PREVIEW,
           content: j ? true : X
         }, null == a ? true : a.skuId), (0, r.jsxs)("div", {
           className: T.MU,

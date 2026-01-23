@@ -40,18 +40,18 @@ function y(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(e, ["channelId", "className"]), O = l.useRef(null), j = (0, a.bG)([h.Ay], () => h.Ay.getFocusedLayout() === b.E8.RESIZABLE), v = l.useCallback(() => {
-    let e = j ? b.E8.NO_CHAT : b.E8.RESIZABLE;
-    (0, p.i5)(e)
-  }, [j]), {
-    unreadCount: x,
-    mentionCount: E
+  }(e, ["channelId", "className"]), _ = l.useRef(null), O = (0, s.bG)([f.Ay], () => f.Ay.getFocusedLayout() === g.E8.RESIZABLE), j = l.useCallback(() => {
+    let e = O ? g.E8.NO_CHAT : g.E8.RESIZABLE;
+    (0, h.i5)(e)
+  }, [O]), {
+    unreadCount: v,
+    mentionCount: x
   } = function(e) {
-    let t = (0, a.bG)([d.A], () => !(0, i.isEmpty)(d.A.getTypingUsers(e)), [e]),
+    let t = (0, s.bG)([d.A], () => !(0, i.isEmpty)(d.A.getTypingUsers(e)), [e]),
       {
         unreadCount: n,
         mentionCount: r
-      } = (0, a.cf)([u.Ay], () => ({
+      } = (0, s.cf)([u.Ay], () => ({
         unreadCount: u.Ay.getUnreadCount(e),
         mentionCount: u.Ay.getMentionCount(e)
       }), [e]);
@@ -60,21 +60,21 @@ function y(e) {
       mentionCount: r,
       isTyping: t
     }
-  }(t), _ = l.useCallback(() => {
+  }(t), E = l.useCallback(() => {
     var e;
-    null == (e = O.current) || e.focus()
+    null == (e = _.current) || e.focus()
   }, []);
-  (0, f.Vo)({
-    event: g.jej.FOCUS_CHAT_BUTTON,
-    handler: _
+  (0, p.Vo)({
+    event: m.jej.FOCUS_CHAT_BUTTON,
+    handler: E
   });
-  let C = j ? m.intl.string(m.t["5MstTl"]) : m.intl.string(m.t.kkKapG),
+  let C = O ? b.intl.string(b.t["5MstTl"]) : b.intl.string(b.t.kkKapG),
     S = [C];
-  E > 0 && S.push(m.intl.formatToPlainString(m.t["3l1GOx"], {
-    mentionCount: E
-  })), x > 0 && S.push(m.intl.string(m.t.x5zAGZ));
-  let I = (0, a.bG)([h.Ay], () => h.Ay.getFocusedLayout()),
-    N = E > 0 ? E : x,
+  x > 0 && S.push(b.intl.formatToPlainString(b.t["3l1GOx"], {
+    mentionCount: x
+  })), v > 0 && S.push(b.intl.string(b.t.x5zAGZ));
+  let I = (0, s.bG)([f.Ay], () => f.Ay.getFocusedLayout()),
+    N = x > 0 ? x : v,
     T = N > 0;
   return (0, r.jsxs)("div", {
     className: A.iE,
@@ -97,16 +97,16 @@ function y(e) {
       return e
     }({
       isTrayButton: true,
-      buttonRef: O,
-      onClick: v,
+      buttonRef: _,
+      onClick: j,
       label: C,
       "aria-label": S.join(", "),
       tooltipPosition: "top",
-      iconComponent: I === b.E8.NO_CHAT ? s.jQp : s.g8p,
+      iconComponent: I === g.E8.NO_CHAT ? a.jQp : a.g8p,
       themeable: true,
       className: n
     }, y)), T ? (0, r.jsx)(o.A, {
-      hasMentions: E > 0,
+      hasMentions: x > 0,
       truncatedCount: N > 99 ? "99+" : N,
       className: A.qS
     }) : null]

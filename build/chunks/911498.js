@@ -8,7 +8,7 @@ var Chunk735438 = require("./735438.js"),
   Chunk540185 = require("./540185.js"),
   Chunk282435 = require("./282435.js");
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -27,7 +27,7 @@ function s(e) {
   return e
 }
 
-function o(e, t) {
+function s(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -72,9 +72,9 @@ let c = (0, Chunk735438.sampleSize)(Chunk282435.cG, Chunk282435.cG.length),
       if (false === i) return;
       let a = [...l];
       a.splice(i, 1);
-      let s = t().getNext(1, n),
-        o = t().peekNext(7, n);
-      t()._setGameIds(n, [...a, ...s]), t()._setPeekedGameIds(n, [...o, ...s])
+      let o = t().getNext(1, n),
+        s = t().peekNext(7, n);
+      t()._setGameIds(n, [...a, ...o]), t()._setPeekedGameIds(n, [...s, ...o])
     },
     bumpMultiple: (e, n) => {
       var r;
@@ -89,7 +89,7 @@ let c = (0, Chunk735438.sampleSize)(Chunk282435.cG, Chunk282435.cG.length),
     },
     _setGameIds: (t, n) => {
       e(e => ({
-        gameIds: o(s({}, e.gameIds), {
+        gameIds: s(o({}, e.gameIds), {
           [t]: n
         })
       }))
@@ -103,7 +103,7 @@ let c = (0, Chunk735438.sampleSize)(Chunk282435.cG, Chunk282435.cG.length),
     },
     _setPeekedGameIds: (t, n) => {
       e(e => ({
-        peekedGameIds: o(s({}, e.peekedGameIds), {
+        peekedGameIds: s(o({}, e.peekedGameIds), {
           [t]: n
         })
       }))

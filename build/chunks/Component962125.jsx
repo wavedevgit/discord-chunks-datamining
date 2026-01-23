@@ -29,13 +29,13 @@ let d = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
     renderListHeader: m,
     rowCount: g,
     rowCountBySection: E,
-    rowHeight: b,
-    sectionMarginBottom: y,
+    rowHeight: y,
+    sectionMarginBottom: b,
     sectionHeaderHeight: O,
-    sectionFooterHeight: A,
-    listHeaderHeight: v,
-    stickyHeaders: S = false,
-    className: I,
+    sectionFooterHeight: v,
+    listHeaderHeight: A,
+    stickyHeaders: I = false,
+    className: S,
     hideScrollbar: T = false,
     fade: C = false,
     initialScrollTop: N = 0,
@@ -47,25 +47,25 @@ let d = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
     null != t && (t.scrollTop = N)
   });
   let k = i.useCallback(() => {
-      let e = "function" == typeof v ? v() : v;
+      let e = "function" == typeof A ? A() : A;
       return null == e ? 0 : e
-    }, [v]),
-    U = i.useCallback((e, t, n) => "function" == typeof b ? b(n, {
+    }, [A]),
+    U = i.useCallback((e, t, n) => "function" == typeof y ? y(n, {
       sectionIndex: e,
       sectionRowIndex: t
-    }) : b, [b]),
+    }) : y, [y]),
     G = i.useCallback(e => {
       let t = "function" == typeof O ? O(e) : O;
       return null == t ? 0 : t
     }, [O]),
     V = i.useCallback(e => {
-      let t = "function" == typeof A ? A(e) : A;
+      let t = "function" == typeof v ? v(e) : v;
       return null == t ? 0 : t
-    }, [A]),
+    }, [v]),
     F = i.useCallback(e => {
-      let t = "function" == typeof y ? y(e) : y;
+      let t = "function" == typeof b ? b(e) : b;
       return null == t ? 0 : t
-    }, [y]),
+    }, [b]),
     B = i.useRef([]),
     H = i.useRef([]),
     {
@@ -173,10 +173,10 @@ let d = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
             top: o,
             bottom: l
           }
-        } = i, c = G(s), u = o - (S ? c : 0) - r <= j.current, d = l + r >= j.current + D;
+        } = i, c = G(s), u = o - (I ? c : 0) - r <= j.current, d = l + r >= j.current + D;
         if (u) {
           let i = j.current + c - o,
-            a = S ? j.current - i : o;
+            a = I ? j.current - i : o;
           null == (t = L.current) || t.scrollTo({
             to: 0 === e ? 0 : a - r,
             animate: n
@@ -222,7 +222,7 @@ let d = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
         node: e
       })
     }
-  }), [G, S, Y, D]);
+  }), [G, I, Y, D]);
   let {
     visibleItems: X,
     listOffset: Z
@@ -256,13 +256,13 @@ let d = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
         let l = [],
           g = 0,
           E = 0,
-          b = o,
-          y = b + u >= e && b <= t;
-        for (null != _ && (S || y) && l.push(_(a)), y || S || (r += u); g + u + d < c - m;) {
+          y = o,
+          b = y + u >= e && y <= t;
+        for (null != _ && (I || b) && l.push(_(a)), b || I || (r += u); g + u + d < c - m;) {
           let i = U(a, E, n),
             s = o + g + u,
             c = s + i;
-          if (c <= e) r = c - (S ? u : 0);
+          if (c <= e) r = c - (I ? u : 0);
           else if (c > e && s < t) l.push(f(n, {
             sectionIndex: a,
             sectionRowIndex: E
@@ -271,15 +271,15 @@ let d = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
           g += i, E++, n++
         }
         let O = o + u + g,
-          A = O + d >= e && O <= t;
-        null != h && A && l.push(h(a)), null != p ? i.push(p(a, l)) : i = [...i, ...l]
+          v = O + d >= e && O <= t;
+        null != h && v && l.push(h(a)), null != p ? i.push(p(a, l)) : i = [...i, ...l]
       } else break
     }
     return {
       visibleItems: i,
       listOffset: r
     }
-  }, [U, V, G, F, d, f, p, h, _, w, K, S, m, k, D]), Q = i.useMemo(() => {
+  }, [U, V, G, F, d, f, p, h, _, w, K, I, m, k, D]), Q = i.useMemo(() => {
     var e, t, n;
     return {
       top: Z,
@@ -292,7 +292,7 @@ let d = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
   }), [Y]), J = T ? o.zCo : o.ChK;
   return (0, r.jsxs)(J, {
     fade: C,
-    className: s()(c.XG, I),
+    className: s()(c.XG, S),
     ref: L,
     onScroll: q,
     children: [(0, r.jsx)("div", {

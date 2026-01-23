@@ -2,10 +2,10 @@
 /** chunk id: 74848, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Py: () => I,
+  Py: () => S,
   d: () => O,
-  tR: () => S,
-  x5: () => v
+  tR: () => I,
+  x5: () => A
 }), require("./747238.js"), require("./812715.js"), require("./591487.js"), require("./727858.js");
 var Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
@@ -84,23 +84,23 @@ function E(e) {
   })[e]
 }
 
-function b() {
+function y() {
   return (0, u.isWindows)() ? p.intl.string(p.t.n4dQ2c) : (0, u.isMac)() ? p.intl.string(p.t.aYrsiB) : p.intl.string(p.t.Q3YKwS)
 }
 
-function y(e, t) {
+function b(e, t) {
   let {
     getNoDevicesMessage: n
   } = E(e);
-  return t.disabled ? n() : t.name.replace(f.vt, b())
+  return t.disabled ? n() : t.name.replace(f.vt, y())
 }
 
 function O(e) {
   var t;
-  return null == (t = new RegExp("^(?<prefix>".concat(b(), ") \\((?<subName>.+)\\)$")).exec(e)) ? true : t.groups
+  return null == (t = new RegExp("^(?<prefix>".concat(y(), ") \\((?<subName>.+)\\)$")).exec(e)) ? true : t.groups
 }
 
-function A(e) {
+function v(e) {
   let {
     getRawDevices: t
   } = E(e), n = (0, a.bG)([l.A], () => t(l.A));
@@ -108,25 +108,25 @@ function A(e) {
     let t = h({}, n),
       r = t[f.dx];
     return null != r && (t[f.dx] = g(h({}, r), {
-      name: y(e, r)
+      name: b(e, r)
     })), t
   }, [e, n])
 }
 
-function v(e) {
-  let t = A(e),
+function A(e) {
+  let t = v(e),
     {
       getCurrentDeviceId: n
     } = E(e);
   return t[(0, a.bG)([l.A], () => n(l.A))]
 }
 
-function S(e, t) {
-  let {} = t, n = A(e), {
+function I(e, t) {
+  let {} = t, n = v(e), {
     getAllDeviceIdsSortedByFrecency: o
   } = E(e), l = (0, s.A)((0, a.yK)([d.A], () => o(d.A))), {
     id: u
-  } = v(e);
+  } = A(e);
   return (0, r.useMemo)(() => {
     let t = e => e.map(e => n[e]).filter(c.Vq),
       r = Object.keys(n),
@@ -138,7 +138,7 @@ function S(e, t) {
   }, [n, e, l, u])
 }
 
-function I(e) {
+function S(e) {
   var t, n;
   let {
     getCurrentDeviceId: r,

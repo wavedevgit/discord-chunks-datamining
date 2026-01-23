@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk873298 = require("./873298.js"),
   Chunk397927 = require("./397927.js"),
@@ -44,37 +44,37 @@ let C = [{
 
 function S() {
   var e;
-  let t, n, i = l.useRef(null),
+  let t, n, r = l.useRef(null),
     {
       analyticsLocations: o
     } = (0, m.Ay)(u.A.DEV_TOOLS),
     S = v.TA.useSetting(),
     [O, E] = l.useState(""),
-    N = (0, s.bG)([b.Ay, y.A], () => (0, g.A)(b.Ay, y.A)),
-    T = (0, x.h)(O),
-    I = (0, s.yK)([f.A], () => {
+    T = (0, s.bG)([f.Ay, _.A], () => (0, b.A)(f.Ay, _.A)),
+    N = (0, g.h)(O),
+    w = (0, s.yK)([x.A], () => {
       var e, t;
-      return null != (e = null == T || null == (t = T.linkedGames) ? true : t.map(e => f.A.getApplication(e.id)).filter(e => null != e)) ? e : []
+      return null != (e = null == N || null == (t = N.linkedGames) ? true : t.map(e => x.A.getApplication(e.id)).filter(e => null != e)) ? e : []
     }),
-    k = (0, h.RD)(T, {
+    I = (0, h.RD)(N, {
       allowedFlows: [h._M.RPC]
     }),
-    w = (0, h.RD)(T, {
+    k = (0, h.RD)(N, {
       allowedFlows: [h._M.WEB]
     }),
-    P = (0, h.RD)(T),
+    P = (0, h.RD)(N),
     {
       canDeauthorize: R,
       deauthorize: D
-    } = (e = null == T ? true : T.id, t = (0, s.bG)([j.default], () => j.default.getNewestTokenForApplication(e)), n = l.useCallback(() => {
+    } = (e = null == N ? true : N.id, t = (0, s.bG)([j.default], () => j.default.getNewestTokenForApplication(e)), n = l.useCallback(() => {
       null != t && d.A.delete(t.id)
     }, [t]), {
       canDeauthorize: null != t,
       deauthorize: n
     });
   return (0, a.jsxs)("div", {
-    ref: i,
-    className: r()(_.nd, A.n),
+    ref: r,
+    className: i()(y.nd, A.n),
     children: [(0, a.jsxs)("div", {
       className: A.k,
       children: [(0, a.jsx)(c.Heading, {
@@ -97,18 +97,18 @@ function S() {
         label: "Application ID",
         value: O,
         onChange: E
-      }), null != N && null != N.id ? (0, a.jsx)(c.Button, {
-        onClick: () => E(N.id),
+      }), null != T && null != T.id ? (0, a.jsx)(c.Button, {
+        onClick: () => E(T.id),
         variant: "primary",
-        text: "Use detected game: ".concat(N.name, " (").concat(N.id, ")")
+        text: "Use detected game: ".concat(T.name, " (").concat(T.id, ")")
       }) : null, (0, a.jsxs)(c.Text, {
         variant: "text-md/normal",
-        children: ["Application Name: ", null != T ? T.name : "N/A"]
+        children: ["Application Name: ", null != N ? N.name : "N/A"]
       }), (0, a.jsxs)(c.Text, {
         variant: "text-md/normal",
-        children: ["Linked Games:", " ", I.length > 0 ? I.map(e => {
+        children: ["Linked Games:", " ", w.length > 0 ? w.map(e => {
           var t;
-          return (null == (t = (0, p.t)(T)) ? true : t.id) === e.id ? "".concat(e.name, "*") : e.name
+          return (null == (t = (0, p.t)(N)) ? true : t.id) === e.id ? "".concat(e.name, "*") : e.name
         }).join(", ") : "N/A"]
       })]
     }), (0, a.jsxs)("div", {
@@ -128,15 +128,15 @@ function S() {
         color: "text-subtle",
         children: "This will start whichever authorization flow is available. RPC authorization takes precedence over web."
       }), (0, a.jsx)(c.Button, {
-        disabled: !k.canStartAuthorization,
-        onClick: () => k.startAuthorization({
+        disabled: !I.canStartAuthorization,
+        onClick: () => I.startAuthorization({
           analyticsLocations: o
         }),
         variant: "secondary",
         text: "Start In-App Authorization"
       }), (0, a.jsx)(c.Button, {
-        disabled: !w.canStartAuthorization,
-        onClick: () => w.startAuthorization({
+        disabled: !k.canStartAuthorization,
+        onClick: () => k.startAuthorization({
           analyticsLocations: o
         }),
         variant: "secondary",

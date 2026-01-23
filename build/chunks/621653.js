@@ -1,5 +1,5 @@
 /** Chunk was on 59275 **/
-/** chunk id: 621653, original params: e,t,l (module,exports,require) **/
+/** chunk id: 621653, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   g: () => i
@@ -10,30 +10,30 @@ var Chunk64700 = require("./64700.js"),
   Chunk248352 = require("./248352.js");
 
 function i() {
-  let e = n.useRef(new Map),
-    t = (0, r.bG)([a.A], () => a.A.getUserDiscounts());
-  n.useEffect(() => {
-    let l = e.current,
-      n = Date.now(),
-      r = [];
+  let e = r.useRef(new Map),
+    t = (0, l.bG)([a.A], () => a.A.getUserDiscounts());
+  r.useEffect(() => {
+    let n = e.current,
+      r = Date.now(),
+      l = [];
     return t.forEach(e => {
       if (null == e.expiresAt) return;
-      let t = e.expiresAt.getTime() - n;
-      if (t <= 0) r.push(e.discountId);
+      let t = e.expiresAt.getTime() - r;
+      if (t <= 0) l.push(e.discountId);
       else {
-        let n = setTimeout(() => {
+        let r = setTimeout(() => {
           s.h.dispatch({
             type: "COLLECTIBLES_USER_DISCOUNTS_EXPIRED",
             discountIds: [e.discountId]
-          }), l.delete(e.discountId)
+          }), n.delete(e.discountId)
         }, Math.min(0x7fffffff, t));
-        l.set(e.discountId, n)
+        n.set(e.discountId, r)
       }
-    }), r.length > 0 && s.h.dispatch({
+    }), l.length > 0 && s.h.dispatch({
       type: "COLLECTIBLES_USER_DISCOUNTS_EXPIRED",
-      discountIds: r
+      discountIds: l
     }), () => {
-      l.forEach(e => clearTimeout(e)), l.clear()
+      n.forEach(e => clearTimeout(e)), n.clear()
     }
   }, [t])
 }

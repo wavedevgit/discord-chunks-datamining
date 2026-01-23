@@ -19,10 +19,10 @@ function f(e) {
     userId: n,
     className: i,
     menuItems: f
-  } = e, p = l.useRef(null), b = () => {
+  } = e, p = l.useRef(null), g = () => {
     (0, c.GJ)(n, t)
   };
-  return (0, r.jsx)(s.YNO, {
+  return (0, r.jsx)(o.YNO, {
     targetElementRef: p,
     align: "top",
     position: "right",
@@ -31,27 +31,27 @@ function f(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(s.W1t, {
+      return (0, r.jsx)(o.W1t, {
         navId: "user-profile-widget-context-menu",
         onClose: () => {
-          (0, o.Z_)(), t()
+          (0, s.Z_)(), t()
         },
         onSelect: () => {},
         "aria-label": u.intl.string(u.t.xpSHSk),
-        children: (0, r.jsxs)(s.rXV, {
-          children: [(0, r.jsx)(s.Drp, {
+        children: (0, r.jsxs)(o.rXV, {
+          children: [(0, r.jsx)(o.Drp, {
             id: "flag-widget",
             label: u.intl.string(u.t.D4GvHE),
-            action: b,
+            action: g,
             color: "danger",
-            icon: s.iFK
+            icon: o.iFK
           }, "flag-widget"), f]
         })
       })
     },
     children: e => {
       var t, n;
-      return (0, r.jsx)(s.DUT, (t = function(e) {
+      return (0, r.jsx)(o.DUT, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -72,7 +72,7 @@ function f(e) {
         innerRef: p,
         "aria-label": u.intl.string(u.t.xpSHSk),
         className: a()(d.x, i),
-        children: (0, r.jsx)(s.jNK, {
+        children: (0, r.jsx)(o.jNK, {
           size: "sm",
           color: "currentColor"
         })

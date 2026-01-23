@@ -2,8 +2,8 @@
 /** chunk id: 807165, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => _,
-  W: () => N
+  A: () => N,
+  W: () => E
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -27,67 +27,67 @@ var Chunk627968 = require("./627968.js"),
   Chunk927573 = require("./927573.js"),
   Chunk652215 = require("./652215.js");
 
-function E(e) {
-  b.A.selectRole(e)
+function A(e) {
+  p.A.selectRole(e)
 }
-let N = () => {
+let E = () => {
   let {
     guild: e
-  } = (0, a.cf)([m.A], () => m.A.getProps()), t = (0, a.bG)([x.A], () => x.A.formState), n = (0, a.bG)([x.A], () => x.A.errorMessage);
-  return (0, r.jsx)(c.A, {
+  } = (0, a.cf)([f.A], () => f.A.getProps()), t = (0, a.bG)([h.A], () => h.A.formState), n = (0, a.bG)([h.A], () => h.A.errorMessage);
+  return (0, r.jsx)(o.A, {
     errorMessage: n,
     onSave: () => {
       if (null == e) return;
       let {
         id: t
-      } = e, n = x.A.editedRoleIds.map(e => x.A.getRole(e)).filter(g.Vq), r = x.A.getSortDeltas(), i = null, l = null;
-      x.A.hasRoleConfigurationChanges && (l = x.A.editedRoleIdsForConfigurations, i = x.A.getEditedRoleConnectionConfigurationsMap()), (0, p.JY)(t, n, r, l, i)
+      } = e, n = h.A.editedRoleIds.map(e => h.A.getRole(e)).filter(m.Vq), r = h.A.getSortDeltas(), i = null, l = null;
+      h.A.hasRoleConfigurationChanges && (l = h.A.editedRoleIdsForConfigurations, i = h.A.getEditedRoleConnectionConfigurationsMap()), (0, b.JY)(t, n, r, l, i)
     },
-    submitting: t === A.XlH.SUBMITTING,
-    onReset: p.Ts
+    submitting: t === y.XlH.SUBMITTING,
+    onReset: b.Ts
   })
 };
 
-function _(e) {
+function N(e) {
   let {
     refToScroller: t
   } = e, {
     guild: n,
     roles: l
-  } = (0, a.cf)([x.A], () => ({
-    guild: x.A.guild,
-    roles: x.A.roles
+  } = (0, a.cf)([h.A], () => ({
+    guild: h.A.guild,
+    roles: h.A.roles
   }), []);
   s()(null != n, "Guild cannot be null here");
-  let c = i.useMemo(() => l.find(e => (0, u.Oy)(e)), [l]);
-  s()(null != c, "Guild must have an everyone role");
-  let g = i.useMemo(() => l.filter(e => !(0, u.Oy)(e)), [l]),
-    b = (0, a.bG)([m.A], () => m.A.getSelectedRoleId()),
-    [p, A] = i.useState(g.length > 0);
+  let o = i.useMemo(() => l.find(e => (0, u.Oy)(e)), [l]);
+  s()(null != o, "Guild must have an everyone role");
+  let m = i.useMemo(() => l.filter(e => !(0, u.Oy)(e)), [l]),
+    p = (0, a.bG)([f.A], () => f.A.getSelectedRoleId()),
+    [b, y] = i.useState(m.length > 0);
   i.useEffect(() => {
-    A(p || g.length > 0)
-  }, [p, g.length]), (0, d.Ay)(() => {
-    let e = f.A.getMemberCount(n.id);
-    null != e && e <= h.gz && o.A.requestMembers(n.id, "", 0, false)
+    y(b || m.length > 0)
+  }, [b, m.length]), (0, d.Ay)(() => {
+    let e = g.A.getMemberCount(n.id);
+    null != e && e <= x.gz && c.A.requestMembers(n.id, "", 0, false)
   });
-  let [N, _] = i.useState(v.T$.DISPLAY);
+  let [E, N] = i.useState(v.T$.DISPLAY);
   return (i.useEffect(() => {
-    null == b && _(v.T$.DISPLAY)
-  }, [b]), null != b) ? (0, r.jsx)(j.A, {
-    editRoleId: b,
-    setEditRoleId: E,
-    selectedSection: N,
-    setSelectedSection: _
-  }) : p ? (0, r.jsx)(y.A, {
-    setEditRoleId: E,
+    null == p && N(v.T$.DISPLAY)
+  }, [p]), null != p) ? (0, r.jsx)(j.A, {
+    editRoleId: p,
+    setEditRoleId: A,
+    selectedSection: E,
+    setSelectedSection: N
+  }) : b ? (0, r.jsx)(O.A, {
+    setEditRoleId: A,
     guild: n,
-    everyoneRole: c,
-    otherRoles: g,
-    setSelectedSection: _,
+    everyoneRole: o,
+    otherRoles: m,
+    setSelectedSection: N,
     refToScroller: t
-  }) : (0, r.jsx)(O.A, {
+  }) : (0, r.jsx)(_.A, {
     guild: n,
-    everyoneRole: c,
-    setEditRoleId: E
+    everyoneRole: o,
+    setEditRoleId: A
   })
 }

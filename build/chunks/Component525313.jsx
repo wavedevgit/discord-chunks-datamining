@@ -81,7 +81,7 @@ function L(e) {
   }, [t, a]);
   return null == o ? null : (0, r.jsxs)("div", {
     className: w.lu,
-    children: [(0, r.jsx)(S.z, {
+    children: [(0, r.jsx)(I.z, {
       entry: n
     }), (0, r.jsx)("div", {
       className: w.Lt,
@@ -101,7 +101,7 @@ function L(e) {
 
 function j(e) {
   var t;
-  let n, m, S, {
+  let n, m, I, {
       channel: T,
       entry: w,
       closePopout: j,
@@ -119,12 +119,12 @@ function j(e) {
       artist: F,
       title: B,
       user: H
-    } = (0, A.u7)(w),
+    } = (0, v.u7)(w),
     {
       primaryColor: Y,
       secondaryColor: W
     } = (0, O.A)(null == U ? true : U.src),
-    K = (0, y.A)(C.fg2.SPOTIFY),
+    K = (0, b.A)(C.fg2.SPOTIFY),
     z = (0, s.bG)([u.A, _.default], () => (null == G ? true : G.type) === C.$pd.LISTENING && null != H ? (0, f.A)(u.A, _.default, H, G) : true, [G, H], o.A),
     q = i.useCallback(() => {
       var e;
@@ -133,7 +133,7 @@ function j(e) {
         n = (0, E.W6)(null != t ? {
           start: t
         } : w, Date.now());
-      return (0, b.Lu)({
+      return (0, y.Lu)({
         user: H,
         channel: T,
         mediaImageSrc: null == U ? true : U.src,
@@ -143,7 +143,7 @@ function j(e) {
           media: B
         }, T, H),
         colors: [Y, W],
-        badges: (0, b.N)({
+        badges: (0, y.N)({
           timestamp: n
         })
       })
@@ -154,7 +154,7 @@ function j(e) {
   if (V.media.provider === a.X.SPOTIFY) {
     m = () => {
       (0, c.Mp)(G)
-    }, S = () => {
+    }, I = () => {
       (0, c.QX)(G, H.id)
     }, n = () => {
       var e;
@@ -182,11 +182,11 @@ function j(e) {
       }, "listen-along"))
     }
   }
-  let Q = (0, r.jsx)(v.BC, {
-    onClickThumbnail: S,
+  let Q = (0, r.jsx)(A.BC, {
+    onClickThumbnail: I,
     channel: T,
     entry: w,
-    headerIcons: V.media.provider === a.X.SPOTIFY ? (0, r.jsx)(I.A, {
+    headerIcons: V.media.provider === a.X.SPOTIFY ? (0, r.jsx)(S.A, {
       onClick: n,
       "aria-label": R.intl.string(R.t.rRffNz),
       Icon: h.A
@@ -200,9 +200,9 @@ function j(e) {
       activity: G
     })
   });
-  return (0, r.jsxs)(v.YN, {
-    children: [Q, (0, r.jsx)(v.Eh, {
-      children: (0, r.jsx)(v.fD, {
+  return (0, r.jsxs)(A.YN, {
+    children: [Q, (0, r.jsx)(A.Eh, {
+      children: (0, r.jsx)(A.fD, {
         onReaction: M,
         onVoiceChannelPreview: k,
         user: H,

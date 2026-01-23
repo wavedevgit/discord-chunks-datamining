@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   AO: () => g,
-  CW: () => b,
+  CW: () => y,
   Eq: () => _,
   MW: () => r.iL,
   P0: () => l,
   Rj: () => f,
-  UV: () => y,
+  UV: () => b,
   X: () => m,
   bO: () => h,
   fs: () => p,
@@ -84,9 +84,9 @@ var _ = function(e) {
   E = function(e) {
     return e.FREEFORM = "FREEFORM", e.COULD_NOT_LOAD = "COULD_NOT_LOAD", e.BLACK_SCREEN = "BLACK_SCREEN", e.FREEZING_OR_HITCHING = "FREEZING_OR_HITCHING", e.LAG = "LAG", e.BLURRY_OR_PIXELATED = "BLURRY_OR_PIXELATED", e.NO_AUDIO = "NO_AUDIO", e.BAD_AUDIO = "BAD_AUDIO", e.STOPPED_UNEXPECTEDLY = "STOPPED_UNEXPECTEDLY", e.DESYNC = "DESYNC", e.NO_GAME_AUDIO = "NO_GAME_AUDIO", e
   }({}),
-  b = function(e) {
+  y = function(e) {
     return e.FREEFORM = "FREEFORM", e.TOXIC_OR_INAPPROPRIATE = "TOXIC_OR_INAPPROPRIATE", e
   }({}),
-  y = function(e) {
+  b = function(e) {
     return e.UNSPECIFIED = "UNSPECIFIED", e.SELF = "SELF", e.SOMEONE = "SOMEONE", e.OTHERS = "OTHERS", e
   }({})

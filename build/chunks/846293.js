@@ -2,10 +2,10 @@
 /** chunk id: 846293, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => ev,
-  Pq: () => eA,
+  Ay: () => eA,
+  Pq: () => ev,
   he: () => eO,
-  rq: () => ey
+  rq: () => eb
 }), require("./938796.js"), require("./65821.js");
 var Chunk481613 = require("./481613.js"),
   i = require.n(Chunk481613),
@@ -167,14 +167,14 @@ function em(e) {
   if (!d && !p && !(null == i ? true : i.forceTransition) && o && W.A.getGuildId() !== t) return;
   let {
     type: _
-  } = r, h = G.A.getChannel(r.id), m = e_(t, r, i), b = _ === ee.rbe.GUILD_STAGE_VOICE, y = ee.BVt.CHANNEL(t, m);
-  (0, k.QE)(_) ? (0, v.B)(() => {
+  } = r, h = G.A.getChannel(r.id), m = e_(t, r, i), y = _ === ee.rbe.GUILD_STAGE_VOICE, b = ee.BVt.CHANNEL(t, m);
+  (0, k.QE)(_) ? (0, A.B)(() => {
     Promise.resolve().then(n.bind(n, 956793)).then(e => {
       let {
         default: n
       } = e, s = () => {
-        if (b) {
-          (0, M.av)(r instanceof k.YB ? r : (0, k.createChannelRecord)(r)), (0, j.pX)(y);
+        if (y) {
+          (0, M.av)(r instanceof k.YB ? r : (0, k.createChannelRecord)(r)), (0, j.pX)(b);
           return
         }(null == i ? true : i.muteOnJoinVoiceChannel) && Q.A.setSelfMute(f.x.DEFAULT, true), n.selectVoiceChannel(m), c === ei.yV.STREAM && null != l && J.Nl({
           streamType: er.U4.GUILD,
@@ -190,7 +190,7 @@ function em(e) {
           commandOrigin: O.iw.CHAT
         }))
       };
-      !d && (0, I.V)(t, [B.A, K.default, F.Ay]) ? (0, S.Ze)(t, s) : s()
+      !d && (0, S.V)(t, [B.A, K.default, F.Ay]) ? (0, I.Ze)(t, s) : s()
     })
   }) : (0, g.AX)(h) && c === ei.yV.EMBEDDED_APPLICATION && null != u && ((0, j.pX)(ee.BVt.CHANNEL(null != t ? t : ee.ME, m)), (0, E.A)({
     channelId: m,
@@ -199,7 +199,7 @@ function em(e) {
     inviterUserId: null == i ? true : i.inviterUserId,
     analyticsLocations: a,
     commandOrigin: O.iw.CHAT
-  })), eh(r, i)(y)
+  })), eh(r, i)(b)
 }
 
 function eg(e) {
@@ -207,7 +207,7 @@ function eg(e) {
     guildScheduledEvent: t,
     welcomeModalChannelId: n
   } = e;
-  null != t && (0, v.B)(() => {
+  null != t && (0, A.B)(() => {
     let e = {
       guildScheduledEventId: t.id
     };
@@ -239,13 +239,13 @@ function eE(e, t, n) {
     }
   }))
 }
-let eb = function(e, t) {
+let ey = function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [];
     G.A.addConditionalChangeListener(() => {
       var r;
       let i = G.A.getChannel(e),
         a = K.default.getCurrentUser();
-      return null == i || null == a || !(i.nsfw && !a.nsfwAllowed || i.isGuildVocalOrThread() && (0, y.Tv)(e)) && ((null == t ? true : t.guildScheduledEvent) != null ? eg(t) : em({
+      return null == i || null == a || !(i.nsfw && !a.nsfwAllowed || i.isGuildVocalOrThread() && (0, b.Tv)(e)) && ((null == t ? true : t.guildScheduledEvent) != null ? eg(t) : em({
         guildId: null != (r = i.getGuildId()) ? r : ee.ME,
         channel: i,
         options: t,
@@ -253,12 +253,12 @@ let eb = function(e, t) {
       }), false)
     })
   },
-  ey = async e => {
+  eb = async e => {
     let {
       guild_id: t,
       channel_id: n
     } = e;
-    (0, N.Fd)(e) && null != n ? eb(n) : await $.A.transitionToGuildSync(t)
+    (0, N.Fd)(e) && null != n ? ey(n) : await $.A.transitionToGuildSync(t)
   };
 
 function eO(e, t) {
@@ -279,14 +279,14 @@ function eO(e, t) {
   })
 }
 
-function eA(e, t, n) {
+function ev(e, t, n) {
   z.default.track(ee.HAw.INVITE_SERVER_CLICKED, {
     guild_id: e,
     action: t,
     location_stack: null != n ? n : null
   })
 }
-let ev = {
+let eA = {
   resolveInvite: eE,
   getInviteContext: (e, t) => ({
     location: e,
@@ -503,7 +503,7 @@ let ev = {
       return null == a || a(c), e.body
     }, e => {
       var t, n, r;
-      throw (null == (t = e.body) ? true : t.code) === ee.t02.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED && (0, b.yO)(et.w_.JOIN_LARGE_GUILD_UNDERAGE), _.h.dispatch({
+      throw (null == (t = e.body) ? true : t.code) === ee.t02.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED && (0, y.yO)(et.w_.JOIN_LARGE_GUILD_UNDERAGE), _.h.dispatch({
         type: "INVITE_ACCEPT_FAILURE",
         code: l,
         error: {
@@ -528,7 +528,7 @@ let ev = {
       callback: e => {
         if (null != e.channel) {
           let t = ef(e);
-          eb(e.channel.id, t, null != r ? r : [])
+          ey(e.channel.id, t, null != r ? r : [])
         }
         null != i && i(e)
       }
@@ -562,7 +562,7 @@ let ev = {
     }
   },
   openNativeAppModal(e) {
-    A.A.openNativeAppModal(e, ee.e$_.INVITE_BROWSER)
+    v.A.openNativeAppModal(e, ee.e$_.INVITE_BROWSER)
   },
   openApp(e, t, n, r, a) {
     var s, o;
@@ -602,6 +602,6 @@ let ev = {
       })
     })
   },
-  transitionToInviteChannelSync: eb,
-  trackInviteServerClicked: eA
+  transitionToInviteChannelSync: ey,
+  trackInviteServerClicked: ev
 }

@@ -54,40 +54,40 @@ function g(e, t) {
   }), e
 }
 let E = "DELETED",
-  b = new Map,
-  y = {};
+  y = new Map,
+  b = {};
 
 function O(e) {
-  return y[e]
+  return b[e]
 }
 
-function A(e, t) {
-  y[e] = t, b.set(e, a()())
+function v(e, t) {
+  b[e] = t, y.set(e, a()())
 }
 
-function v(e, t, n) {
+function A(e, t, n) {
   if (t !== n && null != t) {
     if (t === f.B5.SUBMITTED) {
       let t = O(e);
-      A(e, t + 1)
+      v(e, t + 1)
     }
     if (n === f.B5.SUBMITTED) {
       let t = O(e);
-      A(e, Math.max(0, t - 1))
+      v(e, Math.max(0, t - 1))
     }
   }
 }
 
-function S(e) {
+function I(e) {
   let {
     joinRequest: t
   } = e;
   k(t)
 }
-let I = false;
+let S = false;
 
 function T() {
-  I = true
+  S = true
 }
 
 function C(e) {
@@ -97,13 +97,13 @@ function C(e) {
     total: r,
     guildId: i
   } = e;
-  I = false, t === f.B5.SUBMITTED && A(i, r), n.forEach(e => {
+  S = false, t === f.B5.SUBMITTED && v(i, r), n.forEach(e => {
     k(e)
   })
 }
 
 function N() {
-  I = false
+  S = false
 }
 let R = e => "guild-join-request=".concat(e),
   w = (e, t) => "guild-".concat(e, "-").concat(t);
@@ -136,7 +136,7 @@ function U(e) {
   } = e, i = (0, p.j)(r), a = c.default.getCurrentUser();
   if (null == a || i.userId === a.id) returnfalse;
   let s = null == (t = j(i.joinRequestId)) ? true : t.applicationStatus;
-  return v(n, i.applicationStatus, s), k(i), true
+  return A(n, i.applicationStatus, s), k(i), true
 }
 
 function G(e) {
@@ -144,7 +144,7 @@ function G(e) {
     id: t,
     guildId: n
   } = e, r = j(t);
-  null != r && (v(n, E, r.applicationStatus), M(t))
+  null != r && (A(n, E, r.applicationStatus), M(t))
 }
 
 function V(e) {
@@ -156,7 +156,7 @@ function V(e) {
     k(g(h({}, e), {
       applicationStatus: n
     }))
-  }), A(t, 0)
+  }), v(t, 0)
 }
 let F = {};
 
@@ -203,14 +203,14 @@ class X extends(r = Chunk311907.Ay.Store) {
     return (0, d.mf)(t) ? L.values(n) : (0, d.ar)(t) ? x.values(n) : D.values(n)
   }
   getSubmittedGuildJoinRequestTotal(e) {
-    return y[e]
+    return b[e]
   }
   isFetching() {
-    return I
+    return S
   }
   hasFetched(e) {
-    if (!b.has(e)) returnfalse;
-    let t = b.get(e);
+    if (!y.has(e)) returnfalse;
+    let t = y.get(e);
     return null != t && a()().diff(t, "seconds") < q
   }
   getSelectedApplicationTab(e) {
@@ -229,7 +229,7 @@ class X extends(r = Chunk311907.Ay.Store) {
 }
 _(X, "displayName", "GuildJoinRequestStoreV2");
 let Z = new X(Chunk73153.h, {
-  GUILD_JOIN_REQUEST_BY_ID_FETCH_SUCCESS: S,
+  GUILD_JOIN_REQUEST_BY_ID_FETCH_SUCCESS: I,
   GUILD_JOIN_REQUESTS_FETCH_SUCCESS: C,
   GUILD_JOIN_REQUESTS_FETCH_START: T,
   GUILD_JOIN_REQUESTS_FETCH_FAILURE: N,

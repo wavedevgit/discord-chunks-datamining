@@ -15,10 +15,10 @@ var Chunk503698 = require("./503698.js"),
 
 function d() {
   var e, t;
-  let n = (0, a.yK)([s.A], () => {
+  let n = (0, s.yK)([a.A], () => {
     var e;
-    let t = null == (e = s.A.getLastClipsSession()) ? true : e.newClipIds;
-    return null == t ? [] : s.A.getClips().slice(0, 4).filter(e => t.includes(e.id))
+    let t = null == (e = a.A.getLastClipsSession()) ? true : e.newClipIds;
+    return null == t ? [] : a.A.getClips().slice(0, 4).filter(e => t.includes(e.id))
   });
   return (0, r.jsx)("div", {
     className: i()(u.vH, {

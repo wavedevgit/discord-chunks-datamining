@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk5867 = require("./5867.js"),
   Chunk235079 = require("./235079.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,13 +38,13 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,16 +55,16 @@ function A(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = {
+let I = {
     transform: "scale(0.7)",
     opacity: 0
   },
-  I = {
+  S = {
     transform: "scale(1)",
     opacity: 1
   };
@@ -84,36 +84,36 @@ function C() {
     n = (0, l.bG)([_.A], () => _.A.isSoundDisabled("call_ringing")),
     a = (0, l.bG)([m.A], () => m.A.disableSounds),
     s = (0, l.bG)([p.A], () => p.A.getSoundpack()),
-    y = i.useRef(false),
-    A = (0, o.A)(() => {
+    b = i.useRef(false),
+    v = (0, o.A)(() => {
       let e = "call_ringing";
-      return s === b.i.CLASSIC ? (0, f.Qh)(T(), e) : (0, f.aN)("call_ringing", s)
+      return s === y.i.CLASSIC ? (0, f.Qh)(T(), e) : (0, f.aN)("call_ringing", s)
     }, [s]);
   return i.useEffect(() => () => {
-    A.stop()
-  }, [A]), i.useEffect(() => {
+    v.stop()
+  }, [v]), i.useEffect(() => {
     if (a || n) {
-      y.current && (A.stop(), y.current = false);
+      b.current && (v.stop(), b.current = false);
       return
     }
-    t && !y.current ? (A.loop(), y.current = true) : !t && y.current && (A.stop(), y.current = false)
-  }, [n, a, t, A]), (0, c.pnh)(e, {
+    t && !b.current ? (v.loop(), b.current = true) : !t && b.current && (v.stop(), b.current = false)
+  }, [n, a, t, v]), (0, c.pnh)(e, {
     keys: e => {
       var t;
       return null == (t = e.channel) ? true : t.id
     },
     enter: {
-      from: S,
-      to: I
+      from: I,
+      to: S
     },
-    leave: S,
+    leave: I,
     config: {
       mass: 1,
       tension: 500,
       friction: 18,
       clamp: true
     }
-  })((e, t) => (0, r.jsx)(d.A, v(O({}, t), {
+  })((e, t) => (0, r.jsx)(d.A, A(O({}, t), {
     animatedStyle: e
   })))
 }

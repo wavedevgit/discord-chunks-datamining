@@ -2,15 +2,15 @@
 /** chunk id: 901406, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $J: () => b,
+  $J: () => y,
   IG: () => O,
   UR: () => m,
   W1: () => E,
-  b6: () => I,
+  b6: () => S,
   bg: () => g,
-  pu: () => v,
+  pu: () => A,
   se: () => T,
-  v0: () => y
+  v0: () => b
 }), require("./321073.js"), require("./896048.js"), require("./134528.js"), require("./947204.js");
 var Chunk412703 = require("./412703.js"),
   Chunk73153 = require("./73153.js"),
@@ -56,11 +56,11 @@ function E(e) {
   return t || n
 }
 
-function b(e) {
+function y(e) {
   return "xbox" === e.connected_account_type ? _.fg2.XBOX : _.fg2.PLAYSTATION
 }
 
-function y(e, t) {
+function b(e, t) {
   let {
     platformType: n,
     quest: r
@@ -78,18 +78,18 @@ function y(e, t) {
 }
 
 function O(e) {
-  return b(e) === _.fg2.XBOX ? h.t["mytEv+"] : h.t.iDiwby
+  return y(e) === _.fg2.XBOX ? h.t["mytEv+"] : h.t.iDiwby
 }
 
-function A(e) {
+function v(e) {
   var t, n;
   let r = e.config.ctaConfig;
   return null == r ? null : ((0, c.isIOS)() || "ios" === (0, c.getOS)()) && (null == (t = r.ios) ? true : t.iosAppId) != null ? "https://apps.apple.com/app/id".concat(r.ios.iosAppId) : ((0, c.isAndroid)() || "android" === (0, c.getOS)()) && (null == (n = r.android) ? true : n.androidAppId) != null ? "https://play.google.com/store/apps/details?id=".concat(r.android.androidAppId) : null
 }
 
-function v(e, t) {
+function A(e, t) {
   let n = (0, d.Jx)(e.config),
-    r = A(e);
+    r = v(e);
   null != r && (n = r), (0, u.Y5)({
     questId: e.id,
     questContent: t.content,
@@ -100,7 +100,7 @@ function v(e, t) {
   }), l._.dispatch(_.jej.QUEST_GAME_LINK_OPENED), (0, a.A)(n)
 }
 
-function S() {
+function I() {
   {
     let {
       openUserSettings: e
@@ -111,7 +111,7 @@ function S() {
   }
 }
 
-function I(e, t) {
+function S(e, t) {
   let {
     quest: n
   } = e;
@@ -122,7 +122,7 @@ function I(e, t) {
     questContentCTA: t.ctaContent,
     impressionId: t.impressionId,
     sourceQuestContent: t.sourceQuestContent
-  }), S()
+  }), I()
 }
 
 function T(e, t) {

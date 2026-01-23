@@ -27,11 +27,11 @@ function E(e) {
     applicationStream: n,
     onAction: E
   } = e, {
-    defaultWatchMultipleStreams: b
+    defaultWatchMultipleStreams: y
   } = (0, u.W)({
     location: "WatchStreamButton"
   }), {
-    activeStream: y,
+    activeStream: b,
     watchingOtherStream: O
   } = (0, i.cf)([p.A], () => ({
     activeStream: p.A.getActiveStreamForApplicationStream(n),
@@ -41,23 +41,23 @@ function E(e) {
       } = e;
       return t !== n.ownerId
     }).length > 0
-  })), A = (0, i.bG)([_.A], () => _.A.getChannel(null == n ? true : n.channelId)), [v, S] = (0, d.zP)(A), I = (0, f.aL)(), T = null != y && null != n && y.state !== m.XYD.ENDED && y.ownerId === n.ownerId, C = e => {
+  })), v = (0, i.bG)([_.A], () => _.A.getChannel(null == n ? true : n.channelId)), [A, I] = (0, d.zP)(v), S = (0, f.aL)(), T = null != b && null != n && b.state !== m.XYD.ENDED && b.ownerId === n.ownerId, C = e => {
     null != n && (null == E || E(), l.default.selectVoiceChannel(n.channelId), T || (0, c.Nl)(n, {
       forceMultiple: e
-    }), I.dispatch(m.jej.POPOUT_CLOSE), h._.dispatch(m.jej.MODAL_CLOSE), o.A.popAll())
+    }), S.dispatch(m.jej.POPOUT_CLOSE), h._.dispatch(m.jej.MODAL_CLOSE), o.A.popAll())
   };
   if (null == n) return null;
-  let N = (0, d.CT)(S);
+  let N = (0, d.CT)(I);
   return t ? N = g.intl.string(g.t.XvBdeT) : T && (N = g.intl.string(g.t["JH1SJ+"])), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Button, {
       size: "sm",
       variant: T ? "secondary" : "active",
       icon: s.Fzq,
       text: N,
-      disabled: t || T || !v,
+      disabled: t || T || !A,
       onClick: () => C(false),
       fullWidth: true
-    }), !O || T || b ? null : (0, r.jsx)(a.m, {
+    }), !O || T || y ? null : (0, r.jsx)(a.m, {
       text: g.intl.string(g.t.wCrzut),
       children: (0, r.jsx)(s.K0, {
         variant: "secondary",

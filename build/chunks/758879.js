@@ -84,15 +84,15 @@ var m = _(function(e, t) {
   E = function(e) {
     return e
   },
-  b = Chunk64700.forwardRef;
+  y = Chunk64700.forwardRef;
 
-function y() {
+function b() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
   return t.filter(function(e) {
     return e
   }).join(" ")
 }
-true === b && (b = E), b(function(e, t) {
+true === y && (y = E), y(function(e, t) {
   var n = e["aria-current"],
     i = true === n ? "page" : n,
     s = e.activeClassName,
@@ -102,33 +102,33 @@ true === b && (b = E), b(function(e, t) {
     h = e.exact,
     m = e.isActive,
     O = e.location,
-    A = e.sensitive,
-    v = e.strict,
-    S = e.style,
-    I = e.to,
+    v = e.sensitive,
+    A = e.strict,
+    I = e.style,
+    S = e.to,
     T = e.innerRef,
     C = (0, l.A)(e, ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive", "location", "sensitive", "strict", "style", "to", "innerRef"]);
   return a.createElement(r.XZ.Consumer, null, function(e) {
     e || (0, c.A)(false);
     var n = O || e.location,
-      s = f(d(I, n), n),
+      s = f(d(S, n), n),
       l = s.pathname,
       N = l && l.replace(/([.+*?=^!:${}()[\]|/\\])/g, "\\$1"),
       R = N ? (0, r.B6)(n.pathname, {
         path: N,
         exact: h,
-        sensitive: A,
-        strict: v
+        sensitive: v,
+        strict: A
       }) : null,
       w = !!(m ? m(R, n) : R),
-      P = w ? y(_, u) : _,
-      D = w ? (0, o.A)({}, S, {}, p) : S,
+      P = w ? b(_, u) : _,
+      D = w ? (0, o.A)({}, I, {}, p) : I,
       x = (0, o.A)({
         "aria-current": w && i || null,
         className: P,
         style: D,
         to: s
       }, C);
-    return E !== b ? x.ref = t || T : x.innerRef = T, a.createElement(g, x)
+    return E !== y ? x.ref = t || T : x.innerRef = T, a.createElement(g, x)
   })
 })

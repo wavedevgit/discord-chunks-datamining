@@ -2,7 +2,7 @@
 /** chunk id: 242849, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  R: () => o
+  R: () => c
 });
 var Chunk627968 = require("./627968.js"),
   Chunk158954 = require("./158954.js"),
@@ -11,16 +11,16 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk932249 = require("./932249.js");
 
-function o(e) {
+function c(e) {
   let {
     canManageGuild: t,
     guild: n
   } = e;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsxs)("div", {
-      className: c.t,
+      className: o.t,
       children: [(0, r.jsx)("div", {
-        className: c._,
+        className: o._,
         children: (0, r.jsx)(s.y, {
           label: a.intl.string(a.t.KuYcnU),
           canManageGuild: t,
@@ -28,7 +28,7 @@ function o(e) {
           afkChannelId: n.afkChannelId
         })
       }), (0, r.jsx)("div", {
-        className: c._,
+        className: o._,
         children: (0, r.jsx)(l.S, {
           label: a.intl.string(a.t.brhYaR),
           canManageGuild: t,

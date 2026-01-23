@@ -26,30 +26,30 @@ function u(e) {
     m = e.innerRef,
     g = e.children,
     E = r.useContext(i.kr),
-    b = r.useState(null),
-    y = b[0],
-    O = b[1],
-    A = r.useState(null),
-    v = A[0],
-    S = A[1];
+    y = r.useState(null),
+    b = y[0],
+    O = y[1],
+    v = r.useState(null),
+    A = v[0],
+    I = v[1];
   r.useEffect(function() {
-    (0, a.cZ)(m, y)
-  }, [m, y]);
-  var I = r.useMemo(function() {
+    (0, a.cZ)(m, b)
+  }, [m, b]);
+  var S = r.useMemo(function() {
       return {
         placement: n,
         strategy: d,
         onFirstUpdate: h,
         modifiers: [].concat(p, [{
           name: "arrow",
-          enabled: null != v,
+          enabled: null != A,
           options: {
-            element: v
+            element: A
           }
         }])
       }
-    }, [n, d, h, p, v]),
-    T = (0, s.E)(_ || E, y, I),
+    }, [n, d, h, p, A]),
+    T = (0, s.E)(_ || E, b, S),
     C = T.state,
     N = T.styles,
     R = T.forceUpdate,
@@ -63,11 +63,11 @@ function u(e) {
         isReferenceHidden: C && C.modifiersData.hide ? C.modifiersData.hide.isReferenceHidden : null,
         arrowProps: {
           style: N.arrow,
-          ref: S
+          ref: I
         },
         forceUpdate: R || o,
         update: w || l
       }
-    }, [O, S, n, C, N, w, R]);
+    }, [O, I, n, C, N, w, R]);
   return (0, a.vq)(g)(P)
 }

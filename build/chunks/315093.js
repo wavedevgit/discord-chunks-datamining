@@ -2,7 +2,7 @@
 /** chunk id: 315093, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk681154 = require("./681154.js"),
   Chunk808380 = require("./808380.js"),
@@ -61,7 +61,7 @@ let g = {
     [Chunk158611.Z.EMBED]: Chunk409626.Ob.Embed
   };
 
-function b(e) {
+function y(e) {
   let t, n, {
       entry: i,
       location: s,
@@ -77,12 +77,12 @@ function b(e) {
     })
   }
   n = i.content_type === r.I.PLAYED_GAME && (0, l.JM)(i) && !(0, l.I5)(i) ? f.t.vPg1JT : f.t.rPqqts;
-  let b = E[s],
-    y = {
+  let y = E[s],
+    b = {
       onClick: (0, o.A)({
-        location: b,
+        location: y,
         applicationId: i.extra.application_id,
-        source: b,
+        source: y,
         trackEntryPointImpression: true,
         sourceUserId: i.author_id
       }),
@@ -93,8 +93,8 @@ function b(e) {
   return m(_({}, c), {
     thumbnailUrl: p,
     title: h,
-    titleClickable: y,
-    thumbnailClickable: y,
+    titleClickable: b,
+    thumbnailClickable: b,
     userDescription: n,
     providerIconProps: t
   })

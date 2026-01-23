@@ -2,7 +2,7 @@
 /** chunk id: 415043, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p,
-  H: () => b
+  H: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -55,49 +55,49 @@ function p(e) {
   let {
     label: t,
     className: n,
-    size: l = o._3J.SIZE_16,
-    maxUsers: s = 4
-  } = e, p = f(e, ["label", "className", "size", "maxUsers"]), b = (0, c.GV)();
+    size: l = s._3J.SIZE_16,
+    maxUsers: o = 4
+  } = e, p = f(e, ["label", "className", "size", "maxUsers"]), g = (0, c.GV)();
   return (0, r.jsxs)("div", {
     className: i()(n, u.k),
     children: [(0, r.jsx)(a.I, d({
-      "aria-labelledby": b,
+      "aria-labelledby": g,
       overflowCountClassName: u.j,
       size: l,
-      maxUsers: s
-    }, p)), (0, r.jsx)(o.Text, {
+      maxUsers: o
+    }, p)), (0, r.jsx)(s.Text, {
       variant: "text-xs/normal",
       color: "text-subtle",
-      id: b,
+      id: g,
       children: t
     })]
   })
 }
 
-function b(e) {
+function g(e) {
   let {
     label: t,
     className: n,
     overflowCountClassName: l,
-    size: c = o._3J.SIZE_16,
+    size: c = s._3J.SIZE_16,
     maxUsers: p = 4,
-    onClick: b
-  } = e, g = f(e, ["label", "className", "overflowCountClassName", "size", "maxUsers", "onClick"]);
+    onClick: g
+  } = e, m = f(e, ["label", "className", "overflowCountClassName", "size", "maxUsers", "onClick"]);
   return (0, r.jsx)("div", {
     className: n,
-    children: (0, r.jsx)(s.m_, {
+    children: (0, r.jsx)(o.m_, {
       text: t,
       asContainer: true,
       ariaHidden: true,
-      children: (0, r.jsx)(o.DUT, {
-        onClick: b,
+      children: (0, r.jsx)(s.DUT, {
+        onClick: g,
         "aria-label": t,
         children: (0, r.jsx)(a.I, d({
           size: c,
           maxUsers: p,
           overflowCountClassName: i()(u.j, l),
           "aria-hidden": true
-        }, g))
+        }, m))
       })
     })
   })

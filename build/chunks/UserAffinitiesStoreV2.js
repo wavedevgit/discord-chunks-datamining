@@ -60,10 +60,10 @@ function E() {
   f = false
 }
 
-function b() {
+function y() {
   _ = c({}, p), d = new Map, f = false
 }
-class y extends(r = Chunk311907.Ay.PersistedStore) {
+class b extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     if (this.waitFor(s.A), null != e) {
       var t;
@@ -105,10 +105,10 @@ class y extends(r = Chunk311907.Ay.PersistedStore) {
     return (null != (t = null == (n = d.get(e)) ? true : n.vcProbability) ? t : 0) > u
   }
 }
-l(y, "displayName", "UserAffinitiesV2Store"), l(y, "persistKey", "UserAffinitiesStoreV2");
-let O = new y(Chunk73153.h, {
+l(b, "displayName", "UserAffinitiesV2Store"), l(b, "persistKey", "UserAffinitiesStoreV2");
+let O = new b(Chunk73153.h, {
   LOAD_USER_AFFINITIES_V2: m,
   LOAD_USER_AFFINITIES_V2_SUCCESS: g,
   LOAD_USER_AFFINITIES_V2_FAILURE: E,
-  LOGOUT: b
+  LOGOUT: y
 })

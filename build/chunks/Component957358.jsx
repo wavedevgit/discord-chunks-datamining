@@ -70,33 +70,33 @@ class d extends(r = Chunk64700.PureComponent) {
       } = this.props;
       if (i.length < 2) return;
       let p = Math.max(Math.min((e - this.dataChangedAt) / l, 1), 0),
-        f = r.getContext("2d"),
-        h = this.maxValue;
-      f.strokeStyle = a, f.lineWidth = c;
-      let A = r.height - f.lineWidth,
-        g = f.createLinearGradient(0, 0, 0, A);
-      if (null != d) g.addColorStop(0, d);
+        h = r.getContext("2d"),
+        g = this.maxValue;
+      h.strokeStyle = a, h.lineWidth = c;
+      let f = r.height - h.lineWidth,
+        m = h.createLinearGradient(0, 0, 0, f);
+      if (null != d) m.addColorStop(0, d);
       else {
         let {
           r: e,
           g: t,
           b: n
         } = o.E2(a);
-        g.addColorStop(0, "rgba(".concat(e, ", ").concat(t, ", ").concat(n, ", 0)"))
+        m.addColorStop(0, "rgba(".concat(e, ", ").concat(t, ", ").concat(n, ", 0)"))
       }
-      g.addColorStop(1, this.fillColor), f.fillStyle = g;
-      let m = i.length >= s ? s : i.length;
-      f.setTransform(1, 0, 0, false, 0, r.height), f.clearRect(0, 0, r.width, r.height), f.translate(0, .5 * f.lineWidth);
-      let b = Math.floor(r.width / (m - 3)),
-        _ = .5 * b;
-      f.translate(b - b * p, 0), f.beginPath();
-      let E = -b;
+      m.addColorStop(1, this.fillColor), h.fillStyle = m;
+      let A = i.length >= s ? s : i.length;
+      h.setTransform(1, 0, 0, false, 0, r.height), h.clearRect(0, 0, r.width, r.height), h.translate(0, .5 * h.lineWidth);
+      let _ = Math.floor(r.width / (A - 3)),
+        b = .5 * _;
+      h.translate(_ - _ * p, 0), h.beginPath();
+      let E = -_;
       i.forEach((e, r) => {
         t = {
           x: E,
-          y: A * e / h
-        }, 0 === r ? f.moveTo(t.x, t.y) : f.bezierCurveTo(n.x + _, n.y, t.x - _, t.y, t.x, t.y), n = t, E += b
-      }), f.stroke(), f.lineTo(E - b, 0), f.lineTo(0, 0), f.fill(), u && p < 1 && (this.animationFrameRequestId = window.requestAnimationFrame(this.updateAnimation))
+          y: f * e / g
+        }, 0 === r ? h.moveTo(t.x, t.y) : h.bezierCurveTo(n.x + b, n.y, t.x - b, t.y, t.x, t.y), n = t, E += _
+      }), h.stroke(), h.lineTo(E - _, 0), h.lineTo(0, 0), h.fill(), u && p < 1 && (this.animationFrameRequestId = window.requestAnimationFrame(this.updateAnimation))
     })
   }
 }

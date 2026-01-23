@@ -2,7 +2,7 @@
 /** chunk id: 439447, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./65821.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -213,7 +213,7 @@ function E(e, t, n) {
   returnfalse
 }
 
-function b(e) {
+function y(e) {
   var t, n;
   return n = class extends(t = i.PureComponent) {
     componentDidMount() {

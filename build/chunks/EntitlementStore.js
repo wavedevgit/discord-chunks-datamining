@@ -27,20 +27,20 @@ function h(e, t, n) {
 let m = {},
   g = {},
   E = {},
-  b = {},
-  y = false,
+  y = {},
+  b = false,
   O = false,
-  A = false,
-  v = new Set,
-  S = new Set,
-  I = {};
+  v = false,
+  A = new Set,
+  I = new Set,
+  S = {};
 
 function T() {
-  m = {}, E = {}, b = {}, y = false, O = false, A = false, v = new Set, S = new Set
+  m = {}, E = {}, y = {}, b = false, O = false, v = false, A = new Set, I = new Set
 }
 
 function C(e) {
-  m[e.id] = c.A.createFromServer(e), null == E[e.sku_id] && (E[e.sku_id] = new Set), null == b[e.application_id] && (b[e.application_id] = new Set), null != e.subscription_id && (null == I[e.subscription_id] && (I[e.subscription_id] = new Set), I[e.subscription_id].add(e.id)), b[e.application_id].add(e.id), E[e.sku_id].add(e.id)
+  m[e.id] = c.A.createFromServer(e), null == E[e.sku_id] && (E[e.sku_id] = new Set), null == y[e.application_id] && (y[e.application_id] = new Set), null != e.subscription_id && (null == S[e.subscription_id] && (S[e.subscription_id] = new Set), S[e.subscription_id].add(e.id)), y[e.application_id].add(e.id), E[e.sku_id].add(e.id)
 }
 
 function N(e) {
@@ -49,11 +49,11 @@ function N(e) {
 
 function R(e) {
   delete m[e.id];
-  let t = b[e.application_id];
+  let t = y[e.application_id];
   null != t && t.delete(e.id);
   let n = E[e.sku_id];
   if (null != n && n.delete(e.id), null != e.subscription_id) {
-    let t = I[e.subscription_id];
+    let t = S[e.subscription_id];
     null != t && t.delete(e.id)
   }
 }
@@ -62,7 +62,7 @@ function w(e) {
   let {
     applicationId: t
   } = e;
-  v.add(t)
+  A.add(t)
 }
 
 function P(e) {
@@ -70,7 +70,7 @@ function P(e) {
     applicationId: t,
     entitlements: n
   } = e;
-  for (let e of (v.delete(t), S.add(t), n)) true !== e.consumed && C(e)
+  for (let e of (A.delete(t), I.add(t), n)) true !== e.consumed && C(e)
 }
 
 function D(e) {
@@ -83,7 +83,7 @@ function D(e) {
 function x() {}
 
 function L() {
-  y = true
+  b = true
 }
 
 function j(e) {
@@ -91,11 +91,11 @@ function j(e) {
     entitlements: t,
     excludeEnded: n
   } = e;
-  for (let e of (O = true, y = false, A = !n, t)) C(e)
+  for (let e of (O = true, b = false, v = !n, t)) C(e)
 }
 
 function M() {
-  O = false, y = false, A = false
+  O = false, b = false, v = false
 }
 
 function k(e) {
@@ -132,7 +132,7 @@ class F extends(r = Chunk311907.il) {
     return a().values(g)
   }
   getForApplication(e) {
-    let t = b[e];
+    let t = y[e];
     if (null == t) return null;
     let n = new Set;
     for (let e of t) n.add(m[e]);
@@ -146,19 +146,19 @@ class F extends(r = Chunk311907.il) {
     return n
   }
   get fetchingAllEntitlements() {
-    return y
+    return b
   }
   get fetchedAllEntitlements() {
     return O
   }
   get fetchedEndedEntitlements() {
-    return A
-  }
-  get applicationIdsFetching() {
     return v
   }
+  get applicationIdsFetching() {
+    return A
+  }
   get applicationIdsFetched() {
-    return S
+    return I
   }
   isFetchingForApplication(e) {
     return this.fetchingAllEntitlements || null != e && this.applicationIdsFetching.has(e)
@@ -167,7 +167,7 @@ class F extends(r = Chunk311907.il) {
     return this.fetchedAllEntitlements || null != e && this.applicationIdsFetched.has(e)
   }
   getForSubscription(e) {
-    let t = I[e];
+    let t = S[e];
     if (null == t) return null;
     let n = new Set;
     for (let e of t) n.add(m[e]);
@@ -181,12 +181,12 @@ class F extends(r = Chunk311907.il) {
         let n = m[t];
         if (null != n && n.isValid(e, f.A, r)) returntrue
       }
-    if (S.has(n)) returnfalse;
+    if (I.has(n)) returnfalse;
     let a = null != r ? u.A.getLibraryApplication(n, r) : u.A.getActiveLibraryApplication(n);
     return !!(null != a && a.sku.id === t && (0, d.XZ)(a)) || null
   }
   hasFetchedForApplicationIds(e) {
-    return e.every(e => S.has(e))
+    return e.every(e => I.has(e))
   }
   getReverseTrialEntitlement(e) {
     let t = new Date,

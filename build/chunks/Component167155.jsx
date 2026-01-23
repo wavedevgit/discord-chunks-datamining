@@ -15,21 +15,21 @@ let u = function(e) {
   let {
     className: t,
     hasVideo: n,
-    text: r,
+    text: l,
     hasConnectedChannel: u,
     textVariant: d = "text-md/medium"
-  } = e, f = n ? o.intl.string(o.t.IlHdW8) : o.intl.string(o.t.WsOisp);
-  return (0, l.jsx)(s.A, {
+  } = e, f = n ? s.intl.string(s.t.IlHdW8) : s.intl.string(s.t.WsOisp);
+  return (0, r.jsx)(o.A, {
     className: i()(t, c.H),
-    hoverText: u ? (0, l.jsx)(a.Text, {
+    hoverText: u ? (0, r.jsx)(a.Text, {
       variant: d,
       color: "currentColor",
       children: f
     }) : null,
-    children: (0, l.jsx)(a.Text, {
+    children: (0, r.jsx)(a.Text, {
       variant: d,
       color: "currentColor",
-      children: r
+      children: l
     })
   })
 }

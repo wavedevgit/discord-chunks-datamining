@@ -14,15 +14,15 @@ var Chunk627968 = require("./627968.js"),
   Chunk144958 = require("./144958.js");
 
 function f() {
-  let e = (0, a.bG)([o.A], () => o.A.getError());
-  return e ? (0, l.jsx)(p, {
+  let e = (0, a.bG)([s.A], () => s.A.getError());
+  return e ? (0, r.jsx)(p, {
     error: e
   }) : null
 }
 let p = e => {
   let {
     error: t
-  } = e, [n, a] = (0, r.useState)(false), f = (0, s.pnh)(!n, {
+  } = e, [n, a] = (0, l.useState)(false), f = (0, o.pnh)(!n, {
     from: {
       opacity: 0,
       translateY: 20
@@ -37,24 +37,24 @@ let p = e => {
     }
   }, "respect-motion-settings"), p = (() => {
     switch (t) {
-      case o.L.ERROR_DOWNLOADING_DEPENDENCY:
+      case s.L.ERROR_DOWNLOADING_DEPENDENCY:
         return u.intl.string(u.t.D9neaH);
-      case o.L.ERROR_ACTIVATING_VOICE_FILTER:
+      case s.L.ERROR_ACTIVATING_VOICE_FILTER:
         return u.intl.string(u.t.mNMZZg);
       default:
         return u.intl.string(u.t.F8FvUy)
     }
   })();
-  return f(e => n ? null : (0, l.jsx)(i.animated.div, {
+  return f(e => n ? null : (0, r.jsx)(i.animated.div, {
     style: e,
     className: d.z,
-    children: (0, l.jsxs)("div", {
+    children: (0, r.jsxs)("div", {
       className: d.A,
-      children: [(0, l.jsx)(s.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
         color: "always-white",
         children: p
-      }), (0, l.jsx)(s.PMB, {
+      }), (0, r.jsx)(o.PMB, {
         noticeType: c.kqX.VOICE_FILTERS_ERROR,
         onClick: () => a(true)
       })]

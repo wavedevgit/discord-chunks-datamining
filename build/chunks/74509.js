@@ -47,7 +47,7 @@ class i {
     let r = this.options.loose,
       i = r ? u[d.HYPHENRANGELOOSE] : u[d.HYPHENRANGE];
     l("hyphen replace", e = e.replace(i, w(this.options.includePrerelease))), l("comparator trim", e = e.replace(u[d.COMPARATORTRIM], f)), l("tilde trim", e = e.replace(u[d.TILDETRIM], p)), l("caret trim", e = e.replace(u[d.CARETTRIM], _));
-    let s = e.split(" ").map(e => y(e, this.options)).join(" ").split(/\s+/).map(e => R(e, this.options));
+    let s = e.split(" ").map(e => b(e, this.options)).join(" ").split(/\s+/).map(e => R(e, this.options));
     r && (s = s.filter(e => (l("loose invalid filter", e, this.options), !!e.match(u[d.COMPARATORLOOSE])))), l("range list", s);
     let c = new Map;
     for (let e of s.map(e => new o(e, this.options))) {
@@ -60,7 +60,7 @@ class i {
   }
   intersects(e, t) {
     if (!(e instanceof i)) throw TypeError("a Range is required");
-    return this.set.some(n => b(n, t) && e.set.some(e => b(e, t) && n.every(n => e.every(e => n.intersects(e, t)))))
+    return this.set.some(n => y(n, t) && e.set.some(e => y(e, t) && n.every(n => e.every(e => n.intersects(e, t)))))
   }
   test(e) {
     if (!e) returnfalse;
@@ -93,25 +93,25 @@ let a = new(require("./678884.js")),
   } = require("./376780.js"),
   g = e => "<0.0.0-0" === e.value,
   E = e => "" === e.value,
-  b = (e, t) => {
+  y = (e, t) => {
     let n = true,
       r = e.slice(),
       i = r.pop();
     for (; n && r.length;) n = r.every(e => i.intersects(e, t)), i = r.pop();
     return n
   },
-  y = (e, t) => (l("comp", e, t), l("caret", e = S(e, t)), l("tildes", e = A(e, t)), l("xrange", e = T(e, t)), l("stars", e = N(e, t)), e),
+  b = (e, t) => (l("comp", e, t), l("caret", e = I(e, t)), l("tildes", e = v(e, t)), l("xrange", e = T(e, t)), l("stars", e = N(e, t)), e),
   O = e => !e || "x" === e.toLowerCase() || "*" === e,
-  A = (e, t) => e.trim().split(/\s+/).map(e => v(e, t)).join(" "),
-  v = (e, t) => {
+  v = (e, t) => e.trim().split(/\s+/).map(e => A(e, t)).join(" "),
+  A = (e, t) => {
     let n = t.loose ? u[d.TILDELOOSE] : u[d.TILDE];
     return e.replace(n, (t, n, r, i, a) => {
       let s;
       return l("tilde", e, t, n, r, i, a), O(n) ? s = "" : O(r) ? s = `>=${n}.0.0 <${+n+1}.0.0-0` : O(i) ? s = `>=${n}.${r}.0 <${n}.${+r+1}.0-0` : a ? (l("replaceTilde pr", a), s = `>=${n}.${r}.${i}-${a} <${n}.${+r+1}.0-0`) : s = `>=${n}.${r}.${i} <${n}.${+r+1}.0-0`, l("tilde return", s), s
     })
   },
-  S = (e, t) => e.trim().split(/\s+/).map(e => I(e, t)).join(" "),
-  I = (e, t) => {
+  I = (e, t) => e.trim().split(/\s+/).map(e => S(e, t)).join(" "),
+  S = (e, t) => {
     l("caret", e, t);
     let n = t.loose ? u[d.CARETLOOSE] : u[d.CARET],
       r = t.includePrerelease ? "-0" : "";

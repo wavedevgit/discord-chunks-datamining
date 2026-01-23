@@ -2,7 +2,7 @@
 /** chunk id: 148131, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => y
+  w: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -51,13 +51,13 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e) {
+function b(e) {
   let {
     user: t
   } = e, a = (0, o.bG)([c.default], () => c.default.getCurrentUser()), m = i.useCallback(() => {
@@ -65,7 +65,7 @@ function y(e) {
       let {
         default: e
       } = await n.e("43139").then(n.bind(n, 179950));
-      return n => (0, r.jsx)(e, b(g({}, n), {
+      return n => (0, r.jsx)(e, y(g({}, n), {
         currentUser: a,
         otherUser: t
       }))

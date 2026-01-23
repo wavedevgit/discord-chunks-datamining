@@ -2,7 +2,7 @@
 /** chunk id: 706276, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  o: () => b
+  o: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -55,8 +55,8 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = () => {
-    let [e, t] = i.useState(p.PremiumTypes.TIER_0), [n, h] = i.useState(o.g.WHAT_YOU_LOSE), [g, b] = i.useState(null), [O, A] = i.useState(p.gD.PREMIUM_MONTH_TIER_0), [v, S] = i.useState([]), [I, T] = i.useState(() => {
+let y = () => {
+    let [e, t] = i.useState(p.PremiumTypes.TIER_0), [n, h] = i.useState(o.g.WHAT_YOU_LOSE), [g, y] = i.useState(null), [O, v] = i.useState(p.gD.PREMIUM_MONTH_TIER_0), [A, I] = i.useState([]), [S, T] = i.useState(() => {
       let e = new Date;
       return e.setMonth(e.getMonth() + 1), e
     }), [C, N] = i.useState(null), [R, w] = i.useState(false), [P, D] = i.useState(false), [x, L] = i.useState(false);
@@ -79,34 +79,34 @@ let b = () => {
     }, [O]), (0, i.useEffect)(() => {
       switch (e) {
         case p.PremiumTypes.TIER_0:
-          S([{
+          I([{
             label: "Nitro Basic Monthly",
             value: p.gD.PREMIUM_MONTH_TIER_0
           }, {
             label: "Nitro Basic Yearly",
             value: p.gD.PREMIUM_YEAR_TIER_0
-          }]), A(p.gD.PREMIUM_MONTH_TIER_0);
+          }]), v(p.gD.PREMIUM_MONTH_TIER_0);
           break;
         case p.PremiumTypes.TIER_1:
-          S([{
+          I([{
             label: "Nitro Classic Monthly",
             value: p.gD.PREMIUM_MONTH_TIER_1
           }, {
             label: "Nitro Classic Yearly",
             value: p.gD.PREMIUM_YEAR_TIER_1
-          }]), A(p.gD.PREMIUM_MONTH_TIER_1);
+          }]), v(p.gD.PREMIUM_MONTH_TIER_1);
           break;
         case p.PremiumTypes.TIER_2:
-          S([{
+          I([{
             label: "Nitro Monthly",
             value: p.gD.PREMIUM_MONTH_TIER_2
           }, {
             label: "Nitro Yearly",
             value: p.gD.PREMIUM_YEAR_TIER_2
-          }]), A(p.gD.PREMIUM_MONTH_TIER_2)
+          }]), v(p.gD.PREMIUM_MONTH_TIER_2)
       }
     }, [e]), (0, i.useEffect)(() => {
-      [o.g.CONFIRM_DISCOUNT, o.g.DISCOUNT_APPLIED].includes(n) && null === g && b(y()), n === o.g.PREVIEW && null === C && N(new c.A({
+      [o.g.CONFIRM_DISCOUNT, o.g.DISCOUNT_APPLIED].includes(n) && null === g && y(b()), n === o.g.PREVIEW && null === C && N(new c.A({
         id: "",
         invoiceItems: [{
           id: "",
@@ -128,10 +128,10 @@ let b = () => {
         tax: 0,
         taxInclusive: true,
         subscriptionPeriodStart: new Date,
-        subscriptionPeriodEnd: I,
+        subscriptionPeriodEnd: S,
         status: d.lT7.PAID
       })), n !== o.g.PREVIEW && null !== C && N(null)
-    }, [n, g, I, O, C]);
+    }, [n, g, S, O, C]);
     let j = i.useCallback(async () => {
       L(true), await (0, a.mMO)(async () => t => (0, r.jsx)(u.m, E(m({}, t), {
         onClose: () => {
@@ -159,7 +159,7 @@ let b = () => {
           createdAt: new Date,
           canceledAt: null,
           currentPeriodStart: new Date,
-          currentPeriodEnd: I,
+          currentPeriodEnd: S,
           status: d.Dmq.ACTIVE,
           paymentSourceId: null,
           paymentGateway: null,
@@ -174,7 +174,7 @@ let b = () => {
           pauseReason: f.qf.UNKNOWN
         }
       })))
-    }, [e, g, O, C, R, P, n, I]);
+    }, [e, g, O, C, R, P, n, S]);
     return (0, i.useEffect)(() => {
       x && j()
     }, [n, x, j]), (0, r.jsxs)(l.LB, {
@@ -200,11 +200,11 @@ let b = () => {
           selectionMode: "single",
           fullWidth: true
         })
-      }), v.length > 0 && (0, r.jsx)(l.MG, {
+      }), A.length > 0 && (0, r.jsx)(l.MG, {
         children: (0, r.jsx)(a.l6P, {
           label: "Subscription Interval",
           placeholder: "Premium Type",
-          onSelectionChange: A,
+          onSelectionChange: v,
           formatOption: e => {
             let {
               label: t,
@@ -217,7 +217,7 @@ let b = () => {
             }
           },
           value: O,
-          options: v,
+          options: A,
           selectionMode: "single",
           fullWidth: true
         })
@@ -255,7 +255,7 @@ let b = () => {
         children: (0, r.jsx)(a.Checkbox, {
           checked: null !== g,
           onChange: () => {
-            null === g ? b(y()) : b(null)
+            null === g ? y(b()) : y(null)
           },
           label: "Churn Discount"
         })
@@ -285,7 +285,7 @@ let b = () => {
       })]
     })
   },
-  y = function() {
+  b = function() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
       {
         discount: t = {}

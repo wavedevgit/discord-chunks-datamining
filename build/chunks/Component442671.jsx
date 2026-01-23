@@ -60,15 +60,15 @@ let g = e => {
     isLast: a,
     className: p
   } = e, h = 1, [g, E] = i.useState(false), {
-    analyticsLocations: b
-  } = (0, u.Ay)(), y = i.useCallback(() => {
+    analyticsLocations: y
+  } = (0, u.Ay)(), b = i.useCallback(() => {
     (0, d.openUserProfileModal)({
       userId: t,
-      sourceAnalyticsLocations: b
+      sourceAnalyticsLocations: y
     })
-  }, [t, b]), O = () => {
+  }, [t, y]), O = () => {
     E(true)
-  }, A = () => {
+  }, v = () => {
     E(false)
   };
   return (0, r.jsx)(l.tG, {
@@ -87,8 +87,8 @@ let g = e => {
           [f.vu]: g
         }),
         onMouseEnter: O,
-        onMouseLeave: A,
-        onClick: y
+        onMouseLeave: v,
+        onClick: b
       }, e), {
         children: n(g)
       }))

@@ -24,9 +24,9 @@ function p(e) {
     active: _ = false,
     muteSound: h = false,
     disabled: m = false
-  } = e, g = i.useContext(u.P), E = (0, c.rdh)(g.primaryColor).hex(), b = (0, c.rdh)(g.secondaryColor).hex(), y = (0, d.V)(o.A), O = i.useCallback(() => {
-    m || (h || y(), null == t || t())
-  }, [t, h, y, m]);
+  } = e, g = i.useContext(u.P), E = (0, c.rdh)(g.primaryColor).hex(), y = (0, c.rdh)(g.secondaryColor).hex(), b = (0, d.V)(o.A), O = i.useCallback(() => {
+    m || (h || b(), null == t || t())
+  }, [t, h, b, m]);
   return (0, r.jsx)(l.DUT, {
     className: s()(a, f.In, {
       [f.vu]: _,
@@ -39,7 +39,7 @@ function p(e) {
     children: (0, r.jsx)("div", {
       className: s()(p, f.LG),
       style: {
-        borderColor: b
+        borderColor: y
       },
       children: n
     })

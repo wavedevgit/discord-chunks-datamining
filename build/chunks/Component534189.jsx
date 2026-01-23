@@ -47,23 +47,23 @@ function P(e) {
   } = (0, i.cf)([u.A], () => ({
     relationshipType: u.A.getRelationshipType(t.id),
     originApplicationId: u.A.getOriginApplicationId(t.id)
-  })), G = (0, s.fi)(t.id), k = (0, o.q)({
+  })), k = (0, a.fi)(t.id), G = (0, o.q)({
     userId: t.id
-  }), U = (0, i.bG)([d.A], () => d.A.hidePersonalInformation), V = (0, i.bG)([p.A], () => {
+  }), U = (0, i.bG)([d.A], () => d.A.hidePersonalInformation), B = (0, i.bG)([h.A], () => {
     var e;
-    return null == (e = p.A.getUserProfile(t.id)) ? true : e.application
+    return null == (e = h.A.getUserProfile(t.id)) ? true : e.application
   });
   return (0, r.jsxs)("div", {
     className: T.rf,
-    children: [(0, r.jsx)(m.A, {
+    children: [(0, r.jsx)(b.A, {
       userId: t.id
-    }), (0, r.jsx)(_.A, {
+    }), (0, r.jsx)(E.A, {
       user: t,
       guildId: w.guild_id,
-      nickname: f.Ay.getName(null, w.id, t),
+      nickname: p.Ay.getName(null, w.id, t),
       pronouns: null == P ? true : P.pronouns,
       onOpenProfile: D,
-      tags: (0, r.jsx)(b.A, {
+      tags: (0, r.jsx)(g.A, {
         displayProfile: P,
         themeType: I.d.SIDEBAR
       }),
@@ -72,62 +72,62 @@ function P(e) {
         isVisible: R,
         onOpenProfile: D
       })
-    }), M === S.eA$.PENDING_INCOMING && (0, r.jsx)(E.A.Overlay, {
+    }), M === S.eA$.PENDING_INCOMING && (0, r.jsx)(x.A.Overlay, {
       children: (0, r.jsx)(y.A, {
         user: t,
         channelId: w.id,
         applicationId: L
       })
-    }), G.map(e => (0, r.jsx)(E.A.Overlay, {
+    }), k.map(e => (0, r.jsx)(x.A.Overlay, {
       children: (0, r.jsx)(y.A, {
         user: t,
         isGameRelationship: true,
         applicationId: e.applicationId,
         channelId: w.id
       })
-    }, e.applicationId)), (0, r.jsx)(j.A, {
+    }, e.applicationId)), (0, r.jsx)(O.A, {
       user: t
-    }), t.isProvisional && (0, r.jsx)(E.A.Overlay, {
-      children: (0, r.jsx)(v.A, {
+    }), t.isProvisional && (0, r.jsx)(x.A.Overlay, {
+      children: (0, r.jsx)(j.A, {
         heading: N.intl.string(N.t.Iyka0U),
         headingIcon: (0, r.jsx)(l.CircleErrorIcon, {
           size: "xxs",
-          color: a.A.colors.TEXT_STRONG
+          color: s.A.colors.TEXT_STRONG
         }),
         headingColor: "text-strong",
         children: (0, r.jsx)(c.T, {
           userId: t.id
         })
       })
-    }), (0, r.jsx)(x.A, {
+    }), (0, r.jsx)(v.A, {
       user: t,
       currentUser: n,
       onOpenUserProfileModal: D
-    }), (0, r.jsxs)(E.A.Overlay, {
+    }), (0, r.jsxs)(x.A.Overlay, {
       className: T.Lw,
-      children: [!U && (null == P ? true : P.bio) != null && (null == P ? true : P.bio) !== "" && (0, r.jsx)(v.A, {
+      children: [!U && (null == P ? true : P.bio) != null && (null == P ? true : P.bio) !== "" && (0, r.jsx)(j.A, {
         heading: N.intl.string(N.t["61W33d"]),
         headingColor: "text-strong",
-        children: (0, r.jsx)(g.A, {
+        children: (0, r.jsx)(m.A, {
           userId: t.id,
           userBio: P.bio,
           isHoveringOrFocusing: R,
           animateOnHoverOrFocusOnly: true
         })
-      }), (null == V ? true : V.popularApplicationCommandIds) != null && (0, r.jsx)(h.A, {
-        applicationId: V.id,
-        commandIds: V.popularApplicationCommandIds,
+      }), (null == B ? true : B.popularApplicationCommandIds) != null && (0, r.jsx)(f.A, {
+        applicationId: B.id,
+        commandIds: B.popularApplicationCommandIds,
         channel: w
-      }), k.length > 0 && (0, r.jsx)(v.A, {
+      }), G.length > 0 && (0, r.jsx)(j.A, {
         heading: N.intl.string(N.t["Uv/eTx"]),
         headingColor: "text-strong",
         children: (0, r.jsx)(A.A, {
-          applicationIds: k
+          applicationIds: G
         })
-      }), (0, r.jsx)(v.A, {
+      }), (0, r.jsx)(j.A, {
         heading: t.bot ? N.intl.string(N.t["A//N4k"]) : N.intl.string(N.t.a6XYD9),
         headingColor: "text-strong",
-        children: (0, r.jsx)(O.A, {
+        children: (0, r.jsx)(_.A, {
           userId: t.id
         })
       })]

@@ -3,17 +3,17 @@
 "use strict";
 require.d(exports, {
   CS: () => ep,
-  D2: () => ev,
-  Ir: () => eb,
+  D2: () => eA,
+  Ir: () => ey,
   LK: () => eE,
   LV: () => eh,
   SE: () => ef,
   Ue: () => eg,
   _H: () => ed,
-  gk: () => ey,
+  gk: () => eb,
   i5: () => eO,
-  jp: () => eA,
-  od: () => eS,
+  jp: () => ev,
+  od: () => eI,
   rW: () => es,
   su: () => eo,
   tk: () => em
@@ -119,12 +119,12 @@ async function eo(e) {
     source: m,
     onExecutedCallback: g,
     referrerId: E,
-    customId: y,
+    customId: b,
     inviterUserId: O,
-    onConfirmActivityLaunchChecksAlertOpen: A
-  } = e, v = x.A.getChannel(a), C = null != (t = null == v ? true : v.getGuildId()) ? t : true;
-  if (null == C && !(null != (r = null == v ? true : v.isPrivate()) && r)) returnfalse;
-  let w = b.A.getApplication(s),
+    onConfirmActivityLaunchChecksAlertOpen: v
+  } = e, A = x.A.getChannel(a), C = null != (t = null == A ? true : A.getGuildId()) ? t : true;
+  if (null == C && !(null != (r = null == A ? true : A.isPrivate()) && r)) returnfalse;
+  let w = y.A.getApplication(s),
     P = null != w && (0, T.x)(w),
     D = (0, N.m)();
   try {
@@ -148,11 +148,11 @@ async function eo(e) {
       commandOrigin: p,
       inviterUserId: O,
       launchParams: {
-        customId: y,
+        customId: b,
         referrerId: E
       }
     });
-    let e = await ev(s, null != a ? a : true);
+    let e = await eA(s, null != a ? a : true);
     l.h.dispatch({
       type: "EMBEDDED_ACTIVITY_LAUNCH_SET_PROXY_TICKET",
       applicationId: s,
@@ -165,7 +165,7 @@ async function eo(e) {
         userId: null == t ? true : t.id,
         guildId: C,
         channelId: a,
-        channelType: null == v ? true : v.type,
+        channelType: null == A ? true : A.type,
         applicationId: s,
         locationObject: u,
         analyticsLocations: null != c ? c : [],
@@ -173,7 +173,7 @@ async function eo(e) {
         referrerId: E,
         inviterUserId: O
       }), o) {
-      if (null == a || !el(s, v)) throw new S.A(S.A.Reasons.INVALID_CHANNEL);
+      if (null == a || !el(s, A)) throw new I.A(I.A.Reasons.INVALID_CHANNEL);
       let e = await ec({
         applicationId: s,
         nonce: D,
@@ -183,7 +183,7 @@ async function eo(e) {
         sectionName: h,
         source: m,
         onExecutedCallback: g,
-        onConfirmActivityLaunchChecksAlertOpen: A,
+        onConfirmActivityLaunchChecksAlertOpen: v,
         embeddedActivitiesManager: d
       });
       if ("failure" === e.result)
@@ -193,7 +193,7 @@ async function eo(e) {
           applicationId: s,
           channelId: null != a ? a : null
         }), false;
-        else throw new S.A(S.A.Reasons.PRIMARY_APP_COMMAND_NOT_FOUND)
+        else throw new I.A(I.A.Reasons.PRIMARY_APP_COMMAND_NOT_FOUND)
     } else {
       let e = await eu({
         applicationId: s,
@@ -202,7 +202,7 @@ async function eo(e) {
         isStart: o,
         guildId: C
       });
-      if (null == g || g(), "failure" === e.result) throw new S.A(S.A.Reasons.LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED, e.reason)
+      if (null == g || g(), "failure" === e.result) throw new I.A(I.A.Reasons.LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED, e.reason)
     }
     l.h.dispatch({
       type: "EMBEDDED_ACTIVITY_LAUNCH_SUCCESS",
@@ -220,7 +220,7 @@ async function eo(e) {
       channelId: null != a ? a : null,
       guildId: null != C ? C : null,
       isStart: o,
-      error: t instanceof S.A || t instanceof _.A || t instanceof I.A ? t : new _.A(t),
+      error: t instanceof I.A || t instanceof _.A || t instanceof S.A ? t : new _.A(t),
       locationKind: e
     }), false
   }
@@ -229,7 +229,7 @@ async function eo(e) {
 
 function el(e, t) {
   let n = (null == t ? true : t.type) === J.rbe.GUILD_VOICE,
-    r = b.A.getApplication(e),
+    r = y.A.getApplication(e),
     i = null != r && (0, a.Lt)(r.flags, J.gfo.EMBEDDED),
     s = (0, F.AX)(t);
   return n && i || s
@@ -267,7 +267,7 @@ async function ec(e) {
     let e = x.A.getChannel(r),
       {
         isAuthorized: n
-      } = await (0, y.q)({
+      } = await (0, b.q)({
         applicationId: t,
         channel: e,
         commandIntegrationTypes: d.integration_types
@@ -284,9 +284,9 @@ async function ec(e) {
     reason: 3
   };
   if (f) {
-    let e, n = b.A.getApplication(t),
+    let e, n = y.A.getApplication(t),
       r = B.Ay.getCurrentEmbeddedActivity();
-    (null == r ? true : r.applicationId) != null && (e = b.A.getApplication(null == r ? true : r.applicationId));
+    (null == r ? true : r.applicationId) != null && (e = y.A.getApplication(null == r ? true : r.applicationId));
     let i = M.default.getCurrentUser();
     if (null != i && !await (0, H.O)({
         applicationId: t,
@@ -335,7 +335,7 @@ async function ec(e) {
               message: n,
               code: e
             }
-          })) : null != s && s in I.A.ReasonCodes ? c(new I.A(s)) : c(new I.A(I.A.ReasonCodes.UNKNOWN))
+          })) : null != s && s in S.A.ReasonCodes ? c(new S.A(s)) : c(new S.A(S.A.ReasonCodes.UNKNOWN))
         }
       })
     })
@@ -391,7 +391,7 @@ async function eu(e) {
     }
   }
   let h = B.Ay.getCurrentEmbeddedActivity();
-  if ((null == h ? true : h.applicationId) != null && (t = b.A.getApplication(null == h ? true : h.applicationId)), !(!s || await (0, H.O)({
+  if ((null == h ? true : h.applicationId) != null && (t = y.A.getApplication(null == h ? true : h.applicationId)), !(!s || await (0, H.O)({
       applicationId: n,
       application: f,
       channel: p,
@@ -462,7 +462,7 @@ function ed(e) {
   let a = (0, Y.H)(t);
   if (null != a) {
     var s;
-    let e = A.A.getSelectedParticipantId(a),
+    let e = v.A.getSelectedParticipantId(a),
       t = null == (s = M.default.getCurrentUser()) ? true : s.id,
       r = B.Ay.getEmbeddedActivitiesForChannel(a).find(e => e.applicationId === n);
     if (null == r || null == t || "" === t) return;
@@ -539,7 +539,7 @@ async function eh(e) {
   let {
     guildId: s,
     force: o = false
-  } = e, c = B.Ay.getShelfActivities(s), u = c.map(e => b.A.getApplication(e.application_id)).filter(G.Vq);
+  } = e, c = B.Ay.getShelfActivities(s), u = c.map(e => y.A.getApplication(e.application_id)).filter(G.Vq);
   if (!o && !B.Ay.shouldFetchShelf(s)) {
     if (null == (t = B.Ay.getShelfFetchStatus(s)) ? true : t.isFetching) {
       let e, t, n = new Promise(t => {
@@ -636,11 +636,11 @@ async function eg(e) {
 
 function eE() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : et.i.INDIRECT_ACTION;
-  (0, v.$l)(o.M.ACTIVITIES_VOICE_LAUNCHER_BADGE, Math.floor(new Date().getTime() / 1e3), {
+  (0, A.$l)(o.M.ACTIVITIES_VOICE_LAUNCHER_BADGE, Math.floor(new Date().getTime() / 1e3), {
     dismissAction: e
   })
 }
-async function eb(e) {
+async function ey(e) {
   let t = J.Rsh.ACTIVITY_TEST_MODE(e);
   try {
     return await s.Bo.get({
@@ -653,7 +653,7 @@ async function eb(e) {
   }
 }
 
-function ey(e) {
+function eb(e) {
   l.h.dispatch({
     type: "EMBEDDED_ACTIVITY_SET_PANEL_MODE",
     activityPanelMode: e
@@ -667,12 +667,12 @@ function eO(e) {
   })
 }
 
-function eA() {
-  ey($.Gd.ACTIVITY_POPOUT_WINDOW), l.h.dispatch({
+function ev() {
+  eb($.Gd.ACTIVITY_POPOUT_WINDOW), l.h.dispatch({
     type: "ACTIVITY_POPOUT_WINDOW_OPEN"
   })
 }
-async function ev(e, t) {
+async function eA(e, t) {
   let n = {};
   return null != t && (n.channel_id = t), (await s.Bo.post({
     url: J.Rsh.APPLICATION_PROXY_TICKET(e),
@@ -680,14 +680,14 @@ async function ev(e, t) {
     rejectWithError: true
   })).body.ticket
 }
-async function eS(e, t) {
+async function eI(e, t) {
   l.h.dispatch({
     type: "EMBEDDED_ACTIVITY_SET_PROXY_TICKET_REFRESHING",
     applicationId: e,
     refreshing: true
   });
   try {
-    let n = await ev(e, null != t ? t : true);
+    let n = await eA(e, null != t ? t : true);
     l.h.dispatch({
       type: "EMBEDDED_ACTIVITY_LAUNCH_SET_PROXY_TICKET",
       applicationId: e,
@@ -710,7 +710,7 @@ async function eS(e, t) {
       channelId: t,
       guildId: a,
       locationKind: s,
-      error: o instanceof S.A || o instanceof _.A || o instanceof I.A ? o : new _.A(o)
+      error: o instanceof I.A || o instanceof _.A || o instanceof S.A ? o : new _.A(o)
     }), false
   } finally {
     l.h.dispatch({

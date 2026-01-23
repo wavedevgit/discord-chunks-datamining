@@ -28,7 +28,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk818348 = require("./818348.js"),
   Chunk571882 = require("./571882.js");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,20 +37,20 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,8 +61,8 @@ function S(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -109,8 +109,8 @@ let N = [Chunk166532.pn.PAYMENT_ELEMENT],
           contextMetadata: n,
           activitySessionId: r,
           analyticsData: i
-        } = s, a = null != t && t !== y.he.PAYMENT_REQUEST ? E.mr[t] : e.value.type;
-        _.default.track(b.HAw.PAYMENT_ELEMENT_CHANGED, {
+        } = s, a = null != t && t !== b.he.PAYMENT_REQUEST ? E.mr[t] : e.value.type;
+        _.default.track(y.HAw.PAYMENT_ELEMENT_CHANGED, {
           load_id: n.loadId,
           activity_session_id: r,
           location: i.location,
@@ -124,21 +124,21 @@ let N = [Chunk166532.pn.PAYMENT_ELEMENT],
       applePay: t.includes("applePay") ? "auto" : "never",
       googlePay: t.includes("googlePay") ? "auto" : "never",
       link: t.includes("link") ? "auto" : "never"
-    }), [t]), A = {
-      billingDetails: v({}, null != h && {
+    }), [t]), v = {
+      billingDetails: A({}, null != h && {
         email: h
       }, null != m && {
         name: m
       })
     };
-    return (0, r.jsx)(a.PaymentElement, v({
+    return (0, r.jsx)(a.PaymentElement, A({
       id: "stripe-payment-element",
-      options: v({
+      options: A({
         layout: {
           type: "tabs"
         },
         wallets: O,
-        defaultValues: A
+        defaultValues: v
       }, o),
       onChange: g
     }, d))
@@ -172,7 +172,7 @@ let N = [Chunk166532.pn.PAYMENT_ELEMENT],
         name: e,
         address: t
       } = (0, h._Z)(s);
-      return v({
+      return A({
         name: null != e ? e : null
       }, null != t && {
         address: Object.fromEntries(Object.entries(t).filter(e => {
@@ -180,8 +180,8 @@ let N = [Chunk166532.pn.PAYMENT_ELEMENT],
           return true !== n
         }))
       })
-    }, [s]), u = i.useMemo(() => (0, r.jsx)(a.AddressElement, v({
-      options: v({
+    }, [s]), u = i.useMemo(() => (0, r.jsx)(a.AddressElement, A({
+      options: A({
         mode: "billing",
         defaultValues: c
       }, t)
@@ -217,19 +217,19 @@ let N = [Chunk166532.pn.PAYMENT_ELEMENT],
       children: [(0, r.jsx)("div", {
         className: o()(m ? O.RK : [O.R, O.$u], {
           [O.df]: null == d,
-          [O._m]: d === y.he.CARD,
-          [O.JD]: d === y.he.PAYPAL
+          [O._m]: d === b.he.CARD,
+          [O.JD]: d === b.he.PAYPAL
         }),
-        children: (0, r.jsx)(R, I(v({}, l), {
+        children: (0, r.jsx)(R, S(A({}, l), {
           customPaymentMethodIdsToSourceTypes: s,
           step: t,
           analyticsContext: _
         }))
       }), (0, r.jsx)("div", {
         className: o()(O.K_, g ? O.RK : [O.R, O.vg]),
-        children: (0, r.jsx)(P, I(v({}, c), {
+        children: (0, r.jsx)(P, S(A({}, c), {
           internalKey: p,
-          renderAsStandaloneElement: d === y.he.PAYMENT_REQUEST,
+          renderAsStandaloneElement: d === b.he.PAYMENT_REQUEST,
           billingAddressInfo: n
         }))
       })]
@@ -256,8 +256,8 @@ let N = [Chunk166532.pn.PAYMENT_ELEMENT],
     } = (0, d.P5)();
     return s || null != o || null == c ? (0, r.jsx)(x, {}) : (0, r.jsx)(a.Elements, {
       stripe: c,
-      options: v({}, i),
-      children: (0, r.jsx)(D, I(v({}, n), {
+      options: A({}, i),
+      children: (0, r.jsx)(D, S(A({}, n), {
         customPaymentMethodIdsToSourceTypes: l
       }))
     })
@@ -272,11 +272,11 @@ let N = [Chunk166532.pn.PAYMENT_ELEMENT],
       onBillingAddressChange: s,
       shouldLogOnChangeEvents: o,
       continueSessionToInitialStep: l
-    } = e, c = i.useRef(null), d = i.useRef(null), [p, _] = i.useState(false), [h, m] = i.useState(l === f.pn.CREDIT_CARD_INFORMATION ? y.he.CARD : null), E = r && (t === f.pn.PAYMENT_ELEMENT || t === f.pn.ADDRESS && null != h);
+    } = e, c = i.useRef(null), d = i.useRef(null), [p, _] = i.useState(false), [h, m] = i.useState(l === f.pn.CREDIT_CARD_INFORMATION ? b.he.CARD : null), E = r && (t === f.pn.PAYMENT_ELEMENT || t === f.pn.ADDRESS && null != h);
     i.useEffect(() => {
       t === f.pn.PAYMENT_ELEMENT && (d.current = null)
     }, [t]);
-    let b = i.useMemo(() => ({
+    let y = i.useMemo(() => ({
         onChange: (e, t) => {
           o && null != a && a.log("PaymentElements onChange event:", e), _(e.complete), m(t)
         },
@@ -306,37 +306,37 @@ let N = [Chunk166532.pn.PAYMENT_ELEMENT],
           s(a, o)
         }
       }), [s]),
-      A = i.useCallback(function(e) {
+      v = i.useCallback(function(e) {
         let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
         true !== e && m(e), n(f.pn.PAYMENT_ELEMENT, t)
       }, [n]);
     i.useEffect(() => {
       if (!r) return;
       let e = () => {
-        A(true)
+        v(true)
       };
       return u.h.subscribe("BRAINTREE_TOKENIZE_PAYPAL_FAIL_WINDOW_CLOSED", e), () => {
         u.h.unsubscribe("BRAINTREE_TOKENIZE_PAYPAL_FAIL_WINDOW_CLOSED", e)
       }
-    }, [A, r]);
-    let v = i.useCallback(() => {
+    }, [v, r]);
+    let A = i.useCallback(() => {
         m(null)
       }, []),
-      [S, I] = i.useState(true);
+      [I, S] = i.useState(true);
     return {
       shouldRenderPaymentElement: E,
-      stripePaymentElementProps: b,
+      stripePaymentElementProps: y,
       stripeAddressElementProps: O,
       combinedStripeElementsRef: c,
       lastConfirmedSetupIntentRef: d,
       paymentElementReady: p,
       paymentElementSelectedType: h,
       setPaymentElementSelectedType: m,
-      handlePaymentElementStep: A,
-      onBackFromPaymentElement: v,
-      addressElementKey: S,
+      handlePaymentElementStep: v,
+      onBackFromPaymentElement: A,
+      addressElementKey: I,
       remountAddressElement: i.useCallback(() => {
-        I(Date.now().toString())
+        S(Date.now().toString())
       }, [])
     }
   }

@@ -80,7 +80,7 @@ function F(e, t) {
   }), e
 }
 async function B(e) {
-  var t, n, r, s, l, u, d, _, h, m, g, E, b, A, S, I, T;
+  var t, n, r, s, l, u, d, _, h, m, g, E, y, v, I, S, T;
   let {
     command: C,
     optionValues: P,
@@ -100,7 +100,7 @@ async function B(e) {
     context: M,
     command: C,
     commandOrigin: K
-  }), await y.A.unarchiveThreadIfNecessary(M.channel.id);
+  }), await b.A.unarchiveThreadIfNecessary(M.channel.id);
   let X = [],
     Z = [],
     Q = (0, L.Qr)(K);
@@ -122,7 +122,7 @@ async function B(e) {
       }
       if (e.type === c.n4.ATTACHMENT) {
         if (null != M.autocomplete) continue;
-        let t = v.A.getUpload(M.channel.id, e.name, Q);
+        let t = A.A.getUpload(M.channel.id, e.name, Q);
         if (null == t) continue;
         let r = Z.length;
         Z.push(t), X.push({
@@ -158,14 +158,14 @@ async function B(e) {
               });
               i()((null == e ? true : e.type) === "roleMention", "Failed to resolve ".concat(a.text)), t = e.roleId
             }
-          else "textMention" === a.type && "@everyone" === a.text && (t = null == (b = M.guild) ? true : b.id);
+          else "textMention" === a.type && "@everyone" === a.text && (t = null == (y = M.guild) ? true : y.id);
           break;
         case c.n4.USER:
           if ("userMention" === a.type) t = a.userId;
           else if ("text" === a.type)
             if ((0, L.hT)(a.text)) t = a.text.trim();
             else {
-              let e = (0, p.f)(a.text, null == (A = M.guild) ? true : A.id, M.channel.id, {
+              let e = (0, p.f)(a.text, null == (v = M.guild) ? true : v.id, M.channel.id, {
                 allowRoles: false
               });
               i()((null == e ? true : e.type) === "userMention", "Failed to resolve ".concat(a.text)), t = e.userId
@@ -173,11 +173,11 @@ async function B(e) {
         case c.n4.MENTIONABLE:
           if ("userMention" === a.type) t = a.userId;
           else if ("roleMention" === a.type) t = a.roleId;
-          else if ("textMention" === a.type && "@everyone" === a.text) t = null == (S = M.guild) ? true : S.id;
+          else if ("textMention" === a.type && "@everyone" === a.text) t = null == (I = M.guild) ? true : I.id;
           else if ("text" === a.type)
             if ((0, L.hT)(a.text)) t = a.text.trim();
             else {
-              let e = (0, p.f)(a.text, null == (I = M.guild) ? true : I.id, M.channel.id);
+              let e = (0, p.f)(a.text, null == (S = M.guild) ? true : S.id, M.channel.id);
               (null == e ? true : e.type) === "userMention" ? t = e.userId: (null == e ? true : e.type) === "roleMention" ? t = e.roleId : (null == e ? true : e.type) === "textMention" && "@everyone" === e.text ? t = null == (T = M.guild) ? true : T.id : i()(false, "Failed to resolve ".concat(a.text))
             } break;
         case c.n4.BOOLEAN:
@@ -264,7 +264,7 @@ let H = e => {
     if (e.isCommandType() && null != e.interactionData && null != n.command) {
       let r = {
         channel: t,
-        guild: null != t.guild_id ? A.A.getGuild(t.guild_id) : null
+        guild: null != t.guild_id ? v.A.getGuild(t.guild_id) : null
       };
       W({
         applicationId: n.command.applicationId,
@@ -296,7 +296,7 @@ let H = e => {
       channelId: h,
       guildId: g,
       data: r,
-      nonce: null != (t = f.nonce) ? t : (0, b.m)(),
+      nonce: null != (t = f.nonce) ? t : (0, y.m)(),
       attachments: a,
       maxSizeCallback: s,
       analytics_location: l,
@@ -357,7 +357,7 @@ async function z(e, t, n) {
       name: n.name,
       name_localized: e.displayName,
       type: c.G4.APPLICATION_COMMAND,
-      user: (0, E.Vi)(S.default.getCurrentUser())
+      user: (0, E.Vi)(I.default.getCurrentUser())
     },
     interaction_data: n
   });
@@ -427,10 +427,10 @@ async function X(e, t) {
   }
 }
 async function Z(e, t, n, r) {
-  let i = (0, I.o2)(n),
+  let i = (0, S.o2)(n),
     a = e => {
       null == r || r(i, e), m.C1(t, j.t02.ENTITY_TOO_LARGE, k.intl.formatToPlainString(k.t.fxEKdS, {
-        maxSize: (0, I.Hb)(i)
+        maxSize: (0, S.Hb)(i)
       }))
     },
     {

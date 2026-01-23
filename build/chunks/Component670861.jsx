@@ -19,7 +19,7 @@ function p(e) {
   } = e, {
     channelId: n,
     messageIds: p,
-    title: f
+    title: h
   } = i.useMemo(() => {
     switch (t.data.kind) {
       case "message":
@@ -39,22 +39,22 @@ function p(e) {
           channelId: true, messageIds: [], title: true
         }
     }
-  }, [t]), h = (0, l.bG)([a.A], () => null != n ? a.A.getChannel(n) : null, [n]), A = (0, l.bG)([s.A], () => (null == h ? true : h.guild_id) != null ? s.A.getGuild(h.guild_id) : null, [h]), g = (0, l.yK)([c.A, o.A], () => null == n ? [] : p.map(e => {
+  }, [t]), g = (0, l.bG)([a.A], () => null != n ? a.A.getChannel(n) : null, [n]), f = (0, l.bG)([s.A], () => (null == g ? true : g.guild_id) != null ? s.A.getGuild(g.guild_id) : null, [g]), m = (0, l.yK)([c.A, o.A], () => null == n ? [] : p.map(e => {
     var t;
     return null != (t = c.A.getMessage(e)) ? t : o.A.getMessage(n, e)
   }).filter(e => null != e), [n, p]);
-  return null == h || null == A || 0 === g.length ? null : (0, r.jsxs)("div", {
+  return null == g || null == f || 0 === m.length ? null : (0, r.jsxs)("div", {
     className: d.kL,
-    children: [null != f ? (0, r.jsx)("div", {
+    children: [null != h ? (0, r.jsx)("div", {
       className: d.gn,
       children: (0, r.jsx)("div", {
         className: d.DD,
-        children: f
+        children: h
       })
     }) : null, (0, r.jsx)("div", {
       className: d.MJ,
-      children: g.map(e => (0, r.jsx)(u.A, {
-        channel: h,
+      children: m.map(e => (0, r.jsx)(u.A, {
+        channel: g,
         message: e,
         renderThreadAccessory: false,
         disableReactionCreates: false,

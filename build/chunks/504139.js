@@ -19,11 +19,11 @@ function d(e, t, n, d, u) {
   if (null == p) return null;
   let {
     icon: f,
-    title: b,
-    body: g
+    title: g,
+    body: y
   } = (0, s.TB)(e, t, n), {
-    trackView: y,
-    trackClick: A
+    trackView: A,
+    trackClick: m
   } = (0, o.Y)(a.KS.ActivityInvite, {
     notif_type: a.KS.ActivityInvite,
     notif_user_id: n.id,
@@ -37,11 +37,11 @@ function d(e, t, n, d, u) {
   });
   return {
     icon: f,
-    title: b,
-    body: g,
+    title: g,
+    body: y,
     hint: e => (0, l.sI)(e, (0, o.J)(), c.t.aB5xLy),
     onNotificationShow: () => {
-      y()
+      A()
     },
     confirmText: c.intl.string(c.t.VJlc0S),
     onConfirmClick: (s, l) => {
@@ -51,10 +51,10 @@ function d(e, t, n, d, u) {
         applicationId: d.id,
         channelId: e.id,
         messageId: t.id
-      }), r.A.updateNotificationStatus(l), A("join")
+      }), r.A.updateNotificationStatus(l), m("join")
     },
     onDismissClick: () => {
-      A("dismiss")
+      m("dismiss")
     }
   }
 }

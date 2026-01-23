@@ -79,15 +79,15 @@ function d(e) {
     default:
       t = r.Le.has(n.type) ? d > 0 ? c.t["ZL7+I6"] : s ? c.t.YlVvmc : c.t["0nZpiF"] : d > 0 ? c.t.g8ONM0 : s ? c.t.smf1CZ : c.t.s0JADj
   }
-  let b = [c.intl.formatToPlainString(t, {
+  let y = [c.intl.formatToPlainString(t, {
       channelName: m,
       mentionCount: d
     })],
-    y = u({
+    b = u({
       isSubscriptionGated: _,
       needSubscriptionToAccess: h
     });
-  return null != y && b.push(y), b.join(", ")
+  return null != b && y.push(b), y.join(", ")
 }
 
 function f(e) {

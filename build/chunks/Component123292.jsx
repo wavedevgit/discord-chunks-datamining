@@ -83,7 +83,7 @@ function h(e) {
     buttonRef: m,
     className: g,
     style: E
-  } = e, b = p(e, ["focusProps", "lineClamp", "role", "text", "textVariant", "type", "variant", "buttonRef", "className", "style"]);
+  } = e, y = p(e, ["focusProps", "lineClamp", "role", "text", "textVariant", "type", "variant", "buttonRef", "className", "style"]);
   return (0, r.jsx)(s.vN, f(u({}, t), {
     children: (0, r.jsx)("button", f(u({
       className: a()(l.textButton, l[h]),
@@ -91,7 +91,7 @@ function h(e) {
       role: i,
       type: _,
       ref: m
-    }, b), {
+    }, y), {
       children: (0, r.jsx)(o.E, {
         tag: "span",
         variant: d,

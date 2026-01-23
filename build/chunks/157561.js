@@ -14,28 +14,28 @@ var Chunk64700 = require("./64700.js"),
 function d(e) {
   let {
     initialQuery: t = ""
-  } = e, n = a.A.useField("query");
-  l.useEffect(() => a.A.setState({
+  } = e, n = l.A.useField("query");
+  r.useEffect(() => l.A.setState({
     query: t
   }), [t]);
-  let d = l.useCallback(e => {
-      a.A.setState({
+  let d = r.useCallback(e => {
+      l.A.setState({
         query: e
       })
     }, []),
-    u = l.useCallback(() => {
-      a.A.setState({
+    u = r.useCallback(() => {
+      l.A.setState({
         query: ""
       })
     }, []),
-    p = l.useCallback(() => {
-      let e = (0, r.A)();
-      (0, i.TR)(o.HAw.APP_DIRECTORY_SEARCH_STARTED, {
+    p = r.useCallback(() => {
+      let e = (0, i.A)();
+      (0, a.TR)(c.HAw.APP_DIRECTORY_SEARCH_STARTED, {
         search_term: n,
         category: e.name,
         current_page: s.ev.HOME,
         category_id: e.id
-      }), (0, c.JX)({
+      }), (0, o.JX)({
         query: n
       })
     }, [n]);

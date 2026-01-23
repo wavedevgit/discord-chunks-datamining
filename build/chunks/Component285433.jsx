@@ -89,7 +89,7 @@ let D = (0, Chunk108531.animated)(Chunk397927.abt),
     } = (0, d.Ay)(), [B, H] = i.useState(null), [Y, W] = i.useState(null), K = (0, p.A)(e => {
       let t = e.target;
       H(t.offsetWidth), W(t.scrollWidth)
-    }), z = (0, f.w)(K), q = (0, v.a3)(N), X = N === h.uF.QUESTS_EMBED, Z = (0, m.wT)(a, S.rE.QUESTS_CARD, N, G), Q = (null == (t = a.userStatus) ? true : t.completedAt) != null, $ = (0, _.Ut)(), J = (0, g.S5)(a.config.expiresAt), ee = (0, g.S5)(a.config.rewardsConfig.rewardsExpireAt), et = i.useMemo(() => null != a.config.cosponsorMetadata, [a]), en = e => {
+    }), z = (0, f.w)(K), q = (0, A.a3)(N), X = N === h.uF.QUESTS_EMBED, Z = (0, m.wT)(a, I.rE.QUESTS_CARD, N, G), Q = (null == (t = a.userStatus) ? true : t.completedAt) != null, $ = (0, _.Ut)(), J = (0, g.S5)(a.config.expiresAt), ee = (0, g.S5)(a.config.rewardsConfig.rewardsExpireAt), et = i.useMemo(() => null != a.config.cosponsorMetadata, [a]), en = e => {
       e.stopPropagation(), e.currentTarget.blur(), U(), $({
         questId: a.id,
         questContent: N,
@@ -97,13 +97,13 @@ let D = (0, Chunk108531.animated)(Chunk397927.abt),
         questContentPosition: k,
         sourceQuestContent: G
       })
-    }, er = () => null != B && null != Y && B < Y, ei = (0, r.jsx)(y.Ay, {
+    }, er = () => null != B && null != Y && B < Y, ei = (0, r.jsx)(b.Ay, {
       className: C.Iu,
       logotypeClassName: et ? C.qN : true,
-      gameTileSize: y.LU.MEDIUM,
+      gameTileSize: b.LU.MEDIUM,
       quest: a,
-      separatorSpacing: y.C8.MEDIUM,
-      theme: I.NJ.DARK,
+      separatorSpacing: b.C8.MEDIUM,
+      theme: S.NJ.DARK,
       withGameTile: !X || null == a.config.cosponsorMetadata
     });
     return (0, r.jsxs)("div", {
@@ -135,7 +135,7 @@ let D = (0, Chunk108531.animated)(Chunk397927.abt),
           style: {
             y: q ? x.to({
               range: [0, 1],
-              output: [v.es, 0]
+              output: [A.es, 0]
             }) : true
           },
           children: [q && (0, r.jsx)(o.animated.div, {
@@ -154,7 +154,7 @@ let D = (0, Chunk108531.animated)(Chunk397927.abt),
               className: C._F,
               children: [(0, r.jsx)("div", {
                 className: C.SY,
-                children: (0, r.jsx)(A.A, {
+                children: (0, r.jsx)(v.A, {
                   quest: a,
                   questContent: N,
                   className: C.EK,
@@ -229,10 +229,10 @@ let D = (0, Chunk108531.animated)(Chunk397927.abt),
           style: {
             top: q ? x.to({
               range: [0, 1],
-              output: [v.es / 2 - v.uR / 2, v.wl]
-            }) : v.wl
+              output: [A.es / 2 - A.uR / 2, A.wl]
+            }) : A.wl
           },
-          children: [(0, r.jsx)(b.C, {
+          children: [(0, r.jsx)(y.C, {
             questContent: N,
             quest: a,
             questContentPosition: k,
@@ -255,7 +255,7 @@ let D = (0, Chunk108531.animated)(Chunk397927.abt),
                 })
               }))
             })
-          }), !(0, v.rW)(N) && (0, r.jsx)(u.DUT, {
+          }), !(0, A.rW)(N) && (0, r.jsx)(u.DUT, {
             onClick: en,
             className: C.P0,
             "aria-label": j ? T.intl.string(T.t.iTcuma) : T.intl.string(T.t.dcl9MQ),

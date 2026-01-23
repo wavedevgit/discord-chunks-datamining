@@ -2,7 +2,7 @@
 /** chunk id: 520999, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk693591 = require("./693591.js"),
   Chunk985018 = require("./985018.jsx");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,13 +38,13 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,19 +55,19 @@ function A(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e) {
+function I(e) {
   let {
     onLearnMore: t,
-    selectedBackgroundOption: y,
-    onSelectBackgroundOption: A,
-    currentDeviceId: S,
-    responsiveBackgroundOptions: I,
+    selectedBackgroundOption: b,
+    onSelectBackgroundOption: v,
+    currentDeviceId: I,
+    responsiveBackgroundOptions: S,
     className: T
   } = e, C = (0, a.bG)([l.default], () => l.default.getCurrentUser()), [N, R] = i.useState(null), w = (0, _.A)(), P = c.Ay.canUseCustomBackgrounds(C);
   i.useEffect(() => {
@@ -78,8 +78,8 @@ function S(e) {
     L = (0, o.p)(),
     j = {
       isVideoBackgroundSupported: w,
-      onSelectBackgroundOption: A,
-      selectedBackgroundOption: y
+      onSelectBackgroundOption: v,
+      selectedBackgroundOption: b
     },
     M = i.useRef(j);
   i.useEffect(() => {
@@ -90,10 +90,10 @@ function S(e) {
       onSelectBackgroundOption: t,
       selectedBackgroundOption: n
     } = M.current;
-    e ? (0, p.S1)(n, S, {
+    e ? (0, p.S1)(n, I, {
       track: false
     }).catch(() => t(null)) : null != n && t(null)
-  }, [S]);
+  }, [I]);
   let k = function(e, t) {
       let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
       return new Promise(async r => {
@@ -107,10 +107,10 @@ function S(e) {
       })
     },
     U = e => {
-      A(e), (0, p.S1)(e, S, {
+      v(e), (0, p.S1)(e, I, {
         location: L.location
       }).then(() => R(null)).catch(() => {
-        R(b.intl.string(b.t.ejrSLe)), (0, p.S1)(null, S, {
+        R(y.intl.string(y.t.ejrSLe)), (0, p.S1)(null, I, {
           location: L.location
         })
       })
@@ -120,9 +120,9 @@ function S(e) {
         let {
           default: e
         } = await n.e("95743").then(n.bind(n, 210402));
-        return n => (0, r.jsx)(e, v(O({}, n), {
+        return n => (0, r.jsx)(e, A(O({}, n), {
           onLearnMore: t,
-          analyticsSource: v(O({}, L.location), {
+          analyticsSource: A(O({}, L.location), {
             object: g.ZSU.BUTTON_CTA
           })
         }))
@@ -131,16 +131,16 @@ function S(e) {
   return w ? (0, r.jsx)("div", {
     className: T,
     children: (0, r.jsx)(s.D0$, {
-      label: b.intl.string(b.t.lZTUPs),
+      label: y.intl.string(y.t.lZTUPs),
       errorMessage: N,
       children: (0, r.jsx)(h.A, {
         canUseCustomBackgrounds: P,
         customBackgroundOptions: x,
-        selectedOption: y,
+        selectedOption: b,
         onSelectOption: U,
         onUpsellClick: G,
         onAddBackgroundImage: k,
-        responsive: I
+        responsive: S
       })
     })
   }) : null

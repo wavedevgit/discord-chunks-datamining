@@ -84,43 +84,43 @@ function w() {
         hasConnectionEntrypointUrl: N,
         validFlows: R
       }
-    } = (0, A.RD)(e, {
+    } = (0, v.RD)(e, {
       debug: true
     }),
-    w = (0, c.bG)([y.A], () => null != e && y.A.isConnected(e.id)),
+    w = (0, c.bG)([b.A], () => null != e && b.A.isConnected(e.id)),
     x = (0, c.bG)([_.Ay], () => _.Ay.getSelfEmbeddedActivities()),
     L = "authorization_debug",
     j = [{
       id: "authorization_debug",
-      name: S.intl.string(v.default.vR0zs6)
+      name: I.intl.string(A.default.vR0zs6)
     }],
     M = () => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: I.wx,
+        className: S.wx,
         children: (0, r.jsx)("div", {
-          className: I.if,
+          className: S.if,
           children: (0, r.jsx)(l.DZT, {
             variant: "heading-lg/extrabold",
-            children: S.intl.format(v.default.KoK4J9, {
+            children: I.intl.format(A.default.KoK4J9, {
               appName: ""
             })
           })
         })
       }), (0, r.jsx)("div", {
-        className: I.rf,
+        className: S.rf,
         children: (0, r.jsx)(l.y$y, {
-          className: I.u1
+          className: S.u1
         })
       })]
     }),
     k = () => (o()(null != e, "Application should be defined when rendering the test mode panel"), (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: I.wx,
+        className: S.wx,
         children: [(0, r.jsx)("div", {
-          className: I.if,
+          className: S.if,
           children: (0, r.jsx)(l.DZT, {
             variant: "heading-lg/extrabold",
-            children: S.intl.format(v.default.KoK4J9, {
+            children: I.intl.format(A.default.KoK4J9, {
               appName: e.name
             })
           })
@@ -128,20 +128,20 @@ function w() {
           variant: "icon-only",
           icon: l.UlM,
           "aria-label": "Close",
-          onClick: () => (0, b.Jp)()
+          onClick: () => (0, y.Jp)()
         })]
       }), (0, r.jsxs)("div", {
-        className: I.rf,
+        className: S.rf,
         children: [(0, r.jsx)(d.VQ0, {
-          className: I.$H,
+          className: S.$H,
           selectedItem: L,
           onItemSelect: () => {},
           orientation: "horizontal",
           type: "top",
           look: "brand",
           children: j.map(e => (0, r.jsx)(d.VQ0.Item, {
-            className: a()(I.Mf, {
-              [I.wH]: e.id === L
+            className: a()(S.Mf, {
+              [S.wH]: e.id === L
             }),
             id: e.id,
             "aria-label": e.name,
@@ -150,53 +150,53 @@ function w() {
         }), (0, r.jsx)(l.EYj, {
           variant: "text-md/medium",
           color: "text-subtle",
-          children: S.intl.string(v.default["no+FQS"])
+          children: I.intl.string(A.default["no+FQS"])
         }), (0, r.jsx)(P, {
           overallStatus: T ? 0 : w ? 3 : 1,
-          name: S.intl.string(v.default.AGLx00),
+          name: I.intl.string(A.default.AGLx00),
           steps: [{
             status: w ? 2 : 4,
-            text: S.intl.string(v.default.kxF9br),
-            description: w ? null : S.intl.string(v.default.PFxxJa),
+            text: I.intl.string(A.default.kxF9br),
+            description: w ? null : I.intl.string(A.default.PFxxJa),
             learnMoreLink: w ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
           }, {
             status: T ? 2 : w ? 3 : 4,
-            text: S.intl.string(v.default.S94dzs),
-            description: T || !w ? null : S.intl.string(v.default.aTULMB),
+            text: I.intl.string(A.default.S94dzs),
+            description: T || !w ? null : I.intl.string(A.default.aTULMB),
             learnMoreLink: T || !w ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
           }],
-          isChosen: u === A._M.RPC
+          isChosen: u === v._M.RPC
         }), (0, r.jsx)(P, {
           overallStatus: +!N,
-          name: S.intl.string(v.default.K3ObrU),
+          name: I.intl.string(A.default.K3ObrU),
           steps: [{
             status: N ? 2 : 4,
-            text: S.intl.string(v.default["8a7IrV"]),
-            description: N ? S.intl.formatToPlainString(v.default["9iLeL2"], {
+            text: I.intl.string(A.default["8a7IrV"]),
+            description: N ? I.intl.formatToPlainString(A.default["9iLeL2"], {
               url: null == p ? true : p.connectionEntrypointUrl
             }) : null
           }],
-          isChosen: u === A._M.WEB
+          isChosen: u === v._M.WEB
         })]
       }), (0, r.jsxs)("div", {
-        className: I.qr,
+        className: S.qr,
         children: [(0, r.jsx)(D, {
           status: +!i,
-          text: S.intl.string(S.t["Vu/zmQ"])
+          text: I.intl.string(I.t["Vu/zmQ"])
         }), 0 === R.length && (0, r.jsx)(l.EYj, {
           style: {
             minWidth: 0,
             overflow: "hidden"
           },
           variant: "text-md/medium",
-          children: S.intl.string(v.default.eg0mNa)
+          children: I.intl.string(A.default.eg0mNa)
         }), (0, r.jsx)(l.$nd, {
           variant: "secondary",
           disabled: !n || i,
           onClick: () => s({
             analyticsLocations: t
           }),
-          text: S.intl.string(v.default.w0pN4R),
+          text: I.intl.string(A.default.w0pN4R),
           fullWidth: true
         }), null != C && (0, r.jsx)(l.$nd, {
           variant: "secondary",
@@ -209,14 +209,14 @@ function w() {
               showFeedback: false
             })
           },
-          text: S.intl.string(v.default.tkIymA),
+          text: I.intl.string(A.default.tkIymA),
           fullWidth: true
         })]
       })]
     }));
   return (0, r.jsx)("div", {
     "data-app-right-panel": true,
-    className: I.nE,
+    className: S.nE,
     children: (0, r.jsx)(l.Fmo, {
       children: null != e ? k() : M()
     })
@@ -231,16 +231,16 @@ function P(e) {
     isChosen: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: I.Wk,
+    className: S.Wk,
     children: [(0, r.jsx)(D, {
       status: t,
       text: n
     }), i.map((e, t) => (0, r.jsx)(x, C({}, e), t)), a && (0, r.jsx)("div", {
-      className: I.MH,
+      className: S.MH,
       children: (0, r.jsx)(l.EYj, {
         variant: "text-sm/medium",
         color: "text-subtle",
-        children: S.intl.string(v.default.OEkrCx)
+        children: I.intl.string(A.default.OEkrCx)
       })
     })]
   })
@@ -252,7 +252,7 @@ function D(e) {
     status: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: I.Km,
+    className: S.Km,
     children: [(0, r.jsx)(l.EYj, {
       variant: "text-md/semibold",
       color: "text-subtle",
@@ -271,11 +271,11 @@ function x(e) {
     learnMoreLink: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: I.jf,
+    className: S.jf,
     children: [(0, r.jsx)(L, {
       status: t
     }), (0, r.jsxs)("div", {
-      className: I.bc,
+      className: S.bc,
       children: [(0, r.jsx)(l.EYj, {
         variant: "text-md/medium",
         children: n
@@ -285,7 +285,7 @@ function x(e) {
         children: i
       }), null != a && (0, r.jsx)(l.QWc, {
         textVariant: "text-sm/medium",
-        text: S.intl.string(S.t.hvVgAZ),
+        text: I.intl.string(I.t.hvVgAZ),
         onClick: () => (0, p.A)(a)
       })]
     })]
@@ -297,7 +297,7 @@ function L(e) {
     status: t
   } = e, n = {
     size: "sm",
-    className: I.I8
+    className: S.I8
   };
   switch (t) {
     case 0:

@@ -1,7 +1,7 @@
 /** Chunk was on 22477 **/
 /** chunk id: 231545, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => x
 }), require("./896048.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -36,10 +36,10 @@ function h(e) {
   }) : e
 }
 
-function f(e) {
+function x(e) {
   let {
     data: t
-  } = e, n = (0, r.Ay)();
+  } = e, n = (0, i.Ay)();
   return (0, a.jsx)("div", {
     className: c.H$,
     children: (0, a.jsx)(l.d, {

@@ -2,7 +2,7 @@
 /** chunk id: 146655, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
@@ -20,33 +20,33 @@ var Chunk64700 = require("./64700.js"),
   Chunk840907 = require("./840907.js"),
   Chunk652215 = require("./652215.js");
 let E = [],
-  b = [];
+  y = [];
 
-function y(e) {
+function b(e) {
   let {
     recentActivityTabEnabled: t
   } = (0, m.s)({
     location: "useUserProfileActivity"
-  }), n = (0, a.bG)([f.default], () => f.default.getId() === e), y = (0, s.A)(e), O = (0, a.bG)([_.A], () => _.A.getActivities(e)), A = (0, a.bG)([o.A], () => n || t ? o.A.getUserOutbox(e) : true), v = (0, a.bG)([h.A], () => h.A.getVoiceStateForUser(e)), S = (0, a.bG)([p.A], () => p.A.getChannel(null == v ? true : v.channelId)), I = (0, d.v)("UserProfileActivity", S), T = (0, r.useMemo)(() => O.filter(e => {
+  }), n = (0, a.bG)([f.default], () => f.default.getId() === e), b = (0, s.A)(e), O = (0, a.bG)([_.A], () => _.A.getActivities(e)), v = (0, a.bG)([o.A], () => n || t ? o.A.getUserOutbox(e) : true), A = (0, a.bG)([h.A], () => h.A.getVoiceStateForUser(e)), I = (0, a.bG)([p.A], () => p.A.getChannel(null == A ? true : A.channelId)), S = (0, d.v)("UserProfileActivity", I), T = (0, r.useMemo)(() => O.filter(e => {
     let {
       type: t
     } = e;
-    return t === g.$pd.HANG_STATUS ? I : t !== g.$pd.CUSTOM_STATUS
-  }), [O, I]), {
+    return t === g.$pd.HANG_STATUS ? S : t !== g.$pd.CUSTOM_STATUS
+  }), [O, S]), {
     live: C,
     recent: N
   } = (0, r.useMemo)(() => {
     let e = (0, i.uniqWith)(T, (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name),
-      t = null == A ? true : A.entries.filter(t => !(0, u.Hd)(t) && ((0, l.Tq)(t) ? t.extra.entries.length > 0 && !e.some(e => null != e && (0, c.qb)(t, e)) : (0, l.Lf)(t) ? !e.some(e => null != e && (0, c.SU)(t, e)) : (0, l.$R)(t)));
+      t = null == v ? true : v.entries.filter(t => !(0, u.Hd)(t) && ((0, l.Tq)(t) ? t.extra.entries.length > 0 && !e.some(e => null != e && (0, c.qb)(t, e)) : (0, l.Lf)(t) ? !e.some(e => null != e && (0, c.SU)(t, e)) : (0, l.$R)(t)));
     return {
       live: 0 === e.length ? E : e,
-      recent: null == t || 0 === t.length ? b : t
+      recent: null == t || 0 === t.length ? y : t
     }
-  }, [T, null == A ? true : A.entries]);
+  }, [T, null == v ? true : v.entries]);
   return {
     live: C,
     recent: N,
-    stream: y,
-    outbox: A
+    stream: b,
+    outbox: v
   }
 }

@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
   Chunk990078 = require("./990078.jsx"),
@@ -40,7 +40,7 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk171814 = require("./171814.js");
 
-function V(e, t, n) {
+function B(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,20 +49,20 @@ function V(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      V(e, t, n[t])
+      B(e, t, n[t])
     })
   }
   return e
 }
 
-function H(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,23 +74,23 @@ function H(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let B = () => (0, l.jsxs)("div", {
+let H = () => (0, l.jsxs)("div", {
   className: U.p$,
   children: [(0, l.jsx)("div", {
     className: U.lv,
-    children: k.intl.string(k.t.bpbATE)
+    children: G.intl.string(G.t.bpbATE)
   }), (0, l.jsx)("div", {
     className: U.PA,
     children: (0, l.jsx)(d.MzZ, {
-      href: P.A.getArticleURL(G.MVz.QUICK_SWITCHER_TUTORIAL),
-      children: k.intl.string(k.t["4iPfEO"])
+      href: P.A.getArticleURL(k.MVz.QUICK_SWITCHER_TUTORIAL),
+      children: G.intl.string(G.t["4iPfEO"])
     })
   })]
 });
 class K extends(r = Chunk64700.Component) {
   render() {
-    let e = x.A.getGuild(this.props.channel.guild_id);
-    return (0, l.jsx)(D.c3, H(F({}, this.props), {
+    let e = v.A.getGuild(this.props.channel.guild_id);
+    return (0, l.jsx)(D.c3, F(V({}, this.props), {
       children: (0, l.jsx)("div", {
         className: U.MD,
         children: null != e ? e.name : null
@@ -98,7 +98,7 @@ class K extends(r = Chunk64700.Component) {
     }))
   }
 }
-V(K, "defaultProps", {
+B(K, "defaultProps", {
   unread: false
 });
 let W = Chunk311907.Ay.connectStores([Chunk222823.Ay, Chunk734057.A], e => {
@@ -106,10 +106,10 @@ let W = Chunk311907.Ay.connectStores([Chunk222823.Ay, Chunk734057.A], e => {
       channel: t
     } = e;
     return {
-      unread: _.Ay.hasUnread(t.id),
-      mentions: _.Ay.getMentionCount(t.id),
-      isMentionLowImportance: _.Ay.getIsMentionLowImportance(t.id),
-      category: j.A.getChannel(t.parent_id)
+      unread: E.Ay.hasUnread(t.id),
+      mentions: E.Ay.getMentionCount(t.id),
+      isMentionLowImportance: E.Ay.getIsMentionLowImportance(t.id),
+      category: O.A.getChannel(t.parent_id)
     }
   })(K),
   z = Chunk311907.Ay.connectStores([Chunk607567.Ay], e => {
@@ -126,27 +126,27 @@ let W = Chunk311907.Ay.connectStores([Chunk222823.Ay, Chunk734057.A], e => {
       guild: t
     } = e;
     return {
-      unread: v.default.hasUnread(t.id)
+      unread: j.default.hasUnread(t.id)
     }
   })(Chunk586068.OS),
   q = Chunk311907.Ay.connectStores([Chunk222823.Ay, Chunk290863.A], e => {
     var t;
     let {
       channel: n
-    } = e, r = null, l = E.A.getState().statuses;
-    return (null == (t = n.recipients) ? true : t.some(e => l[e] === G.clD.ONLINE)) && (r = G.clD.ONLINE), {
-      mentions: _.Ay.getMentionCount(n.id),
+    } = e, r = null, l = x.A.getState().statuses;
+    return (null == (t = n.recipients) ? true : t.some(e => l[e] === k.clD.ONLINE)) && (r = k.clD.ONLINE), {
+      mentions: E.Ay.getMentionCount(n.id),
       status: r
     }
   })(Chunk586068.nG),
   X = Chunk311907.Ay.connectStores([Chunk734057.A, Chunk222823.Ay, Chunk290863.A], e => {
     let {
       user: t
-    } = e, n = j.A.getDMFromUserId(t.id);
+    } = e, n = O.A.getDMFromUserId(t.id);
     return {
-      mentions: null != n ? _.Ay.getMentionCount(n) : 0,
-      status: E.A.getStatus(t.id),
-      isMobile: E.A.isMobileOnline(t.id)
+      mentions: null != n ? E.Ay.getMentionCount(n) : 0,
+      status: x.A.getStatus(t.id),
+      isMobile: x.A.isMobileOnline(t.id)
     }
   })(Chunk586068.KJ);
 
@@ -161,10 +161,10 @@ function J(e, t, n) {
 }
 class Q extends Chunk64700.PureComponent {
   componentDidMount() {
-    h.A.disable(), h.A.enableTemp(p.w)
+    f.A.disable(), f.A.enableTemp(h.w)
   }
   componentWillUnmount() {
-    h.A.disableTemp(), h.A.enable()
+    f.A.disableTemp(), f.A.enable()
   }
   componentDidUpdate(e, t) {
     let {
@@ -200,12 +200,12 @@ class Q extends Chunk64700.PureComponent {
     } = this.state, r = t.length > 0 && "" !== n;
     return (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(N.EG, {
-        event: G.jej.GLOBAL_CLIPBOARD_PASTE,
+        event: k.jej.GLOBAL_CLIPBOARD_PASTE,
         handler: this.handleGlobalPaste
       }), (0, l.jsx)(d.vN3, {
         children: (0, l.jsx)("input", {
           className: U.hF,
-          "aria-label": k.intl.string(k.t.ZvKwYa),
+          "aria-label": G.intl.string(G.t.ZvKwYa),
           ref: this.inputRef,
           type: "text",
           role: "combobox",
@@ -213,7 +213,7 @@ class Q extends Chunk64700.PureComponent {
           "aria-expanded": r,
           "aria-activedescendant": r ? this.getRowId(e) : true,
           "aria-autocomplete": "list",
-          placeholder: k.intl.string(k.t.VtvewW),
+          placeholder: G.intl.string(G.t.VtvewW),
           onChange: this.handleInputChange,
           onKeyDown: this.handleKeyDown,
           value: this.state.query,
@@ -233,10 +233,10 @@ class Q extends Chunk64700.PureComponent {
       } = this.state, {
         results: t
       } = this.props;
-      return 0 === t.length && e.length > 0 ? (0, l.jsx)(B, {}) : 0 === t.length ? null : (0, l.jsx)(d.Eie, {
+      return 0 === t.length && e.length > 0 ? (0, l.jsx)(H, {}) : 0 === t.length ? null : (0, l.jsx)(d.Eie, {
         innerId: this._listId,
         innerRole: "listbox",
-        "aria-label": k.intl.string(k.t.Wef5Do),
+        "aria-label": G.intl.string(G.t.Wef5Do),
         ref: this.scrollerRef,
         sectionHeight: 0,
         rowHeight: 34,
@@ -253,7 +253,7 @@ class Q extends Chunk64700.PureComponent {
     })
   }
   focusNode(e) {
-    T._.dispatch(G.jej.QUICKSWITCHER_RESULT_FOCUS, {
+    T._.dispatch(k.jej.QUICKSWITCHER_RESULT_FOCUS, {
       node: e
     })
   }
@@ -262,16 +262,16 @@ class Q extends Chunk64700.PureComponent {
   }
   renderProtip() {
     return (0, l.jsx)(A.A, {
-      className: s()(U.PP, {
+      className: a()(U.PP, {
         [U.ov]: this.state.query.length > 0
       }),
       type: A.A.Types.INLINE,
-      children: k.intl.format(k.t.wukqXQ, {
-        userSymbolHook: (e, t) => J(t, b.AT.USER, k.intl.string(k.t.GQRCGn)),
-        textChannelSymbolHook: (e, t) => J(t, b.AT.TEXT_CHANNEL, k.intl.string(k.t.wrwhuZ)),
-        voiceChannelSymbolHook: (e, t) => J(t, b.AT.VOICE_CHANNEL, k.intl.string(k.t["jz+hJp"])),
-        guildSymbolHook: (e, t) => J(t, b.AT.GUILD, k.intl.string(k.t.WuwCWi)),
-        helpdeskArticle: P.A.getArticleURL(G.MVz.QUICK_SWITCHER_TUTORIAL)
+      children: G.intl.format(G.t.wukqXQ, {
+        userSymbolHook: (e, t) => J(t, g.AT.USER, G.intl.string(G.t.GQRCGn)),
+        textChannelSymbolHook: (e, t) => J(t, g.AT.TEXT_CHANNEL, G.intl.string(G.t.wrwhuZ)),
+        voiceChannelSymbolHook: (e, t) => J(t, g.AT.VOICE_CHANNEL, G.intl.string(G.t["jz+hJp"])),
+        guildSymbolHook: (e, t) => J(t, g.AT.GUILD, G.intl.string(G.t.WuwCWi)),
+        helpdeskArticle: P.A.getArticleURL(k.MVz.QUICK_SWITCHER_TUTORIAL)
       })
     })
   }
@@ -288,7 +288,7 @@ class Q extends Chunk64700.PureComponent {
   }
   render() {
     return (0, l.jsx)(o.dWK, {
-      "aria-label": k.intl.string(k.t.ZvKwYa),
+      "aria-label": G.intl.string(G.t.ZvKwYa),
       size: "lg",
       transitionState: this.props.transitionState,
       onClose: this.props.onClose,
@@ -300,128 +300,128 @@ class Q extends Chunk64700.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), V(this, "scrollerRef", i.createRef()), V(this, "inputRef", i.createRef()), V(this, "_listId", (0, y.Ld)()), V(this, "state", {
+    super(...e), B(this, "scrollerRef", i.createRef()), B(this, "inputRef", i.createRef()), B(this, "_listId", (0, y.Ld)()), B(this, "state", {
       query: this.props.query,
       mouseFocusDisabled: true
-    }), V(this, "handleInputChange", () => {
+    }), B(this, "handleInputChange", () => {
       let {
         current: e
       } = this.inputRef;
       null != e && this.search(e.value)
-    }), V(this, "handleMouseMove", () => {
+    }), B(this, "handleMouseMove", () => {
       let {
         mouseFocusDisabled: e
       } = this.state;
       false !== e && this.setState({
         mouseFocusDisabled: false
       })
-    }), V(this, "focusResult", e => {
+    }), B(this, "focusResult", e => {
       this.state.mouseFocusDisabled || (0, w.wf)(this.props.results.indexOf(e))
-    }), V(this, "selectResult", e => {
-      (0, w.F6)(e, this.props.queryMode === b.rD.TEXT_CHANNEL)
-    }), V(this, "handleContextMenu", e => {
+    }), B(this, "selectResult", e => {
+      (0, w.F6)(e, this.props.queryMode === g.rD.TEXT_CHANNEL)
+    }), B(this, "handleContextMenu", e => {
       let t = this.props.results[this.props.selectedIndex];
       switch (t.type) {
-        case b.rD.GUILD:
-          return (0, f.L3)(e, async () => {
+        case g.rD.GUILD:
+          return (0, p.L3)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("68587"), n.e("43600"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("8458"), n.e("47841"), n.e("14360"), n.e("59735"), n.e("54469"), n.e("91838")]).then(n.bind(n, 544676));
-            return n => (0, l.jsx)(e, H(F({}, n), {
+            return n => (0, l.jsx)(e, F(V({}, n), {
               guild: t.record,
               onSelect: w.jD,
               hideSettings: true
             }))
           });
-        case b.rD.TEXT_CHANNEL:
-        case b.rD.VOICE_CHANNEL:
+        case g.rD.TEXT_CHANNEL:
+        case g.rD.VOICE_CHANNEL:
           let r = t.record,
-            i = x.A.getGuild(r.getGuildId());
+            i = v.A.getGuild(r.getGuildId());
           if (null == i) return;
           switch (r.type) {
-            case G.rbe.GUILD_TEXT:
-            case G.rbe.GUILD_ANNOUNCEMENT:
-            case G.rbe.GUILD_FORUM:
-            case G.rbe.GUILD_MEDIA:
-              return (0, f.L3)(e, async () => {
+            case k.rbe.GUILD_TEXT:
+            case k.rbe.GUILD_ANNOUNCEMENT:
+            case k.rbe.GUILD_FORUM:
+            case k.rbe.GUILD_MEDIA:
+              return (0, p.L3)(e, async () => {
                 let {
                   default: e
                 } = await Promise.all([n.e("97262"), n.e("57287"), n.e("77666")]).then(n.bind(n, 370372));
-                return t => (0, l.jsx)(e, H(F({}, t), {
+                return t => (0, l.jsx)(e, F(V({}, t), {
                   channel: r,
                   guild: i,
                   onSelect: w.jD
                 }))
               });
-            case G.rbe.GUILD_VOICE:
-            case G.rbe.GUILD_STAGE_VOICE:
-              return (0, f.L3)(e, async () => {
+            case k.rbe.GUILD_VOICE:
+            case k.rbe.GUILD_STAGE_VOICE:
+              return (0, p.L3)(e, async () => {
                 let {
                   default: e
                 } = await Promise.all([n.e("97262"), n.e("57287"), n.e("40394"), n.e("53378")]).then(n.bind(n, 698193));
-                return t => (0, l.jsx)(e, H(F({}, t), {
+                return t => (0, l.jsx)(e, F(V({}, t), {
                   channel: r,
                   guild: i,
                   onSelect: w.jD
                 }))
               });
-            case G.rbe.ANNOUNCEMENT_THREAD:
-            case G.rbe.PUBLIC_THREAD:
-            case G.rbe.PRIVATE_THREAD:
-              return (0, f.L3)(e, async () => {
+            case k.rbe.ANNOUNCEMENT_THREAD:
+            case k.rbe.PUBLIC_THREAD:
+            case k.rbe.PRIVATE_THREAD:
+              return (0, p.L3)(e, async () => {
                 let {
                   default: e
                 } = await n.e("33").then(n.bind(n, 44536));
-                return t => (0, l.jsx)(e, H(F({}, t), {
+                return t => (0, l.jsx)(e, F(V({}, t), {
                   channel: r,
                   onSelect: w.jD
                 }))
               });
-            case G.rbe.GUILD_STORE:
-              return (0, f.L3)(e, async () => {
+            case k.rbe.GUILD_STORE:
+              return (0, p.L3)(e, async () => {
                 let {
                   default: e
                 } = await n.e("15669").then(n.bind(n, 313140));
-                return t => (0, l.jsx)(e, H(F({}, t), {
+                return t => (0, l.jsx)(e, F(V({}, t), {
                   channel: r,
                   guild: i,
                   onSelect: w.jD
                 }))
               });
-            case G.rbe.GUILD_DIRECTORY:
-              return (0, f.L3)(e, async () => {
+            case k.rbe.GUILD_DIRECTORY:
+              return (0, p.L3)(e, async () => {
                 let {
                   default: e
                 } = await n.e("29559").then(n.bind(n, 994058));
-                return t => (0, l.jsx)(e, H(F({}, t), {
+                return t => (0, l.jsx)(e, F(V({}, t), {
                   channel: r
                 }))
               })
           }
           break;
-        case b.rD.GROUP_DM:
-          return (0, f.L3)(e, async () => {
+        case g.rD.GROUP_DM:
+          return (0, p.L3)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("97262"), n.e("60200")]).then(n.bind(n, 4027));
-            return n => (0, l.jsx)(e, H(F({}, n), {
+            return n => (0, l.jsx)(e, F(V({}, n), {
               channel: t.record,
               selected: C.A.getChannelId() === t.record.id,
               onSelect: w.jD
             }))
           });
-        case b.rD.USER:
-          return (0, f.L3)(e, async () => {
+        case g.rD.USER:
+          return (0, p.L3)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("97262"), n.e("32418"), n.e("8893")]).then(n.bind(n, 668569));
-            return n => (0, l.jsx)(e, H(F({}, n), {
+            return n => (0, l.jsx)(e, F(V({}, n), {
               user: t.record,
               onSelect: w.jD
             }))
           })
       }
-    }), V(this, "handleKeyDown", e => {
+    }), B(this, "handleKeyDown", e => {
       let {
         mouseFocusDisabled: t,
         query: n
@@ -450,47 +450,47 @@ class Q extends Chunk64700.PureComponent {
           return
         }
         case "arrowup":
-          i = (0, b.Vv)(b.vB.UP, i, r);
+          i = (0, g.Vv)(g.vB.UP, i, r);
           break;
         case "arrowdown":
-          i = (0, b.Vv)(b.vB.DOWN, i, r);
+          i = (0, g.Vv)(g.vB.DOWN, i, r);
           break;
         case "n":
           if (!e.ctrlKey) return;
-          i = (0, b.Vv)(b.vB.DOWN, i, r);
+          i = (0, g.Vv)(g.vB.DOWN, i, r);
           break;
         case "p":
           if (!e.ctrlKey) return;
-          i = (0, b.Vv)(b.vB.UP, i, r);
+          i = (0, g.Vv)(g.vB.UP, i, r);
           break;
         default:
           return
       }
       e.preventDefault(), (0, w.wf)(i)
-    }), V(this, "handleGlobalPaste", e => {
+    }), B(this, "handleGlobalPaste", e => {
       var t, n;
       let {
         event: r
       } = e, l = null == (t = r.clipboardData) ? true : t.getData("text");
       null != l && (r.preventDefault(), r.stopPropagation(), this.search(this.state.query + l), null == (n = this.inputRef.current) || n.focus())
-    }), V(this, "renderRow", e => {
+    }), B(this, "renderRow", e => {
       let {
         row: t
       } = e, n = this.props.results[t], {
         selectedIndex: r
       } = this.props, {
         showScores: i
-      } = m.A.getCurrentConfig({
+      } = b.A.getCurrentConfig({
         location: "62f4be_1"
       }, {
         autoTrackExposure: false
       });
       switch (n.type) {
-        case b.rD.HEADER:
+        case g.rD.HEADER:
           return (0, l.jsx)(D.Y9, {
             children: n.record.text
           }, "".concat(n.type, "-").concat(n.record.id));
-        case b.rD.TEXT_CHANNEL:
+        case g.rD.TEXT_CHANNEL:
           return (0, l.jsx)(W, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
@@ -501,7 +501,7 @@ class Q extends Chunk64700.PureComponent {
             channel: n.record,
             score: i ? n.score : true
           }, "".concat(n.type, "-").concat(n.record.id));
-        case b.rD.VOICE_CHANNEL:
+        case g.rD.VOICE_CHANNEL:
           return (0, l.jsx)(z, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
@@ -512,7 +512,7 @@ class Q extends Chunk64700.PureComponent {
             channel: n.record,
             score: i ? n.score : true
           }, "".concat(n.type, "-").concat(n.record.id));
-        case b.rD.GUILD:
+        case g.rD.GUILD:
           return (0, l.jsx)(Y, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
@@ -523,7 +523,7 @@ class Q extends Chunk64700.PureComponent {
             guild: n.record,
             score: i ? n.score : true
           }, "".concat(n.type, "-").concat(n.record.id));
-        case b.rD.USER:
+        case g.rD.USER:
           return (0, l.jsx)(X, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
@@ -535,7 +535,7 @@ class Q extends Chunk64700.PureComponent {
             comparator: n.comparator,
             score: i ? n.score : true
           }, "".concat(n.type, "-").concat(n.record.id));
-        case b.rD.GROUP_DM:
+        case g.rD.GROUP_DM:
           return (0, l.jsx)(q, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
@@ -546,7 +546,7 @@ class Q extends Chunk64700.PureComponent {
             channel: n.record,
             score: i ? n.score : true
           }, "".concat(n.type, "-").concat(n.record.id));
-        case b.rD.APPLICATION:
+        case g.rD.APPLICATION:
           return (0, l.jsx)(D.lg, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
@@ -555,7 +555,7 @@ class Q extends Chunk64700.PureComponent {
             onFocus: this.focusNode,
             application: n.record
           }, "".concat(n.type, "-").concat(n.record.id));
-        case b.rD.LINK:
+        case g.rD.LINK:
           return (0, l.jsx)(D.N_, {
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
@@ -566,7 +566,7 @@ class Q extends Chunk64700.PureComponent {
             score: i ? n.score : true,
             id: this.getRowId(t)
           }, "".concat(n.type, "-").concat(n.record.id));
-        case b.rD.IN_APP_NAVIGATION:
+        case g.rD.IN_APP_NAVIGATION:
           return (0, l.jsx)(D.vw, {
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
@@ -576,9 +576,9 @@ class Q extends Chunk64700.PureComponent {
             navigationRecord: n.record,
             score: i ? n.score : true,
             id: this.getRowId(t),
-            children: n.record.type === g.t1.SETTINGS && (0, l.jsx)("div", {
+            children: n.record.type === m.t1.SETTINGS && (0, l.jsx)("div", {
               className: U.MD,
-              children: k.intl.string(k.t["3D5yo/"])
+              children: G.intl.string(G.t["3D5yo/"])
             })
           }, "".concat(n.type, "-").concat(n.record.id));
         default:
@@ -590,14 +590,14 @@ class Q extends Chunk64700.PureComponent {
 
 function Z(e) {
   let t = (0, c.cf)([R.A], () => R.A.getProps()),
-    n = (0, O.PH)(),
+    n = (0, _.PH)(),
     r = L.A.useExperiment({
       location: "QuickSwitcher"
     }).enabled,
-    a = i.useMemo(() => r ? Object.values(n).filter(e => null != e.url).filter(e => null == e.predicate || e.predicate()) : [], [n, r]);
+    s = i.useMemo(() => r ? Object.values(n).filter(e => null != e.url).filter(e => null == e.predicate || e.predicate()) : [], [n, r]);
   return i.useLayoutEffect(() => {
     if (!r) return;
-    let e = a.map(e => {
+    let e = s.map(e => {
       var t;
       return {
         title: "string" == typeof e.label ? e.label : "",
@@ -606,9 +606,9 @@ function Z(e) {
       }
     }).filter(e => "" !== e.title && null != e.path);
     e.unshift({
-      title: k.intl.string(k.t["3D5yo/"]),
-      searchableTitles: [k.intl.string(k.t["3D5yo/"])],
-      path: G.BVt.SETTINGS("account")
+      title: G.intl.string(G.t["3D5yo/"]),
+      searchableTitles: [G.intl.string(G.t["3D5yo/"])],
+      path: k.BVt.SETTINGS("account")
     }), (0, I.FR)(e)
-  }, [a, r]), (0, l.jsx)(Q, F({}, t, e))
+  }, [s, r]), (0, l.jsx)(Q, V({}, t, e))
 }

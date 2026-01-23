@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk397927 = require("./397927.js"),
   Chunk772244 = require("./772244.js"),
@@ -16,20 +16,20 @@ let m = Chunk64700.forwardRef((e, t) => {
   let {
     quest: n,
     percentComplete: l,
-    size: i = 42,
+    size: r = 42,
     strokeWidth: m = 3,
     glowBlur: p = .4,
     percentCompleteText: h,
-    percentCompleteTextVariant: f = "text-lg/medium",
-    children: x
-  } = e, b = (0, c.OY)(n, l > 0), g = i / 2, v = i / 2 - m / 2, j = 2 * Math.PI * v, y = j - l * j, _ = {
+    percentCompleteTextVariant: x = "text-lg/medium",
+    children: g
+  } = e, f = (0, c.OY)(n, l > 0), b = r / 2, v = r / 2 - m / 2, j = 2 * Math.PI * v, _ = j - l * j, y = {
     strokeDasharray: "".concat(j, " ").concat(j),
-    strokeDashoffset: y
+    strokeDashoffset: _
   }, A = {
     strokeDasharray: "".concat(j, " ").concat(j),
     strokeDashoffset: -l * j
   }, C = {
-    boxShadow: "0 0 20px 0px ".concat(b.glow)
+    boxShadow: "0 0 20px 0px ".concat(f.glow)
   }, {
     progressTextAnimation: S
   } = (0, o.zhh)({
@@ -42,15 +42,15 @@ let m = Chunk64700.forwardRef((e, t) => {
     children: [(0, a.jsxs)("div", {
       className: u.vW,
       style: C,
-      children: [x, (0, a.jsxs)(s.animated.div, {
+      children: [g, (0, a.jsxs)(s.animated.div, {
         style: {
           opacity: S
         },
-        className: r()(u.rD, u.qk),
+        className: i()(u.rD, u.qk),
         children: [(0, a.jsx)("div", {
-          className: r()(u.rD, u.LU)
+          className: i()(u.rD, u.LU)
         }), (0, a.jsx)(o.Text, {
-          variant: f,
+          variant: x,
           color: "text-strong",
           className: u.l_,
           children: h
@@ -58,8 +58,8 @@ let m = Chunk64700.forwardRef((e, t) => {
       })]
     }), (0, a.jsxs)("svg", {
       className: u.hr,
-      height: i,
-      width: i,
+      height: r,
+      width: r,
       children: [(0, a.jsxs)("defs", {
         children: [(0, a.jsxs)("filter", {
           id: "glow",
@@ -85,10 +85,10 @@ let m = Chunk64700.forwardRef((e, t) => {
           y2: "0%",
           children: [(0, a.jsx)("stop", {
             offset: "0%",
-            stopColor: b.backgroundTop
+            stopColor: f.backgroundTop
           }), (0, a.jsx)("stop", {
             offset: "100%",
-            stopColor: b.backgroundBottom
+            stopColor: f.backgroundBottom
           })]
         })]
       }), (0, a.jsx)("circle", {
@@ -96,8 +96,8 @@ let m = Chunk64700.forwardRef((e, t) => {
         strokeWidth: m,
         fill: "transparent",
         r: v,
-        cx: g,
-        cy: g,
+        cx: b,
+        cy: b,
         stroke: "url(#linear)",
         style: A
       }), (0, a.jsx)("circle", {
@@ -105,10 +105,10 @@ let m = Chunk64700.forwardRef((e, t) => {
         strokeWidth: m,
         fill: "transparent",
         r: v,
-        cx: g,
-        cy: g,
-        stroke: b.foreground,
-        style: _
+        cx: b,
+        cy: b,
+        stroke: f.foreground,
+        style: y
       })]
     })]
   })

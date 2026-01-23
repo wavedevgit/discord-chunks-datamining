@@ -22,23 +22,23 @@ function f(e) {
     button: y
   } = e, O = function(e, t) {
     if (null == e) return {};
-    var r, n, o, l = {};
+    var r, n, o, a = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (o = 0, r = Reflect.ownKeys(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-      return l
+      for (o = 0, r = Reflect.ownKeys(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
+      return a
     }
-    if (l = function(e, t) {
+    if (a = function(e, t) {
         if (null == e) return {};
         var r, n, o = {},
-          l = Object.getOwnPropertyNames(e);
-        for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
+          a = Object.getOwnPropertyNames(e);
+        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
         return o
       }(e, t), Object.getOwnPropertySymbols)
-      for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-    return l
-  }(e, ["title", "description", "image", "button"]), m = (0, a.bG)([c.A], () => c.A.useReducedMotion), g = o.useRef(null), j = o.useRef(new l.OH), [v, h] = o.useState(null);
+      for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
+    return a
+  }(e, ["title", "description", "image", "button"]), m = (0, l.bG)([c.A], () => c.A.useReducedMotion), g = o.useRef(null), j = o.useRef(new a.OH), [v, h] = o.useState(null);
   return (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(l.Fk, {
+    children: [(0, n.jsx)(a.Fk, {
       ref: h,
       className: p.Lb,
       environment: j.current

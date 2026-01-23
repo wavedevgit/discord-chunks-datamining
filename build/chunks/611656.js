@@ -2,8 +2,8 @@
 /** chunk id: 611656, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => y,
-  oS: () => b
+  Ay: () => b,
+  oS: () => y
 }), require("./938796.js"), require("./321073.js");
 var Chunk64700 = require("./64700.js"),
   Chunk284009 = require("./284009.js"),
@@ -33,8 +33,8 @@ let m = function(e, t) {
     return null == e || null == t ? ["no match"] : ((0, o.Lt)(t.flags, h.gfo.GAME_PROFILE_DISABLED) && n.push("profile disabled"), e.themes.includes(s.W.EROTIC) && n.push("nsfw"), (null == e.summary || 0 === e.summary.length) && n.push("no summary"), (null == e.summary || 0 === e.summary.length) && n.push("no summary"), n)
   },
   E = (e, t) => 0 === g(e, t).length,
-  b = e => E(d.A.getGame(e), c.A.getApplication(e)),
-  y = e => {
+  y = e => E(d.A.getGame(e), c.A.getApplication(e)),
+  b = e => {
     let {
       location: t,
       applicationId: n = "",
@@ -44,12 +44,12 @@ let m = function(e, t) {
     } = e, c = r.useRef(false), p = (0, _.MH)(t, i);
     (0, f.e)(p && "" !== n ? n : null);
     let h = (0, l.bG)([d.A], () => d.A.getGame(n)),
-      b = (0, u.O)(n),
-      y = r.useMemo(() => null != h && null != b ? E(h, b) : null, [b, h]);
+      y = (0, u.O)(n),
+      b = r.useMemo(() => null != h && null != y ? E(h, y) : null, [y, h]);
     return r.useEffect(() => {
-      !c.current && p && o && false === d.A.isFetching(n) && null != h && null != y && (a()(null != s, "Cannot track a Game Profile Entry Point Impressions without a source."), m(y, n, g(h), s), c.current = true)
-    }, [y, n, p, h, s, o]), {
-      shouldOpenGameProfile: p && true === y,
+      !c.current && p && o && false === d.A.isFetching(n) && null != h && null != b && (a()(null != s, "Cannot track a Game Profile Entry Point Impressions without a source."), m(b, n, g(h), s), c.current = true)
+    }, [b, n, p, h, s, o]), {
+      shouldOpenGameProfile: p && true === b,
       applicationId: n
     }
   }

@@ -4,7 +4,7 @@
 require.d(exports, {
   Ay: () => P,
   P8: () => T,
-  bp: () => I,
+  bp: () => S,
   p4: () => C
 }), require("./747238.js"), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
@@ -34,7 +34,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,12 +58,12 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = /\.gif($|\?|#)/i,
+let S = /\.gif($|\?|#)/i,
   T = /\.webp($|\?|#)/i,
   C = /\.avif($|\?|#)/i,
   N = /\.png($|\?|#)/i,
@@ -77,7 +77,7 @@ class P extends(r = Chunk64700.Component) {
       animated: r,
       srcIsAnimated: i
     } = e;
-    return r || I.test(null != n && "" !== n ? n : t) || null != i && i && (T.test(null != n && "" !== n ? n : t) || C.test(null != n && "" !== n ? n : t))
+    return r || S.test(null != n && "" !== n ? n : t) || null != i && i && (T.test(null != n && "" !== n ? n : t) || C.test(null != n && "" !== n ? n : t))
   }
   static isSrcPNG(e) {
     let {
@@ -157,7 +157,7 @@ class P extends(r = Chunk64700.Component) {
         imageData: n,
         trigger: "PRELOAD",
         startLoadingTime: m,
-        readyState: b.Rv1.READY,
+        readyState: y.Rv1.READY,
         format: p,
         quality: _,
         imageProps: {
@@ -184,7 +184,7 @@ class P extends(r = Chunk64700.Component) {
         src: f,
         height: g,
         width: E,
-        original: y,
+        original: b,
         sourceMetadata: O
       }
     } = e;
@@ -193,26 +193,26 @@ class P extends(r = Chunk64700.Component) {
       }), !D.getCurrentConfig({
         location: "lazy_image"
       }).enabled) return;
-    let A = await fetch(a.url).catch(() => true),
-      v = null == A || null == (t = A.headers) ? true : t.get("content-length"),
-      S = null != v ? Number(v) : null,
-      I = Date.now() - l;
-    m.default.track(b.HAw.IMAGE_LOADING_COMPLETED, {
-      duration_ms: I,
+    let v = await fetch(a.url).catch(() => true),
+      A = null == v || null == (t = v.headers) ? true : t.get("content-length"),
+      I = null != A ? Number(A) : null,
+      S = Date.now() - l;
+    m.default.track(y.HAw.IMAGE_LOADING_COMPLETED, {
+      duration_ms: S,
       requested_height: a.height,
       requested_width: a.width,
       height: g,
       width: E,
-      original_url: y,
+      original_url: b,
       url: f,
       requested_url: a.url,
       format: u,
       quality: d,
-      state: i ? b.Rv1.ERROR : c,
+      state: i ? y.Rv1.ERROR : c,
       data_saving_mode: _.Ay.dataSavingMode,
       low_quality_image_mode: _.Ay.dataSavingMode,
       trigger: s,
-      size: S,
+      size: I,
       message_id: null == O || null == (n = O.message) ? true : n.id,
       message_sent_timestamp: null == O || null == (r = O.message) ? true : r.timestamp.getTime(),
       connection_type: h.A.getType(),
@@ -224,7 +224,7 @@ class P extends(r = Chunk64700.Component) {
     let {
       readyState: e
     } = this.state;
-    e === b.Rv1.LOADING && this.loadImage(this.getSrc(this.getRatio(), P.isAnimated(this.props)), this.handleImageLoad), P.isAnimated(this.props) && this.observeVisibility()
+    e === y.Rv1.LOADING && this.loadImage(this.getSrc(this.getRatio(), P.isAnimated(this.props)), this.handleImageLoad), P.isAnimated(this.props) && this.observeVisibility()
   }
   componentDidUpdate(e) {
     let t = P.isAnimated(this.props);
@@ -246,7 +246,7 @@ class P extends(r = Chunk64700.Component) {
       {
         format: l,
         quality: c
-      } = P.getFormatQuality(S(A({}, this.props), {
+      } = P.getFormatQuality(I(v({}, this.props), {
         freeze: t
       }));
     return (0, f.AE)({
@@ -254,8 +254,8 @@ class P extends(r = Chunk64700.Component) {
       width: r,
       height: i,
       ratio: e,
-      maxWidth: o === y.dG.MOSAIC ? a : true,
-      maxHeight: o === y.dG.MOSAIC ? s : true,
+      maxWidth: o === b.dG.MOSAIC ? a : true,
+      maxHeight: o === b.dG.MOSAIC ? s : true,
       format: l,
       quality: c,
       animated: !t,
@@ -271,7 +271,7 @@ class P extends(r = Chunk64700.Component) {
       mediaLayoutType: i,
       useFullWidth: a
     } = this.props;
-    return i === y.dG.MOSAIC && a ? (0, E.V)({
+    return i === b.dG.MOSAIC && a ? (0, E.V)({
       width: e,
       height: t,
       maxWidth: n,
@@ -288,7 +288,7 @@ class P extends(r = Chunk64700.Component) {
       mediaLayoutType: e,
       responsive: t
     } = this.props;
-    return null != e ? e : t ? y.dG.RESPONSIVE : y.dG.STATIC
+    return null != e ? e : t ? b.dG.RESPONSIVE : b.dG.STATIC
   }
   loadImage(e, t) {
     let {
@@ -319,11 +319,11 @@ class P extends(r = Chunk64700.Component) {
       height: m,
       minWidth: g,
       minHeight: E,
-      maxWidth: y,
+      maxWidth: b,
       maxHeight: O,
-      onClick: v,
-      renderAccessory: S,
-      tabIndex: I,
+      onClick: A,
+      renderAccessory: I,
+      tabIndex: S,
       limitResponsiveWidth: T,
       useFullWidth: C,
       placeholder: N,
@@ -334,7 +334,7 @@ class P extends(r = Chunk64700.Component) {
       readyState: x,
       hasMouseOver: L,
       hasFocus: j
-    } = this.state, M = null != n, k = this.getRatio(), U = (0, s.clamp)(Math.round(h * k), null != g ? g : 0, null != y ? y : 1 / 0), G = (0, s.clamp)(Math.round(m * k), null != E ? E : 0, null != O ? O : 1 / 0), V = {
+    } = this.state, M = null != n, k = this.getRatio(), U = (0, s.clamp)(Math.round(h * k), null != g ? g : 0, null != b ? b : 1 / 0), G = (0, s.clamp)(Math.round(m * k), null != E ? E : 0, null != O ? O : 1 / 0), V = {
       alt: e,
       readyState: x,
       onContextMenu: null != a ? a : true,
@@ -346,7 +346,7 @@ class P extends(r = Chunk64700.Component) {
       mediaLayoutType: this.getType(),
       limitResponsiveWidth: T,
       useFullWidth: C,
-      tabIndex: I,
+      tabIndex: S,
       width: U,
       height: G,
       src: "",
@@ -374,15 +374,15 @@ class P extends(r = Chunk64700.Component) {
       onBlur: this.onBlur
     };
     if (1 === V.width && 1 === V.height) return null;
-    switch ((M || null != v) && (V.onClick = this.onClick), r && (V.original = null != l && "" !== l ? l : V.src), x) {
-      case b.Rv1.LOADING:
+    switch ((M || null != A) && (V.onClick = this.onClick), r && (V.original = null != l && "" !== l ? l : V.src), x) {
+      case y.Rv1.LOADING:
         null != t && (V.src = t);
         break;
-      case b.Rv1.READY:
+      case y.Rv1.READY:
         if (P.isAnimated(this.props)) {
           V.onMouseLeave = this.onMouseLeave;
           let e = (o || L || j) && (null == _ || _) && P.visibilityObserver.isVisible(this);
-          e ? (V.src = this.getSrc(k), V.renderAccessory = S) : (V.src = this.getSrc(k, !p || !o), V.renderAccessory = this.renderAccessory), null != f && (V.children = t => {
+          e ? (V.src = this.getSrc(k), V.renderAccessory = I) : (V.src = this.getSrc(k, !p || !o), V.renderAccessory = this.renderAccessory), null != f && (V.children = t => {
             let {
               src: n,
               size: r,
@@ -399,13 +399,13 @@ class P extends(r = Chunk64700.Component) {
           })
         } else V.src = this.getSrc(k)
     }
-    return (0, i.jsx)(c._, A({
+    return (0, i.jsx)(c._, v({
       ref: this._imageRef
     }, V))
   }
   constructor(e) {
     super(e), O(this, "state", {
-      readyState: b.Rv1.LOADING,
+      readyState: y.Rv1.LOADING,
       hasMouseOver: false,
       hasFocus: false
     }), O(this, "startLoadingTime", Date.now()), O(this, "_cancellers", new Set), O(this, "_imageRef", a.createRef()), O(this, "observeVisibility", () => {
@@ -414,7 +414,7 @@ class P extends(r = Chunk64700.Component) {
       P.visibilityObserver.unobserve(this)
     }), O(this, "handleImageLoad", (e, t) => {
       this.setState({
-        readyState: e ? b.Rv1.ERROR : b.Rv1.READY
+        readyState: e ? y.Rv1.ERROR : y.Rv1.READY
       }, () => {
         var n;
         let {
@@ -475,7 +475,7 @@ class P extends(r = Chunk64700.Component) {
         hasFocus: t
       } = this.state, n = e || t, r = null != this.props.renderAccessory ? this.props.renderAccessory() : null;
       return this.props.shouldRenderAccessory ? n ? r : (0, i.jsx)(d.A, {}) : null
-    }), (0, f.LE)(this.getSrc(this.getRatio(), P.isAnimated(this.props))) && (this.state.readyState = b.Rv1.READY)
+    }), (0, f.LE)(this.getSrc(this.getRatio(), P.isAnimated(this.props))) && (this.state.readyState = y.Rv1.READY)
   }
 }
 O(P, "visibilityObserver", new Chunk230109.j({

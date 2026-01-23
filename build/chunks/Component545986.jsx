@@ -205,8 +205,8 @@ function z(e) {
     n = {
       location: R.rE.QUESTS_BAR
     };
-  if (!(0, y.l)(n) || Math.random() > K) return;
-  let r = (0, A.A)(e);
+  if (!(0, b.l)(n) || Math.random() > K) return;
+  let r = (0, v.A)(e);
   t.log("Showing survey ".concat(r.id)), (0, C.m)({
     questId: e.id,
     survey: r
@@ -227,15 +227,15 @@ function X(e) {
     autoplay: c = true,
     skipEnrollmentCheck: u = false
   } = e;
-  if ((0, S.BS)(n)) return void ee(n);
+  if ((0, I.BS)(n)) return void ee(n);
   let d = (0, i.A)();
-  if (!u && (null == (t = n.userStatus) ? true : t.enrolledAt) == null && !(0, v.Ic)(n)) {
+  if (!u && (null == (t = n.userStatus) ? true : t.enrolledAt) == null && !(0, A.Ic)(n)) {
     g.A.isEnrolling(n.id) || (0, h.Oy)(n.id, {
       questContent: a,
       questContentCTA: m.Cy.ACCEPT_QUEST,
       sourceQuestContent: s
     });
-    let e = b.Ay.getState().getVideoProgress(n.id);
+    let e = y.Ay.getState().getVideoProgress(n.id);
     null != e && e.timestampSec > 1 && ((0, h.QG)(n.id), p.default.track(w.HAw.QUEST_VIDEO_ENROLLMENT_RETRY_ATTEMPTED, {
       quest_id: n.id,
       source_quest_content: (0, m.jO)(s),
@@ -373,5 +373,5 @@ async function et(e, t) {
 }
 
 function en(e) {
-  if ((0, I.vA)(e)) return e.config.features.includes(R.Li.CLOUD_GAMING_ACTIVITY) ? o.hpF : o._xR
+  if ((0, S.vA)(e)) return e.config.features.includes(R.Li.CLOUD_GAMING_ACTIVITY) ? o.hpF : o._xR
 }

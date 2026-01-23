@@ -1,12 +1,12 @@
 /** Chunk was on 4042 **/
-/** chunk id: 72715, original params: e,a,s (module,exports,require) **/
+/** chunk id: 72715, original params: e,a,i (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => h
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  i = require.n(Chunk503698),
+  t = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk397927 = require("./397927.js"),
   Chunk915089 = require("./915089.js"),
@@ -15,55 +15,55 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk167451 = require("./167451.js");
 
-function _(e) {
+function h(e) {
   let {
     transitionState: a,
-    onClose: s,
-    guildTemplate: d
+    onClose: i,
+    guildTemplate: c
   } = e, {
-    form: _,
-    preview: o,
+    form: h,
+    preview: f,
     handleSubmit: p
-  } = (0, n.A)(d, false), h = (0, f.GV)();
-  return (0, c.jsxs)(t.dWK, {
+  } = (0, l.A)(c, false), C = (0, _.GV)();
+  return (0, n.jsxs)(r.dWK, {
     transitionState: a,
-    onClose: s,
+    onClose: i,
     size: "xxl",
-    "aria-labelledby": h,
-    children: [(0, c.jsxs)("div", {
+    "aria-labelledby": C,
+    children: [(0, n.jsxs)("div", {
       className: x.jT,
-      children: [(0, c.jsx)("div", {
-        className: i()(x.jx, x.Iz),
-        children: (0, c.jsx)("div", {
+      children: [(0, n.jsx)("div", {
+        className: t()(x.jx, x.Iz),
+        children: (0, n.jsx)("div", {
           className: x.OQ,
-          children: (0, c.jsx)(l.A, {
-            guildTemplate: d,
-            headerId: h
+          children: (0, n.jsx)(d.A, {
+            guildTemplate: c,
+            headerId: C
           })
         })
-      }), (0, c.jsx)("div", {
-        className: i()(x.jx, x.gy),
-        children: (0, c.jsxs)(b.HOs, {
+      }), (0, n.jsx)("div", {
+        className: t()(x.jx, x.gy),
+        children: (0, n.jsxs)(s.HOs, {
           className: x.KJ,
-          children: [(0, c.jsx)(b.Heading, {
+          children: [(0, n.jsx)(s.Heading, {
             variant: "heading-xl/semibold",
             className: x.wx,
-            children: r.intl.string(r.t.UNFvtM)
-          }), (0, c.jsxs)(b.nVY, {
-            children: [_, o]
+            children: o.intl.string(o.t.UNFvtM)
+          }), (0, n.jsxs)(s.nVY, {
+            children: [h, f]
           })]
         })
       })]
-    }), (0, c.jsx)(t.H7u, {
+    }), (0, n.jsx)(r.H7u, {
       actions: [{
         variant: "secondary",
-        text: r.intl.string(r.t.cpT0Cq),
-        onClick: s
+        text: o.intl.string(o.t.cpT0Cq),
+        onClick: i
       }, {
         variant: "primary",
-        text: r.intl.string(r.t.CumH4u),
+        text: o.intl.string(o.t.CumH4u),
         onClick: async () => {
-          null != await p() && s()
+          null != await p() && i()
         }
       }]
     })]

@@ -54,23 +54,23 @@ let _ = Chunk558519.vx.DISCONNECTED,
   m = new Map,
   g = new Set,
   E = new Set,
-  b = null,
-  y = false,
+  y = null,
+  b = false,
   O = false,
-  A = false,
-  v = null;
+  v = false,
+  A = null;
 
-function S(e) {
+function I(e) {
   let {
     connectionState: t
   } = e;
   _ = t
 }
 
-function I(e) {
+function S(e) {
   let t = e.currencyCode.toLowerCase(),
     n = e.price / 100,
-    r = "BG" === v && t === c.Yr.EUR ? (0, o.ze)(n, {
+    r = "BG" === A && t === c.Yr.EUR ? (0, o.ze)(n, {
       convertToMajorUnits: false
     }) : (0, o.Gp)(n, t, {
       convertToMajorUnits: false
@@ -83,11 +83,11 @@ function I(e) {
 }
 
 function T() {
-  A = true
+  v = true
 }
 
 function C() {
-  A = false
+  v = false
 }
 
 function N() {
@@ -111,7 +111,7 @@ function w(e) {
     null != t && t.forEach(e => g.add(e))
   });
   try {
-    h = null == h ? true : h.map(I)
+    h = null == h ? true : h.map(S)
   } catch (e) {
     (0, s.pM)(e)
   }
@@ -122,7 +122,7 @@ function w(e) {
       O = false;
       break;
     case l.MA.SUBSCRIPTION:
-      A = false
+      v = false
   }
 }
 
@@ -145,21 +145,21 @@ function x(e) {
   let {
     pendingDowngrade: t
   } = e;
-  b = t
+  y = t
 }
 
 function L(e) {
   let {
     isDowngrading: t
   } = e;
-  y = t
+  b = t
 }
 
 function j(e) {
   let {
     countryCode: t
   } = e;
-  v = t
+  A = t
 }
 class M extends(r = Chunk311907.Ay.Store) {
   getProducts() {
@@ -173,7 +173,7 @@ class M extends(r = Chunk311907.Ay.Store) {
     return null != (t = m.get(e)) ? t : null
   }
   isBusy() {
-    return E.size > 0 || y
+    return E.size > 0 || b
   }
   isPurchasingProduct(e) {
     return E.has(e)
@@ -185,21 +185,21 @@ class M extends(r = Chunk311907.Ay.Store) {
     return _ === l.vx.ERROR
   }
   getPendingDowngrade() {
-    return b
+    return y
   }
   isFetchingGoogleSkus() {
-    return A || O
+    return v || O
   }
   isFetchingProducts() {
-    return A || O
+    return v || O
   }
   getUserCountry() {
-    return v
+    return A
   }
 }
 u(M, "displayName", "IAPStore");
 let k = new M(Chunk73153.h, {
-  GPLAY_UPDATE_CONNECTION_STATE: S,
+  GPLAY_UPDATE_CONNECTION_STATE: I,
   GPLAY_FETCH_SUBSCRIPTION_SKUS_START: T,
   GPLAY_SUBSCRIPTION_SKUS_LOADED: w,
   GPLAY_FETCH_SUBSCRIPTION_SKUS_FAILED: C,

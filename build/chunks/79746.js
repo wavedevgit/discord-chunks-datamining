@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 79746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 }), require("./896048.js");
 var Chunk451988 = require("./451988.js"),
   Chunk73153 = require("./73153.js"),
@@ -14,7 +14,7 @@ var Chunk451988 = require("./451988.js"),
   Chunk789999 = require("./789999.js"),
   Chunk652215 = require("./652215.js");
 
-function f(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,8 +22,8 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = Chunk961350.default.getToken();
-class A extends Chunk272355.A {
+let g = Chunk961350.default.getToken();
+class f extends Chunk272355.A {
   _initialize() {
     this.focusedOrForegrounded = (0, d.R)(), a.default.addChangeListener(this.handleAuthenticationChange), i.h.subscribe("WINDOW_FOCUS", this.handleWindowFocus), i.h.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), i.h.subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), i.h.subscribe("LOGIN_SUCCESS", this.handleLogin), i.h.subscribe("LOGOUT", this.handleLogout), this.scheduleHeartbeatTracking()
   }
@@ -32,14 +32,14 @@ class A extends Chunk272355.A {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, f(this, "focusedOrForegrounded", (0, d.R)()), f(this, "heartbeatInterval", new r.IX), f(this, "schedulerStarted", false), f(this, "lastHeartbeatTimestamp", 0), f(this, "maybeStartHeartbeat", () => {
+    super(...e), t = this, h(this, "focusedOrForegrounded", (0, d.R)()), h(this, "heartbeatInterval", new r.IX), h(this, "schedulerStarted", false), h(this, "lastHeartbeatTimestamp", 0), h(this, "maybeStartHeartbeat", () => {
       this.heartbeatInterval.isStarted() || (this.trackHeartbeat(), this.heartbeatInterval.start(5 * o.A.Millis.MINUTE, this.trackHeartbeat))
-    }), f(this, "startAnalyticHeartbeat", () => {
+    }), h(this, "startAnalyticHeartbeat", () => {
       this.schedulerStarted || (this.schedulerStarted = true, c.A.addBreadcrumb({
         category: "ad",
         message: "Starting ad session heartbeat"
       }), this.maybeStartHeartbeat())
-    }), f(this, "trackHeartbeat", function() {
+    }), h(this, "trackHeartbeat", function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
       if (!t.schedulerStarted && !e) {
         c.A.addBreadcrumb({
@@ -58,39 +58,39 @@ class A extends Chunk272355.A {
         client_heartbeat_initialization_timestamp: l.createdAtTimestamp,
         client_heartbeat_version: 3
       }), t.lastHeartbeatTimestamp = n
-    }), f(this, "stopAnalyticHeartbeat", function() {
+    }), h(this, "stopAnalyticHeartbeat", function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "DEFAULT";
       t.schedulerStarted && (t.schedulerStarted = false, t.lastHeartbeatTimestamp = 0, c.A.addBreadcrumb({
         category: "ad",
         message: "Stopping ad session heartbeat: ".concat(e)
       }), t.heartbeatInterval.stop())
-    }), f(this, "scheduleHeartbeatTracking", function() {
+    }), h(this, "scheduleHeartbeatTracking", function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "DEFAULT";
-      if (t.focusedOrForegrounded && null != h) try {
+      if (t.focusedOrForegrounded && null != g) try {
         t.startAnalyticHeartbeat()
       } catch (e) {
         c.A.captureException(e)
       } else t.stopAnalyticHeartbeat(e)
-    }), f(this, "handleLogin", () => {
+    }), h(this, "handleLogin", () => {
       this.scheduleHeartbeatTracking(), this.trackHeartbeat(true)
-    }), f(this, "handleLogout", () => {
+    }), h(this, "handleLogout", () => {
       this.stopAnalyticHeartbeat("USER_LOGOUT"), (0, u.Db)()
-    }), f(this, "handleEnrollmentSuccess", () => {
+    }), h(this, "handleEnrollmentSuccess", () => {
       (0, u.sN)(true)
-    }), f(this, "handleWindowFocus", e => {
+    }), h(this, "handleWindowFocus", e => {
       let {
         focused: t
       } = e;
       this.focusedOrForegrounded = t, this.scheduleHeartbeatTracking("WINDOW_FOCUS")
-    }), f(this, "handleAppStateUpdate", e => {
+    }), h(this, "handleAppStateUpdate", e => {
       let {
         state: t
       } = e;
       this.focusedOrForegrounded = t === p.g6G.ACTIVE, this.scheduleHeartbeatTracking("APP_STATE_UPDATE")
-    }), f(this, "handleAuthenticationChange", () => {
+    }), h(this, "handleAuthenticationChange", () => {
       let e = a.default.getToken();
-      h !== e && (h = e, (0, u.Db)(), this.stopAnalyticHeartbeat()), this.scheduleHeartbeatTracking()
+      g !== e && (g = e, (0, u.Db)(), this.stopAnalyticHeartbeat()), this.scheduleHeartbeatTracking()
     })
   }
 }
-let g = new A
+let m = new f

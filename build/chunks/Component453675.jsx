@@ -26,18 +26,18 @@ function h() {
     n = p.useField("isSuccess"),
     s = p.useField("errorMessage"),
     h = l.useRef([]),
-    f = l.useRef(""),
-    x = l.useCallback(() => {
+    x = l.useRef(""),
+    g = l.useCallback(() => {
       let {
         results: e,
         query: t
       } = c.A.getProps();
-      (h.current !== e || f.current !== t) && (h.current = e, f.current = t, (0, d._S)())
+      (h.current !== e || x.current !== t) && (h.current = e, x.current = t, (0, d._S)())
     }, []);
   l.useEffect(() => {
-    if (e) return c.A.addChangeListener(x), () => c.A.removeChangeListener(x)
-  }, [x, e]);
-  let b = l.useCallback(async () => {
+    if (e) return c.A.addChangeListener(g), () => c.A.removeChangeListener(g)
+  }, [g, e]);
+  let f = l.useCallback(async () => {
     let {
       isUploading: e
     } = p.getState();
@@ -52,7 +52,7 @@ function h() {
         errorMessage: null
       })
     } catch (t) {
-      let e = new r.LG(t);
+      let e = new i.LG(t);
       p.setState({
         errorMessage: e.getAnyErrorMessage()
       })
@@ -62,14 +62,14 @@ function h() {
       })
     }
   }, []);
-  return (0, a.jsxs)(i.nVY, {
+  return (0, a.jsxs)(r.nVY, {
     label: "Debug Logs Session",
     description: "Click to emit debug logs as you search in the Quick Switcher. Includes your search term and all results. For each result, includes the record id, associated names, and frecency scores.",
-    children: [(0, a.jsx)(i.po8, {
-      messageType: i.YCn.INFO,
+    children: [(0, a.jsx)(r.po8, {
+      messageType: r.YCn.INFO,
       children: "When you are done, please remember to upload the logs."
-    }), (0, a.jsxs)(i.ButtonGroup, {
-      children: [(0, a.jsx)(i.Button, {
+    }), (0, a.jsxs)(r.ButtonGroup, {
+      children: [(0, a.jsx)(r.Button, {
         variant: e ? "critical-primary" : "primary",
         onClick: () => p.setState({
           isRecording: !e
@@ -79,7 +79,7 @@ function h() {
         isUploading: t,
         isSuccess: n,
         errorMessage: s,
-        onClick: b,
+        onClick: f,
         title: "Upload Session Logs"
       })]
     })]

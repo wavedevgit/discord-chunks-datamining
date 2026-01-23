@@ -128,10 +128,10 @@ class m extends Chunk64700.PureComponent {
           title: m,
           name: g,
           id: E,
-          placeholder: b
+          placeholder: y
         } = e,
-        y = p(d({}, _(e, ["getClassNameForLayout", "renderInput", "title", "name", "id", "placeholder"])), {
-          placeholder: null == b ? true : b(),
+        b = p(d({}, _(e, ["getClassNameForLayout", "renderInput", "title", "name", "id", "placeholder"])), {
+          placeholder: null == y ? true : y(),
           error: this.getError(g),
           value: n[g],
           name: g,
@@ -145,7 +145,7 @@ class m extends Chunk64700.PureComponent {
         children: (0, r.jsx)(o.D0$, {
           id: E,
           label: m(),
-          children: h(y, u, c)
+          children: h(b, u, c)
         })
       }, g)
     }), u(this, "renderFormRow", e => {

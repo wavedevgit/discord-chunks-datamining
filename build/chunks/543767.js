@@ -2,10 +2,10 @@
 /** chunk id: 543767, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C8: () => I,
-  FP: () => v,
-  Kq: () => S,
-  OQ: () => b,
+  C8: () => S,
+  FP: () => A,
+  Kq: () => I,
+  OQ: () => y,
   sL: () => T
 }), require("./896048.js"), require("./457529.js");
 var Chunk64700 = require("./64700.js"),
@@ -115,7 +115,7 @@ async function E(e) {
     throw new o.Ey(e)
   }
 }
-async function b(e) {
+async function y(e) {
   let {
     subscriptionId: t,
     items: n,
@@ -159,7 +159,7 @@ async function b(e) {
     throw new o.Ey(e)
   }
 }
-async function y(e) {
+async function b(e) {
   let {
     paymentSourceId: t,
     skuId: n,
@@ -201,7 +201,7 @@ async function O(e) {
   return l.A.createInvoiceFromServer(r.body)
 }
 
-function A(e, t) {
+function v(e, t) {
   let {
     preventFetch: n = false
   } = e, [i, a] = (0, r.useState)(null), [s, o] = (0, r.useState)(null);
@@ -222,16 +222,16 @@ function A(e, t) {
   }, [n, t]), [i, s]
 }
 
-function v(e) {
+function A(e) {
   let t = (0, r.useRef)(e);
   (0, r.useEffect)(() => {
     t.current = e
   });
   let n = JSON.stringify(e);
-  return A(e, (0, r.useCallback)(() => y(t.current), [n]))
+  return v(e, (0, r.useCallback)(() => b(t.current), [n]))
 }
 
-function S(e) {
+function I(e) {
   if ("subscriptionId" in e && null == e.subscriptionId) {
     let {
       subscriptionId: t
@@ -247,18 +247,18 @@ function S(e) {
       let {
         current: e
       } = t;
-      return "subscriptionId" in e ? b(e) : "items" in e ? E(e) : null
+      return "subscriptionId" in e ? y(e) : "items" in e ? E(e) : null
     }, [n]);
-  return A(e, i)
+  return v(e, i)
 }
 
-function I(e) {
+function S(e) {
   let t = (0, r.useRef)(e);
   (0, r.useEffect)(() => {
     t.current = e
   });
   let n = JSON.stringify(e);
-  return A(e, (0, r.useCallback)(() => O(t.current), [n]))
+  return v(e, (0, r.useCallback)(() => O(t.current), [n]))
 }
 
 function T(e) {

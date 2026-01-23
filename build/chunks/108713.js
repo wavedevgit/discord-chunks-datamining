@@ -2,14 +2,14 @@
 /** chunk id: 108713, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Fc: () => S,
-  JS: () => v,
+  Fc: () => I,
+  JS: () => A,
   Jm: () => R,
   Uc: () => N,
   VP: () => D,
-  VR: () => I,
+  VR: () => S,
   ZG: () => O,
-  m9: () => A
+  m9: () => v
 }), require("./321073.js"), require("./896048.js");
 var Chunk216348 = require("./216348.js"),
   Chunk213270 = require("./213270.js"),
@@ -36,7 +36,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n, r;
   d.default.track(m.HAw.REMOTE_COMMAND_SENT, {
     command_type: e,
@@ -74,14 +74,14 @@ async function O() {
   }
 }
 
-function A(e) {
+function v(e) {
   s.h.dispatch({
     type: "REMOTE_SESSION_CONNECT",
     sessionId: e
   })
 }
 
-function v(e, t) {
+function A(e, t) {
   let {
     selfMute: n,
     selfDeaf: r
@@ -94,30 +94,30 @@ function v(e, t) {
       self_mute: n,
       self_deaf: r
     }
-  }), y("VOICE_STATE_UPDATE", e)
+  }), b("VOICE_STATE_UPDATE", e)
 }
 
-function S(e) {
+function I(e) {
   s.h.dispatch({
     type: "REMOTE_COMMAND",
     sessionId: e,
     payload: {
       type: "DISCONNECT"
     }
-  }), y("DISCONNECT", e), O()
+  }), b("DISCONNECT", e), O()
 }
 
-function I(e, t, n, r) {
+function S(e, t, n, r) {
   let i = (0, l.o)(n);
   null != i && (s.h.dispatch({
     type: "REMOTE_COMMAND",
     sessionId: e,
-    payload: b({
+    payload: y({
       type: "AUDIO_SETTINGS_UPDATE",
       context: i,
       id: t
     }, r)
-  }), y("AUDIO_SETTINGS_UPDATE", e))
+  }), b("AUDIO_SETTINGS_UPDATE", e))
 }
 async function T() {
   let e;

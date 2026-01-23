@@ -14,7 +14,7 @@ var Chunk264572 = require("./264572.js"),
   Chunk546983 = require("./546983.js"),
   Chunk652215 = require("./652215.js");
 
-function f(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,9 +22,9 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = Chunk837921.Ay.requireModule("discord_rpc").RPCIPC,
-  A = new Chunk626584.A("RPCServer:IPC"),
-  g = {
+let g = Chunk837921.Ay.requireModule("discord_rpc").RPCIPC,
+  f = new Chunk626584.A("RPCServer:IPC"),
+  m = {
     HANDSHAKE: 0,
     FRAME: 1,
     CLOSE: 2,
@@ -32,23 +32,23 @@ let h = Chunk837921.Ay.requireModule("discord_rpc").RPCIPC,
     PONG: 4
   };
 
-function m(e, t) {
+function A(e, t) {
   null != e.setHandshakeComplete ? e.setHandshakeComplete(t) : e._didHandshake = t
 }
 
-function b(e) {
+function _(e) {
   return null != e.getHandshakeComplete ? e.getHandshakeComplete() : e._didHandshake
 }
 
-function _(e) {
+function b(e) {
   return new Promise((t, n) => {
-    "string" == typeof e && (e = h.net.createConnection(e));
+    "string" == typeof e && (e = g.net.createConnection(e));
     let r = new O(e, "json");
     e.on("data", t => {
       try {
         r.read(t)
       } catch (t) {
-        e.end(E(g.CLOSE, {
+        e.end(E(m.CLOSE, {
           code: 1003,
           message: t.message
         })), e.destroy()
@@ -56,7 +56,7 @@ function _(e) {
     });
     let i = () => {
         try {
-          e.end(E(g.CLOSE, {
+          e.end(E(m.CLOSE, {
             code: p.YI$.CLOSE_NORMAL,
             message: "test client going away"
           })), e.destroy()
@@ -71,7 +71,7 @@ function _(e) {
       }, e => {
         throw i(), e
       });
-    return e.write(E(g.PING, a().uniqueId())), l.then(t, n)
+    return e.write(E(m.PING, a().uniqueId())), l.then(t, n)
   })
 }
 
@@ -87,10 +87,10 @@ class O extends Chunk313731.A {
     return e.copy(i, 0, t, n), i
   }
   send(e) {
-    A.info("Socket Emit: ".concat(this.id), (0, c.A)(e)), this.socket.write(E(g.FRAME, e))
+    f.info("Socket Emit: ".concat(this.id), (0, c.A)(e)), this.socket.write(E(m.FRAME, e))
   }
   close(e, t) {
-    this.socket.end(E(g.CLOSE, {
+    this.socket.end(E(m.CLOSE, {
       code: e,
       message: t
     })), this.socket.destroy()
@@ -107,7 +107,7 @@ class O extends Chunk313731.A {
         if (this.currentHeader = {
             opcode: this.messageBuffer.readInt32LE(0),
             size: this.messageBuffer.readInt32LE(4)
-          }, !Object.values(g).includes(this.currentHeader.opcode) || this.currentHeader.size < 0) throw Error("protocol error");
+          }, !Object.values(m).includes(this.currentHeader.opcode) || this.currentHeader.size < 0) throw Error("protocol error");
         if (this.currentHeader.size > 3145728) throw Error("message too large");
         this.messageBuffer = this.copyBuffer(this.messageBuffer, 8, this.messageBuffer.byteLength)
       }
@@ -119,41 +119,41 @@ class O extends Chunk313731.A {
   }
   dispatchMessage(e, t, n) {
     switch (t) {
-      case g.PING:
-        e.emit("ping", n), e.write(E(g.PONG, n));
+      case m.PING:
+        e.emit("ping", n), e.write(E(m.PONG, n));
         break;
-      case g.PONG:
+      case m.PONG:
         e.emit("pong", n);
         break;
-      case g.HANDSHAKE:
+      case m.HANDSHAKE:
         this.handleHandshake(e, n), e.emit("handshake", n);
         break;
-      case g.FRAME:
-        if (!b(e)) throw Error("did not handshake");
+      case m.FRAME:
+        if (!_(e)) throw Error("did not handshake");
         e.emit("request", n);
         break;
-      case g.CLOSE:
-        e.end(E(g.CLOSE, {
+      case m.CLOSE:
+        e.end(E(m.CLOSE, {
           code: p.YI$.CLOSE_NORMAL,
           message: "client disconnect"
         })), e.destroy()
     }
   }
   handleHandshake(e, t) {
-    if (b(e)) throw Error("already did handshake");
-    this.clientId = t.client_id, this.checkRpcVersion(+t.v), m(e, true)
+    if (_(e)) throw Error("already did handshake");
+    this.clientId = t.client_id, this.checkRpcVersion(+t.v), A(e, true)
   }
   constructor(e, t) {
-    super("ipc", p.dL4, t), f(this, "messageBuffer", r.Buffer.alloc(0)), f(this, "currentHeader", null), f(this, "MAX_BUFFER_SIZE", 5242880), f(this, "socket", true), f(this, "clientId", null), this.socket = e, m(e, false)
+    super("ipc", p.dL4, t), h(this, "messageBuffer", r.Buffer.alloc(0)), h(this, "currentHeader", null), h(this, "MAX_BUFFER_SIZE", 5242880), h(this, "socket", true), h(this, "clientId", null), this.socket = e, A(e, false)
   }
 }
 class y extends Chunk143236.EventEmitter {
   handleConnection(e) {
     let t = new O(e, "json"),
       n = setTimeout(() => {
-        A.warn("Handshake timeout for connection, closing socket");
+        f.warn("Handshake timeout for connection, closing socket");
         try {
-          e.end(E(g.CLOSE, {
+          e.end(E(m.CLOSE, {
             code: p.YI$.CLOSE_ABNORMAL,
             message: "Handshake timeout"
           }))
@@ -167,7 +167,7 @@ class y extends Chunk143236.EventEmitter {
       try {
         t.read(r.Buffer.from(i))
       } catch (t) {
-        clearTimeout(n), A.error("Socket Error: ".concat(t.message)), e.end(E(g.CLOSE, {
+        clearTimeout(n), f.error("Socket Error: ".concat(t.message)), e.end(E(m.CLOSE, {
           code: p.YI$.CLOSE_UNSUPPORTED,
           message: t.message
         })), e.destroy()
@@ -175,11 +175,11 @@ class y extends Chunk143236.EventEmitter {
     }), e.once("handshake", () => {
       clearTimeout(n);
       let r = t.clientId;
-      A.info("Socket Opened: ".concat(t.id)), e.on("error", e => A.error("Socket Error: ".concat(e.message))), e.on("close", () => {
-        A.info("Socket Close: ".concat(t.id)), this.emit("disconnect", t)
+      f.info("Socket Opened: ".concat(t.id)), e.on("error", e => f.error("Socket Error: ".concat(e.message))), e.on("close", () => {
+        f.info("Socket Close: ".concat(t.id)), this.emit("disconnect", t)
       }), (0, d.j7)(t, null, r).then(() => {
         e.on("request", e => {
-          A.info("Socket Message: ".concat(t.id), (0, c.A)(e)), this.emit("request", t, e)
+          f.info("Socket Message: ".concat(t.id), (0, c.A)(e)), this.emit("request", t, e)
         }), this.emit("connect", t)
       }).catch(e => {
         let {
@@ -192,10 +192,10 @@ class y extends Chunk143236.EventEmitter {
   }
   constructor() {
     super();
-    const e = h.net.createServer(e => this.handleConnection(e));
-    e.on("error", e => A.error("Error: ".concat(e.message))), h.getAvailableSocket(_).then(t => {
+    const e = g.net.createServer(e => this.handleConnection(e));
+    e.on("error", e => f.error("Error: ".concat(e.message))), g.getAvailableSocket(b).then(t => {
       e.listen(t, () => {
-        ("function" == typeof e.listening ? e.listening() : e.listening) && A.info("Starting on ".concat(e.address()))
+        ("function" == typeof e.listening ? e.listening() : e.listening) && f.info("Starting on ".concat(e.address()))
       })
     })
   }

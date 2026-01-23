@@ -19,9 +19,9 @@ function d(e) {
     details: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.ph,
+    className: c.ph,
     children: [(0, r.jsxs)("div", {
-      className: o.Ly,
+      className: c.Ly,
       children: [(0, r.jsx)(l.Heading, {
         variant: "text-md/semibold",
         color: "text-strong",
@@ -32,12 +32,12 @@ function d(e) {
         children: n
       }) : n]
     }), (0, r.jsx)(i.m, {
-      text: c.intl.string(c.t.NQ4nCp),
+      text: o.intl.string(o.t.NQ4nCp),
       children: (0, r.jsx)(s.A, {
         checked: true,
         disabled: true,
         onChange: a.tE,
-        className: o.R0
+        className: c.R0
       })
     })]
   })

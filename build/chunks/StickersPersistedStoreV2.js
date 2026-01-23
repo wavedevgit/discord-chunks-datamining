@@ -57,40 +57,40 @@ let g = {
 };
 Chunk927813.A.Millis.DAY;
 let E = 20,
-  b = new Chunk283047.A({
+  y = new Chunk283047.A({
     computeBonus: () => 100,
     lookupKey: e => d.A.getStickerById(e),
     afterCompute: () => {},
     numFrequentlyItems: E
   }),
-  y = () => {
-    d.A.isLoaded && b.compute()
+  b = () => {
+    d.A.isLoaded && y.compute()
   },
   O = e => {
     let {
       stickerIds: t
     } = e;
     null == t || t.forEach(e => {
-      b.track(e), g.pendingUsages.push({
+      y.track(e), g.pendingUsages.push({
         key: e,
         timestamp: Date.now()
       })
-    }), y()
+    }), b()
   },
-  A = () => {
-    y()
+  v = () => {
+    b()
   };
 
-function v() {
+function A() {
   var e;
   let t = null == (e = c.A.frecencyWithoutFetchingLatest.stickerFrecency) ? true : e.stickers;
   if (null == t) returnfalse;
-  b.overwriteHistory(a().mapValues(t, e => m(_({}, e), {
+  y.overwriteHistory(a().mapValues(t, e => m(_({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), g.pendingUsages)
 }
 
-function S(e) {
+function I(e) {
   let {
     settings: {
       type: t
@@ -100,9 +100,9 @@ function S(e) {
   if (t !== f.oD.FRECENCY_AND_FAVORITES_SETTINGS || !n) returnfalse;
   g.pendingUsages = []
 }
-class I extends(r = Chunk311907.Ay.PersistedStore) {
+class S extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    this.waitFor(d.A, c.A), null != e && (g = e), this.syncWith([d.A], A), this.syncWith([c.A], v)
+    this.waitFor(d.A, c.A), null != e && (g = e), this.syncWith([d.A], v), this.syncWith([c.A], A)
   }
   getState() {
     return g
@@ -111,11 +111,11 @@ class I extends(r = Chunk311907.Ay.PersistedStore) {
     return g.pendingUsages.length > 0
   }
   get stickerFrecencyWithoutFetchingLatest() {
-    return b
+    return y
   }
 }
-p(I, "displayName", "StickersPersistedStore"), p(I, "persistKey", "StickersPersistedStoreV2");
-let T = new I(Chunk73153.h, {
+p(S, "displayName", "StickersPersistedStore"), p(S, "persistKey", "StickersPersistedStoreV2");
+let T = new S(Chunk73153.h, {
   STICKER_TRACK_USAGE: O,
-  USER_SETTINGS_PROTO_UPDATE: S
+  USER_SETTINGS_PROTO_UPDATE: I
 })

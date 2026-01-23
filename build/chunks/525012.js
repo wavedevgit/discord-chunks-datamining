@@ -20,14 +20,14 @@ let a = 0x3842494d,
 
 function _(e, t, n) {
   try {
-    if (Array.isArray(e)) return b(new DataView(Uint8Array.from(e).buffer), {
+    if (Array.isArray(e)) return y(new DataView(Uint8Array.from(e).buffer), {
       size: e.length
     }, 0, n);
     let {
       naaBlock: r,
       dataOffset: i
     } = h(e, t);
-    return b(e, r, i, n)
+    return y(e, r, i, n)
   } catch (e) {
     return {}
   }
@@ -64,14 +64,14 @@ function E(e) {
   return +(e.size % 2 != 0)
 }
 
-function b(e, t, n, r) {
+function y(e, t, n, r) {
   let i, a = {},
     s = n + t.size;
   for (; n < s && n < e.byteLength;) {
     let {
       tag: t,
       tagSize: s
-    } = y(e, n, a, i, r);
+    } = b(e, n, a, i, r);
     if (null === t) break;
     t && ("encoding" in t && (i = t.encoding), true === a[t.name] || true === t.repeatable ? a[t.name] = {
       id: t.id,
@@ -90,7 +90,7 @@ function b(e, t, n, r) {
   return a
 }
 
-function y(e, t, n, i, a) {
+function b(e, t, n, i, a) {
   let s = 1,
     o = 3;
   if (O(e, t)) return {
@@ -103,10 +103,10 @@ function y(e, t, n, i, a) {
     tag: true,
     tagSize: c
   };
-  let u = A(e, t + f, c),
+  let u = v(e, t + f, c),
     d = {
       id: l,
-      name: v(r.A.iptc[l], l, u),
+      name: A(r.A.iptc[l], l, u),
       value: u,
       description: T(r.A.iptc[l], u, n, i)
     };
@@ -121,21 +121,21 @@ function O(e, t) {
   return e.getUint8(t) !== n
 }
 
-function A(e, t, n) {
+function v(e, t, n) {
   let r = [];
   for (let i = 0; i < n; i++) r.push(e.getUint8(t + i));
   return r
 }
 
-function v(e, t, n) {
-  return e ? S(e) ? e : I(e) ? e.name(n) : e.name : `undefined-${t}`
-}
-
-function S(e) {
-  return "string" == typeof e
+function A(e, t, n) {
+  return e ? I(e) ? e : S(e) ? e.name(n) : e.name : `undefined-${t}`
 }
 
 function I(e) {
+  return "string" == typeof e
+}
+
+function S(e) {
   return "function" == typeof e.name
 }
 

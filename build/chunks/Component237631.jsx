@@ -2,7 +2,7 @@
 /** chunk id: 237631, original params: e,t,n (module,exports,require) **/
 let r, l;
 require.d(exports, {
-  A: () => f
+  A: () => p
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,19 +15,19 @@ let u = null;
 function d(e) {
   null != r && e ? r() : null != l && l(), r = null, l = null
 }
-let f = {
+let p = {
   init() {
-    s.h.subscribe("PREMIUM_REQUIRED_MODAL_OPEN", e => {
+    a.h.subscribe("PREMIUM_REQUIRED_MODAL_OPEN", e => {
       let t;
-      d(false), u = e.context, r = e.resolve, l = e.reject, c.QCW === e.context && (t = false, (0, a.mMO)(async () => {
+      d(false), u = e.context, r = e.resolve, l = e.reject, c.QCW === e.context && (t = false, (0, s.mMO)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("12206"), n.e("24806"), n.e("48403")]).then(n.bind(n, 183742));
         return n => {
           var r, l;
           let {
-            onClose: a
-          } = n, s = function(e, t) {
+            onClose: s
+          } = n, a = function(e, t) {
             if (null == e) return {};
             var n, r, l, i = {};
             if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -61,9 +61,9 @@ let f = {
               })
             }
             return e
-          }({}, s), l = l = {
+          }({}, a), l = l = {
             onClose: e => {
-              t = e, a()
+              t = e, s()
             }
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
@@ -81,12 +81,12 @@ let f = {
           (0, o.O)(t)
         }
       }))
-    }), s.h.subscribe("PREMIUM_REQUIRED_MODAL_CLOSE", e => {
+    }), a.h.subscribe("PREMIUM_REQUIRED_MODAL_CLOSE", e => {
       let {
         shouldContinue: t
       } = e;
       u = null, d(t)
-    }), s.h.subscribe("OVERLAY_SET_INPUT_LOCKED", e => {
+    }), a.h.subscribe("OVERLAY_SET_INPUT_LOCKED", e => {
       let {
         locked: t
       } = e;

@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk841549 = require("./841549.jsx"),
   Chunk560936 = require("./560936.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,14 +30,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -54,25 +54,25 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function v(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = S(e, t), Object.getOwnPropertySymbols)
+  if (a = I(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function S(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -80,7 +80,7 @@ function S(e, t) {
   return i
 }
 
-function I(e, t) {
+function S(e, t) {
   return i.useCallback(n => {
     let r = m.A.getChannel(t);
     null != r && null != e && (0, g.wQ)(n, e, r)
@@ -93,9 +93,9 @@ function T(e) {
     channelId: n,
     guildId: m,
     messageId: g,
-    stopPropagation: b = false,
+    stopPropagation: y = false,
     ariaLabel: O,
-    enableDisplayNameStyles: S = false
+    enableDisplayNameStyles: I = false
   } = e, T = i.useRef(null), {
     analyticsLocations: C
   } = (0, c.Ay)(l.A.USERNAME), N = (0, _.Ay)(m, null == t ? true : t.id), R = (0, u.A)({
@@ -103,17 +103,17 @@ function T(e) {
     guildId: m
   }), w = (0, p.a)({
     displayNameStyles: R
-  }), P = I(t, n), D = i.useContext(s.C);
+  }), P = S(t, n), D = i.useContext(s.C);
   return (0, E.A)({
     subscribeToGroupId: g,
     authorId: null == t ? true : t.id,
-    shouldSubscribe: S && null != R && null == m
+    shouldSubscribe: I && null != R && null == m
   }), i.useCallback(e => (i, s) => {
     let l = null == e ? true : e.colorStrings,
       u = N && null != l && null != l.primaryColor && null != l.secondaryColor,
       p = (t, n) => {
         var s, c, p;
-        if (!S || null == R || null != m) return (0, r.jsx)(o.V30, A(y({}, null != t ? t : {}), {
+        if (!I || null == R || null != m) return (0, r.jsx)(o.V30, v(b({}, null != t ? t : {}), {
           ref: T,
           onContextMenu: P,
           name: null != (c = (0, o.Oer)(i)) ? c : "",
@@ -125,7 +125,7 @@ function T(e) {
         }));
         {
           let e = (null == D ? true : D.animate) || (null == n ? true : n.isShown) ? d.G.ANIMATED : d.G.PLAIN;
-          return (0, r.jsx)(a.Anchor, A(y({}, null != t ? t : {}), {
+          return (0, r.jsx)(a.Anchor, v(b({}, null != t ? t : {}), {
             ref: T,
             onContextMenu: P,
             "aria-label": O,
@@ -140,7 +140,7 @@ function T(e) {
         }
       },
       _ = e => t => {
-        b && null != t && t.stopPropagation(), e(t)
+        y && null != t && t.stopPropagation(), e(t)
       };
     return (0, r.jsx)(c.f5, {
       value: C,
@@ -155,12 +155,12 @@ function T(e) {
         children: (e, t) => {
           let [n, ...r] = [e, t], {
             onClick: i
-          } = n, a = v(n, ["onClick"]), [s] = r;
-          return p(y({
+          } = n, a = A(n, ["onClick"]), [s] = r;
+          return p(b({
             onClick: _(i)
           }, a), s)
         }
       }) : p(true, true)
     }, s)
-  }, [C, t, n, m, g, P, b, O, N, w, null == D ? true : D.animate, R, S])
+  }, [C, t, n, m, g, P, y, O, N, w, null == D ? true : D.animate, R, I])
 }

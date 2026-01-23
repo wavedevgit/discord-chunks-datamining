@@ -82,13 +82,13 @@ function m(e) {
     multiSelect: m,
     emptyStateText: g,
     emptyStateHeader: E,
-    onQueryChange: b
-  } = e, y = _(e, ["children", "placeholder", "value", "onChange", "onClose", "className", "multiSelect", "emptyStateText", "emptyStateHeader", "onQueryChange"]), O = i.useCallback(e => {
+    onQueryChange: y
+  } = e, b = _(e, ["children", "placeholder", "value", "onChange", "onClose", "className", "multiSelect", "emptyStateText", "emptyStateHeader", "onQueryChange"]), O = i.useCallback(e => {
     u(e), m || null == f || f()
   }, [u, f, m]);
   return (0, r.jsx)(o.l, {
     className: s()(c.kL, c.XG, h),
-    children: (0, r.jsx)(l.G3, p(d({}, y), {
+    children: (0, r.jsx)(l.G3, p(d({}, b), {
       value: a,
       multiSelect: m,
       onChange: O,
@@ -97,7 +97,7 @@ function m(e) {
       listClassName: c.p_,
       emptyStateText: g,
       emptyStateHeader: E,
-      onQueryChange: b
+      onQueryChange: y
     }))
   })
 }

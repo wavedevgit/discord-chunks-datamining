@@ -1,7 +1,7 @@
 /** Chunk was on 77986 **/
 /** chunk id: 834991, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => k
+  A: () => P
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -41,7 +41,7 @@ function y(e) {
   return e
 }
 
-function _(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,10 +60,10 @@ function A(e) {
   } = e;
   return (0, l.jsxs)("div", {
     className: m.do,
-    children: [(0, l.jsx)(o.A, {
+    children: [(0, l.jsx)(d.A, {
       children: (0, l.jsx)("div", {
         className: m.n1,
-        children: (0, l.jsx)(c.nFg, {
+        children: (0, l.jsx)(o.nFg, {
           size: "custom",
           color: "currentColor",
           height: 40,
@@ -77,7 +77,7 @@ function A(e) {
 
 function O() {
   return (0, l.jsx)(A, {
-    children: (0, l.jsx)(c.Heading, {
+    children: (0, l.jsx)(o.Heading, {
       color: "text-strong",
       variant: "heading-xl/semibold",
       className: m.DD,
@@ -88,7 +88,7 @@ function O() {
 
 function N() {
   return (0, l.jsx)(A, {
-    children: (0, l.jsx)(c.Heading, {
+    children: (0, l.jsx)(o.Heading, {
       color: "text-default",
       variant: "heading-md/semibold",
       className: m.JU,
@@ -97,7 +97,7 @@ function N() {
   })
 }
 
-function E(e) {
+function C(e) {
   let {
     count: t
   } = e;
@@ -105,14 +105,14 @@ function E(e) {
     className: m.f0,
     children: [(0, l.jsx)("div", {
       className: s()(m.Pc, m.uY),
-      children: (0, l.jsx)(c.nFg, {
+      children: (0, l.jsx)(o.nFg, {
         size: "custom",
         color: "currentColor",
         height: 14,
         width: 14,
         className: m.Kk
       })
-    }), (0, l.jsx)(c.Text, {
+    }), (0, l.jsx)(o.Text, {
       color: "text-default",
       variant: "text-md/normal",
       children: p.intl.format(p.t.BdQTfR, {
@@ -122,61 +122,61 @@ function E(e) {
   })
 }
 
-function C(e) {
+function E(e) {
   let {
     eventUser: t,
     guildId: n,
     onContextMenu: i
-  } = e, u = r.useRef(null), o = (0, a.bG)([v.default], () => v.default.getUser(t.user_id)), j = (0, a.bG)([h.A, b.A, g.default], () => t.user_id === g.default.getId() ? h.A.getStatus() : b.A.getStatus(t.user_id, n), [t.user_id, n]);
-  return null == o ? null : (0, l.jsx)(f.A, {
+  } = e, u = r.useRef(null), d = (0, c.bG)([v.default], () => v.default.getUser(t.user_id)), j = (0, c.bG)([h.A, f.A, g.default], () => t.user_id === g.default.getId() ? h.A.getStatus() : f.A.getStatus(t.user_id, n), [t.user_id, n]);
+  return null == d ? null : (0, l.jsx)(_.A, {
     targetElementRef: u,
     userId: t.user_id,
     guildId: n,
     position: "left",
     spacing: 16,
     children: (e, r) => {
-      var a;
+      var c;
       let {
-        isShown: f
+        isShown: _
       } = r;
-      return (0, l.jsxs)(c.DUT, _(y({
+      return (0, l.jsxs)(o.DUT, b(y({
         innerRef: u,
         className: s()(m.f0, m.fv, {
-          [m.wH]: f
+          [m.wH]: _
         }),
-        onContextMenu: e => i(e, o)
+        onContextMenu: e => i(e, d)
       }, e), {
-        children: [(0, l.jsx)(c.euF, {
-          src: o.getAvatarURL(n, 24),
-          "aria-label": o.username,
-          size: c._3J.SIZE_24,
+        children: [(0, l.jsx)(o.euF, {
+          src: d.getAvatarURL(n, 24),
+          "aria-label": d.username,
+          size: o._3J.SIZE_24,
           className: m.uY,
           status: j
-        }), (0, l.jsx)(d.A, {
-          user: o,
+        }), (0, l.jsx)(a.A, {
+          user: d,
           className: m.sY,
           discriminatorClass: m.XU,
-          nick: null == (a = t.member) ? true : a.nick
+          nick: null == (c = t.member) ? true : c.nick
         })]
       }))
     }
   })
 }
 
-function P(e) {
+function k(e) {
   let {
     eventUsers: t,
     guildId: n,
     usersNotShownCount: r = 0,
     onContextMenu: i
   } = e;
-  return (0, l.jsxs)(c.IpV, {
+  return (0, l.jsxs)(o.IpV, {
     className: m.DK,
-    children: [t.map(e => (0, l.jsx)(C, {
+    children: [t.map(e => (0, l.jsx)(E, {
       guildId: n,
       eventUser: e,
       onContextMenu: i
-    }, e.user_id)), r > 0 && (0, l.jsx)(E, {
+    }, e.user_id)), r > 0 && (0, l.jsx)(C, {
       count: r
     })]
   })
@@ -207,32 +207,32 @@ function S(e) {
   })
 }
 
-function k(e) {
+function P(e) {
   let {
     guildEvent: t,
     recurrenceId: r,
     eventUsers: i,
     loading: s,
-    error: a,
-    containerHeight: d
-  } = e, o = (0, j.A)(t.guild_id, t.id, r);
+    error: c,
+    containerHeight: a
+  } = e, d = (0, j.A)(t.guild_id, t.id, r);
   if (s && 0 === i.length) return (0, l.jsx)(S, {
-    height: d,
-    children: (0, l.jsx)(c.y$y, {
-      type: c.y$y.Type.SPINNING_CIRCLE,
+    height: a,
+    children: (0, l.jsx)(o.y$y, {
+      type: o.y$y.Type.SPINNING_CIRCLE,
       className: m.u1
     })
   });
-  if (null != a && 0 === i.length) return (0, l.jsx)(S, {
-    height: d,
+  if (null != c && 0 === i.length) return (0, l.jsx)(S, {
+    height: a,
     children: (0, l.jsx)(N, {})
   });
-  let f = 0;
-  return i.length >= x.C1 && o > x.C1 && (f = Math.max(o - i.length, 0)), 0 === i.length ? (0, l.jsx)(S, {
-    height: d,
+  let _ = 0;
+  return i.length >= x.C1 && d > x.C1 && (_ = Math.max(d - i.length, 0)), 0 === i.length ? (0, l.jsx)(S, {
+    height: a,
     children: (0, l.jsx)(O, {})
   }) : (0, l.jsx)(I, {
-    children: (0, l.jsx)(P, {
+    children: (0, l.jsx)(k, {
       eventUsers: i,
       guildId: t.guild_id,
       onContextMenu: function(e, t) {
@@ -240,12 +240,12 @@ function k(e) {
           let {
             default: e
           } = await Promise.all([n.e("97262"), n.e("32418"), n.e("8893")]).then(n.bind(n, 668569));
-          return n => (0, l.jsx)(e, _(y({}, n), {
+          return n => (0, l.jsx)(e, b(y({}, n), {
             user: t
           }))
         })
       },
-      usersNotShownCount: f
+      usersNotShownCount: _
     })
   })
 }

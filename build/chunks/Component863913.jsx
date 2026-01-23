@@ -2,8 +2,8 @@
 /** chunk id: 863913, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => p,
-  f: () => g
+  A: () => b,
+  f: () => m
 });
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,7 +22,7 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,18 +34,18 @@ function f(e) {
   }
   return e
 }
-var g = ((r = {})[r.RIGHT = false] = "RIGHT", r[r.LEFT = 1] = "LEFT", r);
-let b = {
+var m = ((r = {})[r.RIGHT = false] = "RIGHT", r[r.LEFT = 1] = "LEFT", r);
+let p = {
   friction: 10,
   tension: 40,
   overshootClamping: true
 };
-class m extends Chunk64700.PureComponent {
+class f extends Chunk64700.PureComponent {
   componentWillEnter(e) {
     var t, n;
-    null == (t = (n = this.props).onAnimationStart) || t.call(n), this._animated.setValue(-this.props.direction), c.A.spring(this._animated, f({
+    null == (t = (n = this.props).onAnimationStart) || t.call(n), this._animated.setValue(-this.props.direction), o.A.spring(this._animated, g({
       toValue: 0
-    }, b)).start(() => {
+    }, p)).start(() => {
       var t, n;
       e(), null == (t = (n = this.props).onAnimationEnd) || t.call(n)
     })
@@ -54,12 +54,12 @@ class m extends Chunk64700.PureComponent {
     this._animated.setValue(0)
   }
   componentWillLeave(e) {
-    c.A.spring(this._animated, f({
+    o.A.spring(this._animated, g({
       toValue: this.props.direction
-    }, b)).start(e)
+    }, p)).start(e)
   }
   getStyle() {
-    return c.A.accelerate({
+    return o.A.accelerate({
       transform: [{
         translateX: this._animated.interpolate({
           inputRange: [0, 1],
@@ -69,32 +69,32 @@ class m extends Chunk64700.PureComponent {
     })
   }
   render() {
-    return (0, i.jsx)(c.A.div, {
+    return (0, i.jsx)(o.A.div, {
       style: this.getStyle(),
       className: d.A,
       children: this.props.children
     })
   }
   constructor(e) {
-    super(e), u(this, "_animated", true), this._animated = new c.A.Value(false * e.direction)
+    super(e), u(this, "_animated", true), this._animated = new o.A.Value(false * e.direction)
   }
 }
-let p = e => {
+let b = e => {
   let {
     children: t,
     step: n,
     direction: r,
     className: l,
     onAnimationStart: s,
-    onAnimationEnd: c
+    onAnimationEnd: o
   } = e;
-  return (0, i.jsx)(o.F, {
+  return (0, i.jsx)(c.F, {
     component: "div",
     className: a()(d.Q, l),
-    children: (0, i.jsx)(m, {
+    children: (0, i.jsx)(f, {
       direction: r,
       onAnimationStart: s,
-      onAnimationEnd: c,
+      onAnimationEnd: o,
       children: t
     }, n)
   })

@@ -2,7 +2,7 @@
 /** chunk id: 111042, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S,
+  A: () => I,
   e: () => f
 });
 var r, Chunk735438 = require("./735438.js"),
@@ -77,11 +77,11 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   return a().sortBy(e, ["position", "id"])
 }
 
-function y(e) {
+function b(e) {
   return a().sortBy(e, ["position", "id"])
 }
 
@@ -93,7 +93,7 @@ function O(e) {
   } = e, i = g({
     surface: n,
     activeState: r
-  }), a = b(t.map(e => (e.application_directory_collection_items = y(e.application_directory_collection_items), e)));
+  }), a = y(t.map(e => (e.application_directory_collection_items = b(e.application_directory_collection_items), e)));
   _ = d(c({}, _), {
     [i]: a
   }), h = d(c({}, h), {
@@ -105,7 +105,7 @@ function O(e) {
   })
 }
 
-function A(e) {
+function v(e) {
   let {
     surface: t,
     activeState: n
@@ -117,7 +117,7 @@ function A(e) {
     })]: 2
   })
 }
-class v extends(r = Chunk311907.Ay.Store) {
+class A extends(r = Chunk311907.Ay.Store) {
   getLastFetchTimeMs(e) {
     let {
       surface: t,
@@ -150,9 +150,9 @@ class v extends(r = Chunk311907.Ay.Store) {
     })]) ? t : p
   }
 }
-l(v, "displayName", true);
-let S = new v(Chunk73153.h, {
+l(A, "displayName", true);
+let I = new A(Chunk73153.h, {
   APPLICATION_DIRECTORY_FETCH_COLLECTIONS: E,
   APPLICATION_DIRECTORY_FETCH_COLLECTIONS_SUCCESS: O,
-  APPLICATION_DIRECTORY_FETCH_COLLECTIONS_FAILURE: A
+  APPLICATION_DIRECTORY_FETCH_COLLECTIONS_FAILURE: v
 })

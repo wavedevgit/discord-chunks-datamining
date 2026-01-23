@@ -17,25 +17,25 @@ let h = function(e) {
   let {
     application: t,
     onButtonsVisibilityChange: n
-  } = e, h = a.useRef(null), m = a.useMemo(() => c.Ay.getApplicationIconURL({
+  } = e, h = l.useRef(null), m = l.useMemo(() => o.Ay.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     size: 96
-  }), [t]), b = a.useMemo(() => {
+  }), [t]), g = l.useMemo(() => {
     let e = [];
     return (0, s.b7)(t) && e.push(u.intl.string(u.t.LO4f0P)), (0, s.K4)(t) && (0 !== e.length && e.push("•"), e.push(u.intl.string(u.t["8z5B2U"]))), (0, s.ME)(t) && (0 !== e.length && e.push("•"), e.push(u.intl.string(u.t["5khEk8"]))), e
   }, [t]);
-  return (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)(o.A, {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(c.A, {
       application: t,
       bannerType: "detail",
       iconURL: m
-    }), (0, l.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: p.H,
       style: {
         height: 52
       },
-      children: (0, l.jsx)("img", {
+      children: (0, r.jsx)("img", {
         src: m,
         alt: "",
         className: p.my,
@@ -46,29 +46,29 @@ let h = function(e) {
           marginLeft: 28
         }
       })
-    }), (0, l.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       className: p.op,
-      children: [(0, l.jsxs)("div", {
+      children: [(0, r.jsxs)("div", {
         className: p.tJ,
-        children: [(0, l.jsx)(i.Heading, {
+        children: [(0, r.jsx)(a.Heading, {
           variant: "heading-xxl/bold",
           color: "text-strong",
           lineClamp: 1,
           children: t.name
-        }), (0, l.jsx)("div", {
+        }), (0, r.jsx)("div", {
           className: p.A7,
-          children: b.map((e, t) => (0, l.jsx)(i.Text, {
+          children: g.map((e, t) => (0, r.jsx)(a.Text, {
             className: p.MO,
             variant: "text-xs/normal",
             color: "text-muted",
             children: e
           }, t))
         })]
-      }), (0, l.jsx)(r.L, {
+      }), (0, r.jsx)(i.L, {
         innerRef: h,
         onChange: n,
         active: true,
-        children: (0, l.jsx)(d.A, {
+        children: (0, r.jsx)(d.A, {
           ref: h,
           application: t,
           size: "md"

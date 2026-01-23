@@ -188,7 +188,7 @@ function ee(e) {
   } = i.useMemo(() => (0, L.X2)(t, {
     fakeAppIconURL: Y
   }), [t]), {
-    trackItemImpressionRef: b
+    trackItemImpressionRef: y
   } = (0, k.A)({
     applicationId: t.id,
     applicationFlags: (0, L.$B)(t) ? t.flags : true,
@@ -196,7 +196,7 @@ function ee(e) {
     sectionPosition: l,
     sectionOverallPosition: c,
     promotionalLabel: (0, L.Ii)(t)
-  }), y = i.useMemo(() => {
+  }), b = i.useMemo(() => {
     let e = p ? H.Qz : H.kL;
     return s()(e, {
       [H.uS]: "row" !== h,
@@ -205,12 +205,12 @@ function ee(e) {
     }, _)
   }, [_, p, h]);
   return p ? (0, r.jsx)("div", {
-    ref: f ? b : true,
-    className: y,
+    ref: f ? y : true,
+    className: b,
     children: a
   }) : (0, r.jsx)(u.DUT, {
-    innerRef: f ? b : true,
-    className: y,
+    innerRef: f ? y : true,
+    className: b,
     onClick: n,
     onContextMenu: m,
     "aria-label": B.intl.formatToPlainString(B.t["zLhr9+"], {
@@ -264,13 +264,13 @@ function en(e) {
     description: E
   } = i.useMemo(() => (0, L.X2)(t, {
     fakeAppIconURL: Y
-  }), [t]), b = i.useMemo(() => null == E ? null : (0, M.SD)(E), [E]), y = (0, S.Ay)(m, ""), [O, v] = i.useState(false), I = i.useCallback(() => {
-    true === o && v(true)
-  }, [o]), T = _ || (0, L.NO)(t), C = "large_banner" === n || "medium_banner" === n, N = i.useCallback(() => v(false), []), R = (0, l.bG)([h.A, w.A], () => h.A.inDevModeForApplication(t.id) || w.A.inTestModeForApplication(t.id), [t.id]), P = (0, L.fl)(t);
+  }), [t]), y = i.useMemo(() => null == E ? null : (0, M.SD)(E), [E]), b = (0, I.Ay)(m, ""), [O, A] = i.useState(false), S = i.useCallback(() => {
+    true === o && A(true)
+  }, [o]), T = _ || (0, L.NO)(t), C = "large_banner" === n || "medium_banner" === n, N = i.useCallback(() => A(false), []), R = (0, l.bG)([h.A, w.A], () => h.A.inDevModeForApplication(t.id) || w.A.inTestModeForApplication(t.id), [t.id]), P = (0, L.fl)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [C ? (0, r.jsxs)("div", {
-      onMouseEnter: I,
-      onFocus: I,
+      onMouseEnter: S,
+      onFocus: S,
       onMouseLeave: N,
       onBlur: N,
       className: s()(H.zK, {
@@ -281,7 +281,7 @@ function en(e) {
         className: a,
         children: (0, r.jsx)(ea, {
           application: t,
-          fallbackColor: y,
+          fallbackColor: b,
           showVideo: O,
           disableFadeIn: c,
           overrideImageUrl: p
@@ -295,7 +295,7 @@ function en(e) {
             color: "text-strong",
             children: B.intl.string(B.t["/eVltv"])
           })
-        }), R && (0, r.jsx)(er, {}), P !== f.Hr.NONE && (0, r.jsx)(A.A, {
+        }), R && (0, r.jsx)(er, {}), P !== f.Hr.NONE && (0, r.jsx)(v.A, {
           labelType: P
         })]
       }) : null, (0, r.jsx)("div", {
@@ -336,7 +336,7 @@ function en(e) {
           variant: "text-sm/normal",
           color: "text-subtle",
           lineClamp: 1,
-          children: b
+          children: y
         })]
       }), "row" === n ? (0, r.jsx)("div", {
         className: H.ek
@@ -364,7 +364,7 @@ function ei(e) {
   if (!(null == n ? true : n.isStaff()) && !(null == n ? true : n.isStaffPersonal())) return null;
   let i = (0, L.Cx)(t);
   if (null == i || !(0, L.$B)(t)) return null;
-  let a = (0, b.l$)(t, i);
+  let a = (0, y.l$)(t, i);
   return null == a ? null : (0, r.jsx)(c.m, {
     __unsupportedReactNodeAsText: a,
     children: (0, r.jsx)("img", {
@@ -413,7 +413,7 @@ function es(e) {
     application: t,
     showVideo: n,
     disableFadeIn: a
-  } = e, o = (0, y.A)({
+  } = e, o = (0, b.A)({
     applicationId: t.id,
     size: 600,
     names: ["embedded_cover"],
@@ -436,7 +436,7 @@ function es(e) {
           [H.Q]: !n
         }),
         onAnimationEnd: () => n ? null : u(false),
-        children: (0, r.jsx)(I.A, {
+        children: (0, r.jsx)(S.A, {
           src: l,
           mediaLayoutType: F.dG.MOSAIC,
           loop: true,
@@ -506,7 +506,7 @@ function ec(e) {
   } = (0, g.A)(t);
   return {
     onClickAppCard: i.useCallback(e => {
-      e.stopPropagation(), (0, v.zV)(V.HAw.APPLICATION_COMMAND_SECTION_SELECTED, {
+      e.stopPropagation(), (0, A.zV)(V.HAw.APPLICATION_COMMAND_SECTION_SELECTED, {
         application_id: t.id,
         section_name: n,
         search_results_position: r,
@@ -549,9 +549,9 @@ function ed(e) {
     g = null != _ && _.isLaunching && _.componentId === f || h,
     {
       onActivityItemSelected: E,
-      activityAction: y,
+      activityAction: b,
       buttonVariant: O,
-      buttonText: A
+      buttonText: v
     } = (0, M.dn)({
       context: t,
       application: n,
@@ -560,7 +560,7 @@ function ed(e) {
       launchingComponentId: f,
       fetchesApplication: c
     });
-  return y === b.o6.START || y === b.o6.JOIN ? o ? (0, r.jsx)(J, X(z({}, d), {
+  return b === y.o6.START || b === y.o6.JOIN ? o ? (0, r.jsx)(J, X(z({}, d), {
     sectionName: s,
     application: n,
     onClick: E,
@@ -593,11 +593,11 @@ function ed(e) {
         disabled: p || h,
         onClick: E,
         "aria-label": B.intl.formatToPlainString(B.t["XjP/R+"], {
-          buttonText: A,
+          buttonText: v,
           applicationName: n.name
         }),
         loading: g,
-        text: A
+        text: v
       })
     })
   }))

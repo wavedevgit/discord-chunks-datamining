@@ -41,13 +41,13 @@ function g(e) {
   return e
 }
 let E = 5,
-  b = 7,
-  y = 864e5,
+  y = 7,
+  b = 864e5,
   O = 6048e5,
-  A = 12096e5,
-  v = 1,
-  S = 5,
-  I = .7,
+  v = 12096e5,
+  A = 1,
+  I = 5,
+  S = .7,
   T = .5;
 
 function C() {
@@ -76,9 +76,9 @@ function M(e, t) {
     r = new Date(e.getTime());
   r.setFullYear(t);
   let i = new Date(r.getTime());
-  i.setDate(r.getDate() - b);
+  i.setDate(r.getDate() - y);
   let a = new Date(r.getTime());
-  return a.setDate(r.getDate() + b), n > i && n < a
+  return a.setDate(r.getDate() + y), n > i && n < a
 }
 
 function k(e) {
@@ -97,7 +97,7 @@ function U() {
   } else
     for (let e of R) {
       let t = d.A.getUserAffinity(e);
-      null != t && t.dmProbability > I && w.add(e), null != t && t.dmProbability > T && P.add(e)
+      null != t && t.dmProbability > S && w.add(e), null != t && t.dmProbability > T && P.add(e)
     }
 }
 
@@ -161,7 +161,7 @@ function z() {
 
 function q() {
   let e = j();
-  N.giftUnreadNotificationLastDismissedTimes = N.giftUnreadNotificationLastDismissedTimes.filter(t => e - t <= 7 * y)
+  N.giftUnreadNotificationLastDismissedTimes = N.giftUnreadNotificationLastDismissedTimes.filter(t => e - t <= 7 * b)
 }
 
 function X(e) {
@@ -177,12 +177,12 @@ function Z(e) {
 
 function Q() {
   let e = j();
-  for (let t in N.messageGiftIntentLastShownMap) e - N.messageGiftIntentLastShownMap[t] > A && delete N.messageGiftIntentLastShownMap[t]
+  for (let t in N.messageGiftIntentLastShownMap) e - N.messageGiftIntentLastShownMap[t] > v && delete N.messageGiftIntentLastShownMap[t]
 }
 
 function $() {
   let e = j(),
-    t = y * b * 2;
+    t = b * y * 2;
   for (let n in N.profilePopoutGiftIntentsDismissMap) e - N.profilePopoutGiftIntentsDismissMap[n] > t && delete N.profilePopoutGiftIntentsDismissMap[n]
 }
 
@@ -272,9 +272,9 @@ class el extends(r = Chunk311907.Ay.PersistedStore) {
     q();
     let e = N.giftUnreadNotificationLastDismissedTimes;
     if (0 === e.length) returnfalse;
-    if (e.length >= S) returntrue;
+    if (e.length >= I) returntrue;
     let t = j();
-    return e.filter(e => t - e <= y).length >= v
+    return e.filter(e => t - e <= b).length >= A
   }
   canShowFriendsTabBadge() {
     return F()

@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk816695 = require("./816695.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,13 +38,13 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,53 +55,53 @@ function A(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = Chunk64700.forwardRef(function(e, t) {
+let I = Chunk64700.forwardRef(function(e, t) {
   let {
     type: n,
     channelId: a
   } = e, {
-    tooltipsWithKeybinds: y
+    tooltipsWithKeybinds: b
   } = h.C.useConfig({
     location: "ChannelAppLauncherButton"
-  }), A = (0, l.bG)([p.A], () => p.A.shouldShowPopup() && p.A.activeViewType() === n && p.A.activeChannelId() === a), {
-    Component: S,
-    events: I,
+  }), v = (0, l.bG)([p.A], () => p.A.shouldShowPopup() && p.A.activeViewType() === n && p.A.activeChannelId() === a), {
+    Component: I,
+    events: S,
     play: T
   } = (0, c.c)(), C = i.useContext(m.Ay);
   i.useEffect(() => {
     let e = () => {
-      I.onMouseEnter()
+      S.onMouseEnter()
     };
     return C.on("command-sentinel-typed", e), () => {
       C.off("command-sentinel-typed", e)
     }
-  }, [C, I]);
+  }, [C, S]);
   let N = i.useCallback(() => {
-      A ? f.k(_.Se.DISMISSED) : (f.R(_.s4.TEXT, n, true, a), d.LK()), T()
-    }, [A, n, a, T]),
-    R = (0, r.jsx)(S, {
+      v ? f.k(_.Se.DISMISSED) : (f.R(_.s4.TEXT, n, true, a), d.LK()), T()
+    }, [v, n, a, T]),
+    R = (0, r.jsx)(I, {
       size: "refresh_sm",
       color: "currentColor"
     });
   return (0, r.jsx)("div", {
-    className: s()(b.UD, g.KG),
+    className: s()(y.UD, g.KG),
     ref: t,
     children: (0, r.jsx)(u.m_, {
       text: E.intl.string(E.t.dHDxOF),
-      shouldShow: y,
-      children: (0, r.jsx)(o.DUT, v(O({
+      shouldShow: b,
+      children: (0, r.jsx)(o.DUT, A(O({
         tabIndex: 0,
-        className: s()(b.x6, {
-          [b.rK]: A
+        className: s()(y.x6, {
+          [y.rK]: v
         }),
         onClick: N,
         "aria-label": E.intl.string(E.t.erHFxI),
-        "aria-expanded": A,
+        "aria-expanded": v,
         "aria-haspopup": "dialog",
         focusProps: {
           offset: {
@@ -111,21 +111,21 @@ let S = Chunk64700.forwardRef(function(e, t) {
             right: false
           }
         }
-      }, I), {
+      }, S), {
         children: R
       }))
     })
   })
 });
 
-function I(e) {
+function S(e) {
   let {
     type: t,
     channelId: n
   } = e;
-  return (0, r.jsx)(S, {
+  return (0, r.jsx)(I, {
     type: t,
     channelId: n
   })
 }
-let T = Chunk64700.memo(I)
+let T = Chunk64700.memo(S)

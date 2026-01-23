@@ -67,21 +67,21 @@ function D(e) {
     topGuild: M,
     powerLevel: k,
     powerLevelPercentile: U
-  } = t, G = new Intl.NumberFormat(S.intl.currentLocale, {
+  } = t, G = new Intl.NumberFormat(I.intl.currentLocale, {
     notation: "compact",
     compactDisplay: "short",
     maximumFractionDigits: 2
-  }).format(w), V = new Intl.NumberFormat(S.intl.currentLocale, {
+  }).format(w), V = new Intl.NumberFormat(I.intl.currentLocale, {
     notation: "compact",
     compactDisplay: "short",
     maximumFractionDigits: 2
   }).format(x), F = (0, _.Xq)(D), B = (0, _.OW)(n), H = f.f[n], Y = (0, c.rdh)(H.primaryColor).hex(), W = (0, c.rdh)(H.secondaryColor).hex({
     opacity: .2
-  }), K = (0, s.bG)([b.A], () => b.A.getGuild(null == M ? true : M.guildId)), z = (0, A.jc)(), {
+  }), K = (0, s.bG)([y.A], () => y.A.getGuild(null == M ? true : M.guildId)), z = (0, v.jc)(), {
     enabled: q
   } = p.w.useConfig({
     location: "message_component"
-  }), X = new Intl.NumberFormat(S.intl.currentLocale, {
+  }), X = new Intl.NumberFormat(I.intl.currentLocale, {
     notation: "compact",
     compactDisplay: "short"
   }), Z = (0, _._V)(null != U ? U : 0), Q = (0, i.useMemo)(() => {
@@ -92,7 +92,7 @@ function D(e) {
   }, []), $ = () => {
     var e, t;
     let n = E.A.getChannel(null == z || null == (e = z.message) ? true : e.channel_id);
-    y.default.track(v.HAw.CHECKPOINT_CARD_CLICKED, P({
+    b.default.track(A.HAw.CHECKPOINT_CARD_CLICKED, P({
       other_user_id: null == z || null == (t = z.message) ? true : t.author.id
     }, (0, d.dI)(n), (0, d.H$)(null == n ? true : n.guild_id))), (0, h.A)("message_component")
   };
@@ -151,7 +151,7 @@ function D(e) {
             }), (0, r.jsx)(a.EYj, {
               variant: "text-sm/medium",
               className: T.KA,
-              children: S.intl.string(I.default["fn+gnp"])
+              children: I.intl.string(S.default["fn+gnp"])
             })]
           }) : (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(u.A, {
@@ -173,7 +173,7 @@ function D(e) {
             }), (0, r.jsx)(a.EYj, {
               variant: "text-sm/medium",
               className: T.KA,
-              children: S.intl.string(I.default["26V/4h"])
+              children: I.intl.string(S.default["26V/4h"])
             })]
           }) : (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("img", {
@@ -198,7 +198,7 @@ function D(e) {
             }), (0, r.jsx)(a.EYj, {
               variant: "text-sm/medium",
               className: T.KA,
-              children: S.intl.string(I.default.eoLmk1)
+              children: I.intl.string(S.default.eoLmk1)
             })]
           }) : (0, r.jsxs)(r.Fragment, {
             children: [null != K ? (0, r.jsx)(g.A, {
@@ -224,9 +224,9 @@ function D(e) {
       children: [(0, r.jsx)(a.DZT, {
         variant: "display-sm",
         className: T.DD,
-        children: S.intl.string(I.default["CdU/PF"])
+        children: I.intl.string(S.default["CdU/PF"])
       }), q ? (0, r.jsx)(l.m_, {
-        text: S.intl.string(I.default.r8GEbK),
+        text: I.intl.string(S.default.r8GEbK),
         "aria-label": false,
         children: (0, r.jsxs)(a.DUT, {
           className: T.lO,
@@ -234,7 +234,7 @@ function D(e) {
           children: [(0, r.jsx)(a.EYj, {
             variant: "text-sm/bold",
             className: T.Ic,
-            children: S.intl.string(S.t.I0v0Qv)
+            children: I.intl.string(I.t.I0v0Qv)
           }), (0, r.jsx)(a.KS6, {
             color: o.A.colors.BLACK,
             size: "xs"

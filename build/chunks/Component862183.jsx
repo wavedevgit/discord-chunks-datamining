@@ -46,8 +46,8 @@ function g(e) {
     application: h,
     onClick: g,
     query: E,
-    searchResultsPosition: b
-  } = e, y = i.useCallback(e => {
+    searchResultsPosition: y
+  } = e, b = i.useCallback(e => {
     if ((0, l.$B)(h)) {
       let t = h instanceof o.Ay ? h : o.Ay.createFromServer(h);
       (0, s.jA)(e, e => (0, r.jsx)(u.A, m({
@@ -56,29 +56,29 @@ function g(e) {
     }
   }, [h]), {
     iconURL: O,
-    name: A,
-    description: v
+    name: v,
+    description: A
   } = i.useMemo(() => (0, l.X2)(h, {
     fakeAppIconURL: _
-  }), [h]), S = i.useMemo(() => {
+  }), [h]), I = i.useMemo(() => {
     var e;
-    let t = null != (e = null == n ? true : n.displayDescription) ? e : v;
+    let t = null != (e = null == n ? true : n.displayDescription) ? e : A;
     return null == t ? null : (0, c.SD)(t, true)
-  }, [v, null == n ? true : n.displayDescription]), {
-    trackSearchResultsItemImpressionRef: I
+  }, [A, null == n ? true : n.displayDescription]), {
+    trackSearchResultsItemImpressionRef: S
   } = (0, f.A)({
     applicationId: h.id,
     commandId: null == n ? true : n.id,
     query: E,
-    searchResultsPosition: b
+    searchResultsPosition: y
   });
   return (0, r.jsx)(a.DUT, {
     className: p.vk,
     innerRef: e => {
-      I.current = e
+      S.current = e
     },
     onClick: g,
-    onContextMenu: y,
+    onContextMenu: b,
     children: (0, r.jsxs)(a.M1G, {
       className: p.ao,
       children: [(0, r.jsx)(d.A, {
@@ -92,18 +92,18 @@ function g(e) {
           variant: "heading-md/semibold",
           color: "text-strong",
           lineClamp: 1,
-          children: null != (t = null == n ? true : n.displayName) ? t : A
+          children: null != (t = null == n ? true : n.displayName) ? t : v
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "text-subtle",
           lineClamp: 1,
-          children: S
+          children: I
         })]
       }), null != n ? (0, r.jsx)(a.Text, {
         className: p.Pn,
         variant: "text-sm/normal",
         color: "text-subtle",
-        children: A
+        children: v
       }) : null, (0, r.jsx)("div", {
         className: p.V1
       })]

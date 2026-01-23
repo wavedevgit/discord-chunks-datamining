@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 849205, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,52 +18,52 @@ var Chunk417597 = require("./417597.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk638990 = require("./638990.js");
 
-function g(e) {
+function m(e) {
   let t = e.channel.getRecipientId(),
     n = e.channel.isSystemDM(),
-    g = (0, l.bG)([d.default], () => d.default.getUser(t)),
-    m = (0, l.bG)([c.A], () => c.A.getStatus(t)),
+    m = (0, l.bG)([d.default], () => d.default.getUser(t)),
+    b = (0, l.bG)([c.A], () => c.A.getStatus(t)),
     A = (0, l.bG)([c.A], () => c.A.isMobileOnline(t)),
     y = (0, l.bG)([u.A], () => u.A.getNickname(t)),
-    O = f.Ay.useUserTag(g),
-    j = (0, s.a)({
-      displayNameStyles: null == g ? true : g.displayNameStyles
+    _ = p.Ay.useUserTag(m),
+    O = (0, a.a)({
+      displayNameStyles: null == m ? true : m.displayNameStyles
     }),
-    v = (0, o.bG)({
+    j = (0, o.bG)({
       channelId: e.channel.id
     });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.AC4, {
-      children: h.intl.string(h.t.EJRzg7)
-    }), null != g && !n && (0, r.jsx)("div", {
-      children: (0, r.jsx)(a.euF, {
-        status: m,
+    children: [(0, r.jsx)(s.AC4, {
+      children: f.intl.string(f.t.EJRzg7)
+    }), null != m && !n && (0, r.jsx)("div", {
+      children: (0, r.jsx)(s.euF, {
+        status: b,
         isMobile: A,
-        className: b.my,
-        size: a._3J.SIZE_20,
-        "aria-label": f.Ay.getName(g),
-        src: g.getAvatarURL(true, 20)
+        className: g.my,
+        size: s._3J.SIZE_20,
+        "aria-label": p.Ay.getName(m),
+        src: m.getAvatarURL(true, 20)
       })
-    }), (0, r.jsx)(p.A.Title, {
+    }), (0, r.jsx)(h.A.Title, {
       level: e.level,
       onClick: e.handleClick,
       onContextMenu: e.handleContextMenu,
-      className: null != e.handleClick ? b.or : null,
+      className: null != e.handleClick ? g.or : null,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(i.m, {
-          text: O,
+          text: _,
           position: "bottom",
           children: (0, r.jsx)("span", {
-            className: j,
-            children: null != y ? y : f.Ay.getName(g)
+            className: O,
+            children: null != y ? y : p.Ay.getName(m)
           })
-        }), v && (0, r.jsx)(i.m, {
-          text: h.intl.string(h.t.QyZ4Td),
-          children: (0, r.jsx)(a.m5V, {
+        }), j && (0, r.jsx)(i.m, {
+          text: f.intl.string(f.t.QyZ4Td),
+          children: (0, r.jsx)(s.m5V, {
             size: "xs",
-            "aria-label": h.intl.string(h.t.VHXh8a),
-            color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
-            className: b.vW
+            "aria-label": f.intl.string(f.t.VHXh8a),
+            color: s.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
+            className: g.vW
           })
         })]
       })

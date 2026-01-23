@@ -2,7 +2,7 @@
 /** chunk id: 965304, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A,
+  A: () => v,
   e: () => O
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -31,13 +31,13 @@ function O() {
     s = (0, f.cg)(),
     l = null != (0, p.A)(),
     c = s || l,
-    u = (null == n ? true : n.trial_id) === b.Dw,
-    y = [];
-  c && y.push(o.M.BOGO_2025_NITRO_TAB_BADGE);
-  let [O, A] = (0, d.kn)(y, true, true);
+    u = (null == n ? true : n.trial_id) === y.Dw,
+    b = [];
+  c && b.push(o.M.BOGO_2025_NITRO_TAB_BADGE);
+  let [O, v] = (0, d.kn)(b, true, true);
   return i.useEffect(() => {
-    true === t && O === o.M.BOGO_2025_NITRO_TAB_BADGE && A(E.i.AUTO_DISMISS)
-  }, [A, t, O]), c ? e = (0, r.jsx)(m.A, {}) : null != a ? e = (0, r.jsx)(g.fY, {
+    true === t && O === o.M.BOGO_2025_NITRO_TAB_BADGE && v(E.i.AUTO_DISMISS)
+  }, [v, t, O]), c ? e = (0, r.jsx)(m.A, {}) : null != a ? e = (0, r.jsx)(g.fY, {
     isTabSelected: t,
     userDiscount: a,
     includesAmountOff: false
@@ -47,7 +47,7 @@ function O() {
   })), e
 }
 
-function A(e) {
+function v(e) {
   var t, n;
   let {
     decoration: i,
@@ -59,13 +59,13 @@ function A(e) {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: s()(y.gj, {
-        [y.wH]: o && !d
+      className: s()(b.gj, {
+        [b.wH]: o && !d
       }),
       children: [a, p]
     }), (0, r.jsx)("div", {
-      className: s()(y.Tp, {
-        [y._I]: !d && o
+      className: s()(b.Tp, {
+        [b._I]: !d && o
       })
     })]
   })

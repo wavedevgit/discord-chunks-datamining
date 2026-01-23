@@ -35,16 +35,16 @@ function f(e, t, n) {
   if ((0, l.D5)() && "expandedKeys" in t) {
     let e = t.keyMap.get(f.key);
     if (null != e) {
-      var E, b, y, O, A, v, S, I, T, C;
-      let n = (null == (E = e.props) ? true : E.UNSTABLE_childItems) || (null == (y = e.props) || null == (b = y.children) ? true : b.length) > t.userColumnCount;
+      var E, y, b, O, v, A, I, S, T, C;
+      let n = (null == (E = e.props) ? true : E.UNSTABLE_childItems) || (null == (b = e.props) || null == (y = b.children) ? true : y.length) > t.userColumnCount;
       g = {
         onKeyDown: r => {
           r.key === u[m] && t.selectionManager.focusedKey === e.key && n && "all" !== t.expandedKeys && !t.expandedKeys.has(e.key) ? (t.toggleKey(e.key), r.stopPropagation()) : r.key === d[m] && t.selectionManager.focusedKey === e.key && n && ("all" === t.expandedKeys || t.expandedKeys.has(e.key)) && (t.toggleKey(e.key), r.stopPropagation())
         },
         "aria-expanded": n ? "all" === t.expandedKeys || t.expandedKeys.has(f.key) : true,
         "aria-level": e.level,
-        "aria-posinset": (null != (S = e.indexOfType) ? S : 0) + 1,
-        "aria-setsize": e.level > 1 ? (null != (T = null == (O = (0, i.W)(null != (I = null == (A = t.keyMap.get(e.parentKey)) ? true : A.childNodes) ? I : [])) ? true : O.indexOfType) ? T : 0) + 1 : (null != (C = null == (v = (0, i.W)(t.collection.body.childNodes)) ? true : v.indexOfType) ? C : 0) + 1
+        "aria-posinset": (null != (I = e.indexOfType) ? I : 0) + 1,
+        "aria-setsize": e.level > 1 ? (null != (T = null == (O = (0, i.W)(null != (S = null == (v = t.keyMap.get(e.parentKey)) ? true : v.childNodes) ? S : [])) ? true : O.indexOfType) ? T : 0) + 1 : (null != (C = null == (A = (0, i.W)(t.collection.body.childNodes)) ? true : A.indexOfType) ? C : 0) + 1
       }
     }
   }

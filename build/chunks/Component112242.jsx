@@ -88,25 +88,25 @@ function G(e) {
   } = (0, g.RD)(G), {
     defaultPaymentSourceId: ei,
     hasFetchedPaymentSources: ea
-  } = (0, c.cf)([S.A], () => ({
-    defaultPaymentSourceId: S.A.defaultPaymentSourceId,
-    hasFetchedPaymentSources: S.A.hasFetchedPaymentSources
+  } = (0, c.cf)([I.A], () => ({
+    defaultPaymentSourceId: I.A.defaultPaymentSourceId,
+    hasFetchedPaymentSources: I.A.hasFetchedPaymentSources
   }));
   s()(null != K, "Expected selectedSkuId");
   let es = Y[K],
     eo = null == es ? true : es.eligiblePaymentGateways,
     el = W[K],
-    ec = null != B ? B : I.B,
+    ec = null != B ? B : S.B,
     eu = null != el ? el[ec] : null;
   s()(null != es, "SKU must exist and be fetched."), s()(null != G, "Application must exist.");
   let ed = (0, c.bG)([m.A, T.A], () => T.A.inTestModeForApplication(G.id) || m.A.inDevModeForApplication(G.id), [G.id]),
-    ef = (0, c.bG)([A.A], () => A.A.enabled),
-    ep = o.M.EEA_COUNTRIES.has(v.A.ipCountryCodeWithFallback),
+    ef = (0, c.bG)([v.A], () => v.A.enabled),
+    ep = o.M.EEA_COUNTRIES.has(A.A.ipCountryCodeWithFallback),
     e_ = V === P.h.PURCHASING || V === P.h.COMPLETED,
     eh = (0, D.W)(F, B),
     em = null != eh ? eh.type : null;
   i.useEffect(() => {
-    ea && B === ei && ei !== I.B && null == eu && (0, d.QX)(es.applicationId, es.id, ei, {
+    ea && B === ei && ei !== S.B && null == eu && (0, d.QX)(es.applicationId, es.id, ei, {
       isGift: J
     }).then(() => {
       Q(null)
@@ -114,12 +114,12 @@ function G(e) {
       Q(e)
     })
   }, [ei, ea, B, es.applicationId, es.id, eu, Q, J]);
-  let eg = null != eo && eo.length > 0 && (B === I.B || null === em) && $ ? y.f.SELECT_PAYMENT_METHOD : true,
+  let eg = null != eo && eo.length > 0 && (B === S.B || null === em) && $ ? b.f.SELECT_PAYMENT_METHOD : true,
     eE = es.productLine === j.EZt.SOCIAL_LAYER_GAME_ITEM,
-    eb = et && !eE;
+    ey = et && !eE;
   return (0, r.jsxs)("div", {
     className: k.Du,
-    children: [(0, r.jsx)(y.j, {
+    children: [(0, r.jsx)(b.j, {
       paymentRestrictionBannerType: eg
     }), ed ? (0, r.jsx)(p.A, {
       icon: (0, u.kHD)(C.A),
@@ -137,7 +137,7 @@ function G(e) {
       application: G,
       sku: es,
       isEmbeddedIAP: z
-    }), eb && (0, r.jsx)(x.A, {
+    }), ey && (0, r.jsx)(x.A, {
       sku: es
     }), null != ee ? (0, r.jsx)(O.Z, {
       giftRecipient: ee
@@ -162,7 +162,7 @@ function G(e) {
       onPaymentSourceAdd: E,
       hidePersonalInformation: ef,
       paymentGatewayRestrictions: eo
-    }), (0, r.jsxs)(b.A, {
+    }), (0, r.jsxs)(y.A, {
       isActive: t,
       ref: n,
       children: [(0, r.jsx)(h.A, {

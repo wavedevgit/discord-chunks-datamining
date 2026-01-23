@@ -2,7 +2,7 @@
 /** chunk id: 768953, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 });
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -118,7 +118,7 @@ function E(e) {
   return !!f(t) && delete d[t]
 }
 
-function b(e) {
+function y(e) {
   var t;
   let {
     channel: n
@@ -131,7 +131,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     channel: t
   } = e;
@@ -141,7 +141,7 @@ function y(e) {
 function O() {
   d = {}
 }
-class A extends(r = Chunk311907.Ay.Store) {
+class v extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(s.A)
   }
@@ -163,11 +163,11 @@ class A extends(r = Chunk311907.Ay.Store) {
     return (null == t ? true : t.results) != null && t.results.length > 0
   }
 }
-o(A, "displayName", "ForumSearchStore");
-let v = new A(Chunk73153.h, {
+o(v, "displayName", "ForumSearchStore");
+let A = new v(Chunk73153.h, {
   CONNECTION_OPEN: O,
-  THREAD_DELETE: b,
-  CHANNEL_DELETE: y,
+  THREAD_DELETE: y,
+  CHANNEL_DELETE: b,
   FORUM_SEARCH_QUERY_UPDATED: _,
   FORUM_SEARCH_START: h,
   FORUM_SEARCH_SUCCESS: m,

@@ -2,7 +2,7 @@
 /** chunk id: 871181, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,7 +24,7 @@ let g = (0, Chunk95701.createChannelRecord)({
   }),
   E = (0, Chunk915089.Ld)();
 
-function b(e) {
+function y(e) {
   let {
     label: t = h.intl.string(h.t.B3miE8),
     onTextChange: n,
@@ -32,11 +32,11 @@ function b(e) {
     currentText: d,
     className: f,
     innerClassName: _,
-    disableThemedBackground: b = false
-  } = e, [y, O] = i.useState(null != a ? a : d), [A, v] = i.useState((0, c.x7)(y)), S = i.useRef(false);
+    disableThemedBackground: y = false
+  } = e, [b, O] = i.useState(null != a ? a : d), [v, A] = i.useState((0, c.x7)(b)), I = i.useRef(false);
 
-  function I(e, t, r) {
-    t !== y && (O(t), v(r), n(t))
+  function S(e, t, r) {
+    t !== b && (O(t), A(r), n(t))
   }
 
   function T() {
@@ -48,11 +48,11 @@ function b(e) {
     })
   }
   return i.useEffect(() => {
-    S.current = true
+    I.current = true
   }, []), i.useEffect(() => {
     if (true === a) {
       let e = (0, c.x7)(d);
-      O(d), v(e)
+      O(d), A(e)
     }
   }, [a, d]), (0, r.jsx)("div", {
     className: s()(m.rf, f),
@@ -65,20 +65,20 @@ function b(e) {
           innerClassName: s()(m.Tg, _),
           editorClassName: m.OT,
           maxCharacterCount: p.Jo,
-          onChange: I,
+          onChange: S,
           channel: g,
-          textValue: y,
-          richValue: A,
+          textValue: b,
+          richValue: v,
           type: l.oU.CUSTOM_GIFT,
           onBlur: () => {
-            S.current = false
+            I.current = false
           },
           onFocus: () => {
-            S.current = true
+            I.current = true
           },
-          focused: S.current,
+          focused: I.current,
           onSubmit: T,
-          disableThemedBackground: b
+          disableThemedBackground: y
         }), (0, r.jsx)(o.AC4, {
           id: E,
           children: h.intl.format(h.t["+DFxLc"], {

@@ -32,7 +32,7 @@ var Chunk735438 = require("./735438.js"),
   Chunk652215 = require("./652215.js"),
   Chunk355097 = require("./355097.js"),
   Chunk985018 = require("./985018.jsx");
-let y = false,
+let b = false,
   O = async () => {
     try {
       let e = (await a.Bo.get({
@@ -48,7 +48,7 @@ let y = false,
         type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_FAILURE"
       }), new l.A(e)
     }
-  }, A = async () => {
+  }, v = async () => {
     let e = new Map;
     try {
       let t = (await a.Bo.get({
@@ -68,12 +68,12 @@ let y = false,
         type: "SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FAILURE"
       })
     }
-  }, v = e => new Promise(t => {
+  }, A = e => new Promise(t => {
     let n = () => {
       s.h.unsubscribe(e, n), setTimeout(t, 0)
     };
     s.h.subscribe(e, n)
-  }), S = e => new Promise(t => {
+  }), I = e => new Promise(t => {
     let n = new Map;
     e.forEach(r => {
       let i = () => {
@@ -84,17 +84,17 @@ let y = false,
       };
       n.set(r, i), s.h.subscribe(r, i)
     })
-  }), I = () => {
+  }), S = () => {
     if (!f.A.shouldFetchDefaultSounds()) return Promise.resolve();
     s.h.dispatch({
       type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS"
     });
-    let e = v("SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS");
-    return (0, _.aY)("maybeFetchDefaultSounds") && A(), O(), e
+    let e = A("SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS");
+    return (0, _.aY)("maybeFetchDefaultSounds") && v(), O(), e
   }, T = () => {
     let e = (0, h.I)();
     if (0 === e.length) return Promise.resolve();
-    let t = v("SOUNDBOARD_SOUNDS_RECEIVED");
+    let t = A("SOUNDBOARD_SOUNDS_RECEIVED");
     return s.h.dispatch({
       type: "GUILD_SOUNDBOARD_FETCH"
     }), s.h.dispatch({
@@ -106,16 +106,16 @@ let y = false,
     s.h.dispatch({
       type: "SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FETCH"
     });
-    let e = S(["SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_SUCCESS", "SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FAILURE"]);
-    return A(), e
+    let e = I(["SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_SUCCESS", "SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FAILURE"]);
+    return v(), e
   }, N = async () => {
     if (__OVERLAY__) return s.h.dispatch({
       type: "OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST"
     }), Promise.all([]);
     let e = performance.now(),
-      t = !y;
-    y = true;
-    let n = await Promise.all([I(), T(), C()]);
+      t = !b;
+    b = true;
+    let n = await Promise.all([S(), T(), C()]);
     if (t) {
       let t = performance.now() - e;
       u.default.track(g.HAw.EXPRESSION_PICKER_SOUNDBOARD_SOUNDS_LOADED, {
@@ -175,8 +175,8 @@ async function P(e, t) {
 
 function D(e) {
   c.bW.updateAsync("favoriteSoundboardSounds", t => i().size(t.soundIds) >= 250 ? (o.A.show({
-    title: b.intl.string(b.t["+XYXtZ"]),
-    body: b.intl.formatToPlainString(b.t.JaIyFi, {
+    title: y.intl.string(y.t["+XYXtZ"]),
+    body: y.intl.formatToPlainString(y.t.JaIyFi, {
       count: 250
     })
   }), false) : !t.soundIds.includes(e) && void t.soundIds.push(e), E.Sb.INFREQUENT_USER_ACTION)

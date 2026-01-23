@@ -61,12 +61,12 @@ var m = {
   E = {
     type: ["application/ld+json"]
   },
-  b = {
+  y = {
     charset: "",
     name: ["robots", "description"],
     property: ["og:type", "og:title", "og:url", "og:image", "og:image:alt", "og:description", "twitter:url", "twitter:title", "twitter:description", "twitter:image", "twitter:image:alt", "twitter:card", "twitter:site"]
   },
-  y = Object.keys(m).map(function(e) {
+  b = Object.keys(m).map(function(e) {
     return m[e]
   }),
   O = {
@@ -79,27 +79,27 @@ var m = {
     itemprop: "itemProp",
     tabindex: "tabIndex"
   },
-  A = Object.keys(O).reduce(function(e, t) {
+  v = Object.keys(O).reduce(function(e, t) {
     return e[O[t]] = t, e
   }, {}),
-  v = function(e, t) {
+  A = function(e, t) {
     for (var n = e.length - 1; n >= 0; n -= 1) {
       var r = e[n];
       if (Object.prototype.hasOwnProperty.call(r, t)) return r[t]
     }
     return null
   },
-  S = function(e) {
-    var t = v(e, m.TITLE),
-      n = v(e, "titleTemplate");
+  I = function(e) {
+    var t = A(e, m.TITLE),
+      n = A(e, "titleTemplate");
     if (Array.isArray(t) && (t = t.join("")), n && t) return n.replace(/%s/g, function() {
       return t
     });
-    var r = v(e, "defaultTitle");
+    var r = A(e, "defaultTitle");
     return t || r || true
   },
-  I = function(e) {
-    return v(e, "onChangeClientState") || function() {}
+  S = function(e) {
+    return A(e, "onChangeClientState") || function() {}
   },
   T = function(e, t) {
     return t.filter(function(t) {
@@ -280,7 +280,7 @@ var m = {
         var t = e.linkTags,
           n = e.scriptTags,
           r = e.encode,
-          i = P(e.metaTags, b),
+          i = P(e.metaTags, y),
           a = P(t, g),
           s = P(n, E);
         return {
@@ -467,16 +467,16 @@ var K = function(e, t) {
             return delete t.context, t
           })),
           bodyAttributes: T("bodyAttributes", e),
-          defer: v(e, "defer"),
-          encode: v(e, "encodeSpecialCharacters"),
+          defer: A(e, "defer"),
+          encode: A(e, "encodeSpecialCharacters"),
           htmlAttributes: T("htmlAttributes", e),
           linkTags: N(m.LINK, ["rel", "href"], e),
           metaTags: N(m.META, ["name", "charset", "http-equiv", "property", "itemprop"], e),
           noscriptTags: N(m.NOSCRIPT, ["innerHTML"], e),
-          onChangeClientState: I(e),
+          onChangeClientState: S(e),
           scriptTags: N(m.SCRIPT, ["src", "innerHTML"], e),
           styleTags: N(m.STYLE, ["cssText"], e),
-          title: S(e),
+          title: I(e),
           titleAttributes: T("titleAttributes", e),
           prioritizeSeoTags: R(e, "prioritizeSeoTags")
         };
@@ -549,9 +549,9 @@ var Q = ["children"],
         n = f({}, n, ((r = {})[t] = e[t], r))
       }), n
     }, n.warnOnInvalidChildren = function(e, t) {
-      return c()(y.some(function(t) {
+      return c()(b.some(function(t) {
         return e.type === t
-      }), "function" == typeof e.type ? "You may be attempting to nest <Helmet> components within each other, which is not allowed. Refer to our API for more information." : "Only elements types " + y.join(", ") + " are allowed. Helmet does not support rendering <" + e.type + "> elements. Refer to our API for more information."), c()(!t || "string" == typeof t || Array.isArray(t) && !t.some(function(e) {
+      }), "function" == typeof e.type ? "You may be attempting to nest <Helmet> components within each other, which is not allowed. Refer to our API for more information." : "Only elements types " + b.join(", ") + " are allowed. Helmet does not support rendering <" + e.type + "> elements. Refer to our API for more information."), c()(!t || "string" == typeof t || Array.isArray(t) && !t.some(function(e) {
         return "string" != typeof e
       }), "Helmet expects a string as a child of <" + e.type + ">. Did you forget to wrap your children in braces? ( <" + e.type + ">{``}</" + e.type + "> ) Refer to our API for more information."), true
     }, n.mapChildrenToProps = function(e, t) {
@@ -563,7 +563,7 @@ var Q = ["children"],
             a = r.children,
             s = h(r, Q),
             o = Object.keys(s).reduce(function(e, t) {
-              return e[A[t] || t] = s[t], e
+              return e[v[t] || t] = s[t], e
             }, {}),
             l = e.type;
           switch ("symbol" == typeof l ? l = l.toString() : n.warnOnInvalidChildren(e, a), l) {

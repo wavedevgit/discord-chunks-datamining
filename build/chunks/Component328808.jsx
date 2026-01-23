@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
-  a = require.n(Chunk735438),
+  s = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk182061 = require("./182061.jsx"),
@@ -62,14 +62,14 @@ function S(e, t) {
 function I(e) {
   let {
     channel: t
-  } = e, [n, i] = l.useState(false), a = l.useRef(null);
+  } = e, [n, i] = l.useState(false), s = l.useRef(null);
 
-  function s() {
+  function a() {
     i(e => !e)
   }
-  let c = _.intl.string(_.t["UKOtz+"]);
+  let c = E.intl.string(E.t["UKOtz+"]);
   return (0, r.jsx)(o.YNO, {
-    targetElementRef: a,
+    targetElementRef: s,
     shouldShow: n,
     animation: o.YNO.Animation.NONE,
     position: "bottom",
@@ -85,9 +85,9 @@ function I(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsx)(j.Ay.Icon, S(C({}, e), {
-        ref: a,
-        onClick: s,
+      return (0, r.jsx)(O.Ay.Icon, S(C({}, e), {
+        ref: s,
+        onClick: a,
         tooltip: n ? null : c,
         icon: o.jNK,
         "aria-label": c,
@@ -102,27 +102,27 @@ function N(e) {
     channel: t,
     closePopout: n,
     onSelect: l
-  } = e, i = (0, c.A)(t), j = (0, h.A)(t), C = (0, A.A)(t.id), S = (0, m.A)(t), I = (0, O.A)({
+  } = e, i = (0, c.A)(t), O = (0, f.A)(t), C = (0, A.A)(t.id), S = (0, b.A)(t), I = (0, _.A)({
     id: t.id,
-    label: _.intl.string(_.t.DQ797g)
-  }), N = (0, u.A)(t), T = (0, d.A)(t), P = (0, f.A)(t, "Toolbar Overflow"), w = (0, b.A)(t), R = (0, p.A)(t), D = (0, y.A)(t), M = (0, g.A)(t), L = v.SY.useSetting(), G = (0, s.bG)([x.A], () => !a().isEmpty(x.A.getVoiceStatesForChannel(t.id)));
+    label: E.intl.string(E.t.DQ797g)
+  }), N = (0, u.A)(t), T = (0, d.A)(t), P = (0, p.A)(t, "Toolbar Overflow"), w = (0, g.A)(t), R = (0, h.A)(t), D = (0, y.A)(t), M = (0, m.A)(t), L = j.SY.useSetting(), k = (0, a.bG)([v.A], () => !s().isEmpty(v.A.getVoiceStatesForChannel(t.id)));
   return (0, r.jsxs)(o.W1t, {
     navId: "thread-context",
     onClose: n,
-    "aria-label": _.intl.string(_.t["1NBjqb"]),
+    "aria-label": E.intl.string(E.t["1NBjqb"]),
     onSelect: l,
     children: [(0, r.jsxs)(o.rXV, {
       children: [P, R]
     }), (0, r.jsxs)(o.rXV, {
-      children: [S, w, C, L && !G ? (0, r.jsx)(o.Drp, {
+      children: [S, w, C, L && !k ? (0, r.jsx)(o.Drp, {
         id: "open",
-        label: _.intl.string(_.t.bX7EaG),
+        label: E.intl.string(E.t.bX7EaG),
         action: function() {
-          (0, E.JA)(t)
+          (0, x.JA)(t)
         }
       }) : null, M]
     }), (0, r.jsxs)(o.rXV, {
-      children: [D, i, j, T]
+      children: [D, i, O, T]
     }), (0, r.jsxs)(o.rXV, {
       children: [N, I]
     })]

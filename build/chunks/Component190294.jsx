@@ -1,8 +1,8 @@
 /** Chunk was on 59275 **/
-/** chunk id: 190294, original params: e,t,l (module,exports,require) **/
+/** chunk id: 190294, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -28,7 +28,7 @@ let d = [{
     tab: Chunk758836.G2.CATALOG,
     labelKey: Chunk985018.t.xFcotU
   }],
-  f = {
+  g = {
     [Chunk641150.q.ALL]: Chunk758836.G2.CATALOG,
     [Chunk641150.q.AVATAR_DECORATION]: Chunk758836.G2.AVATAR_DECORATIONS,
     [Chunk641150.q.PROFILE_EFFECT]: Chunk758836.G2.PROFILE_EFFECTS,
@@ -36,74 +36,74 @@ let d = [{
     [Chunk641150.q.BUNDLE]: Chunk758836.G2.BUNDLES
   };
 
-function b(e) {
+function f(e) {
   let {
     tabs: t,
-    selectedTab: l,
+    selectedTab: n,
     onTabSelect: s,
-    onClose: b,
-    showOrbRentalNewBadge: g
+    onClose: f,
+    showOrbRentalNewBadge: p
   } = e, {
     itemTypeFilters: m
-  } = (0, i.v)(), p = r.useMemo(() => {
-    if (l === o.G2.CATALOG && m.size > 0) {
-      let e = f[Array.from(m)[0]];
+  } = (0, i.v)(), _ = l.useMemo(() => {
+    if (n === o.G2.CATALOG && m.size > 0) {
+      let e = g[Array.from(m)[0]];
       if (null != e) return e
     }
-    return l
-  }, [l, m]);
-  return (0, n.jsx)(a.W1t, {
+    return n
+  }, [n, m]);
+  return (0, r.jsx)(a.W1t, {
     navId: "collectibles-shop-tabs-overflow-menu",
     "aria-label": c.intl.string(c.t["UKOtz+"]),
     hideScroller: true,
-    onClose: b,
-    onSelect: b,
-    children: (0, n.jsx)(a.rXV, {
+    onClose: f,
+    onSelect: f,
+    children: (0, r.jsx)(a.rXV, {
       children: t.map(e => {
         let {
           tab: t,
-          label: r,
+          label: l,
           hasSubmenu: i
         } = e;
         if (i && t === o.G2.CATALOG) {
-          let e = t === l;
-          return (0, n.jsx)(a.Drp, {
+          let e = t === n;
+          return (0, r.jsx)(a.Drp, {
             id: t,
-            label: r,
+            label: l,
             icon: e ? a.yr3 : true,
             hasSubmenu: true,
             children: d.map(e => {
               let {
                 tab: t,
-                labelKey: l
-              } = e, r = t === p;
-              return (0, n.jsx)(a.Drp, {
+                labelKey: n
+              } = e, l = t === _;
+              return (0, r.jsx)(a.Drp, {
                 id: t,
-                label: c.intl.string(l),
-                icon: r ? a.yr3 : true,
+                label: c.intl.string(n),
+                icon: l ? a.yr3 : true,
                 action: () => {
-                  s(t), b()
+                  s(t), f()
                 }
               }, t)
             })
           }, t)
         }
-        let f = t === o.G2.ORBS && g,
-          m = (0, n.jsxs)("span", {
+        let g = t === o.G2.ORBS && p,
+          m = (0, r.jsxs)("span", {
             style: {
               display: "flex",
               alignItems: "center",
               gap: "4px"
             },
-            children: [r, f && (0, n.jsx)(a.LpS, {
+            children: [l, g && (0, r.jsx)(a.LpS, {
               text: c.intl.string(c.t.y2b7CA),
               className: u.Ad
             })]
           });
-        return (0, n.jsx)(a.Drp, {
+        return (0, r.jsx)(a.Drp, {
           id: t,
           label: m,
-          icon: t === l ? a.yr3 : true,
+          icon: t === n ? a.yr3 : true,
           action: () => s(t)
         }, t)
       })

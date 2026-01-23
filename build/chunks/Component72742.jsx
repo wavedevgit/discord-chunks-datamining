@@ -26,20 +26,20 @@ function m(e) {
     onClose: m
   } = e, {
     themeType: g
-  } = (0, f.E)(), E = g === _.d.MODAL_V2, b = (0, l.UW)(t), {
-    channelId: y,
+  } = (0, f.E)(), E = g === _.d.MODAL_V2, y = (0, l.UW)(t), {
+    channelId: b,
     guildId: O
-  } = null != b ? b : {}, A = (0, i.bG)([d.A], () => null != y && d.A.isInChannel(y), [y]), v = (0, i.bG)([c.A], () => null != y ? c.A.getChannel(y) : null, [y]), S = (0, i.bG)([u.A], () => null != v && u.A.can(o.Gk, v), [v]);
-  if (!(0, l.Cy)(t) || !S || null == O || null == y) return null;
-  let I = e => {
+  } = null != y ? y : {}, v = (0, i.bG)([d.A], () => null != b && d.A.isInChannel(b), [b]), A = (0, i.bG)([c.A], () => null != b ? c.A.getChannel(b) : null, [b]), I = (0, i.bG)([u.A], () => null != A && u.A.can(o.Gk, A), [A]);
+  if (!(0, l.Cy)(t) || !I || null == O || null == b) return null;
+  let S = e => {
     e.stopPropagation(), null == n || n({
       action: "PRESS_STAGE_CHANNEL_LISTEN_BUTTON"
-    }), s.CH(O, y), (0, a.iN)(y), null == m || m()
+    }), s.CH(O, b), (0, a.iN)(b), null == m || m()
   };
   return (0, r.jsx)(p.FD, {
     text: h.intl.string(h.t.ZYO5OK),
     fullWidth: !E,
-    disabled: A,
-    onClick: I
+    disabled: v,
+    onClick: S
   })
 }

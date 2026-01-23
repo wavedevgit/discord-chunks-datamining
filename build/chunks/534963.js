@@ -1,12 +1,12 @@
 /** Chunk was on 97492 **/
 /** chunk id: 534963, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => a
+  A: () => s
 });
 var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
   Chunk652215 = require("./652215.js");
-let a = {
+let s = {
   fetchRegions(e) {
     r.Bo.get({
       url: i.Rsh.REGIONS(e),

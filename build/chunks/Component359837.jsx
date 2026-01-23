@@ -14,8 +14,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx");
 
 function d(e, t, n) {
-  let r = (0, l.bG)([c.A], () => !c.A.isRoleHigher(e, t, n), [e, t, n]);
-  return i.useMemo(() => r && n.id === (null == t ? true : t.id), [r, n, t]) ? o.intl.string(o.t.PQylOR) : r ? o.intl.string(o.t.UGIjx9) : null
+  let r = (0, l.bG)([o.A], () => !o.A.isRoleHigher(e, t, n), [e, t, n]);
+  return i.useMemo(() => r && n.id === (null == t ? true : t.id), [r, n, t]) ? c.intl.string(c.t.PQylOR) : r ? c.intl.string(c.t.UGIjx9) : null
 }
 
 function u(e) {

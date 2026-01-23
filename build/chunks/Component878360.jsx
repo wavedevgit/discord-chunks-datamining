@@ -2,7 +2,7 @@
 /** chunk id: 878360, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -21,12 +21,12 @@ var Chunk735438 = require("./735438.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk570330 = require("./570330.js"),
   Chunk911385 = require("./911385.js");
-let b = {
+let y = {
     results: {
       choices: []
     }
   },
-  y = {
+  b = {
     results: {
       choices: [],
       isLoading: true
@@ -39,21 +39,21 @@ let b = {
     displayName: "",
     value: ""
   })),
-  A = {
+  v = {
     results: {
       choices: [],
       isError: true
     }
   },
-  v = a().debounce(Chunk545152.A, Chunk73510.$r, {
+  A = a().debounce(Chunk545152.A, Chunk73510.$r, {
     leading: true,
     trailing: true
   });
 
-function S(e) {
+function I(e) {
   return e.displayName
 }
-let I = {
+let S = {
   stores: [Chunk861382.A, Chunk166862.A],
   showEmpty: true,
   matches(e, t, n, r, i) {
@@ -63,9 +63,9 @@ let I = {
   queryResults(e, t, n, r, i) {
     var a;
     let s = c.A.getActiveOption(e.id);
-    if (null == s) return b;
+    if (null == s) return y;
     if (s.autocomplete) {
-      if (i && v({
+      if (i && A({
           command: c.A.getActiveCommand(e.id),
           optionValues: r.getCommandOptionValues(),
           context: {
@@ -76,9 +76,9 @@ let I = {
               query: n
             }
           }
-        }), l.A.getLastErrored(e.id)) return A;
+        }), l.A.getLastErrored(e.id)) return v;
       let a = l.A.getAutocompleteChoices(e.id, s.name, n);
-      return null == a ? y : {
+      return null == a ? b : {
         results: {
           choices: a
         }
@@ -136,7 +136,7 @@ let I = {
       index: n,
       options: r
     } = e, i = t[n];
-    return r.insertText(S(i)), {
+    return r.insertText(I(i)), {
       type: _.kc.CHOICE
     }
   }

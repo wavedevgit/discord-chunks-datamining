@@ -1,9 +1,9 @@
 /** Chunk was on 99583 **/
 /** chunk id: 663282, original params: e,t,l (module,exports,require) **/
 module.exports = {
-  FV: "_245af9971f1f773f",
-  A0: "ae0c1e733ba6064e",
-  NQ: "_64bdb6a696e16c7c",
-  b0: "a87ef06cc91d85e6",
-  gZ: "ae7e0ea4879b69cc"
+  FV: "mainTableContainer__09a38",
+  A0: "horizatonalScroller__09a38",
+  NQ: "loaderContainer__09a38",
+  b0: "loaderBar__09a38",
+  gZ: "loadingBar__09a38"
 }

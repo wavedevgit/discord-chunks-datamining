@@ -25,21 +25,21 @@ function h(e) {
     username: m,
     user: g,
     guild: E
-  } = e, b = null != n ? n : h, y = (0, i.bG)([c.A], () => c.A.can(d.xBc.CHANGE_NICKNAME, E) || c.A.can(d.xBc.MANAGE_NICKNAMES, E)), O = (0, s.L)(f.PremiumTypes.TIER_2);
+  } = e, y = null != n ? n : h, b = (0, i.bG)([c.A], () => c.A.can(d.xBc.CHANGE_NICKNAME, E) || c.A.can(d.xBc.MANAGE_NICKNAMES, E)), O = (0, s.L)(f.PremiumTypes.TIER_2);
 
-  function A(e) {
+  function v(e) {
     (0, u.o_)(e, h)
   }
   return (0, r.jsxs)(o.A, {
     title: p.intl.string(p.t.me1lRk),
     errors: t,
     children: [(0, r.jsx)(a.ksK, {
-      value: null != b ? b : "",
+      value: null != y ? y : "",
       placeholder: m,
       maxLength: d.d0r,
-      onChange: A,
-      disabled: !y,
-      helperText: y ? true : p.intl.string(p.t.gzjxQi)
+      onChange: v,
+      disabled: !b,
+      helperText: b ? true : p.intl.string(p.t.gzjxQi)
     }), O && (0, r.jsx)(l.A, {
       user: g,
       guildId: E.id,

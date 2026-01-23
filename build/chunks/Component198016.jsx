@@ -26,7 +26,7 @@ function h(e) {
     items: m,
     sectionName: g,
     sectionOverallPosition: E
-  } = e, b = (0, u.f)(), y = i.useMemo(() => n === c.s4.TEXT ? d.Gt : d.wW, [n]);
+  } = e, y = (0, u.f)(), b = i.useMemo(() => n === c.s4.TEXT ? d.Gt : d.wW, [n]);
   return (0, r.jsxs)("section", {
     className: _.kL,
     "aria-label": p.intl.formatToPlainString(p.t.iobNIB, {
@@ -53,7 +53,7 @@ function h(e) {
             installOnDemand: a,
             showsPromoted: s
           } = e;
-          return (0, r.jsx)(y, {
+          return (0, r.jsx)(b, {
             context: t,
             application: i,
             look: h,
@@ -61,7 +61,7 @@ function h(e) {
             resultsPosition: n,
             location: l.Oh.APP_LAUNCHER_LIST_VIEW_ALL,
             installOnDemand: a,
-            isOneClickCTA: b,
+            isOneClickCTA: y,
             sectionOverallPosition: E,
             showsPromoted: s
           }, i.id)

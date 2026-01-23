@@ -2,7 +2,7 @@
 /** chunk id: 689168, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk451988 = require("./451988.js"),
@@ -73,14 +73,14 @@ function E(e, t, n) {
   }, f[a] = o, __OVERLAY__ || e !== c.eAD.FAILED ? e === c.eAD.LOADING && null != s && g(a, t, h) : g(a, t, _)
 }
 
-function b(e) {
+function y(e) {
   let {
     activityLauncherStates: t
   } = e;
   f = d({}, t)
 }
 
-function y(e) {
+function b(e) {
   return E(c.eAD.COMPLETE, c.xL.JOIN, e)
 }
 
@@ -111,7 +111,7 @@ function O() {
     }), t = true)
   }), t
 }
-class A extends(r = Chunk311907.Ay.Store) {
+class v extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.syncWith([o.A, l.A], O)
   }
@@ -124,12 +124,12 @@ class A extends(r = Chunk311907.Ay.Store) {
     return f
   }
 }
-u(A, "displayName", "ActivityLauncherStore");
-let v = new A(Chunk73153.h, {
-  OVERLAY_INITIALIZE: b,
+u(v, "displayName", "ActivityLauncherStore");
+let A = new v(Chunk73153.h, {
+  OVERLAY_INITIALIZE: y,
   ACTIVITY_JOIN_LOADING: e => E(c.eAD.LOADING, c.xL.JOIN, e),
   ACTIVITY_JOIN_FAILED: e => E(c.eAD.FAILED, c.xL.JOIN, e),
-  ACTIVITY_JOIN: y,
-  EMBEDDED_ACTIVITY_CLOSE: y,
+  ACTIVITY_JOIN: b,
+  EMBEDDED_ACTIVITY_CLOSE: b,
   ACTIVITY_LAUNCH_FAIL: m
 })

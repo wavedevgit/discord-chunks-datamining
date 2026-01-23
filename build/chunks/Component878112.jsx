@@ -1,4 +1,4 @@
-/** Chunk was on 98763 **/
+/** Chunk was on 21724 **/
 /** chunk id: 878112, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -23,14 +23,14 @@ let g = e => {
     product: t,
     primary: n,
     selectedVariantIndex: g,
-    returnRef: O,
-    onSuccess: j,
-    tooltipDelay: h,
+    returnRef: h,
+    onSuccess: O,
+    tooltipDelay: j,
     fullWidth: x = false
   } = e, {
     analyticsLocations: P
-  } = (0, c.Ay)(), A = l.useRef(null), C = (0, p.uM)(), R = (0, v.A)(), k = e => {
-    e.stopPropagation(), d.default.track(y.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+  } = (0, c.Ay)(), A = l.useRef(null), C = (0, p.uM)(), k = (0, v.A)(), R = e => {
+    e.stopPropagation(), d.default.track(m.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == C ? true : C.sessionId,
       sku_id: t.skuId,
       page_section: null == C ? true : C.pageSection,
@@ -38,38 +38,38 @@ let g = e => {
       tile_type: a.R[t.type],
       tile_position: String(null == C ? true : C.tilePosition),
       cta_name: "gift button",
-      page_type: R || "home"
+      page_type: k || "home"
     }), (0, u.A)({
       skuId: (0, b.Y)({
         product: t,
         selectedVariantIndex: g
       }),
       isGift: true,
-      giftingOrigin: m.vQ.SHOP_PAGE,
+      giftingOrigin: y.vQ.SHOP_PAGE,
       analyticsLocations: P,
-      returnRef: O,
+      returnRef: h,
       variantsReturnStyle: i.g.VARIANTS_GROUP,
-      onClose: null != j ? e => {
-        e && j()
+      onClose: null != O ? e => {
+        e && O()
       } : true
     })
   };
   return x ? (0, r.jsx)(s.Button, {
     variant: n ? "primary" : "secondary",
     icon: s.okO,
-    onClick: k,
+    onClick: R,
     text: f.intl.string(f.t.gmnzqM),
     fullWidth: true
   }) : (0, r.jsx)(o.m, {
     text: f.intl.string(f.t["JCFN/y"]),
-    delay: h,
+    delay: j,
     children: (0, r.jsx)(s.K0, {
       "aria-label": f.intl.string(f.t["JCFN/y"]),
       buttonRef: A,
       variant: n ? "primary" : "secondary",
       icon: s.okO,
       size: "md",
-      onClick: k
+      onClick: R
     })
   })
 }

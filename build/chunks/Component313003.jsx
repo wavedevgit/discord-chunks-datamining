@@ -1,7 +1,7 @@
 /** Chunk was on 70232 **/
-/** chunk id: 313003, original params: e,t,r (module,exports,require) **/
+/** chunk id: 313003, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
-  default: () => u
+  default: () => d
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,60 +13,60 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function u(e) {
-  var t, r;
+function d(t) {
+  var e, r;
   let {
-    guild: u,
-    onClose: d,
-    hideColors: p
-  } = e, [y, O] = n.useState(u.verificationLevel), [j, v] = n.useState(null), g = u.features.has(b.GuildFeatures.COMMUNITY), h = (0, l.vd)(g, p).filter(e => !e.disabled), w = n.useCallback(async () => {
-    null != j && v(null);
+    guild: d,
+    onClose: p,
+    hideColors: y
+  } = t, [f, _] = a.useState(d.verificationLevel), [g, O] = a.useState(null), v = d.features.has(u.GuildFeatures.COMMUNITY), j = (0, l.vd)(v, y).filter(t => !t.disabled), h = a.useCallback(async () => {
+    null != g && O(null);
     try {
-      await o.A.saveGuild(u.id, {
-        verificationLevel: y
-      }), o.A.updateGuild({
-        verificationLevel: y
-      }), d()
-    } catch (e) {
-      v(new i.LG(e).getAnyErrorMessage())
+      await c.A.saveGuild(d.id, {
+        verificationLevel: f
+      }), c.A.updateGuild({
+        verificationLevel: f
+      }), p()
+    } catch (t) {
+      O(new o.LG(t).getAnyErrorMessage())
     }
-  }, [j, u.id, y, d]);
-  return (0, a.jsx)(s.A, (t = function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var r = null != arguments[t] ? arguments[t] : {},
-        a = Object.keys(r);
-      "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(r, e).enumerable
-      }))), a.forEach(function(t) {
-        var a;
-        a = r[t], t in e ? Object.defineProperty(e, t, {
-          value: a,
+  }, [g, d.id, f, p]);
+  return (0, n.jsx)(s.A, (e = function(t) {
+    for (var e = 1; e < arguments.length; e++) {
+      var r = null != arguments[e] ? arguments[e] : {},
+        n = Object.keys(r);
+      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(t) {
+        return Object.getOwnPropertyDescriptor(r, t).enumerable
+      }))), n.forEach(function(e) {
+        var n;
+        n = r[e], e in t ? Object.defineProperty(t, e, {
+          value: n,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = a
+        }) : t[e] = n
       })
     }
-    return e
-  }({}, e), r = r = {
-    title: f.intl.string(f.t.DpRdYK),
-    description: f.intl.format(f.t.iuRk2j, {}),
-    errorText: j,
-    onConfirm: w,
-    onCancel: d,
-    children: (0, a.jsx)(c.z6M, {
-      value: y,
-      options: h,
-      onChange: e => O(e)
+    return t
+  }({}, t), r = r = {
+    title: b.intl.string(b.t.DpRdYK),
+    description: b.intl.format(b.t.iuRk2j, {}),
+    errorText: g,
+    onConfirm: h,
+    onCancel: p,
+    children: (0, n.jsx)(i.z6M, {
+      value: f,
+      options: j,
+      onChange: t => _(t)
     })
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-    var r = Object.keys(e);
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {
+    var r = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, a)
+      var n = Object.getOwnPropertySymbols(t);
+      r.push.apply(r, n)
     }
     return r
-  })(Object(r)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-  }), t))
+  })(Object(r)).forEach(function(t) {
+    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+  }), e))
 }

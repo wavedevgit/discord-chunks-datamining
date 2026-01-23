@@ -94,13 +94,13 @@ let C = {
   };
 
 function O() {
-  let e = (0, r.A)(),
+  let e = (0, i.A)(),
     t = (0, a.Mw)((0, l.Ay)());
   if (!e) return null;
   let n = C[e],
     o = S[e],
     c = {
-      currentBadge: (0, i.e0)(e),
+      currentBadge: (0, r.e0)(e),
       currentBadgeTextGradient: t ? null == n ? true : n.dark : null == n ? true : n.light,
       levelUpVideoSrc: t ? null == o ? true : o.dark : null == o ? true : o.light
     },
@@ -108,7 +108,7 @@ function O() {
   if (d > 0) {
     let e = s.sp[d - 1],
       n = C[e];
-    c.prevBadge = (0, i.e0)(e), c.prevBadgeTextGradient = t ? null == n ? true : n.dark : null == n ? true : n.light
+    c.prevBadge = (0, r.e0)(e), c.prevBadgeTextGradient = t ? null == n ? true : n.dark : null == n ? true : n.light
   }
   return c
 }

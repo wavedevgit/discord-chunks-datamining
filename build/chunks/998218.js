@@ -20,23 +20,23 @@ let d = /(?:^|\.)(?:discordapp|discord|discordmerch)\.com$/i,
   m = "(?:\\S+(?::\\S*)?@)?",
   g = i().v4().source,
   E = "(?:[a-z\\u00a1-\\uffff0-9-_]+\\.)+",
-  b = "(?:(?:[a-z\\u00a1-\\uffff]{2,}))",
-  y = "(?::\\d{2,5})?",
+  y = "(?:(?:[a-z\\u00a1-\\uffff]{2,}))",
+  b = "(?::\\d{2,5})?",
   O = '(?:[/?#][^\\s"]*)?',
-  A = RegExp("(?:".concat(h, "|www\\.)").concat(m, "(?:localhost|").concat(g, "|").concat(E).concat(b, ")").concat(y).concat(O), "ig"),
-  v = new Set([window.GLOBAL_ENV.CDN_HOST, window.GLOBAL_ENV.INVITE_HOST, window.GLOBAL_ENV.GIFT_CODE_HOST, window.GLOBAL_ENV.GUILD_TEMPLATE_HOST]);
+  v = RegExp("(?:".concat(h, "|www\\.)").concat(m, "(?:localhost|").concat(g, "|").concat(E).concat(y, ")").concat(b).concat(O), "ig"),
+  A = new Set([window.GLOBAL_ENV.CDN_HOST, window.GLOBAL_ENV.INVITE_HOST, window.GLOBAL_ENV.GIFT_CODE_HOST, window.GLOBAL_ENV.GUILD_TEMPLATE_HOST]);
 
-function S(e, t) {
+function I(e, t) {
   return null != e && null != t && e !== t
 }
 
-function I(e) {
-  return v.has(e.toLowerCase())
+function S(e) {
+  return A.has(e.toLowerCase())
 }
 
 function T(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return null != e && (d.test(e) || t && I(e))
+  return null != e && (d.test(e) || t && S(e))
 }
 
 function C(e) {
@@ -50,7 +50,7 @@ function N(e) {
 }
 
 function R(e, t, n) {
-  if (!S(t, n) || null == e) returnfalse;
+  if (!I(t, n) || null == e) returnfalse;
   let r = c.A.toURLSafe(e);
   return null != r && (!!(0, l.iT)() && ("localhost" === r.hostname || "127.0.0.1" === r.hostname) && "4000" === r.port || p.test(r.hostname))
 }
@@ -79,12 +79,12 @@ function x(e) {
   return null != e && C(o.parse(e).protocol)
 }
 let L = {
-  URL_REGEX: A,
+  URL_REGEX: v,
   makeUrl: function(e, t) {
     let n = (null != t ? t : (0, l.m6)()) ? window.GLOBAL_ENV.INVITE_HOST : location.host;
     return "".concat(location.protocol, "//").concat(n).concat(e)
   },
-  isOriginalContentTypeDifferent: S,
+  isOriginalContentTypeDifferent: I,
   isDiscordHostname: T,
   isDiscordLocalhost: function(e, t) {
     return null != e && null != t && window.location.host === e

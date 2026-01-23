@@ -16,9 +16,9 @@ function o(e) {
     truncatedCount: n,
     className: l
   } = e;
-  return (0, r.jsx)(a.Text, {
-    className: i()(s.T, l, {
-      [s.l]: t
+  return (0, r.jsx)(s.Text, {
+    className: i()(a.T, l, {
+      [a.l]: t
     }),
     variant: "text-xs/normal",
     children: n

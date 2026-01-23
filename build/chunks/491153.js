@@ -1,5 +1,5 @@
 /** Chunk was on 22477 **/
 /** chunk id: 491153, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  c: "_4f747b08dd0fa663"
+  c: "insufficientOrbs__3b1b0"
 }

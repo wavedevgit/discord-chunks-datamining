@@ -23,17 +23,17 @@ if (Chunk257943 && Chunk339626(p) && (!("description" in _) || true !== p().desc
   Chunk517771(m, p), m.prototype = _, _.constructor = m;
   var g = "Symbol(description detection)" === String(p("description detection")),
     E = Chunk410323(_.valueOf),
-    b = Chunk410323(_.toString),
-    y = /^Symbol\((.*)\)[^)]+$/,
+    y = Chunk410323(_.toString),
+    b = /^Symbol\((.*)\)[^)]+$/,
     O = Chunk410323("".replace),
-    A = Chunk410323("".slice);
+    v = Chunk410323("".slice);
   Chunk485155(_, "description", {
     configurable: true,
     get: function() {
       var e = E(this);
       if (o(h, e)) return "";
-      var t = b(e),
-        n = g ? A(t, 7, false) : O(t, y, "$1");
+      var t = y(e),
+        n = g ? v(t, 7, false) : O(t, b, "$1");
       return "" === n ? true : n
     }
   }), Chunk557939({

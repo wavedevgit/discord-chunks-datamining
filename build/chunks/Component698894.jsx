@@ -2,7 +2,7 @@
 /** chunk id: 698894, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  r: () => f
+  r: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,35 +13,35 @@ var Chunk627968 = require("./627968.js"),
   Chunk856229 = require("./856229.js"),
   Chunk806782 = require("./806782.js"),
   Chunk277606 = require("./277606.js");
-let f = e => {
+let p = e => {
   let {
     onComplete: t,
     data: r
-  } = e, f = (0, n.useId)(), p = null, h = null, x = r.scopes.some(e => (0, l.RM)(e));
-  return r.clientId === s.i.PLAYSTATION_APPLICATION_ID || r.clientId === s.i.PLAYSTATION_STAGING_APPLICATION_ID ? p = d.A : x && (p = u.A), null != r.twoWayLinkCode ? h = c.intl.string(c.t.QhATl2) : x && (h = c.intl.string(c.t.vBPvK3)), (0, a.jsxs)("div", {
-    className: o.Qs,
-    children: [null != p ? (0, a.jsx)("img", {
-      src: p,
-      className: o.xX,
+  } = e, p = (0, a.useId)(), f = null, h = null, x = r.scopes.some(e => (0, l.RM)(e));
+  return r.clientId === s.i.PLAYSTATION_APPLICATION_ID || r.clientId === s.i.PLAYSTATION_STAGING_APPLICATION_ID ? f = d.A : x && (f = u.A), null != r.twoWayLinkCode ? h = o.intl.string(o.t.QhATl2) : x && (h = o.intl.string(o.t.vBPvK3)), (0, n.jsxs)("div", {
+    className: c.Qs,
+    children: [null != f ? (0, n.jsx)("img", {
+      src: f,
+      className: c.xX,
       alt: "",
-      "aria-labelledby": f
-    }) : null, (0, a.jsxs)("div", {
-      className: o.gx,
-      children: [(0, a.jsx)(i.Heading, {
+      "aria-labelledby": p
+    }) : null, (0, n.jsxs)("div", {
+      className: c.gx,
+      children: [(0, n.jsx)(i.Heading, {
         variant: "heading-xl/extrabold",
-        id: f,
-        children: c.intl.string(c.t.qDtJmD)
-      }), null != h ? (0, a.jsx)(i.Text, {
+        id: p,
+        children: o.intl.string(o.t.qDtJmD)
+      }), null != h ? (0, n.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "text-default",
         children: h
       }) : null]
-    }), (0, a.jsx)("div", {
+    }), (0, n.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
-      className: o.wC,
-      children: (0, a.jsx)(i.Button, {
+      className: c.wC,
+      children: (0, n.jsx)(i.Button, {
         variant: "primary",
-        text: c.intl.string(c.t.i4jeWR),
+        text: o.intl.string(o.t.i4jeWR),
         onClick: t
       })
     })]

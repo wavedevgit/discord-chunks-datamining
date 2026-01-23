@@ -1,25 +1,25 @@
 /** Chunk was on 59275 **/
-/** chunk id: 856686, original params: e,t,l (module,exports,require) **/
+/** chunk id: 856686, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   S: () => i
 });
 var Chunk353640 = require("./353640.js");
 
-function r(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var l = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(l);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(l, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = l[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
@@ -27,14 +27,14 @@ function r(e) {
 
 function s(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var l = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      l.push.apply(l, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return l
-  })(Object(t)).forEach(function(l) {
-    Object.defineProperty(e, l, Object.getOwnPropertyDescriptor(t, l))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let a = {
@@ -45,15 +45,15 @@ let a = {
     searchError: null,
     isFetchingResults: false
   },
-  i = (0, Chunk353640.v)(e => s(r({}, a), {
+  i = (0, Chunk353640.v)(e => s(l({}, a), {
     onSetResponse: t => {
-      let l = Math.floor(t.pageOffset / t.pageLimit) + 1;
-      e(s(r({}, t), {
-        currentPage: l
+      let n = Math.floor(t.pageOffset / t.pageLimit) + 1;
+      e(s(l({}, t), {
+        currentPage: n
       }))
     },
     setSearchError: t => {
-      e(s(r({}, a), {
+      e(s(l({}, a), {
         searchError: t
       }))
     },
@@ -68,6 +68,6 @@ let a = {
       })
     },
     clear: () => {
-      e(r({}, a))
+      e(l({}, a))
     }
   }))

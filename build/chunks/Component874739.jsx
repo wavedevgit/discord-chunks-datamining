@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 874739, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => j
+  A: () => O
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,16 +21,16 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk806931 = require("./806931.js"),
   Chunk403264 = require("./403264.js");
-let j = (0, Chunk456412.A)(e => {
+let O = (0, Chunk456412.A)(e => {
   let {
     participants: t,
     filteredParticipants: n,
-    selectedParticipant: a,
-    participantsVersion: j,
-    layout: v,
-    onSelectParticipant: x,
-    onContextMenuParticipant: E,
-    onFullscreenParticipant: _,
+    selectedParticipant: s,
+    participantsVersion: O,
+    layout: j,
+    onSelectParticipant: v,
+    onContextMenuParticipant: x,
+    onFullscreenParticipant: E,
     channel: C,
     hasConnectPermission: S,
     className: I,
@@ -42,22 +42,22 @@ let j = (0, Chunk456412.A)(e => {
     mode: D,
     popoutType: M,
     awaitingRemoteSessionInfo: L,
-    callContainerDimensions: G
+    callContainerDimensions: k
   } = e;
   l.useEffect(() => {
-    f._.dispatch(A.jej.REMEASURE_TARGET)
-  }, [P, w, G.width, G.height]);
-  let k = l.useMemo(() => n.filter(e => e.type !== y.lp.ACTIVITY || !e.participants.some(e => (0, s.S)(e))), [n, j]),
+    p._.dispatch(A.jej.REMEASURE_TARGET)
+  }, [P, w, k.width, k.height]);
+  let G = l.useMemo(() => n.filter(e => e.type !== y.lp.ACTIVITY || !e.participants.some(e => (0, a.S)(e))), [n, O]),
     U = (0, i.bG)([o.A], () => o.A.getVoiceParticipantsHidden(C.id), [C.id]);
-  if ((null == L ? true : L.channelId) === C.id) return (0, r.jsx)(h.A, {
+  if ((null == L ? true : L.channelId) === C.id) return (0, r.jsx)(f.A, {
     height: w
   });
-  if ((null == C ? true : C.isGuildVocalOrThread()) && !N) return (0, r.jsx)(p.A, {
+  if ((null == C ? true : C.isGuildVocalOrThread()) && !N) return (0, r.jsx)(h.A, {
     channel: C,
     participants: t,
     hasConnectPermission: S
   });
-  if (n = N ? n : t, v === A.DUB.HAVEN) return (0, r.jsx)(d.A, {
+  if (n = N ? n : t, j === A.DUB.HAVEN) return (0, r.jsx)(d.A, {
     participants: n,
     channel: C,
     idle: R
@@ -65,48 +65,48 @@ let j = (0, Chunk456412.A)(e => {
   if (D === A._Of.VOICE) return (0, r.jsx)(c.A, {
     guildId: C.guild_id,
     width: P,
-    className: O.Er,
+    className: _.Er,
     participants: t,
-    onContextMenu: E
+    onContextMenu: x
   });
-  if (null == a) {
+  if (null == s) {
     if (0 === n.length) {
       let e = t.length > 0 && !U;
-      return (0, r.jsx)(m.A, {
+      return (0, r.jsx)(b.A, {
         channelId: C.id,
         allPoppedOut: e
       })
     }
     return (0, r.jsx)(u.A, {
-      className: O.HA,
+      className: _.HA,
       justify: u.A.Justify.CENTER,
       align: u.A.Align.CENTER,
-      children: (0, r.jsx)(b.A, {
+      children: (0, r.jsx)(g.A, {
         channel: C,
-        className: O.g9,
-        participants: k,
+        className: _.g9,
+        participants: G,
         totalNumberOfParticipants: t.length,
-        onClick: x,
-        onDoubleClick: _,
-        onContextMenu: E,
+        onClick: v,
+        onDoubleClick: E,
+        onContextMenu: x,
         inCall: N,
         popoutType: M
       })
     })
   }
-  return (0, r.jsx)(g.A, {
-    onFullscreenParticipant: _,
-    onContextMenuParticipant: E,
-    onSelectParticipant: x,
-    selectedParticipant: a,
-    filteredParticipants: k,
+  return (0, r.jsx)(m.A, {
+    onFullscreenParticipant: E,
+    onContextMenuParticipant: x,
+    onSelectParticipant: v,
+    selectedParticipant: s,
+    filteredParticipants: G,
     participants: t,
     popoutType: M,
     className: I,
     idle: R,
     height: w,
     width: P,
-    layout: v,
+    layout: j,
     inCall: N,
     channel: C,
     showParticipants: T

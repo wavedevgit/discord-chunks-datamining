@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  i = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk582754 = require("./582754.js"),
   Chunk397927 = require("./397927.js"),
   Chunk736653 = require("./736653.js"),
@@ -17,13 +17,13 @@ function p(e) {
   let {
     title: t,
     betaTag: n,
-    color: a = "text-strong"
+    color: l = "text-strong"
   } = e;
-  return (0, l.jsxs)(c.Heading, {
-    className: i()(u.DD, u.Zv),
+  return (0, r.jsxs)(o.Heading, {
+    className: a()(u.DD, u.Zv),
     variant: "display-lg",
-    color: a,
-    children: [t, n && (0, l.jsx)(d.A, {
+    color: l,
+    children: [t, n && (0, r.jsx)(d.A, {
       className: u.TN
     })]
   })
@@ -33,32 +33,32 @@ function h(e) {
   let {
     title: t,
     titleColor: n,
-    description: r,
+    description: i,
     button: d,
     className: h,
     children: m,
-    betaTag: b = false
-  } = e, f = (0, o.Ay)(), g = (0, s.Mw)(f), x = a.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, l.jsx)(p, {
+    betaTag: g = false
+  } = e, _ = (0, c.Ay)(), b = (0, s.Mw)(_), f = l.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, r.jsx)(p, {
     title: e,
-    betaTag: b,
+    betaTag: g,
     color: n
-  }, t)) : (0, l.jsx)(p, {
+  }, t)) : (0, r.jsx)(p, {
     title: t,
-    betaTag: b,
+    betaTag: g,
     color: n
-  }), [t, b, n]);
-  return (0, l.jsxs)("div", {
-    className: i()(u.kL, h),
-    children: [(0, l.jsx)("div", {
+  }), [t, g, n]);
+  return (0, r.jsxs)("div", {
+    className: a()(u.kL, h),
+    children: [(0, r.jsx)("div", {
       className: u.Qs,
-      children: (0, l.jsxs)("div", {
+      children: (0, r.jsxs)("div", {
         className: u.FS,
-        children: [x, null != r && (0, l.jsx)(c.Text, {
+        children: [f, null != i && (0, r.jsx)(o.Text, {
           className: u.h_,
           variant: "text-md/medium",
-          color: g ? "text-muted" : "text-strong",
-          children: r
-        }), null != d && (0, l.jsx)("div", {
+          color: b ? "text-muted" : "text-strong",
+          children: i
+        }), null != d && (0, r.jsx)("div", {
           className: u.UD,
           children: d
         })]

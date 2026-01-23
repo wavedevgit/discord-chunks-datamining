@@ -1,9 +1,9 @@
 /** Chunk was on 97492 **/
 /** chunk id: 65611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  eW: () => h,
-  em: () => f,
-  oi: () => p,
+  eW: () => f,
+  em: () => p,
+  oi: () => h,
   wN: () => d
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
@@ -17,74 +17,74 @@ var Chunk503698 = require("./503698.js"),
   Chunk283237 = require("./283237.js");
 
 function d(e, t, n) {
-  return (0, r.jsx)(s.hVq, {
+  return (0, r.jsx)(a.hVq, {
     count: e,
     color: t,
     "aria-hidden": n
   })
 }
 
-function f() {
-  return (0, r.jsx)(s.fkz, {
-    icon: (0, s.kHD)(c.A),
+function p() {
+  return (0, r.jsx)(a.fkz, {
+    icon: (0, a.kHD)(c.A),
     disableColor: true,
     className: u.yk
   })
 }
 
-function p(e) {
+function h(e) {
   let t, {
     audio: n,
     video: r,
     screenshare: l,
     isCurrentUserConnected: i,
-    liveStage: a,
+    liveStage: s,
     activeEvent: o,
     activity: c
   } = e;
-  if (o) t = s.CTc;
-  else if (a) t = s.qux;
-  else if (l) t = s.kN9;
-  else if (r) t = s.npA;
-  else if (n) t = s.HKD;
+  if (o) t = a.CTc;
+  else if (s) t = a.qux;
+  else if (l) t = a.kN9;
+  else if (r) t = a.npA;
+  else if (n) t = a.HKD;
   else {
     if (!c) return null;
-    t = s.bxf
+    t = a.bxf
   }
-  return b({
+  return g({
     icon: t,
     isCurrentUserConnected: i
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     guildJoinRequestStatus: t
   } = e, [n, r] = function(e) {
     switch (e) {
       case o.B5.SUBMITTED:
-        return [true, s.O4];
+        return [true, a.O4];
       case o.B5.REJECTED:
-        return [a.A.unsafe_rawColors.RED_400.css, s.PGe];
+        return [s.A.unsafe_rawColors.RED_400.css, a.PGe];
       case o.B5.APPROVED:
-        return [a.A.unsafe_rawColors.GREEN_360.css, s.A9s];
+        return [s.A.unsafe_rawColors.GREEN_360.css, a.A9s];
       default:
-        return [true, s.R2l]
+        return [true, a.R2l]
     }
   }(t);
-  return b({
+  return g({
     icon: r,
     color: n
   })
 }
 
-function b(e) {
+function g(e) {
   let {
     icon: t,
     color: n,
     isCurrentUserConnected: l
   } = e;
-  return (0, r.jsx)(s.fkz, function(e) {
+  return (0, r.jsx)(a.fkz, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

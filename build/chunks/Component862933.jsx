@@ -2,7 +2,7 @@
 /** chunk id: 862933, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -25,7 +25,7 @@ var Chunk417597 = require("./417597.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk735141 = require("./735141.js");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,25 +34,25 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e) {
+function I(e) {
   let {
     soundboardSound: t,
-    closePicker: A
-  } = e, S = (0, d.RQ)(e => e.searchQuery), I = (0, i.bG)([E.A], () => null != t && E.A.isFavoriteSound(t.soundId)), T = (0, i.bG)([p.A], () => p.A.getGuild(null == t ? true : t.guildId)), C = (0, i.bG)([l.A], () => l.A.useReducedMotion, []), N = (0, i.bG)([h.A], () => h.A.isFocused()), R = (0, i.bG)([_.Ay], () => _.Ay.getKeybindForAction(b.hCu.SOUNDBOARD_HOLD));
-  if (null != t && S.length > 0) return (0, r.jsx)(f.A, {
+    closePicker: v
+  } = e, I = (0, d.RQ)(e => e.searchQuery), S = (0, i.bG)([E.A], () => null != t && E.A.isFavoriteSound(t.soundId)), T = (0, i.bG)([p.A], () => p.A.getGuild(null == t ? true : t.guildId)), C = (0, i.bG)([l.A], () => l.A.useReducedMotion, []), N = (0, i.bG)([h.A], () => h.A.isFocused()), R = (0, i.bG)([_.Ay], () => _.Ay.getKeybindForAction(y.hCu.SOUNDBOARD_HOLD));
+  if (null != t && I.length > 0) return (0, r.jsx)(f.A, {
     graphicPrimary: null != t.emojiId || null != t.emojiName ? (0, r.jsx)(o.A, {
       emojiId: t.emojiId,
       emojiName: t.emojiName,
@@ -68,19 +68,19 @@ function S(e) {
     }) : null,
     titlePrimary: t.name,
     titleSecondary: null == T ? true : T.name,
-    isFavorite: I
+    isFavorite: S
   });
   let w = () => {
-      A(), (0, s.mMO)(async () => {
+      v(), (0, s.mMO)(async () => {
         let {
           default: e
         } = await n.e("12618").then(n.bind(n, 29681));
-        return t => (0, r.jsx)(e, v({}, t))
+        return t => (0, r.jsx)(e, A({}, t))
       })
     },
     P = (0, c.k8)(a.M.SOUNDBOARD_KEYBIND_TIP),
     D = () => (0, c.Dr)(a.M.SOUNDBOARD_KEYBIND_TIP),
-    x = null != R && (0, m.isWindows)() && !P ? y.intl.format(y.t.udMTth, {
+    x = null != R && (0, m.isWindows)() && !P ? b.intl.format(b.t.udMTth, {
       keybind: (0, g.dI)(R.shortcut, true),
       openSettingsHook: (e, t) => (0, r.jsx)(s.MzZ, {
         onClick: w,

@@ -3,7 +3,7 @@
 require.d(exports, {
   A: () => f
 });
-var l, r, Chunk311907 = require("./311907.js"),
+var r, l, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk600975 = require("./600975.js"),
   Chunk961350 = require("./961350.js");
@@ -23,9 +23,9 @@ let c = {},
       }
     }]
   });
-class d extends(r = Chunk311907.Ay.Store) {
+class d extends(l = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.default)
+    this.waitFor(s.default)
   }
   areSlayerNotificationsSuppressed() {
     if (u.getCurrentConfig({
@@ -34,15 +34,15 @@ class d extends(r = Chunk311907.Ay.Store) {
         autoTrackExposure: false
       }).enabled) returnfalse;
     for (let e in c)
-      if (c[e] === o.default.getId()) returntrue;
+      if (c[e] === s.default.getId()) returntrue;
     returnfalse
   }
-}(l = "displayName") in d ? Object.defineProperty(d, l, {
+}(r = "displayName") in d ? Object.defineProperty(d, r, {
   value: "RpcNotificationSettingsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : d[l] = "RpcNotificationSettingsStore";
+}) : d[r] = "RpcNotificationSettingsStore";
 let f = new d(Chunk73153.h, {
   RPC_APP_DISCONNECTED: function(e) {
     delete c[e.socketId]

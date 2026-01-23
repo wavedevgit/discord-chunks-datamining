@@ -7,20 +7,20 @@ var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk158954 = require("./158954.js"),
   Chunk746305 = require("./746305.js");
-let i = e => {
+let a = e => {
     let {
       onChange: t,
       label: n,
-      subtitle: i,
+      subtitle: a,
       selected: s
     } = e;
     return (0, l.jsx)("div", {
-      className: a.y,
+      className: i.y,
       children: (0, l.jsx)(r.Sc0, {
         checked: s,
         onChange: t,
         label: n,
-        description: i
+        description: a
       })
     })
   },
@@ -32,14 +32,14 @@ let i = e => {
     } = e;
     if ((null == t ? true : t.type) !== "checkbox") return null;
     let {
-      data: a
+      data: i
     } = t;
     return (0, l.jsx)("div", {
-      children: a.map((e, t) => {
-        let [a, s, o] = e;
-        return (0, l.jsx)(i, {
-          onChange: () => r(a, s),
-          selected: a in n,
+      children: i.map((e, t) => {
+        let [i, s, o] = e;
+        return (0, l.jsx)(a, {
+          onChange: () => r(i, s),
+          selected: i in n,
           label: s,
           subtitle: o
         }, "".concat(t, "+button"))

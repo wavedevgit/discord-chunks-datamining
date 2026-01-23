@@ -2,7 +2,7 @@
 /** chunk id: 680724, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./896048.js");
 var Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -93,7 +93,7 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     streamKey: t
   } = e, {
@@ -103,7 +103,7 @@ function b(e) {
   delete p[n]
 }
 
-function y() {
+function b() {
   if (s.A.getWasMoved()) {
     if (s.A.getChannelId() === _) returnfalse;
     _ = s.A.getChannelId(), h()
@@ -120,11 +120,11 @@ class O extends Chunk311907.Ay.Store {
     return p[e]
   }
 }
-let A = new O(Chunk73153.h, {
-  STREAM_WATCH: b,
+let v = new O(Chunk73153.h, {
+  STREAM_WATCH: y,
   MESSAGE_CREATE: E,
   MESSAGE_DELETE: g,
   VOICE_CHANNEL_SELECT: m,
-  VOICE_STATE_UPDATES: y,
+  VOICE_STATE_UPDATES: b,
   LOGOUT: h
 })

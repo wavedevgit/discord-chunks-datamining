@@ -116,16 +116,16 @@ let R = function(e) {
             color: "always-white",
             variant: "display-lg",
             children: C.intl.string(C.t.N4sqzL)
-          }), (0, r.jsx)(b.A, {
+          }), (0, r.jsx)(y.A, {
             guild: n,
             closeLayer: F,
             onCtaVisibilityChange: D
-          }), (0, r.jsx)(A.A, {
-            guild: n
           }), (0, r.jsx)(v.A, {
             guild: n
+          }), (0, r.jsx)(A.A, {
+            guild: n
           })]
-        }), (0, r.jsx)(I.$, {})]
+        }), (0, r.jsx)(S.$, {})]
       }), (0, r.jsx)("div", {
         className: N.uE,
         children: (0, r.jsx)(m.A, {
@@ -137,11 +137,11 @@ let R = function(e) {
         className: N.o6,
         children: [(0, r.jsxs)("div", {
           className: N.y$,
-          children: [(0, r.jsx)(S.A, {
+          children: [(0, r.jsx)(I.A, {
             className: N.e4,
             guild: n
-          }), (0, r.jsx)(E.A, {}), (0, r.jsx)(y.A, {})]
-        }), (0, r.jsx)(I.S, {}), (0, r.jsx)("div", {
+          }), (0, r.jsx)(E.A, {}), (0, r.jsx)(b.A, {})]
+        }), (0, r.jsx)(S.S, {}), (0, r.jsx)("div", {
           className: N.LY
         })]
       }), (0, r.jsx)(s.L, {

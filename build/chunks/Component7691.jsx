@@ -2,7 +2,7 @@
 /** chunk id: 7691, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./896048.js"), require("./775443.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -41,7 +41,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,8 +52,8 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -61,11 +61,11 @@ let O = {
     width: 500,
     height: Chunk60809.$V
   },
-  A = {
+  v = {
     height: Chunk60809.$V
   };
 
-function v(e, t) {
+function A(e, t) {
   let {
     context: n,
     entrypoint: a,
@@ -95,7 +95,7 @@ function v(e, t) {
       className: m.FG,
       children: (0, r.jsx)(l.f5, {
         value: d,
-        children: (0, r.jsx)(I, {
+        children: (0, r.jsx)(S, {
           initHistory: u,
           children: (0, r.jsx)(T, {
             context: n,
@@ -106,9 +106,9 @@ function v(e, t) {
     })
   })
 }
-let S = Chunk64700.memo(Chunk64700.forwardRef(v));
+let I = Chunk64700.memo(Chunk64700.forwardRef(A));
 
-function I(e) {
+function S(e) {
   let {
     initHistory: t,
     children: n
@@ -118,7 +118,7 @@ function I(e) {
     s(t => [...t, e])
   }, []), _ = i.useCallback(() => {
     let e = null;
-    s(t => t.length <= 1 ? t : (e = t[t.length - 1], t.slice(0, false))), l(t => null == e ? t : y(E({}, t), {
+    s(t => t.length <= 1 ? t : (e = t[t.length - 1], t.slice(0, false))), l(t => null == e ? t : b(E({}, t), {
       [e.type]: e
     }))
   }, []), h = i.useCallback(e => {
@@ -159,8 +159,8 @@ function T(e) {
     g(true)
   }, [g]);
   if (null == _) return null;
-  let b = h(u.Wy.LIST),
-    y = h(u.Wy.APPLICATION);
+  let y = h(u.Wy.LIST),
+    b = h(u.Wy.APPLICATION);
   return (0, r.jsxs)(a.tN_, {
     activeSlide: _.type,
     width: 500,
@@ -169,7 +169,7 @@ function T(e) {
       id: u.Wy.HOME,
       children: (0, r.jsx)("div", {
         className: m.xD,
-        style: A,
+        style: v,
         children: (0, r.jsx)(f.A, {
           isScrollCloseToBottom: c,
           setScroller: l,
@@ -183,26 +183,26 @@ function T(e) {
       id: u.Wy.LIST,
       children: (0, r.jsx)("div", {
         className: m.xD,
-        style: A,
-        children: null != b && (0, r.jsx)(p.A, {
+        style: v,
+        children: null != y && (0, r.jsx)(p.A, {
           context: t,
           entrypoint: n,
-          title: b.title,
-          look: b.look,
-          items: b.items,
-          sectionName: b.sectionName,
-          sectionOverallPosition: b.sectionOverallPosition
+          title: y.title,
+          look: y.look,
+          items: y.items,
+          sectionName: y.sectionName,
+          sectionOverallPosition: y.sectionOverallPosition
         })
       })
     }), (0, r.jsx)(a.q7S, {
       id: u.Wy.APPLICATION,
       children: (0, r.jsx)("div", {
         className: m.xD,
-        style: A,
-        children: null != y && (0, r.jsx)(d.A, {
+        style: v,
+        children: null != b && (0, r.jsx)(d.A, {
           context: t,
-          application: y.application,
-          sectionName: y.sectionName
+          application: b.application,
+          sectionName: b.sectionName
         })
       })
     })]

@@ -2,10 +2,10 @@
 /** chunk id: 862482, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $n: () => A,
+  $n: () => v,
   WS: () => O,
   XD: () => E,
-  lO: () => b,
+  lO: () => y,
   pR: () => g
 });
 var Chunk627968 = require("./627968.js"),
@@ -92,7 +92,7 @@ let g = {
     TRANSPARENT: Chunk134112.Ey,
     CUSTOM: ""
   },
-  b = {
+  y = {
     NONE: "",
     TINY: Chunk134112.Ei,
     SMALL: Chunk134112.g4,
@@ -103,7 +103,7 @@ let g = {
     ICON: Chunk134112.Rk
   };
 
-function y(e, t) {
+function b(e, t) {
   var n, r, i, a;
   let s = null == e ? true : e.offset;
   return t === g.LINK || t === g.BLANK ? s : null == s ? false : "number" == typeof s ? s + 2 : {
@@ -118,7 +118,7 @@ function O() {
   let {
     look: e = g.FILLED,
     color: t = E.BRAND,
-    size: n = b.MEDIUM,
+    size: n = y.MEDIUM,
     fullWidth: r = false,
     grow: i = true,
     submitting: a = false,
@@ -131,19 +131,19 @@ function O() {
   })
 }
 
-function A(e) {
+function v(e) {
   let {
     look: t = g.FILLED,
     color: n = E.BRAND,
-    size: a = b.MEDIUM,
+    size: a = y.MEDIUM,
     fullWidth: o = false,
     grow: d = true,
     disabled: p = false,
     submitting: m = false,
-    type: A = "button",
-    style: v,
-    wrapperClassName: S,
-    className: I,
+    type: v = "button",
+    style: A,
+    wrapperClassName: I,
+    className: S,
     innerClassName: T,
     onClick: C,
     onDoubleClick: N,
@@ -159,7 +159,7 @@ function A(e) {
     "aria-label": U,
     submittingStartedLabel: G,
     submittingFinishedLabel: V
-  } = e, F = h(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]), B = p || m, H = B && (null != P || null != D), Y = H ? null : S, W = y(k, t), K = i.useRef(false);
+  } = e, F = h(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]), B = p || m, H = B && (null != P || null != D), Y = H ? null : I, W = b(k, t), K = i.useRef(false);
   i.useEffect(() => {
     true === m && (K.current = true, l.ORC.announce(null != G ? G : c.intl.string(c.t.pfChQr))), false === m && true === K.current && l.ORC.announce(null != V ? V : c.intl.string(c.t.SVParY))
   }, [m, G, V]);
@@ -176,11 +176,11 @@ function A(e) {
       onMouseEnter: P,
       onMouseLeave: D,
       onKeyDown: p ? true : x,
-      type: A,
+      type: v,
       disabled: p,
-      style: v,
+      style: A,
       rel: j,
-      className: s()(I, O({
+      className: s()(S, O({
         look: t,
         color: n,
         size: a,
@@ -200,7 +200,7 @@ function A(e) {
     }))
   }));
   return H ? (0, r.jsxs)("span", {
-    className: s()(u.Yr, S, a, {
+    className: s()(u.Yr, I, a, {
       [u.wS]: d,
       [u.Ij]: o
     }),
@@ -211,37 +211,37 @@ function A(e) {
     })]
   }) : z
 }
-A.Looks = g, A.Colors = E, A.Sizes = b, A.Link = function(e) {
+v.Looks = g, v.Colors = E, v.Sizes = y, v.Link = function(e) {
   let {
     look: t = g.FILLED,
     color: n = E.BRAND,
-    size: i = b.MEDIUM,
+    size: i = y.MEDIUM,
     fullWidth: a = false,
     grow: l = true,
     style: c,
     className: d,
     innerClassName: p,
     to: m,
-    onClick: y,
+    onClick: b,
     onMouseDown: O,
-    onMouseUp: A,
-    children: v,
-    rel: S
-  } = e, I = h(e, ["look", "color", "size", "fullWidth", "grow", "style", "className", "innerClassName", "to", "onClick", "onMouseDown", "onMouseUp", "children", "rel"]);
-  return (0, r.jsx)(o.N_, _(f({}, I), {
+    onMouseUp: v,
+    children: A,
+    rel: I
+  } = e, S = h(e, ["look", "color", "size", "fullWidth", "grow", "style", "className", "innerClassName", "to", "onClick", "onMouseDown", "onMouseUp", "children", "rel"]);
+  return (0, r.jsx)(o.N_, _(f({}, S), {
     to: m,
-    onClick: y,
-    onMouseUp: A,
+    onClick: b,
+    onMouseUp: v,
     onMouseDown: O,
     style: c,
-    rel: S,
+    rel: I,
     className: s()(d, u.x6, t, n, i, {
       [u.Ij]: a,
       [u.wS]: l
     }),
     children: (0, r.jsx)("span", {
       className: s()(u.PG, p),
-      children: v
+      children: A
     })
   }))
 }

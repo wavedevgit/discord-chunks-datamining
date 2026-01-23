@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 992250, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => h
 });
 var r, i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -28,7 +28,7 @@ class p extends(i = Chunk311907.Ay.Store) {
   configurable: true,
   writable: true
 }) : p[r] = "GuildMFAWarningStore";
-let f = new p(Chunk73153.h, {
+let h = new p(Chunk73153.h, {
   CONNECTION_OPEN: d,
   GUILD_UPDATE: function() {
     returntrue

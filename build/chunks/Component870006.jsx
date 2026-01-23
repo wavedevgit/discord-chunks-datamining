@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 870006, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  u: () => j
+  u: () => O
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -26,7 +26,7 @@ function y(e) {
   let {
     guild: n
   } = e, l = (0, c.A)({
-    scrollPosition: g._F.GUILD_TAG
+    scrollPosition: m._F.GUILD_TAG
   });
   return (0, r.jsx)("div", {
     children: (0, r.jsx)(o._, {
@@ -35,32 +35,32 @@ function y(e) {
         color: "currentColor",
         className: A.q3
       }),
-      bannerHeader: m.intl.format(m.t.GgMwjk, {
+      bannerHeader: b.intl.format(b.t.GgMwjk, {
         guildName: null != (t = null == n ? true : n.name) ? t : ""
       }),
-      bannerSubtext: m.intl.string(m.t.ONjwD5),
+      bannerSubtext: b.intl.string(b.t.ONjwD5),
       textStyles: A.cI,
       headerStyles: A.U_,
       children: (0, r.jsx)(i.Button, {
         variant: "primary",
         size: "sm",
-        text: m.intl.string(m.t.Viksoo),
+        text: b.intl.string(b.t.Viksoo),
         onClick: () => l()
       })
     })
   })
 }
 
-function O(e) {
+function _(e) {
   var t, n;
   let {
     guild: l
   } = e, {
     analyticsLocations: c
-  } = (0, s.Ay)(a.A.AUTOMOD_PROFILE_QUARANTINE_ALERT), [u, d] = (0, p.j8)({
-    guildId: null != (t = null == l ? true : l.id) ? t : h.dJq,
+  } = (0, a.Ay)(s.A.AUTOMOD_PROFILE_QUARANTINE_ALERT), [u, d] = (0, h.j8)({
+    guildId: null != (t = null == l ? true : l.id) ? t : f.dJq,
     analyticsLocations: c
-  }), f = d ? m.intl.string(m.t["9ph2v7"]) : m.intl.string(m.t.ldh9Cg), b = d ? m.intl.string(m.t["/PGQf0"]) : m.intl.string(m.t.WikgZ1);
+  }), p = d ? b.intl.string(b.t["9ph2v7"]) : b.intl.string(b.t.ldh9Cg), g = d ? b.intl.string(b.t["/PGQf0"]) : b.intl.string(b.t.WikgZ1);
   return (0, r.jsx)("div", {
     children: (0, r.jsx)(o._, {
       bannerIcon: (0, r.jsx)(i._mZ, {
@@ -68,16 +68,16 @@ function O(e) {
         color: "currentColor",
         className: A.q3
       }),
-      bannerHeader: m.intl.format(m.t.kcYdTq, {
+      bannerHeader: b.intl.format(b.t.kcYdTq, {
         guildName: null != (n = null == l ? true : l.name) ? n : ""
       }),
-      bannerSubtext: f,
+      bannerSubtext: p,
       textStyles: A.cI,
       headerStyles: A.U_,
       children: (0, r.jsx)(i.Button, {
         variant: "primary",
         size: "sm",
-        text: b,
+        text: g,
         onClick: () => {
           u()
         }
@@ -86,19 +86,19 @@ function O(e) {
   })
 }
 
-function j(e) {
+function O(e) {
   let {
     guild: t
   } = e, n = (0, l.bG)([u.default, d.Ay], () => {
     if (null == t) return new Set;
     let e = u.default.getId();
-    return (0, f.wj)(d.Ay.getMember(t.id, e))
+    return (0, p.wj)(d.Ay.getMember(t.id, e))
   }, [t]);
-  return n.has(b.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(b.D.AUTOMOD_QUARANTINED_BIO) ? (0, r.jsx)(O, {
+  return n.has(g.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(g.D.AUTOMOD_QUARANTINED_BIO) ? (0, r.jsx)(_, {
     guild: t
-  }) : n.has(b.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, r.jsx)(y, {
+  }) : n.has(g.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, r.jsx)(y, {
     guild: t
-  }) : (0, r.jsx)(O, {
+  }) : (0, r.jsx)(_, {
     guild: t
   })
 }

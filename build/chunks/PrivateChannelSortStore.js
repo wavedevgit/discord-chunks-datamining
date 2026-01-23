@@ -20,7 +20,7 @@ var r, Chunk989349 = require("./989349.js"),
   Chunk287809 = require("./287809.js"),
   Chunk661191 = require("./661191.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,7 +28,7 @@ function b(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let y = e => {
+let b = e => {
     let {
       lastMessageId: t
     } = e;
@@ -41,13 +41,13 @@ let y = e => {
     } = e;
     return t ? [] : [n ? "FAVORITE" : "DEFAULT"]
   },
-  A = new Chunk713402.J(O, y);
+  v = new Chunk713402.J(O, b);
 
-function v() {
-  A.clear()
+function A() {
+  v.clear()
 }
 
-function S(e) {
+function I(e) {
   var t, n;
   let r = null != (t = null != (n = h.Ay.lastMessageId(e.id)) ? n : e.lastMessageId) ? t : e.id,
     i = e.isMessageRequestTimestamp;
@@ -59,8 +59,8 @@ function S(e) {
   return r
 }
 
-function I(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : S(e);
+function S(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : I(e);
   return {
     channelId: e.id,
     lastMessageId: t,
@@ -70,8 +70,8 @@ function I(e) {
 }
 
 function T() {
-  A.clear(), Object.values(p.A.getMutablePrivateChannels()).forEach(e => {
-    A.set(e.id, I(e))
+  v.clear(), Object.values(p.A.getMutablePrivateChannels()).forEach(e => {
+    v.set(e.id, S(e))
   })
 }
 
@@ -80,7 +80,7 @@ function C(e) {
     channel: t
   } = e;
   if (!(0, f.Gw)(t.type) || t.id === c.E) returnfalse;
-  A.set(t.id, I(t))
+  v.set(t.id, S(t))
 }
 
 function N(e) {
@@ -88,7 +88,7 @@ function N(e) {
     channels: t
   } = e;
   t.forEach(e => {
-    ((0, f.Gw)(e.type) || A.has(e.id)) && A.set(e.id, I(e))
+    ((0, f.Gw)(e.type) || v.has(e.id)) && v.set(e.id, S(e))
   })
 }
 
@@ -96,7 +96,7 @@ function R(e) {
   let {
     channel: t
   } = e;
-  return A.delete(t.id)
+  return v.delete(t.id)
 }
 
 function w(e) {
@@ -104,27 +104,27 @@ function w(e) {
     channelId: t,
     message: n
   } = e;
-  if (!A.has(t)) returnfalse;
+  if (!v.has(t)) returnfalse;
   let r = p.A.getChannel(t);
-  return null != r && A.set(t, I(r, n.id))
+  return null != r && v.set(t, S(r, n.id))
 }
 
 function P(e) {
   let t = e.guild.id;
-  return A.delete(t)
+  return v.delete(t)
 }
 
 function D() {
   let e = p.A.getMutablePrivateChannels();
-  for (let t in e) A.set(t, I(e[t]))
+  for (let t in e) v.set(t, S(e[t]))
 }
 let x = (() => {
   let e = [],
     t = [],
     n = [];
   return () => {
-    let r = A.values("FAVORITE"),
-      i = A.values("DEFAULT");
+    let r = v.values("FAVORITE"),
+      i = v.values("DEFAULT");
     return (e !== r || t !== i) && (n = [], r.forEach(e => {
       let {
         channelId: t
@@ -146,11 +146,11 @@ class L extends(r = Chunk311907.Ay.Store) {
     return x()
   }
   getSortedChannels() {
-    return [A.values("FAVORITE"), A.values("DEFAULT")]
+    return [v.values("FAVORITE"), v.values("DEFAULT")]
   }
   serializeForOverlay() {
     let e = {};
-    return A.values().forEach(t => {
+    return v.values().forEach(t => {
       let {
         channelId: n,
         lastMessageId: r
@@ -159,7 +159,7 @@ class L extends(r = Chunk311907.Ay.Store) {
     }), e
   }
 }
-b(L, "displayName", "PrivateChannelSortStore");
+y(L, "displayName", "PrivateChannelSortStore");
 let j = new L(Chunk73153.h, {
   CONNECTION_OPEN: T,
   CONNECTION_OPEN_SUPPLEMENTAL: T,
@@ -171,5 +171,5 @@ let j = new L(Chunk73153.h, {
   CHANNEL_DELETE: R,
   MESSAGE_CREATE: w,
   GUILD_CREATE: P,
-  LOGOUT: v
+  LOGOUT: A
 })

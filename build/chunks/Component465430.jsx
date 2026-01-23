@@ -66,11 +66,11 @@ function m(e) {
       className: m,
       iconClassName: g,
       title: E,
-      body: b,
-      style: y,
+      body: y,
+      style: b,
       align: O = o.A.Align.START
     } = e,
-    A = o.A.Direction.HORIZONTAL;
+    v = o.A.Direction.HORIZONTAL;
   if (null != d) {
     let {
       position: e
@@ -82,27 +82,27 @@ function m(e) {
         alt: "",
         className: a()(u.Kk, g)
       }, n))
-    }), e === h && (A = o.A.Direction.HORIZONTAL_REVERSE)
+    }), e === h && (v = o.A.Direction.HORIZONTAL_REVERSE)
   } else null != _ && (n = _);
-  let v = true;
-  return i === s.Z.Types.PRIMARY && (v = false), (0, r.jsx)(s.Z, {
+  let A = true;
+  return i === s.Z.Types.PRIMARY && (A = false), (0, r.jsx)(s.Z, {
     className: a()(u.RJ, m),
     type: i,
-    style: y,
+    style: b,
     children: (0, r.jsxs)(o.A, {
-      direction: A,
+      direction: v,
       align: O,
       children: [t, (0, r.jsxs)(o.A.Child, {
         children: [null != E && "" !== E ? (0, r.jsx)(c.z, {
           className: a()(u.$G, {
-            [u.vV]: v
+            [u.vV]: A
           }),
           children: E
         }) : null, (0, r.jsx)(l.a, {
           className: a()(u.Vz, {
-            [u.vV]: v
+            [u.vV]: A
           }),
-          children: b
+          children: y
         }), n]
       })]
     })

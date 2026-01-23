@@ -86,7 +86,7 @@ function E(e) {
   }
 }
 
-function b(e) {
+function y(e) {
   switch (e[0]) {
     case "S":
       return s.z.SOURCE;
@@ -97,7 +97,7 @@ function b(e) {
   }
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = e.entries(),
     r = false;
   do {
@@ -129,7 +129,7 @@ var O = function() {
   }, {
     key: "containsHandler",
     value: function(e) {
-      return y(this.dragSources, e) || y(this.dropTargets, e)
+      return b(this.dragSources, e) || b(this.dropTargets, e)
     }
   }, {
     key: "getSource",
@@ -155,12 +155,12 @@ var O = function() {
   }, {
     key: "isSourceId",
     value: function(e) {
-      return b(e) === s.z.SOURCE
+      return y(e) === s.z.SOURCE
     }
   }, {
     key: "isTargetId",
     value: function(e) {
-      return b(e) === s.z.TARGET
+      return y(e) === s.z.TARGET
     }
   }, {
     key: "removeSource",

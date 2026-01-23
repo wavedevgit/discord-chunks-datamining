@@ -27,7 +27,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk351341 = require("./351341.js");
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function T(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -89,7 +89,7 @@ let P = e => {
   let {
     emojiDescriptors: t,
     emojiSize: a,
-    onSelect: I,
+    onSelect: S,
     onSelectSoundmoji: C,
     onInspect: w,
     surrogateCodePoint: P,
@@ -132,21 +132,21 @@ let P = e => {
             ref: m,
             tabIndex: g,
             onFocus: E
-          } = h, b = R(h, ["ref", "tabIndex", "onFocus"]), y = er.rowIndex === p && er.columnIndex === _, O = () => {
+          } = h, y = R(h, ["ref", "tabIndex", "onFocus"]), b = er.rowIndex === p && er.columnIndex === _, O = () => {
             L.current || j.current || w(e)
           };
-          return (0, i.createElement)("li", N(T({}, b), {
+          return (0, i.createElement)("li", N(T({}, y), {
             key: t
           }), (0, r.jsx)(l.vN3, {
             children: (0, r.jsx)("button", {
               "aria-label": d,
               ref: m,
-              className: s()(S._X, {
-                [S.lG]: el,
-                [S.Lh]: ec,
-                [S.Bx]: y && !f,
-                [null != F ? F : ""]: y,
-                [S.TV]: ea === t
+              className: s()(I._X, {
+                [I.lG]: el,
+                [I.Lh]: ec,
+                [I.Bx]: b && !f,
+                [null != F ? F : ""]: b,
+                [I.TV]: ea === t
               }),
               onFocus: null != E ? E : O,
               onMouseOver: O,
@@ -159,23 +159,23 @@ let P = e => {
           }))
         };
       switch (e.type) {
-        case b.bm.EXPAND_OR_COLLAPSE_EMOJIS: {
+        case y.bm.EXPAND_OR_COLLAPSE_EMOJIS: {
           let {
             visibleRowIndex: t,
             columnIndex: i
           } = e, a = er.rowIndex === t && er.columnIndex === i, s = t => {
-            t.stopPropagation(), L.current || j.current || (I(e, {
+            t.stopPropagation(), L.current || j.current || (S(e, {
               isFinalSelection: true,
               toggleFavorite: false
-            }), (0, d.G)(e.guildId), e.sectionCollapsedToThreeRows || K(), E.default.track(A.HAw.EMOJI_PICKER_THREE_ROW_COLLAPSE_TOGGLED, {
+            }), (0, d.G)(e.guildId), e.sectionCollapsedToThreeRows || K(), E.default.track(v.HAw.EMOJI_PICKER_THREE_ROW_COLLAPSE_TOGGLED, {
               collapsed: e.sectionCollapsedToThreeRows,
               guild_id: e.guildId
             }))
-          }, l = e.sectionCollapsedToThreeRows ? a ? (0, o.Mw)(et) ? $ : ee : (0, o.Mw)(et) ? z : q : a ? (0, o.Mw)(et) ? Q : J : (0, o.Mw)(et) ? X : Z, c = v.intl.string(e.sectionCollapsedToThreeRows ? v.t.NZI2Zk : v.t["/K2RDH"]);
+          }, l = e.sectionCollapsedToThreeRows ? a ? (0, o.Mw)(et) ? $ : ee : (0, o.Mw)(et) ? z : q : a ? (0, o.Mw)(et) ? Q : J : (0, o.Mw)(et) ? X : Z, c = A.intl.string(e.sectionCollapsedToThreeRows ? A.t.NZI2Zk : A.t["/K2RDH"]);
           return n({
             handleSelect: s,
             icon: (0, r.jsx)("img", {
-              className: S.Kk,
+              className: I.Kk,
               src: l,
               alt: ""
             }),
@@ -183,13 +183,13 @@ let P = e => {
             shouldShowRoundHighlight: true
           })
         }
-        case b.bm.EMOJI: {
+        case y.bm.EMOJI: {
           var a;
           let {
             columnIndex: n,
             visibleRowIndex: i
           } = e, s = er.rowIndex === i && er.columnIndex === n;
-          return (0, r.jsx)(y.A, {
+          return (0, r.jsx)(b.A, {
             rowIndex: M,
             descriptor: e,
             emojiItemKey: t,
@@ -199,7 +199,7 @@ let P = e => {
             surrogateCodePoint: P,
             allowAnimatedEmoji: k,
             selectedItemClassName: F,
-            onSelect: I,
+            onSelect: S,
             onInspect: w,
             channelGuildId: G,
             getEmojiItemProps: D,
@@ -214,20 +214,20 @@ let P = e => {
             inNitroLockedSection: W
           }, t)
         }
-        case b.bm.SOUNDMOJI:
+        case y.bm.SOUNDMOJI:
           return
       }
     },
     ed = e => (0, r.jsx)("ul", N(T({}, x(M)), {
-      className: s()(S.ND, {
-        [S.HO]: el,
-        [S.X$]: ec
+      className: s()(I.ND, {
+        [I.HO]: el,
+        [I.X$]: ec
       }),
       ref: eo,
       children: e.map(eu)
     }));
   if (V === O.R2.SOUNDMOJI) return (0, r.jsx)("ul", {
-    className: S.ND,
+    className: I.ND,
     ref: eo,
     children: (0, r.jsx)(h.A, {
       channelId: B,
@@ -244,32 +244,32 @@ let P = e => {
       return t.subCategory === O.tm.NEWLY_ADDED_EMOJI && t.emoji.type === f.i.GUILD && p.A.isNewerThanLastSeen(t.emoji.guildId, t.emoji.id)
     });
   return 0 === ep.length ? ed(t) : (0, r.jsxs)("div", {
-    className: S.Ng,
+    className: I.Ng,
     children: [(0, r.jsx)("div", {
-      className: s()(S.V6, {
-        [S.$3]: 0 === ef.length
+      className: s()(I.V6, {
+        [I.$3]: 0 === ef.length
       }),
       children: ed(ef)
     }), (0, r.jsxs)("div", {
-      className: S.bc,
+      className: I.bc,
       children: [(0, r.jsx)("div", {
-        className: s()(S.eE, {
-          [S.eM]: 1 === ep.length,
-          [S.Wk]: ef.length > 0
+        className: s()(I.eE, {
+          [I.eM]: 1 === ep.length,
+          [I.Wk]: ef.length > 0
         }),
         children: ed(ep)
       }), (0, r.jsxs)("div", {
-        className: s()(S.lD, {
-          [S.EI]: el,
-          [S.qU]: ec,
-          [S.Wk]: ef.length > 0
+        className: s()(I.lD, {
+          [I.EI]: el,
+          [I.qU]: ec,
+          [I.Wk]: ef.length > 0
         }),
         children: [(0, r.jsx)(g.A, {
-          foreground: S.rI
+          foreground: I.rI
         }), (0, r.jsx)(l.Text, {
           variant: "text-xs/semibold",
           color: "always-white",
-          children: v.intl.string(v.t.y2b7CA)
+          children: A.intl.string(A.t.y2b7CA)
         })]
       })]
     })]

@@ -29,7 +29,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,36 +54,36 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = v(e, t), Object.getOwnPropertySymbols)
+  if (a = A(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function v(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let S = {
+let I = {
     xs: "text-xs/medium",
     sm: "text-sm/medium",
     md: "text-md/medium"
   },
-  I = {
+  S = {
     xs: "xxs",
     sm: "xs",
     md: "refresh_sm"
@@ -102,9 +102,9 @@ function C(e) {
     size: _ = "md",
     text: h,
     icon: E,
-    iconPosition: y = "start",
-    iconOpticalOffsetMargin: v = 0,
-    fullWidth: I = false,
+    iconPosition: b = "start",
+    iconOpticalOffsetMargin: A = 0,
+    fullWidth: S = false,
     focusProps: T,
     loading: C,
     loadingStartedLabel: P,
@@ -124,10 +124,10 @@ function C(e) {
     className: W,
     style: K,
     buttonRef: z
-  } = e, q = A(e, ["role", "variant", "size", "text", "icon", "iconPosition", "iconOpticalOffsetMargin", "fullWidth", "focusProps", "loading", "loadingStartedLabel", "loadingFinishedLabel", "rounded", "type", "rel", "onClick", "onDoubleClick", "onMouseEnter", "onMouseLeave", "onMouseUp", "onMouseDown", "onKeyDown", "disabled", "minWidth", "className", "style", "buttonRef"]), X = (0, u.C)(), Z = null != (t = null == X ? true : X.size) ? t : _, Q = null != (n = null == X ? true : X.fullWidth) ? n : I, $ = null != h, J = i.useRef(null), ee = null != z ? z : J, et = (0, r.jsx)(w, {
+  } = e, q = v(e, ["role", "variant", "size", "text", "icon", "iconPosition", "iconOpticalOffsetMargin", "fullWidth", "focusProps", "loading", "loadingStartedLabel", "loadingFinishedLabel", "rounded", "type", "rel", "onClick", "onDoubleClick", "onMouseEnter", "onMouseLeave", "onMouseUp", "onMouseDown", "onKeyDown", "disabled", "minWidth", "className", "style", "buttonRef"]), X = (0, u.C)(), Z = null != (t = null == X ? true : X.size) ? t : _, Q = null != (n = null == X ? true : X.fullWidth) ? n : S, $ = null != h, J = i.useRef(null), ee = null != z ? z : J, et = (0, r.jsx)(w, {
     icon: E,
-    iconOpticalOffsetMargin: v,
-    iconPosition: y,
+    iconOpticalOffsetMargin: A,
+    iconPosition: b,
     size: Z,
     ref: ee,
     disabled: H
@@ -142,19 +142,19 @@ function C(e) {
       className: s()(g.buttonChildren, {
         [g.loading]: C
       }),
-      children: [null != et && "start" === y && et, $ && (0, r.jsx)(m.E, {
+      children: [null != et && "start" === b && et, $ && (0, r.jsx)(m.E, {
         tag: "span",
-        variant: S[Z],
+        variant: I[Z],
         color: "none",
         lineClamp: 1,
         children: h
-      }), null != et && "end" === y && et]
+      }), null != et && "end" === b && et]
     }),
     ec = H || C,
     eu = Y;
   null != eu && "number" == typeof eu && (eu = "".concat(eu, "px"));
-  let ed = (0, r.jsx)(d.vN, O(b({}, T), {
-    children: (0, r.jsxs)("button", O(b({
+  let ed = (0, r.jsx)(d.vN, O(y({}, T), {
+    children: (0, r.jsxs)("button", O(y({
       "data-mana-component": "button",
       role: a,
       "aria-busy": C,
@@ -311,17 +311,17 @@ function w(e) {
     c = (0, r.jsx)(e, {
       color: "currentColor",
       style: u(),
-      size: I[s],
+      size: S[s],
       className: g.icon
     })
   } else if (null != t) {
     if ("rive" === t.type) {
       let e = t.asset;
-      c = (0, r.jsx)(e, O(b({}, t.riveProps), {
+      c = (0, r.jsx)(e, O(y({}, t.riveProps), {
         eventTargetRef: o,
         style: {
-          width: f.E[I[s]],
-          height: f.E[I[s]]
+          width: f.E[S[s]],
+          height: f.E[S[s]]
         }
       }))
     } else if ("sticker" === t.type) {

@@ -1,7 +1,7 @@
 /** Chunk was on 21968 **/
 /** chunk id: 268199, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f,
+  A: () => m,
   h: () => h
 });
 var i, Chunk627968 = require("./627968.js");
@@ -32,7 +32,7 @@ function u(e) {
   return e
 }
 
-function b(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,10 +44,10 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var f = ((i = {}).DENY = "DENY", i.PASSTHROUGH = "PASSTHROUGH", i.ALLOW = "ALLOW", i);
-let p = Object.keys(f);
+var m = ((i = {}).DENY = "DENY", i.PASSTHROUGH = "PASSTHROUGH", i.ALLOW = "ALLOW", i);
+let g = Object.keys(m);
 
-function m(e) {
+function b(e) {
   let {
     value: t = "PASSTHROUGH",
     onChange: n,
@@ -59,8 +59,8 @@ function m(e) {
     isDisabled: l,
     labelledBy: i
   }), {
-    ref: f
-  } = c, m = function(e, t) {
+    ref: m
+  } = c, b = function(e, t) {
     if (null == e) return {};
     var n, i, r, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -77,14 +77,14 @@ function m(e) {
       for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) i = n[r], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (l[i] = e[i]);
     return l
   }(c, ["ref"]);
-  return (0, r.jsx)("div", b(u({
+  return (0, r.jsx)("div", p(u({
     className: a()(d.Os, {
       [d.r9]: l
     }),
-    ref: f,
+    ref: m,
     id: o
-  }, m), {
-    children: p.map(e => (0, r.jsx)(g, {
+  }, b), {
+    children: g.map(e => (0, r.jsx)(f, {
       type: e,
       isSelected: t === e,
       onSelect: e => {
@@ -94,11 +94,11 @@ function m(e) {
   }))
 }
 
-function g(e) {
+function f(e) {
   let t, n, i, {
     type: l,
-    onSelect: f,
-    isSelected: p
+    onSelect: m,
+    isSelected: g
   } = e;
   switch (l) {
     case "DENY":
@@ -110,21 +110,21 @@ function g(e) {
     default:
       i = c.intl.string(c.t.ujC3ZS), t = o.Fb4, n = d.le
   }
-  let m = (0, s.Gx)({
-    isSelected: p,
+  let b = (0, s.Gx)({
+    isSelected: g,
     label: i
   });
-  return (0, r.jsx)(o.DUT, b(u({
+  return (0, r.jsx)(o.DUT, p(u({
     className: a()(d.AS, n, {
-      [d.wH]: p
+      [d.wH]: g
     }),
-    onClick: () => f(l)
-  }, m), {
+    onClick: () => m(l)
+  }, b), {
     children: (0, r.jsx)(t, {
       color: "currentColor",
       size: "xs"
     })
   }))
 }
-m.Types = f;
-let h = m
+b.Types = m;
+let h = b

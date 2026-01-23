@@ -2,7 +2,7 @@
 /** chunk id: 270486, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,7 +17,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk272396 = require("./272396.js");
 
-function f() {
+function p() {
   let e = (0, s.bG)([u.A], () => u.A.advancedMode),
     [t] = i.useState(new r.A.Value(+!!e));
   return (0, l.jsxs)(l.Fragment, {

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk735438 = require("./735438.js"),
-  r = require.n(Chunk735438),
+  l = require.n(Chunk735438),
   Chunk330140 = require("./330140.js"),
   Chunk582754 = require("./582754.js"),
   Chunk397927 = require("./397927.js"),
@@ -17,38 +17,38 @@ var Chunk735438 = require("./735438.js"),
   Chunk581446 = require("./581446.js"),
   Chunk913221 = require("./913221.js"),
   Chunk415972 = require("./415972.js");
-let v = [require("./239686.js"), require("./87813.js"), require("./590564.js")],
-  f = [Chunk581446, Chunk913221, Chunk415972],
-  h = [() => o.intl.string(o.t["w2o/60"]), () => o.intl.string(o.t.FiAvKg), () => o.intl.string(o.t.vKUFek), () => o.intl.string(o.t.veQl5T), () => o.intl.string(o.t.Pxb7BR), () => o.intl.string(o.t["W03w++"]), () => o.intl.string(o.t["95HTb5"]), () => o.intl.string(o.t["+XFelz"]), () => o.intl.string(o.t.hedHel), () => o.intl.string(o.t.jgC65t)],
+let _ = [require("./239686.js"), require("./87813.js"), require("./590564.js")],
+  b = [Chunk581446, Chunk913221, Chunk415972],
+  h = [() => g.intl.string(g.t["w2o/60"]), () => g.intl.string(g.t.FiAvKg), () => g.intl.string(g.t.vKUFek), () => g.intl.string(g.t.veQl5T), () => g.intl.string(g.t.Pxb7BR), () => g.intl.string(g.t["W03w++"]), () => g.intl.string(g.t["95HTb5"]), () => g.intl.string(g.t["+XFelz"]), () => g.intl.string(g.t.hedHel), () => g.intl.string(g.t.jgC65t)],
   u = t => {
     let {
       transitionState: s,
       onClose: e
-    } = t, i = (0, c.Ay)(), p = (0, g.GV)(), x = (0, n.Mw)(i) ? f : v, m = (0, l.A)(() => r().sample(x), [x]), u = (0, l.A)(() => r().sample(h), []);
+    } = t, i = (0, o.Ay)(), x = (0, c.GV)(), m = (0, n.Mw)(i) ? b : _, v = (0, r.A)(() => l().sample(m), [m]), u = (0, r.A)(() => l().sample(h), []);
     return (0, a.jsxs)(d.EOs, {
       transitionState: s,
-      className: b.zr,
-      "aria-labelledby": p,
+      className: p.zr,
+      "aria-labelledby": x,
       parentComponent: "FollowSuccessModal",
       children: [(0, a.jsx)("img", {
         alt: "",
-        src: m,
-        className: b.Sl
+        src: v,
+        className: p.Sl
       }), (0, a.jsxs)(d.$mQ, {
-        className: b.yl,
+        className: p.yl,
         children: [(0, a.jsx)(d.Heading, {
           variant: "heading-xl/semibold",
-          className: b._J,
-          id: p,
+          className: p._J,
+          id: x,
           children: u()
         }), (0, a.jsx)(d.Text, {
           color: "text-muted",
           variant: "text-md/medium",
-          className: b.rf,
-          children: o.intl.string(o.t["2QbSea"])
+          className: p.rf,
+          children: g.intl.string(g.t["2QbSea"])
         }), (0, a.jsx)(d.Button, {
           variant: "primary",
-          text: o.intl.string(o.t["+IrDzN"]),
+          text: g.intl.string(g.t["+IrDzN"]),
           onClick: e
         })]
       })]

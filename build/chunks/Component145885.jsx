@@ -26,19 +26,19 @@ function E(e) {
     message: t
   } = (0, m.jc)(), n = (0, a.bG)([_.A], () => _.A.getChannel(null == t ? true : t.channel_id)), {
     shouldHideMediaOptions: E,
-    enabledContentHarmTypeFlags: b,
-    gifAutoPlay: y,
+    enabledContentHarmTypeFlags: y,
+    gifAutoPlay: b,
     getGifFavButton: O,
-    getOnMediaItemContextMenu: A
+    getOnMediaItemContextMenu: v
   } = (0, f.X)();
   if (null == t || null == n) return null;
-  let v = e.items.map(e => (0, o.FX)(e.media, t)).filter(e => "INVALID" !== e.type),
+  let A = e.items.map(e => (0, o.FX)(e.media, t)).filter(e => "INVALID" !== e.type),
     {
-      srcToOnClickOverride: S,
-      srcToHandlePreloadImage: I
-    } = v.length > 1 ? (0, l.o)(v, {
+      srcToOnClickOverride: I,
+      srcToHandlePreloadImage: S
+    } = A.length > 1 ? (0, l.o)(A, {
       shouldHideMediaOptions: E,
-      enabledContentHarmTypeFlags: b
+      enabledContentHarmTypeFlags: y
     }, "Media Mosaic") : {
       srcToOnClickOverride: {},
       srcToHandlePreloadImage: {}
@@ -52,7 +52,7 @@ function E(e) {
   let C = e.items.map((e, n) => {
     let r = e.media,
       a = (e, t, n) => {},
-      o = null == A ? true : A(r),
+      o = null == v ? true : v(r),
       l = {
         message: t,
         item: {
@@ -67,7 +67,7 @@ function E(e) {
           srcIsAnimated: (0, i.Lt)(r.flags, s.e5.IS_ANIMATED)
         },
         onContextMenu: o,
-        autoPlayGif: y,
+        autoPlayGif: b,
         getObscureReason: T,
         renderImageComponent: d.Bu,
         renderVideoComponent: d.PI,
@@ -85,7 +85,7 @@ function E(e) {
         proxyURL: r.proxyUrl,
         url: r.url
       });
-    return c in S && (l.onClick = S[c], l.handlePreloadImage = I[c]), l
+    return c in I && (l.onClick = I[c], l.handlePreloadImage = S[c]), l
   });
   return (0, r.jsx)("div", {
     children: (0, r.jsx)(p.A, {

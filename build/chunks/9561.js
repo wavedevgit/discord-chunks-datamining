@@ -26,14 +26,14 @@ let d = {
       n = e.options,
       a = e.name;
     if (!t.modifiersData[a]._skip) {
-      for (var d = n.mainAxis, f = true === d || d, p = n.altAxis, _ = true === p || p, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, b = n.altBoundary, y = n.flipVariations, O = true === y || y, A = n.allowedAutoPlacements, v = t.options.placement, S = (0, i.A)(v), I = S === v, T = h || (I || !O ? [(0, r.A)(v)] : u(v)), C = [v].concat(T).reduce(function(e, n) {
+      for (var d = n.mainAxis, f = true === d || d, p = n.altAxis, _ = true === p || p, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, y = n.altBoundary, b = n.flipVariations, O = true === b || b, v = n.allowedAutoPlacements, A = t.options.placement, I = (0, i.A)(A), S = I === A, T = h || (S || !O ? [(0, r.A)(A)] : u(A)), C = [A].concat(T).reduce(function(e, n) {
           return e.concat((0, i.A)(n) === l.qZ ? (0, o.A)(t, {
             placement: n,
             boundary: g,
             rootBoundary: E,
             padding: m,
             flipVariations: O,
-            allowedAutoPlacements: A
+            allowedAutoPlacements: v
           }) : n)
         }, []), N = t.rects.reference, R = t.rects.popper, w = new Map, P = true, D = C[0], x = 0; x < C.length; x++) {
         var L = C[x],
@@ -45,7 +45,7 @@ let d = {
             placement: L,
             boundary: g,
             rootBoundary: E,
-            altBoundary: b,
+            altBoundary: y,
             padding: m
           }),
           V = k ? M ? l.pG : l.kb : M ? l.sQ : l.Mn;

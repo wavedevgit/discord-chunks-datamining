@@ -5,7 +5,7 @@ require.d(exports, {
   dL: () => N,
   eO: () => C,
   n1: () => T,
-  ud: () => I
+  ud: () => S
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -35,7 +35,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,12 +59,12 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = e => {
+let S = e => {
     let {
       skuId: t,
       isGift: n,
@@ -75,7 +75,7 @@ let I = e => {
     i.useEffect(() => {
       (c.current !== t || d.current !== n) && (h((0, a.A)()), c.current = t, d.current = n)
     }, [t, n]);
-    let [m, g] = (0, o.yK)([b.A], () => [b.A.isFetching(t), b.A.get(t)]);
+    let [m, g] = (0, o.yK)([y.A], () => [y.A.isFetching(t), y.A.get(t)]);
     return i.useEffect(() => {
       null != g || m || (0, u.EX)(r, t, s.g.VARIANTS_GROUP).catch(e => {})
     }, [r, t, g, m]), {
@@ -133,14 +133,14 @@ let I = e => {
       loadId: f,
       excludeSubscriptionPlansBySKU: p,
       renderHeader: E,
-      hideErrors: b,
+      hideErrors: y,
       disablePurchases: O,
-      paymentContextOverrides: v
-    } = e, I = b ? A({
+      paymentContextOverrides: A
+    } = e, S = y ? v({
       purchasePreviewError: null,
       purchaseError: null
-    }, v) : A({}, v);
-    O && (I.disablePurchasesForStorybook = true);
+    }, A) : v({}, A);
+    O && (S.disablePurchasesForStorybook = true);
     let T = "".concat(i, "-").concat(a, "-").concat(f);
     return (0, r.jsx)(h.PaymentContextProvider, {
       stepConfigs: d,
@@ -150,7 +150,7 @@ let I = e => {
       activeSubscription: null,
       purchaseType: u,
       excludeSubscriptionPlansBySKU: p,
-      children: (0, r.jsx)(y.Y, S(A({}, I), {
+      children: (0, r.jsx)(b.Y, I(v({}, S), {
         children: (0, r.jsx)(m.Qt, {
           children: (0, r.jsx)(_.dX, {
             isGift: a,

@@ -19,7 +19,7 @@ function r(e) {
   return e
 }
 require.d(exports, {
-  A: () => a,
+  A: () => s,
   x: () => i
 });
 let l = (0, require("./839214.js").D)(() => ({
@@ -29,7 +29,7 @@ let l = (0, require("./839214.js").D)(() => ({
 function i(e, t) {
   l.setState(n => {
     var l, i;
-    let a = n.channelDrafts[e];
+    let s = n.channelDrafts[e];
     return {
       channelDrafts: (l = r({}, n.channelDrafts), i = i = {
         [e]: r({}, {
@@ -37,7 +37,7 @@ function i(e, t) {
           title: "",
           publish: true,
           createThread: true
-        }, a, t)
+        }, s, t)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -51,4 +51,4 @@ function i(e, t) {
     }
   })
 }
-let a = l
+let s = l

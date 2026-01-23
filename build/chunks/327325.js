@@ -15,16 +15,16 @@ var Chunk963027 = require("./963027.js"),
 
 function u(e) {
   switch (e.ref_type) {
-    case c.bN.CHANNEL: {
+    case o.bN.CHANNEL: {
       let t = l.A.getChannel(e.ref_id);
       return null != t ? function(e) {
         let t = (0, i.m1)(e, a.default, s.A);
         switch (e.type) {
-          case o.rbe.GUILD_VOICE:
+          case c.rbe.GUILD_VOICE:
             return d.intl.formatToPlainString(d.t.bkpadO, {
               channelName: t
             });
-          case o.rbe.GUILD_STAGE_VOICE:
+          case c.rbe.GUILD_STAGE_VOICE:
             return d.intl.formatToPlainString(d.t.TPPk2T, {
               channelName: t
             });
@@ -35,7 +35,7 @@ function u(e) {
         }
       }(t) : ""
     }
-    case c.bN.INTANGIBLE:
+    case o.bN.INTANGIBLE:
       var t;
       return null != (t = e.name) ? t : ""
   }

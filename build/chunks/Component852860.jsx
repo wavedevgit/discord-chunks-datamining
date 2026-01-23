@@ -1,8 +1,8 @@
 /** Chunk was on 28636 **/
 /** chunk id: 852860, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => v,
-  o: () => f
+  A: () => x,
+  o: () => _
 }), require("./747238.js"), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,10 +26,10 @@ function p(e, t, n) {
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
+    }))), r.forEach(function(t) {
       p(e, t, n[t])
     })
   }
@@ -40,8 +40,8 @@ function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, l)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -49,69 +49,69 @@ function m(e, t) {
   }), e
 }
 
-function b(e, t) {
+function g(e, t) {
   if (null == e) return {};
-  var n, l, a, r = {};
+  var n, r, l, i = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
-    for (a = 0, n = Reflect.ownKeys(e); a < n.length; a++) l = n[a], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (r[l] = e[l]);
-    return r
+    for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+    return i
   }
-  if (r = function(e, t) {
+  if (i = function(e, t) {
       if (null == e) return {};
-      var n, l, a = {},
-        r = Object.getOwnPropertyNames(e);
-      for (l = 0; l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
-      return a
+      var n, r, l = {},
+        i = Object.getOwnPropertyNames(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
+      return l
     }(e, t), Object.getOwnPropertySymbols)
-    for (a = 0, n = Object.getOwnPropertySymbols(e); a < n.length; a++) l = n[a], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (r[l] = e[l]);
-  return r
+    for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+  return i
 }
 
-function f(e) {
+function _(e) {
   return "".concat(e.split("?")[0], "?size=").concat(2048)
 }
-let g = e => {
+let b = e => {
   let {
     index: t,
     items: n
-  } = e, a = b(e, ["index", "items"]), r = n[t], i = 0, c = [];
+  } = e, l = g(e, ["index", "items"]), i = n[t], a = 0, o = [];
   for (let e of n)
     if (e.type === d.geh.IMG) {
       let {
         width: t,
         height: n,
-        src: l
+        src: r
       } = e;
-      e === r && (i = c.length), c.push({
-        src: f(l),
+      e === i && (a = o.length), o.push({
+        src: _(r),
         width: t,
         height: n
       })
-    } return (0, l.jsx)(s.A, m(h({}, a), {
-    items: c,
-    startWith: i
+    } return (0, r.jsx)(s.A, m(h({}, l), {
+    items: o,
+    startWith: a
   }))
 };
-class x extends Chunk64700.Component {
+class f extends Chunk64700.Component {
   render() {
     let e = this.props,
       {
         pageSize: t
       } = e,
-      n = b(e, ["pageSize"]),
-      a = t === o.q.SMALL ? c.A : i.A;
-    return (0, l.jsx)(a, m(h({}, n), {
+      n = g(e, ["pageSize"]),
+      l = t === c.q.SMALL ? o.A : a.A;
+    return (0, r.jsx)(l, m(h({}, n), {
       onCurrentItemClick: this.handleCurrentItemClick
     }))
   }
   constructor(...e) {
     super(...e), p(this, "handleCurrentItemClick", (e, t) => {
-      e.type !== d.geh.IMG || (0, r.ueM)() || (0, r.qfG)(e => (0, l.jsx)(r.EOs, m(h({
-        size: r.rIJ.DYNAMIC,
+      e.type !== d.geh.IMG || (0, i.ueM)() || (0, i.qfG)(e => (0, r.jsx)(i.EOs, m(h({
+        size: i.rIJ.DYNAMIC,
         "aria-label": u.intl.string(u.t.X4IxWL)
       }, e), {
         parentComponent: "ApplicationStoreListingCarousel",
-        children: (0, l.jsx)(g, m(h({}, e), {
+        children: (0, r.jsx)(b, m(h({}, e), {
           index: t,
           items: this.props.items
         }))
@@ -119,4 +119,4 @@ class x extends Chunk64700.Component {
     })
   }
 }
-let v = x
+let x = f

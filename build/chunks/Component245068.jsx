@@ -27,13 +27,13 @@ let E = Chunk64700.memo(function(e) {
     forCollectedModal: a
   } = e, {
     firstProfileEffect: E,
-    firstAvatarDecoration: b,
-    firstNameplate: y
-  } = (0, f.f5)(t), O = (0, p.br)(b), A = (0, c.Ay)(), v = (0, o.qB)(A), S = null != y && null != b && null != E, I = S ? l._3J.SIZE_72 : l._3J.SIZE_80, T = v ? g : m;
+    firstAvatarDecoration: y,
+    firstNameplate: b
+  } = (0, f.f5)(t), O = (0, p.br)(y), v = (0, c.Ay)(), A = (0, o.qB)(v), I = null != b && null != y && null != E, S = I ? l._3J.SIZE_72 : l._3J.SIZE_80, T = A ? g : m;
   return (0, r.jsxs)("div", {
     className: s()(h.kL, {
-      [h.ib]: !S,
-      [h.c$]: S
+      [h.ib]: !I,
+      [h.c$]: I
     }),
     children: [null != E && (0, r.jsx)("div", {
       className: h.NM,
@@ -44,11 +44,11 @@ let E = Chunk64700.memo(function(e) {
         delayProfileEffectIntro: a,
         withScaleAnimation: a
       })
-    }), S && (0, r.jsx)("div", {
+    }), I && (0, r.jsx)("div", {
       className: h.M4,
       children: (0, r.jsx)(u.A, {
         user: i,
-        nameplate: y,
+        nameplate: b,
         isHighlighted: n,
         showPlaceholderUser: !n,
         pendingAvatarDecoration: O
@@ -58,7 +58,7 @@ let E = Chunk64700.memo(function(e) {
       children: (0, r.jsx)(_.i, {
         item: O,
         user: i,
-        avatarSize: I,
+        avatarSize: S,
         isHighlighted: n,
         avatarPlaceholderSrc: T,
         className: h.my

@@ -18,7 +18,7 @@ function d(e) {
     transitionState: t,
     onClose: n,
     handleResolveFlag: d
-  } = e, [f, p] = l.useState(false);
+  } = e, [p, h] = l.useState(false);
   return (0, r.jsx)(i.Modal, {
     transitionState: t,
     onClose: n,
@@ -27,12 +27,12 @@ function d(e) {
     actions: [{
       text: c.intl.string(o.default.ctefO2),
       onClick: () => {
-        f && a.w.set(u, true), n(), d()
+        p && s.w.set(u, true), n(), d()
       }
     }],
-    actionBarInput: (0, r.jsx)(s.Checkbox, {
-      checked: f,
-      onChange: e => p(e),
+    actionBarInput: (0, r.jsx)(a.Checkbox, {
+      checked: p,
+      onChange: e => h(e),
       label: c.intl.string(o.default["3puq5c"]),
       labelType: "secondary"
     })

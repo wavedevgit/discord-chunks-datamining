@@ -2,13 +2,13 @@
 /** chunk id: 249584, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   HW: () => L,
-  K8: () => H,
-  UB: () => G,
-  YX: () => B,
+  K8: () => F,
+  UB: () => k,
+  YX: () => H,
   bo: () => U,
-  jz: () => V,
-  lw: () => k,
-  mn: () => F
+  jz: () => B,
+  lw: () => G,
+  mn: () => V
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -50,7 +50,7 @@ function L(e) {
     guildId: t,
     powerup: n,
     channelRowRef: l,
-    markAsDismissed: a
+    markAsDismissed: s
   } = e;
   return (0, r.jsx)(K, {
     asset: (0, r.jsx)(y.b, {
@@ -68,16 +68,16 @@ function L(e) {
       onClick: () => (0, A.A)(t, u.A.GUILD_POWERUPS_COACHMARK_LEVEL_UP, n.skuId)
     }],
     targetElementRef: l,
-    markAsDismissed: a
+    markAsDismissed: s
   })
 }
 
-function G(e) {
+function k(e) {
   let {
     guildId: t,
     markAsDismissed: n,
     channelRowRef: l
-  } = e, i = (0, m.A)(t);
+  } = e, i = (0, b.A)(t);
   return (0, r.jsx)(c.HZ, {
     targetElementRef: l,
     assetUrl: R.A,
@@ -102,22 +102,22 @@ function G(e) {
   })
 }
 
-function k(e) {
+function G(e) {
   let {
     guildId: t,
     powerups: n,
     channelRowRef: l,
-    markAsDismissed: a
-  } = e, o = (0, s.bG)([p.A], () => {
+    markAsDismissed: s
+  } = e, o = (0, a.bG)([h.A], () => {
     var e;
-    return null == (e = p.A.getGuild(t)) ? true : e.name
+    return null == (e = h.A.getGuild(t)) ? true : e.name
   }), {
     onActivate: c,
     isLoading: d,
-    error: f
-  } = (0, O.A)(t, n[0]), h = (0, b.A)(n[0], true);
-  if ((0, j.A)(f), 0 === n.length) return;
-  let g = n.length >= 3 ? N.intl.formatToPlainString(I.default["6Sv+3M"], {
+    error: p
+  } = (0, _.A)(t, n[0]), f = (0, g.A)(n[0], true);
+  if ((0, O.A)(p), 0 === n.length) return;
+  let m = n.length >= 3 ? N.intl.formatToPlainString(I.default["6Sv+3M"], {
       perk: n[0].title,
       perk2: n[1].title,
       perk3: n[2].title
@@ -126,30 +126,30 @@ function k(e) {
     }) : N.intl.formatToPlainString(I.default.ZF8NT6, {
       perk: n[0].title
     }),
-    m = 1 === n.length;
+    b = 1 === n.length;
   return (0, r.jsx)(K, {
     size: 1 === n.length ? "video" : "lg",
     asset: n.length > 1 ? (0, r.jsx)(y.b, {
       className: i()(T.Sl, T.SV)
     }) : (0, r.jsx)("img", {
       alt: "",
-      src: h,
+      src: f,
       className: T.Sl
     }),
     title: N.intl.formatToPlainString(I.default.LmpChE, {
       guildName: o
     }),
-    body: g,
+    body: m,
     actions: [{
-      text: m ? N.intl.string(I.default.gSxlHf) : N.intl.string(N.t.RzWDqY),
+      text: b ? N.intl.string(I.default.gSxlHf) : N.intl.string(N.t.RzWDqY),
       variant: "primary",
       onClick: e => {
-        e.stopPropagation(), m ? c() : (0, A.A)(t, u.A.GUILD_POWERUPS_COACHMARK_PURCHASEABLE_PERKS)
+        e.stopPropagation(), b ? c() : (0, A.A)(t, u.A.GUILD_POWERUPS_COACHMARK_PURCHASEABLE_PERKS)
       },
       loading: d
     }],
     targetElementRef: l,
-    markAsDismissed: a
+    markAsDismissed: s
   })
 }
 
@@ -159,8 +159,8 @@ function U(e) {
     powerups: n,
     channelRowRef: l,
     markAsDismissed: i
-  } = e, s = n.find(e => e.skuId === a.FB);
-  if (null != s) return (0, r.jsx)(K, {
+  } = e, a = n.find(e => e.skuId === s.FB);
+  if (null != a) return (0, r.jsx)(K, {
     targetElementRef: l,
     title: N.intl.string(I.default.Ygpx4Q),
     body: N.intl.string(I.default.mmNkUA),
@@ -170,12 +170,12 @@ function U(e) {
       text: N.intl.string(N.t.RzWDqY),
       variant: "primary",
       onClick: () => {
-        (0, A.A)(t, u.A.GUILD_POWERUPS_COACHMARK_NEW_PERK_AVAILABLE, s.skuId)
+        (0, A.A)(t, u.A.GUILD_POWERUPS_COACHMARK_NEW_PERK_AVAILABLE, a.skuId)
       }
     }],
     markAsDismissed: i
   });
-  let o = n.find(e => x.aH.has(e.skuId));
+  let o = n.find(e => v.aH.has(e.skuId));
   return null != o ? (0, r.jsx)(K, {
     targetElementRef: l,
     title: N.intl.string(I.default["kA2c+n"]),
@@ -196,25 +196,25 @@ function U(e) {
   }) : null
 }
 
-function V(e) {
+function B(e) {
   let {
     guildId: t,
     type: n,
     markAsDismissed: l,
-    channelRowRef: a
+    channelRowRef: s
   } = e, {
-    available: s
-  } = (0, g.A)(t);
+    available: a
+  } = (0, m.A)(t);
   return (0, r.jsx)(K, {
-    targetElementRef: a,
+    targetElementRef: s,
     asset: (0, r.jsx)("img", {
       alt: "",
       src: P.A,
       className: i()(T.Sl, T.RV)
     }),
-    title: N.intl.string(n === h.o.GAME_SERVER_HOSTING_AVAILABLE ? S.default.wXLChx : S.default["8z8RpY"]),
-    body: n === h.o.GAME_SERVER_HOSTING_AVAILABLE ? N.intl.string(S.default.lZ6m7Q) : N.intl.format(S.default["IQ1E+d"], {
-      boostCount: s
+    title: N.intl.string(n === f.o.GAME_SERVER_HOSTING_AVAILABLE ? S.default.wXLChx : S.default["8z8RpY"]),
+    body: n === f.o.GAME_SERVER_HOSTING_AVAILABLE ? N.intl.string(S.default.lZ6m7Q) : N.intl.format(S.default["IQ1E+d"], {
+      boostCount: a
     }),
     actions: [{
       text: N.intl.string(N.t.RzWDqY),
@@ -225,7 +225,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t,
     markAsDismissed: n,
@@ -244,14 +244,14 @@ function F(e) {
       text: N.intl.string(N.t.RzWDqY),
       variant: "primary",
       onClick: () => {
-        n(C.i.TAKE_ACTION), (0, f.pX)(E.BVt.CHANNEL(t, _.VV.GAME_SERVERS))
+        n(C.i.TAKE_ACTION), (0, p.pX)(x.BVt.CHANNEL(t, E.VV.GAME_SERVERS))
       }
     }],
     markAsDismissed: n
   })
 }
 
-function H(e) {
+function F(e) {
   let {
     guildId: t,
     markAsDismissed: n,
@@ -279,8 +279,8 @@ function H(e) {
         n(C.i.TAKE_ACTION), (0, d.K)({
           guildId: t,
           location: {
-            section: E.JJy.GUILD_HEADER,
-            object: E.ZSU.BUTTON_CTA
+            section: x.JJy.GUILD_HEADER,
+            object: x.ZSU.BUTTON_CTA
           },
           scrollToPowerupCards: true
         })
@@ -290,18 +290,18 @@ function H(e) {
   })
 }
 
-function B(e) {
+function H(e) {
   let {
     guildId: t,
     markAsDismissed: n,
     channelRowRef: l
-  } = e, a = (0, m.A)(t);
+  } = e, s = (0, b.A)(t);
   return (0, r.jsx)(K, {
     targetElementRef: l,
-    position: a ? "right" : "bottom",
-    align: a ? "top" : "center",
+    position: s ? "right" : "bottom",
+    align: s ? "top" : "center",
     alignmentStrategy: "edge",
-    caretConfig: a ? {
+    caretConfig: s ? {
       align: "start"
     } : {
       align: "center"
@@ -317,11 +317,11 @@ function B(e) {
       text: N.intl.string(S.default.k0Y0BE),
       variant: "primary",
       onClick: () => {
-        n(C.i.TAKE_ACTION), a ? (0, A.A)(t, u.A.GUILD_POWERUPS_COACHMARK_GAME_SERVER_NEW_GAMES, v.W5) : (0, d.K)({
+        n(C.i.TAKE_ACTION), s ? (0, A.A)(t, u.A.GUILD_POWERUPS_COACHMARK_GAME_SERVER_NEW_GAMES, j.W5) : (0, d.K)({
           guildId: t,
           location: {
-            section: E.JJy.GUILD_HEADER,
-            object: E.ZSU.BUTTON_CTA
+            section: x.JJy.GUILD_HEADER,
+            object: x.ZSU.BUTTON_CTA
           },
           scrollToPowerupCards: true
         })
@@ -338,12 +338,12 @@ function K(e) {
       align: "start"
     },
     position: i = "right",
-    align: a = "top",
-    alignmentStrategy: s = "edge",
+    align: s = "top",
+    alignmentStrategy: a = "edge",
     markAsDismissed: u,
     size: d = "lg",
-    asset: f
-  } = e, p = function(e, t) {
+    asset: p
+  } = e, h = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -377,20 +377,20 @@ function K(e) {
       })
     }
     return e
-  }({}, p), n = n = {
+  }({}, h), n = n = {
     graphic: {
       type: "dynamic",
       component: o.DynamicGraphicComponent.GUILD_POWERUPS_COACHMARK_ASSET,
       props: {
-        asset: f
+        asset: p
       }
     },
     size: d,
     shouldShow: true,
     position: i,
     caretConfig: l,
-    alignmentStrategy: s,
-    align: a,
+    alignmentStrategy: a,
+    align: s,
     onRequestClose: () => null == u ? true : u(C.i.USER_DISMISS)
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

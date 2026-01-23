@@ -1,12 +1,12 @@
 /** Chunk was on 15682 **/
 /** chunk id: 30925, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  A: () => P
+  A: () => I
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk736653 = require("./736653.js"),
@@ -51,7 +51,7 @@ function D(e) {
   return e
 }
 
-function I(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var l = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,103 +64,103 @@ function I(e, t) {
   }), e
 }
 
-function P(e) {
+function I(e) {
   let {
     user: t,
     guild: l,
     displayName: s,
-    selectedFontId: P,
+    selectedFontId: I,
     selectedEffectId: k,
     selectedColors: R,
     onClose: G
-  } = e, z = (0, c.Ay)(), M = (0, o.Mwr)(z), [U, H] = (0, a.useState)(M), Y = (0, v.Ay)(t.id, null), {
-    bannerSrc: J
-  } = (0, N.A)({
+  } = e, z = (0, c.Ay)(), M = (0, i.Mwr)(z), [H, U] = (0, r.useState)(M), Y = (0, j.Ay)(t.id, null), {
+    bannerSrc: B
+  } = (0, v.A)({
     displayProfile: Y,
     size: 413,
     canAnimate: false
-  }), F = (0, i.cf)([y.A, d.A], () => null == l ? y.A.getAllPending() : d.A.getAllPending()), B = (0, h.V7)({
+  }), J = (0, o.cf)([A.A, d.A], () => null == l ? A.A.getAllPending() : d.A.getAllPending()), F = (0, h.V7)({
     userId: t.id,
-    image: F.pendingAvatar
+    image: J.pendingAvatar
   }), {
     userNameplate: V,
     guildNameplate: K,
     pendingNameplate: q
-  } = (0, g.rv)(t, null == l ? true : l.id), X = null != K ? (0, p.WK)(K) : true;
-  U && !M ? z = O.NJ8.DARK : !U && M && (z = O.NJ8.LIGHT);
-  let Q = (0, a.useCallback)(() => {
-      _.default.track(O.HAw.DISPLAY_NAME_STYLES_CLOSED), G()
+  } = (0, x.rv)(t, null == l ? true : l.id), X = null != K ? (0, g.WK)(K) : true;
+  H && !M ? z = y.NJ8.DARK : !H && M && (z = y.NJ8.LIGHT);
+  let Q = (0, r.useCallback)(() => {
+      S.default.track(y.HAw.DISPLAY_NAME_STYLES_CLOSED), G()
     }, [G]),
-    Z = (0, a.useCallback)(e => {
-      H(e === O.NJ8.DARK), _.default.track(O.HAw.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
-        dark: e === O.NJ8.DARK
+    Z = (0, r.useCallback)(e => {
+      U(e === y.NJ8.DARK), S.default.track(y.HAw.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
+        dark: e === y.NJ8.DARK
       })
     }, []),
-    W = (0, a.useMemo)(() => I(D({}, (0, m.FT)(t, null)), {
+    W = (0, r.useMemo)(() => w(D({}, (0, p.FT)(t, null)), {
       nick: s,
       displayNameStyles: {
-        fontId: P,
+        fontId: I,
         effectId: k,
         colors: R
       }
-    }), [t, P, k, R, s]);
+    }), [t, I, k, R, s]);
   return (0, n.jsxs)("div", {
-    className: w._l,
-    children: [(0, n.jsx)(o.rQ0, {
+    className: P._l,
+    children: [(0, n.jsx)(i.rQ0, {
       "data-migration-pending": true,
       separator: false,
-      className: w.bV,
-      children: (0, n.jsx)(o.s_y, {
+      className: P.bV,
+      children: (0, n.jsx)(i.s_y, {
         "data-migration-pending": true,
         onClick: Q,
-        innerClassName: w.b
+        innerClassName: P.b
       })
-    }), null != J && (0, n.jsx)(A.A, {
+    }), null != B && (0, n.jsx)(N.A, {
       user: t,
       displayProfile: Y,
-      themeType: C.d.MODAL_V2,
-      className: w.LX,
+      themeType: O.d.MODAL_V2,
+      className: P.LX,
       forceUserTheme: true,
       children: (0, n.jsx)("div", {
-        className: w.b8,
+        className: P.b8,
         style: {
-          backgroundImage: "url(".concat(J, ")")
+          backgroundImage: "url(".concat(B, ")")
         }
       })
-    }), (0, n.jsx)(o.NPJ, {
+    }), (0, n.jsx)(i.NPJ, {
       theme: z,
       children: e => (0, n.jsxs)("div", {
-        className: r()(w.cq, e),
+        className: a()(P.cq, e),
         inert: true,
-        children: [(0, n.jsx)(j.A, I(D({
+        children: [(0, n.jsx)(b.A, w(D({
           user: t,
           guild: l
-        }, F), {
-          pendingAvatar: B,
+        }, J), {
+          pendingAvatar: F,
           pendingGlobalName: s,
           pendingDisplayNameStyles: W.displayNameStyles,
           canUsePremiumCustomization: true,
           disabledInputs: true,
           hideCustomStatus: true,
           hideBioSection: true,
-          containerClassName: w.ME,
+          containerClassName: P.ME,
           interactive: false,
           hideExampleButton: true
-        })), (0, n.jsx)(b.A, {
+        })), (0, n.jsx)(f.A, {
           author: W,
-          message: (0, u.rh)(I(D({}, (0, f.Ay)({
+          message: (0, u.rh)(w(D({}, (0, m.Ay)({
             channelId: "1337",
             content: T.intl.string(E.default.h5Cuej)
           })), {
-            state: O.cmJ.SENT,
+            state: y.cmJ.SENT,
             id: "0"
           })),
           isGroupStart: true,
           hideSimpleEmbedContent: true,
           hideGuildTag: true,
-          className: w.OT,
+          className: P.OT,
           previewGuildId: null == l ? true : l.id
-        }), (0, n.jsx)(x.A, {
+        }), (0, n.jsx)(_.A, {
           user: t,
           guildId: null == l ? true : l.id,
           nameplate: q,
@@ -168,19 +168,19 @@ function P(e) {
           pendingGlobalName: s,
           pendingDisplayNameStyles: W.displayNameStyles,
           isHighlighted: true,
-          className: w.qF
+          className: P.qF
         })]
       })
     }), (0, n.jsxs)("div", {
-      className: w.dI,
-      children: [(0, n.jsx)(o.Text, {
+      className: P.dI,
+      children: [(0, n.jsx)(i.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: T.intl.format(E.default.prQba8, {
-          helpArticleLink: S.A.getArticleURL(O.MVz.DISPLAY_NAME_STYLES)
+          helpArticleLink: C.A.getArticleURL(y.MVz.DISPLAY_NAME_STYLES)
         })
       }), (0, n.jsx)(L, {
-        darkPreview: U,
+        darkPreview: H,
         onToggleTheme: Z
       })]
     })]
@@ -191,24 +191,24 @@ function L(e) {
   let {
     darkPreview: t,
     onToggleTheme: l
-  } = e, a = t ? O.NJ8.DARK : O.NJ8.LIGHT;
-  return (0, n.jsx)(o.IzF, {
-    className: w.xr,
-    optionClassName: w.$C,
+  } = e, r = t ? y.NJ8.DARK : y.NJ8.LIGHT;
+  return (0, n.jsx)(i.IzF, {
+    className: P.xr,
+    optionClassName: P.$C,
     options: [{
       name: "",
       tooltip: T.intl.string(T.t.b8Cei3),
-      value: O.NJ8.DARK,
-      icon: o.Zve,
-      className: a === O.NJ8.DARK ? w.iB : true
+      value: y.NJ8.DARK,
+      icon: i.Zve,
+      className: r === y.NJ8.DARK ? P.iB : true
     }, {
       name: "",
       tooltip: T.intl.string(T.t.K2sFfo),
-      value: O.NJ8.LIGHT,
-      icon: o.FVN,
-      className: a === O.NJ8.LIGHT ? w.iB : true
+      value: y.NJ8.LIGHT,
+      icon: i.FVN,
+      className: r === y.NJ8.LIGHT ? P.iB : true
     }],
-    value: a,
+    value: r,
     onChange: e => {
       let {
         value: t

@@ -29,13 +29,13 @@ let d = {},
   m = null,
   g = null,
   E = false,
-  b = false,
-  y = [],
+  y = false,
+  b = [],
   O = false,
-  A = null,
-  v = Chunk239093.Iv.DIDNT_VIOLATE_POLICY,
-  S = "",
+  v = null,
+  A = Chunk239093.Iv.DIDNT_VIOLATE_POLICY,
   I = "",
+  S = "",
   T = "",
   C = 0,
   N = null,
@@ -56,7 +56,7 @@ function x(e) {
     username: s,
     appealEligibility: o
   } = e;
-  d = a()(t, "id"), p = n, E = r, b = i, _ = false, h = true, m = null, I = s, y = o
+  d = a()(t, "id"), p = n, E = r, y = i, _ = false, h = true, m = null, S = s, b = o
 }
 
 function L(e) {
@@ -78,7 +78,7 @@ function M(e) {
     username: i,
     isAppealEligible: a
   } = e;
-  d[t.id] = t, f[t.id] = l.nU.SUCCESS, p = n, _ = false, m = null, E = r, b = a, h = true, I = i
+  d[t.id] = t, f[t.id] = l.nU.SUCCESS, p = n, _ = false, m = null, E = r, y = a, h = true, S = i
 }
 
 function k(e) {
@@ -97,33 +97,33 @@ function U(e) {
 }
 
 function G() {
-  g = null, v = c.Iv.DIDNT_VIOLATE_POLICY, S = ""
+  g = null, A = c.Iv.DIDNT_VIOLATE_POLICY, I = ""
 }
 
 function V(e) {
   let {
     signal: t
   } = e;
-  v = t
+  A = t
 }
 
 function F(e) {
   let {
     userInput: t
   } = e;
-  S = t
+  I = t
 }
 
 function B(e) {
   let {} = e;
-  O = true, A = null
+  O = true, v = null
 }
 
 function H(e) {
   let {
     classificationId: t
   } = e;
-  O = false, A = null, d[t].appeal_status = {
+  O = false, v = null, d[t].appeal_status = {
     status: l.Wi.REVIEW_PENDING
   }
 }
@@ -132,7 +132,7 @@ function Y(e) {
   let {
     error: t
   } = e;
-  O = false, A = t
+  O = false, v = t
 }
 
 function W(e) {
@@ -193,7 +193,7 @@ function J(e) {
 function ee() {
   _ = false, d = {}, p = {
     state: l.PN.ALL_GOOD
-  }, g = null, v = c.Iv.DIDNT_VIOLATE_POLICY, S = "", y = []
+  }, g = null, A = c.Iv.DIDNT_VIOLATE_POLICY, I = "", b = []
 }
 class et extends(r = Chunk311907.Ay.Store) {
   isFetching() {
@@ -224,25 +224,25 @@ class et extends(r = Chunk311907.Ay.Store) {
     return E
   }
   getIsAppealEligible() {
-    return b
-  }
-  getAppealEligibility() {
     return y
   }
+  getAppealEligibility() {
+    return b
+  }
   getAppealSignal() {
-    return v
+    return A
   }
   getFreeTextAppealReason() {
-    return S
+    return I
   }
   getIsSubmitting() {
     return O
   }
   getSubmitError() {
-    return A
+    return v
   }
   getUsername() {
-    return I
+    return S
   }
   getAgeVerificationWebviewUrl() {
     return T

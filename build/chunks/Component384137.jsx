@@ -2,7 +2,7 @@
 /** chunk id: 384137, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,7 +26,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk485508 = require("./485508.js"),
   Chunk656122 = require("./656122.js");
 
-function S() {
+function I() {
   let {
     messages: {
       numMessagesSent: e,
@@ -41,28 +41,28 @@ function S() {
         month: 0
       }
     }
-  } = (0, s.bG)([c.A], () => c.A.getCheckpointData()), S = i.useContext(l.P), I = (0, o.rdh)(S.primaryColor).hex(), {
+  } = (0, s.bG)([c.A], () => c.A.getCheckpointData()), I = i.useContext(l.P), S = (0, o.rdh)(I.primaryColor).hex(), {
     monthName: T
-  } = (0, u.od)(n, b.intl.currentLocale), C = null != t;
+  } = (0, u.od)(n, y.intl.currentLocale), C = null != t;
   return (0, r.jsxs)(_.A, {
     className: O.kL,
     children: [(0, r.jsx)(d.A, {
       className: O.Ki,
       slide: g.P7.MESSAGES,
-      videoEntrySrc: A.A,
-      videoLoopSrc: v.A
+      videoEntrySrc: v.A,
+      videoLoopSrc: A.A
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
-        className: y.DD,
+        className: b.DD,
         children: [(0, r.jsx)(a.oyn, {
           size: "refresh_sm",
-          color: I,
-          colorClass: y.d7,
-          className: y.gr
+          color: S,
+          colorClass: b.d7,
+          className: b.gr
         }), (0, r.jsx)(h.A, {
           variant: "eyebrow",
-          className: y.UP,
-          children: b.intl.format(E.default.nPTMHj, {
+          className: b.UP,
+          children: y.intl.format(E.default.nPTMHj, {
             numMessages: e
           })
         })]
@@ -71,12 +71,12 @@ function S() {
       }), (0, r.jsx)(h.A, {
         variant: "heading-xxl/medium",
         className: O.VA,
-        children: C ? b.intl.format(E.default.ixvOza, {
+        children: C ? y.intl.format(E.default.ixvOza, {
           percent: 100 - t,
           percentHook: (e, t) => (0, r.jsx)(f.A, {
             children: e
           }, t)
-        }) : b.intl.format(E.default["Zd+Ej+"], {
+        }) : y.intl.format(E.default["Zd+Ej+"], {
           month: T,
           monthHook: (e, t) => (0, r.jsx)(f.A, {
             children: e

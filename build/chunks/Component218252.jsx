@@ -2,7 +2,7 @@
 /** chunk id: 218252, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -58,7 +58,7 @@ function g(e, t) {
   return i
 }
 let E = 2.1,
-  b = e => {
+  y = e => {
     let {
       handleLearnMore: t
     } = e, n = m(e, ["handleLearnMore"]), _ = (0, i.bG)([a.A], () => a.A.getGuildId()), g = (0, o.Iu)({
@@ -66,12 +66,12 @@ let E = 2.1,
       onClick: () => {
         window.open(l.A.getArticleURL(u.MVz.NITRO_FAQ), "_blank")
       }
-    }), b = (0, s.TM)() ? f.A : p.A;
+    }), y = (0, s.TM)() ? f.A : p.A;
     return (0, r.jsx)(c.A, h({
       gradientColor: "nitro-pink",
       title: d.intl.string(d.t["9C+41g"]),
       subtitle: g,
-      videoSrc: b,
+      videoSrc: y,
       loopAt: E,
       onSecondaryClick: t
     }, n))

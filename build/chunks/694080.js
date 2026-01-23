@@ -62,33 +62,33 @@ async function h(e) {
       let {
         offerId: t,
         paymentGatewayOverride: E
-      } = n, b = true !== E ? E : _(), y = null != b || null != t ? {
-        payment_gateway: b,
+      } = n, y = true !== E ? E : _(), b = null != y || null != t ? {
+        payment_gateway: y,
         offer_id: t
       } : {}, O = await r.Bo.post({
         url: d.Rsh.USER_OFFER,
-        body: y,
+        body: b,
         rejectWithError: true,
         retries: null != c ? c.retries : true
-      }), A = null != (h = O.body.user_trial_offer) ? h : null, v = null != (m = O.body.user_discount) ? m : null, S = null != (g = O.body.user_discount_offer) ? g : null;
-      if (null != t && null != S && S.discount_id !== t) {
+      }), v = null != (h = O.body.user_trial_offer) ? h : null, A = null != (m = O.body.user_discount) ? m : null, I = null != (g = O.body.user_discount_offer) ? g : null;
+      if (null != t && null != I && I.discount_id !== t) {
         let e = Error("Returned user discount offer does not match offer ID request parameter");
         throw u.A.captureException(e, p({
           extra: {
             offer_id: t,
-            user_discount_offer: S
+            user_discount_offer: I
           }
         }, f)), e
       }
-      return null == A && (0, s.k8)(i.M.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (0, o.xB)(i.M.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING), a.h.dispatch({
+      return null == v && (0, s.k8)(i.M.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (0, o.xB)(i.M.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING), a.h.dispatch({
         type: "BILLING_USER_OFFER_FETCH_SUCCESS",
-        userTrialOffer: A,
-        userDiscount: v,
-        userDiscountOffer: S
+        userTrialOffer: v,
+        userDiscount: A,
+        userDiscountOffer: I
       }), {
-        userTrialOffer: A,
-        userDiscount: v,
-        userDiscountOffer: S
+        userTrialOffer: v,
+        userDiscount: A,
+        userDiscountOffer: I
       }
     } catch (e) {
       a.h.dispatch({

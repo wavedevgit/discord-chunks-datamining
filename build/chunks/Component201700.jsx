@@ -17,49 +17,49 @@ function g(t) {
   var e, a;
   let {
     transitionState: g,
-    onClose: b,
-    entry: p
-  } = t, [h, f] = n.useState(null != (e = p.description) ? e : ""), [m, C] = n.useState(null != (a = p.primaryCategoryId) ? a : o.mU.UNCATEGORIZED), [x, v] = n.useState(false), [y, k] = n.useState(null), I = async () => {
-    if (k(null), h !== p.description || m !== p.primaryCategoryId) {
+    onClose: p,
+    entry: b
+  } = t, [h, m] = l.useState(null != (e = b.description) ? e : ""), [C, x] = l.useState(null != (a = b.primaryCategoryId) ? a : c.mU.UNCATEGORIZED), [_, v] = l.useState(false), [y, I] = l.useState(null), k = async () => {
+    if (I(null), h !== b.description || C !== b.primaryCategoryId) {
       v(true);
       try {
-        await (0, d.FA)(p.channelId, p.guildId, h, m), v(false), b()
+        await (0, o.FA)(b.channelId, b.guildId, h, C), v(false), p()
       } catch (t) {
-        v(false), k(new s.A(t))
+        v(false), I(new s.A(t))
       }
     }
   };
-  return (0, i.jsx)(l.Modal, {
+  return (0, i.jsx)(n.Modal, {
     transitionState: g,
-    "aria-label": c.intl.string(c.t.eQ2bLp),
-    onClose: b,
-    title: c.intl.formatToPlainString(c.t.w9tsNk, {
-      guildName: p.name
+    "aria-label": d.intl.string(d.t.eQ2bLp),
+    onClose: p,
+    title: d.intl.formatToPlainString(d.t.w9tsNk, {
+      guildName: b.name
     }),
-    subtitle: c.intl.string(c.t["vEkX/8"]),
+    subtitle: d.intl.string(d.t["vEkX/8"]),
     actions: [{
       variant: "primary",
-      text: c.intl.string(c.t["R3BPH+"]),
-      onClick: I,
-      loading: x
+      text: d.intl.string(d.t["R3BPH+"]),
+      onClick: k,
+      loading: _
     }],
     children: (0, i.jsxs)("div", {
       className: u.iW,
       children: [(0, i.jsx)(r.fs1, {
-        label: c.intl.string(c.t.FFFAGt),
+        label: d.intl.string(d.t.FFFAGt),
         value: h,
         maxLength: 200,
-        placeholder: c.intl.string(c.t.VzuITC),
-        onChange: f,
+        placeholder: d.intl.string(d.t.VzuITC),
+        onChange: m,
         error: null == y ? true : y.getAnyErrorMessage()
       }), (0, i.jsx)(r.l6P, {
         selectionMode: "single",
-        label: c.intl.string(c.t.Olo8FB),
-        placeholder: c.intl.string(c.t.XqMe3N),
-        options: (0, o.g2)(p.channelId),
+        label: d.intl.string(d.t.Olo8FB),
+        placeholder: d.intl.string(d.t.XqMe3N),
+        options: (0, c.g2)(b.channelId),
         clearable: false,
-        value: m,
-        onSelectionChange: C,
+        value: C,
+        onSelectionChange: x,
         maxOptionsVisible: 4
       })]
     })

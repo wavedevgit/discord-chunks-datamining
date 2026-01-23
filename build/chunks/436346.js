@@ -157,11 +157,11 @@ module.exports = function(e, t) {
     g = [];
   if (m) {
     var E = h.getChildKeys(),
-      b = l(u, a);
-    h.getNextSiblingKey() && (g = g.concat(b)), E.isEmpty() || (g = g.concat(b.concat([u]))), g = g.concat(l(i(h, a), a))
+      y = l(u, a);
+    h.getNextSiblingKey() && (g = g.concat(y)), E.isEmpty() || (g = g.concat(y.concat([u]))), g = g.concat(l(i(h, a), a))
   }
   n = _ === h ? p(_.getCharacterList(), c, d) : _.getCharacterList().slice(0, c).concat(h.getCharacterList().slice(d));
-  var y = _.merge({
+  var b = _.merge({
       text: _.getText().slice(0, c) + h.getText().slice(d),
       characterList: n
     }),
@@ -176,13 +176,13 @@ module.exports = function(e, t) {
     }).concat(s([
       [u, null]
     ])).map(function(e, t) {
-      return t === o ? y : null
+      return t === o ? b : null
     }),
-    A = a.merge(O).filter(function(e) {
+    v = a.merge(O).filter(function(e) {
       return !!e
     });
-  return m && _ !== h && (A = f(A, _, h, a)), e.merge({
-    blockMap: A,
+  return m && _ !== h && (v = f(v, _, h, a)), e.merge({
+    blockMap: v,
     selectionBefore: t,
     selectionAfter: t.merge({
       anchorKey: o,

@@ -2,7 +2,7 @@
 /** chunk id: 892921, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,12 +15,12 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk369529 = require("./369529.js");
 
-function f(e) {
+function g(e) {
   let {
     addFormField: t,
     onSelect: n,
-    guild: c,
-    allowTerms: f
+    guild: o,
+    allowTerms: g
   } = e;
   return (0, r.jsx)(i.W1t, {
     navId: "add-questions",
@@ -33,39 +33,39 @@ function f(e) {
         id: "text-input",
         icon: (0, i.kHD)(s.A),
         label: d.intl.string(d.t.w6Q9wz),
-        action: () => (0, o.PV)(a.rX.TEXT_INPUT, t, c)
+        action: () => (0, c.PV)(a.rX.TEXT_INPUT, t, o)
       }), (0, r.jsx)(i.Drp, {
         id: "paragraph",
         icon: i.$tc,
         label: d.intl.string(d.t.gG0JBN),
-        action: () => (0, o.PV)(a.rX.PARAGRAPH, t, c)
+        action: () => (0, c.PV)(a.rX.PARAGRAPH, t, o)
       }), (0, r.jsx)(i.Drp, {
         id: "multiple-choice",
         icon: i.jsc,
         label: d.intl.string(d.t.ooKh3m),
-        action: () => (0, o.PV)(a.rX.MULTIPLE_CHOICE, t, c)
-      }), f && (0, r.jsx)(i.Drp, {
+        action: () => (0, c.PV)(a.rX.MULTIPLE_CHOICE, t, o)
+      }), g && (0, r.jsx)(i.Drp, {
         id: "terms",
         icon: i.B8Q,
         label: d.intl.string(d.t["3pz9t3"]),
-        action: () => (0, o.PV)(a.rX.TERMS, t, c)
+        action: () => (0, c.PV)(a.rX.TERMS, t, o)
       })]
     })
   })
 }
-let g = function(e) {
+let m = function(e) {
   let {
     addFormField: t,
     guild: n,
     allowTerms: i
   } = e;
-  return (0, r.jsx)(c.d, {
+  return (0, r.jsx)(o.d, {
     text: d.intl.string(d.t.CoHdoG),
     tooltipText: d.intl.string(d.t.nsI4dU),
     onClick: e => {
       (0, l.jA)(e, e => {
         var l, s;
-        return (0, r.jsx)(f, (l = function(e) {
+        return (0, r.jsx)(g, (l = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);

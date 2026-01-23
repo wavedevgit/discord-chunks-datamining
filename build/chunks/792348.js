@@ -27,12 +27,12 @@ function h(e, t) {
       audioRef: m
     } = r.useContext(o.A),
     [g, E] = r.useState(false),
-    b = (0, i.bG)([u.A], () => u.A.isPlayingSound(e.soundId), [e]);
+    y = (0, i.bG)([u.A], () => u.A.isPlayingSound(e.soundId), [e]);
   return {
     playSoundboardSound: r.useCallback(n => {
       null != m.current && m.current.pause(), null != t && (0, d.Ak)(e, t, n)
     }, [e, m, t]),
-    isPlayingSound: b,
+    isPlayingSound: y,
     previewSound: r.useCallback(async () => {
       let t = (0, f.A)(e.soundId),
         r = new(await (0, s.A)(t));

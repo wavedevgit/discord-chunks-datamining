@@ -23,7 +23,7 @@ require.d(exports, {
   Jp: () => $,
   LC: () => ti,
   LM: () => tt,
-  M2: () => eI,
+  M2: () => eS,
   Mo: () => eh,
   ND: () => ea,
   NG: () => eY,
@@ -32,13 +32,13 @@ require.d(exports, {
   Oy: () => T,
   PJ: () => eX,
   PR: () => tu,
-  Ph: () => S,
+  Ph: () => I,
   Py: () => t_,
   QH: () => ec,
   QR: () => td,
   Qn: () => tg,
   RG: () => eN,
-  RR: () => eA,
+  RR: () => ev,
   RX: () => ed,
   TE: () => ta,
   Tb: () => q,
@@ -57,14 +57,14 @@ require.d(exports, {
   _j: () => ts,
   _m: () => eG,
   bL: () => tc,
-  c6: () => ev,
+  c6: () => eA,
   cV: () => W,
   cy: () => ee,
   dS: () => eB,
   dz: () => ep,
-  eI: () => ey,
+  eI: () => eb,
   eT: () => k,
-  eW: () => eb,
+  eW: () => ey,
   fb: () => e6,
   gM: () => z,
   gR: () => eu,
@@ -84,16 +84,16 @@ require.d(exports, {
   o: () => es,
   qN: () => th,
   qv: () => tf,
-  rf: () => v,
+  rf: () => A,
   rk: () => eZ,
   rl: () => tl,
   s5: () => ef,
   sQ: () => eo,
   ss: () => e0,
-  t7: () => I,
+  t7: () => S,
   tZ: () => ek,
   uw: () => eq,
-  v: () => eS,
+  v: () => eI,
   v2: () => F,
   vF: () => eE,
   vU: () => tp,
@@ -106,7 +106,7 @@ require.d(exports, {
   x0: () => e4,
   x6: () => J,
   xV: () => e9,
-  xy: () => A,
+  xy: () => v,
   yc: () => tm,
   yq: () => eL
 }), require("./927092.js"), require("./212978.js"), require("./201528.js"), require("./393431.js"), require("./752391.js"), require("./532706.js"), require("./42231.js"), require("./232424.js"), require("./757074.js"), require("./949626.js"), require("./767709.js"), require("./65162.js"), require("./896048.js"), require("./228524.js"), require("./747238.js"), require("./457529.js"), require("./65821.js"), require("./734808.js"), require("./108757.js"), require("./321073.js"), require("./192585.js"), e = require.hmd(module);
@@ -185,14 +185,14 @@ let g = null;
 function E() {
   return (null === g || true === g.buffer.detached || true === g.buffer.detached && g.buffer !== r.memory.buffer) && (g = new DataView(r.memory.buffer)), g
 }
-let b = "u" < typeof FinalizationRegistry ? {
+let y = "u" < typeof FinalizationRegistry ? {
   register: () => {},
   unregister: () => {}
 } : new FinalizationRegistry(e => {
   r.__wbindgen_export_5.get(e.dtor)(e.a, e.b)
 });
 
-function y(e, t, n, i) {
+function b(e, t, n, i) {
   let a = {
       a: e,
       b: t,
@@ -207,10 +207,10 @@ function y(e, t, n, i) {
       try {
         return i(s, a.b, ...t)
       } finally {
-        0 == --a.cnt ? (r.__wbindgen_export_5.get(a.dtor)(s, a.b), b.unregister(a)) : a.a = s
+        0 == --a.cnt ? (r.__wbindgen_export_5.get(a.dtor)(s, a.b), y.unregister(a)) : a.a = s
       }
     };
-  return s.original = a, b.register(s, a, a), s
+  return s.original = a, y.register(s, a, a), s
 }
 
 function O(e) {
@@ -242,7 +242,7 @@ function O(e) {
   return e instanceof Error ? "".concat(e.name, ": ").concat(e.message, "\n").concat(e.stack) : t
 }
 
-function A(e) {
+function v(e) {
   let t, n;
   try {
     let i = r.generateLaunchSignature(e);
@@ -252,15 +252,15 @@ function A(e) {
   }
 }
 
-function v(e, t, n, i, a) {
+function A(e, t, n, i, a) {
   r.installLogCallback(e, t, n, i, a)
 }
 
-function S() {
+function I() {
   return r.initLibdiscore()
 }
 
-function I(e, t) {
+function S(e, t) {
   return r.rustMultiply(e, t)
 }
 
@@ -587,11 +587,11 @@ function eE(e) {
   return t
 }
 
-function eb() {
+function ey() {
   return Symbol.iterator
 }
 
-function ey(e) {
+function eb(e) {
   return e.length
 }
 
@@ -599,13 +599,13 @@ function eO(e, t) {
   return e.match(t)
 }
 
-function eA() {
+function ev() {
   return u(function() {
     return new Headers
   }, arguments)
 }
 
-function ev(e, t) {
+function eA(e, t) {
   try {
     var n = {
         a: e,
@@ -626,11 +626,11 @@ function ev(e, t) {
   }
 }
 
-function eS() {
+function eI() {
   return {}
 }
 
-function eI() {
+function eS() {
   return []
 }
 
@@ -833,15 +833,15 @@ function ti(e) {
 }
 
 function ta(e, t, n) {
-  return y(e, t, 576, R)
+  return b(e, t, 576, R)
 }
 
 function ts(e, t, n) {
-  return y(e, t, 389, C)
+  return b(e, t, 389, C)
 }
 
 function to(e, t, n) {
-  return y(e, t, 429, N)
+  return b(e, t, 429, N)
 }
 
 function tl(e, t) {

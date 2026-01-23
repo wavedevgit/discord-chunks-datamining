@@ -41,19 +41,19 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = y(e, t), Object.getOwnPropertySymbols)
+  if (a = b(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -67,19 +67,19 @@ function O(e) {
     title: n,
     body: a,
     asset: g,
-    assetSize: y = 48,
+    assetSize: b = 48,
     asContainer: O = false,
-    element: A = "span",
-    position: v = "top",
-    align: S = "center",
-    spacing: I,
+    element: v = "span",
+    position: A = "top",
+    align: I = "center",
+    spacing: S,
     caretConfig: T,
     layerContext: C,
     targetElementRef: N,
     anchorRef: R,
     positionKey: w,
     ariaHidden: P = false
-  } = e, D = b(e, ["children", "title", "body", "asset", "assetSize", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "anchorRef", "positionKey", "ariaHidden"]), [x, L] = i.useState(null);
+  } = e, D = y(e, ["children", "title", "body", "asset", "assetSize", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "anchorRef", "positionKey", "ariaHidden"]), [x, L] = i.useState(null);
   i.useLayoutEffect(() => {
     null != R && L(R.current)
   }, [R]);
@@ -95,7 +95,7 @@ function O(e) {
       children: t,
       targetElementRef: j,
       asContainer: O,
-      containerTag: A,
+      containerTag: v,
       ariaHidden: P
     }, D)),
     V = null != n && ("string" != typeof n || "" !== n),
@@ -107,7 +107,7 @@ function O(e) {
       children: [null != g && (0, r.jsx)("div", {
         className: m.s,
         style: {
-          width: y
+          width: b
         },
         children: F ? (0, r.jsx)(l.vYh, E({}, g)) : g
       }), (0, r.jsxs)("div", {
@@ -121,7 +121,7 @@ function O(e) {
           children: a
         })]
       })]
-    }), [g, y, n, a, V, F]),
+    }), [g, b, n, a, V, F]),
     H = null != w ? w : "".concat((0, p.Xj)(null != n ? n : ""), "|").concat((0, p.Xj)(a)),
     Y = (0, _.j)({
       shouldShow: k
@@ -137,9 +137,9 @@ function O(e) {
       anchorRef: R,
       id: M,
       content: B,
-      position: v,
-      align: S,
-      spacing: I,
+      position: A,
+      align: I,
+      spacing: S,
       caretConfig: T,
       layerContext: null != C ? C : u.uY,
       animationStyle: e,

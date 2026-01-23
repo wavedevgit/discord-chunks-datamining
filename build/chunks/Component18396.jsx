@@ -1,7 +1,7 @@
 /** Chunk was on 15682 **/
 /** chunk id: 18396, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,45 +17,45 @@ var Chunk627968 = require("./627968.js"),
   Chunk512134 = require("./512134.js"),
   Chunk880203 = require("./880203.js");
 
-function x(e) {
+function _(e) {
   var t;
   let {
     selectedColors: l,
-    setSelectedColors: x,
-    defaultColor: g,
-    selectedEffectId: j,
+    setSelectedColors: _,
+    defaultColor: x,
+    selectedEffectId: b,
     className: h
-  } = e, v = j === s.z.GRADIENT, N = (0, a.useCallback)(e => {
-    x([e]), c.default.track(u.HAw.DISPLAY_NAME_STYLES_COLOR_SELECTED, {
-      default: e === g,
+  } = e, j = b === s.z.GRADIENT, v = (0, r.useCallback)(e => {
+    _([e]), c.default.track(u.HAw.DISPLAY_NAME_STYLES_COLOR_SELECTED, {
+      default: e === x,
       colors: [e]
     })
-  }, [x, g]), A = (0, a.useCallback)(e => {
-    x(e), c.default.track(u.HAw.DISPLAY_NAME_STYLES_COLOR_SELECTED, {
+  }, [_, x]), N = (0, r.useCallback)(e => {
+    _(e), c.default.track(u.HAw.DISPLAY_NAME_STYLES_COLOR_SELECTED, {
       default: false,
       colors: e
     })
-  }, [x]);
+  }, [_]);
   return (0, n.jsxs)("div", {
     className: h,
-    children: [(0, n.jsxs)(r.DZT, {
+    children: [(0, n.jsxs)(a.DZT, {
       variant: "heading-md/semibold",
-      className: p.s,
-      children: [m.intl.string(f.default.JOpi7z), (0, n.jsx)(i.tvc, {
+      className: g.s,
+      children: [p.intl.string(m.default.JOpi7z), (0, n.jsx)(o.tvc, {
         size: "xs",
-        color: i.LU0.colors.TEXT_DEFAULT
+        color: o.LU0.colors.TEXT_DEFAULT
       })]
-    }), (0, n.jsx)(o.default, {
-      className: b.Ei,
-      colorContainerClassName: b.rx,
-      defaultColor: g,
-      colors: v ? d.Wf : d.Jl,
+    }), (0, n.jsx)(i.default, {
+      className: f.Ei,
+      colorContainerClassName: f.rx,
+      defaultColor: x,
+      colors: j ? d.Wf : d.Jl,
       value: l[0],
       secondaryValue: null != (t = l[1]) ? t : true,
-      onChange: N,
-      onChangeGradientColors: A,
-      isGradient: v,
-      gradientButtonClassName: b.xr,
+      onChange: v,
+      onChangeGradientColors: N,
+      isGradient: j,
+      gradientButtonClassName: f.xr,
       gradientDegrees: 90,
       allowBlackCustomColor: true,
       customPickerPosition: "top"

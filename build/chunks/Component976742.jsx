@@ -1,8 +1,8 @@
 /** Chunk was on 59275 **/
-/** chunk id: 976742, original params: e,t,l (module,exports,require) **/
+/** chunk id: 976742, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => O
+  A: () => S
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,108 +24,108 @@ var Chunk627968 = require("./627968.js"),
   Chunk758836 = require("./758836.js"),
   Chunk157884 = require("./157884.js");
 
-function S(e) {
+function A(e) {
   let {
     category: t
-  } = e, l = (0, a.bG)([o.default], () => o.default.getCurrentUser()), r = (0, d.X)(t.products), s = (0, u.p)()(r), i = (0, v.od)(s), f = (0, c.uM)();
-  return null == l || 0 === i.length ? null : (0, n.jsx)("div", {
-    className: x.vY,
-    children: i.map((e, t) => (0, n.jsx)(c.R9, {
+  } = e, n = (0, a.bG)([o.default], () => o.default.getCurrentUser()), l = (0, d.X)(t.products), s = (0, u.p)()(l), i = (0, E.od)(s), g = (0, c.uM)();
+  return null == n || 0 === i.length ? null : (0, r.jsx)("div", {
+    className: C.vY,
+    children: i.map((e, t) => (0, r.jsx)(c.R9, {
       newValue: {
         tilePosition: t
       },
-      children: (0, n.jsx)(m.A, {
+      children: (0, r.jsx)(m.A, {
         skuId: e.skuId,
         skipLimitedTimeCheck: true,
-        onClickAnalytics: (0, p.UU)(e, A.G2.CATALOG, f)
+        onClickAnalytics: (0, _.UU)(e, v.G2.CATALOG, g)
       }, e.skuId)
     }, e.skuId))
   })
 }
 
-function C(e) {
+function x(e) {
   let {
     category: t
-  } = e, [l, a] = r.useState(false), i = (0, s.K)(e => {
+  } = e, [n, a] = l.useState(false), i = (0, s.K)(e => {
     a(e)
   }, .15);
-  return (0, n.jsxs)("div", {
-    className: x.EF,
+  return (0, r.jsxs)("div", {
+    className: C.EF,
     ref: i,
-    children: [(0, n.jsx)(b.A, {
+    children: [(0, r.jsx)(f.A, {
       category: t
-    }), (0, n.jsx)(S, {
+    }), (0, r.jsx)(A, {
       category: t
     })]
   })
 }
 
-function O(e) {
+function S(e) {
   var t;
   let {
-    sortedCategories: l,
+    sortedCategories: n,
     setCategoryRef: s,
     currentPage: a,
     handlePageChange: o,
     initialCategoryId: u
-  } = e, d = (0, c.uM)(), b = (0, h.U)(), m = null != (t = null == d ? true : d.sessionId) ? t : "", {
-    noCache: p,
-    includeUnpublished: v
-  } = (0, E.A)(), S = r.useMemo(() => l.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
+  } = e, d = (0, c.uM)(), f = (0, b.U)(), m = null != (t = null == d ? true : d.sessionId) ? t : "", {
+    noCache: _,
+    includeUnpublished: E
+  } = (0, h.A)(), A = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
       products: t
     } = e;
     return t.length > 0
-  }), [l]), O = r.useRef(true);
-  r.useEffect(() => {
-    if (null == u || 0 === S.length) {
-      O.current = true;
+  }), [n]), S = l.useRef(true);
+  l.useEffect(() => {
+    if (null == u || 0 === A.length) {
+      S.current = true;
       return
     }
-    if (u === O.current) return;
-    let e = S.findIndex(e => e.skuId === u);
+    if (u === S.current) return;
+    let e = A.findIndex(e => e.skuId === u);
     if (false === e) return;
-    let t = Math.floor(e / A.l5) + 1;
-    t !== a && o(t), O.current = u
-  }, [u, S, o, a]);
-  let _ = r.useMemo(() => {
-    let e = (a - 1) * A.l5;
-    return S.slice(e, e + A.l5)
-  }, [S, a]);
-  return (r.useEffect(() => {
-    (0, f.z)({
+    let t = Math.floor(e / v.l5) + 1;
+    t !== a && o(t), S.current = u
+  }, [u, A, o, a]);
+  let O = l.useMemo(() => {
+    let e = (a - 1) * v.l5;
+    return A.slice(e, e + v.l5)
+  }, [A, a]);
+  return (l.useEffect(() => {
+    (0, g.z)({
       sessionId: m,
-      checkpoint: f.t.SHOP_MOUNTED,
-      tab: A.G2.CATALOG,
-      unpublishedCategoriesShown: v,
-      cacheDisabled: p
+      checkpoint: g.t.SHOP_MOUNTED,
+      tab: v.G2.CATALOG,
+      unpublishedCategoriesShown: E,
+      cacheDisabled: _
     })
-  }, []), r.useEffect(() => {
-    b || 0 === _.length || (0, f.z)({
+  }, []), l.useEffect(() => {
+    f || 0 === O.length || (0, g.z)({
       sessionId: m,
-      checkpoint: f.t.SHOP_RENDERED,
-      tab: A.G2.CATALOG,
-      unpublishedCategoriesShown: v,
-      cacheDisabled: p
+      checkpoint: g.t.SHOP_RENDERED,
+      tab: v.G2.CATALOG,
+      unpublishedCategoriesShown: E,
+      cacheDisabled: _
     })
-  }, [m, v, p, b, _.length]), b) ? (0, n.jsx)(g.A, {}) : (0, n.jsxs)("div", {
-    className: x.LZ,
-    children: [_.map((e, t) => (0, n.jsx)("div", {
+  }, [m, E, _, f, O.length]), f) ? (0, r.jsx)(p.A, {}) : (0, r.jsxs)("div", {
+    className: C.LZ,
+    children: [O.map((e, t) => (0, r.jsx)("div", {
       ref: t => s(e.skuId, t),
-      children: (0, n.jsx)(c.R9, {
+      children: (0, r.jsx)(c.R9, {
         newValue: {
           categoryPosition: t
         },
-        children: (0, n.jsx)(C, {
+        children: (0, r.jsx)(x, {
           category: e
         })
       })
-    }, e.skuId)), (0, n.jsx)("div", {
-      className: x.Ej,
-      children: (0, n.jsx)(i.mgR, {
+    }, e.skuId)), (0, r.jsx)("div", {
+      className: C.Ej,
+      children: (0, r.jsx)(i.mgR, {
         currentPage: a,
-        totalCount: S.length,
-        pageSize: A.l5,
+        totalCount: A.length,
+        pageSize: v.l5,
         onPageChange: o,
         disablePaginationGap: true
       })

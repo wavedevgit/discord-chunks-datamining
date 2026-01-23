@@ -14,21 +14,21 @@ function c(e) {
   let {
     userId: t,
     applicationId: n
-  } = e, [c, u] = l.useState(false), [d, f] = l.useState(false), p = l.useCallback(async e => {
-    e.stopPropagation(), f(true);
+  } = e, [c, u] = l.useState(false), [d, p] = l.useState(false), h = l.useCallback(async e => {
+    e.stopPropagation(), p(true);
     try {
-      await a.A.cancelFriendRequest({
+      await s.A.cancelFriendRequest({
         userId: t,
         applicationId: n,
         location: "ActionButtonFriendRequest"
       })
     } finally {
-      f(false)
+      p(false)
     }
-  }, [n, t]), h = l.useCallback(async e => {
+  }, [n, t]), f = l.useCallback(async e => {
     e.stopPropagation(), u(true);
     try {
-      await a.A.maybeConfirmFriendRequestAccept({
+      await s.A.maybeConfirmFriendRequestAccept({
         userId: t,
         applicationId: n,
         location: "ActionButtonFriendRequest"
@@ -43,14 +43,14 @@ function c(e) {
       size: "sm",
       children: [(0, r.jsx)(i.$nd, {
         variant: "active",
-        onClick: h,
-        text: s.intl.string(s.t.Zcibdf),
+        onClick: f,
+        text: a.intl.string(a.t.Zcibdf),
         loading: c,
         disabled: d
       }), (0, r.jsx)(i.$nd, {
         variant: "secondary",
-        onClick: p,
-        text: s.intl.string(s.t.xuio0C),
+        onClick: h,
+        text: a.intl.string(a.t.xuio0C),
         loading: d,
         disabled: c
       })]

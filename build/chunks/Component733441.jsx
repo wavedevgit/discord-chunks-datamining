@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 733441, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,20 +15,20 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function p(e) {
+function h(e) {
   let {
     channelId: t
-  } = e, n = (0, l.bG)([o.Ay], () => o.Ay.getSection(t)), p = (0, l.bG)([c.A], () => c.A.getGuildId()), h = n === d.YvQ.MEMBERS;
+  } = e, n = (0, l.bG)([o.Ay], () => o.Ay.getSection(t)), h = (0, l.bG)([c.A], () => c.A.getGuildId()), f = n === d.YvQ.MEMBERS;
   return (0, r.jsx)(u.In, {
-    tooltip: h ? f.intl.string(f.t.Axvx8c) : f.intl.string(f.t.gxChDx),
+    tooltip: f ? p.intl.string(p.t.Axvx8c) : p.intl.string(p.t.gxChDx),
     icon: i.nFg,
     onClick: () => {
-      s.Ay.trackWithMetadata(d.HAw.MEMBER_LIST_TOGGLED, {
+      a.Ay.trackWithMetadata(d.HAw.MEMBER_LIST_TOGGLED, {
         channel_id: t,
-        guild_id: p,
-        member_list_open: !h
-      }), a.A.toggleMembersSection()
+        guild_id: h,
+        member_list_open: !f
+      }), s.A.toggleMembersSection()
     },
-    selected: h
+    selected: f
   })
 }

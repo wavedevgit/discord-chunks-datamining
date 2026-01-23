@@ -92,8 +92,8 @@ module.exports = function(e) {
       }
     },
     E = g(/:/, "operator"),
-    b = g(/\bof\b/, "keyword"),
-    y = {
+    y = g(/\bof\b/, "keyword"),
+    b = {
       begin: [/(^|\s+)/, /type/, /\s+/, u],
       beginScope: {
         2: "keyword",
@@ -112,23 +112,23 @@ module.exports = function(e) {
       scope: "computation-expression",
       match: /\b[_a-z]\w*(?=\s*\{)/
     },
-    A = {
+    v = {
       begin: [/^\s*/, i(/#/, s(...a)), /\b/],
       beginScope: {
         2: "meta"
       },
       end: r(/\s|$/)
     },
-    v = {
+    A = {
       variants: [e.BINARY_NUMBER_MODE, e.C_NUMBER_MODE]
     },
-    S = {
+    I = {
       scope: "string",
       begin: /"/,
       end: /"/,
       contains: [e.BACKSLASH_ESCAPE]
     },
-    I = {
+    S = {
       scope: "string",
       begin: /@"/,
       end: /"/,
@@ -185,7 +185,7 @@ module.exports = function(e) {
       scope: "string",
       match: i(/'/, s(/[^\\']/, /\\(?:.|\d{3}|x[a-fA-F\d]{2}|u[a-fA-F\d]{4}|U[a-fA-F\d]{8})/), /'/)
     };
-  return C.contains = [R, N, I, S, P, n, c, d, E, O, A, v, p, h], {
+  return C.contains = [R, N, S, I, P, n, c, d, E, O, v, A, p, h], {
     name: "F#",
     aliases: ["fs", "f#"],
     keywords: l,
@@ -194,13 +194,13 @@ module.exports = function(e) {
       "computation-expression": "keyword"
     },
     contains: [n, {
-      variants: [w, R, N, T, I, S, P]
-    }, c, d, y, {
+      variants: [w, R, N, T, S, I, P]
+    }, c, d, b, {
       scope: "meta",
       begin: /\[</,
       end: />\]/,
       relevance: 2,
-      contains: [d, T, I, S, P, v]
-    }, b, E, O, A, v, p, h]
+      contains: [d, T, S, I, P, A]
+    }, y, E, O, v, A, p, h]
   }
 }

@@ -2,7 +2,7 @@
 /** chunk id: 447031, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 });
 var Chunk587895 = require("./587895.js"),
   Chunk734057 = require("./734057.js"),
@@ -22,19 +22,19 @@ var Chunk587895 = require("./587895.js"),
   Chunk748975 = require("./748975.js"),
   Chunk360469 = require("./360469.js");
 
-function y(e) {
+function b(e) {
   return (0, l.w)((0, l.f)(), () => O(e))
 }
 async function O(e) {
   let t, {
       applicationId: n,
       activityChannelId: l,
-      locationObject: y,
+      locationObject: b,
       analyticsLocations: O,
-      componentId: A,
-      sectionName: v,
-      source: S,
-      inviterUserId: I,
+      componentId: v,
+      sectionName: A,
+      source: I,
+      inviterUserId: S,
       customId: T,
       referrerId: C
     } = e,
@@ -58,7 +58,7 @@ async function O(e) {
     })) returnfalse;
   if (null != R) {
     let e = (0, m.A)(R.id),
-      n = b.lk.includes(R.type);
+      n = y.lk.includes(R.type);
     if (e) {
       if (!await (0, g.A)({
           channelId: R.id,
@@ -72,11 +72,11 @@ async function O(e) {
     isStart: false,
     embeddedActivitiesManager: N,
     analyticsLocations: O,
-    locationObject: y,
-    componentId: A,
-    sectionName: v,
-    source: S,
-    inviterUserId: I,
+    locationObject: b,
+    componentId: v,
+    sectionName: A,
+    source: I,
+    inviterUserId: S,
     customId: T,
     referrerId: C
   })

@@ -33,11 +33,11 @@ function u(e) {
   }(e, ["widgetType"]), {
     games: u,
     onAddGame: d
-  } = (0, s.S)(t), {
+  } = (0, o.S)(t), {
     setExpanded: f
-  } = (0, o.B)(), {
+  } = (0, s.B)(), {
     trackUserProfileEditAction: p
-  } = (0, i.NJ)(), b = l.useCallback(e => {
+  } = (0, i.NJ)(), g = l.useCallback(e => {
     d(e), f(true), (0, a.ew)({
       widgetType: t,
       game: {
@@ -68,6 +68,6 @@ function u(e) {
     return e
   }({
     games: u,
-    onClick: b
+    onClick: g
   }, n))
 }

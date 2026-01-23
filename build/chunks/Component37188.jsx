@@ -26,16 +26,16 @@ function p(e) {
     pendingAccentColor: m,
     isTryItOut: g,
     disabledInputs: E,
-    onUpsellClick: b
+    onUpsellClick: y
   } = e, {
-    newestAnalyticsLocation: y
-  } = (0, a.Ay)(), O = _ || (null == n ? true : n.canUsePremiumProfileCustomization) || false, A = O ? i.R2l : i.tvc, v = (0, s.b)(O), S = () => {
-    if (!O && !v) {
-      null == b || b();
+    newestAnalyticsLocation: b
+  } = (0, a.Ay)(), O = _ || (null == n ? true : n.canUsePremiumProfileCustomization) || false, v = O ? i.R2l : i.tvc, A = (0, s.b)(O), I = () => {
+    if (!O && !A) {
+      null == y || y();
       return
     }(0, l.XD)({
       uploadType: c.HL.BANNER,
-      analyticsSource: y,
+      analyticsSource: b,
       guildId: p,
       isTryItOut: g
     })
@@ -49,15 +49,15 @@ function p(e) {
     pendingAccentColor: m,
     canUsePremiumProfileCustomization: _,
     children: !E && (0, r.jsxs)(i.DUT, {
-      onClick: S,
+      onClick: I,
       className: f.v,
-      children: [(0, r.jsx)(A, {
+      children: [(0, r.jsx)(v, {
         size: "xs",
         color: "white"
       }), (0, r.jsx)(i.Heading, {
         variant: "text-sm/medium",
         color: "always-white",
-        children: O || v ? d.intl.string(d.t.N0bC3P) : d.intl.string(d.t.O1sT5v)
+        children: O || A ? d.intl.string(d.t.N0bC3P) : d.intl.string(d.t.O1sT5v)
       })]
     })
   })

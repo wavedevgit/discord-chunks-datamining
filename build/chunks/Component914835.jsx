@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk442433 = require("./442433.js"),
@@ -23,7 +23,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk790687 = require("./790687.js");
 
-function v(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function v(e) {
   return e
 }
 
-function x(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,46 +55,46 @@ function x(e, t) {
   }), e
 }
 
-function E(e) {
-  var t, i, f;
+function x(e) {
+  var t, i, p;
   let {
     userId: A,
     channel: y
-  } = e, O = l.useRef(null), {
-    analyticsLocations: E
-  } = (0, d.Ay)(u.A.USERNAME), _ = (0, s.bG)([g.default], () => g.default.getUser(A)), C = (0, s.bG)([b.Ay], () => null != A ? b.Ay.getMember(y.guild_id, A) : null), S = (0, p.gn)(y.guild_id, null != A ? A : true, null != (t = null == C ? true : C.colorStrings) ? t : null);
+  } = e, _ = l.useRef(null), {
+    analyticsLocations: x
+  } = (0, d.Ay)(u.A.USERNAME), E = (0, a.bG)([m.default], () => m.default.getUser(A)), C = (0, a.bG)([g.Ay], () => null != A ? g.Ay.getMember(y.guild_id, A) : null), S = (0, h.gn)(y.guild_id, null != A ? A : true, null != (t = null == C ? true : C.colorStrings) ? t : null);
 
   function I(e) {
-    if (null == _) return null;
+    if (null == E) return null;
     (0, c.L3)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("97262"), n.e("29534"), n.e("67447"), n.e("37432")]).then(n.bind(n, 708202));
-      return t => (0, r.jsx)(e, x(v({}, t), {
-        user: _,
+      return t => (0, r.jsx)(e, v(j({}, t), {
+        user: E,
         guildId: y.guild_id,
         channel: y
       }))
     })
   }
-  let N = null != (i = null != (f = null == C ? true : C.nick) ? f : m.Ay.getName(_)) ? i : "???",
+  let N = null != (i = null != (p = null == C ? true : C.nick) ? p : b.Ay.getName(E)) ? i : "???",
     T = null == C ? true : C.colorString;
-  return null == _ ? (0, r.jsx)("span", {
-    className: a()(j.eM, j.sL),
+  return null == E ? (0, r.jsx)("span", {
+    className: s()(O.eM, O.sL),
     children: N
   }) : (0, r.jsx)(d.f5, {
-    value: E,
-    children: (0, r.jsx)(h.A, {
-      targetElementRef: O,
-      user: _,
+    value: x,
+    children: (0, r.jsx)(f.A, {
+      targetElementRef: _,
+      user: E,
       guildId: y.guild_id,
       channelId: y.id,
       roleId: null == C ? true : C.colorRoleId,
       clickTrap: true,
-      children: e => (0, r.jsx)(o.DUT, x(v({}, e), {
-        innerRef: O,
+      children: e => (0, r.jsx)(o.DUT, v(j({}, e), {
+        innerRef: _,
         tag: "span",
-        className: j.eM,
+        className: O.eM,
         onContextMenu: I,
         children: (0, r.jsx)(o.gyj, {
           name: N,
@@ -106,7 +106,7 @@ function E(e) {
   })
 }
 
-function _(e) {
+function E(e) {
   let {
     channel: t
   } = e, {
@@ -121,9 +121,9 @@ function _(e) {
       variant: "text-md/normal",
       color: "text-default",
       children: (0, r.jsx)("div", {
-        className: j.VA,
-        children: O.intl.format(O.t.imPXd5, {
-          usernameHook: (e, n) => (0, r.jsx)(E, {
+        className: O.VA,
+        children: _.intl.format(_.t.imPXd5, {
+          usernameHook: (e, n) => (0, r.jsx)(x, {
             userId: t.ownerId,
             channel: t
           }, n)
@@ -132,7 +132,7 @@ function _(e) {
     }), t.type === y.rbe.PRIVATE_THREAD ? (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
       color: "text-default",
-      children: O.intl.string(O.t["1awbZG"])
+      children: _.intl.string(_.t["1awbZG"])
     }) : null]
   })
 }
@@ -141,17 +141,17 @@ function C(e) {
   var t;
   let {
     channel: n
-  } = e, l = null != (t = (0, f.gU)(n)) ? t : o.ysw;
+  } = e, l = null != (t = (0, p.gU)(n)) ? t : o.ysw;
   return (0, r.jsxs)(A.Ay, {
     channelId: n.id,
     children: [(0, r.jsx)("div", {
-      className: j.P0,
+      className: O.P0,
       children: (0, r.jsx)(l, {
-        className: j.Kk
+        className: O.Kk
       })
     }), (0, r.jsx)(A.cr, {
       children: n.name
-    }), (0, r.jsx)(_, {
+    }), (0, r.jsx)(E, {
       channel: n
     })]
   })

@@ -62,7 +62,7 @@ function M(e) {
   let {
     section: t,
     handleItemSelect: n
-  } = e, i = (0, O.VT)(), a = (0, y.A)();
+  } = e, i = (0, O.VT)(), a = (0, b.A)();
   return t === N.u9.CONTENT_AND_SOCIAL || t === N.u9.DATA_AND_PRIVACY ? null : (0, r.jsxs)(c.VQ0, {
     className: D.c5,
     "aria-label": P.intl.string(w.default.RZqaJn),
@@ -171,27 +171,27 @@ function U() {
 function G() {
   let {
     analyticsLocations: e
-  } = (0, f.Ay)(d.A.FAMILY_CENTER), t = (0, y.A)(), n = (0, l.bG)([b.A], () => b.A.getIsInitialized()), a = (0, l.bG)([m.A], () => m.A.theme), o = (0, _.GV)(), {
+  } = (0, f.Ay)(d.A.FAMILY_CENTER), t = (0, b.A)(), n = (0, l.bG)([y.A], () => y.A.getIsInitialized()), a = (0, l.bG)([m.A], () => m.A.theme), o = (0, _.GV)(), {
     isLoading: h,
     selectedTab: O,
-    handleTabChange: A,
-    showAgeGateModal: v
+    handleTabChange: v,
+    showAgeGateModal: A
   } = (0, C.j)({
     location: N.MH.SIDENAV,
     onMountEffect: () => {
-      u.I(R.BVt.FAMILY_CENTER), !b.A.isLoading() && b.A.canRefetch() && E.Ay.initialPageLoad()
+      u.I(R.BVt.FAMILY_CENTER), !y.A.isLoading() && y.A.canRefetch() && E.Ay.initialPageLoad()
     }
   });
   i.useEffect(() => {
     let e = g.dm.getSetting();
     n && t && true === e && g.dm.updateSetting(true)
   }, [n, t]);
-  let S = e => {
-    A(e)
+  let I = e => {
+    v(e)
   };
-  if (v) return null;
-  let I = O !== N.u9.SETTINGS ? O : N.u9.ACTIVITY,
-    T = L[I];
+  if (A) return null;
+  let S = O !== N.u9.SETTINGS ? O : N.u9.ACTIVITY,
+    T = L[S];
   return (0, r.jsx)(f.f5, {
     value: e,
     children: (0, r.jsxs)("main", {
@@ -201,10 +201,10 @@ function G() {
         location: P.intl.string(w.default.RZqaJn)
       }), (0, r.jsx)(k, {
         theme: a,
-        section: I,
-        handleItemSelect: S
+        section: S,
+        handleItemSelect: I
       }), (0, r.jsx)(c.VQ0.Panel, {
-        id: I,
+        id: S,
         "aria-labelledby": o,
         className: D.Om,
         children: (0, r.jsx)(c.HOs, {

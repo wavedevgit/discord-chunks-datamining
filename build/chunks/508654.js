@@ -2,13 +2,13 @@
 /** chunk id: 508654, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => A,
-  BP: () => v,
+  BP: () => j,
   Qs: () => y,
-  RO: () => _,
-  WG: () => j,
-  ob: () => x,
-  r2: () => E,
-  vj: () => O
+  RO: () => E,
+  WG: () => O,
+  ob: () => v,
+  r2: () => x,
+  vj: () => _
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -23,31 +23,31 @@ var Chunk64700 = require("./64700.js"),
   Chunk974930 = require("./974930.js"),
   Chunk988794 = require("./988794.js"),
   Chunk652215 = require("./652215.js");
-let g = [],
-  m = 15 * Chunk927813.A.Millis.MINUTE;
+let m = [],
+  b = 15 * Chunk927813.A.Millis.MINUTE;
 
 function A(e, t) {
-  return (0, l.yK)([a.A, c.Ay, s.A, i.A], () => {
-    let n = a.A.getGuild(e);
-    return null == n ? g : c.Ay.getGuildScheduledEventsByIndex(null != t ? t : c.ej.GUILD_EVENT_UPCOMING(n.id)).filter(e => {
+  return (0, l.yK)([s.A, c.Ay, a.A, i.A], () => {
+    let n = s.A.getGuild(e);
+    return null == n ? m : c.Ay.getGuildScheduledEventsByIndex(null != t ? t : c.ej.GUILD_EVENT_UPCOMING(n.id)).filter(e => {
       let t = e.channel_id;
       if (null == t) returntrue;
       let n = i.A.getChannel(t);
-      return s.A.can(b.xBc.VIEW_CHANNEL, n)
+      return a.A.can(g.xBc.VIEW_CHANNEL, n)
     })
   }, [t, e])
 }
 
 function y(e) {
-  return (0, l.bG)([c.Ay, i.A, s.A], () => {
+  return (0, l.bG)([c.Ay, i.A, a.A], () => {
     let t = i.A.getChannel(e);
-    if (!s.A.can(b.xBc.VIEW_CHANNEL, t) || null == (null == t ? true : t.guild_id)) return null;
+    if (!a.A.can(g.xBc.VIEW_CHANNEL, t) || null == (null == t ? true : t.guild_id)) return null;
     let n = c.Ay.getGuildScheduledEventsByIndex(c.ej.CHANNEL_EVENT_ACTIVE(e));
     return n.length > 0 ? n[0] : null
   }, [e])
 }
 
-function O(e) {
+function _(e) {
   let t = (0, l.yK)([c.Ay], () => c.Ay.getGuildScheduledEventsForGuild(e), [e]);
   return r.useMemo(() => {
     let e = new Map;
@@ -58,19 +58,19 @@ function O(e) {
   }, [t])
 }
 
-function j(e) {
+function O(e) {
   var t;
-  let n = (0, l.yK)([c.Ay, i.A, s.A], () => c.Ay.getGuildScheduledEventsByIndex(c.ej.GUILD_EVENT_UPCOMING(e)).filter(e => {
-      if (e.entity_type === h.Ps.NONE || e.status !== h.XG.SCHEDULED) returnfalse;
+  let n = (0, l.yK)([c.Ay, i.A, a.A], () => c.Ay.getGuildScheduledEventsByIndex(c.ej.GUILD_EVENT_UPCOMING(e)).filter(e => {
+      if (e.entity_type === f.Ps.NONE || e.status !== f.XG.SCHEDULED) returnfalse;
       if (null == e.channel_id) returntrue;
       let t = i.A.getChannel(e.channel_id);
-      return s.A.can(b.xBc.VIEW_CHANNEL, t)
+      return a.A.can(g.xBc.VIEW_CHANNEL, t)
     }), [e]),
     r = (0, l.cf)([d.A], () => d.A.getAllEventDismissals()),
     o = (0, l.cf)([d.A], () => d.A.getAllUpcomingNoticeSeenTimes()),
-    f = (0, l.cf)([c.Ay], () => null == n ? {} : n.reduce((e, t) => {
+    p = (0, l.cf)([c.Ay], () => null == n ? {} : n.reduce((e, t) => {
       var n, r;
-      let l = (0, p.G3)(t);
+      let l = (0, h.G3)(t);
       return n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -101,15 +101,15 @@ function j(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
       }), n
     }, {}), [n]),
-    g = (0, l.bG)([a.A], () => a.A.getGuild(e)),
-    m = null != g && !g.features.has(b.GuildFeatures.COMMUNITY) && g.features.has(b.GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
-  if (null != n && null != f && m)
+    m = (0, l.bG)([s.A], () => s.A.getGuild(e)),
+    b = null != m && !m.features.has(g.GuildFeatures.COMMUNITY) && m.features.has(g.GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
+  if (null != n && null != p && b)
     for (let e = 0; e < n.length; e++) {
       let l = n[e],
         i = r[l.id],
-        a = o[l.id],
-        s = null != (t = f[l.id]) && t,
-        c = (0, u.F)(l, i, a, s);
+        s = o[l.id],
+        a = null != (t = p[l.id]) && t,
+        c = (0, u.F)(l, i, s, a);
       if (null != c) return {
         upcomingEvent: l,
         noticeType: c
@@ -117,32 +117,32 @@ function j(e) {
     }
 }
 
-function v(e) {
-  return (0, l.bG)([c.Ay, i.A, s.A], () => c.Ay.getGuildScheduledEventsByIndex(c.ej.GUILD_EVENT_ACTIVE(e)).find(e => {
-    if (e.entity_type === h.Ps.NONE || !(0, c.Fd)(e)) returnfalse;
+function j(e) {
+  return (0, l.bG)([c.Ay, i.A, a.A], () => c.Ay.getGuildScheduledEventsByIndex(c.ej.GUILD_EVENT_ACTIVE(e)).find(e => {
+    if (e.entity_type === f.Ps.NONE || !(0, c.Fd)(e)) returnfalse;
     if (null == e.channel_id) returntrue;
     let t = i.A.getChannel(e.channel_id);
-    return s.A.can(b.xBc.VIEW_CHANNEL, t)
+    return a.A.can(g.xBc.VIEW_CHANNEL, t)
   }), [e])
 }
 
-function x(e) {
+function v(e) {
   return (0, l.bG)([c.Ay], () => c.Ay.getGuildScheduledEventsByIndex(c.ej.CHANNEL_EVENT_UPCOMING(e)), [e])
 }
 
-function E(e) {
+function x(e) {
   return (0, l.bG)([i.A, c.Ay], () => {
     let t = c.Ay.getGuildScheduledEventsByIndex(c.ej.GUILD_EVENT_ACTIVE(e)).find(e => null != i.A.getChannel(e.channel_id));
     return i.A.getChannel(null == t ? true : t.channel_id)
   }, [e])
 }
 
-function _(e) {
+function E(e) {
   let [t, n] = r.useState(() => Date.now());
   r.useEffect(() => {
     let e = setInterval(() => {
       n(Date.now())
-    }, m);
+    }, b);
     return () => clearInterval(e)
   }, []);
   let i = (0, l.bG)([c.Ay], () => null == e ? [] : c.Ay.getGuildScheduledEventsByIndex(c.ej.CHANNEL_EVENT_UPCOMING(e)), [e, t]);
@@ -150,10 +150,10 @@ function _(e) {
     let {
       startTime: t,
       endTime: n
-    } = (0, f.YR)(e), {
+    } = (0, p.YR)(e), {
       withinStartWindow: r,
       diffMinutes: l
-    } = (0, p.CC)(t.toISOString(), null == n ? true : n.toISOString());
-    return e.status !== h.XG.ACTIVE && r && l < 15
+    } = (0, h.CC)(t.toISOString(), null == n ? true : n.toISOString());
+    return e.status !== f.XG.ACTIVE && r && l < 15
   }), [i])
 }

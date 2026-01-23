@@ -35,15 +35,15 @@ function T(e) {
     guildId: n
   } = e, T = (0, m.q9)(), C = (0, _.K)(), N = h.$s.useSetting().includes(n), R = (0, l.uM)(), w = h.YX.useSetting(), P = h.Zr.useSetting().includes(n), D = i.useCallback(e => {
     let r = (0, f.xo)();
-    e ? r.delete(n) : r.add(n), h.Zr.updateSetting(Array.from(r)), u.default.track(v.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-      action: y.m.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
+    e ? r.delete(n) : r.add(n), h.Zr.updateSetting(Array.from(r)), u.default.track(A.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+      action: b.m.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
       ingress: t,
       guild_id: n
     })
   }, [t, n]);
 
   function x(e, t) {
-    u.default.track(v.HAw.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
+    u.default.track(A.HAw.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
       default_guilds_restricted: e,
       applied_to_existing_guilds: t
     })
@@ -62,37 +62,37 @@ function T(e) {
       n = () => {
         h.YX.updateSetting(e), x(e, false)
       };
-    (0, b.O)({
-      header: S.intl.string(S.t.yAfu1p),
-      body: S.intl.string(S.t.Ry2z74),
-      confirmText: S.intl.string(S.t.gm1Vej),
-      cancelText: S.intl.string(S.t.p89ACt),
+    (0, y.O)({
+      header: I.intl.string(I.t.yAfu1p),
+      body: I.intl.string(I.t.Ry2z74),
+      confirmText: I.intl.string(I.t.gm1Vej),
+      cancelText: I.intl.string(I.t.p89ACt),
       confirmButtonColor: a.$n.Colors.BRAND,
       onConfirm: n,
       onCancel: t
     })
   }
   return (0, r.jsx)(g.h, {
-    setting: A.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
+    setting: v.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
     scrollPosition: O.d1.MESSAGE_REQUESTS_V2,
     children: "0" === n ? (0, r.jsx)(E.Ay, {
-      title: S.intl.string(S.t["3o2ojh"]),
+      title: I.intl.string(I.t["3o2ojh"]),
       value: !C && !w,
       onChange: e => L(e, false),
       disabled: C || R,
-      tooltipText: R ? S.intl.string(I.default["6Af/cw"]) : true,
-      note: S.intl.format(S.t.wkm9a3, {
-        helpdeskArticle: d.A.getArticleURL(v.MVz.MESSAGE_REQUESTS)
+      tooltipText: R ? I.intl.string(S.default["6Af/cw"]) : true,
+      note: I.intl.format(I.t.wkm9a3, {
+        helpdeskArticle: d.A.getArticleURL(A.MVz.MESSAGE_REQUESTS)
       })
     }) : (0, r.jsx)(E.Ay, {
-      title: S.intl.string(S.t["3o2ojh"]),
+      title: I.intl.string(I.t["3o2ojh"]),
       value: !N && !P,
       onChange: e => L(e, true),
       disabled: N,
-      note: T ? S.intl.format(S.t.WpnWLc, {
-        helpdeskArticle: d.A.getArticleURL(v.MVz.MESSAGE_REQUESTS)
-      }) : S.intl.format(S.t.wkm9a3, {
-        helpdeskArticle: d.A.getArticleURL(v.MVz.MESSAGE_REQUESTS)
+      note: T ? I.intl.format(I.t.WpnWLc, {
+        helpdeskArticle: d.A.getArticleURL(A.MVz.MESSAGE_REQUESTS)
+      }) : I.intl.format(I.t.wkm9a3, {
+        helpdeskArticle: d.A.getArticleURL(A.MVz.MESSAGE_REQUESTS)
       })
     })
   })

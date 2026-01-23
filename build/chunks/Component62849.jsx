@@ -2,7 +2,7 @@
 /** chunk id: 62849, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   A: () => L,
-  P: () => _
+  P: () => T
 }), require("./896048.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -34,7 +34,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk73510 = require("./73510.js"),
   Chunk985018 = require("./985018.jsx");
-async function T(e, n, t) {
+async function _(e, n, t) {
   if (null == n) return;
   if (d.A.trackDiscordLinkClicked({
       guildId: e,
@@ -54,7 +54,7 @@ async function T(e, n, t) {
   null != r && null == t && (0, A.ay)(r.type) && (0, h.nc)(r) ? s.default.selectVoiceChannel(r.id) : (0, m.A)(E.BVt.CHANNEL(e, n, t))
 }
 
-function _(e) {
+function T(e) {
   let {
     type: n,
     value: t
@@ -110,9 +110,9 @@ function L(e) {
       isForumPost: null == e ? true : e.isForumPost(),
       hasAccess: null == e || (0, h.nc)(e)
     }
-  }, [n]), x = (0, I.p)();
+  }, [n]), g = (0, I.p)();
   if (null == m) return;
-  let y = l === (null == x ? true : x.guildId) || null == l,
+  let y = l === (null == g ? true : g.guildId) || null == l,
     b = f || o.isSubscriptionGated ? y || null == d ? (0, r.jsx)(p.A, {
       iconType: m,
       children: null != d ? d : (0, r.jsx)("em", {
@@ -130,10 +130,10 @@ function L(e) {
     children: [(0, r.jsx)(v.A, {}), (0, r.jsx)(p.A, {
       iconType: j ? "post" : "message"
     })]
-  })), (0, r.jsxs)(g.A, {
+  })), (0, r.jsxs)(x.A, {
     role: "link",
     onClick: e => {
-      null == e || e.stopPropagation(), T(l, n, s), (0, a.s7G)()
+      null == e || e.stopPropagation(), _(l, n, s), (0, a.s7G)()
     },
     onContextMenu: e => {
       let l = O.A.getChannel(n);
@@ -188,7 +188,7 @@ function z(e) {
     guildId: n,
     children: t
   } = e, l = (0, c.bG)([w.A], () => w.A.getGuild(n), [n]);
-  return (0, r.jsxs)(x.A, {
+  return (0, r.jsxs)(g.A, {
     guild: l,
     children: [null == l ? true : l.name, null != l ? (0, r.jsx)(v.A, {}) : null, t]
   })

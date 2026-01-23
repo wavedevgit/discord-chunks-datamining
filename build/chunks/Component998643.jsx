@@ -2,7 +2,7 @@
 /** chunk id: 998643, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => eC
+  default: () => eT
 }), require("./747238.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -102,23 +102,23 @@ let eo = (0, Chunk765624.A)(Chunk129851.A),
   eu = (0, Chunk765624.A)(Chunk111549.A),
   ed = (0, Chunk765624.A)(Chunk187035.A),
   eh = (0, Chunk765624.A)(Chunk170159.A),
-  ef = (0, Chunk765624.A)(Chunk614986.A),
-  ep = (0, Chunk765624.A)(Chunk229.A),
-  eg = (0, Chunk765624.A)(Chunk420382.A),
-  em = (0, Chunk765624.A)(Chunk527567.A),
-  eA = (0, Chunk765624.A)(Chunk340451.A),
-  ex = (0, Chunk765624.A)(Chunk7936.A),
-  e_ = (0, Chunk765624.A)(Chunk163050.A),
+  ep = (0, Chunk765624.A)(Chunk614986.A),
+  eg = (0, Chunk765624.A)(Chunk229.A),
+  em = (0, Chunk765624.A)(Chunk420382.A),
+  ef = (0, Chunk765624.A)(Chunk527567.A),
+  e_ = (0, Chunk765624.A)(Chunk340451.A),
+  eA = (0, Chunk765624.A)(Chunk7936.A),
+  ex = (0, Chunk765624.A)(Chunk163050.A),
   eE = (0, Chunk765624.A)(Chunk126912.A),
-  eb = (0, Chunk765624.A)(Chunk409934.A),
-  ev = (0, Chunk765624.A)(Chunk850381.A),
-  ej = (0, Chunk765624.A)(Chunk826515.A),
-  ey = (0, Chunk765624.A)(Chunk216894.A),
+  ev = (0, Chunk765624.A)(Chunk409934.A),
+  ej = (0, Chunk765624.A)(Chunk850381.A),
+  ey = (0, Chunk765624.A)(Chunk826515.A),
+  eb = (0, Chunk765624.A)(Chunk216894.A),
   eS = (0, Chunk765624.A)(Chunk883257.A),
-  eN = (0, Chunk765624.A)(Chunk466133.A),
-  eO = (0, Chunk765624.A)(Chunk745399.A),
-  eI = (0, Chunk765624.A)(Chunk957622.A);
-class eT extends Chunk64700.PureComponent {
+  eI = (0, Chunk765624.A)(Chunk466133.A),
+  eN = (0, Chunk765624.A)(Chunk745399.A),
+  eO = (0, Chunk765624.A)(Chunk957622.A);
+class eC extends Chunk64700.PureComponent {
   static getDerivedStateFromProps(e, t) {
     var n;
     let {
@@ -127,7 +127,7 @@ class eT extends Chunk64700.PureComponent {
     } = e, {
       backgroundId: l
     } = t, a = null != (n = (0, s.parse)(i.search).redirect_to) ? n : null;
-    (null == a || "" === a || a.startsWith(er.BVt.ME) || !(0, o.e)(a) && !(0, x.RZ)(a)) && (a = null);
+    (null == a || "" === a || a.startsWith(er.BVt.ME) || !(0, o.e)(a) && !(0, A.RZ)(a)) && (a = null);
     let c = null;
     if (null == r) c = (0, D.u8)(a);
     else if ((null == r ? true : r.state) === er.elq.RESOLVED) {
@@ -156,14 +156,14 @@ class eT extends Chunk64700.PureComponent {
       load_time: U.A.getTimeSinceNavigationStart()
     }, {
       flush: true
-    })), t && this.resolveInvite(), this.resolveGiftCode(), this.resolveGuildTemplate(), p.A.initialize(), (0, T.D)()
+    })), t && this.resolveInvite(), this.resolveGiftCode(), this.resolveGuildTemplate(), g.A.initialize(), (0, C.D)()
   }
   componentDidUpdate(e) {
     var t, n;
     !e.hasLoadedExperiments && this.props.hasLoadedExperiments && this.resolveInvite(), (null == (t = e.invite) ? true : t.state) !== (null == (n = this.props.invite) ? true : n.state) && this.maybeFetchApplicationSplash()
   }
   componentWillUnmount() {
-    p.A.terminate()
+    g.A.terminate()
   }
   maybeFetchApplicationSplash() {
     let {
@@ -188,8 +188,8 @@ class eT extends Chunk64700.PureComponent {
     if (null == e) return;
     let {
       invite: t
-    } = await f.Ay.resolveInvite(e, er.S3d.INVITE);
-    null != t && ((0, A.v)(t), null != t.type && ei.uR.has(t.type) && f.Ay.openNativeAppModal(e))
+    } = await p.Ay.resolveInvite(e, er.S3d.INVITE);
+    null != t && ((0, _.v)(t), null != t.type && ei.uR.has(t.type) && p.Ay.openNativeAppModal(e))
   }
   resolveGuildTemplate() {
     let {
@@ -200,7 +200,7 @@ class eT extends Chunk64700.PureComponent {
       load_time: U.A.getTimeSinceNavigationStart()
     }, {
       flush: true
-    }), j.A.resolveGuildTemplate(e), j.A.openNativeAppModal(e))
+    }), y.A.resolveGuildTemplate(e), y.A.openNativeAppModal(e))
   }
   resolveGiftCode() {
     let {
@@ -219,35 +219,35 @@ class eT extends Chunk64700.PureComponent {
     } = this.props;
     return (0, r.jsxs)(M.A, {
       splash: e,
-      children: [(0, r.jsx)(m.A, {
+      children: [(0, r.jsx)(f.A, {
         path: er.BVt.LOGIN_HANDOFF,
         render: e => (0, r.jsx)(ec, ea(el({}, e), {
           redirectTo: t
         }))
-      }), (0, r.jsx)(m.A, {
+      }), (0, r.jsx)(f.A, {
         path: er.BVt.LOGIN_ONE_TIME,
-        render: e => (0, r.jsx)(eI, el({}, e))
-      }), (0, r.jsx)(m.A, {
+        render: e => (0, r.jsx)(eO, el({}, e))
+      }), (0, r.jsx)(f.A, {
         impressionName: l.ImpressionNames.USER_LOGIN,
         path: er.BVt.LOGIN,
         render: e => (0, r.jsx)(eo, ea(el({}, e), {
           redirectTo: t
         }))
-      }), (0, r.jsx)(m.A, {
+      }), (0, r.jsx)(f.A, {
         impressionName: l.ImpressionNames.USER_REGISTRATION,
         path: er.BVt.REGISTER,
-        render: e => (0, r.jsx)(ep, ea(el({}, e), {
+        render: e => (0, r.jsx)(eg, ea(el({}, e), {
           redirectTo: t
         }))
-      }), (0, r.jsx)(m.A, {
+      }), (0, r.jsx)(f.A, {
         path: er.BVt.GIFT_CODE_LOGIN(":giftCode"),
         render: e => (0, r.jsx)(eh, el({
           login: true
         }, e))
-      }), (0, r.jsx)(m.A, {
+      }), (0, r.jsx)(f.A, {
         path: er.BVt.GIFT_CODE(":giftCode"),
         render: e => (0, r.jsx)(eh, el({}, e))
-      }), (0, r.jsx)(m.A, {
+      }), (0, r.jsx)(f.A, {
         path: [er.BVt.INVITE_LOGIN(":inviteCode"), er.BVt.INVITE(":inviteCode")],
         render: e => {
           let {
@@ -260,7 +260,7 @@ class eT extends Chunk64700.PureComponent {
             location: i,
             transitionTo: s
           } = e, l = (0, S.fB)(t, i.search);
-          return a.Fr || a.v1 ? (0, r.jsx)(ef, {
+          return a.Fr || a.v1 ? (0, r.jsx)(ep, {
             inviteKey: l,
             transitionTo: s
           }, l) : (0, r.jsx)(eu, {
@@ -270,7 +270,7 @@ class eT extends Chunk64700.PureComponent {
             login: n === er.BVt.INVITE_LOGIN(":inviteCode")
           })
         }
-      }), (0, r.jsx)(m.A, {
+      }), (0, r.jsx)(f.A, {
         path: [er.BVt.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"), er.BVt.GUILD_TEMPLATE(":guildTemplateCode")],
         render: e => {
           let {
@@ -292,62 +292,62 @@ class eT extends Chunk64700.PureComponent {
             login: n === er.BVt.GUILD_TEMPLATE_LOGIN(":guildTemplateCode")
           })
         }
-      }), (0, r.jsx)(m.A, {
+      }), (0, r.jsx)(f.A, {
         path: er.BVt.VERIFY,
-        render: e => (0, r.jsx)(eA, el({}, e))
-      }), (0, r.jsx)(m.A, {
+        render: e => (0, r.jsx)(e_, el({}, e))
+      }), (0, r.jsx)(f.A, {
         path: er.BVt.VERIFY_HUB_EMAIL,
-        render: e => (0, r.jsx)(ev, el({}, e))
-      }), (0, r.jsx)(m.A, {
+        render: e => (0, r.jsx)(ej, el({}, e))
+      }), (0, r.jsx)(f.A, {
         path: er.BVt.VERIFY_REQUEST,
-        render: e => (0, r.jsx)(ex, el({}, e))
-      }), (0, r.jsx)(m.A, {
+        render: e => (0, r.jsx)(eA, el({}, e))
+      }), (0, r.jsx)(f.A, {
         path: er.BVt.DISABLE_EMAIL_NOTIFICATIONS,
         render: e => (0, r.jsx)(eE, el({}, e))
-      }), (0, r.jsx)(m.A, {
+      }), (0, r.jsx)(f.A, {
         path: er.BVt.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
-        render: e => (0, r.jsx)(eb, el({}, e))
-      }), (0, r.jsx)(m.A, {
+        render: e => (0, r.jsx)(ev, el({}, e))
+      }), (0, r.jsx)(f.A, {
         path: er.BVt.AUTHORIZE_IP,
-        render: e => (0, r.jsx)(eg, el({}, e))
-      }), (0, r.jsx)(m.A, {
+        render: e => (0, r.jsx)(em, el({}, e))
+      }), (0, r.jsx)(f.A, {
         path: er.BVt.REJECT_IP,
-        render: e => (0, r.jsx)(e_, el({
+        render: e => (0, r.jsx)(ex, el({
           source: er.BVt.REJECT_IP
         }, e))
-      }), (0, r.jsx)(m.A, {
+      }), (0, r.jsx)(f.A, {
         path: er.BVt.REJECT_MFA,
-        render: e => (0, r.jsx)(e_, el({
+        render: e => (0, r.jsx)(ex, el({
           source: er.BVt.REJECT_MFA
         }, e))
-      }), (0, r.jsx)(m.A, {
+      }), (0, r.jsx)(f.A, {
         path: er.BVt.AUTHORIZE_PAYMENT,
-        render: e => (0, r.jsx)(em, el({}, e))
-      }), (0, r.jsx)(m.A, {
+        render: e => (0, r.jsx)(ef, el({}, e))
+      }), (0, r.jsx)(f.A, {
         path: er.BVt.RESET,
-        render: e => (0, r.jsx)(e_, el({
+        render: e => (0, r.jsx)(ex, el({
           source: er.BVt.RESET
         }, e))
-      }), (0, r.jsx)(m.A, {
+      }), (0, r.jsx)(f.A, {
         path: er.BVt.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
         render: e => (0, r.jsx)(eS, el({}, e))
-      }), (0, r.jsx)(m.A, {
-        path: er.BVt.CHANNELS_GAME_SHOP(I.pv.guildId(), ":pageIndex", ":skuId", ":slug?"),
-        render: e => (0, r.jsx)(ey, el({}, e))
-      }), (0, r.jsx)(m.A, {
-        path: er.BVt.CHANNEL(I.pv.guildId(), I.pv.channelId({
+      }), (0, r.jsx)(f.A, {
+        path: er.BVt.CHANNELS_GAME_SHOP(O.pv.guildId(), ":pageIndex", ":skuId", ":slug?"),
+        render: e => (0, r.jsx)(eb, el({}, e))
+      }), (0, r.jsx)(f.A, {
+        path: er.BVt.CHANNEL(O.pv.guildId(), O.pv.channelId({
           optional: true
         }), ":messageId?"),
-        render: e => (0, r.jsx)(ej, el({}, e))
-      }), (0, r.jsx)(m.A, {
+        render: e => (0, r.jsx)(ey, el({}, e))
+      }), (0, r.jsx)(f.A, {
         path: er.BVt.REPORT,
-        render: () => (0, r.jsx)(C.Kz, {})
-      }), (0, r.jsx)(m.A, {
+        render: () => (0, r.jsx)(T.Kz, {})
+      }), (0, r.jsx)(f.A, {
         path: er.BVt.REPORT_SECOND_LOOK,
-        render: e => (0, r.jsx)(eN, el({}, e))
-      }), (0, r.jsx)(m.A, {
+        render: e => (0, r.jsx)(eI, el({}, e))
+      }), (0, r.jsx)(f.A, {
         path: er.BVt.ACCOUNT_REVERT(":token"),
-        render: e => (0, r.jsx)(eO, el({}, e))
+        render: e => (0, r.jsx)(eN, el({}, e))
       })]
     })
   }
@@ -359,7 +359,7 @@ class eT extends Chunk64700.PureComponent {
     })
   }
 }
-let eC = Chunk311907.Ay.connectStores([Chunk961350.default, Chunk299091.A, Chunk30793.A, Chunk49463.A, Chunk122906.A], e => {
+let eT = Chunk311907.Ay.connectStores([Chunk961350.default, Chunk299091.A, Chunk30793.A, Chunk49463.A, Chunk122906.A], e => {
   var t, n, r;
   let {
     match: i,
@@ -372,7 +372,7 @@ let eC = Chunk311907.Ay.connectStores([Chunk961350.default, Chunk299091.A, Chunk
     guildTemplateCode: c,
     gift: null != o ? w.A.get(o) : null,
     invite: null != a ? P.A.getInvite(a) : null,
-    guildTemplate: null != c ? v.A.getGuildTemplate(c) : null,
-    hasLoadedExperiments: b.A.hasLoadedExperiments
+    guildTemplate: null != c ? j.A.getGuildTemplate(c) : null,
+    hasLoadedExperiments: v.A.hasLoadedExperiments
   }
-})(eT)
+})(eC)

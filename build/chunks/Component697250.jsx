@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   ES: () => T,
-  Ef: () => S,
+  Ef: () => I,
   SE: () => O,
   VI: () => C,
-  bc: () => I,
-  cO: () => y
+  bc: () => S,
+  cO: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -79,7 +79,7 @@ function E(e, t) {
   return i
 }
 
-function b(e) {
+function y(e) {
   let {
     userId: t,
     analyticsLocation: n
@@ -99,11 +99,11 @@ function b(e) {
   }
 }
 
-function y(e) {
+function b(e) {
   let {
     userId: t,
     analyticsLocation: n
-  } = e, i = g(e, ["userId", "analyticsLocation"]), a = b({
+  } = e, i = g(e, ["userId", "analyticsLocation"]), a = y({
     userId: t,
     analyticsLocation: n
   });
@@ -114,7 +114,7 @@ function O(e) {
   let {
     userId: t,
     analyticsLocation: n
-  } = e, i = b({
+  } = e, i = y({
     userId: t,
     analyticsLocation: n
   }), {
@@ -124,23 +124,23 @@ function O(e) {
     tooltipText: a
   }, s))
 }
-let A = {
+let v = {
     [Chunk652215.eA$.FRIEND]: Chunk397927.V1C,
     [Chunk652215.eA$.PENDING_OUTGOING]: Chunk397927.lI8,
     [Chunk652215.eA$.PENDING_INCOMING]: Chunk397927.lI8
   },
-  v = {
+  A = {
     [Chunk652215.eA$.FRIEND]: () => f.intl.string(f.t.G7jMpU),
     [Chunk652215.eA$.PENDING_OUTGOING]: () => f.intl.string(f.t["s/+byI"]),
     [Chunk652215.eA$.PENDING_INCOMING]: () => f.intl.string(f.t["6QQCQ+"])
   };
 
-function S(e) {
+function I(e) {
   let {
     user: t,
     relationshipType: n,
     analyticsLocation: a
-  } = e, s = g(e, ["user", "relationshipType", "analyticsLocation"]), c = A[n], u = v[n](), d = (0, l.T)({
+  } = e, s = g(e, ["user", "relationshipType", "analyticsLocation"]), c = v[n], u = A[n](), d = (0, l.T)({
     user: t,
     analyticsLocation: a
   }), f = i.useRef(null), p = _({
@@ -158,12 +158,12 @@ function S(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     user: t,
     relationshipType: n,
     analyticsLocation: a
-  } = e, s = g(e, ["user", "relationshipType", "analyticsLocation"]), c = A[n], u = v[n](), d = (0, l.T)({
+  } = e, s = g(e, ["user", "relationshipType", "analyticsLocation"]), c = v[n], u = A[n](), d = (0, l.T)({
     user: t,
     analyticsLocation: a
   }), f = i.useRef(null), p = _({
@@ -197,27 +197,27 @@ function T(e) {
     gameFriends: n,
     hasOutgoingPendingGameFriends: a,
     hasIncomingPendingGameFriends: s
-  }), b = (0, l.T)({
+  }), y = (0, l.T)({
     user: t,
     analyticsLocation: u
-  }), y = i.useRef(null), O = _({
+  }), b = i.useRef(null), O = _({
     icon: E,
     __unsupportedReactNodeAsText: f,
     "aria-label": h,
     onMouseEnter: p
   }, d);
-  return 0 === b.length ? (0, r.jsx)(o.q3, m(_({}, O), {
+  return 0 === y.length ? (0, r.jsx)(o.q3, m(_({}, O), {
     disabled: true
   })) : (0, r.jsx)(l.A, {
-    targetElementRef: y,
-    menuItems: b,
+    targetElementRef: b,
+    menuItems: y,
     children: e => {
       let t = () => {
         var t;
         null == p || p(), null == (t = e.onMouseEnter) || t.call(e)
       };
       return (0, r.jsx)(o.q3, m(_({
-        buttonRef: y
+        buttonRef: b
       }, e, O), {
         onMouseEnter: t
       }))
@@ -241,30 +241,30 @@ function C(e) {
     gameFriends: n,
     hasOutgoingPendingGameFriends: a,
     hasIncomingPendingGameFriends: s
-  }), b = (0, l.T)({
+  }), y = (0, l.T)({
     user: t,
     analyticsLocation: u
-  }), y = i.useRef(null), O = _({
+  }), b = i.useRef(null), O = _({
     icon: E,
     __unsupportedReactNodeAsText: f,
     "aria-label": h,
     onMouseEnter: p
   }, d);
-  return 0 === b.length ? (0, r.jsx)(o.br, m(_({
+  return 0 === y.length ? (0, r.jsx)(o.br, m(_({
     tooltipPosition: "left",
     tooltipAlign: "top"
   }, O), {
     disabled: true
   })) : (0, r.jsx)(l.A, {
-    targetElementRef: y,
-    menuItems: b,
+    targetElementRef: b,
+    menuItems: y,
     children: e => {
       let t = () => {
         var t;
         null == p || p(), null == (t = e.onMouseEnter) || t.call(e)
       };
       return (0, r.jsx)(o.br, m(_({
-        buttonRef: y,
+        buttonRef: b,
         tooltipPosition: "left",
         tooltipAlign: "top"
       }, e, O), {

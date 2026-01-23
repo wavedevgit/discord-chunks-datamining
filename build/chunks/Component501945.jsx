@@ -2,7 +2,7 @@
 /** chunk id: 501945, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  L: () => S
+  L: () => I
 }), require("./228524.js"), require("./65821.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk535217 = require("./535217.js"),
   Chunk473169 = require("./473169.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,12 +38,12 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
-class A extends Chunk64700.PureComponent {
+class v extends Chunk64700.PureComponent {
   renderConflictButton(e, t, n, i) {
     return (0, r.jsxs)(l.$n, {
       className: E.fe,
@@ -120,7 +120,7 @@ class A extends Chunk64700.PureComponent {
     } = this.props;
     if (t.type !== m.VX0.CONFLICT) throw Error("Cannot render conflict for non conflict type");
     return (0, r.jsxs)(c.$mQ, {
-      className: b.SX,
+      className: y.SX,
       children: [(0, r.jsx)("div", {
         className: E.h_,
         children: g.intl.format(g.t.eyXUP6, {
@@ -157,7 +157,7 @@ class A extends Chunk64700.PureComponent {
           onClick: this.onClose
         }), (0, r.jsx)(c.Heading, {
           variant: "heading-lg/semibold",
-          className: b.Gf,
+          className: y.Gf,
           children: n
         })]
       }), e.type === m.VX0.CONFLICT ? this.renderConflict() : this.renderError()]
@@ -165,26 +165,26 @@ class A extends Chunk64700.PureComponent {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, y(this, "onClose", () => {
+    super(...e), t = this, b(this, "onClose", () => {
       this.props.onClose()
-    }), y(this, "handlePlay", function() {
+    }), b(this, "handlePlay", function() {
       let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
         n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
         {
           libraryApplication: r,
           analyticsParams: i
         } = t.props;
-      t.onClose(), S(r.id, r, {
+      t.onClose(), I(r.id, r, {
         analyticsParams: i,
         cloudSync: e,
         cloudSyncForceHash: n
       })
-    }), y(this, "handleChooseDownload", () => {
+    }), b(this, "handleChooseDownload", () => {
       let {
         cloudSyncState: e
       } = this.props;
       e.type === m.VX0.CONFLICT && this.handlePlay(true, e.remote.hash)
-    }), y(this, "handleChooseUpload", () => {
+    }), b(this, "handleChooseUpload", () => {
       let {
         cloudSyncState: e
       } = this.props;
@@ -192,7 +192,7 @@ class A extends Chunk64700.PureComponent {
     })
   }
 }
-let v = Chunk311907.Ay.connectStores([Chunk465797.A, Chunk587895.A], e => {
+let A = Chunk311907.Ay.connectStores([Chunk465797.A, Chunk587895.A], e => {
   let {
     libraryApplication: t,
     branchId: n
@@ -201,8 +201,8 @@ let v = Chunk311907.Ay.connectStores([Chunk465797.A, Chunk587895.A], e => {
     cloudSyncState: _.A.getState(t.id, n),
     application: f.A.getApplication(t.id)
   }
-})(A);
-async function S(e, t, n) {
+})(v);
+async function I(e, t, n) {
   let i = f.A.getApplication(e);
   if (null == i) return;
   let {
@@ -215,7 +215,7 @@ async function S(e, t, n) {
     try {
       await u.O(t.id, e, s)
     } catch (n) {
-      (0, c.qfG)(n => (0, r.jsx)(v, O({
+      (0, c.qfG)(n => (0, r.jsx)(A, O({
         libraryApplication: t,
         analyticsParams: o,
         branchId: e

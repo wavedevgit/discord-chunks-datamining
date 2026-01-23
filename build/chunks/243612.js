@@ -60,11 +60,11 @@ function h() {
   };
   let g = f.getTargetPID(),
     E = n.getGameForPID(g),
-    b = r.getActivityForPID(g);
-  return (null == E || null == E.id || null == E.name) && (null == b || null == b.application_id) ? true : {
-    id: null != (e = null == E ? true : E.id) ? e : null == b ? true : b.application_id,
-    altId: null == b ? true : b.application_id,
-    name: null != (t = null == E ? true : E.name) ? t : null == b ? true : b.name
+    y = r.getActivityForPID(g);
+  return (null == E || null == E.id || null == E.name) && (null == y || null == y.application_id) ? true : {
+    id: null != (e = null == E ? true : E.id) ? e : null == y ? true : y.application_id,
+    altId: null == y ? true : y.application_id,
+    name: null != (t = null == E ? true : E.name) ? t : null == y ? true : y.name
   }
 }
 

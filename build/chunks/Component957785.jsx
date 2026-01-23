@@ -23,22 +23,22 @@ let p = Chunk64700.forwardRef(function(e, t) {
     renderPreview: m,
     moreCount: g,
     isSingleCard: E = false,
-    wishlistId: b,
-    wishlistItem: y,
+    wishlistId: y,
+    wishlistItem: b,
     cardSize: O = d.Y.MEDIUM,
-    itemSource: A
+    itemSource: v
   } = e, {
-    skuId: v,
-    skuProductLine: S
-  } = y, {
-    trackUserProfileWishlistAction: I
+    skuId: A,
+    skuProductLine: I
+  } = b, {
+    trackUserProfileWishlistAction: S
   } = (0, u.NJ)(), T = h ? f.ho : f.C8, C = E ? f.pr : f.Nr, N = null != g && g > 0, R = (0, r.jsxs)(l.DUT, {
     onClick: () => {
-      p(), I({
+      p(), S({
         action: N ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
-        skuId: N ? null : v,
-        wishlistId: b,
-        productLines: new Set([S])
+        skuId: N ? null : A,
+        wishlistId: y,
+        productLines: new Set([I])
       })
     },
     className: s()(C, {
@@ -57,14 +57,14 @@ let p = Chunk64700.forwardRef(function(e, t) {
         children: ["+", g]
       })
     })]
-  }), w = !N && null != A;
+  }), w = !N && null != v;
   return (0, r.jsxs)("div", {
     className: s()({
       [f.r4]: w
     }),
     children: [w && (0, r.jsx)("div", {
       className: f.RL,
-      children: A === c.uS.POPULAR ? (0, r.jsx)(l.Y3C, {
+      children: v === c.uS.POPULAR ? (0, r.jsx)(l.Y3C, {
         className: s()(f.fd, f.I$),
         size: "xxs",
         color: "currentColor"
@@ -75,7 +75,7 @@ let p = Chunk64700.forwardRef(function(e, t) {
       })
     }), (0, r.jsx)(o.un, {
       asContainer: true,
-      asset: null == (a = _.renderIcon) ? true : a.call(_, y),
+      asset: null == (a = _.renderIcon) ? true : a.call(_, b),
       assetSize: c.Q8,
       title: _.title,
       body: null != (i = _.body) ? i : "",

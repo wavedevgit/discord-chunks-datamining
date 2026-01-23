@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
-  a = require.n(Chunk735438),
+  s = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk442433 = require("./442433.js"),
@@ -69,38 +69,38 @@ function P(e) {
       baseChannelId: w,
       channelViewSource: R = "Split View"
     } = e,
-    D = (0, s.bG)([O.A], () => O.A.getChannel(P)),
-    M = (0, s.bG)([v.A], () => v.A.getGuild(null == D ? true : D.getGuildId())),
-    L = (0, h.Ay)(D);
-  t = D, i = (0, s.bG)([x.A], () => null != t && !a().isEmpty(x.A.getVoiceStatesForChannel(t.id))), l.useEffect(() => {
+    D = (0, a.bG)([_.A], () => _.A.getChannel(P)),
+    M = (0, a.bG)([j.A], () => j.A.getGuild(null == D ? true : D.getGuildId())),
+    L = (0, f.Ay)(D);
+  t = D, i = (0, a.bG)([v.A], () => null != t && !s().isEmpty(v.A.getVoiceStatesForChannel(t.id))), l.useEffect(() => {
     i && null != t && (o.h.dispatch({
       type: "SIDEBAR_CLOSE",
       baseChannelId: t.parent_id
     }), (0, y.N9)(t, {
-      source: _.H9.VOICE_AUTO_OPEN
+      source: E.H9.VOICE_AUTO_OPEN
     }))
   }, [i, t]);
-  let G = l.useRef(false);
+  let k = l.useRef(false);
   if (l.useEffect(() => {
-      if (null == D || G.current) return;
-      G.current = true;
-      let e = (0, f.C)(O.A.getChannel(D.id), true);
+      if (null == D || k.current) return;
+      k.current = true;
+      let e = (0, p.C)(_.A.getChannel(D.id), true);
       (0, d.zV)(C.HAw.CHANNEL_OPENED, T(N({}, e, (0, d.qL)(D.id)), {
         channel_view: R
-      })), (0, p.k)(C.HAw.CHANNEL_OPENED_CLICKSTREAM, {
+      })), (0, h.k)(C.HAw.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: D.id
       })
     }, [D, R]), null == D || null == M) return null;
-  let k = (0, r.jsx)(E.A, {
+  let G = (0, r.jsx)(x.A, {
     channel: D,
     baseChannelId: w
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.A, {
       channel: D,
-      draftType: j.C.ChannelMessage
-    }), (0, r.jsx)(m.Ay, {
-      toolbar: k,
+      draftType: O.C.ChannelMessage
+    }), (0, r.jsx)(b.Ay, {
+      toolbar: G,
       "aria-label": S.intl.string(S.t.Pwe8tN),
       children: (0, A.zF)({
         channel: D,
@@ -123,10 +123,10 @@ function P(e) {
       })
     }), (0, r.jsx)("div", {
       className: I.T,
-      children: (0, r.jsx)(b.A, {
+      children: (0, r.jsx)(g.A, {
         channel: D,
         guild: M,
-        chatInputType: g.oU.SIDEBAR
+        chatInputType: m.oU.SIDEBAR
       }, P)
     })]
   })

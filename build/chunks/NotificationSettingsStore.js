@@ -87,7 +87,7 @@ function E(e) {
   d.notifyMessagesInSelectedChannel = t
 }
 
-function b(e) {
+function y(e) {
   let {
     enabled: t
   } = e;
@@ -97,7 +97,7 @@ function b(e) {
     desktopType: o.nRU.ALL
   })
 }
-class y extends(r = Chunk311907.Ay.DeviceSettingsStore) {
+class b extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   initialize(e) {
     d = c({}, u, e)
   }
@@ -129,16 +129,16 @@ class y extends(r = Chunk311907.Ay.DeviceSettingsStore) {
     return d.disableAllSounds || false !== d.disabledSounds.indexOf(e)
   }
 }
-l(y, "displayName", "NotificationSettingsStore"), l(y, "persistKey", "notifications"), l(y, "migrations", [e => {
+l(b, "displayName", "NotificationSettingsStore"), l(b, "persistKey", "notifications"), l(b, "migrations", [e => {
   let t = c({}, e);
   return t.disabledSounds = t.disabledSounds || [], t.disableUnreadBadge = t.disableUnreadBadge || false, t.taskbarFlash = null == t.taskbarFlash || t.taskbarFlash, t.ttsType = t.ttsType || o.aVn.NEVER, null == t.desktopType && (t.desktopType = s.isPlatformEmbedded ? o.nRU.ALL : o.nRU.NEVER), t
 }]);
-let O = new y(Chunk73153.h, {
+let O = new b(Chunk73153.h, {
   NOTIFICATIONS_SET_DESKTOP_TYPE: f,
   NOTIFICATIONS_SET_TTS_TYPE: h,
   NOTIFICATIONS_SET_DISABLED_SOUNDS: p,
   NOTIFICATIONS_TOGGLE_ALL_DISABLED: _,
-  NOTIFICATIONS_SET_PERMISSION_STATE: b,
+  NOTIFICATIONS_SET_PERMISSION_STATE: y,
   NOTIFICATIONS_SET_DISABLE_UNREAD_BADGE: m,
   NOTIFICATIONS_SET_TASKBAR_FLASH: g,
   NOTIFICATIONS_SET_NOTIFY_MESSAGES_IN_SELECTED_CHANNEL: E

@@ -113,10 +113,10 @@ function V(e) {
     selectedGuild: a
   } = e, {
     analyticsLocations: x
-  } = (0, p.Ay)(d.A.USER_SETTINGS_GUILD_PROFILE), j = (0, o.bG)([A.default], () => {
-    let e = A.default.getCurrentUser();
+  } = (0, p.Ay)(d.A.USER_SETTINGS_GUILD_PROFILE), j = (0, o.bG)([v.default], () => {
+    let e = v.default.getCurrentUser();
     return s()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), U = (0, o.bG)([y.Ay], () => null != a ? y.Ay.getMember(a.id, j.id) : null), V = (0, o.bG)([b.A], () => !b.A.isFetchingProfile(j.id, null == a ? true : a.id)), F = (0, o.bG)([O.A], () => O.A.hidePersonalInformation), B = (0, o.cf)([T.A], () => M(L({}, T.A.getAllPending()), {
+  }), U = (0, o.bG)([b.Ay], () => null != a ? b.Ay.getMember(a.id, j.id) : null), V = (0, o.bG)([y.A], () => !y.A.isFetchingProfile(j.id, null == a ? true : a.id)), F = (0, o.bG)([O.A], () => O.A.hidePersonalInformation), B = (0, o.cf)([T.A], () => M(L({}, T.A.getAllPending()), {
     source: T.A.getSource()
   })), {
     source: H,
@@ -133,7 +133,7 @@ function V(e) {
   }), {
     pendingDisplayNameStyles: X
   } = (0, h.B0)(j, null == a ? true : a.id);
-  return (i.useEffect(() => () => c.h.wait(I.IM), []), i.useEffect(() => {
+  return (i.useEffect(() => () => c.h.wait(S.IM), []), i.useEffect(() => {
     null != H && f.Ay.trackWithMetadata(w.HAw.SETTINGS_PANE_VIEWED, {
       settings_type: "guild",
       destination_pane: w.JJy.SETTINGS_CUSTOMIZE_PROFILE,
@@ -144,13 +144,13 @@ function V(e) {
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: P.intl.format(P.t["/PTB2E"], {
-        helpCenterLink: v.A.getArticleURL(w.MVz.GUILD_PROFILES)
+        helpCenterLink: A.A.getArticleURL(w.MVz.GUILD_PROFILES)
       })
     }), null != a ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(R.A, {
         guildId: a.id,
         onChange: e => {
-          null != e && (0, I.JJ)(e)
+          null != e && (0, S.JJ)(e)
         }
       }), (0, r.jsx)(m.A, {
         profilePreviewTitle: (0, r.jsx)(l.Heading, {
@@ -165,7 +165,7 @@ function V(e) {
           pendingDisplayNameStyles: X,
           user: j,
           guild: a,
-          canUsePremiumCustomization: S.Ay.canUsePremiumProfileCustomization(j),
+          canUsePremiumCustomization: I.Ay.canUsePremiumProfileCustomization(j),
           onUpsellClick: G
         })),
         nameplatePreview: (0, r.jsx)(_.A, M(L({}, K), {

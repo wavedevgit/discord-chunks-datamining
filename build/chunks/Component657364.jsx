@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk937474 = require("./937474.js");
-let y = e => {
+let b = e => {
   let {
     onConfirm: t
   } = e;
@@ -47,13 +47,13 @@ function O() {
     })),
     [a, O] = i.useState(false);
   if (null == e) return null;
-  let A = (0, f.Oj)(t, e) || n,
-    v = null != t && s()().diff(s()(t.created_at), "days") < g.n83,
-    S = A && v,
-    I = e.isStaff(),
+  let v = (0, f.Oj)(t, e) || n,
+    A = null != t && s()().diff(s()(t.created_at), "days") < g.n83,
+    I = v && A,
+    S = e.isStaff(),
     T = !e.verified,
     C = () => {
-      y({
+      b({
         onConfirm: e => {
           O(true), (0, p.$)(e).then(e => {
             null != e && null != e.body ? c.A.show({
@@ -81,33 +81,33 @@ function O() {
       description: E.intl.format(E.t.P3kNfr, {
         helpdeskArticle: d.A.getArticleURL(g.MVz.GDPR_REQUEST_DATA)
       })
-    }), S ? (0, r.jsx)(l.ZpM, {
-      className: b.N,
+    }), I ? (0, r.jsx)(l.ZpM, {
+      className: y.N,
       children: (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         children: E.intl.format(E.t.RNDlV9, {
           date: s()(t.created_at).add(g.n83, "days").format("MMMM Do YYYY")
         })
       })
-    }) : I ? (0, r.jsx)(l.ZpM, {
-      className: b.N,
+    }) : S ? (0, r.jsx)(l.ZpM, {
+      className: y.N,
       children: (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         children: E.intl.string(E.t.ZPQLH2)
       })
     }) : (0, r.jsxs)(r.Fragment, {
       children: [T ? (0, r.jsx)(l.ZpM, {
-        className: b.N,
+        className: y.N,
         children: (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
           children: E.intl.string(E.t.c1f88z)
         })
       }) : null, (0, r.jsx)("div", {
-        className: b.x,
+        className: y.x,
         children: (0, r.jsx)(l.Button, {
           variant: "primary",
           text: E.intl.string(E.t.dmBSKo),
-          disabled: A,
+          disabled: v,
           onClick: C,
           loading: a || n
         })

@@ -11,10 +11,10 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js");
 
 function c(e, t) {
-  return (0, r.bG)([i.A, a.A, s.A], () => {
-    let n = a.A.getGuild(t);
+  return (0, r.bG)([i.A, s.A, a.A], () => {
+    let n = s.A.getGuild(t);
     if (!((null == n ? true : n.features.has(o.GuildFeatures.WELCOME_SCREEN_ENABLED)) === true && n.features.has(o.GuildFeatures.COMMUNITY)) || n.features.has(o.GuildFeatures.GUILD_SERVER_GUIDE)) returnfalse;
     let r = i.A.getChannel(e);
-    return e === s.A.getChannelId(t) && null != r && r.getGuildId() === n.id && (0, l.ke)(r.type)
+    return e === a.A.getChannelId(t) && null != r && r.getGuildId() === n.id && (0, l.ke)(r.type)
   })
 }

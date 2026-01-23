@@ -60,7 +60,7 @@ let E = new(s())({
   max: 50
 });
 
-function b(e) {
+function y(e) {
   let t = e,
     n = E.get(t);
   if (null != n) return n;
@@ -72,12 +72,12 @@ function b(e) {
     };
   return E.set(t, a), a
 }
-let y = ["http:", "https:", "discord:", "tel:", "sms:", "mailto:"],
+let b = ["http:", "https:", "discord:", "tel:", "sms:", "mailto:"],
   O = [Chunk182490.D.TEXT, Chunk182490.D.UNDERLINE, Chunk182490.D.STRONG, Chunk182490.D.ITALICS, Chunk182490.D.STRIKETHROUGH, Chunk182490.D.INLINE_CODE, Chunk182490.D.SPOILER, Chunk182490.D.LINE_BREAK, Chunk182490.D.TIMESTAMP],
-  A = [...O, Chunk182490.D.EMOJI, Chunk182490.D.CUSTOM_EMOJI],
-  v = [Chunk182490.D.LIST, Chunk182490.D.HEADING, Chunk182490.D.BLOCK_QUOTE, Chunk182490.D.SUBTEXT],
-  S = [Chunk182490.D.TEXT],
-  I = [Chunk182490.D.UNDERLINE, Chunk182490.D.STRONG, Chunk182490.D.ITALICS, Chunk182490.D.STRIKETHROUGH, Chunk182490.D.INLINE_CODE, Chunk182490.D.SPOILER, Chunk182490.D.LINE_BREAK, Chunk182490.D.TIMESTAMP, Chunk182490.D.EMOJI, Chunk182490.D.CUSTOM_EMOJI, Chunk182490.D.LIST, Chunk182490.D.HEADING, Chunk182490.D.BLOCK_QUOTE, Chunk182490.D.SUBTEXT];
+  v = [...O, Chunk182490.D.EMOJI, Chunk182490.D.CUSTOM_EMOJI],
+  A = [Chunk182490.D.LIST, Chunk182490.D.HEADING, Chunk182490.D.BLOCK_QUOTE, Chunk182490.D.SUBTEXT],
+  I = [Chunk182490.D.TEXT],
+  S = [Chunk182490.D.UNDERLINE, Chunk182490.D.STRONG, Chunk182490.D.ITALICS, Chunk182490.D.STRIKETHROUGH, Chunk182490.D.INLINE_CODE, Chunk182490.D.SPOILER, Chunk182490.D.LINE_BREAK, Chunk182490.D.TIMESTAMP, Chunk182490.D.EMOJI, Chunk182490.D.CUSTOM_EMOJI, Chunk182490.D.LIST, Chunk182490.D.HEADING, Chunk182490.D.BLOCK_QUOTE, Chunk182490.D.SUBTEXT];
 
 function T(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [];
@@ -131,7 +131,7 @@ function C(e) {
 }
 
 function N(e) {
-  if ((0, c.rL)(e) || b(e).whitespaceSanitized !== e) returntrue;
+  if ((0, c.rL)(e) || y(e).whitespaceSanitized !== e) returntrue;
   let t = d.A.toURLSafe(e);
   if (null == t) returntrue;
   if ("http:" !== t.protocol && "https:" !== t.protocol) returnfalse;
@@ -145,7 +145,7 @@ function R(e) {
     if (N(e)) throw Error("Rejected due to suspicious characters in URL: " + JSON.stringify(e));
     let n = new URL(e),
       r = null != (t = n.protocol) ? t : "";
-    if (!y.includes(r.toLowerCase())) throw Error("Provided protocol is not allowed: " + r);
+    if (!b.includes(r.toLowerCase())) throw Error("Provided protocol is not allowed: " + r);
     if (("http:" === r || "https:" === r) && (null == n.hostname || 0 === n.hostname.length)) throw Error("no hostname");
     let i = (0, p.nK)(n);
     n.username = "", n.password = "";
@@ -166,12 +166,12 @@ let w = g(h({}, l().defaultRules.link), {
       content: r
     });
     if (N(s)) return u();
-    let d = b(s),
-      p = b(a),
-      _ = b(null != o ? o : ""),
+    let d = y(s),
+      p = y(a),
+      _ = y(null != o ? o : ""),
       m = d.whitespaceSanitized,
       E = p.fullySanitized,
-      y = _.fullySanitized,
+      b = _.fullySanitized,
       w = E.trim();
     if (0 === m.trim().length || 0 === w.length) return u();
     let P = R(l().unescapeUrl(s)),
@@ -182,11 +182,11 @@ let w = g(h({}, l().defaultRules.link), {
         allowEscape: false,
         parseInlineCodeChildContent: true
       }),
-      j = n.allowEmojiLinks ? A : O,
-      M = [...j, ...v],
-      k = [...S, ...I],
+      j = n.allowEmojiLinks ? v : O,
+      M = [...j, ...A],
+      k = [...I, ...S],
       U = T(t(E, L), M, [f.D.EMOJI]),
-      G = T(t(y, L), k);
+      G = T(t(b, L), k);
     if (null == U || null == G || 0 === C(U).trim().length) return u();
     let V = i().pick(t.rules, j),
       F = l().parserFor(V)(p.whitespaceSanitized, L),

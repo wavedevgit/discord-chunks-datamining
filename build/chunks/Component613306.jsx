@@ -88,7 +88,7 @@ function P(e) {
     id: t,
     guildId: n,
     channelId: o
-  } = e, c = (0, i.bG)([O.default], () => O.default.getUser(t)), u = (0, i.bG)([y.A], () => y.A.hidePersonalInformation), d = S.Ay.useName(n, o, c), f = (0, r.jsx)(_.A, {
+  } = e, c = (0, i.bG)([O.default], () => O.default.getUser(t)), u = (0, i.bG)([b.A], () => b.A.hidePersonalInformation), d = I.Ay.useName(n, o, c), f = (0, r.jsx)(_.A, {
     children: null == d ? "<@".concat(t, ">") : "@".concat(d)
   });
   if (null != c) {
@@ -101,7 +101,7 @@ function P(e) {
           animate: true,
           size: s._3J.SIZE_16,
           className: C.my
-        }), I.Ay.getUserTag(c, {
+        }), S.Ay.getUserTag(c, {
           mode: "username",
           identifiable: u ? "never" : "always"
         }), (0, r.jsx)("span", {
@@ -111,7 +111,7 @@ function P(e) {
       }),
       delay: 750,
       position: "top",
-      "aria-label": I.Ay.getUserTag(c, {
+      "aria-label": S.Ay.getUserTag(c, {
         decoration: "never"
       }),
       asContainer: true,
@@ -128,7 +128,7 @@ function D(e) {
   let {
     id: t,
     guildId: n
-  } = e, a = (0, i.bG)([b.A], () => null != n ? b.A.getRole(n, t) : true), o = (0, i.bG)([c.A], () => c.A.roleStyle), l = (0, m.X_)(n, a, null == a ? true : a.colorStrings);
+  } = e, a = (0, i.bG)([y.A], () => null != n ? y.A.getRole(n, t) : true), o = (0, i.bG)([c.A], () => c.A.roleStyle), l = (0, m.X_)(n, a, null == a ? true : a.colorStrings);
   if (null == a) return (0, r.jsxs)("span", {
     children: ["@", T.intl.string(T.t["YV4F/n"])]
   });
@@ -153,7 +153,7 @@ function x(e) {
   } = e, n = (0, i.bG)([g.A], () => g.A.getChannel(t)), a = T.intl.string(T.t.zLZPmk).toLowerCase(), s = "text", o = true;
   if (null != n) {
     var l;
-    a = (0, u.nc)(n) ? n.name : T.intl.string(T.t["/YzI63"]), s = (0, u.nc)(n) ? null != (l = (0, v.QG)(n)) ? l : "text" : "locked", o = (0, d.Y)(n.type)
+    a = (0, u.nc)(n) ? n.name : T.intl.string(T.t["/YzI63"]), s = (0, u.nc)(n) ? null != (l = (0, A.QG)(n)) ? l : "text" : "locked", o = (0, d.Y)(n.type)
   }
   return o ? (0, r.jsx)(_.A, {
     iconType: s,
@@ -202,7 +202,7 @@ function k(e) {
   } = e, a = (0, i.bG)([E.A], () => E.A.getDetectableGame(n)), s = null != a ? (0, r.jsx)("img", {
     alt: "",
     className: C.Kk,
-    src: A.Ay.getApplicationIconURL({
+    src: v.Ay.getApplicationIconURL({
       id: a.id,
       icon: a.icon,
       size: 32

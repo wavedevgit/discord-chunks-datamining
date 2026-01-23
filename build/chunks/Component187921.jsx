@@ -25,11 +25,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk650583 = require("./650583.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk313877 = require("./313877.js");
-let S = (0, Chunk95701.createChannelRecord)({
+let I = (0, Chunk95701.createChannelRecord)({
     id: "1",
     type: Chunk478437.r.DM
   }),
-  I = e => {
+  S = e => {
     let {
       input: t,
       username: n,
@@ -37,19 +37,19 @@ let S = (0, Chunk95701.createChannelRecord)({
       sourceDetails: i
     } = e;
     switch (r) {
-      case y.dS.ACTIVITY:
-        let a = A.intl.formatToPlainString(A.t.WmvMCo, {
+      case b.dS.ACTIVITY:
+        let a = v.intl.formatToPlainString(v.t.WmvMCo, {
             username: n
           }),
           s = "\n> ".concat(i);
         return null != i ? "".concat(E.c5).concat(a, "*").concat(s, "\n").concat(t) : "".concat(E.c5).concat(a, "*\n").concat(t);
-      case y.dS.AVATAR:
-        let o = A.intl.formatToPlainString(A.t.lpaBsB, {
+      case b.dS.AVATAR:
+        let o = v.intl.formatToPlainString(v.t.lpaBsB, {
           username: n
         });
         return "".concat(E.c5).concat(o, "*\n").concat(t);
-      case y.dS.STATUS:
-        let l = A.intl.formatToPlainString(A.t.lFXgFV, {
+      case b.dS.STATUS:
+        let l = v.intl.formatToPlainString(v.t.lFXgFV, {
             username: n
           }),
           c = "\n> ".concat(i);
@@ -60,12 +60,12 @@ let S = (0, Chunk95701.createChannelRecord)({
   },
   T = e => {
     switch (e) {
-      case y.dS.ACTIVITY:
-        return A.t.Qn081O;
-      case y.dS.AVATAR:
-        return A.t.xGNPFK;
-      case y.dS.STATUS:
-        return A.t.g9BTCM;
+      case b.dS.ACTIVITY:
+        return v.t.Qn081O;
+      case b.dS.AVATAR:
+        return v.t.xGNPFK;
+      case b.dS.STATUS:
+        return v.t.g9BTCM;
       default:
         (0, p.xb)(e)
     }
@@ -88,7 +88,7 @@ function C(e) {
     setInteractionToast: P
   } = (0, g.Pq)(), {
     primaryColor: D
-  } = (0, b.E)(), [x, L] = i.useState(""), [j, M] = i.useState((0, u.x7)(x)), k = i.useRef(false), U = i.useRef(null), G = i.useCallback(e => {
+  } = (0, y.E)(), [x, L] = i.useState(""), [j, M] = i.useState((0, u.x7)(x)), k = i.useRef(false), U = i.useRef(null), G = i.useCallback(e => {
     e.key === O.dh.ESCAPE && (e.stopPropagation(), w())
   }, [w]);
   i.useEffect(() => {
@@ -96,14 +96,14 @@ function C(e) {
   }, [U, p]);
   let V = async e => {
     if (null == e) return;
-    o === y.dS.AVATAR ? C({
+    o === b.dS.AVATAR ? C({
       action: "SEND_REPLY_AVATAR"
-    }) : o === y.dS.STATUS ? C({
+    }) : o === b.dS.STATUS ? C({
       action: "SEND_REPLY_CUSTOM_STATUS"
     }) : C({
       action: "SEND_REPLY_ACTIVITY"
     });
-    let n = I({
+    let n = S({
       input: e,
       username: h.Ay.getName(t),
       sourceType: o,
@@ -120,30 +120,30 @@ function C(e) {
         entry: R
       })
     } catch (e) {}
-    P(y.AQ.REPLY)
+    P(b.AQ.REPLY)
   }, F = {
-    [v.h5]: o === y.dS.STATUS,
-    [v.my]: o === y.dS.AVATAR,
-    [v.Eb]: o === y.dS.ACTIVITY
+    [A.h5]: o === b.dS.STATUS,
+    [A.my]: o === b.dS.AVATAR,
+    [A.Eb]: o === b.dS.ACTIVITY
   };
   return (0, r.jsx)(l.l, {
     ref: U,
     onKeyDown: G,
     children: (0, r.jsx)("div", {
-      className: s()(v.kL, F, {
-        [v.GE]: null != D
+      className: s()(A.kL, F, {
+        [A.GE]: null != D
       }),
       children: (0, r.jsx)(d.Ay, {
         parentModalKey: E,
         emojiPickerCloseOnModalOuterClick: true,
-        className: v.hF,
-        innerClassName: v.rn,
-        editorClassName: v.EN,
+        className: A.hF,
+        innerClassName: A.rn,
+        editorClassName: A.EN,
         type: c.oU.USER_PROFILE_REPLY,
-        placeholder: A.intl.formatToPlainString(T(o), {
+        placeholder: v.intl.formatToPlainString(T(o), {
           username: _.Ay.getName(n, a, t)
         }),
-        channel: S,
+        channel: I,
         textValue: x,
         richValue: j,
         onChange: (e, t, n) => {

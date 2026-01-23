@@ -30,10 +30,10 @@ function O(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let A = new Set,
-  v = {},
-  S = new Set,
-  I = {},
+let v = new Set,
+  A = {},
+  I = new Set,
+  S = {},
   T = new Set,
   C = {},
   N = 10 * Chunk927813.A.Millis.MINUTE,
@@ -50,7 +50,7 @@ function x() {
 }
 
 function L() {
-  if (!(0, y.S)() || p.l_.getSetting()) returnfalse;
+  if (!(0, b.S)() || p.l_.getSetting()) returnfalse;
   let e = h.A.entitledBranchIds,
     t = [];
   for (let n of e) C.hasOwnProperty(n) || (C[n] = null, t.push(n));
@@ -59,24 +59,24 @@ function L() {
 }
 
 function j() {
-  if (!(0, y.S)()) returnfalse;
+  if (!(0, b.S)()) returnfalse;
   for (let e of T) {
     let {
       applicationId: t,
       branchId: n
-    } = (0, b.r0)(e);
+    } = (0, y.r0)(e);
     null != f.A.getApplication(t) && (T.delete(e), M(t, n))
   }
 }
 
 function M(e, t) {
-  if (null != v[t] && g.A.shouldBeInstalled(e, t)) {
-    let n = v[t],
+  if (null != A[t] && g.A.shouldBeInstalled(e, t)) {
+    let n = A[t],
       r = n.manifestIds,
       i = m.A.getState(e, t);
     null != i && i.shouldPatch && (i.buildId !== n.id || !a().isEqual(i.manifestIds, r)) && l.h.wait(() => {
       let i = f.A.getApplication(e);
-      null != i ? (T.delete((0, b.gW)(e, t)), (0, d.K3)(i, t, n.id, r, true)) : T.add((0, b.gW)(e, t))
+      null != i ? (T.delete((0, y.gW)(e, t)), (0, d.K3)(i, t, n.id, r, true)) : T.add((0, y.gW)(e, t))
     })
   }
 }
@@ -85,7 +85,7 @@ function k(e) {
   let {
     branchId: t
   } = e;
-  A.add(t)
+  v.add(t)
 }
 
 function U(e) {
@@ -95,7 +95,7 @@ function U(e) {
     locale: r,
     build: i
   } = e;
-  A.delete(n);
+  v.delete(n);
   let a = i.manifests.map(e => {
       let {
         id: t
@@ -103,7 +103,7 @@ function U(e) {
       return t
     }),
     s = i.id;
-  S.delete(n), v[n] = {
+  I.delete(n), A[n] = {
     id: s,
     applicationId: t,
     branchId: n,
@@ -116,14 +116,14 @@ function G(e) {
   let {
     branchId: t
   } = e;
-  A.delete(t), S.add(t)
+  v.delete(t), I.add(t)
 }
 
 function V(e) {
   let {
     buildId: t
   } = e;
-  I.hasOwnProperty(t) || (I[t] = null)
+  S.hasOwnProperty(t) || (S[t] = null)
 }
 
 function F(e) {
@@ -131,14 +131,14 @@ function F(e) {
     buildId: t,
     sizeKB: n
   } = e;
-  I[t] = n
+  S[t] = n
 }
 
 function B(e) {
   let {
     buildId: t
   } = e;
-  null == I[t] && delete I[t]
+  null == S[t] && delete S[t]
 }
 
 function H(e) {
@@ -175,12 +175,12 @@ function K(e) {
   let {
     entitlements: t
   } = e;
-  if (!(0, y.S)()) returnfalse;
+  if (!(0, b.S)()) returnfalse;
   let n = new Set;
   for (let e of t) n.add(e.application_id);
   for (let e in h.A.libraryApplications) {
     let t = h.A.libraryApplications[e];
-    n.has(t.id) && (0, b.XZ)(t) && l.h.wait(() => u.n(t.id, t.branchId))
+    n.has(t.id) && (0, y.XZ)(t) && l.h.wait(() => u.n(t.id, t.branchId))
   }
 }
 class z extends(r = Chunk311907.Ay.Store) {
@@ -188,22 +188,22 @@ class z extends(r = Chunk311907.Ay.Store) {
     this.syncWith([h.A], L), this.waitFor(f.A, m.A, g.A, h.A, _.A)
   }
   getTargetBuildId(e, t) {
-    return null == v[t] ? null : v[t].id
+    return null == A[t] ? null : A[t].id
   }
   getTargetManifests(e, t) {
-    return null == v[t] ? null : v[t].manifestIds
+    return null == A[t] ? null : A[t].manifestIds
   }
   hasNoBuild(e, t) {
-    return S.has(t)
+    return I.has(t)
   }
   isFetching(e, t) {
-    return A.has(t)
+    return v.has(t)
   }
   needsToFetchBuildSize(e) {
-    return !I.hasOwnProperty(e)
+    return !S.hasOwnProperty(e)
   }
   getBuildSize(e) {
-    return I[e]
+    return S[e]
   }
 }
 O(z, "displayName", "ApplicationBuildStore");

@@ -51,25 +51,25 @@ function k(e) {
     giftRecipient: _,
     giftMessageError: E,
     isSendingMessage: O
-  } = e, [A, S] = i.useState(f.e2O.Modes.DEFAULT), T = (0, c.bG)([I.A], () => I.A.enabled), k = p || null != l && null != _, G = (null == a ? true : a.productLine) === D.EZt.COLLECTIBLES, V = (0, b.A)(), {
+  } = e, [v, I] = i.useState(f.e2O.Modes.DEFAULT), T = (0, c.bG)([S.A], () => S.A.enabled), k = p || null != l && null != _, G = (null == a ? true : a.productLine) === D.EZt.COLLECTIBLES, V = (0, y.A)(), {
     selectedGiftingPromotionReward: F
-  } = (0, P.Pv)(), B = null == V ? true : V.giftPurchaseConfirmation, H = (0, m.Mv)(null == F ? true : F.skuId), Y = (0, y.Mq)(o) && null != H && null != B, W = () => null != o ? o.skuId : null != a ? a.id : null, K = () => {
+  } = (0, P.Pv)(), B = null == V ? true : V.giftPurchaseConfirmation, H = (0, m.Mv)(null == F ? true : F.skuId), Y = (0, b.Mq)(o) && null != H && null != B, W = () => null != o ? o.skuId : null != a ? a.id : null, K = () => {
     let e;
     return null != E ? L.intl.string(L.t.qB8aya) : null == o ? null : (e = o.interval === x.WT.MONTH ? k ? Y ? B.monthGiftText : L.t["4ZJ+7Z"] : L.t["P+z55d"] : k ? Y ? B.yearGiftText : L.t.p0pZXP : L.t.bXqk3o, L.intl.format(e, {
       skuName: (0, R.RH)(o.id),
       intervalCount: o.intervalCount
     }))
   }, z = () => null != _ || p && null == E ? L.intl.string(L.t.zOmK9N) : null != E ? L.intl.string(L.t.d1lrmU) : L.intl.string(L.t["/s1xR7"]), q = (e, t) => {
-    null != a && (0, N.AK)(new v.A({
+    null != a && (0, N.AK)(new A.A({
       code: t,
       maxUses: 1
-    }), a), (0, C.C)(e, () => S(f.e2O.Modes.SUCCESS), () => S(f.e2O.Modes.ERROR)), setTimeout(() => {
-      S(f.e2O.Modes.DEFAULT)
+    }), a), (0, C.C)(e, () => I(f.e2O.Modes.SUCCESS), () => I(f.e2O.Modes.ERROR)), setTimeout(() => {
+      I(f.e2O.Modes.DEFAULT)
     }, M)
   }, X = () => {
     let e;
     if (null == t) return null;
-    switch (A) {
+    switch (v) {
       case f.e2O.Modes.SUCCESS:
         e = L.intl.string(L.t.XVvPjU);
         break;
@@ -86,7 +86,7 @@ function k(e) {
         children: (0, r.jsx)(f.e2O, {
           hideMessage: T ? L.intl.string(L.t["0RLn47"]) : null,
           value: (0, N.Zq)(t),
-          mode: A,
+          mode: v,
           text: e,
           onCopy: e => q(e, t),
           supportsCopy: C.p5,
@@ -168,12 +168,12 @@ let U = e => {
     _.A.fetchRelationships(), (0, O.u)()
   }, []);
   let [a, s] = i.useState(), [o, d] = i.useState(false), [m, g] = i.useState(false), {
-    userAffinities: b,
-    isLoading: y
-  } = (0, c.cf)([A.A], () => ({
-    userAffinities: A.A.getUserAffinitiesMap(),
-    isLoading: A.A.isFetching()
-  })), v = Array.from(b.keys()).sort((e, t) => A.A.compare(e, t)), I = (0, c.bG)([S.A], () => S.A.getFriendIDs()), C = l().difference(I, v), N = [...v, ...C], R = (0, c.bG)([T.default], () => T.default.filter(e => N.includes(e.id) && !e.bot), [N]);
+    userAffinities: y,
+    isLoading: b
+  } = (0, c.cf)([v.A], () => ({
+    userAffinities: v.A.getUserAffinitiesMap(),
+    isLoading: v.A.isFetching()
+  })), A = Array.from(y.keys()).sort((e, t) => v.A.compare(e, t)), S = (0, c.bG)([I.A], () => I.A.getFriendIDs()), C = l().difference(S, A), N = [...A, ...C], R = (0, c.bG)([T.default], () => T.default.filter(e => N.includes(e.id) && !e.bot), [N]);
   if (null == R || 0 === R.length) return null;
   let P = l().sortBy(R, e => N.indexOf(e.id));
   return (0, r.jsxs)("div", {
@@ -184,7 +184,7 @@ let U = e => {
         selectionMode: "single",
         label: L.intl.string(L.t.MJw05f),
         placeholder: L.intl.string(L.t.J019jZ),
-        loading: y,
+        loading: b,
         value: a,
         onSelectionChange: e => {
           s(e), d(false)

@@ -2,7 +2,7 @@
 /** chunk id: 414872, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => b,
+  Ay: () => y,
   ap: () => E,
   kg: () => g
 }), require("./896048.js");
@@ -65,7 +65,7 @@ function E() {
     })]
   })
 }
-let b = function(e) {
+let y = function(e) {
   let {
     glowOpacity: t,
     className: n,

@@ -17,20 +17,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk750506 = require("./750506.jsx"),
   Chunk353839 = require("./353839.js");
 
-function m(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
-      var l;
-      l = n[t], t in e ? Object.defineProperty(e, t, {
-        value: l,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = l
+      }) : e[t] = r
     })
   }
   return e
@@ -38,17 +38,17 @@ function m(e) {
 let h = {
     visibility: "hidden"
   },
-  A = {
+  y = {
     precision: 1e-4,
     duration: 300
   },
-  y = {
+  A = {
     tension: 150,
     friction: 20,
     precision: 1e-4,
     bounce: 0
   },
-  _ = {
+  b = {
     duration: 1e3
   };
 
@@ -58,46 +58,46 @@ function E(e) {
     popoutType: n
   } = e, {
     reducedMotion: E
-  } = r.useContext(s.CZ), v = (0, r.useRef)(null), O = f.K.getState().clipsButtonRef, x = (0, p._z)(t), S = (0, a.bG)([u.A], () => u.A.getActiveAnimation()), N = (0, a.yK)([u.A], () => u.A.getStreamClipAnimations(x)), C = (0, r.useRef)(true);
-  r.useEffect(() => () => {
+  } = l.useContext(o.CZ), v = (0, l.useRef)(null), O = f.K.getState().clipsButtonRef, x = (0, p._z)(t), S = (0, a.bG)([u.A], () => u.A.getActiveAnimation()), C = (0, a.yK)([u.A], () => u.A.getStreamClipAnimations(x)), N = (0, l.useRef)(true);
+  l.useEffect(() => () => {
     (0, d.MI)(x)
   }, [x]);
-  let j = e => {
+  let I = e => {
       if (n !== c.N.NO_POPOUT) return h;
       let t = null == O ? true : O.getBoundingClientRect();
-      if (C.current = t, e.timestamp !== S || null == t) return h;
+      if (N.current = t, e.timestamp !== S || null == t) return h;
       let {
-        top: l,
-        left: r
+        top: r,
+        left: l
       } = t;
       return {
-        top: l + 36,
-        left: r - 216,
+        top: r + 36,
+        left: l - 216,
         height: 151,
         width: 268
       }
     },
-    T = (0, r.useRef)(null),
-    I = (0, o.pnh)(N, {
+    j = (0, l.useRef)(null),
+    T = (0, s.pnh)(C, {
       keys: e => e.timestamp,
-      ref: T,
+      ref: j,
       from: {
         opacity: .2
       },
       enter: {
         opacity: 0
       },
-      config: A
+      config: y
     }, "animate-always"),
-    w = (0, r.useRef)(null),
-    R = (0, o.pnh)(N, {
+    w = (0, l.useRef)(null),
+    P = (0, s.pnh)(C, {
       ref: w,
       keys: e => e.timestamp,
-      from: e => m({
+      from: e => _({
         position: "fixed",
         visibility: "hidden",
         opacity: 1
-      }, E.enabled ? j(e) : (() => {
+      }, E.enabled ? I(e) : (() => {
         var e;
         if (n !== c.N.NO_POPOUT) return h;
         let t = null == (e = v.current) ? true : e.getBoundingClientRect();
@@ -108,39 +108,39 @@ function E(e) {
           left: t.left
         }
       })()),
-      enter: e => [m({
+      enter: e => [_({
         opacity: 1,
         visibility: "visible"
-      }, j(e))],
-      leave: m({
+      }, I(e))],
+      leave: _({
         opacity: 0
-      }, !E.enabled && m({
+      }, !E.enabled && _({
         height: 0,
         width: 0
       }, (() => {
-        if (null != C.current) return {
-          top: C.current.top + 12,
-          left: C.current.left + 12
+        if (null != N.current) return {
+          top: N.current.top + 12,
+          left: N.current.left + 12
         }
       })())),
-      config: E.enabled ? _ : y,
+      config: E.enabled ? b : A,
       onRest: (e, t) => {
-        null != t.item && null != N.find(e => e.timestamp === t.item.timestamp) && (0, d.MI)(x, t.item.timestamp)
+        null != t.item && null != C.find(e => e.timestamp === t.item.timestamp) && (0, d.MI)(x, t.item.timestamp)
       }
     }, "animate-always");
-  return (0, i.useChain)([T, w], [0, .1], 3e3), (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)("div", {
-      className: g.R,
+  return (0, i.useChain)([j, w], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)("div", {
+      className: m.R,
       ref: v
-    }), I((e, t) => null != t && (0, l.jsx)(i.animated.div, {
-      className: g.w5,
+    }), T((e, t) => null != t && (0, r.jsx)(i.animated.div, {
+      className: m.w5,
       style: e
-    })), (0, l.jsx)(b.Ay, {
-      children: (0, l.jsx)("div", {
-        className: g.R,
-        children: R((e, t, n, r) => (null == t ? true : t.thumbnail) != null && (0, l.jsx)(i.animated.img, {
+    })), (0, r.jsx)(g.Ay, {
+      children: (0, r.jsx)("div", {
+        className: m.R,
+        children: P((e, t, n, l) => (null == t ? true : t.thumbnail) != null && (0, r.jsx)(i.animated.img, {
           src: t.thumbnail,
-          className: g.yI,
+          className: m.yI,
           style: e
         }))
       })

@@ -76,9 +76,9 @@ let D = (0, Chunk839214.D)(() => ({
 }));
 
 function x() {
-  let e = (0, b.A)(),
+  let e = (0, y.A)(),
     t = (0, E.A)(),
-    n = (0, y.A)(),
+    n = (0, b.A)(),
     a = D.useField("controlsLayout"),
     s = i.useMemo(() => (0, r.jsxs)(u.rX, {
       label: "Controls",
@@ -109,9 +109,9 @@ function x() {
       })]
     }, "controls-layout"), [a]);
   return (0, r.jsxs)(c.W, {
-    onSelect: I.tE,
+    onSelect: S.tE,
     navId: "playground-settings-menu",
-    onClose: I.tE,
+    onClose: S.tE,
     "aria-label": "Playground Settings",
     children: [(0, r.jsx)(u.Dr, {
       id: "appearance",
@@ -155,8 +155,8 @@ function j(e) {
     configs: n
   } = e, c = D.useField("selectedCollection"), u = D.useField("selectedStory"), f = D.useField("controlsLayout"), m = i.useMemo(() => n.flatMap(e => e.collections), [n]), {
     collection: E,
-    group: b,
-    story: y
+    group: y,
+    story: b
   } = i.useMemo(() => {
     var e;
     let t = null != c ? m.find(e => e.id === c) : m[0];
@@ -172,7 +172,7 @@ function j(e) {
       group: n,
       story: r
     }
-  }, [c, u, m]), I = e => {
+  }, [c, u, m]), S = e => {
     D.setState({
       selectedCollection: e,
       selectedStory: null
@@ -181,13 +181,13 @@ function j(e) {
     D.setState({
       selectedStory: e
     })
-  }, N = null != (t = null == E ? true : E.name) ? t : "Design System", R = null == y ? true : y.name, w = () => {
+  }, N = null != (t = null == E ? true : E.name) ? t : "Design System", R = null == b ? true : b.name, w = () => {
     if (null == E) return;
-    let e = null != y ? "dev://playground/".concat(E.id, "/").concat(y.id) : "dev://playground/".concat(E.id);
+    let e = null != b ? "dev://playground/".concat(E.id, "/").concat(b.id) : "dev://playground/".concat(E.id);
     (0, O.C)(e, () => (0, p.P0)({
       id: "playground-link-copied",
       message: "Copied playground link",
-      type: S.Ck.SUCCESS
+      type: I.Ck.SUCCESS
     }))
   };
   return (0, r.jsxs)("div", {
@@ -203,7 +203,7 @@ function j(e) {
             children: (0, r.jsx)(d.j, {
               name: e.name,
               selected: (null != c ? c : null == (t = m[0]) ? true : t.id) === e.id,
-              onClick: () => I(e.id)
+              onClick: () => S(e.id)
             })
           })
         }, e.id)
@@ -220,12 +220,12 @@ function j(e) {
           }) : null, (0, r.jsx)(g.Ay.Title, {
             children: R
           })]
-        }) : null, (null == y ? true : y.docs) != null ? (0, r.jsxs)(r.Fragment, {
+        }) : null, (null == b ? true : b.docs) != null ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(g.Ay.Divider, {
             className: C.zN
           }), (0, r.jsx)(g.Ay.Title, {
             children: (0, r.jsx)(o.Anchor, {
-              href: y.docs,
+              href: b.docs,
               children: "Docs"
             })
           })]
@@ -244,16 +244,16 @@ function j(e) {
         children: [(0, r.jsx)(s.IpV, {
           fade: true,
           className: C.pz,
-          children: null != E ? (0, r.jsx)(A._, {
+          children: null != E ? (0, r.jsx)(v._, {
             groups: E.groups,
             selectedStory: u,
             onStorySelect: T
           }) : null
         }), (0, r.jsx)("div", {
           className: C.Qs,
-          children: null != y && null != b ? (0, r.jsx)(v.z, {
-            story: y,
-            groupTitle: b.title,
+          children: null != b && null != y ? (0, r.jsx)(A.z, {
+            story: b,
+            groupTitle: y.title,
             controlsLayout: f
           }) : null
         })]

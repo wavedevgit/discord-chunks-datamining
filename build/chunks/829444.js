@@ -14,17 +14,17 @@ var Chunk64700 = require("./64700.js"),
 
 function d() {
   let e = o.Sf.useSetting(),
-    t = (0, l.bG)([a.A], () => a.A.useReducedMotion);
+    t = (0, l.bG)([s.A], () => s.A.useReducedMotion);
   r.useEffect(() => {
     function n(n) {
       let {
         messageId: r,
         channelId: l,
         emoji: i,
-        optimistic: a,
+        optimistic: s,
         reactionType: o
       } = n;
-      a || o !== u.v.BURST || !e || t || (0, s.on)({
+      s || o !== u.v.BURST || !e || t || (0, a.on)({
         channelId: l,
         messageId: r,
         emoji: i,

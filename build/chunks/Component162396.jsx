@@ -20,24 +20,24 @@ function p(e) {
   let {
     onClose: t
   } = e;
-  return (0, n.jsx)(c.W1t, {
+  return (0, n.jsx)(i.W1t, {
     navId: "settings-footer-more-menu",
     onClose: t,
     onSelect: () => {},
     "aria-label": "More options",
-    children: (0, n.jsxs)(c.rXV, {
-      children: [(0, n.jsx)(c.Drp, {
+    children: (0, n.jsxs)(i.rXV, {
+      children: [(0, n.jsx)(i.Drp, {
         id: "changelog",
-        label: y.intl.string(y.t.LRmNAl),
+        label: b.intl.string(b.t.LRmNAl),
         action: () => (0, s.j)(true)
-      }), (0, n.jsx)(c.Drp, {
+      }), (0, n.jsx)(i.Drp, {
         id: "acknowledgements",
-        label: y.intl.string(y.t["0nUKy3"]),
-        action: () => (0, i.A)(b.X7G.ACKNOWLEDGEMENTS)
-      }), (0, n.jsx)(c.Drp, {
+        label: b.intl.string(b.t["0nUKy3"]),
+        action: () => (0, c.A)(f.X7G.ACKNOWLEDGEMENTS)
+      }), (0, n.jsx)(i.Drp, {
         id: "support",
-        label: y.intl.string(y.t["Yl/Riu"]),
-        action: () => (0, i.A)(u.C)
+        label: b.intl.string(b.t["Yl/Riu"]),
+        action: () => (0, c.A)(u.C)
       })]
     })
   })
@@ -46,40 +46,40 @@ function p(e) {
 function g() {
   let e = l.useRef(null);
   return (0, n.jsxs)("div", {
-    children: [(0, n.jsx)(f.A, {
+    children: [(0, n.jsx)(y.A, {
       compact: true
     }), (0, n.jsxs)("div", {
       className: d.yJ,
-      children: [(0, n.jsx)(c.MzZ, {
-        href: b.X7G.PRIVACY,
-        children: (0, n.jsx)(c.Text, {
+      children: [(0, n.jsx)(i.MzZ, {
+        href: f.X7G.PRIVACY,
+        children: (0, n.jsx)(i.Text, {
           tag: "span",
           variant: "text-xxs/normal",
           color: "currentColor",
-          children: y.intl.string(y.t["Knf/f/"])
+          children: b.intl.string(b.t["Knf/f/"])
         })
       }), (0, n.jsx)("span", {
         className: d.xE,
         "aria-hidden": "true",
         children: "•"
-      }), (0, n.jsx)(c.MzZ, {
-        href: b.X7G.TERMS,
-        children: (0, n.jsx)(c.Text, {
+      }), (0, n.jsx)(i.MzZ, {
+        href: f.X7G.TERMS,
+        children: (0, n.jsx)(i.Text, {
           tag: "span",
           variant: "text-xxs/normal",
           color: "currentColor",
-          children: y.intl.string(y.t.uFSTGq)
+          children: b.intl.string(b.t.uFSTGq)
         })
       }), (0, n.jsx)("span", {
         className: d.xE,
         "aria-hidden": "true",
         children: "•"
-      }), (0, n.jsx)(c.YNO, {
+      }), (0, n.jsx)(i.YNO, {
         targetElementRef: e,
         position: "top",
         align: "center",
         spacing: 0,
-        animation: c.YNO.Animation.NONE,
+        animation: i.YNO.Animation.NONE,
         renderPopout: e => {
           let {
             closePopout: t
@@ -90,7 +90,7 @@ function g() {
         },
         children: (t, r) => {
           var l, o;
-          return (0, n.jsx)(c.MzZ, (l = function(e) {
+          return (0, n.jsx)(i.MzZ, (l = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var r = null != arguments[t] ? arguments[t] : {},
                 n = Object.keys(r);
@@ -113,11 +113,11 @@ function g() {
             className: a()(d.Mj, {
               [d.vu]: r.isShown
             }),
-            children: (0, n.jsx)(c.Text, {
+            children: (0, n.jsx)(i.Text, {
               tag: "span",
               variant: "text-xxs/normal",
               color: "currentColor",
-              children: y.intl.string(y.t["UKOtz+"])
+              children: b.intl.string(b.t["UKOtz+"])
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var r = Object.keys(e);

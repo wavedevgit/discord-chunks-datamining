@@ -35,37 +35,37 @@ function g(e) {
       analyticsLocation: o.A.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT
     });
   if (null == E) return null;
-  let b = i ? m.r : m.a,
-    y = E.invoiceItems.find(e => {
+  let y = i ? m.r : m.a,
+    b = E.invoiceItems.find(e => {
       let {
         subscriptionPlanId: t
       } = e;
       return (0, u.xq)(t)
     });
-  if (null == y) return null;
-  let O = y.subscriptionPlanId,
-    A = c.A.get(O);
-  a()(null != A, "Missing plan");
-  let v = (0, d.$g)(E.total, E.currency);
-  return A.interval === p.WT.YEAR ? t = h.intl.format(h.t["jPz/39"], {
-    price: v,
+  if (null == b) return null;
+  let O = b.subscriptionPlanId,
+    v = c.A.get(O);
+  a()(null != v, "Missing plan");
+  let A = (0, d.$g)(E.total, E.currency);
+  return v.interval === p.WT.YEAR ? t = h.intl.format(h.t["jPz/39"], {
+    price: A,
     termsUrl: _.X7G.TERMS,
     paidURL: _.X7G.PAID_TERMS,
     privacyUrl: _.X7G.PRIVACY
-  }) : A.interval === p.WT.MONTH && (t = 1 === A.intervalCount ? h.intl.format(h.t.m27GpI, {
-    price: v,
+  }) : v.interval === p.WT.MONTH && (t = 1 === v.intervalCount ? h.intl.format(h.t.m27GpI, {
+    price: A,
     termsUrl: _.X7G.TERMS,
     paidURL: _.X7G.PAID_TERMS,
     privacyUrl: _.X7G.PRIVACY
   }) : h.intl.format(h.t["9xf5Vx"], {
-    price: v,
+    price: A,
     termsUrl: _.X7G.TERMS,
     paidURL: _.X7G.PAID_TERMS,
     privacyUrl: _.X7G.PRIVACY,
-    intervalCount: A.intervalCount
+    intervalCount: v.intervalCount
   })), (0, r.jsx)(s.Text, {
     color: "text-muted",
-    className: b,
+    className: y,
     variant: "text-xs/normal",
     children: t
   })

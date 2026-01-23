@@ -21,8 +21,8 @@ var Chunk410323 = require("./410323.js"),
       value: 8
     }).length
   }),
-  b = String(String).split("String"),
-  y = module.exports = function(e, t, n) {
+  y = String(String).split("String"),
+  b = module.exports = function(e, t, n) {
     "Symbol(" === h(p(t), 0, 7) && (t = "[" + m(p(t), /^Symbol\(([^)]*)\).*$/, "$1") + "]"), n && n.getter && (t = "get " + t), n && n.setter && (t = "set " + t), (!s(e, "name") || l && e.name !== t) && (o ? _(e, "name", {
       value: t,
       configurable: true
@@ -35,8 +35,8 @@ var Chunk410323 = require("./410323.js"),
       }) : e.prototype && (e.prototype = true)
     } catch (e) {}
     var r = d(e);
-    return s(r, "source") || (r.source = g(b, "string" == typeof t ? t : "")), e
+    return s(r, "source") || (r.source = g(y, "string" == typeof t ? t : "")), e
   };
-Function.prototype.toString = y(function() {
+Function.prototype.toString = b(function() {
   return a(this) && f(this).source || c(this)
 }, "toString")

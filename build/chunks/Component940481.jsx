@@ -1,7 +1,7 @@
 /** Chunk was on 34249 **/
 /** chunk id: 940481, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => h
 }), require("./896048.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,48 +21,48 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk712957 = require("./712957.js");
 
-function O(e) {
+function h(e) {
   var t, r;
   let {
-    guildId: O,
-    powerup: y
-  } = e, v = function(e, t) {
+    guildId: h,
+    powerup: O
+  } = e, y = function(e, t) {
     if (null == e) return {};
-    var r, n, a, l = {};
+    var r, n, l, a = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (a = 0, r = Reflect.ownKeys(e); a < r.length; a++) n = r[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-      return l
+      for (l = 0, r = Reflect.ownKeys(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
+      return a
     }
-    if (l = function(e, t) {
+    if (a = function(e, t) {
         if (null == e) return {};
-        var r, n, a = {},
-          l = Object.getOwnPropertyNames(e);
-        for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-        return a
+        var r, n, l = {},
+          a = Object.getOwnPropertyNames(e);
+        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+        return l
       }(e, t), Object.getOwnPropertySymbols)
-      for (a = 0, r = Object.getOwnPropertySymbols(e); a < r.length; a++) n = r[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-    return l
-  }(e, ["guildId", "powerup"]), [_, N] = a.useState(true), w = a.useMemo(() => {
-    switch (y.skuId) {
-      case l.SL:
-        return (0, n.jsx)(f.L, {
-          guildId: O
+      for (l = 0, r = Object.getOwnPropertySymbols(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
+    return a
+  }(e, ["guildId", "powerup"]), [v, k] = l.useState(true), C = l.useMemo(() => {
+    switch (O.skuId) {
+      case a.SL:
+        return (0, n.jsx)(p.L, {
+          guildId: h
         });
-      case l.aN:
-        return (0, n.jsx)(f.T, {});
-      case l.FB:
+      case a.aN:
+        return (0, n.jsx)(p.T, {});
+      case a.FB:
         return (0, n.jsx)(m.A, {});
       default:
         return
     }
-  }, [y, O]);
-  (0, o.Z)(O, y, o.q.DETAIL);
-  let k = (0, d.A)(O),
-    S = j.wr[y.skuId],
-    P = null != S ? j.a8[S] : null,
-    C = (0, s.bG)([i.A], () => i.A.getStateForGuild(O)),
-    A = null != P ? null == C ? true : C.allPowerups[P] : null;
-  return (0, n.jsxs)(c.EOs, (t = function(e) {
+  }, [O, h]);
+  (0, c.Z)(h, O, c.q.DETAIL);
+  let w = (0, d.A)(h),
+    S = g.wr[O.skuId],
+    N = null != S ? g.a8[S] : null,
+    P = (0, s.bG)([i.A], () => i.A.getStateForGuild(h)),
+    I = null != N ? null == P ? true : P.allPowerups[N] : null;
+  return (0, n.jsxs)(o.EOs, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -81,58 +81,58 @@ function O(e) {
     return e
   }({
     "data-migration-pending": true,
-    className: h.yl,
-    size: c.rIJ.DYNAMIC
-  }, v), r = r = {
+    className: j.yl,
+    size: o.rIJ.DYNAMIC
+  }, y), r = r = {
     parentComponent: "GuildPowerupPerkModal",
-    children: [(0, n.jsxs)(c.$mQ, {
+    children: [(0, n.jsxs)(o.$mQ, {
       "data-migration-pending": true,
-      className: h._F,
+      className: j._F,
       scrollbarType: "none",
       children: [(0, n.jsxs)("div", {
-        className: h.pz,
-        children: [(0, n.jsx)(c.hLv, {
-          className: h.UZ,
+        className: j.pz,
+        children: [(0, n.jsx)(o.hLv, {
+          className: j.UZ,
           children: (0, n.jsx)(b.l, {
-            powerup: y
+            powerup: O
           })
         }), (0, n.jsxs)("div", {
-          className: h.hQ,
-          children: [(0, n.jsx)(c.Heading, {
+          className: j.hQ,
+          children: [(0, n.jsx)(o.Heading, {
             variant: "heading-xl/extrabold",
-            children: y.title
-          }), (0, n.jsx)(c.Text, {
-            className: h.h_,
+            children: O.title
+          }), (0, n.jsx)(o.Text, {
+            className: j.h_,
             variant: "text-sm/normal",
-            children: y.description
-          }), null != A && (0, n.jsx)(c.Text, {
-            className: h.h_,
+            children: O.description
+          }), null != I && (0, n.jsx)(o.Text, {
+            className: j.h_,
             variant: "text-sm/normal",
-            children: g.intl.formatToPlainString(x.default.NAFGkH, {
-              level: A.title
+            children: x.intl.formatToPlainString(_.default.NAFGkH, {
+              level: I.title
             })
-          }), (0, n.jsx)(p.F, {
-            powerup: y
-          }), null != _ && (0, n.jsx)(c.Text, {
-            className: h.z3,
+          }), (0, n.jsx)(f.F, {
+            powerup: O
+          }), null != v && (0, n.jsx)(o.Text, {
+            className: j.z3,
             color: "text-feedback-critical",
             variant: "text-sm/semibold",
-            children: _
-          }), k && (0, n.jsx)(u.Ay, {
-            className: h.qr,
-            guildId: O,
-            powerup: y,
-            onError: N
+            children: v
+          }), w && (0, n.jsx)(u.Ay, {
+            className: j.qr,
+            guildId: h,
+            powerup: O,
+            onError: k
           })]
         })]
-      }), null != w && (0, n.jsx)("div", {
-        className: h._9,
-        children: w
+      }), null != C && (0, n.jsx)("div", {
+        className: j._9,
+        children: C
       })]
-    }), (0, n.jsx)(c.s_y, {
+    }), (0, n.jsx)(o.s_y, {
       "data-migration-pending": true,
-      className: h.VN,
-      onClick: v.onClose
+      className: j.VN,
+      onClick: y.onClose
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);

@@ -29,16 +29,16 @@ function g(e) {
     forcedDivider: g = false,
     withTutorial: E = false
   } = e, {
-    analyticsLocations: y
-  } = (0, l.Ay)(), O = (0, d.A)("enable_avatar_decoration_uploads"), A = (0, p.a4)({
+    analyticsLocations: b
+  } = (0, l.Ay)(), O = (0, d.A)("enable_avatar_decoration_uploads"), v = (0, p.a4)({
     user: t,
     guildId: null == n ? true : n.id
   }), {
-    pendingAvatarDecoration: v,
-    errors: S
-  } = (0, p.CP)(null == n ? true : n.id), I = true === v ? null != A : null != v, T = () => {
+    pendingAvatarDecoration: A,
+    errors: I
+  } = (0, p.CP)(null == n ? true : n.id), S = true === A ? null != v : null != A, T = () => {
     (0, u.L)({
-      analyticsLocations: y,
+      analyticsLocations: b,
       guild: n
     })
   }, C = () => {
@@ -49,7 +49,7 @@ function g(e) {
     forcedDivider: g,
     hasBackground: true,
     title: f,
-    errors: S,
+    errors: I,
     children: [(0, r.jsxs)("div", {
       className: m.NC,
       children: [(0, r.jsx)(N, {
@@ -59,7 +59,7 @@ function g(e) {
           [m.yj]: E
         }),
         children: h.intl.string(h.t.BVcYCx)
-      }), I && (0, r.jsx)("div", {
+      }), S && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: m.DT,
         children: (0, r.jsx)(o.Button, {
@@ -69,13 +69,13 @@ function g(e) {
           onClick: C
         })
       })]
-    }), t.isStaff() && O && (0, r.jsx)(b, {
+    }), t.isStaff() && O && (0, r.jsx)(y, {
       user: t
     })]
   })
 }
 let E = "PALUE000000001",
-  b = e => {
+  y = e => {
     let {
       user: t
     } = e;

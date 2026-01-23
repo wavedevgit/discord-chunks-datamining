@@ -1,7 +1,7 @@
 /** Chunk was on 38663 **/
 /** chunk id: 300131, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,14 +15,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk998855 = require("./998855.js");
 let p = Chunk975571.A.getArticleURL(Chunk652215.MVz.CUSTOM_PROFILES_WISHLIST);
 
-function b(e) {
+function g(e) {
   let {
     isOwner: t,
     isWishlistPublic: n,
-    onToggleVisibility: o
+    onToggleVisibility: s
   } = e, u = l.useRef(null), {
-    analyticsLocations: b
-  } = (0, s.Ay)(a.A.USER_PROFILE_WISHLIST), g = l.useMemo(() => t ? (0, r.jsxs)(i.rXV, {
+    analyticsLocations: g
+  } = (0, o.Ay)(a.A.USER_PROFILE_WISHLIST), m = l.useMemo(() => t ? (0, r.jsxs)(i.rXV, {
     children: [(0, r.jsx)(i.fPC, {
       id: "wishlist-privacy-setting",
       label: (0, r.jsxs)(r.Fragment, {
@@ -38,7 +38,7 @@ function b(e) {
         })]
       }),
       checked: n,
-      action: o
+      action: s
     }), (0, r.jsx)(i.bXX, {}), (0, r.jsx)(i.Drp, {
       id: "wishlist-privacy-setting2",
       label: (0, r.jsx)(i.Text, {
@@ -49,9 +49,9 @@ function b(e) {
       icon: i.I9m,
       action: () => window.open(p)
     })]
-  }) : null, [t, n, o]);
-  return null == g ? null : (0, r.jsx)(s.f5, {
-    value: b,
+  }) : null, [t, n, s]);
+  return null == m ? null : (0, r.jsx)(o.f5, {
+    value: g,
     children: (0, r.jsx)(i.YNO, {
       targetElementRef: u,
       renderPopout: e => {
@@ -63,7 +63,7 @@ function b(e) {
           onSelect: true,
           onClose: t,
           "aria-label": d.intl.string(d.t.GdNkvG),
-          children: g
+          children: m
         })
       },
       children: e => (0, r.jsx)(c.q3, function(e) {

@@ -14,6 +14,6 @@ let o = {
   getDescription: () => s.intl.string(s.t["43UEUh"]),
   eligibleReportSubtypes: [Chunk17372.TS.SUB_SPAM],
   eligibleChannelTypes: [Chunk478437.r.DM, Chunk478437.r.GROUP_DM],
-  onApply: () => a.he.updateSetting(r.he.NON_FRIENDS),
-  predicate: () => a.he.getSetting() === r.he.DISABLED
+  onApply: () => i.he.updateSetting(r.he.NON_FRIENDS),
+  predicate: () => i.he.getSetting() === r.he.DISABLED
 }

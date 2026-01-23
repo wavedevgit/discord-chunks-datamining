@@ -20,11 +20,11 @@ function h(e) {
     recurrenceId: n,
     transitionState: h,
     onClose: p
-  } = e, x = (0, u.A)(n, t.id), j = (0, c.CI)(n, t), v = (0, c.Ri)(j, x), [b, f] = r.useState(v), [m, {
+  } = e, x = (0, u.A)(n, t.id), b = (0, c.CI)(n, t), j = (0, c.Ri)(b, x), [v, m] = r.useState(j), [f, {
     loading: D,
     error: y
   }] = (0, s.A)(() => {
-    let e = (0, d.A)(t, n, b, x);
+    let e = (0, d.A)(t, n, v, x);
     return null == y && p(), e
   });
   return (0, l.jsxs)(i.Modal, {
@@ -37,9 +37,9 @@ function h(e) {
     }, {
       variant: "primary",
       text: g.intl.string(g.t.e5VEcE),
-      onClick: m,
+      onClick: f,
       loading: D,
-      disabled: (0, c.sv)(b, v)
+      disabled: (0, c.sv)(v, j)
     }],
     onClose: p,
     children: [(0, l.jsx)(o.A, {
@@ -48,14 +48,14 @@ function h(e) {
           startDate: t,
           endDate: n
         } = e;
-        null != t && null != n && n.isBefore(t) && (n = t.clone().add(1, "hour")), f({
+        null != t && null != n && n.isBefore(t) && (n = t.clone().add(1, "hour")), m({
           startDate: t,
           endDate: n
         })
       },
-      schedule: b,
-      showEndDate: null != b.endDate,
-      requireEndDate: null != b.endDate,
+      schedule: v,
+      showEndDate: null != v.endDate,
+      requireEndDate: null != v.endDate,
       guildId: t.guild_id,
       recurrenceRule: t.recurrence_rule
     }), null != y ? (0, l.jsx)(a.Text, {

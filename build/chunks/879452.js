@@ -77,13 +77,13 @@ function E(e, t) {
   return (r[e - l] & n) == 0 ? 29 : 30
 }
 
-function b(e, t) {
+function y(e, t) {
   let n = g(e);
   for (let r = 1; r < t; r++) n += E(e, r);
   return n
 }
 
-function y(e) {
+function b(e) {
   return i[e + 1 - l] - i[e - l]
 }
 class O extends _ {
@@ -98,7 +98,7 @@ class O extends _ {
         r = 1;
       for (; r > 0;) {
         r = t - g(++e) + 1;
-        let i = y(e);
+        let i = b(e);
         if (r === i) {
           n = 12;
           break
@@ -109,17 +109,17 @@ class O extends _ {
           break
         }
       }
-      return new(0, a.ng)(this, e, n, t - b(e, n) + 1)
+      return new(0, a.ng)(this, e, n, t - y(e, n) + 1)
     }
   }
   toJulianDay(e) {
-    return e.year < l || e.year > c ? super.toJulianDay(e) : s + b(e.year, e.month) + (e.day - 1)
+    return e.year < l || e.year > c ? super.toJulianDay(e) : s + y(e.year, e.month) + (e.day - 1)
   }
   getDaysInMonth(e) {
     return e.year < l || e.year > c ? super.getDaysInMonth(e) : E(e.year, e.month)
   }
   getDaysInYear(e) {
-    return e.year < l || e.year > c ? super.getDaysInYear(e) : y(e.year)
+    return e.year < l || e.year > c ? super.getDaysInYear(e) : b(e.year)
   }
   constructor() {
     if (super(), this.identifier = "islamic-umalqura", r || (r = new Uint16Array(Uint8Array.from(atob(m), e => e.charCodeAt(0)).buffer)), !i) {

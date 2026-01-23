@@ -2,7 +2,7 @@
 /** chunk id: 6155, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk319567 = require("./319567.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,13 +38,13 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,13 +55,13 @@ function A(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e) {
+function I(e) {
   let {
     closePopout: t,
     idle: n,
@@ -70,21 +70,21 @@ function S(e) {
     onSelect: h
   } = e;
   n && t();
-  let b = (0, a.bG)([u.Ay], () => u.Ay.getCurrentEmbeddedActivity()),
-    y = (0, a.bG)([_.A], () => _.A.pipWindow),
+  let y = (0, a.bG)([u.Ay], () => u.Ay.getCurrentEmbeddedActivity()),
+    b = (0, a.bG)([_.A], () => _.A.pipWindow),
     O = (0, a.bG)([f.A], () => f.A.getSelectedParticipant(s)),
-    A = (0, a.bG)([f.A], () => f.A.getStreamParticipants(s));
+    v = (0, a.bG)([f.A], () => f.A.getStreamParticipants(s));
 
-  function v(e) {
-    (null == y ? true : y.id) !== e.pipWindow.id && (0, c.mf)(e.pipWindow.id);
+  function A(e) {
+    (null == b ? true : b.id) !== e.pipWindow.id && (0, c.mf)(e.pipWindow.id);
     let t = e.participant;
     null != t && t.type !== g.lp.ACTIVITY && l.A.selectParticipant(s, t.id)
   }
 
-  function S(e) {
-    if (e.pipWindow.component === m.o1q.ACTIVITY && null != b) {
+  function I(e) {
+    if (e.pipWindow.component === m.o1q.ACTIVITY && null != y) {
       var t;
-      let e = null == (t = d.A.getApplication(b.applicationId)) ? true : t.name;
+      let e = null == (t = d.A.getApplication(y.applicationId)) ? true : t.name;
       return null == e ? E.intl.string(E.t["8raC1P"]) : E.intl.formatToPlainString(E.t["a9+V+V"], {
         activityName: e
       })
@@ -94,12 +94,12 @@ function S(e) {
     })
   }
 
-  function I() {
+  function S() {
     let e = [],
       t = i.find(e => e.component === m.o1q.VIDEO);
-    return null != t && A.forEach(n => {
+    return null != t && v.forEach(n => {
       let r = p.A.getActiveStreamForApplicationStream(n.stream),
-        i = n.id === (null == O ? true : O.id) && (null == y ? true : y.id) === t.id;
+        i = n.id === (null == O ? true : O.id) && (null == b ? true : b.id) === t.id;
       null == r || i || e.push({
         pipWindow: t,
         participant: n,
@@ -112,12 +112,12 @@ function S(e) {
     var t;
     let n = e.pipWindow.id,
       i = null == (t = e.participant) ? true : t.id,
-      a = S(e),
+      a = I(e),
       s = "".concat(n).concat(null != i ? i : "");
     return (0, r.jsx)(o.Drp, {
       id: s,
       label: a,
-      action: () => v(e)
+      action: () => A(e)
     }, s)
   }
   return (0, r.jsx)(o.W1t, {
@@ -125,10 +125,10 @@ function S(e) {
     "aria-label": "switch PIP",
     onClose: t,
     onSelect: h,
-    children: I().map(T)
+    children: S().map(T)
   })
 }
-let I = function(e) {
+let S = function(e) {
   let {
     voiceChannelId: t,
     idle: n
@@ -139,13 +139,13 @@ let I = function(e) {
   return d || f ? null : (0, r.jsx)(o.YNO, {
     targetElementRef: l,
     position: "bottom",
-    renderPopout: e => (0, r.jsx)(S, O({
+    renderPopout: e => (0, r.jsx)(I, O({
       voiceChannelId: t,
       pipWindows: c,
       idle: n
     }, e)),
-    children: e => (0, r.jsx)(o.DUT, v(O({
-      className: b.ro
+    children: e => (0, r.jsx)(o.DUT, A(O({
+      className: y.ro
     }, e), {
       innerRef: l,
       children: (0, r.jsx)(o.FHP, {

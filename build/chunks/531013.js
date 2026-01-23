@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   OV: () => O,
-  Xo: () => A,
-  sZ: () => y
+  Xo: () => v,
+  sZ: () => b
 });
 var Chunk73153 = require("./73153.js"),
   Chunk77729 = require("./77729.js"),
@@ -57,13 +57,13 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = new Chunk626584.A("ConnectionStore"),
-  y = new Chunk186840.A,
-  O = new Chunk261811.A(y),
-  A = new Chunk500496.A(y);
-y.handleIdentify = () => {
+let y = new Chunk626584.A("ConnectionStore"),
+  b = new Chunk186840.A,
+  O = new Chunk261811.A(b),
+  v = new Chunk500496.A(b);
+b.handleIdentify = () => {
   let e = o.default.getToken();
-  if (b.verbose("handleIdentify called", {
+  if (y.verbose("handleIdentify called", {
       hasToken: null != e
     }), null == e) return null;
   let t = a.A.getState(),
@@ -80,12 +80,12 @@ y.handleIdentify = () => {
     presence: O.getInitialState()
   }
 }, (0, Chunk723702.isDesktop)() && Chunk77729.A.remotePowerMonitor.on("resume", () => {
-  y.expeditedHeartbeat(5e3, "power monitor resumed")
+  b.expeditedHeartbeat(5e3, "power monitor resumed")
 }), Chunk209489.A.addOfflineCallback(() => {
-  y.networkStateChange(15e3, "network detected offline.", false)
+  b.networkStateChange(15e3, "network detected offline.", false)
 }), Chunk209489.A.addOnlineCallback(() => {
-  y.networkStateChange(5e3, "network detected online.")
-}), y.on("disconnect", e => {
+  b.networkStateChange(5e3, "network detected online.")
+}), b.on("disconnect", e => {
   let {
     code: t,
     reason: n
@@ -95,7 +95,7 @@ y.handleIdentify = () => {
     code: t,
     reason: n
   })
-}), y.on("close", e => {
+}), b.on("close", e => {
   let {
     code: t,
     reason: n

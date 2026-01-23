@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 288349, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -32,10 +32,10 @@ function p(e) {
   }
   return e
 }
-let f = "premium_tier_gradient",
-  h = "smaller_sparkle_gradient";
+let h = "premium_tier_gradient",
+  g = "smaller_sparkle_gradient";
 
-function A(e) {
+function f(e) {
   var t, n;
   let {
     width: i = 14,
@@ -68,7 +68,7 @@ function A(e) {
     xmlns: "http://www.w3.org/2000/svg",
     children: [(0, r.jsx)("defs", {
       children: (0, r.jsxs)("linearGradient", {
-        id: f,
+        id: h,
         x1: "0%",
         y1: "0%",
         x2: "100%",
@@ -85,7 +85,7 @@ function A(e) {
         })]
       })
     }), (0, r.jsxs)("linearGradient", {
-      id: h,
+      id: g,
       x1: "-4.95474",
       y1: "5.44067",
       x2: "11.2384",
@@ -116,31 +116,31 @@ function A(e) {
   }), t))
 }
 
-function g(e) {
+function m(e) {
   let {
     className: t,
     startsAt: n,
     endsAt: i,
     messageStyle: c,
     upperCase: p,
-    showSparkles: g
-  } = e, [m] = (0, o.Bo)(a.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
+    showSparkles: m
+  } = e, [A] = (0, o.Bo)(a.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
     showAfterTimestamp: n.valueOf(),
     cooldownDurationMs: 0
-  }), b = (0, s.Ay)(i, c);
-  return "" === b ? null : (p && (b = b.toUpperCase()), (0, r.jsxs)("div", {
+  }), _ = (0, s.Ay)(i, c);
+  return "" === _ ? null : (p && (_ = _.toUpperCase()), (0, r.jsxs)("div", {
     className: l()(t, d.Iv),
-    children: [g ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(A, {
+    children: [m ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(f, {
         foreground: d.QX,
-        color: "url(#".concat(h, ")")
-      }), (0, r.jsx)(A, {
+        color: "url(#".concat(g, ")")
+      }), (0, r.jsx)(f, {
         foreground: d.J0,
-        color: "url(#".concat(f, ")")
+        color: "url(#".concat(h, ")")
       })]
     }) : null, (0, r.jsx)(u.R, {
-      text: b,
-      colorOptions: m === a.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL ? u.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : u.at.PREMIUM_TIER_2_GREY_FILL
+      text: _,
+      colorOptions: A === a.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL ? u.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : u.at.PREMIUM_TIER_2_GREY_FILL
     })]
   }))
 }

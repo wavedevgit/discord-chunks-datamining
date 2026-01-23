@@ -14,31 +14,31 @@ let a = function(e) {
     formField: t,
     index: n,
     isDragEnabled: a,
-    isDropHovered: c,
-    onDrop: o,
+    isDropHovered: o,
+    onDrop: c,
     onEdit: d,
     onRemove: u,
-    canRemove: f,
-    actionsLocation: g,
-    fieldStyle: b
+    canRemove: g,
+    actionsLocation: m,
+    fieldStyle: p
   } = e, {
-    label: m,
-    placeholder: p
+    label: f,
+    placeholder: b
   } = t;
   return (0, r.jsx)(l.A, {
     field: t,
     index: n,
     isDragEnabled: a,
-    isDropHovered: c,
-    onDrop: o,
+    isDropHovered: o,
+    onDrop: c,
     onEdit: d,
     onRemove: u,
-    title: m,
-    canRemove: f,
-    actionsLocation: g,
-    fieldStyle: b,
+    title: f,
+    canRemove: g,
+    actionsLocation: m,
+    fieldStyle: p,
     children: (0, r.jsx)(i._V, {
-      placeholder: null != p ? p : s.intl.string(s.t["Sqn+Wh"]),
+      placeholder: null != b ? b : s.intl.string(s.t["Sqn+Wh"]),
       disabled: true
     })
   })

@@ -52,12 +52,12 @@ class f {
       variants: m,
       base_variant_name: g,
       base_variant_sku_id: E,
-      variant_label: b,
-      variant_value: y,
+      variant_label: y,
+      variant_value: b,
       purchased_at: O,
-      purchase_type: A,
-      expires_at: v
-    } = e, S = u(e, ["type", "sku_id", "name", "premium_type", "category_sku_id", "prices", "bundled_products", "variants", "base_variant_name", "base_variant_sku_id", "variant_label", "variant_value", "purchased_at", "purchase_type", "expires_at"]);
+      purchase_type: v,
+      expires_at: A
+    } = e, I = u(e, ["type", "sku_id", "name", "premium_type", "category_sku_id", "prices", "bundled_products", "variants", "base_variant_name", "base_variant_sku_id", "variant_label", "variant_value", "purchased_at", "purchase_type", "expires_at"]);
     return new f({
       type: t,
       name: c,
@@ -71,18 +71,18 @@ class f {
         return t === n
       }),
       prices: (0, a.m)(_),
-      items: (0, i.K)(S.items),
+      items: (0, i.K)(I.items),
       bundledProducts: null == h ? true : h.map(r.A.fromServer),
       variants: null == m ? true : m.map(s.x.fromServer),
-      googleSkuIds: S.google_sku_ids,
-      eligibleOffers: S.eligible_offers,
+      googleSkuIds: I.google_sku_ids,
+      eligibleOffers: I.eligible_offers,
       baseVariantName: g,
       baseVariantSkuId: E,
-      variantLabel: b,
-      variantValue: y,
-      purchaseType: A,
+      variantLabel: y,
+      variantValue: b,
+      purchaseType: v,
       purchasedAt: null != O ? new Date(O) : O,
-      expiresAt: null != v ? new Date(v) : null
+      expiresAt: null != A ? new Date(A) : null
     })
   }
   constructor(e) {

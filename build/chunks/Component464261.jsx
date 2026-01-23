@@ -1,9 +1,9 @@
 /** Chunk was on 41031 **/
 /** chunk id: 464261, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  C: () => A
+  C: () => N
 }), require("./896048.js");
-var s, Chunk627968 = require("./627968.js"),
+var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk877227 = require("./877227.js"),
   Chunk137540 = require("./137540.jsx"),
@@ -19,19 +19,19 @@ function u(e, t, a) {
     writable: true
   }) : e[t] = a, e
 }
-let N = Chunk818348.sE.MAIN_NAVIGATION_MENU;
-class A extends(s = Chunk64700.PureComponent) {
+let _ = Chunk818348.sE.MAIN_NAVIGATION_MENU;
+class N extends(r = Chunk64700.PureComponent) {
   render() {
     let e, t = (0, n.dI)(this.context.router),
       {
         isMobile: a,
-        isVisible: s,
-        styles: r,
+        isVisible: r,
+        styles: l,
         TrackClick: u,
-        avoidRouter: A
+        avoidRouter: N
       } = this.props,
       {
-        sectionShown: p
+        sectionShown: A
       } = this.state;
     return (e = null != d.A ? d.A.getLocale().toLowerCase() : "", [{
       route: c.Tk.DOWNLOAD,
@@ -109,21 +109,21 @@ class A extends(s = Chunk64700.PureComponent) {
         title: d.A.Messages.NAVIGATION_SAFETY_CENTER,
         external: true
       }]
-    }]).map(e => null != e.links ? (0, l.jsx)(o.A, {
+    }]).map(e => null != e.links ? (0, s.jsx)(o.A, {
       title: e.title,
       links: e.links,
-      isOpen: p === e.title,
+      isOpen: A === e.title,
       isMobile: a,
-      avoidRouter: A,
+      avoidRouter: N,
       TrackClick: u,
       onClose: this.closeSubNav,
       onOpen: this.openSubNav
-    }, e.title) : e.external && null != e.route ? (0, l.jsx)("li", {
-      className: r.listItemInactive,
+    }, e.title) : e.external && null != e.route ? (0, s.jsx)("li", {
+      className: l.listItemInactive,
       role: "none",
-      children: (0, l.jsx)(u, {
-        className: r.mainNavLink,
-        eventName: N,
+      children: (0, s.jsx)(u, {
+        className: l.mainNavLink,
+        eventName: _,
         data: e.linkClicked ? {
           linkClicked: e.linkClicked
         } : {},
@@ -131,19 +131,19 @@ class A extends(s = Chunk64700.PureComponent) {
         rel: "me",
         children: e.title
       })
-    }, "external_link_".concat(e.route)) : null != e.route ? (0, l.jsx)("li", {
-      className: t(e.route) ? r.listItemActive : r.listItemInactive,
+    }, "external_link_".concat(e.route)) : null != e.route ? (0, s.jsx)("li", {
+      className: t(e.route) ? l.listItemActive : l.listItemInactive,
       role: "none",
-      children: (0, l.jsx)(i.A, {
-        avoidRouter: A,
+      children: (0, s.jsx)(i.A, {
+        avoidRouter: N,
         to: e.route,
         from: c.sE.MAIN_NAVIGATION_MENU,
-        tabIndex: s ? 0 : false,
+        tabIndex: r ? 0 : false,
         role: "menuitem",
-        children: (0, l.jsx)(u, {
+        children: (0, s.jsx)(u, {
           tag: "span",
-          className: r.mainNavLink,
-          eventName: N,
+          className: l.mainNavLink,
+          eventName: _,
           data: {
             linkClicked: e.linkClicked
           },
@@ -172,7 +172,7 @@ class A extends(s = Chunk64700.PureComponent) {
     })
   }
 }
-u(A, "defaultProps", {
+u(N, "defaultProps", {
   isMobile: false,
   isVisible: true
 })

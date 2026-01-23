@@ -2,7 +2,7 @@
 /** chunk id: 441442, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => c
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -12,34 +12,34 @@ var Chunk503698 = require("./503698.js"),
   Chunk620216 = require("./620216.js"),
   Chunk445180 = require("./445180.js");
 
-function o(e) {
+function c(e) {
   let {
     title: t,
     description: n,
     action: i,
-    highlightColor: o = a.t.NONE,
+    highlightColor: c = a.t.NONE,
     selected: d = false,
     subsection: u = null,
-    onClick: f,
-    className: g,
-    disabled: b
+    onClick: g,
+    className: m,
+    disabled: p
   } = e;
   return (0, r.jsxs)("div", {
-    className: l()(c.container, g),
+    className: l()(o.container, m),
     children: [(0, r.jsx)(s.DUT, {
-      className: l()(c.clickableContainer, {
-        [c.noAction]: null == f,
-        [c.disabled]: b
-      }, g),
-      onClick: b ? true : f,
+      className: l()(o.clickableContainer, {
+        [o.noAction]: null == g,
+        [o.disabled]: p
+      }, m),
+      onClick: p ? true : g,
       children: (0, r.jsxs)("div", {
-        className: l()(c.backgroundModifierContainer, c[o], {
-          [c.selected]: d,
-          [c.disabled]: b,
-          [c.noAction]: null == f
+        className: l()(o.backgroundModifierContainer, o[c], {
+          [o.selected]: d,
+          [o.disabled]: p,
+          [o.noAction]: null == g
         }),
         children: [(0, r.jsxs)("div", {
-          className: c.settingsDescriptionContainer,
+          className: o.settingsDescriptionContainer,
           children: [(0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "interactive-text-active",
@@ -47,16 +47,16 @@ function o(e) {
           }), (0, r.jsx)(s.Text, {
             variant: "text-sm/normal",
             color: "interactive-text-default",
-            className: c.description,
+            className: o.description,
             children: n
           })]
         }), (0, r.jsx)("div", {
-          className: c.__invalid_action,
+          className: o.__invalid_action,
           children: i
         })]
       })
     }), null != u && (0, r.jsx)("div", {
-      className: c.subsectionContainer,
+      className: o.subsectionContainer,
       children: u
     })]
   })

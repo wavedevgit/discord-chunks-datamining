@@ -2,7 +2,7 @@
 /** chunk id: 689194, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js"), require("./65821.js"), require("./457529.js");
 var r, Chunk574381 = require("./574381.js"),
   Chunk311907 = require("./311907.js"),
@@ -29,7 +29,7 @@ let h = 10,
   },
   g = [],
   E = ["discord.com", "discordapp.com", "discordapp.net", "dl.discordapp.net", "discordcdn.com", "discord.gg", "discord.media"];
-class b extends(r = Chunk311907.Ay.Store) {
+class y extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.updateState(), this.addListener()
   }
@@ -138,5 +138,5 @@ class b extends(r = Chunk311907.Ay.Store) {
     }), await this.updateState(), true
   }
 }
-_(b, "displayName", "WarpClientStore");
-let y = new b(Chunk73153.h, {})
+_(y, "displayName", "WarpClientStore");
+let b = new y(Chunk73153.h, {})

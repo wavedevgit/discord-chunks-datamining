@@ -80,7 +80,7 @@ let p = function(e) {
     defaultTextOverride: m,
     iconOverride: g,
     variantOverride: E
-  } = e, b = d(e, ["subscriptionTier", "onClick", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "applicationId", "confirmationFooter", "buttonTextOverride", "defaultTextOverride", "iconOverride", "variantOverride"]), y = {
+  } = e, y = d(e, ["subscriptionTier", "onClick", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "applicationId", "confirmationFooter", "buttonTextOverride", "defaultTextOverride", "iconOverride", "variantOverride"]), b = {
     onClick: n,
     subscriptionTier: t,
     postSuccessGuild: o,
@@ -97,14 +97,14 @@ let p = function(e) {
     iconOverride: g,
     variantOverride: E
   });
-  return (0, r.jsx)(a.A, u(l({}, y), {
+  return (0, r.jsx)(a.A, u(l({}, b), {
     children: e => {
       let {
         onClick: t
       } = e;
       return (0, r.jsx)(i.$nd, l({
         onClick: t
-      }, O, b))
+      }, O, y))
     }
   }))
 }

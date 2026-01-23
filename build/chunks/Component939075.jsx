@@ -2,7 +2,7 @@
 /** chunk id: 939075, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v,
+  A: () => A,
   y: () => O
 });
 var Chunk627968 = require("./627968.js");
@@ -22,16 +22,16 @@ var Chunk311907 = require("./311907.js"),
   Chunk301736 = require("./301736.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let b = () => (0, _.openUserSettings)(p.X.CONNECTIONS_PANEL, {
+let y = () => (0, _.openUserSettings)(p.X.CONNECTIONS_PANEL, {
   section: g.nc_.CONNECTIONS
 });
 
-function y(e) {
+function b(e) {
   let {
     activity: t,
     onOpenGameSettings: n
   } = e;
-  return (0, u.A)(t) || (0, c.A)(t) || (0, s.A)(t) ? b : (0, l.A)(t) && !(0, o.A)(t) ? n : null
+  return (0, u.A)(t) || (0, c.A)(t) || (0, s.A)(t) ? y : (0, l.A)(t) && !(0, o.A)(t) ? n : null
 }
 
 function O(e) {
@@ -39,10 +39,10 @@ function O(e) {
     entry: t,
     onOpenGameSettings: n
   } = e;
-  return (0, d.aj)(t) || (0, d.Lf)(t) || (0, d.Tq)(t) ? b : (0, d.zD)(t) ? n : null
+  return (0, d.aj)(t) || (0, d.Lf)(t) || (0, d.Tq)(t) ? y : (0, d.zD)(t) ? n : null
 }
 
-function A(e) {
+function v(e) {
   let {
     activity: t,
     entry: n,
@@ -51,13 +51,13 @@ function A(e) {
   return null != n ? O({
     entry: n,
     onOpenGameSettings: r
-  }) : null != t ? y({
+  }) : null != t ? b({
     activity: t,
     onOpenGameSettings: r
   }) : null
 }
 
-function v(e) {
+function A(e) {
   let {
     user: t,
     activity: n,
@@ -70,7 +70,7 @@ function v(e) {
       var e;
       return (null == (e = h.default.getCurrentUser()) ? true : e.id) === t.id
     })) return null;
-  let d = A({
+  let d = v({
     activity: n,
     entry: s,
     onOpenGameSettings: u

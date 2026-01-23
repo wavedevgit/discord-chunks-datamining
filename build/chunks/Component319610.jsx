@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 319610, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,33 +16,33 @@ var Chunk627968 = require("./627968.js"),
   Chunk60504 = require("./60504.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e) {
+function g(e) {
   let {
     channel: t
-  } = e, n = (0, i.bG)([o.A], () => o.A.getDrawMode()), b = (null == n ? true : n.type) === c.Z.EMOJI_HOSE, g = l.useRef(null), m = (e, t) => {
-    null != e ? (0, s.Ol)({
+  } = e, n = (0, i.bG)([o.A], () => o.A.getDrawMode()), g = (null == n ? true : n.type) === c.Z.EMOJI_HOSE, m = l.useRef(null), b = (e, t) => {
+    null != e ? (0, a.Ol)({
       type: c.Z.EMOJI_HOSE,
       emojiName: e.name,
       emojiId: e.id
-    }) : b && (0, s.Ol)(null), null == t || t()
+    }) : g && (0, a.Ol)(null), null == t || t()
   };
-  return (0, r.jsx)(p.A, {
+  return (0, r.jsx)(h.A, {
     renderPopout: e => {
       let {
         closePopout: n,
         onFocus: l
       } = e;
       return (0, r.jsx)(u.A, {
-        children: (0, r.jsx)(f.A, {
-          title: h.intl.string(h.t.XYLOyF),
+        children: (0, r.jsx)(p.A, {
+          title: f.intl.string(f.t.XYLOyF),
           channel: t,
           closePopout: n,
           onFocus: l,
-          onSelectEmoji: e => m(e, n)
+          onSelectEmoji: e => b(e, n)
         })
       })
     },
-    popoutTargetRef: g,
+    popoutTargetRef: m,
     children: e => {
       var t, n;
       return (0, r.jsx)(d.A, (t = function(e) {
@@ -63,11 +63,11 @@ function b(e) {
         }
         return e
       }({}, e), n = n = {
-        buttonRef: g,
-        iconComponent: a.VRj,
-        isActive: b || e.isActive,
+        buttonRef: m,
+        iconComponent: s.VRj,
+        isActive: g || e.isActive,
         onClick: t => {
-          m(null), e.onClick(t)
+          b(null), e.onClick(t)
         }
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);

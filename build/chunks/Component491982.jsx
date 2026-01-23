@@ -14,7 +14,7 @@ let c = function() {
   let {
     resetOnboardingExperience: e,
     resetQuestStatus: t
-  } = (0, r.A)();
+  } = (0, i.A)();
   return (0, a.jsx)("div", {
     className: o.k,
     children: (0, a.jsxs)(l.nVY, {
@@ -24,7 +24,7 @@ let c = function() {
         children: (0, a.jsx)(l.Button, {
           text: "Reset Onboarding State",
           onClick: () => {
-            e(), t(), (0, i.pX)(s.BVt.APP)
+            e(), t(), (0, r.pX)(s.BVt.APP)
           }
         })
       }), (0, a.jsx)(l.po8, {

@@ -65,22 +65,22 @@ function g(e) {
     __unsupportedReactNodeAsText: m,
     asContainer: g = false,
     tag: E = "span",
-    position: b = "top",
-    align: y = "center",
+    position: y = "top",
+    align: b = "center",
     spacing: O,
-    layerContext: A,
-    targetElementRef: v,
-    anchorRef: S,
-    caretConfig: I,
+    layerContext: v,
+    targetElementRef: A,
+    anchorRef: I,
+    caretConfig: S,
     positionKey: T,
     ariaHidden: C = false
   } = e, N = h(e, ["children", "text", "keyboardShortcut", "__unsupportedReactNodeAsText", "asContainer", "tag", "position", "align", "spacing", "layerContext", "targetElementRef", "anchorRef", "caretConfig", "positionKey", "ariaHidden"]), [R, w] = i.useState(null);
   i.useLayoutEffect(() => {
-    null != S && w(S.current)
-  }, [S]);
+    null != I && w(I.current)
+  }, [I]);
   let P = i.useCallback(e => {
-      null == S && w(e), (0, c.cZ)(v, e)
-    }, [v, S]),
+      null == I && w(e), (0, c.cZ)(A, e)
+    }, [A, I]),
     {
       tooltipId: D,
       isVisible: x,
@@ -126,14 +126,14 @@ function g(e) {
       isRendered: F,
       targetElementRef: L,
       targetElement: R,
-      anchorRef: S,
+      anchorRef: I,
       id: D,
       content: G,
-      position: b,
-      align: y,
+      position: y,
+      align: b,
       spacing: O,
-      caretConfig: I,
-      layerContext: null != A ? A : U,
+      caretConfig: S,
+      layerContext: null != v ? v : U,
       animationStyle: e,
       positionKey: Y
     }) : null);

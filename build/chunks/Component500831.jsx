@@ -71,30 +71,30 @@ let H = Chunk64700.memo(function() {
   }), {
     titlebarFastTravel: n,
     quickSwitcherInsteadOfTitle: l
-  } = (0, b.t)({
+  } = (0, _.t)({
     location: "AppTitleBar"
   }), {
     backForwardButtons: s,
     titlebarIconSize: E
-  } = (0, m.p)({
+  } = (0, A.p)({
     location: "AppTitleBar"
   }), {
     hasBugReporterAccess: C
-  } = f.A.useExperiment({
+  } = h.A.useExperiment({
     location: "HeaderBar"
   }, {
     autoTrackExposure: false
   }), {
     enabled: V
-  } = h.w.useConfig({
+  } = g.w.useConfig({
     location: "AppTitleBar"
   }), H = (0, o.bG)([L.A], () => L.A.isDeveloper), F = (0, o.bG)([R.A, d.A], () => w.Q_.getSetting() && null != R.A.testModeApplicationId && null != d.A.getApplication(R.A.testModeApplicationId) && (0, p.A)(d.A.getApplication(R.A.testModeApplicationId))), Y = null !== e && t === N.RK.TITLE_BAR_LEFT, K = null === e;
   i.useLayoutEffect(() => {
     M.Ay.setMinimumSize(800, 500)
   }, []);
-  let z = (0, P.NC)(),
-    W = (0, o.bG)([D.A, j.A], () => (0, k._U)()),
-    q = function(e) {
+  let W = (0, P.NC)(),
+    q = (0, o.bG)([D.A, j.A], () => (0, k._U)()),
+    z = function(e) {
       let {
         showBackForwardButtons: t,
         showNotificationsInbox: n,
@@ -108,35 +108,35 @@ let H = Chunk64700.memo(function() {
       titlebarFastTravel: n,
       showRecentsButton: K
     });
-  if (W) return null;
+  if (q) return null;
   let Q = a()(G.x, {
     [G.U]: "sm" === E
   });
   return (0, r.jsx)(c.skg, {
     children: e => (0, r.jsx)(c.NPJ, {
-      theme: z,
+      theme: W,
       children: t => {
         var i, a;
         return (0, r.jsx)(U.cq, {
           className: t,
           leading: (0, r.jsxs)(r.Fragment, {
-            children: [s && (0, r.jsx)(_.A, {
-              firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === q ? e : true
+            children: [s && (0, r.jsx)(b.A, {
+              firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === z ? e : true
             }), Y && (0, r.jsx)(T.A, {
-              focusSectionProps: "NOTIFICATIONS_INBOX" === q ? e : true
+              focusSectionProps: "NOTIFICATIONS_INBOX" === z ? e : true
             })]
           }),
           title: (0, r.jsx)(B, {
             withFastTravel: n,
             quickSwitcherInsteadOfTitle: l,
-            focusSectionProps: "TITLEBAR_FAST_TRAVEL" === q ? e : true
+            focusSectionProps: "TITLEBAR_FAST_TRAVEL" === z ? e : true
           }),
           trailing: (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(O.A, {
               className: Q
-            }), V && (0, r.jsx)(A.A, {
+            }), V && (0, r.jsx)(f.A, {
               className: Q
-            }), (0, r.jsx)(g.A, {
+            }), (0, r.jsx)(m.A, {
               canShowReminder: true,
               className: Q
             }), K && (0, r.jsx)(x.A, (i = function(e) {
@@ -156,7 +156,7 @@ let H = Chunk64700.memo(function() {
                 })
               }
               return e
-            }({}, "RECENTS" === q ? e : {}), a = a = {
+            }({}, "RECENTS" === z ? e : {}), a = a = {
               className: Q
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
               var n = Object.keys(e);
@@ -169,13 +169,13 @@ let H = Chunk64700.memo(function() {
               Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
             }), i)), C ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(v.w, {
-                focusSectionProps: "HELP" === q ? e : true,
+                focusSectionProps: "HELP" === z ? e : true,
                 className: Q
               }), H ? (0, r.jsx)(y.R, {
                 className: Q
               }) : null]
             }) : (0, r.jsx)(I.A, {
-              focusSectionProps: "HELP" === q ? e : true,
+              focusSectionProps: "HELP" === z ? e : true,
               className: Q
             }), F && (0, r.jsx)(u.A, {
               className: Q

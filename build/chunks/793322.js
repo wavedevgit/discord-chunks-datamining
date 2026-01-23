@@ -87,13 +87,13 @@ function M(e) {
 function k(e) {
   let t;
   if (T.A.isOpen()) return;
-  let n = A.A.getGuildId(),
+  let n = v.A.getGuildId(),
     r = O.A.getChannelId(n);
   if (null != r) {
-    let e = b.A.getChannel(r);
+    let e = y.A.getChannel(r);
     t = null != e ? e.type : null
   }
-  v.default.track(C.HAw.QUICKSWITCHER_OPENED, {
+  A.default.track(C.HAw.QUICKSWITCHER_OPENED, {
     source: e,
     current_guild_id: n,
     current_channel_id: r,
@@ -107,7 +107,7 @@ function U(e, t) {
     queryMode: r,
     query: i,
     maxQueryLength: a
-  } = T.A.getProps(), s = A.A.getGuildId(), o = O.A.getChannelId(s), l = n[(0, d.Vv)(d.vB.DOWN, false, n)], c = I.A.isEmail(i), u = I.A.isPhoneNumber(i), f = I.A.isUserTagLike(i), p = null != o && (0, N.jq)(o), _ = e => null == e ? null : e.type === d.rD.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, h = {
+  } = T.A.getProps(), s = v.A.getGuildId(), o = O.A.getChannelId(s), l = n[(0, d.Vv)(d.vB.DOWN, false, n)], c = S.A.isEmail(i), u = S.A.isPhoneNumber(i), f = S.A.isUserTagLike(i), p = null != o && (0, N.jq)(o), _ = e => null == e ? null : e.type === d.rD.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, h = {
     current_channel_id: p ? true : o,
     current_channel_static_route: p ? o : true,
     current_guild_id: s,
@@ -128,7 +128,7 @@ function U(e, t) {
     num_results_group_dms: T.A.getResultTotals(d.rD.GROUP_DM)
   };
   if (null != o) {
-    let e = b.A.getChannel(o);
+    let e = y.A.getChannel(o);
     h.current_channel_type = null != e ? e.type : null
   }
   if (null != t) {
@@ -152,7 +152,7 @@ function U(e, t) {
         h.selected_user_id = i.id
     }
   }
-  v.default.track(e, h)
+  A.default.track(e, h)
 }
 
 function G() {
@@ -196,46 +196,46 @@ function W(e) {
   G(), (0, r.s7G)(), U(C.HAw.QUICKSWITCHER_RESULT_SELECTED, e);
   let {
     type: O,
-    record: A
-  } = e, v = {
+    record: v
+  } = e, A = {
     page: C.liQ.QUICK_SWITCHER
   };
   switch (O) {
     case d.rD.GUILD:
-      (0, m.u)(A.id, {
+      (0, m.u)(v.id, {
         navigationReplace: true
       });
       break;
     case d.rD.TEXT_CHANNEL:
-      null != (t = b.A.getChannel(A.id)) && (0, h.iN)(t.id, {
+      null != (t = y.A.getChannel(v.id)) && (0, h.iN)(t.id, {
         state: {
-          analyticsSource: v
+          analyticsSource: A
         },
         navigationReplace: true
       });
       break;
     case d.rD.VOICE_CHANNEL:
-      null != (t = b.A.getChannel(A.id)) && (E ? s.A.updateChatOpen(A.id, true) : c.default.selectVoiceChannel(A.id), (0, h.iN)(t.id, {
+      null != (t = y.A.getChannel(v.id)) && (E ? s.A.updateChatOpen(v.id, true) : c.default.selectVoiceChannel(v.id), (0, h.iN)(t.id, {
         state: {
-          analyticsSource: v
+          analyticsSource: A
         },
         navigationReplace: true
       }));
       break;
     case d.rD.USER:
       a.A.openPrivateChannel({
-        recipientIds: [A.id],
+        recipientIds: [v.id],
         location: "Quickswitcher"
-      }), o.A.channelListScrollTo(C.ME, b.A.getDMFromUserId(A.id));
+      }), o.A.channelListScrollTo(C.ME, y.A.getDMFromUserId(v.id));
       break;
     case d.rD.GROUP_DM:
-      (0, h.iN)(A.id, {
+      (0, h.iN)(v.id, {
         navigationReplace: true
-      }), o.A.channelListScrollTo(C.ME, A.id);
+      }), o.A.channelListScrollTo(C.ME, v.id);
       break;
     case d.rD.APPLICATION:
-      let I = y.A.getActiveLibraryApplication(A.id);
-      D(A.id, I, {
+      let S = b.A.getActiveLibraryApplication(v.id);
+      D(v.id, S, {
         analyticsParams: {
           source: C.ThZ.QUICK_SWITCHER,
           location: C.ThZ.QUICK_SWITCHER
@@ -243,7 +243,7 @@ function W(e) {
       });
       break;
     case d.rD.LINK:
-      (0, _.A)(A.path, {
+      (0, _.A)(v.path, {
         navigationReplace: true
       });
       break;
@@ -260,7 +260,7 @@ function W(e) {
           })
         }
       } else if (e.record.type === f.t1.PLAYGROUND) {
-        if (!(0, S.Gn)()) return;
+        if (!(0, I.Gn)()) return;
         {
           var T;
           let {
@@ -275,7 +275,7 @@ function W(e) {
         tab: R.G2.ORBS,
         analyticsLocations: [u.A.QUICK_SWITCHER],
         analyticsSource: u.A.QUICK_SWITCHER
-      }) : (0, _.A)(A.path, {
+      }) : (0, _.A)(v.path, {
         navigationReplace: true
       })
   }

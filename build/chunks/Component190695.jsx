@@ -26,24 +26,24 @@ function j(e) {
   var t, n;
   let {
     guildId: i
-  } = e, j = (0, s.bG)([f.A], () => f.A.getGuild(i)), O = (0, s.bG)([g.default], () => g.default.getCurrentUser()), {
-    onAdoptTag: y,
+  } = e, j = (0, s.bG)([g.A], () => g.A.getGuild(i)), _ = (0, s.bG)([m.default], () => m.default.getCurrentUser()), {
+    onAdoptTag: O,
     isAdopting: v
-  } = (0, u.A)(i), A = (null == O || null == (t = O.primaryGuild) ? true : t.identityGuildId) === i && (null == O || null == (n = O.primaryGuild) ? true : n.identityEnabled) === true;
-  if (null != O && null != j && (0, o.q0)(j)) return (0, r.jsxs)("div", {
-    className: h.kL,
+  } = (0, u.A)(i), y = (null == _ || null == (t = _.primaryGuild) ? true : t.identityGuildId) === i && (null == _ || null == (n = _.primaryGuild) ? true : n.identityEnabled) === true;
+  if (null != _ && null != j && (0, c.q0)(j)) return (0, r.jsxs)("div", {
+    className: x.kL,
     children: [(0, r.jsx)(a.Text, {
-      className: h.uW,
+      className: x.uW,
       variant: "text-xs/medium",
       color: "text-muted",
-      children: A ? x.intl.string(p.default["6xBCpG"]) : x.intl.string(p.default.eSRKez)
+      children: y ? h.intl.string(b.default["6xBCpG"]) : h.intl.string(b.default.eSRKez)
     }), (0, r.jsx)("div", {
-      className: h.yF
+      className: x.yF
     }), (0, r.jsxs)("div", {
-      className: l()(h.uW, h.rf),
-      children: [(0, r.jsx)(m.V, {
-        avatar: (0, r.jsx)(c.A, {
-          user: O,
+      className: l()(x.uW, x.rf),
+      children: [(0, r.jsx)(f.V, {
+        avatar: (0, r.jsx)(o.A, {
+          user: _,
           guildId: i,
           avatarSize: a._3J.SIZE_40,
           "aria-hidden": true
@@ -54,14 +54,14 @@ function j(e) {
           guildTag: j.profile.tag,
           inline: false
         }),
-        username: b.Ay.getName(i, null, O),
-        message: x.intl.string(x.t["6OSasb"])
+        username: p.Ay.getName(i, null, _),
+        message: h.intl.string(h.t["6OSasb"])
       }), (0, r.jsx)(a.Button, {
         variant: "primary",
-        text: x.intl.string(x.t.cQDYRu),
-        onClick: y,
+        text: h.intl.string(h.t.cQDYRu),
+        onClick: O,
         loading: v,
-        disabled: A,
+        disabled: y,
         fullWidth: true
       })]
     })]

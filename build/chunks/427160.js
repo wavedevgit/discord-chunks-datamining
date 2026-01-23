@@ -1,7 +1,7 @@
 /** Chunk was on 31748 **/
 /** chunk id: 427160, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => _
 }), require("./321073.js");
 var Chunk64700 = require("./64700.js"),
   Chunk451988 = require("./451988.js"),
@@ -16,122 +16,122 @@ var Chunk64700 = require("./64700.js"),
   Chunk921652 = require("./921652.js"),
   Chunk139831 = require("./139831.js");
 require("./824217.js");
-let g = 1e3 / 60;
+let m = 1e3 / 60;
 
-function m(e, t, n, m) {
+function _(e, t, n, _) {
   let h = (0, a.rdh)(i.A.unsafe_rawColors.BRAND_500).hex(),
-    A = (0, a.rdh)(i.A.unsafe_rawColors.BLACK).hex(),
-    y = (0, a.rdh)(i.A.unsafe_rawColors.WHITE).hex(),
-    _ = l.useRef({}),
-    E = l.useRef(new r.IX),
-    v = l.useCallback(t => {
+    y = (0, a.rdh)(i.A.unsafe_rawColors.BLACK).hex(),
+    A = (0, a.rdh)(i.A.unsafe_rawColors.WHITE).hex(),
+    b = r.useRef({}),
+    E = r.useRef(new l.IX),
+    v = r.useCallback(t => {
       let n = u.A.getDrawables(t);
       (0, f.iV)(e),
       function(e) {
         let {
           canvasRef: t,
           drawables: n,
-          fallbackColor: l,
-          linesDrawnAt: r,
+          fallbackColor: r,
+          linesDrawnAt: l,
           streamerId: i,
           channelId: a,
-          outlineColorDark: s,
+          outlineColorDark: o,
           outlineColorLight: u
         } = e;
         if (0 === n.length) return;
         let f = t.current;
         if (null == f) return;
-        let g = f.getContext("2d");
-        if (null == g) return;
+        let m = f.getContext("2d");
+        if (null == m) return;
         let {
-          width: m,
+          width: _,
           height: h
-        } = f.getBoundingClientRect(), A = [];
+        } = f.getBoundingClientRect(), y = [];
         n.forEach(e => {
-          null == o.A.getVoiceStateForChannel(a, e.userId) ? A.push(e) : function(e) {
+          null == s.A.getVoiceStateForChannel(a, e.userId) ? y.push(e) : function(e) {
             let {
               drawable: t,
               context: n,
-              canvasWidth: l,
-              canvasHeight: r,
+              canvasWidth: r,
+              canvasHeight: l,
               fallbackColor: i,
               outlineColorDark: a,
-              outlineColorLight: s,
-              linesDrawnAt: o,
+              outlineColorLight: o,
+              linesDrawnAt: s,
               streamerId: c,
               deadDrawables: u
             } = e;
             switch (t.type) {
               case d.Z.LINE:
-                return (0, b.A)({
+                return (0, g.A)({
                   line: t,
                   context: n,
-                  canvasWidth: l,
-                  canvasHeight: r,
+                  canvasWidth: r,
+                  canvasHeight: l,
                   fallbackColor: i,
                   outlineColorDark: a,
-                  outlineColorLight: s,
-                  linesDrawnAt: o,
+                  outlineColorLight: o,
+                  linesDrawnAt: s,
                   deadDrawables: u
                 });
               case d.Z.EMOJI_HOSE:
                 return (0, p.A)({
                   emojiHose: t,
                   context: n,
-                  canvasWidth: l,
-                  canvasHeight: r,
+                  canvasWidth: r,
+                  canvasHeight: l,
                   fallbackColor: i,
                   outlineColorDark: a,
-                  outlineColorLight: s,
+                  outlineColorLight: o,
                   streamerId: c,
                   deadDrawables: u
                 })
             }
           }({
             drawable: e,
-            context: g,
-            canvasWidth: m,
+            context: m,
+            canvasWidth: _,
             canvasHeight: h,
-            fallbackColor: l,
-            outlineColorDark: s,
+            fallbackColor: r,
+            outlineColorDark: o,
             outlineColorLight: u,
-            linesDrawnAt: r,
-            deadDrawables: A,
+            linesDrawnAt: l,
+            deadDrawables: y,
             streamerId: i
           })
-        }), A.length > 0 && (0, c.Nm)(A, i)
+        }), y.length > 0 && (0, c.Nm)(y, i)
       }({
         canvasRef: e,
         drawables: n,
         fallbackColor: h,
-        linesDrawnAt: _,
+        linesDrawnAt: b,
         streamerId: t,
-        outlineColorDark: A,
-        outlineColorLight: y,
-        channelId: m
+        outlineColorDark: y,
+        outlineColorLight: A,
+        channelId: _
       })
-    }, [e, m, h, A, y]);
-  l.useEffect(() => {
+    }, [e, _, h, y, A]);
+  r.useEffect(() => {
     let t = new ResizeObserver(() => {
       let t = e.current;
       if (null == t) return;
       let {
-        width: l,
-        height: r
+        width: r,
+        height: l
       } = t.getBoundingClientRect();
-      t.width = l * window.devicePixelRatio, t.height = r * window.devicePixelRatio, v(n)
+      t.width = r * window.devicePixelRatio, t.height = l * window.devicePixelRatio, v(n)
     });
     return null != e.current && t.observe(e.current), () => t.disconnect()
   }, [e, v, n]);
-  let O = l.useCallback(() => {
+  let O = r.useCallback(() => {
     let t = u.A.getDrawables(n),
-      l = p.m.getState().particles,
-      r = t.length > 0 || Object.keys(l).length > 0;
-    r && null == E.current._ref && (null == E.current._ref ? (v(n), E.current.start(g, () => v(n))) : r || null == E.current._ref || (E.current.stop(), (0, f.iV)(e)))
+      r = p.m.getState().particles,
+      l = t.length > 0 || Object.keys(r).length > 0;
+    l && null == E.current._ref && (null == E.current._ref ? (v(n), E.current.start(m, () => v(n))) : l || null == E.current._ref || (E.current.stop(), (0, f.iV)(e)))
   }, [e, v, n]);
-  l.useEffect(() => {
+  r.useEffect(() => {
     let e = E.current;
-    return u.A.addChangeListener(O), O(), (0, s.l0)(t.getAvatarURL(null, 80)), () => {
+    return u.A.addChangeListener(O), O(), (0, o.l0)(t.getAvatarURL(null, 80)), () => {
       u.A.removeChangeListener(O), e.stop()
     }
   })

@@ -1,5 +1,5 @@
 /** Chunk was on 71138 **/
-/** chunk id: 121614, original params: e,t,n (module,exports,require) **/
+/** chunk id: 121614, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   A: () => m
 }), require("./638769.js"), require("./321073.js"), require("./896048.js");
@@ -29,39 +29,39 @@ function m(e) {
   let {
     clips: t
   } = e;
-  if (null == t) return (0, r.jsx)(l.y$y, {
+  if (null == t) return (0, n.jsx)(l.y$y, {
     type: l.y$y.Type.SPINNING_CIRCLE
   });
-  let n = i().map(t, (e, t) => {
-    if (true !== e && "buffers" !== t) return (0, r.jsx)(o.q7, {
+  let r = i().map(t, (e, t) => {
+    if (true !== e && "buffers" !== t) return (0, n.jsx)(o.q7, {
       label: t,
       value: e
     }, t)
   });
-  return n.push((0, r.jsx)(o.q7, {
+  return r.push((0, n.jsx)(o.q7, {
     label: "Frames Per Second",
     value: t.recentEncodedFrames / (t.recentDurationMs / 1e3)
-  }, "framerate")), (0, r.jsxs)(l.BJc, {
-    children: [(0, r.jsx)(l.Heading, {
+  }, "framerate")), (0, n.jsxs)(l.BJc, {
+    children: [(0, n.jsx)(l.Heading, {
       variant: "heading-md/medium",
       children: d.intl.string(d.t.MKrFKE)
-    }), (0, s.C6)(n), function(e) {
+    }), (0, s.C6)(r), function(e) {
       if (null != e.buffers) return e.buffers.map(e => {
         let t = [];
-        for (let n of Object.keys(e).sort((e, t) => {
-            let n = u[e],
-              r = u[t];
-            return n !== r ? true === n ? 1 : true === r ? false : n - r : e > t ? 1 : false
+        for (let r of Object.keys(e).sort((e, t) => {
+            let r = u[e],
+              n = u[t];
+            return r !== n ? true === r ? 1 : true === n ? false : r - n : e > t ? 1 : false
           })) {
-          let a = e[n];
-          null !== a && "key" !== n && t.push((0, r.jsx)(o.q7, {
-            label: n,
+          let a = e[r];
+          null !== a && "key" !== r && t.push((0, n.jsx)(o.q7, {
+            label: r,
             value: a
-          }, n))
+          }, r))
         }
-        return (0, r.jsxs)("div", {
+        return (0, n.jsxs)("div", {
           className: c.C2,
-          children: [(0, r.jsx)(l.Heading, {
+          children: [(0, n.jsx)(l.Heading, {
             variant: "heading-md/medium",
             children: "Buffer: ".concat(e.key)
           }), (0, s.C6)(t)]

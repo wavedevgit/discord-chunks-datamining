@@ -26,7 +26,7 @@ function d(e) {
   } = e, m = (0, o.Ay)(n), g = f(m), E = (0, i.bG)([s.A], () => {
     var e;
     return s.A.getChannel(null == (e = n.messageReference) ? true : e.channel_id)
-  }), b = c.intl.format(c.t.cZ9Uf2, {
+  }), y = c.intl.format(c.t.cZ9Uf2, {
     actorName: m.nick,
     actorHook: g,
     threadName: null != (t = null == E ? true : E.name) ? t : n.content,
@@ -44,6 +44,6 @@ function d(e) {
     }),
     timestamp: n.timestamp,
     compact: d,
-    children: b
+    children: y
   })
 }

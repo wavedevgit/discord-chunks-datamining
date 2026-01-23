@@ -28,27 +28,27 @@ let p = (0, Chunk64700.createContext)(null),
       } = e,
       E = (0, l.Bi)();
     d || (d = E);
-    let b = n ? n.expandedKeys.has(d) : e.isExpanded,
-      y = (0, o.E)({
+    let y = n ? n.expandedKeys.has(d) : e.isExpanded,
+      b = (0, o.E)({
         ...e,
-        isExpanded: b,
+        isExpanded: y,
         onExpandedChange(t) {
           var r;
           n && n.toggleKey(d), null == (r = e.onExpandedChange) || r.call(e, t)
         }
       }),
       O = f.useRef(null),
-      A = e.isDisabled || (null == n ? true : n.isDisabled) || false,
+      v = e.isDisabled || (null == n ? true : n.isDisabled) || false,
       {
-        buttonProps: v,
-        panelProps: S
+        buttonProps: A,
+        panelProps: I
       } = (0, a.j)({
         ...e,
-        isExpanded: b,
-        isDisabled: A
-      }, y, O),
+        isExpanded: y,
+        isDisabled: v
+      }, b, O),
       {
-        isFocusVisible: I,
+        isFocusVisible: S,
         focusProps: T
       } = (0, s.o)({
         within: true
@@ -58,10 +58,10 @@ let p = (0, Chunk64700.createContext)(null),
         id: true,
         defaultClassName: "react-aria-Disclosure",
         values: {
-          isExpanded: y.isExpanded,
-          isDisabled: A,
-          isFocusVisibleWithin: I,
-          state: y
+          isExpanded: b.isExpanded,
+          isDisabled: v,
+          isFocusVisibleWithin: S,
+          state: b
         }
       }),
       N = (0, c.$)(g, {
@@ -72,21 +72,21 @@ let p = (0, Chunk64700.createContext)(null),
         [r.k, {
           slots: {
             [i.P_]: {},
-            trigger: v
+            trigger: A
           }
         }],
         [m, {
-          panelProps: S,
+          panelProps: I,
           panelRef: O
         }],
-        [h, y]
+        [h, b]
       ]
     }, f.createElement("div", {
       ...(0, u.v)(N, C, T),
       ref: t,
-      "data-expanded": y.isExpanded || true,
-      "data-disabled": A || true,
-      "data-focus-visible-within": I || true
+      "data-expanded": b.isExpanded || true,
+      "data-disabled": v || true,
+      "data-focus-visible-within": S || true
     }, C.children))
   }),
   E = (0, Chunk64700.forwardRef)(function(e, t) {

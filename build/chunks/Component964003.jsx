@@ -2,7 +2,7 @@
 /** chunk id: 964003, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,7 +20,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk693591 = require("./693591.js"),
   Chunk847652 = require("./847652.js");
 let E = 1140,
-  b = e => {
+  y = e => {
     let {
       descriptionCta: t,
       onClick: n,
@@ -37,17 +37,17 @@ let E = 1140,
       })
     })
   },
-  y = e => {
+  b = e => {
     let {
       name: t,
       title: n,
       description: a,
-      descriptionCta: y,
+      descriptionCta: b,
       previewImage: O,
-      videoUrl: A,
-      shouldLoadVideo: v,
-      index: S,
-      customVideoStyle: I,
+      videoUrl: v,
+      shouldLoadVideo: A,
+      index: I,
+      customVideoStyle: S,
       isReducedMotion: T,
       onClick: C,
       badgeText: N,
@@ -95,8 +95,8 @@ let E = 1140,
         color: "text-strong",
         className: g.description,
         children: a
-      }), null != y && null != C && (0, r.jsx)(b, {
-        descriptionCta: y,
+      }), null != b && null != C && (0, r.jsx)(y, {
+        descriptionCta: b,
         onClick: C,
         debouncedOnClickAnalytics: V
       })]
@@ -104,20 +104,20 @@ let E = 1140,
       className: s()(g.boxArtContainer, g["".concat(w)]),
       children: (0, r.jsx)(d.A, {
         playsInline: true,
-        preload: v ? "auto" : "none",
+        preload: A ? "auto" : "none",
         muted: true,
         poster: O,
         loop: true,
         className: s()(U ? g.overlayImage : g.boxVideo, {
-          [I]: null != I
+          [S]: null != S
         }),
         ref: L,
         children: (0, r.jsx)("source", {
-          src: A,
+          src: v,
           type: x ? m.a.MP4 : m.a.WEBM
         })
-      }, A)
-    }), z = S % 2 != 0, q = () => z ? (0, r.jsxs)(r.Fragment, {
+      }, v)
+    }), z = I % 2 != 0, q = () => z ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(W, {}), (0, r.jsx)(K, {})]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(K, {}), (0, r.jsx)(W, {})]
@@ -136,7 +136,7 @@ let E = 1140,
           autoPlay: !T,
           playsInline: true,
           loop: true,
-          preload: v ? "auto" : "none",
+          preload: A ? "auto" : "none",
           className: g.backgroundVideo,
           src: P
         })

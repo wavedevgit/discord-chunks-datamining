@@ -2,7 +2,7 @@
 /** chunk id: 584904, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -41,7 +41,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,8 +52,8 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -65,27 +65,27 @@ function O(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = A(e, t), Object.getOwnPropertySymbols)
+  if (a = v(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function A(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let v = Chunk64700.forwardRef(function(e, t) {
+let A = Chunk64700.forwardRef(function(e, t) {
   let [n, ...i] = [e, t], {
     children: a,
     className: g,
-    profileModalScrollTarget: b,
-    onAction: A,
-    onClose: v,
-    "aria-label": S,
-    "aria-labelledby": I
+    profileModalScrollTarget: y,
+    onAction: v,
+    onClose: A,
+    "aria-label": I,
+    "aria-labelledby": S
   } = n, T = O(n, ["children", "className", "profileModalScrollTarget", "onAction", "onClose", "aria-label", "aria-labelledby"]), [C] = i, {
     themeType: N
   } = (0, f.E)(), {
@@ -94,16 +94,16 @@ let v = Chunk64700.forwardRef(function(e, t) {
     context: w
   } = (0, c.NJ)();
   return N === _.d.MODAL || N === _.d.MODAL_V2 || (null == w ? true : w.userId) == null ? (0, r.jsx)("article", {
-    "aria-label": S,
-    "aria-labelledby": I,
-    children: (0, r.jsx)(d.A.Overlay, y(E({
+    "aria-label": I,
+    "aria-labelledby": S,
+    children: (0, r.jsx)(d.A.Overlay, b(E({
       ref: C,
       className: s()(m.Nr, g)
     }, T), {
       children: a
     }))
   }) : (0, r.jsx)("article", {
-    "aria-labelledby": I,
+    "aria-labelledby": S,
     children: (0, r.jsx)(o.sqX, {
       className: m.OV,
       "aria-label": h.intl.string(h.t.pD1L1u),
@@ -111,15 +111,15 @@ let v = Chunk64700.forwardRef(function(e, t) {
         ringTarget: C
       },
       onClick: () => {
-        null == A || A({
+        null == v || v({
           action: "PRESS_CARD"
         }), (0, u.openUserProfileModal)(E({
           tabSection: p.RP.ACTIVITY,
           sourceAnalyticsLocations: R,
-          scrollTarget: b
-        }, w)), null == v || v()
+          scrollTarget: y
+        }, w)), null == A || A()
       },
-      children: (0, r.jsx)(d.A.Overlay, y(E({
+      children: (0, r.jsx)(d.A.Overlay, b(E({
         ref: C,
         className: s()(m.Nr, g)
       }, T), {

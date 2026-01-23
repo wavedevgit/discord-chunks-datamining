@@ -2,7 +2,7 @@
 /** chunk id: 178368, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -81,7 +81,7 @@ function E() {
   for (let t of Object.values(p)) e[t.id] = t, t.subscription = s.A.getSubscriptionById(t.subscriptionId);
   p = e
 }
-class b extends(r = Chunk311907.Ay.Store) {
+class y extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.syncWith([s.A], E)
   }
@@ -98,8 +98,8 @@ class b extends(r = Chunk311907.Ay.Store) {
     return p[e]
   }
 }
-o(b, "displayName", "GuildBoostSlotStore");
-let y = new b(Chunk73153.h, {
+o(y, "displayName", "GuildBoostSlotStore");
+let b = new y(Chunk73153.h, {
   GUILD_BOOST_SLOTS_FETCH: _,
   GUILD_BOOST_SLOTS_FETCH_SUCCESS: h,
   GUILD_BOOST_SLOT_UPDATE_SUCCESS: m,

@@ -31,17 +31,17 @@ var Chunk627968 = require("./627968.js"),
 let S = function() {
   let {
     analyticsLocations: e
-  } = (0, o.Ay)(c.A.GUILD_SETTINGS_PROFILE_PAGE), t = (0, l.bG)([m.A], () => m.A.getGuild(), []), n = null == t ? true : t.id, {
+  } = (0, c.Ay)(o.A.GUILD_SETTINGS_PROFILE_PAGE), t = (0, l.bG)([f.A], () => f.A.getGuild(), []), n = null == t ? true : t.id, {
     fetchGuildProfile: S,
-    fetchStatus: T
-  } = (0, u.u)(null == t ? true : t.id), I = (0, l.bG)([m.A], () => m.A.getGuildProfile(), []), C = (0, l.bG)([g.A], () => g.A.can(E.xBc.MANAGE_GUILD, t)), P = i.useCallback(e => {
-    null != n && (b.A.updateGuild({
+    fetchStatus: I
+  } = (0, u.u)(null == t ? true : t.id), T = (0, l.bG)([f.A], () => f.A.getGuildProfile(), []), C = (0, l.bG)([m.A], () => m.A.can(A.xBc.MANAGE_GUILD, t)), P = i.useCallback(e => {
+    null != n && (p.A.updateGuild({
       icon: e
-    }), b.A.updateGuildProfile(n, {
+    }), p.A.updateGuildProfile(n, {
       icon: e
     }))
   }, [n]), w = i.useCallback(e => {
-    null != n && b.A.updateGuildProfile(n, {
+    null != n && p.A.updateGuildProfile(n, {
       customBanner: e
     })
   }, [n]);
@@ -53,71 +53,71 @@ let S = function() {
   }, [S]);
   return (i.useEffect(() => {
     a.A.getDetectableGames()
-  }, []), T === d.X.FETCHED && null == I) ? (0, r.jsx)(y.g, {
+  }, []), I === d.X.FETCHED && null == T) ? (0, r.jsx)(O.g, {
     forceFetchGuildProfile: R
-  }) : T === d.X.NOT_FETCHED || T === d.X.FETCHING ? (0, r.jsx)("main", {
-    className: _.u1,
+  }) : I === d.X.NOT_FETCHED || I === d.X.FETCHING ? (0, r.jsx)("main", {
+    className: N.u1,
     children: (0, r.jsx)(s.y$y, {})
-  }) : null == t || null == I ? null : (0, r.jsx)(o.f5, {
+  }) : null == t || null == T ? null : (0, r.jsx)(c.f5, {
     value: e,
     children: (0, r.jsxs)("main", {
-      className: _.Qs,
+      className: N.Qs,
       children: [(0, r.jsxs)("div", {
-        className: _.Cd,
+        className: N.Cd,
         children: [(0, r.jsxs)("div", {
           children: [(0, r.jsx)(s.Heading, {
             variant: "heading-lg/semibold",
             color: "text-strong",
-            children: N.intl.string(N.t.txdaxf)
+            children: E.intl.string(E.t.txdaxf)
           }), (0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "text-default",
-            className: _.h_,
-            children: N.intl.string(N.t["5PGZWS"])
+            className: N.h_,
+            children: E.intl.string(E.t["5PGZWS"])
           })]
-        }), (0, r.jsx)(O.A, {
-          profile: I,
+        }), (0, r.jsx)(_.A, {
+          profile: T,
           canManageGuild: C
         }), (0, r.jsx)("div", {
-          className: _.yF
+          className: N.yF
         }), (0, r.jsx)(j.A, {
-          profile: I,
+          profile: T,
           canManageGuild: C,
           onIconChange: P
         }), (0, r.jsx)("div", {
-          className: _.yF
-        }), (0, r.jsx)(p.A, {
-          profile: I,
+          className: N.yF
+        }), (0, r.jsx)(b.A, {
+          profile: T,
           onCustomBannerChange: w,
           canManageGuild: C
         }), (0, r.jsx)("div", {
-          className: _.yF
+          className: N.yF
         }), (0, r.jsx)(v.A, {
-          profile: I,
+          profile: T,
           canManageGuild: C
         }), (0, r.jsx)("div", {
-          className: _.yF
-        }), (0, r.jsx)(x.A, {
-          profile: I,
-          canManageGuild: C
-        }), (0, r.jsx)("div", {
-          className: _.yF
+          className: N.yF
         }), (0, r.jsx)(h.A, {
-          profile: I,
+          profile: T,
           canManageGuild: C
         }), (0, r.jsx)("div", {
-          className: _.yF
-        }), (0, r.jsx)(A.A, {
-          profile: I,
+          className: N.yF
+        }), (0, r.jsx)(x.A, {
+          profile: T,
+          canManageGuild: C
+        }), (0, r.jsx)("div", {
+          className: N.yF
+        }), (0, r.jsx)(y.A, {
+          profile: T,
           canManageGuild: C
         })]
       }), (0, r.jsx)("div", {
-        className: _.DK,
+        className: N.DK,
         children: (0, r.jsx)(s.HOs, {
-          className: _.ti,
-          children: (0, r.jsx)(f.Ay, {
-            className: _.q5,
-            profile: I,
+          className: N.ti,
+          children: (0, r.jsx)(g.Ay, {
+            className: N.q5,
+            profile: T,
             disableCTA: true,
             onIconChange: C ? P : true,
             disableGuildNameClick: true

@@ -16,13 +16,13 @@ let m = e => {
   let {
     message: t,
     reportId: n
-  } = e, [m, b] = r.useState(false), p = r.useCallback(() => {
-    b(true), i.Ay.trackWithMetadata(d.HAw.IAR_DELETE_MESSAGE_BUTTON_CLICKED, {
+  } = e, [m, p] = r.useState(false), b = r.useCallback(() => {
+    p(true), a.Ay.trackWithMetadata(c.HAw.IAR_DELETE_MESSAGE_BUTTON_CLICKED, {
       report_id: n
-    }), a.A.deleteMessage(t.getChannelId(), t.id)
+    }), i.A.deleteMessage(t.getChannelId(), t.id)
   }, [t, n]), x = r.useMemo(() => {
     let e = o.A.getChannel(t.getChannelId());
-    return null != e && e.type !== d.rbe.DM && e.type !== d.rbe.GROUP_DM && c.A.canWithPartialContext(d.xBc.MANAGE_MESSAGES, {
+    return null != e && e.type !== c.rbe.DM && e.type !== c.rbe.GROUP_DM && d.A.canWithPartialContext(c.xBc.MANAGE_MESSAGES, {
       channelId: e.id
     })
   }, [t]);
@@ -32,6 +32,6 @@ let m = e => {
     buttonText: m ? u.intl.string(u.t.f3pnLL) : u.intl.string(u.t.ch2xbt),
     buttonDisabled: m,
     buttonVariant: "critical-primary",
-    onButtonPress: p
+    onButtonPress: b
   }) : null
 }

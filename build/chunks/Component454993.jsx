@@ -41,7 +41,7 @@ function p(e) {
       easing: d
     },
     pause: !t
-  }), b = (0, o.zhh)({
+  }), y = (0, o.zhh)({
     from: {
       background: s ? "rgba(0, 0, 0, 0.8)" : "rgba(0, 0, 0, 0)"
     },
@@ -63,7 +63,7 @@ function p(e) {
   }, [t]), (0, r.jsx)(a.animated.div, {
     className: c.iE,
     style: {
-      background: b.background
+      background: y.background
     },
     children: t ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.animated.div, {

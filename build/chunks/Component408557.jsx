@@ -60,8 +60,8 @@ function m(e) {
       className: m,
       activeCommand: g,
       activeOption: E,
-      optionStates: b,
-      channelId: y
+      optionStates: y,
+      channelId: b
     } = e,
     O = i.useCallback(e => {
       var t;
@@ -76,16 +76,16 @@ function m(e) {
         }))
       })
     }, [null == g || null == (t = g.rootCommand) ? true : t.id]),
-    A = i.useCallback(() => {
+    v = i.useCallback(() => {
       c.Gf({
-        channelId: y,
+        channelId: b,
         command: null,
         section: null
       })
-    }, [y]);
+    }, [b]);
   if (null == g) return null;
   if (null != E) {
-    let e = b[E.name].lastValidationResult;
+    let e = y[E.name].lastValidationResult;
     a = E.displayName, f = E.displayDescription, _ = (null == e ? true : e.success) ? null : null == e ? true : e.error
   } else a = "".concat("/").concat(g.displayName), f = g.displayDescription, _ = null;
   return (0, r.jsxs)("div", {
@@ -106,7 +106,7 @@ function m(e) {
     }), (0, r.jsx)("div", {
       className: d.o1,
       children: (0, r.jsx)(l.x, {
-        onClick: A
+        onClick: v
       })
     })]
   })

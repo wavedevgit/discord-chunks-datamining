@@ -1,7 +1,7 @@
 /** Chunk was on 52396 **/
-/** chunk id: 115623, original params: t,a,e (module,exports,require) **/
+/** chunk id: 115623, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => c
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -12,35 +12,35 @@ var Chunk158954 = require("./158954.js"),
   Chunk399675 = require("./399675.js"),
   Chunk938430 = require("./938430.js");
 
-function d(t) {
+function c(t) {
   let {
-    transitionState: a,
-    onClose: e,
-    storeListing: d,
-    subscription: p
-  } = t, u = (0, s.GV)();
-  return (0, i.jsx)(r.ExpressiveModal, {
+    transitionState: e,
+    onClose: i,
+    storeListing: c,
+    subscription: u
+  } = t, p = (0, s.GV)();
+  return (0, a.jsx)(r.ExpressiveModal, {
     actions: [{
       variant: "secondary",
-      onClick: e,
+      onClick: i,
       text: l.intl.string(l.t["JtWl+a"])
     }],
-    "aria-labelledby": u,
+    "aria-labelledby": p,
     graphic: {
       type: "image",
-      src: o
+      src: d
     },
-    onClose: e,
-    transitionState: a,
+    onClose: i,
+    transitionState: e,
     title: l.intl.formatToPlainString(l.t.wLFT6z, {
-      tier: d.summary
+      tier: c.summary
     }),
-    children: (0, i.jsx)(n.Text, {
-      className: c.VA,
+    children: (0, a.jsx)(n.Text, {
+      className: o.VA,
       variant: "text-md/medium",
       color: "text-default",
       children: l.intl.format(l.t.OsAK9h, {
-        timestamp: null == p ? true : p.currentPeriodEnd
+        timestamp: null == u ? true : u.currentPeriodEnd
       })
     })
   })

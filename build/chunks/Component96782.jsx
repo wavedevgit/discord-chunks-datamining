@@ -107,7 +107,7 @@ function M(e, t) {
     width: e.width,
     spoiler: e.spoiler,
     contentType: e.content_type,
-    srcIsAnimated: (0, o.Lt)(null != (n = e.flags) ? n : 0, v.sbO.IS_ANIMATED)
+    srcIsAnimated: (0, o.Lt)(null != (n = e.flags) ? n : 0, A.sbO.IS_ANIMATED)
   }
 }
 let k = e => {
@@ -126,14 +126,14 @@ let k = e => {
   });
   let m = [];
   null != a && m.push((0, r.jsx)(l.m, {
-    text: S.intl.string(S.t["/XT3ij"]),
+    text: I.intl.string(I.t["/XT3ij"]),
     children: (0, r.jsx)(c.DUT, {
-      className: s()(T.HF, I.GC),
+      className: s()(T.HF, S.GC),
       focusProps: {
         offset: 2
       },
       onClick: a,
-      "aria-label": S.intl.string(S.t["0+xZH0"]),
+      "aria-label": I.intl.string(I.t["0+xZH0"]),
       children: (0, r.jsx)(c.ucK, {
         size: "custom",
         color: "currentColor",
@@ -142,12 +142,12 @@ let k = e => {
       })
     })
   }, "remove")), o && m.push((0, r.jsx)(l.m, {
-    text: S.intl.string(S.t["1WjMbC"]),
+    text: I.intl.string(I.t["1WjMbC"]),
     children: (0, r.jsx)(d.A, {
       target: "_blank",
       rel: "noreferrer noopener",
       className: T.HF,
-      iconClassName: I.qG,
+      iconClassName: S.qG,
       focusProps: {
         offset: 2
       },
@@ -209,26 +209,26 @@ function U(e) {
   } = n, [X, Z] = i.useState(false), Q = t.getChannelId(), $ = E.A.getChannel(Q), J = (0, m.A)(Q), ee = i.useMemo(() => null != q && false !== q.indexOf("/") ? q.split("/") : ["unknown", "unknown"], [q]), et = false;
   if (V) {
     (null == Y || null == W) && (et = true);
-    let e = (0, y.U8)({
+    let e = (0, b.U8)({
       width: null != Y ? Y : 0,
       height: null != W ? W : 0,
-      maxWidth: null != j ? j : A.k6,
-      maxHeight: null != M ? M : A.Rk
+      maxWidth: null != j ? j : v.k6,
+      maxHeight: null != M ? M : v.Rk
     });
-    !G && (e * (null != Y ? Y : 0) < A.ie || e * (null != W ? W : 0) < A.ie) && (et = true)
+    !G && (e * (null != Y ? Y : 0) < v.ie || e * (null != W ? W : 0) < v.ie) && (et = true)
   }
   let en = i.useCallback(() => {
       l(n)
     }, [n, l]),
     er = i.useCallback(() => {
-      b.default.track(v.HAw.IMAGE_HOVERED, {
+      y.default.track(A.HAw.IMAGE_HOVERED, {
         guild_id: null == $ ? true : $.guild_id,
         channel_id: null == $ ? true : $.id,
         image_recommendations_shown: false
       })
     }, [$]),
     ei = i.useCallback(() => {
-      if (L === A.dG.MOSAIC) {
+      if (L === v.dG.MOSAIC) {
         let e = !J && ["VIDEO", "CLIP", "AUDIO"].includes(z) || "OTHER" === z;
         return et ? null : !X && (0, r.jsx)(k, {
           mimeType: ee,
@@ -239,14 +239,14 @@ function U(e) {
         })
       }
       return o && (0, r.jsx)(c.DUT, {
-        className: K ? I.yR : I.Yg,
+        className: K ? S.yR : S.Yg,
         focusProps: {
           offset: {
             bottom: 4
           }
         },
         onClick: () => l(n),
-        "aria-label": S.intl.string(S.t["0+xZH0"]),
+        "aria-label": I.intl.string(I.t["0+xZH0"]),
         children: (0, r.jsx)(c.PGe, {
           size: "xs",
           color: "currentColor"
@@ -255,7 +255,7 @@ function U(e) {
     }, [L, o, K, J, z, et, X, ee, n, en, V, l]);
   if (H) return (0, r.jsx)(c._V3, {
     className: R,
-    readyState: v.Rv1.READY,
+    readyState: A.Rv1.READY,
     src: "",
     width: null != Y ? Y : 350,
     height: null != W ? W : 350,
@@ -306,7 +306,7 @@ function U(e) {
         naturalWidth: Y,
         naturalHeight: W,
         className: s()(R, {
-          [I.yq]: U
+          [S.yq]: U
         }),
         playable: D,
         responsive: true,
@@ -318,7 +318,7 @@ function U(e) {
         onControlsShow: F,
         onControlsHide: B,
         downloadable: !J,
-        mediaPlayerClassName: U ? I.yq : true
+        mediaPlayerClassName: U ? S.yq : true
       });
     case "VISUAL_PLACEHOLDER":
       if (null == N) return null;
@@ -373,7 +373,7 @@ function G(e, t, n) {
   if (true !== e.width && true !== e.height) {
     let {
       width: t
-    } = (0, y.Uj)({
+    } = (0, b.Uj)({
       width: e.width,
       height: e.height,
       maxWidth: 400,
@@ -381,7 +381,7 @@ function G(e, t, n) {
     });
     r = t
   }
-  return w(N({}, n !== A.dG.MOSAIC && {
+  return w(N({}, n !== v.dG.MOSAIC && {
     maxWidth: null != r ? r : "400px"
   }), {
     width: "100%",
@@ -402,9 +402,9 @@ let V = function(e) {
     displayGridItem: h
   } = e, m = P(e, ["className", "item", "message", "getObscureReason", "useFullWidth", "mediaLayoutType", "isSingleMosaicItem", "footer", "displayGridItem"]), {
     width: E,
-    height: b,
-    type: y
-  } = n, v = o(n, (0, _.P)(a)), [S, T] = i.useState(null != v), C = (0, f.qZ)(v), R = c === A.dG.MOSAIC, D = !R && (null != E && E < x || null != b && b < L), M = j(y), k = (0, O.Xg)(y), V = u && null != v && (0, f.j8)(E, b), [F, B] = i.useState(false), H = () => {
+    height: y,
+    type: b
+  } = n, A = o(n, (0, _.P)(a)), [I, T] = i.useState(null != A), C = (0, f.qZ)(A), R = c === v.dG.MOSAIC, D = !R && (null != E && E < x || null != y && y < L), M = j(b), k = (0, O.Xg)(b), V = u && null != A && (0, f.j8)(E, y), [F, B] = i.useState(false), H = () => {
     B(true)
   }, Y = () => {
     B(false)
@@ -415,12 +415,12 @@ let V = function(e) {
       message: a,
       getObscureReason: o,
       hiddenSpoilers: e,
-      className: s()(t, I.bq, {
-        [I.cd]: S && !D,
-        [I.rP]: S && v === p.Oc.SPOILER,
-        [I.xu]: S && null != v && p._K.has(v),
-        [I.sC]: S && e,
-        [I.mG]: S && D
+      className: s()(t, S.bq, {
+        [S.cd]: I && !D,
+        [S.rP]: I && A === p.Oc.SPOILER,
+        [S.xu]: I && null != A && p._K.has(A),
+        [S.sC]: I && e,
+        [S.mG]: I && D
       }),
       focusable: !e,
       mediaLayoutType: c,
@@ -429,7 +429,7 @@ let V = function(e) {
       isVisualMediaType: k,
       onVideoControlsShow: H,
       onVideoControlsHide: Y,
-      forcePlaceholder: C && S
+      forcePlaceholder: C && I
     }))
   };
   return (0, r.jsxs)("div", {
@@ -437,22 +437,22 @@ let V = function(e) {
       minWidth: 0,
       width: "".concat(m.maxWidth, "px")
     } : true,
-    className: s()(I.wO, {
-      [I.xV]: M,
-      [I.D$]: l,
-      [I.UI]: R,
-      [I.JP]: R && k,
-      [I.hU]: null != d
+    className: s()(S.wO, {
+      [S.xV]: M,
+      [S.D$]: l,
+      [S.UI]: R,
+      [S.JP]: R && k,
+      [S.hU]: null != d
     }),
-    children: [null != v ? (0, r.jsx)(g.Ay, {
+    children: [null != A ? (0, r.jsx)(g.Ay, {
       type: g.Ay.Types.ATTACHMENT,
       inline: D,
-      reason: v,
+      reason: A,
       isSingleMosaicItem: u,
-      obscured: S,
+      obscured: I,
       containerStyles: G(n, M, c),
       obscurityControlClassName: s()({
-        [I.yi]: "VIDEO" === y && u && !S && F
+        [S.yi]: "VIDEO" === b && u && !I && F
       }),
       onToggleObscurity: () => T(e => !e),
       children: e => W(e)

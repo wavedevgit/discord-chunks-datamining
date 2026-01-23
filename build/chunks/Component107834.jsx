@@ -2,7 +2,7 @@
 /** chunk id: 107834, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -21,7 +21,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk187585 = require("./187585.js");
-let b = e => {
+let y = e => {
     let {
       isAuthenticated: t,
       user: n
@@ -48,6 +48,6 @@ let b = e => {
       })
     })
   },
-  y = Chunk311907.Ay.connectStores([Chunk287809.default], () => ({
+  b = Chunk311907.Ay.connectStores([Chunk287809.default], () => ({
     user: p.default.getCurrentUser()
-  }))((0, Chunk490415.A)(b))
+  }))((0, Chunk490415.A)(y))

@@ -25,24 +25,24 @@ function g(e) {
 
 function E(e, t, n) {
   let E = (0, o.Bi)(),
-    b = (0, o.Bi)(),
     y = (0, o.Bi)(),
+    b = (0, o.Bi)(),
     O = (0, _.o)(g(r.A), "@react-aria/datepicker"),
     {
-      isInvalid: A,
-      validationErrors: v,
-      validationDetails: S
+      isInvalid: v,
+      validationErrors: A,
+      validationDetails: I
     } = t.displayValidation,
     {
-      labelProps: I,
+      labelProps: S,
       fieldProps: T,
       descriptionProps: C,
       errorMessageProps: N
     } = (0, f.M)({
       ...e,
       labelElementType: "span",
-      isInvalid: A,
-      errorMessage: e.errorMessage || v
+      isInvalid: v,
+      errorMessage: e.errorMessage || A
     }),
     R = (0, a.P)(t, n),
     w = T["aria-labelledby"] || T.id,
@@ -66,7 +66,7 @@ function E(e, t, n) {
       ...e,
       isDisabled: t.isOpen,
       onBlurWithin: t => {
-        let n = document.getElementById(b);
+        let n = document.getElementById(y);
         if (!(null == n ? true : n.contains(t.relatedTarget))) {
           var r, i;
           U.current = false, null == (r = e.onBlur) || r.call(e, t), null == (i = e.onFocusChange) || i.call(e, false)
@@ -93,14 +93,14 @@ function E(e, t, n) {
       }
     }),
     labelProps: {
-      ...I,
+      ...S,
       onClick: () => {
         k.focusFirst()
       }
     },
     fieldProps: {
       ...T,
-      id: y,
+      id: b,
       [i.pK]: "presentation",
       "aria-describedby": j,
       value: t.value,
@@ -134,7 +134,7 @@ function E(e, t, n) {
       onPress: () => t.setOpen(true)
     },
     dialogProps: {
-      id: b,
+      id: y,
       "aria-labelledby": `${E} ${w}`
     },
     calendarProps: {
@@ -152,8 +152,8 @@ function E(e, t, n) {
       firstDayOfWeek: e.firstDayOfWeek,
       pageBehavior: e.pageBehavior
     },
-    isInvalid: A,
-    validationErrors: v,
-    validationDetails: S
+    isInvalid: v,
+    validationErrors: A,
+    validationDetails: I
   }
 }

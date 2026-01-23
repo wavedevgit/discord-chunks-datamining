@@ -2,7 +2,7 @@
 /** chunk id: 106236, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./638769.js"), require("./65821.js"), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -50,13 +50,13 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e, t) {
+function b(e, t) {
   let n = 0;
   for (let r = 0; r < t.length; r++) {
     let i = t[r];
@@ -85,7 +85,7 @@ function O(e) {
     sortedMarkers: s,
     markerPositions: o
   };
-  let l = y(n, s = t.sort((e, t) => e - t)),
+  let l = b(n, s = t.sort((e, t) => e - t)),
     c = s[0],
     u = s[s.length - 1],
     d = u - c;
@@ -106,7 +106,7 @@ function O(e) {
   }
 }
 
-function A(e, t) {
+function v(e, t) {
   let n = Math.min(Math.max(e.initialValue, e.minValue), e.maxValue);
   return g({
     value: null != t ? t : n,
@@ -114,11 +114,11 @@ function A(e, t) {
     newClosestIndex: null
   }, O(e))
 }
-class v extends(r = Chunk64700.PureComponent) {
+class A extends(r = Chunk64700.PureComponent) {
   static getDerivedStateFromProps(e, t) {
-    return null != e.value && e.value !== t.value ? b(g({}, A(e, e.value)), {
+    return null != e.value && e.value !== t.value ? y(g({}, v(e, e.value)), {
       active: t.active
-    }) : e.initialValue !== t.initialValueProp ? b(g({}, A(e, t.value)), {
+    }) : e.initialValue !== t.initialValueProp ? y(g({}, v(e, t.value)), {
       active: t.active
     }) : null
   }
@@ -145,11 +145,11 @@ class v extends(r = Chunk64700.PureComponent) {
       max: m
     } = this.state, {
       disabled: E,
-      stickToMarkers: y,
+      stickToMarkers: b,
       className: O,
-      children: A,
-      barStyles: v,
-      fillStyles: I,
+      children: v,
+      barStyles: A,
+      fillStyles: S,
       mini: T,
       hideBubble: C,
       defaultValue: N,
@@ -168,7 +168,7 @@ class v extends(r = Chunk64700.PureComponent) {
     } = this.props, {
       fieldProps: F
     } = (0, f.ndh)(this.props), B = 0;
-    y ? null != s && (null != c ? B = s[c] : null != l && (B = s[l])) : B = this.scaleValue(t), B = Math.min(Math.max(B, 0), 100);
+    b ? null != s && (null != c ? B = s[c] : null != l && (B = s[l])) : B = this.scaleValue(t), B = Math.min(Math.max(B, 0), 100);
     let H = "".concat(B, "%"),
       Y = null != s && null != a ? s.map((e, t) => {
         let n = a[t],
@@ -195,8 +195,8 @@ class v extends(r = Chunk64700.PureComponent) {
       }) : null,
       W = null != w ? w(t) : "".concat(B.toFixed(0), "%"),
       K = null != (e = null == D ? true : D(t)) ? e : true;
-    return (0, i.jsx)(f.D0$, b(g({}, F), {
-      children: e => (0, i.jsx)(S, {
+    return (0, i.jsx)(f.D0$, y(g({}, F), {
+      children: e => (0, i.jsx)(I, {
         active: n,
         keyboardFocused: r && _.A.keyboardModeEnabled,
         children: a => {
@@ -242,21 +242,21 @@ class v extends(r = Chunk64700.PureComponent) {
                 children: Y
               }), (0, i.jsx)("div", {
                 className: o()(h.bar, x),
-                style: v,
+                style: A,
                 children: (0, i.jsx)("div", {
                   className: h.barFill,
-                  style: b(g({}, I), {
+                  style: y(g({}, S), {
                     width: H
                   })
                 })
-              }), A, (0, i.jsx)("div", {
+              }), v, (0, i.jsx)("div", {
                 className: h.track,
                 children: (0, i.jsx)(p.m, {
-                  __unsupportedReactNodeAsText: C || y ? null : W,
+                  __unsupportedReactNodeAsText: C || b ? null : W,
                   forceOpen: n || r && _.A.keyboardModeEnabled,
                   children: (0, i.jsx)("div", {
                     className: o()(h.grabber, L),
-                    style: b(g({}, j), {
+                    style: y(g({}, j), {
                       left: H
                     }),
                     onMouseDown: this.handleMouseDown,
@@ -308,7 +308,7 @@ class v extends(r = Chunk64700.PureComponent) {
     let u = c - l,
       d = (e.clientX - r) / u,
       f = a[i] + 100 * d;
-    null != (t = this.props.equidistant ? y(f, a) : y(this.unscaleValue(f), s)) && (null == o || o(s[t])), this.setState({
+    null != (t = this.props.equidistant ? b(f, a) : b(this.unscaleValue(f), s)) && (null == o || o(s[t])), this.setState({
       newClosestIndex: t
     })
   }
@@ -461,11 +461,11 @@ class v extends(r = Chunk64700.PureComponent) {
       active: false,
       focused: false,
       dragStartValue: true
-    }, A(e, e.initialValue))
+    }, v(e, e.initialValue))
   }
 }
 
-function S(e) {
+function I(e) {
   let {
     active: t,
     keyboardFocused: n,
@@ -475,14 +475,14 @@ function S(e) {
     sliderStyles: (0, f.zhh)({
       "--grabber-size": n || t || i ? "20px" : "16px",
       "--bar-size": n || t || i ? "6px" : "4px",
-      config: b(g({}, u.config.stiff), {
+      config: y(g({}, u.config.stiff), {
         duration: 100
       })
     }),
     setHovered: s
   })
 }
-m(v, "defaultProps", {
+m(A, "defaultProps", {
   initialValue: 10,
   minValue: 0,
   maxValue: 100,

@@ -2,7 +2,7 @@
 /** chunk id: 423981, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => T
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -27,7 +27,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk381929 = require("./381929.js");
 
-function N(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,13 +45,13 @@ function N(e) {
   }
   return e
 }
-let _ = function(e, t, n) {
+let N = function(e, t, n) {
     let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
       i = null;
-    return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (i = A.intl.string(A.t.xO2msf)) : i = A.intl.formatToPlainString(A.t.nskeMw, {
+    return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (i = y.intl.string(y.t.xO2msf)) : i = y.intl.formatToPlainString(y.t.nskeMw, {
       percentage: (0, s.s)(Math.abs(t), n)
     }), {
-      localizedNumber: null != e ? "".concat((0, s.s)(e, n)).concat(r ? "%" : "") : A.intl.string(A.t.jHpxwo),
+      localizedNumber: null != e ? "".concat((0, s.s)(e, n)).concat(r ? "%" : "") : y.intl.string(y.t.jHpxwo),
       subtext: i,
       isTrendingUp: t > 0,
       isTrendingDown: t < 0
@@ -59,31 +59,31 @@ let _ = function(e, t, n) {
   },
   S = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    return t || e === y.t02.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)("div", {
-      className: E.NA,
-      children: (0, r.jsx)(o.wx6, {
+    return t || e === O.t02.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)("div", {
+      className: A.NA,
+      children: (0, r.jsx)(c.wx6, {
         type: "info",
-        children: A.intl.string(A.t["FsgE/B"])
+        children: y.intl.string(y.t["FsgE/B"])
       })
-    }) : null == e ? null : (0, r.jsx)(o.wx6, {
+    }) : null == e ? null : (0, r.jsx)(c.wx6, {
       type: "critical",
-      children: A.intl.string(A.t.Iju63e)
+      children: y.intl.string(y.t.Iju63e)
     })
   },
-  T = () => {
-    let [e, t] = i.useState(false), n = (0, a.bG)([x.A], () => x.A.getGuildId());
+  I = () => {
+    let [e, t] = i.useState(false), n = (0, a.bG)([h.A], () => h.A.getGuildId());
     return (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
-      className: E.XU,
-      children: (0, r.jsx)(o.Button, {
+      className: A.XU,
+      children: (0, r.jsx)(c.Button, {
         variant: "primary",
-        text: A.intl.string(A.t.Uskgxx),
+        text: y.intl.string(y.t.Uskgxx),
         onClick: () => {
           let e, r;
-          t(true), (p.default.track(y.HAw.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
+          t(true), (b.default.track(O.HAw.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
             guild_id: n
-          }), e = null == n ? y.dSh.DEVELOPER_PORTAL : y.dSh.DEVELOPER_PORTAL_GUILD_ANALYTICS(n), r = (0, l.A)(), c.Bo.post({
-            url: y.Rsh.HANDOFF,
+          }), e = null == n ? O.dSh.DEVELOPER_PORTAL : O.dSh.DEVELOPER_PORTAL_GUILD_ANALYTICS(n), r = (0, l.A)(), o.Bo.post({
+            url: O.Rsh.HANDOFF,
             body: {
               key: r
             },
@@ -91,7 +91,7 @@ let _ = function(e, t, n) {
             rejectWithError: true
           }).then(t => {
             let n = t.body.handoff_token;
-            window.open(y.X7G.DEVELOPER_PORTAL_LOGIN_HANDOFF(r, n, e))
+            window.open(O.X7G.DEVELOPER_PORTAL_LOGIN_HANDOFF(r, n, e))
           }, () => {
             window.open(e)
           })).then(() => {
@@ -102,61 +102,61 @@ let _ = function(e, t, n) {
       })
     })
   },
-  I = () => {
-    let e = (0, a.bG)([x.A], () => x.A.getGuildId()),
-      t = (0, a.bG)([g.A], () => g.A.getMemberCount(e)),
-      n = (0, a.bG)([b.A], () => b.A.getGuild(e)),
-      l = (0, a.bG)([f.default], () => f.default.locale),
+  T = () => {
+    let e = (0, a.bG)([h.A], () => h.A.getGuildId()),
+      t = (0, a.bG)([m.A], () => m.A.getMemberCount(e)),
+      n = (0, a.bG)([p.A], () => p.A.getGuild(e)),
+      l = (0, a.bG)([g.default], () => g.default.locale),
       {
         analytics: s,
-        errorCode: c
+        errorCode: o
       } = (0, a.cf)([j.A], () => ({
         analytics: null != e ? j.A.getOverviewAnalytics(e) : null,
         errorCode: j.A.getError()
       })),
-      p = (0, a.bG)([m.A], () => m.A.getSettings().enabled),
-      I = null == t || null == n || null != t && t < 500 && null != n && !n.features.has(y.GuildFeatures.PARTNERED) && !n.features.has(y.GuildFeatures.VERIFIED);
+      b = (0, a.bG)([f.A], () => f.A.getSettings().enabled),
+      T = null == t || null == n || null != t && t < 500 && null != n && !n.features.has(O.GuildFeatures.PARTNERED) && !n.features.has(O.GuildFeatures.VERIFIED);
     i.useEffect(() => {
-      null == e || I || ((0, h.p9)(e), (0, h.fe)(e), (0, h._z)(e))
-    }, [e, I]), i.useEffect(() => {
+      null == e || T || ((0, x.p9)(e), (0, x.fe)(e), (0, x._z)(e))
+    }, [e, T]), i.useEffect(() => {
       (0, u.sF)(v._.GUILD_ANALYTICS_GUILD_SETTINGS_MENU)
     }, []);
     let C = null != s ? (0, r.jsx)("div", {
-      className: E.__invalid_guildAnalyticsOverviewWrapper,
+      className: A.__invalid_guildAnalyticsOverviewWrapper,
       children: (0, r.jsxs)("div", {
-        className: E.SJ,
-        children: [(0, r.jsx)(O.A, N({
-          title: A.intl.string(A.t.i0NorT),
-          tooltipText: A.intl.string(A.t.KiRbLJ)
-        }, _(s.visitors, s.visitorsChange, l))), (0, r.jsx)(O.A, N({
-          title: A.intl.string(A.t.DDAHdQ),
-          tooltipText: A.intl.string(A.t.HxWUkU)
-        }, _(s.communicators, s.communicatorsChange, l))), (0, r.jsx)(O.A, N({
-          title: A.intl.string(A.t.hYeOqC)
-        }, _(s.newMembers, s.newMembersChange, l))), (0, r.jsx)(O.A, N({
-          title: A.intl.string(A.t.jj7OPw),
-          tooltipText: A.intl.string(A.t.MQCslz)
-        }, _(s.pctRetained, s.pctRetainedChange, l, true)))]
+        className: A.SJ,
+        children: [(0, r.jsx)(_.A, E({
+          title: y.intl.string(y.t.i0NorT),
+          tooltipText: y.intl.string(y.t.KiRbLJ)
+        }, N(s.visitors, s.visitorsChange, l))), (0, r.jsx)(_.A, E({
+          title: y.intl.string(y.t.DDAHdQ),
+          tooltipText: y.intl.string(y.t.HxWUkU)
+        }, N(s.communicators, s.communicatorsChange, l))), (0, r.jsx)(_.A, E({
+          title: y.intl.string(y.t.hYeOqC)
+        }, N(s.newMembers, s.newMembersChange, l))), (0, r.jsx)(_.A, E({
+          title: y.intl.string(y.t.jj7OPw),
+          tooltipText: y.intl.string(y.t.MQCslz)
+        }, N(s.pctRetained, s.pctRetainedChange, l, true)))]
       })
     }) : null;
     return (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(o.Heading, {
+      children: [(0, r.jsx)(c.Heading, {
         variant: "heading-lg/semibold",
-        children: A.intl.string(A.t["0wWfUG"])
-      }), (0, r.jsx)(o.Text, {
+        children: y.intl.string(y.t["0wWfUG"])
+      }), (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
-        children: A.intl.format(A.t.NIZ60a, {})
-      }), S(c, I), (0, r.jsxs)("div", {
-        className: E.Pg,
+        children: y.intl.format(y.t.NIZ60a, {})
+      }), S(o, T), (0, r.jsxs)("div", {
+        className: A.Pg,
         children: [(0, r.jsx)("div", {
-          className: E.jM
-        }), (0, r.jsx)(o.Text, {
-          className: E.WO,
+          className: A.jM
+        }), (0, r.jsx)(c.Text, {
+          className: A.WO,
           variant: "text-sm/normal",
-          children: A.intl.string(A.t.A5vswv)
-        }), (0, r.jsx)(T, {})]
-      }), p ? (0, r.jsx)("div", {
-        className: E.Rc,
+          children: y.intl.string(y.t.A5vswv)
+        }), (0, r.jsx)(I, {})]
+      }), b ? (0, r.jsx)("div", {
+        className: A.Rc,
         children: (0, r.jsx)(d.A, {})
       }) : C]
     })

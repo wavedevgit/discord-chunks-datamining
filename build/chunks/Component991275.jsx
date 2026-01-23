@@ -138,49 +138,49 @@ let et = Chunk837921.Ay.getEnableHardwareAcceleration(),
       activities: p,
       applicationStream: h,
       status: E,
-      channel: b,
-      guildId: y,
+      channel: y,
+      guildId: b,
       isTyping: O,
-      isMobileOnline: A,
-      premiumSince: v,
-      nameplate: S
-    } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), T = i.useRef(null), [C, N] = i.useState(false), w = null != v ? new Date(v) : null, P = i.useCallback(e => {
+      isMobileOnline: v,
+      premiumSince: A,
+      nameplate: I
+    } = e, S = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), T = i.useRef(null), [C, N] = i.useState(false), w = null != A ? new Date(A) : null, P = i.useCallback(e => {
       (0, _.L3)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("97262"), n.e("29534"), n.e("33818"), n.e("55296"), n.e("84841"), n.e("43144")]).then(n.bind(n, 107632)), t = F.A.isInChannel(U.A.getVoiceChannelId(), u.id);
         return n => (0, r.jsx)(e, $(Z({}, n), {
           user: u,
-          guildId: y,
-          channel: b,
+          guildId: b,
+          channel: y,
           showMediaItems: t
         }))
       })
-    }, [u, y, b]), D = i.useCallback(() => {
+    }, [u, b, y]), D = i.useCallback(() => {
       let e = "@".concat(Y.Ay.getUserTag(u, {
           decoration: "never"
         })),
         t = "<@".concat(u.id, ">");
       B._.dispatch(K.jej.TEXTAREA_FOCUS, {
-        channelId: b.id
+        channelId: y.id
       }), B._.dispatchToLastSubscribed(K.jej.INSERT_TEXT, {
         plainText: e,
         rawText: t
-      }), m.A.startTyping(b.id)
-    }, [u, b.id]), x = i.useCallback(e => {
-      null != y && (e.stopPropagation(), (0, R.K)({
-        guildId: y,
+      }), m.A.startTyping(y.id)
+    }, [u, y.id]), x = i.useCallback(e => {
+      null != b && (e.stopPropagation(), (0, R.K)({
+        guildId: b,
         location: {
           section: K.JJy.MEMBER_LIST,
           object: K.ZSU.BOOST_GEM_ICON
         }
       }))
-    }, [y]);
+    }, [b]);
     return (0, r.jsx)(L.A, {
       targetElementRef: T,
       user: u,
-      guildId: y,
-      channelId: b.id,
+      guildId: b,
+      channelId: y.id,
       roleId: o,
       position: d.Fr ? "window_center" : "left",
       spacing: 16,
@@ -211,13 +211,13 @@ let et = Chunk837921.Ay.getEnableHardwareAcceleration(),
           colorStrings: a,
           colorRoleName: s,
           isTyping: O,
-          channel: b,
-          guildId: y,
-          isMobile: A,
+          channel: y,
+          guildId: b,
+          isMobile: v,
           onClickPremiumGuildIcon: x,
           selected: C,
-          itemProps: I,
-          nameplate: S,
+          itemProps: S,
+          nameplate: I,
           onClick: e => {
             e.shiftKey ? null == D || D() : N(e => !e)
           },
@@ -313,7 +313,7 @@ class ec extends Chunk64700.Component {
     return e.channel.id !== this.props.channel.id || e.version !== this.props.version || e.groups.length !== this.props.groups.length
   }
   componentDidMount() {
-    this.updateSubscription(), this.trackMemberListViewed(), this._areActivitiesExperimentallyHidden = (0, A.M)("ChannelMembers")
+    this.updateSubscription(), this.trackMemberListViewed(), this._areActivitiesExperimentallyHidden = (0, v.M)("ChannelMembers")
   }
   componentDidUpdate(e) {
     e.channel.id !== this.props.channel.id && this.updateSubscription(), this.trackMemberListViewed(), this.updateMaxContentFeedRowSeen()
@@ -414,7 +414,7 @@ class ec extends Chunk64700.Component {
         groups: n,
         channel: a
       } = this.props, s = n[t];
-      if ((0, v.l)(s)) return (0, i.createElement)(v.A, $(Z({}, s), {
+      if ((0, A.l)(s)) return (0, i.createElement)(A.A, $(Z({}, s), {
         key: "section-".concat(t)
       }));
       if (0 === t) {
@@ -509,13 +509,13 @@ class ec extends Chunk64700.Component {
           let e = "content-inventory-".concat(s.entry.id);
           null != s.entry.original_id && (e += "-".concat(s.entry.original_id));
           let t = this.getFirstApplicationIdOccurrences().has(s.entry.id);
-          return (0, r.jsx)(I.Ay, $(Z({}, s), {
+          return (0, r.jsx)(S.Ay, $(Z({}, s), {
             channel: this.props.channel,
             index: i,
             isFirstApplicationOccurrence: t
           }), e)
         }
-        if (s.type === M.S9.HIDDEN_CONTENT_INVENTORY) return (0, r.jsx)(S.A, {}, "content-inventory-hidden-entry")
+        if (s.type === M.S9.HIDDEN_CONTENT_INVENTORY) return (0, r.jsx)(I.A, {}, "content-inventory-hidden-entry")
       }
       return (0, r.jsx)(el, {
         index: i
@@ -532,7 +532,7 @@ class ec extends Chunk64700.Component {
       this.props.updateMaxContentFeedRowSeen(r)
     }, 50)), X(this, "getContentFeedGroup", () => {
       let e = this.props.groups[T.f];
-      if ((0, v.l)(e)) return e
+      if ((0, A.l)(e)) return e
     }), X(this, "hasContentFeed", () => null != this.getContentFeedGroup()), X(this, "getRowHeightComputer", () => {
       let e = this.getContentFeedGroup(),
         {
@@ -545,7 +545,7 @@ class ec extends Chunk64700.Component {
         return function(e, i) {
           if (e === T.f) {
             let e = n[r + 1 + i];
-            return (0, I.h9)(e)
+            return (0, S.h9)(e)
           }
           return t
         }
@@ -592,7 +592,7 @@ class ec extends Chunk64700.Component {
         num_users_visible_with_avatar_decoration: 0,
         num_users_visible_with_nameplate: 0
       });
-      this.lastReportedAnalyticsChannel = this.props.channel.id, y.Ay.trackWithMetadata(K.HAw.MEMBER_LIST_VIEWED, Z({}, i))
+      this.lastReportedAnalyticsChannel = this.props.channel.id, b.Ay.trackWithMetadata(K.HAw.MEMBER_LIST_VIEWED, Z({}, i))
     })
   }
 }
@@ -603,7 +603,7 @@ function eu(e) {
     className: n
   } = e, {
     analyticsLocations: a
-  } = (0, O.Ay)(b.A.MEMBER_LIST), o = (0, f.bG)([E.A], () => E.A.keyboardModeEnabled), l = (0, f.cf)([M.Ay], () => M.Ay.getProps(t.guild_id, t.id)), {
+  } = (0, O.Ay)(y.A.MEMBER_LIST), o = (0, f.bG)([E.A], () => E.A.keyboardModeEnabled), l = (0, f.cf)([M.Ay], () => M.Ay.getProps(t.guild_id, t.id)), {
     rows: d,
     groups: _,
     version: h,
@@ -612,12 +612,12 @@ function eu(e) {
     memberStoreProps: l,
     channelId: t.id,
     guildId: t.guild_id
-  }), g = i.useRef(null), y = en + ((0, p.WHe)("lg") + (0, p.WHe)("xxs")), A = er, v = i.useCallback((e, t) => {
+  }), g = i.useRef(null), b = en + ((0, p.WHe)("lg") + (0, p.WHe)("xxs")), v = er, A = i.useCallback((e, t) => {
     let n = g.current;
     if (null == n) return;
     let r = parseInt(t, 10),
       [i, a] = n.getSectionRowFromIndex(r),
-      s = 0 === i && 0 === a ? A : 0;
+      s = 0 === i && 0 === a ? v : 0;
     n.scrollToIndex({
       section: i,
       row: a,
@@ -631,13 +631,13 @@ function eu(e) {
         })
       }
     })
-  }, [A]), S = i.useCallback(() => new Promise(e => {
+  }, [v]), I = i.useCallback(() => new Promise(e => {
     let t = g.current;
     if (null == t) return e();
     t.scrollToTop({
       callback: () => requestAnimationFrame(() => e())
     })
-  }), []), I = i.useCallback(() => new Promise(e => {
+  }), []), S = i.useCallback(() => new Promise(e => {
     let t = g.current;
     if (null == t) return e();
     t.scrollToBottom({
@@ -647,10 +647,10 @@ function eu(e) {
     })
   }), []), C = (0, u.Ay)({
     id: "members-".concat(t.id),
-    setFocus: v,
+    setFocus: A,
     isEnabled: o,
-    scrollToStart: S,
-    scrollToEnd: I
+    scrollToStart: I,
+    scrollToEnd: S
   });
   return (0, r.jsx)(O.f5, {
     value: a,
@@ -664,8 +664,8 @@ function eu(e) {
           rows: d,
           listRef: g,
           updateMaxContentFeedRowSeen: m,
-          sectionHeight: y,
-          rowHeight: A
+          sectionHeight: b,
+          rowHeight: v
         }))
       })
     })

@@ -29,22 +29,22 @@ function d(e) {
     setSelectedSkuId: v,
     setSelectedPlanId: y,
     priceOptions: P,
-    setSubscriptionMetadataRequest: O
+    setSubscriptionMetadataRequest: S
   } = (0, c.P5)(), {
-    isGift: S
-  } = (0, o.Pv)(), [A, E] = i.useState(!g || !x || j);
+    isGift: O
+  } = (0, o.Pv)(), [A, C] = i.useState(!g || !x || j);
   return (i.useEffect(() => {
-    E(!g || !x || j)
+    C(!g || !x || j)
   }, [j, x, g]), i.useEffect(() => {
-    null != d && O({
+    null != d && S({
       guild_id: d
     })
-  }, [d, O]), i.useEffect(() => {
+  }, [d, S]), i.useEffect(() => {
     y(n);
     let e = null != n ? a.A.get(n) : null;
     A || f || (p(t => {
       var n, r;
-      let i = null != e ? (0, s.y8)(e.id, false, S, P) : true;
+      let i = null != e ? (0, s.y8)(e.id, false, O, P) : true;
       return n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -78,7 +78,7 @@ function d(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
       }), n
     }), null != e && (v(null == e ? true : e.skuId), b(t)))
-  }, [f, n, S, A, P, h, p, y, v, b, t]), A) ? (0, r.jsx)(u.A, {}) : f ? (0, r.jsx)(l.oO, {
+  }, [f, n, O, A, P, h, p, y, v, b, t]), A) ? (0, r.jsx)(u.A, {}) : f ? (0, r.jsx)(l.oO, {
     onClose: m
   }) : null
 }

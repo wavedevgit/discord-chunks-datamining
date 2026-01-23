@@ -39,7 +39,7 @@ function w(e) {
     minValues: i,
     maxValues: a,
     guildId: o
-  } = e, l = (0, A.o2)(o), c = (0, O.Xq)(l / O.XF, {
+  } = e, l = (0, v.o2)(o), c = (0, O.Xq)(l / O.XF, {
     useKibibytes: true,
     useSpace: true
   });
@@ -149,18 +149,18 @@ function x(e) {
   let {
     minValues: n,
     maxValues: a
-  } = e, o = i.useRef(null), u = i.useRef(null), [h, m] = i.useState(false), g = (0, I.jc)();
+  } = e, o = i.useRef(null), u = i.useRef(null), [h, m] = i.useState(false), g = (0, S.jc)();
   l()(null != g, "FileUploadActionComponent must be used within a ComponentStateContextProvider");
   let E = g.channelId;
   l()(null != E, "FileUploadActionComponent must be used inside a channel");
   let O = null == (t = g.modal) ? true : t.customId;
   l()(null != O, "FileUploadActionComponent requires modalCustomId from context");
   let {
-    uploadIds: A,
+    uploadIds: v,
     setUploadIds: x,
     currentUploads: L,
     error: j
-  } = (0, C.j)(e), M = (0, c.bG)([b.A], () => b.A.getBasicChannel(E));
+  } = (0, C.j)(e), M = (0, c.bG)([y.A], () => y.A.getBasicChannel(E));
   l()(null != M, "FileUploadActionComponent requires a valid channel");
   let k = i.useCallback(e => {
       var t;
@@ -172,13 +172,13 @@ function x(e) {
     }, []),
     G = i.useCallback((e, t) => {
       if (0 === e.length) return;
-      if (A.length + e.length > a) return (0, p.openUploadError)({
+      if (v.length + e.length > a) return (0, p.openUploadError)({
         title: N.intl.string(N.t.wOr6hB),
         help: N.intl.formatToPlainString(N.t.dy6viJ, {
           maxValues: a
         })
       });
-      if ((0, S.fJ)(e, M.guild_id)) return (0, v.V)(M, e);
+      if ((0, I.fJ)(e, M.guild_id)) return (0, A.V)(M, e);
       let n = e.map(e => {
         let n = (0, T.so)(O),
           r = {
@@ -191,12 +191,12 @@ function x(e) {
           channelId: E,
           id: n,
           file: r,
-          draftType: y.C.InteractionModal,
+          draftType: b.C.InteractionModal,
           allowOptimization: false
         }), n
       });
-      x(A.concat(n))
-    }, [A, a, M, x, O, E]),
+      x(v.concat(n))
+    }, [v, a, M, x, O, E]),
     V = i.useCallback(e => {
       var t, n;
       e.preventDefault(), m(false), G(Array.from(null != (t = null == (n = e.dataTransfer) ? true : n.files) ? t : []), "drag_drop")
@@ -206,7 +206,7 @@ function x(e) {
       G(Array.from(null != (t = e.currentTarget.files) ? t : []), "file_picker"), e.currentTarget.value = ""
     },
     B = e => {
-      d.A.remove(E, e, y.C.InteractionModal), x(A.filter(t => t !== e))
+      d.A.remove(E, e, b.C.InteractionModal), x(v.filter(t => t !== e))
     };
   return (i.useEffect(() => {
     let e = u.current;
@@ -223,7 +223,7 @@ function x(e) {
       [R.Ke]: h,
       [R.z3]: null != j
     }),
-    children: [A.length >= a ? (0, r.jsx)(P, {}) : (0, r.jsx)(w, {
+    children: [v.length >= a ? (0, r.jsx)(P, {}) : (0, r.jsx)(w, {
       dropping: h,
       fileInputRef: o,
       minValues: n,

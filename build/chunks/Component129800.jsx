@@ -48,7 +48,7 @@ function k(e) {
     sectionName: c
   } = e, d = i.useCallback(() => {
     let e = O.A.entrypoint();
-    y.k(A.Se.COMMAND), (0, E.Mv)({
+    b.k(v.Se.COMMAND), (0, E.Mv)({
       command: s,
       location: m.Oh.APP_LAUNCHER_APPLICATION_VIEW,
       sectionName: c
@@ -60,7 +60,7 @@ function k(e) {
       sectionName: c,
       source: e,
       commandOrigin: m.iw.APPLICATION_LAUNCHER
-    }), b._.dispatch(R.jej.FOCUS_CHANNEL_TEXT_AREA, {
+    }), y._.dispatch(R.jej.FOCUS_CHANNEL_TEXT_AREA, {
       channelId: a.channel.id
     }))
   }, [a, s, l, c]), f = (null != (t = null == (n = s.options) ? true : n.length) ? t : 0) > 0, _ = i.useMemo(() => (0, C.SD)(s.displayDescription, true), [s.displayDescription]), h = i.useMemo(() => (0, r.jsxs)("div", {
@@ -144,7 +144,7 @@ function G(e) {
     sectionName: a
   } = e;
   (0, _.A4)(true, true), (0, _.SD)(t, true, true);
-  let s = (0, v.e)(t),
+  let s = (0, A.e)(t),
     [o, c] = i.useState(false),
     d = i.useCallback(async e => {
       if ("channel" !== t.type) return;
@@ -169,7 +169,7 @@ function G(e) {
           context: s,
           sectionName: a,
           commandOrigin: m.iw.APP_LAUNCHER_APPLICATION_VIEW
-        }), y.k(A.Se.COMMAND))
+        }), b.k(v.Se.COMMAND))
       } finally {
         c(false)
       }
@@ -249,15 +249,15 @@ function F(e) {
     sortOrder: m,
     setSortOrder: g,
     commands: E,
-    canSort: b
-  } = (0, I.A)({
+    canSort: y
+  } = (0, S.A)({
     sectionId: a.id,
     commandsByActiveSection: u
   });
   i.useEffect(() => {
     c(a.id)
   }, [a.id, c]);
-  let y = (0, S.A)({
+  let b = (0, I.A)({
     context: n,
     commands: E,
     limit: L
@@ -269,7 +269,7 @@ function F(e) {
     children: [(0, r.jsx)(V, {
       context: n,
       section: _,
-      commands: y,
+      commands: b,
       headerName: P.intl.string(P.t.acSE0h),
       sectionName: s
     }), (0, r.jsx)(V, {
@@ -278,7 +278,7 @@ function F(e) {
       commands: p ? M : E,
       headerName: P.intl.string(P.t.DUU9L3),
       sectionName: s,
-      children: b && (0, r.jsx)(N.A, {
+      children: y && (0, r.jsx)(N.A, {
         sortOrder: m,
         onSortOptionClick: g
       })

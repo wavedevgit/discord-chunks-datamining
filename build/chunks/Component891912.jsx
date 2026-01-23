@@ -245,10 +245,10 @@ let ec = e => {
       disclosures: d,
       locale: _,
       id: m
-    } = e, b = a.id, A = i.useMemo(() => D.Ay.createFromServer(a), [a]), v = (0, p.Lt)(A.flags, Q.gfo.EMBEDDED), C = (0, h.bG)([W.A], () => {
+    } = e, y = a.id, v = i.useMemo(() => D.Ay.createFromServer(a), [a]), A = (0, p.Lt)(v.flags, Q.gfo.EMBEDDED), C = (0, h.bG)([W.A], () => {
       var e, t, n, r;
-      return null == (r = W.A.settings.applications) || null == (n = r.appSettings) || null == (t = n[b]) || null == (e = t.appDmSettings) ? true : e.allowMobilePush
-    }, [b]), x = I.v.useExperiment({
+      return null == (r = W.A.settings.applications) || null == (n = r.appSettings) || null == (t = n[y]) || null == (e = t.appDmSettings) ? true : e.allowMobilePush
+    }, [y]), x = S.v.useExperiment({
       location: "oauth2_authorize"
     }), j = a.bot, U = (0, h.bG)([L.A], () => L.A.getDMFromUserId(null == j ? true : j.id)), {
       appDMChannelMuteConfig: F,
@@ -393,21 +393,21 @@ let ec = e => {
             })
           })]
         }), (0, r.jsx)(X.A, {
-          appRecord: A,
+          appRecord: v,
           selectedGuildId: l,
           selectedChannelId: o
         })]
       })
     }, e_ = e => {
       Y.wc.updateAsync("applications", t => {
-        b in t.appSettings ? null == t.appSettings[b].appDmSettings ? t.appSettings[b].appDmSettings = g.Po.create({
+        y in t.appSettings ? null == t.appSettings[y].appDmSettings ? t.appSettings[y].appDmSettings = g.Po.create({
           allowMobilePush: e
-        }) : t.appSettings[b].appDmSettings.allowMobilePush = e : t.appSettings[b] = g._o.create({
+        }) : t.appSettings[y].appDmSettings.allowMobilePush = e : t.appSettings[y] = g._o.create({
           appDmSettings: g.Po.create({
             allowMobilePush: e
           })
         })
-      }, Y.Sb.INFREQUENT_USER_ACTION), S.Ay.trackWithMetadata(Q.HAw.NOTIFICATION_SETTINGS_UPDATED, {
+      }, Y.Sb.INFREQUENT_USER_ACTION), I.Ay.trackWithMetadata(Q.HAw.NOTIFICATION_SETTINGS_UPDATED, {
         update_type: $.Y.AUTHORIZED_APP_DM_PUSH_NOTIFICATION,
         application_id: a.id,
         label: e ? G.fd.Unmuted : G.fd.Muted
@@ -415,7 +415,7 @@ let ec = e => {
     }, eh = i.useCallback(async () => {
       u()(null != j, "dm channel mute setting requires having a bot user");
       let e = U;
-      null == e && (e = await y.A.ensurePrivateChannel(j.id)), B ? O.A.updateAppDMOverrideSettings(null, e, a.id, {
+      null == e && (e = await b.A.ensurePrivateChannel(j.id)), B ? O.A.updateAppDMOverrideSettings(null, e, a.id, {
         muted: false
       }, G.fd.Unmuted) : (0, E.mMO)(async () => {
         let {
@@ -447,7 +447,7 @@ let ec = e => {
           }) : true,
           checked: B,
           onChange: eh
-        }) : null, v && x.enabled ? (0, r.jsx)(E.dOG, {
+        }) : null, A && x.enabled ? (0, r.jsx)(E.dOG, {
           label: J.intl.string(J.t["Pkw//o"]),
           description: J.intl.string(J.t.hw1nKf),
           checked: C,
@@ -455,7 +455,7 @@ let ec = e => {
           onChange: e_
         }) : null]
       })]
-    }) : null, eg = (0, K.I)(a.id), eE = (0, N.A)(a), eb = () => (0, r.jsxs)("div", {
+    }) : null, eg = (0, K.I)(a.id), eE = (0, N.A)(a), ey = () => (0, r.jsxs)("div", {
       className: ee.qr,
       children: [eE ? (0, r.jsx)(el, {
         className: ee.UW,
@@ -486,7 +486,7 @@ let ec = e => {
         component: ep(),
         children: (0, r.jsxs)("div", {
           className: ee.TD,
-          children: [ef(), es(), em(), eb()]
+          children: [ef(), es(), em(), ey()]
         })
       })
     })
@@ -501,14 +501,14 @@ let ec = e => {
     } = (0, h.cf)([x.default], () => ({
       fetchState: x.default.getFetchState(),
       appAuthTokens: x.default.getNewestTokensForNonChildrenApplications()
-    })), n = (0, h.bG)([F.default], () => F.default.locale), a = (0, h.bG)([A.Ay], () => A.Ay.getSelfEmbeddedActivities()), s = (0, h.bG)([L.A, j.A], () => L.A.getChannel(j.A.getChannelId())), o = null == s ? true : s.getGuildId(), c = e => {
+    })), n = (0, h.bG)([F.default], () => F.default.locale), a = (0, h.bG)([v.Ay], () => v.Ay.getSelfEmbeddedActivities()), s = (0, h.bG)([L.A, j.A], () => L.A.getChannel(j.A.getChannelId())), o = null == s ? true : s.getGuildId(), c = e => {
       let {
         id: t,
         application: n
       } = e;
-      b.A.delete(t);
+      y.A.delete(t);
       let r = a.get(n.id);
-      null != r && v.A.leaveActivity({
+      null != r && A.A.leaveActivity({
         location: r.location,
         applicationId: n.id,
         showFeedback: false
@@ -537,7 +537,7 @@ let ec = e => {
     }), g = i.useMemo(() => {
       let e = u.trim().toLowerCase();
       return "" === e || null == t ? t : t.length < 100 ? t.filter(t => l()(e, t.application.name.toLowerCase())) : t.filter(t => t.application.name.toLowerCase().includes(e))
-    }, [t, u]), y = () => null == t || null == g || e !== x.FetchState.FETCHED ? (0, r.jsx)(E.y$y, {
+    }, [t, u]), b = () => null == t || null == g || e !== x.FetchState.FETCHED ? (0, r.jsx)(E.y$y, {
       className: en.QX,
       type: E.y$y.Type.SPINNING_CIRCLE
     }) : 0 === t.length ? m(J.intl.string(J.t.CpPv5l), J.intl.string(J.t["E+SM6T"])) : 0 === g.length ? (0, r.jsxs)(r.Fragment, {
@@ -562,11 +562,11 @@ let ec = e => {
           children: J.intl.string(J.t.Nu5Yi0)
         })]
       }),
-      children: y()
+      children: b()
     })
   },
   eh = () => (i.useEffect(() => {
-    b.A.fetch()
+    y.A.fetch()
   }, []), i.useEffect(() => () => {
     ep.setState({
       searchQuery: ""

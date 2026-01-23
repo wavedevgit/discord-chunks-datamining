@@ -2,8 +2,8 @@
 /** chunk id: 447696, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Fy: () => s,
-  Vv: () => c,
-  Xx: () => u,
+  Vv: () => u,
+  Xx: () => c,
   i4: () => E,
   oZ: () => o,
   ry: () => i
@@ -43,11 +43,11 @@ let i = function(e) {
     r.h.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_RESET"
     })
-  }, c = () => {
+  }, u = () => {
     r.h.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_CLEAR"
     })
-  }, u = e => {
+  }, c = e => {
     r.h.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_UPDATE",
       settings: e

@@ -61,23 +61,23 @@ function m(e) {
     author: d,
     mentions: _,
     type: m
-  } = n, g = (0, o.Ay)(n), E = n.getChannelId(), b = (0, a.bG)([u.default], () => u.default.getUser(_[0]), [_]), y = (0, o.m2)(d, i), O = (0, l.P)({
+  } = n, g = (0, o.Ay)(n), E = n.getChannelId(), y = (0, a.bG)([u.default], () => u.default.getUser(_[0]), [_]), b = (0, o.m2)(d, i), O = (0, l.P)({
     user: d,
     channelId: E,
     guildId: i.guild_id,
     messageId: n.id
-  })(y), A = (0, o.d8)(b, i), v = (0, l.P)({
-    user: b,
+  })(b), v = (0, o.d8)(y, i), A = (0, l.P)({
+    user: y,
     channelId: E,
     guildId: i.guild_id,
     messageId: n.id
-  })(A), S = null != (t = p[m]) ? t : null;
-  if (null == S) return null;
-  let I = f.intl.format(S(), {
+  })(v), I = null != (t = p[m]) ? t : null;
+  if (null == I) return null;
+  let S = f.intl.format(I(), {
     actorName: g.nick,
     actorHook: O,
-    targetName: null == A ? true : A.nick,
-    targetHook: v
+    targetName: null == v ? true : v.nick,
+    targetHook: A
   });
   return (0, r.jsx)(c.A, {
     iconNode: (0, r.jsx)(h, {
@@ -85,7 +85,7 @@ function m(e) {
     }),
     timestamp: n.timestamp,
     compact: s,
-    children: I
+    children: S
   })
 }
 
@@ -105,7 +105,7 @@ function g(e) {
     messageId: n.id
   })(m), E = null != (t = _[u]) ? t : null;
   if (null == E) return null;
-  let b = f.intl.format(E(), {
+  let y = f.intl.format(E(), {
     actorName: d.nick,
     actorHook: g
   });
@@ -115,7 +115,7 @@ function g(e) {
     }),
     timestamp: n.timestamp,
     compact: a,
-    children: b
+    children: y
   })
 }
 

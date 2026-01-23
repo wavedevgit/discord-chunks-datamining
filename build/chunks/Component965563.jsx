@@ -2,7 +2,7 @@
 /** chunk id: 965563, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./667532.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -55,26 +55,26 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = {
+let y = {
   label: () => p.intl.string(p.t["32u1Dx"]),
   value: Chunk612025.YG
 };
 
-function y() {
+function b() {
   let {
     selectedGuildId: e,
     setSelectedGuildId: t
   } = (0, d.xk)(), n = (0, a.bG)([c.Ay], () => c.Ay.getFlattenedGuildIds()), p = (0, a.bG)([l.A], () => l.A.getGuilds()), {
     hideGuildOptions: h,
     hideGlobalOption: g
-  } = (0, f.Z)(), y = n[0];
+  } = (0, f.Z)(), b = n[0];
   i.useEffect(() => {
-    g && h || (e === d.YG && e !== y && g && t(y), e !== d.YG && h && t(d.YG))
-  }, [e, t, g, h, y]);
+    g && h || (e === d.YG && e !== b && g && t(b), e !== d.YG && h && t(d.YG))
+  }, [e, t, g, h, b]);
   let O = e => {
       t(e)
     },
-    A = i.useMemo(() => {
+    v = i.useMemo(() => {
       let e = h ? [] : n.map(e => {
         let t = p[e];
         return null == t ? null : {
@@ -89,9 +89,9 @@ function y() {
           })
         }
       }).filter(u.Vq);
-      return g || e.unshift(E(m({}, b), {
-        id: b.value,
-        label: b.label(),
+      return g || e.unshift(E(m({}, y), {
+        id: y.value,
+        label: y.label(),
         leading: (0, r.jsx)("div", {
           className: _.KP,
           children: (0, r.jsx)(s.pVd, {
@@ -107,6 +107,6 @@ function y() {
     selectionMode: "single",
     onSelectionChange: O,
     value: e,
-    options: A
+    options: v
   })
 }

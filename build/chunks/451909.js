@@ -293,7 +293,7 @@ let H = Chunk542664.A.RULES,
           let e = "";
           if ((null == a ? true : a.id) != null) {
             let t = l.toLowerCase();
-            e = i().some(A.A.getUnsafeMutableRoles(a.id), e => t.startsWith(e.name.toLowerCase())) ? "#".concat("".concat(o.discriminator).padStart(4, "0")) : ""
+            e = i().some(v.A.getUnsafeMutableRoles(a.id), e => t.startsWith(e.name.toLowerCase())) ? "#".concat("".concat(o.discriminator).padStart(4, "0")) : ""
           }
           return {
             content: "@".concat(l).concat(e)
@@ -308,7 +308,7 @@ let H = Chunk542664.A.RULES,
           guild: r
         } = n;
         if (null != r) {
-          let t = A.A.getRole(r.id, e[1]);
+          let t = v.A.getRole(r.id, e[1]);
           if (null != t) return {
             content: "@".concat(t.name)
           }
@@ -330,7 +330,7 @@ let H = Chunk542664.A.RULES,
           }, {
             autoTrackExposure: true
           }).enabled) {
-          let t = b.A.getDetectableGame(e[1]);
+          let t = y.A.getDetectableGame(e[1]);
           return null != t ? {
             content: "@".concat(t.name)
           } : {
@@ -347,7 +347,7 @@ let H = Chunk542664.A.RULES,
       parse(e) {
         let t = E.A.getChannel(e[1]);
         return {
-          content: null == t ? e[0] : (0, l.m1)(t, C.default, I.A, true, true)
+          content: null == t ? e[0] : (0, l.m1)(t, C.default, S.A, true, true)
         }
       }
     },
@@ -460,8 +460,8 @@ function ei(e, t, n) {
 
 function ea(e) {
   let t, n = null == e ? true : e.getGuildId(),
-    r = null != n ? v.A.getGuild(n) : null,
-    a = S.A.can(D.xBc.MENTION_EVERYONE, e);
+    r = null != n ? A.A.getGuild(n) : null,
+    a = I.A.can(D.xBc.MENTION_EVERYONE, e);
   t = (null == e ? true : e.isPrivate()) ? e.recipients.map(e => ({
     userId: e,
     nick: null
@@ -484,7 +484,7 @@ function ea(e) {
         text: r.tag
       }), e
     }, [])),
-    o = i()(null != r ? A.A.getSortedRoles(r.id) : []).filter(e => {
+    o = i()(null != r ? v.A.getSortedRoles(r.id) : []).filter(e => {
       let {
         mentionable: t
       } = e;
@@ -499,7 +499,7 @@ function ea(e) {
         text: n
       }
     }),
-    l = i()(y.Ay.getTextChannelNameDisambiguations(n)).map(e => {
+    l = i()(b.Ay.getTextChannelNameDisambiguations(n)).map(e => {
       let {
         id: t,
         name: n
@@ -509,7 +509,7 @@ function ea(e) {
         text: n
       }
     }),
-    u = null != n ? i()(N.L3).filter(e => e !== y.I6).flatMap(e => y.Ay.getChannels(n)[e].map(e => ({
+    u = null != n ? i()(N.L3).filter(e => e !== b.I6).flatMap(e => b.Ay.getChannels(n)[e].map(e => ({
       id: e.channel.id,
       text: e.channel.name
     }))).value() : [],
@@ -543,7 +543,7 @@ function es(e) {
 function eo(e, t, n) {
   let r = E.A.getChannel(t),
     a = null != r ? r.getGuildId() : null,
-    o = null != a ? v.A.getGuild(a) : null,
+    o = null != a ? A.A.getGuild(a) : null,
     l = n ? J : i().omit(J, ["spoiler", "timestamp"]),
     c = n ? es : u.Ay.translateSurrogatesToInlineEmoji,
     d = s().parserFor(l),

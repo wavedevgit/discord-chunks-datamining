@@ -22,10 +22,10 @@ function g(e) {
   } = e, g = (0, a.bG)([s.Ay], () => s.Ay.getGuildSidebarState(n), [n]), {
     messagesCount: A,
     linksCount: T,
-    mediaCount: f
-  } = (0, c.u5)(t, n), h = new Intl.NumberFormat(d.intl.currentLocale).format(A), I = new Intl.NumberFormat(d.intl.currentLocale).format(T), O = new Intl.NumberFormat(d.intl.currentLocale).format(f), N = r.useCallback(async e => {
+    mediaCount: h
+  } = (0, u.u5)(t, n), I = new Intl.NumberFormat(d.intl.currentLocale).format(A), O = new Intl.NumberFormat(d.intl.currentLocale).format(T), m = new Intl.NumberFormat(d.intl.currentLocale).format(h), N = r.useCallback(async e => {
     if (null == g) return;
-    let l = (0, c.ry)(t, e, {
+    let l = (0, u.ry)(t, e, {
       include_nsfw: true
     });
     await (0, o.z)(n, t, g.baseChannelId, {
@@ -35,40 +35,20 @@ function g(e) {
   }, [n, g, t]);
   return (0, l.jsx)(i.D0$, {
     label: d.intl.string(d.t.vCn2Tn),
-    children: (0, l.jsxs)(u.SQ, {
-      children: [(0, l.jsx)(u.RU, {
+    children: (0, l.jsxs)(c.SQ, {
+      children: [(0, l.jsx)(c.RU, {
         icon: (0, l.jsx)(i.oyn, {
           size: "custom",
           color: "currentColor",
-          width: u.mb,
-          height: u.mb
+          width: c.mb,
+          height: c.mb
         }),
         name: (0, l.jsx)(i.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
           children: d.intl.string(d.t.OIgYlQ)
         }),
-        description: A === c.zu ? (0, l.jsx)(i.y$y, {
-          type: i.tVU.SPINNING_CIRCLE,
-          className: _.S
-        }) : (0, l.jsx)(i.Text, {
-          variant: "text-sm/semibold",
-          color: "interactive-text-default",
-          children: h
-        }),
-        onNavigate: A > 0 ? () => N(c.SA.MESSAGES) : true
-      }), (0, l.jsx)(u.RU, {
-        icon: (0, l.jsx)(i.qYV, {
-          size: "custom",
-          width: u.mb,
-          height: u.mb
-        }),
-        name: (0, l.jsx)(i.Text, {
-          variant: "text-sm/semibold",
-          color: "text-default",
-          children: d.intl.string(d.t.DFSvTt)
-        }),
-        description: T === c.zu ? (0, l.jsx)(i.y$y, {
+        description: A === u.zu ? (0, l.jsx)(i.y$y, {
           type: i.tVU.SPINNING_CIRCLE,
           className: _.S
         }) : (0, l.jsx)(i.Text, {
@@ -76,19 +56,19 @@ function g(e) {
           color: "interactive-text-default",
           children: I
         }),
-        onNavigate: T > 0 ? () => N(c.SA.LINKS) : true
-      }), (0, l.jsx)(u.RU, {
-        icon: (0, l.jsx)(i.sYc, {
+        onNavigate: A > 0 ? () => N(u.SA.MESSAGES) : true
+      }), (0, l.jsx)(c.RU, {
+        icon: (0, l.jsx)(i.qYV, {
           size: "custom",
-          width: u.mb,
-          height: u.mb
+          width: c.mb,
+          height: c.mb
         }),
         name: (0, l.jsx)(i.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: d.intl.string(d.t["Aw9+/M"])
+          children: d.intl.string(d.t.DFSvTt)
         }),
-        description: f === c.zu ? (0, l.jsx)(i.y$y, {
+        description: T === u.zu ? (0, l.jsx)(i.y$y, {
           type: i.tVU.SPINNING_CIRCLE,
           className: _.S
         }) : (0, l.jsx)(i.Text, {
@@ -96,7 +76,27 @@ function g(e) {
           color: "interactive-text-default",
           children: O
         }),
-        onNavigate: f > 0 ? () => N(c.SA.MEDIA) : true
+        onNavigate: T > 0 ? () => N(u.SA.LINKS) : true
+      }), (0, l.jsx)(c.RU, {
+        icon: (0, l.jsx)(i.sYc, {
+          size: "custom",
+          width: c.mb,
+          height: c.mb
+        }),
+        name: (0, l.jsx)(i.Text, {
+          variant: "text-sm/semibold",
+          color: "text-default",
+          children: d.intl.string(d.t["Aw9+/M"])
+        }),
+        description: h === u.zu ? (0, l.jsx)(i.y$y, {
+          type: i.tVU.SPINNING_CIRCLE,
+          className: _.S
+        }) : (0, l.jsx)(i.Text, {
+          variant: "text-sm/semibold",
+          color: "interactive-text-default",
+          children: m
+        }),
+        onNavigate: h > 0 ? () => N(u.SA.MEDIA) : true
       })]
     })
   })

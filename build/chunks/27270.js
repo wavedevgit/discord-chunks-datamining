@@ -26,16 +26,16 @@ function h(e, t, n) {
   } = e, m = (0, p.o)(_(i.A), "@react-aria/tag"), g = (0, a.Bi)(), {
     onRemove: E
   } = r.O.get(t) || {}, {
-    rowProps: b,
-    gridCellProps: y,
+    rowProps: y,
+    gridCellProps: b,
     ...O
   } = (0, f.n)({
     node: h
   }, t, n), {
-    descriptionProps: A,
-    ...v
-  } = O, S = t.disabledKeys.has(h.key) || h.props.isDisabled, I = e => {
-    ("Delete" === e.key || "Backspace" === e.key) && (S || (e.preventDefault(), t.selectionManager.isSelected(h.key) ? null == E || E(new Set(t.selectionManager.selectedKeys)) : null == E || E(new Set([h.key]))))
+    descriptionProps: v,
+    ...A
+  } = O, I = t.disabledKeys.has(h.key) || h.props.isDisabled, S = e => {
+    ("Delete" === e.key || "Backspace" === e.key) && (I || (e.preventDefault(), t.selectionManager.isSelected(h.key) ? null == E || E(new Set(t.selectionManager.selectedKeys)) : null == E || E(new Set([h.key]))))
   }, T = (0, u.lb)();
   "virtual" === T && "u" > typeof window && "ontouchstart" in window && (T = "pointer");
   let C = E && ("keyboard" === T || "virtual" === T) ? m.format("removeDescription") : "",
@@ -43,32 +43,32 @@ function h(e, t, n) {
     R = h.key === t.selectionManager.focusedKey,
     w = null != t.selectionManager.focusedKey,
     P = false;
-  S || !R && w || (P = 0);
+  I || !R && w || (P = 0);
   let D = (0, o.$)(h.props),
     x = (0, l.HI)(h.props),
     {
       focusableProps: L
     } = (0, d.Wc)({
-      isDisabled: S
+      isDisabled: I
     }, n);
   return {
     removeButtonProps: {
       "aria-label": m.format("removeButtonLabel"),
-      "aria-labelledby": `${g} ${b.id}`,
-      isDisabled: S,
+      "aria-labelledby": `${g} ${y.id}`,
+      isDisabled: I,
       id: g,
       onPress: () => E ? E(new Set([h.key])) : null
     },
-    rowProps: (0, c.v)(L, b, D, x, {
+    rowProps: (0, c.v)(L, y, D, x, {
       tabIndex: P,
-      onKeyDown: E ? I : true,
+      onKeyDown: E ? S : true,
       "aria-describedby": N["aria-describedby"]
     }),
-    gridCellProps: (0, c.v)(y, {
+    gridCellProps: (0, c.v)(b, {
       "aria-errormessage": e["aria-errormessage"],
       "aria-label": e["aria-label"]
     }),
-    ...v,
+    ...A,
     allowsRemoving: !!E
   }
 }

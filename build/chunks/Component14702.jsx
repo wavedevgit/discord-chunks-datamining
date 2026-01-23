@@ -24,20 +24,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk180171 = require("./180171.js"),
   Chunk989099 = require("./989099.js"),
   Chunk191761 = require("./191761.js");
-let v = e => {
+let A = e => {
     let {
       avatarDecoration: t,
       avatarSize: n
-    } = e, i = (0, c.Ay)(), a = (0, o.qB)(i) ? O : y;
+    } = e, i = (0, c.Ay)(), a = (0, o.qB)(i) ? O : b;
     return (0, r.jsx)(E.i, {
       item: t,
       avatarSize: n,
       isHighlighted: false,
       avatarPlaceholderSrc: a,
-      className: b.M
+      className: y.M
     })
   },
-  S = e => {
+  I = e => {
     var t;
     let {
       profileEffect: n,
@@ -48,25 +48,25 @@ let v = e => {
       title: c
     } = null != (t = null == s ? true : s.config) ? t : {}, u = i.useMemo(() => (0, h.Rc)(l), [l]);
     return null == s ? a : (0, r.jsxs)("div", {
-      className: b.YS,
+      className: y.YS,
       children: [(0, r.jsx)("img", {
-        src: A,
+        src: v,
         alt: o,
-        className: b.Zp
+        className: y.Zp
       }), (0, r.jsx)("img", {
-        className: b.Hm,
+        className: y.Hm,
         src: u,
         alt: c
       })]
     })
   },
-  I = e => {
+  S = e => {
     let {
       nameplate: t,
       fallbackLabel: n
     } = e, [a, s] = i.useState(false), o = i.useCallback(() => s(true), []), l = i.useCallback(() => s(false), []);
     return null == t ? n : (0, r.jsx)("div", {
-      className: b.rz,
+      className: y.rz,
       onMouseEnter: o,
       onMouseLeave: l,
       children: (0, r.jsx)(d.A, {
@@ -86,22 +86,22 @@ let v = e => {
       firstNameplate: s
     } = (0, _.f5)(t);
     return null == i && null == a && null == s ? n : (0, r.jsxs)("div", {
-      className: b.WJ,
+      className: y.WJ,
       children: [null != a && (0, r.jsx)("div", {
-        className: b.zh,
-        children: (0, r.jsx)(S, {
+        className: y.zh,
+        children: (0, r.jsx)(I, {
           profileEffect: a,
           fallbackLabel: null
         })
       }), null != s && (0, r.jsx)("div", {
-        className: b.sY,
-        children: (0, r.jsx)(I, {
+        className: y.sY,
+        children: (0, r.jsx)(S, {
           nameplate: s,
           fallbackLabel: null
         })
       }), null != i && (0, r.jsx)("div", {
-        className: b.kf,
-        children: (0, r.jsx)(v, {
+        className: y.kf,
+        children: (0, r.jsx)(A, {
           avatarDecoration: i,
           avatarSize: l._3J.SIZE_24
         })
@@ -122,14 +122,14 @@ let v = e => {
     let [f] = null != (t = null == d ? true : d.items) ? t : [];
     return true !== c && c in g.m ? g.m[c].render({
       animationState: "on_hover",
-      className: b.Vr
-    }) : (null == f ? true : f.type) === a.R.AVATAR_DECORATION ? (0, r.jsx)(v, {
+      className: y.Vr
+    }) : (null == f ? true : f.type) === a.R.AVATAR_DECORATION ? (0, r.jsx)(A, {
       avatarDecoration: f,
       avatarSize: l._3J.SIZE_40
-    }) : (null == f ? true : f.type) === a.R.PROFILE_EFFECT ? (0, r.jsx)(S, {
+    }) : (null == f ? true : f.type) === a.R.PROFILE_EFFECT ? (0, r.jsx)(I, {
       profileEffect: f,
       fallbackLabel: o
-    }) : (null == f ? true : f.type) === a.R.NAMEPLATE ? (0, r.jsx)(I, {
+    }) : (null == f ? true : f.type) === a.R.NAMEPLATE ? (0, r.jsx)(S, {
       nameplate: f,
       fallbackLabel: o
     }) : o

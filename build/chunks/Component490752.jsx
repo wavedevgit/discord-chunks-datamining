@@ -2,7 +2,7 @@
 /** chunk id: 490752, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -29,7 +29,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,71 +42,71 @@ function b(e) {
   return e
 }
 
-function y(e) {
+function b(e) {
   let {
     user: t,
     guildId: n,
     viewProfileItem: E
-  } = e, y = i.useRef(null), {
+  } = e, b = i.useRef(null), {
     trackUserProfileAction: O
   } = (0, _.NJ)(), {
-    analyticsLocations: A,
-    newestAnalyticsLocation: v
-  } = (0, l.Ay)(o.A.USER_PROFILE_OVERFLOW_MENU), S = (0, a.bG)([h.A], () => h.A.getUserProfile(t.id)), I = null == S ? true : S.application, T = (0, f.A)({
+    analyticsLocations: v,
+    newestAnalyticsLocation: A
+  } = (0, l.Ay)(o.A.USER_PROFILE_OVERFLOW_MENU), I = (0, a.bG)([h.A], () => h.A.getUserProfile(t.id)), S = null == I ? true : I.application, T = (0, f.A)({
     user: t,
     guildId: n,
-    location: v,
+    location: A,
     color: "danger",
     onBlock: () => O({
       action: "BLOCK",
-      analyticsLocations: A
+      analyticsLocations: v
     }),
     onUnblock: () => O({
       action: "UNBLOCK",
-      analyticsLocations: A
+      analyticsLocations: v
     })
   }), C = (0, p.A)({
     user: t,
     guildId: n,
-    location: v,
+    location: A,
     onIgnore: () => O({
       action: "IGNORE",
-      analyticsLocations: A
+      analyticsLocations: v
     }),
     onUnignore: () => O({
       action: "UNIGNORE",
-      analyticsLocations: A
+      analyticsLocations: v
     })
   }), N = (0, u.A)({
-    applicationId: null == I ? true : I.id,
+    applicationId: null == S ? true : S.id,
     user: t,
     guildId: n,
     onSubmit: () => O({
       action: "REPORT",
-      analyticsLocations: A
+      analyticsLocations: v
     }),
     color: "danger"
   }), R = (0, d.A)({
-    id: null == I ? true : I.id,
+    id: null == S ? true : S.id,
     label: g.intl.string(g.t["+NP/b2"]),
     onSuccess: () => O({
       action: "COPY_APP_ID",
-      analyticsLocations: A
+      analyticsLocations: v
     })
   }), w = [
     [E],
     [C, T, N],
     [(0, c.A)({
-      application: I,
+      application: S,
       label: g.intl.string(g.t.WqhZss),
       onSuccess: () => O({
         action: "COPY_APP_LINK",
-        analyticsLocations: A
+        analyticsLocations: v
       })
     }), R]
   ];
   return w.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(s.YNO, {
-    targetElementRef: y,
+    targetElementRef: b,
     renderPopout: e => {
       let {
         closePopout: t
@@ -121,8 +121,8 @@ function y(e) {
         }, t))
       })
     },
-    children: e => (0, r.jsx)(m.br, b({
-      buttonRef: y,
+    children: e => (0, r.jsx)(m.br, y({
+      buttonRef: b,
       action: "PRESS_OPTIONS",
       icon: s.jNK,
       tooltipText: g.intl.string(g.t["UKOtz+"])

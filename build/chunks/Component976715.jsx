@@ -17,18 +17,18 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk119619 = require("./119619.js");
 
-function p(e) {
+function f(e) {
   var t;
   if (null == (null != (t = e.dmsDisabledUntil) ? t : e.invitesDisabledUntil)) return "";
   let n = null != e.dmsDisabledUntil,
     r = null != e.invitesDisabledUntil;
   switch (true) {
     case n && r:
-      return b.intl.string(b.t.CEygF8);
+      return p.intl.string(p.t.CEygF8);
     case n:
-      return b.intl.string(b.t.Wmbjcz);
+      return p.intl.string(p.t.Wmbjcz);
     case r:
-      return b.intl.string(b.t.Q1QrAi);
+      return p.intl.string(p.t.Q1QrAi);
     default:
       return ""
   }
@@ -42,40 +42,40 @@ function j(e) {
     incidentData: o
   } = e, s = null != (t = o.raidDetectedAt) ? t : o.dmSpamDetectedAt;
   return (0, r.jsxs)("div", {
-    className: m.hD,
+    className: b.hD,
     children: [(0, r.jsxs)("div", {
-      className: m.iD,
+      className: b.iD,
       children: [(0, r.jsx)(a.lmn, {
         size: "md",
-        className: m.F_,
+        className: b.F_,
         color: i.A.unsafe_rawColors.RED_345.css
       }), (0, r.jsxs)("div", {
-        className: m.Tm,
+        className: b.Tm,
         children: [(0, r.jsx)(a.Heading, {
-          className: m.R_,
+          className: b.R_,
           variant: "heading-lg/semibold",
           color: "text-feedback-critical",
-          children: (0, d.Qm)(o) ? b.intl.string(b.t.raRxxT) : b.intl.string(b.t["4nbAta"])
+          children: (0, u.Qm)(o) ? p.intl.string(p.t.raRxxT) : p.intl.string(p.t["4nbAta"])
         }), (0, r.jsx)(a.Text, {
-          className: m.Ng,
+          className: b.Ng,
           variant: "text-sm/medium",
-          children: b.intl.format(b.t["4QIIZl"], {
-            dateTime: new Date(null != s ? s : "").toLocaleString(b.intl.currentLocale, d.yc)
+          children: p.intl.format(p.t["4QIIZl"], {
+            dateTime: new Date(null != s ? s : "").toLocaleString(p.intl.currentLocale, u.yc)
           })
         })]
       })]
     }), (0, r.jsxs)("div", {
-      className: m.UD,
+      className: b.UD,
       children: [(0, r.jsx)(a.Button, {
         variant: "secondary",
         onClick: l,
-        text: b.intl.string(b.t.ISiXba),
+        text: p.intl.string(p.t.ISiXba),
         size: "sm"
       }), (0, r.jsx)(a.Button, {
         variant: "critical-primary",
         onClick: n,
         size: "sm",
-        text: b.intl.string(b.t.UgXhdn)
+        text: p.intl.string(p.t.UgXhdn)
       })]
     })]
   })
@@ -88,30 +88,30 @@ function g(e) {
     guildName: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: m.hD,
+    className: b.hD,
     children: [(0, r.jsxs)("div", {
-      className: m.iD,
+      className: b.iD,
       children: [(0, r.jsx)(a.lmn, {
         size: "md",
-        className: m.F_,
+        className: b.F_,
         color: i.A.unsafe_rawColors.BRAND_360.css
       }), (0, r.jsxs)("div", {
-        className: m.Tm,
+        className: b.Tm,
         children: [(0, r.jsx)(a.Heading, {
-          className: m.R_,
+          className: b.R_,
           variant: "heading-lg/semibold",
           color: "text-brand",
-          children: p(n)
+          children: f(n)
         }), (0, r.jsx)(a.Text, {
-          className: m.Ng,
+          className: b.Ng,
           variant: "text-sm/medium",
-          children: (0, d.ql)(n, l)
+          children: (0, u.ql)(n, l)
         })]
       })]
     }), (0, r.jsx)(a.Button, {
       color: o.$n.Colors.BRAND,
       onClick: t,
-      text: b.intl.string(b.t.e1bMNf),
+      text: p.intl.string(p.t.e1bMNf),
       size: "sm"
     })]
   })
@@ -125,36 +125,36 @@ function h(e) {
     guildName: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: m.hD,
+    className: b.hD,
     children: [(0, r.jsxs)("div", {
-      className: m.iD,
+      className: b.iD,
       children: [(0, r.jsx)(a.lmn, {
         size: "md",
-        className: m.F_,
+        className: b.F_,
         color: i.A.unsafe_rawColors.BRAND_360.css
       }), (0, r.jsxs)("div", {
-        className: m.Tm,
+        className: b.Tm,
         children: [(0, r.jsx)(a.Heading, {
-          className: m.R_,
+          className: b.R_,
           variant: "heading-lg/semibold",
           color: "text-brand",
-          children: p(l)
+          children: f(l)
         }), (0, r.jsx)(a.Text, {
-          className: m.Ng,
+          className: b.Ng,
           variant: "text-sm/medium",
-          children: (0, d.ql)(l, o)
+          children: (0, u.ql)(l, o)
         })]
       })]
     }), (0, r.jsxs)("div", {
-      className: m.UD,
+      className: b.UD,
       children: [(0, r.jsx)(a.Button, {
         onClick: n,
-        text: b.intl.string(b.t.ISiXba),
+        text: p.intl.string(p.t.ISiXba),
         variant: "secondary",
         size: "sm"
       }), (0, r.jsx)(a.Button, {
         onClick: t,
-        text: b.intl.string(b.t.e1bMNf),
+        text: p.intl.string(p.t.e1bMNf),
         size: "sm"
       })]
     })]
@@ -167,16 +167,16 @@ function x(e) {
     incidentData: n,
     isUnderLockdown: i,
     isRaidDetected: o
-  } = e, b = l.useCallback(() => {
+  } = e, p = l.useCallback(() => {
     (0, a.mMO)(async () => {
       let e = {
         source: c.Eo.MEMBER_SAFETY_PAGE,
         location: s.A.MEMBER_SAFETY_PAGE,
-        alertType: (0, d.$5)(n)
+        alertType: (0, u.$5)(n)
       };
       return n => {
         var l, i;
-        return (0, r.jsx)(u.default, (l = function(e) {
+        return (0, r.jsx)(d.default, (l = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -208,10 +208,10 @@ function x(e) {
         }), l))
       }
     })
-  }, [t.id, n]), m = l.useCallback(() => {
-    let e = f.A.getLastIncidentAlertMessage(t.id);
+  }, [t.id, n]), b = l.useCallback(() => {
+    let e = m.A.getLastIncidentAlertMessage(t.id);
     (0, C.is)(e, t.id)
-  }, [t.id]), p = (() => {
+  }, [t.id]), f = (() => {
     switch (true) {
       case o && i:
         return 3;
@@ -224,23 +224,23 @@ function x(e) {
     }
   })();
   if (null == t || null == n) return null;
-  switch (p) {
+  switch (f) {
     case 1:
       return (0, r.jsx)(j, {
-        onHandleEnableLockdown: b,
-        onHandleReportFalseAlarm: m,
+        onHandleEnableLockdown: p,
+        onHandleReportFalseAlarm: b,
         incidentData: n
       });
     case 2:
       return (0, r.jsx)(g, {
-        onHandleEnableLockdown: b,
+        onHandleEnableLockdown: p,
         incidentData: n,
         guildName: t.name
       });
     case 3:
       return (0, r.jsx)(h, {
-        onHandleEnableLockdown: b,
-        onHandleReportFalseAlarm: m,
+        onHandleEnableLockdown: p,
+        onHandleReportFalseAlarm: b,
         incidentData: n,
         guildName: t.name
       });

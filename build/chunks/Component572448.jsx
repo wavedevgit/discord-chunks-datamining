@@ -53,7 +53,7 @@ function w(e) {
       }),
       onClick: function() {
         var e;
-        null != t && null != n && (n(t), (0, b.zV)(I.HAw.INBOX_CHANNEL_COLLAPSED, {
+        null != t && null != n && (n(t), (0, g.zV)(I.HAw.INBOX_CHANNEL_COLLAPSED, {
           channel_id: t.channelId,
           guild_id: t.guildId,
           num_unread_channels_remaining: null != (e = null == l ? true : l()) ? e : 0,
@@ -72,14 +72,14 @@ function R(e) {
   var t, n;
   let {
     channel: l,
-    children: s,
+    children: a,
     gotoChannel: o,
     mentionCount: c,
     channelState: d,
-    toggleCollapsed: f,
-    showCollapseButton: p = false,
-    getNumUnreadChannels: h
-  } = e, b = (0, a.rm)("recents-header-".concat(l.id, "-").concat((0, y.GV)())), g = p && !l.isNSFW() && null != d && "nsfw" !== d.type;
+    toggleCollapsed: p,
+    showCollapseButton: h = false,
+    getNumUnreadChannels: f
+  } = e, g = (0, s.rm)("recents-header-".concat(l.id, "-").concat((0, y.GV)())), m = h && !l.isNSFW() && null != d && "nsfw" !== d.type;
   return (0, r.jsx)(u.vN3, {
     offset: P,
     children: (0, r.jsxs)("div", (t = function(e) {
@@ -101,26 +101,26 @@ function R(e) {
       return e
     }({
       className: i()(T.ZO, {
-        [T.b4]: g
+        [T.b4]: m
       })
-    }, b), n = n = {
+    }, g), n = n = {
       tabIndex: 0,
       "data-recents-channel": l.id,
       onKeyDown: function(e) {
-        null != f && null != d && ("ArrowRight" === e.key && d.collapsed || "ArrowLeft" === e.key && !d.collapsed) && (null == f || f(d))
+        null != p && null != d && ("ArrowRight" === e.key && d.collapsed || "ArrowLeft" === e.key && !d.collapsed) && (null == p || p(d))
       },
-      children: [g && null != d ? (0, r.jsx)(w, {
+      children: [m && null != d ? (0, r.jsx)(w, {
         channelState: d,
-        toggle: f,
-        getNumUnreadChannels: h
+        toggle: p,
+        getNumUnreadChannels: f
       }) : null, (0, r.jsx)(D, {
         channel: l,
         gotoChannel: o
-      }), (0, r.jsx)(G, {
+      }), (0, r.jsx)(k, {
         channel: l,
         gotoChannel: o,
         mentionCount: c
-      }), s]
+      }), a]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -152,7 +152,7 @@ function M(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, l = (0, s.bG)([C.default], () => t.isDM() ? C.default.getUser(t.getRecipientId()) : null), i = null == l ? (0, g.Y)(t) : l.getAvatarURL(true, 40);
+  } = e, l = (0, a.bG)([C.default], () => t.isDM() ? C.default.getUser(t.getRecipientId()) : null), i = null == l ? (0, m.Y)(t) : l.getAvatarURL(true, 40);
   return (0, r.jsx)(u.DUT, {
     onClick: n,
     tabIndex: false,
@@ -169,31 +169,31 @@ function L(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, l = (0, s.bG)([x.A], () => x.A.getGuild(t.guild_id));
-  return null == l ? null : (0, r.jsx)(O.A, {
+  } = e, l = (0, a.bG)([v.A], () => v.A.getGuild(t.guild_id));
+  return null == l ? null : (0, r.jsx)(_.A, {
     "aria-hidden": true,
     className: T.$f,
     guild: l,
-    size: O.A.Sizes.MEDIUM,
+    size: _.A.Sizes.MEDIUM,
     active: true,
     onClick: n,
     tabIndex: false
   })
 }
 
-function G(e) {
+function k(e) {
   let {
     channel: t,
     gotoChannel: n,
     mentionCount: l
-  } = e, a = (0, s.bG)([x.A], () => x.A.getGuild(t.guild_id)), c = (0, s.bG)([v.A], () => v.A.getChannel(t.parent_id)), d = (0, s.bG)([_.Ay], () => _.Ay.getIsMentionLowImportance(t.id)), f = (0, A.gU)(t, a), p = (0, m.Ay)(t, false), h = null == c ? null == a ? true : a.name : "".concat(null == a ? true : a.name, " › ").concat(c.name), b = t.isMultiUserDM() ? N.intl.formatToPlainString(N.t.CxSA5N, {
+  } = e, s = (0, a.bG)([v.A], () => v.A.getGuild(t.guild_id)), c = (0, a.bG)([j.A], () => j.A.getChannel(t.parent_id)), d = (0, a.bG)([E.Ay], () => E.Ay.getIsMentionLowImportance(t.id)), p = (0, A.gU)(t, s), h = (0, b.Ay)(t, false), f = null == c ? null == s ? true : s.name : "".concat(null == s ? true : s.name, " › ").concat(c.name), g = t.isMultiUserDM() ? N.intl.formatToPlainString(N.t.CxSA5N, {
     members: t.recipients.length + 1
-  }) : t.isPrivate() ? (0, r.jsx)(k, {
+  }) : t.isPrivate() ? (0, r.jsx)(G, {
     channel: t
   }) : (0, r.jsx)(u.DUT, {
     className: i()(T.W$, T.J5),
     onClick: n,
-    children: h
+    children: f
   });
   return (0, r.jsxs)("div", {
     className: T.yP,
@@ -203,7 +203,7 @@ function G(e) {
       children: (0, r.jsxs)(u.DUT, {
         className: T.HA,
         onClick: n,
-        children: [t.isThread() || t.isGroupDM() || null == f ? null : (0, r.jsx)(f, {
+        children: [t.isThread() || t.isGroupDM() || null == p ? null : (0, r.jsx)(p, {
           className: t.isForumLikeChannel() ? T.dj : true,
           width: 18,
           height: 18,
@@ -211,7 +211,7 @@ function G(e) {
           color: "currentColor"
         }), (0, r.jsx)("span", {
           className: T.je,
-          children: p
+          children: h
         }), null != l && l > 0 ? (0, r.jsx)("div", {
           className: T.qS,
           children: (0, r.jsx)(u.hVq, {
@@ -224,26 +224,26 @@ function G(e) {
       color: "text-default",
       variant: "text-xs/normal",
       className: T.PL,
-      children: b
+      children: g
     })]
   })
 }
 
-function k(e) {
+function G(e) {
   let {
     channel: t
   } = e, {
     user: n,
     status: l,
     activities: i,
-    applicationStream: a
-  } = (0, s.cf)([C.default, E.A, j.A], () => {
+    applicationStream: s
+  } = (0, a.cf)([C.default, x.A, O.A], () => {
     let e = C.default.getUser(t.getRecipientId());
     return {
       user: e,
-      status: null != e ? E.A.getStatus(e.id) : null,
-      activities: null != e ? E.A.getActivities(e.id) : null,
-      applicationStream: null != e ? j.A.getAnyStreamForUser(e.id) : null
+      status: null != e ? x.A.getStatus(e.id) : null,
+      activities: null != e ? x.A.getActivities(e.id) : null,
+      applicationStream: null != e ? O.A.getAnyStreamForUser(e.id) : null
     }
   }), {
     voiceActivityStatusEnabled: o
@@ -251,18 +251,18 @@ function k(e) {
     location: "RecentsChannelHeader"
   }), {
     voiceChannel: c
-  } = (0, p.A)({
+  } = (0, h.A)({
     userId: null == n ? true : n.id
   }), u = o ? c : true;
-  return (0, f.A)({
+  return (0, p.A)({
     activities: i,
     status: l,
-    applicationStream: a,
+    applicationStream: s,
     voiceChannel: u
-  }) ? (0, r.jsx)(h.A, {
+  }) ? (0, r.jsx)(f.A, {
     user: n,
     activities: i,
-    applicationStream: a,
+    applicationStream: s,
     voiceChannel: u,
     hideTooltip: true
   }) : null

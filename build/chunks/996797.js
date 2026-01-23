@@ -20,10 +20,10 @@ function h(e, t, n, h) {
       username: "",
       game: n.name
     }),
-    b = t.getAvatarURL(e.guild_id, 80),
+    g = t.getAvatarURL(e.guild_id, 80),
     {
-      trackView: g,
-      trackClick: y
+      trackView: y,
+      trackClick: A
     } = (0, a.Y)(d.KS.ActivityInvite, {
       notif_type: d.KS.ActivityInvite,
       notif_user_id: t.id,
@@ -31,14 +31,14 @@ function h(e, t, n, h) {
       activity_name: n.name
     });
   return {
-    icon: b,
+    icon: g,
     title: p,
     body: f,
     hint: e => (0, l.sI)(e, (0, a.J)(), u.t.Odi54y),
     confirmText: u.intl.string(u.t["fgP/wX"]),
     cancelText: u.intl.string(u.t["tpXzJ+"]),
     onNotificationShow: () => {
-      g()
+      y()
     },
     onConfirmClick: (t, n) => {
       i.A.sendActivityInvite({
@@ -46,17 +46,17 @@ function h(e, t, n, h) {
         type: c.xL.JOIN,
         activity: h,
         location: o.default.isInstanceLocked() ? c.ThZ.LOCKED_OVERLAY : c.ThZ.UNLOCKED_OVERLAY
-      }), y("join"), r.A.updateNotificationStatus(n)
+      }), A("join"), r.A.updateNotificationStatus(n)
     },
     onCancelClick: (t, n) => {
       (0, s.ack)(e.id, {
         section: c.JJy.OVERLAY,
         object: c.ZSU.ACK_DECLINE_REQUEST_TO_JOIN,
         objectType: c.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
-      }, true, true), r.A.updateNotificationStatus(n), y("decline")
+      }, true, true), r.A.updateNotificationStatus(n), A("decline")
     },
     onDismissClick: () => {
-      y("dismiss")
+      A("dismiss")
     }
   }
 }

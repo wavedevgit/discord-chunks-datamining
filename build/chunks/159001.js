@@ -4,11 +4,11 @@
 require.d(exports, {
   Er: () => p,
   GL: () => s,
-  IM: () => y,
+  IM: () => b,
   Iz: () => f,
   JJ: () => o,
   Oz: () => _,
-  RE: () => b,
+  RE: () => y,
   V2: () => l,
   WR: () => d,
   Zz: () => m,
@@ -160,13 +160,13 @@ function E() {
   })
 }
 
-function b() {
+function y() {
   i.h.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES"
   })
 }
 
-function y() {
+function b() {
   i.h.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING"
   })

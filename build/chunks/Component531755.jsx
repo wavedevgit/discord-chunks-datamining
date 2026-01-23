@@ -26,9 +26,9 @@ function d(e) {
       variant: "text-sm/medium",
       color: "text-subtle",
       children: d ? c.intl.string(c.t["+GB8Kt"]) : c.intl.formatToPlainString(c.t["D/FWJf"], {
-        username: s.Ay.getName(l)
+        username: o.Ay.getName(l)
       })
-    }), (0, r.jsx)(o.A, {
+    }), (0, r.jsx)(s.A, {
       wishlist: t,
       className: u.V,
       analyticsLocations: n,

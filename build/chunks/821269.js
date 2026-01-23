@@ -13,10 +13,10 @@ let o = [];
 function c(e) {
   let {
     userId: t
-  } = e, n = (0, l.bG)([i.A, a.default], () => {
+  } = e, n = (0, l.bG)([i.A, s.default], () => {
     var e;
-    return i.A.isFriend(t) || (null == (e = a.default.getUser(t)) ? true : e.isProvisional)
-  }), c = (0, s.f1)(t);
+    return i.A.isFriend(t) || (null == (e = s.default.getUser(t)) ? true : e.isProvisional)
+  }), c = (0, a.f1)(t);
   return r.useMemo(() => n ? o : c.map(e => {
     let {
       applicationId: t

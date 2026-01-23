@@ -47,9 +47,9 @@ function _(e) {
     className: m,
     onSubscribeModalClose: g,
     position: E = "floating"
-  } = e, b = l.r.useConfig({
+  } = e, y = l.r.useConfig({
     location: "PremiumFloatingPickerUpsell"
-  }).enabled, y = (0, o.zhh)({
+  }).enabled, b = (0, o.zhh)({
     transform: t ? "translateY(0%)" : "translateY(120%)",
     opacity: +!!t,
     config: {
@@ -58,8 +58,8 @@ function _(e) {
     }
   });
   return (0, r.jsx)(s.animated.div, {
-    style: p({}, y),
-    className: a()(d.Zj, b && d.g9, {
+    style: p({}, b),
+    className: a()(d.Zj, y && d.g9, {
       [d.tO]: "floating" === E,
       [d.Kx]: "inline" === E
     }, m),

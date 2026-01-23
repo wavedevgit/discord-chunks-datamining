@@ -2,7 +2,7 @@
 /** chunk id: 878163, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -41,19 +41,19 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = y(e, t), Object.getOwnPropertySymbols)
+  if (a = b(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -64,7 +64,7 @@ function y(e, t) {
 function O(e) {
   let {
     currentGame: t
-  } = e, n = b(e, ["currentGame"]), [a, u] = i.useState(false);
+  } = e, n = y(e, ["currentGame"]), [a, u] = i.useState(false);
   return (0, c.l0)(() => {
     a && l.A.clearPTTAdminWarning()
   }), (0, r.jsx)(s.aFV, E({
@@ -88,7 +88,7 @@ function O(e) {
   }, n))
 }
 
-function A() {
+function v() {
   let [e, t] = (0, a.yK)([u.Ay], () => [u.Ay.canShowAdminWarning, u.Ay.getVisibleGame()], []), n = (0, a.bG)([p.A], () => p.A.isConnected(), []), s = (0, a.bG)([f.A], () => f.A.getMode() === h.TBI.PUSH_TO_TALK, []), l = null != t && t.elevated && n && s && e, c = i.useRef(null);
   return i.useEffect(() => {
     if (!(0, d.yA)(u.Ay)) return l ? c.current = (0, o.qfG)(e => (0, r.jsx)(O, E({

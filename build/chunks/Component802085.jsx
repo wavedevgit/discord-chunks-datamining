@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk877413 = require("./877413.js"),
   o = require.n(Chunk877413),
   Chunk311907 = require("./311907.js"),
@@ -25,7 +25,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk397405 = require("./397405.js"),
   Chunk679740 = require("./679740.js"),
   Chunk206314 = require("./206314.js");
-let _ = Chunk64700.memo(function(e) {
+let E = Chunk64700.memo(function(e) {
     let {
       message: t,
       notice: n,
@@ -34,38 +34,38 @@ let _ = Chunk64700.memo(function(e) {
     } = e;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: a()(v.K1, {
-          [v.oE]: l
+        className: s()(j.K1, {
+          [j.oE]: l
         }),
         children: [(0, r.jsx)("div", {
-          className: v.Oz,
+          className: j.Oz,
           children: (0, r.jsx)(u.lmn, {
             size: "xs",
             color: "currentColor",
-            className: v.F_
+            className: j.F_
           })
         }), (0, r.jsx)("div", {
-          className: v.jC,
+          className: j.jC,
           children: (0, r.jsx)(u.Text, {
             variant: "text-sm/normal",
             color: "interactive-text-default",
-            children: (0, b.Tz)(n, true, t.channel_id)
+            children: (0, g.Tz)(n, true, t.channel_id)
           })
         })]
       }), (0, r.jsx)("div", {
-        className: a()(v.ah, {
-          [v.oE]: l
+        className: s()(j.ah, {
+          [j.oE]: l
         }),
-        children: (0, r.jsx)(g.A, {
+        children: (0, r.jsx)(m.A, {
           message: t,
           onDeleteMessage: i,
           children: (0, r.jsx)(u.Text, {
             variant: "text-xs/normal",
             color: "interactive-text-default",
             tag: "span",
-            className: v.C2,
-            children: j.intl.format(j.t["Nd3Gh+"], {
-              helpUrl: h.A.getArticleURL(O.MVz.GUILD_AUTOMOD_BLOCKED_MESSAGE)
+            className: j.C2,
+            children: O.intl.format(O.t["Nd3Gh+"], {
+              helpUrl: f.A.getArticleURL(_.MVz.GUILD_AUTOMOD_BLOCKED_MESSAGE)
             })
           })
         })
@@ -76,38 +76,38 @@ let _ = Chunk64700.memo(function(e) {
     var t, n;
     let {
       className: i,
-      compact: s,
+      compact: a,
       message: u,
-      children: h,
-      content: b,
-      onUpdate: g
-    } = e, O = null == (n = u.editedTimestamp) ? true : n.toString(), C = l.useRef(false), S = (0, c.bG)([p.A], () => p.A.getMessage(u.id), [u.id]), I = l.useCallback(() => {
-      (null == S ? true : S.isBlockedEdit) ? (0, f.j)(u.id) : d.A.deleteMessage(u.channel_id, u.id, true)
+      children: f,
+      content: g,
+      onUpdate: m
+    } = e, _ = null == (n = u.editedTimestamp) ? true : n.toString(), C = l.useRef(false), S = (0, c.bG)([h.A], () => h.A.getMessage(u.id), [u.id]), I = l.useCallback(() => {
+      (null == S ? true : S.isBlockedEdit) ? (0, p.j)(u.id) : d.A.deleteMessage(u.channel_id, u.id, true)
     }, [u, S]);
     return l.useLayoutEffect(() => {
-      C.current ? null != g && g() : C.current = true
-    }, [g, u.content, b, O, h]), (0, r.jsxs)("div", {
-      id: (0, m.CJ)(u),
-      className: a()(i, E.PT, {
-        [x.BK]: true,
-        [x.nB]: "rtl" === o()(u.content),
-        [v.Dy]: null == S ? true : S.isBlockedEdit,
-        [v.bv]: !(null == S ? true : S.isBlockedEdit)
+      C.current ? null != m && m() : C.current = true
+    }, [m, u.content, g, _, f]), (0, r.jsxs)("div", {
+      id: (0, b.CJ)(u),
+      className: s()(i, x.PT, {
+        [v.BK]: true,
+        [v.nB]: "rtl" === o()(u.content),
+        [j.Dy]: null == S ? true : S.isBlockedEdit,
+        [j.bv]: !(null == S ? true : S.isBlockedEdit)
       }),
-      children: [null != h ? h : (0, A._A)(u, b), (null == S ? true : S.isBlockedEdit) && null != u.timestamp && (0, r.jsxs)(r.Fragment, {
+      children: [null != f ? f : (0, A._A)(u, g), (null == S ? true : S.isBlockedEdit) && null != u.timestamp && (0, r.jsxs)(r.Fragment, {
         children: [" ", (0, r.jsx)(y.A, {
           timestamp: u.timestamp,
           isEdited: true,
           isInline: false,
           children: (0, r.jsxs)("span", {
-            className: x.oh,
-            children: ["(", j.intl.string(j.t.Z7eEx9), ")"]
+            className: v.oh,
+            children: ["(", O.intl.string(O.t.Z7eEx9), ")"]
           })
         })]
-      }), (0, r.jsx)(_, {
-        notice: null != (t = null == S ? true : S.errorMessage) ? t : j.intl.string(j.t.zQ69pv),
+      }), (0, r.jsx)(E, {
+        notice: null != (t = null == S ? true : S.errorMessage) ? t : O.intl.string(O.t.zQ69pv),
         message: u,
-        compact: s,
+        compact: a,
         onDismiss: I
       })]
     })

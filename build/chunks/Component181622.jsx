@@ -29,7 +29,7 @@ function x(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: g.us,
-    children: [t, (0, r.jsx)(s.Text, {
+    children: [t, (0, r.jsx)(o.Text, {
       className: g.Pf,
       variant: "text-md/medium",
       lineClamp: 1,
@@ -41,25 +41,25 @@ function x(e) {
 function A(e) {
   let {
     channel: t
-  } = e, n = (0, o.Ay)(t);
+  } = e, n = (0, a.Ay)(t);
   return (0, r.jsx)(x, {
     icon: (0, r.jsx)(u.A, {
       "aria-hidden": true,
-      size: s._3J.SIZE_32,
+      size: o._3J.SIZE_32,
       channel: t
     }),
     label: n
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     user: t
-  } = e, n = j.Ay.useName(t), l = (0, i.bG)([h.A], () => h.A.getNickname(t.id)), c = (0, i.bG)([p.A], () => p.A.getStatus(t.id));
+  } = e, n = j.Ay.useName(t), l = (0, i.bG)([h.A], () => h.A.getNickname(t.id)), c = (0, i.bG)([b.A], () => b.A.getStatus(t.id));
   return (0, r.jsx)(x, {
-    icon: (0, r.jsx)(a.A, {
+    icon: (0, r.jsx)(s.A, {
       "aria-hidden": true,
-      size: s._3J.SIZE_32,
+      size: o._3J.SIZE_32,
       user: t,
       status: c
     }),
@@ -67,10 +67,10 @@ function v(e) {
   })
 }
 
-function w(e) {
+function v(e) {
   let {
     channel: t
-  } = e, n = (0, i.bG)([b.A], () => b.A.getGuild(null == t ? true : t.guild_id)), l = (0, o.Ay)(t);
+  } = e, n = (0, i.bG)([p.A], () => p.A.getGuild(null == t ? true : t.guild_id)), l = (0, a.Ay)(t);
   return (0, r.jsx)(x, {
     icon: (0, r.jsx)(d.A, {
       size: d.q.SMALL_32,
@@ -81,7 +81,7 @@ function w(e) {
   })
 }
 
-function _(e) {
+function w(e) {
   let {
     destination: t
   } = e, {
@@ -93,9 +93,9 @@ function _(e) {
   }));
   return (null == n ? true : n.isGroupDM()) ? (0, r.jsx)(A, {
     channel: n
-  }) : null != l ? (0, r.jsx)(v, {
+  }) : null != l ? (0, r.jsx)(_, {
     user: l
-  }) : null != n ? (0, r.jsx)(w, {
+  }) : null != n ? (0, r.jsx)(v, {
     channel: n
   }) : null
 }
@@ -104,8 +104,8 @@ function P(e) {
   var t, n;
   let {
     message: i,
-    failedDestinations: a,
-    forwardOptions: o
+    failedDestinations: s,
+    forwardOptions: a
   } = e, u = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
@@ -126,11 +126,11 @@ function P(e) {
     (0, m.fO)({
       message: i,
       source: "retry-modal",
-      initialSelectedDestinations: a,
-      forwardOptions: o
+      initialSelectedDestinations: s,
+      forwardOptions: a
     })
-  }, [a, i, o]);
-  return (0, r.jsxs)(s.VoidConfirmModal, (t = function(e) {
+  }, [s, i, a]);
+  return (0, r.jsxs)(o.VoidConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -154,14 +154,14 @@ function P(e) {
     confirmButtonColor: c.$n.Colors.BRAND,
     onConfirm: d
   }, u), n = n = {
-    children: [(0, r.jsx)(s.Text, {
+    children: [(0, r.jsx)(o.Text, {
       variant: "text-md/medium",
       children: O.intl.format(O.t.cn9vFb, {
-        count: a.length
+        count: s.length
       })
     }), (0, r.jsx)("div", {
       className: g.Zc,
-      children: a.map((e, t) => (0, r.jsx)(_, {
+      children: s.map((e, t) => (0, r.jsx)(w, {
         destination: e
       }, t))
     })]

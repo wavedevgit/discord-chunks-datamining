@@ -122,7 +122,7 @@ var Chunk630332 = require("./630332.js"),
       if (null != e) return e;
       var t = this.getCurrentContent(),
         n = this.getSelection();
-      return n.isCollapsed() ? y(t, n) : O(t, n)
+      return n.isCollapsed() ? b(t, n) : O(t, n)
     }, e.getBlockTree = function(e) {
       return this.getImmutable().getIn(["treeMap", e])
     }, e.isSelectionAtStartOfContent = function() {
@@ -168,7 +168,7 @@ var Chunk630332 = require("./630332.js"),
         l = e.getCurrentContent(),
         c = e.getUndoStack(),
         u = n;
-      s !== l.getSelectionAfter() || b(e, r) ? (c = c.push(l), u = u.set("selectionBefore", s)) : ("insert-characters" === r || "backspace-character" === r || "delete-character" === r) && (u = u.set("selectionBefore", l.getSelectionBefore()));
+      s !== l.getSelectionAfter() || y(e, r) ? (c = c.push(l), u = u.set("selectionBefore", s)) : ("insert-characters" === r || "backspace-character" === r || "delete-character" === r) && (u = u.set("selectionBefore", l.getSelectionBefore()));
       var d = e.getInlineStyleOverride();
       false === ["adjust-depth", "change-block-type", "split-block"].indexOf(r) && (d = null);
       var p = {
@@ -256,25 +256,25 @@ function E(e, t, n, r, i) {
   }))
 }
 
-function b(e, t) {
+function y(e, t) {
   return t !== e.getLastChangeType() || "insert-characters" !== t && "backspace-character" !== t && "delete-character" !== t
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = t.getStartKey(),
     r = t.getStartOffset(),
     i = e.getBlockForKey(n);
-  return r > 0 ? i.getInlineStyleAt(r - 1) : i.getLength() ? i.getInlineStyleAt(0) : A(e, n)
+  return r > 0 ? i.getInlineStyleAt(r - 1) : i.getLength() ? i.getInlineStyleAt(0) : v(e, n)
 }
 
 function O(e, t) {
   var n = t.getStartKey(),
     r = t.getStartOffset(),
     i = e.getBlockForKey(n);
-  return r < i.getLength() ? i.getInlineStyleAt(r) : r > 0 ? i.getInlineStyleAt(r - 1) : A(e, n)
+  return r < i.getLength() ? i.getInlineStyleAt(r) : r > 0 ? i.getInlineStyleAt(r - 1) : v(e, n)
 }
 
-function A(e, t) {
+function v(e, t) {
   var n = e.getBlockMap().reverse().skipUntil(function(e, n) {
     return n === t
   }).skip(1).skipUntil(function(e, t) {

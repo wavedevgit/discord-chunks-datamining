@@ -34,7 +34,7 @@ function o(e) {
   let {
     refs: g,
     floatingStyles: E,
-    context: b
+    context: y
   } = (0, i.we)({
     open: f,
     onOpenChange: p,
@@ -58,21 +58,21 @@ function o(e) {
     whileElementsMounted: s.ll,
     placement: o,
     strategy: "fixed"
-  }), y = (0, i.s9)(b, {
+  }), b = (0, i.s9)(y, {
     bubbles: {
       escapeKey: false
     }
   }), {
     getReferenceProps: O,
-    getFloatingProps: A
-  } = (0, i.bv)([y]);
+    getFloatingProps: v
+  } = (0, i.bv)([b]);
   return {
     isOpen: f,
     setIsOpen: p,
     refs: g,
     floatingStyles: E,
-    context: b,
+    context: y,
     getReferenceProps: O,
-    getFloatingProps: A
+    getFloatingProps: v
   }
 }

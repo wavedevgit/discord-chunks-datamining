@@ -26,7 +26,7 @@ function f(e) {
     guildNameplate: m,
     pendingNameplate: g,
     pendingErrors: E
-  } = (0, l.rv)(t, null == n ? true : n.id), b = true === g ? (_ ? m : h) != null : null != g, y = i.useCallback(() => {
+  } = (0, l.rv)(t, null == n ? true : n.id), y = true === g ? (_ ? m : h) != null : null != g, b = i.useCallback(() => {
     (0, o.p)({
       analyticsLocations: p,
       guildId: null == n ? true : n.id
@@ -44,8 +44,8 @@ function f(e) {
         variant: "primary",
         size: "sm",
         text: u.intl.string(u.t.BwdeM1),
-        onClick: y
-      }), b && (0, r.jsx)(a.Button, {
+        onClick: b
+      }), y && (0, r.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",
         text: _ ? u.intl.string(u.t.CHf9iJ) : u.intl.string(u.t["9zwziY"]),

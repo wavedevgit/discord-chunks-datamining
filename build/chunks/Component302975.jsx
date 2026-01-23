@@ -18,25 +18,25 @@ function u(e) {
     channel: n,
     buttonText: u,
     buttonSize: d = "sm",
-    navigateAwayOnReportSuccess: f = true,
-    onReportClick: p,
-    onReportSubmit: h,
-    onMouseEnter: b,
-    onMouseLeave: g
-  } = e, m = (0, s.V)(t), A = (0, o.D)(n.id, t);
-  if (!m || null == A) return null;
+    navigateAwayOnReportSuccess: p = true,
+    onReportClick: h,
+    onReportSubmit: f,
+    onMouseEnter: g,
+    onMouseLeave: m
+  } = e, b = (0, a.V)(t), A = (0, o.D)(n.id, t);
+  if (!b || null == A) return null;
   let y = () => {
-    null == h || h(), i.A.closePrivateChannel(n.id, f)
+    null == f || f(), i.A.closePrivateChannel(n.id, p)
   };
   return (0, r.jsx)(l.Button, {
     size: d,
     variant: "critical-primary",
     disabled: null == A,
     onClick: () => {
-      null == p || p(), (0, a.b8)(A, y)
+      null == h || h(), (0, s.b8)(A, y)
     },
-    onMouseEnter: b,
-    onMouseLeave: g,
+    onMouseEnter: g,
+    onMouseLeave: m,
     text: null != u ? u : c.intl.string(c.t.HHZmDn)
   })
 }

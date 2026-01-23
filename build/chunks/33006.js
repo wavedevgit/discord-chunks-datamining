@@ -18,7 +18,7 @@ var Chunk143236 = require("./143236.js"),
   Chunk546983 = require("./546983.js"),
   Chunk613057 = require("./613057.js"),
   Chunk652215 = require("./652215.js"),
-  _ = require("./264572.js").Buffer;
+  b = require("./264572.js").Buffer;
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -54,7 +54,7 @@ function C() {
         port: e
       })
     };
-  i.listen(b.xEi + e % b.sJq, "127.0.0.1", t)
+  i.listen(_.xEi + e % _.sJq, "127.0.0.1", t)
 }
 
 function N(e, t, n) {
@@ -66,7 +66,7 @@ function N(e, t, n) {
       "Access-Control-Allow-Methods": "POST, GET, PUT, PATCH, DELETE",
       "Access-Control-Allow-Headers": "Content-Type, Authorization"
     } : {};
-  n = n ? JSON.stringify(n) : "", r = 200 === r && 0 === n.length ? 204 : r, t.setHeader("Content-Length", _.byteLength(n).toString()), t.setHeader("Content-Type", "application/json"), t.writeHead(r, function(e) {
+  n = n ? JSON.stringify(n) : "", r = 200 === r && 0 === n.length ? 204 : r, t.setHeader("Content-Length", b.byteLength(n).toString()), t.setHeader("Content-Type", "application/json"), t.writeHead(r, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -89,7 +89,7 @@ function T(e, t, n, r) {
 }
 class j extends Chunk313731.A {
   send(e) {
-    (u.default.isLoggingOverlayEvents || e.cmd !== b.e$_.OVERLAY && e.evt !== b.ZE4.OVERLAY) && I.info("Socket Emit: ".concat(this.id), (0, h.A)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
+    (u.default.isLoggingOverlayEvents || e.cmd !== _.e$_.OVERLAY && e.evt !== _.ZE4.OVERLAY) && I.info("Socket Emit: ".concat(this.id), (0, g.A)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
       binary: true
     }) : this._socket.send(JSON.stringify(e))
   }
@@ -97,25 +97,25 @@ class j extends Chunk313731.A {
     this._socket.close(e, t)
   }
   constructor(e, t, n) {
-    if (super("ws", t, n), E(this, "_socket", true), false === ["etf", "json"].indexOf(n)) throw new f.A({
-      closeCode: b.YI$.INVALID_ENCODING
+    if (super("ws", t, n), E(this, "_socket", true), false === ["etf", "json"].indexOf(n)) throw new h.A({
+      closeCode: _.YI$.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(n));
-    if ("etf" === n && null == r) throw new f.A({
-      closeCode: b.YI$.INVALID_ENCODING
+    if ("etf" === n && null == r) throw new h.A({
+      closeCode: _.YI$.INVALID_ENCODING
     }, "Erlpack cannot be used on this client");
     this._socket = e
   }
 }
 class x extends Chunk313731.A {
   send(e) {
-    (u.default.isLoggingOverlayEvents || e.cmd !== b.e$_.OVERLAY) && I.info("Socket Emit: ".concat(this.id), e), this._sendCallback(e)
+    (u.default.isLoggingOverlayEvents || e.cmd !== _.e$_.OVERLAY) && I.info("Socket Emit: ".concat(this.id), e), this._sendCallback(e)
   }
   close(e, t) {
     this._closeCallback(t, e)
   }
   constructor(e, t, n, r) {
-    if (super("http", n, r), E(this, "_sendCallback", true), E(this, "_closeCallback", true), "json" !== r) throw new f.A({
-      closeCode: b.YI$.INVALID_ENCODING
+    if (super("http", n, r), E(this, "_sendCallback", true), E(this, "_closeCallback", true), "json" !== r) throw new h.A({
+      closeCode: _.YI$.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(r));
     this._sendCallback = e, this._closeCallback = t
   }
@@ -139,7 +139,7 @@ class P extends Chunk143236.EventEmitter {
           i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", y), t.writeHead(301), t.end()
         },
         o = new x(!l ? s : N.bind(null, e, t), !l ? s : T.bind(null, e, t, 400), Number(n.get("v")), i);
-      if (l)(0, g.j7)(o, S(e.headers).origin, n.get("client_id")).then(() => {
+      if (l)(0, m.j7)(o, S(e.headers).origin, n.get("client_id")).then(() => {
         let n = "";
         e.on("data", e => n += e), e.on("error", () => T(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(o, n))
       }).catch(e => {
@@ -151,7 +151,7 @@ class P extends Chunk143236.EventEmitter {
       });
       else {
         var a;
-        o.authorization.scopes = [m.kw], this.handleMessage(o, decodeURIComponent(null != (a = n.get("payload")) ? a : ""))
+        o.authorization.scopes = [A.kw], this.handleMessage(o, decodeURIComponent(null != (a = n.get("payload")) ? a : ""))
       }
       return
     }
@@ -169,7 +169,7 @@ class P extends Chunk143236.EventEmitter {
     }
     I.info("Socket Opened: ".concat(r.id)), e.on("error", e => I.error("WS Error: ".concat(e.message))), e.on("close", (e, t) => {
       I.info("Socket Closed: ".concat(r.id, ", code ").concat(e, ", message ").concat(t)), s().remove(v, e => e === r), this.emit("disconnect", r)
-    }), (0, g.j7)(r, l, i.get("client_id")).then(() => {
+    }), (0, m.j7)(r, l, i.get("client_id")).then(() => {
       v.push(r), e.on("message", e => this.handleMessage(r, e)), this.emit("connect", r)
     }).catch(e => {
       let {
@@ -186,9 +186,9 @@ class P extends Chunk143236.EventEmitter {
       else if ("string" == typeof t) n = JSON.parse(t);
       else throw Error()
     } catch (t) {
-      e.close(b.YI$.CLOSE_UNSUPPORTED, "Payload not ".concat(e.encoding));
+      e.close(_.YI$.CLOSE_UNSUPPORTED, "Payload not ".concat(e.encoding));
       return
-    }(u.default.isLoggingOverlayEvents || n.cmd !== b.e$_.OVERLAY) && I.info("Socket Message: ".concat(e.id), (0, h.A)(n)), this.emit("request", e, n)
+    }(u.default.isLoggingOverlayEvents || n.cmd !== _.e$_.OVERLAY) && I.info("Socket Message: ".concat(e.id), (0, g.A)(n)), this.emit("request", e, n)
   }
   constructor() {
     var e;

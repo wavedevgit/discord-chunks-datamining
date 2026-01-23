@@ -2,7 +2,7 @@
 /** chunk id: 24215, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  L: () => x
+  L: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,11 +16,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk190359 = require("./190359.js");
-let g = () => (0, r.jsx)("div", {
-  className: p.m
+let m = () => (0, r.jsx)("div", {
+  className: g.m
 });
 
-function m(e) {
+function f(e) {
   let {
     label: t,
     children: n
@@ -36,7 +36,7 @@ function m(e) {
   })
 }
 
-function A(e) {
+function _(e) {
   let {
     label: t,
     checked: n,
@@ -57,51 +57,51 @@ function A(e) {
     })]
   })
 }
-let x = () => {
+let A = () => {
   var e;
   let t = o.tz.useSetting(),
     {
       nickname: n,
       dmsAllowed: c,
-      showActivity: p,
-      setNickname: x,
-      setDmsAllowed: _,
+      showActivity: g,
+      setNickname: A,
+      setDmsAllowed: x,
       setShowActivity: E,
-      guildId: b,
-      inviteCode: v
+      guildId: v,
+      inviteCode: j
     } = (0, d.lD)(),
-    j = null == (e = l.A.getProps().invite) ? true : e.is_nickname_changeable,
-    y = i.useCallback(() => {
+    y = null == (e = l.A.getProps().invite) ? true : e.is_nickname_changeable,
+    b = i.useCallback(() => {
       u.default.track(h.HAw.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
-        guild_id: b,
-        invite_code: v
+        guild_id: v,
+        invite_code: j
       })
-    }, [b, v]);
+    }, [v, j]);
   return (0, r.jsxs)(a.A, {
     icon: (0, r.jsx)(s.Zes, {
       size: "refresh_sm"
     }),
-    title: f.intl.string(f.t["A5wHQ/"]),
-    subtitle: f.intl.string(f.t.UKCSEd),
-    onOpen: y,
-    maxHeight: j ? 220 : 130,
-    children: [j && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(m, {
-        label: f.intl.string(f.t.me1lRk),
+    title: p.intl.string(p.t["A5wHQ/"]),
+    subtitle: p.intl.string(p.t.UKCSEd),
+    onOpen: b,
+    maxHeight: y ? 220 : 130,
+    children: [y && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(f, {
+        label: p.intl.string(p.t.me1lRk),
         children: (0, r.jsx)(s.ksK, {
-          placeholder: f.intl.string(f.t["09Q8yp"]),
+          placeholder: p.intl.string(p.t["09Q8yp"]),
           maxLength: h.d0r,
           value: n,
-          onChange: x
+          onChange: A
         })
-      }), (0, r.jsx)(g, {})]
-    }), (0, r.jsx)(A, {
-      label: f.intl.string(f.t["/2ed37"]),
+      }), (0, r.jsx)(m, {})]
+    }), (0, r.jsx)(_, {
+      label: p.intl.string(p.t["/2ed37"]),
       checked: c,
-      onChange: _
-    }), (0, r.jsx)(g, {}), t && (0, r.jsx)(A, {
-      label: f.intl.string(f.t.bN4m1G),
-      checked: p,
+      onChange: x
+    }), (0, r.jsx)(m, {}), t && (0, r.jsx)(_, {
+      label: p.intl.string(p.t.bN4m1G),
+      checked: g,
       onChange: E
     })]
   })

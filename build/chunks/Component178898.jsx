@@ -2,7 +2,7 @@
 /** chunk id: 178898, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,37 +23,37 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk617536 = require("./617536.js");
 let O = "premiumRetentionEmojiPickerNotice",
-  A = Chunk506774.w.get(O),
-  v = e => {
+  v = Chunk506774.w.get(O),
+  A = e => {
     let {
       closePopout: t,
       channel: n
-    } = e, [a, v] = i.useState(false), {
-      subscription: S,
-      hasFetchedSubscriptions: I
+    } = e, [a, A] = i.useState(false), {
+      subscription: I,
+      hasFetchedSubscriptions: S
     } = (0, o.cf)([_.A], () => ({
       subscription: _.A.getPremiumSubscription(),
       hasFetchedSubscriptions: _.A.hasFetchedSubscriptions()
     }));
     if (i.useEffect(() => {
-        I || (0, u.hP)()
-      }, [I]), null == S || !(0, h.PK)(S.status) || a) return null;
-    let T = S.status === g.Dmq.PAST_DUE ? (0, h.ji)(S).expiresDate : s()(S.currentPeriodStart).add(E.ph),
-      C = "".concat(S.id, ":").concat(T.toISOString());
-    if (A === C) return null;
-    let N = h.Ay.getPremiumType(S.planId) === E.PremiumTypes.TIER_0 ? d.k0.PREMIUM_TIER_0 : h.Ay.getPremiumType(S.planId) === E.PremiumTypes.TIER_1 ? d.k0.PREMIUM_TIER_1 : d.k0.PREMIUM_TIER_2;
+        S || (0, u.hP)()
+      }, [S]), null == I || !(0, h.PK)(I.status) || a) return null;
+    let T = I.status === g.Dmq.PAST_DUE ? (0, h.ji)(I).expiresDate : s()(I.currentPeriodStart).add(E.ph),
+      C = "".concat(I.id, ":").concat(T.toISOString());
+    if (v === C) return null;
+    let N = h.Ay.getPremiumType(I.planId) === E.PremiumTypes.TIER_0 ? d.k0.PREMIUM_TIER_0 : h.Ay.getPremiumType(I.planId) === E.PremiumTypes.TIER_1 ? d.k0.PREMIUM_TIER_1 : d.k0.PREMIUM_TIER_2;
     return (0, r.jsxs)("div", {
-      className: y.g$,
+      className: b.g$,
       children: [(0, r.jsx)(c.tvc, {
         size: "md",
-        className: y.lu,
+        className: b.lu,
         color: N
       }), (0, r.jsxs)("div", {
-        className: y.Xn,
+        className: b.Xn,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-xs/normal",
-          children: b.intl.format(b.t.bTMjiO, {
-            planName: h.Ay.getTierDisplayNameByPlanId(S.planId),
+          children: y.intl.format(y.t.bTMjiO, {
+            planName: h.Ay.getTierDisplayNameByPlanId(I.planId),
             endsAt: T.toDate()
           })
         }), (0, r.jsx)("div", {
@@ -63,17 +63,17 @@ let O = "premiumRetentionEmojiPickerNotice",
                 section: g.nc_.PREMIUM
               })
             },
-            children: b.intl.string(b.t.W3aavh)
+            children: y.intl.string(y.t.W3aavh)
           })
         })]
       }), (0, r.jsx)(c.DUT, {
         onClick: () => {
-          l.w.set(O, C), A = C, v(true)
+          l.w.set(O, C), v = C, A(true)
         },
         children: (0, r.jsx)(c.PGe, {
           size: "md",
           color: "currentColor",
-          className: y.YF
+          className: b.YF
         })
       })]
     })

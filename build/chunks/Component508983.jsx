@@ -133,7 +133,7 @@ function Z(e, t) {
 
 function Q(e, t, n) {
   return i.useMemo(() => {
-    if (null != t && null != n) return i => (0, r.jsx)(v.A, z(W({}, i), {
+    if (null != t && null != n) return i => (0, r.jsx)(A.A, z(W({}, i), {
       user: t,
       currentUser: n,
       guildId: e.guild_id,
@@ -226,7 +226,7 @@ function en(e) {
   let {
     alertAction: t,
     guildId: n
-  } = e, i = (0, u.bG)([I.default], () => I.default.getUser(t.actor), [t.actor]);
+  } = e, i = (0, u.bG)([S.default], () => S.default.getUser(t.actor), [t.actor]);
   try {
     let e = parseInt(t.actionType);
     if (null == i) return ee(e);
@@ -272,9 +272,9 @@ let ei = Chunk64700.memo(function(e) {
       compact: s
     }, l), c),
     f = () => d,
-    _ = I.default.getUser(o),
+    _ = S.default.getUser(o),
     h = Z(n, i),
-    m = Q(i, _, I.default.getCurrentUser());
+    m = Q(i, _, S.default.getCurrentUser());
   if (null != _) {
     let e = (0, R.FT)(_, i),
       r = (0, D.tO)(W({
@@ -313,8 +313,8 @@ function ea(e) {
   } = e, {
     avatarSrc: f,
     eventHandlers: {
-      onMouseEnter: v,
-      onMouseLeave: I
+      onMouseEnter: A,
+      onMouseLeave: S
     }
   } = (0, M.a)(true), T = (0, c.rm)(null != n ? n : ""), {
     onFocus: C
@@ -322,7 +322,7 @@ function ea(e) {
     isFocused: w,
     handleFocus: x,
     handleBlur: j
-  } = (0, L.G8)(C), U = (0, u.bG)([h.A], () => h.A.keyboardModeEnabled), Y = (0, u.bG)([S.A], () => S.A.can(G.xBc.MANAGE_MESSAGES, l), [l]), {
+  } = (0, L.G8)(C), U = (0, u.bG)([h.A], () => h.A.keyboardModeEnabled), Y = (0, u.bG)([I.A], () => I.A.can(G.xBc.MANAGE_MESSAGES, l), [l]), {
     ruleName: K,
     embedChannel: X,
     decisionId: Q,
@@ -341,21 +341,21 @@ function ea(e) {
     var t;
     null == (t = e_.onContextMenuModerateUser) || t.call(e_, e)
   }, eg = i.useCallback(() => {
-    (0, b.w2)(o.id, en, Q, l)
+    (0, y.w2)(o.id, en, Q, l)
   }, [o.id, en, Q, l]), eE = i.useCallback(e => {
     null != ea && null != X && (e.stopPropagation(), e.preventDefault(), (0, O.A)(G.BVt.CHANNEL(null == X ? true : X.guild_id, null == X ? true : X.id, ea)))
-  }, [X, ea]), eb = i.useCallback(e => {
+  }, [X, ea]), ey = i.useCallback(e => {
     null != X && (_.default.selectChannel({
       guildId: X.guild_id,
       channelId: e,
       messageId: o.id
-    }), (0, A.iN)(e))
-  }, [o, X]), ey = i.useCallback(() => {
-    (0, y.E5)(o.id, l, g.G.DELETE_USER_MESSAGE)
-  }, [l, o.id]), eO = (0, F.getFriendlyDurationString)(Number(es)), eA = null != eo, ev = Y && null != ea && (null == el || !el.actions.hasOwnProperty(g.G.DELETE_USER_MESSAGE)), eS = o.embeds.length > 0 ? null == (t = o.embeds[0].fields.find(e => "channel_id" === e.rawName)) ? true : t.rawValue : null, eI = null != eS;
+    }), (0, v.iN)(e))
+  }, [o, X]), eb = i.useCallback(() => {
+    (0, b.E5)(o.id, l, g.G.DELETE_USER_MESSAGE)
+  }, [l, o.id]), eO = (0, F.getFriendlyDurationString)(Number(es)), ev = null != eo, eA = Y && null != ea && (null == el || !el.actions.hasOwnProperty(g.G.DELETE_USER_MESSAGE)), eI = o.embeds.length > 0 ? null == (t = o.embeds[0].fields.find(e => "channel_id" === e.rawName)) ? true : t.rawValue : null, eS = null != eI;
   return (0, r.jsx)("div", {
-    onMouseEnter: v,
-    onMouseLeave: I,
+    onMouseEnter: A,
+    onMouseLeave: S,
     children: (0, r.jsx)(k.A, {
       className: s()(H.rs, {
         [H.oE]: a
@@ -458,7 +458,7 @@ function ea(e) {
                     })
                   })]
                 })]
-              }), eA ? (0, r.jsx)(J, {
+              }), ev ? (0, r.jsx)(J, {
                 children: (0, r.jsx)(p.Text, {
                   variant: "text-xs/medium",
                   color: "text-default",
@@ -492,13 +492,13 @@ function ea(e) {
                 text: B.intl.string(B.t.DEoVWZ),
                 onClick: em
               })]
-            }), eI ? (0, r.jsxs)(r.Fragment, {
+            }), eS ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)("div", {
                 className: H.Om
               }), (0, r.jsx)("div", {
                 className: H.AX,
                 children: (0, r.jsx)(p.QWc, {
-                  onClick: () => eb(eS),
+                  onClick: () => ey(eI),
                   variant: "primary",
                   size: "sm",
                   textVariant: "text-xs/normal",
@@ -516,13 +516,13 @@ function ea(e) {
                 textVariant: "text-xs/normal",
                 text: B.intl.string(B.t["94JbM3"])
               })
-            }), ev ? (0, r.jsxs)(r.Fragment, {
+            }), eA ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)("div", {
                 className: H.Om
               }), (0, r.jsx)("div", {
                 className: H.AX,
                 children: (0, r.jsx)(p.QWc, {
-                  onClick: ey,
+                  onClick: eb,
                   variant: "primary",
                   size: "sm",
                   textVariant: "text-xs/normal",

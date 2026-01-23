@@ -2,7 +2,7 @@
 /** chunk id: 158160, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => A,
+  Ay: () => v,
   oE: () => E
 }), require("./896048.js");
 var Chunk439372 = require("./439372.js"),
@@ -37,7 +37,7 @@ function h(e) {
   if (null != n && n.isGroupDM()) {
     let e = n.recipients.filter(e => s.A.isBlocked(e)),
       r = n.recipients.filter(e => s.A.isIgnored(e));
-    (e.length > 0 || r.length > 0) && !n.blockedUserWarningDismissed && !y(t) && (0, c.y)({
+    (e.length > 0 || r.length > 0) && !n.blockedUserWarningDismissed && !b(t) && (0, c.y)({
       channelId: t,
       blockedUserIds: e,
       ignoredUserIds: r
@@ -57,23 +57,23 @@ function g() {
 }
 
 function E(e) {
-  return g() || Array.from(e).every(e => b(e, true))
+  return g() || Array.from(e).every(e => y(e, true))
 }
 
-function b(e) {
+function y(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] && arguments[1];
   return !!(!n && g()) || (null != (t = (0, l.kP)(e)) ? t : 0) > Date.now() - p
 }
 
-function y(e) {
+function b(e) {
   var t;
   return (null != (t = (0, l.Oz)(e)) ? t : 0) > Date.now() - f
 }
 class O extends Chunk439372.A {
   handleBlockedOrIgnoredUserVoiceChannelJoin(e, t) {
     let n = a.A.getChannelId();
-    e !== n || null != i.A.getChannel(e) && (b(t) || (0, u.k)(n, t))
+    e !== n || null != i.A.getChannel(e) && (y(t) || (0, u.k)(n, t))
   }
   constructor(...e) {
     super(...e), d(this, "actions", {
@@ -82,4 +82,4 @@ class O extends Chunk439372.A {
     })
   }
 }
-let A = new O
+let v = new O

@@ -81,7 +81,7 @@ function E(e) {
     minDate: p,
     maxDate: m,
     disabled: E = false
-  } = e, b = h(e, ["value", "onSelect", "dateFormat", "minDate", "maxDate", "disabled"]), y = i.useRef(null);
+  } = e, y = h(e, ["value", "onSelect", "dateFormat", "minDate", "maxDate", "disabled"]), b = i.useRef(null);
 
   function O(e) {
     let {
@@ -102,18 +102,18 @@ function E(e) {
     })
   }
   return (0, r.jsx)(l.Y, {
-    targetElementRef: y,
+    targetElementRef: b,
     renderPopout: O,
     position: "bottom",
     children: e => {
       let {
         onClick: n
       } = e, i = h(e, ["onClick"]);
-      return (0, r.jsx)(a.D0$, _(f({}, b), {
+      return (0, r.jsx)(a.D0$, _(f({}, y), {
         children: e => (0, r.jsxs)(a.FON, _(f({
           as: c.DUT,
           tag: "div",
-          innerRef: y,
+          innerRef: b,
           disabled: E,
           "aria-disabled": E
         }, i), {

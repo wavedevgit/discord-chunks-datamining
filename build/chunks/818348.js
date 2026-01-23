@@ -2,20 +2,20 @@
 /** chunk id: 818348, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  AD: () => I,
+  AD: () => S,
   Cm: () => C,
   DY: () => T,
   FX: () => G,
-  Gg: () => b,
+  Gg: () => y,
   Jo: () => et,
-  Kc: () => A,
+  Kc: () => v,
   Kf: () => eh,
   L_: () => em,
   Lt: () => B,
   Lw: () => X,
   NJ: () => r.NJ,
   Nc: () => N,
-  OL: () => S,
+  OL: () => I,
   Pq: () => er,
   Q7: () => D,
   Sb: () => es,
@@ -33,17 +33,17 @@ require.d(exports, {
   bZ: () => eu,
   cl: () => p,
   dL: () => H,
-  do: () => y,
+  do: () => b,
   e$: () => z,
   fr: () => j,
-  gx: () => eb,
+  gx: () => ey,
   hC: () => u,
   hV: () => M,
   he: () => O,
   il: () => $,
   js: () => V,
   kM: () => m,
-  kv: () => v,
+  kv: () => A,
   mX: () => ed,
   me: () => K,
   nf: () => F,
@@ -123,7 +123,7 @@ let E = Object.freeze({
     8: "Virtual Currency",
     9: "Apple ACOM"
   }),
-  b = Object.freeze({
+  y = Object.freeze({
     BRAINTREE: {
       KEY: window.GLOBAL_ENV.BRAINTREE_KEY,
       PAYMENT_GATEWAY: "braintree"
@@ -137,13 +137,13 @@ let E = Object.freeze({
       PAYMENT_GATEWAY: "adyen"
     }
   });
-var y = function(e) {
+var b = function(e) {
     return e.GOOGLE_PAY = "google_pay", e.APPLE_PAY = "apple_pay", e
   }({}),
   O = function(e) {
     return e[e.UNKNOWN = 0] = "UNKNOWN", e[e.CARD = 1] = "CARD", e[e.PAYPAL = 2] = "PAYPAL", e[e.GIROPAY = 3] = "GIROPAY", e[e.SOFORT = 4] = "SOFORT", e[e.PRZELEWY24 = 5] = "PRZELEWY24", e[e.SEPA_DEBIT = 6] = "SEPA_DEBIT", e[e.PAYSAFE_CARD = 7] = "PAYSAFE_CARD", e[e.GCASH = 8] = "GCASH", e[e.GRABPAY_MY = 9] = "GRABPAY_MY", e[e.MOMO_WALLET = 10] = "MOMO_WALLET", e[e.VENMO = 11] = "VENMO", e[e.GOPAY_WALLET = 12] = "GOPAY_WALLET", e[e.KAKAOPAY = 13] = "KAKAOPAY", e[e.BANCONTACT = 14] = "BANCONTACT", e[e.EPS = 15] = "EPS", e[e.IDEAL = 16] = "IDEAL", e[e.CASH_APP = 17] = "CASH_APP", e[e.APPLE = 18] = "APPLE", e[e.PAYMENT_REQUEST = 99] = "PAYMENT_REQUEST", e
   }({});
-let A = new Map([
+let v = new Map([
     [7, "paysafecard"],
     [8, "gcash"],
     [9, "grabpay_MY"],
@@ -152,13 +152,13 @@ let A = new Map([
     [12, "gopay_wallet"],
     [17, "cashapp"]
   ]),
-  v = new Map([
+  A = new Map([
     [14, "bancontact"],
     [3, "giropay"],
     [16, "ideal"]
   ]),
-  S = new Set([7, 8, 9, 12, 10, 13, 14, 15, 16, 4, 3, 5, 17]),
-  I = new Set([7, 9, 3, 5, 4, 14, 15, 16]),
+  I = new Set([7, 8, 9, 12, 10, 13, 14, 15, 16, 4, 3, 5, 17]),
+  S = new Set([7, 9, 3, 5, 4, 14, 15, 16]),
   T = new Set([1, 2, 6, 8, 10, 11, 13, 12, 17]),
   C = new Set([3, 4, 5, 14, 15, 16, 7, 9, 12]),
   N = new Set([6]);
@@ -368,6 +368,6 @@ var e_ = function(e) {
   eE = function(e) {
     return e.SWIPE = "SWIPE", e.BROWSER = "BROWSER", e.KEYBIND = "KEYBIND", e
   }({}),
-  eb = function(e) {
+  ey = function(e) {
     return e[e.IN_PROMPT = 1] = "IN_PROMPT", e
   }({})

@@ -26,10 +26,10 @@ function _(e) {
     label: m,
     labeledBy: g,
     leadingIcon: E,
-    value: b,
-    labelType: y = "primary",
+    value: y,
+    labelType: b = "primary",
     usageVariant: O = "single"
-  } = e, A = (0, i.useRef)(null), v = (0, i.useRef)(null), S = (0, i.useRef)(null), [I, T] = (0, i.useState)(true), C = (0, i.useRef)(false), N = null != m && "" !== m, R = null != n && "" !== n, w = null != E ? E : null;
+  } = e, v = (0, i.useRef)(null), A = (0, i.useRef)(null), I = (0, i.useRef)(null), [S, T] = (0, i.useState)(true), C = (0, i.useRef)(false), N = null != m && "" !== m, R = null != n && "" !== n, w = null != E ? E : null;
   (0, i.useEffect)(() => {
     if (!C.current) {
       C.current = true;
@@ -40,11 +40,11 @@ function _(e) {
   let P = e => {
       null != a && a(e)
     },
-    D = s()(p.checkboxOption, "string" == typeof I && p[I], "indicator" !== O && p.spacing),
+    D = s()(p.checkboxOption, "string" == typeof S && p[S], "indicator" !== O && p.spacing),
     x = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: p.checkboxIndicator,
-        ref: A,
+        ref: v,
         "aria-hidden": true,
         children: [(0, r.jsx)("svg", {
           className: p.checkmark,
@@ -77,7 +77,7 @@ function _(e) {
             focusable: false
           }), (0, r.jsx)(f.E, {
             variant: "text-md/normal",
-            color: "primary" === y ? "text-strong" : "text-subtle",
+            color: "primary" === b ? "text-strong" : "text-subtle",
             children: m
           })]
         }), R && (0, r.jsx)(f.E, {
@@ -93,11 +93,11 @@ function _(e) {
     "data-disabled": _ || true,
     children: x
   }) : (0, r.jsx)(c.vN, {
-    focusTarget: v,
-    ringTarget: S,
+    focusTarget: A,
+    ringTarget: I,
     children: (0, r.jsx)(l.Sc, {
-      ref: S,
-      inputRef: v,
+      ref: I,
+      inputRef: A,
       "aria-labelledby": g,
       isSelected: t,
       onChange: P,
@@ -105,7 +105,7 @@ function _(e) {
       isReadOnly: h,
       "data-mana-component": "checkbox",
       className: D,
-      value: String(b),
+      value: String(y),
       children: x
     })
   })

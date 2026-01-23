@@ -47,34 +47,34 @@ class c {
         end: n
       }), n > E && (t <= E ? g += n - E : g += n - t)
     }
-    let b = 0,
-      y = 0,
+    let y = 0,
+      b = 0,
       O = 0,
-      A = null;
+      v = null;
     if ("function" == typeof p.getVideoPlaybackQuality) {
       let e = p.getVideoPlaybackQuality();
-      b = e.droppedVideoFrames, O = (y = e.totalVideoFrames) > 0 ? b / y * 100 : 0
+      y = e.droppedVideoFrames, O = (b = e.totalVideoFrames) > 0 ? y / b * 100 : 0
     }
-    if ((null == (i = this.cachedCodecInfo) ? true : i.frameRate) != null) A = this.cachedCodecInfo.frameRate;
+    if ((null == (i = this.cachedCodecInfo) ? true : i.frameRate) != null) v = this.cachedCodecInfo.frameRate;
     else if ("function" == typeof p.getVideoPlaybackQuality) {
-      if (null !== this.lockedFrameRate) A = this.lockedFrameRate;
+      if (null !== this.lockedFrameRate) v = this.lockedFrameRate;
       else if (Math.abs(p.currentTime - this.lastCurrentTime) > a && this.lastCurrentTime > 0)
         if (this.recentFrameRates.length >= 3) {
           let e = this.recentFrameRates.reduce((e, t) => e + t, 0) / this.recentFrameRates.length;
-          this.lockedFrameRate = Math.round(e), A = this.lockedFrameRate, this.lastKnownFrameRate = this.lockedFrameRate
-        } else this.baselineFrames = y, this.baselineTime = p.currentTime, this.recentFrameRates = [], A = this.lastKnownFrameRate;
+          this.lockedFrameRate = Math.round(e), v = this.lockedFrameRate, this.lastKnownFrameRate = this.lockedFrameRate
+        } else this.baselineFrames = b, this.baselineTime = p.currentTime, this.recentFrameRates = [], v = this.lastKnownFrameRate;
       else {
-        let e = y - this.baselineFrames,
+        let e = b - this.baselineFrames,
           t = p.currentTime - this.baselineTime;
         if (t >= o && e > 0) {
           let n = e / t;
-          this.recentFrameRates.push(n), this.recentFrameRates.length > s && this.recentFrameRates.shift(), A = Math.round(this.recentFrameRates.reduce((e, t) => e + t, 0) / this.recentFrameRates.length), this.lastKnownFrameRate = A
-        } else null !== this.lastKnownFrameRate && (A = this.lastKnownFrameRate)
+          this.recentFrameRates.push(n), this.recentFrameRates.length > s && this.recentFrameRates.shift(), v = Math.round(this.recentFrameRates.reduce((e, t) => e + t, 0) / this.recentFrameRates.length), this.lastKnownFrameRate = v
+        } else null !== this.lastKnownFrameRate && (v = this.lastKnownFrameRate)
       }
       this.lastCurrentTime = p.currentTime
     }
-    let v = null != (e = null == (l = p.error) ? true : l.code) ? e : null,
-      S = null != (t = null == (c = p.error) ? true : c.message) ? t : null;
+    let A = null != (e = null == (l = p.error) ? true : l.code) ? e : null,
+      I = null != (t = null == (c = p.error) ? true : c.message) ? t : null;
     return null == this.codecInfoPromise && this.fetchCodecInfo(), {
       resolution: f,
       videoWidth: u,
@@ -85,15 +85,15 @@ class c {
       duration: p.duration,
       bufferedRanges: m,
       bufferedSeconds: g,
-      droppedFrames: b,
-      totalFrames: y,
+      droppedFrames: y,
+      totalFrames: b,
       droppedFramesPercent: O,
-      frameRate: A,
+      frameRate: v,
       src: p.src,
       fileSizeBytes: this.fileSizeBytes,
       codecInfo: this.cachedCodecInfo,
-      errorCode: v,
-      errorMessage: S
+      errorCode: A,
+      errorMessage: I
     }
   }
   startTracking(e) {

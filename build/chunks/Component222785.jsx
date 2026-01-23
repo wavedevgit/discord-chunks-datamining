@@ -263,13 +263,13 @@ let X = Chunk64700.memo(function(e) {
       }), (0, _.Rg)(t) && (0, _.q0)(t) && (0, i.jsx)(c.Drp, {
         id: "guild-tag",
         label: H.intl.string(J.default.mf2OwH),
-        icon: (0, i.jsx)(E.o9, {
+        icon: (0, i.jsx)(w.o9, {
           guildId: t.id,
           guildBadge: t.profile.badge,
           guildTag: t.profile.tag,
           inline: false
         }),
-        action: () => (0, w.A)(t.id)
+        action: () => (0, E.A)(t.id)
       })]
     }), (0, i.jsxs)(c.rXV, {
       children: [z && Y.isStaff() && eO ? (0, i.jsx)(c.Drp, {

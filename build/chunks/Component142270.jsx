@@ -2,7 +2,7 @@
 /** chunk id: 142270, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  SS: () => b,
+  SS: () => y,
   cP: () => E
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -24,36 +24,36 @@ let E = {
     START: Chunk847688.Vl,
     END: Chunk847688.Wk
   },
-  b = e => {
+  y = e => {
     let {
       showNotificationBadge: t,
       ctaText: n,
       ctaOnClick: a,
-      analyticsPage: b,
-      linkText: y = m.intl.string(m.t.XRdyjz),
+      analyticsPage: y,
+      linkText: b = m.intl.string(m.t.XRdyjz),
       cardAlignment: O = E.START,
-      className: A
+      className: v
     } = e, {
-      balance: v
+      balance: A
     } = (0, d.W)(), {
-      isInTreatment: S
-    } = (0, l.uX)("BalanceWidgetMenu"), [I, T] = i.useState(f.k.DEFAULT), [C, N] = i.useState(false), [R, w] = i.useState(false), P = i.useRef(null), D = i.useCallback(() => {
+      isInTreatment: I
+    } = (0, l.uX)("BalanceWidgetMenu"), [S, T] = i.useState(f.k.DEFAULT), [C, N] = i.useState(false), [R, w] = i.useState(false), P = i.useRef(null), D = i.useCallback(() => {
       let e = !C;
-      e && null != b && (0, u.Y)({
-        pageType: b,
+      e && null != y && (0, u.Y)({
+        pageType: y,
         sectionType: h.JJy.ORBS_BALANCE_MENU,
         ctaObject: h.ZSU.OPEN_ORB_BALANCE_MENU_FROM_PILL
       }), T(e ? f.k.SELECTED : f.k.DEFAULT), N(e)
-    }, [C, b]), x = i.useCallback(() => {
+    }, [C, y]), x = i.useCallback(() => {
       C && D()
     }, [C, D]), L = (0, o.A)(null, x), j = i.useMemo(() => (0, r.jsx)(p.b, {
-      analyticsPage: b,
+      analyticsPage: y,
       ctaText: n,
       ctaOnClick: () => {
         D(), a()
       },
-      linkText: y
-    }), [b, n, y, D, a]), M = i.useMemo(() => (0, r.jsx)(c.A, {
+      linkText: b
+    }), [y, n, b, D, a]), M = i.useMemo(() => (0, r.jsx)(c.A, {
       targetElementRef: P,
       shouldShow: C,
       onRequestClose: D,
@@ -63,20 +63,20 @@ let E = {
       }
     }), [C, D, n, a]);
     return (0, r.jsxs)("div", {
-      className: s()(g.kL, A, {
+      className: s()(g.kL, v, {
         [g.R]: R,
         [g.RK]: !R
       }),
       children: [(0, r.jsx)(_.J, {
         pillRef: P,
-        balance: v,
-        balanceWidgetMode: I,
+        balance: A,
+        balanceWidgetMode: S,
         onMouseDown: e => {
           e.stopPropagation()
         },
         onClick: D,
         showNotificationBadge: t
-      }), S ? M : C && (0, r.jsx)("div", {
+      }), I ? M : C && (0, r.jsx)("div", {
         className: s()(g.Ui, O, {
           [g.R]: R,
           [g.RK]: !R
@@ -86,4 +86,4 @@ let E = {
       })]
     })
   };
-b.CardAlignment = E
+y.CardAlignment = E

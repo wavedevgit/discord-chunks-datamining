@@ -17,9 +17,9 @@ let u = function(e) {
     u = arguments.length > 3 && true !== arguments[3] && arguments[3],
     d = (0, s.bG)([o.A], () => o.A.validate(e), [e]),
     h = (0, s.bG)([o.A], () => o.A.isRateLimited()),
-    f = (0, a.G)(),
-    p = r.useMemo(() => (0, i.debounce)(e => l.A.attemptPomelo(e, n ? "registration" : "modal", n, u), f), [f, n, u]);
+    p = (0, a.G)(),
+    g = r.useMemo(() => (0, i.debounce)(e => l.A.attemptPomelo(e, n ? "registration" : "modal", n, u), p), [p, n, u]);
   return r.useEffect(() => {
-    t && !h && null == d && "" !== e && p(e)
-  }, [t, h, d, e, p]), r.useMemo(() => null != d ? (0, c.z2)(d) : true, [d])
+    t && !h && null == d && "" !== e && g(e)
+  }, [t, h, d, e, g]), r.useMemo(() => null != d ? (0, c.z2)(d) : true, [d])
 }

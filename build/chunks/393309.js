@@ -59,7 +59,7 @@ function j(e, t) {
 
 function M(e, t) {
   var n, r, i, a, s, o, l;
-  let c = null == t ? null : y.A.getMessage(e.id, t),
+  let c = null == t ? null : b.A.getMessage(e.id, t),
     u = null != (n = null == c || null == (a = c.embeds) || null == (i = a[0]) ? true : i.rawTitle) ? n : "",
     d = null != (r = null == c || null == (o = c.poll) || null == (s = o.question) ? true : s.text) ? r : "";
   if ("" !== u) return j(u, 40);
@@ -107,22 +107,22 @@ function k(e) {
       let e = M(t, n);
       g = "" !== e ? e : P.intl.string(P.t["7Xm5QI"])
     }
-    let y = (0, I.Gl)(t),
-      O = E.A.getChannel(v.default.castMessageIdAsChannelId(n)),
-      A = await F(t, [], true, () => {
+    let b = (0, S.Gl)(t),
+      O = E.A.getChannel(A.default.castMessageIdAsChannelId(n)),
+      v = await F(t, [], true, () => {
         let e = null != n ? R.Rsh.CHANNEL_MESSAGE_THREADS(t.id, n) : R.Rsh.CHANNEL_THREADS(t.id);
         return a.Bo.post({
           url: e,
           body: {
             name: g,
             type: m ? R.rbe.PRIVATE_THREAD : t.type === R.rbe.GUILD_ANNOUNCEMENT ? R.rbe.ANNOUNCEMENT_THREAD : R.rbe.PUBLIC_THREAD,
-            auto_archive_duration: y,
+            auto_archive_duration: b,
             location: o
           },
           rejectWithError: false
         })
       });
-    A !== O && (l.A.clearDraft(t.id, b.C.ThreadSettings), l.A.clearDraft(t.id, b.C.FirstThreadMessage), null == c || c(A), (h || e.length > 0 || null != r && r.length > 0 || null != p && p.length > 0) && V(A, e, r, p, f)), u.A.clearAll(t.id, b.C.FirstThreadMessage)
+    v !== O && (l.A.clearDraft(t.id, y.C.ThreadSettings), l.A.clearDraft(t.id, y.C.FirstThreadMessage), null == c || c(v), (h || e.length > 0 || null != r && r.length > 0 || null != p && p.length > 0) && V(v, e, r, p, f)), u.A.clearAll(t.id, y.C.FirstThreadMessage)
   }, [t, n, i, c, s, o, d, f])
 }
 
@@ -150,11 +150,11 @@ function G(e) {
   } = e;
   return r.useCallback(async (e, r, f) => {
     let h, m = 0,
-      [E, y] = (0, g.A)(e);
-    E && (e = y, m = (0, i.UI)(m, R.pr7.SUPPRESS_NOTIFICATIONS));
-    let O = (0, I.Gl)(t, null),
-      A = R.Rsh.CHANNEL_THREADS(t.id) + "?use_nested_fields=true",
-      v = {
+      [E, b] = (0, g.A)(e);
+    E && (e = b, m = (0, i.UI)(m, R.pr7.SUPPRESS_NOTIFICATIONS));
+    let O = (0, S.Gl)(t, null),
+      v = R.Rsh.CHANNEL_THREADS(t.id) + "?use_nested_fields=true",
+      A = {
         name: n,
         auto_archive_duration: O,
         applied_tags: s,
@@ -166,7 +166,7 @@ function G(e) {
       };
     if (null != f && f.length > 0) try {
       let e = await d(f);
-      h = e.uploaderFile, v.message.attachments = e.files.map((e, t) => (0, S.OW)(e, t))
+      h = e.uploaderFile, A.message.attachments = e.files.map((e, t) => (0, I.OW)(e, t))
     } catch (i) {
       let {
         file: e,
@@ -182,11 +182,11 @@ function G(e) {
       }), i
     }
     let T = await F(t, o, h, () => a.Bo.post({
-      url: A,
-      body: v,
+      url: v,
+      body: A,
       rejectWithError: false
     }));
-    return l.A.clearDraft(t.id, b.C.ThreadSettings), l.A.clearDraft(t.id, b.C.FirstThreadMessage), u.A.clearAll(t.id, b.C.FirstThreadMessage), (0, p.Lj)({
+    return l.A.clearDraft(t.id, y.C.ThreadSettings), l.A.clearDraft(t.id, y.C.FirstThreadMessage), u.A.clearAll(t.id, y.C.FirstThreadMessage), (0, p.Lj)({
       guildId: t.guild_id,
       channelId: t.id,
       postId: T.id
@@ -218,7 +218,7 @@ async function F(e, t, n, r) {
       channelId: i.body.id
     }))
   } catch (r) {
-    var l, u, p, h, g, b, y, v, S;
+    var l, u, p, h, g, y, b, A, I;
     if ((null == (l = r.body) ? true : l.code) === R.t02.TOO_MANY_THREADS) o.A.show({
       title: a ? P.intl.string(P.t.vWNFkx) : P.intl.string(P.t["1KEdvB"]),
       body: a ? P.intl.string(P.t.KGaiEK) : P.intl.string(P.t.P0wT5S)
@@ -228,12 +228,12 @@ async function F(e, t, n, r) {
       body: P.intl.string(P.t.jDMxz2)
     });
     else if ((null == (p = r.body) ? true : p.code) === R.t02.SLOWMODE_RATE_LIMITED) {
-      let t = null != (b = r.body.retry_after) ? b : 0;
+      let t = null != (y = r.body.retry_after) ? y : 0;
       t > 0 && s.h.dispatch({
         type: "SLOWMODE_SET_COOLDOWN",
         channelId: e.id,
         slowmodeType: O.R.CreateThread,
-        cooldownMs: t * A.A.Millis.SECOND
+        cooldownMs: t * v.A.Millis.SECOND
       })
     } else if (429 === r.status) o.A.show({
       title: a ? P.intl.string(P.t.vWNFkx) : P.intl.string(P.t["1KEdvB"]),
@@ -242,7 +242,7 @@ async function F(e, t, n, r) {
     else if (N.$j.has(null == (h = r.body) ? true : h.code)) throw r;
     else if (N.F4.has(null == (g = r.body) ? true : g.code)) {
       if (null != n)
-        if ((null == (y = r.body) ? true : y.code) === R.t02.EXPLICIT_CONTENT) {
+        if ((null == (b = r.body) ? true : b.code) === R.t02.EXPLICIT_CONTENT) {
           let t = (0, m.m)();
           null != r.body.attachments && r.body.attachments.length > 0 && (s.h.dispatch({
             type: "MESSAGE_EXPLICIT_CONTENT_FP_CREATE",
@@ -254,8 +254,8 @@ async function F(e, t, n, r) {
           file: n,
           guildId: e.getGuildId(),
           analyticsLocations: null != t ? t : [],
-          code: null == (v = r.body) ? true : v.code,
-          reason: null == (S = r.body) ? true : S.reason
+          code: null == (A = r.body) ? true : A.code,
+          reason: null == (I = r.body) ? true : I.reason
         });
       return new Promise((e, t) => {
         null == r.body && t(), d.A.addConditionalChangeListener(() => {
@@ -273,7 +273,7 @@ async function F(e, t, n, r) {
       body: P.intl.string(P.t.fEptJP)
     })
   }
-  let I = await new Promise((e, t) => {
+  let S = await new Promise((e, t) => {
     null == i.body && t(), E.A.addConditionalChangeListener(() => {
       let t = E.A.getChannel(i.body.id);
       if (null != t) return s.h.wait(() => {
@@ -283,9 +283,9 @@ async function F(e, t, n, r) {
   });
   try {
     await c.A.fetchMessages({
-      channelId: I.id,
+      channelId: S.id,
       limit: R.EMb
     })
   } catch (e) {}
-  return I
+  return S
 }

@@ -2,7 +2,7 @@
 /** chunk id: 942236, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -21,18 +21,18 @@ var Chunk684013 = require("./684013.js"),
   Chunk672396 = require("./672396.js"),
   Chunk985018 = require("./985018.jsx");
 
-function A(e, t, n, A) {
-  var m;
+function m(e, t, n, m) {
+  var b;
   let {
     icon: O,
-    title: v,
-    body: E
+    title: _,
+    body: v
   } = (0, s.TB)(e, t, n), {
-    trackView: x,
-    trackClick: S
-  } = (0, f.Y)(g.KS.TextChat, {
-    notif_type: g.KS.TextChat,
-    notif_user_id: null == (m = t.author) ? true : m.id,
+    trackView: E,
+    trackClick: x
+  } = (0, f.Y)(y.KS.TextChat, {
+    notif_type: y.KS.TextChat,
+    notif_user_id: null == (b = t.author) ? true : b.id,
     message_id: t.id,
     message_type: t.type,
     guild_id: e.guild_id,
@@ -41,26 +41,26 @@ function A(e, t, n, A) {
   });
   return {
     icon: O,
-    title: v,
-    body: E,
+    title: _,
+    body: v,
     renderFooter: e => e ? (0, i.jsx)("div", {
       style: {
         textAlign: "center"
       },
-      children: y.intl.string(y.t["+MJm3w"])
+      children: A.intl.string(A.t["+MJm3w"])
     }) : null,
     maxBodyLines: 2,
     onNotificationShow: () => {
-      A && (0, a.Ak)(c.cH, c.pD), x()
+      m && (0, a.Ak)(c.cH, c.pD), E()
     },
     onNotificationClick: () => {
       if (l.default.isOverlayOOPEnabledForPid((0, p.getPID)())) {
         let n = (0, p.getPID)();
-        d.default.isInstanceLocked() ? (S("unlock"), r.A.setInputLocked(false, n)) : (S("jump"), (0, o.pX)(b.BVt.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && h.Ay.focus())
-      } else(0, o.pX)(b.BVt.CHANNEL(e.guild_id, e.id)), S("jump"), d.default.isInstanceLocked() && r.A.setInstanceLocked(false)
+        d.default.isInstanceLocked() ? (x("unlock"), r.A.setInputLocked(false, n)) : (x("jump"), (0, o.pX)(g.BVt.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && h.Ay.focus())
+      } else(0, o.pX)(g.BVt.CHANNEL(e.guild_id, e.id)), x("jump"), d.default.isInstanceLocked() && r.A.setInstanceLocked(false)
     },
     onDismissClick: () => {
-      S("dismiss")
+      x("dismiss")
     }
   }
 }

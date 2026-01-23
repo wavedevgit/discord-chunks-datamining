@@ -2,7 +2,7 @@
 /** chunk id: 695206, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./801541.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -52,7 +52,7 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     buttonLabel: t,
     secondaryLabel: n,
@@ -81,7 +81,7 @@ function b(e) {
   })
 }
 
-function y(e, t) {
+function b(e, t) {
   let n = {
     answers: t.answers,
     answersInteraction: t.answersInteraction,
@@ -125,7 +125,7 @@ function O(e) {
     text: t.label,
     variant: "secondary",
     textVariant: "text-sm/medium"
-  }) : (0, r.jsx)(b, {
+  }) : (0, r.jsx)(y, {
     buttonLabel: t.label,
     secondaryLabel: t.secondaryLabel,
     handleClick: f,
@@ -134,12 +134,12 @@ function O(e) {
   })
 }
 
-function A(e) {
+function v(e) {
   let {
     message: t,
     poll: n,
     className: i
-  } = e, a = (0, f.hd)(n.containerStyle), o = y(t, n);
+  } = e, a = (0, f.hd)(n.containerStyle), o = b(t, n);
   return null == o ? null : (0, r.jsx)("div", {
     className: s()(h.kL, a, i),
     children: (0, r.jsxs)(c.Fmo, {
@@ -177,7 +177,7 @@ function A(e) {
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     message: t,
     poll: n,
@@ -187,7 +187,7 @@ function v(e) {
     message: t,
     poll: n,
     children: (0, r.jsx)(p.RZ, {
-      children: (0, r.jsx)(A, {
+      children: (0, r.jsx)(v, {
         message: t,
         poll: n,
         className: i

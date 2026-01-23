@@ -2,8 +2,8 @@
 /** chunk id: 71855, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  LI: () => b,
-  cq: () => I,
+  LI: () => y,
+  cq: () => S,
   m2: () => E,
   v5: () => T
 });
@@ -30,33 +30,33 @@ function E(e) {
   return t ? "refresh-title-bar-small" : true
 }
 
-function b(e) {
+function y(e) {
   let {
     isPopoutWindow: t
   } = e;
   return t ? 16 : 24
 }
-let y = e => _.Ay.close(e),
+let b = e => _.Ay.close(e),
   O = e => _.Ay.minimize(e),
-  A = e => _.Ay.maximize(e);
+  v = e => _.Ay.maximize(e);
 
-function v(e) {
+function A(e) {
   e.stopPropagation()
 }
 
-function S(e) {
+function I(e) {
   let {
     windowKey: t,
     showDivider: n
   } = e, i = (0, r.jsx)(o.DUT, {
     className: s()(m.R6, m.d1),
-    onClick: () => y(t),
+    onClick: () => b(t),
     "aria-label": h.intl.string(h.t.ZdNUj2),
     tabIndex: false,
     children: (0, r.jsx)(u.A, {})
   }), a = (0, r.jsx)(o.DUT, {
     className: s()(m.R6, m.T0),
-    onClick: () => A(t),
+    onClick: () => v(t),
     "aria-label": h.intl.string(h.t.G1u0hK),
     tabIndex: false,
     children: (0, r.jsx)(d.A, {})
@@ -75,28 +75,28 @@ function S(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     leading: t,
     title: n,
     trailing: a,
     windowKey: o,
     className: l
-  } = e, c = (0, p.getPlatform)(), u = i.useCallback(() => A(o), [o]), d = c === p.PlatformTypes.WINDOWS || c === p.PlatformTypes.LINUX;
+  } = e, c = (0, p.getPlatform)(), u = i.useCallback(() => v(o), [o]), d = c === p.PlatformTypes.WINDOWS || c === p.PlatformTypes.LINUX;
   return (0, r.jsxs)("div", {
     className: s()(m.M0, l),
     onDoubleClick: u,
     children: [(0, r.jsx)("div", {
       className: m.R4,
-      onDoubleClick: v,
+      onDoubleClick: A,
       children: t
     }), (0, r.jsx)("div", {
       className: m.DD,
       children: n
     }), (0, r.jsxs)("div", {
       className: m.ZY,
-      onDoubleClick: v,
-      children: [a, d && (0, r.jsx)(S, {
+      onDoubleClick: A,
+      children: [a, d && (0, r.jsx)(I, {
         windowKey: o,
         showDivider: null != a
       })]
@@ -113,7 +113,7 @@ function T(e) {
     c.A.isOpen() && (0, l.jD)()
   }, []), d = i.useCallback(() => {
     let e = c.A.getLastShowTimestamp();
-    null != e && Date.now() - e < g || A(a)
+    null != e && Date.now() - e < g || v(a)
   }, [a]), f = o === p.PlatformTypes.WINDOWS;
   if (o === p.PlatformTypes.WEB) return null;
   let _ = f || o === p.PlatformTypes.LINUX;
@@ -126,8 +126,8 @@ function T(e) {
     onDoubleClick: d,
     children: _ && (0, r.jsx)("div", {
       className: m.ZY,
-      onDoubleClick: v,
-      children: (0, r.jsx)(S, {
+      onDoubleClick: A,
+      children: (0, r.jsx)(I, {
         windowKey: a
       })
     })

@@ -1,23 +1,23 @@
 /** Chunk was on 96811 **/
 /** chunk id: 213279, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  p: () => s
+  p: () => l
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk397927 = require("./397927.js");
-let s = e => {
+let l = e => {
   let {
     analyticsLocation: t,
-    onClose: s
+    onClose: l
   } = e;
-  (0, l.mMO)(async () => {
+  (0, i.mMO)(async () => {
     let {
       default: e
     } = await r.e("18630").then(r.bind(r, 826789));
     return r => {
-      var l, i;
-      return (0, n.jsx)(e, (l = function(e) {
+      var i, s;
+      return (0, n.jsx)(e, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -34,22 +34,22 @@ let s = e => {
           })
         }
         return e
-      }({}, r), i = i = {
+      }({}, r), s = s = {
         analyticsSource: t,
         onClose: () => {
           var e;
-          return null == s || s(), null == (e = r.onClose) ? true : e.call(r)
+          return null == l || l(), null == (e = r.onClose) ? true : e.call(r)
         }
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
           r.push.apply(r, n)
         }
         return r
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
-      }), l))
+      })(Object(s)).forEach(function(e) {
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
+      }), i))
     }
   })
 }

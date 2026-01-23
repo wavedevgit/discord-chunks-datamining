@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk284009 = require("./284009.js"),
-  r = require.n(Chunk284009),
+  i = require.n(Chunk284009),
   Chunk889137 = require("./889137.js"),
   Chunk412703 = require("./412703.js"),
   Chunk440703 = require("./440703.js"),
@@ -167,12 +167,12 @@ let F = "1193992107035983872",
   };
 
 function W() {
-  var e, t, i, d, u, R;
+  var e, t, r, d, u, R;
   let [F, W] = l.useState(V), H = l.useCallback(e => {
     W(M(D({}, e), {
       preview: true
     }))
-  }, []), [K, z] = l.useState(I.b.UNENROLLED), [q, Q] = l.useState(false), [Y, J] = l.useState(false), [X, Z] = l.useState(null), $ = (R = F.config, (0, s.YW)(R).with({
+  }, []), [K, z] = l.useState(w.b.UNENROLLED), [q, Q] = l.useState(false), [Y, J] = l.useState(false), [X, Z] = l.useState(null), $ = (R = F.config, (0, s.YW)(R).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -272,16 +272,16 @@ function W() {
     }))
   }
 
-  function ei() {
-    (0, h.tU)(F.config) && (0, k.hJ)(F, p.uF.GIFT_INVENTORY_FOR_YOU, p.uF.INTERNAL_PREVIEW_TOOL, true)
+  function er() {
+    (0, h.tU)(F.config) && (0, I.hJ)(F, p.uF.GIFT_INVENTORY_FOR_YOU, p.uF.INTERNAL_PREVIEW_TOOL, true)
   }
-  let er = l.useMemo(() => {
+  let ei = l.useMemo(() => {
       for (let [e, t] of Object.entries(F.config.taskConfigV2.tasks))
         if (null != t.target) return t.target;
-      return 10 * w.A.Seconds.MINUTE
+      return 10 * k.A.Seconds.MINUTE
     }, [F.config.taskConfigV2.tasks]),
     es = l.useMemo(() => o.n.WATCH_VIDEO in F.config.taskConfigV2.tasks, [F.config.taskConfigV2.tasks]);
-  r()(false !== F.preview && null != F.preview, "Preview config must have property preview: true");
+  i()(false !== F.preview && null != F.preview, "Preview config must have property preview: true");
   let eo = F.config.taskConfigV2.tasks[o.n.WATCH_VIDEO];
   return (0, a.jsxs)(m.IpV, {
     className: P.kL,
@@ -294,13 +294,13 @@ function W() {
       children: (0, a.jsx)(E.A, {
         onSelect: function(e) {
           Z(e), null == e || (z(function(e) {
-            if (null == e.userStatus) return I.b.UNENROLLED;
-            if (null != e.userStatus.claimedAt) return I.b.CLAIMED;
-            if (null != e.userStatus.completedAt) return I.b.COMPLETED_100;
-            let t = (0, f.Yh)(e),
+            if (null == e.userStatus) return w.b.UNENROLLED;
+            if (null != e.userStatus.claimedAt) return w.b.CLAIMED;
+            if (null != e.userStatus.completedAt) return w.b.COMPLETED_100;
+            let t = (0, x.Yh)(e),
               n = t.progressSeconds,
               a = t.targetSeconds;
-            return n / a >= 1 ? I.b.COMPLETED_100 : n / a >= .75 ? I.b.COMPLETED_75 : n / a >= .5 ? I.b.COMPLETED_50 : n / a >= .25 ? I.b.COMPLETED_25 : I.b.ENROLLED
+            return n / a >= 1 ? w.b.COMPLETED_100 : n / a >= .75 ? w.b.COMPLETED_75 : n / a >= .5 ? w.b.COMPLETED_50 : n / a >= .25 ? w.b.COMPLETED_25 : w.b.ENROLLED
           }(e)), H(e))
         },
         quest: X
@@ -311,8 +311,8 @@ function W() {
       children: "Task Config"
     }), (0, a.jsx)("div", {
       className: P.OA,
-      children: (0, a.jsx)(N.A, {
-        taskDuration: er,
+      children: (0, a.jsx)(T.A, {
+        taskDuration: ei,
         taskConfigV2: F.config.taskConfigV2,
         onSelect: function(e) {
           H(M(D({}, F), {
@@ -421,7 +421,7 @@ function W() {
           assetKey: "videoPlayerVideoLowRes",
           onFileChange: et,
           filters: B,
-          initialValue: null == eo || null == (i = eo.assets.videoLowRes) ? true : i.url
+          initialValue: null == eo || null == (r = eo.assets.videoLowRes) ? true : r.url
         }), (0, a.jsx)(S.A, {
           title: "Video Player Thumbnail (optional)",
           assetKey: "videoPlayerThumbnail",
@@ -478,7 +478,7 @@ function W() {
           }), (0, a.jsx)(m.Button, {
             variant: "primary",
             text: "Open Reward Modal",
-            onClick: ei
+            onClick: er
           })]
         })]
       })]
@@ -506,62 +506,62 @@ function W() {
         })]
       }), (0, a.jsx)("div", {
         className: P.OA,
-        children: (0, a.jsx)(T.A, {})
-      }), (0, a.jsx)(I.A, {
+        children: (0, a.jsx)(N.A, {})
+      }), (0, a.jsx)(w.A, {
         onChange: function(e) {
           switch (z(e), e) {
-            case I.b.UNENROLLED:
+            case w.b.UNENROLLED:
               H(M(D({}, F), {
                 userStatus: null
               }));
               break;
-            case I.b.ENROLLED:
+            case w.b.ENROLLED:
               H(M(D({}, F), {
                 userStatus: G({
                   enrolledAt: new Date().toISOString()
                 })
               }));
               break;
-            case I.b.COMPLETED_25:
+            case w.b.COMPLETED_25:
               H(M(D({}, F), {
                 userStatus: G({
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: .25 * er
+                  streamProgressSeconds: .25 * ei
                 })
               }));
               break;
-            case I.b.COMPLETED_50:
+            case w.b.COMPLETED_50:
               H(M(D({}, F), {
                 userStatus: G({
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: .5 * er
+                  streamProgressSeconds: .5 * ei
                 })
               }));
               break;
-            case I.b.COMPLETED_75:
+            case w.b.COMPLETED_75:
               H(M(D({}, F), {
                 userStatus: G({
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: .75 * er
+                  streamProgressSeconds: .75 * ei
                 })
               }));
               break;
-            case I.b.COMPLETED_100:
+            case w.b.COMPLETED_100:
               H(M(D({}, F), {
                 userStatus: G({
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: er
+                  streamProgressSeconds: ei
                 })
               }));
               break;
-            case I.b.CLAIMED:
+            case w.b.CLAIMED:
               H(M(D({}, F), {
                 userStatus: G({
                   claimedAt: new Date().toISOString(),
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: er
+                  streamProgressSeconds: ei
                 })
               }))
           }
@@ -587,12 +587,12 @@ function W() {
             children: "The Quest Bar is hidden when the user has claimed the reward."
           }), (0, a.jsx)("div", {
             className: P.ok,
-            children: (0, a.jsx)(x.jY, {
+            children: (0, a.jsx)(g.jY, {
               isPreview: true,
               source: "preview",
               questId: "0",
-              children: (0, a.jsx)(g.A, {
-                children: (0, a.jsx)(b.Y, {
+              children: (0, a.jsx)(b.A, {
+                children: (0, a.jsx)(f.Y, {
                   quest: F
                 })
               })
@@ -604,11 +604,11 @@ function W() {
         children: [(0, a.jsx)(m.Heading, {
           variant: "heading-sm/semibold",
           children: "Quest Home Card"
-        }), (0, a.jsx)(x.jY, {
+        }), (0, a.jsx)(g.jY, {
           isPreview: true,
           source: "preview",
           questId: "0",
-          children: (0, a.jsx)(_.A, {
+          children: (0, a.jsx)(y.A, {
             quest: F,
             className: P.d,
             questContent: p.uF.QUEST_HOME_DESKTOP,
@@ -628,7 +628,7 @@ function W() {
           children: "The Quest Channel Call Header is hidden when the user has claimed the reward."
         }), (0, a.jsx)("div", {
           className: P.l4,
-          children: (0, a.jsx)(x.jY, {
+          children: (0, a.jsx)(g.jY, {
             isPreview: true,
             source: "preview",
             questId: "0",
@@ -658,7 +658,7 @@ function W() {
           children: "Quest Card Embed"
         }), Y ? (0, a.jsx)(j.l, {
           questId: F.id
-        }) : (0, a.jsx)(y.R, {
+        }) : (0, a.jsx)(_.R, {
           quest: F,
           location: p.uF.QUESTS_EMBED,
           sourceQuestContent: p.uF.INTERNAL_PREVIEW_TOOL

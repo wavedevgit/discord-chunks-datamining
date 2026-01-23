@@ -130,42 +130,42 @@ async function m(e) {
         o = false,
         g = null,
         E = null,
-        b = () => {
-          n || (n = true, clearTimeout(y), null != E && clearTimeout(E), t(i))
+        y = () => {
+          n || (n = true, clearTimeout(b), null != E && clearTimeout(E), t(i))
         },
-        y = setTimeout(() => {
-          r.warn("Timeout after", _, "ms, moov atom not found"), b()
+        b = setTimeout(() => {
+          r.warn("Timeout after", _, "ms, moov atom not found"), y()
         }, _);
       m.onReady = e => {
-        var r, i, o, l, c, f, p, _, h, m, g, b, O, A, v;
+        var r, i, o, l, c, f, p, _, h, m, g, y, O, v, A;
         if (n) return;
-        n = true, clearTimeout(y), null != E && clearTimeout(E);
-        let S = e.videoTracks[0],
-          I = e.audioTracks[0],
+        n = true, clearTimeout(b), null != E && clearTimeout(E);
+        let I = e.videoTracks[0],
+          S = e.audioTracks[0],
           T = {
-            videoCodec: null != (r = null == S ? true : S.codec) ? r : null,
-            audioCodec: null != (i = null == I ? true : I.codec) ? i : null,
-            videoCodecDescription: null != S ? a(S.codec) : null,
-            audioCodecDescription: null != I ? s(I.codec) : null,
-            videoBitrate: null != (o = null == S ? true : S.bitrate) ? o : null,
-            audioBitrate: null != (l = null == I ? true : I.bitrate) ? l : null,
-            audioChannels: null != (c = null == I || null == (b = I.audio) ? true : b.channel_count) ? c : null,
-            audioSampleRate: null != (f = null == I || null == (O = I.audio) ? true : O.sample_rate) ? f : null,
-            frameRate: null != S ? d(S) : null,
-            videoWidth: null != (p = null == S || null == (A = S.video) ? true : A.width) ? p : null,
-            videoHeight: null != (_ = null == S || null == (v = S.video) ? true : v.height) ? _ : null,
+            videoCodec: null != (r = null == I ? true : I.codec) ? r : null,
+            audioCodec: null != (i = null == S ? true : S.codec) ? i : null,
+            videoCodecDescription: null != I ? a(I.codec) : null,
+            audioCodecDescription: null != S ? s(S.codec) : null,
+            videoBitrate: null != (o = null == I ? true : I.bitrate) ? o : null,
+            audioBitrate: null != (l = null == S ? true : S.bitrate) ? l : null,
+            audioChannels: null != (c = null == S || null == (y = S.audio) ? true : y.channel_count) ? c : null,
+            audioSampleRate: null != (f = null == S || null == (O = S.audio) ? true : O.sample_rate) ? f : null,
+            frameRate: null != I ? d(I) : null,
+            videoWidth: null != (p = null == I || null == (v = I.video) ? true : v.width) ? p : null,
+            videoHeight: null != (_ = null == I || null == (A = I.video) ? true : A.height) ? _ : null,
             isProgressive: null != (h = e.isProgressive) ? h : null,
             isFragmented: null != (m = e.isFragmented) ? m : null,
             containerFormat: u(null != (g = e.brands) ? g : [])
           };
         t(T)
       }, m.onError = () => {
-        b()
+        y()
       }, m.onSeek = async t => {
         if (n || o || null == l || !(l > f)) {
           if (o) {
             if (null != g && performance.now() - g < h) return;
-            b();
+            y();
             return
           }
         } else {
@@ -186,16 +186,16 @@ async function m(e) {
                 m.appendBuffer(i), m.flush(), g = performance.now();
                 return
               } catch (e) {
-                r.warn("Failed to append end chunk:", e), b();
+                r.warn("Failed to append end chunk:", e), y();
                 return
               }
             }
           } catch (e) {
             r.warn("Failed to fetch end chunk:", e)
           }
-          b();
+          y();
           return
-        }(null == l || l <= f) && b()
+        }(null == l || l <= f) && y()
       };
       let O = c;
       O.fileStart = 0;
@@ -207,7 +207,7 @@ async function m(e) {
           })
         }, 500)
       } catch (e) {
-        b()
+        y()
       }
     })
   } catch (e) {

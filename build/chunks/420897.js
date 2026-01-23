@@ -81,23 +81,23 @@ let g = {
   },
   [f]: {
     description: "Clipboard",
-    path: y
+    path: b
   }
 };
 
 function E(e, t) {
   let n = 8,
     r = [];
-  for (let i = 0; i < _; i += n) r.push(b(e, t + i));
+  for (let i = 0; i < _; i += n) r.push(y(e, t + i));
   return r
 }
 
-function b(e, t) {
+function y(e, t) {
   let n = O(e, t, 8);
   return [O(e, t + 4, 8), n]
 }
 
-function y(e, t) {
+function b(e, t) {
   return [
     [O(e, t, 8), O(e, t + 4, 8), O(e, t + 8, 8), O(e, t + 12, 8)], O(e, t + 16, 8)
   ]

@@ -44,10 +44,10 @@ function P(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     n = C[e];
   if (null != n) return n;
-  let r = v.default.getCurrentUser();
-  if (null == r) return b.x3;
-  let i = A.A.getGuild(e);
-  return null == i ? b.x3 : C[e] = b.cc({
+  let r = A.default.getCurrentUser();
+  if (null == r) return y.x3;
+  let i = v.A.getGuild(e);
+  return null == i ? y.x3 : C[e] = y.cc({
     user: r,
     context: i,
     checkElevated: t
@@ -57,13 +57,13 @@ function P(e) {
 function D(e) {
   var t;
   let n = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    r = v.default.getCurrentUser();
-  if (null == r) return b.x3;
-  let i = y.A.getChannel(e);
-  if (null == i) return b.x3;
+    r = A.default.getCurrentUser();
+  if (null == r) return y.x3;
+  let i = b.A.getChannel(e);
+  if (null == i) return y.x3;
   let s = i.getGuildId(),
     o = null != s && (u.A.isLurking(s) || (null == (t = O.Ay.getMember(s, r.id)) ? true : t.isPending));
-  return !i.isScheduledForDeletion() && !o && a().isEmpty(i.permissionOverwrites) && null != s ? P(s) : b.cc({
+  return !i.isScheduledForDeletion() && !o && a().isEmpty(i.permissionOverwrites) && null != s ? P(s) : y.cc({
     user: r,
     context: i,
     checkElevated: n
@@ -105,7 +105,7 @@ function G(e) {
   let {
     user: n
   } = e;
-  if (n.id !== (null == (t = v.default.getCurrentUser()) ? true : t.id)) returnfalse;
+  if (n.id !== (null == (t = A.default.getCurrentUser()) ? true : t.id)) returnfalse;
   j()
 }
 
@@ -114,10 +114,10 @@ function V(e) {
     channel: {
       id: t
     }
-  } = e, n = y.A.getChannel(t);
+  } = e, n = b.A.getChannel(t);
   if (null == n || n.isPrivate()) returnfalse;
-  let r = v.default.getCurrentUser(),
-    i = b.cc({
+  let r = A.default.getCurrentUser(),
+    i = y.cc({
       user: r,
       context: n
     });
@@ -133,10 +133,10 @@ function F(e) {
       id: e
     }
     of t) {
-    let t = y.A.getChannel(e);
+    let t = b.A.getChannel(e);
     if (null == t || t.isPrivate()) continue;
-    let r = v.default.getCurrentUser(),
-      i = b.cc({
+    let r = A.default.getCurrentUser(),
+      i = y.cc({
         user: r,
         context: t
       });
@@ -151,7 +151,7 @@ function B() {
 
 function H(e) {
   var t;
-  return (null == (t = v.default.getCurrentUser()) ? true : t.id) === e.userId && (L(e.guildId), true)
+  return (null == (t = A.default.getCurrentUser()) ? true : t.id) === e.userId && (L(e.guildId), true)
 }
 
 function Y(e) {
@@ -190,7 +190,7 @@ function q(e) {
     guildId: t
   } = e;
   delete C[t];
-  let n = y.A.getMutableBasicGuildChannelsForGuild(t);
+  let n = b.A.getMutableBasicGuildChannelsForGuild(t);
   a().forEach(n, e => {
     delete N[e.id]
   }), w += 1, L(t)
@@ -199,10 +199,10 @@ function q(e) {
 function X(e) {
   let {
     instance: t
-  } = e, n = y.A.getChannel(t.channel_id);
+  } = e, n = b.A.getChannel(t.channel_id);
   if (null == n) returnfalse;
-  let r = v.default.getCurrentUser(),
-    i = b.cc({
+  let r = A.default.getCurrentUser(),
+    i = y.cc({
       user: r,
       context: n
     });
@@ -215,23 +215,23 @@ function Z(e) {
     guildId: t
   } = e;
   delete C[t];
-  let n = y.A.getMutableBasicGuildChannelsForGuild(t);
+  let n = b.A.getMutableBasicGuildChannelsForGuild(t);
   a().forEach(n, e => {
     delete N[e.id]
   }), w += 1, L(t)
 }
 
 function Q(e, t, n, r) {
-  let i = b.x3;
+  let i = y.x3;
   if (e instanceof _.YB) {
     if (_.Le.has(e.type)) {
-      let i = y.A.getChannel(e.parent_id);
-      return null == i ? b.x3 : b.TJ(e, Q(i, t, n, r), f.A.hasJoined(e.id), O.Ay.isCurrentUserGuest(e.guild_id))
+      let i = b.A.getChannel(e.parent_id);
+      return null == i ? y.x3 : y.TJ(e, Q(i, t, n, r), f.A.hasJoined(e.id), O.Ay.isCurrentUserGuest(e.guild_id))
     }
     i = x(e.id)
   } else(0, E.fh)(e) && (i = P(e.id));
-  return true !== t || true !== n || true !== r ? b.cc({
-    user: v.default.getCurrentUser(),
+  return true !== t || true !== n || true !== r ? y.cc({
+    user: A.default.getCurrentUser(),
     context: e,
     overwrites: t,
     roles: n,
@@ -241,7 +241,7 @@ function Q(e, t, n, r) {
 }
 class $ extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(y.A, O.Ay, A.A, c.A, f.A, u.A, d.A, v.default)
+    this.waitFor(b.A, O.Ay, v.A, c.A, f.A, u.A, d.A, A.default)
   }
   getChannelPermissions(e) {
     return _.Le.has(e.type) ? D(e.id) : x(e.id)
@@ -250,33 +250,33 @@ class $ extends(r = Chunk311907.Ay.Store) {
     return P(e.id)
   }
   getGuildPermissionProps(e) {
-    let t = v.default.getCurrentUser();
+    let t = A.default.getCurrentUser();
     return {
-      canManageGuild: this.can(S.xBc.MANAGE_GUILD, e),
-      canManageChannels: this.can(S.xBc.MANAGE_CHANNELS, e),
-      canManageRoles: this.can(S.xBc.MANAGE_ROLES, e),
-      canManageBans: this.can(S.xBc.BAN_MEMBERS, e),
-      canManageNicknames: this.can(S.xBc.MANAGE_NICKNAMES, e),
-      canManageGuildExpressions: this.can(S.xBc.MANAGE_GUILD_EXPRESSIONS, e) || this.can(S.xBc.CREATE_GUILD_EXPRESSIONS, e),
-      canViewAuditLog: this.can(S.xBc.VIEW_AUDIT_LOG, e),
-      canViewAuditLogV2: this.can(S.xBc.VIEW_AUDIT_LOG, e),
-      canManageWebhooks: this.can(S.xBc.MANAGE_WEBHOOKS, e),
-      canViewGuildAnalytics: this.can(S.xBc.VIEW_GUILD_ANALYTICS, e),
+      canManageGuild: this.can(I.xBc.MANAGE_GUILD, e),
+      canManageChannels: this.can(I.xBc.MANAGE_CHANNELS, e),
+      canManageRoles: this.can(I.xBc.MANAGE_ROLES, e),
+      canManageBans: this.can(I.xBc.BAN_MEMBERS, e),
+      canManageNicknames: this.can(I.xBc.MANAGE_NICKNAMES, e),
+      canManageGuildExpressions: this.can(I.xBc.MANAGE_GUILD_EXPRESSIONS, e) || this.can(I.xBc.CREATE_GUILD_EXPRESSIONS, e),
+      canViewAuditLog: this.can(I.xBc.VIEW_AUDIT_LOG, e),
+      canViewAuditLogV2: this.can(I.xBc.VIEW_AUDIT_LOG, e),
+      canManageWebhooks: this.can(I.xBc.MANAGE_WEBHOOKS, e),
+      canViewGuildAnalytics: this.can(I.xBc.VIEW_GUILD_ANALYTICS, e),
       canAccessMembersPage: this.canAccessMemberSafetyPage(e),
-      isGuildAdmin: this.can(S.xBc.ADMINISTRATOR, e),
+      isGuildAdmin: this.can(I.xBc.ADMINISTRATOR, e),
       isOwner: null != t && (0, h.bM)(e, t),
       isOwnerWithRequiredMfaLevel: null != t && (0, h.ok)(e, t),
       guild: e
     }
   }
   canAccessMemberSafetyPage(e) {
-    return s.X8(P(e.id), I.M)
+    return s.X8(P(e.id), S.M)
   }
   canAccessGuildSettings(e) {
-    return s.X8(P(e.id), b.yC)
+    return s.X8(P(e.id), y.yC)
   }
   canWithPartialContext(e, t) {
-    return "channelId" in t && "string" == typeof t.channelId ? this.can(e, y.A.getChannel(t.channelId)) : "guildId" in t && "string" == typeof t.guildId && this.can(e, A.A.getGuild(t.guildId))
+    return "channelId" in t && "string" == typeof t.channelId ? this.can(e, b.A.getChannel(t.channelId)) : "guildId" in t && "string" == typeof t.guildId && this.can(e, v.A.getGuild(t.guildId))
   }
   can(e, t, n, r, i) {
     let a = Q(t, n, r, i);
@@ -294,24 +294,24 @@ class $ extends(r = Chunk311907.Ay.Store) {
   canManageUser(e, t, n) {
     let r = t instanceof m.A ? t.id : t;
     if ((0, h.bM)(n, r)) returnfalse;
-    let i = v.default.getCurrentUser();
+    let i = A.default.getCurrentUser();
     if (!this.can(e, n)) returnfalse;
-    let a = null != i ? b.HJ(n, i.id) : true,
-      s = b.HJ(n, r);
-    return null != i && b.wO(n, i.id, a, s)
+    let a = null != i ? y.HJ(n, i.id) : true,
+      s = y.HJ(n, r);
+    return null != i && y.wO(n, i.id, a, s)
   }
   getHighestRole(e) {
-    let t = v.default.getCurrentUser();
-    return null != t ? b.HJ(e, t.id) : null
+    let t = A.default.getCurrentUser();
+    return null != t ? y.HJ(e, t.id) : null
   }
   isRoleHigher(e, t, n) {
-    let r = v.default.getCurrentUser(),
+    let r = A.default.getCurrentUser(),
       i = c.A.isViewingRoles(e.id);
-    return b.wO(e, i || null == r ? true : r.id, t, n)
+    return y.wO(e, i || null == r ? true : r.id, t, n)
   }
   canImpersonateRole(e, t) {
     let n = this.getHighestRole(e),
-      r = this.can(S.xBc.MANAGE_GUILD, e) && this.can(S.xBc.MANAGE_ROLES, e),
+      r = this.can(I.xBc.MANAGE_GUILD, e) && this.can(I.xBc.MANAGE_ROLES, e),
       i = this.isRoleHigher(e, n, t);
     return r && (i || t.id === (null == n ? true : n.id))
   }

@@ -18,7 +18,7 @@ let m = Chunk975571.A.getArticleURL(Chunk652215.MVz.MISSING_ENTITLEMENT),
       applicationId: i
     } = t;
     return {
-      application: r.A.getApplication(i)
+      application: s.A.getApplication(i)
     }
   })(function(t) {
     let {
@@ -31,8 +31,8 @@ let m = Chunk975571.A.getArticleURL(Chunk652215.MVz.MISSING_ENTITLEMENT),
       size: l.rIJ.MEDIUM,
       parentComponent: "MissingEntitlementModal",
       children: [(0, e.jsxs)(l.rQ0, {
-        align: s.A.Align.CENTER,
-        justify: s.A.Justify.BETWEEN,
+        align: r.A.Align.CENTER,
+        justify: r.A.Justify.BETWEEN,
         children: [(0, e.jsx)(l.Heading, {
           variant: "heading-lg/semibold",
           children: null != i ? p.intl.formatToPlainString(p.t.N2mILu, {

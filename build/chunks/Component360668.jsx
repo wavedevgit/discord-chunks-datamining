@@ -2,7 +2,7 @@
 /** chunk id: 360668, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -22,7 +22,7 @@ var Chunk793574 = require("./793574.js"),
   Chunk731854 = require("./731854.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b() {
+function y() {
   let e = s.A.supports(g.O5.SIDECHAIN_COMPRESSION),
     {
       analyticsLocations: t

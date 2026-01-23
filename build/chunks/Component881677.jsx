@@ -26,21 +26,21 @@ function _(e) {
     paymentSources: m,
     hasFetchedPaymentSources: g,
     application: E,
-    skusById: b,
-    selectedSkuId: y
+    skusById: y,
+    selectedSkuId: b
   } = (0, c.P5)(), {
     isGift: O
-  } = (0, l.Pv)(), [A, v] = i.useState(true), [S, I] = (0, a.yK)([o.A], () => [o.A.isFetchingCategories, o.A.error]);
+  } = (0, l.Pv)(), [v, A] = i.useState(true), [I, S] = (0, a.yK)([o.A], () => [o.A.isFetchingCategories, o.A.error]);
   return (i.useEffect(() => {
     let e = null != E;
-    h && g && e && v(S)
-  }, [h, g, E, S]), i.useEffect(() => {
-    if (A || _ || null == y) return;
-    let e = b[y];
+    h && g && e && A(I)
+  }, [h, g, E, I]), i.useEffect(() => {
+    if (v || _ || null == b) return;
+    let e = y[b];
     O && ((null == e ? true : e.productLine) === p.EZt.COLLECTIBLES || (null == e ? true : e.productLine) === p.EZt.APPLICATION || (null == e ? true : e.productLine) === p.EZt.SOCIAL_LAYER_GAME_ITEM) ? t(u.pn.GIFT_CUSTOMIZATION) : 0 === Object.keys(m).length ? t(u.pn.ADD_PAYMENT_STEPS) : t(u.pn.REVIEW)
-  }, [A, _, t, m, O, b, y]), A) ? (0, r.jsx)(f.A, {}) : _ ? (0, r.jsx)(s.oO, {
+  }, [v, _, t, m, O, y, b]), v) ? (0, r.jsx)(f.A, {}) : _ ? (0, r.jsx)(s.oO, {
     onClose: n
-  }) : null != I ? (0, r.jsx)(d.A, {
+  }) : null != S ? (0, r.jsx)(d.A, {
     onClose: n
   }) : null
 }

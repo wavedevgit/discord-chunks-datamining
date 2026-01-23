@@ -13,7 +13,7 @@ function l(t) {
     sku: e,
     title: i
   } = t;
-  return (0, a.jsx)(n.rQ0, {
+  return (0, n.jsx)(a.rQ0, {
     alignCenter: true,
     title: i,
     gradientColor: "purple",

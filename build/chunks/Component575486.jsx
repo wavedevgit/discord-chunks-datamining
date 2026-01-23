@@ -2,8 +2,8 @@
 /** chunk id: 575486, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I,
-  Y: () => S
+  A: () => S,
+  Y: () => I
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,7 +23,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk482361 = require("./482361.js"),
   Chunk378496 = require("./378496.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,13 +39,13 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,12 +56,12 @@ function A(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class S extends Chunk64700.PureComponent {
+class I extends Chunk64700.PureComponent {
   componentDidMount() {
     this.updateCache()
   }
@@ -133,33 +133,33 @@ class S extends Chunk64700.PureComponent {
     } = a, {
       offsetX: g,
       offsetY: E
-    } = this.state, y = {
+    } = this.state, b = {
       left: null != g ? i.x + g : true,
       top: null != E ? i.y + E : true
-    }, A = e => {
+    }, v = e => {
       let t = n && !e;
       returntrue !== u ? null : (0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
-          className: s()(b.Mn, {
-            [b.bW]: t,
-            [b.EO]: !t
+          className: s()(y.Mn, {
+            [y.bW]: t,
+            [y.EO]: !t
           })
         }), (0, r.jsx)("div", {
-          className: s()(b.sQ, {
-            [b.bW]: t,
-            [b.EO]: !t
+          className: s()(y.sQ, {
+            [y.bW]: t,
+            [y.EO]: !t
           })
         })]
       })
-    }, S = e => {
+    }, I = e => {
       let t = n && !e;
       return {
-        [b.bW]: t,
-        [b.EO]: !t,
-        [b.TX]: u
+        [y.bW]: t,
+        [y.EO]: !t,
+        [y.TX]: u
       }
-    }, I = this.getTutorialPopoutText();
-    return (0, r.jsx)(h.Ay, v(O({
+    }, S = this.getTutorialPopoutText();
+    return (0, r.jsx)(h.Ay, A(O({
       innerRef: this.contentRef,
       position: _,
       renderMedia: o,
@@ -171,21 +171,21 @@ class S extends Chunk64700.PureComponent {
       arrowAlignment: p,
       onSkipAll: this.handleSkipTips,
       onComplete: this.handleDismiss
-    }, I), {
+    }, S), {
       children: (e, t) => {
         let {
           isShown: n
         } = t;
-        return (0, r.jsx)(d.DUT, v(O({}, e), {
-          className: b.q3,
-          style: y,
+        return (0, r.jsx)(d.DUT, A(O({}, e), {
+          className: y.q3,
+          style: b,
           innerRef: this.contentRef,
           children: (0, r.jsxs)("div", {
-            className: s()(b.Mp, S(n)),
-            children: [A(n), (0, r.jsx)("div", {
-              className: s()(b.r6, S(n))
+            className: s()(y.Mp, I(n)),
+            children: [v(n), (0, r.jsx)("div", {
+              className: s()(y.r6, I(n))
             }), (0, r.jsx)("div", {
-              className: s()(b.CY, S(n))
+              className: s()(y.CY, I(n))
             })]
           })
         }))
@@ -193,15 +193,15 @@ class S extends Chunk64700.PureComponent {
     }))
   }
   constructor(...e) {
-    super(...e), y(this, "state", {
+    super(...e), b(this, "state", {
       offsetX: null,
       offsetY: null
-    }), y(this, "contentRef", i.createRef()), y(this, "handleDismiss", () => {
+    }), b(this, "contentRef", i.createRef()), b(this, "handleDismiss", () => {
       f.A.dismiss(this.props.tutorialId)
     })
   }
 }
-let I = function() {
+let S = function() {
   let {
     indicators: e,
     tutorialData: t,
@@ -216,7 +216,7 @@ let I = function() {
   return i ? (0, r.jsx)(r.Fragment, {
     children: Object.entries(e).map(e => {
       let [i, a] = e, s = t[i];
-      return l()(null != s, "Missing tutorial definition for ".concat(i)), (0, r.jsx)(S, O({
+      return l()(null != s, "Missing tutorial definition for ".concat(i)), (0, r.jsx)(I, O({
         tutorialId: i,
         tutorialDefinition: s,
         focused: n

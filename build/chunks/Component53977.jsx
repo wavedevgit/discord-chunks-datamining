@@ -1,7 +1,7 @@
 /** Chunk was on 38663 **/
 /** chunk id: 53977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,17 +15,17 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk798521 = require("./798521.js");
 
-function b() {
+function g() {
   let {
     trackUserProfileAction: e,
     trackUserProfileEditAction: t
-  } = (0, o.NJ)(), b = l.useRef(false), {
-    suggestions: g,
-    currentUser: m,
+  } = (0, s.NJ)(), g = l.useRef(false), {
+    suggestions: m,
+    currentUser: b,
     isLoading: y
   } = (0, a.A)({
     location: "UserProfileModalV2ApplicationWidgetsEmptyState"
-  }), O = null == g ? true : g[0], j = l.useCallback(() => {
+  }), O = null == m ? true : m[0], j = l.useCallback(() => {
     t({
       action: "PRESS_ADD_WIDGET"
     }), (0, i.mMO)(async () => {
@@ -69,10 +69,10 @@ function b() {
     })
   }, [t]);
   if (l.useEffect(() => {
-      y || null == O || b.current || (e({
+      y || null == O || g.current || (e({
         action: "VIEW_APPLICATION_WIDGETS_EMPTY_STATE",
         applicationId: O.application.id
-      }), b.current = true)
+      }), g.current = true)
     }, [y, e, O]), y) return (0, r.jsx)("div", {
     className: p.L,
     children: (0, r.jsx)(i.y$y, {})
@@ -93,7 +93,7 @@ function b() {
       })
     })]
   });
-  return (0, r.jsx)(s.Ay, {
+  return (0, r.jsx)(o.Ay, {
     contentTypes: [O.dismissibleContent],
     bypassAutoDismiss: true,
     children: e => {
@@ -107,7 +107,7 @@ function b() {
         children: [(0, r.jsx)(i.hKd, {
           size: 32
         }), x, (0, r.jsx)(c.A, {
-          user: m,
+          user: b,
           application: O.application,
           onDismiss: n
         }), (0, r.jsx)(u.A, {})]

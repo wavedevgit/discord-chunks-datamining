@@ -27,11 +27,11 @@ let _ = new Chunk118356.Vy("OverlayV3NativeModuleStore"),
   m = false,
   g = null,
   E = false,
-  b = null,
   y = null,
+  b = null,
   O = (() => {
     async function e() {
-      v(), g = d.P.getInstance();
+      A(), g = d.P.getInstance();
       try {
         await g.initialize(), h = true
       } catch (e) {
@@ -44,26 +44,26 @@ let _ = new Chunk118356.Vy("OverlayV3NativeModuleStore"),
         R.emitChange()
       }
     }
-    return () => (null == y && (y = e()), y)
+    return () => (null == b && (b = e()), b)
   })();
 
-function A(e) {
+function v(e) {
   __OVERLAY__ || !f.OX || m !== e && (m = e, e && (0, l.setOutOfProcessSupport)(true))
 }
 
-function v() {
-  !__OVERLAY__ && f.OX && (b = null, E = false, _.verbose("Maybe Enable Overlay"), A(c.x.oopEnabled))
+function A() {
+  !__OVERLAY__ && f.OX && (y = null, E = false, _.verbose("Maybe Enable Overlay"), v(c.x.oopEnabled))
 }
 
-function S(e) {
+function I(e) {
   let {
     oopEnabled: t
   } = e;
-  b = null, A(t)
+  y = null, v(t)
 }
 
-function I() {
-  return b = null, O(), false
+function S() {
+  return y = null, O(), false
 }
 
 function T(e) {
@@ -71,7 +71,7 @@ function T(e) {
     isCrashedDisabled: t,
     error: n
   } = e;
-  returntrue === t && (E = true), null != n && (b = n instanceof Error ? n.message : String(n)), true
+  returntrue === t && (E = true), null != n && (y = n instanceof Error ? n.message : String(n)), true
 }
 
 function C() {
@@ -82,7 +82,7 @@ class N extends(r = Chunk311907.Ay.Store) {
     this.waitFor(o.A)
   }
   get isModuleLoading() {
-    return null != y
+    return null != b
   }
   get isOverlayEnabled() {
     return m
@@ -97,7 +97,7 @@ class N extends(r = Chunk311907.Ay.Store) {
     return E
   }
   get errorMessage() {
-    return b
+    return y
   }
   getNativeModule() {
     return g
@@ -106,9 +106,9 @@ class N extends(r = Chunk311907.Ay.Store) {
 p(N, "displayName", "Overlay-v3-Native-Module-Store");
 let R = new N(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {} : {
     CONNECTION_OPEN: C,
-    EXPERIMENT_OVERRIDE_BUCKET: v,
-    OVERLAY_SET_ENABLED: S,
-    OVERLAY_V3_LOAD_NATIVE_MODULE: I,
+    EXPERIMENT_OVERRIDE_BUCKET: A,
+    OVERLAY_SET_ENABLED: I,
+    OVERLAY_V3_LOAD_NATIVE_MODULE: S,
     OVERLAY_CRASHED: T
   }),
   w = R

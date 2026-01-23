@@ -20,20 +20,20 @@ function j(e) {
     guildId: t
   } = e, l = (0, i.bG)([u.A], () => u.A.getGuild(t)), {
     analyticsLocations: j
-  } = (0, a.Ay)(s.A.MEMBER_SAFETY_PAGE), b = (0, i.bG)([o.Ay], () => o.Ay.getGuildSidebarState(t), [t]), f = r.useCallback(() => {
-    d.A.closeGuildSidebar(t)
-  }, [t]), h = null != b;
-  return null != l && h && null != b ? (0, n.jsx)(a.f5, {
+  } = (0, a.Ay)(s.A.MEMBER_SAFETY_PAGE), b = (0, i.bG)([d.Ay], () => d.Ay.getGuildSidebarState(t), [t]), h = r.useCallback(() => {
+    c.A.closeGuildSidebar(t)
+  }, [t]), f = null != b;
+  return null != l && f && null != b ? (0, n.jsx)(a.f5, {
     value: j,
     children: (0, n.jsx)("div", {
       className: m.__invalid_sidebarContainer,
       style: {
         width: x.da6
       },
-      children: (0, n.jsx)(c.A, {
+      children: (0, n.jsx)(o.A, {
         userId: b.details.userId,
         guildId: b.details.guildId,
-        onClose: f
+        onClose: h
       })
     })
   }) : null

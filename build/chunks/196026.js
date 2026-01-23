@@ -20,12 +20,12 @@ let d = {
     skuId: "Shop"
   },
   p = () => {
-    let e = (0, i.bG)([s.A], () => s.A.purchases),
-      [t, r] = (0, i.yK)([a.A], () => [a.A.categories, a.A.products]);
+    let e = (0, i.bG)([a.A], () => a.A.purchases),
+      [t, r] = (0, i.yK)([s.A], () => [s.A.categories, s.A.products]);
     return (0, l.useMemo)(() => {
-      let n = (0, c.ps)(e, t).reduce((t, n) => {
+      let n = (0, o.ps)(e, t).reduce((t, n) => {
         let l = e.get(n.skuId);
-        return (null != l ? (0, c.gA)(l) : (0, c.G0)(r.get(n.skuId))) ? t.premium_purchase.push(n) : null != l ? t.purchase.push(n) : t.preview.push(n), t
+        return (null != l ? (0, o.gA)(l) : (0, o.G0)(r.get(n.skuId))) ? t.premium_purchase.push(n) : null != l ? t.purchase.push(n) : t.preview.push(n), t
       }, {
         purchase: [],
         premium_purchase: [],
@@ -35,17 +35,17 @@ let d = {
         section: "purchase",
         items: [d, m, ...n.purchase],
         height: 12,
-        header: o.intl.string(o.t.VqmVqE)
+        header: c.intl.string(c.t.VqmVqE)
       }, {
         section: "premium_purchase",
         items: n.premium_purchase,
         height: 12,
-        header: o.intl.string(o.t.TiLCgw)
+        header: c.intl.string(c.t.TiLCgw)
       }, {
         section: "preview",
         items: n.preview,
         height: 12,
-        header: o.intl.string(o.t["1vbbee"])
+        header: c.intl.string(c.t["1vbbee"])
       }].filter(e => {
         let {
           items: t

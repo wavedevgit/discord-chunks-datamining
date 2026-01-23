@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 535111, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  O: () => m
+  O: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,61 +18,61 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk237235 = require("./237235.js");
 
-function g(e) {
+function m(e) {
   let {
     name: t,
     applicationId: n
-  } = e, l = (0, f.A)({
+  } = e, l = (0, p.A)({
     location: "ActivityPanelGameCard",
     applicationId: n,
     source: d.Ob.RtcPanel,
     trackEntryPointImpression: true
   });
-  return (0, r.jsx)(a.DUT, {
+  return (0, r.jsx)(s.DUT, {
     onClick: l,
-    className: i()(null != l && b.On),
-    children: (0, r.jsx)(p.A, {
-      className: b.mO,
+    className: i()(null != l && g.On),
+    children: (0, r.jsx)(h.A, {
+      className: g.mO,
       children: t
     })
   })
 }
 
-function m(e) {
+function b(e) {
   let {
     isStreaming: t,
     application: n,
     game: l,
     onClickNotSharing: i,
     isForceShowSharingPopout: d,
-    setIsForceShowSharingPopout: f,
-    ref: p,
-    popoutTargetRef: m
-  } = e, A = null != n ? n.name : null != l ? l.name : h.intl.string(h.t["UQMV/E"]);
+    setIsForceShowSharingPopout: p,
+    ref: h,
+    popoutTargetRef: b
+  } = e, A = null != n ? n.name : null != l ? l.name : f.intl.string(f.t["UQMV/E"]);
   return (0, c.z)(), (0, r.jsxs)("div", {
-    className: b.cm,
+    className: g.cm,
     children: [(0, r.jsxs)("div", {
-      className: b.f9,
+      className: g.f9,
       children: [(0, r.jsx)(u.A, {
-        className: b.Gt,
+        className: g.Gt,
         game: n,
         pid: null == l ? true : l.pid,
-        ref: p
-      }), t ? (0, r.jsx)(a.npA, {
+        ref: h
+      }), t ? (0, r.jsx)(s.npA, {
         size: "md",
         color: "currentColor",
-        className: b.it
+        className: g.it
       }) : null]
     }), (0, r.jsx)(o.M, {
-      popoutTargetRef: m,
+      popoutTargetRef: b,
       isForceShowSharingPopout: d,
-      setIsForceShowSharingPopout: f,
+      setIsForceShowSharingPopout: p,
       children: (0, r.jsxs)("div", {
-        className: b.pq,
-        children: [null != A ? (0, r.jsx)(g, {
+        className: g.pq,
+        children: [null != A ? (0, r.jsx)(m, {
           name: A,
           applicationId: null == n ? true : n.id
-        }) : null, (0, r.jsx)(s.G, {
+        }) : null, (0, r.jsx)(a.G, {
           onClick: i
         })]
       })

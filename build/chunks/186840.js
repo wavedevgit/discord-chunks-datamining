@@ -94,13 +94,13 @@ function K(e) {
     a = m.A.getState(),
     s = i.length > 0 ? "".concat(n, " + ").concat(i) : n,
     o = r ? "paused" : "request_state";
-  A.default.track(G.HAw.GATEWAY_CONNECT_SKIPPED, {
+  v.default.track(G.HAw.GATEWAY_CONNECT_SKIPPED, {
     actually_skipped: null != t ? t : r,
     client_app_state: a,
     connect_reason: s,
     skip_context: o
   }), (0, w.a)() && setTimeout(() => {
-    A.default.track(G.HAw.POST_GATEWAY_CONNECT_SKIPPED, {
+    v.default.track(G.HAw.POST_GATEWAY_CONNECT_SKIPPED, {
       actually_skipped: null != t ? t : r,
       original_client_app_state: a,
       client_app_state: m.A.getState(),
@@ -239,7 +239,7 @@ class ea extends Chunk969091.A {
           r === L.p.DISPATCH && e.push(a), e.push(o), Y.verboseDangerously("<~", ...e)
         }
         let l = Date.now() - n;
-        switch ("READY" === a ? y.A.parseReady.set(n, l) : "READY_SUPPLEMENTAL" === a ? y.A.parseReadySupplemental.set(n, l) : l > 10 && s.A.mark("\uD83C\uDF10", "Parse " + a, l), null != i && (this.seq = i), r) {
+        switch ("READY" === a ? b.A.parseReady.set(n, l) : "READY_SUPPLEMENTAL" === a ? b.A.parseReadySupplemental.set(n, l) : l > 10 && s.A.mark("\uD83C\uDF10", "Parse " + a, l), null != i && (this.seq = i), r) {
           case L.p.HELLO:
             this._clearHelloTimeout(), this._handleHello(o);
             break;
@@ -270,7 +270,7 @@ class ea extends Chunk969091.A {
         this._sendHeartbeatIfDue()
       }),
       onError: () => {
-        this.setResumeUrl(null), v.A.flushDNSCache(), this._handleClose(false, 0, "An error with the websocket occurred")
+        this.setResumeUrl(null), A.A.flushDNSCache(), this._handleClose(false, 0, "An error with the websocket occurred")
       },
       onClose: e => {
         let {
@@ -336,7 +336,7 @@ class ea extends Chunk969091.A {
     }
   }
   _tryDetectInvalidIOSToken(e, t, n) {
-    (0, I.isIOS)() && null != this.token && e === Z && t === Q && (this.iosGoingAwayEventCount += 1, 3 === this.iosGoingAwayEventCount && d.Bo.get({
+    (0, S.isIOS)() && null != this.token && e === Z && t === Q && (this.iosGoingAwayEventCount += 1, 3 === this.iosGoingAwayEventCount && d.Bo.get({
       url: G.Rsh.ME,
       headers: {
         authorization: this.token
@@ -346,14 +346,14 @@ class ea extends Chunk969091.A {
       let {
         status: t
       } = e;
-      A.default.track(G.HAw.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
+      v.default.track(G.HAw.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
         api_status_code: t
       })
     }, e => {
       let {
         status: t
       } = e;
-      401 === t && (this.connectionState = C.A.CLOSED, Y.warn("[WS CLOSED] because of manual authentication failure, marking as closed."), this._reset(n, $, "invalid token manually detected")), A.default.track(G.HAw.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
+      401 === t && (this.connectionState = C.A.CLOSED, Y.warn("[WS CLOSED] because of manual authentication failure, marking as closed."), this._reset(n, $, "invalid token manually detected")), v.default.track(G.HAw.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
         api_status_code: t
       })
     }))
@@ -437,7 +437,7 @@ class ea extends Chunk969091.A {
         client_state: s
       },
       d = JSON.stringify(u);
-    this.identifyUncompressedByteSize = d.length, this.identifyCompressedByteSize = a.deflate(d).length, this.identifyCount += 1, this.send(L.p.IDENTIFY, u, false), A.default.track(G.HAw.SESSION_START_CLIENT, {})
+    this.identifyUncompressedByteSize = d.length, this.identifyCompressedByteSize = a.deflate(d).length, this.identifyCount += 1, this.send(L.p.IDENTIFY, u, false), v.default.track(G.HAw.SESSION_START_CLIENT, {})
   }
   _doFastConnectIdentify() {
     this.seq = 0, this.sessionId = null;
@@ -493,14 +493,14 @@ class ea extends Chunk969091.A {
     } = e;
     Y.error("resetSocketOnError during ".concat(t, ": ").concat(n.message), n.stack);
     let i = (0, c.b)();
-    b.A.increment({
+    y.A.increment({
       name: l.K.SOCKET_CRASHED,
       tags: ["action:".concat(null != r ? r : t), "modded_client:".concat(i)]
     }, true), false !== e.sentry && T.A.captureException(n, {
       tags: {
         socketCrashedAction: t
       }
-    }), A.default.track(G.HAw.GATEWAY_SOCKET_RESET, {
+    }), v.default.track(G.HAw.GATEWAY_SOCKET_RESET, {
       error_message: n.message,
       error_stack: n.stack,
       has_client_mods: i,

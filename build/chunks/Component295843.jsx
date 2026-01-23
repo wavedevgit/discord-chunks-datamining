@@ -75,8 +75,8 @@ class w extends(r = Chunk64700.Component) {
       analyticsSection: t
     } = this.props;
     return R(C({}, e), {
-      section: null != t ? t : v.JJy.APPLICATION_EMBED,
-      object: v.ZSU.CARD
+      section: null != t ? t : A.JJy.APPLICATION_EMBED,
+      object: A.ZSU.CARD
     })
   }
   componentDidMount() {
@@ -90,10 +90,10 @@ class w extends(r = Chunk64700.Component) {
   renderViewInStoreButton() {
     return (0, i.jsx)(l.$n.Link, {
       to: this.getStoreListingLocation(),
-      className: I.h,
+      className: S.h,
       color: l.$n.Colors.GREEN,
       size: l.$n.Sizes.SMALL,
-      children: S.intl.string(S.t["W+NB90"])
+      children: I.intl.string(I.t["W+NB90"])
     })
   }
   render() {
@@ -106,11 +106,11 @@ class w extends(r = Chunk64700.Component) {
     } = this.props, o = n > _.Tm;
     return null == e || null == t ? r ? a() : (0, i.jsx)(_.Wb, {
       isHorizontal: o
-    }) : e.productLine === v.EZt.COLLECTIBLES ? (0, i.jsx)(u.A, {
-      section: v.JJy.APPLICATION_EMBED,
+    }) : e.productLine === A.EZt.COLLECTIBLES ? (0, i.jsx)(u.A, {
+      section: A.JJy.APPLICATION_EMBED,
       children: this.renderApplicationTile(e, t)
     }) : (0, i.jsx)(u.A, {
-      section: v.JJy.APPLICATION_EMBED,
+      section: A.JJy.APPLICATION_EMBED,
       children: (0, i.jsx)(s.N_, {
         onClick: this.handleLinkClick,
         to: this.getStoreListingLocation(),
@@ -141,7 +141,7 @@ class w extends(r = Chunk64700.Component) {
         sku: e
       } = this.props;
       if (null == e) throw Error("Should not be link to ApplicationStoreListing without SKU");
-      return (0, A.vy)(e.id, {
+      return (0, v.vy)(e.id, {
         slug: e.slug,
         analyticsSource: this.analyticsLocation
       })
@@ -184,20 +184,20 @@ class w extends(r = Chunk64700.Component) {
         renderCustomActions: s
       } = this.props;
       if (null != s) return (0, i.jsx)("div", {
-        className: I.i,
+        className: S.i,
         children: s()
       });
       if (null == n) return null;
       let o = null != n && n.primarySkuId === r,
-        l = null != a && a.hasFlag(v.hM6.HIDDEN);
+        l = null != a && a.hasFlag(A.hM6.HIDDEN);
       return (0, i.jsxs)("div", {
-        className: I.i,
+        className: S.i,
         children: [!o || l ? this.renderViewInStoreButton() : (0, i.jsx)(d.A, {
           application: n,
           disabledVariant: "primary",
           size: "sm",
-          className: I.h,
-          source: v.ThZ.MESSAGE_EMBED,
+          className: S.h,
+          source: A.ThZ.MESSAGE_EMBED,
           onClick: this.handleActionButtonClick
         }), t && !l || e.premium ? null : (0, i.jsx)(f.A, {
           type: f.A.Types.EMBED,
@@ -216,11 +216,11 @@ let P = [Chunk67480.A, Chunk286805.A, Chunk189081.A, Chunk328968.A];
 function D(e) {
   let {
     skuId: t
-  } = e, n = y.A.get(t), r = null != n ? g.A.getApplication(n.applicationId) : null;
+  } = e, n = b.A.get(t), r = null != n ? g.A.getApplication(n.applicationId) : null;
   return {
     sku: n,
     application: r,
-    fetchFailed: y.A.didFetchingSkuFail(t),
+    fetchFailed: b.A.didFetchingSkuFail(t),
     inLibrary: null != n && E.A.hasApplication(n.applicationId, n.applicationId, true),
     storeListing: null != n ? O.A.getForSKU(n.id) : null,
     libraryApplication: null != n ? E.A.getLibraryApplication(n.applicationId, n.applicationId, true) : null

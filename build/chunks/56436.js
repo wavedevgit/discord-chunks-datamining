@@ -30,13 +30,13 @@ function f(e, t) {
     canSendStickers: m,
     canSendSoundmoji: g,
     hideMentionDescription: E,
-    hidePersonalInformation: b,
-    type: y,
+    hidePersonalInformation: y,
+    type: b,
     emojiIntention: O,
-    editorRef: A,
-    onSendMessage: v,
-    onSendSticker: S,
-    setValue: I,
+    editorRef: v,
+    onSendMessage: A,
+    onSendSticker: I,
+    setValue: S,
     isEditorIdle: T,
     currentFullWord: C
   } = e, {
@@ -54,40 +54,40 @@ function f(e, t) {
     allowSoundmoji: true === g,
     forNonStringCommandOption: null != i && i.type !== a.n4.STRING,
     hideMentionDescription: true === E,
-    hidePersonalInformation: true === b,
-    chatInputType: y,
+    hidePersonalInformation: true === y,
+    chatInputType: b,
     emojiIntention: O,
-    sendMessage: v,
-    sendSticker: S,
+    sendMessage: A,
+    sendSticker: I,
     currentFullWord: C,
     isEditorIdle: T,
     currentAutocompleteType: null != (n = null == N ? true : N.type) ? n : null,
     insertText: function(e, t) {
       var n;
       let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
-      null == (n = A.current) || n.insertAutocomplete(e, null != t ? t : e, r)
+      null == (n = v.current) || n.insertAutocomplete(e, null != t ? t : e, r)
     },
     replaceText: (e, t) => {
-      I(e, null != t ? t : (0, o.x7)(e))
+      S(e, null != t ? t : (0, o.x7)(e))
     },
     insertAutocompleteInput: e => {
       var t;
-      null == (t = A.current) || t.insertInlineAutocompleteElement(e)
+      null == (t = v.current) || t.insertInlineAutocompleteElement(e)
     },
     replaceInlineInput: (e, t, n) => {
       var r;
-      null == (r = A.current) || r.replaceInlineAutocompleteInput(e, t, null != n ? n : t)
+      null == (r = v.current) || r.replaceInlineAutocompleteInput(e, t, null != n ? n : t)
     },
     getCommandOptionValues: () => {
       var e;
-      return null == (e = A.current) ? true : e.getCommandOptionValues()
+      return null == (e = v.current) ? true : e.getCommandOptionValues()
     }
   };
   if (null != i) {
     let e = (0, s.XM)(i);
     e.canMentionChannels && (R.mentions.channel = u.xS.ALLOW_SELECTABLE), e.canMentionEveryone && (R.mentions.global = e.canMentionHere ? u.VN.ALLOW_EVERYONE_OR_HERE : u.VN.ALLOW_EVERYONE), e.canMentionRoles && (R.mentions.role = e.canMentionNonMentionableRoles ? u.eP.ALLOW_ALL : u.eP.ALLOW_MENTIONABLE), e.canMentionUsers && (R.mentions.user = e.canMentionAnyGuildUser ? u.Vf.ALLOW_GUILD : u.Vf.ALLOW_CHANNEL), e.canMentionOtherGlobals && (R.mentions.otherGlobals = true), R.hideMentionDescription = true
   } else d && (R.mentions.channel = u.xS.ALLOW_SELECTABLE), c && (R.mentions.role = u.eP.ALLOW_MENTIONABLE), l && (R.mentions.user = u.Vf.ALLOW_CHANNEL), f && (R.mentions.global = u.VN.ALLOW_EVERYONE_OR_HERE), p && (R.mentions.otherGlobals = true);
-  return (null == (r = y.commands) ? true : r.enabled) && (_ ? R.commands = h ? u.Ze.NEW_TEXT_ONLY : u.Ze.NEW : R.commands = u.Ze.OLD_BUILT_INS), null != i && null != i.channelTypes && (R.allowedChannelTypes = i.channelTypes), R
+  return (null == (r = b.commands) ? true : r.enabled) && (_ ? R.commands = h ? u.Ze.NEW_TEXT_ONLY : u.Ze.NEW : R.commands = u.Ze.OLD_BUILT_INS), null != i && null != i.channelTypes && (R.allowedChannelTypes = i.channelTypes), R
 }
 
 function p(e) {
@@ -119,20 +119,20 @@ function _(e) {
     parentAutocompleteInputValue: h
   } = e, m = null;
   for (let e of c.S) {
-    var g, E, b, y, O, A;
-    let v = c.a[e];
+    var g, E, y, b, O, v;
+    let A = c.a[e];
     if (null != _) {
-      if (v.autocompleteInputElementType === _) {
+      if (A.autocompleteInputElementType === _) {
         i()(null != h, "parentAutocompleteInputValue is null, but we're in an inline autocomplete object"), m = {
           type: e,
-          typeInfo: v,
+          typeInfo: A,
           query: h
         };
         break
       }
       continue
     }
-    if (null == v.autocompleteInputElementType) {
+    if (null == A.autocompleteInputElementType) {
       if (e === u.DB.GIFS || e === u.DB.CHOICES) {
         if (r.commands === u.Ze.OLD_BUILT_INS) {
           if (p({
@@ -145,7 +145,7 @@ function _(e) {
             })) {
             m = {
               type: e,
-              typeInfo: v,
+              typeInfo: A,
               query: o
             };
             break
@@ -159,7 +159,7 @@ function _(e) {
             options: r
           })) return {
           type: e,
-          typeInfo: v,
+          typeInfo: A,
           query: f
         }
       } else if (e === u.DB.STICKERS) {
@@ -172,7 +172,7 @@ function _(e) {
             options: r
           })) return {
           type: e,
-          typeInfo: v,
+          typeInfo: A,
           query: f
         }
       } else if (e === u.DB.COMMANDS && r.commands !== u.Ze.OLD_BUILT_INS) {
@@ -186,8 +186,8 @@ function _(e) {
           })) {
           m = {
             type: e,
-            typeInfo: v,
-            query: o.substring(null != (g = null == (E = v.sentinel) ? true : E.length) ? g : 0)
+            typeInfo: A,
+            query: o.substring(null != (g = null == (E = A.sentinel) ? true : E.length) ? g : 0)
           };
           break
         }
@@ -202,7 +202,7 @@ function _(e) {
           })) {
           m = {
             type: e,
-            typeInfo: v,
+            typeInfo: A,
             query: o
           };
           break
@@ -218,8 +218,8 @@ function _(e) {
           })) {
           m = {
             type: e,
-            typeInfo: v,
-            query: a.substring(null != (b = null == (y = v.sentinel) ? true : y.length) ? b : 0)
+            typeInfo: A,
+            query: a.substring(null != (y = null == (b = A.sentinel) ? true : b.length) ? y : 0)
           };
           break
         }
@@ -233,8 +233,8 @@ function _(e) {
         })) {
         m = {
           type: e,
-          typeInfo: v,
-          query: a.substring(null != (O = null == (A = v.sentinel) ? true : A.length) ? O : 0)
+          typeInfo: A,
+          query: a.substring(null != (O = null == (v = A.sentinel) ? true : v.length) ? O : 0)
         };
         break
       }

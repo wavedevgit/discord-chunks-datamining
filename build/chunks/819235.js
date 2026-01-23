@@ -21,7 +21,7 @@ var Chunk735438 = require("./735438.js"),
   Chunk424994 = require("./424994.js"),
   Chunk652215 = require("./652215.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,12 +29,12 @@ function b(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let y = 4,
+let b = 4,
   O = 2 * Chunk927813.A.Millis.MINUTE,
-  A = Chunk424994.X1.GLOBAL_FEED,
-  v = 15 * Chunk927813.A.Millis.MINUTE,
-  S = new Map,
-  I = new Set,
+  v = Chunk424994.X1.GLOBAL_FEED,
+  A = 15 * Chunk927813.A.Millis.MINUTE,
+  I = new Map,
+  S = new Set,
   T = new Map,
   C = null,
   N = (0, Chunk735438.debounce)(Chunk86070.Q1, 3e3, {
@@ -55,11 +55,11 @@ function w(e, t) {
 }
 
 function P(e) {
-  if (I.has(e) || e === g.X1.GAME_PROFILE_FEED && (!(0, o.L0)("ContentInventoryManager") || true !== m.A.getFeed(e))) returnfalse;
-  if (e === A) {
+  if (S.has(e) || e === g.X1.GAME_PROFILE_FEED && (!(0, o.L0)("ContentInventoryManager") || true !== m.A.getFeed(e))) returnfalse;
+  if (e === v) {
     if (!(0, p.VS)("ContentInventoryManager") || h.A.hidden && null != m.A.getFeed(e) || !d.A.isFocused() || !l.A.isConnected()) returnfalse;
     let t = u.A.getIdleSince();
-    if (null != t && Date.now() - t > v) returnfalse
+    if (null != t && Date.now() - t > A) returnfalse
   }
   returntrue
 }
@@ -68,23 +68,23 @@ function D(e) {
   w(e, {
     loading: false
   });
-  let t = S.get(e);
-  true !== t && (clearTimeout(t), S.delete(e))
+  let t = I.get(e);
+  true !== t && (clearTimeout(t), I.delete(e))
 }
 
 function x() {
   var e;
-  let t = null != (e = T.get(A)) ? e : 0;
-  if (t > 0 && t <= y || (D(A), !P(A))) return;
-  let n = m.A.getFeed(A);
+  let t = null != (e = T.get(v)) ? e : 0;
+  if (t > 0 && t <= b || (D(v), !P(v))) return;
+  let n = m.A.getFeed(v);
   if ((null == n ? true : n.refresh_stale_inbox_after_ms) != null && null == C) return;
   let r = (null == n ? true : n.expired_at) == null ? 0 : new Date(n.expired_at).getTime() - Date.now(),
     a = Math.max(0, null == C ? 0 : new Date(C).getTime() - Date.now(), r) + (t > 0 ? R() : 0);
-  w(A, {
+  w(v, {
     loading: false,
     nextFetchDate: new Date(Date.now() + a)
-  }), S.set(A, setTimeout(() => L({
-    feedId: A,
+  }), I.set(v, setTimeout(() => L({
+    feedId: v,
     feature: i.M.INBOX
   }), a))
 }
@@ -96,7 +96,7 @@ async function L(e) {
   } = e;
   if (P(t) || r) try {
     let e = m.A.getFeed(t);
-    I.add(t), w(t, {
+    S.add(t), w(t, {
       loading: true
     });
     let r = await (0, _.sy)({
@@ -108,15 +108,15 @@ async function L(e) {
       type: "CONTENT_INVENTORY_SET_FEED",
       feedId: t,
       feed: r
-    }), T.set(t, 0), I.delete(t), w(t, {
+    }), T.set(t, 0), S.delete(t), w(t, {
       loading: false
-    }), t === A && (C = null, x())
+    }), t === v && (C = null, x())
   } catch (s) {
     var i;
     let e = null != (i = T.get(t)) ? i : 0;
-    if (e < y) {
+    if (e < b) {
       let i = f.A.Millis.MINUTE * Math.pow(2, e) + R(e);
-      S.set(t, setTimeout(() => L({
+      I.set(t, setTimeout(() => L({
         feedId: t,
         feature: n,
         force: r
@@ -125,7 +125,7 @@ async function L(e) {
       type: "CONTENT_INVENTORY_CLEAR_FEED",
       feedId: t
     });
-    I.delete(t)
+    S.delete(t)
   }
 }
 
@@ -138,7 +138,7 @@ function M() {
 }
 
 function k() {
-  D(A)
+  D(v)
 }
 
 function U(e) {
@@ -156,7 +156,7 @@ function U(e) {
 function G(e) {
   let {
     refreshAfterMs: t
-  } = e, n = m.A.getFeed(A);
+  } = e, n = m.A.getFeed(v);
   (null == n ? true : n.refresh_stale_inbox_after_ms) == null || (C = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), x())
 }
 
@@ -177,7 +177,7 @@ function F() {
 }
 class B extends Chunk439372.A {
   constructor(...e) {
-    super(...e), b(this, "actions", {
+    super(...e), y(this, "actions", {
       POST_CONNECTION_OPEN: M,
       CONNECTION_CLOSED: k,
       WINDOW_FOCUS: j,

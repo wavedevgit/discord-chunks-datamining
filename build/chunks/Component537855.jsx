@@ -17,14 +17,14 @@ function u(e) {
     hasInvites: t,
     setHeight: n,
     onShowDisableInvites: u,
-    onShowInviteModal: b,
-    hasInviteDisabledPermission: f,
-    invitesDisabled: p,
-    canCreateInvites: m
-  } = e, g = r.useMemo(() => (0, l.debounce)(n, 100), [n]), h = r.useCallback(e => {
+    onShowInviteModal: p,
+    hasInviteDisabledPermission: m,
+    invitesDisabled: g,
+    canCreateInvites: b
+  } = e, f = r.useMemo(() => (0, l.debounce)(n, 100), [n]), h = r.useCallback(e => {
     let t = e.contentRect;
-    null != t && g(t.height)
-  }, [g]), x = (0, o.w)(h);
+    null != t && f(t.height)
+  }, [f]), x = (0, o.w)(h);
   return (0, i.jsxs)("div", {
     ref: x,
     className: d.o,
@@ -35,14 +35,14 @@ function u(e) {
       children: t ? c.intl.string(c.t.DjWsya) : c.intl.string(c.t.AmwmLg)
     }), (0, i.jsxs)(a.e2v, {
       children: [(0, i.jsx)(s.Button, {
-        variant: p ? "primary" : "critical-secondary",
-        text: p ? c.intl.string(c.t["/dbw3H"]) : c.intl.string(c.t.Uwsjn6),
+        variant: g ? "primary" : "critical-secondary",
+        text: g ? c.intl.string(c.t["/dbw3H"]) : c.intl.string(c.t.Uwsjn6),
         onClick: u,
-        disabled: !f
-      }), true === m ? (0, i.jsx)(s.Button, {
+        disabled: !m
+      }), true === b ? (0, i.jsx)(s.Button, {
         variant: "primary",
         text: c.intl.string(c.t.KmK3q4),
-        onClick: b
+        onClick: p
       }) : null]
     })]
   })

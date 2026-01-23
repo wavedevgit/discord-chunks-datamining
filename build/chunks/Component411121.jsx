@@ -126,7 +126,7 @@ class k extends Chunk64700.PureComponent {
       giftStyle: t,
       application: n
     } = this.props;
-    return (0, b.bF)(e) ? (0, r.jsx)(y.e, {
+    return (0, y.bF)(e) ? (0, r.jsx)(b.e, {
       shape: "square",
       sku: e,
       containerClassName: D.ez
@@ -146,7 +146,7 @@ class k extends Chunk64700.PureComponent {
       entitlements: t,
       application: n
     } = this.props;
-    return (0, b.bF)(e) ? (0, r.jsxs)("div", {
+    return (0, y.bF)(e) ? (0, r.jsxs)("div", {
       className: s()(D.Oc, D.ic),
       children: [(0, r.jsx)(g.A, {
         game: n,
@@ -286,14 +286,14 @@ let U = Chunk311907.Ay.connectStores([Chunk67480.A, Chunk351906.A, Chunk30793.A,
     skuId: t,
     subscriptionPlanId: n,
     giftStyle: r
-  } = e, i = I.A.get(t);
+  } = e, i = S.A.get(t);
   if (null == i) throw Error("SKU was unavailable while rendering gift.");
-  let a = A.A.getForGifterSKUAndPlan(O.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
+  let a = v.A.getForGifterSKUAndPlan(O.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
   return {
     sku: i,
-    hideCodes: v.A.enabled,
-    isFetching: A.A.getUserGiftCodesFetchingForSKUAndPlan(t, n),
-    loadedAt: A.A.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
+    hideCodes: A.A.enabled,
+    isFetching: v.A.getUserGiftCodesFetchingForSKUAndPlan(t, n),
+    loadedAt: v.A.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
     application: h.A.getApplication(i.applicationId),
     subscriptionPlan: null != n ? (0, R.c9)(n) : null,
     giftCodes: a

@@ -2,7 +2,7 @@
 /** chunk id: 918085, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,7 +21,7 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk430317 = require("./430317.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,7 +30,7 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 let O = 600;
-class A extends(r = Chunk64700.PureComponent) {
+class v extends(r = Chunk64700.PureComponent) {
   render() {
     let {
       sku: e,
@@ -52,7 +52,7 @@ class A extends(r = Chunk64700.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), y(this, "renderActions", () => {
+    super(...e), b(this, "renderActions", () => {
       let {
         inLibrary: e,
         sku: t,
@@ -61,20 +61,20 @@ class A extends(r = Chunk64700.PureComponent) {
         showBuyInline: a
       } = this.props, s = (a || !t.requiresPayment) && !e, o = s && r;
       return null != n ? n() : (0, i.jsxs)("div", {
-        className: b.ED,
+        className: y.ED,
         children: [(0, i.jsx)(l.A, {
           type: l.A.Types.DIRECTORY_TILE,
           sku: t,
           inLibrary: e,
-          className: o ? b.ae : b.Ek
+          className: o ? y.ae : y.Ek
         }), (0, i.jsx)(c.E, {
           systems: [E.uje.WINDOWS],
-          className: b.iD
+          className: y.iD
         }), s ? (0, i.jsx)("div", {
           children: "deprecated!"
         }) : null]
       })
-    }), y(this, "renderMedia", () => {
+    }), b(this, "renderMedia", () => {
       let {
         playing: e,
         muted: t,
@@ -87,13 +87,13 @@ class A extends(r = Chunk64700.PureComponent) {
       return (0, p.bF)(s) ? (0, i.jsx)(_.e, {
         sku: s,
         shape: "custom",
-        containerClassName: b.A$,
-        backgroundImageClassName: b.iZ,
-        foregroundImageClassName: b.O7
+        containerClassName: y.A$,
+        backgroundImageClassName: y.iZ,
+        foregroundImageClassName: y.O7
       }) : (0, i.jsxs)(a.Fragment, {
         children: [(0, i.jsx)(f.A, {
-          className: o()(b.H1, {
-            [b.ZC]: l
+          className: o()(y.H1, {
+            [y.ZC]: l
           }),
           video: null != c.previewVideo ? (0, h.YE)(s.applicationId, c.previewVideo) : true,
           image: null != c.thumbnail ? (0, h.YE)(s.applicationId, c.thumbnail, O) : true,
@@ -102,26 +102,26 @@ class A extends(r = Chunk64700.PureComponent) {
           muted: t,
           placeholder: n,
           onToggleMute: r,
-          splashClassName: b.ZI,
-          splashPlaceholderClassName: b.NB
+          splashClassName: y.ZI,
+          splashPlaceholderClassName: y.NB
         }), s.exclusive ? (0, i.jsx)(d.A, {
-          className: o()(b.LJ, {
-            [b.V9]: e
+          className: o()(y.LJ, {
+            [y.V9]: e
           })
         }) : s.isTheGameAwardsWinner ? (0, i.jsx)(u.A, {
-          className: o()(b.LJ, {
-            [b.V9]: e
+          className: o()(y.LJ, {
+            [y.V9]: e
           })
         }) : null]
       })
     })
   }
 }
-y(A, "defaultProps", {
+b(v, "defaultProps", {
   showMediaPlaceholder: false,
   isMouseOver: false,
   showBuyInline: false,
   isHorizontal: false,
   isEmbed: false
 });
-let v = A
+let A = v

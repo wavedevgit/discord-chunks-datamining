@@ -17,23 +17,23 @@ var Chunk230606 = require("./230606.js"),
 module.exports = function(e, t, n, m) {
   var g = "stackTraceLimit",
     E = m ? 2 : 1,
-    b = e.split("."),
-    y = b[b.length - 1],
-    O = r.apply(null, b);
+    y = e.split("."),
+    b = y[y.length - 1],
+    O = r.apply(null, y);
   if (O) {
-    var A = O.prototype;
-    if (!h && i(A, "cause") && delete A.cause, !n) return O;
-    var v = r("Error"),
-      S = t(function(e, t) {
+    var v = O.prototype;
+    if (!h && i(v, "cause") && delete v.cause, !n) return O;
+    var A = r("Error"),
+      I = t(function(e, t) {
         var n = d(m ? t : e, true),
           r = m ? new O(e) : new O;
-        return true !== n && a(r, "message", n), p(r, S, r.stack, 2), this && s(A, this) && u(r, this, S), arguments.length > E && f(r, arguments[E]), r
+        return true !== n && a(r, "message", n), p(r, I, r.stack, 2), this && s(v, this) && u(r, this, I), arguments.length > E && f(r, arguments[E]), r
       });
-    if (S.prototype = A, "Error" !== y ? o ? o(S, v) : l(S, v, {
+    if (I.prototype = v, "Error" !== b ? o ? o(I, A) : l(I, A, {
         name: true
-      }) : _ && g in O && (c(S, O, g), c(S, O, "prepareStackTrace")), l(S, O), !h) try {
-      A.name !== y && a(A, "name", y), A.constructor = S
+      }) : _ && g in O && (c(I, O, g), c(I, O, "prepareStackTrace")), l(I, O), !h) try {
+      v.name !== b && a(v, "name", b), v.constructor = I
     } catch (e) {}
-    return S
+    return I
   }
 }

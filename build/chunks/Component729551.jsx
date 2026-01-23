@@ -88,7 +88,7 @@ function M(e) {
     voiceActivityChannel: r
   } = e, i = [], {
     descriptiveTextEnabled: a
-  } = (0, y.n)({
+  } = (0, b.n)({
     location: "StackedActivityStatus"
   }), {
     enableTopNavButton: s
@@ -138,7 +138,7 @@ function G(e) {
     voiceChannel: l,
     textClassName: p,
     iconClassName: _,
-    textSize: y = "xs",
+    textSize: b = "xs",
     animateEmoji: O = true,
     hasQuest: N = false,
     hideEmoji: w = false,
@@ -174,13 +174,13 @@ function G(e) {
     }, [n, null == j ? true : j.name]),
     Y = null == n ? true : n.find(e => e.name === (null == j ? true : j.name)),
     W = (null == t ? true : t.bot) === true,
-    K = (0, c.bG)([b.A], () => b.A.isBlockedOrIgnored(null == t ? true : t.id)),
+    K = (0, c.bG)([y.A], () => y.A.isBlockedOrIgnored(null == t ? true : t.id)),
     z = (null == V ? true : V.state) != null,
     q = null != L,
     X = !q && null != l,
     Z = H.length + (q || X ? 1 : 0),
     Q = Z > 1,
-    $ = ((null == V ? true : V.state) != null || null != B) && "xs" === y,
+    $ = ((null == V ? true : V.state) != null || null != B) && "xs" === b,
     J = M({
       streamActivity: Y,
       otherActivities: H,
@@ -190,10 +190,10 @@ function G(e) {
   let ee = function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
         t = true === e || D;
-      if (null != L) return (0, r.jsx)(v.A, {
+      if (null != L) return (0, r.jsx)(A.A, {
         stream: L,
         game: Y,
-        textVariant: "text-".concat(y, "/medium"),
+        textVariant: "text-".concat(b, "/medium"),
         textClassName: p,
         iconClassName: _,
         hideText: $,
@@ -201,9 +201,9 @@ function G(e) {
         hideTooltip: t
       });
       let n = null == H ? true : H[0];
-      return null != n ? (0, r.jsx)(I.A, {
+      return null != n ? (0, r.jsx)(S.A, {
         activity: n,
-        textVariant: "text-".concat(y, "/medium"),
+        textVariant: "text-".concat(b, "/medium"),
         textClassName: p,
         iconClassName: _,
         hideText: $,
@@ -211,7 +211,7 @@ function G(e) {
         hideTooltip: t
       }) : null != l ? (0, r.jsx)(T.A, {
         channel: l,
-        textVariant: "text-".concat(y, "/medium"),
+        textVariant: "text-".concat(b, "/medium"),
         textClassName: p,
         iconClassName: _,
         hideText: $,
@@ -227,13 +227,13 @@ function G(e) {
           hideText: false,
           canTruncate: false
         };
-      return null != L && e.push((0, r.jsx)(v.A, x(P({
+      return null != L && e.push((0, r.jsx)(A.A, x(P({
         stream: L,
         game: null == n ? true : n.find(d.A)
       }, t), {
         showChannelName: true
       }), "stream")), H.forEach((n, i) => {
-        e.push((0, r.jsx)(I.A, P({
+        e.push((0, r.jsx)(S.A, P({
           activity: n
         }, t), "activity-".concat(i)))
       }), X && e.push((0, r.jsx)(T.A, x(P({
@@ -243,7 +243,7 @@ function G(e) {
       }), "voice")), e
     },
     en = () => (0, r.jsx)(k, {
-      textVariant: "text-".concat(y, "/medium"),
+      textVariant: "text-".concat(b, "/medium"),
       className: p,
       hasCustomStatusText: z,
       totalActivityCount: Z
@@ -261,12 +261,12 @@ function G(e) {
       })
     }) : ee(),
     ei = s()(R.kL, {
-      [R.Dk]: "xs" === y,
-      [R.WV]: "sm" === y
+      [R.Dk]: "xs" === b,
+      [R.WV]: "sm" === b
     }),
-    ea = () => null == V && null == B ? null : (0, r.jsx)(S.A, {
+    ea = () => null == V && null == B ? null : (0, r.jsx)(I.A, {
       customStatusActivity: V,
-      textSize: y,
+      textSize: b,
       animateEmoji: O,
       hideEmoji: w,
       hideTooltip: D,
@@ -280,8 +280,8 @@ function G(e) {
   return (0, r.jsxs)("div", {
     className: ei,
     children: [er(), (null != V || null != B) && Z > 0 && (0, r.jsx)(U, {
-      textVariant: "text-".concat(y, "/normal"),
+      textVariant: "text-".concat(b, "/normal"),
       className: p
-    }), ea(), N && (0, r.jsx)(A.A, {})]
+    }), ea(), N && (0, r.jsx)(v.A, {})]
   })
 }

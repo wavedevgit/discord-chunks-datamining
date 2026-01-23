@@ -31,16 +31,16 @@ function p(e) {
     } = i,
     g = h && !s,
     E = s ? "text-strong" : "text-muted",
-    b = s ? "text-default" : "text-muted",
-    y = o()(n),
+    y = s ? "text-default" : "text-muted",
+    b = o()(n),
     O = null != m && s,
-    A = () => {
+    v = () => {
       O && m()
     },
-    v = O ? l.DUT : "div";
-  return (0, r.jsxs)(v, {
+    A = O ? l.DUT : "div";
+  return (0, r.jsxs)(A, {
     className: a()(f.kL, O && f.b),
-    onClick: A,
+    onClick: v,
     children: [(0, r.jsx)("div", {
       className: f.zc,
       children: (0, r.jsx)(d.A, {
@@ -54,14 +54,14 @@ function p(e) {
         variant: "text-xxs/semibold",
         color: "text-muted",
         className: f.YR,
-        children: (0, c.mk)(y)
+        children: (0, c.mk)(b)
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/medium",
         color: E,
         children: p()
       }), (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
-        color: b,
+        color: y,
         children: g ? "?????" : _()
       })]
     })]

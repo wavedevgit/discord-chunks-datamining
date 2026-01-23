@@ -2,7 +2,7 @@
 /** chunk id: 561923, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => x
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,54 +20,54 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk7791 = require("./7791.js");
 
-function h(e) {
+function x(e) {
   var t;
   let {
     profile: n,
     canManageGuild: l
-  } = e, h = n.id, j = a.i.VISIBLE.has(n.visibility), O = (0, c.bG)([d.A], () => {
+  } = e, x = n.id, j = a.i.VISIBLE.has(n.visibility), _ = (0, o.bG)([d.A], () => {
     var e;
-    return (null == (e = d.A.getProfile(h)) ? true : e.visibility) === u.n.PUBLIC_WITH_RECRUITMENT
-  }, [h]), y = i.useRef(null);
-  (0, b.A)(y, m.nd0.PROFILE_VISIBILITY);
+    return (null == (e = d.A.getProfile(x)) ? true : e.visibility) === u.n.PUBLIC_WITH_RECRUITMENT
+  }, [x]), O = i.useRef(null);
+  (0, p.A)(O, f.nd0.PROFILE_VISIBILITY);
   let v = i.useCallback(() => {
-      j ? g.A.updateGuildProfile(h, {
+      j ? m.A.updateGuildProfile(x, {
         visibility: u.n.RESTRICTED
-      }) : g.A.updateGuildProfile(h, {
-        visibility: O ? u.n.PUBLIC_WITH_RECRUITMENT : u.n.PUBLIC
+      }) : m.A.updateGuildProfile(x, {
+        visibility: _ ? u.n.PUBLIC_WITH_RECRUITMENT : u.n.PUBLIC
       })
-    }, [h, O, j]),
-    A = i.useCallback(() => {
-      g.A.setSection(m.BEX.ACCESS, m.nd0.ACCESS_DISCOVERABLE)
+    }, [x, _, j]),
+    y = i.useCallback(() => {
+      m.A.setSection(f.BEX.ACCESS, f.nd0.ACCESS_DISCOVERABLE)
     }, []),
-    E = null == (t = n.features) ? true : t.includes(m.GuildFeatures.DISCOVERABLE);
+    A = null == (t = n.features) ? true : t.includes(f.GuildFeatures.DISCOVERABLE);
   return (0, r.jsxs)("div", {
-    className: x.Im,
-    ref: y,
+    className: h.Im,
+    ref: O,
     children: [(0, r.jsxs)("div", {
-      className: x.fi,
-      children: [(0, r.jsx)(o.dOG, {
-        label: p.intl.string(p.t.fjHWen),
-        description: p.intl.string(p.t.J1YOV6),
+      className: h.fi,
+      children: [(0, r.jsx)(c.dOG, {
+        label: b.intl.string(b.t.fjHWen),
+        description: b.intl.string(b.t.J1YOV6),
         checked: !j,
         onChange: v,
-        disabled: E || !l
-      }), E && (0, r.jsx)(o.Text, {
+        disabled: A || !l
+      }), A && (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: p.intl.format(p.t.R8jY9g, {
-          accessLink: (e, t) => (0, r.jsx)(o.MzZ, {
-            onClick: A,
+        children: b.intl.format(b.t.R8jY9g, {
+          accessLink: (e, t) => (0, r.jsx)(c.MzZ, {
+            onClick: y,
             children: e
           }, t)
         })
       })]
     }), (0, r.jsx)("div", {
-      className: s()(x.fi, {
-        [x.Rl]: j
+      className: s()(h.fi, {
+        [h.Rl]: j
       }),
-      children: (0, r.jsx)(f.A, {
-        guildId: h,
+      children: (0, r.jsx)(g.A, {
+        guildId: x,
         name: null
       })
     })]

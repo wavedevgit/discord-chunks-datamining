@@ -1,7 +1,7 @@
 /** Chunk was on 64228 **/
-/** chunk id: 412775, original params: e,l,t (module,exports,require) **/
+/** chunk id: 412775, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => _
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -26,71 +26,71 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk195723 = require("./195723.js");
 
-function O(e) {
+function _(e) {
   let {
-    user: l,
-    displayProfile: t,
-    onClose: O
+    user: t,
+    displayProfile: n,
+    onClose: _
   } = e, {
-    trackUserProfileAction: N
-  } = (0, u.NJ)(), E = (0, i.bG)([d.A], () => d.A.getGuildId()), _ = (0, s.q)({
-    userId: l.id
-  }), T = (0, i.bG)([c.A], () => c.A.hidePersonalInformation), P = (0, i.bG)([o.default], () => o.default.locale), S = (0, p.A)(l.id), C = (0, f.A)(l.id);
-  return (0, n.jsxs)(r.IpV, {
+    trackUserProfileAction: O
+  } = (0, u.NJ)(), N = (0, i.bG)([c.A], () => c.A.getGuildId()), E = (0, s.q)({
+    userId: t.id
+  }), T = (0, i.bG)([d.A], () => d.A.hidePersonalInformation), P = (0, i.bG)([a.default], () => a.default.locale), C = (0, m.A)(t.id), S = (0, p.A)(t.id);
+  return (0, l.jsxs)(r.IpV, {
     fade: true,
     className: y.XG,
-    children: [(null == t ? true : t.bio) != null && (null == t ? true : t.bio) !== "" && !T && (0, n.jsx)(m.A, {
-      userBio: t.bio,
+    children: [(null == n ? true : n.bio) != null && (null == n ? true : n.bio) !== "" && !T && (0, l.jsx)(f.A, {
+      userBio: n.bio,
       setLineClamp: false
-    }), (null == t ? true : t.guildId) != null && (0, n.jsx)(g.A, {
-      userId: l.id,
-      guildId: t.guildId
-    }), l.isProvisional && (0, n.jsx)(h.A, {
+    }), (null == n ? true : n.guildId) != null && (0, l.jsx)(g.A, {
+      userId: t.id,
+      guildId: n.guildId
+    }), t.isProvisional && (0, l.jsx)(h.A, {
       heading: I.intl.string(I.t.Iyka0U),
-      headingIcon: (0, n.jsx)(r.EpV, {
+      headingIcon: (0, l.jsx)(r.EpV, {
         size: "xxs",
         color: r.LU0.colors.TEXT_STRONG
       }),
       headingColor: "text-default",
-      children: (0, n.jsx)(a.T, {
-        userId: l.id
+      children: (0, l.jsx)(o.T, {
+        userId: t.id
       })
-    }), _.length > 0 && (0, n.jsx)(h.A, {
+    }), E.length > 0 && (0, l.jsx)(h.A, {
       heading: I.intl.string(I.t["Uv/eTx"]),
-      children: (0, n.jsx)(A.A, {
-        applicationIds: _
+      children: (0, l.jsx)(x.A, {
+        applicationIds: E
       })
-    }), (0, n.jsx)(h.A, {
+    }), (0, l.jsx)(h.A, {
       heading: I.intl.string(I.t.a6XYD9),
-      children: (0, n.jsx)(j.A, {
-        userId: l.id,
-        guildId: null == t ? true : t.guildId,
+      children: (0, l.jsx)(j.A, {
+        userId: t.id,
+        guildId: null == n ? true : n.guildId,
         tooltipDelay: b.In
       })
-    }), S.length > 0 && (0, n.jsx)(h.A, {
+    }), C.length > 0 && (0, l.jsx)(h.A, {
       heading: I.intl.string(I.t["3fe7U5"]),
       scrollTargetId: b.bk.CONNECTIONS,
-      children: (0, n.jsx)(x.Ay, {
-        connectedAccounts: S,
+      children: (0, l.jsx)(A.Ay, {
+        connectedAccounts: C,
         className: y.oQ,
-        userId: l.id,
+        userId: t.id,
         locale: P
       })
-    }), C.length > 0 && (0, n.jsx)(h.A, {
+    }), S.length > 0 && (0, l.jsx)(h.A, {
       heading: I.intl.string(I.t.PHjkRE),
-      children: C.map(e => (0, n.jsx)(x.Wc, {
+      children: S.map(e => (0, l.jsx)(A.Wc, {
         className: y.MI,
         applicationRoleConnection: e,
         locale: P,
         onApplicationClicked: () => {
-          N({
+          O({
             action: "PRESS_APP_CONNECTION"
-          }), O()
+          }), _()
         },
-        selectedGuildId: null != E ? E : true
+        selectedGuildId: null != N ? N : true
       }, e.application.id))
-    }), (0, n.jsx)(v.A, {
-      userId: l.id
+    }), (0, l.jsx)(v.A, {
+      userId: t.id
     })]
   })
 }

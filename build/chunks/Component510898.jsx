@@ -73,8 +73,8 @@ function E(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let b = "https://support.discord.com/hc/en-us";
-class y extends Chunk64700.PureComponent {
+let y = "https://support.discord.com/hc/en-us";
+class b extends Chunk64700.PureComponent {
   static getDerivedStateFromError(e) {
     return {
       hasError: true
@@ -89,7 +89,7 @@ class y extends Chunk64700.PureComponent {
       children: [f.intl.format(f.t.IIHUUF, {
         subscriptionId: this.props.subscription.id
       }), " ", f.intl.format(f.t.fh65ES, {
-        helpLink: b
+        helpLink: y
       })]
     }) : this.props.children
   }
@@ -112,49 +112,49 @@ function O(e) {
     p({
       route: u.R.HOME
     })
-  }, b = e => {
+  }, y = e => {
     p(_({
       route: u.R.SWITCH_APP_PLANS
     }, e)), n(f.intl.string(f.t.VFqtkP), E)
-  }, [O, A] = i.useState({});
+  }, [O, v] = i.useState({});
   i.useEffect(() => {
     for (let n of t) {
       var e;
       let t = null == (e = n.items[0]) ? true : e.planId;
-      null != t && (A(e => m(_({}, e), {
+      null != t && (v(e => m(_({}, e), {
         [n.id]: c.G.LOADING
       })), (0, o._R)(t).then(() => {
-        A(e => m(_({}, e), {
+        v(e => m(_({}, e), {
           [n.id]: c.G.DONE
         }))
       }).catch(() => {
-        A(e => m(_({}, e), {
+        v(e => m(_({}, e), {
           [n.id]: c.G.ERROR
         }))
       }))
     }
   }, [t]);
   let {
-    loadState: v
-  } = (0, l.E)(), S = v !== l.mJ.LOADED;
+    loadState: A
+  } = (0, l.E)(), I = A !== l.mJ.LOADED;
   switch (h) {
     case u.R.HOME:
       return (0, r.jsx)(r.Fragment, {
         children: t.map(e => {
           var t;
-          return (0, r.jsx)(y, {
+          return (0, r.jsx)(b, {
             subscription: e,
             children: (0, r.jsx)(c.A, {
               subscription: e,
-              navigateToSwitchPlan: b,
-              loadingState: S ? c.G.LOADING : null != (t = O[e.id]) ? t : c.G.LOADING
+              navigateToSwitchPlan: y,
+              loadingState: I ? c.G.LOADING : null != (t = O[e.id]) ? t : c.G.LOADING
             })
           }, e.id)
         })
       });
     case u.R.SWITCH_APP_PLANS:
       let {
-        route: I
+        route: S
       } = a, T = g(a, ["route"]);
       return (0, r.jsx)(d.A, m(_({}, T), {
         navigateToHome: E

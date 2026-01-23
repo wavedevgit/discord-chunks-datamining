@@ -2,7 +2,7 @@
 /** chunk id: 531417, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./747238.js"), require("./896048.js"), require("./65821.js");
 var Chunk214958 = require("./214958.js"),
   i = require.n(Chunk214958),
@@ -41,7 +41,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,8 +52,8 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -62,10 +62,10 @@ function O(e) {
   return (null != e ? e : h.Hz) / h.Hz
 }
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t + (n - t) * e / 100
 }
-class v extends Chunk972347.A {
+class A extends Chunk972347.A {
   destroy() {
     this.eachConnection(e => e.destroy()), this.emit(o.bg.Destroy), this.removeAllListeners()
   }
@@ -314,9 +314,9 @@ class v extends Chunk972347.A {
       width: a,
       height: s
     });
-    let [E, b] = null != l ? l.split(":") : ["", ""];
+    let [E, y] = null != l ? l.split(":") : ["", ""];
     n.setClipsSource({
-      id: b,
+      id: y,
       soundshareId: null != c ? c : 0
     })
   }
@@ -335,7 +335,7 @@ class v extends Chunk972347.A {
   getScreenPreviews(e, t) {
     return new Promise(n => {
       null != (0, d.lE)().getScreenPreviews ? (0, d.lE)().getScreenPreviews(e, t, e => {
-        n(e.map((e, t) => y(E({}, e), {
+        n(e.map((e, t) => b(E({}, e), {
           name: "Screen " + (t + 1)
         })))
       }) : n([])
@@ -568,8 +568,8 @@ class v extends Chunk972347.A {
   setSidechainCompressionStrength(e) {
     var t, n;
     let r = 100 - e,
-      i = A(r, _.Zi, _.Xg),
-      a = A(r, _.d_, _.nO);
+      i = v(r, _.Zi, _.Xg),
+      a = v(r, _.d_, _.nO);
     null == (t = (n = (0, d.lE)()).applySidechainCompressionSettings) || t.call(n, {
       threshold: i,
       ratio: a
@@ -660,11 +660,11 @@ class v extends Chunk972347.A {
       ducking: false
     }), null == (i = E.setNativeScreenSharePickerCallbacks) || i.call(E, this.handleNativeScreenSharePickerUpdate, this.handleNativeScreenSharePickerCancel, this.handleNativeScreenSharePickerError), null == (a = E.setVideoCodecErrorCallback) || a.call(E, this.handleVideoCodecErrorCallback), null == (c = E.setSystemMicrophoneModeChangeCallback) || c.call(E, this.handleSystemMicrophoneModeChangeCallback), this.on("removeListener", this.handleRemoveListener), this.on("newListener", this.handleNewListener), null != (0, d.lE)().getAudioSubsystem ? (0, d.lE)().getAudioSubsystem((e, t) => {
       this.audioSubsystem = e, this.audioLayer = t
-    }) : null != (0, d.lE)().getUseLegacyAudioDevice && (this.audioSubsystem = (0, d.lE)().getUseLegacyAudioDevice() ? h.rB.LEGACY : h.rB.STANDARD), null != E.pingVoiceThread && "u" > typeof window && "canary" === window.GLOBAL_ENV.RELEASE_CHANNEL && this.watchdogTick(), null != E.setActiveSinksChangeCallback && E.setActiveSinksChangeCallback(this.handleActiveSinksChange), null == (_ = E.setLoopbackPlaybackGainMultiplier) || _.call(E, h.QP), null == (m = E.setVoiceFiltersFailedCallback) || m.call(E, e => this.emit(o.bg.VoiceFiltersFailed, e)), (0, l.A)(this), S(this)
+    }) : null != (0, d.lE)().getUseLegacyAudioDevice && (this.audioSubsystem = (0, d.lE)().getUseLegacyAudioDevice() ? h.rB.LEGACY : h.rB.STANDARD), null != E.pingVoiceThread && "u" > typeof window && "canary" === window.GLOBAL_ENV.RELEASE_CHANNEL && this.watchdogTick(), null != E.setActiveSinksChangeCallback && E.setActiveSinksChangeCallback(this.handleActiveSinksChange), null == (_ = E.setLoopbackPlaybackGainMultiplier) || _.call(E, h.QP), null == (m = E.setVoiceFiltersFailedCallback) || m.call(E, e => this.emit(o.bg.VoiceFiltersFailed, e)), (0, l.A)(this), I(this)
   }
 }
 
-function S(e) {
+function I(e) {
   let t = false;
   e.on(o.bg.Destroy, () => t = true);
   let n = async () => {

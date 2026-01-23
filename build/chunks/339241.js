@@ -73,33 +73,33 @@ function u(e) {
     g = (0, r.useMemo)(() => u && null != l ? p(f(u, l)) : null, [u, l]);
   (null == c ? true : c.validationDetails.valid) && (c = true);
   let E = (0, r.useContext)(o),
-    b = (0, r.useMemo)(() => i ? Array.isArray(i) ? i.flatMap(e => d(E[e])) : d(E[i]) : [], [E, i]),
-    [y, O] = (0, r.useState)(E),
-    [A, v] = (0, r.useState)(false);
-  E !== y && (O(E), v(false));
-  let S = (0, r.useMemo)(() => p(A ? [] : b), [A, b]),
-    I = (0, r.useRef)(s),
+    y = (0, r.useMemo)(() => i ? Array.isArray(i) ? i.flatMap(e => d(E[e])) : d(E[i]) : [], [E, i]),
+    [b, O] = (0, r.useState)(E),
+    [v, A] = (0, r.useState)(false);
+  E !== b && (O(E), A(false));
+  let I = (0, r.useMemo)(() => p(v ? [] : y), [v, y]),
+    S = (0, r.useRef)(s),
     [T, C] = (0, r.useState)(s),
     N = (0, r.useRef)(s),
     R = () => {
       if (!w) return;
       P(false);
-      let e = g || c || I.current;
+      let e = g || c || S.current;
       _(e, N.current) || (N.current = e, C(e))
     },
     [w, P] = (0, r.useState)(false);
   return (0, r.useEffect)(R), {
-    realtimeValidation: m || S || g || c || s,
-    displayValidation: "native" === h ? m || S || T : m || S || g || c || T,
+    realtimeValidation: m || I || g || c || s,
+    displayValidation: "native" === h ? m || I || T : m || I || g || c || T,
     updateValidation(e) {
-      "aria" !== h || _(T, e) ? I.current = e : C(e)
+      "aria" !== h || _(T, e) ? S.current = e : C(e)
     },
     resetValidation() {
       let e = s;
-      _(e, N.current) || (N.current = e, C(e)), "native" === h && P(false), v(true)
+      _(e, N.current) || (N.current = e, C(e)), "native" === h && P(false), A(true)
     },
     commitValidation() {
-      "native" === h && P(true), v(true)
+      "native" === h && P(true), A(true)
     }
   }
 }

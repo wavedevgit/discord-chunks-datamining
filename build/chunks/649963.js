@@ -8,7 +8,7 @@ require.d(exports, {
   ao: () => R,
   et: () => L,
   on: () => P,
-  qN: () => S
+  qN: () => I
 });
 var Chunk562465 = require("./562465.js"),
   Chunk582754 = require("./582754.js"),
@@ -28,7 +28,7 @@ var Chunk562465 = require("./562465.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,13 +44,13 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,16 +61,16 @@ function A(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var S = function(e) {
+var I = function(e) {
   return e.MESSAGE = "Message", e.FORUM_TOOLBAR = "Forum Toolbar", e.MOBILE_MEDIA_VIEWER = "Mobile Media Viewer", e.MESSAGE_HOVER_BAR = "Message Hover Bar", e.MESSAGE_INLINE_BUTTON = "Message Inline Button", e.MESSAGE_CONTEXT_MENU = "Message Context Menu", e.MESSAGE_REACTION_PICKER = "Message Reaction Picker", e.MESSAGE_SHORTCUT = "Message Shortcut", e.DOUBLE_TAP = "Double Tap", e
 }({});
 
-function I(e, t, n) {
+function S(e, t, n) {
   let {
     headers: r,
     status: i,
@@ -84,9 +84,9 @@ function I(e, t, n) {
   if (403 === i) switch (a && a.code) {
     case E.t02.TOO_MANY_REACTIONS:
       s.A.show({
-        title: b.intl.string(b.t.lFddsR),
-        body: b.intl.string(b.t.h27eIm),
-        confirmText: b.intl.string(b.t.BddRzS)
+        title: y.intl.string(y.t.lFddsR),
+        body: y.intl.string(y.t.h27eIm),
+        confirmText: y.intl.string(y.t.BddRzS)
       });
       break;
     case E.t02.REACTION_BLOCKED:
@@ -166,9 +166,9 @@ async function w(e, t, n) {
     f = null != u && !!u.burst,
     _ = null != u && !!u.isRetry;
   if (!_ && M(e, t, n, f)) return void s.A.show({
-    title: b.intl.string(b.t["uaUU/g"]),
-    body: b.intl.string(b.t.psMorl),
-    confirmText: b.intl.string(b.t["NX+WJN"])
+    title: y.intl.string(y.t["uaUU/g"]),
+    body: y.intl.string(y.t.psMorl),
+    confirmText: y.intl.string(y.t["NX+WJN"])
   });
   let h = await j(n, f);
   return T("MESSAGE_REACTION_ADD", e, t, n, {
@@ -199,28 +199,28 @@ async function w(e, t, n) {
         action: "react"
       }, (0, o.H$)(null == i ? true : i.guild_id), (0, o.dI)(i)))
     }
-    f ? (i.OR.announce(b.intl.formatToPlainString(b.t["RJlG+R"], {
+    f ? (i.OR.announce(y.intl.formatToPlainString(y.t["RJlG+R"], {
       name: n.name
     })), g.A.triggerFullscreenAnimation({
       channelId: e,
       messageId: t,
-      emoji: v(O({}, n), {
+      emoji: A(O({}, n), {
         animated: false
       })
-    })) : i.OR.announce(b.intl.formatToPlainString(b.t.ol4acF, {
+    })) : i.OR.announce(y.intl.formatToPlainString(y.t.ol4acF, {
       name: n.name
     }))
   }).catch(r => {
-    I(r, () => w(e, t, n, a, {
+    S(r, () => w(e, t, n, a, {
       burst: f,
       isRetry: true
     }), {
       isRetry: _
     }) && (T("MESSAGE_REACTION_REMOVE", e, t, n, {
       burst: f
-    }), f ? i.OR.announce(b.intl.formatToPlainString(b.t.fJeu87, {
+    }), f ? i.OR.announce(y.intl.formatToPlainString(y.t.fJeu87, {
       name: n.name
-    })) : i.OR.announce(b.intl.formatToPlainString(b.t["UUn5V+"], {
+    })) : i.OR.announce(y.intl.formatToPlainString(y.t["UUn5V+"], {
       name: n.name
     })))
   })
@@ -248,7 +248,7 @@ async function D(e, t, n) {
     oldFormErrors: true,
     rejectWithError: false
   }).catch(n => {
-    I(n, () => D(e, t, {
+    S(n, () => D(e, t, {
       isRetry: true
     }), {
       isRetry: i
@@ -264,7 +264,7 @@ async function x(e, t, n, i) {
     oldFormErrors: true,
     rejectWithError: false
   }).catch(r => {
-    I(r, () => x(e, t, n, {
+    S(r, () => x(e, t, n, {
       isRetry: true
     }), {
       isRetry: a
@@ -299,13 +299,13 @@ async function L(e) {
     oldFormErrors: true,
     rejectWithError: false
   }).then(() => {
-    (null == u ? true : u.burst) ? i.OR.announce(b.intl.formatToPlainString(b.t["3l9f6u"], {
+    (null == u ? true : u.burst) ? i.OR.announce(y.intl.formatToPlainString(y.t["3l9f6u"], {
       name: a.name
-    })): i.OR.announce(b.intl.formatToPlainString(b.t["DQxi+7"], {
+    })): i.OR.announce(y.intl.formatToPlainString(y.t["DQxi+7"], {
       name: a.name
     }))
   }).catch(async e => {
-    if (I(e, () => L({
+    if (S(e, () => L({
         channelId: t,
         messageId: n,
         emoji: a,
@@ -323,9 +323,9 @@ async function L(e) {
         userId: o,
         burst: d,
         colors: e
-      }), (null == u ? true : u.burst) ? i.OR.announce(b.intl.formatToPlainString(b.t.OamVbV, {
+      }), (null == u ? true : u.burst) ? i.OR.announce(y.intl.formatToPlainString(y.t.OamVbV, {
         name: a.name
-      })) : i.OR.announce(b.intl.formatToPlainString(b.t["tD9+b+"], {
+      })) : i.OR.announce(y.intl.formatToPlainString(y.t["tD9+b+"], {
         name: a.name
       }))
     }

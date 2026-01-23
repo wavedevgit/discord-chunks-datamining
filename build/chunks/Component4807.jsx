@@ -21,14 +21,14 @@ function u() {
 
 function m() {
   let e = l.useCallback(() => {
-      (0, c._N)(r.M.NITRO_TENURE_BADGE_LEVEL_UP)
+      (0, c._N)(i.M.NITRO_TENURE_BADGE_LEVEL_UP)
     }, []),
     {
       lastDismissedAtMs: t
-    } = (0, o.FZ)(r.M.NITRO_TENURE_BADGE_LEVEL_UP),
+    } = (0, o.FZ)(i.M.NITRO_TENURE_BADGE_LEVEL_UP),
     n = null != t ? new Date(t) : null;
   return (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsx)(i.DZT, {
+    children: [(0, a.jsx)(r.DZT, {
       className: d.wx,
       variant: "heading-lg/semibold",
       children: "Tenure Badges"

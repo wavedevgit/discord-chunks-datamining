@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk606878 = require("./606878.js");
 
 function o(e) {
@@ -21,7 +21,7 @@ function o(e) {
     null != u.current && clearTimeout(u.current)
   }), [i]), (0, r.jsx)("div", {
     "data-flash": o,
-    className: a()(s.j, n),
+    className: s()(a.j, n),
     children: t
   })
 }

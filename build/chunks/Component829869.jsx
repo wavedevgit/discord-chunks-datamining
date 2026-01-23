@@ -1,7 +1,7 @@
 /** Chunk was on 41031 **/
 /** chunk id: 829869, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  Q: () => O
+  Q: () => g
 }), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,7 +19,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk855522 = require("./855522.js"),
   Chunk33221 = require("./33221.js");
 
-function k(e, t, a) {
+function I(e, t, a) {
   return t in e ? Object.defineProperty(e, t, {
     value: a,
     enumerable: true,
@@ -27,11 +27,11 @@ function k(e, t, a) {
     writable: true
   }) : e[t] = a, e
 }
-let I = Chunk818348.sE.MAIN_NAVIGATION_MENU;
-class O extends Chunk64700.PureComponent {
+let k = Chunk818348.sE.MAIN_NAVIGATION_MENU;
+class g extends Chunk64700.PureComponent {
   componentDidMount() {
     this.setState({
-      isAppCompatible: p.VP
+      isAppCompatible: A.VP
     })
   }
   render() {
@@ -39,106 +39,106 @@ class O extends Chunk64700.PureComponent {
       className: e,
       mainContentId: t,
       skipToContentLabel: a,
-      onChangeLocale: l,
-      TrackClick: r,
+      onChangeLocale: s,
+      TrackClick: l,
       avoidRouter: i
     } = this.props;
-    return (0, s.jsxs)("header", {
-      className: n()(f.header, e),
-      children: [(0, s.jsxs)("nav", {
-        className: f.headerInner,
-        children: [(0, s.jsxs)("div", {
-          className: f.headerLogo,
-          children: [(0, s.jsx)(r, {
+    return (0, r.jsxs)("header", {
+      className: n()(m.header, e),
+      children: [(0, r.jsxs)("nav", {
+        className: m.headerInner,
+        children: [(0, r.jsxs)("div", {
+          className: m.headerLogo,
+          children: [(0, r.jsx)(l, {
             tag: "div",
-            eventName: I,
+            eventName: k,
             data: {
               linkClicked: "logo"
             },
-            children: (0, s.jsx)(c.A, {
+            children: (0, r.jsx)(c.A, {
               avoidRouter: i,
-              to: A.Tk.INDEX,
-              from: A.sE.MAIN_NAVIGATION_MENU,
-              children: (0, s.jsx)(d.z, {})
+              to: N.Tk.INDEX,
+              from: N.sE.MAIN_NAVIGATION_MENU,
+              children: (0, r.jsx)(d.z, {})
             })
-          }), null != t ? (0, s.jsx)("a", {
-            className: f.skipToContent,
+          }), null != t ? (0, r.jsx)("a", {
+            className: m.skipToContent,
             href: "#".concat(t),
             children: a
           }) : null]
-        }), (0, s.jsx)("ul", {
-          className: f.headerNav,
-          children: (0, s.jsx)(N.C, {
+        }), (0, r.jsx)("ul", {
+          className: m.headerNav,
+          children: (0, r.jsx)(_.C, {
             avoidRouter: i,
-            TrackClick: r,
-            styles: f
+            TrackClick: l,
+            styles: m
           })
-        }), (0, s.jsxs)("ul", {
-          className: f.headerNavRight,
-          children: [this.renderSocialMediaNav(), (0, s.jsx)(u.B, {
-            onChange: l
+        }), (0, r.jsxs)("ul", {
+          className: m.headerNavRight,
+          children: [this.renderSocialMediaNav(), (0, r.jsx)(u.B, {
+            onChange: s
           })]
         })]
-      }), null != t && (0, s.jsx)("div", {
+      }), null != t && (0, r.jsx)("div", {
         id: t,
         tabIndex: false
       })]
     })
   }
   constructor(...e) {
-    super(...e), k(this, "state", {
+    super(...e), I(this, "state", {
       isAppCompatible: true
-    }), k(this, "getAppButton", () => {
+    }), I(this, "getAppButton", () => {
       let {
         token: e,
         TrackClick: t,
         authRedirectTo: a
       } = this.props, {
-        isAppCompatible: l
-      } = this.state, r = (0, o.T2)(a), n = b.A.Messages.NAVIGATION_LOGIN;
-      return null != e && (r = A.Sb.ME, n = b.A.Messages.NAVIGATION_OPEN), l ? (0, s.jsx)("li", {
-        className: f.listItemInactive,
-        children: (0, s.jsx)(t, {
-          eventName: I,
-          className: f.appButton,
+        isAppCompatible: s
+      } = this.state, l = (0, o.T2)(a), n = h.A.Messages.NAVIGATION_LOGIN;
+      return null != e && (l = N.Sb.ME, n = h.A.Messages.NAVIGATION_OPEN), s ? (0, r.jsx)("li", {
+        className: m.listItemInactive,
+        children: (0, r.jsx)(t, {
+          eventName: k,
+          className: m.appButton,
           data: {
             linkClicked: e ? "open" : "login",
             googleAnalytics: true
           },
-          href: r,
+          href: l,
           children: n
         })
       }, "app-button") : null
-    }), k(this, "renderSocialMediaNav", () => {
+    }), I(this, "renderSocialMediaNav", () => {
       let {
         TrackClick: e
       } = this.props, t = [{
-        route: (0, i.S)(A.Pq.TWITTER),
+        route: (0, i.S)(N.Pq.TWITTER),
         linkClicked: "twitter",
         alt: "Discord's Twitter",
-        img: h.T.ASSET_SOCIAL_TWITTER
+        img: p.T.ASSET_SOCIAL_TWITTER
       }, {
-        route: A.w7.FACEBOOK_URL,
+        route: N.w7.FACEBOOK_URL,
         linkClicked: "facebook",
         alt: "Discord's Facebook",
-        img: h.T.ASSET_SOCIAL_FACEBOOK
+        img: p.T.ASSET_SOCIAL_FACEBOOK
       }, {
-        route: A.w7.INSTAGRAM_URL,
+        route: N.w7.INSTAGRAM_URL,
         linkClicked: "instagram",
         alt: "Discord's Instagram",
-        img: h.T.ASSET_SOCIAL_INSTAGRAM
-      }].map(t => (0, s.jsx)("li", {
-        className: n()(f.listItemInactive, f.listItemSocialMedia),
-        children: (0, s.jsx)(e, {
-          eventName: I,
-          className: f.rightNavLink,
+        img: p.T.ASSET_SOCIAL_INSTAGRAM
+      }].map(t => (0, r.jsx)("li", {
+        className: n()(m.listItemInactive, m.listItemSocialMedia),
+        children: (0, r.jsx)(e, {
+          eventName: k,
+          className: m.rightNavLink,
           data: {
             linkClicked: t.linkClicked
           },
           href: t.route,
           rel: "me",
           target: "_blank",
-          children: (0, s.jsx)("img", {
+          children: (0, r.jsx)("img", {
             src: t.img,
             alt: t.alt
           })

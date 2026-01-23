@@ -1,7 +1,7 @@
 /** Chunk was on 14691 **/
-/** chunk id: 298009, original params: e,t,l (module,exports,require) **/
+/** chunk id: 298009, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => c,
+  A: () => o,
   u: () => d
 });
 var Chunk64700 = require("./64700.js"),
@@ -15,19 +15,19 @@ function d(e) {
   return {
     isValid: !t,
     errors: {
-      name: t ? i.intl.formatToPlainString(s.default.jYZD44, {
+      name: t ? s.intl.formatToPlainString(i.default.jYZD44, {
         forbiddenCharacters: a.join(", ")
       }) : true
     }
   }
 }
 
-function c() {
+function o() {
   let {
     regionId: e,
     gameServerInstance: t,
-    name: l,
+    name: n,
     planId: r
-  } = (0, n.bv)(), s = "" !== l && "" !== e && true !== r;
-  return null != t ? s && (t.name !== l || t.regionId !== e || t.planId !== r) : s
+  } = (0, l.bv)(), i = "" !== n && "" !== e && true !== r;
+  return null != t ? i && (t.name !== n || t.regionId !== e || t.planId !== r) : i
 }

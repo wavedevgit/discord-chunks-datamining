@@ -2,7 +2,7 @@
 /** chunk id: 195898, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
@@ -46,7 +46,7 @@ let g = {
     [Chunk996988.d.VIDEO_TILE_BACKGROUND]: "user-profile-video-tile-background"
   },
   E = "custom-user-profile-theme",
-  b = Object.freeze({
+  y = Object.freeze({
     "--profile-gradient-primary-color": "var(--background-surface-high)",
     "--profile-gradient-secondary-color": "var(--background-surface-high)",
     "--profile-gradient-overlay-color": "rgba(0, 0, 0, 0)",
@@ -54,22 +54,22 @@ let g = {
     "--profile-gradient-modal-background-color": "var(--background-base-lower)"
   });
 
-function y(e) {
+function b(e) {
   let {
     theme: t,
     themeType: n,
     primaryColor: i,
     secondaryColor: _,
     forceUserTheme: h = false
-  } = e, [y, O] = (0, o.yK)([c.A], () => [c.A.desaturateUserColors, c.A.syncProfileThemeWithUserTheme]), A = (0, p.k)(t), v = O || h ? null == A ? true : A.overlaySyncedWithUserTheme : null == A ? true : A.overlay;
+  } = e, [b, O] = (0, o.yK)([c.A], () => [c.A.desaturateUserColors, c.A.syncProfileThemeWithUserTheme]), v = (0, p.k)(t), A = O || h ? null == v ? true : v.overlaySyncedWithUserTheme : null == v ? true : v.overlay;
   return {
     profileThemeStyle: (0, r.useMemo)(() => {
-      if (null == i || null == _ || null == A || null == v) return b;
-      let e = (e, t) => (0, s.$k)(e, y, null, t);
+      if (null == i || null == _ || null == v || null == A) return y;
+      let e = (e, t) => (0, s.$k)(e, b, null, t);
       return m({
         "--profile-gradient-primary-color": e(i),
         "--profile-gradient-secondary-color": e(_),
-        "--profile-gradient-overlay-color": v,
+        "--profile-gradient-overlay-color": A,
         "--profile-gradient-button-color": e((0, f.wg)(i)),
         "--profile-gradient-modal-background-color": e((0, f.v2)(i, _, O || h ? t : true))
       }, (0, u.Zk)({
@@ -79,7 +79,7 @@ function y(e) {
         isDarkTheme: (0, l.Mwr)(t),
         textMixAmount: 25
       }))
-    }, [i, _, A, v, O, h, t, y]),
+    }, [i, _, v, A, O, h, t, b]),
     profileThemeClassName: a()((0, l.mo9)(t), null != n ? {
       [g[n]]: true
     } : true, {

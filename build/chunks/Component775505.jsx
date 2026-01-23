@@ -74,7 +74,7 @@ let q = 0,
       sectionDescriptors: m,
       setCollapsedSections: g,
       getEmojiItemProps: O,
-      getEmojiRowProps: A,
+      getEmojiRowProps: v,
       isScrolling: T,
       isUsingKeyboardNavigation: N,
       allowAnimatedEmoji: w,
@@ -115,9 +115,9 @@ let q = 0,
         visibleRowIndex: n
       } = e, r = e.type === V.bm.SOUNDMOJI ? null : e.type === V.bm.EMOJI ? (0, x.N)(e.emoji) : e.name;
       el.current !== H.An1 && window.cancelAnimationFrame(el.current), el.current = window.requestAnimationFrame(() => {
-        E.Om.setInspectedExpressionPosition(t, n, y.t.MOUSE_EVENT), E.Om.setSearchPlaceholder(r), el.current = H.An1
+        E.Om.setInspectedExpressionPosition(t, n, b.t.MOUSE_EVENT), E.Om.setSearchPlaceholder(r), el.current = H.An1
       })
-    }, []), eh = (0, u.bG)([S.HP], () => S.HP.hasHotspot(S._2.FAVORITE_EMOJI_TOOLTIP), []), em = i.useMemo(() => l().memoize((e, t) => {
+    }, []), eh = (0, u.bG)([I.HP], () => I.HP.hasHotspot(I._2.FAVORITE_EMOJI_TOOLTIP), []), em = i.useMemo(() => l().memoize((e, t) => {
       let n = a[e],
         i = m[t.sectionIndex],
         s = () => {
@@ -134,7 +134,7 @@ let q = 0,
         onSelect: c,
         onSelectSoundmoji: f,
         getEmojiItemProps: O,
-        getEmojiRowProps: A,
+        getEmojiRowProps: v,
         isScrolling: T,
         isUsingKeyboardNavigation: N,
         rowIndex: e,
@@ -149,7 +149,7 @@ let q = 0,
         inNitroLockedSection: i.isNitroLocked,
         handleScrollUpOnSectionCollapse: s
       }, e)
-    }), [a, m, o, ec, e_, c, f, O, A, T, N, w, eh, P, L, j, M, es]);
+    }), [a, m, o, ec, e_, c, f, O, v, T, N, w, eh, P, L, j, M, es]);
     i.useEffect(() => () => {
       var e, t;
       return null == (t = em.cache) || null == (e = t.clear) ? true : e.call(t)
@@ -183,11 +183,11 @@ let q = 0,
           g = o === B.s.SOUNDMOJI ? (0, r.jsx)(p.DUT, {
             className: z.f3,
             onClick: () => {
-              (0, b.U)(Y.kx.SOUNDBOARD), D.default.track(H.HAw.SOUNDMOJI_EMOJI_PICKER_VIEW_ALL_CLICK)
+              (0, y.U)(Y.kx.SOUNDBOARD), D.default.track(H.HAw.SOUNDMOJI_EMOJI_PICKER_VIEW_ALL_CLICK)
             },
             children: K.intl.string(K.t.rUEjBe)
           }) : true;
-        return (0, r.jsx)(v.A, {
+        return (0, r.jsx)(A.A, {
           className: s()(z.wx, W, {
             [z.RA]: _,
             [z.sp]: h
@@ -199,8 +199,8 @@ let q = 0,
           children: u
         }, l)
       }), [m, t, ep, W, q]),
-      eE = (0, I.k0)(),
-      eb = i.useCallback((e, n) => {
+      eE = (0, S.k0)(),
+      ey = i.useCallback((e, n) => {
         let i = m[e],
           a = ef(e),
           o = ed(e);
@@ -215,7 +215,7 @@ let q = 0,
           children: n
         }, e)
       }, [t, m, ef, ed, eu]),
-      ey = i.useCallback(e => ef(e) ? eE ? (0, r.jsx)(R.ap, {}) : (0, r.jsx)(R.Ay, {
+      eb = i.useCallback(e => ef(e) ? eE ? (0, r.jsx)(R.ap, {}) : (0, r.jsx)(R.Ay, {
         glowOpacity: er,
         enableBrandRefresh: eu
       }) : ed(e) ? (0, r.jsx)("div", {
@@ -224,17 +224,17 @@ let q = 0,
         })
       }) : null, [er, ef, ed, eE, eu]),
       eO = i.useCallback(e => ef(e) ? ei : ed(e) ? ea : 0, [ef, ed]),
-      eA = i.useCallback(e => {
+      ev = i.useCallback(e => {
         var n;
         return e === m.length - 1 || t.has(null == (n = m[e]) ? true : n.sectionId) || ef(e) || ed(e) ? 0 : et
       }, [t, m, ef, ed]);
     return {
       listPadding: i.useMemo(() => ["" !== _ ? J : Z, Q, $, X], [_]),
       renderRow: em,
-      renderSection: eb,
+      renderSection: ey,
       renderSectionHeader: eg,
-      renderSectionFooter: ey,
-      sectionMarginBottom: eA,
+      renderSectionFooter: eb,
+      sectionMarginBottom: ev,
       sectionHeaderHeight: i.useCallback(e => m[e].type === B.s.SEARCH_RESULTS ? 0 : ee, [m]),
       sectionFooterHeight: eO
     }
@@ -250,18 +250,18 @@ let q = 0,
       setUpsellConfigs: d,
       sectionDescriptors: f,
       rowCountBySection: p,
-      collapsedSections: y,
+      collapsedSections: b,
       setCollapsedSections: O,
-      getEmojiItemProps: v,
-      getEmojiRowProps: S,
-      rowCount: I,
+      getEmojiItemProps: A,
+      getEmojiRowProps: I,
+      rowCount: S,
       isUsingKeyboardNavigation: C,
       channelGuildId: R,
       channelId: x,
       messageId: M,
       isBurstReaction: k,
       listHeaderClassName: U
-    } = e, G = i.useRef(false), F = E.Om.useStore(e => e.activeCategoryIndex), B = (0, b.RQ)(e => e.searchQuery), Y = w.Sf.useSetting(), X = (0, u.bG)([P.default], () => P.default.getCurrentUser()), Z = (0, L.ki)(X), {
+    } = e, G = i.useRef(false), F = E.Om.useStore(e => e.activeCategoryIndex), B = (0, y.RQ)(e => e.searchQuery), Y = w.Sf.useSetting(), X = (0, u.bG)([P.default], () => P.default.getCurrentUser()), Z = (0, L.ki)(X), {
       location: Q
     } = (0, h.p)(), {
       analyticsLocations: $
@@ -275,7 +275,7 @@ let q = 0,
       sectionHeaderHeight: e_,
       sectionFooterHeight: eh
     } = eo({
-      collapsedSections: y,
+      collapsedSections: b,
       diversitySurrogate: t,
       emojiGrid: n,
       emojiSize: s,
@@ -284,8 +284,8 @@ let q = 0,
       searchQuery: B,
       sectionDescriptors: f,
       setCollapsedSections: O,
-      getEmojiItemProps: v,
-      getEmojiRowProps: S,
+      getEmojiItemProps: A,
+      getEmojiRowProps: I,
       isScrolling: G,
       isUsingKeyboardNavigation: C,
       allowAnimatedEmoji: Y,
@@ -299,12 +299,12 @@ let q = 0,
       emojiListRef: a
     }), em = e => {
       ee(e), "" === B && E.Om.setActiveCategoryIndex(e)
-    }, eg = (0, A.ci)({
+    }, eg = (0, v.ci)({
       listRef: a,
       searchQuery: B,
       nitroLockedSectionStates: f,
       setUpsellGlowOpacity: ei
-    }), eE = (0, A.Fk)({
+    }), eE = (0, v.Fk)({
       activeCategoryIndex: F,
       isScrolling: G,
       listRef: a,
@@ -313,12 +313,12 @@ let q = 0,
       searchQuery: B,
       disableForSearch: false
     });
-    (0, A.FV)({
+    (0, v.FV)({
       searchQuery: B,
       activeCategoryIndex: F,
       listRef: a
     });
-    let eb = i.useCallback(e => {
+    let ey = i.useCallback(e => {
         eg(e), eE(e), ec({
           emojiListRef: a,
           sectionDescriptors: f,
@@ -327,7 +327,7 @@ let q = 0,
           setShowUpsell: en
         })
       }, [eg, eE, a, f, B, en]),
-      ey = f.length > 0;
+      eb = f.length > 0;
 
     function eO() {
       let e = (0, j.Dd)(W.PremiumTypes.TIER_2);
@@ -342,7 +342,7 @@ let q = 0,
       })
     }
 
-    function eA() {
+    function ev() {
       var e;
       let t = (0, T.qD)();
       return null != (e = (0, j.LE)(t, W.pe.TIER_2)) ? e : K.intl.string(K.t.BmJkbd)
@@ -357,16 +357,16 @@ let q = 0,
       "" !== B && (ei(0), en(false))
     }, [B]), (0, r.jsxs)("div", {
       className: z.AD,
-      children: [ey ? (0, r.jsx)(g.A, {
+      children: [eb ? (0, r.jsx)(g.A, {
         role: "none presentation",
         className: z.p_,
         listPadding: ea,
-        onScroll: eb,
+        onScroll: ey,
         renderRow: el,
         renderSection: eu,
         renderSectionHeader: ed,
         renderSectionFooter: ef,
-        rowCount: I,
+        rowCount: S,
         rowCountBySection: p,
         rowHeight: es(s),
         sectionHeaderHeight: e_,
@@ -380,7 +380,7 @@ let q = 0,
       }), Z || c.Fr ? null : (0, r.jsx)(N.d, {
         showUpsell: et,
         text: eO(),
-        button: eA(),
+        button: ev(),
         buttonAnalyticsObject: {
           section: H.JJy.EMOJI_PICKER_FLOATING_UPSELL
         }

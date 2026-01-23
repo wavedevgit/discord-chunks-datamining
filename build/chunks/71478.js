@@ -1,5 +1,5 @@
 /** Chunk was on 88615 **/
-/** chunk id: 71478, original params: e,t,l (module,exports,require) **/
+/** chunk id: 71478, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => a
 });
@@ -10,12 +10,12 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function a(e) {
-  return (0, r.bG)([n.A], () => {
+  return (0, r.bG)([l.A], () => {
     var t;
-    return (null == (t = n.A.getGuild(e)) ? true : t.features.has(i.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) === true
+    return (null == (t = l.A.getGuild(e)) ? true : t.features.has(i.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) === true
   }) ? {
     shouldShow: true,
-    text: o.intl.string(s.default.l9n4QZ)
+    text: s.intl.string(o.default.l9n4QZ)
   } : {
     shouldShow: false,
     text: ""

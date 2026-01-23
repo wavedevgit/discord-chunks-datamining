@@ -24,7 +24,7 @@ function f(e) {
     g = null != (a = null == (p = _.fields) ? true : p.find(e => e.rawName === l.AT.INCIDENT_TIMESTAMP)) ? a : true,
     E = null == g || null == g.rawValue ? true : parseFloat(g.rawValue);
   if (null == m || null == E) return null;
-  let b = () => {
+  let y = () => {
     (0, o.mMO)(async () => {
       let {
         default: e
@@ -38,7 +38,7 @@ function f(e) {
     })
   };
   return (0, r.jsxs)(o.DUT, {
-    onClick: b,
+    onClick: y,
     className: u.o3,
     children: [(0, r.jsxs)("div", {
       className: u.qZ,

@@ -1,5 +1,5 @@
 /** Chunk was on 36946 **/
-/** chunk id: 839785, original params: t,e,i (module,exports,require) **/
+/** chunk id: 839785, original params: t,i,n (module,exports,require) **/
 require.d(exports, {
   default: () => b
 }), require("./896048.js");
@@ -22,22 +22,22 @@ var Chunk627968 = require("./627968.js"),
 
 function b(t) {
   let {
-    user: e,
-    entry: i,
+    user: i,
+    entry: n,
     transitionState: b,
     onAction: m,
     onClose: p,
     onOpenGameSettings: L
-  } = t, [O, R] = (0, r.yK)([d.A], () => [d.A.isDeletingEntryHistory, d.A.deleteOutboxEntryError]);
-  return s.useEffect(() => o.fq, []), (0, n.jsxs)(l.Modal, {
-    title: (0, _.W)(i),
+  } = t, [O, R] = (0, l.yK)([d.A], () => [d.A.isDeletingEntryHistory, d.A.deleteOutboxEntryError]);
+  return s.useEffect(() => a.fq, []), (0, e.jsxs)(r.Modal, {
+    title: (0, _.W)(n),
     subtitle: A.intl.format(A.t.KV72oe, {
-      settingsHook: (t, e) => {
+      settingsHook: (t, i) => {
         let s = (0, x.y)({
-          entry: i,
+          entry: n,
           onOpenGameSettings: L
         });
-        return (0, n.jsx)(a.MzZ, {
+        return (0, e.jsx)(o.MzZ, {
           onClick: () => {
             null == m || m({
               action: "PRESS_CLEAR_HISTORY_DISCLAIMER"
@@ -46,7 +46,7 @@ function b(t) {
             }), p()
           },
           children: t
-        }, e)
+        }, i)
       }
     }),
     size: "sm",
@@ -60,7 +60,7 @@ function b(t) {
       onClick: () => {
         null == m || m({
           action: "PRESS_CLEAR_HISTORY_BUTTON"
-        }), (0, c.FO)(i, e.id, p)
+        }), (0, c.FO)(n, i.id, p)
       },
       disabled: O,
       variant: "critical-primary",
@@ -68,17 +68,17 @@ function b(t) {
     }],
     onClose: p,
     transitionState: b,
-    children: [null != R ? (0, n.jsxs)("div", {
+    children: [null != R ? (0, e.jsxs)("div", {
       className: I.z3,
-      children: [(0, n.jsx)(a.aXh, {
-        color: a.LU0.colors.ICON_FEEDBACK_CRITICAL
-      }), (0, n.jsx)(a.Text, {
+      children: [(0, e.jsx)(o.aXh, {
+        color: o.LU0.colors.ICON_FEEDBACK_CRITICAL
+      }), (0, e.jsx)(o.Text, {
         variant: "text-sm/medium",
         children: A.intl.string(A.t.FMbL3s)
       })]
-    }) : null, (0, n.jsx)(E.A, {
-      user: e,
-      entry: i,
+    }) : null, (0, e.jsx)(E.A, {
+      user: i,
+      entry: n,
       className: I.Nr,
       hideContextMenu: true
     })]

@@ -54,10 +54,10 @@ function g(e, t) {
   }), e
 }
 let E = [Chunk155718.kc.CHAT, Chunk155718.kc.PRIMARY_ENTRY_POINT],
-  b = {
+  y = {
     pendingUsages: []
   },
-  y = new Chunk283047.A({
+  b = new Chunk283047.A({
     computeBonus: () => 100,
     lookupKey: e => e,
     afterCompute: () => {},
@@ -72,63 +72,63 @@ function O(e) {
     wasSaved: n
   } = e;
   if (t !== p.oD.FRECENCY_AND_FAVORITES_SETTINGS || !n) returnfalse;
-  b.pendingUsages = []
+  y.pendingUsages = []
 }
 
-function A(e) {
+function v(e) {
   var t;
   let {
     command: n
   } = e;
   if (!E.includes(n.type) || (null == (t = u.Ay.getLaunchState(n.applicationId)) ? true : t.isLaunching)) returnfalse;
-  S(n.applicationId)
+  I(n.applicationId)
 }
 
-function v(e) {
+function A(e) {
   let {
     applicationId: t
   } = e;
-  S(t)
+  I(t)
 }
 
-function S(e) {
-  b.pendingUsages.push({
+function I(e) {
+  y.pendingUsages.push({
     key: e,
     timestamp: Date.now()
-  }), y.track(e), y.compute()
+  }), b.track(e), b.compute()
 }
 
-function I() {
+function S() {
   var e, t;
   let n = null != (e = null == (t = d.A.frecencyWithoutFetchingLatest.applicationFrecency) ? true : t.applications) ? e : {};
-  y.overwriteHistory(a().mapValues(n, e => g(h({}, e), {
+  b.overwriteHistory(a().mapValues(n, e => g(h({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
-  })), b.pendingUsages)
+  })), y.pendingUsages)
 }
 class T extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    null != e && (b = e), this.waitFor(u.Ay, d.A), this.syncWith([d.A], I)
+    null != e && (y = e), this.waitFor(u.Ay, d.A), this.syncWith([d.A], S)
   }
   getState() {
-    return b
+    return y
   }
   hasPendingUsage() {
-    return b.pendingUsages.length > 0
+    return y.pendingUsages.length > 0
   }
   getApplicationFrecencyWithoutLoadingLatest() {
-    return y
+    return b
   }
   getScoreWithoutLoadingLatest(e) {
     var t;
-    return null != (t = y.getScore(e)) ? t : 0
+    return null != (t = b.getScore(e)) ? t : 0
   }
   getTopApplicationsWithoutLoadingLatest() {
-    return y.frequently
+    return b.frequently
   }
 }
 _(T, "displayName", "ApplicationFrecencyStore"), _(T, "persistKey", "ApplicationFrecency");
 let C = new T(Chunk73153.h, {
-  APPLICATION_COMMAND_USED: A,
-  EMBEDDED_ACTIVITY_OPEN: v,
+  APPLICATION_COMMAND_USED: v,
+  EMBEDDED_ACTIVITY_OPEN: A,
   USER_SETTINGS_PROTO_UPDATE: O
 })

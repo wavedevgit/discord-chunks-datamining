@@ -1,7 +1,7 @@
 /** Chunk was on 88615 **/
-/** chunk id: 79275, original params: e,t,l (module,exports,require) **/
+/** chunk id: 79275, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => g
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,26 +17,26 @@ var Chunk627968 = require("./627968.js"),
   Chunk333354 = require("./333354.js"),
   Chunk985018 = require("./985018.jsx");
 
-function A(e) {
+function g(e) {
   let {
     powerup: t,
-    targetRef: l,
-    isCardVisible: A
-  } = e, g = (0, s.bG)([c.A], () => c.A.hasLayers()), x = (0, a.useHasAnyModalOpen)(), b = t.skuId === i.FB ? {
-    title: v.intl.string(m.default.YWo6VL),
-    body: v.intl.string(m.default.gXVvKc),
-    dismissibleContentType: o.M.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
+    targetRef: n,
+    isCardVisible: g
+  } = e, A = (0, o.bG)([c.A], () => c.A.hasLayers()), _ = (0, a.useHasAnyModalOpen)(), x = t.skuId === i.FB ? {
+    title: v.intl.string(f.default.YWo6VL),
+    body: v.intl.string(f.default.gXVvKc),
+    dismissibleContentType: s.M.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
   } : null, h = [];
-  null == b || g || !A || x || h.push(b.dismissibleContentType);
-  let [j, _] = (0, d.kn)(h), E = n.useCallback(() => {
-    _(p.i.INDIRECT_ACTION)
-  }, [_]);
-  return ((0, f.A)({
-    targetRef: l,
+  null == x || A || !g || _ || h.push(x.dismissibleContentType);
+  let [b, j] = (0, d.kn)(h), E = l.useCallback(() => {
+    j(m.i.INDIRECT_ACTION)
+  }, [j]);
+  return ((0, p.A)({
+    targetRef: n,
     onShouldClose: E,
-    enabled: null != j
-  }), null == b || null == j) ? null : (0, r.jsx)(u.AM, {
-    targetElementRef: l,
+    enabled: null != b
+  }), null == x || null == b) ? null : (0, r.jsx)(u.AM, {
+    targetElementRef: n,
     shouldShow: true,
     position: "right",
     align: "top",
@@ -44,10 +44,10 @@ function A(e) {
     caretConfig: {
       align: "start"
     },
-    title: b.title,
-    body: b.body,
+    title: x.title,
+    body: x.body,
     onRequestClose: () => {
-      _(p.i.USER_DISMISS)
+      j(m.i.USER_DISMISS)
     }
   })
 }

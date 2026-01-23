@@ -1,7 +1,7 @@
 /** Chunk was on 13492 **/
-/** chunk id: 887092, original params: e,t,a (module,exports,require) **/
+/** chunk id: 887092, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  A: () => i
+  A: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -10,20 +10,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk734057 = require("./734057.js"),
   Chunk985018 = require("./985018.jsx");
 
-function i(e, t, a) {
-  let i = (0, n.bG)([r.A], () => r.A.getChannel(t)),
-    f = null == i ? true : i.getGuildId();
-  return (0, c.jsx)(l.Drp, {
+function _(e, n, t) {
+  let _ = (0, o.bG)([l.A], () => l.A.getChannel(n)),
+    s = null == _ ? true : _.getGuildId();
+  return (0, r.jsx)(a.Drp, {
     id: "report-app",
     color: "danger",
-    label: o.intl.string(o.t.NgA5vp),
-    action: () => (0, d.r3)({
+    label: c.intl.string(c.t.NgA5vp),
+    action: () => (0, i.r3)({
       application: e,
       entrypoint: "activity_ui_popout",
-      contextualGuildId: null != f ? f : true,
-      contextualChannelId: null == i ? true : i.id,
-      appContext: a
+      contextualGuildId: null != s ? s : true,
+      contextualChannelId: null == _ ? true : _.id,
+      appContext: t
     }),
-    icon: l.iFK
+    icon: a.iFK
   })
 }

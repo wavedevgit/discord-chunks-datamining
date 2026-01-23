@@ -216,7 +216,7 @@ let _ = [{
         closeOnSelect: u,
         clearQueryOnSelect: p,
         filter: h
-      } = e, m = f(e, ["placeholder", "isDisabled", "isProcessing", "clearable", "closeOnSelect", "clearQueryOnSelect", "filter"]), [g, E] = i.useState("blue"), [b, y] = i.useState(["blue"]);
+      } = e, m = f(e, ["placeholder", "isDisabled", "isProcessing", "clearable", "closeOnSelect", "clearQueryOnSelect", "filter"]), [g, E] = i.useState("blue"), [y, b] = i.useState(["blue"]);
       return (0, r.jsxs)(a.BJc, {
         gap: 24,
         children: [(0, r.jsx)(s.p, d(c({}, m), {
@@ -231,8 +231,8 @@ let _ = [{
           filter: h
         })), (0, r.jsx)(s.p, d(c({}, m), {
           multi: true,
-          value: b,
-          onChange: y,
+          value: y,
+          onChange: b,
           options: _,
           placeholder: t,
           isDisabled: n,

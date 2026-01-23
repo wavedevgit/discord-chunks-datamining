@@ -2,7 +2,7 @@
 /** chunk id: 787001, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,25 +24,25 @@ var Chunk627968 = require("./627968.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk127397 = require("./127397.js");
-let v = function(e) {
+let A = function(e) {
   let {
     closeLayer: t,
     guild: n,
     onCtaVisibilityChange: a
-  } = e, v = i.useRef(null), S = (0, o.bG)([h.default], () => h.default.getCurrentUser()), I = (0, o.bG)([m.A], () => m.A.boostSlots), T = null == S ? true : S.isPremiumGroupMember(), {
+  } = e, A = i.useRef(null), I = (0, o.bG)([h.default], () => h.default.getCurrentUser()), S = (0, o.bG)([m.A], () => m.A.boostSlots), T = null == I ? true : I.isPremiumGroupMember(), {
     analyticsLocations: C
-  } = (0, u.Ay)(), [N, R] = i.useState(false), w = i.useMemo(() => Object.keys(I).filter(e => {
-    let t = I[e];
+  } = (0, u.Ay)(), [N, R] = i.useState(false), w = i.useMemo(() => Object.keys(S).filter(e => {
+    let t = S[e];
     return null != t.premiumGuildSubscription && t.premiumGuildSubscription.guildId === n.id
-  }).length, [I, n.id]), P = (0, p.A)(e.guild.id).total;
+  }).length, [S, n.id]), P = (0, p.A)(e.guild.id).total;
   async function D() {
     R(true), await (0, E.g)({
       analyticsLocations: C,
       analyticsLocation: {
-        page: b.liQ.PREMIUM_GUILD_USER_MODAL,
-        section: b.JJy.PREMIUM_GUILD_USER_MODAL_CTA_BAR,
-        object: b.ZSU.BUTTON_CTA,
-        objectType: b.AnalyticsObjectTypes.BUY
+        page: y.liQ.PREMIUM_GUILD_USER_MODAL,
+        section: y.JJy.PREMIUM_GUILD_USER_MODAL_CTA_BAR,
+        object: y.ZSU.BUTTON_CTA,
+        objectType: y.AnalyticsObjectTypes.BUY
       },
       guild: n,
       closeLayer: t
@@ -52,13 +52,13 @@ let v = function(e) {
   function x() {
     (0, f.A)({
       initialPlanId: null,
-      subscriptionTier: y.pe.TIER_2,
+      subscriptionTier: b.pe.TIER_2,
       analyticsLocations: C,
       analyticsObject: {
-        page: b.liQ.PREMIUM_GUILD_USER_MODAL,
-        section: b.JJy.PREMIUM_GUILD_USER_MODAL_CTA_BAR,
-        object: b.ZSU.BUTTON_ICON,
-        objectType: b.AnalyticsObjectTypes.BUY
+        page: y.liQ.PREMIUM_GUILD_USER_MODAL,
+        section: y.JJy.PREMIUM_GUILD_USER_MODAL_CTA_BAR,
+        object: y.ZSU.BUTTON_ICON,
+        objectType: y.AnalyticsObjectTypes.BUY
       },
       onClose: e => e && t()
     })
@@ -67,50 +67,50 @@ let v = function(e) {
   function L() {
     (0, f.A)({
       initialPlanId: null,
-      subscriptionTier: y.pe.TIER_2,
+      subscriptionTier: b.pe.TIER_2,
       isGift: true,
       analyticsLocations: C,
       analyticsObject: {
-        page: b.liQ.PREMIUM_GUILD_USER_MODAL,
-        section: b.JJy.PREMIUM_GUILD_USER_MODAL_CTA_BAR,
-        object: b.ZSU.BUTTON_ICON,
-        objectType: b.AnalyticsObjectTypes.GIFT
+        page: y.liQ.PREMIUM_GUILD_USER_MODAL,
+        section: y.JJy.PREMIUM_GUILD_USER_MODAL_CTA_BAR,
+        object: y.ZSU.BUTTON_ICON,
+        objectType: y.AnalyticsObjectTypes.GIFT
       },
       onClose: e => e && t()
     })
   }
   return (0, r.jsxs)("div", {
-    className: A.kL,
+    className: v.kL,
     children: [(0, r.jsxs)("div", {
-      className: A.$R,
+      className: v.$R,
       children: [(0, r.jsx)(d.A, {
-        className: A.$f,
+        className: v.$f,
         guild: n,
         size: d.A.Sizes.LARGER,
         iconSize: 70,
         active: true
       }), (0, r.jsxs)("div", {
-        className: A.CR,
+        className: v.CR,
         children: [(0, r.jsx)(c.Heading, {
-          className: A.J5,
+          className: v.J5,
           variant: "heading-lg/semibold",
           children: n.name
         }), (0, r.jsxs)("div", {
-          className: A.SJ,
+          className: v.SJ,
           children: [(0, r.jsx)(c._Jp, {
             color: P > 0 ? c.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK_REFRESH : "currentColor",
-            className: s()(A.Me, {
-              [A.S3]: P > 0
+            className: s()(v.Me, {
+              [v.S3]: P > 0
             })
           }), (0, r.jsx)(c.Text, {
-            className: A.n,
+            className: v.n,
             variant: "text-md/semibold",
             children: O.intl.format(O.t["pob/cL"], {
               subscriptions: P
             })
           })]
         }), w > 0 ? (0, r.jsx)(c.Text, {
-          className: A.EV,
+          className: v.EV,
           variant: "text-sm/normal",
           children: O.intl.format(O.t.Jeto2u, {
             numSubscriptions: w
@@ -118,21 +118,21 @@ let v = function(e) {
         }) : null]
       })]
     }), (0, r.jsxs)("div", {
-      className: A.mY,
+      className: v.mY,
       children: [(0, r.jsx)("h1", {
-        className: A.R_,
+        className: v.R_,
         children: O.intl.string(O.t.N4sqzL)
       }), T ? (0, r.jsx)(_.A, {
         alwaysWhite: true
       }) : null, (0, r.jsxs)("div", {
-        className: A.Sq,
+        className: v.Sq,
         children: [(0, r.jsx)(l.L, {
-          innerRef: v,
+          innerRef: A,
           onChange: a,
           threshold: .9,
           children: (0, r.jsx)("div", {
-            ref: v,
-            className: A.dp,
+            ref: A,
+            className: v.dp,
             children: (0, r.jsx)(c.Button, {
               variant: "expressive",
               size: "md",
@@ -143,7 +143,7 @@ let v = function(e) {
               disabled: T
             })
           })
-        }), g.Ay.hasFreeBoosts(S) || g.Ay.isPremium(S, y.PremiumTypes.TIER_2) ? (0, r.jsx)(c.Button, {
+        }), g.Ay.hasFreeBoosts(I) || g.Ay.isPremium(I, b.PremiumTypes.TIER_2) ? (0, r.jsx)(c.Button, {
           variant: "secondary",
           size: "md",
           icon: c.okO,

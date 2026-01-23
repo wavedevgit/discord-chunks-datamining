@@ -55,28 +55,28 @@ function E(e) {
     achievementId: n,
     unlocked: i,
     size: d = s._3J.SIZE_40
-  } = e, E = (0, o.Ay)(), b = (0, c.vM)(n);
-  if (null == b) return null;
-  let y = (0, s.KjH)(d),
+  } = e, E = (0, o.Ay)(), y = (0, c.vM)(n);
+  if (null == y) return null;
+  let b = (0, s.KjH)(d),
     {
       name: O,
-      rarity: A
-    } = b,
+      rarity: v
+    } = y,
     {
-      color: v
-    } = (0, c.ag)(A),
-    S = (0, a.Mw)(E) ? p : _,
-    I = (y.size - y.offset - 2 * y.stroke) * h,
-    T = y.size - y.stroke,
+      color: A
+    } = (0, c.ag)(v),
+    I = (0, a.Mw)(E) ? p : _,
+    S = (b.size - b.offset - 2 * b.stroke) * h,
+    T = b.size - b.stroke,
     C = {
-      width: I * m,
-      height: I * m
+      width: S * m,
+      height: S * m
     },
     N = {
       width: C.width + g,
       height: C.height + g,
-      right: y.stroke + g,
-      bottom: y.stroke + g,
+      right: b.stroke + g,
+      bottom: b.stroke + g,
       padding: 0
     };
   return (0, r.jsxs)("div", {
@@ -84,25 +84,25 @@ function E(e) {
     style: {
       width: T,
       height: T,
-      padding: y.stroke
+      padding: b.stroke
     },
     "aria-label": "".concat(null != (t = O()) ? t : ""),
     children: [(0, r.jsx)("div", {
       className: u.r5,
       children: (0, r.jsx)(s.OR, {
         size: "custom",
-        color: i ? v : S.trophy,
-        width: I,
-        height: I
+        color: i ? A : I.trophy,
+        width: S,
+        height: S
       })
     }), !i && (0, r.jsx)("div", {
       className: u.dq,
       style: N,
       children: (0, r.jsx)(s.XAi, f({
         size: "custom",
-        color: S.locked
+        color: I.locked
       }, C))
-    }), i && A === c.md.LEGENDARY && (0, r.jsx)("div", {
+    }), i && v === c.md.LEGENDARY && (0, r.jsx)("div", {
       className: u.dq,
       style: N,
       children: (0, r.jsx)(l.A, f({

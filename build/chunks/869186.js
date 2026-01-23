@@ -65,10 +65,10 @@ function E(e) {
   let m = (0, a.yK)([d.default], () => l ? d.default.getNewestTokens().filter(e => e.scopes.includes(i.F.APPLICATIONS_COMMANDS)) : []),
     g = t.filter(e => e.id !== _.Ik.FRECENCY && e.id !== _.Ik.BUILT_IN),
     E = "contextless" === n.type,
-    b = r.useMemo(() => {
+    y = r.useMemo(() => {
       let e = [];
       return E && e.push(p.gq), e
     }, [E]),
-    y = (0, u.I)(g, m);
-  return r.useMemo(() => o ? y.filter(e => null != e.application && (0, f.Ag)(e.application) && null != (0, c.eI)(n, e.id)).filter(e => !b.includes(e.id)) : y.filter(e => !b.includes(e.id)), [o, y, n, b])
+    b = (0, u.I)(g, m);
+  return r.useMemo(() => o ? b.filter(e => null != e.application && (0, f.Ag)(e.application) && null != (0, c.eI)(n, e.id)).filter(e => !y.includes(e.id)) : b.filter(e => !y.includes(e.id)), [o, b, n, y])
 }

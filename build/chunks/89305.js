@@ -1,5 +1,5 @@
 /** Chunk was on 88615 **/
-/** chunk id: 89305, original params: e,t,l (module,exports,require) **/
+/** chunk id: 89305, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => i
 });
@@ -9,26 +9,26 @@ var Chunk64700 = require("./64700.js"),
 function i(e) {
   let {
     targetRef: t,
-    onShouldClose: l,
+    onShouldClose: n,
     topThreshold: i = 40,
-    bottomThreshold: s = 60,
-    enabled: o = true
+    bottomThreshold: o = 60,
+    enabled: s = true
   } = e;
   r.useEffect(() => {
-    if (!o || (null == t ? true : t.current) == null) return;
+    if (!s || (null == t ? true : t.current) == null) return;
     let e = null,
       r = r => {
-        if ((null == t ? true : t.current) == null || !(0, n.vq)(r.target, HTMLElement)) return;
-        let o = r.target;
-        if (!o.contains(t.current)) return;
-        let a = o.scrollTop;
+        if ((null == t ? true : t.current) == null || !(0, l.vq)(r.target, HTMLElement)) return;
+        let s = r.target;
+        if (!s.contains(t.current)) return;
+        let a = s.scrollTop;
         if (null === e) {
           e = a;
           return
         }
         let u = a - e,
           d = Math.abs(u);
-        (u < 0 && d > i || u > 0 && d > s) && l()
+        (u < 0 && d > i || u > 0 && d > o) && n()
       };
     return document.addEventListener("scroll", r, {
       passive: true,
@@ -38,5 +38,5 @@ function i(e) {
         capture: true
       })
     }
-  }, [o, t, l, i, s])
+  }, [s, t, n, i, o])
 }

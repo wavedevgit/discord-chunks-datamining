@@ -31,68 +31,68 @@ function v(e) {
     height: O,
     keepOpen: x,
     interactive: S = true,
-    analyticsSource: N,
-    onClose: C
-  } = e, j = function(e) {
-    let [t, n] = (0, a.yK)([b.A], () => [b.A.getSounds(), b.A.getFavorites()]);
-    return r.useMemo(() => {
-      let l = [],
-        r = [...e, _.mV],
-        i = (e, r) => {
+    analyticsSource: C,
+    onClose: N
+  } = e, I = function(e) {
+    let [t, n] = (0, a.yK)([g.A], () => [g.A.getSounds(), g.A.getFavorites()]);
+    return l.useMemo(() => {
+      let r = [],
+        l = [...e, b.mV],
+        i = (e, l) => {
           var i, a;
-          for (let s of null != (i = null == (a = t.get(e)) ? true : a.sort((e, t) => f.default.compare(e.soundId, t.soundId))) ? i : []) {
-            let e = n.has(s.soundId);
-            (e && r || !e && !r) && s.available && l.push(s)
+          for (let o of null != (i = null == (a = t.get(e)) ? true : a.sort((e, t) => f.default.compare(e.soundId, t.soundId))) ? i : []) {
+            let e = n.has(o.soundId);
+            (e && l || !e && !l) && o.available && r.push(o)
           }
         };
-      return r.forEach(e => i(e, true)), r.forEach(e => i(e, false)), l
+      return l.forEach(e => i(e, true)), l.forEach(e => i(e, false)), r
     }, [t, n, e])
-  }((0, h.Y)(n, true)), T = (0, m.T)(), I = r.useRef(null), [w, R] = r.useState(true), P = (0, a.bG)([d.A], () => d.A.getMediaSessionId()), {
+  }((0, h.Y)(n, true)), j = (0, _.T)(), T = l.useRef(null), [w, P] = l.useState(true), R = (0, a.bG)([d.A], () => d.A.getMediaSessionId()), {
     analyticsLocations: D
-  } = (0, o.Ay)(s.A.SOUNDBOARD_WHEEL), k = r.useCallback(e => {
-    (0, g.Ak)(e, n.id, D), C()
-  }, [D, n.id, C]);
-  r.useEffect(() => {
+  } = (0, s.Ay)(o.A.SOUNDBOARD_WHEEL), k = l.useCallback(e => {
+    (0, m.Ak)(e, n.id, D), N()
+  }, [D, n.id, N]);
+  l.useEffect(() => {
     p.E7(), u.bW.loadIfNecessary()
-  }, []), r.useEffect(() => {
-    0 === j.length && 0 === T.length && C()
-  }, [j.length, T, C]), r.useEffect(() => () => {
-    let e = I.current;
+  }, []), l.useEffect(() => {
+    0 === I.length && 0 === j.length && N()
+  }, [I.length, j, N]), l.useEffect(() => () => {
+    let e = T.current;
     x || null == e || k(e)
   }, [x, k]), (0, c.A)({
     type: i.ImpressionTypes.POPOUT,
     name: i.ImpressionNames.SOUNDBOARD_POPOUT,
     properties: {
-      source: N,
+      source: C,
       guild_id: t,
-      media_session_id: P
+      media_session_id: R
     }
   }, {
     disableTrack: !S
   });
-  let L = r.useCallback(e => {
-      I.current = e, R(null == e ? true : e.soundId)
+  let L = l.useCallback(e => {
+      T.current = e, P(null == e ? true : e.soundId)
     }, []),
-    M = r.useCallback(e => {
+    M = l.useCallback(e => {
       if (null == e) return void L(null);
-      let t = j[e];
+      let t = I[e];
       null != t && L(t)
-    }, [L, j]),
-    U = r.useCallback(e => {
+    }, [L, I]),
+    U = l.useCallback(e => {
       if (null == e) return;
-      let t = j[e];
+      let t = I[e];
       null != t && k(t)
-    }, [j, k]),
-    V = r.useMemo(() => j.map(e => (0, l.jsx)(y.Ay, {
+    }, [I, k]),
+    V = l.useMemo(() => I.map(e => (0, r.jsx)(A.Ay, {
       interactive: S,
       className: E.a,
       sound: e,
       focused: w === e.soundId,
       channel: n
-    }, e.soundId)), [w, n, S, j]);
-  return 0 === j.length ? null : (0, l.jsx)(o.f5, {
+    }, e.soundId)), [w, n, S, I]);
+  return 0 === I.length ? null : (0, r.jsx)(s.f5, {
     value: D,
-    children: (0, l.jsx)(A.A, {
+    children: (0, r.jsx)(y.A, {
       wheelWidth: v,
       wheelHeight: O,
       itemWidth: 96,
@@ -101,7 +101,7 @@ function v(e) {
       activeItem: w,
       onItemSelect: M,
       onItemAction: U,
-      onClose: C,
+      onClose: N,
       interactive: S,
       children: V
     })

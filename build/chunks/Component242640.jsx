@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => O,
-  Y: () => y
+  Y: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk752276 = require("./752276.js"),
-  y = function(e) {
+  b = function(e) {
     return e.SMALL = "small", e.SMALL_SQUARE = "small-square", e.MEDIUM = "medium", e.LARGE = "large", e.FLEX = "flex", e
   }({});
 
@@ -31,12 +31,12 @@ function O(e) {
     item: t,
     wishlistId: n,
     isOwner: a,
-    cardSize: y = "medium",
+    cardSize: b = "medium",
     showOverlayButton: O = true,
-    cardRef: A,
-    renderItemPreview: v,
-    accessibleLabel: S,
-    onCardClick: I,
+    cardRef: v,
+    renderItemPreview: A,
+    accessibleLabel: I,
+    onCardClick: S,
     buttonCTALabel: T,
     buttonIcon: C,
     isOwned: N = false,
@@ -44,24 +44,24 @@ function O(e) {
     dragHandle: w,
     giftingOrigin: P,
     source: D
-  } = e, x = i.useRef(null), L = i.useRef(null), j = null != A ? A : L, {
+  } = e, x = i.useRef(null), L = i.useRef(null), j = null != v ? v : L, {
     trackUserProfileWishlistAction: M
   } = (0, p.NJ)(), k = a && true === t.isOwned && null != t.gifterUserId, U = null != t.gifterUserId ? u.default.getUser(t.gifterUserId) : null, G = null != U ? f.Ay.getName(U) : null, V = k && null != U && null != G && "" !== G, F = V ? (0, r.jsx)(l.euF, {
     src: U.getAvatarURL(true, 48),
     size: l._3J.SIZE_48,
     "aria-label": G
   }) : true, B = (0, r.jsx)("div", {
-    className: b.Af,
+    className: y.Af,
     children: (0, r.jsx)(l.rOg, {
       size: "custom",
       color: l.LU0.colors.WHITE,
       width: 38,
       height: 38,
-      className: s()(b.x6, b.AI),
+      className: s()(y.x6, y.AI),
       "aria-label": E.intl.string(E.t.L5Pt9L)
     })
   }), H = (0, r.jsx)("div", {
-    className: b.Lw,
+    className: y.Lw,
     children: (0, r.jsx)(l.Button, {
       focusProps: {
         ringTarget: j
@@ -90,27 +90,27 @@ function O(e) {
       skuId: t.skuId,
       productLines: new Set([t.skuProductLine])
     });
-    I()
+    S()
   }, W = (0, r.jsxs)("div", {
     ref: x,
-    className: b.kL,
+    className: y.kL,
     children: [(0, r.jsxs)("div", {
       ref: j,
-      className: s()(b.Nr, {
-        [b.go]: N,
-        [b.tM]: "small-square" === y,
-        [b.IU]: "small" === y,
-        [b.Sd]: "large" === y,
-        [b.uE]: "flex" === y
+      className: s()(y.Nr, {
+        [y.go]: N,
+        [y.tM]: "small-square" === b,
+        [y.IU]: "small" === b,
+        [y.Sd]: "large" === b,
+        [y.uE]: "flex" === b
       }),
       onClick: Y,
       children: [(0, r.jsx)(l.AC4, {
         children: (0, r.jsx)(l.H, {
-          children: S
+          children: I
         })
       }), (0, r.jsx)("div", {
-        className: b.ho,
-        children: v()
+        className: y.ho,
+        children: A()
       }), N && B, O ? H : (0, r.jsx)(l.DUT, {
         "aria-label": T,
         focusProps: {
@@ -124,7 +124,7 @@ function O(e) {
       iconSize: "sm",
       item: t,
       wishlistId: n,
-      className: b.eP
+      className: y.eP
     })]
   });
   return V ? (0, r.jsx)(o.un, {

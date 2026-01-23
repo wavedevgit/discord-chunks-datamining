@@ -13,7 +13,7 @@ function o(e) {
   let {
     selected: t,
     nameplate: n
-  } = e, o = (0, i.i)(), c = new r.cq({
+  } = e, o = (0, r.i)(), c = new i.cq({
     id: "0",
     type: s.rbe.DM,
     name: "self",

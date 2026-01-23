@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 192380, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 }), require("./896048.js"), require("./492834.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,19 +14,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk673310 = require("./673310.jsx"),
   Chunk884801 = require("./884801.js"),
   Chunk739954 = require("./739954.js");
-let h = function(e) {
+let g = function(e) {
   let {
     scrollContainerRef: t
   } = e, n = (0, l.bG)([a.A], () => a.A.notificationItem(), []), {
-    showDot: h
-  } = (0, c.A)(), A = i.useRef(null), [g, m] = i.useState(false), {
-    data: b,
-    loading: _,
+    showDot: g
+  } = (0, c.A)(), f = i.useRef(null), [m, A] = i.useState(false), {
+    data: _,
+    loading: b,
     isRefreshing: E,
     handleOnRefresh: O,
     viewabilityConfigCallbackPairs: y
   } = (0, u.i)({
-    showDot: h,
+    showDot: g,
     notificationItem: n
   }), I = (0, o.E)();
   i.useEffect(() => () => {
@@ -37,17 +37,17 @@ let h = function(e) {
     C = i.useMemo(() => y[0].onViewableItemsChanged, [y]),
     {
       registerItemRef: N
-    } = (0, p.N)(b, C, t),
-    T = i.useMemo(() => b.some(e => "end" === e.data.kind), [b]),
+    } = (0, p.N)(_, C, t),
+    T = i.useMemo(() => _.some(e => "end" === e.data.kind), [_]),
     j = i.useCallback(() => {
       if (T) return;
       let e = t.current;
-      null == e || !(e.scrollHeight - e.scrollTop - e.clientHeight < 300) || g || _ || S || (m(true), (0, s._x)().finally(() => {
+      null == e || !(e.scrollHeight - e.scrollTop - e.clientHeight < 300) || m || b || S || (A(true), (0, s._x)().finally(() => {
         setTimeout(() => {
-          m(false)
+          A(false)
         }, 300)
       }))
-    }, [_, g, S, T, t]);
+    }, [b, m, S, T, t]);
   i.useEffect(() => {
     let e = t.current;
     if (null != e) return e.addEventListener("scroll", j), () => {
@@ -96,7 +96,7 @@ let h = function(e) {
         item: e
       })
     }, e.id), [N]);
-  return _ && 0 === b.length ? (0, r.jsx)("div", {
+  return b && 0 === _.length ? (0, r.jsx)("div", {
     style: {
       padding: "32px",
       textAlign: "center"
@@ -105,7 +105,7 @@ let h = function(e) {
       children: "Loading ICYMI feed..."
     })
   }) : (0, r.jsxs)("div", {
-    className: f.k,
+    className: h.k,
     children: [v && !E && (0, r.jsx)("div", {
       style: {
         position: "sticky",
@@ -129,9 +129,9 @@ let h = function(e) {
         children: "New content available"
       })
     }), (0, r.jsxs)("div", {
-      ref: A,
-      className: f.j,
-      children: [b.map(e => w(e)), !T && (g || S) && (0, r.jsx)("div", {
+      ref: f,
+      className: h.j,
+      children: [_.map(e => w(e)), !T && (m || S) && (0, r.jsx)("div", {
         style: {
           padding: "16px",
           textAlign: "center"

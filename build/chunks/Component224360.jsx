@@ -28,29 +28,29 @@ function y(e) {
     coverImageUrl: i,
     gameName: c,
     isLoading: f
-  } = (0, p.A)(t), y = (0, a.bG)([u.A], () => u.A.suggestedFetchIsLoading), O = b.intl.formatToPlainString(b.t["3mb1s5"], {
+  } = (0, p.A)(t), y = (0, a.bG)([u.A], () => u.A.suggestedFetchIsLoading), O = g.intl.formatToPlainString(g.t["3mb1s5"], {
     game: c
   });
   return f || y ? (0, r.jsx)("div", {
-    className: g.mD
-  }) : (0, r.jsx)(s.m, {
+    className: m.mD
+  }) : (0, r.jsx)(o.m, {
     text: O,
     ariaHidden: true,
-    children: (0, r.jsxs)(o.DUT, {
-      className: m.c9,
+    children: (0, r.jsxs)(s.DUT, {
+      className: b.c9,
       onClick: l,
       "aria-label": O,
       children: [(0, r.jsx)(d.A, {
-        className: m.Iv,
+        className: b.Iv,
         imageSrc: i,
         gameName: c,
         applicationId: t,
         userId: n,
         disableInteraction: true
-      }), (0, r.jsx)(o.pa$, {
+      }), (0, r.jsx)(s.pa$, {
         size: "md",
-        className: m.Xv,
-        color: o.LU0.colors.WHITE
+        className: b.Xv,
+        color: s.LU0.colors.WHITE
       })]
     })
   })
@@ -62,26 +62,26 @@ function O(e) {
     games: n,
     onDismiss: l,
     onClick: a,
-    className: s
+    className: o
   } = e, u = (0, c.GV)();
   return (0, r.jsxs)("aside", {
-    className: i()(m.kL, s),
+    className: i()(b.kL, o),
     "aria-labelledby": u,
     children: [(0, r.jsxs)("div", {
-      className: m.wx,
-      children: [(0, r.jsx)(o.DUT, {
-        className: m.r,
-        "aria-label": b.intl.string(b.t["pUR+3g"]),
+      className: b.wx,
+      children: [(0, r.jsx)(s.DUT, {
+        className: b.r,
+        "aria-label": g.intl.string(g.t["pUR+3g"]),
         onClick: l,
-        children: (0, r.jsx)(o.PGe, {
+        children: (0, r.jsx)(s.PGe, {
           size: "sm",
           color: "currentColor"
         })
-      }), (0, r.jsx)(o.Heading, {
+      }), (0, r.jsx)(s.Heading, {
         id: u,
         variant: "text-xs/medium",
         color: "text-subtle",
-        children: b.intl.string(b.t.zMUr6Z)
+        children: g.intl.string(g.t.zMUr6Z)
       })]
     }), (0, r.jsx)(f.A, {
       games: n,

@@ -2,9 +2,9 @@
 /** chunk id: 937008, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Mq: () => A,
+  Mq: () => v,
   Pv: () => E,
-  dX: () => y
+  dX: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,9 +19,9 @@ var Chunk627968 = require("./627968.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx");
 let h = Chunk788868.o2.STANDARD_BOX,
-  m, [g, E, b] = (0, Chunk786300.A)();
+  m, [g, E, y] = (0, Chunk786300.A)();
 
-function y(e) {
+function b(e) {
   let {
     isGift: t = false,
     giftRecipient: n,
@@ -29,12 +29,12 @@ function y(e) {
     giftStyle: f,
     giftingOrigin: p,
     children: E,
-    additionalUserIds: b
+    additionalUserIds: y
   } = e, {
-    selectedSkuId: y
-  } = (0, d.P5)(), [O, A] = i.useState(n), [v, S] = i.useState(), [I, T] = i.useState(false), C = (0, u.Ik)(O), N = m;
+    selectedSkuId: b
+  } = (0, d.P5)(), [O, v] = i.useState(n), [A, I] = i.useState(), [S, T] = i.useState(false), C = (0, u.Ik)(O), N = m;
   C && (N = null != f ? f : h);
-  let [R, w] = i.useState(N), P = (0, l.R_)(), D = (0, l.V$)(), [x, L] = i.useState(), [j, M] = i.useState(t && (0, u.lo)(O) === u.tB.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == c ? _.intl.string(_.t.ZkOo1U) : c), [k, U] = i.useState(true), [G, V] = i.useState(true), F = (0, u.Vt)(y, t), [B, H] = i.useState(false), [Y, W] = i.useState(false), [K, z] = i.useState(), q = i.useCallback(e => {
+  let [R, w] = i.useState(N), P = (0, l.R_)(), D = (0, l.V$)(), [x, L] = i.useState(), [j, M] = i.useState(t && (0, u.lo)(O) === u.tB.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == c ? _.intl.string(_.t.ZkOo1U) : c), [k, U] = i.useState(true), [G, V] = i.useState(true), F = (0, u.Vt)(b, t), [B, H] = i.useState(false), [Y, W] = i.useState(false), [K, z] = i.useState(), q = i.useCallback(e => {
     let {
       onSubscriptionConfirmation: t
     } = e;
@@ -50,10 +50,10 @@ function y(e) {
       giftCode: F,
       giftMessage: c,
       giftRecipient: O,
-      setGiftRecipient: A,
-      giftRecipientError: v,
-      setGiftRecipientError: S,
-      validatingGiftRecipient: I,
+      setGiftRecipient: v,
+      giftRecipientError: A,
+      setGiftRecipientError: I,
+      validatingGiftRecipient: S,
       setValidatingGiftRecipient: T,
       soundEffect: k,
       setSoundEffect: U,
@@ -73,7 +73,7 @@ function y(e) {
       claimableVariants: D,
       selectedGiftingPromotionReward: x,
       setSelectedGiftingPromotionReward: L,
-      additionalUserIds: b
+      additionalUserIds: y
     },
     children: E
   })
@@ -95,7 +95,7 @@ let O = {
     claimableVariants: true,
     setSelectedGiftingPromotionReward: Chunk652215.tEg
   },
-  A = e => {
+  v = e => {
     let {
       children: t
     } = e;

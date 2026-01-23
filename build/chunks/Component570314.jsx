@@ -24,7 +24,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,32 +33,32 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = I(e, t), Object.getOwnPropertySymbols)
+  if (a = S(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -70,13 +70,13 @@ function T(e) {
   let {
     user: t,
     closePopout: n
-  } = e, A = S(e, ["user", "closePopout"]), I = i.useRef(null), T = (0, a.bG)([g.A], () => {
+  } = e, v = I(e, ["user", "closePopout"]), S = i.useRef(null), T = (0, a.bG)([g.A], () => {
     var e;
     return null == (e = g.A.getUserProfile(t.id)) ? true : e.application
   }), C = (0, a.bG)([f.A, d.A], () => d.A.getChannel(f.A.getChannelId())), N = (0, o.A)(C), R = t.id, w = i.useCallback(() => {
-    null != T && (N ? ((0, l.hg)(T.id), (0, s.OoC)((0, E.n)(R, null == C ? true : C.guild_id)), null == n || n(), p.default.track(y.HAw.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
+    null != T && (N ? ((0, l.hg)(T.id), (0, s.OoC)((0, E.n)(R, null == C ? true : C.guild_id)), null == n || n(), p.default.track(b.HAw.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
       application_id: T.id
-    })) : (0, m.o)(v({
+    })) : (0, m.o)(A({
       applicationId: T.id
     }, T)))
   }, [T, N, R, null == C ? true : C.guild_id, n]), P = N ? O.intl.string(O.t["Cia+A8"]) : O.intl.string(O.t.NgXl3C);
@@ -85,7 +85,7 @@ function T(e) {
     customInstallUrl: D
   } = T, x = null == D || h.A.isDiscordUrl(D) ? s.j96 : s.I9m, L = N ? true : x;
   return _.p5 ? (0, r.jsx)(s.YNO, {
-    targetElementRef: I,
+    targetElementRef: S,
     renderPopout: e => {
       let {
         closePopout: t
@@ -107,21 +107,21 @@ function T(e) {
     children: e => {
       let {
         onClick: t
-      } = e, n = S(e, ["onClick"]);
-      return (0, r.jsx)(b.FD, v({
-        buttonRef: I,
+      } = e, n = I(e, ["onClick"]);
+      return (0, r.jsx)(y.FD, A({
+        buttonRef: S,
         action: "PRESS_ADD_APP",
         text: P,
         icon: L,
         onContextMenu: t,
         onClick: w
-      }, n, A))
+      }, n, v))
     }
-  }) : (0, r.jsx)(b.FD, v({
+  }) : (0, r.jsx)(y.FD, A({
     action: "PRESS_ADD_APP",
     text: P,
     icon: L,
     onClick: w,
     variant: "primary"
-  }, A))
+  }, v))
 }

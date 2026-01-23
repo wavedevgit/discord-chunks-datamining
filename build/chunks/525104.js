@@ -2,7 +2,7 @@
 /** chunk id: 525104, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => c
+  A: () => o
 }), require("./321073.js"), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -10,7 +10,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk645619 = require("./645619.js"),
   Chunk743981 = require("./743981.js");
 
-function c() {
+function o() {
   let e = (0, i.bG)([l.A], () => l.A.getGuild()),
     t = (0, i.bG)([s.A], () => {
       var t;
@@ -24,11 +24,11 @@ function c() {
     return (null == e ? true : e.features) == null || Object.keys(a.Tf).forEach(i => {
       let l = a.Tf[i],
         s = a.kO[i],
-        c = null == t ? true : t[s],
-        o = null == c ? true : c.title,
+        o = null == t ? true : t[s],
+        c = null == o ? true : o.title,
         d = l.map(e => ({
           kind: e,
-          packName: o
+          packName: c
         }));
       e.features.has(i) ? n.push(...d) : r.push(...d)
     }), {

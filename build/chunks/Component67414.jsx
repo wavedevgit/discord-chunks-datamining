@@ -76,7 +76,7 @@ function w(e) {
     innerRef: P
   } = e, D = (0, s.bG)([h.default], () => h.default.getCurrentUser()), {
     analyticsLocations: x
-  } = (0, u.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), L = (0, s.bG)([b.Ay], () => b.Ay.getFriendAnniversaryYears(T.id)), j = (0, _.tA)({
+  } = (0, u.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), L = (0, s.bG)([y.Ay], () => y.Ay.getFriendAnniversaryYears(T.id)), j = (0, _.tA)({
     location: "gift-intent-card",
     isGift: true,
     giftRecipient: T
@@ -87,24 +87,24 @@ function w(e) {
       type: a.ImpressionTypes.VIEW,
       properties: {
         gift_intent_type: t,
-        num_friend_anniversaries: b.Ay.getFriendAnniversaries().length
+        num_friend_anniversaries: y.Ay.getFriendAnniversaries().length
       }
     })
   }, [t]);
-  let M = () => t === O.np.FRIEND_ANNIVERSARY ? S.intl.string(S.t.CeQIwZ) : (0, g.yE)(t),
-    k = () => t === O.np.FRIEND_ANNIVERSARY ? S.intl.formatToPlainString(S.t.PpG27s, {
+  let M = () => t === O.np.FRIEND_ANNIVERSARY ? I.intl.string(I.t.CeQIwZ) : (0, g.yE)(t),
+    k = () => t === O.np.FRIEND_ANNIVERSARY ? I.intl.formatToPlainString(I.t.PpG27s, {
       numberOfYears: L
     }) : (0, g.yE)(t),
-    U = () => t === O.np.FRIEND_ANNIVERSARY ? S.intl.string(S.t.ilhtIa) : (0, g.yE)(t),
+    U = () => t === O.np.FRIEND_ANNIVERSARY ? I.intl.string(I.t.ilhtIa) : (0, g.yE)(t),
     G = e => {
       e.stopPropagation();
       let n = p.A.getUserAffinity(T.id);
-      m.default.track(A.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
+      m.default.track(v.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
         gift_intent_type: t,
         affinity: null == n ? true : n.dmProbability,
         location_stack: x
       });
-      let r = (0, y.$)(t);
+      let r = (0, b.$)(t);
       j ? (0, E.A)({
         giftRecipient: T,
         analyticsLocations: x,
@@ -112,8 +112,8 @@ function w(e) {
         analyticsObject: {
           page: N,
           section: w,
-          object: A.ZSU.BUTTON_CTA,
-          objectType: A.AnalyticsObjectTypes.GIFT
+          object: v.ZSU.BUTTON_CTA,
+          objectType: v.AnalyticsObjectTypes.GIFT
         }
       }) : (0, f.A)({
         isGift: true,
@@ -124,44 +124,44 @@ function w(e) {
         analyticsObject: {
           page: N,
           section: w,
-          object: A.ZSU.BUTTON_CTA,
-          objectType: A.AnalyticsObjectTypes.GIFT
+          object: v.ZSU.BUTTON_CTA,
+          objectType: v.AnalyticsObjectTypes.GIFT
         }
       })
     };
   return (0, r.jsx)("div", {
     ref: P,
-    className: I.Qs,
+    className: S.Qs,
     children: (0, r.jsxs)("div", {
-      className: I.gx,
+      className: S.gx,
       children: [(0, r.jsxs)("div", {
-        className: I.ou,
+        className: S.ou,
         children: [(0, r.jsxs)("div", {
-          className: I.HD,
+          className: S.HD,
           children: [(0, r.jsx)(l.A, {
-            className: I.A6,
+            className: S.A6,
             user: T,
             "aria-label": T.username,
-            size: v._3.SIZE_56
+            size: A._3.SIZE_56
           }), null != D && (0, r.jsx)(l.A, {
-            className: I.GM,
+            className: S.GM,
             user: D,
             "aria-label": T.username,
-            size: v._3.SIZE_24
+            size: A._3.SIZE_24
           })]
         }), (0, r.jsxs)("div", {
-          className: I.FS,
+          className: S.FS,
           children: [(0, r.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "text-strong",
             lineClamp: 3,
             children: M()
           }), (0, r.jsxs)("div", {
-            className: I.jA,
+            className: S.jA,
             children: [(0, r.jsx)(o.$yI, {
               size: "xs"
             }), (0, r.jsx)(o.Text, {
-              className: I.Tm,
+              className: S.Tm,
               variant: "text-md/normal",
               color: "text-subtle",
               lineClamp: 1,
@@ -170,14 +170,14 @@ function w(e) {
           })]
         })]
       }), (0, r.jsxs)("div", {
-        className: I.UD,
+        className: S.UD,
         children: [(0, r.jsx)(o.Button, {
           size: "sm",
           variant: "secondary",
-          text: S.intl.string(S.t.nffuyb),
-          "aria-label": S.intl.string(S.t.nffuyb),
+          text: I.intl.string(I.t.nffuyb),
+          "aria-label": I.intl.string(I.t.nffuyb),
           onClick: e => {
-            e.stopPropagation(), m.default.track(A.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+            e.stopPropagation(), m.default.track(v.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
               gift_intent_type: t,
               cta_type: "send_message",
               location_stack: x

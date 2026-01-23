@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ay: () => O,
-  U3: () => b
+  U3: () => y
 }), require("./896048.js"), require("./65821.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -60,10 +60,10 @@ let h = {
   g = "center",
   E = "right";
 
-function b(e, t) {
+function y(e, t) {
   return (e % t + t) % t
 }
-class y extends(r = Chunk64700.Component) {
+class b extends(r = Chunk64700.Component) {
   componentDidMount() {
     this.animatedIndex.setValue(this.props.currentIndex)
   }
@@ -74,7 +74,7 @@ class y extends(r = Chunk64700.Component) {
       currentIndex: r,
       items: i,
       width: a
-    } = this.props, s = b(r, i.length), o = b(e.currentIndex, i.length);
+    } = this.props, s = y(r, i.length), o = y(e.currentIndex, i.length);
     (s !== o || i.length !== e.items.length) && this.updateAnimatedIndex(s, o), a !== e.width ? this.animatedAlignmentOffset.setValue(this.getAlignmentOffset(t)) : n && (t !== e.align || s !== o) && l.A.spring(this.animatedAlignmentOffset, _(f({}, h), {
       toValue: this.getAlignmentOffset(t)
     })).start()
@@ -86,7 +86,7 @@ class y extends(r = Chunk64700.Component) {
       currentIndex: r,
       gutter: i,
       items: a
-    } = this.props, s = i * b(r, a.length) * 2;
+    } = this.props, s = i * y(r, a.length) * 2;
     return e === g ? (t - n.width) / 2 + s : e === E ? t - n.width - i + s : i + s
   }
   getCarouselTranslate() {
@@ -218,11 +218,11 @@ class y extends(r = Chunk64700.Component) {
     }))
   }
 }
-d(y, "defaultProps", {
+d(b, "defaultProps", {
   animate: true,
   edgeItems: 2,
   align: g,
   gutter: 0,
   hideOverflow: true
 });
-let O = (0, Chunk456412.A)(y)
+let O = (0, Chunk456412.A)(b)

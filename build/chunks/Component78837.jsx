@@ -26,27 +26,27 @@ function m(e) {
     onExpandedChange: m,
     onExpandedChangeComplete: g,
     children: E,
-    animate: b = true
-  } = e, y = i.useRef(null), [O, A] = i.useState(null), v = i.useRef(a), S = i.useRef(false);
+    animate: y = true
+  } = e, b = i.useRef(null), [O, v] = i.useState(null), A = i.useRef(a), I = i.useRef(false);
   i.useEffect(() => {
-    v.current !== a && (S.current = true, v.current = a)
+    A.current !== a && (I.current = true, A.current = a)
   }, [a]);
-  let I = i.useCallback(e => {
-      null != e.target && S.current && (S.current = false, null == g || g(a))
+  let S = i.useCallback(e => {
+      null != e.target && I.current && (I.current = false, null == g || g(a))
     }, [a, g]),
-    T = i.useMemo(() => (0, o.debounce)(I, 50), [I]),
+    T = i.useMemo(() => (0, o.debounce)(S, 50), [S]),
     C = (0, p.w)(T, [], {
       enabled: null != g
     }),
     N = a && null != O;
   return i.useLayoutEffect(() => {
-    null != y.current && null == O && A(y.current.clientHeight)
+    null != b.current && null == O && v(b.current.clientHeight)
   }, [O]), (0, r.jsxs)(l.EN, {
     ref: C,
     isExpanded: a,
     onExpandedChange: m,
     children: [(0, r.jsx)(_.U, {
-      ref: y,
+      ref: b,
       style: null != O ? {
         minHeight: O
       } : true,
@@ -68,7 +68,7 @@ function m(e) {
       headingColor: "text-link"
     }), (0, r.jsx)(l.kS, {
       className: s()(h.nd, {
-        [h.t5]: !b
+        [h.t5]: !y
       }),
       children: (0, r.jsx)(f.BJc, {
         gap: 16,

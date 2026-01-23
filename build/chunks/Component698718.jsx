@@ -1,12 +1,12 @@
 /** Chunk was on 97492 **/
 /** chunk id: 698718, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => e8
+  A: () => e5
 }), require("./896048.js"), require("./747238.js"), require("./733351.js"), require("./938796.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
   o = require.n(Chunk284009),
   Chunk607399 = require("./607399.js"),
@@ -145,9 +145,9 @@ function e0(e, t) {
 function e1(e) {
   e.preventDefault()
 }
-let e2 = /^\+(?!\w+):?(?!:)(\w+)?:?$/;
+let e9 = /^\+(?!\w+):?(?!:)(\w+)?:?$/;
 
-function e9(e) {
+function e7(e) {
   let {
     isSidebar: t
   } = e, n = function(e, t) {
@@ -171,20 +171,20 @@ function e9(e) {
     role: "complementary"
   })) : (0, r.jsx)("main", e$({}, n))
 }
-let e7 = Chunk64700.forwardRef((e, t) => (0, r.jsx)(e3, e0(e$({}, e), {
+let e2 = Chunk64700.forwardRef((e, t) => (0, r.jsx)(e6, e0(e$({}, e), {
   ref: t
 })));
-e7.displayName = "ChannelTextAreaForm";
-class e3 extends Chunk64700.PureComponent {
+e2.displayName = "ChannelTextAreaForm";
+class e6 extends Chunk64700.PureComponent {
   focusEditor() {
     var e;
     null == (e = this.editorRef) || e.focus()
   }
   componentDidMount() {
-    eE.A.addChangeListener(this.draftDidChange)
+    ex.A.addChangeListener(this.draftDidChange)
   }
   componentWillUnmount() {
-    eE.A.removeChangeListener(this.draftDidChange)
+    ex.A.removeChangeListener(this.draftDidChange)
   }
   componentDidUpdate(e, t) {
     let {
@@ -194,7 +194,7 @@ class e3 extends Chunk64700.PureComponent {
     } = this.state;
     if (e.channel.id !== n.id) return void this.draftDidChange(this.props);
     if (e.hasModalOpen && !this.props.hasModalOpen) {
-      let e = eE.A.getDraft(n.id, eE.C.ChannelMessage);
+      let e = ex.A.getDraft(n.id, ex.C.ChannelMessage);
       e !== r && this.setState((0, M.ur)(e))
     }
     t.textValue.length < eq.uvi && r.length >= eq.uvi && ew.default.track(eq.HAw.MESSAGE_LENGTH_LIMIT_REACHED, {})
@@ -203,7 +203,7 @@ class e3 extends Chunk64700.PureComponent {
     let {
       channel: t
     } = this.props;
-    b.A.startEditMessageRecord(t.id, e), v.Ay.trackWithMetadata(eq.HAw.MESSAGE_EDIT_UP_ARROW)
+    g.A.startEditMessageRecord(t.id, e), j.Ay.trackWithMetadata(eq.HAw.MESSAGE_EDIT_UP_ARROW)
   }
   handleRecallLastCommand(e) {
     if (null == e.interactionData) return;
@@ -220,12 +220,12 @@ class e3 extends Chunk64700.PureComponent {
       type: "channel"
     }, n);
     if (null != l) {
-      var a, s;
+      var s, a;
       let e = null != i ? {
         type: T.Hf.APPLICATION,
         id: i.id,
         icon: i.icon,
-        name: null != (a = null == i || null == (s = i.bot) ? true : s.username) ? a : i.name,
+        name: null != (s = null == i || null == (a = i.bot) ? true : a.username) ? s : i.name,
         application: i
       } : null;
       C.Gf({
@@ -245,18 +245,18 @@ class e3 extends Chunk64700.PureComponent {
       onBlur: n,
       onFocus: l,
       onResize: i,
-      highlighted: a,
-      pendingReply: s,
+      highlighted: s,
+      pendingReply: a,
       chatInputType: c,
       placeholder: u,
       accessibilityLabel: d,
-      shakeIntensity: f,
-      poggermodeEnabled: h,
-      pendingScheduledMessage: b,
-      announcementComposerEnabled: g
+      shakeIntensity: p,
+      poggermodeEnabled: f,
+      pendingScheduledMessage: g,
+      announcementComposerEnabled: m
     } = this.props, {
-      contentWarningProps: m
-    } = this.state, A = e.type === eq.rbe.GUILD_ANNOUNCEMENT && g ? (0, r.jsx)(L.A, {
+      contentWarningProps: b
+    } = this.state, A = e.type === eq.rbe.GUILD_ANNOUNCEMENT && m ? (0, r.jsx)(L.A, {
       ref: this.props.refInstance,
       textValue: this.state.textValue,
       richValue: this.state.richValue,
@@ -265,7 +265,7 @@ class e3 extends Chunk64700.PureComponent {
       channel: e,
       placeholder: u,
       accessibilityLabel: d,
-      pendingReply: s,
+      pendingReply: a,
       type: D.oU.CREATE_ANNOUNCEMENT_POST,
       onChange: this.handleTextareaChange,
       onSubmit: this.handleSendMessage,
@@ -275,8 +275,8 @@ class e3 extends Chunk64700.PureComponent {
       onKeyDown: this.handleKeyDown,
       renderAttachButton: this.renderAttachButton,
       renderApplicationCommandIcon: this.renderApplicationCommandIcon,
-      promptToUpload: ek.R,
-      highlighted: a,
+      promptToUpload: eG.R,
+      highlighted: s,
       setEditorRef: e => this.editorRef = e
     }) : (0, r.jsx)(U.Ay, {
       ref: this.props.refInstance,
@@ -287,7 +287,7 @@ class e3 extends Chunk64700.PureComponent {
       channel: e,
       placeholder: u,
       accessibilityLabel: d,
-      pendingReply: s,
+      pendingReply: a,
       type: c,
       onChange: this.handleTextareaChange,
       onSubmit: this.handleSendMessage,
@@ -297,32 +297,32 @@ class e3 extends Chunk64700.PureComponent {
       onKeyDown: this.handleKeyDown,
       renderAttachButton: this.renderAttachButton,
       renderApplicationCommandIcon: this.renderApplicationCommandIcon,
-      promptToUpload: ek.R,
-      highlighted: a,
+      promptToUpload: eG.R,
+      highlighted: s,
       setEditorRef: e => this.editorRef = e,
-      pendingScheduledMessage: b
+      pendingScheduledMessage: g
     });
-    return (0, r.jsx)(p.YNO, {
+    return (0, r.jsx)(h.YNO, {
       targetElementRef: this.props.refInstance,
       position: "top",
       onRequestClose: () => {
         var e;
-        null == m || null == (e = m.onCancel) || e.call(m), this.setState({
+        null == b || null == (e = b.onCancel) || e.call(b), this.setState({
           contentWarningProps: null
         })
       },
-      shouldShow: null != m,
+      shouldShow: null != b,
       renderPopout: e => {
         let {
           closePopout: t
         } = e;
-        return o()(null != m, "ChannelTextAreaForm > Popout > renderPopout: contentWarningProps cannot be null"), (0, r.jsx)(et.A, e$({
+        return o()(null != b, "ChannelTextAreaForm > Popout > renderPopout: contentWarningProps cannot be null"), (0, r.jsx)(et.A, e$({
           onClose: t
-        }, m))
+        }, b))
       },
-      children: () => h ? (0, r.jsx)(p.bfh, {
-        isShaking: f > 0,
-        intensity: f,
+      children: () => f ? (0, r.jsx)(h.bfh, {
+        isShaking: p > 0,
+        intensity: p,
         className: eQ.Xn,
         children: A
       }) : A
@@ -330,14 +330,14 @@ class e3 extends Chunk64700.PureComponent {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, eZ(this, "isFirstChange", true), eZ(this, "editorRef", null), eZ(this, "state", e0(e$({}, (0, M.ur)(eE.A.getDraft(this.props.channel.id, eE.C.ChannelMessage))), {
+    super(...e), t = this, eZ(this, "isFirstChange", true), eZ(this, "editorRef", null), eZ(this, "state", e0(e$({}, (0, M.ur)(ex.A.getDraft(this.props.channel.id, ex.C.ChannelMessage))), {
       contentWarningProps: null
     })), eZ(this, "draftDidChange", function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : t.props,
         {
           textValue: n
         } = t.state,
-        r = eE.A.getDraft(e.channel.id, eE.C.ChannelMessage);
+        r = ex.A.getDraft(e.channel.id, ex.C.ChannelMessage);
       n !== r && ("" === r || "" === n) && t.setState((0, M.ur)(r), () => {
         if (n !== r) {
           let {
@@ -358,7 +358,7 @@ class e3 extends Chunk64700.PureComponent {
           return void this.handleIncrementCombo("", 1);
         case eq.Ks6.ARROW_UP:
           if (l || i) return;
-          if (e.preventDefault(), t) eT.A.getUploadCount(r.id, eE.C.ChannelMessage) > 0 ? eM._.dispatchToLastSubscribed(eq.jej.FOCUS_ATTACHMENT_AREA) : eM._.dispatchToLastSubscribed(eq.jej.FOCUS_MESSAGES, {
+          if (e.preventDefault(), t) eT.A.getUploadCount(r.id, ex.C.ChannelMessage) > 0 ? eM._.dispatchToLastSubscribed(eq.jej.FOCUS_ATTACHMENT_AREA) : eM._.dispatchToLastSubscribed(eq.jej.FOCUS_MESSAGES, {
             atEnd: true
           });
           else {
@@ -370,21 +370,21 @@ class e3 extends Chunk64700.PureComponent {
           return;
         case eq.Ks6.ESCAPE:
           if (l || e.target !== e.currentTarget) return;
-          if (e.preventDefault(), t) return void(0, O.Bm)();
-          if (eT.A.getUploadCount(r.id, eE.C.ChannelMessage) > 0) return void m.A.clearAll(r.id, eE.C.ChannelMessage)
+          if (e.preventDefault(), t) return void(0, _.Bm)();
+          if (eT.A.getUploadCount(r.id, ex.C.ChannelMessage) > 0) return void b.A.clearAll(r.id, ex.C.ChannelMessage)
       }
       null == n || n(e, i)
     }), eZ(this, "handleIncrementCombo", (e, t) => {
       var n;
       if (!this.props.poggermodeEnabled) return;
       let r = this.props.channel.id,
-        l = ej.default.getId(),
+        l = eO.default.getId(),
         i = ei.Ay.getUserCombo(l, r),
-        a = (null != (n = null == i ? true : i.value) ? n : 0) + 1;
+        s = (null != (n = null == i ? true : i.value) ? n : 0) + 1;
       (0, er.oG)({
         channelId: r,
         userId: l,
-        value: null != e ? e.length : a,
+        value: null != e ? e.length : s,
         multiplier: t
       })
     }), eZ(this, "handleTextareaChange", (e, t, n) => {
@@ -394,10 +394,10 @@ class e3 extends Chunk64700.PureComponent {
           id: l
         }
       } = this.props;
-      h.A.changeDraft(l, t, eE.C.ChannelMessage);
+      f.A.changeDraft(l, t, ex.C.ChannelMessage);
       let i = "" !== t && n !== this.state.richValue,
-        a = i && !e2.test(t) && !t.startsWith("/") && (!this.isFirstChange || t !== this.state.textValue);
-      this.isFirstChange = false, a && this.state.textValue.length < t.length && this.handleIncrementCombo(), a ? g.A.startTyping(l) : "" === t && g.A.stopTyping(l), i && r && (0, O.Bm)(), this.setState({
+        s = i && !e9.test(t) && !t.startsWith("/") && (!this.isFirstChange || t !== this.state.textValue);
+      this.isFirstChange = false, s && this.state.textValue.length < t.length && this.handleIncrementCombo(), s ? m.A.startTyping(l) : "" === t && m.A.stopTyping(l), i && r && (0, _.Bm)(), this.setState({
         textValue: t,
         richValue: n
       })
@@ -408,8 +408,8 @@ class e3 extends Chunk64700.PureComponent {
         stickers: r,
         command: l,
         commandOptionValues: i,
-        isGif: a,
-        components: s,
+        isGif: s,
+        components: a,
         announcementSendOptions: o
       } = e;
       if (0 === (t = t.trim()).length && (null == r || 0 === r.length) && (null == n || 0 === n.length)) return Promise.resolve({
@@ -419,9 +419,9 @@ class e3 extends Chunk64700.PureComponent {
       let {
         guild: c,
         channel: u,
-        pendingReply: f,
-        chatInputType: p,
-        threadsAlsoSendToChannel: g
+        pendingReply: p,
+        chatInputType: h,
+        threadsAlsoSendToChannel: m
       } = this.props, A = false;
       if (null != l) {
         if (l.inputType === T.y$.BUILT_IN_INTEGRATION) return eM._.dispatch(eq.jej.SHAKE_APP, {
@@ -449,7 +449,7 @@ class e3 extends Chunk64700.PureComponent {
           let {
             location: t,
             sectionName: n
-          } = null != (y = (0, eH.bV)(l)) ? y : {}, r = e === T.iw.APPLICATION_LAUNCHER ? E.A.lastShownEntrypoint() : _.s4.TEXT, {
+          } = null != (y = (0, eF.bV)(l)) ? y : {}, r = e === T.iw.APPLICATION_LAUNCHER ? x.A.lastShownEntrypoint() : E.s4.TEXT, {
             isAuthorized: i
           } = await (0, R.q)({
             applicationId: l.applicationId,
@@ -465,7 +465,7 @@ class e3 extends Chunk64700.PureComponent {
             shouldClear: false,
             shouldRefocus: true
           });
-          (0, eH.My)(l)
+          (0, eF.My)(l)
         }
         let n = await (0, w.A)({
           command: l,
@@ -481,7 +481,7 @@ class e3 extends Chunk64700.PureComponent {
         });
         null != n && (t = null != n.content && "" !== n.content ? n.content : t, A = true === n.tts)
       }
-      return (0, eG.i)({
+      return (0, ek.i)({
         openWarningPopout: e => this.setState({
           contentWarningProps: e
         }),
@@ -491,13 +491,13 @@ class e3 extends Chunk64700.PureComponent {
         uploads: n,
         channel: u
       }).then(async e => {
-        var i, y, O;
+        var i, y, _;
         let {
-          valid: j,
-          failureReason: v
+          valid: O,
+          failureReason: j
         } = e;
-        if (!j)
-          if (v === eq.X8x.SLOWMODE_COOLDOWN) return eM._.dispatch(eq.jej.SHAKE_APP, {
+        if (!O)
+          if (j === eq.X8x.SLOWMODE_COOLDOWN) return eM._.dispatch(eq.jej.SHAKE_APP, {
             duration: 200,
             intensity: 2
           }), eM._.dispatch(eq.jej.EMPHASIZE_SLOWMODE_COOLDOWN), {
@@ -508,32 +508,32 @@ class e3 extends Chunk64700.PureComponent {
             shouldClear: false,
             shouldRefocus: false
           };
-        let x = (0, Z.S)(t, {
+        let v = (0, Z.S)(t, {
           channel: u,
           isEdit: false
         });
-        null != x && (null != x.content && (t = x.content), null != x.tts && (A = x.tts));
-        let E = $.Ay.parse(u, t);
-        E.tts = E.tts || A, null != s && (E.content = "", E.components = s);
-        let _ = e0(e$({}, b.A.getSendMessageOptions({
+        null != v && (null != v.content && (t = v.content), null != v.tts && (A = v.tts));
+        let x = $.Ay.parse(u, t);
+        x.tts = x.tts || A, null != a && (x.content = "", x.components = a);
+        let E = e0(e$({}, g.A.getSendMessageOptions({
           content: t,
           channelId: u.id,
           uploads: n,
           stickers: r,
           command: l,
-          isGif: a,
-          pendingReply: f,
-          alsoForwardToChannelId: g && null != (i = u.parent_id) ? i : true,
+          isGif: s,
+          pendingReply: p,
+          alsoForwardToChannelId: m && null != (i = u.parent_id) ? i : true,
           scheduledTimestamp: null == (y = this.props.pendingScheduledMessage) ? true : y.scheduledTimestamp
         })), {
           location: eX.Hx.CHAT_INPUT
         });
-        if (null != o && (_.announcementSendOptions = o), null != s && (_.flags = (0, d.UI)(null != (O = _.flags) ? O : 0, eq.pr7.IS_COMPONENTS_V2)), a) return b.A.sendMessage(u.id, E, true, _).then(() => {
-          if (g) {
+        if (null != o && (E.announcementSendOptions = o), null != a && (E.flags = (0, d.UI)(null != (_ = E.flags) ? _ : 0, eq.pr7.IS_COMPONENTS_V2)), s) return g.A.sendMessage(u.id, x, true, E).then(() => {
+          if (m) {
             var e;
             eA._(null != (e = u.parent_id) ? e : true)
           }
-        }), (0, ec.Jx)(u.id), eg.B({
+        }), (0, ec.Jx)(u.id), em.B({
           channelId: u.id,
           enabled: false
         }), {
@@ -542,51 +542,51 @@ class e3 extends Chunk64700.PureComponent {
         };
         if (null != n && n.length > 0) {
           let e = (0, eU.LJ)(n);
-          if ((0, eU.fJ)(e, null == c ? true : c.id)) return (0, ek.V)(u, e), {
+          if ((0, eU.fJ)(e, null == c ? true : c.id)) return (0, eG.V)(u, e), {
             shouldClear: false,
             shouldRefocus: false
           };
-          _.eagerDispatch = false, _.attachmentsToUpload = n, _.onAttachmentUploadError = (e, r, l) => {
+          E.eagerDispatch = false, E.attachmentsToUpload = n, E.onAttachmentUploadError = (e, r, l) => {
             (0, Q.k)({
               file: e,
               guildId: u.getGuildId(),
               analyticsLocations: [],
               code: r,
               reason: l
-            }) && ("" !== t && "" === eE.A.getDraft(u.id, eE.C.ChannelMessage) && h.A.saveDraft(u.id, t, eE.C.ChannelMessage), 0 === eT.A.getUploadCount(u.id, eE.C.ChannelMessage) && m.A.setUploads({
+            }) && ("" !== t && "" === ex.A.getDraft(u.id, ex.C.ChannelMessage) && f.A.saveDraft(u.id, t, ex.C.ChannelMessage), 0 === eT.A.getUploadCount(u.id, ex.C.ChannelMessage) && b.A.setUploads({
               channelId: u.id,
               uploads: n,
-              draftType: eE.C.ChannelMessage
+              draftType: ex.C.ChannelMessage
             }))
-          }, m.A.clearAll(u.id, eE.C.ChannelMessage)
+          }, b.A.clearAll(u.id, ex.C.ChannelMessage)
         }
-        if (null != _.scheduledTimestamp) try {
-          await (0, ef.pr)({
+        if (null != E.scheduledTimestamp) try {
+          await (0, ep.pr)({
             channelId: u.id,
-            scheduledTimestamp: _.scheduledTimestamp,
+            scheduledTimestamp: E.scheduledTimestamp,
             messageSendData: {
               channelId: u.id,
               content: t,
               nonce: (0, ee.m)(),
               tts: A,
-              message_reference: _.messageReference,
-              allowed_mentions: _.allowedMentions,
-              flags: _.flags
+              message_reference: E.messageReference,
+              allowed_mentions: E.allowedMentions,
+              flags: E.flags
             },
             attachmentsToUpload: n
-          }), (0, eh.c_)(_.scheduledTimestamp)
+          }), (0, ef.c_)(E.scheduledTimestamp)
         } catch (e) {
-          return (0, eh.kM)(e.message), {
+          return (0, ef.kM)(e.message), {
             shouldClear: false,
             shouldRefocus: false
           }
-        } else b.A.sendMessage(u.id, E, true, _).then(() => {
-          if (g) {
+        } else g.A.sendMessage(u.id, x, true, E).then(() => {
+          if (m) {
             var e;
             eA._(null != (e = u.parent_id) ? e : true)
           }
         });
-        return this.setState((0, M.N3)()), (0, ec.Jx)(u.id), (0, eb.x5)(u.id, p.drafts.type), eg.B({
+        return this.setState((0, M.N3)()), (0, ec.Jx)(u.id), (0, eg.x5)(u.id, h.drafts.type), em.B({
           channelId: u.id,
           enabled: false
         }), {
@@ -597,16 +597,16 @@ class e3 extends Chunk64700.PureComponent {
     }), eZ(this, "handleSetValue", e => {
       var t, n;
       let r = null == (t = this.editorRef) ? true : t.getSlateEditor();
-      null != r && (V.b.select(r, []), r.insertText(e), null == (n = this.editorRef) || n.focus())
-    }), eZ(this, "renderAttachButton", (e, t) => (0, r.jsx)(k.A, {
+      null != r && (B.b.select(r, []), r.insertText(e), null == (n = this.editorRef) || n.focus())
+    }), eZ(this, "renderAttachButton", (e, t) => (0, r.jsx)(G.A, {
       className: t,
       channel: this.props.channel,
-      draftType: eE.C.ChannelMessage,
+      draftType: ex.C.ChannelMessage,
       editorTextContent: this.state.textValue,
       setValue: this.handleSetValue,
       canOnlyUseTextCommands: e,
       chatInputType: this.props.chatInputType
-    })), eZ(this, "renderApplicationCommandIcon", (e, t, n) => (0, r.jsx)(G.A, {
+    })), eZ(this, "renderApplicationCommandIcon", (e, t, n) => (0, r.jsx)(k.A, {
       className: n,
       command: e,
       section: t,
@@ -614,7 +614,7 @@ class e3 extends Chunk64700.PureComponent {
     }))
   }
 }
-class e6 extends Chunk64700.PureComponent {
+class e3 extends Chunk64700.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let {
       channel: n
@@ -641,21 +641,21 @@ class e6 extends Chunk64700.PureComponent {
         channel: n,
         guild: l,
         keyboardModeEnabled: i,
-        hasModalOpen: s,
+        hasModalOpen: a,
         pendingReply: o,
         threadsAlsoSendToChannel: c,
         chatInputType: d,
-        placeholder: f,
-        accessibilityLabel: h,
-        showQuarantinedUserBanner: b,
-        filterAfterTimestamp: g,
-        communicationDisabledUntil: m,
-        shakeIntensity: O,
-        poggermodeEnabled: j,
-        isSelectedResourceChannel: v,
-        showAutomodUserProfileChatBlocker: x,
-        pendingScheduledMessage: E,
-        recipientUser: _,
+        placeholder: p,
+        accessibilityLabel: f,
+        showQuarantinedUserBanner: g,
+        filterAfterTimestamp: m,
+        communicationDisabledUntil: b,
+        shakeIntensity: _,
+        poggermodeEnabled: O,
+        isSelectedResourceChannel: j,
+        showAutomodUserProfileChatBlocker: v,
+        pendingScheduledMessage: x,
+        recipientUser: E,
         voiceChannel: C,
         messagesTypingGradient: S,
         showLinkedLobbyApplicationLoadingIndicator: I,
@@ -678,7 +678,7 @@ class e6 extends Chunk64700.PureComponent {
           tutorialId: "writing-messages",
           position: "left",
           offsetX: 75,
-          children: (0, r.jsx)(e7, {
+          children: (0, r.jsx)(e2, {
             ref: this.refToChannelTextAreaFormComponent,
             refInstance: this.containerDomRef,
             focused: T,
@@ -689,27 +689,27 @@ class e6 extends Chunk64700.PureComponent {
             onFocus: this.handleInputFocus,
             onBlur: this.handleInputBlur,
             onKeyDown: this.handleInputKeyDown,
-            hasModalOpen: s,
+            hasModalOpen: a,
             pendingReply: o,
             threadsAlsoSendToChannel: c,
             chatInputType: d,
-            placeholder: f,
-            accessibilityLabel: h,
-            shakeIntensity: O,
-            poggermodeEnabled: j,
-            pendingScheduledMessage: E,
+            placeholder: p,
+            accessibilityLabel: f,
+            shakeIntensity: _,
+            poggermodeEnabled: O,
+            pendingScheduledMessage: x,
             announcementComposerEnabled: N
           })
         })
       }),
       L = I ? R : M,
       {
-        enabled: G
-      } = eO.A.getCurrentConfig({
+        enabled: k
+      } = e_.A.getCurrentConfig({
         guildId: null == C ? true : C.guild_id,
         location: "ChannelChat"
       }),
-      k = G && null != _ && null != C && null != C.guild_id;
+      G = k && null != E && null != C && null != C.guild_id;
     return (0, r.jsx)(y.A, {
       page: (0, eR.DJ)(this.props.channel),
       children: (0, r.jsx)(J.di, {
@@ -728,7 +728,7 @@ class e6 extends Chunk64700.PureComponent {
             }), (0, r.jsx)(eD.EG, {
               event: eq.jej.OPEN_APP_LAUNCHER,
               handler: this.handleOpenAppLauncher
-            }), (0, r.jsxs)(e9, {
+            }), (0, r.jsxs)(e7, {
               isSidebar: w,
               className: eQ.q2,
               "aria-label": eJ.intl.formatToPlainString(t, {
@@ -737,16 +737,16 @@ class e6 extends Chunk64700.PureComponent {
               onMouseDown: this.handleChatInteract,
               onKeyDown: this.handleKeyDown,
               onFocus: this.handleChatInteract,
-              children: [k && (0, r.jsx)(eY.A, {
-                recipientUser: _,
+              children: [G && (0, r.jsx)(eY.A, {
+                recipientUser: E,
                 voiceChannel: C
-              }), (0, r.jsx)(eB.A, {
+              }), (0, r.jsx)(eH.A, {
                 channel: n,
                 guild: l,
                 narrow: w
-              }), (0, r.jsxs)(p.Fmo, {
-                component: (0, r.jsx)(p.AC4, {
-                  children: (0, r.jsx)(p.H, {
+              }), (0, r.jsxs)(h.Fmo, {
+                component: (0, r.jsx)(h.AC4, {
+                  children: (0, r.jsx)(h.H, {
                     children: eJ.intl.format(eJ.t.eTzKkx, {
                       channelName: n.name
                     })
@@ -754,23 +754,23 @@ class e6 extends Chunk64700.PureComponent {
                 }),
                 children: [(0, r.jsx)(en.A, {
                   channel: n,
-                  forceCozy: v,
-                  filterAfterTimestamp: g,
-                  showingQuarantineBanner: b,
+                  forceCozy: j,
+                  filterAfterTimestamp: m,
+                  showingQuarantineBanner: g,
                   typingGradient: S
-                }), v ? null : null != (e = this.renderMessageBanner({
+                }), j ? null : null != (e = this.renderMessageBanner({
                   channel: n,
-                  showQuarantinedUserBanner: b,
+                  showQuarantinedUserBanner: g,
                   guild: l,
-                  communicationDisabledUntil: m,
-                  showAutomodUserProfileChatBlocker: x
+                  communicationDisabledUntil: b,
+                  showAutomodUserProfileChatBlocker: v
                 })) ? e : (0, r.jsxs)("form", {
                   ref: this.inputFormRef,
                   onSubmit: e1,
-                  className: a()(eQ.Zd, {
+                  className: s()(eQ.Zd, {
                     [eQ.Mf]: !I
                   }),
-                  children: [j && (0, r.jsx)(ea.A, {
+                  children: [O && (0, r.jsx)(es.A, {
                     channelId: n.id
                   }), n.isPrivate() ? (0, r.jsx)(eW.A, {
                     channel: n,
@@ -837,19 +837,19 @@ class e6 extends Chunk64700.PureComponent {
           return;
         case eq.Ks6.ARROW_RIGHT:
           n === D.oU.NORMAL && eM._.dispatch(eq.jej.FOCUS_CHANNEL_TEXT_AREA, {
-            channelId: ev.Ay.getCurrentSidebarChannelId(r.id)
+            channelId: ej.Ay.getCurrentSidebarChannelId(r.id)
           })
       }
     }), eZ(this, "handleOpenExpressionPicker", e => {
       let {
         activeView: t
       } = e;
-      (0, H.bf)(t, this.props.chatInputType, this.props.channel.id)
+      (0, F.bf)(t, this.props.chatInputType, this.props.channel.id)
     }), eZ(this, "handleOpenAppLauncher", e => {
       let {
         applicationId: t
       } = e;
-      return x.R(_.s4.TEXT, this.props.chatInputType, {
+      return v.R(E.s4.TEXT, this.props.chatInputType, {
         applicationId: t
       }, this.props.channel.id)
     }), eZ(this, "handleChatInteract", () => {
@@ -861,57 +861,57 @@ class e6 extends Chunk64700.PureComponent {
         showQuarantinedUserBanner: n,
         guild: l,
         communicationDisabledUntil: i,
-        showAutomodUserProfileChatBlocker: a
+        showAutomodUserProfileChatBlocker: s
       } = e;
       return t.type === eq.rbe.DM && n ? (0, r.jsx)(eo.A, {}) : t.isModeratorReportChannel() && t.isArchivedThread() ? (0, r.jsx)(ed.A, {
         channelId: t.id
       }) : null != i && (0, W.n)(i) && null != l && !eI.A.can(eq.xBc.ADMINISTRATOR, l) ? (0, r.jsx)(Y.j, {
         guild: l,
         disabledUntil: i
-      }) : a ? (0, r.jsx)(K.u, {
+      }) : s ? (0, r.jsx)(K.u, {
         guild: l
       }) : null
     })
   }
 }
-let e8 = Chunk64700.memo(function(e) {
+let e5 = Chunk64700.memo(function(e) {
   let {
     channel: t,
     guild: n,
     chatInputType: l,
     filterAfterTimestamp: i
   } = e, {
-    placeholder: a,
-    accessibilityLabel: s
-  } = (0, eF.A)({
+    placeholder: s,
+    accessibilityLabel: a
+  } = (0, eV.A)({
     channel: t
-  }), o = (0, eo.L)(eP.default.getCurrentUser(), t), [c] = (0, z.c)(null == n ? true : n.id), u = (0, B.uZ)(null == n ? true : n.id), d = (0, f.bG)([eP.default], () => eP.default.getCurrentUser()), h = (0, f.bG)([eC.Ay], () => {
+  }), o = (0, eo.L)(eP.default.getCurrentUser(), t), [c] = (0, z.c)(null == n ? true : n.id), u = (0, H.uZ)(null == n ? true : n.id), d = (0, p.bG)([eP.default], () => eP.default.getCurrentUser()), f = (0, p.bG)([eC.Ay], () => {
     var e, t, r;
     return null != d && null != (e = null == (r = eC.Ay.getMember(null != (t = null == n ? true : n.id) ? t : eq.dJq, null == d ? true : d.id)) ? true : r.isPending) && e
-  }), b = (0, f.bG)([el.A], () => el.A.isEnabled()), g = (0, es.A)(t.id), m = (0, q.A)(t.id), y = (0, ep.D)(t.id), O = (0, f.bG)([eN.A], () => eN.A.getVoiceChannelId()), v = (0, f.bG)([ex.A], () => ex.A.getChannel(O)), x = (0, f.bG)([eP.default], () => t.type !== eq.rbe.DM ? null : eP.default.getUser(t.getRecipientId())), E = (0, f.bG)([em.A], () => em.A.getAlsoSendToChannel(t.id)), _ = (0, f.bG)([ei.Ay, ej.default], () => ei.Ay.getUserCombo(ej.default.getId(), t.id)), C = (0, A.rj)(t), S = (0, A.aW)(t), I = C.length > 0 || t.rateLimitPerUser > 0 || null != _ || null != S, {
+  }), g = (0, p.bG)([el.A], () => el.A.isEnabled()), m = (0, ea.A)(t.id), b = (0, q.A)(t.id), y = (0, eh.D)(t.id), _ = (0, p.bG)([eN.A], () => eN.A.getVoiceChannelId()), j = (0, p.bG)([ev.A], () => ev.A.getChannel(_)), v = (0, p.bG)([eP.default], () => t.type !== eq.rbe.DM ? null : eP.default.getUser(t.getRecipientId())), x = (0, p.bG)([eb.A], () => eb.A.getAlsoSendToChannel(t.id)), E = (0, p.bG)([ei.Ay, eO.default], () => ei.Ay.getUserCombo(eO.default.getId(), t.id)), C = (0, A.rj)(t), S = (0, A.aW)(t), I = C.length > 0 || t.rateLimitPerUser > 0 || null != E || null != S, {
     showLinkedLobbyApplicationLoadingIndicator: N
-  } = (0, eV.A)(t.linkedLobby), T = (0, F.A)("ChannelChat");
-  return (0, r.jsx)(e6, {
+  } = (0, eB.A)(t.linkedLobby), T = (0, V.A)("ChannelChat");
+  return (0, r.jsx)(e3, {
     channel: t,
-    isEditing: null != (0, f.bG)([e_.A], () => e_.A.getEditingMessageId(t.id)),
-    hasModalOpen: (0, p.red)(p.DXt),
+    isEditing: null != (0, p.bG)([eE.A], () => eE.A.getEditingMessageId(t.id)),
+    hasModalOpen: (0, h.red)(h.DXt),
     guild: n,
-    keyboardModeEnabled: (0, f.bG)([j.A], () => j.A.keyboardModeEnabled),
-    pendingReply: (0, f.bG)([eu.A], () => eu.A.getPendingReply(t.id)),
-    threadsAlsoSendToChannel: E,
+    keyboardModeEnabled: (0, p.bG)([O.A], () => O.A.keyboardModeEnabled),
+    pendingReply: (0, p.bG)([eu.A], () => eu.A.getPendingReply(t.id)),
+    threadsAlsoSendToChannel: x,
     chatInputType: l,
-    placeholder: a,
-    accessibilityLabel: s,
+    placeholder: s,
+    accessibilityLabel: a,
     filterAfterTimestamp: i,
     showQuarantinedUserBanner: o,
     communicationDisabledUntil: c,
-    shakeIntensity: g,
-    poggermodeEnabled: b,
-    isSelectedResourceChannel: m,
-    showAutomodUserProfileChatBlocker: u && !h,
+    shakeIntensity: m,
+    poggermodeEnabled: g,
+    isSelectedResourceChannel: b,
+    showAutomodUserProfileChatBlocker: u && !f,
     pendingScheduledMessage: y,
-    recipientUser: x,
-    voiceChannel: v,
+    recipientUser: v,
+    voiceChannel: j,
     messagesTypingGradient: I,
     showLinkedLobbyApplicationLoadingIndicator: N,
     announcementComposerEnabled: T

@@ -25,23 +25,23 @@ var Chunk627968 = require("./627968.js"),
 let O = function(e) {
   let {
     mobile: t
-  } = e, n = (0, i.bG)([_.A], () => _.A.getLayers().includes(E.zgK.USER_SETTINGS)), O = (0, i.bG)([h.default], () => m.Ay.canUseClientThemes(h.default.getCurrentUser())), A = (0, i.bG)([l.A], () => l.A.isCoachmark), v = (0, c.a)(), {
-    activePanel: S,
-    metadata: I
+  } = e, n = (0, i.bG)([_.A], () => _.A.getLayers().includes(E.zgK.USER_SETTINGS)), O = (0, i.bG)([h.default], () => m.Ay.canUseClientThemes(h.default.getCurrentUser())), v = (0, i.bG)([l.A], () => l.A.isCoachmark), A = (0, c.a)(), {
+    activePanel: I,
+    metadata: S
   } = (0, g.fy)(), T = [];
-  !n && null == S && (A && !O && T.push(a.M.CLIENT_THEMES_COACHMARK), v && O && T.push(a.M.CUSTOM_THEME_COACHMARK));
-  let [C, N] = (0, p.kn)(T, b.m.SIDEBAR, true), R = C === a.M.CLIENT_THEMES_COACHMARK, w = C === a.M.CUSTOM_THEME_COACHMARK;
+  !n && null == I && (v && !O && T.push(a.M.CLIENT_THEMES_COACHMARK), A && O && T.push(a.M.CUSTOM_THEME_COACHMARK));
+  let [C, N] = (0, p.kn)(T, y.m.SIDEBAR, true), R = C === a.M.CLIENT_THEMES_COACHMARK, w = C === a.M.CUSTOM_THEME_COACHMARK;
   if (n) return null;
-  let P = S === g.HP.CLIENT_THEMES || R,
-    D = S === g.HP.APP_ICON,
-    x = S === g.HP.CUSTOM_THEME || w,
-    L = S === g.HP.APPLICATION_TEST_MODE_DEBUG;
+  let P = I === g.HP.CLIENT_THEMES || R,
+    D = I === g.HP.APP_ICON,
+    x = I === g.HP.CUSTOM_THEME || w,
+    L = I === g.HP.APPLICATION_TEST_MODE_DEBUG;
   if (!(P || D || x || L)) return null;
   let j = () => (0, r.jsxs)(r.Fragment, {
     children: [P && (0, r.jsx)(u.A, {
       markAsDismissed: R ? N : () => {
         (0, f.Dr)(a.M.CLIENT_THEMES_COACHMARK, {
-          dismissAction: b.i.INDIRECT_ACTION,
+          dismissAction: y.i.INDIRECT_ACTION,
           forceTrack: true
         })
       },
@@ -50,14 +50,14 @@ let O = function(e) {
       isCoachmark: false,
       markAsDismissed: N
     }), x && (0, r.jsx)(d.A, {
-      metadata: null != I ? I : {},
+      metadata: null != S ? S : {},
       markAsDismissed: N,
       isCoachmark: w,
       isMobile: t
     }), L && (0, r.jsx)(o.A, {})]
   });
   return t ? (0, r.jsx)("div", {
-    className: y.A,
+    className: b.A,
     children: j()
   }) : j()
 }

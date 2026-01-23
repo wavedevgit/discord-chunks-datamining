@@ -54,11 +54,11 @@ function q() {
   return (0, r.jsx)(l.ZpM, {
     className: z.wb,
     type: l.ZpM.Types.CUSTOM,
-    children: (0, r.jsxs)(b.A, {
-      align: b.A.Align.CENTER,
-      children: [(0, r.jsx)(y.A, {
+    children: (0, r.jsxs)(y.A, {
+      align: y.A.Align.CENTER,
+      children: [(0, r.jsx)(b.A, {
         game: null,
-        size: y.M.SMALL,
+        size: b.M.SMALL,
         className: z.pV
       }), (0, r.jsx)("span", {
         className: z.O,
@@ -115,8 +115,8 @@ let $ = function() {
     n = t.length > 1,
     a = (0, o.bG)([P.A], () => null != e && null != e.paymentSourceId ? P.A.getPaymentSource(e.paymentSourceId) : null, [e]),
     f = (0, o.bG)([D.A], () => D.A.hasFetchedSubscriptions()),
-    b = (0, o.bG)([w.A], () => w.A.isBusy),
-    y = (0, E.Y)(),
+    y = (0, o.bG)([w.A], () => w.A.isBusy),
+    b = (0, E.Y)(),
     x = (0, o.bG)([R.A], () => R.A.getSubsection()),
     j = (0, o.bG)([D.A], () => {
       var e, t;
@@ -136,9 +136,9 @@ let $ = function() {
     (0, p.zS)(), u.hP(), (0, d.CD)(), u.$o()
   }), function() {
     _.A.clearSubsection()
-  }), []), N.A.enabled) ? (0, r.jsx)(h.A, {}) : f && y ? x === Y.nR ? (0, r.jsx)(A.A, {
+  }), []), N.A.enabled) ? (0, r.jsx)(h.A, {}) : f && b ? x === Y.nR ? (0, r.jsx)(v.A, {
     onGoBack: () => _.A.clearSubsection()
-  }) : x === Y.PZ ? (0, r.jsx)(S.A, {
+  }) : x === Y.PZ ? (0, r.jsx)(I.A, {
     onGoBack: () => _.A.clearSubsection()
   }) : (0, r.jsx)("div", {
     className: z.kL,
@@ -147,9 +147,9 @@ let $ = function() {
       children: [n ? (0, r.jsx)(F.Sb, {}) : null, null != e ? (0, r.jsx)(F.Ay, {
         subscription: e,
         paymentSource: a,
-        busy: b,
+        busy: y,
         subscriptions: t
-      }) : (0, r.jsx)(F.TC, {}), q && Z(U, K), (0, r.jsx)(I.x, {
+      }) : (0, r.jsx)(F.TC, {}), q && Z(U, K), (0, r.jsx)(S.x, {
         setting: W.H.SUBSCRIPTIONS_CREDITS,
         children: (0, r.jsx)(X, {})
       }), M > 0 && (0, r.jsxs)(r.Fragment, {
@@ -161,7 +161,7 @@ let $ = function() {
           })
         })]
       }), j > 0 && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(Q, {}), (0, r.jsx)(v.A, {
+        children: [(0, r.jsx)(Q, {}), (0, r.jsx)(A.A, {
           count: j,
           onClickManageSubscription: () => {
             (0, C.openUserSettings)(T.X.SUBSCRIPTIONS_PANEL, {

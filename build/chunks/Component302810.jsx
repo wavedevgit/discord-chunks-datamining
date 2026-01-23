@@ -25,12 +25,12 @@ function g(t, e, i) {
 }
 class A extends Chunk64700.Component {
   componentDidMount() {
-    c.default.track(u.HAw.OPEN_MODAL, {
+    l.default.track(u.HAw.OPEN_MODAL, {
       type: u.JJy.PAYMENT_AUTHENTICATION_MODAL
     })
   }
   componentWillUnmount() {
-    c.default.track(u.HAw.MODAL_DISMISSED, {
+    l.default.track(u.HAw.MODAL_DISMISSED, {
       type: u.JJy.PAYMENT_AUTHENTICATION_MODAL
     })
   }
@@ -133,13 +133,13 @@ class A extends Chunk64700.Component {
         onClose: e,
         pendingPayment: i
       } = this.props;
-      0 === t && await (0, l.N)(i.id), e()
+      0 === t && await (0, c.N)(i.id), e()
     }), g(this, "cancelPayment", async () => {
       let {
         pendingPayment: t
       } = this.props;
       try {
-        await (0, l.N)(t.id)
+        await (0, c.N)(t.id)
       } catch (t) {
         throw this.setState({
           step: 3

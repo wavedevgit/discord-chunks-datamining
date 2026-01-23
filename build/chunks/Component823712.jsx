@@ -21,29 +21,29 @@ var Chunk627968 = require("./627968.js"),
   Chunk836872 = require("./836872.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk947256 = require("./947256.js");
-let p = e => {
+let A = e => {
   let {
     tabs: t,
     selectedTab: l,
     onTabSelect: r,
     onClose: i
   } = e;
-  return (0, n.jsx)(o.W1t, {
+  return (0, n.jsx)(d.W1t, {
     navId: "members-tabs-overflow-menu",
     "aria-label": v.intl.string(v.t.riPnr0),
     hideScroller: true,
     onClose: i,
     onSelect: i,
-    children: (0, n.jsx)(o.rXV, {
+    children: (0, n.jsx)(d.rXV, {
       children: t.map(e => {
         let {
           id: t,
           label: i
         } = e;
-        return (0, n.jsx)(o.Drp, {
+        return (0, n.jsx)(d.Drp, {
           id: t,
           label: i,
-          icon: t === l ? o.yr3 : true,
+          icon: t === l ? d.yr3 : true,
           action: () => r(t)
         }, t)
       })
@@ -51,24 +51,24 @@ let p = e => {
   })
 };
 
-function E(e) {
+function p(e) {
   let {
     onTabSelect: t,
     tabs: l,
     selectedTab: i
-  } = e, a = r.useRef(null), c = (0, m.Ay)(), u = (0, d.Mw)(c), x = r.useMemo(() => null != l.find(e => {
+  } = e, a = r.useRef(null), o = (0, m.Ay)(), u = (0, c.Mw)(o), x = r.useMemo(() => null != l.find(e => {
     let {
       id: t
     } = e;
     return t === i
-  }), [i, l]), j = x ? "text-strong" : u ? "text-muted" : "text-strong", b = x ? o.LU0.colors.TEXT_STRONG : u ? o.LU0.colors.TEXT_MUTED : o.LU0.colors.TEXT_STRONG;
-  return (0, n.jsx)(o.YNO, {
+  }), [i, l]), j = x ? "text-strong" : u ? "text-muted" : "text-strong", b = x ? d.LU0.colors.TEXT_STRONG : u ? d.LU0.colors.TEXT_MUTED : d.LU0.colors.TEXT_STRONG;
+  return (0, n.jsx)(d.YNO, {
     targetElementRef: a,
     renderPopout: e => {
       let {
         closePopout: r
       } = e;
-      return (0, n.jsx)(p, {
+      return (0, n.jsx)(A, {
         selectedTab: i,
         onClose: r,
         tabs: l,
@@ -82,7 +82,7 @@ function E(e) {
       let {
         isShown: i
       } = t;
-      return (0, n.jsxs)(o.VQ0.Item, (l = function(e) {
+      return (0, n.jsxs)(d.VQ0.Item, (l = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var l = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(l);
@@ -103,18 +103,18 @@ function E(e) {
         id: "more",
         clickableInnerRef: a,
         color: "text-muted",
-        className: s()(A.OS, {
-          [A.wH]: x
+        className: s()(_.OS, {
+          [_.wH]: x
         }),
         "aria-label": v.intl.string(v.t["UKOtz+"]),
-        children: [(0, n.jsx)(o.Text, {
+        children: [(0, n.jsx)(d.Text, {
           variant: "text-md/medium",
           color: j,
           children: v.intl.string(v.t["UKOtz+"])
-        }), i ? (0, n.jsx)(o.tN5, {
+        }), i ? (0, n.jsx)(d.tN5, {
           size: "sm",
           color: b
-        }) : (0, n.jsx)(o.abt, {
+        }) : (0, n.jsx)(d.abt, {
           size: "sm",
           color: b
         })]
@@ -138,13 +138,13 @@ function S(e) {
       currentTab: i,
       onTabSelect: s
     } = e,
-    [d, m] = r.useState(0),
-    p = r.useRef(null),
-    S = r.useRef(d),
+    [c, m] = r.useState(0),
+    A = r.useRef(null),
+    S = r.useRef(c),
     T = (0, b.H)({
       guildId: l
     }),
-    y = (t = null != T ? T : 0, [{
+    E = (t = null != T ? T : 0, [{
       id: g.D.ALL_MEMBERS,
       label: v.intl.string(v.t.NOOm1Z)
     }, {
@@ -160,61 +160,61 @@ function S(e) {
       label: v.intl.string(v.t.aURgY2)
     }]),
     {
-      lastVisibleIndex: _,
+      lastVisibleIndex: y,
       onItemLayout: O,
       overflowItemsRef: N
-    } = (0, c.Wv)({
-      items: y,
+    } = (0, o.Wv)({
+      items: E,
       itemGapPx: 16,
       maxLines: 1,
-      containerWidth: d - 200
+      containerWidth: c - 200
     }),
-    I = (0, a.bG)([h.Ay], () => null != h.Ay.getGuildSidebarState(l), [l]),
+    I = (0, a.bG)([f.Ay], () => null != f.Ay.getGuildSidebarState(l), [l]),
     R = (0, j.R)({
       guildId: l
     }),
-    D = r.useMemo(() => i === g.D.ALL_MEMBERS ? I : null != R && null != R.user, [i, I, R]),
-    P = r.useMemo(() => y.slice(0, _ + 1), [_, y]),
-    C = r.useMemo(() => y.slice(_ + 1), [_, y]),
+    C = r.useMemo(() => i === g.D.ALL_MEMBERS ? I : null != R && null != R.user, [i, I, R]),
+    D = r.useMemo(() => E.slice(0, y + 1), [y, E]),
+    P = r.useMemo(() => E.slice(y + 1), [y, E]),
     M = (0, x.A)(e => {
       let t = e.contentRect.width;
       null != t && S.current !== t && (m(t), S.current = t)
     });
-  return (0, u.g)(p, M, [D]), (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(f.A.Divider, {
-      className: A.yF
+  return (0, u.g)(A, M, [C]), (0, n.jsxs)(n.Fragment, {
+    children: [(0, n.jsx)(h.A.Divider, {
+      className: _.yF
     }), (0, n.jsxs)("div", {
-      className: A.oB,
-      ref: p,
+      className: _.oB,
+      ref: A,
       children: [(0, n.jsxs)("div", {
-        className: A.Kk,
-        children: [y.map((e, t) => (0, n.jsx)(c.Ae, {
+        className: _.Kk,
+        children: [E.map((e, t) => (0, n.jsx)(o.Ae, {
           index: t,
           onItemLayout: O,
-          children: (0, n.jsx)(o.VQ0.Item, {
+          children: (0, n.jsx)(d.VQ0.Item, {
             id: e.id,
             "aria-label": e.label,
             children: e.label
           })
         }, e.id)), (0, n.jsx)("div", {
           ref: N,
-          children: (0, n.jsx)(E, {
-            tabs: C,
+          children: (0, n.jsx)(p, {
+            tabs: P,
             onTabSelect: s,
             selectedTab: i
           })
         })]
-      }), (0, n.jsxs)(o.VQ0, {
+      }), (0, n.jsxs)(d.VQ0, {
         "aria-label": v.intl.string(v.t.tcvVXM),
         selectedItem: i,
         type: "top-pill",
         onItemSelect: s,
-        children: [P.map(e => (0, n.jsx)(o.VQ0.Item, {
+        children: [D.map(e => (0, n.jsx)(d.VQ0.Item, {
           id: e.id,
           "aria-label": e.label,
           children: e.label
-        }, e.id)), 0 !== C.length ? (0, n.jsx)(E, {
-          tabs: C,
+        }, e.id)), 0 !== P.length ? (0, n.jsx)(p, {
+          tabs: P,
           onTabSelect: s,
           selectedTab: i
         }) : null]

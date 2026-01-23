@@ -59,7 +59,7 @@ let K = e => H.render((0, l.jsx)(D.e, {
 if (null != Chunk77729.A) {
   null == (r = Chunk77729.A.setUncaughtExceptionHandler) || r.call(Chunk77729.A, (e, t) => {
     setImmediate(() => {
-      throw b.A.captureCrash(e), e
+      throw y.A.captureCrash(e), e
     })
   }), Chunk837921.Ay.appLoaded();
   let e = null == (i = (a = Chunk77729.A.remoteApp).getVersion) ? true : i.call(a),
@@ -78,12 +78,12 @@ if ((0, Chunk913934.M)(window), __OVERLAY__) K(Chunk999212.A.Overlay);
 else if (null != window.require && null == window.DiscordNative) K(Chunk999212.A.OutdatedClient);
 else {
   if (document.addEventListener("scroll", e => e.preventDefault()), Chunk723702.isPlatformEmbedded) {
-    window.onbeforeunload = () => A.Ay.beforeUnload(), Chunk837921.Ay.on("HELP_OPEN", () => window.open(y.A.getCommunityURL()));
-    let e = new Chunk451988.J_(F, () => A.Ay.purgeMemory());
+    window.onbeforeunload = () => v.Ay.beforeUnload(), Chunk837921.Ay.on("HELP_OPEN", () => window.open(b.A.getCommunityURL()));
+    let e = new Chunk451988.J_(F, () => v.Ay.purgeMemory());
     Chunk837921.Ay.on("MAIN_WINDOW_BLUR", () => {
-      e.delay(), A.Ay.setFocused(false), (0, C.XC)(window, false)
+      e.delay(), v.Ay.setFocused(false), (0, C.XC)(window, false)
     }), Chunk837921.Ay.on("MAIN_WINDOW_FOCUS", () => {
-      e.cancel(), A.Ay.setFocused(true), (0, C.XC)(window, true)
+      e.cancel(), v.Ay.setFocused(true), (0, C.XC)(window, true)
     }), Chunk837921.Ay.on("MAIN_WINDOW_PATH", W), Chunk837921.Ay.on("MAIN_WINDOW_HIDDEN", () => {
       (0, C.R)(window)
     })

@@ -49,7 +49,7 @@ function p(e, t, d) {
       stream_region: c.A.getRegion(m),
       max_viewers: c.A.getMaxViewers(m)
     }, g),
-    b = () => {
+    y = () => {
       null == d || d(), null != e && (0, a.mMO)(async () => {
         let {
           default: t
@@ -66,7 +66,7 @@ function p(e, t, d) {
     id: "report-stream-problem",
     color: "danger",
     label: u.intl.string(u.t.sdnCxV),
-    action: b,
+    action: y,
     icon: a.EpV
   })
 }

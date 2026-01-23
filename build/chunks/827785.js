@@ -214,7 +214,7 @@ let L = require("./743361.js").A,
       let {
         channel: t
       } = e;
-      return null != t && !t.isPrivate() && E.on.getSetting() && y.A.can(T.xBc.SEND_TTS_MESSAGES, t)
+      return null != t && !t.isPrivate() && E.on.getSetting() && b.A.can(T.xBc.SEND_TTS_MESSAGES, t)
     },
     execute: e => {
       var t;
@@ -315,7 +315,7 @@ let L = require("./743361.js").A,
       let {
         channel: t
       } = e;
-      return null != t && !t.isPrivate() && (y.A.can(T.xBc.CHANGE_NICKNAME, t) || y.A.can(T.xBc.MANAGE_NICKNAMES, t))
+      return null != t && !t.isPrivate() && (b.A.can(T.xBc.CHANGE_NICKNAME, t) || b.A.can(T.xBc.MANAGE_NICKNAMES, t))
     },
     execute: (e, t) => {
       var n;
@@ -418,7 +418,7 @@ let L = require("./743361.js").A,
       let {
         guild: t
       } = e;
-      return y.A.can(T.xBc.KICK_MEMBERS, t)
+      return b.A.can(T.xBc.KICK_MEMBERS, t)
     },
     execute: (e, t) => {
       var n;
@@ -428,12 +428,12 @@ let L = require("./743361.js").A,
       } = t;
       if (null == r || null == i) return;
       let a = null != (n = j(e, "user")) ? n : "";
-      y.A.canManageUser(T.xBc.KICK_MEMBERS, a, r) ? (async () => {
+      b.A.canManageUser(T.xBc.KICK_MEMBERS, a, r) ? (async () => {
         var t;
         let n = O.default.getUser(a);
         if (null == n) throw Error();
         await u.A.kickUser(r.id, a, null != (t = j(e, "reason")) ? t : ""), d.A.sendBotMessage(i.id, R.intl.formatToPlainString(R.t["9wzHDV"], {
-          user: v.Ay.getUserTag(n)
+          user: A.Ay.getUserTag(n)
         }))
       })().catch(() => {
         d.A.sendBotMessage(i.id, R.intl.string(R.t.l0gNlp))
@@ -482,27 +482,27 @@ let L = require("./743361.js").A,
         }, {
           name: R.intl.string(R.t.RKpitY),
           displayName: R.intl.string(R.t.RKpitY),
-          value: A.A.Seconds.HOUR
+          value: v.A.Seconds.HOUR
         }, {
           name: R.intl.string(R.t["8WfJZ8"]),
           displayName: R.intl.string(R.t["8WfJZ8"]),
-          value: 6 * A.A.Seconds.HOUR
+          value: 6 * v.A.Seconds.HOUR
         }, {
           name: R.intl.string(R.t.p1up7u),
           displayName: R.intl.string(R.t.p1up7u),
-          value: 12 * A.A.Seconds.HOUR
+          value: 12 * v.A.Seconds.HOUR
         }, {
           name: R.intl.string(R.t.XuVkkD),
           displayName: R.intl.string(R.t.XuVkkD),
-          value: A.A.Seconds.DAY
+          value: v.A.Seconds.DAY
         }, {
           name: R.intl.string(R.t["gMcDS+"]),
           displayName: R.intl.string(R.t["gMcDS+"]),
-          value: 3 * A.A.Seconds.DAY
+          value: 3 * v.A.Seconds.DAY
         }, {
           name: R.intl.string(R.t.FA7IUk),
           displayName: R.intl.string(R.t.FA7IUk),
-          value: 7 * A.A.Seconds.DAY
+          value: 7 * v.A.Seconds.DAY
         }]
       }
     }, {
@@ -521,7 +521,7 @@ let L = require("./743361.js").A,
       let {
         guild: t
       } = e;
-      return y.A.can(T.xBc.BAN_MEMBERS, t)
+      return b.A.can(T.xBc.BAN_MEMBERS, t)
     },
     execute: (e, t) => {
       var n;
@@ -531,14 +531,14 @@ let L = require("./743361.js").A,
       } = t;
       if (null == r || null == i) return;
       let a = null != (n = j(e, "user")) ? n : "";
-      y.A.canManageUser(T.xBc.BAN_MEMBERS, a, r) ? (async () => {
+      b.A.canManageUser(T.xBc.BAN_MEMBERS, a, r) ? (async () => {
         var t, n;
         if ("" === a) throw Error();
         let s = null != (t = j(e, "delete_messages")) ? t : 0,
           o = null != (n = j(e, "reason")) ? n : "",
           l = O.default.getUser(a);
         await u.A.banUser(r.id, a, s, o), d.A.sendBotMessage(i.id, R.intl.formatToPlainString(R.t.YflWdM, {
-          user: null != l ? v.Ay.getUserTag(l) : a
+          user: null != l ? A.Ay.getUserTag(l) : a
         }))
       })().catch(() => {
         d.A.sendBotMessage(i.id, R.intl.string(R.t.w2J6Qs))
@@ -601,7 +601,7 @@ let L = require("./743361.js").A,
       let {
         guild: t
       } = e;
-      return y.A.can(T.xBc.MODERATE_MEMBERS, t)
+      return b.A.can(T.xBc.MODERATE_MEMBERS, t)
     },
     execute: (e, t) => {
       let {
@@ -623,7 +623,7 @@ let L = require("./743361.js").A,
           duration: o,
           reason: l
         }), d.A.sendBotMessage(r.id, R.intl.formatToPlainString(R.t.BbRV6o, {
-          user: v.Ay.getUserTag(c),
+          user: A.Ay.getUserTag(c),
           duration: o
         }))
       })().catch(() => {
@@ -682,7 +682,7 @@ let L = require("./743361.js").A,
         await c.A.openPrivateChannel({
           recipientIds: a
         }).then(e => {
-          let t = b.A.getChannel(e);
+          let t = y.A.getChannel(e);
           i()(null != t, "Newly created PrivateChannel is null"), d.A.sendMessage(t.id, _.Ay.parse(t, s), true, {
             location: N.Hx.PRIVATE_MESSAGE_COMMAND
           })
@@ -695,5 +695,5 @@ let L = require("./743361.js").A,
   G = k.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.untranslatedName)),
   V = (e, t, n) => {
     let r = t ? k : G;
-    return r.filter(t => e.includes(t.type) && (!n || t.inputType === S.y$.BUILT_IN_TEXT || t.inputType === S.y$.BUILT_IN_INTEGRATION))
+    return r.filter(t => e.includes(t.type) && (!n || t.inputType === I.y$.BUILT_IN_TEXT || t.inputType === I.y$.BUILT_IN_INTEGRATION))
   }

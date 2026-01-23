@@ -33,7 +33,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function A(e) {
   }
   return e
 }
-let v = function() {
+let A = function() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
   return (t, n, i) => (0, r.jsx)(E.A, {
     step: i,
@@ -54,7 +54,7 @@ let v = function() {
   })
 };
 
-function S(e) {
+function I(e) {
   let {
     onClose: t,
     onComplete: n,
@@ -71,7 +71,7 @@ function S(e) {
     onComplete: n,
     applicationId: a,
     skuId: l,
-    renderHeader: v(u),
+    renderHeader: A(u),
     initialPlanId: null,
     analyticsObject: o,
     analyticsLocations: d,
@@ -79,11 +79,11 @@ function S(e) {
   })
 }
 
-function I() {
+function S() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  return [p.kJ, ...e ? [b.gj] : [], p.zK, ...p.hh, p.r2, {
+  return [p.kJ, ...e ? [y.gj] : [], p.zK, ...p.hh, p.r2, {
     key: u.pn.CONFIRM,
-    renderStep: e => (0, r.jsx)(g.M, A({}, e))
+    renderStep: e => (0, r.jsx)(g.M, v({}, e))
   }]
 }
 let T = e => {
@@ -116,11 +116,11 @@ function C(e) {
     value: f,
     children: (0, r.jsx)(c.PaymentContextProvider, {
       loadId: t,
-      stepConfigs: I(i),
+      stepConfigs: S(i),
       applicationId: n,
       skuIDs: [e.skuId],
       activeSubscription: null,
-      purchaseType: y.VV.ONE_TIME,
+      purchaseType: b.VV.ONE_TIME,
       isGift: i,
       children: (0, r.jsx)(d.Qt, {
         children: (0, r.jsx)(l.dX, {
@@ -128,7 +128,7 @@ function C(e) {
           giftRecipient: a,
           giftingOrigin: o,
           additionalUserIds: u,
-          children: (0, r.jsx)(S, A({}, e))
+          children: (0, r.jsx)(I, v({}, e))
         })
       })
     })

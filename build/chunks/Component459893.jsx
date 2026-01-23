@@ -2,7 +2,7 @@
 /** chunk id: 459893, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => x
+  A: () => A
 }), require("./896048.js"), require("./747238.js"), require("./492834.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,26 +20,26 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk746080 = require("./746080.js");
 
-function x(e) {
+function A(e) {
   var t, n;
-  let x = i.useCallback(t => {
+  let A = i.useCallback(t => {
       var n, r;
       let i; + ((null == (i = (0, l.B6)(t, {
-        path: m.BVt.CHANNEL(h.pv.guildId(), h.pv.channelId())
-      })) || null == (n = i.params) ? true : n.channelId) !== A.VV.ROLE_SUBSCRIPTIONS) ? (null != (r = e.transitionTo) ? r : f.pX)(t) : f.bG(t)
+        path: f.BVt.CHANNEL(h.pv.guildId(), h.pv.channelId())
+      })) || null == (n = i.params) ? true : n.channelId) !== _.VV.ROLE_SUBSCRIPTIONS) ? (null != (r = e.transitionTo) ? r : p.pX)(t) : p.bG(t)
     }, [e.transitionTo]),
     {
-      isAuthenticated: _,
+      isAuthenticated: x,
       loginStatus: E
-    } = (0, a.cf)([p.default], () => ({
-      isAuthenticated: p.default.isAuthenticated(),
-      loginStatus: p.default.getLoginStatus()
+    } = (0, a.cf)([g.default], () => ({
+      isAuthenticated: g.default.isAuthenticated(),
+      loginStatus: g.default.getLoginStatus()
     })),
     {
-      location: b,
-      redirectTo: v
+      location: v,
+      redirectTo: j
     } = e,
-    [j, y] = i.useState(_);
+    [y, b] = i.useState(x);
 
   function S(e) {
     let {
@@ -51,17 +51,17 @@ function x(e) {
       handoffKey: t,
       handoffToken: n,
       handoffSource: r
-    }), y(false)
+    }), b(false)
   }
   return ((0, u.Ay)(() => {
-    if (null != b) {
+    if (null != v) {
       let {
         handoff_key: e,
         handoff_token: t
-      } = (0, s.parse)(b.search);
+      } = (0, s.parse)(v.search);
       if (null != e && null != t) {
-        let n = null != v ? (0, d.Q)(v) : true;
-        j ? o.A.logout("handoff", null).finally(() => {
+        let n = null != j ? (0, d.Q)(j) : true;
+        y ? o.A.logout("handoff", null).finally(() => {
           S({
             handoffKey: e,
             handoffToken: t,
@@ -74,7 +74,7 @@ function x(e) {
         })
       }
     }
-  }), j || E === m.aUe.LOGGING_IN) ? (0, r.jsx)(g.Z, {}) : (0, r.jsx)(g.A, (t = function(e) {
+  }), y || E === f.aUe.LOGGING_IN) ? (0, r.jsx)(m.Z, {}) : (0, r.jsx)(m.A, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -92,7 +92,7 @@ function x(e) {
     }
     return e
   }({}, e), n = n = {
-    transitionTo: x
+    transitionTo: A
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

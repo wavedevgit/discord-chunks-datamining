@@ -1,7 +1,7 @@
 /** Chunk was on 46115 **/
 /** chunk id: 930840, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  c: () => p
+  c: () => d
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,38 +13,38 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk770778 = require("./770778.js");
 
-function p(e) {
+function d(e) {
   var t, r;
   let {
-    chunks: o,
-    className: p,
+    chunks: c,
+    className: d,
     onCopy: f
-  } = e, y = function(e, t) {
+  } = e, b = function(e, t) {
     if (null == e) return {};
-    var r, n, c, o = {};
+    var r, n, o, c = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (c = 0, r = Reflect.ownKeys(e); c < r.length; c++) n = r[c], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
-      return o
+      for (o = 0, r = Reflect.ownKeys(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (c[n] = e[n]);
+      return c
     }
-    if (o = function(e, t) {
+    if (c = function(e, t) {
         if (null == e) return {};
-        var r, n, c = {},
-          o = Object.getOwnPropertyNames(e);
-        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (c[r] = e[r]);
-        return c
+        var r, n, o = {},
+          c = Object.getOwnPropertyNames(e);
+        for (n = 0; n < c.length; n++) r = c[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
+        return o
       }(e, t), Object.getOwnPropertySymbols)
-      for (c = 0, r = Object.getOwnPropertySymbols(e); c < r.length; c++) n = r[c], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
-    return o
-  }(e, ["chunks", "className", "onCopy"]), O = c.useMemo(() => null == o ? true : o.join(" "), [o]), [d, j] = c.useState(false), m = c.useCallback(() => {
-    (0, i.C)(O, () => {
+      for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (c[n] = e[n]);
+    return c
+  }(e, ["chunks", "className", "onCopy"]), y = o.useMemo(() => null == c ? true : c.join(" "), [c]), [O, j] = o.useState(false), m = o.useCallback(() => {
+    (0, i.C)(y, () => {
       j(true), null == f || f()
     })
-  }, [f, O]), g = d ? s.yr3 : s.TdU;
-  return (0, n.jsx)(s.DUT, {
-    className: l()(b.k, p),
+  }, [f, y]), g = O ? a.yr3 : a.TdU;
+  return (0, n.jsx)(a.DUT, {
+    className: l()(p.k, d),
     onClick: m,
-    children: (0, n.jsx)(a.m, {
-      text: d ? u.intl.string(u.t.t5VZ88) : u.intl.string(u.t.OpuAlK),
+    children: (0, n.jsx)(s.m, {
+      text: O ? u.intl.string(u.t.t5VZ88) : u.intl.string(u.t.OpuAlK),
       children: (0, n.jsx)(g, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
@@ -62,9 +62,9 @@ function p(e) {
           })
         }
         return e
-      }({}, y), r = r = {
+      }({}, b), r = r = {
         size: "xxs",
-        color: d ? s.LU0.colors.TEXT_FEEDBACK_POSITIVE : s.LU0.colors.INTERACTIVE_TEXT_DEFAULT
+        color: O ? a.LU0.colors.TEXT_FEEDBACK_POSITIVE : a.LU0.colors.INTERACTIVE_TEXT_DEFAULT
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

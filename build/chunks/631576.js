@@ -3,16 +3,16 @@
 "use strict";
 require.d(exports, {
   $x: () => w,
-  AO: () => I,
+  AO: () => S,
   MO: () => R,
-  YB: () => S,
+  YB: () => I,
   oI: () => T,
   p9: () => N,
   sl: () => C,
   uK: () => x,
   vr: () => L,
   x5: () => P,
-  zk: () => v
+  zk: () => A
 }), require("./65821.js"), require("./228524.js"), require("./321073.js");
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438),
@@ -31,7 +31,7 @@ var Chunk735438 = require("./735438.js"),
   Chunk355097 = require("./355097.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,14 +40,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -64,12 +64,12 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = async (e, t) => {
+let A = async (e, t) => {
   let {
     body: n
   } = await (0, p.aP)({
@@ -82,7 +82,7 @@ let v = async (e, t) => {
     pack: n,
     ingestStickers: t
   }), n
-}, S = async function() {
+}, I = async function() {
   let {
     locale: e = c.default.locale
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
@@ -107,7 +107,7 @@ let v = async (e, t) => {
     type: "STICKER_PACKS_FETCH_SUCCESS",
     packs: t
   })
-}, I = async e => {
+}, S = async e => {
   let {
     body: t
   } = await a.Bo.get({
@@ -134,7 +134,7 @@ let v = async (e, t) => {
   s.h.dispatch({
     type: "GUILD_STICKERS_FETCH_SUCCESS",
     guildId: e,
-    stickers: n.map(e => null != e.user ? A(y({}, e), {
+    stickers: n.map(e => null != e.user ? v(b({}, e), {
       user_id: e.user.id,
       user: e.user
     }) : e)
@@ -174,7 +174,7 @@ let v = async (e, t) => {
   return s.h.dispatch({
     type: "GUILD_STICKERS_CREATE_SUCCESS",
     guildId: n,
-    sticker: A(y({}, r.body), {
+    sticker: v(b({}, r.body), {
       user_id: null == (t = f.default.getCurrentUser()) ? true : t.id
     })
   }), r.body

@@ -16,35 +16,35 @@ var Chunk627968 = require("./627968.js"),
   Chunk550111 = require("./550111.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk390734 = require("./390734.js");
-let b = e => {
+let h = e => {
     var t;
     let {
       currentUser: l,
       nameplate: i,
-      section: c,
+      section: o,
       canUsePremiumCollectibles: d,
-      isSelected: b,
+      isSelected: h,
       onClick: A
-    } = e, h = (0, r.useRef)(null), {
-      isHoveringOrFocusing: f
-    } = (0, u.A)(h);
+    } = e, _ = (0, r.useRef)(null), {
+      isHoveringOrFocusing: v
+    } = (0, u.A)(_);
     return (0, n.jsxs)(a.DUT, {
-      innerRef: h,
+      innerRef: _,
       "aria-label": null != (t = i.label) ? t : x.intl.string(x.t.x5CoXR),
       className: g.Hj,
       onClick: A,
-      children: [(0, n.jsx)(p.A, {
+      children: [(0, n.jsx)(m.A, {
         nameplate: i,
         user: l,
         showPlaceholderUser: true,
-        isHighlighted: f
+        isHighlighted: v
       }), (0, n.jsx)("div", {
         className: s()(g.t1, {
-          [g.wH]: b
+          [g.wH]: h
         })
-      }), (0, n.jsx)(o.A, {
-        isPurchaseSection: c === m.wn.PURCHASE,
-        isPremiumSection: c === m.wn.PREMIUM_PURCHASE,
+      }), (0, n.jsx)(c.A, {
+        isPurchaseSection: o === p.wn.PURCHASE,
+        isPremiumSection: o === p.wn.PREMIUM_PURCHASE,
         canUsePremiumCollectibles: d,
         skuId: i.skuId
       })]
@@ -56,16 +56,16 @@ let b = e => {
       selectedNameplate: l,
       guildId: r,
       onSelect: i,
-      onOpenShop: o
-    } = e, u = d.Ay.canUseCollectibles(t), p = (0, m.Ay)();
+      onOpenShop: c
+    } = e, u = d.Ay.canUseCollectibles(t), m = (0, p.Ay)();
     return (0, n.jsx)(a.d_W, {
       className: g.pf,
-      children: p.map(e => (0, n.jsxs)(a.BJc, {
+      children: m.map(e => (0, n.jsxs)(a.BJc, {
         gap: 4,
         children: [(0, n.jsx)(a.Text, {
           variant: "text-md/medium",
           children: e.header
-        }), e.section === m.wn.PURCHASE && (0, n.jsxs)("div", {
+        }), e.section === p.wn.PURCHASE && (0, n.jsxs)("div", {
           className: g.VQ,
           children: [(0, n.jsxs)(a.DUT, {
             className: s()(g.H5, {
@@ -81,7 +81,7 @@ let b = e => {
             })]
           }), (0, n.jsxs)(a.DUT, {
             className: g.H5,
-            onClick: o,
+            onClick: c,
             children: [(0, n.jsx)(a.U1X, {
               size: "md",
               color: "currentColor"
@@ -92,7 +92,7 @@ let b = e => {
           })]
         }), (0, n.jsx)("div", {
           className: g.p_,
-          children: e.items.filter(c.F).map(r => (0, n.jsx)(b, {
+          children: e.items.filter(o.F).map(r => (0, n.jsx)(h, {
             currentUser: t,
             nameplate: r,
             section: e.section,

@@ -4,12 +4,12 @@
 require.d(exports, {
   AS: () => _,
   Kh: () => E,
-  Ot: () => y,
+  Ot: () => b,
   PW: () => g,
   VW: () => p,
-  ZF: () => b,
+  ZF: () => y,
   cv: () => h,
-  e0: () => S,
+  e0: () => I,
   l5: () => m
 }), require("./134528.js"), require("./947204.js"), require("./264879.js"), require("./896048.js");
 var Chunk284009 = require("./284009.js"),
@@ -80,15 +80,15 @@ if (require("./654821.js"), !Chunk719442.KE._addedDiscordOverrides) {
       anchor: l,
       focus: p.end(t, [])
     } : p.range(t, l);
-    let [y, O] = b.edges(i), A = p.blocks(t), v = d ? false : 1, S = null != (n = y.path[0]) ? n : 0, I = null != (r = O.path[0]) ? r : A.length - 1, T = d ? I : S, C = d ? S : I, N = false;
+    let [b, O] = y.edges(i), v = p.blocks(t), A = d ? false : 1, I = null != (n = b.path[0]) ? n : 0, S = null != (r = O.path[0]) ? r : v.length - 1, T = d ? S : I, C = d ? I : S, N = false;
 
     function* R(n) {
-      let [r, i] = n, l = i.length, p = g.isAncestor(i, y.path), E = g.isAncestor(i, O.path), b = p ? y.path[l] : 0, A = E ? O.path[l] : r.children.length - 1, S = d ? A : b, I = d ? b : A;
-      for (let n = S; !N && (!d ? n <= I : n >= I); n += v) {
+      let [r, i] = n, l = i.length, p = g.isAncestor(i, b.path), E = g.isAncestor(i, O.path), y = p ? b.path[l] : 0, v = E ? O.path[l] : r.children.length - 1, I = d ? v : y, S = d ? y : v;
+      for (let n = I; !N && (!d ? n <= S : n >= S); n += A) {
         let l = r.children[n],
           p = g.child(i, n);
         if (h.isElement(l)) {
-          let e = d ? O.path : y.path;
+          let e = d ? O.path : b.path;
           if (!(g.equals(p, e) || g.isAncestor(p, e))) {
             let e = t.isVoid(l);
             if ("line" === c && h.isElement(l) && !e) {
@@ -109,16 +109,16 @@ if (require("./654821.js"), !Chunk719442.KE._addedDiscordOverrides) {
         };
         else {
           let n = a.KE.range(t, p);
-          for (let r of (g.equals(p, y.path) && (n.anchor = y), g.equals(p, O.path) && (n.focus = O), e(t, f(u({}, o), {
+          for (let r of (g.equals(p, b.path) && (n.anchor = b), g.equals(p, O.path) && (n.focus = O), e(t, f(u({}, o), {
               at: n
             })))) yield r
         }
       }
       "line" === c && h.isElement(r) && !t.isVoid(r) && (null != s && (yield s, s = true), N = true)
     }
-    "line" === c && (yield d ? O : y);
-    for (let e = T; !N && (!d ? e <= C : e >= C); e += v)
-      for (let t of R(A[e])) yield t
+    "line" === c && (yield d ? O : b);
+    for (let e = T; !N && (!d ? e <= C : e >= C); e += A)
+      for (let t of R(v[e])) yield t
   };
   let t = Chunk253018.rL.findDocumentOrShadowRoot;
   Chunk253018.rL.findDocumentOrShadowRoot = e => {
@@ -153,7 +153,7 @@ let p = f(u({}, Chunk719442.KE, Chunk253018.rL), {
       return null == e.selection ? null : this.getParentVoid(e, e.selection)
     },
     getCurrentText(e) {
-      let t = null != e.selection ? b.toPoint(e.selection) : null;
+      let t = null != e.selection ? y.toPoint(e.selection) : null;
       return null == t ? null : p.node(e, t.path)
     },
     getParentBlock(e, t) {
@@ -198,7 +198,7 @@ let p = f(u({}, Chunk719442.KE, Chunk253018.rL), {
     },
     getSelectedParentOfType(e, t) {
       if (null == e.selection) return null;
-      let n = b.toPoint(e.selection);
+      let n = y.toPoint(e.selection);
       return null == n ? null : p.getParentOfType(e, n, t)
     },
     getNodesOfType: (e, t) => p.nodes(e, {
@@ -209,8 +209,8 @@ let p = f(u({}, Chunk719442.KE, Chunk253018.rL), {
     getSelectedVoid(e) {
       let t;
       if (null == e.selection) return null;
-      if (b.isExpanded(e.selection)) {
-        let [n, r] = b.edges(e.selection), i = p.after(e, n, {
+      if (y.isExpanded(e.selection)) {
+        let [n, r] = y.edges(e.selection), i = p.after(e, n, {
           unit: "offset"
         }), a = p.before(e, r, {
           unit: "offset"
@@ -235,7 +235,7 @@ let p = f(u({}, Chunk719442.KE, Chunk253018.rL), {
       return null == n ? "" : this.getTextFromRange(e, n)
     },
     getTextFromRange(e, t) {
-      let [n, r] = b.edges(t), i = p.nodes(e, {
+      let [n, r] = y.edges(t), i = p.nodes(e, {
         at: t,
         mode: "lowest",
         match: e => m.isText(e)
@@ -288,8 +288,8 @@ let p = f(u({}, Chunk719442.KE, Chunk253018.rL), {
           }
         } else t = n
       }
-      let [n, r] = b.edges(t), i = null, a = null;
-      return E.equals(e.selection.anchor, n) ? i = "start" : E.equals(e.selection.anchor, r) ? i = "end" : b.includes(t, e.selection.anchor) && (i = "inside"), E.equals(e.selection.focus, n) ? a = "start" : E.equals(e.selection.focus, r) ? a = "end" : b.includes(t, e.selection.focus) && (a = "inside"), {
+      let [n, r] = y.edges(t), i = null, a = null;
+      return E.equals(e.selection.anchor, n) ? i = "start" : E.equals(e.selection.anchor, r) ? i = "end" : y.includes(t, e.selection.anchor) && (i = "inside"), E.equals(e.selection.focus, n) ? a = "start" : E.equals(e.selection.focus, r) ? a = "end" : y.includes(t, e.selection.focus) && (a = "inside"), {
         anchor: i,
         focus: a
       }
@@ -350,12 +350,12 @@ let p = f(u({}, Chunk719442.KE, Chunk253018.rL), {
       return E.equals(e, this.end(t))
     },
     clamp(e, t) {
-      let [n, r] = b.edges(t);
+      let [n, r] = y.edges(t);
       return E.isBefore(e, n) && (e = n), E.isAfter(e, r) && (e = r), e
     }
   }),
-  b = f(u({}, Chunk719442.Q6), {
-    toPoint: e => null == e || b.isExpanded(e) ? null : e.anchor,
+  y = f(u({}, Chunk719442.Q6), {
+    toPoint: e => null == e || y.isExpanded(e) ? null : e.anchor,
     children(e) {
       let [t, n] = e, r = t.children[t.children.length - 1];
       return {
@@ -370,8 +370,8 @@ let p = f(u({}, Chunk719442.KE, Chunk253018.rL), {
       }
     },
     clamp(e, t) {
-      let [n, r] = b.edges(e), [i, a] = b.edges(t);
-      return (E.isBefore(n, i) && (n = i), E.isAfter(r, a) && (r = a), b.isForward(e)) ? {
+      let [n, r] = y.edges(e), [i, a] = y.edges(t);
+      return (E.isBefore(n, i) && (n = i), E.isAfter(r, a) && (r = a), y.isForward(e)) ? {
         anchor: n,
         focus: r
       } : {
@@ -380,8 +380,8 @@ let p = f(u({}, Chunk719442.KE, Chunk253018.rL), {
       }
     }
   }),
-  y = {
-    equals: (e, t) => null == e && null == t || null != e && null != t && b.equals(e, t),
+  b = {
+    equals: (e, t) => null == e && null == t || null != e && null != t && y.equals(e, t),
     isValid(e, t) {
       if (null == t) returnfalse;
       let {
@@ -397,12 +397,12 @@ let p = f(u({}, Chunk719442.KE, Chunk253018.rL), {
     let n = (t.top + t.bottom) / 2;
     return e.top <= n && e.bottom >= n
   },
-  A = (e, t, n) => {
+  v = (e, t, n) => {
     let r = p.toDOMRange(e, t).getBoundingClientRect(),
       i = p.toDOMRange(e, n).getBoundingClientRect();
     return O(r, i) && O(i, r)
   },
-  v = (e, t, n, r) => {
+  A = (e, t, n, r) => {
     let i = {
         anchor: t,
         focus: t
@@ -411,18 +411,18 @@ let p = f(u({}, Chunk719442.KE, Chunk253018.rL), {
       s = n.length,
       o = Math.floor((a + s) / 2);
     for (; o !== a;)
-      if (A(e, {
+      if (v(e, {
           anchor: n[o],
           focus: n[o]
         }, i) ? r ? s = o : a = o : r ? a = o : s = o, o = Math.floor((a + s) / 2), !r && o === n.length - 2 && s === n.length - 1) {
         let t = n[n.length - 1];
-        A(e, {
+        v(e, {
           anchor: t,
           focus: t
         }, i) && (o = s)
       } return n[o]
   },
-  S = {
+  I = {
     getLineStart(e, t, n) {
       let r = p.getParentElement(e, t);
       if (null == r) return null;
@@ -433,11 +433,11 @@ let p = f(u({}, Chunk719442.KE, Chunk253018.rL), {
         a = Array.from(p.positions(e, {
           at: i
         })),
-        s = v(e, t, a, true);
+        s = A(e, t, a, true);
       if (n && E.equals(t, s) && !E.isAtEnd(t, r)) {
         let n = p.after(e, t);
         if (null == n) return s;
-        s = v(e, n, a, true)
+        s = A(e, n, a, true)
       }
       return s
     },
@@ -451,11 +451,11 @@ let p = f(u({}, Chunk719442.KE, Chunk253018.rL), {
         a = Array.from(p.positions(e, {
           at: i
         })),
-        s = v(e, t, a, false);
+        s = A(e, t, a, false);
       if (n && E.equals(t, s) && !E.isAtEnd(t, r)) {
         let n = p.after(e, t);
         if (null == n) return s;
-        s = v(e, n, a, false)
+        s = A(e, n, a, false)
       }
       return s
     }

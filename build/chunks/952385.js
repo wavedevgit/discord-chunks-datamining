@@ -24,17 +24,17 @@ function d(e) {
     animatedEmoji: [],
     totalAnimatedEmoji: 0
   };
-  let n = (0, o.sN)(t),
-    i = (0, s.bG)([c.A], () => c.A.getEmojis(t.id)),
+  let n = (0, c.sN)(t),
+    i = (0, s.bG)([o.A], () => o.A.getEmojis(t.id)),
     [d, u] = r.useMemo(() => {
       let e = null == i ? true : i.filter(e => !(0, a.Eg)(e, t.id)),
         [n, r] = l().partition(e, e => !e.animated);
       return [n, r]
     }, [i, t]),
-    f = Math.max(n - d.length, n - u.length);
+    g = Math.max(n - d.length, n - u.length);
   return {
     maxEmojiSlots: n,
-    availableEmojiSlots: f,
+    availableEmojiSlots: g,
     staticEmoji: d,
     totalStaticEmoji: d.length,
     animatedEmoji: u,

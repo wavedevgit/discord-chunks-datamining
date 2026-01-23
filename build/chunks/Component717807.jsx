@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 717807, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -17,18 +17,18 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk174872 = require("./174872.js");
-let m = e => {
+let A = e => {
   var t;
   let {
     targetElementRef: n
-  } = e, m = (0, i.bG)([c.default], () => c.default.getCurrentUser()), b = false === u.Ay.isPremiumExactly(m, f.PremiumTypes.TIER_2), _ = (null == m || null == (t = m.premiumState) ? true : t.premiumSource) === l.fE.FRACTIONAL_NITRO && (null == m ? true : m.premiumState.premiumSubscriptionType) !== l.jK.TIER_2, E = true === (null == m || b || _) ? A.intl.string(A.t.E1ONHQ) : A.intl.string(A.t.CMKNhr);
+  } = e, A = (0, i.bG)([c.default], () => c.default.getCurrentUser()), _ = false === u.Ay.isPremiumExactly(A, h.PremiumTypes.TIER_2), b = (null == A || null == (t = A.premiumState) ? true : t.premiumSource) === l.fE.FRACTIONAL_NITRO && (null == A ? true : A.premiumState.premiumSubscriptionType) !== l.jK.TIER_2, E = true === (null == A || _ || b) ? f.intl.string(f.t.E1ONHQ) : f.intl.string(f.t.CMKNhr);
   return (0, r.jsx)(a.AM, {
     targetElementRef: n,
-    title: A.intl.string(A.t["V8J+16"]),
+    title: f.intl.string(f.t["V8J+16"]),
     body: E,
     graphic: {
       type: "image",
-      src: g.A
+      src: m.A
     },
     badge: {
       type: "beta",
@@ -42,9 +42,9 @@ let m = e => {
       align: "start"
     },
     actions: [{
-      text: A.intl.string(A.t["CDdYB/"]),
+      text: f.intl.string(f.t["CDdYB/"]),
       onClick: () => {
-        (0, o.A)(h.BVt.NITRO_HOME), (0, d.uE)({
+        (0, o.A)(g.BVt.NITRO_HOME), (0, d.uE)({
           analyticsLocations: [s.A.HOME_PAGE_PREMIUM_TAB]
         }), (0, p.Es)()
       }

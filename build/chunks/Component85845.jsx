@@ -37,17 +37,17 @@ function C(e) {
       guildId: t,
       soundId: n
     } = e;
-    return p.A.getSound(t === S.XH ? S.mV : t, n)
+    return p.A.getSound(t === I.XH ? I.mV : t, n)
   })
 }
 
 function N() {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(d.x, {
-      setting: A.H.VOICE_AND_VIDEO_SOUNDBOARD,
-      children: [(0, r.jsx)(y.A, {}), (0, r.jsx)(O.A, {})]
+      setting: v.H.VOICE_AND_VIDEO_SOUNDBOARD,
+      children: [(0, r.jsx)(b.A, {}), (0, r.jsx)(O.A, {})]
     }), (0, r.jsx)(d.x, {
-      setting: A.H.VOICE_AND_VIDEO_ENTRANCE_SOUNDS,
+      setting: v.H.VOICE_AND_VIDEO_ENTRANCE_SOUNDS,
       children: (0, r.jsx)(R, {})
     })]
   })
@@ -56,12 +56,12 @@ function N() {
 function R() {
   let {
     analyticsLocations: e
-  } = (0, l.Ay)(), [t, n] = i.useState(S.XH), o = (0, h.mz)(t), d = C(o), E = (null == o ? true : o.type) === h.PP.GLOBAL, y = (0, a.bG)([p.A], () => p.A.hasFetchedAllSounds()) && null != o && null == d;
+  } = (0, l.Ay)(), [t, n] = i.useState(I.XH), o = (0, h.mz)(t), d = C(o), E = (null == o ? true : o.type) === h.PP.GLOBAL, b = (0, a.bG)([p.A], () => p.A.hasFetchedAllSounds()) && null != o && null == d;
   i.useEffect(() => {
-    y && (0, _.ND)({
+    b && (0, _.ND)({
       location: e
     })
-  }, [y, e]), i.useEffect(() => {
+  }, [b, e]), i.useEffect(() => {
     (0, f.E7)()
   }, []);
   let O = i.useCallback((e, t) => {
@@ -72,26 +72,26 @@ function R() {
       guildId: e.value
     }) : null
   }, []);
-  return (0, r.jsx)(b.A, {
+  return (0, r.jsx)(y.A, {
     children: (0, r.jsxs)(s.nVY, {
-      label: I.intl.string(I.t.nzUc3B),
-      description: I.intl.format(I.t.u9RWmv, {
-        helpdeskArticle: g.A.getArticleURL(v.MVz.SOUNDBOARD)
+      label: S.intl.string(S.t.nzUc3B),
+      description: S.intl.format(S.t.u9RWmv, {
+        helpdeskArticle: g.A.getArticleURL(A.MVz.SOUNDBOARD)
       }),
       children: [(0, r.jsx)(c.A, {
         guildId: t,
         className: T.Dt,
         globalOption: {
-          label: I.intl.string(I.t["CpEUP/"]),
-          value: S.XH
+          label: S.intl.string(S.t["CpEUP/"]),
+          value: I.XH
         },
         onChange: e => {
-          n(null == e ? S.XH : e.id)
+          n(null == e ? I.XH : e.id)
         },
         renderOptionSuffix: O,
         hideDivider: true
       }), (0, r.jsxs)(u.A, {
-        title: I.intl.format(I.t.I2TsYN, {
+        title: S.intl.format(S.t.I2TsYN, {
           nitroWheelHook: () => (0, r.jsx)(s.tvc, {
             size: "md",
             color: "currentColor",
@@ -104,10 +104,10 @@ function R() {
           onSelect: n => {
             null == n ? (0, _.Dv)(t, e) : (0, _.un)(t, n, e)
           }
-        }), y && (0, r.jsx)(s.po8, {
+        }), b && (0, r.jsx)(s.po8, {
           className: T.lm,
           messageType: s.YCn.WARNING,
-          children: I.intl.string(I.t.WkPsFR)
+          children: S.intl.string(S.t.WkPsFR)
         })]
       })]
     })

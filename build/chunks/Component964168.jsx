@@ -2,7 +2,7 @@
 /** chunk id: 964168, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  default: () => I,
+  default: () => S,
   m: () => C
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk627574 = require("./627574.js"),
   Chunk295171 = require("./295171.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,14 +31,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -55,30 +55,30 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = 2500,
-  S = 467;
+let A = 2500,
+  I = 467;
 
-function I(e) {
+function S(e) {
   let {
     questId: t,
     survey: n,
     transitionState: a,
     onClose: s,
     onSubmit: f
-  } = e, p = (0, _.C5)(t), [b, O] = i.useState(0), [I, C] = (0, l.zhh)(() => ({
+  } = e, p = (0, _.C5)(t), [y, O] = i.useState(0), [S, C] = (0, l.zhh)(() => ({
     from: {
       width: "0%"
     },
     config: {
-      duration: v
+      duration: A
     }
   })), R = e => {
-    f(), O(1), null != p && d.default.track(h.HAw.QUEST_SURVEY_SUBMITTED, A(y({}, N(p, n)), {
+    f(), O(1), null != p && d.default.track(h.HAw.QUEST_SURVEY_SUBMITTED, v(b({}, N(p, n)), {
       choice: e.text,
       choice_id: e.key
     }))
@@ -96,8 +96,8 @@ function I(e) {
     className: g.modalRoot,
     parentComponent: "QuestSurveyModal",
     children: (0, r.jsxs)(l.tN_, {
-      activeSlide: b,
-      width: S,
+      activeSlide: y,
+      width: I,
       onSlideReady: w,
       children: [(0, r.jsxs)(l.q7S, {
         id: 0,
@@ -157,7 +157,7 @@ function I(e) {
               onClick: s
             }), (0, r.jsx)(o.animated.div, {
               className: g.ce,
-              style: I
+              style: S
             })]
           })
         })]
@@ -188,7 +188,7 @@ function C(e) {
     let {
       default: i
     } = await Promise.resolve().then(n.bind(n, 964168));
-    return n => (0, r.jsx)(i, A(y({}, n, e), {
+    return n => (0, r.jsx)(i, v(b({}, n, e), {
       onSubmit: () => {
         t = true
       }
@@ -196,7 +196,7 @@ function C(e) {
   }, {
     onCloseCallback: () => {
       let n = p.A.getQuest(e.questId);
-      null != n && d.default.track(h.HAw.QUEST_SURVEY_DISMISSED, A(y({}, N(n, e.survey)), {
+      null != n && d.default.track(h.HAw.QUEST_SURVEY_DISMISSED, v(b({}, N(n, e.survey)), {
         submitted: t
       }))
     }

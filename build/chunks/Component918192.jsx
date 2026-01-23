@@ -1,8 +1,8 @@
 /** Chunk was on 86317 **/
 /** chunk id: 918192, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Bw: () => g,
-  ld: () => m
+  Bw: () => m,
+  ld: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,7 +17,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk366098 = require("./366098.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk545058 = require("./545058.js");
-let g = e => {
+let m = e => {
     let {
       channelId: t
     } = e;
@@ -75,11 +75,11 @@ let g = e => {
       }), (0, l.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-default",
-        children: f.intl.string(f.t["P/KFXz"])
+        children: g.intl.string(g.t["P/KFXz"])
       }), (0, l.jsx)(a.DUT, {
         className: j.R5,
         onClick: c,
-        children: f.intl.string(f.t.rUEjBe)
+        children: g.intl.string(g.t.rUEjBe)
       })]
     }) : r > 0 ? (0, l.jsxs)("div", {
       className: j.jC,
@@ -88,13 +88,13 @@ let g = e => {
       }), (0, l.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-default",
-        children: f.intl.format(f.t.Ri3o33, {
+        children: g.intl.format(g.t.Ri3o33, {
           number: r
         })
       }), (0, l.jsx)(a.DUT, {
         className: j.R5,
         onClick: c,
-        children: f.intl.string(f.t.rUEjBe)
+        children: g.intl.string(g.t.rUEjBe)
       })]
     }) : (0, l.jsxs)("div", {
       className: j.jC,
@@ -104,24 +104,24 @@ let g = e => {
       }), (0, l.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-default",
-        children: f.intl.format(f.t["6Tcdt7"], {
+        children: g.intl.format(g.t["6Tcdt7"], {
           number: n
         })
       }), (0, l.jsx)(a.DUT, {
         className: j.R5,
         onClick: c,
-        children: f.intl.string(f.t.rUEjBe)
+        children: g.intl.string(g.t.rUEjBe)
       })]
     })
   },
-  m = e => {
+  f = e => {
     let {
       user: t,
       showStatus: n,
       speaker: i,
       channelId: s
-    } = e, x = (0, r.bG)([d.Ay], () => d.Ay.isModerator(t.id, s)), g = (0, r.bG)([o.A], () => o.A.isBlocked(t.id)), h = null;
-    return n && (h = i ? f.intl.string(f.t.LqMmG2) : x ? f.intl.string(f.t.GMZqSi) : f.intl.string(f.t.suRApw)), (0, l.jsxs)("div", {
+    } = e, x = (0, r.bG)([d.Ay], () => d.Ay.isModerator(t.id, s)), m = (0, r.bG)([o.A], () => o.A.isBlocked(t.id)), h = null;
+    return n && (h = i ? g.intl.string(g.t.LqMmG2) : x ? g.intl.string(g.t.GMZqSi) : g.intl.string(g.t.suRApw)), (0, l.jsxs)("div", {
       className: j.kQ,
       children: [(0, l.jsx)(c.A, {
         src: t.getAvatarURL(null, 32),
@@ -151,8 +151,8 @@ let g = e => {
           className: j.Xh,
           children: [(0, l.jsx)(a.Text, {
             variant: "text-xs/normal",
-            color: g ? "text-feedback-critical" : "text-default",
-            children: g ? f.intl.string(f.t["4bDptI"]) : f.intl.string(f.t.tFY5Zb)
+            color: m ? "text-feedback-critical" : "text-default",
+            children: m ? g.intl.string(g.t["4bDptI"]) : g.intl.string(g.t.tFY5Zb)
           }), (0, l.jsxs)(a.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
@@ -172,7 +172,7 @@ let g = e => {
         let {
           user: n
         } = e;
-        return (0, l.jsx)(m, {
+        return (0, l.jsx)(f, {
           user: n,
           channelId: t
         }, n.id)

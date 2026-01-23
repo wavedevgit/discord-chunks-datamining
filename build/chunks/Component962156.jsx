@@ -34,10 +34,10 @@ function S(e) {
     channel: s,
     command: y,
     onClose: S,
-    requireLaunchChannel: w,
-    onShareResult: P,
-    previewMessage: C
-  } = e, N = function(e, t) {
+    requireLaunchChannel: _,
+    onShareResult: w,
+    previewMessage: P
+  } = e, C = function(e, t) {
     if (null == e) return {};
     var n, l, r, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -53,9 +53,9 @@ function S(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
     return i
-  }(e, ["applicationId", "channel", "command", "onClose", "requireLaunchChannel", "onShareResult", "previewMessage"]), T = r.useMemo(() => null == s ? null : (0, u._5)(s.id), [s]), [E, D] = r.useState(false), {
-    commands: _,
-    loading: L
+  }(e, ["applicationId", "channel", "command", "onClose", "requireLaunchChannel", "onShareResult", "previewMessage"]), N = r.useMemo(() => null == s ? null : (0, u._5)(s.id), [s]), [T, E] = r.useState(false), {
+    commands: L,
+    loading: D
   } = (t = r.useMemo(() => null == s ? {
     type: "contextless"
   } : {
@@ -67,25 +67,25 @@ function S(e) {
     applicationId: n,
     allowFetch: true,
     allowApplicationState: true
-  })), k = r.useRef(0), [M, I] = r.useState(w && null != T ? [T] : []), R = M.length, F = R >= 5, [z, G] = r.useState(""), {
+  })), k = r.useRef(0), [M, I] = r.useState(_ && null != N ? [N] : []), R = M.length, F = R >= 5, [z, G] = r.useState(""), {
     results: q,
     updateSearchText: H
   } = (0, c.R)({
     selectedDestinations: M,
-    originDestination: null != T ? T : true,
+    originDestination: null != N ? N : true,
     includeMissingDMs: true
   }), U = r.useCallback(e => {
     G(e), H(e)
-  }, [H]), B = r.useCallback(() => (P(false), S()), [P, S]), [J] = (0, o.A)([n]), Q = r.useCallback(() => {
+  }, [H]), B = r.useCallback(() => (w(false), S()), [w, S]), [J] = (0, o.A)([n]), Q = r.useCallback(() => {
     G("")
-  }, [G]), V = r.useRef(null);
+  }, [G]), W = r.useRef(null);
   r.useEffect(() => {
     if ("" === z) {
       var e;
-      null == (e = V.current) || e.focus()
+      null == (e = W.current) || e.focus()
     }
   }, [z]);
-  let W = r.useCallback(e => {
+  let V = r.useCallback(e => {
       I(t => {
         let n = t.findIndex(t => {
           let {
@@ -100,18 +100,18 @@ function S(e) {
       })
     }, [F, H]),
     [K, Z] = r.useMemo(() => {
-      if (L) return [null, false];
-      let e = _.find(e => e.untranslatedName === y.name);
+      if (D) return [null, false];
+      let e = L.find(e => e.untranslatedName === y.name);
       return true !== e ? [e, false] : [null, true]
-    }, [y, _, L]),
+    }, [y, L, D]),
     X = r.useCallback(async function(e) {
       let {
         closeAfterSend: t
       } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
       if (null === K) return;
-      D(true);
-      let n = (await Promise.all(e.map(u.pk))).filter(b.Vq);
-      t && (P(true), O()), n.forEach(async e => {
+      E(true);
+      let n = (await Promise.all(e.map(u.pk))).filter(f.Vq);
+      t && (w(true), O()), n.forEach(async e => {
         var t, n;
         let l = d.A.getChannel(e);
         if (null == l) return;
@@ -119,7 +119,7 @@ function S(e) {
             type: "text",
             text: t.value
           }], e), {})) ? t : {},
-          i = f.A.getGuild(null == l ? true : l.guild_id);
+          i = b.A.getGuild(null == l ? true : l.guild_id);
         null != await (0, m.A)({
           command: K,
           optionValues: r,
@@ -128,17 +128,17 @@ function S(e) {
             guild: i
           }
         }) && (0, a.showToast)((0, a.createToast)(x.intl.string(x.t["5WjJcl"]), a.ToastType.MESSAGE))
-      }), P(true), O()
-    }, [P, K, y.options]),
+      }), w(true), O()
+    }, [w, K, y.options]),
     Y = r.useCallback(() => {
       X(M, {
         closeAfterSend: true
       })
     }, [X, M]);
-  if (L) return (0, l.jsx)(i.Modal, {
+  if (D) return (0, l.jsx)(i.Modal, {
     title: x.intl.string(x.t.fuFvwx),
     "aria-label": x.intl.string(x.t.fuFvwx),
-    transitionState: N.transitionState,
+    transitionState: C.transitionState,
     onClose: S,
     actions: [],
     children: (0, l.jsx)(a.y$y, {
@@ -148,7 +148,7 @@ function S(e) {
   if (Z) return (0, l.jsx)(i.Modal, {
     title: x.intl.string(x.t.fuFvwx),
     "aria-label": x.intl.string(x.t.fuFvwx),
-    transitionState: N.transitionState,
+    transitionState: C.transitionState,
     onClose: S,
     actions: [{
       text: x.intl.string(x.t.cpT0Cq),
@@ -159,10 +159,10 @@ function S(e) {
   });
   let $ = q.length > 0 ? (0, l.jsx)(g.z, {
       rowData: q,
-      handleToggleDestination: W,
+      handleToggleDestination: V,
       selectedDestinations: M,
       disableSelection: F,
-      originDestination: T
+      originDestination: N
     }) : (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)("img", {
         className: v.BJ,
@@ -187,7 +187,7 @@ function S(e) {
     title: ee.toString(),
     subtitle: et,
     "aria-label": ee.toString(),
-    transitionState: N.transitionState,
+    transitionState: C.transitionState,
     onClose: B,
     size: "md",
     actions: [{
@@ -197,14 +197,14 @@ function S(e) {
     }, {
       text: x.intl.string(x.t.TXNS7S),
       onClick: Y,
-      disabled: 0 === R || E,
+      disabled: 0 === R || T,
       variant: "primary"
     }],
-    preview: true !== C ? (0, l.jsx)(h.h, {
-      previewMessage: C
+    preview: true !== P ? (0, l.jsx)(h.h, {
+      previewMessage: P
     }) : null,
     input: (0, l.jsx)(a.IWV, {
-      ref: V,
+      ref: W,
       query: z,
       onChange: U,
       onClear: Q,

@@ -59,15 +59,15 @@ if (require("./912877.js")() || require("./640847.js")()) {
     var Chunk232258 = require("./232258.js"),
       Chunk551306 = require("./551306.js"),
       O = Chunk616380("Map.prototype.forEach", true),
-      A = Chunk616380("Set.prototype.forEach", true);
-    if (true === Chunk72290 || !Chunk72290.versions || !Chunk72290.versions.node) var v = Chunk616380("Map.prototype.iterator", true),
-      S = Chunk616380("Set.prototype.iterator", true);
-    var I = Chunk616380("Map.prototype.@@iterator", true) || Chunk616380("Map.prototype._es6-shim iterator_", true),
+      v = Chunk616380("Set.prototype.forEach", true);
+    if (true === Chunk72290 || !Chunk72290.versions || !Chunk72290.versions.node) var A = Chunk616380("Map.prototype.iterator", true),
+      I = Chunk616380("Set.prototype.iterator", true);
+    var S = Chunk616380("Map.prototype.@@iterator", true) || Chunk616380("Map.prototype._es6-shim iterator_", true),
       T = Chunk616380("Set.prototype.@@iterator", true) || Chunk616380("Set.prototype._es6-shim iterator_", true),
       C = function(e) {
-        if (b(e)) {
-          if (v) return a(v(e));
-          if (I) return I(e);
+        if (y(e)) {
+          if (A) return a(A(e));
+          if (S) return S(e);
           if (O) {
             var t = [];
             return O(e, function(e, n) {
@@ -75,12 +75,12 @@ if (require("./912877.js")() || require("./640847.js")()) {
             }), g(t)
           }
         }
-        if (y(e)) {
-          if (S) return a(S(e));
+        if (b(e)) {
+          if (I) return a(I(e));
           if (T) return T(e);
-          if (A) {
+          if (v) {
             var n = [];
-            return A(e, function(e) {
+            return v(e, function(e) {
               p(n, e)
             }), g(n)
           }

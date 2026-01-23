@@ -27,7 +27,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk405434 = require("./405434.js");
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function T(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -70,11 +70,11 @@ let R = 150;
 function w(e, t) {
   switch (e) {
     case O.lp.ACTIVITY:
-      return v.intl.formatToPlainString(v.t.TCM94S, {
+      return A.intl.formatToPlainString(A.t.TCM94S, {
         numUsers: t
       });
     case O.lp.STREAM:
-      return v.intl.formatToPlainString(v.t.BR7Tno, {
+      return A.intl.formatToPlainString(A.t.BR7Tno, {
         numViewers: t
       });
     default:
@@ -93,23 +93,23 @@ function P(e) {
   } = e, c = w(a, t.length);
   return (0, r.jsx)(f.lGe, {
     "aria-label": c,
-    className: S.XM,
+    className: I.XM,
     children: (0, r.jsxs)(f.HOs, {
-      className: S.XG,
+      className: I.XG,
       children: [(0, r.jsx)(f.Heading, {
         variant: "heading-deprecated-12/semibold",
-        className: S.o,
+        className: I.o,
         children: c
       }), (0, r.jsx)("div", {
         children: t.map(e => (0, r.jsx)(m.A, {
           user: e,
           guildId: null != i ? i : true,
           channelId: o,
-          nick: y.Ay.getNickname(i, o, e),
-          className: s()(S.kp, {
-            [S.YR]: n
+          nick: b.Ay.getNickname(i, o, e),
+          className: s()(I.kp, {
+            [I.YR]: n
           }),
-          textClassName: S.vc,
+          textClassName: I.vc,
           disablePopout: n,
           onContextMenu: t => n ? null : l(t, e)
         }, e.id))
@@ -126,21 +126,21 @@ function D(e) {
     maxVisibleUsers: a = 3,
     className: o,
     participantType: l
-  } = e, c = w(l, t.length), u = t.length < a ? v.intl.format(v.t["A+bT9O"], {
+  } = e, c = w(l, t.length), u = t.length < a ? A.intl.format(A.t["A+bT9O"], {
     users: t.length,
-    user1: y.Ay.getName(n, i, t[0]),
-    user2: y.Ay.getName(n, i, t[1]),
-    commaSeparatedUsers: t.slice(0, t.length - 1).map(e => y.Ay.getName(n, i, e)).join(", "),
-    lastUser: y.Ay.getName(n, i, t[t.length - 1])
+    user1: b.Ay.getName(n, i, t[0]),
+    user2: b.Ay.getName(n, i, t[1]),
+    commaSeparatedUsers: t.slice(0, t.length - 1).map(e => b.Ay.getName(n, i, e)).join(", "),
+    lastUser: b.Ay.getName(n, i, t[t.length - 1])
   }) : c;
   return (0, r.jsx)(d.m_, {
     text: u,
     children: (0, r.jsxs)("div", {
-      className: s()(S.Mj, o),
+      className: s()(I.Mj, o),
       children: [(0, r.jsx)(f.bMW, {
         size: "xs",
         color: "currentColor",
-        className: S.N0
+        className: I.N0
       }), (0, r.jsx)("span", {
         "aria-hidden": "true",
         children: t.length
@@ -157,14 +157,14 @@ function L(e) {
     participant: o,
     className: d,
     compact: m = false,
-    disableInteraction: y = false,
-    maxVisibleUsers: v = 3
-  } = e, I = i.useRef(null), C = (0, h.A)(), [w, L] = i.useState(false), j = i.useRef(new u.J_(R, () => L(false))), M = (0, c.yK)([g.A, E.default], () => {
+    disableInteraction: b = false,
+    maxVisibleUsers: A = 3
+  } = e, S = i.useRef(null), C = (0, h.A)(), [w, L] = i.useState(false), j = i.useRef(new u.J_(R, () => L(false))), M = (0, c.yK)([g.A, E.default], () => {
     if (o.type === O.lp.STREAM) {
       let e = g.A.getViewerIds(o.id);
-      return e.length > 0 ? e.map(e => E.default.getUser(e)).filter(b.Vq) : x
+      return e.length > 0 ? e.map(e => E.default.getUser(e)).filter(y.Vq) : x
     }
-    return o.type === O.lp.ACTIVITY && o.participants.length > 0 ? Array.from(o.participants).map(e => E.default.getUser(e.userId)).filter(b.Vq) : x
+    return o.type === O.lp.ACTIVITY && o.participants.length > 0 ? Array.from(o.participants).map(e => E.default.getUser(e.userId)).filter(y.Vq) : x
   }, [o]);
   i.useEffect(() => {
     C && (j.current.cancel(), L(false))
@@ -189,42 +189,42 @@ function L(e) {
     }, [U, k]);
   if (0 === M.length) return null;
   if (m) return (0, r.jsx)(D, {
-    maxVisibleUsers: v,
+    maxVisibleUsers: A,
     users: M,
     guildId: a,
     channelId: t,
     className: d,
     participantType: o.type
   });
-  let V = l()(M).take(v).map(e => (0, r.jsx)(f.euF, {
+  let V = l()(M).take(A).map(e => (0, r.jsx)(f.euF, {
     src: e.getAvatarURL(a, 24),
     "aria-label": e.username,
     size: f._3J.SIZE_24,
-    className: S.lJ
+    className: I.lJ
   }, e.id)).value();
-  return M.length > v && (V[V.length - 1] = (0, r.jsxs)("div", {
-    className: S.ju,
-    children: ["+", M.length - v + 1]
+  return M.length > A && (V[V.length - 1] = (0, r.jsxs)("div", {
+    className: I.ju,
+    children: ["+", M.length - A + 1]
   }, "overflow")), (0, r.jsx)(_.A, {
-    section: A.JJy.STREAM_VIEWER_POPOUT,
+    section: v.JJy.STREAM_VIEWER_POPOUT,
     children: (0, r.jsx)("div", {
       onMouseEnter: k,
       onMouseLeave: U,
       children: (0, r.jsx)(f.YNO, {
-        targetElementRef: I,
+        targetElementRef: S,
         renderPopout: () => (0, r.jsx)(P, {
           participantType: o.type,
           handleUserContextMenu: G,
           guildId: a,
           channelId: t,
           users: M,
-          disableInteraction: y
+          disableInteraction: b
         }),
         shouldShow: w && !C,
         position: "top",
         children: () => (0, r.jsx)("div", {
-          ref: I,
-          className: s()(S.Mj, d),
+          ref: S,
+          className: s()(I.Mj, d),
           children: V
         })
       })

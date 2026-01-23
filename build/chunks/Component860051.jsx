@@ -1,7 +1,7 @@
 /** Chunk was on 13492 **/
-/** chunk id: 860051, original params: e,t,a (module,exports,require) **/
+/** chunk id: 860051, original params: e,n,t (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => s
+  default: () => u
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -13,17 +13,17 @@ var Chunk627968 = require("./627968.js"),
   Chunk33445 = require("./33445.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function s(e) {
-  var t, a;
+function u(e) {
+  var n, t;
   let {
-    windowKey: s
-  } = e, u = (0, i.A)(), p = (0, n.bG)([d.A], () => d.A.getConnectedFrame()), {
-    data: _
-  } = (0, l.YY)(null == p ? true : p.applicationId), m = null != (t = null != (a = null == u ? true : u.name) ? a : null == _ ? true : _.name) ? t : b.intl.string(b.t.IC5Ann);
-  return (0, c.jsx)(o.A, {
+    windowKey: u
+  } = e, p = (0, _.A)(), b = (0, o.bG)([i.A], () => i.A.getConnectedFrame()), {
+    data: f
+  } = (0, a.YY)(null == b ? true : b.applicationId), m = null != (n = null != (t = null == p ? true : p.name) ? t : null == f ? true : f.name) ? n : d.intl.string(d.t.IC5Ann);
+  return (0, r.jsx)(c.A, {
     withTitleBar: true,
-    windowKey: s,
+    windowKey: u,
     title: m,
-    children: null != u ? (0, c.jsx)(f.A, {}) : (0, c.jsx)(r.A, {})
+    children: null != p ? (0, r.jsx)(s.A, {}) : (0, r.jsx)(l.A, {})
   })
 }

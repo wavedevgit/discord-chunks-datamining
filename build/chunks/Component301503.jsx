@@ -26,7 +26,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk734539 = require("./734539.js");
 
 function v() {
-  let e = i.useRef((0, f.YP)()),
+  let e = i.useRef((0, h.YP)()),
     {
       onScroll: t,
       scrollPosition: n,
@@ -36,8 +36,8 @@ function v() {
       tabs: S,
       selectedTab: C,
       setSelectedTab: N
-    } = (0, m.f)(),
-    T = (0, f.Ub)(C),
+    } = (0, A.f)(),
+    T = (0, h.Ub)(C),
     j = !E.R0.has(C),
     {
       searchQuery: x,
@@ -45,10 +45,10 @@ function v() {
       onClearSearch: w,
       onSearchSubmit: L,
       isSearchVisible: R
-    } = (0, g.X)({
+    } = (0, m.X)({
       loadId: e.current
     }),
-    D = h.A.useField("searchBarState"),
+    D = g.A.useField("searchBarState"),
     {
       onTabsAvailableWidthChange: M,
       onCollapsedSearchBarClick: k,
@@ -58,7 +58,7 @@ function v() {
       isSearchBarVisible: j,
       isSearchBarEmpty: "" === x.trim(),
       searchBarState: D,
-      setSearchBarState: e => h.A.setState({
+      setSearchBarState: e => g.A.setState({
         searchBarState: e
       })
     }),
@@ -76,7 +76,7 @@ function v() {
     {
       onGuildCardSeen: Y,
       onGuildCardClick: K
-    } = (0, A.p)({
+    } = (0, f.p)({
       guildDiscoveryCardSeenManager: F.current,
       loadId: e.current
     });
@@ -122,11 +122,11 @@ function v() {
         state: R ? O.GlobalDiscoverySearchBarState.DEFAULT : D,
         onBlur: U
       })]
-    }), R ? (0, r.jsx)(_.A, {
+    }), R ? (0, r.jsx)(b.A, {
       loadId: e.current,
       onGuildCardClick: K,
       onGuildCardSeen: Y
-    }) : (0, r.jsx)(b.A, {
+    }) : (0, r.jsx)(_.A, {
       selectedTab: C,
       onScroll: t,
       onGuildCardClick: K,

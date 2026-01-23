@@ -2,7 +2,7 @@
 /** chunk id: 164599, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,18 +22,18 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk97671 = require("./97671.js");
 
-function y(e) {
+function b(e) {
   let {
     user: t,
     guild: n,
     initialSelectedEffect: a,
-    className: y,
+    className: b,
     sectionTitle: O,
-    forcedDivider: A = false,
-    withTutorial: v = false,
-    showBorder: S = false
+    forcedDivider: v = false,
+    withTutorial: A = false,
+    showBorder: I = false
   } = e, {
-    analyticsLocations: I
+    analyticsLocations: S
   } = (0, c.Ay)(), T = f.Ay.canUsePremiumProfileCustomization(t), C = (0, p.N2)({
     user: t,
     guildId: null == n ? true : n.id
@@ -42,7 +42,7 @@ function y(e) {
     errors: R
   } = (0, p.nZ)(null == n ? true : n.id), w = true === N ? null != C : null != N, P = () => {
     (0, u.W)({
-      analyticsLocations: I,
+      analyticsLocations: S,
       guild: n,
       initialSelectedEffect: a
     })
@@ -52,30 +52,30 @@ function y(e) {
   i.useEffect(() => {
     T && d.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
       type: g.e.PROFILE_EFFECTS_INLINE_SETTINGS,
-      location_stack: I
+      location_stack: S
     })
-  }, [T, I]);
-  let x = v ? l.wLn : o.$n;
+  }, [T, S]);
+  let x = A ? l.wLn : o.$n;
   return (0, r.jsx)(_.A, {
-    forcedDivider: A,
+    forcedDivider: v,
     borderType: h.i.PREMIUM,
     hasBackground: true,
     title: O,
-    showBorder: S,
+    showBorder: I,
     errors: R,
-    className: y,
+    className: b,
     children: (0, r.jsxs)("div", {
-      className: b.NC,
+      className: y.NC,
       children: [(0, r.jsx)(x, {
         size: o.$n.Sizes.SMALL,
         onClick: P,
         className: s()({
-          [b.yj]: v
+          [y.yj]: A
         }),
         children: E.intl.string(E.t["/dRfCf"])
       }), w && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: b.DT,
+        className: y.DT,
         children: (0, r.jsx)(l.Button, {
           variant: "secondary",
           size: "sm",

@@ -17,7 +17,7 @@ function c(e) {
     onDismiss: c,
     buttons: u,
     dismissible: d = true
-  } = e, f = l.useCallback(() => {
+  } = e, p = l.useCallback(() => {
     null == c || c()
   }, [c]);
   return (0, r.jsxs)("div", {
@@ -28,11 +28,11 @@ function c(e) {
         alt: "",
         size: 32
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(a.Heading, {
+        children: [(0, r.jsx)(s.Heading, {
           variant: "heading-md/semibold",
           color: "text-strong",
           children: t
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-strong",
           children: n
@@ -42,19 +42,19 @@ function c(e) {
       className: o.Uo,
       children: null == u ? true : u.map((e, t) => {
         var n;
-        return (0, r.jsx)(a.Button, {
+        return (0, r.jsx)(s.Button, {
           text: e.text,
           variant: null != (n = e.variant) ? n : "secondary",
           onClick: e.onClick,
           size: "sm"
         }, t)
       })
-    }), d ? (0, r.jsx)(a.DUT, {
+    }), d ? (0, r.jsx)(s.DUT, {
       className: o.b,
-      onClick: f,
+      onClick: p,
       role: "button",
-      "aria-label": s.intl.string(s.t.WAI6xu),
-      children: (0, r.jsx)(a.PGe, {
+      "aria-label": a.intl.string(a.t.WAI6xu),
+      children: (0, r.jsx)(s.PGe, {
         size: "md",
         color: "currentColor",
         className: o.b

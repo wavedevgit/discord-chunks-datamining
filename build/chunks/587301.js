@@ -2,6 +2,6 @@
 /** chunk id: 587301, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  W: "_6fa8b68ceb6e7adc",
-  o: "_10f02b077d596db6"
+  W: "externalProductWrapper__320c6",
+  o: "orbProfileBadgeAsset__320c6"
 }

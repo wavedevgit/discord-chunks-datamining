@@ -10,29 +10,29 @@ var Chunk64700 = require("./64700.js"),
 
 function d(e, l, t, n) {
   let {
-    scrollTop: a = 0,
+    scrollTop: s = 0,
     scrollOffset: i = 0,
     scrollHeight: d = 0,
     scrollWidth: r = 0
   } = n;
   if (d > 0) {
-    let n = (a + i) / d;
+    let n = (s + i) / d;
     if (n > 0) {
       let {
-        sessionId: a,
+        sessionId: s,
         guildId: i,
         pageIndex: o,
         pageTitle: c,
         isUserGuildMember: u,
-        pageHasLeaderboard: f
+        pageHasLeaderboard: g
       } = l;
-      s.default.track(e, {
-        slayer_storefront_session_id: a,
+      a.default.track(e, {
+        slayer_storefront_session_id: s,
         guild_id: i,
         page_index: o,
         page_title: c,
         is_user_guild_member: u,
-        page_has_leaderboard: f,
+        page_has_leaderboard: g,
         scroll_visible_percent: n,
         page_height: Math.round(d),
         page_width: Math.round(r),
@@ -42,18 +42,18 @@ function d(e, l, t, n) {
   }
 }
 let r = (e, l, t) => {
-  let s = n.useRef(l);
+  let a = n.useRef(l);
   n.useEffect(() => {
-    s.current = l
+    a.current = l
   }, [l]);
-  let r = (0, a.I)(d, 5e3, [], {
+  let r = (0, s.I)(d, 5e3, [], {
     trailing: true
   });
   return {
     handleScroll: n.useCallback(() => {
       if (null != e.current) {
         let l = e.current.getScrollerNode(),
-          n = s.current;
+          n = a.current;
         null != l && r(i.HAw.SLAYER_STOREFRONT_PAGE_SCROLLED, n, t, {
           scrollTop: l.scrollTop,
           scrollOffset: l.offsetHeight,

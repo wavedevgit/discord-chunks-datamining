@@ -15,12 +15,12 @@ function o(e) {
       streamActive: c,
       isSelfStream: u,
       centerButton: d,
-      onMouseEnter: f,
-      onMouseLeave: p,
-      renderNUXHighlight: h,
-      buttonRef: b
+      onMouseEnter: p,
+      onMouseLeave: h,
+      renderNUXHighlight: f,
+      buttonRef: g
     } = e,
-    g = function(e, t) {
+    m = function(e, t) {
       if (null == e) return {};
       var n, r, l, i = {};
       if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -37,14 +37,14 @@ function o(e) {
         for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
       return i
     }(e, ["hasPermission", "streamActive", "isSelfStream", "centerButton", "onMouseEnter", "onMouseLeave", "renderNUXHighlight", "buttonRef"]),
-    m = d ? a.l : a.A;
-  n = c ? u ? s.intl.string(s.t.S5anIc) : s.intl.string(s.t.q3O3J8) : o ? s.intl.string(s.t.fjBNo1) : s.intl.string(s.t.uQn9B8);
+    b = d ? s.l : s.A;
+  n = c ? u ? a.intl.string(a.t.S5anIc) : a.intl.string(a.t.q3O3J8) : o ? a.intl.string(a.t.fjBNo1) : a.intl.string(a.t.uQn9B8);
   let {
     Component: A,
     events: y,
-    play: O
+    play: _
   } = (0, i.c)(c ? "disable" : "enable");
-  return l.useEffect(() => () => O(), [c, O]), (0, r.jsx)(m, function(e) {
+  return l.useEffect(() => () => _(), [c, _]), (0, r.jsx)(b, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -62,18 +62,18 @@ function o(e) {
     }
     return e
   }({
-    buttonRef: b,
+    buttonRef: g,
     isTrayButton: true,
     label: n,
     disabled: !o,
     iconComponent: A,
     isActive: c,
-    color: (h ? t = "premiumGradient" : c && (t = "green"), t),
+    color: (f ? t = "premiumGradient" : c && (t = "green"), t),
     onMouseEnter: e => {
-      null == f || f(e), y.onMouseEnter()
+      null == p || p(e), y.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == p || p(e), y.onMouseLeave()
+      null == h || h(e), y.onMouseLeave()
     }
-  }, g))
+  }, m))
 }

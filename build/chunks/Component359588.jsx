@@ -45,27 +45,27 @@ function E(e) {
     start: t = 0,
     end: n,
     alignment: a = "left"
-  } = e, _ = (0, i.useRef)(Date.now()), E = (0, i.useRef)(0), b = (0, i.useContext)(d.P), y = (0, l.rdh)(b.primaryColor).hex(), O = (0, f.A)(y), A = (0, u.j5)(O), [v, S] = (0, i.useState)(t), I = (0, o.bG)([c.A], () => c.A.useReducedMotion);
+  } = e, _ = (0, i.useRef)(Date.now()), E = (0, i.useRef)(0), y = (0, i.useContext)(d.P), b = (0, l.rdh)(y.primaryColor).hex(), O = (0, f.A)(b), v = (0, u.j5)(O), [A, I] = (0, i.useState)(t), S = (0, o.bG)([c.A], () => c.A.useReducedMotion);
   (0, i.useEffect)(() => {
     let e = s().throttle(() => {
       let r = Math.min((Date.now() - _.current) / m, 1);
-      S(Math.round((n - t) * r + t)), r < 1 && (E.current = requestAnimationFrame(e))
+      I(Math.round((n - t) * r + t)), r < 1 && (E.current = requestAnimationFrame(e))
     }, g);
     return E.current = requestAnimationFrame(e), () => {
       cancelAnimationFrame(E.current), e.cancel()
     }
-  }, [t, n, S]);
+  }, [t, n, I]);
   let T = {
     className: p.l,
     dataBinding: {
-      DisplayValue: v,
+      DisplayValue: A,
       TextColor: {
-        r: A.r,
-        g: A.g,
-        b: A.b,
-        a: 255 * A.a
+        r: v.r,
+        g: v.g,
+        b: v.b,
+        a: 255 * v.a
       },
-      reducedMotion: I
+      reducedMotion: S
     },
     fit: "layout",
     withReducedMotion: "play"

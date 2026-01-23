@@ -3,7 +3,7 @@
 "use strict";
 let r, i, a;
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./896048.js");
 var s, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -45,7 +45,7 @@ function E(e) {
   i.add(r)
 }
 
-function b(e) {
+function y(e) {
   let {
     applicationId: t,
     branchId: n
@@ -56,7 +56,7 @@ function b(e) {
   }, true
 }
 
-function y(e) {
+function b(e) {
   let {
     state: t
   } = e;
@@ -77,7 +77,7 @@ function O(e) {
   }, i.delete(o)
 }
 
-function A(e) {
+function v(e) {
   let {
     applicationId: t,
     branchId: n
@@ -86,7 +86,7 @@ function A(e) {
     type: h.VX0.ERROR
   }, i.delete(a)
 }
-class v extends(s = Chunk311907.Ay.Store) {
+class A extends(s = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(d.A, u.Ay), p.isPlatformEmbedded && _.T(), r = {}, i = new Set, a = []
   }
@@ -98,12 +98,12 @@ class v extends(s = Chunk311907.Ay.Store) {
     return i.has(n)
   }
 }
-m(v, "displayName", "CloudSyncStore");
-let S = new v(Chunk73153.h, {
+m(A, "displayName", "CloudSyncStore");
+let I = new A(Chunk73153.h, {
   GAME_CLOUD_SYNC_START: E,
-  GAME_CLOUD_SYNC_UPDATE: y,
-  GAME_CLOUD_SYNC_COMPLETE: b,
+  GAME_CLOUD_SYNC_UPDATE: b,
+  GAME_CLOUD_SYNC_COMPLETE: y,
   GAME_CLOUD_SYNC_CONFLICT: O,
-  GAME_CLOUD_SYNC_ERROR: A,
+  GAME_CLOUD_SYNC_ERROR: v,
   RUNNING_GAMES_CHANGE: g
 })

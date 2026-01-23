@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 153244, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk509826 = require("./509826.js");
 
-function A() {
+function f() {
   return (0, r.jsxs)(l.dO, {
     children: [(0, r.jsx)(s.A, {
       path: p.BVt.APPLICATION_LIBRARY_SETTINGS,
@@ -25,7 +25,7 @@ function A() {
         page: p.liQ.LIBRARY_SETTINGS,
         root: true,
         children: [(0, r.jsx)(o.HI, {
-          subsection: f.intl.string(f.t["3D5yo/"])
+          subsection: h.intl.string(h.t["3D5yo/"])
         }), (0, r.jsx)(d.A, {})]
       })
     }), (0, r.jsx)(s.A, {
@@ -34,19 +34,19 @@ function A() {
         page: p.liQ.LIBRARY,
         root: true,
         children: [(0, r.jsx)(o.HI, {
-          subsection: f.intl.string(f.t.p7ARTB)
+          subsection: h.intl.string(h.t.p7ARTB)
         }), (0, r.jsx)(u.A, {})]
       })
     })]
   })
 }
-let g = Chunk64700.memo(function() {
+let m = Chunk64700.memo(function() {
   return i.useEffect(() => {
     (0, c.d)("application_library")
   }, []), (0, r.jsxs)("div", {
-    className: h.k,
+    className: g.k,
     children: [(0, r.jsx)(o.HI, {
-      location: f.intl.string(f.t.cw57ar)
-    }), (0, r.jsx)(A, {})]
+      location: h.intl.string(h.t.cw57ar)
+    }), (0, r.jsx)(f, {})]
   })
 })

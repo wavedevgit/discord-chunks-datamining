@@ -1,7 +1,7 @@
 /** Chunk was on 81890 **/
-/** chunk id: 218318, original params: e,t,a (module,exports,require) **/
+/** chunk id: 218318, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => U
+  default: () => k
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -34,18 +34,18 @@ var Chunk627968 = require("./627968.js"),
 
 function G(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var a = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(a);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(a, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = a[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      a = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), a.forEach(function(t) {
+      var a;
+      a = n[t], t in e ? Object.defineProperty(e, t, {
+        value: a,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = a
     })
   }
   return e
@@ -53,236 +53,236 @@ function G(e) {
 
 function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var a = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      a.push.apply(a, n)
+      var a = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, a)
     }
-    return a
-  })(Object(t)).forEach(function(a) {
-    Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(t, a))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function U(e) {
-  let t = (0, f.GV)(),
+function k(e) {
+  let t = (0, u.GV)(),
     {
-      onSlideChange: a
+      onSlideChange: n
     } = e,
-    i = function(e, t) {
+    l = function(e, t) {
       if (null == e) return {};
-      var a, n, l, i = {};
+      var n, a, i, l = {};
       if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (l = 0, a = Reflect.ownKeys(e); l < a.length; l++) n = a[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-        return i
+        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) a = n[i], !(t.indexOf(a) >= 0) && Object.prototype.propertyIsEnumerable.call(e, a) && (l[a] = e[a]);
+        return l
       }
-      if (i = function(e, t) {
+      if (l = function(e, t) {
           if (null == e) return {};
-          var a, n, l = {},
-            i = Object.getOwnPropertyNames(e);
-          for (n = 0; n < i.length; n++) a = i[n], !(t.indexOf(a) >= 0) && Object.prototype.propertyIsEnumerable.call(e, a) && (l[a] = e[a]);
-          return l
+          var n, a, i = {},
+            l = Object.getOwnPropertyNames(e);
+          for (a = 0; a < l.length; a++) n = l[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+          return i
         }(e, t), Object.getOwnPropertySymbols)
-        for (l = 0, a = Object.getOwnPropertySymbols(e); l < a.length; l++) n = a[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-      return i
+        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) a = n[i], !(t.indexOf(a) >= 0) && Object.prototype.propertyIsEnumerable.call(e, a) && (l[a] = e[a]);
+      return l
     }(e, ["onSlideChange"]),
     {
-      onClose: U
-    } = i,
-    [L, k] = l.useState(false),
-    w = (0, c.bG)([E.default], () => E.default.getCurrentUser()),
+      onClose: k
+    } = l,
+    [L, U] = i.useState(false),
+    w = (0, o.bG)([E.default], () => E.default.getCurrentUser()),
     R = null != w && null == w.nsfwAllowed,
-    [M, P] = l.useState(R ? O.i.AGE_GATE : O.i.CHOOSE_TEMPLATE),
-    [W, H] = l.useState(null);
-  l.useEffect(() => {
-    a(L ? O.i.COMPLETE : M)
-  }, [a, M, L]);
-  let [V, F] = l.useState(null), [q, J] = l.useState(null), [Y, z] = l.useState(false), B = (0, c.bG)([h.A], () => h.A.getType() === j.zY.INVITE_UNCLAIMED), Z = l.useCallback(e => {
-    J(e), P(O.i.CREATION_INTENT), N.default.track(g.HAw.GUILD_TEMPLATE_SELECTED, {
+    [M, P] = i.useState(R ? g.i.AGE_GATE : g.i.CHOOSE_TEMPLATE),
+    [W, H] = i.useState(null);
+  i.useEffect(() => {
+    n(L ? g.i.COMPLETE : M)
+  }, [n, M, L]);
+  let [B, V] = i.useState(null), [F, q] = i.useState(null), [z, J] = i.useState(false), Y = (0, o.bG)([N.A], () => N.A.getType() === j.zY.INVITE_UNCLAIMED), Z = i.useCallback(e => {
+    q(e), P(g.i.CREATION_INTENT), h.default.track(O.HAw.GUILD_TEMPLATE_SELECTED, {
       template_name: e.label,
       template_code: e.code
     })
-  }, [J, P]), {
+  }, [q, P]), {
     content: K,
     footer: Q
-  } = (0, _.u)({
+  } = (0, m.u)({
     hasFooter: false,
     onBack: () => {
-      J(null), P(O.i.CHOOSE_TEMPLATE)
+      q(null), P(g.i.CHOOSE_TEMPLATE)
     },
     onCreationIntentChosen: e => {
-      z(e === D.IR.COMMUNITY), P(O.i.CUSTOMIZE_GUILD)
+      J(e === C.IR.COMMUNITY), P(g.i.CUSTOMIZE_GUILD)
     }
   }), {
     content: $,
     footer: X
-  } = (0, m.D)({
-    guildTemplate: q,
-    titleClassName: C.RH,
+  } = (0, f.D)({
+    guildTemplate: F,
+    titleClassName: I.RH,
     hasFooter: false,
     onGuildCreated: e => {
-      F(e), (null == q ? true : q.id) === v.v.CREATE ? P(O.i.CHANNEL_PROMPT) : k(true)
+      V(e), (null == F ? true : F.id) === v.v.CREATE ? P(g.i.CHANNEL_PROMPT) : U(true)
     },
     onBack: () => {
-      P(O.i.CREATION_INTENT)
+      P(g.i.CREATION_INTENT)
     },
-    isSlideReady: W === O.i.CUSTOMIZE_GUILD,
-    isCommunity: Y
+    isSlideReady: W === g.i.CUSTOMIZE_GUILD,
+    isCommunity: z
   }), {
     content: ee,
     footer: et
-  } = (0, b.m)({
-    createdGuildId: V,
+  } = (0, p.m)({
+    createdGuildId: B,
     hasFooter: false,
     onChannelPromptCompleted: () => {
-      k(true)
+      U(true)
     },
-    isSlideReady: W === O.i.CHANNEL_PROMPT
+    isSlideReady: W === g.i.CHANNEL_PROMPT
   }), {
-    content: ea,
-    footer: en
+    content: en,
+    footer: ea
   } = (0, T.A)({
-    onBack: () => P(O.i.CHOOSE_TEMPLATE),
+    onBack: () => P(g.i.CHOOSE_TEMPLATE),
     onComplete: () => {
-      U()
+      k()
     },
-    onConnect: U,
-    isSlideReady: W === O.i.JOIN_GUILD
-  }), el = null;
+    onConnect: k,
+    isSlideReady: W === g.i.JOIN_GUILD
+  }), ei = null;
   switch (M) {
-    case O.i.CUSTOMIZE_GUILD:
-      el = X;
+    case g.i.CUSTOMIZE_GUILD:
+      ei = X;
       break;
-    case O.i.CHANNEL_PROMPT:
-      el = et;
+    case g.i.CHANNEL_PROMPT:
+      ei = et;
       break;
-    case O.i.JOIN_GUILD:
-      el = en;
+    case g.i.JOIN_GUILD:
+      ei = ea;
       break;
-    case O.i.CREATION_INTENT:
-      el = Q
+    case g.i.CREATION_INTENT:
+      ei = Q
   }
   let {
-    ref: ei,
+    ref: el,
     width: es
   } = (0, d.Ay)();
-  if (L) return (0, n.jsx)(o.EOs, S(G({}, i), {
+  if (L) return (0, a.jsx)(c.EOs, S(G({}, l), {
     "data-migration-pending": true,
-    size: o.rIJ.MEDIUM,
-    className: s()(C.yl, C.so),
+    size: c.rIJ.MEDIUM,
+    className: s()(I.yl, I.so),
     "aria-labelledby": t,
     parentComponent: "NUFModal",
-    children: (0, n.jsx)(A.A, {
-      onComplete: U
+    children: (0, a.jsx)(x.A, {
+      onComplete: k
     })
   }));
   let er = {
     impression_group: r.ImpressionGroups.GUILD_ADD_NUF
   };
-  return (0, n.jsxs)(o.EOs, S(G({}, i), {
+  return (0, a.jsxs)(c.EOs, S(G({}, l), {
     "data-migration-pending": true,
-    size: o.rIJ.MEDIUM,
-    className: C.yl,
+    size: c.rIJ.MEDIUM,
+    className: I.yl,
     "aria-labelledby": t,
     parentComponent: "NUFModal",
-    children: [(0, n.jsx)("div", {
-      className: C.pz,
-      children: (0, n.jsx)(y.A, {
+    children: [(0, a.jsx)("div", {
+      className: I.pz,
+      children: (0, a.jsx)(y.A, {
         step: M
       })
-    }), (0, n.jsx)(o.NPJ, {
-      theme: g.NJ8.LIGHT,
-      children: e => (0, n.jsxs)("div", {
-        className: s()(C.Qs, e),
-        ref: ei,
-        children: [(0, n.jsx)("div", {
-          className: C.WT,
-          children: (0, n.jsxs)(o.tN_, {
+    }), (0, a.jsx)(c.NPJ, {
+      theme: O.NJ8.LIGHT,
+      children: e => (0, a.jsxs)("div", {
+        className: s()(I.Qs, e),
+        ref: el,
+        children: [(0, a.jsx)("div", {
+          className: I.WT,
+          children: (0, a.jsxs)(c.tN_, {
             activeSlide: M,
             onSlideReady: e => H(e),
             centered: false,
             width: es,
-            children: [(0, n.jsx)(o.q7S, {
-              id: O.i.AGE_GATE,
-              children: (0, n.jsx)("div", {
-                className: C.kL,
-                children: (0, n.jsx)(x.A, {
+            children: [(0, a.jsx)(c.q7S, {
+              id: g.i.AGE_GATE,
+              children: (0, a.jsx)("div", {
+                className: I.kL,
+                children: (0, a.jsx)(A.A, {
                   onComplete: () => {
-                    B ? U() : P(O.i.CHOOSE_TEMPLATE)
+                    Y ? k() : P(g.i.CHOOSE_TEMPLATE)
                   },
-                  onClose: U
+                  onClose: k
                 })
               })
-            }), (0, n.jsx)(o.q7S, {
-              id: O.i.CHOOSE_TEMPLATE,
+            }), (0, a.jsx)(c.q7S, {
+              id: g.i.CHOOSE_TEMPLATE,
               impressionName: r.ImpressionNames.GUILD_ADD_LANDING,
               impressionProperties: er,
-              children: (0, n.jsx)("div", {
-                className: s()(C.kL, C.yT),
-                children: (0, n.jsx)(p.A, {
-                  className: C.kT,
+              children: (0, a.jsx)("div", {
+                className: s()(I.kL, I.yT),
+                children: (0, a.jsx)(b.A, {
+                  className: I.kT,
                   onChooseTemplate: Z,
                   isNewUser: true
                 })
               })
-            }), (0, n.jsx)(o.q7S, {
-              id: O.i.CREATION_INTENT,
+            }), (0, a.jsx)(c.q7S, {
+              id: g.i.CREATION_INTENT,
               impressionName: r.ImpressionNames.GUILD_ADD_INTENT_SELECTION,
               impressionProperties: er,
-              children: (0, n.jsx)("div", {
-                className: s()(C.kL, C.tn),
+              children: (0, a.jsx)("div", {
+                className: s()(I.kL, I.tn),
                 children: K
               })
-            }), (0, n.jsx)(o.q7S, {
-              id: O.i.CUSTOMIZE_GUILD,
+            }), (0, a.jsx)(c.q7S, {
+              id: g.i.CUSTOMIZE_GUILD,
               impressionName: r.ImpressionNames.GUILD_ADD_CUSTOMIZE,
               impressionProperties: er,
-              children: (0, n.jsx)("div", {
-                className: s()(C.kL, C.tn),
+              children: (0, a.jsx)("div", {
+                className: s()(I.kL, I.tn),
                 children: $
               })
-            }), (0, n.jsx)(o.q7S, {
-              id: O.i.CHANNEL_PROMPT,
+            }), (0, a.jsx)(c.q7S, {
+              id: g.i.CHANNEL_PROMPT,
               impressionName: r.ImpressionNames.GUILD_ADD_CHANNEL_PROMPT,
               impressionProperties: er,
-              children: (0, n.jsx)("div", {
-                className: s()(C.kL, C.tn),
+              children: (0, a.jsx)("div", {
+                className: s()(I.kL, I.tn),
                 children: ee
               })
-            }), (0, n.jsx)(o.q7S, {
-              id: O.i.JOIN_GUILD,
+            }), (0, a.jsx)(c.q7S, {
+              id: g.i.JOIN_GUILD,
               impressionName: r.ImpressionNames.GUILD_ADD_JOIN,
               impressionProperties: er,
-              children: (0, n.jsx)("div", {
-                className: s()(C.kL, C.tn),
-                children: ea
+              children: (0, a.jsx)("div", {
+                className: s()(I.kL, I.tn),
+                children: en
               })
             })]
           })
-        }), M !== O.i.AGE_GATE ? (0, n.jsx)(o.s_y, {
+        }), M !== g.i.AGE_GATE ? (0, a.jsx)(c.s_y, {
           "data-migration-pending": true,
-          onClick: U,
-          className: C.b
-        }) : null, M === O.i.CHOOSE_TEMPLATE ? (0, n.jsx)(o.jlY, {
+          onClick: k,
+          className: I.b
+        }) : null, M === g.i.CHOOSE_TEMPLATE ? (0, a.jsx)(c.jlY, {
           "data-migration-pending": true,
-          justify: u.A.Justify.BETWEEN,
-          className: s()(C.qr, C.fj),
-          children: (0, n.jsx)(o.MzZ, {
-            className: C.D3,
+          justify: _.A.Justify.BETWEEN,
+          className: s()(I.qr, I.fj),
+          children: (0, a.jsx)(c.MzZ, {
+            className: I.D3,
             onClick: () => {
-              P(O.i.JOIN_GUILD)
+              P(g.i.JOIN_GUILD)
             },
-            children: (0, n.jsxs)(o.Text, {
+            children: (0, a.jsxs)(c.Text, {
               variant: "text-sm/medium",
-              className: C.D3,
-              children: [I.intl.string(I.t["N+Mi/U"]), " ", I.intl.string(I.t.yRjK4p)]
+              className: I.D3,
+              children: [D.intl.string(D.t["N+Mi/U"]), " ", D.intl.string(D.t.yRjK4p)]
             })
           })
-        }) : null, null != el ? (0, n.jsx)(o.jlY, {
+        }) : null, null != ei ? (0, a.jsx)(c.jlY, {
           "data-migration-pending": true,
-          justify: u.A.Justify.BETWEEN,
-          className: C.qr,
-          children: el
+          justify: _.A.Justify.BETWEEN,
+          className: I.qr,
+          children: ei
         }) : null]
       })
     })]

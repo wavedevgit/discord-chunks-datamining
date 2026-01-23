@@ -50,7 +50,7 @@ function h(e) {
     className: s()(f.Zg, n),
     children: t.name
   });
-  let b = {
+  let y = {
     className: s()(f.Zg, n),
     emojiId: t.id,
     emojiName: t.name,
@@ -60,10 +60,10 @@ function h(e) {
       g.current = e
     }
   };
-  return p ? (0, r.jsx)(l.A, _({}, b)) : (0, r.jsx)(o.m, {
+  return p ? (0, r.jsx)(l.A, _({}, y)) : (0, r.jsx)(o.m, {
     targetElementRef: g,
     text: E,
     delay: h,
-    children: (0, r.jsx)(l.A, _({}, b))
+    children: (0, r.jsx)(l.A, _({}, y))
   })
 }

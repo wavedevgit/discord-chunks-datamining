@@ -102,7 +102,7 @@ function F(e) {
     var e;
     return null == (e = w.A.getGuild(a)) ? true : e.ownerId
   }, [a]), p = (0, l.bG)([P.default], () => P.default.getUser(t.userId), [t.userId]), _ = (0, l.bG)([C.A], () => C.A.getChannel(s), [s]);
-  return null == p || null == _ ? null : (0, r.jsx)(I.A, {
+  return null == p || null == _ ? null : (0, r.jsx)(S.A, {
     targetElementRef: c,
     userId: t.userId,
     guildId: a,
@@ -157,7 +157,7 @@ function B(e) {
     var e;
     null == (e = t.setPopoutRef) || e.call(t, null)
   });
-  let f = (0, y.A)(a),
+  let f = (0, b.A)(a),
     _ = (0, l.bG)([w.A], () => {
       let e = w.A.getGuild(a);
       return null == e ? null : (0, T.af)(e)
@@ -174,7 +174,7 @@ function B(e) {
       let e = null != n ? n : _;
       return null == e ? null : R.A.getRole(a, e)
     }, [a, n, _]),
-    b = null == n ? null : null == f ? true : f[n],
+    y = null == n ? null : null == f ? true : f[n],
     O = i.useMemo(() => null != m ? h.map(e => (0, r.jsx)(F, {
       member: e,
       guildId: a,
@@ -193,12 +193,12 @@ function B(e) {
           id: n,
           guildId: a,
           title: m.name,
-          count: b,
+          count: y,
           className: L.sd
-        }), O, null == b || b <= O.length ? null : (0, r.jsx)(E.A, {
+        }), O, null == y || y <= O.length ? null : (0, r.jsx)(E.A, {
           className: L.sd,
           children: x.intl.formatToPlainString(x.t["9oMmZC"], {
-            count: b - O.length
+            count: y - O.length
           })
         })]
       })
@@ -216,13 +216,13 @@ function H(e) {
     inlinePreview: d = false
   } = e, {
     analyticsLocations: f
-  } = (0, m.Ay)(h.A.ROLE_MENTION), p = (0, l.bG)([_.A], () => _.A.roleStyle), g = (0, l.bG)([R.A], () => null == s || null == t ? null : R.A.getRole(s, t)), E = (0, S.jV)(s, g), b = !d && null != g && !(0, v.Qv)(g), y = b && "dot" === p, I = b && "username" === p, T = E && null != g ? g.colorStrings : null, C = i.useRef(null), N = e => (0, r.jsxs)(A.A, G(k({
+  } = (0, m.Ay)(h.A.ROLE_MENTION), p = (0, l.bG)([_.A], () => _.A.roleStyle), g = (0, l.bG)([R.A], () => null == s || null == t ? null : R.A.getRole(s, t)), E = (0, I.jV)(s, g), y = !d && null != g && !(0, A.Qv)(g), b = y && "dot" === p, S = y && "username" === p, T = E && null != g ? g.colorStrings : null, C = i.useRef(null), N = e => (0, r.jsxs)(v.A, G(k({
     ref: C,
     className: L.Dz,
-    color: I ? g.color : null,
-    roleColors: I ? T : null
+    color: S ? g.color : null,
+    roleColors: S ? T : null
   }, e), {
-    children: [y && null != g.color && (0, r.jsx)(u.WYI, {
+    children: [b && null != g.color && (0, r.jsx)(u.WYI, {
       color: (0, o.Hl)(g.color),
       colors: T,
       className: j.m,

@@ -2,7 +2,7 @@
 /** chunk id: 646986, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk818348 = require("./818348.js"),
   Chunk985018 = require("./985018.jsx");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,13 +38,13 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,21 +55,21 @@ function A(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e) {
+function I(e) {
   let {
     user: t,
     currentUser: n,
-    guildId: y,
-    onOpenUserProfileModal: A,
-    onClose: S
+    guildId: b,
+    onOpenUserProfileModal: v,
+    onClose: I
   } = e, {
-    analyticsLocations: I
+    analyticsLocations: S
   } = (0, o.Ay)(), {
     trackUserProfileAction: T
   } = (0, u.NJ)(), {
@@ -80,9 +80,9 @@ function S(e) {
     voiceActivity: w
   } = (0, f.A)({
     userId: t.id,
-    guildId: y
+    guildId: b
   }), P = t.id === n.id, D = (0, a.bG)([c.A, l.A], () => {
-    let e = P ? c.A.getStatus() : l.A.getStatus(t.id, y);
+    let e = P ? c.A.getStatus() : l.A.getStatus(t.id, b);
     return e === E.cl.OFFLINE || e === E.cl.INVISIBLE
   }), {
     voiceActivityStatusEnabled: x
@@ -90,10 +90,10 @@ function S(e) {
     location: "UserProfileStackedActivity"
   }), L = x && null == N && null == w && null != R, j = i.useCallback(e => {
     let i = [],
-      a = v(O({}, e), {
+      a = A(O({}, e), {
         user: t,
         currentUser: n,
-        onClose: S
+        onClose: I
       });
     return null != N && i.push((0, r.jsx)(h.A, O({
       stream: N
@@ -104,15 +104,15 @@ function S(e) {
     }), L && i.push((0, r.jsx)(m.A, O({
       voiceChannel: R
     }, a), "voice")), i
-  }, [n, L, C, S, N, t, R]);
+  }, [n, L, C, I, N, t, R]);
   return D ? null : (0, r.jsx)(p.A, {
     renderCards: j,
-    heading: b.intl.string(b.t.J6STd9),
+    heading: y.intl.string(y.t.J6STd9),
     onExpand: () => {
       T({
         action: "PRESS_SHOW_MORE_ACTIVITY",
-        analyticsLocations: I
-      }), null == A || A({
+        analyticsLocations: S
+      }), null == v || v({
         tabSection: g.RP.ACTIVITY
       })
     }

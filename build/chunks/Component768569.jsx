@@ -17,7 +17,7 @@ let d = e => {
     targetElementRef: t,
     dismissPopover: d,
     children: p
-  } = e, f = (0, r.jsx)(i.AM, {
+  } = e, h = (0, r.jsx)(i.AM, {
     targetElementRef: t,
     title: c.intl.format(o.default["c+NBSl"], {
       premiumGroupProductName: (0, a.DP)()
@@ -73,6 +73,6 @@ let d = e => {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       children: p
-    }), f]
+    }), h]
   })
 }

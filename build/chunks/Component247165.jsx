@@ -1,7 +1,7 @@
 /** Chunk was on 28636 **/
 /** chunk id: 247165, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => A
 }), require("./747238.js"), require("./938796.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,34 +22,34 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk70345 = require("./70345.js");
 
-function A(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
-      var l;
-      l = n[t], t in e ? Object.defineProperty(e, t, {
-        value: l,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = l
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function _(e) {
+function A(e) {
   let {
     application: t
   } = e;
-  return (0, l.jsxs)("div", {
-    className: j.ZM,
-    children: [(0, l.jsx)(y, {
+  return (0, r.jsxs)("div", {
+    className: v.ZM,
+    children: [(0, r.jsx)(y, {
       application: t
-    }), (0, l.jsx)(S, {
+    }), (0, r.jsx)(O, {
       application: t
     })]
   })
@@ -60,128 +60,128 @@ function y(e) {
     application: t
   } = e, {
     subscriptions: n,
-    otps: a
+    otps: l
   } = (0, d.C)(t.id);
-  return (0, l.jsxs)("div", {
-    className: j.ZM,
-    children: [n.length > 0 && (0, l.jsxs)("div", {
-      className: j.dD,
-      children: [(0, l.jsx)(p.A, {
+  return (0, r.jsxs)("div", {
+    className: v.ZM,
+    children: [n.length > 0 && (0, r.jsxs)("div", {
+      className: v.dD,
+      children: [(0, r.jsx)(p.A, {
         subscriptions: n,
         color: "text-strong"
-      }), (0, l.jsx)("div", {
-        className: j.ZE,
+      }), (0, r.jsx)("div", {
+        className: v.ZE,
         children: n.map(e => {
           let n = (0, h.bg)(e.skuFlags) ? "user" : "guild";
-          return (0, l.jsx)(u.B4, {
+          return (0, r.jsx)(u.B4, {
             appId: t.id,
             listing: e,
             subscriptionType: n,
-            onDetails: () => (0, f.Fr)(x.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
+            onDetails: () => (0, _.Fr)(f.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
           }, e.id)
         })
       })]
-    }), a.length > 0 && (0, l.jsxs)("div", {
-      className: j.dD,
-      children: [(0, l.jsx)(r.DZT, {
+    }), l.length > 0 && (0, r.jsxs)("div", {
+      className: v.dD,
+      children: [(0, r.jsx)(i.DZT, {
         variant: "heading-lg/semibold",
         color: "text-strong",
-        children: v.intl.string(v.t.yUGTs8)
-      }), (0, l.jsx)("div", {
-        className: j.ZE,
-        children: a.map(e => (0, l.jsx)(u.B8, {
+        children: x.intl.string(x.t.yUGTs8)
+      }), (0, r.jsx)("div", {
+        className: v.ZE,
+        children: l.map(e => (0, r.jsx)(u.B8, {
           skuId: e.skuId,
           appId: t.id,
-          onDetails: () => (0, f.Fr)(x.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
+          onDetails: () => (0, _.Fr)(f.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
         }, e.id))
       })]
-    }), (0, l.jsx)(o.A, {
-      path: x.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId"),
+    }), (0, r.jsx)(c.A, {
+      path: f.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId"),
       exact: true,
-      render: e => (0, l.jsx)(O, A({}, e))
+      render: e => (0, r.jsx)(C, j({}, e))
     })]
   })
 }
 
-function O(e) {
+function C(e) {
   let {
     match: {
       params: {
         applicationId: t,
-        skuId: r
+        skuId: i
       }
     }
-  } = e, c = (0, i.bG)([m.A], () => m.A.get(r), [r]), o = (0, i.bG)([m.A], () => null != r ? m.A.getParentSKU(r) : true, [r]), d = a.useId(), u = a.useCallback(() => (0, f.Fr)(x.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, g.GlobalDiscoveryAppsSections.STORE)), [t]);
-  return a.useLayoutEffect(() => {
+  } = e, o = (0, a.bG)([m.A], () => m.A.get(i), [i]), c = (0, a.bG)([m.A], () => null != i ? m.A.getParentSKU(i) : true, [i]), d = l.useId(), u = l.useCallback(() => (0, _.Fr)(f.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, b.GlobalDiscoveryAppsSections.STORE)), [t]);
+  return l.useLayoutEffect(() => {
     var e;
-    switch (null == c ? true : c.type) {
-      case x.Puh.CONSUMABLE:
-      case x.Puh.DURABLE:
+    switch (null == o ? true : o.type) {
+      case f.Puh.CONSUMABLE:
+      case f.Puh.DURABLE:
         return void(0, s.mMO)(async () => {
           let {
             ItemDetailsModal: e
           } = await Promise.resolve().then(n.bind(n, 963179));
-          return n => (0, l.jsx)(e, A({
+          return n => (0, r.jsx)(e, j({
             appId: t,
-            skuId: r
+            skuId: i
           }, n))
         }, {
           modalKey: d,
           onCloseCallback: () => {
-            C() || (0, f.Fr)(x.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, g.GlobalDiscoveryAppsSections.STORE))
+            S() || (0, _.Fr)(f.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, b.GlobalDiscoveryAppsSections.STORE))
           }
         });
-      case x.Puh.SUBSCRIPTION:
-        if ((null == o ? true : o.flags) == null) return;
-        return e = (0, h.bg)(o.flags) ? "user" : "guild", void(0, s.mMO)(async () => {
+      case f.Puh.SUBSCRIPTION:
+        if ((null == c ? true : c.flags) == null) return;
+        return e = (0, h.bg)(c.flags) ? "user" : "guild", void(0, s.mMO)(async () => {
           let {
-            SubscriptionDetailsModal: a
+            SubscriptionDetailsModal: l
           } = await Promise.resolve().then(n.bind(n, 168393));
-          return n => (0, l.jsx)(a, A({
+          return n => (0, r.jsx)(l, j({
             appId: t,
             subscriptionType: e,
-            skuId: r,
+            skuId: i,
             guildId: true
           }, n))
         }, {
           modalKey: d,
           onCloseCallback: () => {
-            C() || (0, f.Fr)(x.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, g.GlobalDiscoveryAppsSections.STORE))
+            S() || (0, _.Fr)(f.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, b.GlobalDiscoveryAppsSections.STORE))
           }
         })
     }
-  }, [t, d, u, null == o ? true : o.flags, null == c ? true : c.flags, null == c ? true : c.type, r]), a.useLayoutEffect(() => () => {
+  }, [t, d, u, null == c ? true : c.flags, null == o ? true : o.flags, null == o ? true : o.type, i]), l.useLayoutEffect(() => () => {
     (0, s.OoC)(d)
   }, [d]), null
 }
 
-function S(e) {
+function O(e) {
   let {
     application: t
-  } = e, n = (0, b.DB)(), a = t.terms_of_service_url, i = t.privacy_policy_url;
-  if (null == a && null == i) return null;
-  let s = (e, t) => (0, l.jsx)(c.A, {
+  } = e, n = (0, g.DB)(), l = t.terms_of_service_url, a = t.privacy_policy_url;
+  if (null == l && null == a) return null;
+  let s = (e, t) => (0, r.jsx)(o.A, {
     href: t,
     trusted: !n,
     children: e
   });
-  return (0, l.jsx)("div", {
-    className: j.V6,
-    children: (0, l.jsx)(r.EYj, {
+  return (0, r.jsx)("div", {
+    className: v.V6,
+    children: (0, r.jsx)(i.EYj, {
       color: "text-strong",
       variant: "text-sm/normal",
-      children: null != a && null != i ? v.intl.format(v.t.nylPOT, {
-        termsHook: e => s(e, a),
-        privacyHook: e => s(e, i)
-      }) : null != a ? v.intl.format(v.t["0cPyDz"], {
-        termsHook: e => s(e, a)
-      }) : null != i ? v.intl.format(v.t["loYGC/"], {
-        privacyHook: e => s(e, i)
+      children: null != l && null != a ? x.intl.format(x.t.nylPOT, {
+        termsHook: e => s(e, l),
+        privacyHook: e => s(e, a)
+      }) : null != l ? x.intl.format(x.t["0cPyDz"], {
+        termsHook: e => s(e, l)
+      }) : null != a ? x.intl.format(x.t["loYGC/"], {
+        privacyHook: e => s(e, a)
       }) : null
     })
   })
 }
 
-function C() {
+function S() {
   return window.location.pathname.startsWith("/login")
 }

@@ -36,10 +36,10 @@ function j(e) {
     n = Date.now(),
     r = null != e.updatedAt ? n - e.updatedAt : 0;
   r > I + v && (r = 0);
-  let i = (0, A.kv)(e.applicationId, b.A),
+  let i = (0, f.kv)(e.applicationId, _.A),
     l = E.A.getVoiceChannelId(),
-    a = g.default.getSessionId(),
-    c = _.A.getMediaSessionId();
+    a = m.default.getSessionId(),
+    c = b.A.getMediaSessionId();
   u.A.updateActivity({
     applicationId: e.applicationId,
     distributor: e.isDiscordApplication ? O.d3x.DISCORD : e.distributor,
@@ -66,7 +66,7 @@ function x() {
       exePath: i
     }
     of t) {
-    let t = m.A.getGameByName(e);
+    let t = A.A.getGameByName(e);
     null != t && (n.add(t.id), t.id in S || j({
       applicationId: t.id,
       updatedAt: Date.now(),
@@ -83,7 +83,7 @@ function P() {
 }
 class w extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(g.default, m.A, b.A, _.A, p.Ay, E.A, f.A), this.syncWith([f.A], x)
+    this.waitFor(m.default, A.A, _.A, b.A, p.Ay, E.A, h.A), this.syncWith([h.A], x)
   }
   getActivities() {
     return S

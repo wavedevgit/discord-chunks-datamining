@@ -17,28 +17,28 @@ let d = e => {
     role: t
   } = e;
   return (0, i.Lt)(t.flags, a.gxX.IN_PROMPT) ? (0, s.J)(t) ? (0, r.jsxs)("div", {
-    className: o.lm,
+    className: c.lm,
     children: [(0, r.jsx)(l.EpV, {
       size: "custom",
       width: 20,
       height: 20,
       color: "currentColor",
-      className: o.Qf
+      className: c.Qf
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: c.intl.string(c.t.YRbgXz)
+      children: o.intl.string(o.t.YRbgXz)
     })]
   }) : (0, r.jsxs)("div", {
-    className: o.lm,
+    className: c.lm,
     children: [(0, r.jsx)(l.EpV, {
       size: "custom",
       width: 20,
       height: 20,
       color: "currentColor",
-      className: o.EP
+      className: c.EP
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: c.intl.string(c.t.mqeO2v)
+      children: o.intl.string(o.t.mqeO2v)
     })]
   }) : null
 }

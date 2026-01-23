@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 533978, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => E
+  A: () => x
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -25,11 +25,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk376086 = require("./376086.js"),
   Chunk985018 = require("./985018.jsx");
 
-function E(e) {
+function x(e) {
   let {
     channel: t,
-    themeable: E,
-    whichPopoutIsOpen: _,
+    themeable: x,
+    whichPopoutIsOpen: E,
     setWhichPopoutIsOpen: C
   } = e, {
     parentAnalyticsLocation: S
@@ -40,19 +40,19 @@ function E(e) {
       onMouseEnter: T,
       onMouseLeave: P
     }
-  } = (0, s.E)(), w = t.getGuildId(), {
+  } = (0, a.E)(), w = t.getGuildId(), {
     mute: R,
     suppress: D
-  } = (0, A.A)(t), M = (0, i.bG)([y.A], () => y.A.isDeaf()), L = R || D || M, G = (0, b.VE)({
+  } = (0, A.A)(t), M = (0, i.bG)([y.A], () => y.A.isDeaf()), L = R || D || M, k = (0, g.VE)({
     isSoundboardButtonDisabled: L
-  }), [k, U] = (0, p.DP)(G), {
-    analyticsLocations: V
+  }), [G, U] = (0, h.DP)(k), {
+    analyticsLocations: B
   } = (0, u.Ay)(), {
-    isHovered: F,
-    setIsHovered: H,
-    onMouseEnter: B,
+    isHovered: V,
+    setIsHovered: F,
+    onMouseEnter: H,
     onMouseLeave: K
-  } = (0, h.A)(200, 300);
+  } = (0, f.A)(200, 300);
 
   function W(e) {
     null != w && (0, c.L3)(e, async () => {
@@ -80,9 +80,9 @@ function E(e) {
           return e
         }({
           guildId: w,
-          sourceAnalyticsLocations: V
+          sourceAnalyticsLocations: B
         }, t), l = l = {
-          onInteraction: (0, f.s)("SoundboardContextMenu", S)
+          onInteraction: (0, p.s)("SoundboardContextMenu", S)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -98,33 +98,33 @@ function E(e) {
   }
 
   function z() {
-    (0, d.X)(S, d.O.SOUNDBOARD), _ === v.P.SOUNDBOARD ? (null == C || C(true), K()) : (null != _ ? (N(), B()) : N(), null == C || C(v.P.SOUNDBOARD))
+    (0, d.X)(S, d.O.SOUNDBOARD), E === j.P.SOUNDBOARD ? (null == C || C(true), K()) : (null != E ? (N(), H()) : N(), null == C || C(j.P.SOUNDBOARD))
   }
   let Y = l.useRef(null);
   return (0, r.jsx)(o.Y, {
     targetElementRef: Y,
-    shouldShow: F && (_ === v.P.SOUNDBOARD || null == _) || _ === v.P.SOUNDBOARD,
+    shouldShow: V && (E === j.P.SOUNDBOARD || null == E) || E === j.P.SOUNDBOARD,
     animation: o.Y.Animation.FADE,
     animationPosition: "top",
     position: "top",
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      H(false), null == C || C(true)
+      F(false), null == C || C(true)
     },
     renderPopout: e => {
       let {
         closePopout: n
       } = e;
-      return L ? null : (0, r.jsx)(O.A, {
+      return L ? null : (0, r.jsx)(_.A, {
         children: (0, r.jsx)("div", {
-          onMouseEnter: B,
+          onMouseEnter: H,
           onMouseLeave: K,
-          children: (0, r.jsx)(m.A, {
+          children: (0, r.jsx)(b.A, {
             guildId: w,
             channel: t,
             onClose: n,
-            gridNotice: k === a.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(g.m, {
+            gridNotice: G === s.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(m.m, {
               onClose: n,
               markAsDismissed: U
             }),
@@ -133,23 +133,23 @@ function E(e) {
         })
       })
     },
-    children: () => (0, r.jsx)(j.l, {
+    children: () => (0, r.jsx)(O.l, {
       ref: Y,
       isTrayButton: true,
-      themeable: E,
-      label: R ? x.intl.string(x.t["Ox4/zU"]) : D ? x.intl.string(x.t["+YBKYI"]) : M ? x.intl.string(x.t.X1lQli) : true,
+      themeable: x,
+      label: R ? v.intl.string(v.t["Ox4/zU"]) : D ? v.intl.string(v.t["+YBKYI"]) : M ? v.intl.string(v.t.X1lQli) : true,
       iconComponent: I,
       disabled: L,
       onContextMenu: W,
       onClick: z,
       onMouseEnter: () => {
-        B(), T()
+        H(), T()
       },
       onMouseLeave: () => {
-        null == _ && (K(), P())
+        null == E && (K(), P())
       },
-      isActive: F || _ === v.P.SOUNDBOARD,
-      color: F || _ === v.P.SOUNDBOARD ? "primaryDark" : true
+      isActive: V || E === j.P.SOUNDBOARD,
+      color: V || E === j.P.SOUNDBOARD ? "primaryDark" : true
     })
   })
 }

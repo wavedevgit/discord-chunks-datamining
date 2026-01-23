@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk990078 = require("./990078.jsx"),
   Chunk397927 = require("./397927.js"),
@@ -48,11 +48,11 @@ function I(e) {
   return e
 }
 
-function x() {
+function N() {
   (0, c.OoC)(A.K)
 }
 
-function N(e) {
+function x(e) {
   let {
     tooltipText: t
   } = e, n = function(e, t) {
@@ -88,10 +88,10 @@ function D() {
   let {
     zoomed: e,
     setZoomed: t
-  } = (0, _.Q)();
-  return (0, l.jsx)(N, {
+  } = (0, T.Q)();
+  return (0, l.jsx)(x, {
     onClick: () => {
-      (0, T.Yq)(e ? T.NJ.ZOOM_OUT_BUTTON_PRESSED : T.NJ.ZOOM_IN_BUTTON_PRESSED), t(!e)
+      (0, _.Yq)(e ? _.NJ.ZOOM_OUT_BUTTON_PRESSED : _.NJ.ZOOM_IN_BUTTON_PRESSED), t(!e)
     },
     tooltipText: e ? v.intl.string(v.t.vOFof8) : v.intl.string(v.t.Kt4gZ6),
     icon: e ? c.V0_ : c.r1u
@@ -102,27 +102,27 @@ function R(e) {
   var t, n;
   let {
     item: r
-  } = e, a = null == (t = r.sourceMetadata) ? true : t.message, o = null == (n = r.sourceMetadata) ? true : n.identifier, s = i.useCallback(() => {
-    if (null != a && null != o) {
-      if ((0, T.Yq)(T.NJ.FORWARD_PRESSED), "embed" === o.type) return void(0, f.fO)({
-        message: a,
+  } = e, o = null == (t = r.sourceMetadata) ? true : t.message, a = null == (n = r.sourceMetadata) ? true : n.identifier, s = i.useCallback(() => {
+    if (null != o && null != a) {
+      if ((0, _.Yq)(_.NJ.FORWARD_PRESSED), "embed" === a.type) return void(0, f.fO)({
+        message: o,
         source: "media-viewer",
         forwardOptions: {
-          onlyEmbedIndices: [o.embedIndex]
+          onlyEmbedIndices: [a.embedIndex]
         },
-        onRequestSent: x
+        onRequestSent: N
       });
       (0, f.fO)({
-        message: a,
+        message: o,
         source: "media-viewer",
         forwardOptions: {
-          onlyAttachmentIds: [o.attachmentId]
+          onlyAttachmentIds: [a.attachmentId]
         },
-        onRequestSent: x
+        onRequestSent: N
       })
     }
-  }, [a, o]);
-  return null != a && null != o && (0, p.p)(a) ? (0, l.jsx)(N, {
+  }, [o, a]);
+  return null != o && null != a && (0, p.p)(o) ? (0, l.jsx)(x, {
     onClick: s,
     tooltipText: v.intl.string(v.t.I3ltXO),
     icon: c.tuI
@@ -132,26 +132,26 @@ function R(e) {
 function P(e) {
   let {
     item: t
-  } = e, [n, r] = i.useState(false), a = "VIDEO" === t.type, o = "IMAGE" === t.type, s = null != t.children, u = (0, b.e7)((0, b.bc)(t.original, t.url), t.contentType, t.originalContentType);
-  if (!(a || S.isPlatformEmbedded && !s && o && u)) return null;
-  let d = (0, b.XW)((0, b.bc)(t.original, t.url), t.contentType, t.originalContentType, b.N7);
+  } = e, [n, r] = i.useState(false), o = "VIDEO" === t.type, a = "IMAGE" === t.type, s = null != t.children, u = (0, m.e7)((0, m.bc)(t.original, t.url), t.contentType, t.originalContentType);
+  if (!(o || g.isPlatformEmbedded && !s && a && u)) return null;
+  let d = (0, m.XW)((0, m.bc)(t.original, t.url), t.contentType, t.originalContentType, m.N7);
   async function p() {
-    if ((0, T.Yq)(T.NJ.SAVE_MEDIA_PRESSED), "VIDEO" === t.type && (0, g.h)({
+    if ((0, _.Yq)(_.NJ.SAVE_MEDIA_PRESSED), "VIDEO" === t.type && (0, h.h)({
         href: d
       }), "IMAGE" === t.type) {
       r(true);
       try {
-        let e = await h.Ay.saveImage(d, t.contentType, b.N7);
-        if (e === h._0.ERRORED) throw Error("DesktopNativeUtils.saveImage errored for ".concat(d));
-        e === h._0.SAVED && ((0, T._V)(d, true), (0, c.showToast)((0, c.createToast)(v.intl.string(v.t.cqpdJW), c.ToastType.SUCCESS)))
+        let e = await S.Ay.saveImage(d, t.contentType, m.N7);
+        if (e === S._0.ERRORED) throw Error("DesktopNativeUtils.saveImage errored for ".concat(d));
+        e === S._0.SAVED && ((0, _._V)(d, true), (0, c.showToast)((0, c.createToast)(v.intl.string(v.t.cqpdJW), c.ToastType.SUCCESS)))
       } catch (e) {
-        (0, T._V)(d, false), (0, c.showToast)((0, c.createToast)(v.intl.string(v.t["8Ve/S0"]), c.ToastType.FAILURE))
+        (0, _._V)(d, false), (0, c.showToast)((0, c.createToast)(v.intl.string(v.t["8Ve/S0"]), c.ToastType.FAILURE))
       } finally {
         r(false)
       }
     }
   }
-  return (0, l.jsx)(N, {
+  return (0, l.jsx)(x, {
     onClick: p,
     tooltipText: v.intl.string("VIDEO" === t.type ? v.t.JVuuz3 : v.t["S/xNKV"]),
     loading: n,
@@ -163,11 +163,11 @@ function w(e) {
   let {
     item: t
   } = e;
-  if (!(0, b.fW)(t.url)) return null;
-  let n = (0, b.XW)((0, b.bc)(t.original, t.url), t.contentType, t.originalContentType);
-  return (0, l.jsx)(N, {
+  if (!(0, m.fW)(t.url)) return null;
+  let n = (0, m.XW)((0, m.bc)(t.original, t.url), t.contentType, t.originalContentType);
+  return (0, l.jsx)(x, {
     onClick: () => {
-      (0, T.Yq)(T.NJ.OPEN_LINK_PRESSED), (0, T.RH)(n), (0, g.h)({
+      (0, _.Yq)(_.NJ.OPEN_LINK_PRESSED), (0, _.RH)(n), (0, h.h)({
         href: n
       })
     },
@@ -181,8 +181,8 @@ function M(e) {
   let {
     item: i,
     canCopyImage: r,
-    canCopyLink: a,
-    onClose: o,
+    canCopyLink: o,
+    onClose: a,
     onSelect: s
   } = e, u = (null == (n = i.sourceMetadata) || null == (t = n.identifier) ? true : t.type) === "attachment" ? i.sourceMetadata.identifier.attachmentId : null, p = (0, d.A)({
     id: u,
@@ -193,8 +193,8 @@ function M(e) {
       alt: n,
       sourceMetadata: i,
       width: r,
-      height: a
-    } = e, o = L(v.intl.string(v.t.ILJuBq), "name", {
+      height: o
+    } = e, a = L(v.intl.string(v.t.ILJuBq), "name", {
       subtextLineClamp: 1
     }), s = L(v.intl.string(v.t["3Nf9u2"]), "size"), u = L(v.intl.string(v.t.eOB2eR), "alt", {
       subtextLineClamp: 2
@@ -205,45 +205,45 @@ function M(e) {
     return (0, l.jsxs)(c.Drp, {
       id: "media-viewer-details",
       label: v.intl.string(v.t.sqBLa9),
-      children: [o(d), s(v.intl.formatToPlainString(v.t.DTdonA, {
+      children: [a(d), s(v.intl.formatToPlainString(v.t.DTdonA, {
         width: r,
-        height: a,
+        height: o,
         fileSize: p
       })), u(n)]
     }, "media-viewer-details")
   }(i);
-  async function m() {
-    (0, T.Yq)(T.NJ.COPY_IMAGE_PRESSED);
-    let e = (0, b.XW)((0, b.bc)(i.original, i.url), i.contentType, i.originalContentType, b.N7);
+  async function b() {
+    (0, _.Yq)(_.NJ.COPY_IMAGE_PRESSED);
+    let e = (0, m.XW)((0, m.bc)(i.original, i.url), i.contentType, i.originalContentType, m.N7);
     try {
       var t;
-      await h.Ay.copyImage(e, null != (t = i.originalContentType) ? t : i.contentType), (0, T.$e)(e, true), (0, c.showToast)((0, c.createToast)(v.intl.string(v.t.bhUpvC), c.ToastType.SUCCESS))
+      await S.Ay.copyImage(e, null != (t = i.originalContentType) ? t : i.contentType), (0, _.$e)(e, true), (0, c.showToast)((0, c.createToast)(v.intl.string(v.t.bhUpvC), c.ToastType.SUCCESS))
     } catch (t) {
-      (0, T.$e)(e, false), (0, c.showToast)((0, c.createToast)(v.intl.string(v.t.PTPbjx), c.ToastType.FAILURE))
+      (0, _.$e)(e, false), (0, c.showToast)((0, c.createToast)(v.intl.string(v.t.PTPbjx), c.ToastType.FAILURE))
     }
   }
   return (0, l.jsxs)(c.W1t, {
     navId: "image-menu",
     "aria-label": "placeholder",
-    onClose: o,
+    onClose: a,
     onSelect: s,
     children: [(0, l.jsxs)(c.rXV, {
       children: [r && (0, l.jsx)(c.Drp, {
         label: v.intl.string(v.t.tvUqWn),
         id: "media-viewer-copy-image",
         icon: c.TdU,
-        action: m
-      }, "media-viewer-copy-image"), a && (0, l.jsx)(c.Drp, {
+        action: b
+      }, "media-viewer-copy-image"), o && (0, l.jsx)(c.Drp, {
         id: "media-viewer-copy-link",
         label: v.intl.string(v.t.WqhZss),
         icon: c.qYV,
         action: function() {
-          (0, T.Yq)(T.NJ.COPY_LINK_PRESSED);
-          let e = (0, b.XW)((0, b.bc)(i.original, i.url), i.contentType, i.originalContentType);
+          (0, _.Yq)(_.NJ.COPY_LINK_PRESSED);
+          let e = (0, m.XW)((0, m.bc)(i.original, i.url), i.contentType, i.originalContentType);
           (0, y.C)(e, () => {
-            (0, T.C9)(e, true), (0, c.showToast)((0, c.createToast)(v.intl.string(v.t["L/PwZf"]), c.ToastType.SUCCESS))
+            (0, _.C9)(e, true), (0, c.showToast)((0, c.createToast)(v.intl.string(v.t["L/PwZf"]), c.ToastType.SUCCESS))
           }, () => {
-            (0, T.C9)(e, false), (0, c.showToast)((0, c.createToast)(v.intl.string(v.t.uVV00B), c.ToastType.FAILURE))
+            (0, _.C9)(e, false), (0, c.showToast)((0, c.createToast)(v.intl.string(v.t.uVV00B), c.ToastType.FAILURE))
           })
         }
       }, "media-viewer-copy-link")]
@@ -271,10 +271,10 @@ function G(e) {
   var t, n;
   let {
     item: r
-  } = e, a = i.useRef(null), [o, s] = i.useState(false), u = m.Q_.useSetting(), d = "IMAGE" === r.type, p = null == r.children, f = !r.animated, O = (0, b.PK)(r.url, r.contentType, r.originalContentType), y = d && p && f && O, E = (0, b.fW)(r.url);
+  } = e, o = i.useRef(null), [a, s] = i.useState(false), u = b.Q_.useSetting(), d = "IMAGE" === r.type, p = null == r.children, f = !r.animated, O = (0, m.PK)(r.url, r.contentType, r.originalContentType), y = d && p && f && O, E = (0, m.fW)(r.url);
   return u || y || E || (null == (n = r.sourceMetadata) || null == (t = n.identifier) ? true : t.type) === "attachment" ? (0, l.jsx)(c.YNO, {
-    targetElementRef: a,
-    shouldShow: o,
+    targetElementRef: o,
+    shouldShow: a,
     align: "left",
     position: "top",
     spacing: 18,
@@ -290,11 +290,11 @@ function G(e) {
       let {
         onClick: t
       } = e;
-      return (0, l.jsx)(N, {
-        buttonRef: a,
+      return (0, l.jsx)(x, {
+        buttonRef: o,
         tooltipText: v.intl.string(v.t["UKOtz+"]),
         onClick: () => {
-          (0, T.Yq)(T.NJ.MORE_BUTTON_PRESSED), s(!o)
+          (0, _.Yq)(_.NJ.MORE_BUTTON_PRESSED), s(!a)
         },
         icon: c.jNK
       })
@@ -305,7 +305,7 @@ let U = Chunk64700.memo(function(e) {
   let {
     item: t,
     hideMediaOptions: n
-  } = e, r = (0, o.bG)([u.A], () => u.A.keyboardModeEnabled), s = i.useRef(null), c = i.useCallback(() => {
+  } = e, r = (0, a.bG)([u.A], () => u.A.keyboardModeEnabled), s = i.useRef(null), c = i.useCallback(() => {
     var e;
     !r && (null == (e = s.current) ? true : e.contains(document.activeElement)) && document.activeElement.blur()
   }, [r]);
@@ -313,7 +313,7 @@ let U = Chunk64700.memo(function(e) {
     mode: j.nY.FOCUS_SENSITIVE,
     children: e => (0, l.jsxs)("div", {
       ref: s,
-      className: a()(C.uu, e),
+      className: o()(C.uu, e),
       onClick: e => e.stopPropagation(),
       onMouseLeave: c,
       children: ["IMAGE" === t.type && (0, l.jsx)(D, {}), !n && (0, l.jsxs)(l.Fragment, {

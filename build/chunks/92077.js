@@ -4,17 +4,17 @@
 require.d(exports, {
   BK: () => P,
   BO: () => C,
-  K3: () => v,
-  NQ: () => S,
+  K3: () => A,
+  NQ: () => I,
   Ts: () => E,
-  U: () => I,
+  U: () => S,
   Vt: () => R,
   ZT: () => N,
   jU: () => w,
-  oc: () => y,
+  oc: () => b,
   qv: () => O,
   v7: () => T,
-  zr: () => b
+  zr: () => y
 }), require("./65821.js");
 var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
@@ -53,11 +53,11 @@ function E(e, t) {
   })
 }
 
-function b() {
+function y() {
   p.A.destroy()
 }
 
-function y(e) {
+function b(e) {
   let {
     application: t,
     branchId: n,
@@ -102,7 +102,7 @@ function O(e, t, n) {
   })
 }
 
-function A(e, t, n, r) {
+function v(e, t, n, r) {
   if (s.Ay.getRunningDiscordApplicationIds().includes(e.id)) return;
   let i = c.A.getInstallationPath(e.id, t);
   if (null == i) throw Error("Missing installation path for application: ".concat(e.id, " ").concat(t));
@@ -117,9 +117,9 @@ function A(e, t, n, r) {
   })
 }
 
-function v(e, t, n, r) {
+function A(e, t, n, r) {
   let a = arguments.length > 4 && true !== arguments[4] && arguments[4];
-  A(e, t, n, r), i.h.dispatch({
+  v(e, t, n, r), i.h.dispatch({
     type: "DISPATCH_APPLICATION_UPDATE",
     applicationId: e.id,
     branchId: t,
@@ -127,7 +127,7 @@ function v(e, t, n, r) {
   })
 }
 
-function S(e, t, n) {
+function I(e, t, n) {
   let r = a.A.getApplication(e);
   null != r && (f.A.removeShortcuts(r.name), u.default.track(h.HAw.LIBRARY_UNINSTALL_INITIATED, {
     application_id: r.id,
@@ -141,7 +141,7 @@ function S(e, t, n) {
   })
 }
 
-function I() {
+function S() {
   p.A.resume()
 }
 

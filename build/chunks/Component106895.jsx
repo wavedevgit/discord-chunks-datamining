@@ -1,5 +1,5 @@
 /** Chunk was on 73380 **/
-/** chunk id: 106895, original params: t,e,r (module,exports,require) **/
+/** chunk id: 106895, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   default: () => u
 });
@@ -12,51 +12,51 @@ var Chunk627968 = require("./627968.js"),
   Chunk514810 = require("./514810.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk869527 = require("./869527.js");
-let u = t => {
+let u = e => {
   let {
-    channel: e,
+    channel: t,
     application: u,
     onClose: b,
     transitionState: y
-  } = t, j = (0, o.N)(e), x = i.useCallback(() => (b(), (0, c.mMO)(async () => {
+  } = e, j = (0, o.N)(t), m = a.useCallback(() => (b(), (0, s.mMO)(async () => {
     let {
-      default: t
+      default: e
     } = await r.e("93154").then(r.bind(r, 428185));
     return r => {
-      var i, a;
-      return (0, n.jsx)(t, (i = function(t) {
-        for (var e = 1; e < arguments.length; e++) {
-          var r = null != arguments[e] ? arguments[e] : {},
+      var a, i;
+      return (0, n.jsx)(e, (a = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(t) {
-            return Object.getOwnPropertyDescriptor(r, t).enumerable
-          }))), n.forEach(function(e) {
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(r, e).enumerable
+          }))), n.forEach(function(t) {
             var n;
-            n = r[e], e in t ? Object.defineProperty(t, e, {
+            n = r[t], t in e ? Object.defineProperty(e, t, {
               value: n,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : t[e] = n
+            }) : e[t] = n
           })
         }
-        return t
-      }({}, r), a = a = {
-        channelId: e.id,
+        return e
+      }({}, r), i = i = {
+        channelId: t.id,
         application: u
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(t, e) {
-        var r = Object.keys(t);
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(t);
+          var n = Object.getOwnPropertySymbols(e);
           r.push.apply(r, n)
         }
         return r
-      })(Object(a)).forEach(function(t) {
-        Object.defineProperty(i, t, Object.getOwnPropertyDescriptor(a, t))
-      }), i))
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
+      }), a))
     }
-  })), [u, e.id, b]), O = (0, s.Ay)(e, true);
-  return (0, n.jsx)(a.Modal, {
+  })), [u, t.id, b]), x = (0, c.Ay)(t, true);
+  return (0, n.jsx)(i.Modal, {
     transitionState: y,
     "aria-label": d.intl.string(d.t.OJknhi),
     onClose: b,
@@ -67,7 +67,7 @@ let u = t => {
       variant: "secondary"
     }, {
       text: d.intl.string(d.t.LLWaxQ),
-      onClick: x,
+      onClick: m,
       variant: "critical-primary"
     }],
     children: (0, n.jsxs)("div", {
@@ -79,21 +79,21 @@ let u = t => {
         className: p.yu,
         children: [(0, n.jsxs)("div", {
           className: p.py,
-          children: [(0, n.jsx)(c.Text, {
+          children: [(0, n.jsx)(s.Text, {
             variant: "text-md/semibold",
             color: "text-strong",
             children: u.name
-          }), (0, n.jsx)(c.Text, {
+          }), (0, n.jsx)(s.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
             children: d.intl.format(d.t["0NJZAU"], {
-              channelName: O
+              channelName: x
             })
           })]
         }), null != j && (0, n.jsxs)(n.Fragment, {
           children: [(0, n.jsx)("div", {
             className: p.yF
-          }), (0, n.jsx)(c.Text, {
+          }), (0, n.jsx)(s.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
             children: j

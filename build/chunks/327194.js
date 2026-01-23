@@ -2,7 +2,7 @@
 /** chunk id: 327194, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => S
+  P: () => I
 }), require("./65821.js"), require("./896048.js");
 var Chunk77729 = require("./77729.js"),
   Chunk626584 = require("./626584.js"),
@@ -29,14 +29,14 @@ function g(e, t, n) {
 }
 let E = new Chunk626584.A("OverlayV3NativeModule");
 
-function b(e, t, n) {
+function y(e, t, n) {
   (0, d._r)(e, "renderer_window_focus_changed", {
     windowHandle: t,
     popoutInitializationStages: u.A.getPopoutInitializationStages()
   }), (0, d.cS)(e, null != t ? (0, f.Oy)(t) : null, n)
 }
 
-function y(e) {
+function b(e) {
   (0, d._r)(e, "renderer_window_focus_lost", {
     popoutInitializationStages: u.A.getPopoutInitializationStages()
   }), (0, d.C7)(e)
@@ -48,20 +48,20 @@ function O(e) {
   }), (0, d.oW)(e)
 }
 
-function A(e) {
+function v(e) {
   (0, d._r)(null, "window_handle_initialized", {
     real_initialized: e,
     popoutInitializationStages: u.A.getPopoutInitializationStages()
   }), (0, d.i0)(e)
 }
 
-function v(e) {
+function A(e) {
   var t, n, r, i;
-  null == (t = e.setFocusCallback) || t.call(e, b), null == (n = e.setFocusLostCallback) || n.call(e, y), null == (r = e.setSuccessfullyShownCallback) || r.call(e, O), null == (i = e.setOnWindowHandleInitializedCallback) || i.call(e, A), (0, d._r)(null, "native_module_callbacks_setup"), E.verbose("Native module callbacks setup")
+  null == (t = e.setFocusCallback) || t.call(e, y), null == (n = e.setFocusLostCallback) || n.call(e, b), null == (r = e.setSuccessfullyShownCallback) || r.call(e, O), null == (i = e.setOnWindowHandleInitializedCallback) || i.call(e, v), (0, d._r)(null, "native_module_callbacks_setup"), E.verbose("Native module callbacks setup")
 }
-class S {
+class I {
   static getInstance() {
-    return null == this.instance && (this.instance = new S), this.instance
+    return null == this.instance && (this.instance = new I), this.instance
   }
   async initialize() {
     return await this.prepareOverlayModule()
@@ -85,7 +85,7 @@ class S {
     try {
       await s.Ay.ensureModule("discord_desktop_overlay");
       let e = s.Ay.requireModule("discord_desktop_overlay");
-      e.init(), e.setHostWindowCallbacks(e => this.createOutOfProcessOverlayHostWindow(e), () => this.destroyOutOfProcessOverlayHostWindow(), e => this.refreshOutOfProcessOverlayHostWindow(e)), this.module = e, (0, d._r)(null, "module_loaded"), (0, o.setOutOfProcessSupport)(true), v(this.module), (0, d.Mi)(), E.info("OverlayV3 Module Loaded")
+      e.init(), e.setHostWindowCallbacks(e => this.createOutOfProcessOverlayHostWindow(e), () => this.destroyOutOfProcessOverlayHostWindow(), e => this.refreshOutOfProcessOverlayHostWindow(e)), this.module = e, (0, d._r)(null, "module_loaded"), (0, o.setOutOfProcessSupport)(true), A(this.module), (0, d.Mi)(), E.info("OverlayV3 Module Loaded")
     } catch (e) {
       throw E.error("failed loading overlay module", e), (0, o.setOutOfProcessSupport)(false), (0, d.wK)(e), this.module = null, this.modulePromise = null, e
     }
@@ -241,4 +241,4 @@ class S {
     g(this, "module", null), g(this, "modulePromise", null), g(this, "isCrashedDisabled", false), g(this, "lastAssociatedPID", null), g(this, "trackedGamePids", new Set)
   }
 }
-g(S, "instance", null)
+g(I, "instance", null)

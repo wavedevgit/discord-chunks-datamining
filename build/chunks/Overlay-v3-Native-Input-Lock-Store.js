@@ -35,7 +35,7 @@ function E(e) {
   return !!e || !n
 }
 
-function b(e) {
+function y(e) {
   if (e && null != g) {
     let e = Date.now() - g;
     s.A.track(f.HAw.OVERLAY_LOCKED, {
@@ -44,34 +44,34 @@ function b(e) {
   } else e || null != g || (g = Date.now(), s.A.track(f.HAw.OVERLAY_UNLOCKED))
 }
 
-function y(e, t) {
-  b(e), e ? _.delete(t) : _.add(t), _ = new Set(_)
+function b(e, t) {
+  y(e), e ? _.delete(t) : _.add(t), _ = new Set(_)
 }
 
 function O(e, t) {
-  return !!E(e) && (y(e, t), null == m || m.setInteractionEnabled(!e), L.emitChange(), true)
+  return !!E(e) && (b(e, t), null == m || m.setInteractionEnabled(!e), L.emitChange(), true)
 }
 
-function A(e, t) {
-  return !!E(e) && (y(e, t), null == h || (clearTimeout(h), h = null, !e)) && (e ? O(e, t) : h = setTimeout(() => {
-    O(e, t), v()
+function v(e, t) {
+  return !!E(e) && (b(e, t), null == h || (clearTimeout(h), h = null, !e)) && (e ? O(e, t) : h = setTimeout(() => {
+    O(e, t), A()
   }, 100), true)
 }
 
-function v() {
+function A() {
   null != h && (clearTimeout(h), h = null)
 }
 
-function S() {
-  v(), _.clear(), _ = new Set, g = null
+function I() {
+  A(), _.clear(), _ = new Set, g = null
 }
 
-function I() {
-  return m = u.A.getNativeModule(), S(), true
+function S() {
+  return m = u.A.getNativeModule(), I(), true
 }
 
 function T() {
-  return m = null, S(), true
+  return m = null, I(), true
 }
 
 function C(e) {
@@ -81,7 +81,7 @@ function C(e) {
   } = e;
   return (0, c.dK)(n, "setInputLocked called", {
     locked: t
-  }), A(t, n), true
+  }), v(t, n), true
 }
 
 function N(e) {
@@ -90,7 +90,7 @@ function N(e) {
   } = e, n = l.A.getFocusedPID();
   return (0, c.dK)(null != n ? n : null, "activate_region", {
     region: t
-  }), null != n && A(false, n), true
+  }), null != n && v(false, n), true
 }
 
 function R() {
@@ -99,7 +99,7 @@ function R() {
 }
 
 function w() {
-  return S(), true
+  return I(), true
 }
 
 function P(e) {
@@ -110,7 +110,7 @@ function P(e) {
 }
 
 function D() {
-  S(), null == m || m.setInteractionEnabled(false)
+  I(), null == m || m.setInteractionEnabled(false)
 }
 class x extends(r = Chunk311907.Ay.Store) {
   initialize() {
@@ -124,7 +124,7 @@ p(x, "displayName", "Overlay-v3-Native-Input-Lock-Store");
 let L = new x(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {
     OVERLAY_SET_INPUT_LOCKED: C
   } : {
-    OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS: I,
+    OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS: S,
     OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: T,
     OVERLAY_SET_INPUT_LOCKED: C,
     OVERLAY_ACTIVATE_REGION: N,

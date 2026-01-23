@@ -20,7 +20,7 @@ function d(e) {
   } = (0, a.Ay)(t, {
     allowHeading: true,
     allowLinks: true
-  }), f = t.attachments.map((e, t) => {
+  }), b = t.attachments.map((e, t) => {
     let n = (0, o.LL)({
       src: e.url,
       containerClassName: c.oz,
@@ -45,7 +45,7 @@ function d(e) {
         message: t,
         content: d,
         compact: n
-      }), f, t.components.length > 0 ? (0, l.jsx)(i.Ay, {
+      }), b, t.components.length > 0 ? (0, l.jsx)(i.Ay, {
         message: t,
         shouldDisableInteractiveComponents: true
       }) : null]

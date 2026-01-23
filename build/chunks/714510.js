@@ -31,7 +31,7 @@ var Chunk773669 = require("./773669.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,20 +40,20 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,8 +64,8 @@ function S(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -241,12 +241,12 @@ function L(e) {
   }, r) : t.config.features.includes(E.Li.CLOUD_GAMING_ACTIVITY) ? i === u.uF.QUESTS_EMBED ? C(O.t["C+2RxC"], {
     activityName: t.config.messages.gameTitle,
     providerName: T,
-    providerLink: o.A.getArticleURL(b.MVz.NVIDIA_GEFORCE_CLOUD_GAMING_QUEST),
+    providerLink: o.A.getArticleURL(y.MVz.NVIDIA_GEFORCE_CLOUD_GAMING_QUEST),
     questReward: s
   }, r) : C(O.t["0NNM3l"], {
     activityName: t.config.messages.gameTitle,
     providerName: T,
-    providerLink: o.A.getArticleURL(b.MVz.NVIDIA_GEFORCE_CLOUD_GAMING_QUEST),
+    providerLink: o.A.getArticleURL(y.MVz.NVIDIA_GEFORCE_CLOUD_GAMING_QUEST),
     streamingDurationRequirement: a,
     questReward: s
   }, r) : C(O.t.UuzHh8, {
@@ -347,7 +347,7 @@ function U(e) {
     popoutTargetElementRef: l,
     onGameSheetOpened: u,
     onGameSheetClosed: d
-  } = e, f = (0, c.ki)(o, y.PremiumTypes.TIER_2), m = (0, p.k5)(t.config), g = (0, _.g5)(t) && (0, _.xZ)(t);
+  } = e, f = (0, c.ki)(o, b.PremiumTypes.TIER_2), m = (0, p.k5)(t.config), g = (0, _.g5)(t) && (0, _.xZ)(t);
   if ((0, h.ui)(t)) return k({
     quest: t,
     taskDetails: n,
@@ -403,7 +403,7 @@ function U(e) {
 
 function G(e) {
   var t;
-  return U(I(v({}, e), {
+  return U(S(A({}, e), {
     currentUser: null != (t = e.currentUser) ? t : s.default.getCurrentUser(),
     popoutTargetElementRef: e.popoutTargetElementRef,
     onGameSheetOpened: e.onGameSheetOpened,
@@ -421,7 +421,7 @@ function V(e) {
     questContent: n,
     sourceQuestContent: r
   }), o = (0, i.bG)([s.default], () => s.default.getCurrentUser()), l = (0, g.I3)(t);
-  return G(I(v({}, e), {
+  return G(S(A({}, e), {
     connectedConsoleLinkOnClick: a,
     currentUser: o,
     withoutMarkdown: false,
@@ -458,35 +458,35 @@ function B(e) {
     popoutTargetElementRef: o,
     onGameSheetOpened: l,
     onGameSheetClosed: c
-  } = e, d = r.config.rewardsConfig.rewardsExpireAt, m = (0, g.S5)(d), b = (0, g.fc)(r), y = (0, g.I3)(r), A = (null == (t = r.userStatus) ? true : t.completedAt) != null, v = (null == (n = r.userStatus) ? true : n.enrolledAt) != null, S = b.percentComplete > 0, I = (0, g.Vn)(r), T = V({
+  } = e, d = r.config.rewardsConfig.rewardsExpireAt, m = (0, g.S5)(d), y = (0, g.fc)(r), b = (0, g.I3)(r), v = (null == (t = r.userStatus) ? true : t.completedAt) != null, A = (null == (n = r.userStatus) ? true : n.enrolledAt) != null, I = y.percentComplete > 0, S = (0, g.Vn)(r), T = V({
     quest: r,
     location: E.rE.QUESTS_BAR,
     questContent: u.uF.QUEST_BAR_V2,
-    taskDetails: b,
+    taskDetails: y,
     sourceQuestContent: a,
     popoutTargetElementRef: o,
     onGameSheetOpened: l,
     onGameSheetClosed: c
-  }), C = null != y ? y.percentComplete : b.percentComplete;
-  if (A) return O.intl.formatToPlainString(O.t.APddvF, {
+  }), C = null != b ? b.percentComplete : y.percentComplete;
+  if (v) return O.intl.formatToPlainString(O.t.APddvF, {
     expirationDate: m
   });
   if (i)
     if (s === u.X0.SELECT) return O.intl.string(O.t.sWUpN8);
     else {
-      if (!(0, h.ui)(r) || !v || S) return T;
+      if (!(0, h.ui)(r) || !A || I) return T;
       let e = (0, p.mH)(r.config);
       return O.intl.format(O.t["1votF6"], {
         rewardNameWithArticle: e,
-        targetMinutes: b.targetMinutes
+        targetMinutes: y.targetMinutes
       })
     } if ((0, _.vv)(r)) return O.intl.string(O.t["o+e9yh"]);
   if (C > 0)
-    if (!I) return O.intl.string(O.t.mOrpXG);
+    if (!S) return O.intl.string(O.t.mOrpXG);
     else return (0, f.YT)({
       quest: r,
-      taskDetails: b,
-      thirdPartyTaskDetails: null != y ? y : true
+      taskDetails: y,
+      thirdPartyTaskDetails: null != b ? b : true
     });
   return O.intl.string(O.t.S6UUc5)
 }

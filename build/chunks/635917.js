@@ -50,7 +50,7 @@ function w() {
     isPremium: true
   }, {
     id: r.Ic.MANGA,
-    iconSource: y,
+    iconSource: b,
     isPremium: true,
     name: i.intl.string(i.t.hGBbF8)
   }, {
@@ -60,17 +60,17 @@ function w() {
     name: i.intl.string(i.t.NkshQt)
   }, {
     id: r.Ic.MATTE_LIGHT,
-    iconSource: A,
+    iconSource: v,
     name: i.intl.string(i.t.G2W302),
     isPremium: true
   }, {
     id: r.Ic.PASTEL,
-    iconSource: S,
+    iconSource: I,
     isPremium: true,
     name: i.intl.string(i.t.mTSkLT)
   }, {
     id: r.Ic.PIRATE,
-    iconSource: I,
+    iconSource: S,
     isPremium: true,
     name: i.intl.string(i.t["EgWTY+"])
   }, {
@@ -140,12 +140,12 @@ function w() {
     name: i.intl.string(i.t.Mfoe3p)
   }, {
     id: r.Ic.IN_RAINBOWS,
-    iconSource: b,
+    iconSource: y,
     isPremium: true,
     name: i.intl.string(i.t.yxJB9E)
   }, {
     id: r.Ic.MIDNIGHT_PRISM,
-    iconSource: v,
+    iconSource: A,
     isPremium: true,
     name: i.intl.string(i.t.nshUZZ)
   }, {

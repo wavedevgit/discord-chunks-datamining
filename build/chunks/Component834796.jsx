@@ -1,18 +1,18 @@
-/** Chunk was on 55926 **/
-/** chunk id: 834796, original params: e,i,t (module,exports,require) **/
+/** Chunk was on 58197 **/
+/** chunk id: 834796, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  A: () => r
+  A: () => s
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk804870 = require("./804870.jsx"),
   Chunk242640 = require("./242640.jsx");
 
-function r(e) {
+function s(e) {
   let {
-    cardSize: i = l.Y.MEDIUM
+    cardSize: t = l.Y.MEDIUM
   } = e;
-  return (0, n.jsx)(s.Zu, {
-    cardSize: i
+  return (0, n.jsx)(r.Zu, {
+    cardSize: t
   })
 }

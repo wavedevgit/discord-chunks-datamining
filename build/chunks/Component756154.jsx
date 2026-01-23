@@ -50,18 +50,18 @@ function B(e) {
   return (0, u.HU)({
     location: t.name,
     subsection: s
-  }), (0, n.jsxs)(A.A, {
+  }), (0, n.jsxs)(_.A, {
     className: U.wx,
     innerClassname: U.__invalid_innerHeader,
     channelId: G.VV.MEMBER_SAFETY,
     guildId: t.id,
     hideSearch: true,
-    children: [(0, n.jsx)(A.A.Icon, {
-      icon: c.nFg,
+    children: [(0, n.jsx)(_.A.Icon, {
+      icon: o.nFg,
       "aria-hidden": true
-    }), (0, n.jsx)(A.A.Title, {
+    }), (0, n.jsx)(_.A.Title, {
       children: a
-    }), i && (0, n.jsx)(D.A, {
+    }), i && (0, n.jsx)(C.A, {
       guildId: t.id,
       currentTab: l,
       onTabSelect: r
@@ -75,9 +75,9 @@ function F(e) {
     guildId: l
   } = e, i = null != (t = (0, v.H)({
     guildId: l
-  })) ? t : 0, [u, b] = r.useState(i > 0 ? y.D.PENDING : y.D.ALL_MEMBERS), A = (0, a.bG)([T.A], () => T.A.getGuild(l)), {
-    analyticsLocations: D
-  } = (0, o.Ay)(d.A.MEMBER_SAFETY_PAGE), G = (0, h.n)({
+  })) ? t : 0, [u, b] = r.useState(i > 0 ? E.D.PENDING : E.D.ALL_MEMBERS), _ = (0, a.bG)([T.A], () => T.A.getGuild(l)), {
+    analyticsLocations: C
+  } = (0, d.Ay)(c.A.MEMBER_SAFETY_PAGE), G = (0, f.n)({
     guildId: l
   }), {
     guildJoinRequests: L
@@ -87,67 +87,67 @@ function F(e) {
     sortOrder: G
   });
   r.useEffect(() => {
-    (null == A ? true : A.features.has(w.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) || b(y.D.ALL_MEMBERS)
-  }, [A]);
-  let F = (0, _.fw)(l),
+    (null == _ ? true : _.features.has(w.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) || b(E.D.ALL_MEMBERS)
+  }, [_]);
+  let F = (0, y.fw)(l),
     V = (0, x.q)(l),
     z = r.useRef(null);
   (0, O.e)(l);
   let {
     fetchNextPage: H
-  } = (0, f.K)({
+  } = (0, h.K)({
     guildId: l,
     guildJoinRequests: L
   }), q = r.useCallback(async () => {
     var e;
-    if (u === y.D.ALL_MEMBERS) return;
+    if (u === E.D.ALL_MEMBERS) return;
     let t = null == (e = z.current) ? true : e.getScrollerState();
     null == t || t.scrollHeight - t.scrollTop - t.offsetHeight < 200 && await H(G, u)
   }, [u, u, G, H]), W = r.useCallback(async e => {
     u === e || (b(e), m.A.setSelectedGuildJoinRequest(l, null), "ALL_MEMBERS" !== e && await H(G, e))
   }, [u, l, H, G]);
   r.useEffect(() => {
-    if (!F && null != A) {
+    if (!F && null != _) {
       var e;
-      let t = null == (e = S.Ay.getDefaultChannel(A.id)) ? true : e.id;
-      (0, p.uh)(A.id, t)
+      let t = null == (e = S.Ay.getDefaultChannel(_.id)) ? true : e.id;
+      (0, A.uh)(_.id, t)
     }
-  }, [A, F]);
-  let K = (0, a.bG)([E.Ay], () => null != E.Ay.getGuildSidebarState(l), [l]);
-  return null != A && F ? (0, n.jsxs)(o.f5, {
-    value: D,
+  }, [_, F]);
+  let K = (0, a.bG)([p.Ay], () => null != p.Ay.getGuildSidebarState(l), [l]);
+  return null != _ && F ? (0, n.jsxs)(d.f5, {
+    value: C,
     children: [(0, n.jsxs)("div", {
       className: s()(k.TE, U.MY, {
         [k.js]: K
       }),
       children: [(0, n.jsx)(B, {
-        guild: A,
+        guild: _,
         currentTab: u,
         onTabSelect: W
-      }), (0, n.jsx)(c.T7Y, {
+      }), (0, n.jsx)(o.T7Y, {
         onScroll: q,
         ref: z,
         orientation: "vertical",
         children: (0, n.jsx)("div", {
           className: s()(k.Qs, U.kL),
-          children: u === y.D.ALL_MEMBERS ? (0, n.jsxs)(n.Fragment, {
+          children: u === E.D.ALL_MEMBERS ? (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)(R.A, {
-              guild: A
+              guild: _
             }), (0, n.jsx)(M.A, {
-              guild: A
+              guild: _
             })]
           }) : (0, n.jsx)(I.A, {
-            guildId: A.id,
+            guildId: _.id,
             currentTab: u
           })
         })
-      }), (0, n.jsx)(C.A, {
-        guildId: A.id
+      }), (0, n.jsx)(P.A, {
+        guildId: _.id
       })]
-    }), V && (u === y.D.ALL_MEMBERS ? (0, n.jsx)(P.A, {
-      guildId: A.id
+    }), V && (u === E.D.ALL_MEMBERS ? (0, n.jsx)(D.A, {
+      guildId: _.id
     }) : (0, n.jsx)(N.A, {
-      guildId: A.id
+      guildId: _.id
     }))]
   }) : null
 }

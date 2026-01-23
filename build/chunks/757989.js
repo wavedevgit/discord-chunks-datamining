@@ -55,14 +55,14 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = "overlay-negative-experiment-notification-settings",
-  y = "overlay-negative-experiment-widget-settings",
+let y = "overlay-negative-experiment-notification-settings",
+  b = "overlay-negative-experiment-widget-settings",
   O = false,
-  A = false,
-  v = true,
-  S = new Chunk118356.Vy("OverlayNegativeWidgetExperimentManager");
+  v = false,
+  A = true,
+  I = new Chunk118356.Vy("OverlayNegativeWidgetExperimentManager");
 
-function I(e) {
+function S(e) {
   switch (e) {
     case _.uss.VOICE:
     case _.uss.TEXT:
@@ -81,7 +81,7 @@ let T = {
 };
 
 function C(e) {
-  let [t] = l.A.getWidgetsByTypeAndLayout(e, I(e));
+  let [t] = l.A.getWidgetsByTypeAndLayout(e, S(e));
   if (null != t || ([t] = l.A.getWidgetsByType(e), null != t)) return t;
   for (let t of Object.values(l.A.getAllWidgets()))
     if (t.type === e) return t
@@ -90,11 +90,11 @@ class N {
   constructor() {
     h(this, "_widgetSettings", true), h(this, "_notificationSettings", true), h(this, "setWidgetSetting", (e, t) => {
       var n;
-      this._widgetSettings[e] = m({}, null != (n = this._widgetSettings[e]) ? n : {}, t), __OVERLAY__ || i.w.set(y, this._widgetSettings)
+      this._widgetSettings[e] = m({}, null != (n = this._widgetSettings[e]) ? n : {}, t), __OVERLAY__ || i.w.set(b, this._widgetSettings)
     }), h(this, "getWidgetSetting", e => this._widgetSettings[e]), h(this, "hasWidgetSetting", e => null != this._widgetSettings[e]), h(this, "setNotificationSetting", (e, t) => {
       var n;
-      this._notificationSettings[e] = m({}, null != (n = this._notificationSettings[e]) ? n : {}, t), __OVERLAY__ || i.w.set(b, this._notificationSettings)
-    }), h(this, "hasNotificationSetting", e => null != this._notificationSettings[e]), h(this, "getNotificationSetting", e => this._notificationSettings[e]), this._widgetSettings = i.w.get(y, {}), this._notificationSettings = i.w.get(b, {}), __OVERLAY__ && (this._widgetSettings = {}, this._notificationSettings = {})
+      this._notificationSettings[e] = m({}, null != (n = this._notificationSettings[e]) ? n : {}, t), __OVERLAY__ || i.w.set(y, this._notificationSettings)
+    }), h(this, "hasNotificationSetting", e => null != this._notificationSettings[e]), h(this, "getNotificationSetting", e => this._notificationSettings[e]), this._widgetSettings = i.w.get(b, {}), this._notificationSettings = i.w.get(y, {}), __OVERLAY__ && (this._widgetSettings = {}, this._notificationSettings = {})
   }
 }
 class R {
@@ -144,7 +144,7 @@ class w {
       let t = C(e);
       null != t && (this.initializeWidget(e), __OVERLAY__ || await this._config.overrideDefaultWidgetPinned(e, O), await (0, a.v0)(t.id, {
         forcedPinnedState: O,
-        shouldTrack: A
+        shouldTrack: v
       }))
     }), h(this, "restoreWidget", async e => {
       var t;
@@ -154,7 +154,7 @@ class w {
         s = C(e);
       null == s || (e === _.uss.VOICE && (i = true), __OVERLAY__ || await this._config.restoreDefaultWidgetPinned(e), null != i && await (0, a.v0)(s.id, {
         forcedPinnedState: i,
-        shouldTrack: A
+        shouldTrack: v
       }))
     }), h(this, "updateNotificationSetting", (e, t) => {
       this._storage.setNotificationSetting(e, {
@@ -165,12 +165,12 @@ class w {
       let t = f.A.isNotificationDisabledBySetting(e);
       this.updateNotificationSetting(e, t)
     }), h(this, "disableNotification", async e => {
-      this.initializeNotification(e), await s.A.setNotificationDisabledSetting(e, v, A)
+      this.initializeNotification(e), await s.A.setNotificationDisabledSetting(e, A, v)
     }), h(this, "restoreNotification", async e => {
       var t;
       let n = this._storage.getNotificationSetting(e),
         r = null != (t = null == n ? true : n.disabled) && t;
-      null != r && await s.A.setNotificationDisabledSetting(e, r, A)
+      null != r && await s.A.setNotificationDisabledSetting(e, r, v)
     }), this._config.initializeAllDefaultWidgetConfigs()
   }
 }
@@ -204,7 +204,7 @@ class L extends Chunk439372.A {
       for (let t of Object.values(_.uss)) e._settings.initializeWidget(t);
       for (let t of r) await e._settings.restoreWidget(t);
       for (let t of n) await e._settings.unpinWidget(t);
-      n.size > 0 && S.info("Experiment Override: Widgets", {
+      n.size > 0 && I.info("Experiment Override: Widgets", {
         widgetsToRestore: r,
         widgetsToOverride: n
       })
@@ -228,7 +228,7 @@ class L extends Chunk439372.A {
       for (let e of P()) this._settings.initializeNotification(e);
       for (let e of n) await this._settings.restoreNotification(e);
       for (let e of t) await this._settings.disableNotification(e);
-      t.size > 0 && S.info("Experiment Override: Notifications", {
+      t.size > 0 && I.info("Experiment Override: Notifications", {
         notificationsToRestore: n,
         notificationsToOverride: t
       })
@@ -240,7 +240,7 @@ class L extends Chunk439372.A {
         try {
           await this.processWidgetExperiment(e), await this.processNotificationExperiment(e)
         } catch (e) {
-          S.error("Experiments processing failed", {
+          I.error("Experiments processing failed", {
             error: e
           })
         } finally {

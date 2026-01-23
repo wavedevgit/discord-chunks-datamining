@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 699022, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,26 +21,26 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk342910 = require("./342910.js");
 
-function O(e) {
+function _(e) {
   let {
     channel: t
   } = e, {
     parentAnalyticsLocation: n
-  } = (0, s.Ay)(), O = (0, i.bG)([b.A], () => b.A.getSelectedParticipant(t.id)), j = (null == O ? true : O.type) === m.lp.STREAM, v = (0, i.bG)([p.A], () => j ? p.A.getActiveStreamForStreamKey(O.id) : null), {
-    ignoreSenderPreference: x
+  } = (0, a.Ay)(), _ = (0, i.bG)([g.A], () => g.A.getSelectedParticipant(t.id)), O = (null == _ ? true : _.type) === b.lp.STREAM, j = (0, i.bG)([h.A], () => O ? h.A.getActiveStreamForStreamKey(_.id) : null), {
+    ignoreSenderPreference: v
   } = d.A.useExperiment({
     location: "ActionBarClipsButton"
   }, {
     autoTrackExposure: false
   }), {
-    viewerClippingAllowed: E,
-    isAtMaxSavingClipOperations: _
+    viewerClippingAllowed: x,
+    isAtMaxSavingClipOperations: E
   } = (0, i.cf)([o.A], () => ({
-    viewerClippingAllowed: null != v && (o.A.isViewerClippingAllowedForUser(v.ownerId) || x),
+    viewerClippingAllowed: null != j && (o.A.isViewerClippingAllowedForUser(j.ownerId) || v),
     isAtMaxSavingClipOperations: o.A.getIsAtMaxSaveClipOperations()
-  })), C = (0, c.Et)(), S = (null == v ? true : v.ownerId) === h.default.getId(), I = !C || !(S || E) || _ || null == O, N = l.useCallback(e => {
+  })), C = (0, c.Et)(), S = (null == j ? true : j.ownerId) === f.default.getId(), I = !C || !(S || x) || E || null == _, N = l.useCallback(e => {
     var t, n;
-    return (0, r.jsx)(a.xpe, (t = function(e) {
+    return (0, r.jsx)(s.xpe, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -70,14 +70,14 @@ function O(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   }, []);
-  return (0, r.jsx)(f.A, {
+  return (0, r.jsx)(p.A, {
     className: y.g,
     onClick: () => {
-      I || ((0, g.X)(n, g.O.CLIP), S ? (0, u.l0)() : (0, u.yd)(O.id))
+      I || ((0, m.X)(n, m.O.CLIP), S ? (0, u.l0)() : (0, u.yd)(_.id))
     },
     disabled: I,
     iconComponent: N,
-    label: null == v ? A.intl.string(A.t.eg5qtV) : S || E ? C ? _ ? true : A.intl.string(A.t.U4URzP) : A.intl.string(A.t.wSS1yN) : A.intl.string(A.t.aRifJX),
+    label: null == j ? A.intl.string(A.t.eg5qtV) : S || x ? C ? E ? true : A.intl.string(A.t.U4URzP) : A.intl.string(A.t.wSS1yN) : A.intl.string(A.t.aRifJX),
     grow: false
   })
 }

@@ -10,10 +10,10 @@ var Chunk64700 = require("./64700.js"),
   Chunk853922 = require("./853922.js");
 
 function a(e) {
-  let [t, n] = r.useState(null != e), [a, c] = r.useState(), [o, d] = r.useState(), u = r.useCallback(async e => {
-    n(true), c(true);
+  let [t, n] = r.useState(null != e), [a, o] = r.useState(), [c, d] = r.useState(), u = r.useCallback(async e => {
+    n(true), o(true);
     try {
-      var t, r, a, o, u;
+      var t, r, a, c, u;
       let n = await l.jh(e);
       d({
         isEligibleForMonetization: n.sufficient,
@@ -34,11 +34,11 @@ function a(e) {
         latestRequest: n.latest_request,
         rejection: n.rejection,
         guildMemberCount: null == (a = n.health_score) ? true : a.guild_size,
-        communicatorCount: null == (o = n.health_score) ? true : o.communicators,
+        communicatorCount: null == (c = n.health_score) ? true : c.communicators,
         retentionScore: null == (u = n.health_score) ? true : u.perc_ret_w1
       })
     } catch (e) {
-      c(new i.A(e))
+      o(new i.A(e))
     } finally {
       n(false)
     }
@@ -46,7 +46,7 @@ function a(e) {
   return {
     error: a,
     loading: t,
-    eligibility: o,
+    eligibility: c,
     refresh: r.useCallback(() => {
       null != e && u(e)
     }, [e, u])

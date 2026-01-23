@@ -2,7 +2,7 @@
 /** chunk id: 600955, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => c
+  A: () => o
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -11,15 +11,15 @@ var Chunk503698 = require("./503698.js"),
   Chunk397927 = require("./397927.js"),
   Chunk690450 = require("./690450.js");
 
-function c(e) {
+function o(e) {
   var t, n;
   let {
     checked: i,
-    onChange: c,
-    disabled: o,
+    onChange: o,
+    disabled: c,
     className: d,
     tooltipProps: u
-  } = e, f = e => {
+  } = e, g = e => {
     e.stopPropagation(), e.preventDefault()
   };
   return (0, r.jsx)(s.DUT, (t = function(e) {
@@ -40,15 +40,15 @@ function c(e) {
     }
     return e
   }({
-    onClick: f,
-    onMouseDown: f,
-    onMouseUp: f,
+    onClick: g,
+    onMouseDown: g,
+    onMouseUp: g,
     className: l()(a.ZW, d)
   }, u), n = n = {
     children: (0, r.jsx)(s.dOG, {
       checked: i,
-      onChange: c,
-      disabled: o
+      onChange: o,
+      disabled: c
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

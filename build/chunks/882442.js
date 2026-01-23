@@ -16,10 +16,10 @@ async function o() {
     let {
       body: e
     } = await r.Bo.get({
-      url: s.Rsh.CHECKOUT_RECOVERY,
+      url: a.Rsh.CHECKOUT_RECOVERY,
       rejectWithError: true
     }), t = (null == e ? true : e.is_eligible) === true;
-    t && !a.A.hasFetchedPaymentSources && await (0, i.$o)(), l.h.dispatch({
+    t && !s.A.hasFetchedPaymentSources && await (0, i.$o)(), l.h.dispatch({
       type: "CHECKOUT_RECOVERY_STATUS_FETCH_SUCCESS",
       isTargeted: t
     })

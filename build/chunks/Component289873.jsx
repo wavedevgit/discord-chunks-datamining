@@ -96,20 +96,20 @@ function E(e) {
     i18n: m
   } = (0, l.G9)(), {
     reducedMotion: E
-  } = i.useContext(o.C), b = E.enabled ? g(n) : n, y = null != (t = h["aria-label"]) ? t : m.SPINNER_LOADING_LABEL;
-  if ("spinningCircle" === b || "spinningCircleSimple" === b) return (0, r.jsx)("div", p(d({
-    className: s()(c.spinner, c[b], u, {
+  } = i.useContext(o.C), y = E.enabled ? g(n) : n, b = null != (t = h["aria-label"]) ? t : m.SPINNER_LOADING_LABEL;
+  if ("spinningCircle" === y || "spinningCircleSimple" === y) return (0, r.jsx)("div", p(d({
+    className: s()(c.spinner, c[y], u, {
       [c.stopAnimation]: !a
     }),
     role: "img"
   }, h), {
-    "aria-label": y,
+    "aria-label": b,
     children: (0, r.jsx)("div", {
       className: c.spinningCircleInner,
       children: (0, r.jsxs)("svg", {
         className: c.circular,
         viewBox: "25 25 50 50",
-        children: ["spinningCircle" === b && (0, r.jsxs)(r.Fragment, {
+        children: ["spinningCircle" === y && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("circle", {
             className: s()(c.path, c.path3, f),
             cx: "50",
@@ -136,15 +136,15 @@ function E(e) {
       [c.stopAnimation]: !a
     }),
     role: "img",
-    "aria-label": y
+    "aria-label": b
   }, h), {
     children: (0, r.jsxs)("span", {
-      className: s()(c.inner, c[b]),
+      className: s()(c.inner, c[y]),
       children: [(0, r.jsx)("span", {
         className: O
       }), (0, r.jsx)("span", {
         className: O
-      }), "pulsingEllipsis" === b || "lowMotion" === b ? (0, r.jsx)("span", {
+      }), "pulsingEllipsis" === y || "lowMotion" === y ? (0, r.jsx)("span", {
         className: O
       }) : null]
     })

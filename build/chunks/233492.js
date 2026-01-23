@@ -1,9 +1,9 @@
 /** Chunk was on 82220 **/
-/** chunk id: 233492, original params: e,t,n (module,exports,require) **/
+/** chunk id: 233492, original params: e,n,t (module,exports,require) **/
 module.exports = {
-  Fv: "_79155e6ba540a483",
-  WG: "_353faa5dc97ef0a3",
-  HA: "_1c37e4b95c545538",
-  uM: "_1c3571e8e58b9ab4",
-  p: "ec1a6be421e159c2"
+  Fv: "categoryRow_d295eb",
+  WG: "channelRow_d295eb",
+  HA: "channelName_d295eb",
+  uM: "channelIconContainer_d295eb",
+  p: "channelIcon_d295eb"
 }

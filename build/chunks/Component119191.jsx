@@ -53,28 +53,28 @@ function E(e) {
     messageWithoutKeybind: m,
     highlightAdminWarningIfElevated: g = false,
     useFlexboxLayout: E = false,
-    keybindClassName: b
-  } = e, y = (0, d.F)(), O = (0, i.bG)([s.Ay], () => {
+    keybindClassName: y
+  } = e, b = (0, d.F)(), O = (0, i.bG)([s.Ay], () => {
     let e = s.Ay.getVisibleGame();
     return null != e && e.elevated && s.Ay.canShowAdminWarning
-  }), A = (0, l.NP)();
+  }), v = (0, l.NP)();
   return O ? (0, r.jsx)(a.Text, {
     variant: "text-xxs/semibold",
     color: g ? "text-feedback-warning" : "text-muted",
-    children: A ? _.intl.format(_.t.MVS9pV, {
+    children: v ? _.intl.format(_.t.MVS9pV, {
       onSettingsClick: e => {
         e.stopPropagation(), (0, o.A)(true, true), (0, u.openUserSettings)(c.X.OVERLAY_PANEL, {
           section: p.nc_.OVERLAY
         })
       }
     }) : _.intl.string(_.t.PIeSHF)
-  }) : y ? E ? (0, r.jsx)("div", {
+  }) : b ? E ? (0, r.jsx)("div", {
     className: h.FH,
     children: _.intl.format(n, {
       keybind: t,
       keybindHook: e => (0, r.jsx)(f.G, {
         keybind: t,
-        className: b
+        className: y
       }, t.join("+"))
     })
   }) : (0, r.jsx)(r.Fragment, {

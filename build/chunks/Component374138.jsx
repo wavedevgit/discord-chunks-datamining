@@ -56,8 +56,8 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = "game_console_alert_modal",
-  y = "game_console_ptt_alert_modal",
+let y = "game_console_alert_modal",
+  b = "game_console_ptt_alert_modal",
   O = {
     maybeShowPTTAlert(e) {
       if (c.A.getMode() !== p.TBI.PUSH_TO_TALK || (0, l.k8)(a.M.CONSOLE_PTT_DISABLE_ALERT)) return Promise.resolve();
@@ -78,8 +78,8 @@ let b = "game_console_alert_modal",
               onClick: n
             }]
           }));
-        (0, s.hasModalOpen)(y) ? (0, s.updateModal)(y, e => o(e)) : (0, s.openModalLazy)(async () => e => o(e), {
-          modalKey: y
+        (0, s.hasModalOpen)(b) ? (0, s.updateModal)(b, e => o(e)) : (0, s.openModalLazy)(async () => e => o(e), {
+          modalKey: b
         })
       })
     },
@@ -92,7 +92,7 @@ let b = "game_console_alert_modal",
       } = e, c = (0, r.jsx)(d.P, {
         body: n,
         errorCodeMessage: a,
-        dismissCallback: () => (0, s.closeModal)(b)
+        dismissCallback: () => (0, s.closeModal)(y)
       });
 
       function h() {
@@ -112,8 +112,8 @@ let b = "game_console_alert_modal",
         }],
         children: c
       }));
-      (0, s.hasModalOpen)(b) ? (0, s.updateModal)(b, e => g(e)) : (0, s.openModalLazy)(async () => e => g(e), {
-        modalKey: b
+      (0, s.hasModalOpen)(y) ? (0, s.updateModal)(y, e => g(e)) : (0, s.openModalLazy)(async () => e => g(e), {
+        modalKey: y
       })
     }
   }

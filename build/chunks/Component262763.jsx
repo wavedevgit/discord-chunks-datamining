@@ -2,7 +2,7 @@
 /** chunk id: 262763, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./65821.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -22,7 +22,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk652215 = require("./652215.js"),
   Chunk64175 = require("./64175.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,14 +31,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -50,16 +50,16 @@ function O(e) {
   if (null == n && !t) throw Error("VoiceChannel, transitionTo: Channel does not have a guildId");
   (0, o.pX)(g.BVt.CHANNEL(n, e.id))
 }
-let A = {
+let v = {
   async handleVoiceConnect(e) {
     let {
       channel: t,
       connected: o,
-      needSubscriptionToAccess: b,
-      locked: A = false,
-      routeDirectlyToChannel: v = false,
-      bypassChangeModal: S,
-      bypassBlockedWarningModal: I,
+      needSubscriptionToAccess: y,
+      locked: v = false,
+      routeDirectlyToChannel: A = false,
+      bypassChangeModal: I,
+      bypassBlockedWarningModal: S,
       bypassGuildIdCheck: T = false
     } = e;
     t.isThread() && (await d.A.unarchiveThreadIfNecessary(t.id), u.A.hasJoined(t.id) || await d.A.joinThread(t, "Join Voice"));
@@ -68,24 +68,24 @@ let A = {
       R = (null == N ? true : N.channelId) === t.id || p.A.getChannelId() === _.A.getCurrentClientVoiceChannelId(t.guild_id),
       w = c.A.getBlockedUsersForVoiceChannel(t.id),
       P = c.A.getIgnoredUsersForVoiceChannel(t.id);
-    return ((0, l.oE)(new Set([...w, ...P])) && (I = true), I || A || o || !(w.size > 0) && !(P.size > 0)) ? !S && !A && (0, m.H)(t) ? new Promise(e => {
+    return ((0, l.oE)(new Set([...w, ...P])) && (S = true), S || v || o || !(w.size > 0) && !(P.size > 0)) ? !I && !v && (0, m.H)(t) ? new Promise(e => {
       (0, i.mMO)(async () => {
         let {
           default: i
         } = await n.e("12963").then(n.bind(n, 24814));
-        return n => (0, r.jsx)(i, y({
+        return n => (0, r.jsx)(i, b({
           channel: t,
           onConfirm: () => e(this.handleVoiceConnect({
             channel: t,
             connected: o,
-            needSubscriptionToAccess: b,
-            routeDirectlyToChannel: v,
-            locked: A,
+            needSubscriptionToAccess: y,
+            routeDirectlyToChannel: A,
+            locked: v,
             bypassChangeModal: true
           }))
         }, n))
       })
-    }) : (A || o || a.default.selectVoiceChannel(t.id), !__OVERLAY__ && (o || R || b || v) && O(t, T), true) : new Promise(e => {
+    }) : (v || o || a.default.selectVoiceChannel(t.id), !__OVERLAY__ && (o || R || y || A) && O(t, T), true) : new Promise(e => {
       (0, i.mMO)(async () => {
         let {
           default: i
@@ -104,9 +104,9 @@ let A = {
             onJoin: () => e(this.handleVoiceConnect({
               channel: t,
               connected: o,
-              needSubscriptionToAccess: b,
-              routeDirectlyToChannel: v,
-              locked: A,
+              needSubscriptionToAccess: y,
+              routeDirectlyToChannel: A,
+              locked: v,
               bypassChangeModal: true,
               bypassBlockedWarningModal: true
             }))

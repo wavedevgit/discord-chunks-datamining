@@ -1,8 +1,8 @@
 /** Chunk was on 59275 **/
-/** chunk id: 628979, original params: e,t,l (module,exports,require) **/
+/** chunk id: 628979, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,104 +19,104 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk450331 = require("./450331.js");
 
-function h(e) {
+function b(e) {
   let {
     handleTransition: t,
-    selectedTab: l,
+    selectedTab: n,
     isNarrow: s,
-    hasText: h
+    hasText: b
   } = e, {
-    searchQuery: E,
-    onSetSearchQuery: v
-  } = (0, f.v)(), [A, x] = r.useState(""), S = (0, d.uM)(), C = (0, i.bG)([c.default], () => c.default.locale), O = r.useRef(null), [_, y] = r.useState(false);
-  r.useEffect(() => {
+    searchQuery: h,
+    onSetSearchQuery: E
+  } = (0, g.v)(), [v, C] = l.useState(""), A = (0, d.uM)(), x = (0, i.bG)([c.default], () => c.default.locale), S = l.useRef(null), [O, y] = l.useState(false);
+  l.useEffect(() => {
     let e = setTimeout(() => {
-      v(A)
+      E(v)
     }, 250);
     return () => clearTimeout(e)
-  }, [A, v]), r.useEffect(() => {
-    x(E)
-  }, [E]), r.useEffect(() => {
-    y(s && h)
-  }, [s, h]);
-  let j = r.useCallback(e => {
-      "Enter" === e.key && v(A)
-    }, [A, v]),
-    L = r.useCallback(e => {
-      u.default.track(g.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == S ? true : S.sessionId,
-        page_section: null == S ? true : S.pageSection,
-        page_category: null == S ? true : S.pageCategory,
-        page_index: null == S ? true : S.pageIndex,
-        page_size: null == S ? true : S.pageSize,
+  }, [v, E]), l.useEffect(() => {
+    C(h)
+  }, [h]), l.useEffect(() => {
+    y(s && b)
+  }, [s, b]);
+  let j = l.useCallback(e => {
+      "Enter" === e.key && E(v)
+    }, [v, E]),
+    T = l.useCallback(e => {
+      u.default.track(p.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        collectibles_shop_session_id: null == A ? true : A.sessionId,
+        page_section: null == A ? true : A.pageSection,
+        page_category: null == A ? true : A.pageCategory,
+        page_index: null == A ? true : A.pageIndex,
+        page_size: null == A ? true : A.pageSize,
         cta_name: e,
-        page_type: l
+        page_type: n
       })
-    }, [l, S]),
-    T = r.useCallback(() => {
-      l !== b.G2.CATALOG && t(b.G2.CATALOG), L(b.uY.SEARCH_ICON), y(true), setTimeout(() => {
+    }, [n, A]),
+    L = l.useCallback(() => {
+      n !== f.G2.CATALOG && t(f.G2.CATALOG), T(f.uY.SEARCH_ICON), y(true), setTimeout(() => {
         var e;
-        return null == (e = O.current) ? true : e.focus()
+        return null == (e = S.current) ? true : e.focus()
       })
-    }, [l, t, L]),
-    I = r.useCallback(() => {
-      l !== b.G2.CATALOG && t(b.G2.CATALOG), L(b.uY.SEARCH_BAR)
-    }, [l, t, L]),
-    N = r.useCallback(() => {
-      x(""), v(""), L(b.uY.SEARCH_BAR_CLEAR), s && y(false)
-    }, [v, L, s]),
-    k = r.useCallback(() => {
-      s && "" === A && y(false)
-    }, [s, A]),
-    R = s && !_,
-    P = (0, n.jsx)(o.DUT, {
-      className: p.qc,
-      onClick: T,
-      children: (0, n.jsx)(o.$p$, {
+    }, [n, t, T]),
+    I = l.useCallback(() => {
+      n !== f.G2.CATALOG && t(f.G2.CATALOG), T(f.uY.SEARCH_BAR)
+    }, [n, t, T]),
+    k = l.useCallback(() => {
+      C(""), E(""), T(f.uY.SEARCH_BAR_CLEAR), s && y(false)
+    }, [E, T, s]),
+    N = l.useCallback(() => {
+      s && "" === v && y(false)
+    }, [s, v]),
+    R = s && !O,
+    P = (0, r.jsx)(o.DUT, {
+      className: _.qc,
+      onClick: L,
+      children: (0, r.jsx)(o.$p$, {
         size: "sm",
         color: o.LU0.colors.INTERACTIVE_ICON_DEFAULT
       })
     }),
-    D = (0, n.jsx)(o.IWV, {
+    B = (0, r.jsx)(o.IWV, {
       size: "sm",
-      ref: O,
+      ref: S,
       onKeyDown: j,
-      query: A,
-      onChange: x,
-      onClear: N,
-      onBlur: k,
-      placeholder: "en-US" === C ? m.intl.string(m.t.arz34K) : m.intl.string(m.t["hIt/Nm"])
+      query: v,
+      onChange: C,
+      onClear: k,
+      onBlur: N,
+      placeholder: "en-US" === x ? m.intl.string(m.t.arz34K) : m.intl.string(m.t["hIt/Nm"])
     }),
     w = {
-      "--custom-search-bar-width": "".concat(b.rr, "px"),
-      "--custom-search-bar-icon-width": "".concat(b.Dy, "px")
+      "--custom-search-bar-width": "".concat(f.rr, "px"),
+      "--custom-search-bar-icon-width": "".concat(f.Dy, "px")
     };
-  if (R) return (0, n.jsx)("div", {
+  if (R) return (0, r.jsx)("div", {
     style: w,
     children: P
   });
-  let B = a()(p.ON, {
-    [p.Nz]: _
+  let D = a()(_.ON, {
+    [_.Nz]: O
   });
-  return _ ? (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)("div", {
-      className: p.j8,
+  return O ? (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)("div", {
+      className: _.j8,
       style: w,
       children: P
-    }), (0, n.jsx)(o.DUT, {
-      className: B,
+    }), (0, r.jsx)(o.DUT, {
+      className: D,
       style: w,
       onClick: I,
       ignoreKeyPress: true,
-      children: D
+      children: B
     })]
-  }) : (0, n.jsx)("div", {
-    className: B,
+  }) : (0, r.jsx)("div", {
+    className: D,
     style: w,
-    children: (0, n.jsx)(o.DUT, {
+    children: (0, r.jsx)(o.DUT, {
       ignoreKeyPress: true,
       onClick: I,
-      children: D
+      children: B
     })
   })
 }

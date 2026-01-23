@@ -1,7 +1,7 @@
 /** Chunk was on 58652 **/
 /** chunk id: 132318, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => c
+  A: () => d
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -9,14 +9,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk46054 = require("./46054.js"),
   Chunk861662 = require("./861662.jsx"),
   Chunk967972 = require("./967972.js");
-let c = e => {
+let d = e => {
   let {
     node: {
       info: t
     }
   } = e, n = r.useMemo(() => {
     var e, t;
-    return i.A.reactParserFor((e = function(e) {
+    return a.A.reactParserFor((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           l = Object.keys(n);
@@ -33,7 +33,7 @@ let c = e => {
         })
       }
       return e
-    }({}, i.A.defaultRules), t = t = {
+    }({}, a.A.defaultRules), t = t = {
       link: s.B
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
@@ -46,9 +46,9 @@ let c = e => {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
   }, []);
-  return null == t ? null : (0, l.jsx)(a.po8, {
+  return null == t ? null : (0, l.jsx)(i.po8, {
     className: o.e,
-    messageType: a.YCn.INFO,
+    messageType: i.YCn.INFO,
     children: n(t)
   })
 }

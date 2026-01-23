@@ -42,40 +42,40 @@ let E = function(e) {
     quest: h,
     separatorSpacing: m = 2,
     theme: E = p.NJ8.DARK,
-    withCosponsor: b = true,
-    withGameTile: y = true,
+    withCosponsor: y = true,
+    withGameTile: b = true,
     logotypeStyle: O,
-    onLoadComplete: A
-  } = e, v = (0, l.Mw)(E) ? p.NJ8.DARK : p.NJ8.LIGHT, S = (0, u.a5)(h.id, v), I = b && null != h.config.cosponsorMetadata && null != S;
+    onLoadComplete: v
+  } = e, A = (0, l.Mw)(E) ? p.NJ8.DARK : p.NJ8.LIGHT, I = (0, u.a5)(h.id, A), S = y && null != h.config.cosponsorMetadata && null != I;
   return (0, r.jsxs)("div", {
     className: a()(_.Iu, t),
-    children: [y && (0, r.jsx)(f.Sn, {
+    children: [b && (0, r.jsx)(f.Sn, {
       id: "QuestPartnerBranding_gameTile",
       children: e => (0, r.jsx)("img", {
         ref: e,
         className: _._Y,
         alt: "",
-        src: (0, d.tW)(h, d.fY.GAME_TILE, v).url,
+        src: (0, d.tW)(h, d.fY.GAME_TILE, A).url,
         style: {
           borderRadius: g(i),
           width: i,
           height: i
         },
-        onLoad: A
+        onLoad: v
       })
     }), (0, r.jsx)(f.Sn, {
       id: "QuestPartnerBranding_gameLogotype",
       children: e => (0, r.jsx)(s.animated.img, {
         ref: e,
         className: a()(_.lW, n, {
-          [_.TO]: I
+          [_.TO]: S
         }),
         style: O,
         alt: h.config.messages.gameTitle,
-        src: (0, d.tW)(h, d.fY.LOGO_TYPE, v).url,
-        onLoad: A
+        src: (0, d.tW)(h, d.fY.LOGO_TYPE, A).url,
+        onLoad: v
       })
-    }), I && (0, r.jsxs)(r.Fragment, {
+    }), S && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: _.ub,
         style: {
@@ -94,8 +94,8 @@ let E = function(e) {
             className: a()(_.lW, _.TO, n),
             style: O,
             alt: null != (t = null == (i = h.config.cosponsorMetadata) ? true : i.name) ? t : "",
-            src: S.url,
-            onLoad: A
+            src: I.url,
+            onLoad: v
           })
         }
       })]

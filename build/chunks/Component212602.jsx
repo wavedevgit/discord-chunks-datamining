@@ -1,8 +1,8 @@
 /** Chunk was on 59275 **/
-/** chunk id: 212602, original params: e,t,l (module,exports,require) **/
+/** chunk id: 212602, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => E
 }), require("./638769.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,38 +20,38 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk785244 = require("./785244.js"),
   Chunk816917 = require("./816917.js");
-let v = () => {
+let E = () => {
   let {
     sort: e,
     onSetSort: t,
-    hasRelevanceFilters: l
-  } = (0, f.v)(), s = (0, d.uM)(), v = (0, b.y)("CollectiblesSortSelect"), A = l(), x = r.useMemo(() => g.QB.filter(e => e.sortType !== o.$.RELEVANCE || A), [A]), S = r.useCallback(e => {
+    hasRelevanceFilters: n
+  } = (0, g.v)(), s = (0, d.uM)(), E = (0, f.y)("CollectiblesSortSelect"), v = n(), C = l.useMemo(() => p.QB.filter(e => e.sortType !== o.$.RELEVANCE || v), [v]), A = l.useCallback(e => {
     let {
       sortType: t,
-      sortDirection: l
+      sortDirection: n
     } = e;
     return t === o.$.RECENCY ? {
-      label: p.intl.string(p.t["51Bhiz"]),
+      label: _.intl.string(_.t["51Bhiz"]),
       value: "recent",
       id: "recent"
-    } : t === o.$.PRICE ? l === i.A.ASC ? {
-      label: p.intl.string(p.t.m8RVU2),
+    } : t === o.$.PRICE ? n === i.A.ASC ? {
+      label: _.intl.string(_.t.m8RVU2),
       value: "price-asc",
       id: "price-asc"
     } : {
-      label: p.intl.string(p.t.zBwQJO),
+      label: _.intl.string(_.t.zBwQJO),
       value: "price-desc",
       id: "price-desc"
     } : t === o.$.RELEVANCE ? {
-      label: p.intl.string(p.t["XoeT/z"]),
+      label: _.intl.string(_.t["XoeT/z"]),
       value: "relevance",
       id: "relevance"
     } : {
-      label: p.intl.string(p.t.Y68e5p),
+      label: _.intl.string(_.t.Y68e5p),
       value: "popularity",
       id: "popularity"
     }
-  }, []), C = r.useCallback(e => ({
+  }, []), x = l.useCallback(e => ({
     recent: {
       sortType: o.$.RECENCY,
       sortDirection: i.A.DESC
@@ -72,28 +72,28 @@ let v = () => {
       sortType: o.$.RELEVANCE,
       sortDirection: i.A.DESC
     }
-  })[e], []), O = r.useCallback(e => {
-    let l = S(C(e));
+  })[e], []), S = l.useCallback(e => {
+    let n = A(x(e));
     u.default.track(m.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == s ? true : s.sessionId,
       page_section: null == s ? true : s.pageSection,
       page_category: null == s ? true : s.pageCategory,
       page_index: null == s ? true : s.pageIndex,
       page_size: null == s ? true : s.pageSize,
-      cta_name: "sort by ".concat(l.label.toLowerCase()),
+      cta_name: "sort by ".concat(n.label.toLowerCase()),
       page_type: "catalog"
-    }), t(C(e))
-  }, [s, S, C, t]), _ = S(e);
-  return (0, n.jsx)("div", {
-    className: a()(h.k, {
-      [E.T3]: v
+    }), t(x(e))
+  }, [s, A, x, t]), O = A(e);
+  return (0, r.jsx)("div", {
+    className: a()(b.k, {
+      [h.T3]: E
     }),
-    children: (0, n.jsx)(c.l6P, {
-      label: p.intl.string(p.t.uaX705),
+    children: (0, r.jsx)(c.l6P, {
+      label: _.intl.string(_.t.uaX705),
       hideLabel: true,
-      options: x.map(S),
-      onSelectionChange: O,
-      value: _.value,
+      options: C.map(A),
+      onSelectionChange: S,
+      value: O.value,
       selectionMode: "single",
       fullWidth: true
     })

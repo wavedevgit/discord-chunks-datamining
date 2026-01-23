@@ -8,5 +8,5 @@ var Chunk417597 = require("./417597.js"),
   Chunk701785 = require("./701785.js");
 
 function i(e) {
-  return (0, t.yK)([r.h, a.A], () => r.h.getResourceChannels(e).filter(e => null != a.A.getChannel(e.channelId)))
+  return (0, t.yK)([a.h, r.A], () => a.h.getResourceChannels(e).filter(e => null != r.A.getChannel(e.channelId)))
 }

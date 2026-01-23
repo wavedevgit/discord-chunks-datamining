@@ -117,9 +117,9 @@ class el extends(r = Chunk64700.PureComponent) {
     W.default.track(X.HAw.REGISTER_VIEWED, er({
       location: null != t ? "Invite Register Page" : "Non-Invite Register Page",
       registration_source: this.registrationSource
-    }, null != e ? (0, I.A)(e, false, false) : {}), {
+    }, null != e ? (0, O.A)(e, false, false) : {}), {
       flush: true
-    }), null == this.props.consentRequired && g.A.getLocationMetadata(), (0, G.d)("register")
+    }), null == this.props.consentRequired && m.A.getLocationMetadata(), (0, G.d)("register")
   }
   componentWillUnmount() {
     this._retryTimer.stop()
@@ -181,37 +181,37 @@ class el extends(r = Chunk64700.PureComponent) {
       giftCode: o,
       onRegister: c,
       usernameSuggestion: u
-    } = this.props, d = null != l ? l.code : null, h = null != o ? o.skuId : null, f = b.mZ.getState(), p = (0, Q.uJ)(u) ? null : t === u;
+    } = this.props, d = null != l ? l.code : null, h = null != o ? o.skuId : null, p = v.mZ.getState(), g = (0, Q.uJ)(u) ? null : t === u;
     H._.dispatch(X.jej.WAVE_EMPHASIZE), this.setState({
       registering: true,
       apiErrors: {}
     });
     try {
-      this.inGuildOrChannelInviteFlow() ? await (0, j.Ay)({
+      this.inGuildOrChannelInviteFlow() ? await (0, y.Ay)({
         consent: i,
         invite: d,
         giftCodeSKUId: h,
-        usedUsernameSuggestion: p,
+        usedUsernameSuggestion: g,
         globalName: n,
         birthday: s
-      }) : await (0, j.pG)({
+      }) : await (0, y.pG)({
         email: e,
         username: t,
         globalName: n,
         consent: i,
         password: r,
         invite: d,
-        usedUsernameSuggestion: p,
+        usedUsernameSuggestion: g,
         guildTemplateCode: null == a ? true : a.code,
         giftCodeSKUId: h,
         birthday: s,
-        promoEmailConsent: f.required ? f : null
+        promoEmailConsent: p.required ? p : null
       }), null == c || c()
     } catch (t) {
       if (this.setState({
           registering: false
-        }), !(t instanceof m.LG)) return;
-      let e = (0, v.W)(t);
+        }), !(t instanceof f.LG)) return;
+      let e = (0, j.W)(t);
       this.setState({
         apiErrors: e
       })
@@ -228,7 +228,7 @@ class el extends(r = Chunk64700.PureComponent) {
     } = this.props;
     return t ? (0, i.jsx)("div", {
       className: ee.IQ,
-      children: (0, i.jsx)(p.JuY, {
+      children: (0, i.jsx)(g.JuY, {
         label: $.intl.format($.t.qMDAP0, {
           termsURL: X.X7G.TERMS,
           privacyURL: X.X7G.PRIVACY
@@ -239,7 +239,7 @@ class el extends(r = Chunk64700.PureComponent) {
         }),
         labelType: "secondary"
       })
-    }) : (0, i.jsx)(p.Text, {
+    }) : (0, i.jsx)(g.Text, {
       variant: "text-sm/normal",
       color: "text-subtle",
       className: a()(et.Ot, ee.E2),
@@ -257,14 +257,14 @@ class el extends(r = Chunk64700.PureComponent) {
         globalName: e
       })
     }, n = this.state.globalName;
-    return (0, i.jsxs)(y.Ay, {
+    return (0, i.jsxs)(b.Ay, {
       className: e,
-      children: [(0, i.jsx)(q.M, {}), (0, i.jsxs)(y.eB, {
+      children: [(0, i.jsx)(q.M, {}), (0, i.jsxs)(b.eB, {
         className: ee.y0,
-        children: [(0, i.jsx)(f.m, {
+        children: [(0, i.jsx)(p.m, {
           text: $.intl.string($.t["hBB85/"]),
           position: "right",
-          children: (0, i.jsx)(y.pd, {
+          children: (0, i.jsx)(b.pd, {
             label: $.intl.string($.t["9AjdkD"]),
             autoFocus: true,
             className: et.QB,
@@ -275,7 +275,7 @@ class el extends(r = Chunk64700.PureComponent) {
             onFocus: () => this.trackInputFocus("username"),
             onBlur: () => this.trackInputBlur("username")
           })
-        }), (0, i.jsx)(p.Text, {
+        }), (0, i.jsx)(g.Text, {
           variant: "text-sm/normal",
           color: "text-subtle",
           className: a()(et.QX, ee.E2),
@@ -285,7 +285,7 @@ class el extends(r = Chunk64700.PureComponent) {
           })
         }), (0, i.jsx)("div", {
           className: et.Ot,
-          children: (0, i.jsx)(p.Button, {
+          children: (0, i.jsx)(g.Button, {
             text: $.intl.string($.t["825cFy"]),
             variant: "primary",
             fullWidth: true,
@@ -293,7 +293,7 @@ class el extends(r = Chunk64700.PureComponent) {
           })
         }), (0, i.jsx)("div", {
           className: et.QX,
-          children: (0, i.jsx)(p.QWc, {
+          children: (0, i.jsx)(g.QWc, {
             text: $.intl.string($.t["1lWxux"]),
             textVariant: "text-sm/normal",
             disabled: true
@@ -324,11 +324,11 @@ class el extends(r = Chunk64700.PureComponent) {
       consent: t,
       registering: n
     } = this.state, r = $.intl.string($.t["825cFy"]);
-    return (0, i.jsx)(f.m, {
+    return (0, i.jsx)(p.m, {
       text: !t && e ? $.intl.string($.t.AY4IVA) : null,
       children: (0, i.jsx)("div", {
         className: et.Ot,
-        children: (0, i.jsx)(p.Button, {
+        children: (0, i.jsx)(g.Button, {
           text: r,
           variant: "primary",
           fullWidth: true,
@@ -359,15 +359,15 @@ class el extends(r = Chunk64700.PureComponent) {
       })
     };
     return (0, i.jsxs)("div", {
-      children: [(0, i.jsxs)(y.Ay, {
+      children: [(0, i.jsxs)(b.Ay, {
         onSubmit: this.handleSubmit,
         tag: "form",
         className: t,
         children: [this.renderInviteHeader(), u ? (0, i.jsx)("div", {
           className: ee.yF
-        }) : null, (0, i.jsxs)(y.eB, {
+        }) : null, (0, i.jsxs)(b.eB, {
           className: u ? true : ee.y0,
-          children: [(0, i.jsx)(p.ksK, {
+          children: [(0, i.jsx)(g.ksK, {
             helperText: $.intl.string($.t["330TCc"]),
             label: $.intl.string($.t["9AjdkD"]),
             error: null != a ? a : es(null != r ? r : n),
@@ -386,7 +386,7 @@ class el extends(r = Chunk64700.PureComponent) {
                 globalNameFocused: false
               }), this.trackInputBlur("global_name")
             }
-          }), (0, i.jsx)(_.A, {
+          }), (0, i.jsx)(x.A, {
             label: $.intl.string($.t.rhBeKe),
             wrapperClassName: ee.DC,
             name: "date_of_birth",
@@ -396,16 +396,16 @@ class el extends(r = Chunk64700.PureComponent) {
             value: c
           }), this.renderConsentComponent(), this.renderInviteButton(), (0, i.jsx)("div", {
             className: et.QX,
-            children: (0, i.jsx)(p.QWc, {
+            children: (0, i.jsx)(g.QWc, {
               text: $.intl.string($.t["1lWxux"]),
               textVariant: "text-sm/normal",
               onClick: this.handleGotoLogin
             })
           })]
         })]
-      }), null != e && u ? (0, i.jsx)(y.Ay, {
+      }), null != e && u ? (0, i.jsx)(b.Ay, {
         className: et.QX,
-        children: (0, i.jsx)(O.N, {
+        children: (0, i.jsx)(N.N, {
           guild: e.guild,
           onlineCount: e.approximate_presence_count
         })
@@ -418,7 +418,7 @@ class el extends(r = Chunk64700.PureComponent) {
         message: e
       }
     } = this.state;
-    return "string" != typeof e ? null : (0, i.jsx)(y.ME, {
+    return "string" != typeof e ? null : (0, i.jsx)(b.ME, {
       className: a()(et.QX, ee.gJ),
       children: e
     })
@@ -433,31 +433,31 @@ class el extends(r = Chunk64700.PureComponent) {
       parsedDateOfBirth: u,
       globalNameFocused: d,
       emailClientError: h,
-      usernameClientError: g,
-      passwordClientError: m,
-      dateOfBirthClientError: A,
-      registering: x,
+      usernameClientError: m,
+      passwordClientError: f,
+      dateOfBirthClientError: _,
+      registering: A,
       apiErrors: {
         email: E,
-        username: b,
-        global_name: v,
-        password: j,
+        username: v,
+        global_name: j,
+        password: y,
         date_of_birth: S
       } = {}
     } = this.state, {
-      consentRequired: O,
-      authBoxClassName: I,
-      hasLoggedInAccounts: T
-    } = this.props, C = this.renderErrorMessage(), R = (0, i.jsx)(f.m, {
-      text: !c && O ? $.intl.string($.t.AY4IVA) : null,
+      consentRequired: N,
+      authBoxClassName: O,
+      hasLoggedInAccounts: C
+    } = this.props, T = this.renderErrorMessage(), R = (0, i.jsx)(p.m, {
+      text: !c && N ? $.intl.string($.t.AY4IVA) : null,
       children: (0, i.jsx)("div", {
         className: et.QX,
-        children: (0, i.jsx)(p.Button, {
+        children: (0, i.jsx)(g.Button, {
           text: $.intl.string($.t["825cFy"]),
           variant: "primary",
           fullWidth: true,
           type: "submit",
-          loading: x,
+          loading: A,
           disabled: !this.hasConsent() || this.state.isRateLimited
         })
       })
@@ -472,11 +472,11 @@ class el extends(r = Chunk64700.PureComponent) {
       })
     }, D = null != e ? (0, i.jsx)(s.Fragment, {
       children: e()
-    }, "custom-header") : (0, i.jsx)(y.hE, {
+    }, "custom-header") : (0, i.jsx)(b.hE, {
       children: $.intl.string($.t.wC4TlR)
-    }, "title"), U = (0, i.jsxs)(y.eB, {
+    }, "title"), U = (0, i.jsxs)(b.eB, {
       className: et.QX,
-      children: [(0, i.jsx)(y.pd, {
+      children: [(0, i.jsx)(b.pd, {
         autoFocus: true,
         className: et.SX,
         label: $.intl.string($.t.dI4d4S),
@@ -495,7 +495,7 @@ class el extends(r = Chunk64700.PureComponent) {
         required: true,
         onFocus: () => this.trackInputFocus("email"),
         onBlur: () => this.trackInputBlur("email")
-      }), (0, i.jsx)(y.pd, {
+      }), (0, i.jsx)(b.pd, {
         label: $.intl.string($.t["9AjdkD"]),
         className: et.SX,
         name: "global_name",
@@ -503,7 +503,7 @@ class el extends(r = Chunk64700.PureComponent) {
         onChange: e => this.setState({
           globalName: e
         }),
-        error: es(v),
+        error: es(j),
         maxLength: 32,
         autoComplete: "off",
         setRef: e => {
@@ -523,7 +523,7 @@ class el extends(r = Chunk64700.PureComponent) {
         show: d,
         top: false,
         bottom: 20,
-        children: (0, i.jsx)(p.Text, {
+        children: (0, i.jsx)(g.Text, {
           variant: "text-sm/normal",
           color: "text-default",
           children: $.intl.string($.t["330TCc"])
@@ -534,13 +534,13 @@ class el extends(r = Chunk64700.PureComponent) {
         }),
         onFocus: w,
         tabIndex: false,
-        children: [(0, i.jsx)(y.pd, {
+        children: [(0, i.jsx)(b.pd, {
           label: $.intl.string($.t.TWzdWj),
           className: et.SX,
           name: "username",
           value: r,
           onChange: k,
-          error: null != g ? g : es(b),
+          error: null != m ? m : es(v),
           autoComplete: "off",
           setRef: e => {
             this.usernameRef = e
@@ -549,7 +549,7 @@ class el extends(r = Chunk64700.PureComponent) {
           onFocus: () => this.trackInputFocus("username"),
           onBlur: () => this.trackInputBlur("username")
         }), this.renderUsernameValidation()]
-      }), (0, i.jsx)(y.pd, {
+      }), (0, i.jsx)(b.pd, {
         label: $.intl.string($.t["CIGa+7"]),
         name: "password",
         value: o,
@@ -557,7 +557,7 @@ class el extends(r = Chunk64700.PureComponent) {
           password: e,
           passwordClientError: 0 === e.length ? $.intl.string($.t.EkokLy) : null
         }),
-        error: null != m ? m : es(j),
+        error: null != f ? f : es(y),
         type: "password",
         autoComplete: "new-password",
         setRef: e => {
@@ -566,20 +566,20 @@ class el extends(r = Chunk64700.PureComponent) {
         required: true,
         onFocus: () => this.trackInputFocus("password"),
         onBlur: () => this.trackInputBlur("password")
-      }), (0, i.jsx)(_.A, {
+      }), (0, i.jsx)(x.A, {
         label: $.intl.string($.t.rhBeKe),
         wrapperClassName: ee.UJ,
         name: "date_of_birth",
         onChange: this.handleBirthdayChange,
         ref: this.dateOfBirthRef,
-        error: null != A ? A : es(S),
+        error: null != _ ? _ : es(S),
         value: u,
         required: true,
         onFocus: this.trackInputFocus,
         onBlur: this.trackInputBlur
-      }), (0, i.jsx)(N.A, {}), this.renderConsentComponent(), R, C, (0, i.jsx)("div", {
+      }), (0, i.jsx)(I.A, {}), this.renderConsentComponent(), R, T, (0, i.jsx)("div", {
         className: et.QX,
-        children: (0, i.jsx)(p.QWc, {
+        children: (0, i.jsx)(g.QWc, {
           text: $.intl.string($.t["1lWxux"]),
           textVariant: "text-sm/normal",
           onClick: this.handleGotoLogin
@@ -589,25 +589,25 @@ class el extends(r = Chunk64700.PureComponent) {
     return t ? (0, i.jsx)(Y.A, {
       onSubmit: this.handleSubmit,
       tag: "form",
-      className: a()(I, ee.Sy),
+      className: a()(O, ee.Sy),
       children: () => [D, (0, i.jsxs)("div", {
         className: ee.Uu,
-        children: [(0, i.jsx)(y.hE, {
+        children: [(0, i.jsx)(b.hE, {
           className: ee.lR,
           children: $.intl.string($.t.wC4TlR)
         }), U]
       }, "register-title")]
-    }) : (0, i.jsxs)(y.Ay, {
+    }) : (0, i.jsxs)(b.Ay, {
       onSubmit: this.handleSubmit,
       tag: "form",
-      className: I,
-      children: [T ? (0, i.jsx)("div", {
+      className: O,
+      children: [C ? (0, i.jsx)("div", {
         className: ee.AX,
-        children: (0, i.jsx)(p.Button, {
+        children: (0, i.jsx)(g.Button, {
           onClick: this.handleGotoLogin,
           variant: "secondary",
           text: $.intl.string($.t["1MrpWO"]),
-          icon: p.n2b,
+          icon: g.n2b,
           iconPosition: "start"
         })
       }) : null, D, U]
@@ -617,13 +617,13 @@ class el extends(r = Chunk64700.PureComponent) {
     let {
       isUnderage: e
     } = this.props, t = this.inGuildOrChannelInviteFlow();
-    if (e || this.hasError("date_of_birth")) return (0, i.jsx)(x.A, {});
+    if (e || this.hasError("date_of_birth")) return (0, i.jsx)(A.A, {});
     let {
       giftCode: n,
       invite: r,
       guildTemplate: s
     } = this.props, l = null != r && null == r.guild && null == r.channel && null != r.inviter;
-    return null != r && t ? r.state === X.elq.RESOLVING ? this.renderInviteResolving() : this.renderInvite() : null != s ? this.renderFull(() => (0, i.jsx)(T.A, {
+    return null != r && t ? r.state === X.elq.RESOLVING ? this.renderInviteResolving() : this.renderInvite() : null != s ? this.renderFull(() => (0, i.jsx)(C.A, {
       guildTemplate: s
     }), true) : null != n ? this.renderFull(() => (0, i.jsx)(z.A, {
       giftCode: n
@@ -653,7 +653,7 @@ class el extends(r = Chunk64700.PureComponent) {
         d = null != l ? (0, o.parse)(l.search) : {};
       null != s ? t = X.BVt.INVITE_LOGIN(s.code) : null != r ? t = X.BVt.GIFT_CODE_LOGIN(r.code) : null != i ? t = X.BVt.GUILD_TEMPLATE_LOGIN(i.code) : null != c ? (t = X.BVt.LOGIN, d.redirect_to = c) : (t = X.BVt.LOGIN, "" !== n && (d = {
         email: n
-      })), g.A.loginReset(), u(t, {
+      })), m.A.loginReset(), u(t, {
         search: (0, o.stringify)(d),
         source: "register"
       }), null == a || a(e), H._.dispatch(X.jej.WAVE_EMPHASIZE)
@@ -740,12 +740,12 @@ class el extends(r = Chunk64700.PureComponent) {
 }
 
 function ea(e) {
-  let t = (0, d.cf)([F.A, M.default, A.A, w.A, C.A], () => ({
+  let t = (0, d.cf)([F.A, M.default, _.A, w.A, T.A], () => ({
       consentRequired: F.A.getAuthenticationConsentRequired(),
       authenticated: M.default.isAuthenticated(),
-      isUnderage: A.A.isUnderageAnonymous(),
+      isUnderage: _.A.isUnderageAnonymous(),
       country: w.A.getCountryCode(),
-      hasLoggedInAccounts: C.A.getHasLoggedInAccounts()
+      hasLoggedInAccounts: T.A.getHasLoggedInAccounts()
     })),
     n = (0, d.bG)([L.A], () => L.A.registrationUsernameSuggestion()),
     [r, l] = s.useState(J.ju.FULL);
@@ -775,29 +775,29 @@ function eo(e) {
   return t = u ? (0, c.YW)(o).with({
     type: k.q.ERROR,
     message: c.P.select()
-  }, e => (0, i.jsx)(p.Text, {
+  }, e => (0, i.jsx)(g.Text, {
     className: ee.vU,
     variant: "text-sm/normal",
     children: e
   })).with({
     type: k.q.AVAILABLE,
     message: c.P.select()
-  }, e => (0, i.jsx)(p.Text, {
+  }, e => (0, i.jsx)(g.Text, {
     className: ee.vq,
     variant: "text-sm/normal",
     children: e
-  })).otherwise(() => (0, i.jsx)(p.Text, {
+  })).otherwise(() => (0, i.jsx)(g.Text, {
     variant: "text-sm/normal",
     color: "text-default",
     children: $.intl.string($.t.z7c4bP)
-  })) : null != r && r.length > 0 && s.length > 0 ? (0, i.jsx)(p.Text, {
+  })) : null != r && r.length > 0 && s.length > 0 ? (0, i.jsx)(g.Text, {
     variant: "text-sm/normal",
     color: "text-default",
     children: $.intl.format($.t.nDGqqq, {
       suggestion: r,
       nameOnClick: a
     })
-  }) : (0, i.jsx)(p.Text, {
+  }) : (0, i.jsx)(g.Text, {
     variant: "text-sm/normal",
     color: "text-default",
     children: $.intl.string($.t.z7c4bP)

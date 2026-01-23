@@ -51,24 +51,24 @@ var Chunk788409 = require("./788409.js"),
     return "string" == typeof e || "number" == typeof e || "boolean" == typeof e || "symbol" == typeof e || "bigint" == typeof e
   },
   h = {},
-  m = function e(t, n, a, s, o, c, d, f, m, g, E, b, y, O, A, v, S, I) {
-    for (var T, C = t, N = I, R = 0, w = false; true !== (N = N.get(h)) && !w;) {
+  m = function e(t, n, a, s, o, c, d, f, m, g, E, y, b, O, v, A, I, S) {
+    for (var T, C = t, N = S, R = 0, w = false; true !== (N = N.get(h)) && !w;) {
       var P = N.get(t);
       if (R += 1, true !== P)
         if (P === R) throw RangeError("Cyclic object value");
         else w = true;
       true === N.get(h) && (R = 0)
     }
-    if ("function" == typeof g ? C = g(n, C) : C instanceof Date ? C = y(C) : "comma" === a && l(C) && (C = i.maybeMap(C, function(e) {
-        return e instanceof Date ? y(e) : e
+    if ("function" == typeof g ? C = g(n, C) : C instanceof Date ? C = b(C) : "comma" === a && l(C) && (C = i.maybeMap(C, function(e) {
+        return e instanceof Date ? b(e) : e
       })), null === C) {
-      if (c) return m && !v ? m(n, p.encoder, S, "key", O) : n;
+      if (c) return m && !A ? m(n, p.encoder, I, "key", O) : n;
       C = ""
     }
-    if (_(C) || i.isBuffer(C)) return m ? [A(v ? n : m(n, p.encoder, S, "key", O)) + "=" + A(m(C, p.encoder, S, "value", O))] : [A(n) + "=" + A(String(C))];
+    if (_(C) || i.isBuffer(C)) return m ? [v(A ? n : m(n, p.encoder, I, "key", O)) + "=" + v(m(C, p.encoder, I, "value", O))] : [v(n) + "=" + v(String(C))];
     var D = [];
     if (true === C) return D;
-    if ("comma" === a && l(C)) v && m && (C = i.maybeMap(C, m)), T = [{
+    if ("comma" === a && l(C)) A && m && (C = i.maybeMap(C, m)), T = [{
       value: C.length > 0 ? C.join(",") || null : true
     }];
     else if (l(g)) T = g;
@@ -83,11 +83,11 @@ var Chunk788409 = require("./788409.js"),
       var k = T[M],
         U = "object" == typeof k && k && true !== k.value ? k.value : C[k];
       if (!d || null !== U) {
-        var G = b && f ? String(k).replace(/\./g, "%2E") : String(k),
-          V = l(C) ? "function" == typeof a ? a(j, G) : j : j + (b ? "." + G : "[" + G + "]");
-        I.set(t, R);
+        var G = y && f ? String(k).replace(/\./g, "%2E") : String(k),
+          V = l(C) ? "function" == typeof a ? a(j, G) : j : j + (y ? "." + G : "[" + G + "]");
+        S.set(t, R);
         var F = r();
-        F.set(h, I), u(D, e(U, V, a, s, o, c, d, f, "comma" === a && v && l(C) ? null : m, g, E, b, y, O, A, v, S, F))
+        F.set(h, S), u(D, e(U, V, a, s, o, c, d, f, "comma" === a && A && l(C) ? null : m, g, E, y, b, O, v, A, I, F))
       }
     }
     return D
@@ -144,7 +144,7 @@ module.exports = function(e, t) {
       E = a[h];
     s.skipNulls && null === E || u(c, m(E, h, d, f, s.allowEmptyArrays, s.strictNullHandling, s.skipNulls, s.encodeDotInKeys, s.encode ? s.encoder : null, s.filter, s.sort, s.allowDots, s.serializeDate, s.format, s.formatter, s.encodeValuesOnly, s.charset, p))
   }
-  var b = c.join(s.delimiter),
-    y = true === s.addQueryPrefix ? "?" : "";
-  return s.charsetSentinel && ("iso-8859-1" === s.charset ? y += "utf8=%26%2310003%3B&" : y += "utf8=%E2%9C%93&"), b.length > 0 ? y + b : ""
+  var y = c.join(s.delimiter),
+    b = true === s.addQueryPrefix ? "?" : "";
+  return s.charsetSentinel && ("iso-8859-1" === s.charset ? b += "utf8=%26%2310003%3B&" : b += "utf8=%E2%9C%93&"), y.length > 0 ? b + y : ""
 }

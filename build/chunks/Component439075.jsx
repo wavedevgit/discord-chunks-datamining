@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk216456 = require("./216456.js"),
   Chunk341915 = require("./341915.js"),
   Chunk890687 = require("./890687.js"),
@@ -23,36 +23,36 @@ var Chunk627968 = require("./627968.js"),
 function v(e) {
   var t, n;
   let {
-    quest: i,
+    quest: r,
     className: o,
     questContent: u,
     contentPosition: v,
     rowIndex: j,
-    impressionRef: y,
-    sourceQuestContent: _
-  } = e, [A, C] = l.useState(false), [S, O] = l.useState([]), E = (0, c.aC)(i), N = l.useMemo(() => (0, d.vv)(i), [i]), T = (0, s.u0)(), I = l.useCallback(() => {
-    C(true), T({
-      questId: i.id,
-      event: b.HAw.QUEST_HOVER,
+    impressionRef: _,
+    sourceQuestContent: y
+  } = e, [A, C] = l.useState(false), [S, O] = l.useState([]), E = (0, c.aC)(r), T = l.useMemo(() => (0, d.vv)(r), [r]), N = (0, s.u0)(), w = l.useCallback(() => {
+    C(true), N({
+      questId: r.id,
+      event: f.HAw.QUEST_HOVER,
       properties: {
         content_id: u,
         content_name: (0, s.jO)(u),
         content_position: v
       },
-      sourceQuestContent: _
-    }), N && (0, m.l9)()
-  }, [T, i.id, u, N, _, v]), k = l.useCallback(() => {
-    C(false), T({
-      questId: i.id,
-      event: b.HAw.QUEST_HOVER_OFF,
+      sourceQuestContent: y
+    }), T && (0, m.l9)()
+  }, [N, r.id, u, T, y, v]), I = l.useCallback(() => {
+    C(false), N({
+      questId: r.id,
+      event: f.HAw.QUEST_HOVER_OFF,
       properties: {
         content_id: u,
         content_name: (0, s.jO)(u),
         content_position: v
       },
-      sourceQuestContent: _
+      sourceQuestContent: y
     })
-  }, [T, i.id, u, _, v]), w = l.useContext(h.X), {
+  }, [N, r.id, u, y, v]), k = l.useContext(h.X), {
     visibilityElementRef: P,
     almostVisibleInViewport: R
   } = function(e) {
@@ -67,33 +67,33 @@ function v(e) {
       }, true),
       almostVisibleInViewport: t
     }
-  }(null != (t = null == w || null == (n = w.current) ? true : n.getScrollerNode()) ? t : null);
+  }(null != (t = null == k || null == (n = k.current) ? true : n.getScrollerNode()) ? t : null);
   return (0, a.jsxs)("div", {
-    id: "quest-tile-".concat(i.id),
+    id: "quest-tile-".concat(r.id),
     ref: e => {
-      y.current = e, P.current = e
+      _.current = e, P.current = e
     },
-    className: r()(g.k, o),
-    onMouseEnter: I,
-    onMouseLeave: k,
-    onFocus: I,
-    onBlur: k,
-    children: [(0, a.jsx)(f.A, {
-      quest: i,
+    className: i()(b.k, o),
+    onMouseEnter: w,
+    onMouseLeave: I,
+    onFocus: w,
+    onBlur: I,
+    children: [(0, a.jsx)(x.A, {
+      quest: r,
       isHovering: A,
       errorHints: S,
       warningHints: E,
       isVisibleInViewport: R,
-      sourceQuestContent: _
-    }), (0, a.jsx)(x.A, {
-      quest: i,
+      sourceQuestContent: y
+    }), (0, a.jsx)(g.A, {
+      quest: r,
       questContent: u,
       isHovering: A,
       contentPosition: v,
       rowIndex: j,
       onReceiveErrorHints: O,
       isVisibleInViewport: R,
-      sourceQuestContent: _
+      sourceQuestContent: y
     })]
   })
 }

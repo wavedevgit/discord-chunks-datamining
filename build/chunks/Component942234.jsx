@@ -1,7 +1,7 @@
 /** Chunk was on 21968 **/
 /** chunk id: 942234, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 }), require("./65821.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,7 +12,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk268199 = require("./268199.jsx"),
   Chunk90430 = require("./90430.jsx"),
   Chunk644020 = require("./644020.js");
-class b extends Chunk64700.PureComponent {
+class p extends Chunk64700.PureComponent {
   getOverwriteValue(e) {
     let {
       allow: t,
@@ -52,33 +52,33 @@ class b extends Chunk64700.PureComponent {
       permissions: a,
       locked: c,
       permissionRender: u,
-      hasBypassSlowmodePermission: b,
-      guildId: f
-    } = this.props, p = null == u ? true : u(l), m = !!(c || p), g = "string" == typeof p && "" !== p ? s.KTN : true, h = null == a ? (0, i.jsx)(d.A, {
+      hasBypassSlowmodePermission: p,
+      guildId: m
+    } = this.props, g = null == u ? true : u(l), b = !!(c || g), f = "string" == typeof g && "" !== g ? s.KTN : true, h = null == a ? (0, i.jsx)(d.A, {
       label: n,
       description: (0, o.Nk)(r),
-      icon: g,
-      disabled: m,
+      icon: f,
+      disabled: b,
       value: this.getOverwriteValue(l),
       onChange: e => this.handleChange(l, e)
     }, String(l)) : (0, i.jsx)(s.dOG, {
       label: n,
       description: (0, o.Nk)(r),
-      icon: g,
-      disabled: m,
+      icon: f,
+      disabled: b,
       checked: this.getPermissionValue(l, a),
       onChange: e => this.handleChange(l, e)
-    }, String(l)), x = (0, o.x3)(l, b, f);
+    }, String(l)), x = (0, o.x3)(l, p, m);
     return (0, i.jsxs)(i.Fragment, {
       children: [t > 0 && (0, i.jsx)(s.cGx, {}), (0, i.jsxs)(s.BJc, {
         gap: 8,
         children: [h, null != x && (0, i.jsx)(s.po8, {
           messageType: s.YCn.WARNING,
           children: x
-        }), "string" == typeof p && "" !== p && (0, i.jsx)(s.Text, {
+        }), "string" == typeof g && "" !== g && (0, i.jsx)(s.Text, {
           variant: "text-xs/medium",
           color: "text-feedback-critical",
-          children: p
+          children: g
         })]
       })]
     })
@@ -99,4 +99,4 @@ class b extends Chunk64700.PureComponent {
     })
   }
 }
-let f = b
+let m = p

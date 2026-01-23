@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk975571 = require("./975571.js"),
   Chunk523318 = require("./523318.jsx"),
@@ -26,19 +26,19 @@ function f(e) {
       className: m.B,
       alt: "",
       src: g
-    }), (0, n.jsx)(a.Heading, {
+    }), (0, n.jsx)(s.Heading, {
       className: m.DD,
       color: "text-strong",
       variant: "heading-xl/bold",
       children: d.intl.format(d.t["au+lPv"], {
         n: t.tag
       })
-    }), (0, n.jsx)(a.Text, {
+    }), (0, n.jsx)(s.Text, {
       className: m.z$,
       color: "text-default",
       variant: "text-md/medium",
       children: d.intl.format(d.t["5fwX56"], {})
-    }), (0, n.jsx)(a.Text, {
+    }), (0, n.jsx)(s.Text, {
       className: m.J1,
       color: "text-default",
       variant: "text-sm/medium",
@@ -46,29 +46,29 @@ function f(e) {
         helpdeskArticle: o.A.getArticleURL(u.MVz.POMELO_FAQ)
       })
     }), (0, n.jsxs)("div", {
-      className: s()([m.oU, m.P8]),
+      className: a()([m.oU, m.P8]),
       children: [(0, n.jsx)("div", {
         className: m.G,
-        children: (0, n.jsx)(a.$yI, {
+        children: (0, n.jsx)(s.$yI, {
           size: "custom",
           color: "currentColor",
           width: 20,
           height: 20
         })
-      }), (0, n.jsx)(a.Text, {
+      }), (0, n.jsx)(s.Text, {
         color: "text-default",
         variant: "text-sm/medium",
         children: d.intl.format(d.t.SzUaZ1, {})
       })]
     }), (0, n.jsxs)("div", {
-      className: s()([m.oU, m.P8]),
+      className: a()([m.oU, m.P8]),
       children: [(0, n.jsx)("div", {
         className: m.G,
         children: (0, n.jsx)(l.A, {
           width: 20,
           height: 20
         })
-      }), (0, n.jsx)(a.Text, {
+      }), (0, n.jsx)(s.Text, {
         color: "text-default",
         variant: "text-sm/medium",
         children: d.intl.format(d.t["UwPc+G"], {})
@@ -81,7 +81,7 @@ function f(e) {
           width: 20,
           height: 20
         })
-      }), (0, n.jsx)(a.Text, {
+      }), (0, n.jsx)(s.Text, {
         color: "text-default",
         variant: "text-sm/medium",
         children: d.intl.format(d.t.okLjju, {

@@ -22,7 +22,7 @@ let d = function(e) {
   return (0, r.jsx)(o.A, {
     renderPopout: (e, a) => {
       let {
-        closePopout: f
+        closePopout: h
       } = e;
       return (0, r.jsxs)("div", {
         children: [d.map((e, t) => {
@@ -51,7 +51,7 @@ let d = function(e) {
           children: (0, r.jsx)(l.Button, {
             fullWidth: true,
             onClick: () => {
-              t([]), f()
+              t([]), h()
             },
             size: "sm",
             text: c.intl.string(c.t.VkKicb),

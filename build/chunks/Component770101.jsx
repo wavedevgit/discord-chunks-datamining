@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk197161 = require("./197161.js");
 
-function b(e) {
+function y(e) {
   let {
     setQuery: t,
     query: n
@@ -35,14 +35,14 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     isTransfer: t = false,
     selectedSlotGuilds: n,
     onClose: i,
     onSelectGuild: a,
     query: o
-  } = e, b = (0, l.bG)([_.Ay], () => _.Ay.getFlattenedGuildIds()), y = (0, l.yK)([p.A], () => b.reduce((e, t) => {
+  } = e, y = (0, l.bG)([_.Ay], () => _.Ay.getFlattenedGuildIds()), b = (0, l.yK)([p.A], () => y.reduce((e, t) => {
     let r = p.A.getGuild(t);
     return null == r || null != n && n.some(e => e.id === t) || (o.length <= 0 || s()(o.toLowerCase(), null == r ? true : r.name.toLowerCase())) && e.push(r), e
   }, []));
@@ -51,11 +51,11 @@ function y(e) {
     i(), (0, u.jH)(), (0, f.pX)(m.BVt.GUILD_DISCOVERY)
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [0 === y.length && (0, r.jsx)("div", {
+    children: [0 === b.length && (0, r.jsx)("div", {
       className: E.Kl,
       children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
-        children: 0 === b.length ? g.intl.format(g.t["E3tB6+"], {
+        children: 0 === y.length ? g.intl.format(g.t["E3tB6+"], {
           publicGuildDirectoryHook: (e, t) => (0, r.jsx)(c.DUT, {
             onClick: O,
             tag: "a",
@@ -63,7 +63,7 @@ function y(e) {
           }, t)
         }) : g.intl.string(g.t.w3GLl9)
       })
-    }), y.map(e => (0, r.jsxs)(c.DUT, {
+    }), b.map(e => (0, r.jsxs)(c.DUT, {
       className: E.Ss,
       onClick: () => {
         a(e)
@@ -109,12 +109,12 @@ function O(e) {
     onClose: d,
     size: "md",
     title: f,
-    input: (0, r.jsx)(b, {
+    input: (0, r.jsx)(y, {
       query: c,
       setQuery: u
     }),
     actions: [],
-    children: (0, r.jsx)(y, {
+    children: (0, r.jsx)(b, {
       onClose: t,
       onSelectGuild: n,
       query: c,

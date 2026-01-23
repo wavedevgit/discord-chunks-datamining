@@ -15,31 +15,31 @@ let u = e => {
   var t, n;
   let {
     parents: u
-  } = e, [m, b] = r.useState(false), p = r.useCallback(() => {
+  } = e, [m, p] = r.useState(false), b = r.useCallback(() => {
     (0, s.Xz)().then(() => {
       var e, t;
-      (0, i.showToast)((0, a.o)(d.intl.formatToPlainString(d.t.wr4IT5, {
+      (0, a.showToast)((0, i.o)(c.intl.formatToPlainString(c.t.wr4IT5, {
         count: u.length,
         parent1: u[0].username,
         parent2: null == (e = u[1]) ? true : e.username,
         parent3: null == (t = u[2]) ? true : t.username
-      }), i.ToastType.SUCCESS)), b(true)
+      }), a.ToastType.SUCCESS)), p(true)
     }).catch(() => {
       o.A.showFailedToast()
     })
   }, [u]);
   if (0 === u.length) return null;
-  let x = d.intl.formatToPlainString(d.t.HqyWeO, {
+  let x = c.intl.formatToPlainString(c.t.HqyWeO, {
     count: u.length,
     parent1: u[0].username,
     parent2: null == (t = u[1]) ? true : t.username,
     parent3: null == (n = u[2]) ? true : n.username
   });
-  return (0, l.jsx)(c.PQ, {
+  return (0, l.jsx)(d.PQ, {
     title: x,
-    description: d.intl.string(d.t["5l/hlt"]),
-    buttonText: m ? d.intl.string(d.t.ntuuk7) : d.intl.string(d.t["sYdX/H"]),
+    description: c.intl.string(c.t["5l/hlt"]),
+    buttonText: m ? c.intl.string(c.t.ntuuk7) : c.intl.string(c.t["sYdX/H"]),
     buttonDisabled: m,
-    onButtonPress: p
+    onButtonPress: b
   })
 }

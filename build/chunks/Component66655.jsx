@@ -1,7 +1,7 @@
 /** Chunk was on 51711 **/
-/** chunk id: 66655, original params: e,t,a (module,exports,require) **/
+/** chunk id: 66655, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => M
+  default: () => R
 }), require("./896048.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,37 +22,37 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk489715 = require("./489715.js");
 
-function M(e) {
+function R(e) {
   let {
     transitionState: t,
-    onClose: a,
-    roleId: M,
-    guildId: R
-  } = e, h = (0, s.bG)([p.A], () => p.A.getRole(M), [M]), [w, E] = n.useState(""), [S, y] = n.useState({}), [T, C] = n.useState(false), [_, O] = n.useState(null), j = n.useRef(null);
-  n.useEffect(() => {
-    u.A.requestMembers(R, w.trim().toLowerCase(), g.uc)
-  }, [R, w]);
-  let B = n.useCallback(e => !e.roles.includes(M), [M]),
-    H = (0, g.SB)(R, B),
-    G = n.useMemo(() => H.filter(e => (0, g.EF)(w, e)), [w, H]),
-    P = n.useCallback(async () => {
-      let e = Object.values(S).map(e => e.row.id);
-      C(true);
+    onClose: r,
+    roleId: R,
+    guildId: h
+  } = e, A = (0, s.bG)([f.A], () => f.A.getRole(R), [R]), [T, v] = i.useState(""), [M, S] = i.useState({}), [y, E] = i.useState(false), [C, B] = i.useState(null), H = i.useRef(null);
+  i.useEffect(() => {
+    u.A.requestMembers(h, T.trim().toLowerCase(), g.uc)
+  }, [h, T]);
+  let O = i.useCallback(e => !e.roles.includes(R), [R]),
+    j = (0, g.SB)(h, O),
+    L = i.useMemo(() => j.filter(e => (0, g.EF)(T, e)), [T, j]),
+    G = i.useCallback(async () => {
+      let e = Object.values(M).map(e => e.row.id);
+      E(true);
       try {
-        await f.A.bulkAddMemberRoles(R, M, e), (0, m.a)(R, M, false), a()
+        await _.A.bulkAddMemberRoles(h, R, e), (0, b.a)(h, R, false), r()
       } catch (t) {
-        let e = new o.LG(t);
-        C(false), O(e)
+        let e = new c.LG(t);
+        E(false), B(e)
       }
-    }, [R, M, S, a]),
-    q = n.useMemo(() => G.map(e => {
+    }, [h, R, M, r]),
+    P = i.useMemo(() => L.map(e => {
       var t;
-      let a = b.Ay.getUserTag(e.user);
+      let r = m.Ay.getUserTag(e.user);
       return {
-        rowType: x.T6.MEMBER,
-        name: null != (t = e.name) ? t : a,
+        rowType: w.T6.MEMBER,
+        name: null != (t = e.name) ? t : r,
         nickname: e.name,
-        username: a,
+        username: r,
         id: e.id,
         avatarURL: e.avatarURL,
         bot: e.bot,
@@ -60,62 +60,62 @@ function M(e) {
         disabled: false,
         key: e.id
       }
-    }), [G]),
-    L = c.A.useSections({
-      members: q
+    }), [L]),
+    q = d.A.useSections({
+      members: P
     }),
-    N = n.useCallback(e => e.rowType === x.T6.MEMBER || e.rowType === x.T6.OWNER ? {
-      type: d._.MEMBER,
+    N = i.useCallback(e => e.rowType === w.T6.MEMBER || e.rowType === w.T6.OWNER ? {
+      type: o._.MEMBER,
       label: e.name,
       avatar: e.avatarURL
     } : null, []),
-    U = n.useMemo(() => Object.keys(S).length, [S]);
-  return (0, r.jsx)(c.A.Provider, {
-    listRef: j,
-    query: w,
-    setQuery: E,
-    pendingAdditions: S,
-    setPendingAdditions: y,
-    members: q,
+    U = i.useMemo(() => Object.keys(M).length, [M]);
+  return (0, a.jsx)(d.A.Provider, {
+    listRef: H,
+    query: T,
+    setQuery: v,
+    pendingAdditions: M,
+    setPendingAdditions: S,
+    members: P,
     getRichTag: N,
     maxPendingRows: k.$S,
-    children: (0, r.jsx)(i.Modal, {
-      onClose: a,
+    children: (0, a.jsx)(n.Modal, {
+      onClose: r,
       transitionState: t,
-      title: A.intl.string(A.t.ZYOK46),
-      subtitle: null != h ? A.intl.format(A.t["qP+nuZ"], {
+      title: x.intl.string(x.t.ZYOK46),
+      subtitle: null != A ? x.intl.format(x.t["qP+nuZ"], {
         numMembers: k.$S,
-        roleName: h.name
-      }) : A.intl.format(A.t["3OxP4q"], {
+        roleName: A.name
+      }) : x.intl.format(x.t["3OxP4q"], {
         numMembers: k.$S
       }),
-      input: (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(c.A.SearchBox, {
-          placeholderText: A.intl.string(A.t.vMiCaQ)
-        }), null != _ ? (0, r.jsx)(l.Text, {
-          className: v.k,
+      input: (0, a.jsxs)("div", {
+        children: [(0, a.jsx)(d.A.SearchBox, {
+          placeholderText: x.intl.string(x.t.vMiCaQ)
+        }), null != C ? (0, a.jsx)(l.Text, {
+          className: p.k,
           variant: "text-xs/normal",
           color: "text-feedback-critical",
-          children: _.getAnyErrorMessage()
+          children: C.getAnyErrorMessage()
         }) : null]
       }),
       listProps: {
-        ref: j,
-        sectionHeight: c.A.SECTION_HEIGHT,
-        renderSection: c.A.renderSection,
-        rowHeight: c.A.ROW_HEIGHT,
-        renderRow: c.A.renderRow,
-        sections: L
+        ref: H,
+        sectionHeight: d.A.SECTION_HEIGHT,
+        renderSection: d.A.renderSection,
+        rowHeight: d.A.ROW_HEIGHT,
+        renderRow: d.A.renderRow,
+        sections: q
       },
       actions: [{
-        text: A.intl.string(A.t["ETE/oC"]),
+        text: x.intl.string(x.t["ETE/oC"]),
         variant: "secondary",
-        onClick: a
+        onClick: r
       }, {
-        text: A.intl.string(A.t.OYkgVk),
+        text: x.intl.string(x.t.OYkgVk),
         variant: "primary",
-        onClick: P,
-        loading: T,
+        onClick: G,
+        loading: y,
         disabled: 0 === U || U > k.$S
       }]
     })

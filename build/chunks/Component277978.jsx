@@ -1,7 +1,7 @@
 /** Chunk was on 83006 **/
 /** chunk id: 277978, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  CustomThemesShareModalWrapper: () => m
+  CustomThemesShareModalWrapper: () => _
 }), require("./896048.js"), require("./747238.js"), require("./812715.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,30 +19,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk567951 = require("./567951.jsx"),
   Chunk285188 = require("./285188.js"),
   Chunk652215 = require("./652215.js");
-let m = e => {
+let _ = e => {
   let {
     transitionState: t,
     onClose: r
-  } = e, m = (0, a.useRef)((0, g.E3)()).current, {
-    selectedDestinations: j,
-    messageText: w,
-    canSend: C,
-    setSend: v,
-    updateMessage: P,
-    updateChannel: S
-  } = (0, l.P)(m), [_, x] = a.useState(false), {
+  } = e, _ = (0, a.useRef)((0, g.E3)()).current, {
+    selectedDestinations: m,
+    messageText: j,
+    canSend: w,
+    setSend: C,
+    updateMessage: v,
+    updateChannel: P
+  } = (0, l.P)(_), [S, x] = a.useState(false), {
     colors: E,
     chassisMixAmount: k,
     gradientAngle: D
-  } = (0, b.ko)(), M = (0, s.bG)([u.A], () => u.A.theme), A = (0, a.useMemo)(() => ({
+  } = (0, p.ko)(), M = (0, s.bG)([u.A], () => u.A.theme), A = (0, a.useMemo)(() => ({
     colors: E.map(e => e.replace("#", "")),
     gradient_angle: D,
     base_mix: k,
-    base_theme: (0, p.O)(M)
+    base_theme: (0, b.O)(M)
   }), [E, D, k, M]), R = a.useMemo(() => (0, d.createChannelRecord)({
     id: "1",
     type: o.r.DM
-  }), []), T = a.useMemo(() => (0, c.rh)(function(e) {
+  }), []), I = a.useMemo(() => (0, i.rh)(function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -59,24 +59,24 @@ let m = e => {
       })
     }
     return e
-  }({}, (0, i.Ay)({
+  }({}, (0, c.Ay)({
     channelId: R.id,
     content: ""
   }))), [R]);
   (0, a.useEffect)(() => {
-    P(T), S(R), x(true)
-  }, [T, R, P, S]);
-  let H = a.useCallback(async () => {
-    if (!C()) return Promise.reject();
-    await (0, h.N)(j, A, w), f.default.track(O.HAw.CUSTOM_THEME_SHARED, {
-      num_destinations: j.length
+    v(I), P(R), x(true)
+  }, [I, R, v, P]);
+  let T = a.useCallback(async () => {
+    if (!w()) return Promise.reject();
+    await (0, y.N)(m, A, j), f.default.track(O.HAw.CUSTOM_THEME_SHARED, {
+      num_destinations: m.length
     }), await r()
-  }, [A, j, w, C, r]);
+  }, [A, m, j, w, r]);
   return ((0, a.useEffect)(() => {
-    v(H)
-  }, [H, v]), _) ? (0, n.jsx)(g.KH.Provider, {
-    value: m,
-    children: (0, n.jsx)(y.y, {
+    C(T)
+  }, [T, C]), S) ? (0, n.jsx)(g.KH.Provider, {
+    value: _,
+    children: (0, n.jsx)(h.y, {
       transitionState: t,
       onClose: r
     })

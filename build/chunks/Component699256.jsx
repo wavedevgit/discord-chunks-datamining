@@ -2,7 +2,7 @@
 /** chunk id: 699256, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => x
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,7 +19,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk902973 = require("./902973.js");
 
-function x(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,20 +38,20 @@ function x(e) {
   return e
 }
 
-function h(e) {
+function x(e) {
   let {
     guildId: t
-  } = e, h = (0, l.bG)([d.A], () => d.A.getEditedConnections()), j = (0, l.bG)([d.A], () => d.A.isSubmitting()), O = i.useCallback(() => {
+  } = e, x = (0, l.bG)([d.A], () => d.A.getEditedConnections()), j = (0, l.bG)([d.A], () => d.A.isSubmitting()), _ = i.useCallback(() => {
     (0, s.mMO)(async () => {
       let {
         default: e
       } = await n.e("90194").then(n.bind(n, 566857));
-      return t => (0, r.jsx)(e, x({}, t))
+      return t => (0, r.jsx)(e, h({}, t))
     })
-  }, []), y = i.useMemo(() => h.map(e => {
+  }, []), O = i.useMemo(() => x.map(e => {
     var t, n;
-    return t = x({}, e), n = n = {
-      id: (0, b.Sq)(e)
+    return t = h({}, e), n = n = {
+      id: (0, p.Sq)(e)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function h(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t
-  }), [h]), v = i.useCallback(e => {
+  }), [x]), v = i.useCallback(e => {
     let t = e.map(e => {
       let {
         id: t
@@ -85,13 +85,13 @@ function h(e) {
         return l
       }(e, ["id"])
     });
-    (0, o.Bq)(t)
+    (0, c.Bq)(t)
   }, []), {
-    handleDragStart: A,
-    handleDragReset: E,
-    handleDragComplete: N,
-    draggingId: _
-  } = (0, a.A)(y, v), {
+    handleDragStart: y,
+    handleDragReset: A,
+    handleDragComplete: E,
+    draggingId: N
+  } = (0, a.A)(O, v), {
     enabled: S
   } = u.A.useExperiment({
     guildId: t,
@@ -100,41 +100,41 @@ function h(e) {
     autoTrackExposure: true
   });
   if (!S) return null;
-  let T = h.length < b.pA;
+  let I = x.length < p.pA;
   return (0, r.jsxs)("div", {
-    className: p.jx,
+    className: b.jx,
     children: [(0, r.jsxs)("div", {
-      className: p.G6,
+      className: b.G6,
       children: [(0, r.jsx)(s.Heading, {
         variant: "heading-lg/bold",
-        children: m.intl.string(m.t.Cl8F8H)
+        children: f.intl.string(f.t.Cl8F8H)
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-strong",
-        children: m.intl.format(m.t.vqgyJR, {
-          linkedRolesUrl: c.A.getArticleURL(g.MVz.CONNECTION_DETAILS_ADMIN)
+        children: f.intl.format(f.t.vqgyJR, {
+          linkedRolesUrl: o.A.getArticleURL(m.MVz.CONNECTION_DETAILS_ADMIN)
         })
-      }), !T && (0, r.jsx)(s.Text, {
+      }), !I && (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: m.intl.format(m.t.Nc7guW, {
-          max: b.pA
+        children: f.intl.format(f.t.Nc7guW, {
+          max: p.pA
         })
       })]
-    }), h.length > 0 && (0, r.jsx)("div", {
-      className: p.eF,
-      children: y.map((e, t) => (0, r.jsx)(f.A, {
+    }), x.length > 0 && (0, r.jsx)("div", {
+      className: b.eF,
+      children: O.map((e, t) => (0, r.jsx)(g.A, {
         connection: e,
         index: t,
-        onDragStart: A,
-        onDragReset: E,
-        onDragComplete: N,
-        draggingId: _
+        onDragStart: y,
+        onDragReset: A,
+        onDragComplete: E,
+        draggingId: N
       }, e.id))
     }), (0, r.jsxs)("button", {
-      className: p.qG,
-      onClick: O,
-      disabled: !T || j,
+      className: b.qG,
+      onClick: _,
+      disabled: !I || j,
       type: "button",
       children: [(0, r.jsx)(s.U1e, {
         size: "custom",
@@ -144,7 +144,7 @@ function h(e) {
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/semibold",
         color: "text-brand",
-        children: m.intl.string(m.t["03EqaC"])
+        children: f.intl.string(f.t["03EqaC"])
       })]
     })]
   })

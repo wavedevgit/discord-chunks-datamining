@@ -46,7 +46,7 @@ function E(e, t) {
   null != t && (p[e] = t)
 }
 
-function b(e) {
+function y(e) {
   let {
     guildId: t,
     lurker: n,
@@ -75,7 +75,7 @@ function b(e) {
   returnfalse
 }
 
-function y(e) {
+function b(e) {
   let {
     guild: t
   } = e;
@@ -92,21 +92,21 @@ function O(e) {
   return !!a && !s && !!f.includes(n) && (m(n), _ = null, true)
 }
 
-function A(e) {
+function v(e) {
   let {
     guild: t
   } = e;
   return !!f.includes(t.id) && (m(t.id), _ = null, true)
 }
 
-function v(e) {
+function A(e) {
   let {
     ignoredGuildIds: t
   } = e, n = h(t);
   return n && (_ = null), n
 }
 
-function S(e) {
+function I(e) {
   let {
     lurkingGuildId: t,
     lurkingSource: n
@@ -114,7 +114,7 @@ function S(e) {
   return g(t), _ = n, true
 }
 
-function I() {
+function S() {
   f = l.A.getGuildsArray().filter(e => (0, s.DG)(e)).map(e => e.id)
 }
 class T extends(r = Chunk311907.Ay.Store) {
@@ -143,11 +143,11 @@ class T extends(r = Chunk311907.Ay.Store) {
 }
 d(T, "displayName", "LurkingStore");
 let C = new T(Chunk73153.h, {
-  CONNECTION_OPEN: I,
-  GUILD_JOIN: b,
-  GUILD_STOP_LURKING: v,
-  GUILD_STOP_LURKING_FAILURE: S,
-  GUILD_CREATE: y,
-  GUILD_DELETE: A,
+  CONNECTION_OPEN: S,
+  GUILD_JOIN: y,
+  GUILD_STOP_LURKING: A,
+  GUILD_STOP_LURKING_FAILURE: I,
+  GUILD_CREATE: b,
+  GUILD_DELETE: v,
   GUILD_MEMBER_ADD: O
 })

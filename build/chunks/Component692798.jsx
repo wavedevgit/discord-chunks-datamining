@@ -113,7 +113,7 @@ let Y = Object.freeze({
       themeName: n,
       analyticsLocations: r
     } = e;
-    S.default.track(w.HAw.CLIENT_THEME_UPDATED, {
+    I.default.track(w.HAw.CLIENT_THEME_UPDATED, {
       feature_name: P.Ae.CLIENT_THEME,
       theme_name: n,
       is_persisted: t,
@@ -144,7 +144,7 @@ let Y = Object.freeze({
         className: M.Qw,
         variant: "text-md/medium",
         children: s
-      }), (0, r.jsx)(b.A, {
+      }), (0, r.jsx)(y.A, {
         className: M.PC
       })]
     })
@@ -224,12 +224,12 @@ let Y = Object.freeze({
     } = (0, p.Ay)(f.A.CLIENT_THEMES_THEME_SELECTOR), [m, g] = (0, s.yK)([T.A], () => {
       var e;
       return [T.A.isPreview, null == (e = T.A.gradientPreset) ? true : e.id]
-    }), [E, b] = i.useState(false), [y, O] = i.useState(false), A = (0, s.bG)([d.A], () => d.A.useReducedMotion);
+    }), [E, y] = i.useState(false), [b, O] = i.useState(false), v = (0, s.bG)([d.A], () => d.A.useReducedMotion);
     i.useEffect(() => {
-      (y === R.Jm.length - 2 && "EDITOR" === a || g === o.ju.EASTER_EGG) && b(true)
-    }, [y, a, g]);
-    let S = (e, t) => {
-        if ((0, I.bc)(e.id), K({
+      (b === R.Jm.length - 2 && "EDITOR" === a || g === o.ju.EASTER_EGG) && y(true)
+    }, [b, a, g]);
+    let I = (e, t) => {
+        if ((0, S.bc)(e.id), K({
             isPersisted: !m,
             analyticsLocations: h,
             themeName: o.ju[e.id]
@@ -238,7 +238,7 @@ let Y = Object.freeze({
             theme: e.theme,
             useSystemTheme: m ? D.Q_.OFF : true
           }, l), null != t) {
-          if (E && b(false), t <= y || 0 === t) return void O(0);
+          if (E && y(false), t <= b || 0 === t) return void O(0);
           O(e => e + 1)
         }
       },
@@ -247,7 +247,7 @@ let Y = Object.freeze({
           backgroundGradientPresetId: e.id,
           theme: e.theme,
           useSystemTheme: m ? D.Q_.OFF : true
-        }, x.Sb.SLOW_USER_ACTION), (0, _.nf)(_.HP.CLIENT_THEMES), (0, v.default)()
+        }, x.Sb.SLOW_USER_ACTION), (0, _.nf)(_.HP.CLIENT_THEMES), (0, A.default)()
       }, P = () => {
         if (!E) return null;
         let e = R.ag[o.ju.EASTER_EGG];
@@ -263,10 +263,10 @@ let Y = Object.freeze({
           children: [(0, r.jsx)(N.MX, {
             preset: e,
             isSelected: g === o.ju.EASTER_EGG,
-            onSelect: () => S(e)
+            onSelect: () => I(e)
           }), (0, r.jsx)(c.akl, {
             importData: t,
-            shouldAnimate: !A,
+            shouldAnimate: !v,
             className: M._7
           })]
         })
@@ -277,7 +277,7 @@ let Y = Object.freeze({
         onSelect: () => {
           (0, _.nf)(_.HP.CUSTOM_THEME, {
             from: "SETTINGS" === a ? _.xv.SETTING : _.xv.CLIENT_THEMES_EDITOR
-          }), "SETTINGS" === a && (0, v.default)()
+          }), "SETTINGS" === a && (0, A.default)()
         }
       }), R.Jm.filter(e => {
         let {
@@ -287,7 +287,7 @@ let Y = Object.freeze({
       }).map((e, n) => (0, r.jsx)(N.MX, {
         preset: e,
         isSelected: g === e.id,
-        onSelect: () => S(e, n),
+        onSelect: () => I(e, n),
         disabled: t,
         tabIndex: 0 !== n || t ? true : 0,
         showBadge: false,
@@ -328,8 +328,8 @@ let Y = Object.freeze({
       delay: a
     } = i.useContext(W), {
       analyticsLocations: o
-    } = (0, p.Ay)(f.A.CLIENT_THEMES_THEME_SELECTOR), [l, c, d] = (0, s.yK)([y.A, O.Ay, T.A], () => [y.A.theme, null == T.A.gradientPreset && null == A.eh.getSetting().customUserThemeSettings, O.Ay.useSystemTheme === D.Q_.ON]), _ = e => {
-      (0, I.Py)(), K({
+    } = (0, p.Ay)(f.A.CLIENT_THEMES_THEME_SELECTOR), [l, c, d] = (0, s.yK)([b.A, O.Ay, T.A], () => [b.A.theme, null == T.A.gradientPreset && null == v.eh.getSetting().customUserThemeSettings, O.Ay.useSystemTheme === D.Q_.ON]), _ = e => {
+      (0, S.Py)(), K({
         isPersisted: true,
         analyticsLocations: o,
         themeName: "default ".concat(e)

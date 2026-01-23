@@ -24,29 +24,29 @@ function p(e) {
     imageSize: m,
     onLoadComplete: g,
     assetRef: E
-  } = e, b = (0, o.bG)([l.A], () => l.A.useReducedMotion), y = null == _ || _.asset.isAnimated ? null : _.asset.url, O = null != h && h.asset.isAnimated ? h.asset.url : null, A = null == m ? true : m.width, v = null == m ? true : m.height, S = i.useMemo(() => {
-    let e = null != A && null != v ? (0, u.Yt)(A, v) : null;
-    return null != y ? (0, u.UX)(y, {
+  } = e, y = (0, o.bG)([l.A], () => l.A.useReducedMotion), b = null == _ || _.asset.isAnimated ? null : _.asset.url, O = null != h && h.asset.isAnimated ? h.asset.url : null, v = null == m ? true : m.width, A = null == m ? true : m.height, I = i.useMemo(() => {
+    let e = null != v && null != A ? (0, u.Yt)(v, A) : null;
+    return null != b ? (0, u.UX)(b, {
       format: "webp",
       width: null == e ? true : e.width,
       height: null == e ? true : e.height
     }) : null != O ? (0, u.WV)(O, null != e ? e : true) : null
-  }, [y, O, A, v]);
-  if (null == S) return null;
-  let I = !b && null != h && null != O && p;
+  }, [b, O, v, A]);
+  if (null == I) return null;
+  let S = !y && null != h && null != O && p;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
       alt: null != (t = null == _ ? true : _.alt) ? t : d.intl.string(d.t.P84bAD),
       className: null != (n = null == _ ? true : _.className) ? n : f.Sl,
-      src: S,
+      src: I,
       onLoad: g,
-      ref: I ? true : E
-    }), I && p && (0, r.jsx)(c.A, {
+      ref: S ? true : E
+    }), S && p && (0, r.jsx)(c.A, {
       autoPlay: true,
       loop: true,
       muted: true,
       preload: "auto",
-      poster: S,
+      poster: I,
       playsInline: true,
       className: s()(h.className, f.Ki, {
         [f.R]: !p

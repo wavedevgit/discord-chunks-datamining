@@ -66,39 +66,39 @@ let _ = T(Chunk731854.x.DEFAULT, Chunk652215.zWA.TRANSPORT, 0),
     videoEntropy: true,
     audioLevel: true
   },
-  b = 600;
+  y = 600;
 
-function y(e, t, n) {
+function b(e, t, n) {
   return "".concat(e, ":").concat(t, ":").concat(n)
 }
 
 function O(e, t) {
   return "".concat(e, ":").concat(t)
 }
-class A {
+class v {
   static empty() {
-    return new A({})
+    return new v({})
   }
   put(e, t, n, r) {
     if ("" === r) {
       let r = p({}, this.state);
-      return delete r[y(e, t, n)], new A(r)
+      return delete r[b(e, t, n)], new v(r)
     }
-    return new A(p({
-      [y(e, t, n)]: r
+    return new v(p({
+      [b(e, t, n)]: r
     }, this.state))
   }
   get(e, t, n) {
-    let r = this.state[y(e, t, n)];
+    let r = this.state[b(e, t, n)];
     return null != r ? r : null
   }
   constructor(e) {
     f(this, "state", true), this.state = e
   }
 }
-let v = A.empty(),
-  S = false,
-  I = null;
+let A = v.empty(),
+  I = false,
+  S = null;
 
 function T(e, t, n) {
   return "".concat(e, ":").concat(t, ":").concat(n)
@@ -119,7 +119,7 @@ function N() {
 }
 
 function R() {
-  null != I && (I.destroy(), I = null)
+  null != S && (S.destroy(), S = null)
 }
 
 function w(e) {
@@ -170,7 +170,7 @@ function j(e) {
       t.push({
         value: a,
         time: n
-      }), t.length > b && t.shift()
+      }), t.length > y && t.shift()
     } else r[i] = a
   }
   return r
@@ -226,7 +226,7 @@ function G(e) {
   } = e, n = l.A.getMediaEngine();
   if (R(), !n.supports(d.O5.CONNECTION_REPLAY) || 0 === t.length) return;
   let r = n.createReplayConnection(d.x.DEFAULT, t);
-  null != r && (I = r, r.on(a.yq.Video, (e, t, n, i, a) => {
+  null != r && (S = r, r.on(a.yq.Video, (e, t, n, i, a) => {
     s.h.dispatch({
       type: "RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT",
       mediaEngineConnectionId: r.mediaEngineConnectionId,
@@ -238,14 +238,14 @@ function G(e) {
 }
 
 function V(e) {
-  v = v.put(e.mediaEngineConnectionId, e.userId, e.videoSsrc, e.streamId)
+  A = A.put(e.mediaEngineConnectionId, e.userId, e.videoSsrc, e.streamId)
 }
 
 function F(e) {
   let {
     value: t
   } = e;
-  S = t
+  I = t
 }
 
 function B(e) {
@@ -291,10 +291,10 @@ class H extends(r = Chunk311907.Ay.Store) {
     return Object.values(m[e])
   }
   getVideoStreams() {
-    return v
+    return A
   }
   shouldRecordNextConnection() {
-    return S
+    return I
   }
   getSimulcastDebugOverride(e, t) {
     let n = O(e, t);

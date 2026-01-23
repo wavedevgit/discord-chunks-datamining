@@ -2,7 +2,7 @@
 /** chunk id: 493781, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  G: () => p
+  G: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,83 +18,83 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk662413 = require("./662413.js");
 
-function p(e) {
+function b(e) {
   let {
     activeType: t,
     onTypePicked: n,
     guild: l
-  } = e, p = l.features.has(g.GuildFeatures.COMMUNITY), x = (0, a.bG)([d.A], () => d.A.can(g.xBc.ADMINISTRATOR, l)), h = i.useMemo(() => {
-    let e = t === f.J.DISCOVERABLE && !x,
-      n = p && (t === f.J.DISCOVERABLE || x);
+  } = e, b = l.features.has(m.GuildFeatures.COMMUNITY), h = (0, a.bG)([d.A], () => d.A.can(m.xBc.ADMINISTRATOR, l)), x = i.useMemo(() => {
+    let e = t === g.J.DISCOVERABLE && !h,
+      n = b && (t === g.J.DISCOVERABLE || h);
     return [{
-      id: f.J.INVITE,
-      title: b.intl.string(b.t["HQVS/L"]),
-      body: b.intl.string(b.t.KzXzFa),
-      icon: o.XAi,
+      id: g.J.INVITE,
+      title: p.intl.string(p.t["HQVS/L"]),
+      body: p.intl.string(p.t.KzXzFa),
+      icon: c.XAi,
       enabled: !e,
-      ineligibleText: b.intl.string(b.t.LIZgwJ)
+      ineligibleText: p.intl.string(p.t.LIZgwJ)
     }, {
-      id: f.J.APPLY,
-      title: b.intl.string(b.t.LrFEYW),
-      body: b.intl.string(b.t.kJj2oG),
-      icon: o.u6c,
+      id: g.J.APPLY,
+      title: p.intl.string(p.t.LrFEYW),
+      body: p.intl.string(p.t.kJj2oG),
+      icon: c.u6c,
       enabled: !e,
-      ineligibleText: b.intl.string(b.t.LIZgwJ)
+      ineligibleText: p.intl.string(p.t.LIZgwJ)
     }, {
-      id: f.J.DISCOVERABLE,
-      title: b.intl.string(b.t.lhOHL3),
-      body: b.intl.string(b.t.pqQylS),
-      icon: o.L_e,
+      id: g.J.DISCOVERABLE,
+      title: p.intl.string(p.t.lhOHL3),
+      body: p.intl.string(p.t.pqQylS),
+      icon: c.L_e,
       enabled: n,
-      ineligibleText: p ? b.intl.string(b.t.iBpXPg) : b.intl.string(b.t["5TQ+eE"])
+      ineligibleText: b ? p.intl.string(p.t.iBpXPg) : p.intl.string(p.t["5TQ+eE"])
     }]
-  }, [t, p, x]);
+  }, [t, b, h]);
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(o.Heading, {
+    children: [(0, r.jsx)(c.Heading, {
       color: "text-strong",
       variant: "text-md/semibold",
-      children: b.intl.string(b.t["N+GnP2"])
-    }), (0, r.jsx)(o.Text, {
+      children: p.intl.string(p.t["N+GnP2"])
+    }), (0, r.jsx)(c.Text, {
       color: "text-subtle",
       variant: "text-sm/medium",
-      className: m.G3,
-      children: b.intl.format(b.t["Y/jYwu"], {
-        helpdeskArticle: u.A.getArticleURL(g.MVz.MEMBER_APPLICATIONS)
+      className: f.G3,
+      children: p.intl.format(p.t["Y/jYwu"], {
+        helpdeskArticle: u.A.getArticleURL(m.MVz.MEMBER_APPLICATIONS)
       })
-    }), (0, r.jsx)(o.VQ0, {
+    }), (0, r.jsx)(c.VQ0, {
       selectedItem: t,
       onItemSelect: n,
       orientation: "horizontal",
-      className: m.Hd,
-      children: h.map(e => {
+      className: f.Hd,
+      children: x.map(e => {
         let n = e.id === t;
-        return (0, r.jsx)(o.VQ0.Item, {
+        return (0, r.jsx)(c.VQ0.Item, {
           id: e.id,
           selectedItem: t,
           disableItemStyles: true,
-          className: m.dZ,
+          className: f.dZ,
           disabled: !e.enabled,
           "aria-label": e.title,
-          children: (0, r.jsx)(c.m_, {
+          children: (0, r.jsx)(o.m_, {
             text: e.ineligibleText,
             position: "bottom",
             shouldShow: !e.enabled,
             spacing: 16,
             hideOnClick: false,
             children: (0, r.jsxs)("div", {
-              className: s()(m.jn, {
-                [m.vu]: n,
-                [m.A_]: !e.enabled
+              className: s()(f.jn, {
+                [f.vu]: n,
+                [f.A_]: !e.enabled
               }),
               children: [(0, r.jsx)(e.icon, {
                 size: "md",
-                color: n ? o.LU0.colors.INTERACTIVE_TEXT_ACTIVE : o.LU0.colors.INTERACTIVE_TEXT_DEFAULT
-              }), (0, r.jsx)(o.Text, {
+                color: n ? c.LU0.colors.INTERACTIVE_TEXT_ACTIVE : c.LU0.colors.INTERACTIVE_TEXT_DEFAULT
+              }), (0, r.jsx)(c.Text, {
                 tag: "strong",
                 color: n ? "interactive-text-active" : "interactive-text-default",
                 variant: "text-md/semibold",
                 children: e.title
-              }), (0, r.jsx)(o.Text, {
+              }), (0, r.jsx)(c.Text, {
                 tag: "span",
                 color: n ? "interactive-text-active" : "interactive-text-default",
                 variant: "text-xs/medium",

@@ -2,7 +2,7 @@
 /** chunk id: 283823, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,32 +21,32 @@ var Chunk627968 = require("./627968.js"),
   Chunk363551 = require("./363551.js");
 let E = 50001;
 
-function b(e) {
+function y(e) {
   let {
     guildId: t,
     name: n,
     setPopoutRef: a,
-    onClose: b
+    onClose: y
   } = e, {
-    analyticsLocations: y
+    analyticsLocations: b
   } = (0, u.Ay)(c.A.GUILD_PROFILE), {
     guildProfile: O,
-    fetchGuildProfile: A,
-    fetchStatus: v
-  } = (0, p.u)(t), S = (0, o.bG)([f.A], () => f.A.getErrorCode(t)), I = i.useRef(null), T = i.useCallback(() => {
-    A(true)
-  }, [A]);
+    fetchGuildProfile: v,
+    fetchStatus: A
+  } = (0, p.u)(t), I = (0, o.bG)([f.A], () => f.A.getErrorCode(t)), S = i.useRef(null), T = i.useCallback(() => {
+    v(true)
+  }, [v]);
   i.useEffect(() => {
-    A()
-  }, [A]), i.useEffect(() => {
-    (0, d.sf)(t, y)
-  }, [t, y]), i.useEffect(() => {
-    null == a || a(null == I ? true : I.current)
-  }, [I, a]);
-  let C = i.useMemo(() => v === f.X.NOT_FETCHED || v === f.X.FETCHING ? (0, r.jsx)("div", {
+    v()
+  }, [v]), i.useEffect(() => {
+    (0, d.sf)(t, b)
+  }, [t, b]), i.useEffect(() => {
+    null == a || a(null == S ? true : S.current)
+  }, [S, a]);
+  let C = i.useMemo(() => A === f.X.NOT_FETCHED || A === f.X.FETCHING ? (0, r.jsx)("div", {
     className: s()(g.k, g.d),
     children: (0, r.jsx)(l.y$y, {})
-  }) : null == O && S === E ? (0, r.jsx)("div", {
+  }) : null == O && I === E ? (0, r.jsx)("div", {
     className: g.k,
     children: (0, r.jsx)(m.A, {
       guildId: t,
@@ -62,11 +62,11 @@ function b(e) {
     className: g.k,
     children: (0, r.jsx)(h.Ay, {
       profile: O,
-      onClose: b
+      onClose: y
     })
-  }), [v, O, S, t, n, T, b]);
+  }), [A, O, I, t, n, T, y]);
   return (0, r.jsx)(l.lGe, {
-    ref: I,
+    ref: S,
     "aria-label": null == O ? true : O.name,
     children: C
   })

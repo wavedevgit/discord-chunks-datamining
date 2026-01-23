@@ -1,5 +1,5 @@
 /** Chunk was on 71138 **/
-/** chunk id: 307414, original params: e,t,n (module,exports,require) **/
+/** chunk id: 307414, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   A: () => m
 });
@@ -16,17 +16,17 @@ class u extends Chunk64700.PureComponent {
     let {
       screenshare: e
     } = this.props;
-    if (null == e) return (0, r.jsx)(s.y$y, {
+    if (null == e) return (0, n.jsx)(s.y$y, {
       type: s.y$y.Type.SPINNING_CIRCLE
     });
     let t = l().map(e, (e, t) => {
-      if (!(d.R[t] || true === e)) return (0, r.jsx)(d.q7, {
+      if (!(d.R[t] || true === e)) return (0, n.jsx)(d.q7, {
         label: t,
         value: e
       }, t)
     });
-    return (0, r.jsxs)(s.BJc, {
-      children: [(0, r.jsx)(s.Heading, {
+    return (0, n.jsxs)(s.BJc, {
+      children: [(0, n.jsx)(s.Heading, {
         variant: "heading-md/medium",
         children: c.intl.string(c.t["gWbr/U"])
       }), (0, o.C6)(t)]

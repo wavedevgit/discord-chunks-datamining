@@ -2,7 +2,7 @@
 /** chunk id: 641324, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./65821.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -47,7 +47,7 @@ function O(e) {
         node: t
       });
     case i.Z6.RELATED:
-      return (0, r.jsx)(b.A, {
+      return (0, r.jsx)(y.A, {
         node: t
       });
     case i.Z6.CATEGORY:
@@ -59,7 +59,7 @@ function O(e) {
         node: t
       });
     case i.Z6.SPLIT:
-      return (0, r.jsx)(y.A, {
+      return (0, r.jsx)(b.A, {
         node: t
       });
     case i.Z6.TOGGLE:
@@ -97,7 +97,7 @@ function O(e) {
   }
 }
 
-function A(e) {
+function v(e) {
   let {
     node: t
   } = e;

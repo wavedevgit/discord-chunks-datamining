@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk384481 = require("./384481.jsx"),
   Chunk652215 = require("./652215.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,14 +30,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -47,44 +47,44 @@ function O(e) {
   let {
     user: t,
     currentUser: n,
-    activity: b,
+    activity: y,
     className: O,
-    onClose: A
+    onClose: v
   } = e, {
-    voiceGuild: v,
-    voiceChannel: S
+    voiceGuild: A,
+    voiceChannel: I
   } = (0, a.cf)([p.A, _.A, f.A], () => {
     var e, n;
-    let r = (0, s.A)(b);
-    if (!r && (null == b ? true : b.type) !== E.$pd.HANG_STATUS) return {};
-    let i = r ? null == (e = _.A.getVoiceStateForSession(t.id, null == b ? true : b.session_id)) ? true : e.channelId : null == (n = _.A.getVoiceStateForUser(t.id)) ? true : n.channelId,
+    let r = (0, s.A)(y);
+    if (!r && (null == y ? true : y.type) !== E.$pd.HANG_STATUS) return {};
+    let i = r ? null == (e = _.A.getVoiceStateForSession(t.id, null == y ? true : y.session_id)) ? true : e.channelId : null == (n = _.A.getVoiceStateForUser(t.id)) ? true : n.channelId,
       a = f.A.getChannel(i);
     return {
       voiceGuild: p.A.getGuild(null == a ? true : a.getGuildId()),
       voiceChannel: a
     }
-  }), I = (0, d.v)("UserProfileActivityCardWrapper", S), T = (null == b ? true : b.type) === E.$pd.HANG_STATUS && I ? S : null;
-  (0, c.h)(null == b ? true : b.application_id);
-  let C = (0, a.bG)([l.A], () => (null == b ? true : b.application_id) != null ? l.A.getApplication(b.application_id) : (null == b ? true : b.name) != null ? l.A.getApplicationByName(b.name) : null);
+  }), S = (0, d.v)("UserProfileActivityCardWrapper", I), T = (null == y ? true : y.type) === E.$pd.HANG_STATUS && S ? I : null;
+  (0, c.h)(null == y ? true : y.application_id);
+  let C = (0, a.bG)([l.A], () => (null == y ? true : y.application_id) != null ? l.A.getApplication(y.application_id) : (null == y ? true : y.name) != null ? l.A.getApplicationByName(y.name) : null);
   return (i.useEffect(() => {
-    (null == b ? true : b.type) === E.$pd.HANG_STATUS && I && h.default.track(E.HAw.VIEW_HANG_STATUS, y({
+    (null == y ? true : y.type) === E.$pd.HANG_STATUS && S && h.default.track(E.HAw.VIEW_HANG_STATUS, b({
       source: "UserProfilePopout",
       other_user_id: t.id
     }, (0, u.A)(null == T ? true : T.id)))
-  }, [null == b ? true : b.type, I, null == T ? true : T.id, t.id]), (null == b ? true : b.type) !== E.$pd.CUSTOM_STATUS && ((null == b ? true : b.type) !== E.$pd.HANG_STATUS || I)) ? (0, o.A)(b) ? (0, r.jsx)(g.A, {
+  }, [null == y ? true : y.type, S, null == T ? true : T.id, t.id]), (null == y ? true : y.type) !== E.$pd.CUSTOM_STATUS && ((null == y ? true : y.type) !== E.$pd.HANG_STATUS || S)) ? (0, o.A)(y) ? (0, r.jsx)(g.A, {
     user: t,
     currentUser: n,
-    activity: b,
+    activity: y,
     className: O,
-    onClose: A
+    onClose: v
   }) : (0, r.jsx)(m.A, {
     user: t,
     currentUser: n,
-    activity: b,
+    activity: y,
     application: C,
-    voiceGuild: v,
-    voiceChannel: S,
+    voiceGuild: A,
+    voiceChannel: I,
     className: O,
-    onClose: A
+    onClose: v
   }) : null
 }

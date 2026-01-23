@@ -30,56 +30,56 @@ let _ = (0, Chunk64700.createContext)({}),
     h = m(h, d);
     let {
       focusProps: E,
-      isFocused: b,
-      isFocusVisible: y
+      isFocused: y,
+      isFocusVisible: b
     } = (0, o.o)(e), {
       hoverProps: O,
-      isHovered: A
+      isHovered: v
     } = (0, l.M)({
       ...e,
       isDisabled: e.isDisabled || d
-    }), v = {
-      isHovered: A,
+    }), A = {
+      isHovered: v,
       isPressed: (n.isPressed || g) && !d,
-      isFocused: b,
-      isFocusVisible: y,
+      isFocused: y,
+      isFocusVisible: b,
       isDisabled: e.isDisabled || false,
       isPending: null != d && d
-    }, S = (0, r.Sl)({
+    }, I = (0, r.Sl)({
       ...e,
-      values: v,
+      values: A,
       defaultClassName: "react-aria-Button"
-    }), I = (0, c.Bi)(h.id), T = (0, c.Bi)(), C = h["aria-labelledby"];
-    d && (C ? C = `${C} ${T}` : h["aria-label"] && (C = `${I} ${T}`));
+    }), S = (0, c.Bi)(h.id), T = (0, c.Bi)(), C = h["aria-labelledby"];
+    d && (C ? C = `${C} ${T}` : h["aria-label"] && (C = `${S} ${T}`));
     let N = (0, p.useRef)(d);
     (0, p.useEffect)(() => {
       let e = {
-        "aria-labelledby": C || I
+        "aria-labelledby": C || S
       };
-      !N.current && b && d ? (0, a.iP)(e, "assertive") : N.current && b && !d && (0, a.iP)(e, "assertive"), N.current = d
-    }, [d, b, C, I]);
+      !N.current && y && d ? (0, a.iP)(e, "assertive") : N.current && y && !d && (0, a.iP)(e, "assertive"), N.current = d
+    }, [d, y, C, S]);
     let R = (0, f.$)(e, {
       global: true
     });
     return delete R.onClick, p.createElement("button", {
-      ...(0, u.v)(R, S, h, E, O),
+      ...(0, u.v)(R, I, h, E, O),
       type: "submit" === h.type && d ? "button" : h.type,
-      id: I,
+      id: S,
       ref: t,
       "aria-labelledby": C,
       slot: e.slot || true,
       "aria-disabled": d ? "true" : h["aria-disabled"],
       "data-disabled": e.isDisabled || true,
-      "data-pressed": v.isPressed || true,
-      "data-hovered": A || true,
-      "data-focused": b || true,
+      "data-pressed": A.isPressed || true,
+      "data-hovered": v || true,
+      "data-focused": y || true,
       "data-pending": d || true,
-      "data-focus-visible": y || true
+      "data-focus-visible": b || true
     }, p.createElement(i.K.Provider, {
       value: {
         id: T
       }
-    }, S.children))
+    }, I.children))
   });
 
 function m(e, t) {

@@ -1,7 +1,7 @@
 /** Chunk was on 64228 **/
-/** chunk id: 807651, original params: e,l,t (module,exports,require) **/
+/** chunk id: 807651, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,106 +16,106 @@ var Chunk630054 = require("./630054.js"),
   Chunk102951 = require("./102951.js"),
   Chunk652215 = require("./652215.js");
 
-function m(e) {
+function f(e) {
   let {
-    user: l,
-    currentUser: t,
-    guildId: m,
-    channelId: x,
-    displayProfile: A,
+    user: t,
+    currentUser: n,
+    guildId: f,
+    channelId: A,
+    displayProfile: x,
     relationshipType: j,
     onClose: h
   } = e, {
     newestAnalyticsLocation: g
   } = (0, r.Ay)(), v = (0, s.A)({
-    user: l,
-    guildId: m,
-    channelId: x,
-    displayProfile: A,
+    user: t,
+    guildId: f,
+    channelId: A,
+    displayProfile: x,
     onClose: h
   }), {
     gameFriends: b,
     hasOutgoingPendingGameFriends: I,
     hasIncomingPendingGameFriends: y
-  } = (0, f.J)({
-    userId: l.id
-  }), O = b.length > 0 || I || y;
-  return j === p.eA$.BLOCKED ? null : l.id === t.id ? (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(a.A, {
-      user: l,
-      guildId: m,
+  } = (0, p.J)({
+    userId: t.id
+  }), _ = b.length > 0 || I || y;
+  return j === m.eA$.BLOCKED ? null : t.id === n.id ? (0, l.jsxs)(l.Fragment, {
+    children: [(0, l.jsx)(o.A, {
+      user: t,
+      guildId: f,
       onClose: h
-    }), (0, n.jsx)(c.A, {
+    }), (0, l.jsx)(d.A, {
       onClose: h
-    }), (0, n.jsx)(d.Zt, {
-      user: l,
-      guildId: m,
+    }), (0, l.jsx)(c.Zt, {
+      user: t,
+      guildId: f,
       viewProfileItem: v
     })]
-  }) : l.bot ? (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(o.e, {
-      userId: l.id,
+  }) : t.bot ? (0, l.jsxs)(l.Fragment, {
+    children: [(0, l.jsx)(a.e, {
+      userId: t.id,
       onClose: i.A.popAll,
       autoFocus: true
-    }), (0, n.jsx)(d.Zt, {
-      user: l,
-      guildId: m,
+    }), (0, l.jsx)(c.Zt, {
+      user: t,
+      guildId: f,
       viewProfileItem: v
     })]
-  }) : j === p.eA$.PENDING_INCOMING ? (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(o.e, {
-      userId: l.id,
+  }) : j === m.eA$.PENDING_INCOMING ? (0, l.jsxs)(l.Fragment, {
+    children: [(0, l.jsx)(a.e, {
+      userId: t.id,
       onClose: i.A.popAll,
       autoFocus: true
-    }), (0, n.jsx)(d.Zt, {
-      user: l,
-      guildId: m
+    }), (0, l.jsx)(c.Zt, {
+      user: t,
+      guildId: f
     })]
-  }) : j === p.eA$.FRIEND || j === p.eA$.PENDING_OUTGOING ? (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(o.e, {
-      userId: l.id,
+  }) : j === m.eA$.FRIEND || j === m.eA$.PENDING_OUTGOING ? (0, l.jsxs)(l.Fragment, {
+    children: [(0, l.jsx)(a.e, {
+      userId: t.id,
       onClose: i.A.popAll,
       autoFocus: true
-    }), (0, n.jsx)(u.Ef, {
-      user: l,
+    }), (0, l.jsx)(u.Ef, {
+      user: t,
       relationshipType: j,
       analyticsLocation: g
-    }), (0, n.jsx)(d.Zt, {
-      user: l,
-      guildId: m,
+    }), (0, l.jsx)(c.Zt, {
+      user: t,
+      guildId: f,
       viewProfileItem: v
     })]
-  }) : j === p.eA$.NONE && O ? (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(o.e, {
-      userId: l.id,
+  }) : j === m.eA$.NONE && _ ? (0, l.jsxs)(l.Fragment, {
+    children: [(0, l.jsx)(a.e, {
+      userId: t.id,
       onClose: i.A.popAll,
       autoFocus: true
-    }), (0, n.jsx)(u.ES, {
-      user: l,
+    }), (0, l.jsx)(u.ES, {
+      user: t,
       analyticsLocation: g,
       gameFriends: b,
       tooltipPosition: "top",
       tooltipAlign: "center",
       hasIncomingPendingGameFriends: y,
       hasOutgoingPendingGameFriends: I
-    }), (0, n.jsx)(d.Zt, {
-      user: l,
-      guildId: m,
+    }), (0, l.jsx)(c.Zt, {
+      user: t,
+      guildId: f,
       viewProfileItem: v
     })]
-  }) : (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(u.cO, {
+  }) : (0, l.jsxs)(l.Fragment, {
+    children: [(0, l.jsx)(u.cO, {
       variant: "primary",
-      userId: l.id,
+      userId: t.id,
       analyticsLocation: g,
       autoFocus: true
-    }), (0, n.jsx)(o.l, {
-      userId: l.id,
+    }), (0, l.jsx)(a.l, {
+      userId: t.id,
       onClose: i.A.popAll,
       variant: "secondary"
-    }), (0, n.jsx)(d.Zt, {
-      user: l,
-      guildId: m,
+    }), (0, l.jsx)(c.Zt, {
+      user: t,
+      guildId: f,
       viewProfileItem: v
     })]
   })

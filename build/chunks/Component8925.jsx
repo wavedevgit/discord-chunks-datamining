@@ -2,9 +2,9 @@
 /** chunk id: 8925, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => I,
+  Ay: () => S,
   ME: () => O,
-  c5: () => A
+  c5: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -43,7 +43,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,63 +54,63 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let O = 2700,
-  A = "> -# *",
-  v = {
+  v = "> -# *",
+  A = {
     [Chunk518477.dS.AVATAR]: () => h.intl.string(h.t["fEUP/i"]),
     [Chunk518477.dS.STATUS]: () => h.intl.string(h.t.TKdBC8),
     [Chunk518477.dS.ACTIVITY]: () => h.intl.string(h.t.bSe71F)
   },
-  S = {
+  I = {
     [Chunk518477.dS.AVATAR]: () => h.intl.string(h.t.xvN0fV),
     [Chunk518477.dS.STATUS]: () => h.intl.string(h.t["C/vzS7"]),
     [Chunk518477.dS.ACTIVITY]: () => h.intl.string(h.t.ObfsSj)
   };
 
-function I(e) {
+function S(e) {
   let {
     user: t,
     sourceType: n,
     isVisible: a,
     isExpandable: g,
-    interactionSourceId: b,
+    interactionSourceId: y,
     targetRef: O,
-    onAction: A,
-    renderMoreButtonPopout: I
+    onAction: v,
+    renderMoreButtonPopout: S
   } = e, T = i.useRef(null), C = (0, o.bG)([d.default], () => d.default.getId() === t.id), N = (0, f.A)(t.id), {
     onInteraction: R,
     onInteractionPopoutTargetRefChange: w
   } = (0, p.Pq)();
   if (t.bot || C || !N) return null;
   let P = () => {
-      w(O), n === _.dS.AVATAR ? A({
+      w(O), n === _.dS.AVATAR ? v({
         action: "PRESS_REACT_AVATAR"
-      }) : n === _.dS.STATUS ? A({
+      }) : n === _.dS.STATUS ? v({
         action: "PRESS_REACT_CUSTOM_STATUS"
-      }) : A({
+      }) : v({
         action: "PRESS_REACT_ACTIVITY"
       }), null == R || R({
         interactionType: _.AQ.REACT,
         interactionSource: n,
-        interactionSourceId: b
+        interactionSourceId: y
       })
     },
     D = () => {
-      w(O), n === _.dS.AVATAR ? A({
+      w(O), n === _.dS.AVATAR ? v({
         action: "PRESS_REPLY_AVATAR"
-      }) : n === _.dS.STATUS ? A({
+      }) : n === _.dS.STATUS ? v({
         action: "PRESS_REPLY_CUSTOM_STATUS"
-      }) : A({
+      }) : v({
         action: "PRESS_REPLY_ACTIVITY"
       }), null == R || R({
         interactionType: _.AQ.REPLY,
         interactionSource: n,
-        interactionSourceId: b
+        interactionSourceId: y
       })
     };
   return (0, r.jsxs)(u.Ay, {
@@ -130,7 +130,7 @@ function I(e) {
       children: (0, r.jsx)(u.$n, {
         onClick: P,
         className: m.x6,
-        "aria-label": v[n](),
+        "aria-label": A[n](),
         "aria-haspopup": "dialog",
         children: (0, r.jsx)(c.nm2, {
           size: "xs",
@@ -146,14 +146,14 @@ function I(e) {
       children: (0, r.jsx)(u.$n, {
         onClick: D,
         className: m.x6,
-        "aria-label": S[n](),
+        "aria-label": I[n](),
         "aria-haspopup": "dialog",
         children: (0, r.jsx)(c.W4J, {
           size: "xs",
           className: m.Kk
         })
       })
-    }), null == I ? true : I(e => {
+    }), null == S ? true : S(e => {
       let t = () => {
         var t;
         w(T), null == (t = e.onClick) || t.call(e)
@@ -164,7 +164,7 @@ function I(e) {
         shouldShow: a,
         delay: 0,
         ariaHidden: true,
-        children: (0, r.jsx)(u.$n, y(E({
+        children: (0, r.jsx)(u.$n, b(E({
           ref: T
         }, e), {
           onClick: t,

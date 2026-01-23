@@ -2,7 +2,7 @@
 /** chunk id: 127757, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  d: () => g
+  d: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,12 +15,12 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk86045 = require("./86045.js");
 
-function f(e) {
+function g(e) {
   let {
     emoji: t,
     onRemoveEmoji: n,
     disabled: i = false
-  } = e, c = a.Ay.getEmojiURL({
+  } = e, o = a.Ay.getEmojiURL({
     id: t.id,
     animated: t.animated,
     size: 32
@@ -31,7 +31,7 @@ function f(e) {
     }),
     children: [(0, r.jsx)("img", {
       className: u.mp,
-      src: c,
+      src: o,
       alt: t.name
     }), (0, r.jsx)(s.Text, {
       color: "text-strong",
@@ -51,15 +51,15 @@ function f(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     tierEmojiIds: t,
     guildId: n,
     onRemoveEmoji: i
-  } = e, l = (0, o.A)(n), s = null != t ? l.filter(e => t.has(e.id)) : [], a = (0, c.gN)();
+  } = e, l = (0, c.A)(n), s = null != t ? l.filter(e => t.has(e.id)) : [], a = (0, o.gN)();
   return (0, r.jsx)("div", {
     className: u.kL,
-    children: s.map(e => (0, r.jsx)(f, {
+    children: s.map(e => (0, r.jsx)(g, {
       emoji: e,
       onRemoveEmoji: () => i(e),
       disabled: a

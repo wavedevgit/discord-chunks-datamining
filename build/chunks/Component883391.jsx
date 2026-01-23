@@ -41,9 +41,9 @@ class N extends Chunk64700.PureComponent {
       approximateMemberCount: e,
       approximatePresenceCount: t
     } = this.props.guild;
-    return null == e || null == t ? null : (0, r.jsxs)(A.A, {
+    return null == e || null == t ? null : (0, r.jsxs)(f.A, {
       className: S.Fj,
-      align: A.A.Align.CENTER,
+      align: f.A.Align.CENTER,
       children: [(0, r.jsx)("div", {
         className: S.JX
       }), (0, r.jsx)("span", {
@@ -74,11 +74,11 @@ class N extends Chunk64700.PureComponent {
     if (t && n) return null;
     let d = (0, O.rx)(e),
       p = v.intl.string(v.t.pxwdrA),
-      f = this.handleJoinOrView,
-      m = c.$n.Looks.FILLED,
-      b = c.$n.Colors.PRIMARY;
-    return l ? n ? (m = c.$n.Looks.OUTLINED, b = S.yh, p = (0, r.jsxs)(A.A, {
-      align: A.A.Align.CENTER,
+      h = this.handleJoinOrView,
+      A = c.$n.Looks.FILLED,
+      _ = c.$n.Colors.PRIMARY;
+    return l ? n ? (A = c.$n.Looks.OUTLINED, _ = S.yh, p = (0, r.jsxs)(f.A, {
+      align: f.A.Align.CENTER,
       children: [(0, r.jsx)("div", {
         children: v.intl.string(v.t.cEnaWx)
       }), (0, r.jsx)(u.A9s, {
@@ -86,18 +86,18 @@ class N extends Chunk64700.PureComponent {
         color: "currentColor",
         className: S.BW
       })]
-    })) : i && t && (p = v.intl.string(v.t.XpeFYr)) : (p = v.intl.string(v.t.dKhVQN), f = this.handleLogin), (0, r.jsxs)("div", {
+    })) : i && t && (p = v.intl.string(v.t.XpeFYr)) : (p = v.intl.string(v.t.dKhVQN), h = this.handleLogin), (0, r.jsxs)("div", {
       className: a()(s, o === y.q.SMALL ? S.T8 : S.vm),
-      children: [(0, r.jsx)(h.A, {
+      children: [(0, r.jsx)(g.A, {
         children: v.intl.string(v.t.s1KcLo)
       }), (0, r.jsxs)("div", {
         className: S.Qs,
         children: [(0, r.jsxs)("div", {
           className: S.pq,
-          children: [(0, r.jsx)(g.A, {
+          children: [(0, r.jsx)(m.A, {
             guild: d,
             active: true,
-            size: g.A.Sizes.LARGE,
+            size: m.A.Sizes.LARGE,
             className: S.$f
           }), (0, r.jsxs)("div", {
             className: S.aV,
@@ -110,9 +110,9 @@ class N extends Chunk64700.PureComponent {
           size: c.$n.Sizes.SMALL,
           className: S.hP,
           fullWidth: true,
-          color: b,
-          look: m,
-          onClick: f,
+          color: _,
+          look: A,
+          onClick: h,
           children: p
         })]
       })]
@@ -125,7 +125,7 @@ class N extends Chunk64700.PureComponent {
         skuId: t,
         isInGuild: n,
         isLurking: r
-      } = this.props, i = () => (0, _.u)(e.id);
+      } = this.props, i = () => (0, b.u)(e.id);
       if (r)(0, p.S5)(t).then(i);
       else if (n) i();
       else try {
@@ -138,7 +138,7 @@ class N extends Chunk64700.PureComponent {
       let e = {
         redirect_to: I.BVt.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
       };
-      (0, b.pX)(I.BVt.LOGIN, {
+      (0, _.pX)(I.BVt.LOGIN, {
         search: (0, s.stringify)(e),
         source: "verified_guild_invite"
       })
@@ -148,7 +148,7 @@ class N extends Chunk64700.PureComponent {
 let T = (0, Chunk490415.A)(Chunk311907.Ay.connectStores([Chunk71393.A, Chunk857071.A], e => {
   let {
     guild: t
-  } = e, n = m.A.isLurking(t.id);
+  } = e, n = A.A.isLurking(t.id);
   return {
     isInGuild: null != E.A.getGuild(t.id) && !n,
     isLurking: n

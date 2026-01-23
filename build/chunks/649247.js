@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 649247, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => f
 }), require("./896048.js");
 var Chunk311907 = require("./311907.js"),
   Chunk181079 = require("./181079.js"),
@@ -14,12 +14,12 @@ var Chunk311907 = require("./311907.js"),
   Chunk69407 = require("./69407.js"),
   Chunk652215 = require("./652215.js");
 
-function p(e) {
+function h(e) {
   let {
     voiceState: t,
     userNick: n,
     user: r
-  } = e, l = (0, a.hz)(t, n);
+  } = e, l = (0, s.hz)(t, n);
   return {
     user: r,
     voiceState: t,
@@ -28,12 +28,12 @@ function p(e) {
   }
 }
 
-function h(e) {
+function f(e) {
   let [t] = (0, r.bG)([u.A, i.A, l.A], () => {
     let t;
-    return [(t = e === f.YYv ? c.default.keys(l.A.getFavoriteChannels()).map(e => i.A.getChannel(e)).filter(s.Vq).filter(e => e.isGuildStageVoice()) : u.A.getChannels(e)).reduce((e, t) => {
+    return [(t = e === p.YYv ? c.default.keys(l.A.getFavoriteChannels()).map(e => i.A.getChannel(e)).filter(a.Vq).filter(e => e.isGuildStageVoice()) : u.A.getChannels(e)).reduce((e, t) => {
       let n = u.A.getMutableParticipants(t.id, d.ip.SPEAKER);
-      return e[t.id] = n.filter(e => e.type === d.wY.VOICE).map(p), e
+      return e[t.id] = n.filter(e => e.type === d.wY.VOICE).map(h), e
     }, {}), t.reduce((e, t) => {
       let {
         id: n

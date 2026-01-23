@@ -1,7 +1,7 @@
 /** Chunk was on 41031 **/
 /** chunk id: 554238, original params: e,t,a (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => b
+  default: () => h
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,12 +15,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk58682 = require("./58682.js");
-class h extends Chunk64700.Component {
+class p extends Chunk64700.Component {
   shouldScrollToTop(e) {
     let {
       location: t
     } = e;
-    return t.pathname.startsWith(N.BVt.APPLICATION_STORE_LISTING_SKU("")) || t.pathname.startsWith(N.BVt.APPLICATION_STORE_LISTING_APPLICATION(""))
+    return t.pathname.startsWith(_.BVt.APPLICATION_STORE_LISTING_SKU("")) || t.pathname.startsWith(_.BVt.APPLICATION_STORE_LISTING_APPLICATION(""))
   }
   render() {
     let {
@@ -29,27 +29,27 @@ class h extends Chunk64700.Component {
       render: a,
       locale: o
     } = this.props;
-    return (0, s.jsx)(i.A, {
+    return (0, r.jsx)(i.A, {
       className: t,
       shouldScrollToTop: this.shouldScrollToTop,
-      render: (t, i) => (0, s.jsxs)(l.Fragment, {
-        children: [(0, s.jsx)(n.Y, {
+      render: (t, i) => (0, r.jsxs)(s.Fragment, {
+        children: [(0, r.jsx)(n.Y, {
           avoidRouter: true,
           locale: o,
           authRedirectTo: e.pathname,
           track: u.default.track,
-          className: p.Kn,
+          className: A.Kn,
           onChangeLocale: this.handleHeaderLocaleChange,
-          mobileClassName: p.Kn,
-          openNavAriaLabel: A.intl.string(A.t.Fs9k3K),
-          hideNavAriaLabel: A.intl.string(A.t.AbfyHI),
-          skipToContentLabel: A.intl.string(A.t["18gavA"])
-        }), a(t, i), (0, s.jsx)(r.w, {
+          mobileClassName: A.Kn,
+          openNavAriaLabel: N.intl.string(N.t.Fs9k3K),
+          hideNavAriaLabel: N.intl.string(N.t.AbfyHI),
+          skipToContentLabel: N.intl.string(N.t["18gavA"])
+        }), a(t, i), (0, r.jsx)(l.w, {
           locale: o,
           authRedirectTo: e.pathname,
           avoidRouter: true,
           track: u.default.track,
-          className: p.wn
+          className: A.wn
         })]
       })
     })
@@ -68,6 +68,6 @@ class h extends Chunk64700.Component {
       })
   }
 }
-let b = Chunk311907.Ay.connectStores([Chunk773669.default], () => ({
+let h = Chunk311907.Ay.connectStores([Chunk773669.default], () => ({
   locale: d.default.locale
-}))(h)
+}))(p)

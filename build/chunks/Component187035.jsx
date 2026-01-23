@@ -48,10 +48,10 @@ function k(e, t, n) {
 Chunk311907.Ay.initialize();
 class D extends Chunk64700.PureComponent {
   componentDidMount() {
-    (0, _.d)("guildTemplate"), R.VP || j.A.launch("discord://" + O.BVt.GUILD_TEMPLATE(this.props.code), () => true)
+    (0, x.d)("guildTemplate"), R.VP || y.A.launch("discord://" + N.BVt.GUILD_TEMPLATE(this.props.code), () => true)
   }
   componentDidUpdate(e) {
-    this.props.code !== e.code && g.A.resolveGuildTemplate(this.props.code)
+    this.props.code !== e.code && m.A.resolveGuildTemplate(this.props.code)
   }
   renderButton(e, t) {
     return R.VP ? (0, r.jsx)("div", {
@@ -99,9 +99,9 @@ class D extends Chunk64700.PureComponent {
     let {
       guildTemplate: e
     } = this.props;
-    return (o()(null != e, "guild template must not be null"), e.state === I.QB.RESOLVING) ? (0, r.jsx)(d.Ay, {
+    return (o()(null != e, "guild template must not be null"), e.state === O.QB.RESOLVING) ? (0, r.jsx)(d.Ay, {
       className: P.sL,
-      children: (0, r.jsx)(A.A, {
+      children: (0, r.jsx)(_.A, {
         guildTemplate: e
       })
     }) : (0, r.jsx)(U, {
@@ -124,27 +124,27 @@ class D extends Chunk64700.PureComponent {
       location: s
     } = this.props;
     if (null == e) return this.renderSpinner(w.intl.string(w.t.ZTNur7));
-    if (t === O.fAW.OPEN) return this.renderAppOpened();
-    if (t === O.fAW.OPENING) return this.renderSpinner(w.intl.string(w.t["Z+hCVU"]));
+    if (t === N.fAW.OPEN) return this.renderAppOpened();
+    if (t === N.fAW.OPENING) return this.renderSpinner(w.intl.string(w.t["Z+hCVU"]));
     switch (e.state) {
-      case I.QB.RESOLVING:
+      case O.QB.RESOLVING:
         return this.renderSpinner(w.intl.string(w.t["Z+hCVU"]));
-      case I.QB.RESOLVED:
+      case O.QB.RESOLVED:
         if (n || !R.VP) return this.renderAuthenticatedOrDownload();
-        if (this.props.login) return (0, r.jsx)(y.A, {
+        if (this.props.login) return (0, r.jsx)(b.A, {
           guildTemplate: e,
           transitionTo: i,
           location: s
         });
-        return (0, r.jsx)(N.A, {
+        return (0, r.jsx)(I.A, {
           guildTemplate: e,
           transitionTo: i,
           location: s,
           onRegister: () => {
-            (0, x.C)(T.zY.ORGANIC_REGISTERED_GUILD_TEMPLATE), E.A.flowStart(C.do.ORGANIC_GUILD_TEMPLATES, C.ju.NUF_STARTED)
+            (0, A.C)(C.zY.ORGANIC_REGISTERED_GUILD_TEMPLATE), E.A.flowStart(T.do.ORGANIC_GUILD_TEMPLATES, T.ju.NUF_STARTED)
           }
         });
-      case I.QB.EXPIRED:
+      case O.QB.EXPIRED:
         return this.renderInvalidGuildTemplate();
       default:
         return null
@@ -163,10 +163,10 @@ class D extends Chunk64700.PureComponent {
 
 function B(e) {
   let t = {
-    guildTemplate: (0, c.bG)([f.A], () => f.A.getGuildTemplate(e.code)),
+    guildTemplate: (0, c.bG)([p.A], () => p.A.getGuildTemplate(e.code)),
     nativeAppState: (0, c.bG)([h.A], () => h.A.getState(e.code)),
-    authenticated: (0, c.bG)([b.default], () => b.default.isAuthenticated()),
-    defaultRoute: (0, c.bG)([v.A], () => v.A.defaultRoute)
+    authenticated: (0, c.bG)([v.default], () => v.default.isAuthenticated()),
+    defaultRoute: (0, c.bG)([j.A], () => j.A.defaultRoute)
   };
   return (0, r.jsx)(D, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -188,8 +188,8 @@ function U(e) {
   } = e, {
     form: n,
     handleSubmit: i
-  } = (0, p.A)(t, false);
-  E.A.flowStep(C.do.ORGANIC_GUILD_TEMPLATES, C.jC.GUILD_CREATE);
+  } = (0, g.A)(t, false);
+  E.A.flowStep(T.do.ORGANIC_GUILD_TEMPLATES, T.jC.GUILD_CREATE);
   let s = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.hE, {
       className: P.wx,
@@ -205,7 +205,7 @@ function U(e) {
   });
   return (0, r.jsx)(S.A, {
     className: P.sL,
-    children: () => [(0, r.jsx)(m.A, {
+    children: () => [(0, r.jsx)(f.A, {
       guildTemplate: t
     }, "template"), (0, r.jsx)("div", {
       className: P.KJ,

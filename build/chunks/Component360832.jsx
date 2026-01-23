@@ -36,33 +36,33 @@ function N(e) {
   let {
     onSelectApplication: n,
     onScroll: N
-  } = e, R = (0, c.bG)([h.default], () => h.default.isAuthenticated()), T = a.useRef(null), L = (0, r.zy)(), D = a.useRef(null), {
+  } = e, T = (0, o.bG)([h.default], () => h.default.isAuthenticated()), R = l.useRef(null), L = (0, i.zy)(), D = l.useRef(null), {
     query: w,
     page: k,
     categoryId: M
-  } = a.useMemo(() => {
+  } = l.useMemo(() => {
     var e, t;
     let n = new URLSearchParams(L.search),
-      l = n.get("page"),
-      a = null != l ? Number(l) : 1;
+      r = n.get("page"),
+      l = null != r ? Number(r) : 1;
     return {
       query: null != (e = n.get("q")) ? e : "",
-      page: a,
-      categoryId: null != (t = Number(n.get("category_id"))) ? t : E.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID
+      page: l,
+      categoryId: null != (t = Number(n.get("category_id"))) ? t : I.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID
     }
-  }, [L.search]), U = (0, c.bG)([g.A], () => g.A.getCategories()), G = a.useMemo(() => null == U ? true : U.find(e => e.id === M), [U, M]), V = a.useCallback(e => {
-    (0, j.TR)(I.HAw.APP_DIRECTORY_SEARCHED, {
+  }, [L.search]), G = (0, o.bG)([b.A], () => b.A.getCategories()), U = l.useMemo(() => null == G ? true : G.find(e => e.id === M), [G, M]), H = l.useCallback(e => {
+    (0, v.TR)(E.HAw.APP_DIRECTORY_SEARCHED, {
       search_term: w,
       num_results: e,
       current_page: y.ev.SEARCH,
       result_page: k,
-      category: null == G ? true : G.name,
-      category_id: null == G ? true : G.id
+      category: null == U ? true : U.name,
+      category_id: null == U ? true : U.id
     })
-  }, [w, k, null == G ? true : G.name, null == G ? true : G.id]);
-  a.useEffect(() => {
+  }, [w, k, null == U ? true : U.name, null == U ? true : U.id]);
+  l.useEffect(() => {
     var e;
-    null == (e = T.current) || e.scrollTo({
+    null == (e = R.current) || e.scrollTo({
       to: 0
     }), w !== D.current && (D.current = w, m.$P({
       query: w,
@@ -74,121 +74,121 @@ function N(e) {
       options: {
         categoryId: M,
         page: k,
-        pageSize: E.PAGE_SIZE,
+        pageSize: I.PAGE_SIZE,
         source: s.V.APP_DIRECTORY
       },
-      onSuccessCallback: V
+      onSuccessCallback: H
     })
-  }, [M, k, w, V]);
+  }, [M, k, w, H]);
   let {
-    fetchState: H,
-    searchResults: F
-  } = (0, c.cf)([x.A], () => ({
-    fetchState: x.A.getFetchState({
+    fetchState: V,
+    searchResults: B
+  } = (0, o.cf)([f.A], () => ({
+    fetchState: f.A.getFetchState({
       query: w,
       categoryId: M,
       page: k,
-      pageSize: E.PAGE_SIZE,
+      pageSize: I.PAGE_SIZE,
       source: s.V.APP_DIRECTORY
     }),
-    searchResults: x.A.getSearchResults({
+    searchResults: f.A.getSearchResults({
       query: w,
       categoryId: M,
       page: k,
-      pageSize: E.PAGE_SIZE,
+      pageSize: I.PAGE_SIZE,
       source: s.V.APP_DIRECTORY
     })
-  })), B = (0, c.cf)([x.A], () => {
-    let e = x.A.getSearchResults({
+  })), F = (0, o.cf)([f.A], () => {
+    let e = f.A.getSearchResults({
       query: w,
       source: s.V.APP_DIRECTORY
     });
     return null != e ? function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          l = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), l.forEach(function(t) {
-          var l;
-          l = n[t], t in e ? Object.defineProperty(e, t, {
-            value: l,
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = l
+          }) : e[t] = r
         })
       }
       return e
     }({
-      [v.lj]: e.totalCount
+      [x.lj]: e.totalCount
     }, e.countsByCategory) : {}
-  }), Y = (0, d.A)(F), z = a.useMemo(() => H === f.e.FETCHING ? Y : F, [H, Y, F]), X = a.useCallback(e => {
-    (0, O.JX)({
+  }), Y = (0, d.A)(B), z = l.useMemo(() => V === _.e.FETCHING ? Y : B, [V, Y, B]), X = l.useCallback(e => {
+    (0, C.JX)({
       query: w,
       categoryId: M,
       page: e
     })
-  }, [M, w]), K = a.useCallback(e => {
-    (0, j.TR)(I.HAw.APP_DIRECTORY_CATEGORY_CLICKED, {
+  }, [M, w]), W = l.useCallback(e => {
+    (0, v.TR)(E.HAw.APP_DIRECTORY_CATEGORY_CLICKED, {
       category: e.name,
       category_id: e.id,
       current_page: y.ev.SEARCH
-    }), (0, O.JX)({
+    }), (0, C.JX)({
       query: w,
       categoryId: e.id
     })
-  }, [w]), W = a.useCallback((e, t) => {
-    (0, j.TR)(I.HAw.APP_DIRECTORY_SEARCH_RESULT_CLICKED, {
+  }, [w]), K = l.useCallback((e, t) => {
+    (0, v.TR)(E.HAw.APP_DIRECTORY_SEARCH_RESULT_CLICKED, {
       current_page: y.ev.SEARCH,
       application_id: e,
       load_id: null == z ? true : z.loadId,
       search_term: w,
       position: t
     }), n(e)
-  }, [null == z ? true : z.loadId, n, w]), Z = (0, b.A)();
-  return (0, l.jsxs)("div", {
+  }, [null == z ? true : z.loadId, n, w]), Z = (0, g.A)();
+  return (0, r.jsxs)("div", {
     className: P.kL,
-    children: [(0, l.jsx)(p.A, {
-      ref: T,
+    children: [(0, r.jsx)(p.A, {
+      ref: R,
       onScroll: N,
-      children: (0, l.jsxs)("div", {
+      children: (0, r.jsxs)("div", {
         className: P.WH,
-        children: [R ? null : (0, l.jsx)("div", {
+        children: [T ? null : (0, r.jsx)("div", {
           className: P.AW
-        }), (0, l.jsx)(u.A, {
-          children: (0, l.jsxs)("div", {
+        }), (0, r.jsx)(u.A, {
+          children: (0, r.jsxs)("div", {
             className: P.hQ,
-            children: [(0, l.jsx)("div", {
+            children: [(0, r.jsx)("div", {
               className: P.$B,
-              children: (0, l.jsx)(S.e, {
-                countsByCategory: B,
+              children: (0, r.jsx)(O.e, {
+                countsByCategory: F,
                 selectedCategoryId: M,
-                onSelectCategory: K
+                onSelectCategory: W
               })
-            }), (0, l.jsx)(A.A, {
-              loading: H === f.e.FETCHING,
-              children: H === f.e.FETCHED && (null == z || (null == z ? true : z.results.length) === 0) ? (0, l.jsx)(C.A, {
+            }), (0, r.jsx)(j.A, {
+              loading: V === _.e.FETCHING,
+              children: V === _.e.FETCHED && (null == z || (null == z ? true : z.results.length) === 0) ? (0, r.jsx)(S.A, {
                 selectedCategoryId: null != M ? M : Z.id,
-                searchAllCategories: () => K(Z)
-              }) : (0, l.jsx)("div", {
+                searchAllCategories: () => W(Z)
+              }) : (0, r.jsx)("div", {
                 className: P.Qs,
                 children: null == z ? true : z.results.map((e, t) => {
-                  if (e.type === i.j.APPLICATION) {
+                  if (e.type === a.j.APPLICATION) {
                     let n = e.data;
-                    return (0, l.jsx)(_.A, {
+                    return (0, r.jsx)(A.A, {
                       application: n,
-                      onSelectApplication: e => W(e, t),
+                      onSelectApplication: e => K(e, t),
                       showCategory: true
                     }, n.id)
                   }
                   return null
                 })
               })
-            }), (0, l.jsx)(o.mgR, {
+            }), (0, r.jsx)(c.mgR, {
               className: P.JV,
-              totalCount: Math.min((null != (t = null == z ? true : z.totalPages) ? t : 0) * E.PAGE_SIZE, E.MAX_PAGES * E.PAGE_SIZE),
-              pageSize: E.PAGE_SIZE,
+              totalCount: Math.min((null != (t = null == z ? true : z.totalPages) ? t : 0) * I.PAGE_SIZE, I.MAX_PAGES * I.PAGE_SIZE),
+              pageSize: I.PAGE_SIZE,
               disablePaginationGap: true,
               hideMaxPage: true,
               currentPage: k,
@@ -197,14 +197,14 @@ function N(e) {
           })
         })]
       })
-    }), (0, l.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: P.pn,
-      children: (0, l.jsx)("div", {
+      children: (0, r.jsx)("div", {
         className: P.jv,
-        children: (0, l.jsx)(S.A, {
-          countsByCategory: B,
+        children: (0, r.jsx)(O.A, {
+          countsByCategory: F,
           selectedCategoryId: M,
-          onSelectCategory: K
+          onSelectCategory: W
         })
       })
     })]

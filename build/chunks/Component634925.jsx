@@ -1,7 +1,7 @@
 /** Chunk was on 88615 **/
-/** chunk id: 634925, original params: e,t,l (module,exports,require) **/
+/** chunk id: 634925, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m,
+  A: () => f,
   h: () => v
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -16,48 +16,48 @@ var Chunk627968 = require("./627968.js"),
   Chunk224331 = require("./224331.js"),
   Chunk568065 = require("./568065.js");
 
-function m(e) {
+function f(e) {
   let {
     guildId: t,
-    powerup: l,
-    className: n
-  } = e, i = (0, a.Ay)(t, l), o = i.type !== p.b_.LEVEL_ACTIVATED, c = (0, s.A)(t, l, "GuildPowerupCardBodyFooter"), f = (0, u.e)(l, i, c);
+    powerup: n,
+    className: l
+  } = e, i = (0, a.Ay)(t, n), s = i.type !== m.b_.LEVEL_ACTIVATED, c = (0, o.A)(t, n, "GuildPowerupCardBodyFooter"), p = (0, u.e)(n, i, c);
   return (0, r.jsx)(d.$L, {
-    status: f,
-    cost: o ? l.cost : true,
-    className: n
+    status: p,
+    cost: s ? n.cost : true,
+    className: l
   })
 }
 
 function v(e) {
   var t;
   let {
-    guildId: l,
+    guildId: n,
     powerup: u,
-    badge: m,
+    badge: f,
     className: v,
-    onHover: A,
-    children: g
-  } = e, x = (0, o.A)(l), b = (0, a.Ay)(l, u), h = b.type !== p.b_.INACTIVE, j = (null == (t = b.sourceEntitlement) ? true : t.ends_at) != null, _ = (0, s.A)(l, u, "GuildPowerupCard"), E = n.useRef(null), y = (0, f.A)(l, u), [I, S] = n.useState(false), w = (0, i.K)(S, 1);
+    onHover: g,
+    children: A
+  } = e, _ = (0, s.A)(n), x = (0, a.Ay)(n, u), h = x.type !== m.b_.INACTIVE, b = (null == (t = x.sourceEntitlement) ? true : t.ends_at) != null, j = (0, o.A)(n, u, "GuildPowerupCard"), E = l.useRef(null), w = (0, p.A)(n, u), [y, I] = l.useState(false), S = (0, i.K)(I, 1);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.NI, {
       label: u.title,
       isActive: h,
-      isWarning: j,
-      badge: m,
-      canRollback: _,
-      onClick: y,
-      onMouseOver: () => null == A ? true : A(true),
-      onMouseLeave: () => null == A ? true : A(false),
+      isWarning: b,
+      badge: f,
+      canRollback: j,
+      onClick: w,
+      onMouseOver: () => null == g ? true : g(true),
+      onMouseLeave: () => null == g ? true : g(false),
       className: v,
       ref: e => {
-        E.current = e, w.current = e
+        E.current = e, S.current = e
       },
-      children: g
-    }), !_ && x && (0, r.jsx)(c.A, {
+      children: A
+    }), !j && _ && (0, r.jsx)(c.A, {
       powerup: u,
       targetRef: E,
-      isCardVisible: I
+      isCardVisible: y
     })]
   })
 }

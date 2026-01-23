@@ -56,19 +56,19 @@ function E(e, t) {
   }), e
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = y(e, t), Object.getOwnPropertySymbols)
+  if (a = b(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -82,66 +82,66 @@ let O = (0, Chunk64700.createContext)({
     skuIDs: [],
     analyticsLocations: []
   }),
-  A = () => (0, i.useContext)(O),
-  v = e => {
+  v = () => (0, i.useContext)(O),
+  A = e => {
     let {
       analyticsLocations: t,
       hideConfirmStepConfetti: n,
       confettiCanvas: i
-    } = A();
+    } = v();
     return (0, r.jsx)(d.v, m({
       analyticsLocations: t,
       hideConfetti: n,
       confettiCanvas: i
     }, e))
   },
-  S = {
-    renderStep: e => (0, r.jsx)(v, m({}, e)),
+  I = {
+    renderStep: e => (0, r.jsx)(A, m({}, e)),
     options: Chunk165823.yC
   },
-  I = e => {
+  S = e => {
     let {
       skuId: t,
       analyticsLocations: n,
       children: s
-    } = e, o = b(e, ["skuId", "analyticsLocations", "children"]), {
+    } = e, o = y(e, ["skuId", "analyticsLocations", "children"]), {
       environment: c,
       confettiCanvas: d,
       setConfettiCanvas: f,
       customConfettiVisible: p,
       setCustomConfettiVisible: h,
       customConfettiDisplayOptions: g,
-      hideConfirmStepConfetti: y
+      hideConfirmStepConfetti: b
     } = (0, u.Ub)({
       skuId: t
     }), {
-      analyticsLocations: A
+      analyticsLocations: v
     } = (0, u.NW)({
       analyticsLocations: null != n ? n : []
-    }), v = (0, u.v1)({
+    }), A = (0, u.v1)({
       skuId: t
-    }), S = (0, i.useMemo)(() => ({
-      analyticsLocations: A,
-      skuIDs: v,
+    }), I = (0, i.useMemo)(() => ({
+      analyticsLocations: v,
+      skuIDs: A,
       setCustomConfettiVisible: h,
-      hideConfirmStepConfetti: y,
+      hideConfirmStepConfetti: b,
       confettiCanvas: d
-    }), [A, v, h, y, d]);
+    }), [v, A, h, b, d]);
     return (0, r.jsxs)(a.f5, {
-      value: A,
+      value: v,
       children: [(0, r.jsx)(u.Kg, {
         environment: c,
         setConfettiCanvas: f,
         customConfettiDisplayOptions: g,
         customConfettiVisible: p
       }), (0, r.jsx)(l.PaymentContextProvider, E(m({}, o), {
-        skuIDs: v,
+        skuIDs: A,
         stepConfigs: o.stepConfigs,
         activeSubscription: null,
         purchaseType: _.VV.ONE_TIME,
         excludeSubscriptionPlansBySKU: true,
         children: (0, r.jsx)(O.Provider, {
-          value: S,
+          value: I,
           children: s
         })
       }))]
@@ -193,7 +193,7 @@ let O = (0, Chunk64700.createContext)({
     })
   },
   R = {
-    CustomPaymentContextProvider: I,
+    CustomPaymentContextProvider: S,
     UnifiedCheckoutContextProvider: e => {
       let {
         skuId: t,
@@ -210,10 +210,10 @@ let O = (0, Chunk64700.createContext)({
         skuIDs: h,
         setCustomConfettiVisible: m,
         analyticsLocations: g
-      } = A(), {
+      } = v(), {
         paymentModalSkuId: E,
-        paymentModalOnClose: b,
-        paymentModalOnComplete: y
+        paymentModalOnClose: y,
+        paymentModalOnComplete: b
       } = (0, u.ot)({
         onClose: _,
         onComplete: l,
@@ -225,10 +225,10 @@ let O = (0, Chunk64700.createContext)({
         analyticsLocations: g,
         analyticsSourceLocation: a,
         flowSpecificOptions: c
-      }), [n, t, g, a, c]), v = (0, i.useMemo)(() => ({
+      }), [n, t, g, a, c]), A = (0, i.useMemo)(() => ({
         skuId: E,
-        onClose: b,
-        onComplete: y,
+        onClose: y,
+        onComplete: b,
         applicationId: p.FYj,
         initialPlanId: null,
         analyticsLocations: g,
@@ -236,11 +236,11 @@ let O = (0, Chunk64700.createContext)({
         hideShadow: true,
         transitionState: s.transitionState,
         returnRef: s.returnRef
-      }), [E, b, y, g, c.onStepChange, s.transitionState, s.returnRef]);
+      }), [E, y, b, g, c.onStepChange, s.transitionState, s.returnRef]);
       return (0, r.jsx)(C.Provider, {
         value: {
           sharedCheckoutContext: O,
-          paymentModalProps: v,
+          paymentModalProps: A,
           renderModalProps: s
         },
         children: d
@@ -255,5 +255,5 @@ let O = (0, Chunk64700.createContext)({
         legacyStepConfig: true
       }
     },
-    CUSTOM_CONFIRM_STEP_CONFIG: S
+    CUSTOM_CONFIRM_STEP_CONFIG: I
   }

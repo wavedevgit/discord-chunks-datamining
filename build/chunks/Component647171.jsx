@@ -2,7 +2,7 @@
 /** chunk id: 647171, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  l: () => g
+  l: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,7 +15,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk446291 = require("./446291.js"),
   Chunk927573 = require("./927573.js");
 
-function g() {
+function m() {
   let {
     vanityURLCode: e,
     hasChanges: t,
@@ -25,30 +25,30 @@ function g() {
     hasChanges: d.A.hasChanges(),
     errorDetails: d.A.errorDetails
   })), {
-    guild: g,
-    submitting: b,
-    errors: m,
-    hasChanges: p
-  } = (0, l.cf)([c.A], () => c.A.getProps()), x = i.useMemo(() => null != n ? (0, u.z)(null == n ? true : n.code) : (0, f.$s)(m), [m, n]), h = i.useCallback(async () => {
-    if (null != g && (t && await (0, o.zf)(g.id, e, {
+    guild: m,
+    submitting: p,
+    errors: f,
+    hasChanges: b
+  } = (0, l.cf)([o.A], () => o.A.getProps()), h = i.useMemo(() => null != n ? (0, u.z)(null == n ? true : n.code) : (0, g.$s)(f), [f, n]), x = i.useCallback(async () => {
+    if (null != m && (t && await (0, c.zf)(m.id, e, {
         throwErr: true
-      }), p)) {
+      }), b)) {
       let e = {
-        premiumProgressBarEnabled: g.premiumProgressBarEnabled,
-        banner: g.banner,
-        splash: g.splash
+        premiumProgressBarEnabled: m.premiumProgressBarEnabled,
+        banner: m.banner,
+        splash: m.splash
       };
-      await a.A.saveGuild(g.id, e, {
+      await a.A.saveGuild(m.id, e, {
         throwErr: true
       })
     }
-  }, [g, p, t, e]), j = i.useCallback(() => {
-    null != g && (a.A.init(g.id), (0, o.fx)())
-  }, [g]);
+  }, [m, b, t, e]), j = i.useCallback(() => {
+    null != m && (a.A.init(m.id), (0, c.fx)())
+  }, [m]);
   return (0, r.jsx)(s.A, {
-    submitting: b,
-    errorMessage: x,
-    onSave: h,
+    submitting: p,
+    errorMessage: h,
+    onSave: x,
     onReset: j
   })
 }

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   g1: () => T,
-  nd: () => S
+  nd: () => I
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,7 +23,7 @@ var Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk498386 = require("./498386.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,14 +32,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -56,17 +56,17 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = (0, Chunk95701.createChannelRecord)({
+let A = (0, Chunk95701.createChannelRecord)({
   id: "1",
   type: Chunk652215.rbe.DM
 });
 
-function S(e) {
+function I(e) {
   let {
     placeholder: t,
     onEnter: n,
@@ -77,9 +77,9 @@ function S(e) {
     onFocus: p,
     channel: _,
     className: h
-  } = e, [m, g] = i.useState(""), [b, O] = i.useState((0, d.x7)("")), S = () => {
+  } = e, [m, g] = i.useState(""), [y, O] = i.useState((0, d.x7)("")), I = () => {
     g(""), O((0, d.x7)(""))
-  }, I = u.oU.ATOMIC_REACTOR_REPLY_INPUT, T = i.useRef(null), C = () => {
+  }, S = u.oU.ATOMIC_REACTOR_REPLY_INPUT, T = i.useRef(null), C = () => {
     if (null == T.current) return "top";
     let e = T.current.getBoundingClientRect(),
       t = window.innerHeight;
@@ -93,17 +93,17 @@ function S(e) {
     showRemainingCharsAfterCount: false,
     allowNewLines: false,
     maxCharacterCount: 200,
-    channel: null != _ ? _ : v,
+    channel: null != _ ? _ : A,
     onChange: (e, t, n) => {
       g(t), O(n)
     },
-    type: o ? A(y({}, I), {
+    type: o ? v(b({}, S), {
       emojis: {
         button: true
       }
-    }) : I,
+    }) : S,
     textValue: m,
-    richValue: b,
+    richValue: y,
     onSubmit: e => {
       let {
         value: t
@@ -111,7 +111,7 @@ function S(e) {
       return t.length > 200 ? Promise.resolve({
         shouldClear: false,
         shouldRefocus: true
-      }) : (n(t), S(), Promise.resolve({
+      }) : (n(t), I(), Promise.resolve({
         shouldClear: true,
         shouldRefocus: false
       }))
@@ -126,7 +126,7 @@ function S(e) {
     renderAttachButton: l
   })
 }
-let I = (e, t) => {
+let S = (e, t) => {
     i.useEffect(() => {
       let n = t => {
           "Escape" === t.key && e()
@@ -145,7 +145,7 @@ let I = (e, t) => {
       onSelectEmoji: t,
       onClick: n
     } = e, a = (0, c.Ay)(), [s, u] = i.useState(false), d = i.useRef(null), f = i.useRef(null);
-    return I(() => u(false), d), (0, r.jsx)(l.YNO, {
+    return S(() => u(false), d), (0, r.jsx)(l.YNO, {
       targetElementRef: f,
       align: "right",
       position: "top",
@@ -158,7 +158,7 @@ let I = (e, t) => {
           ref: d,
           children: (0, r.jsx)(_.C, {
             messageId: m.dJq,
-            channel: v,
+            channel: A,
             closePopout: () => {
               u(false)
             },

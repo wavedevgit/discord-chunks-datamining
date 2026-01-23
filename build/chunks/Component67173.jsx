@@ -35,17 +35,17 @@ let I = Math.ceil(Math.sqrt(115200)),
       dismissContent: j
     } = function() {
       let e = (0, u.useHasAnyModalOpen)(),
-        [t, n] = (0, A.kn)(e ? [] : [c.M.QUEST_HOME_ENTRYPOINT_ONBOARDING], E.m.PRIVATE_CHANNELS_LIST, true),
+        [t, n] = (0, f.kn)(e ? [] : [c.M.QUEST_HOME_ENTRYPOINT_ONBOARDING], E.m.PRIVATE_CHANNELS_LIST, true),
         r = i.useCallback(() => {
           n(E.i.TAKE_ACTION)
         }, [n]);
       return {
         shouldShowPopover: t === c.M.QUEST_HOME_ENTRYPOINT_ONBOARDING,
-        shouldShowGradientAndBadge: !(0, h.JZ)(c.M.QUEST_HOME_ENTRYPOINT_ONBOARDING),
+        shouldShowGradientAndBadge: !(0, g.JZ)(c.M.QUEST_HOME_ENTRYPOINT_ONBOARDING),
         dismissContent: r
       }
     }(), x = i.useCallback(() => {
-      b.A.getState().setUtmCurrentContext({
+      _.A.getState().setUtmCurrentContext({
         utmContentCurrent: "PRIMARY_QUEST_HOME"
       })
     }, []), [{
@@ -94,10 +94,10 @@ let I = Math.ceil(Math.sqrt(115200)),
       }), w({
         glowSpring: 1,
         delay: 700
-      }), g.default.track(_.HAw.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
+      }), m.default.track(b.HAw.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
     }, [R, w]), [U, G] = i.useState(false), V = i.useCallback(e => {
       G(e.contentRect.width)
-    }, []), B = (0, f.w)(V, [], {
+    }, []), B = (0, h.w)(V, [], {
       fireOnMount: true
     });
     return (0, r.jsxs)(r.Fragment, {
@@ -136,7 +136,7 @@ let I = Math.ceil(Math.sqrt(115200)),
           icon: d.r2v,
           listItemRef: C,
           onClick: x,
-          route: _.BVt.QUEST_HOME_V2,
+          route: b.BVt.QUEST_HOME_V2,
           selected: l,
           text: O.intl.string(O.t.JALI2K)
         }, S), n = n = {
@@ -170,7 +170,7 @@ let I = Math.ceil(Math.sqrt(115200)),
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t))
-      }), N && (0, r.jsx)(m.A, {
+      }), N && (0, r.jsx)(A.A, {
         targetElementRef: C,
         onNavigateToQuestHome: x,
         onRender: k,

@@ -2,7 +2,7 @@
 /** chunk id: 260598, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => A
+  f: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -62,22 +62,22 @@ function E(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = b(e, t), Object.getOwnPropertySymbols)
+  if (a = y(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let y = 10,
+let b = 10,
   O = 7.23;
 
-function A(e) {
+function v(e) {
   var t;
   let {
     value: n,
@@ -86,10 +86,10 @@ function A(e) {
     autosize: d = false,
     minLength: _,
     maxLength: m,
-    error: b,
-    defaultDirty: A,
-    showCharacterCount: S,
-    showRemainingCharacterCount: I = true,
+    error: y,
+    defaultDirty: v,
+    showCharacterCount: I,
+    showRemainingCharacterCount: S = true,
     rows: T = 3,
     inputRef: C
   } = e, N = E(e, ["value", "placeholder", "autoFocus", "autosize", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCount", "showRemainingCharacterCount", "rows", "inputRef"]), {
@@ -99,23 +99,23 @@ function A(e) {
     disabled: P
   } = R, D = (0, u.Y)({
     validateOn: "change",
-    error: b,
+    error: y,
     value: n,
     minLength: _,
     maxLength: m,
-    defaultDirty: A
+    defaultDirty: v
   }), x = i.useMemo(() => {
-    if (null == m) return y;
+    if (null == m) return b;
     let e = "".concat(m).length;
-    return O * (e += "".concat(m, " / ").length) + y
+    return O * (e += "".concat(m, " / ").length) + b
   }, [m]), L = e => {
     let {
       onChange: t
     } = w;
     null == t || t(e.currentTarget.value), D.setShouldValidate(true)
-  }, j = S ? (0, r.jsx)(c.n, {
+  }, j = I ? (0, r.jsx)(c.n, {
     value: n,
-    maxLength: I && null != m ? m : true
+    maxLength: S && null != m ? m : true
   }) : null;
   return (0, r.jsx)(o.D0$, g(h({}, R), {
     trailingAuxiliaryContent: j,
@@ -124,7 +124,7 @@ function A(e) {
       validation: D,
       disabled: P,
       children: (0, r.jsx)(o.vN3, {
-        children: (0, r.jsx)(v, g(h({
+        children: (0, r.jsx)(A, g(h({
           autosize: d,
           className: s()(f.Tg, p.qD),
           style: {
@@ -147,7 +147,7 @@ function A(e) {
   }))
 }
 
-function v(e) {
+function A(e) {
   let {
     "aria-labelledby": t,
     autosize: n

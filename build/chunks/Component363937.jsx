@@ -29,7 +29,7 @@ let d = {
         description: m,
         withDescriptions: g,
         withIcons: E
-      } = e, [b, y] = i.useState("option1"), O = [a.A, s.x, o.q, l.Z, c.d], A = Array.from({
+      } = e, [y, b] = i.useState("option1"), O = [a.A, s.x, o.q, l.Z, c.d], v = Array.from({
         length: t
       }, (e, t) => ({
         value: "option".concat(t + 1),
@@ -38,14 +38,14 @@ let d = {
         icon: E ? O[t % O.length] : true
       }));
       return (0, r.jsx)(u.$d, {
-        value: b,
+        value: y,
         onChange: e => {
           let {
             value: t
           } = e;
-          return y(t)
+          return b(t)
         },
-        options: A,
+        options: v,
         size: n,
         disabled: d,
         orientation: f,

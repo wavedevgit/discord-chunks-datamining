@@ -44,8 +44,8 @@ var Chunk423758 = require("./423758.js"),
   Chunk797686 = require("./797686.js"),
   Chunk537578 = require("./537578.js"),
   Chunk670200 = require("./670200.js"),
-  A = 10,
-  v = function(e, t) {
+  v = 10,
+  A = function(e, t) {
     return e.getAnchorKey() === t || e.getFocusKey() === t
   };
 module.exports = function(e) {
@@ -56,7 +56,7 @@ module.exports = function(e) {
   s(t, e);
   var n = t.prototype;
   return n.shouldComponentUpdate = function(e) {
-    return this.props.block !== e.block || this.props.tree !== e.tree || this.props.direction !== e.direction || v(e.selection, e.block.getKey()) && e.forceSelection
+    return this.props.block !== e.block || this.props.tree !== e.tree || this.props.direction !== e.direction || A(e.selection, e.block.getKey()) && e.forceSelection
   }, n.componentDidMount = function() {
     if (!this.props.preventScroll) {
       var e, t = this.props.selection,
@@ -68,8 +68,8 @@ module.exports = function(e) {
             a = g(i);
           if (i === window) {
             var s = m(r);
-            (e = s.y + s.height - E().height) > 0 && window.scrollTo(a.x, a.y + e + A)
-          } else y(r) || b(false), (e = r.offsetHeight + r.offsetTop - (i.offsetTop + i.offsetHeight + a.y)) > 0 && d.setTop(i, d.getTop(i) + e + A)
+            (e = s.y + s.height - E().height) > 0 && window.scrollTo(a.x, a.y + e + v)
+          } else b(r) || y(false), (e = r.offsetHeight + r.offsetTop - (i.offsetTop + i.offsetHeight + a.y)) > 0 && d.setTop(i, d.getTop(i) + e + v)
         }
       }
     }
@@ -79,7 +79,7 @@ module.exports = function(e) {
       n = t.getKey(),
       r = t.getText(),
       a = this.props.tree.size - 1,
-      s = v(this.props.selection, n);
+      s = A(this.props.selection, n);
     return this.props.tree.map(function(o, d) {
       var f = o.get("leaves");
       if (0 === f.size) return null;
@@ -105,27 +105,27 @@ module.exports = function(e) {
         g = o.get("decoratorKey");
       if (null == g || !e.props.decorator) return m;
       var E = O(e.props.decorator),
-        b = E.getComponentForKey(g);
-      if (!b) return m;
-      var y = E.getPropsForKey(g),
-        A = c.encode(n, d, 0),
-        v = f.first().get("start"),
-        S = f.last().get("end"),
-        I = r.slice(v, S),
+        y = E.getComponentForKey(g);
+      if (!y) return m;
+      var b = E.getPropsForKey(g),
+        v = c.encode(n, d, 0),
+        A = f.first().get("start"),
+        I = f.last().get("end"),
+        S = r.slice(A, I),
         T = t.getEntityAt(o.get("start")),
-        C = _.getHTMLDirIfDifferent(p.getDirection(I), e.props.direction),
+        C = _.getHTMLDirIfDifferent(p.getDirection(S), e.props.direction),
         N = {
           contentState: e.props.contentState,
-          decoratedText: I,
+          decoratedText: S,
           dir: C,
-          start: v,
-          end: S,
+          start: A,
+          end: I,
           blockKey: n,
           entityKey: T,
-          offsetKey: A
+          offsetKey: v
         };
-      return u.createElement(b, i({}, y, N, {
-        key: A
+      return u.createElement(y, i({}, b, N, {
+        key: v
       }), m)
     }).toArray()
   }, n.render = function() {

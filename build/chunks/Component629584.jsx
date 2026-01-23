@@ -56,7 +56,7 @@ function _(e) {
     disabled: h = false,
     tooltip: m,
     tooltipAriaLabel: g
-  } = e, E = i.useCallback(e => a(t, e), [a, t]), b = () => (0, r.jsx)(l.DUT, {
+  } = e, E = i.useCallback(e => a(t, e), [a, t]), y = () => (0, r.jsx)(l.DUT, {
     className: s()(d(u), _, {
       [f(u)]: n,
       [c.r9]: h
@@ -73,10 +73,10 @@ function _(e) {
       }) : null, t.name]
     })
   });
-  return null == m ? b() : (0, r.jsx)(o.m, {
+  return null == m ? y() : (0, r.jsx)(o.m, {
     shouldShow: !h,
     __unsupportedReactNodeAsText: m,
-    children: b()
+    children: y()
   })
 }
 

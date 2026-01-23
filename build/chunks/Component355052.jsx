@@ -41,12 +41,12 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 let P = 10 * Chunk927813.A.Millis.SECOND,
-  D = new Chunk118356.Vy("LegacyOverlayErrorBoundary");
+  T = new Chunk118356.Vy("LegacyOverlayErrorBoundary");
 
-function T() {
-  let e = (0, v.getPID)(),
-    t = (0, v.getRPCAuthToken)();
-  (0, b.tN)({
+function D() {
+  let e = (0, _.getPID)(),
+    t = (0, _.getRPCAuthToken)();
+  (0, g.tN)({
     type: I.kGV.DISPATCH,
     pid: e,
     token: t,
@@ -60,7 +60,7 @@ function T() {
 class R extends Chunk64700.PureComponent {
   componentDidMount() {
     this.notificationTimer = setTimeout(this.hideNotification, P), f.A.track(I.HAw.NOTIFICATION_VIEWED, {
-      notif_type: _.KS.OverlayCrashed
+      notif_type: j.KS.OverlayCrashed
     })
   }
   componentWillUnmount() {
@@ -78,7 +78,7 @@ class R extends Chunk64700.PureComponent {
     } = this.state, {
       notificationTimer: r
     } = this;
-    return null == r ? null : (0, i.jsx)(S.A, {
+    return null == r ? null : (0, i.jsx)(x.A, {
       contentDomRef: this.contentDomRef,
       observe: false,
       children: (0, i.jsx)(p.NPJ, {
@@ -87,9 +87,9 @@ class R extends Chunk64700.PureComponent {
           innerRef: this.contentDomRef,
           className: l()(r, w.kL),
           onClick: e => e.stopPropagation(),
-          children: [(0, i.jsx)(y.Ay, {
+          children: [(0, i.jsx)(A.Ay, {
             expand: true,
-            icon: (0, i.jsx)(m.A, {
+            icon: (0, i.jsx)(b.A, {
               width: 40,
               height: 40,
               className: w.Lo
@@ -100,11 +100,11 @@ class R extends Chunk64700.PureComponent {
             onConfirmClick: this.handleReload,
             onDismissClick: this.hideNotification,
             locked: false
-          }), n && null != e ? (0, i.jsxs)(j.Ay, {
+          }), n && null != e ? (0, i.jsxs)(S.Ay, {
             className: w.a2,
-            children: [(0, i.jsx)(j.Ay.Bar, {
+            children: [(0, i.jsx)(S.Ay.Bar, {
               children: "Error Details"
-            }), (0, i.jsx)(j.Ay.Content, {
+            }), (0, i.jsx)(S.Ay.Content, {
               className: w.Xh,
               children: (0, i.jsx)("code", {
                 className: w.aY,
@@ -123,7 +123,7 @@ class R extends Chunk64700.PureComponent {
       showTrace: false,
       busy: false
     }), N(this, "notificationTimer", true), N(this, "contentDomRef", r.createRef()), N(this, "hideNotification", () => {
-      T();
+      D();
       let {
         notificationTimer: e
       } = this;
@@ -131,8 +131,8 @@ class R extends Chunk64700.PureComponent {
     }), N(this, "handleReload", e => {
       this.setState({
         busy: true
-      }), T(), f.A.track(I.HAw.NOTIFICATION_CLICKED, {
-        notif_type: _.KS.OverlayCrashed,
+      }), D(), f.A.track(I.HAw.NOTIFICATION_CLICKED, {
+        notif_type: j.KS.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => location.reload(true), 200)
     }), N(this, "handleNotificationClick", e => {
@@ -147,7 +147,7 @@ class R extends Chunk64700.PureComponent {
   }
 }
 let k = a().throttle(() => {
-  g.A.increment({
+  y.A.increment({
     name: u.K.APP_CRASHED,
     tags: ["reason:".concat(c.J.UNHANDLED_JS_ERROR), "level:".concat(d.k.FATAL)]
   }, true)
@@ -156,19 +156,19 @@ let k = a().throttle(() => {
 });
 class L extends Chunk64700.PureComponent {
   componentDidCatch(e, t) {
-    let n = (0, A.JK)().location;
+    let n = (0, m.JK)().location;
     this.setState({
       error: e,
       info: t
-    }), D.error("ErrorBoundary caught error: ".concat(e.message), {
+    }), T.error("ErrorBoundary caught error: ".concat(e.message), {
       error: e,
       info: t
     });
-    let i = (0, v.getPID)(),
-      r = (0, v.getRPCAuthToken)();
-    (0, b.tN)({
+    let i = (0, _.getPID)(),
+      r = (0, _.getRPCAuthToken)();
+    (0, g.tN)({
       type: I.kGV.DISPATCH,
-      pid: (0, v.getPID)(),
+      pid: (0, _.getPID)(),
       token: r,
       payloads: [{
         type: "OVERLAY_CRASHED",
@@ -179,8 +179,8 @@ class L extends Chunk64700.PureComponent {
         locked: true,
         pid: i
       }]
-    }), setImmediate(() => window.addEventListener("click", T));
-    let s = (0, E.St)(e, x.Ue.Hook, {
+    }), setImmediate(() => window.addEventListener("click", D));
+    let s = (0, v.St)(e, E.Ue.Hook, {
       extra: t
     });
     f.A.track(I.HAw.APP_CRASHED, {

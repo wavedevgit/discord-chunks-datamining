@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk989349 = require("./989349.js"),
   s = require.n(Chunk989349),
   Chunk990078 = require("./990078.jsx"),
@@ -18,9 +18,9 @@ var Chunk503698 = require("./503698.js"),
 let h = e => {
   let t, n, {
     rateLimitPerUser: r,
-    slowmodeCooldownGuess: i,
+    slowmodeCooldownGuess: a,
     isBypassSlowmode: h,
-    leadingIcon: f = false
+    leadingIcon: g = false
   } = e;
   if (r >= d.A.Seconds.HOUR) {
     let e = Math.floor(r / d.A.Seconds.HOUR),
@@ -40,9 +40,9 @@ let h = e => {
   } else n = u.intl.formatToPlainString(u.t["9yE8Ga"], {
     seconds: r
   });
-  if (!h && i > 0) {
-    let e = s().duration(i);
-    if (i > d.A.Millis.HOUR) {
+  if (!h && a > 0) {
+    let e = s().duration(a);
+    if (a > d.A.Millis.HOUR) {
       let n = "".concat(e.minutes()).padStart(2, "0"),
         l = "".concat(e.seconds()).padStart(2, "0");
       t = "".concat(e.hours(), ":").concat(n, ":").concat(l)
@@ -51,26 +51,26 @@ let h = e => {
       t = "".concat(e.minutes(), ":").concat(n)
     }
   } else t = h ? u.intl.string(u.t.SSzXvQ) : u.intl.string(u.t.Icu3bf);
-  let g = (0, l.jsx)(o.Text, {
+  let x = (0, l.jsx)(c.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
       children: t
     }),
-    x = (0, l.jsx)(o.xbX, {
+    f = (0, l.jsx)(c.xbX, {
       size: "xs",
       color: "currentColor",
-      className: a()(m.Eq, {
-        [m.iE]: f
+      className: i()(m.Eq, {
+        [m.iE]: g
       })
     });
-  return (0, l.jsx)(c.m, {
+  return (0, l.jsx)(o.m, {
     text: n,
     children: (0, l.jsx)("div", {
       className: m.ns,
-      children: f ? (0, l.jsxs)(l.Fragment, {
-        children: [x, g]
+      children: g ? (0, l.jsxs)(l.Fragment, {
+        children: [f, x]
       }) : (0, l.jsxs)(l.Fragment, {
-        children: [g, x]
+        children: [x, f]
       })
     })
   })

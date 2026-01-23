@@ -136,7 +136,7 @@ function g(e) {
     channel: n
   } = e, {
     themeType: g
-  } = (0, c.E)(), E = g === u.d.MODAL_V2 ? m : h, b = t.length > f, y = t.length - f + 1, O = y >= 10 ? _ : p;
+  } = (0, c.E)(), E = g === u.d.MODAL_V2 ? m : h, y = t.length > f, b = t.length - f + 1, O = b >= 10 ? _ : p;
   return (0, r.jsx)("div", {
     className: d.kL,
     children: E[(0, i.clamp)(t.length - 1, 0, E.length - 1)].map((e, i) => {
@@ -144,13 +144,13 @@ function g(e) {
       return null == c ? null : (0, r.jsx)("div", {
         className: d.n1,
         style: e,
-        children: b && i === O ? (0, r.jsx)("div", {
+        children: y && i === O ? (0, r.jsx)("div", {
           className: d.mB,
           children: (0, r.jsx)(o.Text, {
             variant: "text-xxs/semibold",
             lineClamp: 1,
             children: (0, r.jsx)(a.A, {
-              children: y > 99 ? ">99" : "+".concat(y)
+              children: b > 99 ? ">99" : "+".concat(b)
             })
           })
         }) : (0, r.jsx)(s.m, {

@@ -2,7 +2,7 @@
 /** chunk id: 637389, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  u: () => v
+  u: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -56,19 +56,19 @@ function E(e, t) {
   }), e
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = y(e, t), Object.getOwnPropertySymbols)
+  if (a = b(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -76,40 +76,40 @@ function y(e, t) {
   return i
 }
 let O = "right-start",
-  A = Chunk64700.createContext(O);
+  v = Chunk64700.createContext(O);
 
-function v(e) {
-  let t = i.useContext(A),
+function A(e) {
+  let t = i.useContext(v),
     {
       subMenuClassName: n,
       parentItem: a,
       isFocused: h,
       menuSubmenuProps: g,
-      renderSubmenu: y
+      renderSubmenu: b
     } = e,
     {
       focusIndex: O,
-      isUsingKeyboardNavigation: v
+      isUsingKeyboardNavigation: A
     } = g,
-    S = b(g, ["focusIndex", "isUsingKeyboardNavigation"]),
-    I = i.useRef(null),
+    I = y(g, ["focusIndex", "isUsingKeyboardNavigation"]),
+    S = i.useRef(null),
     T = i.useRef(null),
     C = i.useRef(null),
     [N, R] = i.useState(false);
   i.useLayoutEffect(() => {
     R(true)
   }, []), i.useLayoutEffect(() => {
-    h && (0, u.Y)(I)
+    h && (0, u.Y)(S)
   }, [h]);
   let w = (0, r.jsx)("div", {
       className: _.submenuPaddingContainer,
       children: (0, r.jsx)("div", E(m({
         className: s()(_.submenu, n)
-      }, S), {
+      }, I), {
         ref: C,
         children: (0, r.jsx)(l.IpV, {
           className: _.scroller,
-          children: y()
+          children: b()
         })
       }))
     }),
@@ -130,7 +130,7 @@ function v(e) {
       let {
         placement: t
       } = e;
-      return (0, r.jsx)(A.Provider, {
+      return (0, r.jsx)(v.Provider, {
         value: t,
         children: w
       })
@@ -158,7 +158,7 @@ function v(e) {
     children: () => w
   });
   return (0, r.jsxs)("div", {
-    ref: I,
+    ref: S,
     children: [(0, r.jsx)("div", {
       ref: T
     }), a, h && N ? j : null]

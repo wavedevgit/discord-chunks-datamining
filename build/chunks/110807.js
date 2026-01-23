@@ -2,8 +2,8 @@
 /** chunk id: 110807, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Ay: () => p,
-  SB: () => m
+  Ay: () => b,
+  SB: () => f
 }), require("./321073.js");
 var Chunk469993 = require("./469993.js"),
   Chunk836039 = require("./836039.js"),
@@ -15,32 +15,32 @@ var Chunk469993 = require("./469993.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 let {
-  getSectionDefinition: f
-} = Chunk91168.A, g = "HEADER", b = "DIVIDER";
+  getSectionDefinition: g
+} = Chunk91168.A, m = "HEADER", p = "DIVIDER";
 
-function m(e) {
+function f(e) {
   var t, n;
   let {
-    guild: o,
-    canManageGuild: m,
-    canViewAuditLog: p,
-    canManageRoles: x,
-    canManageBans: h,
+    guild: c,
+    canManageGuild: f,
+    canViewAuditLog: b,
+    canManageRoles: h,
+    canManageBans: x,
     canAccessMembersPage: j,
-    canViewGuildAnalytics: O,
-    isOwner: y,
+    canViewGuildAnalytics: _,
+    isOwner: O,
     isGuildAdmin: v,
-    canManageGuildExpressions: A
-  } = e, E = () => (0, a.V9)({
-    guild: o,
-    isOwner: y,
-    canManageGuildRoleSubscriptions: (0, a.X9)(o),
-    isMonetizationWaitlistEnabledForGuild: (0, r.Kw)(o.id),
-    isGuildEligibleForRoleSubscriptions: (0, s.OV)(o.id),
-    isExpeditedMonetizationOnboardingGuild: (0, r.Sm)(o),
+    canManageGuildExpressions: y
+  } = e, A = () => (0, a.V9)({
+    guild: c,
+    isOwner: O,
+    canManageGuildRoleSubscriptions: (0, a.X9)(c),
+    isMonetizationWaitlistEnabledForGuild: (0, r.Kw)(c.id),
+    isGuildEligibleForRoleSubscriptions: (0, s.OV)(c.id),
+    isExpeditedMonetizationOnboardingGuild: (0, r.Sm)(c),
     isUserInCreatorMonetizationEligibleCountry: (0, r.Z1)(),
-    shouldRestrictUpdatingRoleSubscriptionSettings: (0, i.mk)(o.id)
-  }), N = (t = function(e) {
+    shouldRestrictUpdatingRoleSubscriptionSettings: (0, i.mk)(c.id)
+  }), E = (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -58,7 +58,7 @@ function m(e) {
     }
     return e
   }({}, e), n = n = {
-    monetizationPredicate: E
+    monetizationPredicate: A
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,41 +68,41 @@ function m(e) {
     return n
   })(Object(n)).forEach(function(e) {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-  }), t), _ = [];
-  _.push({
-    section: g,
-    label: "" !== o.name ? o.name : u.intl.string(u.t["154/bL"])
-  }), _.push(f(d.BEX.PROFILE, N)), _.push(f(d.BEX.TAG, N)), _.push(f(d.BEX.ENGAGEMENT, N)), _.push(f(d.BEX.BOOST_PERKS, N)), A && (_.push({
-    section: b
-  }), _.push({
-    section: g,
+  }), t), N = [];
+  N.push({
+    section: m,
+    label: "" !== c.name ? c.name : u.intl.string(u.t["154/bL"])
+  }), N.push(g(d.BEX.PROFILE, E)), N.push(g(d.BEX.TAG, E)), N.push(g(d.BEX.ENGAGEMENT, E)), N.push(g(d.BEX.BOOST_PERKS, E)), y && (N.push({
+    section: p
+  }), N.push({
+    section: m,
     label: u.intl.string(u.t.m6lkGy)
-  }), _.push(f(d.BEX.EMOJI, N)), _.push(f(d.BEX.STICKERS, N)), _.push(f(d.BEX.SOUNDBOARD, N))), (m || x || j || v) && (_.push({
-    section: b
-  }), _.push({
-    section: g,
+  }), N.push(g(d.BEX.EMOJI, E)), N.push(g(d.BEX.STICKERS, E)), N.push(g(d.BEX.SOUNDBOARD, E))), (f || h || j || v) && (N.push({
+    section: p
+  }), N.push({
+    section: m,
     label: u.intl.string(u.t.bMAKMK)
-  }), _.push(f(d.BEX.MEMBERS, N)), _.push(f(d.BEX.ROLES, N)), _.push(f(d.BEX.INVITES, N)), _.push(f(d.BEX.ACCESS, N))), _.push({
-    section: b
-  }), _.push({
-    section: g,
+  }), N.push(g(d.BEX.MEMBERS, E)), N.push(g(d.BEX.ROLES, E)), N.push(g(d.BEX.INVITES, E)), N.push(g(d.BEX.ACCESS, E))), N.push({
+    section: p
+  }), N.push({
+    section: m,
     label: u.intl.string(u.t.wF3KJy)
-  }), _.push(f(d.BEX.INTEGRATIONS, N)), _.push(f(d.BEX.APP_DIRECTORY, N));
-  let S = !o.features.has(d.GuildFeatures.COMMUNITY) && ((0, l.hX)(o.id) || (0, l.i_)(o.id));
-  (m || p || h || S) && (_.push({
-    section: b
-  }), _.push({
-    section: g,
+  }), N.push(g(d.BEX.INTEGRATIONS, E)), N.push(g(d.BEX.APP_DIRECTORY, E));
+  let S = !c.features.has(d.GuildFeatures.COMMUNITY) && ((0, l.hX)(c.id) || (0, l.i_)(c.id));
+  (f || b || x || S) && (N.push({
+    section: p
+  }), N.push({
+    section: m,
     label: u.intl.string(u.t["5tbTdV"])
-  }), _.push(f(d.BEX.SAFETY, N)), _.push(f(d.BEX.MODERATION, N)), _.push(f(d.BEX.AUDIT_LOG, N)), _.push(f(d.BEX.BANS, N)), _.push(f(d.BEX.GUILD_AUTOMOD, N)));
-  let T = o.features.has(d.GuildFeatures.COMMUNITY) && O,
-    I = E();
-  return (m || T || I) && (_.push({
-    section: b
-  }), _.push(f(d.BEX.COMMUNITY, N)), _.push(f(d.BEX.ONBOARDING, N)), _.push(f(d.BEX.ANALYTICS, N)), _.push(f(d.BEX.COMMUNITY_WELCOME, N)), _.push(f(d.BEX.DISCOVERY_LANDING_PAGE, N)), _.push(f(d.BEX.ROLE_SUBSCRIPTIONS, N)), _.push(f(d.BEX.GUILD_PRODUCTS, N)), _.push(f(d.BEX.ROLE_SUBSCRIPTIONS_STORE_PAGE, N))), _.push({
-    section: b
-  }), _.push(f(d.BEX.GUILD_TEMPLATES, N)), _.push(f(d.BEX.DELETE, N)), _.filter(c.Vq)
+  }), N.push(g(d.BEX.SAFETY, E)), N.push(g(d.BEX.MODERATION, E)), N.push(g(d.BEX.AUDIT_LOG, E)), N.push(g(d.BEX.BANS, E)), N.push(g(d.BEX.GUILD_AUTOMOD, E)));
+  let I = c.features.has(d.GuildFeatures.COMMUNITY) && _,
+    T = A();
+  return (f || I || T) && (N.push({
+    section: p
+  }), N.push(g(d.BEX.COMMUNITY, E)), N.push(g(d.BEX.ONBOARDING, E)), N.push(g(d.BEX.ANALYTICS, E)), N.push(g(d.BEX.COMMUNITY_WELCOME, E)), N.push(g(d.BEX.DISCOVERY_LANDING_PAGE, E)), N.push(g(d.BEX.ROLE_SUBSCRIPTIONS, E)), N.push(g(d.BEX.GUILD_PRODUCTS, E)), N.push(g(d.BEX.ROLE_SUBSCRIPTIONS_STORE_PAGE, E))), N.push({
+    section: p
+  }), N.push(g(d.BEX.GUILD_TEMPLATES, E)), N.push(g(d.BEX.DELETE, E)), N.filter(o.Vq)
 }
-let p = {
-  generateSections: m
+let b = {
+  generateSections: f
 }

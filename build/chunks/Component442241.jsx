@@ -16,7 +16,7 @@ function p(e) {
   let {
     modalConfig: p,
     markAsDismissed: f
-  } = e, b = function(e, t) {
+  } = e, u = function(e, t) {
     if (null == e) return {};
     var r, n, o, a = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -32,17 +32,17 @@ function p(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
     return a
-  }(e, ["modalConfig", "markAsDismissed"]), u = o.useCallback(e => {
+  }(e, ["modalConfig", "markAsDismissed"]), y = o.useCallback(e => {
     var t;
-    null == (t = p.onPrimaryClick) || t.call(p, e), f(l.i.TAKE_ACTION)
-  }, [p, f]), y = [p.firstHeader, p.secondHeader].filter(Boolean).join(" "), d = [{
+    null == (t = p.onPrimaryClick) || t.call(p, e), f(i.i.TAKE_ACTION)
+  }, [p, f]), d = [p.firstHeader, p.secondHeader].filter(Boolean).join(" "), b = [{
     variant: "secondary",
-    text: i.intl.string(i.t["ETE/oC"]),
-    onClick: b.onClose
+    text: l.intl.string(l.t["ETE/oC"]),
+    onClick: u.onClose
   }, ...null != p.primaryButtonText ? [{
     variant: "primary",
     text: p.primaryButtonText,
-    onClick: u
+    onClick: y
   }] : []];
   return (0, n.jsx)(a.Modal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -61,9 +61,9 @@ function p(e) {
       })
     }
     return e
-  }({}, b), r = r = {
-    title: y,
-    actions: d,
+  }({}, u), r = r = {
+    title: d,
+    actions: b,
     size: "md",
     children: (0, n.jsx)("div", {
       className: s.kL,

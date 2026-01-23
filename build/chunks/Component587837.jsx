@@ -1,18 +1,18 @@
 /** Chunk was on 97492 **/
 /** chunk id: 587837, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => s
+  A: () => a
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk761929 = require("./761929.js"),
   Chunk423765 = require("./423765.js");
 
-function s(e) {
+function a(e) {
   let {
     resizableNode: t,
     onResize: n,
-    onResizeEnd: s,
+    onResizeEnd: a,
     minHeight: o,
     maxHeight: c
   } = e, [u, d] = l.useState(null);
@@ -20,17 +20,17 @@ function s(e) {
     var e, n;
     d(null != (e = null == (n = t.current) ? true : n.offsetHeight) ? e : null)
   }, [t]);
-  let f = (0, i.A)({
+  let p = (0, i.A)({
     initialElementDimension: u,
     minDimension: o,
     maxDimension: c,
     resizableDomNodeRef: t,
     onElementResize: n,
-    onElementResizeEnd: s,
+    onElementResizeEnd: a,
     orientation: i.R.VERTICAL_BOTTOM
   });
   return (0, r.jsx)("div", {
-    onMouseDown: f,
-    className: a.D
+    onMouseDown: p,
+    className: s.D
   })
 }

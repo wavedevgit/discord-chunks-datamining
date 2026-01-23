@@ -9,5 +9,5 @@ var Chunk333748 = require("./333748.js"),
 
 function s(e) {
   let t = null;
-  return e === a.i.PLAYSTATION_APPLICATION_ID ? t = n.fg2.PLAYSTATION : e === a.i.PLAYSTATION_STAGING_APPLICATION_ID && (t = n.fg2.PLAYSTATION_STAGING), t
+  return e === n.i.PLAYSTATION_APPLICATION_ID ? t = a.fg2.PLAYSTATION : e === n.i.PLAYSTATION_STAGING_APPLICATION_ID && (t = a.fg2.PLAYSTATION_STAGING), t
 }

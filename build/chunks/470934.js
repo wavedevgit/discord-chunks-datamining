@@ -12,8 +12,8 @@ var Chunk64700 = require("./64700.js"),
   Chunk333354 = require("./333354.js");
 
 function u(e, t, n) {
-  let u = (0, l.bG)([a.A], () => a.A.getStateForGuild(e)),
-    d = (0, s.Ay)(e, t);
+  let u = (0, l.bG)([s.A], () => s.A.getStateForGuild(e)),
+    d = (0, a.Ay)(e, t);
   return r.useMemo(() => {
     var e, r;
     if (null == u || d.type === o.b_.LEVEL_ACTIVATED) return {
@@ -22,15 +22,15 @@ function u(e, t, n) {
     };
     let {
       allPowerups: l,
-      unlockedPowerups: a
-    } = u, s = n ? null == (e = Object.values(a).find(e => {
+      unlockedPowerups: s
+    } = u, a = n ? null == (e = Object.values(s).find(e => {
       var n;
       return (null == (n = e.sku) ? true : n.dependent_sku_id) === t.skuId
-    })) ? true : e.sku_id : t.dependencies.find(e => null == a[e]);
+    })) ? true : e.sku_id : t.dependencies.find(e => null == s[e]);
     return {
-      disabled: null != s,
-      reason: null != s && null != l[s] ? i.intl.formatToPlainString(n ? c.default.vCEBiS : c.default["1B8AZr"], {
-        perk: null == (r = l[s]) ? true : r.title
+      disabled: null != a,
+      reason: null != a && null != l[a] ? i.intl.formatToPlainString(n ? c.default.vCEBiS : c.default["1B8AZr"], {
+        perk: null == (r = l[a]) ? true : r.title
       }) : true
     }
   }, [u, t.skuId, t.dependencies, n, d.type])

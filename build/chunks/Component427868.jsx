@@ -17,10 +17,10 @@ function c(e) {
     togglePopout: c,
     renderEmojiPicker: u,
     shouldShow: d
-  } = e, f = l.useRef(null);
-  return (0, r.jsx)(a.YNO, {
-    targetElementRef: f,
-    animation: a.YNO.Animation.FADE,
+  } = e, p = l.useRef(null);
+  return (0, r.jsx)(s.YNO, {
+    targetElementRef: p,
+    animation: s.YNO.Animation.FADE,
     renderPopout: e => {
       let {
         closePopout: r
@@ -32,10 +32,10 @@ function c(e) {
     position: i.Fr ? "top" : "left",
     align: i.Fr ? "center" : "top",
     clickTrap: true,
-    children: () => (0, r.jsx)(s.qv, {
-      ref: f,
+    children: () => (0, r.jsx)(a.qv, {
+      ref: p,
       label: o.intl.string(o.t.lfIHs4),
-      icon: a.nm2,
+      icon: s.nm2,
       onClick: c
     }, "add-reaction")
   })

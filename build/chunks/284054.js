@@ -23,11 +23,11 @@ function o(e, t) {
     onClick: m,
     href: g,
     target: E,
-    rel: b,
-    type: y = "button"
+    rel: y,
+    type: b = "button"
   } = e;
   n = "button" === o ? {
-    type: y,
+    type: b,
     disabled: l,
     form: e.form,
     formAction: e.formAction,
@@ -41,14 +41,14 @@ function o(e, t) {
     role: "button",
     href: "a" !== o || l ? true : g,
     target: "a" === o ? E : true,
-    type: "input" === o ? y : true,
+    type: "input" === o ? b : true,
     disabled: "input" === o ? l : true,
     "aria-disabled": l && "input" !== o ? l : true,
-    rel: "a" === o ? b : true
+    rel: "a" === o ? y : true
   };
   let {
     pressProps: O,
-    isPressed: A
+    isPressed: v
   } = (0, a.d)({
     onPressStart: u,
     onPressEnd: d,
@@ -60,15 +60,15 @@ function o(e, t) {
     preventFocusOnPress: _,
     ref: t
   }), {
-    focusableProps: v
+    focusableProps: A
   } = (0, s.Wc)(e, t);
-  h && (v.tabIndex = l ? false : v.tabIndex);
-  let S = (0, r.v)(v, O, (0, i.$)(e, {
+  h && (A.tabIndex = l ? false : A.tabIndex);
+  let I = (0, r.v)(A, O, (0, i.$)(e, {
     labelable: true
   }));
   return {
-    isPressed: A,
-    buttonProps: (0, r.v)(n, S, {
+    isPressed: v,
+    buttonProps: (0, r.v)(n, I, {
       "aria-haspopup": e["aria-haspopup"],
       "aria-expanded": e["aria-expanded"],
       "aria-controls": e["aria-controls"],

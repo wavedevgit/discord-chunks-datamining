@@ -90,14 +90,14 @@ module.exports = function(e) {
       end: /\}/,
       contains: f
     }),
-    b = {
+    y = {
       beginKeywords: "when",
       endsWithParent: true,
       contains: [{
         beginKeywords: "and not"
       }].concat(p)
     },
-    y = {
+    b = {
       begin: d + "\\s*:",
       returnBegin: true,
       end: /[;}]/,
@@ -127,7 +127,7 @@ module.exports = function(e) {
         relevance: 0
       }
     },
-    A = {
+    v = {
       className: "variable",
       variants: [{
         begin: "@" + u + "\\s*:",
@@ -141,7 +141,7 @@ module.exports = function(e) {
         contains: E
       }
     },
-    v = {
+    A = {
       variants: [{
         begin: "[\\.#:&\\[>]",
         end: "[;{}]"
@@ -153,7 +153,7 @@ module.exports = function(e) {
       returnEnd: true,
       illegal: "[<='$\"]",
       relevance: 0,
-      contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, b, h("keyword", "all\\b"), h("variable", "@\\{" + u + "\\}"), {
+      contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, y, h("keyword", "all\\b"), h("variable", "@\\{" + u + "\\}"), {
         begin: "\\b(" + n.join("|") + ")\\b",
         className: "selector-tag"
       }, l.CSS_NUMBER_MODE, h("selector-tag", d, 0), h("selector-id", "#" + d), h("selector-class", "\\." + d, 0), h("selector-tag", "&", 0), l.ATTRIBUTE_SELECTOR_MODE, {
@@ -171,12 +171,12 @@ module.exports = function(e) {
         begin: "!important"
       }, l.FUNCTION_DISPATCH]
     },
-    S = {
+    I = {
       begin: u + ":(:)?" + `(${c.join("|")})`,
       returnBegin: true,
-      contains: [v]
+      contains: [A]
     };
-  return f.push(e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, O, A, S, y, v, b, l.FUNCTION_DISPATCH), {
+  return f.push(e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, O, v, I, b, A, y, l.FUNCTION_DISPATCH), {
     name: "Less",
     case_insensitive: true,
     illegal: "[=>'/<($\"]",

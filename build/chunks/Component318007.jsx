@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk120459 = require("./120459.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,13 +38,13 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,25 +55,25 @@ function A(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = I(e, t), Object.getOwnPropertySymbols)
+  if (a = S(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -86,9 +86,9 @@ let T = e => {
     className: n,
     optionsContainerClassName: a
   } = e, {
-    giftRecipient: y,
-    selectedGiftStyle: A,
-    setSelectedGiftStyle: I,
+    giftRecipient: b,
+    selectedGiftStyle: v,
+    setSelectedGiftStyle: S,
     emojiConfetti: T,
     soundEffect: C,
     setEmojiConfetti: N,
@@ -97,24 +97,24 @@ let T = e => {
     orientation: "horizontal"
   }), {
     ref: L
-  } = x, j = S(x, ["ref"]), M = (0, d.lo)(y, t), k = M === d.tB.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = M !== d.tB.DEFAULT, G = (0, _._)(), V = (0, p.A)({
+  } = x, j = I(x, ["ref"]), M = (0, d.lo)(b, t), k = M === d.tB.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = M !== d.tB.DEFAULT, G = (0, _._)(), V = (0, p.A)({
     location: "GiftAnimationOptions"
   }), F = e => {
     null != R && R(null == e ? true : e)
   };
   return (0, r.jsxs)("div", {
     children: [U && (0, r.jsxs)("div", {
-      className: s()(b.Os, n),
-      children: [null != A ? (0, r.jsx)(h.A, {
-        giftStyle: A,
+      className: s()(y.Os, n),
+      children: [null != v ? (0, r.jsx)(h.A, {
+        giftStyle: v,
         defaultAnimationState: f.oA.ACTION,
         idleAnimationState: f.oA.LOOP,
         shouldAnimate: true,
-        className: b.lY
+        className: y.lY
       }) : (0, r.jsx)(l.y$y, {
-        className: b.u1
+        className: y.u1
       }), k && (0, r.jsxs)("div", {
-        className: s()(b.b7, V && b.Ow),
+        className: s()(y.b7, V && y.Ow),
         children: [(0, r.jsx)(u.A, {
           sound: C,
           onSelect: F
@@ -123,26 +123,26 @@ let T = e => {
           emojiConfetti: null == T ? true : T
         })]
       })]
-    }), (0, r.jsx)("div", v(O({
-      tabIndex: null != A || w ? true : 0,
+    }), (0, r.jsx)("div", A(O({
+      tabIndex: null != v || w ? true : 0,
       onFocus: e => {
         var t;
         e.target === e.currentTarget && (null == (t = D.current) || t.focus())
       },
-      className: s()(b.Qh, a),
+      className: s()(y.Qh, a),
       "aria-label": E.intl.string(E.t.v54NrN),
       ref: L
     }, j), {
       children: null != G && !V && G.map((e, t) => (0, r.jsx)(g.A, {
-        isSelected: A === e,
+        isSelected: v === e,
         giftStyle: e,
-        setSelectedGiftStyle: I,
+        setSelectedGiftStyle: S,
         ref: 0 === t ? D : null,
         onFocus: () => P(true),
         onBlur: () => P(false)
       }, e))
     })), (0, r.jsx)("div", {
-      className: b.__invalid_selectPlanDivider
+      className: y.__invalid_selectPlanDivider
     })]
   })
 }

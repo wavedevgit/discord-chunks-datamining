@@ -86,9 +86,9 @@ exports.Request = T, E.getXHR = () => {
   if (r.XMLHttpRequest) return new r.XMLHttpRequest;
   throw Error("Browser-only version of superagent could not find XHR")
 };
-let b = "".trim ? e => e.trim() : e => e.replace(/(^\s*|\s*$)/g, "");
+let y = "".trim ? e => e.trim() : e => e.replace(/(^\s*|\s*$)/g, "");
 
-function y(e) {
+function b(e) {
   if (!f(e)) return e;
   let t = [];
   for (let n in e) _(e, n) && O(t, n, e[n]);
@@ -116,28 +116,28 @@ function O(e, t, n) {
   }
 }
 
-function A(e) {
+function v(e) {
   let t, n, r = {},
     i = e.split("&");
   for (let e = 0, a = i.length; e < a; ++e) false === (n = (t = i[e]).indexOf("=")) ? r[decodeURIComponent(t)] = "" : r[decodeURIComponent(t.slice(0, n))] = decodeURIComponent(t.slice(n + 1));
   return r
 }
 
-function v(e) {
+function A(e) {
   let t, n, r, i, a = e.split(/\r?\n/),
     s = {};
-  for (let e = 0, o = a.length; e < o; ++e) false !== (t = (n = a[e]).indexOf(":")) && (r = n.slice(0, t).toLowerCase(), i = b(n.slice(t + 1)), s[r] = i);
+  for (let e = 0, o = a.length; e < o; ++e) false !== (t = (n = a[e]).indexOf(":")) && (r = n.slice(0, t).toLowerCase(), i = y(n.slice(t + 1)), s[r] = i);
   return s
 }
 
-function S(e) {
+function I(e) {
   return /[/+]json($|[^-\w])/i.test(e)
 }
 
-function I(e) {
+function S(e) {
   this.req = e, this.xhr = this.req.xhr, this.text = "HEAD" !== this.req.method && ("" === this.xhr.responseType || "text" === this.xhr.responseType) || true === this.xhr.responseType ? this.xhr.responseText : null, this.statusText = this.req.xhr.statusText;
   let t = this.xhr.status;
-  1223 === t && (t = 204), this._setStatusProperties(t), this.headers = v(this.xhr.getAllResponseHeaders()), this.header = this.headers, this.header["content-type"] = this.xhr.getResponseHeader("content-type"), this._setHeaderProperties(this.header), null === this.text && e._responseType ? this.body = this.xhr.response : this.body = "HEAD" === this.req.method ? null : this._parseBody(this.text ? this.text : this.xhr.response)
+  1223 === t && (t = 204), this._setStatusProperties(t), this.headers = A(this.xhr.getAllResponseHeaders()), this.header = this.headers, this.header["content-type"] = this.xhr.getResponseHeader("content-type"), this._setHeaderProperties(this.header), null === this.text && e._responseType ? this.body = this.xhr.response : this.body = "HEAD" === this.req.method ? null : this._parseBody(this.text ? this.text : this.xhr.response)
 }
 
 function T(e, t) {
@@ -146,7 +146,7 @@ function T(e, t) {
     let e, t = null,
       r = null;
     try {
-      r = new I(n)
+      r = new S(n)
     } catch (e) {
       return (t = Error("Parser is unable to parse the response")).parse = true, t.original = e, n.xhr ? (t.rawResponse = true === n.xhr.responseType ? n.xhr.responseText : n.xhr.response, t.status = n.xhr.status ? n.xhr.status : null, t.statusCode = t.status) : (t.rawResponse = null, t.status = null), n.callback(t)
     }
@@ -159,7 +159,7 @@ function T(e, t) {
     e ? (e.original = t, e.response = r, e.status = e.status || r.status, n.callback(e, r)) : n.callback(null, r)
   })
 }
-E.serializeObject = y, E.parseString = A, E.types = {
+E.serializeObject = b, E.parseString = v, E.types = {
   html: "text/html",
   json: "application/json",
   xml: "text/xml",
@@ -170,18 +170,18 @@ E.serializeObject = y, E.parseString = A, E.types = {
   "application/x-www-form-urlencoded": Chunk591560.stringify,
   "application/json": Chunk232859
 }, E.parse = {
-  "application/x-www-form-urlencoded": A,
+  "application/x-www-form-urlencoded": v,
   "application/json": JSON.parse
-}, p(I.prototype, Chunk531679.prototype), I.prototype._parseBody = function(e) {
+}, p(S.prototype, Chunk531679.prototype), S.prototype._parseBody = function(e) {
   let t = E.parse[this.type];
-  return this.req._parser ? this.req._parser(this, e) : (!t && S(this.type) && (t = E.parse["application/json"]), t && e && (e.length > 0 || e instanceof Object) ? t(e) : null)
-}, I.prototype.toError = function() {
+  return this.req._parser ? this.req._parser(this, e) : (!t && I(this.type) && (t = E.parse["application/json"]), t && e && (e.length > 0 || e instanceof Object) ? t(e) : null)
+}, S.prototype.toError = function() {
   let e = this.req,
     t = e.method,
     n = e.url,
     r = Error(`cannot ${t} ${n} (${this.status})`);
   return r.status = this.status, r.method = t, r.url = n, r
-}, E.Response = I, Chunk882630(T.prototype), p(T.prototype, Chunk191203.prototype), T.prototype.type = function(e) {
+}, E.Response = S, Chunk882630(T.prototype), p(T.prototype, Chunk191203.prototype), T.prototype.type = function(e) {
   return this.set("Content-Type", E.types[e] || e), this
 }, T.prototype.accept = function(e) {
   return this.set("Accept", E.types[e] || e), this
@@ -195,7 +195,7 @@ E.serializeObject = y, E.parseString = A, E.types = {
   };
   return this._auth(e, t, n, r)
 }, T.prototype.query = function(e) {
-  return "string" != typeof e && (e = y(e)), e && this._query.push(e), this
+  return "string" != typeof e && (e = b(e)), e && this._query.push(e), this
 }, T.prototype.attach = function(e, t, n) {
   if (t) {
     if (this._data) throw Error("superagent can't mix .send() and .attach()");
@@ -260,7 +260,7 @@ E.serializeObject = y, E.parseString = A, E.types = {
   if (this._withCredentials && (t.withCredentials = true), !this._formData && "GET" !== this.method && "HEAD" !== this.method && "string" != typeof n && !this._isHost(n)) {
     let e = this._header["content-type"],
       t = this._serializer || E.serialize[e ? e.split(";")[0] : ""];
-    !t && S(e) && (t = E.serialize["application/json"]), t && (n = t(n))
+    !t && I(e) && (t = E.serialize["application/json"]), t && (n = t(n))
   }
   for (let e in this.header) null !== this.header[e] && _(this.header, e) && t.setRequestHeader(e, this.header[e]);
   this._responseType && (t.responseType = this._responseType), this.emit("request", this), t.send(true === n ? null : n)

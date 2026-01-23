@@ -33,15 +33,15 @@ var Chunk280230 = require("./280230.js"),
 
 function N(e, t) {
   var n;
-  let r = E.A.getChannel(S.A.getChannelId());
-  return (null == r || r.type !== T.rbe.DM || !!v.A.isFriend(null != (n = r.getRecipientId()) ? n : "")) && e === t
+  let r = E.A.getChannel(I.A.getChannelId());
+  return (null == r || r.type !== T.rbe.DM || !!A.A.isFriend(null != (n = r.getRecipientId()) ? n : "")) && e === t
 }
 
 function R(e, t) {
   let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [],
-    v = arguments.length > 3 ? arguments[3] : true,
+    A = arguments.length > 3 ? arguments[3] : true,
     {
-      trusted: S,
+      trusted: I,
       onClick: N,
       onConfirm: R,
       onCancel: w,
@@ -57,7 +57,7 @@ function R(e, t) {
         url: e.href
       }),
       isDismissable: true,
-      contextKey: v
+      contextKey: A
     });
     return
   }
@@ -74,10 +74,10 @@ function R(e, t) {
     V = null;
   if (null != D && null != x) {
     var F, B, H;
-    let e = A.A.getMessage(x, D),
+    let e = v.A.getMessage(x, D),
       t = E.A.getBasicChannel(x);
     M = null != (F = null == t ? true : t.guild_id) ? F : null;
-    let n = b.A.getGuild(M),
+    let n = y.A.getGuild(M),
       r = (null == e || null == (B = e.messageReference) ? true : B.guild_id) != null && (null == e ? true : e.webhookId) != null && (null == e ? true : e.hasFlag(T.pr7.IS_CROSSPOST)) && null != M;
     r && (null == e || null == (H = e.messageReference) ? true : H.guild_id) != null ? (U = e.messageReference.message_id, G = e.messageReference.channel_id, V = e.messageReference.guild_id) : V = M;
     let i = (null == t ? true : t.type) === T.rbe.GUILD_ANNOUNCEMENT && (null == n ? true : n.features.has(T.GuildFeatures.COMMUNITY)) === true,
@@ -86,12 +86,12 @@ function R(e, t) {
   }
   if (null != x) {
     let e = E.A.getChannel(x),
-      t = b.A.getGuild(null == e ? true : e.getGuildId());
-    null != e && null != t && t.features.has(T.GuildFeatures.DISCOVERABLE) && I.default.track(T.HAw.URL_CLICKED, {
+      t = y.A.getGuild(null == e ? true : e.getGuildId());
+    null != e && null != t && t.features.has(T.GuildFeatures.DISCOVERABLE) && S.default.track(T.HAw.URL_CLICKED, {
       url_domain: (0, O.E)(j),
       guild_id: t.id,
       channel_id: e.id
-    }), (0, u.A)(x) && I.default.track(T.HAw.CHANGE_LOG_CTA_CLICKED, {
+    }), (0, u.A)(x) && S.default.track(T.HAw.CHANGE_LOG_CTA_CLICKED, {
       cta_type: "inline_link",
       target: j
     })
@@ -129,10 +129,10 @@ function R(e, t) {
     null == t || t.preventDefault(), d.A.show(j);
     return
   }
-  let K = "function" == typeof S ? S() : S,
+  let K = "function" == typeof I ? I() : I,
     z = (0, O.J)(j),
     q = "http:" !== z && "https:" !== z;
-  if (!q && (K || y.A.isTrustedDomain(j)) || q && y.A.isTrustedProtocol(j)) return void(null == t || null != P && P ? Y() : k && p.A.trackAnnouncementMessageLinkClicked({
+  if (!q && (K || b.A.isTrustedDomain(j)) || q && b.A.isTrustedProtocol(j)) return void(null == t || null != P && P ? Y() : k && p.A.trackAnnouncementMessageLinkClicked({
     messageId: U,
     channelId: x,
     guildId: M,
@@ -145,7 +145,7 @@ function R(e, t) {
     onConfirm: Y,
     onCancel: W,
     isProtocol: true,
-    contextKey: v
+    contextKey: A
   });
   else {
     let e = (0, _.W1)(j),
@@ -156,7 +156,7 @@ function R(e, t) {
       onConfirm: Y,
       onCancel: W,
       isProtocol: false,
-      contextKey: v
+      contextKey: A
     })
   }
 }

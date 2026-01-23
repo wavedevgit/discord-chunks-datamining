@@ -2,7 +2,7 @@
 /** chunk id: 984870, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T: () => A
+  T: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,23 +23,23 @@ var Chunk627968 = require("./627968.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk210320 = require("./210320.js");
-let A = e => {
+let v = e => {
   let {
     dismissibleContent: t
-  } = e, n = (0, c.Cp)(), A = (0, a.bG)([p.default], () => h.Ay.isPremiumExactly(p.default.getCurrentUser(), b.PremiumTypes.TIER_2)), {
-    enabled: v
+  } = e, n = (0, c.Cp)(), v = (0, a.bG)([p.default], () => h.Ay.isPremiumExactly(p.default.getCurrentUser(), y.PremiumTypes.TIER_2)), {
+    enabled: A
   } = l.m.useExperiment({
     location: "OutboundPromotionNotice"
   }, {
     autoTrackExposure: false,
-    disable: A
-  }), S = i.useCallback(() => {
+    disable: v
+  }), I = i.useCallback(() => {
     _.default.track(E.HAw.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, f.openUserSettings)(d.X.GIFT_PANEL, {
       section: E.nc_.INVENTORY
     }), u.Ay.dismissOutboundPromotionNotice()
   }, []);
   if (null == n) return null;
-  let I = e => (0, r.jsxs)(o.$Td, {
+  let S = e => (0, r.jsxs)(o.$Td, {
     color: o.Hv$.PREMIUM_TIER_2,
     children: [(0, r.jsx)(o.PMB, {
       noticeType: E.kqX.OUTBOUND_PROMOTION,
@@ -50,12 +50,12 @@ let A = e => {
       size: "md",
       color: "currentColor",
       className: O.P
-    }), v ? y.intl.string(y.t["5JMiOo"]) : y.intl.string(y.t["Pzh+G2"]), (0, r.jsx)(o.Z_L, {
+    }), A ? b.intl.string(b.t["5JMiOo"]) : b.intl.string(b.t["Pzh+G2"]), (0, r.jsx)(o.Z_L, {
       noticeType: E.kqX.OUTBOUND_PROMOTION,
       onClick: () => {
-        S(), null !== e && e(g.i.TAKE_ACTION)
+        I(), null !== e && e(g.i.TAKE_ACTION)
       },
-      children: y.intl.string(y.t.jVcuVY)
+      children: b.intl.string(b.t.jVcuVY)
     })]
   });
   return (0, r.jsx)(m.YS, {
@@ -71,7 +71,7 @@ let A = e => {
         visibleContent: t,
         markAsDismissed: n
       } = e;
-      if (t === s.M.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return I(n)
+      if (t === s.M.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return S(n)
     }
   })
 }

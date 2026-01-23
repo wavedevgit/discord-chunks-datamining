@@ -2,7 +2,7 @@
 /** chunk id: 237496, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 });
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -31,7 +31,7 @@ function E(e) {
   return null == e || !!e.suppress || null != e.requestToSpeakTimestamp
 }
 
-function b() {
+function y() {
   let e, t = d.A.getChannelId(),
     n = false;
   if (null == t) e = true;
@@ -55,7 +55,7 @@ function b() {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     voiceStates: t
   } = e;
@@ -63,7 +63,7 @@ function y(e) {
     let {
       userId: t
     } = e;
-    return t === o.default.getId() && b()
+    return t === o.default.getId() && y()
   })
 }
 
@@ -71,10 +71,10 @@ function O() {
   g = true
 }
 
-function A() {
+function v() {
   g = h
 }
-class v extends(r = Chunk311907.Ay.Store) {
+class A extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(o.default, l.A, c.A, u.A, d.A, f.A)
   }
@@ -88,18 +88,18 @@ class v extends(r = Chunk311907.Ay.Store) {
     return m
   }
 }
-_(v, "displayName", "PermissionVADStore");
-let S = new v(Chunk73153.h, {
-  RTC_CONNECTION_STATE: b,
-  MEDIA_ENGINE_SET_AUDIO_ENABLED: b,
-  AUDIO_SET_MODE: b,
-  CHANNEL_UPDATES: b,
-  THREAD_UPDATE: b,
-  GUILD_ROLE_UPDATE: b,
-  GUILD_MEMBER_UPDATE: b,
-  IMPERSONATE_UPDATE: b,
-  IMPERSONATE_STOP: b,
-  VOICE_STATE_UPDATES: y,
-  AUDIO_TOGGLE_SELF_MUTE: A,
+_(A, "displayName", "PermissionVADStore");
+let I = new A(Chunk73153.h, {
+  RTC_CONNECTION_STATE: y,
+  MEDIA_ENGINE_SET_AUDIO_ENABLED: y,
+  AUDIO_SET_MODE: y,
+  CHANNEL_UPDATES: y,
+  THREAD_UPDATE: y,
+  GUILD_ROLE_UPDATE: y,
+  GUILD_MEMBER_UPDATE: y,
+  IMPERSONATE_UPDATE: y,
+  IMPERSONATE_STOP: y,
+  VOICE_STATE_UPDATES: b,
+  AUDIO_TOGGLE_SELF_MUTE: v,
   PERMISSION_CLEAR_VAD_WARNING: O
 })

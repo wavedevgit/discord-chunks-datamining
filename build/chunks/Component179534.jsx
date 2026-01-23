@@ -37,12 +37,12 @@ var Chunk627968 = require("./627968.js"),
 function w(e) {
   let {
     guildId: t
-  } = e, n = (0, a.bG)([x.A], () => x.A.getGuild(t)), {
+  } = e, n = (0, a.bG)([h.A], () => h.A.getGuild(t)), {
     analyticsLocations: l
-  } = (0, d.Ay)(o.A.GUILD_SETTINGS_MEMBERS_PAGE), w = (0, u.q)(t), R = (0, a.bG)([p.Ay], () => p.Ay.getGuildSidebarState(t), [t]), D = i.useCallback(() => {
-    b.A.closeGuildSidebar(t)
-  }, [t]), G = false == !!(null == n ? true : n.features.has(T.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), L = (0, a.bG)([h.A], () => h.A.getEstimatedMemberSearchCountByGuildId(t), [t]), k = i.useCallback(e => {
-    null != e && (0, m.openUserProfileModal)({
+  } = (0, d.Ay)(c.A.GUILD_SETTINGS_MEMBERS_PAGE), w = (0, u.q)(t), R = (0, a.bG)([b.Ay], () => b.Ay.getGuildSidebarState(t), [t]), D = i.useCallback(() => {
+    p.A.closeGuildSidebar(t)
+  }, [t]), G = false == !!(null == n ? true : n.features.has(I.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), L = (0, a.bG)([x.A], () => x.A.getEstimatedMemberSearchCountByGuildId(t), [t]), k = i.useCallback(e => {
+    null != e && (0, f.openUserProfileModal)({
       userId: e.userId,
       guildId: e.guildId,
       sourceAnalyticsLocations: l
@@ -52,46 +52,46 @@ function w(e) {
     null == (e = M.current) || e.resetSearchText()
   }, []);
   if (null == n) return null;
-  let F = (0, A.ii)(false, false, L);
+  let B = (0, y.ii)(false, false, L);
   return (0, r.jsxs)(d.f5, {
     value: l,
     children: [(0, r.jsx)("div", {
       className: s()(P.customColumn, C.$Z, C.ed),
       children: (0, r.jsx)("div", {
         className: P.customContainer,
-        children: (0, r.jsx)(c.ArX, {
+        children: (0, r.jsx)(o.ArX, {
           className: s()(P.customScroller, C.cj),
           orientation: "auto",
-          children: (0, r.jsx)(c.ArX, {
+          children: (0, r.jsx)(o.ArX, {
             className: C.mh,
             orientation: "auto",
             children: (0, r.jsxs)("main", {
               className: s()(P.customColumn, P.contentColumnDefault, C.$Z, C.ed, C.z1),
               children: [(0, r.jsx)("div", {
                 className: C.wx,
-                children: (0, r.jsx)(c.Heading, {
+                children: (0, r.jsx)(o.Heading, {
                   variant: "heading-lg/semibold",
-                  children: I.intl.string(I.t.S40K66)
+                  children: T.intl.string(T.t.S40K66)
                 })
               }, "header"), (0, r.jsx)("div", {
                 children: (0, r.jsxs)("div", {
                   className: C.CZ,
-                  children: [(0, r.jsx)(y.A, {
+                  children: [(0, r.jsx)(O.A, {
                     guild: n
-                  }), (0, r.jsx)(O.A, {
+                  }), (0, r.jsx)(_.A, {
                     guild: n
                   }), G ? (0, r.jsxs)("div", {
                     className: C.FV,
-                    children: [(0, r.jsx)(_.A, {
+                    children: [(0, r.jsx)(N.A, {
                       guild: n,
                       ref: M
-                    }), (0, r.jsx)(E.A, {
+                    }), (0, r.jsx)(A.A, {
                       guild: n,
-                      searchState: F,
+                      searchState: B,
                       compact: true,
                       onSelectRow: k,
                       onResetForNewMembers: U
-                    }), F !== A.IY.SUCCESS_STILL_INDEXING && (0, r.jsx)(N.A, {
+                    }), B !== y.IY.SUCCESS_STILL_INDEXING && (0, r.jsx)(E.A, {
                       guildId: n.id
                     })]
                   }) : (0, r.jsx)("div", {
@@ -100,12 +100,12 @@ function w(e) {
                       className: C.pb,
                       children: [(0, r.jsx)("div", {
                         children: (0, r.jsx)(S.A, {})
-                      }), (0, r.jsx)(c.Text, {
+                      }), (0, r.jsx)(o.Text, {
                         variant: "text-md/normal",
                         color: "text-muted",
-                        children: I.intl.format(I.t.Bf6yxB, {
+                        children: T.intl.format(T.t.Bf6yxB, {
                           onClick: e => {
-                            null != n && (e.preventDefault(), g.A.close(), (0, j.aZ)(n.id))
+                            null != n && (e.preventDefault(), m.A.close(), (0, j.aZ)(n.id))
                           }
                         })
                       })]
@@ -120,15 +120,15 @@ function w(e) {
         })
       })
     }), w && null != R && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(c.pkL, {
+      children: [(0, r.jsx)(o.pkL, {
         isVisible: true,
         onClick: D
       }), (0, r.jsx)("div", {
         className: C.zd,
         style: {
-          width: T.da6
+          width: I.da6
         },
-        children: (0, r.jsx)(f.A, {
+        children: (0, r.jsx)(g.A, {
           userId: R.details.userId,
           guildId: R.details.guildId,
           onClose: D

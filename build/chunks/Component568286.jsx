@@ -2,7 +2,7 @@
 /** chunk id: 568286, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  q: () => A
+  q: () => v
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -40,8 +40,8 @@ function E(e) {
   }
   return e
 }
-let b = "MMMM Do, YYYY",
-  y = e => {
+let y = "MMMM Do, YYYY",
+  b = e => {
     let [t, n] = i.useState(false), [r, a] = i.useState(null);
     return {
       cancelSubscription: async t => {
@@ -68,12 +68,12 @@ let b = "MMMM Do, YYYY",
       analyticsLocations: E
     } = (0, d.Ay)(u.A.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
       cancelSubscription: O,
-      error: A,
-      submitting: v
-    } = y(E), S = async () => {
+      error: v,
+      submitting: A
+    } = b(E), I = async () => {
       await O(a.id) && c()
-    }, I = i.role_benefits.benefits.filter(e => e.ref_type === _.bN.CHANNEL), T = i.role_benefits.benefits.filter(e => e.ref_type === _.bN.INTANGIBLE), C = s()(a.currentPeriodEnd).format(b), N = h.intl.formatToPlainString(h.t.KsMRP5, {
-      numChannels: I.length,
+    }, S = i.role_benefits.benefits.filter(e => e.ref_type === _.bN.CHANNEL), T = i.role_benefits.benefits.filter(e => e.ref_type === _.bN.INTANGIBLE), C = s()(a.currentPeriodEnd).format(y), N = h.intl.formatToPlainString(h.t.KsMRP5, {
+      numChannels: S.length,
       numAdditionalBenefits: T.length,
       subscriptionEndDate: C
     });
@@ -87,17 +87,17 @@ let b = "MMMM Do, YYYY",
       }, {
         variant: "critical-primary",
         text: h.intl.string(h.t.F6lUDF),
-        onClick: S,
-        loading: v
+        onClick: I,
+        loading: A
       }],
       title: h.intl.string(h.t.O6l5tM),
       subtitle: N,
       onClose: c,
       children: (0, r.jsxs)(l.BJc, {
         gap: 8,
-        children: [null != A ? (0, r.jsx)(l.wx6, {
+        children: [null != v ? (0, r.jsx)(l.wx6, {
           type: "critical",
-          children: A.message
+          children: v.message
         }) : null, (0, r.jsx)(p.x, {
           listingId: i.id,
           guildId: n.guild_id,
@@ -106,6 +106,6 @@ let b = "MMMM Do, YYYY",
       })
     })
   },
-  A = e => {
+  v = e => {
     (0, l.qfG)(t => (0, r.jsx)(O, E({}, t, e)))
   }

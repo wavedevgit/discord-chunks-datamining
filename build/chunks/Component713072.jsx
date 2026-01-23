@@ -31,11 +31,11 @@ function d(e) {
     rule: t,
     isLoading: n,
     onChangeRule: d
-  }) : (0, i.AR)(t) ? (0, r.jsx)(c.A, {
+  }) : (0, i.AR)(t) ? (0, r.jsx)(o.A, {
     rule: t,
     isLoading: n,
     onChangeRule: d
-  }) : (0, i.JJ)(t) ? (0, r.jsx)(o.A, {
+  }) : (0, i.JJ)(t) ? (0, r.jsx)(c.A, {
     rule: t,
     isLoading: n,
     onChangeRule: d

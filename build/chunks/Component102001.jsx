@@ -2,7 +2,7 @@
 /** chunk id: 102001, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,36 +23,36 @@ var Chunk627968 = require("./627968.js"),
   Chunk874864 = require("./874864.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk476217 = require("./476217.js");
-let A = e => {
+let v = e => {
   let {
     className: t,
     guildId: n,
     channel: a,
-    shouldTrackUpsellViewed: A,
-    setTrackedUpsellViewed: v
+    shouldTrackUpsellViewed: v,
+    setTrackedUpsellViewed: A
   } = e, {
-    location: S
+    location: I
   } = (0, c.p)(), {
-    analyticsLocations: I
+    analyticsLocations: S
   } = (0, d.Ay)(), T = (0, o.bG)([m.A], () => m.A.getGuild(n)), {
     canManageAllExpressions: C
   } = (0, h.nr)(T), N = null != T && 0 === (0, g.aG)(T.premiumTier) && !T.features.has(E.GuildFeatures.MORE_STICKERS);
   if (i.useEffect(() => {
-      C && N && A && ((0, u.zV)(E.HAw.PREMIUM_GUILD_UPSELL_VIEWED, {
-        location: S,
+      C && N && v && ((0, u.zV)(E.HAw.PREMIUM_GUILD_UPSELL_VIEWED, {
+        location: I,
         guild_id: null == T ? true : T.id,
         channel_id: null == a ? true : a.id,
         type: "Expression Picker Inline Sticker Upsell",
-        location_stack: I
-      }), v(true))
-    }, [N, T, a, S, A, v, I, C]), null == T || !C) return null;
+        location_stack: S
+      }), A(true))
+    }, [N, T, a, I, v, A, S, C]), null == T || !C) return null;
   if (N) {
     let e = () => {
       (0, p.A)({
-        analyticsLocations: I,
-        analyticsSourceLocation: S,
+        analyticsLocations: S,
+        analyticsSourceLocation: I,
         guild: T,
-        perks: (0, b.q5)()
+        perks: (0, y.q5)()
       })
     };
     return (0, r.jsxs)("div", {
@@ -65,18 +65,18 @@ let A = e => {
         color: "interactive-text-default",
         className: O.rf,
         variant: "text-sm/normal",
-        children: y.intl.format(y.t.AXWla1, {
+        children: b.intl.format(b.t.AXWla1, {
           count: (0, g.aG)(E.TVA.TIER_1)
         })
       }), (0, r.jsx)(l.QWc, {
         variant: "primary",
-        text: y.intl.string(y.t["Gb+BJD"]),
+        text: b.intl.string(b.t["Gb+BJD"]),
         onClick: e
       })]
     })
   } {
     let e = () => {
-      (0, f.v8)(), _.A.open(n, E.BEX.STICKERS, S)
+      (0, f.v8)(), _.A.open(n, E.BEX.STICKERS, I)
     };
     return (0, r.jsxs)("div", {
       className: s()(O.UX, t),
@@ -90,10 +90,10 @@ let A = e => {
         color: "interactive-text-default",
         className: O.rf,
         variant: "text-sm/normal",
-        children: y.intl.string(y.t.S83wgh)
+        children: b.intl.string(b.t.S83wgh)
       }), (0, r.jsx)(l.QWc, {
         variant: "primary",
-        text: y.intl.string(y.t.bwNjug),
+        text: b.intl.string(b.t.bwNjug),
         onClick: e
       })]
     })

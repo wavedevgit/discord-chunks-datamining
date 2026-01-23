@@ -48,53 +48,53 @@ function N() {
       (0, u.A)(d.A.getArticleURL(O.MVz.QUESTS_LEARN_MORE))
     };
   return (0, r.jsxs)(g.A, {
-    className: I.kL,
+    className: S.kL,
     children: [(0, r.jsx)(_.A, {
-      className: I.Ki,
-      slide: y.P7.QUESTS,
+      className: S.Ki,
+      slide: b.P7.QUESTS,
       videoEntrySrc: T.A,
       videoLoopSrc: C.A
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
-        className: s()(S.DD, {
-          [I.p$]: N
+        className: s()(I.DD, {
+          [S.p$]: N
         }),
         children: [(0, r.jsx)(o.r2v, {
           size: "refresh_sm",
           color: t,
-          colorClass: S.d7,
-          className: S.gr
+          colorClass: I.d7,
+          className: I.gr
         }), (0, r.jsx)(E.A, {
           variant: "eyebrow",
-          className: S.UP,
-          children: N ? v.intl.string(A.default.QkdNzt) : v.intl.string(A.default.qsFkSO)
+          className: I.UP,
+          children: N ? A.intl.string(v.default.QkdNzt) : A.intl.string(v.default.qsFkSO)
         })]
-      }), !N && (0, r.jsx)(b.A, {
+      }), !N && (0, r.jsx)(y.A, {
         end: a
       }), R && (0, r.jsx)(E.A, {
         variant: "heading-xxl/medium",
-        className: I.VA,
-        children: 0 === a ? v.intl.format(A.default.UYTBoT, {
+        className: S.VA,
+        children: 0 === a ? A.intl.format(v.default.UYTBoT, {
           learnMoreHook: (e, t) => (0, r.jsx)(o.DUT, {
             onClick: w,
-            className: I.C2,
+            className: S.C2,
             children: (0, r.jsx)(E.A, {
               variant: "heading-xxl/medium",
-              className: I.nf,
+              className: S.nf,
               children: e
             })
           }, t)
-        }) : v.intl.format(A.default["gd+Olh"], {
+        }) : A.intl.format(v.default["gd+Olh"], {
           numOrbs: n,
           orbsHook: (e, t) => (0, r.jsxs)(h.A, {
             children: [(0, r.jsx)(o.Cp8, {
-              className: I.Uu,
+              className: S.Uu,
               color: c.LU0.colors.BLACK
             }), e]
           }, t)
         })
       }), (0, r.jsx)(m.e, {
-        slide: y.P7.QUESTS
+        slide: b.P7.QUESTS
       })]
     })]
   })

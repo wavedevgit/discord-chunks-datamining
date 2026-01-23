@@ -1,5 +1,5 @@
 /** Chunk was on 22477 **/
 /** chunk id: 865687, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  $: "_283d83a9fabbec52"
+  $: "productCardBadge_b8a6bd"
 }

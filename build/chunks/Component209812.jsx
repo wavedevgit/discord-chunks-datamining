@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   GK: () => a,
-  ZV: () => c
+  ZV: () => o
 }), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,7 +16,7 @@ function a() {
   return e
 }
 
-function c(e) {
+function o(e) {
   let {
     guildId: t,
     children: n

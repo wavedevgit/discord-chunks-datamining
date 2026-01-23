@@ -1,19 +1,19 @@
 /** Chunk was on 19750 **/
 /** chunk id: 680127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => l
+  A: () => i
 });
 var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js");
 
-function l(e, t) {
+function i(e, t) {
   return (0, a.mMO)(async () => {
     let {
       default: a
     } = await n.e("5490").then(n.bind(n, 826153));
     return n => {
-      var l, i;
-      return (0, r.jsx)(a, (l = function(e) {
+      var i, l;
+      return (0, r.jsx)(a, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -30,19 +30,19 @@ function l(e, t) {
           })
         }
         return e
-      }({}, n), i = i = {
+      }({}, n), l = l = {
         guildId: e,
         instance: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
-      }), l))
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+      }), i))
     }
   })
 }

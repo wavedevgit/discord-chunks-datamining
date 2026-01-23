@@ -50,17 +50,17 @@ let D = (0, Chunk707606.A)(e => {
   } = e, U = (0, l.bG)([h.default], () => {
     let e = h.default.getCurrentUser();
     return o()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-  }), G = M === b.O.STREAM_PREVIEW || null != s, V = (0, g.A)(t), F = V || G ? f.A.Direction.HORIZONTAL : f.A.Direction.VERTICAL, B = (null == t ? true : t.type) === w.$pd.HANG_STATUS, H = (0, l.bG)([m.A, _.A], () => {
+  }), G = M === y.O.STREAM_PREVIEW || null != s, V = (0, g.A)(t), F = V || G ? f.A.Direction.HORIZONTAL : f.A.Direction.VERTICAL, B = (null == t ? true : t.type) === w.$pd.HANG_STATUS, H = (0, l.bG)([m.A, _.A], () => {
     var e;
     return B ? _.A.getChannel(null == (e = m.A.getVoiceStateForUser(i.id)) ? true : e.channelId) : null
   }), Y = () => {
-    if ((0, E.A)(t)) return (0, r.jsx)(y.A, {
+    if ((0, E.A)(t)) return (0, r.jsx)(b.A, {
       platform: d.A.get(w.fg2.XBOX),
       variant: j,
       onAction: k,
       icon: c.YWd
     });
-    if ((null == t ? true : t.platform) === w.yTV.PS4 || (null == t ? true : t.platform) === w.yTV.PS5) return (0, r.jsx)(y.A, {
+    if ((null == t ? true : t.platform) === w.yTV.PS4 || (null == t ? true : t.platform) === w.yTV.PS5) return (0, r.jsx)(b.A, {
       variant: j,
       platform: d.A.get(w.fg2.PLAYSTATION),
       onAction: k,
@@ -89,7 +89,7 @@ let D = (0, Chunk707606.A)(e => {
     }
     if ((0, p.Cy)(t)) {
       let e = (0, p.UW)(t);
-      return null == e ? null : (0, r.jsx)(S.A, {
+      return null == e ? null : (0, r.jsx)(I.A, {
         guildId: e.guildId,
         channelId: e.channelId,
         variant: j,
@@ -100,7 +100,7 @@ let D = (0, Chunk707606.A)(e => {
       isCurrentUser: U.id === i.id,
       applicationStream: s,
       onAction: k
-    }) : B && null != H ? (0, r.jsx)(v.A, {
+    }) : B && null != H ? (0, r.jsx)(A.A, {
       userId: i.id,
       variant: j,
       hangStatusChannel: H,
@@ -110,13 +110,13 @@ let D = (0, Chunk707606.A)(e => {
         activity: t,
         variant: j,
         onAction: k
-      }), (0, r.jsx)(A.A, {
+      }), (0, r.jsx)(v.A, {
         activity: t,
         embeddedActivity: n,
         user: i,
         variant: j,
         onAction: k
-      }), (0, r.jsx)(I.A, {
+      }), (0, r.jsx)(S.A, {
         activity: t,
         user: i,
         variant: j,

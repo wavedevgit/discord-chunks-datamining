@@ -2,21 +2,21 @@
 /** chunk id: 324580, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  FZ: () => v,
+  FZ: () => A,
   I9: () => E,
   Iq: () => d,
   J8: () => h,
-  O3: () => y,
-  OR: () => b,
+  O3: () => b,
+  OR: () => y,
   R0: () => m,
   Us: () => f,
   VX: () => g,
   WV: () => O,
   ig: () => c,
   o: () => _,
-  tO: () => I,
+  tO: () => S,
   v: () => u,
-  wz: () => A
+  wz: () => v
 }), require("./896048.js");
 var Chunk927813 = require("./927813.js"),
   Chunk985018 = require("./985018.jsx");
@@ -73,17 +73,17 @@ var _ = function(e) {
 let m = new Set(["hubs"]),
   g = [],
   E = "q",
-  b = "c",
-  y = "l",
+  y = "c",
+  b = "l",
   O = 10 * Chunk927813.A.Millis.MINUTE;
-var A = function(e) {
+var v = function(e) {
   return e[e.Clans = p] = "Clans", e[e.Hub = f] = "Hub", e[e.Communities = d] = "Communities", e[e.Activity = 1] = "Activity", e[e.Music = 2] = "Music", e[e.Television = 3] = "Television", e[e.Science = 5] = "Science", e[e.Education = 6] = "Education", e
 }({});
-let v = [1, 2, 3, 5, 6],
-  S = ["en-GB"];
+let A = [1, 2, 3, 5, 6],
+  I = ["en-GB"];
 
-function I() {
-  return (0, i.getLanguages)().filter(e => !S.includes(e.code)).map(e => "en-US" === e.code ? l(s({}, e), {
+function S() {
+  return (0, i.getLanguages)().filter(e => !I.includes(e.code)).map(e => "en-US" === e.code ? l(s({}, e), {
     name: i.intl.string(i.t.LQLMGP)
   }) : e)
 }

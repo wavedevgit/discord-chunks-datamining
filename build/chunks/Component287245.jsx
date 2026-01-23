@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk73153 = require("./73153.js"),
   Chunk843472 = require("./843472.js"),
@@ -32,7 +32,7 @@ let C = e => {
       message: n,
       out: l = false,
       noAnimate: i = false
-    } = e, o = (0, m.A)(n, {
+    } = e, o = (0, b.A)(n, {
       hideSimpleEmbedContent: true,
       formatInline: false,
       noStyleAndInteraction: false,
@@ -41,51 +41,51 @@ let C = e => {
       allowLinks: false,
       allowGameMentions: false,
       previewLinkTarget: false
-    }), c = n.author, u = v.Ay.getName(c), d = (0, p.A)({
+    }), c = n.author, u = j.Ay.getName(c), d = (0, h.A)({
       userId: c.id,
       guildId: t.guild_id
     }), {
-      avatarSrc: f,
-      avatarDecorationSrc: g
+      avatarSrc: p,
+      avatarDecorationSrc: m
     } = (0, A.A)({
       userId: c.id,
       guildId: t.guild_id,
       size: 48
     });
     return (0, r.jsxs)("div", {
-      className: a()(_.iU, {
-        [_.FD]: l,
-        [_.Tf]: i
+      className: s()(E.iU, {
+        [E.FD]: l,
+        [E.Tf]: i
       }),
       children: [(0, r.jsx)("div", {
-        children: (0, r.jsx)(s.euF, {
-          src: f,
-          avatarDecoration: g,
-          size: s._3J.SIZE_24,
+        children: (0, r.jsx)(a.euF, {
+          src: p,
+          avatarDecoration: m,
+          size: a._3J.SIZE_24,
           "aria-label": "User Avatar",
           isTyping: false
         })
-      }), (0, r.jsx)(b.A, {
+      }), (0, r.jsx)(g.A, {
         userName: u,
         displayNameStyles: d,
-        effectDisplayType: h.G.STATIC,
+        effectDisplayType: f.G.STATIC,
         loop: true
       }), (0, r.jsxs)("div", {
-        className: _.fi,
-        children: [(0, r.jsx)(s.Text, {
+        className: E.fi,
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-md/normal",
-          className: _.Qs,
+          className: E.Qs,
           children: o.content
         }), n.attachments.length > 0 && (0, r.jsx)("div", {
-          className: a()(_.nM, _.rQ),
+          className: s()(E.nM, E.rQ),
           children: n.attachments.filter(e => {
             var t;
             return !e.spoiler && (null == (t = e.content_type) ? true : t.startsWith("image"))
           }).map(e => (0, r.jsx)("img", {
             src: e.url,
             width: 128,
-            className: _.oh,
-            alt: E.intl.string(E.t.X4IxWL)
+            className: E.oh,
+            alt: x.intl.string(x.t.X4IxWL)
           }, e.id))
         })]
       })]
@@ -96,30 +96,30 @@ let C = e => {
       channel: t,
       idle: n,
       showChat: i
-    } = e, p = l.useRef(new Set), [h, b] = l.useState([]), [m, A] = l.useState(0), v = l.useRef(null), E = l.useRef(false), [S, I] = l.useState(true), [N, T] = l.useState(""), [P, w] = l.useState((0, d.x7)(N));
+    } = e, h = l.useRef(new Set), [f, g] = l.useState([]), [b, A] = l.useState(0), j = l.useRef(null), x = l.useRef(false), [S, I] = l.useState(true), [N, T] = l.useState(""), [P, w] = l.useState((0, d.x7)(N));
     l.useEffect(() => {
-      let e = p.current;
+      let e = h.current;
       return () => {
         e.size > 0 && [...e].forEach(e => clearTimeout(e))
       }
     }, []), l.useEffect(() => {
       let e = () => I(true),
         t = () => I(false);
-      return j._.subscribe(x.jej.TEXTAREA_FOCUS, e), j._.subscribe(x.jej.TEXTAREA_BLUR, t), () => {
-        j._.unsubscribe(x.jej.TEXTAREA_FOCUS, e), j._.unsubscribe(x.jej.TEXTAREA_BLUR, t)
+      return O._.subscribe(v.jej.TEXTAREA_FOCUS, e), O._.subscribe(v.jej.TEXTAREA_BLUR, t), () => {
+        O._.unsubscribe(v.jej.TEXTAREA_FOCUS, e), O._.unsubscribe(v.jej.TEXTAREA_BLUR, t)
       }
     }, []), l.useEffect(() => {
-      let e = v.current;
+      let e = j.current;
       null != e && e.scrollTo({
         top: e.scrollHeight,
         behavior: "smooth"
       })
-    }, [v]), l.useEffect(() => {
+    }, [j]), l.useEffect(() => {
       let e = Date.now();
-      b(O.A.getMessages(t.id)._array.filter(t => t.timestamp.getTime() > e - 12e5).slice(false))
+      g(_.A.getMessages(t.id)._array.filter(t => t.timestamp.getTime() > e - 12e5).slice(false))
     }, [t]);
     let R = l.useCallback(e => {
-        b(t => {
+        g(t => {
           if (!t.some(t => t.id === e.id)) {
             let n = [...t, e];
             return n.length > 50 && n.shift(), n
@@ -128,44 +128,44 @@ let C = e => {
         })
       }, []),
       D = l.useMemo(() => {
-        let e = h[h.length - 1];
+        let e = f[f.length - 1];
         if (null == e) returntrue;
-        if (m + 100 > Date.now()) returnfalse;
+        if (b + 100 > Date.now()) returnfalse;
         let t = Date.now() > e.timestamp.getTime() + 5e3;
         if (!t) {
           let e = setTimeout(() => {
-            A(Date.now()), p.current.delete(e)
+            A(Date.now()), h.current.delete(e)
           }, 5500);
-          p.current.add(e)
+          h.current.add(e)
         }
         return t
-      }, [h, m]);
+      }, [f, b]);
     return l.useEffect(() => {
       let e = e => {
         let {
           channelId: n,
           message: r
-        } = e, l = O.A.getMessage(r.channel_id, r.id);
+        } = e, l = _.A.getMessage(r.channel_id, r.id);
         if (n === t.id && (null == l ? true : l.state) === "SENT") {
           R(l);
           let e = setTimeout(() => {
-            p.current.delete(e);
-            let t = v.current;
+            h.current.delete(e);
+            let t = j.current;
             null != t && t.scrollTo({
               top: t.scrollHeight,
               behavior: "smooth"
             })
           }, 10);
-          p.current.add(e)
+          h.current.add(e)
         }
       };
       return o.h.subscribe("MESSAGE_CREATE", e), () => o.h.unsubscribe("MESSAGE_CREATE", e)
     }, []), (0, r.jsxs)("div", {
-      className: a()(_.X2, {
-        [_.R]: !i
+      className: s()(E.X2, {
+        [E.R]: !i
       }),
-      onMouseEnter: () => E.current = true,
-      onMouseLeave: () => E.current = false,
+      onMouseEnter: () => x.current = true,
+      onMouseLeave: () => x.current = false,
       onWheel: e => {
         e.preventDefault(), e.stopPropagation()
       },
@@ -174,26 +174,26 @@ let C = e => {
       },
       children: [(0, r.jsx)(y.A, {
         children: (0, r.jsx)("div", {
-          className: a()(_.TE, {
-            [_.N7]: n
+          className: s()(E.TE, {
+            [E.N7]: n
           }),
-          children: (0, r.jsx)(s.HOs, {
-            className: a()(_.b6, {
-              [_.N7]: D && n
+          children: (0, r.jsx)(a.HOs, {
+            className: s()(E.b6, {
+              [E.N7]: D && n
             }),
-            ref: v,
-            children: h.map(e => (0, r.jsx)(C, {
+            ref: j,
+            children: f.map(e => (0, r.jsx)(C, {
               channel: t,
               message: e,
               noAnimate: true
             }, e.id))
           })
         })
-      }), (0, r.jsx)(f.Ay, {
-        className: a()(_.CQ, {
-          [_.N7]: n && 0 === N.length
+      }), (0, r.jsx)(p.Ay, {
+        className: s()(E.CQ, {
+          [E.N7]: n && 0 === N.length
         }),
-        innerClassName: _.hF,
+        innerClassName: E.hF,
         type: u.oU.HAVEN,
         channel: t,
         textValue: N,
@@ -215,7 +215,7 @@ let C = e => {
             shouldClear: false,
             shouldRefocus: false
           };
-          let l = g.Ay.parse(t, r);
+          let l = m.Ay.parse(t, r);
           try {
             return await c.A.sendMessage(t.id, l, true, {
               location: "Haven"

@@ -104,15 +104,15 @@ var Chunk414501 = require("./414501.js"),
       m = a.last(),
       g = m.getLength(),
       E = m.getKey(),
-      b = l && (!p.getChildKeys().isEmpty() || !h.getChildKeys().isEmpty());
+      y = l && (!p.getChildKeys().isEmpty() || !h.getChildKeys().isEmpty());
     n.forEach(function(e, t) {
-      t !== s ? c.push(e) : (b ? c.push(e) : c.push(d(e, o, a)), a.slice(+!b, u - 1).forEach(function(e) {
+      t !== s ? c.push(e) : (y ? c.push(e) : c.push(d(e, o, a)), a.slice(+!y, u - 1).forEach(function(e) {
         return c.push(e)
       }), c.push(f(e, o, a)))
     });
-    var y = r.createFromArray(c);
-    return l && (y = _(y, n, p, h)), e.merge({
-      blockMap: y,
+    var b = r.createFromArray(c);
+    return l && (b = _(b, n, p, h)), e.merge({
+      blockMap: b,
       selectionBefore: t,
       selectionAfter: t.merge({
         anchorKey: E,

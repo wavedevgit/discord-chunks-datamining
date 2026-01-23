@@ -27,9 +27,9 @@ function h() {
     canSetOutputDevice: l.A.supports(d.O5.AUDIO_OUTPUT_DEVICE)
   })), h = (0, o.x5)(d.oh.AUDIO_INPUT), m = (0, o.x5)(d.oh.AUDIO_OUTPUT), [g, E] = (0, o.tR)(d.oh.AUDIO_INPUT, {
     location: "UserSettingsDevices"
-  }), [b, y] = (0, o.tR)(d.oh.AUDIO_OUTPUT, {
+  }), [y, b] = (0, o.tR)(d.oh.AUDIO_OUTPUT, {
     location: "UserSettingsDevices"
-  }), O = g.concat(E), A = b.concat(y), v = i.useMemo(() => {
+  }), O = g.concat(E), v = y.concat(b), A = i.useMemo(() => {
     let e = _.some(e => {
         var t;
         return null == h || null == (t = h.hardwareId) ? true : t.startsWith(e)
@@ -39,7 +39,7 @@ function h() {
         return null == m || null == (t = m.hardwareId) ? true : t.startsWith(e)
       });
     return e && t && (null == h ? true : h.containerId) != null && h.containerId === (null == m ? true : m.containerId)
-  }, [h, m]), S = O[0], I = A[0], T = null != (e = null == S ? true : S.disabled) ? e : !n, C = null != (t = null == I ? true : I.disabled) ? t : !c;
+  }, [h, m]), I = O[0], S = v[0], T = null != (e = null == I ? true : I.disabled) ? e : !n, C = null != (t = null == S ? true : S.disabled) ? t : !c;
   return (0, r.jsxs)("div", {
     className: p.y0,
     children: [(0, r.jsxs)("div", {
@@ -63,7 +63,7 @@ function h() {
           isDisabled: C
         })
       })]
-    }), v && (0, r.jsx)(u.A, {
+    }), A && (0, r.jsx)(u.A, {
       look: u.k.WARNING,
       children: f.intl.string(f.t.Ioz3gx)
     })]

@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Ay: () => eA,
+  Ay: () => ev,
   DV: () => k,
   aS: () => V,
   xC: () => D
@@ -81,7 +81,7 @@ let P = new Chunk626584.A("KeybindsStore"),
 
 function x() {
   var e;
-  let t = null != (e = (0, b.Ze)(false).get("Backquote")) ? e : "`";
+  let t = null != (e = (0, y.Ze)(false).get("Backquote")) ? e : "`";
   return "+" === t ? t = "plus" : 0 === t.length && (t = "`"), "shift+".concat(t)
 }
 let L = "1001",
@@ -90,7 +90,7 @@ let L = "1001",
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
     return {
       id: L,
-      action: A.hCu.TOGGLE_OVERLAY_INPUT_LOCK,
+      action: v.hCu.TOGGLE_OVERLAY_INPUT_LOCK,
       shortcut: e,
       enabled: t,
       managed: true,
@@ -98,42 +98,42 @@ let L = "1001",
     }
   },
   k = e => {
-    let t = (0, y.Z0)("shift");
+    let t = (0, b.Z0)("shift");
     return null != t && (1 !== e.length || e[0][1] !== t)
   },
   U = (e, t, n, r) => {
     var i, a;
-    let s = (0, b.Ze)(false).get("Backquote"),
-      o = (0, b.Ze)(true).get("Backquote");
+    let s = (0, y.Ze)(false).get("Backquote"),
+      o = (0, y.Ze)(true).get("Backquote");
     P.log(e, {
       tags: {
         backquoteKey: null != s ? s : "unknown",
         nativeBackquoteKey: null != o ? o : "unknown",
-        backquoteCode: "".concat(null == (i = (0, b.Q_)(null != s ? s : "`")) ? true : i.keyCode),
-        nativeBackquoteCode: "".concat(null == (a = (0, b.Q_)(null != o ? o : "`")) ? true : a.keyCode)
+        backquoteCode: "".concat(null == (i = (0, y.Q_)(null != s ? s : "`")) ? true : i.keyCode),
+        nativeBackquoteCode: "".concat(null == (a = (0, y.Q_)(null != o ? o : "`")) ? true : a.keyCode)
       },
       extra: N({
         keyCombo: t,
         combo: n,
         layoutMapBacktick: s,
-        env: I.g$[(0, y._$)()],
-        backtickEventShape: (0, b.Q_)("`"),
-        backquoteKeyShape: (0, b.Q_)(null != s ? s : "`"),
-        nativeBackquoteKeyShape: (0, b.Q_)(null != o ? o : "`")
+        env: S.g$[(0, b._$)()],
+        backtickEventShape: (0, y.Q_)("`"),
+        backquoteKeyShape: (0, y.Q_)(null != s ? s : "`"),
+        nativeBackquoteKeyShape: (0, y.Q_)(null != o ? o : "`")
       }, r)
     })
   };
 
 function G(e) {
   var t;
-  let n = (0, y.OH)(e),
-    r = (0, b.Q_)("`"),
-    i = null != (t = null == r ? true : r.keyCode) ? t : (0, y.Z0)("`");
+  let n = (0, b.OH)(e),
+    r = (0, y.Q_)("`"),
+    i = null != (t = null == r ? true : r.keyCode) ? t : (0, b.Z0)("`");
   return k(n) ? n : null == i ? (U("Unable to get backtick code for overlay default keybind", e, n, {
     rawBacktickShape: r
   }), null) : (U("Default overlay keybind is unsupported", e, n, {
     rawBacktickCode: i
-  }), [...n, [I.zY.KEYBOARD_KEY, i, (0, y._$)()]])
+  }), [...n, [S.zY.KEYBOARD_KEY, i, (0, b._$)()]])
 }
 let V = () => {
     let e = x();
@@ -141,8 +141,8 @@ let V = () => {
     let t = G(e);
     if (null == t) return M([], false);
     if (k(t)) return M(t, true);
-    let n = (0, y.Z0)("shift"),
-      r = (0, b.Q_)("`");
+    let n = (0, b.Z0)("shift"),
+      r = (0, y.Q_)("`");
     return 0 === t.length ? U("Default overlay keybind combo is empty", e, t) : null == n ? U("Unable to get shift code", e, t, {
       shiftCode: n
     }) : null == r && U("Unable to get backtick code", e, t), M(t, false)
@@ -173,9 +173,9 @@ function Q(e, t) {
 }
 
 function $(e, t, n) {
-  m.default.track(A.HAw.KEYBOARD_SHORTCUT_USED, {
+  m.default.track(v.HAw.KEYBOARD_SHORTCUT_USED, {
     shortcut_name: n.action,
-    shortcut_combo: (0, y.dI)(n.shortcut),
+    shortcut_combo: (0, b.dI)(n.shortcut),
     is_native_keyboard_event: true
   }), t.onTrigger(e, n)
 }
@@ -252,7 +252,7 @@ function ea(e, t, n, r) {
   } else {
     es(e.toString());
     let i = (0, p.I)(document);
-    r.keyup && i.bindGlobal((0, y.dI)(t), () => n(false), "keyup"), r.keydown && i.bindGlobal((0, y.dI)(t), () => n(true), "keydown"), F[e] = i
+    r.keyup && i.bindGlobal((0, b.dI)(t), () => n(false), "keyup"), r.keydown && i.bindGlobal((0, b.dI)(t), () => n(true), "keydown"), F[e] = i
   }
 }
 
@@ -278,7 +278,7 @@ function eo(e) {
     action: n,
     enabled: r
   } = e;
-  if (0 === t.length || null == t || n === A.hCu.UNASSIGNED || !r) return;
+  if (0 === t.length || null == t || n === v.hCu.UNASSIGNED || !r) return;
   if (null == W[n]) return void P.error("[kb store] KeybindStore: Looking for callback action ".concat(n, " but it doesn't exist in this version. Skipping"));
   let i = e.id,
     a = parseInt(i, 10);
@@ -286,19 +286,19 @@ function eo(e) {
     keybind: e
   });
   let s = W[n].keyEvents;
-  e.action === A.hCu.TOGGLE_MUTE && er(), e.action === A.hCu.TOGGLE_OVERLAY_INPUT_LOCK && et(), ea(a, t, e => J(i, e), N({
+  e.action === v.hCu.TOGGLE_MUTE && er(), e.action === v.hCu.TOGGLE_OVERLAY_INPUT_LOCK && et(), ea(a, t, e => J(i, e), N({
     focused: true,
     blurred: true,
     keydown: false,
     keyup: false
-  }, s)), d.A.validateKeybind((0, y.dI)(t))
+  }, s)), d.A.validateKeybind((0, b.dI)(t))
 }
 
 function el(e) {
   let t = N({
     id: H.toString(),
     enabled: true,
-    action: A.hCu.UNASSIGNED,
+    action: v.hCu.UNASSIGNED,
     shortcut: [],
     managed: false,
     params: {}
@@ -309,7 +309,7 @@ function el(e) {
 }
 
 function ec(e) {
-  es(e.id), B = N({}, B), delete B[e.id], e.action === A.hCu.TOGGLE_MUTE && en(), e.action === A.hCu.TOGGLE_OVERLAY_INPUT_LOCK && ee()
+  es(e.id), B = N({}, B), delete B[e.id], e.action === v.hCu.TOGGLE_MUTE && en(), e.action === v.hCu.TOGGLE_OVERLAY_INPUT_LOCK && ee()
 }
 
 function eu(e) {
@@ -323,7 +323,7 @@ function ed(e) {
   let {
     id: t
   } = e, n = B[t];
-  __OVERLAY__ || m.default.track(A.HAw.USER_SETTINGS_KEYBIND_UPDATED, {
+  __OVERLAY__ || m.default.track(v.HAw.USER_SETTINGS_KEYBIND_UPDATED, {
     keybind_action: n.action,
     keybind_is_bound: false,
     keybind_has_shortcut: false
@@ -336,14 +336,14 @@ function ef(e) {
   } = e;
   B = w(N({}, B), {
     [t.id]: t
-  }), __OVERLAY__ || (m.default.track(A.HAw.USER_SETTINGS_KEYBIND_UPDATED, {
+  }), __OVERLAY__ || (m.default.track(v.HAw.USER_SETTINGS_KEYBIND_UPDATED, {
     keybind_action: t.action,
     keybind_is_bound: true,
     keybind_has_shortcut: t.shortcut.length > 0
-  }), t.action === A.hCu.TOGGLE_OVERLAY_INPUT_LOCK ? m.default.track(A.HAw.OVERLAY_SETTINGS_UPDATED, {
-    hotkey: t.action === A.hCu.TOGGLE_OVERLAY_INPUT_LOCK ? (0, y.dI)(t.shortcut) : null
-  }) : t.action === A.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET && m.default.track(A.HAw.OVERLAY_SETTINGS_UPDATED, {
-    text_activation_hotkey: t.action === A.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET ? (0, y.dI)(t.shortcut) : null
+  }), t.action === v.hCu.TOGGLE_OVERLAY_INPUT_LOCK ? m.default.track(v.HAw.OVERLAY_SETTINGS_UPDATED, {
+    hotkey: t.action === v.hCu.TOGGLE_OVERLAY_INPUT_LOCK ? (0, b.dI)(t.shortcut) : null
+  }) : t.action === v.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET && m.default.track(v.HAw.OVERLAY_SETTINGS_UPDATED, {
+    text_activation_hotkey: t.action === v.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET ? (0, b.dI)(t.shortcut) : null
   })), eo(t)
 }
 
@@ -375,7 +375,7 @@ function eh(e, t) {
   return null == l().find(B, t => t.action === e && (!n || t.managed === n)) && (eo(el({
     action: e,
     enabled: true,
-    shortcut: (0, y.OH)(t),
+    shortcut: (0, b.OH)(t),
     managed: true,
     params: {}
   })), true)
@@ -390,11 +390,11 @@ function em(e) {
 let eg = [function() {
   let e = h.A.getShortcuts();
   return l().each(B, t => {
-    t.action === A.hCu.PUSH_TO_TALK && true === t.managed && (null == t.context || null == e[t.context]) && ec(t)
+    t.action === v.hCu.PUSH_TO_TALK && true === t.managed && (null == t.context || null == e[t.context]) && ec(t)
   }), l().reduce(h.A.getShortcuts(), (e, t, n) => {
-    let r = l().find(B, e => e.action === A.hCu.PUSH_TO_TALK && true === e.managed && e.context === n);
+    let r = l().find(B, e => e.action === v.hCu.PUSH_TO_TALK && true === e.managed && e.context === n);
     if (null == r) eo(el({
-      action: A.hCu.PUSH_TO_TALK,
+      action: v.hCu.PUSH_TO_TALK,
       enabled: true,
       shortcut: t,
       managed: true,
@@ -405,7 +405,7 @@ let eg = [function() {
       if (null == t) return e || false;
       ef({
         keybind: w(N({}, r), {
-          shortcut: "string" == typeof t ? (0, y.OH)(t) : t,
+          shortcut: "string" == typeof t ? (0, b.OH)(t) : t,
           context: n
         })
       })
@@ -413,38 +413,38 @@ let eg = [function() {
     returntrue
   }, false)
 }, function() {
-  return !!O.default.getAnyGlobalEnabledOverlay() && eh(A.hCu.TOGGLE_OVERLAY_INPUT_LOCK, x())
+  return !!O.default.getAnyGlobalEnabledOverlay() && eh(v.hCu.TOGGLE_OVERLAY_INPUT_LOCK, x())
 }, function() {
-  return !!O.default.getAnyGlobalEnabledOverlay() && eh(A.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, "]`")
+  return !!O.default.getAnyGlobalEnabledOverlay() && eh(v.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, "]`")
 }, function() {
-  let e = em(A.hCu.SOUNDBOARD_HOLD);
-  return eh(A.hCu.SOUNDBOARD_HOLD, S.XF, false) || e
+  let e = em(v.hCu.SOUNDBOARD_HOLD);
+  return eh(v.hCu.SOUNDBOARD_HOLD, I.XF, false) || e
 }, function() {
-  return eh(A.hCu.SAVE_CLIP, v.Ot)
+  return eh(v.hCu.SAVE_CLIP, A.Ot)
 }, function() {
-  return eh(A.hCu.SAVE_SCREENSHOT, v.sz)
+  return eh(v.hCu.SAVE_SCREENSHOT, A.sz)
 }];
 
 function eE() {
   return en(), ee(), eg.reduce((e, t) => t() || e, false)
 }
 
-function eb() {
+function ey() {
   return (async () => {
-    await (0, b.AD)(), eE() && eO.emitChange()
+    await (0, y.AD)(), eE() && eO.emitChange()
   })(), false
 }
 Chunk775121.A.setGetKeybindList(() => {
   let e = [];
-  for (let t in B) B.hasOwnProperty(t) && e.push((0, y.dI)(B[t].shortcut));
+  for (let t in B) B.hasOwnProperty(t) && e.push((0, b.dI)(B[t].shortcut));
   let {
     showKeybindIndicators: t
   } = _.A.getCurrentConfig({
     location: "KeybindsStore"
   });
-  return t && e.push((0, y.dI)(D.shortcut)), e
+  return t && e.push((0, b.dI)(D.shortcut)), e
 });
-class ey extends(i = Chunk311907.Ay.DeviceSettingsStore) {
+class eb extends(i = Chunk311907.Ay.DeviceSettingsStore) {
   initialize(e) {
     for (let t in __OVERLAY__ || this.waitFor(h.A, O.default), B = null != e ? e : {}) delete B[t].latched, delete B[t].pressedTime
   }
@@ -473,31 +473,31 @@ class ey extends(i = Chunk311907.Ay.DeviceSettingsStore) {
         location: "KeybindsStore"
       }),
       i = l().find(B, r => r.action === e && (!t || r.managed) && (!n || r.shortcut.length > 0 && r.enabled));
-    return null != i ? i : r && e === A.hCu.TOGGLE_MUTE ? D : null
+    return null != i ? i : r && e === v.hCu.TOGGLE_MUTE ? D : null
   }
   getOverlayKeybind() {
-    let e = this.getKeybindForAction(A.hCu.TOGGLE_OVERLAY_INPUT_LOCK, true);
+    let e = this.getKeybindForAction(v.hCu.TOGGLE_OVERLAY_INPUT_LOCK, true);
     return null != e ? e : V()
   }
   getOverlayChatKeybind() {
-    return this.getKeybindForAction(A.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, true)
+    return this.getKeybindForAction(v.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, true)
   }
 }
-C(ey, "displayName", "KeybindsStore"), C(ey, "persistKey", "keybinds"), C(ey, "migrations", [function() {
+C(eb, "displayName", "KeybindsStore"), C(eb, "persistKey", "keybinds"), C(eb, "migrations", [function() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     {
       v: t,
       keybinds: n = e
     } = e;
-  return l().reduce(n, (e, n, r) => (isNaN(parseInt(n.id, 10)) || n.id !== r || ((null == t || t < 2) && ("string" == typeof n.shortcut ? (n.shortcut = n.shortcut.replace("escape", "esc").replace("capslock", "caps lock").replace("numlock", "num lock").replace("pageup", "page up").replace("pagedown", "page down"), n.shortcut = (0, y.OH)(n.shortcut)) : n.shortcut = n.shortcut.map(e => e.length < 3 ? [...e, (0, y._$)()] : e)), e[r] = n), e), {})
+  return l().reduce(n, (e, n, r) => (isNaN(parseInt(n.id, 10)) || n.id !== r || ((null == t || t < 2) && ("string" == typeof n.shortcut ? (n.shortcut = n.shortcut.replace("escape", "esc").replace("capslock", "caps lock").replace("numlock", "num lock").replace("pageup", "page up").replace("pagedown", "page down"), n.shortcut = (0, b.OH)(n.shortcut)) : n.shortcut = n.shortcut.map(e => e.length < 3 ? [...e, (0, b._$)()] : e)), e[r] = n), e), {})
 }, e => e, e => {
   let {
     keybinds: t = e
   } = e;
   return l().reduce(t, (e, t, n) => {
-    if ((0, g.isLinux)() && t.action === A.hCu.SOUNDBOARD_HOLD) {
+    if ((0, g.isLinux)() && t.action === v.hCu.SOUNDBOARD_HOLD) {
       let n = t.shortcut.map(e => e[1]),
-        r = (0, y.OH)("`").map(e => e[1]);
+        r = (0, b.OH)("`").map(e => e[1]);
       if (s()(n, r)) return e
     }
     return w(N({}, e), {
@@ -520,12 +520,12 @@ C(ey, "displayName", "KeybindsStore"), C(ey, "persistKey", "keybinds"), C(ey, "m
     }
   }
   return t
-}, e => l().reduce(e, (e, t, n) => t.action === A.hCu.TOGGLE_GO_LIVE_STREAMING && t.managed ? e : w(N({}, e), {
+}, e => l().reduce(e, (e, t, n) => t.action === v.hCu.TOGGLE_GO_LIVE_STREAMING && t.managed ? e : w(N({}, e), {
   [n]: t
 }), {})]);
-let eO = new ey(Chunk73153.h, {
+let eO = new eb(Chunk73153.h, {
     CONNECTION_OPEN: eE,
-    LOGIN_SUCCESS: eb,
+    LOGIN_SUCCESS: ey,
     AUDIO_SET_MODE: eE,
     OVERLAY_SET_ENABLED: eE,
     RPC_APP_CONNECTED: eE,
@@ -536,4 +536,4 @@ let eO = new ey(Chunk73153.h, {
     KEYBINDS_ENABLE_ALL_KEYBINDS: ep,
     KEYBINDS_REGISTER_GLOBAL_KEYBIND_ACTIONS: e_
   }),
-  eA = eO
+  ev = eO

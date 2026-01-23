@@ -48,22 +48,22 @@ let w = 15 * Chunk927813.A.Millis.MINUTE,
       quest: a
     }), {
       partiedMembers: p,
-      applicationStreams: f,
-      currentActivities: h,
-      voiceChannels: A
-    } = t, g = p.length, m = f.length, b = h.length, _ = A.length > 0, O = i.useCallback(() => {
-      let e = h.filter(e => {
+      applicationStreams: h,
+      currentActivities: g,
+      voiceChannels: f
+    } = t, m = p.length, A = h.length, _ = g.length, b = f.length > 0, O = i.useCallback(() => {
+      let e = g.filter(e => {
         var t, n;
         return (null == (t = e.game) ? true : t.name) != null && (0, E.isGameApplicationType)(null == (n = e.game) ? true : n.type)
       }).map(e => e.game.name);
       E.default.track(T.HAw.NOW_PLAYING_CARD_HOVERED, {
-        num_users: g,
-        num_streams: m,
-        num_activities: b,
-        in_voice_channel: _,
+        num_users: m,
+        num_streams: A,
+        num_activities: _,
+        in_voice_channel: b,
         games_detected: e
       })
-    }, [g, m, b, _, h]), y = i.useMemo(() => o()(O, w), [O]);
+    }, [m, A, _, b, g]), y = i.useMemo(() => o()(O, w), [O]);
     return null != c || null != d ? (0, r.jsx)(u.YNO, {
       targetElementRef: s,
       position: "left",
@@ -121,7 +121,7 @@ let w = 15 * Chunk927813.A.Millis.MINUTE,
       }
     }) : null
   }),
-  R = a().throttle(() => g.u(), 3e5);
+  R = a().throttle(() => m.u(), 3e5);
 
 function D() {
   let {
@@ -130,26 +130,26 @@ function D() {
     needsRefresh: n,
     fetching: l,
     currentUser: a
-  } = (0, c.cf)([_.A, m.A, b.default], () => ({
-    nowPlayingCards: _.A.nowPlayingCards,
-    loaded: _.A.loaded,
-    needsRefresh: m.A.shouldFetch(),
-    fetching: m.A.isFetching(),
-    currentUser: b.default.getCurrentUser()
-  })), s = (0, c.bG)([p.A], () => p.A.quests), o = (0, f.oH)(Array.from(s.values()));
+  } = (0, c.cf)([b.A, A.A, _.default], () => ({
+    nowPlayingCards: b.A.nowPlayingCards,
+    loaded: b.A.loaded,
+    needsRefresh: A.A.shouldFetch(),
+    fetching: A.A.isFetching(),
+    currentUser: _.default.getCurrentUser()
+  })), s = (0, c.bG)([p.A], () => p.A.quests), o = (0, h.oH)(Array.from(s.values()));
   i.useEffect(() => (d.h.wait(() => y.O()), () => d.h.wait(() => y.v())), [null == a ? true : a.id]), i.useEffect(() => {
     n && !l && R()
   }, [n, l]);
-  let g = i.useMemo(() => {
+  let m = i.useMemo(() => {
       let t = new Map,
         n = new Set,
-        r = (0, A.$e)(s, j.B3);
+        r = (0, f.$e)(s, j.B3);
       for (let i of e) i.party.currentActivities.forEach(e => {
         let {
           activity: l
         } = e;
         if (null == l) return;
-        let a = (0, h.nq)(r, l);
+        let a = (0, g.nq)(r, l);
         null == a || n.has(a.id) || (t.set(i.party.id, a), n.add(a.id))
       });
       return t
@@ -161,7 +161,7 @@ function D() {
     } = e;
     return (0, r.jsx)(L, {
       party: t,
-      quest: g.get(t.id)
+      quest: m.get(t.id)
     }, t.id)
   }) : (0, r.jsxs)("div", {
     className: P.aM,

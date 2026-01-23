@@ -113,11 +113,11 @@ function Y() {
       pendingNameplate: H
     } = a,
     Y = B(a, ["pendingBio", "pendingAvatar", "pendingNameplate"]),
-    W = (0, I.V7)({
+    W = (0, S.V7)({
       userId: t.id,
       image: V
     }),
-    K = (0, y.lw)({
+    K = (0, b.lw)({
       pendingValue: H,
       userValue: null == t || null == (e = t.collectibles) ? true : e.nameplate
     }),
@@ -137,7 +137,7 @@ function Y() {
   return n ? (0, r.jsx)(f.A, {}) : (0, r.jsxs)(_.f5, {
     value: Z,
     children: [(0, r.jsx)(h.A, {}), (0, r.jsx)(O.A, {
-      profilePreview: (0, r.jsx)(A.A, F(G({
+      profilePreview: (0, r.jsx)(v.A, F(G({
         user: t,
         canUsePremiumCustomization: X,
         onUpsellClick: x.A,
@@ -153,14 +153,14 @@ function Y() {
         isHighlighted: true
       })),
       children: (0, r.jsx)(L.A, {})
-    }), ee && (0, r.jsx)(v.A, {}), (0, r.jsx)(l.L, {
+    }), ee && (0, r.jsx)(A.A, {}), (0, r.jsx)(l.L, {
       innerRef: en,
       onChange: e => J(e),
       threshold: .25,
       active: et,
       children: (0, r.jsx)("div", {
         ref: en,
-        children: (0, r.jsx)(S.A, {
+        children: (0, r.jsx)(I.A, {
           user: t,
           shouldShow: et,
           isVisible: $
@@ -170,7 +170,7 @@ function Y() {
       className: k.E,
       showUpsell: et && !$,
       text: M.intl.format(M.t.TmfgI2, {
-        onClick: () => (0, b.K)({
+        onClick: () => (0, y.K)({
           analyticsSource: Q
         })
       }),

@@ -6,7 +6,7 @@ require.d(exports, {
   K7: () => P,
   ME: () => T,
   lb: () => N,
-  pP: () => I
+  pP: () => S
 });
 var Chunk89494 = require("./89494.js"),
   Chunk408713 = require("./408713.js"),
@@ -40,11 +40,11 @@ function E(e) {
   c = "pointer", ("mousedown" === e.type || "pointerdown" === e.type) && (f = true, h("pointer", e))
 }
 
-function b(e) {
+function y(e) {
   (0, a.Y)(e) && (f = true, c = "virtual")
 }
 
-function y(e) {
+function b(e) {
   e.target !== window && e.target !== document && !r.lR && e.isTrusted && (f || p || (c = "virtual", h("virtual", e)), f = false, p = false)
 }
 
@@ -52,35 +52,35 @@ function O() {
   r.lR || (f = false, p = true)
 }
 
-function A(e) {
+function v(e) {
   if ("u" < typeof window || "u" < typeof document || d.get((0, s.mD)(e))) return;
   let t = (0, s.mD)(e),
     n = (0, s.TW)(e),
     r = t.HTMLElement.prototype.focus;
   t.HTMLElement.prototype.focus = function() {
     f = true, r.apply(this, arguments)
-  }, n.addEventListener("keydown", g, true), n.addEventListener("keyup", g, true), n.addEventListener("click", b, true), t.addEventListener("focus", y, true), t.addEventListener("blur", O, false), "u" > typeof PointerEvent && (n.addEventListener("pointerdown", E, true), n.addEventListener("pointermove", E, true), n.addEventListener("pointerup", E, true)), t.addEventListener("beforeunload", () => {
-    v(e)
+  }, n.addEventListener("keydown", g, true), n.addEventListener("keyup", g, true), n.addEventListener("click", y, true), t.addEventListener("focus", b, true), t.addEventListener("blur", O, false), "u" > typeof PointerEvent && (n.addEventListener("pointerdown", E, true), n.addEventListener("pointermove", E, true), n.addEventListener("pointerup", E, true)), t.addEventListener("beforeunload", () => {
+    A(e)
   }, {
     once: true
   }), d.set(t, {
     focus: r
   })
 }
-let v = (e, t) => {
+let A = (e, t) => {
   let n = (0, s.mD)(e),
     r = (0, s.TW)(e);
-  t && r.removeEventListener("DOMContentLoaded", t), d.has(n) && (n.HTMLElement.prototype.focus = d.get(n).focus, r.removeEventListener("keydown", g, true), r.removeEventListener("keyup", g, true), r.removeEventListener("click", b, true), n.removeEventListener("focus", y, true), n.removeEventListener("blur", O, false), "u" > typeof PointerEvent && (r.removeEventListener("pointerdown", E, true), r.removeEventListener("pointermove", E, true), r.removeEventListener("pointerup", E, true)), d.delete(n))
+  t && r.removeEventListener("DOMContentLoaded", t), d.has(n) && (n.HTMLElement.prototype.focus = d.get(n).focus, r.removeEventListener("keydown", g, true), r.removeEventListener("keyup", g, true), r.removeEventListener("click", y, true), n.removeEventListener("focus", b, true), n.removeEventListener("blur", O, false), "u" > typeof PointerEvent && (r.removeEventListener("pointerdown", E, true), r.removeEventListener("pointermove", E, true), r.removeEventListener("pointerup", E, true)), d.delete(n))
 };
 
-function S(e) {
+function I(e) {
   let t, n = (0, s.TW)(e);
-  return "loading" !== n.readyState ? A(e) : (t = () => {
-    A(e)
-  }, n.addEventListener("DOMContentLoaded", t)), () => v(e, t)
+  return "loading" !== n.readyState ? v(e) : (t = () => {
+    v(e)
+  }, n.addEventListener("DOMContentLoaded", t)), () => A(e, t)
 }
 
-function I() {
+function S() {
   return "pointer" !== c
 }
 
@@ -93,7 +93,7 @@ function C(e) {
 }
 
 function N() {
-  A();
+  v();
   let [e, t] = (0, o.useState)(c);
   return (0, o.useEffect)(() => {
     let e = () => {
@@ -104,7 +104,7 @@ function N() {
     }
   }, []), (0, l.wR)() ? null : e
 }
-"u" > typeof document && S();
+"u" > typeof document && I();
 let R = new Set(["checkbox", "radio", "range", "color", "file", "image", "button", "submit", "reset"]);
 
 function w(e, t, n) {
@@ -117,9 +117,9 @@ function w(e, t, n) {
 }
 
 function P(e, t, n) {
-  A(), (0, o.useEffect)(() => {
+  v(), (0, o.useEffect)(() => {
     let t = (t, r) => {
-      w(!!(null == n ? true : n.isTextInput), t, r) && e(I())
+      w(!!(null == n ? true : n.isTextInput), t, r) && e(S())
     };
     return u.add(t), () => {
       u.delete(t)

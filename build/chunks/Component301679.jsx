@@ -63,43 +63,43 @@ function _(e) {
     body: m,
     graphic: g,
     size: E = "md",
-    actions: b,
-    gradientColor: y
-  } = e, O = i.useContext(a.C), [A, v] = i.useState("closed"), S = i.useRef(null), I = i.useRef(false), T = "opening-mouse" === A || "open-mouse" === A, C = "opening-keyboard" === A || "open-keyboard" === A, N = "open-mouse" === A || "open-keyboard" === A, R = (O.keyboardModeEnabled || C) && null != b, w = R, [P, D] = i.useState(0), x = (0, l._)(n, c, A), L = i.useCallback(() => {
-    null != S.current && (clearTimeout(S.current), S.current = null)
+    actions: y,
+    gradientColor: b
+  } = e, O = i.useContext(a.C), [v, A] = i.useState("closed"), I = i.useRef(null), S = i.useRef(false), T = "opening-mouse" === v || "open-mouse" === v, C = "opening-keyboard" === v || "open-keyboard" === v, N = "open-mouse" === v || "open-keyboard" === v, R = (O.keyboardModeEnabled || C) && null != y, w = R, [P, D] = i.useState(0), x = (0, l._)(n, c, v), L = i.useCallback(() => {
+    null != I.current && (clearTimeout(I.current), I.current = null)
   }, []), j = i.useCallback(e => {
-    e && (I.current = true), L(), v("closing")
+    e && (S.current = true), L(), A("closing")
   }, [L]);
   i.useEffect(() => L, [L]);
   let M = i.useCallback(() => {
-      ("closed" === A || "closing" === A) && (L(), v("opening-mouse"))
-    }, [L, A]),
+      ("closed" === v || "closing" === v) && (L(), A("opening-mouse"))
+    }, [L, v]),
     k = i.useCallback(() => {
       T && j(false)
     }, [j, T]),
     U = i.useCallback(() => {
-      if (I.current || "closed" !== A && "closing" !== A) {
-        I.current = false;
+      if (S.current || "closed" !== v && "closing" !== v) {
+        S.current = false;
         return
       }
-      L(), v("opening-keyboard")
-    }, [L, A]),
+      L(), A("opening-keyboard")
+    }, [L, v]),
     G = i.useCallback(() => {
-      R && "opening-keyboard" !== A || j(false)
-    }, [j, A, R]);
+      R && "opening-keyboard" !== v || j(false)
+    }, [j, v, R]);
   i.useEffect(() => {
-    if ("opening-mouse" === A) return S.current = window.setTimeout(() => {
-      S.current = null, v("open-mouse"), null == _ || _()
+    if ("opening-mouse" === v) return I.current = window.setTimeout(() => {
+      I.current = null, A("open-mouse"), null == _ || _()
     }, d), L
-  }, [A, d, _, L]), i.useEffect(() => {
-    if ("opening-keyboard" === A) return S.current = window.setTimeout(() => {
-      S.current = null, v("open-keyboard"), null == _ || _()
+  }, [v, d, _, L]), i.useEffect(() => {
+    if ("opening-keyboard" === v) return I.current = window.setTimeout(() => {
+      I.current = null, A("open-keyboard"), null == _ || _()
     }, d), L
-  }, [A, d, _, L]), i.useEffect(() => {
-    if ("closing" === A) return S.current = window.setTimeout(() => {
-      S.current = null, v("closed")
+  }, [v, d, _, L]), i.useEffect(() => {
+    if ("closing" === v) return I.current = window.setTimeout(() => {
+      I.current = null, A("closed")
     }, p), L
-  }, [A, L]), i.useEffect(() => {
+  }, [v, L]), i.useEffect(() => {
     if (!N) return;
     let e = e => {
       ("Escape" === e.key || "Esc" === e.key) && (e.preventDefault(), e.stopPropagation(), j(true))
@@ -108,12 +108,12 @@ function _(e) {
       document.removeEventListener("keydown", e, true)
     }
   }, [N, j]);
-  let V = i.useMemo(() => null == b ? b : b.map(e => f(u({}, e), {
+  let V = i.useMemo(() => null == y ? y : y.map(e => f(u({}, e), {
       onClick: t => {
         var n;
         null == (n = e.onClick) || n.call(e, t), j(false)
       }
-    })), [b, j]),
+    })), [y, j]),
     F = i.useCallback(e => {
       D(e)
     }, []);
@@ -132,7 +132,7 @@ function _(e) {
       graphic: g,
       size: E,
       actions: V,
-      gradientColor: y,
+      gradientColor: b,
       showCloseButton: w,
       shouldTrapFocus: R,
       returnRef: R ? n : true,

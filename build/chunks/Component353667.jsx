@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk49999 = require("./49999.js"),
   Chunk872175 = require("./872175.js");
 
-function y(e) {
+function b(e) {
   let {
     notice: t,
     children: n
@@ -46,7 +46,7 @@ function y(e) {
       element: e
     } = t;
     return (0, r.jsx)(o.FQk, {
-      className: b.lm,
+      className: y.lm,
       children: (0, r.jsx)(e, {})
     })
   }, [t, l]);
@@ -65,14 +65,14 @@ function O(e) {
     notice: a,
     children: s
   } = e, l = i.useRef(null);
-  return (0, r.jsx)(y, {
+  return (0, r.jsx)(b, {
     notice: a,
     children: (0, r.jsx)(o.ArX, {
       "data-settings-panel-scroller": true,
-      className: b.XG,
+      className: y.XG,
       ref: t,
       children: (0, r.jsx)("div", {
-        className: b.nd,
+        className: y.nd,
         ref: l,
         children: (0, r.jsx)(o.xpW, {
           containerRef: l,
@@ -83,23 +83,23 @@ function O(e) {
   })
 }
 
-function A(e) {
+function v(e) {
   let {
     layout: t
   } = e;
   return (0, r.jsx)("div", {
-    className: b.LZ,
+    className: y.LZ,
     children: t.map((e, n) => (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(_.A, {
         node: e
       }), n !== t.length - 1 && (0, r.jsx)(h.A, {
-        className: b.yF
+        className: y.yF
       })]
     }, e.key))
   })
 }
 
-function v(e) {
+function A(e) {
   var t, n;
   let {
     panelKey: a,
@@ -138,7 +138,7 @@ function v(e) {
     panelKey: a,
     notice: l,
     children: [(0, r.jsx)(o.VQ0, {
-      className: b.$H,
+      className: y.$H,
       selectedItem: c,
       onItemSelect: f,
       orientation: "horizontal",
@@ -156,14 +156,14 @@ function v(e) {
       })
     }), (0, r.jsx)(o.VQ0.Panel, {
       id: c,
-      children: null != _.StronglyDiscouragedCustomComponent ? (0, r.jsx)(_.StronglyDiscouragedCustomComponent, {}) : (0, r.jsx)(A, {
+      children: null != _.StronglyDiscouragedCustomComponent ? (0, r.jsx)(_.StronglyDiscouragedCustomComponent, {}) : (0, r.jsx)(v, {
         layout: _.layout
       })
     })]
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     panelKey: t,
     notice: n,
@@ -173,13 +173,13 @@ function S(e) {
     scrollerRef: s,
     panelKey: t,
     notice: n,
-    children: (0, r.jsx)(A, {
+    children: (0, r.jsx)(v, {
       layout: a
     })
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     component: t,
     panelKey: n,
@@ -214,17 +214,17 @@ function T(e) {
         })
       })
     }, [t]), o && t.hideInStreamerMode) return (0, r.jsx)(l.A, {});
-  if (null != t.StronglyDiscouragedCustomComponent) return (0, r.jsx)(I, {
+  if (null != t.StronglyDiscouragedCustomComponent) return (0, r.jsx)(S, {
     component: t.StronglyDiscouragedCustomComponent,
     panelKey: t.key,
     notice: t.notice
   });
-  if ((0, f.zY)(n)) return (0, r.jsx)(v, {
+  if ((0, f.zY)(n)) return (0, r.jsx)(A, {
     panelKey: t.key,
     notice: t.notice,
     layout: n
   });
-  if ((0, f.Iu)(n)) return (0, r.jsx)(S, {
+  if ((0, f.Iu)(n)) return (0, r.jsx)(I, {
     panelKey: t.key,
     notice: t.notice,
     layout: n

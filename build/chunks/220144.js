@@ -15,7 +15,7 @@ function i(e, t) {
     let e = setTimeout(() => n.current = false, t);
     return () => clearTimeout(e)
   }, [e, t]);
-  let a = e !== (0, l.A)(i),
-    s = (0, l.A)(n);
-  return a || s
+  let s = e !== (0, l.A)(i),
+    a = (0, l.A)(n);
+  return s || a
 }

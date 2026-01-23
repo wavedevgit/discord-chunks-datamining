@@ -82,11 +82,11 @@ function E(e) {
     id: "report-app",
     color: n.color,
     label: u.intl.string(u.t.NgA5vp),
-    action: () => b(t, n)
+    action: () => y(t, n)
   })
 }
 
-function b(e, t) {
+function y(e, t) {
   let n = () => {
     var e;
     (0, a.OoC)(g), null == (e = t.onSubmit) || e.call(t)

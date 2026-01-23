@@ -2,7 +2,7 @@
 /** chunk id: 26909, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => S,
+  Ay: () => I,
   RG: () => E
 }), require("./896048.js"), require("./747238.js"), require("./321073.js");
 var r, Chunk735438 = require("./735438.js"),
@@ -72,11 +72,11 @@ function E(e, t) {
   }).map(e => e.split(":")[0])
 }
 
-function b(e, t) {
+function y(e, t) {
   return 0 > Number(t.id) ? t.id : (null == e ? true : e.guild) != null && null != t.guildId ? "".concat(t.id, ":").concat(e.guild.id) : t.id
 }
 
-function y(e) {
+function b(e) {
   let {
     settings: {
       type: t
@@ -91,23 +91,23 @@ function O(e) {
   let {
     command: t,
     context: n
-  } = e, r = b(n, t);
+  } = e, r = y(n, t);
   m.pendingUsages.push({
     key: r,
     timestamp: Date.now()
   }), g.track(r), g.compute()
 }
 
-function A() {
+function v() {
   var e, t;
   let n = null != (e = null == (t = c.A.frecencyWithoutFetchingLatest.applicationCommandFrecency) ? true : t.applicationCommands) ? e : {};
   g.overwriteHistory(a().mapValues(n, e => h(p({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), m.pendingUsages)
 }
-class v extends(r = Chunk311907.Ay.PersistedStore) {
+class A extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    null != e && (m = e), this.syncWith([c.A], A)
+    null != e && (m = e), this.syncWith([c.A], v)
   }
   getState() {
     return m
@@ -120,14 +120,14 @@ class v extends(r = Chunk311907.Ay.PersistedStore) {
   }
   getScoreWithoutLoadingLatest(e, t) {
     var n;
-    return null != (n = g.getScore(b(e, t))) ? n : 0
+    return null != (n = g.getScore(y(e, t))) ? n : 0
   }
   getTopCommandsWithoutLoadingLatest() {
     return g.frequently
   }
 }
-f(v, "displayName", "ApplicationCommandFrecencyStore"), f(v, "persistKey", "ApplicationCommandFrecencyV2");
-let S = new v(Chunk73153.h, {
+f(A, "displayName", "ApplicationCommandFrecencyStore"), f(A, "persistKey", "ApplicationCommandFrecencyV2");
+let I = new A(Chunk73153.h, {
   APPLICATION_COMMAND_USED: O,
-  USER_SETTINGS_PROTO_UPDATE: y
+  USER_SETTINGS_PROTO_UPDATE: b
 })

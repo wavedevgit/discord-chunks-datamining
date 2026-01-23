@@ -25,21 +25,21 @@ let E = () => {
     onClose: t,
     premiumType: n,
     premiumSubscription: E,
-    setStep: b,
-    applyOffer: y,
+    setStep: y,
+    applyOffer: b,
     churnUserDiscountOffer: O,
-    discountedPrice: A,
-    fullPrice: v
-  } = (0, d.X)(), [S, I] = (0, i.useState)(false), [T, C] = (0, i.useState)(false), N = async () => {
+    discountedPrice: v,
+    fullPrice: A
+  } = (0, d.X)(), [I, S] = (0, i.useState)(false), [T, C] = (0, i.useState)(false), N = async () => {
     if (null === O) return void C(true);
-    I(true), C(false);
+    S(true), C(false);
     try {
-      await y(), b(u.g.DISCOUNT_APPLIED)
+      await b(), y(u.g.DISCOUNT_APPLIED)
     } catch (e) {
-      C(true), I(false)
+      C(true), S(false)
     }
   };
-  if (null === O || null === A) return (0, r.jsx)("div", {
+  if (null === O || null === v) return (0, r.jsx)("div", {
     className: h.dc,
     children: (0, r.jsx)(s.y$y, {})
   });
@@ -48,14 +48,14 @@ let E = () => {
       text: _.intl.string(_.t.zl7LZp),
       onClick: () => t(),
       variant: "secondary",
-      disabled: S
+      disabled: I
     }, {
       text: _.intl.string(_.t.CKSuZJ),
       onClick: () => N(),
       variant: "primary",
       icon: s.tvc,
-      loading: S,
-      disabled: S
+      loading: I,
+      disabled: I
     }];
   return (0, r.jsxs)(a.ExpressiveModal, {
     graphic: {
@@ -81,16 +81,16 @@ let E = () => {
         variant: "text-xs/medium",
         color: "text-subtle",
         children: E.status === p.Dmq.CANCELED ? _.intl.format(_.t.mY3ysK, {
-          discountedPrice: A,
+          discountedPrice: v,
           billingPeriod: (0, l.Ke)(O.discount.user_usage_limit_interval),
           numMonths: O.discount.user_usage_limit,
-          fullPrice: v,
+          fullPrice: A,
           paidURL: o.A.getArticleURL(p.MVz.PAID_TERMS)
         }) : _.intl.format(_.t.hrGTjG, {
-          discountedPrice: A,
+          discountedPrice: v,
           billingPeriod: (0, l.Ke)(O.discount.user_usage_limit_interval),
           numMonths: O.discount.user_usage_limit,
-          fullPrice: v,
+          fullPrice: A,
           helpdeskArticle: o.A.getArticleURL(p.MVz.PAID_TERMS)
         })
       })

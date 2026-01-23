@@ -2,7 +2,7 @@
 /** chunk id: 407580, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./896048.js");
 var Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -59,7 +59,7 @@ function E(e) {
   return null != e.apiResponseTimestamp && null != e.gatewaySeenTimestamp
 }
 
-function b(e) {
+function y(e) {
   let t = l.A.getBasicChannel(e.channelId);
   if (null == t) return void g.warn("Ignoring a messageData for channel ".concat(e.channelId, " because we can't find that channel."));
   if (Math.random() > .1) return;
@@ -80,12 +80,12 @@ function b(e) {
   }))
 }
 
-function y(e) {
+function b(e) {
   let {
     optimistic: t,
     message: n
   } = e, r = n.nonce;
-  t || null == r || A.recordGatewayResponse(r)
+  t || null == r || v.recordGatewayResponse(r)
 }
 class O extends Chunk311907.Ay.Store {
   initialize() {
@@ -104,7 +104,7 @@ class O extends Chunk311907.Ay.Store {
       };
     this.pendingMessages.set(t, l), setTimeout(() => {
       let e = this.pendingMessages.get(t);
-      null != e && (b(e), this.pendingMessages.delete(t))
+      null != e && (y(e), this.pendingMessages.delete(t))
     }, 3e4)
   }
   recordMessageSendApiResponse(e) {
@@ -113,7 +113,7 @@ class O extends Chunk311907.Ay.Store {
       let n = m(_({}, t), {
         apiResponseTimestamp: Date.now()
       });
-      E(n) ? (b(n), this.pendingMessages.delete(e)) : this.pendingMessages.set(e, n)
+      E(n) ? (y(n), this.pendingMessages.delete(e)) : this.pendingMessages.set(e, n)
     }
   }
   recordGatewayResponse(e) {
@@ -122,14 +122,14 @@ class O extends Chunk311907.Ay.Store {
       let n = m(_({}, t), {
         gatewaySeenTimestamp: Date.now()
       });
-      E(n) ? (b(n), this.pendingMessages.delete(e)) : this.pendingMessages.set(e, n)
+      E(n) ? (y(n), this.pendingMessages.delete(e)) : this.pendingMessages.set(e, n)
     }
   }
   constructor(...e) {
     super(...e), p(this, "pendingMessages", new Map)
   }
 }
-let A = new O(Chunk73153.h, {
-    MESSAGE_CREATE: y
+let v = new O(Chunk73153.h, {
+    MESSAGE_CREATE: b
   }),
-  v = A
+  A = v

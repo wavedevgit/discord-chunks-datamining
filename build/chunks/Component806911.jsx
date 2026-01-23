@@ -156,7 +156,7 @@ class ef extends Chunk64700.PureComponent {
       channel: e
     } = this.props;
     q.default.track(ei.HAw.VIDEO_LAYOUT_TOGGLED, ec({
-      video_layout: b.A.getLayout(e.id)
+      video_layout: y.A.getLayout(e.id)
     }, (0, E.QS)(e.id)))
   }
   renderStreamState() {
@@ -228,7 +228,7 @@ class ef extends Chunk64700.PureComponent {
       participantOnScreen: n,
       isVideoEnabled: i,
       width: a
-    } = this.props, s = (0, v.m1)(e, Y.default, H.A), o = (null == n ? true : n.id) === F.default.getId() && i, l = this.renderStreamState(), c = this.activeStreamForSelectedParticipant, u = null;
+    } = this.props, s = (0, A.m1)(e, Y.default, H.A), o = (null == n ? true : n.id) === F.default.getId() && i, l = this.renderStreamState(), c = this.activeStreamForSelectedParticipant, u = null;
     return (null == n ? true : n.type) !== ea.lp.ACTIVITY && (null != l ? u = l : ((null == n ? true : n.type) === ea.lp.USER || (null == n ? true : n.type) === ea.lp.STREAM) && (u = (0, r.jsx)(Q.A, {
       paused: this.streamerPaused,
       streamId: t,
@@ -287,7 +287,7 @@ class ef extends Chunk64700.PureComponent {
       let {
         participantOnScreen: e
       } = this.props;
-      s()((0, ea.Ay)(e), "cannot stop stream for non streamer"), (0, A.X)(g.A.VIDEO_PIP, A.O.STREAM, false), (0, R.A)(e.stream)
+      s()((0, ea.Ay)(e), "cannot stop stream for non streamer"), (0, v.X)(g.A.VIDEO_PIP, v.O.STREAM, false), (0, R.A)(e.stream)
     }), el(this, "handleHidePIP", () => {
       let {
         channel: e
@@ -297,7 +297,7 @@ class ef extends Chunk64700.PureComponent {
       let {
         channel: e
       } = this.props;
-      (0, A.X)(g.A.VIDEO_PIP, A.O.POPOUT, true), P.openChannelCallPopout(e)
+      (0, v.X)(g.A.VIDEO_PIP, v.O.POPOUT, true), P.openChannelCallPopout(e)
     }), el(this, "renderBottomLeftControls", () => {
       let {
         canSeeParticipantName: e
@@ -316,7 +316,7 @@ class ef extends Chunk64700.PureComponent {
       })
     }), el(this, "renderDisconnectButton", () => (0, r.jsx)(M.A, {
       className: es.iq,
-      onClick: () => (0, A.X)(g.A.VIDEO_PIP, A.O.DISCONNECT)
+      onClick: () => (0, v.X)(g.A.VIDEO_PIP, v.O.DISCONNECT)
     })), el(this, "renderStopStreamButton", () => {
       let {
         isSelf: e
@@ -366,7 +366,7 @@ function ep(e) {
   let {
     channel: t,
     width: n
-  } = e, i = (0, c.bG)([W.A], () => W.A.getSpeaker(t.id)), a = (0, c.bG)([b.A], () => b.A.getParticipant(t.id, i), [t.id, i]), s = (0, c.bG)([B.A], () => l()(B.A.getVideoDevices()).values().first()), o = (0, c.bG)([K.A], () => null != a && a.type !== ea.lp.ACTIVITY && a.type !== ea.lp.HIDDEN_STREAM ? K.A.getStreamId(a.user.id, t.getGuildId(), (0, y.A)(a.type)) : null, [a, t]), d = null == s || s.disabled, f = !d, p = (0, c.bG)([B.A], () => !d && B.A.isVideoEnabled(), [d]), _ = (0, c.bG)([B.A], () => (0, C.A)(B.A)), h = (0, c.bG)([F.default], () => F.default.getId()), m = (0, c.bG)([V.A], () => V.A.getCurrentUserActiveStream()), g = null != a && "user" in a ? a.user.id : "", E = (0, I.A)((null == a ? true : a.type) === ea.lp.STREAM ? u.x.STREAM : u.x.DEFAULT, g), O = (0, S.A)(g), A = (0, c.yK)([V.A], () => V.A.getAllActiveStreams());
+  } = e, i = (0, c.bG)([W.A], () => W.A.getSpeaker(t.id)), a = (0, c.bG)([y.A], () => y.A.getParticipant(t.id, i), [t.id, i]), s = (0, c.bG)([B.A], () => l()(B.A.getVideoDevices()).values().first()), o = (0, c.bG)([K.A], () => null != a && a.type !== ea.lp.ACTIVITY && a.type !== ea.lp.HIDDEN_STREAM ? K.A.getStreamId(a.user.id, t.getGuildId(), (0, b.A)(a.type)) : null, [a, t]), d = null == s || s.disabled, f = !d, p = (0, c.bG)([B.A], () => !d && B.A.isVideoEnabled(), [d]), _ = (0, c.bG)([B.A], () => (0, C.A)(B.A)), h = (0, c.bG)([F.default], () => F.default.getId()), m = (0, c.bG)([V.A], () => V.A.getCurrentUserActiveStream()), g = null != a && "user" in a ? a.user.id : "", E = (0, S.A)((null == a ? true : a.type) === ea.lp.STREAM ? u.x.STREAM : u.x.DEFAULT, g), O = (0, I.A)(g), v = (0, c.yK)([V.A], () => V.A.getAllActiveStreams());
   return (0, r.jsx)(ef, {
     channel: t,
     streamId: o,
@@ -375,7 +375,7 @@ function ep(e) {
     isVideoEnabled: p,
     canGoLive: _,
     currentUserId: h,
-    activeStreams: A,
+    activeStreams: v,
     activeSelfStream: m,
     isMainWindowFocused: z.A.isFocused(),
     width: n,

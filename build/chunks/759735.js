@@ -4,11 +4,11 @@
 require.d(exports, {
   $L: () => j,
   au: () => C,
-  cr: () => S,
+  cr: () => I,
   d1: () => T,
   fO: () => L,
   io: () => N,
-  kL: () => I
+  kL: () => S
 }), require("./65821.js"), require("./896048.js"), require("./733351.js");
 var Chunk602137 = require("./602137.js"),
   Chunk970278 = require("./970278.js"),
@@ -28,7 +28,7 @@ var Chunk602137 = require("./602137.js"),
   Chunk746080 = require("./746080.js"),
   Chunk37411 = require("./37411.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,13 +44,13 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,22 +61,22 @@ function A(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e) {
+function I(e) {
   return m.A.getForumChannelSessionId(e)
 }
 
-function I(e) {
+function S(e) {
   switch (e) {
     case r.T.CREATION_DATE:
-      return b.az.CREATION_DATE;
+      return y.az.CREATION_DATE;
     case r.T.LATEST_ACTIVITY:
-      return b.az.LATEST_ACTIVITY;
+      return y.az.LATEST_ACTIVITY;
     default:
       throw Error("Unexpected sort order ".concat(e))
   }
@@ -154,7 +154,7 @@ function L(e) {
     forum_channel_can_create_post: u.A.can(g.xBc.SEND_MESSAGES, o),
     forum_channel_filter_tag_ids: _.A.getFilterTagIdsAnalytics(),
     forum_channel_sort_order: _.A.getSortOrderAnalytics(o.id),
-    forum_channel_session_id: null != s ? s : S(o.id),
+    forum_channel_session_id: null != s ? s : I(o.id),
     forum_channel_layout: _.A.getLayoutAnalytics(o.id),
     forum_channel_default_sort_order: o.defaultSortOrder,
     forum_channel_tag_setting: _.A.getTagSettingAnalytics(o.id),
@@ -171,7 +171,7 @@ function j(e) {
   } = e, m = l.A.getChannel(p);
   if (null == m || !m.isForumPost()) return null;
   let g = l.A.getChannel(m.parent_id);
-  return null != g && g.isForumLikeChannel() ? v(O({}, L({
+  return null != g && g.isForumLikeChannel() ? A(O({}, L({
     channelId: g.id,
     sessionId: _
   })), {

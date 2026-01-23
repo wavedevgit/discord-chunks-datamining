@@ -22,7 +22,7 @@ let p = {
   h = function() {
     let {
       task: e
-    } = (0, r.Z)(), t = e.flow_context.tasks.findIndex(t => t.task_type === e.task_type);
+    } = (0, i.Z)(), t = e.flow_context.tasks.findIndex(t => t.task_type === e.task_type);
     return (0, a.jsxs)(l.BJc, {
       direction: "vertical",
       justify: "space-between",
@@ -41,7 +41,7 @@ let p = {
           gap: 0,
           children: e.flow_context.tasks.map((e, n) => {
             var l;
-            return (0, a.jsx)(i.B, {
+            return (0, a.jsx)(r.B, {
               title: null != (l = p[e.task_type]) ? l : "",
               listType: "numbered",
               index: n,

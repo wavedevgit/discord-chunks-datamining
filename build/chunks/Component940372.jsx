@@ -14,19 +14,19 @@ let c = t => {
     transitionState: s,
     errors: e,
     onClose: c
-  } = t, o = i.useMemo(() => [{
+  } = t, d = i.useMemo(() => [{
     variant: "secondary",
-    text: d.intl.string(d.t["NX+WJN"]),
+    text: l.intl.string(l.t["NX+WJN"]),
     onClick: c
   }], [c]);
-  return (0, a.jsx)(n.aFV, {
-    title: d.intl.string(d.t.AUIsQU),
+  return (0, r.jsx)(a.aFV, {
+    title: l.intl.string(l.t.AUIsQU),
     transitionState: s,
     onClose: c,
-    actions: o,
-    children: (0, a.jsx)("div", {
-      className: l.s,
-      children: e.map(t => (0, a.jsx)(r.A, {
+    actions: d,
+    children: (0, r.jsx)("div", {
+      className: o.s,
+      children: e.map(t => (0, r.jsx)(n.A, {
         error: t
       }, t.filename))
     })

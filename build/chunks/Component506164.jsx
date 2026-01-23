@@ -16,25 +16,25 @@ let o = function(e) {
     disagreement: c,
     onAgree: u,
     onDisagree: d,
-    modalType: f,
-    channelId: p,
-    guildId: h
+    modalType: p,
+    channelId: h,
+    guildId: f
   } = e;
   l.useEffect(() => {
-    (0, a.Bf)(f, p, h)
-  }, [f, p, h]);
-  let b = l.useCallback(() => {
-      (0, a.mU)(a.IY.NSFW_CHANNEL_DISAGREE_CTA, f, p, h), null == d || d()
-    }, [d, f, p, h]),
-    g = l.useCallback(() => {
-      (0, a.mU)(a.IY.NSFW_CHANNEL_AGREE_CTA, f, p, h), null == u || u()
-    }, [u, f, p, h]);
+    (0, s.Bf)(p, h, f)
+  }, [p, h, f]);
+  let g = l.useCallback(() => {
+      (0, s.mU)(s.IY.NSFW_CHANNEL_DISAGREE_CTA, p, h, f), null == d || d()
+    }, [d, p, h, f]),
+    m = l.useCallback(() => {
+      (0, s.mU)(s.IY.NSFW_CHANNEL_AGREE_CTA, p, h, f), null == u || u()
+    }, [u, p, h, f]);
   return (0, r.jsxs)(i.BJc, {
     justify: "center",
     align: "center",
     direction: "vertical",
     gap: 16,
-    className: s.XG,
+    className: a.XG,
     children: [(0, r.jsxs)(i.BJc, {
       gap: 8,
       justify: "center",
@@ -42,11 +42,11 @@ let o = function(e) {
       direction: "vertical",
       children: [(0, r.jsx)(i.Text, {
         variant: "text-lg/semibold",
-        className: s.DD,
+        className: a.DD,
         children: t
       }), (0, r.jsx)(i.Text, {
         variant: "text-md/medium",
-        className: s.h_,
+        className: a.h_,
         color: "text-muted",
         children: n
       })]
@@ -58,9 +58,9 @@ let o = function(e) {
       children: [null != c && null != d ? (0, r.jsx)(i.Button, {
         variant: "secondary",
         text: c,
-        onClick: b
+        onClick: g
       }) : null, null != o && null != u ? (0, r.jsx)(i.Button, {
-        onClick: g,
+        onClick: m,
         text: o
       }) : null]
     })]

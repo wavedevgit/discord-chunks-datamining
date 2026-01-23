@@ -1,7 +1,7 @@
 /** Chunk was on 67096 **/
 /** chunk id: 137766, original params: e,A,t (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,7 +15,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk228580 = require("./228580.js");
 
-function f(e) {
+function p(e) {
   for (var A = 1; A < arguments.length; A++) {
     var t = null != arguments[A] ? arguments[A] : {},
       r = Object.keys(t);
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function p(e, A) {
+function f(e, A) {
   return A = null != A ? A : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(A)) : (function(e, A) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,44 +48,44 @@ function p(e, A) {
 }
 let m = (0, Chunk915089.Ld)();
 
-function b(e) {
+function v(e) {
   let {
     newRoleParams: A,
     setNewRoleParams: t
   } = e, l = n.useRef(null), {
-    name: o,
-    color: b
-  } = A, v = e => t(A => (a()(null != A, "newRoleParams should be defined"), p(f({}, A), {
+    name: s,
+    color: v
+  } = A, h = e => t(A => (a()(null != A, "newRoleParams should be defined"), f(p({}, A), {
     color: e
   })));
   return (0, r.jsxs)("div", {
     className: g.CJ,
-    children: [(0, r.jsx)(s.ksK, {
+    children: [(0, r.jsx)(o.ksK, {
       autoFocus: true,
-      value: o,
-      onChange: e => t(A => (a()(null != A, "newRoleParams should be defined"), p(f({}, A), {
+      value: s,
+      onChange: e => t(A => (a()(null != A, "newRoleParams should be defined"), f(p({}, A), {
         name: e
       }))),
       id: m,
-      placeholder: u.intl.string(u.t.oNauug),
-      maxLength: c.fHV
+      placeholder: c.intl.string(c.t.oNauug),
+      maxLength: u.fHV
     }), (0, r.jsxs)("div", {
       className: g.P4,
-      children: [(0, r.jsx)(s.AC4, {
-        children: u.intl.format(u.t["Vlq/pH"], {
-          color: (0, i.Hl)(b)
+      children: [(0, r.jsx)(o.AC4, {
+        children: c.intl.format(c.t["Vlq/pH"], {
+          color: (0, i.Hl)(v)
         })
-      }), (0, r.jsx)(s.YNO, {
+      }), (0, r.jsx)(o.YNO, {
         targetElementRef: l,
-        renderPopout: e => (0, r.jsx)(s.VNw, p(f({}, e), {
-          value: b,
-          onChange: v
+        renderPopout: e => (0, r.jsx)(o.VNw, f(p({}, e), {
+          value: v,
+          onChange: h
         })),
-        children: e => (0, r.jsx)(s.K0, p(f({}, e), {
+        children: e => (0, r.jsx)(o.K0, f(p({}, e), {
           variant: "secondary",
-          icon: s.dDg,
+          icon: o.dDg,
           buttonRef: l,
-          "aria-label": u.intl.string(u.t.QLgdlS)
+          "aria-label": c.intl.string(c.t.QLgdlS)
         }))
       })]
     }), (0, r.jsx)(d.A, {

@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 285545, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  i: () => A
+  i: () => f
 }), require("./896048.js"), require("./321073.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -16,14 +16,14 @@ var Chunk64700 = require("./64700.js"),
   Chunk567061 = require("./567061.js"),
   Chunk118972 = require("./118972.js");
 
-function A(e) {
+function f(e) {
   let {
     showDot: t,
     notificationItem: n
-  } = e, [A, g] = r.useState(false), {
-    unreadItems: m,
-    readItems: b,
-    allUnreadItemsHydrated: _
+  } = e, [f, m] = r.useState(false), {
+    unreadItems: A,
+    readItems: _,
+    allUnreadItemsHydrated: b
   } = (0, p.A)(), E = (0, i.bG)([c.A], () => c.A.getVersion(), []), O = (0, i.bG)([c.A], () => !(c.A.isFirstPageHydrated() && E > 0));
   r.useEffect(() => {
     null != c.A.getLoadId() && s.k.trackFeedShown({
@@ -55,13 +55,13 @@ function A(e) {
   r.useEffect(() => {
     if (y || O || null == j || null == T || T === j) return;
     let e = Date.now();
-    e - N > h.N && (a.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
+    e - N > g.N && (a.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
   }, [y, N, j, T, C, O]);
   let x = r.useCallback(e => {
       let {
         viewableItems: t
       } = e;
-      if (t.some(e => "end" === e.item.data.kind) && g(true), 0 === t.length) return;
+      if (t.some(e => "end" === e.item.data.kind) && m(true), 0 === t.length) return;
       S(t);
       let n = [],
         r = (0, d.P0)(t),
@@ -78,7 +78,7 @@ function A(e) {
         id: e.id,
         type: (0, u.xG)(e)
       })), E)
-    }, [E, g]),
+    }, [E, m]),
     P = r.useCallback(e => {
       let {
         viewableItems: t
@@ -161,7 +161,7 @@ function A(e) {
   r.useEffect(() => {
     a.A.openICYMITab()
   }, []);
-  let R = (0, f.E)(t),
+  let R = (0, h.E)(t),
     {
       data: D,
       stickyHeaderIndices: M
@@ -183,16 +183,16 @@ function A(e) {
         data: {
           kind: "loading"
         }
-      }) : (m.forEach(t => {
+      }) : (A.forEach(t => {
         (0, d.yx)(t) || e.push(t)
-      }), _ && e.push({
+      }), b && e.push({
         id: "end",
         timestamp: 0,
         unread: false,
         data: {
           kind: "end"
         }
-      }), b.length > 0 && b.forEach(t => {
+      }), _.length > 0 && _.forEach(t => {
         (0, d.yx)(t) || e.push(t)
       }), I && e.push({
         id: "bottomLoading",
@@ -205,13 +205,13 @@ function A(e) {
         data: e,
         stickyHeaderIndices: []
       }
-    }, [O, n, m, _, b, I]);
+    }, [O, n, A, b, _, I]);
   return {
     data: D,
     loading: O,
     version: E,
     visibleItemIds: v,
-    endVisible: A,
+    endVisible: f,
     isRefreshing: y,
     handleOnRefresh: R,
     stickyHeaderIndices: M,

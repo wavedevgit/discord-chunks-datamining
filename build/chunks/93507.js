@@ -46,51 +46,51 @@ class N extends Chunk972347.A {
     this.interacted || (document.createElement("audio").play(), this.interacted = true), this.eachConnection(e => e.interact())
   }
   static supported() {
-    return !__OVERLAY__ && (I.Hz && null != window.AudioContext && null != window.RTCPeerConnection ? (n(528416), true) : (C.info("WebRTC is not supported on", s().name, s().version), false))
+    return !__OVERLAY__ && (S.Hz && null != window.AudioContext && null != window.RTCPeerConnection ? (n(528416), true) : (C.info("WebRTC is not supported on", s().name, s().version), false))
   }
   supported() {
     returntrue
   }
   supports(e) {
     switch (e) {
-      case S.O5.AUDIO_INPUT_DEVICE:
+      case I.O5.AUDIO_INPUT_DEVICE:
         return g.sq;
-      case S.O5.AUDIO_OUTPUT_DEVICE:
+      case I.O5.AUDIO_OUTPUT_DEVICE:
         return g.gY;
-      case S.O5.VIDEO:
-        return I.g7;
-      case S.O5.DESKTOP_CAPTURE:
+      case I.O5.VIDEO:
+        return S.g7;
+      case I.O5.DESKTOP_CAPTURE:
         var t;
         return (null == (t = navigator.mediaDevices) ? true : t.getDisplayMedia) != null;
-      case S.O5.VOICE_PROCESSING:
+      case I.O5.VOICE_PROCESSING:
         return "Chrome" === s().name;
-      case S.O5.NATIVE_PING:
-      case S.O5.DIAGNOSTICS:
-        return I.fA;
-      case S.O5.DESKTOP_CAPTURE_APPLICATIONS:
-      case S.O5.LOOPBACK:
-      case S.O5.NOISE_SUPPRESSION:
-      case S.O5.AUTOMATIC_GAIN_CONTROL:
+      case I.O5.NATIVE_PING:
+      case I.O5.DIAGNOSTICS:
+        return S.fA;
+      case I.O5.DESKTOP_CAPTURE_APPLICATIONS:
+      case I.O5.LOOPBACK:
+      case I.O5.NOISE_SUPPRESSION:
+      case I.O5.AUTOMATIC_GAIN_CONTROL:
         return "Safari" !== s().name;
-      case S.O5.NOISE_CANCELLATION:
+      case I.O5.NOISE_CANCELLATION:
         return c()();
-      case S.O5.QOS:
-      case S.O5.ATTENUATION:
-      case S.O5.AUTOMATIC_VAD:
-      case S.O5.LEGACY_AUDIO_SUBSYSTEM:
-      case S.O5.EXPERIMENTAL_AUDIO_SUBSYSTEM:
-      case S.O5.AUTOMATIC_AUDIO_SUBSYSTEM:
-      case S.O5.AUDIO_SUBSYSTEM_DEFERRED_SWITCH:
-      case S.O5.DEBUG_LOGGING:
-      case S.O5.VOICE_PANNING:
-      case S.O5.AUTO_ENABLE:
-      case S.O5.DESKTOP_CAPTURE_FORMAT:
-      case S.O5.VIDEO_HOOK:
-      case S.O5.AEC_DUMP:
-      case S.O5.DISABLE_VIDEO:
-      case S.O5.CONNECTION_REPLAY:
-      case S.O5.SIMULCAST:
-      case S.O5.SCREEN_CAPTURE_KIT:
+      case I.O5.QOS:
+      case I.O5.ATTENUATION:
+      case I.O5.AUTOMATIC_VAD:
+      case I.O5.LEGACY_AUDIO_SUBSYSTEM:
+      case I.O5.EXPERIMENTAL_AUDIO_SUBSYSTEM:
+      case I.O5.AUTOMATIC_AUDIO_SUBSYSTEM:
+      case I.O5.AUDIO_SUBSYSTEM_DEFERRED_SWITCH:
+      case I.O5.DEBUG_LOGGING:
+      case I.O5.VOICE_PANNING:
+      case I.O5.AUTO_ENABLE:
+      case I.O5.DESKTOP_CAPTURE_FORMAT:
+      case I.O5.VIDEO_HOOK:
+      case I.O5.AEC_DUMP:
+      case I.O5.DISABLE_VIDEO:
+      case I.O5.CONNECTION_REPLAY:
+      case I.O5.SIMULCAST:
+      case I.O5.SCREEN_CAPTURE_KIT:
       default:
         returnfalse
     }
@@ -114,7 +114,7 @@ class N extends Chunk972347.A {
       dave: this.dave,
       transientKeys: this.transientKeys
     }, u = (0, m.d)(c);
-    return u.streamUserId = o, u.setOutputVolume(this.outputVolume), u.setSinkId(this.sinkId), u.once(d.y.Destroy, e => this.connections.delete(e)), u.on(d.y.Silence, e => this.emit(f.bg.Silence, e)), u.on(d.y.DesktopSourceEnd, this.handleDesktopSourceEnd), u.on(d.y.AudioPermission, this.handleAudioPermission), u.on(d.y.VideoPermission, this.handleVideoPermission), this.interacted && u.interact(), e === S.x.DEFAULT && (u.setAudioSource(this.sourceId), this.enabled && u.input.enableAudioInput()), this.connections.add(u), this.emit(f.bg.Connection, u), u
+    return u.streamUserId = o, u.setOutputVolume(this.outputVolume), u.setSinkId(this.sinkId), u.once(d.y.Destroy, e => this.connections.delete(e)), u.on(d.y.Silence, e => this.emit(f.bg.Silence, e)), u.on(d.y.DesktopSourceEnd, this.handleDesktopSourceEnd), u.on(d.y.AudioPermission, this.handleAudioPermission), u.on(d.y.VideoPermission, this.handleVideoPermission), this.interacted && u.interact(), e === I.x.DEFAULT && (u.setAudioSource(this.sourceId), this.enabled && u.input.enableAudioInput()), this.connections.add(u), this.emit(f.bg.Connection, u), u
   }
   findConnection(e) {
     return Array.from(this.connections).find(t => null == e || t.context === e)
@@ -136,7 +136,7 @@ class N extends Chunk972347.A {
     e.on("permission", this.handleAudioPermission);
     try {
       var t;
-      await e.enable(), "Firefox" === s().name && await this.handleDeviceChange(), this.enabled = true, this.eachConnection(e => e.input.enableAudioInput(), S.x.DEFAULT), null == (t = this.voiceActivityInput) || t.enable()
+      await e.enable(), "Firefox" === s().name && await this.handleDeviceChange(), this.enabled = true, this.eachConnection(e => e.input.enableAudioInput(), I.x.DEFAULT), null == (t = this.voiceActivityInput) || t.enable()
     } finally {
       e.destroy()
     }
@@ -158,7 +158,7 @@ class N extends Chunk972347.A {
   setAudioInputDevice(e) {
     var t, n;
     let r = this.sourceId;
-    this.sourceId = e, this.eachConnection(t => t.setAudioSource(e), S.x.DEFAULT), null == (t = this.voiceActivityInput) || t.setSource(e), null == (n = this.loopback) || n.setAudioSource(e), this.emit(f.bg.SelectedDeviceChange, S.oh.AUDIO_INPUT, r, e)
+    this.sourceId = e, this.eachConnection(t => t.setAudioSource(e), I.x.DEFAULT), null == (t = this.voiceActivityInput) || t.setSource(e), null == (n = this.loopback) || n.setAudioSource(e), this.emit(f.bg.SelectedDeviceChange, I.oh.AUDIO_INPUT, r, e)
   }
   getAudioOutputDevices() {
     return (0, g.tS)()
@@ -166,13 +166,13 @@ class N extends Chunk972347.A {
   setAudioOutputDevice(e) {
     var t;
     let n = this.sinkId;
-    this.sinkId = e, this.connections.forEach(t => t.setSinkId(e)), null == (t = this.loopback) || t.setAudioSink(e), this.emit(f.bg.SelectedDeviceChange, S.oh.AUDIO_OUTPUT, n, e)
+    this.sinkId = e, this.connections.forEach(t => t.setSinkId(e)), null == (t = this.loopback) || t.setAudioSink(e), this.emit(f.bg.SelectedDeviceChange, I.oh.AUDIO_OUTPUT, n, e)
   }
   getVideoInputDevices() {
     return (0, g.DT)()
   }
   setVideoInputDevice(e) {
-    this.videoInputDeviceId = e, this.eachConnection(t => t.setVideoSource(e), S.x.DEFAULT)
+    this.videoInputDeviceId = e, this.eachConnection(t => t.setVideoSource(e), I.x.DEFAULT)
   }
   getVideoInputDeviceId() {
     return this.videoInputDeviceId
@@ -218,7 +218,7 @@ class N extends Chunk972347.A {
   setGoLiveSource(e, t) {
     if (null == e) this.eachConnection(e => e.setDesktopInput(null), t);
     else if (null != e.desktopDescription && null != this.findConnection(t)) {
-      i()(t === S.x.STREAM, "Go live context is not STREAM");
+      i()(t === I.x.STREAM, "Go live context is not STREAM");
       let n = false,
         r = this.desktopInputPool.get(e.desktopDescription.id);
       if (null == r) return;
@@ -236,7 +236,7 @@ class N extends Chunk972347.A {
   queueAudioSubsystem(e) {}
   setOffloadAdmControls(e) {}
   getAudioSubsystem() {
-    return S.rB.STANDARD
+    return I.rB.STANDARD
   }
   getAudioLayer() {
     return ""
@@ -250,7 +250,7 @@ class N extends Chunk972347.A {
   }
   setAudioInputBypassSystemProcessing(e) {}
   setLoopback(e, t) {
-    e && null == this.loopback ? (this.enable(), this.loopback = new y.A(this.getAudioContext(), this.sourceId, this.sinkId), this.loopback.setNoiseCancellation(t.noiseCancellation)) : e || null == this.loopback || (this.loopback.stop(), this.loopback = null)
+    e && null == this.loopback ? (this.enable(), this.loopback = new b.A(this.getAudioContext(), this.sourceId, this.sinkId), this.loopback.setNoiseCancellation(t.noiseCancellation)) : e || null == this.loopback || (this.loopback.stop(), this.loopback = null)
   }
   getLoopback() {
     return null != this.loopback
@@ -304,16 +304,16 @@ class N extends Chunk972347.A {
   }
   showSystemCaptureConfigurationUI(e) {}
   fetchAsyncResources(e) {
-    return e.fetchDave ? (0, b.o7)() ? (0, b.Hv)() ? new Promise((e, t) => {
-      (0, b.zs)().then(t => {
-        this.dave = t, this.transientKeys = (0, b.Lc)(), this.maxSupportedProtocolVersion = t.MaxSupportedProtocolVersion(), C.info("Successfully initialized DAVE, version:", this.maxSupportedProtocolVersion), e()
+    return e.fetchDave ? (0, y.o7)() ? (0, y.Hv)() ? new Promise((e, t) => {
+      (0, y.zs)().then(t => {
+        this.dave = t, this.transientKeys = (0, y.Lc)(), this.maxSupportedProtocolVersion = t.MaxSupportedProtocolVersion(), C.info("Successfully initialized DAVE, version:", this.maxSupportedProtocolVersion), e()
       }).catch(e => {
         this.maxSupportedProtocolVersion = 0, C.error("Failed to initialize DAVE", e), t(e)
       })
     }) : (this.maxSupportedProtocolVersion = 0, Promise.reject(Error("WebAssembly is not supported on this platform."))) : (this.maxSupportedProtocolVersion = 0, Promise.reject(Error("Encoded transforms are not supported on this platform."))) : (this.maxSupportedProtocolVersion = 0, Promise.resolve())
   }
   constructor() {
-    super(), T(this, "Video", v.A), T(this, "Camera", A.A), T(this, "_audioContext", null), T(this, "outputVolume", S.Hz), T(this, "sourceId", S.dx), T(this, "sinkId", S.dx), T(this, "videoInputDeviceId", S.qe), T(this, "enabled", false), T(this, "connections", new Set), T(this, "interacted", false), T(this, "loopback", null), T(this, "voiceActivityInput", null), T(this, "desktopInputPool", new O.A), T(this, "enablePromise", null), T(this, "dave", null), T(this, "transientKeys", null), T(this, "maxSupportedProtocolVersion", null), T(this, "handleActiveSinksChange", (e, t) => {
+    super(), T(this, "Video", A.A), T(this, "Camera", v.A), T(this, "_audioContext", null), T(this, "outputVolume", I.Hz), T(this, "sourceId", I.dx), T(this, "sinkId", I.dx), T(this, "videoInputDeviceId", I.qe), T(this, "enabled", false), T(this, "connections", new Set), T(this, "interacted", false), T(this, "loopback", null), T(this, "voiceActivityInput", null), T(this, "desktopInputPool", new O.A), T(this, "enablePromise", null), T(this, "dave", null), T(this, "transientKeys", null), T(this, "maxSupportedProtocolVersion", null), T(this, "handleActiveSinksChange", (e, t) => {
       this.connections.forEach(n => n.setHasActiveVideoOutputSink(e, t, "MediaEngineWebRTC.handleActiveSinksChange"))
     }), T(this, "handleNewListener", e => {
       switch (e) {

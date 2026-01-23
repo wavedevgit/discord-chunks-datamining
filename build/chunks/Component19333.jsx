@@ -60,41 +60,41 @@ function v(e) {
     className: n,
     buttonRef: l,
     additionalMenuItems: a
-  } = e, s = (0, g.L)(t), o = (0, f.GV)();
-  return (0, r.jsx)(w, {
+  } = e, o = (0, m.L)(t), s = (0, f.GV)();
+  return (0, r.jsx)(A, {
     targetRef: l,
     widget: t,
     additionalMenuItems: a,
-    children: e => (0, r.jsx)(A, {
+    children: e => (0, r.jsx)(_, {
       children: (0, r.jsxs)(c.DUT, h(x({
         innerRef: l,
         className: i()(j.x6, n),
-        "data-dnd-name": s,
+        "data-dnd-name": o,
         "aria-label": O.intl.formatToPlainString(O.t.HWNJJN, {
-          widgetTitle: s
+          widgetTitle: o
         }),
-        "aria-describedby": o,
+        "aria-describedby": s,
         "aria-keyshortcuts": "Control+D, Meta+D"
       }, e), {
         children: [(0, r.jsx)(c.WP0, {
           size: "sm"
         }), (0, r.jsx)(c.AC4, {
-          id: o,
+          id: s,
           children: O.intl.string(O.t.bsuqFn)
         })]
       }))
     })
   })
 }
-let A = e => {
+let _ = e => {
     let {
       children: t
-    } = e, n = (0, s.bG)([d.A], () => d.A.keyboardModeEnabled), {
+    } = e, n = (0, o.bG)([d.A], () => d.A.keyboardModeEnabled), {
       isDragging: l
     } = (0, a.V)(e => ({
       isDragging: e.isDragging()
     }));
-    return (0, r.jsx)(o.m_, {
+    return (0, r.jsx)(s.m_, {
       __unsupportedReactNodeAsText: (0, r.jsxs)("div", {
         className: j.HE,
         children: [(0, r.jsx)(c.Text, {
@@ -121,19 +121,19 @@ let A = e => {
       children: t
     })
   },
-  w = e => {
+  A = e => {
     let {
       children: t,
       widget: l,
       targetRef: i,
       additionalMenuItems: a
     } = e, {
-      trackUserProfileEditAction: s
-    } = (0, b.NJ)(), o = e => {
+      trackUserProfileEditAction: o
+    } = (0, g.NJ)(), s = e => {
       if (e.shiftKey) {
-        (0, g.qA)(l), s(x({
+        (0, m.qA)(l), o(x({
           action: "WIDGET_REMOVED"
-        }, l.getProfileEditAnalyticsOptions())), (0, m.XA)(y.jM.WIDGET_REMOVED);
+        }, l.getProfileEditAnalyticsOptions())), (0, b.XA)(y.jM.WIDGET_REMOVED);
         return
       }(0, c.mMO)(async () => {
         let {
@@ -142,7 +142,7 @@ let A = e => {
         return t => (0, r.jsx)(e, h(x({}, t), {
           userId: p.default.getId(),
           widget: l,
-          trackUserProfileEditAction: s
+          trackUserProfileEditAction: o
         }))
       }, {
         stackingBehavior: "stack"
@@ -169,7 +169,7 @@ let A = e => {
             children: [a, (0, r.jsx)(c.Drp, {
               id: "remove-widget",
               label: O.intl.string(O.t.Mm07Yc),
-              action: o,
+              action: s,
               color: "danger",
               icon: c.ucK
             })]

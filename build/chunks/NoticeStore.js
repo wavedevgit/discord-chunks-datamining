@@ -238,7 +238,7 @@ let e$ = {
     }
   },
   [Chunk652215.kqX.GUILD_RAID_NOTIFICATION]: {
-    predicate: () => (0, I.dj)().show && !eZ(eT.kqX.GUILD_RAID_NOTIFICATION),
+    predicate: () => (0, S.dj)().show && !eZ(eT.kqX.GUILD_RAID_NOTIFICATION),
     metadata: () => ({
       dismissUntil: a()().add(3, "hours").toDate()
     })
@@ -293,10 +293,10 @@ let e$ = {
     predicate: () => null != eo.A.getLastSessionVoiceChannelId()
   },
   [Chunk652215.kqX.NO_INPUT_DETECTED]: {
-    predicate: () => y.A.hasActiveErrorOfType(b.iy.NO_AUDIO_INPUT_DETECTED)
+    predicate: () => b.A.hasActiveErrorOfType(y.iy.NO_AUDIO_INPUT_DETECTED)
   },
   [Chunk652215.kqX.NO_INPUT_DEVICES_DETECTED]: {
-    predicate: () => y.A.hasActiveErrorOfType(b.iy.NO_INPUT_DEVICES)
+    predicate: () => b.A.hasActiveErrorOfType(y.iy.NO_INPUT_DEVICES)
   },
   [Chunk652215.kqX.HARDWARE_MUTE]: {
     predicate: () => eo.A.isConnected() && er.A.isHardwareMute() && er.A.isEnableHardwareMuteNotice(),
@@ -316,14 +316,14 @@ let e$ = {
     }).showPTTNoKeybindWarning
   },
   [Chunk652215.kqX.DISPATCH_ERROR]: {
-    predicate: () => null != ev.A.getLastError(),
+    predicate: () => null != eA.A.getLastError(),
     metadata: () => ({
-      error: ev.A.getLastError()
+      error: eA.A.getLastError()
     })
   },
   [Chunk652215.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS]: {
-    predicate: () => null != eS.A.getLastProgress(),
-    metadata: () => eS.A.getLastProgress()
+    predicate: () => null != eI.A.getLastProgress(),
+    metadata: () => eI.A.getLastProgress()
   },
   [Chunk652215.kqX.SPOTIFY_AUTO_PAUSED]: {
     predicate: () => B.A.wasAutoPaused()
@@ -355,7 +355,7 @@ let e$ = {
     predicate: () => (0, j.So)()
   },
   [Chunk652215.kqX.CORRUPT_INSTALLATION]: {
-    predicate: () => eO.isPlatformEmbedded && (!l.A.supported() || eI.A.isCorruptInstallation())
+    predicate: () => eO.isPlatformEmbedded && (!l.A.supported() || eS.A.isCorruptInstallation())
   },
   [Chunk652215.kqX.VIDEO_UNSUPPORTED_BROWSER]: {
     predicate: e => {
@@ -370,7 +370,7 @@ let e$ = {
       let {
         currentUser: t
       } = e;
-      return eA.Ay.canRedeemPremiumPerks(t) && ee.A.getDetectedOffPlatformPremiumPerks().length > 0
+      return ev.Ay.canRedeemPremiumPerks(t) && ee.A.getDetectedOffPlatformPremiumPerks().length > 0
     },
     metadata: () => ee.A.getDetectedOffPlatformPremiumPerks()[0]
   },
@@ -416,7 +416,7 @@ let e$ = {
     }
   },
   [Chunk652215.kqX.CONNECT_SPOTIFY]: {
-    predicate: () => !B.A.hasConnectedAccount() && A.Ay.isObservedAppRunning(p.A.get(eT.fg2.SPOTIFY).name) && !eZ(eT.kqX.CONNECT_SPOTIFY)
+    predicate: () => !B.A.hasConnectedAccount() && v.Ay.isObservedAppRunning(p.A.get(eT.fg2.SPOTIFY).name) && !eZ(eT.kqX.CONNECT_SPOTIFY)
   },
   [Chunk652215.kqX.WIN32_DEPRECATED_MESSAGE]: {
     predicate: () => (null === f.A || true === f.A ? true : f.A.os.arch) === "ia32" && (null === f.A || true === f.A ? true : f.A.process.platform) === "win32",
@@ -471,17 +471,17 @@ let e$ = {
       let {
         premiumSubscription: t,
         currentUser: n
-      } = e, r = null != t ? a()(t.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = (null == t ? true : t.canceledAt) != null && (null == t ? true : t.status) === eT.Dmq.CANCELED && 1 >= a()().diff(a()(t.canceledAt), "days"), s = null != t && a()(t.currentPeriodEnd).isBefore(a()()), o = null != t && t.status === eT.Dmq.CANCELED && !s && r <= 7 && r >= 0 && (0, eA.YE)(n, eC.PremiumTypes.TIER_2) && !i && !n.hasFreePremium() && !t.isPurchasedExternally;
+      } = e, r = null != t ? a()(t.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = (null == t ? true : t.canceledAt) != null && (null == t ? true : t.status) === eT.Dmq.CANCELED && 1 >= a()().diff(a()(t.canceledAt), "days"), s = null != t && a()(t.currentPeriodEnd).isBefore(a()()), o = null != t && t.status === eT.Dmq.CANCELED && !s && r <= 7 && r >= 0 && (0, ev.YE)(n, eC.PremiumTypes.TIER_2) && !i && !n.hasFreePremium() && !t.isPurchasedExternally;
       return !eZ(eT.kqX.PREMIUM_UNCANCEL) && o
     },
     metadata: e => {
       var t;
       let {
         premiumSubscription: n
-      } = e, r = null != n ? a()(n.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = null != n ? null == (t = (0, eA.EL)(n)) ? true : t.planId : null;
+      } = e, r = null != n ? a()(n.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = null != n ? null == (t = (0, ev.EL)(n)) ? true : t.planId : null;
       return {
         daysLeft: r,
-        premiumType: null != i ? eA.Ay.getPremiumType(i) : null,
+        premiumType: null != i ? ev.Ay.getPremiumType(i) : null,
         premiumSubscription: n
       }
     }
@@ -491,7 +491,7 @@ let e$ = {
       let {
         premiumSubscription: t,
         currentUser: n
-      } = e, r = null != t ? a()(t.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = (null != t ? a()(t.currentPeriodEnd).diff(a()(t.currentPeriodStart).startOf("day"), "days") : 0) > 14 ? 7 : 2, s = null != t && a()(t.currentPeriodEnd).isBefore(a()()), o = eb.A.applicationIdsFetched.has(eC.tv), l = eb.A.getForApplication(eC.tv), c = null != t ? (0, eA.EL)(t) : null, u = null != c ? eA.Ay.getSkuIdForPlan(c.planId) : null, d = null != l && null != c && Array.from(l).filter(e => {
+      } = e, r = null != t ? a()(t.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = (null != t ? a()(t.currentPeriodEnd).diff(a()(t.currentPeriodStart).startOf("day"), "days") : 0) > 14 ? 7 : 2, s = null != t && a()(t.currentPeriodEnd).isBefore(a()()), o = ey.A.applicationIdsFetched.has(eC.tv), l = ey.A.getForApplication(eC.tv), c = null != t ? (0, ev.EL)(t) : null, u = null != c ? ev.Ay.getSkuIdForPlan(c.planId) : null, d = null != l && null != c && Array.from(l).filter(e => {
         let {
           skuId: t,
           consumed: n
@@ -504,10 +504,10 @@ let e$ = {
       var t;
       let {
         premiumSubscription: n
-      } = e, r = null != n ? a()(n.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = null != n ? null == (t = (0, eA.EL)(n)) ? true : t.planId : null;
+      } = e, r = null != n ? a()(n.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = null != n ? null == (t = (0, ev.EL)(n)) ? true : t.planId : null;
       return {
         daysLeft: r,
-        premiumType: null != i ? eA.Ay.getPremiumType(i) : null,
+        premiumType: null != i ? ev.Ay.getPremiumType(i) : null,
         premiumSubscription: n
       }
     }
@@ -547,10 +547,10 @@ let e$ = {
     }
   },
   [Chunk652215.kqX.APPLICATION_TEST_MODE]: {
-    predicate: () => null != ey.A.testModeApplicationId,
+    predicate: () => null != eb.A.testModeApplicationId,
     metadata: () => {
-      if (null == ey.A.testModeApplicationId) return {};
-      let e = ey.A.testModeApplicationId,
+      if (null == eb.A.testModeApplicationId) return {};
+      let e = eb.A.testModeApplicationId,
         t = _.A.getApplication(e);
       return {
         applicationName: null != t ? t.name : e,
@@ -578,7 +578,7 @@ let e$ = {
         dismissUntil: a()().toDate()
       } : {
         daysPastDue: t.status === eT.Dmq.PAST_DUE ? a()().diff(t.currentPeriodStart, "days") : 0,
-        dismissUntil: (0, eA.ji)(t).expiresDate.toDate()
+        dismissUntil: (0, ev.ji)(t).expiresDate.toDate()
       }
     }
   },
@@ -620,14 +620,14 @@ let e$ = {
     predicate: () => {
       let e = q.A.getCurrentUserActiveStream();
       if (null == e) returnfalse;
-      let t = (0, S._z)(e),
+      let t = (0, I._z)(e),
         n = G.A.getStreamHeartbeatFailure(t);
       return null != n && Date.now() - n.firstFailedAt >= eN.tZ
     },
     metadata: () => {
       let e = q.A.getCurrentUserActiveStream();
       return {
-        streamKey: null != e ? (0, S._z)(e) : null
+        streamKey: null != e ? (0, I._z)(e) : null
       }
     }
   },
@@ -637,7 +637,7 @@ let e$ = {
       let {
         currentUser: n
       } = e, r = null != (t = em.A.paymentSources) ? t : {};
-      return D.A.getIsTargeted() && !(0, eA.TW)(n) && 0 !== Object.keys(r).length
+      return D.A.getIsTargeted() && !(0, ev.TW)(n) && 0 !== Object.keys(r).length
     }
   },
   [Chunk652215.kqX.BLOCK_USER_FEEDBACK_NAGBAR]: {
@@ -658,8 +658,8 @@ let e$ = {
       let {
         voiceChannelId: t
       } = e;
-      if (eZ(eT.kqX.SYSTEM_SERVICE_WARNING) || !(0, Y.yA)(A.Ay) || null == t || er.A.getMode() !== eT.TBI.PUSH_TO_TALK) returnfalse;
-      let n = A.Ay.getVisibleGame();
+      if (eZ(eT.kqX.SYSTEM_SERVICE_WARNING) || !(0, Y.yA)(v.Ay) || null == t || er.A.getMode() !== eT.TBI.PUSH_TO_TALK) returnfalse;
+      let n = v.Ay.getVisibleGame();
       return null != n && !!n.elevated
     }
   }
@@ -667,7 +667,7 @@ let e$ = {
 
 function eJ() {
   var e, t, n;
-  if (!v.A.isConnected()) returnfalse;
+  if (!A.A.isConnected()) returnfalse;
   eY = null;
   let r = e_.default.getCurrentUser();
   if (null == r) returnfalse;
@@ -756,7 +756,7 @@ function te() {
 }
 class tt extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.syncWith([ef.Ay, es.A, ee.A, ec.A, M.A, eE.A, Z.default, J.A, W.A, T.A, G.A, q.A, A.Ay, z.A], eJ), this.waitFor(y.A, _.A, q.A, X.default, Z.default, Q.A, $.A, D.A, J.A, m.A, ee.A, ev.A, eS.A, eI.A, eb.A, O.A, v.A, N.A, T.A, et.Ay, en.A, R.A, w.A, er.A, ei.A, em.A, ea.A, es.A, M.A, U.A, G.A, eo.A, A.Ay, el.A, ec.A, B.A, eu.A, ed.A, x.A, eg.A, ef.Ay, ey.A, eE.A, ep.A, W.A, e_.default, eh.A, z.A)
+    this.syncWith([ef.Ay, es.A, ee.A, ec.A, M.A, eE.A, Z.default, J.A, W.A, T.A, G.A, q.A, v.Ay, z.A], eJ), this.waitFor(b.A, _.A, q.A, X.default, Z.default, Q.A, $.A, D.A, J.A, m.A, ee.A, eA.A, eI.A, eS.A, ey.A, O.A, A.A, N.A, T.A, et.Ay, en.A, R.A, w.A, er.A, ei.A, em.A, ea.A, es.A, M.A, U.A, G.A, eo.A, v.Ay, el.A, ec.A, B.A, eu.A, ed.A, x.A, eg.A, ef.Ay, eb.A, eE.A, ep.A, W.A, e_.default, eh.A, z.A)
   }
   hasNotice() {
     return null != eY && null != eY.type

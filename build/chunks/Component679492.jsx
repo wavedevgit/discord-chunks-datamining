@@ -37,7 +37,7 @@ function d() {
       interactionSource: null,
       interactionSourceId: null
     })
-  }, [d]), [_, h] = i.useState(false), [m, g] = i.useState(null), [E] = i.useState(new o.Ep), b = i.useCallback(e => {
+  }, [d]), [_, h] = i.useState(false), [m, g] = i.useState(null), [E] = i.useState(new o.Ep), y = i.useCallback(e => {
     g(e), h(true), null === e ? E.stop() : E.start(l.ME, () => h(false))
   }, [E]);
   return i.useEffect(() => {
@@ -47,13 +47,13 @@ function d() {
     interactionSource: n,
     interactionSourceId: a,
     onInteraction: d,
-    setInteractionToast: b,
+    setInteractionToast: y,
     resetInteraction: p,
     showInteractionToast: _,
     interactionTypeSent: m,
     interactionPopoutTargetRef: c,
     onInteractionPopoutTargetRefChange: f
-  }), [d, b, n, a, _, e, m, p, c, f])
+  }), [d, y, n, a, _, e, m, p, c, f])
 }
 
 function f() {

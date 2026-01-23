@@ -105,7 +105,7 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     applicationId: t,
     guildId: n,
@@ -119,7 +119,7 @@ function b(e) {
     [i]: 3
   })
 }
-class y extends(r = Chunk311907.Ay.Store) {
+class b extends(r = Chunk311907.Ay.Store) {
   getSimilarApplications(e) {
     let {
       applicationId: t,
@@ -147,9 +147,9 @@ class y extends(r = Chunk311907.Ay.Store) {
     })]
   }
 }
-l(y, "displayName", "ApplicationDirectorySimilarApplicationsStore");
-let O = new y(Chunk73153.h, {
+l(b, "displayName", "ApplicationDirectorySimilarApplicationsStore");
+let O = new b(Chunk73153.h, {
   APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS: g,
   APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_SUCCESS: E,
-  APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_FAILURE: b
+  APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_FAILURE: y
 })

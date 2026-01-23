@@ -118,7 +118,7 @@ function Y(e) {
       t({
         tab: r.APPS,
         applicationId: o,
-        section: (0, y.A)(i, R.type === m.I.APP_DIRECTORY_PROFILE ? i.ABOUT : i.STORE),
+        section: (0, b.A)(i, R.type === m.I.APP_DIRECTORY_PROFILE ? i.ABOUT : i.STORE),
         skuId: l
       })
     })), true
@@ -132,10 +132,10 @@ function Y(e) {
     } = R, a = _.A.getApplication(r), f = new URL(i), p = null != (t = f.searchParams.get("referrer_id")) ? t : true, m = (0, d.A)(), {
       currentChannelId: g,
       instanceId: E,
-      isCurrentlyInInstance: b,
-      canLaunchInChannel: y
+      isCurrentlyInInstance: y,
+      canLaunchInChannel: b
     } = (0, h.t)(r);
-    if (y) return !b && null != g && ((0, u.d9)(r, f.searchParams.get("link_id"), f.searchParams.get("custom_id")).then(async e => {
+    if (b) return !y && null != g && ((0, u.d9)(r, f.searchParams.get("link_id"), f.searchParams.get("custom_id")).then(async e => {
       let {
         customId: t
       } = e;
@@ -190,7 +190,7 @@ function Y(e) {
       })
     }), true
   };
-  if (null != R && R.type === m.I.QUESTS_EMBED && (0, v.s)({
+  if (null != R && R.type === m.I.QUESTS_EMBED && (0, A.s)({
       location: V.rE.EMBED_MOBILE
     }) && !(0, M.I)()) return e => {
     var t, r, a;
@@ -253,7 +253,7 @@ function Y(e) {
       navigationReplace: false,
       openChannel: true
     };
-    return null != F && (e.search = F), null != Y && (e.hash = Y), t => (null == t || t.preventDefault(), (0, A.A)(L, e), true)
+    return null != F && (e.search = F), null != Y && (e.hash = Y), t => (null == t || t.preventDefault(), (0, v.A)(L, e), true)
   }
   if (null != L && W) {
     let {
@@ -268,8 +268,8 @@ function Y(e) {
   if (null != L && W && null != K) return e => {
     null == e || e.preventDefault();
     let t = x.A.getGuildId();
-    null != K.guildId && "" !== K.guildId && K.guildId !== t && (0, A.A)(G.BVt.CHANNEL(K.guildId));
-    let n = b.Ay.getGuildScheduledEvent(K.guildEventId);
+    null != K.guildId && "" !== K.guildId && K.guildId !== t && (0, v.A)(G.BVt.CHANNEL(K.guildId));
+    let n = y.Ay.getGuildScheduledEvent(K.guildEventId);
     return null != n && (0, E.uR)({
       eventId: n.id
     }), true
@@ -297,10 +297,10 @@ function Y(e) {
     } = e(L);
     return e => (null == e || e.preventDefault(), t(r, i), true)
   }
-  return W && (null == L ? true : L.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, I.navigateToQuestHome)({
+  return W && (null == L ? true : L.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, S.navigateToQuestHome)({
     fromContent: i.u.QUEST_BADGE
   }), true) : W && (null == L ? true : L.startsWith("/quest-home")) ? e => (null == e || e.preventDefault(), (0, T.pX)(G.BVt.QUEST_HOME_V2 + (null != F ? F : "")), true) : W && (null == L ? true : L.startsWith("/quest-preview")) ? e => {
-    if (null == e || e.preventDefault(), (0, S.U)({
+    if (null == e || e.preventDefault(), (0, I.U)({
         location: V.rE.NAVIGATE_TO_QUEST_HOME_UTIL
       })) return (0, T.pX)(G.BVt.QUEST_HOME_V2 + "?tab=preview_tool&quest_id=".concat(L.split("/").at(false))), true
   } : W && (null == L ? true : L.startsWith("/discovery/servers")) ? e => (null == e || e.preventDefault(), Promise.resolve().then(n.bind(n, 837057)).then(e => {

@@ -31,7 +31,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,18 +55,18 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = "GameStoreReportedGames",
+let S = "GameStoreReportedGames",
   T = 0x80000000,
   C = Chunk927813.A.Millis.DAY,
   N = new Chunk194862.A,
   R = {},
   w = {},
-  P = null != (i = Chunk506774.w.get(I)) ? i : {},
+  P = null != (i = Chunk506774.w.get(S)) ? i : {},
   D = "",
   x = null,
   L = false,
@@ -197,7 +197,7 @@ class $ extends(a = Chunk311907.Ay.PersistedStore) {
   getOfficialGame(e) {
     let t;
     if (null == e) return null;
-    if (e.type === y.S7.GAME) t = e.id;
+    if (e.type === b.S7.GAME) t = e.id;
     else {
       var n, r;
       t = null == (r = e.linkedGames) || null == (n = r.find(e => e.type === c.Mh.OFFICIAL)) ? true : n.id
@@ -274,7 +274,7 @@ class $ extends(a = Chunk311907.Ay.PersistedStore) {
     let a = null != (r = e.exePath.split(/[/\\]/).pop()) ? r : "unknown",
       s = V.get(a),
       o = Date.now();
-    (null == s || o - s >= F) && (V.set(a, o), h.default.track(b.HAw.GAME_BLOCKLIST_TRIGGERED, {
+    (null == s || o - s >= F) && (V.set(a, o), h.default.track(y.HAw.GAME_BLOCKLIST_TRIGGERED, {
       block_type: t,
       matched_entry: n,
       game_name: null != (i = e.gameName) ? i : e.origGameName,
@@ -288,7 +288,7 @@ class $ extends(a = Chunk311907.Ay.PersistedStore) {
     return p.tz.getSetting() && !r && !(t || n)
   }
   markGameReported(e) {
-    P[e] = true, o.w.set(I, P)
+    P[e] = true, o.w.set(S, P)
   }
 }
 O($, "displayName", "GameStore"), O($, "persistKey", "GameStore"), O($, "migrations", [e => {
@@ -308,7 +308,7 @@ O($, "displayName", "GameStore"), O($, "persistKey", "GameStore"), O($, "migrati
   detectableGames: []
 }), e => {
   var t, n, r;
-  return S(A({}, e), {
+  return I(v({}, e), {
     blocklistEtag: null != (t = e.blocklistEtag) ? t : "",
     blocklistExecutables: null != (n = e.blocklistExecutables) ? n : [],
     blocklistPatterns: null != (r = e.blocklistPatterns) ? r : []

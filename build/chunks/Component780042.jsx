@@ -20,19 +20,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk49999 = require("./49999.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk500320 = require("./500320.js");
-let b = {
+let y = {
     tension: 750,
     mass: 2.5,
     friction: 70
   },
-  y = 20;
+  b = 20;
 
 function O(e) {
   let {
     checked: t,
     onClick: n,
     id: a = "burst-reaction-toggle-button"
-  } = e, O = (0, l.bG)([f.A], () => f.A.useReducedMotion), A = _.default.getCurrentUser(), v = null == A || (0, h.TW)(A) ? [c.M.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [S, I] = (0, p.kn)(v), [T, C] = i.useState(false), [N, R] = (0, d.zhh)(() => ({})), w = (0, o.animated)(d.it9);
+  } = e, O = (0, l.bG)([f.A], () => f.A.useReducedMotion), v = _.default.getCurrentUser(), A = null == v || (0, h.TW)(v) ? [c.M.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [I, S] = (0, p.kn)(A), [T, C] = i.useState(false), [N, R] = (0, d.zhh)(() => ({})), w = (0, o.animated)(d.it9);
 
   function P() {
     R({
@@ -42,13 +42,13 @@ function O(e) {
       to: {
         rotate: t ? "0deg" : "360deg"
       },
-      config: b
+      config: y
     }), null == n || n(), C(false)
   }
   i.useEffect(() => {
-    let e = S === c.M.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP;
-    e && (I(m.i.DISMISS), setTimeout(() => C(e), 200))
-  }, [S, I]);
+    let e = I === c.M.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP;
+    e && (S(m.i.DISMISS), setTimeout(() => C(e), 200))
+  }, [I, S]);
   let D = T ? g.intl.string(g.t["Osi/uy"]) : t ? g.intl.string(g.t["5cRA/b"]) : g.intl.string(g.t.buV4av),
     x = T ? g.intl.string(g.t.ORK94p) : true;
   return (0, r.jsx)(u.u, {
@@ -77,8 +77,8 @@ function O(e) {
         children: [(0, r.jsx)(w, {
           style: O ? true : N,
           size: "custom",
-          width: y,
-          height: y,
+          width: b,
+          height: b,
           color: t ? "white" : "currentColor",
           className: E.Kk
         }), (0, r.jsx)("span", {

@@ -2,7 +2,7 @@
 /** chunk id: 367232, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,7 +24,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk794998 = require("./794998.js");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,46 +33,46 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e) {
+function I(e) {
   let t = (0, m.jc)(),
     n = null == t ? true : t.channelId,
-    A = d.A.getChannel(n),
-    S = p.A.getGuild(null == A ? true : A.getGuildId()),
-    I = (0, c.A)(null == S ? true : S.id, E.S$),
+    v = d.A.getChannel(n),
+    I = p.A.getGuild(null == v ? true : v.getGuildId()),
+    S = (0, c.A)(null == I ? true : I.id, E.S$),
     T = t => (0, E.YV)(e.type, t, n),
     C = (e, t) => {
-      let n = t === b.p6.PILL_ICON_SIZE;
+      let n = t === y.p6.PILL_ICON_SIZE;
       if ((null == e ? true : e.type) === g.iw.USER) {
         let i = h.default.getUser(e.value);
         if (null == i) return;
         return (0, r.jsx)(a.euF, {
           size: n ? a._3J.SIZE_16 : a._3J.SIZE_24,
-          src: i.getAvatarURL(null == S ? true : S.id, t),
+          src: i.getAvatarURL(null == I ? true : I.id, t),
           status: n ? null : _.A.getStatus(i.id),
           "aria-hidden": true
         })
       }
       if ((null == e ? true : e.type) === g.iw.ROLE) {
         var i;
-        let n = null != S ? f.A.getRole(S.id, e.value) : true;
-        if (null == n || null == S) return;
-        let s = (0, o.fm)(S, n) ? (0, l.ox)(n, t) : null;
-        return null != s ? (0, r.jsx)(u.A, v({}, s)) : (0, r.jsx)(a.iTF, {
+        let n = null != I ? f.A.getRole(I.id, e.value) : true;
+        if (null == n || null == I) return;
+        let s = (0, o.fm)(I, n) ? (0, l.ox)(n, t) : null;
+        return null != s ? (0, r.jsx)(u.A, A({}, s)) : (0, r.jsx)(a.iTF, {
           size: "custom",
-          color: null != (i = n.colorString) ? i : y.TpD,
+          color: null != (i = n.colorString) ? i : b.TpD,
           height: t,
           width: t
         })
@@ -91,8 +91,8 @@ function S(e) {
           forceUsername: true
         }))
       } else if (e.type === g.iw.ROLE) {
-        let n = null != S ? f.A.getRole(S.id, e.value) : true,
-          i = null == n ? null : null == I ? true : I[n.id];
+        let n = null != I ? f.A.getRole(I.id, e.value) : true,
+          i = null == n ? null : null == S ? true : S[n.id];
         null != i && (t = (0, r.jsxs)("div", {
           className: O.Ly,
           children: [(0, r.jsx)(a.nys, {
@@ -113,8 +113,8 @@ function S(e) {
         }), t]
       })
     },
-    R = i.useMemo(() => (0, E.iA)(e.defaultValues, null == S ? true : S.id), [e.defaultValues, S]);
-  return (0, r.jsx)(b.Ay, {
+    R = i.useMemo(() => (0, E.iA)(e.defaultValues, null == I ? true : I.id), [e.defaultValues, I]);
+  return (0, r.jsx)(y.Ay, {
     selectActionComponent: e,
     queryOptions: T,
     renderIcon: C,

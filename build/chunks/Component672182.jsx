@@ -20,8 +20,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk905208 = require("./905208.js");
 let E = (0, Chunk240248.xI)(Chunk319060.A.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BAR_GRAPHIC_PRIMARY_DIMENSIONS),
-  b = (0, Chunk240248.xI)(Chunk319060.A.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BAR_GRAPHIC_SECONDARY_DIMENSIONS),
-  y = e => {
+  y = (0, Chunk240248.xI)(Chunk319060.A.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BAR_GRAPHIC_SECONDARY_DIMENSIONS),
+  b = e => {
     let t = null,
       n = null;
     if (!(0, _.FD)(e) && !(0, _.Xw)(e) || (0, _.Xw)(e)) {
@@ -36,7 +36,7 @@ let E = (0, Chunk240248.xI)(Chunk319060.A.EXPRESSION_PICKER_CONSTANTS_EXPRESSION
       null != i && (t = m.intl.format(m.t.cZOkbs, {
         source: i.name
       }), n = (0, r.jsx)(h.A, {
-        size: b,
+        size: y,
         sticker: (0, _.Id)(i),
         disableAnimation: true
       }))
@@ -64,7 +64,7 @@ let E = (0, Chunk240248.xI)(Chunk319060.A.EXPRESSION_PICKER_CONSTANTS_EXPRESSION
     let {
       graphic: o,
       title: u
-    } = y(a), d = (0, _.FD)(a) || (0, _.Xw)(a) ? (0, r.jsx)(h.A, {
+    } = b(a), d = (0, _.FD)(a) || (0, _.Xw)(a) ? (0, r.jsx)(h.A, {
       isInteracting: true,
       size: E,
       sticker: a,

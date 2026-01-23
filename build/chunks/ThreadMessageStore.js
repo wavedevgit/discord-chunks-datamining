@@ -40,7 +40,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,24 +51,24 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let O = new Set,
-  A = {},
-  v = {};
+  v = {},
+  A = {};
 
-function S(e) {
-  A = a().omitBy(A, t => {
+function I(e) {
+  v = a().omitBy(v, t => {
     let n = t.guildId === e;
-    return n && delete v[t.parentId], n
+    return n && delete A[t.parentId], n
   })
 }
 
-function I(e) {
-  A = a().omitBy(A, t => t.parentId === e), delete v[e]
+function S(e) {
+  v = a().omitBy(v, t => t.parentId === e), delete A[e]
 }
 
 function T(e, t) {
@@ -77,8 +77,8 @@ function T(e, t) {
 
 function C(e, t) {
   var n;
-  let r = (null != (n = v[e.parentId]) ? n : 0) + 1;
-  v[e.parentId] = r, t(e)
+  let r = (null != (n = A[e.parentId]) ? n : 0) + 1;
+  A[e.parentId] = r, t(e)
 }
 
 function N(e) {
@@ -87,9 +87,9 @@ function N(e) {
 }
 
 function R(e) {
-  if (!(e.id in A)) {
+  if (!(e.id in v)) {
     var t;
-    A[e.id] = {
+    v[e.id] = {
       guildId: e.guild_id,
       parentId: e.parent_id,
       count: null != (t = e.messageCount) ? t : 0,
@@ -97,7 +97,7 @@ function R(e) {
       mostRecentMessage: null
     }
   }
-  return A[e.id]
+  return v[e.id]
 }
 
 function w(e) {
@@ -118,7 +118,7 @@ function P(e) {
 }
 
 function D(e) {
-  if (null != e && !(e.id in A)) {
+  if (null != e && !(e.id in v)) {
     let t = f.A.getChannel(e.id);
     if (null != t) return P(t), true
   }
@@ -126,16 +126,16 @@ function D(e) {
 }
 
 function x(e) {
-  v = {}, O.clear(), e.guilds.forEach(N)
+  A = {}, O.clear(), e.guilds.forEach(N)
 }
 
 function L(e) {
   let {
     threadMessages: t
   } = e;
-  for (let e in A = E({}, t)) {
+  for (let e in v = E({}, t)) {
     let n = t[e].mostRecentMessage;
-    null != n && (t[e].mostRecentMessage = new u.Ay(y(E({}, n), {
+    null != n && (t[e].mostRecentMessage = new u.Ay(b(E({}, n), {
       author: new d.A(n.author)
     })))
   }
@@ -152,7 +152,7 @@ function M(e) {
   let {
     guild: t
   } = e;
-  S(t.id)
+  I(t.id)
 }
 
 function k(e) {
@@ -203,14 +203,14 @@ function F(e) {
   let {
     channel: t
   } = e;
-  I(t.id)
+  S(t.id)
 }
 
 function B(e) {
   let {
     channel: t
   } = e;
-  delete A[t.id]
+  delete v[t.id]
 }
 
 function H(e) {
@@ -236,7 +236,7 @@ function W(e) {
   var t;
   let {
     message: n
-  } = e, r = A[n.channel_id], i = null != (t = null == r ? true : r.mostRecentRawMessage) ? t : null == r ? true : r.mostRecentMessage;
+  } = e, r = v[n.channel_id], i = null != (t = null == r ? true : r.mostRecentRawMessage) ? t : null == r ? true : r.mostRecentMessage;
   if (null == r || null == i || i.id !== n.id) returnfalse;
   C(r, e => {
     null != e.mostRecentMessage && (e.mostRecentMessage = (0, l.IU)(e.mostRecentMessage, n)), null != e.mostRecentRawMessage && (e.mostRecentRawMessage = (0, l.SP)(e.mostRecentRawMessage, n))
@@ -247,7 +247,7 @@ function K(e) {
   let {
     id: t,
     channelId: n
-  } = e, r = A[n];
+  } = e, r = v[n];
   if (null == r) returnfalse;
   let i = _.default.castChannelIdAsMessageId(n) !== t,
     a = !O.has(t);
@@ -262,7 +262,7 @@ function z(e) {
   let {
     ids: t,
     channelId: n
-  } = e, r = A[n];
+  } = e, r = v[n];
   if (null == r) returnfalse;
   let i = t.filter(e => {
     let t = _.default.castChannelIdAsMessageId(n) !== e,
@@ -293,8 +293,8 @@ function q(e) {
 }
 
 function X() {
-  for (let e in A) {
-    let t = A[e];
+  for (let e in v) {
+    let t = v[e];
     if (null != t && null != t.mostRecentMessage) {
       let n = p.A.getMessage(e, t.mostRecentMessage.id);
       if (null == n) continue;
@@ -308,18 +308,18 @@ class Z extends(r = Chunk311907.Ay.Store) {
   }
   getCount(e) {
     var t, n;
-    return null != (t = null == (n = A[e]) ? true : n.count) ? t : null
+    return null != (t = null == (n = v[e]) ? true : n.count) ? t : null
   }
   getMostRecentMessage(e) {
     var t, n;
-    let r = A[e];
+    let r = v[e];
     return null == r ? null : (null == r.mostRecentMessage && null != r.mostRecentRawMessage && (r.mostRecentMessage = null != (n = p.A.getMessage(e, r.mostRecentRawMessage.id)) ? n : (0, l.rh)(r.mostRecentRawMessage), r.mostRecentRawMessage = null), null != (t = r.mostRecentMessage) ? t : null)
   }
   getChannelThreadsVersion(e) {
-    return v[e]
+    return A[e]
   }
   getInitialOverlayState() {
-    return A
+    return v
   }
 }
 g(Z, "displayName", "ThreadMessageStore");

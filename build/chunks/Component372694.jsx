@@ -1,7 +1,7 @@
 /** Chunk was on 28636 **/
 /** chunk id: 372694, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,56 +16,56 @@ var Chunk627968 = require("./627968.js"),
   Chunk504724 = require("./504724.js"),
   Chunk500226 = require("./500226.js");
 
-function b(e) {
+function g(e) {
   let {
     application: t,
     carouselItems: n
-  } = e, b = (0, i.bG)([d.A], () => d.A.isFocused()), f = (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)("img", {
+  } = e, g = (0, a.bG)([d.A], () => d.A.isFocused()), _ = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)("img", {
       className: h.M,
       src: m,
       "aria-hidden": true,
       alt: ""
-    }), (0, l.jsx)(r.DZT, {
+    }), (0, r.jsx)(i.DZT, {
       variant: "heading-xl/semibold",
       children: p.intl.string(p.t.UvDfMz)
     })]
   });
-  n.forEach((e, l) => {
+  n.forEach((e, r) => {
     e.alt = p.intl.formatToPlainString(p.t.sSEhHb, {
-      index: l + 1,
+      index: r + 1,
       totalImages: n.length,
       name: t.name
     })
   });
-  let g = a.useCallback((e, t) => {
+  let b = l.useCallback((e, t) => {
     if (e.type === u.geh.IMG) {
       let t = n.filter(e => e.type === u.geh.IMG),
-        l = t.findIndex(t => t === e);
-      if (l < 0) return;
-      let a = t.map(e => ({
+        r = t.findIndex(t => t === e);
+      if (r < 0) return;
+      let l = t.map(e => ({
         url: (0, s.o)(e.src),
         original: e.src,
         width: e.width,
         height: e.height,
         type: "IMAGE"
       }));
-      (0, o.R)({
-        items: a,
-        startingIndex: l,
+      (0, c.R)({
+        items: l,
+        startingIndex: r,
         shouldHideMediaOptions: true,
         location: "GlobalDiscoveryAppsDetailCarousel"
       })
     }
   }, [n]);
-  return 0 === n.length ? null : (0, l.jsx)(c.A, {
+  return 0 === n.length ? null : (0, r.jsx)(o.A, {
     className: h.D,
     themedPagination: true,
     items: n,
     autoplayInterval: 8e3,
-    paused: !b,
+    paused: !g,
     videoAutoPlay: true,
-    onCurrentItemClick: g,
-    errorComponent: f
+    onCurrentItemClick: b,
+    errorComponent: _
   })
 }

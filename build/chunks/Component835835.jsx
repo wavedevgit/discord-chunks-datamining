@@ -199,7 +199,7 @@ let B = Chunk311907.Ay.connectStores([Chunk576705.A], e => {
     channel: t
   } = e;
   return {
-    canManageMessages: null != t && E.A.can(I.xBc.MANAGE_MESSAGES, t)
+    canManageMessages: null != t && E.A.can(S.xBc.MANAGE_MESSAGES, t)
   }
 })(F);
 
@@ -214,12 +214,12 @@ function H(e) {
     renderEmptyState: m,
     renderItem: g,
     getProTip: E,
-    scrollerClassName: v,
-    className: S,
+    scrollerClassName: A,
+    className: I,
     listName: N
-  } = e, w = i.useRef(null), x = (0, p.A)(N, w), G = (0, u.bG)([b.Ay], () => b.Ay.hasNotice()), V = (0, u.bG)([y.A], () => y.A.windowSize());
+  } = e, w = i.useRef(null), x = (0, p.A)(N, w), G = (0, u.bG)([y.Ay], () => y.Ay.hasNotice()), V = (0, u.bG)([b.A], () => b.A.windowSize());
   i.useEffect(() => {
-    O.default.track(I.HAw.OPEN_POPOUT, {
+    O.default.track(S.HAw.OPEN_POPOUT, {
       type: t
     })
   }, [t]), i.useEffect(() => {
@@ -236,8 +236,8 @@ function H(e) {
         animate: true
       })
     }
-    return A._.subscribe(I.jej.SCROLL_PAGE_DOWN, t), A._.subscribe(I.jej.SCROLL_PAGE_UP, e), () => {
-      A._.unsubscribe(I.jej.SCROLL_PAGE_DOWN, t), A._.unsubscribe(I.jej.SCROLL_PAGE_UP, e)
+    return v._.subscribe(S.jej.SCROLL_PAGE_DOWN, t), v._.subscribe(S.jej.SCROLL_PAGE_UP, e), () => {
+      v._.unsubscribe(S.jej.SCROLL_PAGE_DOWN, t), v._.unsubscribe(S.jej.SCROLL_PAGE_UP, e)
     }
   }, []);
   let F = i.useCallback(() => {
@@ -290,7 +290,7 @@ function H(e) {
   G && (z.maxHeight -= M);
   let q = null != f && a;
   return (0, r.jsx)("div", {
-    className: s()(S, C.KQ),
+    className: s()(I, C.KQ),
     style: z,
     onClick: U,
     onDoubleClick: U,
@@ -298,7 +298,7 @@ function H(e) {
     children: (0, r.jsxs)(d.Fmo, {
       component: h(),
       children: [(0, r.jsxs)(d.T7Y, {
-        className: s()(C.m4, v),
+        className: s()(C.m4, A),
         onScroll: q ? F : true,
         ref: w,
         children: [(0, r.jsx)(c.hD, {
@@ -334,10 +334,10 @@ function Y(e) {
     canCloseAllMessages: p = false,
     renderHeader: _,
     renderEmptyState: E,
-    renderMessage: b,
-    getProTip: y,
+    renderMessage: y,
+    getProTip: b,
     scrollerClassName: O,
-    className: A,
+    className: v,
     onCloseMessage: T,
     listName: N,
     closeAriaLabel: R
@@ -352,9 +352,9 @@ function Y(e) {
         id: r,
         channel_id: i
       } = e, a = m.A.getChannel(i);
-      null != a && (f.A.trackJump(i, r, t), (0, h.pX)(I.BVt.CHANNEL(a.getGuildId(), i, r))), null == d || d(n)
+      null != a && (f.A.trackJump(i, r, t), (0, h.pX)(S.BVt.CHANNEL(a.getGuildId(), i, r))), null == d || d(n)
     };
-    (0, v.A)(e, r) && !w && r()
+    (0, A.A)(e, r) && !w && r()
   }
 
   function D(e) {
@@ -363,11 +363,11 @@ function Y(e) {
       channel: n
     } = e;
     if (null == t) return [];
-    if (null != b) return b(t, e => P(t, e));
+    if (null != y) return y(t, e => P(t, e));
     let i = [];
     return null == n ? [] : (i.push((0, r.jsxs)("div", {
       className: C.Uc,
-      children: [(0, r.jsx)(S.A, {
+      children: [(0, r.jsx)(I.A, {
         className: C.i0,
         message: t,
         channel: n
@@ -390,7 +390,7 @@ function Y(e) {
     channel: a
   })), [s, a]);
   return (0, r.jsx)(H, {
-    className: A,
+    className: v,
     scrollerClassName: O,
     items: x,
     loading: l,
@@ -399,7 +399,7 @@ function Y(e) {
     renderHeader: _,
     hasMore: o,
     loadMore: c,
-    getProTip: y,
+    getProTip: b,
     renderItem: D,
     listName: N,
     "aria-label": e["aria-label"]

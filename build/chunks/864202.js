@@ -23,7 +23,7 @@ function s(e, t) {
     d = 0;
   if (l.time && isNaN(d = g(l.time))) return new Date(NaN);
   if (l.timezone) {
-    if (isNaN(s = b(l.timezone))) return new Date(NaN)
+    if (isNaN(s = y(l.timezone))) return new Date(NaN)
   } else {
     var f = new Date(u + d),
       m = new Date(0);
@@ -74,9 +74,9 @@ function h(e, t) {
     s = m(n[3]),
     o = m(n[4]),
     l = m(n[5]) - 1;
-  if (r) return I(t, o, l) ? y(t, o, l) : new Date(NaN);
+  if (r) return S(t, o, l) ? b(t, o, l) : new Date(NaN);
   var c = new Date(0);
-  return v(t, a, s) && S(t, i) ? (c.setUTCFullYear(t, a, Math.max(i, s)), c) : new Date(NaN)
+  return A(t, a, s) && I(t, i) ? (c.setUTCFullYear(t, a, Math.max(i, s)), c) : new Date(NaN)
 }
 
 function m(e) {
@@ -96,7 +96,7 @@ function E(e) {
   return e && parseFloat(e.replace(",", ".")) || 0
 }
 
-function b(e) {
+function y(e) {
   if ("Z" === e) return 0;
   var t = e.match(f);
   if (!t) return 0;
@@ -106,7 +106,7 @@ function b(e) {
   return C(i, a) ? n * (i * r.s0 + a * r.Cg) : NaN
 }
 
-function y(e, t, n) {
+function b(e, t, n) {
   var r = new Date(0);
   r.setUTCFullYear(e, 0, 4);
   var i = (t - 1) * 7 + n + 1 - (r.getUTCDay() || 7);
@@ -114,19 +114,19 @@ function y(e, t, n) {
 }
 var O = [31, null, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-function A(e) {
+function v(e) {
   return e % 400 == 0 || e % 4 == 0 && e % 100 != 0
 }
 
-function v(e, t, n) {
-  return t >= 0 && t <= 11 && n >= 1 && n <= (O[t] || (A(e) ? 29 : 28))
+function A(e, t, n) {
+  return t >= 0 && t <= 11 && n >= 1 && n <= (O[t] || (v(e) ? 29 : 28))
 }
 
-function S(e, t) {
-  return t >= 1 && t <= (A(e) ? 366 : 365)
+function I(e, t) {
+  return t >= 1 && t <= (v(e) ? 366 : 365)
 }
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t >= 1 && t <= 53 && n >= 0 && n <= 6
 }
 

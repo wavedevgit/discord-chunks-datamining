@@ -1,7 +1,7 @@
 /** Chunk was on 56065 **/
 /** chunk id: 534904, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => a
+  default: () => c
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk158954 = require("./158954.js"),
@@ -10,16 +10,16 @@ var Chunk627968 = require("./627968.js"),
   Chunk539085 = require("./539085.jsx"),
   Chunk154 = require("./154.js");
 
-function a(e) {
+function c(e) {
   var t, r;
   let {
-    guildId: a,
+    guildId: c,
     title: d,
     description: u,
     powerups: p,
-    footerInfoText: b,
+    footerInfoText: f,
     footerAction: x
-  } = e, f = function(e, t) {
+  } = e, j = function(e, t) {
     if (null == e) return {};
     var r, n, o, s = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -35,11 +35,11 @@ function a(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n]);
     return s
-  }(e, ["guildId", "title", "description", "powerups", "footerInfoText", "footerAction"]), j = (0, c.A)(a), m = null != b && b.length > 0 ? (0, n.jsx)("div", {
+  }(e, ["guildId", "title", "description", "powerups", "footerInfoText", "footerAction"]), m = (0, a.A)(c), b = null != f && f.length > 0 ? (0, n.jsx)("div", {
     className: l.x,
     children: (0, n.jsx)(s.Text, {
       variant: "text-sm/medium",
-      children: b
+      children: f
     })
   }) : true;
   return (0, n.jsx)(o.Modal, (t = function(e) {
@@ -62,15 +62,15 @@ function a(e) {
   }({
     title: d,
     subtitle: u,
-    actionBarInput: m,
+    actionBarInput: b,
     actions: null != x ? [x] : []
-  }, f), r = r = {
+  }, j), r = r = {
     children: (0, n.jsx)("div", {
       className: l.p,
       children: p.map(e => (0, n.jsx)(i.A, {
-        guildId: a,
+        guildId: c,
         powerup: e,
-        canUseBoosts: null != j && j
+        canUseBoosts: null != m && m
       }, e.skuId))
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

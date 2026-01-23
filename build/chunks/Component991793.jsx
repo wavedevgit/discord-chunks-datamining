@@ -134,11 +134,11 @@ async function M(e) {
   } = e;
   null == t || t();
   try {
-    await b.A.getMediaEngine().writeAudioDebugState(), await O.A.submitLiveCrashReport({
+    await y.A.getMediaEngine().writeAudioDebugState(), await O.A.submitLiveCrashReport({
       message: {
         message: "User Live Dump"
       }
-    }), await (0, h.a)(S.Umv.RTC), x()
+    }), await (0, h.a)(I.Umv.RTC), x()
   } catch (e) {
     L(e.displayMessage)
   } finally {
@@ -150,31 +150,31 @@ function k() {
   let [e, t] = i.useState(false), {
     debugLogging: n,
     aecDumpEnabled: s
-  } = (0, a.cf)([b.A], () => ({
-    aecDumpSupported: b.A.isAecDumpSupported(),
-    debugLogging: b.A.getDebugLogging(),
-    aecDumpEnabled: b.A.getAecDump(),
-    supportsConnectionReplay: b.A.supports(I.O5.CONNECTION_REPLAY)
-  })), o = (0, a.bG)([E.default], () => E.default.isStreamInfoOverlayEnabled), l = (0, a.bG)([y.Ay], () => y.Ay.shouldRecordNextConnection()), p = i.useCallback(async () => {
+  } = (0, a.cf)([y.A], () => ({
+    aecDumpSupported: y.A.isAecDumpSupported(),
+    debugLogging: y.A.getDebugLogging(),
+    aecDumpEnabled: y.A.getAecDump(),
+    supportsConnectionReplay: y.A.supports(S.O5.CONNECTION_REPLAY)
+  })), o = (0, a.bG)([E.default], () => E.default.isStreamInfoOverlayEnabled), l = (0, a.bG)([b.Ay], () => b.Ay.shouldRecordNextConnection()), p = i.useCallback(async () => {
     await M({
       onUploadStart: () => t(true)
     })
   }, []);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(g.x, {
-      setting: v.H.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_STREAM_INFO_OVERLAY,
+      setting: A.H.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_STREAM_INFO_OVERLAY,
       children: (0, r.jsx)(c.dOG, {
         label: T.intl.string(T.t["0CEP6e"]),
         description: T.intl.string(T.t["kBXuW+"]),
         checked: o,
         onChange: e => {
-          (0, A.A)("stream_info_overlay_enabled", e, o), (0, d.x)({
+          (0, v.A)("stream_info_overlay_enabled", e, o), (0, d.x)({
             isStreamInfoOverlayEnabled: e
           })
         }
       })
     }), (0, r.jsx)(g.x, {
-      setting: v.H.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_AEC_DUMP,
+      setting: A.H.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_AEC_DUMP,
       children: (0, r.jsx)(c.dOG, {
         label: T.intl.string(T.t["r6K+TL"]),
         description: T.intl.string(T.t["xl9+I6"]),
@@ -182,7 +182,7 @@ function k() {
         onChange: e => u.A.setAecDump(e)
       })
     }), (0, r.jsxs)(g.x, {
-      setting: v.H.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_CONNECTION_REPLAY,
+      setting: A.H.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_CONNECTION_REPLAY,
       children: [(0, r.jsx)(c.dOG, {
         label: T.intl.string(T.t.U4FgFK),
         description: T.intl.string(T.t.Lm72RU),
@@ -202,7 +202,7 @@ function k() {
         })
       })]
     }), (0, r.jsx)(g.x, {
-      setting: v.H.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_LOGGING,
+      setting: A.H.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_LOGGING,
       children: (0, r.jsxs)("div", {
         children: [(0, r.jsx)(c.dOG, {
           label: T.intl.string(T.t["726JHL"]),

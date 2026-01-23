@@ -31,16 +31,16 @@ function O(e) {
     width: O,
     height: y
   } = (0, c.Ay)(), I = i.useCallback(() => {
-    null != t && null != n && ((0, g.sy)(t), (0, m.default)({
+    null != t && null != n && ((0, m.sy)(t), (0, A.default)({
       guildId: t,
       returnChannelId: n
     }))
-  }, [t, n]), v = (0, s.bG)([f.A], () => f.A.getGuild(t)), S = i.useMemo(() => null == v ? null : h.Ay.getGuildSplashURL({
+  }, [t, n]), v = (0, s.bG)([h.A], () => h.A.getGuild(t)), S = i.useMemo(() => null == v ? null : g.Ay.getGuildSplashURL({
     id: v.id,
     splash: v.splash
   }), [v]), C = (0, d.S)(S);
   return (0, r.jsxs)("div", {
-    className: a()(_.kf, E.iW, {
+    className: a()(b.kf, E.iW, {
       [E.Me]: null == S
     }),
     ref: l,
@@ -53,27 +53,27 @@ function O(e) {
     }) : (0, r.jsx)(p.A, {}), null != C && null != S && (0, r.jsx)("div", {
       className: E.D7,
       style: {
-        background: "linear-gradient(180deg, ".concat((0, A.cb)(C, .16), " 0%, ").concat((0, A.cb)(C, 1), " 100%)")
+        background: "linear-gradient(180deg, ".concat((0, f.cb)(C, .16), " 0%, ").concat((0, f.cb)(C, 1), " 100%)")
       }
     }), null != S && (0, r.jsx)("div", {
       className: E.D7
     }), (0, r.jsxs)("div", {
-      className: a()(_.Cj, _.Vw),
+      className: a()(b.Cj, b.Vw),
       children: [(0, r.jsxs)("div", {
-        className: _.wx,
+        className: b.wx,
         children: [(0, r.jsx)(o.Heading, {
           variant: "heading-xxl/normal",
           color: "always-white",
-          children: b.intl.string(b.t.CCmhpF)
+          children: _.intl.string(_.t.CCmhpF)
         }), (0, r.jsx)(o.Text, {
           variant: "text-lg/normal",
           color: "always-white",
-          children: b.intl.string(b.t.gRAHcZ)
+          children: _.intl.string(_.t.gRAHcZ)
         })]
       }), (0, r.jsx)(o.Button, {
         variant: "overlay-primary",
         size: "md",
-        text: b.intl.string(b.t.VVFjAC),
+        text: _.intl.string(_.t.VVFjAC),
         onClick: I
       })]
     })]

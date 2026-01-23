@@ -1,7 +1,7 @@
 /** Chunk was on 64228 **/
-/** chunk id: 280645, original params: e,l,t (module,exports,require) **/
+/** chunk id: 280645, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => x
 }), require("./638769.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,55 +18,55 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function A(e) {
-  var l, t;
+function x(e) {
+  var t, n;
   let {
-    userId: A,
+    userId: x,
     guildId: j
-  } = e, h = function(e, l) {
+  } = e, h = function(e, t) {
     if (null == e) return {};
-    var t, n, i, r = {};
+    var n, l, i, r = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (i = 0, t = Reflect.ownKeys(e); i < t.length; i++) n = t[i], !(l.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n]);
+      for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) l = n[i], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (r[l] = e[l]);
       return r
     }
-    if (r = function(e, l) {
+    if (r = function(e, t) {
         if (null == e) return {};
-        var t, n, i = {},
+        var n, l, i = {},
           r = Object.getOwnPropertyNames(e);
-        for (n = 0; n < r.length; n++) t = r[n], !(l.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (i[t] = e[t]);
+        for (l = 0; l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
         return i
-      }(e, l), Object.getOwnPropertySymbols)
-      for (i = 0, t = Object.getOwnPropertySymbols(e); i < t.length; i++) n = t[i], !(l.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n]);
+      }(e, t), Object.getOwnPropertySymbols)
+      for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) l = n[i], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (r[l] = e[l]);
     return r
   }(e, ["userId", "guildId"]), {
     trackUserProfileAction: g
-  } = (0, d.NJ)(), v = (0, i.bG)([a.A], () => a.A.getGuild(j)), b = (0, i.bG)([r.Ay], () => r.Ay.getMember(j, A)), I = null == b ? true : b.roles, y = (0, i.yK)([s.A], () => s.A.getManyRoles(j, null != I ? I : []).sort(c.m), [I, j]), [O] = (0, i.yK)([o.A], () => [o.A.can(m.xBc.MANAGE_ROLES, v), o.A.getGuildVersion(j)]);
+  } = (0, c.NJ)(), v = (0, i.bG)([o.A], () => o.A.getGuild(j)), b = (0, i.bG)([r.Ay], () => r.Ay.getMember(j, x)), I = null == b ? true : b.roles, y = (0, i.yK)([s.A], () => s.A.getManyRoles(j, null != I ? I : []).sort(d.m), [I, j]), [_] = (0, i.yK)([a.A], () => [a.A.can(f.xBc.MANAGE_ROLES, v), a.A.getGuildVersion(j)]);
   if (null == v) return null;
-  let N = O && null != b;
-  return 0 !== y.length || N ? (0, n.jsx)(f.A, (l = function(e) {
-    for (var l = 1; l < arguments.length; l++) {
-      var t = null != arguments[l] ? arguments[l] : {},
-        n = Object.keys(t);
-      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(t, e).enumerable
-      }))), n.forEach(function(l) {
-        var n;
-        n = t[l], l in e ? Object.defineProperty(e, l, {
-          value: n,
+  let O = _ && null != b;
+  return 0 !== y.length || O ? (0, l.jsx)(p.A, (t = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        l = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), l.forEach(function(t) {
+        var l;
+        l = n[t], t in e ? Object.defineProperty(e, t, {
+          value: l,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[l] = n
+        }) : e[t] = l
       })
     }
     return e
   }({
-    heading: x.intl.string(x.t["LPJmL/"]),
-    scrollTargetId: p.bk.ROLES
-  }, h), t = t = {
-    children: (0, n.jsx)(u.Y, {
-      userId: A,
+    heading: A.intl.string(A.t["LPJmL/"]),
+    scrollTargetId: m.bk.ROLES
+  }, h), n = n = {
+    children: (0, l.jsx)(u.Y, {
+      userId: x,
       guild: v,
       roles: y,
       onAddRole: () => {
@@ -81,14 +81,14 @@ function A(e) {
       },
       allowEditing: true
     })
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(t)) : (function(e, l) {
-    var t = Object.keys(e);
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      t.push.apply(t, n)
+      var l = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, l)
     }
-    return t
-  })(Object(t)).forEach(function(e) {
-    Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(t, e))
-  }), l)) : null
+    return n
+  })(Object(n)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+  }), t)) : null
 }

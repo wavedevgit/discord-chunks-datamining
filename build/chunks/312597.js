@@ -55,11 +55,11 @@ function E(e) {
   return Array.isArray(e) ? new DataView(Uint8Array.from(e).buffer).buffer : e.buffer
 }
 
-function b(e) {
+function y(e) {
   return e.length < o + 4
 }
 
-function y(e, t) {
+function b(e, t) {
   return e.length < t + p
 }
 
@@ -80,11 +80,11 @@ function O(e) {
       description: l
     }
   }
-  if (A(t.slice(36, 40)) !== l) throw Error("ICC profile: missing signature");
-  if (b(t)) return a;
+  if (v(t.slice(36, 40)) !== l) throw Error("ICC profile: missing signature");
+  if (y(t)) return a;
   let p = e.getUint32(128),
     _ = 132;
-  for (let n = 0; n < p && !y(t, _); n++) {
+  for (let n = 0; n < p && !b(t, _); n++) {
     let n = (0, i.hT)(e, _, 4),
       r = e.getUint32(_ + 4),
       s = e.getUint32(_ + 8);
@@ -93,7 +93,7 @@ function O(e) {
     if (o === c) {
       let i = e.getUint32(r + 8);
       if (i > s) return a;
-      v(a, n, A(t.slice(r + 12, r + i + 11)))
+      A(a, n, v(t.slice(r + 12, r + i + 11)))
     } else if (o === u) {
       let t = e.getUint32(r + 8),
         s = e.getUint32(r + 12),
@@ -111,23 +111,23 @@ function O(e) {
           text: u
         }), o += s
       }
-      if (1 === t) v(a, n, l[0].text);
+      if (1 === t) A(a, n, l[0].text);
       else {
         let e = {};
         for (let t = 0; t < l.length; t++) e[`${l[t].languageCode}-${l[t].countryCode}`] = l[t].text;
-        v(a, n, e)
+        A(a, n, e)
       }
-    } else o === d ? v(a, n, A(t.slice(r + 8, r + s - 7))) : o === f && v(a, n, A(t.slice(r + 8, r + 12)));
+    } else o === d ? A(a, n, v(t.slice(r + 8, r + s - 7))) : o === f && A(a, n, v(t.slice(r + 8, r + 12)));
     _ += 12
   }
   return a
 }
 
-function A(e) {
+function v(e) {
   return String.fromCharCode.apply(null, new Uint8Array(e))
 }
 
-function v(e, t, n) {
+function A(e, t, n) {
   r.f[t] ? e[r.f[t].name] = {
     value: n,
     description: n

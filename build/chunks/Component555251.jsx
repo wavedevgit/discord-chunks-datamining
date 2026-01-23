@@ -15,46 +15,46 @@ function p(e) {
   var t, r;
   let {
     avatarId: p,
-    storageHash: b,
-    avatarDescription: f,
-    onConfirmDelete: u,
-    onClose: y
+    storageHash: f,
+    avatarDescription: u,
+    onConfirmDelete: y,
+    onClose: b
   } = e, O = function(e, t) {
     if (null == e) return {};
-    var r, n, o, i = {};
+    var r, n, o, a = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (o = 0, r = Reflect.ownKeys(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-      return i
+      for (o = 0, r = Reflect.ownKeys(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
+      return a
     }
-    if (i = function(e, t) {
+    if (a = function(e, t) {
         if (null == e) return {};
         var r, n, o = {},
-          i = Object.getOwnPropertyNames(e);
-        for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
+          a = Object.getOwnPropertyNames(e);
+        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
         return o
       }(e, t), Object.getOwnPropertySymbols)
-      for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-    return i
-  }(e, ["avatarId", "storageHash", "avatarDescription", "onConfirmDelete", "onClose"]), [j, d] = o.useState(false), {
+      for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
+    return a
+  }(e, ["avatarId", "storageHash", "avatarDescription", "onConfirmDelete", "onClose"]), [d, j] = o.useState(false), {
     avatarSrc: g,
     eventHandlers: m
   } = (0, c.A)({
     avatarId: p,
-    storageHash: b,
-    size: a._3J.SIZE_120
+    storageHash: f,
+    size: i._3J.SIZE_120
   }), {
-    onMouseEnter: h,
-    onMouseLeave: v
+    onMouseEnter: v,
+    onMouseLeave: h
   } = m, x = o.useCallback(async () => {
-    d(true);
+    j(true);
     try {
-      await u()
+      await y()
     } catch (e) {} finally {
-      d(false)
+      j(false)
     }
-    y()
-  }, [u, y]);
-  return (0, n.jsx)(i.aFV, (t = function(e) {
+    b()
+  }, [y, b]);
+  return (0, n.jsx)(a.aFV, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -78,32 +78,32 @@ function p(e) {
     actions: [{
       text: l.intl.string(l.t["ETE/oC"]),
       variant: "secondary",
-      onClick: y,
-      disabled: j
+      onClick: b,
+      disabled: d
     }, {
       text: l.intl.string(l.t.Lh0uyy),
       variant: "critical-primary",
       onClick: x,
-      loading: j
+      loading: d
     }],
-    onClose: y
+    onClose: b
   }, O), r = r = {
     children: (0, n.jsxs)("div", {
       className: s.jE,
       children: [(0, n.jsx)("div", {
-        onMouseEnter: h,
-        onMouseLeave: v,
+        onMouseEnter: v,
+        onMouseLeave: h,
         className: s.H,
         children: (0, n.jsx)("img", {
           src: g,
-          alt: f,
+          alt: u,
           className: s.my
         })
-      }), (0, n.jsx)(a.Text, {
+      }), (0, n.jsx)(i.Text, {
         variant: "eyebrow",
         color: "text-feedback-positive",
         children: l.intl.string(l.t["2Ld8DM"])
-      }), (0, n.jsx)(a.Text, {
+      }), (0, n.jsx)(i.Text, {
         variant: "text-xs/normal",
         color: "text-subtle",
         children: l.intl.string(l.t.Oe0xqt)

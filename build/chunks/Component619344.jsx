@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 619344, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => s
+  A: () => a
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -9,11 +9,11 @@ var Chunk397927 = require("./397927.js"),
   Chunk709562 = require("./709562.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function s(e) {
+function a(e) {
   let {
     popoutWindowAlwaysOnTop: t,
     onToggleStayOnTop: n
-  } = e, s = function(e, t) {
+  } = e, a = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -29,7 +29,7 @@ function s(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(e, ["popoutWindowAlwaysOnTop", "onToggleStayOnTop"]), o = t ? a.intl.string(a.t.YdyDM9) : a.intl.string(a.t.ZVGHwP), c = t ? l.hl9 : l.qgw;
+  }(e, ["popoutWindowAlwaysOnTop", "onToggleStayOnTop"]), o = t ? s.intl.string(s.t.YdyDM9) : s.intl.string(s.t.ZVGHwP), c = t ? l.hl9 : l.qgw;
   return (0, r.jsx)(i.A, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -51,5 +51,5 @@ function s(e) {
     onClick: () => n(!t),
     label: o,
     iconComponent: c
-  }, s))
+  }, a))
 }

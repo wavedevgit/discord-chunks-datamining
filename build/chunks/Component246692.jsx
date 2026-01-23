@@ -56,19 +56,19 @@ function E(e, t) {
   }), e
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = y(e, t), Object.getOwnPropertySymbols)
+  if (a = b(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -79,34 +79,34 @@ function y(e, t) {
 function O(e) {
   var t, n, a, h, g;
   let {
-    steps: y,
+    steps: b,
     caretConfig: O = {
       align: "center"
     },
-    size: A = "md",
-    onStepChange: v,
-    onRequestClose: S,
-    popoverRef: I,
+    size: v = "md",
+    onStepChange: A,
+    onRequestClose: I,
+    popoverRef: S,
     shouldShow: T,
     position: C
-  } = e, N = b(e, ["steps", "caretConfig", "size", "onStepChange", "onRequestClose", "popoverRef", "shouldShow", "position"]), [R, w] = i.useState(0);
+  } = e, N = y(e, ["steps", "caretConfig", "size", "onStepChange", "onRequestClose", "popoverRef", "shouldShow", "position"]), [R, w] = i.useState(0);
   i.useEffect(() => {
     T && w(0)
   }, [T]), i.useEffect(() => {
-    null == v || v(R)
-  }, [R, v]);
-  let P = y[R],
-    D = R + 1 === y.length,
+    null == A || A(R)
+  }, [R, A]);
+  let P = b[R],
+    D = R + 1 === b.length,
     x = i.useCallback(() => {
       var e;
-      null == P || null == (e = P.onCta) || e.call(P), D ? null == S || S() : w(e => e + 1)
-    }, [P, D, S]),
+      null == P || null == (e = P.onCta) || e.call(P), D ? null == I || I() : w(e => e + 1)
+    }, [P, D, I]),
     L = i.useCallback(() => {
-      null == S || S()
-    }, [S]),
+      null == I || I()
+    }, [I]),
     j = i.useCallback(() => {
-      null == S || S()
-    }, [S]);
+      null == I || I()
+    }, [I]);
   if (!T || null == P) return null;
   let M = m({
       text: null != (t = null == (h = P.action) ? true : h.text) ? t : D ? p.intl.string(p.t.i4jeWR) : p.intl.string(p.t.PDTjLN),
@@ -130,16 +130,16 @@ function O(e) {
     });
   return (0, r.jsx)(c.x, E(m({}, k), {
     children: (0, r.jsxs)("div", {
-      ref: I,
+      ref: S,
       children: [(0, r.jsx)(d.q, {
         onClick: j,
         variant: null != P.gradientColor ? "color-mix" : true
       }), null != P.graphic && (0, r.jsx)("div", {
         className: s()(_.graphic, {
-          [_["graphic--".concat(A)]]: null != A
+          [_["graphic--".concat(v)]]: null != v
         }),
         children: (0, r.jsx)(o.vYh, E(m({}, P.graphic), {
-          aspectRatio: null != (a = P.graphic.aspectRatio) ? a : "sm" === A ? "2/1" : "16/9"
+          aspectRatio: null != (a = P.graphic.aspectRatio) ? a : "sm" === v ? "2/1" : "16/9"
         }))
       }), (0, r.jsx)(f.D, {
         title: P.title,
@@ -155,7 +155,7 @@ function O(e) {
             className: _.multistepIndicator,
             children: p.intl.formatToPlainString(p.t.rO31eY, {
               count: R + 1,
-              totalSteps: y.length
+              totalSteps: b.length
             })
           }), (0, r.jsx)(l.$nd, m({
             size: "sm"

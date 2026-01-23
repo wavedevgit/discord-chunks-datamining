@@ -27,20 +27,20 @@ function E(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let b = new Map,
-  y = new Map,
+let y = new Map,
+  b = new Map,
   O = new Map,
-  A = new Set,
-  v = 0,
-  S = 0,
+  v = new Set,
+  A = 0,
   I = 0,
+  S = 0,
   T = 0,
   C = new Set,
   N = new Map,
   R = false;
 
 function w() {
-  b.clear(), y.clear(), T = 0, O.clear(), N.clear(), R = false, S = 0, I = 0, v = 0
+  y.clear(), b.clear(), T = 0, O.clear(), N.clear(), R = false, I = 0, S = 0, A = 0
 }
 
 function P() {
@@ -48,7 +48,7 @@ function P() {
 }
 
 function D() {
-  S = 1
+  I = 1
 }
 
 function x(e) {
@@ -60,22 +60,22 @@ function x(e) {
       guildId: t,
       sounds: n
     } = e;
-    b.set(t, n)
-  }), S = 2
+    y.set(t, n)
+  }), I = 2
 }
 
 function L(e) {
   let {
     guild: t
   } = e;
-  b.delete(t.id)
+  y.delete(t.id)
 }
 
 function j(e) {
   let {
     sound: t
-  } = e, n = b.get(t.guildId), r = null == n ? true : n.findIndex(e => e.soundId === t.soundId);
-  null != n && null != r && false !== r ? (n[r] = t, b.set(t.guildId, [...n])) : null != n && (null == n || n.push(t), b.set(t.guildId, [...n]))
+  } = e, n = y.get(t.guildId), r = null == n ? true : n.findIndex(e => e.soundId === t.soundId);
+  null != n && null != r && false !== r ? (n[r] = t, y.set(t.guildId, [...n])) : null != n && (null == n || n.push(t), y.set(t.guildId, [...n]))
 }
 
 function M(e) {
@@ -83,41 +83,41 @@ function M(e) {
     guildId: t,
     soundboardSounds: n
   } = e;
-  b.set(t, n)
+  y.set(t, n)
 }
 
 function k(e) {
   let {
     soundId: t,
     guildId: n
-  } = e, r = b.get(n), i = null == r ? true : r.findIndex(e => e.soundId === t);
-  null == r || null == i || i < 0 || (r.splice(i, 1), b.set(n, [...r]))
+  } = e, r = y.get(n), i = null == r ? true : r.findIndex(e => e.soundId === t);
+  null == r || null == i || i < 0 || (r.splice(i, 1), y.set(n, [...r]))
 }
 
 function U() {
-  v = 1
+  A = 1
 }
 
 function G(e) {
   let {
     soundboardSounds: t
   } = e;
-  b.set(h.mV, t), v = 2
+  y.set(h.mV, t), A = 2
 }
 
 function V() {
-  I = 1
+  S = 1
 }
 
 function F(e) {
   let {
     topSoundsForGuilds: t
   } = e;
-  y = new Map(t), I = 2, T = Date.now()
+  b = new Map(t), S = 2, T = Date.now()
 }
 
 function B() {
-  I = 2, T = 0
+  S = 2, T = 0
 }
 
 function H(e) {
@@ -157,8 +157,8 @@ function K(e) {
 function z(e) {
   var t, n;
   let r = null != (t = null == e || null == (n = e.audioContextSettings) ? true : n.user) ? t : {};
-  for (let [e, t] of Object.entries(r)) t.soundboardMuted ? A.add(e) : A.delete(e);
-  for (let e of A.keys()) null == r[e] && A.delete(e)
+  for (let [e, t] of Object.entries(r)) t.soundboardMuted ? v.add(e) : v.delete(e);
+  for (let e of v.keys()) null == r[e] && v.delete(e)
 }
 
 function q(e) {
@@ -178,14 +178,14 @@ function X(e) {
   let {
     userId: t
   } = e;
-  A.has(t) ? A.delete(t) : A.add(t)
+  v.has(t) ? v.delete(t) : v.add(t)
 }
 
 function Z(e) {
   let {
     soundboardStoreState: t
   } = e;
-  b = new Map(p.default.entries(t.soundboardSounds)), C = new Set(t.favoritedSoundIds), A = new Set(t.localSoundboardMutes)
+  y = new Map(p.default.entries(t.soundboardSounds)), C = new Set(t.favoritedSoundIds), v = new Set(t.localSoundboardMutes)
 }
 class Q extends(r = Chunk311907.Ay.Store) {
   initialize() {
@@ -193,38 +193,38 @@ class Q extends(r = Chunk311907.Ay.Store) {
   }
   getOverlaySerializedState() {
     return {
-      soundboardSounds: Object.fromEntries(b),
+      soundboardSounds: Object.fromEntries(y),
       favoritedSoundIds: Array.from(C),
-      localSoundboardMutes: Array.from(A)
+      localSoundboardMutes: Array.from(v)
     }
   }
   getSounds() {
-    return b
+    return y
   }
   getSoundsForGuild(e) {
-    return b.get(e)
+    return y.get(e)
   }
   getSound(e, t) {
     var n;
-    return (null != (n = b.get(e)) ? n : []).find(e => e.soundId === t)
+    return (null != (n = y.get(e)) ? n : []).find(e => e.soundId === t)
   }
   getSoundById(e) {
-    return Array.from(b.values()).flat().find(t => t.soundId === e)
+    return Array.from(y.values()).flat().find(t => t.soundId === e)
   }
   isFetchingSounds() {
-    return 1 === S
+    return 1 === I
   }
   isFetchingDefaultSounds() {
-    return 1 === v
+    return 1 === A
   }
   isFetching() {
     return this.isFetchingSounds() || this.isFetchingDefaultSounds()
   }
   shouldFetchDefaultSounds() {
-    return 0 === v
+    return 0 === A
   }
   hasFetchedDefaultSounds() {
-    return 2 === v
+    return 2 === A
   }
   isUserPlayingSounds(e) {
     let t = N.get(e);
@@ -240,26 +240,26 @@ class Q extends(r = Chunk311907.Ay.Store) {
     return C
   }
   getAllTopSoundsForGuilds() {
-    return y
+    return b
   }
   isLocalSoundboardMuted(e) {
-    return A.has(e)
+    return v.has(e)
   }
   hasHadOtherUserPlaySoundInSession() {
     return R
   }
   shouldFetchTopSoundsForGuilds() {
-    return (0, _.vB)("SoundboardStore") && (0 === I || 2 === I && Date.now() - T > 864e5)
+    return (0, _.vB)("SoundboardStore") && (0 === S || 2 === S && Date.now() - T > 864e5)
   }
   hasFetchedTopSoundsForGuilds() {
-    return 2 === I
+    return 2 === S
   }
   hasFetchedAllSounds() {
-    let e = [S, v];
-    return (0, _.vB)("SoundboardStore") && e.push(I), e.every(e => 2 === e)
+    let e = [I, A];
+    return (0, _.vB)("SoundboardStore") && e.push(S), e.every(e => 2 === e)
   }
   isFetchingAnySounds() {
-    return [S, v, I].some(e => 1 === e)
+    return [I, A, S].some(e => 1 === e)
   }
 }
 E(Q, "displayName", "SoundboardStore");

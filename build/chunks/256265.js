@@ -36,23 +36,23 @@ function E(e) {
   return (0, l.u)(t) && null != n && n > 0 && null != r && r > 0
 }
 
-function b(e) {
+function y(e) {
   return null != e && null != e && (0, l.AE)(e.filename) && null != e.proxy_url
 }
 
-function y(e) {
-  return E(e) || b(e)
+function b(e) {
+  return E(e) || y(e)
 }
 var O = function(e) {
   return e.EMBED = "embed", e.ATTACHMENT = "attachment", e.COMPONENT = "component", e
 }({});
 
-function A(e) {
+function v(e) {
   var t, n;
   let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : u.X6.getSetting();
   if (!r) return [];
   let a = (null == e || null == (t = e.messageSnapshots[0]) ? true : t.moderatorReport) != null ? null == e || null == (n = e.messageSnapshots[0]) ? true : n.message.attachments : null == e ? true : e.attachments;
-  return null == e || null == a ? [] : a.filter(y).map((e, t) => {
+  return null == e || null == a ? [] : a.filter(b).map((e, t) => {
     var n;
     let {
       proxy_url: r,
@@ -92,11 +92,11 @@ function A(e) {
   }).filter(_.Vq)
 }
 
-function v(e) {
-  return A(e, u.X6.useSetting())
+function A(e) {
+  return v(e, u.X6.useSetting())
 }
 
-function S(e, t) {
+function I(e, t) {
   var n, r;
   let a = u.hD.useSetting(),
     s = u.rs.useSetting();
@@ -129,7 +129,7 @@ function S(e, t) {
   }).filter(_.Vq) : []
 }
 
-function I(e) {
+function S(e) {
   let t = u.hD.useSetting();
   if (null == e) return [];
   let n = e.components;
@@ -180,21 +180,21 @@ function C(e, t) {
 }
 
 function N(e, t) {
-  return [...v(e), ...S(e, t), ...I(e)]
+  return [...A(e), ...I(e, t), ...S(e)]
 }
 
 function R(e, t) {
   var n, r, i;
-  let a = v(e),
-    s = S(e, t),
-    o = I(e);
+  let a = A(e),
+    s = I(e, t),
+    o = S(e);
   return null != (n = null != (r = null != (i = a[0]) ? i : s[0]) ? r : o[0]) ? n : null
 }
 
 function w(e, t) {
-  let n = v(e),
-    r = S(e, t),
-    i = I(e);
+  let n = A(e),
+    r = I(e, t),
+    i = S(e);
   return null == n[0] && null == i[0] && null != r[0]
 }
 
@@ -203,7 +203,7 @@ function P(e, t) {
   let r = d.A.getChannel(t);
   if (null == r) returnfalse;
   let i = f.A.getMessage(r.id, h.default.castChannelIdAsMessageId(r.id));
-  return null != i && e.length > 0 && null != e.find(e => e.isImage || e.isVideo) && r.isForumPost() && r.ownerId === (null == (n = p.default.getCurrentUser()) ? true : n.id) && 0 === c.A.getCount(r.id) && (0 === i.attachments.length || null == i.attachments.find(e => E(e) || b(e)))
+  return null != i && e.length > 0 && null != e.find(e => e.isImage || e.isVideo) && r.isForumPost() && r.ownerId === (null == (n = p.default.getCurrentUser()) ? true : n.id) && 0 === c.A.getCount(r.id) && (0 === i.attachments.length || null == i.attachments.find(e => E(e) || y(e)))
 }
 
 function D(e) {

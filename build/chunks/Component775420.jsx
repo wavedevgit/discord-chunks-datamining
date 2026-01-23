@@ -55,7 +55,7 @@ let f = (0, Chunk64700.createContext)({
     } = (0, d.Q)({
       skuId: t,
       loadId: n
-    }), b = (0, i.useCallback)(e => {
+    }), y = (0, i.useCallback)(e => {
       m(t, n, n => {
         a({
           entitlements: n,
@@ -69,7 +69,7 @@ let f = (0, Chunk64700.createContext)({
       analyticsLocations: null != r ? r : [],
       product: _,
       orbProductContext: h,
-      onRedeemVirtualCurrency: b,
+      onRedeemVirtualCurrency: y,
       isRedeeming: g,
       orbRedemptionError: E,
       rentalDuration: f

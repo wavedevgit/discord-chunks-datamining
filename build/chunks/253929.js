@@ -25,11 +25,11 @@ function c() {
         i = (t.type > n ? n : t.type) - (e.type > n ? n : e.type);
       return 0 !== i ? i : e.untranslatedName.localeCompare(t.untranslatedName)
     }), [c]),
-    b = i.useMemo(() => t.startsWith("/") ? u.filter(e => e.type === a.kc.CHAT) : u, [t, u]),
-    f = i.useMemo(() => t.startsWith("/") ? t.substring(1) : t, [t]);
+    p = i.useMemo(() => t.startsWith("/") ? u.filter(e => e.type === a.kc.CHAT) : u, [t, u]),
+    m = i.useMemo(() => t.startsWith("/") ? t.substring(1) : t, [t]);
   return {
     query: t,
-    results: i.useMemo(() => (0, s.I)(b, d, f), [b, f]),
+    results: i.useMemo(() => (0, s.I)(p, d, m), [p, m]),
     setQuery: n,
     unfilteredCount: e.length
   }

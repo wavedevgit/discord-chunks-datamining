@@ -39,17 +39,17 @@ let u = Chunk652215.XlH.CLOSED,
   m = null,
   g = false,
   E = null,
-  b = [],
-  y = null;
+  y = [],
+  b = null;
 
 function O(e) {
-  A(e)
+  v(e)
 }
 
-function A(e) {
+function v(e) {
   var t, n, r, i;
   let a = s.default.getCurrentUser();
-  if (null == a) return v();
+  if (null == a) return A();
   d = null != (t = e.section) ? t : d, null != e.subsection && null != d && (f[d] = e.subsection), null != e.scrollPosition && null != d && (p[d] = e.scrollPosition), g = !!e.openWithoutBackstack, u = o.XlH.OPEN, _ = {}, m = c({}, h = {
     [o.nc_.ACCOUNT]: {
       userId: a.id,
@@ -61,19 +61,19 @@ function A(e) {
       newPassword: null,
       claimed: a.isClaimed()
     }
-  }), E = null != (n = e.analyticsLocation) ? n : null, b = null != (r = e.analyticsLocations) ? r : [], y = null != (i = e.searchParams) ? i : null
+  }), E = null != (n = e.analyticsLocation) ? n : null, y = null != (r = e.analyticsLocations) ? r : [], b = null != (i = e.searchParams) ? i : null
 }
 
-function v() {
-  u = o.XlH.CLOSED, h = null, m = null, d = null, f = {}, p = {}, E = null, b = [], y = null
-}
-
-function S(e) {
-  var t;
-  d = e.section, E = null, b = null != (t = e.analyticsLocations) ? t : [], null != e.subsection && (f[d] = e.subsection)
+function A() {
+  u = o.XlH.CLOSED, h = null, m = null, d = null, f = {}, p = {}, E = null, y = [], b = null
 }
 
 function I(e) {
+  var t;
+  d = e.section, E = null, y = null != (t = e.analyticsLocations) ? t : [], null != e.subsection && (f[d] = e.subsection)
+}
+
+function S(e) {
   let {
     forSection: t
   } = e;
@@ -142,7 +142,7 @@ class D extends(r = Chunk311907.Ay.Store) {
     return E
   }
   getAnalyticsLocations() {
-    return b
+    return y
   }
   getErrors() {
     return _
@@ -157,19 +157,19 @@ class D extends(r = Chunk311907.Ay.Store) {
     return g
   }
   getSearchParams() {
-    return y
+    return b
   }
 }
 l(D, "displayName", "UserSettingsModalStore");
 let x = new D(Chunk73153.h, {
   USER_SETTINGS_MODAL_OPEN: O,
-  USER_SETTINGS_MODAL_INIT: A,
-  USER_SETTINGS_MODAL_CLOSE: v,
-  LOGOUT: v,
+  USER_SETTINGS_MODAL_INIT: v,
+  USER_SETTINGS_MODAL_CLOSE: A,
+  LOGOUT: A,
   USER_SETTINGS_MODAL_SUBMIT: N,
   USER_SETTINGS_MODAL_SUBMIT_FAILURE: P,
-  USER_SETTINGS_MODAL_SET_SECTION: S,
-  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: I,
+  USER_SETTINGS_MODAL_SET_SECTION: I,
+  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: S,
   USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: T,
   USER_SETTINGS_MODAL_UPDATE_ACCOUNT: C,
   USER_SETTINGS_MODAL_SUBMIT_COMPLETE: w,

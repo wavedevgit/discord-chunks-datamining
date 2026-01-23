@@ -31,20 +31,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx");
 let N = () => (0, r.jsxs)(h.A, {
     title: C.intl.string(C.t.xVRG4P),
-    webSetting: S.H.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
+    webSetting: I.H.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
     children: [(0, r.jsx)(g.f, {}), (0, r.jsx)(f.A, {}), (0, r.jsx)(d.A, {}), (0, r.jsx)(c.A, {}), (0, r.jsx)(E.A, {})]
   }),
   R = () => (0, r.jsxs)(h.A, {
     title: C.intl.string(C.t["y62Z/d"]),
-    webSetting: S.H.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
+    webSetting: I.H.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
     children: [(0, r.jsx)(a.x, {
-      setting: S.H.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
+      setting: I.H.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
       children: (0, r.jsx)(_.A, {})
-    }), (0, r.jsx)(O.A, {}), (0, r.jsx)(A.A, {}), (0, r.jsx)(y.A, {}), (0, r.jsx)(b.A, {})]
+    }), (0, r.jsx)(O.A, {}), (0, r.jsx)(v.A, {}), (0, r.jsx)(b.A, {}), (0, r.jsx)(y.A, {})]
   }),
   w = () => (0, r.jsxs)(h.A, {
     title: C.intl.string(C.t["1Qn8iV"]),
-    webSetting: S.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
+    webSetting: I.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
     children: [(0, r.jsx)(p.A, {}), (0, r.jsx)(m.Ay, {})]
   }),
   P = () => (0, r.jsxs)(r.Fragment, {
@@ -56,22 +56,22 @@ function D() {
     t = [{
       title: C.intl.string(C.t["/7xJCF"]),
       component: P,
-      setting: S.H.CONTENT_SOCIAL_DISCORD_TAB
+      setting: I.H.CONTENT_SOCIAL_DISCORD_TAB
     }, {
       title: C.intl.string(C.t.YpCiMt),
       component: u.A,
-      setting: S.H.CONTENT_SOCIAL_CONNECTED_GAMES
+      setting: I.H.CONTENT_SOCIAL_CONNECTED_GAMES
     }];
   return (0, r.jsx)(o.R, {
     header: C.intl.string(C.t["+o1pDZ"]),
-    notice: (0, r.jsx)(v.A, {
-      page: v.R.CONTENT_AND_SOCIAL
+    notice: (0, r.jsx)(A.A, {
+      page: A.R.CONTENT_AND_SOCIAL
     }),
     children: (0, r.jsx)(l.A, {
-      parentSetting: S.H.CONTENT_SOCIAL,
+      parentSetting: I.H.CONTENT_SOCIAL,
       settingsSection: T.nc_.CONTENT_AND_SOCIAL,
       tabs: t,
-      defaultTabIndex: e === I.k ? 1 : true
+      defaultTabIndex: e === S.k ? 1 : true
     })
   })
 }

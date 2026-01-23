@@ -154,10 +154,10 @@ function H(e, t, n, i, a, s) {
     showAvatarPopout: m,
     showTargetAvatarPopout: g,
     onClickAvatar: E,
-    onUserContextMenu: b,
-    onClickTargetAvatar: y,
+    onUserContextMenu: y,
+    onClickTargetAvatar: b,
     onTargetUserContextMenu: O,
-    onPopoutRequestClose: A
+    onPopoutRequestClose: v
   } = e;
   if (d && 1 === n) return null;
   if (d && null == u.activityInstance || _ || h) return (0, r.jsx)("div", {
@@ -166,17 +166,17 @@ function H(e, t, n, i, a, s) {
       className: L.Jx
     })
   });
-  let v = null != (o = I.Ay.getGuildMemberAvatarURL({
+  let A = null != (o = S.Ay.getGuildMemberAvatarURL({
       avatar: null != (l = i.guildMemberAvatar) ? l : true,
       userId: t.id,
       guildId: null != (c = null == p ? true : p.guild_id) ? c : ""
     })) ? o : true,
-    S = () => B({
+    I = () => B({
       user: t,
       guildId: p.guild_id,
-      guildAvatar: v,
-      onClick: 1 === n ? y : E,
-      onContextMenu: 1 === n ? O : b,
+      guildAvatar: A,
+      onClick: 1 === n ? b : E,
+      onContextMenu: 1 === n ? O : y,
       ref: s
     }),
     T = 1 === n ? g : m;
@@ -185,9 +185,9 @@ function H(e, t, n, i, a, s) {
     renderPopout: a,
     shouldShow: T,
     position: "right",
-    onRequestClose: A,
-    children: S
-  }) : S()
+    onRequestClose: v,
+    children: I
+  }) : I()
 }
 
 function Y(e, t, n, i, a) {
@@ -299,24 +299,24 @@ function z(e) {
       analyticsLocations: c,
       newestAnalyticsLocation: E
     } = (0, g.Ay)(m.A.EXECUTED_COMMAND),
-    I = (0, d.bG)([S.default], () => S.default.getCurrentUser()),
+    S = (0, d.bG)([I.default], () => I.default.getCurrentUser()),
     T = i.useRef(null),
     R = i.useRef(null),
-    D = i.useMemo(() => (e, t, n) => (l()(null != t, "ExecutedCommand: user cannot be undefined"), l()(null != I, "ExecutedCommand: currentUser cannot be undefined"), l()(null != o, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(A.A, U(M({}, e), {
+    D = i.useMemo(() => (e, t, n) => (l()(null != t, "ExecutedCommand: user cannot be undefined"), l()(null != S, "ExecutedCommand: currentUser cannot be undefined"), l()(null != o, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(v.A, U(M({}, e), {
       user: t,
-      currentUser: I,
+      currentUser: S,
       guildId: o.guild_id,
       channelId: o.id,
       messageId: a.id,
       newAnalyticsLocations: n
-    }))), [I, o, a.id]),
+    }))), [S, o, a.id]),
     j = i.useMemo(() => e => (l()(null != o, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(w.A, U(M({}, e), {
       channel: o,
       messageId: a.id,
       interactionData: a.interactionData
     }))), [o, a.id, a.interactionData]),
-    k = (0, y.Am)(a),
-    G = (null == k ? true : k.type) === p.G4.APPLICATION_COMMAND && null != k.target_user ? new v.A(k.target_user) : null,
+    k = (0, b.Am)(a),
+    G = (null == k ? true : k.type) === p.G4.APPLICATION_COMMAND && null != k.target_user ? new A.A(k.target_user) : null,
     V = (null == k ? true : k.type) === p.G4.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage,
     F = (0, N.d8)(null == (t = a.interaction) ? true : t.user, o),
     B = (0, N.d8)(G, o),
@@ -356,7 +356,7 @@ function z(e) {
     }))
   } else {
     let e = () => {
-        (0, b.A)({
+        (0, y.A)({
           context: null != o ? {
             type: "channel",
             channel: o

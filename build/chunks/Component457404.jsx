@@ -14,17 +14,17 @@ let c = e => {
       item: t,
       closePopout: n
     } = e;
-    return (0, r.jsx)(a.W1t, {
+    return (0, r.jsx)(s.W1t, {
       navId: "notification-actions",
       onClose: n,
       onSelect: n,
       "aria-label": o.intl.string(o.t.ljs3Oe),
-      children: (0, r.jsx)(a.Drp, {
+      children: (0, r.jsx)(s.Drp, {
         id: "delete",
         label: o.intl.string(o.t.oyYWHE),
-        icon: a.ucK,
+        icon: s.ucK,
         action: async () => {
-          await (0, s.VP)(t)
+          await (0, a.VP)(t)
         }
       })
     })
@@ -33,7 +33,7 @@ let c = e => {
     let {
       item: t
     } = e, n = l.useRef(null);
-    return (0, r.jsx)(a.YNO, {
+    return (0, r.jsx)(s.YNO, {
       targetElementRef: n,
       renderPopout: e => {
         var n, l;
@@ -69,7 +69,7 @@ let c = e => {
       },
       position: "bottom",
       align: "right",
-      animation: a.YNO.Animation.NONE,
+      animation: s.YNO.Animation.NONE,
       children: e => {
         let {
           onClick: t
@@ -77,10 +77,10 @@ let c = e => {
         return (0, r.jsx)(i.m, {
           text: o.intl.string(o.t["UKOtz+"]),
           asContainer: true,
-          children: (0, r.jsx)(a.K0, {
+          children: (0, r.jsx)(s.K0, {
             buttonRef: n,
             size: "sm",
-            icon: a.jNK,
+            icon: s.jNK,
             variant: "icon-only",
             "aria-label": o.intl.string(o.t["UKOtz+"]),
             "aria-haspopup": "menu",

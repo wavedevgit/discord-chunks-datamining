@@ -2,7 +2,7 @@
 /** chunk id: 113192, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  v: () => y
+  v: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -23,16 +23,16 @@ var Chunk646865 = require("./646865.js"),
   Chunk31545 = require("./31545.js"),
   Chunk319567 = require("./319567.js");
 
-function y(e) {
+function b(e) {
   var t;
   let {
     applicationId: n,
-    onMouseDown: y,
+    onMouseDown: b,
     onMouseMove: O,
-    onMouseLeave: A,
-    onFocus: v,
-    idle: S
-  } = e, I = (0, l.h)(n), T = (0, d.Us)() === g.BRT.POPOUT, {
+    onMouseLeave: v,
+    onFocus: A,
+    idle: I
+  } = e, S = (0, l.h)(n), T = (0, d.Us)() === g.BRT.POPOUT, {
     parentAnalyticsLocation: C
   } = (0, o.Ay)(), N = () => {
     (0, c.X)(C, c.O.POPOUT, true), (0, s.A)({
@@ -44,20 +44,20 @@ function y(e) {
     })
   };
   return (0, r.jsxs)("div", {
-    className: b._v,
+    className: y._v,
     onMouseMove: O,
-    onMouseDown: y,
-    onMouseLeave: A,
+    onMouseDown: b,
+    onMouseLeave: v,
     children: [(0, r.jsx)("div", {
-      className: b.K1,
+      className: y.K1,
       children: (0, r.jsx)(p.X, {
-        idle: S,
-        title: null != (t = null == I ? true : I.name) ? t : "",
-        onJumpToChannel: v,
+        idle: I,
+        title: null != (t = null == S ? true : S.name) ? t : "",
+        onJumpToChannel: A,
         preventIdleComponent: f.A
       })
     }), (0, r.jsx)("div", {
-      className: b.q6,
+      className: y.q6,
       children: (0, r.jsxs)(u.A, {
         grow: 1,
         shrink: 1,

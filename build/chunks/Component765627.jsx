@@ -24,79 +24,79 @@ function A(e) {
   let {
     tab: t,
     setTab: n,
-    badgeState: f,
-    closePopout: h
+    badgeState: p,
+    closePopout: f
   } = e, {
-    enabled: b,
+    enabled: g,
     inInbox: A
   } = c.A.useExperiment({
     location: "RecentsPopout"
-  }), O = (0, d.Sc)({
+  }), _ = (0, d.Sc)({
     location: "RecentsHeader"
-  }), j = (0, l.bG)([u.A], () => u.A.getOverdueMessageReminderCount());
+  }), O = (0, l.bG)([u.A], () => u.A.getOverdueMessageReminderCount());
   return (0, r.jsxs)(o.Y9, {
-    className: m.wx,
+    className: b.wx,
     children: [(0, r.jsxs)("div", {
-      className: m.qd,
-      children: [(0, r.jsx)(s.K$s, {
+      className: b.qd,
+      children: [(0, r.jsx)(a.K$s, {
         size: "md",
         color: "currentColor",
-        className: m.yH
-      }), (0, r.jsx)(s.Heading, {
-        className: m.Hi,
+        className: b.yH
+      }), (0, r.jsx)(a.Heading, {
+        className: b.Hi,
         variant: "text-lg/semibold",
         color: "interactive-text-active",
-        children: g.intl.string(g.t.GSmTKJ)
-      }), (0, r.jsxs)(s.sqX, {
-        className: m.ne,
+        children: m.intl.string(m.t.GSmTKJ)
+      }), (0, r.jsxs)(a.sqX, {
+        className: b.ne,
         onClick: e => e.stopPropagation(),
         focusProps: {
           enabled: false
         },
-        "aria-label": g.intl.string(g.t["8k+6QY"]),
+        "aria-label": m.intl.string(m.t["8k+6QY"]),
         children: [(0, r.jsx)(y, {
           tab: t
-        }), (0, r.jsx)(p.A, {
-          closePopout: h
+        }), (0, r.jsx)(h.A, {
+          closePopout: f
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: m.YF,
-      children: (0, r.jsxs)(s.VQ0, {
+      className: b.YF,
+      children: (0, r.jsxs)(a.VQ0, {
         selectedItem: t,
         type: "top",
         look: "brand",
         onItemSelect: n,
-        className: m.$H,
-        children: [(0, r.jsxs)(s.VQ0.Item, {
+        className: b.$H,
+        children: [(0, r.jsxs)(a.VQ0.Item, {
           id: i.Y2.FOR_YOU,
-          "aria-label": g.intl.string(g.t["En+D+u"]),
-          className: m.Mf,
-          children: [g.intl.string(g.t["En+D+u"]), (null == f ? true : f.badgeForYou) ? (0, r.jsx)(s.SC0, {
-            color: a.A.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css,
-            className: m.bG
+          "aria-label": m.intl.string(m.t["En+D+u"]),
+          className: b.Mf,
+          children: [m.intl.string(m.t["En+D+u"]), (null == p ? true : p.badgeForYou) ? (0, r.jsx)(a.SC0, {
+            color: s.A.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css,
+            className: b.bG
           }) : null]
-        }), (0, r.jsx)(s.VQ0.Item, {
+        }), (0, r.jsx)(a.VQ0.Item, {
           id: i.Y2.UNREADS,
-          className: m.Mf,
-          children: g.intl.string(g.t.sRUdB8)
-        }), (0, r.jsx)(s.VQ0.Item, {
-          "aria-label": g.intl.string(g.t.GRZF96),
+          className: b.Mf,
+          children: m.intl.string(m.t.sRUdB8)
+        }), (0, r.jsx)(a.VQ0.Item, {
+          "aria-label": m.intl.string(m.t.GRZF96),
           id: i.Y2.MENTIONS,
-          className: m.Mf,
-          children: g.intl.string(g.t.GRZF96)
-        }), b && A ? (0, r.jsx)(s.VQ0.Item, {
-          "aria-label": g.intl.string(g.t["2pAkDA"]),
+          className: b.Mf,
+          children: m.intl.string(m.t.GRZF96)
+        }), g && A ? (0, r.jsx)(a.VQ0.Item, {
+          "aria-label": m.intl.string(m.t["2pAkDA"]),
           id: i.Y2.BOOKMARKS,
-          className: m.Mf,
-          children: 0 === j ? g.intl.string(g.t["2pAkDA"]) : g.intl.formatToPlainString(g.t.I4fryG, {
-            count: j
+          className: b.Mf,
+          children: 0 === O ? m.intl.string(m.t["2pAkDA"]) : m.intl.formatToPlainString(m.t.I4fryG, {
+            count: O
           })
-        }) : null, O ? (0, r.jsx)(s.VQ0.Item, {
+        }) : null, _ ? (0, r.jsx)(a.VQ0.Item, {
           "aria-label": "scheduled",
           id: i.Y2.SCHEDULED,
-          className: m.Mf,
-          children: g.intl.string(g.t.Fn6Odn)
+          className: b.Mf,
+          children: m.intl.string(m.t.Fn6Odn)
         }) : null]
       })
     })]
@@ -107,5 +107,5 @@ function y(e) {
   let {
     tab: t
   } = e;
-  return t === i.Y2.FOR_YOU ? (0, r.jsx)(f.xc, {}) : t === i.Y2.UNREADS ? (0, r.jsx)(b.NH, {}) : t === i.Y2.MENTIONS ? (0, r.jsx)(h.A, {}) : null
+  return t === i.Y2.FOR_YOU ? (0, r.jsx)(p.xc, {}) : t === i.Y2.UNREADS ? (0, r.jsx)(g.NH, {}) : t === i.Y2.MENTIONS ? (0, r.jsx)(f.A, {}) : null
 }

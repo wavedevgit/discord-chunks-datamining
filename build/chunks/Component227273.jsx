@@ -2,7 +2,7 @@
 /** chunk id: 227273, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./896048.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk657989 = require("./657989.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,20 +30,20 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
 let O = e => e ? g.intl.string(g.t.QX14gI) : g.intl.string(g.t.RGadQR),
-  A = e => {
+  v = e => {
     let {
       isShowingAll: t,
       onClick: n
@@ -62,7 +62,7 @@ let O = e => e ? g.intl.string(g.t.QX14gI) : g.intl.string(g.t.RGadQR),
       })]
     })
   },
-  v = e => {
+  A = e => {
     let {
       title: t,
       description: n,
@@ -103,7 +103,7 @@ let O = e => e ? g.intl.string(g.t.QX14gI) : g.intl.string(g.t.RGadQR),
       })
     })
   },
-  S = e => {
+  I = e => {
     let {
       className: t,
       isSubscriberNitroHome: n = false
@@ -111,12 +111,12 @@ let O = e => e ? g.intl.string(g.t.QX14gI) : g.intl.string(g.t.RGadQR),
       styles: E
     }), p = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
       analyticsLocations: g
-    } = (0, d.Ay)(), b = () => {
+    } = (0, d.Ay)(), y = () => {
       _.default.track(m.HAw.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
         location_stack: g,
         was_expanded: a
       }), u(!a)
-    }, S = [f.emoji, f.streaming, f.upload, f.customAppIcons, f.soundboard, f.videoBackground, f.superReactions, f.stickersPremiumPerk, f.badgeAlt];
+    }, I = [f.emoji, f.streaming, f.upload, f.customAppIcons, f.soundboard, f.videoBackground, f.superReactions, f.stickersPremiumPerk, f.badgeAlt];
     return (0, r.jsxs)("div", {
       className: s()(E.perksContainer, t, {
         [E.partiallyHidden]: n && !a,
@@ -131,15 +131,15 @@ let O = e => e ? g.intl.string(g.t.QX14gI) : g.intl.string(g.t.RGadQR),
         className: s()(E.perkCardContainer, {
           [E.perkCardContainerExpanded]: a
         }),
-        children: S.map(e => null != e && (0, r.jsx)(v, y({}, e), e.title))
+        children: I.map(e => null != e && (0, r.jsx)(A, b({}, e), e.title))
       }), n && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: s()({
             [E.sizeGizmo]: !a,
             [E.sizeGizmoExpanded]: a
           }),
-          children: (0, r.jsx)(A, {
-            onClick: b,
+          children: (0, r.jsx)(v, {
+            onClick: y,
             isShowingAll: a
           })
         }), (0, r.jsx)("div", {

@@ -32,7 +32,7 @@ function _(e) {
     messageId: true
   })(), E = (0, a.h)(t.applicationId);
   if (null == E) return null;
-  let b = f.intl.format(f.t.m7Lwas, {
+  let y = f.intl.format(f.t.m7Lwas, {
     username: m,
     usernameHook: g,
     gameName: E.name,
@@ -53,7 +53,7 @@ function _(e) {
     compact: h,
     contentClassName: p.Qs,
     children: (0, r.jsx)("div", {
-      children: b
+      children: y
     })
   })
 }

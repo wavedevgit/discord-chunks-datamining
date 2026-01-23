@@ -1,7 +1,7 @@
 /** Chunk was on 94503 **/
 /** chunk id: 420775, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => R
+  A: () => D
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -28,35 +28,35 @@ var Chunk627968 = require("./627968.js"),
   Chunk438536 = require("./438536.js"),
   Chunk618695 = require("./618695.js");
 
-function R(e) {
+function D(e) {
   var t, n;
   let {
     userId: a,
-    guildId: R,
-    location: D,
+    guildId: D,
+    location: C,
     className: L,
-    onNavigate: x
-  } = e, C = r.useRef(null), M = (0, o.bG)([f.Ay], () => f.Ay.getGuildSidebarState(R), [R]), v = r.useRef(0), [j, U] = r.useState(null != (t = null == M ? true : M.details.additionalSearchQuery) ? t : {}), y = (0, N.KR)(a, R, {
+    onNavigate: b
+  } = e, x = r.useRef(null), M = (0, o.bG)([h.Ay], () => h.Ay.getGuildSidebarState(D), [D]), v = r.useRef(0), [j, U] = r.useState(null != (t = null == M ? true : M.details.additionalSearchQuery) ? t : {}), y = (0, N.KR)(a, D, {
     addtionalQuery: j,
     shouldDispatch: true
-  }), P = (0, o.bG)([I.default], () => I.default.getUser(a), [a]), k = (0, o.bG)([h.Ay], () => h.Ay.getMember(R, a), [R, a]);
-  (0, u.u5)(() => {
+  }), k = (0, o.bG)([O.default], () => O.default.getUser(a), [a]), P = (0, o.bG)([I.Ay], () => I.Ay.getMember(D, a), [D, a]);
+  (0, c.u5)(() => {
     let e = null == M ? true : M.details.scrollOffset;
     if (null != e) {
       var t;
-      null == (t = C.current) || t.scrollTo({
+      null == (t = x.current) || t.scrollTo({
         to: e,
         animate: false
       })
     }
   });
   let F = r.useCallback(e => {
-      null == M || (v.current = e.target.scrollTop, (0, O.z)(R, a, M.baseChannelId, {
-        modViewPanel: S.g.MESSAGE_HISTORY,
+      null == M || (v.current = e.target.scrollTop, (0, m.z)(D, a, M.baseChannelId, {
+        modViewPanel: p.g.MESSAGE_HISTORY,
         additionalSearchQuery: j,
         scrollOffset: v.current
       }))
-    }, [R, a, M, j]),
+    }, [D, a, M, j]),
     w = (0, s.throttle)(F, 300),
     X = r.useCallback(e => {
       var t, n;
@@ -90,12 +90,12 @@ function R(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t);
-      U(l), (0, O.z)(R, a, M.baseChannelId, {
-        modViewPanel: S.g.MESSAGE_HISTORY,
+      U(l), (0, m.z)(D, a, M.baseChannelId, {
+        modViewPanel: p.g.MESSAGE_HISTORY,
         additionalSearchQuery: l,
         scrollOffset: v.current
       })
-    }, [R, a, M, j]),
+    }, [D, a, M, j]),
     B = null != (n = null == j ? true : j.offset) ? n : 0,
     V = (0, o.bG)([d.A], () => {
       if (null == y.result) return [];
@@ -140,15 +140,15 @@ function R(e) {
         showNoResultsAlt: false
       }
     }, [y.result, B]);
-  return null == P || null == k || null == H ? null : (0, l.jsxs)("div", {
-    className: i()(b.kL, L),
-    children: [(0, l.jsx)(m.A, {
-      guildId: R,
+  return null == k || null == P || null == H ? null : (0, l.jsxs)("div", {
+    className: i()(G.kL, L),
+    children: [(0, l.jsx)(f.A, {
+      guildId: D,
       userId: a,
-      onNavigate: x
-    }), (0, l.jsx)(c.T7Y, {
-      className: G.W,
-      ref: C,
+      onNavigate: b
+    }), (0, l.jsx)(u.T7Y, {
+      className: R.W,
+      ref: x,
       onScroll: w,
       children: (0, l.jsx)(A.A, {
         messages: V,
@@ -156,9 +156,9 @@ function R(e) {
         renderEmbeds: true,
         blockCount: 0,
         ignoreCount: 0,
-        scrollTo: p.tEg,
+        scrollTo: S.tEg,
         onPageChange: X,
-        onBlockedResultsClick: p.tEg
+        onBlockedResultsClick: S.tEg
       })
     })]
   })

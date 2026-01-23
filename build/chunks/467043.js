@@ -2,6 +2,6 @@
 /** chunk id: 467043, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  r: "abff6371a1d08477",
-  S: "_357544c37ca20ba6"
+  r: "balanceCounterMargin__98f64",
+  S: "balanceCounterText__98f64"
 }

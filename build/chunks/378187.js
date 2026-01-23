@@ -49,11 +49,11 @@ function P(e) {
 
 function D(e) {
   let t = E.A.quests;
-  for (let n of (0, A.jm)(t, e))
+  for (let n of (0, v.jm)(t, e))
     if (n.config.features.includes(i.L.ACTIVITY_QUEST_AUTO_ENROLLMENT)) return void(0, m.Oy)(n.id, {
-      questContent: b.uF.RUNNING_ACTIVITY,
+      questContent: y.uF.RUNNING_ACTIVITY,
       questContentCTA: g.Cy.ACCEPT_QUEST,
-      sourceQuestContent: b.uF.RUNNING_ACTIVITY
+      sourceQuestContent: y.uF.RUNNING_ACTIVITY
     })
 }
 
@@ -110,7 +110,7 @@ class j extends Chunk439372.A {
     for (let t of Object.keys(i)) {
       let n = i[t];
       for (let i of r.values()) {
-        let r = (0, v.pU)(i);
+        let r = (0, A.pU)(i);
         if (!P(i) || null == r) continue;
         let a = r.find(e => e === t);
         null != a ? e.set(i.id, {
@@ -132,7 +132,7 @@ class j extends Chunk439372.A {
     let r = n.id;
     if (null == r) return e;
     for (let t of E.A.quests.values()) {
-      let n = (0, v.a2)(t);
+      let n = (0, A.a2)(t);
       P(t) && null != n && n === r && e.set(t.id, {
         applicationId: r
       })
@@ -147,13 +147,13 @@ class j extends Chunk439372.A {
     let r = E.A.quests;
     for (let n of t.keys())
       for (let t of r.values()) {
-        let r = (0, v.vS)(t);
+        let r = (0, A.vS)(t);
         P(t) && null != r && r === n && e.set(t.id, {
           applicationId: n
         })
       }
-    for (let t of r.values()) P(t) && (0, S._e)(t) && n && e.set(t.id, {
-      applicationId: I.ej
+    for (let t of r.values()) P(t) && (0, I._e)(t) && n && e.set(t.id, {
+      applicationId: S.ej
     });
     return w.log("~ getActivelyProgressingActivityQuestIds -> Actively progressing questIds: ", Array.from(e.keys())), e
   }
@@ -168,7 +168,7 @@ class j extends Chunk439372.A {
       let {
         progressSeconds: n,
         targetSeconds: i
-      } = (0, v.Yh)(t, r.o.DESKTOP), a = Math.max(0, (i - n) * _.A.Millis.SECOND);
+      } = (0, A.Yh)(t, r.o.DESKTOP), a = Math.max(0, (i - n) * _.A.Millis.SECOND);
       return a <= C ? a + R : C
     }), T(this, "initiateHeartbeat", (e, t, n) => {
       let i = this.heartbeats[t];

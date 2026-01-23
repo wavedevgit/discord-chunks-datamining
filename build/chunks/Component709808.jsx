@@ -1,7 +1,7 @@
 /** Chunk was on 41031 **/
 /** chunk id: 709808, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  B: () => A
+  B: () => N
 }), require("./638769.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,7 +13,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk855522 = require("./855522.js"),
   Chunk128262 = require("./128262.js");
 
-function N(e, t, a) {
+function _(e, t, a) {
   return t in e ? Object.defineProperty(e, t, {
     value: a,
     enumerable: true,
@@ -21,7 +21,7 @@ function N(e, t, a) {
     writable: true
   }) : e[t] = a, e
 }
-class A extends Chunk64700.PureComponent {
+class N extends Chunk64700.PureComponent {
   componentDidMount() {
     this.callChangeLocale(d.A.getLocale())
   }
@@ -29,9 +29,9 @@ class A extends Chunk64700.PureComponent {
     let {
       isOpen: e,
       languages: t,
-      current: l
+      current: s
     } = this.state, {
-      className: r
+      className: l
     } = this.props, d = null;
     return null != t && (d = t.sort((e, t) => e.code < t.code ? false : +(e.code > t.code)).map(e => {
       let t = function(e) {
@@ -41,62 +41,62 @@ class A extends Chunk64700.PureComponent {
             return null
           }
         }(e.code),
-        r = () => this.setLocale(e.code);
-      return null == t ? null : (0, s.jsxs)("li", {
-        className: (0, o.t)(u, "locale", null != l && e.code === l.code ? "Current" : null),
-        onClick: r,
-        children: [(0, s.jsx)("img", {
+        l = () => this.setLocale(e.code);
+      return null == t ? null : (0, r.jsxs)("li", {
+        className: (0, o.t)(u, "locale", null != s && e.code === s.code ? "Current" : null),
+        onClick: l,
+        children: [(0, r.jsx)("img", {
           className: u.localeImage,
           src: t,
           alt: e.name
         }), e.name]
       }, e.code)
-    })), (0, s.jsxs)("div", {
-      className: n()(u.localePicker, r),
+    })), (0, r.jsxs)("div", {
+      className: n()(u.localePicker, l),
       onMouseEnter: this.open,
       onMouseLeave: this.close,
       onClick: this.toggle,
-      children: [(0, s.jsxs)(i.s, {
+      children: [(0, r.jsxs)(i.s, {
         align: i.s.Align.CENTER,
         className: (0, o.t)(u, "opener", e ? "Open" : null),
-        children: [(0, s.jsx)("span", {
+        children: [(0, r.jsx)("span", {
           className: u.line
-        }), (0, s.jsx)("img", {
+        }), (0, r.jsx)("img", {
           className: u.localeIcon,
           src: c.T.ICON_TRANSLATE,
           alt: "Choose Locale"
-        }), (0, s.jsx)("img", {
+        }), (0, r.jsx)("img", {
           className: u.arrowIcon,
           src: c.T.ICON_ARROW_DOWN,
           alt: "Open Locale"
         })]
-      }), (0, s.jsx)("ul", {
+      }), (0, r.jsx)("ul", {
         className: (0, o.t)(u, "localeList", e ? "Open" : "Closed"),
         children: d
       })]
     })
   }
   constructor(...e) {
-    super(...e), N(this, "state", {
+    super(...e), _(this, "state", {
       languages: d.A.getLanguages().filter(e => e.enabled),
       current: d.A.getLocaleInfo(),
       isOpen: false
-    }), N(this, "setLocale", e => {
+    }), _(this, "setLocale", e => {
       null != d.A && (d.A.setLocale(e), this.callChangeLocale(e))
-    }), N(this, "callChangeLocale", e => {
+    }), _(this, "callChangeLocale", e => {
       let {
         onChange: t
       } = this.props;
       null != t && t(e)
-    }), N(this, "open", () => {
+    }), _(this, "open", () => {
       this.setState({
         isOpen: true
       })
-    }), N(this, "close", () => {
+    }), _(this, "close", () => {
       this.setState({
         isOpen: false
       })
-    }), N(this, "toggle", () => {
+    }), _(this, "toggle", () => {
       let {
         isOpen: e
       } = this.state;

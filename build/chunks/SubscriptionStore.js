@@ -54,13 +54,13 @@ let h = null,
   m = null,
   g = null,
   E = null,
-  b = null,
-  y = false,
+  y = null,
+  b = false,
   O = null,
-  A = false,
   v = false,
-  S = null,
-  I = false,
+  A = false,
+  I = null,
+  S = false,
   T = null;
 
 function C(e) {
@@ -72,7 +72,7 @@ function C(e) {
     if (e.user_id !== u) return;
     let t = o.h.createFromServer(e);
     r[t.id] = t, U(t) && (i[t.id] = t, t.type === c.rzx.GUILD && t.status !== c.Dmq.ENDED && a.push(t), t.type === c.rzx.APPLICATION && t.status !== c.Dmq.ENDED && s.push(t))
-  }), h = r, m = i, E = a, b = s, T = n
+  }), h = r, m = i, E = a, y = s, T = n
 }
 
 function N(e) {
@@ -100,8 +100,8 @@ function R(e) {
   })), null != E && n.type === c.rzx.GUILD && (E = N({
     activeSubscriptions: E,
     record: n
-  })), null != b && n.type === c.rzx.APPLICATION && (E = N({
-    activeSubscriptions: b,
+  })), null != y && n.type === c.rzx.APPLICATION && (E = N({
+    activeSubscriptions: y,
     record: n
   }))
 }
@@ -110,9 +110,9 @@ function w(e) {
   let {
     subscription: t
   } = e;
-  if (y = true, I = false, null != t) {
+  if (b = true, S = false, null != t) {
     if (t.user_id !== l.default.getId()) {
-      y = false;
+      b = false;
       return
     }
     g = o.h.createFromServer(t)
@@ -120,16 +120,16 @@ function w(e) {
 }
 
 function P() {
-  I = false
+  S = false
 }
 
 function D(e) {
   let {
     subscription: t
   } = e;
-  if (A = true, null != t) {
+  if (v = true, null != t) {
     if (t.user_id !== l.default.getId()) {
-      A = false;
+      v = false;
       return
     }
     O = o.h.createFromServer(t)
@@ -137,27 +137,27 @@ function D(e) {
 }
 
 function x() {
-  v = true
+  A = true
 }
 
 function L() {
-  I = true
+  S = true
 }
 
 function j(e) {
   let {
     eligible: t
   } = e;
-  S = t, v = false
+  I = t, A = false
 }
 
 function M(e) {
   let {} = e;
-  S = false, v = false
+  I = false, A = false
 }
 
 function k() {
-  h = null, m = null, g = null, E = null, b = null, y = false, O = null, A = false, v = false, I = false, T = null
+  h = null, m = null, g = null, E = null, y = null, b = false, O = null, v = false, A = false, S = false, T = null
 }
 
 function U(e) {
@@ -183,10 +183,10 @@ class V extends(r = Chunk311907.Ay.Store) {
     return null != h
   }
   hasFetchedMostRecentPremiumTypeSubscription() {
-    return y
+    return b
   }
   hasFetchedPreviousPremiumTypeSubscription() {
-    return A
+    return v
   }
   getPremiumSubscription() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
@@ -212,7 +212,7 @@ class V extends(r = Chunk311907.Ay.Store) {
     return E
   }
   getActiveApplicationSubscriptions() {
-    return b
+    return y
   }
   getSubscriptionForPlanIds(e) {
     var t;
@@ -228,13 +228,13 @@ class V extends(r = Chunk311907.Ay.Store) {
     return O
   }
   getIsSubscriptionEligibleForReward() {
-    return S
+    return I
   }
   getIsFetchingSubscriptionRewardEligibility() {
-    return v
+    return A
   }
   getIsFetchingMostRecentSubscription() {
-    return I
+    return S
   }
   getLastLazyPerkSync() {
     return T

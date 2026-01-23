@@ -8,10 +8,10 @@ require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk606256 = require("./606256.jsx"),
   Chunk985018 = require("./985018.jsx");
-let s = "DOWNLOAD_APPS";
+let a = "DOWNLOAD_APPS";
 
 function o() {
-  let e = (0, l.red)(e => (0, l.fDT)(e, s));
+  let e = (0, l.red)(e => (0, l.fDT)(e, a));
   return (0, r.jsx)(i.A, {
     id: "app-download-button",
     onClick: () => {
@@ -40,11 +40,11 @@ function o() {
           source: "Guilds"
         }, t))
       }, {
-        modalKey: s
+        modalKey: a
       })
     },
     selected: e,
-    tooltip: a.intl.string(a.t.Z7jwrJ),
+    tooltip: s.intl.string(s.t.Z7jwrJ),
     icon: l.s3U
   })
 }

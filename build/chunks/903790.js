@@ -35,7 +35,7 @@ function _(e) {
       for (let t of g) c.Ay.isMember(h, t) && e.push(t);
       return e
     }, [g, h]),
-    b = r.useMemo(() => {
+    y = r.useMemo(() => {
       if (null == _ || 0 === E.length) return p;
       let e = new Set;
       for (let t of E) {
@@ -47,5 +47,5 @@ function _(e) {
       }
       return e
     }, [E, _]);
-  return r.useMemo(() => null == t ? true : t.filter(e => b.has(e.author_id)), [t, b])
+  return r.useMemo(() => null == t ? true : t.filter(e => y.has(e.author_id)), [t, y])
 }

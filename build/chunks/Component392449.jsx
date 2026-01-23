@@ -94,46 +94,46 @@ function R(e) {
     selected: o,
     disabled: u,
     onPressDestination: d,
-    "aria-setsize": b,
+    "aria-setsize": f,
     "aria-posinset": p
   } = e, m = r.useRef(false), h = r.useCallback(() => {
     u || null == d || d(t)
   }, [d, u, t]);
-  return (0, f.l0)(() => () => {
+  return (0, b.l0)(() => () => {
     m.current && (m.current = false, null == d || d(t, {
       transitionToDestination: false,
       closeAfterSend: false
     }))
   }), (0, l.jsxs)(c.DUT, {
-    className: a()(L.HP, {
-      [L.r9]: u
+    className: a()(D.HP, {
+      [D.r9]: u
     }),
     onClick: h,
     "aria-selected": o,
-    "aria-setsize": b,
+    "aria-setsize": f,
     "aria-posinset": p,
     children: [(0, l.jsxs)("div", {
-      className: L.D_,
+      className: D.D_,
       children: [(0, l.jsx)("div", {
-        className: L.P0,
+        className: D.P0,
         children: n
       }), (0, l.jsxs)("div", {
-        className: L.WD,
+        className: D.WD,
         children: [(0, l.jsx)(c.Text, {
           tag: "strong",
-          className: L.Pf,
+          className: D.Pf,
           variant: "text-md/semibold",
           lineClamp: 1,
           children: i
         }), (0, l.jsx)(c.Text, {
-          className: L.J2,
+          className: D.J2,
           variant: "text-xs/normal",
           color: "text-muted",
           children: s
         })]
       })]
     }), (0, l.jsx)("div", {
-      className: L.kv,
+      className: D.kv,
       children: (0, l.jsx)(c.P7L, {
         checked: o
       })
@@ -145,9 +145,9 @@ function F(e) {
   let {
     user: t,
     subLabel: n
-  } = e, r = I(e, ["user", "subLabel"]), i = T.Ay.useName(t), a = T.Ay.useUserTag(t, {
+  } = e, r = I(e, ["user", "subLabel"]), i = N.Ay.useName(t), a = N.Ay.useUserTag(t, {
     decoration: "never"
-  }), s = (0, u.bG)([w.A], () => w.A.getNickname(t.id)), o = (0, u.bG)([O.A], () => O.A.getStatus(t.id));
+  }), s = (0, u.bG)([_.A], () => _.A.getNickname(t.id)), o = (0, u.bG)([O.A], () => O.A.getStatus(t.id));
   return (0, l.jsx)(R, M(k({}, r), {
     icon: (0, l.jsx)(d.A, {
       "aria-hidden": true,
@@ -180,17 +180,17 @@ function G(e) {
   let {
     channel: t,
     subLabel: n
-  } = e, r = I(e, ["channel", "subLabel"]), i = (0, u.bG)([j.A], () => j.A.getGuild(null == t ? true : t.guild_id)), a = (0, p.Ay)(t), s = (0, u.bG)([v.A, P.default, w.A], () => {
+  } = e, r = I(e, ["channel", "subLabel"]), i = (0, u.bG)([j.A], () => j.A.getGuild(null == t ? true : t.guild_id)), a = (0, p.Ay)(t), s = (0, u.bG)([v.A, w.default, _.A], () => {
     let e = v.A.getChannel(t.parent_id);
-    return null == e ? null : (0, p.m1)(e, P.default, w.A, false)
-  }), d = (0, u.bG)([S.Ay], () => S.Ay.lastMessageTimestamp(t.id, D.P.CHANNEL)), f = null == i ? true : i.name;
+    return null == e ? null : (0, p.m1)(e, w.default, _.A, false)
+  }), d = (0, u.bG)([S.Ay], () => S.Ay.lastMessageTimestamp(t.id, E.P.CHANNEL)), b = null == i ? true : i.name;
   if (t.isThread() || t.isForumPost()) {
     let e = t.isForumPost() ? c.bSJ : c.N$i;
-    f = (0, l.jsxs)("div", {
-      className: L.vr,
+    b = (0, l.jsxs)("div", {
+      className: D.vr,
       children: [(0, l.jsx)(e, {
         color: c.LU0.colors.TEXT_SUBTLE,
-        className: L.Q9
+        className: D.Q9
       }), (0, l.jsx)(c.Text, {
         variant: "text-xs/medium",
         color: "text-subtle",
@@ -198,14 +198,14 @@ function G(e) {
         children: s
       }), null != d ? (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(c.Text, {
-          className: L.Ql,
+          className: D.Ql,
           variant: "text-xs/medium",
           color: "text-subtle",
           children: "•"
         }), (0, l.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-subtle",
-          children: (0, C.Fe)(o()(d))
+          children: (0, P.Fe)(o()(d))
         })]
       }) : null]
     })
@@ -217,7 +217,7 @@ function G(e) {
       channel: t
     }),
     label: a,
-    subLabel: null != n ? n : f
+    subLabel: null != n ? n : b
   }))
 }
 
@@ -233,46 +233,46 @@ function q(e) {
     return null != (e = null == n ? true : n.map(y.I)) ? e : []
   }, [n]);
   return r.useMemo(() => {
-    let e = t.filter(e => e.type !== b.rD.HEADER);
+    let e = t.filter(e => e.type !== f.rD.HEADER);
     return e.map((t, n) => {
       let {
         type: r,
         record: u
-      } = t, c = r === b.rD.USER ? {
+      } = t, c = r === f.rD.USER ? {
         type: "user",
         id: u.id
       } : {
         type: "channel",
         id: u.id
-      }, d = (0, y.I)(c), f = null != s ? function(e, t) {
+      }, d = (0, y.I)(c), b = null != s ? function(e, t) {
         if (t instanceof x.YB && (0, x.zy)(t.type)) {
-          if (null != t.rateLimitPerUser && t.rateLimitPerUser > 0 && !(A.A.can(E.xBc.MANAGE_CHANNELS, t) || A.A.can(E.xBc.MANAGE_MESSAGES, t))) return {
-            label: _.intl.string(_.t.Icu3bf)
+          if (null != t.rateLimitPerUser && t.rateLimitPerUser > 0 && !(A.A.can(T.xBc.MANAGE_CHANNELS, t) || A.A.can(T.xBc.MANAGE_MESSAGES, t))) return {
+            label: L.intl.string(L.t.Icu3bf)
           };
-          if (t.isThread() || t.isForumPost() || !A.A.can(E.xBc.USE_APPLICATION_COMMANDS, t)) return {
-            label: _.intl.string(_.t.v8MLqz)
+          if (t.isThread() || t.isForumPost() || !A.A.can(T.xBc.USE_APPLICATION_COMMANDS, t)) return {
+            label: L.intl.string(L.t.v8MLqz)
           };
           let n = (0, y._5)(t.id);
           if (e.id === n.id) return {
-            label: _.intl.string(_.t.mD4gqe)
+            label: L.intl.string(L.t.mD4gqe)
           }
         }
       }(s, u) : null, p = o.includes(d), m = {
         destination: c,
-        subLabel: null != f ? f.label : true,
-        disabled: a && !p || null != f,
+        subLabel: null != b ? b.label : true,
+        disabled: a && !p || null != b,
         selected: p,
         onPressDestination: i,
         "aria-posinset": n + 1,
         "aria-setsize": e.length
       };
-      return r === b.rD.USER ? (0, l.jsx)(F, k({
+      return r === f.rD.USER ? (0, l.jsx)(F, k({
         user: u
-      }, m), d) : r === b.rD.GROUP_DM ? (0, l.jsx)(z, k({
+      }, m), d) : r === f.rD.GROUP_DM ? (0, l.jsx)(z, k({
         channel: u
-      }, m), d) : r === b.rD.TEXT_CHANNEL || r === b.rD.VOICE_CHANNEL ? (0, l.jsx)(G, k({
+      }, m), d) : r === f.rD.TEXT_CHANNEL || r === f.rD.VOICE_CHANNEL ? (0, l.jsx)(G, k({
         channel: u
-      }, m), d) : void(0, N.xb)(r)
+      }, m), d) : void(0, C.xb)(r)
     })
   }, [a, i, s, t, o])
 }

@@ -2,7 +2,7 @@
 /** chunk id: 308889, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  l: () => b
+  l: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,15 +14,15 @@ var Chunk627968 = require("./627968.js"),
   Chunk997509 = require("./997509.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let g = "NO_SYSTEM_CHANNEL";
+let m = "NO_SYSTEM_CHANNEL";
 
-function b(e) {
+function p(e) {
   var t;
   let {
     guild: n,
-    canManageGuild: b
+    canManageGuild: p
   } = e, {
-    enableDeadchat: m
+    enableDeadchat: f
   } = a.c.useExperiment({
     guildId: n.id,
     location: "guild_settings"
@@ -30,61 +30,61 @@ function b(e) {
     disable: null == n,
     autoTrackExposure: true
   }), {
-    enabled: p
-  } = c.A.useExperiment({
+    enabled: b
+  } = o.A.useExperiment({
     guildId: n.id,
     location: "guild_settings"
   }, {
     disable: null == n,
     autoTrackExposure: false
-  }), x = i.useCallback((e, t) => {
+  }), h = i.useCallback((e, t) => {
     let r = (0, l.lA)(n.systemChannelFlags, e, t);
     d.A.updateGuild({
       systemChannelFlags: r
     })
-  }, [n.systemChannelFlags]), h = i.useCallback(e => x(u.ogj.SUPPRESS_JOIN_NOTIFICATIONS, !e), [x]), j = i.useCallback(e => x(u.ogj.SUPPRESS_PREMIUM_SUBSCRIPTIONS, !e), [x]), O = i.useCallback(e => x(u.ogj.SUPPRESS_UGC_ADDED_NOTIFICATIONS, !e), [x]), y = i.useCallback(e => x(u.ogj.SUPPRESS_GUILD_REMINDER_NOTIFICATIONS, !e), [x]), v = i.useCallback(e => x(u.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES, !e), [x]), A = i.useCallback(e => x(u.ogj.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS, !e), [x]), E = i.useCallback(e => x(u.ogj.SUPPRESS_CHANNEL_PROMPT_DEADCHAT, !e), [x]), N = i.useCallback(e => x(u.ogj.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES, !e), [x]), _ = null != (t = n.systemChannelId) ? t : g, S = (0, o.g6)(n), T = S || (0, l.Lt)(n.systemChannelFlags, u.ogj.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS), I = S || (0, l.Lt)(n.systemChannelFlags, u.ogj.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
+  }, [n.systemChannelFlags]), x = i.useCallback(e => h(u.ogj.SUPPRESS_JOIN_NOTIFICATIONS, !e), [h]), j = i.useCallback(e => h(u.ogj.SUPPRESS_PREMIUM_SUBSCRIPTIONS, !e), [h]), _ = i.useCallback(e => h(u.ogj.SUPPRESS_UGC_ADDED_NOTIFICATIONS, !e), [h]), O = i.useCallback(e => h(u.ogj.SUPPRESS_GUILD_REMINDER_NOTIFICATIONS, !e), [h]), v = i.useCallback(e => h(u.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES, !e), [h]), y = i.useCallback(e => h(u.ogj.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS, !e), [h]), A = i.useCallback(e => h(u.ogj.SUPPRESS_CHANNEL_PROMPT_DEADCHAT, !e), [h]), E = i.useCallback(e => h(u.ogj.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES, !e), [h]), N = null != (t = n.systemChannelId) ? t : m, S = (0, c.g6)(n), I = S || (0, l.Lt)(n.systemChannelFlags, u.ogj.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS), T = S || (0, l.Lt)(n.systemChannelFlags, u.ogj.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.dOG, {
-      label: f.intl.string(f.t["+f0bXQ"]),
+      label: g.intl.string(g.t["+f0bXQ"]),
       checked: !(0, l.Lt)(n.systemChannelFlags, u.ogj.SUPPRESS_JOIN_NOTIFICATIONS),
-      onChange: h,
-      disabled: !b || _ === g
+      onChange: x,
+      disabled: !p || N === m
     }), (0, r.jsx)(s.dOG, {
-      label: f.intl.string(f.t["72k7jf"]),
+      label: g.intl.string(g.t["72k7jf"]),
       checked: !(0, l.Lt)(n.systemChannelFlags, u.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES),
       onChange: v,
-      disabled: !b || _ === g
+      disabled: !p || N === m
     }), (0, r.jsx)(s.dOG, {
-      label: f.intl.string(f.t["2L8NCN"]),
+      label: g.intl.string(g.t["2L8NCN"]),
       checked: !(0, l.Lt)(n.systemChannelFlags, u.ogj.SUPPRESS_PREMIUM_SUBSCRIPTIONS),
       onChange: j,
-      disabled: !b || _ === g
+      disabled: !p || N === m
     }), (0, r.jsx)(s.dOG, {
-      label: f.intl.string(f.t["NvnW+V"]),
+      label: g.intl.string(g.t["NvnW+V"]),
       checked: !(0, l.Lt)(n.systemChannelFlags, u.ogj.SUPPRESS_GUILD_REMINDER_NOTIFICATIONS),
-      onChange: y,
-      disabled: !b || _ === g
-    }), p && (0, r.jsx)(s.dOG, {
-      label: f.intl.string(f.t["CLCoc+"]),
-      checked: !(0, l.Lt)(n.systemChannelFlags, u.ogj.SUPPRESS_UGC_ADDED_NOTIFICATIONS),
       onChange: O,
-      disabled: !b || _ === g
-    }), T && (0, r.jsx)(s.dOG, {
-      label: f.intl.string(f.t["54n19R"]),
-      checked: !(0, l.Lt)(n.systemChannelFlags, u.ogj.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS),
-      onChange: A,
-      disabled: !b || _ === g
+      disabled: !p || N === m
+    }), b && (0, r.jsx)(s.dOG, {
+      label: g.intl.string(g.t["CLCoc+"]),
+      checked: !(0, l.Lt)(n.systemChannelFlags, u.ogj.SUPPRESS_UGC_ADDED_NOTIFICATIONS),
+      onChange: _,
+      disabled: !p || N === m
     }), I && (0, r.jsx)(s.dOG, {
-      label: f.intl.string(f.t["IhF5d+"]),
+      label: g.intl.string(g.t["54n19R"]),
+      checked: !(0, l.Lt)(n.systemChannelFlags, u.ogj.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS),
+      onChange: y,
+      disabled: !p || N === m
+    }), T && (0, r.jsx)(s.dOG, {
+      label: g.intl.string(g.t["IhF5d+"]),
       checked: !(0, l.Lt)(n.systemChannelFlags, u.ogj.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES),
-      onChange: N,
-      disabled: !b || _ === g
-    }), m && (0, r.jsx)(s.dOG, {
-      label: f.intl.string(f.t["3yOX1/"]),
+      onChange: E,
+      disabled: !p || N === m
+    }), f && (0, r.jsx)(s.dOG, {
+      label: g.intl.string(g.t["3yOX1/"]),
       badge: "beta",
       checked: !(0, l.Lt)(n.systemChannelFlags, u.ogj.SUPPRESS_CHANNEL_PROMPT_DEADCHAT),
-      onChange: E,
-      disabled: !b || _ === g
+      onChange: A,
+      disabled: !p || N === m
     })]
   })
 }

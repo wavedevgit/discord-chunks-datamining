@@ -16,7 +16,7 @@ function c(e) {
     selectedSections: n = [],
     onSectionSelect: c,
     controls: u
-  } = e, d = (0, a._B)(), p = 0 === n.length || n.length === d.length, f = i.useMemo(() => p ? "all" : 1 === n.length ? n[0] : "all", [n, p]);
+  } = e, d = (0, a._B)(), p = 0 === n.length || n.length === d.length, h = i.useMemo(() => p ? "all" : 1 === n.length ? n[0] : "all", [n, p]);
   return (0, r.jsxs)("div", {
     className: o.kL,
     children: [(0, r.jsx)(l.Heading, {
@@ -29,7 +29,7 @@ function c(e) {
     }), (0, r.jsxs)(l.VQ0, {
       type: "top",
       look: "brand",
-      selectedItem: f,
+      selectedItem: h,
       onItemSelect: e => {
         null == c || c(e)
       },

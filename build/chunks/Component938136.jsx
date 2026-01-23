@@ -25,7 +25,7 @@ var Chunk889137 = require("./889137.js"),
   Chunk421514 = require("./421514.js"),
   Chunk306499 = require("./306499.js");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +34,20 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function S(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -77,13 +77,13 @@ function C(e) {
     size: (0, o.Te)(s._3J.SIZE_152)
   });
   return (0, r.jsx)("div", {
-    className: y.rk,
-    children: (0, r.jsx)(T, I(v({}, i), {
+    className: b.rk,
+    children: (0, r.jsx)(T, S(A({}, i), {
       avatarDecoration: n,
       src: a,
-      className: y.my,
+      className: b.my,
       size: s._3J.SIZE_152,
-      "aria-label": b.intl.string(b.t.lqaIxI)
+      "aria-label": y.intl.string(y.t.lqaIxI)
     }))
   })
 }
@@ -94,11 +94,11 @@ function N(e) {
     skuId: n
   } = e, i = null == (t = (0, _.V)(n)) ? true : t.config;
   return (0, r.jsxs)("div", {
-    className: y.YS,
+    className: b.YS,
     children: [(0, r.jsx)("img", {
       src: O,
       alt: null == i ? true : i.accessibilityLabel,
-      className: y.Zp
+      className: b.Zp
     }), (0, r.jsx)(h.A, {
       skuId: n
     })]
@@ -110,10 +110,10 @@ function R(e) {
     nameplate: t
   } = e;
   return (0, r.jsx)("div", {
-    className: y.rz,
+    className: b.rz,
     children: (0, r.jsx)(d.A, {
       nameplate: t,
-      className: y.qF,
+      className: b.qF,
       nameplatePreviewSize: "xlarge",
       isHighlighted: true,
       showPlaceholderUser: true
@@ -129,7 +129,7 @@ let w = e => {
     product: s
   } = (0, c.q)(null == t ? true : t.id), o = null == s ? true : s.items[0];
   if ((null == s ? true : s.type) === a.R.BUNDLE) return (0, r.jsx)("div", {
-    className: y.ww,
+    className: b.ww,
     children: (0, r.jsx)(u.X, {
       product: s,
       isHighlighted: false
@@ -149,12 +149,12 @@ let w = e => {
     nameplate: e
   })).otherwise(() => null);
   return null != n && null == l ? (0, r.jsx)("div", {
-    className: y.rk,
+    className: b.rk,
     children: (0, r.jsx)(p.A, {
       defaultAnimationState: f.oA.LOOP,
       giftStyle: n,
       shouldAnimate: true,
-      className: y.__invalid_giftMainAnimation
+      className: b.__invalid_giftMainAnimation
     })
   }) : l
 };

@@ -1,12 +1,12 @@
 /** Chunk was on 54160 **/
 /** chunk id: 587510, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => j
+  A: () => A
 }), require("./896048.js"), require("./747238.js"), require("./812715.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk417597 = require("./417597.js"),
   Chunk990078 = require("./990078.jsx"),
@@ -24,23 +24,23 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk299043 = require("./299043.js"),
   Chunk166723 = require("./166723.js");
-let j = Chunk64700.forwardRef(function(e, t) {
+let A = Chunk64700.forwardRef(function(e, t) {
   let {
     user: r,
-    error: s,
-    formValues: j,
-    displayProfile: _,
-    onChangeFormValue: x,
-    onFocusDisplayName: N,
+    error: a,
+    formValues: A,
+    displayProfile: j,
+    onChangeFormValue: N,
+    onFocusDisplayName: x,
     onFocusUsername: I,
     editState: T,
     footerNotice: P,
     usernameSuggestionLoading: R,
-    oneClickFlow: w
+    oneClickFlow: C
   } = e, {
-    username: C,
+    username: w,
     globalName: L
-  } = j, M = i.useRef(null), D = i.useRef(null), G = i.useMemo(() => r.merge({
+  } = A, M = i.useRef(null), D = i.useRef(null), G = i.useMemo(() => r.merge({
     discriminator: "0000"
   }), [r]), [k, U] = (0, u.zhh)(() => ({
     opacity: 0,
@@ -69,9 +69,9 @@ let j = Chunk64700.forwardRef(function(e, t) {
     {
       createMultipleConfettiAt: B
     } = i.useContext(m.x),
-    H = null == _ ? true : _.getLegacyUsername();
+    H = null == j ? true : j.getLegacyUsername();
   return i.useEffect(() => {
-    F || T !== y.iv.PREVIEW || r.username.includes("pomelo") && (B(window.innerWidth / 2 + 150, 0, {
+    F || T !== O.iv.PREVIEW || r.username.includes("pomelo") && (B(window.innerWidth / 2 + 150, 0, {
       velocity: {
         type: "static-random",
         minValue: {
@@ -97,25 +97,25 @@ let j = Chunk64700.forwardRef(function(e, t) {
       }
     }, 15))
   }, [B, T, r, F]), (0, n.jsxs)("div", {
-    className: a()(v.d3, {
-      [v.Sr]: T === y.iv.PREVIEW
+    className: s()(v.d3, {
+      [v.Sr]: T === O.iv.PREVIEW
     }),
     children: [(0, n.jsxs)("div", {
       className: v.Kq,
       children: [(0, n.jsx)(f.A, {
         user: G,
-        displayProfile: _,
-        themeType: b.d.SIDEBAR
+        displayProfile: j,
+        themeType: S.d.SIDEBAR
       }), (0, n.jsx)(g.A, {
         user: G,
-        displayProfile: _,
-        themeType: b.d.SIDEBAR,
+        displayProfile: j,
+        themeType: S.d.SIDEBAR,
         className: v.my
-      }), T === y.iv.PREVIEW && null != H && (0, n.jsx)("div", {
+      }), T === O.iv.PREVIEW && null != H && (0, n.jsx)("div", {
         className: v.kB,
         children: (0, n.jsx)(c.m, {
           position: "top",
-          text: S.intl.formatToPlainString(S.t.bhrgkA, {
+          text: b.intl.formatToPlainString(b.t.bhrgkA, {
             legacyUsername: H
           }),
           spacing: 12,
@@ -123,12 +123,12 @@ let j = Chunk64700.forwardRef(function(e, t) {
             children: (0, n.jsx)("img", {
               className: v.zF,
               alt: "",
-              src: A
+              src: _
             })
           })
         })
       })]
-    }), T !== y.iv.PREVIEW && (0, n.jsxs)(o.animated.div, {
+    }), T !== O.iv.PREVIEW && (0, n.jsxs)(o.animated.div, {
       style: {
         opacity: k.opacity,
         y: k.y
@@ -136,23 +136,23 @@ let j = Chunk64700.forwardRef(function(e, t) {
       className: v.Kf,
       children: [(0, n.jsxs)(u.BJc, {
         gap: 16,
-        children: [T === y.iv.EDIT_DISPLAY_NAME && (0, n.jsx)(u.ksK, {
-          label: S.intl.string(S.t["9AjdkD"]),
+        children: [T === O.iv.EDIT_DISPLAY_NAME && (0, n.jsx)(u.ksK, {
+          label: b.intl.string(b.t["9AjdkD"]),
           value: null != L ? L : "",
           placeholder: E.Ay.getName(r),
           maxLength: 32,
-          onChange: e => x({
+          onChange: e => N({
             globalName: e
           }),
-          onFocus: N,
+          onFocus: x,
           inputRef: D
-        }), (T === y.iv.EDIT_USERNAME || T === y.iv.SUGGESTION) && (0, n.jsx)(u.ksK, {
-          label: S.intl.string(S.t.IEpCBQ),
+        }), (T === O.iv.EDIT_USERNAME || T === O.iv.SUGGESTION) && (0, n.jsx)(u.ksK, {
+          label: b.intl.string(b.t.IEpCBQ),
           leading: "@",
-          value: null != C ? C : "",
+          value: null != w ? w : "",
           placeholder: r.username,
           maxLength: 32,
-          onChange: e => x({
+          onChange: e => N({
             username: e.replace("@", "")
           }),
           onFocus: I,
@@ -161,12 +161,12 @@ let j = Chunk64700.forwardRef(function(e, t) {
       }), (0, n.jsx)("div", {
         className: v.zC,
         children: (() => {
-          if (null != s) return (0, n.jsx)(h.A, {
+          if (null != a) return (0, n.jsx)(h.A, {
             type: "error",
-            children: s
+            children: a
           });
           if (null != P) {
-            if (T !== y.iv.SUGGESTION) return (0, n.jsx)(u.Text, {
+            if (T !== O.iv.SUGGESTION) return (0, n.jsx)(u.Text, {
               variant: "text-sm/normal",
               children: P
             });
@@ -175,13 +175,13 @@ let j = Chunk64700.forwardRef(function(e, t) {
               children: P
             })
           }
-          return null == P && null == s && (T === y.iv.EDIT_USERNAME || T === y.iv.SUGGESTION) ? (0, n.jsx)(O.A, {
-            username: C,
-            oneClickFlow: w
+          return null == P && null == a && (T === O.iv.EDIT_USERNAME || T === O.iv.SUGGESTION) ? (0, n.jsx)(y.A, {
+            username: w,
+            oneClickFlow: C
           }) : null
         })()
       })]
-    }), T === y.iv.PREVIEW && (0, n.jsxs)("div", {
+    }), T === O.iv.PREVIEW && (0, n.jsxs)("div", {
       className: v.Kg,
       children: [(0, n.jsx)(u.Heading, {
         color: "text-strong",
@@ -195,7 +195,7 @@ let j = Chunk64700.forwardRef(function(e, t) {
         className: v.WI,
         color: "text-muted",
         variant: "text-sm/medium",
-        children: S.intl.format(S.t["9rfonh"], {
+        children: b.intl.format(b.t["9rfonh"], {
           date: (0, p.b5)(r.id)
         })
       })]

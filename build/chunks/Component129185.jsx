@@ -2,7 +2,7 @@
 /** chunk id: 129185, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Xq: () => b,
+  Xq: () => y,
   q6: () => O,
   wE: () => g
 }), require("./896048.js");
@@ -59,7 +59,7 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     children: t
   } = e, n = d.A.useIsEligible(), a = i.useCallback((e, t) => {
@@ -79,7 +79,7 @@ function b(e) {
   }), u.A.emojiAnimationType) : t
 }
 
-function y(e) {
+function b(e) {
   let {
     emojiRef: t,
     channelId: n,
@@ -106,7 +106,7 @@ function O(e) {
     disable: o,
     emojiRef: c
   } = e, u = (0, a.bG)([s.A], () => s.A.useReducedMotion), f = d.A.useIsEligible(), p = (0, l.Us)();
-  return o || p === h.BRT.OVERLAY || !f || null == n || null == t || u || null == c || !m(i) ? null : (0, r.jsx)(y, {
+  return o || p === h.BRT.OVERLAY || !f || null == n || null == t || u || null == c || !m(i) ? null : (0, r.jsx)(b, {
     emojiRef: c,
     channelId: t,
     messageId: n,

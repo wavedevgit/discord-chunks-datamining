@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => l,
-  h: () => A
+  h: () => v
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
@@ -82,7 +82,7 @@ function E(e) {
   delete u[t.id], delete f[t.id]
 }
 
-function b(e) {
+function y(e) {
   var t;
   let {
     guildId: n,
@@ -94,7 +94,7 @@ function b(e) {
   return false !== a && (i.resourceChannels[a] = o({}, r), true)
 }
 
-function y(e) {
+function b(e) {
   var t;
   let {
     guildId: n,
@@ -151,13 +151,13 @@ class O extends(r = Chunk311907.Ay.Store) {
   }
 }
 s(O, "displayName", "GuildOnboardingHomeSettingsStore");
-let A = new O(Chunk73153.h, {
+let v = new O(Chunk73153.h, {
   GUILD_HOME_SETTINGS_FETCH_START: h,
   GUILD_HOME_SETTINGS_FETCH_SUCCESS: _,
   GUILD_HOME_SETTINGS_FETCH_FAIL: m,
   GUILD_HOME_SETTINGS_UPDATE_SUCCESS: _,
   GUILD_HOME_SETTINGS_TOGGLE_ENABLED: g,
-  GUILD_RESOURCE_CHANNEL_UPDATE_SUCCESS: b,
-  GUILD_NEW_MEMBER_ACTION_UPDATE_SUCCESS: y,
+  GUILD_RESOURCE_CHANNEL_UPDATE_SUCCESS: y,
+  GUILD_NEW_MEMBER_ACTION_UPDATE_SUCCESS: b,
   GUILD_DELETE: E
 })

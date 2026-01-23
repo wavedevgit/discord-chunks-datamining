@@ -40,8 +40,8 @@ function p(e) {
     hours: _ * p.hours
   });
   p.minutes = Math.abs((0, o.A)(n, E));
-  var b = (0, i.A)(E, {
+  var y = (0, i.A)(E, {
     minutes: _ * p.minutes
   });
-  return p.seconds = Math.abs((0, c.A)(n, b)), p
+  return p.seconds = Math.abs((0, c.A)(n, y)), p
 }

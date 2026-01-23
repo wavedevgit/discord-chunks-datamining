@@ -27,17 +27,17 @@ let d = 5,
   m = new Set,
   g = new Set,
   E = new Map,
-  b = 0,
-  y = null,
+  y = 0,
+  b = null,
   O = [],
-  A = false,
-  v = 0,
-  S = false,
+  v = false,
+  A = 0,
   I = false,
+  S = false,
   T = null;
 
 function C() {
-  f = null, p = new Set, h = false, m = new Set, g = new Set, E = new Map, b = 0, y = null, O = [], A = false, v = 0, S = false, I = false, T = null, _ = new Map
+  f = null, p = new Set, h = false, m = new Set, g = new Set, E = new Map, y = 0, b = null, O = [], v = false, A = 0, I = false, S = false, T = null, _ = new Map
 }
 let N = () => true;
 
@@ -54,12 +54,12 @@ function w(e) {
     recipient_status: i,
     has_eligible_friends: a
   } = e;
-  S = true, I = a, h = false, f = t, p = new Set(n), T = r, _ = i
+  I = true, S = a, h = false, f = t, p = new Set(n), T = r, _ = i
 }
 
 function P(e) {
   let {} = e;
-  S = false, I = false, T = null, h = false, b += 1, y = Date.now() + 1e3 * Math.pow(2, b)
+  I = false, S = false, T = null, h = false, y += 1, b = Date.now() + 1e3 * Math.pow(2, y)
 }
 
 function D(e) {
@@ -122,7 +122,7 @@ function V(e) {
 }
 
 function F() {
-  A = true
+  v = true
 }
 
 function B(e) {
@@ -130,18 +130,18 @@ function B(e) {
     users: t,
     nextIndex: n
   } = e;
-  A = false, O = t, v = n
+  v = false, O = t, A = n
 }
 
 function H() {
-  A = false
+  v = false
 }
 class Y extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(o.default), this.syncWith([o.default], N)
   }
   checkAndFetchReferralsRemaining() {
-    null == f && !h && b < d && (null == y || y < Date.now()) && (0, l.xM)()
+    null == f && !h && y < d && (null == b || b < Date.now()) && (0, l.xM)()
   }
   getReferralsRemaining() {
     return this.checkAndFetchReferralsRemaining(), f
@@ -162,16 +162,16 @@ class Y extends(r = Chunk311907.Ay.Store) {
     return O
   }
   getFetchingEligibleUsers() {
-    return A
-  }
-  getNextIndexOfEligibleUsers() {
     return v
   }
+  getNextIndexOfEligibleUsers() {
+    return A
+  }
   getIsEligibleToSendReferrals() {
-    return S
+    return I
   }
   getHasEligibleFriends() {
-    return I
+    return S
   }
   getRefreshAt() {
     return T

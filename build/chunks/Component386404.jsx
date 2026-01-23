@@ -10,7 +10,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk111956 = require("./111956.js"),
   s = require.n(Chunk111956),
   Chunk33851 = require("./33851.js"),
-  d = require.n(Chunk33851),
+  u = require.n(Chunk33851),
   Chunk417597 = require("./417597.js"),
   Chunk783878 = require("./783878.jsx"),
   Chunk57222 = require("./57222.jsx"),
@@ -25,14 +25,14 @@ let x = new Set;
 function y(e) {
   let {
     guildId: t
-  } = e, n = (0, b.hs)(t), i = (0, u.bG)([m.A], () => m.A.getSearchStateByGuildId(t), [t], d()), [a, c] = l.useState(i.selectedRoleIds), y = (0, f.H)(t, x, true), O = l.useCallback(e => {
-    (0, p.Ld)(t, {
+  } = e, n = (0, p.hs)(t), i = (0, d.bG)([b.A], () => b.A.getSearchStateByGuildId(t), [t], u()), [a, c] = l.useState(i.selectedRoleIds), y = (0, m.H)(t, x, true), O = l.useCallback(e => {
+    (0, f.Ld)(t, {
       selectedRoleIds: e
     }), n(e)
-  }, [t, n]), v = l.useMemo(() => s()(O, 300), [O]), H = l.useCallback(e => {
+  }, [t, n]), v = l.useMemo(() => s()(O, 300), [O]), _ = l.useCallback(e => {
     let t = new Set(null != e ? e : []);
     c(t), v(t)
-  }, [v]), w = l.useCallback(e => {
+  }, [v]), H = l.useCallback(e => {
     let {
       record: n
     } = e;
@@ -45,7 +45,7 @@ function y(e) {
         guildId: t
       }, n.id)
     }
-  }, [t]), A = l.useCallback((e, t) => {
+  }, [t]), w = l.useCallback((e, t) => {
     let n = new Map(y.map(e => [e.record.id, e]));
     return e.filter(e => {
       let r = n.get(e.value);
@@ -63,10 +63,10 @@ function y(e) {
       hideLabel: true,
       placeholder: g.intl.string(g.t.ZveC7e),
       value: Array.from(a),
-      onSelectionChange: H,
+      onSelectionChange: _,
       options: y,
-      formatOption: w,
-      customMatchSorter: A,
+      formatOption: H,
+      customMatchSorter: w,
       selectionMode: "multiple",
       autoFocus: true,
       closeOnSelect: false,

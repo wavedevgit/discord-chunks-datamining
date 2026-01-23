@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ay: () => C,
-  KN: () => v,
+  KN: () => A,
   U9: () => T
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
@@ -26,7 +26,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk552554 = require("./552554.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk413515 = require("./413515.js");
-let v = e => {
+let A = e => {
     let {
       inOfferExperience: t,
       subscriptionTier: n,
@@ -37,41 +37,41 @@ let v = e => {
       isEligibleForBogoPromotion: u
     } = e, d = u ? (0, r.jsx)(E.A, {
       color: c ? l.XD.BRAND_INVERTED : true,
-      className: s()(A.x6, A.Ph, a, {
-        [A.Sq]: t && o,
-        [A.MF]: o && !c
+      className: s()(v.x6, v.Ph, a, {
+        [v.Sq]: t && o,
+        [v.MF]: o && !c
       }),
-      shinyButtonClassName: c ? true : A.PJ,
+      shinyButtonClassName: c ? true : v.PJ,
       subscriptionTier: n,
       hasActivePromotion: true
     }) : (0, r.jsx)(E.A, {
       color: c || !o ? l.XD.BRAND_INVERTED : true,
-      className: s()(A.x6, A.Ph, a, {
-        [A.Sq]: t && o,
-        [A.MF]: o && !c
+      className: s()(v.x6, v.Ph, a, {
+        [v.Sq]: t && o,
+        [v.MF]: o && !c
       }),
       subscriptionTier: n
     }), f = t && o ? null : (0, r.jsx)(g.A, {
-      className: s()(A.x6, a),
+      className: s()(v.x6, a),
       color: o ? true : l.XD.WHITE
     });
     return (0, r.jsxs)("div", {
-      className: s()(A.UD, i),
+      className: s()(v.UD, i),
       children: [d, " ", f]
     })
   },
-  S = () => (0, r.jsxs)(r.Fragment, {
+  I = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.p, {
-      className: A.zd
+      className: v.zd
     }), (0, r.jsx)(f.p, {
-      className: A.G
+      className: v.G
     }), (0, r.jsx)(f.p, {
-      className: A.zy
+      className: v.zy
     }), (0, r.jsx)(f.p, {
-      className: A.GX
+      className: v.GX
     })]
   }),
-  I = (e, t) => {
+  S = (e, t) => {
     let {
       className: n,
       buttonClassName: i,
@@ -79,44 +79,44 @@ let v = e => {
       isDarkMode: f
     } = e, {
       analyticsLocations: E
-    } = (0, d.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), y = (0, m.QQ)(), I = (0, h.ar)(), C = (0, _.cg)(), N = (0, o.bG)([p.A], () => p.A.affinities).length > 0, R = O.intl.string(O.t.YCZldK);
+    } = (0, d.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), b = (0, m.QQ)(), S = (0, h.ar)(), C = (0, _.cg)(), N = (0, o.bG)([p.A], () => p.A.affinities).length > 0, R = O.intl.string(O.t.YCZldK);
     return (0, r.jsx)(d.f5, {
       value: E,
       children: (0, r.jsxs)("div", {
         ref: t,
-        className: s()(A.kL, n, {
-          [A.V1]: !I,
-          [A.Q4]: !I && N
+        className: s()(v.kL, n, {
+          [v.V1]: !S,
+          [v.Q4]: !S && N
         }),
         "data-testid": "v2-marketing-page-hero-header",
         children: [(0, r.jsxs)("div", {
-          className: I ? A.I6 : A.G1,
+          className: S ? v.I6 : v.G1,
           children: [(0, r.jsx)(c.Heading, {
-            variant: I ? "display-lg" : "display-md",
+            variant: S ? "display-lg" : "display-md",
             color: "always-white",
             children: R
           }), N ? (0, r.jsx)("div", {
-            className: A.DF,
-            children: (0, r.jsx)(b.A, {
+            className: v.DF,
+            children: (0, r.jsx)(y.A, {
               textColor: "always-white",
-              smallerText: !I
+              smallerText: !S
             })
-          }) : (0, r.jsx)(T, {}), C || y ? (0, r.jsx)("div", {
-            className: A.UD,
+          }) : (0, r.jsx)(T, {}), C || b ? (0, r.jsx)("div", {
+            className: v.UD,
             children: (0, r.jsx)(g.A, {
-              className: s()(A.x6, i),
+              className: s()(v.x6, i),
               color: l.XD.WHITE
             })
-          }) : (0, r.jsx)(v, {
+          }) : (0, r.jsx)(A, {
             subscriptionTier: a,
-            inOfferExperience: I,
+            inOfferExperience: S,
             buttonClassName: i,
             isDarkMode: f
           }), N && (0, r.jsx)(T, {
             variant: "text-md/normal",
             withBottomMargin: false
           })]
-        }), !I && (0, r.jsx)(S, {})]
+        }), !S && (0, r.jsx)(I, {})]
       })
     })
   };
@@ -126,17 +126,17 @@ function T(e) {
     variant: t = "text-lg/normal",
     withBottomMargin: n = true,
     isApplicationHome: i
-  } = e, a = (0, y.N)();
+  } = e, a = (0, b.N)();
   return (0, r.jsx)(c.Text, {
     variant: t,
     color: i ? "text-subtle" : "always-white",
-    className: s()(A.h_, {
-      [A.If]: n,
-      [A.jn]: i
+    className: s()(v.h_, {
+      [v.If]: n,
+      [v.jn]: i
     }),
     children: O.intl.format(O.t.kt9wxs, {
       cheapestMonthlyPrice: a
     })
   })
 }
-let C = Chunk64700.forwardRef(I)
+let C = Chunk64700.forwardRef(S)

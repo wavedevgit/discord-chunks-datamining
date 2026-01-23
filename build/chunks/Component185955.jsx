@@ -21,22 +21,22 @@ var Chunk627968 = require("./627968.js"),
   Chunk355097 = require("./355097.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk86267 = require("./86267.js");
-let y = (0, Chunk915089.Ld)(),
+let b = (0, Chunk915089.Ld)(),
   O = Chunk64700.memo(function(e) {
     let {
       availablePrimaryGuilds: t,
       pendingPrimaryGuildId: n,
       onChange: l
-    } = e, O = i.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), A = (0, a.bG)([_.default], () => {
+    } = e, O = i.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), v = (0, a.bG)([_.default], () => {
       var e;
       return (0, u.Zo)(null == (e = _.default.getCurrentUser()) ? true : e.primaryGuild).guildId
-    }), v = true !== n ? n : A, S = i.useMemo(() => t.reduce((e, t) => {
+    }), A = true !== n ? n : v, I = i.useMemo(() => t.reduce((e, t) => {
       var n;
       return (null == (n = t.profile) ? true : n.tag) != null && e.push({
         label: t.name,
         value: t.id
       }), e
-    }, []), [t]), I = i.useCallback(e => {
+    }, []), [t]), S = i.useCallback(e => {
       var t, n, i;
       if (null == e) return null;
       let a = O.get(e.value);
@@ -78,33 +78,33 @@ let y = (0, Chunk915089.Ld)(),
     }, [O]), N = i.useCallback(e => {
       let t = e[0];
       return null == t ? null : (0, r.jsx)(r.Fragment, {
-        children: I(t)
+        children: S(t)
       })
-    }, [I]), R = i.useCallback(e => {
+    }, [S]), R = i.useCallback(e => {
       null == l || l(e)
-    }, [l]), w = i.useCallback(e => e === v, [v]), P = i.useCallback(e => e, []), D = i.useCallback(() => {
+    }, [l]), w = i.useCallback(e => e === A, [A]), P = i.useCallback(e => e, []), D = i.useCallback(() => {
       null == l || l(null)
     }, [l]), x = i.useRef(null);
     return (0, p.A)(x, g._F.GUILD_TAG), (0, r.jsxs)(f.A, {
       title: E.intl.string(E.t.Pdd1nd),
-      titleId: y,
+      titleId: b,
       ref: x,
       children: [(0, r.jsx)(o.Text, {
-        className: b.VA,
+        className: y.VA,
         variant: "text-sm/normal",
         children: E.intl.string(E.t.mlZ6Jx)
       }), (0, r.jsx)(s.Pw, {
-        className: b.Lt,
-        optionClassName: b.S0,
+        className: y.Lt,
+        optionClassName: y.S0,
         isSelected: w,
-        options: S,
+        options: I,
         select: R,
         renderLeading: T,
         renderTrailing: C,
         renderOptionValue: N,
         serialize: P,
         clear: D,
-        clearable: null != v,
+        clearable: null != A,
         maxVisibleItems: 8,
         "data-migration-pending": true
       })]

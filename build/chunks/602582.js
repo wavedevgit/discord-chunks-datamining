@@ -2,7 +2,7 @@
 /** chunk id: 602582, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./896048.js");
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438),
@@ -28,10 +28,10 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 let E = new Chunk626584.A("MessagePreviewManager"),
-  b = 30,
-  y = 1e3,
+  y = 30,
+  b = 1e3,
   O = 5;
-class A extends Chunk439372.A {
+class v extends Chunk439372.A {
   addWant(e) {
     var t;
     let n = p.A.getBasicChannel(e);
@@ -60,11 +60,11 @@ class A extends Chunk439372.A {
     }
   }
   fetchGuilds(e, t) {
-    let n = t.nextWants(y);
+    let n = t.nextWants(b);
     return 0 === n.length ? Promise.resolve() : t.try(n, () => (E.verbose("fetching guild previews (via: gateway, guild_id: ".concat(e, ", channel_ids: ").concat(n.join(", "), ")")), u.A.getSocket().requestLastMessages(e, n), Promise.resolve()))
   }
   fetchDms(e) {
-    let t = e.nextWants(b);
+    let t = e.nextWants(y);
     return 0 === t.length ? Promise.resolve() : e.try(t, async () => {
       E.verbose("fetching dm previews (via: http, channel_ids: ".concat(t.join(", "), ")"));
       let e = (await a.Bo.post({
@@ -167,4 +167,4 @@ class A extends Chunk439372.A {
     }, 100))
   }
 }
-let v = new A
+let A = new v

@@ -2,7 +2,7 @@
 /** chunk id: 763685, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./896048.js");
 var Chunk812729 = require("./812729.js"),
   i = require.n(Chunk812729),
@@ -24,7 +24,7 @@ var Chunk812729 = require("./812729.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,31 +32,31 @@ function A(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class v extends Chunk272355.A {
+class A extends Chunk272355.A {
   _initialize() {
-    this.isSupported && (o.h.subscribe("AUDIO_SET_MODE", this.handleViewUpdate), o.h.subscribe("VOICE_CHANNEL_SELECT", this.handleViewUpdate), o.h.subscribe("START_SESSION", this.handleViewUpdate), o.h.subscribe("CONNECTION_OPEN", this.handleViewUpdate), o.h.subscribe("CONNECTION_CLOSED", this.handleViewUpdate), o.h.subscribe("CALL_CREATE", this.handleViewUpdate), o.h.subscribe("CALL_UPDATE", this.handleViewUpdate), o.h.subscribe("CALL_DELETE", this.handleViewUpdate), o.h.subscribe("CHANNEL_DELETE", this.handleViewUpdate), o.h.subscribe("VOICE_STATE_UPDATES", this.handleViewUpdate), o.h.subscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleViewUpdate), o.h.subscribe("AUDIO_TOGGLE_SELF_DEAF", this.handleViewUpdate), o.h.subscribe("AUDIO_TOGGLE_LOCAL_MUTE", this.handleViewUpdate), o.h.subscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleViewUpdate), b.Ay.on("THUMBAR_BUTTONS_CLICKED", (e, t) => this.buttonClicked(t)))
+    this.isSupported && (o.h.subscribe("AUDIO_SET_MODE", this.handleViewUpdate), o.h.subscribe("VOICE_CHANNEL_SELECT", this.handleViewUpdate), o.h.subscribe("START_SESSION", this.handleViewUpdate), o.h.subscribe("CONNECTION_OPEN", this.handleViewUpdate), o.h.subscribe("CONNECTION_CLOSED", this.handleViewUpdate), o.h.subscribe("CALL_CREATE", this.handleViewUpdate), o.h.subscribe("CALL_UPDATE", this.handleViewUpdate), o.h.subscribe("CALL_DELETE", this.handleViewUpdate), o.h.subscribe("CHANNEL_DELETE", this.handleViewUpdate), o.h.subscribe("VOICE_STATE_UPDATES", this.handleViewUpdate), o.h.subscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleViewUpdate), o.h.subscribe("AUDIO_TOGGLE_SELF_DEAF", this.handleViewUpdate), o.h.subscribe("AUDIO_TOGGLE_LOCAL_MUTE", this.handleViewUpdate), o.h.subscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleViewUpdate), y.Ay.on("THUMBAR_BUTTONS_CLICKED", (e, t) => this.buttonClicked(t)))
   }
   _terminate() {
     this.isSupported && (o.h.unsubscribe("AUDIO_SET_MODE", this.handleViewUpdate), o.h.unsubscribe("VOICE_CHANNEL_SELECT", this.handleViewUpdate), o.h.unsubscribe("START_SESSION", this.handleViewUpdate), o.h.unsubscribe("CONNECTION_OPEN", this.handleViewUpdate), o.h.unsubscribe("CONNECTION_CLOSED", this.handleViewUpdate), o.h.unsubscribe("CALL_CREATE", this.handleViewUpdate), o.h.unsubscribe("CALL_UPDATE", this.handleViewUpdate), o.h.unsubscribe("CALL_DELETE", this.handleViewUpdate), o.h.unsubscribe("CHANNEL_DELETE", this.handleViewUpdate), o.h.unsubscribe("VOICE_STATE_UPDATES", this.handleViewUpdate), o.h.unsubscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleViewUpdate), o.h.unsubscribe("AUDIO_TOGGLE_SELF_DEAF", this.handleViewUpdate), o.h.unsubscribe("AUDIO_TOGGLE_LOCAL_MUTE", this.handleViewUpdate), o.h.unsubscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleViewUpdate))
   }
   setThumbarButtons(e) {
-    i()(this.prevButtons, e) || (this.prevButtons = e, b.Ay.setThumbarButtons(e))
+    i()(this.prevButtons, e) || (this.prevButtons = e, y.Ay.setThumbarButtons(e))
   }
   constructor(...e) {
-    super(...e), A(this, "callbackActions", {
-      [b.dv.VIDEO]: () => {
-        m.A.isVideoEnabled() ? l.A.setVideoEnabled(false) : (0, _.A)(() => l.A.setVideoEnabled(true), y.BRT.APP)
+    super(...e), v(this, "callbackActions", {
+      [y.dv.VIDEO]: () => {
+        m.A.isVideoEnabled() ? l.A.setVideoEnabled(false) : (0, _.A)(() => l.A.setVideoEnabled(true), b.BRT.APP)
       },
-      [b.dv.MUTE]: () => l.A.toggleSelfMute({
+      [y.dv.MUTE]: () => l.A.toggleSelfMute({
         location: "Thumbar"
       }),
-      [b.dv.DEAFEN]: () => l.A.toggleSelfDeaf({
+      [y.dv.DEAFEN]: () => l.A.toggleSelfDeaf({
         location: "Thumbar"
       }),
-      [b.dv.DISCONNECT]: () => c.default.disconnect()
-    }), A(this, "isSupported", (0, E.isMac)() || (0, E.isWindows)()), A(this, "prevButtons", []), A(this, "buttonClicked", e => {
+      [y.dv.DISCONNECT]: () => c.default.disconnect()
+    }), v(this, "isSupported", (0, E.isMac)() || (0, E.isWindows)()), v(this, "prevButtons", []), v(this, "buttonClicked", e => {
       e.buttonName in this.callbackActions ? this.callbackActions[e.buttonName]() : console.error('ThumbarButtonsManager: Unknown callback eventName: "'.concat(e.buttonName, '"'), e)
-    }), A(this, "handleViewUpdate", s().debounce(() => {
+    }), v(this, "handleViewUpdate", s().debounce(() => {
       let e = g.A.getVoiceChannelId();
       if (null == e) return void this.setThumbarButtons([]);
       let t = m.A.isSelfMute(),
@@ -82,24 +82,24 @@ class v extends Chunk272355.A {
           channelLimitReached: o
         });
       this.setThumbarButtons([{
-        name: b.dv.VIDEO,
+        name: y.dv.VIDEO,
         active: !r,
         tooltip: c,
         flags: i ? [] : ["disabled"]
       }, {
-        name: b.dv.MUTE,
+        name: y.dv.MUTE,
         active: t,
         tooltip: t ? O.intl.string(O.t.YqAjXy) : O.intl.string(O.t.w4m945)
       }, {
-        name: b.dv.DEAFEN,
+        name: y.dv.DEAFEN,
         active: n,
         tooltip: n ? O.intl.string(O.t["2US872"]) : O.intl.string(O.t.wjcRFX)
       }, {
-        name: b.dv.DISCONNECT,
+        name: y.dv.DISCONNECT,
         active: true,
         tooltip: O.intl.string(O.t["6vrfgt"])
       }])
     }, 100))
   }
 }
-let S = new v
+let I = new A

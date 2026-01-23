@@ -25,18 +25,18 @@ class s extends Chunk64700.Component {
     return (0, n.jsx)(l.A, {
       transitionState: e,
       onClose: async () => await this.cancel(),
-      "aria-label": a.intl.string(a.t.Nn0Px8),
-      title: a.intl.string(a.t.Nn0Px8),
+      "aria-label": c.intl.string(c.t.Nn0Px8),
+      title: c.intl.string(c.t.Nn0Px8),
       premiumModalType: l.A.Types.UNCLAIMED,
       primary: {
         onClick: this.claimAccount,
-        label: a.intl.string(a.t.fiNVin)
+        label: c.intl.string(c.t.fiNVin)
       },
       secondary: {
         onClick: this.cancel,
-        label: a.intl.string(a.t.oEAioF)
+        label: c.intl.string(c.t.oEAioF)
       },
-      children: a.intl.string(a.t["7btfmI"])
+      children: c.intl.string(c.t["7btfmI"])
     })
   }
   constructor(...e) {
@@ -49,7 +49,7 @@ class s extends Chunk64700.Component {
       let {
         onClose: e
       } = this.props;
-      null == e || e(), (0, i.mMO)(async () => {
+      null == e || e(), (0, a.mMO)(async () => {
         let {
           default: e
         } = await r.e("27672").then(r.bind(r, 888363));

@@ -1,16 +1,16 @@
 /** Chunk was on 22477 **/
 /** chunk id: 39537, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $R: () => r,
+  $R: () => i,
   Rt: () => s
 });
 var Chunk110259 = require("./110259.js");
 require("./181658.js");
 var Chunk499785 = require("./499785.js"),
   Chunk652215 = require("./652215.js");
-async function r() {
+async function i() {
   let e = await l.A.get({
-    url: i.Rsh.SAFETY_FLOWS_TASK,
+    url: r.Rsh.SAFETY_FLOWS_TASK,
     trackedActionData: {
       event: a.NetworkActionNames.USER_VERIFY
     },
@@ -20,7 +20,7 @@ async function r() {
 }
 async function s(e) {
   return (await l.A.post({
-    url: i.Rsh.SAFETY_FLOWS_TASK,
+    url: r.Rsh.SAFETY_FLOWS_TASK,
     body: e,
     trackedActionData: {
       event: a.NetworkActionNames.USER_VERIFY

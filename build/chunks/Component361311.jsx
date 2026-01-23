@@ -16,28 +16,28 @@ function o(e) {
   } = e, n = (0, i.A)(t).filter(e => null != e);
   if (0 === n.length) return null;
   let o = null;
-  if (1 === n.length) o = s.intl.format(s.t.wQ6urw, {
-    applicationName: () => (0, r.jsx)(a.A, {
+  if (1 === n.length) o = a.intl.format(a.t.wQ6urw, {
+    applicationName: () => (0, r.jsx)(s.A, {
       application: n[0]
     }, n[0].id)
   });
-  else if (2 === n.length) o = s.intl.format(s.t.C98CSN, {
-    applicationName: () => (0, r.jsx)(a.A, {
+  else if (2 === n.length) o = a.intl.format(a.t.C98CSN, {
+    applicationName: () => (0, r.jsx)(s.A, {
       application: n[0]
     }, n[0].id),
-    applicationName2: () => (0, r.jsx)(a.A, {
+    applicationName2: () => (0, r.jsx)(s.A, {
       application: n[1]
     }, n[1].id)
   });
   else {
     let e = n[n.length - 1],
       t = n.slice(0, false);
-    o = s.intl.format(s.t.UxpwAh, {
-      applications: () => t.map(e => (0, r.jsx)(a.A, {
+    o = a.intl.format(a.t.UxpwAh, {
+      applications: () => t.map(e => (0, r.jsx)(s.A, {
         application: e,
         useComma: true
       }, e.id)),
-      applicationNameLast: () => (0, r.jsx)(a.A, {
+      applicationNameLast: () => (0, r.jsx)(s.A, {
         application: e
       }, e.id)
     })

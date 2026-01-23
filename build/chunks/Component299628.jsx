@@ -46,7 +46,7 @@ let p = e => {
   _ = e => {
     let {
       inModal: t
-    } = e, n = (0, l.y)(u.intl.string(c.default["TCzk/e"]), u.intl.string(c.default["2OqtJJ"])), i = (0, l.y)(u.intl.string(c.default.ASf7XN), u.intl.string(c.default["82y87X"])), a = (0, l.y)(u.intl.string(c.default["0QDVFN"]), u.intl.string(c.default["1xBHHV"])), f = u.intl.string(c.default["JvJ3P/"]), _ = (0, l.y)(u.intl.string(c.default.l0ChgF), u.intl.string(c.default.S2ss5X)), h = (0, l.y)(u.intl.string(c.default.LDu4Uk), u.intl.string(c.default.fEgtLV)), m = u.intl.string(c.default["4SCALu"]), g = u.intl.string(c.default.oYf9P7), E = (0, l.y)(u.intl.string(c.default["dES/2r"]), u.intl.string(c.default.ep6mdN)), b = (0, l.y)(u.intl.string(c.default["30+sih"]), u.intl.string(c.default["0cuLn1"])), y = (0, l.y)(u.intl.string(c.default.tHTyRh), u.intl.string(c.default.TeNlMb)), O = (0, l.y)(u.intl.string(c.default.wZejZr), u.intl.string(c.default.tdgcf1));
+    } = e, n = (0, l.y)(u.intl.string(c.default["TCzk/e"]), u.intl.string(c.default["2OqtJJ"])), i = (0, l.y)(u.intl.string(c.default.ASf7XN), u.intl.string(c.default["82y87X"])), a = (0, l.y)(u.intl.string(c.default["0QDVFN"]), u.intl.string(c.default["1xBHHV"])), f = u.intl.string(c.default["JvJ3P/"]), _ = (0, l.y)(u.intl.string(c.default.l0ChgF), u.intl.string(c.default.S2ss5X)), h = (0, l.y)(u.intl.string(c.default.LDu4Uk), u.intl.string(c.default.fEgtLV)), m = u.intl.string(c.default["4SCALu"]), g = u.intl.string(c.default.oYf9P7), E = (0, l.y)(u.intl.string(c.default["dES/2r"]), u.intl.string(c.default.ep6mdN)), y = (0, l.y)(u.intl.string(c.default["30+sih"]), u.intl.string(c.default["0cuLn1"])), b = (0, l.y)(u.intl.string(c.default.tHTyRh), u.intl.string(c.default.TeNlMb)), O = (0, l.y)(u.intl.string(c.default.wZejZr), u.intl.string(c.default.tdgcf1));
     return (0, r.jsxs)("div", {
       children: [(0, r.jsx)(p, {
         header: f,
@@ -90,8 +90,8 @@ let p = e => {
         }),
         inModal: t
       }), (0, r.jsx)(p, {
-        header: b,
-        description: y,
+        header: y,
+        description: b,
         icon: (0, r.jsx)(s.FlagIcon, {
           size: "md"
         }),

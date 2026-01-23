@@ -116,13 +116,13 @@ function et(e) {
     renderImageComponent: h,
     renderVideoComponent: m,
     renderLinkComponent: g,
-    playable: b = true,
-    autoPlay: y = false,
+    playable: y = true,
+    autoPlay: b = false,
     autoMute: O,
-    volume: A,
-    onPlay: v,
-    onPause: S,
-    onEnded: I,
+    volume: v,
+    onPlay: A,
+    onPause: I,
+    onEnded: S,
     onControlsHide: C,
     onControlsShow: R,
     onVolumeChange: w,
@@ -131,8 +131,8 @@ function et(e) {
     placeholder: j,
     placeholderVersion: M,
     sourceMetadata: U
-  } = e, [G, F] = a.useState(y), B = null != d && null == d.proxyURL, H = a.useCallback(() => F(false), [F]), Y = e => {
-    e.preventDefault(), e.stopPropagation(), null == v || v(false), F(true), B && (N._.dispatch(k.jej.VIDEO_EMBED_PLAYBACK_STARTED), N._.subscribeOnce(k.jej.VIDEO_EMBED_PLAYBACK_STARTED, H))
+  } = e, [G, F] = a.useState(b), B = null != d && null == d.proxyURL, H = a.useCallback(() => F(false), [F]), Y = e => {
+    e.preventDefault(), e.stopPropagation(), null == A || A(false), F(true), B && (N._.dispatch(k.jej.VIDEO_EMBED_PLAYBACK_STARTED), N._.subscribeOnce(k.jej.VIDEO_EMBED_PLAYBACK_STARTED, H))
   };
   a.useEffect(() => () => {
     B && N._.unsubscribe(k.jej.VIDEO_EMBED_PLAYBACK_STARTED, H)
@@ -160,16 +160,16 @@ function et(e) {
       width: W,
       height: K,
       responsive: _,
-      autoPlay: y,
-      onEnded: I,
+      autoPlay: b,
+      onEnded: S,
       naturalWidth: d.width,
       naturalHeight: d.height,
       onVolumeChange: w,
-      playable: b,
+      playable: y,
       autoMute: O,
-      volume: A,
-      onPlay: v,
-      onPause: S,
+      volume: v,
+      onPlay: A,
+      onPause: I,
       onMute: D,
       onControlsHide: C,
       onControlsShow: R,
@@ -241,14 +241,14 @@ function et(e) {
       imageClassName: V.jq,
       placeholder: j,
       placeholderVersion: M,
-      onClick: b && null != d ? Y : null,
+      onClick: y && null != d ? Y : null,
       sourceMetadata: U,
       analyticsSource: "EmbedVideo"
     }), (0, i.jsx)("div", {
       className: V._W,
       children: (0, i.jsx)("div", {
         className: V.Fo,
-        children: b ? (0, i.jsx)(E.A, {
+        children: y ? (0, i.jsx)(E.A, {
           onPlay: null != d ? Y : null,
           externalURL: x,
           renderLinkComponent: g,
@@ -277,7 +277,7 @@ function en(e) {
     hiddenSpoilers: h,
     placeholder: g,
     placeholderVersion: E,
-    sourceMetadata: b
+    sourceMetadata: y
   } = e;
   return (0, i.jsx)(m.A, {
     className: o()(V.pu, t),
@@ -299,7 +299,7 @@ function en(e) {
     disableAltTextDisplay: p,
     placeholder: g,
     placeholderVersion: E,
-    sourceMetadata: b
+    sourceMetadata: y
   })
 }
 class er extends(r = Chunk64700.PureComponent) {
@@ -383,7 +383,7 @@ class er extends(r = Chunk64700.PureComponent) {
       width: t,
       height: n
     } = e;
-    return (0, i.jsx)(y.FQ, {
+    return (0, i.jsx)(b.FQ, {
       className: V.Jl,
       width: t,
       height: n,
@@ -565,7 +565,7 @@ class er extends(r = Chunk64700.PureComponent) {
   }
   handleImageHover() {
     var e;
-    let t = I.A.getChannel(null == (e = this.props.message) ? true : e.channel_id);
+    let t = S.A.getChannel(null == (e = this.props.message) ? true : e.channel_id);
     C.default.track(k.HAw.IMAGE_HOVERED, {
       guild_id: null == t ? true : t.guild_id,
       channel_id: null == t ? true : t.id,
@@ -591,24 +591,24 @@ class er extends(r = Chunk64700.PureComponent) {
       sourceMetadata: E
     } = this.state;
     if (null == a) return null;
-    let y = (0, T.E)(a),
+    let b = (0, T.E)(a),
       {
         srcToOnClickOverride: O,
-        srcToHandlePreloadImage: A
+        srcToHandlePreloadImage: v
       } = null == c ? {
         srcToOnClickOverride: {},
         srcToHandlePreloadImage: {}
-      } : (0, b.o)(c.map(e => W(H({}, (0, _.oU)(e, E, "IMAGE")), {
+      } : (0, y.o)(c.map(e => W(H({}, (0, _.oU)(e, E, "IMAGE")), {
         original: e.url,
         srcIsAnimated: e.srcIsAnimated
       })), {}, "Embed"),
-      v = g.Ay.isAnimated({
+      A = g.Ay.isAnimated({
         src: (0, T.E)(a),
         original: a.url,
         animated: false,
         srcIsAnimated: a.srcIsAnimated
       }),
-      S = {
+      I = {
         containerClassName: o()(d, {
           [V.W$]: !s,
           [V.Lw]: !s,
@@ -633,18 +633,18 @@ class er extends(r = Chunk64700.PureComponent) {
         srcIsAnimated: a.srcIsAnimated,
         mosaicStyleAlt: true
       },
-      I = null != (e = null == (t = a.url.split(".").pop()) ? true : t.split("?")[0]) ? e : "";
-    return "jpg" === I && (I = "jpeg"), (0, i.jsx)(p.G.Consumer, {
+      S = null != (e = null == (t = a.url.split(".").pop()) ? true : t.split("?")[0]) ? e : "";
+    return "jpg" === S && (S = "jpeg"), (0, i.jsx)(p.G.Consumer, {
       children: e => (0, i.jsx)(M.Y.Consumer, {
         children: t => {
           let {
             disableAnimations: r
           } = t;
-          return u(W(H({}, S), {
+          return u(W(H({}, I), {
             autoPlay: f && !r && !n,
-            renderAccessory: v ? e : null,
-            handlePreloadImage: A[y],
-            onClick: O[y],
+            renderAccessory: A ? e : null,
+            handlePreloadImage: v[b],
+            onClick: O[b],
             onMouseEnter: () => this.handleImageHover(),
             sourceMetadata: E,
             analyticsSource: "Embed"
@@ -1015,7 +1015,7 @@ class er extends(r = Chunk64700.PureComponent) {
     return null != t.provider && j.o.includes(t.provider.name) ? (0, i.jsx)(j.A, {
       embed: t,
       className: r
-    }) : (0, v.A)(t) ? (0, i.jsx)(S.A, {
+    }) : (0, A.A)(t) ? (0, i.jsx)(I.A, {
       embed: t,
       className: r
     }) : (null == (e = t.provider) ? true : e.name) === "Amazon Music" && t.type === k.Auw.RICH ? (0, i.jsx)(h.A, {
@@ -1024,8 +1024,8 @@ class er extends(r = Chunk64700.PureComponent) {
     }) : (0, u.A)(t) ? (0, i.jsx)(d.A, {
       embed: t,
       className: r
-    }) : this.isInline() ? null != n ? (0, i.jsx)(A.Ay, {
-      type: A.Ay.Types.ATTACHMENT,
+    }) : this.isInline() ? null != n ? (0, i.jsx)(v.Ay, {
+      type: v.Ay.Types.ATTACHMENT,
       reason: n,
       onReveal: this.onReveal,
       onToggleObscurity: this.onToggleObscurity,
@@ -1035,8 +1035,8 @@ class er extends(r = Chunk64700.PureComponent) {
         [V.yi]: this.state.isVisible && this.state.videoControlsShown
       }),
       children: this.renderInlineMediaEmbed
-    }) : this.renderInlineMediaEmbed() : null != n ? (0, i.jsx)(A.Ay, {
-      type: A.Ay.Types.EMBED,
+    }) : this.renderInlineMediaEmbed() : null != n ? (0, i.jsx)(v.Ay, {
+      type: v.Ay.Types.EMBED,
       onReveal: this.onReveal,
       onToggleObscurity: this.onToggleObscurity,
       reason: n,

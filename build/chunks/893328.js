@@ -2,7 +2,7 @@
 /** chunk id: 893328, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   j: () => s,
-  l: () => i.lB
+  l: () => r.lB
 });
 var Chunk398590 = require("./398590.js"),
   Chunk3258 = require("./3258.jsx"),
@@ -12,5 +12,5 @@ let s = e => {
   l.PlaygroundStore.setState({
     selectedCollection: e,
     selectedStory: null
-  }), (0, a.id)(r.zgK.COMPONENT_PLAYGROUND)
+  }), (0, a.id)(i.zgK.COMPONENT_PLAYGROUND)
 }

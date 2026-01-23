@@ -2,5 +2,5 @@
 /** chunk id: 856412, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  C: "_0916f0fece2c1f11"
+  C: "krispCard_fb7bea"
 }

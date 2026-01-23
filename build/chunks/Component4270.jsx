@@ -30,29 +30,29 @@ var Chunk627968 = require("./627968.js"),
 
 function N() {
   let e = i.useRef(null),
-    t = (0, _.A)(),
+    t = (0, b.A)(),
     n = (0, E.I)(),
-    l = (0, g.r)(),
+    l = (0, m.r)(),
     N = (0, u.w)(),
     T = (0, p.A)("message-requests-spam-list"),
     {
       channelId: j
-    } = (0, b.N)(),
+    } = (0, _.N)(),
     x = i.useCallback(() => {
       (0, c.showToast)((0, c.createToast)(S.intl.string(S.t["EDYbS+"]), c.ToastType.FAILURE))
     }, []),
     {
       rejectAll: P
-    } = (0, m.t)({
+    } = (0, A.t)({
       onError: x
     }),
     w = i.useCallback(() => {
       P(t.map(e => e.channel.id))
     }, [t, P]);
   (0, d.Ay)(() => {
-    A.default.track(v.HAw.SPAM_MESSAGE_REQUESTS_VIEWED, {
+    f.default.track(v.HAw.SPAM_MESSAGE_REQUESTS_VIEWED, {
       num_spam_message_requests: n
-    }), h.A.increment({
+    }), g.A.increment({
       name: o.K.SPAM_MESSAGE_REQUEST_VIEW
     })
   });
@@ -72,7 +72,7 @@ function N() {
         hasSingleMessageRequest: l
       }, u)
     }, [t, l, j]),
-    R = i.useCallback(() => (0, r.jsxs)(f.A, {
+    R = i.useCallback(() => (0, r.jsxs)(h.A, {
       className: C.Gf,
       children: [S.intl.format(S.t.C79Edh, {
         count: n

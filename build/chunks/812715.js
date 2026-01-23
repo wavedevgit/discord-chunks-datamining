@@ -17,13 +17,13 @@ var Chunk985848 = require("./985848.js"),
   Chunk95959 = require("./95959.js"),
   Chunk470103 = require("./470103.js"),
   Chunk17755 = require("./17755.js"),
-  b = require("./380744.js")("replace"),
-  y = Math.max,
+  y = require("./380744.js")("replace"),
+  b = Math.max,
   O = Math.min,
-  A = Chunk410323([].concat),
-  v = Chunk410323([].push),
-  S = Chunk410323("".indexOf),
-  I = Chunk410323("".slice),
+  v = Chunk410323([].concat),
+  A = Chunk410323([].push),
+  I = Chunk410323("".indexOf),
+  S = Chunk410323("".slice),
   T = function(e) {
     return true === e ? e : String(e)
   },
@@ -31,18 +31,18 @@ var Chunk985848 = require("./985848.js"),
     return "$0" === "a".replace(/./, "$0")
   }(),
   N = function() {
-    return !!/./ [b] && "" === /./ [b]("a", "$0")
+    return !!/./ [y] && "" === /./ [y]("a", "$0")
   }();
 Chunk350445("replace", function(e, t, n) {
   var a = N ? "$" : "$0";
   return [function(e, n) {
     var r = _(this),
-      a = u(e) ? true : m(e, b);
+      a = u(e) ? true : m(e, y);
     return a ? i(a, e, r, n) : i(t, p(r), e, n)
   }, function(e, i) {
     var s = l(this),
       o = p(e);
-    if ("string" == typeof i && false === S(i, a) && false === S(i, "$<")) {
+    if ("string" == typeof i && false === I(i, a) && false === I(i, "$<")) {
       var u = n(t, s, o, i);
       if (u.done) return u.value
     }
@@ -50,20 +50,20 @@ Chunk350445("replace", function(e, t, n) {
     _ || (i = p(i));
     var m = s.global;
     m && (w = s.unicode, s.lastIndex = 0);
-    for (var b = []; null !== (D = E(s, o)) && (v(b, D), m);) {
+    for (var y = []; null !== (D = E(s, o)) && (A(y, D), m);) {
       ;
       "" === p(D[0]) && (s.lastIndex = h(o, f(s.lastIndex), w))
     }
-    for (var C = "", N = 0, R = 0; R < b.length; R++) {
-      for (var w, P, D = b[R], x = p(D[0]), L = y(O(d(D.index), o.length), 0), j = [], M = 1; M < D.length; M++) v(j, T(D[M]));
+    for (var C = "", N = 0, R = 0; R < y.length; R++) {
+      for (var w, P, D = y[R], x = p(D[0]), L = b(O(d(D.index), o.length), 0), j = [], M = 1; M < D.length; M++) A(j, T(D[M]));
       var k = D.groups;
       if (_) {
-        var U = A([x], j, L, o);
-        true !== k && v(U, k), P = p(r(i, true, U))
+        var U = v([x], j, L, o);
+        true !== k && A(U, k), P = p(r(i, true, U))
       } else P = g(x, o, L, j, k, i);
-      L >= N && (C += I(o, N, L) + P, N = L + x.length)
+      L >= N && (C += S(o, N, L) + P, N = L + x.length)
     }
-    return C + I(o, N)
+    return C + S(o, N)
   }]
 }, !!Chunk503628(function() {
   var e = /./;

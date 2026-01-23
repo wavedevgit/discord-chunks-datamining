@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 746318, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 73169 **/
+/** chunk id: 746318, original params: e,l,s (module,exports,require) **/
 require.d(exports, {
-  A: () => r
+  A: () => a
 });
-let r = (0, require("./600975.js").C)({
+let a = (0, require("./600975.js").C)({
   kind: "user",
   id: "2025-01_virtual_currency_rollout",
   label: "Virtual Currency Rollout",

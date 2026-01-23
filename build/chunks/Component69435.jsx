@@ -4,7 +4,7 @@
 require.d(exports, {
   Ay: () => C,
   DS: () => T,
-  yW: () => S
+  yW: () => I
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -34,7 +34,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,39 +46,39 @@ function A(e) {
   }
   return e
 }
-let v = "AppHardwareAcceleration";
+let A = "AppHardwareAcceleration";
 
-function S() {
+function I() {
   if ((0, u.W)("DesktopNativeUtils")) {
-    let e = s.w.get(v);
+    let e = s.w.get(A);
     if ("boolean" == typeof e) return e
   }
   return p.Ay.getEnableHardwareAcceleration()
 }
 
-function I(e) {
-  (0, u.W)("DesktopNativeUtils") ? (s.w.set(v, e), p.Ay.setEnableHardwareAcceleration(true)) : p.Ay.setEnableHardwareAcceleration(e)
+function S(e) {
+  (0, u.W)("DesktopNativeUtils") ? (s.w.set(A, e), p.Ay.setEnableHardwareAcceleration(true)) : p.Ay.setEnableHardwareAcceleration(e)
 }
 
 function T() {
-  let [e] = i.useState(() => S()), t = i.useCallback(e => {
-    let t = e ? y.intl.format(y.t.LYXRxL, {}) : y.intl.format(y.t.uDP3Kz, {});
+  let [e] = i.useState(() => I()), t = i.useCallback(e => {
+    let t = e ? b.intl.format(b.t.LYXRxL, {}) : b.intl.format(b.t.uDP3Kz, {});
     (0, o.A)({
-      title: y.intl.string(y.t.aqpAvn),
+      title: b.intl.string(b.t.aqpAvn),
       subtitle: t,
-      confirmText: y.intl.string(y.t.vT7ckk),
-      onConfirm: () => I(e)
+      confirmText: b.intl.string(b.t.vT7ckk),
+      onConfirm: () => S(e)
     })
   }, []);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.dOG, {
-      label: y.intl.string(y.t["eOC/F2"]),
-      description: y.intl.string(y.t.Afc7l6),
+      label: b.intl.string(b.t["eOC/F2"]),
+      description: b.intl.string(b.t.Afc7l6),
       checked: e,
       onChange: t
     }), !e && (0, r.jsx)(h.A, {
       look: h.k.WARNING,
-      children: y.intl.string(y.t.j7S6IX)
+      children: b.intl.string(b.t.j7S6IX)
     })]
   })
 }
@@ -91,18 +91,18 @@ function C() {
       _.l_.updateSetting(!e)
     }, []),
     o = i.useCallback(e => {
-      e ? (0, l.qfG)(e => (0, r.jsx)(m.A, A({}, e))) : c.cL()
+      e ? (0, l.qfG)(e => (0, r.jsx)(m.A, v({}, e))) : c.cL()
     }, []);
   return (0, r.jsx)(g.A, {
-    title: y.intl.string(y.t["8/udY0"]),
+    title: b.intl.string(b.t["8/udY0"]),
     children: (0, r.jsxs)(l.BJc, {
       gap: 16,
       children: [(0, r.jsxs)(d.x, {
         setting: E.H.SETTINGS_ADVANCED_DEVELOPER_MODE,
         children: [(0, r.jsx)(l.dOG, {
-          label: y.intl.string(y.t.ObIb1Q),
-          description: y.intl.format(y.t["CY6q/Q"], {
-            apiDocsUrl: b.X7G.API_DOCS
+          label: b.intl.string(b.t.ObIb1Q),
+          description: b.intl.format(b.t["CY6q/Q"], {
+            apiDocsUrl: y.X7G.API_DOCS
           }),
           checked: t,
           onChange: _.Q_.updateSetting
@@ -116,16 +116,16 @@ function C() {
       }), (0, r.jsxs)(d.x, {
         setting: E.H.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,
         children: [(0, r.jsx)(l.dOG, {
-          label: y.intl.string(y.t.fi3UQN),
-          description: y.intl.string(y.t["8mYp37"]),
+          label: b.intl.string(b.t.fi3UQN),
+          description: b.intl.string(b.t["8mYp37"]),
           checked: !e,
           onChange: s
         }), (0, r.jsx)(l.cGx, {})]
       }), (0, r.jsxs)(d.x, {
         setting: E.H.SETTINGS_ADVANCED_APPLICATION_TEST_MODE,
         children: [(0, r.jsx)(l.dOG, {
-          label: y.intl.string(y.t.erOqlh),
-          description: y.intl.string(y.t["52hMnD"]),
+          label: b.intl.string(b.t.erOqlh),
+          description: b.intl.string(b.t["52hMnD"]),
           checked: null != n,
           onChange: o
         }), (0, r.jsx)(l.cGx, {})]

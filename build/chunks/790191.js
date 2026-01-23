@@ -1,15 +1,15 @@
 /** Chunk was on 18728 **/
-/** chunk id: 790191, original params: e,f,c (module,exports,require) **/
+/** chunk id: 790191, original params: e,_,t (module,exports,require) **/
 module.exports = {
-  jD: "d1667a64982b1592",
-  KF: "_29f8992150189eea",
-  uc: "abaed6c8d18384fe",
-  qB: "fe391ce8af281c8f",
-  pN: "_79678be0678c1e34",
-  r: "_119ede092f6828e4",
-  YK: "f418ee3ba534a304",
-  yz: "_33fb92a353eaf578",
-  Ey: "_34414c0b8b20cd82",
-  Ub: "f5b4abd80c26e62c",
-  Wf: "_50171fb303042d9f"
+  jD: "cont_b256a2",
+  KF: "hitboxArea_b256a2",
+  uc: "interactionEnabled_b256a2",
+  qB: "progress_b256a2",
+  pN: "progressGlow_b256a2",
+  r: "buffer_b256a2",
+  YK: "seekableBar_b256a2",
+  yz: "bufferHovered_b256a2",
+  Ey: "timeDisplay_b256a2",
+  Ub: "grabber_b256a2",
+  Wf: "rounded_b256a2"
 }

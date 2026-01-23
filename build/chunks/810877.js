@@ -2,7 +2,7 @@
 /** chunk id: 810877, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  W: () => p
+  W: () => b
 }), require("./747238.js");
 var Chunk830917 = require("./830917.js"),
   Chunk397927 = require("./397927.js"),
@@ -15,68 +15,68 @@ var Chunk830917 = require("./830917.js"),
   Chunk307731 = require("./307731.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
-  b = require("./264572.js").Buffer;
-let m = (e, t, n, r) => (c.default.track(f.HAw.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED, {
+  p = require("./264572.js").Buffer;
+let f = (e, t, n, r) => (o.default.track(g.HAw.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED, {
     guild_id: n,
     file_size: t,
     upload_id: r
   }), a.o.TOO_BIG),
-  p = async e => {
+  b = async e => {
     let {
       data: t,
       file: n,
-      guildId: p,
-      uploadId: x,
-      roles: h,
+      guildId: b,
+      uploadId: h,
+      roles: x,
       image: j,
-      hideErrorModal: O,
-      analyticsLocation: y
-    } = e, v = o.Ay.sanitizeEmojiName(n.name.split(".")[0]);
-    if (o.Ay.isFileTooBig(n)) {
-      if ("image/gif" === n.type || "image/webp" === n.type || "image/avif" === n.type) return m(n.name, n.size, p, x);
+      hideErrorModal: _,
+      analyticsLocation: O
+    } = e, v = c.Ay.sanitizeEmojiName(n.name.split(".")[0]);
+    if (c.Ay.isFileTooBig(n)) {
+      if ("image/gif" === n.type || "image/webp" === n.type || "image/avif" === n.type) return f(n.name, n.size, b, h);
       else if (null != j) {
-        var A, E;
+        var y, A;
         let e;
         t = (0, r.h_)(j, 128, 128);
         try {
-          e = o.Ay.isDataTooBig(t)
+          e = c.Ay.isDataTooBig(t)
         } catch (e) {
-          return m(n.name, n.size, p, x)
+          return f(n.name, n.size, b, h)
         }
-        if (A = t, E = e, c.default.track(f.HAw.EMOJI_FILE_RESIZED, {
+        if (y = t, A = e, o.default.track(g.HAw.EMOJI_FILE_RESIZED, {
             is_animated: false,
             file_type: n.type.split("/").pop(),
             original_file_size_bytes: n.size,
-            resized_file_size_bytes: (0, d.EW)(A),
-            resized_file_too_big: E
-          }), e) return m(n.name, n.size, p, x)
+            resized_file_size_bytes: (0, d.EW)(y),
+            resized_file_too_big: A
+          }), e) return f(n.name, n.size, b, h)
       }
     }
     try {
       let e = await (0, s.Gf)({
-        guildId: p,
+        guildId: b,
         image: t,
         name: v,
-        roles: h,
-        analyticsLocation: y
+        roles: x,
+        analyticsLocation: O
       });
-      return c.default.track(f.HAw.EMOJI_UPLOAD_COMPLETED, {
-        guild_id: p,
-        upload_id: x
-      }), (0, i.showToast)((0, i.createToast)(g.intl.string(g.t["r0w9m/"]), i.ToastType.SUCCESS)), e
+      return o.default.track(g.HAw.EMOJI_UPLOAD_COMPLETED, {
+        guild_id: b,
+        upload_id: h
+      }), (0, i.showToast)((0, i.createToast)(m.intl.string(m.t["r0w9m/"]), i.ToastType.SUCCESS)), e
     } catch (s) {
       let e, n, {
         body: r,
         status: i
       } = s;
-      return null != r && (r.code === f.t02.TOO_MANY_EMOJI ? (e = g.intl.string(g.t["jP/Rqm"]), n = a.o.TOO_MANY_EMOJI) : r.code === f.t02.TOO_MANY_ANIMATED_EMOJI ? (e = g.intl.string(g.t["6v5dP/"]), n = a.o.TOO_MANY_ANIMATED_EMOJI) : null != r.image || r.code === f.t02.INVALID_FILE_ASSET_SIZE ? (c.default.track(f.HAw.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED, {
-        guild_id: p,
-        file_size: b.byteLength(t),
-        upload_id: x
-      }), e = g.intl.formatToPlainString(g.t.kIO9jy, {
+      return null != r && (r.code === g.t02.TOO_MANY_EMOJI ? (e = m.intl.string(m.t["jP/Rqm"]), n = a.o.TOO_MANY_EMOJI) : r.code === g.t02.TOO_MANY_ANIMATED_EMOJI ? (e = m.intl.string(m.t["6v5dP/"]), n = a.o.TOO_MANY_ANIMATED_EMOJI) : null != r.image || r.code === g.t02.INVALID_FILE_ASSET_SIZE ? (o.default.track(g.HAw.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED, {
+        guild_id: b,
+        file_size: p.byteLength(t),
+        upload_id: h
+      }), e = m.intl.formatToPlainString(m.t.kIO9jy, {
         maxSize: u.i9
-      }), n = a.o.TOO_BIG) : (null != r.image || r.code === f.t02.INVALID_FILE_ASSET_SIZE_RESIZE_GIF) && (n = a.o.RESIZE_GIF)), 429 === i && (e = g.intl.string(g.t.Whhv4w), n = a.o.RATE_LIMIT), null == e || O || l.A.show({
-        title: g.intl.string(g.t.iufib1),
+      }), n = a.o.TOO_BIG) : (null != r.image || r.code === g.t02.INVALID_FILE_ASSET_SIZE_RESIZE_GIF) && (n = a.o.RESIZE_GIF)), 429 === i && (e = m.intl.string(m.t.Whhv4w), n = a.o.RATE_LIMIT), null == e || _ || l.A.show({
+        title: m.intl.string(m.t.iufib1),
         body: e
       }), n
     }

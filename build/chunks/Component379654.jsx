@@ -47,28 +47,28 @@ function g(e) {
   } = e, g = i.useMemo(() => n.filter(e => e instanceof l.R), [n]), {
     analyticsLocations: E
   } = (0, a.Ay)(), {
-    trackUserProfileAction: b
-  } = (0, o.NJ)(), y = (0, s.A)(t.id, g), O = i.useCallback(() => {
+    trackUserProfileAction: y
+  } = (0, o.NJ)(), b = (0, s.A)(t.id, g), O = i.useCallback(() => {
     null == h || h({
       tabSection: p.RP.WIDGETS
     })
-  }, [h]), A = i.useCallback(e => {
+  }, [h]), v = i.useCallback(e => {
     let t = false,
       i = [];
-    for (let a of n) a instanceof l.R ? null != y[a.applicationId] && i.push((0, r.jsx)(d.A, m({
-      previewData: y[a.applicationId],
+    for (let a of n) a instanceof l.R ? null != b[a.applicationId] && i.push((0, r.jsx)(d.A, m({
+      previewData: b[a.applicationId],
       onClick: O
     }, e), "application-widget-".concat(a.applicationId))) : a instanceof c.Yy && !t && (i.push((0, r.jsx)(f.A, m({
       widgets: n,
       onClick: O
     }, e), "collection-breadcrumb")), t = true);
     return i
-  }, [y, O, n]);
+  }, [b, O, n]);
   return 0 === n.length ? null : (0, r.jsx)(u.A, {
-    renderCards: A,
+    renderCards: v,
     heading: _.intl.string(_.t.Y55Tua),
     onExpand: () => {
-      b({
+      y({
         action: "PRESS_SHOW_MORE_WIDGETS",
         analyticsLocations: E
       }), O()

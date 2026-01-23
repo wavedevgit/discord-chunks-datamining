@@ -1,7 +1,7 @@
 /** Chunk was on 22477 **/
 /** chunk id: 189244, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -20,83 +20,83 @@ var Chunk311907 = require("./311907.js"),
   Chunk385803 = require("./385803.js"),
   Chunk607335 = require("./607335.js");
 
-function g() {
-  var e, t, n, g, v, j, y, _;
+function b() {
+  var e, t, n, b, v, j, _, y;
   (0, u.Bf)();
   let A = (0, l.bG)([h.default], () => h.default.getCurrentUser()),
     C = p.eh.useSetting(),
     S = (0, l.bG)([m.A], () => m.A.theme),
     O = C.backgroundGradientPresetId,
     E = (0, l.bG)([c.A], () => c.A.purchases),
-    N = (0, d.x9)(E),
-    T = (0, d.$W)(E),
-    I = null == A || null == (v = A.avatarDecoration) ? true : v.skuId,
-    k = null == A || null == (y = A.collectibles) || null == (j = y.nameplate) ? true : j.skuId,
-    w = null != I && null != (e = N.find(e => e.skuId === I)) ? e : null,
-    P = null != k && null != (t = T.find(e => e.skuId === k)) ? t : null,
-    R = (0, l.bG)([o.A], () => o.A.getProduct(null == w ? true : w.skuId)),
+    T = (0, d.x9)(E),
+    N = (0, d.$W)(E),
+    w = null == A || null == (v = A.avatarDecoration) ? true : v.skuId,
+    I = null == A || null == (_ = A.collectibles) || null == (j = _.nameplate) ? true : j.skuId,
+    k = null != w && null != (e = T.find(e => e.skuId === w)) ? e : null,
+    P = null != I && null != (t = N.find(e => e.skuId === I)) ? t : null,
+    R = (0, l.bG)([o.A], () => o.A.getProduct(null == k ? true : k.skuId)),
     D = (0, l.bG)([o.A], () => o.A.getProduct(null == P ? true : P.skuId)),
     M = (0, l.bG)([s.A], () => s.A.fontSize),
     L = (0, l.bG)([s.A], () => s.A.messageGroupSpacing),
     U = p.Xi.useSetting();
-  return (0, f.DB)(), (0, a.jsxs)("div", {
-    className: b.kL,
+  return (0, x.DB)(), (0, a.jsxs)("div", {
+    className: f.kL,
     children: [(0, a.jsxs)("div", {
-      children: [(0, a.jsx)(r.Heading, {
+      children: [(0, a.jsx)(i.Heading, {
         variant: "heading-lg/semibold",
         children: "Randomize customization settings"
-      }), (0, a.jsx)(r.Text, {
+      }), (0, a.jsx)(i.Text, {
         variant: "text-md/normal",
         children: "Randomly sets appearance-related settings. Leaving this tab or closing devtools will reset to your initial state."
-      }), (0, a.jsx)(r.Button, {
+      }), (0, a.jsx)(i.Button, {
         variant: "primary",
         size: "sm",
         text: "Randomize Theme",
-        onClick: f.t0
-      }), (0, a.jsx)(r.Button, {
+        onClick: x.t0
+      }), (0, a.jsx)(i.Button, {
         variant: "primary",
         size: "sm",
         text: "Randomize Collectibles",
-        onClick: f.ZL
-      }), (0, a.jsx)(r.Button, {
+        onClick: x.ZL
+      }), (0, a.jsx)(i.Button, {
         variant: "primary",
         size: "sm",
         text: "Randomize Appearance Settings",
-        onClick: f.ln
+        onClick: x.ln
       })]
     }), (0, a.jsxs)("div", {
-      children: [(0, a.jsx)(r.Heading, {
+      children: [(0, a.jsx)(i.Heading, {
         variant: "heading-lg/semibold",
         children: "Current Settings"
-      }), (0, a.jsxs)(r.Text, {
+      }), (0, a.jsxs)(i.Text, {
         variant: "text-md/normal",
         children: ["Theme: ", S]
-      }), (0, a.jsxs)(r.Text, {
+      }), (0, a.jsxs)(i.Text, {
         variant: "text-md/normal",
-        children: ["Client Theme ID:", " ", null != O ? null == (_ = x.ag[O]) ? true : _.getName() : "None"]
-      }), (0, a.jsxs)(r.Text, {
+        children: ["Client Theme ID:", " ", null != O ? null == (y = g.ag[O]) ? true : y.getName() : "None"]
+      }), (0, a.jsxs)(i.Text, {
         variant: "text-md/normal",
         children: ["Avatar Decoration: ", null != (n = null == R ? true : R.name) ? n : "None"]
-      }), (0, a.jsxs)(r.Text, {
+      }), (0, a.jsxs)(i.Text, {
         variant: "text-md/normal",
-        children: ["Nameplate: ", null != (g = null == D ? true : D.name) ? g : "None"]
-      }), (0, a.jsxs)(r.Text, {
+        children: ["Nameplate: ", null != (b = null == D ? true : D.name) ? b : "None"]
+      }), (0, a.jsxs)(i.Text, {
         variant: "text-md/normal",
         children: ["Font Size: ", M, "px"]
-      }), (0, a.jsxs)(r.Text, {
+      }), (0, a.jsxs)(i.Text, {
         variant: "text-md/normal",
         children: ["Message Spacing: ", L]
-      }), (0, a.jsxs)(r.Text, {
+      }), (0, a.jsxs)(i.Text, {
         variant: "text-md/normal",
         children: ["UI Density: ", U, " (", function(e) {
           switch (e) {
-            case i.NS.COMPACT:
+            case r.NS.COMPACT:
               return "Compact";
-            case i.NS.COZY:
+            case r.NS.COZY:
               return "Cozy";
-            case i.NS.DEFAULT:
+            case r.NS.DEFAULT:
               return "Default";
-            case i.NS.RESPONSIVE:
+            case r.NS.RESPONSIVE:
               return "Responsive";
             default:
               return "Unknown"

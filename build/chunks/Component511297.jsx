@@ -27,7 +27,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk308021 = require("./308021.js"),
   Chunk964801 = require("./964801.js");
 
-function I(e) {
+function S(e) {
   let {
     onClick: t,
     emoji: n,
@@ -38,11 +38,11 @@ function I(e) {
   return (0, r.jsx)(g.vw, {
     spring: o,
     children: (0, r.jsxs)(f.A, {
-      contentClassName: S.qq,
+      contentClassName: I.qq,
       onClick: () => t(n),
       active: s,
       children: [(0, r.jsx)(l.A, {
-        className: S.Zg,
+        className: I.Zg,
         emojiId: n.id,
         emojiName: n.name,
         animated: !a && n.animated
@@ -72,42 +72,42 @@ function T() {
       name: "\uD83D\uDE22",
       animated: false
     } : f[0]),
-    N = g ? b.o : a.nm2;
+    N = g ? y.o : a.nm2;
   return (0, r.jsx)(_.A, {
     children: (0, r.jsxs)("div", {
-      className: S.kL,
+      className: I.kL,
       children: [(0, r.jsx)(E.A, {
         emoji: T
       }), (0, r.jsxs)("div", {
-        className: S.Qs,
+        className: I.Qs,
         children: [(0, r.jsxs)("div", {
-          className: v.DD,
+          className: A.DD,
           children: [(0, r.jsx)(N, {
             size: "refresh_sm",
             color: n,
-            className: v.gr,
-            colorClass: v.d7
+            className: A.gr,
+            colorClass: A.d7
           }), (0, r.jsx)(h.A, {
             variant: "eyebrow",
-            className: v.UP,
-            children: g ? A.intl.string(O.default.vnG9Sx) : A.intl.format(O.default.JwFMdL, {
+            className: A.UP,
+            children: g ? v.intl.string(O.default.vnG9Sx) : v.intl.format(O.default.JwFMdL, {
               numEmojis: l
             })
           })]
         }), g ? (0, r.jsx)(h.A, {
           variant: "heading-xxl/medium",
-          className: S.YI,
-          children: A.intl.string(O.default.BHbwK1)
+          className: I.YI,
+          children: v.intl.string(O.default.BHbwK1)
         }) : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(m.A, {
             end: l
           }), (0, r.jsx)(h.A, {
             variant: "heading-xxl/medium",
-            className: S.VA,
-            children: A.intl.string(O.default.ZuvPfg)
+            className: I.VA,
+            children: v.intl.string(O.default.ZuvPfg)
           }), (0, r.jsx)("div", {
-            className: S.gm,
-            children: f.map((t, n) => (0, r.jsx)(I, {
+            className: I.gm,
+            children: f.map((t, n) => (0, r.jsx)(S, {
               onClick: () => C(t),
               emoji: t,
               index: n,
@@ -116,7 +116,7 @@ function T() {
             }, "emoji-".concat(n)))
           })]
         }), (0, r.jsx)(p.e, {
-          slide: y.P7.EMOJIS
+          slide: b.P7.EMOJIS
         })]
       })]
     })

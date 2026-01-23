@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 157207, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,49 +14,49 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk305711 = require("./305711.js");
 
-function p(e) {
+function h(e) {
   let {
     onOpenClips: t,
     lastClipsSession: n,
-    closePopout: p
+    closePopout: h
   } = e;
   return (l.useEffect(() => () => {
     (0, c.jA)()
-  }, []), (0, s.A)({
+  }, []), (0, a.A)({
     type: i.ImpressionTypes.VIEW,
     name: i.ImpressionNames.HOTSPOT,
     properties: {
       hotspot_location: o._2.CLIPS_CHANNEL_ATTACH_REMINDER
     }
   }), null == n) ? null : (0, r.jsxs)("div", {
-    className: f.WG,
+    className: p.WG,
     children: [(0, r.jsx)("div", {
-      className: f.Yt,
+      className: p.Yt,
       children: (0, r.jsx)(u.A, {})
-    }), (0, r.jsx)(a.Heading, {
-      className: f.wx,
+    }), (0, r.jsx)(s.Heading, {
+      className: p.wx,
       color: "text-strong",
       variant: "heading-md/extrabold",
       children: d.intl.format(d.t["+qxkzC"], {
         count: n.newClipIds.length
       })
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(s.Text, {
       color: "text-default",
-      className: f.__invalid_content,
+      className: p.__invalid_content,
       variant: "text-sm/medium",
       children: d.intl.format(d.t["7XX0/X"], {
         applicationName: n.applicationName
       })
     }), (0, r.jsx)("div", {
-      className: f.NC,
-      children: (0, r.jsxs)(a.ButtonGroup, {
-        children: [(0, r.jsx)(a.Button, {
+      className: p.NC,
+      children: (0, r.jsxs)(s.ButtonGroup, {
+        children: [(0, r.jsx)(s.Button, {
           variant: "secondary",
           text: d.intl.string(d.t["7r5Z19"]),
           onClick: function() {
-            (0, o.sF)(o._2.CLIPS_CHANNEL_ATTACH_REMINDER), p()
+            (0, o.sF)(o._2.CLIPS_CHANNEL_ATTACH_REMINDER), h()
           }
-        }), (0, r.jsx)(a.Button, {
+        }), (0, r.jsx)(s.Button, {
           variant: "primary",
           text: d.intl.string(d.t.md4qKz),
           onClick: t

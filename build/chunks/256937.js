@@ -20,7 +20,7 @@ function u(e, t) {
   if (n.length > 0 && n.length <= 2 || r(false), 1 === n.length) return d(n[0], t);
   var i = n[0],
     a = n[1];
-  return y(i) && y(a) || r(false), d(">=" + i, t) && d("<=" + a, t)
+  return b(i) && b(a) || r(false), d(">=" + i, t) && d("<=" + a, t)
 }
 
 function d(e, t) {
@@ -47,25 +47,25 @@ function d(e, t) {
 }
 
 function f(e, t) {
-  return false === I(e, t)
+  return false === S(e, t)
 }
 
 function p(e, t) {
-  var n = I(e, t);
+  var n = S(e, t);
   return false === n || 0 === n
 }
 
 function _(e, t) {
-  return 0 === I(e, t)
+  return 0 === S(e, t)
 }
 
 function h(e, t) {
-  var n = I(e, t);
+  var n = S(e, t);
   return 1 === n || 0 === n
 }
 
 function m(e, t) {
-  return 1 === I(e, t)
+  return 1 === S(e, t)
 }
 
 function g(e, t) {
@@ -74,7 +74,7 @@ function g(e, t) {
   r.length > 1 && r.pop();
   var i = r.length - 1,
     a = parseInt(r[i], 10);
-  return b(a) && (r[i] = a + 1 + ""), h(e, n) && f(e, r)
+  return y(a) && (r[i] = a + 1 + ""), h(e, n) && f(e, r)
 }
 
 function E(e) {
@@ -86,11 +86,11 @@ function E(e) {
   }
 }
 
-function b(e) {
+function y(e) {
   return !isNaN(e) && isFinite(e)
 }
 
-function y(e) {
+function b(e) {
   return !E(e).modifier
 }
 
@@ -98,7 +98,7 @@ function O(e, t) {
   for (var n = e.length; n < t; n++) e[n] = "0"
 }
 
-function A(e, t) {
+function v(e, t) {
   O(e = e.slice(), (t = t.slice()).length);
   for (var n = 0; n < t.length; n++) {
     var r = t[n].match(/^[x*]$/i);
@@ -108,21 +108,21 @@ function A(e, t) {
   return O(t, e.length), [e, t]
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = e.match(l)[1],
     r = t.match(l)[1],
     i = parseInt(n, 10),
     a = parseInt(r, 10);
-  return b(i) && b(a) && i !== a ? S(i, a) : S(e, t)
-}
-
-function S(e, t) {
-  return (typeof e != typeof t && r(false), e > t) ? 1 : e < t ? false : 0
+  return y(i) && y(a) && i !== a ? I(i, a) : I(e, t)
 }
 
 function I(e, t) {
-  for (var n = A(e, t), r = n[0], i = n[1], a = 0; a < i.length; a++) {
-    var s = v(r[a], i[a]);
+  return (typeof e != typeof t && r(false), e > t) ? 1 : e < t ? false : 0
+}
+
+function S(e, t) {
+  for (var n = v(e, t), r = n[0], i = n[1], a = 0; a < i.length; a++) {
+    var s = A(r[a], i[a]);
     if (s) return s
   }
   return 0

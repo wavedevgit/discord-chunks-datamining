@@ -8,8 +8,8 @@ var l, r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 let s = {},
   o = {},
-  c = {},
-  u = false,
+  u = {},
+  c = false,
   E = false,
   d = false;
 
@@ -39,7 +39,7 @@ class A extends(r = Chunk311907.Ay.Store) {
   }
   hasSeen(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    return null != e && (t ? u : c[e] || false)
+    return null != e && (t ? c : u[e] || false)
   }
   isEmpty(e) {
     if (null == e) returntrue;
@@ -62,10 +62,10 @@ let T = new A(Chunk73153.h, {
       guildId: t,
       isLurking: n
     } = e;
-    c[t] = true, n && (u = true)
+    u[t] = true, n && (c = true)
   },
   GUILD_STOP_LURKING: function() {
-    u = false
+    c = false
   },
   GUILD_DELETE: function(e) {
     let {
@@ -73,7 +73,7 @@ let T = new A(Chunk73153.h, {
         id: t
       }
     } = e;
-    c[t] = false
+    u[t] = false
   },
   WELCOME_SCREEN_FETCH_START: function() {
     E = true, d = false

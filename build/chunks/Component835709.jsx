@@ -119,7 +119,7 @@ function J(e) {
     disabledSounds: t,
     disableAllSounds: n,
     notifyMessagesInSelectedChannel: a
-  } = e, s = i.useRef(null), o = (0, y.kB)(), l = i.useCallback((e, t) => {
+  } = e, s = i.useRef(null), o = (0, b.kB)(), l = i.useCallback((e, t) => {
     t.stopPropagation(), t.preventDefault(), null != s.current && s.current.stop(), s.current = (0, C.Ak)(e)
   }, []), c = i.useCallback((e, n) => {
     let r = t.filter(t => t !== e);
@@ -209,7 +209,7 @@ function J(e) {
     children: (0, r.jsx)("div", {
       children: (0, r.jsxs)(u.nVY, {
         label: W.intl.string(W.t.MKWyKc),
-        children: [p ? (0, r.jsx)(b.A, {}) : null, (0, r.jsx)(u.dOG, {
+        children: [p ? (0, r.jsx)(y.A, {}) : null, (0, r.jsx)(u.dOG, {
           label: W.intl.string(W.t.lF5GGe),
           description: W.intl.string(W.t["7oXUim"]),
           checked: a && !n,
@@ -473,7 +473,7 @@ async function es(e) {
 }
 
 function eo(e) {
-  let t = (0, y.kB)();
+  let t = (0, b.kB)();
   return (0, r.jsx)(et, Z(q({}, e), {
     focusMode: t
   }))
@@ -507,7 +507,7 @@ function ec() {
       value: l.Tz.NOTIFICATIONS_DISABLED
     }],
     n = t => {
-      (0, I.n4)(t.value, e)
+      (0, S.n4)(t.value, e)
     };
   return (0, r.jsxs)(T.x, {
     setting: F.H.NOTIFICATIONS_REACTIONS,
@@ -558,7 +558,7 @@ function ed() {
       description: W.intl.string(W.t["00TNo7"]),
       badge: "beta",
       checked: e,
-      onChange: S.O
+      onChange: I.O
     })
   })
 }
@@ -597,7 +597,7 @@ function e_() {
       label: W.intl.string(W.t.VxBO2F),
       description: W.intl.string(W.t.F4VeBe),
       checked: e,
-      onChange: A.T
+      onChange: v.T
     })
   })
 }
@@ -610,7 +610,7 @@ function eh() {
       label: W.intl.string(W.t.Q3VWjI),
       description: W.intl.string(W.t.Wc1RcU),
       checked: e,
-      onChange: v.k
+      onChange: A.k
     })
   })
 }

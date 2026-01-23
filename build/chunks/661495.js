@@ -17,24 +17,24 @@ var Chunk557939 = require("./557939.js"),
   Chunk248876 = require("./248876.js"),
   g = Chunk814113.PROPER,
   E = Chunk814113.CONFIGURABLE,
-  b = Chunk248876.IteratorPrototype,
-  y = Chunk248876.BUGGY_SAFARI_ITERATORS,
+  y = Chunk248876.IteratorPrototype,
+  b = Chunk248876.BUGGY_SAFARI_ITERATORS,
   O = Chunk380744("iterator"),
-  A = "keys",
-  v = "values",
-  S = "entries",
-  I = function() {
+  v = "keys",
+  A = "values",
+  I = "entries",
+  S = function() {
     return this
   };
 module.exports = function(e, t, n, s, _, m, T) {
   l(n, t, s);
   var C, N, R, w = function(e) {
       if (e === _ && j) return j;
-      if (!y && e && e in x) return x[e];
+      if (!b && e && e in x) return x[e];
       switch (e) {
-        case A:
         case v:
-        case S:
+        case A:
+        case I:
           return function() {
             return new n(this, e)
           }
@@ -47,21 +47,21 @@ module.exports = function(e, t, n, s, _, m, T) {
     D = false,
     x = e.prototype,
     L = x[O] || x["@@iterator"] || _ && x[_],
-    j = !y && L || w(_),
+    j = !b && L || w(_),
     M = "Array" === t && x.entries || L;
-  if (M && (C = c(M.call(new e))) !== Object.prototype && C.next && (!a && c(C) !== b && (u ? u(C, b) : o(C[O]) || p(C, O, I)), d(C, P, true, true), a && (h[P] = I)), g && _ === v && L && L.name !== v && (!a && E ? f(x, "name", v) : (D = true, j = function() {
+  if (M && (C = c(M.call(new e))) !== Object.prototype && C.next && (!a && c(C) !== y && (u ? u(C, y) : o(C[O]) || p(C, O, S)), d(C, P, true, true), a && (h[P] = S)), g && _ === A && L && L.name !== A && (!a && E ? f(x, "name", A) : (D = true, j = function() {
       return i(L, this)
     })), _)
     if (N = {
-        values: w(v),
-        keys: m ? j : w(A),
-        entries: w(S)
+        values: w(A),
+        keys: m ? j : w(v),
+        entries: w(I)
       }, T)
-      for (R in N) !y && !D && R in x || p(x, R, N[R]);
+      for (R in N) !b && !D && R in x || p(x, R, N[R]);
     else r({
       target: t,
       proto: true,
-      forced: y || D
+      forced: b || D
     }, N);
   return (!a || T) && x[O] !== j && p(x, O, j, {
     name: _

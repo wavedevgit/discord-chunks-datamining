@@ -2,8 +2,8 @@
 /** chunk id: 173678, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => b,
-  z: () => y
+  M: () => y,
+  z: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk575593 = require("./575593.js"),
@@ -44,7 +44,7 @@ function E(e) {
   }
 }
 
-function b(e, t) {
+function y(e, t) {
   let {
     moreCount: n,
     profileOwner: a,
@@ -53,15 +53,15 @@ function b(e, t) {
     isSingleCard: p = false,
     wishlistId: m,
     showTypeTooltip: E = false,
-    cardSize: b,
-    itemSource: y
-  } = t, O = null != e.bundleItems && e.bundleItems.length > 0, A = null != n && n > 0, v = E && !A, S = A ? _.intl.string(_.t.TxBQzD) : _.intl.string(_.t.pLPjsb), I = y === u.uS.POPULAR ? _.intl.string(_.t.Ig6VDH) : _.intl.string(_.t.ilhtIa), T = {
-    title: v ? _.intl.string(_.t.HFhcqh) : S,
-    body: v ? I : true,
-    renderIcon: v ? o.GM : true,
+    cardSize: y,
+    itemSource: b
+  } = t, O = null != e.bundleItems && e.bundleItems.length > 0, v = null != n && n > 0, A = E && !v, I = v ? _.intl.string(_.t.TxBQzD) : _.intl.string(_.t.pLPjsb), S = b === u.uS.POPULAR ? _.intl.string(_.t.Ig6VDH) : _.intl.string(_.t.ilhtIa), T = {
+    title: A ? _.intl.string(_.t.HFhcqh) : I,
+    body: A ? S : true,
+    renderIcon: A ? o.GM : true,
     shouldShow: true
   }, C = () => {
-    A ? c() : g(e, a, s)
+    v ? c() : g(e, a, s)
   }, N = () => {
     if (O) {
       let t = {
@@ -91,12 +91,12 @@ function b(e, t) {
     isSingleCard: p,
     wishlistItem: e,
     wishlistId: m,
-    cardSize: b,
-    itemSource: y
+    cardSize: y,
+    itemSource: b
   }, e.skuId)
 }
 
-function y(e, t) {
+function b(e, t) {
   let {
     profileOwner: n,
     analyticsLocations: i,
@@ -104,7 +104,7 @@ function y(e, t) {
     onViewWishlist: o
   } = t, l = null != e.bundleItems && e.bundleItems.length > 0, c = () => {
     g(e, n, i)
-  }, u = b(e, {
+  }, u = y(e, {
     profileOwner: n,
     analyticsLocations: i,
     onViewWishlist: o,

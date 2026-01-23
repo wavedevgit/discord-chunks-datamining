@@ -2,7 +2,7 @@
 /** chunk id: 347951, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Fi: () => s,
-  Ig: () => c,
+  Ig: () => u,
   Wr: () => o
 });
 var Chunk311907 = require("./311907.js"),
@@ -19,7 +19,7 @@ function o(e) {
   return (null == e ? true : e.features.has(i.GuildFeatures.INVITES_DISABLED)) || (null == t ? true : t.invitesDisabledUntil) != null && new Date(t.invitesDisabledUntil) > new Date
 }
 
-function c(e) {
+function u(e) {
   let t = s(e),
     n = o(e);
   return t && n

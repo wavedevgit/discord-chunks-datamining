@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => O,
-  r: () => y
+  r: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -63,12 +63,12 @@ function E(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = b(e, t), Object.getOwnPropertySymbols)
+  if (a = y(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -76,7 +76,7 @@ function b(e, t) {
   return i
 }
 
-function y(e) {
+function b(e) {
   let t = (0, u.Q)(e),
     {
       enabled: n,
@@ -91,18 +91,18 @@ function y(e) {
     g = (0, c.Us)(),
     E = a ? () => d() : () => s(!e.enabled, g),
     {
-      Component: b,
-      play: y,
+      Component: y,
+      play: b,
       events: O
     } = (0, o.K)(m || n ? "disable" : "enable");
-  i.useEffect(() => () => y(), [n, y]);
-  let A = m ? l.npA : g === f.BRT.POPOUT ? n ? l.npA : l.OCo : b;
+  i.useEffect(() => () => b(), [n, b]);
+  let v = m ? l.npA : g === f.BRT.POPOUT ? n ? l.npA : l.OCo : y;
   return (0, r.jsx)(r.Fragment, {
     children: _({
       onClick: E,
       isActive: n,
       disabled: !n && (!p || h),
-      iconComponent: A,
+      iconComponent: v,
       iconColor: "currentColor",
       label: t,
       unavailable: a,
@@ -125,9 +125,9 @@ function O(e) {
     channelLimitReached: f,
     channelLimit: _,
     centerButton: m = false,
-    onPopoutClick: b
-  } = e, O = E(e, ["enabled", "join", "channel", "onChange", "onCameraUnavailable", "cameraUnavailable", "hasPermission", "className", "channelLimitReached", "channelLimit", "centerButton", "onPopoutClick"]), A = m ? d.l : d.A, v = () => n ? "join" : t ? "green" : "primaryDark", S = e => n ? "join" : e ? "green" : O.color;
-  return (0, r.jsx)(y, {
+    onPopoutClick: y
+  } = e, O = E(e, ["enabled", "join", "channel", "onChange", "onCameraUnavailable", "cameraUnavailable", "hasPermission", "className", "channelLimitReached", "channelLimit", "centerButton", "onPopoutClick"]), v = m ? d.l : d.A, A = () => n ? "join" : t ? "green" : "primaryDark", I = e => n ? "join" : e ? "green" : O.color;
+  return (0, r.jsx)(b, {
     enabled: t,
     join: n,
     channel: i,
@@ -144,9 +144,9 @@ function O(e) {
         onMouseLeave: a,
         isActive: o
       } = e, l = E(e, ["unavailable", "onMouseEnter", "onMouseLeave", "isActive"]);
-      return (0, r.jsx)(A, g(h({}, l, O), {
-        color: S(o),
-        caretColor: v(),
+      return (0, r.jsx)(v, g(h({}, l, O), {
+        color: I(o),
+        caretColor: A(),
         isActive: o,
         onMouseEnter: e => {
           var t;
@@ -159,7 +159,7 @@ function O(e) {
         className: s()(u, {
           [p.t]: t
         }),
-        onPopoutClick: b,
+        onPopoutClick: y,
         isTrayButton: !n
       }))
     }

@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 875922, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -32,30 +32,30 @@ function p(e) {
   return e
 }
 
-function f(e) {
+function h(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     {
       priorityMembers: n,
-      partiedMembers: f
+      partiedMembers: h
     } = e,
-    h = i.useContext(c.AnalyticsContext),
-    A = n.map(e => {
+    g = i.useContext(c.AnalyticsContext),
+    f = n.map(e => {
       let {
         user: t
       } = e;
       return t.id
     }),
-    g = 1 === f.length && 1 === n.length,
-    m = n.length - f.length > 0;
-  return (g || t) && !m && 0 !== A.length ? (0, r.jsx)(l.Drp, {
+    m = 1 === h.length && 1 === n.length,
+    A = n.length - h.length > 0;
+  return (m || t) && !A && 0 !== f.length ? (0, r.jsx)(l.Drp, {
     id: "message",
     action: function() {
       a.A.openPrivateChannel({
-        recipientIds: A
+        recipientIds: f
       }).then(t => {
         var n, r;
         return s.Ay.trackWithMetadata(u.HAw.ACTIVITY_FEED_DM_VISITED, p({
-          source: (n = p({}, h.location), r = r = {
+          source: (n = p({}, g.location), r = r = {
             object: u.ZSU.LIST_ITEM
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
             var n = Object.keys(e);
@@ -68,7 +68,7 @@ function f(e) {
             Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
           }), n),
           channel_id: t,
-          recipient_id: "string" == typeof A ? A : A[0],
+          recipient_id: "string" == typeof f ? f : f[0],
           af_recently_played: false
         }, (0, o.o)(e)))
       })

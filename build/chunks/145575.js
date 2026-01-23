@@ -18,8 +18,8 @@ var n = "function" == typeof Symbol && Symbol.for,
   m = n ? Symbol.for("react.lazy") : 60116,
   g = n ? Symbol.for("react.block") : 60121,
   E = n ? Symbol.for("react.fundamental") : 60117,
-  b = n ? Symbol.for("react.responder") : 60118,
-  y = n ? Symbol.for("react.scope") : 60119;
+  y = n ? Symbol.for("react.responder") : 60118,
+  b = n ? Symbol.for("react.scope") : 60119;
 
 function O(e) {
   if ("object" == typeof e && null !== e) {
@@ -52,12 +52,12 @@ function O(e) {
   }
 }
 
-function A(e) {
+function v(e) {
   return O(e) === d
 }
 exports.AsyncMode = u, exports.ConcurrentMode = d, exports.ContextConsumer = c, exports.ContextProvider = l, exports.Element = r, exports.ForwardRef = f, exports.Fragment = a, exports.Lazy = m, exports.Memo = h, exports.Portal = i, exports.Profiler = o, exports.StrictMode = s, exports.Suspense = p, exports.isAsyncMode = function(e) {
-  return A(e) || O(e) === u
-}, exports.isConcurrentMode = A, exports.isContextConsumer = function(e) {
+  return v(e) || O(e) === u
+}, exports.isConcurrentMode = v, exports.isContextConsumer = function(e) {
   return O(e) === c
 }, exports.isContextProvider = function(e) {
   return O(e) === l
@@ -80,5 +80,5 @@ exports.AsyncMode = u, exports.ConcurrentMode = d, exports.ContextConsumer = c, 
 }, exports.isSuspense = function(e) {
   return O(e) === p
 }, exports.isValidElementType = function(e) {
-  return "string" == typeof e || "function" == typeof e || e === a || e === d || e === o || e === s || e === p || e === _ || "object" == typeof e && null !== e && (e.$$typeof === m || e.$$typeof === h || e.$$typeof === l || e.$$typeof === c || e.$$typeof === f || e.$$typeof === E || e.$$typeof === b || e.$$typeof === y || e.$$typeof === g)
+  return "string" == typeof e || "function" == typeof e || e === a || e === d || e === o || e === s || e === p || e === _ || "object" == typeof e && null !== e && (e.$$typeof === m || e.$$typeof === h || e.$$typeof === l || e.$$typeof === c || e.$$typeof === f || e.$$typeof === E || e.$$typeof === y || e.$$typeof === b || e.$$typeof === g)
 }, exports.typeOf = O

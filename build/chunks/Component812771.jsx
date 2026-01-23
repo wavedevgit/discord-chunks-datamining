@@ -2,12 +2,12 @@
 /** chunk id: 812771, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A,
-  X: () => g
+  X: () => m
 }), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   Chunk827734 = require("./827734.js"),
   Chunk397927 = require("./397927.js"),
@@ -16,27 +16,27 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk964404 = require("./964404.js"),
   Chunk743898 = require("./743898.js"),
   Chunk3651 = require("./3651.js"),
-  g = ((r = {})[r.PostSidebar = 0] = "PostSidebar", r[r.ThreadSidebar = 1] = "ThreadSidebar", r[r.CallChatSidebar = 2] = "CallChatSidebar", r[r.MessageRequestSidebar = 3] = "MessageRequestSidebar", r[r.HomeSidebar = 4] = "HomeSidebar", r[r.ParticipantsSidebar = 5] = "ParticipantsSidebar", r);
+  m = ((r = {})[r.PostSidebar = 0] = "PostSidebar", r[r.ThreadSidebar = 1] = "ThreadSidebar", r[r.CallChatSidebar = 2] = "CallChatSidebar", r[r.MessageRequestSidebar = 3] = "MessageRequestSidebar", r[r.HomeSidebar = 4] = "HomeSidebar", r[r.ParticipantsSidebar = 5] = "ParticipantsSidebar", r);
 
-function m(e) {
+function b(e) {
   let {
     resizableNode: t,
     onResize: n,
     onResizeEnd: r,
     maxWidth: i,
-    minWidth: a
-  } = e, s = (0, f.A)({
-    minDimension: a,
+    minWidth: s
+  } = e, a = (0, p.A)({
+    minDimension: s,
     maxDimension: i,
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: r,
-    orientation: f.R.HORIZONTAL_LEFT,
+    orientation: p.R.HORIZONTAL_LEFT,
     throttleDuration: 16
   });
   return (0, l.jsx)("div", {
-    onMouseDown: s,
-    className: b.Di
+    onMouseDown: a,
+    className: g.Di
   })
 }
 
@@ -45,9 +45,9 @@ function A(e) {
     sidebarType: t,
     maxWidth: n,
     onWidthChange: r,
-    children: a,
-    floatingLayer: f
-  } = e, g = i.useRef(null), A = function(e) {
+    children: s,
+    floatingLayer: p
+  } = e, m = i.useRef(null), A = function(e) {
     switch (e) {
       case 0:
         return "postSidebarWidth";
@@ -62,51 +62,51 @@ function A(e) {
       case 5:
         return "callParticipantsSidebarWidth"
     }
-  }(t), [y, O] = i.useState(p.Ay[A]), j = i.useCallback(e => {
+  }(t), [y, _] = i.useState(h.Ay[A]), O = i.useCallback(e => {
     d.Ay.updatedUnsyncedSettings({
       [A]: e
     })
-  }, [A]), v = 5 === t ? 360 : 450, x = (0, h.P)({
+  }, [A]), j = 5 === t ? 360 : 450, v = (0, f.P)({
     maxWidth: n,
-    minWidth: v
-  }), E = (0, u.rdh)(c.A.modules.chat.RESIZE_HANDLE_WIDTH), _ = (0, o.clamp)(y, v, n), C = x ? _ : _ + E;
+    minWidth: j
+  }), x = (0, u.rdh)(c.A.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, o.clamp)(y, j, n), C = v ? E : E + x;
   i.useEffect(() => {
-    null == r || r(_, x)
-  }, [_, r, x]);
-  let S = null != f ? f : i.Fragment;
+    null == r || r(E, v)
+  }, [E, r, v]);
+  let S = null != p ? p : i.Fragment;
   return (0, l.jsxs)(l.Fragment, {
-    children: [!x && (0, l.jsx)("div", {
+    children: [!v && (0, l.jsx)("div", {
       style: {
         minWidth: C
       }
     }), (0, l.jsx)(S, {
       children: (0, l.jsxs)("div", {
-        className: s()(b.PA, {
-          [b.R]: false
+        className: a()(g.PA, {
+          [g.R]: false
         }),
         children: [(0, l.jsx)("div", {
-          className: s()(b.Uc, {
-            [b.DU]: x,
-            [b.iK]: !x
+          className: a()(g.Uc, {
+            [g.DU]: v,
+            [g.iK]: !v
           }),
           style: {
             width: C
           }
-        }), !x && (0, l.jsx)(m, {
-          minWidth: v,
+        }), !v && (0, l.jsx)(b, {
+          minWidth: j,
           maxWidth: n,
-          resizableNode: g,
-          onResize: O,
-          onResizeEnd: j
+          resizableNode: m,
+          onResize: _,
+          onResizeEnd: O
         }), (0, l.jsx)("div", {
-          ref: g,
-          className: s()(b.kL, {
-            [b.DU]: x
+          ref: m,
+          className: a()(g.kL, {
+            [g.DU]: v
           }),
           style: {
-            width: _
+            width: E
           },
-          children: a
+          children: s
         })]
       })
     })]

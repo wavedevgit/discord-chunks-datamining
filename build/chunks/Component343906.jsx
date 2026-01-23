@@ -95,29 +95,29 @@ function F(e) {
     isMoreLoading: m
   } = (0, g.A)({
     onError: n
-  }), b = (0, h.kN)().get(t), [y, A] = i.useState(P.PH), v = i.useCallback(() => {
-    A(e => e + P.PH), f(t)
+  }), y = (0, h.kN)().get(t), [b, v] = i.useState(P.PH), A = i.useCallback(() => {
+    v(e => e + P.PH), f(t)
   }, [t, f]);
-  l()(b, "No text for action type: ".concat(t));
-  let C = t === P.NV.PURCHASES && null != u ? b.sectionHeader(u) : b.sectionHeader(c),
+  l()(y, "No text for action type: ".concat(t));
+  let C = t === P.NV.PURCHASES && null != u ? y.sectionHeader(u) : y.sectionHeader(c),
     N = i.useCallback(e => {
       let {
         row: t
       } = e, n = o[t];
       if ((0, h.aq)(n)) {
         let e = p.default.extractTimestamp(n.event_id),
-          t = (0, h.i6)(e, b.timestampFormatter);
+          t = (0, h.i6)(e, y.timestampFormatter);
         return (0, r.jsx)(T.A, {
           userId: n.entity_id,
           subText: t
         }, n.event_id)
       }
-      if ((0, h.Is)(n)) return (0, r.jsx)(S.A, {
+      if ((0, h.Is)(n)) return (0, r.jsx)(I.A, {
         guildId: n.entity_id
       }, n.event_id);
       if ((0, h.u7)(n)) {
         let e = _.A.getPurchaseInfo(n.entity_id);
-        return null == e ? null : (0, r.jsx)(I.A, {
+        return null == e ? null : (0, r.jsx)(S.A, {
           skuId: e.sku_id,
           subscriptionPlanId: e.subscription_plan_id,
           total: e.total,
@@ -125,21 +125,21 @@ function F(e) {
         }, n.event_id)
       }
       return null
-    }, [o, b.timestampFormatter]),
+    }, [o, y.timestampFormatter]),
     R = i.useCallback(() => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.Text, {
         className: j.bV,
         variant: "text-md/semibold",
         children: C
-      }), true !== b.sectionDescription ? (0, r.jsx)(d.Text, {
+      }), true !== y.sectionDescription ? (0, r.jsx)(d.Text, {
         className: j.yV,
         variant: "text-md/medium",
         color: "text-muted",
-        children: b.sectionDescription(null != a && a)
+        children: y.sectionDescription(null != a && a)
       }) : null]
-    }), [C, b, a]);
+    }), [C, y, a]);
   if (0 === o.length) return null;
-  let w = o.slice(0, y);
+  let w = o.slice(0, b);
   return (0, r.jsxs)("div", {
     className: j.A2,
     children: [R(), (0, r.jsx)("div", {
@@ -154,7 +154,7 @@ function F(e) {
       className: s()(j.FQ, {
         [j.r9]: m
       }),
-      onClick: v,
+      onClick: A,
       role: "button",
       "aria-disabled": m,
       children: m ? (0, r.jsx)(d.y$y, {
@@ -172,12 +172,12 @@ function F(e) {
 }
 let B = () => {
     let e = (0, O.A)(),
-      t = (0, A.vx)(),
+      t = (0, v.vx)(),
       n = (0, m.y)(L.intl.formatToPlainString(x.default["7hqFl9"], {
         activeLinks: t.length
       }), L.intl.string(x.default["Q/D/0Q"])),
       i = (0, h.cV)(!!e),
-      a = (0, A.v4)(i);
+      a = (0, v.v4)(i);
     return e && t.length > 1 ? (0, r.jsx)(d.Text, {
       variant: "eyebrow",
       children: a
@@ -198,7 +198,7 @@ let B = () => {
       subText: n,
       avatarSize: i = d._3J.SIZE_40,
       hideUserTag: a = false
-    } = e, s = (0, y.F7)(t);
+    } = e, s = (0, b.F7)(t);
     return true === s ? null : (0, r.jsxs)("div", {
       className: j.iO,
       children: [(0, r.jsx)(C.H, {
@@ -219,7 +219,7 @@ let B = () => {
   });
 H.displayName = "FamilyCenterActivityCardAccountRow";
 let Y = () => {
-    let e = (0, A.GR)(),
+    let e = (0, v.GR)(),
       t = (0, c.bG)([_.A], () => _.A.getSelectedTeenId()),
       {
         selectTeenUser: n
@@ -252,11 +252,11 @@ let Y = () => {
     })
   },
   W = () => {
-    let e = (0, b.k)(),
+    let e = (0, y.k)(),
       t = (0, O.A)(),
-      n = (0, A.vx)(),
+      n = (0, v.vx)(),
       i = (0, h.cV)(!!t),
-      a = (0, A.v4)(i);
+      a = (0, v.v4)(i);
     return null === e ? null : t && 1 !== n.length ? (0, r.jsx)(Y, {}) : (0, r.jsx)(H, {
       userId: e,
       subText: a
@@ -266,7 +266,7 @@ let Y = () => {
     let e = (0, h.Mo)(),
       t = (0, E.lI)(),
       n = (0, h.jp)(),
-      i = (0, A.v4)(n);
+      i = (0, v.v4)(n);
     return (0, r.jsxs)("div", {
       className: j.kL,
       children: [(0, r.jsxs)("div", {
@@ -285,7 +285,7 @@ let Y = () => {
             className: j.O2,
             children: e.map(e => {
               let [t, n] = e;
-              return (0, r.jsx)(v.A, {
+              return (0, r.jsx)(A.A, {
                 displayType: t,
                 header: n.tooltipHeader()
               }, "counter-".concat(t))

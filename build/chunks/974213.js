@@ -2,8 +2,8 @@
 /** chunk id: 974213, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $Q: () => S,
-  Sc: () => I
+  $Q: () => I,
+  Sc: () => S
 });
 var Chunk257537 = require("./257537.js"),
   Chunk825913 = require("./825913.js"),
@@ -24,11 +24,11 @@ var Chunk257537 = require("./257537.js"),
   Chunk533715 = require("./533715.js"),
   Chunk561514 = require("./561514.js"),
   Chunk64700 = require("./64700.js");
-let A = (0, Chunk64700.createContext)(null),
-  v = (0, Chunk64700.createContext)(null),
-  S = (0, Chunk64700.forwardRef)(function(e, t) {
+let v = (0, Chunk64700.createContext)(null),
+  A = (0, Chunk64700.createContext)(null),
+  I = (0, Chunk64700.forwardRef)(function(e, t) {
     var n, r;
-    [e, t] = (0, i.JT)(e, t, A);
+    [e, t] = (0, i.JT)(e, t, v);
     let {
       validationBehavior: d
     } = (0, i.CC)(s.c) || {}, f = null != (r = null != (n = e.validationBehavior) ? n : d) ? r : "native", p = (0, m.h)({
@@ -36,10 +36,10 @@ let A = (0, Chunk64700.createContext)(null),
       validationBehavior: f
     }), [_, h] = (0, i._E)(!e["aria-label"] && !e["aria-labelledby"]), {
       groupProps: g,
-      labelProps: b,
-      descriptionProps: y,
-      errorMessageProps: S,
-      ...I
+      labelProps: y,
+      descriptionProps: b,
+      errorMessageProps: I,
+      ...S
     } = (0, c.M)({
       ...e,
       label: h,
@@ -67,23 +67,23 @@ let A = (0, Chunk64700.createContext)(null),
       "data-disabled": e.isDisabled || true
     }, O.createElement(i.Kq, {
       values: [
-        [v, p],
+        [A, p],
         [o.I, {
-          ...b,
+          ...y,
           ref: _,
           elementType: "span"
         }],
         [l.h, {
           slots: {
-            description: y,
-            errorMessage: S
+            description: b,
+            errorMessage: I
           }
         }],
-        [a.C, I]
+        [a.C, S]
       ]
     }, T.children))
   }),
-  I = (0, Chunk64700.forwardRef)(function(e, t) {
+  S = (0, Chunk64700.forwardRef)(function(e, t) {
     var n, a;
     let {
       inputRef: o = null,
@@ -92,23 +92,23 @@ let A = (0, Chunk64700.createContext)(null),
     [e, t] = (0, i.JT)(l, t, r.BP);
     let {
       validationBehavior: c
-    } = (0, i.CC)(s.c) || {}, m = null != (a = null != (n = e.validationBehavior) ? n : c) ? a : "native", A = (0, O.useContext)(v), S = (0, b.U)((0, O.useMemo)(() => (0, y.P)(o, true !== e.inputRef ? e.inputRef : null), [o, e.inputRef])), {
-      labelProps: I,
+    } = (0, i.CC)(s.c) || {}, m = null != (a = null != (n = e.validationBehavior) ? n : c) ? a : "native", v = (0, O.useContext)(A), I = (0, y.U)((0, O.useMemo)(() => (0, b.P)(o, true !== e.inputRef ? e.inputRef : null), [o, e.inputRef])), {
+      labelProps: S,
       inputProps: T,
       isSelected: C,
       isDisabled: N,
       isReadOnly: R,
       isPressed: w,
       isInvalid: P
-    } = A ? (0, d.B)({
+    } = v ? (0, d.B)({
       ...(0, i.SK)(e),
       value: e.value,
       children: "function" == typeof e.children || e.children
-    }, A, S) : (0, f.v)({
+    }, v, I) : (0, f.v)({
       ...(0, i.SK)(e),
       children: "function" == typeof e.children || e.children,
       validationBehavior: m
-    }, (0, g.H)(e), S), {
+    }, (0, g.H)(e), I), {
       isFocused: D,
       isFocusVisible: x,
       focusProps: L
@@ -137,7 +137,7 @@ let A = (0, Chunk64700.createContext)(null),
       global: true
     });
     return delete G.id, delete G.onClick, O.createElement("label", {
-      ...(0, u.v)(G, I, M, U),
+      ...(0, u.v)(G, S, M, U),
       ref: t,
       slot: e.slot || true,
       "data-selected": C || true,
@@ -154,6 +154,6 @@ let A = (0, Chunk64700.createContext)(null),
       elementType: "span"
     }, O.createElement("input", {
       ...(0, u.v)(T, L),
-      ref: S
+      ref: I
     })), U.children)
   })

@@ -2,7 +2,7 @@
 /** chunk id: 332612, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  L: () => b
+  L: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -27,9 +27,9 @@ function g(e) {
     count: n
   } = e, {
     analyticsLocations: d
-  } = (0, c.Ay)(), g = (0, a.bG)([p.default], () => p.default.getUser(t)), E = _.Ay.getFormattedName(g), b = i.useCallback(() => {
+  } = (0, c.Ay)(), g = (0, a.bG)([p.default], () => p.default.getUser(t)), E = _.Ay.getFormattedName(g), y = i.useCallback(() => {
     (0, u.kj)(t)
-  }, [t]), y = i.useCallback(() => (0, f.openUserProfileModal)({
+  }, [t]), b = i.useCallback(() => (0, f.openUserProfileModal)({
     userId: t,
     sourceAnalyticsLocations: d
   }), [t, d]);
@@ -45,7 +45,7 @@ function g(e) {
       className: m.Qq,
       children: [(0, r.jsx)(s.DUT, {
         className: m.Xh,
-        onClick: y,
+        onClick: b,
         children: (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
           color: "interactive-text-active",
@@ -59,7 +59,7 @@ function g(e) {
         })
       })]
     }), (0, r.jsx)(s.DUT, {
-      onClick: b,
+      onClick: y,
       className: m.Qz,
       children: (0, r.jsx)(s.ucK, {
         size: "xs"
@@ -103,7 +103,7 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     userId: t
   } = e, n = (0, d.k)(t);

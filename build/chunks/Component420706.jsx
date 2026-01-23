@@ -115,11 +115,11 @@ let V = e => {
           entry: t
         }));
       case l.I.TOP_GAME:
-        return (0, r.jsx)(I.Ay, L(D({}, n), {
+        return (0, r.jsx)(S.Ay, L(D({}, n), {
           entry: t
         }));
       case l.I.TOP_ARTIST:
-        return (0, r.jsx)(v.Ay, L(D({}, n), {
+        return (0, r.jsx)(A.Ay, L(D({}, n), {
           entry: t
         }));
       case l.I.LISTENED_SESSION:
@@ -140,7 +140,7 @@ let V = e => {
       entry: n,
       targetElementRef: i
     } = e, a = j(e, ["entry", "targetElementRef"]);
-    return n.content_type !== l.I.PLAYED_GAME ? null : (0, r.jsx)(y.A, {
+    return n.content_type !== l.I.PLAYED_GAME ? null : (0, r.jsx)(b.A, {
       entry: n,
       targetElementRef: i,
       isFirstApplicationOccurrence: null != (t = a.isFirstApplicationOccurrence) && t
@@ -172,7 +172,7 @@ let V = e => {
     } = e, n = j(e, ["entry"]);
     switch (t.content_type) {
       case l.I.PLAYED_GAME:
-        return (0, r.jsx)(b.A, L(D({}, n), {
+        return (0, r.jsx)(y.A, L(D({}, n), {
           entry: t
         }));
       case l.I.WATCHED_MEDIA:
@@ -184,11 +184,11 @@ let V = e => {
           entry: t
         }));
       case l.I.TOP_ARTIST:
-        return (0, r.jsx)(S.A, L(D({}, n), {
+        return (0, r.jsx)(I.A, L(D({}, n), {
           entry: t
         }));
       case l.I.LISTENED_SESSION:
-        return (0, r.jsx)(A.A, L(D({}, n), {
+        return (0, r.jsx)(v.A, L(D({}, n), {
           entry: t
         }));
       case l.I.LAUNCHED_ACTIVITY:
@@ -205,23 +205,23 @@ let V = e => {
     let {
       index: a,
       ref: l
-    } = e, p = j(e, ["index", "ref"]), m = i.useRef(null), [g, E] = i.useState("default"), [b, y] = i.useState(false), O = (0, o.rm)("".concat(a)), A = null == (t = _.default.getCurrentUser()) ? true : t.isStaff(), {
-      isRich: v,
-      appName: S
-    } = (0, R.u)(p.entry), I = i.useMemo(() => ({
+    } = e, p = j(e, ["index", "ref"]), m = i.useRef(null), [g, E] = i.useState("default"), [y, b] = i.useState(false), O = (0, o.rm)("".concat(a)), v = null == (t = _.default.getCurrentUser()) ? true : t.isStaff(), {
+      isRich: A,
+      appName: I
+    } = (0, R.u)(p.entry), S = i.useMemo(() => ({
       entry: p.entry,
       channelId: p.channel.id,
       guildId: p.channel.guild_id,
       requestId: p.requestId,
-      richPresenceName: v ? S : true
-    }), [S, p.channel.guild_id, p.channel.id, p.entry, p.requestId, v]), T = i.useRef(false), [C, N] = i.useState(false), [P, x] = i.useState(false), M = (0, c.bG)([f.A], () => f.A.keyboardModeEnabled);
+      richPresenceName: A ? I : true
+    }), [I, p.channel.guild_id, p.channel.id, p.entry, p.requestId, A]), T = i.useRef(false), [C, N] = i.useState(false), [P, x] = i.useState(false), M = (0, c.bG)([f.A], () => f.A.keyboardModeEnabled);
     i.useEffect(() => {
       C && M && x(true)
     }, [C, M]), i.useLayoutEffect(() => {
-      null != m.current && y(true)
+      null != m.current && b(true)
     }, []);
     let k = i.useCallback(e => {
-        A && (0, d.L3)(e, async () => {
+        v && (0, d.L3)(e, async () => {
           let {
             default: e
           } = await n.e("89346").then(n.bind(n, 949881));
@@ -230,14 +230,14 @@ let V = e => {
             requestId: p.requestId
           })
         })
-      }, [p, A]),
+      }, [p, v]),
       G = i.useCallback(() => {
         E(String(Date.now()))
       }, []),
       H = i.useCallback(function(e) {
         let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-        (0, h.I)(e, D({}, I, t))
-      }, [I]),
+        (0, h.I)(e, D({}, S, t))
+      }, [S]),
       W = i.useMemo(() => s().throttle(e => {
         (0, h.I)(w.PA.CARD_POPOUT_OPEN, e)
       }, U, {
@@ -250,13 +250,13 @@ let V = e => {
         }, 100)
       };
     return (0, r.jsxs)(r.Fragment, {
-      children: [b && (0, r.jsx)(F, L(D({}, p), {
+      children: [y && (0, r.jsx)(F, L(D({}, p), {
         targetElementRef: m
       })), (0, r.jsx)("div", {
         ref: l,
         onMouseEnter: () => {
           T.current = true, setTimeout(() => {
-            T.current && N(true), W(I)
+            T.current && N(true), W(S)
           }, 100)
         },
         onMouseLeave: K,
@@ -278,7 +278,7 @@ let V = e => {
           position: "left",
           shouldShow: C,
           positionKey: g,
-          onRequestOpen: () => W(I),
+          onRequestOpen: () => W(S),
           onRequestClose: () => {
             P && K()
           },

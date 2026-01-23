@@ -5,7 +5,7 @@ require.r(exports), require.d(exports, {
   getOrParseBioAST: () => g,
   parseBioReact: () => h,
   parseBioReactWithCachedAST: () => E,
-  parseBioReactWithoutScrolling: () => y
+  parseBioReactWithoutScrolling: () => b
 }), require("./733351.js");
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438),
@@ -38,8 +38,8 @@ function E(e) {
   let t = g(e);
   return l().reactFor(l().ruleOutput(p, "react"))(t)
 }
-let b = ["link", "url", "autolink", "customEmoji", "emoji", "commandMention"],
-  y = Chunk436857.aV((0, Chunk551965.A)([i().omit(p, b), {
+let y = ["link", "url", "autolink", "customEmoji", "emoji", "commandMention"],
+  b = Chunk436857.aV((0, Chunk551965.A)([i().omit(p, y), {
     emoji: {
       react: () => null
     }

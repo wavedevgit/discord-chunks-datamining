@@ -1,5 +1,5 @@
 /** Chunk was on 14691 **/
-/** chunk id: 314461, original params: e,t,l (module,exports,require) **/
+/** chunk id: 314461, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => h
 });
@@ -19,15 +19,15 @@ var Chunk158954 = require("./158954.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk8577 = require("./8577.js");
 
-function v(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var l = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(l);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(l, e).enumerable
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
       var r;
-      r = l[t], t in e ? Object.defineProperty(e, t, {
+      r = n[t], t in e ? Object.defineProperty(e, t, {
         value: r,
         enumerable: true,
         configurable: true,
@@ -38,72 +38,72 @@ function v(e) {
   return e
 }
 
-function g(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var l = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var r = Object.getOwnPropertySymbols(e);
-      l.push.apply(l, r)
+      n.push.apply(n, r)
     }
-    return l
-  })(Object(t)).forEach(function(l) {
-    Object.defineProperty(e, l, Object.getOwnPropertyDescriptor(t, l))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e) {
+function b(e) {
   let {
     step: t,
-    setFooterNode: l
-  } = (0, f.bv)(), i = (0, c.U)("GameServerSetupModal"), {
+    setFooterNode: n
+  } = (0, m.bv)(), s = (0, o.U)("GameServerSetupModal"), {
     title: d,
-    subtitle: p
+    subtitle: b
   } = function(e) {
     switch (e) {
-      case b.HS.SELECT_GAME:
+      case x.HS.SELECT_GAME:
         return {
-          title: x.intl.string(m.default["3vWDMz"]), subtitle: x.intl.string(m.default.Az5bjs)
+          title: f.intl.string(g.default["3vWDMz"]), subtitle: f.intl.string(g.default.Az5bjs)
         };
-      case b.HS.SERVER_SETTINGS:
+      case x.HS.SERVER_SETTINGS:
         return {
-          title: x.intl.string(m.default.RLGW9z)
+          title: f.intl.string(g.default.RLGW9z)
         }
     }
   }(t);
-  return (0, r.jsxs)(n.dWK, g(v({}, e), {
+  return (0, r.jsxs)(l.dWK, v(p({}, e), {
     size: "lg",
-    children: [(0, r.jsx)(n.rQ0, {
+    children: [(0, r.jsx)(l.rQ0, {
       title: d,
-      subtitle: p
-    }), i && (0, r.jsx)("div", {
+      subtitle: b
+    }), s && (0, r.jsx)("div", {
       className: j.M,
       children: (0, r.jsx)(a.A, {
         look: a.k.WARNING,
-        children: x.intl.format(m.default.XzXjK2, {})
+        children: f.intl.format(g.default.XzXjK2, {})
       })
-    }), (0, r.jsx)(s.IpV, {
+    }), (0, r.jsx)(i.IpV, {
       className: j.j,
       style: {
-        width: b.ST
+        width: x.ST
       },
       children: (0, r.jsx)("div", {
         style: {
-          padding: b.by
+          padding: x.by
         },
-        children: (0, r.jsxs)(s.tN_, {
-          width: b.U$,
+        children: (0, r.jsxs)(i.tN_, {
+          width: x.U$,
           activeSlide: t,
-          children: [(0, r.jsx)(s.q7S, {
-            id: b.HS.SELECT_GAME,
-            children: (0, r.jsx)(o.A, {})
-          }, b.HS.SELECT_GAME), (0, r.jsx)(s.q7S, {
-            id: b.HS.SERVER_SETTINGS,
+          children: [(0, r.jsx)(i.q7S, {
+            id: x.HS.SELECT_GAME,
+            children: (0, r.jsx)(c.A, {})
+          }, x.HS.SELECT_GAME), (0, r.jsx)(i.q7S, {
+            id: x.HS.SERVER_SETTINGS,
             children: (0, r.jsx)(u.A, {})
-          }, b.HS.SERVER_SETTINGS)]
+          }, x.HS.SERVER_SETTINGS)]
         })
       })
     }), (0, r.jsx)("div", {
-      ref: e => l(e)
+      ref: e => n(e)
     })]
   }))
 }
@@ -111,11 +111,11 @@ function p(e) {
 function h(e) {
   let {
     analyticsLocations: t
-  } = (0, i.Ay)();
-  return (0, d.wN)(e.guildId, t, e.analyticsLocation), (0, r.jsx)(i.f5, {
+  } = (0, s.Ay)();
+  return (0, d.wN)(e.guildId, t, e.analyticsLocation), (0, r.jsx)(s.f5, {
     value: t,
-    children: (0, r.jsx)(f.mf, g(v({}, e), {
-      children: (0, r.jsx)(p, v({}, e))
+    children: (0, r.jsx)(m.mf, v(p({}, e), {
+      children: (0, r.jsx)(b, p({}, e))
     }))
   })
 }

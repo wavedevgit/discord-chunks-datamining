@@ -41,14 +41,14 @@ function M(e) {
   let {
     guild: t,
     isStudyRoomNotice: n = false
-  } = e, l = (0, b.V)(t.id), d = (0, _.BP)(t.id), T = (0, s.bG)([C.A], () => C.A.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
+  } = e, l = (0, _.V)(t.id), d = (0, b.BP)(t.id), T = (0, s.bG)([C.A], () => C.A.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
     isStageNoticeHidden: M,
     isEventNoticeHidden: U
-  } = (0, s.cf)([g.A], () => ({
-    isStageNoticeHidden: g.A.isLiveChannelNoticeHidden({
+  } = (0, s.cf)([m.A], () => ({
+    isStageNoticeHidden: m.A.isLiveChannelNoticeHidden({
       stageId: null == T ? true : T.id
     }),
-    isEventNoticeHidden: g.A.isLiveChannelNoticeHidden({
+    isEventNoticeHidden: m.A.isLiveChannelNoticeHidden({
       eventId: null == d ? true : d.id
     })
   }), [T, d]), G = null == l ? true : l.id, V = (0, s.yK)([v.A], () => [...new Set(v.A.getMutableParticipants(G, S.ip.SPEAKER).map(e => e.user))], [G]), B = (0, s.bG)([v.A], () => null != G ? v.A.getParticipantCount(G, S.ip.AUDIENCE) : 0, [G]), H = (0, s.bG)([j.A], () => j.A.can(w.xBc.CONNECT, l)), F = (0, N.A)(null == l ? true : l.id), Y = null == d ? true : d.creator_id, K = (0, s.bG)([x.default], () => x.default.getUser(Y), [Y]);
@@ -56,14 +56,14 @@ function M(e) {
     null != Y && (0, u.wz)(Y)
   }, [Y]);
   let {
-    noticeType: z,
-    title: W,
-    location: q,
+    noticeType: W,
+    title: q,
+    location: z,
     locationIcon: Q,
     canListenIn: X,
     buttonText: Z,
-    users: J,
-    overflowUsers: $,
+    users: $,
+    overflowUsers: J,
     onClose: ee
   } = i.useMemo(() => (function(e) {
     let {
@@ -76,10 +76,10 @@ function M(e) {
       speakers: o,
       listenerCount: u,
       isEventNoticeHidden: d,
-      isStageNoticeHidden: f,
-      isStudyRoomNotice: g
-    } = e, b = null != n && null != i && !f, _ = null != t ? (0, O.G3)(t) : null;
-    if (g && null != i) {
+      isStageNoticeHidden: h,
+      isStudyRoomNotice: m
+    } = e, _ = null != n && null != i && !h, b = null != t ? (0, O.G3)(t) : null;
+    if (m && null != i) {
       let e = (0, p.gU)(i);
       return {
         noticeType: 3,
@@ -97,7 +97,7 @@ function M(e) {
       }
     }
     if (null == t || d) {
-      if (b) {
+      if (_) {
         let e = R.intl.string(R.t.ZYO5OK);
         return (null == a ? true : a.speaker) ? e = R.intl.string(R.t["/cnSFc"]) : null != a && (e = R.intl.string(R.t.btSGOj)), {
           noticeType: 0,
@@ -112,7 +112,7 @@ function M(e) {
           }),
           canListenIn: l,
           buttonText: e,
-          onClose: () => (0, A.iF)({
+          onClose: () => (0, f.iF)({
             stageId: null == n ? true : n.id
           }),
           users: o.length > 5 ? o.slice(0, 5) : o,
@@ -133,7 +133,7 @@ function M(e) {
           })
         }
       }
-    } else if (t.entity_type === L.Ps.STAGE_INSTANCE && b) {
+    } else if (t.entity_type === L.Ps.STAGE_INSTANCE && _) {
       let e = R.intl.string(R.t.ZYO5OK);
       return (null == a ? true : a.speaker) ? e = R.intl.string(R.t["/cnSFc"]) : null != a && (e = R.intl.string(R.t.btSGOj)), {
         noticeType: 0,
@@ -148,7 +148,7 @@ function M(e) {
         }),
         canListenIn: l,
         buttonText: e,
-        onClose: () => (0, A.iF)({
+        onClose: () => (0, f.iF)({
           stageId: null == n ? true : n.id
         }),
         users: o.length > 5 ? o.slice(0, 5) : o,
@@ -173,11 +173,11 @@ function M(e) {
       if (null == e) return {
         noticeType: null
       };
-      let n = h.Ay.getUserCount(t.id, _);
+      let n = g.Ay.getUserCount(t.id, b);
       return {
         noticeType: 1,
         title: t.name,
-        location: (0, m.l)(e, true),
+        location: (0, A.l)(e, true),
         locationIcon: (0, r.jsx)(c.BT6, {
           size: "custom",
           color: "currentColor",
@@ -187,7 +187,7 @@ function M(e) {
         }),
         canListenIn: false,
         buttonText: R.intl.string(R.t.iW6Xuo),
-        onClose: () => (0, A.iF)({
+        onClose: () => (0, f.iF)({
           eventId: null == t ? true : t.id
         }),
         users: null == s ? [] : [s],
@@ -209,7 +209,7 @@ function M(e) {
       }
     } else if (t.entity_type === L.Ps.VOICE && null != i) {
       let e = (0, p.gU)(i),
-        n = h.Ay.getUserCount(t.id, _);
+        n = g.Ay.getUserCount(t.id, b);
       return {
         noticeType: 2,
         title: t.name,
@@ -221,7 +221,7 @@ function M(e) {
         }) : null,
         canListenIn: l,
         buttonText: R.intl.string(R.t.nxUtoQ),
-        onClose: () => (0, A.iF)({
+        onClose: () => (0, f.iF)({
           eventId: null == t ? true : t.id
         }),
         users: null == s ? [] : [s],
@@ -258,7 +258,7 @@ function M(e) {
     isStageNoticeHidden: M,
     isStudyRoomNotice: n
   }), [d, T, l, H, F, K, V, B, U, M, n]);
-  return null == z ? null : (0, r.jsxs)("div", {
+  return null == W ? null : (0, r.jsxs)("div", {
     className: D.kL,
     children: [null != ee ? (0, r.jsx)(c.DUT, {
       onClick: ee,
@@ -280,26 +280,26 @@ function M(e) {
         color: "text-feedback-positive",
         children: R.intl.string(R.t.dI3q4h)
       })]
-    }), (J.length > 0 || null != $) && (0, r.jsxs)("div", {
+    }), ($.length > 0 || null != J) && (0, r.jsxs)("div", {
       className: D.lF,
-      children: [J.map(e => (0, r.jsx)(k, {
+      children: [$.map(e => (0, r.jsx)(k, {
         user: e,
         guildId: t.id
-      }, e.id)), $]
+      }, e.id)), J]
     }), (0, r.jsx)(c.Text, {
       variant: "text-md/medium",
       color: "text-strong",
       className: a()(D.DD, D.VD),
-      children: W
+      children: q
     }), (0, r.jsxs)("div", {
       className: D.j5,
       children: [Q, (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         className: D.C5,
-        children: q
+        children: z
       })]
-    }), X || 1 === z ? (0, r.jsx)("div", {
+    }), X || 1 === W ? (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: D.x6,
       children: (0, r.jsx)(c.Button, {
@@ -310,7 +310,7 @@ function M(e) {
           if (X) null != l && null != l.getGuildId() && ((0, I.av)(l), (0, y.uh)(l.getGuildId(), l.id));
           else {
             if (null == d) return;
-            (0, f.uR)({
+            (0, h.uR)({
               eventId: d.id
             })
           }

@@ -4,8 +4,8 @@
 require.d(exports, {
   M6: () => T,
   QK: () => O,
-  lP: () => I,
-  pE: () => S
+  lP: () => S,
+  pE: () => I
 }), require("./896048.js"), require("./114821.js"), require("./339614.js");
 var Chunk64700 = require("./64700.js"),
   Chunk478437 = require("./478437.js"),
@@ -35,34 +35,34 @@ function O(e) {
   }), [n])
 }
 
-function A(e, t) {
+function v(e, t) {
   let n = u.A.getStickerById(e.id);
   return null != n && !!(0, d.Xw)(n) && (n.guild_id !== t.guild_id || true)
 }
 
-function v(e) {
+function A(e) {
   return e.components.length > 0 && e.components[0].type === s.I5.CHECKPOINT_CARD
 }
 
-function S(e, t, n, r) {
+function I(e, t, n, r) {
   let i = n instanceof f.YB;
   if (null != r) {
     let e = r(n);
     if (null != e) return e
   }
   if (null == e) return;
-  let a = v(e),
-    s = e.messageSnapshots.length > 0 && v(e.messageSnapshots[0].message);
+  let a = A(e),
+    s = e.messageSnapshots.length > 0 && A(e.messageSnapshots[0].message);
   if (null != t || a) {
     if ((0, o.Gc)(t) && !(i && (0, o.Gc)(n))) return {
-      label: y.intl.string(y.t.KgPx1D)
+      label: b.intl.string(b.t.KgPx1D)
     };
     if (i && (0, f.zy)(n.type)) {
-      if ((e.attachments.length > 0 || e.messageSnapshots.some(e => e.message.attachments.length > 0)) && !_.A.can(b.xBc.ATTACH_FILES, n)) return {
-        label: y.intl.string(y.t.P7yvbm)
+      if ((e.attachments.length > 0 || e.messageSnapshots.some(e => e.message.attachments.length > 0)) && !_.A.can(y.xBc.ATTACH_FILES, n)) return {
+        label: b.intl.string(b.t.P7yvbm)
       };
       if ((e.embeds.length > 0 || e.messageSnapshots.some(e => e.message.embeds.length > 0)) && !(0, g.fS)(n, _.A) && !(0, g.ax)(e) || (a || s) && !(0, g.fS)(n, _.A)) return {
-        label: y.intl.string(y.t.Wr4RIX)
+        label: b.intl.string(b.t.Wr4RIX)
       };
       let t = [...(0, d.o6)(e), ...e.messageSnapshots.flatMap(e => {
         let {
@@ -70,18 +70,18 @@ function S(e, t, n, r) {
         } = e;
         return (0, d.o6)(t)
       })];
-      if (t.length > 0 && !_.A.can(b.xBc.USE_EXTERNAL_STICKERS, n) && t.some(e => A(e, n))) return {
-        label: y.intl.string(y.t["0Yyrua"])
+      if (t.length > 0 && !_.A.can(y.xBc.USE_EXTERNAL_STICKERS, n) && t.some(e => v(e, n))) return {
+        label: b.intl.string(b.t["0Yyrua"])
       };
-      if ((e.hasFlag(b.pr7.IS_VOICE_MESSAGE) || e.messageSnapshots.some(e => e.message.hasFlag(b.pr7.IS_VOICE_MESSAGE))) && !_.A.can(b.xBc.SEND_VOICE_MESSAGES, n)) return {
-        label: y.intl.string(y.t.quj4DY)
+      if ((e.hasFlag(y.pr7.IS_VOICE_MESSAGE) || e.messageSnapshots.some(e => e.message.hasFlag(y.pr7.IS_VOICE_MESSAGE))) && !_.A.can(y.xBc.SEND_VOICE_MESSAGES, n)) return {
+        label: b.intl.string(b.t.quj4DY)
       }
     }
   }
 }
 
-function I(e, t) {
-  return !!(null != e.rateLimitPerUser && e.rateLimitPerUser > 0) && !(t.can(b.xBc.MANAGE_CHANNELS, e) || t.can(b.xBc.MANAGE_MESSAGES, e))
+function S(e, t) {
+  return !!(null != e.rateLimitPerUser && e.rateLimitPerUser > 0) && !(t.can(y.xBc.MANAGE_CHANNELS, e) || t.can(y.xBc.MANAGE_MESSAGES, e))
 }
 
 function T(e) {
@@ -91,6 +91,6 @@ function T(e) {
       id: n
     } = e;
     return "channel" === t ? p.A.getChannel(n) : null
-  }).filter(E.Vq).filter(e => I(e, _.A)), [e]);
+  }).filter(E.Vq).filter(e => S(e, _.A)), [e]);
   return (0, a.yK)([m.default, h.A], () => t.map(e => (0, l.m1)(e, m.default, h.A, true)), [t])
 }

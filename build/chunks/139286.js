@@ -2,8 +2,8 @@
 /** chunk id: 139286, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v,
-  x: () => A
+  A: () => A,
+  x: () => v
 });
 var Chunk64700 = require("./64700.js"),
   Chunk812729 = require("./812729.js"),
@@ -42,7 +42,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,8 +53,8 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -64,7 +64,7 @@ let O = (0, Chunk110259.trackMaker)({
   TRACK_ACTION_NAME: "TRACK"
 });
 
-function A(e) {
+function v(e) {
   var t, n;
   let r = arguments.length > 1 && true !== arguments[1] && arguments[1],
     {
@@ -86,7 +86,7 @@ function A(e) {
   r ? (0, m.eE)(null, null) : (null != i && null != a && ((0, _.debugLogEvent)(i, u), O(i, u)), (0, m.eE)(i, u))
 }
 
-function v(e) {
+function A(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
       disableTrack: false,
       trackOnInitialLoad: false
@@ -99,10 +99,10 @@ function v(e) {
       r && (i.current = e);
       let l = !a()(s.current, n);
       if (l && (s.current = n), !r && !l) return;
-      let c = y(E({}, e), {
+      let c = b(E({}, e), {
         sequenceId: o()("impression_")
       });
-      return A(c, t.disableTrack), () => {
+      return v(c, t.disableTrack), () => {
         null != c && (0, m.u5)(c)
       }
     };

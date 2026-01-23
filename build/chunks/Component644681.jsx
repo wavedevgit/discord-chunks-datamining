@@ -24,11 +24,11 @@ function E(e, t, n) {
   return t === n ? 1 : (0, o.clamp)((e - t) / (n - t), 0, 1)
 }
 
-function b(e, t, n) {
+function y(e, t, n) {
   return e + (t - e) * n
 }
 
-function y(e) {
+function b(e) {
   let [t, n] = i.useState(true);
   return i.useEffect(() => {
     null != e.current && n(getComputedStyle(e.current))
@@ -41,20 +41,20 @@ function O(e) {
     context: n,
     name: a,
     iconURL: O,
-    scrollerRef: A,
-    sectionName: v
-  } = e, S = (0, l.qB)((0, u.Ay)()), I = i.useRef(null), T = i.useRef(null), C = i.useRef(null), N = i.useRef(null), R = (0, c.rdh)(c.LU0.colors.BACKGROUND_BASE_LOW).hex(), w = (0, d.Ay)("number" == typeof O ? "" : O, null != R ? R : ""), P = i.useMemo(() => {
+    scrollerRef: v,
+    sectionName: A
+  } = e, I = (0, l.qB)((0, u.Ay)()), S = i.useRef(null), T = i.useRef(null), C = i.useRef(null), N = i.useRef(null), R = (0, c.rdh)(c.LU0.colors.BACKGROUND_BASE_LOW).hex(), w = (0, d.Ay)("number" == typeof O ? "" : O, null != R ? R : ""), P = i.useMemo(() => {
     var e, t;
     return null != (e = null == (t = (0, f.lZ)({
       foreground: s()(w),
-      background: s()(S ? "#000000" : "#ffffff"),
+      background: s()(I ? "#000000" : "#ffffff"),
       ratio: 5,
       saturationFactor: .6
     })) ? true : t.hex()) ? e : w
-  }, [w, S]), D = y(I), x = y(T), L = i.useCallback(() => {
+  }, [w, I]), D = b(S), x = b(T), L = i.useCallback(() => {
     var e, t, n;
-    let r = A.current,
-      i = I.current,
+    let r = v.current,
+      i = S.current,
       a = C.current,
       s = null == N ? true : N.current,
       l = parseInt(null != (e = null == D ? true : D.height) ? e : ""),
@@ -66,27 +66,27 @@ function O(e) {
         d = c - l,
         f = (0, o.clamp)(t - u, d + 1, c + g),
         p = E(e, d, f);
-      i.style.filter = "brightness(".concat(b(1, S ? 1.4 : .6, p), ")"), i.style.backgroundColor = "color-mix(in oklab,".concat(w, " ").concat((1 - p) * 100, "%, ").concat(P, ")"), a.style.opacity = "".concat(b(0, 1, p)), a.style.transform = "translateY(".concat(b(l / 4, 0, p), "px)"), null != s && (s.style.opacity = "".concat(b(1, 0, p)))
+      i.style.filter = "brightness(".concat(y(1, I ? 1.4 : .6, p), ")"), i.style.backgroundColor = "color-mix(in oklab,".concat(w, " ").concat((1 - p) * 100, "%, ").concat(P, ")"), a.style.opacity = "".concat(y(0, 1, p)), a.style.transform = "translateY(".concat(y(l / 4, 0, p), "px)"), null != s && (s.style.opacity = "".concat(y(1, 0, p)))
     }
-  }, [P, w, null == x ? true : x.height, S, A, null == D ? true : D.height]);
+  }, [P, w, null == x ? true : x.height, I, v, null == D ? true : D.height]);
   return i.useEffect(() => {
     L()
-  }, [L, S]), i.useEffect(() => {
-    let e = A.current,
+  }, [L, I]), i.useEffect(() => {
+    let e = v.current,
       t = () => {
         L()
       };
     return null == e || e.addEventListener("scroll", t), () => {
       null == e || e.removeEventListener("scroll", t)
     }
-  }, [A, L]), (0, r.jsxs)(r.Fragment, {
+  }, [v, L]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: m.Xp,
       children: [(0, r.jsx)("div", {
         className: m.LO,
         children: (0, r.jsx)("div", {
           className: m.If,
-          ref: I
+          ref: S
         })
       }), (0, r.jsx)("div", {
         className: m.FY,
@@ -109,7 +109,7 @@ function O(e) {
         application: t,
         context: n,
         className: m.aY,
-        sectionName: v
+        sectionName: A
       })
     }) : null, (0, r.jsx)("div", {
       ref: T,

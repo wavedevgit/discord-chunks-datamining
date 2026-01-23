@@ -213,7 +213,7 @@ class J extends(r = Chunk64700.PureComponent) {
     } = this.props;
     if (e.type === V.$pd.HANG_STATUS) return (0, i.jsx)("div", {
       className: B.assets,
-      children: (0, i.jsx)(S.A, {
+      children: (0, i.jsx)(I.A, {
         userId: c.id,
         hangStatusActivity: e,
         size: z,
@@ -318,7 +318,7 @@ class J extends(r = Chunk64700.PureComponent) {
     } = this.props;
     return null != e.assets || (0, x.A)(e) || e.type !== V.$pd.PLAYING || "ActivityFeed" === n || t.bot ? null : null == r && null != a ? (0, i.jsx)("div", {
       className: o()(B.gameIcon, B.screenshareIcon)
-    }) : (0, i.jsx)(b.A, {
+    }) : (0, i.jsx)(y.A, {
       className: B.gameIcon,
       game: r
     })
@@ -338,7 +338,7 @@ class J extends(r = Chunk64700.PureComponent) {
     let l = (0, L.A)(e),
       c = e.name,
       u = c;
-    return (s === V.$pd.HANG_STATUS ? u = (0, v.Au)(t.id, e) : l && null != n ? u = (0, i.jsx)("span", {
+    return (s === V.$pd.HANG_STATUS ? u = (0, A.Au)(t.id, e) : l && null != n ? u = (0, i.jsx)("span", {
       className: B.activityName,
       children: u
     }) : !l && (c = a, u = a, (0, j.A)(e) && null != e.sync_id && null != a ? u = (0, i.jsx)(p.MzZ, {
@@ -411,9 +411,9 @@ class J extends(r = Chunk64700.PureComponent) {
       })
     }) : (0, i.jsxs)("div", {
       className: o()((0, k.A)(e) || (0, j.A)(e) ? B.detailsWrap : B.details, B.guildDetails),
-      children: [(0, i.jsx)(A.A, {
+      children: [(0, i.jsx)(v.A, {
         guild: t,
-        size: A.A.Sizes.SMOL,
+        size: v.A.Sizes.SMOL,
         className: B.guildIcon
       }), (0, i.jsx)(p._BQ, {
         size: "xxs",
@@ -440,9 +440,9 @@ class J extends(r = Chunk64700.PureComponent) {
     } = e;
     return null == n ? null : (0, x.A)(e) ? (0, i.jsx)(Z, {
       timestamps: n
-    }) : (0, i.jsx)(I.Ay, {
+    }) : (0, i.jsx)(S.Ay, {
       start: n.start,
-      location: I.Ay.Locations.USER_ACTIVITY,
+      location: S.Ay.Locations.USER_ACTIVITY,
       className: B.playTime,
       isApplicationStreaming: null != t
     })
@@ -524,13 +524,13 @@ class J extends(r = Chunk64700.PureComponent) {
       h = this.renderDetails(c),
       m = this.renderState(c, a),
       E = this.renderTimePlayed(c),
-      b = this.renderChannelDetails(c),
-      y = null != n ? n() : null,
+      y = this.renderChannelDetails(c),
+      b = null != n ? n() : null,
       O = this.renderTimeBar(c),
-      A = ![e, _, h, m, E, O, y].some(e => null != e);
+      v = ![e, _, h, m, E, O, b].some(e => null != e);
     return (0, i.jsxs)("div", {
       className: o()(this.getTypeClass("activity"), r),
-      children: [this.renderHeader(A), (0, i.jsx)("div", {
+      children: [this.renderHeader(v), (0, i.jsx)("div", {
         className: o()(f ? B.bodyAlignCenter : B.bodyNormal),
         children: (0, i.jsxs)("div", {
           className: B.activityDetails,
@@ -542,10 +542,10 @@ class J extends(r = Chunk64700.PureComponent) {
                 l(e), null == s || s()
               } : true,
               children: [_, h, m, E]
-            }), b, d ? null : O, u ? y : null]
+            }), y, d ? null : O, u ? b : null]
           })]
         })
-      }), d ? y : null, (0, i.jsx)($, {
+      }), d ? b : null, (0, i.jsx)($, {
         activity: c
       })]
     })
@@ -580,7 +580,7 @@ let ee = e => {
   let a = (0, O.A)({
     location: "UserActivity",
     applicationId: null != (t = null == (n = e.application) ? true : n.id) ? t : null == (r = e.activity) ? true : r.application_id,
-    source: y.Ob.UserProfile,
+    source: b.Ob.UserProfile,
     sourceUserId: e.user.id,
     trackEntryPointImpression: true
   });

@@ -20,7 +20,7 @@ var r, Chunk735438 = require("./735438.js"),
   Chunk826767 = require("./826767.js"),
   Chunk746080 = require("./746080.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,14 +29,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -53,14 +53,14 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = {},
-  S = {},
+let A = {},
   I = {},
+  S = {},
   T = {},
   C = {},
   N = {},
@@ -68,14 +68,14 @@ let v = {},
   w = {};
 
 function P() {
-  for (let e in v = {}, C = {}, S = {}, I = {}, T = {}, R = p.A.getChannelId(), w) clearTimeout(w[e]);
+  for (let e in A = {}, C = {}, I = {}, S = {}, T = {}, R = p.A.getChannelId(), w) clearTimeout(w[e]);
   w = {}, h.A.forEachGuild(e => {
     x(e)
   }), L()
 }
 
 function D(e) {
-  for (let t in delete v[e], delete C[e], delete S[e], delete I[e], delete T[e], x(e), I[e]) M(e, t)
+  for (let t in delete A[e], delete C[e], delete I[e], delete S[e], delete T[e], x(e), S[e]) M(e, t)
 }
 
 function x(e) {
@@ -96,9 +96,9 @@ function x(e) {
             isRelevant: i,
             isTimedRelevant: a
           } = Z(e);
-        ee(v, e, n, false), ee(C, e, i ? n : null, false), ee(S, e, r ? n : null, false), a && Q(e, true)
+        ee(A, e, n, false), ee(C, e, i ? n : null, false), ee(I, e, r ? n : null, false), a && Q(e, true)
       } else {
-        ee(I, e, e, false);
+        ee(S, e, e, false);
         let t = f.Ay.isForumPostUnread(e.id);
         ee(T, e, t ? e : null, false)
       }
@@ -106,8 +106,8 @@ function x(e) {
 }
 
 function L() {
-  for (let e in N = {}, I)
-    for (let t in I[e]) M(e, t)
+  for (let e in N = {}, S)
+    for (let t in S[e]) M(e, t)
 }
 
 function j(e) {
@@ -117,7 +117,7 @@ function j(e) {
 
 function M(e, t) {
   let n = u.A.getChannel(t);
-  if (null == n || !n.isForumLikeChannel() || (null == N[e] && (N[e] = {}), N[e][t] = 0, null == I[e] || null == I[e][t])) return;
+  if (null == n || !n.isForumLikeChannel() || (null == N[e] && (N[e] = {}), N[e][t] = 0, null == S[e] || null == S[e][t])) return;
   let r = d.A.getGuild(e);
   if (null == r) return;
   let i = f.Ay.getTrackedAckMessageId(t);
@@ -125,7 +125,7 @@ function M(e, t) {
     let e = Date.now();
     null != r.joinedAt && (r.joinedAt instanceof Date ? e = r.joinedAt.getTime() : "string" == typeof r.joinedAt && (e = new Date(r.joinedAt).getTime())), i = _.default.fromTimestamp(e)
   }
-  for (let n in I[e][t]) t === R ? f.Ay.isNewForumThread(n, t, r) && N[e][t]++ : _.default.compare(n, i) > 0 && !f.Ay.hasOpenedThread(n) && N[e][t]++
+  for (let n in S[e][t]) t === R ? f.Ay.isNewForumThread(n, t, r) && N[e][t]++ : _.default.compare(n, i) > 0 && !f.Ay.hasOpenedThread(n) && N[e][t]++
 }
 
 function k(e, t, n) {
@@ -143,13 +143,13 @@ function k(e, t, n) {
           isRelevant: n,
           isTimedRelevant: a
         } = Z(r);
-      ee(v, r, e, true), ee(C, r, n ? e : null, true), ee(S, r, t ? e : null, true), ee(I, r, null, true), ee(T, r, null, true), Q(r, a)
+      ee(A, r, e, true), ee(C, r, n ? e : null, true), ee(I, r, t ? e : null, true), ee(S, r, null, true), ee(T, r, null, true), Q(r, a)
     } else {
       let e = f.Ay.isForumPostUnread(r.id);
-      ee(v, r, null, true), ee(S, r, null, true), ee(C, r, null, true), ee(I, r, r, true), ee(T, r, e ? r : null, true), J(r.id)
+      ee(A, r, null, true), ee(I, r, null, true), ee(C, r, null, true), ee(S, r, r, true), ee(T, r, e ? r : null, true), J(r.id)
     }
     M(e, t)
-  } else et(v, e, t, n), et(C, e, t, n), et(S, e, t, n), et(I, e, t, n), et(T, e, t, n), J(n), M(e, t)
+  } else et(A, e, t, n), et(C, e, t, n), et(I, e, t, n), et(S, e, t, n), et(T, e, t, n), J(n), M(e, t)
 }
 
 function U(e) {
@@ -167,13 +167,13 @@ function G(e) {
 
 function V(e, t) {
   if (null == t) returnfalse;
-  let n = v[e],
+  let n = A[e],
     r = null == n ? null : n[t];
   if (null != r) {
     for (let e in r)
       if ((0, l.qR)(r[e].channel)) returntrue
   }
-  let i = I[e],
+  let i = S[e],
     a = null == i ? null : i[t];
   if (null != a) {
     for (let e in a)
@@ -186,7 +186,7 @@ function F(e) {
   let {
     channel: t
   } = e, n = false;
-  return null != t.guild_id && null != t.parent_id && (t.guild_id in v && t.parent_id in v[t.guild_id] && (delete v[t.guild_id][t.parent_id], n = true), t.guild_id in S && t.parent_id in S[t.guild_id] && (delete S[t.guild_id][t.parent_id], n = true), t.guild_id in C && t.parent_id in C[t.guild_id] && (_.default.keys(C[t.guild_id][t.parent_id]).forEach(J), delete C[t.guild_id][t.parent_id], n = true), t.guild_id in I && t.parent_id in I[t.guild_id] && (delete I[t.guild_id][t.parent_id], n = true), t.guild_id in T && t.parent_id in T[t.guild_id] && (delete T[t.guild_id][t.parent_id], n = true), n && M(t.guild_id, t.parent_id)), n
+  return null != t.guild_id && null != t.parent_id && (t.guild_id in A && t.parent_id in A[t.guild_id] && (delete A[t.guild_id][t.parent_id], n = true), t.guild_id in I && t.parent_id in I[t.guild_id] && (delete I[t.guild_id][t.parent_id], n = true), t.guild_id in C && t.parent_id in C[t.guild_id] && (_.default.keys(C[t.guild_id][t.parent_id]).forEach(J), delete C[t.guild_id][t.parent_id], n = true), t.guild_id in S && t.parent_id in S[t.guild_id] && (delete S[t.guild_id][t.parent_id], n = true), t.guild_id in T && t.parent_id in T[t.guild_id] && (delete T[t.guild_id][t.parent_id], n = true), n && M(t.guild_id, t.parent_id)), n
 }
 
 function B(e) {
@@ -207,20 +207,20 @@ function H(e) {
       return Number(null == (n = N[e]) ? true : n[t.id]) > 0 && (M(e, t.id), true)
     }
     if (null == r) returnfalse;
-    if (en(v, t)) {
+    if (en(A, t)) {
       let {
         isUnread: n,
         isRelevant: i,
         isTimedRelevant: a
       } = Z(t);
       Q(t, a);
-      let s = en(S, t),
+      let s = en(I, t),
         o = en(C, t);
       if (n === s && i === o) returnfalse;
-      let l = v[e][r][t.id],
+      let l = A[e][r][t.id],
         c = n ? l : null,
         u = i ? l : null;
-      ee(S, t, c, true), ee(C, t, u, true), M(e, r)
+      ee(I, t, c, true), ee(C, t, u, true), M(e, r)
     } else {
       let e = en(T, t),
         n = f.Ay.isForumPostUnread(t.id);
@@ -231,21 +231,21 @@ function H(e) {
 }
 
 function Y() {
-  for (let e in S = {}, C = {}, v)
-    for (let t in v[e])
-      for (let n in v[e][t]) {
-        let r = v[e][t][n],
+  for (let e in I = {}, C = {}, A)
+    for (let t in A[e])
+      for (let n in A[e][t]) {
+        let r = A[e][t][n],
           {
             isUnread: i,
             isRelevant: a,
             isTimedRelevant: s
           } = Z(r.channel);
-        i && ee(S, r.channel, r, false), a && ee(C, r.channel, r, false), Q(r.channel, s)
+        i && ee(I, r.channel, r, false), a && ee(C, r.channel, r, false), Q(r.channel, s)
       }
-  for (let e in T = {}, I)
-    for (let t in I[e])
-      for (let n in I[e][t]) {
-        let r = I[e][t][n];
+  for (let e in T = {}, S)
+    for (let t in S[e])
+      for (let n in S[e][t]) {
+        let r = S[e][t][n];
         f.Ay.isForumPostUnread(n) && ee(T, r, r, false)
       }
   L()
@@ -316,14 +316,14 @@ function ee(e, t, n, r) {
     parent_id: s,
     id: o
   } = t;
-  null != i && null != s && null != o && (i in e || (e[i] = {}), s in e[i] || (e[i][s] = {}), r && (e[i] = A(y({}, e[i]), {
-    [s]: y({}, e[i][s])
+  null != i && null != s && null != o && (i in e || (e[i] = {}), s in e[i] || (e[i][s] = {}), r && (e[i] = v(b({}, e[i]), {
+    [s]: b({}, e[i][s])
   })), null === n ? (delete e[i][s][o], a().isEmpty(e[i][s]) && delete e[i][s]) : e[i][s][o] = n)
 }
 
 function et(e, t, n, r) {
-  null == t || null == n || null == r || er(e, t, n, r) && (e[t] = A(y({}, e[t]), {
-    [n]: y({}, e[t][n])
+  null == t || null == n || null == r || er(e, t, n, r) && (e[t] = v(b({}, e[t]), {
+    [n]: b({}, e[t][n])
   }), delete e[t][n][r], a().isEmpty(e[t][n]) && delete e[t][n])
 }
 
@@ -344,26 +344,26 @@ class ec extends(r = Chunk311907.Ay.Store) {
     this.waitFor(h.A, u.A, d.A, m.A, f.Ay, p.A), this.syncWith([p.A], X)
   }
   hasActiveJoinedUnreadThreads(e, t) {
-    return e in S && t in S[e]
+    return e in I && t in I[e]
   }
   getActiveUnjoinedThreadsForParent(e, t) {
     var n;
-    return e in I && null != (n = I[e][t]) ? n : eo
+    return e in S && null != (n = S[e][t]) ? n : eo
   }
   getActiveJoinedThreadsForParent(e, t) {
     var n;
-    return e in v && null != (n = v[e][t]) ? n : es
+    return e in A && null != (n = A[e][t]) ? n : es
   }
   getAllActiveJoinedThreads() {
-    return v
+    return A
   }
   getActiveJoinedThreadsForGuild(e) {
     var t;
-    return null != (t = v[e]) ? t : ei
+    return null != (t = A[e]) ? t : ei
   }
   getActiveJoinedUnreadThreadsForGuild(e) {
     var t;
-    return null != (t = S[e]) ? t : ei
+    return null != (t = I[e]) ? t : ei
   }
   getActiveJoinedUnreadThreadsForParent(e, t) {
     var n;
@@ -379,7 +379,7 @@ class ec extends(r = Chunk311907.Ay.Store) {
   }
   getActiveUnjoinedThreadsForGuild(e) {
     var t;
-    return null != (t = I[e]) ? t : ea
+    return null != (t = S[e]) ? t : ea
   }
   getActiveUnjoinedUnreadThreadsForGuild(e) {
     var t;
@@ -395,10 +395,10 @@ class ec extends(r = Chunk311907.Ay.Store) {
   }
   computeAllActiveJoinedThreads(e) {
     let t = [];
-    for (let n in v)
+    for (let n in A)
       if (n === e || null == e)
-        for (let e in v[n])
-          for (let r in v[n][e]) t.push(v[n][e][r].channel);
+        for (let e in A[n])
+          for (let r in A[n][e]) t.push(A[n][e][r].channel);
     return t
   }
   getNewThreadCount(e, t) {
@@ -407,10 +407,10 @@ class ec extends(r = Chunk311907.Ay.Store) {
   }
   getActiveThreadCount(e, t) {
     var n, r, i, s;
-    return a().size(null != (n = null == (i = v[e]) ? true : i[t]) ? n : {}) + a().size(null != (r = null == (s = I[e]) ? true : s[t]) ? r : {})
+    return a().size(null != (n = null == (i = A[e]) ? true : i[t]) ? n : {}) + a().size(null != (r = null == (s = S[e]) ? true : s[t]) ? r : {})
   }
 }
-b(ec, "displayName", "ActiveJoinedThreadsStore");
+y(ec, "displayName", "ActiveJoinedThreadsStore");
 let eu = new ec(Chunk73153.h, {
   CONNECTION_OPEN: P,
   OVERLAY_INITIALIZE: P,

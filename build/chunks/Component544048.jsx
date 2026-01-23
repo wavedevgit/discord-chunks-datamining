@@ -2,7 +2,7 @@
 /** chunk id: 544048, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  t: () => b
+  t: () => y
 }), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -161,7 +161,7 @@ f(E, "defaultProps", {
   pauseWhileUnfocused: true,
   pause: false
 });
-let b = e => {
+let y = e => {
   var t;
   let {
     componentRef: n,

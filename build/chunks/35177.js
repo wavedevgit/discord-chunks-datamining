@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 35177, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => A
 }), require("./927092.js"), require("./212978.js"), require("./201528.js"), require("./393431.js"), require("./752391.js"), require("./532706.js"), require("./42231.js"), require("./232424.js"), require("./757074.js"), require("./949626.js"), require("./767709.js"), require("./65162.js");
 var Chunk311907 = require("./311907.js"),
   Chunk554146 = require("./554146.js"),
@@ -16,7 +16,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk573879 = require("./573879.js");
 
-function A(e, t) {
+function f(e, t) {
   let n = false;
   return null == e.userContent && (e.userContent = {
     dismissedContents: new Uint8Array,
@@ -25,10 +25,10 @@ function A(e, t) {
   }), null == e.userContent.dismissedContents && (e.userContent.dismissedContents = new Uint8Array), (0, d.c0)(e.userContent.dismissedContents, t) || (e.userContent.dismissedContents = (0, d.Vf)(e.userContent.dismissedContents, t), n = true), n
 }
 
-function g(e, t, n) {
-  return !!c.HP.hasHiddenHotspot(t) && A(e, n)
+function m(e, t, n) {
+  return !!c.HP.hasHiddenHotspot(t) && f(e, n)
 }
-let m = [{
+let A = [{
   version: 2,
   run(e) {
     var t, n;
@@ -68,7 +68,7 @@ let m = [{
   version: 4,
   run(e) {
     let t = false;
-    return (true === s.w.get("HAS_SEEN_HUB_UPSELL") || c.HP.hasHiddenHotspot(c._2.HUB_SECOND_EMAIL_CONNECTION_UPSELL)) && (t = A(e, i.M.HUB_WAITLIST_UPSELL)), t
+    return (true === s.w.get("HAS_SEEN_HUB_UPSELL") || c.HP.hasHiddenHotspot(c._2.HUB_SECOND_EMAIL_CONNECTION_UPSELL)) && (t = f(e, i.M.HUB_WAITLIST_UPSELL)), t
   },
   cleanup() {
     s.w.remove("HAS_SEEN_HUB_UPSELL")
@@ -111,23 +111,23 @@ let m = [{
   cleanup() {}
 }, {
   version: 7,
-  run: e => g(e, c._2.APPLICATION_COMMAND_TOOLTIP, i.M.APPLICATION_COMMAND_TOOLTIP),
+  run: e => m(e, c._2.APPLICATION_COMMAND_TOOLTIP, i.M.APPLICATION_COMMAND_TOOLTIP),
   cleanup() {}
 }, {
   version: 8,
-  run: e => g(e, c._2.CHANNEL_BANNER_MEMBER_LIST_NOTICE, i.M.CHANNELINFO_CHANNELBANNER_NOTICE),
+  run: e => m(e, c._2.CHANNEL_BANNER_MEMBER_LIST_NOTICE, i.M.CHANNELINFO_CHANNELBANNER_NOTICE),
   cleanup() {}
 }, {
   version: 9,
-  run: e => (c.HP.hasHiddenHotspot(c._2.MULTI_ACCOUNT_TOOLTIP) && s.w.set(h.JE, "true"), g(e, c._2.MULTI_ACCOUNT_TOOLTIP, i.M.ACCOUNT_MULTIACCOUNT_TOOLTIP)),
+  run: e => (c.HP.hasHiddenHotspot(c._2.MULTI_ACCOUNT_TOOLTIP) && s.w.set(g.JE, "true"), m(e, c._2.MULTI_ACCOUNT_TOOLTIP, i.M.ACCOUNT_MULTIACCOUNT_TOOLTIP)),
   cleanup() {}
 }, {
   version: 10,
   run(e) {
     var t;
-    let n = g(e, c._2.HUB_LINK_CHANNEL_NOTICE, i.M.CHANNEL_NOTICE_HUBLINK),
+    let n = m(e, c._2.HUB_LINK_CHANNEL_NOTICE, i.M.CHANNEL_NOTICE_HUBLINK),
       r = null != (t = s.w.get("channelNotices")) ? t : {};
-    returnfalse === r[f.n5X.INVITE] && A(e, i.M.CHANNEL_NOTICE_INVITE) && (n = true), false === r[f.n5X.QUICKSWITCHER] && A(e, i.M.CHANNEL_NOTICE_QUICKSWITCHER) && (n = true), false === r[f.n5X.GUILD_BOOSTING] && A(e, i.M.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION) && (n = true), n
+    returnfalse === r[h.n5X.INVITE] && f(e, i.M.CHANNEL_NOTICE_INVITE) && (n = true), false === r[h.n5X.QUICKSWITCHER] && f(e, i.M.CHANNEL_NOTICE_QUICKSWITCHER) && (n = true), false === r[h.n5X.GUILD_BOOSTING] && f(e, i.M.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION) && (n = true), n
   },
   cleanup() {
     s.w.remove("channelNotices")
@@ -136,14 +136,14 @@ let m = [{
   version: 11,
   run(e) {
     let t = false;
-    return g(e, c._2.GUILD_EVENT_UPSELL, i.M.GUILD_HEADER_EVENT_UPSELL) && (t = true), g(e, c._2.ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP, i.M.GUILD_HEADER_ANIMATED_GUILD_BANNER) && (t = true), t
+    return m(e, c._2.GUILD_EVENT_UPSELL, i.M.GUILD_HEADER_EVENT_UPSELL) && (t = true), m(e, c._2.ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP, i.M.GUILD_HEADER_ANIMATED_GUILD_BANNER) && (t = true), t
   },
   cleanup() {}
 }, {
   version: 12,
   run(e) {
     let t = false;
-    return s.w.get("hideNag") && A(e, i.M.NAGBAR_NOTICE_DOWNLOAD) && (t = true), s.w.get("hideConnectSpotify") && A(e, i.M.NAGBAR_NOTICE_CONNECT_SPOTIFY) && (t = true), s.w.get("hideConnectPlayStation") && A(e, i.M.NAGBAR_NOTICE_CONNECT_PLAYSTATION) && (t = true), t
+    return s.w.get("hideNag") && f(e, i.M.NAGBAR_NOTICE_DOWNLOAD) && (t = true), s.w.get("hideConnectSpotify") && f(e, i.M.NAGBAR_NOTICE_CONNECT_SPOTIFY) && (t = true), s.w.get("hideConnectPlayStation") && f(e, i.M.NAGBAR_NOTICE_CONNECT_PLAYSTATION) && (t = true), t
   },
   cleanup() {
     s.w.remove("hideNag"), s.w.remove("hideConnectSpotify"), s.w.remove("hideConnectPlayStation")
@@ -152,18 +152,18 @@ let m = [{
   version: 13,
   run(e) {
     let t = false;
-    return s.w.get("hidePremiumPromo") && A(e, i.M.NAGBAR_NOTICE_PREMIUM_PROMO) && (t = true), s.w.get("hidePremiumTier2TrialEnding") && A(e, i.M.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (t = true), s.w.get("hidePremiumReactivateNotice") && A(e, i.M.NAGBAR_NOTICE_PREMIUM_REACTIVATE) && (t = true), t
+    return s.w.get("hidePremiumPromo") && f(e, i.M.NAGBAR_NOTICE_PREMIUM_PROMO) && (t = true), s.w.get("hidePremiumTier2TrialEnding") && f(e, i.M.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (t = true), s.w.get("hidePremiumReactivateNotice") && f(e, i.M.NAGBAR_NOTICE_PREMIUM_REACTIVATE) && (t = true), t
   },
   cleanup() {
     s.w.remove("hidePremiumPromo"), s.w.remove("hidePremiumTier2TrialEnding"), s.w.remove("hidePremiumReactivateNotice")
   }
 }, {
   version: 14,
-  run: e => g(e, c._2.ACTIVITY_BEB_TUTORIAL, i.M.ACTIVITIES_TUTORIAL_COACH_MARK),
+  run: e => m(e, c._2.ACTIVITY_BEB_TUTORIAL, i.M.ACTIVITIES_TUTORIAL_COACH_MARK),
   cleanup() {}
 }, {
   version: 15,
-  run: e => g(e, c._2.NOW_PLAYING_CONSENT_CARD, i.M.NOW_PLAYING_CONSENT_CARD),
+  run: e => m(e, c._2.NOW_PLAYING_CONSENT_CARD, i.M.NOW_PLAYING_CONSENT_CARD),
   cleanup() {}
 }, {
   version: 16,
@@ -195,7 +195,7 @@ let m = [{
   version: 18,
   run(e) {
     let t = false;
-    return g(e, c._2.GUILD_DELETE_FEEDBACK, i.M.GUILD_DELETE_FEEDBACK) && (t = true), g(e, c._2.GUILD_LEAVE_FEEDBACK, i.M.GUILD_LEAVE_FEEDBACK) && (t = true), t
+    return m(e, c._2.GUILD_DELETE_FEEDBACK, i.M.GUILD_DELETE_FEEDBACK) && (t = true), m(e, c._2.GUILD_LEAVE_FEEDBACK, i.M.GUILD_LEAVE_FEEDBACK) && (t = true), t
   },
   cleanup() {}
 }, {
@@ -203,7 +203,7 @@ let m = [{
   run(e) {
     var t;
     let n = false;
-    return null != (t = s.w.get("forumHelperCardStorageKey")) && t && (n = A(e, i.M.FORUM_CHANNEL_HELPER_CARD)), n
+    return null != (t = s.w.get("forumHelperCardStorageKey")) && t && (n = f(e, i.M.FORUM_CHANNEL_HELPER_CARD)), n
   },
   cleanup() {
     s.w.remove("forumHelperCardStorageKey")

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Ay: () => T,
-  FX: () => v,
-  VZ: () => S
+  FX: () => A,
+  VZ: () => I
 }), require("./938796.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -43,7 +43,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,8 +54,8 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -67,12 +67,12 @@ function O(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = A(e, t), Object.getOwnPropertySymbols)
+  if (a = v(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function A(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -80,8 +80,8 @@ function A(e, t) {
   return i
 }
 
-function v(e, t) {
-  return y(E({}, e), {
+function A(e, t) {
+  return b(E({}, e), {
     type: (0, s.FE)(e),
     original: e.url,
     srcIsAnimated: (0, a.Lt)(e.flags, s.e5.IS_ANIMATED),
@@ -91,12 +91,12 @@ function v(e, t) {
   })
 }
 
-function S(e) {
+function I(e) {
   let t = p.A.toURLSafe(e);
   return null == t ? null : (t.searchParams.append("format", "webp"), t.toString())
 }
 
-function I(e) {
+function S(e) {
   let t, {
       media: n,
       obscured: i = false,
@@ -108,24 +108,24 @@ function I(e) {
       width: d,
       height: p,
       url: g,
-      proxyUrl: b,
-      alt: A,
-      type: v,
-      maxWidth: I,
+      proxyUrl: y,
+      alt: v,
+      type: A,
+      maxWidth: S,
       maxHeight: T
     } = n,
     N = O(n, ["width", "height", "url", "proxyUrl", "alt", "type", "maxWidth", "maxHeight"]),
     {
       zoomed: R
     } = (0, _.Q)(),
-    w = C(R, g, b, n.contentType, n.originalContentType),
+    w = C(R, g, y, n.contentType, n.originalContentType),
     P = null != d && 0 !== d && null != p && 0 !== p;
-  if ("VIDEO" === v && P && null != b) {
+  if ("VIDEO" === A && P && null != y) {
     var D;
-    let e = S(b);
+    let e = I(y);
     if (null == e) return null;
     let t = null != (D = n.renderLinkComponent) ? D : u.bU;
-    return (0, r.jsx)(l.A, y(E({}, N), {
+    return (0, r.jsx)(l.A, b(E({}, N), {
       src: w,
       width: d,
       height: p,
@@ -140,12 +140,12 @@ function I(e) {
       onMute: f.y5,
       renderLinkComponent: t,
       autoPlay: !i,
-      alt: A,
+      alt: v,
       onContextMenu: c,
       disableArrowKeySeek: true
     }))
   }
-  return "IMAGE" === v && (t = P ? (0, r.jsx)(o.Ay, y(E({}, N), {
+  return "IMAGE" === A && (t = P ? (0, r.jsx)(o.Ay, b(E({}, N), {
     src: w,
     width: d,
     height: p,
@@ -156,11 +156,11 @@ function I(e) {
     className: m.$_,
     animated: !i && n.animated,
     autoPlay: !i,
-    alt: A,
+    alt: v,
     onContextMenu: c
   })) : (0, r.jsx)("img", {
     src: w,
-    alt: A,
+    alt: v,
     onContextMenu: c,
     className: m.xx,
     style: {
@@ -171,7 +171,7 @@ function I(e) {
     children: t
   }) : null
 }
-let T = Chunk64700.memo(I);
+let T = Chunk64700.memo(S);
 
 function C(e, t, n, r, i) {
   return e && p.A.isDiscordAssetUrl(t, r, i) ? (0, c.XW)(t, r, i) : (0, d.E)({

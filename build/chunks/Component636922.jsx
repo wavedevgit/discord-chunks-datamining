@@ -117,7 +117,7 @@ function L(e) {
   }), q = i.type === T.lAJ.REPLY ? i.messageReference : true, X = (0, l.bG)([d.A], () => d.A.getMessageByReference(q)), Z = (0, o.rm)(i.id), Q = (0, h.Ay)(i), $ = (0, l.bG)([f.A], () => i.hasFlag(T.pr7.HAS_THREAD) && f.A.getChannel(p.default.castMessageIdAsChannelId(i.id))), J = (0, c.$7)({
     guildId: j.guild_id,
     roleId: Q.iconRoleId
-  }), ee = (0, b.A)({
+  }), ee = (0, y.A)({
     message: i,
     channel: j,
     enabled: V
@@ -129,16 +129,16 @@ function L(e) {
       [C.XN]: B
     }),
     disableInteraction: B,
-    childrenRepliedMessage: (0, I.A)(i, j, q, X, a),
-    childrenExecutedCommand: (0, S.A)(i, j, a),
-    childrenHeader: (0, A.A)(P(R({}, e), {
+    childrenRepliedMessage: (0, S.A)(i, j, q, X, a),
+    childrenExecutedCommand: (0, I.A)(i, j, a),
+    childrenHeader: (0, v.A)(P(R({}, e), {
       guildId: j.guild_id,
       author: Q,
       roleIcon: J
     })),
-    childrenAccessories: e.hideAccessories ? true : (0, y.J)(e, K, z),
+    childrenAccessories: e.hideAccessories ? true : (0, b.J)(e, K, z),
     childrenMessageContent: (0, O.A)(e, W),
-    childrenSystemMessage: (0, v.A)(P(R({}, e), {
+    childrenSystemMessage: (0, A.A)(P(R({}, e), {
       disableInteraction: B
     })),
     onContextMenu: w,

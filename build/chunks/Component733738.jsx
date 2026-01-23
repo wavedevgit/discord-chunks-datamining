@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 733738, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => A
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,9 +16,9 @@ var Chunk503698 = require("./503698.js"),
   Chunk963169 = require("./963169.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk88808 = require("./88808.js");
-let A = Chunk430086.GY.binds["0"],
-  g = Chunk430086.M$.binds["0"],
-  m = e => {
+let f = Chunk430086.GY.binds["0"],
+  m = Chunk430086.M$.binds["0"],
+  A = e => {
     var t, n;
     let {
       firstElementFocusJumpSectionProps: i = {}
@@ -27,19 +27,19 @@ let A = Chunk430086.GY.binds["0"],
     } = (0, u.p)({
       location: "BackForwardButtons"
     }), {
-      canGoBack: m,
-      canGoForward: b
+      canGoBack: A,
+      canGoForward: _
     } = (0, a.cf)([d.A], () => ({
       canGoBack: d.A.canGoBack,
       canGoForward: d.A.canGoForward
     }));
     return (0, r.jsxs)("div", {
-      className: h.y_,
+      className: g.y_,
       children: [(0, r.jsx)(s.m_, {
         ariaHidden: true,
-        shouldShow: m,
-        text: f.intl.string(f.t.B9vzIP),
-        keyboardShortcut: A,
+        shouldShow: A,
+        text: h.intl.string(h.t.B9vzIP),
+        keyboardShortcut: f,
         children: (0, r.jsx)(o.DUT, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -58,10 +58,10 @@ let A = Chunk430086.GY.binds["0"],
           }
           return e
         }({
-          "aria-label": f.intl.string(f.t.B9vzIP),
-          "aria-disabled": !m,
-          className: l()(h.x6, h.aX, {
-            [h.r9]: !m
+          "aria-label": h.intl.string(h.t.B9vzIP),
+          "aria-disabled": !A,
+          className: l()(g.x6, g.aX, {
+            [g.r9]: !A
           }),
           onClick: () => (0, p.OE)("nav_button")
         }, i), n = n = {
@@ -81,14 +81,14 @@ let A = Chunk430086.GY.binds["0"],
         }), t))
       }), (0, r.jsx)(s.m_, {
         ariaHidden: true,
-        shouldShow: b,
-        text: f.intl.string(f.t["9KJ29e"]),
-        keyboardShortcut: g,
+        shouldShow: _,
+        text: h.intl.string(h.t["9KJ29e"]),
+        keyboardShortcut: m,
         children: (0, r.jsx)(o.DUT, {
-          "aria-label": f.intl.string(f.t["9KJ29e"]),
-          "aria-disabled": !b,
-          className: l()(h.x6, h.sY, {
-            [h.r9]: !b
+          "aria-label": h.intl.string(h.t["9KJ29e"]),
+          "aria-disabled": !_,
+          className: l()(g.x6, g.sY, {
+            [g.r9]: !_
           }),
           onClick: () => (0, p.Qb)("nav_button"),
           children: (0, r.jsx)(o.EdP, {

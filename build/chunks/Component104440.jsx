@@ -20,7 +20,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk231566 = require("./231566.js");
 
-function _(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,7 +36,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -51,34 +51,34 @@ function O(e) {
   let i = t.map(e => {
     let t = e.libraryApplication.getDistributor();
     return (0, r.jsxs)("div", {
-      className: b.Kp,
+      className: _.Kp,
       children: [(0, r.jsxs)(c.A, {
         direction: c.A.Direction.VERTICAL,
-        className: b.Hm,
+        className: _.Hm,
         children: [(0, r.jsx)("div", {
-          className: b.SX,
+          className: _.SX,
           children: e.libraryApplication.getBranchedName(e.application)
         }), null != t ? (0, r.jsx)("div", {
-          className: b.ME,
-          children: g.gG4[t]
+          className: _.ME,
+          children: m.gG4[t]
         }) : null]
       }), (0, r.jsx)(s.DUT, {
-        className: b.P5,
+        className: _.P5,
         onClick: () => n(e.libraryApplication),
         children: (0, r.jsx)(s.PGe, {
           size: "md",
           color: "currentColor",
-          className: b.q_
+          className: _.q_
         })
       })]
     }, e.key)
   });
   return (0, r.jsxs)("div", {
-    className: b.z0,
+    className: _.z0,
     children: [(0, r.jsx)(s.Heading, {
       variant: "heading-md/semibold",
-      className: b.Z9,
-      children: m.intl.string(m.t["5PJtrH"])
+      className: _.Z9,
+      children: A.intl.string(A.t["5PJtrH"])
     }), i]
   })
 }
@@ -90,7 +90,7 @@ class y extends Chunk64700.PureComponent {
     u.Pf.updateSetting(e)
   }
   trackRestoreApplication(e, t) {
-    p.default.track(g.HAw.APPLICATION_SETTINGS_UPDATED, E({
+    p.default.track(m.HAw.APPLICATION_SETTINGS_UPDATED, E({
       hidden_enabled: t
     }, e.getAnalyticsData()))
   }
@@ -101,20 +101,20 @@ class y extends Chunk64700.PureComponent {
       installShortcutStartMenu: n
     } = this.props;
     return (0, r.jsxs)("div", {
-      className: b.rf,
-      children: [(0, f.S)() ? (0, r.jsxs)(s.BJc, {
+      className: _.rf,
+      children: [(0, h.S)() ? (0, r.jsxs)(s.BJc, {
         gap: 16,
         children: [(0, r.jsx)(s.dOG, {
-          label: m.intl.string(m.t["9ID+Kh"]),
-          description: m.intl.string(m.t.vT61N0),
+          label: A.intl.string(A.t["9ID+Kh"]),
+          description: A.intl.string(A.t.vT61N0),
           checked: t,
           onChange: this.handleToggleShortcutDesktop
         }), (0, r.jsx)(s.cGx, {}), (0, r.jsx)(s.dOG, {
-          label: m.intl.string(m.t.vNpUMz),
-          description: m.intl.string(m.t.cpYp0H),
+          label: A.intl.string(A.t.vNpUMz),
+          description: A.intl.string(A.t.cpYp0H),
           checked: n,
           onChange: this.handleToggleShortcutStartMenu
-        }), (0, r.jsx)(s.cGx, {}), (0, r.jsx)(A.A, {})]
+        }), (0, r.jsx)(s.cGx, {}), (0, r.jsx)(f.A, {})]
       }) : null, (0, r.jsx)(O, {
         restoreApplication: this.handleRestoreHiddenLibraryApplication,
         applicationViewItems: e
@@ -123,18 +123,18 @@ class y extends Chunk64700.PureComponent {
   }
   render() {
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(h.A, {
-        currentRoute: g.BVt.APPLICATION_LIBRARY_SETTINGS
+      children: [(0, r.jsx)(g.A, {
+        currentRoute: m.BVt.APPLICATION_LIBRARY_SETTINGS
       }), (0, r.jsx)(s.ArX, {
-        className: b.XG,
+        className: _.XG,
         children: this.renderBody()
       })]
     })
   }
   constructor(...e) {
-    super(...e), _(this, "handleRestoreHiddenLibraryApplication", e => {
-      let t = l.PQ(e.getFlags(), g.hM6.HIDDEN);
-      o.V(e.id, e.branchId, t), this.trackRestoreApplication(e, l.Lt(t, g.hM6.HIDDEN))
+    super(...e), b(this, "handleRestoreHiddenLibraryApplication", e => {
+      let t = l.PQ(e.getFlags(), m.hM6.HIDDEN);
+      o.V(e.id, e.branchId, t), this.trackRestoreApplication(e, l.Lt(t, m.hM6.HIDDEN))
     })
   }
 }

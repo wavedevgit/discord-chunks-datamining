@@ -29,33 +29,33 @@ function m(e) {
     sectionTitle: m,
     changeAvatarButtonText: g,
     guildId: E,
-    className: b,
-    disabled: y = false,
+    className: y,
+    disabled: b = false,
     isTryItOut: O = false,
-    forcedDivider: A,
-    withHighlight: v = false
+    forcedDivider: v,
+    withHighlight: A = false
   } = e, {
-    newestAnalyticsLocation: S
-  } = (0, c.Ay)(), I = v ? l.wLn : o.$n, T = i.useCallback(() => {
+    newestAnalyticsLocation: I
+  } = (0, c.Ay)(), S = A ? l.wLn : o.$n, T = i.useCallback(() => {
     (0, u.XD)({
       uploadType: f.HL.AVATAR,
-      analyticsSource: S,
+      analyticsSource: I,
       filters: O ? h : true,
       guildId: E,
       isTryItOut: O
     })
-  }, [E, S, O]);
+  }, [E, I, O]);
   return (0, r.jsx)(d.A, {
-    className: b,
+    className: y,
     title: m,
     errors: n,
-    disabled: y,
-    forcedDivider: A,
+    disabled: b,
+    forcedDivider: v,
     children: (0, r.jsxs)("div", {
       className: _.NC,
-      children: [(0, r.jsx)(I, {
+      children: [(0, r.jsx)(S, {
         className: s()({
-          [_.yj]: v
+          [_.yj]: A
         }),
         size: o.$n.Sizes.SMALL,
         onClick: T,

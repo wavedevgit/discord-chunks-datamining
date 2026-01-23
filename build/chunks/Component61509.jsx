@@ -2,7 +2,7 @@
 /** chunk id: 61509, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => eS
+  A: () => eI
 }), require("./228524.js"), require("./896048.js"), require("./321073.js"), require("./938796.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -114,8 +114,8 @@ let eu = 14,
     } = e;
     return (0, i.jsx)("li", {
       className: ea.mg,
-      children: (0, i.jsxs)(v.A, {
-        justify: v.A.Justify.BETWEEN,
+      children: (0, i.jsxs)(A.A, {
+        justify: A.A.Justify.BETWEEN,
         children: [(0, i.jsx)("div", {
           children: t
         }), (0, i.jsx)("div", {
@@ -125,7 +125,7 @@ let eu = 14,
     })
   };
 
-function eb(e) {
+function ey(e) {
   let {
     value: t,
     copyText: n,
@@ -153,15 +153,15 @@ function eb(e) {
     })
   })
 }
-let ey = e => {
+let eb = e => {
   let {
     description: t,
     detail: n
   } = e;
   return (0, i.jsx)("li", {
     className: ea.Iu,
-    children: (0, i.jsxs)(v.A, {
-      justify: v.A.Justify.BETWEEN,
+    children: (0, i.jsxs)(A.A, {
+      justify: A.A.Justify.BETWEEN,
       children: [(0, i.jsx)("div", {
         children: t
       }), (0, i.jsx)("div", {
@@ -175,16 +175,16 @@ function eO(e) {
   let {
     guildId: t,
     guildProductListingId: n
-  } = e, r = (0, I.Qi)(t, n, {
+  } = e, r = (0, S.Qi)(t, n, {
     requireCurrentGuild: false
   }), s = (0, C.z)(r), o = (0, p.bG)([B.A], () => B.A.getGuild(t)), l = (null == r ? true : r.role_id) != null && (null == r ? true : r.attachments_count) === 0 ? ei.intl.string(ei.t.H11qcT) : s, c = a.useCallback(async () => {
     (null == o ? true : o.features.has(et.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) ? await (0, w.A)(et.BVt.GUILD_PRODUCT(t, n)) : await (0, w.A)(et.BVt.CHANNEL(t)), (0, U.default)()
   }, [o, t, n]);
   return (0, i.jsxs)(i.Fragment, {
-    children: [null != l && (0, i.jsx)(ey, {
+    children: [null != l && (0, i.jsx)(eb, {
       description: ei.intl.string(ei.t.lXPbJb),
       detail: l
-    }), null != o && (0, i.jsx)(ey, {
+    }), null != o && (0, i.jsx)(eb, {
       description: ei.intl.string(ei.t.Wpn8z8),
       detail: (0, i.jsx)(P.A, {
         onClick: c,
@@ -194,12 +194,12 @@ function eO(e) {
   })
 }
 
-function eA(e) {
+function ev(e) {
   var t, n;
   let {
     guildId: r,
     guildProductListingId: a
-  } = e, s = (0, I.Qi)(r, a, {
+  } = e, s = (0, S.Qi)(r, a, {
     requireCurrentGuild: false
   }), o = (0, p.bG)([T.A], () => T.A.getGuildProductFetchState(a) === T.e.FETCHING), l = null == s ? true : s.role_id, c = (0, p.bG)([F.A], () => null != l ? F.A.getRole(r, l) : true, [r, l]), u = (0, R.A)({
     guildId: r,
@@ -231,7 +231,7 @@ function eA(e) {
     })]
   }) : null
 }
-class ev extends(r = Chunk64700.PureComponent) {
+class eA extends(r = Chunk64700.PureComponent) {
   get daysSincePurchase() {
     let {
       payment: e
@@ -340,7 +340,7 @@ class ev extends(r = Chunk64700.PureComponent) {
         className: ea.bx,
         children: [(0, i.jsx)("div", {
           children: ei.intl.string(ei.t["UQim+r"])
-        }), (0, i.jsx)(eb, {
+        }), (0, i.jsx)(ey, {
           value: e.id,
           copyText: ei.intl.string(ei.t["Mdk9+A"]),
           copyFeedbackText: ei.intl.string(ei.t["7eIrA2"])
@@ -405,7 +405,7 @@ class ev extends(r = Chunk64700.PureComponent) {
     let {
       payment: e
     } = this.props;
-    return (0, i.jsx)(A.A, {
+    return (0, i.jsx)(v.A, {
       payment: e
     })
   }
@@ -606,12 +606,12 @@ class ev extends(r = Chunk64700.PureComponent) {
       } else p.type === et.rzx.APPLICATION && (null != u && (a = u.skuId), null != s ? n.push(ei.intl.formatToPlainString(ei.t["0wL/VI"], {
         tier: null == f ? true : f.name
       })) : n.push(ei.intl.string(ei.t["9czSYu"])));
-      t = 0 !== n.length ? n.join(", ") : r.description, e = (0, i.jsx)(S.A, {
+      t = 0 !== n.length ? n.join(", ") : r.description, e = (0, i.jsx)(I.A, {
         className: ea.Sy,
         guildClassName: ea.zA,
         game: s,
         guild: o,
-        size: S.M.XSMALL,
+        size: I.M.XSMALL,
         skuId: null != a ? a : null == f ? true : f.id
       })
     } else if (null != f) {
@@ -631,12 +631,12 @@ class ev extends(r = Chunk64700.PureComponent) {
         height: 23,
         color: "currentColor",
         className: ea.sV
-      }) : (0, i.jsx)(S.A, {
+      }) : (0, i.jsx)(I.A, {
         className: ea.Sy,
         guildClassName: ea.zA,
         game: s,
         guild: o,
-        size: S.M.XSMALL,
+        size: I.M.XSMALL,
         skuId: f.id
       })
     } else e = (0, i.jsx)(m.tvc, {
@@ -649,7 +649,7 @@ class ev extends(r = Chunk64700.PureComponent) {
         className: ea.p6,
         children: (0, Z.i$)(c()(r.createdAt), "MM/DD/YYYY")
       }),
-      b = r.isGift ? (0, i.jsx)(_.m_, {
+      y = r.isGift ? (0, i.jsx)(_.m_, {
         text: ei.intl.string(ei.t.QddTpm),
         children: (0, i.jsx)(m.okO, {
           size: "md",
@@ -661,13 +661,13 @@ class ev extends(r = Chunk64700.PureComponent) {
       className: ea.h_,
       children: [e, (0, i.jsxs)("div", {
         children: [t, E]
-      }), b]
+      }), y]
     }) : (0, i.jsxs)(a.Fragment, {
       children: [E, (0, i.jsxs)("div", {
         className: ea.h_,
         children: [e, (0, i.jsx)("div", {
           children: t
-        }), b]
+        }), y]
       })]
     })
   }
@@ -688,7 +688,7 @@ class ev extends(r = Chunk64700.PureComponent) {
           onClick: () => (0, g.A)(ep(n))
         }),
         children: ei.intl.string(ei.t["3AvulN"])
-      }) : null != r && null != e.sku && (0, i.jsx)(eA, {
+      }) : null != r && null != e.sku && (0, i.jsx)(ev, {
         guildId: r,
         guildProductListingId: e.sku.id
       })]
@@ -726,9 +726,9 @@ class ev extends(r = Chunk64700.PureComponent) {
           offset: 4
         }
       }, e), {
-        children: [(0, i.jsxs)(v.A, {
+        children: [(0, i.jsxs)(A.A, {
           className: ea.J7,
-          align: v.A.Align.CENTER,
+          align: A.A.Align.CENTER,
           "data-expanded": r,
           children: [this.renderDescription(), (0, i.jsxs)("div", {
             className: ea.vj,
@@ -825,7 +825,7 @@ class ev extends(r = Chunk64700.PureComponent) {
   }
 }
 
-function eS(e) {
+function eI(e) {
   var t, n;
   let {
     payment: r,
@@ -845,12 +845,12 @@ function eS(e) {
     }
   }), {
     hasAlreadyLinked: g
-  } = (0, y.RD)((0, x.bF)(r.sku) ? h : true), A = (0, p.bG)([O.A], () => null != d ? O.A.getApplication(d) : null), v = null;
+  } = (0, b.RD)((0, x.bF)(r.sku) ? h : true), v = (0, p.bG)([O.A], () => null != d ? O.A.getApplication(d) : null), A = null;
   a.useEffect(() => {
     f && null != d && (0, D.TA)(d)
   }, [d, f]);
-  let S = (0, p.bG)([B.A], () => B.A.getGuild(null == h ? true : h.guildId)),
-    I = c ? h : true,
+  let I = (0, p.bG)([B.A], () => B.A.getGuild(null == h ? true : h.guildId)),
+    S = c ? h : true,
     T = r.subscription,
     C = (0, p.bG)([W.A], () => null != T && T.type !== et.rzx.PREMIUM ? W.A.get(T.items[0].planId) : null),
     N = (0, p.bG)([H.default], () => {
@@ -863,13 +863,13 @@ function eS(e) {
     }, [r]),
     {
       analyticsLocations: R
-    } = (0, b.Ay)(E.A.BILLING_SETTINGS_BILLING);
-  return (0, i.jsx)(ev, {
+    } = (0, y.Ay)(E.A.BILLING_SETTINGS_BILLING);
+  return (0, i.jsx)(eA, {
     applicationStatistics: _,
-    application: f ? A : I,
+    application: f ? v : S,
     analyticsLocations: R,
-    guild: S,
-    stickerPack: v,
+    guild: I,
+    stickerPack: A,
     paymentSources: m,
     locale: s,
     compactMode: o,
@@ -880,6 +880,6 @@ function eS(e) {
     hasLinkedToApplication: g
   })
 }
-es(ev, "defaultProps", {
+es(eA, "defaultProps", {
   compactMode: false
 })

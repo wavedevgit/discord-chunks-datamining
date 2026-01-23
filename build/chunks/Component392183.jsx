@@ -1,5 +1,5 @@
 /** Chunk was on 59275 **/
-/** chunk id: 392183, original params: e,t,l (module,exports,require) **/
+/** chunk id: 392183, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   A: () => u
@@ -12,16 +12,16 @@ var Chunk503698 = require("./503698.js"),
   Chunk68763 = require("./68763.js"),
   Chunk157884 = require("./157884.js"),
   Chunk564951 = require("./564951.js");
-let u = () => (0, n.jsx)("div", {
+let u = () => (0, r.jsx)("div", {
   className: c.A,
   children: Array.from({
     length: 3
-  }).map((e, t) => (0, n.jsxs)("div", {
+  }).map((e, t) => (0, r.jsxs)("div", {
     className: o.vY,
-    children: [(0, n.jsx)("div", {
+    children: [(0, r.jsx)("div", {
       className: s()(i.sW, c.s)
     }), Array.from({
       length: 12
-    }, (e, t) => (0, n.jsx)(a.A, {}, t))]
+    }, (e, t) => (0, r.jsx)(a.A, {}, t))]
   }, t))
 })

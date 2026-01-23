@@ -1,7 +1,7 @@
 /** Chunk was on 22477 **/
 /** chunk id: 559, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  N: () => i
+  N: () => r
 });
 var Chunk315069 = require("./315069.js");
 
@@ -13,9 +13,9 @@ function l(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class i extends Chunk315069.A {
+class r extends Chunk315069.A {
   static fromServer(e) {
-    return new i(e)
+    return new r(e)
   }
   setPassword(e) {
     return this.password = e, this

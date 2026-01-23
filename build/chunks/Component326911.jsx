@@ -2,7 +2,7 @@
 /** chunk id: 326911, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js"), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -55,7 +55,7 @@ function g(e, t) {
   }), e
 }
 let E = "WUMP-AAAAA-BBBBB-CCCCC";
-class b extends Chunk64700.Component {
+class y extends Chunk64700.Component {
   get analyticsLocation() {
     let {
       analyticsContext: {
@@ -155,10 +155,10 @@ class b extends Chunk64700.Component {
   }
 }
 
-function y() {
+function b() {
   let e = i.useContext(u.AnalyticsContext),
     t = (0, a.bG)([c.A], () => c.A.enabled);
-  return (0, r.jsx)(b, {
+  return (0, r.jsx)(y, {
     analyticsContext: e,
     obscureInput: t
   })

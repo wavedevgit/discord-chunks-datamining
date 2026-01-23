@@ -5,7 +5,7 @@ require.d(exports, {
   B8: () => N,
   dF: () => R,
   up: () => C,
-  xr: () => v
+  xr: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -32,7 +32,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,12 +57,12 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = (0, Chunk240248.xI)(Chunk319060.A.FULL_SCREEN_LAYER_ANIMATION_DURATION),
-  v = (0, Chunk353640.v)(e => ({
+let v = (0, Chunk240248.xI)(Chunk319060.A.FULL_SCREEN_LAYER_ANIMATION_DURATION),
+  A = (0, Chunk353640.v)(e => ({
     fullScreenLayers: [],
     addLayer: t => (0, u.r)(() => {
       e(e => {
@@ -76,7 +76,7 @@ let A = (0, Chunk240248.xI)(Chunk319060.A.FULL_SCREEN_LAYER_ANIMATION_DURATION),
     })
   }));
 
-function S(e) {
+function I(e) {
   let {
     item: t,
     containerRef: n
@@ -96,7 +96,7 @@ function S(e) {
     })
   })
 }
-let I = {
+let S = {
     enter: Chunk282664.Ve,
     enterActive: Chunk282664.T8,
     enterDone: Chunk282664.lG,
@@ -116,7 +116,7 @@ let I = {
 function C() {
   let {
     reducedMotion: e
-  } = i.useContext(f.CZY), t = e.enabled ? T : I, n = v(e => e.fullScreenLayers), a = n.map(e => ({
+  } = i.useContext(f.CZY), t = e.enabled ? T : S, n = A(e => e.fullScreenLayers), a = n.map(e => ({
     item: e,
     nodeRef: i.createRef()
   }));
@@ -129,18 +129,18 @@ function C() {
       return (0, r.jsx)(l.A, {
         nodeRef: a,
         classNames: i.options.disableAnimation ? true : t,
-        timeout: A,
+        timeout: v,
         onEntered: () => {
           (0, u.r)(() => {
-            v.setState({
-              fullScreenLayers: n.map(e => e.key === i.key ? O(b({}, e), {
+            A.setState({
+              fullScreenLayers: n.map(e => e.key === i.key ? O(y({}, e), {
                 transitionState: 2
               }) : e)
             })
           })
         },
         unmountOnExit: true,
-        children: (0, r.jsx)(S, {
+        children: (0, r.jsx)(I, {
           containerRef: a,
           item: i
         })
@@ -159,7 +159,7 @@ function N(e) {
     } = t,
     o = null != n ? n : s()();
   return (0, u.r)(() => {
-    v.setState(t => ({
+    A.setState(t => ({
       fullScreenLayers: [...t.fullScreenLayers, {
         key: o,
         transitionState: 1,
@@ -176,7 +176,7 @@ function N(e) {
 
 function R(e) {
   (0, u.r)(() => {
-    v.setState(t => ({
+    A.setState(t => ({
       fullScreenLayers: t.fullScreenLayers.filter(t => t.key !== e)
     }))
   })

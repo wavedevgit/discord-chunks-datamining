@@ -44,24 +44,24 @@ function w(e) {
     containerClassName: L
   } = e, {
     themeType: j
-  } = (0, b.E)(), M = (0, i.bG)([m.default], () => m.default.getId() === n.id), k = (0, u.J)(x), U = (0, _.o)(null != (t = null == w ? true : w.application_id) ? t : null == x ? true : x.id), {
+  } = (0, y.E)(), M = (0, i.bG)([m.default], () => m.default.getId() === n.id), k = (0, u.J)(x), U = (0, _.o)(null != (t = null == w ? true : w.application_id) ? t : null == x ? true : x.id), {
     analyticsLocations: G
   } = (0, p.Ay)(f.A.USER_PROFILE_ACTIVITY_BUTTONS), V = j === R.d.MODAL || j === R.d.MODAL_V2, F = j === R.d.POPOUT, B = (() => M ? F && (null == w ? true : w.type) === N.$pd.PLAYING && (null == x ? true : x.id) != null ? (0, r.jsx)(d.A, {
     applicationId: x.id,
     onAction: P,
     onClose: D
-  }) : null : U || !k || null == x || V ? (0, l.A)(w) ? (0, r.jsx)(S.A, {
+  }) : null : U || !k || null == x || V ? (0, l.A)(w) ? (0, r.jsx)(I.A, {
     platformType: N.fg2.XBOX,
     icon: () => (0, r.jsx)(E.A, {}),
     onAction: P
-  }) : (0, o.A)(w) ? (0, r.jsx)(S.A, {
+  }) : (0, o.A)(w) ? (0, r.jsx)(I.A, {
     platformType: N.fg2.PLAYSTATION,
     icon: () => (0, r.jsx)(g.A, {}),
     onAction: P
   }) : (0, c.A)(w) ? (0, r.jsx)(T.A, {
     activity: w,
     onAction: P
-  }) : (0, a.A)(w, N.jUm.JOIN) || (0, s.A)(w) ? (0, r.jsx)(A.A, {
+  }) : (0, a.A)(w, N.jUm.JOIN) || (0, s.A)(w) ? (0, r.jsx)(v.A, {
     user: n,
     activity: w,
     onAction: P,
@@ -71,15 +71,15 @@ function w(e) {
     activity: w,
     onAction: P,
     onClose: D
-  }) : (null == w ? true : w.buttons) != null && (null == w ? true : w.buttons.length) >= 1 ? (0, r.jsx)(y.A, {
+  }) : (null == w ? true : w.buttons) != null && (null == w ? true : w.buttons.length) >= 1 ? (0, r.jsx)(b.A, {
     user: n,
     activity: w,
     onAction: P
-  }) : (0, a.A)(w, N.jUm.INSTANCE) ? (0, r.jsx)(v.A, {
+  }) : (0, a.A)(w, N.jUm.INSTANCE) ? (0, r.jsx)(A.A, {
     user: n,
     activity: w,
     onAction: P
-  }) : (0, h.Cy)(w) ? (0, r.jsx)(I.A, {
+  }) : (0, h.Cy)(w) ? (0, r.jsx)(S.A, {
     activity: w,
     onAction: P,
     onClose: D

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   SU: () => O,
-  Vf: () => y,
-  b$: () => A,
+  Vf: () => b,
+  b$: () => v,
   oW: () => E
 });
 var Chunk481613 = require("./481613.js"),
@@ -31,7 +31,7 @@ function E(e) {
   return "".concat(o.AMi.DESKTOP).concat(r, "?platform=").concat(e).concat(i)
 }
 
-function b() {
+function y() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (() => {
     var e;
     return null == (e = i().os) ? true : e.family
@@ -39,21 +39,21 @@ function b() {
   return null == e ? h : false !== e.indexOf(l) || false !== e.indexOf(c) || false !== e.indexOf(u) || false !== e.indexOf(d) || false !== e.indexOf(f) || false !== e.indexOf(p) ? g : false !== e.indexOf(_) ? m : h
 }
 
-function y(e) {
+function b(e) {
   return ({
     [h]: "Windows",
     [m]: "Mac",
     [g]: "Linux"
-  })[b(e)]
+  })[y(e)]
 }
 
 function O() {
-  let e = b(),
+  let e = y(),
     t = e === g ? "tar.gz" : null;
   return E(e, false, t)
 }
 
-function A(e, t, n) {
+function v(e, t, n) {
   let r = null != n ? n.toString() : null;
   switch (t) {
     case "iOS":

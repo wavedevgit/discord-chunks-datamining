@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   o = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
@@ -41,7 +41,7 @@ function D(e) {
     guildId: n
   } = e, l = (0, c.yK)([S.A, I.A], () => {
     let e = Date.now();
-    return o()(S.A.getSpeakers()).map(e => I.A.getParticipant(t, e)).filter(e => null != e && e.type === P.lp.USER && e.speaking && !(0, O.Ay)(e)).sortBy(t => -S.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+    return o()(S.A.getSpeakers()).map(e => I.A.getParticipant(t, e)).filter(e => null != e && e.type === P.lp.USER && e.speaking && !(0, _.Ay)(e)).sortBy(t => -S.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
   });
   return 0 === l.length ? null : (0, r.jsx)("div", {
     className: R.$U,
@@ -65,10 +65,10 @@ function M(e) {
     channel: t,
     isChatOpen: n
   } = e, i = l.useRef(null), {
-    analyticsLocations: s
-  } = (0, h.Ay)(p.A.VOICE_CHANNEL_HEADER), o = t.id, {
+    analyticsLocations: a
+  } = (0, f.Ay)(h.A.VOICE_CHANNEL_HEADER), o = t.id, {
     voiceParticipantsHidden: u,
-    selectedParticipant: O,
+    selectedParticipant: _,
     userParticipantCount: C,
     participantsListOpen: S
   } = (0, c.cf)([I.A], () => ({
@@ -81,33 +81,33 @@ function M(e) {
   } = (0, T.A)({
     location: "ChannelCallHeaderToolbar"
   }), L = !S && M && (t.isGuildVoiceOrThread() || t.isGroupDM()), {
-    enabled: G,
-    inInbox: k
+    enabled: k,
+    inInbox: G
   } = A.A.useExperiment({
     location: "ChannelCallHeaderToolbar"
   }), U = [];
   return u && U.push((0, r.jsx)(D, {
     channelId: o,
     guildId: t.guild_id
-  }, "current-speaker")), U.push((0, r.jsx)(g.A, {
+  }, "current-speaker")), U.push((0, r.jsx)(m.A, {
     className: R.x6,
     channelId: o
-  }, "clips-enabled-indicator")), (null == O ? true : O.type) === P.lp.STREAM && (U.push((0, r.jsx)(j.A, {
+  }, "clips-enabled-indicator")), (null == _ ? true : _.type) === P.lp.STREAM && (U.push((0, r.jsx)(O.A, {
     className: R.x6,
-    participant: O
-  }, "warning")), U.push((0, r.jsx)(m.A, {
-    size: b.Ay.Sizes.LARGE,
+    participant: _
+  }, "warning")), U.push((0, r.jsx)(b.A, {
+    size: g.Ay.Sizes.LARGE,
     className: R.x6,
-    participant: O,
+    participant: _,
     showQuality: true,
     premiumIndicator: false
-  }, "live-indicator"))), (null == O ? true : O.type) === P.lp.USER && U.push((0, r.jsx)(v.A, {
+  }, "live-indicator"))), (null == _ ? true : _.type) === P.lp.USER && U.push((0, r.jsx)(j.A, {
     className: R.x6,
-    userId: O.id
+    userId: _.id
   }, "video-warning")), u && !M && U.push((0, r.jsx)(d.YNO, {
     targetElementRef: i,
     position: "bottom",
-    renderPopout: () => (0, r.jsx)(x.A, {
+    renderPopout: () => (0, r.jsx)(v.A, {
       children: (0, r.jsx)(N.A, {
         channel: t
       })
@@ -115,9 +115,9 @@ function M(e) {
     children: (e, t) => {
       var n, r;
       let {
-        isShown: a
+        isShown: s
       } = t;
-      return (0, l.createElement)(_.A, (n = function(e) {
+      return (0, l.createElement)(E.A, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -136,7 +136,7 @@ function M(e) {
         return e
       }({}, e), r = r = {
         buttonRef: i,
-        isActive: a,
+        isActive: s,
         count: C,
         key: "call-members",
         className: R.x6
@@ -151,21 +151,21 @@ function M(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
       }), n))
     }
-  }, "call-members-popout")), G && !k && U.push((0, r.jsx)(y.A, {
+  }, "call-members-popout")), k && !G && U.push((0, r.jsx)(y.A, {
     className: R.x6
-  }, "for-later")), L && U.push((0, r.jsx)(_.A, {
-    className: a()(R.x6, {
+  }, "for-later")), L && U.push((0, r.jsx)(E.A, {
+    className: s()(R.x6, {
       [R.Lt]: n
     }),
-    onClick: () => f.A.toggleParticipantsList(t.id, !S)
-  }, "participants-list-button")), w && U.push((0, r.jsx)(E.V, {
+    onClick: () => p.A.toggleParticipantsList(t.id, !S)
+  }, "participants-list-button")), w && U.push((0, r.jsx)(x.V, {
     channelId: t.id,
-    className: a()(R.x6, {
+    className: s()(R.x6, {
       [R.Lt]: S
     }),
     disabled: n
-  }, "chat-spacer")), (0, r.jsx)(h.f5, {
-    value: s,
+  }, "chat-spacer")), (0, r.jsx)(f.f5, {
+    value: a,
     children: U
   })
 }

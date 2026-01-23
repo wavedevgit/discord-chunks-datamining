@@ -5,7 +5,7 @@ require.d(exports, {
   BS: () => T,
   Cr: () => O,
   F9: () => d,
-  IO: () => v,
+  IO: () => A,
   JC: () => H,
   TP: () => p,
   YL: () => R,
@@ -17,11 +17,11 @@ require.d(exports, {
   hL: () => w,
   pU: () => u,
   t: () => m,
-  uD: () => A,
+  uD: () => v,
   vS: () => f,
   vl: () => E,
-  vv: () => I,
-  xZ: () => b,
+  vv: () => S,
+  xZ: () => y,
   xm: () => K
 }), require("./896048.js"), require("./65821.js"), require("./638769.js");
 var Chunk735438 = require("./735438.js"),
@@ -93,24 +93,24 @@ function E(e) {
   return null != e.config.taskConfigV2.tasks[i.n.PLAY_ACTIVITY]
 }
 
-function b(e) {
+function y(e) {
   return null != e && m({
     quest: e
   })
 }
-let y = e => t => e.some(e => null != t.config.taskConfigV2.tasks[e]);
+let b = e => t => e.some(e => null != t.config.taskConfigV2.tasks[e]);
 
 function O(e) {
   return Array.from(i.o.IN_GAME).some(t => null != e.config.taskConfigV2.tasks[t])
 }
-let A = y([Chunk412703.n.PLAY_ON_XBOX, Chunk412703.n.PLAY_ON_PLAYSTATION]),
-  v = y([Chunk412703.n.WATCH_VIDEO]),
-  S = y([Chunk412703.n.WATCH_VIDEO_ON_MOBILE]),
-  I = y([Chunk412703.n.WATCH_VIDEO, Chunk412703.n.WATCH_VIDEO_ON_MOBILE]),
-  T = e => S(e) && !v(e);
+let v = b([Chunk412703.n.PLAY_ON_XBOX, Chunk412703.n.PLAY_ON_PLAYSTATION]),
+  A = b([Chunk412703.n.WATCH_VIDEO]),
+  I = b([Chunk412703.n.WATCH_VIDEO_ON_MOBILE]),
+  S = b([Chunk412703.n.WATCH_VIDEO, Chunk412703.n.WATCH_VIDEO_ON_MOBILE]),
+  T = e => I(e) && !A(e);
 
 function C(e) {
-  return A(e)
+  return v(e)
 }
 let N = (e, t) => {
   var n, r;
@@ -144,7 +144,7 @@ let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
     var n, r, i, a, s;
     let l = null == (a = e.userStatus) || null == (i = a.progress) ? true : i[t.type],
       c = null != (n = null != (r = null == l ? true : l.value) ? r : null == (s = e.userStatus) ? true : s.streamProgressSeconds) ? n : 0;
-    if (I(e)) {
+    if (S(e)) {
       let n = o.A.getOptimisticProgress(e.id, t.type);
       return null == n || n < c ? c : n
     }
@@ -212,12 +212,12 @@ let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
       percentComplete: 0,
       taskType: i.n.STREAM_ON_DESKTOP
     };
-    if (A(e)) return V({
+    if (v(e)) return V({
       quest: e,
       includeTaskTypes: null != t ? t : R(e) ? i.o.CONSOLE : i.o.ALL
     });
-    if (I(e))
-      if (S(e)) return U({
+    if (S(e))
+      if (I(e)) return U({
         quest: e,
         taskType: i.n.WATCH_VIDEO_ON_MOBILE
       });
@@ -225,7 +225,7 @@ let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
         quest: e,
         taskType: i.n.WATCH_VIDEO
       });
-    return b(e) ? U({
+    return y(e) ? U({
       quest: e,
       taskType: i.n.PLAY_ON_DESKTOP
     }) : E(e) ? U({

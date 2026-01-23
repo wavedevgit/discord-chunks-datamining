@@ -29,7 +29,7 @@ var Chunk889137 = require("./889137.js"),
   Chunk708676 = require("./708676.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let I = {
+let S = {
   channelId: Chunk652215.dJq,
   selectedAnswerIds: new Set,
   submitting: false,
@@ -104,26 +104,26 @@ function w(e, t) {
     poll: o
   } = e;
   if (null == o) return;
-  let p = e.state === v.cmJ.SENT,
-    _ = p ? null != s ? s : (0, A.J)(o.expiry) : "",
+  let p = e.state === A.cmJ.SENT,
+    _ = p ? null != s ? s : (0, v.J)(o.expiry) : "",
     h = null == _ && p,
     {
       selectedAnswerIds: m,
       submitting: E,
-      editing: b,
-      showResults: y
-    } = null != (n = null != t ? t : (0, g.xt)(e.getChannelId(), e.id)) ? n : I,
+      editing: y,
+      showResults: b
+    } = null != (n = null != t ? t : (0, g.xt)(e.getChannelId(), e.id)) ? n : S,
     O = e.reactions,
-    S = true;
+    I = true;
   if (!R(e)) {
     let t = f.A.getMessage(e.channel_id, e.id);
-    S = !e.isSearchHit && null != t, O = null != (a = null == t ? true : t.reactions) ? a : O
+    I = !e.isSearchHit && null != t, O = null != (a = null == t ? true : t.reactions) ? a : O
   }
   let T = m.size > 0,
     C = O.some(e => true === e.me_vote),
-    N = !b && C,
-    w = N || h || y,
-    P = p && S && (!C || b || w),
+    N = !y && C,
+    w = N || h || b,
+    P = p && I && (!C || y || w),
     D = null == (i = u.A.getChannel(e.getChannelId())) || null == (r = i.getGuildId) ? true : r.call(i),
     x = null != D ? d.Ay.getSelfMember(D) : null,
     L = (0, l.TR)(x),
@@ -139,15 +139,15 @@ function w(e, t) {
     hasSelectedAnswer: T,
     hasVoted: N,
     hasVoteRecorded: C,
-    isEditingVote: b,
+    isEditingVote: y,
     isExpired: h,
-    isInteractive: S,
+    isInteractive: I,
     isSent: p,
     reactions: O,
     selectedAnswerIds: m,
     submitting: E,
     tapShouldOpenVotersModal: w,
-    showResults: y
+    showResults: b
   }
 }
 
@@ -165,19 +165,19 @@ function P(e, t) {
   if (null == f) return;
   let _ = a.A.useReducedMotion,
     h = null == (s = u.A.getChannel(e.getChannelId())) || null == (n = s.getGuildId) ? true : n.call(s),
-    g = (0, y.T)(f, h),
-    A = d.answers,
-    v = d.layout_type,
-    I = w(e, t, {
+    g = (0, b.T)(f, h),
+    v = d.answers,
+    A = d.layout_type,
+    S = w(e, t, {
       formattedExpirationLabel: c
     });
-  if (null == I) return;
+  if (null == S) return;
   let {
     canTapAnswers: R,
     canRemoveVote: P,
     canShowVoteCounts: D,
     canSubmitVote: x,
-    expirationLabel: L = S.intl.string(S.t["e+J3JZ"]),
+    expirationLabel: L = I.intl.string(I.t["e+J3JZ"]),
     hasSelectedAnswer: j,
     hasVoted: M,
     isEditingVote: k,
@@ -188,13 +188,13 @@ function P(e, t) {
     submitting: B,
     tapShouldOpenVotersModal: H,
     showResults: Y
-  } = I, W = (0, E.aw)(V), K = S.intl.formatToPlainString(S.t.XRkuof, {
+  } = S, W = (0, E.aw)(V), K = I.intl.formatToPlainString(I.t.XRkuof, {
     count: W
-  }), z = Math.max(...A.map(e => {
+  }), z = Math.max(...v.map(e => {
     var t, n;
     let r = T(V, "".concat(e.answer_id));
     return null != (t = null == r || null == (n = r.count_details) ? true : n.vote) ? t : 0
-  })), q = A.map(e => {
+  })), q = v.map(e => {
     var t, n, a;
     let s = "".concat(e.answer_id),
       l = T(V, s),
@@ -227,7 +227,7 @@ function P(e, t) {
       style: h,
       shouldAnimateTransition: B && !_,
       votesPercentage: Math.round(100 * u),
-      votes: (0, r.YW)(v).with(i.Z.IMAGE_ONLY_ANSWERS, () => "(".concat(c.toLocaleString(), ")")).otherwise(() => S.intl.formatToPlainString(S.t.XRkuof, {
+      votes: (0, r.YW)(A).with(i.Z.IMAGE_ONLY_ANSWERS, () => "(".concat(c.toLocaleString(), ")")).otherwise(() => I.intl.formatToPlainString(I.t.XRkuof, {
         count: c
       }))
     }
@@ -246,14 +246,14 @@ function P(e, t) {
   }, () => true).with({
     isEditingVote: true
   }, () => ({
-    label: S.intl.string(S.t.JwkNU4),
+    label: I.intl.string(I.t.JwkNU4),
     presentation: "button",
     enabled: j,
     type: "submit"
   })).with({
     canRemoveVote: true
   }, () => ({
-    label: S.intl.string(S.t.XhQEh8),
+    label: I.intl.string(I.t.XhQEh8),
     presentation: "secondaryButton",
     enabled: true,
     type: "remove"
@@ -261,16 +261,16 @@ function P(e, t) {
     hasVoted: false,
     showResults: true
   }, () => ({
-    label: S.intl.string(S.t.gNj6In),
+    label: I.intl.string(I.t.gNj6In),
     presentation: "secondaryButton",
     enabled: true,
     type: "showVotes"
   })).otherwise(() => ({
-    label: S.intl.string(S.t.JwkNU4),
+    label: I.intl.string(I.t.JwkNU4),
     presentation: "button",
     enabled: x,
     type: "submit"
-  })), Z = (0, m.isIOS)() ? S.intl.string(S.t["PVATM/"]) : S.intl.string(S.t.cHfFql), Q = (0, r.YW)({
+  })), Z = (0, m.isIOS)() ? I.intl.string(I.t["PVATM/"]) : I.intl.string(I.t.cHfFql), Q = (0, r.YW)({
     isExpired: U,
     isInteractive: G,
     isEditingVote: k
@@ -278,13 +278,13 @@ function P(e, t) {
     isInteractive: false,
     isExpired: false
   }, () => ({
-    label: S.intl.string(S.t.trrip0),
+    label: I.intl.string(I.t.trrip0),
     presentation: "text",
     enabled: false
   })).with({
     isEditingVote: true
   }, () => ({
-    label: S.intl.string(S.t["ETE/oC"]),
+    label: I.intl.string(I.t["ETE/oC"]),
     presentation: "textButton",
     enabled: true,
     type: "cancel"
@@ -296,7 +296,7 @@ function P(e, t) {
     enabled: true,
     type: "showVoterDetails"
   })), $ = !G || U || M || Y ? true : {
-    label: S.intl.string(S.t["/KHAUF"]),
+    label: I.intl.string(I.t["/KHAUF"]),
     presentation: "textButton",
     enabled: true,
     type: "showVotes"
@@ -310,7 +310,7 @@ function P(e, t) {
     isExpired: true
   }, () => true).with({
     canSelectMultipleAnswers: true
-  }, () => S.intl.string(S.t.yCXvxa)).otherwise(() => S.intl.string(S.t["9Y2wKO"]));
+  }, () => I.intl.string(I.t.yCXvxa)).otherwise(() => I.intl.string(I.t["9Y2wKO"]));
   return {
     question: d.question,
     promptLabel: ee,
@@ -321,18 +321,18 @@ function P(e, t) {
       canSelectMultipleAnswers: J
     }).with({
       tapShouldOpenVotersModal: true
-    }, () => b.CQ.LIST).with({
+    }, () => y.CQ.LIST).with({
       canTapAnswers: false
-    }, () => b.CQ.LIST).with({
+    }, () => y.CQ.LIST).with({
       canSelectMultipleAnswers: false
-    }, () => b.CQ.RADIO_BUTTONS).with({
+    }, () => y.CQ.RADIO_BUTTONS).with({
       canSelectMultipleAnswers: true
-    }, () => b.CQ.CHECKBOXES).exhaustive(),
+    }, () => y.CQ.CHECKBOXES).exhaustive(),
     answerTapAccessibilityLabel: H ? Z : true,
-    layoutType: v,
+    layoutType: A,
     resources: (0, O.A)({
       theme: l,
-      layoutType: v
+      layoutType: A
     }),
     containerStyle: "normal",
     primaryAction: X,

@@ -2,11 +2,11 @@
 /** chunk id: 618231, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  kL: "_67f38c683ed801df",
-  Qs: "_3e279414f78d0bb6",
-  iU: "_6f33c5b6d66c154e",
-  Mf: "acaaaafe65da89d3",
-  xQ: "_80482951ba18c987",
-  PJ: "ce7d4290fd9eec83",
-  yl: "bc240a5598b336cc"
+  kL: "container__0ed20",
+  Qs: "content__0ed20",
+  iU: "message__0ed20",
+  Mf: "nestedAccessories__0ed20",
+  xQ: "footerContainer__0ed20",
+  PJ: "footerText__0ed20",
+  yl: "originIcon__0ed20"
 }

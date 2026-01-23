@@ -2,12 +2,12 @@
 /** chunk id: 933917, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  D: () => S
+  D: () => O
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  i = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk565645 = require("./565645.jsx"),
@@ -26,66 +26,66 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk529349 = require("./529349.js");
 
-function O(e) {
+function C(e) {
   let {
     className: t,
     sound: n,
-    playSound: a,
+    playSound: i,
     isPlaying: s,
     text: d
-  } = e, u = (null == n ? true : n.emojiId) != null || (null == n ? true : n.emojiName) != null, m = A.intl.formatToPlainString(A.t.tuMUJ2, {
+  } = e, u = (null == n ? true : n.emojiId) != null || (null == n ? true : n.emojiName) != null, m = y.intl.formatToPlainString(y.t.tuMUJ2, {
     emojiName: null == n ? true : n.emojiName,
     soundName: null == n ? true : n.name
   }), h = r.useCallback(() => {
-    x.default.track(p.HAw.MODERATOR_QUEUE_ACTION, {
-      guild_id: g.A.getGuildId(),
+    f.default.track(b.HAw.MODERATOR_QUEUE_ACTION, {
+      guild_id: x.A.getGuildId(),
       action: "airhorn"
-    }), null != a && a()
-  }, [a]);
-  return (0, l.jsxs)(c.DUT, {
+    }), null != i && i()
+  }, [i]);
+  return (0, l.jsxs)(o.DUT, {
     "aria-label": m,
     tag: "span",
     onClick: h,
-    className: i()(C.Ls, C.oR, {
-      [C.he]: true === s
+    className: a()(A.Ls, A.oR, {
+      [A.he]: true === s
     }, t),
-    children: [u && (0, l.jsx)(o.A, {
+    children: [u && (0, l.jsx)(c.A, {
       emojiId: null == n ? true : n.emojiId,
       emojiName: null == n ? true : n.emojiName,
-      className: C.JS
+      className: A.JS
     }), (0, l.jsx)("span", {
       children: " ".concat(d, " ")
     })]
   })
 }
 
-function N(e) {
+function T(e) {
   let {
     containerRef: t,
     text: n
-  } = e, a = r.useRef(null), i = (0, s.bG)([f.A], () => {
+  } = e, i = r.useRef(null), a = (0, s.bG)([g.A], () => {
     var e;
-    return null == (e = f.A.getSoundsForGuild(v.mV)) ? true : e.find(e => "airhorn" === e.name)
+    return null == (e = g.A.getSoundsForGuild(v.mV)) ? true : e.find(e => "airhorn" === e.name)
   }), {
-    createMultipleConfettiAt: c
-  } = r.useContext(m.x), o = (0, s.bG)([u.A], () => u.A.useReducedMotion), {
-    isPlaying: g,
-    playSound: x
-  } = (0, b.E)(i);
+    createMultipleConfettiAt: o
+  } = r.useContext(m.x), c = (0, s.bG)([u.A], () => u.A.useReducedMotion), {
+    isPlaying: x,
+    playSound: f
+  } = (0, p.E)(a);
   (0, d.Ay)(() => {
     (0, h.E7)()
   });
-  let p = r.useCallback(async () => {
-    if (await x()) {
+  let b = r.useCallback(async () => {
+    if (await f()) {
       var e;
-      if (null == (e = a.current) || e.addAnimation(), !o && (null == t ? true : t.current) != null) {
+      if (null == (e = i.current) || e.addAnimation(), !c && (null == t ? true : t.current) != null) {
         let e = t.current.getBoundingClientRect(),
           n = {
             x: e.left + e.width / 2,
             y: e.top + e.height / 3
           },
           l = j.uI[Math.floor(Math.random() * j.uI.length)];
-        c(n.x, n.y, {
+        o(n.x, n.y, {
           velocity: {
             type: "static-random",
             minValue: {
@@ -102,19 +102,19 @@ function N(e) {
         })
       }
     }
-  }, [x, c, o, t]);
-  return true === i ? null : (0, l.jsx)(O, {
-    sound: i,
-    playSound: p,
-    isPlaying: g,
+  }, [f, o, c, t]);
+  return true === a ? null : (0, l.jsx)(C, {
+    sound: a,
+    playSound: b,
+    isPlaying: x,
     text: n
   })
 }
 
-function S() {
+function O() {
   let e = r.useRef(null);
-  return (0, l.jsxs)(c.BJc, {
-    className: C.kL,
+  return (0, l.jsxs)(o.BJc, {
+    className: A.kL,
     direction: "vertical",
     align: "center",
     justify: "center",
@@ -123,24 +123,24 @@ function S() {
       bottom: 24
     },
     ref: e,
-    children: [(0, l.jsx)(c._vT, {
+    children: [(0, l.jsx)(o._vT, {
       size: "custom",
       width: 48,
       height: 48
-    }), (0, l.jsxs)(c.BJc, {
+    }), (0, l.jsxs)(o.BJc, {
       direction: "vertical",
       align: "center",
       justify: "center",
-      children: [(0, l.jsx)(c.Heading, {
-        className: C.wx,
+      children: [(0, l.jsx)(o.Heading, {
+        className: A.wx,
         variant: "heading-md/medium",
-        children: A.intl.string(y.default.h6QNky)
-      }), (0, l.jsx)(c.Text, {
-        className: C.Qq,
+        children: y.intl.string(_.default.h6QNky)
+      }), (0, l.jsx)(o.Text, {
+        className: A.Qq,
         variant: "text-md/medium",
         color: "text-subtle",
-        children: A.intl.format(y.default["8N4c58"], {
-          airhornHook: t => (0, l.jsx)(N, {
+        children: y.intl.format(_.default["8N4c58"], {
+          airhornHook: t => (0, l.jsx)(T, {
             containerRef: e,
             text: t
           })

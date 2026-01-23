@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 383470, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => f
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,21 +14,21 @@ var Chunk627968 = require("./627968.js"),
   Chunk599907 = require("./599907.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk27740 = require("./27740.js");
-let h = {
+let g = {
   page: Chunk652215.liQ.GUILD_DISCOVERY,
   object: Chunk652215.ZSU.CARD,
   section: Chunk652215.JJy.DISCOVER_POPULAR
 };
 
-function A(e) {
+function f(e) {
   let {
     tab: t,
     guildIds: n,
     loading: p,
-    onScroll: A,
-    onGuildCardClick: g,
-    onGuildCardSeen: m
-  } = e, b = (0, u.kc)(t), _ = (0, u.Ot)(t), E = (0, u.UW)(t), O = (0, u.Ub)(t), y = i.useMemo(() => {
+    onScroll: f,
+    onGuildCardClick: m,
+    onGuildCardSeen: A
+  } = e, _ = (0, u.kc)(t), b = (0, u.Ot)(t), E = (0, u.UW)(t), O = (0, u.Ub)(t), y = i.useMemo(() => {
     let e = p ? 30 : n.length,
       t = [];
     for (let a = 0; a < e; a++) {
@@ -36,26 +36,26 @@ function A(e) {
       t.push((0, r.jsx)(d.jO, {
         guildId: null != (i = n[a]) ? i : null,
         index: a,
-        onClick: e => g(e, a, O, h),
-        onView: e => m(e, O)
+        onClick: e => m(e, a, O, g),
+        onView: e => A(e, O)
       }, null != (l = n[a]) ? l : a))
     }
     return t
-  }, [O, n, p, g, m]);
+  }, [O, n, p, m, A]);
   return (0, r.jsxs)(c.A, {
-    onScroll: A,
+    onScroll: f,
     children: [(0, r.jsx)(s.A, {
-      title: b,
-      description: _,
+      title: _,
+      description: b,
       children: (0, r.jsx)(a.A, {})
     }), (0, r.jsxs)(o.A, {
       children: [(0, r.jsx)(l.Heading, {
-        className: f.G,
+        className: h.G,
         variant: "heading-lg/semibold",
         color: "text-strong",
         children: E
       }), (0, r.jsx)("div", {
-        className: f.Q,
+        className: h.Q,
         children: y
       })]
     })]

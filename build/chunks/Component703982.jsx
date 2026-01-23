@@ -2,7 +2,7 @@
 /** chunk id: 703982, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -56,15 +56,15 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = function(e) {
+let y = function(e) {
   let {
     isVisible: t,
     premiumSubscription: i,
     churnDiscountOffer: h,
     discountedPrice: g
   } = e, {
-    analyticsLocations: b
-  } = (0, c.Ay)(l.A.CHURN_DISCOUNT_PERSISTENT_CTA), y = (0, o.zhh)({
+    analyticsLocations: y
+  } = (0, c.Ay)(l.A.CHURN_DISCOUNT_PERSISTENT_CTA), b = (0, o.zhh)({
     transform: t ? "translateY(-100%)" : "translateY(0%)",
     opacity: +!!t,
     config: {
@@ -78,7 +78,7 @@ let b = function(e) {
       } = await n.e("72820").then(n.bind(n, 281439));
       return t => (0, r.jsx)(e, E(m({}, t), {
         premiumSubscription: i,
-        analyticsLocations: b,
+        analyticsLocations: y,
         initialStep: d.g.CONFIRM_DISCOUNT
       }))
     })
@@ -87,7 +87,7 @@ let b = function(e) {
     className: a()(p.iE, {
       [p.q4]: !t
     }),
-    style: y,
+    style: b,
     children: (0, r.jsxs)("div", {
       className: p.iJ,
       children: [(0, r.jsx)("img", {

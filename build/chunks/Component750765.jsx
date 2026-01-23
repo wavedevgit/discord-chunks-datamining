@@ -28,16 +28,16 @@ function g(e) {
     appContext: g,
     onInteraction: E
   } = e, {
-    analyticsLocations: b
-  } = (0, c.Ay)(), y = (0, s.bG)([d.default], () => {
+    analyticsLocations: y
+  } = (0, c.Ay)(), b = (0, s.bG)([d.default], () => {
     let e = d.default.getCurrentUser();
     return a()(null != e, "VideoDeviceMenu: currentUser cannot be undefined"), e
   }), O = (0, u.H)({
     deviceType: h.oh.VIDEO_INPUT,
-    analyticsLocations: b,
+    analyticsLocations: y,
     showAllDevices: true,
     asSubmenu: i
-  }), A = (0, f.A)(y.id, g), v = (0, p.A)(g);
+  }), v = (0, f.A)(b.id, g), A = (0, p.A)(g);
   return (0, r.jsx)(l.A, {
     object: _.ZSU.CONTEXT_MENU,
     children: (0, r.jsxs)(o.W1t, {
@@ -48,7 +48,7 @@ function g(e) {
       onSelect: n,
       onInteraction: E,
       children: [O, (0, r.jsxs)(o.rXV, {
-        children: [A, i ? v : null]
+        children: [v, i ? A : null]
       })]
     })
   })

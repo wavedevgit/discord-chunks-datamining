@@ -19,57 +19,57 @@ let u = e => {
     onClose: b
   } = e, f = l.useCallback(() => {
     b()
-  }, [b]), p = t.nsfwAllowed, [j, y] = l.useState(false), [x, g] = l.useState(false), O = l.useCallback(() => {
-    g(true), y(false)
+  }, [b]), p = t.nsfwAllowed, [j, y] = l.useState(false), [g, x] = l.useState(false), h = l.useCallback(() => {
+    x(true), y(false)
   }, []), {
-    disconnectLinkRequest: h,
+    disconnectLinkRequest: O,
     isDisconnectLoading: m
   } = (0, s.A)({
     onSuccess: f,
-    onError: O
+    onError: h
   });
-  return (0, n.jsxs)(c.dWK, {
+  return (0, n.jsxs)(o.dWK, {
     transitionState: u,
     onClose: b,
-    children: [x && (0, n.jsx)(c.wx6, {
+    children: [g && (0, n.jsx)(o.wx6, {
       type: "critical",
-      children: o.intl.string(i.default.krIDdy)
-    }), (0, n.jsxs)(c.cwr, {
-      children: [(0, n.jsx)(a.A.Header, {
+      children: a.intl.string(c.default.krIDdy)
+    }), (0, n.jsxs)(o.cwr, {
+      children: [(0, n.jsx)(i.A.Header, {
         currentUser: t,
         otherUser: r,
-        header: o.intl.formatToPlainString(i.default["NMSTb/"], {
+        header: a.intl.formatToPlainString(c.default["NMSTb/"], {
           isAdult: String(p)
         }),
-        icon: (0, n.jsx)(c.PGe, {
+        icon: (0, n.jsx)(o.PGe, {
           size: "md",
           color: "currentColor",
           className: d.ut
         })
-      }), (0, n.jsxs)(c.BJc, {
+      }), (0, n.jsxs)(o.BJc, {
         gap: 16,
-        children: [(0, n.jsx)(a.A.Notice, {
-          notice: p ? o.intl.string(i.default.EvMGLT) : o.intl.string(i.default.f1SUeW)
-        }), (0, n.jsx)(c.Checkbox, {
+        children: [(0, n.jsx)(i.A.Notice, {
+          notice: p ? a.intl.string(c.default.EvMGLT) : a.intl.string(c.default.f1SUeW)
+        }), (0, n.jsx)(o.Checkbox, {
           checked: j,
           onChange: e => {
-            y(e), g(false)
+            y(e), x(false)
           },
-          label: p ? o.intl.string(i.default["/MYCee"]) : o.intl.string(i.default.VJaHUb)
+          label: p ? a.intl.string(c.default["/MYCee"]) : a.intl.string(c.default.VJaHUb)
         })]
       })]
-    }), (0, n.jsx)(c.H7u, {
+    }), (0, n.jsx)(o.H7u, {
       actionsFullWidth: true,
       actions: [{
         variant: "secondary",
-        text: o.intl.string(o.t["ETE/oC"]),
+        text: a.intl.string(a.t["ETE/oC"]),
         onClick: b,
         disabled: m
       }, {
         variant: "critical-primary",
-        text: o.intl.string(i.default["c5L+sl"]),
+        text: a.intl.string(c.default["c5L+sl"]),
         onClick: () => {
-          g(false), h(r.id)
+          x(false), O(r.id)
         },
         disabled: !j || m,
         loading: m

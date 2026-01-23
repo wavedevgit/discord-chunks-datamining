@@ -68,9 +68,9 @@ let g = new Chunk626584.A("VoiceFilterStore"),
     limitedTimeVoices: true,
     error: null
   },
-  b = null;
+  y = null;
 
-function y() {
+function b() {
   return (null === l.A || true === l.A ? true : l.A.remoteApp.getVersion()) === "0.0.0"
 }
 
@@ -78,7 +78,7 @@ function O(e) {
   return e.available ? 0 : e.temporarilyAvailable ? 1 : 2
 }
 
-function A(e) {
+function v(e) {
   if (null != e) {
     let t = new Date,
       n = new Date(e.current_set_start),
@@ -100,25 +100,25 @@ function A(e) {
   }
 }
 
-function v(e) {
+function A(e) {
   null == E.limitedTimeVoices ? g.warn("No limited time voices available to update") : (E.limitedTimeVoices.current_set_end = e.toISOString(), E.limitedTimeVoices.next_set_start = e.toISOString(), E.limitedTimeVoices.next_set_end = (0, i.default)(e, 2).toISOString(), N())
 }
 
-function S(e) {
+function I(e) {
   return Object.entries(e).sort((e, t) => O(e[1]) - O(t[1])).map(e => {
     let [t] = e;
     return t
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     catalog: t,
     initialModelState: n
-  } = e, r = y();
+  } = e, r = b();
   E.catalogFetchFailed = false, E.models = t.models, E.limitedTimeVoices = t.limited_time_voices;
   let i = {},
-    a = A(E.limitedTimeVoices);
+    a = v(E.limitedTimeVoices);
   if (E.catalogUpdateTime = a.catalogUpdateTime, r)
     for (let e of Object.keys(d.y)) i[e] = h(p({}, d.y[e]), {
       id: e,
@@ -136,7 +136,7 @@ function I(e) {
     available: !!r || s,
     temporarilyAvailable: a.currentSet.includes(e)
   }));
-  E.voiceFilters = i, E.sortedVoiceFilters = S(E.voiceFilters), E.catalogLastFetchTime = new Date, null != n && (Object.keys(E.modelState).length > 0 ? E.modelState = n : g.warn("Attempted to replace existing model state with initial model state"))
+  E.voiceFilters = i, E.sortedVoiceFilters = I(E.voiceFilters), E.catalogLastFetchTime = new Date, null != n && (Object.keys(E.modelState).length > 0 ? E.modelState = n : g.warn("Attempted to replace existing model state with initial model state"))
 }
 
 function T() {
@@ -202,15 +202,15 @@ class C extends(r = Chunk311907.Ay.Store) {
     return E.error
   }
   getLastReportedLagTimestamp() {
-    return b
+    return y
   }
 }
 
 function N() {
-  let e = A(E.limitedTimeVoices);
+  let e = v(E.limitedTimeVoices);
   E.catalogUpdateTime = e.catalogUpdateTime, Object.keys(E.voiceFilters).forEach(t => {
     E.voiceFilters[t].temporarilyAvailable = e.currentSet.includes(t)
-  }), E.sortedVoiceFilters = S(E.voiceFilters)
+  }), E.sortedVoiceFilters = I(E.voiceFilters)
 }
 
 function R(e) {
@@ -260,7 +260,7 @@ function x(e) {
   let {
     timeInSeconds: t
   } = e;
-  v((0, a.A)(new Date, t))
+  A((0, a.A)(new Date, t))
 }
 
 function L(e) {
@@ -276,7 +276,7 @@ function M() {
 }
 
 function k() {
-  b = Date.now()
+  y = Date.now()
 }
 f(C, "displayName", "VoiceFilterStore");
 let U = new C(Chunk73153.h, {
@@ -284,7 +284,7 @@ let U = new C(Chunk73153.h, {
   VOICE_FILTER_DOWNLOAD_PROGRESS: w,
   VOICE_FILTER_DOWNLOAD_FAILED: P,
   VOICE_FILTER_FILE_READY: D,
-  VOICE_FILTER_CATALOG_FETCH_SUCCESS: I,
+  VOICE_FILTER_CATALOG_FETCH_SUCCESS: S,
   VOICE_FILTER_CATALOG_FETCH_FAILED: T,
   VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES: N,
   VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME: x,

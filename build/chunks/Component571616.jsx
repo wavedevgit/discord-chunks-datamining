@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 571616, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,24 +16,24 @@ var Chunk793574 = require("./793574.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk664795 = require("./664795.js");
 
-function h(e) {
+function g(e) {
   let {
     guild: t,
     markAsDismissed: n
-  } = e, h = (0, o.Os)(t, c.TVA.TIER_2), {
-    analyticsLocations: A
+  } = e, g = (0, o.Os)(t, c.TVA.TIER_2), {
+    analyticsLocations: f
   } = (0, l.Ay)(i.A.GUILD_BANNER_NOTICE);
   return (0, r.jsx)(a.A, {
     guild: t,
     onDismissed: () => n(u.i.UNKNOWN),
     cta: p.intl.string(p.t.oPAx73),
     message: p.intl.format(p.t.AcaNYw, {
-      boostsNeeded: h
+      boostsNeeded: g
     }),
     type: c.n5X.GUILD_BANNER,
-    image: f,
+    image: h,
     onClick: () => (0, s.A)({
-      analyticsLocations: A,
+      analyticsLocations: f,
       analyticsSourceLocation: {
         section: c.JJy.CHANNEL_NOTICE,
         object: c.ZSU.SERVER_BANNER_TOOLTIP

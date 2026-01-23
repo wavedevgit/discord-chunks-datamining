@@ -5,10 +5,10 @@ require.d(exports, {
   AV: () => T,
   NP: () => O,
   TC: () => E,
-  Tn: () => I,
-  XQ: () => y,
+  Tn: () => S,
+  XQ: () => b,
   sL: () => R,
-  yA: () => A,
+  yA: () => v,
   z8: () => w
 }), require("./65821.js");
 var Chunk311907 = require("./311907.js"),
@@ -32,26 +32,26 @@ function E() {
   return !!c.isPlatformEmbedded && null != (e = d.Ay.IsSystemServiceInstalled()) && e
 }
 
-function b() {
+function y() {
   return !!c.isPlatformEmbedded && true === d.Ay.CanSystemServiceBeInstalled()
 }
 
-function y() {
+function b() {
   var e;
   return !!c.isPlatformEmbedded && null != (e = d.Ay.CanSystemServiceBeInstalled()) && e
 }
 
 function O() {
   let e = (0, r.bG)([o.Ay], () => o.Ay.canShowAdminWarning),
-    t = y();
+    t = b();
   return !!c.isPlatformEmbedded && e && !E() && t
 }
 
-function A(e) {
-  return !!c.isPlatformEmbedded && e.canShowAdminWarning && !E() && b()
+function v(e) {
+  return !!c.isPlatformEmbedded && e.canShowAdminWarning && !E() && y()
 }
 
-function v(e, t, n) {
+function A(e, t, n) {
   (0, f.H)(e, t), "running" === t.state ? (h.info("".concat(e, " initialized.")), l.default.track(p.HAw.SYSTEM_SERVICE_INITIALIZE_ATTEMPTED, {
     success: true,
     source: n,
@@ -63,16 +63,16 @@ function v(e, t, n) {
   }))
 }
 
-function S(e) {
+function I(e) {
   c.isPlatformEmbedded && (d.Ay.InputEventServiceSetStatusCallback(t => {
-    v("input-service", t, e)
+    A("input-service", t, e)
   }), d.Ay.InputEventServiceSetAllowed(true), d.Ay.ToolServiceSetStatusCallback(t => {
-    v("tool-service", t, e)
+    A("tool-service", t, e)
   }), d.Ay.ToolServiceSetAllowed(true))
 }
-async function I(e) {
+async function S(e) {
   if (c.isPlatformEmbedded && E()) try {
-    await d.Ay.DoesSystemServiceHaveUpdate() && await d.Ay.UpdateSystemService(), S(e)
+    await d.Ay.DoesSystemServiceHaveUpdate() && await d.Ay.UpdateSystemService(), I(e)
   } catch (e) {
     throw u.A.captureMessage("Error during system service initialization", {
       extra: {
@@ -116,7 +116,7 @@ async function R(e) {
     await d.Ay.InstallSystemService(), h.info("System service installed."), l.default.track(p.HAw.SYSTEM_SERVICE_INSTALL_ATTEMPTED, {
       success: true,
       source: e
-    }), N((0, i.createToast)(_.intl.string(_.t.kQnWby), i.ToastType.SUCCESS), t), S("after-install")
+    }), N((0, i.createToast)(_.intl.string(_.t.kQnWby), i.ToastType.SUCCESS), t), I("after-install")
   } catch (r) {
     let n = C(r);
     if (null == n && r instanceof Error) {

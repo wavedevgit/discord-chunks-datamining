@@ -12,7 +12,7 @@ var Chunk975975 = require("./975975.js"),
   Chunk403362 = require("./403362.js"),
   Chunk381941 = require("./381941.js");
 let d = async (e, t, r) => {
-  let n = c.A.getChannel(r);
+  let n = i.A.getChannel(r);
   if (null == n) throw Error("Unable to find destination channel for message");
   let a = o.Ay.parse(n, t);
   return l.A.sendMessage(n.id, a, false, {
@@ -21,6 +21,6 @@ let d = async (e, t, r) => {
     sharedCustomTheme: e
   })
 }, f = async (e, t, r) => {
-  let n = (await Promise.all(e.map(s.pk))).filter(i.Vq);
+  let n = (await Promise.all(e.map(s.pk))).filter(c.Vq);
   return a()(n.map(async e => d(t, r, e)))
 }

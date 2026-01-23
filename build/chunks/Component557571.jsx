@@ -4,7 +4,7 @@
 require.d(exports, {
   YQ: () => g,
   lV: () => O,
-  xq: () => b,
+  xq: () => y,
   y0: () => E
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -109,16 +109,16 @@ let m = {
     }))
   }), e)),
   E = Chunk64700.createContext(null),
-  b = e => {
+  y = e => {
     let {
       children: t
-    } = e, n = y();
+    } = e, n = b();
     return (0, r.jsx)(E.Provider, {
       value: n,
       children: t
     })
   },
-  y = () => {
+  b = () => {
     let e = (0, d.L)(),
       [t] = (0, i.useState)(() => g({
         install: c.u,
@@ -134,7 +134,7 @@ let m = {
 
 function O(e) {
   let t = (0, i.useContext)(E),
-    n = y(),
+    n = b(),
     r = null != t ? t : n;
   return null != e ? (0, s.P)(r, e) : (0, s.P)(r)
 }

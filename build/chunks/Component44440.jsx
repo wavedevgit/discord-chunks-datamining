@@ -1,8 +1,8 @@
 /** Chunk was on 21738 **/
 /** chunk id: 44440, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g,
-  j: () => h
+  A: () => m,
+  j: () => g
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk931222 = require("./931222.js"),
   Chunk503330 = require("./503330.js");
 
-function h(e) {
+function g(e) {
   let {
     categoryId: t,
     loadId: n
@@ -31,46 +31,46 @@ function h(e) {
   })
 }
 
-function A(e) {
+function f(e) {
   let {
     loadId: t,
     categoryId: n,
     count: l
   } = e, c = i.useCallback(() => {
-    h({
+    g({
       categoryId: n,
       loadId: t
     })
-  }, [n, t]), p = u.A.useField("categoryId") === n, A = l.toLocaleString(o.default.locale), g = (0, d.r)({
+  }, [n, t]), p = u.A.useField("categoryId") === n, f = l.toLocaleString(o.default.locale), m = (0, d.r)({
     categoryId: n
   });
   return (0, r.jsxs)(s.DUT, {
     onClick: c,
-    className: a()(f.L1, {
-      [f.wH]: p
+    className: a()(h.L1, {
+      [h.wH]: p
     }),
     children: [(0, r.jsx)(s.Text, {
-      className: f.UU,
+      className: h.UU,
       variant: "text-sm/medium",
       color: "text-strong",
-      children: g
+      children: m
     }), (0, r.jsx)(s.Text, {
-      className: f.U9,
+      className: h.U9,
       variant: "text-sm/normal",
       color: "text-muted",
-      children: A
+      children: f
     })]
   })
 }
-let g = function(e) {
+let m = function(e) {
   let {
     loadId: t
   } = e, n = (0, p.L)();
   return null == n ? null : (0, r.jsx)("div", {
-    className: f.LZ,
+    className: h.LZ,
     children: n.map(e => {
       let [n, i] = e;
-      return (0, r.jsx)(A, {
+      return (0, r.jsx)(f, {
         loadId: t,
         categoryId: n,
         count: i

@@ -25,16 +25,16 @@ let h = Chunk64700.memo(function(e) {
     url: m,
     format: g,
     className: E
-  } = e, [b, y] = i.useState(false), O = (0, u.km)((0, c.xo)(m)), A = O ? p.intl.string(p.t["5/NS74"]) : p.intl.string(p.t.nIH0v8), v = O ? l.Gg5 : l.yA2;
+  } = e, [y, b] = i.useState(false), O = (0, u.km)((0, c.xo)(m)), v = O ? p.intl.string(p.t["5/NS74"]) : p.intl.string(p.t.nIH0v8), A = O ? l.Gg5 : l.yA2;
   i.useEffect(() => {
-    if (!b) return;
+    if (!y) return;
     let e = setTimeout(() => {
-      y(false)
+      b(false)
     }, 500);
     return () => clearTimeout(e)
-  }, [b]);
-  let S = e => {
-    e.preventDefault(), e.stopPropagation(), y(true), O ? (0, c.Tr)(m) : ((0, c.wg)({
+  }, [y]);
+  let I = e => {
+    e.preventDefault(), e.stopPropagation(), b(true), O ? (0, c.Tr)(m) : ((0, c.wg)({
       url: m,
       src: a,
       gifSrc: h,
@@ -44,17 +44,17 @@ let h = Chunk64700.memo(function(e) {
     }), d._.dispatch(f.jej.FAVORITE_GIF))
   };
   return (0, r.jsx)(o.m, {
-    text: A,
+    text: v,
     children: (0, r.jsx)(l.sqX, {
-      "aria-label": A,
+      "aria-label": v,
       className: s()(E, _.jj, {
         [_.wH]: O,
-        [_.TV]: b
+        [_.TV]: y
       }),
       onMouseDown: e => e.preventDefault(),
-      onClick: S,
+      onClick: I,
       onDoubleClick: e => e.preventDefault(),
-      children: (0, r.jsx)(v, {
+      children: (0, r.jsx)(A, {
         color: "currentColor",
         className: _.Kk,
         size: "custom",

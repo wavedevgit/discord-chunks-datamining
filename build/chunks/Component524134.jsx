@@ -49,33 +49,33 @@ function O() {
   let {
     action: e,
     theme: t
-  } = (0, r.cf)([g.A, b.A], () => ({
-    action: g.A.getAction(),
-    theme: b.A.theme
-  })), O = v.A.getVerificationTypes(e), [E, N] = l.useState(0), T = (0, m.A)(O);
+  } = (0, i.cf)([b.A, f.A], () => ({
+    action: b.A.getAction(),
+    theme: f.A.theme
+  })), O = v.A.getVerificationTypes(e), [E, T] = l.useState(0), N = (0, m.A)(O);
   (0, h.A)({
-    type: i.ImpressionTypes.MODAL,
-    name: i.ImpressionNames.USER_ACTION_REQUIRED,
+    type: r.ImpressionTypes.MODAL,
+    name: r.ImpressionNames.USER_ACTION_REQUIRED,
     properties: {
       verification_type: O[0],
       verification_types: O
     }
   }, {}, [O.toString()]);
-  let I = () => {
+  let w = () => {
     (0, u.Cw)(), (0, o.mMO)(async () => {
       let {
         default: e
       } = await n.e("95988").then(n.bind(n, 946815));
       return t => (0, a.jsx)(e, S({}, t))
     }, {
-      modalKey: y.H1,
-      Layer: f.Ay
+      modalKey: _.H1,
+      Layer: x.Ay
     })
   };
   return l.useEffect(() => (p.A.disable(), () => {
     p.A.enable()
   }), []), l.useEffect(() => {
-    (null == T ? true : T[0]) === _.Fz7.PHONE && (null == O ? true : O[0]) === _.Fz7.EMAIL && (0, o.mMO)(async () => {
+    (null == N ? true : N[0]) === y.Fz7.PHONE && (null == O ? true : O[0]) === y.Fz7.EMAIL && (0, o.mMO)(async () => {
       let {
         default: e
       } = await n.e("10919").then(n.bind(n, 556506));
@@ -97,38 +97,38 @@ function O() {
         }), n))
       }
     }, {
-      modalKey: y.Pr,
-      Layer: f.Ay,
-      onCloseCallback: I
+      modalKey: _.Pr,
+      Layer: x.Ay,
+      onCloseCallback: w
     })
-  }, [O, T]), (0, a.jsx)(j.A, {
+  }, [O, N]), (0, a.jsx)(j.A, {
     types: O,
     captchaKey: E,
     onCaptchaVerify: e => {
       s.Bo.post({
-        url: _.Rsh.CAPTCHA,
+        url: y.Rsh.CAPTCHA,
         body: {
           captcha_key: e
         },
         oldFormErrors: true,
         rejectWithError: true
       }).then(d.jH, () => {
-        N(e => e + 1)
+        T(e => e + 1)
       })
     },
     theme: t,
     onClick: e => {
-      e === _.Fz7.EMAIL_OR_PHONE || e === _.Fz7.EMAIL || e === _.Fz7.REVERIFY_EMAIL ? I() : (0, o.mMO)(async () => {
+      e === y.Fz7.EMAIL_OR_PHONE || e === y.Fz7.EMAIL || e === y.Fz7.REVERIFY_EMAIL ? w() : (0, o.mMO)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 615715));
         return t => (0, a.jsx)(e, S({
-          layerContext: f.OH,
-          reason: x.d.USER_ACTION_REQUIRED
+          layerContext: x.OH,
+          reason: g.d.USER_ACTION_REQUIRED
         }, t))
       }, {
         modalKey: A.V,
-        Layer: f.Ay
+        Layer: x.Ay
       })
     },
     onLogout: () => {
@@ -144,7 +144,7 @@ function O() {
           onConfirm: () => c.A.logout("verification")
         }, t))
       }, {
-        Layer: f.Ay
+        Layer: x.Ay
       })
     }
   })

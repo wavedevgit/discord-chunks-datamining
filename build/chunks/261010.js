@@ -16,8 +16,8 @@ var Chunk739595 = require("./739595.js"),
   m = Chunk731214(Chunk739595),
   g = Chunk731214(Chunk585022),
   E = Chunk731214(Chunk546809),
-  b = Chunk731214(Chunk34524),
-  y = Chunk731214(Chunk538826),
+  y = Chunk731214(Chunk34524),
+  b = Chunk731214(Chunk538826),
   O = Chunk514119;
 (Chunk739595 && O(new Chunk739595(new ArrayBuffer(1))) != h || Chunk585022 && O(new Chunk585022) != u || Chunk546809 && O(Chunk546809.resolve()) != f || Chunk34524 && O(new Chunk34524) != p || Chunk538826 && O(new Chunk538826) != _) && (O = function(e) {
   var t = l(e),
@@ -30,9 +30,9 @@ var Chunk739595 = require("./739595.js"),
       return u;
     case E:
       return f;
-    case b:
-      return p;
     case y:
+      return p;
+    case b:
       return _
   }
   return t

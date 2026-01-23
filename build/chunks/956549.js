@@ -78,12 +78,12 @@ async function h(e) {
     customId: m,
     inviterUserId: g,
     onConfirmActivityLaunchChecksAlertOpen: E
-  } = e, b = (0, c.A)(), y = i.default.getCurrentUser();
-  return null != a && null != r.A.getChannel(a) && null != y && null != t && (s.MJ(t.id), await (0, o.su)({
+  } = e, y = (0, c.A)(), b = i.default.getCurrentUser();
+  return null != a && null != r.A.getChannel(a) && null != b && null != t && (s.MJ(t.id), await (0, o.su)({
     channelId: a,
     applicationId: t.id,
     isStart: true,
-    embeddedActivitiesManager: b,
+    embeddedActivitiesManager: y,
     componentId: u,
     commandOrigin: d,
     sectionName: f,

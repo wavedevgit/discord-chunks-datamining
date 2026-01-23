@@ -41,11 +41,11 @@ class j extends Chunk64700.PureComponent {
   createSound() {
     let {
       soundpack: e
-    } = this.props, t = (0, g.aN)("discodo", e);
+    } = this.props, t = (0, m.aN)("discodo", e);
     return t.volume = 1, t
   }
   componentDidMount() {
-    this.setProblemsTimeout(), this.props.connected && (0, b.D)()
+    this.setProblemsTimeout(), this.props.connected && (0, _.D)()
   }
   componentDidUpdate(e, t) {
     let {
@@ -56,7 +56,7 @@ class j extends Chunk64700.PureComponent {
       connected: l,
       soundpack: a
     } = this.props, s = l && n && !r && !i;
-    e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== l || s ? (l && (0, b.D)(), l && null != this.videoRef && u.w.get(S.wqg) && this._connectedSound.play(), this.setState({
+    e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== l || s ? (l && (0, _.D)(), l && null != this.videoRef && u.w.get(S.wqg) && this._connectedSound.play(), this.setState({
       problems: false,
       hide: l
     })) : t.hide !== r ? (r ? this.clearProblemsTimeout() : this.setProblemsTimeout(), this.setState({
@@ -200,9 +200,9 @@ class j extends Chunk64700.PureComponent {
           className: N.P
         }, t)
       })];
-      return _.default.locale.startsWith("en-") && e.push(C.intl.string(C.t.dQ9Wqk)), e[o().random(e.length - 1)]
+      return b.default.locale.startsWith("en-") && e.push(C.intl.string(C.t.dQ9Wqk)), e[o().random(e.length - 1)]
     }()), T(this, "_eventLoadingText", function() {
-      let e = A.A.getLoadingTips();
+      let e = f.A.getLoadingTips();
       if (null != e && e.length > 0) return e[o().random(e.length - 1)]
     }()), T(this, "handleReady", () => {
       this.setState({
@@ -229,11 +229,11 @@ class j extends Chunk64700.PureComponent {
   }
 }
 let x = Chunk311907.Ay.connectStores([Chunk142120.A, Chunk437959.A, Chunk312671.A, Chunk775602.A], () => ({
-  isTryingToConnect: h.A.isTryingToConnect(),
-  connected: h.A.isConnected(),
+  isTryingToConnect: g.A.isTryingToConnect(),
+  connected: g.A.isConnected(),
   incident: E.A.getIncident(),
-  soundpack: m.A.getSoundpack(),
-  reducedMotion: f.A.useReducedMotion
+  soundpack: A.A.getSoundpack(),
+  reducedMotion: h.A.useReducedMotion
 }))(e => {
   let {
     isTryingToConnect: t,

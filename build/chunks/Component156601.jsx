@@ -26,23 +26,23 @@ let _ = function(e) {
     priceOptions: m,
     isApplicationHome: g,
     enablePremiumBrandRefresh: E
-  } = e, b = (0, s.bG)([u.A], () => u.A.isLoadedForSKUs([t])), y = (0, o.qB)((0, c.Ay)());
-  if (!b) return (0, r.jsx)(l.y$y, {
+  } = e, y = (0, s.bG)([u.A], () => u.A.isLoadedForSKUs([t])), b = (0, o.qB)((0, c.Ay)());
+  if (!y) return (0, r.jsx)(l.y$y, {
     type: l.y$y.Type.PULSING_ELLIPSIS,
     className: p.xB
   });
   let O = u.A.getForSkuAndInterval((0, d.mH)(t), n),
-    A = null != O ? (0, d.sS)(O, m, false, _) : null;
+    v = null != O ? (0, d.sS)(O, m, false, _) : null;
   if (E) {
     let e = n === f.WT.YEAR,
-      t = e ? "text-muted" : y ? "text-strong" : "always-white";
+      t = e ? "text-muted" : b ? "text-strong" : "always-white";
     return (0, r.jsxs)("div", {
       children: [(0, r.jsx)(l.Text, {
         variant: e ? "heading-md/semibold" : "heading-xxl/extrabold",
         color: t,
         tag: "span",
         children: (0, r.jsx)("span", {
-          children: A
+          children: v
         })
       }), (0, r.jsxs)(l.Text, {
         variant: "text-xs/medium",
@@ -59,7 +59,7 @@ let _ = function(e) {
     children: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("span", {
         className: g ? true : p.q9,
-        children: A
+        children: v
       }), " / ", (0, d.FJ)(n)]
     })
   })

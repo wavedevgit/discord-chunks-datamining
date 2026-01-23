@@ -3,7 +3,7 @@
 "use strict";
 require.r(exports), require.d(exports, {
   enable: () => C,
-  isNotSupported: () => I,
+  isNotSupported: () => S,
   trackToggleSelfDeaf: () => R,
   trackToggleSelfMute: () => N
 });
@@ -25,7 +25,7 @@ var Chunk421380 = require("./421380.js"),
   Chunk765682 = require("./765682.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,14 +34,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -58,30 +58,30 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = new Chunk626584.A("AudioActionCreators");
+let A = new Chunk626584.A("AudioActionCreators");
 
-function S() {
+function I() {
   (0, a.mMO)(async () => {
     let {
       default: e
     } = await Promise.all([n.e("56423"), n.e("25280")]).then(n.bind(n, 987482));
-    return t => (0, r.jsx)(e, y({
+    return t => (0, r.jsx)(e, b({
       source: "Unsupported Browser"
     }, t))
   })
 }
 
-function I() {
-  return !c.A.isSupported() && ((0, a.qfG)(e => (0, r.jsx)(a.VoidConfirmModal, A(y({
+function S() {
+  return !c.A.isSupported() && ((0, a.qfG)(e => (0, r.jsx)(a.VoidConfirmModal, v(b({
     header: E.intl.string(E.t.ilMTy0),
     confirmText: E.intl.string(E.t["BK8LK+"]),
     cancelText: E.intl.string(E.t["ETE/oC"]),
-    onConfirm: S,
+    onConfirm: I,
     confirmButtonColor: i.$n.Colors.BRAND
   }, e), {
     children: (0, r.jsx)(a.Text, {
@@ -100,7 +100,7 @@ function T(e) {
 
 function C() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-  return I() ? Promise.resolve(false) : (p.default.track(m.HAw.PERMISSIONS_REQUESTED, {
+  return S() ? Promise.resolve(false) : (p.default.track(m.HAw.PERMISSIONS_REQUESTED, {
     type: "audio"
   }), c.A.getMediaEngine().enable().then(() => {
     s.h.dispatch({
@@ -120,7 +120,7 @@ function C() {
         T(g.hL.DISMISSED);
         break;
       default:
-        T(g.hL.ERROR), v.warn("unknown getUserMedia error: ".concat(e))
+        T(g.hL.ERROR), A.warn("unknown getUserMedia error: ".concat(e))
     }
   }).then(() => true))
 }

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Ay: () => ec,
-  I6: () => S,
-  vM: () => I
+  I6: () => I,
+  vM: () => S
 }), require("./638769.js"), require("./321073.js"), require("./896048.js");
 var r, Chunk735438 = require("./735438.js"),
   a = require.n(Chunk735438),
@@ -26,7 +26,7 @@ var r, Chunk735438 = require("./735438.js"),
   Chunk287809 = require("./287809.js"),
   Chunk652215 = require("./652215.js");
 
-function v(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,8 +34,8 @@ function v(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let S = "SELECTABLE",
-  I = "VOCAL",
+let I = "SELECTABLE",
+  S = "VOCAL",
   T = null,
   C = {},
   N = {},
@@ -57,9 +57,9 @@ let S = "SELECTABLE",
 function M(e) {
   return {
     id: e,
-    [S]: [],
     [I]: [],
-    [A.rbe.GUILD_CATEGORY]: [D],
+    [S]: [],
+    [v.rbe.GUILD_CATEGORY]: [D],
     count: 0
   }
 }
@@ -79,11 +79,11 @@ function U(e, t) {
 }
 
 function G(e) {
-  e[S].sort(U), e[I].sort(U), e[A.rbe.GUILD_CATEGORY].sort(U)
+  e[I].sort(U), e[S].sort(U), e[v.rbe.GUILD_CATEGORY].sort(U)
 }
 
 function V(e) {
-  return (0, p.tr)(e) ? S : (0, p.ay)(e) ? I : e
+  return (0, p.tr)(e) ? I : (0, p.ay)(e) ? S : e
 }
 
 function F() {
@@ -103,7 +103,7 @@ function F() {
 }
 
 function B(e) {
-  if (e === A.YYv) return F();
+  if (e === v.YYv) return F();
   let t = {},
     n = m.A.getMutableGuildChannelsForGuild(e);
   for (let e in n) t[e] = {
@@ -119,9 +119,9 @@ function H(e) {
   } = e, n = B(t);
   return a().forEach(n, n => {
     let r = n.channel;
-    if (e.count += 1, p.JT.has(r.type) && !b.A.can(A.xBc.VIEW_CHANNEL, r) && !c.A.isChannelGated(r.guild_id, r.id) && r.id !== w) return;
+    if (e.count += 1, p.JT.has(r.type) && !y.A.can(v.xBc.VIEW_CHANNEL, r) && !c.A.isChannelGated(r.guild_id, r.id) && r.id !== w) return;
     let i = V(r.type);
-    r.type === A.rbe.GUILD_DIRECTORY && (null == P[t] && (P[t] = []), P[t].push(n)), null != e[i] && e[i].push(n)
+    r.type === v.rbe.GUILD_DIRECTORY && (null == P[t] && (P[t] = []), P[t].push(n)), null != e[i] && e[i].push(n)
   }), e
 }
 
@@ -137,10 +137,10 @@ function W(e) {
 function K(e) {
   let t = N[e.id] = {},
     n = {};
-  e[S].forEach(e => {
+  e[I].forEach(e => {
     let {
       channel: r
-    } = e, i = (0, u.m1)(r, O.default, y.A), a = Object.prototype.hasOwnProperty.call(n, i) ? n[i] : null;
+    } = e, i = (0, u.m1)(r, O.default, b.A), a = Object.prototype.hasOwnProperty.call(n, i) ? n[i] : null;
     null == a ? n[i] = 1 : (n[i] = a + 1, i += "~".concat(a)), t[r.id] = {
       id: r.id,
       name: i
@@ -216,7 +216,7 @@ function ee(e, t) {
     user: e,
     context: t,
     checkElevated: false
-  }), A.Lti)
+  }), v.Lti)
 }
 
 function et(e, t) {
@@ -225,7 +225,7 @@ function et(e, t) {
   let r = C[t];
   null == r && (r = W(t));
   let {
-    [S]: i, [I]: a
+    [I]: i, [S]: a
   } = r;
   for (let {
       channel: t
@@ -281,11 +281,11 @@ function es(e) {
 }
 
 function eo() {
-  W(A.YYv)
+  W(v.YYv)
 }
 class el extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(h.default, m.A, d.A, c.A, g.Ay, E.A, b.A, O.default), this.syncWith([d.A], eo)
+    this.waitFor(h.default, m.A, d.A, c.A, g.Ay, E.A, y.A, O.default), this.syncWith([d.A], eo)
   }
   getAllGuilds() {
     return C
@@ -300,20 +300,20 @@ class el extends(r = Chunk311907.Ay.Store) {
   getFirstChannel(e, t) {
     var n;
     let r = arguments.length > 2 && true !== arguments[2] && arguments[2];
-    return null != (n = this.getFirstChannelOfType(e, t, S)) ? n : r ? this.getFirstChannelOfType(e, t, I) : null
+    return null != (n = this.getFirstChannelOfType(e, t, I)) ? n : r ? this.getFirstChannelOfType(e, t, S) : null
   }
   getDefaultChannel(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : A.xBc.VIEW_CHANNEL;
-    return this.getFirstChannel(e, e => b.A.can(n, e.channel), t)
+      n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : v.xBc.VIEW_CHANNEL;
+    return this.getFirstChannel(e, e => y.A.can(n, e.channel), t)
   }
   getSFWDefaultChannel(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : A.xBc.VIEW_CHANNEL;
-    return this.getFirstChannel(e, e => b.A.can(n, e.channel) && !e.channel.nsfw, t)
+      n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : v.xBc.VIEW_CHANNEL;
+    return this.getFirstChannel(e, e => y.A.can(n, e.channel) && !e.channel.nsfw, t)
   }
   getSelectableChannelIds(e) {
-    return this.getChannels(e)[S].map(e => {
+    return this.getChannels(e)[I].map(e => {
       let {
         channel: t
       } = e;
@@ -321,10 +321,10 @@ class el extends(r = Chunk311907.Ay.Store) {
     })
   }
   getSelectableChannels(e) {
-    return this.getChannels(e)[S]
+    return this.getChannels(e)[I]
   }
   getVocalChannelIds(e) {
-    return this.getChannels(e)[I].map(e => {
+    return this.getChannels(e)[S].map(e => {
       let {
         channel: t
       } = e;
@@ -350,14 +350,14 @@ class el extends(r = Chunk311907.Ay.Store) {
     return this.getChannels(e).count > 0
   }
   hasCategories(e) {
-    return this.getChannels(e)[A.rbe.GUILD_CATEGORY].length > 1
+    return this.getChannels(e)[v.rbe.GUILD_CATEGORY].length > 1
   }
   getTextChannelNameDisambiguations(e) {
     var t;
     return null != e && null != (t = N[e]) ? t : j
   }
 }
-v(el, "displayName", "GuildChannelStore");
+A(el, "displayName", "GuildChannelStore");
 let ec = new el(Chunk73153.h, {
   BACKGROUND_SYNC: Y,
   CHANNEL_SELECT: es,

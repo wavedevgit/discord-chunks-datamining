@@ -7,7 +7,7 @@ require.d(exports, {
   V: () => R,
   ax: () => x,
   ds: () => P,
-  fK: () => S,
+  fK: () => I,
   fS: () => D,
   nh: () => T,
   p6: () => N
@@ -28,8 +28,8 @@ let f = /sketchfab/i,
   m = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop$/,
   g = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
   E = RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/shop"),
-  b = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/game-shop\/([0-9]+)\/([0-9]+)/,
-  y = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/game-shop\/([0-9]+)\/([0-9]+)/;
+  y = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/game-shop\/([0-9]+)\/([0-9]+)/,
+  b = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/game-shop\/([0-9]+)\/([0-9]+)/;
 
 function O(e) {
   let {
@@ -39,13 +39,13 @@ function O(e) {
   return t > 0 && n > 0
 }
 
-function A(e, t, n) {
+function v(e, t, n) {
   if (null != t && f.test(t.name) || p.test(n.url)) returnfalse;
   let r = null != n.proxy_url || /^https:/i.test(n.url);
   return null != e && c.default.extractTimestamp(e) < h && (r = r && null != t && _.test(t.name)), r
 }
 
-function v(e) {
+function A(e) {
   let {
     url: t,
     proxy_url: n,
@@ -71,7 +71,7 @@ function v(e) {
   }
 }
 
-function S(e, t, n) {
+function I(e, t, n) {
   let r = {
     id: i().uniqueId("embed_"),
     url: n.url,
@@ -97,18 +97,18 @@ function S(e, t, n) {
     }), null != n.timestamp && (r.timestamp = s()(new Date(n.timestamp))), null != n.color && (r.color = (0, o.$k)(n.color, true)), null != n.thumbnail && O(n.thumbnail)) switch (r.type) {
     case u.Auw.ARTICLE:
     case u.Auw.IMAGE:
-      r.image = v(n.thumbnail);
+      r.image = A(n.thumbnail);
       break;
     default:
-      r.thumbnail = v(n.thumbnail)
+      r.thumbnail = A(n.thumbnail)
   }
-  if (null != n.image && O(n.image) && (r.image = v(n.image)), null != n.video && (null == r.thumbnail && null != n.video.proxy_url && O(n.video) && (r.thumbnail = {
+  if (null != n.image && O(n.image) && (r.image = A(n.image)), null != n.video && (null == r.thumbnail && null != n.video.proxy_url && O(n.video) && (r.thumbnail = {
       width: n.video.width,
       height: n.video.height,
-      url: I(n.video.proxy_url, {
+      url: S(n.video.proxy_url, {
         format: "webp"
       })
-    }), null != r.thumbnail && O(n.video) && A(t, n.provider, n.video) && (r.video = v(n.video))), d.p.has(r.type)) {
+    }), null != r.thumbnail && O(n.video) && v(t, n.provider, n.video) && (r.video = A(n.video))), d.p.has(r.type)) {
     var a;
     r.fields = (null != (a = n.fields) ? a : []).map(e => {
       let {
@@ -126,7 +126,7 @@ function S(e, t, n) {
   return r
 }
 
-function I(e, t) {
+function S(e, t) {
   let n = new URL(e);
   return Object.keys(t).forEach(e => {
     n.searchParams.set(e, t[e])
@@ -167,7 +167,7 @@ function R(e) {
 }
 
 function w(e) {
-  return e.type === u.Auw.ARTICLE && null != e.url && (y.test(e.url) || b.test(e.url))
+  return e.type === u.Auw.ARTICLE && null != e.url && (b.test(e.url) || y.test(e.url))
 }
 
 function P(e, t, n) {

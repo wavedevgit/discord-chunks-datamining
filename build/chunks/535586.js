@@ -2,7 +2,7 @@
 /** chunk id: 535586, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y,
+  A: () => b,
   n: () => l
 });
 var Chunk311907 = require("./311907.js"),
@@ -53,7 +53,7 @@ function E(e) {
   } = e, a = Date.now();
   c = a, null != t && (p[t] = a), n && (u = a, null != t && (_[t] = a)), r && (d = a, null != t && (m[t] = a)), i && (f = a, null != t && (h[t] = a))
 }
-class b extends Chunk311907.Ay.Store {
+class y extends Chunk311907.Ay.Store {
   initialize() {
     this.waitFor(a.Ay, s.Ay, o.default)
   }
@@ -80,7 +80,7 @@ class b extends Chunk311907.Ay.Store {
     }
   }
 }
-let y = new b(Chunk73153.h, {
+let b = new y(Chunk73153.h, {
   CONNECTION_OPEN: g,
   MESSAGE_NOTIFICATION_SHOWN: E
 })

@@ -4,12 +4,12 @@
 require.d(exports, {
   $T: () => O,
   Ay: () => P,
-  C6: () => A,
+  C6: () => v,
   C7: () => T,
   O$: () => w,
-  Oz: () => v,
-  sK: () => S,
-  s_: () => I
+  Oz: () => A,
+  sK: () => I,
+  s_: () => S
 }), require("./747238.js");
 var Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
@@ -27,8 +27,8 @@ var Chunk64700 = require("./64700.js"),
 let m = 75,
   g = 50,
   E = 30 * Chunk927813.A.Millis.SECOND,
-  b = null;
-async function y(e, t) {
+  y = null;
+async function b(e, t) {
   let n, r;
   if (!_.A.shouldFetch(e, t)) return;
   let i = Date.now();
@@ -85,7 +85,7 @@ async function O(e) {
   })
 }
 
-function A(e, t) {
+function v(e, t) {
   l.h.dispatch({
     type: "SET_HIGHLIGHTED_SUMMARY",
     channelId: e,
@@ -93,21 +93,21 @@ function A(e, t) {
   })
 }
 
-function v() {
+function A() {
   l.h.dispatch({
     type: "TOGGLE_TOPICS_BAR"
   })
 }
 
-function S(e, t) {
-  null != e && null != t && y(e, t), l.h.dispatch({
+function I(e, t) {
+  null != e && null != t && b(e, t), l.h.dispatch({
     type: "SET_SELECTED_SUMMARY",
     channelId: e,
     summaryId: null != t ? t : null
   })
 }
 
-function I(e, t) {
+function S(e, t) {
   l.h.dispatch({
     type: "UPDATE_VISIBLE_MESSAGES",
     topVisibleMessage: null != e ? e : null,
@@ -226,9 +226,9 @@ async function w(e) {
 }
 let P = {
   setSummaryFeedback: T,
-  updateVisibleMessages: I,
-  setSelectedSummary: S,
-  setHighlightedSummary: A,
+  updateVisibleMessages: S,
+  setSelectedSummary: I,
+  setHighlightedSummary: v,
   fetchSummaries: O,
   fetchSummariesBulk: N,
   useChannelSummaries: function(e) {

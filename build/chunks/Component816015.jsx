@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 816015, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => _
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,7 +17,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk58682 = require("./58682.js");
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,16 +25,16 @@ function g(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class m extends Chunk64700.Component {
+class A extends Chunk64700.Component {
   componentDidMount() {
     this.fetchStoreListing(), (0, c.d)("channel_store_listing")
   }
   render() {
     return null != this.props.skuId ? (0, r.jsx)(d.A, {
-      page: h.liQ.CHANNEL_STORE_LISTING,
+      page: g.liQ.CHANNEL_STORE_LISTING,
       root: true,
       children: (0, r.jsx)("div", {
-        className: A.gE,
+        className: f.gE,
         children: (0, r.jsx)(l.qh, {
           path: "*",
           render: this.renderApplicationListing
@@ -43,13 +43,13 @@ class m extends Chunk64700.Component {
     }) : null
   }
   constructor(...e) {
-    super(...e), g(this, "fetchStoreListing", e => {
+    super(...e), m(this, "fetchStoreListing", e => {
       let {
         channel: t,
         inputSkuId: n
       } = this.props;
       return null != e ? s.A.fetchChannelStoreListing(t.id, e) : null != n ? s.A.fetchChannelStoreListing(t.id, n) : s.A.fetchChannelStoreListing(t.id)
-    }), g(this, "renderApplicationListing", e => {
+    }), m(this, "renderApplicationListing", e => {
       let {
         location: t
       } = e, {
@@ -62,12 +62,12 @@ class m extends Chunk64700.Component {
         inputSkuId: i,
         fetchStoreListing: this.fetchStoreListing,
         location: t,
-        pageSize: (0, f.getPageSize)(l)
+        pageSize: (0, h.getPageSize)(l)
       })
     })
   }
 }
-let b = (0, Chunk456412.A)(Chunk311907.Ay.connectStores([Chunk851466.A], e => {
+let _ = (0, Chunk456412.A)(Chunk311907.Ay.connectStores([Chunk851466.A], e => {
   let {
     channel: t,
     inputSkuId: n
@@ -75,4 +75,4 @@ let b = (0, Chunk456412.A)(Chunk311907.Ay.connectStores([Chunk851466.A], e => {
   return {
     skuId: null != n ? n : u.A.getSkuIdForChannel(t.id)
   }
-})(m))
+})(A))

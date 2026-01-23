@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 385310, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,27 +13,27 @@ var Chunk627968 = require("./627968.js"),
   Chunk332118 = require("./332118.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk400783 = require("./400783.js");
-let f = e => {
+let h = e => {
   let {
     headerId: t,
     reapplyText: n,
-    onReapply: f,
-    confirmText: h,
-    onWithdrawApplication: A,
-    rejectionReason: g = null,
-    guild: m = null
-  } = e, b = (0, l.bG)([c.A], () => {
+    onReapply: h,
+    confirmText: g,
+    onWithdrawApplication: f,
+    rejectionReason: m = null,
+    guild: A = null
+  } = e, _ = (0, l.bG)([c.A], () => {
     var e;
-    return c.A.getCooldown(null != (e = null == m ? true : m.id) ? e : "0")
+    return c.A.getCooldown(null != (e = null == A ? true : A.id) ? e : "0")
   }), {
-    canReapply: _,
+    canReapply: b,
     isLoading: E
-  } = (0, u.f)(null == m ? true : m.id);
+  } = (0, u.f)(null == A ? true : A.id);
   i.useEffect(() => {
-    null == b && null != m && o.A.fetchJoinRequestCooldown(m.id)
-  }, [b, m]);
-  let O = (null != b ? b : 0) > 0,
-    y = O && null != b ? Math.ceil((1e3 * b - Date.now()) / 864e5) : 0;
+    null == _ && null != A && o.A.fetchJoinRequestCooldown(A.id)
+  }, [_, A]);
+  let O = (null != _ ? _ : 0) > 0,
+    y = O && null != _ ? Math.ceil((1e3 * _ - Date.now()) / 864e5) : 0;
   return (0, r.jsxs)("div", {
     className: p.EL,
     children: [(0, r.jsx)("div", {
@@ -48,22 +48,22 @@ let f = e => {
         id: t,
         variant: "heading-lg/semibold",
         color: "text-strong",
-        children: (null == m ? true : m.name) != null ? d.intl.formatToPlainString(d.t["P+/gzA"], {
-          guildName: m.name
+        children: (null == A ? true : A.name) != null ? d.intl.formatToPlainString(d.t["P+/gzA"], {
+          guildName: A.name
         }) : d.intl.string(d.t.gBPcuP)
-      }), null != g && "" !== g ? (0, r.jsxs)(s.Text, {
+      }), null != m && "" !== m ? (0, r.jsxs)(s.Text, {
         variant: "text-md/medium",
         color: "text-default",
         children: [(0, r.jsx)("span", {
           className: p.Wj,
           children: d.intl.string(d.t.cf1psW)
         }), (0, r.jsx)("span", {
-          children: g
+          children: m
         })]
       }) : null]
     }), (0, r.jsxs)("div", {
       className: p.Ow,
-      children: [_ || E ? (0, r.jsx)(a.m, {
+      children: [b || E ? (0, r.jsx)(a.m, {
         asContainer: true,
         text: O ? d.intl.formatToPlainString(d.t.A0f0P7, {
           days: y
@@ -72,19 +72,19 @@ let f = e => {
           days: y
         }) : true,
         children: (0, r.jsx)(s.Button, {
-          onClick: f,
+          onClick: h,
           variant: "secondary",
           size: "md",
-          loading: null == b || E,
+          loading: null == _ || E,
           disabled: O || E,
           text: n,
           fullWidth: true
         })
       }) : null, (0, r.jsx)(s.Button, {
-        onClick: () => A(_ || E),
+        onClick: () => f(b || E),
         variant: "critical-primary",
         size: "md",
-        text: h,
+        text: g,
         fullWidth: true
       })]
     })]

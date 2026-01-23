@@ -12,11 +12,11 @@ let o = e => {
   let {
     channel: t,
     user: o
-  } = e, c = (0, l.bG)([a.Ay], () => a.Ay.isChannelMuted(null, t.id));
+  } = e, c = (0, l.bG)([s.Ay], () => s.Ay.isChannelMuted(null, t.id));
   return o.bot ? (0, r.jsx)(i.Button, {
     variant: c ? "secondary" : "critical-primary",
     size: "sm",
-    text: c ? s.intl.string(s.t.YqAjXy) : s.intl.string(s.t.w4m945),
+    text: c ? a.intl.string(a.t.YqAjXy) : a.intl.string(a.t.w4m945),
     onClick: function() {
       (0, i.mMO)(async () => {
         let {

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk311907 = require("./311907.js"),
   Chunk475743 = require("./475743.js"),
@@ -43,7 +43,7 @@ function M(e) {
     isExpanded: t,
     questId: n
   } = e;
-  return (0, b.H6)({
+  return (0, f.H6)({
     mode: t ? R.fP.EXPANDED : R.fP.COLLAPSED,
     questContent: p.uF.QUEST_BAR_V2,
     questId: n,
@@ -60,22 +60,22 @@ function L() {
 function U(e) {
   var t, n;
   let {
-    quest: i
-  } = e, d = (0, x.L)({
-    quest: i,
+    quest: r
+  } = e, d = (0, g.L)({
+    quest: r,
     location: R.rE.QUESTS_BAR
-  }), h = (0, f.H)({
+  }), h = (0, x.H)({
     location: R.rE.QUESTS_BAR
   }), U = (0, o.bG)([m.A], () => null != m.A.questEnrollmentBlockedUntil), {
     isQuestBarVisible: B,
     reason: G
-  } = (0, y.TQ)({
-    quest: i,
+  } = (0, _.TQ)({
+    quest: r,
     location: R.rE.QUESTS_BAR
-  }), F = (0, o.bG)([u.A], () => u.A.hasLayers()), V = l.useRef(null), W = l.useMemo(() => (0, g.vv)(i), [i]), H = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, K = (0, c.A)(H), z = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
+  }), F = (0, o.bG)([u.A], () => u.A.hasLayers()), V = l.useRef(null), W = l.useMemo(() => (0, b.vv)(r), [r]), H = (null == (t = r.userStatus) ? true : t.enrolledAt) != null, K = (0, c.A)(H), z = (null == (n = r.userStatus) ? true : n.completedAt) != null, {
     hasError: q,
     isLoading: Q
-  } = (0, v.Gk)(), Y = l.useContext(T.Z) || h && B && !Q && !U, {
+  } = (0, v.Gk)(), Y = l.useContext(N.Z) || h && B && !Q && !U, {
     isExpanded: J,
     setIsExpanded: X,
     expandQuestBar: Z,
@@ -84,22 +84,22 @@ function U(e) {
     expansionSpring: et,
     visibilitySpring: en,
     springConfig: ea
-  } = (0, k.w)({
+  } = (0, I.w)({
     isQuestAccepted: H,
     isQuestCompleted: z,
     isQuestBarVisible: Y
   }), {
     handleCtxMenuOpened: el,
-    handleCtxMenuClosed: ei,
-    handleCtxMenuSelection: er,
+    handleCtxMenuClosed: er,
+    handleCtxMenuSelection: ei,
     handleGameSheetOpened: es,
     handleGameSheetClosed: eo,
     handleFocusWithoutDelay: ec,
     handleBlur: ed,
     handleMouseEnter: eu,
     handleMouseLeave: em
-  } = (0, w.m)({
-    quest: i,
+  } = (0, k.m)({
+    quest: r,
     isExpanded: J,
     setIsExpanded: X,
     expandQuestBar: Z,
@@ -109,7 +109,7 @@ function U(e) {
     impressionRef: V
   });
   (0, P.S)({
-    quest: i,
+    quest: r,
     hasAssetsError: q,
     isEligibleForQuests: h,
     isQuestBarVisible: Y,
@@ -122,14 +122,14 @@ function U(e) {
   });
   let ep = l.useRef(null),
     eh = l.useRef(null),
-    ef = l.useRef(null),
-    ex = (0, b.fc)(i);
+    ex = l.useRef(null),
+    eg = (0, f.fc)(r);
   if (l.useEffect(() => {
-      W && (0, _.l9)()
+      W && (0, y.l9)()
     }, [W]), !h || !Y && ee && !Q || q) return q ? d.log("Not rendered due to asset error") : h || d.log("Not rendered due to ineligibility"), null;
-  let eb = 70 + 78 * !!z;
+  let ef = 70 + 78 * !!z;
   return (0, a.jsx)(j.R, {
-    questOrQuests: i,
+    questOrQuests: r,
     questContent: p.uF.QUEST_BAR_V2,
     overrideVisibility: !F && Y,
     sourceQuestContent: p.uF.QUEST_BAR_V2,
@@ -137,7 +137,7 @@ function U(e) {
       className: D.dK,
       children: [Y && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(M, {
-          questId: i.id,
+          questId: r.id,
           isExpanded: J
         }), (0, a.jsx)(L, {})]
       }), (0, a.jsx)(s.animated.div, {
@@ -146,18 +146,18 @@ function U(e) {
         onMouseEnter: eu,
         onFocus: ec,
         onBlur: ed,
-        className: r()(D.iE, {
+        className: i()(D.iE, {
           [D.Xc]: !Y,
           [D.uv]: Y && ee
         }),
         style: {
           height: en.to({
             range: [0, 1],
-            output: [0, eb]
+            output: [0, ef]
           })
         },
         children: (0, a.jsx)(s.animated.div, {
-          className: r()(D.FG, {
+          className: i()(D.FG, {
             [D.E$]: J,
             [D.KA]: H
           }),
@@ -168,30 +168,30 @@ function U(e) {
               expandedContentRef: ep,
               collapsedContentRef: eh,
               expansionSpring: et,
-              children: (0, a.jsxs)(N.C, {
-                quest: i,
-                taskDetails: ex,
+              children: (0, a.jsxs)(T.C, {
+                quest: r,
+                taskDetails: eg,
                 isExpanded: J,
                 isExpansionAnimationComplete: $,
-                onCtxMenuClose: ei,
+                onCtxMenuClose: er,
                 onCtxMenuOpen: el,
-                onCtxMenuSelect: er,
+                onCtxMenuSelect: ei,
                 onGameSheetOpen: es,
                 onGameSheetClose: eo,
-                collapsedHeight: eb,
+                collapsedHeight: ef,
                 children: [(0, a.jsx)(S.A, {
                   ref: eh,
                   className: D.Qs,
-                  overlayRef: ef
+                  overlayRef: ex
                 }, z ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(O.A, {
                   className: D.Qs,
-                  overlayRef: ef,
+                  overlayRef: ex,
                   ref: ep,
                   children: (0, a.jsxs)(a.Fragment, {
-                    children: [(0, a.jsx)(I.A, {}), !H && (0, a.jsx)(A.A, {})]
+                    children: [(0, a.jsx)(w.A, {}), !H && (0, a.jsx)(A.A, {})]
                   })
                 }), (0, a.jsx)("div", {
-                  ref: ef,
+                  ref: ex,
                   className: D.Lw
                 })]
               })
@@ -203,7 +203,7 @@ function U(e) {
   })
 }
 let B = 21552 == require.j ? function() {
-  let e = (0, y.dN)(),
+  let e = (0, _.dN)(),
     {
       enabled: t,
       variant: n

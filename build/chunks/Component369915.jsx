@@ -17,7 +17,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk305928 = require("./305928.js"),
   Chunk652215 = require("./652215.js");
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -69,46 +69,46 @@ let A = Chunk64700.memo(function(e) {
     return i
   }(e, ["folderNode"]), {
     id: y,
-    name: O,
-    color: j,
-    children: v
-  } = t, x = v.map(e => e.id), E = (0, o.A)(e => e.guildId), _ = (0, i.bG)([c.A], () => c.A.isFolderExpanded(y)), C = function(e) {
+    name: _,
+    color: O,
+    children: j
+  } = t, v = j.map(e => e.id), x = (0, o.A)(e => e.guildId), E = (0, i.bG)([c.A], () => c.A.isFolderExpanded(y)), C = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.A.getGuild(t);
         return null != n ? n.name : null
-      }).filter(f.Vq),
-      n = 2 * b.F05,
+      }).filter(p.Vq),
+      n = 2 * g.F05,
       r = [];
     for (let e of t)(e.length < n || 0 === r.length) && (r.push(e), n -= e.length);
     return "".concat(r.join(", ")).concat(r.length < t.length ? ", ..." : "")
-  }(t), S = (0, h.A)(t), {
+  }(t), S = (0, f.A)(t), {
     mentionCount: I,
     isMentionLowImportance: N,
     unread: T
   } = (0, i.cf)([u.default], () => ({
-    mentionCount: x.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
-    isMentionLowImportance: x.every(e => u.default.getIsMentionLowImportance(e)),
-    unread: x.some(e => u.default.hasUnread(e))
+    mentionCount: v.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
+    isMentionLowImportance: v.every(e => u.default.getIsMentionLowImportance(e)),
+    unread: v.some(e => u.default.hasUnread(e))
   })), P = l.useCallback(() => {
-    s.A.toggleGuildFolderExpand(y)
+    a.A.toggleGuildFolderExpand(y)
   }, [y]), w = l.useCallback(e => {
-    (0, a.L3)(e, async () => {
+    (0, s.L3)(e, async () => {
       let {
         default: e
       } = await n.e("32857").then(n.bind(n, 842112));
-      return t => (0, r.jsx)(e, m(g({}, t), {
+      return t => (0, r.jsx)(e, b(m({}, t), {
         folderId: y,
-        folderName: O,
-        folderColor: j,
+        folderName: _,
+        folderColor: O,
         unread: T || I > 0
       }))
     })
-  }, [y, O, j, T, I]);
-  return (0, r.jsx)(p.A, m(g({}, A), {
+  }, [y, _, O, T, I]);
+  return (0, r.jsx)(h.A, b(m({}, A), {
     folderNode: t,
-    expanded: _,
-    selected: null != E && x.includes(E),
+    expanded: E,
+    selected: null != x && v.includes(x),
     mentionCount: I,
     isMentionLowImportance: N,
     unread: T,

@@ -56,12 +56,12 @@ let _ = a().defaultRules.lheading,
   m = a().defaultRules.link,
   g = a().defaultRules.image,
   E = a().defaultRules.list,
-  b = a().defaultRules.blockQuote,
-  y = a().defaultRules.paragraph,
+  y = a().defaultRules.blockQuote,
+  b = a().defaultRules.paragraph,
   O = /\{(.+?)}/,
-  A = /^\$(\w+?)\$/;
+  v = /^\$(\w+?)\$/;
 r = require("./482644.jsx");
-let v = e => {
+let A = e => {
     let {
       transformUpperCase: t = false
     } = e;
@@ -75,13 +75,13 @@ let v = e => {
       }
     }
   },
-  S = e => p(d({}, r.baseRules), {
+  I = e => p(d({}, r.baseRules), {
     image: d({}, g, "function" == typeof r.customRules.image ? r.customRules.image(e) : r.customRules.image),
     link: d({}, m, "function" == typeof r.customRules.link ? r.customRules.link(e) : r.customRules.link),
     list: d({}, E, "function" == typeof r.customRules.list ? r.customRules.list(e) : r.customRules.list),
     interpolation: {
       order: l.Ay.order,
-      match: e => A.exec(e),
+      match: e => v.exec(e),
       parse(e, t, n) {
         let r = n.interpolations[e[1]];
         return null == r ? {
@@ -95,22 +95,22 @@ let v = e => {
       react: e => e.renderer()
     },
     lheading: d(p(d({}, _), {
-      parse: v({
+      parse: A({
         transformUpperCase: true
       })
     }), "function" == typeof r.customRules.lheading ? r.customRules.lheading(e) : r.customRules.lheading),
     heading: d({}, h, "function" == typeof r.customRules.heading ? r.customRules.heading(e) : r.customRules.heading),
-    blockQuote: d({}, b, "function" == typeof r.customRules.blockQuote ? r.customRules.blockQuote(e) : r.customRules.blockQuote),
-    paragraph: d({}, y, "function" == typeof r.customRules.paragraph ? r.customRules.paragraph(e) : r.customRules.paragraph)
+    blockQuote: d({}, y, "function" == typeof r.customRules.blockQuote ? r.customRules.blockQuote(e) : r.customRules.blockQuote),
+    paragraph: d({}, b, "function" == typeof r.customRules.paragraph ? r.customRules.paragraph(e) : r.customRules.paragraph)
   }),
-  I = e => ({
+  S = e => ({
     lheading: d(p(d({}, _), {
-      parse: v({
+      parse: A({
         transformUpperCase: false
       })
     }), "function" == typeof r.customRules.lheading ? r.customRules.lheading(e) : r.customRules.lheading)
   }),
-  T = e => p(d({}, S(e)), {
+  T = e => p(d({}, I(e)), {
     newline: d({}, a().defaultRules.newline),
     text: l.Ay,
     list: s.A,
@@ -118,11 +118,11 @@ let v = e => {
   });
 
 function C(e) {
-  return d({}, S(e))
+  return d({}, I(e))
 }
 let N = {
   getDefaultRules: C,
-  getSpecialRules: e => d({}, S(e), I(e)),
+  getSpecialRules: e => d({}, I(e), S(e)),
   getMessageRules: e => d({}, T(e))
 };
 

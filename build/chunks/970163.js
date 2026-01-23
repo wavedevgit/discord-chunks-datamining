@@ -2,7 +2,7 @@
 /** chunk id: 970163, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./896048.js"), require("./492834.js");
 var Chunk110259 = require("./110259.js"),
   Chunk933681 = require("./933681.js"),
@@ -64,7 +64,7 @@ function g(e) {
 }
 let E = new Map;
 
-function b(e, t, n) {
+function y(e, t, n) {
   if (l.default.track(f.HAw.INVITE_OPENED, {
       invite_code: e
     }), E.has(e)) return E.get(e);

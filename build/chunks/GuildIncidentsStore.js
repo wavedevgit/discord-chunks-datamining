@@ -2,7 +2,7 @@
 /** chunk id: 610136, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -71,14 +71,14 @@ function E(e) {
   null != r && ((0, u.k$)(r) || (0, u._J)(r)) && (p[n.id] = r)
 }
 
-function b(e) {
+function y(e) {
   let {
     guild: t
   } = e, n = m(t.incidents_data);
   null != n && ((0, u.k$)(n) || (0, u._J)(n)) ? p[t.id] = n : delete p[t.id]
 }
 
-function y(e) {
+function b(e) {
   let {
     guild: t
   } = e;
@@ -88,7 +88,7 @@ function y(e) {
 function O(e) {
   p = {}
 }
-class A extends(r = Chunk311907.Ay.Store) {
+class v extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(o.A, l.A, c.A, s.A), this.syncWith([o.A, l.A, c.A, s.A], h)
   }
@@ -102,11 +102,11 @@ class A extends(r = Chunk311907.Ay.Store) {
     return _
   }
 }
-d(A, "displayName", "GuildIncidentsStore");
-let v = new A(Chunk73153.h, {
+d(v, "displayName", "GuildIncidentsStore");
+let A = new v(Chunk73153.h, {
   CONNECTION_OPEN: g,
   GUILD_CREATE: E,
-  GUILD_UPDATE: b,
-  GUILD_DELETE: y,
+  GUILD_UPDATE: y,
+  GUILD_DELETE: b,
   LOGOUT: O
 })

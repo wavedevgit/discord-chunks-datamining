@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 481045, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  L7: () => g,
+  L7: () => m,
   qA: () => A
 });
 var Chunk627968 = require("./627968.js"),
@@ -17,22 +17,22 @@ var Chunk627968 = require("./627968.js"),
   Chunk536482 = require("./536482.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk259533 = require("./259533.js");
-let g = () => {
-  (0, o.openUserSettings)(s.X.ACTIVITY_PRIVACY_PANEL, {
-    section: f.nc_.ACTIVITY_PRIVACY
+let m = () => {
+  (0, o.openUserSettings)(a.X.ACTIVITY_PRIVACY_PANEL, {
+    section: p.nc_.ACTIVITY_PRIVACY
   })
 };
 
-function m(e) {
+function b(e) {
   let {
     children: t,
     onClick: n
   } = e;
   return (0, r.jsxs)(i.DUT, {
-    className: b.E1,
+    className: g.E1,
     onClick: n,
     children: [(0, r.jsx)("div", {
-      className: b.j3,
+      className: g.j3,
       children: t
     }), (0, r.jsx)(i._BQ, {
       color: i.LU0.colors.TEXT_SUBTLE,
@@ -44,16 +44,16 @@ function m(e) {
 function A(e) {
   let {
     onClosePopout: t
-  } = e, n = a.tz.useSetting(), s = (0, l.bG)([c.Ay], () => c.Ay.getFlattenedGuildIds()), o = (0, u.Kk)(), f = s.filter(e => !o.has(e));
-  return 0 === s.length ? null : (0, r.jsxs)(m, {
+  } = e, n = s.tz.useSetting(), a = (0, l.bG)([c.Ay], () => c.Ay.getFlattenedGuildIds()), o = (0, u.Kk)(), p = a.filter(e => !o.has(e));
+  return 0 === a.length ? null : (0, r.jsxs)(b, {
     onClick: () => {
-      t(), g()
+      t(), m()
     },
     children: [(0, r.jsx)(i.Text, {
       variant: "text-sm/semibold",
-      children: h.intl.string(n ? p.default["3GrhnF"] : p.default["54ycKJ"])
+      children: f.intl.string(n ? h.default["3GrhnF"] : h.default["54ycKJ"])
     }), (0, r.jsx)(d.l, {
-      guildIds: f
+      guildIds: p
     })]
   })
 }

@@ -113,36 +113,36 @@ function h(e) {
     buttonSize: m = "sm",
     buttonDisabled: g,
     buttonIcon: E,
-    buttonIconPosition: b = "start",
-    buttonLoading: y,
+    buttonIconPosition: y = "start",
+    buttonLoading: b,
     onButtonPress: O,
-    listType: A = "icon",
-    index: v,
-    noInset: S = false
-  } = e, I = null != _ ? (0, r.jsx)(s.Button, {
+    listType: v = "icon",
+    index: A,
+    noInset: I = false
+  } = e, S = null != _ ? (0, r.jsx)(s.Button, {
     variant: h,
     size: m,
     text: _,
     icon: E,
-    iconPosition: b,
+    iconPosition: y,
     disabled: g,
-    loading: y,
+    loading: b,
     onClick: O,
     "aria-label": _
   }) : true;
   return (0, r.jsxs)("div", {
     className: a()(o.nM, {
-      [o.NZ]: S
+      [o.NZ]: I
     }),
     children: [(0, r.jsxs)(s.BJc, {
       direction: "horizontal",
       gap: 16,
       align: "center",
-      children: ["numbered" === A && null != v ? (0, r.jsx)(s.Heading, {
+      children: ["numbered" === v && null != A ? (0, r.jsx)(s.Heading, {
         variant: "heading-md/semibold",
         color: "text-brand",
         className: o.ai,
-        children: v + 1
+        children: A + 1
       }) : null != t && (0, r.jsx)("div", {
         className: o.zc,
         children: (0, r.jsx)(t, {
@@ -161,7 +161,7 @@ function h(e) {
           children: c
         })]
       })]
-    }), I]
+    }), S]
   })
 }
 
@@ -181,12 +181,12 @@ function m(e) {
     onButtonPress: m,
     listType: g = "icon",
     index: E,
-    noInset: b = false
+    noInset: y = false
   } = e;
   return (0, r.jsxs)(s.DUT, {
     onClick: m,
     className: a()(o.nM, o.vk, {
-      [o.NZ]: b,
+      [o.NZ]: y,
       [o.r9]: f
     }),
     children: [(0, r.jsxs)(s.BJc, {

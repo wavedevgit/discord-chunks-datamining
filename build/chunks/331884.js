@@ -8,6 +8,6 @@ var Chunk284009 = require("./284009.js"),
   Chunk311907 = require("./311907.js"),
   Chunk287809 = require("./287809.js");
 let s = () => {
-  let e = (0, i.bG)([r.default], () => r.default.getCurrentUser());
+  let e = (0, r.bG)([i.default], () => i.default.getCurrentUser());
   return l()(null != e, "user has to be signed in before accessing shop"), e
 }

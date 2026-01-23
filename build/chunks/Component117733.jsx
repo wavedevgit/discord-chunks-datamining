@@ -1,7 +1,7 @@
 /** Chunk was on 33957 **/
 /** chunk id: 117733, original params: e,n,l (module,exports,require) **/
 require.d(exports, {
-  A: () => L
+  A: () => T
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -69,7 +69,7 @@ let D = Chunk490171.O + 300 + 64,
       guild: n
     } = e;
     return (0, t.jsxs)(h.A, {
-      channelId: _.VV.GUILD_HOME,
+      channelId: O.VV.GUILD_HOME,
       guildId: n.id,
       className: i()(E.DD, E.Tp),
       innerClassname: E.vi,
@@ -84,69 +84,69 @@ let D = Chunk490171.O + 300 + 64,
     })
   });
 
-function L(e) {
+function T(e) {
   var n, l;
   let {
-    guild: r,
+    guild: a,
     width: h
-  } = e, w = (0, s.bG)([m.Ay], () => m.Ay.getSection(_.VV.GUILD_HOME)), [L, R] = a.useState(false), [T, k] = a.useState(C.da6), H = w === C.YvQ.SIDEBAR_CHAT, U = (0, c.R7z)(), B = (0, s.bG)([j.h], () => j.h.getSettings(r.id)), V = null == B ? true : B.welcomeMessage, K = (0, p.A)(r.id), z = !K && (null != (n = null == B || null == (l = B.resourceChannels) ? true : l.length) ? n : 0) === 0, $ = (0, o.A)("(max-width: 1300px)"), F = h - C.MdR - T, Q = H && F < D || $ || z;
-  return (a.useEffect(() => {
-    if (B === j.A)(0, g.ag)(r.id);
-    else if (null != B) {
-      var e, n, l, t, a;
-      x.default.track(C.HAw.SERVER_GUIDE_VIEWED, S(M({}, (0, u.H$)(r.id)), {
-        num_member_actions: null != (e = null == (t = B.newMemberActions) ? true : t.length) ? e : 0,
-        num_member_actions_completed: Object.keys(null != (n = A.A.getCompletedActions(r.id)) ? n : {}).length,
-        num_resource_channels: null != (l = null == (a = B.resourceChannels) ? true : a.length) ? l : 0
+  } = e, w = (0, s.bG)([g.Ay], () => g.Ay.getSection(O.VV.GUILD_HOME)), [T, k] = r.useState(false), [L, R] = r.useState(C.da6), H = w === C.YvQ.SIDEBAR_CHAT, B = (0, c.R7z)(), U = (0, s.bG)([j.h], () => j.h.getSettings(a.id)), V = null == U ? true : U.welcomeMessage, K = (0, A.A)(a.id), z = !K && (null != (n = null == U || null == (l = U.resourceChannels) ? true : l.length) ? n : 0) === 0, W = (0, d.A)("(max-width: 1300px)"), $ = h - C.MdR - L, F = H && $ < D || W || z;
+  return (r.useEffect(() => {
+    if (U === j.A)(0, b.ag)(a.id);
+    else if (null != U) {
+      var e, n, l, t, r;
+      x.default.track(C.HAw.SERVER_GUIDE_VIEWED, S(M({}, (0, u.H$)(a.id)), {
+        num_member_actions: null != (e = null == (t = U.newMemberActions) ? true : t.length) ? e : 0,
+        num_member_actions_completed: Object.keys(null != (n = p.A.getCompletedActions(a.id)) ? n : {}).length,
+        num_resource_channels: null != (l = null == (r = U.resourceChannels) ? true : r.length) ? l : 0
       }))
     }
-  }, [r.id, B]), a.useEffect(() => () => {
-    b.A.closeChannelSidebar(_.VV.GUILD_HOME)
-  }, []), a.useEffect(() => {
-    z && B !== j.A && d.A.escapeToDefaultChannel(r.id)
-  }, [r.id, z, B]), z) ? null : (0, t.jsxs)(t.Fragment, {
+  }, [a.id, U]), r.useEffect(() => () => {
+    f.A.closeChannelSidebar(O.VV.GUILD_HOME)
+  }, []), r.useEffect(() => {
+    z && U !== j.A && o.A.escapeToDefaultChannel(a.id)
+  }, [a.id, z, U]), z) ? null : (0, t.jsxs)(t.Fragment, {
     children: [(0, t.jsxs)("div", {
       className: i()(G.TE, E.Tp, {
         [G.js]: H,
-        [G.jl]: H && L
+        [G.jl]: H && T
       }),
       children: [(0, t.jsx)(P, {
-        guild: r
-      }), (0, t.jsx)(c.GtU, S(M({}, U), {
+        guild: a
+      }), (0, t.jsx)(c.GtU, S(M({}, B), {
         children: (0, t.jsxs)("div", {
           className: i()(E.$d, {
-            [E.Mk]: Q
+            [E.Mk]: F
           }),
           children: [(0, t.jsx)("div", {
             className: E.QI,
-            children: (0, t.jsx)(f.A, {
-              guild: r,
-              titleClassName: $ ? E.H2 : true
+            children: (0, t.jsx)(m.A, {
+              guild: a,
+              titleClassName: W ? E.H2 : true
             })
           }), (0, t.jsxs)("div", {
             className: i()(E.xr, E.QI),
             children: [(0, t.jsxs)("div", {
               className: E.rb,
-              children: [K && (0, t.jsx)(I.A, {
-                guildId: r.id,
+              children: [K && (0, t.jsx)(N.A, {
+                guildId: a.id,
                 welcomeMessage: V
-              }), K && (0, t.jsx)(N.A, {
-                guildId: r.id
-              }), !K || Q ? (0, t.jsx)(O.Ay, {
-                guild: r,
+              }), K && (0, t.jsx)(y.A, {
+                guildId: a.id
+              }), !K || F ? (0, t.jsx)(I.Ay, {
+                guild: a,
                 isNewMember: K
               }) : null]
-            }), Q ? null : (0, t.jsx)(y.A, {
-              guild: r,
+            }), F ? null : (0, t.jsx)(v.A, {
+              guild: a,
               isNewMember: K
             })]
           })]
         })
       }))]
-    }), H ? (0, t.jsx)(v.A, {
+    }), H ? (0, t.jsx)(_.A, {
       pageWidth: h,
       onSidebarResize: (e, n) => {
-        R(n), k(e)
+        k(n), R(e)
       }
     }) : null]
   })

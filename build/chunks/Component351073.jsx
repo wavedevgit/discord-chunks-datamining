@@ -1,7 +1,7 @@
 /** Chunk was on 31748 **/
 /** chunk id: 351073, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,42 +15,42 @@ var Chunk627968 = require("./627968.js"),
   Chunk427160 = require("./427160.js"),
   Chunk304713 = require("./304713.js");
 
-function b(e) {
+function g(e) {
   let {
     focused: t,
     channelId: n,
     streamerId: i,
     stream: u
-  } = e, b = r.useRef(null), g = (0, s.bG)([c.default], () => c.default.getCurrentUser());
-  a()(null != g, "user cannot be null"), (0, f.A)(b, g, i, n);
+  } = e, g = l.useRef(null), m = (0, o.bG)([c.default], () => c.default.getCurrentUser());
+  a()(null != m, "user cannot be null"), (0, f.A)(g, m, i, n);
   let {
-    handleClick: m,
+    handleClick: _,
     handleMouseDown: h,
-    handleMouseEnter: A,
-    handleMouseMove: y,
-    handleMouseUp: _
+    handleMouseEnter: y,
+    handleMouseMove: A,
+    handleMouseUp: b
   } = (0, d.A)({
-    user: g,
+    user: m,
     channelId: n,
     streamerId: i,
     stream: u,
     focused: t,
-    canvas: b.current
+    canvas: g.current
   });
-  return (0, l.jsx)(o.A, {
-    children: (0, l.jsx)("canvas", {
-      ref: b,
-      onClick: m,
+  return (0, r.jsx)(s.A, {
+    children: (0, r.jsx)("canvas", {
+      ref: g,
+      onClick: _,
       onMouseDown: h,
-      onMouseEnter: A,
-      onMouseMove: y,
-      onMouseUp: _,
+      onMouseEnter: y,
+      onMouseMove: A,
+      onMouseUp: b,
       className: p.s
     })
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     isSharedCanvasEnabled: t
   } = u.A.useExperiment({
@@ -59,20 +59,20 @@ function g(e) {
   }, {
     autoTrackExposure: true
   });
-  return !t || e.hasScreenMessage ? null : (0, l.jsx)(b, function(e) {
+  return !t || e.hasScreenMessage ? null : (0, r.jsx)(g, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        l = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), l.forEach(function(t) {
-        var l;
-        l = n[t], t in e ? Object.defineProperty(e, t, {
-          value: l,
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = l
+        }) : e[t] = r
       })
     }
     return e

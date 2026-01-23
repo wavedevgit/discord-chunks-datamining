@@ -88,7 +88,7 @@ function H(e) {
   let {
     channel: p,
     isLoading: _
-  } = e, [C, G] = i.useState(false), V = (0, o.bG)([I.Ay], () => I.Ay.getCurrentEmbeddedActivity()), F = null == V ? true : V.applicationId, B = (0, o.bG)([I.Ay], () => null != F && I.Ay.isProxyTicketRefreshing(F), [F]), H = (0, o.bG)([I.Ay], () => I.Ay.getActivityPanelMode()), Y = (0, h.h)(F), W = null == V ? true : V.launchId, K = (0, o.bG)([A.A], () => A.A.getChannelId() === (null == p ? true : p.id)), {
+  } = e, [C, G] = i.useState(false), V = (0, o.bG)([S.Ay], () => S.Ay.getCurrentEmbeddedActivity()), F = null == V ? true : V.applicationId, B = (0, o.bG)([S.Ay], () => null != F && S.Ay.isProxyTicketRefreshing(F), [F]), H = (0, o.bG)([S.Ay], () => S.Ay.getActivityPanelMode()), Y = (0, h.h)(F), W = null == V ? true : V.launchId, K = (0, o.bG)([v.A], () => v.A.getChannelId() === (null == p ? true : p.id)), {
     dockedRect: z,
     isHidden: q
   } = (0, o.cf)([O.A], () => {
@@ -156,7 +156,7 @@ function H(e) {
       onMouseDown: n,
       onMouseLeave: i,
       onJumpToChannel: () => {
-        es(), (0, S.gk)(x.Gd.PANEL)
+        es(), (0, I.gk)(x.Gd.PANEL)
       },
       channel: p,
       applicationId: V.applicationId,
@@ -192,7 +192,7 @@ function H(e) {
         })
       }
     }, [F, ei]), null == V || null == W || (0, R.A)(null == p ? true : p.id) && null == Z || null == Y) return null;
-  let ec = Array.from(V.userIds).map(e => v.default.getUser(e)).filter(e => null != e),
+  let ec = Array.from(V.userIds).map(e => A.default.getUser(e)).filter(e => null != e),
     eu = {
       instance_id: null != (t = null != (n = V.compositeInstanceId) ? n : V.launchId) ? t : "",
       location_id: null == (a = V.location) ? true : a.id,
@@ -200,7 +200,7 @@ function H(e) {
       referrer_id: V.referrerId,
       custom_id: V.customId
     };
-  return null != V.proxyTicket && (eu.discord_proxy_ticket = V.proxyTicket), (null == p ? true : p.guild_id) != null && (null == p ? true : p.guild_id) !== "" && (eu.guild_id = p.guild_id), (null == p ? true : p.id) != null && (null == p ? true : p.id) !== "" && (eu.channel_id = p.id), (0, r.jsx)(y.Ay, {
+  return null != V.proxyTicket && (eu.discord_proxy_ticket = V.proxyTicket), (null == p ? true : p.guild_id) != null && (null == p ? true : p.guild_id) !== "" && (eu.guild_id = p.guild_id), (null == p ? true : p.id) != null && (null == p ? true : p.id) !== "" && (eu.channel_id = p.id), (0, r.jsx)(b.Ay, {
     timeout: 2e3,
     children: e => {
       var t, n;
@@ -209,7 +209,7 @@ function H(e) {
         onActive: a,
         onForceIdle: o
       } = e;
-      return (0, r.jsxs)(b.A, {
+      return (0, r.jsxs)(y.A, {
         className: s()(M.zr, {
           [M.NW]: ei,
           [U.a8]: ei,
@@ -257,7 +257,7 @@ function H(e) {
 let Y = e => {
   let {
     channel: t
-  } = e, n = F(e, ["channel"]), i = I.Ay.getCurrentEmbeddedActivity();
+  } = e, n = F(e, ["channel"]), i = S.Ay.getCurrentEmbeddedActivity();
   (0, C.A)({
     connectedEmbeddedActivity: i
   });

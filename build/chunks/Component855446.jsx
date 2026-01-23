@@ -1,12 +1,12 @@
 /** Chunk was on 97492 **/
 /** chunk id: 855446, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => v
+  C: () => j
 }), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk696292 = require("./696292.js"),
   Chunk397927 = require("./397927.js"),
@@ -19,35 +19,35 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk279240 = require("./279240.js");
 let y = ["embedded_cover"],
-  O = {
+  _ = {
     tension: 800,
     friction: 24
   };
-var j = ((r = j || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
+var O = ((r = O || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
 
-function v(e) {
+function j(e) {
   var t;
   let {
     context: n,
     activityItem: r,
-    onClick: a,
-    aspectRatio: j = 0,
-    animatedDivClass: v,
-    commandOrigin: x
+    onClick: s,
+    aspectRatio: O = 0,
+    animatedDivClass: j,
+    commandOrigin: v
   } = e, {
-    onActivityItemSelected: E,
-    imageBackground: _,
+    onActivityItemSelected: x,
+    imageBackground: E,
     activityAction: C,
     labelType: S
-  } = (0, f.Ay)({
+  } = (0, p.Ay)({
     context: n,
     activityItem: r,
     guildId: null != (t = n.channel.getGuildId()) ? t : true,
     locationObject: {},
-    onActivityItemSelected: a,
-    embeddedActivitiesManager: b.A,
+    onActivityItemSelected: s,
+    embeddedActivitiesManager: g.A,
     assetNames: y,
-    commandOrigin: x
+    commandOrigin: v
   }), [I, N] = i.useState(false), T = i.useCallback(() => {
     N(true)
   }, [N]), P = i.useCallback(() => {
@@ -56,13 +56,13 @@ function v(e) {
     className: A.Gz,
     children: (0, l.jsx)("div", {
       className: A.fC,
-      children: (0, l.jsx)(h.A, {
+      children: (0, l.jsx)(f.A, {
         labelType: S
       })
     })
   }), [S]), R = i.useMemo(() => {
     switch (C) {
-      case f.o6.JOIN:
+      case p.o6.JOIN:
         return (0, l.jsx)("div", {
           className: A.m9,
           children: (0, l.jsx)("div", {
@@ -70,36 +70,36 @@ function v(e) {
             children: (0, l.jsx)(u.Text, {
               variant: "text-sm/medium",
               color: "always-white",
-              children: m.intl.string(m.t.VJlc0S)
+              children: b.intl.string(b.t.VJlc0S)
             })
           })
         });
-      case f.o6.LEAVE:
+      case p.o6.LEAVE:
         return (0, l.jsx)("div", {
           className: A.m9,
           children: (0, l.jsx)("div", {
-            className: s()(A.aF, A.pS),
+            className: a()(A.aF, A.pS),
             children: (0, l.jsx)(u.Text, {
               variant: "text-sm/medium",
               color: "always-white",
-              children: m.intl.string(m.t["wH/wDO"])
+              children: b.intl.string(b.t["wH/wDO"])
             })
           })
         });
-      case f.o6.START:
+      case p.o6.START:
       default:
         return null
     }
   }, [C]);
   return (0, l.jsx)(u.DUT, {
-    onClick: E,
+    onClick: x,
     onFocus: T,
     onBlur: P,
     onMouseEnter: T,
     onMouseLeave: P,
     className: A.XA,
     children: (0, l.jsx)(u.c7X, {
-      config: O,
+      config: _,
       from: {
         value: 0
       },
@@ -111,21 +111,21 @@ function v(e) {
           value: t
         } = e;
         return (0, l.jsx)(u.NPJ, {
-          theme: g.NJ8.DARK,
+          theme: m.NJ8.DARK,
           children: e => (0, l.jsx)(d.A, {
             applicationId: r.application.id,
             questContent: c.u.ACTIVITY_SUGGESTION,
             children: n => (0, l.jsxs)(o.animated.div, {
               ref: n,
-              className: s()(e, A.LM, v, {
-                [A.$g]: 0 === j,
-                [A.J3]: 1 === j
+              className: a()(e, A.LM, j, {
+                [A.$g]: 0 === O,
+                [A.J3]: 1 === O
               }),
               style: {
                 transform: t.to([0, 1], [1, 1.05]).to(e => "scale(".concat(e, ")"))
               },
-              children: [(0, l.jsx)(p.A, {
-                imageBackground: _,
+              children: [(0, l.jsx)(h.A, {
+                imageBackground: E,
                 applicationName: r.application.name,
                 imageClassName: A.jj,
                 imageNotFoundClassName: A.v_
@@ -137,4 +137,4 @@ function v(e) {
     })
   })
 }
-v.AspectRatio = j
+j.AspectRatio = O

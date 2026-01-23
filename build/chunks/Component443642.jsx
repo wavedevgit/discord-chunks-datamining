@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk788868 = require("./788868.js"),
   Chunk444736 = require("./444736.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,13 +38,13 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,13 +55,13 @@ function A(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
-  I = e => {
+let I = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
+  S = e => {
     null != e && c.Ay.trackWithMetadata(g.HAw.EXPRESSION_TOOLTIP_VIEWED, {
       type: E.e.STICKER_IN_MESSAGE_HOVER,
       expression_id: e.id,
@@ -75,18 +75,18 @@ let S = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
       renderableSticker: t,
       channel: n,
       isInteracting: s
-    } = e, c = i.useRef(null), [f, _] = i.useState(true), [g, E] = i.useState(String(Date.now())), [y] = (0, p.Zq)(t, s), {
-      analyticsLocations: A
+    } = e, c = i.useRef(null), [f, _] = i.useState(true), [g, E] = i.useState(String(Date.now())), [b] = (0, p.Zq)(t, s), {
+      analyticsLocations: v
     } = (0, u.Ay)(l.A.STICKER_MESSAGE), T = (0, r.jsxs)("span", {
-      className: b.Zl,
+      className: y.Zl,
       children: [(0, r.jsx)(o.s2T, {
         size: "xs",
         color: "currentColor",
-        className: b.lA
-      }), (null != y ? y : t).name]
+        className: y.lA
+      }), (null != b ? b : t).name]
     });
     return (0, r.jsx)(u.f5, {
-      value: A,
+      value: v,
       children: (0, r.jsx)(o.YNO, {
         align: "center",
         animation: o.YNO.Animation.TRANSLATE,
@@ -94,7 +94,7 @@ let S = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
         onRequestClose: () => {
           _(true)
         },
-        renderPopout: e => (0, r.jsx)(m.A, v(O({}, e), {
+        renderPopout: e => (0, r.jsx)(m.A, A(O({}, e), {
           renderableSticker: t,
           channel: n,
           refreshPositionKey: () => E(String(Date.now()))
@@ -104,24 +104,24 @@ let S = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
           let {
             onClick: n
           } = e;
-          return (0, r.jsx)(a.m, v(O({}, d.Uk), {
+          return (0, r.jsx)(a.m, A(O({}, d.Uk), {
             shouldShow: f,
             __unsupportedReactNodeAsText: (0, d.yR)(T),
             "aria-label": false,
             onTooltipShow: () => {
-              I(y)
+              S(b)
             },
             children: (0, r.jsx)(o.DUT, {
               innerRef: c,
-              className: b.q7,
+              className: y.q7,
               onClick: e => {
                 _(!f), n(e)
               },
               tag: "span",
               children: (0, r.jsx)(h.A, {
                 isInteracting: s,
-                size: S,
-                sticker: null != y ? y : t
+                size: I,
+                sticker: null != b ? b : t
               })
             })
           }))

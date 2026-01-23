@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 775946, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => s
+  A: () => a
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -9,13 +9,13 @@ var Chunk827734 = require("./827734.js"),
   Chunk397927 = require("./397927.js"),
   Chunk461140 = require("./461140.js");
 
-function s(e) {
+function a(e) {
   let {
     mentionsCount: t,
     isMentionLowImportance: n
   } = e;
   return (0, r.jsx)("div", {
-    className: a.R,
+    className: s.R,
     "aria-hidden": true,
     children: (0, r.jsx)(i.hVq, {
       count: t,

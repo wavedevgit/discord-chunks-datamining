@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  i = require.n(Chunk503698),
+  r = require.n(Chunk503698),
   Chunk397927 = require("./397927.js");
 require("./714510.js"), require("./92246.js"), require("./985018.jsx");
 var Chunk718493 = require("./718493.js");
@@ -19,7 +19,7 @@ function o(e) {
     hasNextStep: l
   } = e;
   return (0, a.jsxs)("li", {
-    className: i()(s.gY, {
+    className: r()(s.gY, {
       [s.HP]: n
     }, {
       [s.h4]: l
@@ -28,9 +28,9 @@ function o(e) {
       className: s.cJ,
       children: [(0, a.jsx)("div", {
         className: s.$P,
-        children: n && (0, a.jsx)(r.rOg, {
+        children: n && (0, a.jsx)(i.rOg, {
           className: s.ap,
-          color: r.LU0.colors.WHITE
+          color: i.LU0.colors.WHITE
         })
       }), l && (0, a.jsx)("div", {
         className: s.UK
@@ -46,7 +46,7 @@ function c(e) {
   let {
     children: t
   } = e;
-  return (0, a.jsx)(r.Text, {
+  return (0, a.jsx)(i.Text, {
     color: "text-muted",
     variant: "text-xs/medium",
     children: t
@@ -62,7 +62,7 @@ let d = function(e) {
     className: s.iE,
     children: [(0, a.jsx)("div", {
       className: s.Mj,
-      children: (0, a.jsx)(r.Heading, {
+      children: (0, a.jsx)(i.Heading, {
         className: s.R_,
         color: "text-strong",
         variant: "text-xs/semibold",

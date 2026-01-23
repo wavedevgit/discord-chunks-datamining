@@ -27,13 +27,13 @@ function _(e) {
     className: g,
     "aria-label": E
   } = e, {
-    i18n: b
-  } = (0, d.G9)(), [y, O] = i.useState(t);
+    i18n: y
+  } = (0, d.G9)(), [b, O] = i.useState(t);
   return i.useEffect(() => {
     O(t)
   }, [t]), (0, r.jsx)(o.Vv, {
     value: t,
-    focusedValue: y,
+    focusedValue: b,
     onFocusChange: O,
     onChange: n,
     minValue: a,
@@ -50,7 +50,7 @@ function _(e) {
           variant: "icon-only",
           size: "sm",
           icon: u.ChevronSmallLeftIcon,
-          "aria-label": b.CALENDAR_PREVIOUS_MONTH_LABEL,
+          "aria-label": y.CALENDAR_PREVIOUS_MONTH_LABEL,
           onClick: () => e.state.focusPreviousPage(),
           slot: "previous"
         }), (0, r.jsx)(f.E, {
@@ -62,7 +62,7 @@ function _(e) {
           size: "sm",
           icon: u.ChevronSmallRightIcon,
           onClick: () => e.state.focusNextPage(),
-          "aria-label": b.CALENDAR_NEXT_MONTH_LABEL,
+          "aria-label": y.CALENDAR_NEXT_MONTH_LABEL,
           slot: "next"
         })]
       }), (0, r.jsxs)(o.r8, {

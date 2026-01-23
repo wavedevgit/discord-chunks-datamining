@@ -2,7 +2,7 @@
 /** chunk id: 319805, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => x
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -19,7 +19,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk636997 = require("./636997.js");
 
-function p(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function p(e) {
   return e
 }
 
-function x(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,88 +50,88 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = function(e) {
+let x = function(e) {
   let {
     guild: t,
-    disabled: h,
+    disabled: x,
     role: j
-  } = e, O = (0, c.qE)(t.id, j), {
-    analyticsLocations: y
-  } = (0, s.Ay)(), v = t.features.has(f.GuildFeatures.ROLE_ICONS), A = e => {
-    v || ((0, l.zV)(f.HAw.PREMIUM_GUILD_PROMOTION_OPENED, {
-      location: x(p({}, e), {
-        section: f.JJy.CUSTOM_ROLE_ICONS_TOOLTIP
+  } = e, _ = (0, o.qE)(t.id, j), {
+    analyticsLocations: O
+  } = (0, s.Ay)(), v = t.features.has(g.GuildFeatures.ROLE_ICONS), y = e => {
+    v || ((0, l.zV)(g.HAw.PREMIUM_GUILD_PROMOTION_OPENED, {
+      location: h(b({}, e), {
+        section: g.JJy.CUSTOM_ROLE_ICONS_TOOLTIP
       }),
       guild_id: null == t ? true : t.id,
-      location_stack: y
-    }), (0, o.A)({
-      analyticsLocations: y,
+      location_stack: O
+    }), (0, c.A)({
+      analyticsLocations: O,
       analyticsSourceLocation: {
-        page: f.liQ.GUILD_SETTINGS,
-        section: f.JJy.GUILD_ROLE_EDIT_UPSELL_MODAL,
-        object: f.ZSU.BADGE
+        page: g.liQ.GUILD_SETTINGS,
+        section: g.JJy.GUILD_ROLE_EDIT_UPSELL_MODAL,
+        object: g.ZSU.BADGE
       },
       guild: t,
-      perks: (0, g.$_)()
+      perks: (0, m.$_)()
     }))
-  }, E = (0, r.jsx)(a.A, {
-    className: m.Jz,
+  }, A = (0, r.jsx)(a.A, {
+    className: f.Jz,
     guild: t,
-    guildFeature: f.GuildFeatures.ROLE_ICONS,
+    guildFeature: g.GuildFeatures.ROLE_ICONS,
     tooltipPosition: "top",
     hideTooltip: v,
-    onClick: () => A({
-      object: f.ZSU.LEARN_MORE,
-      objectType: f.AnalyticsObjectTypes.TIER_2
+    onClick: () => y({
+      object: g.ZSU.LEARN_MORE,
+      objectType: g.AnalyticsObjectTypes.TIER_2
     })
   });
   return (0, r.jsxs)("div", {
-    className: m.kL,
+    className: f.kL,
     children: [(0, r.jsxs)(i.zEo, {
-      className: m.Hc,
+      className: f.Hc,
       children: [(0, r.jsx)("div", {
-        children: b.intl.string(b.t.B9grJw)
-      }), E]
+        children: p.intl.string(p.t.B9grJw)
+      }), A]
     }), (0, r.jsx)(i.ayl, {
-      className: m.h_,
-      children: b.intl.string(b.t.I3YQeV)
+      className: f.h_,
+      children: p.intl.string(p.t.I3YQeV)
     }), (0, r.jsxs)("div", {
-      className: m.Mw,
+      className: f.Mw,
       children: [(0, r.jsx)("div", {
-        className: m.i1,
-        children: null != O ? (0, r.jsx)(d.A, x(p({}, O), {
-          className: m.s1,
+        className: f.i1,
+        children: null != _ ? (0, r.jsx)(d.A, h(b({}, _), {
+          className: f.s1,
           enableTooltip: false
         })) : (0, r.jsx)(i.XGR, {
           size: "custom",
           color: "currentColor",
           width: 24,
           height: 24,
-          className: m.VH
+          className: f.VH
         })
       }), (0, r.jsx)(i.Button, {
-        onClick: () => t.features.has(f.GuildFeatures.ROLE_ICONS) ? void(0, i.mMO)(async () => {
+        onClick: () => t.features.has(g.GuildFeatures.ROLE_ICONS) ? void(0, i.mMO)(async () => {
           let {
             default: e
           } = await n.e("64939").then(n.bind(n, 836774));
-          return n => (0, r.jsx)(e, x(p({}, n), {
+          return n => (0, r.jsx)(e, h(b({}, n), {
             guildId: t.id,
             onUploadIcon: e => (0, u.n3)(j.id, e, null),
             onSelectUnicodeEmoji: e => (0, u.n3)(j.id, null, e)
           }))
-        }) : A({
-          object: f.ZSU.UPLOAD_IMAGE
+        }) : y({
+          object: g.ZSU.UPLOAD_IMAGE
         }),
         variant: "primary",
-        disabled: h,
-        text: b.intl.string(b.t.mD1oGB)
-      }), null != O ? (0, r.jsx)(i.Button, {
+        disabled: x,
+        text: p.intl.string(p.t.mD1oGB)
+      }), null != _ ? (0, r.jsx)(i.Button, {
         onClick: () => {
           (0, u.n3)(j.id, null, null)
         },
         variant: "critical-secondary",
-        disabled: h,
-        text: b.intl.string(b.t["uY+Nk/"])
+        disabled: x,
+        text: p.intl.string(p.t["uY+Nk/"])
       }) : null]
     })]
   })

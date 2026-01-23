@@ -2,7 +2,7 @@
 /** chunk id: 611635, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  fs: () => b,
+  fs: () => y,
   xb: () => E
 }), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
@@ -32,19 +32,19 @@ function E() {
   return e
 }
 
-function b(e) {
+function y(e) {
   let {
     rootClassName: t,
     lang: n,
     theme: a,
     density: E,
-    focused: b,
-    fontScale: y,
+    focused: y,
+    fontScale: b,
     fontScaleClass: O,
-    mouseMode: A,
-    keyboardModeEnabled: v,
-    saturation: S,
-    desaturateUserColors: I,
+    mouseMode: v,
+    keyboardModeEnabled: A,
+    saturation: I,
+    desaturateUserColors: S,
     useForcedColors: T,
     systemForcedColors: C,
     useReducedMotion: N,
@@ -53,18 +53,18 @@ function b(e) {
     highContrastMode: P,
     isPopoutWindow: D,
     children: x
-  } = e, L = window.CSS.supports("selector(::-webkit-scrollbar)"), j = (0, l.bG)([d.A], () => d.A.zoom), M = D ? "" : "--custom-zoom: ".concat(j, ";"), k = (0, _.A)("highlight_mana_buttons"), U = (0, _.A)("highlight_mana_components"), G = (0, _.A)("highlight_void_toggleables"), V = (0, _.A)("highlight_void_buttons"), F = (0, l.bG)([h.Ay], () => h.Ay.hdrDynamicRange), B = "font-size: ".concat(y, "%; --saturation-factor: ").concat(S, "; dynamic-range-limit: ").concat(F, "; ").concat(M), H = s()((0, f.A)(), (0, c.mo9)(a), "density-".concat(E), O, {
-    "low-saturation": S <= c.yvq,
-    "keyboard-mode": v,
+  } = e, L = window.CSS.supports("selector(::-webkit-scrollbar)"), j = (0, l.bG)([d.A], () => d.A.zoom), M = D ? "" : "--custom-zoom: ".concat(j, ";"), k = (0, _.A)("highlight_mana_buttons"), U = (0, _.A)("highlight_mana_components"), G = (0, _.A)("highlight_void_toggleables"), V = (0, _.A)("highlight_void_buttons"), F = (0, l.bG)([h.Ay], () => h.Ay.hdrDynamicRange), B = "font-size: ".concat(b, "%; --saturation-factor: ").concat(I, "; dynamic-range-limit: ").concat(F, "; ").concat(M), H = s()((0, f.A)(), (0, c.mo9)(a), "density-".concat(E), O, {
+    "low-saturation": I <= c.yvq,
+    "keyboard-mode": A,
     "decorate-links": R,
     "no-webkit-scrollbar": !L,
     "has-webkit-scrollbar": L,
-    "mouse-mode": A,
+    "mouse-mode": v,
     "reduce-motion": N,
     "full-motion": !N,
     "is-mobile": o.Fr,
-    "app-focused": b,
-    "desaturate-user-colors": I,
+    "app-focused": y,
+    "desaturate-user-colors": S,
     "disable-forced-colors": !T && "active" === C,
     "enable-forced-colors": T,
     "visual-refresh": true,
@@ -80,8 +80,8 @@ function b(e) {
     lang: n,
     style: B,
     className: H,
-    focused: b
-  }), [n, B, H, b]);
+    focused: y
+  }), [n, B, H, y]);
   return (0, u.Ay)(() => {
     m.Ay.setTrafficLightPosition({
       x: 9,

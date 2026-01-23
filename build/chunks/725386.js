@@ -15,7 +15,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk229231 = require("./229231.js");
 
 function p(e) {
-  let t = (0, i.bG)([s.default], () => s.default.getCurrentUser()),
+  let t = (0, i.bG)([o.default], () => o.default.getCurrentUser()),
     n = (0, d.A)(null == t ? true : t.id),
     p = (0, a.DB)(e);
   return r.useMemo(() => {
@@ -26,6 +26,6 @@ function p(e) {
     })) : (0, u.hL)(n) ? t.has(n) ? [] : new u.Yy({
       type: n,
       games: []
-    }) : void(0, o.xb)(n))
+    }) : void(0, s.xb)(n))
   }, [p, n])
 }

@@ -2,7 +2,7 @@
 /** chunk id: 906779, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => c
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -12,7 +12,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function o(e) {
+function c(e) {
   let {
     team: t
   } = e, n = function(e, t) {
@@ -31,16 +31,16 @@ function o(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
     return l
-  }(e, ["team"]), o = (0, l.gN)() || null == t ? null : c.intl.format(c.t.d1sCiW, {
+  }(e, ["team"]), c = (0, l.gN)() || null == t ? null : o.intl.format(o.t.d1sCiW, {
     url: a.X7G.DEVELOPER_PORTAL_PAYOUT_SETTINGS(t.id)
   });
   return 0 === n.payoutsByPeriod.length ? (0, r.jsxs)(i.Text, {
     variant: "text-sm/medium",
-    children: [c.intl.string(c.t.RrtXuy), " ", o]
+    children: [o.intl.string(o.t.RrtXuy), " ", c]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(i.Text, {
       variant: "text-sm/medium",
-      children: [c.intl.string(c.t["9Ub4KY"]), " ", o]
+      children: [o.intl.string(o.t["9Ub4KY"]), " ", c]
     }), (0, r.jsx)(i.hKd, {
       size: 16
     }), (0, r.jsx)(s.A, function(e) {

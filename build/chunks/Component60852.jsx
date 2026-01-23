@@ -17,31 +17,31 @@ function u(e) {
     guildId: t,
     transitionState: i,
     onClose: u,
-    onConfirm: p
+    onConfirm: _
   } = e, {
     rules: h,
-    rulesAccepted: _
-  } = (0, c.P)(), b = l.useCallback(() => {
-    u(), p()
-  }, [u, p]);
-  return (0, n.jsx)(r.aFV, {
-    title: o.intl.string(o.t["Q8OFN+"]),
-    subtitle: o.intl.format(o.t.JLUVfo, {
-      onCommunityGuidelinesClick: () => (0, s.p3)({
-        articleId: a.MVz.PUBLIC_GUILD_GUILDLINES,
+    rulesAccepted: p
+  } = (0, r.P)(), k = l.useCallback(() => {
+    u(), _()
+  }, [u, _]);
+  return (0, n.jsx)(c.aFV, {
+    title: a.intl.string(a.t["Q8OFN+"]),
+    subtitle: a.intl.format(a.t.JLUVfo, {
+      onCommunityGuidelinesClick: () => (0, o.p3)({
+        articleId: s.MVz.PUBLIC_GUILD_GUILDLINES,
         guildId: t,
-        modalStep: s.iv.AGREE_TO_RULES
+        modalStep: o.iv.AGREE_TO_RULES
       }),
-      onDiscoveryGuidelinesClick: () => (0, s.p3)({
-        articleId: a.MVz.SERVER_DISCOVERY_GUIDELINES,
+      onDiscoveryGuidelinesClick: () => (0, o.p3)({
+        articleId: s.MVz.SERVER_DISCOVERY_GUIDELINES,
         guildId: t,
-        modalStep: s.iv.AGREE_TO_RULES
+        modalStep: o.iv.AGREE_TO_RULES
       })
     }),
     actions: [{
-      disabled: !_,
-      text: o.intl.string(o.t["qjtt/p"]),
-      onClick: b
+      disabled: !p,
+      text: a.intl.string(a.t["qjtt/p"]),
+      onClick: k
     }],
     transitionState: i,
     onClose: u,
@@ -49,7 +49,7 @@ function u(e) {
       className: d.H,
       children: h.map(e => (0, n.jsx)("div", {
         className: d.k,
-        children: (0, n.jsx)(r.Sc0, {
+        children: (0, n.jsx)(c.Sc0, {
           checked: e.checked,
           onChange: e.onCheck,
           label: e.title,

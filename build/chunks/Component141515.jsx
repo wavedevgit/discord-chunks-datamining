@@ -17,7 +17,7 @@ function u(e) {
     guild: t,
     selected: n
   } = e;
-  return (0, r.jsx)(a.G, {
+  return (0, r.jsx)(s.G, {
     id: "home-tab-".concat(t.id),
     renderIcon: e => (0, r.jsx)(l.Zf8, {
       size: "md",
@@ -27,7 +27,7 @@ function u(e) {
     text: c.intl.string(c.t.VbpLyU),
     selected: n,
     onClick: function() {
-      (0, i.pX)(s.BVt.CHANNEL(t.id, o.VV.GUILD_HOME))
+      (0, i.pX)(a.BVt.CHANNEL(t.id, o.VV.GUILD_HOME))
     }
   })
 }

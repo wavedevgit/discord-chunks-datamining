@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 968930, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 });
 var Chunk73153 = require("./73153.js"),
   Chunk631670 = require("./631670.js"),
@@ -13,7 +13,7 @@ var Chunk73153 = require("./73153.js"),
   Chunk287809 = require("./287809.js"),
   Chunk927578 = require("./927578.js"),
   Chunk339984 = require("./339984.js");
-class f extends Chunk272355.A {
+class h extends Chunk272355.A {
   _initialize() {
     r.h.subscribe("PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL", this.maybeOpenProfilePreviewModal)
   }
@@ -27,21 +27,21 @@ class f extends Chunk272355.A {
         file: n,
         guildId: r,
         analyticsSource: l,
-        isTryItOut: f
+        isTryItOut: h
       } = e;
-      if (f) return void(0, c.e$)(t);
-      let h = u.default.getCurrentUser(),
-        A = null != r ? a.zq : i.zq,
-        g = d.Ay.canUseAnimatedAvatar(h);
-      if (g || "image/gif" !== n.type) return void A(t);
-      if (null == h) return;
-      let m = (0, o.V7)({
-        userId: h.id,
+      if (h) return void(0, c.e$)(t);
+      let g = u.default.getCurrentUser(),
+        f = null != r ? a.zq : i.zq,
+        m = d.Ay.canUseAnimatedAvatar(g);
+      if (m || "image/gif" !== n.type) return void f(t);
+      if (null == g) return;
+      let A = (0, o.V7)({
+        userId: g.id,
         image: t
       });
-      if (!g) return void(0, s.G)({
+      if (!m) return void(0, s.G)({
         uploadType: p.HL.AVATAR,
-        imageSrc: m,
+        imageSrc: A,
         analyticsSource: l
       })
     })(e) : e.uploadType === p.HL.BANNER ? (e => {
@@ -53,9 +53,9 @@ class f extends Chunk272355.A {
       } = e, l = t.imageUri;
       if (i) return void(0, c.xe)(l);
       let o = u.default.getCurrentUser(),
-        f = null != n ? a.Iz : c.Iz,
-        h = d.Ay.canUsePremiumProfileCustomization(o);
-      d.Ay.canUsePremiumProfileCustomization(o) ? f(l) : null == o || h || (0, s.G)({
+        h = null != n ? a.Iz : c.Iz,
+        g = d.Ay.canUsePremiumProfileCustomization(o);
+      d.Ay.canUsePremiumProfileCustomization(o) ? h(l) : null == o || g || (0, s.G)({
         uploadType: p.HL.BANNER,
         imageSrc: l,
         analyticsSource: r
@@ -63,4 +63,4 @@ class f extends Chunk272355.A {
     })(e) : true
   }
 }
-let h = new f
+let g = new h

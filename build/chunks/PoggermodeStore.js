@@ -56,19 +56,19 @@ function E(e, t) {
   }), e
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = y(e, t), Object.getOwnPropertySymbols)
+  if (a = b(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -76,9 +76,9 @@ function y(e, t) {
   return i
 }
 let O = 7,
-  A = 1e3,
-  v = new Set,
-  S = new Chunk713402.J(function(e) {
+  v = 1e3,
+  A = new Set,
+  I = new Chunk713402.J(function(e) {
     let {
       userId: t,
       channelId: n
@@ -92,7 +92,7 @@ let O = 7,
     return "".concat(n, "-").concat(t)
   });
 
-function I(e) {
+function S(e) {
   return null != e && (e.value > 0 || (null == e ? true : e.multiplier) > 1)
 }
 let T = new Chunk713402.J(function(e) {
@@ -125,14 +125,14 @@ let T = new Chunk713402.J(function(e) {
 function N(e) {
   var t, n, r, i, a, o;
   let l = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    c = S.get(C(e)),
+    c = I.get(C(e)),
     u = E(m({}, c, e), {
       value: null != (t = null != (n = e.value) ? n : null == c ? true : c.value) ? t : 0,
       multiplier: Math.min(null != (r = null != (i = e.multiplier) ? i : null == c ? true : c.multiplier) ? r : 1, O),
       decayInterval: null != (a = null == c ? true : c.decayInterval) ? a : new s.IX
     });
-  S.set(C(e), u), l && (null == (o = u.decayInterval) || o.start(A, () => {
-    let e = S.get(C(u));
+  I.set(C(e), u), l && (null == (o = u.decayInterval) || o.start(v, () => {
+    let e = I.get(C(u));
     if (null != e) {
       let n = u.multiplier !== e.multiplier && u.value !== e.value;
       if (e.value <= 0 || n) {
@@ -155,7 +155,7 @@ function R(e) {
 function w(e) {
   let {
     type: t
-  } = e, n = b(e, ["type"]);
+  } = e, n = y(e, ["type"]);
   if (!d.A.isEnabled()) returnfalse;
   N(n)
 }
@@ -184,8 +184,8 @@ function x(e) {
   } = e;
   if (!d.A.isEnabled()) returnfalse;
   let o = l.default.getId();
-  if (!D(null == a ? true : a.id, o, s, v)) returnfalse;
-  let c = S.get(C({
+  if (!D(null == a ? true : a.id, o, s, A)) returnfalse;
+  let c = I.get(C({
     userId: null != (t = null == a ? true : a.id) ? t : "???",
     channelId: r
   }));
@@ -203,21 +203,21 @@ class L extends(r = Chunk311907.Ay.Store) {
     this.waitFor(l.default, d.A, c.A)
   }
   getComboScore(e, t) {
-    let n = S.get(C({
+    let n = I.get(C({
       userId: e,
       channelId: t
     }));
     return null == n ? 0 : (0, f.RL)(n)
   }
   getUserCombo(e, t) {
-    return S.get(C({
+    return I.get(C({
       userId: e,
       channelId: t
     }))
   }
   isComboing(e, t) {
     let n = this.getUserCombo(e, t);
-    return null != n && n.value >= d.A.combosRequiredCount && I(n)
+    return null != n && n.value >= d.A.combosRequiredCount && S(n)
   }
   getMessageCombo(e) {
     var t;

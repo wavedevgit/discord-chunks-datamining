@@ -76,11 +76,11 @@ function R(e, t) {
 }
 
 function w() {
-  let e = p.A.getUserAffinities().slice(0, 4).map(e => b.default.getUser(e.otherUserId)).filter(e => null != e),
+  let e = p.A.getUserAffinities().slice(0, 4).map(e => y.default.getUser(e.otherUserId)).filter(e => null != e),
     t = g.A.affinities.slice(0, 3).map(e => {
       let t = E.A.getGuild(e.guildId);
       return i()(null != t, "Guild must exist"), {
-        guild: (0, A.yF)(R(C({}, t), {
+        guild: (0, v.yF)(R(C({}, t), {
           features: [...t.features]
         })),
         numMessagesSent: 0x9e6ca8,
@@ -194,11 +194,11 @@ async function P() {
       power_level_percentile: p,
       messages: h,
       emojis: g,
-      voice: b,
-      guilds: y,
+      voice: y,
+      guilds: b,
       users: O,
-      sidekick: S,
-      applications: I,
+      sidekick: I,
+      applications: S,
       quests: T,
       avatar_decoration: N
     } = e;
@@ -218,25 +218,25 @@ async function P() {
         } : true,
         emojis: null != g ? {
           emojis: g.emojis.map(e => R(C({}, e), {
-            id: v.default.isProbablyAValidSnowflake(e.id) ? e.id : true
+            id: A.default.isProbablyAValidSnowflake(e.id) ? e.id : true
           })),
           numEmojisSent: g.num_emojis_sent
         } : true,
-        voice: null != b ? {
-          totalVoiceMinutes: b.total_voice_minutes,
-          totalVoiceMinutesPercentile: b.total_voice_minutes_percentile,
+        voice: null != y ? {
+          totalVoiceMinutes: y.total_voice_minutes,
+          totalVoiceMinutesPercentile: y.total_voice_minutes_percentile,
           topMonth: {
-            month: null != (r = null == (c = b.top_month) ? true : c.month) ? r : 1,
-            numMinutesInVoice: null != (i = null == (u = b.top_month) ? true : u.num_minutes_in_voice) ? i : 0
+            month: null != (r = null == (c = y.top_month) ? true : c.month) ? r : 1,
+            numMinutesInVoice: null != (i = null == (u = y.top_month) ? true : u.num_minutes_in_voice) ? i : 0
           }
         } : true,
-        guilds: null != y ? {
-          guilds: y.guilds.map(e => ({
+        guilds: null != b ? {
+          guilds: b.guilds.map(e => ({
             numMessagesSent: e.num_messages_sent,
             numVoiceMinutes: e.num_voice_minutes,
-            guild: (0, A.Wj)(e.guild, E.A.getGuild(e.guild.id))
+            guild: (0, v.Wj)(e.guild, E.A.getGuild(e.guild.id))
           })),
-          numGuildsJoined: y.num_guilds_joined
+          numGuildsJoined: b.num_guilds_joined
         } : true,
         users: null != O ? O.map(e => {
           let {
@@ -244,23 +244,23 @@ async function P() {
           } = e;
           return new _.A(t)
         }) : true,
-        applications: null != I ? {
-          applications: I.applications.map(e => ({
+        applications: null != S ? {
+          applications: S.applications.map(e => ({
             game: R(C({}, (0, m.M)(e.game)), {
               coverImageHash: e.game.cover_image_hash
             }),
             numDaysPlayed: e.num_sessions
           })),
-          totalGamesPlayed: I.total_games_played
+          totalGamesPlayed: S.total_games_played
         } : true,
         quests: null != T ? {
           numCompleted: T.num_completed,
           numOrbs: T.num_orbs
         } : true,
-        sidekick: null != S ? {
-          numMessagesSent: S.num_messages_sent,
-          numVoiceMinutes: S.num_voice_minutes,
-          user: new _.A(S.user)
+        sidekick: null != I ? {
+          numMessagesSent: I.num_messages_sent,
+          numVoiceMinutes: I.num_voice_minutes,
+          user: new _.A(I.user)
         } : true,
         avatarDecoration: null != N ? {
           type: N.type,
@@ -298,8 +298,8 @@ async function x(e, t) {
     }),
     r = h.A.getChannel(n);
   if (null == r) throw Error("Failed to open private channel");
-  let i = (0, S.qk)().findIndex(t => t.trim() === e);
-  y.default.track(I.HAw.CHECKPOINT_SIDEKICK_MESSAGE_SENT, {
+  let i = (0, I.qk)().findIndex(t => t.trim() === e);
+  b.default.track(S.HAw.CHECKPOINT_SIDEKICK_MESSAGE_SENT, {
     other_user_id: t,
     message_variant: i.toString()
   });

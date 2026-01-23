@@ -26,11 +26,11 @@ var Chunk627968 = require("./627968.js"),
 function O(e) {
   let {
     code: t
-  } = e, [n, O, A] = t.split("-"), {
-    analyticsLocations: v
+  } = e, [n, O, v] = t.split("-"), {
+    analyticsLocations: A
   } = (0, o.Ay)(), {
-    guildScheduledEvent: S,
-    guild: I,
+    guildScheduledEvent: I,
+    guild: S,
     channel: T,
     isMember: C
   } = (0, a.cf)([g.Ay, _.A, f.A, p.Ay, h.default], () => {
@@ -46,13 +46,13 @@ function O(e) {
     }
   }, [n, O]), N = () => {
     if ((0, u.g)({
-        guild: I,
+        guild: S,
         isMember: C,
-        analyticsLocations: v
+        analyticsLocations: A
       }) === u.W.PROCEED) {
       if ((0, c.V)(n)) return void(0, l.Ze)(n);
       s.A.joinGuild(n, {
-        source: y.Q4z.GUILD_EVENT_EMBED
+        source: b.Q4z.GUILD_EVENT_EMBED
       }).catch(() => {})
     }
   };
@@ -61,14 +61,14 @@ function O(e) {
     (0, c.V)(n) ? (0, l.Ze)(n) : (null == T ? true : T.isGuildStageVoice()) ? (0, d.av)(T) : (null == T ? true : T.isGuildVoice()) && E.A.joinVoiceEvent(T.guild_id, T.id)
   }
   return i.useEffect(() => {
-    (null == S ? true : S.id) == null && E.A.fetchGuildEvent(n, O), m.A.getGuildEventUserCounts(n, O, null != A ? [A] : []), m.A.getGuildEventsForCurrentUser(n)
-  }, [O, n, null == S ? true : S.id, A]), (0, r.jsx)(b.Ay, {
-    guild: I,
+    (null == I ? true : I.id) == null && E.A.fetchGuildEvent(n, O), m.A.getGuildEventUserCounts(n, O, null != v ? [v] : []), m.A.getGuildEventsForCurrentUser(n)
+  }, [O, n, null == I ? true : I.id, v]), (0, r.jsx)(y.Ay, {
+    guild: S,
     channel: T,
-    guildScheduledEvent: S,
+    guildScheduledEvent: I,
     isMember: C,
     onAcceptInstantInvite: N,
     onTransitionToInviteChannel: R,
-    recurrenceId: A
+    recurrenceId: v
   })
 }

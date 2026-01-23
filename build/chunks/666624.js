@@ -17,13 +17,13 @@ var f = 0,
   m = 258,
   g = 29,
   E = 256,
-  b = 286,
-  y = 30,
+  y = 286,
+  b = 30,
   O = 19,
-  A = 573,
-  v = 15,
-  S = 16,
-  I = 7,
+  v = 573,
+  A = 15,
+  I = 16,
+  S = 7,
   T = 256,
   C = 16,
   N = 17,
@@ -35,7 +35,7 @@ var f = 0,
   L = 512,
   j = Array(576);
 d(j);
-var M = Array(2 * y);
+var M = Array(2 * b);
 d(M);
 var k = Array(L);
 d(k);
@@ -43,7 +43,7 @@ var U = Array(m - h + 1);
 d(U);
 var G = Array(g);
 d(G);
-var V = Array(y);
+var V = Array(b);
 
 function F(e, t, n, r, i) {
   this.static_tree = e, this.extra_bits = t, this.extra_base = n, this.elems = r, this.max_length = i, this.has_stree = e && e.length
@@ -62,7 +62,7 @@ function Y(e, t) {
 }
 
 function W(e, t, n) {
-  e.bi_valid > S - n ? (e.bi_buf |= t << e.bi_valid & 65535, Y(e, e.bi_buf), e.bi_buf = t >> S - e.bi_valid, e.bi_valid += n - S) : (e.bi_buf |= t << e.bi_valid & 65535, e.bi_valid += n)
+  e.bi_valid > I - n ? (e.bi_buf |= t << e.bi_valid & 65535, Y(e, e.bi_buf), e.bi_buf = t >> I - e.bi_valid, e.bi_valid += n - I) : (e.bi_buf |= t << e.bi_valid & 65535, e.bi_valid += n)
 }
 
 function K(e, t, n) {
@@ -88,8 +88,8 @@ function X(e, t) {
     p = t.stat_desc.extra_base,
     _ = t.stat_desc.max_length,
     h = 0;
-  for (a = 0; a <= v; a++) e.bl_count[a] = 0;
-  for (l[2 * e.heap[e.heap_max] + 1] = 0, n = e.heap_max + 1; n < A; n++)(a = l[2 * l[2 * (r = e.heap[n]) + 1] + 1] + 1) > _ && (a = _, h++), l[2 * r + 1] = a, !(r > c) && (e.bl_count[a]++, s = 0, r >= p && (s = f[r - p]), o = l[2 * r], e.opt_len += o * (a + s), d && (e.static_len += o * (u[2 * r + 1] + s)));
+  for (a = 0; a <= A; a++) e.bl_count[a] = 0;
+  for (l[2 * e.heap[e.heap_max] + 1] = 0, n = e.heap_max + 1; n < v; n++)(a = l[2 * l[2 * (r = e.heap[n]) + 1] + 1] + 1) > _ && (a = _, h++), l[2 * r + 1] = a, !(r > c) && (e.bl_count[a]++, s = 0, r >= p && (s = f[r - p]), o = l[2 * r], e.opt_len += o * (a + s), d && (e.static_len += o * (u[2 * r + 1] + s)));
   if (0 !== h) {
     do {
       for (a = _ - 1; 0 === e.bl_count[a];) a--;
@@ -101,9 +101,9 @@ function X(e, t) {
 }
 
 function Z(e, t, n) {
-  var r, i, a = Array(v + 1),
+  var r, i, a = Array(A + 1),
     s = 0;
-  for (r = 1; r <= v; r++) a[r] = s = s + n[r - 1] << 1;
+  for (r = 1; r <= A; r++) a[r] = s = s + n[r - 1] << 1;
   for (i = 0; i <= t; i++) {
     var o = e[2 * i + 1];
     0 !== o && (e[2 * i] = z(a[o]++, o))
@@ -111,26 +111,26 @@ function Z(e, t, n) {
 }
 
 function Q() {
-  var e, t, n, s, o, l = Array(v + 1);
+  var e, t, n, s, o, l = Array(A + 1);
   for (s = 0, n = 0; s < g - 1; s++)
     for (e = 0, G[s] = n; e < 1 << w[s]; e++) U[n++] = s;
   for (U[n - 1] = s, o = 0, s = 0; s < 16; s++)
     for (e = 0, V[s] = o; e < 1 << P[s]; e++) k[o++] = s;
-  for (o >>= 7; s < y; s++)
+  for (o >>= 7; s < b; s++)
     for (e = 0, V[s] = o << 7; e < 1 << P[s] - 7; e++) k[256 + o++] = s;
-  for (t = 0; t <= v; t++) l[t] = 0;
+  for (t = 0; t <= A; t++) l[t] = 0;
   for (e = 0; e <= 143;) j[2 * e + 1] = 8, e++, l[8]++;
   for (; e <= 255;) j[2 * e + 1] = 9, e++, l[9]++;
   for (; e <= 279;) j[2 * e + 1] = 7, e++, l[7]++;
   for (; e <= 287;) j[2 * e + 1] = 8, e++, l[8]++;
-  for (Z(j, b + 1, l), e = 0; e < y; e++) M[2 * e + 1] = 5, M[2 * e] = z(e, 5);
-  r = new F(j, w, E + 1, b, v), i = new F(M, P, 0, y, v), a = new F([], D, 0, O, I)
+  for (Z(j, y + 1, l), e = 0; e < b; e++) M[2 * e + 1] = 5, M[2 * e] = z(e, 5);
+  r = new F(j, w, E + 1, y, A), i = new F(M, P, 0, b, A), a = new F([], D, 0, O, S)
 }
 
 function $(e) {
   var t;
-  for (t = 0; t < b; t++) e.dyn_ltree[2 * t] = 0;
-  for (t = 0; t < y; t++) e.dyn_dtree[2 * t] = 0;
+  for (t = 0; t < y; t++) e.dyn_ltree[2 * t] = 0;
+  for (t = 0; t < b; t++) e.dyn_dtree[2 * t] = 0;
   for (t = 0; t < O; t++) e.bl_tree[2 * t] = 0;
   e.dyn_ltree[2 * T] = 1, e.opt_len = e.static_len = 0, e.last_lit = e.matches = 0
 }
@@ -167,7 +167,7 @@ function ei(e, t) {
     o = t.stat_desc.has_stree,
     l = t.stat_desc.elems,
     c = false;
-  for (n = 0, e.heap_len = 0, e.heap_max = A; n < l; n++) 0 !== a[2 * n] ? (e.heap[++e.heap_len] = c = n, e.depth[n] = 0) : a[2 * n + 1] = 0;
+  for (n = 0, e.heap_len = 0, e.heap_max = v; n < l; n++) 0 !== a[2 * n] ? (e.heap[++e.heap_len] = c = n, e.depth[n] = 0) : a[2 * n + 1] = 0;
   for (; e.heap_len < 2;) a[2 * (i = e.heap[++e.heap_len] = c < 2 ? ++c : 0)] = 1, e.depth[i] = 0, e.opt_len--, o && (e.static_len -= s[2 * i + 1]);
   for (t.max_code = c, n = e.heap_len >> 1; n >= 1; n--) en(e, a, n);
   i = l;

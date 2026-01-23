@@ -79,24 +79,24 @@ let m = Chunk64700.forwardRef(function(e, t) {
       justify: f = "start",
       wrap: h = false,
       padding: m = 0,
-      fullWidth: b = true,
-      style: y,
+      fullWidth: y = true,
+      style: b,
       className: O,
-      children: A
-    } = n, v = _(n, ["as", "gap", "direction", "align", "justify", "wrap", "padding", "fullWidth", "style", "className", "children"]), [S] = i;
+      children: v
+    } = n, A = _(n, ["as", "gap", "direction", "align", "justify", "wrap", "padding", "fullWidth", "style", "className", "children"]), [I] = i;
     return (0, r.jsx)(a, p(d({
-      ref: S,
+      ref: I,
       "data-align": u,
       "data-justify": f,
       "data-direction": l,
       "data-wrap": h,
-      "data-full-width": b,
+      "data-full-width": y,
       className: s()(c.t, O),
-      style: d(p(d({}, y), {
+      style: d(p(d({}, b), {
         gap: g(o)
       }), E(m))
-    }, v), {
-      children: A
+    }, A), {
+      children: v
     }))
   }),
   g = e => "var(--space-".concat(e, ")"),

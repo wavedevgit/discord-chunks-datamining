@@ -28,7 +28,7 @@ function I(e) {
   var t, n;
   let {
     analyticsLocations: i
-  } = (0, p.Ay)(d.A.ACTIVITY_PANEL), l = (0, _.A)(e => {
+  } = (0, p.Ay)(d.A.ACTIVITY_PANEL), l = (0, b.A)(e => {
     let {
       guildId: t
     } = e;
@@ -36,7 +36,7 @@ function I(e) {
   });
   return (0, r.jsx)(p.f5, {
     value: i,
-    children: (0, r.jsx)(A.A, (t = function(e) {
+    children: (0, r.jsx)(f.A, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -77,7 +77,7 @@ let v = Chunk64700.memo(function() {
   }, []);
   let {
     isSorting: t
-  } = (0, f.A)();
+  } = (0, h.A)();
   return (0, r.jsx)("section", {
     ref: e,
     className: a()(y.C3, {
@@ -86,17 +86,17 @@ let v = Chunk64700.memo(function() {
     "aria-label": O.intl.string(O.t.StREWK),
     children: (0, r.jsxs)(s.xpW, {
       containerRef: e,
-      children: [(0, r.jsx)(o.A, {}), (0, r.jsx)(b.A, {}), (0, r.jsx)(g.A, {}), (0, r.jsx)(c.A, {
+      children: [(0, r.jsx)(o.A, {}), (0, r.jsx)(_.A, {}), (0, r.jsx)(m.A, {}), (0, r.jsx)(c.A, {
         section: E.JJy.ACTIVITY_PANEL,
         children: (0, r.jsx)(I, {
           className: y.iz
         })
       }), (0, r.jsx)(c.A, {
         section: E.JJy.RTC_CONNECTION_PANEL,
-        children: (0, r.jsx)(m.A, {})
+        children: (0, r.jsx)(A.A, {})
       }), (0, r.jsx)(c.A, {
         section: E.JJy.ACCOUNT_PANEL,
-        children: (0, r.jsx)(h.A, {})
+        children: (0, r.jsx)(g.A, {})
       })]
     })
   })

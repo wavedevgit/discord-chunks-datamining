@@ -2,7 +2,7 @@
 /** chunk id: 774363, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./938796.js"), require("./896048.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -31,21 +31,21 @@ let E = e => {
   }
 };
 
-function b(e) {
+function y(e) {
   var t;
   let n, {
       application: i,
       scopes: l,
-      redirectUri: b,
+      redirectUri: y,
       approximateGuildCount: O,
-      isEmbeddedFlow: A,
-      disclosures: v
+      isEmbeddedFlow: v,
+      disclosures: A
     } = e,
-    S = new Date(f.default.extractTimestamp(i.id)),
-    I = (0, _.i4)(l),
+    I = new Date(f.default.extractTimestamp(i.id)),
+    S = (0, _.i4)(l),
     T = (0, o.Lt)(null != (t = i.flags) ? t : 0, h.gfo.EMBEDDED);
-  if (null != b && !T && !A) try {
-    let e = new URL(b);
+  if (null != y && !T && !v) try {
+    let e = new URL(y);
     n = null != e.host && e.host.length > 0 ? e.origin : e.href
   } catch (e) {
     n = null
@@ -57,31 +57,31 @@ function b(e) {
     className: a()(g.B_, {
       [g.pN]: C.enabled
     }),
-    children: [null != n ? (0, r.jsx)(y, {
+    children: [null != n ? (0, r.jsx)(b, {
       icon: c.qYV,
       text: m.intl.format(m.t["5k5OKD"], {
         origin: n
       })
-    }) : null, (0, r.jsx)(y, {
+    }) : null, (0, r.jsx)(b, {
       icon: c.XAi,
       text: (0, p.w)(i)
-    }), (0, r.jsx)(y, {
+    }), (0, r.jsx)(b, {
       icon: c.O4,
       text: m.intl.formatToPlainString(m.t["+1bjc8"], {
-        date: S
+        date: I
       })
-    }), l.includes(s.F.BOT) && null != O ? (0, r.jsx)(y, {
+    }), l.includes(s.F.BOT) && null != O ? (0, r.jsx)(b, {
       icon: c.CnV,
       text: m.intl.formatToPlainString(m.t.UHGHSP, {
         guildCount: O
       })
-    }) : null, (0, r.jsx)(y, {
+    }) : null, (0, r.jsx)(b, {
       icon: c.lmn,
-      text: I
-    }), null != v ? v.map(e => {
+      text: S
+    }), null != A ? A.map(e => {
       let t = (0, d.wI)(e),
         n = E(e);
-      return null != n && null != t ? (0, r.jsx)(y, {
+      return null != n && null != t ? (0, r.jsx)(b, {
         icon: n,
         text: t
       }) : null
@@ -89,7 +89,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     icon: t,
     text: n

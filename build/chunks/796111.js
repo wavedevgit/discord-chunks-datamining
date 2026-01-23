@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 796111, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 }), require("./896048.js"), require("./938796.js");
 var Chunk665260 = require("./665260.js"),
   Chunk562465 = require("./562465.js"),
@@ -16,7 +16,7 @@ var Chunk665260 = require("./665260.js"),
   Chunk569475 = require("./569475.js"),
   Chunk613057 = require("./613057.js"),
   Chunk652215 = require("./652215.js");
-let g = {
+let m = {
   [Chunk652215.e$_.SEND_ANALYTICS_EVENT]: {
     validation: e => (0, p.A)(e).required().keys({
       event_name: e.string().required(),
@@ -33,18 +33,18 @@ let g = {
       } = e;
       (0, d.lG)(n.transport), (0, d.D2)(n.application);
       let o = n.application.id,
-        p = (0, f.A)(),
-        h = null == p ? true : p.getGuildId(),
-        g = s.A.getApplication(o);
-      if (!(0, r.Lt)(null != (t = null == g ? true : g.flags) ? t : 0, A.gfo.EMBEDDED_FIRST_PARTY)) throw new u.A({
-        errorCode: A.Lw6.INVALID_COMMAND
+        p = (0, h.A)(),
+        g = null == p ? true : p.getGuildId(),
+        m = s.A.getApplication(o);
+      if (!(0, r.Lt)(null != (t = null == m ? true : m.flags) ? t : 0, f.gfo.EMBEDDED_FIRST_PARTY)) throw new u.A({
+        errorCode: f.Lw6.INVALID_COMMAND
       }, "This application cannot access this API");
-      let m = (0, a.D)(o),
-        b = {
+      let A = (0, a.D)(o),
+        _ = {
           activity_application_id: o,
           activity_channel_type: null == p ? true : p.type,
-          activity_guild_id: h,
-          activity_user_session_id: null == m ? true : m.activityUserSessionId
+          activity_guild_id: g,
+          activity_user_session_id: null == A ? true : A.activityUserSessionId
         };
       c.default.track(i, function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -63,7 +63,7 @@ let g = {
           })
         }
         return e
-      }({}, b, l))
+      }({}, _, l))
     }
   },
   [Chunk652215.e$_.GET_APPLICATION_TICKET]: {
@@ -73,10 +73,10 @@ let g = {
         socket: t
       } = e, n = t.application.id;
       if (null == n) throw new u.A({
-        errorCode: A.Lw6.INVALID_COMMAND
+        errorCode: f.Lw6.INVALID_COMMAND
       }, "No application.");
       return i.Bo.post({
-        url: A.Rsh.APPLICATION_TICKET(n),
+        url: f.Rsh.APPLICATION_TICKET(n),
         body: {
           test_mode: o.A.inTestModeForApplication(n) || l.A.inDevModeForApplication(n)
         },

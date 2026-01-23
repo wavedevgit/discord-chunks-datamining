@@ -33,8 +33,8 @@ let m = Chunk64700.forwardRef(function(e, t) {
   let {
     sound: n,
     containerDimensions: h
-  } = e, m = (0, o.bG)([d.default], () => d.default.getCurrentUser()), g = (0, o.bG)([l.A], () => l.A.useReducedMotion), [E, b] = i.useState([]), y = E.length < _, O = (null == n ? true : n.emojiId) != null || (null == n ? true : n.emojiName) != null, A = i.useCallback(() => {
-    if (!g && y && O && null != m) {
+  } = e, m = (0, o.bG)([d.default], () => d.default.getCurrentUser()), g = (0, o.bG)([l.A], () => l.A.useReducedMotion), [E, y] = i.useState([]), b = E.length < _, O = (null == n ? true : n.emojiId) != null || (null == n ? true : n.emojiName) != null, v = i.useCallback(() => {
+    if (!g && b && O && null != m) {
       var e;
       let t = (0, c.Br)({
           id: n.emojiId,
@@ -52,14 +52,14 @@ let m = Chunk64700.forwardRef(function(e, t) {
           url: t,
           userId: m.id
         };
-      b(e => [...e, l])
+      y(e => [...e, l])
     }
-  }, [g, y, O, m, n]);
+  }, [g, b, O, m, n]);
   i.useImperativeHandle(t, () => ({
-    addAnimation: A
+    addAnimation: v
   }));
-  let v = i.useCallback(e => {
-    b(t => {
+  let A = i.useCallback(e => {
+    y(t => {
       let n = [...t],
         r = n.findIndex(t => t.id === e);
       return n.splice(r, 1), n
@@ -74,7 +74,7 @@ let m = Chunk64700.forwardRef(function(e, t) {
     children: E.map(e => (0, r.jsx)(u.A, {
       containerDimensions: h,
       effect: e,
-      onComplete: v
+      onComplete: A
     }, e.id))
   })
 })

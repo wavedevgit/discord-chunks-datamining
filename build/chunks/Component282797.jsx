@@ -68,7 +68,7 @@ function N(e) {
     })
   }, G = () => (0, r.jsx)("div", {
     className: C.o1,
-    children: (0, r.jsx)(v.A, {
+    children: (0, r.jsx)(A.A, {
       channel: i,
       onAction: D,
       onClose: R
@@ -82,10 +82,10 @@ function N(e) {
       onAction: D,
       onClose: R,
       "aria-label": "".concat(V, ", ").concat(M),
-      children: [(0, r.jsx)(b.A, {
+      children: [(0, r.jsx)(y.A, {
         text: V,
         tags: U(),
-        contextMenu: (0, r.jsx)(S.A, {
+        contextMenu: (0, r.jsx)(I.A, {
           display: "voice",
           user: t,
           onClose: R
@@ -99,19 +99,19 @@ function N(e) {
             channel: i
           }), (0, r.jsxs)("div", {
             className: C.zH,
-            children: [(0, r.jsx)(y.A, {
+            children: [(0, r.jsx)(b.A, {
               channel: i,
               guild: L,
               onAction: D,
               onClose: R
-            }), k && i.isGuildVoice() && (0, r.jsx)(A.A, {
+            }), k && i.isGuildVoice() && (0, r.jsx)(v.A, {
               voiceChannel: i,
               onAction: D,
               onClose: R
-            }), w === I.d.MODAL_V2 && G()]
-          }), w === I.d.MODAL && G()]
+            }), w === S.d.MODAL_V2 && G()]
+          }), w === S.d.MODAL && G()]
         })
-      }), w !== I.d.MODAL && w !== I.d.MODAL_V2 && G()]
+      }), w !== S.d.MODAL && w !== S.d.MODAL_V2 && G()]
     })
   })
 }

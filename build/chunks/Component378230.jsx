@@ -1,12 +1,12 @@
 /** Chunk was on 22477 **/
 /** chunk id: 378230, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => x
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  i = require.n(Chunk503698),
+  r = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk926919 = require("./926919.js"),
@@ -17,18 +17,18 @@ var Chunk503698 = require("./503698.js"),
   Chunk667380 = require("./667380.js"),
   Chunk661251 = require("./661251.js");
 
-function f() {
+function x() {
   let {
     personaForceFaeFail: e,
     personaForceIdVerificationFail: t,
     personaDisableModularPilotTestTemplate: n
-  } = (0, r.cf)([m.default], () => ({
+  } = (0, i.cf)([m.default], () => ({
     personaForceFaeFail: m.default.personaForceFaeFail,
     personaForceIdVerificationFail: m.default.personaForceIdVerificationFail,
     personaDisableModularPilotTestTemplate: m.default.personaDisableModularPilotTestTemplate
   }));
   return (0, a.jsxs)("div", {
-    className: i()(h.nd, p.k),
+    className: r()(h.nd, p.k),
     children: [(0, a.jsxs)("div", {
       children: [(0, a.jsx)(s.Heading, {
         variant: "heading-lg/semibold",

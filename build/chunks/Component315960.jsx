@@ -15,26 +15,26 @@ function u(e) {
     selectedTab: t,
     onTabSelected: n,
     userCount: u
-  } = e, d = r.useRef(null);
+  } = e, a = r.useRef(null);
   return r.useEffect(() => {
     var e, t, n;
-    return null == (n = d.current) || null == (t = n.ref) || null == (e = t.blur) ? true : e.call(t)
+    return null == (n = a.current) || null == (t = n.ref) || null == (e = t.blur) ? true : e.call(t)
   }, []), (0, l.jsx)("div", {
-    className: c.kL,
+    className: o.kL,
     children: (0, l.jsxs)(i.VQ0, {
-      className: c.$H,
-      "aria-label": a.intl.string(a.t["+1H47t"]),
+      className: o.$H,
+      "aria-label": c.intl.string(c.t["+1H47t"]),
       selectedItem: t,
       type: "top",
       onItemSelect: n,
       children: [(0, l.jsx)(i.VQ0.Item, {
-        className: c.YU,
+        className: o.YU,
         id: s.al.EVENT_INFO,
-        children: a.intl.string(a.t.iW6Xuo)
+        children: c.intl.string(c.t.iW6Xuo)
       }), (0, l.jsx)(i.VQ0.Item, {
-        className: c.YU,
+        className: o.YU,
         id: s.al.RSVP_LIST,
-        children: a.intl.formatToPlainString(a.t["ZrTT/N"], {
+        children: c.intl.formatToPlainString(c.t["ZrTT/N"], {
           userCount: u
         })
       })]

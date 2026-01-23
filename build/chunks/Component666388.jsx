@@ -57,21 +57,21 @@ function C(e) {
       pronouns: null == C ? true : C.pronouns,
       tags: (0, r.jsx)(f.A, {
         displayProfile: C,
-        themeType: v.d.POPOUT,
+        themeType: A.d.POPOUT,
         onClose: D
       }),
-      nicknameIcons: M ? null : (0, r.jsx)(b.A, {
+      nicknameIcons: M ? null : (0, r.jsx)(y.A, {
         userId: t.id,
         isVisible: R,
         onOpenProfile: w
       })
-    }), (0, r.jsx)(A.A, {
+    }), (0, r.jsx)(v.A, {
       user: t,
       onOpenProfile: e => null == w ? true : w({
         tabSection: e
       })
     }), (0, r.jsxs)("div", {
-      className: I.U,
+      className: S.U,
       children: [(0, r.jsx)(g.A, {
         user: t,
         closePopout: D,
@@ -81,7 +81,7 @@ function C(e) {
         guildId: null == N ? true : N.id,
         fullWidth: true
       })]
-    }), (0, r.jsx)(y.A, {
+    }), (0, r.jsx)(b.A, {
       user: t,
       bio: null == C ? true : C.bio,
       hidePersonalInformation: M,
@@ -99,7 +99,7 @@ function C(e) {
       guildId: null == N ? true : N.id,
       onClick: D
     }), null != N && (0, r.jsx)(_.A, {
-      heading: S.intl.string(S.t["LPJmL/"]),
+      heading: I.intl.string(I.t["LPJmL/"]),
       children: (0, r.jsx)(O.A, {
         userId: t.id,
         guild: N

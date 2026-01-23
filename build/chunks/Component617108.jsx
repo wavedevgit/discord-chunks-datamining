@@ -26,12 +26,12 @@ let g = function(e) {
     subscriptionTier: g
   } = e, {
     analyticsLocations: E
-  } = (0, o.Ay)(s.A.PREMIUM_TIER_2_DISCOUNT_ENDING_NOTICE), b = (0, u.O)(), y = (0, a.A)(null != b && null != b.expires_at ? Date.parse(b.expires_at) : 0), {
+  } = (0, o.Ay)(s.A.PREMIUM_TIER_2_DISCOUNT_ENDING_NOTICE), y = (0, u.O)(), b = (0, a.A)(null != y && null != y.expires_at ? Date.parse(y.expires_at) : 0), {
     variant: O,
-    showNagbar: A
+    showNagbar: v
   } = (0, c.Ay)("PremiumDiscountEndingNotice");
-  if (null == b || (null == (t = b.discount) ? true : t.plan_ids.some(e => p.hd[e].skuId !== g)) || null == b.expires_at || Object.values(y).every(e => 0 === e) || !A) return null;
-  let v = () => {
+  if (null == y || (null == (t = y.discount) ? true : t.plan_ids.some(e => p.hd[e].skuId !== g)) || null == y.expires_at || Object.values(b).every(e => 0 === e) || !v) return null;
+  let A = () => {
     (0, l.A)({
       subscriptionTier: g,
       analyticsLocations: E,
@@ -45,9 +45,9 @@ let g = function(e) {
   return O === c.CJ.NAGBAR_REFRESH ? (0, r.jsxs)(d.T0, {
     onClick: n,
     children: [(0, r.jsx)(d.In, {
-      children: (0, f.rn)(y, Number(b.discount.amount))
+      children: (0, f.rn)(b, Number(y.discount.amount))
     }), (0, r.jsx)(d.fY, {
-      onClick: v,
+      onClick: A,
       text: h.intl.string(h.t.zLXssK)
     })]
   }) : (0, r.jsxs)(i.$Td, {
@@ -59,8 +59,8 @@ let g = function(e) {
       size: "md",
       color: "currentColor",
       className: m.PC
-    }), (0, f.rn)(y, Number(b.discount.amount)), (0, r.jsx)(i.zr9, {
-      onClick: v,
+    }), (0, f.rn)(b, Number(y.discount.amount)), (0, r.jsx)(i.zr9, {
+      onClick: A,
       children: h.intl.string(h.t.zLXssK)
     })]
   })

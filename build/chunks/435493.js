@@ -1,12 +1,12 @@
 /** Chunk was on 96110 **/
-/** chunk id: 435493, original params: e,c,a (module,exports,require) **/
+/** chunk id: 435493, original params: e,n,t (module,exports,require) **/
 module.exports = {
-  kL: "e7c756d85e3d9702",
-  Qs: "_03846217271e26c7",
-  FS: "_4d49d28d53f005bf",
-  ij: "_8ce14a5f31b802d2",
-  Sl: "_03ce8ccdd6a5d68b",
-  ln: "_3482ccfcdd2dc61a",
-  qr: "_4c0376fe340303c3",
-  zt: "ae10d090154d167e"
+  kL: "container__03b47",
+  Qs: "content__03b47",
+  FS: "textContainer__03b47",
+  ij: "descriptionText__03b47",
+  Sl: "image__03b47",
+  ln: "inlineText__03b47",
+  qr: "footer__03b47",
+  zt: "textButtonWrapper__03b47"
 }

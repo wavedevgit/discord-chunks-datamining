@@ -2,7 +2,7 @@
 /** chunk id: 342296, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v,
+  A: () => A,
   S: () => E
 });
 var Chunk627968 = require("./627968.js"),
@@ -74,14 +74,14 @@ function g(e, t) {
   return i
 }
 let E = (0, Chunk397927.FT9)(Chunk397927._3J.SIZE_80),
-  b = {
+  y = {
     onMouseDown: Chunk818348.tE,
     onClick: Chunk818348.tE,
     onKeyDown: Chunk818348.tE,
     "aria-controls": true,
     "aria-expanded": false
   },
-  y = {
+  b = {
     isShown: false,
     position: true
   };
@@ -96,23 +96,23 @@ function O(e) {
     messageId: f,
     roleId: _,
     disableUserProfileLink: g,
-    newAnalyticsLocations: b,
-    appContext: y,
+    newAnalyticsLocations: y,
+    appContext: b,
     avatarUrl: O,
-    preload: A,
-    renderPopout: v,
-    onRequestOpen: S,
-    onRequestClose: I,
+    preload: v,
+    renderPopout: A,
+    onRequestOpen: I,
+    onRequestClose: S,
     onClosePopout: T,
     shouldShow: C,
     shouldPreload: N = true
-  } = e, R = m(e, ["children", "user", "currentUser", "guildId", "channelId", "messageId", "roleId", "disableUserProfileLink", "newAnalyticsLocations", "appContext", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload"]), w = i.useRef(true), P = i.useCallback(() => null != A ? A() : (0, l.A)(n.id, null != O ? O : n.getAvatarURL(o, E), {
+  } = e, R = m(e, ["children", "user", "currentUser", "guildId", "channelId", "messageId", "roleId", "disableUserProfileLink", "newAnalyticsLocations", "appContext", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload"]), w = i.useRef(true), P = i.useCallback(() => null != v ? v() : (0, l.A)(n.id, null != O ? O : n.getAvatarURL(o, E), {
     type: "popout",
     withMutualGuilds: n.id !== a.id,
     withMutualFriends: !n.bot && n.id !== a.id,
     guildId: o,
     channelId: d
-  }), [A, a, n, O, o, d]), D = i.useCallback(e => (w.current = Date.now(), null != v) ? v(e, w.current) : (0, r.jsx)(c.A, h(p({}, e), {
+  }), [v, a, n, O, o, d]), D = i.useCallback(e => (w.current = Date.now(), null != A) ? A(e, w.current) : (0, r.jsx)(c.A, h(p({}, e), {
     user: n,
     currentUser: a,
     guildId: o,
@@ -120,35 +120,35 @@ function O(e) {
     roleId: _,
     messageId: f,
     disableUserProfileLink: g,
-    newAnalyticsLocations: b,
-    appContext: y,
+    newAnalyticsLocations: y,
+    appContext: b,
     openedAt: w.current,
     closePopout: () => {
       e.closePopout(), null == T || T()
     }
-  })), [n, a, v, o, d, _, f, g, b, y, T]);
+  })), [n, a, A, o, d, _, f, g, y, b, T]);
   return (0, r.jsx)(s.YNO, h(p({
     popoutKey: u.KM,
     shouldShow: C,
     preload: N ? P : true,
     renderPopout: D,
-    onRequestOpen: S,
-    onRequestClose: I
+    onRequestOpen: I,
+    onRequestClose: S
   }, R), {
     children: t
   }))
 }
 
-function A(e) {
+function v(e) {
   let {
     children: t,
     userId: n,
     user: i
   } = e, s = m(e, ["children", "userId", "user"]), l = (0, a.bG)([o.default], () => o.default.getCurrentUser()), c = (0, a.bG)([o.default], () => null != i ? i : o.default.getUser(n));
-  return null == c || null == l ? t(b, y) : (0, r.jsx)(O, h(p({}, s), {
+  return null == c || null == l ? t(y, b) : (0, r.jsx)(O, h(p({}, s), {
     user: c,
     currentUser: l,
     children: t
   }))
 }
-let v = Chunk64700.memo(A)
+let A = Chunk64700.memo(v)

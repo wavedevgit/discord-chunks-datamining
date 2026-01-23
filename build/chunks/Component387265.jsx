@@ -15,47 +15,47 @@ let d = Chunk64700.memo(function(e) {
     className: t,
     content: n,
     onChange: d
-  } = e, u = i.M[n], {
+  } = e, u = r.M[n], {
     isDismissed: m,
     handleToggleDismissState: p
-  } = (0, c.A)(u), [h, f] = l.useState(false), x = l.useCallback(() => {
+  } = (0, c.A)(u), [h, x] = l.useState(false), g = l.useCallback(() => {
     null == d || d(n), p()
-  }, [d, p, n]), b = l.useCallback(e => {
-    e.preventDefault(), f(true), navigator.clipboard.writeText(n.toLowerCase())
+  }, [d, p, n]), f = l.useCallback(e => {
+    e.preventDefault(), x(true), navigator.clipboard.writeText(n.toLowerCase())
   }, [n]);
   return (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsxs)(r.BJc, {
+    children: [(0, a.jsxs)(i.BJc, {
       className: t,
       direction: "horizontal",
       align: "center",
-      children: [(0, a.jsx)(r.K0, {
+      children: [(0, a.jsx)(i.K0, {
         size: "sm",
         variant: "icon-only",
-        icon: h ? r.ODX : r.sjE,
-        onClick: b,
+        icon: h ? i.ODX : i.sjE,
+        onClick: f,
         "aria-label": h ? "Copied" : "Copy"
-      }), (0, a.jsx)(r.dOG, {
-        label: "".concat(n.toLowerCase(), " (").concat(i.M[n], ")"),
+      }), (0, a.jsx)(i.dOG, {
+        label: "".concat(n.toLowerCase(), " (").concat(r.M[n], ")"),
         description: (0, o.Zm)(u) ? function(e) {
           var t, n;
           let a = null == (n = s.A.settings.userContent) || null == (t = n.recurringDismissibleContentStates) ? true : t[e];
           if (null == a) return null;
           let l = [],
             {
-              lastDismissedVersion: i,
-              lastDismissedAtMs: r,
+              lastDismissedVersion: r,
+              lastDismissedAtMs: i,
               lastDismissedObjectId: o
             } = a;
-          if (true !== i && 0 !== i && l.push("last_dismissed_version: ".concat(i)), true !== r) {
-            let e = Number(r),
+          if (true !== r && 0 !== r && l.push("last_dismissed_version: ".concat(r)), true !== i) {
+            let e = Number(i),
               t = Number.isNaN(e) ? "n/a" : new Date(e).toLocaleString();
             l.push("last_dismissed_at: ".concat(t))
           }
           return (true !== o && "0" !== o && l.push("last_dismissed_object_id: ".concat(o)), 0 === l.length) ? null : l.join(", ")
         }(u) : null,
         checked: m,
-        onChange: x
+        onChange: g
       })]
-    }), (0, a.jsx)(r.cGx, {})]
+    }), (0, a.jsx)(i.cGx, {})]
   })
 })

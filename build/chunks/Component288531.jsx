@@ -31,7 +31,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk242243 = require("./242243.js");
-let R = (e, t, n) => (0, S.a3)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
+let R = (e, t, n) => (0, I.a3)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
 
 function w(e) {
   let {
@@ -111,7 +111,7 @@ function D(e) {
     questContent: a,
     questContentPosition: s,
     sourceQuestContent: u
-  } = e, d = (0, o.bG)([_.A], () => _.A.isEnrolling(n.id)), f = (0, b.vv)(n), p = (0, b.Cr)(n), h = (0, y._c)({
+  } = e, d = (0, o.bG)([_.A], () => _.A.isEnrolling(n.id)), f = (0, y.vv)(n), p = (0, y.Cr)(n), h = (0, b._c)({
     progressState: i,
     quest: n,
     questContent: a,
@@ -141,24 +141,24 @@ let x = e => {
     size: d,
     isFocused: f,
     isQuestExpired: E,
-    isExpanded: y,
-    isAnimating: S,
+    isExpanded: b,
+    isAnimating: I,
     contentPosition: T,
     sourceQuestContent: x
   } = e, L = (0, g.In)(n), j = (0, g.S5)(null == (t = n.userStatus) ? true : t.completedAt, {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), M = L >= g.F3.ACCEPTED, k = L >= g.F3.COMPLETED, U = y || S, G = (0, m.wT)(n, I.rE.QUESTS_CARD, i, x), V = (0, p.Ut)(), F = (0, g.fc)(n), B = (0, m.mU)({
+  }), M = L >= g.F3.ACCEPTED, k = L >= g.F3.COMPLETED, U = b || I, G = (0, m.wT)(n, S.rE.QUESTS_CARD, i, x), V = (0, p.Ut)(), F = (0, g.fc)(n), B = (0, m.mU)({
     quest: n,
     taskDetails: F,
-    location: I.rE.QUESTS_CARD,
+    location: S.rE.QUESTS_CARD,
     questContent: s.u.QUESTS_EMBED,
     sourceQuestContent: x
   }), H = (0, o.bG)([_.A], () => null != _.A.questEnrollmentBlockedUntil, []), Y = h.t$.useConfig({
-    location: I.rE.QUEST_HOME_DESKTOP
+    location: S.rE.QUEST_HOME_DESKTOP
   }).enabled, W = () => {
-    (0, v.navigateToQuestHome)({
+    (0, A.navigateToQuestHome)({
       fromContent: i,
       questId: n.id
     }), V({
@@ -168,7 +168,7 @@ let x = e => {
       questContentCTA: p.Cy.LEARN_MORE,
       sourceQuestContent: x
     })
-  }, K = (0, o.bG)([u.default], () => u.default.locale), z = E && !k, q = (0, b.vv)(n);
+  }, K = (0, o.bG)([u.default], () => u.default.locale), z = E && !k, q = (0, y.vv)(n);
   return (0, r.jsx)("div", {
     className: N.zr,
     children: (0, r.jsxs)("div", {
@@ -190,7 +190,7 @@ let x = e => {
             children: (0, r.jsx)(c.EpV, {
               color: c.LU0.colors.WHITE
             })
-          }), (0, r.jsx)(A.A, {
+          }), (0, r.jsx)(v.A, {
             autoplay: f,
             className: a()({
               [N.Lu]: "lg" === d,
@@ -233,7 +233,7 @@ let x = e => {
           text: C.intl.string(C.t.V293qn)
         }), (0, r.jsx)(c.Button, {
           variant: "primary",
-          onClick: () => (0, v.m6)(n, i, x),
+          onClick: () => (0, A.m6)(n, i, x),
           text: C.intl.string(C.t.vY9GgG)
         })]
       }) : (0, r.jsxs)(c.ButtonGroup, {

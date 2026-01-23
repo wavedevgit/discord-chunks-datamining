@@ -4,13 +4,13 @@
 require.d(exports, {
   $3: () => m,
   Ay: () => R,
-  G2: () => v,
+  G2: () => A,
   Gn: () => N,
   MU: () => O,
   QV: () => T,
   R1: () => C,
   mG: () => g,
-  mv: () => S,
+  mv: () => I,
   tx: () => E
 }), require("./65821.js");
 var Chunk311907 = require("./311907.js"),
@@ -75,18 +75,18 @@ function E(e) {
   return n && a.toLocaleLowerCase() === (null == (t = e.username) ? true : t.toLocaleLowerCase()) && "0" === e.discriminator && (a = f(a)), a
 }
 
-function b(e) {
+function y(e) {
   if (null != e)
     if (h(e.globalName)) return e.globalName;
     else if (h(e.global_name)) return e.global_name;
   else return
 }
 
-function y(e) {
+function b(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] && arguments[1];
   if (null == e) return d;
-  let r = b(e),
+  let r = y(e),
     i = n ? T(e) : null != (t = e.username) ? t : d;
   return r === i ? r : null != r ? "".concat(r, " (").concat(i, ")") : i
 }
@@ -112,7 +112,7 @@ function O(e) {
   }
 }
 
-function A(e, t) {
+function v(e, t) {
   let {
     maxDaysOld: n,
     minDaysOld: r = 0
@@ -124,21 +124,21 @@ function A(e, t) {
   return !!a && !!s
 }
 
-function v(e) {
-  return !A(e, {
+function A(e) {
+  return !v(e, {
     minDaysOld: 0,
     maxDaysOld: 30
   })
 }
 
-function S(e) {
-  return A(e, {
+function I(e) {
+  return v(e, {
     minDaysOld: 0,
     maxDaysOld: 7
   })
 }
 
-function I(e, t, n) {
+function S(e, t, n) {
   if (null == e) return o.intl.string(o.t.sKdZ6U);
   if (!h(e.username)) return d;
   let r = n;
@@ -150,7 +150,7 @@ function I(e, t, n) {
 function T(e, t) {
   let n = c({}, _, t),
     r = "auto" !== n.identifiable || i.A.hidePersonalInformation;
-  return I(e, n, r)
+  return S(e, n, r)
 }
 
 function C(e) {
@@ -169,11 +169,11 @@ let R = {
   isNameConcealed: e => 2 === e.length && e.endsWith("…"),
   getUserTag: T,
   useUserTag: function(e, t) {
-    return I(e, c({}, _, t), (0, r.bG)([i.A], () => i.A.hidePersonalInformation))
+    return S(e, c({}, _, t), (0, r.bG)([i.A], () => i.A.hidePersonalInformation))
   },
   getUserIsStaff: N,
-  getFormattedName: y,
-  getGlobalName: b,
+  getFormattedName: b,
+  getGlobalName: y,
   humanizeStatus: O,
   useDirectMessageRecipient: C
 }

@@ -2,7 +2,7 @@
 /** chunk id: 692092, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -34,7 +34,7 @@ let m = l().memoize(e => "".concat(e * _.he.NonDiversityPerRow, "px ").concat(e 
       width: r
     }
   },
-  b = Chunk64700.memo(function(e) {
+  y = Chunk64700.memo(function(e) {
     let {
       emoji: t,
       size: n,

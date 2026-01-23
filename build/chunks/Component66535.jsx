@@ -1,7 +1,7 @@
 /** Chunk was on 58652 **/
 /** chunk id: 66535, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,46 +19,46 @@ var Chunk627968 = require("./627968.js"),
   Chunk838541 = require("./838541.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk205435 = require("./205435.js");
-let h = e => {
+let v = e => {
   let {
     message: t
-  } = e, n = (0, o.Ay)(t), h = (0, a.bG)([x.A], () => x.A.getChannel(t.channel_id)), j = r.useMemo(() => (0, s.A)(t), [t]), {
-    content: _
-  } = (0, b.A)(j, {
+  } = e, n = (0, o.Ay)(t), v = (0, i.bG)([x.A], () => x.A.getChannel(t.channel_id)), f = r.useMemo(() => (0, s.A)(t), [t]), {
+    content: j
+  } = (0, p.A)(f, {
     hideSimpleEmbedContent: false
-  }), A = p.hH.useSetting(), y = r.useCallback(() => {
+  }), A = b.hH.useSetting(), y = r.useCallback(() => {
     let {
       leadingIcon: e,
       trailingIcon: n
-    } = (0, m.o)(t, _, false, false, "", {
-      leadingIconClass: v.$r,
-      trailingIconClass: v.$r,
+    } = (0, m.o)(t, j, false, false, "", {
+      leadingIconClass: h.$r,
+      trailingIconClass: h.$r,
       iconSize: g.eJ
     });
     return (0, l.jsxs)("div", {
-      className: v.hQ,
-      children: [e, (0, l.jsx)(d.Ay, {
+      className: h.hQ,
+      children: [e, (0, l.jsx)(c.Ay, {
         message: t,
-        content: _,
+        content: j,
         compact: A
       }), n]
     })
-  }, [t, _, A]);
-  return null == h ? null : (0, l.jsxs)("div", {
-    className: v.kL,
-    children: [(0, l.jsx)(i.Heading, {
-      className: v.wx,
+  }, [t, j, A]);
+  return null == v ? null : (0, l.jsxs)("div", {
+    className: h.kL,
+    children: [(0, l.jsx)(a.Heading, {
+      className: h.wx,
       variant: "heading-sm/semibold",
-      children: f.intl.string(f.t.iouM3a)
-    }), (0, l.jsx)(i.HOs, {
-      className: v.PI,
-      children: (0, l.jsx)(c.A, {
+      children: _.intl.string(_.t.iouM3a)
+    }), (0, l.jsx)(a.HOs, {
+      className: h.PI,
+      children: (0, l.jsx)(d.A, {
         childrenMessageContent: y(),
         childrenHeader: (0, l.jsx)(u.Ay, {
           message: t,
-          channel: h,
+          channel: v,
           author: n,
-          guildId: h.guild_id
+          guildId: v.guild_id
         }),
         disableInteraction: true,
         author: n

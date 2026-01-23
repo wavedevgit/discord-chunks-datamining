@@ -54,16 +54,16 @@ var Chunk92690 = require("./92690.js"),
   Chunk116740 = require("./116740.js"),
   Chunk797686 = require("./797686.js"),
   Chunk537578 = require("./537578.js"),
-  y = 10;
+  b = 10;
 Chunk116740.List;
 var O = function(e, t) {
     return e.getAnchorKey() === t || e.getFocusKey() === t
   },
-  A = function(e, t) {
+  v = function(e, t) {
     var n = e.getNextSiblingKey();
     return !!n && t.getBlockForKey(n).getType() === e.getType()
   },
-  v = function(e, t, n) {
+  A = function(e, t, n) {
     var r = [],
       i = true,
       a = false,
@@ -91,7 +91,7 @@ var O = function(e, t) {
       "data-offset-key": u.encode(p, 0, 0)
     }, f)), n
   },
-  S = function(e, t) {
+  I = function(e, t) {
     var n = t.get(e.getType()) || t.get("unstyled"),
       r = n.wrapper;
     return {
@@ -99,7 +99,7 @@ var O = function(e, t) {
       wrapperTemplate: r
     }
   },
-  I = function(e, t) {
+  S = function(e, t) {
     var n = t(e);
     return n ? {
       CustomComponent: n.component,
@@ -146,11 +146,11 @@ module.exports = function(e) {
           a = h(i);
         if (i === window) {
           var s = _(r);
-          (e = s.y + s.height - m().height) > 0 && window.scrollTo(a.x, a.y + e + y)
+          (e = s.y + s.height - m().height) > 0 && window.scrollTo(a.x, a.y + e + b)
         } else {
-          b(r) || E(false);
+          y(r) || E(false);
           var o = r;
-          (e = o.offsetHeight + o.offsetTop - (i.offsetHeight + a.y)) > 0 && f.setTop(i, f.getTop(i) + e + y)
+          (e = o.offsetHeight + o.offsetTop - (i.offsetHeight + a.y)) > 0 && f.setTop(i, f.getTop(i) + e + b)
         }
       }
     }
@@ -168,30 +168,30 @@ module.exports = function(e) {
       m = n.customStyleFn,
       g = n.customStyleMap,
       E = n.direction,
-      b = n.forceSelection,
-      y = n.selection,
+      y = n.forceSelection,
+      b = n.selection,
       C = n.tree,
       N = null;
     r.children.size && (N = r.children.reduce(function(n, r) {
       var i = u.encode(r, 0, 0),
         c = f.getBlockForKey(r),
-        p = I(c, s),
+        p = S(c, s),
         m = p.CustomComponent || t,
-        g = S(c, a),
+        g = I(c, a),
         E = g.Element,
-        b = g.wrapperTemplate,
-        y = T(c, _, i, l, p, null),
+        y = g.wrapperTemplate,
+        b = T(c, _, i, l, p, null),
         O = o({}, e.props, {
           tree: h.getBlockTree(r),
           blockProps: p.customProps,
           offsetKey: i,
           block: c
         });
-      return n.push(d.createElement(E, y, d.createElement(m, O))), !b || A(c, f) || v(b, E, n), n
+      return n.push(d.createElement(E, b, d.createElement(m, O))), !y || v(c, f) || A(y, E, n), n
     }, []));
     var R = r.getKey(),
       w = u.encode(R, 0, 0),
-      P = I(r, s),
+      P = S(r, s),
       D = P.CustomComponent,
       x = null != D ? d.createElement(D, i({}, this.props, {
         tree: h.getBlockTree(R),
@@ -206,13 +206,13 @@ module.exports = function(e) {
         customStyleMap: g,
         decorator: p,
         direction: E,
-        forceSelection: b,
-        hasSelection: O(y, R),
-        selection: y,
+        forceSelection: y,
+        hasSelection: O(b, R),
+        selection: b,
         tree: C
       });
     if (r.getParentKey()) return x;
-    var L = S(r, a).Element,
+    var L = I(r, a).Element,
       j = T(r, _, w, l, P, this.wrapperRef);
     return d.createElement(L, j, x)
   }, t

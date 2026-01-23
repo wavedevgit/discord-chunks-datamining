@@ -1,31 +1,31 @@
 /** Chunk was on 97492 **/
 /** chunk id: 608900, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk835245 = require("./835245.js"),
   Chunk397927 = require("./397927.js"),
   Chunk709562 = require("./709562.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk529414 = require("./529414.js");
 
-function f(e) {
+function p(e) {
   let {
     width: t = 24,
     height: n = 24,
     isBadged: i = false
-  } = e, [a] = l.useState(() => (0, s.A)());
+  } = e, [s] = l.useState(() => (0, a.A)());
   return (0, r.jsxs)("svg", {
     width: t,
     height: n,
     viewBox: "0 0 24 24",
     children: [(0, r.jsx)("defs", {
       children: (0, r.jsxs)("mask", {
-        id: a,
+        id: s,
         children: [(0, r.jsx)("rect", {
           fill: "white",
           width: "100%",
@@ -38,20 +38,20 @@ function f(e) {
         })]
       })
     }), (0, r.jsx)("g", {
-      mask: "url(#".concat(a, ")"),
+      mask: "url(#".concat(s, ")"),
       children: (0, r.jsx)(o.cJi, {})
     })]
   })
 }
 
-function p(e) {
+function h(e) {
   let {
     className: t,
     numRequestToSpeak: n
   } = e, l = n > 0;
   return (0, r.jsxs)("div", {
-    className: a()(d.v, t),
-    children: [(0, r.jsx)(f, {
+    className: s()(d.v, t),
+    children: [(0, r.jsx)(p, {
       isBadged: l
     }), l ? (0, r.jsx)(o.Text, {
       className: d.F,
@@ -61,13 +61,13 @@ function p(e) {
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     toggleRequestToSpeakSidebar: t,
     showRequestToSpeakSidebar: n,
     className: i,
-    numRequestToSpeak: a,
-    onClick: s
+    numRequestToSpeak: s,
+    onClick: a
   } = e, o = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
@@ -85,8 +85,8 @@ function h(e) {
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
   }(e, ["toggleRequestToSpeakSidebar", "showRequestToSpeakSidebar", "className", "numRequestToSpeak", "onClick"]), d = l.useCallback(() => {
-    null == s || s(), t()
-  }, [s, t]);
+    null == a || a(), t()
+  }, [a, t]);
   return (0, r.jsx)(c.A, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -108,8 +108,8 @@ function h(e) {
     onClick: d,
     label: n ? u.intl.string(u.t.gKGz7A) : u.intl.string(u.t.ImQ4dW),
     className: i,
-    iconComponent: () => (0, r.jsx)(p, {
-      numRequestToSpeak: a,
+    iconComponent: () => (0, r.jsx)(h, {
+      numRequestToSpeak: s,
       className: i
     })
   }, o))

@@ -18,23 +18,23 @@ function a(e, t) {
       m = n[3],
       g = n[4],
       E = n[5],
-      b = n[6],
-      y = n[7];
+      y = n[6],
+      b = n[7];
     o && (r.push(o), o = "");
     var O = null != h && null != _ && _ !== h,
-      A = "+" === b || "*" === b,
-      v = "?" === b || "*" === b,
-      S = n[2] || l,
-      I = g || E;
+      v = "+" === y || "*" === y,
+      A = "?" === y || "*" === y,
+      I = n[2] || l,
+      S = g || E;
     r.push({
       name: m || a++,
       prefix: h || "",
-      delimiter: S,
-      optional: v,
-      repeat: A,
+      delimiter: I,
+      optional: A,
+      repeat: v,
       partial: O,
-      asterisk: !!y,
-      pattern: I ? d(I) : y ? ".*" : "[^" + u(S) + "]+?"
+      asterisk: !!b,
+      pattern: S ? d(S) : b ? ".*" : "[^" + u(I) + "]+?"
     })
   }
   return s < e.length && (o += e.substr(s)), o && r.push(o), r

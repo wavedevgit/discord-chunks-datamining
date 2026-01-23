@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 502103, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,20 +16,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk349828 = require("./349828.js"),
   Chunk124759 = require("./124759.js");
 
-function A(e) {
+function f(e) {
   var t;
-  let A = (0, s.TZ)(e),
-    g = h.dR.some(t => (null == e ? true : e.id) !== f.V && c.Ib(t, e)),
-    m = (null == e ? true : e.defaultMessageNotifications) === d.orn.ALL_MESSAGES,
-    b = (0, u.G$)(l.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.dJq),
-    _ = A && (g || m) && !b,
+  let f = (0, s.TZ)(e),
+    m = g.dR.some(t => (null == e ? true : e.id) !== h.V && c.Ib(t, e)),
+    A = (null == e ? true : e.defaultMessageNotifications) === d.orn.ALL_MESSAGES,
+    _ = (0, u.G$)(l.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.dJq),
+    b = f && (m || A) && !_,
     E = i.useCallback(() => {
       var t;
       (0, u._$)(l.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.dJq, true, p.i.DISMISS)
     }, [e]),
     O = i.useRef(false);
   i.useEffect(() => {
-    if (_ && !O.current) {
+    if (b && !O.current) {
       var t;
       (0, a.mMO)(async () => {
         let {
@@ -54,8 +54,8 @@ function A(e) {
           return e
         }({
           guild: e,
-          canEveryoneModerate: g,
-          isDefaultNotificationsAllMessages: m
+          canEveryoneModerate: m,
+          isDefaultNotificationsAllMessages: A
         }, n))
       }, {
         onCloseCallback: E
@@ -64,5 +64,5 @@ function A(e) {
         guild_id: null != (t = null == e ? true : e.id) ? t : d.dJq
       }), O.current = true
     }
-  }, [g, e, E, m, _])
+  }, [m, e, E, A, b])
 }

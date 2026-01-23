@@ -2,12 +2,12 @@
 /** chunk id: 11541, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CI: () => b,
+  CI: () => y,
   UP: () => E,
   eN: () => O,
   uY: () => g,
-  v8: () => y,
-  vk: () => v
+  v8: () => b,
+  vk: () => A
 }), require("./747238.js"), require("./321073.js");
 var Chunk562465 = require("./562465.js"),
   Chunk582754 = require("./582754.js"),
@@ -50,7 +50,7 @@ function g(e, t) {
 var E = function(e) {
   return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.BOT = 1] = "BOT", e[e.INTEGRATION = 2] = "INTEGRATION", e[e.DISCOVERY = 3] = "DISCOVERY", e[e.HUB = 4] = "HUB", e[e.INVITE = 5] = "INVITE", e[e.VANITY_URL = 6] = "VANITY_URL", e[e.MANUAL_MEMBER_VERIFICATION = 7] = "MANUAL_MEMBER_VERIFICATION", e[e.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL = 8] = "SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL", e
 }({});
-let b = function(e) {
+let y = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
       n = arguments.length > 2 && true !== arguments[2] && arguments[2];
     switch (e) {
@@ -77,7 +77,7 @@ let b = function(e) {
         return c.intl.string(c.t.DvMBkS)
     }
   },
-  y = e => {
+  b = e => {
     switch (e) {
       case "twitch":
         return c.intl.string(c.t.AVGAkw);
@@ -93,7 +93,7 @@ let b = function(e) {
     return null != t && ["twitch", "youtube"].includes(e) ? "url('".concat((0, i.Mw)(n) ? t.icon.darkSVG : t.icon.lightSVG, "')") : null
   };
 
-function A(e) {
+function v(e) {
   return {
     userId: e.user_id,
     sourceInviteCode: e.source_invite_code,
@@ -102,7 +102,7 @@ function A(e) {
     integrationType: e.integration_type
   }
 }
-async function v(e, t) {
+async function A(e, t) {
   let n = f(e, t),
     i = _(n);
   if (0 === i.length) return [];
@@ -116,7 +116,7 @@ async function v(e, t) {
       rejectWithError: true
     });
     if (!Array.isArray(t.body)) return h(n, 0), [];
-    let a = t.body.map(A),
+    let a = t.body.map(v),
       s = [];
     a.forEach(e => {
       let {

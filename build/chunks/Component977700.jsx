@@ -26,61 +26,61 @@ function v(e) {
     dismissibleContent: t,
     backgroundColor: n,
     specialTextColor: m
-  } = e, v = p.A.useIsEligible(), j = (0, s.JZ)(t), y = null != n, _ = null != m ? {
+  } = e, v = p.A.useIsEligible(), j = (0, s.JZ)(t), _ = null != n, y = null != m ? {
     color: m
   } : true, {
     analyticsLocations: A
-  } = (0, r.Ay)(i.A.HOLIDAY_COACHMARK), C = e => {
+  } = (0, i.Ay)(r.A.HOLIDAY_COACHMARK), C = e => {
     (0, s.Dr)(t, {
       dismissAction: e
     })
   }, S = () => {
     let e = (0, d.E7)("HolidayCoachmark");
     (0, u.openUserSettings)(e ? c.X.NOTIFICATIONS_PANEL : c.X.LEGACY_NOTIFICATIONS_SETTINGS_PANEL, {
-      section: f.nc_.NOTIFICATIONS,
+      section: x.nc_.NOTIFICATIONS,
       analyticsLocations: A
-    }), C(x.i.TAKE_ACTION)
+    }), C(g.i.TAKE_ACTION)
   };
   return v && !j ? (0, a.jsx)(o.Ay, {
     children: (0, a.jsxs)("div", {
-      className: g.iE,
+      className: b.iE,
       style: {
-        backgroundColor: y ? n : true
+        backgroundColor: _ ? n : true
       },
-      children: [!y && (0, a.jsxs)("div", {
-        className: g.o5,
+      children: [!_ && (0, a.jsxs)("div", {
+        className: b.o5,
         children: [(0, a.jsx)(h.A, {
-          className: g.iL,
+          className: b.iL,
           pageMultiplier: 5
         }), (0, a.jsx)("div", {
-          className: g.Np
+          className: b.Np
         })]
       }), (0, a.jsx)("div", {
-        className: g.c8
+        className: b.c8
       }), (0, a.jsxs)("div", {
-        className: g.Qs,
+        className: b.Qs,
         children: [(0, a.jsxs)("div", {
           children: [(0, a.jsx)(l.Heading, {
             variant: "heading-md/bold",
-            color: null != _ ? true : "always-white",
-            style: _,
-            children: b.intl.string(b.t["6CxPoB"])
+            color: null != y ? true : "always-white",
+            style: y,
+            children: f.intl.string(f.t["6CxPoB"])
           }), (0, a.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "always-white",
-            children: b.intl.format(b.t.IVzJ8G, {
+            children: f.intl.format(f.t.IVzJ8G, {
               settingsHook: (e, t) => (0, a.jsx)(l.DUT, {
                 tag: "span",
-                className: g.nf,
-                style: _,
+                className: b.nf,
+                style: y,
                 onClick: S,
                 children: e
               }, t)
             })
           })]
         }), (0, a.jsx)(l.DUT, {
-          className: g.l2,
-          onClick: () => C(x.i.USER_DISMISS),
+          className: b.l2,
+          onClick: () => C(g.i.USER_DISMISS),
           children: (0, a.jsx)(l.PGe, {
             color: "currentColor",
             size: "xs"

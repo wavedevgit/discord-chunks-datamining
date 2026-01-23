@@ -26,7 +26,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk520650 = require("./520650.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk294456 = require("./294456.js");
-let I = e => e.map(e => "#".concat(e)),
+let S = e => e.map(e => "#".concat(e)),
   T = e => {
     let {
       message: t
@@ -36,21 +36,21 @@ let I = e => e.map(e => "#".concat(e)),
       setAll: i
     } = (0, E.ko)();
     return true === n ? null : (0, r.jsxs)("div", {
-      className: S.kL,
+      className: I.kL,
       children: [(0, r.jsx)(N, {
         message: t
       }), (0, r.jsx)(u.$nd, {
-        text: v.intl.string(v.t.SKNnqq),
+        text: A.intl.string(A.t.SKNnqq),
         fullWidth: true,
         variant: "primary",
         onClick: () => {
           g.default.track(O.HAw.CUSTOM_THEME_SHARE_PREVIEWED, {}), (0, _.nf)(_.HP.CUSTOM_THEME, {
             from: _.xv.SHARE_MESSAGE
           }), i({
-            colors: I(n.colors),
+            colors: S(n.colors),
             chassisMixAmount: n.base_mix,
             gradientAngle: n.gradient_angle
-          }), (0, m.GQ)((0, b.PC)(n.base_theme))
+          }), (0, m.GQ)((0, y.PC)(n.base_theme))
         }
       })]
     })
@@ -58,7 +58,7 @@ let I = e => e.map(e => "#".concat(e)),
   C = (e, t, n) => e.split(" ").map((e, a) => "__USERNAME__" !== e ? (0, r.jsxs)(i.Fragment, {
     children: [e, " "]
   }, a) : (0, r.jsxs)("span", {
-    className: S.H,
+    className: I.H,
     children: [(0, r.jsx)(c.eu, {
       "aria-label": n,
       src: t.getAvatarURL(null, 20),
@@ -84,27 +84,27 @@ let I = e => e.map(e => "#".concat(e)),
       minTimeVisibleMs: 200
     }), m = i.useMemo(() => {
       var e;
-      return true === n ? "" : (0, y.V9)(I(n.colors), null != (e = n.gradient_angle) ? e : 0)
+      return true === n ? "" : (0, b.V9)(S(n.colors), null != (e = n.gradient_angle) ? e : 0)
     }, [n]);
     return true === n ? null : (0, r.jsxs)("div", {
-      className: S.pS,
+      className: I.pS,
       ref: _,
       children: [(0, r.jsx)("div", {
-        className: S.sl,
+        className: I.sl,
         style: {
           background: "".concat(m)
         }
       }), (0, r.jsxs)("div", {
-        className: S.Ix,
+        className: I.Ix,
         children: [(0, r.jsxs)(d.Heading, {
           variant: "heading-md/semibold",
-          className: S.qP,
-          children: [v.intl.string(A.default.KSBBpC), " ", (0, r.jsx)(l.NitroWheelIcon, {})]
+          className: I.qP,
+          children: [A.intl.string(v.default.KSBBpC), " ", (0, r.jsx)(l.NitroWheelIcon, {})]
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
           color: "text-subtle",
-          className: S.Tb,
-          children: C("".concat(v.intl.format(A.default.fQPSEf, {
+          className: I.Tb,
+          children: C("".concat(A.intl.format(v.default.fQPSEf, {
             username: "__USERNAME__"
           })), t.author, c.nick)
         })]

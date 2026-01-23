@@ -21,9 +21,9 @@ let c = 1e4,
       t = (0, o.A)(),
       [n, h] = i.useState(false),
       [m, g] = i.useState([0, 0]),
-      [E, b] = i.useState(.5),
-      [y, O] = i.useState(0),
-      [A, v] = i.useState(false);
+      [E, y] = i.useState(.5),
+      [b, O] = i.useState(0),
+      [v, A] = i.useState(false);
     return i.useEffect(() => {
       let t = null,
         r = e.current;
@@ -31,7 +31,7 @@ let c = 1e4,
         if (false === n) {
           let e = Math.random() * c + u;
           t = window.setTimeout(() => {
-            h(true), g([(0, a.random)(d[0], d[1]), (0, a.random)(f[0], f[1])]), b((0, a.random)(p[0], p[1])), O((0, a.random)(_[0], _[1])), v(Math.random() > .5)
+            h(true), g([(0, a.random)(d[0], d[1]), (0, a.random)(f[0], f[1])]), y((0, a.random)(p[0], p[1])), O((0, a.random)(_[0], _[1])), A(Math.random() > .5)
           }, e)
         }
         returntrue === n && r.paused && (r.currentTime = 0, r.play()), () => {
@@ -42,7 +42,7 @@ let c = 1e4,
       ref: e,
       className: l.d,
       style: {
-        transform: "translate(".concat(m[0], "px, ").concat(m[1], "px) scale(").concat(A ? false * E : E, ", ").concat(E, ") rotate(").concat(y, "deg)")
+        transform: "translate(".concat(m[0], "px, ").concat(m[1], "px) scale(").concat(v ? false * E : E, ", ").concat(E, ") rotate(").concat(b, "deg)")
       },
       src: null == t ? true : t.misc["shooting-star"],
       loop: false,

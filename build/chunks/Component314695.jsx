@@ -2,7 +2,7 @@
 /** chunk id: 314695, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,11 +22,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
 
-function y() {
+function b() {
   let {
     analyticsLocations: e
   } = (0, o.Ay)(), t = (0, f.sw)(), n = (0, a.bG)([d.A], () => d.A.getSubsection()), {
-    enableAdvancedSignals: y
+    enableAdvancedSignals: b
   } = f.L_.useExperiment({
     location: "clips_settings"
   }, {
@@ -36,33 +36,33 @@ function y() {
     (0, l.Dr)(s.M.CLIPS_SETTINGS_BETA_TAG)
   });
   let O = [{
-      title: b.intl.string(b.t.iIwmV5),
+      title: y.intl.string(y.t.iIwmV5),
       component: h.A,
       setting: E.H.CLIPS_RECORDING_TAB,
       subsection: g.Oi,
       predicate: () => t
     }, {
-      title: b.intl.string(b.t.sA0WKL),
+      title: y.intl.string(y.t.sA0WKL),
       component: p.A,
       setting: E.H.CLIPS_AUTOMATIC_TAB,
       subsection: g.Yn,
-      predicate: () => t && y
+      predicate: () => t && b
     }, {
-      title: b.intl.string(b.t.GcIeET),
+      title: y.intl.string(y.t.GcIeET),
       component: _.A,
       setting: E.H.CLIPS_PRIVACY_TAB,
       subsection: g.nB
     }],
-    A = O.findIndex(e => null != e.subsection && e.subsection === n);
+    v = O.findIndex(e => null != e.subsection && e.subsection === n);
   return (0, r.jsx)(o.f5, {
     value: e,
     children: (0, r.jsx)(c.R, {
-      header: b.intl.string(b.t.z2jK6X),
+      header: y.intl.string(y.t.z2jK6X),
       children: (0, r.jsx)(u.A, {
         parentSetting: E.H.CLIPS,
         settingsSection: m.nc_.CLIPS,
         tabs: O,
-        defaultTabIndex: A > false ? A : true
+        defaultTabIndex: v > false ? v : true
       })
     })
   })

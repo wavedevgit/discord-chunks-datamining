@@ -2,7 +2,7 @@
 /** chunk id: 720480, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c,
-  L: () => a.A
+  L: () => s.A
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -19,6 +19,6 @@ let c = () => (0, r.jsx)(i._, {
   }),
   bannerHeader: o.intl.string(o.t.EouHwv),
   bannerSubtext: o.intl.format(o.t.PThBel, {
-    appealLink: s.q
+    appealLink: a.q
   })
 })

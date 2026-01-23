@@ -77,29 +77,29 @@ function m(e, t, n) {
     let [h, ...m] = [u, f], {
       children: g,
       className: E,
-      dir: b = "ltr",
-      orientation: y = "vertical",
+      dir: y = "ltr",
+      orientation: b = "vertical",
       overflow: O = "scroll",
-      fade: A = false,
-      customTheme: v = false,
-      paddingFix: S = true,
-      style: I,
+      fade: v = false,
+      customTheme: A = false,
+      paddingFix: I = true,
+      style: S,
       gap: T,
       experimental_useStack: C,
       disableFocusRingScope: N = false
     } = h, R = _(h, ["children", "className", "dir", "orientation", "overflow", "fade", "customTheme", "paddingFix", "style", "gap", "experimental_useStack", "disableFocusRingScope"]), [w] = m, {
       scrollerRef: P,
       getScrollerState: D
-    } = (0, c.s$)(), x = (0, c.kR)(P, y);
+    } = (0, c.s$)(), x = (0, c.kR)(P, b);
     i.useImperativeHandle(w, () => d({
       getScrollerNode: () => P.current,
       getScrollerState: D
-    }, (0, c.cJ)(P, D, x, y)), [P, D, y, x]);
+    }, (0, c.cJ)(P, D, x, b)), [P, D, b, x]);
     let L = N ? i.Fragment : o.xp,
       j = (0, c._I)({
-        paddingFix: S,
-        orientation: y,
-        dir: b,
+        paddingFix: I,
+        orientation: b,
+        dir: y,
         className: E,
         scrollerRef: P,
         specs: a
@@ -109,11 +109,11 @@ function m(e, t, n) {
       ref: P,
       className: s()(E, {
         [e]: true,
-        [t]: A,
-        [n]: v
+        [t]: v,
+        [n]: A
       }),
-      style: (0, c.Ze)(I, y, O),
-      dir: b
+      style: (0, c.Ze)(S, b, O),
+      dir: y
     }, R), {
       children: (0, r.jsxs)(L, {
         containerRef: P,
@@ -123,11 +123,11 @@ function m(e, t, n) {
       ref: P,
       className: s()(E, {
         [e]: true,
-        [t]: A,
-        [n]: v
+        [t]: v,
+        [n]: A
       }),
-      style: (0, c.Ze)(I, y, O),
-      dir: b
+      style: (0, c.Ze)(S, b, O),
+      dir: y
     }, R), {
       children: (0, r.jsxs)(L, {
         containerRef: P,

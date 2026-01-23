@@ -32,18 +32,18 @@ function h(e) {
 
 function m(e) {
   let t = E(e);
-  y(e, t)
+  b(e, t)
 }
 let g = /(?:<span class="([^"]*)">)|(?:<\/span>)/g;
 
 function E(e) {
   let t = [],
     n = null;
-  for (let r of d.VW.blocks(e)) n = b(e, r, null != n && (n.isInCodeBlock || n.opensCodeBlock), null != n && (n.isStyledCodeBlockLine || n.opensCodeBlockOnOwnLine), null != n && (n.opensCodeBlock || !n.closesCodeBlock) ? n.lang : null), t.push(n);
-  return A(t), t
+  for (let r of d.VW.blocks(e)) n = y(e, r, null != n && (n.isInCodeBlock || n.opensCodeBlock), null != n && (n.isStyledCodeBlockLine || n.opensCodeBlockOnOwnLine), null != n && (n.opensCodeBlock || !n.closesCodeBlock) ? n.lang : null), t.push(n);
+  return v(t), t
 }
 
-function b(e, t, n, r, i) {
+function y(e, t, n, r, i) {
   var a;
   let s = T(t),
     l = s[0],
@@ -72,7 +72,7 @@ function b(e, t, n, r, i) {
   }
 }
 
-function y(e, t) {
+function b(e, t) {
   for (let n of t) {
     let [t, r] = n.blockEntry, i = O(n);
     (null == t ? true : t.codeBlockState) != i && u.b.setNodes(e, {
@@ -93,7 +93,7 @@ function O(e) {
   } : null
 }
 
-function A(e) {
+function v(e) {
   let t = [],
     n = false;
   for (let i of e) {
@@ -102,7 +102,7 @@ function A(e) {
       let e = t.map(e => (0, c.IQ)(e.blockEntry[0])).join("\n"),
         n = t[0].lang;
       if (null != n && null != r.A.getLanguage(n)) {
-        let r = I(e, n);
+        let r = S(e, n);
         if (null != r && r.length === t.length) {
           let e = [];
           for (let n = 0; n < t.length; n++) {
@@ -137,21 +137,21 @@ function A(e) {
     n && t.push(i), i.opensCodeBlock && (n = true)
   }
 }
-let v = {
+let A = {
     max: 1 / 0,
     maxAge: +Chunk927813.A.Millis.MINUTE,
     updateAgeOnGet: true
   },
-  S = new(a())(v);
+  I = new(a())(A);
 
-function I(e, t) {
+function S(e, t) {
   let n = "".concat(e, "-").concat(t),
-    r = S.get(n);
+    r = I.get(n);
   if (null != r) return r;
   let i = o.default.highlight(t, e, false);
   if (null == i || i.illegal) return null;
   let a = i.value.split("\n");
-  return S.set(n, a), a
+  return I.set(n, a), a
 }
 
 function T(e) {

@@ -1,12 +1,12 @@
 /** Chunk was on 22477 **/
 /** chunk id: 139210, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk397927 = require("./397927.js"),
   Chunk216456 = require("./216456.js"),
@@ -21,22 +21,22 @@ var Chunk627968 = require("./627968.js"),
   Chunk223352 = require("./223352.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk116224 = require("./116224.js");
-let y = (0, Chunk108531.animated)(Chunk57718.Ay),
-  _ = () => {
+let _ = (0, Chunk108531.animated)(Chunk57718.Ay),
+  y = () => {
     let e = (0, d.go)(),
       {
         expansionSpring: t
-      } = l.useContext(x.PW),
+      } = l.useContext(g.PW),
       {
         onCtxMenuOpen: n,
-        onCtxMenuClose: i,
+        onCtxMenuClose: r,
         onCtxMenuSelect: h,
-        isExpanded: _,
+        isExpanded: y,
         isExpansionAnimationComplete: A,
         quest: C
-      } = l.useContext(b.T),
+      } = l.useContext(f.T),
       S = l.useCallback(() => {
-        (0, f.Zc)(C, {
+        (0, x.Zc)(C, {
           content: u.uF.QUEST_BAR_V2,
           ctaContent: c.Cy.OPEN_DISCLOSURE,
           sourceQuestContent: u.uF.QUEST_BAR_V2
@@ -50,13 +50,13 @@ let y = (0, Chunk108531.animated)(Chunk57718.Ay),
           sourceQuestContent: u.uF.QUEST_BAR_V2
         })
       }, [e, C]),
-      E = _ && A,
-      N = (0, a.jsx)(o.DUT, {
+      E = y && A,
+      T = (0, a.jsx)(o.DUT, {
         onClick: O,
-        className: r()(j.vk, {
+        className: i()(j.vk, {
           [j.wm]: E
         }),
-        children: (0, a.jsx)(y, {
+        children: (0, a.jsx)(_, {
           quest: C,
           withGameTile: false,
           logotypeClassName: j.Iu,
@@ -71,7 +71,7 @@ let y = (0, Chunk108531.animated)(Chunk57718.Ay),
         })
       });
     return (0, a.jsxs)(s.animated.div, {
-      className: r()(j.iE, j.Ht, {
+      className: i()(j.iE, j.Ht, {
         [j.tT]: E
       }),
       style: {
@@ -88,9 +88,9 @@ let y = (0, Chunk108531.animated)(Chunk57718.Ay),
             output: [0, 1]
           })
         }
-      }), (0, a.jsx)(g.A, {
+      }), (0, a.jsx)(b.A, {
         isFullyExpanded: E,
-        partnerBranding: N
+        partnerBranding: T
       }), (0, a.jsxs)(s.animated.div, {
         className: j.P0,
         style: {
@@ -112,7 +112,7 @@ let y = (0, Chunk108531.animated)(Chunk57718.Ay),
           })]
         }), (0, a.jsx)(p.C, {
           onOpen: n,
-          onClose: i,
+          onClose: r,
           onSelect: h,
           questContent: u.uF.QUEST_BAR_V2,
           quest: C,
@@ -144,7 +144,7 @@ let y = (0, Chunk108531.animated)(Chunk57718.Ay),
               children: (0, a.jsx)(o.jNK, {
                 size: "md",
                 color: "currentColor",
-                className: r()(j.Bx, j.ON)
+                className: i()(j.Bx, j.ON)
               })
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);

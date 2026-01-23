@@ -17,54 +17,54 @@ function u(e) {
     onRender: n,
     onRequestClose: u,
     onActionClick: d,
-    onActionMouseDown: f,
-    position: p = "right",
-    align: h = "top",
-    caretConfig: b = {
+    onActionMouseDown: p,
+    position: h = "right",
+    align: f = "top",
+    caretConfig: g = {
       align: "start"
     },
-    skuImageDetails: g,
-    title: m,
+    skuImageDetails: m,
+    title: b,
     body: A
   } = e;
   l.useEffect(() => {
     null == n || n()
   }, [n]);
-  let y = l.useMemo(() => (null == g ? true : g.imageUrl) == null ? {
+  let y = l.useMemo(() => (null == m ? true : m.imageUrl) == null ? {
     type: "image",
     src: c.A,
     aspectRatio: "6/4"
-  } : (0, a.e)({
-    imageUrl: null == g ? true : g.imageUrl,
-    backgroundImageUrl: null == g ? true : g.backgroundImageUrl,
-    altText: s.intl.string(s.t["ulQB+t"]),
+  } : (0, s.e)({
+    imageUrl: null == m ? true : m.imageUrl,
+    backgroundImageUrl: null == m ? true : m.backgroundImageUrl,
+    altText: a.intl.string(a.t["ulQB+t"]),
     customClassNames: {
       containerClassName: o.z,
       foregroundImageClassName: o._
     }
-  }), [null == g ? true : g.imageUrl, null == g ? true : g.backgroundImageUrl]);
+  }), [null == m ? true : m.imageUrl, null == m ? true : m.backgroundImageUrl]);
   return (0, r.jsx)(i.AM, {
     size: "lg",
     shouldShow: true,
-    position: p,
-    caretConfig: b,
+    position: h,
+    caretConfig: g,
     gradientColor: "purple",
     alignmentStrategy: "edge",
-    align: h,
+    align: f,
     badge: {
       type: "new",
       variant: "default"
     },
     onRequestClose: u,
     actions: [{
-      text: s.intl.string(s.t.RzWDqY),
+      text: a.intl.string(a.t.RzWDqY),
       variant: "primary",
       onClick: d,
-      onMouseDown: f
+      onMouseDown: p
     }],
     targetElementRef: t,
-    title: null != m ? m : s.intl.string(s.t.Ylu2JM),
-    body: null != A ? A : s.intl.string(s.t.vgylLQ),
+    title: null != b ? b : a.intl.string(a.t.Ylu2JM),
+    body: null != A ? A : a.intl.string(a.t.vgylLQ),
     graphic: y
   })
 }

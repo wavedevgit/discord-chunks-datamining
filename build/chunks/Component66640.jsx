@@ -2,7 +2,7 @@
 /** chunk id: 66640, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => p
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk578551 = require("./578551.js");
 
-function b(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function b(e) {
   return e
 }
 
-function m(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,49 +48,49 @@ function m(e, t) {
   }), e
 }
 
-function p(e) {
-  var t, n, p;
+function b(e) {
+  var t, n, b;
   let {
-    rule: x,
-    onChangeRule: h
+    rule: h,
+    onChangeRule: x
   } = e, j = i.useCallback(e => {
-    h(m(b({}, x), {
-      triggerMetadata: m(b({}, x.triggerMetadata), {
+    x(f(p({}, h), {
+      triggerMetadata: f(p({}, h.triggerMetadata), {
         allowList: e
       })
     }))
-  }, [h, x]);
+  }, [x, h]);
   return (0, r.jsxs)("div", {
-    className: g.sp,
-    children: [(0, r.jsxs)(o.A, {
+    className: m.sp,
+    children: [(0, r.jsxs)(c.A, {
       step: 1,
-      header: f.intl.string(f.t.CX5Yfc),
+      header: g.intl.string(g.t.CX5Yfc),
       children: [(0, r.jsx)(s.A, {
-        rule: x,
-        onChangeRule: h
+        rule: h,
+        onChangeRule: x
       }), (0, r.jsx)(l.A, {
         onChange: j,
-        initialValue: null == (t = x.triggerMetadata) ? true : t.allowList,
+        initialValue: null == (t = h.triggerMetadata) ? true : t.allowList,
         maxWordCount: u.hG,
-        collapsed: (null == (n = x.triggerMetadata) ? true : n.allowList) == null || (null == (p = x.triggerMetadata) ? true : p.allowList.length) === 0
+        collapsed: (null == (n = h.triggerMetadata) ? true : n.allowList) == null || (null == (b = h.triggerMetadata) ? true : b.allowList.length) === 0
       })]
     }), (0, r.jsx)(d.A, {
       type: d.A.Type.ARROW_DOWN
-    }), (0, r.jsx)(o.A, {
+    }), (0, r.jsx)(c.A, {
       step: 2,
-      header: f.intl.string(f.t["18TOiQ"]),
+      header: g.intl.string(g.t["18TOiQ"]),
       children: (0, r.jsx)(a.A, {
-        rule: x,
-        onChangeRule: h
+        rule: h,
+        onChangeRule: x
       })
     }), (0, r.jsx)(d.A, {
       type: d.A.Type.CROSS
-    }), (0, r.jsx)(o.A, {
+    }), (0, r.jsx)(c.A, {
       step: 3,
-      header: f.intl.string(f.t.eq3gjh),
-      children: (0, r.jsx)(c.A, {
-        rule: x,
-        onChangeRule: h
+      header: g.intl.string(g.t.eq3gjh),
+      children: (0, r.jsx)(o.A, {
+        rule: h,
+        onChangeRule: x
       })
     })]
   })

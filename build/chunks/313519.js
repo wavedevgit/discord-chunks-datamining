@@ -26,8 +26,8 @@ let l = e => {
     gridDispatch: m,
     getItemProps: g,
     getRowProps: E,
-    gridContainerProps: b,
-    handleGridContainerKeyDown: y,
+    gridContainerProps: y,
+    handleGridContainerKeyDown: b,
     isUsingKeyboardNavigation: O
   } = (0, o.Ff)({
     columnCounts: t,
@@ -52,8 +52,8 @@ let l = e => {
   }), [m, c]), {
     getItemProps: g,
     getRowProps: E,
-    gridContainerProps: b,
-    handleGridContainerKeyDown: y,
+    gridContainerProps: y,
+    handleGridContainerKeyDown: b,
     isUsingKeyboardNavigation: O
   }
 }

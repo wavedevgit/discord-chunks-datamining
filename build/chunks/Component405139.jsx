@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk205207 = require("./205207.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,14 +31,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -51,34 +51,34 @@ function O(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = A(e, t), Object.getOwnPropertySymbols)
+  if (a = v(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function A(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let v = new Chunk626584.A("PaymentRequest"),
-  S = Object.values({
+let A = new Chunk626584.A("PaymentRequest"),
+  I = Object.values({
     applePay: "applePay",
     googlePay: "googlePay",
     link: "link",
     browserCard: "browserCard"
   });
-class I extends Chunk64700.Component {
+class S extends Chunk64700.Component {
   componentDidMount() {
-    (0, p.isDesktop)() || (this.disableWallets = S.filter(e => e !== this.paymentRequestWallet).sort(), (0, _.Cv)().then(e => {
+    (0, p.isDesktop)() || (this.disableWallets = I.filter(e => e !== this.paymentRequestWallet).sort(), (0, _.Cv)().then(e => {
       this.initPaymentRequest(e)
     }))
   }
   logInfo(e) {
     for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
-    (this.isUserStaff || d.default.isLoggingAnalyticsEvents) && v.info("[".concat(this.paymentRequestWalletName, "] ").concat(e), ...n)
+    (this.isUserStaff || d.default.isLoggingAnalyticsEvents) && A.info("[".concat(this.paymentRequestWalletName, "] ").concat(e), ...n)
   }
   validatePaymentRequest() {
     let {
@@ -136,7 +136,7 @@ class I extends Chunk64700.Component {
       iconType: t,
       buttonText: n
     } = e, i = O(e, ["iconType", "buttonText"]);
-    return (0, r.jsx)(o.$nd, y({
+    return (0, r.jsx)(o.$nd, b({
       fullWidth: true,
       onClick: this.attemptPaymentRequest,
       text: n,
@@ -180,11 +180,11 @@ class I extends Chunk64700.Component {
     return e ? this.renderMain() : null
   }
   constructor(...e) {
-    super(...e), b(this, "initialState", {
+    super(...e), y(this, "initialState", {
       submitting: true,
       paymentRequest: null,
       canMakePaymentResult: null
-    }), b(this, "state", y({}, this.initialState)), b(this, "disableWallets", []), b(this, "isUserStaff", (0, h.Gn)()), b(this, "initPaymentRequest", async e => {
+    }), y(this, "state", b({}, this.initialState)), y(this, "disableWallets", []), y(this, "isUserStaff", (0, h.Gn)()), y(this, "initPaymentRequest", async e => {
       if (null == e) return;
       this.setState({
         submitting: true,
@@ -224,7 +224,7 @@ class I extends Chunk64700.Component {
       }, () => {
         this.initPaymentRequestCallback(r)
       }), r
-    }), b(this, "attemptPaymentRequest", () => {
+    }), y(this, "attemptPaymentRequest", () => {
       if ((0, p.isDesktop)()) return void this.props.onChooseType(m.hes.PAYMENT_REQUEST, this.paymentRequestWallet);
       let {
         available: e
@@ -237,7 +237,7 @@ class I extends Chunk64700.Component {
     })
   }
 }
-class T extends I {
+class T extends S {
   validatePaymentRequest() {
     let {
       paymentRequest: e,
@@ -284,10 +284,10 @@ class T extends I {
     })
   }
   constructor(...e) {
-    super(...e), b(this, "state", y({}, this.initialState)), b(this, "paymentRequestWallet", "googlePay"), b(this, "paymentRequestWalletName", "Google Pay")
+    super(...e), y(this, "state", b({}, this.initialState)), y(this, "paymentRequestWallet", "googlePay"), y(this, "paymentRequestWalletName", "Google Pay")
   }
 }
-class C extends I {
+class C extends S {
   validatePaymentRequest() {
     let {
       paymentRequest: e,
@@ -334,6 +334,6 @@ class C extends I {
     })
   }
   constructor(...e) {
-    super(...e), b(this, "state", y({}, this.initialState)), b(this, "paymentRequestWallet", "applePay"), b(this, "paymentRequestWalletName", "Apple Pay")
+    super(...e), y(this, "state", b({}, this.initialState)), y(this, "paymentRequestWallet", "applePay"), y(this, "paymentRequestWalletName", "Apple Pay")
   }
 }

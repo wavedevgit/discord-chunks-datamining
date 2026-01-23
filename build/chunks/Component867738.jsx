@@ -26,33 +26,33 @@ let _ = e => {
     onKeyDown: m,
     onFocus: g,
     autoFocus: E,
-    searchBarRef: b,
-    diversitySurrogate: y,
+    searchBarRef: y,
+    diversitySurrogate: b,
     isBurstReaction: O,
-    onBurstReactionToggle: A,
-    renderHeader: v
-  } = e, S = (0, r.jsxs)(r.Fragment, {
+    onBurstReactionToggle: v,
+    renderHeader: A
+  } = e, I = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.A, {
       emojiListRef: h,
       gridNavigatorId: d.lq,
       onKeyDown: m,
-      ref: b,
+      ref: y,
       onFocus: g,
       autoFocus: E,
       defaultSearchPlaceholder: (0, o.wT)(i, O)
     }), i === f.b_.REACTION ? (0, r.jsx)(s.A, {
       checked: O,
-      onClick: A
+      onClick: v
     }) : null, null != n ? n : (0, r.jsx)(c.A, {
-      searchBarRef: b,
+      searchBarRef: y,
       className: p.fx,
-      selectedSurrogate: y
+      selectedSurrogate: b
     }), (0, r.jsx)(l.A, {
       channel: t
     })]
   });
   return (0, r.jsx)("div", {
     className: a()(p.wx, _),
-    children: null != v ? v(S) : S
+    children: null != A ? A(I) : I
   })
 }

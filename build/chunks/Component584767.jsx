@@ -68,17 +68,17 @@ function w(e, t) {
   }), e
 }
 let P = () => (0, r.jsx)("div", {
-    className: A.Zr,
+    className: v.Zr,
     children: (0, r.jsx)(c.Heading, {
-      className: A.uC,
+      className: v.uC,
       variant: "text-xs/bold",
       children: O.intl.string(O.t.TR2B4T)
     })
   }),
   D = () => (0, r.jsx)("div", {
-    className: A.Zr,
+    className: v.Zr,
     children: (0, r.jsx)(c.Heading, {
-      className: A.uC,
+      className: v.uC,
       variant: "heading-deprecated-12/extrabold",
       children: O.intl.string(O.t.IBYG5U)
     })
@@ -92,7 +92,7 @@ let P = () => (0, r.jsx)("div", {
     return (0, r.jsxs)(c.Text, {
       color: "none",
       variant: null != i ? i : "text-md/medium",
-      className: A.wb,
+      className: v.wb,
       children: [t, null != n && (0, r.jsxs)(r.Fragment, {
         children: [" ", n]
       })]
@@ -107,7 +107,7 @@ let P = () => (0, r.jsx)("div", {
       children: [(0, r.jsx)(c.A9s, {
         size: "md",
         color: "currentColor",
-        className: n ? A.M0 : A.PE,
+        className: n ? v.M0 : v.PE,
         "aria-hidden": true
       }), (0, r.jsx)(c.AC4, {
         children: O.intl.string(O.t["tq+6t/"])
@@ -116,7 +116,7 @@ let P = () => (0, r.jsx)("div", {
       children: [(0, r.jsx)(c.PGe, {
         size: "md",
         color: "currentColor",
-        className: A.ut,
+        className: v.ut,
         "aria-hidden": true
       }), (0, r.jsx)(c.AC4, {
         children: O.intl.string(O.t.l4qZrp)
@@ -131,17 +131,17 @@ let P = () => (0, r.jsx)("div", {
       withBottomMargin: a
     } = e;
     return (0, r.jsxs)("tr", {
-      className: s()(A.nM, A.YI, {
-        [A.ML]: a
+      className: s()(v.nM, v.YI, {
+        [v.ML]: a
       }),
       children: [(0, r.jsx)("th", {
         scope: "row",
-        className: A.nx,
+        className: v.nx,
         children: (0, r.jsx)(x, {
           text: t
         })
       }), (0, r.jsx)("td", {
-        className: A.Hn,
+        className: v.Hn,
         children: null != n.text ? (0, r.jsx)(x, {
           text: n.text
         }) : (0, r.jsx)(L, {
@@ -149,7 +149,7 @@ let P = () => (0, r.jsx)("div", {
           isTier0: true
         })
       }), (0, r.jsx)("td", {
-        className: A.Hn,
+        className: v.Hn,
         children: null != i.text ? (0, r.jsx)(x, {
           text: i.text
         }) : (0, r.jsx)(L, {
@@ -165,10 +165,10 @@ let P = () => (0, r.jsx)("div", {
     } = e;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("tr", {
-        className: A.nM,
+        className: v.nM,
         children: [(0, r.jsx)("th", {
           scope: "row",
-          className: A.nx,
+          className: v.nx,
           children: (0, r.jsx)(x, {
             text: t,
             variant: "text-lg/bold"
@@ -184,36 +184,36 @@ let P = () => (0, r.jsx)("div", {
         premiumType: n
       } = e,
       i = (0, u.Ay)();
-    t = n === y.PremiumTypes.TIER_0 ? (0, l.Mw)(i) ? v : S : (0, l.Mw)(i) ? I : T;
+    t = n === b.PremiumTypes.TIER_0 ? (0, l.Mw)(i) ? A : I : (0, l.Mw)(i) ? S : T;
     let a = (0, h.Dd)(n);
     return (0, r.jsx)("img", {
       src: t,
-      className: A.wm,
+      className: v.wm,
       alt: a
     })
   },
   U = () => (0, r.jsx)("thead", {
     children: (0, r.jsxs)("tr", {
-      className: s()(A.U1, A.Y9),
+      className: s()(v.U1, v.Y9),
       children: [(0, r.jsx)("th", {
         scope: "col",
-        className: A.Cr,
+        className: v.Cr,
         children: (0, r.jsx)(c.Heading, {
-          className: A.__invalid_textColor,
+          className: v.__invalid_textColor,
           variant: "heading-xl/semibold",
           children: O.intl.string(O.t.XXENra)
         })
       }), (0, r.jsx)("th", {
         scope: "col",
-        className: A.e4,
+        className: v.e4,
         children: (0, r.jsx)(k, {
-          premiumType: y.PremiumTypes.TIER_0
+          premiumType: b.PremiumTypes.TIER_0
         })
       }), (0, r.jsx)("th", {
         scope: "col",
-        className: s()(A.e4, A.Y9),
+        className: s()(v.e4, v.Y9),
         children: (0, r.jsx)(k, {
-          premiumType: y.PremiumTypes.TIER_2
+          premiumType: b.PremiumTypes.TIER_2
         })
       })]
     })
@@ -226,23 +226,23 @@ let P = () => (0, r.jsx)("div", {
       tier2DiscountedPriceString: a
     } = e;
     return (0, r.jsxs)("tr", {
-      className: s()(A.nM, A.YI, A.ML),
+      className: s()(v.nM, v.YI, v.ML),
       children: [(0, r.jsx)("th", {
         scope: "row",
-        className: A.nx,
+        className: v.nx,
         children: (0, r.jsx)(x, {
           text: O.intl.string(O.t["09yRK3"]),
           variant: "text-lg/bold"
         })
       }), (0, r.jsx)("td", {
-        className: A.Hn,
+        className: v.Hn,
         children: (0, r.jsx)(x, {
-          text: h.Ay.formatPriceString(t, y.WT.MONTH)
+          text: h.Ay.formatPriceString(t, b.WT.MONTH)
         })
       }), (0, r.jsx)("td", {
-        className: A.Hn,
+        className: v.Hn,
         children: (0, r.jsx)(x, {
-          text: i ? a : h.Ay.formatPriceString(n, y.WT.MONTH)
+          text: i ? a : h.Ay.formatPriceString(n, b.WT.MONTH)
         })
       })]
     })
@@ -253,45 +253,45 @@ let P = () => (0, r.jsx)("div", {
         className: a,
         hidePill: l = false,
         selectedPlanColumnClassName: c,
-        selectedPlanTier: u = y.PremiumTypes.TIER_2
+        selectedPlanTier: u = b.PremiumTypes.TIER_2
       } = e,
       {
         analyticsLocations: O
       } = (0, f.Ay)(d.A.PREMIUM_MARKETING_PLAN_COMPARISON),
-      v = (0, o.bG)([_.A], () => _.A.hasFetchedSubscriptions()),
-      S = (0, p.Y)(y.T7),
-      I = (0, g.V)(),
-      T = null == I || null == (t = I.subscription_trial) ? true : t.sku_id,
+      A = (0, o.bG)([_.A], () => _.A.hasFetchedSubscriptions()),
+      I = (0, p.Y)(b.T7),
+      S = (0, g.V)(),
+      T = null == S || null == (t = S.subscription_trial) ? true : t.sku_id,
       C = (0, m.O)(),
-      R = null != C && (0, E.U9)(C, y.pe.TIER_2),
-      x = (0, E.N1)(y.gD.PREMIUM_MONTH_TIER_2),
-      L = "".concat(x, "/").concat((0, h.FJ)(y.WT.MONTH)),
-      j = (0, h.JM)(y.gD.PREMIUM_MONTH_TIER_0),
-      k = (0, h.JM)(y.gD.PREMIUM_MONTH_TIER_2),
-      V = (0, b.g)();
-    if (!v || !S) return null;
-    n = l ? null : null != I ? (0, r.jsx)(D, {}) : (0, r.jsx)(P, {});
-    let F = T === y.pe.TIER_0 || u === y.PremiumTypes.TIER_0;
+      R = null != C && (0, E.U9)(C, b.pe.TIER_2),
+      x = (0, E.N1)(b.gD.PREMIUM_MONTH_TIER_2),
+      L = "".concat(x, "/").concat((0, h.FJ)(b.WT.MONTH)),
+      j = (0, h.JM)(b.gD.PREMIUM_MONTH_TIER_0),
+      k = (0, h.JM)(b.gD.PREMIUM_MONTH_TIER_2),
+      V = (0, y.g)();
+    if (!A || !I) return null;
+    n = l ? null : null != S ? (0, r.jsx)(D, {}) : (0, r.jsx)(P, {});
+    let F = T === b.pe.TIER_0 || u === b.PremiumTypes.TIER_0;
     return (0, r.jsx)(f.f5, {
       value: O,
       children: (0, r.jsx)("div", {
-        className: s()(A.zr, a),
+        className: s()(v.zr, a),
         "data-testid": "application-home-marketing-page-comparison-table",
         children: (0, r.jsxs)("div", {
-          className: A.wY,
+          className: v.wY,
           children: [(0, r.jsxs)("div", {
             className: s()(c, {
-              [A.sO]: F,
-              [A.Yr]: !F
+              [v.sO]: F,
+              [v.Yr]: !F
             }),
             children: [!F && n, (0, r.jsx)("div", {
               className: s()({
-                [A.A9]: F,
-                [A.ce]: !F
+                [v.A9]: F,
+                [v.ce]: !F
               })
             })]
           }), (0, r.jsxs)("table", {
-            className: A.tp,
+            className: v.tp,
             children: [(0, r.jsx)(U, {}), (0, r.jsxs)("tbody", {
               children: [(0, r.jsx)(G, {
                 tier0MonthlyPrice: j,

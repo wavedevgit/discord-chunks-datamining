@@ -2,7 +2,7 @@
 /** chunk id: 619921, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 });
 var r, i, a, s, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -37,12 +37,12 @@ function E(e) {
   m = t
 }
 
-function b() {
+function y() {
   if (null == m || !m.startsWith(_.BVt.APPLICATION_STORE)) returnfalse;
   m = _.BVt.APPLICATION_STORE
 }
 
-function y(e) {
+function b(e) {
   let {
     location: t
   } = e;
@@ -64,13 +64,13 @@ function O(e) {
   returnfalse
 }
 
-function A(e) {
+function v(e) {
   let {
     channel: t
   } = e;
   null == t.guild_id && null != t.id && null != m && m === _.BVt.CHANNEL(_.ME, t.id) && (m = null)
 }
-class v extends(s = Chunk311907.Ay.Store) {
+class A extends(s = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(u.A, p.A, f.A, d.A, c.A)
   }
@@ -78,12 +78,12 @@ class v extends(s = Chunk311907.Ay.Store) {
     return null != m ? m : u.A.fallbackRoute
   }
 }
-h(v, "displayName", "AppViewStore");
-let S = new v(Chunk73153.h, {
+h(A, "displayName", "AppViewStore");
+let I = new A(Chunk73153.h, {
   OVERLAY_INITIALIZE: g,
   APP_VIEW_SET_HOME_LINK: E,
-  APPLICATION_STORE_LOCATION_CHANGE: y,
-  APPLICATION_STORE_RESET_NAVIGATION: b,
+  APPLICATION_STORE_LOCATION_CHANGE: b,
+  APPLICATION_STORE_RESET_NAVIGATION: y,
   CHANNEL_SELECT: O,
-  CHANNEL_DELETE: A
+  CHANNEL_DELETE: v
 })

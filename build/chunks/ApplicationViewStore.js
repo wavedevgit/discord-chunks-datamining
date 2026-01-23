@@ -68,7 +68,7 @@ let F = {
     [Chunk652215.DpB.ACTIONS]: null
   },
   B = (0, Chunk583613.L_)(e => e.filter(e => null != e.libraryApplication && e.shouldShowInLibrary)),
-  H = (0, Chunk583613.L_)(e => e.filter(e => null != e.libraryApplication && A.A.isLaunchable(e.libraryApplication.id, e.libraryApplication.branchId))),
+  H = (0, Chunk583613.L_)(e => e.filter(e => null != e.libraryApplication && v.A.isLaunchable(e.libraryApplication.id, e.libraryApplication.branchId))),
   Y = (0, Chunk583613.L_)((e, t) => e.filter(e => a()(t.toLowerCase(), e.application.name.toLowerCase()))),
   W = (0, Chunk583613.L_)((e, t, n, r) => {
     let i = F[t];
@@ -79,7 +79,7 @@ let F = {
   K = (0, Chunk583613.L_)(e => e.filter(e => null != e.libraryApplication && e.libraryApplication.isHidden()));
 
 function z(e, t) {
-  let n = y.A.getCurrentUserStatisticsForApplication(e.id);
+  let n = b.A.getCurrentUserStatisticsForApplication(e.id);
   if (null != n) return new Date(n.last_played_at).getTime();
   let r = t[e.id];
   return null != r ? r : 0
@@ -97,26 +97,26 @@ function X(e, t, n, r, i) {
   let a = f.A.getApplication(e.id);
   if (null == a) return null;
   let s = z(a, n);
-  return (t.add(e.id), (0, C.XZ)(e) || A.A.isInstalled(e.id, e.branchId)) ? {
+  return (t.add(e.id), (0, C.XZ)(e) || v.A.isInstalled(e.id, e.branchId)) ? {
     key: "".concat(e.id, "-").concat(e.branchId),
     application: a,
     libraryApplication: e,
     lastPlayed: s,
-    supportsCloudSync: null != e && A.A.supportsCloudSync(e.id, e.branchId),
+    supportsCloudSync: null != e && v.A.supportsCloudSync(e.id, e.branchId),
     isNew: V(e, s),
     isLaunching: _.A.launchingGames.has(e.id),
     isRunning: r.has(e.id),
     isLaunchable: (0, w.A)({
       LibraryApplicationStore: E.A,
       LaunchableGameStore: _.A,
-      DispatchApplicationStore: A.A,
+      DispatchApplicationStore: v.A,
       ConnectedAppsStore: m.A,
       applicationId: e.id,
       branchId: e.branchId
     }),
     isUpdatingFlags: E.A.isUpdatingFlags(e.id, e.branchId),
-    shouldShowInLibrary: (0, C.Tr)(a, e, b.A),
-    defaultAction: (0, P.F)(e, A.A, v.A)
+    shouldShowInLibrary: (0, C.Tr)(a, e, y.A),
+    defaultAction: (0, P.F)(e, v.A, A.A)
   } : null
 }
 
@@ -135,7 +135,7 @@ function Z(e, t, n, r) {
     isLaunchable: (0, w.A)({
       LibraryApplicationStore: E.A,
       LaunchableGameStore: _.A,
-      DispatchApplicationStore: A.A,
+      DispatchApplicationStore: v.A,
       ConnectedAppsStore: m.A,
       applicationId: e,
       branchId: null
@@ -153,7 +153,7 @@ function Q() {
     n = new Set,
     r = p.Ay.getGamesSeen(false, false).map(e => {
       let n = g.A.getGameByGameData(e);
-      return null != n ? (t[n.id] = e.lastFocused * S.A.Millis.SECOND, n.id) : null
+      return null != n ? (t[n.id] = e.lastFocused * I.A.Millis.SECOND, n.id) : null
     }),
     i = Object.values(E.A.getAllLibraryApplications()).map(r => X(r, n, t, e, true)).filter(T.Vq),
     a = [...r.map(r => Z(r, n, t, e)).filter(T.Vq), ...i].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1);
@@ -161,7 +161,7 @@ function Q() {
 }
 class $ extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.syncWith([f.A, g.A, _.A, p.Ay, A.A, v.A, E.A, y.A, b.A, m.A], Q, 200), this.syncWith([O.A, h.default], () => true)
+    this.syncWith([f.A, g.A, _.A, p.Ay, v.A, A.A, E.A, b.A, y.A, m.A], Q, 200), this.syncWith([O.A, h.default], () => true)
   }
   get applicationFilterQuery() {
     return k

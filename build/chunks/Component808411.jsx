@@ -11,14 +11,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk613566 = require("./613566.jsx"),
   Chunk252561 = require("./252561.jsx");
 let c = () => {
-  let [e, t] = i.useState(0), [n, c] = i.useState(4), [u, d] = i.useState(2), [f, p] = i.useState(o.fh.LIGHT), [_, h] = i.useState(o.qP.BLUE), [m, g] = i.useState("darkslategray"), [E, b] = i.useState("blanchedalmond"), [y, O] = i.useState("pink"), A = i.useMemo(() => Object.entries(o.fh).map(e => {
+  let [e, t] = i.useState(0), [n, c] = i.useState(4), [u, d] = i.useState(2), [f, p] = i.useState(o.fh.LIGHT), [_, h] = i.useState(o.qP.BLUE), [m, g] = i.useState("darkslategray"), [E, y] = i.useState("blanchedalmond"), [b, O] = i.useState("pink"), v = i.useMemo(() => Object.entries(o.fh).map(e => {
     let [t, n] = e;
     return {
       id: n,
       label: t,
       value: n
     }
-  }), []), v = i.useMemo(() => Object.entries(o.qP).map(e => {
+  }), []), A = i.useMemo(() => Object.entries(o.qP).map(e => {
     let [t, n] = e;
     return {
       id: n,
@@ -37,7 +37,7 @@ let c = () => {
         default: {
           background: m,
           gradientStart: E,
-          gradientEnd: y
+          gradientEnd: b
         }
       }
     }), (0, r.jsx)(l.nB, {}), (0, r.jsx)(l.MG, {
@@ -76,7 +76,7 @@ let c = () => {
           null !== e && h(e)
         },
         value: _,
-        options: v,
+        options: A,
         selectionMode: "single",
         fullWidth: true
       })
@@ -89,7 +89,7 @@ let c = () => {
           null !== e && p(e)
         },
         value: f,
-        options: A
+        options: v
       })
     }), (0, r.jsx)(l.nB, {}), (0, r.jsx)(s.Text, {
       variant: "text-lg/semibold",
@@ -110,13 +110,13 @@ let c = () => {
       children: (0, r.jsx)(s.ksK, {
         value: E,
         onChange: e => {
-          b(e)
+          y(e)
         },
         label: "Gradient Start"
       })
     }), (0, r.jsx)(l.MG, {
       children: (0, r.jsx)(s.ksK, {
-        value: y,
+        value: b,
         onChange: e => {
           O(e)
         },

@@ -46,7 +46,7 @@ function V(e) {
   var t, n, a;
   let l, {
       application: d,
-      channelId: v,
+      channelId: A,
       guildId: P,
       message: x
     } = e,
@@ -54,9 +54,9 @@ function V(e) {
       analyticsLocations: V
     } = (0, g.Ay)(m.A.ACTIVITY_INSTANCE_EMBED),
     B = (0, u.p)(),
-    H = (0, o.bG)([T.A], () => T.A.getChannel(v), [v]),
-    Y = (null == H || null == (n = H.isThread) ? true : n.call(H)) ? null == H ? true : H.parent_id : v,
-    W = (0, o.bG)([I.default], () => I.default.getId()),
+    H = (0, o.bG)([T.A], () => T.A.getChannel(A), [A]),
+    Y = (null == H || null == (n = H.isThread) ? true : n.call(H)) ? null == H ? true : H.parent_id : A,
+    W = (0, o.bG)([S.default], () => S.default.getId()),
     {
       embeddedActivity: K,
       currentEmbeddedActivity: z,
@@ -78,12 +78,12 @@ function V(e) {
     }, [d.id, X]),
     $ = null == Q ? true : Q.details,
     J = i.useMemo(() => {
-      let e = new S.Ay(d);
+      let e = new I.Ay(d);
       return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = M.Gl), e
     }, [d]),
     ee = (0, h.vG)({
       userId: W,
-      channelId: v,
+      channelId: A,
       application: J
     }),
     et = null == K,
@@ -98,28 +98,28 @@ function V(e) {
     ea = async () => {
       R.default.track(j.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: d.id,
-        channel_id: v,
+        channel_id: A,
         channel_type: null == H ? true : H.type,
         is_activity_start: et,
         cta: "Play"
       }), et ? await (0, _.A)({
         targetApplicationId: d.id,
-        channelId: v,
+        channelId: A,
         locationObject: B.location,
         analyticsLocations: V,
         componentId: er,
         commandOrigin: E.iw.ACTIVITY_INSTANCE_EMBED
       }) : await (0, p.A)({
         applicationId: K.applicationId,
-        activityChannelId: v,
+        activityChannelId: A,
         locationObject: B.location,
         analyticsLocations: V,
         componentId: er
       })
-    }, es = en.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), eo = (0, A.F)(J, () => {
+    }, es = en.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), eo = (0, v.F)(J, () => {
       R.default.track(j.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: d.id,
-        channel_id: v,
+        channel_id: A,
         channel_type: null == H ? true : H.type,
         cta: "View"
       })
@@ -131,7 +131,7 @@ function V(e) {
   en.disabled && (l = en.tooltip);
   let ec = Z.length,
     eu = null != (t = null == Q || null == (a = Q.timestamps) ? true : a.start) ? t : null == Q ? true : Q.created_at,
-    ed = (0, y.y)({
+    ed = (0, b.y)({
       activity: Q,
       activityUsersCount: ec
     }),
@@ -143,7 +143,7 @@ function V(e) {
       disabledReason: l,
       submitting: ei
     }];
-  return (0, r.jsx)(b.h, {
+  return (0, r.jsx)(y.h, {
     header: U.intl.string(U.t.pkq6Vq),
     title: d.name,
     iconSrc: el,
@@ -185,7 +185,7 @@ function V(e) {
               children: $
             })]
           })]
-        }), ec > 0 && (0, r.jsx)(y.$, {
+        }), ec > 0 && (0, r.jsx)(b.$, {
           activityUsers: Z,
           guildId: P,
           activityText: ed.text
@@ -198,7 +198,7 @@ function V(e) {
       id: d.id,
       linkType: k.J.ACTIVITY_INSTANCE,
       guildId: P,
-      channelId: v,
+      channelId: A,
       messageId: x.id,
       isDeadEnd: et
     }
@@ -213,7 +213,7 @@ let F = Chunk64700.memo(e => {
     return e.start(c ? 15 * P.A.Millis.SECOND : P.A.Millis.SECOND, () => {
       r((new Date().getTime() - t) / P.A.Millis.SECOND)
     }), () => e.stop()
-  }, [c, t]), (0, v.f)(n)
+  }, [c, t]), (0, A.f)(n)
 });
 F.displayName = "ActivityRuntimeCounter";
 let B = Chunk64700.memo(V)

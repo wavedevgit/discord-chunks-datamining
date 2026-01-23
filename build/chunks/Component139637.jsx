@@ -14,8 +14,8 @@ function s(e) {
     resubmittingEnableRequest: n,
     resubmissionError: s,
     createEnableRequest: a,
-    requestRejectedNoticeText: c,
-    reapplyNoticeText: o,
+    requestRejectedNoticeText: o,
+    reapplyNoticeText: c,
     isApplicationPending: d
   } = e;
   if (null != s) return (0, r.jsx)(i.wx6, {
@@ -23,7 +23,7 @@ function s(e) {
     children: s.getAnyErrorMessage()
   });
   let u = null;
-  return d ? u = l.intl.string(l.t.OrkTBn) : null != c ? u = c : null != o && (u = o, t = l.intl.string(l.t["YKw/NQ"])), null != u ? (0, r.jsx)(i.po8, {
+  return d ? u = l.intl.string(l.t.OrkTBn) : null != o ? u = o : null != c && (u = c, t = l.intl.string(l.t["YKw/NQ"])), null != u ? (0, r.jsx)(i.po8, {
     messageType: i.YCn.WARNING,
     action: (0, r.jsx)(i.$nd, {
       variant: "overlay-secondary",

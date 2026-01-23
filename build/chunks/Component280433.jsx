@@ -20,20 +20,20 @@ function u(e) {
     disabled: n = false
   } = e, {
     editStateId: u,
-    guildId: f
-  } = (0, l.O)(), [g, b] = a.W5(u, f);
+    guildId: g
+  } = (0, l.O)(), [m, p] = a.W5(u, g);
   return (0, r.jsx)(i.z6M, {
-    onChange: e => b(e),
+    onChange: e => p(e),
     options: [{
       name: d.intl.string(d.t["vs2T+B"]),
       value: s.h.SOME_CHANNELS_ACCESS,
-      leadingIcon: (0, i.kHD)(o.A)
+      leadingIcon: (0, i.kHD)(c.A)
     }, {
       name: d.intl.string(d.t.l4Tr7X),
       value: s.h.ALL_CHANNELS_ACCESS,
-      leadingIcon: (0, i.kHD)(c.A)
+      leadingIcon: (0, i.kHD)(o.A)
     }],
-    value: g,
+    value: m,
     "aria-labelledby": t,
     disabled: n
   })

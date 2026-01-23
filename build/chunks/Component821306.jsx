@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk263834 = require("./263834.js"),
@@ -17,7 +17,7 @@ var Chunk627968 = require("./627968.js"),
 function p(e) {
   let {
     devSettingsCategory: t
-  } = e, n = (0, s.bG)([d.Ay], () => d.Ay.allByCategory(t), [t], s.My), i = l.useMemo(() => n.map(e => {
+  } = e, n = (0, s.bG)([d.Ay], () => d.Ay.allByCategory(t), [t], s.My), r = l.useMemo(() => n.map(e => {
     let [t, n, {
       label: l
     }] = e;
@@ -29,7 +29,7 @@ function p(e) {
     }, t)
   }), [n]);
   return (0, a.jsx)("div", {
-    className: r()(m.nd, u.n),
-    children: i
+    className: i()(m.nd, u.n),
+    children: r
   })
 }

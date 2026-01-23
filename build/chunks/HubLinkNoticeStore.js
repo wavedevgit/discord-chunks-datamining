@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 731667, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 }), require("./896048.js");
 var r, i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -18,20 +18,20 @@ function d(e) {
 function p() {
   returntrue
 }
-class f extends(r = Chunk311907.Ay.Store) {
+class h extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(o.A, s.A), this.syncWith([s.A], p)
   }
   channelNoticePredicate(e) {
     return !!e.features.has(c.GuildFeatures.LINKED_TO_HUB) && !u
   }
-}(i = "displayName") in f ? Object.defineProperty(f, i, {
+}(i = "displayName") in h ? Object.defineProperty(h, i, {
   value: "HubLinkNoticeStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : f[i] = "HubLinkNoticeStore";
-let h = new f(Chunk73153.h, {
+}) : h[i] = "HubLinkNoticeStore";
+let g = new h(Chunk73153.h, {
   CONNECTION_OPEN: function(e) {
     for (let t of e.guilds)
       if (d(t.id)) returntrue;

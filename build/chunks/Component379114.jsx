@@ -2,7 +2,7 @@
 /** chunk id: 379114, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk424288 = require("./424288.js");
 
-function b(e) {
+function y(e) {
   let {
     author: t,
     channel: n,
@@ -47,7 +47,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     username: t
   } = e;
@@ -88,19 +88,19 @@ function O(e) {
       guildId: t,
       user: n,
       className: E.sz
-    }), (0, r.jsx)(y, {
+    }), (0, r.jsx)(b, {
       username: i
     })]
   })
 }
 
-function A(e) {
+function v(e) {
   var t, i;
   let {
     channel: a,
     message: s,
     compact: o
-  } = e, c = (0, l.Ay)(s), d = b({
+  } = e, c = (0, l.Ay)(s), d = y({
     channel: a,
     message: s,
     author: c

@@ -2,7 +2,7 @@
 /** chunk id: 560859, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,38 +24,38 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk413535 = require("./413535.js");
 
-function A(e) {
+function v(e) {
   let {
     voiceChannel: t,
     onAction: n,
     onClose: a
   } = e, {
-    themeType: A
+    themeType: v
   } = (0, m.E)(), {
-    analyticsLocations: v
-  } = (0, c.Ay)(), S = (0, _.b)(t), I = (0, u.Ay)(t, true), T = (0, o.bG)([f.A], () => f.A.getChannelStatus(t)), C = i.useMemo(() => null == T || "" === T ? null : p.A.parseVoiceChannelStatus(T, true, {
+    analyticsLocations: A
+  } = (0, c.Ay)(), I = (0, _.b)(t), S = (0, u.Ay)(t, true), T = (0, o.bG)([f.A], () => f.A.getChannelStatus(t)), C = i.useMemo(() => null == T || "" === T ? null : p.A.parseVoiceChannelStatus(T, true, {
     channelId: t.id
   }), [T, t.id]);
   i.useEffect(() => {
     null != C && h.default.track(E.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
       channel_id: t.id,
       guild_id: t.guild_id,
-      location_stack: v
+      location_stack: A
     })
-  }, [C, t.id, t.guild_id, v]);
+  }, [C, t.id, t.guild_id, A]);
   let N = e => {
     e.stopPropagation(), n({
       action: "PRESS_VOICE_CHANNEL_STATUS"
-    }), A === b.d.POPOUT && (null == a || a()), (0, d.A)({
+    }), v === y.d.POPOUT && (null == a || a()), (0, d.A)({
       channel: t,
-      sourceAnalyticsLocations: v
+      sourceAnalyticsLocations: A
     })
   };
-  return I && S ? (0, r.jsxs)(l.DUT, {
+  return S && I ? (0, r.jsxs)(l.DUT, {
     className: O.vk,
     onClick: N,
     children: [(0, r.jsx)(g.A, {
-      text: null != C ? C : y.intl.string(y.t.Mgpxiw),
+      text: null != C ? C : b.intl.string(b.t.Mgpxiw),
       variant: "text-xs/normal",
       color: "text-subtle",
       className: O.Qq
@@ -63,7 +63,7 @@ function A(e) {
       color: "currentColor",
       size: "xxs",
       className: s()(O.rD, null != C ? O.R : true),
-      "aria-label": y.intl.string(y.t.bt75uw)
+      "aria-label": b.intl.string(b.t.bt75uw)
     })]
   }) : null != C ? (0, r.jsx)(g.A, {
     text: C,

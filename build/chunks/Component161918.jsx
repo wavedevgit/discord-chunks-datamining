@@ -1,27 +1,26 @@
-/** Chunk was on web.js **/
-/** chunk id: 161918, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 58197 **/
+/** chunk id: 161918, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   Mk: () => s,
   iM: () => o
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js");
-let a = Chunk64700.createContext(null);
+let l = Chunk64700.createContext(null);
 
 function s() {
-  return i.useContext(a)
+  return r.useContext(l)
 }
 
 function o(e) {
   let {
     tab: t,
-    children: n
-  } = e, s = i.useMemo(() => ({
+    children: i
+  } = e, s = r.useMemo(() => ({
     tab: t
   }), [t]);
-  return (0, r.jsx)(a.Provider, {
+  return (0, n.jsx)(l.Provider, {
     value: s,
-    children: n
+    children: i
   })
 }

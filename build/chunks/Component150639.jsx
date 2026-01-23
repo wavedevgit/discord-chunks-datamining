@@ -1,7 +1,7 @@
 /** Chunk was on 76443 **/
 /** chunk id: 150639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  v: () => O
+  v: () => _
 }), require("./446912.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,22 +18,22 @@ var Chunk627968 = require("./627968.js"),
   Chunk80569 = require("./80569.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let x = e => ({
+let v = e => ({
     label: e.name,
     value: e.id
   }),
-  v = e => d.A.can(b.xBc.CREATE_GUILD_EXPRESSIONS, e),
-  O = e => {
+  x = e => d.A.can(f.xBc.CREATE_GUILD_EXPRESSIONS, e),
+  _ = e => {
     let {
       onChange: t,
       selected: n,
       onError: d,
-      labelledBy: O,
+      labelledBy: _,
       isEmojiAnimated: E,
-      label: p,
-      required: y,
-      errorMessage: S
-    } = e, I = (0, i.cf)([c.A, m.Ay], () => Object.fromEntries(m.Ay.getFlattenedGuildIds().map(e => c.A.getGuild(e)).filter(h.Vq).map(e => [e.id, e]))), _ = (0, i.cf)([s.Ay], () => Object.fromEntries(Object.entries(I).map(e => {
+      label: O,
+      required: p,
+      errorMessage: y
+    } = e, S = (0, i.cf)([c.A, m.Ay], () => Object.fromEntries(m.Ay.getFlattenedGuildIds().map(e => c.A.getGuild(e)).filter(h.Vq).map(e => [e.id, e]))), I = (0, i.cf)([s.Ay], () => Object.fromEntries(Object.entries(S).map(e => {
       let [t, n] = e;
       return [t, function(e) {
         var t;
@@ -48,7 +48,7 @@ let x = e => ({
         emojis: s.Ay.getGuildEmoji(t),
         isEmojiAnimated: E
       })]
-    })), [I, E]), A = r.useMemo(() => Object.values(I).filter(v).map(x), [I]), N = r.useCallback(e => {
+    })), [S, E]), A = r.useMemo(() => Object.values(S).filter(x).map(v), [S]), N = r.useCallback(e => {
       let {
         value: t,
         label: n,
@@ -61,7 +61,7 @@ let x = e => ({
         disabled: r,
         leading: (e => {
           if (null == e.value) return null;
-          let t = I[e.value];
+          let t = S[e.value];
           return null == t ? null : (0, l.jsx)(u.A, {
             guild: t,
             size: u.A.Sizes.SMALLER,
@@ -69,23 +69,23 @@ let x = e => ({
           })
         })(e),
         trailing: null == e.value ? null : j.intl.formatToPlainString(j.t.WkK72v, {
-          count: _[e.value]
+          count: I[e.value]
         })
       }
-    }, [_, I]);
+    }, [I, S]);
     return r.useEffect(() => {
       var e;
-      A.length < 1 ? d(f.j.NO_PERMISSIONS) : null != n && (null != (e = null == _ ? true : _[n]) ? e : 0) < 1 ? d(b.t02.TOO_MANY_EMOJI) : d(null)
-    }, [A, t, d, n, _]), (0, l.jsx)(a.l, {
-      label: p,
-      required: y,
+      A.length < 1 ? d(b.j.NO_PERMISSIONS) : null != n && (null != (e = null == I ? true : I[n]) ? e : 0) < 1 ? d(f.t02.TOO_MANY_EMOJI) : d(null)
+    }, [A, t, d, n, I]), (0, l.jsx)(a.l, {
+      label: O,
+      required: p,
       selectionMode: "single",
-      errorMessage: S,
+      errorMessage: y,
       onSelectionChange: t,
       options: A,
       formatOption: N,
       value: n,
-      "aria-labelledby": O,
+      "aria-labelledby": _,
       placeholder: A.length < 1 ? j.intl.string(j.t.jHpxwo) : j.intl.string(j.t["4mqeQO"]),
       disabled: A.length < 1
     })

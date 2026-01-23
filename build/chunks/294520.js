@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   K6: () => E,
-  eJ: () => b,
+  eJ: () => y,
   iW: () => _,
-  rx: () => y,
+  rx: () => b,
   sC: () => h,
   tt: () => m
 }), require("./938796.js");
@@ -86,14 +86,14 @@ function E(e, t, n) {
   return i.length > 0 ? [true, i[0]] : a ? [true, s.Oc.POTENTIAL_EXPLICIT_CONTENT] : e.spoiler ? [t, s.Oc.SPOILER] : [false, true]
 }
 
-function b(e) {
+function y(e) {
   let {
     channel: t,
     media: n
   } = e, r = (0, i.bG)([u.A], () => null != t && u.A.can(f.xBc.MANAGE_MESSAGES, t)), s = c.gs.useSetting(), l = (0, o.O8)(a.v.GUILD);
   return E(n, !(0, d.A)(s, r), l)
 }
-let y = e => {
+let b = e => {
   switch (e) {
     case s.Oc.EXPLICIT_CONTENT:
     case s.Oc.GORE_CONTENT:

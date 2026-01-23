@@ -1,9 +1,9 @@
 /** Chunk was on 41031 **/
 /** chunk id: 563853, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  T: () => s
+  T: () => r
 });
-let s = {
+let r = {
   ASSET_SOCIAL_TWITTER: require("./412126.js"),
   ASSET_SOCIAL_FACEBOOK: require("./681713.js"),
   ASSET_SOCIAL_INSTAGRAM: require("./368531.js"),

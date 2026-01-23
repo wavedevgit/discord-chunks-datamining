@@ -1,5 +1,5 @@
 /** Chunk was on 71138 **/
-/** chunk id: 522278, original params: e,t,n (module,exports,require) **/
+/** chunk id: 522278, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   A: () => p
 });
@@ -18,7 +18,7 @@ class p extends Chunk64700.PureComponent {
     let {
       label: e
     } = this.props;
-    return m.includes(e) ? (0, r.jsx)(c.A, {
+    return m.includes(e) ? (0, n.jsx)(c.A, {
       color: s.A.unsafe_rawColors.YELLOW_300.css,
       className: u.nm
     }) : null
@@ -27,39 +27,39 @@ class p extends Chunk64700.PureComponent {
     let {
       children: e,
       className: t,
-      valueRendered: n,
+      valueRendered: r,
       section: a,
       label: i,
       renderGraph: s
     } = this.props;
-    return (0, r.jsxs)(d.A, {
+    return (0, n.jsxs)(d.A, {
       className: l()(u.AS, t),
       direction: d.A.Direction.VERTICAL,
       basis: "50%",
-      children: [(0, r.jsxs)(d.A, {
+      children: [(0, n.jsxs)(d.A, {
         className: u.l5,
         align: d.A.Align.START,
-        children: [(0, r.jsx)(d.A.Child, {
-          children: (0, r.jsx)(o.H, {
+        children: [(0, n.jsx)(d.A.Child, {
+          children: (0, n.jsx)(o.H, {
             className: u.DD,
             children: e
           })
-        }), Array.isArray(n) ? (0, r.jsx)(d.A.Child, {
+        }), Array.isArray(r) ? (0, n.jsx)(d.A.Child, {
           grow: 1,
-          children: n
-        }) : (0, r.jsxs)(d.A.Child, {
+          children: r
+        }) : (0, n.jsxs)(d.A.Child, {
           grow: 0,
           shrink: 0,
-          children: [this.renderValueIcon(), (0, r.jsx)("span", {
+          children: [this.renderValueIcon(), (0, n.jsx)("span", {
             className: u.R$,
-            title: n,
-            children: n
+            title: r,
+            children: r
           })]
         })]
-      }), null !== s && (0, r.jsx)(d.A.Child, {
+      }), null !== s && (0, n.jsx)(d.A.Child, {
         className: u.JB,
         children: s
-      }, null != a ? "".concat(a, "-").concat(i) : i), (0, r.jsx)(o.cGx, {
+      }, null != a ? "".concat(a, "-").concat(i) : i), (0, n.jsx)(o.cGx, {
         className: u.yF
       })]
     })

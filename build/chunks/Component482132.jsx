@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Ay: () => E,
-  UX: () => y,
-  dZ: () => b
+  UX: () => b,
+  dZ: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -55,15 +55,15 @@ function E(e) {
   var t, n, a, o, c, h;
   let m, {
       header: E,
-      isLargeModal: b,
-      stepProps: y
+      isLargeModal: y,
+      stepProps: b
     } = g(e),
     {
       step: O,
-      stepConfigs: A,
-      setBodyNode: v,
-      setFooterNode: S,
-      setModalOverlayNode: I,
+      stepConfigs: v,
+      setBodyNode: A,
+      setFooterNode: I,
+      setModalOverlayNode: S,
       setReadySlideId: T,
       premiumBrandRefreshBackgroundClassName: C,
       selectedSkuId: N,
@@ -71,14 +71,14 @@ function E(e) {
       isGift: w
     } = (0, d.P5)(),
     P = null != N && N in p.WN,
-    D = A.find(e => e.key === O);
+    D = v.find(e => e.key === O);
   i.useEffect(() => {
-    I(null)
-  }, [O, I]), l()(null != D, "Unknown step for current payment flow.");
+    S(null)
+  }, [O, S]), l()(null != D, "Unknown step for current payment flow.");
   let x = null != (t = null == D || null == (a = D.options) ? true : a.hideSlider) && t,
     L = null == D || null == (o = D.options) ? true : o.bodyClassName,
     j = null == D || null == (c = D.options) ? true : c.sliderBodyClassName;
-  switch (true !== b && b && (j = _.nS), O) {
+  switch (true !== y && y && (j = _.nS), O) {
     case f.pn.ADD_PAYMENT_STEPS:
       m = 408;
       break;
@@ -89,7 +89,7 @@ function E(e) {
       P && !w && (m = "100%")
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [null == (n = null == D || null == (h = D.options) ? true : h.renderHeader) || n ? E : null, D.renderStep(y), null == O || x ? null : (0, r.jsxs)(r.Fragment, {
+    children: [null == (n = null == D || null == (h = D.options) ? true : h.renderHeader) || n ? E : null, D.renderStep(b), null == O || x ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.$mQ, {
         "data-migration-pending": true,
         className: s()(L, _.rf, C, {
@@ -103,29 +103,29 @@ function E(e) {
           width: m,
           overflow: R ? "visible" : true,
           shouldUseMediaQueriesForSizing: true,
-          children: A.filter(e => null != e.key).map(e => (0, r.jsx)(u.q7S, {
+          children: v.filter(e => null != e.key).map(e => (0, r.jsx)(u.q7S, {
             id: e.key,
             children: (0, r.jsx)("form", {
               className: s()(_.OO, j),
               ref: e => {
-                v(e)
+                A(e)
               },
               onSubmit: e => e.preventDefault()
             })
           }, e.key))
         })
       }), (0, r.jsx)("div", {
-        ref: e => S(e)
+        ref: e => I(e)
       }), (0, r.jsx)("div", {
         ref: e => {
-          I(e)
+          S(e)
         }
       })]
     })]
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     children: t
   } = e, {
@@ -134,7 +134,7 @@ function b(e) {
   return null == n ? null : c.createPortal(t, n)
 }
 
-function y(e) {
+function b(e) {
   let {
     children: t
   } = e, {

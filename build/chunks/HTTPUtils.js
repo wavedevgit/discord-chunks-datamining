@@ -80,8 +80,8 @@ class g extends Error {
 
 function E(e, t, n, r, s) {
   var c, u, d, p, h;
-  let b = i()[e](t.url);
-  if (null != t.onRequestCreated && t.onRequestCreated(b), null != t.query) {
+  let y = i()[e](t.url);
+  if (null != t.onRequestCreated && t.onRequestCreated(y), null != t.query) {
     let e = t.query;
     if ("object" == typeof e) {
       let t = f({}, e);
@@ -89,26 +89,26 @@ function E(e, t, n, r, s) {
         null == t[e] && delete t[e]
       }), e = t
     }
-    b.query(e)
+    y.query(e)
   }
-  if (t.body && b.send(t.body), null != t.headers && b.set(t.headers), true === t.withCredentials && b.withCredentials(), null != t.reason && b.set("X-Audit-Log-Reason", encodeURIComponent(t.reason)), null == (c = t.attachments) || c.forEach(e => {
-      b.attach(e.name, e.file, e.filename)
+  if (t.body && y.send(t.body), null != t.headers && y.set(t.headers), true === t.withCredentials && y.withCredentials(), null != t.reason && y.set("X-Audit-Log-Reason", encodeURIComponent(t.reason)), null == (c = t.attachments) || c.forEach(e => {
+      y.attach(e.name, e.file, e.filename)
     }), null == (u = t.fields) || u.forEach(e => {
-      b.field(e.name, e.value)
+      y.field(e.name, e.value)
     }), null != t.context) {
     let e = j(t.context);
-    null != e && b.set("X-Context-Properties", e)
+    null != e && y.set("X-Context-Properties", e)
   }
-  null != t.retried && 0 !== t.retried && b.set("X-Failed-Requests", "".concat(t.retried)), null != t.timeout && 0 !== t.timeout && b.timeout(t.timeout), t.binary && b.responseType("blob"), null != t.onRequestProgress && b.on("progress", e => {
+  null != t.retried && 0 !== t.retried && y.set("X-Failed-Requests", "".concat(t.retried)), null != t.timeout && 0 !== t.timeout && y.timeout(t.timeout), t.binary && y.responseType("blob"), null != t.onRequestProgress && y.on("progress", e => {
     var n;
     null == (n = t.onRequestProgress) || n.call(t, e)
   });
-  let y = () => {
+  let b = () => {
     t.backoff = null != t.backoff ? t.backoff : new a.A, t.retried = (null != t.retried ? t.retried : 0) + 1, t.backoff.fail(() => x(t.url).then(() => E(e, t, n, r, s)))
   };
-  null == P || null == (d = P.prepareRequest) || d.call(P, b), b.ok(e => null != e.status), b.then(i => {
+  null == P || null == (d = P.prepareRequest) || d.call(P, y), y.ok(e => null != e.status), y.then(i => {
     var a, c, u;
-    if (null != t.retries && t.retries-- > 0 && m.has(i.status)) return y();
+    if (null != t.retries && t.retries-- > 0 && m.has(i.status)) return b();
     let d = {
       ok: i.ok,
       headers: i.headers,
@@ -125,14 +125,14 @@ function E(e, t, n, r, s) {
         });
         p = true, E(e, o, n, r, s)
       },
-      b = e => {
+      y = e => {
         p || (r(e), null == s || s({
           ok: false,
           hasErr: true,
           err: e
         }))
       };
-    if ((null == t || null == (a = t.interceptResponse) ? true : a.call(t, i, h, b)) !== true && (null == P || null == (c = P.interceptResponse) ? true : c.call(P, i, h, b)) !== true) {
+    if ((null == t || null == (a = t.interceptResponse) ? true : a.call(t, i, h, y)) !== true && (null == P || null == (c = P.interceptResponse) ? true : c.call(P, i, h, y)) !== true) {
       if (i.ok) n(d);
       else {
         if (t.oldFormErrors && (null == d || null == (u = d.body) ? true : u.code) === o.bG) {
@@ -156,30 +156,30 @@ function E(e, t, n, r, s) {
       }, d))
     }
   }, e => {
-    null != t.retries && t.retries-- > 0 && "ABORTED" !== e.code ? y() : (O(t), r(e), null != s && s({
+    null != t.retries && t.retries-- > 0 && "ABORTED" !== e.code ? b() : (O(t), r(e), null != s && s({
       ok: false,
       hasErr: true,
       err: e
     }))
-  }), (null == (p = t.signal) ? true : p.aborted) ? b.abort() : null == (h = t.signal) || h.addEventListener("abort", () => b.abort(), {
+  }), (null == (p = t.signal) ? true : p.aborted) ? y.abort() : null == (h = t.signal) || h.addEventListener("abort", () => y.abort(), {
     once: true
   })
 }
-let b = new Map;
+let y = new Map;
 
-function y(e) {
-  let t = b.get(e);
+function b(e) {
+  let t = y.get(e);
   if (null == t) return void h.verbose("rateLimitExpirationHandler: rate limit for", e, "expired, but record was already removed");
   let n = t.queue.shift();
   if (null == n) {
-    h.verbose("rateLimitExpirationHandler: removing key for", e), b.delete(e);
+    h.verbose("rateLimitExpirationHandler: removing key for", e), y.delete(e);
     return
   }
   h.verbose("rateLimitExpirationHandler: moving to next record for ", e), n()
 }
 
 function O(e, t) {
-  let n = b.get(e.url);
+  let n = y.get(e.url);
   if (null != t && 429 === t.status) {
     var r, i, a;
     let s = (null == (i = t.body) ? true : i.retry_after) || 5,
@@ -188,16 +188,16 @@ function O(e, t) {
       if (!(n.retryAfterTimestamp < o)) return void h.verbose("cleanupRequestEntry: already has rate limit for ", e.url);
       else h.verbose("cleanupRequestEntry: extending rate limit for ", e.url), clearTimeout(n.timeoutId);
     h.verbose("cleanupRequestEntry: rate limit for ".concat(e.url, " retry after ").concat(s, " seconds"));
-    let l = setTimeout(() => y(e.url), 1e3 * s);
-    b.set(e.url, {
+    let l = setTimeout(() => b(e.url), 1e3 * s);
+    y.set(e.url, {
       queue: null != (r = null == n ? true : n.queue) ? r : [],
       retryAfterTimestamp: o,
       latestErrorMessage: String(null == (a = t.body) ? true : a.message),
       timeoutId: l
     })
-  } else null != n && n.retryAfterTimestamp < Date.now() && (h.verbose("cleanupRequestEntry: rate limit for ", e.url, "expired"), y(e.url))
+  } else null != n && n.retryAfterTimestamp < Date.now() && (h.verbose("cleanupRequestEntry: rate limit for ", e.url, "expired"), b(e.url))
 }
-let A = (e, t, n) => {
+let v = (e, t, n) => {
   let r = Math.round((t.retryAfterTimestamp - Date.now()) / 1e3);
   e({
     status: 429,
@@ -218,25 +218,25 @@ let A = (e, t, n) => {
   })
 };
 
-function v(e, t, n) {
+function A(e, t, n) {
   return new Promise((r, i) => {
     "string" == typeof t && (t = {
       url: t,
       rejectWithError: false
     });
-    let a = b.get(t.url);
-    if (null != a && t.failImmediatelyWhenRateLimited) return A(i, a, n);
+    let a = y.get(t.url);
+    if (null != a && t.failImmediatelyWhenRateLimited) return v(i, a, n);
     null != a ? (h.verbose("makeRequest: queueing request for ", t.url), a.queue.push(E.bind(null, e, t, r, i, n))) : E(e, t, r, i, n)
   })
 }
-let S = v.bind(null, "get"),
-  I = v.bind(null, "post"),
-  T = v.bind(null, "put"),
-  C = v.bind(null, "patch"),
-  N = v.bind(null, "del"),
+let I = A.bind(null, "get"),
+  S = A.bind(null, "post"),
+  T = A.bind(null, "put"),
+  C = A.bind(null, "patch"),
+  N = A.bind(null, "del"),
   R = {
-    get: S,
-    post: I,
+    get: I,
+    post: S,
     put: T,
     patch: C,
     del: N
@@ -249,7 +249,7 @@ if (require.g.isServerRendering) {
     body: null,
     text: ""
   });
-  S = module, I = module, T = module, C = module, N = module
+  I = module, S = module, T = module, C = module, N = module
 }
 
 function w() {

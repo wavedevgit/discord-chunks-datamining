@@ -16,44 +16,44 @@ var Chunk627968 = require("./627968.js"),
 
 function p() {
   let [e, t] = l.useState(30), n = l.useCallback(() => {
-    r.h.dispatch({
+    i.h.dispatch({
       type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
       state: s.R.LOADING
     })
   }, []);
-  return (0, a.jsx)(i.IpV, {
+  return (0, a.jsx)(r.IpV, {
     className: u.nd,
     children: (0, a.jsxs)("div", {
       className: m.l$,
-      children: [(0, a.jsx)(i.Text, {
+      children: [(0, a.jsx)(r.Text, {
         className: m.Iv,
         variant: "text-lg/bold",
         children: "Voice Filters"
       }), (0, a.jsxs)("div", {
         className: m.Pm,
-        children: [(0, a.jsx)(i.Text, {
+        children: [(0, a.jsx)(r.Text, {
           variant: "text-md/normal",
           children: "Set number of seconds remaining in countdown"
-        }), (0, a.jsx)(i.ksK, {
+        }), (0, a.jsx)(r.ksK, {
           defaultValue: 30,
           onChange: e => {
             t(parseInt(e))
           }
-        }), (0, a.jsx)(i.Button, {
+        }), (0, a.jsx)(r.Button, {
           variant: "primary",
           size: "sm",
           text: "Set",
-          onClick: () => void r.h.dispatch({
+          onClick: () => void i.h.dispatch({
             type: "VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME",
             timeInSeconds: e
           })
         })]
       }), (0, a.jsxs)("div", {
         className: m.Pm,
-        children: [(0, a.jsx)(i.Text, {
+        children: [(0, a.jsx)(r.Text, {
           variant: "text-md/normal",
           children: "Reset to API values"
-        }), (0, a.jsx)(i.Button, {
+        }), (0, a.jsx)(r.Button, {
           variant: "primary",
           size: "sm",
           text: "Reset",
@@ -63,10 +63,10 @@ function p() {
         })]
       }), (0, a.jsxs)("div", {
         className: m.Pm,
-        children: [(0, a.jsx)(i.Text, {
+        children: [(0, a.jsx)(r.Text, {
           variant: "text-md/normal",
           children: "Pretend the native module is loading so when you close your app it'll look as if it crashed on load"
-        }), (0, a.jsx)(i.Button, {
+        }), (0, a.jsx)(r.Button, {
           variant: "primary",
           size: "sm",
           text: "Pretend",
@@ -74,7 +74,7 @@ function p() {
         })]
       }), (0, a.jsx)("div", {
         className: m.Pm,
-        children: (0, a.jsx)(i.Button, {
+        children: (0, a.jsx)(r.Button, {
           variant: "primary",
           size: "sm",
           text: "Open voice filters panel",

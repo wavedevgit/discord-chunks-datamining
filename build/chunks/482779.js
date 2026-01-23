@@ -22,20 +22,20 @@ var r, Chunk101968 = require("./101968.js"),
     var t = e.parentWindow.Object;
     return e = null, t
   },
-  b = function() {
+  y = function() {
     var e, t = c("iframe"),
       n = "java" + _ + ":";
     return t.style.display = "none", l.appendChild(t), t.src = String(n), (e = t.contentWindow.document).open(), e.write(g("document.F=Object")), e.close(), e.F
   },
-  y = function() {
+  b = function() {
     try {
       r = new ActiveXObject("htmlfile")
     } catch (e) {}
-    y = "u" > typeof document ? document.domain && r ? E(r) : b() : E(r);
-    for (var e = s.length; e--;) delete y[p][s[e]];
-    return y()
+    b = "u" > typeof document ? document.domain && r ? E(r) : y() : E(r);
+    for (var e = s.length; e--;) delete b[p][s[e]];
+    return b()
   };
 Chunk239586[h] = true, module.exports = Object.create || function(e, t) {
   var n;
-  return null !== e ? (m[p] = i(e), n = new m, m[p] = null, n[h] = e) : n = y(), true === t ? n : a.f(n, t)
+  return null !== e ? (m[p] = i(e), n = new m, m[p] = null, n[h] = e) : n = b(), true === t ? n : a.f(n, t)
 }

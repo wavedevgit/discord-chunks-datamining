@@ -22,7 +22,7 @@ var Chunk110259 = require("./110259.js"),
   Chunk746080 = require("./746080.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk765490 = require("./765490.js");
-let y = () => {
+let b = () => {
   let e = (0, l.Ay)();
   return (0, s.qB)(e) ? n(454333) : n(674463)
 };
@@ -32,7 +32,7 @@ function O(e) {
     onClose: t,
     guildId: n,
     emojiId: s
-  } = e, l = y(), {
+  } = e, l = b(), {
     analyticsLocations: O
   } = (0, u.Ay)(c.A.GUILD_ROLE_SUBSCRIPTION_EMOJI_PICKER_UPSELL);
   (0, d.A)({
@@ -44,56 +44,56 @@ function O(e) {
       emoji_id: null != s ? s : null
     }
   });
-  let A = () => {
+  let v = () => {
       (0, f.pX)(m.BVt.CHANNEL(n, g.VV.ROLE_SUBSCRIPTIONS), {
         sourceLocationStack: O
       })
     },
-    v = (0, a.bG)([p.A], () => p.A.getGuild(n)),
-    S = (0, a.bG)([_.A], () => null != n && _.A.getUserSubscriptionRoles(n).size > 0),
-    I = S ? E.intl.string(E.t.GoLM9z) : E.intl.formatToPlainString(E.t["h0u/Hi"], {
-      serverName: null == v ? true : v.name
+    A = (0, a.bG)([p.A], () => p.A.getGuild(n)),
+    I = (0, a.bG)([_.A], () => null != n && _.A.getUserSubscriptionRoles(n).size > 0),
+    S = I ? E.intl.string(E.t.GoLM9z) : E.intl.formatToPlainString(E.t["h0u/Hi"], {
+      serverName: null == A ? true : A.name
     }),
-    T = S ? E.intl.string(E.t.PjZ7Db) : E.intl.string(E.t.p8FG1D);
+    T = I ? E.intl.string(E.t.PjZ7Db) : E.intl.string(E.t.p8FG1D);
   return (0, r.jsxs)("div", {
-    className: b.kL,
+    className: y.kL,
     children: [(0, r.jsx)("div", {
-      className: b.Tp
+      className: y.Tp
     }), (0, r.jsxs)("div", {
-      className: b.Qs,
+      className: y.Qs,
       children: [(0, r.jsx)(o.DUT, {
-        className: b.b,
+        className: y.b,
         "aria-label": E.intl.string(E.t.cpT0Cq),
         onClick: t,
         children: (0, r.jsx)(o.PGe, {
           size: "xs",
           color: "currentColor",
           "aria-label": E.intl.string(E.t.cpT0Cq),
-          className: b.yP
+          className: y.yP
         })
       }), (0, r.jsx)("img", {
         alt: "",
         src: l,
-        className: b.Tn
+        className: y.Tn
       }), (0, r.jsx)(o.hKd, {
         size: 22
       }), (0, r.jsx)(o.Heading, {
         color: "text-strong",
         variant: "heading-lg/extrabold",
-        className: b.wx,
+        className: y.wx,
         children: E.intl.string(E.t.cBjkcx)
       }), (0, r.jsx)(o.hKd, {
         size: 4
       }), (0, r.jsx)(o.Text, {
         color: "text-default",
         variant: "text-md/normal",
-        className: b.h_,
-        children: I
+        className: y.h_,
+        children: S
       }), (0, r.jsx)(o.hKd, {
         size: 24
       }), (0, r.jsx)(h.A, {
         text: T,
-        onClick: A
+        onClick: v
       })]
     })]
   })

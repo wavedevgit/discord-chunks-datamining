@@ -1,7 +1,7 @@
 /** Chunk was on 35894 **/
 /** chunk id: 508160, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => L
+  A: () => R
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,11 +26,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk17864 = require("./17864.jsx"),
   Chunk650583 = require("./650583.js"),
   Chunk160654 = require("./160654.js");
-let A = {
+let w = {
     transform: "translate3d(15%, 0, 0)",
     opacity: .3
   },
-  D = {
+  A = {
     transform: "translate3d(5%, 0, 0)",
     opacity: .5
   },
@@ -38,31 +38,31 @@ let A = {
     transform: "translate3d(0, 0, 0)",
     opacity: 1
   },
-  _ = {
+  D = {
     mass: 1.1,
     friction: 24,
     tension: 260
   },
-  N = e => e.shiftKey || e.key === H.dh.SHIFT,
-  P = e => e.metaKey || e.ctrlKey || ["Meta", "Control"].includes(e.key),
-  V = Chunk64700.memo(function(e) {
+  N = e => e.shiftKey || e.key === _.dh.SHIFT,
+  L = e => e.metaKey || e.ctrlKey || ["Meta", "Control"].includes(e.key),
+  P = Chunk64700.memo(function(e) {
     let {
       members: t,
       guild: n,
       className: i,
       searchState: a,
       compact: s,
-      onSelectRow: f,
-      onResetForNewMembers: b
-    } = e, p = (0, c.bG)([C.A], () => C.A.useReducedMotion), H = (0, d.useHasAnyModalOpen)(), V = (0, m.j)(), [L, E] = l.useState(false), [M, R] = l.useState(false), I = !H && L && M;
+      onSelectRow: m,
+      onResetForNewMembers: p
+    } = e, f = (0, c.bG)([C.A], () => C.A.useReducedMotion), _ = (0, u.useHasAnyModalOpen)(), P = (0, b.j)(), [R, V] = l.useState(false), [E, M] = l.useState(false), I = !_ && R && E;
     l.useEffect(() => {
-      V || (E(false), R(false))
-    }, [V]), l.useLayoutEffect(() => {
+      P || (V(false), M(false))
+    }, [P]), l.useLayoutEffect(() => {
       let e = e => {
-          N(e) && E(true), P(e) && R(true)
+          N(e) && V(true), L(e) && M(true)
         },
         t = e => {
-          N(e) && E(false), P(e) && R(false)
+          N(e) && V(false), L(e) && M(false)
         };
       return window.addEventListener("keydown", e), window.addEventListener("keyup", t), () => {
         window.removeEventListener("keydown", e), window.removeEventListener("keyup", t)
@@ -71,7 +71,7 @@ let A = {
       (0, g.jo)(n.id, t)
     }, [n.id, t]);
     let T = t.length > 30,
-      Z = (0, u.pnh)(t, {
+      Z = (0, d.pnh)(t, {
         key: e => e,
         trail: T ? 5 : 15,
         from(e) {
@@ -79,14 +79,14 @@ let A = {
             r = j.A.getLastRefreshTimestamp(n.id),
             l = null == t || 0 === r,
             i = null != t && t.refreshTimestamp === r;
-          return l || !i ? S : T ? D : A
+          return l || !i ? S : T ? A : w
         },
         enter: S,
-        config: _
+        config: D
       }),
-      k = !p && a === x.IY.LOADING;
+      k = !f && a === x.IY.LOADING;
     return (0, r.jsxs)("table", {
-      className: o()(w.tp, i),
+      className: o()(H.tp, i),
       children: [(0, r.jsx)(y.A, {
         guildId: n.id,
         currentPagedMembers: t
@@ -94,12 +94,12 @@ let A = {
         children: a === x.IY.SUCCESS_FULL || a === x.IY.LOADING ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(v.A, {
             guild: n,
-            onSubmit: b
+            onSubmit: p
           }), Z((e, t) => (0, r.jsx)(O.A, {
             userId: t,
             guildId: n.id,
             style: e,
-            onSelect: f,
+            onSelect: m,
             isHoldingAdvancedInfoKey: I,
             compact: s,
             isLoading: k
@@ -119,33 +119,33 @@ let A = {
       i = e.compact === t.compact;
     return n && r && l && i
   }),
-  L = function(e) {
+  R = function(e) {
     var t, n;
     let {
       guild: i,
       className: o,
       searchState: a,
       compact: s,
-      onSelectRow: d,
-      onResetForNewMembers: u
-    } = e, C = (0, c.cf)([j.A], () => j.A.getPaginationStateByGuildId(i.id), [i.id]), [m] = (0, c.bG)([j.A], () => j.A.getPagedMembersByGuildId(i.id), [i.id], b.D);
+      onSelectRow: u,
+      onResetForNewMembers: d
+    } = e, C = (0, c.cf)([j.A], () => j.A.getPaginationStateByGuildId(i.id), [i.id]), [b] = (0, c.bG)([j.A], () => j.A.getPagedMembersByGuildId(i.id), [i.id], p.D);
     l.useEffect(() => {
       (0, g.uO)(i.id)
     }, [i.id]);
-    let h = l.useDeferredValue(null != (t = m[C.currentPage]) ? t : []),
+    let h = l.useDeferredValue(null != (t = b[C.currentPage]) ? t : []),
       {
         analyticsLocations: x
-      } = (0, f.Ay)(),
+      } = (0, m.Ay)(),
       y = null != (n = null == x ? true : x[0]) ? n : null;
     return l.useEffect(() => {
-      (0, p.KW)(i.id, y)
-    }, [i.id, y]), (0, r.jsx)(V, {
+      (0, f.KW)(i.id, y)
+    }, [i.id, y]), (0, r.jsx)(P, {
       members: h,
       guild: i,
       className: o,
       searchState: a,
       compact: s,
-      onSelectRow: d,
-      onResetForNewMembers: u
+      onSelectRow: u,
+      onResetForNewMembers: d
     })
   }

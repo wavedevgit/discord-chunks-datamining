@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk893221 = require("./893221.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,14 +30,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -54,15 +54,15 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = 104,
-  S = 16;
+let A = 104,
+  I = 16;
 
-function I(e) {
+function S(e) {
   var t, n, a;
   let {
     file: o
@@ -78,19 +78,19 @@ function I(e) {
     null != e && (e.onload = () => {
       let t = Math.max(.66, Math.min(e.naturalWidth / e.naturalHeight, 4));
       1 === t ? _({
-        width: v,
-        height: v
+        width: A,
+        height: A
       }) : t > 1 ? _({
-        width: v * t,
+        width: A * t,
         height: true
       }) : _({
         width: true,
-        height: v / t
+        height: A / t
       }), f(true)
     })
   }, []);
   let m = (0, u.A)(h),
-    g = Math.max(16, (S + v - (null != (t = null == m ? true : m.width) ? t : 0)) / 2);
+    g = Math.max(16, (I + A - (null != (t = null == m ? true : m.width) ? t : 0)) / 2);
   return (0, r.jsx)("img", {
     ref: h,
     src: l,
@@ -101,7 +101,7 @@ function I(e) {
     alt: "",
     style: {
       width: null != (n = p.width) ? n : "initial",
-      maxHeight: null != (a = p.height) ? a : v,
+      maxHeight: null != (a = p.height) ? a : A,
       height: "unset",
       marginLeft: g,
       marginRight: g,
@@ -112,7 +112,7 @@ function I(e) {
 class T extends Chunk64700.Component {
   render() {
     var e;
-    return this.props.upload.item.platform !== d.xz.WEB ? null : this.props.upload.isImage ? (0, r.jsx)(I, {
+    return this.props.upload.item.platform !== d.xz.WEB ? null : this.props.upload.isImage ? (0, r.jsx)(S, {
       file: this.props.upload.item.file
     }) : (0, r.jsx)("div", {
       className: s()(E.fileIcon, {
@@ -194,16 +194,16 @@ class C extends Chunk64700.Component {
   }
   constructor(e) {
     var t, n, r, i, a, s;
-    super(e), b(this, "cancelAll", () => {
+    super(e), y(this, "cancelAll", () => {
       c.A.clearAll(this.props.channelId, this.props.draftType), this.props.onClose()
-    }), b(this, "cancel", () => {
+    }), y(this, "cancel", () => {
       this.props.onClose()
-    }), b(this, "handleTextChange", (e, t, n) => {
+    }), y(this, "handleTextChange", (e, t, n) => {
       this.setState({
         textValue: t,
         richValue: n
       })
-    }), b(this, "handleSubmit", () => {
+    }), y(this, "handleSubmit", () => {
       let {
         upload: e,
         onClose: t,
@@ -221,7 +221,7 @@ class C extends Chunk64700.Component {
       }), t()
     });
     const o = e.ignoreDraft ? "" : p.A.getDraft(this.props.channelId, e.draftType);
-    this.state = A(y({}, (0, f.ur)(o)), {
+    this.state = v(b({}, (0, f.ur)(o)), {
       textFocused: true,
       hasSpoiler: null != (t = null == (i = e.upload) ? true : i.spoiler) && t,
       filename: null != (n = null == (a = e.upload) ? true : a.filename) ? n : "",
@@ -232,7 +232,7 @@ class C extends Chunk64700.Component {
 }
 
 function N(e) {
-  return e.upload.item.platform !== d.xz.WEB ? null : (0, r.jsx)(C, A(y({}, e), {
+  return e.upload.item.platform !== d.xz.WEB ? null : (0, r.jsx)(C, v(b({}, e), {
     file: e.upload.item.file
   }))
 }

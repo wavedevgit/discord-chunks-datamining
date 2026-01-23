@@ -4,7 +4,7 @@
 require.d(exports, {
   Ay: () => O,
   PS: () => g,
-  S0: () => b
+  S0: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -58,7 +58,7 @@ function E(e, t) {
   }
 }
 
-function b(e) {
+function y(e) {
   let {
     className: t,
     icon: n,
@@ -76,7 +76,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     message: t,
     className: n,
@@ -102,13 +102,13 @@ function y(e) {
   let {
     text: h,
     icon: m,
-    color: y
+    color: b
   } = _;
-  return (0, r.jsx)(b, {
+  return (0, r.jsx)(y, {
     icon: m,
     text: h,
     className: n,
-    color: y
+    color: b
   })
 }
-let O = Chunk64700.memo(y)
+let O = Chunk64700.memo(b)

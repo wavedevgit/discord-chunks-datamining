@@ -21,7 +21,7 @@ let o = {
 };
 
 function c(e) {
-  null == o.users && (o.users = new Map), o.users.set(e.id, new r.A(e))
+  null == o.users && (o.users = new Map), o.users.set(e.id, new i.A(e))
 }
 class d extends(a = Chunk311907.Ay.PersistedStore) {
   initialize(e) {

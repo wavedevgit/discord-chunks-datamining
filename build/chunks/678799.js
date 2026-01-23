@@ -81,7 +81,7 @@ module.exports = function(e) {
       returnBegin: true,
       excludeEnd: true
     },
-    b = {
+    y = {
       className: "function",
       begin: g,
       end: "\\)$",
@@ -95,6 +95,6 @@ module.exports = function(e) {
     case_insensitive: true,
     keywords: p,
     illegal: "\\$|\\?|%|,|;$|~|#|@|</",
-    contains: [b, h, _, m, u, c, f]
+    contains: [y, h, _, m, u, c, f]
   }
 }

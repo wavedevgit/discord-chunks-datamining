@@ -65,18 +65,18 @@ function x(e) {
     hasCommands: f
   } = e, p = i.useMemo(() => {
     var e;
-    return null != (e = (0, y.u8)(n)) ? e : ""
+    return null != (e = (0, b.u8)(n)) ? e : ""
   }, [n]), _ = (0, o.bG)([c.A], () => c.A.inDevModeForApplication(n.id)), {
     isSlideReady: h
   } = (0, O.uM)(), [g, E] = i.useState(false);
   i.useEffect(() => {
     h && E(true)
   }, [h]);
-  let b = null != a;
+  let y = null != a;
   return (0, r.jsxs)("div", {
     className: C.kL,
     children: [(0, r.jsxs)("div", {
-      children: [b ? (0, r.jsxs)("div", {
+      children: [y ? (0, r.jsxs)("div", {
         className: C.j,
         children: [g ? (0, r.jsx)(m.A, {
           className: s()(C.l3, C.Ki),
@@ -91,7 +91,7 @@ function x(e) {
           "aria-label": T.intl.string(T.t.X4IxWL)
         })]
       }) : null, (0, r.jsxs)("div", {
-        className: b ? C.iw : C.bH,
+        className: y ? C.iw : C.bH,
         children: [(0, r.jsx)(j, {
           application: n
         }), (0, r.jsx)(M, {
@@ -121,7 +121,7 @@ function x(e) {
 function L(e) {
   let {
     application: t
-  } = e, n = (0, y.K4)(t), i = (0, y.ME)(t);
+  } = e, n = (0, b.K4)(t), i = (0, b.ME)(t);
   return n || i ? (0, r.jsxs)("div", {
     className: C.fP,
     children: [n ? (0, r.jsxs)("div", {
@@ -152,7 +152,7 @@ function j(e) {
   var t;
   let {
     application: n
-  } = e, i = (0, y.$B)(n) ? n.name : null != (t = (0, y.lq)(n)) ? t : "", a = (0, y.b7)(n);
+  } = e, i = (0, b.$B)(n) ? n.name : null != (t = (0, b.lq)(n)) ? t : "", a = (0, b.b7)(n);
   return (0, r.jsxs)("div", {
     className: C.gn,
     children: [(0, r.jsx)(l.Heading, {
@@ -175,9 +175,9 @@ function M(e) {
     application: t
   } = e, n = i.useMemo(() => {
     var e;
-    return (0, y.$B)(t) && null != (e = null == t ? true : t.tags) ? e : []
+    return (0, b.$B)(t) && null != (e = null == t ? true : t.tags) ? e : []
   }, [t]);
-  return (0, y.Ag)(t) ? (0, r.jsxs)("div", {
+  return (0, b.Ag)(t) ? (0, r.jsxs)("div", {
     className: C.Pc,
     children: [(0, r.jsx)(k, {
       application: t
@@ -197,8 +197,8 @@ function k(e) {
   let {
     application: n
   } = e;
-  if (!(0, y.Ag)(n)) return null;
-  let i = null != (t = (0, y.$B)(n) ? n instanceof E.Ay ? n.maxParticipants : n.max_participants : 0) ? t : 0;
+  if (!(0, b.Ag)(n)) return null;
+  let i = null != (t = (0, b.$B)(n) ? n instanceof E.Ay ? n.maxParticipants : n.max_participants : 0) ? t : 0;
   return (0, r.jsxs)("div", {
     className: C.I8,
     children: [(0, r.jsx)(l.nFg, {
@@ -228,9 +228,9 @@ function U(e) {
     analyticsLocations: E
   } = (0, f.Ay)();
   return (i.useEffect(() => {
-    if (!(0, y.$B)(a) || !(0, y.Ag)(a)) return;
+    if (!(0, b.$B)(a) || !(0, b.Ag)(a)) return;
     let e = setTimeout(() => {
-      (null == u || null == m) && b.default.track(I.HAw.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
+      (null == u || null == m) && y.default.track(S.HAw.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
         application_id: a.id,
         is_primary_entry_point_command_non_null: null != u,
         is_bot_user_id_non_null: null != m,
@@ -238,19 +238,19 @@ function U(e) {
       })
     }, D);
     return () => clearTimeout(e)
-  }, [a, u, m, g]), (0, y.$B)(a) && (0, y.Ag)(a)) ? null != u && null != m ? (0, r.jsxs)(l.ButtonGroup, {
+  }, [a, u, m, g]), (0, b.$B)(a) && (0, b.Ag)(a)) ? null != u && null != m ? (0, r.jsxs)(l.ButtonGroup, {
     fullWidth: true,
-    children: [(0, r.jsx)(v.A, {
+    children: [(0, r.jsx)(A.A, {
       context: n,
       application: a,
       sectionName: s,
       primaryEntryPointCommand: u
-    }), g && null != m ? (0, r.jsx)(S.A, {
+    }), g && null != m ? (0, r.jsx)(I.A, {
       botUserId: m,
       applicationId: a.id,
       analyticsLocations: E
     }) : null]
-  }) : c && !o && (0, y.Ag)(a) ? (0, r.jsx)(l.po8, {
+  }) : c && !o && (0, b.Ag)(a) ? (0, r.jsx)(l.po8, {
     className: C.ai,
     messageType: l.YCn.WARNING,
     children: T.intl.format(T.t["s/3hjE"], {})
@@ -283,7 +283,7 @@ function G(e) {
       ref: f,
       isTransitioning: p,
       onTransitionEnd: _
-    } = (0, A.A)(w({
+    } = (0, v.A)(w({
       isExpanded: n
     }, d)),
     h = n || p;

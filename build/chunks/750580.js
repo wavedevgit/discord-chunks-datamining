@@ -10,14 +10,14 @@ var Chunk64700 = require("./64700.js"),
   Chunk517092 = require("./517092.js");
 
 function o(e) {
-  let t = (0, a.os)("useShouldRenderBanner"),
+  let t = (0, s.os)("useShouldRenderBanner"),
     [n, o] = r.useState("");
   r.useEffect(() => {
     o("")
   }, [e.id]);
-  let c = (0, l.bG)([s.A], () => s.A.getLastActionTime(e.id));
+  let c = (0, l.bG)([a.A], () => a.A.getLastActionTime(e.id));
   r.useEffect(() => {
-    !i.B4.has(e.type) || n === e.id || t && s.A.maybeAutoUpgradeChannel(e.id) && o(e.id)
+    !i.B4.has(e.type) || n === e.id || t && a.A.maybeAutoUpgradeChannel(e.id) && o(e.id)
   }, [n, t, c, e]);
   let u = r.useCallback(() => o(""), []);
   return {

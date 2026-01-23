@@ -2,7 +2,7 @@
 /** chunk id: 615284, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  X: () => v,
+  X: () => A,
   x: () => O
 }), require("./896048.js");
 var r, Chunk627968 = require("./627968.js");
@@ -29,7 +29,7 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 let E = new Set;
-class b extends(r = Chunk311907.Ay.PersistedStore) {
+class y extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     this.waitFor(d.A, f.Ay, p.A, _.default), null != e && (E = new Set(e))
   }
@@ -40,23 +40,23 @@ class b extends(r = Chunk311907.Ay.PersistedStore) {
     return [...E]
   }
 }
-g(b, "displayName", "PTOStore"), g(b, "persistKey", "PTOStore");
-let y = new b(Chunk73153.h, {}),
-  O = e => (0, o.bG)([f.Ay, _.default, y], () => {
+g(y, "displayName", "PTOStore"), g(y, "persistKey", "PTOStore");
+let b = new y(Chunk73153.h, {}),
+  O = e => (0, o.bG)([f.Ay, _.default, b], () => {
     let t = _.default.getCurrentUser();
     if (null == t || !t.isStaff() || !e.isDM()) returnfalse;
     let n = _.default.getUser(e.getRecipientId());
     if (!(null == n ? true : n.isStaff())) returnfalse;
     let r = f.Ay.getNicknames(n.id).some(e => e.endsWith("[PTO]") || e.endsWith("[OOO]"));
-    return r ? !y.hasId(n.id) && r : (E.delete(n.id) && y.emitChange(), false)
+    return r ? !b.hasId(n.id) && r : (E.delete(n.id) && b.emitChange(), false)
   }),
-  A = () => {
+  v = () => {
     let e = p.A.getChannelId();
     if (null == e) return;
     let t = d.A.getChannel(e);
-    null != t && t.isPrivate() && (E.has(t.getRecipientId()) || (E.add(t.getRecipientId()), y.emitChange()))
+    null != t && t.isPrivate() && (E.has(t.getRecipientId()) || (E.add(t.getRecipientId()), b.emitChange()))
   },
-  v = () => (0, i.jsxs)("div", {
+  A = () => (0, i.jsxs)("div", {
     className: m.eU,
     children: [(0, i.jsx)(l.Text, {
       variant: "text-sm/medium",
@@ -65,7 +65,7 @@ let y = new b(Chunk73153.h, {}),
     }), (0, i.jsx)("div", {
       className: m.o1,
       children: (0, i.jsx)(u.x, {
-        onClick: A
+        onClick: v
       })
     })]
   })

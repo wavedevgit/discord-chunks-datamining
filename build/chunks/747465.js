@@ -41,7 +41,7 @@ function f(e, t, n) {
   let r = [];
   n((e, t) => {
     p(r, e, t)
-  }), g(e, t, r), b(e, r)
+  }), g(e, t, r), y(e, r)
 }
 
 function p(e, t, n) {
@@ -160,7 +160,7 @@ function g(e, t, n) {
 }
 let E = new Map;
 
-function b(e, t) {
+function y(e, t) {
   var n, r;
   if (0 === t.length) return;
   let a = i.HV();
@@ -184,7 +184,7 @@ function b(e, t) {
   }))
 }
 
-function y(e) {
+function b(e) {
   return null === e ? "null" : "object" != typeof e ? typeof e : Array.isArray(e) ? "array" : "object"
 }
 
@@ -209,15 +209,15 @@ function O(e, t) {
           case "field-missing":
             n.mismatchedFields.push({
               fieldName: e,
-              primaryType: y(a.primaryRecord[t.field]),
+              primaryType: b(a.primaryRecord[t.field]),
               shadowType: "missing"
             });
             break;
           case "value-mismatch":
             null !== t.primaryValue && null !== t.shadowValue && "object" == typeof t.primaryValue && "object" == typeof t.shadowValue ? Array.isArray(t.primaryValue) && Array.isArray(t.shadowValue) ? s(e, t.primaryValue, t.shadowValue) : i(e, t.primaryValue, t.shadowValue) : r({
               fieldName: e,
-              primaryType: y(t.primaryValue),
-              shadowType: y(t.shadowValue)
+              primaryType: b(t.primaryValue),
+              shadowType: b(t.shadowValue)
             })
         }
       }
@@ -241,7 +241,7 @@ function O(e, t) {
       if (!Object.prototype.hasOwnProperty.call(n, o)) {
         r({
           fieldName: l,
-          primaryType: y(c),
+          primaryType: b(c),
           shadowType: "missing"
         });
         continue
@@ -249,8 +249,8 @@ function O(e, t) {
       let u = n[o];
       c !== u && ("object" == typeof c && "object" == typeof u ? Array.isArray(c) && Array.isArray(u) ? s(l, c, u) : null == c || null == u || a.has(c) || (a.add(c), i(l, c, u, a)) : r({
         fieldName: l,
-        primaryType: y(c),
-        shadowType: y(u)
+        primaryType: b(c),
+        shadowType: b(u)
       }))
     }
   }

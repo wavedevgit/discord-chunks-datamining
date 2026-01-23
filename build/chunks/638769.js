@@ -17,15 +17,15 @@ var Chunk557939 = require("./557939.js"),
   Chunk450634 = require("./450634.js"),
   g = [],
   E = Chunk410323(g.sort),
-  b = Chunk410323(g.push),
-  y = Chunk503628(function() {
+  y = Chunk410323(g.push),
+  b = Chunk503628(function() {
     g.sort(true)
   }),
   O = Chunk503628(function() {
     g.sort(null)
   }),
-  A = Chunk691639("sort"),
-  v = !Chunk503628(function() {
+  v = Chunk691639("sort"),
+  A = !Chunk503628(function() {
     if (h) return h < 70;
     if (!p || !(p > 3)) {
       if (_) returntrue;
@@ -57,7 +57,7 @@ var Chunk557939 = require("./557939.js"),
       return "DGBEFHACIJK" !== i
     }
   }),
-  S = function(e) {
+  I = function(e) {
     return function(t, n) {
       return true === n ? false : true === t ? 1 : true !== e ? +e(t, n) || 0 : c(t) > c(n) ? 1 : false
     }
@@ -65,16 +65,16 @@ var Chunk557939 = require("./557939.js"),
 Chunk557939({
   target: "Array",
   proto: true,
-  forced: y || !O || !A || !v
+  forced: b || !O || !v || !A
 }, {
   sort: function(e) {
     true !== e && a(e);
     var t, n, r = s(this);
-    if (v) return true === e ? E(r) : E(r, e);
+    if (A) return true === e ? E(r) : E(r, e);
     var i = [],
       c = o(r);
-    for (n = 0; n < c; n++) n in r && b(i, r[n]);
-    for (d(i, S(e)), t = o(i), n = 0; n < t;) r[n] = i[n++];
+    for (n = 0; n < c; n++) n in r && y(i, r[n]);
+    for (d(i, I(e)), t = o(i), n = 0; n < t;) r[n] = i[n++];
     for (; n < c;) l(r, n++);
     return r
   }

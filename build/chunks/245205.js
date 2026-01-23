@@ -1,11 +1,11 @@
 /** Chunk was on 97492 **/
 /** chunk id: 245205, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  BZ: () => f,
-  R7: () => b,
-  S3: () => p,
-  VP: () => m,
-  ni: () => h
+  BZ: () => p,
+  R7: () => g,
+  S3: () => h,
+  VP: () => b,
+  ni: () => f
 });
 var Chunk110259 = require("./110259.js"),
   Chunk562465 = require("./562465.js"),
@@ -17,21 +17,21 @@ var Chunk110259 = require("./110259.js"),
   Chunk995273 = require("./995273.js"),
   Chunk652215 = require("./652215.js");
 
-function f(e) {
-  a.h.dispatch({
+function p(e) {
+  s.h.dispatch({
     type: "NOTIFICATION_CENTER_SET_ACTIVE",
     active: e
   })
 }
 
-function p() {
-  a.h.dispatch({
+function h() {
+  s.h.dispatch({
     type: "RESET_NOTIFICATION_CENTER"
   })
 }
-async function h(e, t) {
+async function f(e, t) {
   if (c.A.loading) return;
-  await a.h.dispatch({
+  await s.h.dispatch({
     type: "LOAD_NOTIFICATION_CENTER_ITEMS"
   });
   let n = Math.ceil(c.A.items.length / e.limit);
@@ -70,33 +70,33 @@ async function h(e, t) {
       }({}, e),
       rejectWithError: true
     });
-    null == t || t(), await a.h.dispatch({
+    null == t || t(), await s.h.dispatch({
       type: "LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS",
       items: l.body.items,
       cursor: l.body.cursor,
       hasMore: l.body.has_more
     })
   } catch (e) {
-    null == t || t(), await a.h.dispatch({
+    null == t || t(), await s.h.dispatch({
       type: "LOAD_NOTIFICATION_CENTER_ITEMS_FAILURE"
     })
   }
 }
 
-function b(e) {
+function g(e) {
   var t, n;
-  null != e.local_id ? (t = [e.local_id], a.h.dispatch({
+  null != e.local_id ? (t = [e.local_id], s.h.dispatch({
     type: "NOTIFICATION_CENTER_ITEMS_LOCAL_ACK",
     localIds: t
-  })) : (0, u.gk)(e) ? (n = e.id, a.h.dispatch({
+  })) : (0, u.gk)(e) ? (n = e.id, s.h.dispatch({
     type: "NOTIFICATION_CENTER_ITEMS_ACK",
     optimistic: true,
     ids: [n]
-  })) : g(e.id)
+  })) : m(e.id)
 }
-async function g(e) {
+async function m(e) {
   try {
-    a.h.dispatch({
+    s.h.dispatch({
       type: "NOTIFICATION_CENTER_ITEMS_ACK",
       optimistic: true,
       ids: [e]
@@ -105,16 +105,16 @@ async function g(e) {
       rejectWithError: true
     })
   } catch (t) {
-    a.h.dispatch({
+    s.h.dispatch({
       type: "NOTIFICATION_CENTER_ITEMS_ACK_FAILURE",
       ids: [e]
     })
   }
 }
-async function m(e) {
-  let t = s.ns.getSetting();
+async function b(e) {
+  let t = a.ns.getSetting();
   try {
-    a.h.dispatch({
+    s.h.dispatch({
       type: "NOTIFICATION_CENTER_ITEM_DELETE",
       id: e.id
     }), await o.A.delete({
@@ -133,7 +133,7 @@ async function m(e) {
       rejectWithError: false
     })
   } catch (t) {
-    throw a.h.dispatch({
+    throw s.h.dispatch({
       type: "NOTIFICATION_CENTER_ITEM_DELETE_FAILURE",
       item: e
     }), t

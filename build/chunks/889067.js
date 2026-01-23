@@ -16,13 +16,13 @@ var Chunk782017 = require("./782017.js"),
   m = "[object ArrayBuffer]",
   g = "[object DataView]",
   E = "[object Float32Array]",
-  b = "[object Float64Array]",
-  y = "[object Int8Array]",
+  y = "[object Float64Array]",
+  b = "[object Int8Array]",
   O = "[object Int16Array]",
-  A = "[object Int32Array]",
-  v = "[object Uint8Array]",
-  S = "[object Uint8ClampedArray]",
-  I = "[object Uint16Array]",
+  v = "[object Int32Array]",
+  A = "[object Uint8Array]",
+  I = "[object Uint8ClampedArray]",
+  S = "[object Uint16Array]",
   T = "[object Uint32Array]";
 module.exports = function(e, t, n) {
   var C = e.constructor;
@@ -35,13 +35,13 @@ module.exports = function(e, t, n) {
     case g:
       return i(e, n);
     case E:
-    case b:
     case y:
+    case b:
     case O:
-    case A:
     case v:
-    case S:
+    case A:
     case I:
+    case S:
     case T:
       return o(e, n);
     case u:

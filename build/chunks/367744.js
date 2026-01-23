@@ -9,14 +9,14 @@ var Chunk64700 = require("./64700.js"),
   Chunk652215 = require("./652215.js"),
   Chunk788868 = require("./788868.js");
 let o = async () => (await l.Bo.get({
-  url: r.Rsh.ENTITLEMENTS_FOR_APPLICATION(s.tv),
+  url: i.Rsh.ENTITLEMENTS_FOR_APPLICATION(s.tv),
   oldFormErrors: true,
   query: {
     exclude_consumed: true,
     exclude_ended: true
   },
   rejectWithError: true
-})).body.map(e => i.A.createFromServer(e)), c = async e => {
+})).body.map(e => r.A.createFromServer(e)), c = async e => {
   await l.Bo.post({
     url: "/debug/entitlements/fractional-premium",
     body: {
@@ -37,7 +37,7 @@ let o = async () => (await l.Bo.get({
     rejectWithError: false
   })
 }, m = () => {
-  let [e, t] = a.useState([]), [n, l] = a.useState(false), i = (0, a.useCallback)(async () => {
+  let [e, t] = a.useState([]), [n, l] = a.useState(false), r = (0, a.useCallback)(async () => {
     try {
       l(true);
       let e = await o();
@@ -45,18 +45,18 @@ let o = async () => (await l.Bo.get({
     } finally {
       l(false)
     }
-  }, []), r = (0, a.useCallback)(async e => {
-    await c(e), await i()
-  }, [i]);
+  }, []), i = (0, a.useCallback)(async e => {
+    await c(e), await r()
+  }, [r]);
   return {
-    grantFractionalPremium: r,
+    grantFractionalPremium: i,
     deleteFractionalPremium: (0, a.useCallback)(async e => {
-      await d(e), await i()
-    }, [i]),
+      await d(e), await r()
+    }, [r]),
     triggerNextEntitlementFulfillment: (0, a.useCallback)(async () => {
-      await u(), await i()
-    }, [i]),
-    refreshEntitlementList: i,
+      await u(), await r()
+    }, [r]),
+    refreshEntitlementList: r,
     entitlements: e,
     loading: n
   }

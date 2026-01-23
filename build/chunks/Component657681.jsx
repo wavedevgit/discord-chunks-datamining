@@ -28,16 +28,16 @@ function O(e) {
     applicationIntegration: O
   } = e, {
     application: y
-  } = O, A = null != y.bot ? new p.A(y.bot) : null, v = (0, a.bG)([m.Ay], () => null != A ? m.Ay.getMember(n.id, A.id) : null, [A, n]), N = (0, a.bG)([g.A], () => g.A.getEveryoneRole(n)), E = (0, a.yK)([g.A], () => {
+  } = O, A = null != y.bot ? new g.A(y.bot) : null, v = (0, a.bG)([b.Ay], () => null != A ? b.Ay.getMember(n.id, A.id) : null, [A, n]), _ = (0, a.bG)([f.A], () => f.A.getEveryoneRole(n)), N = (0, a.yK)([f.A], () => {
     var e;
-    return g.A.getManyRoles(n.id, null != (e = null == v ? true : v.roles) ? e : [])
-  }), T = null == A ? true : A.id;
+    return f.A.getManyRoles(n.id, null != (e = null == v ? true : v.roles) ? e : [])
+  }), w = null == A ? true : A.id;
   r.useEffect(() => {
-    null != T && o.A.requestMembersById(n.id, T)
-  }, [n.id, T]);
-  let w = r.useMemo(() => l.kg(N.permissions, ...E.map(e => e.permissions)), [E, N]);
+    null != w && o.A.requestMembersById(n.id, w)
+  }, [n.id, w]);
+  let T = r.useMemo(() => l.kg(_.permissions, ...N.map(e => e.permissions)), [N, _]);
   if (null == A) return null;
-  let C = h.Ay.getApplicationIconURL({
+  let E = h.Ay.getApplicationIconURL({
     id: y.id,
     guildMember: v,
     bot: y.bot,
@@ -47,13 +47,13 @@ function O(e) {
   return (0, i.jsx)(s.ZpM, {
     editable: true,
     className: j.Nr,
-    children: (0, i.jsxs)(b.A, {
-      direction: b.A.Direction.VERTICAL,
-      children: [(0, i.jsxs)(b.A, {
-        align: b.A.Align.CENTER,
+    children: (0, i.jsxs)(p.A, {
+      direction: p.A.Direction.VERTICAL,
+      children: [(0, i.jsxs)(p.A, {
+        align: p.A.Align.CENTER,
         children: [(0, i.jsx)("img", {
           alt: "",
-          src: C,
+          src: E,
           className: j.P0
         }), (0, i.jsx)(s.Text, {
           color: "text-strong",
@@ -68,7 +68,7 @@ function O(e) {
       }), function(e, t, n, r) {
         let a = [],
           o = [];
-        for (let e of f.Q) l.zy(r, e) ? a.push(e) : o.push(e);
+        for (let e of m.Q) l.zy(r, e) ? a.push(e) : o.push(e);
         return (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(s.cGx, {
             className: j.yF
@@ -91,7 +91,7 @@ function O(e) {
             disabledPermissionsHeader: x.intl.string(x.t["/rEZ2i"])
           }) : null]
         })
-      }(A, n, null != (t = null == v ? true : v.roles) ? t : [], w)]
+      }(A, n, null != (t = null == v ? true : v.roles) ? t : [], T)]
     })
   })
 }

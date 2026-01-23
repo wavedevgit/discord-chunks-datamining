@@ -2,7 +2,7 @@
 /** chunk id: 684477, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E: () => b
+  E: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -66,29 +66,29 @@ let g = e => (0, r.jsx)(E, _({}, e)),
       renderLeftColumn: h,
       renderRightColumn: g,
       primaryCTAButtonProps: E,
-      onBackClick: b
+      onBackClick: y
     } = n, {
-      hasPaymentSources: y
-    } = (0, s.P5)(), O = y ? o.pn.REVIEW : o.pn.ADD_PAYMENT_STEPS, A = i.useCallback(() => t(O), [t, O]), v = i.useMemo(() => "custom-step-body" === c ? p() : "two-column" === c ? (0, r.jsxs)("div", {
+      hasPaymentSources: b
+    } = (0, s.P5)(), O = b ? o.pn.REVIEW : o.pn.ADD_PAYMENT_STEPS, v = i.useCallback(() => t(O), [t, O]), A = i.useMemo(() => "custom-step-body" === c ? p() : "two-column" === c ? (0, r.jsxs)("div", {
       className: f.D,
       children: [h(), g()]
-    }) : null, [c, p, h, g]), S = i.useMemo(() => m(_({}, E), {
-      onClick: A,
+    }) : null, [c, p, h, g]), I = i.useMemo(() => m(_({}, E), {
+      onClick: v,
       text: d.intl.string(d.t.XiOHRX)
-    }), [E, A]);
+    }), [E, v]);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.dZ, {
-        children: v
+        children: A
       }), (0, r.jsx)(l.UX, {
         children: (0, r.jsx)(u.cy, {
-          onBackClick: b,
-          primaryCTAButtonProps: S,
+          onBackClick: y,
+          primaryCTAButtonProps: I,
           align: a.A.Align.CENTER
         })
       })]
     })
   },
-  b = (0, Chunk866485.R)({
+  y = (0, Chunk866485.R)({
     step: Chunk166532.pn.GIFT_CUSTOMIZATION,
     renderStep: g,
     DirectStepComponent: E

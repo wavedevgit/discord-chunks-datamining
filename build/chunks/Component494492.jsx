@@ -23,15 +23,15 @@ function d(e) {
     }), a.A.updateGuildProfile(d, {
       description: e
     })
-  }, [d]), f = (0, l.bG)([c.A], () => c.A.getError("description"));
+  }, [d]), g = (0, l.bG)([o.A], () => o.A.getError("description"));
   return (0, r.jsx)(s.fs1, {
-    label: o.intl.string(o.t.Z27SCb),
-    description: o.intl.string(o.t.pw0MIk),
+    label: c.intl.string(c.t.Z27SCb),
+    description: c.intl.string(c.t.pw0MIk),
     value: t.description,
-    placeholder: o.intl.string(o.t.Nvfowl),
+    placeholder: c.intl.string(c.t.Nvfowl),
     onChange: u,
     maxLength: 300,
     disabled: !n,
-    error: f
+    error: g
   })
 }

@@ -73,7 +73,7 @@ let F = {
 };
 
 function B(e) {
-  let t = (0, o.bG)([A.A], () => A.A.isConnected() ? A.A.getChannelId() : null),
+  let t = (0, o.bG)([v.A], () => v.A.isConnected() ? v.A.getChannelId() : null),
     [n, r] = i.useState([]);
   return i.useEffect(() => {
     let n = null != t ? c.A.getParticipants(t) : [],
@@ -87,9 +87,9 @@ function B(e) {
 function H(e, t, n) {
   let r = (0, d.A)(),
     a = B(e),
-    l = (0, o.yK)([v.default], () => {
+    l = (0, o.yK)([A.default], () => {
       var e;
-      return null != (e = null == n ? true : n.map(v.default.getUser).filter(I.Vq)) ? e : []
+      return null != (e = null == n ? true : n.map(A.default.getUser).filter(S.Vq)) ? e : []
     }, [n]);
   return i.useMemo(() => s().uniqWith([...null != t ? [t] : [], ...l, ...a, ...r], (e, t) => e.id === t.id), [t, l, a, r])
 }
@@ -110,7 +110,7 @@ function Y(e) {
       disabled: a,
       loading: s,
       text: k.intl.string(k.t.XiOHRX)
-    }), i ? (0, r.jsx)(b.A, {
+    }), i ? (0, r.jsx)(y.A, {
       onClick: n
     }) : null]
   })
@@ -128,11 +128,11 @@ let W = e => {
     setEmojiConfetti: f,
     setSoundEffect: h,
     giftingOrigin: m,
-    additionalUserIds: b
+    additionalUserIds: y
   } = (0, p.Pv)(), {
-    selectedSkuId: A,
-    application: I
-  } = (0, _.P5)(), N = (0, o.bG)([v.default], () => v.default.getCurrentUser()), R = H(null == N ? true : N.id, s, b), x = (0, o.bG)([S.A], () => null != A ? S.A.get(A) : null, [A]), L = (0, C.fq)(x), G = (0, C.xf)(x), V = (0, P.j)(x, {
+    selectedSkuId: v,
+    application: S
+  } = (0, _.P5)(), N = (0, o.bG)([A.default], () => A.default.getCurrentUser()), R = H(null == N ? true : N.id, s, y), x = (0, o.bG)([I.A], () => null != v ? I.A.get(v) : null, [v]), L = (0, C.fq)(x), G = (0, C.xf)(x), V = (0, P.j)(x, {
     shouldFetchIfMissing: true
   }), F = async (e, t) => {}, B = () => (0, r.jsx)(g.A, {
     onTextChange: e => null == a ? true : a(e),
@@ -141,10 +141,10 @@ let W = e => {
     disableThemedBackground: true,
     className: U.iX,
     innerClassName: U.pt
-  }), Y = () => null != s && (m === j.vQ.USER_PROFILE_WISHLIST || m === j.vQ.DM_CHANNEL_WISHLIST) ? (0, r.jsx)(y.Z, {
+  }), Y = () => null != s && (m === j.vQ.USER_PROFILE_WISHLIST || m === j.vQ.DM_CHANNEL_WISHLIST) ? (0, r.jsx)(b.Z, {
     giftRecipient: s
   }) : (0, r.jsx)(u.A, {
-    selectedSkuId: A,
+    selectedSkuId: v,
     validateSelectedGift: F,
     recipients: R
   }), W = e => {
@@ -192,8 +192,8 @@ let W = e => {
           })
         }), (0, r.jsxs)("div", {
           className: U.vz,
-          children: [null != I && (0, r.jsx)(w.Q, {
-            application: I
+          children: [null != S && (0, r.jsx)(w.Q, {
+            application: S
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/semibold",
             children: x.name

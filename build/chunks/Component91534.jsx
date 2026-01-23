@@ -2,7 +2,7 @@
 /** chunk id: 91534, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => N
+  A: () => E
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -23,7 +23,7 @@ var Chunk627968 = require("./627968.js"),
 require("./823894.js");
 var Chunk985018 = require("./985018.jsx"),
   Chunk729168 = require("./729168.js");
-let y = {
+let O = {
     page: Chunk652215.liQ.GUILD_SETTINGS,
     section: Chunk652215.JJy.GUILD_SETTINGS_STICKERS,
     object: Chunk652215.ZSU.BOOSTING_BANNER
@@ -33,42 +33,42 @@ let y = {
       guild: t
     } = e, {
       analyticsLocations: n
-    } = (0, a.Ay)(), i = (0, u.A)(t.id).available, s = h.M2T[h.TVA.TIER_1] - i;
+    } = (0, a.Ay)(), i = (0, u.A)(t.id).available, s = x.M2T[x.TVA.TIER_1] - i;
     return (0, r.jsxs)("div", {
-      className: O.Zj,
+      className: _.Zj,
       children: [(0, r.jsx)(l.Heading, {
-        className: O.$P,
+        className: _.$P,
         variant: "heading-xl/semibold",
         children: j.intl.string(j.t.hzCkyg)
       }), (0, r.jsx)(l.Text, {
-        className: O.GR,
+        className: _.GR,
         variant: "text-md/normal",
         children: j.intl.string(j.t.jcesAE)
       }), (0, r.jsxs)(l.ButtonGroup, {
-        className: O.JO,
+        className: _.JO,
         children: [(0, r.jsx)(l.Button, {
           variant: "overlay-primary",
           text: j.intl.string(j.t.Q5dbTi),
           onClick: () => (0, d.A)({
             analyticsLocations: n,
-            analyticsLocation: y,
+            analyticsLocation: O,
             guildId: t.id,
             totalNumberOfSlotsToAssign: s
           })
         }), (0, r.jsx)(l.Button, {
           variant: "overlay-primary",
           text: j.intl.string(j.t.hvVgAZ),
-          onClick: () => (0, c.K)({
+          onClick: () => (0, o.K)({
             guildId: t.id,
             location: {
-              section: h.JJy.GUILD_SETTINGS_STICKERS
+              section: x.JJy.GUILD_SETTINGS_STICKERS
             }
           })
         })]
       })]
     })
   },
-  A = () => (0, r.jsxs)(l.BJc, {
+  y = () => (0, r.jsxs)(l.BJc, {
     gap: 8,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-md/medium",
@@ -76,57 +76,57 @@ let y = {
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: j.intl.format(j.t.hxLviw, {
-        fileSize: (0, b.up)(524288, {
+        fileSize: (0, p.up)(524288, {
           useKibibytes: true
         })
       })
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: j.intl.format(j.t.UBj0aX, {
-        articleUrl: p.A.getArticleURL(h.MVz.STICKERS_UPLOAD)
+        articleUrl: b.A.getArticleURL(x.MVz.STICKERS_UPLOAD)
       })
     })]
   }),
-  E = e => {
+  A = e => {
     let t, n, i, {
         guild: l,
         guildStickers: s
       } = e,
       a = l.premiumTier,
-      c = (0, m.yA)(s, a),
-      d = (0, m.ax)(a),
-      u = (0, m.aG)(a),
-      f = s.length;
-    return null == d || a === h.TVA.TIER_3 || c > 0 ? null : (f > u ? (t = j.intl.formatToPlainString(j.t.ZtAY1f, {
+      o = (0, f.yA)(s, a),
+      d = (0, f.ax)(a),
+      u = (0, f.aG)(a),
+      g = s.length;
+    return null == d || a === x.TVA.TIER_3 || o > 0 ? null : (g > u ? (t = j.intl.formatToPlainString(j.t.ZtAY1f, {
       level: d
     }), n = j.intl.formatToPlainString(j.t["13hOWm"], {
       level: d
-    }), i = h.ZSU.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = j.intl.string(j.t.zT9SxY), n = j.intl.formatToPlainString(j.t.YaW9wI, {
+    }), i = x.ZSU.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = j.intl.string(j.t.zT9SxY), n = j.intl.formatToPlainString(j.t.YaW9wI, {
       level: d,
-      numAdditional: (0, m.Cp)(d)
-    }), i = h.ZSU.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(o.A, {
+      numAdditional: (0, f.Cp)(d)
+    }), i = x.ZSU.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(c.A, {
       header: t,
       text: n,
       guild: l,
       analyticsLocation: {
-        page: h.liQ.GUILD_SETTINGS,
-        section: h.JJy.GUILD_SETTINGS_STICKERS,
+        page: x.liQ.GUILD_SETTINGS,
+        section: x.JJy.GUILD_SETTINGS_STICKERS,
         object: i,
-        objectType: (0, m.k1)(d)
+        objectType: (0, f.k1)(d)
       }
     }))
   },
-  N = () => {
-    let e = (0, i.bG)([x.A], () => x.A.getGuild()),
-      t = (0, i.bG)([f.A], () => {
+  E = () => {
+    let e = (0, i.bG)([h.A], () => h.A.getGuild()),
+      t = (0, i.bG)([g.A], () => {
         var t;
-        return null != e && null != (t = f.A.getStickersByGuildId(e.id)) ? t : []
+        return null != e && null != (t = g.A.getStickersByGuildId(e.id)) ? t : []
       }, [e]),
       {
         analyticsLocations: n
       } = (0, a.Ay)(s.A.STICKERS);
     if (null == e) return null;
-    let c = e.premiumTier !== h.TVA.NONE || t.length > 0;
+    let o = e.premiumTier !== x.TVA.NONE || t.length > 0;
     return (0, r.jsx)(a.f5, {
       value: n,
       children: (0, r.jsxs)(l.BJc, {
@@ -134,16 +134,16 @@ let y = {
         children: [(0, r.jsx)(l.Heading, {
           variant: "heading-lg/semibold",
           children: j.intl.string(j.t.R5nQkS)
-        }), c ? (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(E, {
+        }), o ? (0, r.jsxs)("div", {
+          children: [(0, r.jsx)(A, {
             guild: e,
             guildStickers: t
-          }), (0, r.jsx)(A, {})]
+          }), (0, r.jsx)(y, {})]
         }) : (0, r.jsx)(v, {
           guild: e
         }), (0, r.jsx)(l.cGx, {
-          className: O.yF
-        }), (0, r.jsx)(g.A, {
+          className: _.yF
+        }), (0, r.jsx)(m.A, {
           guild: e
         })]
       })

@@ -21,44 +21,44 @@ function p(e, t) {
     type: m,
     withMutualGuilds: g = false,
     withMutualFriendsCount: E = false,
-    withMutualFriends: b = false,
-    dispatchWait: y = false,
+    withMutualFriends: y = false,
+    dispatchWait: b = false,
     waitForRefetch: O = true,
-    guildId: A,
-    channelId: v,
-    joinRequestId: S,
-    abortSignal: I
+    guildId: v,
+    channelId: A,
+    joinRequestId: I,
+    abortSignal: S
   } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
-  if ("" === e || u.A.isFetchingProfile(e, A)) return Promise.resolve();
+  if ("" === e || u.A.isFetchingProfile(e, v)) return Promise.resolve();
   let T = u.A.getUserProfile(e),
     C = Date.now() - (null != (n = null == T ? true : T.fetchEndedAt) ? n : 0) >= f;
   if (((null == T || null == (p = T.fetchError) ? true : p.status) === 404 || (null == T || null == (_ = T.fetchError) ? true : _.status) === 429) && !C) return Promise.resolve();
-  let N = u.A.getGuildMemberProfile(e, A),
+  let N = u.A.getGuildMemberProfile(e, v),
     R = u.A.getMutualGuilds(e),
     w = u.A.getMutualFriends(e),
     P = u.A.getMutualFriendsCount(e),
-    D = null == w && b,
+    D = null == w && y,
     x = null == P && E,
     L = null == R && g || D || x,
-    j = null == A ? null == T : null == N,
+    j = null == v ? null == T : null == N,
     M = !j && (C || L);
   if (!j && !M) return Promise.resolve();
-  let k = null != A ? null == N ? true : N.profileEffect : null == T ? true : T.profileEffect;
+  let k = null != v ? null == N ? true : N.profileEffect : null == T ? true : T.profileEffect;
   null != k && (0, s.RE)(k.skuId), null != t && (0, a.l0)(t);
   let U = {
     type: m,
     withMutualGuilds: g,
-    withMutualFriends: b,
+    withMutualFriends: y,
     withMutualFriendsCount: E,
-    guildId: A,
-    joinRequestId: S,
-    abortSignal: I,
-    connectionsRoleId: null == A || null == (h = (0, o._g)({
-      guildMember: c.Ay.getMember(A, e),
-      channel: l.A.getChannel(v)
+    guildId: v,
+    joinRequestId: I,
+    abortSignal: S,
+    connectionsRoleId: null == v || null == (h = (0, o._g)({
+      guildMember: c.Ay.getMember(v, e),
+      channel: l.A.getChannel(A)
     })) ? true : h.id
   };
-  if (y) return r.h.wait(() => (0, i.eO)(e, U, d.A)), Promise.resolve();
+  if (b) return r.h.wait(() => (0, i.eO)(e, U, d.A)), Promise.resolve();
   let G = (0, i.eO)(e, U, d.A);
   return M && !O ? Promise.resolve() : G
 }

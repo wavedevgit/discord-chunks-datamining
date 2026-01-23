@@ -1,5 +1,5 @@
 /** Chunk was on 71138 **/
-/** chunk id: 820931, original params: e,t,n (module,exports,require) **/
+/** chunk id: 820931, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   A: () => o
 });
@@ -12,20 +12,20 @@ var Chunk311907 = require("./311907.js"),
 let o = Chunk311907.Ay.connectStores([Chunk412780.Ay], e => {
   let {
     context: t,
-    index: n
-  } = e, r = i.Ay.getAllStats(t)[n];
+    index: r
+  } = e, n = i.Ay.getAllStats(t)[r];
   return {
-    outbound: null != r ? r.rtp.outbound : null
+    outbound: null != n ? n.rtp.outbound : null
   }
 })(function(e) {
   let {
     outbound: t,
-    context: n,
+    context: r,
     index: a
   } = e;
-  return (0, r.jsx)(l.HI, {
+  return (0, n.jsx)(l.HI, {
     streams: t,
-    context: n,
+    context: r,
     index: a,
     title: s.intl.string(s.t["3u0gII"]),
     showUserInfo: false,

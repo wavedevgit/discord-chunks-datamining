@@ -1,7 +1,7 @@
 /** Chunk was on 76443 **/
 /** chunk id: 380334, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  T: () => b
+  T: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,7 +17,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk910200 = require("./910200.js");
 let g = 6 * Chunk927813.A.Millis.SECOND;
 
-function f(e) {
+function b(e) {
   let {
     emoji: t,
     guildId: n
@@ -53,14 +53,14 @@ function f(e) {
   })
 }
 
-function b(e) {
+function f(e) {
   let {
     emoji: t,
     guildId: n
   } = e;
   (0, s.showToast)((0, s.createToast)("", s.ToastType.CUSTOM, {
     position: s.ToastPosition.TOP,
-    component: (0, l.jsx)(f, {
+    component: (0, l.jsx)(b, {
       emoji: t,
       guildId: n
     }),

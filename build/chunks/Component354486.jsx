@@ -2,7 +2,7 @@
 /** chunk id: 354486, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A,
-  l: () => _
+  l: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,37 +22,37 @@ var Chunk627968 = require("./627968.js"),
   Chunk64924 = require("./64924.js");
 let v = Chunk927813.A.Millis.HOUR,
   j = Chunk927813.A.Millis.DAY,
-  y = 4 * Chunk927813.A.Millis.DAY;
+  _ = 4 * Chunk927813.A.Millis.DAY;
 
-function _() {
+function y() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     {
       shouldShow: t = true
     } = e,
     [n, a] = l.useState(Date.now()),
-    s = (0, i.bG)([u.A], () => u.A.hasLayers()),
-    c = (0, i.bG)([m.A], () => m.A.getStatus()),
+    s = (0, r.bG)([u.A], () => u.A.hasLayers()),
+    c = (0, r.bG)([m.A], () => m.A.getStatus()),
     p = d._6.useSetting(),
-    b = (null == p ? true : p.value) != null ? Number(p.value) : null,
-    g = d.CY.useSetting(),
-    _ = c === x.cl.DND && null != b && n - b > j && "0" === g,
+    f = (null == p ? true : p.value) != null ? Number(p.value) : null,
+    b = d.CY.useSetting(),
+    y = c === g.cl.DND && null != f && n - f > j && "0" === b,
     {
       enabled: A
     } = (0, h.k)({
       location: "useDoNotDisturbReminderPopoverDismissibleContent",
-      autoTrackExposure: _,
-      disable: !_
+      autoTrackExposure: y,
+      disable: !y
     });
   return l.useEffect(() => {
-    if (c === x.cl.DND) {
+    if (c === g.cl.DND) {
       a(Date.now());
       let e = setInterval(() => a(Date.now()), v);
       return () => clearInterval(e)
     }
-  }, [c]), (0, o.Wl)(A && !s && t ? r.M.DO_NOT_DISTURB_REMINDER_POPOVER : null, {
-    cooldownDurationMs: y,
+  }, [c]), (0, o.Wl)(A && !s && t ? i.M.DO_NOT_DISTURB_REMINDER_POPOVER : null, {
+    cooldownDurationMs: _,
     numTimesToRecur: 2
-  }, f.m.ACCOUNT_NAME_ZONE, true)
+  }, x.m.ACCOUNT_NAME_ZONE, true)
 }
 
 function A(e) {
@@ -61,35 +61,35 @@ function A(e) {
     onDismiss: n,
     children: l
   } = e, {
-    enabled: i,
-    titleText: r,
+    enabled: r,
+    titleText: i,
     bodyText: o
   } = (0, h.k)({
     location: "popover",
     autoTrackExposure: false
   });
-  return null != t.current && i ? (0, a.jsxs)(a.Fragment, {
+  return null != t.current && r ? (0, a.jsxs)(a.Fragment, {
     children: [l, (0, a.jsx)(s.AM, {
       targetElementRef: t,
-      title: b.intl.string(r),
-      body: b.intl.string(o),
+      title: f.intl.string(i),
+      body: f.intl.string(o),
       caretConfig: {
         align: "start"
       },
       gradientColor: "purple",
       actions: [{
-        text: b.intl.string(b.t.fwPurU),
+        text: f.intl.string(f.t.fwPurU),
         onClick: () => {
           (0, c.A)({
-            nextStatus: x.cl.ONLINE
-          }), null == n || n(f.i.PRIMARY)
+            nextStatus: g.cl.ONLINE
+          }), null == n || n(x.i.PRIMARY)
         }
       }],
       graphic: {
         type: "image",
-        src: g
+        src: b
       },
-      onRequestClose: () => null == n ? true : n(f.i.DISMISS)
+      onRequestClose: () => null == n ? true : n(x.i.DISMISS)
     })]
   }) : l
 }

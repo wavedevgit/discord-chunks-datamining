@@ -18,12 +18,12 @@ function u(e) {
     label: t,
     description: n,
     guildId: u,
-    guildMetadata: f,
-    isDisabled: g,
-    clearable: b = true
-  } = e, m = (0, l.yK)([c.A], () => c.A.getPrimaryCategories()), p = i.useCallback(e => {
-    (0, a.GX)(u, null != e ? e : o.ig)
-  }, [u]), x = i.useMemo(() => m.map(e => {
+    guildMetadata: g,
+    isDisabled: m,
+    clearable: p = true
+  } = e, f = (0, l.yK)([o.A], () => o.A.getPrimaryCategories()), b = i.useCallback(e => {
+    (0, a.GX)(u, null != e ? e : c.ig)
+  }, [u]), h = i.useMemo(() => f.map(e => {
     let {
       categoryId: t,
       name: n
@@ -33,16 +33,16 @@ function u(e) {
       value: t,
       label: n
     }
-  }), [m]);
-  return 0 === m.length ? (0, r.jsx)(s.y$y, {}) : (0, r.jsx)(s.ZiE, {
+  }), [f]);
+  return 0 === f.length ? (0, r.jsx)(s.y$y, {}) : (0, r.jsx)(s.ZiE, {
     selectionMode: "single",
-    value: f.primaryCategoryId === o.ig ? null : f.primaryCategoryId,
+    value: g.primaryCategoryId === c.ig ? null : g.primaryCategoryId,
     label: t,
     description: n,
     placeholder: d.intl.string(d.t.XqMe3N),
-    options: x,
-    onSelectionChange: p,
-    disabled: g,
-    clearable: b
-  }, x.length)
+    options: h,
+    onSelectionChange: b,
+    disabled: m,
+    clearable: p
+  }, h.length)
 }

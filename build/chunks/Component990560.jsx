@@ -72,7 +72,7 @@ function N(e) {
         context: N("Invite Button Embed")
       })
     },
-    G = (0, r.jsx)(A.A, {
+    G = (0, r.jsx)(v.A, {
       onTransitionToInviteChannel: k,
       onAcceptInstantInvite: U,
       currentUserId: j,
@@ -82,18 +82,18 @@ function N(e) {
     });
   switch (D.state) {
     case C.elq.RESOLVING:
-      G = (0, r.jsx)(I.A, {});
+      G = (0, r.jsx)(S.A, {});
       break;
     case C.elq.EXPIRED:
     case C.elq.BANNED:
-      G = (0, r.jsx)(S.A, {
+      G = (0, r.jsx)(I.A, {
         banned: D.state === C.elq.BANNED,
         author: n.author,
         channelId: n.channel_id
       });
       break;
     case C.elq.ERROR:
-      G = (0, r.jsx)(b.A, {
+      G = (0, r.jsx)(y.A, {
         author: n.author,
         inviteError: w
       });
@@ -110,7 +110,7 @@ function N(e) {
           });
           break;
         case f.Xd.FRIEND:
-          G = (0, r.jsx)(y.A, {
+          G = (0, r.jsx)(b.A, {
             invite: D,
             message: n,
             getAcceptInviteContext: N
@@ -146,7 +146,7 @@ function N(e) {
               message: n
             });
             break
-          }(0, c.v)(D) && (G = (0, r.jsx)(v.A, {
+          }(0, c.v)(D) && (G = (0, r.jsx)(A.A, {
             onTransitionToInviteChannel: k,
             onAcceptInstantInvite: U,
             isMemberOfGuild: null != L,

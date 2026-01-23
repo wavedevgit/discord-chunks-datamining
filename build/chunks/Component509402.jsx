@@ -14,7 +14,7 @@ function a(e) {
     height: i = 24,
     color: s = "currentColor",
     foreground: o
-  } = e, c = function(e, t) {
+  } = e, u = function(e, t) {
     if (null == e) return {};
     var n, l, r, a = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -48,7 +48,7 @@ function a(e) {
       })
     }
     return e
-  }({}, (0, r.A)(c)), n = n = {
+  }({}, (0, r.A)(u)), n = n = {
     width: a,
     height: i,
     viewBox: "0 0 24 24",

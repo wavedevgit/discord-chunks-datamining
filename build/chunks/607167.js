@@ -99,7 +99,7 @@ if (Chunk593858) {
   }) || Chunk503628(function() {
     return new M, new M(1.5), new M(NaN), 1 !== M.length || er && !C
   }) ? ((k = function(e) {
-    return f(this, U), A(new M(h(e)), this, k)
+    return f(this, U), v(new M(h(e)), this, k)
   })[w] = U, U.constructor = k, Chunk517771(k, M)) : er && C && Chunk706938(M, "name", N), Chunk458680 && Chunk42756(V) !== F && Chunk458680(V, F);
   var ei = new G(new k(2)),
     ea = Chunk410323(V.setInt8);

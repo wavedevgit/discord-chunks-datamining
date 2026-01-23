@@ -1,7 +1,7 @@
 /** Chunk was on 21968 **/
 /** chunk id: 971157, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => w
+  A: () => T
 }), require("./896048.js"), require("./321073.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,7 +26,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk882441 = require("./882441.js");
 
-function E(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -45,7 +45,7 @@ function E(e) {
   return e
 }
 
-function T(e) {
+function w(e) {
   var t, n;
   let {
     application: r,
@@ -68,7 +68,7 @@ function T(e) {
       for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) i = n[r], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (l[i] = e[i]);
     return l
   }(e, ["application", "guild", "integration"]);
-  return (0, i.jsx)(a.ConfirmModal, (t = E({}, o), n = n = {
+  return (0, i.jsx)(a.ConfirmModal, (t = N({}, o), n = n = {
     title: v.intl.formatToPlainString(v.t["rL9d/1"], {
       applicationName: r.name
     }),
@@ -96,44 +96,44 @@ function T(e) {
   }), t))
 }
 
-function w(e) {
+function T(e) {
   let {
     guild: t,
     applicationIntegration: n,
     selectableWebhookChannels: a,
     editedWebhook: c,
     errors: u,
-    canNavigate: w
+    canNavigate: T
   } = e, {
-    application: C,
-    integration: S,
-    webhooks: _
-  } = n, [I, P] = (0, s.yK)([p.A], () => [p.A.can(A.xBc.MANAGE_ROLES, t), null == C.bot || p.A.canManageUser(A.xBc.MANAGE_GUILD, C.bot.id, t)], [C.bot, t]), k = (0, s.bG)([p.A], () => p.A.can(A.xBc.MANAGE_WEBHOOKS, t), [t]), R = r.useCallback(() => {
-    w() && (0, o.qfG)(e => (0, i.jsx)(T, E({
+    application: E,
+    integration: C,
+    webhooks: S
+  } = n, [I, P] = (0, s.yK)([g.A], () => [g.A.can(A.xBc.MANAGE_ROLES, t), null == E.bot || g.A.canManageUser(A.xBc.MANAGE_GUILD, E.bot.id, t)], [E.bot, t]), k = (0, s.bG)([g.A], () => g.A.can(A.xBc.MANAGE_WEBHOOKS, t), [t]), R = r.useCallback(() => {
+    T() && (0, o.qfG)(e => (0, i.jsx)(w, N({
       guild: t,
-      application: C,
-      integration: S
+      application: E,
+      integration: C
     }, e)))
-  }, [C, w, t, S]), L = r.useMemo(() => {
+  }, [E, T, t, C]), L = r.useMemo(() => {
     let e = [{
       icon: o.O4,
       text: v.intl.formatToPlainString(v.t.gcdJ8J, {
-        timestamp: g.default.extractTimestamp(S.id)
+        timestamp: f.default.extractTimestamp(C.id)
       })
     }];
-    return null != S.user && e.push({
+    return null != C.user && e.push({
       icon: o.nys,
       text: v.intl.formatToPlainString(v.t.qE7oqs, {
-        user: h.Ay.getUserTag(S.user)
+        user: h.Ay.getUserTag(C.user)
       })
     }), e
-  }, [S.id, S.user]), M = r.useMemo(() => {
+  }, [C.id, C.user]), D = r.useMemo(() => {
     var e;
-    return null != C.bot && (null == (e = S.scopes) ? true : e.includes(l.F.BOT)) ? (0, i.jsx)(O.A, {
+    return null != E.bot && (null == (e = C.scopes) ? true : e.includes(l.F.BOT)) ? (0, i.jsx)(O.A, {
       guild: t,
       applicationIntegration: n
     }) : (0, i.jsx)(o.ZpM, {
-      className: N.aM,
+      className: _.aM,
       editable: true,
       children: (0, i.jsx)(o.Text, {
         color: "text-muted",
@@ -141,51 +141,51 @@ function w(e) {
         children: v.intl.string(v.t.pfLnza)
       })
     })
-  }, [C.bot, n, t, S.scopes]);
+  }, [E.bot, n, t, C.scopes]);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(x.A, {
-      name: C.name,
-      imageSrc: m.Ay.getApplicationIconURL({
-        id: C.id,
-        icon: C.icon,
+      name: E.name,
+      imageSrc: b.Ay.getApplicationIconURL({
+        id: E.id,
+        icon: E.icon,
         size: 32
       }),
       details: L,
       isHeader: true
-    }), (null == C ? true : C.description) != null ? (0, i.jsx)(f.A, {
-      userBio: C.description,
-      className: N.ux
-    }) : null, I ? (0, i.jsx)(b.A, {
-      application: C,
-      canNavigate: w,
+    }), (null == E ? true : E.description) != null ? (0, i.jsx)(m.A, {
+      userBio: E.description,
+      className: _.ux
+    }) : null, I ? (0, i.jsx)(p.A, {
+      application: E,
+      canNavigate: T,
       guildId: t.id
     }) : null, (0, i.jsx)(o.cGx, {
-      className: N.zN
-    }), null != C.bot ? (0, i.jsxs)("div", {
-      className: N.uW,
+      className: _.zN
+    }), null != E.bot ? (0, i.jsxs)("div", {
+      className: _.uW,
       children: [(0, i.jsx)(j.A, {
         icon: (0, i.jsx)(o.CnV, {
           size: "xs",
           color: "currentColor"
         }),
         title: v.intl.string(v.t.AOdOYr)
-      }), M]
+      }), D]
     }) : null, (0, i.jsxs)("div", {
-      className: N.uW,
+      className: _.uW,
       children: [(0, i.jsx)(j.A, {
         icon: (0, i.jsx)(o.XC7, {
           size: "md",
           color: "currentColor"
         }),
         title: v.intl.string(v.t["t9ZX/I"])
-      }), _.length > 0 ? (0, i.jsx)(y.A, {
-        webhooks: _,
+      }), S.length > 0 ? (0, i.jsx)(y.A, {
+        webhooks: S,
         editedWebhook: c,
         selectableWebhookChannels: a,
         errors: u,
-        canNavigate: w
+        canNavigate: T
       }) : (0, i.jsx)(o.ZpM, {
-        className: N.aM,
+        className: _.aM,
         editable: true,
         children: (0, i.jsx)(o.Text, {
           color: "text-muted",
@@ -194,9 +194,9 @@ function w(e) {
         })
       })]
     }), (0, i.jsx)(o.cGx, {
-      className: N.zN
+      className: _.zN
     }), (0, i.jsxs)(d.A, {
-      className: N.uW,
+      className: _.uW,
       justify: d.A.Justify.BETWEEN,
       align: d.A.Align.CENTER,
       children: [(0, i.jsx)(o.Text, {

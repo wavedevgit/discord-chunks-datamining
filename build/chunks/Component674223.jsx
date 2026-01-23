@@ -25,7 +25,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk402671 = require("./402671.js");
 let O = {
   key: Chunk166532.pn.GIFT_CUSTOMIZATION,
-  renderStep: e => (0, l.jsx)(A, function(e) {
+  renderStep: e => (0, l.jsx)(k, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
         l = Object.keys(t);
@@ -45,7 +45,7 @@ let O = {
   }({}, e)),
   options: {
     isLargeModal: true,
-    useBreadcrumbLabel: () => x.intl.string(x.t["W685+b"])
+    useBreadcrumbLabel: () => v.intl.string(v.t["W685+b"])
   }
 };
 
@@ -53,76 +53,76 @@ function P(e) {
   let {
     onStepChange: n,
     onBackClick: t,
-    showBackButton: i = false,
-    disabled: a = false,
-    loading: c = false
+    showBackButton: a = false,
+    disabled: r = false,
+    loading: s = false
   } = e, {
-    hasPaymentSources: s
-  } = (0, j.P5)(), o = s ? h.pn.REVIEW : h.pn.ADD_PAYMENT_STEPS;
+    hasPaymentSources: o
+  } = (0, j.P5)(), c = o ? h.pn.REVIEW : h.pn.ADD_PAYMENT_STEPS;
   return (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)(r.Button, {
-      onClick: () => n(o),
-      disabled: a,
-      loading: c,
-      text: x.intl.string(x.t.XiOHRX)
-    }), i ? (0, l.jsx)(d.A, {
+    children: [(0, l.jsx)(i.Button, {
+      onClick: () => n(c),
+      disabled: r,
+      loading: s,
+      text: v.intl.string(v.t.XiOHRX)
+    }), a ? (0, l.jsx)(u.A, {
       onClick: t
     }) : null]
   })
 }
 
-function A(e) {
+function k(e) {
   var n;
   let {
     handleStepChange: t,
-    handleClose: d
+    handleClose: u
   } = e, {
     customGiftMessage: h = "",
-    setCustomGiftMessage: x,
+    setCustomGiftMessage: v,
     giftRecipient: O
-  } = (0, g.Pv)(), {
-    selectedSkuId: A
-  } = (0, j.P5)(), k = (0, i.bG)([u.default], () => u.default.getCurrentUser()), T = (0, i.bG)([p.A], () => null != A ? p.A.get(A) : null, [A]), C = (0, c.A)(), E = (0, i.bG)([f.A], () => null != A ? f.A.getForSKU(A) : null, [A]), I = (null == E ? true : E.headerBackground) != null && (null == T ? true : T.applicationId) != null ? (0, b.YE)(T.applicationId, E.headerBackground, 256) : true, _ = async (e, n) => {};
+  } = (0, b.Pv)(), {
+    selectedSkuId: k
+  } = (0, j.P5)(), A = (0, a.bG)([d.default], () => d.default.getCurrentUser()), C = (0, a.bG)([p.A], () => null != k ? p.A.get(k) : null, [k]), T = (0, s.A)(), E = (0, a.bG)([f.A], () => null != k ? f.A.getForSKU(k) : null, [k]), I = (null == E ? true : E.headerBackground) != null && (null == C ? true : C.applicationId) != null ? (0, g.YE)(C.applicationId, E.headerBackground, 256) : true, _ = async (e, n) => {};
   return (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)(v.dZ, {
+    children: [(0, l.jsx)(m.dZ, {
       children: (0, l.jsxs)("div", {
-        className: y.Du,
+        className: x.Du,
         children: [(0, l.jsxs)("div", {
-          className: y.mT,
-          children: [(null == T ? true : T.name) != null && (0, l.jsx)(r.Heading, {
+          className: x.mT,
+          children: [(null == C ? true : C.name) != null && (0, l.jsx)(i.Heading, {
             variant: "heading-lg/semibold",
             color: "text-strong",
-            children: T.name
+            children: C.name
           }), null != I && (0, l.jsx)("img", {
             src: I,
-            alt: null != (n = null == T ? true : T.name) ? n : "",
-            className: y.LC
+            alt: null != (n = null == C ? true : C.name) ? n : "",
+            className: x.LC
           })]
         }), (0, l.jsxs)("div", {
-          className: y.Tc,
-          children: [(0, l.jsx)(a.A, {
-            recipients: C,
-            selectedSkuId: A,
+          className: x.Tc,
+          children: [(0, l.jsx)(r.A, {
+            recipients: T,
+            selectedSkuId: k,
             validateSelectedGift: _
-          }), (0, l.jsx)(o.A, {
-            onTextChange: e => null == x ? true : x(e),
+          }), (0, l.jsx)(c.A, {
+            onTextChange: e => null == v ? true : v(e),
             pendingText: h,
             currentText: h,
             disableThemedBackground: true,
-            className: y.iX,
-            innerClassName: y.pt
+            className: x.iX,
+            innerClassName: x.pt
           })]
         })]
       })
-    }), (0, l.jsx)(v.UX, {
-      children: (0, l.jsx)(r.jlY, {
+    }), (0, l.jsx)(m.UX, {
+      children: (0, l.jsx)(i.jlY, {
         "data-migration-pending": true,
-        justify: s.A.Justify.BETWEEN,
-        align: s.A.Align.CENTER,
+        justify: o.A.Justify.BETWEEN,
+        align: o.A.Align.CENTER,
         children: (0, l.jsx)(P, {
           onStepChange: t,
-          onBackClick: d,
-          disabled: null == O || O.id === (null == k ? true : k.id) || h.length > m.Jo
+          onBackClick: u,
+          disabled: null == O || O.id === (null == A ? true : A.id) || h.length > y.Jo
         })
       })
     })]

@@ -1,5 +1,5 @@
 /** Chunk was on 20601 **/
-/** chunk id: 942658, original params: e,t,l (module,exports,require) **/
+/** chunk id: 942658, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B: () => a
 });
@@ -12,13 +12,13 @@ function a(e) {
   let {
     guildId: t
   } = e;
-  return (0, n.bG)([s.A, r.A], () => {
+  return (0, l.bG)([i.A, r.A], () => {
     var e;
-    let l = s.A.get(t),
-      n = null == l ? true : l.guild,
+    let n = i.A.get(t),
+      l = null == n ? true : n.guild,
       a = r.A.getGuild(t),
       o = null == a ? true : a.verificationLevel,
-      c = null == n ? true : n.verification_level;
-    return null != (e = null != o ? o : c) ? e : i.PvD.NONE
+      c = null == l ? true : l.verification_level;
+    return null != (e = null != o ? o : c) ? e : s.PvD.NONE
   }, [t])
 }

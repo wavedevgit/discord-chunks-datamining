@@ -5,33 +5,33 @@ require.d(exports, {
 });
 var n, i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
-let d = {
+let s = {
   canPlayWowMoment: false,
   isFetchingWowMomentMedia: false,
   wowMomentWumpusMediaUrl: null
 };
-class s extends(i = Chunk311907.Ay.Store) {
+class d extends(i = Chunk311907.Ay.Store) {
   getState() {
-    return d
+    return s
   }
   get canPlayWowMoment() {
-    return d.canPlayWowMoment
+    return s.canPlayWowMoment
   }
   get isFetchingWowMomentMedia() {
-    return d.isFetchingWowMomentMedia
+    return s.isFetchingWowMomentMedia
   }
   get wowMomentWumpusMedia() {
-    return d.wowMomentWumpusMediaUrl
+    return s.wowMomentWumpusMediaUrl
   }
-}(n = "displayName") in s ? Object.defineProperty(s, n, {
+}(n = "displayName") in d ? Object.defineProperty(d, n, {
   value: "PurchasedItemsFestivityStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : s[n] = "PurchasedItemsFestivityStore";
-let M = new s(Chunk73153.h, {
+}) : d[n] = "PurchasedItemsFestivityStore";
+let M = new d(Chunk73153.h, {
   LOGOUT: function() {
-    d = {
+    s = {
       canPlayWowMoment: false,
       isFetchingWowMomentMedia: false,
       wowMomentWumpusMediaUrl: null
@@ -41,18 +41,18 @@ let M = new s(Chunk73153.h, {
     let {
       value: t
     } = e;
-    d.canPlayWowMoment = t
+    s.canPlayWowMoment = t
   },
   PURCHASED_ITEMS_FESTIVITY_IS_FETCHING_WOW_MOMENT_MEDIA: function() {
-    d.isFetchingWowMomentMedia = true
+    s.isFetchingWowMomentMedia = true
   },
   PURCHASED_ITEMS_FESTIVITY_FETCH_WOW_MOMENT_MEDIA_SUCCESS: function(e) {
     let {
       wumpusMedia: t
     } = e;
-    d.wowMomentWumpusMediaUrl = t, d.isFetchingWowMomentMedia = false
+    s.wowMomentWumpusMediaUrl = t, s.isFetchingWowMomentMedia = false
   },
   PURCHASED_ITEMS_FESTIVITY_FETCH_WOW_MOMENT_MEDIA_FAILURE: function() {
-    d.isFetchingWowMomentMedia = false, d.canPlayWowMoment = false
+    s.isFetchingWowMomentMedia = false, s.canPlayWowMoment = false
   }
 })

@@ -1,7 +1,7 @@
 /** Chunk was on 94503 **/
 /** chunk id: 295191, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => I
+  A: () => O
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,7 +19,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk486974 = require("./486974.js"),
   Chunk652215 = require("./652215.js");
 
-function h(e, t) {
+function I(e, t) {
   return n => {
     if (0 === n) return "auto";
     let l = "forwards" === t.current,
@@ -29,29 +29,29 @@ function h(e, t) {
   }
 }
 
-function I(e) {
+function O(e) {
   var t;
   let {
     userId: n,
-    guildId: I,
-    onClose: O,
+    guildId: O,
+    onClose: m,
     analyticsLocation: N,
-    className: m
-  } = e, S = (0, s.bG)([E.Ay], () => E.Ay.getGuildSidebarState(I), [I]), p = null != (t = null == S ? true : S.details.modViewPanel) ? t : T.g.INFO, b = (0, c.A)(n), G = null == p ? null : p === T.g.INFO ? "backwards" : "forwards", R = (0, i.A)(G), {
-    reducedMotion: D
+    className: f
+  } = e, p = (0, s.bG)([E.Ay], () => E.Ay.getGuildSidebarState(O), [O]), S = null != (t = null == p ? true : p.details.modViewPanel) ? t : T.g.INFO, G = (0, u.A)(n), R = null == S ? null : S === T.g.INFO ? "backwards" : "forwards", D = (0, i.A)(R), {
+    reducedMotion: C
   } = r.useContext(o.CZY), L = r.useCallback(e => {
-    null != S && (0, d.z)(I, n, S.baseChannelId, {
+    null != p && (0, d.z)(O, n, p.baseChannelId, {
       modViewPanel: e
     })
-  }, [S, I, n]), x = r.useMemo(() => ({
-    [f.IWg.CLOSE_MODAL]: {
+  }, [p, O, n]), b = r.useMemo(() => ({
+    [h.IWg.CLOSE_MODAL]: {
       binds: ["esc"],
       comboKeysBindGlobal: true,
-      action: () => p === T.g.INFO ? O() : L(T.g.INFO)
+      action: () => S === T.g.INFO ? m() : L(T.g.INFO)
     }
-  }), [O, p, L]);
-  r.useEffect(() => (u.A.enable(), u.A.enableTemp(x), () => u.A.disableTemp()), [x]);
-  let C = (0, o.pnh)(p, {
+  }), [m, S, L]);
+  r.useEffect(() => (c.A.enable(), c.A.enableTemp(b), () => c.A.disableTemp()), [b]);
+  let x = (0, o.pnh)(S, {
     value: 0,
     from: {
       value: 1
@@ -62,7 +62,7 @@ function I(e) {
     leave: {
       value: false
     }
-  }, b !== n ? "animate-never" : "animate-always");
+  }, G !== n ? "animate-never" : "animate-always");
   return (0, l.jsx)(a.animated.div, {
     style: {
       position: "relative",
@@ -70,10 +70,10 @@ function I(e) {
       flex: 1,
       overflow: "hidden"
     },
-    children: C((e, t, r) => {
+    children: x((e, t, r) => {
       var i, s, o;
       let {
-        key: c
+        key: u
       } = r;
       return (0, l.jsx)(a.animated.div, {
         style: function(e) {
@@ -100,40 +100,40 @@ function I(e) {
           backfaceVisibility: "hidden",
           width: "100%",
           height: "100%"
-        }, D.enabled ? {
+        }, C.enabled ? {
           opacity: null == (i = e.value) ? true : i.to(e => 1 - Math.abs(e))
         } : {
-          left: null == (s = e.value) ? true : s.to(h("left", R)),
-          right: null == (o = e.value) ? true : o.to(h("right", R))
+          left: null == (s = e.value) ? true : s.to(I("left", D)),
+          right: null == (o = e.value) ? true : o.to(I("right", D))
         }),
         children: function(e) {
           switch (e) {
             case T.g.INFO:
               return (0, l.jsx)(_.A, {
                 userId: n,
-                guildId: I,
+                guildId: O,
                 onNavigate: L,
-                className: m
+                className: f
               });
             case T.g.MESSAGE_HISTORY:
               return (0, l.jsx)(g.A, {
                 userId: n,
-                guildId: I,
+                guildId: O,
                 onNavigate: () => L(T.g.INFO),
-                className: m
+                className: f
               });
             case T.g.PERMISSIONS:
               return (0, l.jsx)(A.A, {
                 userId: n,
-                guildId: I,
+                guildId: O,
                 onNavigate: () => L(T.g.INFO),
-                className: m
+                className: f
               });
             default:
               return null
           }
         }(t)
-      }, c)
+      }, u)
     })
   })
 }

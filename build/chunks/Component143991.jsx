@@ -37,7 +37,7 @@ function x(e, t, n, r) {
       l = new a.ru(e, () => {
         let e = t(),
           l = n(i, e);
-        null == l || y.A.isSoundDisabled(l) || (0, f.Ak)(l, null != r ? r : .4), i = e
+        null == l || y.A.isSoundDisabled(l) || (0, h.Ak)(l, null != r ? r : .4), i = e
       });
     return l.attach("useSound"), () => l.detach()
   })
@@ -72,7 +72,7 @@ function w() {
       videoEnabled: n,
       inVoiceChannel: r
     } = t;
-    if (!(0, h.q)()) return;
+    if (!(0, g.q)()) return;
     let {
       videoEnabled: i,
       inVoiceChannel: l
@@ -82,8 +82,8 @@ function w() {
 }
 
 function L() {
-  return x([_.A, I.A, v.A, u.default], () => {
-    let e = _.A.getChannel(v.A.getVoiceChannelId()),
+  return x([b.A, I.A, v.A, u.default], () => {
+    let e = b.A.getChannel(v.A.getVoiceChannelId()),
       t = null == e ? true : e.type,
       n = null == e ? true : e.getGuildId(),
       r = I.A.getWasEverRtcConnected(),
@@ -105,11 +105,11 @@ function L() {
       connectedRemote: a
     } = t, s = e.channelType, o = e.connectedRemote, c = e.connected;
     if (!e.connectHasStarted && i || a && !o) {
-      if (null != n && g.Do.has(n)) return;
+      if (null != n && m.Do.has(n)) return;
       return "user_join"
     }
     if (c && !r) {
-      if (l || a || null != s && g.Do.has(s)) return;
+      if (l || a || null != s && m.Do.has(s)) return;
       return "disconnect"
     }
   }), null
@@ -159,28 +159,28 @@ function U() {
 function G() {
   return x([v.A, C.A], () => {
     let e = v.A.getVoiceChannelId();
-    if (null == e) return A.zF.NONE;
+    if (null == e) return f.zF.NONE;
     let t = C.A.getVoiceStateForChannel(e);
-    return (0, A.eY)(t)
+    return (0, f.eY)(t)
   }, (e, t) => {
-    if (e !== t && t === A.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) return "reconnect"
+    if (e !== t && t === f.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) return "reconnect"
   }), null
 }
 
 function V() {
-  return x([v.A, m.A, b.default, C.A, _.A], () => {
+  return x([v.A, A.A, _.default, C.A, b.A], () => {
     let e, t, n = v.A.getVoiceChannelId(),
-      r = b.default.getId(),
+      r = _.default.getId(),
       i = [],
       l = null,
       a = 0,
-      s = m.A.getAllActiveStreams();
+      s = A.A.getAllActiveStreams();
     if (null != n) {
-      let r = _.A.getChannel(n);
-      null != r && (e = r.type, t = N.Ay.countVoiceStatesForChannel(r.id) - !!C.A.isInChannel(r.id), i = m.A.getAllApplicationStreamsForChannel(r.id).map(e => e.ownerId))
+      let r = b.A.getChannel(n);
+      null != r && (e = r.type, t = N.Ay.countVoiceStatesForChannel(r.id) - !!C.A.isInChannel(r.id), i = A.A.getAllApplicationStreamsForChannel(r.id).map(e => e.ownerId))
     }
     let o = null;
-    return (null == (o = 1 === s.length ? s[0] : m.A.getCurrentUserActiveStream()) ? true : o.state) === j.XYD.CONNECTING && (o = null), null != o && (l = (0, d._z)(o), a = m.A.getViewerIds(l).filter(e => e !== r).length), {
+    return (null == (o = 1 === s.length ? s[0] : A.A.getCurrentUserActiveStream()) ? true : o.state) === j.XYD.CONNECTING && (o = null), null != o && (l = (0, d._z)(o), a = A.A.getViewerIds(l).filter(e => e !== r).length), {
       channelType: e,
       voiceChannelId: n,
       voiceChannelUserCount: t,
@@ -201,13 +201,13 @@ function V() {
       currentUserId: o
     } = t;
     if (e.voiceChannelId !== r || null == r || function(e) {
-        let t = _.A.getChannel(e);
+        let t = b.A.getChannel(e);
         if (null == t) returnfalse;
         let n = t.getGuildId();
         if (null == n) returnfalse;
         let r = E.A.getGuild(n);
         return null != r && r.afkChannelId === t.id
-      }(r) || null != n && g.Do.has(n)) return;
+      }(r) || null != n && m.Do.has(n)) return;
     let c = null != a && e.singleActiveStreamKey === a,
       u = l.some(t => !e.streamingUserIds.includes(t)),
       d = e.allActiveStreams.map(e => e.ownerId),
@@ -222,12 +222,12 @@ function V() {
 }
 
 function B() {
-  return x([v.A, s.Ay, c.A, b.default], () => {
+  return x([v.A, s.Ay, c.A, _.default], () => {
     let e = v.A.getVoiceChannelId(),
       t = v.A.getChannelId(),
       n = s.Ay.getConnectedActivityLocation(),
       r = (0, o.H)(n),
-      i = b.default.getId(),
+      i = _.default.getId(),
       l = (0, T.Vq)(t) ? s.Ay.getEmbeddedActivitiesForChannel(t) : s.Am,
       a = (0, T.Vq)(e) ? s.Ay.getEmbeddedActivitiesForChannel(e) : s.Am,
       u = (0, T.Vq)(r) ? s.Ay.getEmbeddedActivitiesForChannel(r) : s.Am,

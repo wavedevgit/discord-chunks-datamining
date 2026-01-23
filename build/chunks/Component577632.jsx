@@ -43,24 +43,24 @@ let p = 1080,
       channel: d,
       idle: _,
       enableAnimations: h = true
-    } = e, m = t.find(e => e.claimedBy === n.userId), g = null != m, [E, b] = i.useState(false), y = (0, l.A)(n), {
+    } = e, m = t.find(e => e.claimedBy === n.userId), g = null != m, [E, y] = i.useState(false), b = (0, l.A)(n), {
       x: O,
-      y: A
+      y: v
     } = i.useMemo(() => {
       let e = f({}, n.position);
       if (g) {
         let t = o.dG[m.id - 1];
-        null != t && (e.x = t.x + t.player.x, e.y = t.y + t.player.y - y.height)
+        null != t && (e.x = t.x + t.player.x, e.y = t.y + t.player.y - b.height)
       }
       return e
-    }, [n.position, m, g, y]);
+    }, [n.position, m, g, b]);
     return (0, r.jsx)("div", {
       className: s()(u.Wp, {
         [u.lv]: E
       }),
       style: {
-        transform: "translate3d(".concat(O, "px, ").concat(A, "px, 0)"),
-        zIndex: A
+        transform: "translate3d(".concat(O, "px, ").concat(v, "px, 0)"),
+        zIndex: v
       },
       children: g && (0, r.jsx)("div", {
         className: u.my,
@@ -72,7 +72,7 @@ let p = 1080,
           channel: d,
           idle: _,
           flip: O > p,
-          handleHover: e => b(e),
+          handleHover: e => y(e),
           enableAnimations: h
         })
       })

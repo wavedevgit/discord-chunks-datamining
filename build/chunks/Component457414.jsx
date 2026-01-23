@@ -1,8 +1,8 @@
 /** Chunk was on 59275 **/
-/** chunk id: 457414, original params: e,t,l (module,exports,require) **/
+/** chunk id: 457414, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,60 +16,60 @@ var Chunk172218 = require("./172218.js"),
 
 function d(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var l = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(l);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(l, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = l[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
 }
-let f = e => {
+let g = e => {
   let {
     immersiveBannerBlock: t,
-    onVisibilityChange: l
-  } = e, f = (0, r.K)(e => {
-    null == l || l(e)
-  }, .33, null != l), {
-    bannerUrl: b,
-    bannerAnimatedUrl: g
+    onVisibilityChange: n
+  } = e, g = (0, l.K)(e => {
+    null == n || n(e)
+  }, .33, null != n), {
+    bannerUrl: f,
+    bannerAnimatedUrl: p
   } = (0, i.qY)(t), m = null != t.textColor ? {
     color: t.textColor
-  } : true, p = null != t.body && "" !== t.body, h = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
-  return (0, n.jsxs)("div", {
-    ref: f,
+  } : true, _ = null != t.body && "" !== t.body, b = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
+  return (0, r.jsxs)("div", {
+    ref: g,
     className: u.BX,
-    children: [(0, n.jsx)("div", {
+    children: [(0, r.jsx)("div", {
       className: u.vK,
-      children: null != b && (0, n.jsx)(o.A, {
-        bannerStatic: b,
-        bannerAnimated: g
+      children: null != f && (0, r.jsx)(o.A, {
+        bannerStatic: f,
+        bannerAnimated: p
       })
-    }), (0, n.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: u.HQ,
-      children: (0, n.jsxs)("div", {
+      children: (0, r.jsxs)("div", {
         className: u.Yn,
-        children: [null != t.endTime ? (0, n.jsx)(a.e, {
+        children: [null != t.endTime ? (0, r.jsx)(a.e, {
           endDate: t.endTime,
           size: "lg"
-        }) : null, (0, n.jsx)(s.Heading, {
+        }) : null, (0, r.jsx)(s.Heading, {
           variant: "heading-xxl/bold",
           className: u.DD,
           color: "text-strong",
           style: d({}, m),
           children: t.title
-        }), p || h ? (0, n.jsxs)(s.Text, {
+        }), _ || b ? (0, r.jsxs)(s.Text, {
           variant: "text-md/medium",
           style: d({}, m),
-          children: [p && t.body, p && h && " ", h && (0, n.jsx)(s.MzZ, {
+          children: [_ && t.body, _ && b && " ", b && (0, r.jsx)(s.MzZ, {
             href: t.helpCenterUrl,
             className: u.CU,
             style: d({}, m),

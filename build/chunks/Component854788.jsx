@@ -17,27 +17,27 @@ function p(e) {
   let {
     application: t,
     className: n
-  } = e, p = a.useCallback(e => {
-    (0, i.TR)(o.HAw.APP_DIRECTORY_CATEGORY_CLICKED, {
+  } = e, p = l.useCallback(e => {
+    (0, a.TR)(c.HAw.APP_DIRECTORY_CATEGORY_CLICKED, {
       category: e.name,
       category_id: e.id,
       current_page: s.ev.APPLICATION
-    }), (0, c.JX)({
+    }), (0, o.JX)({
       categoryId: e.id
     })
   }, []);
-  return null == t.categories || 0 === t.categories.length ? null : (0, l.jsxs)("div", {
+  return null == t.categories || 0 === t.categories.length ? null : (0, r.jsxs)("div", {
     className: n,
-    children: [(0, l.jsx)(r.Heading, {
+    children: [(0, r.jsx)(i.Heading, {
       variant: "heading-sm/semibold",
       color: "text-strong",
       children: d.intl.string(d.t.s7iald)
-    }), (0, l.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: u.L,
-      children: t.categories.map(e => (0, l.jsx)(r.DUT, {
+      children: t.categories.map(e => (0, r.jsx)(i.DUT, {
         className: u.c,
         onClick: () => p(e),
-        children: (0, l.jsx)(r.Text, {
+        children: (0, r.jsx)(i.Text, {
           variant: "text-sm/semibold",
           color: "redesign-button-tertiary-text",
           children: e.name

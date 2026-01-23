@@ -1,12 +1,12 @@
 /** Chunk was on 97492 **/
 /** chunk id: 493387, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => v
+  A: () => j
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk615300 = require("./615300.js"),
   Chunk311907 = require("./311907.js"),
   Chunk73939 = require("./73939.js"),
@@ -28,7 +28,7 @@ function y(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let O = {
+let _ = {
   SCALE_MIN: .7,
   SCALE_MAX: 1,
   DURATION_IN: 300,
@@ -36,7 +36,7 @@ let O = {
   EASING_IN: Chunk615300.A.Easing.inOut(Chunk615300.A.Easing.back()),
   EASING_OUT: Chunk615300.A.Easing.quad
 };
-class j extends Chunk64700.PureComponent {
+class O extends Chunk64700.PureComponent {
   componentDidMount() {
     this.componentDidAppear()
   }
@@ -52,11 +52,11 @@ class j extends Chunk64700.PureComponent {
       scaleAnimation: t,
       widthAnimation: n
     } = this;
-    t.setValue(0), n.setValue(0), s.A.parallel([s.A.timing(t, {
+    t.setValue(0), n.setValue(0), a.A.parallel([a.A.timing(t, {
       toValue: 1,
-      duration: O.DURATION_IN,
-      easing: O.EASING_IN
-    }), s.A.timing(n, {
+      duration: _.DURATION_IN,
+      easing: _.EASING_IN
+    }), a.A.timing(n, {
       toValue: 1,
       duration: 200
     })]).start(e)
@@ -70,15 +70,15 @@ class j extends Chunk64700.PureComponent {
     } = this;
     r.setValue(1), n.setValue(0);
     let i = [];
-    for (let e = 0; e < 23; e++) i.push(s.A.timing(n, {
+    for (let e = 0; e < 23; e++) i.push(a.A.timing(n, {
       toValue: false * e,
       duration: 17
     }));
-    s.A.sequence([s.A.timing(t, {
+    a.A.sequence([a.A.timing(t, {
       toValue: 0,
-      duration: O.DURATION_OUT,
-      easing: O.EASING_OUT
-    }), s.A.sequence(i), s.A.timing(l, {
+      duration: _.DURATION_OUT,
+      easing: _.EASING_OUT
+    }), a.A.sequence(i), a.A.timing(l, {
       toValue: 0,
       duration: 125
     })]).start(e)
@@ -87,11 +87,11 @@ class j extends Chunk64700.PureComponent {
     let {
       scaleAnimation: e
     } = this;
-    return s.A.accelerate({
+    return a.A.accelerate({
       transform: [{
         scale: e.interpolate({
           inputRange: [0, 1],
-          outputRange: [O.SCALE_MIN, O.SCALE_MAX]
+          outputRange: [_.SCALE_MIN, _.SCALE_MAX]
         })
       }],
       opacity: e
@@ -120,69 +120,69 @@ class j extends Chunk64700.PureComponent {
       theme: e,
       children: t,
       className: n
-    } = this.props, l = (0, u.Mw)(e), i = a()(g._y, {
+    } = this.props, l = (0, u.Mw)(e), i = s()(m._y, {
       [A.cp]: l,
       [A.QB]: !l
     });
-    return (0, r.jsxs)(s.A.div, {
+    return (0, r.jsxs)(a.A.div, {
       role: "listitem",
-      className: a()(g.kY, n),
+      className: s()(m.kY, n),
       style: this.getWidthStyle(),
       children: [(0, r.jsx)("div", {
-        className: a()(g.XY, m.xM, m.wq, m.Hu),
-        children: (0, r.jsx)(s.A.div, {
+        className: s()(m.XY, b.xM, b.wq, b.Hu),
+        children: (0, r.jsx)(a.A.div, {
           className: i,
           style: this.getSpriteStyle()
         })
-      }), (0, r.jsx)(s.A.div, {
+      }), (0, r.jsx)(a.A.div, {
         style: this.getScaleStyle(),
         children: t
       })]
     })
   }
   constructor(...e) {
-    super(...e), y(this, "scaleAnimation", new s.A.Value(0)), y(this, "spriteAnimation", new s.A.Value(0)), y(this, "spriteOpacity", new s.A.Value(0)), y(this, "widthAnimation", new s.A.Value(0))
+    super(...e), y(this, "scaleAnimation", new a.A.Value(0)), y(this, "spriteAnimation", new a.A.Value(0)), y(this, "spriteOpacity", new a.A.Value(0)), y(this, "widthAnimation", new a.A.Value(0))
   }
 }
 
-function v(e) {
+function j(e) {
   var t;
   let {
     participants: n,
     onContextMenu: l,
     className: i,
-    onClick: s,
+    onClick: a,
     width: u,
-    guildId: m
-  } = e, A = (0, f.Ay)(), y = (t = n.length, ((0, d.FT9)(d._3J.SIZE_80) + 16) * t > u ? d._3J.SIZE_40 : d._3J.SIZE_80), O = (0, o.bG)([p.A], () => p.A.isFocused()), v = n.map(e => {
+    guildId: b
+  } = e, A = (0, p.Ay)(), y = (t = n.length, ((0, d.FT9)(d._3J.SIZE_80) + 16) * t > u ? d._3J.SIZE_40 : d._3J.SIZE_80), _ = (0, o.bG)([h.A], () => h.A.isFocused()), j = n.map(e => {
     var t, n;
-    if (e.type !== b.lp.USER) return null;
+    if (e.type !== g.lp.USER) return null;
     let {
       user: i,
-      voiceState: a,
+      voiceState: s,
       speaking: o,
       voiceDb: c = false / 0,
       latched: u,
-      ringing: f
+      ringing: p
     } = e;
-    return (0, r.jsx)(j, {
-      className: g.Wp,
+    return (0, r.jsx)(O, {
+      className: m.Wp,
       width: (0, d.FT9)(y),
       theme: A,
       children: (0, r.jsx)(d.sqX, {
         "aria-label": i.username,
-        onClick: t => null == s ? true : s(e, t),
+        onClick: t => null == a ? true : a(e, t),
         onContextMenu: t => null == l ? true : l(e, t),
-        children: (0, r.jsx)(h.A, {
+        children: (0, r.jsx)(f.A, {
           userId: i.id,
-          src: i.getAvatarURL(m, (0, d.FT9)(y), o && O),
+          src: i.getAvatarURL(b, (0, d.FT9)(y), o && _),
           size: y,
-          muted: null != (t = null == a ? true : a.isVoiceMuted()) && t,
-          deafen: null != (n = null == a ? true : a.isVoiceDeafened()) && n,
+          muted: null != (t = null == s ? true : s.isVoiceMuted()) && t,
+          deafen: null != (n = null == s ? true : s.isVoiceDeafened()) && n,
           speaking: o,
           voiceDb: c,
           latched: u,
-          ringing: f
+          ringing: p
         }, e.id)
       })
     }, i.id)
@@ -190,7 +190,7 @@ function v(e) {
   return (0, r.jsx)(c.F, {
     component: "div",
     role: "list",
-    className: a()(g.zr, i),
-    children: v
+    className: s()(m.zr, i),
+    children: j
   })
 }

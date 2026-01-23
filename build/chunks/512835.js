@@ -38,10 +38,10 @@ function E(e, t) {
   return null == (n = c.A.getChannel(t)) || !n.isListenModeCapable() || a.Ay.isSpeaker(e, t)
 }
 
-function b(e) {
+function y(e) {
   return (0, s.eY)(e) === s.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
 }
-class y extends Chunk439372.A {
+class b extends Chunk439372.A {
   handleVoiceChannelSelect(e) {
     let {
       channelId: t
@@ -62,7 +62,7 @@ class y extends Chunk439372.A {
           m = n, g();
           return
         }
-        b(new o.A(e)) && (m = n, g())
+        y(new o.A(e)) && (m = n, g())
       }
     })
   }
@@ -73,4 +73,4 @@ class y extends Chunk439372.A {
     })
   }
 }
-let O = new y
+let O = new b

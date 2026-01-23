@@ -2,7 +2,7 @@
 /** chunk id: 820159, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -29,7 +29,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,12 +54,12 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e, t, n) {
+function v(e, t, n) {
   let {
     attributes: i,
     children: a,
@@ -84,13 +84,13 @@ function A(e, t, n) {
           count: l
         }), f["data-trailing-placeholder"] = e
       }
-      return (0, r.jsx)("div", O(b({
+      return (0, r.jsx)("div", O(y({
         className: g.uB
       }, i, f), {
         children: a
       }));
     case "applicationCommandOption":
-      return (0, r.jsx)(v, {
+      return (0, r.jsx)(A, {
         attributes: i,
         channelId: n,
         element: s,
@@ -100,19 +100,19 @@ function A(e, t, n) {
       return null
   }
 }
-let v = e => {
+let A = e => {
   let t, {
       channelId: n,
       element: a,
       attributes: p,
       children: E
     } = e,
-    y = (0, o.f7)(),
-    A = (0, o.zL)(),
-    v = (0, o.RV)(),
+    b = (0, o.f7)(),
+    v = (0, o.zL)(),
+    A = (0, o.RV)(),
     {
-      optionType: S,
-      errored: I
+      optionType: I,
+      errored: S
     } = (0, l.cf)([u.A], () => {
       var e, t, r;
       return {
@@ -124,13 +124,13 @@ let v = e => {
     C = a.children[a.children.length - 1],
     N = null != C && h.l5.isText(C) && C.text.endsWith("\n"),
     R = s()(g.S0, g.xP, {
-      [g.t$]: A && y,
-      [g.$2]: (!A || !y) && I
+      [g.t$]: v && b,
+      [g.$2]: (!v || !b) && S
     }),
     w = i.useCallback(() => {
-      h.VW.isVoid(v, a) || _.b.selectCommandOption(v, a.optionName, true)
-    }, [v, a]);
-  return t = S === c.n4.ATTACHMENT ? (null == T ? true : T.filename) != null ? (0, r.jsxs)("span", {
+      h.VW.isVoid(A, a) || _.b.selectCommandOption(A, a.optionName, true)
+    }, [A, a]);
+  return t = I === c.n4.ATTACHMENT ? (null == T ? true : T.filename) != null ? (0, r.jsxs)("span", {
     className: s()(g._K, g.dU),
     contentEditable: false,
     children: [T.filename, E]
@@ -144,7 +144,7 @@ let v = e => {
       className: g.Nx,
       contentEditable: false
     }) : null]
-  }), (0, r.jsxs)("span", O(b({}, p), {
+  }), (0, r.jsxs)("span", O(y({}, p), {
     className: R,
     children: [(0, r.jsxs)("span", {
       className: g.gA,

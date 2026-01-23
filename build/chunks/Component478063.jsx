@@ -2,7 +2,7 @@
 /** chunk id: 478063, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -75,7 +75,7 @@ function g(e, t, n) {
 }
 let E = 1 / 4;
 
-function b(e) {
+function y(e) {
   let {
     height: t,
     fillColor: n
@@ -97,7 +97,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     isTyping: t,
     statusCoords: n,
@@ -109,7 +109,7 @@ function y(e) {
       top: n.y,
       left: n.x
     },
-    children: (0, r.jsx)(b, {
+    children: (0, r.jsx)(y, {
       height: n.height,
       fillColor: a
     })
@@ -137,7 +137,7 @@ function O(e) {
     height: n
   })
 }
-let A = {
+let v = {
   [Chunk397927._3J.SIZE_16]: {
     default: Chunk573435.hW.DIAGONAL_FACEPILE_16,
     typing: Chunk573435.hW.DIAGONAL_FACEPILE_TYPING_16,
@@ -206,14 +206,14 @@ let A = {
   }
 };
 
-function v(e) {
-  return A[e].back
+function A(e) {
+  return v[e].back
 }
 
-function S(e, t, n) {
-  return t ? A[n].typing : e ? A[n].status : A[n].default
+function I(e, t, n) {
+  return t ? v[n].typing : e ? v[n].status : v[n].default
 }
-let I = function(e) {
+let S = function(e) {
   let {
     backSrc: t,
     frontSrc: n,
@@ -223,33 +223,33 @@ let I = function(e) {
     style: f,
     className: h
   } = e, E = _(e, ["backSrc", "frontSrc", "size", "isTyping", "status", "style", "className"]), {
-    size: b
+    size: y
   } = c.vCh[a], {
-    statusCoords: A,
-    frontAvatarOffsetPx: I,
+    statusCoords: v,
+    frontAvatarOffsetPx: S,
     frontAvatarSizePx: T,
     backAvatarSizePx: C
   } = i.useMemo(() => {
     var e;
-    let t = "".concat(b, "-").concat(o);
+    let t = "".concat(y, "-").concat(o);
     return null != (e = m[t]) ? e : g(a, o, t)
-  }, [b, o, a]), N = S(null != l, o, a), R = v(a);
+  }, [y, o, a]), N = I(null != l, o, a), R = A(a);
   return (0, r.jsxs)("div", {
     style: p({
-      width: b,
-      height: b
+      width: y,
+      height: y
     }, f),
     "aria-label": E["aria-label"],
     "aria-hidden": E["aria-hidden"],
     className: s()(d.kL, h),
     children: [(0, r.jsxs)(u.Ay, {
       mask: N,
-      height: b,
-      width: b,
+      height: y,
+      width: y,
       children: [(0, r.jsx)(u.Ay, {
         mask: R,
-        height: b,
-        width: b,
+        height: y,
+        width: y,
         children: (0, r.jsx)("img", {
           src: t,
           alt: "",
@@ -259,8 +259,8 @@ let I = function(e) {
       }), (0, r.jsx)("div", {
         style: {
           position: "absolute",
-          top: I,
-          left: I
+          top: S,
+          left: S
         },
         children: (0, r.jsx)(O, {
           src: n,
@@ -269,8 +269,8 @@ let I = function(e) {
           status: l
         })
       })]
-    }), (0, r.jsx)(y, {
-      statusCoords: A,
+    }), (0, r.jsx)(b, {
+      statusCoords: v,
       status: l,
       isTyping: o
     })]

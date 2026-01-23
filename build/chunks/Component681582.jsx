@@ -18,7 +18,7 @@ function d(e) {
     children: t
   } = e, [n, d] = i.useState(null), [f, p] = i.useState(null), _ = i.useRef(new Set), [h, m] = i.useState(false), g = (0, s.bG)([o.A], () => o.A.getCurrentlySelectedChannelId()), E = i.useCallback(e => {
     _.current.delete(e), m(_.current.size > 0)
-  }, []), b = i.useCallback(e => (_.current.add(e), m(true), () => E(e)), [E]), y = i.useCallback((e, t) => {
+  }, []), y = i.useCallback(e => (_.current.add(e), m(true), () => E(e)), [E]), b = i.useCallback((e, t) => {
     for (let n of _.current) n(e, t)
   }, []);
   return i.useEffect(() => {
@@ -28,14 +28,14 @@ function d(e) {
       confettiCanvas: f,
       spriteCanvas: n,
       baseConfig: c.Mw,
-      addClickListener: b,
+      addClickListener: y,
       removeClickListener: E,
       children: t
     }), (0, r.jsx)(a.Fk, {
       ref: p,
       className: u.J,
       environment: c.XA,
-      onClick: h ? y : true
+      onClick: h ? b : true
     }), (0, r.jsx)(a.K_, {
       ref: d,
       colors: c._t,

@@ -2,7 +2,7 @@
 /** chunk id: 285732, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => p
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,60 +17,60 @@ var Chunk627968 = require("./627968.js"),
   Chunk148355 = require("./148355.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk102982 = require("./102982.js");
-let p = e => {
+let b = e => {
   let {
     className: t,
     isDisabled: l,
-    sticker: p,
-    canManageSticker: x
-  } = e, [h, j] = i.useState(false), [O, y] = (0, d.A)(null, 4e3), v = async () => {
-    y(null), j(true);
+    sticker: b,
+    canManageSticker: h
+  } = e, [x, j] = i.useState(false), [_, O] = (0, d.A)(null, 4e3), v = async () => {
+    O(null), j(true);
     try {
-      await (0, f.sl)(p)
+      await (0, g.sl)(b)
     } catch (e) {
-      y(e.body.message), j(false)
+      O(e.body.message), j(false)
     }
-  }, A = u.Ay.useUserTag(p.user);
+  }, y = u.Ay.useUserTag(b.user);
   return (0, r.jsx)(a.m, {
-    forceOpen: null != O,
-    text: O,
+    forceOpen: null != _,
+    text: _,
     asContainer: true,
     children: (0, r.jsxs)("div", {
-      className: s()(m.iE, t, {
-        [m.Ce]: l
+      className: s()(f.iE, t, {
+        [f.Ce]: l
       }),
       children: [(0, r.jsxs)("div", {
-        className: s()(m.Qs, {
-          [m.d4]: h
+        className: s()(f.Qs, {
+          [f.d4]: x
         }),
-        children: [(0, r.jsx)(g.A, {
-          className: m.yI,
+        children: [(0, r.jsx)(m.A, {
+          className: f.yI,
           size: 72,
-          sticker: p
+          sticker: b
         }), (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(c.Text, {
+          children: [(0, r.jsx)(o.Text, {
             color: "text-strong",
             variant: "text-xs/semibold",
-            className: m.Zl,
-            children: p.name
-          }), null != p.user && (0, r.jsxs)("div", {
-            className: m.kQ,
-            children: [(0, r.jsx)(o.A, {
-              className: m.dj,
-              size: c._3J.SIZE_16,
-              user: p.user
-            }), (0, r.jsx)(c.Text, {
+            className: f.Zl,
+            children: b.name
+          }), null != b.user && (0, r.jsxs)("div", {
+            className: f.kQ,
+            children: [(0, r.jsx)(c.A, {
+              className: f.dj,
+              size: o._3J.SIZE_16,
+              user: b.user
+            }), (0, r.jsx)(o.Text, {
               color: "text-default",
               variant: "text-xs/normal",
-              children: A
+              children: y
             })]
           })]
-        }), x ? (0, r.jsxs)("div", {
-          className: m.o1,
-          children: [(0, r.jsx)(c.DUT, {
-            className: m.XI,
+        }), h ? (0, r.jsxs)("div", {
+          className: f.o1,
+          children: [(0, r.jsx)(o.DUT, {
+            className: f.XI,
             onClick: () => {
-              (0, c.mMO)(async () => {
+              (0, o.mMO)(async () => {
                 let {
                   default: e
                 } = await Promise.all([n.e("29143"), n.e("27382")]).then(n.bind(n, 445002));
@@ -92,30 +92,30 @@ let p = e => {
                   }
                   return e
                 }({
-                  sticker: p,
-                  guildId: p.guild_id
+                  sticker: b,
+                  guildId: b.guild_id
                 }, t))
               })
             },
-            "aria-label": b.intl.string(b.t.bt75uw),
-            children: (0, r.jsx)(c.R2l, {
+            "aria-label": p.intl.string(p.t.bt75uw),
+            children: (0, r.jsx)(o.R2l, {
               size: "xs",
               color: "currentColor",
-              className: m.Kk
+              className: f.Kk
             })
-          }), (0, r.jsx)(c.DUT, {
-            className: s()(m.XI, m.v_),
+          }), (0, r.jsx)(o.DUT, {
+            className: s()(f.XI, f.v_),
             onClick: v,
-            "aria-label": b.intl.string(b.t.N86XcP),
-            children: (0, r.jsx)(c.PGe, {
+            "aria-label": p.intl.string(p.t.N86XcP),
+            children: (0, r.jsx)(o.PGe, {
               size: "md",
               color: "currentColor",
-              className: m.Kk
+              className: f.Kk
             })
           })]
         }) : null]
-      }), h && (0, r.jsx)(c.y$y, {
-        className: m.u1
+      }), x && (0, r.jsx)(o.y$y, {
+        className: f.u1
       })]
     })
   })

@@ -2,7 +2,7 @@
 /** chunk id: 328913, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => E
+  A: () => v
 }), require("./896048.js");
 var i, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,7 +20,7 @@ var i, Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk90901 = require("./90901.js");
 
-function m(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,7 +37,7 @@ function O(e) {
     onClose: t
   })
 }
-class v extends(i = Chunk64700.PureComponent) {
+class _ extends(i = Chunk64700.PureComponent) {
   render() {
     let {
       selectedGuildId: e,
@@ -47,15 +47,15 @@ class v extends(i = Chunk64700.PureComponent) {
     } = this.props, s = null != e ? (0, r.jsx)(p.A, {
       guildId: e,
       onDragStart: this.onDragStart
-    }, e) : (0, r.jsx)(g.A, {
-      title: y.intl.string(y.t.YUU0RF),
+    }, e) : (0, r.jsx)(y.A, {
+      title: A.intl.string(A.t.YUU0RF),
       renderSettings: O,
       onDragStart: this.onDragStart,
-      children: (0, r.jsx)(b.A, {})
+      children: (0, r.jsx)(g.A, {})
     }), l = n ? "div" : h.Ay;
     return (0, r.jsxs)(l, {
-      className: o()(A.E, {
-        [A.H]: !n
+      className: o()(m.E, {
+        [m.H]: !n
       }, i),
       children: [(0, r.jsx)(d.A, {
         isOverlay: true,
@@ -65,7 +65,7 @@ class v extends(i = Chunk64700.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), m(this, "onDragStart", e => {
+    super(...e), b(this, "onDragStart", e => {
       let {
         dragStart: t
       } = this.props;
@@ -73,9 +73,9 @@ class v extends(i = Chunk64700.PureComponent) {
     })
   }
 }
-m(v, "defaultProps", {
+b(_, "defaultProps", {
   contained: false
 });
-let E = Chunk311907.Ay.connectStores([Chunk967198.A], () => ({
+let v = Chunk311907.Ay.connectStores([Chunk967198.A], () => ({
   selectedGuildId: u.A.getGuildId()
-}))(v)
+}))(_)

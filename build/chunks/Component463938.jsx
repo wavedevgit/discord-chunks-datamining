@@ -18,7 +18,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk949684 = require("./949684.js");
 
-function m(e, t) {
+function b(e, t) {
   return (0, r.jsx)(o.Text, {
     variant: "text-xs/bold",
     color: "text-default",
@@ -29,13 +29,13 @@ let A = Chunk64700.memo(function(e) {
   var t, n;
   let {
     guild: A
-  } = e, y = (0, a.bG)([c.h], () => c.h.getNewMemberActions(A.id), [A.id]), O = (0, a.bG)([u.A], () => u.A.getCompletedActions(A.id)), j = l.useMemo(() => {
-    if (null == y || null == O) return 0;
+  } = e, y = (0, s.bG)([c.h], () => c.h.getNewMemberActions(A.id), [A.id]), _ = (0, s.bG)([u.A], () => u.A.getCompletedActions(A.id)), O = l.useMemo(() => {
+    if (null == y || null == _) return 0;
     let e = 0;
     return y.forEach(t => {
-      null != O[t.channelId] && e++
+      null != _[t.channelId] && e++
     }), e
-  }, [O, y]), v = null == y ? 0 : y.length, x = (0, i.rm)("progress-bar-".concat(A.id));
+  }, [_, y]), j = null == y ? 0 : y.length, v = (0, i.rm)("progress-bar-".concat(A.id));
   return (0, r.jsxs)("li", {
     children: [(0, r.jsxs)(o.DUT, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -54,44 +54,44 @@ let A = Chunk64700.memo(function(e) {
         })
       }
       return e
-    }({}, x), n = n = {
+    }({}, v), n = n = {
       role: "button",
       focusProps: {
         offset: {
           right: 4
         }
       },
-      className: g.G9,
+      className: m.G9,
       onClick: function() {
-        (0, d.pX)(p.BVt.CHANNEL(A.id, h.VV.GUILD_HOME))
+        (0, d.pX)(h.BVt.CHANNEL(A.id, f.VV.GUILD_HOME))
       },
       children: [(0, r.jsxs)("div", {
-        className: g.A1,
+        className: m.A1,
         children: [(0, r.jsx)(o.Heading, {
           variant: "heading-sm/bold",
-          children: b.intl.string(b.t.SnrR3x)
+          children: g.intl.string(g.t.SnrR3x)
         }), (0, r.jsxs)("div", {
-          className: g.Ib,
+          className: m.Ib,
           children: [(0, r.jsx)(o.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
-            className: g.Cv,
-            children: b.intl.format(b.t.eqZ1lW, {
-              numberHook: m,
-              total: v.toString(),
-              completed: j.toString()
+            className: m.Cv,
+            children: g.intl.format(g.t.eqZ1lW, {
+              numberHook: b,
+              total: j.toString(),
+              completed: O.toString()
             })
-          }), (0, r.jsx)(f.A, {
-            className: g.UE,
+          }), (0, r.jsx)(p.A, {
+            className: m.UE,
             width: 16,
             height: 16,
-            direction: f.A.Directions.RIGHT
+            direction: p.A.Directions.RIGHT
           })]
         })]
       }), (0, r.jsx)(o.kej, {
-        className: g.hr,
-        foregroundGradientColor: [s.A.unsafe_rawColors.GREEN_300.css, s.A.unsafe_rawColors.GREEN_230.css],
-        percent: j / v * 100 + 3,
+        className: m.hr,
+        foregroundGradientColor: [a.A.unsafe_rawColors.GREEN_300.css, a.A.unsafe_rawColors.GREEN_230.css],
+        percent: O / j * 100 + 3,
         animate: true
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -105,7 +105,7 @@ let A = Chunk64700.memo(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t)), (0, r.jsx)("div", {
       role: "separator",
-      className: g.yF
+      className: m.yF
     })]
   })
 })

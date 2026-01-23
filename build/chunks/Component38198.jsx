@@ -37,23 +37,23 @@ var Chunk627968 = require("./627968.js"),
 let D = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
 function M() {
-  let e = (0, i.bG)([v.A], () => v.A.hasCurrentUserSentMessageSinceAppStart()),
+  let e = (0, i.bG)([j.A], () => j.A.hasCurrentUserSentMessageSinceAppStart()),
     t = [];
-  e && t.push(a.M.ACTIVITIES_CHAT_MENU_NEW_BADGE);
-  let [n] = (0, g.DP)(t);
+  e && t.push(s.M.ACTIVITIES_CHAT_MENU_NEW_BADGE);
+  let [n] = (0, m.DP)(t);
   return l.useEffect(() => () => {
-    n === a.M.ACTIVITIES_CHAT_MENU_NEW_BADGE && (0, b.Dr)(a.M.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
+    n === s.M.ACTIVITIES_CHAT_MENU_NEW_BADGE && (0, g.Dr)(s.M.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
       dismissAction: T.i.TAKE_ACTION
     })
-  }, [n]), (0, r.jsx)(m.Ay, {
+  }, [n]), (0, r.jsx)(b.Ay, {
     contentTypes: t,
     children: e => {
       let {
         visibleContent: t
       } = e;
-      return t === a.M.ACTIVITIES_CHAT_MENU_NEW_BADGE ? (0, r.jsx)(o.LpS, {
+      return t === s.M.ACTIVITIES_CHAT_MENU_NEW_BADGE ? (0, r.jsx)(o.LpS, {
         text: w.intl.string(w.t.y2b7CA),
-        color: s.A.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT.css
+        color: a.A.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT.css
       }) : null
     }
   })
@@ -62,36 +62,36 @@ function M() {
 function L(e) {
   let {
     channel: t,
-    chatInputType: s,
-    options: g,
-    onFileUpload: m,
-    onClose: v,
+    chatInputType: a,
+    options: m,
+    onFileUpload: b,
+    onClose: j,
     onSelect: L,
-    draftType: G,
-    editorTextContent: k,
+    draftType: k,
+    editorTextContent: G,
     setValue: U,
-    openClips: V
+    openClips: B
   } = e, {
-    analyticsLocations: F,
-    newestAnalyticsLocation: H
-  } = (0, d.Ay)(), B = (0, A.s)({
+    analyticsLocations: V,
+    newestAnalyticsLocation: F
+  } = (0, d.Ay)(), H = (0, A.s)({
     channel: t
-  }), K = (0, i.bG)([O.A], () => O.A.isInProgress());
+  }), K = (0, i.bG)([_.A], () => _.A.isInProgress());
 
   function W() {
-    (0, j.Tv)(t, true, "Plus Button")
+    (0, O.Tv)(t, true, "Plus Button")
   }
 
   function z() {
-    x.default.track(N.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), U("/", (0, S.x7)("/"))
+    v.default.track(N.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), U("/", (0, S.x7)("/"))
   }
 
   function Y() {
-    V()
+    B()
   }
 
   function q() {
-    (0, b.Dr)(a.M.POLLS_CHAT_INPUT_COACHMARK, {
+    (0, g.Dr)(s.M.POLLS_CHAT_INPUT_COACHMARK, {
       dismissAction: T.i.TAKE_ACTION
     }), (0, o.mMO)(async () => {
       let {
@@ -135,11 +135,11 @@ function L(e) {
   }
 
   function X() {
-    x.default.track(N.HAw.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
+    v.default.track(N.HAw.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
       guild_id: t.guild_id
-    }), (0, h.A)({
+    }), (0, f.A)({
       context: null != t ? {
         type: "channel",
         channel: t
@@ -147,25 +147,25 @@ function L(e) {
         type: "contextless"
       },
       openInPopout: false,
-      analyticsLocation: H
+      analyticsLocation: F
     }), (0, u.LV)({
       guildId: t.guild_id
     })
   }
 
   function J() {
-    let e = k,
+    let e = G,
       n = "txt",
       r = "",
-      l = k.match(D);
-    null != l && (r = l[1], n = l[2], e = l[3], r += l[4]), (0, C.R)([(0, _.VE)(new Blob([e], {
+      l = G.match(D);
+    null != l && (r = l[1], n = l[2], e = l[3], r += l[4]), (0, C.R)([(0, E.VE)(new Blob([e], {
       type: "text/plain"
-    }), "message.".concat(n), "text/plain")], t, G), E._.dispatchToLastSubscribed(N.jej.CLEAR_TEXT), "" !== r && E._.dispatchToLastSubscribed(N.jej.INSERT_TEXT, {
+    }), "message.".concat(n), "text/plain")], t, k), x._.dispatchToLastSubscribed(N.jej.CLEAR_TEXT), "" !== r && x._.dispatchToLastSubscribed(N.jej.INSERT_TEXT, {
       plainText: r
     })
   }
   return l.useEffect(() => {
-    x.default.track(N.HAw.OPEN_POPOUT, {
+    v.default.track(N.HAw.OPEN_POPOUT, {
       type: "Send Attachment",
       channel_id: t.id,
       guild_id: t.guild_id
@@ -173,10 +173,10 @@ function L(e) {
   }, [t.guild_id, t.id]), (0, r.jsx)(o.W1t, {
     onSelect: L,
     navId: "channel-attach",
-    onClose: v,
+    onClose: j,
     "aria-label": w.intl.string(w.t.Xm41aV),
     className: R.MK,
-    children: g.map(function(e) {
+    children: m.map(function(e) {
       let n = (0, r.jsxs)("div", {
         className: R.ed,
         children: [(0, r.jsx)(e.icon, {
@@ -196,10 +196,10 @@ function L(e) {
           return (0, r.jsx)(o.Drp, {
             id: "upload-file",
             label: n,
-            action: m
+            action: b
           }, "upload-file");
         case I.v.UPLOAD_TEXT_AS_FILE:
-          if ("" === k) return null;
+          if ("" === G) return null;
           return (0, r.jsx)(o.Drp, {
             id: "upload-text-as-file",
             label: n,
@@ -227,7 +227,7 @@ function L(e) {
                 channelId: t.id,
                 type: N.xL.JOIN,
                 activity: n,
-                location: F[F.length - 1]
+                location: V[V.length - 1]
               })
             }
           }, "play");
@@ -241,7 +241,7 @@ function L(e) {
                 channelId: t.id,
                 type: N.xL.LISTEN,
                 activity: n,
-                location: F[F.length - 1]
+                location: V[V.length - 1]
               })
             }
           }, "listen");
@@ -255,7 +255,7 @@ function L(e) {
                 channelId: t.id,
                 type: N.xL.WATCH,
                 activity: n,
-                location: F[F.length - 1]
+                location: V[V.length - 1]
               })
             }
           }, "watch");
@@ -275,7 +275,7 @@ function L(e) {
           return (0, r.jsx)(o.Drp, {
             id: "APP_LAUNCHER",
             label: n,
-            action: () => (0, f.R)(p.s4.TEXT, s, true, t.id)
+            action: () => (0, p.R)(h.s4.TEXT, a, true, t.id)
           }, "APP_LAUNCHER");
         case I.v.ACTIVITY:
           return (0, r.jsx)(o.Drp, {
@@ -291,7 +291,7 @@ function L(e) {
             action: () => (0, A.e0)({
               channel: t
             }),
-            children: B
+            children: H
           }, "scheduled_message");
         case I.v.SUMMARIZE_THREAD:
           return (0, r.jsx)(o.Drp, {

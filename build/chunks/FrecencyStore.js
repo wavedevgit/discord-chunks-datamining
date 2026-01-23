@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => P,
-  D: () => A
+  D: () => v
 }), require("./747238.js"), require("./321073.js");
 var r, Chunk735438 = require("./735438.js"),
   a = require.n(Chunk735438),
@@ -51,15 +51,15 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = 10,
+let b = 10,
   O = 100,
-  A = 100,
-  v = new Chunk283047.A({
+  v = 100,
+  A = new Chunk283047.A({
     computeBonus: () => O,
     computeWeight: e => {
       let t = 1;
@@ -70,21 +70,21 @@ let y = 10,
       return null != (t = null != (n = d.A.getGuild(e)) ? n : u.A.getChannel(e)) ? t : u.A.getChannel(u.A.getDMFromUserId(e))
     },
     afterCompute: () => {},
-    numFrequentlyItems: A,
-    maxSamples: y
+    numFrequentlyItems: v,
+    maxSamples: b
   }),
-  S = null,
-  I = null;
+  I = null,
+  S = null;
 
 function T(e) {
   let {
     guildId: t,
     channelId: n
   } = e, r = false;
-  return n !== S && (S = null != n ? n : null, null != n && _.Ut1.test(n) && (r = true, v.track(n), R.pendingUsages.push({
+  return n !== I && (I = null != n ? n : null, null != n && _.Ut1.test(n) && (r = true, A.track(n), R.pendingUsages.push({
     key: n,
     timestamp: Date.now()
-  }))), t !== I && (I = null != t ? t : null, null != t && _.Ut1.test(t) && (r = true, v.track(t), R.pendingUsages.push({
+  }))), t !== S && (S = null != t ? t : null, null != t && _.Ut1.test(t) && (r = true, A.track(t), R.pendingUsages.push({
     key: t,
     timestamp: Date.now()
   }))), r
@@ -104,7 +104,7 @@ function N() {
   var e;
   let t = null == (e = c.A.frecencyWithoutFetchingLatest.guildAndChannelFrecency) ? true : e.guildAndChannels;
   if (null == t) returnfalse;
-  v.overwriteHistory(a().mapValues(t, e => b(g({}, e), {
+  A.overwriteHistory(a().mapValues(t, e => y(g({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), R.pendingUsages)
 }
@@ -122,21 +122,21 @@ class w extends(r = Chunk311907.Ay.PersistedStore) {
     return R.pendingUsages.length > 0
   }
   get frecencyWithoutFetchingLatest() {
-    return v
+    return A
   }
   getFrequentlyWithoutFetchingLatest() {
-    return v.frequently
+    return A.frequently
   }
   getScoreWithoutFetchingLatest(e) {
     var t;
-    return null != (t = v.getFrecency(e)) ? t : 0
+    return null != (t = A.getFrecency(e)) ? t : 0
   }
   getScoreForDMWithoutFetchingLatest(e) {
     let t = u.A.getDMFromUserId(e);
     return null != t ? this.getScoreWithoutFetchingLatest(t) : 0
   }
   getMaxScore() {
-    return A * y
+    return v * b
   }
   getBonusScore() {
     return O

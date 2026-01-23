@@ -2,7 +2,7 @@
 /** chunk id: 714991, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -75,7 +75,7 @@ function E(e) {
       (0, u.xb)(e)
   }
 }
-class b extends Chunk64700.PureComponent {
+class y extends Chunk64700.PureComponent {
   renderBadge(e, t, n) {
     let {
       className: i,
@@ -86,17 +86,17 @@ class b extends Chunk64700.PureComponent {
       size: f = 16,
       badgeColor: _,
       iconClassName: m,
-      flowerStarClassName: b
-    } = this.props, y = E(e);
+      flowerStarClassName: y
+    } = this.props, b = E(e);
     return (0, r.jsx)(o.STz, {
       color: c,
       position: u,
       delay: d,
-      text: y,
+      text: b,
       children: o => {
         if (5 !== e && 4 !== e) return (0, r.jsx)(l.A, g(h({}, o), {
           className: s()(n, i),
-          flowerStarClassName: b,
+          flowerStarClassName: y,
           color: _,
           stroke: a,
           size: f,
@@ -130,4 +130,4 @@ class b extends Chunk64700.PureComponent {
     return t.has(d.GuildFeatures.INTERNAL_EMPLOYEE_ONLY) ? this.renderBadge(1, o.VaJ, p.PF) : t.has(d.GuildFeatures.VERIFIED) && t.has(d.GuildFeatures.HUB) ? this.renderBadge(4, o.Pfh, p.Il) : t.has(d.GuildFeatures.HUB) ? this.renderBadge(5, o.Pfh, p.e4) : t.has(d.GuildFeatures.VERIFIED) && t.has(d.GuildFeatures.PARTNERED) ? this.renderBadge(3, o.Uzd, p.zr) : t.has(d.GuildFeatures.VERIFIED) ? this.renderBadge(2, o.Uzd, p.zr) : t.has(d.GuildFeatures.PARTNERED) ? this.renderBadge(0, (0, o.kHD)(c.A), p._I) : null
   }
 }
-let y = b
+let b = y

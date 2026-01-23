@@ -2,8 +2,8 @@
 /** chunk id: 330299, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  M: () => c,
-  d: () => o
+  M: () => o,
+  d: () => c
 }), require("./896048.js"), require("./321073.js"), require("./747238.js"), require("./733351.js"), require("./142703.js");
 var Chunk64700 = require("./64700.js"),
   Chunk812729 = require("./812729.js"),
@@ -11,16 +11,16 @@ var Chunk64700 = require("./64700.js"),
   Chunk340287 = require("./340287.js"),
   Chunk530552 = require("./530552.js");
 
-function c(e) {
-  let [t, n] = r.useState([e]), [i, s] = r.useState(0), a = r.useMemo(() => t[i], [t, i]), c = r.useCallback(e => {
+function o(e) {
+  let [t, n] = r.useState([e]), [i, s] = r.useState(0), a = r.useMemo(() => t[i], [t, i]), o = r.useCallback(e => {
     let r = e(a);
     if (l()(a, r)) return;
-    let c = t.slice(0, i + 1);
-    c.push(r), n(c), s(c.length - 1)
+    let o = t.slice(0, i + 1);
+    o.push(r), n(o), s(o.length - 1)
   }, [i, a, t]);
   return {
     state: a,
-    setState: c,
+    setState: o,
     goBack: r.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 1,
         n = Math.max(0, i - e);
@@ -34,20 +34,20 @@ function c(e) {
   }
 }
 
-function o(e, t) {
+function c(e, t) {
   let {
     scrollerRef: n,
     mainInputRef: i,
     mainContainerRef: l
   } = t, {
     state: {
-      value: c,
-      tags: o,
+      value: o,
+      tags: c,
       selections: d
     },
     setState: u,
-    goBack: f,
-    goForward: g
+    goBack: g,
+    goForward: m
   } = e;
   r.useLayoutEffect(() => {
     let e = e => t => {
@@ -90,7 +90,7 @@ function o(e, t) {
       document.removeEventListener("keydown", t), document.removeEventListener("keyup", n)
     }
   }, [u]);
-  let b = r.useCallback(e => {
+  let p = r.useCallback(e => {
       var t, r;
       let i = (null != (t = e.clipboardData.getData("text")) ? t : "").split(a.ay).map(e => e.trim()).filter(e => e.length > 0);
       i.length <= 1 || ((0, s.flushSync)(() => {
@@ -108,7 +108,7 @@ function o(e, t) {
         })
       }), e.preventDefault(), e.stopPropagation(), null == (r = n.current) || r.scrollToBottom())
     }, [u, n]),
-    m = r.useCallback(e => {
+    f = r.useCallback(e => {
       u(t => {
         let {
           tags: n,
@@ -122,7 +122,7 @@ function o(e, t) {
         }
       })
     }, [u]),
-    p = r.useCallback(e => t => {
+    b = r.useCallback(e => t => {
       u(n => {
         let {
           tags: r,
@@ -136,7 +136,7 @@ function o(e, t) {
         }
       })
     }, [u]),
-    x = r.useCallback(e => {
+    h = r.useCallback(e => {
       u(t => {
         let {
           tags: n,
@@ -152,7 +152,7 @@ function o(e, t) {
         }
       })
     }, [u]),
-    h = r.useCallback(function(e) {
+    x = r.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
       u(n => {
         let {
@@ -184,7 +184,7 @@ function o(e, t) {
         }
       }), null != e && (e.preventDefault(), e.stopPropagation()), null == (t = i.current) || t.focus()
     }, [i, u]),
-    O = r.useCallback(e => {
+    _ = r.useCallback(e => {
       u(t => {
         let {
           tags: n
@@ -197,25 +197,25 @@ function o(e, t) {
         }
       })
     }, [u]),
-    y = r.useCallback(function(e) {
+    O = r.useCallback(function(e) {
       let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
         r = !(arguments.length > 2) || true === arguments[2] || arguments[2];
-      !(c.trim().length <= 0) && ((0, s.flushSync)(() => {
+      !(o.trim().length <= 0) && ((0, s.flushSync)(() => {
         u(e => {
           let {
             tags: t
           } = e;
           return {
             value: "",
-            tags: [...t, c],
+            tags: [...t, o],
             selections: [],
             isSelecting: false
           }
         })
       }), r && null != n.current && n.current.scrollToBottom(), t && (e.preventDefault(), e.stopPropagation()))
-    }, [n, u, c]),
+    }, [n, u, o]),
     v = r.useCallback(e => {
-      let t = c.trim().length <= 0;
+      let t = o.trim().length <= 0;
       if (d.length > 0) {
         var n;
         (0, s.flushSync)(() => {
@@ -246,20 +246,20 @@ function o(e, t) {
           }
         })
       }), e.preventDefault(), e.stopPropagation())
-    }, [i, d.length, u, c]),
-    A = r.useCallback(e => {
+    }, [i, d.length, u, o]),
+    y = r.useCallback(e => {
       var t, n, r, l;
       let s = e.metaKey || e.ctrlKey;
-      "z" === e.key && s ? (f().selections.length > 0 ? null == (t = i.current) || t.blur() : null == (n = i.current) || n.focus(), e.preventDefault(), e.stopPropagation()) : "y" === e.key && s && (g().selections.length > 0 ? null == (r = i.current) || r.blur() : null == (l = i.current) || l.focus(), e.preventDefault(), e.stopPropagation())
-    }, [f, g, i]),
-    E = r.useCallback(e => {
+      "z" === e.key && s ? (g().selections.length > 0 ? null == (t = i.current) || t.blur() : null == (n = i.current) || n.focus(), e.preventDefault(), e.stopPropagation()) : "y" === e.key && s && (m().selections.length > 0 ? null == (r = i.current) || r.blur() : null == (l = i.current) || l.focus(), e.preventDefault(), e.stopPropagation())
+    }, [g, m, i]),
+    A = r.useCallback(e => {
       var t;
-      let n = c.trim().length > 0,
+      let n = o.trim().length > 0,
         {
           selectionStart: r = 0,
           selectionEnd: a = 0
         } = null != (t = i.current) ? t : {};
-      0 === o.length || n && r === a || ((0, s.flushSync)(() => {
+      0 === c.length || n && r === a || ((0, s.flushSync)(() => {
         u(e => {
           let {
             tags: t,
@@ -279,27 +279,27 @@ function o(e, t) {
           null == (e = l.current) || e.focus()
         }, 16)
       }), e.preventDefault(), e.stopPropagation())
-    }, [l, i, u, o.length, c]),
-    N = r.useCallback(e => {
-      e.relatedTarget !== e.currentTarget && y(e, false, false)
-    }, [y]);
+    }, [l, i, u, c.length, o]),
+    E = r.useCallback(e => {
+      e.relatedTarget !== e.currentTarget && O(e, false, false)
+    }, [O]);
   return {
-    handlePasteEvent: b,
-    handleInputChange: O,
+    handlePasteEvent: p,
+    handleInputChange: _,
     handleKeyDown: r.useCallback(e => {
       let t = e.metaKey || e.ctrlKey;
-      "Meta" !== e.key && (a.Wu.has(e.key) ? y(e) : "Backspace" === e.key ? v(e) : "Escape" === e.key ? j(e) : "a" === e.key && t ? E(e) : a.A_.has(e.key) && t && A(e))
-    }, [y, v, j, E, A]),
+      "Meta" !== e.key && (a.Wu.has(e.key) ? O(e) : "Backspace" === e.key ? v(e) : "Escape" === e.key ? j(e) : "a" === e.key && t ? A(e) : a.A_.has(e.key) && t && y(e))
+    }, [O, v, j, A, y]),
     handleContainerKeyUp: r.useCallback(e => {
       if (document.activeElement !== l.current) return;
       let t = e.metaKey || e.ctrlKey;
-      "Backspace" === e.key ? v(e) : "a" === e.key && t ? E(e) : "Escape" === e.key ? j(e) : a.A_.has(e.key) && t ? A(e) : "Meta" !== e.key && j(e)
-    }, [A, v, E, j, l]),
-    handleRemoveTag: m,
-    handleTagChangeEvent: p,
-    handleSelectTag: x,
-    handleUnselectTag: h,
+      "Backspace" === e.key ? v(e) : "a" === e.key && t ? A(e) : "Escape" === e.key ? j(e) : a.A_.has(e.key) && t ? y(e) : "Meta" !== e.key && j(e)
+    }, [y, v, A, j, l]),
+    handleRemoveTag: f,
+    handleTagChangeEvent: b,
+    handleSelectTag: h,
+    handleUnselectTag: x,
     handleResetTagSelections: j,
-    handleInputBlurEvent: N
+    handleInputBlurEvent: E
   }
 }

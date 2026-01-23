@@ -2,7 +2,7 @@
 /** chunk id: 444901, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 }), require("./321073.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,7 +26,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk609653 = require("./609653.js"),
   Chunk103467 = require("./103467.js");
 
-function S(e) {
+function I(e) {
   let {
     message: t,
     applicationName: n,
@@ -49,11 +49,11 @@ function S(e) {
         let e = null != c ? l.MzZ : "div";
         return (0, r.jsxs)(e, {
           onClick: c,
-          className: A.Lf,
+          className: v.Lf,
           children: [(0, r.jsx)("img", {
             alt: O.intl.string(O.t["2B/phM"]),
             src: i,
-            className: s()(v.Gt, f.M.XSMALL)
+            className: s()(A.Gt, f.M.XSMALL)
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/semibold",
             color: "text-muted",
@@ -65,7 +65,7 @@ function S(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     message: t,
     application: n,
@@ -75,8 +75,8 @@ function I(e) {
     currentUserId: p,
     launchableAppId: _,
     isEmbeddedApplication: h,
-    tryWithGdnAction: v,
-    staticBannerSrc: I,
+    tryWithGdnAction: A,
+    staticBannerSrc: S,
     onClickContent: T,
     iconSrc: C,
     onView: N,
@@ -103,7 +103,7 @@ function I(e) {
             embedded: h
           })
         }
-      }] : null != v && (e = [v], r = false), e.length > 0)
+      }] : null != A && (e = [A], r = false), e.length > 0)
       if (!(0, E.p)(t.id, j, n.id, R)) return {
         actions: [],
         hasAccountLinkButton: false
@@ -124,17 +124,17 @@ function I(e) {
       actions: e,
       hasAccountLinkButton: i
     }
-  }, [h, _, v, j, R, n.id, t.id, P, D, w, x]), U = M.some(e => e.trackingArea === d.kY.CLOUD_PLAY);
-  (0, b.A)(U, w);
+  }, [h, _, A, j, R, n.id, t.id, P, D, w, x]), U = M.some(e => e.trackingArea === d.kY.CLOUD_PLAY);
+  (0, y.A)(U, w);
   let G = M.length > 0,
     V = i.useMemo(() => (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
-      className: A.h_,
+      className: v.h_,
       color: "none",
       lineClamp: 3,
       children: (0, g.BE)(t, a, s, p, G)
     }), [t, a, s, p, G]);
-  return 0 === M.length ? (0, r.jsx)(S, {
+  return 0 === M.length ? (0, r.jsx)(I, {
     message: t,
     applicationName: a,
     iconSrc: C,
@@ -145,7 +145,7 @@ function I(e) {
     children: [(0, r.jsx)(u.h, {
       header: f,
       title: a,
-      staticBannerSrc: I,
+      staticBannerSrc: S,
       onClickBanner: T,
       bannerAspectRatio: u.u.ACTIVITY,
       iconSrc: null != C ? C : true,
@@ -155,7 +155,7 @@ function I(e) {
       onClickContent: T,
       trackingConfig: {
         id: n.id,
-        linkType: y.J.RICH_PRESENCE_INVITE,
+        linkType: b.J.RICH_PRESENCE_INVITE,
         onView: N,
         referrerId: t.author.id,
         guildId: s.guild_id,

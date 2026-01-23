@@ -52,7 +52,7 @@ let g = () => {
     h = (0, s.DP)(),
     g = (0, i.qB)(h),
     E = l.Ay.getName(e),
-    b = g ? u.A : d.A;
+    y = g ? u.A : d.A;
   return null == e ? null : (0, r.jsxs)("div", {
     className: _.$6,
     children: [(0, r.jsx)("div", {
@@ -68,7 +68,7 @@ let g = () => {
       children: p.intl.format(p.t.oxhCOl, {
         userName: E
       })
-    }), (0, r.jsx)(b, {
+    }), (0, r.jsx)(y, {
       className: _.q3
     })]
   })

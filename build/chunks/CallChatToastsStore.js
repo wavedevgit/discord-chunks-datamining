@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function a(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -14,13 +14,13 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = {
+let a = {
     toastsEnabledForChannel: {}
   },
-  o = s;
+  o = a;
 class c extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    o = null != e ? e : s
+    o = null != e ? e : a
   }
   getToastsEnabled(e) {
     var t;
@@ -30,7 +30,7 @@ class c extends(r = Chunk311907.Ay.PersistedStore) {
     return o
   }
 }
-a(c, "displayName", "CallChatToastsStore"), a(c, "persistKey", "CallChatToasts");
+s(c, "displayName", "CallChatToastsStore"), s(c, "persistKey", "CallChatToasts");
 let u = new c(Chunk73153.h, {
   CALL_CHAT_TOASTS_SET_ENABLED: function(e) {
     let {

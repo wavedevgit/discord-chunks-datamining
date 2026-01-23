@@ -2,9 +2,9 @@
 /** chunk id: 899847, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => y,
+  Ay: () => b,
   HB: () => E,
-  Xz: () => b,
+  Xz: () => y,
   e$: () => g,
   nt: () => m
 }), require("./896048.js");
@@ -99,13 +99,13 @@ async function E() {
     }), n
   })
 }
-async function b() {
+async function y() {
   await r.Bo.post({
     url: f.Rsh.FAMILY_CENTER_SHARE_IAR_WITH_PARENTS,
     rejectWithError: true
   })
 }
-let y = {
+let b = {
   async initialPageLoad() {
     var e, t, n, i, s, o, l, c, u, d, p;
     a.h.dispatch({
@@ -120,7 +120,7 @@ let y = {
       teen_audit_log: m,
       linked_users: g,
       users: E
-    } = _, b = {
+    } = _, y = {
       teenId: null == m ? true : m.teen_user_id,
       rangeStartId: null == m ? true : m.range_start_id,
       totals: null != (e = null == m ? true : m.totals) ? e : {},
@@ -133,12 +133,12 @@ let y = {
       totalSpendCurrency: null != (c = null == m || null == (p = m.total_spend) ? true : p.currency) ? c : null,
       invoices: null != (u = null == m ? true : m.invoices) ? u : []
     };
-    return null != b.invoices && b.invoices.length > 0 && await h(b.invoices), a.h.dispatch({
+    return null != y.invoices && y.invoices.length > 0 && await h(y.invoices), a.h.dispatch({
       type: "FAMILY_CENTER_INITIAL_LOAD",
-      familyCenterTeenActivity: b,
+      familyCenterTeenActivity: y,
       linkedUsers: g,
       users: E
-    }), b
+    }), y
   },
   async fetchLinkedUsers() {
     let {

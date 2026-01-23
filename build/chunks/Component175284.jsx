@@ -2,14 +2,14 @@
 /** chunk id: 175284, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => T
+  A: () => I
 }), require("./228524.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
   s = require.n(Chunk503698),
   Chunk989349 = require("./989349.js"),
-  c = require.n(Chunk989349),
+  o = require.n(Chunk989349),
   Chunk554146 = require("./554146.js"),
   Chunk397927 = require("./397927.js"),
   Chunk157559 = require("./157559.js"),
@@ -30,80 +30,80 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk107550 = require("./107550.js");
 
-function T(e) {
+function I(e) {
   let {
     guild: t,
     everyoneRole: n,
     filteredRoles: l,
     setEditRoleId: s,
     query: a,
-    setQuery: c,
-    setHeaderHeight: o
+    setQuery: o,
+    setHeaderHeight: c
   } = e, u = i.useRef(null), {
-    enabled: f
-  } = g.A.useExperiment({
+    enabled: g
+  } = m.A.useExperiment({
     guildId: t.id,
     location: "GuildSettingsRolesOverviewHeader"
   });
   i.useEffect(() => {
     var e, t;
-    o(null != (e = null == (t = u.current) ? true : t.offsetHeight) ? e : v.p4)
-  }, [o]);
-  let b = i.useCallback(() => {
+    c(null != (e = null == (t = u.current) ? true : t.offsetHeight) ? e : v.p4)
+  }, [c]);
+  let p = i.useCallback(() => {
       s(n.id)
     }, [s, n.id]),
-    m = f ? y.A : I;
+    f = g ? O.A : T;
   return (0, r.jsxs)("div", {
     ref: u,
     children: [(0, r.jsx)(d.Heading, {
       variant: "heading-lg/semibold",
-      children: _.intl.string(_.t["LPJmL/"])
+      children: N.intl.string(N.t["LPJmL/"])
     }), (0, r.jsx)(d.Text, {
       className: S.h_,
       color: "text-default",
       variant: "text-sm/normal",
-      children: _.intl.string(_.t["1ydhVp"])
-    }), (0, r.jsx)(m, {
+      children: N.intl.string(N.t["1ydhVp"])
+    }), (0, r.jsx)(f, {
       guild: t
     }), (0, r.jsx)(C, {
       guild: t,
       everyoneRole: n,
       filteredRoles: l,
       query: a,
-      setQuery: c,
-      onEveryoneRoleClick: b
+      setQuery: o,
+      onEveryoneRoleClick: p
     })]
   })
 }
 
-function I(e) {
+function T(e) {
   let {
     guild: t
   } = e;
   i.useEffect(() => {
-    (0, b.dX)(o.M.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
-      dismissAction: E.i.INDIRECT_ACTION,
+    (0, p.dX)(c.M.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
+      dismissAction: A.i.INDIRECT_ACTION,
       guildId: t.id,
       forceTrack: true
     })
   }, [t]);
-  let n = (0, x.i$)(c()(A.X30), "LL"),
-    l = t.features.has(A.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE) ? (0, r.jsx)(d.Text, {
+  let n = (0, h.i$)(o()(y.X30), "LL"),
+    l = t.features.has(y.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE) ? (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
-      children: _.intl.format(_.t.Vg2oTN, {
+      children: N.intl.format(N.t.Vg2oTN, {
         breakingChangeDate: n
       })
-    }) : p.A.can(N.xB.ADMINISTRATOR, t) ? (0, r.jsx)(d.Text, {
+    }) : b.A.can(E.xB.ADMINISTRATOR, t) ? (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
-      children: _.intl.format(_.t.HYM8OE, {
+      children: N.intl.format(N.t.HYM8OE, {
         onClickMigrate: () => {
           u.A.show({
-            title: _.intl.string(_.t.nFE8dD),
-            body: _.intl.format(_.t["1PAzQ6"], {
+            title: N.intl.string(N.t.nFE8dD),
+            body: N.intl.format(N.t["1PAzQ6"], {
               guildName: t.name
             }),
-            cancelText: _.intl.string(_.t["ETE/oC"]),
-            confirmText: _.intl.string(_.t["cY+Oob"]),
+            cancelText: N.intl.string(N.t["ETE/oC"]),
+            confirmText: N.intl.string(N.t["cY+Oob"]),
             onConfirm: () => {
               j.A.migratePinPermission(t.id)
             }
@@ -113,12 +113,12 @@ function I(e) {
       })
     }) : (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
-      children: _.intl.format(_.t.cAuU1S, {
+      children: N.intl.format(N.t.cAuU1S, {
         breakingChangeDate: n
       })
     });
-  return (0, r.jsx)(m.A, {
-    look: m.k.WARNING,
+  return (0, r.jsx)(f.A, {
+    look: f.k.WARNING,
     className: S.q4,
     children: l
   })
@@ -131,12 +131,12 @@ function C(e) {
     filteredRoles: i,
     query: l,
     setQuery: a,
-    onEveryoneRoleClick: c
+    onEveryoneRoleClick: o
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(O.A, {
+    children: [(0, r.jsx)(_.A, {
       role: n,
-      onClick: c
+      onClick: o
     }), (0, r.jsx)(P, {
       guild: t,
       query: l,
@@ -145,8 +145,8 @@ function C(e) {
       className: S.BK,
       color: "text-default",
       variant: "text-sm/normal",
-      children: _.intl.format(_.t.xkC3Yf, {
-        articleURL: h.A.getArticleURL(A.MVz.PERMISSIONS_TUTORIAL)
+      children: N.intl.format(N.t.xkC3Yf, {
+        articleURL: x.A.getArticleURL(y.MVz.PERMISSIONS_TUTORIAL)
       })
     }), (0, r.jsx)("div", {
       className: S.kA,
@@ -157,13 +157,13 @@ function C(e) {
         }), (0, r.jsx)(d.Text, {
           className: s()(S.jA, S.N5),
           variant: "text-sm/normal",
-          children: _.intl.format(_.t["38N3Vz"], {
+          children: N.intl.format(N.t["38N3Vz"], {
             numRoles: String(i.length)
           })
         }), (0, r.jsx)(d.Text, {
           className: s()(S.jA, S.Hp),
           variant: "text-sm/normal",
-          children: _.intl.string(_.t["9Oq93m"])
+          children: N.intl.string(N.t["9Oq93m"])
         }), (0, r.jsx)("div", {
           className: S.DE
         })]
@@ -177,12 +177,12 @@ function P(e) {
     guild: t,
     query: n,
     setQuery: l
-  } = e, [s, a] = i.useState(false), c = i.useCallback(e => {
+  } = e, [s, a] = i.useState(false), o = i.useCallback(e => {
     l(e)
-  }, [l]), o = i.useCallback(() => {
+  }, [l]), c = i.useCallback(() => {
     l("")
   }, [l]), u = async () => {
-    a(true), await f.A.createRole(t.id), a(false)
+    a(true), await g.A.createRole(t.id), a(false)
   };
   return (0, r.jsx)("div", {
     className: S.__invalid_rolesList,
@@ -190,15 +190,15 @@ function P(e) {
       className: S.MT,
       children: [(0, r.jsx)(d.IWV, {
         query: n,
-        onChange: c,
-        onClear: o,
-        placeholder: _.intl.string(_.t.Sojqsr),
-        "aria-label": _.intl.string(_.t.Sojqsr)
+        onChange: o,
+        onClear: c,
+        placeholder: N.intl.string(N.t.Sojqsr),
+        "aria-label": N.intl.string(N.t.Sojqsr)
       }), (0, r.jsx)(d.Button, {
         size: "sm",
         onClick: u,
         loading: s,
-        text: _.intl.string(_.t.JZZjQK)
+        text: N.intl.string(N.t.JZZjQK)
       })]
     })
   })

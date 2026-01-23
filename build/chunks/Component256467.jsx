@@ -54,23 +54,23 @@ function T(e) {
     defaultSortOption: null != (t = null == l ? true : l.store_page_guild_products_default_sort) ? t : A.p$.NAME,
     children: (0, n.jsxs)("div", {
       className: N.hQ,
-      children: [(0, n.jsx)(S.A, {
+      children: [(0, n.jsx)(I.A, {
         guild: s,
         subscriptionsSettings: l
       }), (0, n.jsx)(d.hKd, {
         size: 32
-      }), p.length > 0 && (0, n.jsx)(P.F, {
+      }), p.length > 0 && (0, n.jsx)(w.F, {
         guild: s
       }), (0, n.jsxs)("div", {
         className: N.v_,
         children: [(0, n.jsx)(d.hKd, {
           size: 32
-        }), u && (0, n.jsx)(_.A, {
+        }), u && (0, n.jsx)(P.A, {
           guildId: r
         }), a === m.B.GUILD_PRODUCTS && (0, n.jsx)(v.h, {
           guildId: r,
           productId: i
-        }), a === m.B.GUILD_ROLE_SUBSCRIPTIONS && (0, n.jsx)(w.A, {
+        }), a === m.B.GUILD_ROLE_SUBSCRIPTIONS && (0, n.jsx)(_.A, {
           guildId: r
         })]
       })]
@@ -87,30 +87,30 @@ function V(e) {
     restrictionsLoading: m
   } = (0, p.MH)(t), {
     selectedTab: v,
-    isPhantomPreview: w,
-    categoryTabs: P
-  } = (0, y.k)(), _ = o && (null == g || 0 === P.length && !w || x && !m);
+    isPhantomPreview: _,
+    categoryTabs: w
+  } = (0, y.k)(), P = o && (null == g || 0 === w.length && !_ || x && !m);
   return i.useEffect(() => {
-    _ && (0, h.B)(t, D.VV.GUILD_SHOP)
-  }, [t, _]), (0, u.A)({
-    type: E.z.PAGE,
+    P && (0, h.B)(t, D.VV.GUILD_SHOP)
+  }, [t, P]), (0, u.A)({
+    type: R.z.PAGE,
     name: s.ImpressionNames.GUILD_SHOP_PAGE,
     properties: {
       product_id: r,
       tab: v
     }
   }, {
-    disableTrack: _
+    disableTrack: P
   }), (0, n.jsxs)("div", {
     "data-has-border": true,
     className: l()(k.TE, N.kL),
-    children: [(0, n.jsxs)(j.A, {
-      children: [(0, n.jsx)(j.A.Icon, {
-        icon: (0, d.kHD)(I.h),
+    children: [(0, n.jsxs)(b.A, {
+      children: [(0, n.jsx)(b.A.Icon, {
+        icon: (0, d.kHD)(S.h),
         "aria-hidden": true,
         color: a.A.colors.INTERACTIVE_TEXT_ACTIVE.css
-      }), (0, n.jsx)(j.A.Title, {
-        children: R.intl.string(R.t.al5EXL)
+      }), (0, n.jsx)(b.A.Title, {
+        children: E.intl.string(E.t.al5EXL)
       }), (0, n.jsx)(L.A, {})]
     }), (0, n.jsx)(d.d_W, {
       className: N.Qs,
@@ -118,9 +118,9 @@ function V(e) {
         guildId: t,
         productId: r
       }) : (0, n.jsx)(d.y$y, {})
-    }), (0, n.jsx)(C.A, {
+    }), (0, n.jsx)(j.A, {
       className: N.Dv
-    }), (0, n.jsx)(b.A, {
+    }), (0, n.jsx)(C.A, {
       className: N.xC
     })]
   })

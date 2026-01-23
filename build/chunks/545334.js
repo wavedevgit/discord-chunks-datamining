@@ -23,10 +23,10 @@ function c(e) {
     onNonTier2Subscriber: _,
     onTier2Subscriber: h,
     onCustomCriteria: m
-  } = e, g = (0, o.V)(), E = (0, s.O)(), b = (0, r.bG)([i.A], () => i.A.getPremiumTypeSubscription()), y = a.Ay.getPremiumTypeFromSubscription(b);
+  } = e, g = (0, o.V)(), E = (0, s.O)(), y = (0, r.bG)([i.A], () => i.A.getPremiumTypeSubscription()), b = a.Ay.getPremiumTypeFromSubscription(y);
   if (null != m) {
     let e = m();
     if (null != e) return e
   }
-  return null != g && l.TP[g.trial_id].skus.includes(l.pe.TIER_0) ? null != u ? u : t : null != g && l.TP[g.trial_id].skus.includes(l.pe.TIER_2) ? null != d ? d : t : null != b && b.hasActiveTrial && y === l.PremiumTypes.TIER_0 ? null != f ? f : t : null != b && b.hasActiveTrial && y === l.PremiumTypes.TIER_2 ? null != p ? p : t : null != E ? null != n ? n : t : null == y ? null != c ? c : t : y === l.PremiumTypes.TIER_0 || y === l.PremiumTypes.TIER_1 ? null != _ ? _ : t : y === l.PremiumTypes.TIER_2 && null != h ? h : t
+  return null != g && l.TP[g.trial_id].skus.includes(l.pe.TIER_0) ? null != u ? u : t : null != g && l.TP[g.trial_id].skus.includes(l.pe.TIER_2) ? null != d ? d : t : null != y && y.hasActiveTrial && b === l.PremiumTypes.TIER_0 ? null != f ? f : t : null != y && y.hasActiveTrial && b === l.PremiumTypes.TIER_2 ? null != p ? p : t : null != E ? null != n ? n : t : null == b ? null != c ? c : t : b === l.PremiumTypes.TIER_0 || b === l.PremiumTypes.TIER_1 ? null != _ ? _ : t : b === l.PremiumTypes.TIER_2 && null != h ? h : t
 }

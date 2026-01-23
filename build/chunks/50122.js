@@ -15,14 +15,14 @@ function o() {
     currentHangStatus: t,
     customHangStatus: n,
     favoritedStatuses: r
-  } = (0, i.cf)([a.A], () => ({
-    recentStatuses: a.A.getRecentStatuses(),
-    currentHangStatus: a.A.getCurrentHangStatus(),
-    customHangStatus: a.A.getCustomHangStatus(),
-    favoritedStatuses: a.A.getFavoritedStatuses()
+  } = (0, i.cf)([s.A], () => ({
+    recentStatuses: s.A.getRecentStatuses(),
+    currentHangStatus: s.A.getCurrentHangStatus(),
+    customHangStatus: s.A.getCustomHangStatus(),
+    favoritedStatuses: s.A.getFavoritedStatuses()
   })), o = 6 - r.length;
   return e.filter(e => {
-    let r = (0, s.A)(e) ? e === t : l()(e, n);
-    return !a.A.isFavorited(e) && !r
+    let r = (0, a.A)(e) ? e === t : l()(e, n);
+    return !s.A.isFavorited(e) && !r
   }).slice(0, o)
 }

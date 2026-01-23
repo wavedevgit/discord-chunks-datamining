@@ -10,10 +10,10 @@ var Chunk64700 = require("./64700.js"),
   Chunk555337 = require("./555337.js");
 
 function a(e, t) {
-  let [n, a] = r.useState(false), c = (0, i.bG)([s.A], () => s.A.getProps().subsection), o = (0, i.bG)([l.A], () => l.A.useReducedMotion);
+  let [n, a] = r.useState(false), o = (0, i.bG)([s.A], () => s.A.getProps().subsection), c = (0, i.bG)([l.A], () => l.A.useReducedMotion);
   r.useEffect(() => {
-    n || null !== e.current && c === t && (a(true), e.current.scrollIntoView({
-      behavior: o ? "auto" : "smooth"
+    n || null !== e.current && o === t && (a(true), e.current.scrollIntoView({
+      behavior: c ? "auto" : "smooth"
     }))
-  }, [n, c, t, o, e])
+  }, [n, o, t, c, e])
 }

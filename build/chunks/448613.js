@@ -34,10 +34,10 @@ let d = async e => {
       recipientIds: t,
       location: d
     }) : await r.A.getOrEnsurePrivateChannel(t),
-    b = l.A.getChannel(E);
-  if (null == b) throw Error("Failed to open private channel");
+    y = l.A.getChannel(E);
+  if (null == y) throw Error("Failed to open private channel");
   if (null != _)(0, s.d)({
-    channel: b,
+    channel: y,
     content: n,
     entry: _,
     whenReady: p,
@@ -45,8 +45,8 @@ let d = async e => {
     location: u.Hx.USER_PROFILE
   });
   else {
-    let e = o.Ay.parse(b, n);
-    return i.A.sendMessage(b.id, e, p, {
+    let e = o.Ay.parse(y, n);
+    return i.A.sendMessage(y.id, e, p, {
       location: u.Hx.USER_PROFILE,
       nonce: h
     })

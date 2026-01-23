@@ -41,7 +41,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,20 +52,20 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function O(e, t, n) {
-  var g, b, O;
-  let A, v = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {
+  var g, y, O;
+  let v, A = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {
     modViewPanel: _.g.INFO
   };
   if (!(0, p.r)(e)) return Promise.resolve();
-  let S = null != (g = v.modViewPanel) ? g : _.g.INFO,
-    I = null != (b = v.sourceLocation) ? b : i.A.MEMBER_SAFETY_PAGE,
+  let I = null != (g = A.modViewPanel) ? g : _.g.INFO,
+    S = null != (y = A.sourceLocation) ? y : i.A.MEMBER_SAFETY_PAGE,
     T = d.A.getCurrentlySelectedChannelId(),
     C = null != T ? c.A.getChannel(T) : null;
   if (n !== m.VV.MEMBER_SAFETY && (null == C || C.getGuildId() !== e)) {
@@ -73,17 +73,17 @@ function O(e, t, n) {
     null == t || (0, r.qR)(t) || (0, s.pX)(h.BVt.CHANNEL(e, t.id))
   }
   let N = n;
-  return (0, a.G9)(N, t) && (A = N), (0, f.e)(e, t, S, I), o.A.openGuildSidebar({
+  return (0, a.G9)(N, t) && (v = N), (0, f.e)(e, t, I, S), o.A.openGuildSidebar({
     guildId: e,
     baseChannelId: n,
     sidebarType: l.QV.GUILD_MEMBER_MOD_VIEW,
-    details: y(E({
+    details: b(E({
       type: l.LU.GUILD_MEMBER_MOD_VIEW,
       userId: t,
       guildId: e
-    }, v), {
-      modViewPanel: null != (O = v.modViewPanel) ? O : _.g.INFO,
-      moderatorReportId: A
+    }, A), {
+      modViewPanel: null != (O = A.modViewPanel) ? O : _.g.INFO,
+      moderatorReportId: v
     })
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 825869, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  v: () => h
+  v: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,19 +15,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk173801 = require("./173801.js");
 
-function h(e) {
+function g(e) {
   let {
     active: t,
     user: n,
-    channel: h
-  } = e, A = (0, c.k)(), g = i.useCallback(() => {
+    channel: g
+  } = e, f = (0, c.k)(), m = i.useCallback(() => {
     (0, l.showToast)((0, l.createToast)(p.intl.string(p.t["EDYbS+"]), l.ToastType.FAILURE))
-  }, []), m = i.useCallback(() => {
+  }, []), A = i.useCallback(() => {
     s.A.closeChannelSidebar(o.fe)
-  }, []), b = i.useCallback(() => {
-    s.A.closeChannelSidebar(o.fe), A && (0, a.iN)(h.id)
-  }, [h.id, A]), {
-    acceptMessageRequest: _,
+  }, []), _ = i.useCallback(() => {
+    s.A.closeChannelSidebar(o.fe), f && (0, a.iN)(g.id)
+  }, [g.id, f]), {
+    acceptMessageRequest: b,
     rejectMessageRequest: E,
     isAcceptLoading: O,
     isRejectLoading: y,
@@ -36,40 +36,40 @@ function h(e) {
     isOptimisticRejected: S
   } = (0, u.t)({
     user: n,
-    onAcceptSuccess: b,
-    onRejectSuccess: m,
-    onError: g
+    onAcceptSuccess: _,
+    onRejectSuccess: A,
+    onError: m
   }), C = O || y || I || v || S;
   return (0, r.jsxs)("div", {
-    className: f.kL,
+    className: h.kL,
     children: [(0, r.jsx)(d.A, {
-      channel: h,
+      channel: g,
       otherUser: n,
       active: t
     }), (0, r.jsxs)("div", {
-      className: f.o1,
+      className: h.o1,
       children: [(0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: f.x6,
+        className: h.x6,
         children: (0, r.jsx)(l.Button, {
           variant: "secondary",
           size: "sm",
           text: p.intl.string(p.t.B2nygW),
           onClick: e => {
-            e.stopPropagation(), E(h.id)
+            e.stopPropagation(), E(g.id)
           },
           disabled: C,
           loading: y || S
         })
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: f.x6,
+        className: h.x6,
         children: (0, r.jsx)(l.Button, {
           variant: "primary",
           size: "sm",
           text: p.intl.string(p.t.Kz8Pwr),
           onClick: e => {
-            e.stopPropagation(), _(h.id)
+            e.stopPropagation(), b(g.id)
           },
           disabled: C,
           loading: O || I || v

@@ -23,14 +23,14 @@ function u(e) {
     layout: f,
     initialize: p,
     useNotice: _
-  } = t, h = null == n ? true : n(), m = null == i ? true : i(), g = null == d ? true : d(), E = null == _ ? true : _(), b = null != n || null != u;
+  } = t, h = null == n ? true : n(), m = null == i ? true : i(), g = null == d ? true : d(), E = null == _ ? true : _(), y = null != n || null != u;
   return (0, o.Z)(p), (0, r.jsxs)(r.Fragment, {
     children: [null != h && (0, r.jsx)(l._, {
       title: h,
       titleTrailingIcon: m,
       subtitle: g
     }), (0, r.jsx)("div", {
-      "data-settings-category-key": b ? t.key : true,
+      "data-settings-category-key": y ? t.key : true,
       "aria-hidden": true,
       style: {
         height: 1

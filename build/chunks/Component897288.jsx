@@ -2,7 +2,7 @@
 /** chunk id: 897288, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./638769.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -41,7 +41,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,8 +52,8 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -65,12 +65,12 @@ function O(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = A(e, t), Object.getOwnPropertySymbols)
+  if (a = v(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function A(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -78,25 +78,25 @@ function A(e, t) {
   return i
 }
 
-function v(e) {
+function A(e) {
   let {
     guild: t,
     roles: n,
     className: a
-  } = e, g = i.useMemo(() => "invite-roles-".concat((0, o.A)()), []), b = (0, l.Ay)({
+  } = e, g = i.useMemo(() => "invite-roles-".concat((0, o.A)()), []), y = (0, l.Ay)({
     id: g,
     isEnabled: true,
     scrollToStart: _.js$,
     scrollToEnd: _.js$,
     wrap: true
-  }), A = i.useMemo(() => null == t || null == n || 0 === n.length ? [] : n.map(e => (0, p.Wj)(t.id, e)).sort(f.m), [t, n]);
-  if (null == t || 0 === A.length) return null;
-  let v = A.length,
-    S = h.intl.formatToPlainString(h.t.PCs0oo, {
-      numRoles: v
+  }), v = i.useMemo(() => null == t || null == n || 0 === n.length ? [] : n.map(e => (0, p.Wj)(t.id, e)).sort(f.m), [t, n]);
+  if (null == t || 0 === v.length) return null;
+  let A = v.length,
+    I = h.intl.formatToPlainString(h.t.PCs0oo, {
+      numRoles: A
     });
   return (0, r.jsx)(c.hD, {
-    navigator: b,
+    navigator: y,
     children: (0, r.jsx)(c.PR, {
       children: e => {
         let {
@@ -109,12 +109,12 @@ function v(e) {
             color: "text-default",
             className: m.Ed,
             children: h.intl.string(h.t.stcSfI)
-          }), (0, r.jsx)("div", y(E({
+          }), (0, r.jsx)("div", b(E({
             className: m.Ei,
-            "aria-label": S,
+            "aria-label": I,
             ref: n
           }, i), {
-            children: A.map(e => (0, r.jsx)(d.b_, {
+            children: v.map(e => (0, r.jsx)(d.b_, {
               className: m.Yq,
               role: e,
               canRemove: false,

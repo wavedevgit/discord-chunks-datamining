@@ -120,7 +120,7 @@ class E extends Chunk324281.G {
           a.unitType = e.int32();
           break;
         case 15:
-          a.variations.push(y.internalBinaryRead(e, e.uint32(), n));
+          a.variations.push(b.internalBinaryRead(e, e.uint32(), n));
           break;
         case 16:
           a.rules.push(o.jO.internalBinaryRead(e, e.uint32(), n));
@@ -169,7 +169,7 @@ class E extends Chunk324281.G {
           a.engineFeatureFlags.push(e.string());
           break;
         case 30:
-          a.debugConfig = S.internalBinaryRead(e, e.uint32(), n, a.debugConfig);
+          a.debugConfig = I.internalBinaryRead(e, e.uint32(), n, a.debugConfig);
           break;
         case 31:
           a.expectedEndDate = c.D.internalBinaryRead(e, e.uint32(), n, a.expectedEndDate);
@@ -191,7 +191,7 @@ class E extends Chunk324281.G {
   }
   internalBinaryWrite(e, t, n) {
     "0" !== e.id && t.tag(1, r.O0.Bit64).fixed64(e.id), "" !== e.name && t.tag(2, r.O0.LengthDelimited).string(e.name), e.createdAt && c.D.internalBinaryWrite(e.createdAt, t.tag(3, r.O0.LengthDelimited).fork(), n).join(), "0" !== e.creatorId && t.tag(4, r.O0.Bit64).fixed64(e.creatorId), 0 !== e.version && t.tag(5, r.O0.Varint).int32(e.version), e.editedAt && c.D.internalBinaryWrite(e.editedAt, t.tag(6, r.O0.LengthDelimited).fork(), n).join(), "0" !== e.editorId && t.tag(7, r.O0.Bit64).fixed64(e.editorId), "" !== e.title && t.tag(8, r.O0.LengthDelimited).string(e.title), "" !== e.description && t.tag(9, r.O0.LengthDelimited).string(e.description), e.hypothesis && l.hU.internalBinaryWrite(e.hypothesis, t.tag(10, r.O0.LengthDelimited).fork(), n).join(), e.techSpecLink && l.hU.internalBinaryWrite(e.techSpecLink, t.tag(11, r.O0.LengthDelimited).fork(), n).join(), 0 !== e.revision && t.tag(12, r.O0.Varint).int32(e.revision), "" !== e.hashKey && t.tag(13, r.O0.LengthDelimited).string(e.hashKey), 0 !== e.unitType && t.tag(14, r.O0.Varint).int32(e.unitType);
-    for (let i = 0; i < e.variations.length; i++) y.internalBinaryWrite(e.variations[i], t.tag(15, r.O0.LengthDelimited).fork(), n).join();
+    for (let i = 0; i < e.variations.length; i++) b.internalBinaryWrite(e.variations[i], t.tag(15, r.O0.LengthDelimited).fork(), n).join();
     for (let i = 0; i < e.rules.length; i++) o.jO.internalBinaryWrite(e.rules[i], t.tag(16, r.O0.LengthDelimited).fork(), n).join();
     if (0 !== e.phase && t.tag(18, r.O0.Varint).int32(e.phase), e.surfaces.length) {
       t.tag(19, r.O0.LengthDelimited).fork();
@@ -204,7 +204,7 @@ class E extends Chunk324281.G {
       t.join()
     }
     for (let n = 0; n < e.engineFeatureFlags.length; n++) t.tag(29, r.O0.LengthDelimited).string(e.engineFeatureFlags[n]);
-    e.debugConfig && S.internalBinaryWrite(e.debugConfig, t.tag(30, r.O0.LengthDelimited).fork(), n).join(), e.expectedEndDate && c.D.internalBinaryWrite(e.expectedEndDate, t.tag(31, r.O0.LengthDelimited).fork(), n).join(), false !== e.isAutomatedChange && t.tag(32, r.O0.Varint).bool(e.isAutomatedChange), e.archiveAt && c.D.internalBinaryWrite(e.archiveAt, t.tag(33, r.O0.LengthDelimited).fork(), n).join();
+    e.debugConfig && I.internalBinaryWrite(e.debugConfig, t.tag(30, r.O0.LengthDelimited).fork(), n).join(), e.expectedEndDate && c.D.internalBinaryWrite(e.expectedEndDate, t.tag(31, r.O0.LengthDelimited).fork(), n).join(), false !== e.isAutomatedChange && t.tag(32, r.O0.Varint).bool(e.isAutomatedChange), e.archiveAt && c.D.internalBinaryWrite(e.archiveAt, t.tag(33, r.O0.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.f$.onWrite : i)(this.typeName, e, t), t
   }
@@ -284,7 +284,7 @@ class E extends Chunk324281.G {
       name: "variations",
       kind: "message",
       repeat: 1,
-      T: () => y
+      T: () => b
     }, {
       no: 16,
       name: "rules",
@@ -363,7 +363,7 @@ class E extends Chunk324281.G {
       no: 30,
       name: "debug_config",
       kind: "message",
-      T: () => S
+      T: () => I
     }, {
       no: 31,
       name: "expected_end_date",
@@ -383,7 +383,7 @@ class E extends Chunk324281.G {
   }
 }
 new E;
-class b extends Chunk324281.G {
+class y extends Chunk324281.G {
   create(e) {
     let t = {
       id: 0,
@@ -413,7 +413,7 @@ class b extends Chunk324281.G {
           a.targetAllocation = e.int32();
           break;
         case 4:
-          a.buckets.push(A.internalBinaryRead(e, e.uint32(), n));
+          a.buckets.push(v.internalBinaryRead(e, e.uint32(), n));
           break;
         case 5:
           a.type = e.int32();
@@ -432,7 +432,7 @@ class b extends Chunk324281.G {
   }
   internalBinaryWrite(e, t, n) {
     0 !== e.id && t.tag(1, r.O0.Varint).int32(e.id), "" !== e.label && t.tag(2, r.O0.LengthDelimited).string(e.label), 0 !== e.targetAllocation && t.tag(3, r.O0.Varint).int32(e.targetAllocation);
-    for (let i = 0; i < e.buckets.length; i++) A.internalBinaryWrite(e.buckets[i], t.tag(4, r.O0.LengthDelimited).fork(), n).join();
+    for (let i = 0; i < e.buckets.length; i++) v.internalBinaryWrite(e.buckets[i], t.tag(4, r.O0.LengthDelimited).fork(), n).join();
     0 !== e.type && t.tag(5, r.O0.Varint).int32(e.type), e.configuration && l.hU.internalBinaryWrite(e.configuration, t.tag(6, r.O0.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.f$.onWrite : i)(this.typeName, e, t), t
@@ -458,7 +458,7 @@ class b extends Chunk324281.G {
       name: "buckets",
       kind: "message",
       repeat: 1,
-      T: () => A
+      T: () => v
     }, {
       no: 5,
       name: "type",
@@ -472,7 +472,7 @@ class b extends Chunk324281.G {
     }])
   }
 }
-let y = new b;
+let b = new y;
 class O extends Chunk324281.G {
   create(e) {
     let t = {
@@ -533,8 +533,8 @@ class O extends Chunk324281.G {
     }])
   }
 }
-let A = new O;
-class v extends Chunk324281.G {
+let v = new O;
+class A extends Chunk324281.G {
   create(e) {
     let t = {
       enableDecisionLogging: false,
@@ -621,4 +621,4 @@ class v extends Chunk324281.G {
     }])
   }
 }
-let S = new v
+let I = new A

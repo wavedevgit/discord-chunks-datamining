@@ -18,16 +18,16 @@ var Chunk64700 = require("./64700.js"),
   Chunk985018 = require("./985018.jsx");
 
 function h(e) {
-  let [t, n] = (0, r.useState)(""), [h, m] = (0, r.useState)([]), [g, E] = (0, r.useState)(null), [b, y] = (0, r.useState)(false), O = (0, r.useRef)(null), {
-    enabled: A
+  let [t, n] = (0, r.useState)(""), [h, m] = (0, r.useState)([]), [g, E] = (0, r.useState)(null), [y, b] = (0, r.useState)(false), O = (0, r.useRef)(null), {
+    enabled: v
   } = f.A.useConfig({
     location: "orb_checkout_modal"
-  }), v = (0, i.bG)([c.A], () => c.A.isCreatingOrder), S = (0, i.bG)([c.A], () => c.A.currentOrder);
+  }), A = (0, i.bG)([c.A], () => c.A.isCreatingOrder), I = (0, i.bG)([c.A], () => c.A.currentOrder);
   (0, r.useEffect)(() => {
     var e;
-    A && null != S && (null == (e = O.current) ? true : e.id) !== S.id && (O.current = S)
-  }, [S, A]);
-  let I = (0, r.useCallback)(async (e, t) => {
+    v && null != I && (null == (e = O.current) ? true : e.id) !== I.id && (O.current = I)
+  }, [I, v]);
+  let S = (0, r.useCallback)(async (e, t) => {
       let n = null != t ? t : (0, d.p)(e);
       try {
         var r;
@@ -46,10 +46,10 @@ function h(e) {
     T = (0, r.useCallback)(async (e, t, n) => {
       let r = O.current;
       if (null == r) {
-        E(new s.Ay("Order not created yet")), y(false);
+        E(new s.Ay("Order not created yet")), b(false);
         return
       }
-      y(true), E(null);
+      b(true), E(null);
       try {
         let i = await (0, l.Ub)({
           orderId: r.id,
@@ -71,27 +71,27 @@ function h(e) {
           throw Error("Unexpected order status: ".concat(i.status))
         }
         let a = (0, d.p)(e),
-          c = await I(e, a);
+          c = await S(e, a);
         if (0 === c.length) {
           await new Promise(e => setTimeout(e, 500));
-          let t = await I(e, a);
+          let t = await S(e, a);
           if (0 === t.length) throw Error("No entitlements found after order signing");
-          m(t), y(false), null == n || n(t)
-        } else m(c), y(false), null == n || n(c)
+          m(t), b(false), null == n || n(t)
+        } else m(c), b(false), null == n || n(c)
       } catch (e) {
-        E(e instanceof s.Ay ? e : new s.Ay(e)), y(false)
+        E(e instanceof s.Ay ? e : new s.Ay(e)), b(false)
       }
-    }, [I]),
+    }, [S]),
     C = (0, r.useCallback)(function(e, t, n) {
       let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
         i = () => {
-          y(true), E(null)
+          b(true), E(null)
         },
         a = e => {
-          m(e), y(false), null == n || n(e)
+          m(e), b(false), null == n || n(e)
         },
         s = e => {
-          E(e), y(false)
+          E(e), b(false)
         };
       return (0, u.J$)({
         skuId: e,
@@ -104,14 +104,14 @@ function h(e) {
     }, []),
     N = (0, r.useCallback)(function(e, t, n) {
       let r = arguments.length > 3 && true !== arguments[3] && arguments[3];
-      if (A) {
+      if (v) {
         if (r) {
-          E(new s.Ay("Rental orders are not supported via Orders API yet")), y(false);
+          E(new s.Ay("Rental orders are not supported via Orders API yet")), b(false);
           return
         }
         T(e, t, n)
       } else C(e, t, n, r)
-    }, [A, T, C]);
+    }, [v, T, C]);
   return (0, r.useEffect)(() => {
     if (null != g) return void n(_.intl.format(_.t["7gHWrd"], {
       amount: "1 orb",
@@ -132,7 +132,7 @@ function h(e) {
   }, [h, g]), {
     entitlements: h,
     error: g,
-    isSubmitting: b || A && v,
+    isSubmitting: y || v && A,
     responseMessage: t,
     redeemVirtualCurrency: N
   }

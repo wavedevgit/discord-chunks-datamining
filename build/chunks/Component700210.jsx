@@ -24,16 +24,16 @@ function E(e) {
   var t;
   let {
     user: E,
-    application: b,
-    guildId: y,
+    application: y,
+    guildId: b,
     context: O,
-    onItemClick: A
-  } = e, v = null != (t = null == b ? true : b.id) ? t : null == E ? true : E.id, S = _.A.getGuild(y), I = (0, a.bG)([h.A], () => null != S ? h.A.can(m.xBc.MANAGE_GUILD, S) : null), T = true, C = true, N = (0, l.ON)(y, C), R = (0, l.A4)(T, C), w = (0, a.bG)([p.default], () => null != p.default.getNewestTokenForApplication(v)), {
+    onItemClick: v
+  } = e, A = null != (t = null == y ? true : y.id) ? t : null == E ? true : E.id, I = _.A.getGuild(b), S = (0, a.bG)([h.A], () => null != I ? h.A.can(m.xBc.MANAGE_GUILD, I) : null), T = true, C = true, N = (0, l.ON)(b, C), R = (0, l.A4)(T, C), w = (0, a.bG)([p.default], () => null != p.default.getNewestTokenForApplication(A)), {
     isUserApp: P,
     isGuildApp: D
   } = i.useMemo(() => {
     var e, t, n, r;
-    if (null == v) return {
+    if (null == A) return {
       isGuildApp: false,
       isUserApp: false
     };
@@ -42,32 +42,32 @@ function E(e) {
     return {
       isGuildApp: i.some(e => {
         var t;
-        return (null == (t = e.descriptor.application) ? true : t.id) === v
+        return (null == (t = e.descriptor.application) ? true : t.id) === A
       }),
       isUserApp: a.some(e => {
         var t;
-        return (null == (t = e.descriptor.application) ? true : t.id) === v
+        return (null == (t = e.descriptor.application) ? true : t.id) === A
       })
     }
-  }, [N, R, v]);
+  }, [N, R, A]);
   i.useEffect(() => {
     n(53656)
   }, []);
   let x = i.useCallback(() => {
-      (null == S ? true : S.id) != null && (c.A.open(S.id, m.BEX.INTEGRATIONS), o.A.setSection(m.wLn.APPLICATION, v), null == A || A())
-    }, [v, null == S ? true : S.id, A]),
+      (null == I ? true : I.id) != null && (c.A.open(I.id, m.BEX.INTEGRATIONS), o.A.setSection(m.wLn.APPLICATION, A), null == v || v())
+    }, [A, null == I ? true : I.id, v]),
     L = i.useCallback(() => {
       (0, f.openUserSettings)(u.X.AUTHORIZED_APPS_PANEL, {
         section: m.nc_.AUTHORIZED_APPS
       });
       let e = "";
-      null != b ? e = b.name : null != E && (e = E.username), "" !== e && d.iU.setState({
+      null != y ? e = y.name : null != E && (e = E.username), "" !== e && d.iU.setState({
         searchQuery: e
-      }), null == A || A()
-    }, [b, A, E]);
+      }), null == v || v()
+    }, [y, v, E]);
   if (O === m.BRT.POPOUT) return null;
   let j = [];
-  return D && I && j.push((0, r.jsx)(s.Drp, {
+  return D && S && j.push((0, r.jsx)(s.Drp, {
     id: "manage-server-integration",
     label: g.intl.string(g.t.IuSJT8),
     action: x

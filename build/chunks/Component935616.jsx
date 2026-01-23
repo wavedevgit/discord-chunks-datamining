@@ -128,9 +128,9 @@ function m(e) {
     renderImageComponent: m,
     alt: g = l.intl.string(l.t.I5gL2H),
     sourceMetadata: E
-  } = e, b = p(e, ["src", "poster", "naturalWidth", "naturalHeight", "responsive", "autoPlay", "className", "playable", "renderImageComponent", "alt", "sourceMetadata"]);
+  } = e, y = p(e, ["src", "poster", "naturalWidth", "naturalHeight", "responsive", "autoPlay", "className", "playable", "renderImageComponent", "alt", "sourceMetadata"]);
   return (0, r.jsx)(s.G.Consumer, {
-    children: e => m(f(u({}, b), {
+    children: e => m(f(u({}, y), {
       alt: g,
       src: n,
       containerClassName: d,

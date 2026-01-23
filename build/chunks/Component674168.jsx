@@ -2,7 +2,7 @@
 /** chunk id: 674168, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  m: () => A
+  m: () => v
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -25,16 +25,16 @@ var Chunk311907 = require("./311907.js"),
   Chunk956790 = require("./956790.js");
 
 function O(e) {
-  return e === g.PremiumTypes.TIER_2 ? b.intl.string(b.t.jqO5Qn) : null == e ? b.intl.string(b.t.f2qjw5) : b.intl.string(b.t.SblICW)
+  return e === g.PremiumTypes.TIER_2 ? y.intl.string(y.t.jqO5Qn) : null == e ? y.intl.string(y.t.f2qjw5) : y.intl.string(y.t.SblICW)
 }
 
-function A(e) {
+function v(e) {
   let {
     onClose: t,
     markAsDismissed: n
-  } = e, A = (0, i.bG)([p.default], () => p.default.getCurrentUser()), v = O(null == A ? true : A.premiumType), S = _.Ay.canUseCustomCallSounds(A);
+  } = e, v = (0, i.bG)([p.default], () => p.default.getCurrentUser()), A = O(null == v ? true : v.premiumType), I = _.Ay.canUseCustomCallSounds(v);
 
-  function I() {
+  function S() {
     let e = (0, d.qz)("CustomCallSoundUpsell") ? u.X.SOUNDBOARD_CATEGORY : u.X.VOICE_AND_VIDEO_PANEL;
     (0, f.openUserSettings)(e, {
       section: h.nc_.VOICE,
@@ -44,37 +44,37 @@ function A(e) {
   return (0, r.jsxs)(c.A, {
     isShown: true,
     type: c.i.PREMIUM,
-    className: y.ne,
-    backgroundClassName: y.u4,
+    className: b.ne,
+    backgroundClassName: b.u4,
     children: [null != n ? (0, r.jsx)(o.DUT, {
-      className: y.VN,
+      className: b.VN,
       onClick: () => null == n ? true : n(m.i.DISMISS),
-      "aria-label": b.intl.string(b.t.cpT0Cq),
+      "aria-label": y.intl.string(y.t.cpT0Cq),
       children: (0, r.jsx)(o.PGe, {
         size: "xs",
         color: "currentColor",
-        className: y.ut
+        className: b.ut
       })
     }) : null, (0, r.jsxs)("div", {
-      className: y.ex,
+      className: b.ex,
       children: [(0, r.jsx)(o.tvc, {
         size: "sm",
         color: "currentColor",
-        className: y.ax
+        className: b.ax
       }), (0, r.jsx)(o.Heading, {
         variant: "heading-sm/bold",
-        children: b.intl.string(b.t.dTbAxx)
+        children: y.intl.string(y.t.dTbAxx)
       })]
     }), (0, r.jsx)(a.E, {
       variant: "text-sm/normal",
-      children: v
-    }), S ? (0, r.jsx)(o.Button, {
-      onClick: I,
-      text: b.intl.string(b.t.RzWDqY),
+      children: A
+    }), I ? (0, r.jsx)(o.Button, {
+      onClick: S,
+      text: y.intl.string(y.t.RzWDqY),
       fullWidth: true
     }) : (0, r.jsx)(l.A, {
       textOptions: {
-        textOverride: b.intl.string(b.t.pj0XBN)
+        textOverride: y.intl.string(y.t.pj0XBN)
       },
       subscriptionTier: g.pe.TIER_2,
       premiumModalAnalyticsLocation: {

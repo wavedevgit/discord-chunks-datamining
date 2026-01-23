@@ -2,7 +2,7 @@
 /** chunk id: 823950, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  v: () => b
+  v: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -73,7 +73,7 @@ function E(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-class b extends Chunk64700.PureComponent {
+class y extends Chunk64700.PureComponent {
   render() {
     let {
       label: e,
@@ -100,7 +100,7 @@ class b extends Chunk64700.PureComponent {
     })
   }
 }
-class y extends Chunk64700.PureComponent {
+class b extends Chunk64700.PureComponent {
   render() {
     let {
       selected: e,

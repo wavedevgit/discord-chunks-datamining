@@ -1,12 +1,12 @@
 /** Chunk was on 28090 **/
-/** chunk id: 779457, original params: t,e,n (module,exports,require) **/
+/** chunk id: 779457, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => S
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  i = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
   c = require.n(Chunk284009),
   Chunk158954 = require("./158954.js"),
@@ -29,25 +29,25 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk560381 = require("./560381.js");
 
-function w(t) {
+function P(e) {
   let {
-    guildProductListing: e,
+    guildProductListing: t,
     guildId: n,
     skuPricePreview: l
-  } = t, a = (0, y.z)(e), i = (0, g.$g)(l.amount, l.currency), s = (0, o.bG)([b.A], () => b.A.getGuild(n));
+  } = e, i = (0, y.z)(t), a = (0, v.$g)(l.amount, l.currency), s = (0, d.bG)([g.A], () => g.A.getGuild(n));
   return c()(null != s, "guild cannot be null"), (0, r.jsxs)("div", {
-    className: P.Tp,
-    children: [(0, r.jsx)(h.A, {
+    className: K.Tp,
+    children: [(0, r.jsx)(f.A, {
       alt: "",
-      className: P.$E,
-      listing: e,
+      className: K.$E,
+      listing: t,
       imageSize: 100
     }), (0, r.jsxs)("div", {
-      className: P.Vr,
+      className: K.Vr,
       children: [(0, r.jsx)(m.Text, {
         variant: "text-md/medium",
         color: "text-strong",
-        children: e.name
+        children: t.name
       }), (0, r.jsx)(m.hKd, {
         size: 4
       }), (0, r.jsxs)("div", {
@@ -55,7 +55,7 @@ function w(t) {
           variant: "text-xs/normal",
           color: "text-muted",
           lineClamp: 1,
-          children: a
+          children: i
         }), (0, r.jsx)(m.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
@@ -64,158 +64,158 @@ function w(t) {
         })]
       })]
     }), (0, r.jsxs)("div", {
-      className: P.$8,
+      className: K.$8,
       children: [(0, r.jsx)(m.Text, {
         variant: "text-md/medium",
         color: "text-strong",
-        children: i
+        children: a
       }), (0, r.jsx)(m.hKd, {
         size: 4
       }), (0, r.jsx)(m.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: K.intl.string(K.t["5dWOZX"])
+        children: A.intl.string(A.t["5dWOZX"])
       })]
     })]
   })
 }
 
-function T(t) {
-  var e;
+function w(e) {
+  var t;
   let {
     guildProductListing: n,
     guildId: l
-  } = t, a = null != (e = n.attachments) ? e : [], s = a.length > 1, c = (0, N.A)({
+  } = e, i = null != (t = n.attachments) ? t : [], s = i.length > 1, c = (0, z.A)({
     guildId: l,
     productId: n.id
   });
-  return 0 === a.length ? null : (0, r.jsx)(z.A, {
-    label: K.intl.string(K.t.HOkHPB),
+  return 0 === i.length ? null : (0, r.jsx)(_.A, {
+    label: A.intl.string(A.t.HOkHPB),
     children: (0, r.jsxs)("div", {
-      className: i()(P.KK, {
-        [P.Oy]: s
+      className: a()(K.KK, {
+        [K.Oy]: s
       }),
       children: [(0, r.jsx)("div", {
-        className: P.yO,
-        children: a.map(t => (0, r.jsx)(O.A, {
-          attachment: t
-        }, t.id))
+        className: K.yO,
+        children: i.map(e => (0, r.jsx)(O.A, {
+          attachment: e
+        }, e.id))
       }), (0, r.jsx)("div", {
-        children: (0, r.jsx)(x.$nd, function(t) {
-          for (var e = 1; e < arguments.length; e++) {
-            var n = null != arguments[e] ? arguments[e] : {},
+        children: (0, r.jsx)(x.$nd, function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-              return Object.getOwnPropertyDescriptor(n, t).enumerable
-            }))), r.forEach(function(e) {
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
               var r;
-              r = n[e], e in t ? Object.defineProperty(t, e, {
+              r = n[t], t in e ? Object.defineProperty(e, t, {
                 value: r,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : t[e] = r
+              }) : e[t] = r
             })
           }
-          return t
+          return e
         }({}, c))
       })]
     })
   })
 }
 
-function _(t) {
+function T(e) {
   let {
-    role: e
-  } = t;
-  return null == e ? null : (0, r.jsx)(z.A, {
-    label: K.intl.string(K.t.gWBNet),
-    children: (0, r.jsx)(A.A, {
-      role: e
+    role: t
+  } = e;
+  return null == t ? null : (0, r.jsx)(_.A, {
+    label: A.intl.string(A.t.gWBNet),
+    children: (0, r.jsx)(N.A, {
+      role: t
     })
   })
 }
 
-function k(t) {
+function C(e) {
   return (0, r.jsx)(m.Text, {
     tag: "span",
     variant: "text-md/semibold",
     color: "text-default",
-    children: t
+    children: e
   })
 }
 
-function C(t) {
-  var e;
+function S(e) {
+  var t;
   let {
     onClose: n,
-    transitionState: a,
-    guildProductListingId: i,
+    transitionState: i,
+    guildProductListingId: a,
     guildId: s,
     skuPricePreview: x
-  } = t, h = (0, o.bG)([p.A], () => p.A.getGuildProduct(i));
-  c()(null != h, "guildProductListing cannot be null");
-  let [b, g] = l.useState(false);
+  } = e, f = (0, d.bG)([p.A], () => p.A.getGuildProduct(a));
+  c()(null != f, "guildProductListing cannot be null");
+  let [g, v] = l.useState(false);
   l.useEffect(() => {
     !async function() {
       try {
-        g(true), await (0, v.py)(s, i), g(false)
-      } catch (t) {
-        n(), (0, j.A)({
-          body: K.intl.string(K.t.VQ0lXY),
-          confirmText: K.intl.string(K.t["NX+WJN"]),
-          header: K.intl.string(K.t.OCwKlu),
+        v(true), await (0, b.py)(s, a), v(false)
+      } catch (e) {
+        n(), (0, h.A)({
+          body: A.intl.string(A.t.VQ0lXY),
+          confirmText: A.intl.string(A.t["NX+WJN"]),
+          header: A.intl.string(A.t.OCwKlu),
           confirmButtonColor: u.$n.Colors.BRAND
         })
       }
     }()
-  }, [s, i, n]);
-  let y = (null != (e = h.attachments) ? e : []).length > 0,
-    O = h.role_id,
-    z = (0, o.bG)([f.A], () => null != O ? f.A.getRole(s, O) : true);
-  return (0, r.jsx)(d.Modal, {
-    title: K.intl.string(K.t.dhAgv3),
-    subtitle: K.intl.format(K.t.X6yvvo, {
-      productName: h.name,
-      emphasisHook: k
+  }, [s, a, n]);
+  let y = (null != (t = f.attachments) ? t : []).length > 0,
+    O = f.role_id,
+    _ = (0, d.bG)([j.A], () => null != O ? j.A.getRole(s, O) : true);
+  return (0, r.jsx)(o.Modal, {
+    title: A.intl.string(A.t.dhAgv3),
+    subtitle: A.intl.format(A.t.X6yvvo, {
+      productName: f.name,
+      emphasisHook: C
     }),
     onClose: n,
-    transitionState: a,
+    transitionState: i,
     size: "md",
     actions: [],
-    children: b ? (0, r.jsx)(m.y$y, {}) : (0, r.jsxs)(r.Fragment, {
+    children: g ? (0, r.jsx)(m.y$y, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(m.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        children: [y ? K.intl.string(K.t["A/RnkK"]) + " " : "", null != z ? K.intl.format(K.t.IeJDKs, {
-          roleName: z.name,
-          emphasisHook: k
+        children: [y ? A.intl.string(A.t["A/RnkK"]) + " " : "", null != _ ? A.intl.format(A.t.IeJDKs, {
+          roleName: _.name,
+          emphasisHook: C
         }) : ""]
       }), (0, r.jsx)(m.hKd, {
         size: 12
       }), (0, r.jsx)(m.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        children: K.intl.string(K.t["9S3QHF"])
+        children: A.intl.string(A.t["9S3QHF"])
       }), (0, r.jsx)(m.hKd, {
         size: 24
-      }), (0, r.jsx)(w, {
-        guildProductListing: h,
+      }), (0, r.jsx)(P, {
+        guildProductListing: f,
         guildId: s,
         skuPricePreview: x
       }), (0, r.jsx)(m.hKd, {
         size: 32
       }), (0, r.jsx)("div", {
-        className: P.yF
+        className: K.yF
       }), (0, r.jsx)(m.hKd, {
         size: 32
       }), (0, r.jsxs)("ul", {
-        className: P.iq,
-        children: [(0, r.jsx)(T, {
-          guildProductListing: h,
+        className: K.iq,
+        children: [(0, r.jsx)(w, {
+          guildProductListing: f,
           guildId: s
-        }), (0, r.jsx)(_, {
-          role: z
+        }), (0, r.jsx)(T, {
+          role: _
         })]
       })]
     })

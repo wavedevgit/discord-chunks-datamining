@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Ay: () => E,
-  eF: () => b,
-  lE: () => A
+  eF: () => y,
+  lE: () => v
 }), require("./896048.js"), require("./264879.js"), require("./747238.js"), require("./321073.js");
 var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
@@ -34,32 +34,32 @@ function E(e, t, n) {
   return e.onChange = () => {
     let r = f.VW.richValue(e);
     (r !== s || e.previewMarkdown !== o) && (l.o.withMergedEntry(e, () => {
-      f.VW.withoutNormalizing(e, () => b(e, t, n))
+      f.VW.withoutNormalizing(e, () => y(e, t, n))
     }), s = r, o = e.previewMarkdown), a()
   }, e
 }
 
-function b(e, t, n) {
+function y(e, t, n) {
   let r = f.VW.areStylesDisabled(e);
   for (let i of f.VW.blocks(e))
-    if (m.has(i[0].type)) r ? O(e, i, true, null) : y(e, i, t, n);
+    if (m.has(i[0].type)) r ? O(e, i, true, null) : b(e, i, t, n);
     else {
       let [a, s] = i;
       for (let i = a.children.length - 1; i >= 0; i--) {
         let o = a.children[i];
         if (!f.l5.isText(o) && g.has(o.type)) {
           let a = [o, f.PW.child(s, i)];
-          r ? O(e, a, true, null) : y(e, a, t, n)
+          r ? O(e, a, true, null) : b(e, a, t, n)
         }
       }
     }
 }
 
-function y(e, t, n, r) {
+function b(e, t, n, r) {
   var i;
   let a = "line" === t[0].type && (null == (i = t[0].codeBlockState) ? true : i.isInCodeBlock) === true,
     s = f.cv.markdown(t[0], n);
-  O(e, t, a, s) && (t = f.cv.updateElement(e, t), s = f.cv.markdown(t[0], n)), a || (A(e, t, r, s) && (t = f.cv.updateElement(e, t), s = f.cv.markdown(t[0], n)), v(e, t, n, r, s))
+  O(e, t, a, s) && (t = f.cv.updateElement(e, t), s = f.cv.markdown(t[0], n)), a || (v(e, t, r, s) && (t = f.cv.updateElement(e, t), s = f.cv.markdown(t[0], n)), A(e, t, n, r, s))
 }
 
 function O(e, t, n, r) {
@@ -93,7 +93,7 @@ function O(e, t, n, r) {
           path: f.PW.child(i, 0),
           offset: 0
         };
-      (n || null != r && I(e, a, l, r)) && (d.b.voidToText(e, (0, u.IQ)(o, {
+      (n || null != r && S(e, a, l, r)) && (d.b.voidToText(e, (0, u.IQ)(o, {
         mode: "plain",
         preventEmojiSurrogates: true
       }), i), s = true)
@@ -102,7 +102,7 @@ function O(e, t, n, r) {
   return s
 }
 
-function A(e, t, n, r) {
+function v(e, t, n, r) {
   let i = t[1],
     a = false,
     s = [...r.entries].reverse();
@@ -235,7 +235,7 @@ function A(e, t, n, r) {
   return a
 }
 
-function v(e, t, n, r, i) {
+function A(e, t, n, r, i) {
   let [a, s] = t, l = false;
   for (let c = a.children.length - 1; c >= 0; c--) {
     let u, d = a.children[c];
@@ -247,7 +247,7 @@ function v(e, t, n, r, i) {
         p.lastIndex = u.index + 1;
         continue
       }
-      if (I(e, s, {
+      if (S(e, s, {
           path: _,
           offset: u.index
         }, i)) continue;
@@ -258,12 +258,12 @@ function v(e, t, n, r, i) {
         node: a
       }) : p.lastIndex = u.index + 1
     }
-    for (let t of h.reverse()) S(e, [d, f.PW.child(s, c)], t.index, t.length, t.node), l = true
+    for (let t of h.reverse()) I(e, [d, f.PW.child(s, c)], t.index, t.length, t.node), l = true
   }
   return l
 }
 
-function S(e, t, n, r, a) {
+function I(e, t, n, r, a) {
   let [s, o] = t, l = {
     path: o,
     offset: n
@@ -277,7 +277,7 @@ function S(e, t, n, r, a) {
   })
 }
 
-function I(e, t, n, r) {
+function S(e, t, n, r) {
   let i = 0;
   for (let [r, a] of f.VW.nodes(e, {
       at: {

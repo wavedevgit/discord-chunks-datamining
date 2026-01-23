@@ -18,19 +18,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk875331 = require("./875331.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let x = "NO_CHANNEL",
-  h = Chunk136722.kg(Chunk652215.xBc.VIEW_CHANNEL, Chunk652215.xBc.CREATE_INSTANT_INVITE);
+let h = "NO_CHANNEL",
+  x = Chunk136722.kg(Chunk652215.xBc.VIEW_CHANNEL, Chunk652215.xBc.CREATE_INSTANT_INVITE);
 
 function j(e) {
   let {
     label: t,
     description: n,
     guildId: l,
-    widgetEnabled: m,
+    widgetEnabled: f,
     widgetChannelId: j,
-    enableLocalUpdate: O
-  } = e, y = (0, s.bG)([o.Ay], () => o.Ay.getChannels(l)), v = i.useMemo(() => {
-    let e = [...y[o.I6], ...y[o.vM]].filter(e => {
+    enableLocalUpdate: _
+  } = e, O = (0, s.bG)([c.Ay], () => c.Ay.getChannels(l)), v = i.useMemo(() => {
+    let e = [...O[c.I6], ...O[c.vM]].filter(e => {
       let {
         channel: t
       } = e;
@@ -39,7 +39,7 @@ function j(e) {
       let {
         channel: t
       } = e;
-      return t.id === j || d.A.can(h, t)
+      return t.id === j || d.A.can(x, t)
     }).map(e => {
       let {
         channel: t
@@ -47,23 +47,23 @@ function j(e) {
       return {
         id: t.id,
         value: t.id,
-        label: (0, c.m1)(t, f.default, u.A, true)
+        label: (0, o.m1)(t, g.default, u.A, true)
       }
     });
     return e.unshift({
       id: "no-instant-invite",
-      value: x,
-      label: p.intl.string(p.t.u197b7)
+      value: h,
+      label: b.intl.string(b.t.u197b7)
     }), e
-  }, [y, l, j]), A = i.useCallback(e => {
-    O ? (0, b.E)(l, m, e !== x ? e : null) : g.A.updateEmbed(l, m, e !== x ? e : null)
-  }, [l, m, O]);
+  }, [O, l, j]), y = i.useCallback(e => {
+    _ ? (0, p.E)(l, f, e !== h ? e : null) : m.A.updateEmbed(l, f, e !== h ? e : null)
+  }, [l, f, _]);
   return (0, r.jsx)(a.l6P, {
     label: t,
     description: n,
     options: v,
     value: null != j ? j : true,
-    onSelectionChange: A,
+    onSelectionChange: y,
     selectionMode: "single",
     fullWidth: true
   })

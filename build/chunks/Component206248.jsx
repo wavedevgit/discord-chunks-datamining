@@ -2,7 +2,7 @@
 /** chunk id: 206248, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H: () => I
+  H: () => S
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk161222 = require("./161222.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,14 +30,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -54,25 +54,25 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function v(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = S(e, t), Object.getOwnPropertySymbols)
+  if (a = I(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function S(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -80,13 +80,13 @@ function S(e, t) {
   return i
 }
 
-function I(e) {
-  var t, n, b;
+function S(e) {
+  var t, n, y;
   let {
     title: O,
-    body: S,
-    assetUrl: I,
-    previewUrl: T = I,
+    body: I,
+    assetUrl: S,
+    previewUrl: T = S,
     disableMediaViewer: C = false,
     action: N,
     caretConfig: R = {
@@ -98,17 +98,17 @@ function I(e) {
     onRequestClose: x,
     popoverRef: L,
     position: j
-  } = e, M = v(e, ["title", "body", "assetUrl", "previewUrl", "disableMediaViewer", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef", "position"]), {
+  } = e, M = A(e, ["title", "body", "assetUrl", "previewUrl", "disableMediaViewer", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef", "position"]), {
     reducedMotion: k
-  } = i.useContext(s.CZY), U = (0, a.R)(), G = null != (t = null == (n = (b = (0, s.G98)()).isWindowFocused) ? true : n.call(b)) ? t : U, V = i.useRef(null), F = (0, s.RJq)(T), B = i.useCallback(() => ({
+  } = i.useContext(s.CZY), U = (0, a.R)(), G = null != (t = null == (n = (y = (0, s.G98)()).isWindowFocused) ? true : n.call(y)) ? t : U, V = i.useRef(null), F = (0, s.RJq)(T), B = i.useCallback(() => ({
     type: "VIDEO",
-    url: I,
-    proxyUrl: I,
+    url: S,
+    proxyUrl: S,
     alt: O,
     width: 1280,
     height: 720,
     className: E.$_
-  }), [I, O]);
+  }), [S, O]);
   i.useEffect(() => {
     var e, t;
     null != V.current && (!k.enabled && G ? null == (e = V.current) || e.play().catch(h.tE) : null == (t = V.current) || t.pause())
@@ -154,7 +154,7 @@ function I(e) {
         })
       })]
     }),
-    z = y({
+    z = b({
       targetElementRef: M.targetElementRef,
       shouldShow: M.shouldShow,
       scrollBehavior: M.scrollBehavior,
@@ -168,7 +168,7 @@ function I(e) {
     } : {
       alignmentStrategy: "trigger-center"
     });
-  return (0, r.jsx)(u.x, A(y({}, z), {
+  return (0, r.jsx)(u.x, v(b({}, z), {
     children: (0, r.jsxs)("div", {
       ref: L,
       children: [(0, r.jsx)(_.p, {
@@ -178,7 +178,7 @@ function I(e) {
         children: K
       }), (0, r.jsx)(p.D, {
         title: O,
-        body: S,
+        body: I,
         badge: w,
         textLink: P
       }), null != N ? (0, r.jsx)(d.Z, {

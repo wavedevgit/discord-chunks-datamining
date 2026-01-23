@@ -1,7 +1,7 @@
 /** Chunk was on 81362 **/
-/** chunk id: 27625, original params: t,s,i (module,exports,require) **/
+/** chunk id: 27625, original params: t,i,s (module,exports,require) **/
 require.d(exports, {
-  default: () => c
+  default: () => d
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -11,32 +11,32 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk36205 = require("./36205.js");
 
-function c(t) {
+function d(t) {
   let {
-    href: s,
-    onClose: c,
+    href: i,
+    onClose: d,
     transitionState: o
-  } = t, x = (0, r.GV)();
+  } = t, b = (0, r.GV)();
   return (0, a.jsxs)(n.EOs, {
     "data-migration-pending": true,
     transitionState: o,
-    "aria-labelledby": x,
+    "aria-labelledby": b,
     parentComponent: "SuspiciousDownloadModal",
     children: [(0, a.jsx)("img", {
-      className: d.Qw,
-      src: i(929279),
+      className: c.Qw,
+      src: s(929279),
       alt: ""
     }), (0, a.jsx)(n.$mQ, {
       children: (0, a.jsxs)("div", {
-        className: d.jE,
+        className: c.jE,
         children: [(0, a.jsx)(n.Heading, {
-          id: x,
+          id: b,
           variant: "heading-lg/semibold",
-          className: d.DD,
+          className: c.DD,
           children: l.intl.string(l.t.XtDo9Z)
         }), (0, a.jsx)(n.Text, {
           variant: "text-md/normal",
-          className: d.rf,
+          className: c.rf,
           children: l.intl.string(l.t.L9yFko)
         })]
       })
@@ -45,12 +45,12 @@ function c(t) {
         children: [(0, a.jsx)(n.Button, {
           variant: "primary",
           text: l.intl.string(l.t.j7Vi2i),
-          onClick: c
+          onClick: d
         }), (0, a.jsx)(n.Button, {
           text: l.intl.string(l.t["/bHu89"]),
           variant: "secondary",
           onClick: () => {
-            c(), (0, e.A)(s, true)
+            d(), (0, e.A)(i, true)
           }
         })]
       })

@@ -51,23 +51,23 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = new Chunk626584.A("Games"),
+let b = new Chunk626584.A("Games"),
   O = {},
-  A = 0,
-  v = null,
-  S = 250,
-  I = 12e4,
+  v = 0,
+  A = null,
+  I = 250,
+  S = 12e4,
   T = 36e5;
 
 function C() {
-  return null != v ? Promise.resolve(v) : (0, f.isDesktop)() ? _.Ay.ensureModule("discord_game_utils").then(() => {
+  return null != A ? Promise.resolve(A) : (0, f.isDesktop)() ? _.Ay.ensureModule("discord_game_utils").then(() => {
     let e = _.Ay.getGameUtils();
-    return null != e && null != e.findLaunchable ? (v = e, e) : Promise.reject(Error("game utils not found"))
+    return null != e && null != e.findLaunchable ? (A = e, e) : Promise.reject(Error("game utils not found"))
   }) : Promise.reject(Error("not desktop client"))
 }
 
@@ -78,7 +78,7 @@ function N(e) {
       thirdPartySkus: e.thirdPartySkus,
       executables: e.executables.filter(e => e.os === (0, f.getPlatformName)()).map(e => e.name)
     },
-    n = e.aliases.map(e => b(g({}, t), {
+    n = e.aliases.map(e => y(g({}, t), {
       name: e
     }));
   return [t, ...n]
@@ -97,7 +97,7 @@ async function w(e) {
       return t === h.d3x.BATTLENET
     }))), 0 === e.length) throw Error("No remaining launchable queries");
   let t = Date.now();
-  t > A && (A = t + T, O = {});
+  t > v && (v = t + T, O = {});
   let n = await C();
   for (let t of e) {
     let e = O[t.id];
@@ -111,12 +111,12 @@ async function w(e) {
 function P(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 0;
   e() ? t() : setTimeout(() => {
-    r * S <= I ? P(e, t, n, r + 1) : n()
-  }, S)
+    r * I <= S ? P(e, t, n, r + 1) : n()
+  }, I)
 }
 
 function D(e) {
-  return y.info("launch", e), new Promise((t, n) => {
+  return b.info("launch", e), new Promise((t, n) => {
     null == p.A.safeParseWithQuery(e.launchTarget) ? n(Error("Failed to parse launch target. ".concat(e.launchTarget))) : (window.open(e.launchTarget), t([]))
   })
 }

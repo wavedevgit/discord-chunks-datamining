@@ -63,43 +63,43 @@ function E(e) {
     returnRef: _,
     "aria-label": m,
     onClose: E,
-    trackingProps: b,
-    children: y
-  } = e, O = i.useId(), A = i.useMemo(() => ({
+    trackingProps: y,
+    children: b
+  } = e, O = i.useId(), v = i.useMemo(() => ({
     id: O,
     headingId: "heading-".concat(O),
     onClose: E,
     dismissable: true
-  }), [O, E]), v = (0, d.NC)(), {
-    theme: S
-  } = (0, u.wRf)(), I = (0, c.kSI)(n, a);
+  }), [O, E]), A = (0, d.NC)(), {
+    theme: I
+  } = (0, u.wRf)(), S = (0, c.kSI)(n, a);
   return (0, r.jsx)(c.Vs9.Provider, {
-    value: A,
+    value: v,
     children: (0, r.jsx)(u.lGe, g(h({
       id: O,
       role: "dialog",
       "aria-label": m,
-      "aria-labelledby": null != m ? true : A.headingId,
+      "aria-labelledby": null != m ? true : v.headingId,
       returnRef: _
-    }, b), {
-      impressionType: null != (t = null == b ? true : b.impressionType) ? t : l.ImpressionTypes.MODAL,
+    }, y), {
+      impressionType: null != (t = null == y ? true : y.impressionType) ? t : l.ImpressionTypes.MODAL,
       children: (0, r.jsx)(c.Fmo, {
         forceLevel: 1,
         children: (0, r.jsx)("div", {
           className: f.nw,
           children: (0, r.jsx)(u.NPJ, {
-            theme: v,
+            theme: A,
             children: e => (0, r.jsx)(o.animated.div, {
               "data-mana-component": "layer-modal",
               className: s()(p.container, f.yl, e),
-              style: I,
+              style: S,
               children: (0, r.jsx)("div", {
                 className: f.jE,
                 children: (0, r.jsx)(u.NPJ, {
-                  theme: S,
+                  theme: I,
                   children: e => (0, r.jsx)("div", {
                     className: s()(e, f.h_),
-                    children: y
+                    children: b
                   })
                 })
               })

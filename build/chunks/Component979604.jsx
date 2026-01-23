@@ -81,7 +81,7 @@ let x = Object.freeze({
   L = () => [T.intl.string(T.t.r9wmKn), T.intl.string(T.t["6CpimS"]), T.intl.string(T.t.ysbNDc), T.intl.string(T.t["TLnXx/"]), T.intl.string(T.t.Qi8mne), T.intl.string(T.t.yvMu3S), T.intl.string(T.t["PnNUZ/"]), T.intl.string(T.t.hU2TEJ), T.intl.string(T.t["YyY51/"]), T.intl.string(T.t.PbHJb3)];
 
 function j(e) {
-  let t = A.zJ(e.sku);
+  let t = v.zJ(e.sku);
   return null != t ? T.intl.formatToPlainString(T.t.Aqe2ZC, {
     date: t
   }) : null
@@ -89,7 +89,7 @@ function j(e) {
 class M extends(r = Chunk64700.Component) {
   get analyticsLocation() {
     return P(R({}, this.props.analyticsContext.location), {
-      object: I.ZSU.BUTTON_CTA
+      object: S.ZSU.BUTTON_CTA
     })
   }
   getText(e) {
@@ -127,7 +127,7 @@ class M extends(r = Chunk64700.Component) {
     if (e.isHidden()) return "add_to_library";
     if (e.isPreorder()) return "preorder_wait";
     let r = null != n ? x[n] : null;
-    return null != r ? r : null != t && t.type === I.WTw.UNINSTALLING ? "uninstalling" : (0, O.isWeb)() ? "play" : "unsupported_os"
+    return null != r ? r : null != t && t.type === S.WTw.UNINSTALLING ? "uninstalling" : (0, O.isWeb)() ? "play" : "unsupported_os"
   }
   renderPlayButton() {
     let {
@@ -141,7 +141,7 @@ class M extends(r = Chunk64700.Component) {
       analyticsListSort: l,
       analyticsListIndex: c
     } = this.props;
-    return (0, i.jsx)(S.A, {
+    return (0, i.jsx)(I.A, {
       applicationId: e.id,
       libraryApplication: e,
       fullWidth: t,
@@ -187,9 +187,9 @@ class M extends(r = Chunk64700.Component) {
       dispatchState: t
     } = this.props;
     if (e) return null;
-    let n = y.z0(t);
+    let n = b.z0(t);
     if (null == n) return null;
-    let r = n.type === I.WTw.UNINSTALLING ? u.kej.INDETERMINATE : y.uA(Number(n.progress), Number(n.total));
+    let r = n.type === S.WTw.UNINSTALLING ? u.kej.INDETERMINATE : b.uA(Number(n.progress), Number(n.total));
     return (0, i.jsx)(u.kej, {
       percent: r,
       size: u.kej.Sizes.XSMALL,
@@ -237,7 +237,7 @@ class M extends(r = Chunk64700.Component) {
         let {
           libraryApplication: e
         } = this.props;
-        await d.V(e.id, e.branchId, e.getFlags() & ~I.hM6.HIDDEN), (0, _.pX)(I.BVt.APPLICATION_LIBRARY)
+        await d.V(e.id, e.branchId, e.getFlags() & ~S.hM6.HIDDEN), (0, _.pX)(S.BVt.APPLICATION_LIBRARY)
       } catch (e) {
         new p.A("LibraryApplicationButton").error(e)
       }
@@ -246,12 +246,12 @@ class M extends(r = Chunk64700.Component) {
         libraryApplication: e,
         source: t
       } = this.props;
-      v.installApplication(e.id, e.branchId, t)
+      A.installApplication(e.id, e.branchId, t)
     }), N(this, "handleUpdate", () => {
       let {
         libraryApplication: e
       } = this.props;
-      v.updateApplication(e.id, e.branchId)
+      A.updateApplication(e.id, e.branchId)
     }), N(this, "onClickHandlers", {
       add_to_library: this.handleAddToLibrary,
       install: this.handleInstall,
@@ -268,7 +268,7 @@ class M extends(r = Chunk64700.Component) {
 function k(e) {
   let {
     libraryApplication: t
-  } = e, n = (0, f.p)(), [r, a] = (0, o.yK)([E.A, b.A], () => [(0, m.F)(t, E.A, b.A), E.A.getState(t.id, t.branchId)], [t]), s = (0, o.bG)([g.A], () => g.A.isSyncing(t.id, t.branchId), [t]), l = (0, o.bG)([h.A], () => h.A.hasNoBuild(t.id, t.branchId), [t]);
+  } = e, n = (0, f.p)(), [r, a] = (0, o.yK)([E.A, y.A], () => [(0, m.F)(t, E.A, y.A), E.A.getState(t.id, t.branchId)], [t]), s = (0, o.bG)([g.A], () => g.A.isSyncing(t.id, t.branchId), [t]), l = (0, o.bG)([h.A], () => h.A.hasNoBuild(t.id, t.branchId), [t]);
   return (0, i.jsx)(M, P(R({}, e), {
     analyticsContext: n,
     actionState: r,

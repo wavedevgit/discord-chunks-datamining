@@ -4,7 +4,7 @@
 require.d(exports, {
   Fn: () => p,
   Gt: () => _,
-  Ru: () => y
+  Ru: () => b
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk397927 = require("./397927.js"),
@@ -114,13 +114,13 @@ function g(e, t, n) {
 function E(e, t) {
   return t && e > 0 ? 0 : 1
 }
-let b = {
+let y = {
   mass: .8,
   friction: 25,
   tension: 320
 };
 
-function y(e, t, n) {
+function b(e, t, n) {
   let [a, d] = (0, i.zhh)(() => ({
     from: {
       opacity: 0,
@@ -129,17 +129,17 @@ function y(e, t, n) {
       height: 0,
       contentOpacity: 1
     }
-  }), true, []), p = r.useRef(d), y = r.useContext(_), O = r.useMemo(() => {
+  }), true, []), p = r.useRef(d), b = r.useContext(_), O = r.useMemo(() => {
     let t = false;
     return n => {
-      null == n ? y.unsubscribe(e) : y.subscribe(e, n, n => {
+      null == n ? b.unsubscribe(e) : b.subscribe(e, n, n => {
         var r;
         let {
           locked: i,
           matchHeight: a,
           height: d,
           top: _,
-          index: y
+          index: b
         } = n;
         if (null == (r = o.default.getCurrentUser()) ? true : r.isStaff()) {
           let t = s.A.getWindow(u.f),
@@ -150,16 +150,16 @@ function y(e, t, n) {
             matchHeight: a,
             height: d,
             top: _,
-            index: y
+            index: b
           }, n)
         }
         let {
           current: O
-        } = p, A = {
-          opacity: h(y, i),
-          scale: m(y, i),
-          transform: g(y, i, _),
-          contentOpacity: E(y, i),
+        } = p, v = {
+          opacity: h(b, i),
+          scale: m(b, i),
+          transform: g(b, i, _),
+          contentOpacity: E(b, i),
           height: i ? a : d
         };
         O({
@@ -170,26 +170,26 @@ function y(e, t, n) {
             contentOpacity: 1,
             height: i ? a : d
           },
-          to: A,
-          config: b
+          to: v,
+          config: y
         }), t = true
       })
     }
-  }, [e, y]);
+  }, [e, b]);
   return r.useLayoutEffect(() => {
     if (t === i.wLy.YEETED) {
-      let t = y.getLayoutSpecs(e);
+      let t = b.getLayoutSpecs(e);
       if (null == t) return void n();
       p.current({
         to: {
           scale: .8,
           opacity: 0,
-          transform: g(t.index, y.locked, t.top) + (y.locked ? 0 : t.height / 2)
+          transform: g(t.index, b.locked, t.top) + (b.locked ? 0 : t.height / 2)
         },
-        config: b
+        config: y
       }), setTimeout(n, 300)
     }
-  }, [t, n, e, y]), {
+  }, [t, n, e, b]), {
     ref: O,
     springs: a
   }

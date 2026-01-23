@@ -61,42 +61,42 @@ class g {
       _ = arguments.length > 2 && true !== arguments[2] ? arguments[2] : l.A,
       g = arguments.length > 3 && true !== arguments[3] ? arguments[3] : o.A,
       E = arguments.length > 4 && true !== arguments[4] ? arguments[4] : s.A,
-      b = arguments.length > 5 && true !== arguments[5] ? arguments[5] : i.A,
+      y = arguments.length > 5 && true !== arguments[5] ? arguments[5] : i.A,
       {
-        snapshotIndex: y,
+        snapshotIndex: b,
         parentMessage: O,
-        messageSnapshot: A
+        messageSnapshot: v
       } = this,
-      v = (0, d.Fe)(A.message.timestamp),
-      S = f.getChannel(this.parentMessage.channel_id);
-    if (null != S && S.guild_id === (null == (t = O.messageReference) ? true : t.guild_id)) {
+      A = (0, d.Fe)(v.message.timestamp),
+      I = f.getChannel(this.parentMessage.channel_id);
+    if (null != I && I.guild_id === (null == (t = O.messageReference) ? true : t.guild_id)) {
       let e = f.getChannel(null == (u = O.messageReference) ? true : u.channel_id);
       if (null == e) {
-        let e = E.getGuild(S.guild_id);
+        let e = E.getGuild(I.guild_id);
         return null == e ? {
-          snapshotIndex: y
+          snapshotIndex: b
         } : {
-          snapshotIndex: y,
-          footerInfo: h(e, v)
+          snapshotIndex: b,
+          footerInfo: h(e, A)
         }
       }
       return g.can(e.accessPermissions, e) ? {
-        snapshotIndex: y,
-        footerInfo: m((0, r.m1)(e, p, _, true), v)
+        snapshotIndex: b,
+        footerInfo: m((0, r.m1)(e, p, _, true), A)
       } : {
-        snapshotIndex: y
+        snapshotIndex: b
       }
     }
-    let I = null == (n = O.messageReference) ? true : n.guild_id;
-    if (null == I) return {
-      snapshotIndex: y
+    let S = null == (n = O.messageReference) ? true : n.guild_id;
+    if (null == S) return {
+      snapshotIndex: b
     };
-    let T = null != (e = E.getGuild(I)) ? e : b.getGuild(I);
+    let T = null != (e = E.getGuild(S)) ? e : y.getGuild(S);
     return null == T ? {
-      snapshotIndex: y
+      snapshotIndex: b
     } : {
-      snapshotIndex: y,
-      footerInfo: h(T, v)
+      snapshotIndex: b,
+      footerInfo: h(T, A)
     }
   }
   constructor(e, t, n) {

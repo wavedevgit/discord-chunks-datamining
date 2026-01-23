@@ -2,7 +2,7 @@
 /** chunk id: 400281, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => O,
+  A: () => _,
   j: () => j
 });
 var Chunk627968 = require("./627968.js"),
@@ -32,48 +32,48 @@ function j(e) {
     } = e;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.cGx, {
-        className: h.ts
+        className: x.ts
       }), t]
     })
   }, l = (0, r.jsx)(i, {
+    children: (0, r.jsx)(f.A, {})
+  }, h.u.HOW_IT_WORKS), a = (0, r.jsx)(i, {
     children: (0, r.jsx)(m.A, {})
-  }, x.u.HOW_IT_WORKS), a = (0, r.jsx)(i, {
-    children: (0, r.jsx)(g.A, {})
-  }, x.u.BENEFITS);
+  }, h.u.BENEFITS);
   return null != n || (null == t ? true : t.sections) == null ? (0, r.jsxs)(r.Fragment, {
     children: [l, a]
   }) : (0, r.jsx)(r.Fragment, {
     children: t.sections.map(e => {
       switch (e.type) {
-        case x.u.HOW_IT_WORKS:
+        case h.u.HOW_IT_WORKS:
           return l;
-        case x.u.BENEFITS:
+        case h.u.BENEFITS:
           return a;
-        case x.u.OTHER_CREATORS:
+        case h.u.OTHER_CREATORS:
           return (0, r.jsx)(i, {
-            children: (0, r.jsx)(b.A, {
+            children: (0, r.jsx)(p.A, {
               highlightedCreators: e.creators
             })
-          }, x.u.OTHER_CREATORS)
+          }, h.u.OTHER_CREATORS)
       }
     })
   })
 }
 
-function O(e) {
+function _(e) {
   let {
     guild: t
   } = e, n = (0, u.A)(t), {
-    eligibilityLoading: g,
-    eligibilityError: b,
-    eligibility: m
-  } = n, x = (0, o.s)(m), {
-    isLoading: O,
-    error: y,
+    eligibilityLoading: m,
+    eligibilityError: p,
+    eligibility: f
+  } = n, h = (0, c.s)(f), {
+    isLoading: _,
+    error: O,
     creatorMonetizationOnboardingMarketing: v
   } = (0, d.A)(t.id);
   return (i.useEffect(() => {
-    (0, c.G)(t.id)
+    (0, o.G)(t.id)
   }, [t.id]), (0, a.A)({
     type: l.ImpressionTypes.PANE,
     name: l.ImpressionNames.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING,
@@ -81,23 +81,23 @@ function O(e) {
       guild_id: t.id,
       is_owner: n.isGuildOwner,
       is_eligible: n.eligibleForMonetization,
-      ineligible_reasons: x
+      ineligible_reasons: h
     }
   }, {
-    disableTrack: null == t.id || null == m
-  }), g || null == m || O) ? (0, r.jsx)(s.y$y, {}) : m.actionRequired ? (0, r.jsx)(p.A, {
+    disableTrack: null == t.id || null == f
+  }), m || null == f || _) ? (0, r.jsx)(s.y$y, {}) : f.actionRequired ? (0, r.jsx)(b.A, {
     guild: t
-  }) : null != b ? (0, r.jsx)(s.wx6, {
+  }) : null != p ? (0, r.jsx)(s.wx6, {
     type: "critical",
-    children: b.message
+    children: p.message
   }) : (0, r.jsxs)("div", {
-    className: h.kL,
-    children: [(0, r.jsx)(f.A, {
+    className: x.kL,
+    children: [(0, r.jsx)(g.A, {
       guild: t,
       monetizationEligibility: n
     }), (0, r.jsx)(j, {
       onboardingMarketing: v,
-      onboardingMarketingError: y
+      onboardingMarketingError: O
     })]
   })
 }

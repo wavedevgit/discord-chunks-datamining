@@ -59,7 +59,7 @@ function m(e) {
   let {
     threads: t
   } = e;
-  for (let e in t) b(e, t[e].first_message)
+  for (let e in t) y(e, t[e].first_message)
 }
 
 function g(e) {
@@ -72,15 +72,15 @@ function g(e) {
     loaded: true,
     firstMessage: null
   };
-  for (let e of n) b(e.channel_id, e)
+  for (let e of n) y(e.channel_id, e)
 }
 
 function E(e) {
   if (e.isPushNotification || e.message.id !== c.default.castChannelIdAsMessageId(e.message.channel_id)) returnfalse;
-  b(e.message.channel_id, e.message)
+  y(e.message.channel_id, e.message)
 }
 
-function b(e, t) {
+function y(e, t) {
   let n = null == t ? null : (0, s.rh)(t);
   _[e] = {
     loaded: true,
@@ -88,7 +88,7 @@ function b(e, t) {
   }
 }
 
-function y(e) {
+function b(e) {
   if (e.message.id !== e.message.channel_id) returnfalse;
   let t = _[c.default.castMessageIdAsChannelId(e.message.id)];
   if (null == t || null == t.firstMessage) returnfalse;
@@ -105,7 +105,7 @@ function O(e) {
   }
 }
 
-function A(e) {
+function v(e) {
   if (null != _[e.channel.id] || !o.A.isSubscribedToThreads(e.channel.guild_id)) returnfalse;
   _[e.channel.id] = {
     loaded: true,
@@ -113,7 +113,7 @@ function A(e) {
   }
 }
 
-function v(e) {
+function A(e) {
   let {
     type: t,
     channelId: n,
@@ -130,7 +130,7 @@ function v(e) {
   _[n] = d({}, c), "MESSAGE_REACTION_ADD" === t ? _[n].firstMessage = c.firstMessage.addReaction(a, f, e.colors, o) : _[n].firstMessage = c.firstMessage.removeReaction(a, f, o)
 }
 
-function S(e) {
+function I(e) {
   let {
     channelId: t,
     messageId: n,
@@ -144,7 +144,7 @@ function S(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     channelId: t,
     messageId: n
@@ -196,14 +196,14 @@ u(N, "displayName", "ForumPostMessagesStore");
 let R = new N(Chunk73153.h, {
   CONNECTION_OPEN: h,
   MESSAGE_CREATE: E,
-  MESSAGE_UPDATE: y,
+  MESSAGE_UPDATE: b,
   MESSAGE_DELETE: O,
-  THREAD_CREATE: A,
-  MESSAGE_REACTION_ADD: v,
-  MESSAGE_REACTION_REMOVE: v,
-  MESSAGE_REACTION_REMOVE_ALL: I,
+  THREAD_CREATE: v,
+  MESSAGE_REACTION_ADD: A,
+  MESSAGE_REACTION_REMOVE: A,
+  MESSAGE_REACTION_REMOVE_ALL: S,
   MESSAGE_REACTION_REMOVE_EMOJI: T,
-  MESSAGE_REACTION_ADD_MANY: S,
+  MESSAGE_REACTION_ADD_MANY: I,
   LOAD_FORUM_POSTS: m,
   LOAD_THREADS_SUCCESS: g,
   LOAD_ARCHIVED_THREADS_SUCCESS: g,

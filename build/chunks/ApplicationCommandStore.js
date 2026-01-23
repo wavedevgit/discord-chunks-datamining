@@ -2,7 +2,7 @@
 /** chunk id: 861382, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -203,7 +203,7 @@ class E extends(r = Chunk311907.Ay.Store) {
   }
 }
 c(E, "displayName", "ApplicationCommandStore");
-let b = new E(Chunk73153.h, {
+let y = new E(Chunk73153.h, {
   CONNECTION_OPEN: f,
   CHANNEL_SELECT: f,
   LOGOUT: f,

@@ -70,7 +70,7 @@ function j(e) {
         widget: t
       }, n));
     case l.x.WANT_TO_PLAY_GAMES:
-      return (0, r.jsx)(b.A, y({
+      return (0, r.jsx)(g.A, y({
         widget: t
       }, n));
     case l.x.PLAYED_GAMES:
@@ -91,27 +91,27 @@ function x(e) {
     setExpanded: f
   } = (0, u.B)(), {
     shouldShowSuggestions: p,
-    handleDismissSuggestions: b
-  } = (0, o.q)(t), x = (0, i.bG)([a.default], () => a.default.getId() === n.id), h = x && !l && p, v = (0, s.L)(t), A = (0, s.FM)(t, {
+    handleDismissSuggestions: g
+  } = (0, s.q)(t), x = (0, i.bG)([a.default], () => a.default.getId() === n.id), h = x && !l && p, v = (0, o.L)(t), _ = (0, o.FM)(t, {
     isCurrentUser: x
-  }), w = (0, s.uA)(t), I = 1 === (0, s.cv)(t.type);
+  }), A = (0, o.uA)(t), I = 1 === (0, o.cv)(t.type);
   return (0, r.jsx)(j, y({
     widget: t,
     user: n,
     disableInteraction: l,
     headerTitle: v,
-    headerSubtitle: A,
+    headerSubtitle: _,
     headerActionButtons: x && !I ? [(0, r.jsx)(c.IU, {
-      disabled: w,
+      disabled: A,
       widgetType: t.type,
       widget: t,
       onAddGame: () => f(true)
     }, "".concat(t.type, "-browse-games-popout"))] : true,
-    trailingContent: h && (0, r.jsx)(g.A, {
+    trailingContent: h && (0, r.jsx)(m.A, {
       userId: n.id,
       widgetType: t.type,
-      onDismiss: b,
-      className: m.r
+      onDismiss: g,
+      className: b.r
     })
   }, d))
 }

@@ -19,7 +19,7 @@ function d(e) {
     className: l,
     onExpandChange: d,
     loading: u
-  } = e, f = function(e, t) {
+  } = e, g = function(e, t) {
     if (null == e) return {};
     var n, r, i, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -35,14 +35,14 @@ function d(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
     return l
-  }(e, ["action", "children", "className", "onExpandChange", "loading"]), [g, b] = i.useState(false);
+  }(e, ["action", "children", "className", "onExpandChange", "loading"]), [m, p] = i.useState(false);
   return (0, r.jsx)(a.Nt8, {
-    className: s()(o.HS, l),
-    isExpanded: g,
+    className: s()(c.HS, l),
+    isExpanded: m,
     collapsibleContent: (0, r.jsxs)("div", {
-      className: o.oV,
-      children: [g && (0, r.jsx)("div", {
-        className: o.Wn
+      className: c.oV,
+      children: [m && (0, r.jsx)("div", {
+        className: c.Wn
       }), n]
     }),
     children: e => {
@@ -50,7 +50,7 @@ function d(e) {
       let {
         onClick: l
       } = e;
-      return (0, r.jsx)(c.A, (n = function(e) {
+      return (0, r.jsx)(o.A, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -67,14 +67,14 @@ function d(e) {
           })
         }
         return e
-      }({}, f), i = i = {
-        className: o.ro,
+      }({}, g), i = i = {
+        className: c.ro,
         action: u ? (0, r.jsx)(a.y$y, {
           type: a.y$y.Type.PULSING_ELLIPSIS
         }) : t,
         onClick: e => {
           var t;
-          b(t = !g), null == d || d(t), l(e)
+          p(t = !m), null == d || d(t), l(e)
         }
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);

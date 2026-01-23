@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   Ay: () => O,
-  D1: () => y,
+  D1: () => b,
   Ip: () => m,
   l0: () => E,
-  rh: () => A
+  rh: () => v
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk440745 = require("./440745.js"),
@@ -65,9 +65,9 @@ function g(e) {
   return null != m.getState().palette[e]
 }
 async function E(e) {
-  g(e) || await b(e)
+  g(e) || await y(e)
 }
-async function b(e) {
+async function y(e) {
   if (!m.getState().fetching[e]) {
     (0, o.r)(() => m.setState(t => ({
       fetching: h(p({}, t.fetching), {
@@ -97,22 +97,22 @@ async function b(e) {
   }
 }
 
-function y(e) {
+function b(e) {
   return !m(t => null != e && t.fetching[e])
 }
 
 function O(e, t) {
   let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-    [r] = A(e, t, n);
+    [r] = v(e, t, n);
   return r
 }
 
-function A(e, t) {
+function v(e, t) {
   let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
     i = m(t => null == e ? true : t.palette[e]),
     s = (0, l.bG)([c.A], () => n && c.A.desaturateUserColors ? c.A.saturation : 1);
   r.useEffect(() => {
-    null != e && null == i && b(e)
+    null != e && null == i && y(e)
   }, [e, i]);
   let o = r.useMemo(() => null == i ? true : i.map(e => {
     let [t, n, r] = e, {

@@ -33,11 +33,11 @@ let h = e => {
       enabled: E
     } = f.e.useConfig({
       location: "active_timestamp"
-    }), b = i.useMemo(() => (0, d.W6)(t, g), [t, g]), y = i.useRef(b), O = i.useRef(b);
+    }), y = i.useMemo(() => (0, d.W6)(t, g), [t, g]), b = i.useRef(y), O = i.useRef(y);
     return i.useEffect(() => {
-      O.current = b
+      O.current = y
     }), i.useEffect(() => {
-      y.current = O.current
+      b.current = O.current
     }, [t]), (0, r.jsx)(l.Text, {
       className: s()({
         [_.$N]: !!E || c,
@@ -48,8 +48,8 @@ let h = e => {
       tabularNumbers: o,
       color: a,
       scaleFontToUserSetting: m,
-      "aria-label": y.current,
-      children: b
+      "aria-label": b.current,
+      children: y
     })
   },
   m = e => {

@@ -23,7 +23,7 @@ let d = function(e) {
   return (0, r.jsx)(o.A, {
     getHistoricalTotalBytes: p,
     children: (e, o, p) => {
-      var f;
+      var h;
       return (0, r.jsx)("div", {
         className: l()(u.dm, n),
         children: (0, r.jsxs)(a.A, {
@@ -36,10 +36,10 @@ let d = function(e) {
               children: t
             }), (0, r.jsx)("div", {
               className: u.TS,
-              children: (f = e[e.length - 1] / o * 1e3) > 1e3 ? c.intl.formatToPlainString(c.t["WU+gTX"], {
-                size: Math.round(f / 1e3)
+              children: (h = e[e.length - 1] / o * 1e3) > 1e3 ? c.intl.formatToPlainString(c.t["WU+gTX"], {
+                size: Math.round(h / 1e3)
               }) : c.intl.formatToPlainString(c.t.wnF6TH, {
-                size: Math.round(f)
+                size: Math.round(h)
               })
             })]
           }), (0, r.jsx)("div", {

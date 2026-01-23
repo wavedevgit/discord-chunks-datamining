@@ -1,5 +1,5 @@
 /** Chunk was on 26489 **/
-/** chunk id: 477088, original params: e,t,s (module,exports,require) **/
+/** chunk id: 477088, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   default: () => p
 }), require("./896048.js");
@@ -15,34 +15,34 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js");
 let p = e => {
   let t, {
-      transitionState: s,
+      transitionState: i,
       onClose: p,
       sourceAnalyticsLocations: h
     } = e,
     [f, u] = a.useState(1),
-    [j, _] = a.useState(new Set),
+    [_, j] = a.useState(new Set),
     [m, g] = a.useState(new Map),
     {
       analyticsLocations: L
-    } = (0, n.Ay)([...h, r.A.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]);
+    } = (0, n.Ay)([...h, l.A.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]);
   switch (f) {
     case 1:
-      t = (0, i.jsx)(o.Ay, {
+      t = (0, s.jsx)(o.Ay, {
         onShare: async e => {
           try {
             C.default.track(x.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
               location_stack: L
             });
             let t = await (0, d.xm)(e.map(e => e.id));
-            u(2), _(new Set(e)), g(t)
+            u(2), j(new Set(e)), g(t)
           } catch (e) {}
         },
         onClose: p
       });
       break;
     case 2:
-      t = (0, i.jsx)(c.A, {
-        selectedUsers: j,
+      t = (0, s.jsx)(c.A, {
+        selectedUsers: _,
         trialCreationResult: m,
         onClose: p
       });
@@ -50,9 +50,9 @@ let p = e => {
     default:
       p()
   }
-  return (0, i.jsx)(l.EOs, {
+  return (0, s.jsx)(r.EOs, {
     "data-migration-pending": true,
-    transitionState: s,
+    transitionState: i,
     parentComponent: "ReferralProgramShareModal",
     children: t
   })

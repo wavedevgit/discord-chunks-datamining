@@ -15,7 +15,7 @@ var a, Chunk735438 = require("./735438.js"),
   Chunk718116 = require("./718116.js"),
   Chunk652215 = require("./652215.js");
 
-function m(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,19 +24,19 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
 }
-let _ = [],
+let b = [],
   E = null,
   O = false,
   y = Chunk652215.XlH.CLOSED,
@@ -45,18 +45,18 @@ let _ = [],
   S = null;
 
 function C() {
-  if (r = null != (i = p.A.getChannel()) ? f.A.getGuild(i.guild_id) : null, _ = null != i && null != r && h.A.can(g.xBc.MANAGE_WEBHOOKS, i) ? A.A.getWebhooksForChannel(r.id, i.id) : [], null != E) {
+  if (r = null != (i = p.A.getChannel()) ? h.A.getGuild(i.guild_id) : null, b = null != i && null != r && g.A.can(m.xBc.MANAGE_WEBHOOKS, i) ? f.A.getWebhooksForChannel(r.id, i.id) : [], null != E) {
     let e = T(E.id);
     null != e && (E = e)
   }
-  y = g.XlH.OPEN, I = {}, v = false
+  y = m.XlH.OPEN, I = {}, v = false
 }
 let N = o().debounce(() => {
   v && ((null == E || o().isEqual(E, T(E.id))) && (v = false), v || x.emitChange())
 }, 500);
 
 function T(e) {
-  return _.find(t => {
+  return b.find(t => {
     let {
       id: n
     } = t;
@@ -65,13 +65,13 @@ function T(e) {
 }
 class j extends(a = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(p.A, f.A, A.A, h.A)
+    this.waitFor(p.A, h.A, f.A, g.A)
   }
   hasChanges() {
     return v
   }
   get webhooks() {
-    return _
+    return b
   }
   get editedWebhook() {
     return E
@@ -87,8 +87,8 @@ class j extends(a = Chunk311907.Ay.Store) {
   }
   getProps() {
     return {
-      submitting: y === g.XlH.SUBMITTING,
-      webhooks: _,
+      submitting: y === m.XlH.SUBMITTING,
+      webhooks: b,
       editedWebhook: E,
       section: l,
       sectionId: S,
@@ -98,7 +98,7 @@ class j extends(a = Chunk311907.Ay.Store) {
     }
   }
 }
-m(j, "displayName", "ChannelSettingsIntegrationsStore");
+A(j, "displayName", "ChannelSettingsIntegrationsStore");
 let x = new j(Chunk73153.h, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_INIT: C,
     INTEGRATION_SETTINGS_SAVE_SUCCESS: C,
@@ -106,8 +106,8 @@ let x = new j(Chunk73153.h, __OVERLAY__ ? {} : {
       let {
         section: t
       } = e;
-      if (t !== g.p_A.INTEGRATIONS) returnfalse;
-      if (l = g.wLn.OVERVIEW, null == r) {
+      if (t !== m.p_A.INTEGRATIONS) returnfalse;
+      if (l = m.wLn.OVERVIEW, null == r) {
         let e = p.A.getChannel(),
           t = null == e ? true : e.getGuildId();
         null != e && null != t && (d.A.fetchForChannel(t, e.id), O = true), C()
@@ -135,10 +135,10 @@ let x = new j(Chunk73153.h, __OVERLAY__ ? {} : {
         settings: t
       } = e;
       if (null == E) returnfalse;
-      E = b({}, E), null != t.name && E.name !== t.name && (E.name = t.name, v = true), true !== t.avatar && E.avatar !== t.avatar && (E.avatar = t.avatar, v = true), null != t.channelId && E.channel_id !== t.channelId && (E.channel_id = t.channelId, v = true), v && N()
+      E = _({}, E), null != t.name && E.name !== t.name && (E.name = t.name, v = true), true !== t.avatar && E.avatar !== t.avatar && (E.avatar = t.avatar, v = true), null != t.channelId && E.channel_id !== t.channelId && (E.channel_id = t.channelId, v = true), v && N()
     },
     CHANNEL_SETTINGS_CLOSE: function() {
-      i = null, r = null, _ = [], E = null, y = g.XlH.CLOSED
+      i = null, r = null, b = [], E = null, y = m.XlH.CLOSED
     },
     WEBHOOKS_UPDATE: function(e) {
       let {
@@ -146,9 +146,9 @@ let x = new j(Chunk73153.h, __OVERLAY__ ? {} : {
         channelId: n,
         webhooks: l
       } = e;
-      if (O = false, null != r && t === r.id && null != i && n === i.id && null != l && y !== g.XlH.SUBMITTING) {
-        for (let e = _.length - 1; e >= 0; e--) {
-          let t = _[e];
+      if (O = false, null != r && t === r.id && null != i && n === i.id && null != l && y !== m.XlH.SUBMITTING) {
+        for (let e = b.length - 1; e >= 0; e--) {
+          let t = b[e];
           if (null != n && (null == t ? true : t.channel_id) !== n) continue;
           let r = l.find(e => {
             let {
@@ -157,26 +157,26 @@ let x = new j(Chunk73153.h, __OVERLAY__ ? {} : {
             if (n === t.id) returntrue
           });
           if (null != r) {
-            let n = b({}, t, r);
-            _[e] = n, v || (null == E ? true : E.id) !== n.id || (E = n)
-          } else(null == E ? true : E.id) === t.id && (E = null), _.splice(e, 1)
+            let n = _({}, t, r);
+            b[e] = n, v || (null == E ? true : E.id) !== n.id || (E = n)
+          } else(null == E ? true : E.id) === t.id && (E = null), b.splice(e, 1)
         }
-        for (let e of l) null == _.find(t => {
+        for (let e of l) null == b.find(t => {
           let {
             id: n
           } = t;
           if (n === e.id) returntrue
-        }) && _.push(e);
-        _ = [..._], N()
+        }) && b.push(e);
+        b = [...b], N()
       }
     },
     INTEGRATION_SETTINGS_SUBMITTING: function() {
-      y = g.XlH.SUBMITTING, I = {}
+      y = m.XlH.SUBMITTING, I = {}
     },
     INTEGRATION_SETTINGS_SAVE_FAILURE: function(e) {
       var t;
-      if (y !== g.XlH.SUBMITTING) returnfalse;
-      y = g.XlH.OPEN, I = null != (t = e.errors) ? t : {}
+      if (y !== m.XlH.SUBMITTING) returnfalse;
+      y = m.XlH.OPEN, I = null != (t = e.errors) ? t : {}
     }
   }),
   P = x

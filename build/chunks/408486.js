@@ -12,8 +12,8 @@ var Chunk64700 = require("./64700.js"),
   Chunk652215 = require("./652215.js");
 
 function u() {
-  let e = a.tz.useSetting(),
-    t = (0, l.bG)([s.A], () => s.A.getStatus());
+  let e = s.tz.useSetting(),
+    t = (0, l.bG)([a.A], () => a.A.getStatus());
   (0, r.useEffect)(() => {
     o.default.track(c.HAw.RUNNING_GAME_CARD_STATE_CHANGED, {
       show_current_game: e,

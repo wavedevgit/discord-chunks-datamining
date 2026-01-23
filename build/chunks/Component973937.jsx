@@ -15,15 +15,15 @@ var Chunk311907 = require("./311907.js"),
 function u(e) {
   let {
     selectedParticipant: t
-  } = (0, l.cf)([s.A], () => ({
-    selectedParticipant: s.A.getSelectedParticipant(e)
+  } = (0, l.cf)([a.A], () => ({
+    selectedParticipant: a.A.getSelectedParticipant(e)
   }), [e]);
   return (0, r.jsx)(i.sL, {
     id: "call-grid-view",
     label: c.intl.string(c.t["3jrUBj"]),
     checked: null == t,
     action: () => {
-      null != t ? a.A.selectParticipant(e, null) : a.A.selectParticipant(e, o.jd.AUTO)
+      null != t ? s.A.selectParticipant(e, null) : s.A.selectParticipant(e, o.jd.AUTO)
     }
   })
 }

@@ -80,32 +80,32 @@ let m = e => {
     mimeType: m,
     fileName: g,
     focusProps: E,
-    onClick: b
-  } = e, y = _(e, ["href", "className", "iconClassName", "rel", "target", "mimeType", "fileName", "focusProps", "onClick"]), O = i.useMemo(() => a.V.getDefaultLinkInterceptor(t), [t]), A = i.useCallback(e => {
+    onClick: y
+  } = e, b = _(e, ["href", "className", "iconClassName", "rel", "target", "mimeType", "fileName", "focusProps", "onClick"]), O = i.useMemo(() => a.V.getDefaultLinkInterceptor(t), [t]), v = i.useCallback(e => {
     o.default.track(l.HAw.MEDIA_DOWNLOAD_BUTTON_TAPPED, {
       attachment_type: null == m ? true : m[0],
       attachment_subtype: null == m ? true : m[1]
-    }), null == b || b(), null == O || O(e)
-  }, [O, m, b]);
+    }), null == y || y(), null == O || O(e)
+  }, [O, m, y]);
   return null != g ? (0, r.jsx)(s.MzZ, p(d({
     href: t,
-    onClick: A,
+    onClick: v,
     target: h,
     rel: f,
     className: n,
     "aria-label": c.intl.string(c.t["1WjMbC"]),
     focusProps: E
-  }, y), {
+  }, b), {
     children: g
   })) : (0, r.jsx)(s.MzZ, p(d({
     href: t,
-    onClick: A,
+    onClick: v,
     target: h,
     rel: f,
     className: n,
     "aria-label": c.intl.string(c.t["1WjMbC"]),
     focusProps: E
-  }, y), {
+  }, b), {
     children: (0, r.jsx)(s.s3U, {
       size: "md",
       color: "currentColor",

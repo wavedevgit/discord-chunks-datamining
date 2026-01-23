@@ -1,22 +1,22 @@
 /** Chunk was on 80971 **/
-/** chunk id: 619006, original params: e,t,l (module,exports,require) **/
+/** chunk id: 619006, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  XC: () => o,
-  os: () => s,
-  qK: () => r
+  XC: () => r,
+  os: () => o,
+  qK: () => s
 });
 var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
   Chunk545868 = require("./545868.js"),
   Chunk652215 = require("./652215.js");
 
-function s(e, t) {
-  n.Bo.get({
-    url: c.Rsh.GUILD_ROLE_CONNECTIONS_CONFIGURATION(e, t),
+function o(e, n) {
+  l.Bo.get({
+    url: i.Rsh.GUILD_ROLE_CONNECTIONS_CONFIGURATION(e, n),
     rejectWithError: true
   }).then(e => {
-    let l = [];
-    e.body.length > 0 && (l = e.body.map(e => e.map(e => ({
+    let t = [];
+    e.body.length > 0 && (t = e.body.map(e => e.map(e => ({
       connectionType: e.connection_type,
       connectionMetadataField: e.connection_metadata_field,
       applicationId: e.application_id,
@@ -24,49 +24,49 @@ function s(e, t) {
       value: e.value
     })))), a.h.dispatch({
       type: "GUILD_ROLE_CONNECTIONS_CONFIGURATIONS_FETCH_SUCCESS",
-      roleId: t,
-      roleConnectionConfigurations: l
+      roleId: n,
+      roleConnectionConfigurations: t
     })
   }).catch(() => {})
 }
-async function r(e, t, l) {
-  let s = l.map(e => e.map(e => ({
+async function s(e, n, t) {
+  let o = t.map(e => e.map(e => ({
       connection_type: e.connectionType,
       connection_metadata_field: e.connectionMetadataField,
       application_id: e.applicationId,
       operator: e.operator,
       value: e.value
     }))),
-    r = await n.Bo.put({
-      url: c.Rsh.GUILD_ROLE_CONNECTIONS_CONFIGURATION(e, t),
-      body: 0 === s.length ? [] : s,
+    s = await l.Bo.put({
+      url: i.Rsh.GUILD_ROLE_CONNECTIONS_CONFIGURATION(e, n),
+      body: 0 === o.length ? [] : o,
       oldFormErrors: true,
       rejectWithError: false
     }).then(e => {
-      let t = [];
-      return e.body.length > 0 && (t = e.body.map(e => e.map(e => ({
+      let n = [];
+      return e.body.length > 0 && (n = e.body.map(e => e.map(e => ({
         connectionType: e.connection_type,
         connectionMetadataField: e.connection_metadata_field,
         applicationId: e.application_id,
         operator: e.operator,
         value: e.value
-      })))), t
+      })))), n
     }),
-    o = await (0, i.a)(e, t, false);
-  null != o && a.h.dispatch({
+    r = await (0, c.a)(e, n, false);
+  null != r && a.h.dispatch({
     type: "GUILD_ROLE_MEMBER_COUNT_UPDATE",
     guildId: e,
-    roleId: t,
-    count: o
+    roleId: n,
+    count: r
   }), a.h.dispatch({
     type: "GUILD_ROLE_CONNECTIONS_CONFIGURATIONS_FETCH_SUCCESS",
-    roleId: t,
-    roleConnectionConfigurations: r
+    roleId: n,
+    roleConnectionConfigurations: s
   })
 }
-async function o() {
-  return (await n.Bo.get({
-    url: c.Rsh.APPLICATION_USER_ROLE_CONNECTIONS,
+async function r() {
+  return (await l.Bo.get({
+    url: i.Rsh.APPLICATION_USER_ROLE_CONNECTIONS,
     rejectWithError: false
   })).body
 }

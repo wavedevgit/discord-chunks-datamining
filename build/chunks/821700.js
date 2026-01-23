@@ -2,5 +2,5 @@
 /** chunk id: 821700, original params: e,t,n (module,exports,require) **/
 "use strict";
 module.exports = {
-  q: "_53e9977ba42c7f60"
+  q: "footer__8e8b5"
 }

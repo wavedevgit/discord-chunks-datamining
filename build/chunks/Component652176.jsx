@@ -144,9 +144,9 @@ function $(e) {
     mosaicStyleAlt: _,
     mediaLayoutType: h,
     reducedSizeAltTextButton: m
-  } = e, g = z(e, ["onVolumeChange", "onMute", "volume", "autoMute", "alt", "renderAdjacentContent", "renderOverlayContent", "disableAltTextDisplay", "hiddenSpoilers", "mosaicStyleAlt", "mediaLayoutType", "reducedSizeAltTextButton"]), E = Z(t), b = Q(n);
+  } = e, g = z(e, ["onVolumeChange", "onMute", "volume", "autoMute", "alt", "renderAdjacentContent", "renderOverlayContent", "disableAltTextDisplay", "hiddenSpoilers", "mosaicStyleAlt", "mediaLayoutType", "reducedSizeAltTextButton"]), E = Z(t), y = Q(n);
   a = null == a ? j.v1 : a, o = null == o ? j.uj : o;
-  let [y, O] = i.useState(true), [A, S] = i.useState(false), I = h === k.dG.MOSAIC || true === _, T = (y || A) && !f && N._z.getSetting() && null != l && "" !== l && true !== p, C = e => {
+  let [b, O] = i.useState(true), [v, I] = i.useState(false), S = h === k.dG.MOSAIC || true === _, T = (b || v) && !f && N._z.getSetting() && null != l && "" !== l && true !== p, C = e => {
     let {
       altText: t
     } = e;
@@ -169,18 +169,18 @@ function $(e) {
     })
   }, R = i.useRef(null);
   return (0, r.jsxs)(i.Fragment, {
-    children: [(0, r.jsx)(v.A, K(Y({}, g), {
+    children: [(0, r.jsx)(A.A, K(Y({}, g), {
       alt: l,
       autoMute: o,
       mediaLayoutType: h,
       onControlsHide: () => O(false),
       onControlsShow: () => O(true),
-      onMute: b,
+      onMute: y,
       onVolumeChange: E,
       renderLinkComponent: er,
       renderOverlayContent: u,
       volume: a
-    })), null != c && c(), I && T && (0, r.jsx)("div", {
+    })), null != c && c(), S && T && (0, r.jsx)("div", {
       className: B.NO,
       children: (0, r.jsx)(d.YNO, {
         targetElementRef: R,
@@ -194,8 +194,8 @@ function $(e) {
             type: "button",
             ref: R,
             "aria-label": F.intl.string(F.t.fSiQ3A),
-            onMouseEnter: () => S(true),
-            onMouseLeave: () => S(false),
+            onMouseEnter: () => I(true),
+            onMouseLeave: () => I(false),
             className: s()(B.DV, {
               [B.yZ]: true,
               [B.I5]: m
@@ -204,7 +204,7 @@ function $(e) {
           }))
         })
       })
-    }), !I && T && (0, r.jsx)("span", {
+    }), !S && T && (0, r.jsx)("span", {
       className: B.R5,
       children: l
     })]
@@ -227,7 +227,7 @@ function ee(e) {
   n = null == n ? j.v1 : n;
   let f = () => false;
   return (0, r.jsxs)(i.Fragment, {
-    children: [(0, r.jsx)(A.A, K(Y({}, c), {
+    children: [(0, r.jsx)(v.A, K(Y({}, c), {
       onVolumeChange: u,
       onMute: d,
       onVolumeShow: s,
@@ -274,7 +274,7 @@ function en(e) {
       onKeyDown: e => {
         e.key === V.N$.Escape && setTimeout(() => {
           var e;
-          return null == (e = b.current) ? true : e.focus()
+          return null == (e = y.current) ? true : e.focus()
         }, 0)
       },
       children: [(0, r.jsx)("span", {
@@ -285,7 +285,7 @@ function en(e) {
         children: t
       })]
     })
-  }, b = i.createRef();
+  }, y = i.createRef();
   return (0, r.jsxs)("div", {
     className: s()(B.fo, o),
     children: [(0, r.jsxs)("div", {
@@ -295,7 +295,7 @@ function en(e) {
     }), m && g && (0, r.jsx)("div", {
       className: B.Y1,
       children: (0, r.jsx)(d.YNO, {
-        targetElementRef: b,
+        targetElementRef: y,
         animation: d.YNO.Animation.FADE,
         renderPopout: () => (0, r.jsx)(E, {
           altText: t
@@ -304,7 +304,7 @@ function en(e) {
           offset: 4,
           children: (0, r.jsx)("button", K(Y({}, e), {
             type: "button",
-            ref: b,
+            ref: y,
             "aria-label": F.intl.string(F.t.fSiQ3A),
             className: s()(B.DV, {
               [B.I5]: u
@@ -329,7 +329,7 @@ function ei(e) {
     renderAdjacentContent: t
   } = e, n = z(e, ["renderAdjacentContent"]);
   return (0, r.jsxs)(i.Fragment, {
-    children: [(0, r.jsx)(S.A, Y({}, n)), null != t && t()]
+    children: [(0, r.jsx)(I.A, Y({}, n)), null != t && t()]
   })
 }
 
@@ -367,7 +367,7 @@ let ec = e => {
       onClick: n,
       className: i
     } = e;
-    return (0, r.jsx)(b.Y.Consumer, {
+    return (0, r.jsx)(y.Y.Consumer, {
       children: e => e.disableInteractions ? null : (0, r.jsxs)("div", {
         onClick: n,
         className: s()(B.Sg, i),
@@ -396,7 +396,7 @@ let ec = e => {
       loading: n,
       className: i
     } = e;
-    return (0, r.jsx)(b.Y.Consumer, {
+    return (0, r.jsx)(y.Y.Consumer, {
       children: e => e.disableInteractions ? null : (0, r.jsxs)(d.DUT, {
         className: s()(B._5, i),
         onClick: t,
@@ -427,7 +427,7 @@ function ed(e) {
   let {
     content: t,
     channelId: n
-  } = e, [a] = i.useState(() => (0, y.Ld)("NewMessagesBarJumpToNewMessages_")), o = i.useCallback(() => {
+  } = e, [a] = i.useState(() => (0, b.Ld)("NewMessagesBarJumpToNewMessages_")), o = i.useCallback(() => {
     let e = w.Ay.ackMessageId(n);
     null != e ? f.A.jumpToMessage({
       channelId: n,
@@ -448,7 +448,7 @@ function ed(e) {
     })
   }, [n]), {
     disableInteractions: c
-  } = i.useContext(b.Y);
+  } = i.useContext(y.Y);
   return c ? null : (0, r.jsxs)("div", {
     className: s()(B.eb, {
       [B.y7]: c
@@ -491,7 +491,7 @@ function ef(e) {
     scrollManager: h
   } = e, {
     disableInteractions: E
-  } = i.useContext(b.Y), [y, A] = i.useState(null), v = i.useRef(null), [S, N] = i.useState(null), R = i.useRef(null), j = (0, u.yK)([T.A], () => {
+  } = i.useContext(y.Y), [b, v] = i.useState(null), A = i.useRef(null), [I, N] = i.useState(null), R = i.useRef(null), j = (0, u.yK)([T.A], () => {
     var e;
     return null != (e = T.A.summaries(o.id)) ? e : []
   }, [o]), k = (0, g.A)(j);
@@ -519,13 +519,13 @@ function ef(e) {
     }, [j], e_),
     H = null != (t = (0, u.bG)([T.A], () => T.A.visibleSummaryIndex())) ? t : false,
     Y = null == j || null == (n = j[H]) ? true : n.topic;
-  null == Y && null == y && (null == j ? true : j.length) >= 1 && (Y = null == (a = j[0]) ? true : a.topic);
+  null == Y && null == b && (null == j ? true : j.length) >= 1 && (Y = null == (a = j[0]) ? true : a.topic);
   let W = i.useMemo(() => l().debounce(e => {
       var t;
-      A(null != (t = null == e ? true : e.id) ? t : null)
-    }, 64), [A]),
+      v(null != (t = null == e ? true : e.id) ? t : null)
+    }, 64), [v]),
     K = i.useMemo(() => l().throttle(() => {
-      (0, I.C6)(null)
+      (0, S.C6)(null)
     }, 1200, {
       trailing: false
     }), []),
@@ -550,7 +550,7 @@ function ef(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : G.eh.PILL_DROPDOWN,
         n = j[e];
       if (null == n) return;
-      (0, I.sK)(o.id, n.id), (0, I.C6)(o.id, n.id);
+      (0, S.sK)(o.id, n.id), (0, S.C6)(o.id, n.id);
       let r = () => {
         h.removeScrollCompleteCallback(r), setTimeout(() => {
           h.addAutomaticAnchorCallback(z, false)
@@ -578,16 +578,16 @@ function ef(e) {
       null != n && N(n)
     }, []);
   i.useEffect(() => {
-    if (null != S && q) {
+    if (null != I && q) {
       var e;
       null == (e = R.current) || e.scrollTo({
-        top: S
+        top: I
       })
     }
-  }, [S, q]);
+  }, [I, q]);
   let J = i.useCallback(e => {
     var t;
-    (0, c.vq)(e.target) && (null == (t = v.current) ? true : t.contains(e.target)) || (q && x.default.track(U.HAw.SUMMARIES_TOPICS_PILL_TOGGLED, {
+    (0, c.vq)(e.target) && (null == (t = A.current) ? true : t.contains(e.target)) || (q && x.default.track(U.HAw.SUMMARIES_TOPICS_PILL_TOGGLED, {
       topics_dropdown_open: false,
       num_summaries: j.length,
       message_counts: j.map(e => e.count),
@@ -602,7 +602,7 @@ function ef(e) {
   i.useEffect(() => (h.addAutomaticAnchorCallback(z), () => {
     h.removeAutomaticAnchorCallback(z)
   }), [h, z]), i.useEffect(() => {
-    (0, I.$T)(o.id)
+    (0, S.$T)(o.id)
   }, [o.id]), i.useEffect(() => (document.addEventListener("mousedown", J), () => {
     document.removeEventListener("mousedown", J)
   }), [J]);
@@ -636,7 +636,7 @@ function ef(e) {
     }, [o.id]),
     er = F.intl.string(F.t["38qwgO"]);
   return j.length > 0 && (er = "" === Y || null == Y ? F.intl.string(F.t.DwnFuG) : Y), E ? null : (0, r.jsxs)("div", {
-    ref: v,
+    ref: A,
     className: s()(B.dw, B.jh),
     children: [(0, r.jsx)("div", {
       className: B.qm,
@@ -734,7 +734,7 @@ function eh(e) {
     scrollManager: p
   } = e, {
     disableInteractions: _
-  } = i.useContext(b.Y), [h, E] = i.useState(null), y = i.useRef(null), [A, v] = i.useState(null), S = i.useRef(null), N = (0, u.yK)([T.A], () => {
+  } = i.useContext(y.Y), [h, E] = i.useState(null), b = i.useRef(null), [v, A] = i.useState(null), I = i.useRef(null), N = (0, u.yK)([T.A], () => {
     var e;
     return null != (e = T.A.summaries(o.id)) ? e : []
   }, [o]), R = (0, g.A)(N);
@@ -770,7 +770,7 @@ function eh(e) {
       E(null != (t = null == e ? true : e.id) ? t : null)
     }, 64), [E]),
     Y = i.useMemo(() => l().throttle(() => {
-      (0, I.C6)(null)
+      (0, S.C6)(null)
     }, 1200, {
       trailing: false
     }), []),
@@ -795,7 +795,7 @@ function eh(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : G.eh.PILL_DROPDOWN,
         n = N[e];
       if (null == n) return;
-      (0, I.sK)(o.id, n.id), (0, I.C6)(o.id, n.id);
+      (0, S.sK)(o.id, n.id), (0, S.C6)(o.id, n.id);
       let r = () => {
         p.removeScrollCompleteCallback(r), setTimeout(() => {
           p.addAutomaticAnchorCallback(W, false)
@@ -825,20 +825,20 @@ function eh(e) {
     $ = i.useCallback(e => {
       var t;
       z(e);
-      let n = null == (t = S.current) ? true : t.scrollTop;
-      null != n && v(n)
+      let n = null == (t = I.current) ? true : t.scrollTop;
+      null != n && A(n)
     }, []);
   i.useEffect(() => {
-    if (null != A && K) {
+    if (null != v && K) {
       var e;
-      null == (e = S.current) || e.scrollTo({
-        top: A
+      null == (e = I.current) || e.scrollTo({
+        top: v
       })
     }
-  }, [A, K]);
+  }, [v, K]);
   let J = i.useCallback(e => {
     var t;
-    (0, c.vq)(e.target) && (null == (t = y.current) ? true : t.contains(e.target)) || (K && x.default.track(U.HAw.SUMMARIES_TOPICS_PILL_TOGGLED, {
+    (0, c.vq)(e.target) && (null == (t = b.current) ? true : t.contains(e.target)) || (K && x.default.track(U.HAw.SUMMARIES_TOPICS_PILL_TOGGLED, {
       topics_dropdown_open: false,
       num_summaries: N.length,
       message_counts: N.map(e => e.count),
@@ -853,7 +853,7 @@ function eh(e) {
   i.useEffect(() => (p.addAutomaticAnchorCallback(W), () => {
     p.removeAutomaticAnchorCallback(W)
   }), [p, W]), i.useEffect(() => {
-    (0, I.$T)(o.id)
+    (0, S.$T)(o.id)
   }, [o.id]), i.useEffect(() => (document.addEventListener("mousedown", J), () => {
     document.removeEventListener("mousedown", J)
   }), [J]);
@@ -867,7 +867,7 @@ function eh(e) {
   if (!(0, u.bG)([T.A], () => T.A.shouldShowTopicsBar())) return null;
   let et = F.intl.string(F.t["38qwgO"]);
   return N.length > 0 && (et = "" === M || null == M ? F.intl.string(F.t.DwnFuG) : M), _ ? null : (0, r.jsxs)("div", {
-    ref: y,
+    ref: b,
     className: s()(B.$T, B.jh),
     children: [(0, r.jsxs)("div", {
       className: B.sE,
@@ -951,7 +951,7 @@ function eh(e) {
           })
         })]
       }), (0, r.jsx)(d.HOs, {
-        ref: S,
+        ref: I,
         className: B.Pe,
         fade: true,
         children: ee

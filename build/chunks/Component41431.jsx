@@ -24,15 +24,15 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk97051 = require("./97051.js");
-let v = Chunk64700.lazy(() => n.e("94436").then(n.bind(n, 660207)));
+let A = Chunk64700.lazy(() => n.e("94436").then(n.bind(n, 660207)));
 
-function S(e) {
-  let t = (b.CA.indexOf(e) + 1) % b.CA.length,
-    n = b.CA[t];
+function I(e) {
+  let t = (y.CA.indexOf(e) + 1) % y.CA.length,
+    n = y.CA[t];
   (0, u.Y)(n, d.k0.VOICE_MESSAGE)
 }
 
-function I(e) {
+function S(e) {
   let {
     played: t,
     duration: n,
@@ -40,7 +40,7 @@ function I(e) {
   } = e, a = null == n ? "--:--" : t ? (0, p.rB)(Math.ceil(n - i)) : (0, p.rB)(Math.ceil(n));
   return (0, r.jsx)(l.Text, {
     variant: "text-sm/normal",
-    className: A.p0,
+    className: v.p0,
     tabularNumbers: true,
     children: a
   })
@@ -62,10 +62,10 @@ function T(e, t, n) {
 
 function C(e, t, n) {
   i.useEffect(() => {
-    if (t) return h._.dispatch(y.jej.VOICE_MESSAGE_PLAYBACK_STARTED, {
+    if (t) return h._.dispatch(b.jej.VOICE_MESSAGE_PLAYBACK_STARTED, {
       src: e
-    }), h._.subscribe(y.jej.VOICE_MESSAGE_PLAYBACK_STARTED, r), () => {
-      h._.unsubscribe(y.jej.VOICE_MESSAGE_PLAYBACK_STARTED, r)
+    }), h._.subscribe(b.jej.VOICE_MESSAGE_PLAYBACK_STARTED, r), () => {
+      h._.unsubscribe(b.jej.VOICE_MESSAGE_PLAYBACK_STARTED, r)
     };
 
     function r(t) {
@@ -82,8 +82,8 @@ let N = Chunk64700.memo(function(e) {
       volume: a = 1,
       onVolumeChange: p,
       onMute: h,
-      waveform: b,
-      durationSecs: y,
+      waveform: y,
+      durationSecs: b,
       onVolumeShow: N,
       onVolumeHide: R,
       onPlay: w,
@@ -96,7 +96,7 @@ let N = Chunk64700.memo(function(e) {
     M = (0, o.bG)([d.Ay], () => d.Ay.getPlaybackRate(d.k0.VOICE_MESSAGE)),
     [k, U] = i.useState(j > 0),
     [G, V] = i.useState(j),
-    [F, B] = i.useState(y),
+    [F, B] = i.useState(b),
     [H, Y] = i.useState(false),
     [W, K] = i.useState(false),
     [z, q] = i.useState(false),
@@ -115,8 +115,8 @@ let N = Chunk64700.memo(function(e) {
       isNaN(t) || B(t)
     }, []),
     ea = i.useCallback(e => {
-      null != y && null != x && (0, u.d)(x, e, y)
-    }, [x, y]),
+      null != b && null != x && (0, u.d)(x, e, b)
+    }, [x, b]),
     es = i.useCallback(() => {
       K(false), null == et.current && (et.current = setTimeout(() => {
         U(false), Z(false), et.current = true
@@ -194,15 +194,15 @@ let N = Chunk64700.memo(function(e) {
       }
   }, [W, n, F, ea]), T(L, W, V), C(n, W, K);
   let eE = W ? l.E$n : l.udU,
-    eb = W ? O.intl.string(O.t.ZcgDJX) : O.intl.string(O.t.RscU7I),
-    ey = O.intl.formatToPlainString(O.t.LgCPMt, {
+    ey = W ? O.intl.string(O.t.ZcgDJX) : O.intl.string(O.t.RscU7I),
+    eb = O.intl.formatToPlainString(O.t.LgCPMt, {
       playbackRate: M
     }),
     eO = "".concat(M.toString().replace(/^0/, ""), "X");
   t = "Safari" === platform.name ? (0, r.jsx)(i.Suspense, {
-    children: (0, r.jsx)(v, {
+    children: (0, r.jsx)(A, {
       ref: L,
-      className: A.Zn,
+      className: v.Zn,
       src: n,
       preload: Q,
       playing: W && !z,
@@ -215,7 +215,7 @@ let N = Chunk64700.memo(function(e) {
     })
   }) : (0, r.jsx)(f.A, {
     ref: L,
-    className: A.Zn,
+    className: v.Zn,
     controls: false,
     preload: Q,
     onEnded: eo,
@@ -229,31 +229,31 @@ let N = Chunk64700.memo(function(e) {
       src: n
     })
   });
-  let eA = (0, o.bG)([c.A], () => c.A.useReducedMotion);
+  let ev = (0, o.bG)([c.A], () => c.A.useReducedMotion);
   return (0, r.jsxs)("div", {
-    className: s()(A.kL, {
-      [A.he]: W
+    className: s()(v.kL, {
+      [v.he]: W
     }),
     onMouseEnter: er,
     children: [(0, r.jsx)("div", {
-      className: A.Kl,
+      className: v.Kl,
       children: (0, r.jsx)("div", {
-        className: s()(A.fq, {
-          [A.VN]: eA
+        className: s()(v.fq, {
+          [v.VN]: ev
         })
       })
     }), (0, r.jsx)(l.DUT, {
-      className: A.k0,
+      className: v.k0,
       onClick: en,
-      "aria-label": eb,
+      "aria-label": ey,
       children: (0, r.jsx)(eE, {
-        className: A.uZ,
+        className: v.uZ,
         color: "currentColor",
         size: "sm"
       })
     }), (0, r.jsx)(E.A, {
-      className: A.ou,
-      waveform: b,
+      className: v.ou,
+      waveform: y,
       currentTime: G,
       duration: null != F ? F : 1,
       playing: W,
@@ -261,24 +261,24 @@ let N = Chunk64700.memo(function(e) {
       onDrag: e_,
       onDragStart: ef,
       onDragEnd: ep
-    }), (0, r.jsx)(I, {
+    }), (0, r.jsx)(S, {
       played: k,
       currentTime: G,
       duration: F
     }), (0, r.jsx)(l.DUT, {
-      className: A.LJ,
-      onClick: () => S(M),
-      "aria-label": ey,
+      className: v.LJ,
+      onClick: () => I(M),
+      "aria-label": eb,
       children: (0, r.jsx)(l.Text, {
         variant: "text-xs/semibold",
-        className: A.Sn,
+        className: v.Sn,
         children: eO
       })
     }), (0, r.jsx)(_.A, {
-      className: A.bk,
-      iconClassName: A._j,
+      className: v.bk,
+      iconClassName: v._j,
       iconColor: "currentColor",
-      sliderWrapperClassName: A.MQ,
+      sliderWrapperClassName: v.MQ,
       muted: H,
       value: (0, g.M)(J, 1),
       minValue: 0,

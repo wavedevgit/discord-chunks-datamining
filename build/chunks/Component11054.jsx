@@ -2,7 +2,7 @@
 /** chunk id: 11054, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => y
+  M: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,45 +22,45 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk552696 = require("./552696.js");
 
-function y(e) {
+function b(e) {
   var t;
   let {
     handleClose: n
   } = e, {
     analyticsLocations: a
   } = (0, c.Ay)(), {
-    skusById: y,
+    skusById: b,
     selectedSkuId: O,
-    application: A
+    application: v
   } = (0, d.P5)(), {
-    isGift: v,
-    giftRecipient: S
+    isGift: A,
+    giftRecipient: I
   } = (0, u.Pv)();
-  s()(null != O, "Expected selectedSkuId"), s()(null != A, "Expected application");
-  let I = y[O];
-  return (s()(null != I, "Expected sku"), i.useEffect(() => {
-    v || ((0, m.j)(), n(), (0, h.n)({
-      sku: I,
-      application: A,
+  s()(null != O, "Expected selectedSkuId"), s()(null != v, "Expected application");
+  let S = b[O];
+  return (s()(null != S, "Expected sku"), i.useEffect(() => {
+    A || ((0, m.j)(), n(), (0, h.n)({
+      sku: S,
+      application: v,
       analyticsLocations: a
     }))
-  }, [v, I, A, n, a]), v) ? (0, r.jsxs)(f.dZ, {
+  }, [A, S, v, n, a]), A) ? (0, r.jsxs)(f.dZ, {
     children: [(0, r.jsx)(_.A, {}), (0, r.jsx)(p.A, {}), (0, r.jsxs)("div", {
-      className: b.EL,
+      className: y.EL,
       children: [(0, r.jsx)(g.e, {
-        sku: I,
+        sku: S,
         shape: "square",
-        containerClassName: b.LC
+        containerClassName: y.LC
       }), (0, r.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
-        className: b.RS,
+        className: y.RS,
         children: E.intl.string(E.t["5glWta"])
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
-        className: b.Kz,
+        className: y.Kz,
         children: E.intl.formatToPlainString(E.t["2VjPTw"], {
-          itemName: I.name,
-          giftRecipient: null != (t = null == S ? true : S.username) ? t : "your recipient"
+          itemName: S.name,
+          giftRecipient: null != (t = null == I ? true : I.username) ? t : "your recipient"
         })
       }), (0, r.jsx)(o.$nd, {
         onClick: n,

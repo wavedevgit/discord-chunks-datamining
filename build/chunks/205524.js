@@ -53,19 +53,19 @@ function o(e, t) {
     m = t[14],
     g = t[15],
     E = n * o - r * s,
-    b = n * l - i * s,
-    y = n * c - a * s,
+    y = n * l - i * s,
+    b = n * c - a * s,
     O = r * l - i * o,
-    A = r * c - a * o,
-    v = i * c - a * l,
-    S = u * h - d * _,
-    I = u * m - f * _,
+    v = r * c - a * o,
+    A = i * c - a * l,
+    I = u * h - d * _,
+    S = u * m - f * _,
     T = u * g - p * _,
     C = d * m - f * h,
     N = d * g - p * h,
     R = f * g - p * m,
-    w = E * R - b * N + y * C + O * T - A * I + v * S;
-  return w ? (w = 1 / w, e[0] = (o * R - l * N + c * C) * w, e[1] = (i * N - r * R - a * C) * w, e[2] = (h * v - m * A + g * O) * w, e[3] = (f * A - d * v - p * O) * w, e[4] = (l * T - s * R - c * I) * w, e[5] = (n * R - i * T + a * I) * w, e[6] = (m * y - _ * v - g * b) * w, e[7] = (u * v - f * y + p * b) * w, e[8] = (s * N - o * T + c * S) * w, e[9] = (r * T - n * N - a * S) * w, e[10] = (_ * A - h * y + g * E) * w, e[11] = (d * y - u * A - p * E) * w, e[12] = (o * I - s * C - l * S) * w, e[13] = (n * C - r * I + i * S) * w, e[14] = (h * b - _ * O - m * E) * w, e[15] = (u * O - d * b + f * E) * w, e) : null
+    w = E * R - y * N + b * C + O * T - v * S + A * I;
+  return w ? (w = 1 / w, e[0] = (o * R - l * N + c * C) * w, e[1] = (i * N - r * R - a * C) * w, e[2] = (h * A - m * v + g * O) * w, e[3] = (f * v - d * A - p * O) * w, e[4] = (l * T - s * R - c * S) * w, e[5] = (n * R - i * T + a * S) * w, e[6] = (m * b - _ * A - g * y) * w, e[7] = (u * A - f * b + p * y) * w, e[8] = (s * N - o * T + c * I) * w, e[9] = (r * T - n * N - a * I) * w, e[10] = (_ * v - h * b + g * E) * w, e[11] = (d * b - u * v - p * E) * w, e[12] = (o * S - s * C - l * I) * w, e[13] = (n * C - r * S + i * I) * w, e[14] = (h * y - _ * O - m * E) * w, e[15] = (u * O - d * y + f * E) * w, e) : null
 }
 
 function l(e, t, n) {
@@ -85,11 +85,11 @@ function l(e, t, n) {
     m = t[13],
     g = t[14],
     E = t[15],
-    b = n[0],
-    y = n[1],
+    y = n[0],
+    b = n[1],
     O = n[2],
-    A = n[3];
-  return e[0] = b * r + y * o + O * d + A * h, e[1] = b * i + y * l + O * f + A * m, e[2] = b * a + y * c + O * p + A * g, e[3] = b * s + y * u + O * _ + A * E, b = n[4], y = n[5], O = n[6], A = n[7], e[4] = b * r + y * o + O * d + A * h, e[5] = b * i + y * l + O * f + A * m, e[6] = b * a + y * c + O * p + A * g, e[7] = b * s + y * u + O * _ + A * E, b = n[8], y = n[9], O = n[10], A = n[11], e[8] = b * r + y * o + O * d + A * h, e[9] = b * i + y * l + O * f + A * m, e[10] = b * a + y * c + O * p + A * g, e[11] = b * s + y * u + O * _ + A * E, b = n[12], y = n[13], O = n[14], A = n[15], e[12] = b * r + y * o + O * d + A * h, e[13] = b * i + y * l + O * f + A * m, e[14] = b * a + y * c + O * p + A * g, e[15] = b * s + y * u + O * _ + A * E, e
+    v = n[3];
+  return e[0] = y * r + b * o + O * d + v * h, e[1] = y * i + b * l + O * f + v * m, e[2] = y * a + b * c + O * p + v * g, e[3] = y * s + b * u + O * _ + v * E, y = n[4], b = n[5], O = n[6], v = n[7], e[4] = y * r + b * o + O * d + v * h, e[5] = y * i + b * l + O * f + v * m, e[6] = y * a + b * c + O * p + v * g, e[7] = y * s + b * u + O * _ + v * E, y = n[8], b = n[9], O = n[10], v = n[11], e[8] = y * r + b * o + O * d + v * h, e[9] = y * i + b * l + O * f + v * m, e[10] = y * a + b * c + O * p + v * g, e[11] = y * s + b * u + O * _ + v * E, y = n[12], b = n[13], O = n[14], v = n[15], e[12] = y * r + b * o + O * d + v * h, e[13] = y * i + b * l + O * f + v * m, e[14] = y * a + b * c + O * p + v * g, e[15] = y * s + b * u + O * _ + v * E, e
 }
 
 function c(e, t, n) {
@@ -132,11 +132,11 @@ function f(e, t, n, i) {
   var s, o, l, c, u, d, f, p, _, h, m = t[0],
     g = t[1],
     E = t[2],
-    b = i[0],
-    y = i[1],
+    y = i[0],
+    b = i[1],
     O = i[2],
-    A = n[0],
-    v = n[1],
-    S = n[2];
-  return Math.abs(m - A) < r.p8 && Math.abs(g - v) < r.p8 && Math.abs(E - S) < r.p8 ? a(e) : (h = 1 / Math.sqrt((f = m - A) * f + (p = g - v) * p + (_ = E - S) * _), f *= h, p *= h, _ *= h, (h = Math.sqrt((s = y * _ - O * p) * s + (o = O * f - b * _) * o + (l = b * p - y * f) * l)) ? (s *= h = 1 / h, o *= h, l *= h) : (s = 0, o = 0, l = 0), (h = Math.sqrt((c = p * l - _ * o) * c + (u = _ * s - f * l) * u + (d = f * o - p * s) * d)) ? (c *= h = 1 / h, u *= h, d *= h) : (c = 0, u = 0, d = 0), e[0] = s, e[1] = c, e[2] = f, e[3] = 0, e[4] = o, e[5] = u, e[6] = p, e[7] = 0, e[8] = l, e[9] = d, e[10] = _, e[11] = 0, e[12] = -(s * m + o * g + l * E), e[13] = -(c * m + u * g + d * E), e[14] = -(f * m + p * g + _ * E), e[15] = 1, e)
+    v = n[0],
+    A = n[1],
+    I = n[2];
+  return Math.abs(m - v) < r.p8 && Math.abs(g - A) < r.p8 && Math.abs(E - I) < r.p8 ? a(e) : (h = 1 / Math.sqrt((f = m - v) * f + (p = g - A) * p + (_ = E - I) * _), f *= h, p *= h, _ *= h, (h = Math.sqrt((s = b * _ - O * p) * s + (o = O * f - y * _) * o + (l = y * p - b * f) * l)) ? (s *= h = 1 / h, o *= h, l *= h) : (s = 0, o = 0, l = 0), (h = Math.sqrt((c = p * l - _ * o) * c + (u = _ * s - f * l) * u + (d = f * o - p * s) * d)) ? (c *= h = 1 / h, u *= h, d *= h) : (c = 0, u = 0, d = 0), e[0] = s, e[1] = c, e[2] = f, e[3] = 0, e[4] = o, e[5] = u, e[6] = p, e[7] = 0, e[8] = l, e[9] = d, e[10] = _, e[11] = 0, e[12] = -(s * m + o * g + l * E), e[13] = -(c * m + u * g + d * E), e[14] = -(f * m + p * g + _ * E), e[15] = 1, e)
 }

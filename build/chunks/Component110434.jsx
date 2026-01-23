@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 110434, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 }), require("./65821.js");
 var r, Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -13,8 +13,8 @@ var Chunk503698 = require("./503698.js"),
   Chunk531685 = require("./531685.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk208744 = require("./208744.js"),
-  f = ((r = f || {})[r.STAFF_NOTES = 1] = "STAFF_NOTES", r);
-let h = Chunk311907.Ay.connectStores([Chunk531685.A], () => ({
+  h = ((r = h || {})[r.STAFF_NOTES = 1] = "STAFF_NOTES", r);
+let g = Chunk311907.Ay.connectStores([Chunk531685.A], () => ({
     animate: u.A.isFocused()
   }))(e => {
     let {
@@ -40,7 +40,7 @@ let h = Chunk311907.Ay.connectStores([Chunk531685.A], () => ({
       })]
     })
   }),
-  A = e => {
+  f = e => {
     let {
       data: t,
       className: n
@@ -53,7 +53,7 @@ let h = Chunk311907.Ay.connectStores([Chunk531685.A], () => ({
       } = t.staffNotes;
       return null == e ? null : (0, i.jsxs)("div", {
         className: n,
-        children: [(0, i.jsx)(h, {
+        children: [(0, i.jsx)(g, {
           user: e,
           className: p.wx
         }), (0, i.jsx)("div", {
@@ -64,5 +64,5 @@ let h = Chunk311907.Ay.connectStores([Chunk531685.A], () => ({
     }
     throw Error("Unknown type")
   };
-A.Types = f;
-let g = A
+f.Types = h;
+let m = f

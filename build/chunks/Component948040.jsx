@@ -1,7 +1,7 @@
 /** Chunk was on 21968 **/
 /** chunk id: 948040, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -31,30 +31,30 @@ function u(e) {
   return e
 }
 
-function b(e) {
+function p(e) {
   let {
     applicationIcon: t,
-    applicationName: b,
-    canNavigate: f,
-    command: p,
-    guildId: m
-  } = e, g = r.useMemo(() => {
+    applicationName: p,
+    canNavigate: m,
+    command: g,
+    guildId: b
+  } = e, f = r.useMemo(() => {
     var e;
-    return 0 !== Object.keys(null != (e = p.permissions) ? e : {}).length
-  }, [p.permissions]), h = r.useCallback(() => {
-    null != p && f() && (0, l.mMO)(async () => {
+    return 0 !== Object.keys(null != (e = g.permissions) ? e : {}).length
+  }, [g.permissions]), h = r.useCallback(() => {
+    null != g && m() && (0, l.mMO)(async () => {
       let {
         default: e
       } = await n.e("15946").then(n.bind(n, 326993));
       return n => (0, i.jsx)(e, u({
         applicationIcon: t,
-        applicationId: p.applicationId,
-        applicationName: b,
-        command: p,
-        guildId: m
+        applicationId: g.applicationId,
+        applicationName: p,
+        command: g,
+        guildId: b
       }, n))
     })
-  }, [t, b, f, p, m]), x = r.useCallback(e => {
+  }, [t, p, m, g, b]), x = r.useCallback(e => {
     (0, a.L3)(e, async () => {
       let {
         default: e
@@ -62,7 +62,7 @@ function b(e) {
       return t => {
         var n, r;
         return (0, i.jsx)(e, (n = u({}, t), r = r = {
-          id: p.id,
+          id: g.id,
           label: c.intl.string(c.t.oJ1Muw)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
@@ -76,7 +76,7 @@ function b(e) {
         }), n))
       }
     })
-  }, [p]), j = p.type === s.kc.CHAT ? l.kC9 : l.ueQ, O = (0, o.p6)(p.type, p.displayName);
+  }, [g]), j = g.type === s.kc.CHAT ? l.kC9 : l.ueQ, O = (0, o.p6)(g.type, g.displayName);
   return (0, i.jsxs)(l.DUT, {
     onClick: h,
     className: d.AS,
@@ -93,7 +93,7 @@ function b(e) {
       })]
     }), (0, i.jsx)("div", {
       className: d.II,
-      children: g ? (0, i.jsxs)("div", {
+      children: f ? (0, i.jsxs)("div", {
         className: d.Bs,
         children: [(0, i.jsx)(l.Text, {
           variant: "text-md/normal",

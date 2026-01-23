@@ -30,16 +30,16 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk231182 = require("./231182.js");
 
-function I() {
+function S() {
   return (0, r.jsx)("div", {
-    className: S.oE,
+    className: I.oE,
     children: (0, r.jsx)(s.y$y, {})
   })
 }
 
 function T() {
-  (0, y.openUserSettings)(b.X.GIFT_PANEL, {
-    section: A.nc_.INVENTORY
+  (0, b.openUserSettings)(y.X.GIFT_PANEL, {
+    section: v.nc_.INVENTORY
   })
 }
 
@@ -49,11 +49,11 @@ function C(e) {
   } = e, n = (0, a.bG)([h.A], () => h.A.isSyncing), s = (0, a.bG)([m.A], () => m.A.paymentSources), l = (0, a.bG)([m.A], () => m.A.defaultPaymentSourceId), c = (0, a.bG)([E.default], () => E.default.locale), d = (0, a.bG)([g.A], () => g.A.getPremiumTypeSubscription()), f = (0, a.bG)([h.A], () => h.A.isRemovingPaymentSource), p = (0, a.bG)([h.A], () => h.A.isUpdatingPaymentSource);
   return (i.useEffect(() => {
     o.$o(), o.hP()
-  }, []), n && 0 === Object.keys(s).length) ? (0, r.jsx)(I, {}) : (0, r.jsx)(u.A, {
+  }, []), n && 0 === Object.keys(s).length) ? (0, r.jsx)(S, {}) : (0, r.jsx)(u.A, {
     showHeader: t,
     paymentSources: s,
     defaultPaymentSourceId: l,
-    premiumSubscriptionPaymentSourceId: null != d && d.status !== A.Dmq.CANCELED ? d.paymentSourceId : null,
+    premiumSubscriptionPaymentSourceId: null != d && d.status !== v.Dmq.CANCELED ? d.paymentSourceId : null,
     locale: c,
     removing: f,
     submitting: p
@@ -67,7 +67,7 @@ function N(e) {
   return (0, r.jsx)(s.po8, {
     messageType: s.YCn.INFO,
     className: t,
-    children: v.intl.format(v.t["8b+FXG"], {
+    children: A.intl.format(A.t["8b+FXG"], {
       onClick: T
     })
   })
@@ -92,17 +92,17 @@ function w() {
     }), (0, r.jsx)(f.x, {
       setting: O.H.BILLING_TRANSACTION_HISTORY,
       children: (0, r.jsx)("div", {
-        className: S.TI,
+        className: I.TI,
         children: (0, r.jsxs)(s.BJc, {
           gap: 16,
           children: [(0, r.jsx)(s.Heading, {
             variant: "heading-lg/semibold",
-            children: v.intl.string(v.t.obLrcK)
+            children: A.intl.string(A.t.obLrcK)
           }), (0, r.jsx)(R, {})]
         })
       })
     }), (0, r.jsx)(N, {
-      className: S.Dt
+      className: I.Dt
     })]
   })
 }
@@ -110,5 +110,5 @@ function w() {
 function P() {
   let e = (0, a.bG)([_.default], () => null != _.default.getCurrentUser()),
     t = (0, a.bG)([p.A], () => p.A.enabled);
-  return e ? t ? (0, r.jsx)(l.A, {}) : (0, r.jsx)(w, {}) : (0, r.jsx)(I, {})
+  return e ? t ? (0, r.jsx)(l.A, {}) : (0, r.jsx)(w, {}) : (0, r.jsx)(S, {})
 }

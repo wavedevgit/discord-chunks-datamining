@@ -25,35 +25,35 @@ function p(e) {
     fallbackSrc: h,
     "aria-hidden": m,
     showTooltip: g = false
-  } = e, E = (0, u.Ay)(), b = "".concat(n, "px"), [y, O] = i.useState(false), [A, v] = i.useState(false), S = null == h || A;
-  if (null == t || y && S) return (0, r.jsx)(c._7Z, {
+  } = e, E = (0, u.Ay)(), y = "".concat(n, "px"), [b, O] = i.useState(false), [v, A] = i.useState(false), I = null == h || v;
+  if (null == t || b && I) return (0, r.jsx)(c._7Z, {
     size: "custom",
     width: "100%",
     height: "100%",
     color: (0, l.Mw)(E) ? c.LU0.colors.WHITE : c.LU0.colors.BLACK,
     style: {
-      maxWidth: b
+      maxWidth: y
     },
     className: s()(f.f, p)
   });
-  let I = "height" === a ? {
-    maxWidth: b,
-    height: b
+  let S = "height" === a ? {
+    maxWidth: y,
+    height: y
   } : {
-    maxWidth: b,
-    minHeight: b
+    maxWidth: y,
+    minHeight: y
   };
   return (0, r.jsx)(o.m, {
     "aria-label": _,
     __unsupportedReactNodeAsText: _,
     shouldShow: g,
     children: (0, r.jsx)("img", {
-      style: I,
+      style: S,
       className: s()(f.f, p),
-      src: y && null != h ? h : t,
+      src: b && null != h ? h : t,
       "aria-hidden": m,
       alt: null != _ ? _ : m ? true : d.intl.string(d.t["2B/phM"]),
-      onError: e => y ? v(true) : O(true)
+      onError: e => b ? A(true) : O(true)
     })
   }, "content-image")
 }

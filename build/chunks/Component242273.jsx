@@ -1,5 +1,5 @@
 /** Chunk was on 70232 **/
-/** chunk id: 242273, original params: e,t,r (module,exports,require) **/
+/** chunk id: 242273, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
   A: () => s
 }), require("./228524.js"), require("./896048.js");
@@ -10,45 +10,45 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk285553 = require("./285553.js");
 
-function s(e) {
+function s(t) {
   let {
-    errorText: t,
+    errorText: e,
     title: r,
     description: s,
-    transitionState: b,
-    onCancel: f,
-    onConfirm: u,
-    children: d
-  } = e, [p, y] = n.useState(false), O = n.useCallback(async () => {
-    y(true);
+    transitionState: u,
+    onCancel: b,
+    onConfirm: d,
+    children: p
+  } = t, [y, f] = a.useState(false), _ = a.useCallback(async () => {
+    f(true);
     try {
-      await u()
-    } catch (e) {
-      throw e
+      await d()
+    } catch (t) {
+      throw t
     } finally {
-      y(false)
+      f(false)
     }
-  }, [u]);
-  return (0, a.jsxs)(c.Modal, {
-    transitionState: b,
-    onClose: f,
+  }, [d]);
+  return (0, n.jsxs)(i.Modal, {
+    transitionState: u,
+    onClose: b,
     title: r,
     subtitle: s,
     actions: [{
-      text: o.intl.string(o.t["ETE/oC"]),
+      text: c.intl.string(c.t["ETE/oC"]),
       variant: "secondary",
-      onClick: f
+      onClick: b
     }, {
-      text: o.intl.string(o.t["R3BPH+"]),
-      onClick: O,
+      text: c.intl.string(c.t["R3BPH+"]),
+      onClick: _,
       variant: "primary",
-      loading: p
+      loading: y
     }],
-    children: [d, null != t && "" !== t ? (0, a.jsx)(i.Text, {
+    children: [p, null != e && "" !== e ? (0, n.jsx)(o.Text, {
       className: l.kc,
       variant: "text-xs/normal",
       color: "text-feedback-critical",
-      children: t
+      children: e
     }) : null]
   })
 }

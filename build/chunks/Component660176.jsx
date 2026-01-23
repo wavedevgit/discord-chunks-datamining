@@ -170,11 +170,11 @@ function H(e) {
   let {
     message: n,
     compact: a
-  } = e, s = T.default.getUser((0, g.ZD)(n)), o = null == (t = S.A.getBasicChannel(n.channel_id)) ? true : t.guild_id, c = null != o && null != s ? I.Ay.getMember(o, s.id) : null, {
+  } = e, s = T.default.getUser((0, g.ZD)(n)), o = null == (t = I.A.getBasicChannel(n.channel_id)) ? true : t.guild_id, c = null != o && null != s ? S.Ay.getMember(o, s.id) : null, {
     avatarSrc: u,
     avatarDecorationSrc: d,
     eventHandlers: _
-  } = (0, A.A)({
+  } = (0, v.A)({
     userId: null == s ? true : s.id,
     guildId: o,
     size: 12
@@ -200,7 +200,7 @@ function H(e) {
             variant: "text-xs/medium",
             color: "text-default",
             children: x.intl.string(x.t.qlFrXW)
-          }), (0, r.jsx)(v.A, {
+          }), (0, r.jsx)(A.A, {
             targetElementRef: h,
             user: s,
             guildId: o,
@@ -251,15 +251,15 @@ function Y(e) {
     raidDatetime: o,
     dmsSent: c,
     raidType: _,
-    resolvedReason: b
-  } = (0, g.Bk)(n), y = (0, d.bG)([S.A], () => S.A.getChannel(n.channel_id), [n.channel_id]), O = null != (t = null == y ? true : y.guild_id) ? t : null, {
-    shouldShowIncidentActions: A
-  } = (0, h.Li)(O), v = (0, N.Am)(n.author.id, n.channel_id), I = e => {
-    v(e)
+    resolvedReason: y
+  } = (0, g.Bk)(n), b = (0, d.bG)([I.A], () => I.A.getChannel(n.channel_id), [n.channel_id]), O = null != (t = null == b ? true : b.guild_id) ? t : null, {
+    shouldShowIncidentActions: v
+  } = (0, h.Li)(O), A = (0, N.Am)(n.author.id, n.channel_id), S = e => {
+    A(e)
   }, T = i.useCallback(() => {
-    let e = null == y ? true : y.guild_id;
+    let e = null == b ? true : b.guild_id;
     null != e && (0, E.is)(n.id, e)
-  }, [n.id, y]), C = _ === u.p.DM_RAID, R = C ? p.EpV : p.EF8;
+  }, [n.id, b]), C = _ === u.p.DM_RAID, R = C ? p.EpV : p.EF8;
   return (0, r.jsx)(K, {
     compact: a,
     header: (0, r.jsxs)(i.Fragment, {
@@ -301,7 +301,7 @@ function Y(e) {
         dateTime: o.toLocaleString(x.intl.currentLocale, m.yc)
       })
     }) : null,
-    footerButtons: A ? (0, r.jsxs)("div", {
+    footerButtons: v ? (0, r.jsxs)("div", {
       className: L.OZ,
       children: [(0, r.jsxs)("div", {
         className: L.AX,
@@ -314,7 +314,7 @@ function Y(e) {
           size: "sm",
           textVariant: "text-xs/medium",
           text: x.intl.string(x.t.DEoVWZ),
-          onClick: I
+          onClick: S
         })]
       }), (0, r.jsx)(G, {}), (0, r.jsx)("div", {
         className: L.AX,
@@ -322,7 +322,7 @@ function Y(e) {
           variant: "primary",
           textVariant: "text-xs/medium",
           size: "sm",
-          text: (0, g.Oj)(b),
+          text: (0, g.Oj)(y),
           onClick: T
         })
       })]
@@ -335,20 +335,20 @@ function W(e) {
   let {
     message: n,
     compact: a
-  } = e, s = null == (t = S.A.getBasicChannel(n.channel_id)) ? true : t.guild_id, {
+  } = e, s = null == (t = I.A.getBasicChannel(n.channel_id)) ? true : t.guild_id, {
     raidDatetime: o,
     decisionId: c,
     suspiciousMentionActivityUntil: u
   } = (0, g.Bk)(n);
 
   function d() {
-    null != s && null != c && (0, b.W5)(s, c, () => {
-      (0, O.w)(u), (0, b.wu)(s)
+    null != s && null != c && (0, y.W5)(s, c, () => {
+      (0, O.w)(u), (0, y.wu)(s)
     })
   }
 
   function _() {
-    null != s && y.A.open(s, P.BEX.GUILD_AUTOMOD, true, P.nd0.AUTOMOD_MENTION_SPAM)
+    null != s && b.A.open(s, P.BEX.GUILD_AUTOMOD, true, P.nd0.AUTOMOD_MENTION_SPAM)
   }
   return (0, r.jsx)(K, {
     compact: a,

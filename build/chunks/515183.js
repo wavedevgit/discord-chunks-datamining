@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ag: () => _,
-  E1: () => S,
+  E1: () => I,
   O4: () => P,
   T$: () => f,
   Zj: () => R,
@@ -13,7 +13,7 @@ require.d(exports, {
   ph: () => h,
   qJ: () => T,
   wR: () => g,
-  zi: () => I
+  zi: () => S
 }), require("./896048.js"), require("./638769.js");
 var Chunk56562 = require("./56562.js"),
   Chunk626584 = require("./626584.js"),
@@ -84,31 +84,31 @@ function E(e) {
   }
 }
 
-function b(e, t) {
+function y(e, t) {
   let {
     quns: n
   } = o.Ay.GetWindowFullscreenTypeExtraByPid(e, t.name);
   return d.info("QUNS for ".concat(t.name, ": ").concat(n)), n === r.YL.QUNS_RUNNING_D3D_FULL_SCREEN
 }
-let y = {
-    "1314682894106497096": (e, t, n) => b(e, t) ? r.aI.FULLSCREEN : n
+let b = {
+    "1314682894106497096": (e, t, n) => y(e, t) ? r.aI.FULLSCREEN : n
   },
   O = new Set(["762434991303950386", "1402418239342120960", "1124351860376096858"]),
-  A = 16,
-  v = true;
-async function S(e) {
+  v = 16,
+  A = true;
+async function I(e) {
   var t;
-  let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : A,
+  let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : v,
     r = await m(e, n),
     i = a.Ay.getGameOrTransformedSubgameForPID(e);
   if (null == i || null == i.name) return r;
   let o = null == (t = s.A.getGameByName(i.name)) ? true : t.id;
   if (null == o) return r;
-  let l = y[o];
+  let l = b[o];
   return null != l ? l(e, i, r) : r
 }
 
-function I(e) {
+function S(e) {
   var t;
   let n = null == (t = s.A.getGameByName(e.name)) ? true : t.id;
   return null != n && O.has(n)
@@ -116,7 +116,7 @@ function I(e) {
 
 function T(e) {
   let t = a.Ay.getGameOrTransformedSubgameForPID(e);
-  return null != t && null != t.name && I(t)
+  return null != t && null != t.name && S(t)
 }
 let C = new Set([Chunk56562.aI.UNKNOWN, Chunk56562.aI.FULLSCREEN]);
 
@@ -154,5 +154,5 @@ function P(e) {
     enabledOOP: false,
     enabledLegacy: false,
     overlayMethod: c.Ue.Disabled
-  } : (0, a.hw)(e, v)
+  } : (0, a.hw)(e, A)
 }

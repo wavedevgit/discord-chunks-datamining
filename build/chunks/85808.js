@@ -15,7 +15,7 @@ function o(e, t, n) {
     hasDivider: ! function(e, t) {
       if (t === i.PU) {
         let t = e.getGuildActionSection().getRows();
-        return 1 === t.length && t[0] === a.n.GUILD_PREMIUM_PROGRESS_BAR || e.getGuildActionSection().isEmpty()
+        return 1 === t.length && t[0] === s.n.GUILD_PREMIUM_PROGRESS_BAR || e.getGuildActionSection().isEmpty()
       }
       return 0 === e.getSections(false)[t]
     }(e, n) && (n === i.PU || !!t && (n === i.HP || n !== i.bK && (n === e.recentsSectionNumber || (e.voiceChannelsSectionNumber, false)))),
@@ -28,25 +28,25 @@ function c(e) {
     category: t,
     voiceStates: n,
     selectedChannelId: i,
-    selectedVoiceChannelId: a
+    selectedVoiceChannelId: s
   } = e;
   return function(e) {
     let {
       category: t,
       voiceStates: n,
       selectedChannelId: i,
-      selectedVoiceChannelId: a
+      selectedVoiceChannelId: s
     } = e;
     returntrue !== r.A.isCollapsed(t.record.id) ? [] : t.getChannelRecords().filter(e => {
       var t;
-      if (!l.A.can(s.xBc.VIEW_CHANNEL, e)) returnfalse;
+      if (!l.A.can(a.xBc.VIEW_CHANNEL, e)) returnfalse;
       let r = null != (t = n[e.id]) ? t : [];
-      return e.id !== a && e.id !== i && r.length > 0
+      return e.id !== s && e.id !== i && r.length > 0
     })
   }({
     category: t,
     selectedChannelId: i,
-    selectedVoiceChannelId: a,
+    selectedVoiceChannelId: s,
     voiceStates: n
   }).length > 0
 }

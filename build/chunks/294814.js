@@ -83,10 +83,10 @@ var Chunk843455 = require("./843455.js"),
       })), this._value = 0, e.prototype.reset.call(this)
     }, t
   }(g),
-  b = {
+  y = {
     current: null
   },
-  y = function(e) {
+  b = function(e) {
     function t(t) {
       var n;
       return true === t && (t = null), (n = e.call(this) || this).source = true, n.setValue(t), n
@@ -116,7 +116,7 @@ var Chunk843455 = require("./843455.js"),
       }
     }, n._addToPayload = function(e) {
       var t = this;
-      i.getFluidConfig(e) && b.current && b.current.dependencies.add(e);
+      i.getFluidConfig(e) && y.current && y.current.dependencies.add(e);
       var n = h(e);
       n && i.each(n, function(e) {
         return t.add(e)
@@ -146,8 +146,8 @@ var Chunk843455 = require("./843455.js"),
         return (i.isAnimatedString(e) ? E : g).create(e, t[n])
       }) : []
     }, t
-  }(y),
-  A = function(e) {
+  }(b),
+  v = function(e) {
     function t(t) {
       var n;
       return (n = e.call(this, null) || this).update = t, n.dirty = false, n
@@ -156,13 +156,13 @@ var Chunk843455 = require("./843455.js"),
     var n = t.prototype;
     return n.setValue = function(t, n) {
       if (t) {
-        if (n && (b.current = n, t.style)) {
+        if (n && (y.current = n, t.style)) {
           var r = n.host.createAnimatedStyle;
           t = o(o({}, t), {}, {
             style: r(t.style)
           })
         }
-        e.prototype.setValue.call(this, t), b.current = null
+        e.prototype.setValue.call(this, t), y.current = null
       }
     }, n.onParentChange = function(e) {
       var t = this,
@@ -171,13 +171,13 @@ var Chunk843455 = require("./843455.js"),
         t.dirty = false, t.update()
       }))
     }, t
-  }(y),
-  v = function(e, t) {
+  }(b),
+  A = function(e, t) {
     return c.forwardRef(function(n, r) {
       var a = c.useRef(null),
         s = !i.is.fun(e) || e.prototype && e.prototype.isReactComponent,
         l = i.useForceUpdate(),
-        d = new A(function() {
+        d = new v(function() {
           var e = a.current;
           if (!s || e) {
             var n = !!e && t.applyAnimatedValues(e, d.getValue(true));
@@ -199,16 +199,16 @@ var Chunk843455 = require("./843455.js"),
           }
       }), c.createElement(e, o({}, t.getComponentProps(d.getValue()), {
         ref: s && function(e) {
-          a.current = S(r, e)
+          a.current = I(r, e)
         }
       }))
     })
   };
 
-function S(e, t) {
+function I(e, t) {
   return e && (i.is.fun(e) ? e(t) : e.current = t), t
 }
-var I = Symbol.for("AnimatedComponent"),
+var S = Symbol.for("AnimatedComponent"),
   T = function(e, t) {
     var n = true === t ? {} : t,
       r = n.applyAnimatedValues,
@@ -217,7 +217,7 @@ var I = Symbol.for("AnimatedComponent"),
       } : r,
       s = n.createAnimatedStyle,
       o = true === s ? function(e) {
-        return new y(e)
+        return new b(e)
       } : s,
       l = n.getComponentProps,
       c = {
@@ -229,7 +229,7 @@ var I = Symbol.for("AnimatedComponent"),
       },
       u = function(e) {
         var t = C(e) || "Anonymous";
-        return (e = i.is.str(e) ? v(e, c) : e[I] || (e[I] = v(e, c))).displayName = "Animated(" + t + ")", e
+        return (e = i.is.str(e) ? A(e, c) : e[S] || (e[S] = A(e, c))).displayName = "Animated(" + t + ")", e
       };
     return i.each(e, function(e, t) {
       i.is.str(t) || (t = C(e)), u[t] = u(e)
@@ -240,4 +240,4 @@ var I = Symbol.for("AnimatedComponent"),
   C = function(e) {
     return i.is.str(e) ? e : e && i.is.str(e.displayName) ? e.displayName : i.is.fun(e) && e.name || null
   };
-exports.Animated = m, exports.AnimatedArray = O, exports.AnimatedObject = y, exports.AnimatedProps = A, exports.AnimatedString = E, exports.AnimatedValue = g, exports.createHost = T, exports.getAnimated = p, exports.getPayload = h, exports.isAnimated = f, exports.setAnimated = _
+exports.Animated = m, exports.AnimatedArray = O, exports.AnimatedObject = b, exports.AnimatedProps = v, exports.AnimatedString = E, exports.AnimatedValue = g, exports.createHost = T, exports.getAnimated = p, exports.getPayload = h, exports.isAnimated = f, exports.setAnimated = _

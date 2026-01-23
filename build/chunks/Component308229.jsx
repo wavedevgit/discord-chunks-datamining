@@ -1,7 +1,7 @@
 /** Chunk was on 10534 **/
 /** chunk id: 308229, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  default: () => m
+  default: () => v
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,23 +24,23 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk682225 = require("./682225.js");
 
-function m(e) {
+function v(e) {
   let {
     transitionState: t,
     videoEnabled: a,
-    onEnable: m,
-    onClose: v
-  } = e, O = f.A.getCameraComponent(), _ = p.bm.useSetting(), [j, S] = i.useState((0, b.i)(A.default.getCurrentUser())), x = (0, s.p)(), {
-    analyticsLocations: P
+    onEnable: v,
+    onClose: y
+  } = e, E = A.A.getCameraComponent(), O = p.bm.useSetting(), [j, S] = i.useState((0, g.i)(w.default.getCurrentUser())), P = (0, s.p)(), {
+    analyticsLocations: x
   } = (0, u.Ay)(d.A.CAMERA_PREVIEW);
   i.useEffect(() => {
-    C.default.track(k.HAw.OPEN_MODAL, {
+    C.default.track(f.HAw.OPEN_MODAL, {
       type: "Camera Preview Modal"
     })
   }, []);
   let M = i.useCallback(async () => {
       try {
-        await (0, h.gB)(j, {
+        await (0, b.gB)(j, {
           location: function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var a = null != arguments[t] ? arguments[t] : {},
@@ -59,41 +59,41 @@ function m(e) {
             }
             return e
           }({
-            page: k.liQ.PREVIEW_CAMERA_MODAL
-          }, x.location)
+            page: f.liQ.PREVIEW_CAMERA_MODAL
+          }, P.location)
         })
       } catch (e) {}
-      await v(), (0, g._C)(j)
-    }, [j, x.location, v]),
+      await y(), (0, h._C)(j)
+    }, [j, P.location, y]),
     D = i.useCallback(async () => {
-      await M(), c.A.setVideoEnabled(true), null == m || m()
-    }, [M, m]),
+      await M(), c.A.setVideoEnabled(true), null == v || v()
+    }, [M, v]),
     I = i.useMemo(() => [{
       variant: "primary",
-      text: a ? y.intl.string(y.t.KQENhq) : y.intl.string(y.t.kgIe9a),
+      text: a ? m.intl.string(m.t.KQENhq) : m.intl.string(m.t.kgIe9a),
       onClick: a ? M : D
     }], [M, D, a]);
   return (0, n.jsx)(u.f5, {
-    value: P,
+    value: x,
     children: (0, n.jsx)(o.A, {
-      page: k.liQ.PREVIEW_CAMERA_MODAL,
+      page: f.liQ.PREVIEW_CAMERA_MODAL,
       children: (0, n.jsx)(r.Modal, {
         size: "md",
-        title: a ? y.intl.string(y.t.LAwwbQ) : y.intl.string(y.t["/HITVD"]),
+        title: a ? m.intl.string(m.t.LAwwbQ) : m.intl.string(m.t["/HITVD"]),
         actionBarInput: (0, n.jsx)(l.Checkbox, {
-          label: y.intl.string(y.t["3Ppr1h"]),
+          label: m.intl.string(m.t["3Ppr1h"]),
           labelType: "secondary",
-          checked: _,
+          checked: O,
           onChange: () => {
-            p.bm.updateSetting(!_), C.default.track(k.HAw.UPDATE_USER_SETTINGS_LOCAL, {
-              always_preview_video: !_
+            p.bm.updateSetting(!O), C.default.track(f.HAw.UPDATE_USER_SETTINGS_LOCAL, {
+              always_preview_video: !O
             })
           }
         }),
         actions: I,
-        onClose: v,
+        onClose: y,
         transitionState: t,
-        children: (0, n.jsx)(w.A, {
+        children: (0, n.jsx)(_.A, {
           hidePreviewToggle: true,
           hideDeviceHeader: true,
           hideCameraSettingsLink: true,
@@ -101,18 +101,18 @@ function m(e) {
           onSelectBackgroundOption: S,
           hideDeviceSelector: a,
           renderCamera: e => (0, n.jsxs)("div", {
-            className: E.S,
+            className: k.S,
             children: [(0, n.jsx)("div", {
-              className: E.U,
-              children: (0, n.jsx)(O, {
+              className: k.U,
+              children: (0, n.jsx)(E, {
                 disabled: false,
                 deviceId: e,
                 width: 430,
                 height: 242
               })
-            }), (0, n.jsx)(w.k, {})]
+            }), (0, n.jsx)(_.k, {})]
           }),
-          onLearnMore: v
+          onLearnMore: y
         })
       })
     })

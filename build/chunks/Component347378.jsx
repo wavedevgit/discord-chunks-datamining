@@ -26,16 +26,16 @@ let h = () => {
     renewalInvoiceDetails: m,
     fullPrice: g,
     premiumSubscription: E
-  } = (0, f.X)(), [b, y] = i.useState(false), [O, A] = i.useState(false);
+  } = (0, f.X)(), [y, b] = i.useState(false), [O, v] = i.useState(false);
   if (null == n) return null;
-  let v = async () => {
-    y(true), A(false);
+  let A = async () => {
+    b(true), v(false);
     try {
       await h(), a()
     } catch (e) {
-      A(true), y(false)
+      v(true), b(false)
     }
-  }, S = [{
+  }, I = [{
     text: p.intl.string(p.t.h9tkAK),
     onClick: () => a(),
     variant: "secondary"
@@ -43,16 +43,16 @@ let h = () => {
     text: "".concat(p.intl.format(p.t.yxFzdO, {
       planPremiumType: l.Ay.getTierDisplayNameByPlanId("".concat(t))
     })),
-    onClick: v,
-    disabled: b,
+    onClick: A,
+    disabled: y,
     variant: "critical-primary",
-    loading: b
+    loading: y
   }];
   if (null == m) return null;
   let {
-    intervalType: I,
+    intervalType: S,
     intervalCount: T
-  } = m, C = (0, c.CE)("".concat(g), I, T);
+  } = m, C = (0, c.CE)("".concat(g), S, T);
   return (0, r.jsxs)(o.Modal, {
     size: "md",
     transitionState: e,
@@ -61,11 +61,11 @@ let h = () => {
     })),
     subtitle: 0 !== n.total ? p.intl.format(p.t.ycyeBx, {
       renewalDate: n.subscriptionPeriodStart,
-      rate: (0, c.CE)((0, c.$g)(n.total, n.currency), I, T)
+      rate: (0, c.CE)((0, c.$g)(n.total, n.currency), S, T)
     }) : p.intl.format(p.t["+y0Tjy"], {
       renewalDate: n.subscriptionPeriodStart
     }),
-    actions: S,
+    actions: I,
     onClose: async () => a(),
     children: [(0, r.jsxs)(u.Yx, {
       isPremiumRebrand: true,

@@ -2,7 +2,7 @@
 /** chunk id: 968975, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,30 +21,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk250783 = require("./250783.js");
 let E = 4;
 
-function b(e) {
+function y(e) {
   let {
     wishlistItems: t = [],
     profileOwner: n,
-    onClick: b,
-    wishlistId: y,
+    onClick: y,
+    wishlistId: b,
     cardSize: O,
-    title: A
+    title: v
   } = e, {
-    analyticsLocations: v
+    analyticsLocations: A
   } = (0, s.Ay)(), {
-    trackUserProfileWishlistAction: S
-  } = (0, f.NJ)(), I = (0, i.useCallback)(e => {
+    trackUserProfileWishlistAction: I
+  } = (0, f.NJ)(), S = (0, i.useCallback)(e => {
     let {
       wishlistId: t,
       action: n,
       productLines: r
     } = e;
-    null != t && S({
+    null != t && I({
       wishlistId: t,
       action: n,
       productLines: r
     })
-  }, [S]), {
+  }, [I]), {
     cards: T,
     singleItem: C,
     productLines: N
@@ -73,9 +73,9 @@ function b(e) {
         index: r,
         moreCount: c ? t.length - E + 1 : true,
         profileOwner: n,
-        analyticsLocations: v,
-        onViewWishlist: b,
-        wishlistId: y,
+        analyticsLocations: A,
+        onViewWishlist: y,
+        wishlistId: b,
         showTypeTooltip: m,
         cardSize: O,
         itemSource: f
@@ -83,9 +83,9 @@ function b(e) {
         index: r,
         moreCount: c ? t.length - E + 1 : true,
         profileOwner: n,
-        analyticsLocations: v,
-        onViewWishlist: b,
-        wishlistId: y,
+        analyticsLocations: A,
+        onViewWishlist: y,
+        wishlistId: b,
         showTypeTooltip: m,
         cardSize: O,
         itemSource: f
@@ -96,23 +96,23 @@ function b(e) {
       singleItem: r,
       productLines: i
     }
-  }, [t, n, v, b, y, O]), R = (0, p.A)({
-    wishlistId: null != y ? y : null,
-    onAction: I,
+  }, [t, n, A, y, b, O]), R = (0, p.A)({
+    wishlistId: null != b ? b : null,
+    onAction: S,
     productLines: N
   });
   if (0 === T.length) return null;
   let w = T;
   return null != C && ((0, u.L)(C) ? w = (0, h.z)(C, {
     profileOwner: n,
-    analyticsLocations: v,
-    wishlistId: y,
-    onViewWishlist: b
+    analyticsLocations: A,
+    wishlistId: b,
+    onViewWishlist: y
   }) : (0, d.$)(C) && (w = (0, l.A)(C, {
     profileOwner: n,
-    analyticsLocations: v,
-    wishlistId: y,
-    onViewWishlist: b
+    analyticsLocations: A,
+    wishlistId: b,
+    onViewWishlist: y
   }))), (0, r.jsxs)(_.A.Overlay, {
     ref: R,
     className: g.kL,
@@ -120,7 +120,7 @@ function b(e) {
       className: g.wx,
       children: (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
-        children: null != A ? A : m.intl.string(m.t["7lZ31J"])
+        children: null != v ? v : m.intl.string(m.t["7lZ31J"])
       })
     }), (0, r.jsx)("div", {
       className: g.vY,

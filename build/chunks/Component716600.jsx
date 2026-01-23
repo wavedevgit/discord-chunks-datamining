@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 716600, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  t: () => A
+  t: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,56 +17,56 @@ var Chunk934551 = require("./934551.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk787076 = require("./787076.js");
 
-function A(e) {
-  var t, n, A, g;
+function f(e) {
+  var t, n, f, m;
   let {
-    componentId: m,
-    promotionId: b,
-    content: _,
+    componentId: A,
+    promotionId: _,
+    content: b,
     renderModalProps: E,
     analyticsLocations: O,
     analyticsLocation: y,
     isLightTheme: I
-  } = e, v = "AnnouncementModalVariant1_".concat(m), {
+  } = e, v = "AnnouncementModalVariant1_".concat(A), {
     onClose: S
-  } = E, C = null != (t = null == (n = _.button) ? true : n.copy) ? t : f.intl.string(f.t.YScQSF), N = (null == (A = _.button) ? true : A.buttonAction) === l.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", T = (0, d.h)({
-    buttonAction: null == (g = _.button) ? true : g.buttonAction,
+  } = E, C = null != (t = null == (n = b.button) ? true : n.copy) ? t : h.intl.string(h.t.YScQSF), N = (null == (f = b.button) ? true : f.buttonAction) === l.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", T = (0, d.h)({
+    buttonAction: null == (m = b.button) ? true : m.buttonAction,
     analyticsLocations: O,
     analyticsLocation: y,
     onClose: S
-  }), j = "" !== _.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
+  }), j = "" !== b.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
     children: ["\xa0", (0, r.jsx)(s.MzZ, {
-      className: h.$T,
-      href: c.A.getArticleURL(_.helpArticleId),
-      children: f.intl.string(f.t["sBp+u0"])
+      className: g.$T,
+      href: c.A.getArticleURL(b.helpArticleId),
+      children: h.intl.string(h.t["sBp+u0"])
     })]
   }) : true, x = {
     type: "video",
-    src: I ? _.heroArtVideoLinkLightTheme : _.videoLink
+    src: I ? b.heroArtVideoLinkLightTheme : b.videoLink
   };
-  null != _.heroArtVideoSubtitles && (x.subtitles = _.heroArtVideoSubtitles.map(e => ({
+  null != b.heroArtVideoSubtitles && (x.subtitles = b.heroArtVideoSubtitles.map(e => ({
     locale: e.locale,
     src: e.link,
     isDefault: false
-  }))), ("" !== _.heroArtImageLinkDarkTheme || "" !== _.heroArtImageLinkLightTheme) && (x = {
+  }))), ("" !== b.heroArtImageLinkDarkTheme || "" !== b.heroArtImageLinkLightTheme) && (x = {
     type: "image",
-    src: I ? _.heroArtImageLinkLightTheme : _.heroArtImageLinkDarkTheme
+    src: I ? b.heroArtImageLinkLightTheme : b.heroArtImageLinkDarkTheme
   });
-  let P = "" !== _.modalTopPill ? () => (0, r.jsx)(u.R, {
-    text: _.modalTopPill,
-    className: h.ON
+  let P = "" !== b.modalTopPill ? () => (0, r.jsx)(u.R, {
+    text: b.modalTopPill,
+    className: g.ON
   }) : true;
   return {
-    componentId: m,
-    promotionId: b,
+    componentId: A,
+    promotionId: _,
     renderModalProps: E,
-    header: _.header,
+    header: b.header,
     modalTopExtra: P,
-    subHeader: _.subheader,
+    subHeader: b.subheader,
     subHeaderExtra: j,
-    body: _.body,
+    body: b.body,
     heroArt: x,
-    featureCards: _.featureCards.map(e => ({
+    featureCards: b.featureCards.map(e => ({
       header: e.header,
       subHeader: e.body,
       imageSrc: I ? e.imageLinkLightTheme : e.imageLink,

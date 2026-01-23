@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 518620, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,15 +14,15 @@ require("./646363.js");
 var Chunk652215 = require("./652215.js"),
   Chunk788868 = require("./788868.js"),
   Chunk520936 = require("./520936.js");
-let f = function(e) {
+let h = function(e) {
   let {
     rows: t,
     renderRow: n,
-    renderSection: f,
-    footer: h,
-    sectionFilter: A,
-    renderSectionFooter: g
-  } = e, m = e => {
+    renderSection: h,
+    footer: g,
+    sectionFilter: f,
+    renderSectionFooter: m
+  } = e, A = e => {
     let {
       section: r,
       row: i
@@ -30,16 +30,16 @@ let f = function(e) {
     if (null == l || null == i) return null;
     let a = l[i];
     return null == a ? null : n(a, r)
-  }, b = i.useCallback((e, n) => {
+  }, _ = i.useCallback((e, n) => {
     var r;
     let i = null == (r = t[e]) ? true : r[n];
-    return A === u.m3P.ALL && (null == i ? true : i.giftIntentType) === d.np.FRIEND_ANNIVERSARY && 0 === e ? 72 : 62
-  }, [t, A]), _ = i.useCallback(e => {
+    return f === u.m3P.ALL && (null == i ? true : i.giftIntentType) === d.np.FRIEND_ANNIVERSARY && 0 === e ? 72 : 62
+  }, [t, f]), b = i.useCallback(e => {
     let {
       section: t
     } = e;
-    return f(t)
-  }, [f]), E = i.useCallback(e => null == g ? null : g(e.section), [g]), O = i.useCallback(e => null == g ? 0 : 48 * (null != g(e)), [g]), y = (0, s.bG)([c.A], () => c.A.keyboardModeEnabled), I = i.useRef(null), v = i.useCallback(() => new Promise(e => {
+    return h(t)
+  }, [h]), E = i.useCallback(e => null == m ? null : m(e.section), [m]), O = i.useCallback(e => null == m ? 0 : 48 * (null != m(e)), [m]), y = (0, s.bG)([c.A], () => c.A.keyboardModeEnabled), I = i.useRef(null), v = i.useCallback(() => new Promise(e => {
     let t = I.current;
     if (null == t) return e();
     t.scrollToTop({
@@ -112,15 +112,15 @@ let f = function(e) {
               var n;
               I.current = e, t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null
             },
-            renderRow: m,
-            rowHeight: b,
-            renderSection: _,
+            renderRow: A,
+            rowHeight: _,
+            renderSection: b,
             sectionHeight: 50,
             renderFooter: E,
             footerHeight: O,
             sections: T,
             className: p.e3
-          }, n)), h]
+          }, n)), g]
         })
       }
     })

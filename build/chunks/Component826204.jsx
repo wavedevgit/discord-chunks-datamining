@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
-  a = require.n(Chunk735438),
+  o = require.n(Chunk735438),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -27,26 +27,26 @@ function y(e) {
     transitionState: t,
     onClose: n,
     onSave: i,
-    onDelete: p,
-    option: j,
+    onDelete: j,
+    option: p,
     guild: y,
     prompt: C,
     index: P
-  } = e, k = (0, o.bG)([m.Ay], () => m.Ay.getDefaultChannel(y.id)), [S, A] = r.useState(() => {
+  } = e, k = (0, a.bG)([m.Ay], () => m.Ay.getDefaultChannel(y.id)), [S, A] = r.useState(() => {
     var e;
-    return null != (e = null == j ? true : j.emoji) ? e : null
-  }), [E, I] = r.useState(() => {
+    return null != (e = null == p ? true : p.emoji) ? e : null
+  }), [I, E] = r.useState(() => {
     var e;
-    return null != (e = null == j ? true : j.title) ? e : ""
+    return null != (e = null == p ? true : p.title) ? e : ""
   }), [w, N] = r.useState(() => {
     var e;
-    return null != (e = null == j ? true : j.description) ? e : ""
-  }), [D, T] = r.useState(() => {
+    return null != (e = null == p ? true : p.description) ? e : ""
+  }), [_, D] = r.useState(() => {
     var e;
-    return new Set(null != (e = null == j ? true : j.channelIds) ? e : [])
-  }), [R, _] = r.useState(() => {
+    return new Set(null != (e = null == p ? true : p.channelIds) ? e : [])
+  }), [T, R] = r.useState(() => {
     var e;
-    return new Set(null != (e = null == j ? true : j.roleIds) ? e : [])
+    return new Set(null != (e = null == p ? true : p.roleIds) ? e : [])
   }), [M, B] = r.useState({}), L = r.useRef(null);
   r.useLayoutEffect(() => {
     var e;
@@ -54,38 +54,38 @@ function y(e) {
   }, []);
   let z = r.useCallback(() => {
       var e, t, l, r, s;
-      let o, c, u = {
-          id: null != (e = null == j ? true : j.id) ? e : "".concat(Date.now()),
-          title: E,
+      let a, c, u = {
+          id: null != (e = null == p ? true : p.id) ? e : "".concat(Date.now()),
+          title: I,
           description: w,
-          channelIds: Array.from(D).sort(),
-          roleIds: Array.from(R).sort(),
+          channelIds: Array.from(_).sort(),
+          roleIds: Array.from(T).sort(),
           emoji: null == S ? true : S
         },
-        d = (t = y, l = h.A.editedOnboardingPrompts, r = C, o = {}, (s = u).title.length <= 0 && (o.title = x.intl.string(x.t.p3PKzA)), null != (c = (0, g.fO)(t, l, r, s)) && (o.roles = c), o);
-      B(d), a().isEmpty(d) && (i(u), n())
-    }, [D, w, S, y, n, i, null == j ? true : j.id, C, R, E]),
+        d = (t = y, l = v.A.editedOnboardingPrompts, r = C, a = {}, (s = u).title.length <= 0 && (a.title = b.intl.string(b.t.p3PKzA)), null != (c = (0, g.fO)(t, l, r, s)) && (a.roles = c), a);
+      B(d), o().isEmpty(d) && (i(u), n())
+    }, [_, w, S, y, n, i, null == p ? true : p.id, C, T, I]),
     G = r.useMemo(() => [{
-      text: x.intl.string(x.t["ETE/oC"]),
+      text: b.intl.string(b.t["ETE/oC"]),
       onClick: n,
       variant: "secondary"
     }, {
-      text: x.intl.string(x.t["R3BPH+"]),
+      text: b.intl.string(b.t["R3BPH+"]),
       onClick: z,
       variant: "primary"
     }], [z, n]);
   return (0, l.jsx)(s.Modal, {
-    title: x.intl.formatToPlainString(x.t.yjS3zs, {
+    title: b.intl.formatToPlainString(b.t.yjS3zs, {
       index: P + 1
     }),
-    subtitle: null != C.title && C.title.length > 0 ? C.title : x.intl.string(x.t.vY91C9),
+    subtitle: null != C.title && C.title.length > 0 ? C.title : b.intl.string(b.t.vY91C9),
     transitionState: t,
     onClose: n,
     actions: G,
     actionBarInput: (0, l.jsx)(c.QWc, {
-      text: x.intl.string(x.t.N86XcP),
+      text: b.intl.string(b.t.N86XcP),
       onClick: () => {
-        p(), n()
+        j(), n()
       },
       variant: "critical"
     }),
@@ -94,52 +94,52 @@ function y(e) {
       children: [(0, l.jsxs)(c.BJc, {
         gap: 8,
         children: [(0, l.jsx)(c.ksK, {
-          label: x.intl.string(x.t.VWdcBp),
+          label: b.intl.string(b.t.VWdcBp),
           required: true,
           inputRef: L,
-          placeholder: x.intl.string(x.t.EHe6gZ),
-          value: E,
-          onChange: e => I(e),
-          maxLength: b.Q_,
+          placeholder: b.intl.string(b.t.EHe6gZ),
+          value: I,
+          onChange: e => E(e),
+          maxLength: x.Q_,
           autoFocus: true,
           error: M.title
         }), (0, l.jsx)(c.ksK, {
-          placeholder: x.intl.string(x.t.mIjgJK),
+          placeholder: b.intl.string(b.t.mIjgJK),
           value: w,
           onChange: e => N(e),
-          maxLength: b.QY
+          maxLength: x.QY
         })]
       }), (0, l.jsx)(c.cGx, {}), (0, l.jsxs)(s.D0$, {
-        label: x.intl.string(x.t.TtIbPA),
+        label: b.intl.string(b.t.TtIbPA),
         children: [(0, l.jsxs)(c.BJc, {
           gap: 8,
           children: [(0, l.jsx)(u.A, {
             guildId: y.id,
-            selectedChannelIds: D,
-            placeholder: x.intl.string(x.t.vephiL),
-            onChange: T,
-            helperText: x.intl.string(x.t.SoT6we)
+            selectedChannelIds: _,
+            placeholder: b.intl.string(b.t.vephiL),
+            onChange: D,
+            helperText: b.intl.string(b.t.SoT6we)
           }), (0, l.jsx)(d.A, {
             guildId: y.id,
-            selectedRoleIds: R,
+            selectedRoleIds: T,
             disableEveryoneRole: true,
-            placeholder: x.intl.string(x.t.aFO1I6),
-            onChange: _,
-            helperText: x.intl.string(x.t.Mbvpv8),
+            placeholder: b.intl.string(b.t.aFO1I6),
+            onChange: R,
+            helperText: b.intl.string(b.t.Mbvpv8),
             selectableRoleFilter: e => !e.managed
           })]
         }), null == M.roles ? null : (0, l.jsx)(c.dzK, {
           error: M.roles
         }), (0, l.jsx)(O, {
           guild: y,
-          roleIds: R
+          roleIds: T
         })]
       }), (0, l.jsx)(c.cGx, {}), (0, l.jsx)("div", {
         className: f.C2,
         children: (0, l.jsx)(s.D0$, {
-          label: x.intl.string(x.t["4ahTBl"]),
-          description: x.intl.string(x.t.Iv9RGg),
-          children: (0, l.jsx)(v.A, {
+          label: b.intl.string(b.t["4ahTBl"]),
+          description: b.intl.string(b.t.Iv9RGg),
+          children: (0, l.jsx)(h.A, {
             emoji: S,
             setEmoji: A,
             channel: k
@@ -154,7 +154,7 @@ function O(e) {
   let {
     guild: t,
     roleIds: n
-  } = e, r = (0, o.bG)([p.A], () => p.A.getManyRoles(t.id, n).find(j.J));
+  } = e, r = (0, a.bG)([j.A], () => j.A.getManyRoles(t.id, n).find(p.J));
   return null == r ? null : (0, l.jsx)("div", {
     className: f.lm,
     children: (0, l.jsxs)("div", {
@@ -167,8 +167,8 @@ function O(e) {
         className: f.EP
       }), (0, l.jsx)(c.Text, {
         variant: "text-sm/normal",
-        children: x.intl.format(x.t["5zPJEZ"], {
-          permissions: (0, j.P)(t, r).join(", ")
+        children: b.intl.format(b.t["5zPJEZ"], {
+          permissions: (0, p.P)(t, r).join(", ")
         })
       })]
     })

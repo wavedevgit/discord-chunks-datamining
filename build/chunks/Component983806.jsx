@@ -2,7 +2,7 @@
 /** chunk id: 983806, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  b: () => b
+  b: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -59,7 +59,7 @@ let E = () => {
       })
     })
   },
-  b = () => {
+  y = () => {
     let {
       selectedTab: e,
       handleTabChange: t

@@ -14,17 +14,17 @@ var Chunk64700 = require("./64700.js"),
 function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
-      var l;
-      l = n[t], t in e ? Object.defineProperty(e, t, {
-        value: l,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = l
+      }) : e[t] = r
     })
   }
   return e
@@ -34,8 +34,8 @@ function d(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, l)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -48,49 +48,49 @@ let f = i().debounce(Chunk318937.W9, 500, {
 });
 
 function p(e, t, n) {
-  let r = l.useRef((0, a.A)()),
-    i = l.useRef(new s.IX),
-    p = l.useCallback(l => {
-      l.lastUpdatedAt = Date.now(), (0, o.Rl)(l, e, n), (0, o.W9)(t, n, l)
+  let l = r.useRef((0, a.A)()),
+    i = r.useRef(new o.IX),
+    p = r.useCallback(r => {
+      r.lastUpdatedAt = Date.now(), (0, s.Rl)(r, e, n), (0, s.W9)(t, n, r)
     }, [t, n, e]),
-    b = l.useCallback((l, s, f) => {
-      r.current = (0, a.A)();
-      let b = d(u({}, l), {
-        id: r.current,
-        x: s,
+    g = r.useCallback((r, o, f) => {
+      l.current = (0, a.A)();
+      let g = d(u({}, r), {
+        id: l.current,
+        x: o,
         y: f,
         userId: e,
         state: c.B.START,
         lastUpdatedAt: Date.now()
       });
-      (0, o.W9)(t, n, b), (0, o.Rl)(b, e, n), i.current.start(5e3, () => p(b))
+      (0, s.W9)(t, n, g), (0, s.Rl)(g, e, n), i.current.start(5e3, () => p(g))
     }, [e, t, n, p]),
-    g = l.useCallback((l, a, s) => {
-      let b = d(u({}, l), {
-        id: r.current,
+    m = r.useCallback((r, a, o) => {
+      let g = d(u({}, r), {
+        id: l.current,
         x: a,
-        y: s,
+        y: o,
         userId: e,
         state: c.B.START,
         lastUpdatedAt: Date.now()
       });
-      f(t, n, b), (0, o.Rl)(b, e, n), i.current.start(5e3, () => p(b))
+      f(t, n, g), (0, s.Rl)(g, e, n), i.current.start(5e3, () => p(g))
     }, [e, t, n, p]),
-    m = l.useCallback((l, a, s) => {
-      f.cancel(), (0, o.MH)(t, n, r.current), (0, o.Rl)(d(u({}, l), {
-        id: r.current,
+    _ = r.useCallback((r, a, o) => {
+      f.cancel(), (0, s.MH)(t, n, l.current), (0, s.Rl)(d(u({}, r), {
+        id: l.current,
         x: a,
-        y: s,
+        y: o,
         userId: e,
         state: c.B.STOP,
         lastUpdatedAt: Date.now()
       }), e, n), i.current.stop()
     }, [t, n, e]),
-    h = l.useCallback((e, t, n) => g(e, t, n), [g]);
-  return l.useMemo(() => ({
-    handleMouseDown: b,
-    handleMouseMove: g,
-    handleMouseUp: m,
+    h = r.useCallback((e, t, n) => m(e, t, n), [m]);
+  return r.useMemo(() => ({
+    handleMouseDown: g,
+    handleMouseMove: m,
+    handleMouseUp: _,
     handleMouseEnter: h
-  }), [b, h, g, m])
+  }), [g, h, m, _])
 }

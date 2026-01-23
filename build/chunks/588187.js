@@ -1,9 +1,9 @@
 /** Chunk was on 2644 **/
-/** chunk id: 588187, original params: e,t,a (module,exports,require) **/
+/** chunk id: 588187, original params: e,t,r (module,exports,require) **/
 module.exports = {
-  sq: "b975f50325b11c9f",
-  kx: "b5bacb0deef2502b",
-  ds: "_7de0a2e5581ad52f",
-  Bo: "_192775406b63a3c5",
-  wP: "c408eabe5244f1f1"
+  sq: "forwardPreview_f4b524",
+  kx: "linkContainer_f4b524",
+  ds: "linkIcon_f4b524",
+  Bo: "applicationInfo_f4b524",
+  wP: "cardImage_f4b524"
 }

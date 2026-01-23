@@ -52,25 +52,25 @@ let m = {
       idle: m,
       showAmbientEffects: g = true,
       enableAnimations: E = true,
-      skipNewUserEducation: b = false,
-      onSeatClick: y,
+      skipNewUserEducation: y = false,
+      onSeatClick: b,
       disableInteractions: O = false
-    } = e, A = (0, l.A)();
-    return null == A ? null : (0, r.jsxs)("div", {
+    } = e, v = (0, l.A)();
+    return null == v ? null : (0, r.jsxs)("div", {
       className: p.cA,
       children: [(0, r.jsx)("img", {
         className: p.Tp,
-        src: A.backgrounds.sky.static,
+        src: v.backgrounds.sky.static,
         alt: "",
         draggable: false
       }), g && (0, r.jsx)(f.A, {}), (0, r.jsx)("img", {
         className: p.Tp,
-        src: A.backgrounds.mountains.static,
+        src: v.backgrounds.mountains.static,
         alt: "",
         draggable: false
       }), g && (0, r.jsx)(c.A, {}), (0, r.jsx)("img", {
         className: p.Tp,
-        src: A.backgrounds.river.static,
+        src: v.backgrounds.river.static,
         alt: "",
         draggable: false
       }), g && (0, r.jsx)(s.A, {
@@ -78,21 +78,21 @@ let m = {
         style: {
           transform: "translate(779px, 1009px)"
         },
-        src: A.ambience.river.animated,
+        src: v.ambience.river.animated,
         autoPlay: true,
         controls: false,
         loop: true
       }), (0, r.jsx)("img", {
         className: p.Tp,
-        src: A.backgrounds.camp.static,
+        src: v.backgrounds.camp.static,
         alt: "",
         draggable: false
       }), o.dG.map(e => {
         var n;
         return (0, r.jsx)(d.A, h({
           occupant: null == (n = t[e.id - 1]) ? true : n.claimedBy,
-          onClick: y,
-          skipNewUserEducation: b
+          onClick: b,
+          skipNewUserEducation: y
         }, e), e.id)
       }), n.map(e => (0, r.jsx)(u.A, {
         seats: t,
@@ -108,13 +108,13 @@ let m = {
           style: {
             transform: "translate(1014px, 773px)"
           },
-          src: A.ambience.fire.animated,
+          src: v.ambience.fire.animated,
           autoPlay: true,
           controls: false,
           loop: true
         }), (0, r.jsx)(s.A, {
           className: p.Ki,
-          src: A.ambience.fireflies.animated,
+          src: v.ambience.fireflies.animated,
           autoPlay: true,
           controls: false,
           loop: true
@@ -123,7 +123,7 @@ let m = {
           style: {
             transform: "translate(0, 1216px)"
           },
-          src: A.ambience.foliage_front.animated,
+          src: v.ambience.foliage_front.animated,
           autoPlay: true,
           controls: false,
           loop: true

@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 471761, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,19 +14,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk379103 = require("./379103.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let h = (0, Chunk397927.kHD)(Chunk186975.A),
-  A = (0, Chunk397927.kHD)(Chunk379103.A),
-  g = new Set([Chunk652215.VX0.PUSHING, Chunk652215.VX0.PULLING]),
-  m = Object.freeze({
-    [Chunk652215.VX0.DONE]: h,
-    [Chunk652215.VX0.PLANNING]: h,
-    [Chunk652215.VX0.PREPARING]: h,
+let g = (0, Chunk397927.kHD)(Chunk186975.A),
+  f = (0, Chunk397927.kHD)(Chunk379103.A),
+  m = new Set([Chunk652215.VX0.PUSHING, Chunk652215.VX0.PULLING]),
+  A = Object.freeze({
+    [Chunk652215.VX0.DONE]: g,
+    [Chunk652215.VX0.PLANNING]: g,
+    [Chunk652215.VX0.PREPARING]: g,
     [Chunk652215.VX0.PUSHING]: Chunk397927.JMY,
     [Chunk652215.VX0.PULLING]: Chunk397927.s3U,
-    [Chunk652215.VX0.CONFLICT]: h,
-    [Chunk652215.VX0.ERROR]: h
+    [Chunk652215.VX0.CONFLICT]: g,
+    [Chunk652215.VX0.ERROR]: g
   });
-class b extends Chunk64700.PureComponent {
+class _ extends Chunk64700.PureComponent {
   componentDidMount() {
     this.getIsRecentlySynced() && this.setRecentlySyncedTimeout()
   }
@@ -63,19 +63,19 @@ class b extends Chunk64700.PureComponent {
   getTooltip(e, t) {
     switch (e.type) {
       case p.VX0.DONE:
-        if (t) return f.intl.string(f.t.atpo0W);
-        return f.intl.string(f.t.ZCw6zh);
+        if (t) return h.intl.string(h.t.atpo0W);
+        return h.intl.string(h.t.ZCw6zh);
       case p.VX0.CONFLICT:
       case p.VX0.ERROR:
-        return f.intl.string(f.t.ZCw6zh);
+        return h.intl.string(h.t.ZCw6zh);
       case p.VX0.PLANNING:
-        return f.intl.string(f.t.ERQ0VA);
+        return h.intl.string(h.t.ERQ0VA);
       case p.VX0.PREPARING:
-        return f.intl.string(f.t.n5feu3);
+        return h.intl.string(h.t.n5feu3);
       case p.VX0.PUSHING:
-        return f.intl.string(f.t.oCBh0J);
+        return h.intl.string(h.t.oCBh0J);
       case p.VX0.PULLING:
-        return f.intl.string(f.t.RTLNqC);
+        return h.intl.string(h.t.RTLNqC);
       default:
         return null
     }
@@ -88,8 +88,8 @@ class b extends Chunk64700.PureComponent {
     } = this.props, i = null == e ? {
       type: p.VX0.DONE
     } : e, l = this.getIsRecentlySynced();
-    (g.has(i.type) || l) && (t.id, this.getStop(i, l));
-    let a = l ? A : m[i.type];
+    (m.has(i.type) || l) && (t.id, this.getStop(i, l));
+    let a = l ? f : A[i.type];
     return (0, r.jsx)(s.m, {
       text: this.getTooltip(i, l),
       children: (0, r.jsx)(a, {
@@ -109,11 +109,11 @@ class b extends Chunk64700.PureComponent {
       }(this, "_doneTimer", new a.Ep)
   }
 }
-let _ = Chunk311907.Ay.connectStores([Chunk465797.A], e => {
+let b = Chunk311907.Ay.connectStores([Chunk465797.A], e => {
   let {
     libraryApplication: t
   } = e;
   return {
     cloudSyncState: c.A.getState(t.id, t.branchId)
   }
-})(b)
+})(_)

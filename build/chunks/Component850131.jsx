@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk782635 = require("./782635.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,34 +38,34 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = v(e, t), Object.getOwnPropertySymbols)
+  if (a = A(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function v(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let S = 16;
+let I = 16;
 
-function I() {
+function S() {
   return (0, r.jsx)("svg", {
     width: "24",
     height: "24",
@@ -86,7 +86,7 @@ function T(e) {
     hasNoVotes: n,
     victorEmoji: i
   } = e;
-  if (n) t = (0, r.jsx)(I, {});
+  if (n) t = (0, r.jsx)(S, {});
   else if (null != i) {
     let e = "" !== i.name ? i.name : i.displayName;
     t = (0, r.jsx)(d.A, {
@@ -96,7 +96,7 @@ function T(e) {
     })
   }
   return null != t ? (0, r.jsx)("div", {
-    className: b.ZS,
+    className: y.ZS,
     children: t
   }) : null
 }
@@ -121,7 +121,7 @@ function N(e) {
   let t, {
       type: n
     } = e,
-    i = A(e, ["type"]),
+    i = v(e, ["type"]),
     a = "text-muted";
   switch (n) {
     case "NO_VOTES":
@@ -138,16 +138,16 @@ function N(e) {
       } = i;
       t = (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-          className: b.sj,
+          className: y.sj,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-sm/semibold",
             color: "text-default",
-            className: b.Dq,
+            className: y.Dq,
             scaleFontToUserSetting: true,
             children: s
           }), (0, r.jsx)(m.Vx, {
-            size: S,
-            className: b.To,
+            size: I,
+            className: y.To,
             isVictor: true,
             isExpired: true
           })]
@@ -178,7 +178,7 @@ function N(e) {
       })
   }
   return (0, r.jsx)("div", {
-    className: b.h_,
+    className: y.h_,
     children: t
   })
 }
@@ -190,8 +190,8 @@ function R(e) {
     onClickPollLink: a
   } = e, o = i.useMemo(() => C(n), [n]), l = null != n.victorEmoji || "NO_VOTES" === o.type;
   return (0, r.jsxs)("div", {
-    className: s()(b.kL, {
-      [b.FS]: l
+    className: s()(y.kL, {
+      [y.FS]: l
     }, t),
     children: [(0, r.jsx)(T, {
       hasNoVotes: "NO_VOTES" === o.type,
@@ -212,19 +212,19 @@ function w(e) {
     channel: a,
     compact: s,
     disableInteraction: l = false
-  } = e, d = n.embeds[0], m = i.useMemo(() => (0, h.A)(d), [d]), y = (0, o.EJ)(null != (t = null == m ? true : m.questionText) ? t : "", g.TU), O = (0, f.Ay)(n), A = (0, p.P)({
+  } = e, d = n.embeds[0], m = i.useMemo(() => (0, h.A)(d), [d]), b = (0, o.EJ)(null != (t = null == m ? true : m.questionText) ? t : "", g.TU), O = (0, f.Ay)(n), v = (0, p.P)({
     user: n.author,
     channelId: a.id,
     guildId: a.guild_id,
     messageId: n.id
-  }), v = n.messageReference, S = i.useCallback(() => {
-    null != v && u.A.jumpToMessage({
-      channelId: v.channel_id,
-      messageId: v.message_id,
+  }), A = n.messageReference, I = i.useCallback(() => {
+    null != A && u.A.jumpToMessage({
+      channelId: A.channel_id,
+      messageId: A.message_id,
       flash: true,
       returnMessageId: n.id
     })
-  }, [n.id, v]);
+  }, [n.id, A]);
   return null == m ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(_.A, {
       iconNode: (0, r.jsx)(c.YRe, {
@@ -234,14 +234,14 @@ function w(e) {
       compact: s,
       children: E.intl.format(E.t.VJcK41, {
         username: O.nick,
-        usernameHook: A(O),
-        title: y,
-        titleOnClick: S
+        usernameHook: v(O),
+        title: b,
+        titleOnClick: I
       })
     }), (0, r.jsx)(R, {
-      className: b.E6,
+      className: y.E6,
       data: m,
-      onClickPollLink: l ? true : S
+      onClickPollLink: l ? true : I
     })]
   })
 }

@@ -1,5 +1,5 @@
 /** Chunk was on 71138 **/
-/** chunk id: 663272, original params: e,t,n (module,exports,require) **/
+/** chunk id: 663272, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   A: () => o
 }), require("./65821.js");
@@ -12,9 +12,9 @@ var Chunk311907 = require("./311907.js"),
 let o = Chunk311907.Ay.connectStores([Chunk412780.Ay], e => {
   let {
     context: t,
-    index: n,
-    videoStreams: r
-  } = e, a = i.Ay.getAllStats(t)[n], {
+    index: r,
+    videoStreams: n
+  } = e, a = i.Ay.getAllStats(t)[r], {
     section: l
   } = (0, i.Bz)(i.Ay.getSection());
   if (null == l) throw Error("Unrecognized section format");
@@ -27,20 +27,20 @@ let o = Chunk311907.Ay.connectStores([Chunk412780.Ay], e => {
     mediaEngineConnectionId: null == a ? true : a.mediaEngineConnectionId,
     userId: l,
     streams: s,
-    videoStreams: r
+    videoStreams: n
   }
 })(function(e) {
   let {
     streams: t,
-    context: n,
+    context: r,
     index: a,
     userId: i,
     mediaEngineConnectionId: o,
     videoStreams: d
   } = e;
-  return (0, r.jsx)(l.HI, {
+  return (0, n.jsx)(l.HI, {
     streams: t,
-    context: n,
+    context: r,
     index: a,
     mediaEngineConnectionId: o,
     userId: i,

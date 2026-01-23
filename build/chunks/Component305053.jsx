@@ -2,7 +2,7 @@
 /** chunk id: 305053, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => E
+  A: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,34 +26,34 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk918609 = require("./918609.js");
 
-function E(e) {
+function A(e) {
   let {
     guild: t
   } = e;
   i.useEffect(() => {
-    (0, b.dX)(f.M.GUILD_JOINT_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
-      dismissAction: y.i.INDIRECT_ACTION,
+    (0, p.dX)(g.M.GUILD_JOINT_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
+      dismissAction: O.i.INDIRECT_ACTION,
       guildId: t.id,
       forceTrack: true
     })
   }, [t]);
-  let n = !(0, m.cN)(f.M.GUILD_JOINT_PERMISSION_MIGRATION_NOTIFICATION, t.id) || !t.features.has(O.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE) || !t.features.has(O.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE),
+  let n = !(0, f.cN)(g.M.GUILD_JOINT_PERMISSION_MIGRATION_NOTIFICATION, t.id) || !t.features.has(_.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE) || !t.features.has(_.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE),
     {
       enabled: l
-    } = p.A.useExperiment({
+    } = b.A.useExperiment({
       guildId: t.id,
       location: "PermissionMigrationInfoBox"
     }),
-    u = (0, h.i$)(s()(O.X30), "LL");
+    u = (0, x.i$)(s()(_.X30), "LL");
   return l ? (0, r.jsxs)(a.EN, {
-    className: A.oe,
+    className: y.oe,
     defaultExpanded: n,
-    children: [(0, r.jsx)(c.D, {
+    children: [(0, r.jsx)(o.D, {
       level: 2,
       children: (0, r.jsx)(d.vN3, {
-        children: (0, r.jsxs)(o.$, {
+        children: (0, r.jsxs)(c.$, {
           slot: "trigger",
-          className: A.wx,
+          className: y.wx,
           children: [(0, r.jsx)(d.EpV, {
             color: "currentColor"
           }), (0, r.jsx)(d.EYj, {
@@ -61,17 +61,17 @@ function E(e) {
             tag: "span",
             children: v.intl.string(v.t["k60MO+"])
           }), (0, r.jsx)(d.g8p, {
-            className: A.X1
+            className: y.X1
           })]
         })
       })
     }), (0, r.jsx)(a.kS, {
-      className: A.nd,
+      className: y.nd,
       children: (0, r.jsxs)("div", {
-        className: A.Qs,
+        className: y.Qs,
         children: [(0, r.jsxs)("p", {
           children: [v.intl.format(v.t.kBaRSt, {}), (0, r.jsxs)("ul", {
-            className: A.Dj,
+            className: y.Dj,
             children: [(0, r.jsx)("li", {
               children: v.intl.format(v.t.tUarT8, {})
             }), (0, r.jsx)("li", {
@@ -86,14 +86,14 @@ function E(e) {
       })
     })]
   }) : (0, r.jsxs)(a.EN, {
-    className: A.oe,
+    className: y.oe,
     defaultExpanded: n,
-    children: [(0, r.jsx)(c.D, {
+    children: [(0, r.jsx)(o.D, {
       level: 2,
       children: (0, r.jsx)(d.vN3, {
-        children: (0, r.jsxs)(o.$, {
+        children: (0, r.jsxs)(c.$, {
           slot: "trigger",
-          className: A.wx,
+          className: y.wx,
           children: [(0, r.jsx)(d.EpV, {
             color: "currentColor"
           }), (0, r.jsx)(d.EYj, {
@@ -101,17 +101,17 @@ function E(e) {
             tag: "span",
             children: v.intl.string(v.t["F+YaVP"])
           }), (0, r.jsx)(d.g8p, {
-            className: A.X1
+            className: y.X1
           })]
         })
       })
     }), (0, r.jsx)(a.kS, {
-      className: A.nd,
+      className: y.nd,
       children: (0, r.jsxs)("div", {
-        className: A.Qs,
+        className: y.Qs,
         children: [(0, r.jsxs)("p", {
           children: [v.intl.format(v.t.xaPmNf, {}), (0, r.jsxs)("ul", {
-            className: A.Dj,
+            className: y.Dj,
             children: [(0, r.jsx)("li", {
               children: v.intl.format(v.t.tUarT8, {})
             }), (0, r.jsx)("li", {
@@ -133,8 +133,8 @@ function E(e) {
             breakingChangeDate: u
           })
         }), (0, r.jsx)("div", {
-          className: A.yF
-        }), (0, r.jsx)(N, {
+          className: y.yF
+        }), (0, r.jsx)(E, {
           guild: t
         })]
       })
@@ -142,37 +142,37 @@ function E(e) {
   })
 }
 
-function N(e) {
+function E(e) {
   let {
     guild: t
-  } = e, n = (0, u.bG)([x.A], () => x.A.can(O.xBc.ADMINISTRATOR, t)), l = t.features.has(O.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE), s = t.features.has(O.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE), [a, c] = i.useState(true), [o, f] = i.useState(true);
+  } = e, n = (0, u.bG)([h.A], () => h.A.can(_.xBc.ADMINISTRATOR, t)), l = t.features.has(_.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE), s = t.features.has(_.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE), [a, o] = i.useState(true), [c, g] = i.useState(true);
   return n ? (0, r.jsxs)("form", {
-    className: A.Zd,
+    className: y.Zd,
     children: [(0, r.jsxs)("fieldset", {
       children: [(0, r.jsx)("legend", {
         children: v.intl.string(v.t["/SSzPD"])
-      }), (0, r.jsx)(_, {
+      }), (0, r.jsx)(N, {
         label: v.intl.string(v.t.KMbKTt),
         migratedLabel: v.intl.string(v.t.IJKefK),
         migrated: l,
         enabled: a,
-        onChange: c
-      }), (0, r.jsx)(_, {
+        onChange: o
+      }), (0, r.jsx)(N, {
         label: v.intl.string(v.t["7ltOG9"]),
         migratedLabel: v.intl.string(v.t.gVKQNA),
         migrated: s,
-        enabled: o,
-        onChange: f
+        enabled: c,
+        onChange: g
       })]
     }), (0, r.jsx)(d.$nd, {
       text: v.intl.string(v.t["1Qm822"]),
-      disabled: (!a || l) && (!o || s),
+      disabled: (!a || l) && (!c || s),
       onClick: () => {
         var e, n;
         return e = t, n = {
           migratePin: a && !l,
-          migrateSlowmode: o && !s
-        }, void g.A.show({
+          migrateSlowmode: c && !s
+        }, void m.A.show({
           title: v.intl.string(v.t.fM5aQ2),
           body: v.intl.format(v.t.rLbJs6, {
             guildName: e.name
@@ -190,7 +190,7 @@ function N(e) {
   })
 }
 
-function _(e) {
+function N(e) {
   let {
     label: t,
     migratedLabel: n,
@@ -210,7 +210,7 @@ async function S(e, t) {
   try {
     await j.A.migratePermissions(e, t)
   } catch (e) {
-    g.A.show({
+    m.A.show({
       title: v.intl.string(v.t.R0RpRX),
       body: v.intl.string(v.t["58yMLG"]),
       confirmVariant: "secondary"

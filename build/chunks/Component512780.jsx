@@ -2,7 +2,7 @@
 /** chunk id: 512780, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./747238.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,7 +22,7 @@ require("./827669.js");
 var Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk538830 = require("./538830.js");
-let y = {
+let b = {
   results: {
     command: null,
     integrations: [],
@@ -39,10 +39,10 @@ function O(e, t, n) {
   }
 }
 
-function A(e) {
+function v(e) {
   return e.meta.url
 }
-let v = {
+let A = {
   stores: [Chunk861382.A, Chunk29599.A],
   matches(e, t, n, r, i) {
     var a;
@@ -53,11 +53,11 @@ let v = {
       command: a,
       query: o
     } = O(e, n, r);
-    if (null == a) return y;
+    if (null == a) return b;
     let l = s().findKey(g.Z86, e => e.command === a);
     i && null != l && o.length > 0 && c.A.search(l, o);
     let u = h.A.getResults(l, o);
-    return null == u ? y : {
+    return null == u ? b : {
       results: {
         command: a,
         integrations: u.results,
@@ -79,21 +79,21 @@ let v = {
       onClick: f
     } = e, {
       command: h,
-      query: y
+      query: b
     } = O(s, l, c);
-    if (null == h || 0 === y.length) return null;
+    if (null == h || 0 === b.length) return null;
     if (n) return (0, r.jsx)(o.y$y, {
-      className: b.u1,
+      className: y.u1,
       type: o.y$y.Type.SPINNING_CIRCLE
     });
     if (null != t) {
-      var A, v;
+      var v, A;
       let e = false,
         n = t.map((t, n) => {
           if (t.type === g.p_j.GIF) {
             var i, s, o;
             return e = true, (0, r.jsx)(p.Ay.GIFIntegration, {
-              className: b.ho,
+              className: y.ho,
               onClick: f,
               onHover: u,
               selected: a === n,
@@ -105,16 +105,16 @@ let v = {
             }, "".concat(t.meta.url).concat(t.meta.src))
           }
         }),
-        o = c.commands === m.Ze.OLD_BUILT_INS ? h : null != (A = null == (v = d.A.getActiveCommand(s.id)) ? true : v.integrationTitle) ? A : h,
-        l = y.length > 0 && null != o ? E.intl.format(E.t["3njXz/"], {
-          query: y,
+        o = c.commands === m.Ze.OLD_BUILT_INS ? h : null != (v = null == (A = d.A.getActiveCommand(s.id)) ? true : A.integrationTitle) ? v : h,
+        l = b.length > 0 && null != o ? E.intl.format(E.t["3njXz/"], {
+          query: b,
           command: o
         }) : null != o ? o : h;
       return (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(p.Ay.Title, {
           title: l
         }), e ? (0, r.jsx)(_.A, {
-          className: b.os,
+          className: y.os,
           children: n
         }) : n]
       }, "gifs")
@@ -136,7 +136,7 @@ let v = {
       type: null
     };
     let c = n[r];
-    if (i === m.lg.INSERT ? a.replaceText(A(c)) : a.sendMessage(A(c)), u.Ay.trackWithMetadata(g.HAw.SEARCH_RESULT_SELECTED, {
+    if (i === m.lg.INSERT ? a.replaceText(v(c)) : a.sendMessage(v(c)), u.Ay.trackWithMetadata(g.HAw.SEARCH_RESULT_SELECTED, {
         search_type: g.I4_.GIF,
         index_num: r,
         source_object: "/".concat(t)

@@ -28,14 +28,14 @@ let f = {
         hourCycle: h,
         hideTimeZone: m,
         showMinMax: g
-      } = e, [E, b] = i.useState((0, a.Ec)((0, a.Xj)())), [y, O] = i.useState(""), A = i.useCallback(e => {
-        b(e), O("")
-      }, []), v = i.useCallback(() => {
-        b(null)
-      }, []), S = i.useCallback(() => {
-        b((0, a.Ec)((0, a.Xj)()))
+      } = e, [E, y] = i.useState((0, a.Ec)((0, a.Xj)())), [b, O] = i.useState(""), v = i.useCallback(e => {
+        y(e), O("")
+      }, []), A = i.useCallback(() => {
+        y(null)
       }, []), I = i.useCallback(() => {
-        "day" === _ ? b((0, s._U)("2024-12-25")) : b((0, s.DP)("2024-12-25T15:30"))
+        y((0, a.Ec)((0, a.Xj)()))
+      }, []), S = i.useCallback(() => {
+        "day" === _ ? y((0, s._U)("2024-12-25")) : y((0, s.DP)("2024-12-25T15:30"))
       }, [_]), T = i.useCallback(() => {
         if (p && null == E) O("This field is required");
         else if (g && null != E) {
@@ -51,7 +51,7 @@ let f = {
           label: t,
           description: "" !== n ? n : true,
           value: E,
-          onChange: A,
+          onChange: v,
           disabled: f,
           required: p,
           granularity: _,
@@ -59,7 +59,7 @@ let f = {
           hideTimeZone: m,
           minValue: g ? (0, s._U)("2024-01-01") : true,
           maxValue: g ? (0, s._U)("2024-12-31") : true,
-          errorMessage: y,
+          errorMessage: b,
           helperText: null != E ? (0, o.default)(E.toDate((0, a.Xj)()), "MMMM d, yyyy") : ""
         }), (0, r.jsxs)(c.BJc, {
           direction: "horizontal",
@@ -68,19 +68,19 @@ let f = {
             variant: "secondary",
             size: "sm",
             text: "Clear",
-            onClick: v,
+            onClick: A,
             disabled: f
           }), (0, r.jsx)(u.$nd, {
             variant: "secondary",
             size: "sm",
             text: "Set Today",
-            onClick: S,
+            onClick: I,
             disabled: f
           }), (0, r.jsx)(u.$nd, {
             variant: "secondary",
             size: "sm",
             text: "Set Dec 25",
-            onClick: I,
+            onClick: S,
             disabled: f
           }), (0, r.jsx)(u.$nd, {
             variant: "primary",

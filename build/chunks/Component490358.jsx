@@ -47,7 +47,7 @@ function S(e) {
     }), null != s && (0, r.jsx)("div", {
       className: v.qj,
       style: {
-        background: "linear-gradient(180deg, ".concat((0, f.cb)(s, .16), " 0%, ").concat((0, f.cb)(s, 1), " 100%)")
+        background: "linear-gradient(180deg, ".concat((0, h.cb)(s, .16), " 0%, ").concat((0, h.cb)(s, 1), " 100%)")
       }
     }), (0, r.jsx)("div", {
       className: v.qj
@@ -61,20 +61,20 @@ let C = e => {
     ref: n,
     width: o,
     height: c
-  } = (0, s.Ay)(), [p, f] = i.useState(y.go.INITIAL), C = (0, l.bG)([m.A], () => m.A.getRequest(t)), N = (0, l.bG)([d.A], () => d.A.getGuild(t)), {
+  } = (0, s.Ay)(), [p, h] = i.useState(y.go.INITIAL), C = (0, l.bG)([A.A], () => A.A.getRequest(t)), N = (0, l.bG)([d.A], () => d.A.getGuild(t)), {
     hasFetchedRequestToJoinGuilds: T,
     guildPreviewDisabled: j
-  } = (0, l.cf)([m.A], () => ({
-    hasFetchedRequestToJoinGuilds: m.A.hasFetchedRequestToJoinGuilds,
-    guildPreviewDisabled: m.A.getJoinRequestGuild(t)
+  } = (0, l.cf)([A.A], () => ({
+    hasFetchedRequestToJoinGuilds: A.A.hasFetchedRequestToJoinGuilds,
+    guildPreviewDisabled: A.A.getJoinRequestGuild(t)
   }));
   i.useEffect(() => {
     null != N && (0, u.pX)(O.BVt.CHANNEL(t))
   }, [N, t]), i.useEffect(() => {
-    T || h.A.fetchRequestToJoinGuilds()
+    T || g.A.fetchRequestToJoinGuilds()
   }, [T]);
   let x = i.useCallback(() => {
-      f(Math.max(p, y.go.FILLING)), h.A.removeGuildJoinRequest(t), (0, u.pX)(O.BVt.ME)
+      h(Math.max(p, y.go.FILLING)), g.A.removeGuildJoinRequest(t), (0, u.pX)(O.BVt.ME)
     }, [t, p]),
     P = (e, t) => () => {
       (0, a.A)({
@@ -86,7 +86,7 @@ let C = e => {
       })
     },
     w = async () => {
-      await h.A.resetGuildJoinRequest(t), (0, A.Ze)(t)
+      await g.A.resetGuildJoinRequest(t), (0, f.Ze)(t)
     }, L = e => {
       e ? P(I.intl.format(I.t["9ZezpN"], {
         name: null == j ? true : j.name
@@ -106,13 +106,13 @@ let C = e => {
       children: (() => {
         if (null == C) return null;
         switch (C.applicationStatus) {
-          case g.B5.SUBMITTED:
+          case m.B5.SUBMITTED:
             return (0, r.jsx)(E.A, {
               onWithdrawApplication: () => L(true),
               guild: j
             });
-          case g.B5.REJECTED:
-            return (0, r.jsx)(_.A, {
+          case m.B5.REJECTED:
+            return (0, r.jsx)(b.A, {
               reapplyText: I.intl.string(I.t.I1LYVk),
               onReapply: w,
               confirmText: I.intl.string(I.t.g9tK0o),
@@ -121,9 +121,9 @@ let C = e => {
               guild: j
             });
           default:
-            return (0, r.jsx)(b.K, {
+            return (0, r.jsx)(_.K, {
               onDiscardApplication: R,
-              onContinueApplication: () => (0, A.Ze)(t),
+              onContinueApplication: () => (0, f.Ze)(t),
               guild: j
             })
         }

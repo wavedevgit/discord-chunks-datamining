@@ -106,7 +106,7 @@ var Chunk611668 = require("./611668.js"),
             s = e || T(a),
             o = s.x,
             l = s.y;
-          R(i) || N(false), i.focus(), a === window ? window.scrollTo(o, l) : y.setTop(a, l), r || n.update(E.forceSelection(t, t.getSelection()))
+          R(i) || N(false), i.focus(), a === window ? window.scrollTo(o, l) : b.setTop(a, l), r || n.update(E.forceSelection(t, t.getSelection()))
         }
       }), o(s(n), "blur", function() {
         var e = n.editor;
@@ -138,7 +138,7 @@ var Chunk611668 = require("./611668.js"),
         n._dragCount++
       }), o(s(n), "onDragLeave", function() {
         n._dragCount--, 0 === n._dragCount && n.exitCurrentMode()
-      }), n._blockSelectEvents = false, n._clipboard = null, n._handler = null, n._dragCount = 0, n._editorKey = t.editorKey || S(), n._placeholderAccessibilityID = "placeholder-" + n._editorKey, n._latestEditorState = t.editorState, n._latestCommittedEditorState = t.editorState, n._onBeforeInput = n._buildHandler("onBeforeInput"), n._onBlur = n._buildHandler("onBlur"), n._onCharacterData = n._buildHandler("onCharacterData"), n._onCompositionEnd = n._buildHandler("onCompositionEnd"), n._onCompositionStart = n._buildHandler("onCompositionStart"), n._onCopy = n._buildHandler("onCopy"), n._onCut = n._buildHandler("onCut"), n._onDragEnd = n._buildHandler("onDragEnd"), n._onDragOver = n._buildHandler("onDragOver"), n._onDragStart = n._buildHandler("onDragStart"), n._onDrop = n._buildHandler("onDrop"), n._onInput = n._buildHandler("onInput"), n._onFocus = n._buildHandler("onFocus"), n._onKeyDown = n._buildHandler("onKeyDown"), n._onKeyPress = n._buildHandler("onKeyPress"), n._onKeyUp = n._buildHandler("onKeyUp"), n._onMouseDown = n._buildHandler("onMouseDown"), n._onMouseUp = n._buildHandler("onMouseUp"), n._onPaste = n._buildHandler("onPaste"), n._onSelect = n._buildHandler("onSelect"), n.getEditorKey = function() {
+      }), n._blockSelectEvents = false, n._clipboard = null, n._handler = null, n._dragCount = 0, n._editorKey = t.editorKey || I(), n._placeholderAccessibilityID = "placeholder-" + n._editorKey, n._latestEditorState = t.editorState, n._latestCommittedEditorState = t.editorState, n._onBeforeInput = n._buildHandler("onBeforeInput"), n._onBlur = n._buildHandler("onBlur"), n._onCharacterData = n._buildHandler("onCharacterData"), n._onCompositionEnd = n._buildHandler("onCompositionEnd"), n._onCompositionStart = n._buildHandler("onCompositionStart"), n._onCopy = n._buildHandler("onCopy"), n._onCut = n._buildHandler("onCut"), n._onDragEnd = n._buildHandler("onDragEnd"), n._onDragOver = n._buildHandler("onDragOver"), n._onDragStart = n._buildHandler("onDragStart"), n._onDrop = n._buildHandler("onDrop"), n._onInput = n._buildHandler("onInput"), n._onFocus = n._buildHandler("onFocus"), n._onKeyDown = n._buildHandler("onKeyDown"), n._onKeyPress = n._buildHandler("onKeyPress"), n._onKeyUp = n._buildHandler("onKeyUp"), n._onMouseDown = n._buildHandler("onMouseDown"), n._onMouseUp = n._buildHandler("onMouseUp"), n._onPaste = n._buildHandler("onPaste"), n._onSelect = n._buildHandler("onSelect"), n.getEditorKey = function() {
         return n._editorKey
       }, n.state = {
         contentsKey: 0
@@ -166,7 +166,7 @@ var Chunk611668 = require("./611668.js"),
           textAlignment: this.props.textAlignment,
           accessibilityID: this._placeholderAccessibilityID
         };
-        return b.createElement(m, e)
+        return y.createElement(m, e)
       }
       return null
     }, r.render = function() {
@@ -181,7 +181,7 @@ var Chunk611668 = require("./611668.js"),
         d = e.readOnly,
         p = e.textAlignment,
         _ = e.textDirectionality,
-        h = v({
+        h = A({
           "DraftEditor/root": true,
           "DraftEditor/alignLeft": "left" === p,
           "DraftEditor/alignRight": "right" === p,
@@ -196,7 +196,7 @@ var Chunk611668 = require("./611668.js"),
         },
         g = this.props.role || "textbox",
         E = "combobox" === g ? !!this.props.ariaExpanded : null,
-        y = {
+        b = {
           blockRenderMap: t,
           blockRendererFn: n,
           blockStyleFn: r,
@@ -207,12 +207,12 @@ var Chunk611668 = require("./611668.js"),
           preventScroll: c,
           textDirectionality: _
         };
-      return b.createElement("div", {
+      return y.createElement("div", {
         className: h
-      }, this._renderPlaceholder(), b.createElement("div", {
-        className: v("DraftEditor/editorContainer"),
+      }, this._renderPlaceholder(), y.createElement("div", {
+        className: A("DraftEditor/editorContainer"),
         ref: this._handleEditorContainerRef
-      }, b.createElement("div", {
+      }, y.createElement("div", {
         "aria-activedescendant": d ? null : this.props.ariaActiveDescendantID,
         "aria-autocomplete": d ? null : this.props.ariaAutoComplete,
         "aria-controls": d ? null : this.props.ariaControls,
@@ -225,7 +225,7 @@ var Chunk611668 = require("./611668.js"),
         autoCapitalize: this.props.autoCapitalize,
         autoComplete: this.props.autoComplete,
         autoCorrect: this.props.autoCorrect,
-        className: v({
+        className: A({
           notranslate: !d,
           "public/DraftEditor/content": true
         }),
@@ -257,10 +257,10 @@ var Chunk611668 = require("./611668.js"),
         style: m,
         suppressContentEditableWarning: true,
         tabIndex: this.props.tabIndex
-      }, b.createElement(j, {
+      }, y.createElement(j, {
         editor: this,
         editorState: l
-      }), b.createElement(f, i({}, y, {
+      }), y.createElement(f, i({}, b, {
         key: "contents" + this.state.contentsKey
       })))))
     }, r.componentDidMount = function() {

@@ -5,13 +5,13 @@ let r, i;
 require.r(exports), require.d(exports, {
   encryptAndStoreTokens: () => w,
   getAnalyticsToken: () => O,
-  getToken: () => A,
+  getToken: () => v,
   hideToken: () => T,
-  init: () => y,
+  init: () => b,
   removeAnalyticsToken: () => R,
   removeToken: () => N,
-  setAnalyticsToken: () => v,
-  setToken: () => S,
+  setAnalyticsToken: () => A,
+  setToken: () => I,
   showToken: () => C
 }), require("./896048.js");
 var Chunk506774 = require("./506774.js"),
@@ -55,11 +55,11 @@ function E(e) {
   }
 }
 
-function b(e) {
+function y(e) {
   return (null == u ? true : u.isEncryptionAvailable()) && !e.startsWith(o) ? "".concat(o).concat(u.encryptString(e)) : e
 }
 
-function y() {
+function b() {
   if (m) return;
   i = a.w.get(s.il), _ = a.w.get(s.zy) || {};
   let {
@@ -79,22 +79,22 @@ function y() {
 }
 
 function O() {
-  return A(l)
-}
-
-function A(e) {
-  return (y(), null != e) ? p[e] : r
+  return v(l)
 }
 
 function v(e) {
-  null == e ? N(l) : I(e, l)
+  return (b(), null != e) ? p[e] : r
 }
 
-function S(e, t) {
-  null == e ? N(t) : (r = e, I(e, t))
+function A(e) {
+  null == e ? N(l) : S(e, l)
 }
 
 function I(e, t) {
+  null == e ? N(t) : (r = e, S(e, t))
+}
+
+function S(e, t) {
   null != t && (p[t] = e), f ? w() : (i = r, _ = p, g())
 }
 
@@ -116,8 +116,8 @@ function R() {
 }
 
 function w() {
-  (null == u ? true : u.isEncryptionAvailable()) ? (null != r && (i = b(r)), _ = c(Object.entries(p).map(e => {
+  (null == u ? true : u.isEncryptionAvailable()) ? (null != r && (i = y(r)), _ = c(Object.entries(p).map(e => {
     let [t, n] = e;
-    return [t, b(n)]
+    return [t, y(n)]
   })), f = true) : (i = r, _ = p), g()
 }

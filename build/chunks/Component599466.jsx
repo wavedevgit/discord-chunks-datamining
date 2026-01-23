@@ -42,17 +42,17 @@ function R(e, t) {
 }
 let C = new Chunk661191.SnowflakeSequence,
   L = {},
-  W = new Set([Chunk56562.aI.BORDERLESS_FULLSCREEN, Chunk56562.aI.FULLSCREEN, Chunk56562.aI.WINDOWED, Chunk56562.aI.MAXIMIZED, Chunk56562.aI.MINIMIZED, Chunk56562.aI.UNKNOWN]);
+  F = new Set([Chunk56562.aI.BORDERLESS_FULLSCREEN, Chunk56562.aI.FULLSCREEN, Chunk56562.aI.WINDOWED, Chunk56562.aI.MAXIMIZED, Chunk56562.aI.MINIMIZED, Chunk56562.aI.UNKNOWN]);
 
-function F(e) {
-  for (let t of Object.values(G.default.getClosedTrackedGamesHistory()))
+function W(e) {
+  for (let t of Object.values(O.default.getClosedTrackedGamesHistory()))
     if (t.applicationId === e.id || t.gameName === e.name) return t;
   return null
 }
 
 function U(e) {
   var t, n, l;
-  let r = F(e);
+  let r = W(e);
   return {
     gameId: e.id,
     gameName: e.name,
@@ -66,7 +66,7 @@ function U(e) {
 
 function B(e) {
   var t, n;
-  let [l] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [b.A];
+  let [l] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [_.A];
   if (null == e) return null;
   if (null != e.gameId) {
     let t = l.getDetectableGame(e.gameId);
@@ -118,8 +118,8 @@ function K(e) {
   let {
     selectedGame: t,
     setSelectedGame: n
-  } = e, r = (0, o.yK)([b.A, y.Ay], () => {
-    let e = b.A.games,
+  } = e, r = (0, o.yK)([_.A, y.Ay], () => {
+    let e = _.A.games,
       t = e.reduce((e, t) => (e[t.id] = t, e), {});
     return [...e, ...y.Ay.getGamesSeen(false).reduce((e, n) => {
       let l = n.id;
@@ -131,7 +131,7 @@ function K(e) {
       }
       return e
     }, [])]
-  }, []), a = (0, o.bG)([b.A], () => B(t, [b.A]), [t]);
+  }, []), a = (0, o.bG)([_.A], () => B(t, [_.A]), [t]);
   return (0, l.jsx)(p.i, {
     games: r,
     selectedGame: null != a ? a : null,
@@ -139,7 +139,7 @@ function K(e) {
       if (null != e) {
         var t, l, r;
         let a;
-        n((a = F(e), {
+        n((a = W(e), {
           gameId: e.id,
           gameName: e.name,
           gamePid: null != (t = null == a ? true : a.pid) ? t : true,
@@ -149,13 +149,13 @@ function K(e) {
         }))
       } else n(null)
     },
-    placeholder: T.intl.string(T.t.b1IW2e)
+    placeholder: D.intl.string(D.t.b1IW2e)
   })
 }
 let q = {
   HandleFocusChanged: (e, t) => {
     var n;
-    if (!(0, E.$8)(e, "HandleFocusChanged")) returntrue;
+    if (!(0, G.$8)(e, "HandleFocusChanged")) returntrue;
     let l = null != t && null != (n = w.A.getKnownWindowHandlesForPID(t)) ? n : new Set,
       {
         focusedPid: r,
@@ -165,7 +165,7 @@ let q = {
   },
   EventHook: (e, t) => {
     var n;
-    if (!(0, E.$8)(e, "EventHook")) returntrue;
+    if (!(0, G.$8)(e, "EventHook")) returntrue;
     let l = null != t && null != (n = w.A.getKnownWindowHandlesForPID(t)) ? n : new Set;
     try {
       let {
@@ -184,14 +184,14 @@ function H(e) {
   let {
     onClose: i,
     transitionState: p,
-    location: b,
+    location: _,
     appContext: x
-  } = e, C = (0, o.bG)([_.default], () => _.default.getFocusedPID()), L = null != C ? C : (0, S.getPID)(), B = (0, o.bG)([G.default], () => G.default.getTrackedGameByPid(L), [L]), [H, Z] = r.useState(null), [z, J] = r.useState(""), X = function() {
+  } = e, C = (0, o.bG)([b.default], () => b.default.getFocusedPID()), L = null != C ? C : (0, S.getPID)(), B = (0, o.bG)([O.default], () => O.default.getTrackedGameByPid(L), [L]), [H, Z] = r.useState(null), [z, J] = r.useState(""), X = function() {
     var e, t, n, l, r, a;
     let i = (0, P.b4)(),
-      u = (0, o.bG)([_.default], () => _.default.getFocusedPID()),
+      u = (0, o.bG)([b.default], () => b.default.getFocusedPID()),
       s = null != u ? u : (0, S.getPID)(),
-      d = (0, o.bG)([G.default], () => G.default.getTrackedGameByPid(s), [s]),
+      d = (0, o.bG)([O.default], () => O.default.getTrackedGameByPid(s), [s]),
       c = (0, o.bG)([y.Ay], () => y.Ay.getVisibleGame()),
       m = (0, o.bG)([y.Ay], () => y.Ay.getGamesSeen(false)[0]);
     switch (true) {
@@ -207,11 +207,11 @@ function H(e) {
           gamePid: null == g ? true : g.pid,
           fullscreenType: null != (l = null == g ? true : g.fullscreenType) ? l : true,
           runningGame: null != g ? g : true,
-          trackedGame: null != f && null != (r = G.default.getTrackedGameByPid(f)) ? r : true
+          trackedGame: null != f && null != (r = O.default.getTrackedGameByPid(f)) ? r : true
         };
       case null != c:
         return {
-          gameId: c.id, gameName: c.name, gamePid: c.pid, fullscreenType: c.fullscreenType, trackedGame: null != (a = F(c)) ? a : true, runningGame: c
+          gameId: c.id, gameName: c.name, gamePid: c.pid, fullscreenType: c.fullscreenType, trackedGame: null != (a = W(c)) ? a : true, runningGame: c
         };
       default:
         return null != m ? U(m) : null
@@ -226,32 +226,32 @@ function H(e) {
     breadcrumbs: j.A.getOverlayLoggingBreadcrumbs()
   }), [], R)), eo = r.useMemo(() => {
     let e = {
-      game_crashes_occurred: T.t["1UWmCV"],
-      poor_performance: T.t["4owu+4"],
-      overlay_unresponsive: T.t.Q8Z0xo,
-      keybindings_not_working: T.t.UnzaZs,
-      alt_tabbing_issues: T.t["/sG9Sf"],
-      game_not_interactable: T.t["+18gq6"],
-      game_forced_minimized: T.t.dabM8C,
-      other: T.t["UhbPA+"]
+      game_crashes_occurred: D.t["1UWmCV"],
+      poor_performance: D.t["4owu+4"],
+      overlay_unresponsive: D.t.Q8Z0xo,
+      keybindings_not_working: D.t.UnzaZs,
+      alt_tabbing_issues: D.t["/sG9Sf"],
+      game_not_interactable: D.t["+18gq6"],
+      game_forced_minimized: D.t.dabM8C,
+      other: D.t["UhbPA+"]
     };
     return Object.keys(e).map(t => ({
       id: t,
-      label: T.intl.string(e[t]),
+      label: D.intl.string(e[t]),
       value: t
     }))
   }, []), es = r.useMemo(() => {
     let e = {
-      [m.aI.FULLSCREEN]: T.t.AjBsPe,
-      [m.aI.WINDOWED]: T.t["0oYq2i"],
-      [m.aI.BORDERLESS_FULLSCREEN]: T.t.NwNvjf,
-      [m.aI.MINIMIZED]: T.t.Wypflu,
-      [m.aI.MAXIMIZED]: T.t["MUX2+G"],
-      [m.aI.UNKNOWN]: T.t.QPOep8
+      [m.aI.FULLSCREEN]: D.t.AjBsPe,
+      [m.aI.WINDOWED]: D.t["0oYq2i"],
+      [m.aI.BORDERLESS_FULLSCREEN]: D.t.NwNvjf,
+      [m.aI.MINIMIZED]: D.t.Wypflu,
+      [m.aI.MAXIMIZED]: D.t["MUX2+G"],
+      [m.aI.UNKNOWN]: D.t.QPOep8
     };
-    return [...W].map(t => ({
+    return [...F].map(t => ({
       id: t.toString(),
-      label: T.intl.string(e[t]),
+      label: D.intl.string(e[t]),
       value: t
     }))
   }, []), ed = async () => {
@@ -263,12 +263,12 @@ function H(e) {
       return
     }
     et(true);
-    let o = null != (e = _.default.getFocusedPID()) ? e : (0, S.getPID)(),
-      c = G.default.getTrackedGameByPid(o),
+    let o = null != (e = b.default.getFocusedPID()) ? e : (0, S.getPID)(),
+      c = O.default.getTrackedGameByPid(o),
       g = w.A.getPopoutInitializationStages(),
       y = (null == c ? true : c.overlayMethod) != null ? A.Ue[c.overlayMethod] : null,
       p = null != (t = null == c ? true : c.fullscreenType) ? t : m.aI.UNKNOWN,
-      j = (0, E.tn)(eu, e => {
+      j = (0, G.tn)(eu, e => {
         for (let t of Object.values(q)) try {
           if (!t(e, o)) returnfalse
         } catch (e) {
@@ -276,8 +276,8 @@ function H(e) {
         }
         returntrue
       }),
-      P = O.A.getRecentActions(10),
-      T = N.A.getRecentExperimentBuckets(v.A.getAllExperimentAssignments(), new Date(Date.now() - 7776e6)),
+      P = E.A.getRecentActions(10),
+      D = N.A.getRecentExperimentBuckets(v.A.getAllExperimentAssignments(), new Date(Date.now() - 7776e6)),
       M = (null == c ? true : c.fullscreenHistory) == null ? null : Object.entries(c.fullscreenHistory).sort((e, t) => {
         let [n] = e, [l] = t;
         return Number(l) - Number(n)
@@ -302,10 +302,10 @@ function H(e) {
         overlay_module_breadcrumbs: JSON.stringify(j),
         fullscreen_history_for_pid: M,
         media_session_id: h.A.getMediaSessionId(),
-        recent_experiment_buckets: JSON.stringify(T),
-        location: b
+        recent_experiment_buckets: JSON.stringify(D),
+        location: _
       };
-    await I.default.track(D.HAw.OVERLAY_BUG_REPORT, R), await (0, s.yy)(1e3), et(false), null == i || i(), (0, d.mMO)(async () => {
+    await I.default.track(T.HAw.OVERLAY_BUG_REPORT, R), await (0, s.yy)(1e3), et(false), null == i || i(), (0, d.mMO)(async () => {
       let {
         default: e
       } = await n.e("36058").then(n.bind(n, 823777));
@@ -332,20 +332,20 @@ function H(e) {
     })
   };
   return (0, g.Ay)(() => {
-    I.default.track(D.HAw.OPEN_MODAL, {
+    I.default.track(T.HAw.OPEN_MODAL, {
       type: "overlay_bug_reporter_modal",
-      location: b
+      location: _
     })
   }), (0, l.jsx)(u.Modal, {
     transitionState: p,
-    title: T.intl.string(T.t.OKmenM),
+    title: D.intl.string(D.t.OKmenM),
     actions: [{
-      text: T.intl.string(T.t["ETE/oC"]),
+      text: D.intl.string(D.t["ETE/oC"]),
       onClick: i,
       variant: "secondary",
       disabled: ee
     }, {
-      text: T.intl.string(T.t.geKm7t),
+      text: D.intl.string(D.t.geKm7t),
       onClick: ec,
       variant: "primary",
       loading: ee
@@ -361,12 +361,12 @@ function H(e) {
           children: (0, l.jsx)(d.Text, {
             variant: "text-md/medium",
             color: er ? "text-feedback-critical" : "text-strong",
-            children: T.intl.string(T.t.Trx7eJ)
+            children: D.intl.string(D.t.Trx7eJ)
           })
         }), (0, l.jsx)(d.l6P, {
-          label: T.intl.string(T.t.mKTzjI),
+          label: D.intl.string(D.t.mKTzjI),
           hideLabel: true,
-          placeholder: T.intl.string(T.t.mKTzjI),
+          placeholder: D.intl.string(D.t.mKTzjI),
           options: eo,
           value: H,
           onSelectionChange: e => {
@@ -377,25 +377,25 @@ function H(e) {
         }), er && (0, l.jsx)(d.Text, {
           variant: "text-xs/semibold",
           color: "text-feedback-critical",
-          children: T.intl.string(T.t["5cqa9J"])
+          children: D.intl.string(D.t["5cqa9J"])
         })]
       }), (0, l.jsxs)("div", {
         className: M.DB,
         children: [(0, l.jsx)(d.Text, {
           variant: "text-md/medium",
           color: "text-strong",
-          children: T.intl.string(T.t.iZufAY)
+          children: D.intl.string(D.t.iZufAY)
         }), (0, l.jsx)(d.fs1, {
           autosize: true,
           value: z,
           maxLength: 1e3,
           showCharacterCount: false,
-          placeholder: T.intl.string(T.t["68mJXW"]),
+          placeholder: D.intl.string(D.t["68mJXW"]),
           onChange: J
         }), (0, l.jsx)(d.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: T.intl.string(T.t.TzkM2a)
+          children: D.intl.string(D.t.TzkM2a)
         })]
       }), (0, l.jsx)("div", {
         className: M.hr
@@ -404,14 +404,14 @@ function H(e) {
         children: [(0, l.jsx)(d.Text, {
           variant: "text-md/medium",
           color: "text-strong",
-          children: T.intl.string(T.t["8+SU+a"])
+          children: D.intl.string(D.t["8+SU+a"])
         }), (0, l.jsx)(K, {
           selectedGame: Q,
           setSelectedGame: $
         }), (0, l.jsx)(d.l6P, {
-          label: T.intl.string(T.t.IjlqrF),
+          label: D.intl.string(D.t.IjlqrF),
           hideLabel: true,
-          placeholder: T.intl.string(T.t.IjlqrF),
+          placeholder: D.intl.string(D.t.IjlqrF),
           options: es,
           value: Y,
           onSelectionChange: V,

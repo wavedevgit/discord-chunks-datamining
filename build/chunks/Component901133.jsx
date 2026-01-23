@@ -65,12 +65,12 @@ class I extends Chunk64700.PureComponent {
   }
   renderTitle() {
     return (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(g.A, {
-        children: this.isHost() ? b.intl.formatToPlainString(b.t["6UJ7mh"], {
+      children: [(0, r.jsx)(m.A, {
+        children: this.isHost() ? _.intl.formatToPlainString(_.t["6UJ7mh"], {
           count: this.props.party.length
-        }) : b.intl.string(b.t.RZufbH)
-      }), (0, r.jsx)(A.A, {
-        children: b.intl.string(b.t["0ZHLIi"])
+        }) : _.intl.string(_.t.RZufbH)
+      }), (0, r.jsx)(f.A, {
+        children: _.intl.string(_.t["0ZHLIi"])
       })]
     })
   }
@@ -78,27 +78,27 @@ class I extends Chunk64700.PureComponent {
     let {
       onStopListening: e
     } = this.props;
-    return this.isHost() ? null : (0, r.jsx)(h.A, {
-      tooltipText: b.intl.string(b.t.LeZSpz),
+    return this.isHost() ? null : (0, r.jsx)(g.A, {
+      tooltipText: _.intl.string(_.t.LeZSpz),
       onClick: e,
       icon: o.PGe
     })
   }
   renderHelpIcon() {
-    return this.isHost() ? (0, r.jsx)(h.A, {
-      tooltipText: b.intl.string(b.t.U7N2Hs),
+    return this.isHost() ? (0, r.jsx)(g.A, {
+      tooltipText: _.intl.string(_.t.U7N2Hs),
       onClick: () => {
-        window.open(f.A.getArticleURL(m.MVz.SPOTIFY_CONNECTION), "_blank")
+        window.open(h.A.getArticleURL(A.MVz.SPOTIFY_CONNECTION), "_blank")
       },
       icon: o.mir
     }) : null
   }
   render() {
     return (0, r.jsxs)("div", {
-      className: _.Jh,
+      className: b.Jh,
       children: [this.renderTitle(), (0, r.jsx)(u.A, {
         justify: u.A.Justify.END,
-        className: _.Hg,
+        className: b.Hg,
         children: (0, r.jsx)(p.A, {
           users: this.props.party,
           max: this.isHost() ? 5 : 4,
@@ -106,7 +106,7 @@ class I extends Chunk64700.PureComponent {
           renderMoreUsers: this.renderPartyMemberOverflow
         })
       }), (0, r.jsxs)("div", {
-        className: _.Pt,
+        className: b.Pt,
         children: [this.renderHelpIcon(), this.renderStopListeningButton()]
       })]
     })
@@ -119,7 +119,7 @@ class I extends Chunk64700.PureComponent {
         host: l,
         onUserContextMenu: u
       } = this.props;
-      return n = (null == l ? true : l.id) === e.id ? b.intl.string(b.t["N9bqD+"]) : b.intl.string(b.t.Z2Y4c9), (0, r.jsx)(d.A, {
+      return n = (null == l ? true : l.id) === e.id ? _.intl.string(_.t["N9bqD+"]) : _.intl.string(_.t.Z2Y4c9), (0, r.jsx)(d.A, {
         targetElementRef: this.partyMemberAvatarRef,
         user: e,
         newAnalyticsLocations: [c.A.AVATAR],
@@ -132,7 +132,7 @@ class I extends Chunk64700.PureComponent {
             key: e.id,
             src: e.getAvatarURL(true, 24),
             size: o._3J.SIZE_24,
-            className: a()(_.my, t),
+            className: a()(b.my, t),
             "aria-label": e.username,
             onContextMenu: t => void(null != e && (null == u || u(t, e))),
             avatarContentRef: this.partyMemberAvatarRef
@@ -147,10 +147,10 @@ class I extends Chunk64700.PureComponent {
         renderPopout: i,
         targetElementRef: this.partyMemberOverflowRef,
         children: n => (0, r.jsx)(s.m, {
-          text: b.intl.string(b.t.Zf4NPe),
+          text: _.intl.string(_.t.Zf4NPe),
           children: (0, r.jsx)("div", y(O({}, n), {
             ref: this.partyMemberOverflowRef,
-            className: a()(_.ju, t),
+            className: a()(b.ju, t),
             children: e
           }))
         })

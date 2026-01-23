@@ -46,7 +46,7 @@ function j(e) {
     onClick: t,
     isExpanded: n
   } = e;
-  return (0, r.jsx)(y.A, {
+  return (0, r.jsx)(b.A, {
     iconClassName: a()(x.D6, {
       [x.S7]: n
     }),
@@ -61,14 +61,14 @@ function M(e) {
   let {
     channel: a,
     applicationId: o,
-    onMouseDown: y,
-    onMouseMove: v,
+    onMouseDown: b,
+    onMouseMove: A,
     onMouseLeave: N,
     onJumpToChannel: D,
     idle: j,
     selectedParticipant: M,
     embeddedActivity: k
-  } = e, U = (0, _.Us)() === w.BRT.POPOUT, G = (0, s.bG)([I.A], () => I.A.isVideoEnabled()), V = (0, s.bG)([I.A], () => Object.values(I.A.getVideoDevices())[0]), F = false === (null == (t = null == V ? true : V.disabled) || t), B = (0, u.A)([o])[0], H = (0, m.A)(a), {
+  } = e, U = (0, _.Us)() === w.BRT.POPOUT, G = (0, s.bG)([S.A], () => S.A.isVideoEnabled()), V = (0, s.bG)([S.A], () => Object.values(S.A.getVideoDevices())[0]), F = false === (null == (t = null == V ? true : V.disabled) || t), B = (0, u.A)([o])[0], H = (0, m.A)(a), {
     parentAnalyticsLocation: Y
   } = (0, c.Ay)(), W = e => {
     (0, f.X)(Y, f.O.CAMERA, e), l.A.setVideoEnabled(e)
@@ -83,12 +83,12 @@ function M(e) {
   };
   return (0, r.jsxs)("div", {
     className: L._v,
-    onMouseMove: v,
-    onMouseDown: y,
+    onMouseMove: A,
+    onMouseDown: b,
     onMouseLeave: N,
     children: [(0, r.jsx)("div", {
       className: L.K1,
-      children: (0, r.jsx)(b.X, {
+      children: (0, r.jsx)(y.X, {
         idle: j,
         title: null != (n = null != (i = null == B ? true : B.name) ? i : null == a ? true : a.name) ? n : "",
         onJumpToChannel: D,
@@ -101,7 +101,7 @@ function M(e) {
         shrink: 1,
         basis: "50%",
         align: p.A.Align.CENTER,
-        children: [(0, r.jsx)(S.A, {
+        children: [(0, r.jsx)(I.A, {
           className: x.Oc,
           enabled: G,
           cameraUnavailable: !F,
@@ -123,7 +123,7 @@ function M(e) {
         justify: p.A.Justify.END,
         basis: "50%",
         align: p.A.Align.CENTER,
-        children: [U || (0, T.f)() ? null : (0, r.jsx)(A.A, {
+        children: [U || (0, T.f)() ? null : (0, r.jsx)(v.A, {
           className: x.BD,
           popoutOpen: false,
           onOpenPopout: z,
@@ -159,7 +159,7 @@ function k(e) {
     onDoubleClick: f,
     children: [(0, r.jsx)("div", {
       className: L.K1,
-      children: (0, r.jsx)(b.X, {
+      children: (0, r.jsx)(y.X, {
         idle: p,
         title: null != (t = null != (n = null == m ? true : m.name) ? n : null == i ? true : i.name) ? t : "",
         onJumpToChannel: f,
@@ -189,7 +189,7 @@ function U(e) {
     participantsOpen: n,
     showToggleParticipants: i
   } = e;
-  return i ? (0, r.jsx)(v.A, {
+  return i ? (0, r.jsx)(A.A, {
     channelId: t,
     isParticipantsOpen: n,
     className: x.N9
@@ -210,7 +210,7 @@ function G(e) {
     isExpanded: h,
     hideExpandedButton: m,
     embeddedActivity: g
-  } = e, y = (0, u.A)([d])[0];
+  } = e, b = (0, u.A)([d])[0];
   return (0, r.jsx)("div", {
     className: x.LO,
     onMouseMove: s,
@@ -225,9 +225,9 @@ function G(e) {
         color: "currentColor",
         className: x.ro
       }), c && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(b.X, {
+        children: [(0, r.jsx)(y.X, {
           idle: !c,
-          title: null != (t = null != (n = null == y ? true : y.name) ? n : null == f ? true : f.name) ? t : "",
+          title: null != (t = null != (n = null == b ? true : b.name) ? n : null == f ? true : f.name) ? t : "",
           onJumpToChannel: p,
           preventIdleComponent: E.A
         }), (0, r.jsxs)("div", {

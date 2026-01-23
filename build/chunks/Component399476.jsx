@@ -62,29 +62,29 @@ function m(e) {
     onBlock: m,
     onIgnore: g,
     onUnignore: E,
-    location: b = "ContextMenu",
-    appContext: y = c.BRT.APP
+    location: y = "ContextMenu",
+    appContext: b = c.BRT.APP
   } = e, {
     id: O
-  } = t, A = (0, i.bG)([l.default], () => {
+  } = t, v = (0, i.bG)([l.default], () => {
     var e;
     return (null == (e = l.default.getCurrentUser()) ? true : e.id) === O
   }, [O]), {
-    isIgnored: v,
-    isBlocked: S
+    isIgnored: A,
+    isBlocked: I
   } = (0, i.cf)([o.A], () => ({
     isIgnored: o.A.isIgnored(O),
     isBlocked: o.A.isBlocked(O)
   }), [O]);
-  return A || S ? null : (0, r.jsx)(a.Drp, {
+  return v || I ? null : (0, r.jsx)(a.Drp, {
     id: "ignore",
     color: "default",
-    label: v ? u.intl.string(u.t["8wXU9B"]) : (0, r.jsx)("div", {
+    label: A ? u.intl.string(u.t["8wXU9B"]) : (0, r.jsx)("div", {
       className: d.P,
       children: u.intl.string(u.t.ytCpKs)
     }),
-    action: v ? () => {
-      null == E || E(), s.A.unignoreUser(O, null != b ? b : "use-ignore-user-item-web", null != _ ? _ : true)
+    action: A ? () => {
+      null == E || E(), s.A.unignoreUser(O, null != y ? y : "use-ignore-user-item-web", null != _ ? _ : true)
     } : () => {
       (0, a.mMO)(async () => {
         let {
@@ -96,10 +96,10 @@ function m(e) {
           user: t,
           onIgnore: g,
           onBlock: m,
-          location: b
+          location: y
         }))
       }, {
-        contextKey: (0, a.TId)(y)
+        contextKey: (0, a.TId)(b)
       })
     }
   })

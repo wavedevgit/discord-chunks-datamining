@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 909255, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,21 +15,21 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk880055 = require("./880055.js");
 
-function h(e) {
+function g(e) {
   let {
     targetElementRef: t,
     dismissPopover: n,
-    children: h
+    children: g
   } = e, {
-    orbsRewardAmount: A
-  } = (0, o.uX)("PremiumOrbRewardsUpsellPopover"), g = i.useCallback(() => {
+    orbsRewardAmount: f
+  } = (0, o.uX)("PremiumOrbRewardsUpsellPopover"), m = i.useCallback(() => {
     n(u.i.TAKE_ACTION), (0, s.pX)(c.BVt.APPLICATION_STORE)
-  }, [n]), m = (0, r.jsx)(l.AM, {
+  }, [n]), A = (0, r.jsx)(l.AM, {
     targetElementRef: t,
     onRequestClose: () => n(u.i.USER_DISMISS),
     graphic: {
       type: "image",
-      src: f.A
+      src: h.A
     },
     badge: {
       type: "beta",
@@ -44,11 +44,11 @@ function h(e) {
     size: "md",
     title: p.intl.string(d.default["3BI7j6"]),
     body: p.intl.formatToPlainString(d.default.FGYM4u, {
-      orbsCount: A
+      orbsCount: f
     }),
     actions: [{
       text: p.intl.string(p.t.hvVgAZ),
-      onClick: g
+      onClick: m
     }],
     gradientColor: {
       type: "custom",
@@ -58,7 +58,7 @@ function h(e) {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      children: h
-    }), m]
+      children: g
+    }), A]
   })
 }

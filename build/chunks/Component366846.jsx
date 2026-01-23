@@ -2,7 +2,7 @@
 /** chunk id: 366846, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  D: () => p
+  D: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,40 +18,40 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk82196 = require("./82196.js");
 
-function p(e) {
+function b(e) {
   let {
     requireTerms: t,
     rules: n
-  } = e, l = (0, c.bG)([u.A], () => u.A.getProps().guild), p = null == l ? true : l.id, x = i.useCallback(e => {
-    if (null == p || null == n) return null;
-    f.A.setPendingInviteRules(p, e, [...n])
-  }, [p, n]), h = i.useCallback(e => {
-    if (null == p) return null;
-    f.A.setPendingInviteRules(p, t, e)
-  }, [p, t]);
-  return null == l ? null : null == n ? (0, r.jsx)(o.y$y, {}) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.dOG, {
-      label: b.intl.string(b.t.d21uOr),
-      description: b.intl.string(b.t.SzpUBF),
-      onChange: x,
+  } = e, l = (0, o.bG)([u.A], () => u.A.getProps().guild), b = null == l ? true : l.id, h = i.useCallback(e => {
+    if (null == b || null == n) return null;
+    g.A.setPendingInviteRules(b, e, [...n])
+  }, [b, n]), x = i.useCallback(e => {
+    if (null == b) return null;
+    g.A.setPendingInviteRules(b, t, e)
+  }, [b, t]);
+  return null == l ? null : null == n ? (0, r.jsx)(c.y$y, {}) : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(c.dOG, {
+      label: p.intl.string(p.t.d21uOr),
+      description: p.intl.string(p.t.SzpUBF),
+      onChange: h,
       checked: t
-    }), t && (0, r.jsx)(g.o, {
+    }), t && (0, r.jsx)(m.o, {
       guildId: l.id
     }), (0, r.jsx)("div", {
-      className: s()(m.aO, {
-        [m.r9]: !t
+      className: s()(f.aO, {
+        [f.r9]: !t
       }),
       children: (0, r.jsxs)("div", {
         inert: t ? true : "",
         children: [(0, r.jsx)(a.DZT, {
           variant: "text-xs/bold",
           color: "text-muted",
-          className: m.lo,
-          children: b.intl.string(b.t.XcAzbo)
+          className: f.lo,
+          children: p.intl.string(p.t.XcAzbo)
         }), (0, r.jsx)(d._, {
           guild: l,
           rules: n,
-          setRules: h,
+          setRules: x,
           disabled: !t
         })]
       })

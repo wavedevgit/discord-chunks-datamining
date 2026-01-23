@@ -39,12 +39,12 @@ module.exports = function(e) {
       m = a.getComponentForKey(u),
       g = a.getPropsForKey(u),
       E = s.encode(_, parseInt(u, 10), 0),
-      b = p.slice(h.first().get("start"), h.last().get("end")),
-      y = c.getHTMLDirIfDifferent(l.getDirection(b), d);
+      y = p.slice(h.first().get("start"), h.last().get("end")),
+      b = c.getHTMLDirIfDifferent(l.getDirection(y), d);
     return o.createElement(m, i({}, g, {
       contentState: r,
-      decoratedText: b,
-      dir: y,
+      decoratedText: y,
+      dir: b,
       key: E,
       entityKey: t.getEntityAt(f.get("start")),
       offsetKey: E

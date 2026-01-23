@@ -2,8 +2,8 @@
 /** chunk id: 244083, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => v,
-  YL: () => y,
+  Ay: () => A,
+  YL: () => b,
   oN: () => O
 }), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
@@ -63,25 +63,25 @@ function E(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = b(e, t), Object.getOwnPropertySymbols)
+  if (a = y(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-var y = function(e) {
+var b = function(e) {
     return e.CENTER = "center", e.LEFT = "left", e
   }({}),
   O = function(e) {
     return e.TOP = "top", e.MIDDLE = "middle", e
   }({});
-class A extends Chunk64700.PureComponent {
+class v extends Chunk64700.PureComponent {
   componentDidMount() {
     let {
       uniqueId: e
@@ -154,7 +154,7 @@ class A extends Chunk64700.PureComponent {
     })
   }
 }
-class v extends(r = Chunk64700.PureComponent) {
+class A extends(r = Chunk64700.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -205,7 +205,7 @@ class v extends(r = Chunk64700.PureComponent) {
       } = this.props, u = null != c;
       return (0, i.jsx)(l.NPJ, {
         theme: r,
-        children: e => (0, i.jsx)(A, g(h({}, this.props), {
+        children: e => (0, i.jsx)(v, g(h({}, this.props), {
           className: o()({
             [p.sQ]: "bottom" === n,
             [p.eV]: !a && !u,
@@ -226,6 +226,6 @@ class v extends(r = Chunk64700.PureComponent) {
     })
   }
 }
-_(v, "TextAlignments", y), _(v, "defaultProps", {
+_(A, "TextAlignments", b), _(A, "defaultProps", {
   textAlign: "left"
 })

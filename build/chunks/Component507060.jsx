@@ -97,7 +97,7 @@ let C = (0, Chunk268218.Fe)({
   };
 
 function D() {
-  return l.useEffect(() => (h.A.enable(), h.A.enableTemp(f.w), () => h.A.disableTemp()), []), null
+  return l.useEffect(() => (g.A.enable(), g.A.enableTemp(h.w), () => g.A.disableTemp()), []), null
 }
 class M extends(r = Chunk64700.PureComponent) {
   static getDerivedStateFromProps(e, t) {
@@ -154,7 +154,7 @@ class M extends(r = Chunk64700.PureComponent) {
     }, R)), o.A.spring(n, v({
       toValue: 1.1
     }, R))]).start(() => {
-      e(), _._.dispatch(E.jej.LAYER_POP_COMPLETE)
+      e(), b._.dispatch(E.jej.LAYER_POP_COMPLETE)
     })
   }
   animateUnder() {
@@ -198,12 +198,12 @@ class M extends(r = Chunk64700.PureComponent) {
         }(e, t), Object.getOwnPropertySymbols)
         for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
       return l
-    }(t, ["name", "mode", "children", "baseLayer"]), u = r === L, p = e || u ? this.getAnimatedStyle() : null, f = !u && !a, h = (0, i.jsx)(o.A.div, S(v({
+    }(t, ["name", "mode", "children", "baseLayer"]), u = r === L, p = e || u ? this.getAnimatedStyle() : null, h = !u && !a, g = (0, i.jsx)(o.A.div, S(v({
       ref: e => this.containerRef.current = null != e ? e.componentRef : true,
       "data-layer": null != n ? n : "base",
       "aria-hidden": u,
-      "aria-modal": f,
-      "aria-label": f ? function(e) {
+      "aria-modal": h,
+      "aria-label": h ? function(e) {
         switch (e) {
           case E.zgK.USER_SETTINGS:
             return O.intl.string(O.t.cduTBL);
@@ -217,7 +217,7 @@ class M extends(r = Chunk64700.PureComponent) {
             return ""
         }
       }(n) : true,
-      role: f ? "dialog" : true,
+      role: h ? "dialog" : true,
       className: s()(y.qd, {
         [y.n3]: a,
         [y.bW]: e,
@@ -227,9 +227,9 @@ class M extends(r = Chunk64700.PureComponent) {
     }, c), {
       children: l
     }));
-    return a ? h : (0, i.jsx)(d.Oky, {
+    return a ? g : (0, i.jsx)(d.Oky, {
       containerRef: this.containerRef,
-      children: h
+      children: g
     })
   }
   getAnimatedStyle() {
@@ -267,10 +267,10 @@ I(M, "defaultProps", {
 }), I(M, "contextType", Chunk397927.CZY);
 class k extends Chunk64700.PureComponent {
   componentDidMount() {
-    _._.subscribe(E.jej.LAYER_POP_ESCAPE_KEY, p.jH)
+    b._.subscribe(E.jej.LAYER_POP_ESCAPE_KEY, p.jH)
   }
   componentWillUnmount() {
-    _._.unsubscribe(E.jej.LAYER_POP_ESCAPE_KEY, p.jH)
+    b._.unsubscribe(E.jej.LAYER_POP_ESCAPE_KEY, p.jH)
   }
   renderLayers() {
     let {
@@ -314,9 +314,9 @@ class k extends Chunk64700.PureComponent {
 }
 
 function U(e) {
-  let t = (0, m.NC)(),
-    n = (0, c.bG)([b.A], () => b.A.getLayers()),
-    r = (0, g.xr)(e => e.fullScreenLayers.length > 0 && !e.fullScreenLayers.some(e => e.options.showAppUnderLayer));
+  let t = (0, A.NC)(),
+    n = (0, c.bG)([_.A], () => _.A.getLayers()),
+    r = (0, m.xr)(e => e.fullScreenLayers.length > 0 && !e.fullScreenLayers.some(e => e.options.showAppUnderLayer));
   return (0, i.jsx)(k, S(v({}, e), {
     sidebarTheme: t,
     layers: n,

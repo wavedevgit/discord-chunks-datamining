@@ -2,8 +2,8 @@
 /** chunk id: 572211, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  h: () => A,
-  u: () => b
+  h: () => v,
+  u: () => y
 }), require("./896048.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,11 +21,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk768349 = require("./768349.js"),
   Chunk838541 = require("./838541.js"),
   Chunk112247 = require("./112247.js"),
-  b = function(e) {
+  y = function(e) {
     return e[e.BOT = 0] = "BOT", e[e.ACTIVITY = 1] = "ACTIVITY", e
   }({});
 
-function y(e) {
+function b(e) {
   var t, n, r, i;
   return {
     id: null != (t = null == e ? true : e.id) ? t : "0",
@@ -59,27 +59,27 @@ function O(e) {
   })
 }
 
-function A(e) {
+function v(e) {
   let {
     title: t,
     header: n,
     footer: a,
     info: _,
     staticBannerSrc: m,
-    videoBannerSrc: b,
-    bannerAspectRatio: A = 0,
-    iconSrc: v,
-    actions: S = [],
-    primaryActionFirst: I = false,
+    videoBannerSrc: y,
+    bannerAspectRatio: v = 0,
+    iconSrc: A,
+    actions: I = [],
+    primaryActionFirst: S = false,
     trackingConfig: T,
     onClickContent: C,
     onClickBanner: N
   } = e;
-  T = y(T);
+  T = b(T);
   let {
     primaryColor: R,
     secondaryColor: w
-  } = (0, p.A)(null != v ? v : m), P = "linear-gradient(45deg, ".concat(R, ", ").concat(w, ")"), D = (0, u.bG)([f.A], () => f.A.useReducedMotion), x = i.useRef(false), L = (0, l.K)(e => {
+  } = (0, p.A)(null != A ? A : m), P = "linear-gradient(45deg, ".concat(R, ", ").concat(w, ")"), D = (0, u.bG)([f.A], () => f.A.useReducedMotion), x = i.useRef(false), L = (0, l.K)(e => {
     if (false === x.current && e) {
       var t;
       null == T || null == (t = T.onView) || t.call(T), (0, h.wV)({
@@ -92,10 +92,10 @@ function A(e) {
         messageId: T.messageId
       }), x.current = true
     }
-  }, true), j = null != m, M = null != b && false === D, k = j || M, U = 0 === A ? E.pv : E.$g, G = i.useRef(null), V = i.useCallback(() => {
+  }, true), j = null != m, M = null != y && false === D, k = j || M, U = 0 === v ? E.pv : E.$g, G = i.useRef(null), V = i.useCallback(() => {
     let e = G.current;
     null == e || ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
-  }, []), F = i.useMemo(() => !!M && new URL(b).pathname.endsWith(".gif"), [M, b]), B = i.useMemo(() => {
+  }, []), F = i.useMemo(() => !!M && new URL(y).pathname.endsWith(".gif"), [M, y]), B = i.useMemo(() => {
     if (null != C) return e => {
       C(e), (0, h.gx)({
         applicationId: T.id,
@@ -129,11 +129,11 @@ function A(e) {
       children: [M && (F ? (0, r.jsx)("div", {
         className: E.O9,
         style: {
-          backgroundImage: "url(".concat(b, ")")
+          backgroundImage: "url(".concat(y, ")")
         }
       }) : (0, r.jsx)(o.A, {
         ref: G,
-        src: b,
+        src: y,
         mediaLayoutType: g.dG.MOSAIC,
         loop: true,
         muted: true,
@@ -161,10 +161,10 @@ function A(e) {
           className: s()(E.FG, {
             [E.ry]: null != B
           }),
-          children: [null != v && (0, r.jsx)("div", {
+          children: [null != A && (0, r.jsx)("div", {
             className: E._8,
             style: {
-              backgroundImage: "url(".concat(v, ")")
+              backgroundImage: "url(".concat(A, ")")
             }
           }), (0, r.jsxs)("div", {
             className: E.Qs,
@@ -179,9 +179,9 @@ function A(e) {
               children: _
             })]
           })]
-        }), S.length > 0 && (0, r.jsx)("div", {
-          className: s()(E.AC, I ? E.ad : null),
-          children: S.map((e, t) => {
+        }), I.length > 0 && (0, r.jsx)("div", {
+          className: s()(E.AC, S ? E.ad : null),
+          children: I.map((e, t) => {
             let {
               label: n,
               icon: i,

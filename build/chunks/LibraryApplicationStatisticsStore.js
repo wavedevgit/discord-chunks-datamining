@@ -2,7 +2,7 @@
 /** chunk id: 90165, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -92,7 +92,7 @@ class E extends(r = Chunk311907.Ay.Store) {
   }
 }
 c(E, "displayName", "LibraryApplicationStatisticsStore");
-let b = new E(Chunk73153.h, {
+let y = new E(Chunk73153.h, {
   USER_ACTIVITY_STATISTICS_FETCH_SUCCESS: m,
   ACTIVITY_UPDATE_START: g,
   LOGOUT: h,

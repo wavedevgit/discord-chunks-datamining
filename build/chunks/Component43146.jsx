@@ -21,12 +21,12 @@ function s(e) {
     useDisabledMessage: d,
     useBadge: f,
     hasIcon: p
-  } = n, _ = l(), h = null == c ? true : c(), m = s(), g = null != (t = null == u ? true : u()) && t, E = null == d ? true : d(), b = null == f ? true : f();
+  } = n, _ = l(), h = null == c ? true : c(), m = s(), g = null != (t = null == u ? true : u()) && t, E = null == d ? true : d(), y = null == f ? true : f();
   return (0, r.jsxs)(a.L, {
     children: [(0, r.jsx)(i.dOG, {
       label: _,
       description: h,
-      badge: b,
+      badge: y,
       checked: m,
       hasIcon: p,
       onChange: e => o(e),

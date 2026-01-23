@@ -1,7 +1,7 @@
 /** Chunk was on 1784 **/
 /** chunk id: 837368, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  kL: "_2a7bacda6009aad4",
-  ap: "_32124eb6c36dfceb",
-  aK: "bbe75c22d8df4325"
+  kL: "container__12f17",
+  ap: "darkText__12f17",
+  aK: "lightText__12f17"
 }

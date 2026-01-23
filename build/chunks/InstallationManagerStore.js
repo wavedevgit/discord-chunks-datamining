@@ -64,13 +64,13 @@ function E(e) {
   h = f({}, h), delete h[e]
 }
 
-function b(e, t) {
+function y(e, t) {
   r.pathLabels = _(f({}, r.pathLabels), {
     [e]: t
   })
 }
 
-function y(e) {
+function b(e) {
   if (null == r.pathLabels[e]) returnfalse;
   r.pathLabels = f({}, r.pathLabels), delete r.pathLabels[e]
 }
@@ -83,24 +83,24 @@ function O(e) {
   } = e;
   null == r.installations[t] && (r.installations[t] = {}), r.installations[t][n] = {
     installationPath: i
-  }, r.installationPaths.has(i) || S({
+  }, r.installationPaths.has(i) || I({
     path: i,
     metadata: {}
   })
 }
 
-function A(e) {
+function v(e) {
   let {
     applicationId: t,
     branchId: n
   } = e, r = c.A.getState(t, n);
-  null != r && null == r.buildId && null == r.manifestIds && v({
+  null != r && null == r.buildId && null == r.manifestIds && A({
     applicationId: t,
     branchId: n
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     applicationId: t,
     branchId: n
@@ -109,20 +109,20 @@ function v(e) {
   delete r.installations[t][n], 0 === Object.keys(r.installations[t]).length && delete r.installations[t]
 }
 
-function S(e) {
+function I(e) {
   if (r.installationPaths.has(e.path)) returnfalse;
   g(e.path, e.metadata);
   let t = new Set(r.installationPaths);
   t.add(e.path), r.installationPaths = t
 }
 
-function I(e) {
+function S(e) {
   let {
     path: t
   } = e;
   if (!r.installationPaths.has(t) || r.defaultInstallationPath === t) returnfalse;
   let n = new Set(r.installationPaths);
-  n.delete(t), r.installationPaths = n, E(t), y(t)
+  n.delete(t), r.installationPaths = n, E(t), b(t)
 }
 
 function T(e) {
@@ -132,7 +132,7 @@ function T(e) {
     isDefault: i
   } = e;
   if (!r.installationPaths.has(t)) returnfalse;
-  null != n && "" !== n && r.pathLabels[t] !== n && b(t, n), i && r.defaultInstallationPath !== t && (r.defaultInstallationPath = t)
+  null != n && "" !== n && r.pathLabels[t] !== n && y(t, n), i && r.defaultInstallationPath !== t && (r.defaultInstallationPath = t)
 }
 
 function C(e) {
@@ -184,10 +184,10 @@ class N extends(i = Chunk311907.Ay.PersistedStore) {
 d(N, "displayName", "InstallationManagerStore"), d(N, "persistKey", "InstallationManagerStore");
 let R = new N(Chunk73153.h, {
   DISPATCH_APPLICATION_INSTALL: O,
-  DISPATCH_APPLICATION_UNINSTALL: v,
-  DISPATCH_APPLICATION_CANCEL: A,
-  INSTALLATION_LOCATION_ADD: S,
-  INSTALLATION_LOCATION_REMOVE: I,
+  DISPATCH_APPLICATION_UNINSTALL: A,
+  DISPATCH_APPLICATION_CANCEL: v,
+  INSTALLATION_LOCATION_ADD: I,
+  INSTALLATION_LOCATION_REMOVE: S,
   INSTALLATION_LOCATION_UPDATE: T,
   INSTALLATION_LOCATION_FETCH_METADATA: C,
   DISPATCH_APPLICATION_ADD_TO_INSTALLATIONS: O

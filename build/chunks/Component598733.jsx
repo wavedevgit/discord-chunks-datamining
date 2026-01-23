@@ -2,7 +2,7 @@
 /** chunk id: 598733, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,15 +20,15 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk163677 = require("./163677.js"),
   Chunk1624 = require("./1624.js");
-let b = () => {
+let y = () => {
   let e = (0, o.bG)([p.A], () => p.A.getGuildId(), []),
     t = (0, o.bG)([f.A], () => f.A.getGuild(e), [e]),
     [n, a] = i.useState(false);
   if (null == t) return null;
-  let b = () => {
+  let y = () => {
       (0, d.JK)().goBack()
     },
-    y = async () => {
+    b = async () => {
       a(true);
       try {
         _.cf(t.id), await u.A.joinGuild(t.id, {
@@ -46,7 +46,7 @@ let b = () => {
       size: l.$n.Sizes.NONE,
       className: s()(g.x6, g.aX),
       innerClassName: g.gb,
-      onClick: b,
+      onClick: y,
       children: [(0, r.jsx)(c.rJJ, {
         size: "xs",
         color: "currentColor",
@@ -62,7 +62,7 @@ let b = () => {
       color: l.$n.Colors.WHITE,
       size: l.$n.Sizes.NONE,
       submitting: n,
-      onClick: y,
+      onClick: b,
       children: m.intl.format(m.t.uHN7ny, {
         guild: t.name
       })

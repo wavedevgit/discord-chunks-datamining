@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 652793, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G: () => h
+  G: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,7 +14,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk728444 = require("./728444.js"),
   Chunk811094 = require("./811094.js");
 
-function f(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,20 +46,20 @@ function p(e, t) {
   }), e
 }
 
-function h(e) {
+function f(e) {
   var t;
   let {
     id: n,
     className: l,
-    innerClassName: h,
-    renderIcon: b,
-    text: g,
-    selected: m,
+    innerClassName: f,
+    renderIcon: g,
+    text: m,
+    selected: b,
     trailing: A,
     background: y,
-    showUnread: O = false,
-    ref: j
-  } = e, v = function(e, t) {
+    showUnread: _ = false,
+    ref: O
+  } = e, j = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -75,16 +75,16 @@ function h(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread", "ref"]), x = (0, a.rm)(n), E = null != (t = (0, s.O)(g)) ? t : "";
+  }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread", "ref"]), v = (0, s.rm)(n), x = null != (t = (0, a.O)(m)) ? t : "";
   return (0, r.jsx)("li", {
-    ref: j,
-    children: (0, r.jsxs)(o.sqX, p(f({}, v), {
-      buttonProps: p(f({}, x), {
+    ref: O,
+    children: (0, r.jsxs)(o.sqX, h(p({}, j), {
+      buttonProps: h(p({}, v), {
         id: n,
         role: "button"
       }),
       tag: "div",
-      "aria-label": E,
+      "aria-label": x,
       focusProps: {
         offset: {
           top: 1,
@@ -92,25 +92,25 @@ function h(e) {
           right: 4
         }
       },
-      onContextMenu: null != v.onContextMenu ? v.onContextMenu : e => {
+      onContextMenu: null != j.onContextMenu ? j.onContextMenu : e => {
         e.stopPropagation()
       },
       className: i()(u.fx, d.iE, {
-        [d.J1]: m
+        [d.J1]: b
       }, l),
-      children: [y, O ? (0, r.jsx)("div", {
+      children: [y, _ ? (0, r.jsx)("div", {
         className: i()(d.gy, d.WS)
       }) : null, (0, r.jsx)("div", {
-        className: i()([d.nf, d.ae, h]),
+        className: i()([d.nf, d.ae, f]),
         children: (0, r.jsxs)("div", {
           className: c.Q,
           children: [(0, r.jsx)("div", {
             className: d.zc,
-            children: b(d.Kk)
+            children: g(d.Kk)
           }), (0, r.jsx)("div", {
             className: d.UU,
             "aria-hidden": true,
-            children: g
+            children: m
           }), A]
         })
       })]

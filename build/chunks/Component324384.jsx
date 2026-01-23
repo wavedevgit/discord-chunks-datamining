@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   I$: () => w,
-  J6: () => I,
+  J6: () => S,
   cL: () => R,
   l7: () => N
 });
@@ -25,7 +25,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk725682 = require("./725682.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,13 +41,13 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,25 +58,25 @@ function A(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = e => {
+let I = e => {
     let {
       orbAmount: t
     } = e;
     return (0, r.jsxs)(a.Text, {
       variant: "text-md/semibold",
-      className: b.Ay,
+      className: y.Ay,
       children: [(0, r.jsx)(m.A, {
         shouldUseThemeColor: true,
         customSize: 14
       }), null === t ? "--" : t]
     })
   },
-  I = e => {
+  S = e => {
     let {
       orbBalance: t,
       orbPriceAmount: n,
@@ -117,11 +117,11 @@ let S = e => {
     return true === o ? (0, r.jsx)(_.Yx, {
       children: (0, r.jsx)(a.y$y, {
         type: a.y$y.Type.PULSING_ELLIPSIS,
-        className: b.nJ
+        className: y.nJ
       })
     }) : (0, r.jsx)(p.U, {
       sku: o,
-      value: (0, r.jsx)(S, {
+      value: (0, r.jsx)(I, {
         orbAmount: t
       }),
       rentalDuration: i
@@ -134,15 +134,15 @@ let S = e => {
     return (0, r.jsx)(a.D0$, {
       label: E.intl.string(E.t["mmDvV+"]),
       children: (0, r.jsxs)(a.FON, {
-        className: b.nQ,
+        className: y.nQ,
         children: [(0, r.jsx)(a.Text, {
-          className: b.OL,
+          className: y.OL,
           variant: "text-md/medium",
           children: E.intl.string(E.t.y0WGqP)
         }), (0, r.jsx)(a.Text, {
-          className: b.OL,
+          className: y.OL,
           variant: "text-md/medium",
-          children: (0, r.jsx)(S, {
+          children: (0, r.jsx)(I, {
             orbAmount: t
           })
         })]
@@ -181,7 +181,7 @@ let S = e => {
       })]
     });
     return l ? u : (0, r.jsx)("div", {
-      className: b.Du,
+      className: y.Du,
       children: u
     })
   },
@@ -196,7 +196,7 @@ let S = e => {
       disabled: f,
       tooltipText: p,
       text: _
-    } = I({
+    } = S({
       orbBalance: n,
       orbPriceAmount: t,
       rentalDuration: d
@@ -208,7 +208,7 @@ let S = e => {
     return (0, r.jsxs)(a.jlY, {
       align: c.A.Align.CENTER,
       "data-migration-pending": true,
-      children: [(0, r.jsx)(l.p, v(O({}, h), {
+      children: [(0, r.jsx)(l.p, A(O({}, h), {
         onClick: o,
         loading: s,
         disabled: f,

@@ -14,27 +14,27 @@ let o = "1",
   u = "3",
   d = "4",
   p = "5",
-  f = "6",
-  h = "1",
-  A = "2",
-  g = "3",
-  m = "4",
-  b = "5",
-  _ = {
+  h = "6",
+  g = "1",
+  f = "2",
+  m = "3",
+  A = "4",
+  _ = "5",
+  b = {
     [Chunk652215.eMA.ESRB]: {
       [o]: Chunk252153._,
       [c]: Chunk252153.Zp,
       [u]: Chunk252153.N8,
       [d]: Chunk252153.L3,
       [p]: Chunk252153.Pu,
-      [f]: Chunk252153.Jd
+      [h]: Chunk252153.Jd
     },
     [Chunk652215.eMA.PEGI]: {
-      [h]: Chunk252153.k8,
-      [A]: Chunk252153.Do,
-      [g]: Chunk252153.$w,
-      [m]: Chunk252153.yx,
-      [b]: Chunk252153.pr
+      [g]: Chunk252153.k8,
+      [f]: Chunk252153.Do,
+      [m]: Chunk252153.$w,
+      [A]: Chunk252153.yx,
+      [_]: Chunk252153.pr
     }
   },
   E = e => {
@@ -42,7 +42,7 @@ let o = "1",
       agency: t,
       rating: n,
       className: i
-    } = e, a = _[t][n];
+    } = e, a = b[t][n];
     return null == a ? null : (0, r.jsx)("div", {
       className: l()(s.ZL, a, i)
     })

@@ -26,8 +26,8 @@ async function _(e) {
     analyticsLocation: g,
     disableGuildSelector: E = false
   } = e, {
-    promise: b,
-    resolve: y
+    promise: y,
+    resolve: b
   } = Promise.withResolvers();
   if ((0, d.PJ)(s.flags) && false === E) {
     let {
@@ -50,8 +50,8 @@ async function _(e) {
     }), h = await e
   }
   let O = c.A.getParentSKU(s.id),
-    A = null;
-  return null != O && ([A] = (0, u.wm)({
+    v = null;
+  return null != O && ([v] = (0, u.wm)({
     groupSku: O,
     SubscriptionStore: l.A,
     SubscriptionPlanStore: o.A,
@@ -60,7 +60,7 @@ async function _(e) {
   })), (0, a.A)({
     initialPlanId: t,
     skuId: s.id,
-    activeSubscription: A,
+    activeSubscription: v,
     applicationId: s.applicationId,
     planGroup: _,
     guildId: h,
@@ -71,10 +71,10 @@ async function _(e) {
     analyticsSubscriptionType: p.rzx.APPLICATION,
     analyticsLocations: m,
     analyticsLocation: g,
-    onComplete: y,
+    onComplete: b,
     showBenefitsFirst: false,
     forcesTransitionToGuild: false
-  }), b
+  }), y
 }
 
 function h(e) {

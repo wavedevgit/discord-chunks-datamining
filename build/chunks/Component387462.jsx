@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 387462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,24 +12,24 @@ var Chunk627968 = require("./627968.js"),
   Chunk157259 = require("./157259.jsx"),
   Chunk706847 = require("./706847.jsx"),
   Chunk626360 = require("./626360.js");
-let f = Chunk64700.memo(function(e) {
+let p = Chunk64700.memo(function(e) {
   let {
     channel: t,
     narrow: n
-  } = e, l = (0, o.A)(t), f = (0, i.A)(), {
-    showUnreadsNotice: p,
-    clearUnreadsNotice: h
-  } = (0, a.A)(t);
+  } = e, l = (0, o.A)(t), p = (0, i.A)(), {
+    showUnreadsNotice: h,
+    clearUnreadsNotice: f
+  } = (0, s.A)(t);
   return t.isArchivedLockedThread() ? (0, r.jsx)(u.p, {
     channel: t,
     narrow: n
   }) : t.isLockedThread() ? (0, r.jsx)(u.z, {
     channel: t,
     narrow: n
-  }) : p ? (0, r.jsx)(s.A, {
+  }) : h ? (0, r.jsx)(a.A, {
     channel: t,
-    clearUnreadsNotice: h
-  }) : l && f.includes(d.i.OPT_IN_CHANNEL) ? (0, r.jsx)(c.A, {
+    clearUnreadsNotice: f
+  }) : l && p.includes(d.i.OPT_IN_CHANNEL) ? (0, r.jsx)(c.A, {
     channel: t,
     narrow: n
   }) : null

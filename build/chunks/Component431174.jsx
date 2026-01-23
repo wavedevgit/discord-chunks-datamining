@@ -24,7 +24,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk121272 = require("./121272.js");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,32 +33,32 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = I(e, t), Object.getOwnPropertySymbols)
+  if (a = S(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -78,12 +78,12 @@ function R(e) {
   } = e, l = (0, p.GV)(), {
     channelId: c,
     messageId: u
-  } = (0, b.Tu)(), [g, E] = i.useState(""), [y, A] = i.useState(false), v = "" !== g && y, S = i.useCallback(() => {
+  } = (0, y.Tu)(), [g, E] = i.useState(""), [b, v] = i.useState(false), A = "" !== g && b, I = i.useCallback(() => {
     E((0, m.$m)(u, c, s))
-  }, [u, c, s]), I = i.useCallback(() => {
-    S(), A(true)
-  }, [S]), T = i.useCallback(() => {
-    A(false)
+  }, [u, c, s]), S = i.useCallback(() => {
+    I(), v(true)
+  }, [I]), T = i.useCallback(() => {
+    v(false)
   }, []), C = i.useCallback(() => {
     (0, h.e)({
       channelId: c,
@@ -92,10 +92,10 @@ function R(e) {
     })
   }, [c, u, s]);
   return i.useEffect(() => {
-    if (y) return _.A.addReactChangeListener(S), () => {
-      _.A.removeReactChangeListener(S)
+    if (b) return _.A.addReactChangeListener(I), () => {
+      _.A.removeReactChangeListener(I)
     }
-  }, [y, S]), (0, r.jsxs)("div", {
+  }, [b, I]), (0, r.jsxs)("div", {
     className: O.AA,
     children: [a ? (0, r.jsxs)(r.Fragment, {
       children: ["" !== g ? (0, r.jsx)(d.m, {
@@ -105,29 +105,29 @@ function R(e) {
           scaleFontToUserSetting: true,
           children: g
         }),
-        forceOpen: v,
+        forceOpen: A,
         "aria-label": false,
         children: (0, r.jsx)(f.QWc, {
-          onMouseEnter: I,
+          onMouseEnter: S,
           onMouseLeave: T,
-          onFocus: I,
+          onFocus: S,
           onBlur: T,
           onClick: C,
-          "aria-describedby": v ? l : true,
+          "aria-describedby": A ? l : true,
           text: n,
           variant: "secondary",
           textVariant: "text-xs/semibold"
         })
       }) : (0, r.jsx)(f.QWc, {
-        onMouseEnter: I,
+        onMouseEnter: S,
         onMouseLeave: T,
-        onFocus: I,
+        onFocus: S,
         onBlur: T,
         onClick: C,
         text: n,
         variant: "secondary",
         textVariant: "text-xs/semibold"
-      }), v && (0, r.jsx)(o.s, {
+      }), A && (0, r.jsx)(o.s, {
         id: l,
         children: g
       })]
@@ -229,7 +229,7 @@ function D(e) {
       scaleFontToUserSetting: true,
       children: t.pollMedia.text
     }), t.didSelfVote && (0, r.jsx)(o.s, {
-      children: y.intl.string(y.t["8DAM+5"])
+      children: b.intl.string(b.t["8DAM+5"])
     }), a && (0, r.jsx)(R, {
       percentage: t.votesPercentage,
       label: t.votes,
@@ -252,8 +252,8 @@ function x(e) {
     answersInteraction: n,
     canShowVoteCounts: i,
     canTapAnswers: a
-  } = e, s = S(e, ["isExpired", "answersInteraction", "canShowVoteCounts", "canTapAnswers"]);
-  return (0, r.jsx)(E.Fh, v({
+  } = e, s = I(e, ["isExpired", "answersInteraction", "canShowVoteCounts", "canTapAnswers"]);
+  return (0, r.jsx)(E.Fh, A({
     className: O.ry,
     answerClassName: O.ZF,
     answersInteraction: n,

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk114046 = require("./114046.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -39,28 +39,28 @@ function O(e) {
   let {
     quest: t,
     useReducedMotion: n
-  } = e, i = (0, h.J)(), o = (0, j.H1)(t.id, f.uF.QUEST_BAR_V2, f.uF.QUEST_BAR_V2), d = (0, j.Xf)({
+  } = e, r = (0, h.J)(), o = (0, j.H1)(t.id, x.uF.QUEST_BAR_V2, x.uF.QUEST_BAR_V2), d = (0, j.Xf)({
     useReducedMotion: n
-  }), g = (0, m.Ut)(), y = (0, p.go)(), {
-    errorHints: _,
+  }), b = (0, m.Ut)(), _ = (0, p.go)(), {
+    errorHints: y,
     startingConsoleQuest: O,
     startConsoleQuest: E
-  } = (0, x.Wj)({
+  } = (0, g.Wj)({
     questId: t.id,
     beforeRequest: () => {
-      g({
+      b({
         questId: t.id,
-        questContent: f.uF.QUEST_BAR_V2,
+        questContent: x.uF.QUEST_BAR_V2,
         questContentCTA: m.Cy.DEFIBRILLATOR,
-        sourceQuestContent: f.uF.QUEST_BAR_V2
+        sourceQuestContent: x.uF.QUEST_BAR_V2
       }), d.startAnimation()
     },
     afterRequest: d.stopAnimation
   }), {
-    header: N,
-    renderBody: T
+    header: T,
+    renderBody: N
   } = l.useMemo(() => {
-    let e = _.length > 0,
+    let e = y.length > 0,
       n = t.config.messages.gameTitle;
     return {
       header: e ? (0, v.ui)(t) ? A.intl.string(A.t.N33EuL) : A.intl.formatToPlainString(A.t["28Ql27"], {
@@ -69,23 +69,23 @@ function O(e) {
         gameTitle: n
       }),
       renderBody: e ? () => (0, a.jsx)(a.Fragment, {
-        children: _.map((e, n) => {
-          if (e.type === s._.EXPIRED_CREDENTIAL && i) {
+        children: y.map((e, n) => {
+          if (e.type === s._.EXPIRED_CREDENTIAL && r) {
             let l = u.A.getAccount(e.connected_account_id, e.connected_account_type),
-              i = (0, b.IG)(e),
-              r = (0, b.$J)(e);
+              r = (0, f.IG)(e),
+              i = (0, f.$J)(e);
             return (0, a.jsx)(S, {
-              children: A.intl.format(i, {
+              children: A.intl.format(r, {
                 account_name: null == l ? true : l.name,
                 onClick: () => {
-                  (0, b.v0)({
+                  (0, f.v0)({
                     quest: t,
-                    platformType: r
+                    platformType: i
                   }, {
-                    content: f.uF.QUEST_BAR,
+                    content: x.uF.QUEST_BAR,
                     ctaContent: m.Cy.DEFIBRILLATOR_RECONNECT_CONSOLE,
-                    impressionId: y,
-                    sourceQuestContent: f.uF.QUEST_BAR_V2
+                    impressionId: _,
+                    sourceQuestContent: x.uF.QUEST_BAR_V2
                   })
                 }
               })
@@ -104,7 +104,7 @@ function O(e) {
         })
       })
     }
-  }, [_, t, i, y]);
+  }, [y, t, r, _]);
   return (0, a.jsxs)("div", {
     className: C.XK,
     children: [(0, a.jsxs)("div", {
@@ -112,24 +112,24 @@ function O(e) {
       children: [(0, a.jsx)(c.EpV, {
         size: "custom",
         color: "currentColor",
-        className: 0 === _.length ? C.pH : C.JA,
+        className: 0 === y.length ? C.pH : C.JA,
         width: 16,
         height: 16
       }), (0, a.jsx)(c.Text, {
         variant: "text-xs/medium",
-        children: N
+        children: T
       }), (0, a.jsx)(c.DUT, {
-        className: r()(C.w, {
+        className: i()(C.w, {
           [C.r9]: O
         }),
         onClick: () => E(),
         children: d.render()
       })]
     }), (0, a.jsxs)("div", {
-      className: r()({
+      className: i()({
         [C.Iu]: O
       }),
-      children: [T(), 0 === _.length ? null : (0, a.jsx)(S, {
+      children: [N(), 0 === y.length ? null : (0, a.jsx)(S, {
         children: o
       })]
     })]
@@ -139,7 +139,7 @@ let E = function(e) {
   let {
     quest: t,
     taskDetails: n
-  } = e, i = (0, o.bG)([d.A], () => d.A.useReducedMotion), r = (0, x.Du)(), s = l.useMemo(() => (0, b.bg)(t).filter(e => r.xboxAndPlaystationAccounts.find(t => t.type === e)), [r.xboxAndPlaystationAccounts, t]), {
+  } = e, r = (0, o.bG)([d.A], () => d.A.useReducedMotion), i = (0, g.Du)(), s = l.useMemo(() => (0, f.bg)(t).filter(e => i.xboxAndPlaystationAccounts.find(t => t.type === e)), [i.xboxAndPlaystationAccounts, t]), {
     steps: c,
     hasConnectedAccounts: u,
     isProgressingQuestForLaunchedGame: m,
@@ -147,14 +147,14 @@ let E = function(e) {
   } = l.useMemo(() => {
     var e;
     let l = s.length > 0,
-      i = l && (0, g.YL)(t),
+      r = l && (0, b.YL)(t),
       o = t.config.messages.gameTitle,
       c = (null == (e = t.userStatus) ? true : e.completedAt) != null;
     return {
       steps: [{
         renderContent: () => {
           var e, n;
-          return (0, a.jsx)(y.Z, (e = function(e) {
+          return (0, a.jsx)(_.Z, (e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 a = Object.keys(n);
@@ -171,9 +171,9 @@ let E = function(e) {
               })
             }
             return e
-          }({}, r), n = n = {
+          }({}, i), n = n = {
             quest: t,
-            sourceQuestContent: f.uF.QUEST_BAR_V2
+            sourceQuestContent: x.uF.QUEST_BAR_V2
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -185,16 +185,16 @@ let E = function(e) {
             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
           }), e))
         },
-        isComplete: l || i || c
+        isComplete: l || r || c
       }, {
-        renderContent: () => (0, a.jsx)(_.L5, {
+        renderContent: () => (0, a.jsx)(y.L5, {
           children: (0, v.ui)(t) ? A.intl.string(A.t["5tXqFe"]) : A.intl.formatToPlainString(A.t["+8JB6Y"], {
             gameTitle: o
           })
         }),
-        isComplete: i || c
+        isComplete: r || c
       }, {
-        renderContent: () => (0, a.jsx)(_.L5, {
+        renderContent: () => (0, a.jsx)(y.L5, {
           children: A.intl.formatToPlainString(A.t.HhfrYS, {
             numMinutes: n.targetMinutes
           })
@@ -202,15 +202,15 @@ let E = function(e) {
         isComplete: c
       }],
       hasConnectedAccounts: l,
-      isProgressingQuestForLaunchedGame: i,
+      isProgressingQuestForLaunchedGame: r,
       isQuestComplete: c
     }
-  }, [r, s.length, t, n.targetMinutes]);
-  return (0, a.jsx)(_.Ay, {
+  }, [i, s.length, t, n.targetMinutes]);
+  return (0, a.jsx)(y.Ay, {
     heading: A.intl.string(A.t.UPWlJu),
     steps: c,
     children: u && !m && !p && (0, a.jsx)(O, {
-      useReducedMotion: i,
+      useReducedMotion: r,
       quest: t
     })
   })

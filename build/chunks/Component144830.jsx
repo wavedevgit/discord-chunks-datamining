@@ -138,7 +138,7 @@ function G(e) {
       backgroundImage: "url(".concat(n, ")")
     }
   });
-  let l = (0, y.Bo)({
+  let l = (0, b.Bo)({
     userId: t.user_id,
     assetId: t.id,
     assetHash: t.asset,
@@ -160,12 +160,12 @@ function V(e) {
     source: a,
     selected: l = false,
     onSelectOption: f,
-    isAnimatedImage: y,
+    isAnimatedImage: b,
     isVideo: O,
-    hotspotLocation: v
-  } = e, S = (0, d.p)(), {
+    hotspotLocation: A
+  } = e, I = (0, d.p)(), {
     analyticsLocations: T
-  } = (0, _.Ay)(p.A.VIDEO_BACKGROUND_IMAGE_OPTION), C = (0, o.bG)([g.A], () => null != v && g.A.hasHotspot(v)), P = i.useCallback(e => {
+  } = (0, _.Ay)(p.A.VIDEO_BACKGROUND_IMAGE_OPTION), C = (0, o.bG)([g.A], () => null != A && g.A.hasHotspot(A)), P = i.useCallback(e => {
     if (!(0, E.u)(e)) throw e
   }, []), x = O ? (0, r.jsx)(h.A, {
     className: w.PQ,
@@ -175,15 +175,15 @@ function V(e) {
     muted: true,
     onPlayError: P
   }) : (0, r.jsx)(G, {
-    isAnimated: y,
-    option: (0, A.d1)(t) ? t : true,
+    isAnimated: b,
+    option: (0, v.d1)(t) ? t : true,
     source: a
   });
 
   function j() {
-    null != v && C && (m.sF(v), b.default.track(I.HAw.PREMIUM_UPSELL_VIEWED, {
+    null != A && C && (m.sF(A), y.default.track(S.HAw.PREMIUM_UPSELL_VIEWED, {
       type: N.e.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET,
-      location: S.location,
+      location: I.location,
       location_stack: T
     }))
   }
@@ -208,7 +208,7 @@ function V(e) {
       onMouseEnter: j,
       className: w.kV,
       children: x
-    }), O || y ? (0, r.jsx)("div", {
+    }), O || b ? (0, r.jsx)("div", {
       className: w.uZ,
       children: (0, r.jsx)(c.udU, {
         size: "xxs",
@@ -288,7 +288,7 @@ function H(e) {
     analyticsLocations: i
   } = (0, _.Ay)(p.A.VIDEO_BACKGROUND_CUSTOM_UPSELL);
   return (0, f.Ay)(() => {
-    b.default.track(I.HAw.PREMIUM_UPSELL_VIEWED, {
+    y.default.track(S.HAw.PREMIUM_UPSELL_VIEWED, {
       type: N.e.VIDEO_BACKGROUNDS_INLINE,
       location: n.location,
       location_stack: i
@@ -313,7 +313,7 @@ function Y(e) {
         default: e
       } = await Promise.all([n.e("79149"), n.e("53653"), n.e("92812")]).then(n.bind(n, 551028));
       return n => (0, r.jsx)(e, D({
-        maxFileSizeBytes: S.G9,
+        maxFileSizeBytes: I.G9,
         onComplete: e => {
           let {
             imageUri: n,
@@ -351,7 +351,7 @@ function W(e) {
     responsive: f = true
   } = e, h = i.useMemo(() => n.sort((e, t) => null == e.last_used || null == t.last_used ? O.default.compare(t.id, e.id) : new Date(t.last_used).getTime() - new Date(e.last_used).getTime()), [n]), m = h.length >= j, {
     analyticsLocations: g
-  } = (0, _.Ay)(p.A.VIDEO_BACKGROUND_OPTIONS), E = Object.values((0, v.A)()).sort((e, t) => S.sl[e.id] - S.sl[t.id]);
+  } = (0, _.Ay)(p.A.VIDEO_BACKGROUND_OPTIONS), E = Object.values((0, A.A)()).sort((e, t) => I.sl[e.id] - I.sl[t.id]);
   return (0, r.jsx)(_.f5, {
     value: g,
     children: (0, r.jsxs)("div", {
@@ -375,7 +375,7 @@ function W(e) {
       }) : (0, r.jsx)(H, {
         onClick: u
       }), h.map(e => {
-        let t = (0, y.Bo)({
+        let t = (0, b.Bo)({
           userId: e.user_id,
           assetId: e.id,
           assetHash: e.asset,
@@ -387,10 +387,10 @@ function W(e) {
           children: (0, r.jsx)(V, {
             option: e,
             source: t,
-            selected: (0, A.d1)(a) && a.id === e.id,
+            selected: (0, v.d1)(a) && a.id === e.id,
             onSelectOption: o,
-            isVideo: (0, y.q6)(e.asset),
-            isAnimatedImage: (0, y.VI)(e.asset)
+            isVideo: (0, b.q6)(e.asset),
+            isAnimatedImage: (0, b.VI)(e.asset)
           }, e.id)
         }, e.id)
       }), E.map(e => {

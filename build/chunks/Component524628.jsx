@@ -16,8 +16,8 @@ function u(e) {
   let {
     withHeader: t = true,
     size: n = 15
-  } = e, l = (0, s.bG)([o.A], () => o.A.useReducedMotion);
-  return (0, r.jsxs)(a.BJc, {
+  } = e, l = (0, a.bG)([o.A], () => o.A.useReducedMotion);
+  return (0, r.jsxs)(s.BJc, {
     gap: 4,
     children: [t && (0, r.jsx)("div", {
       className: i()(c.iE, {
@@ -32,7 +32,7 @@ function u(e) {
       })
     }), Array.from({
       length: n
-    }).map((e, t) => (0, r.jsx)(f, {}, t))]
+    }).map((e, t) => (0, r.jsx)(p, {}, t))]
   })
 }
 
@@ -45,8 +45,8 @@ function d(e) {
   })
 }
 
-function f() {
-  let e = (0, s.bG)([o.A], () => o.A.useReducedMotion);
+function p() {
+  let e = (0, a.bG)([o.A], () => o.A.useReducedMotion);
   return (0, r.jsxs)("div", {
     style: {
       display: "flex",

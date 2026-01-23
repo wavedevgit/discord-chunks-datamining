@@ -54,14 +54,14 @@ function F(e) {
   } = e, {
     themeType: H,
     theme: Y
-  } = (0, C.E)(), W = (0, s.bG)([O.A], () => O.A.getGuild(null == i ? true : i.guildId)), K = (0, s.bG)([y.A], () => y.A.getChannel(null == i ? true : i.channelId)), z = (0, s.yK)([S.Ay], () => null != K ? S.Ay.getVoiceStatesForChannel(K).map(e => {
+  } = (0, C.E)(), W = (0, s.bG)([O.A], () => O.A.getGuild(null == i ? true : i.guildId)), K = (0, s.bG)([b.A], () => b.A.getChannel(null == i ? true : i.channelId)), z = (0, s.yK)([I.Ay], () => null != K ? I.Ay.getVoiceStatesForChannel(K).map(e => {
     let {
       user: t
     } = e;
     return t
-  }) : []), q = (0, s.bG)([v.A], () => v.A.findActivity(t.id, e => (0, f.A)(e) && !(0, p.A)(e))), {
+  }) : []), q = (0, s.bG)([A.A], () => A.A.findActivity(t.id, e => (0, f.A)(e) && !(0, p.A)(e))), {
     analyticsLocations: X
-  } = (0, m.Ay)(h.A.USER_PROFILE_LIVE_ACTIVITY_CARD), Z = (0, I.A)({
+  } = (0, m.Ay)(h.A.USER_PROFILE_LIVE_ACTIVITY_CARD), Z = (0, S.A)({
     display: "live",
     voiceChannelId: null == K ? true : K.id,
     user: t,
@@ -73,7 +73,7 @@ function F(e) {
   }), {
     previewUrl: $,
     isLoading: J
-  } = (0, E.A)(null == i ? true : i.guildId, null == i ? true : i.channelId, null == i ? true : i.ownerId), [ee, et] = (0, b.zP)(K), en = (0, _.a9)() && (0, _.UK)(null == K ? true : K.id), er = (0, s.bG)([A.A], () => null != K && !en && A.A.canBasicChannel(L.hVb.CONNECT, K)), ei = (0, d.A)(J ? null : $), ea = J || null == $ ? ei : $;
+  } = (0, E.A)(null == i ? true : i.guildId, null == i ? true : i.channelId, null == i ? true : i.ownerId), [ee, et] = (0, y.zP)(K), en = (0, _.a9)() && (0, _.UK)(null == K ? true : K.id), er = (0, s.bG)([v.A], () => null != K && !en && v.A.canBasicChannel(L.hVb.CONNECT, K)), ei = (0, d.A)(J ? null : $), ea = J || null == $ ? ei : $;
   if (null == W || null == K || false === i.discoverable) return null;
   let es = () => {
       let e = e => {
@@ -87,7 +87,7 @@ function F(e) {
       }) : null == ea || en ? (0, r.jsxs)(l.DUT, {
         className: a()(U.VH, U.Lw, ee ? U.vk : U.r9),
         onClick: e,
-        "aria-label": (0, b.CQ)(et),
+        "aria-label": (0, y.CQ)(et),
         "aria-disabled": !ee,
         children: [(0, r.jsx)("img", {
           alt: "",
@@ -97,7 +97,7 @@ function F(e) {
             className: U.um,
             variant: "text-sm/medium",
             color: "always-white",
-            children: (0, b.CT)(et)
+            children: (0, y.CT)(et)
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
             children: er ? M.intl.string(M.t.uQZTBV) : M.intl.string(M.t.pgUTZC)
@@ -106,7 +106,7 @@ function F(e) {
       }) : (0, r.jsxs)(l.DUT, {
         className: a()(U.VH, U.Lw, ee ? U.vk : U.r9),
         onClick: e,
-        "aria-label": (0, b.CQ)(et),
+        "aria-label": (0, y.CQ)(et),
         "aria-disabled": !ee,
         children: [(0, r.jsx)("img", {
           alt: "",
@@ -117,7 +117,7 @@ function F(e) {
             className: U.um,
             variant: "text-sm/medium",
             color: "always-white",
-            children: (0, b.CT)(et)
+            children: (0, y.CT)(et)
           }), (0, r.jsx)(l.pVd, {
             size: "xs",
             color: "currentColor",

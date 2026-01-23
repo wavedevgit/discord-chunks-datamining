@@ -41,7 +41,7 @@ function C(e) {
   } = e, {
     width: s,
     height: o
-  } = (0, b.z)(i, {
+  } = (0, y.z)(i, {
     width: n,
     height: r
   });
@@ -118,8 +118,8 @@ function P(e) {
   i.useEffect(() => {
     let e = () => w(_.current + 1),
       t = () => w(_.current - 1);
-    return h._.subscribe(S.jej.MODAL_CAROUSEL_NEXT, e), h._.subscribe(S.jej.MODAL_CAROUSEL_PREV, t), () => {
-      h._.unsubscribe(S.jej.MODAL_CAROUSEL_NEXT, e), h._.unsubscribe(S.jej.MODAL_CAROUSEL_PREV, t)
+    return h._.subscribe(I.jej.MODAL_CAROUSEL_NEXT, e), h._.subscribe(I.jej.MODAL_CAROUSEL_PREV, t), () => {
+      h._.unsubscribe(I.jej.MODAL_CAROUSEL_NEXT, e), h._.unsubscribe(I.jej.MODAL_CAROUSEL_PREV, t)
     }
   }, [w, C]);
   let P = t[f],
@@ -132,31 +132,31 @@ function P(e) {
     } : () => (0, g.Yq)(g.NJ.CONTEXT_MENU_OPENED),
     L = t.length > 1;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(y.Ay, {
+    children: [(0, r.jsx)(b.Ay, {
       children: e => L ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(A.A, {
+        children: [(0, r.jsx)(v.A, {
           onClick: e => {
-            e.stopPropagation(), h._.dispatch(S.jej.MODAL_CAROUSEL_PREV)
+            e.stopPropagation(), h._.dispatch(I.jej.MODAL_CAROUSEL_PREV)
           },
           icon: o.Zge,
-          tooltip: I.intl.string(I.t.vgfxaA),
+          tooltip: S.intl.string(S.t.vgfxaA),
           className: s()(T.vi, e)
-        }), (0, r.jsx)(A.A, {
+        }), (0, r.jsx)(v.A, {
           onClick: e => {
-            e.stopPropagation(), h._.dispatch(S.jej.MODAL_CAROUSEL_NEXT)
+            e.stopPropagation(), h._.dispatch(I.jej.MODAL_CAROUSEL_NEXT)
           },
           icon: o.KS6,
-          tooltip: I.intl.string(I.t.XiOHRX),
+          tooltip: S.intl.string(S.t.XiOHRX),
           className: s()(T.f8, e)
         })]
       }) : true
-    }), (0, r.jsx)(b.A, {
+    }), (0, r.jsx)(y.A, {
       items: t,
       currentIndex: f,
       children: (e, t) => (0, r.jsx)(R, {
         isObscured: !m && D,
         src: P.url,
-        children: n => (0, r.jsx)(v.Ay, {
+        children: n => (0, r.jsx)(A.Ay, {
           media: P,
           maxWidth: e,
           maxHeight: t,
@@ -164,7 +164,7 @@ function P(e) {
           onContextMenu: x
         })
       })
-    }), L && (0, r.jsx)(y.Ay, {
+    }), L && (0, r.jsx)(b.Ay, {
       children: e => (0, r.jsx)(O.A, {
         items: t,
         currentIndex: f,

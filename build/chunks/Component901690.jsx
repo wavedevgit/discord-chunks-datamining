@@ -1,7 +1,7 @@
 /** Chunk was on 31748 **/
 /** chunk id: 901690, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => I
+  A: () => T
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -29,211 +29,211 @@ var Chunk627968 = require("./627968.js"),
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
-      var l;
-      l = n[t], t in e ? Object.defineProperty(e, t, {
-        value: l,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = l
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function N(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, l)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = {
+let N = {
     x: 0,
     y: 0
   },
-  j = (0, Chunk735438.debounce)((e, t, n) => {
-    let l = null,
-      r = null;
-    if (null != n && (0, b.wL)(n)) {
+  I = (0, Chunk735438.debounce)((e, t, n) => {
+    let r = null,
+      l = null;
+    if (null != n && (0, g.wL)(n)) {
       var i, a;
-      let e = (0, b.Iy)(n),
-        t = (0, g.Ee)(e, h.A);
-      l = null != (i = null == t ? true : t.name) ? i : null, r = null != (a = null == t ? true : t.id) ? a : null
+      let e = (0, g.Iy)(n),
+        t = (0, m.Ee)(e, h.A);
+      r = null != (i = null == t ? true : t.name) ? i : null, l = null != (a = null == t ? true : t.id) ? a : null
     }
-    A.default.track(E.HAw.VIDEO_STREAM_ZOOM_CHANGED, {
+    y.default.track(E.HAw.VIDEO_STREAM_ZOOM_CHANGED, {
       zoom_level: e,
       method: t,
-      share_application_name: l,
-      share_application_id: r
+      share_application_name: r,
+      share_application_id: l
     })
   }, 2e3);
 
-function T(e, t, n) {
+function j(e, t, n) {
   return Math.min(Math.max(t, e), n)
 }
-let I = Chunk64700.memo(function(e) {
+let T = Chunk64700.memo(function(e) {
   let {
     enableZoom: t = false,
     minZoom: n = 1,
     maxZoom: i = 5,
-    controlsBottom: s = 8,
-    idle: b = false
-  } = e, g = function(e, t) {
+    controlsBottom: o = 8,
+    idle: g = false
+  } = e, m = function(e, t) {
     if (null == e) return {};
-    var n, l, r, i = {};
+    var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (r = 0, n = Reflect.ownKeys(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
+      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
       return i
     }
     if (i = function(e, t) {
         if (null == e) return {};
-        var n, l, r = {},
+        var n, r, l = {},
           i = Object.getOwnPropertyNames(e);
-        for (l = 0; l < i.length; l++) n = i[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n]);
-        return r
+        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
+        return l
       }(e, t), Object.getOwnPropertySymbols)
-      for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
+      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
   }(e, ["enableZoom", "minZoom", "maxZoom", "controlsBottom", "idle"]), {
     streamId: h,
-    streamKey: A,
+    streamKey: y,
     onResize: E,
-    wrapperClassName: I,
+    wrapperClassName: T,
     videoComponent: w,
-    mirror: R,
-    paused: P
-  } = g, {
+    mirror: P,
+    paused: R
+  } = m, {
     onActive: D,
     onPreventIdle: k,
     onAllowIdle: L
-  } = r.useContext(m.k3), [M, U] = r.useState(false), [V, F] = r.useState(null), [G, H] = r.useState(null), [B, Y] = r.useState(0), [W, z] = r.useState(C), [K, X] = r.useState(null), [Z, J] = r.useState(null), [q, Q] = r.useState(false), [$, ee] = r.useState(n), [et, en] = r.useState(false), [el, er] = r.useState(false), [ei, ea] = r.useState(16 / 9), [es, eo] = r.useState(false), [ec, eu] = r.useState(false), ed = r.useRef(new c.Ep), ef = r.useRef(new c.Ep), ep = r.useRef(new c.Ep), eb = r.useRef(new c.Ep), eg = r.useRef(null), em = r.useRef(null), eh = r.useRef(null), eA = (0, d.zhh)({
-    value: s,
-    config: N(S({}, o.config.stiff), {
+  } = l.useContext(_.k3), [M, U] = l.useState(false), [V, F] = l.useState(null), [G, B] = l.useState(null), [H, W] = l.useState(0), [z, Y] = l.useState(N), [K, Z] = l.useState(null), [q, X] = l.useState(null), [J, Q] = l.useState(false), [$, ee] = l.useState(n), [et, en] = l.useState(false), [er, el] = l.useState(false), [ei, ea] = l.useState(16 / 9), [eo, es] = l.useState(false), [ec, eu] = l.useState(false), ed = l.useRef(new c.Ep), ef = l.useRef(new c.Ep), ep = l.useRef(new c.Ep), eg = l.useRef(new c.Ep), em = l.useRef(null), e_ = l.useRef(null), eh = l.useRef(null), ey = (0, d.zhh)({
+    value: o,
+    config: C(S({}, s.config.stiff), {
       clamp: true
     })
-  }, "animate-always"), ey = $ > n, e_ = r.useCallback(e => {
+  }, "animate-always"), eA = $ > n, eb = l.useCallback(e => {
     e.width > 0 && e.height > 0 && ea(e.width / e.height), null == E || E(e)
-  }, [E]), eE = r.useCallback(e => {
-    if (null == eg.current) return C;
-    let t = eg.current.getBoundingClientRect();
+  }, [E]), eE = l.useCallback(e => {
+    if (null == em.current) return N;
+    let t = em.current.getBoundingClientRect();
     return {
       x: e.clientX - t.left - t.width / 2,
       y: e.clientY - t.top - t.height / 2
     }
-  }, []), ev = r.useCallback((e, t) => {
-    if (null == eg.current) return C;
+  }, []), ev = l.useCallback((e, t) => {
+    if (null == em.current) return N;
     let n = null != t ? t : $,
-      l = eg.current.clientWidth,
-      r = eg.current.clientHeight,
-      i = l * (n - 1) / 2,
-      a = r * (n - 1) / 2;
+      r = em.current.clientWidth,
+      l = em.current.clientHeight,
+      i = r * (n - 1) / 2,
+      a = l * (n - 1) / 2;
     return {
-      x: T(e.x, -i, i),
-      y: T(e.y, -a, a)
+      x: j(e.x, -i, i),
+      y: j(e.y, -a, a)
     }
-  }, [$]), eO = r.useCallback((e, t, l) => {
-    let r = T(e, n, i);
-    if (null == eg.current || null == t || r === $) return;
+  }, [$]), eO = l.useCallback((e, t, r) => {
+    let l = j(e, n, i);
+    if (null == em.current || null == t || l === $) return;
     eu(true);
-    let a = r / $;
-    z(e => ev({
+    let a = l / $;
+    Y(e => ev({
       x: (e.x - t.x) * a + t.x,
       y: (e.y - t.y) * a + t.y
-    }, r)), ee(r), j(r, l, A), eb.current.start(2e3, () => {
+    }, l)), ee(l), I(l, r, y), eg.current.start(2e3, () => {
       eu(false)
     })
-  }, [ev, i, n, A, $]), ex = r.useCallback(e => {
-    if (!ey) return;
+  }, [ev, i, n, y, $]), ex = l.useCallback(e => {
+    if (!eA) return;
     e.preventDefault(), e.stopPropagation();
     let t = eE(e);
-    U(true), H(t), F(t), Y(Date.now()), J(t), X(W)
-  }, [eE, ey, W]), eS = r.useCallback(e => {
-    if ((t || ey) && D(), !M || !ey || null == Z || null == K) return;
+    U(true), B(t), F(t), W(Date.now()), X(t), Z(z)
+  }, [eE, eA, z]), eS = l.useCallback(e => {
+    if ((t || eA) && D(), !M || !eA || null == q || null == K) return;
     e.preventDefault(), e.stopPropagation();
     let n = eE(e),
-      l = n.x - Z.x,
-      r = n.y - Z.y;
-    z(ev({
-      x: K.x + l,
-      y: K.y + r
+      r = n.x - q.x,
+      l = n.y - q.y;
+    Y(ev({
+      x: K.x + r,
+      y: K.y + l
     })), F(n)
-  }, [ev, Z, K, t, eE, M, ey, D]), eN = r.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), U(false), J(null), X(null)
-  }, []), eC = r.useCallback(e => {
-    if (ey && null != G && null != V) {
+  }, [ev, q, K, t, eE, M, eA, D]), eC = l.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), U(false), X(null), Z(null)
+  }, []), eN = l.useCallback(e => {
+    if (eA && null != G && null != V) {
       let {
         x: t,
         y: n
       } = G, {
-        x: l,
-        y: r
+        x: r,
+        y: l
       } = V;
-      (Math.sqrt((l - t) ** 2 + (r - n) ** 2) > .01 || Date.now() - B >= 500) && (e.preventDefault(), e.stopPropagation())
+      (Math.sqrt((r - t) ** 2 + (l - n) ** 2) > .01 || Date.now() - H >= 500) && (e.preventDefault(), e.stopPropagation())
     }
-  }, [ey, G, B, V]), ej = r.useCallback(() => {
-    U(false), J(null), X(null)
-  }, []), eT = r.useCallback(e => {
+  }, [eA, G, H, V]), eI = l.useCallback(() => {
+    U(false), X(null), Z(null)
+  }, []), ej = l.useCallback(e => {
     t && (en(true), eO($ - e.deltaY / 100, eE(e), "wheel"), D(), ed.current.start(100, () => {
       en(false)
     }))
-  }, [t, eO, $, eE, D]), eI = r.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), eO($ + .25, C, "button")
-  }, [eO, $]), ew = r.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), eO($ - .25, C, "button")
-  }, [eO, $]), eR = r.useCallback(e => {
-    er(true), eO(e, C, "slider"), D(), ef.current.start(100, () => {
-      er(false)
+  }, [t, eO, $, eE, D]), eT = l.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), eO($ + .25, N, "button")
+  }, [eO, $]), ew = l.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), eO($ - .25, N, "button")
+  }, [eO, $]), eP = l.useCallback(e => {
+    el(true), eO(e, N, "slider"), D(), ef.current.start(100, () => {
+      el(false)
     })
-  }, [eO, D]), eP = r.useCallback(() => {
+  }, [eO, D]), eR = l.useCallback(() => {
     k("interact")
-  }, [k]), eD = r.useCallback(() => {
+  }, [k]), eD = l.useCallback(() => {
     Q(false), L("interact")
-  }, [L]), ek = r.useCallback(e => {
+  }, [L]), ek = l.useCallback(e => {
     e.preventDefault(), e.stopPropagation()
-  }, []), eL = r.useCallback(e => {
-    if (null == em.current || null == eg.current) return;
-    let t = em.current.getBoundingClientRect(),
-      n = eg.current.clientWidth,
-      l = eg.current.clientHeight,
-      r = e.x - t.left,
+  }, []), eL = l.useCallback(e => {
+    if (null == e_.current || null == em.current) return;
+    let t = e_.current.getBoundingClientRect(),
+      n = em.current.clientWidth,
+      r = em.current.clientHeight,
+      l = e.x - t.left,
       i = e.y - t.top;
-    z(ev({
-      x: (.5 - r / t.width) * n * $,
-      y: (.5 - i / t.height) * l * $
+    Y(ev({
+      x: (.5 - l / t.width) * n * $,
+      y: (.5 - i / t.height) * r * $
     }))
-  }, [ev, $]), eM = r.useCallback(e => {
+  }, [ev, $]), eM = l.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), Q(true), eL({
       x: e.clientX,
       y: e.clientY
     })
-  }, [eL]), eU = r.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), q && eL({
+  }, [eL]), eU = l.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), J && eL({
       x: e.clientX,
       y: e.clientY
     })
-  }, [q, eL]), eV = r.useCallback(e => {
+  }, [J, eL]), eV = l.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), Q(false)
-  }, []), eF = r.useCallback(e => {
+  }, []), eF = l.useCallback(e => {
     e.preventDefault(), e.stopPropagation()
   }, []);
-  (0, f.i4)(eg, r.useCallback(e => {
+  (0, f.i4)(em, l.useCallback(e => {
     let {
       width: t,
       height: n
     } = e;
-    if (!ey || null == t || null == n) return;
-    let l = eh.current;
-    if (null == l) {
+    if (!eA || null == t || null == n) return;
+    let r = eh.current;
+    if (null == r) {
       eh.current = {
         width: t,
         height: n
@@ -241,125 +241,125 @@ let I = Chunk64700.memo(function(e) {
       return
     }
     let {
-      width: r,
+      width: l,
       height: i
-    } = l;
-    1 > Math.abs(t - r) && 1 > Math.abs(n - i) || (eo(true), z(e => {
-      let l = r * ($ - 1) / 2,
+    } = r;
+    1 > Math.abs(t - l) && 1 > Math.abs(n - i) || (es(true), Y(e => {
+      let r = l * ($ - 1) / 2,
         a = i * ($ - 1) / 2,
-        s = t * ($ - 1) / 2,
-        o = n * ($ - 1) / 2;
+        o = t * ($ - 1) / 2,
+        s = n * ($ - 1) / 2;
       return ev({
-        x: (0 !== l ? e.x / l : 0) * s,
-        y: (0 !== a ? e.y / a : 0) * o
+        x: (0 !== r ? e.x / r : 0) * o,
+        y: (0 !== a ? e.y / a : 0) * s
       })
     }), eh.current = {
       width: t,
       height: n
     }, ep.current.start(100, () => {
-      eo(false)
+      es(false)
     }))
-  }, [ev, ey, $]), [ey, $]), (0, p.l0)(() => {
-    ed.current.stop(), ef.current.stop(), ep.current.stop(), eb.current.stop()
-  }), r.useEffect(() => {
-    null != h && (0, y.c)(h, true, t && ey ? $ : 1)
-  }, [t, ey, h, $]);
-  let eG = r.useMemo(() => {
-      let e = ev(W);
+  }, [ev, eA, $]), [eA, $]), (0, p.l0)(() => {
+    ed.current.stop(), ef.current.stop(), ep.current.stop(), eg.current.stop()
+  }), l.useEffect(() => {
+    null != h && (0, A.c)(h, true, t && eA ? $ : 1)
+  }, [t, eA, h, $]);
+  let eG = l.useMemo(() => {
+      let e = ev(z);
       return {
         "--custom-zoom-scale": $,
         "--custom-pan-x": "".concat(e.x, "px"),
         "--custom-pan-y": "".concat(e.y, "px"),
-        "--custom-zoom-transition": M || es || et || el ? "none" : "transform 0.15s ease-out"
+        "--custom-zoom-transition": M || eo || et || er ? "none" : "transform 0.15s ease-out"
       }
-    }, [ev, M, es, et, el, W, $]),
-    eH = r.useMemo(() => {
+    }, [ev, M, eo, et, er, z, $]),
+    eB = l.useMemo(() => {
       let e = 120 * Math.min(ei, 32 / 9);
       return {
         "--custom-zoom-minimap-width": "".concat(e, "px"),
         "--custom-zoom-minimap-height": "".concat(120, "px")
       }
     }, [ei]),
-    eB = r.useMemo(() => {
-      let e = null != eg.current ? eg.current.clientWidth : 1,
-        t = null != eg.current ? eg.current.clientHeight : 1,
+    eH = l.useMemo(() => {
+      let e = null != em.current ? em.current.clientWidth : 1,
+        t = null != em.current ? em.current.clientHeight : 1,
         n = 1 / $,
-        l = 1 / $,
-        r = .5 - W.x / (e * $),
-        i = .5 - W.y / (t * $);
+        r = 1 / $,
+        l = .5 - z.x / (e * $),
+        i = .5 - z.y / (t * $);
       return {
-        "--custom-zoom-indicator-left": "".concat(100 * T(r - n / 2, 0, 1 - n), "%"),
-        "--custom-zoom-indicator-top": "".concat(100 * T(i - l / 2, 0, 1 - l), "%"),
+        "--custom-zoom-indicator-left": "".concat(100 * j(l - n / 2, 0, 1 - n), "%"),
+        "--custom-zoom-indicator-top": "".concat(100 * j(i - r / 2, 0, 1 - r), "%"),
         "--custom-zoom-indicator-width": "".concat(100 * n, "%"),
-        "--custom-zoom-indicator-height": "".concat(100 * l, "%"),
-        "--custom-zoom-indicator-transition": M || q || et || el ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
+        "--custom-zoom-indicator-height": "".concat(100 * r, "%"),
+        "--custom-zoom-indicator-transition": M || J || et || er ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
       }
-    }, [M, q, et, el, W, $]);
-  return (0, l.jsxs)("div", {
-    ref: eg,
-    className: a()(x.iE, I, {
-      [x.rc]: t && ey,
+    }, [M, J, et, er, z, $]);
+  return (0, r.jsxs)("div", {
+    ref: em,
+    className: a()(x.iE, T, {
+      [x.rc]: t && eA,
       [x.d$]: M
     }),
     onMouseDown: ex,
     onMouseMove: eS,
-    onMouseUp: eN,
-    onMouseLeave: ej,
-    onWheel: eT,
-    children: [(0, l.jsx)(d.DUT, {
-      onClick: eC,
-      children: null != h && (0, l.jsx)("div", {
+    onMouseUp: eC,
+    onMouseLeave: eI,
+    onWheel: ej,
+    children: [(0, r.jsx)(d.DUT, {
+      onClick: eN,
+      children: null != h && (0, r.jsx)("div", {
         className: a()(x.j, x.L2),
         style: eG,
-        children: (0, l.jsx)(_.A, N(S({}, g), {
-          onResize: e_,
+        children: (0, r.jsx)(b.A, C(S({}, m), {
+          onResize: eb,
           wrapperClassName: true
         }))
       })
-    }), t && null != h && (0, l.jsx)(o.animated.div, {
+    }), t && null != h && (0, r.jsx)(s.animated.div, {
       className: a()(x.Vp, {
-        [x.N7]: b
+        [x.N7]: g
       }),
       style: {
-        bottom: eA.value
+        bottom: ey.value
       },
-      children: (0, l.jsxs)("div", {
+      children: (0, r.jsxs)("div", {
         className: a()(x.mu, {
-          [x.He]: ec || ey
+          [x.He]: ec || eA
         }),
-        onMouseEnter: eP,
+        onMouseEnter: eR,
         onMouseLeave: eD,
         onClick: ek,
-        children: [(ec || ey) && (0, l.jsx)(d.DUT, {
+        children: [(ec || eA) && (0, r.jsx)(d.DUT, {
           onClick: eF,
-          onMouseEnter: eP,
+          onMouseEnter: eR,
           onMouseLeave: eD,
-          children: (0, l.jsxs)("div", {
-            ref: em,
+          children: (0, r.jsxs)("div", {
+            ref: e_,
             className: x.Wc,
-            style: eH,
+            style: eB,
             onMouseDown: eM,
             onMouseMove: eU,
             onMouseUp: eV,
-            children: [(0, l.jsx)(w, {
+            children: [(0, r.jsx)(w, {
               className: a()(x.BZ, {
-                [O.mirror]: R
+                [O.mirror]: P
               }),
               streamId: h,
-              paused: P,
+              paused: R,
               reportContainerResized: false
-            }), (0, l.jsx)("div", {
+            }), (0, r.jsx)("div", {
               className: x.xq,
-              style: eB
+              style: eH
             })]
           })
-        }), (0, l.jsxs)("div", {
+        }), (0, r.jsxs)("div", {
           className: x.GK,
-          children: [(ec || ey) && (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)(u.m_, {
+          children: [(ec || eA) && (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(u.m_, {
               text: v.intl.string(v.t.M6Cmwy),
               position: "top",
-              children: (0, l.jsx)(d.K0, {
+              children: (0, r.jsx)(d.K0, {
                 icon: d.V0_,
                 onClick: ew,
                 disabled: $ <= n,
@@ -367,21 +367,21 @@ let I = Chunk64700.memo(function(e) {
                 size: "sm",
                 "aria-label": v.intl.string(v.t.M6Cmwy)
               })
-            }), (0, l.jsx)(d.Apm, {
+            }), (0, r.jsx)(d.Apm, {
               minValue: n,
               maxValue: i,
               initialValue: $,
               value: $,
-              asValueChanges: eR,
+              asValueChanges: eP,
               onValueRender: e => "".concat(Math.round(100 * e), "%"),
               "aria-label": v.intl.string(v.t.grzPmr)
             })]
-          }), (0, l.jsx)(u.m_, {
+          }), (0, r.jsx)(u.m_, {
             text: v.intl.string(v.t["9hMafy"]),
             position: "top",
-            children: (0, l.jsx)(d.K0, {
+            children: (0, r.jsx)(d.K0, {
               icon: d.r1u,
-              onClick: eI,
+              onClick: eT,
               disabled: $ >= i,
               variant: "overlay-secondary",
               size: "sm",

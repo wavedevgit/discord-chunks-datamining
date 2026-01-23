@@ -14,24 +14,24 @@ var Chunk397927 = require("./397927.js"),
 let d = e => {
   var t, r;
   let {
-    children: c,
-    className: o
+    children: o,
+    className: i
   } = e, s = function(e, t) {
     if (null == e) return {};
-    var r, n, l, c = {};
+    var r, n, l, o = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (l = 0, r = Reflect.ownKeys(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (c[n] = e[n]);
-      return c
+      for (l = 0, r = Reflect.ownKeys(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
+      return o
     }
-    if (c = function(e, t) {
+    if (o = function(e, t) {
         if (null == e) return {};
         var r, n, l = {},
-          c = Object.getOwnPropertyNames(e);
-        for (n = 0; n < c.length; n++) r = c[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+          o = Object.getOwnPropertyNames(e);
+        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
         return l
       }(e, t), Object.getOwnPropertySymbols)
-      for (l = 0, r = Object.getOwnPropertySymbols(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (c[n] = e[n]);
-    return c
+      for (l = 0, r = Object.getOwnPropertySymbols(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
+    return o
   }(e, ["children", "className"]);
   return (0, n.jsx)(l.EOs, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -52,10 +52,10 @@ let d = e => {
     return e
   }({
     "data-migration-pending": true,
-    className: o
+    className: i
   }, s), r = r = {
     parentComponent: "FamilyCenterCommonModal",
-    children: c
+    children: o
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -80,11 +80,11 @@ d.ButtonFooter = e => {
     icon: t,
     currentUser: r,
     otherUser: s,
-    header: i
+    header: c
   } = e;
   return (0, n.jsxs)("div", {
     className: a.wx,
-    children: [(0, n.jsx)(c.A, {
+    children: [(0, n.jsx)(o.A, {
       currentUser: r,
       otherUser: s,
       children: t
@@ -92,8 +92,8 @@ d.ButtonFooter = e => {
       className: a.R_,
       children: [(0, n.jsx)(l.Heading, {
         variant: "text-lg/bold",
-        children: i
-      }), (0, n.jsx)(o.A, {
+        children: c
+      }), (0, n.jsx)(i.A, {
         user: s
       })]
     })]
@@ -115,7 +115,7 @@ d.ButtonFooter = e => {
     children: [(0, n.jsx)(l.Text, {
       variant: "eyebrow",
       color: "text-strong",
-      children: i.intl.string(s.default.cXgKMD)
+      children: c.intl.string(s.default.cXgKMD)
     }), (0, n.jsx)(l.Text, {
       variant: "text-sm/normal",
       color: "text-default",

@@ -86,7 +86,7 @@ let m = {
         align: h,
         size: m,
         position: g
-      } = e, E = _(e, ["showAsset", "showActions", "showTextLink", "caretAlign", "alignmentStrategy", "align", "size", "position"]), [b, y] = i.useState(false), O = i.useRef(null);
+      } = e, E = _(e, ["showAsset", "showActions", "showTextLink", "caretAlign", "alignmentStrategy", "align", "size", "position"]), [y, b] = i.useState(false), O = i.useRef(null);
       return (0, r.jsxs)("div", {
         style: {
           display: "flex",
@@ -100,8 +100,8 @@ let m = {
           align: h,
           alignmentStrategy: f,
           targetElementRef: O,
-          shouldShow: b,
-          onRequestClose: () => y(false),
+          shouldShow: y,
+          onRequestClose: () => b(false),
           graphic: t ? {
             type: "image",
             src: "sm" === m ? l.A : o.A
@@ -111,7 +111,7 @@ let m = {
           },
           actions: n ? [{
             text: "Close",
-            onClick: () => y(false)
+            onClick: () => b(false)
           }] : true,
           textLink: c ? {
             text: "Learn More",
@@ -122,7 +122,7 @@ let m = {
           variant: "primary",
           text: "Toggle Popover",
           buttonRef: O,
-          onClick: () => y(!b)
+          onClick: () => b(!y)
         })]
       })
     },

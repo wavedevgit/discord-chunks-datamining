@@ -19,11 +19,11 @@ function d(e) {
     icon: r,
     imageSrc: d,
     iconBackgroundColor: u,
-    iconClassName: b,
-    iconWrapperClassName: f,
-    details: p,
-    detailsClassName: m,
-    isHeader: g,
+    iconClassName: p,
+    iconWrapperClassName: m,
+    details: g,
+    detailsClassName: b,
+    isHeader: f,
     isPremium: h,
     children: x
   } = e;
@@ -52,7 +52,7 @@ function d(e) {
         className: l()(c.P0, a),
         children: s
       })
-    }(r, d, u, b, f) : null, (0, i.jsxs)(s.BJc, {
+    }(r, d, u, p, m) : null, (0, i.jsxs)(s.BJc, {
       justify: "center",
       children: [function(e) {
         let {
@@ -61,8 +61,8 @@ function d(e) {
           details: r,
           detailsClassName: d,
           isHeader: u,
-          isPremium: b
-        } = e, f = null == r ? true : r.map((e, t) => {
+          isPremium: p
+        } = e, m = null == r ? true : r.map((e, t) => {
           let {
             icon: n,
             text: r
@@ -86,7 +86,7 @@ function d(e) {
           children: [(0, i.jsxs)(s.Heading, {
             variant: u ? "heading-xl/semibold" : "heading-md/medium",
             className: u ? c.wx : c.K8,
-            children: [t, b && (0, i.jsx)(a.m, {
+            children: [t, p && (0, i.jsx)(a.m, {
               text: o.intl.string(o.t.VFuFum),
               children: (0, i.jsx)(s.qyI, {
                 size: "xs",
@@ -100,15 +100,15 @@ function d(e) {
             children: n
           }) : null, (0, i.jsx)(s.BJc, {
             direction: "horizontal",
-            children: f
+            children: m
           })]
         })
       }({
         name: t,
         description: n,
-        details: p,
-        detailsClassName: m,
-        isHeader: g,
+        details: g,
+        detailsClassName: b,
+        isHeader: f,
         isPremium: h
       }), x]
     })]

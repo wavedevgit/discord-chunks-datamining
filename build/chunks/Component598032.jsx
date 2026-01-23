@@ -1,12 +1,12 @@
 /** Chunk was on 96811 **/
 /** chunk id: 598032, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => C
+  A: () => w
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk141931 = require("./141931.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -26,101 +26,101 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk607186 = require("./607186.js");
 
-function _() {
+function O() {
   return (0, n.jsx)("span", {
-    className: A.gO,
+    className: S.gO,
     children: "•"
   })
 }
 
-function O(e) {
+function A(e) {
   let {
     source: t
   } = e, {
     data: r
-  } = (0, o.YY)(null != t && (0, m.l)(t) ? t.id : true);
-  return null == t ? (0, n.jsx)(c.Fzq, {
-    className: A.Jd,
+  } = (0, c.YY)(null != t && (0, j.l)(t) ? t.id : true);
+  return null == t ? (0, n.jsx)(o.Fzq, {
+    className: S.Jd,
     size: "md",
     color: "currentColor"
-  }) : (0, m.l)(t) ? (0, n.jsx)(d.A, {
+  }) : (0, j.l)(t) ? (0, n.jsx)(d.A, {
     game: r,
     pid: t.pid
-  }) : null == t.icon || "" === t.icon ? (0, n.jsx)(c.Fzq, {
-    className: A.Jd,
+  }) : null == t.icon || "" === t.icon ? (0, n.jsx)(o.Fzq, {
+    className: S.Jd,
     size: "md",
     color: "currentColor"
   }) : (0, n.jsx)("img", {
     src: t.icon,
     alt: "",
-    className: A.pI
+    className: S.pI
   })
 }
 
-function C() {
-  var e, t, r, l;
+function w() {
+  var e, t, r, i;
   let [{
-    preset: o,
+    preset: c,
     resolution: d,
-    fps: m,
-    muteStreamAudio: C,
-    selectedSource: w,
+    fps: j,
+    muteStreamAudio: w,
+    selectedSource: C,
     sourceType: E,
-    audioSourceId: N
-  }] = (0, p.tS)(), [I, T] = (0, f.tR)(v.oh.AUDIO_INPUT, {
+    audioSourceId: I
+  }] = (0, p.tS)(), [N, T] = (0, u.tR)(v.oh.AUDIO_INPUT, {
     location: "StreamSettingsSummary"
-  }), R = I.concat(T), [P, M] = null != (e = (0, g.A)(o)) ? e : [d, m], D = (0, x.K)(o), U = (0, j.b)(P), L = E === i.fS.CAMERA, G = null != w, k = null != w ? null == w || null == (r = w.id) ? true : r.startsWith(i.fS.CAMERA) : L, F = o === b.jQ.PRESET_AUTO, Z = G ? true : o === b.jQ.PRESET_VIDEO ? S.intl.string(y.default.MuHUFe) : o === b.jQ.PRESET_DOCUMENTS ? S.intl.string(y.default.y0JuYR) : o === b.jQ.PRESET_AUTO ? S.intl.string(y.default.m4jtlc) : true, H = (0, a.bG)([u.A], () => u.A.getUseSystemScreensharePicker() && (0, h.isLinux)());
+  }), R = N.concat(T), [P, M] = null != (e = (0, g.A)(c)) ? e : [d, j], D = (0, x.K)(c), U = (0, m.b)(P), G = E === s.fS.CAMERA, L = null != C, k = null != C ? null == C || null == (r = C.id) ? true : r.startsWith(s.fS.CAMERA) : G, F = c === _.jQ.PRESET_AUTO, H = L ? true : c === _.jQ.PRESET_VIDEO ? y.intl.string(b.default.MuHUFe) : c === _.jQ.PRESET_DOCUMENTS ? y.intl.string(b.default.y0JuYR) : c === _.jQ.PRESET_AUTO ? y.intl.string(b.default.m4jtlc) : true, B = (0, a.bG)([f.A], () => f.A.getUseSystemScreensharePicker() && (0, h.isLinux)());
   return (0, n.jsxs)("div", {
-    className: A.zr,
-    children: [G && (0, n.jsx)(O, {
-      source: w
+    className: S.zr,
+    children: [L && (0, n.jsx)(A, {
+      source: C
     }), (0, n.jsxs)("div", {
-      className: A.z,
-      children: [(0, n.jsx)(c.Text, {
-        className: A.fB,
+      className: S.z,
+      children: [(0, n.jsx)(o.Text, {
+        className: S.fB,
         variant: "text-md/semibold",
         color: "text-strong",
-        children: G ? null != (t = null == w ? true : w.name) ? t : S.intl.string(y.default["hJMA+x"]) : D
-      }), (0, n.jsxs)(c.Text, {
-        className: A.kI,
+        children: L ? null != (t = null == C ? true : C.name) ? t : y.intl.string(b.default["hJMA+x"]) : D
+      }), (0, n.jsxs)(o.Text, {
+        className: S.kI,
         variant: "text-xs/medium",
         color: "text-muted",
-        children: [G && (0, n.jsxs)(n.Fragment, {
+        children: [L && (0, n.jsxs)(n.Fragment, {
           children: [(0, n.jsxs)("span", {
-            className: A.x5,
-            children: [(0, n.jsx)(c.Zes, {
-              className: A.Kk,
+            className: S.x5,
+            children: [(0, n.jsx)(o.Zes, {
+              className: S.Kk,
               size: "xxs",
               color: "currentColor"
             }), D]
-          }), (0, n.jsx)(_, {})]
-        }), null != Z && (0, n.jsx)("span", {
-          children: Z
+          }), (0, n.jsx)(O, {})]
+        }), null != H && (0, n.jsx)("span", {
+          children: H
         }), !F && (0, n.jsxs)(n.Fragment, {
-          children: [(0, n.jsx)(_, {}), (0, n.jsx)("span", {
+          children: [(0, n.jsx)(O, {}), (0, n.jsx)("span", {
             children: U
-          }), (0, n.jsx)(_, {}), (0, n.jsx)("span", {
+          }), (0, n.jsx)(O, {}), (0, n.jsx)("span", {
             children: "".concat(M, "fps")
           })]
-        }), C && (0, n.jsxs)(n.Fragment, {
-          children: [(0, n.jsx)(_, {}), (0, n.jsxs)("span", {
-            className: A.x5,
-            children: [(0, n.jsx)(c._RO, {
-              className: s()(A.Kk, A.tG),
+        }), w && (0, n.jsxs)(n.Fragment, {
+          children: [(0, n.jsx)(O, {}), (0, n.jsxs)("span", {
+            className: S.x5,
+            children: [(0, n.jsx)(o._RO, {
+              className: l()(S.Kk, S.tG),
               size: "xxs",
               color: "currentColor"
-            }), S.intl.string(y.default.FzMGWR)]
+            }), y.intl.string(b.default.FzMGWR)]
           })]
-        }), !C && !k && H && (0, n.jsxs)(n.Fragment, {
-          children: [(0, n.jsx)(_, {}), S.intl.string(y.default["n9/rUq"])]
+        }), !w && !k && B && (0, n.jsxs)(n.Fragment, {
+          children: [(0, n.jsx)(O, {}), y.intl.string(b.default["n9/rUq"])]
         }), k ? (0, n.jsxs)(n.Fragment, {
-          children: [(0, n.jsx)(_, {}), (0, n.jsx)("span", {
-            children: null == (l = R.find(e => {
+          children: [(0, n.jsx)(O, {}), (0, n.jsx)("span", {
+            children: null == (i = R.find(e => {
               let {
                 id: t
               } = e;
-              return N === t
-            })) ? true : l.name
+              return I === t
+            })) ? true : i.name
           })]
         }) : null]
       })]

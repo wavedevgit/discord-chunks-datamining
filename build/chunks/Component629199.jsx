@@ -26,7 +26,7 @@ var Chunk311907 = require("./311907.js"),
 let y = e => {
     let {
       userId: t
-    } = e, n = (0, b.y)(t);
+    } = e, n = (0, _.y)(t);
     return null == n || 0 === n.length ? (0, r.jsx)(a.Text, {
       className: O.tE,
       variant: "text-sm/normal",
@@ -57,7 +57,7 @@ function v(e) {
     channel: n,
     otherUser: l,
     active: u
-  } = e, g = (0, i.bG)([o.A], () => o.A.useReducedMotion), b = (0, i.bG)([h.A], () => null == l ? null : h.A.getNickname(l.id)), v = !g && u, S = (0, m.j)(n), {
+  } = e, m = (0, i.bG)([o.A], () => o.A.useReducedMotion), _ = (0, i.bG)([g.A], () => null == l ? null : g.A.getNickname(l.id)), v = !m && u, S = (0, A.j)(n), {
     avatarDecorationSrc: C
   } = (0, p.A)({
     user: l,
@@ -67,7 +67,7 @@ function v(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(I, {
       className: O.my,
-      src: (0, f.Y)(n, 40, v),
+      src: (0, h.Y)(n, 40, v),
       avatarDecoration: C,
       size: a._3J.SIZE_40,
       "aria-label": null != (t = null == l ? true : l.username) ? t : E.intl.string(E.t["30mdIx"])
@@ -76,12 +76,12 @@ function v(e) {
       children: [(0, r.jsxs)("div", {
         className: O.rU,
         children: [(0, r.jsx)(s.A, {
-          nick: b,
+          nick: _,
           user: l,
           showAccountIdentifier: true,
           className: O.I8,
           usernameClass: O.Xh,
-          discriminatorClass: null != A.Ay.getGlobalName(l) ? O.vl : O.D2
+          discriminatorClass: null != f.Ay.getGlobalName(l) ? O.vl : O.D2
         }), (0, r.jsx)(a.Text, {
           className: O.L7,
           color: "text-muted",
@@ -89,7 +89,7 @@ function v(e) {
           children: S
         })]
       }), (0, r.jsx)(c.A, {
-        hoverText: (0, r.jsx)(_.A, {
+        hoverText: (0, r.jsx)(b.A, {
           channel: n
         }),
         forceHover: u,

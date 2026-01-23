@@ -10,9 +10,9 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js");
 
 function o(e) {
-  return (0, r.cf)([i.Ay, l.A, a.A], () => {
-    if (e !== s.YYv) return i.Ay.getVoiceStates(e);
-    let t = a.A.getFavoriteChannels(),
+  return (0, r.cf)([i.Ay, l.A, s.A], () => {
+    if (e !== a.YYv) return i.Ay.getVoiceStates(e);
+    let t = s.A.getFavoriteChannels(),
       n = {};
     for (let e in t) {
       let t = l.A.getChannel(e);

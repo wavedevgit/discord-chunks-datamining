@@ -18,8 +18,8 @@ function i(e) {
   return btoa(n).replace(/\+/g, "-").replace(/\//g, "_").replace(/=/g, "")
 }
 require.d(exports, {
-  Jt: () => v,
-  vt: () => y
+  Jt: () => A,
+  vt: () => b
 });
 var a = "copy",
   s = "convert";
@@ -148,20 +148,20 @@ function E(e) {
   return o(r, _, e)
 }
 
-function b(e) {
+function y(e) {
   return o(i, h, e)
 }
-async function y(e) {
-  return b(await navigator.credentials.create(E(e)))
+async function b(e) {
+  return y(await navigator.credentials.create(E(e)))
 }
 
 function O(e) {
   return o(r, m, e)
 }
 
-function A(e) {
+function v(e) {
   return o(i, g, e)
 }
-async function v(e) {
-  return A(await navigator.credentials.get(O(e)))
+async function A(e) {
+  return v(await navigator.credentials.get(O(e)))
 }

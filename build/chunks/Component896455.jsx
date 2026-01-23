@@ -18,8 +18,8 @@ function d(e) {
     channel: t,
     transitionState: n,
     onClose: d,
-    defaultValue: f
-  } = e, [p, h] = l.useState(f);
+    defaultValue: p
+  } = e, [h, f] = l.useState(p);
   return (0, r.jsx)(i.Modal, {
     transitionState: n,
     size: "md",
@@ -33,15 +33,15 @@ function d(e) {
       variant: "primary",
       text: c.intl.string(c.t.iQ1SwX),
       onClick: () => {
-        (0, s.yF)({
+        (0, a.yF)({
           channelId: t.id,
-          scheduledTimestamp: p.toISOString()
-        }), (0, a.OoC)(u)
+          scheduledTimestamp: h.toISOString()
+        }), (0, s.OoC)(u)
       }
     }],
     children: (0, r.jsx)(o.A, {
-      defaultValue: f,
-      onChange: h
+      defaultValue: p,
+      onChange: f
     })
   })
 }

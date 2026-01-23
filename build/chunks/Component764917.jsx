@@ -55,13 +55,13 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = [],
-  y = false,
+let y = [],
+  b = false,
   O = false,
-  A = false,
   v = false,
-  S = 11,
-  I = 125,
+  A = false,
+  I = 11,
+  S = 125,
   T = 20,
   C = 12,
   N = 48,
@@ -136,12 +136,12 @@ let M = Chunk64700.forwardRef(function(e, t) {
         velocity: {
           type: "static-random",
           minValue: {
-            x: y,
-            y: A
+            x: b,
+            y: v
           },
           maxValue: {
             x: O,
-            y: v
+            y: A
           }
         },
         size: {
@@ -157,7 +157,7 @@ let M = Chunk64700.forwardRef(function(e, t) {
     }
   }), [u]), (0, r.jsx)(a.K_, {
     ref: l,
-    colors: b,
+    colors: y,
     sprites: n,
     spriteWidth: N,
     spriteHeight: N
@@ -167,32 +167,32 @@ let M = Chunk64700.forwardRef(function(e, t) {
 function k(e) {
   let {
     children: t
-  } = e, n = i.useRef({}), [a, o] = i.useState(null), l = j(a), p = i.useRef(null), [h, m] = i.useState(false), g = i.useRef("jack_o_lantern"), E = (0, u.Us)(), b = i.useCallback(e => {
+  } = e, n = i.useRef({}), [a, o] = i.useState(null), l = j(a), p = i.useRef(null), [h, m] = i.useState(false), g = i.useRef("jack_o_lantern"), E = (0, u.Us)(), y = i.useCallback(e => {
     if (!h) {
       let t = D(e);
       null != t && (g.current = t, m(true), o(null))
     }
-  }, [h]), y = i.useMemo(() => ({
-    triggerAnimation: b,
+  }, [h]), b = i.useMemo(() => ({
+    triggerAnimation: y,
     untriggerAnimation: () => {}
-  }), [b]), O = i.useCallback(e => {
+  }), [y]), O = i.useCallback(e => {
     o(e)
-  }, []), A = i.useCallback(e => {
-    "exit" === e && m(false)
   }, []), v = i.useCallback(e => {
+    "exit" === e && m(false)
+  }, []), A = i.useCallback(e => {
     p.current = e
   }, []);
   return (i.useEffect(() => {
     if ("confetti" === a) {
       if (null == p.current) return;
       let e = p.current.getBoundingClientRect(),
-        t = e.left - S,
-        r = e.top + I,
+        t = e.left - I,
+        r = e.top + S,
         i = n.current[g.current];
       null == i || i.fireConfetti(t, r)
     }
   }, [a]), E !== f.BRT.APP) ? t : (0, r.jsxs)(d.wE.Provider, {
-    value: y,
+    value: b,
     children: [t, Object.keys(P).map(e => {
       let t = P[e];
       return (0, r.jsx)(M, {
@@ -205,12 +205,12 @@ function k(e) {
       children: (0, r.jsx)("div", {
         className: _.k,
         children: (0, r.jsx)(s.tvC, {
-          animationRef: v,
+          animationRef: A,
           className: _.I,
           nextScene: l,
           sceneSegments: x,
           onScenePlay: O,
-          onSceneComplete: A,
+          onSceneComplete: v,
           importData: L,
           pauseWhileUnfocused: false
         })

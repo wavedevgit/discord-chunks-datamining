@@ -2,7 +2,7 @@
 /** chunk id: 465738, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk836836 = require("./836836.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,49 +38,49 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
-let A = function(e) {
+let v = function(e) {
   let {
     className: t,
     guild: n,
     roleStyle: a,
     roleFilter: o,
     onSelect: c,
-    onClose: y
-  } = e, A = (0, d.bG)([m.A], () => m.A.getSortedRoles(n.id)), v = (0, h.Ay)(n.id, null), S = i.useMemo(() => u()(A).filter(o).map(e => {
+    onClose: b
+  } = e, v = (0, d.bG)([m.A], () => m.A.getSortedRoles(n.id)), A = (0, h.Ay)(n.id, null), I = i.useMemo(() => u()(v).filter(o).map(e => {
     var t, n;
     return {
       id: e.id,
       value: e.id,
       label: e.name,
       leading: "dot" === a ? (0, r.jsx)(_.WYI, {
-        className: b.b8,
+        className: y.b8,
         color: null != (t = e.colorString) ? t : g.TpD,
-        colors: v ? e.colorStrings : null,
+        colors: A ? e.colorStrings : null,
         background: false,
         tooltip: false
       }) : (0, r.jsx)(_.RYH, {
-        className: b.kb,
+        className: y.kb,
         color: null != (n = e.colorString) ? n : g.TpD,
-        colors: v ? e.colorStrings : null
+        colors: A ? e.colorStrings : null
       })
     }
-  }).value(), [A, o, a, v]), I = i.useCallback((e, t) => "" === t.trim() ? e : e.filter(e => l()(t.toLowerCase(), e.label.toLowerCase())), []);
+  }).value(), [v, o, a, A]), S = i.useCallback((e, t) => "" === t.trim() ? e : e.filter(e => l()(t.toLowerCase(), e.label.toLowerCase())), []);
   return (0, r.jsx)(_.lGe, {
-    className: s()(b.kL, t),
+    className: s()(y.kL, t),
     "aria-label": E.intl.string(E.t.ljnBlo),
     children: (0, r.jsxs)(f.iS, {
       selectionMode: "single",
       value: true,
       onSelectionChange: e => {
-        null != e && (c(e), y())
+        null != e && (c(e), b())
       },
-      options: S,
-      customMatchSorter: I,
+      options: I,
+      customMatchSorter: S,
       children: [(0, r.jsx)(f.a3, {
         label: E.intl.string(E.t.ljnBlo),
         hideLabel: true,

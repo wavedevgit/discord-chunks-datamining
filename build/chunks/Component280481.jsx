@@ -1,7 +1,7 @@
 /** Chunk was on 96811 **/
 /** chunk id: 280481, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => o
+  A: () => c
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -11,22 +11,22 @@ var Chunk397927 = require("./397927.js"),
   Chunk213279 = require("./213279.jsx"),
   Chunk357281 = require("./357281.js");
 
-function o(e) {
+function c(e) {
   let {
     onClose: t
   } = e, {
     analyticsLocations: r
-  } = (0, i.Ay)(s.A.GO_LIVE_MODAL_V2);
-  return (0, n.jsx)(l.IzF, {
+  } = (0, s.Ay)(l.A.GO_LIVE_MODAL_V2);
+  return (0, n.jsx)(i.IzF, {
     options: [{
       name: "SD",
       value: "sd"
     }, {
       name: "HD",
       value: "hd",
-      className: c.T
+      className: o.T
     }],
-    className: c.g,
+    className: o.g,
     value: "sd",
     look: "pill",
     onChange: function(e) {

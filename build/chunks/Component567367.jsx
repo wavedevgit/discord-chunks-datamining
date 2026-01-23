@@ -2,7 +2,7 @@
 /** chunk id: 567367, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,24 +22,24 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function y(e) {
+function b(e) {
   let {
     context: t,
     application: n,
-    sectionName: y,
+    sectionName: b,
     primaryEntryPointCommand: O
-  } = e, A = i.useId(), v = i.useCallback(() => {
+  } = e, v = i.useId(), A = i.useCallback(() => {
     d.k(p.Se.ACTIVITY)
-  }, []), S = i.useCallback(() => {
-    f.A.shouldShowModal() && v()
-  }, [v]), {
-    submitting: I,
+  }, []), I = i.useCallback(() => {
+    f.A.shouldShowModal() && A()
+  }, [A]), {
+    submitting: S,
     wasSubmitting: T
   } = (0, m.A)({
     applicationId: n.id,
     context: t,
-    launchingComponentId: A,
-    onSubmissionComplete: v
+    launchingComponentId: v,
+    onSubmissionComplete: A
   }), [C, N] = i.useState(false), R = (0, o.Hq)({
     applicationId: n.id,
     context: t
@@ -51,12 +51,12 @@ function y(e) {
     context: t,
     application: n,
     location: l.Oh.APP_LAUNCHER_APPLICATION_VIEW,
-    sectionName: y,
+    sectionName: b,
     commandName: w,
     autoDismissOnClick: R === o.o6.LEAVE || (0, c.x)(n),
-    launchingComponentId: A,
-    submitting: null != T ? T : I,
-    onConfirmActivityLaunchChecksAlertOpen: S
+    launchingComponentId: v,
+    submitting: null != T ? T : S,
+    onConfirmActivityLaunchChecksAlertOpen: I
   }), {
     disabled: L,
     reason: j
@@ -80,7 +80,7 @@ function y(e) {
           button_action: p.F5.USE_APP_COMMAND
         })
       },
-      "aria-label": b.intl.formatToPlainString(b.t["XjP/R+"], {
+      "aria-label": y.intl.formatToPlainString(y.t["XjP/R+"], {
         buttonText: x,
         applicationName: n.name
       }),

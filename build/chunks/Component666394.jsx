@@ -2,7 +2,7 @@
 /** chunk id: 666394, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -79,27 +79,27 @@ function E(e) {
     recurrenceId: n,
     guildId: f,
     onRsvp: _
-  } = e, g = m(e, ["event", "recurrenceId", "guildId", "onRsvp"]), [E, b] = i.useState(l.yS.SERIES), y = (0, l.TS)(t.id, null), O = (null == y ? true : y.response) === c.Qi.INTERESTED ? c.Qi.UNINTERESTED : c.Qi.INTERESTED, A = O === c.Qi.INTERESTED ? u.intl.string(u.t.WtORed) : u.intl.string(u.t["8MPCVr"]), v = () => {
+  } = e, g = m(e, ["event", "recurrenceId", "guildId", "onRsvp"]), [E, y] = i.useState(l.yS.SERIES), b = (0, l.TS)(t.id, null), O = (null == b ? true : b.response) === c.Qi.INTERESTED ? c.Qi.UNINTERESTED : c.Qi.INTERESTED, v = O === c.Qi.INTERESTED ? u.intl.string(u.t.WtORed) : u.intl.string(u.t["8MPCVr"]), A = () => {
     E === l.yS.SERIES ? o.A.updateRsvp(t.id, null, f, O) : o.A.updateRsvp(t.id, n, f, O), null == _ || _(), g.onClose()
   };
   return (0, r.jsx)(s.VoidConfirmModal, h(p({}, g), {
-    header: A,
+    header: v,
     confirmText: u.intl.string(u.t.TyCVIq),
     cancelText: u.intl.string(u.t["ETE/oC"]),
-    onConfirm: v,
+    onConfirm: A,
     confirmButtonColor: a.$n.Colors.BRAND,
     children: (0, r.jsx)("div", {
       className: d.E,
       children: (0, r.jsx)(s.z6M, {
         value: E,
         options: (0, l.ko)(),
-        onChange: e => b(e)
+        onChange: e => y(e)
       })
     })
   }))
 }
 
-function b(e, t, n, i) {
+function y(e, t, n, i) {
   let a = (e, t) => {
     (0, s.mMO)(() => Promise.resolve(a => (0, r.jsx)(E, h(p({}, a), {
       event: e,

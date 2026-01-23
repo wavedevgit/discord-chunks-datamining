@@ -16,11 +16,11 @@ function u(e) {
   let {
     powerup: t
   } = e;
-  return t.skuId === a.FB ? (0, n.jsx)(l.EYj, {
+  return t.skuId === l.FB ? (0, n.jsx)(a.EYj, {
     className: d.C,
     variant: "text-sm/medium",
-    children: o.intl.format(i.default.fXE30d, {
-      helpDeskArticle: s.A.getArticleURL(c.MVz.GUILD_VANITY_URL)
+    children: c.intl.format(i.default.fXE30d, {
+      helpDeskArticle: s.A.getArticleURL(o.MVz.GUILD_VANITY_URL)
     })
   }) : null
 }

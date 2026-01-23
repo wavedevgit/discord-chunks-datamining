@@ -28,7 +28,7 @@ function f(e) {
     onClose: E
   } = e;
   return s.useEffect(() => {
-    o.default.track(h.HAw.GDM_BLOCKED_USER_WARNING_VIEWED, {
+    d.default.track(h.HAw.GDM_BLOCKED_USER_WARNING_VIEWED, {
       channel_id: N,
       warning_medium: m.W_.MODAL,
       blocked_user_ids: A,
@@ -46,44 +46,44 @@ function f(e) {
         channelId: t,
         blockedUserIds: n,
         ignoredUserIds: s
-      } = e, l = d.A.getChannel(t), o = n.length > 0, c = s.length > 0, u = [{
+      } = e, r = o.A.getChannel(t), d = n.length > 0, c = s.length > 0, u = [{
         icon: (0, i.jsx)("div", {
           className: x.Kk,
-          children: (0, i.jsx)(a.yr3, {})
+          children: (0, i.jsx)(l.yr3, {})
         }),
         text: g.intl.string(g.t.RIMw54),
         className: x.nM
       }, {
         icon: (0, i.jsx)("div", {
           className: x.Kk,
-          children: (0, i.jsx)(a.mir, {})
+          children: (0, i.jsx)(l.mir, {})
         }),
         text: g.intl.string(g.t.bejNWN),
         className: x.nM
       }];
-      if (o && c) {
+      if (d && c) {
         let e = [...n, ...s],
-          d = e.slice(0, 2);
+          o = e.slice(0, 2);
         u.unshift({
           icon: (0, i.jsx)("div", {
             className: x.Kk,
-            children: (0, i.jsx)(r.A, {
-              recipients: d,
-              size: a._3J.SIZE_32
+            children: (0, i.jsx)(a.A, {
+              recipients: o,
+              size: l._3J.SIZE_32
             })
           }),
-          text: (0, _.T)(d, e.length, null == l ? true : l.guild_id, t),
+          text: (0, _.T)(o, e.length, null == r ? true : r.guild_id, t),
           className: x.nM
         })
       } else {
-        let e = o ? [...n].slice(0, 2) : [...s].slice(0, 2),
-          a = o ? n.length : s.length;
+        let e = d ? [...n].slice(0, 2) : [...s].slice(0, 2),
+          l = d ? n.length : s.length;
         u.unshift({
           icon: (0, i.jsx)("div", {
             className: x.Kk,
-            children: (0, _.I)(e, null == l ? true : l.guild_id)
+            children: (0, _.I)(e, null == r ? true : r.guild_id)
           }),
-          text: (0, _.T)(e, a, null == l ? true : l.guild_id, t),
+          text: (0, _.T)(e, l, null == r ? true : r.guild_id, t),
           className: x.nM
         })
       }
@@ -94,7 +94,7 @@ function f(e) {
       ignoredUserIds: v
     }),
     onDismissAndStay: () => {
-      E(), (0, c.U)(N), o.default.track(h.HAw.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
+      E(), (0, c.U)(N), d.default.track(h.HAw.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
         action: m.Qi.CLICK_TO_STAY,
         channel_id: N,
         warning_medium: m.W_.MODAL,
@@ -103,7 +103,7 @@ function f(e) {
       })
     },
     onDismissAndLeave: () => {
-      E(), (0, c.U)(N), l.A.closePrivateChannel(N, true, true), o.default.track(h.HAw.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
+      E(), (0, c.U)(N), r.A.closePrivateChannel(N, true, true), d.default.track(h.HAw.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
         action: m.Qi.CLICK_TO_LEAVE,
         channel_id: N,
         warning_medium: m.W_.MODAL,

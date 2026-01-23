@@ -19,18 +19,18 @@ function c(e) {
       authorizationsFetchState: o.default.getFetchState(),
       applicationOAuth2Token: o.default.getNewestTokenForApplication(t)
     })),
-    u = (0, l.bG)([s.A], () => s.A.getApplication(t)),
-    d = (0, l.bG)([s.A], () => s.A.getApplication(null == u ? true : u.parentId));
+    u = (0, l.bG)([a.A], () => a.A.getApplication(t)),
+    d = (0, l.bG)([a.A], () => a.A.getApplication(null == u ? true : u.parentId));
   (0, r.useEffect)(() => {
     null != t && n === o.FetchState.NOT_FETCHED && i.A.fetch()
   }, [n, t]), (0, r.useEffect)(() => {
-    null != t && null == u && n === o.FetchState.FETCHED && a.Ay.fetchApplications([t], false)
+    null != t && null == u && n === o.FetchState.FETCHED && s.Ay.fetchApplications([t], false)
   }, [t, c, n, u]), (0, r.useEffect)(() => {
-    null != u && null != u.parentId && null == d && n === o.FetchState.FETCHED && a.Ay.fetchApplications([u.parentId], false)
+    null != u && null != u.parentId && null == d && n === o.FetchState.FETCHED && s.Ay.fetchApplications([u.parentId], false)
   }, [u, n, d]);
-  let f = null != u && (null == u.parentId || null != d);
+  let p = null != u && (null == u.parentId || null != d);
   return {
-    showLinkedLobbyApplicationLoadingIndicator: null != t && (n !== o.FetchState.FETCHED || null == u || !f),
-    requiredLinkedLobbyApplication: null == c && null != u && f ? null != d ? d : u : null
+    showLinkedLobbyApplicationLoadingIndicator: null != t && (n !== o.FetchState.FETCHED || null == u || !p),
+    requiredLinkedLobbyApplication: null == c && null != u && p ? null != d ? d : u : null
   }
 }

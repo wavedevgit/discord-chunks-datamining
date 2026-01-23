@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 325326, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  LF: () => f
+  LF: () => p
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -12,27 +12,27 @@ var Chunk64700 = require("./64700.js"),
   Chunk252431 = require("./252431.js"),
   Chunk810153 = require("./810153.js"),
   Chunk790782 = require("./790782.js");
-let f = () => {
+let p = () => {
   let {
     initialized: e,
     loading: t,
     items: n,
-    hasMore: f,
-    loadMore: p
+    hasMore: p,
+    loadMore: h
   } = (e => {
     let {
       isFocused: t,
       navigatedAway: n,
-      isDesktop: f,
-      withMentions: p = false,
-      initialPageSize: h
-    } = e, b = (0, l.bG)([u.A], () => u.A.shouldReload()), g = r.useRef(false), [m, A] = r.useState(false), {
+      isDesktop: p,
+      withMentions: h = false,
+      initialPageSize: f
+    } = e, g = (0, l.bG)([u.A], () => u.A.shouldReload()), m = r.useRef(false), [b, A] = r.useState(false), {
       initialized: y,
-      loading: O,
-      items: j,
-      hasMore: v,
-      cursor: x,
-      errored: E
+      loading: _,
+      items: O,
+      hasMore: j,
+      cursor: v,
+      errored: x
     } = (0, l.cf)([c.A], () => ({
       initialized: c.A.initialized,
       loading: c.A.loading,
@@ -41,49 +41,49 @@ let f = () => {
       cursor: c.A.cursor,
       errored: c.A.errored
     })), {
-      roleFilter: _,
+      roleFilter: E,
       everyoneFilter: C
-    } = (0, l.cf)([s.Ay], () => ({
-      everyoneFilter: s.Ay.everyoneFilter,
-      roleFilter: s.Ay.roleFilter
+    } = (0, l.cf)([a.Ay], () => ({
+      everyoneFilter: a.Ay.everyoneFilter,
+      roleFilter: a.Ay.roleFilter
     }));
     r.useEffect(() => ((0, o.BZ)(true), () => (0, o.BZ)(false)), []), r.useEffect(() => {
       y && t && (0, i.d_)(d.P.NOTIFICATION_CENTER)
     }, [t, y]);
-    let S = (0, a.A)();
+    let S = (0, s.A)();
     r.useEffect(() => () => {
-      f ? !S() && (E || j.length > 100) && (0, o.S3)() : n && j.length > 100 && (0, o.S3)()
-    }, [n, j, f, S, E]), r.useEffect(() => {
-      let e = b && t;
+      p ? !S() && (x || O.length > 100) && (0, o.S3)() : n && O.length > 100 && (0, o.S3)()
+    }, [n, O, p, S, x]), r.useEffect(() => {
+      let e = g && t;
       (!y || e) && (0, o.ni)({
-        limit: null != h ? h : p ? 8 : 20,
-        with_mentions: p,
-        roles_filter: _,
+        limit: null != f ? f : h ? 8 : 20,
+        with_mentions: h,
+        roles_filter: E,
         everyone_filter: C
       })
-    }, [y, b, t, p, _, C, h]);
+    }, [y, g, t, h, E, C, f]);
     let I = r.useCallback(async e => {
-      !g.current && y && v && null != x && (e || !E) && (g.current = true, A(true), await (0, o.ni)({
-        after: x,
-        with_mentions: p,
-        roles_filter: _,
+      !m.current && y && j && null != v && (e || !x) && (m.current = true, A(true), await (0, o.ni)({
+        after: v,
+        with_mentions: h,
+        roles_filter: E,
         everyone_filter: C,
-        limit: p ? 8 : 20
+        limit: h ? 8 : 20
       }, () => {
-        g.current = false
+        m.current = false
       }), A(false))
-    }, [y, v, x, E, p, _, C]);
+    }, [y, j, v, x, h, E, C]);
     return {
       initialized: y,
-      loading: O,
-      items: j,
-      hasMore: v,
+      loading: _,
+      items: O,
+      hasMore: j,
       loadMore: I,
-      loadingMore: m,
+      loadingMore: b,
       setReadNotifItemToAcked: e => {
         e.acked || (e.acked = true)
       },
-      errored: E
+      errored: x
     }
   })({
     isFocused: true,
@@ -93,7 +93,7 @@ let f = () => {
     initialized: e,
     loading: t,
     items: n.filter(e => "notification-center-item" === e.kind),
-    hasMore: f,
-    loadMore: p
+    hasMore: p,
+    loadMore: h
   }
 }

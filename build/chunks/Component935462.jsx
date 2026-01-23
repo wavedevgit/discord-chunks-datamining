@@ -39,7 +39,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,13 +63,13 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -110,12 +110,12 @@ function w(e) {
     role: f = "dialog",
     className: _,
     fullscreenOnMobile: m = true,
-    hideShadow: b = false,
+    hideShadow: y = false,
     onAnimationEnd: O = E.tE,
-    returnRef: v,
+    returnRef: A,
     animation: T = "default",
     parentComponent: C
-  } = e, R = I(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation", "parentComponent"]), w = n === g.ip.ENTERING || n === g.ip.ENTERED;
+  } = e, R = S(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation", "parentComponent"]), w = n === g.ip.ENTERING || n === g.ip.ENTERED;
   i.useContext(h.A)({
     type: l.ImpressionTypes.PAGE,
     name: l.ImpressionNames.MODAL_ROOT_LEGACY,
@@ -140,17 +140,17 @@ function w(e) {
   }), [k, j]);
   return (0, r.jsx)(g.CP.Provider, {
     value: U,
-    children: (0, r.jsx)(p.l, S(A({
-      className: y.Gg,
+    children: (0, r.jsx)(p.l, I(v({
+      className: b.Gg,
       role: f,
-      returnRef: v,
+      returnRef: A,
       impressionType: l.ImpressionTypes.MODAL,
       "aria-labelledby": L ? true : U.headerId
     }, R), {
       children: (0, r.jsx)(o.animated.div, {
-        className: s()(_, y.zr, N[u], {
-          [y.z]: m,
-          [y.vl]: !b
+        className: s()(_, b.zr, N[u], {
+          [b.z]: m,
+          [b.vl]: !y
         }),
         ref: x,
         style: D,
@@ -176,8 +176,8 @@ function P(e) {
     justify: null != (n = e.justify) ? n : m.A.Justify.START,
     align: null != (a = e.align) ? a : m.A.Align.CENTER,
     wrap: null != (o = e.wrap) ? o : m.A.Wrap.NO_WRAP,
-    className: s()(y.wx, e.className, {
-      [y.me]: null == (l = e.separator) || l
+    className: s()(b.wx, e.className, {
+      [b.me]: null == (l = e.separator) || l
     }),
     id: u ? true : c,
     children: e.children
@@ -201,10 +201,10 @@ function x(e) {
     children: n,
     scrollerRef: i,
     scrollbarType: a
-  } = e, o = I(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = D(a);
-  return (0, r.jsx)(l, S(A({
+  } = e, o = S(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = D(a);
+  return (0, r.jsx)(l, I(v({
     "data-migration-pending": true,
-    className: s()(y.Qs, t),
+    className: s()(b.Qs, t),
     ref: i
   }, o), {
     children: (0, r.jsx)(_.Fmo, {
@@ -222,8 +222,8 @@ function L(e) {
     justify: null != (n = e.justify) ? n : m.A.Justify.START,
     align: null != (i = e.align) ? i : m.A.Align.STRETCH,
     wrap: null != (a = e.wrap) ? a : m.A.Wrap.NO_WRAP,
-    className: s()(y.qr, e.className, {
-      [y.h0]: null == (o = e.separator) || o
+    className: s()(b.qr, e.className, {
+      [b.h0]: null == (o = e.separator) || o
     }),
     children: (0, r.jsx)(_.Fmo, {
       children: e.children
@@ -235,21 +235,21 @@ function j(e) {
   return (0, r.jsx)(f.$n, {
     "data-migration-pending": true,
     focusProps: e.focusProps,
-    "aria-label": b.intl.string(b.t.cpT0Cq),
+    "aria-label": y.intl.string(y.t.cpT0Cq),
     look: f.$n.Looks.BLANK,
     size: f.$n.Sizes.NONE,
     onClick: e.onClick,
     innerClassName: s()(e.innerClassName, {
-      [y.Xk]: e.withCircleBackground
+      [b.Xk]: e.withCircleBackground
     }),
     className: s()(e.className, {
-      [y.zB]: e.hideOnFullscreen,
-      [y.VN]: !e.withCircleBackground
+      [b.zB]: e.hideOnFullscreen,
+      [b.VN]: !e.withCircleBackground
     }),
     children: (0, r.jsx)(u.P, {
       size: "md",
       color: "currentColor",
-      className: s()(e.innerClassName, y.ut)
+      className: s()(e.innerClassName, b.ut)
     })
   })
 }
@@ -258,8 +258,8 @@ function M(e) {
   let {
     className: t,
     scrollerRef: n
-  } = e, i = I(e, ["className", "scrollerRef"]);
-  return (0, r.jsx)(d.OZj, A({
+  } = e, i = S(e, ["className", "scrollerRef"]);
+  return (0, r.jsx)(d.OZj, v({
     className: t,
     ref: n
   }, i))

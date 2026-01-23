@@ -29,46 +29,46 @@ function h(e) {
   } = (0, u.E)(), E = (0, f.A)({
     applicationId: null == n ? true : n.application_id,
     onClose: m
-  }), b = (0, c.l)({
+  }), y = (0, c.l)({
     activity: null != n ? n : true,
     embeddedActivity: true,
     user: t,
     onClose: m
-  }), y = (0, l.d)(null == n ? true : n.application_id);
-  if (null == b && null != n && (0, o.A)(n)) return (0, r.jsx)(d.FD, {
+  }), b = (0, l.d)(null == n ? true : n.application_id);
+  if (null == y && null != n && (0, o.A)(n)) return (0, r.jsx)(d.FD, {
     icon: a.k9F,
     text: _.intl.string(_.t.RscU7I),
     fullWidth: g !== p.d.MODAL_V2,
     onClick: e => {
-      e.stopPropagation(), null != y ? s.A.launch({
-        applicationId: y
+      e.stopPropagation(), null != b ? s.A.launch({
+        applicationId: b
       }) : (null == h || h({
         action: "PRESS_PLAY_BUTTON"
       }), E())
     }
   });
-  if (null == b) return null;
+  if (null == y) return null;
   let {
     isJoining: O,
-    handleJoinRequest: A,
-    buttonCTA: v,
-    tooltip: S,
-    isEnabled: I,
+    handleJoinRequest: v,
+    buttonCTA: A,
+    tooltip: I,
+    isEnabled: S,
     isEmbedded: T
-  } = b;
+  } = y;
   return (0, r.jsx)(i.m, {
-    text: S,
-    asContainer: !I,
+    text: I,
+    asContainer: !S,
     children: (0, r.jsx)(d.FD, {
       icon: T ? a.Ihz : a._xR,
-      text: v,
-      disabled: !I,
+      text: A,
+      disabled: !S,
       loading: O,
       fullWidth: g !== p.d.MODAL_V2,
       onClick: e => {
         e.stopPropagation(), null == h || h({
           action: T ? "PRESS_JOIN_BUTTON" : "PRESS_ASK_TO_JOIN_BUTTON"
-        }), A()
+        }), v()
       }
     })
   })

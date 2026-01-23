@@ -47,12 +47,12 @@ function g(e) {
     channelId: d
   } = e, p = i.useRef(c), _ = (0, s.l)({
     editorHeight: r
-  }), g = (0, u.A)(), E = (0, a.bG)([l.Ay, o.default], () => l.Ay.isComboing(o.default.getId(), d)), b = null != (t = null == _ ? true : _.left) ? t : 0, y = (null != (n = null == _ ? true : _.top) ? n : 0) - h, O = 0 === c.length, A = i.useMemo(() => Math.random() < m, [O]);
+  }), g = (0, u.A)(), E = (0, a.bG)([l.Ay, o.default], () => l.Ay.isComboing(o.default.getId(), d)), y = null != (t = null == _ ? true : _.left) ? t : 0, b = (null != (n = null == _ ? true : _.top) ? n : 0) - h, O = 0 === c.length, v = i.useMemo(() => Math.random() < m, [O]);
   return i.useEffect(() => {
-    0 !== c.length && c !== p.current && E && (g.fire(b, y, A ? {
+    0 !== c.length && c !== p.current && E && (g.fire(y, b, v ? {
       sprite: f.dR
     } : null), p.current = c)
-  }, [c, E, b, y, A, g]), null
+  }, [c, E, y, b, v, g]), null
 }
 
 function E(e) {

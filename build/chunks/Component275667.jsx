@@ -30,7 +30,7 @@ function u(e) {
 function d(e) {
   let {
     onClick: t
-  } = e, n = a.tz.useSetting(), o = (0, l.bG)([s.A], () => s.A.getStatus());
+  } = e, n = s.tz.useSetting(), o = (0, l.bG)([a.A], () => a.A.getStatus());
   return __OVERLAY__ || n && o !== i.clD.INVISIBLE ? null : (0, r.jsx)(u, {
     onClick: t
   })

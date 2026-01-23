@@ -4,8 +4,8 @@
 require.d(exports, {
   D1: () => g,
   Eo: () => E,
-  Hk: () => y,
-  R4: () => b,
+  Hk: () => b,
+  R4: () => y,
   Uz: () => m,
   _V: () => h,
   d1: () => u,
@@ -96,7 +96,7 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   return null == e ? {
     oneofKind: true
   } : u(e) ? {
@@ -116,7 +116,7 @@ function b(e) {
   }
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e || true === e.oneofKind) return null;
   switch (e.oneofKind) {
     case "customAsset":

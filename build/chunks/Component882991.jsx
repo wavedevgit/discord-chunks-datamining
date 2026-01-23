@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 882991, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -22,8 +22,8 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let f = "STAGE_INVITED_TO_SPEAK_MODAL";
-class h extends Chunk272355.A {
+let h = "STAGE_INVITED_TO_SPEAK_MODAL";
+class g extends Chunk272355.A {
   _initialize() {
     l.h.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
   }
@@ -35,18 +35,18 @@ class h extends Chunk272355.A {
       var t;
       let {
         voiceStates: l
-      } = e, a = s.default.getId(), h = null == (t = c.A.getSession()) ? true : t.sessionId, A = l.find(e => e.userId === a && e.sessionId === h);
-      if (null == A) return;
-      let g = A.channelId;
-      if (null == g) {
-        (0, i.kBI)(f) && (0, i.OoC)(f);
+      } = e, a = s.default.getId(), g = null == (t = c.A.getSession()) ? true : t.sessionId, f = l.find(e => e.userId === a && e.sessionId === g);
+      if (null == f) return;
+      let m = f.channelId;
+      if (null == m) {
+        (0, i.kBI)(h) && (0, i.OoC)(h);
         return
       }
-      let m = o.A.getChannel(g);
-      if (!(null == m ? true : m.isGuildStageVoice())) return;
-      let b = (0, u.eY)(A) === u.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
-      if (null != m && b) {
-        if ((0, i.kBI)(f)) return;
+      let A = o.A.getChannel(m);
+      if (!(null == A ? true : A.isGuildStageVoice())) return;
+      let _ = (0, u.eY)(f) === u.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+      if (null != A && _) {
+        if ((0, i.kBI)(h)) return;
         (0, i.mMO)(async () => {
           let {
             default: e
@@ -65,7 +65,7 @@ class h extends Chunk272355.A {
               }
               return e
             }({}, t), i = i = {
-              channel: m
+              channel: A
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
@@ -78,11 +78,11 @@ class h extends Chunk272355.A {
             }), n))
           }
         }, {
-          modalKey: f,
+          modalKey: h,
           onCloseRequest: d.FXj
         })
       }
     })
   }
 }
-let A = new h
+let f = new g

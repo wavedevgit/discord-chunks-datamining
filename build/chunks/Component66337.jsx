@@ -1,7 +1,7 @@
 /** Chunk was on 36456 **/
-/** chunk id: 66337, original params: n,e,t (module,exports,require) **/
+/** chunk id: 66337, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => _
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,36 +14,36 @@ var Chunk397927 = require("./397927.js"),
   Chunk465429 = require("./465429.js");
 
 function C() {
-  return (0, i.jsx)("div", {
-    className: l.__invalid_getCrunchyrollApp,
-    children: (0, i.jsx)("div", {
-      className: l.__invalid_getCrunchyrollAppBody,
-      children: (0, i.jsx)(o.Text, {
+  return (0, o.jsx)("div", {
+    className: d.__invalid_getCrunchyrollApp,
+    children: (0, o.jsx)("div", {
+      className: d.__invalid_getCrunchyrollAppBody,
+      children: (0, o.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: (0, i.jsx)(o.MzZ, {
-          href: r.A.getArticleURL(a.MVz.CRUNCHYROLL_CONNECTION),
-          children: d.intl.string(d.t.hvVgAZ)
+        children: (0, o.jsx)(i.MzZ, {
+          href: r.A.getArticleURL(l.MVz.CRUNCHYROLL_CONNECTION),
+          children: a.intl.string(a.t.hvVgAZ)
         })
       })
     })
   })
 }
 
-function b(n) {
+function _(e) {
   let {
-    onClose: e
-  } = n;
-  return (0, i.jsx)(s.b, {
-    img: (0, i.jsx)("img", {
+    onClose: n
+  } = e;
+  return (0, o.jsx)(s.b, {
+    img: (0, o.jsx)("img", {
       src: c,
       width: "224",
       height: "104",
       alt: ""
     }),
-    title: d.intl.string(d.t.Fnvxvk),
-    body: d.intl.string(d.t.YwXceg),
-    content: (0, i.jsx)(C, {}),
-    onClose: e
+    title: a.intl.string(a.t.Fnvxvk),
+    body: a.intl.string(a.t.YwXceg),
+    content: (0, o.jsx)(C, {}),
+    onClose: n
   })
 }

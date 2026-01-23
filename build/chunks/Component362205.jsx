@@ -8,7 +8,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk503698 = require("./503698.js"),
   a = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
-  i = require.n(Chunk284009),
+  c = require.n(Chunk284009),
   Chunk108531 = require("./108531.js"),
   Chunk837381 = require("./837381.jsx"),
   Chunk397927 = require("./397927.js"),
@@ -24,14 +24,14 @@ function g(e) {
     active: l
   } = e, {
     useTitle: o,
-    useSubnavLabel: c,
+    useSubnavLabel: i,
     key: s
-  } = t, b = null == o ? true : o(), y = null == c ? true : c(), d = null != y ? y : b;
-  return i()(null != d, "[SettingsSubnavigationCategory] Category must have a title"), (0, n.jsx)(u.tG, {
+  } = t, f = null == o ? true : o(), b = null == i ? true : i(), d = null != b ? b : f;
+  return c()(null != d, "[SettingsSubnavigationCategory] Category must have a title"), (0, n.jsx)(u.tG, {
     id: s,
     children: e => {
       var t, o;
-      return (0, n.jsx)(f.DUT, (t = function(e) {
+      return (0, n.jsx)(y.DUT, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -72,24 +72,24 @@ function g(e) {
 function O(e) {
   let {
     categories: t
-  } = e, r = y.A.useField("currentCategoryKey");
-  (0, b.Ay)(() => {
-    t.some(e => e.key === r) || y.A.setState({
+  } = e, r = b.A.useField("currentCategoryKey");
+  (0, f.Ay)(() => {
+    t.some(e => e.key === r) || b.A.setState({
       currentCategoryKey: t[0].key
     })
   });
   let o = l.useMemo(() => Math.max(t.findIndex(e => e.key === r), 0), [t, r]),
     {
       thumbRef: a,
-      trackRef: c,
-      thumbAnchorRef: i,
+      trackRef: i,
+      thumbAnchorRef: c,
       springs: u
     } = function(e) {
       let t = l.useRef(null),
         r = l.useRef(null),
         n = l.useRef(null),
         o = l.useRef(true),
-        [a, c] = (0, f.zhh)(() => ({
+        [a, i] = (0, y.zhh)(() => ({
           y: 0,
           height: 0,
           config: {
@@ -105,11 +105,11 @@ function O(e) {
           o.current = false, a.y.set(l.y - e.y), a.height.set(l.height);
           return
         }
-        c({
+        i({
           y: l.y - e.y,
           height: l.height
         })
-      }, [e, c, a.y, a.height]), {
+      }, [e, i, a.y, a.height]), {
         thumbRef: r,
         trackRef: t,
         thumbAnchorRef: n,
@@ -126,7 +126,7 @@ function O(e) {
     children: [(0, n.jsx)("div", {
       className: p.u4,
       "aria-hidden": "true",
-      ref: c,
+      ref: i,
       children: (0, n.jsx)(s.animated.div, {
         className: p.FF,
         style: u,
@@ -135,11 +135,11 @@ function O(e) {
     }), (0, n.jsx)("div", {
       className: p.gu,
       "aria-hidden": "true",
-      ref: i
+      ref: c
     }), t.map(e => (0, n.jsx)(g, {
       onClick: () => {
         var t;
-        return t = e.key, void y.A.setState({
+        return t = e.key, void b.A.setState({
           requestedTargetKey: t,
           showNavigationMobile: false
         })

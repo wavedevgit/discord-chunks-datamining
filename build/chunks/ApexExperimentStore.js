@@ -72,11 +72,11 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  if ("object" !== b(e) || null === e) return e;
+  if ("object" !== y(e) || null === e) return e;
   var n = e[Symbol.toPrimitive];
   if (true !== n) {
     var r = n.call(e, t || "default");
-    if ("object" !== b(r)) return r;
+    if ("object" !== y(r)) return r;
     throw TypeError("@@toPrimitive must return a primitive value.")
   }
   return ("string" === t ? String : Number)(e)
@@ -84,23 +84,23 @@ function g(e, t) {
 
 function E(e) {
   var t = g(e, "string");
-  return "symbol" === b(t) ? t : String(t)
+  return "symbol" === y(t) ? t : String(t)
 }
 
-function b(e) {
+function y(e) {
   return e && "u" > typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
-let y = new Chunk118356.Vy("ApexExperimentStore");
+let b = new Chunk118356.Vy("ApexExperimentStore");
 (null == window.TextEncoder || null == window.TextDecoder) && require("./283346.js");
 let O = [Chunk445397.ni.User, Chunk445397.ni.Installation],
-  A = {
+  v = {
     user: {},
     guild: {},
     installation: {}
   },
-  v = {},
-  S = {},
+  A = {},
   I = {},
+  S = {},
   T = {},
   C = {},
   N = new Set,
@@ -118,7 +118,7 @@ function M(e) {
 }
 class k extends(r = Chunk311907.Ay.PersistedStore) {
   loadStoredState(e, t) {
-    for (let n in null != e && e.version === L ? (S = e.clientOverrides, A = e.evaluatedExperiments) : null != e && 2 === e.version && (S = e.clientOverrides, A = _(f({}, e.evaluatedExperiments), {
+    for (let n in null != e && e.version === L ? (I = e.clientOverrides, v = e.evaluatedExperiments) : null != e && 2 === e.version && (I = e.clientOverrides, v = _(f({}, e.evaluatedExperiments), {
         installation: {}
       })), T = {}, t) {
       let e = M(n),
@@ -135,8 +135,8 @@ class k extends(r = Chunk311907.Ay.PersistedStore) {
   getState() {
     return {
       version: L,
-      evaluatedExperiments: A,
-      clientOverrides: S
+      evaluatedExperiments: v,
+      clientOverrides: I
     }
   }
   setExperimentAssignments(e) {
@@ -145,7 +145,7 @@ class k extends(r = Chunk311907.Ay.PersistedStore) {
       let n = c.ag[t],
         r = e.assignments[t];
       if (null == r || null == n) continue;
-      let i = A[n];
+      let i = v[n];
       for (let e in r) {
         R.add(e);
         let {
@@ -168,7 +168,7 @@ class k extends(r = Chunk311907.Ay.PersistedStore) {
     returntrue
   }
   createOverride(e, t) {
-    S = _(f({}, S), {
+    I = _(f({}, I), {
       [e]: {
         hashedName: M(e),
         variantId: t,
@@ -180,11 +180,11 @@ class k extends(r = Chunk311907.Ay.PersistedStore) {
   deleteOverride(e) {
     let {
       [e]: t
-    } = S;
-    S = h(S, [E(e)])
+    } = I;
+    I = h(I, [E(e)])
   }
   createSessionOverride(e, t) {
-    I = _(f({}, I), {
+    S = _(f({}, S), {
       [e]: {
         hashedName: M(e),
         variantId: t,
@@ -196,8 +196,8 @@ class k extends(r = Chunk311907.Ay.PersistedStore) {
   deleteSessionOverride(e) {
     let {
       [e]: t
-    } = I;
-    I = h(I, [E(e)])
+    } = S;
+    S = h(S, [E(e)])
   }
   setExperimentsMetadata(e) {
     C = f({}, C, Object.fromEntries(e.map(e => [e.name, e])))
@@ -206,25 +206,25 @@ class k extends(r = Chunk311907.Ay.PersistedStore) {
     return C
   }
   getClientOverrides() {
-    return S
-  }
-  getSessionOverrides() {
     return I
   }
+  getSessionOverrides() {
+    return S
+  }
   getExperimentClientOverride(e) {
-    return S[e]
+    return I[e]
   }
   getExperimentSessionOverride(e) {
-    return I[e]
+    return S[e]
   }
   handleLogout(e) {
     e || (this.clearUserServerAssignments(), this.clearSessionOverrides()), l.w.remove(w), this.clearAllTrackedExposures()
   }
   registerExperiment(e) {
-    v[e.name] = e, null != T[e.name] && this.trackExposureSuppression(e.name, "cookie_override")
+    A[e.name] = e, null != T[e.name] && this.trackExposureSuppression(e.name, "cookie_override")
   }
   getRegisteredExperiments() {
-    return v
+    return A
   }
   getAssignment(e, t, n) {
     let r = this.getOverride(n);
@@ -232,17 +232,17 @@ class k extends(r = Chunk311907.Ay.PersistedStore) {
   }
   getServerAssignment(e, t, n) {
     let r = M(n),
-      i = A[e][t];
+      i = v[e][t];
     if (null != i) return i.assignments[r]
   }
   getEvaluation(e, t) {
     var n;
-    return null == (n = A[e][t]) ? true : n.evaluationId
+    return null == (n = v[e][t]) ? true : n.evaluationId
   }
   getEvaluationAndAssignment(e, t, n) {
     let r = this.getOverride(n);
     if (null != r) return [true, r];
-    let i = A[e][t];
+    let i = v[e][t];
     return null == i ? [true, true] : [i.evaluationId, i.assignments[M(n)]]
   }
   trackExperimentExposure(e, t, n, r, i, a, s) {
@@ -291,7 +291,7 @@ class k extends(r = Chunk311907.Ay.PersistedStore) {
       }
   }
   trackExposureSuppression(e, t) {
-    let n = v[e];
+    let n = A[e];
     if (null != n) {
       if ("user" === n.kind) this.track(u.sE.EXPERIMENT_USER_EXPOSURE_SUPPRESSED, {
         experiment: e,
@@ -301,7 +301,7 @@ class k extends(r = Chunk311907.Ay.PersistedStore) {
         flush: true
       });
       else if ("installation" === n.kind) {
-        let r = Object.keys(A.installation)[0];
+        let r = Object.keys(v.installation)[0];
         null != r && this.track(u.sE.EXPERIMENT_INSTALLATION_EXPOSURE_SUPPRESSED, {
           experiment: e,
           unit_type: n.kind,
@@ -314,10 +314,10 @@ class k extends(r = Chunk311907.Ay.PersistedStore) {
     }
   }
   evaluationIds(e) {
-    return Object.values(A[e]).map(e => e.evaluationId).filter(e => null != e)
+    return Object.values(v[e]).map(e => e.evaluationId).filter(e => null != e)
   }
   evaluationsWithUnitIds(e) {
-    return Object.entries(A[e]).filter(e => {
+    return Object.entries(v[e]).filter(e => {
       let [t, n] = e;
       return null != n.evaluationId
     }).map(e => {
@@ -348,7 +348,7 @@ class k extends(r = Chunk311907.Ay.PersistedStore) {
         exposures: e
       })
     } catch (e) {
-      y.error("Error saving tracked exposures", e), this.track(u.sE.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
+      b.error("Error saving tracked exposures", e), this.track(u.sE.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
         module: this.surface,
         call: "ApexExperimentStore.saveTrackedExposures"
       }, {
@@ -360,24 +360,24 @@ class k extends(r = Chunk311907.Ay.PersistedStore) {
     this.clearAllServerAssignments(), this.clearAllOverrides(), this.clearAllTrackedExposures(), N.clear(), R.clear()
   }
   clearAllServerAssignments() {
-    A = {
+    v = {
       user: {},
       guild: {},
       installation: {}
     }
   }
   clearUserServerAssignments() {
-    A = {
+    v = {
       user: {},
       guild: {},
-      installation: A.installation
+      installation: v.installation
     }
   }
   clearAllOverrides() {
-    S = {}, I = {}, T = {}
+    I = {}, S = {}, T = {}
   }
   clearSessionOverrides() {
-    I = {}
+    S = {}
   }
   clearAllTrackedExposures() {
     x = {}
@@ -402,7 +402,7 @@ class k extends(r = Chunk311907.Ay.PersistedStore) {
   }
   getOverride(e) {
     var t, n;
-    return null != (t = null != (n = I[e]) ? n : S[e]) ? t : T[e]
+    return null != (t = null != (n = S[e]) ? n : I[e]) ? t : T[e]
   }
   constructor(...e) {
     super(...e), d(this, "track", () => Promise.resolve()), d(this, "surface", "unset")

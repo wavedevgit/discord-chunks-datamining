@@ -26,7 +26,7 @@ function E(e) {
     onOpen: t,
     onClose: n,
     "data-jump-section": l
-  } = e, E = (0, s.bG)([A.default], () => A.default.getCurrentUser()), O = i.useRef(null), y = (0, s.bG)([h.Ay], () => (null == E ? true : E.id) != null && h.Ay.getMentionCount(E.id, m.P.NOTIFICATION_CENTER) > 0), {
+  } = e, E = (0, s.bG)([f.default], () => f.default.getCurrentUser()), O = i.useRef(null), y = (0, s.bG)([g.Ay], () => (null == E ? true : E.id) != null && g.Ay.getMentionCount(E.id, A.P.NOTIFICATION_CENTER) > 0), {
     titlebarIconSize: I,
     titlebarHoverHighlight: v
   } = (0, p.p)({
@@ -35,7 +35,7 @@ function E(e) {
     size: S,
     color: "currentColor"
   }), [S]);
-  return (0, r.jsx)(g.C, {
+  return (0, r.jsx)(m.C, {
     targetElementRef: O,
     onOpen: t,
     onClose: n,
@@ -50,7 +50,7 @@ function E(e) {
         children: [(0, r.jsx)(c.m_, {
           targetElementRef: O,
           shouldShow: !t,
-          text: b.intl.string(b.t.GSmTKJ),
+          text: _.intl.string(_.t.GSmTKJ),
           children: (0, r.jsx)(u.DUT, (s = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -73,9 +73,9 @@ function E(e) {
             innerRef: O,
             onClick: e,
             "data-jump-section": l,
-            "aria-label": b.intl.string(b.t.GSmTKJ),
-            className: a()(_.vk, {
-              [_.l9]: v
+            "aria-label": _.intl.string(_.t.GSmTKJ),
+            className: a()(b.vk, {
+              [b.l9]: v
             }),
             children: y || i ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(d.Ay, {
@@ -84,8 +84,8 @@ function E(e) {
                 width: o.E[S],
                 children: C
               }), (0, r.jsx)("span", {
-                className: a()(_.qS, {
-                  [_.mf]: "refresh_sm" === S
+                className: a()(b.qS, {
+                  [b.mf]: "refresh_sm" === S
                 })
               })]
             }) : C
@@ -99,7 +99,7 @@ function E(e) {
           })(Object(p)).forEach(function(e) {
             Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(p, e))
           }), s))
-        }), (0, r.jsx)(f.v, {
+        }), (0, r.jsx)(h.v, {
           location: "inbox-button",
           targetElementRef: O
         })]

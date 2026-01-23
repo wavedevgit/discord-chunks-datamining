@@ -2,7 +2,7 @@
 /** chunk id: 768985, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  j: () => y
+  j: () => b
 });
 var Chunk64700 = require("./64700.js"),
   Chunk731738 = require("./731738.js"),
@@ -22,34 +22,34 @@ var Chunk64700 = require("./64700.js"),
   Chunk652215 = require("./652215.js"),
   Chunk204925 = require("./204925.js");
 
-function y(e) {
+function b(e) {
   let {
     location: t,
     onMountEffect: n
-  } = e, y = (0, h.A)(), O = (0, m.W1)(), {
-    familyCenterInitialized: A,
-    isLoading: v
+  } = e, b = (0, h.A)(), O = (0, m.W1)(), {
+    familyCenterInitialized: v,
+    isLoading: A
   } = (0, a.cf)([f.A], () => ({
     familyCenterInitialized: f.A.getIsInitialized(),
     isLoading: f.A.isLoading()
-  })), S = (0, _.k)(), {
-    selectedTab: I,
+  })), I = (0, _.k)(), {
+    selectedTab: S,
     handleTabChange: T
-  } = (0, p.A)(), C = u.default.getCurrentUser(), N = null != y, R = A && null != C && !N;
+  } = (0, p.A)(), C = u.default.getCurrentUser(), N = null != b, R = v && null != C && !N;
   (0, s.Ay)(() => {
     (0, c.d)("family-center"), null != n && n()
   });
   let w = {
-      isConsideredAdult: y,
+      isConsideredAdult: b,
       numOfAcceptedRequests: O,
-      selectedTab: I,
-      selectedTeenId: S
+      selectedTab: S,
+      selectedTeenId: I
     },
     P = r.useRef(w);
   return r.useEffect(() => {
     P.current = w
   }), r.useEffect(() => {
-    if (A && N) {
+    if (v && N) {
       let {
         isConsideredAdult: e,
         numOfAcceptedRequests: n,
@@ -66,11 +66,11 @@ function y(e) {
         name: i.K.FAMILY_CENTER_VIEW
       })
     }
-  }, [A, N, t]), r.useEffect(() => {
-    R && (0, o.yO)(b.w_.FAMILY_CENTER)
+  }, [v, N, t]), r.useEffect(() => {
+    R && (0, o.yO)(y.w_.FAMILY_CENTER)
   }, [R]), {
-    isLoading: v,
-    selectedTab: I,
+    isLoading: A,
+    selectedTab: S,
     handleTabChange: T,
     showAgeGateModal: R
   }

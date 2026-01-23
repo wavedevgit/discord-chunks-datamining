@@ -63,21 +63,21 @@ function h(e) {
     action: m,
     dontCloseOnActionIfHoldingShiftKey: g,
     dontCloseOnAction: E,
-    onClose: b
-  } = e, y = i.useRef(null);
+    onClose: y
+  } = e, b = i.useRef(null);
   i.useEffect(() => {
-    a && (0, l.Y)(y)
+    a && (0, l.Y)(b)
   }, [a]);
   let O = i.useCallback(e => {
       if (null == m) returnfalse;
-      e.shiftKey && g || E || b(), e.persist(), requestAnimationFrame(() => m(e))
-    }, [m, b, g, E]),
-    A = p ? s()(u.item, c.jV[n], {
+      e.shiftKey && g || E || y(), e.persist(), requestAnimationFrame(() => m(e))
+    }, [m, y, g, E]),
+    v = p ? s()(u.item, c.jV[n], {
       [u.focused]: a
     }) : u.customItem;
   return (0, r.jsx)(o.DUT, _(f({
-    innerRef: y,
-    className: A,
+    innerRef: b,
+    className: v,
     onClick: d ? true : O,
     "aria-disabled": d
   }, h), {

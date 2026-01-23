@@ -237,14 +237,14 @@ class g extends Chunk972347.A {
       let {
         previous: g,
         current: E,
-        currentTimestampMs: b,
-        previousTimestampMs: y,
+        currentTimestampMs: y,
+        previousTimestampMs: b,
         numRateSamples: O
       } = m;
-      if (true !== y && b > y) {
+      if (true !== b && y > b) {
         var t, n, r, i, a, s, o, l, c, u, d, f, p, _;
-        let A = b - y,
-          v = {
+        let v = y - b,
+          A = {
             userId: h,
             silent: null != (t = E.silent) ? t : 0 - (null != (n = g.silent) ? n : 0),
             normal: null != (r = E.normal) ? r : 0 - (null != (i = g.normal) ? i : 0),
@@ -257,11 +257,11 @@ class g extends Chunk972347.A {
             expandRate: m.expandRateSum / O,
             preemptiveExpandRate: m.preemptiveExpandRateSum / O,
             speechExpandRate: m.speechExpandRateSum / O,
-            durationMs: A
+            durationMs: v
           };
-        v.normal + v.merged + v.expanded + v.accelerated + v.preemptiveExpanded > 0 && e.push(v)
+        A.normal + A.merged + A.expanded + A.accelerated + A.preemptiveExpanded > 0 && e.push(A)
       }
-      this.periodicInboundStats[h].accelerateRateSum = 0, this.periodicInboundStats[h].expandRateSum = 0, this.periodicInboundStats[h].preemptiveExpandRateSum = 0, this.periodicInboundStats[h].speechExpandRateSum = 0, this.periodicInboundStats[h].numRateSamples = 0, this.periodicInboundStats[h].previous = E, this.periodicInboundStats[h].previousTimestampMs = b
+      this.periodicInboundStats[h].accelerateRateSum = 0, this.periodicInboundStats[h].expandRateSum = 0, this.periodicInboundStats[h].preemptiveExpandRateSum = 0, this.periodicInboundStats[h].speechExpandRateSum = 0, this.periodicInboundStats[h].numRateSamples = 0, this.periodicInboundStats[h].previous = E, this.periodicInboundStats[h].previousTimestampMs = y
     }
     return e
   }
@@ -314,8 +314,8 @@ class g extends Chunk972347.A {
       }), this.decryptionFailures = e.transport.decryptionFailures, this.routingFailures = e.transport.routingFailures, this.appendTargetRates(this.outboundStats, e.transport.availableOutgoingBitrate, r), i().forEach(e.rtp.inbound, (t, n) => {
         i().forEach(t, t => {
           if ("audio" === t.type) {
-            var r, a, s, o, l, c, u, d, p, _, h, m, g, E, b, y, O, A, v, S;
-            let I = null != (r = e.transport.ping) ? r : 0,
+            var r, a, s, o, l, c, u, d, p, _, h, m, g, E, y, b, O, v, A, I;
+            let S = null != (r = e.transport.ping) ? r : 0,
               T = t.packetsReceived,
               C = t.packetsLost,
               N = t.bytesReceived,
@@ -355,7 +355,7 @@ class g extends Chunk972347.A {
                 s = 0,
                 o = e.mosBuckets,
                 l = null != (m = e.decryptFailureBeforeSuccessCount) ? m : j.decryptSuccessCount > 0 ? j.decryptFailureCount : true;
-              r > 0 && a >= 0 && (s = this.calculateMos(I + D, i().clamp(a / (r + a), 0, 1)), o[Math.floor(s)]++), this.inboundStats[n] = f({
+              r > 0 && a >= 0 && (s = this.calculateMos(S + D, i().clamp(a / (r + a), 0, 1)), o[Math.floor(s)]++), this.inboundStats[n] = f({
                 packetsReceived: T,
                 bytesReceived: N,
                 packetsLost: C,
@@ -376,8 +376,8 @@ class g extends Chunk972347.A {
                 current: L,
                 accelerateRateSum: this.periodicInboundStats[n].accelerateRateSum + (null != (g = t.accelerateRate) ? g : 0),
                 expandRateSum: this.periodicInboundStats[n].expandRateSum + (null != (E = t.expandRate) ? E : 0),
-                preemptiveExpandRateSum: this.periodicInboundStats[n].preemptiveExpandRateSum + (null != (b = t.preemptiveExpandRate) ? b : 0),
-                speechExpandRateSum: this.periodicInboundStats[n].speechExpandRateSum + (null != (y = t.speechExpandRate) ? y : 0),
+                preemptiveExpandRateSum: this.periodicInboundStats[n].preemptiveExpandRateSum + (null != (y = t.preemptiveExpandRate) ? y : 0),
+                speechExpandRateSum: this.periodicInboundStats[n].speechExpandRateSum + (null != (b = t.speechExpandRate) ? b : 0),
                 numRateSamples: this.periodicInboundStats[n].numRateSamples + 1
               }
             } else this.inboundStats[n] = f({
@@ -399,9 +399,9 @@ class g extends Chunk972347.A {
               currentTimestampMs: performance.now(),
               current: L,
               accelerateRateSum: null != (O = t.accelerateRate) ? O : 0,
-              expandRateSum: null != (A = t.expandRate) ? A : 0,
-              preemptiveExpandRateSum: null != (v = t.preemptiveExpandRate) ? v : 0,
-              speechExpandRateSum: null != (S = t.speechExpandRate) ? S : 0,
+              expandRateSum: null != (v = t.expandRate) ? v : 0,
+              preemptiveExpandRateSum: null != (A = t.preemptiveExpandRate) ? A : 0,
+              speechExpandRateSum: null != (I = t.speechExpandRate) ? I : 0,
               numRateSamples: 1
             }
           }

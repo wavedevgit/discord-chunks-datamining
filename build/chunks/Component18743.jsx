@@ -15,8 +15,8 @@ function a(e) {
     label: t,
     sublabel: n,
     value: a,
-    additionalContent: c,
-    tooltip: o
+    additionalContent: o,
+    tooltip: c
   } = e;
   return (0, r.jsxs)("div", {
     className: s.l9,
@@ -29,8 +29,8 @@ function a(e) {
         color: "interactive-text-default",
         "aria-hidden": true,
         children: t
-      }), null != o && (0, r.jsx)(i.m, {
-        text: o,
+      }), null != c && (0, r.jsx)(i.m, {
+        text: c,
         children: (0, r.jsx)(l.mir, {
           size: "xs",
           color: "currentColor",
@@ -46,6 +46,6 @@ function a(e) {
       variant: "heading-xl/medium",
       color: "text-strong",
       children: a
-    }), c]
+    }), o]
   })
 }

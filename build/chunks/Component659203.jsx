@@ -99,7 +99,7 @@ class U extends Chunk64700.Component {
       n = (null == t ? true : t.username) !== true ? t.username : "";
     return R.intl.format(R.t.yisueA, {
       sender: n,
-      helpdeskArticle: b.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
+      helpdeskArticle: y.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
     })
   }
   getTitleText() {
@@ -118,11 +118,11 @@ class U extends Chunk64700.Component {
   }
   getBodyText() {
     return this.recipientHasNitro && !this.isSender && true === this.trialOffer.redeemed_at ? R.intl.format(R.t.LwCwT9, {
-      helpdeskArticle: b.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
+      helpdeskArticle: y.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
     }) : this.offerExpired ? null : R.intl.string(R.t.lQLlOb)
   }
   renderActions() {
-    let e = this.currentUser.id !== this.trialOffer.user_id || (0, y.TW)(this.currentUser) || !this.currentUser.verified || (0, T.P)(this.trialOffer),
+    let e = this.currentUser.id !== this.trialOffer.user_id || (0, b.TW)(this.currentUser) || !this.currentUser.verified || (0, T.P)(this.trialOffer),
       t = this.renderExpirationDate();
     return (0, r.jsxs)("div", {
       className: w.UD,
@@ -160,7 +160,7 @@ class U extends Chunk64700.Component {
     let n = s()(e.expires_at);
     return this.offerExpired ? R.intl.formatToPlainString(R.t.PuSHfU, {
       date: (0, E.i$)(s()(n), "LL")
-    }) : (0, A.GQ)(n.valueOf())
+    }) : (0, v.GQ)(n.valueOf())
   }
   renderMedia() {
     return (0, r.jsx)("div", {
@@ -179,7 +179,7 @@ class U extends Chunk64700.Component {
               recipient: t
             }),
             bodyText: R.intl.formatToPlainString(R.t.u7hyDx, {
-              helpdeskArticle: b.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
+              helpdeskArticle: y.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
             })
           };
           else return {
@@ -201,7 +201,7 @@ class U extends Chunk64700.Component {
         }
       },
       t = (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(I.A, {
+        children: [(0, r.jsx)(S.A, {
           subscriptionTier: C.pe.TIER_2,
           buttonTextOverride: R.intl.string(R.t.O0etsF),
           size: "md",
@@ -218,7 +218,7 @@ class U extends Chunk64700.Component {
         size: "md",
         onClick: () => k({
           analyticsLocations: [],
-          startingScreen: this.referralsSent.size === v.Z ? S.SelectFriendsModalScreens.REMINDER : S.SelectFriendsModalScreens.SELECT_FRIENDS
+          startingScreen: this.referralsSent.size === A.Z ? I.SelectFriendsModalScreens.REMINDER : I.SelectFriendsModalScreens.SELECT_FRIENDS
         }),
         text: R.intl.string(R.t.Lm2nFc)
       }),
@@ -286,7 +286,7 @@ function G(e) {
     trialOffer: n ? O.A.getRelevantUserTrialOffer(t) : null,
     isResolving: !!n && O.A.isResolving(t),
     referralsSent: O.A.getRecipientStatus()
-  }), [n, t]), p = h.default.getCurrentUser(), _ = (0, l.bG)([h.default], () => null != a && (0, y.TW)(true !== p && a.user_id === p.id ? p : h.default.getUser(a.user_id))), g = (0, l.bG)([m.A], () => {
+  }), [n, t]), p = h.default.getCurrentUser(), _ = (0, l.bG)([h.default], () => null != a && (0, b.TW)(true !== p && a.user_id === p.id ? p : h.default.getUser(a.user_id))), g = (0, l.bG)([m.A], () => {
     var e;
     return _ ? null == (e = m.A.getPremiumTypeSubscription()) ? true : e.trialEndsAt : null
   }), {

@@ -18,9 +18,9 @@ function u() {
     t = null == e ? true : e.id,
     n = (0, l.bG)([d.A], () => d.A.getProfileError()),
     u = (0, l.bG)([d.A], () => d.A.getGuildProfile()),
-    f = (0, l.bG)([c.A], () => c.A.getIsUpdating(t)),
-    g = i.useMemo(() => null == n ? true : n.getAnyErrorMessage(), [n]),
-    b = i.useCallback(() => {
+    g = (0, l.bG)([o.A], () => o.A.getIsUpdating(t)),
+    m = i.useMemo(() => null == n ? true : n.getAnyErrorMessage(), [n]),
+    p = i.useCallback(() => {
       if (null == e || null == u) return;
       let t = {
         name: u.name,
@@ -34,13 +34,13 @@ function u() {
       };
       (0, a._C)(e.id, t)
     }, [e, u]),
-    m = i.useCallback(() => {
-      null != t && o.A.init(t)
+    f = i.useCallback(() => {
+      null != t && c.A.init(t)
     }, [t]);
   return (0, r.jsx)(s.A, {
-    submitting: f,
-    errorMessage: g,
-    onSave: b,
-    onReset: m
+    submitting: g,
+    errorMessage: m,
+    onSave: p,
+    onReset: f
   })
 }

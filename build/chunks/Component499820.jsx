@@ -2,7 +2,7 @@
 /** chunk id: 499820, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => g
+  A: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -30,11 +30,11 @@ let h = 0,
   },
   f = [Chunk652215.G6Q.DISABLED, Chunk652215.G6Q.TOP_LEFT, Chunk652215.G6Q.TOP_RIGHT, Chunk652215.G6Q.BOTTOM_LEFT, Chunk652215.G6Q.BOTTOM_RIGHT];
 
-function b(e) {
+function g(e) {
   let {
     position: t,
     onChange: n
-  } = e, [s] = r.useState(() => "notification-position-selector-".concat(h++)), b = t === a.G6Q.DISABLED ? c.intl.string(c.t.R6LxVf) : c.intl.formatToPlainString(c.t["XXHDM/"], {
+  } = e, [s] = r.useState(() => "notification-position-selector-".concat(h++)), g = t === a.G6Q.DISABLED ? c.intl.string(c.t.R6LxVf) : c.intl.formatToPlainString(c.t["XXHDM/"], {
     position: p(t)
   });
   return (0, i.jsxs)("div", {
@@ -70,9 +70,9 @@ function b(e) {
     }), (0, i.jsx)(o.Text, {
       variant: "text-sm/normal",
       className: u.Ot,
-      children: b
+      children: g
     })]
   })
 }
-b.Positions = Chunk652215.G6Q;
-let g = b
+g.Positions = Chunk652215.G6Q;
+let y = g

@@ -2,7 +2,7 @@
 /** chunk id: 900210, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y,
+  A: () => b,
   W: () => o
 }), require("./896048.js"), require("./446912.js");
 var r, Chunk311907 = require("./311907.js"),
@@ -104,7 +104,7 @@ let l = 5,
     } = e;
     delete c["".concat(t, ":").concat(n, ":").concat(null != r ? r : "")]
   };
-class b extends(r = Chunk311907.Ay.Store) {
+class y extends(r = Chunk311907.Ay.Store) {
   getReactionPickerAnimation(e, t, n) {
     return c["".concat(e, ":").concat(t, ":").concat(null != n ? n : "")]
   }
@@ -114,8 +114,8 @@ class b extends(r = Chunk311907.Ay.Store) {
     return null == (r = u[e]) ? true : r[i]
   }
 }
-s(b, "displayName", "BurstReactionEffectsStore");
-let y = new b(Chunk73153.h, {
+s(y, "displayName", "BurstReactionEffectsStore");
+let b = new y(Chunk73153.h, {
   BURST_REACTION_EFFECT_CLEAR: h,
   BURST_REACTION_EFFECT_PLAY: _,
   BURST_REACTION_ANIMATION_ADD: m,

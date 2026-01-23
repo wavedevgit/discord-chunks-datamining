@@ -20,14 +20,14 @@ function c(e) {
     className: o.kL,
     children: [(0, r.jsx)("div", {
       className: o.oT,
-      children: (0, r.jsx)(s.A, {
+      children: (0, r.jsx)(a.A, {
         channel: t
       })
     }), (0, r.jsx)("div", {
       className: o.zN
     }), u.map((e, l) => {
       var i;
-      return (0, r.jsx)(a.A, {
+      return (0, r.jsx)(s.A, {
         embeddedApp: e,
         presenceActivity: null != (i = e.presenceActivity) ? i : true,
         channel: t,

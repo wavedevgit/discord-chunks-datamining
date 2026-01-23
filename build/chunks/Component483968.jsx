@@ -17,13 +17,13 @@ let p = e => {
     skuId: t,
     canUsePremiumCollectibles: n,
     isPurchaseSection: p,
-    isPremiumSection: f
-  } = e, m = (0, a.aT)(t), b = (0, l.bG)([c.A, o.A], () => {
-    let e = c.A.getProduct(t),
-      n = o.A.getPurchase(t);
+    isPremiumSection: m
+  } = e, f = (0, a.aT)(t), g = (0, l.bG)([o.A, c.A], () => {
+    let e = o.A.getProduct(t),
+      n = c.A.getPurchase(t);
     return null != n ? (0, a.gA)(n) : (0, a.G0)(e)
   });
-  return p || f && n ? null : m ? (0, r.jsx)(s.JIr, {
+  return p || m && n ? null : f ? (0, r.jsx)(s.JIr, {
     className: d.Ad,
     text: (0, r.jsxs)("div", {
       className: d.rm,
@@ -33,7 +33,7 @@ let p = e => {
       }), u.intl.string(u.t.y2b7CA)]
     })
   }) : (0, r.jsx)(s.fkz, {
-    icon: b ? () => (0, r.jsx)(s.tvc, {
+    icon: g ? () => (0, r.jsx)(s.tvc, {
       size: "custom",
       color: "currentColor",
       width: 14,

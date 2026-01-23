@@ -44,12 +44,12 @@ function y(e) {
     applicationId: t,
     stream: l,
     channel: y,
-    exitFullScreen: O,
-    appContext: j,
-    analyticsLocation: v,
-    guildScheduledEvent: x,
-    shouldPrioritizeGroupPlusIcon: E = false,
-    isRichPresenceInvite: _ = false,
+    exitFullScreen: _,
+    appContext: O,
+    analyticsLocation: j,
+    guildScheduledEvent: v,
+    shouldPrioritizeGroupPlusIcon: x = false,
+    isRichPresenceInvite: E = false,
     iconClassName: C,
     look: S,
     size: I,
@@ -73,19 +73,19 @@ function y(e) {
     return i
   }(e, ["applicationId", "stream", "channel", "exitFullScreen", "appContext", "analyticsLocation", "guildScheduledEvent", "shouldPrioritizeGroupPlusIcon", "isRichPresenceInvite", "iconClassName", "look", "size", "buttonText", "color"]), w = (0, d.Us)(), {
     parentAnalyticsLocation: R
-  } = (0, c.Ay)(), D = null == y ? true : y.getGuildId(), M = (0, a.bG)([f.A], () => null != D ? f.A.getGuild(D) : null, [D]), L = (0, a.bG)([p.A], () => null != t ? p.A.getApplicationActivity(t) : true), G = null == t || E ? s.DpX : s.dCJ, k = null != t ? m.intl.string(m.t["OzOM/q"]) : m.intl.string(m.t["6F9ivu"]);
-  return null != L && _ ? (0, r.jsx)(b.A, {
+  } = (0, c.Ay)(), D = null == y ? true : y.getGuildId(), M = (0, s.bG)([p.A], () => null != D ? p.A.getGuild(D) : null, [D]), L = (0, s.bG)([h.A], () => null != t ? h.A.getApplicationActivity(t) : true), k = null == t || x ? a.DpX : a.dCJ, G = null != t ? b.intl.string(b.t["OzOM/q"]) : b.intl.string(b.t["6F9ivu"]);
+  return null != L && E ? (0, r.jsx)(g.A, {
     onClick: () => {
       null != R && (0, u.X)(R, u.O.INVITE), o.qf(L, false, w)
     },
-    iconComponent: G,
-    label: k,
+    iconComponent: k,
+    label: G,
     iconClassName: C,
     look: S,
     size: I,
     buttonText: N,
     color: null != T ? T : true
-  }) : null != M && null != y && h.A.can(g.xBc.CREATE_INSTANT_INVITE, y) ? (0, r.jsx)(b.A, A({
+  }) : null != M && null != y && f.A.can(m.xBc.CREATE_INSTANT_INVITE, y) ? (0, r.jsx)(g.A, A({
     onClick: () => {
       i()(null != M, "guild cannot be null"), i()(null != y, "channel cannot be null"), null != R && (0, u.X)(R, u.O.INVITE),
         function(e) {
@@ -93,27 +93,27 @@ function y(e) {
             guild: t,
             channel: l,
             streamUserId: i,
-            applicationId: a,
+            applicationId: s,
             appContext: o,
             exitFullScreen: c,
             analyticsLocation: u,
             guildScheduledEvent: d
           } = e;
-          null == c || c(), (0, s.mMO)(async () => {
+          null == c || c(), (0, a.mMO)(async () => {
             let {
               default: e
             } = await Promise.all([n.e("43600"), n.e("28136"), n.e("42821")]).then(n.bind(n, 234355));
             return n => {
-              var s, o;
-              return (0, r.jsx)(e, (s = A({}, n), o = o = {
+              var a, o;
+              return (0, r.jsx)(e, (a = A({}, n), o = o = {
                 guild: t,
                 channel: l,
                 streamUserId: i,
-                applicationId: a,
+                applicationId: s,
                 analyticsLocation: u,
-                source: l.isGuildStageVoice() ? g.PE1.STAGE_CHANNEL : g.PE1.STREAM_INVITE,
+                source: l.isGuildStageVoice() ? m.PE1.STAGE_CHANNEL : m.PE1.STREAM_INVITE,
                 guildScheduledEvent: d
-              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                   var r = Object.getOwnPropertySymbols(e);
@@ -121,26 +121,26 @@ function y(e) {
                 }
                 return n
               })(Object(o)).forEach(function(e) {
-                Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(o, e))
-              }), s))
+                Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(o, e))
+              }), a))
             }
           }, {
             modalKey: "stream-invite-modal",
-            contextKey: o === g.BRT.POPOUT ? s.KX8 : s.SYi
+            contextKey: o === m.BRT.POPOUT ? a.KX8 : a.SYi
           })
         }({
           guild: M,
           channel: y,
           streamUserId: null == l ? true : l.ownerId,
           applicationId: t,
-          appContext: null != j ? j : w,
-          exitFullScreen: O,
-          analyticsLocation: v,
-          guildScheduledEvent: x
+          appContext: null != O ? O : w,
+          exitFullScreen: _,
+          analyticsLocation: j,
+          guildScheduledEvent: v
         })
     },
-    iconComponent: G,
-    label: k,
+    iconComponent: k,
+    label: G,
     iconClassName: C,
     look: S,
     size: I,

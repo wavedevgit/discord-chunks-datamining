@@ -1,5 +1,5 @@
 /** Chunk was on 77828 **/
-/** chunk id: 491390, original params: e,t,r (module,exports,require) **/
+/** chunk id: 491390, original params: e,r,t (module,exports,require) **/
 "use strict";
 require.d(exports, {
   default: () => p
@@ -10,29 +10,29 @@ var Chunk627968 = require("./627968.js"),
   Chunk414121 = require("./414121.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk194536 = require("./194536.js");
-let l = [],
+let c = [],
   p = function(e) {
     let {
-      transitionState: t,
-      onClose: r,
+      transitionState: r,
+      onClose: t,
       questId: p
-    } = e, f = o.useMemo(() => {
+    } = e, u = o.useMemo(() => {
       let e = new URL("".concat(window.location.origin, "/quests/").concat(p));
       return e.searchParams.append("referrer_id", "quest_home_qr_code"), e.toString()
     }, [p]);
     return (0, n.jsx)(s.Modal, {
-      actions: l,
-      onClose: r,
+      actions: c,
+      onClose: t,
       size: "md",
-      subtitle: i.intl.string(i.t.bBTjR9),
-      title: i.intl.string(i.t.g3jrBu),
-      transitionState: t,
+      subtitle: a.intl.string(a.t.bBTjR9),
+      title: a.intl.string(a.t.g3jrBu),
+      transitionState: r,
       children: (0, n.jsx)("div", {
-        className: c.m,
-        children: (0, n.jsx)(a.Lx, {
+        className: l.m,
+        children: (0, n.jsx)(i.Lx, {
           size: 200,
-          text: f,
-          overlaySize: a.Zs.SIZE_40
+          text: u,
+          overlaySize: i.Zs.SIZE_40
         })
       })
     })

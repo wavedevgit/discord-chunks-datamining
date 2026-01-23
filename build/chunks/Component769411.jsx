@@ -57,19 +57,19 @@ let c = "0.3",
       progressCircleStrokeSize: d = 2,
       progressCircleVariation: f,
       progressCircleStroke: p
-    } = e, _ = 43 + d / 2, E = 2 * Math.PI * _, [b, y] = i.useState(u);
+    } = e, _ = 43 + d / 2, E = 2 * Math.PI * _, [y, b] = i.useState(u);
     i.useEffect(() => {
       let e = setTimeout(() => {
-        y(t)
+        b(t)
       }, 200);
       return () => clearTimeout(e)
     }, [t]);
     let O = (0, s.Ay)(),
-      A = (0, a.qB)(O),
-      v = (1 - b / 100) * E,
-      S = m(f),
-      I = h(f, A),
-      T = null != p ? p : g(A, f);
+      v = (0, a.qB)(O),
+      A = (1 - y / 100) * E,
+      I = m(f),
+      S = h(f, v),
+      T = null != p ? p : g(v, f);
     return (0, r.jsxs)("div", {
       className: l.Ap,
       children: [(0, r.jsxs)("svg", {
@@ -82,8 +82,8 @@ let c = "0.3",
           r: "".concat(_),
           cx: "50%",
           cy: "50%",
-          stroke: S,
-          strokeOpacity: I
+          stroke: I,
+          strokeOpacity: S
         }), (0, r.jsx)("circle", {
           stroke: T,
           strokeWidth: d,
@@ -91,7 +91,7 @@ let c = "0.3",
           strokeDasharray: "".concat(E, " ").concat(E),
           className: c,
           style: {
-            strokeDashoffset: v
+            strokeDashoffset: A
           },
           r: "".concat(_),
           cx: "50%",

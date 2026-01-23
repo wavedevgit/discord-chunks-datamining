@@ -2,7 +2,7 @@
 /** chunk id: 526162, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 });
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -32,9 +32,9 @@ let h = 2,
   },
   g = true,
   E = () => {
-    (g = !c.Ay.canUsePremiumAppIcons(o.default.getCurrentUser())) && b(u.LW.DEFAULT)
+    (g = !c.Ay.canUsePremiumAppIcons(o.default.getCurrentUser())) && y(u.LW.DEFAULT)
   },
-  b = e => {
+  y = e => {
     if (m.client.desktop = e, !g) {
       var t;
       l.default.track(d.HAw.APP_ICON_UPDATED, {
@@ -45,11 +45,11 @@ let h = 2,
     }
   };
 
-function y(e) {
+function b(e) {
   let {
     id: t
   } = e;
-  null != t && b(t)
+  null != t && y(t)
 }
 
 function O() {
@@ -59,13 +59,13 @@ function O() {
   })
 }
 
-function A(e) {
+function v(e) {
   let {
     markAsDismissed: t
   } = e;
   m.client.coachmarkImpressions += 1, m.client.coachmarkImpressions >= h && (null == t || t(f.i.UNKNOWN), O(), (0, s.Jp)())
 }
-class v extends(r = Chunk311907.Ay.PersistedStore) {
+class A extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     null != e && (m = e), this.waitFor(o.default), this.syncWith([o.default], E)
   }
@@ -80,10 +80,10 @@ class v extends(r = Chunk311907.Ay.PersistedStore) {
     return null == m || null == (e = m.client) ? true : e.desktop
   }
 }
-_(v, "displayName", "AppIconPersistedStoreState"), _(v, "persistKey", "AppIconPersistedStoreState");
-let S = new v(Chunk73153.h, {
-  APP_ICON_UPDATED: y,
+_(A, "displayName", "AppIconPersistedStoreState"), _(A, "persistKey", "AppIconPersistedStoreState");
+let I = new A(Chunk73153.h, {
+  APP_ICON_UPDATED: b,
   APP_ICON_EDITOR_RESET: O,
-  APP_ICON_TRACK_IMPRESSION: A,
+  APP_ICON_TRACK_IMPRESSION: v,
   LOGOUT: O
 })

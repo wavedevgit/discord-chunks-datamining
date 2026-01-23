@@ -29,7 +29,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,14 +54,14 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = new Chunk626584.A("PaymentElement.web.stories"),
-  v = "Color Text",
-  S = "Color Background",
-  I = "Input Background Color",
+let v = new Chunk626584.A("PaymentElement.web.stories"),
+  A = "Color Text",
+  I = "Color Background",
+  S = "Input Background Color",
   T = "Tab Background Color",
   C = e => ({
     key: d.pn.ADD_PAYMENT_STEPS,
@@ -99,25 +99,25 @@ let A = new Chunk626584.A("PaymentElement.web.stories"),
       inputBackgroundColor: u,
       tabBackgroundColor: p,
       storyType: E
-    } = e, y = (0, f.A)(), {
-      stripePaymentElementProps: v,
-      stripeAddressElementProps: S
+    } = e, b = (0, f.A)(), {
+      stripePaymentElementProps: A,
+      stripeAddressElementProps: I
     } = (0, c.Lw)({
       step: d.pn.PAYMENT_ELEMENT,
       handleStepChange: h.tEg,
       onBillingAddressChange: h.tEg,
       paymentElementsEnabled: true,
-      logger: A,
+      logger: v,
       shouldLogOnChangeEvents: true,
       continueSessionToInitialStep: true
     }), {
-      elementsOptions: I,
+      elementsOptions: S,
       isLoading: T,
       setupError: R,
       customPaymentMethodIdsToSourceTypes: w
     } = (0, l.p)({
       onSetupError: e => {
-        A.info("Stripe Payment Element options setup error: ", e)
+        v.info("Stripe Payment Element options setup error: ", e)
       },
       elementsAppearanceOptions: {
         theme: t,
@@ -127,7 +127,7 @@ let A = new Chunk626584.A("PaymentElement.web.stories"),
         tabBackgroundColor: p
       }
     });
-    return T || null != R || null == y ? (0, r.jsx)(c.eR, {}) : (0, r.jsxs)("div", {
+    return T || null != R || null == b ? (0, r.jsx)(c.eR, {}) : (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
         style: {
           marginBottom: 16
@@ -145,18 +145,18 @@ let A = new Chunk626584.A("PaymentElement.web.stories"),
               [m.X1]: "joined-payment-address-elements" === E
             }),
             children: (0, r.jsxs)(i.Elements, {
-              stripe: y,
-              options: b({}, I),
+              stripe: b,
+              options: y({}, S),
               children: ["stripe-address-element" === E ? (0, r.jsx)("div", {
                 className: g.R,
-                children: (0, r.jsx)(c.Wf, O(b({}, v), {
+                children: (0, r.jsx)(c.Wf, O(y({}, A), {
                   customPaymentMethodIdsToSourceTypes: w,
                   step: d.pn.PAYMENT_ELEMENT
                 }))
-              }) : (0, r.jsx)(c.Wf, O(b({}, v), {
+              }) : (0, r.jsx)(c.Wf, O(y({}, A), {
                 customPaymentMethodIdsToSourceTypes: w,
                 step: d.pn.PAYMENT_ELEMENT
-              })), ("joined-payment-address-elements" === E || "stripe-address-element" === E) && (0, r.jsx)(c.KS, O(b({}, S), {
+              })), ("joined-payment-address-elements" === E || "stripe-address-element" === E) && (0, r.jsx)(c.KS, O(y({}, I), {
                 billingAddressInfo: {
                   email: "",
                   name: "",
@@ -174,13 +174,13 @@ let A = new Chunk626584.A("PaymentElement.web.stories"),
       })]
     })
   },
-  w = e => (0, r.jsx)(R, O(b({}, e), {
+  w = e => (0, r.jsx)(R, O(y({}, e), {
     storyType: "joined-payment-address-elements"
   })),
-  P = e => (0, r.jsx)(R, O(b({}, e), {
+  P = e => (0, r.jsx)(R, O(y({}, e), {
     storyType: "stripe-payment-element"
   })),
-  D = e => (0, r.jsx)(R, O(b({}, e), {
+  D = e => (0, r.jsx)(R, O(y({}, e), {
     storyType: "stripe-address-element"
   })),
   x = {
@@ -194,17 +194,17 @@ let A = new Chunk626584.A("PaymentElement.web.stories"),
       defaultValue: "flat"
     },
     colorText: {
-      label: v,
+      label: A,
       type: "text",
       defaultValue: "#2f3035"
     },
     colorBackground: {
-      label: S,
+      label: I,
       type: "text",
       defaultValue: "#ffffff"
     },
     inputBackgroundColor: {
-      label: I,
+      label: S,
       type: "text",
       defaultValue: "#00000014"
     },
@@ -218,7 +218,7 @@ let A = new Chunk626584.A("PaymentElement.web.stories"),
     name: "Joined Payment + Address",
     id: "joined-payment-address-elements",
     component: w,
-    controls: b({}, x)
+    controls: y({}, x)
   },
   j = {
     title: "Payment Elements",
@@ -226,11 +226,11 @@ let A = new Chunk626584.A("PaymentElement.web.stories"),
       name: "Stripe Payment Element",
       id: "stripe-payment-element",
       component: P,
-      controls: b({}, x)
+      controls: y({}, x)
     }, {
       name: "Stripe Address Element",
       id: "stripe-address-element",
       component: D,
-      controls: b({}, x)
+      controls: y({}, x)
     }, L]
   }

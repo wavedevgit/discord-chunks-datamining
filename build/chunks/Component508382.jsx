@@ -2,9 +2,9 @@
 /** chunk id: 508382, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $Y: () => A,
-  IP: () => b,
-  Ow: () => y,
+  $Y: () => v,
+  IP: () => y,
+  Ow: () => b,
   Pv: () => O
 }), require("./321073.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
@@ -58,20 +58,20 @@ function m(e, t) {
 }
 let g = 8,
   E = 100,
-  b = "data-popover-layer";
+  y = "data-popover-layer";
 
-function y(e) {
+function b(e) {
   var t;
   let n, {
       ownerDocument: l = document,
       open: p,
       onOpenChange: h,
-      id: y,
+      id: b,
       className: O,
-      reference: A,
-      overrideTargetRect: v,
-      placement: S = "bottom",
-      spacing: I = 8,
+      reference: v,
+      overrideTargetRect: A,
+      placement: I = "bottom",
+      spacing: S = 8,
       autoFlip: T = true,
       crossAccessFlip: C = true,
       autoShift: N = true,
@@ -87,7 +87,7 @@ function y(e) {
     } = e,
     U = i.useRef(null),
     G = i.useMemo(() => {
-      let e = [(0, a.cY)(I)];
+      let e = [(0, a.cY)(S)];
       return T && e.push((0, a.UU)({
         crossAxis: C,
         padding: L,
@@ -109,13 +109,13 @@ function y(e) {
           n.floating.style.setProperty("--custom-floating-layer-max-height", "".concat(r, "px"))
         }
       })), e
-    }, [I, T, N, L, C, l, j]);
-  null != v ? n = {
+    }, [S, T, N, L, C, l, j]);
+  null != A ? n = {
     reference: {
-      getBoundingClientRect: () => v
+      getBoundingClientRect: () => A
     }
-  } : null != A && (n = {
-    reference: A
+  } : null != v && (n = {
+    reference: v
   });
   let {
     refs: V,
@@ -125,7 +125,7 @@ function y(e) {
     update: Y,
     context: W
   } = (0, s.we)({
-    placement: S,
+    placement: I,
     open: p,
     onOpenChange: h,
     strategy: R,
@@ -153,9 +153,9 @@ function y(e) {
     }), p && (0, r.jsxs)(Q, {
       ownerDocument: l,
       children: [P ? (0, r.jsx)(s.zR, {}) : null, (0, r.jsx)("div", m(_({
-        id: y,
+        id: b,
         className: c()(O, f.q),
-        [b]: true,
+        [y]: true,
         style: m(_({}, F), {
           visibility: Z
         }),
@@ -194,7 +194,7 @@ function O(e, t) {
   }
 }
 
-function A(e) {
+function v(e) {
   let t = e.split("-")[0];
   switch (t) {
     case "top":

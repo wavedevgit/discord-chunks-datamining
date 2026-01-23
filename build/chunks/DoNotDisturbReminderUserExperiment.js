@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk600975 = require("./600975.js"),
   Chunk428835 = require("./428835.js"),
   Chunk286339 = require("./286339.js");
-let r = (0, Chunk600975.C)({
+let i = (0, Chunk600975.C)({
     kind: "user",
     id: "2025-08_do_not_disturb_reminder",
     label: "Do Not Disturb Reminder",
@@ -41,4 +41,4 @@ let r = (0, Chunk600975.C)({
       }
     }]
   }),
-  s = e => (0, l.u5)(r, e)
+  s = e => (0, l.u5)(i, e)

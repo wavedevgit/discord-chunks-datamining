@@ -13,6 +13,6 @@ var Chunk627968 = require("./627968.js"),
 function c() {
   return (0, a.jsxs)(l.IpV, {
     className: o.n,
-    children: [(0, a.jsx)(r.A, {}), (0, a.jsx)(l.cGx, {}), (0, a.jsx)(i.A, {}), (0, a.jsx)(l.cGx, {}), (0, a.jsx)(s.A, {})]
+    children: [(0, a.jsx)(i.A, {}), (0, a.jsx)(l.cGx, {}), (0, a.jsx)(r.A, {}), (0, a.jsx)(l.cGx, {}), (0, a.jsx)(s.A, {})]
   })
 }

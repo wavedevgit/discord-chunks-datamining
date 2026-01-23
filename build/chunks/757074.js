@@ -33,11 +33,11 @@ var Chunk860511 = require("./860511.js"),
       }), e = 0; e < 516; e++)
       if (n[e] !== r[e]) returntrue
   }),
-  b = function(e) {
+  y = function(e) {
     return function(t, n) {
       return true !== e ? +e(t, n) || 0 : n != n ? false : t != t ? 1 : 0 === t && 0 === n ? 1 / t > 0 && 1 / n < 0 ? 1 : false : t > n
     }
   };
 _("sort", function(e) {
-  return (true !== e && s(e), E) ? m(this, e) : o(p(this), b(e))
+  return (true !== e && s(e), E) ? m(this, e) : o(p(this), y(e))
 }, !E || g)

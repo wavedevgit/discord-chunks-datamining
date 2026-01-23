@@ -65,24 +65,24 @@ let h = e => {
     showGradient: m,
     confirmationFooter: g,
     color: E
-  } = e, b = p(e, ["textOptions", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "color"]), y = (0, s.Ay)(), {
+  } = e, y = p(e, ["textOptions", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "color"]), b = (0, s.Ay)(), {
     buttonText: O,
-    marketingSubscriptionTierSkuId: A
+    marketingSubscriptionTierSkuId: v
   } = (0, c.s)({
     hasActivePromotion: d,
     subscriptionTier: n,
     useShorterCTA: h,
     isPersistentCTA: _
-  }), v = (0, o.V)(), S = null == v ? true : v.subscription_trial, I = null != S && A === S.sku_id, T = null != E ? E : (0, i.Mw)(y) ? a.XD.BRAND_INVERTED : a.XD.BRAND;
+  }), A = (0, o.V)(), I = null == A ? true : A.subscription_trial, S = null != I && v === I.sku_id, T = null != E ? E : (0, i.Mw)(b) ? a.XD.BRAND_INVERTED : a.XD.BRAND;
   return (0, r.jsx)(l.A, f({
     color: T,
     textOptions: f({
       textOverride: O,
-      textClassName: I ? u.A : true
+      textClassName: S ? u.A : true
     }, t),
     onlyShineOnHover: true,
-    subscriptionTier: A,
+    subscriptionTier: v,
     showGradient: m,
     confirmationFooter: g
-  }, b))
+  }, y))
 }

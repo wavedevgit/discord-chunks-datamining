@@ -1,8 +1,8 @@
 /** Chunk was on 21738 **/
 /** chunk id: 979080, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  H: () => g,
-  default: () => m
+  H: () => m,
+  default: () => A
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -19,7 +19,7 @@ var Chunk65412 = require("./65412.js"),
   Chunk716600 = require("./716600.jsx"),
   Chunk848295 = require("./848295.jsx");
 
-function g(e) {
+function m(e) {
   let {
     promotionId: t,
     content: n,
@@ -34,7 +34,7 @@ function g(e) {
   }
 }
 
-function m(e) {
+function A(e) {
   let {
     componentId: t,
     promotionId: n,
@@ -44,18 +44,18 @@ function m(e) {
     location: a
   } = (0, o.p)(), {
     analyticsLocations: p
-  } = (0, d.Ay)(u.A.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), g = (0, c.Ay)(), m = (0, s.qB1)(g);
+  } = (0, d.Ay)(u.A.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), m = (0, c.Ay)(), A = (0, s.qB1)(m);
   if ("announcementModalVariant1" === l.properties.oneofKind) {
-    let e = (0, h.t)({
+    let e = (0, g.t)({
       componentId: t,
       promotionId: n,
       content: l.properties.announcementModalVariant1,
       renderModalProps: i,
       analyticsLocations: p,
       analyticsLocation: a,
-      isLightTheme: m
+      isLightTheme: A
     });
-    return (0, r.jsx)(A.A, function(e) {
+    return (0, r.jsx)(f.A, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -74,5 +74,5 @@ function m(e) {
       return e
     }({}, e))
   }
-  return f.A.captureMessage("Property type ".concat(l.properties.oneofKind, " is not supported to render ServerDriveAnnouncementModal")), null
+  return h.A.captureMessage("Property type ".concat(l.properties.oneofKind, " is not supported to render ServerDriveAnnouncementModal")), null
 }

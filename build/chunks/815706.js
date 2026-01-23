@@ -60,31 +60,31 @@ function g() {
 }
 async function E(e, t) {
   var n, l, c, h, g, E;
-  let b = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    y = __OVERLAY__ ? d.A.getGame() : (0, o.qv)(),
-    O = i.Ay.getRunningGames().find(e => e.name === (null == y ? true : y.name)),
-    A = (null == O ? true : O.pid) != null ? s.default.getTrackedGameByPid(null == O ? true : O.pid) : null,
-    v = null != (n = null == A ? true : A.source) ? n : null,
-    S = null != (l = null != (c = null == A ? true : A.overlayMethod) ? c : s.default.getRenderMethod(null == O ? true : O.pid)) ? l : null,
-    I = {
-      overlay_game_source: v,
-      overlay_game_name: null != y ? y.name : "Unknown Game",
-      overlay_app_id: null != y ? y.id : null,
-      overlay_render_method: null != S ? a.Ue[S] : null,
+  let y = arguments.length > 2 && true !== arguments[2] && arguments[2],
+    b = __OVERLAY__ ? d.A.getGame() : (0, o.qv)(),
+    O = i.Ay.getRunningGames().find(e => e.name === (null == b ? true : b.name)),
+    v = (null == O ? true : O.pid) != null ? s.default.getTrackedGameByPid(null == O ? true : O.pid) : null,
+    A = null != (n = null == v ? true : v.source) ? n : null,
+    I = null != (l = null != (c = null == v ? true : v.overlayMethod) ? c : s.default.getRenderMethod(null == O ? true : O.pid)) ? l : null,
+    S = {
+      overlay_game_source: A,
+      overlay_game_name: null != b ? b.name : "Unknown Game",
+      overlay_app_id: null != b ? b.id : null,
+      overlay_render_method: null != I ? a.Ue[I] : null,
       media_session_id: u.A.getMediaSessionId(),
       overlay_game_elevated: null == O ? true : O.elevated,
       input_service_initialized: i.Ay.isSystemServiceInitialized("input-service"),
       hardware_display_count: null != (h = await (null === r.A || true === r.A || null == (E = r.A.hardware) || null == (g = E.getDisplayCount) ? true : g.call(E))) ? h : null
     };
-  switch (__OVERLAY__ && (I.overlay_render_method = a.Ue[a.Ue.Hook]), t = m({}, I, t), e) {
+  switch (__OVERLAY__ && (S.overlay_render_method = a.Ue[a.Ue.Hook]), t = m({}, S, t), e) {
     case _.HAw.VOICE_CHANNEL_SELECTED:
     case _.HAw.SETTINGS_PANE_VIEWED:
     case _.HAw.GUILD_VIEWED:
     case _.HAw.CHANNEL_OPENED:
-      return (0, p.zV)(e, t, b);
+      return (0, p.zV)(e, t, y);
     default:
       return f.default.track(e, t, {
-        flush: b
+        flush: y
       })
   }
 }

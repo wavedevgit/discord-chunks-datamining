@@ -1,7 +1,7 @@
 /** Chunk was on 94073 **/
-/** chunk id: 719335, original params: e,t,r (module,exports,require) **/
+/** chunk id: 719335, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => y
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,27 +20,27 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk560207 = require("./560207.js");
 
-function y(e) {
+function g(e) {
   let {
     analyticsSection: t,
-    type: r
-  } = e, y = (0, c.bG)([b.default], () => b.default.getCurrentUser()), N = f.Ay.canUseAnimatedAvatar(y), E = f.Ay.canUsePremiumProfileCustomization(y), L = r === _.HL.BANNER && E || r === _.HL.AVATAR && N, {
-    sourceAnalyticsLocations: g
-  } = (0, o.Ay)(s.A.PREMIUM_PREVIEW_UPSELL_HEADER);
-  if (n.useEffect(() => {
-      L || d.default.track(A.HAw.PREMIUM_UPSELL_VIEWED, {
+    type: n
+  } = e, g = (0, o.bG)([_.default], () => _.default.getCurrentUser()), x = f.Ay.canUseAnimatedAvatar(g), v = f.Ay.canUsePremiumProfileCustomization(g), E = n === b.HL.BANNER && v || n === b.HL.AVATAR && x, {
+    sourceAnalyticsLocations: L
+  } = (0, s.Ay)(l.A.PREMIUM_PREVIEW_UPSELL_HEADER);
+  if (a.useEffect(() => {
+      E || d.default.track(A.HAw.PREMIUM_UPSELL_VIEWED, {
         type: t,
-        location_stack: g
+        location_stack: L
       })
-    }, [L, t, g]), L) return null;
-  let j = (0, a.jsx)(i.A, {
-    className: x.__invalid_getNitroLink,
-    size: l.$n.Sizes.SMALL,
-    look: l.$n.Looks.LINK,
-    color: l.$n.Colors.LINK,
-    subscriptionTier: p.pe.TIER_2,
+    }, [E, t, L]), E) return null;
+  let N = (0, r.jsx)(c.A, {
+    className: y.__invalid_getNitroLink,
+    size: i.$n.Sizes.SMALL,
+    look: i.$n.Looks.LINK,
+    color: i.$n.Colors.LINK,
+    subscriptionTier: m.pe.TIER_2,
     textOptions: {
-      textOverride: m.intl.format(m.t["944tDv"], {})
+      textOverride: p.intl.format(p.t["944tDv"], {})
     },
     showIcon: false,
     premiumModalAnalyticsLocation: {
@@ -49,10 +49,10 @@ function y(e) {
     },
     disableShine: true
   });
-  return (0, a.jsx)(u.A, {
+  return (0, r.jsx)(u.A, {
     reducedRightPadding: true,
-    className: x.C,
-    text: m.intl.format(m.t.Og803x, {}),
-    button: j
+    className: y.C,
+    text: p.intl.format(p.t.Og803x, {}),
+    button: N
   })
 }

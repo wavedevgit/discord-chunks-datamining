@@ -2,21 +2,21 @@
 /** chunk id: 406704, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  AI: () => A,
-  D1: () => y,
+  AI: () => v,
+  D1: () => b,
   Et: () => P,
   H_: () => M,
   Id: () => D,
   NI: () => C,
   NR: () => T,
-  R: () => S,
+  R: () => I,
   Tb: () => O,
   UJ: () => L,
   _M: () => G,
   io: () => E,
   jr: () => x,
   lK: () => w,
-  n: () => b,
+  n: () => y,
   qi: () => U,
   s5: () => V
 }), require("./896048.js");
@@ -51,39 +51,39 @@ let E = (0, Chunk143770.A)({
   }]
 });
 
-function b(e, t) {
-  return v((0, s.bG)([_.A], () => {
+function y(e, t) {
+  return A((0, s.bG)([_.A], () => {
     let t = e.isForumLikeChannel() ? g.xBc.SEND_MESSAGES : a.kg(g.xBc.CREATE_PUBLIC_THREADS, g.xBc.READ_MESSAGE_HISTORY);
     return _.A.can(t, e)
   }, [e]), e, t)
 }
 
-function y(e, t) {
+function b(e, t) {
   let n = e.isForumLikeChannel() ? g.xBc.SEND_MESSAGES : a.kg(g.xBc.CREATE_PUBLIC_THREADS, g.xBc.READ_MESSAGE_HISTORY);
-  return v(_.A.can(n, e), e, t)
+  return A(_.A.can(n, e), e, t)
 }
 
 function O(e) {
   let t = (0, s.bG)([_.A], () => _.A.can(a.kg(g.xBc.CREATE_PRIVATE_THREADS), e), [e]);
-  return e.type === g.rbe.GUILD_TEXT && v(t, e)
+  return e.type === g.rbe.GUILD_TEXT && A(t, e)
 }
 
-function A(e) {
-  let t = b(e),
+function v(e) {
+  let t = y(e),
     n = O(e);
   return t || n
 }
 
-function v(e, t, n) {
+function A(e, t, n) {
   return !(__OVERLAY__ || !e || !d.wE.has(t.type) || null != n && (n.hasFlag(g.pr7.HAS_THREAD) || (0, u.A)(n))) && true
 }
 
-function S(e) {
+function I(e) {
   let t = (0, s.bG)([p.A], () => p.A.getChannel(h.default.castMessageIdAsChannelId(e.id)), [e]);
-  return I((0, s.bG)([_.A], () => _.A.can(g.xBc.VIEW_CHANNEL, t), [t]), e, t)
+  return S((0, s.bG)([_.A], () => _.A.can(g.xBc.VIEW_CHANNEL, t), [t]), e, t)
 }
 
-function I(e, t, n) {
+function S(e, t, n) {
   return !!t.hasFlag(g.pr7.HAS_THREAD) && null != n && !!e
 }
 

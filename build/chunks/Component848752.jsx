@@ -1,14 +1,14 @@
 /** Chunk was on 85426 **/
 /** chunk id: 848752, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  Ay: () => m,
+  Ay: () => f,
   Oj: () => p,
-  Q8: () => f
+  Q8: () => h
 }), require("./896048.js");
 var n, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  c = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk532197 = require("./532197.jsx"),
   Chunk331026 = require("./331026.js");
@@ -21,11 +21,11 @@ function d(e, t, l) {
     writable: true
   }) : e[t] = l, e
 }
-let b = {
+let m = {
   CENTER: Chunk331026.Hu,
   LEFT: Chunk331026.Vl
 };
-class h extends(n = Chunk64700.PureComponent) {
+class _ extends(n = Chunk64700.PureComponent) {
   componentDidUpdate(e) {
     let {
       selectedIndex: t
@@ -39,12 +39,12 @@ class h extends(n = Chunk64700.PureComponent) {
       vertical: l,
       paginationContainerClass: n,
       align: s
-    } = this.props, o = l ? u.XA : u.BU;
-    return (0, a.jsx)(i.GtU, {
+    } = this.props, c = l ? u.XA : u.BU;
+    return (0, r.jsx)(o.GtU, {
       orientation: l ? "vertical" : "horizontal",
-      className: c()(o, n, s),
+      className: i()(c, n, s),
       ref: this.handleSetScrollerRef,
-      children: t.map((t, l) => r.cloneElement(e(t, l), {
+      children: t.map((t, l) => a.cloneElement(e(t, l), {
         onClick: () => this.handlePageClick(l),
         key: l,
         ref: e => {
@@ -73,26 +73,26 @@ class h extends(n = Chunk64700.PureComponent) {
     })
   }
 }
-d(h, "Align", b), d(h, "defaultProps", {
+d(_, "Align", m), d(_, "defaultProps", {
   scrollToPadding: {
     top: 0,
     left: 0,
     bottom: 0,
     right: 0
   },
-  align: b.CENTER
+  align: m.CENTER
 });
-class f extends Chunk64700.PureComponent {
+class h extends Chunk64700.PureComponent {
   render() {
     let {
       className: e
     } = this.props;
-    return (0, a.jsx)(i.DUT, {
-      className: c()(u.t1, e),
+    return (0, r.jsx)(o.DUT, {
+      className: i()(u.t1, e),
       onClick: this.handlePrevClick,
-      children: (0, a.jsx)(o.A, {
+      children: (0, r.jsx)(c.A, {
         className: u.UE,
-        direction: o.A.Directions.LEFT
+        direction: c.A.Directions.LEFT
       })
     })
   }
@@ -111,12 +111,12 @@ class p extends Chunk64700.PureComponent {
     let {
       className: e
     } = this.props;
-    return (0, a.jsx)(i.DUT, {
-      className: c()(u.XS, e),
+    return (0, r.jsx)(o.DUT, {
+      className: i()(u.XS, e),
       onClick: this.handleNextClick,
-      children: (0, a.jsx)(o.A, {
+      children: (0, r.jsx)(c.A, {
         className: u.UE,
-        direction: o.A.Directions.RIGHT
+        direction: c.A.Directions.RIGHT
       })
     })
   }
@@ -130,4 +130,4 @@ class p extends Chunk64700.PureComponent {
     })
   }
 }
-let m = h
+let f = _

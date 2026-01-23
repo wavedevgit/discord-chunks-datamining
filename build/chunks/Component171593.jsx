@@ -26,7 +26,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk896189 = require("./896189.js"),
   Chunk829681 = require("./829681.js");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -91,7 +91,7 @@ function P(e) {
     channelId: t,
     type: n,
     ignoreFile: a,
-    smallAttachments: S = false
+    smallAttachments: I = false
   } = e, T = (0, c.bG)([p.A], () => p.A.keyboardModeEnabled), R = (0, _.A)("attachments", l.Gl.HORIZONTAL), P = (0, c.bG)([m.A], () => m.A.getUploads(t, n.drafts.type)), {
     isApplicationCommand: D,
     commandOptions: x,
@@ -160,21 +160,21 @@ function P(e) {
         let {
           ref: i
         } = e, a = N(e, ["ref"]);
-        return (0, r.jsx)("ul", C(I({
+        return (0, r.jsx)("ul", C(S({
           ref: i
         }, a), {
-          className: s()(A.I, v.KK),
-          children: D ? j.map(e => (0, r.jsx)(b.A, {
+          className: s()(v.I, A.KK),
+          children: D ? j.map(e => (0, r.jsx)(y.A, {
             channelId: t,
             keyboardModeEnabled: T,
             option: e
-          }, e.name)) : F.map(e => (0, r.jsx)(y.A, {
+          }, e.name)) : F.map(e => (0, r.jsx)(b.A, {
             channelId: t,
             draftType: n.drafts.type,
             upload: e,
             keyboardModeEnabled: T,
             clip: e.clip,
-            size: S ? E.L.SMALL : E.L.MEDIUM
+            size: I ? E.L.SMALL : E.L.MEDIUM
           }, e.id))
         }))
       }

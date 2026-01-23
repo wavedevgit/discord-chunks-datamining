@@ -2,7 +2,7 @@
 /** chunk id: 578152, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js"), require("./321073.js");
 var Chunk562465 = require("./562465.js"),
   Chunk506774 = require("./506774.js"),
@@ -28,7 +28,7 @@ let _ = +Chunk927813.A.Millis.HOUR,
   m = +Chunk927813.A.Millis.DAY,
   g = Chunk506774.w.get("lastNonRequiredUpdateShown", Date.now()),
   E = new Chunk626584.A("AutoUpdateManager");
-class b extends Chunk439372.A {
+class y extends Chunk439372.A {
   _initialize() {
     u.isPlatformEmbedded && (f.Ay.on("CHECKING_FOR_UPDATES", this._handleCheckingForUpdates), f.Ay.on("UPDATE_NOT_AVAILABLE", this._handleNativeUpdateNotAvailable), f.Ay.on("UPDATE_AVAILABLE", () => this._handleUpdateAvailable(true)), f.Ay.on("UPDATE_ERROR", this._handleUpdateError), f.Ay.on("UPDATE_DOWNLOADED", () => this._handleUpdateDownloaded(true)), f.Ay.on("UPDATE_MANUALLY", this._handleUpdateManually))
   }
@@ -90,7 +90,7 @@ class b extends Chunk439372.A {
         oldFormErrors: true,
         rejectWithError: true
       }).then(e => {
-        if (null == e.body || "adbe4af79b40ef5167e694c392356c627cf3dec9" === e.body.hash) return this._handleUpdateNotAvailable();
+        if (null == e.body || "bdbd7aeeea3941a6ebad4d53d49cf91df71f1601" === e.body.hash) return this._handleUpdateNotAvailable();
         if (e.body.required || (0, o.kK)()) return this._handleUpdateDownloaded(false);
         let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? h : m;
         if (Date.now() - g > t) return i.w.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(false)
@@ -123,4 +123,4 @@ class b extends Chunk439372.A {
     })
   }
 }
-let y = new b
+let b = new y

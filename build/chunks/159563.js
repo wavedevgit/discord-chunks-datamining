@@ -97,12 +97,12 @@ function E(e) {
   return null == e || "object" != typeof e || Object.isFrozen(e)
 }
 
-function b(e) {
+function y(e) {
   var t = Q[e];
   return t || r(18, e), t
 }
 
-function y(e, t) {
+function b(e, t) {
   Q[e] || (Q[e] = t)
 }
 
@@ -110,19 +110,19 @@ function O() {
   return G
 }
 
-function A(e, t) {
-  t && (b("Patches"), e.u = [], e.s = [], e.v = t)
+function v(e, t) {
+  t && (y("Patches"), e.u = [], e.s = [], e.v = t)
 }
 
-function v(e) {
-  S(e), e.p.forEach(T), e.p = null
-}
-
-function S(e) {
-  e === G && (G = e.l)
+function A(e) {
+  I(e), e.p.forEach(T), e.p = null
 }
 
 function I(e) {
+  e === G && (G = e.l)
+}
+
+function S(e) {
   return G = {
     p: [],
     l: G,
@@ -141,7 +141,7 @@ function C(e, t) {
   t._ = t.p.length;
   var n = t.p[0],
     i = true !== e && e !== n;
-  return t.h.O || b("ES5").S(t, e, i), i ? (n[K].P && (v(t), r(4)), a(e) && (e = N(t, e), t.l || w(t, e)), t.u && b("Patches").M(n[K].t, e, t.u, t.s)) : e = N(t, n, []), v(t), t.u && t.v(t.u, t.s), e !== Y ? e : true
+  return t.h.O || y("ES5").S(t, e, i), i ? (n[K].P && (A(t), r(4)), a(e) && (e = N(t, e), t.l || w(t, e)), t.u && y("Patches").M(n[K].t, e, t.u, t.s)) : e = N(t, n, []), A(t), t.u && t.v(t.u, t.s), e !== Y ? e : true
 }
 
 function N(e, t, n) {
@@ -159,7 +159,7 @@ function N(e, t, n) {
       o = false;
     3 === r.i && (a = new Set(i), i.clear(), o = true), s(a, function(t, a) {
       return R(e, r, i, t, a, n, o)
-    }), w(e, i, false), n && e.u && b("Patches").N(r, n, e.u, e.s)
+    }), w(e, i, false), n && e.u && y("Patches").N(r, n, e.u, e.s)
   }
   return r.o
 }
@@ -203,7 +203,7 @@ function L(e) {
 }
 
 function j(e, t, n) {
-  var r = f(t) ? b("MapSet").F(t, n) : p(t) ? b("MapSet").T(t, n) : e.O ? function(e, t) {
+  var r = f(t) ? y("MapSet").F(t, n) : p(t) ? y("MapSet").T(t, n) : e.O ? function(e, t) {
     var n = Array.isArray(e),
       r = {
         i: +!!n,
@@ -225,7 +225,7 @@ function j(e, t, n) {
       o = s.revoke,
       l = s.proxy;
     return r.k = l, r.j = o, l
-  }(t, n) : b("ES5").J(t, n);
+  }(t, n) : y("ES5").J(t, n);
   return (n ? n.A : O()).p.push(r), r
 }
 
@@ -236,7 +236,7 @@ function M(e) {
       var n, r = t[K],
         i = o(t);
       if (r) {
-        if (!r.P && (r.i < 4 || !b("ES5").K(r))) return r.t;
+        if (!r.P && (r.i < 4 || !y("ES5").K(r))) return r.t;
         r.I = true, n = k(t, i), r.I = false
       } else n = k(t, i);
       return s(n, function(t, i) {
@@ -360,25 +360,25 @@ var ee = new(function() {
           }
         }
         if ("function" != typeof n && r(6), true !== i && "function" != typeof i && r(7), a(e)) {
-          var c = I(t),
+          var c = S(t),
             u = j(t, e, true),
             d = true;
           try {
             s = n(u), d = false
           } finally {
-            d ? v(c) : S(c)
+            d ? A(c) : I(c)
           }
           return "u" > typeof Promise && s instanceof Promise ? s.then(function(e) {
-            return A(c, i), C(e, c)
+            return v(c, i), C(e, c)
           }, function(e) {
-            throw v(c), e
-          }) : (A(c, i), C(s, c))
+            throw A(c), e
+          }) : (v(c, i), C(s, c))
         }
         if (!e || "object" != typeof e) {
           if (true === (s = n(e)) && (s = e), s === Y && (s = true), t.D && m(s, true), i) {
             var f = [],
               p = [];
-            b("Patches").M(e, s, f, p), i(f, p)
+            y("Patches").M(e, s, f, p), i(f, p)
           }
           return s
         }
@@ -401,12 +401,12 @@ var ee = new(function() {
     var t = e.prototype;
     return t.createDraft = function(e) {
       a(e) || r(8), i(e) && (e = M(e));
-      var t = I(this),
+      var t = S(this),
         n = j(this, e, true);
-      return n[K].C = true, S(t), n
+      return n[K].C = true, I(t), n
     }, t.finishDraft = function(e, t) {
       var n = (e && e[K]).A;
-      return A(n, t), C(true, n)
+      return v(n, t), C(true, n)
     }, t.setAutoFreeze = function(e) {
       this.D = e
     }, t.setUseProxies = function(e) {
@@ -420,7 +420,7 @@ var ee = new(function() {
         }
       }
       n > false && (t = t.slice(n + 1));
-      var a = b("Patches").$;
+      var a = y("Patches").$;
       return i(e) ? a(e, t) : this.produce(e, function(e) {
         return a(e, t)
       })

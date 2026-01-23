@@ -23,13 +23,13 @@ function _(e) {
     claimableRewards: n,
     size: _,
     imageScaling: h = f
-  } = e, m = (0, i.bG)([l.default], () => l.default.getCurrentUser()), g = (0, i.bG)([s.A], () => s.A.useReducedMotion), E = (0, a.FT9)(_), b = {
+  } = e, m = (0, i.bG)([l.default], () => l.default.getCurrentUser()), g = (0, i.bG)([s.A], () => s.A.useReducedMotion), E = (0, a.FT9)(_), y = {
     height: E * h
   };
   return n.length > 0 ? (0, r.jsx)("img", {
     alt: "",
     src: t,
-    style: b
+    style: y
   }) : (0, r.jsxs)("div", {
     className: c.kL,
     children: [(1 === n.length || 2 === n.length) && (0, r.jsx)(a.JsQ, {

@@ -2,7 +2,7 @@
 /** chunk id: 976200, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -91,7 +91,7 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   var t, n;
   let {
     imageClass: a,
@@ -101,7 +101,7 @@ function b(e) {
     error: c,
     slotCount: f = 1,
     canceledCount: E = 0
-  } = e, b = i.useRef(o), y = null == (t = b.current) ? true : t.length, O = null == (n = b.current) ? true : n.reduce((e, t) => (e.hasOwnProperty(t.id) || (e[t.id] = []), e[t.id].push(t), e), {});
+  } = e, y = i.useRef(o), b = null == (t = y.current) ? true : t.length, O = null == (n = y.current) ? true : n.reduce((e, t) => (e.hasOwnProperty(t.id) || (e[t.id] = []), e[t.id].push(t), e), {});
   return (0, r.jsxs)(m, {
     imageClass: a,
     error: c,
@@ -112,7 +112,7 @@ function b(e) {
       variant: "text-xs/bold",
       className: h._N,
       children: _.intl.format(_.t["5zQYEz"], {
-        guildCount: null != y ? y : 0
+        guildCount: null != b ? b : 0
       })
     }), null != O ? p.default.keys(O).map(e => (0, r.jsx)(d.A, {
       className: h.vW,
@@ -137,7 +137,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     confirmation: t,
     confirmationLabel: n,
@@ -179,7 +179,7 @@ function O(e, t, n, r, i) {
     "aria-label": t
   }]
 }
-let A = e => {
+let v = e => {
   let {
     transitionState: t,
     onClose: n,
@@ -196,15 +196,15 @@ let A = e => {
     confirmation: h,
     confirmationLabel: m,
     isModifyingSubscription: g,
-    onConfirm: y,
-    onCancel: A,
-    error: v
-  } = e, S = O(h, m, g, y, A), I = () => f && null != _ ? (0, r.jsx)(b, {
+    onConfirm: b,
+    onCancel: v,
+    error: A
+  } = e, I = O(h, m, g, b, v), S = () => f && null != _ ? (0, r.jsx)(y, {
     imageClass: null != s ? s : "",
     blurb: a,
     fromGuilds: p,
     toGuild: _,
-    error: v,
+    error: A,
     slotCount: u,
     canceledCount: d
   }) : null != l ? (0, r.jsx)(E, {
@@ -212,7 +212,7 @@ let A = e => {
     blurb: a,
     guild: l,
     warning: c,
-    error: v,
+    error: A,
     slotCount: u,
     canceledCount: d
   }) : null;
@@ -223,12 +223,12 @@ let A = e => {
     children: [(0, r.jsx)(o.rQ0, {
       title: i
     }), (0, r.jsx)(o.cwr, {
-      children: I()
+      children: S()
     }), (0, r.jsx)(o.H7u, {
-      actions: S,
+      actions: I,
       actionsFullWidth: false
     })]
   })
 };
-A.ApplyBody = E, A.TransferBody = b, A.Footer = y;
-let v = A
+v.ApplyBody = E, v.TransferBody = y, v.Footer = b;
+let A = v

@@ -19,7 +19,7 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk473169 = require("./473169.js");
 
-function x(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,12 +28,12 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 Chunk311907.Ay.initialize();
-class _ extends(r = Chunk64700.PureComponent) {
+class x extends(r = Chunk64700.PureComponent) {
   componentDidMount() {
-    let e = (0, f.A)(this.props.location),
+    let e = (0, p.A)(this.props.location),
       t = (0, l.parse)(this.props.location.search);
     o.Bo.post({
-      url: g.Rsh.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
+      url: m.Rsh.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
       body: {
         token: e,
         pixel_uuid: t.hash,
@@ -58,8 +58,8 @@ class _ extends(r = Chunk64700.PureComponent) {
     })), (0, u.d)("disable_server_highlight_notifications")
   }
   renderBusy() {
-    return (0, i.jsx)(p.Ay, {
-      children: (0, i.jsx)(p.CK, {})
+    return (0, i.jsx)(g.Ay, {
+      children: (0, i.jsx)(g.CK, {})
     })
   }
   renderSuccess() {
@@ -69,27 +69,27 @@ class _ extends(r = Chunk64700.PureComponent) {
     } = this.props, {
       guild: n
     } = this.state;
-    return (0, i.jsxs)(p.Ay, {
-      children: [(0, i.jsx)(p.hE, {
-        className: A.QB,
-        children: m.intl.string(m.t.Z33eiP)
-      }), (0, i.jsx)(p.tK, {
-        children: m.intl.format(m.t.NRWtfC, {
+    return (0, i.jsxs)(g.Ay, {
+      children: [(0, i.jsx)(g.hE, {
+        className: _.QB,
+        children: f.intl.string(f.t.Z33eiP)
+      }), (0, i.jsx)(g.tK, {
+        children: f.intl.format(f.t.NRWtfC, {
           guildName: n.name
         })
       }), (0, i.jsx)("div", {
-        className: A.eT,
+        className: _.eT,
         children: (0, i.jsx)(c.Button, {
-          text: m.intl.string(m.t.fIv16B),
+          text: f.intl.string(f.t.fIv16B),
           fullWidth: true,
           onClick: () => t(e)
         })
       }), (0, i.jsx)("div", {
-        className: A.Ot,
+        className: _.Ot,
         children: (0, i.jsx)(c.QWc, {
-          text: m.intl.string(m.t["cGmT/J"]),
+          text: f.intl.string(f.t["cGmT/J"]),
           onClick: () => {
-            t(g.BVt.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
+            t(m.BVt.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
           }
         })
       })]
@@ -100,19 +100,19 @@ class _ extends(r = Chunk64700.PureComponent) {
       defaultRoute: e,
       transitionTo: t
     } = this.props;
-    return (0, i.jsxs)(p.Ay, {
-      children: [(0, i.jsx)(p._V, {
+    return (0, i.jsxs)(g.Ay, {
+      children: [(0, i.jsx)(g._V, {
         src: n(37772),
-        className: A.SX
-      }), (0, i.jsx)(p.hE, {
-        className: A.QB,
-        children: m.intl.string(m.t.ox9hIS)
-      }), (0, i.jsx)(p.tK, {
-        children: m.intl.string(m.t["/dcuR5"])
+        className: _.SX
+      }), (0, i.jsx)(g.hE, {
+        className: _.QB,
+        children: f.intl.string(f.t.ox9hIS)
+      }), (0, i.jsx)(g.tK, {
+        children: f.intl.string(f.t["/dcuR5"])
       }), (0, i.jsx)("div", {
-        className: A.eT,
+        className: _.eT,
         children: (0, i.jsx)(c.Button, {
-          text: m.intl.string(m.t.fIv16B),
+          text: f.intl.string(f.t.fIv16B),
           fullWidth: true,
           onClick: () => t(e)
         })
@@ -127,16 +127,16 @@ class _ extends(r = Chunk64700.PureComponent) {
     return e ? this.renderBusy() : t ? this.renderSuccess() : this.renderError()
   }
   constructor(...e) {
-    super(...e), x(this, "state", {
+    super(...e), A(this, "state", {
       busy: true,
       success: false,
       guild: null
     })
   }
 }
-x(_, "defaultProps", {
+A(x, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
 let E = Chunk311907.Ay.connectStores([Chunk650048.A], () => ({
   defaultRoute: d.A.defaultRoute
-}))(_)
+}))(x)

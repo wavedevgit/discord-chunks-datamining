@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk64700 = require("./64700.js"),
   Chunk451988 = require("./451988.js");
 
-function a(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -14,7 +14,7 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class s extends(r = Chunk64700.Component) {
+class a extends(r = Chunk64700.Component) {
   componentDidMount() {
     this.update(), this._interval.start(this.props.updateInterval, this.update)
   }
@@ -26,17 +26,17 @@ class s extends(r = Chunk64700.Component) {
       numUpdatesToShow: t,
       updateInterval: n,
       pointsToSmooth: r
-    } = this.props, l = Date.now(), i = 0, a = 0, s = [], o = null != e[0] ? e[0].bytes : 0;
+    } = this.props, l = Date.now(), i = 0, s = 0, a = [], o = null != e[0] ? e[0].bytes : 0;
     for (; i < t + r; i++) {
       let t, r = l - (i + 1) * n;
-      for (; a < e.length;)
-        if ((t = e[a]).timestamp > r) a++;
+      for (; s < e.length;)
+        if ((t = e[s]).timestamp > r) s++;
         else break;
-      if (a === e.length) break;
-      null != t && (s.push(o - t.bytes), o = t.bytes)
+      if (s === e.length) break;
+      null != t && (a.push(o - t.bytes), o = t.bytes)
     }
-    for (; i < t + r; i++) s.push(0);
-    return s.reverse(), s
+    for (; i < t + r; i++) a.push(0);
+    return a.reverse(), a
   }
   smoothDeltaBytes(e) {
     let {
@@ -58,16 +58,16 @@ class s extends(r = Chunk64700.Component) {
     return n(this.state.smoothedDeltaBytes, t, e)
   }
   constructor(e) {
-    super(e), a(this, "_interval", new i.IX), a(this, "update", () => {
+    super(e), s(this, "_interval", new i.IX), s(this, "update", () => {
       let {
         onUpdate: e,
         numUpdatesToShow: t,
         pointsToSmooth: n,
         updateInterval: r
-      } = this.props, l = this.props.getHistoricalTotalBytes(), i = null != l[0] ? l[0].bytes : 0, a = [...this.state.deltaBytes.slice(1, t + n), i - this.state.lastTotalBytes];
+      } = this.props, l = this.props.getHistoricalTotalBytes(), i = null != l[0] ? l[0].bytes : 0, s = [...this.state.deltaBytes.slice(1, t + n), i - this.state.lastTotalBytes];
       this.setState({
-        deltaBytes: a,
-        smoothedDeltaBytes: this.smoothDeltaBytes(a),
+        deltaBytes: s,
+        smoothedDeltaBytes: this.smoothDeltaBytes(s),
         lastTotalBytes: i
       }, () => null != e && e(r))
     });
@@ -80,9 +80,9 @@ class s extends(r = Chunk64700.Component) {
     }
   }
 }
-a(s, "defaultProps", {
+s(a, "defaultProps", {
   numUpdatesToShow: 30,
   updateInterval: 500,
   pointsToSmooth: 10
 });
-let o = s
+let o = a

@@ -1,7 +1,7 @@
 /** Chunk was on 90410 **/
-/** chunk id: 126033, original params: e,t,a (module,exports,require) **/
+/** chunk id: 126033, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  EmojiAddModal: () => u
+  EmojiAddModal: () => j
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,29 +16,29 @@ var Chunk627968 = require("./627968.js"),
 function h(e) {
   let {
     emoji: t,
-    onChange: a,
+    onChange: i,
     value: n
-  } = e, s = r.Ay.getEmojiURL({
+  } = e, s = d.Ay.getEmojiURL({
     id: t.id,
     animated: t.animated,
     size: 24
   });
-  return (0, i.jsx)(d.Kj, {
+  return (0, a.jsx)(l.Kj, {
     size: 20,
     className: m.nI,
-    onChange: a,
-    type: d.Xo.INVERTED,
+    onChange: i,
+    type: l.Xo.INVERTED,
     value: n,
     reverse: true,
-    children: (0, i.jsxs)("div", {
+    children: (0, a.jsxs)("div", {
       className: m.H1,
-      children: [(0, i.jsx)("img", {
+      children: [(0, a.jsx)("img", {
         className: m.mp,
         src: s,
         width: 24,
         height: 24,
         alt: ""
-      }), (0, i.jsx)(l.Text, {
+      }), (0, a.jsx)(r.Text, {
         color: "text-strong",
         variant: "text-md/medium",
         className: m.JN,
@@ -48,49 +48,49 @@ function h(e) {
   })
 }
 
-function u(e) {
+function j(e) {
   let {
     guildId: t,
-    initialTierEmojiIds: a,
-    onSubmit: d,
-    transitionToManageEmoji: r,
-    transitionState: u,
-    onClose: x
-  } = e, j = (0, c.A)(t), [p, f] = n.useState(new Set), v = p.size > 0;
-  return (0, i.jsx)(s.Modal, {
-    transitionState: u,
-    onClose: x,
-    title: o.intl.string(o.t.xC6tUv),
+    initialTierEmojiIds: i,
+    onSubmit: l,
+    transitionToManageEmoji: d,
+    transitionState: j,
+    onClose: u
+  } = e, x = (0, o.A)(t), [p, v] = n.useState(new Set), _ = p.size > 0;
+  return (0, a.jsx)(s.Modal, {
+    transitionState: j,
+    onClose: u,
+    title: c.intl.string(c.t.xC6tUv),
     actions: [{
-      text: o.intl.string(o.t["ETE/oC"]),
+      text: c.intl.string(c.t["ETE/oC"]),
       variant: "secondary",
-      onClick: x
+      onClick: u
     }, {
-      text: o.intl.format(o.t.pX74jh, {
+      text: c.intl.format(c.t.pX74jh, {
         totalEmoji: p.size
       }),
       variant: "primary",
       onClick: function() {
-        d(p), x()
+        l(p), u()
       },
-      disabled: !v
+      disabled: !_
     }],
-    children: (0, i.jsxs)(l.BJc, {
+    children: (0, a.jsxs)(r.BJc, {
       gap: "md",
-      children: [(0, i.jsx)(l.Text, {
+      children: [(0, a.jsx)(r.Text, {
         variant: "text-md/normal",
-        children: o.intl.format(o.t["OnK+C1"], {
-          transitionToManageEmoji: r
+        children: c.intl.format(c.t["OnK+C1"], {
+          transitionToManageEmoji: d
         })
-      }), null != j && j.length > 0 && (0, i.jsx)("div", {
+      }), null != x && x.length > 0 && (0, a.jsx)("div", {
         className: m.qq,
-        children: j.map(e => null != a && a.has(e.id) ? null : (0, i.jsx)(h, {
+        children: x.map(e => null != i && i.has(e.id) ? null : (0, a.jsx)(h, {
           emoji: e,
           onChange: () => {
             var t;
-            return t = e.id, void f(e => {
-              let a = new Set(e);
-              return p.has(t) ? a.delete(t) : a.add(t), a
+            return t = e.id, void v(e => {
+              let i = new Set(e);
+              return p.has(t) ? i.delete(t) : i.add(t), i
             })
           },
           value: p.has(e.id)

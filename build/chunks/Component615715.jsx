@@ -22,31 +22,31 @@ let _ = Chunk64700.forwardRef(function(e, t) {
     transitionState: h,
     reason: m,
     layerContext: g
-  } = e, E = (0, a.bG)([u.default], () => u.default.getCurrentUser()), b = (0, a.bG)([c.A], () => c.A.getAction()), [y, O] = i.useState(null), [A, v] = i.useState(null), [S, I] = i.useState(null), [T, C] = i.useState(false), N = i.useCallback(async e => {
+  } = e, E = (0, a.bG)([u.default], () => u.default.getCurrentUser()), y = (0, a.bG)([c.A], () => c.A.getAction()), [b, O] = i.useState(null), [v, A] = i.useState(null), [I, S] = i.useState(null), [T, C] = i.useState(false), N = i.useCallback(async e => {
     C(true);
     try {
-      d.A.isPhoneReverification(E, b) ? await o.A.beginReverifyPhone(e, m) : await o.A.beginAddPhone(e, m), I(null), O(e)
+      d.A.isPhoneReverification(E, y) ? await o.A.beginReverifyPhone(e, m) : await o.A.beginAddPhone(e, m), S(null), O(e)
     } catch (e) {
-      I(new s.A(e))
+      S(new s.A(e))
     }
     C(false)
-  }, [E, m, b]), R = i.useCallback(async e => {
-    if (null != y && null != E) {
+  }, [E, m, y]), R = i.useCallback(async e => {
+    if (null != b && null != E) {
       C(true);
       try {
         let {
           token: t
-        } = await o.A.verifyPhone(y, e);
-        I(null), v(t)
+        } = await o.A.verifyPhone(b, e);
+        S(null), A(t)
       } catch (e) {
-        I(new s.A(e))
+        S(new s.A(e))
       }
       C(false)
     }
-  }, [E, y]), w = i.useCallback(async e => {
-    null != A && (d.A.isPhoneReverification(E, b) ? await o.A.reverifyPhone(A, e, m) : await o.A.addPhone(A, e, m), null == n || n(), _())
-  }, [n, _, A, m, E, b]);
-  return null != A ? (0, r.jsx)(f.default, {
+  }, [E, b]), w = i.useCallback(async e => {
+    null != v && (d.A.isPhoneReverification(E, y) ? await o.A.reverifyPhone(v, e, m) : await o.A.addPhone(v, e, m), null == n || n(), _())
+  }, [n, _, v, m, E, y]);
+  return null != v ? (0, r.jsx)(f.default, {
     onClose: _,
     transitionState: h,
     title: p.intl.string(p.t.ZtCDc2),
@@ -54,9 +54,9 @@ let _ = Chunk64700.forwardRef(function(e, t) {
   }) : (0, r.jsx)(l.default, {
     onClose: _,
     transitionState: h,
-    error: null == S ? true : S.getAnyErrorMessage(),
+    error: null == I ? true : I.getAnyErrorMessage(),
     working: T,
-    validPhone: null != y,
+    validPhone: null != b,
     onAddPhone: N,
     onVerifyPhone: R,
     layerContext: g

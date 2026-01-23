@@ -22,13 +22,13 @@ function c(e) {
     onError: p,
     skipErrorMsgAbortCode: _,
     onPasswordChange: h
-  } = e, [m, g] = i.useState(""), [E, b] = i.useState(null), [y, O] = i.useState(false), A = e => null != _ && (null == e ? true : e.code) === _, v = e => {
+  } = e, [m, g] = i.useState(""), [E, y] = i.useState(null), [b, O] = i.useState(false), v = e => null != _ && (null == e ? true : e.code) === _, A = e => {
     e.preventDefault(), O(true), f(m).then(e => d(null != e ? e : true), e => {
-      null == e.body || (null == p || p(e.body), !A(e.body) && (e.body.password ? (b(e.body.password), O(false)) : e.body.message && (b(e.body.message), O(false))))
+      null == e.body || (null == p || p(e.body), !v(e.body) && (e.body.password ? (y(e.body.password), O(false)) : e.body.message && (y(e.body.message), O(false))))
     }).finally(() => O(false))
-  }, S = e => {
+  }, I = e => {
     null == h || h(e), g(e)
-  }, I = i.useCallback(async () => {
+  }, S = i.useCallback(async () => {
     await d()
   }, [d]), T = i.Children.count(c) > 0 ? (0, r.jsx)(s.ZpM, {
     type: s.ZpM.Types.WARNING,
@@ -40,19 +40,19 @@ function c(e) {
     })
   }) : null;
   return (0, r.jsx)("form", {
-    onSubmit: v,
+    onSubmit: A,
     children: (0, r.jsxs)(a.aFV, {
       title: t,
       actions: [{
         text: o.intl.string(o.t["ETE/oC"]),
-        onClick: I,
+        onClick: S,
         variant: "secondary"
       }, {
         text: null != n ? n : o.intl.string(o.t["cY+Oob"]),
         type: "submit",
-        disabled: y || 0 === m.length
+        disabled: b || 0 === m.length
       }],
-      onClose: I,
+      onClose: S,
       transitionState: u,
       children: [T, (0, r.jsxs)("div", {
         className: l.YK,
@@ -62,7 +62,7 @@ function c(e) {
           autoComplete: "current-password",
           autoFocus: true,
           value: m,
-          onChange: S,
+          onChange: I,
           required: true
         }), null != E && "" !== E ? (0, r.jsxs)(s.Text, {
           variant: "text-xs/normal",

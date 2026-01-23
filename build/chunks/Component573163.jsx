@@ -2,7 +2,7 @@
 /** chunk id: 573163, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 }), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -41,7 +41,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,19 +52,19 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let O = (e, t) => null == e && null == t || e === t,
-  A = (e, t) => e.findIndex(e => O(e.emoji.id, null == t ? true : t.id) && O(e.emoji.name, null == t ? true : t.name)),
-  v = (e, t) => {
+  v = (e, t) => e.findIndex(e => O(e.emoji.id, null == t ? true : t.id) && O(e.emoji.name, null == t ? true : t.name)),
+  A = (e, t) => {
     if (null == t) return e;
-    let n = A(e, t);
+    let n = v(e, t);
     return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
   };
-class S extends Chunk64700.PureComponent {
+class I extends Chunk64700.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let n = e.message.reactions.length;
     return 0 === t.reactionsCount && n > 0 ? {
@@ -84,22 +84,22 @@ class S extends Chunk64700.PureComponent {
       isPendingMember: c,
       isForumToolbar: g,
       channel: E,
-      className: b,
-      forceAddReactions: y,
+      className: y,
+      forceAddReactions: b,
       reactionClassName: O,
-      useChatFontScaling: A,
-      forceHideReactionCreates: v,
-      remainingReactions: S,
-      combinedReactions: I,
+      useChatFontScaling: v,
+      forceHideReactionCreates: A,
+      remainingReactions: I,
+      combinedReactions: S,
       visibleReactionsCount: T
     } = this.props, {
       disableTransitionAppear: C
-    } = this.state, N = A ? m : h, R = T > 0;
-    if (!R && !y) return null;
-    let w = y || R;
+    } = this.state, N = v ? m : h, R = T > 0;
+    if (!R && !b) return null;
+    let w = b || R;
     return (0, r.jsxs)(o.F, {
       component: "div",
-      className: s()(N.reactions, b),
+      className: s()(N.reactions, y),
       transitionAppear: !C,
       role: "group",
       transitionLeave: false,
@@ -111,16 +111,16 @@ class S extends Chunk64700.PureComponent {
         isHovered: false
       }),
       children: [(0, r.jsx)(f.A, {
-        reactions: I,
+        reactions: S,
         message: e,
         readOnly: n,
         isLurking: i,
         isGuest: a,
         isPendingMember: c,
         isForumToolbar: g,
-        useChatFontScaling: A,
+        useChatFontScaling: v,
         className: O
-      }), S > 0 && (0, r.jsx)(l.DUT, {
+      }), I > 0 && (0, r.jsx)(l.DUT, {
         onClick: t => {
           t.stopPropagation(), (0, p.$l)(E, e)
         },
@@ -129,13 +129,13 @@ class S extends Chunk64700.PureComponent {
         children: (0, r.jsxs)(l.Text, {
           className: N.reactionInner,
           variant: "text-sm/normal",
-          children: ["+", S]
+          children: ["+", I]
         })
-      }), !t && !v && (0, r.jsx)(u.t, {
+      }), !t && !A && (0, r.jsx)(u.t, {
         tabIndex: w || this.state.isHovered ? 0 : false,
         message: e,
         channel: E,
-        useChatFontScaling: A,
+        useChatFontScaling: v,
         isHovered: this.state.isHovered,
         className: s()({
           [N.forceShow]: w
@@ -151,7 +151,7 @@ class S extends Chunk64700.PureComponent {
     })
   }
 }
-let I = e => {
+let S = e => {
   let {
     message: t,
     maxReactions: n,
@@ -162,14 +162,14 @@ let I = e => {
     visibleReactionsCount: l
   } = i.useMemo(() => {
     let e = [],
-      r = v(t.reactions, a),
+      r = A(t.reactions, a),
       i = null != n && n < r.length ? r.slice(0, n) : r,
       s = r.length - i.length,
       o = r.length;
     return i.forEach(t => {
-      t.burst_count > 0 && e.push(y(E({}, t), {
+      t.burst_count > 0 && e.push(b(E({}, t), {
         type: c.v.BURST
-      })), t.count > 0 && e.push(y(E({}, t), {
+      })), t.count > 0 && e.push(b(E({}, t), {
         type: c.v.NORMAL
       })), null != t.me_vote && --o
     }), {
@@ -178,7 +178,7 @@ let I = e => {
       remainingReactions: s
     }
   }, [a, n, t.reactions]);
-  return (0, r.jsx)(S, y(E({}, e), {
+  return (0, r.jsx)(I, b(E({}, e), {
     visibleReactionsCount: l,
     combinedReactions: s,
     remainingReactions: o

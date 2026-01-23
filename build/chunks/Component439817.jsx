@@ -21,7 +21,7 @@ let h = function(e) {
       renderSettings: p,
       onDragStart: f
     } = e,
-    b = r.useRef(null);
+    g = r.useRef(null);
   return t = null != n ? (0, i.jsxs)(a.Ay.Bar, {
     className: l()(u.wx, u.bl),
     onMouseDown: f,
@@ -31,7 +31,7 @@ let h = function(e) {
       children: n
     }), (0, i.jsx)(a.Ay.Content, {
       children: (0, i.jsx)(o.YNO, {
-        targetElementRef: b,
+        targetElementRef: g,
         position: "right",
         renderPopout: null != p ? p : c.tEg,
         autoInvert: false,
@@ -57,7 +57,7 @@ let h = function(e) {
           }({}, e), n = n = {
             icon: o.Zes,
             label: d.intl.string(d.t["3D5yo/"]),
-            ref: b
+            ref: g
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

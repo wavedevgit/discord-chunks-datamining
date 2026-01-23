@@ -1,7 +1,7 @@
 /** Chunk was on 58652 **/
 /** chunk id: 883471, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => c
+  A: () => d
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -10,10 +10,10 @@ var Chunk397927 = require("./397927.js"),
   Chunk71393 = require("./71393.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk75271 = require("./75271.js");
-let c = e => {
+let d = e => {
   let {
     stageInstance: t
-  } = e, n = i.A.getGuild(t.guild_id);
+  } = e, n = a.A.getGuild(t.guild_id);
   return null == n ? null : (0, l.jsxs)("div", {
     className: o.kL,
     children: [(0, l.jsx)(r.Heading, {
@@ -24,9 +24,9 @@ let c = e => {
       className: o.bo,
       children: [(0, l.jsxs)("div", {
         className: o.OA,
-        children: [(0, l.jsx)(a.A, {
+        children: [(0, l.jsx)(i.A, {
           guild: n,
-          size: a.A.Sizes.MINI,
+          size: i.A.Sizes.MINI,
           className: o.$f
         }), (0, l.jsx)(r.Text, {
           color: "text-default",

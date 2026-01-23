@@ -2,7 +2,7 @@
 /** chunk id: 276055, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b,
+  A: () => y,
   l: () => g
 });
 var Chunk627968 = require("./627968.js"),
@@ -30,7 +30,7 @@ function E(e) {
     onToggleExpand: f,
     expanded: g,
     expandedCount: E
-  } = e, b = (0, a.bG)([u.A], () => u.A.hidden), y = i.useCallback(e => {
+  } = e, y = (0, a.bG)([u.A], () => u.A.hidden), b = i.useCallback(e => {
     (0, o.L3)(e, async () => {
       let {
         MemberListContentSettingsMenu: e
@@ -41,7 +41,7 @@ function E(e) {
     })
   }, []), O = () => {
     let e;
-    return E <= 3 && !b ? null : (e = b ? (0, r.jsx)(s.tN5, {
+    return E <= 3 && !y ? null : (e = y ? (0, r.jsx)(s.tN5, {
       className: h.wT
     }) : g ? (0, r.jsx)(s.abt, {
       className: h.wT
@@ -64,9 +64,9 @@ function E(e) {
       })
     }), (0, r.jsxs)(s.DUT, {
       onClick: e => {
-        if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return b ? (0, c.Il)() : E > 3 ? f() : (0, p.tEg)()
+        if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return y ? (0, c.Il)() : E > 3 ? f() : (0, p.tEg)()
       },
-      onContextMenu: y,
+      onContextMenu: b,
       tag: "span",
       "aria-hidden": true,
       className: h.N1,
@@ -79,4 +79,4 @@ function E(e) {
     })]
   })
 }
-let b = Chunk64700.memo(E)
+let y = Chunk64700.memo(E)

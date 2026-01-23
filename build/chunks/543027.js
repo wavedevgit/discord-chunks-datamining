@@ -36,7 +36,7 @@ function p(e, t) {
     m = (0, r.useRef)(""),
     g = (0, r.useRef)(false),
     E = (0, r.useRef)(false),
-    b = (0, r.useRef)(null);
+    y = (0, r.useRef)(null);
   (0, r.useEffect)(() => {
     if (!_ || null == d || null == t.paymentSourceId) return;
     let e = t.paymentSourceId;
@@ -53,8 +53,8 @@ function p(e, t) {
       }), h.current = d, m.current = e)
     }(h.current !== d || m.current !== e) && r()
   }, [d, n, t.paymentSourceId, _]), (0, r.useEffect)(() => {
-    let e = b.current;
-    b.current = d, null == d && null != e ? (E.current = true, h.current = null, m.current = "", g.current = false) : null != d && (E.current = false)
+    let e = y.current;
+    y.current = d, null == d && null != e ? (E.current = true, h.current = null, m.current = "", g.current = false) : null != d && (E.current = false)
   }, [d]), (0, r.useEffect)(() => {
     var n;
     if (null != d) {

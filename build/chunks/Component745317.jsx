@@ -2,8 +2,8 @@
 /** chunk id: 745317, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S,
-  k: () => v
+  A: () => I,
+  k: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,7 +26,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk602785 = require("./602785.js");
 
-function v() {
+function A() {
   let [e, t] = i.useState(false), n = (0, a.bG)([h.A], () => h.A.isMediaFilterSettingLoading());
   return (i.useEffect(() => {
     let e = new s.Ep;
@@ -34,31 +34,31 @@ function v() {
       t(true)
     }) : (e.stop(), t(false)), () => e.stop()
   }, [n]), e) ? (0, r.jsx)("div", {
-    className: A.mB,
+    className: v.mB,
     children: (0, r.jsx)(o.y$y, {})
   }) : null
 }
 
-function S(e) {
+function I(e) {
   let {
     hideDeviceSelector: t = false,
     hideDeviceHeader: n = false,
     hideCameraSettingsLink: i = false,
     onLearnMore: s,
-    selectedBackgroundOption: v,
-    onSelectBackgroundOption: S,
-    renderCamera: I,
+    selectedBackgroundOption: A,
+    onSelectBackgroundOption: I,
+    renderCamera: S,
     hidePreviewToggle: T = false,
     onCancelPreview: C
   } = e, {
     analyticsLocations: N
   } = (0, c.Ay)(), {
     id: R
-  } = (0, d.x5)(y.oh.VIDEO_INPUT), w = (0, a.bG)([h.A], () => h.A.isVideoAvailable()), P = p.bm.useSetting();
+  } = (0, d.x5)(b.oh.VIDEO_INPUT), w = (0, a.bG)([h.A], () => h.A.isVideoAvailable()), P = p.bm.useSetting();
   return (0, r.jsxs)(o.BJc, {
     gap: 20,
-    children: [I(R), h.A.isEnabled() ? null : (0, r.jsx)(o.Text, {
-      className: A.u5,
+    children: [S(R), h.A.isEnabled() ? null : (0, r.jsx)(o.Text, {
+      className: v.u5,
       color: "interactive-text-default",
       variant: "text-sm/normal",
       children: O.intl.format(O.t.stagfJ, {
@@ -74,7 +74,7 @@ function S(e) {
         })
       }
     }), !t && (0, r.jsx)(f.x, {
-      setting: b.H.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW,
+      setting: y.H.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW,
       children: (0, r.jsx)(u.U, {
         label: n ? true : O.intl.string(O.t.FsQ3OR),
         helperText: !i && (0, g.p)() ? O.intl.format(O.t.aJYgRt, {
@@ -84,18 +84,18 @@ function S(e) {
             })
           }
         }) : true,
-        deviceType: y.oh.VIDEO_INPUT,
+        deviceType: b.oh.VIDEO_INPUT,
         location: "CameraSettings",
         isDisabled: !w,
         showAllDevices: true
       })
     }), (0, r.jsx)(f.x, {
-      setting: b.H.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
+      setting: y.H.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
       children: (0, r.jsx)(_.A, {
-        className: A.Jp,
+        className: v.Jp,
         onLearnMore: s,
-        selectedBackgroundOption: v,
-        onSelectBackgroundOption: S,
+        selectedBackgroundOption: A,
+        onSelectBackgroundOption: I,
         currentDeviceId: R
       })
     })]

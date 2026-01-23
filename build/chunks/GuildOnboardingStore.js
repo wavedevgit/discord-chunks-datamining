@@ -77,10 +77,10 @@ function E(e) {
   d[t] = n
 }
 
-function b() {
+function y() {
   d = {}
 }
-class y extends(r = Chunk311907.Ay.Store) {
+class b extends(r = Chunk311907.Ay.Store) {
   shouldShowOnboarding(e) {
     return e !== s.ME && e !== s.YYv && !!c(u[e])
   }
@@ -95,8 +95,8 @@ class y extends(r = Chunk311907.Ay.Store) {
     return null != (t = d[e]) ? t : "cover"
   }
 }
-o(y, "displayName", "GuildOnboardingStore");
-let O = new y(Chunk73153.h, {
+o(b, "displayName", "GuildOnboardingStore");
+let O = new b(Chunk73153.h, {
   LOGOUT: f,
   GUILD_DELETE: g,
   GUILD_ONBOARDING_START: p,
@@ -104,5 +104,5 @@ let O = new y(Chunk73153.h, {
   GUILD_ONBOARDING_PROMPTS_FETCH_FAILURE: h,
   GUILD_ONBOARDING_COMPLETE: m,
   GUILD_ONBOARDING_SET_STEP: E,
-  CONNECTION_OPEN: b
+  CONNECTION_OPEN: y
 })

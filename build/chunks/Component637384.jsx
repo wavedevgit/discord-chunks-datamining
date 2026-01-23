@@ -24,8 +24,8 @@ function A(e) {
   let {
     summary: t,
     channel: n
-  } = e, l = (0, s.bG)([f.A], () => f.A.summaryFeedback(t)), i = (e, r) => {
-    e.stopPropagation(), (0, p.A)({
+  } = e, l = (0, a.bG)([p.A], () => p.A.summaryFeedback(t)), i = (e, r) => {
+    e.stopPropagation(), (0, h.A)({
       summary: t,
       channel: n,
       rating: r
@@ -51,25 +51,25 @@ function A(e) {
   }, "animate-always");
   return (0, r.jsx)(r.Fragment, {
     children: c((e, t) => t ? (0, r.jsx)("div", {
-      className: m.RD,
-      children: (0, r.jsxs)(a.animated.div, {
+      className: b.RD,
+      children: (0, r.jsxs)(s.animated.div, {
         style: e,
-        className: m.GK,
+        className: b.GK,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-xs/medium",
           color: "interactive-text-default",
-          children: g.intl.string(g.t["5ZsiE9"])
+          children: m.intl.string(m.t["5ZsiE9"])
         }), (0, r.jsx)(o.DUT, {
-          onClick: e => i(e, h.P0.GOOD),
+          onClick: e => i(e, f.P0.GOOD),
           children: (0, r.jsx)(d.A, {
-            className: m.O1,
+            className: b.O1,
             width: 12,
             height: 12
           })
         }), (0, r.jsx)(o.DUT, {
-          onClick: e => i(e, h.P0.BAD),
+          onClick: e => i(e, f.P0.BAD),
           children: (0, r.jsx)(u.A, {
-            className: m.O1,
+            className: b.O1,
             width: 12,
             height: 12
           })
@@ -82,34 +82,34 @@ function A(e) {
 function y(e) {
   var t, n;
   let l, {
-      item: a,
+      item: s,
       channel: u,
       index: d
     } = e,
-    p = (0, s.bG)([f.A], () => f.A.selectedSummary(u.id));
-  if (null == p) return null;
-  let h = null != a.unreadId,
-    g = null != a.content;
-  return l = g ? (0, r.jsxs)(r.Fragment, {
+    h = (0, a.bG)([p.A], () => p.A.selectedSummary(u.id));
+  if (null == h) return null;
+  let f = null != s.unreadId,
+    m = null != s.content;
+  return l = m ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.Kck, {
       size: "xs",
       color: "currentColor",
-      className: m.cR
-    }), a.content]
+      className: b.cR
+    }), s.content]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(A, {
-      summary: p,
+      summary: h,
       channel: u
     }), (0, r.jsx)(o.Kck, {
       size: "xs",
       color: "currentColor",
-      className: m.Jq
+      className: b.Jq
     })]
   }), (0, r.jsx)(c.A, {
-    className: i()(m.aK, g ? m.Ke : m.hO),
-    contentClassName: g ? m.Ew : m.rD,
-    isUnread: h,
-    id: h ? b.q4 : true,
+    className: i()(b.aK, m ? b.Ke : b.hO),
+    contentClassName: m ? b.Ew : b.rD,
+    isUnread: f,
+    id: f ? g.q4 : true,
     children: l
-  }, "divider-".concat(null != (t = null != (n = a.contentKey) ? n : a.unreadId) ? t : d))
+  }, "divider-".concat(null != (t = null != (n = s.contentKey) ? n : s.unreadId) ? t : d))
 }

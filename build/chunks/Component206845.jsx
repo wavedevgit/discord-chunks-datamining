@@ -2,7 +2,7 @@
 /** chunk id: 206845, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -73,12 +73,12 @@ function E(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let b = Chunk927813.A.Millis.SECOND,
-  y = 2 * b,
+let y = Chunk927813.A.Millis.SECOND,
+  b = 2 * y,
   O = Chunk927813.A.Millis.HALF_SECOND,
-  A = [() => f.intl.string(f.t.MSaeTe), () => f.intl.string(f.t.UmrCw7), () => f.intl.string(f.t.gKE0Jq), () => f.intl.string(f.t["4DSKbi"]), () => f.intl.string(f.t["+8ENdT"]), () => f.intl.string(f.t.GlWHv8), () => f.intl.string(f.t.hIzxU9), () => f.intl.string(f.t["26uMPL"]), () => f.intl.string(f.t.uFs7R2), () => f.intl.string(f.t.bLXdcY), () => f.intl.string(f.t.gPg9fS)];
+  v = [() => f.intl.string(f.t.MSaeTe), () => f.intl.string(f.t.UmrCw7), () => f.intl.string(f.t.gKE0Jq), () => f.intl.string(f.t["4DSKbi"]), () => f.intl.string(f.t["+8ENdT"]), () => f.intl.string(f.t.GlWHv8), () => f.intl.string(f.t.hIzxU9), () => f.intl.string(f.t["26uMPL"]), () => f.intl.string(f.t.uFs7R2), () => f.intl.string(f.t.bLXdcY), () => f.intl.string(f.t.gPg9fS)];
 
-function v(e) {
+function A(e) {
   let {
     text: t,
     copyValue: n,
@@ -87,30 +87,30 @@ function v(e) {
     "aria-label": p,
     delay: h = O,
     dataMeticulousIgnore: E
-  } = e, [v, S] = i.useState(0), [I, T] = i.useState(false), [C, N] = i.useState(false), [R] = i.useState(() => new s.Ep), [w] = i.useState(() => new s.Ep);
+  } = e, [A, I] = i.useState(0), [S, T] = i.useState(false), [C, N] = i.useState(false), [R] = i.useState(() => new s.Ep), [w] = i.useState(() => new s.Ep);
   if (i.useEffect(() => () => {
       R.stop(), w.stop()
     }, [R, w]), !c.p5) return (0, r.jsx)(r.Fragment, {
     children: u({})
   });
-  let P = v >= A.length - 1,
+  let P = A >= v.length - 1,
     D = P ? o.oMw.RED : o.oMw.GREEN,
-    x = I ? D : o.oMw.PRIMARY,
+    x = S ? D : o.oMw.PRIMARY,
     L = () => {
       var e;
-      if (!I) return t;
-      let n = (0, a.clamp)(v - 1, 0, A.length - 1),
-        i = null != (e = A[n]) ? e : A[0];
+      if (!S) return t;
+      let n = (0, a.clamp)(A - 1, 0, v.length - 1),
+        i = null != (e = v[n]) ? e : v[0];
       return (0, r.jsx)(o.bfh, {
         isShaking: P,
         children: i()
       })
     },
     j = (e, t) => {
-      !C && I && t.phase === d.lLE.LEAVE && T(false)
+      !C && S && t.phase === d.lLE.LEAVE && T(false)
     },
     M = () => {
-      null == f || f(), (0, c.C)(n), l.default.track(d.HAw.TEXT_COPIED), C || S(v + 1), N(true), T(true), R.start(b, () => N(false)), w.start(y, () => S(0))
+      null == f || f(), (0, c.C)(n), l.default.track(d.HAw.TEXT_COPIED), C || I(A + 1), N(true), T(true), R.start(y, () => N(false)), w.start(b, () => I(0))
     };
   return (0, r.jsx)(o.STz, {
     text: L(),
@@ -130,7 +130,7 @@ function v(e) {
           null == t || t(), M()
         },
         onMouseEnter: () => {
-          if (!I) {
+          if (!S) {
             null == n || n();
             return
           }

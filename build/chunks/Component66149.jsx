@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk889137 = require("./889137.js"),
   Chunk397927 = require("./397927.js"),
   Chunk375901 = require("./375901.js"),
@@ -25,42 +25,42 @@ function A(e) {
     onClick: n,
     count: l,
     compact: i,
-    collapsedReason: a
-  } = e, c = (0, s.YW)({
-    collapsedReason: a
+    collapsedReason: s
+  } = e, c = (0, a.YW)({
+    collapsedReason: s
   }).with({
-    collapsedReason: b.t["VFWjc+"]
+    collapsedReason: g.t["VFWjc+"]
   }, () => (0, r.jsx)(o.G3N, {
     size: "md",
     color: "currentColor",
-    className: g.Q6
+    className: m.Q6
   })).with({
-    collapsedReason: b.t["+FcYM/"]
+    collapsedReason: g.t["+FcYM/"]
   }, () => (0, r.jsx)(o.KTN, {
     size: "md",
     color: "currentColor",
-    className: g.Q6
+    className: m.Q6
   })).otherwise(() => (0, r.jsx)(o.PGe, {
     size: "md",
     color: "currentColor",
-    className: g.Q6
+    className: m.Q6
   }));
   return (0, r.jsx)(u.A, {
     compact: i,
     role: "group",
-    childrenMessageContent: (0, r.jsx)(p.A, {
+    childrenMessageContent: (0, r.jsx)(h.A, {
       compact: i,
-      className: g.L9,
+      className: m.L9,
       iconNode: c,
       children: (0, r.jsxs)("div", {
-        className: g.Fo,
-        children: [b.intl.format(a, {
+        className: m.Fo,
+        children: [g.intl.format(s, {
           count: l
         }), " —", " ", (0, r.jsx)(o.DUT, {
           tag: "span",
           onClick: n,
-          className: g.rB,
-          children: t ? b.intl.string(b.t.fgq1gs) : b.intl.string(b.t.XJuakA)
+          className: m.rB,
+          children: t ? g.intl.string(g.t.fgq1gs) : g.intl.string(g.t.XJuakA)
         })]
       })
     })
@@ -71,46 +71,46 @@ let y = Chunk64700.memo(function(e) {
   let {
     messages: n,
     channel: i,
-    compact: s = false,
+    compact: a = false,
     unreadId: o,
     collapsedReason: u
   } = e, {
-    hasJumpTarget: p = false
-  } = n, [b, y] = l.useState(p), O = l.useCallback(() => y(e => !e), []);
+    hasJumpTarget: h = false
+  } = n, [g, y] = l.useState(h), _ = l.useCallback(() => y(e => !e), []);
   l.useEffect(() => {
-    p && y(true)
-  }, [p]);
-  let j = n.hasUnread ? n.content.length - 1 : n.content.length;
+    h && y(true)
+  }, [h]);
+  let O = n.hasUnread ? n.content.length - 1 : n.content.length;
   return (0, r.jsxs)("div", {
-    className: a()({
-      [m._A]: true,
-      [g.sz]: b
+    className: s()({
+      [b._A]: true,
+      [m.sz]: g
     }),
-    children: [n.hasUnread && (!b || (null == (t = n.content[0]) ? true : t.type) === h.TZK.DIVIDER) ? (0, r.jsx)(f.A, {
+    children: [n.hasUnread && (!g || (null == (t = n.content[0]) ? true : t.type) === f.TZK.DIVIDER) ? (0, r.jsx)(p.A, {
       isUnread: true,
       id: o
     }, "divider") : null, (0, r.jsx)(A, {
-      count: j,
-      compact: s,
-      expanded: b,
-      onClick: O,
+      count: O,
+      compact: a,
+      expanded: g,
+      onClick: _,
       collapsedReason: u
-    }, "collapsed-message-item"), b ? n.content.map((e, t) => {
-      if (e.type === h.TZK.DIVIDER && t > 0) {
-        var l, a;
-        let e = null != (l = null == (a = n.content[t + 1]) ? true : a.isGroupStart) && l;
-        return (0, r.jsx)(f.A, {
+    }, "collapsed-message-item"), g ? n.content.map((e, t) => {
+      if (e.type === f.TZK.DIVIDER && t > 0) {
+        var l, s;
+        let e = null != (l = null == (s = n.content[t + 1]) ? true : s.isGroupStart) && l;
+        return (0, r.jsx)(p.A, {
           isUnread: true,
           isBeforeGroup: e,
           id: o
         }, "divider")
       }
-      if (e.type === h.TZK.MESSAGE || e.type === h.TZK.THREAD_STARTER_MESSAGE) {
-        let t = e.type === h.TZK.THREAD_STARTER_MESSAGE ? d.VO : d.Ay;
+      if (e.type === f.TZK.MESSAGE || e.type === f.TZK.THREAD_STARTER_MESSAGE) {
+        let t = e.type === f.TZK.THREAD_STARTER_MESSAGE ? d.VO : d.Ay;
         return (0, r.jsx)(t, {
           id: (0, c.j)(i.id, e.content.id),
-          className: g.__invalid_blocked,
-          compact: s,
+          className: m.__invalid_blocked,
+          compact: a,
           channel: i,
           message: e.content,
           groupId: e.groupId,

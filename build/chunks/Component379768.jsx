@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   o = require.n(Chunk735438),
   Chunk136722 = require("./136722.js"),
@@ -37,37 +37,37 @@ var Chunk627968 = require("./627968.js"),
 function R(e) {
   let {
     channel: t
-  } = e, [n, i] = l.useState(false), s = (0, b.Ay)(t, true), R = t.guild_id, D = (0, u.bG)([j.A], () => null != R ? j.A.getSortedRoles(R) : true), M = (0, u.bG)([E.default, v.A], () => {
+  } = e, [n, i] = l.useState(false), a = (0, g.Ay)(t, true), R = t.guild_id, D = (0, u.bG)([O.A], () => null != R ? O.A.getSortedRoles(R) : true), M = (0, u.bG)([x.default, j.A], () => {
     var e;
-    return E.default.getUser(null == (e = v.A.getGuild(R)) ? true : e.ownerId)
-  }), L = l.useMemo(() => null != D ? D.filter(e => !(0, O.Oy)(e)) : [], [D]), G = l.useMemo(() => o()(L).filter(e => {
+    return x.default.getUser(null == (e = j.A.getGuild(R)) ? true : e.ownerId)
+  }), L = l.useMemo(() => null != D ? D.filter(e => !(0, _.Oy)(e)) : [], [D]), k = l.useMemo(() => o()(L).filter(e => {
     if (null == R) returnfalse;
-    let n = _.aH({
+    let n = E.aH({
       forceRoles: {
         [e.id]: e
       },
       context: t
     });
     return c.X8(n, c.kg(N.xBc.ADMINISTRATOR, N.xBc.VIEW_CHANNEL))
-  }).value(), [t, R, L]), k = (0, u.yK)([E.default], () => {
+  }).value(), [t, R, L]), G = (0, u.yK)([x.default], () => {
     let e = {};
     for (let n of (null != M && (e[M.id] = M), Object.values(t.permissionOverwrites))) {
-      if (n.type !== h.r2.MEMBER || null != e[n.id]) continue;
-      let t = E.default.getUser(n.id);
+      if (n.type !== f.r2.MEMBER || null != e[n.id]) continue;
+      let t = x.default.getUser(n.id);
       null != t && (e[t.id] = t)
     }
     return o()(e).filter(e => {
       var n;
-      let r = _.$3({
+      let r = E.$3({
           permission: N.xBc.ADMINISTRATOR,
           user: e,
           context: t
         }),
-        l = null != (n = t.permissionOverwrites[e.id]) ? n : _.x3,
+        l = null != (n = t.permissionOverwrites[e.id]) ? n : E.x3,
         i = c.zy(l.allow, N.xBc.VIEW_CHANNEL);
       return r || i
     }).value()
-  }, [t, M]), U = x.A.can(N.xBc.MANAGE_CHANNELS, t) || x.A.can(N.xBc.MANAGE_ROLES, t), V = l.useCallback(() => i(false), []);
+  }, [t, M]), U = v.A.can(N.xBc.MANAGE_CHANNELS, t) || v.A.can(N.xBc.MANAGE_ROLES, t), B = l.useCallback(() => i(false), []);
   return (0, r.jsxs)(S.Ay, {
     channelId: t.id,
     children: [(0, r.jsx)(S.WK, {
@@ -75,90 +75,90 @@ function R(e) {
       channelType: t.type
     }), (0, r.jsx)(S.cr, {
       children: T.intl.format(T.t.I3R7Vn, {
-        channelName: s
+        channelName: a
       })
     }), (0, r.jsx)(S.j1, {
       className: w.PT,
       children: T.intl.format(T.t.QuwqjG, {
-        channelName: s,
+        channelName: a,
         topicHook: () => y.A.parseTopic(t.topic, true, {
           channelId: t.id
         })
       })
     }), U ? (0, r.jsxs)("div", {
       className: P.$x,
-      children: [(0, r.jsx)(f.Button, {
+      children: [(0, r.jsx)(p.Button, {
         size: "sm",
         variant: "secondary",
         text: T.intl.string(T.t.dMJ3Y6),
         onClick: () => i(true),
-        icon: f.nFg
-      }), (0, r.jsx)(f.Button, {
+        icon: p.nFg
+      }), (0, r.jsx)(p.Button, {
         size: "sm",
         variant: "secondary",
         text: T.intl.string(T.t["3gUsJb"]),
         onClick: function() {
-          p.Ay.open(t.id)
+          h.Ay.open(t.id)
         },
-        icon: f.R2l
+        icon: p.R2l
       })]
     }) : null, (0, r.jsxs)("div", {
       className: P.ol,
       children: [function() {
-        if (1 !== k.length || G.length > 0) return (0, r.jsx)(d.A, {
+        if (1 !== G.length || k.length > 0) return (0, r.jsx)(d.A, {
           guildId: t.guild_id,
           className: P.HD,
           maxUsers: 5,
-          users: k
+          users: G
         });
-        let e = k[0],
+        let e = G[0],
           n = C.Ay.getName(e);
         return (0, r.jsxs)("div", {
           className: P.HD,
-          children: [(0, r.jsx)(f.euF, {
+          children: [(0, r.jsx)(p.euF, {
             src: e.getAvatarURL(t.guild_id, 24),
             "aria-label": n,
-            size: f._3J.SIZE_24
-          }), (0, r.jsx)(f.Text, {
+            size: p._3J.SIZE_24
+          }), (0, r.jsx)(p.Text, {
             tag: "span",
             className: P.Jk,
             variant: "text-md/normal",
             children: n
-          }), "\xa0", (0, r.jsx)(f.Text, {
+          }), "\xa0", (0, r.jsx)(p.Text, {
             tag: "span",
             variant: "text-md/normal",
             color: "text-muted",
             children: T.intl.string(T.t.rt0ERW)
           })]
         })
-      }(), G.map((e, n) => {
+      }(), k.map((e, n) => {
         var l, i;
-        let s = null != (l = e.colorString) ? l : N.TpD,
+        let a = null != (l = e.colorString) ? l : N.TpD,
           o = (null == (i = e.tags) ? true : i.guild_connections) !== true;
         return U ? (0, r.jsx)(I.A, {
-          className: a()(P.JC, {
-            [P.HV]: n === G.length - 1
+          className: s()(P.JC, {
+            [P.HV]: n === k.length - 1
           }),
           roleName: e.name,
-          roleColor: s,
+          roleColor: a,
           disabled: !U,
           verified: o,
           onClick: () => {
             A.A.open(t.guild_id, N.BEX.MEMBERS), A.A.selectRole(e.id)
           }
-        }, e.id) : (0, r.jsx)(m.A, {
-          className: a()(P.JC, {
-            [P.HV]: n === G.length - 1
+        }, e.id) : (0, r.jsx)(b.A, {
+          className: s()(P.JC, {
+            [P.HV]: n === k.length - 1
           }),
           roleName: e.name,
-          roleColor: s,
+          roleColor: a,
           verified: o
         }, e.id)
       })]
-    }), n ? (0, r.jsx)(f.aFV, {
+    }), n ? (0, r.jsx)(p.aFV, {
       renderModal: e => {
         var n, l;
-        return (0, r.jsx)(g.default, (n = function(e) {
+        return (0, r.jsx)(m.default, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -176,7 +176,7 @@ function R(e) {
           }
           return e
         }({}, e), l = l = {
-          onClose: () => (V(), e.onClose()),
+          onClose: () => (B(), e.onClose()),
           channelId: t.id
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);

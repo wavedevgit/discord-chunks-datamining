@@ -60,30 +60,30 @@ function _(e, t) {
   let [h, ...m] = [e, t], {
     location: g,
     contextKey: E
-  } = h, b = d(h, ["location", "contextKey"]), [y] = m, O = null == (_ = b.items[null != (c = b.startingIndex) ? c : 0]) || null == (f = _.sourceMetadata) ? true : f.message, A = a.A.getChannel(null == O ? true : O.channel_id);
+  } = h, y = d(h, ["location", "contextKey"]), [b] = m, O = null == (_ = y.items[null != (c = y.startingIndex) ? c : 0]) || null == (f = _.sourceMetadata) ? true : f.message, v = a.A.getChannel(null == O ? true : O.channel_id);
   (0, o.H9)({
-    guildId: null == A ? true : A.guild_id,
-    channelId: null == A ? true : A.id,
-    channelType: null == A ? true : A.type,
-    numMediaItems: b.items.length,
+    guildId: null == v ? true : v.guild_id,
+    channelId: null == v ? true : v.id,
+    channelType: null == v ? true : v.type,
+    numMediaItems: y.items.length,
     source: g,
-    hasMediaOptions: !b.shouldHideMediaOptions
+    hasMediaOptions: !y.shouldHideMediaOptions
   }), s.default.track(l.HAw.OPEN_MODAL, {
     type: l.JJy.MEDIA_VIEWER,
     source: g,
-    guild_id: null == A ? true : A.guild_id,
-    channel_id: null == A ? true : A.id,
-    channel_type: null == A ? true : A.type
+    guild_id: null == v ? true : v.guild_id,
+    channel_id: null == v ? true : v.id,
+    channel_type: null == v ? true : v.type
   }), (0, i.mMO)(async () => {
     let {
       default: e
     } = await n.e("48654").then(n.bind(n, 321565));
-    return t => (0, r.jsx)(e, u({}, t, b))
+    return t => (0, r.jsx)(e, u({}, t, y))
   }, {
     modalKey: p,
     contextKey: E,
     onCloseCallback: o.a2,
     backdropStyle: i.F2Z.LIGHTBOX,
-    stackingBehavior: y
+    stackingBehavior: b
   })
 }

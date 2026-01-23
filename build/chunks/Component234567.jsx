@@ -19,21 +19,21 @@ function c(e) {
     hasRemoveIcon: c = false,
     onClick: u,
     disabled: d = false,
-    verified: f = false
+    verified: p = false
   } = e;
-  return (0, r.jsx)(a.DUT, {
+  return (0, r.jsx)(s.DUT, {
     className: i()(t, o.x6, {
       [o.r9]: d
     }),
     onClick: d ? true : u,
     "aria-disabled": d,
     role: "button",
-    children: (0, r.jsx)(s.A, {
+    children: (0, r.jsx)(a.A, {
       className: o.JC,
       roleColor: n,
       roleName: l,
-      verified: f,
-      children: c && (0, r.jsx)(a.PGe, {
+      verified: p,
+      children: c && (0, r.jsx)(s.PGe, {
         size: "custom",
         color: "currentColor",
         height: 6,

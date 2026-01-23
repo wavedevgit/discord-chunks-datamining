@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Ay: () => O,
-  Z9: () => b,
-  o9: () => y
+  Z9: () => y,
+  o9: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -42,7 +42,7 @@ function E(e) {
   }
   return e
 }
-let b = Chunk64700.memo(function(e) {
+let y = Chunk64700.memo(function(e) {
     let {
       src: t,
       className: n,
@@ -56,7 +56,7 @@ let b = Chunk64700.memo(function(e) {
       height: i
     })
   }),
-  y = Chunk64700.memo(function(e) {
+  b = Chunk64700.memo(function(e) {
     let {
       guildId: t,
       guildTag: n,
@@ -68,7 +68,7 @@ let b = Chunk64700.memo(function(e) {
       onMouseEnter: d,
       textVariant: g = "text-xs/semibold",
       textColor: E = "text-default",
-      badgeSize: y = p.Sl.SIZE_14,
+      badgeSize: b = p.Sl.SIZE_14,
       inline: O = true
     } = e;
     return (0, r.jsx)(l.DUT, {
@@ -86,9 +86,9 @@ let b = Chunk64700.memo(function(e) {
         color: E,
         tag: "span",
         className: s()(m.Qq, o),
-        children: [null != i && "string" == typeof i ? (0, r.jsx)(b, {
-          src: (0, f.gC)(t, i, y),
-          size: y,
+        children: [null != i && "string" == typeof i ? (0, r.jsx)(y, {
+          src: (0, f.gC)(t, i, b),
+          size: b,
           className: c
         }) : i, (0, r.jsx)("span", {
           className: m.em,
@@ -106,44 +106,44 @@ let b = Chunk64700.memo(function(e) {
       containerClassName: _,
       textVariant: h,
       textColor: g,
-      badgeSize: b,
+      badgeSize: y,
       disableGuildProfile: O = false,
-      inline: A = true,
-      onShowProfile: v,
-      onClose: S
-    } = e, I = i.useRef(null), T = (0, o.bG)([d.default], () => d.default.getUser(n), [n]), C = (0, o.bG)([u.A], () => u.A.theme), N = true !== t ? t : null == T ? true : T.primaryGuild, {
+      inline: v = true,
+      onShowProfile: A,
+      onClose: I
+    } = e, S = i.useRef(null), T = (0, o.bG)([d.default], () => d.default.getUser(n), [n]), C = (0, o.bG)([u.A], () => u.A.theme), N = true !== t ? t : null == T ? true : T.primaryGuild, {
       tag: R,
       badge: w,
       guildId: P
     } = (0, f.Zo)(N);
-    return (0, f.Wb)(n, a, N) && null != P ? O ? (0, r.jsx)(y, {
+    return (0, f.Wb)(n, a, N) && null != P ? O ? (0, r.jsx)(b, {
       guildId: P,
       guildTag: R,
       guildBadge: w,
       className: s()(m.Zy, p),
       textVariant: h,
       textColor: g,
-      badgeSize: b,
-      inline: A
+      badgeSize: y,
+      inline: v
     }) : (0, r.jsx)(l.wXn, {
       theme: C,
       children: (0, r.jsx)(c.A, {
         guildId: P,
-        onRequestOpen: v,
-        onClose: S,
-        targetElementRef: I,
+        onRequestOpen: A,
+        onClose: I,
+        targetElementRef: S,
         children: e => (0, r.jsx)("span", {
           className: _,
-          ref: I,
-          children: (0, r.jsx)(y, E({
+          ref: S,
+          children: (0, r.jsx)(b, E({
             guildId: P,
             guildTag: R,
             guildBadge: w,
             className: p,
             textVariant: h,
             textColor: g,
-            badgeSize: b,
-            inline: A
+            badgeSize: y,
+            inline: v
           }, e))
         })
       })

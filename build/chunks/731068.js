@@ -4,11 +4,11 @@
 require.d(exports, {
   FE: () => g,
   IS: () => f,
-  Rr: () => b,
+  Rr: () => y,
   Uv: () => h,
   aG: () => m,
   e5: () => _,
-  oU: () => y,
+  oU: () => b,
   rq: () => O
 }), require("./938796.js"), require("./228524.js");
 var Chunk665260 = require("./665260.js"),
@@ -117,7 +117,7 @@ function E(e) {
   return (0, a.u)(e.filename) ? "IMAGE" : (0, a.AE)(e.filename) ? "VIDEO" : "INVALID"
 }
 
-function b(e, t) {
+function y(e, t) {
   return d(c({}, m(e)), {
     type: E(e),
     alt: e.description,
@@ -134,7 +134,7 @@ function b(e, t) {
   })
 }
 
-function y(e, t, n) {
+function b(e, t, n) {
   return {
     type: n,
     url: e.url,

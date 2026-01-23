@@ -2,9 +2,9 @@
 /** chunk id: 27192, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  DO: () => b,
+  DO: () => y,
   Kj: () => O,
-  Lc: () => v,
+  Lc: () => A,
   Or: () => g,
   zI: () => E
 }), require("./264879.js");
@@ -48,12 +48,12 @@ var g = function(e) {
   E = function(e) {
     return e.TOP = "top", e.CENTER = "center", e
   }(E || {});
-let b = {
+let y = {
     BOX: Chunk127650.aP,
     ROUND: Chunk127650.LI,
     SMALL_BOX: Chunk127650.tk
   },
-  y = {
+  b = {
     top: Chunk127650.t8,
     center: Chunk127650.Hu
   },
@@ -72,9 +72,9 @@ let b = {
       innerClassName: g,
       children: E,
       reverse: O = false,
-      shape: A = b.BOX,
-      checkboxColor: S
-    } = e, I = i.useCallback(e => {
+      shape: v = y.BOX,
+      checkboxColor: I
+    } = e, S = i.useCallback(e => {
       null == f || f(e, e.currentTarget.checked)
     }, [f]), T = null != E ? (0, r.jsx)("div", {
       className: s()(_.Pf, t ? _.fR : _.ru, O ? _.dT : _.a5),
@@ -85,7 +85,7 @@ let b = {
     }) : null, C = a ? "span" : "label", N = t ? _.pR : n ? _.bB : _.qw;
     return (0, r.jsxs)(C, {
       "data-toggleable-component": "checkbox",
-      className: s()(t ? _.Tc : _.TQ, y[u], m, {
+      className: s()(t ? _.Tc : _.TQ, b[u], m, {
         [_.nM]: "row" === c,
         [_.KD]: o
       }),
@@ -94,24 +94,24 @@ let b = {
           className: s()(g, N),
           type: "checkbox",
           onClick: h,
-          onChange: t || n ? p.tE : I,
+          onChange: t || n ? p.tE : S,
           checked: o,
           style: {
             width: l,
             height: l
           }
         })
-      }), (0, r.jsx)(v, {
+      }), (0, r.jsx)(A, {
         value: o,
         size: l,
-        shape: A,
-        checkboxColor: S,
+        shape: v,
+        checkboxColor: I,
         disabled: t
       }), O ? null : T]
     })
   };
 
-function A(e) {
+function v(e) {
   var t;
   let {
     value: n,
@@ -136,7 +136,7 @@ function A(e) {
   return a
 }
 
-function v(e) {
+function A(e) {
   let {
     indicatorClassName: t,
     value: n,
@@ -144,7 +144,7 @@ function v(e) {
     shape: o,
     checkboxColor: l,
     disabled: c
-  } = e, d = A(e), p = i.useMemo(() => n ? u.A.colors.WHITE.css : u.A.unsafe_rawColors.TRANSPARENT.css, [n]);
+  } = e, d = v(e), p = i.useMemo(() => n ? u.A.colors.WHITE.css : u.A.unsafe_rawColors.TRANSPARENT.css, [n]);
   return (0, r.jsx)("div", {
     className: s()(_.kv, o, t, {
       [_.KD]: n,

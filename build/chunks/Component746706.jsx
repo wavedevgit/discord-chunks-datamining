@@ -2,7 +2,7 @@
 /** chunk id: 746706, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk896237 = require("./896237.js"),
   Chunk448085 = require("./448085.js");
 
-function b(e) {
+function y(e) {
   switch (e) {
     case p.NJ8.DARK:
     case p.NJ8.DARKER:
@@ -34,20 +34,20 @@ function b(e) {
   }
 }
 
-function y(e) {
+function b(e) {
   let {
     user: t,
     showOverlay: n,
     children: g
   } = e, E = (0, o.Ay)(), {
-    analyticsLocations: y
+    analyticsLocations: b
   } = (0, c.Ay)(l.A.PREMIUM_UPSELL_OVERLAY);
   return (i.useEffect(() => {
     n && d.default.track(p.HAw.PREMIUM_UPSELL_VIEWED, {
-      location_stack: y,
+      location_stack: b,
       type: _.e.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE
     })
-  }, [n, y]), n) ? (0, r.jsxs)("div", {
+  }, [n, b]), n) ? (0, r.jsxs)("div", {
     className: m.ry,
     children: [(0, r.jsx)("div", {
       children: g
@@ -56,7 +56,7 @@ function y(e) {
       children: [(0, r.jsx)("img", {
         className: m.Tn,
         alt: h.intl.string(h.t.LHFZQy),
-        src: b(E)
+        src: y(E)
       }), (0, r.jsxs)("div", {
         className: m._9,
         children: [(0, r.jsx)(s.Text, {

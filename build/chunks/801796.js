@@ -2,9 +2,9 @@
 /** chunk id: 801796, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BD: () => b,
+  BD: () => y,
   US: () => g,
-  X8: () => y,
+  X8: () => b,
   mH: () => m
 });
 var Chunk757942 = require("./757942.jsx"),
@@ -57,7 +57,7 @@ let p = (e, t) => {
     }
   },
   E = (e, t) => l.Ay.getMentionCount(t) > 0,
-  b = {
+  y = {
     binds: ["mod+shift+alt+down"],
     comboKeysBindGlobal: true,
     action: () => ((0, r.A)(1, {
@@ -66,7 +66,7 @@ let p = (e, t) => {
       withVoiceChannels: true
     }), false)
   },
-  y = {
+  b = {
     binds: ["mod+shift+alt+up"],
     comboKeysBindGlobal: true,
     action: () => ((0, r.A)(false, {

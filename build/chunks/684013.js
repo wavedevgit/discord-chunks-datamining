@@ -2,7 +2,7 @@
 /** chunk id: 684013, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./896048.js"), require("./65821.js");
 var Chunk835245 = require("./835245.js"),
   Chunk73153 = require("./73153.js"),
@@ -29,7 +29,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,12 +54,12 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = new Chunk626584.A("OverlayActionCreators"),
-  v = {
+let v = new Chunk626584.A("OverlayActionCreators"),
+  A = {
     track(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
         n = arguments.length > 2 && true !== arguments[2] && arguments[2];
@@ -121,7 +121,7 @@ let A = new Chunk626584.A("OverlayActionCreators"),
       })
     },
     setInstanceLocked(e) {
-      __OVERLAY__ ? v.setInputLocked(e, (0, h.getPID)()) : A.error("Attempting to start an overlay session outside of the overlay context")
+      __OVERLAY__ ? A.setInputLocked(e, (0, h.getPID)()) : v.error("Attempting to start an overlay session outside of the overlay context")
     },
     setEnabled(e, t) {
       i.h.dispatch({
@@ -215,7 +215,7 @@ let A = new Chunk626584.A("OverlayActionCreators"),
     startSession() {
       __OVERLAY__ ? i.h.dispatch({
         type: "OVERLAY_START_SESSION"
-      }) : A.error("Attempting to start an overlay session outside of the overlay context")
+      }) : v.error("Attempting to start an overlay session outside of the overlay context")
     },
     activateRegion(e) {
       i.h.dispatch({
@@ -282,23 +282,23 @@ let A = new Chunk626584.A("OverlayActionCreators"),
           width: 0,
           height: 0
         },
-        y = {
+        b = {
           top: 0,
           left: 0,
           right: 0,
           bottom: 0
         },
-        A = {
+        v = {
           width: 312,
           height: 0
         },
-        v = {
+        A = {
           top: 0,
           left: 0,
           right: 0,
           bottom: 0
         },
-        S = {
+        I = {
           width: 0,
           height: 0
         };
@@ -314,24 +314,24 @@ let A = new Chunk626584.A("OverlayActionCreators"),
               E = (0, _.fd)(i, f), (0, m.uv)(n);
               break;
             case g.uss.GUILDS:
-              y = (0, _.NR)(r, i, f), A = (0, _.fd)(i, f), (0, m.uv)(n);
+              b = (0, _.NR)(r, i, f), v = (0, _.fd)(i, f), (0, m.uv)(n);
               break;
             case g.uss.GUILDS_TEXT:
-              v = (0, _.NR)(r, i, f), S = (0, _.fd)(i, f), (0, m.uv)(n)
+              A = (0, _.NR)(r, i, f), I = (0, _.fd)(i, f), (0, m.uv)(n)
           }
         }), e) {
-        let e = "auto" === S.width ? l.minSize.width : S.width;
+        let e = "auto" === I.width ? l.minSize.width : I.width;
         e -= c.minSize.width;
-        let [n, i] = (0, _.M4)(v, O(b({}, S), {
+        let [n, i] = (0, _.M4)(A, O(y({}, I), {
           width: c.minSize.width
-        }), f), [a, s] = (0, _.n7)(v, O(b({}, S), {
+        }), f), [a, s] = (0, _.n7)(A, O(y({}, I), {
           width: e
         }), f, {
           x: 10,
           y: 10
         }), o = d.A.getWidgetDefaultSettings(g.uss.TEXT);
         if (null == o) throw Error("OverlayActionCreators.setPinChat: No config for TEXT exists");
-        (0, m.jn)(O(b({}, o), {
+        (0, m.jn)(O(y({}, o), {
           type: g.uss.TEXT,
           id: (0, r.A)(),
           size: s,
@@ -340,7 +340,7 @@ let A = new Chunk626584.A("OverlayActionCreators"),
         }));
         let u = d.A.getWidgetDefaultSettings(g.uss.GUILDS);
         if (null == u) throw Error("OverlayActionCreators.setPinChat: No config for GUILDS exists");
-        (0, m.jn)(O(b({}, u), {
+        (0, m.jn)(O(y({}, u), {
           type: g.uss.GUILDS,
           id: (0, r.A)(),
           size: i,
@@ -350,12 +350,12 @@ let A = new Chunk626584.A("OverlayActionCreators"),
       } else {
         let e = "auto" === E.width ? u.minSize.width : E.width;
         e += c.minSize.width;
-        let [n, i] = (0, _.M4)(y, {
-          height: A.height,
+        let [n, i] = (0, _.M4)(b, {
+          height: v.height,
           width: e
         }, f), a = d.A.getWidgetDefaultSettings(g.uss.GUILDS_TEXT);
         if (null == a) throw Error("OverlayActionCreators.setPinChat: No config for GUILDS_TEXT exists");
-        (0, m.jn)(O(b({}, a), {
+        (0, m.jn)(O(y({}, a), {
           type: g.uss.GUILDS_TEXT,
           id: (0, r.A)(),
           layoutId: t,
@@ -443,4 +443,4 @@ let A = new Chunk626584.A("OverlayActionCreators"),
       })
     }
   },
-  S = v
+  I = A

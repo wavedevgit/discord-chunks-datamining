@@ -2,7 +2,7 @@
 /** chunk id: 683484, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => _
+  A: () => j
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,7 +26,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk803946 = require("./803946.js");
 
-function S(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class j extends Chunk64700.Component {
+class S extends Chunk64700.Component {
   componentDidUpdate() {
     this.props.locked && this.state.showOpacitySlider && this.setState({
       showOpacitySlider: false
@@ -50,7 +50,7 @@ class j extends Chunk64700.Component {
     if (!(0, f.Gw)(t.type)) return null;
     let l = a._jp,
       o = false;
-    return n ? r ? (e = E.intl.string(E.t["4ry6yi"]), l = a.zWQ) : e = E.intl.string(E.t["0D/6Rz"]) : s ? (e = E.intl.string(E.t.PHzjvX), o = true) : e = E.intl.string(E.t.focH1t), (0, i.jsx)(h.A.Icon, {
+    return n ? r ? (e = v.intl.string(v.t["4ry6yi"]), l = a.zWQ) : e = v.intl.string(v.t["0D/6Rz"]) : s ? (e = v.intl.string(v.t.PHzjvX), o = true) : e = v.intl.string(v.t.focH1t), (0, i.jsx)(h.A.Icon, {
       icon: l,
       tooltip: e,
       onClick: this.handleClickCall,
@@ -70,19 +70,19 @@ class j extends Chunk64700.Component {
       isPreviewingInGame: u,
       disableDragIndicator: f
     } = this.props, {
-      showOpacitySlider: b
+      showOpacitySlider: g
     } = this.state;
-    return b && !n ? (0, i.jsxs)(v.Ay.Bar, {
-      className: x.dl,
+    return g && !n ? (0, i.jsxs)(_.Ay.Bar, {
+      className: E.dl,
       children: [(0, i.jsx)(O.A, {}), (0, i.jsx)(h.A.Icon, {
         icon: a.PGe,
         onClick: this.handleCloseOpacitySettings,
-        tooltip: E.intl.string(E.t.cpT0Cq)
+        tooltip: v.intl.string(v.t.cpT0Cq)
       })]
-    }) : (0, i.jsx)(v.Ay.Background, {
+    }) : (0, i.jsx)(_.Ay.Background, {
       opacityOverride: n || u ? null : 1,
       children: (0, i.jsx)("div", {
-        className: l()(e, t, x.N1),
+        className: l()(e, t, E.N1),
         onMouseDown: c,
         onContextMenu: d,
         children: (0, i.jsxs)(h.A, {
@@ -93,7 +93,7 @@ class j extends Chunk64700.Component {
           children: [u || n || f ? null : (0, i.jsx)(a.WP0, {
             size: "custom",
             color: "currentColor",
-            className: l()(x.co, t),
+            className: l()(E.co, t),
             width: 20,
             height: 20
           }), (0, p.zF)({
@@ -105,9 +105,9 @@ class j extends Chunk64700.Component {
     })
   }
   constructor(...e) {
-    super(...e), S(this, "state", {
+    super(...e), x(this, "state", {
       showOpacitySlider: false
-    }), S(this, "handleClickCall", e => {
+    }), x(this, "handleClickCall", e => {
       let {
         channel: t,
         userIsInChannelCall: n,
@@ -118,35 +118,35 @@ class j extends Chunk64700.Component {
         let n = !i && !e.shiftKey;
         c.A.callPrivateChannel(t.id, n)
       }
-    }), S(this, "handleOpenOpacitySettings", () => {
+    }), x(this, "handleOpenOpacitySettings", () => {
       let {
         pinned: e
       } = this.props;
       this.setState({
         showOpacitySlider: true
       }), e && c.A.setPreviewInGameMode(true)
-    }), S(this, "handleCloseOpacitySettings", () => {
+    }), x(this, "handleCloseOpacitySettings", () => {
       let {
         pinned: e
       } = this.props;
       this.setState({
         showOpacitySlider: false
       }), e && c.A.setPreviewInGameMode(false)
-    }), S(this, "handleMouseDown", e => {
+    }), x(this, "handleMouseDown", e => {
       let {
         onMouseDown: t
       } = this.props;
       null != t && t(e)
-    }), S(this, "renderWidgetButtons", () => {
+    }), x(this, "renderWidgetButtons", () => {
       let {
         locked: e,
         handlePin: t,
         pinned: n
-      } = this.props, s = n ? E.intl.string(E.t.cSu80j) : E.intl.string(E.t.cM8Vnm);
+      } = this.props, s = n ? v.intl.string(v.t.cSu80j) : v.intl.string(v.t.cM8Vnm);
       return e ? null : (0, i.jsxs)(r.Fragment, {
         children: [this.renderCallButton(), n ? (0, i.jsx)(h.A.Icon, {
           icon: a.OHS,
-          tooltip: E.intl.string(E.t.OVovCb),
+          tooltip: v.intl.string(v.t.OVovCb),
           onClick: this.handleOpenOpacitySettings
         }) : null, (0, i.jsx)(h.A.Icon, {
           icon: n ? a.hl9 : a.qgw,
@@ -159,7 +159,7 @@ class j extends Chunk64700.Component {
   }
 }
 
-function _(e) {
+function j(e) {
   let {
     channel: t
   } = e, n = function(e, t) {
@@ -178,18 +178,18 @@ function _(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) i = n[r], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (s[i] = e[i]);
     return s
-  }(e, ["channel"]), r = (0, o.bG)([m.A, g.A], () => {
-    let e = m.A.getVoiceChannelId();
-    return g.A.getChannel(e)
-  }), s = (0, o.bG)([y.A], () => y.A.getGuild(t.guild_id)), l = (0, o.bG)([b.A], () => b.A.isCallActive(t.id)), a = (0, u.Ay)(t), c = (0, o.bG)([A.A], () => !!t.isDM() && null != t.getRecipientId() && A.A.isBlocked(t.getRecipientId()));
-  return (0, i.jsx)(j, function(e) {
+  }(e, ["channel"]), r = (0, o.bG)([b.A, y.A], () => {
+    let e = b.A.getVoiceChannelId();
+    return y.A.getChannel(e)
+  }), s = (0, o.bG)([A.A], () => A.A.getGuild(t.guild_id)), l = (0, o.bG)([g.A], () => g.A.isCallActive(t.id)), a = (0, u.Ay)(t), c = (0, o.bG)([m.A], () => !!t.isDM() && null != t.getRecipientId() && m.A.isBlocked(t.getRecipientId()));
+  return (0, i.jsx)(S, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
       "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
       }))), i.forEach(function(t) {
-        S(e, t, n[t])
+        x(e, t, n[t])
       })
     }
     return e

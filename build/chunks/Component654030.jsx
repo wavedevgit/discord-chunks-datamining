@@ -24,7 +24,7 @@ function u(e) {
     webhooks: h,
     editedWebhook: g,
     isFetching: m,
-    errors: f
+    errors: p
   } = (0, i.cf)([o.A], () => o.A.getProps(), []);
   return null == r || null == n ? null : (0, l.jsx)(a.A, {
     guild: r,
@@ -35,7 +35,7 @@ function u(e) {
     editedWebhook: g,
     isFetchingWebhooks: m,
     hasChanges: o.A.hasChanges,
-    errors: f,
+    errors: p,
     refToScroller: t
   })
 }

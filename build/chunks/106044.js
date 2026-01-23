@@ -10,7 +10,7 @@ var Chunk961350 = require("./961350.js"),
   Chunk446600 = require("./446600.js");
 
 function o(e) {
-  if (!e.isGuildStageVoice() || !s.A.isLive(e.id)) returnfalse;
+  if (!e.isGuildStageVoice() || !a.A.isLive(e.id)) returnfalse;
   let t = r.default.getId();
-  return !!a.Ay.isModerator(t, e.id) && !!a.Ay.isSpeaker(t, e.id) && (null == l.A.getMutableParticipants(e.id).find(n => n.user.id !== t && a.Ay.isModerator(n.user.id, e.id)) || null == l.A.getMutableParticipants(e.id, i.ip.SPEAKER).find(n => n.user.id !== t && a.Ay.isModerator(n.user.id, e.id)))
+  return !!s.Ay.isModerator(t, e.id) && !!s.Ay.isSpeaker(t, e.id) && (null == l.A.getMutableParticipants(e.id).find(n => n.user.id !== t && s.Ay.isModerator(n.user.id, e.id)) || null == l.A.getMutableParticipants(e.id, i.ip.SPEAKER).find(n => n.user.id !== t && s.Ay.isModerator(n.user.id, e.id)))
 }

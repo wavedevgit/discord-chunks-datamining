@@ -2,7 +2,7 @@
 /** chunk id: 679382, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 });
 var r, Chunk61090 = require("./61090.js"),
   Chunk311907 = require("./311907.js"),
@@ -43,13 +43,13 @@ let h = 2,
     h = 0
   };
 
-function b(e) {
+function y(e) {
   let {
     guild: t
   } = e;
   1 === h && "update" === t.stickers.op && null == t.stickers.items && (h = 0)
 }
-let y = () => {
+let b = () => {
   h = 0
 };
 class O extends(r = Chunk311907.Ay.Store) {
@@ -98,9 +98,9 @@ class O extends(r = Chunk311907.Ay.Store) {
   }
 }
 _(O, "displayName", "StickersStore");
-let A = new O(Chunk73153.h, {
+let v = new O(Chunk73153.h, {
   BACKGROUND_SYNC: E,
   CONNECTION_OPEN: g,
-  GUILD_CREATE: b,
-  LOGOUT: y
+  GUILD_CREATE: y,
+  LOGOUT: b
 })

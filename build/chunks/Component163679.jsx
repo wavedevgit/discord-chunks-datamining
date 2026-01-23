@@ -1,7 +1,7 @@
 /** Chunk was on 22477 **/
 /** chunk id: 163679, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,30 +22,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk36303 = require("./36303.js");
 let Chunk843020 = require("./843020.js");
 
-function y(e) {
+function _(e) {
   let {
     task: t,
     handleSubmit: n,
-    disabled: i
-  } = e, [r, s] = l.useState(t), o = l.useMemo(() => ({
-    task: r,
+    disabled: r
+  } = e, [i, s] = l.useState(t), o = l.useMemo(() => ({
+    task: i,
     setTask: s
-  }), [r, s]);
+  }), [i, s]);
   return l.useEffect(() => {
     s(t)
   }, [t]), (0, a.jsxs)(u.h.Provider, {
     value: o,
-    children: [(0, a.jsx)(f.A, {}), (0, a.jsx)(h.A, {
+    children: [(0, a.jsx)(x.A, {}), (0, a.jsx)(h.A, {
       onSubmit: n,
-      disabled: i
+      disabled: r
     })]
   })
 }
-let _ = function(e) {
+let y = function(e) {
   let {
     onClose: t
-  } = e, [n, u] = l.useState(null), [h, f] = l.useState(true), [_, A] = l.useState(null), [C, S] = l.useState(false), O = l.useCallback(async () => {
-    f(true), A(null);
+  } = e, [n, u] = l.useState(null), [h, x] = l.useState(true), [y, A] = l.useState(null), [C, S] = l.useState(false), O = l.useCallback(async () => {
+    x(true), A(null);
     try {
       var e;
       let n = await (0, d.$R)();
@@ -66,9 +66,9 @@ let _ = function(e) {
         }
       })
     } catch (e) {
-      A(g.intl.string(b.default["/f++3g"]))
+      A(b.intl.string(f.default["/f++3g"]))
     } finally {
-      f(false)
+      x(false)
     }
   }, [t]), E = l.useCallback(async e => {
     if (null !== n) {
@@ -81,26 +81,26 @@ let _ = function(e) {
         };
         await (0, d.Rt)(t), O()
       } catch (e) {
-        A(g.intl.string(b.default["+QRSxc"]))
+        A(b.intl.string(f.default["+QRSxc"]))
       } finally {
         S(false)
       }
     }
   }, [n, O]);
-  (0, r.Ay)(() => {
+  (0, i.Ay)(() => {
     O()
   });
-  let N = l.useMemo(() => (null == n ? true : n.task_type) === m.wP.AGE_VERIFICATION, [n]);
+  let T = l.useMemo(() => (null == n ? true : n.task_type) === m.wP.AGE_VERIFICATION, [n]);
   return (0, a.jsxs)("div", {
     className: v.Tp,
     children: [(0, a.jsx)("img", {
       className: v.xX,
       src: j,
       alt: ""
-    }), N ? (0, a.jsx)(o.default, {
-      transitionState: i.ip4.ENTERED,
+    }), T ? (0, a.jsx)(o.default, {
+      transitionState: r.ip4.ENTERED,
       entryPoint: s.q1.SAFETY_FLOWS,
-      onClose: x.tE,
+      onClose: g.tE,
       onComplete: async () => {
         await E({
           type: m.Ij.Empty
@@ -109,51 +109,51 @@ let _ = function(e) {
       dismissable: false
     }) : (0, a.jsx)("div", {
       className: v.nA,
-      children: h ? (0, a.jsx)(i.y$y, {
-        type: i.y$y.Type.SPINNING_CIRCLE
+      children: h ? (0, a.jsx)(r.y$y, {
+        type: r.y$y.Type.SPINNING_CIRCLE
       }) : (0, a.jsx)("div", {
         className: v.kL,
-        children: (0, a.jsxs)(i.BJc, {
+        children: (0, a.jsxs)(r.BJc, {
           direction: "horizontal",
           justify: "start",
           className: v.rf,
-          children: [null !== _ && (0, a.jsxs)(i.BJc, {
+          children: [null !== y && (0, a.jsxs)(r.BJc, {
             direction: "vertical",
             justify: "space-between",
             align: "center",
             className: v.Nj,
             padding: 16,
-            children: [(0, a.jsxs)(i.BJc, {
+            children: [(0, a.jsxs)(r.BJc, {
               direction: "vertical",
               gap: 4,
-              children: [(0, a.jsx)(i.Heading, {
+              children: [(0, a.jsx)(r.Heading, {
                 variant: "heading-xl/semibold",
-                children: g.intl.string(g.t.c6kn6F)
-              }), (0, a.jsx)(i.Text, {
+                children: b.intl.string(b.t.c6kn6F)
+              }), (0, a.jsx)(r.Text, {
                 variant: "text-md/normal",
                 color: "text-muted",
-                children: g.intl.string(g.t.ZUEGFn)
+                children: b.intl.string(b.t.ZUEGFn)
               })]
-            }), (0, a.jsxs)(i.BJc, {
+            }), (0, a.jsxs)(r.BJc, {
               direction: "horizontal",
               justify: "center",
               align: "center",
-              children: [(0, a.jsx)(i.Button, {
+              children: [(0, a.jsx)(r.Button, {
                 fullWidth: true,
                 variant: "secondary",
-                text: g.intl.string(g.t["2jxGer"]),
+                text: b.intl.string(b.t["2jxGer"]),
                 onClick: () => {
                   (0, p.k)("safety_flows_modal")
                 }
-              }), (0, a.jsx)(i.Button, {
+              }), (0, a.jsx)(r.Button, {
                 fullWidth: true,
-                text: g.intl.string(g.t["7NqTJn"]),
+                text: b.intl.string(b.t["7NqTJn"]),
                 onClick: () => {
                   O()
                 }
               })]
             })]
-          }), null === _ && null != n && (0, a.jsx)(y, {
+          }), null === y && null != n && (0, a.jsx)(_, {
             task: n,
             handleSubmit: E,
             disabled: C

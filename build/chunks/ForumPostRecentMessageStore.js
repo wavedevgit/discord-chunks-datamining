@@ -66,50 +66,50 @@ function g(e, t) {
 }
 
 function E(e, t) {
-  let n = y(e),
+  let n = b(e),
     r = O(e);
   return null != n && null != r && (h[e] = _(f({}, n), {
     message: (0, s.IU)(r, t)
   }), true)
 }
 
-function b(e, t) {
+function y(e, t) {
   let n = O(e);
   return (null == n ? true : n.id) === t && (delete h[e], true)
 }
 
-function y(e) {
+function b(e) {
   return h[e]
 }
 
 function O(e) {
   var t;
-  return null == (t = y(e)) ? true : t.message
+  return null == (t = b(e)) ? true : t.message
 }
 
-function A() {
+function v() {
   h = {}
 }
 
-function v(e) {
+function A(e) {
   let {
     threads: t
   } = e;
   for (let e in t) g(e, t[e].most_recent_message)
 }
 
-function S(e) {
+function I(e) {
   if (e.isPushNotification || !m(e.message)) returnfalse;
   e.message.channel_id === u.default.castMessageIdAsChannelId(e.message.id) ? g(e.message.channel_id, null) : g(e.message.channel_id, e.message)
 }
 
-function I(e) {
+function S(e) {
   if (!m(e.message) || e.message.channel_id === e.message.id) returnfalse;
   E(e.message.channel_id, e.message)
 }
 
 function T(e) {
-  return b(e.channelId, e.id)
+  return y(e.channelId, e.id)
 }
 
 function C(e) {
@@ -133,11 +133,11 @@ class N extends(r = Chunk311907.Ay.Store) {
   }
 }
 d(N, "displayName", "ForumPostRecentMessageStore"), new N(Chunk73153.h, {
-  CONNECTION_OPEN: A,
-  MESSAGE_CREATE: S,
-  MESSAGE_UPDATE: I,
+  CONNECTION_OPEN: v,
+  MESSAGE_CREATE: I,
+  MESSAGE_UPDATE: S,
   MESSAGE_DELETE: T,
-  LOAD_FORUM_POSTS: v,
+  LOAD_FORUM_POSTS: A,
   LOAD_ARCHIVED_THREADS_SUCCESS: C,
   LOAD_THREADS_SUCCESS: C
 })

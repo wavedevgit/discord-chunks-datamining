@@ -1,19 +1,19 @@
 /** Chunk was on 97492 **/
 /** chunk id: 168754, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => a
+  A: () => s
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk697744 = require("./697744.jsx"),
   Chunk709562 = require("./709562.jsx");
 
-function a(e) {
+function s(e) {
   let {
     isActivityActive: t,
     onMouseEnter: n,
-    onMouseLeave: a,
-    onClick: s
+    onMouseLeave: s,
+    onClick: a
   } = e, o = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
@@ -61,10 +61,10 @@ function a(e) {
       null == n || n(e), u.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == a || a(e), u.onMouseLeave()
+      null == s || s(e), u.onMouseLeave()
     },
     onClick: e => {
-      null == s || s(e), d()
+      null == a || a(e), d()
     }
   }, o))
 }

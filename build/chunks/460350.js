@@ -41,27 +41,27 @@ function _(e) {
     restrictMentions: m,
     respectCooldown: g,
     userCanUsePremiumMessageLength: E,
-    resolve: b
+    resolve: y
   } = e;
-  if (0 === l.length && !(null == (t = o.submit) ? true : t.allowEmptyMessage) && (null == u || 0 === u.length) && (null == _ || 0 === _.length)) return void b({
+  if (0 === l.length && !(null == (t = o.submit) ? true : t.allowEmptyMessage) && (null == u || 0 === u.length) && (null == _ || 0 === _.length)) return void y({
     valid: false,
     failureReason: d.X8x.EMPTY_MESSAGE
   });
-  let y = E ? d.CS1 : d.uvi,
+  let b = E ? d.CS1 : d.uvi,
     O = !E;
-  if (l.length > y) {
+  if (l.length > b) {
     O && null != h ? r.h.dispatch({
       type: "MESSAGE_LENGTH_UPSELL",
       channel: h,
       content: l
-    }) : p(l.length, y), b({
+    }) : p(l.length, b), y({
       valid: false,
       failureReason: d.X8x.MESSAGE_TOO_LONG
     });
     return
   }
   if (null != h) {
-    if (null != h.getGuildId() && g && s.A.getSlowmodeCooldownGuess(h.id) > 0) return void b({
+    if (null != h.getGuildId() && g && s.A.getSlowmodeCooldownGuess(h.id) > 0) return void y({
       valid: false,
       failureReason: d.X8x.SLOWMODE_COOLDOWN
     });
@@ -76,11 +76,11 @@ function _(e) {
         if (false !== i) return void n({
           analyticsType: t,
           channel: h,
-          onCancel: () => b({
+          onCancel: () => y({
             valid: false,
             failureReason: d.X8x.SHOUTING_CANCELLED
           }),
-          onConfirm: () => b({
+          onConfirm: () => y({
             valid: true
           }),
           popoutText: i,
@@ -93,13 +93,13 @@ function _(e) {
       title: f.intl.string(f.t["7Q4eo2"]),
       body: f.intl.string(f.t.gi6XHp),
       confirmText: f.intl.string(f.t["Z4U1g/"])
-    }), b({
+    }), y({
       valid: false,
       failureReason: d.X8x.RATE_LIMITED
     });
     return
   }
-  b({
+  y({
     valid: true
   })
 }

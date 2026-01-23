@@ -14,13 +14,13 @@ let c = () => {
   let e = (0, l.bG)([s.A], () => s.A.skipNumCategories);
   return (0, a.jsxs)("div", {
     className: o.k,
-    children: [(0, a.jsx)(i.Text, {
+    children: [(0, a.jsx)(r.Text, {
       variant: "text-md/normal",
       children: "Hide first # of categories"
-    }), (0, a.jsx)(i.lw3, {
+    }), (0, a.jsx)(r.lw3, {
       value: e,
       onChange: e => {
-        (0, r.ue)(e)
+        (0, i.ue)(e)
       },
       minValue: 0,
       maxValue: 100

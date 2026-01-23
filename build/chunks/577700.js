@@ -33,7 +33,7 @@ async function _(e, t) {
     case "application":
       n = l.Rsh.APPLICATION_COMMAND_INDEX_APPLICATION(e.applicationId)
   }
-  let g = async t => _ >= u ? (m.push(p), b({
+  let g = async t => _ >= u ? (m.push(p), y({
     error: true
   }), i.h.dispatch({
     type: "APPLICATION_COMMAND_INDEX_FETCH_FAILURE",
@@ -44,7 +44,7 @@ async function _(e, t) {
     signal: t.signal,
     onRequestCreated: () => _++,
     rejectWithError: false
-  }).then(t => 202 === t.status ? (m.push(202), g(c)) : (b({
+  }).then(t => 202 === t.status ? (m.push(202), g(c)) : (y({
     error: false
   }), i.h.dispatch({
     type: "APPLICATION_COMMAND_INDEX_FETCH_SUCCESS",
@@ -53,18 +53,18 @@ async function _(e, t) {
   })), n => {
     var r;
     if (t.signal.aborted) {
-      m.push(f), b({
+      m.push(f), y({
         error: true
       });
       return
     }
-    return 429 === n.status ? (m.push(429), g(n.body.retry_after * s.A.Millis.SECOND)) : (m.push(null != (r = n.status) ? r : d), b({
+    return 429 === n.status ? (m.push(429), g(n.body.retry_after * s.A.Millis.SECOND)) : (m.push(null != (r = n.status) ? r : d), y({
       error: true
     }), i.h.dispatch({
       type: "APPLICATION_COMMAND_INDEX_FETCH_FAILURE",
       target: e
     }))
-  }), b = r => {
+  }), y = r => {
     let {
       error: i
     } = r, s = performance.now() - o;

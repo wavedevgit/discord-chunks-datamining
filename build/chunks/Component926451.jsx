@@ -46,7 +46,7 @@ function u(e) {
       tension: 170,
       friction: 26
     }
-  }), f = (0, o.zhh)({
+  }), p = (0, o.zhh)({
     from: {
       opacity: 0
     },
@@ -67,7 +67,7 @@ function u(e) {
     },
     children: (0, i.jsx)(a.animated.div, {
       style: {
-        opacity: f.opacity
+        opacity: p.opacity
       },
       ref: u,
       children: n

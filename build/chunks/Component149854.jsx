@@ -1,7 +1,7 @@
 /** Chunk was on 88615 **/
-/** chunk id: 149854, original params: e,t,l (module,exports,require) **/
+/** chunk id: 149854, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => A
 }), require("./896048.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,42 +18,42 @@ var Chunk627968 = require("./627968.js"),
   Chunk568065 = require("./568065.js"),
   Chunk876380 = require("./876380.js");
 
-function g(e) {
+function A(e) {
   let {
     guildId: t,
-    powerup: l
-  } = e, [g, x] = n.useState(true);
-  (0, m.A)(g);
-  let [b, h] = n.useState(false), j = (0, a.Ay)(t, l).type !== v.b_.INACTIVE, {
-    textColor: _
-  } = (0, p.A)(j), E = (0, o.M5)(t, "GuildPowerupPerkCard"), y = l.skuId === i.FB;
-  return (0, r.jsxs)(f.h, {
+    powerup: n
+  } = e, [A, _] = l.useState(true);
+  (0, f.A)(A);
+  let [x, h] = l.useState(false), b = (0, a.Ay)(t, n).type !== v.b_.INACTIVE, {
+    textColor: j
+  } = (0, m.A)(b), E = (0, s.M5)(t, "GuildPowerupPerkCard"), w = n.skuId === i.FB;
+  return (0, r.jsxs)(p.h, {
     onHover: e => h(e),
     guildId: t,
-    powerup: l,
-    badge: y && E ? "beta" : true,
+    powerup: n,
+    badge: w && E ? "beta" : true,
     children: [(0, r.jsx)(c.l, {
-      className: A.Sl,
-      powerup: l,
-      isHovering: b
+      className: g.Sl,
+      powerup: n,
+      isHovering: x
     }), (0, r.jsx)(u.Ft, {
-      title: l.title,
-      textColor: _,
-      footer: (0, r.jsx)(f.A, {
+      title: n.title,
+      textColor: j,
+      footer: (0, r.jsx)(p.A, {
         guildId: t,
-        powerup: l
+        powerup: n
       }),
-      children: (0, r.jsx)(s.Text, {
-        className: A.h_,
-        color: _,
+      children: (0, r.jsx)(o.Text, {
+        className: g.h_,
+        color: j,
         variant: "text-sm/medium",
-        children: l.description
+        children: n.description
       })
     }), (0, r.jsx)(u.kd, {
       children: (0, r.jsx)(d.Ay, {
         guildId: t,
-        powerup: l,
-        onError: x
+        powerup: n,
+        onError: _
       })
     })]
   })

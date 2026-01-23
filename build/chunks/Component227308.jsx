@@ -2,7 +2,7 @@
 /** chunk id: 227308, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,26 +19,26 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk283446 = require("./283446.js");
 
-function y(e) {
+function A(e) {
   let {
     locked: t,
     keybind: n
-  } = e, s = r.useRef(null), h = (0, a.yK)([c.A], () => c.A.getNotifications()), y = (0, a.bG)([d.default], () => d.default.getNotificationPositionMode());
-  if ((0, a.bG)([p.A], () => p.A.isNotificationDisabled(f.KS.TextChat)) || y === b.G6Q.DISABLED) return null;
-  let m = h.filter(e => !t || e.status !== b.yFH.TIMED_OUT),
-    O = (0, o.groupBy)(m, e => e.type);
+  } = e, s = r.useRef(null), h = (0, a.yK)([c.A], () => c.A.getNotifications()), A = (0, a.bG)([d.default], () => d.default.getNotificationPositionMode());
+  if ((0, a.bG)([p.A], () => p.A.isNotificationDisabled(f.KS.TextChat)) || A === g.G6Q.DISABLED) return null;
+  let b = h.filter(e => !t || e.status !== g.yFH.TIMED_OUT),
+    O = (0, o.groupBy)(b, e => e.type);
   return (0, i.jsx)(u.A, {
     contentDomRef: s,
     observeInterval: 200,
     children: (0, i.jsx)("div", {
       ref: s,
-      className: l()(g.container, g[y]),
+      className: l()(y.container, y[A]),
       children: Object.entries(O).map(e => {
         let [r, s] = e;
-        return 0 === s.length ? null : (0, i.jsx)(A, {
+        return 0 === s.length ? null : (0, i.jsx)(m, {
           locked: t,
           keybind: n,
-          position: y,
+          position: A,
           notification: s[0]
         }, r)
       })
@@ -46,7 +46,7 @@ function y(e) {
   })
 }
 
-function A(e) {
+function m(e) {
   let {
     notification: t,
     position: n,
@@ -54,7 +54,7 @@ function A(e) {
     locked: s
   } = e;
   return (0, i.jsx)("div", {
-    className: g.notificationGroup,
+    className: y.notificationGroup,
     children: (0, i.jsx)(h.A, {
       zIndex: 100,
       position: n,

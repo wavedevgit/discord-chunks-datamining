@@ -33,7 +33,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,13 +57,13 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -95,12 +95,12 @@ function N(e) {
   let {
     user: n,
     displayProfile: a,
-    guildId: b,
+    guildId: y,
     pendingBanner: O,
-    children: A,
-    className: v,
-    avatarSize: S,
-    avatarOffsetX: I,
+    children: v,
+    className: A,
+    avatarSize: I,
+    avatarOffsetX: S,
     avatarOffsetY: T,
     bannerWidth: N,
     bannerHeight: R,
@@ -115,9 +115,9 @@ function N(e) {
     pendingBanner: O,
     size: N,
     canAnimate: D || !k ? L : M
-  }), V = (0, u.rdh)(c.A.unsafe_rawColors.PRIMARY_800).hex(), F = n.getAvatarURL(b, (0, u.FT9)(S)), B = (0, o.LX)((0, d.Ay)(F, V, false)), H = (0, f.A)(null != (t = null != P ? P : null == a ? true : a.primaryColor) ? t : B).hex, Y = C(S), W = Y + I - w, K = R - T - w;
+  }), V = (0, u.rdh)(c.A.unsafe_rawColors.PRIMARY_800).hex(), F = n.getAvatarURL(y, (0, u.FT9)(I)), B = (0, o.LX)((0, d.Ay)(F, V, false)), H = (0, f.A)(null != (t = null != P ? P : null == a ? true : a.primaryColor) ? t : B).hex, Y = C(I), W = Y + S - w, K = R - T - w;
   return (0, r.jsxs)("svg", {
-    className: y.dK,
+    className: b.dK,
     viewBox: "0 0 ".concat(N, " ").concat(R),
     style: {
       minWidth: N,
@@ -144,8 +144,8 @@ function N(e) {
       height: "100%",
       overflow: "visible",
       mask: "url(#".concat(x, ")"),
-      children: [A, (0, r.jsx)("div", {
-        className: s()(y.vK, v),
+      children: [v, (0, r.jsx)("div", {
+        className: s()(b.vK, A),
         onMouseMove: () => j(true),
         onMouseLeave: () => j(false),
         style: {
@@ -155,7 +155,7 @@ function N(e) {
           backgroundColor: "COMPLETE" !== G ? c.A.unsafe_rawColors.PRIMARY_800.css : H
         },
         children: !k && (0, g.o4)(U) && (0, r.jsx)(_.A, {
-          className: y.pH
+          className: b.pH
         })
       })]
     })]
@@ -167,8 +167,8 @@ function R(e) {
     themeType: t,
     displayProfile: n,
     canUsePremiumProfileCustomization: i = false
-  } = e, a = I(e, ["themeType", "displayProfile", "canUsePremiumProfileCustomization"]), s = b.T[t], o = i || (null == n ? true : n.canUsePremiumProfileCustomization) || false;
-  return (0, r.jsx)(N, S(A({}, a, s), {
+  } = e, a = S(e, ["themeType", "displayProfile", "canUsePremiumProfileCustomization"]), s = y.T[t], o = i || (null == n ? true : n.canUsePremiumProfileCustomization) || false;
+  return (0, r.jsx)(N, I(v({}, a, s), {
     displayProfile: n,
     themePadding: o ? s.themePadding : 0
   }))

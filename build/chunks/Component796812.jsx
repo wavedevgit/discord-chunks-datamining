@@ -43,7 +43,7 @@ function O(e) {
     return ""
   }, [t]);
   return (0, r.jsx)("div", {
-    className: y.is,
+    className: b.is,
     style: null != n && n.length > 0 ? {
       backgroundImage: 'url("'.concat(n, '")')
     } : {
@@ -52,22 +52,22 @@ function O(e) {
   })
 }
 
-function A(e) {
+function v(e) {
   let {
     application: t
   } = e, n = null == t ? true : t.getIconURL(160, _.QB ? "webp" : "png");
   return (0, r.jsx)("div", {
-    className: y.zc,
+    className: b.zc,
     children: null != n && n.length > 0 ? (0, r.jsx)("img", {
-      className: y.Gt,
+      className: b.Gt,
       src: n,
       height: 80,
-      alt: b.intl.formatToPlainString(b.t["nh+jWk"], {
+      alt: y.intl.formatToPlainString(y.t["nh+jWk"], {
         game: t.name
       })
     }) : (0, r.jsx)(u._7Z, {
       size: "lg",
-      className: y.ct,
+      className: b.ct,
       color: u.LU0.colors.BACKGROUND_SURFACE_HIGH,
       style: {
         backgroundColor: u.LU0.colors.BACKGROUND_BRAND.css
@@ -76,14 +76,14 @@ function A(e) {
   })
 }
 
-function v(e) {
+function A(e) {
   var t;
   let {
     application: n,
     detectedGame: a
   } = e, s = i.useMemo(() => null == a ? true : a.genres.map(h.du).join(", "), [a]), l = null != (t = a.name) ? t : null == n ? true : n.name;
   return (0, r.jsxs)("div", {
-    className: y.wR,
+    className: b.wR,
     children: [(0, r.jsx)(o.DZT, {
       variant: "heading-lg/bold",
       color: "text-strong",
@@ -96,28 +96,28 @@ function v(e) {
   })
 }
 
-function S(e) {
+function I(e) {
   var t;
   let {
     detectedGame: n,
     openFullGameProfile: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: y.IP,
+    className: b.IP,
     children: [(0, r.jsxs)("div", {
-      className: y.I8,
+      className: b.I8,
       children: [(0, r.jsx)(o.EYj, {
         variant: "text-sm/medium",
         color: "text-strong",
         lineClamp: 3,
         children: null != (t = n.summaryLocalized) ? t : n.summary
       }), (0, r.jsx)(u.DUT, {
-        className: y.vk,
+        className: b.vk,
         onClick: i,
         children: (0, r.jsx)(o.EYj, {
           variant: "text-xs/normal",
           color: "text-subtle",
-          children: b.intl.string(b.t.lBeKY2)
+          children: y.intl.string(y.t.lBeKY2)
         })
       })]
     }), (0, r.jsx)(u.Button, {
@@ -130,12 +130,12 @@ function S(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     application: t
-  } = e, n = (0, l.bG)([p.A], () => p.A.getMute(t.id)), a = i.useMemo(() => n ? b.intl.string(b.t.tpvw4T) : b.intl.string(b.t["6EwEwp"]), [n]);
+  } = e, n = (0, l.bG)([p.A], () => p.A.getMute(t.id)), a = i.useMemo(() => n ? y.intl.string(y.t.tpvw4T) : y.intl.string(y.t["6EwEwp"]), [n]);
   return (0, r.jsxs)("div", {
-    className: y.fc,
+    className: b.fc,
     children: [(0, r.jsx)(c.m, {
       asContainer: true,
       tag: "span",
@@ -143,7 +143,7 @@ function I(e) {
       "aria-label": a,
       delay: 750,
       children: (0, r.jsx)(u.DUT, {
-        className: y.hP,
+        className: b.hP,
         "aria-label": a,
         onClick: () => {
           (0, d.i1)({
@@ -163,7 +163,7 @@ function I(e) {
       })
     }), (0, r.jsx)(E.A, {
       applicationId: t.id,
-      className: y.hP
+      className: b.hP
     })]
   })
 }
@@ -184,17 +184,17 @@ function T(e) {
     null == o || o(), null == l || l(e)
   }, [o, l]);
   return (0, r.jsxs)("div", {
-    className: s()(y.kL, a),
+    className: s()(b.kL, a),
     children: [(0, r.jsx)(O, {
       detectedGame: n
-    }), (0, r.jsx)(I, {
-      application: t
-    }), (0, r.jsx)(A, {
+    }), (0, r.jsx)(S, {
       application: t
     }), (0, r.jsx)(v, {
+      application: t
+    }), (0, r.jsx)(A, {
       application: t,
       detectedGame: n
-    }), (0, r.jsx)(S, {
+    }), (0, r.jsx)(I, {
       application: t,
       detectedGame: n,
       openFullGameProfile: c

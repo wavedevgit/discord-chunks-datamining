@@ -38,13 +38,13 @@ function g(e) {
   return e
 }
 let E = [],
-  b = null,
   y = null,
+  b = null,
   O = null,
-  A = null,
-  v = false,
-  S = false,
-  I = null,
+  v = null,
+  A = false,
+  I = false,
+  S = null,
   T = false,
   C = null;
 
@@ -86,7 +86,7 @@ function N(e, t) {
       lossRate: e
     }))
   }), a.on(l.q.Speaking, (e, t) => {
-    null == A || A.setSpeaking(e, t)
+    null == v || v.setSpeaking(e, t)
   }), a.on(l.q.Flags, (e, t) => {
     o.h.wait(() => {
       o.h.dispatch({
@@ -146,32 +146,32 @@ function N(e, t) {
         userIds: e
       })
     })
-  }), A = new c.A(f.default.getId(), t), y = null, v = false, S = false, a
+  }), v = new c.A(f.default.getId(), t), b = null, A = false, I = false, a
 }
 
 function R() {
   var e;
   if (null == r) returnfalse;
-  y = {
+  b = {
     duration: r.getDuration(),
     mediaSessionId: null != (e = r.getMediaSessionId()) ? e : null,
     rtcConnectionId: r.getRTCConnectionId(),
-    wasEverMultiParticipant: v,
-    wasEverRtcConnected: S,
-    voiceStateAnalytics: A,
+    wasEverMultiParticipant: A,
+    wasEverRtcConnected: I,
+    voiceStateAnalytics: v,
     channelId: r.channelId
   }, o.h.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
     mediaEngineConnectionId: r.getMediaEngineConnectionId()
-  }), r.destroy(), r = null, A = null, T = false
+  }), r.destroy(), r = null, v = null, T = false
 }
 
 function w(e) {
-  return i = e.sessionId, b = null, O = null, R(), false
+  return i = e.sessionId, y = null, O = null, R(), false
 }
 
 function P() {
-  i = null, b = null, O = null, R()
+  i = null, y = null, O = null, R()
 }
 
 function D(e) {
@@ -180,11 +180,11 @@ function D(e) {
   } = e;
   return t.reduce((e, t) => {
     var n, a, s;
-    if (null == A || A.updateVoiceStates(t.userId, t.channelId), v = v || (null != (n = null == A ? true : A.getStats().max_voice_state_count) ? n : 0) > 1, f.default.getId() !== t.userId) return e;
-    if (null != r) t.sessionId === i ? null != t.guildId && t.guildId === r.guildId || null == t.guildId && t.channelId === r.channelId ? null == t.channelId ? R() : (r.setNextChannelId(t.channelId), T = true, C = null, r.clearJoinVoiceId()) : (t.guildId !== r.guildId && null == t.channelId || R(), null != t.channelId && (b = null, O = null, r = N(t.guildId, t.channelId), v = (null != (a = null == A ? true : A.getStats().max_voice_state_count) ? a : 0) > 1)) : t.guildId === r.guildId && ((null == u.default.getAwaitingRemoteSessionInfo() || null == u.default.getRemoteSessionId()) && (b = r.channelId), R());
+    if (null == v || v.updateVoiceStates(t.userId, t.channelId), A = A || (null != (n = null == v ? true : v.getStats().max_voice_state_count) ? n : 0) > 1, f.default.getId() !== t.userId) return e;
+    if (null != r) t.sessionId === i ? null != t.guildId && t.guildId === r.guildId || null == t.guildId && t.channelId === r.channelId ? null == t.channelId ? R() : (r.setNextChannelId(t.channelId), T = true, C = null, r.clearJoinVoiceId()) : (t.guildId !== r.guildId && null == t.channelId || R(), null != t.channelId && (y = null, O = null, r = N(t.guildId, t.channelId), A = (null != (a = null == v ? true : v.getStats().max_voice_state_count) ? a : 0) > 1)) : t.guildId === r.guildId && ((null == u.default.getAwaitingRemoteSessionInfo() || null == u.default.getRemoteSessionId()) && (y = r.channelId), R());
     else {
       if (t.sessionId !== i || null == t.channelId) return e;
-      b = null, O = null, r = N(t.guildId, t.channelId), v = (null != (s = null == A ? true : A.getStats().max_voice_state_count) ? s : 0) > 1
+      y = null, O = null, r = N(t.guildId, t.channelId), A = (null != (s = null == v ? true : v.getStats().max_voice_state_count) ? s : 0) > 1
     }
     returntrue
   }, false)
@@ -196,7 +196,7 @@ function x(e) {
 }
 
 function L() {
-  b = null
+  y = null
 }
 
 function j() {
@@ -240,7 +240,7 @@ function V(e) {
 }
 
 function F(e) {
-  return e.state === _.S7L.RTC_CONNECTED && (S = true), true
+  return e.state === _.S7L.RTC_CONNECTED && (I = true), true
 }
 
 function B(e) {
@@ -260,7 +260,7 @@ function Y(e) {
       let [t, n] = e;
       return "any" !== t && 0 !== n
     })) returnfalse;
-  I = performance.now()
+  S = performance.now()
 }
 
 function W(e) {
@@ -301,7 +301,7 @@ class q extends(a = Chunk311907.Ay.Store) {
     return this.getState() === _.S7L.DISCONNECTED
   }
   getRemoteDisconnectVoiceChannelId() {
-    return b
+    return y
   }
   getLastSessionVoiceChannelId() {
     return O
@@ -341,10 +341,10 @@ class q extends(a = Chunk311907.Ay.Store) {
   }
   getDuration() {
     var e;
-    return null != (e = null == r ? true : r.getDuration()) ? e : null == y ? true : y.duration
+    return null != (e = null == r ? true : r.getDuration()) ? e : null == b ? true : b.duration
   }
   getLastRTCConnectionState() {
-    return y
+    return b
   }
   getVoiceFilterSpeakingDurationMs() {
     return null == r ? true : r.getVoiceFilterSpeakingDurationMs()
@@ -353,16 +353,16 @@ class q extends(a = Chunk311907.Ay.Store) {
     return null == r ? true : r.getPacketStats()
   }
   getVoiceStateStats() {
-    return null == A ? true : A.getStats()
+    return null == v ? true : v.getStats()
   }
   getUserVoiceSettingsStats(e) {
-    return null == A ? true : A.getUserVoiceSettingsStats(e)
+    return null == v ? true : v.getUserVoiceSettingsStats(e)
   }
   getWasEverMultiParticipant() {
-    return v
+    return A
   }
   getWasEverRtcConnected() {
-    return S
+    return I
   }
   getUserIds() {
     return null == r ? true : r.getUserIds()
@@ -381,7 +381,7 @@ class q extends(a = Chunk311907.Ay.Store) {
     return null == t ? true : t.get(e)
   }
   getLastNonZeroRemoteVideoSinkWantsTime() {
-    return I
+    return S
   }
   getWasMoved() {
     return T

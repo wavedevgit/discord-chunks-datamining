@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 697831, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,22 +16,22 @@ var Chunk311907 = require("./311907.js"),
   Chunk272984 = require("./272984.js"),
   Chunk985018 = require("./985018.jsx");
 
-function h(e, t, n) {
-  let h = (0, i.bG)([s.A, a.default], () => null != t ? (0, c.A)(s.A, a.default, t, e) : true, [e, t]);
-  if (null == h || null == e || null == t) return null;
-  let A = h.isCurrentUser || h.notPlayable || h.playingSameTrack,
-    g = h.isCurrentUser || h.syncingWithUser || h.syncingWithParty;
+function g(e, t, n) {
+  let g = (0, i.bG)([s.A, a.default], () => null != t ? (0, c.A)(s.A, a.default, t, e) : true, [e, t]);
+  if (null == g || null == e || null == t) return null;
+  let f = g.isCurrentUser || g.notPlayable || g.playingSameTrack,
+    m = g.isCurrentUser || g.syncingWithUser || g.syncingWithParty;
   return [(0, r.jsx)(l.Drp, {
     id: "spotify-play-".concat(e.session_id),
-    action: () => (0, d.A)(h, p.Qp.USER_ACTIVITY_PLAY, n),
-    label: f.intl.string(f.t.rRffNz),
-    subtext: A ? (0, o.A)(h, p.Qp.USER_ACTIVITY_PLAY) : true,
-    disabled: A
-  }, "spotify-play-".concat(e.session_id)), h.canPlaySpotify ? (0, r.jsx)(l.Drp, {
+    action: () => (0, d.A)(g, p.Qp.USER_ACTIVITY_PLAY, n),
+    label: h.intl.string(h.t.rRffNz),
+    subtext: f ? (0, o.A)(g, p.Qp.USER_ACTIVITY_PLAY) : true,
+    disabled: f
+  }, "spotify-play-".concat(e.session_id)), g.canPlaySpotify ? (0, r.jsx)(l.Drp, {
     id: "spotify-sync-".concat(e.session_id),
-    action: () => (0, u.A)(h, p.Qp.USER_ACTIVITY_SYNC, n),
-    label: f.intl.string(f.t.eU3inB),
-    subtext: g ? (0, o.A)(h, p.Qp.USER_ACTIVITY_SYNC) : true,
-    disabled: g
+    action: () => (0, u.A)(g, p.Qp.USER_ACTIVITY_SYNC, n),
+    label: h.intl.string(h.t.eU3inB),
+    subtext: m ? (0, o.A)(g, p.Qp.USER_ACTIVITY_SYNC) : true,
+    disabled: m
   }, "spotify-sync-".concat(e.session_id)) : null]
 }

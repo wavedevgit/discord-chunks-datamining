@@ -2,12 +2,12 @@
 /** chunk id: 337337, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk91871 = require("./91871.js"),
-  a = require.n(Chunk91871),
+  i = require.n(Chunk91871),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk565645 = require("./565645.jsx"),
@@ -21,17 +21,17 @@ let h = e => {
   } = e, {
     id: n,
     name: r,
-    emojiId: a,
+    emojiId: i,
     emojiName: d
-  } = t, u = (0, i.bG)([o.Ay], () => null != a ? o.Ay.getUsableCustomEmojiById(a) : null), h = null != a || null != d;
+  } = t, u = (0, a.bG)([c.Ay], () => null != i ? c.Ay.getUsableCustomEmojiById(i) : null), h = null != i || null != d;
   return (0, l.jsx)(s.x4T, {
     value: n,
     children: (0, l.jsx)(s.x4T.Label, {
       children: (0, l.jsxs)("div", {
         className: m.nM,
-        children: [h ? (0, l.jsx)(c.A, {
+        children: [h ? (0, l.jsx)(o.A, {
           className: m.__invalid_emoji,
-          emojiId: a,
+          emojiId: i,
           emojiName: d,
           animated: !!(null == u ? true : u.animated)
         }) : (0, l.jsx)(s.gqV, {
@@ -48,22 +48,22 @@ let h = e => {
   }, n)
 };
 
-function f(e) {
+function g(e) {
   let {
     parentChannel: t,
     appliedTags: n,
     maxTagsApplied: r,
-    onSelectTag: i,
-    onClose: c
-  } = e, o = (0, d.OT)(t);
+    onSelectTag: a,
+    onClose: o
+  } = e, c = (0, d.OT)(t);
   return (0, l.jsx)(s.pzS, {
     value: n,
     onChange: e => {
-      (!r || n.has(e)) && (i(e), c())
+      (!r || n.has(e)) && (a(e), o())
     },
     placeholder: u.intl.string(u.t.MbhGm7),
     "aria-label": u.intl.string(u.t.MbhGm7),
-    children: e => o.filter(t => a()(e.toLowerCase(), t.name.toLowerCase())).map(e => (0, l.jsx)(h, {
+    children: e => c.filter(t => i()(e.toLowerCase(), t.name.toLowerCase())).map(e => (0, l.jsx)(h, {
       tag: e
     }, e.id))
   })

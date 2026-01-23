@@ -22,23 +22,23 @@ var Chunk64700 = require("./64700.js"),
   Chunk985018 = require("./985018.jsx");
 let E = new Set(["Blink", "Gecko", "WebKit"]),
   O = Chunk652215.tEg;
-if (Chunk723702.isPlatformEmbedded) O = e => g.Ay.setBadge(e);
+if (Chunk723702.isPlatformEmbedded) O = e => m.Ay.setBadge(e);
 else if (E.has(s().layout)) {
   let e = new(l())({
     animation: "none"
   });
   O = t => {
     try {
-      (0, m.sF)(t), e.badge(false === t ? "•" : t)
+      (0, A.sF)(t), e.badge(false === t ? "•" : t)
     } catch (e) {}
   }
 }
 
 function y() {
-  let e = (0, o.bG)([h.A], () => h.A.hasIncomingCalls()),
-    t = (0, o.bG)([d.default, f.A, p.A, c.A], () => {
+  let e = (0, o.bG)([g.A], () => g.A.hasIncomingCalls()),
+    t = (0, o.bG)([d.default, h.A, p.A, c.A], () => {
       let e = d.default.getTotalMentionCount(),
-        t = (0, u.dH)([f.A, c.A]),
+        t = (0, u.dH)([h.A, c.A]),
         n = d.default.hasAnyUnread(),
         r = p.A.getDisableUnreadBadge(),
         i = e + t;
@@ -46,9 +46,9 @@ function y() {
     });
   r.useEffect(() => {
     if (!e) return;
-    let t = g.Ay.bounceDock("critical"),
-      n = (0, m.iA)({
-        messages: [_.intl.string(_.t["fk1/bX"])],
+    let t = m.Ay.bounceDock("critical"),
+      n = (0, A.iA)({
+        messages: [b.intl.string(b.t["fk1/bX"])],
         count: 50
       });
     return () => {

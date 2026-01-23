@@ -2,7 +2,7 @@
 /** chunk id: 67811, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  j: () => y
+  j: () => b
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -78,46 +78,46 @@ function E(e) {
   return null != (t = g[e.length - 1]) ? t : g[g.length - 1]
 }
 
-function b(e, t) {
+function y(e, t) {
   return s()({
     [u.AN]: true,
     [u.CW]: "always" === e,
     [u._W]: "on-hover" === e && t
   })
 }
-let y = e => {
+let b = e => {
   let t, n, {
       backgroundStyle: a = "always",
       children: d,
       icon: p,
       name: m,
       ariaLabel: g,
-      className: y,
+      className: b,
       style: O,
-      to: A,
-      onClick: v,
-      selected: S = false
+      to: v,
+      onClick: A,
+      selected: I = false
     } = e,
-    I = h(e, ["backgroundStyle", "children", "icon", "name", "ariaLabel", "className", "style", "to", "onClick", "selected"]),
+    S = h(e, ["backgroundStyle", "children", "icon", "name", "ariaLabel", "className", "style", "to", "onClick", "selected"]),
     T = (0, o.W6)();
   null == p && null != m && (n = E(t = (0, c.oN)(m)));
   let C = i.useCallback(e => {
-      if (null == A);
-      else if ("string" == typeof A) T.push(A);
+      if (null == v);
+      else if ("string" == typeof v) T.push(v);
       else {
         let {
           pathname: e = "",
           state: t
-        } = A;
+        } = v;
         T.push(e, t)
       }
-      null != v && v(e)
-    }, [T, A, v]),
+      null != A && A(e)
+    }, [T, v, A]),
     N = (0, l.rdh)(l.LU0.modules.guildbar.AVATAR_SIZE);
-  return (0, r.jsxs)(l.DUT, _(f({}, I), {
+  return (0, r.jsxs)(l.DUT, _(f({}, S), {
     onClick: C,
-    className: s()(y, u.iE, {
-      [u.wH]: S
+    className: s()(b, u.iE, {
+      [u.wH]: I
     }),
     style: _(f({}, O), {
       fontSize: n
@@ -128,7 +128,7 @@ let y = e => {
     children: [(0, r.jsx)(l.AC4, {
       children: null != g && "" !== g ? g : null != m ? m : ""
     }), null != t ? (0, r.jsx)("div", {
-      className: s()(b(a, false), u.q9),
+      className: s()(y(a, false), u.q9),
       "aria-hidden": true,
       children: t
     }) : null, null != p ? (0, r.jsx)("img", {
@@ -139,7 +139,7 @@ let y = e => {
       height: N,
       "aria-hidden": true
     }) : null, null != d ? (0, r.jsx)("div", {
-      className: b(a, true),
+      className: y(a, true),
       children: d
     }) : null]
   }))

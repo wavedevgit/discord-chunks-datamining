@@ -2,7 +2,7 @@
 /** chunk id: 808821, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./938796.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -37,27 +37,27 @@ function E(e) {
   }
 }
 
-function b(e) {
+function y(e) {
   let {
     message: t,
     compact: n
-  } = e, b = t.channel_id, y = (0, s.bG)([f.A], () => null != t.messageReference ? f.A.getMessage(t.messageReference.channel_id, t.messageReference.message_id) : null, [t.messageReference]), {
+  } = e, y = t.channel_id, b = (0, s.bG)([f.A], () => null != t.messageReference ? f.A.getMessage(t.messageReference.channel_id, t.messageReference.message_id) : null, [t.messageReference]), {
     clipId: O,
-    remoteTriggerClipId: A
-  } = i.useMemo(() => null != y ? E(y.content) : {}, [y]), v = (0, s.bG)([c.A], () => c.A.getMatchingGroupClip(O, A)), S = (0, s.bG)([c.A], () => null != v && null != b && c.A.wasClipSharedInChannel(v.id, b)), {
-    onShareClick: I
-  } = (0, d.A)(b), T = i.useCallback(() => {
+    remoteTriggerClipId: v
+  } = i.useMemo(() => null != b ? E(b.content) : {}, [b]), A = (0, s.bG)([c.A], () => c.A.getMatchingGroupClip(O, v)), I = (0, s.bG)([c.A], () => null != A && null != y && c.A.wasClipSharedInChannel(A.id, y)), {
+    onShareClick: S
+  } = (0, d.A)(y), T = i.useCallback(() => {
     var e;
-    null != v && null != b && (null == (e = t.messageReference) ? true : e.message_id) != null && I({
-      clips: [v],
+    null != A && null != y && (null == (e = t.messageReference) ? true : e.message_id) != null && S({
+      clips: [A],
       messageReference: {
-        channel_id: b,
+        channel_id: y,
         message_id: t.messageReference.message_id
       }
     })
-  }, [v, b, t.messageReference, I]);
-  if (null == y || null == O && null == A || null == v || S) return null;
-  let C = y.attachments.find(e => {
+  }, [A, y, t.messageReference, S]);
+  if (null == b || null == O && null == v || null == A || I) return null;
+  let C = b.attachments.find(e => {
       var t;
       return (0, a.Lt)(null != (t = e.flags) ? t : 0, h.sbO.IS_CLIP)
     }),
@@ -66,7 +66,7 @@ function b(e) {
     let e = p.A.toURLSafe(C.proxy_url);
     null != e && (e.searchParams.append("format", "webp"), N = e.toString())
   }
-  let R = null != N ? [N, v.thumbnail] : [v.thumbnail];
+  let R = null != N ? [N, A.thumbnail] : [A.thumbnail];
   return (0, r.jsx)(_.A, {
     iconNode: (0, r.jsx)(l.xgA, {
       size: "md",

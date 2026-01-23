@@ -53,28 +53,28 @@ function u(e, t, n, r, s, o) {
   let l, c, u = 33723,
     g = i.A.getTypeSize("SHORT"),
     E = g + i.A.getTypeSize("SHORT"),
-    b = E + i.A.getTypeSize("LONG"),
-    y = i.A.getShortAt(e, r, s),
+    y = E + i.A.getTypeSize("LONG"),
+    b = i.A.getShortAt(e, r, s),
     O = i.A.getShortAt(e, r + g, s),
-    A = i.A.getLongAt(e, r + E, s);
-  if (true === i.A.typeSizes[O] || !o && true === a.Ay[t][y]) return;
-  d(O, A) ? l = f(e, c = r + b, O, A, s) : (c = i.A.getLongAt(e, r + b, s), l = p(e, n, c, O, A) ? f(e, n + c, O, A, s, y === u) : "<faulty value>"), O === i.A.tagTypes.ASCII && (l = h(l = _(l)));
-  let v = `undefined-${y}`,
-    S = l;
-  if (true !== a.Ay[t][y])
-    if (true !== a.Ay[t][y].name && true !== a.Ay[t][y].description) {
-      v = a.Ay[t][y].name;
+    v = i.A.getLongAt(e, r + E, s);
+  if (true === i.A.typeSizes[O] || !o && true === a.Ay[t][b]) return;
+  d(O, v) ? l = f(e, c = r + y, O, v, s) : (c = i.A.getLongAt(e, r + y, s), l = p(e, n, c, O, v) ? f(e, n + c, O, v, s, b === u) : "<faulty value>"), O === i.A.tagTypes.ASCII && (l = h(l = _(l)));
+  let A = `undefined-${b}`,
+    I = l;
+  if (true !== a.Ay[t][b])
+    if (true !== a.Ay[t][b].name && true !== a.Ay[t][b].description) {
+      A = a.Ay[t][b].name;
       try {
-        S = a.Ay[t][y].description(l)
+        I = a.Ay[t][b].description(l)
       } catch (e) {
-        S = m(l)
+        I = m(l)
       }
-    } else O === i.A.tagTypes.RATIONAL || O === i.A.tagTypes.SRATIONAL ? (v = a.Ay[t][y], S = "" + l[0] / l[1]) : (v = a.Ay[t][y], S = m(l));
+    } else O === i.A.tagTypes.RATIONAL || O === i.A.tagTypes.SRATIONAL ? (A = a.Ay[t][b], I = "" + l[0] / l[1]) : (A = a.Ay[t][b], I = m(l));
   return {
-    id: y,
-    name: v,
+    id: b,
+    name: A,
     value: l,
-    description: S,
+    description: I,
     __offset: c
   }
 }

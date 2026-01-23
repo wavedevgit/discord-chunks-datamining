@@ -45,24 +45,24 @@ require("./985018.jsx");
 var y = ((r = {})[r.UNKNOWN = 0] = "UNKNOWN", r[r.DEFAULT = 1] = "DEFAULT", r[r.MORE = 2] = "MORE", r[r.LESS = 3] = "LESS", r[r.MUTED = 4] = "MUTED", r);
 
 function I(e) {
-  return e.type === b.Mm.MESSAGE || e.type === b.Mm.GENERATED_CANDIDATE || e.type === b.Mm.GUILD_EVENT
+  return e.type === _.Mm.MESSAGE || e.type === _.Mm.GENERATED_CANDIDATE || e.type === _.Mm.GUILD_EVENT
 }
 
 function v(e) {
   return e < false ? 4 : e < 0 ? 3 : e > 0 ? 2 : 1
 }
 async function S(e, t, n) {
-  let r = m.A.getHydratedItems(),
+  let r = A.A.getHydratedItems(),
     i = e.slice(t, n);
   if (0 === i.length) return;
-  h.A.loadHydratedAttempt(O(t, n));
+  g.A.loadHydratedAttempt(O(t, n));
   let l = i.filter(e => null == r[e.id]),
-    a = l.filter(e => e.type === b.Mm.MESSAGE).map(e => ({
+    a = l.filter(e => e.type === _.Mm.MESSAGE).map(e => ({
       channel_id: e.data.channel_id,
       message_id: e.data.message_id
     })),
     s = l.map(e => {
-      if (e.type === b.Mm.MESSAGE) {
+      if (e.type === _.Mm.MESSAGE) {
         var t, n, r;
         let i = [];
         return (null == (t = e.data.message_context) ? true : t.reply_message_id) != null && i.push({
@@ -78,26 +78,26 @@ async function S(e, t, n) {
       }
       return []
     }).flat().filter(Boolean),
-    o = l.filter(e => e.type === b.Mm.ACTIVITY).map(e => ({
+    o = l.filter(e => e.type === _.Mm.ACTIVITY).map(e => ({
       user_id: e.data.user_id,
       content_id: e.data.content_id
     })),
-    c = l.filter(e => e.type === b.Mm.GENERATED_CANDIDATE).map(e => ({
+    c = l.filter(e => e.type === _.Mm.GENERATED_CANDIDATE).map(e => ({
       content_id: e.data.content_id,
       guild_id: e.data.guild_id,
       channel_id: e.data.channel_id
     }));
-  await h.A.fetchHydrated(t, n, {
+  await g.A.fetchHydrated(t, n, {
     messageItems: [...a, ...s],
     activityItems: o,
     generatedCandidateItems: c
   })
 }
 async function C() {
-  let e = m.A.getUnreadDisplayItems(),
-    t = m.A.getReadDisplayItems(),
-    n = m.A.getNextIndexToHydrate();
-  await S([...e, ...t], n, n + b.w5)
+  let e = A.A.getUnreadDisplayItems(),
+    t = A.A.getReadDisplayItems(),
+    n = A.A.getNextIndexToHydrate();
+  await S([...e, ...t], n, n + _.w5)
 }
 
 function N(e) {
@@ -164,18 +164,18 @@ function T(e, t) {
 
 function j(e, t) {
   let n = p.Ay.getTrackedAckMessageId(e);
-  return null == n || f.default.extractTimestamp(t) > f.default.extractTimestamp(n)
+  return null == n || h.default.extractTimestamp(t) > h.default.extractTimestamp(n)
 }
 
 function x(e) {
-  return (0, A.HF)(e)
+  return (0, f.HF)(e)
 }
 
 function P(e) {
   var t;
   return {
     id: e.id,
-    type: b.Mm.CUSTOM_STATUS,
+    type: _.Mm.CUSTOM_STATUS,
     activity: {
       id: e.id,
       author_id: e.data.user_id,
@@ -198,18 +198,18 @@ function P(e) {
 }
 
 function w(e, t, n) {
-  let r = _.A.getReadTimestamp(e);
+  let r = b.A.getReadTimestamp(e);
   null == r && (r = null == n ? true : n[e]);
-  let i = _.A.getReadTimestamp(t);
+  let i = b.A.getReadTimestamp(t);
   return (null == i && (i = null == n ? true : n[t]), null == r && null == i) ? 0 : null == r ? false : null == i ? 1 : i - r
 }
 
 function L(e) {
-  let t = [...m.A.getUnreadDisplayItems(), ...m.A.getReadDisplayItems()],
+  let t = [...A.A.getUnreadDisplayItems(), ...A.A.getReadDisplayItems()],
     n = null;
   for (let t = e.length - 1; t >= 0; t--) {
     let r = e[t];
-    if (null != r && !g.P.has(r.item.data.kind)) {
+    if (null != r && !m.P.has(r.item.data.kind)) {
       n = r.item.id;
       break
     }
@@ -280,13 +280,13 @@ async function M(e) {
   } = await Promise.resolve().then(n.bind(n, 334738)), {
     AnalyticsObjectTypes: r
   } = await Promise.resolve().then(n.bind(n, 652215));
-  m.A.getDehydratedItems().forEach(n => {
-    n.type === b.Mm.MESSAGE && n.data.channel_type === E.rbe.GUILD_ANNOUNCEMENT && f.default.compare(p.Ay.ackMessageId(n.data.channel_id), n.data.message_id) >= 0 && t(n.data.channel_id, {
+  A.A.getDehydratedItems().forEach(n => {
+    n.type === _.Mm.MESSAGE && n.data.channel_type === E.rbe.GUILD_ANNOUNCEMENT && h.default.compare(p.Ay.ackMessageId(n.data.channel_id), n.data.message_id) >= 0 && t(n.data.channel_id, {
       object: e,
       objectType: r.ACK_SEMI_AUTOMATIC
-    }, true, true, f.default.atPreviousMillisecond(n.data.message_id))
-  }), await h.A.clearReadStates(), await h.A.fetchDehydrated({
+    }, true, true, h.default.atPreviousMillisecond(n.data.message_id))
+  }), await g.A.clearReadStates(), await g.A.fetchDehydrated({
     isReloading: true,
     forceRefresh: true
-  }), await h.A.reloadICYMITab(), await h.A.getGuildChannelScores(), h.A.getRecommendedGuilds()
+  }), await g.A.reloadICYMITab(), await g.A.getGuildChannelScores(), g.A.getRecommendedGuilds()
 }

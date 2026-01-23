@@ -82,15 +82,15 @@ function E(e) {
   return null != t && (e = "rgba(".concat(0 | t[1], ", ").concat(0 | t[2], ", ").concat(0 | t[3], ", ").concat(t[4], ")")), e
 }
 
-function b(e) {
+function y(e) {
   return e && (e.transform && (e.transform = e.WebkitTransform = e.MozTransform = e.transform.map(m).join(" ")), e.color && (e.color = E(e.color)), e.backgroundColor && (e.backgroundColor = E(e.backgroundColor))), e
 }
 
-function y(e, t, n) {
+function b(e, t, n) {
   if (e.setNativeProps) e.setNativeProps(t);
   else {
     if (!e.nodeType || true === e.setAttribute) returnfalse;
-    c().setValueForStyles(e, b(t.style), n._reactInternalInstance)
+    c().setValueForStyles(e, y(t.style), n._reactInternalInstance)
   }
 }
 
@@ -100,11 +100,11 @@ function O(e) {
   }), e
 }
 
-function A(e, t, n) {
+function v(e, t, n) {
   return true !== t && true != n ? o()(t, n) : e
 }
 
-function v(e, t) {
+function A(e, t) {
   let n, {
       toValueMin: i,
       toValueMax: a,
@@ -119,48 +119,48 @@ function v(e, t) {
       durationMin: g,
       durationMax: E
     } = t,
-    b = _(t, ["toValueMin", "toValueMax", "tension", "friction", "loop", "reverse", "invert", "callback", "type", "shouldLoop", "durationMin", "durationMax"]),
-    y = e._value,
-    O = A(t.duration, g, E),
-    S = A(t.toValue, i, a),
-    I = r[h](e, p(d({}, b), {
-      toValue: S,
+    y = _(t, ["toValueMin", "toValueMax", "tension", "friction", "loop", "reverse", "invert", "callback", "type", "shouldLoop", "durationMin", "durationMax"]),
+    b = e._value,
+    O = v(t.duration, g, E),
+    I = v(t.toValue, i, a),
+    S = r[h](e, p(d({}, y), {
+      toValue: I,
       tension: s,
       friction: o,
       duration: O
     })),
-    T = I;
+    T = S;
   if (c || u) {
-    let i = A(t.duration, g, E);
-    n = r[h](e, p(d({}, b), {
-      toValue: c ? y : -S,
+    let i = v(t.duration, g, E);
+    n = r[h](e, p(d({}, y), {
+      toValue: c ? b : -I,
       tension: s,
       friction: o,
       duration: i
-    })), T = r.sequence([I, n])
+    })), T = r.sequence([S, n])
   }
   l ? T.start(() => {
-    (!m || m && m()) && (f ? f(v.bind(null, e, t)) : v(e, t))
+    (!m || m && m()) && (f ? f(A.bind(null, e, t)) : A(e, t))
   }) : T.start(f)
 }
 
-function S(e) {
+function I(e) {
   for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
   return e.interpolate({
     inputRange: [0, 1],
     outputRange: n
   })
 }
-Chunk685908.inject.ApplyAnimatedValues(y, e => e);
-let I = {
+Chunk685908.inject.ApplyAnimatedValues(b, e => e);
+let S = {
     CLAMP: "clamp"
   },
   T = p(d({}, Chunk685908), {
     Easing: a(),
     accelerate: O,
-    animate: v,
-    interpolate: S,
-    Extrapolate: I,
+    animate: A,
+    interpolate: I,
+    Extrapolate: S,
     div: Chunk685908.createAnimatedComponent("div"),
     span: Chunk685908.createAnimatedComponent("span"),
     img: Chunk685908.createAnimatedComponent("img"),

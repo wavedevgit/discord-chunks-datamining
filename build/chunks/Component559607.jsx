@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  i = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk773669 = require("./773669.js"),
@@ -18,17 +18,17 @@ function h(e) {
   let {
     application: t,
     className: n
-  } = e, r = (0, s.bG)([o.default], () => o.default.locale), {
+  } = e, i = (0, s.bG)([c.default], () => c.default.locale), {
     supportedLanguages: h,
     usersLanguageIsFirst: m
-  } = a.useMemo(() => {
+  } = l.useMemo(() => {
     var e;
     if ((null == (e = t.directory_entry) ? true : e.supported_locales) != null) {
       let e = new Set(t.directory_entry.supported_locales),
-        n = e.has(r),
-        l = p.filter(t => e.has(t.value));
-      return n && l.sort((e, t) => e.value === r ? false : +(t.value === r)), {
-        supportedLanguages: l.map(e => d.intl.string(e.localizedName)),
+        n = e.has(i),
+        r = p.filter(t => e.has(t.value));
+      return n && r.sort((e, t) => e.value === i ? false : +(t.value === i)), {
+        supportedLanguages: r.map(e => d.intl.string(e.localizedName)),
         usersLanguageIsFirst: n
       }
     }
@@ -36,18 +36,18 @@ function h(e) {
       supportedLanguages: [],
       usersLanguageIsFirst: false
     }
-  }, [t.directory_entry, r]);
-  return (0, l.jsxs)("div", {
+  }, [t.directory_entry, i]);
+  return (0, r.jsxs)("div", {
     className: n,
-    children: [(0, l.jsx)(c.Heading, {
+    children: [(0, r.jsx)(o.Heading, {
       variant: "heading-sm/semibold",
       color: "text-strong",
       children: d.intl.string(d.t.Fbjlu3)
-    }), (0, l.jsx)("ul", {
+    }), (0, r.jsx)("ul", {
       className: u.nw,
-      children: h.map((e, t) => (0, l.jsx)("li", {
-        className: i()(u.WH, u.O6),
-        children: (0, l.jsx)(c.Text, {
+      children: h.map((e, t) => (0, r.jsx)("li", {
+        className: a()(u.WH, u.O6),
+        children: (0, r.jsx)(o.Text, {
           variant: 0 === t && m ? "text-sm/bold" : "text-sm/normal",
           children: e
         })

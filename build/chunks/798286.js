@@ -5,8 +5,8 @@ require.d(exports, {
   HJ: () => f,
   Hb: () => h,
   Hg: () => d,
-  Jk: () => b,
-  XS: () => y,
+  Jk: () => y,
+  XS: () => b,
   YT: () => E,
   cw: () => p,
   k0: () => m,
@@ -140,11 +140,11 @@ function E() {
   s.default.track(o.HAw.E2EE_SETTINGS_USER_DELETE)
 }
 
-function b() {
+function y() {
   s.default.track(o.HAw.E2EE_SETTINGS_DEVICE_DELETE)
 }
 
-function y(e) {
+function b(e) {
   s.default.track(o.HAw.E2EE_PUBLIC_KEY_MISMATCH, {
     key_version: "".concat(e)
   })

@@ -24,7 +24,7 @@ function o(e) {
     saturation: m
   } = (0, s.G9)(), {
     highContrastModeEnabled: g
-  } = r.useContext(a.C), E = r.useRef(null), b = l(), y = r.useCallback((e, t) => {
+  } = r.useContext(a.C), E = r.useRef(null), y = l(), b = r.useCallback((e, t) => {
     let n = null == e ? true : e[t];
     return null == n ? null : "object" == typeof n && "value" in n ? n.value : n
   }, []);
@@ -41,13 +41,13 @@ function o(e) {
       if (null == t || null == t.viewModelInstance || null == p) return;
       let r = o[null != n ? n : ""];
       for (let n of Object.entries(p)) {
-        var i, a, s, l, c, u, d, f, _, O, A, v, S;
+        var i, a, s, l, c, u, d, f, _, O, v, A, I;
         if (e.signal.aborted) return;
         let o = n[0],
           p = n[1],
-          I = null != p && "object" == typeof p && "type" in p,
-          T = I ? p.type : r[o],
-          C = I ? p.value : p;
+          S = null != p && "object" == typeof p && "type" in p,
+          T = S ? p.type : r[o],
+          C = S ? p.value : p;
         switch (T) {
           case "color":
             if ("number" == typeof C) {
@@ -75,23 +75,23 @@ function o(e) {
             break;
           case "trigger":
             let w = null != C && ("boolean" == typeof C ? C : 0 !== C),
-              P = y(E.current, o);
+              P = b(E.current, o);
             w && P !== C && (null == (O = t.viewModelInstance) || null == (_ = O.trigger(o)) || _.trigger());
             break;
           case "string":
-            let D = null == (A = t.viewModelInstance) ? true : A.string(o);
+            let D = null == (v = t.viewModelInstance) ? true : v.string(o);
             null != D && (D.value = C);
             break;
           case "image":
             if (null != C) {
-              let n = await b(C, e.signal);
+              let n = await y(C, e.signal);
               if (e.signal.aborted) return;
-              let r = null == (v = t.viewModelInstance) ? true : v.image(o);
+              let r = null == (A = t.viewModelInstance) ? true : A.image(o);
               null != r && (r.value = n)
             }
             break;
           case "artboard":
-            let x = null == (S = t.viewModelInstance) ? true : S.artboard(o),
+            let x = null == (I = t.viewModelInstance) ? true : I.artboard(o),
               L = t.getBindableArtboard(C);
             null != x && null != L && (x.value = L);
             break;
@@ -104,7 +104,7 @@ function o(e) {
     }), () => {
       e.abort("New data binding applied - aborting previous image fetches."), E.current = p
     }
-  }, [y, p, t, n, o, h, null == t ? true : t.viewModelInstance, m, g, b])
+  }, [b, p, t, n, o, h, null == t ? true : t.viewModelInstance, m, g, y])
 }
 
 function l() {

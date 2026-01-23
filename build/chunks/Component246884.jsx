@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 246884, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => E
+  A: () => x
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk819638 = require("./819638.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk283237 = require("./283237.js");
-let v = {
+let j = {
   origin: {
     x: false,
     y: 0
@@ -35,8 +35,8 @@ let v = {
   }
 };
 
-function x(e) {
-  (0, s.L3)(e, async () => {
+function v(e) {
+  (0, a.L3)(e, async () => {
     let {
       default: e
     } = await n.e("17288").then(n.bind(n, 4571));
@@ -61,13 +61,13 @@ function x(e) {
   })
 }
 
-function E(e) {
+function x(e) {
   let {
     disableTooltip: t,
     lastTargetNode: n
-  } = e, s = (0, i.yK)([h.A], () => h.A.getGuildsArray()), E = (0, i.bG)([b.default], () => b.default.getCurrentUser()), _ = l.useMemo(() => s.some(e => (0, p.bM)(e, E)), [s, E]), C = (0, a.red)(e => (0, a.fDT)(e, y.fc)), {
+  } = e, a = (0, i.yK)([f.A], () => f.A.getGuildsArray()), x = (0, i.bG)([g.default], () => g.default.getCurrentUser()), E = l.useMemo(() => a.some(e => (0, h.bM)(e, x)), [a, x]), C = (0, s.red)(e => (0, s.fDT)(e, y.fc)), {
     analyticsLocations: S
-  } = (0, o.Ay)(), I = (0, r.jsx)(m.A, {
+  } = (0, o.Ay)(), I = (0, r.jsx)(b.A, {
     showPill: false,
     id: "create-join-button",
     onClick: () => {
@@ -85,18 +85,18 @@ function E(e) {
       })
     },
     selected: C,
-    onContextMenu: x,
-    tooltip: O.intl.string(O.t.l5WIbf),
-    icon: a.U1e
+    onContextMenu: v,
+    tooltip: _.intl.string(_.t.l5WIbf),
+    icon: s.U1e
   });
   return t ? I : (0, r.jsx)("div", {
-    className: j.Uq,
-    children: (0, r.jsxs)(f.A, {
-      tutorialId: _ ? "create-more-servers" : "create-first-server",
-      inlineSpecs: v,
+    className: O.Uq,
+    children: (0, r.jsxs)(p.A, {
+      tutorialId: E ? "create-more-servers" : "create-first-server",
+      inlineSpecs: j,
       position: "right",
-      children: [I, null != n && (0, r.jsx)(g.Ay, {
-        name: O.intl.string(O.t["45xjM5"]),
+      children: [I, null != n && (0, r.jsx)(m.Ay, {
+        name: _.intl.string(_.t["45xjM5"]),
         targetNode: n,
         below: true,
         noCombine: true

@@ -25,29 +25,29 @@ var Chunk627968 = require("./627968.js"),
 function O(e) {
   let {
     className: t
-  } = e, [n, l] = (0, d.kn)([c.M.CHECKPOINT_2025_DESKTOP_UPSELL]), O = (0, o.bG)([h.A], () => h.A.hasOpenedCheckpointThisSession && !h.A.hasSeenRewatchPopover), y = i.useRef(null), I = n === c.M.CHECKPOINT_2025_DESKTOP_UPSELL, v = () => {
-    (0, f._5)()
+  } = e, [n, l] = (0, d.kn)([c.M.CHECKPOINT_2025_DESKTOP_UPSELL]), O = (0, o.bG)([g.A], () => g.A.hasOpenedCheckpointThisSession && !g.A.hasSeenRewatchPopover), y = i.useRef(null), I = n === c.M.CHECKPOINT_2025_DESKTOP_UPSELL, v = () => {
+    (0, h._5)()
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p.In, {
       ref: y,
       className: t,
       onClick: () => {
-        (0, A.A)("header_bar"), I && l(m.i.INDIRECT_ACTION)
+        (0, f.A)("header_bar"), I && l(A.i.INDIRECT_ACTION)
       },
       icon: s.MZT,
-      tooltip: _.intl.string(b.default["CdU/PF"]),
+      tooltip: b.intl.string(_.default["CdU/PF"]),
       foreground: a()(E.t, I ? E.m : null)
     }), !I && O && (0, r.jsx)(u.AM, {
       targetElementRef: y,
-      title: _.intl.string(b.default.goiR2u),
-      body: _.intl.string(b.default.UYjWa5),
+      title: b.intl.string(_.default.goiR2u),
+      body: b.intl.string(_.default.UYjWa5),
       onRequestClose: v,
       actions: [{
-        text: _.intl.string(_.t["NX+WJN"]),
+        text: b.intl.string(b.t["NX+WJN"]),
         onClick: v
       }]
-    }), I && (0, r.jsx)(g.A, {
+    }), I && (0, r.jsx)(m.A, {
       markAsDismissed: l
     })]
   })

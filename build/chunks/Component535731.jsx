@@ -1,7 +1,7 @@
 /** Chunk was on 22477 **/
 /** chunk id: 535731, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  y: () => x
+  y: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,23 +16,23 @@ var Chunk627968 = require("./627968.js"),
   Chunk895431 = require("./895431.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk446115 = require("./446115.js");
-let x = e => {
+let g = e => {
   let {
     targetElementRef: t,
     markAsDismissed: n
-  } = e, x = (0, s.L)(), b = (0, l.useCallback)(() => {
+  } = e, g = (0, s.L)(), f = (0, l.useCallback)(() => {
     (0, d.openUserSettings)(c.X.PRIVATE_BROWSING_PANEL, {
       section: u.nc_.PRIVATE_BROWSING
     })
   }, []);
-  return (0, a.jsx)(r.AM, {
+  return (0, a.jsx)(i.AM, {
     badge: {
       type: "beta",
       variant: "expressive"
     },
     graphic: {
       type: "image",
-      src: f
+      src: x
     },
     caretConfig: {
       align: "start"
@@ -45,13 +45,13 @@ let x = e => {
     body: h.intl.string(p.default.wQwQF0),
     targetElementRef: t,
     onRequestClose: () => {
-      o.Ay.fireSurveyAction(x ? i.w.WARP_VPN_COACHMARK_DISMISSED_NITRO : i.w.WARP_VPN_COACHMARK_DISMISSED_NON_NITRO), n(m.i.USER_DISMISS)
+      o.Ay.fireSurveyAction(g ? r.w.WARP_VPN_COACHMARK_DISMISSED_NITRO : r.w.WARP_VPN_COACHMARK_DISMISSED_NON_NITRO), n(m.i.USER_DISMISS)
     },
     actions: [{
       variant: "primary",
       text: h.intl.string(h.t.RzWDqY),
       onClick: () => {
-        n(m.i.TAKE_ACTION), b()
+        n(m.i.TAKE_ACTION), f()
       }
     }]
   })

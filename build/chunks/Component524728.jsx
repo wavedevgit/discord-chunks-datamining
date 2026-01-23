@@ -18,12 +18,12 @@ function m(e) {
     onClose: t,
     transitionState: n
   } = e;
-  return (0, i.jsx)(r.Modal, {
+  return (0, i.jsx)(a.Modal, {
     size: "md",
-    title: o.intl.string(o.t.Hd3D8W),
+    title: c.intl.string(c.t.Hd3D8W),
     actions: [{
       variant: "primary",
-      text: o.intl.string(o.t.cpT0Cq),
+      text: c.intl.string(c.t.cpT0Cq),
       onClick: t
     }],
     onClose: t,
@@ -31,7 +31,7 @@ function m(e) {
     children: (0, i.jsx)(s.Text, {
       variant: "text-md/medium",
       color: "text-subtle",
-      children: o.intl.string(o.t.Ij97SL)
+      children: c.intl.string(c.t.Ij97SL)
     })
   })
 }
@@ -40,21 +40,21 @@ function x(e) {
   let {
     quest: t,
     sourceQuestContent: n,
-    transitionState: r,
-    onClose: o,
+    transitionState: a,
+    onClose: c,
     rewardContent: x,
     isRewardContentLoading: f,
-    rewardContentHasError: g,
-    location: v
-  } = e, j = l.uF.REWARD_MODAL, [h, b] = a.useState(true);
-  if (g) return (0, i.jsx)(m, {
-    onClose: o,
-    transitionState: r
+    rewardContentHasError: _,
+    location: g
+  } = e, v = l.uF.REWARD_MODAL, [h, j] = r.useState(true);
+  if (_) return (0, i.jsx)(m, {
+    onClose: c,
+    transitionState: a
   });
   let p = f || h;
-  return (0, i.jsx)(d.R, {
+  return (0, i.jsx)(o.R, {
     questOrQuests: t,
-    questContent: j,
+    questContent: v,
     sourceQuestContent: n,
     children: e => (0, i.jsxs)(i.Fragment, {
       children: [p ? (0, i.jsx)(s.y$y, {
@@ -67,14 +67,14 @@ function x(e) {
         },
         children: (0, i.jsxs)(s.EOs, {
           "data-migration-pending": true,
-          transitionState: p ? s.ip4.HIDDEN : r,
+          transitionState: p ? s.ip4.HIDDEN : a,
           size: s.rIJ.DYNAMIC,
           className: u.yl,
           parentComponent: "QuestRewardModalBase",
           children: [(0, i.jsx)(s.s_y, {
             "data-migration-pending": true,
             className: u.b,
-            onClick: o,
+            onClick: c,
             withCircleBackground: true
           }), (0, i.jsxs)("div", {
             className: u.jE,
@@ -83,11 +83,11 @@ function x(e) {
               children: x
             }), (0, i.jsx)("div", {
               className: u.xK,
-              children: (0, i.jsx)(c.A, {
+              children: (0, i.jsx)(d.A, {
                 quest: t,
                 sourceQuestContent: n,
-                onLoadComplete: () => b(false),
-                location: v
+                onLoadComplete: () => j(false),
+                location: g
               })
             })]
           })]

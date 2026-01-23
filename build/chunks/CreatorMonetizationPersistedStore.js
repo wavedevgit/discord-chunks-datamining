@@ -2,7 +2,7 @@
 /** chunk id: 448564, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => c
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
@@ -18,7 +18,7 @@ function s(e, t, n) {
 let a = {
   canSeeEnableMonetizationForGuilds: new Set
 };
-class c extends(r = Chunk311907.Ay.PersistedStore) {
+class o extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     null != e && (a.canSeeEnableMonetizationForGuilds = new Set(e.canSeeEnableMonetizationForGuilds))
   }
@@ -29,8 +29,8 @@ class c extends(r = Chunk311907.Ay.PersistedStore) {
     return a.canSeeEnableMonetizationForGuilds.has(e)
   }
 }
-s(c, "displayName", "CreatorMonetizationPersistedStore"), s(c, "persistKey", "CreatorMonetizationPersistedStore"), s(c, "migrations", []);
-let o = new c(Chunk73153.h, {
+s(o, "displayName", "CreatorMonetizationPersistedStore"), s(o, "persistKey", "CreatorMonetizationPersistedStore"), s(o, "migrations", []);
+let c = new o(Chunk73153.h, {
   CREATOR_MONETIZATION_SET_HAS_SEEN_ONBOARDING_FOR_GUILD: function(e) {
     a.canSeeEnableMonetizationForGuilds.has(e.guildId) || (a.canSeeEnableMonetizationForGuilds = new Set(a.canSeeEnableMonetizationForGuilds).add(e.guildId))
   }

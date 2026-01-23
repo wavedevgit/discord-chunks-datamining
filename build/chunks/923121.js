@@ -2,13 +2,13 @@
 /** chunk id: 923121, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Bq: () => b,
-  fH: () => h,
-  p2: () => m,
-  q3: () => p,
+  Bq: () => p,
+  fH: () => x,
+  p2: () => f,
+  q3: () => b,
   sF: () => u,
-  yM: () => g,
-  zN: () => f
+  yM: () => m,
+  zN: () => g
 }), require("./321073.js"), require("./896048.js"), require("./65821.js");
 var Chunk73153 = require("./73153.js"),
   Chunk157559 = require("./157559.js"),
@@ -26,14 +26,14 @@ function u(e) {
   })
 }
 
-function f(e) {
+function g(e) {
   r.h.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_REMOVE",
     index: e
   })
 }
 
-function g(e, t) {
+function m(e, t) {
   r.h.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_UPDATE",
     index: e,
@@ -41,36 +41,36 @@ function g(e, t) {
   })
 }
 
-function b(e) {
+function p(e) {
   r.h.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_REORDER",
     connections: e
   })
 }
 
-function m() {
+function f() {
   r.h.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_RESET"
   })
 }
-async function p(e) {
+async function b(e) {
   var t, n, u;
-  let f = a.A.getEditedConnections(),
-    g = [];
-  if (f.forEach(e => {
-      let t = (0, o.Ii)(e);
-      g.push(...t)
-    }), g.length > 0) throw x(g), i.A.show({
+  let g = a.A.getEditedConnections(),
+    m = [];
+  if (g.forEach(e => {
+      let t = (0, c.Ii)(e);
+      m.push(...t)
+    }), m.length > 0) throw h(m), i.A.show({
     title: d.intl.string(d.t.ISppXw),
-    body: g.join("\n")
+    body: m.join("\n")
   }), Error("failed to validate connections");
   r.h.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SUBMIT"
   });
   try {
-    await (0, c.YN)(e, {
-      connections: f
-    }), t = e, n = f, r.h.dispatch({
+    await (0, o.YN)(e, {
+      connections: g
+    }), t = e, n = g, r.h.dispatch({
       type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_SUCCESS",
       guildId: t,
       connections: n
@@ -80,21 +80,21 @@ async function p(e) {
       fieldName: e,
       error: t
     } = null != (u = new l.LG(r).getAnyErrorMessageAndField()) ? u : {}, n = [e, t].filter(s.Vq).join(": ");
-    throw x([n]), i.A.show({
+    throw h([n]), i.A.show({
       title: d.intl.string(d.t.iLdiqY),
       body: n
     }), r
   }
 }
 
-function x(e) {
+function h(e) {
   r.h.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_FAILED",
     errors: e
   })
 }
 
-function h(e) {
+function x(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return t || a.A.hasChanges() ? p(e) : Promise.resolve()
+  return t || a.A.hasChanges() ? b(e) : Promise.resolve()
 }

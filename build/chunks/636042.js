@@ -1,143 +1,143 @@
 /** Chunk was on 71905 **/
-/** chunk id: 636042, original params: e,t,n (module,exports,require) **/
+/** chunk id: 636042, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   C5: () => u,
   E9: () => h,
   JY: () => S,
-  Ts: () => c,
-  Ul: () => s,
-  Y_: () => l,
-  ZH: () => p,
+  Ts: () => s,
+  Ul: () => l,
+  Y_: () => c,
+  ZH: () => _,
   n3: () => E,
   nK: () => d,
   pn: () => O,
-  uc: () => _,
+  uc: () => p,
   yy: () => r
 }), require("./228524.js"), require("./896048.js");
 var Chunk73153 = require("./73153.js"),
   Chunk686956 = require("./686956.js"),
   Chunk619006 = require("./619006.js");
 
-function r(e) {
+function r(t) {
   i.h.dispatch({
     type: "GUILD_SETTINGS_ROLES_SORT_UPDATE",
-    roles: e
+    roles: t
   })
 }
 
-function c() {
+function s() {
   i.h.dispatch({
     type: "GUILD_SETTINGS_ROLES_INIT"
   })
 }
 
-function s(e, t, n) {
+function l(t, e, n) {
   i.h.dispatch({
     type: "GUILD_SETTINGS_ROLES_UPDATE_PERMISSIONS",
-    id: e,
-    flag: t,
+    id: t,
+    flag: e,
     allow: n
   })
 }
 
-function l(e) {
+function c(t) {
   i.h.dispatch({
     type: "GUILD_SETTINGS_ROLES_CLEAR_PERMISSIONS",
-    id: e
+    id: t
   })
 }
 
-function d(e, t) {
+function d(t, e) {
   i.h.dispatch({
     type: "GUILD_SETTINGS_ROLES_UPDATE_NAME",
-    id: e,
-    name: t
+    id: t,
+    name: e
   })
 }
 
-function p(e, t) {
+function _(t, e) {
   i.h.dispatch({
     type: "GUILD_SETTINGS_ROLES_UPDATE_COLOR",
-    id: e,
-    color: t
+    id: t,
+    color: e
   })
 }
 
-function _(e, t, n) {
+function p(t, e, n) {
   i.h.dispatch({
     type: "GUILD_SETTINGS_ROLES_UPDATE_COLORS",
-    id: e,
-    colors: t,
+    id: t,
+    colors: e,
     currentStyle: n
   })
 }
 
-function u(e, t) {
+function u(t, e) {
   i.h.dispatch({
     type: "GUILD_SETTINGS_ROLES_ROLE_STYLE_UPDATE",
-    id: e,
-    currentStyle: t
+    id: t,
+    currentStyle: e
   })
 }
 
-function h(e, t, n) {
+function h(t, e, n) {
   i.h.dispatch({
     type: "GUILD_SETTINGS_ROLES_UPDATE_SETTINGS",
-    id: e,
-    hoist: t,
+    id: t,
+    hoist: e,
     mentionable: n
   })
 }
 
-function E(e, t, n) {
+function E(t, e, n) {
   i.h.dispatch({
     type: "GUILD_SETTINGS_ROLES_UPDATE_ROLE_ICON",
-    id: e,
-    icon: t,
+    id: t,
+    icon: e,
     unicodeEmoji: n
   })
 }
 
-function O(e, t) {
+function O(t, e) {
   i.h.dispatch({
     type: "GUILD_SETTINGS_ROLES_UPDATE_ROLE_CONNECTION_CONFIGURATIONS",
-    roleId: e,
-    roleConnectionConfigurations: t
+    roleId: t,
+    roleConnectionConfigurations: e
   })
 }
-async function S(e, t, n, r, c) {
-  var s, l, d, p;
-  let _ = arguments.length > 5 && true !== arguments[5] ? arguments[5] : {};
+async function S(t, e, n, r, s) {
+  var l, c, d, _;
+  let p = arguments.length > 5 && true !== arguments[5] ? arguments[5] : {};
   i.h.dispatch({
     type: "GUILD_SETTINGS_ROLES_SUBMITTING"
   });
   try {
-    for (null != n && n.length > 0 && await a.A.batchRoleUpdate(e, n); null != t && t.length > 0;) {
-      let n = t.pop();
-      null != n && "" !== n.name && await a.A.updateRole(e, n.id, {
+    for (null != n && n.length > 0 && await o.A.batchRoleUpdate(t, n); null != e && e.length > 0;) {
+      let n = e.pop();
+      null != n && "" !== n.name && await o.A.updateRole(t, n.id, {
         name: n.name,
-        description: null != (s = n.description) ? s : true,
+        description: null != (l = n.description) ? l : true,
         permissions: n.permissions,
         color: n.color,
-        colors: null != (l = n.colors) ? l : true,
+        colors: null != (c = n.colors) ? c : true,
         hoist: n.hoist,
         mentionable: n.mentionable,
         icon: n.icon,
         unicodeEmoji: n.unicodeEmoji
       })
     }
-    if (null != c && null != r)
-      for await (let t of r) {
-        let n = c.get(t);
-        await (0, o.qK)(e, t, null != n ? n : [])
+    if (null != s && null != r)
+      for await (let e of r) {
+        let n = s.get(e);
+        await (0, a.qK)(t, e, null != n ? n : [])
       }
     i.h.dispatch({
       type: "GUILD_SETTINGS_ROLES_SAVE_SUCCESS"
     })
-  } catch (e) {
+  } catch (t) {
     if (i.h.dispatch({
         type: "GUILD_SETTINGS_ROLES_SAVE_FAIL",
-        message: null != (d = null == (p = e.body) ? true : p.message) ? d : Object.values(e.body)[0]
-      }), _.throwErr) throw e
+        message: null != (d = null == (_ = t.body) ? true : _.message) ? d : Object.values(t.body)[0]
+      }), p.throwErr) throw t
   }
 }

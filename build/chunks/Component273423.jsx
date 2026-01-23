@@ -1,10 +1,10 @@
 /** Chunk was on 28636 **/
 /** chunk id: 273423, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A,
-  I: () => x
+  A: () => j,
+  I: () => f
 }), require("./321073.js");
-var l, Chunk627968 = require("./627968.js"),
+var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
   s = require.n(Chunk503698),
@@ -18,107 +18,107 @@ var l, Chunk627968 = require("./627968.js"),
   Chunk240248 = require("./240248.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk420783 = require("./420783.js"),
-  x = ((l = {})[l.SMALL = (0, Chunk240248.xI)(Chunk319060.A.GUILD_COUNT_SMALL_ICON_SIZE)] = "SMALL", l[l.LARGE = (0, Chunk240248.xI)(Chunk319060.A.GUILD_COUNT_LARGE_ICON_SIZE)] = "LARGE", l);
-let v = {
-    [x.SMALL]: Chunk420783.Ps,
-    [x.LARGE]: Chunk420783.XY
+  f = ((r = {})[r.SMALL = (0, Chunk240248.xI)(Chunk319060.A.GUILD_COUNT_SMALL_ICON_SIZE)] = "SMALL", r[r.LARGE = (0, Chunk240248.xI)(Chunk319060.A.GUILD_COUNT_LARGE_ICON_SIZE)] = "LARGE", r);
+let x = {
+    [f.SMALL]: Chunk420783.Ps,
+    [f.LARGE]: Chunk420783.XY
   },
-  j = {
-    [x.SMALL]: Chunk420783.Bx,
-    [x.LARGE]: Chunk420783.J3
+  v = {
+    [f.SMALL]: Chunk420783.Bx,
+    [f.LARGE]: Chunk420783.J3
   };
 
-function A(e) {
-  var t, n, l;
+function j(e) {
+  var t, n, r;
   let {
-    application: i,
+    application: a,
     mutualGuilds: d,
-    mutualGuildShownMax: b = 4,
-    className: A,
-    textVariant: _ = "text-sm/normal",
+    mutualGuildShownMax: g = 4,
+    className: j,
+    textVariant: A = "text-sm/normal",
     compact: y,
-    guildIconSize: O = x.LARGE,
-    guildsClassName: S,
-    children: C
-  } = e, E = (0, c.bG)([h.default], () => h.default.locale), I = new Intl.ListFormat(E), P = null != (t = null == (l = i.directory_entry) ? true : l.guild_count) ? t : 0, N = null != (n = null == d ? true : d.length) ? n : 0, R = Math.max(0, P - N), {
-    shownMutualGuilds: T,
+    guildIconSize: C = f.LARGE,
+    guildsClassName: O,
+    children: S
+  } = e, I = (0, o.bG)([h.default], () => h.default.locale), E = new Intl.ListFormat(I), P = null != (t = null == (r = a.directory_entry) ? true : r.guild_count) ? t : 0, N = null != (n = null == d ? true : d.length) ? n : 0, T = Math.max(0, P - N), {
+    shownMutualGuilds: R,
     hiddenMutualGuilds: L
-  } = r.useMemo(() => {
+  } = i.useMemo(() => {
     let e = [],
       t = [];
     return null == d || d.forEach(n => {
-      e.length < b && null != n.icon ? e.push(n) : t.push(n)
-    }), e.length === b && t.length > 0 && (t.push(e[b - 1]), e = e.slice(0, b - 1)), {
+      e.length < g && null != n.icon ? e.push(n) : t.push(n)
+    }), e.length === g && t.length > 0 && (t.push(e[g - 1]), e = e.slice(0, g - 1)), {
       shownMutualGuilds: e,
       hiddenMutualGuilds: t
     }
-  }, [d, b]), D = L.length, w = function(e, t, n, l, a) {
+  }, [d, g]), D = L.length, w = function(e, t, n, r, l) {
     if (0 === t && 0 === e) return null;
-    if (t > 0 && 0 === n) return f.intl.formatToPlainString(f.t.pnzE1t, {
+    if (t > 0 && 0 === n) return _.intl.formatToPlainString(_.t.pnzE1t, {
       mutualGuildCount: t
     });
-    let r = t > 0 ? f.t.YR8PSL : f.t.GQjq6c,
-      i = new Intl.NumberFormat(l, {
-        notation: a ? "compact" : "standard",
+    let i = t > 0 ? _.t.YR8PSL : _.t.GQjq6c,
+      a = new Intl.NumberFormat(r, {
+        notation: l ? "compact" : "standard",
         compactDisplay: "short"
       });
-    return f.intl.formatToPlainString(r, {
-      guildCount: i.format(e),
+    return _.intl.formatToPlainString(i, {
+      guildCount: a.format(e),
       mutualGuildCount: t,
-      nonMutualGuildCount: i.format(n)
+      nonMutualGuildCount: a.format(n)
     })
-  }(P, N, R, E, y);
-  return 0 === T.length && null == w ? null : (0, a.jsxs)(a.Fragment, {
-    children: [C, (0, a.jsxs)("div", {
-      className: s()(A, g.iE),
-      children: [(0, a.jsx)("div", {
-        className: s()(g.Pt, S),
-        children: T.length > 0 ? (0, a.jsxs)(a.Fragment, {
-          children: [T.map((e, t) => {
-            let n = t === T.length - 1 && 0 === D,
-              l = m.Ay.getGuildIconURL({
+  }(P, N, T, I, y);
+  return 0 === R.length && null == w ? null : (0, l.jsxs)(l.Fragment, {
+    children: [S, (0, l.jsxs)("div", {
+      className: s()(j, b.iE),
+      children: [(0, l.jsx)("div", {
+        className: s()(b.Pt, O),
+        children: R.length > 0 ? (0, l.jsxs)(l.Fragment, {
+          children: [R.map((e, t) => {
+            let n = t === R.length - 1 && 0 === D,
+              r = m.Ay.getGuildIconURL({
                 id: e.id,
                 icon: e.icon,
-                size: O,
+                size: C,
                 canAnimate: false
               }),
-              i = (0, a.jsx)(o.m, {
+              a = (0, l.jsx)(c.m, {
                 text: e.name,
                 position: "top",
-                children: (0, a.jsx)("img", {
-                  className: s()(g.Kk, j[O]),
-                  src: l,
+                children: (0, l.jsx)("img", {
+                  className: s()(b.Kk, v[C]),
+                  src: r,
                   alt: ""
                 })
               });
-            return n ? (0, a.jsx)(r.Fragment, {
-              children: i
-            }, e.id) : (0, a.jsx)(p.Ay, {
-              className: g.SA,
-              height: O,
-              width: O,
+            return n ? (0, l.jsx)(i.Fragment, {
+              children: a
+            }, e.id) : (0, l.jsx)(p.Ay, {
+              className: b.SA,
+              height: C,
+              width: C,
               mask: p.Ay.Masks.VOICE_USER_SUMMARY_ITEM,
-              children: i
+              children: a
             }, e.id)
-          }), D > 0 ? (0, a.jsx)(o.m, {
-            text: f.intl.formatToPlainString(f.t.m6oRrA, {
-              appNames: I.format(L.map(e => e.name))
+          }), D > 0 ? (0, l.jsx)(c.m, {
+            text: _.intl.formatToPlainString(_.t.m6oRrA, {
+              appNames: E.format(L.map(e => e.name))
             }),
             position: "top",
-            children: (0, a.jsxs)("div", {
-              className: s()(g.S_, v[O]),
+            children: (0, l.jsxs)("div", {
+              className: s()(b.S_, x[C]),
               children: ["+", D]
             })
           }) : null]
-        }) : (0, a.jsx)(u.RR9, {
+        }) : (0, l.jsx)(u.RR9, {
           size: "custom",
           color: "currentColor",
-          width: O,
-          height: O,
-          className: g.DE
+          width: C,
+          height: C,
+          className: b.DE
         })
-      }), null != w ? (0, a.jsx)(u.Text, {
-        variant: _,
+      }), null != w ? (0, l.jsx)(u.Text, {
+        variant: A,
         color: "text-default",
         children: w
       }) : null]

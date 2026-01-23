@@ -32,12 +32,12 @@ let p = (e, t) => (null == e ? true : e.status) === c.Wo.EARNED ? d.intl.format(
       nameUnformatted: h,
       tenureReqNumMonths: m,
       hasWideArt: g
-    } = t, E = d.intl.string(h), b = (0, l.T)(_, m), y = {
+    } = t, E = d.intl.string(h), y = (0, l.T)(_, m), b = {
       "--custom-badge-glow-color": (0, o.KU)(t.glowColor, .5)
     };
     return (0, r.jsxs)("div", {
       className: f.kL,
-      style: y,
+      style: b,
       children: [(0, r.jsx)("div", {}), " ", (0, r.jsx)("img", {
         src: i,
         alt: E,
@@ -54,7 +54,7 @@ let p = (e, t) => (null == e ? true : e.status) === c.Wo.EARNED ? d.intl.format(
         }), (0, r.jsx)(s.EYj, {
           variant: "text-md/normal",
           className: f.Vv,
-          children: b
+          children: y
         }), (0, r.jsx)(s.EYj, {
           variant: "text-xs/normal",
           children: p(t, n)

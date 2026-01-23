@@ -4,14 +4,14 @@
 require.d(exports, {
   GF: () => g,
   Jn: () => p,
-  KE: () => b,
+  KE: () => y,
   Kx: () => h,
   Li: () => f,
   Ni: () => m,
   RN: () => d,
   ds: () => w,
   eg: () => R,
-  pd: () => A
+  pd: () => v
 }), require("./896048.js"), require("./321073.js"), require("./864466.js"), require("./443073.js"), require("./638769.js");
 var Chunk64700 = require("./64700.js"),
   Chunk397927 = require("./397927.js"),
@@ -79,17 +79,17 @@ let m = e => {
       null == n.target || "string" != typeof n.target.result ? m("Error uploading file. Try again!") : t(e, n.target.result)
     }, n.readAsDataURL(e)
   },
-  b = (e, t, n) => {
+  y = (e, t, n) => {
     if (0 === e.length) {
       null == n || n("No files found!");
       return
     }
     for (let n of e) E(n, t)
   },
-  y = (e, t) => "".concat(e, "/").concat(t),
+  b = (e, t) => "".concat(e, "/").concat(t),
   O = e => (0, a.tT)(e.type) || (0, a.XB)(e.type) || (0, a.XA)(e.name),
-  A = e => f.has(e.name) ? e.name : null,
-  v = async e => {
+  v = e => f.has(e.name) ? e.name : null,
+  A = async e => {
     let t = [];
     if (e.isFile) {
       let n = e,
@@ -98,26 +98,26 @@ let m = e => {
     } else if (e.isDirectory) {
       let n = e.createReader(),
         r = await new Promise(e => n.readEntries(e)),
-        i = await Promise.all(r.map(e => v(e)));
+        i = await Promise.all(r.map(e => A(e)));
       t.push(...i.flat())
     }
     return t
-  }, S = (e, t, n) => {
-    O(t) || t.name.endsWith(".txt") ? (e in n.profileEffectFilesMap || (n.profileEffectFilesMap[e] = []), n.profileEffectFilesMap[e].push(t)) : n.ignoredFilenames.push(y(e, t.name))
-  }, I = (e, t, n, r) => {
+  }, I = (e, t, n) => {
+    O(t) || t.name.endsWith(".txt") ? (e in n.profileEffectFilesMap || (n.profileEffectFilesMap[e] = []), n.profileEffectFilesMap[e].push(t)) : n.ignoredFilenames.push(b(e, t.name))
+  }, S = (e, t, n, r) => {
     if (t.name === _) return;
-    let i = y(e, t.name);
-    "profile_effects" === n ? S(e, t, r) : O(t) ? "collection" === n || null === n ? f.has(t.name) ? r.collectionFiles.push(t) : r.ignoredFilenames.push(i) : "avatar_decorations" === n ? r.avatarDecorationFiles.push(t) : r.ignoredFilenames.push(i) : r.ignoredFilenames.push(i)
+    let i = b(e, t.name);
+    "profile_effects" === n ? I(e, t, r) : O(t) ? "collection" === n || null === n ? f.has(t.name) ? r.collectionFiles.push(t) : r.ignoredFilenames.push(i) : "avatar_decorations" === n ? r.avatarDecorationFiles.push(t) : r.ignoredFilenames.push(i) : r.ignoredFilenames.push(i)
   }, T = async (e, t, n) => {
     let r = e.createReader();
     for (let i of (await new Promise(e => r.readEntries(e))))
       if (i.isFile) {
         let r = i,
           a = await new Promise(e => r.file(e));
-        I(e.name, a, t, n)
+        S(e.name, a, t, n)
       } else {
-        let e = await v(i);
-        n.ignoredFilenames.push(...e.map(e => y(i.name, e.name)))
+        let e = await A(i);
+        n.ignoredFilenames.push(...e.map(e => b(i.name, e.name)))
       }
   }, C = async (e, t) => {
     let n = e.createReader();
@@ -125,7 +125,7 @@ let m = e => {
       if (r.isDirectory) {
         let e = r;
         await T(e, "profile_effects", t)
-      } else r.isFile && r.name !== _ && t.ignoredFilenames.push(y(e.name, r.name))
+      } else r.isFile && r.name !== _ && t.ignoredFilenames.push(b(e.name, r.name))
   }, N = async (e, t) => {
     let n = e.createReader();
     for (let e of (await new Promise(e => n.readEntries(e))))
@@ -135,8 +135,8 @@ let m = e => {
         else if ("avatar_decorations" === n.name) await T(n, "avatar_decorations", t);
         else if ("profile_effects" === n.name) await C(n, t);
         else {
-          let e = await v(n);
-          t.ignoredFilenames.push(...e.map(e => y(n.name, e.name)))
+          let e = await A(n);
+          t.ignoredFilenames.push(...e.map(e => b(n.name, e.name)))
         }
       }
   }, R = async e => {
@@ -153,7 +153,7 @@ let m = e => {
         "collection" === r || "avatar_decorations" === r ? await T(e, r, t) : "profile_effects" === r ? await C(e, t) : await N(e, t)
       } else if (n.isFile) {
       let e = n;
-      I("", await new Promise(t => e.file(t)), null, t)
+      S("", await new Promise(t => e.file(t)), null, t)
     }
     return t.collectionFiles.sort((e, t) => e.name.localeCompare(t.name)), t.avatarDecorationFiles.sort((e, t) => e.name.localeCompare(t.name)), t.ignoredFilenames.sort((e, t) => e.localeCompare(t)), t
   }, w = () => {
@@ -169,7 +169,7 @@ let m = e => {
       let r = await R(e);
       t(r), (0 !== r.collectionFiles.length || 0 !== r.avatarDecorationFiles.length) && (r.collectionFiles.forEach(e => {
         E(e, e => {
-          let t = A(e);
+          let t = v(e);
           null != t && n(t, e)
         })
       }), r.avatarDecorationFiles.forEach(e => {

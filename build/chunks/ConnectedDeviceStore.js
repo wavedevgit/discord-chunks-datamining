@@ -15,7 +15,7 @@ var r, Chunk735438 = require("./735438.js"),
   Chunk792205 = require("./792205.js"),
   Chunk731854 = require("./731854.js");
 
-function h(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,13 +23,13 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let A = {
+let f = {
     ignoredDevices: {}
   },
-  g = A,
-  m = false,
-  b = {},
+  m = f,
+  A = false,
   _ = {},
+  b = {},
   E = {},
   O = {
     id: null,
@@ -60,31 +60,31 @@ function S(e, t, n) {
 }
 class C extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   initialize(e) {
-    this.waitFor(u.A, c.A), g = null != e ? e : A
+    this.waitFor(u.A, c.A), m = null != e ? e : f
   }
   getUserAgnosticState() {
-    return g
+    return m
   }
   get initialized() {
-    return m
+    return A
   }
   get lastDeviceConnected() {
     return E
   }
   get inputDevices() {
-    return b
+    return _
   }
   get lastInputSystemDevice() {
     return O
   }
   get outputDevices() {
-    return _
+    return b
   }
   get lastOutputSystemDevice() {
     return y
   }
 }
-h(C, "displayName", "ConnectedDeviceStore"), h(C, "persistKey", "ConnectedDeviceStore"), h(C, "migrations", [e => {
+g(C, "displayName", "ConnectedDeviceStore"), g(C, "persistKey", "ConnectedDeviceStore"), g(C, "migrations", [e => {
   if (null == e.ignoredDevices) {
     var t, n;
     return t = function(e) {
@@ -94,7 +94,7 @@ h(C, "displayName", "ConnectedDeviceStore"), h(C, "persistKey", "ConnectedDevice
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          h(e, t, n[t])
+          g(e, t, n[t])
         })
       }
       return e
@@ -120,7 +120,7 @@ let N = new C(Chunk73153.h, {
       outputDevices: n
     } = e, r = {};
     O.justChanged = false, t.forEach(e => {
-      if (r[v(e)] = e.id, e.id === f.dx) {
+      if (r[v(e)] = e.id, e.id === h.dx) {
         var t;
         let n = null != (t = e.originalId) ? t : e.originalName;
         n !== O.id && (O.justChanged = true), O.id = n
@@ -128,18 +128,18 @@ let N = new C(Chunk73153.h, {
     });
     let i = {};
     if (y.justChanged = false, n.forEach(e => {
-        if (i[v(e)] = e.id, e.id === f.dx) {
+        if (i[v(e)] = e.id, e.id === h.dx) {
           var t;
           let n = null != (t = e.originalId) ? t : e.originalName;
           n !== y.id && (y.justChanged = true), y.id = n
         }
-      }), !m) {
-      b = r, _ = i, m = true;
+      }), !A) {
+      _ = r, b = i, A = true;
       return
     }
-    let a = Object.keys(b),
+    let a = Object.keys(_),
       s = Object.keys(r),
-      o = Object.keys(_),
+      o = Object.keys(b),
       c = Object.keys(i),
       u = l().difference(a, s),
       d = l().difference(o, c);
@@ -147,7 +147,7 @@ let N = new C(Chunk73153.h, {
       E[e] = S(E[e], e, p.E.INPUT)
     }), l().difference(c, o).forEach(e => {
       E[e] = S(E[e], e, p.E.OUTPUT)
-    })), !(l().isEqual(a, s) && l().isEqual(o, c)) && (b = r, _ = i, true)
+    })), !(l().isEqual(a, s) && l().isEqual(o, c)) && (_ = r, b = i, true)
   },
   CONNECTED_DEVICE_SWITCH: function(e) {
     let {
@@ -156,13 +156,13 @@ let N = new C(Chunk73153.h, {
       location: r
     } = e;
     if (n === p.f.INPUT || n === p.f.INPUT_AND_OUTPUT) {
-      let e = b[t];
+      let e = _[t];
       null != e && s.h.wait(() => o.A.setInputDevice(e, {
         location: r
       }))
     }
     if (n === p.f.OUTPUT || n === p.f.INPUT_AND_OUTPUT) {
-      let e = _[t];
+      let e = b[t];
       s.h.wait(() => o.A.setOutputDevice(e, {
         location: r
       }))
@@ -179,9 +179,9 @@ let N = new C(Chunk73153.h, {
     let {
       displayName: t
     } = e;
-    g.ignoredDevices[t] = true, delete E[t]
+    m.ignoredDevices[t] = true, delete E[t]
   },
   CONNECTED_DEVICE_NEVER_SHOW_MODAL: function() {
-    E = {}, g.neverShowModal = true
+    E = {}, m.neverShowModal = true
   }
 })

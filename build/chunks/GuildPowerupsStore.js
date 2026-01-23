@@ -66,8 +66,8 @@ function g(e) {
       id: t
     }
   } = e;
-  h[t] = f(u({}, y(t)), {
-    appliedBoosts: b(t)
+  h[t] = f(u({}, b(t)), {
+    appliedBoosts: y(t)
   })
 }
 
@@ -75,12 +75,12 @@ function E(e) {
   let {
     guildId: t
   } = e;
-  h[t] = f(u({}, y(t)), {
-    appliedBoosts: b(t)
+  h[t] = f(u({}, b(t)), {
+    appliedBoosts: y(t)
   })
 }
 
-function b(e) {
+function y(e) {
   var t, n, r, i;
   let a = s.A.getGuild(e),
     c = (null == a ? true : a.features.has(l.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) === true ? 0 : l.M2T[null != (t = null == a ? true : a.premiumTier) ? t : l.TVA.NONE];
@@ -91,9 +91,9 @@ function b(e) {
   return c
 }
 
-function y(e) {
+function b(e) {
   if (null == h[e]) {
-    let t = b(e);
+    let t = y(e);
     h[e] = f(u({}, m()), {
       appliedBoosts: t
     })
@@ -106,7 +106,7 @@ function O(e) {
     guildId: t,
     allPowerups: n,
     powerupCatalog: r
-  } = e, i = y(t);
+  } = e, i = b(t);
   h = f(u({}, h), {
     [t]: f(u({}, i), {
       allPowerups: n,
@@ -117,11 +117,11 @@ function O(e) {
   })
 }
 
-function A(e) {
+function v(e) {
   let {
     guildId: t,
     unlockedPowerups: n
-  } = e, r = y(t), i = b(t);
+  } = e, r = b(t), i = y(t);
   h = f(u({}, h), {
     [t]: f(u({}, r), {
       unlockedPowerups: n,
@@ -132,26 +132,26 @@ function A(e) {
   })
 }
 
-function v(e, t) {
+function A(e, t) {
   let {
     guildId: n,
     entitlements: r
-  } = e, i = y(n);
+  } = e, i = b(n);
   r.forEach(e => {
     t ? i.unlockedPowerups[e.sku_id] = e : delete i.unlockedPowerups[e.sku_id]
   }), h = f(u({}, h), {
     [n]: f(u({}, i), {
-      appliedBoosts: b(n)
+      appliedBoosts: y(n)
     })
   })
 }
 
-function S(e) {
-  v(e, true)
+function I(e) {
+  A(e, true)
 }
 
-function I(e) {
-  v(e, false)
+function S(e) {
+  A(e, false)
 }
 
 function T() {
@@ -201,9 +201,9 @@ c(C, "displayName", "GuildPowerupsStore"), c(C, "persistKey", "GuildPowerupsStor
 let N = new C(Chunk73153.h, {
   LOGOUT: T,
   GUILD_POWERUP_CATALOG_FETCH_SUCCESS: O,
-  GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS: A,
-  GUILD_POWERUP_ENTITLEMENTS_CREATE: S,
-  GUILD_POWERUP_ENTITLEMENTS_DELETE: I,
+  GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS: v,
+  GUILD_POWERUP_ENTITLEMENTS_CREATE: I,
+  GUILD_POWERUP_ENTITLEMENTS_DELETE: S,
   GUILD_UPDATE: g,
   GAME_SERVER_FETCH_INSTANCES_SUCCESS: E
 })

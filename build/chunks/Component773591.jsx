@@ -1,5 +1,5 @@
 /** Chunk was on 59275 **/
-/** chunk id: 773591, original params: e,t,l (module,exports,require) **/
+/** chunk id: 773591, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   A: () => R
@@ -38,82 +38,82 @@ var Chunk627968 = require("./627968.js"),
 function R(e) {
   var t;
   let {
-    isFetchingCategories: l,
+    isFetchingCategories: n,
     scrollerRef: R,
     tab: P
-  } = e, D = (0, f.uM)(), w = null != (t = null == D ? true : D.sessionId) ? t : "", {
-    noCache: B,
+  } = e, B = (0, g.uM)(), w = null != (t = null == B ? true : B.sessionId) ? t : "", {
+    noCache: D,
     includeUnpublished: M
-  } = (0, A.A)(), H = (0, a.bG)([u.default], () => u.default.getCurrentUser()), G = (0, a.bG)([b.A], () => b.A.productsWithVariantsAsGroup), [U, F] = r.useState(1), z = (0, c.DP)(), V = (0, i.qB)(z), [K, W, Y] = r.useMemo(() => {
+  } = (0, v.A)(), H = (0, a.bG)([u.default], () => u.default.getCurrentUser()), G = (0, a.bG)([f.A], () => f.A.productsWithVariantsAsGroup), [U, F] = l.useState(1), z = (0, c.DP)(), V = (0, i.qB)(z), [K, W, Y] = l.useMemo(() => {
     switch (P) {
-      case x.G2.AVATAR_DECORATIONS:
-        return [C.intl.string(C.t.dRZYNE), V ? L.A : j.A, s.R.AVATAR_DECORATION];
-      case x.G2.PROFILE_EFFECTS:
-        return [C.intl.string(C.t["1cNjtx"]), V ? k.A : N.A, s.R.PROFILE_EFFECT];
-      case x.G2.NAMEPLATES:
-        return [C.intl.string(C.t.V68Fqz), V ? I.A : T.A, s.R.NAMEPLATE];
-      case x.G2.BUNDLES:
-        return [C.intl.string(C.t.FYFpps), V ? y.A : _.A, s.R.BUNDLE]
+      case C.G2.AVATAR_DECORATIONS:
+        return [x.intl.string(x.t.dRZYNE), V ? T.A : j.A, s.R.AVATAR_DECORATION];
+      case C.G2.PROFILE_EFFECTS:
+        return [x.intl.string(x.t["1cNjtx"]), V ? N.A : k.A, s.R.PROFILE_EFFECT];
+      case C.G2.NAMEPLATES:
+        return [x.intl.string(x.t.V68Fqz), V ? I.A : L.A, s.R.NAMEPLATE];
+      case C.G2.BUNDLES:
+        return [x.intl.string(x.t.FYFpps), V ? y.A : O.A, s.R.BUNDLE]
     }
-  }, [P, V]), q = (0, g.p)(), Z = r.useMemo(() => q(G.filter(e => {
+  }, [P, V]), q = (0, p.p)(), Z = l.useMemo(() => q(G.filter(e => {
     var t;
-    return (e.type === Y || e.type === s.R.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === Y)) === true) && !x.MS.some(t => {
+    return (e.type === Y || e.type === s.R.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === Y)) === true) && !C.MS.some(t => {
       let {
-        categorySkuId: l
+        categorySkuId: n
       } = t;
-      return l === e.categorySkuId
+      return n === e.categorySkuId
     })
   })), [G, Y, q]), X = (0, m.X)(Z);
-  return (r.useEffect(() => {
-    (0, p.z)({
+  return (l.useEffect(() => {
+    (0, _.z)({
       sessionId: w,
-      checkpoint: p.t.SHOP_MOUNTED,
+      checkpoint: _.t.SHOP_MOUNTED,
       tab: P,
       unpublishedCategoriesShown: M,
-      cacheDisabled: B
+      cacheDisabled: D
     })
-  }, []), r.useEffect(() => {
-    l || (0, p.z)({
+  }, []), l.useEffect(() => {
+    n || (0, _.z)({
       sessionId: w,
-      checkpoint: p.t.SHOP_RENDERED,
+      checkpoint: _.t.SHOP_RENDERED,
       tab: P,
       unpublishedCategoriesShown: M,
-      cacheDisabled: B
+      cacheDisabled: D
     })
-  }, [w, M, B, l, P]), l || null == H) ? (0, n.jsx)(h.A, {}) : (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)("div", {
+  }, [w, M, D, n, P]), n || null == H) ? (0, r.jsx)(b.A, {}) : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(W, ")")
       },
-      className: O.cI,
-      children: (0, n.jsx)(o.Heading, {
+      className: S.cI,
+      children: (0, r.jsx)(o.Heading, {
         variant: "heading-xxl/extrabold",
         children: K
       })
-    }), (0, n.jsx)("div", {
-      className: O.ZE,
-      children: X.slice(40 * (U - 1), 40 * U).map((e, t) => null == b.A.getCategory(e.categorySkuId) ? null : (0, n.jsx)(f.R9, {
+    }), (0, r.jsx)("div", {
+      className: S.ZE,
+      children: X.slice(40 * (U - 1), 40 * U).map((e, t) => null == f.A.getCategory(e.categorySkuId) ? null : (0, r.jsx)(g.R9, {
         newValue: {
           tilePosition: t
         },
-        children: (0, n.jsx)(E.A, {
+        children: (0, r.jsx)(h.A, {
           skuId: e.skuId,
-          onClickAnalytics: (0, v.UU)(e, P, D)
+          onClickAnalytics: (0, E.UU)(e, P, B)
         }, e.skuId)
       }, e.skuId))
-    }), X.length > 40 && (0, n.jsx)("div", {
-      className: O.Ej,
-      children: (0, n.jsx)("div", {
-        children: (0, n.jsx)(o.mgR, {
+    }), X.length > 40 && (0, r.jsx)("div", {
+      className: S.Ej,
+      children: (0, r.jsx)("div", {
+        children: (0, r.jsx)(o.mgR, {
           currentPage: U,
           totalCount: X.length,
           pageSize: 40,
           onPageChange: e => {
             var t;
-            d.default.track(S.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-              collectibles_shop_session_id: null == D ? true : D.sessionId,
-              page_section: null == D ? true : D.pageSection,
-              page_category: null == D ? true : D.pageCategory,
+            d.default.track(A.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+              collectibles_shop_session_id: null == B ? true : B.sessionId,
+              page_section: null == B ? true : B.pageSection,
+              page_category: null == B ? true : B.pageCategory,
               page_index: e,
               page_size: 40,
               cta_name: "".concat(P, " page ").concat(e),

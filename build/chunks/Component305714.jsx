@@ -21,20 +21,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk635736 = require("./635736.js"),
   Chunk917025 = require("./917025.js"),
   Chunk707621 = require("./707621.js");
-let y = (e, t) => {
+let b = (e, t) => {
     let {
       className: n,
       isFooterVisible: a,
-      isDarkMode: y,
+      isDarkMode: b,
       isReducedMotion: O,
-      subscriptionTier: A
+      subscriptionTier: v
     } = e, {
-      analyticsLocations: v
-    } = (0, c.Ay)(l.A.PREMIUM_MARKETING_FOOTER_CTA), S = (0, f.ar)(), I = (0, d.TM)(), T = i.useRef(null), [C, N] = i.useState(false);
+      analyticsLocations: A
+    } = (0, c.Ay)(l.A.PREMIUM_MARKETING_FOOTER_CTA), I = (0, f.ar)(), S = (0, d.TM)(), T = i.useRef(null), [C, N] = i.useState(false);
     return i.useEffect(() => {
       !a || O || C || null == T.current || T.current.play()
     }, [a, O, C]), (0, r.jsx)(c.f5, {
-      value: v,
+      value: A,
       children: (0, r.jsxs)("div", {
         ref: t,
         className: s()(m.kL, n),
@@ -44,11 +44,11 @@ let y = (e, t) => {
           color: "text-strong",
           children: h.intl.string(h.t.lEw32m)
         }), (0, r.jsx)(p.KN, {
-          subscriptionTier: A,
-          inOfferExperience: S,
+          subscriptionTier: v,
+          inOfferExperience: I,
           containerClassName: m.Z5,
           isApplicationHome: true,
-          isDarkMode: y
+          isDarkMode: b
         }), (0, r.jsx)("div", {
           className: m.av,
           children: (0, r.jsx)(u.A, {
@@ -62,8 +62,8 @@ let y = (e, t) => {
             },
             ref: T,
             children: (0, r.jsx)("source", {
-              src: I ? g.A : b.A,
-              type: I ? _.a.MP4 : _.a.WEBM
+              src: S ? g.A : y.A,
+              type: S ? _.a.MP4 : _.a.WEBM
             })
           })
         }), (0, r.jsx)("div", {
@@ -74,4 +74,4 @@ let y = (e, t) => {
       })
     })
   },
-  O = Chunk64700.forwardRef(y)
+  O = Chunk64700.forwardRef(b)

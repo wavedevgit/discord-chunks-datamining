@@ -1,10 +1,10 @@
 /** Chunk was on 97492 **/
 /** chunk id: 314307, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => p,
+  Ay: () => h,
   WK: () => u,
   cr: () => d,
-  j1: () => f
+  j1: () => p
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -19,11 +19,11 @@ function u(e) {
   let {
     locked: t = false,
     channelType: n
-  } = e, l = n === o.rbe.GUILD_VOICE || n === o.rbe.GUILD_STAGE_VOICE ? a.oyn : t ? a.I$d : a.N$i;
+  } = e, l = n === o.rbe.GUILD_VOICE || n === o.rbe.GUILD_STAGE_VOICE ? s.oyn : t ? s.I$d : s.N$i;
   return (0, r.jsx)("div", {
     className: i()(c.qk, c.tP),
     children: (0, r.jsx)(l, {
-      color: a.LU0.colors.WHITE,
+      color: s.LU0.colors.WHITE,
       size: "custom",
       width: 42,
       height: 42
@@ -36,7 +36,7 @@ function d(e) {
     children: t,
     className: n
   } = e;
-  return (0, r.jsx)(a.Heading, {
+  return (0, r.jsx)(s.Heading, {
     "aria-hidden": "true",
     className: i()(n, c.wx),
     variant: "heading-xxl/extrabold",
@@ -44,23 +44,23 @@ function d(e) {
   })
 }
 
-function f(e) {
+function p(e) {
   let {
     children: t,
     className: n
   } = e;
-  return (0, r.jsx)(a.Text, {
+  return (0, r.jsx)(s.Text, {
     variant: "text-md/normal",
     color: "none",
     className: i()(c.h_, n),
     children: t
   })
 }
-let p = function(e) {
+let h = function(e) {
   var t, n;
   let {
     className: l,
-    channelId: a,
+    channelId: s,
     children: o
   } = e, u = function(e, t) {
     if (null == e) return {};
@@ -98,7 +98,7 @@ let p = function(e) {
     return e
   }({
     className: i()(l, c.kL),
-    id: (0, s.j)(a, a)
+    id: (0, a.j)(s, s)
   }, u), n = n = {
     children: o
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

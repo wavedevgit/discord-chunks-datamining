@@ -96,30 +96,30 @@ function c() {
       timestamp: e--
     }), true))
   }, [c]);
-  let f = [],
-    h = [],
-    A = 0;
-  for (let t = 0; t < n.length && !(A >= u); t++) {
+  let h = [],
+    g = [],
+    f = 0;
+  for (let t = 0; t < n.length && !(f >= u); t++) {
     let r = n[t];
-    if (A++, p[r.id]) continue;
+    if (f++, p[r.id]) continue;
     let i = d[r.id];
     if (null == i && r.type === s.Mm.MESSAGE && (null == (e = r.data.message_context) ? true : e.reference_message_id) != null && (i = d[r.data.message_id]), null != i) {
       let e = o(r, i, true);
-      null != e && f.push(e)
-    }
-  }
-  for (let e = 0; e < c.length && !(A >= u); e++) {
-    let n = c[e];
-    if (A++, p[n.id]) continue;
-    let r = d[n.id];
-    if (null == r && n.type === s.Mm.MESSAGE && (null == (t = n.data.message_context) ? true : t.reference_message_id) != null && (r = d[n.data.message_id]), null != r) {
-      let e = o(n, r, false);
       null != e && h.push(e)
     }
   }
+  for (let e = 0; e < c.length && !(f >= u); e++) {
+    let n = c[e];
+    if (f++, p[n.id]) continue;
+    let r = d[n.id];
+    if (null == r && n.type === s.Mm.MESSAGE && (null == (t = n.data.message_context) ? true : t.reference_message_id) != null && (r = d[n.data.message_id]), null != r) {
+      let e = o(n, r, false);
+      null != e && g.push(e)
+    }
+  }
   return {
-    unreadItems: f,
-    readItems: h,
+    unreadItems: h,
+    readItems: g,
     allUnreadItemsHydrated: u >= n.length
   }
 }

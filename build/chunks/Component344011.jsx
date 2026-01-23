@@ -1,5 +1,5 @@
 /** Chunk was on 59275 **/
-/** chunk id: 344011, original params: e,t,l (module,exports,require) **/
+/** chunk id: 344011, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   rW: () => a
@@ -11,12 +11,12 @@ let s = Chunk64700.createContext(null);
 function a(e) {
   let {
     blockType: t,
-    children: l
-  } = e, a = r.useMemo(() => ({
+    children: n
+  } = e, a = l.useMemo(() => ({
     blockType: t
   }), [t]);
-  return (0, n.jsx)(s.Provider, {
+  return (0, r.jsx)(s.Provider, {
     value: a,
-    children: l
+    children: n
   })
 }

@@ -2,7 +2,7 @@
 /** chunk id: 550732, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => b
+  C: () => y
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -22,35 +22,35 @@ var Chunk991660 = require("./991660.jsx"),
   Chunk356426 = require("./356426.js"),
   Chunk22789 = require("./22789.js");
 
-function b(e) {
+function y(e) {
   let {
     appId: t,
     skuId: n,
-    transitionState: b,
-    onClose: y,
+    transitionState: y,
+    onClose: b,
     children: O,
-    footer: A
-  } = e, v = (0, s.bG)([l.A, c.A], () => {
+    footer: v
+  } = e, A = (0, s.bG)([l.A, c.A], () => {
     var e;
     return null != (e = l.A.getApplication(t)) ? e : c.A.getApplicationRecord(t)
   }, [t]), {
-    data: S
+    data: I
   } = (0, u.d)(n);
-  if (null == v) return null;
-  let I = (0, f.A)(v, 25),
+  if (null == A) return null;
+  let S = (0, f.A)(A, 25),
     {
       termsOfServiceUrl: T,
       privacyPolicyUrl: C
-    } = v;
-  if ((null == S ? true : S.applicationId) !== t) return (0, r.jsx)(a.Modal, {
+    } = A;
+  if ((null == I ? true : I.applicationId) !== t) return (0, r.jsx)(a.Modal, {
     actions: [{
-      onClick: y,
+      onClick: b,
       text: m.intl.string(m.t.BddRzS),
       variant: "primary"
     }],
-    onClose: y,
+    onClose: b,
     size: "sm",
-    transitionState: b,
+    transitionState: y,
     title: m.intl.string(m.t["0Bf80I"]),
     children: (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
@@ -59,18 +59,18 @@ function b(e) {
       children: m.intl.string(m.t.omH3bq)
     })
   });
-  let N = null != I ? (0, r.jsx)("img", {
-    src: I.href,
+  let N = null != S ? (0, r.jsx)("img", {
+    src: S.href,
     alt: "",
     className: g.Z2
   }) : true;
   return (0, r.jsxs)(a.dWK, {
-    onClose: y,
+    onClose: b,
     size: "lg",
-    transitionState: b,
+    transitionState: y,
     children: [(0, r.jsx)(a.rQ0, {
       leading: N,
-      title: v.name
+      title: A.name
     }), (0, r.jsx)(i.A, {
       children: (0, r.jsx)("main", {
         className: E.bodyInner,
@@ -103,7 +103,7 @@ function b(e) {
               (0, d.C)(e, () => (0, o.showToast)((0, o.createToast)(m.intl.string(m.t["L/PwZf"]), o.ToastType.SUCCESS))), (0, p.K)(t, p.C.DETAILS_MODAL, n)
             },
             variant: "icon-only"
-          }), A]
+          }), v]
         })]
       })
     })]

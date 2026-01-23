@@ -2,7 +2,7 @@
 /** chunk id: 751461, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,13 +26,13 @@ var Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk842130 = require("./842130.js");
 
-function v(e) {
+function A(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, E = (0, p.q9)(), v = d.$s.useSetting().includes(n), S = (0, u.K)(), I = (0, f.e)(), T = (0, s.uM)(), C = i.useCallback(e => {
+  } = e, E = (0, p.q9)(), A = d.$s.useSetting().includes(n), I = (0, u.K)(), S = (0, f.e)(), T = (0, s.uM)(), C = i.useCallback(e => {
     let r = (0, c.Tb)();
-    e ? r.delete(n) : r.add(n), d.$s.updateSetting(Array.from(r)), l.default.track(y.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+    e ? r.delete(n) : r.add(n), d.$s.updateSetting(Array.from(r)), l.default.track(b.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: g.m.DIRECT_MESSAGES_TOGGLE,
       ingress: t,
       guild_id: n
@@ -40,7 +40,7 @@ function v(e) {
   }, [n, t]);
 
   function N(e, t) {
-    l.default.track(y.HAw.GUILD_DEFAULT_DMS_UPDATED, {
+    l.default.track(b.HAw.GUILD_DEFAULT_DMS_UPDATED, {
       default_guilds_restricted: e,
       applied_to_existing_guilds: t
     })
@@ -65,31 +65,31 @@ function v(e) {
         onCancel: t
       })
     },
-    P = I ? O.intl.string(O.t.PMsfcH) : O.intl.string(O.t.RAQUSN);
+    P = S ? O.intl.string(O.t.PMsfcH) : O.intl.string(O.t.RAQUSN);
   return (0, r.jsx)(_.h, {
-    setting: b.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
+    setting: y.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
     children: "0" === n ? (0, r.jsx)(h.Ay, {
       title: P,
-      note: I ? O.intl.string(O.t.XXGmuB) : O.intl.string(O.t.wbYDfT),
-      value: !S,
+      note: S ? O.intl.string(O.t.XXGmuB) : O.intl.string(O.t.wbYDfT),
+      value: !I,
       onChange: R,
       disabled: T,
-      tooltipText: T ? O.intl.string(A.default["6Af/cw"]) : true
+      tooltipText: T ? O.intl.string(v.default["6Af/cw"]) : true
     }) : (0, r.jsx)(h.Ay, {
       title: P,
-      note: E ? O.intl.string(O.t.V0ka0Q) : I ? O.intl.string(O.t.F9WY3f) : O.intl.string(O.t.G7c3Xo),
-      value: !v,
+      note: E ? O.intl.string(O.t.V0ka0Q) : S ? O.intl.string(O.t.F9WY3f) : O.intl.string(O.t.G7c3Xo),
+      value: !A,
       onChange: C
     })
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     ingress: t = E.bf.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, i = (0, p.Tx)();
-  return (0, r.jsx)(v, {
+  return (0, r.jsx)(A, {
     ingress: t,
     guildId: null != n ? n : i
   })

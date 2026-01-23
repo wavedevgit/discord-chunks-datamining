@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 51943, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,20 +16,20 @@ var Chunk827734 = require("./827734.js"),
   Chunk518477 = require("./518477.js"),
   Chunk996988 = require("./996988.js"),
   Chunk7319 = require("./7319.js");
-let b = (0, Chunk397927.FT9)(Chunk397927._3J.SIZE_16);
+let g = (0, Chunk397927.FT9)(Chunk397927._3J.SIZE_16);
 
-function g(e) {
+function m(e) {
   let {
     user: t,
-    guild: g,
-    nick: m,
+    guild: m,
+    nick: b,
     onSelect: A
   } = e, {
     theme: y,
-    themeType: O
-  } = (0, d.E)(), j = t.hasAvatarForGuild(g.id);
-  return (0, r.jsxs)(s.DUT, {
-    focusProps: O === p.d.MODAL_V2 ? {
+    themeType: _
+  } = (0, d.E)(), O = t.hasAvatarForGuild(m.id);
+  return (0, r.jsxs)(a.DUT, {
+    focusProps: _ === h.d.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -40,7 +40,7 @@ function g(e) {
         right: 8
       }
     },
-    className: h.nM,
+    className: f.nM,
     onClick: A,
     onContextMenu: e => {
       (0, o.L3)(e, async () => {
@@ -67,7 +67,7 @@ function g(e) {
             }
             return e
           }({}, t), l = l = {
-            guild: g
+            guild: m
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -83,38 +83,38 @@ function g(e) {
     },
     children: [(0, r.jsx)(c.A, {
       tabIndex: false,
-      guild: g,
+      guild: m,
       showBadge: true,
-      className: null != g.icon ? h.Kk : h.lN,
-      badgeStrokeColor: (0, a.Mw)(y) ? l.A.unsafe_rawColors.PRIMARY_600.css : l.A.unsafe_rawColors.WHITE.css,
-      badgeTooltipColor: s.oMw.PRIMARY,
-      badgeTooltipDelay: f.In,
+      className: null != m.icon ? f.Kk : f.lN,
+      badgeStrokeColor: (0, s.Mw)(y) ? l.A.unsafe_rawColors.PRIMARY_600.css : l.A.unsafe_rawColors.WHITE.css,
+      badgeTooltipColor: a.oMw.PRIMARY,
+      badgeTooltipDelay: p.In,
       size: c.A.Sizes.MEDIUM,
       active: true
     }), (0, r.jsxs)("div", {
-      className: h.zH,
+      className: f.zH,
       children: [(0, r.jsx)("div", {
-        className: h.UU,
-        children: g.name
-      }), j && (0, r.jsxs)("div", {
-        className: h.C9,
-        children: [(0, r.jsx)(s.euF, {
-          src: t.getAvatarURL(g.id, b),
-          size: s._3J.SIZE_16,
-          className: h.my,
+        className: f.UU,
+        children: m.name
+      }), O && (0, r.jsxs)("div", {
+        className: f.C9,
+        children: [(0, r.jsx)(a.euF, {
+          src: t.getAvatarURL(m.id, g),
+          size: a._3J.SIZE_16,
+          className: f.my,
           "aria-hidden": true
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-xs/medium",
           children: (0, r.jsx)(i.A, {
-            delay: f.In,
-            children: null != m ? m : u.Ay.getName(g.id, true, t)
+            delay: p.In,
+            children: null != b ? b : u.Ay.getName(m.id, true, t)
           })
         })]
-      }), !j && null != m && (0, r.jsx)(s.Text, {
+      }), !O && null != b && (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         children: (0, r.jsx)(i.A, {
-          delay: f.In,
-          children: m
+          delay: p.In,
+          children: b
         })
       })]
     })]

@@ -53,7 +53,7 @@ function f(e, t, n) {
     } = p(t, n);
     e._raw = (e._raw || "") + a;
     let s = m(i);
-    return (0, r.dP)(e, I(g(s, true))), true
+    return (0, r.dP)(e, S(g(s, true))), true
   } catch (e) {
     returnfalse
   }
@@ -95,7 +95,7 @@ function m(e) {
 
 function g(e, t = false) {
   let n = E(e);
-  return b(n) ? t ? {} : y(n[0]) : O(n)
+  return y(n) ? t ? {} : b(n[0]) : O(n)
 }
 
 function E(e) {
@@ -104,42 +104,42 @@ function E(e) {
   return t
 }
 
-function b(e) {
+function y(e) {
   return 1 === e.length && "#text" === e[0].nodeName
 }
 
-function y(e) {
+function b(e) {
   return e.nodeValue
 }
 
 function O(e) {
   let t = {};
   return e.forEach(e => {
-    if (A(e)) {
-      let n = v(e);
+    if (v(e)) {
+      let n = A(e);
       true !== t[e.nodeName] ? (Array.isArray(t[e.nodeName]) || (t[e.nodeName] = [t[e.nodeName]]), t[e.nodeName].push(n)) : t[e.nodeName] = n
     }
   }), t
 }
 
-function A(e) {
+function v(e) {
   return e.nodeName && "#text" !== e.nodeName
 }
 
-function v(e) {
+function A(e) {
   return {
-    attributes: S(e),
+    attributes: I(e),
     value: g(e)
   }
 }
 
-function S(e) {
+function I(e) {
   let t = {};
   for (let n = 0; n < e.attributes.length; n++) t[e.attributes[n].nodeName] = decodeURIComponent(escape(e.attributes[n].value));
   return t
 }
 
-function I(e) {
+function S(e) {
   let t = {};
   if ("string" == typeof e) return e;
   for (let n in e) {
@@ -313,7 +313,7 @@ function Q(e) {
 }
 
 function $(e, t) {
-  let n = J(e) || I(e.value);
+  let n = J(e) || S(e.value);
   return {
     value: n,
     attributes: F(e),

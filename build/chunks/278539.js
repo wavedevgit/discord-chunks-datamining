@@ -25,14 +25,14 @@ let d = e => {
     userValue: null == t ? true : t.avatarDecoration,
     guildValue: null == g ? true : g.avatarDecoration,
     guildId: n
-  })), b = r.useMemo(() => (0, l.F_)({
+  })), y = r.useMemo(() => (0, l.F_)({
     avatarDecoration: true !== f ? f : E,
     canAnimate: m,
     size: d
   }), [f, E, m, d]);
   return {
     avatarPlaceholderSrc: u,
-    avatarDecorationSrc: b,
+    avatarDecorationSrc: y,
     isAvatarDecorationAnimating: m,
     eventHandlers: {
       onMouseEnter: r.useCallback(() => h(true), []),

@@ -2,7 +2,7 @@
 /** chunk id: 839914, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,17 +21,17 @@ var Chunk627968 = require("./627968.js"),
   Chunk273764 = require("./273764.js"),
   Chunk127243 = require("./127243.js");
 
-function b(e) {
+function y(e) {
   let {
     channelId: t,
     option: n,
     keyboardModeEnabled: a
-  } = e, b = i.useRef(null), [y, O] = i.useState(false), A = f.A.getUpload(t, n.name, d.C.SlashCommand), v = i.useRef(null), S = e => {
+  } = e, y = i.useRef(null), [b, O] = i.useState(false), v = f.A.getUpload(t, n.name, d.C.SlashCommand), A = i.useRef(null), I = e => {
     if (e.which === h.Ks6.ENTER) {
       var t;
-      e.preventDefault(), null == (t = b.current) || t.activateUploadDialogue()
+      e.preventDefault(), null == (t = y.current) || t.activateUploadDialogue()
     }
-  }, I = i.useCallback(() => {
+  }, S = i.useCallback(() => {
     O(true)
   }, []), T = i.useCallback(() => {
     O(false)
@@ -53,11 +53,11 @@ function b(e) {
     })
   }, [t, n]);
   i.useEffect(() => {
-    let e = v.current;
-    return null == A && (null == e || e.addEventListener("dragover", I, false), null == e || e.addEventListener("dragleave", T, false), null == e || e.addEventListener("drop", C, false)), () => {
-      null == e || e.removeEventListener("dragover", I, false), null == e || e.removeEventListener("dragleave", T, false), null == e || e.removeEventListener("drop", C, false)
+    let e = A.current;
+    return null == v && (null == e || e.addEventListener("dragover", S, false), null == e || e.addEventListener("dragleave", T, false), null == e || e.addEventListener("drop", C, false)), () => {
+      null == e || e.removeEventListener("dragover", S, false), null == e || e.removeEventListener("dragleave", T, false), null == e || e.removeEventListener("drop", C, false)
     }
-  }, [A, I, T, C]);
+  }, [v, S, T, C]);
   let N = e => {
     var r, i;
     if (null != t && (null == (i = e.currentTarget) || null == (r = i.files) ? true : r[0]) != null) {
@@ -76,9 +76,9 @@ function b(e) {
       }), e.currentTarget.value = ""
     }
   };
-  return null != A ? (0, r.jsx)(_.A, {
+  return null != v ? (0, r.jsx)(_.A, {
     channelId: t,
-    upload: A,
+    upload: v,
     keyboardModeEnabled: a,
     draftType: d.C.SlashCommand,
     label: (0, r.jsxs)(i.Fragment, {
@@ -90,7 +90,7 @@ function b(e) {
         tag: "span",
         variant: "text-md/normal",
         color: "text-brand",
-        children: A.filename
+        children: v.filename
       })]
     }),
     canEdit: false
@@ -98,22 +98,22 @@ function b(e) {
     id: n.name,
     channelId: t,
     keyboardModeEnabled: a,
-    onKeyDown: S,
+    onKeyDown: I,
     className: s()(g.xd, {
-      [g.LB]: y
+      [g.LB]: b
     }),
     draftType: d.C.SlashCommand,
-    ref: v,
+    ref: A,
     children: [(0, r.jsx)("span", {
       className: s()(g.fS, {
-        [g.Vg]: y
+        [g.Vg]: b
       }),
       children: n.displayName
     }), (0, r.jsx)(o.DUT, {
       className: g.uN,
       onClick: () => {
         var e;
-        return null == (e = b.current) ? true : e.activateUploadDialogue()
+        return null == (e = y.current) ? true : e.activateUploadDialogue()
       },
       children: (0, r.jsxs)("div", {
         className: g.wi,
@@ -126,7 +126,7 @@ function b(e) {
           variant: "text-sm/normal",
           children: m.intl.string(m.t.IJyOUf)
         }), (0, r.jsx)(c.A, {
-          ref: b,
+          ref: y,
           onChange: N,
           multiple: false,
           tabIndex: false,

@@ -83,14 +83,14 @@ function g(e) {
     popoutProps: m,
     hideTimestamp: g = false,
     withFooter: E = false
-  } = e, b = h(e, ["message", "channel", "content", "className", "compact", "popoutProps", "hideTimestamp", "withFooter"]), y = (0, s.Ay)(t);
+  } = e, y = h(e, ["message", "channel", "content", "className", "compact", "popoutProps", "hideTimestamp", "withFooter"]), b = (0, s.Ay)(t);
   return (0, r.jsx)("div", {
     className: a()({
       [u.Ym]: E
     }, u.gD, {
       [u.oE]: p
     }, d),
-    children: (0, r.jsx)(o.A, _(f({}, b), {
+    children: (0, r.jsx)(o.A, _(f({}, y), {
       className: a()(u.zC, {
         [u.oE]: p
       }),
@@ -105,7 +105,7 @@ function g(e) {
       childrenHeader: (0, r.jsx)(c.Ay, f({
         message: t,
         channel: n,
-        author: y,
+        author: b,
         guildId: null == n ? true : n.guild_id,
         compact: p,
         hideTimestamp: g,
@@ -114,7 +114,7 @@ function g(e) {
         })
       }, null != m ? m : {})),
       compact: p,
-      author: y
+      author: b
     }))
   })
 }

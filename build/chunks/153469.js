@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   Gc: () => l,
-  V9: () => S,
-  dY: () => A,
+  V9: () => I,
+  dY: () => v,
   hK: () => c,
-  hm: () => v
+  hm: () => A
 }), require("./321073.js"), require("./896048.js");
 var Chunk310784 = require("./310784.js"),
   i = require.n(Chunk310784),
@@ -24,31 +24,31 @@ let l = "custom-theme-background",
   m = 30,
   g = false,
   E = 30,
-  b = 40,
-  y = .1,
+  y = 40,
+  b = .1,
   O = .05;
 
-function A(e, t, n, r) {
+function v(e, t, n, r) {
   let a = e.slice();
   1 === e.length && a.push(e[0]);
   let c = e.map(e => i()(e).luminance()),
-    A = i()(e[c.indexOf(Math.min(...c))]),
-    v = i()(e[c.indexOf(Math.max(...c))]),
-    S = "linear-gradient(".concat(t, "deg, ").concat(a.join(", "), ")"),
-    I = (0, s.Mw)(r),
+    v = i()(e[c.indexOf(Math.min(...c))]),
+    A = i()(e[c.indexOf(Math.max(...c))]),
+    I = "linear-gradient(".concat(t, "deg, ").concat(a.join(", "), ")"),
+    S = (0, s.Mw)(r),
     T = {
-      light: i()(v).set("hsl.s", 1).set("hsl.l", d),
-      dark: i()(A).set("hsl.s", 1).set("hsl.l", u)
+      light: i()(A).set("hsl.s", 1).set("hsl.l", d),
+      dark: i()(v).set("hsl.s", 1).set("hsl.l", u)
     },
     C = 100 - n,
-    N = "\n      --custom-theme-background: ".concat(S, ";\n      ", "--custom-background-gradient-chat-opacity-base-light", ": 0.95;\n      ", "--custom-background-gradient-highest-opacity-base-light", ": 1.0;\n      ", "--custom-background-gradient-opacity-mix-amount", ": ").concat(((f + p * C) / 100).toFixed(2), ";\n      ", "--custom-theme-border-color-amount", ": 5%;\n      "),
-    R = I ? "\n      ".concat(o.RB.THEME_BASE_MIX_AMOUNT, ": ").concat(_ + h * C, "%;\n      ").concat(o.RB.THEME_TEXT_MIX_AMOUNT, ": ").concat(E, "%;\n    ") : "\n      ".concat(o.RB.THEME_BASE_MIX_AMOUNT, ": ").concat(m + g * n, "%;\n      ").concat(o.RB.THEME_TEXT_MIX_AMOUNT, ": ").concat(b, "%;\n    "),
-    w = "\n      ".concat(o.RB.DARK_THEME_BASE_COLOR, ": ").concat(T.dark.css(), ";\n      ").concat(o.RB.DARK_THEME_BASE_COLOR_HSL, ": ").concat((0, o.FT)(T.dark), ";\n      ").concat(o.RB.DARK_THEME_TEXT_COLOR, ": ").concat(i()(A).set("hsl.l", ((100 - y * C) / 100).toFixed(2)).css(), ";\n    "),
-    P = "\n      ".concat(o.RB.LIGHT_THEME_BASE_COLOR, ": ").concat(T.light.css(), ";\n      ").concat(o.RB.LIGHT_THEME_BASE_COLOR_HSL, ": ").concat((0, o.FT)(T.light), ";\n      ").concat(o.RB.LIGHT_THEME_TEXT_COLOR, ": ").concat(i()(v).set("hsl.l", (O * C / 100).toFixed(2)).css(), ";\n    ");
+    N = "\n      --custom-theme-background: ".concat(I, ";\n      ", "--custom-background-gradient-chat-opacity-base-light", ": 0.95;\n      ", "--custom-background-gradient-highest-opacity-base-light", ": 1.0;\n      ", "--custom-background-gradient-opacity-mix-amount", ": ").concat(((f + p * C) / 100).toFixed(2), ";\n      ", "--custom-theme-border-color-amount", ": 5%;\n      "),
+    R = S ? "\n      ".concat(o.RB.THEME_BASE_MIX_AMOUNT, ": ").concat(_ + h * C, "%;\n      ").concat(o.RB.THEME_TEXT_MIX_AMOUNT, ": ").concat(E, "%;\n    ") : "\n      ".concat(o.RB.THEME_BASE_MIX_AMOUNT, ": ").concat(m + g * n, "%;\n      ").concat(o.RB.THEME_TEXT_MIX_AMOUNT, ": ").concat(y, "%;\n    "),
+    w = "\n      ".concat(o.RB.DARK_THEME_BASE_COLOR, ": ").concat(T.dark.css(), ";\n      ").concat(o.RB.DARK_THEME_BASE_COLOR_HSL, ": ").concat((0, o.FT)(T.dark), ";\n      ").concat(o.RB.DARK_THEME_TEXT_COLOR, ": ").concat(i()(v).set("hsl.l", ((100 - b * C) / 100).toFixed(2)).css(), ";\n    "),
+    P = "\n      ".concat(o.RB.LIGHT_THEME_BASE_COLOR, ": ").concat(T.light.css(), ";\n      ").concat(o.RB.LIGHT_THEME_BASE_COLOR_HSL, ": ").concat((0, o.FT)(T.light), ";\n      ").concat(o.RB.LIGHT_THEME_TEXT_COLOR, ": ").concat(i()(A).set("hsl.l", (O * C / 100).toFixed(2)).css(), ";\n    ");
   return ".".concat(l, " {\n      ").concat(N, "\n      ").concat(R, "\n      ").concat(w, "\n      ").concat(P, "\n      }")
 }
 
-function v(e, t) {
+function A(e, t) {
   let n = a.A.unsafe_rawColors[e.colors[0].token].resolve({
       saturation: 1
     }).hex(),
@@ -67,7 +67,7 @@ function v(e, t) {
     }).join("\n"), "\n    ");
   return ".".concat(l, " {\n      ", "--custom-theme-background", ": ").concat(t, ";\n      ", "--custom-theme-primary-color", ": ").concat(n, ";\n      ", "--custom-theme-secondary-color", ": ").concat(r, ";\n      ").concat(c, "\n    }")
 }
-let S = function(e) {
+let I = function(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0,
     n = e.slice();
   return 1 === e.length && n.push(e[0]), "linear-gradient(".concat(t, "deg, ").concat(n.join(", "), ")")

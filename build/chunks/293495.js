@@ -1,8 +1,8 @@
 /** Chunk was on 21738 **/
 /** chunk id: 293495, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => m,
-  YY: () => f
+  Ay: () => A,
+  YY: () => h
 });
 var Chunk73153 = require("./73153.js"),
   Chunk31728 = require("./31728.js"),
@@ -15,17 +15,17 @@ var Chunk73153 = require("./73153.js"),
   Chunk652215 = require("./652215.js");
 let p = null;
 
-function f(e) {
+function h(e) {
   return "framepip:".concat(e.applicationId)
 }
 
-function h() {
+function g() {
   let e = u.A.getConnectedFrame();
   if (null == e) {
     let e;
     return void(null != (e = p) && c.A.isOpen(e) && (r.h.wait(() => i.VN(e)), p = null))
   }
-  var t = f(e);
+  var t = h(e);
   if (c.A.isOpen(t)) returnfalse;
   if (null != p) {
     let e = p;
@@ -34,7 +34,7 @@ function h() {
   return r.h.wait(() => i.ho(t, d.o1q.FRAME, {})), void(p = t)
 }
 
-function A() {
+function f() {
   let e;
   if ((0, a.A)({
       LayerStore: o.A,
@@ -45,12 +45,12 @@ function A() {
   }
   null != (e = p) && c.A.isOpen(e) && r.h.wait(() => i.WU(e))
 }
-class g extends Chunk272355.A {
+class m extends Chunk272355.A {
   _initialize() {
-    u.A.addChangeListener(h), o.A.addChangeListener(A)
+    u.A.addChangeListener(g), o.A.addChangeListener(f)
   }
   _terminate() {
-    u.A.removeChangeListener(h), o.A.removeChangeListener(A)
+    u.A.removeChangeListener(g), o.A.removeChangeListener(f)
   }
 }
-let m = new g
+let A = new m

@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 152535, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,43 +15,43 @@ var Chunk627968 = require("./627968.js"),
   Chunk376086 = require("./376086.js"),
   Chunk985018 = require("./985018.jsx");
 
-function h(e) {
+function f(e) {
   let {
     channel: t,
     themeable: n,
-    whichPopoutIsOpen: h,
-    setWhichPopoutIsOpen: b
+    whichPopoutIsOpen: f,
+    setWhichPopoutIsOpen: g
   } = e, {
-    parentAnalyticsLocation: g
-  } = (0, s.Ay)(), m = l.useRef(null), {
+    parentAnalyticsLocation: m
+  } = (0, a.Ay)(), b = l.useRef(null), {
     isHovered: A,
     setIsHovered: y,
-    onMouseEnter: O,
-    onMouseLeave: j
+    onMouseEnter: _,
+    onMouseLeave: O
   } = (0, c.A)(200, 300), {
-    Component: v,
-    play: x,
+    Component: j,
+    play: v,
     events: {
-      onMouseEnter: E,
-      onMouseLeave: _
+      onMouseEnter: x,
+      onMouseLeave: E
     }
   } = (0, i.T)(), C = l.useCallback(e => {
-    "focus" !== e.type && (O(), E())
-  }, [O, E]), S = l.useCallback(() => {
-    null == h && (j(), _())
-  }, [j, _, h]), I = l.useCallback(() => {
-    (0, o.X)(g, o.O.GIFTING), h === f.P.GIFTING ? (null == b || b(true), j()) : (null != h ? (x(), O()) : x(), null == b || b(f.P.GIFTING))
-  }, [O, j, g, x, b, h]);
-  return (0, r.jsx)(a.Y, {
-    targetElementRef: m,
-    shouldShow: A && (h === f.P.GIFTING || null == h) || h === f.P.GIFTING,
-    animation: a.Y.Animation.FADE,
+    "focus" !== e.type && (_(), x())
+  }, [_, x]), S = l.useCallback(() => {
+    null == f && (O(), E())
+  }, [O, E, f]), I = l.useCallback(() => {
+    (0, o.X)(m, o.O.GIFTING), f === p.P.GIFTING ? (null == g || g(true), O()) : (null != f ? (v(), _()) : v(), null == g || g(p.P.GIFTING))
+  }, [_, O, m, v, g, f]);
+  return (0, r.jsx)(s.Y, {
+    targetElementRef: b,
+    shouldShow: A && (f === p.P.GIFTING || null == f) || f === p.P.GIFTING,
+    animation: s.Y.Animation.FADE,
     animationPosition: "top",
     position: "top",
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      y(false), null == b || b(true)
+      y(false), null == g || g(true)
     },
     renderPopout: e => {
       let {
@@ -61,21 +61,21 @@ function h(e) {
         channel: t,
         closePopout: n,
         isHovered: A,
-        onMouseEnter: O,
-        onMouseLeave: j
+        onMouseEnter: _,
+        onMouseLeave: O
       })
     },
     children: () => (0, r.jsx)(d.l, {
-      ref: m,
+      ref: b,
       isTrayButton: true,
       themeable: n,
-      "aria-label": p.intl.string(p.t.PEjaCx),
-      iconComponent: v,
+      "aria-label": h.intl.string(h.t.PEjaCx),
+      iconComponent: j,
       onClick: I,
       onMouseEnter: C,
       onMouseLeave: S,
-      isActive: A || h === f.P.GIFTING,
-      color: A || h === f.P.GIFTING ? "primaryDark" : true
+      isActive: A || f === p.P.GIFTING,
+      color: A || f === p.P.GIFTING ? "primaryDark" : true
     })
   })
 }

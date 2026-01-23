@@ -28,7 +28,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk322980 = require("./322980.js"),
   Chunk270761 = require("./270761.js");
 
-function v(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,20 +37,20 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,7 +62,7 @@ function I(e, t) {
 }
 
 function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -84,8 +84,8 @@ let C = e => {
   },
   N = function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
-      r = b.BB.NORMAL;
-    return null != e && e.state !== d.m.FAILED && (e.data.interactionType === o.G4.MESSAGE_COMPONENT && e.data.componentId === t.id ? r = b.BB.LOADING : C(t) && (r = b.BB.DISABLED)), n && C(t) && (r = b.BB.DISABLED), r
+      r = y.BB.NORMAL;
+    return null != e && e.state !== d.m.FAILED && (e.data.interactionType === o.G4.MESSAGE_COMPONENT && e.data.componentId === t.id ? r = y.BB.LOADING : C(t) && (r = y.BB.DISABLED)), n && C(t) && (r = y.BB.DISABLED), r
   };
 
 function R(e) {
@@ -111,8 +111,8 @@ function P(e, t) {
   let a = i.useContext(M),
     s = i.useCallback(t => {
       var n;
-      let r = (0, A.A)(e, t, null != a.modal ? "modal" : "message");
-      return null == (n = a.setValidationErrors) || n.call(a, t => T(S({}, t), {
+      let r = (0, v.A)(e, t, null != a.modal ? "modal" : "message");
+      return null == (n = a.setValidationErrors) || n.call(a, t => T(I({}, t), {
         [e.id]: r
       })), null == r
     }, [e, a]);
@@ -180,7 +180,7 @@ function x(e, t, n) {
     state: r,
     executeStateUpdate: u,
     isDisabled: false,
-    visualState: b.BB.NORMAL,
+    visualState: y.BB.NORMAL,
     error: o
   }
 }
@@ -215,7 +215,7 @@ function k(e) {
       containerId: n.id,
       message: n,
       validators: o,
-      getParents: e => (0, y.wT)(n.components, e)
+      getParents: e => (0, b.wT)(n.components, e)
     };
     if (null != a) return {
       useComponentState: x.bind(null, a),
@@ -225,7 +225,7 @@ function k(e) {
       validators: o,
       validationErrors: l,
       setValidationErrors: c,
-      getParents: e => (0, y.wT)(a.components, e)
+      getParents: e => (0, b.wT)(a.components, e)
     };
     if (null != s) return {
       useComponentState: L("ApplicationWidget"),

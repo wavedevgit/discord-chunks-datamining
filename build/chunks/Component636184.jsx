@@ -25,7 +25,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk185914 = require("./185914.js"),
   Chunk299148 = require("./299148.js");
 
-function v(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,19 +34,19 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
 }
-let I = (e, t) => {
+let S = (e, t) => {
     (0, p.default)(), d.A.openPrivateChannel({
       recipientIds: e
     }), t()
@@ -65,7 +65,7 @@ let I = (e, t) => {
     }), l = m.Ay.getName(t), c = n === g.o.FAIL;
     return (0, r.jsxs)("div", {
       className: O.w4,
-      children: [(0, r.jsx)(u.euF, S({
+      children: [(0, r.jsx)(u.euF, I({
         imageClassName: s()({
           [O.jN]: c
         }),
@@ -82,7 +82,7 @@ let I = (e, t) => {
           variant: "text-md/medium",
           className: O.nT,
           color: "text-strong",
-          children: y.intl.format(y.t.RO3T4B, {
+          children: b.intl.format(b.t.RO3T4B, {
             userName: l
           })
         })]
@@ -94,9 +94,9 @@ let I = (e, t) => {
       }), (0, r.jsx)(u.Button, {
         variant: "secondary",
         size: "sm",
-        text: y.intl.string(y.t["g33r/P"]),
+        text: b.intl.string(b.t["g33r/P"]),
         icon: u.oyn,
-        onClick: () => I(t.id, i)
+        onClick: () => S(t.id, i)
       })]
     })
   },
@@ -106,25 +106,25 @@ let I = (e, t) => {
       onClose: n,
       isReminderConfirmation: a
     } = e, s = (0, l.bG)([E.A], () => E.A.getReferralsRemaining());
-    _.default.track(b.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
+    _.default.track(y.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
     let {
       reducedMotion: d
     } = i.useContext(c.CZ);
     if (null === s) return (0, r.jsx)(u.y$y, {});
     let f = () => d.enabled ? {
-        src: A.A,
+        src: v.A,
         type: "image"
       } : {
         rive: u.lBW,
         type: "rive"
       },
-      p = () => 0 === t.filter(e => e.status === g.o.SUCCESS).length ? y.intl.string(y.t["7VBEue"]) : true === a ? y.intl.string(y.t.GP5lbq) : y.intl.string(y.t.tKCltd),
-      m = () => true === a ? y.intl.format(y.t["4gJJfD"], {
-        helpdeskArticle: h.A.getArticleURL(b.MVz.REFERRAL_PROGRAM)
-      }) : y.intl.format(y.t.AwGSWl, {
-        helpdeskArticle: h.A.getArticleURL(b.MVz.REFERRAL_PROGRAM)
+      p = () => 0 === t.filter(e => e.status === g.o.SUCCESS).length ? b.intl.string(b.t["7VBEue"]) : true === a ? b.intl.string(b.t.GP5lbq) : b.intl.string(b.t.tKCltd),
+      m = () => true === a ? b.intl.format(b.t["4gJJfD"], {
+        helpdeskArticle: h.A.getArticleURL(y.MVz.REFERRAL_PROGRAM)
+      }) : b.intl.format(b.t.AwGSWl, {
+        helpdeskArticle: h.A.getArticleURL(y.MVz.REFERRAL_PROGRAM)
       }),
-      v = () => (0, r.jsx)("div", {
+      A = () => (0, r.jsx)("div", {
         className: O.Hz,
         children: t.map(e => (0, r.jsx)(T, {
           recipient: e.recipient,
@@ -139,6 +139,6 @@ let I = (e, t) => {
       subtitle: m(),
       onClose: n,
       transitionState: o.ip4.ENTERED,
-      children: v()
+      children: A()
     })
   }

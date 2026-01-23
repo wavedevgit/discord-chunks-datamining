@@ -28,55 +28,55 @@ function y(e) {
   } = e, {
     analyticsLocations: y
   } = (0, i.Ay)(), {
-    context: O
-  } = (0, o.NJ)(), j = (0, l.A)(), {
-    mutualFriendsCount: v,
-    mutualFriends: x,
-    mutualGuilds: E
-  } = (0, c.A)(t), _ = !t.bot && null != v && v > 0, C = null != E && E.length > 0;
-  return _ || C ? (0, r.jsxs)(b.A.Overlay, {
+    context: _
+  } = (0, o.NJ)(), O = (0, l.A)(), {
+    mutualFriendsCount: j,
+    mutualFriends: v,
+    mutualGuilds: x
+  } = (0, c.A)(t), E = !t.bot && null != j && j > 0, C = null != x && x.length > 0;
+  return E || C ? (0, r.jsxs)(g.A.Overlay, {
     className: A.Lw,
-    children: [C && (0, r.jsx)(g.A, {
+    children: [C && (0, r.jsx)(m.A, {
       section: "MUTUAL_GUILDS",
-      header: m.intl.string(m.t["4lTDZq"]),
+      header: b.intl.string(b.t["4lTDZq"]),
       listClassName: A.p_,
-      items: E.map(e => {
+      items: x.map(e => {
         let {
           guild: n,
           nick: l
         } = e;
-        return (0, r.jsx)(h.A, {
+        return (0, r.jsx)(f.A, {
           user: t,
           guild: n,
           nick: l,
-          onSelect: () => (0, s.u)(n.id)
+          onSelect: () => (0, a.u)(n.id)
         }, n.id)
       })
-    }), C && _ && (0, r.jsx)(f.A, {
+    }), C && E && (0, r.jsx)(p.A, {
       className: A.yF
-    }), _ && (0, r.jsx)(g.A, {
+    }), E && (0, r.jsx)(m.A, {
       section: "MUTUAL_FRIENDS",
-      header: m.intl.string(m.t["0mTJ3j"]),
+      header: b.intl.string(b.t["0mTJ3j"]),
       listClassName: A.p_,
-      onExpand: () => (0, u.A)(t.id, j),
-      items: null == x ? Array.from({
-        length: v
+      onExpand: () => (0, u.A)(t.id, O),
+      items: null == v ? Array.from({
+        length: j
       }).map((e, t) => (0, r.jsxs)("div", {
         className: A.nC,
-        children: [(0, r.jsx)(a.FQ, {
+        children: [(0, r.jsx)(s.FQ, {
           width: 40,
           opacity: .08
-        }), (0, r.jsx)(a.FQ, {
+        }), (0, r.jsx)(s.FQ, {
           width: 135,
           opacity: .08
         })]
-      }, t)) : x.map(e => {
+      }, t)) : v.map(e => {
         let {
           key: t,
           user: l,
           status: i
         } = e;
-        return (0, r.jsx)(p.A, {
+        return (0, r.jsx)(h.A, {
           user: l,
           status: i,
           channelId: n,
@@ -99,7 +99,7 @@ function y(e) {
                 })
               }
               return e
-            }({}, O), t = t = {
+            }({}, _), t = t = {
               userId: l.id,
               sourceAnalyticsLocations: y
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {

@@ -2,17 +2,17 @@
 /** chunk id: 375907, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => a
+  A: () => i
 });
 var Chunk64700 = require("./64700.js"),
   Chunk884362 = require("./884362.js");
 
-function a(e) {
+function i(e) {
   let {
     listRef: t,
     padding: n,
-    channel: a,
-    isEnabled: i
+    channel: i,
+    isEnabled: a
   } = e, s = l.useCallback(e => {
     let l = t.current,
       r = document.querySelector(e);
@@ -26,22 +26,22 @@ function a(e) {
         })
       }
     }))
-  }, [n, t]), c = l.useCallback(() => new Promise(e => {
+  }, [n, t]), o = l.useCallback(() => new Promise(e => {
     let n = t.current;
     null == n || n.scrollToTop({
       callback: () => requestAnimationFrame(e)
     })
-  }), [t]), o = l.useCallback(() => new Promise(e => {
+  }), [t]), c = l.useCallback(() => new Promise(e => {
     let n = t.current;
     null == n || n.scrollToBottom({
       callback: () => requestAnimationFrame(e)
     })
   }), [t]);
   return (0, r.Ay)({
-    id: "forum-channel-list-".concat(a.id),
-    isEnabled: i,
-    scrollToStart: c,
-    scrollToEnd: o,
+    id: "forum-channel-list-".concat(i.id),
+    isEnabled: a,
+    scrollToStart: o,
+    scrollToEnd: c,
     setFocus: s
   })
 }

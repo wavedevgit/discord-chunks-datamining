@@ -1,21 +1,21 @@
 /** Chunk was on 96811 **/
 /** chunk id: 146793, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => i
+  A: () => s
 }), require("./896048.js"), require("./747238.js"), require("./733351.js");
 var Chunk64700 = require("./64700.js"),
   Chunk444927 = require("./444927.js"),
   Chunk629357 = require("./629357.js");
 
-function i(e) {
+function s(e) {
   let {
     searchOptions: t
-  } = e, [r, i] = n.useState({
+  } = e, [r, s] = n.useState({
     results: [],
     query: ""
-  }), a = (0, l.A)(() => {
-    let e = new s.Ay((e, t) => {
-      i({
+  }), a = (0, i.A)(() => {
+    let e = new l.Ay((e, t) => {
+      s({
         results: e,
         query: t
       })

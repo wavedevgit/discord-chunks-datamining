@@ -12,7 +12,7 @@ function d(e) {
   let {
     applicationId: l,
     backgroundImageAssetId: t
-  } = e, d = null != t ? (0, a.YE)(l, t, 1024, s.pV) : null;
+  } = e, d = null != t ? (0, s.YE)(l, t, 1024, a.pV) : null;
   return (0, n.jsx)("div", {
     className: i._,
     children: null != d ? (0, n.jsx)("div", {

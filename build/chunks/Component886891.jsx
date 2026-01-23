@@ -26,37 +26,37 @@ function E(e) {
     guildId: n,
     channelId: a,
     applicationId: E,
-    isGameRelationship: b = false,
-    className: y
+    isGameRelationship: y = false,
+    className: b
   } = e, {
     themeType: O
-  } = (0, _.E)(), A = O === h.d.MODAL_V2, v = f.Ay.getName(n, a, t), {
-    trackUserProfileAction: S
+  } = (0, _.E)(), v = O === h.d.MODAL_V2, A = f.Ay.getName(n, a, t), {
+    trackUserProfileAction: I
   } = (0, p.NJ)(), {
-    newestAnalyticsLocation: I
+    newestAnalyticsLocation: S
   } = (0, l.Ay)(), {
     acceptFriendRequest: T,
     cancelFriendRequest: C
   } = (0, d.I)({
     userId: t.id,
     applicationId: E,
-    isGameRelationship: b,
-    location: I
+    isGameRelationship: y,
+    location: S
   }), N = i.useCallback(() => {
-    T(), S({
-      action: b ? "ACCEPT_GAME_FRIEND_REQUEST" : "ACCEPT_FRIEND_REQUEST"
+    T(), I({
+      action: y ? "ACCEPT_GAME_FRIEND_REQUEST" : "ACCEPT_FRIEND_REQUEST"
     })
-  }, [T, b, S]), R = i.useCallback(() => {
-    C(), S({
-      action: b ? "IGNORE_GAME_FRIEND_REQUEST" : "IGNORE_FRIEND_REQUEST"
+  }, [T, y, I]), R = i.useCallback(() => {
+    C(), I({
+      action: y ? "IGNORE_GAME_FRIEND_REQUEST" : "IGNORE_FRIEND_REQUEST"
     })
-  }, [C, b, S]), w = null != E, P = (0, c.h)(E);
+  }, [C, y, I]), w = null != E, P = (0, c.h)(E);
   return w && null == P ? null : (0, r.jsxs)("div", {
-    className: s()(g.kL, y),
+    className: s()(g.kL, b),
     children: [w ? (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
-      children: m.intl.format(b ? m.t.syHjLL : m.t.V15uUI, {
-        username: v,
+      children: m.intl.format(y ? m.t.syHjLL : m.t.V15uUI, {
+        username: A,
         applicationIcon: () => (0, r.jsx)(u.A, {
           className: g.Gt,
           game: P,
@@ -67,12 +67,12 @@ function E(e) {
     }) : (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       children: m.intl.format(m.t.uIomXw, {
-        username: v
+        username: A
       })
     }), (0, r.jsxs)("div", {
       className: g.UD,
       children: [(0, r.jsx)(o.Button, {
-        variant: A ? "secondary" : "primary",
+        variant: v ? "secondary" : "primary",
         size: "sm",
         onClick: N,
         text: m.intl.string(m.t.Zcibdf)

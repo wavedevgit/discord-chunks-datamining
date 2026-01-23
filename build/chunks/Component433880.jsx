@@ -51,17 +51,17 @@ function m(e) {
     color: g
   } = e, {
     id: E,
-    bot: b
-  } = n, y = (0, a.bG)([u.default], () => {
+    bot: y
+  } = n, b = (0, a.bG)([u.default], () => {
     var e;
     return (null == (e = u.default.getCurrentUser()) ? true : e.id) === E
-  }) || b, O = y ? p : f, [A, v] = i.useState(false), S = i.useCallback(() => v(true), []), I = i.useMemo(() => O.map(e => {
+  }) || y, O = b ? p : f, [v, A] = i.useState(false), I = i.useCallback(() => A(true), []), S = i.useMemo(() => O.map(e => {
     let {
       applicationId: t
     } = e;
     return t
-  }), [O]), T = (0, a.bG)([c.A], () => c.A.getRelationshipType(E), [E]), C = _(I, A || 1 === O.length);
-  if (y || 0 === O.length || T === d.eA$.FRIEND) return null;
+  }), [O]), T = (0, a.bG)([c.A], () => c.A.getRelationshipType(E), [E]), C = _(S, v || 1 === O.length);
+  if (b || 0 === O.length || T === d.eA$.FRIEND) return null;
   if (1 === O.length) {
     let {
       applicationId: e
@@ -73,7 +73,7 @@ function m(e) {
       subtext: (0, r.jsx)(h, {
         application: n
       }),
-      onFocus: S,
+      onFocus: I,
       action: () => m(n)
     })
   }
@@ -95,7 +95,7 @@ function m(e) {
     color: g,
     id: t,
     label: o,
-    onFocus: S,
+    onFocus: I,
     children: N
   })
 }

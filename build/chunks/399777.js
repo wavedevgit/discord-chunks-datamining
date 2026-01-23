@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $: () => p,
-  W: () => v
+  W: () => A
 }), require("./747238.js"), require("./896048.js");
 var Chunk735438 = require("./735438.js"),
   Chunk629357 = require("./629357.js"),
@@ -32,7 +32,7 @@ let d = {
   g = /\w/,
   E = /[^\w\s]/;
 
-function b(e, t) {
+function y(e, t) {
   if (t < 0 || t > e.length) return d;
   let n = t;
   for (; n > 0 && E.test(e[n - 1]);) n--;
@@ -49,23 +49,23 @@ function b(e, t) {
   }
 }
 
-function y(e, t, n, r) {
+function b(e, t, n, r) {
   var d, g;
   let {
     isIdle: E,
-    currentAutocompleteType: y
+    currentAutocompleteType: b
   } = r;
   if (0 === t.length) return f;
   let {
     onlyExactMatch: O,
-    eagerRecentSenders: A,
-    largeGuildExactMatchRecentSenders: v
+    eagerRecentSenders: v,
+    largeGuildExactMatchRecentSenders: A
   } = (0, c.sA)("getMentionSuggestions", {
     autoTrackExposure: false
-  }), S = b(t, n), {
-    query: I
-  } = S;
-  if (I.length < p || u.A.getMaxWordCount() < h || u.A.isFrequentlyUsedWord(I)) return f;
+  }), I = y(t, n), {
+    query: S
+  } = I;
+  if (S.length < p || u.A.getMaxWordCount() < h || u.A.isFrequentlyUsedWord(S)) return f;
   let T = (0, l.X3)(i.rD.USER),
     C = o.A.getMessages(e.id).toArray(),
     N = new Set;
@@ -74,26 +74,26 @@ function y(e, t, n, r) {
     T[t.author.id] = (null != (d = T[t.author.id]) ? d : 1) + (C.length - e) / C.length, N.add(t.author.id)
   }
   let R = false;
-  v && (R = null != e.guild_id && (null != (g = s.A.getMemberCount(e.guild_id)) ? g : 0) > m);
+  A && (R = null != e.guild_id && (null != (g = s.A.getMemberCount(e.guild_id)) ? g : 0) > m);
   let w = l.Ay.queryMentionSuggestionResults({
-    query: I,
+    query: S,
     channel: e,
     boosters: T,
-    onlyExactMatch: O && (!A || R)
+    onlyExactMatch: O && (!v || R)
   });
-  return (R ? w = w.filter(e => N.has(e.user.id)) : A && (w = w.filter(e => "exact" === e.matchType || N.has(e.user.id))), E || y === a.DB.MENTION_SUGGESTIONS || !(I.length < _) || w.some(e => "exact" === e.matchType || A && N.has(e.user.id))) ? {
+  return (R ? w = w.filter(e => N.has(e.user.id)) : v && (w = w.filter(e => "exact" === e.matchType || N.has(e.user.id))), E || b === a.DB.MENTION_SUGGESTIONS || !(S.length < _) || w.some(e => "exact" === e.matchType || v && N.has(e.user.id))) ? {
     results: {
       suggestions: w,
-      queryInfo: S
+      queryInfo: I
     }
   } : f
 }
-let O = (0, Chunk735438.memoize)(y, (e, t, n, r) => "".concat(e.id, "-").concat(r.isIdle, "-").concat(r.currentAutocompleteType, "-").concat(t, "-").concat(n)),
-  A = null;
+let O = (0, Chunk735438.memoize)(b, (e, t, n, r) => "".concat(e.id, "-").concat(r.isIdle, "-").concat(r.currentAutocompleteType, "-").concat(t, "-").concat(n)),
+  v = null;
 
-function v(e, t, n, r) {
-  return null == A && (A = setTimeout(() => {
+function A(e, t, n, r) {
+  return null == v && (v = setTimeout(() => {
     var e, t;
-    null == (e = (t = O.cache).clear) || e.call(t), A = null
+    null == (e = (t = O.cache).clear) || e.call(t), v = null
   }, 0)), O(e, t, n, r)
 }

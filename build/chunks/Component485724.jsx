@@ -51,7 +51,7 @@ function M(e) {
   } = e, {
     name: E,
     bot: O
-  } = n = (0, w.b)(n), A = null == O ? true : O.id, v = (0, _.Ag)(n), I = S.Ay.getApplicationIconURL({
+  } = n = (0, w.b)(n), v = null == O ? true : O.id, A = (0, _.Ag)(n), S = I.Ay.getApplicationIconURL({
     id: n.id,
     icon: n.icon,
     bot: O
@@ -59,7 +59,7 @@ function M(e) {
     staticBannerSrc: N,
     videoBannerSrc: x,
     bannerAspectRatio: j
-  } = (0, P.f)(n), M = (0, o.bG)([b.default], () => null != l ? l : b.default.getId(), [l]), {
+  } = (0, P.f)(n), M = (0, o.bG)([y.default], () => null != l ? l : y.default.getId(), [l]), {
     analyticsLocations: G
   } = (0, f.Ay)(d.A.APP_MESSAGE_EMBED), {
     currentChannelId: V,
@@ -72,9 +72,9 @@ function M(e) {
     },
     applicationId: n.id,
     botUserId: null == O ? true : O.id
-  }), K = null != A && v && W, z = H && v, q = (0, D.F)(n), X = (0, D.t)(n), Z = i.useMemo(() => {
+  }), K = null != v && A && W, z = H && A, q = (0, D.F)(n), X = (0, D.t)(n), Z = i.useMemo(() => {
     let e = [];
-    return v ? (z && e.push({
+    return A ? (z && e.push({
       label: null == F ? L.intl.string(L.t.RscU7I) : B ? L.intl.string(L.t.DPfdsq) : L.intl.string(L.t.sqe0hj),
       trackingArea: R.kY.PLAY,
       onClick() {
@@ -95,14 +95,14 @@ function M(e) {
       onClick() {
         (0, p.Q)({
           appId: n.id,
-          botId: A,
+          botId: v,
           analyticsLocations: G,
           customId: s,
           referrerId: M
         })
       }
     })) : null != X && e.push(X), e
-  }, [z, K, F, B, V, n.id, Y, s, M, G, v, X, A]), Q = v ? (0, r.jsx)(U, {
+  }, [z, K, F, B, V, n.id, Y, s, M, G, A, X, v]), Q = A ? (0, r.jsx)(U, {
     app: n
   }) : (0, r.jsx)(k, {
     app: n
@@ -113,7 +113,7 @@ function M(e) {
     videoBannerSrc: x,
     onClickBanner: q,
     bannerAspectRatio: j,
-    iconSrc: I,
+    iconSrc: S,
     info: Q,
     actions: Z,
     onClickContent: q,
@@ -123,7 +123,7 @@ function M(e) {
       referrerId: M,
       activityCustomId: s,
       onView: g,
-      guildId: null == (t = y.A.getChannel(m.channel_id)) ? true : t.guild_id,
+      guildId: null == (t = b.A.getChannel(m.channel_id)) ? true : t.guild_id,
       channelId: m.channel_id,
       messageId: m.id
     }
@@ -134,7 +134,7 @@ function k(e) {
   var t, n, s;
   let {
     app: c
-  } = e, u = (0, I.Ie)({
+  } = e, u = (0, S.Ie)({
     customInstallUrl: c.customInstallUrl,
     installParams: c.installParams,
     integrationTypesConfig: c.integrationTypesConfig
@@ -175,14 +175,14 @@ function U(e) {
   } = e, {
     tags: n,
     maxParticipants: a = 0
-  } = t, c = (0, o.bG)([A.A], () => {
+  } = t, c = (0, o.bG)([v.A], () => {
     var e;
-    return null != (e = A.A.getGuildId()) ? e : true
-  }, []), u = (0, g.s)(t.id), d = (0, o.yK)([v.default, O.A], () => {
+    return null != (e = v.A.getGuildId()) ? e : true
+  }, []), u = (0, g.s)(t.id), d = (0, o.yK)([A.default, O.A], () => {
     let e = [];
     for (let [t, n] of u.entries()) {
       if (t >= 5) break;
-      let r = v.default.getUser(n.author_id),
+      let r = A.default.getUser(n.author_id),
         i = O.A.isFriend(n.author_id);
       null != r && i && e.push(r)
     }

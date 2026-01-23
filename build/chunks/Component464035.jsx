@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk73153 = require("./73153.js"),
@@ -28,7 +28,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk183759 = require("./183759.js");
 
-function S(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,9 +36,9 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class _ extends Chunk64700.PureComponent {
+class S extends Chunk64700.PureComponent {
   componentDidMount() {
-    y.default.track(v.HAw.OPEN_MODAL, {
+    C.default.track(O.HAw.OPEN_MODAL, {
       type: "Follow Channel Modal",
       num_guild_permissions: Object.keys(this.props.guilds).length,
       location: "Chat Input Blocker - Follow Channel"
@@ -49,7 +49,7 @@ class _ extends Chunk64700.PureComponent {
         let {
           channel: t
         } = e;
-        return "general" === (0, u.m1)(t, C.default, A.A)
+        return "general" === (0, h.m1)(t, j.default, A.A)
       }),
       n = null != t ? t : e[0];
     return null != n ? n.channel.id : null
@@ -60,20 +60,20 @@ class _ extends Chunk64700.PureComponent {
       selectedChannelId: t,
       submitting: n
     } = this.state, {
-      onClose: s
+      onClose: a
     } = this.props;
-    return (0, l.jsxs)(d.ButtonGroup, {
+    return (0, l.jsxs)(o.ButtonGroup, {
       direction: "horizontal-reverse",
-      children: [(0, l.jsx)(d.Button, {
+      children: [(0, l.jsx)(o.Button, {
         variant: "primary",
-        text: w.intl.string(w.t["3aOv+h"]),
+        text: v.intl.string(v.t["3aOv+h"]),
         loading: n,
         onClick: this.handleFollow,
         disabled: null == e || null == t
-      }), (0, l.jsx)(d.Button, {
+      }), (0, l.jsx)(o.Button, {
         variant: "secondary",
-        text: w.intl.string(w.t["ETE/oC"]),
-        onClick: s
+        text: v.intl.string(v.t["ETE/oC"]),
+        onClick: a
       })]
     })
   }
@@ -83,9 +83,9 @@ class _ extends Chunk64700.PureComponent {
     } = this.props, {
       channels: t,
       selectedGuildId: n,
-      selectedChannelId: s,
+      selectedChannelId: a,
       errorMessage: r
-    } = this.state, a = O.default.keys(e).map(t => {
+    } = this.state, s = y.default.keys(e).map(t => {
       let {
         guild: n
       } = e[t];
@@ -105,38 +105,38 @@ class _ extends Chunk64700.PureComponent {
       return {
         id: t.id,
         value: t.id,
-        label: (0, u.m1)(t, C.default, A.A),
+        label: (0, h.m1)(t, j.default, A.A),
         leading: function(e) {
           if (null == e) return null;
-          let t = (0, h.gU)(e);
+          let t = (0, u.gU)(e);
           return null != t && (0, l.jsx)(t, {
             size: "xs",
             color: "currentColor",
-            className: N.Kk
+            className: w.Kk
           })
         }(t)
       }
-    }), o = 0 === a.length, c = o ? w.intl.string(w.t["6b6QoF"]) : w.intl.string(w.t.Z0quyN);
-    return (0, l.jsxs)(d.BJc, {
+    }), d = 0 === s.length, c = d ? v.intl.string(v.t["6b6QoF"]) : v.intl.string(v.t.Z0quyN);
+    return (0, l.jsxs)(o.BJc, {
       gap: 16,
-      children: [(0, l.jsx)(d.ZiE, {
+      children: [(0, l.jsx)(o.ZiE, {
         selectionMode: "single",
-        label: w.intl.string(w.t.xFn72s),
+        label: v.intl.string(v.t.xFn72s),
         value: n,
-        options: a,
-        disabled: o,
+        options: s,
+        disabled: d,
         onSelectionChange: e => this.handleGuildSelect(e)
-      }), (0, l.jsx)(d.ZiE, {
+      }), (0, l.jsx)(o.ZiE, {
         selectionMode: "single",
-        label: w.intl.string(w.t.PDn2fR),
-        value: s,
+        label: v.intl.string(v.t.PDn2fR),
+        value: a,
         options: i,
         disabled: 0 === i.length,
         onSelectionChange: e => this.handleChannelSelect(e)
-      }), (0, l.jsx)(d.Text, {
+      }), (0, l.jsx)(o.Text, {
         variant: "text-sm/normal",
-        color: o || null != r ? "text-feedback-critical" : "text-muted",
-        className: N.ML,
+        color: d || null != r ? "text-feedback-critical" : "text-muted",
+        className: w.ML,
         children: null != r ? r : c
       })]
     })
@@ -148,23 +148,23 @@ class _ extends Chunk64700.PureComponent {
       }
     } = this.props;
     return (0, l.jsxs)("div", {
-      className: N.rf,
-      children: [(0, l.jsx)(d.Heading, {
+      className: w.rf,
+      children: [(0, l.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         id: this.state.headerId,
-        children: w.intl.string(w.t.mvPFbA)
-      }), (0, l.jsx)(d.Text, {
+        children: v.intl.string(v.t.mvPFbA)
+      }), (0, l.jsx)(o.Text, {
         color: "text-muted",
-        className: a()(N.O1, {
-          [N.lK]: !e
+        className: s()(w.O1, {
+          [w.lK]: !e
         }),
         variant: "text-sm/normal",
-        children: w.intl.string(w.t.kbpkxJ)
-      }), e ? (0, l.jsx)(d.Text, {
-        className: a()(N.lK, N.O1),
+        children: v.intl.string(v.t.kbpkxJ)
+      }), e ? (0, l.jsx)(o.Text, {
+        className: s()(w.lK, w.O1),
         color: "text-feedback-critical",
         variant: "text-sm/normal",
-        children: w.intl.string(w.t["DrNm/5"])
+        children: v.intl.string(v.t["DrNm/5"])
       }) : null]
     })
   }
@@ -173,26 +173,26 @@ class _ extends Chunk64700.PureComponent {
     let {
       guildToFollow: t,
       channelNameToFollow: n,
-      channel: s
-    } = this.props, r = null != (e = (0, h.gU)(s)) ? e : d.koX;
-    return (0, l.jsxs)(d.rQ0, {
-      className: N.wx,
+      channel: a
+    } = this.props, r = null != (e = (0, u.gU)(a)) ? e : o.koX;
+    return (0, l.jsxs)(o.rQ0, {
+      className: w.wx,
       children: [(0, l.jsx)(m.A, {
         guild: t,
         size: m.A.Sizes.LARGE
       }), (0, l.jsx)("div", {
-        className: N.nU,
+        className: w.nU,
         children: (0, l.jsxs)("div", {
-          className: N.Ix,
+          className: w.Ix,
           children: [(0, l.jsx)(r, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20,
-            className: N.p
-          }), (0, l.jsx)(d.Text, {
+            className: w.p
+          }), (0, l.jsx)(o.Text, {
             variant: "text-md/medium",
-            className: N.HA,
+            className: w.HA,
             children: n
           })]
         })
@@ -203,50 +203,50 @@ class _ extends Chunk64700.PureComponent {
     let {
       transitionState: e
     } = this.props;
-    return (0, l.jsxs)(d.EOs, {
+    return (0, l.jsxs)(o.EOs, {
       transitionState: e,
       "aria-labelledby": this.state.headerId,
       parentComponent: "FollowModal",
-      children: [this.renderHeader(), (0, l.jsxs)(d.$mQ, {
-        className: N.Qs,
+      children: [this.renderHeader(), (0, l.jsxs)(o.$mQ, {
+        className: w.Qs,
         children: [this.renderBody(), this.renderForm()]
-      }), (0, l.jsx)(d.jlY, {
+      }), (0, l.jsx)(o.jlY, {
         children: this.renderFooter()
       })]
     })
   }
   constructor(e) {
-    super(e), S(this, "handleGuildSelect", e => {
+    super(e), N(this, "handleGuildSelect", e => {
       let {
         guilds: t
       } = this.props, {
         selectedGuildId: n
-      } = this.state, l = t[e].channels, s = this.getDefaultChannelId(l);
+      } = this.state, l = t[e].channels, a = this.getDefaultChannelId(l);
       n !== e && this.setState({
         selectedGuildId: e,
-        selectedChannelId: s,
+        selectedChannelId: a,
         channels: l
       })
-    }), S(this, "handleChannelSelect", e => {
+    }), N(this, "handleChannelSelect", e => {
       this.setState({
         selectedChannelId: e
       })
-    }), S(this, "handleFollow", () => {
+    }), N(this, "handleFollow", () => {
       let {
         channel: e,
         onClose: t
       } = this.props, {
-        selectedChannelId: s,
+        selectedChannelId: a,
         selectedGuildId: r
       } = this.state;
-      null != s && (this.setState({
+      null != a && (this.setState({
         submitting: true
-      }), c.A.createChannelFollower(s, e.id).then(() => {
-        o.h.dispatch({
+      }), c.A.createChannelFollower(a, e.id).then(() => {
+        d.h.dispatch({
           type: "CHANNEL_FOLLOWER_CREATED",
-          channelId: s,
+          channelId: a,
           guildId: r
-        }), t(), (0, d.mMO)(async () => {
+        }), t(), (0, o.mMO)(async () => {
           let {
             default: e
           } = await n.e("9795").then(n.bind(n, 993390));
@@ -257,32 +257,32 @@ class _ extends Chunk64700.PureComponent {
               "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
               }))), l.forEach(function(t) {
-                S(e, t, n[t])
+                N(e, t, n[t])
               })
             }
             return e
           }({}, t))
         })
       }).catch(e => {
-        e.body.code === v.t02.TOO_MANY_WEBHOOKS ? this.setState({
-          errorMessage: w.intl.string(w.t["1eZ4aB"]),
+        e.body.code === O.t02.TOO_MANY_WEBHOOKS ? this.setState({
+          errorMessage: v.intl.string(v.t["1eZ4aB"]),
           submitting: false
         }) : this.setState({
-          errorMessage: w.intl.string(w.t.LgwhuN),
+          errorMessage: v.intl.string(v.t.LgwhuN),
           submitting: false
         })
       }))
     });
     const {
       guilds: t,
-      lastChannelFollowingDestination: s
+      lastChannelFollowingDestination: a
     } = e, {
       guildId: r,
-      channelId: a
-    } = s;
+      channelId: s
+    } = a;
     this.state = {
       selectedGuildId: r,
-      selectedChannelId: a,
+      selectedChannelId: s,
       channels: null != r && null != t[r] ? t[r].channels : [],
       errorMessage: null,
       submitting: false,
@@ -293,8 +293,8 @@ class _ extends Chunk64700.PureComponent {
 let E = Chunk311907.Ay.connectStores([Chunk71393.A, Chunk734057.A, Chunk808728.Ay, Chunk576705.A, Chunk309010.A], e => {
   let {
     channel: t
-  } = e, n = x.A.getGuild(t.guild_id), l = x.A.getGuildsArray().reduce((e, t) => {
-    let n = f.Ay.getChannels(t.id).SELECTABLE.map(e => e.channel).filter(e => e.type === v.rbe.GUILD_TEXT && b.A.can(v.xBc.MANAGE_WEBHOOKS, e)).map(e => {
+  } = e, n = _.A.getGuild(t.guild_id), l = _.A.getGuildsArray().reduce((e, t) => {
+    let n = x.Ay.getChannels(t.id).SELECTABLE.map(e => e.channel).filter(e => e.type === O.rbe.GUILD_TEXT && b.A.can(O.xBc.MANAGE_WEBHOOKS, e)).map(e => {
       let t = p.A.getChannel(e.parent_id);
       return {
         channel: e,
@@ -305,13 +305,13 @@ let E = Chunk311907.Ay.connectStores([Chunk71393.A, Chunk734057.A, Chunk808728.A
       guild: t,
       channels: n
     }), e
-  }, {}), s = j.A.getLastChannelFollowingDestination();
+  }, {}), a = f.A.getLastChannelFollowingDestination();
   return {
     guildToFollow: n,
     channelNameToFollow: t.name,
     guilds: l,
-    lastChannelFollowingDestination: null != s ? s : {}
+    lastChannelFollowingDestination: null != a ? a : {}
   }
 }, {
   forwardRef: true
-})(_)
+})(S)

@@ -1,13 +1,13 @@
-/** Chunk was on 42944 **/
-/** chunk id: 939899, original params: e,a,n (module,exports,require) **/
+/** Chunk was on 20088 **/
+/** chunk id: 939899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g,
-  R: () => A
+  A: () => m,
+  R: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
   Chunk793574 = require("./793574.js"),
@@ -19,84 +19,84 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk413611 = require("./413611.js");
 
-function g(e) {
+function m(e) {
   let {
-    applicationId: a,
+    applicationId: t,
     size: n = "default"
-  } = e, l = (0, o.bG)([f.A], () => f.A.getApplicationWidgetConfig(a));
-  return (0, t.jsxs)("div", {
-    className: r()(x.kL, {
-      [x.PG]: "small" === n
+  } = e, l = (0, o.bG)([A.A], () => A.A.getApplicationWidgetConfig(t));
+  return (0, r.jsxs)("div", {
+    className: a()(b.kL, {
+      [b.PG]: "small" === n
     }),
-    children: [(0, t.jsxs)("div", {
-      className: x.Qs,
-      children: [(0, t.jsx)("div", {
-        className: x.wx
-      }), (0, t.jsx)("div", {
-        className: x.yF
-      }), (0, t.jsxs)("div", {
-        className: x.M1,
-        children: [(0, t.jsx)("div", {
-          className: x.dJ
-        }), (0, t.jsx)("div", {
-          className: x.dJ
-        }), (0, t.jsx)("div", {
-          className: x.dJ
-        }), (0, t.jsx)("div", {
-          className: x.dJ
-        }), (0, t.jsx)("div", {
-          className: x.dJ
-        }), (0, t.jsx)("div", {
-          className: x.dJ
+    children: [(0, r.jsxs)("div", {
+      className: b.Qs,
+      children: [(0, r.jsx)("div", {
+        className: b.wx
+      }), (0, r.jsx)("div", {
+        className: b.yF
+      }), (0, r.jsxs)("div", {
+        className: b.M1,
+        children: [(0, r.jsx)("div", {
+          className: b.dJ
+        }), (0, r.jsx)("div", {
+          className: b.dJ
+        }), (0, r.jsx)("div", {
+          className: b.dJ
+        }), (0, r.jsx)("div", {
+          className: b.dJ
+        }), (0, r.jsx)("div", {
+          className: b.dJ
+        }), (0, r.jsx)("div", {
+          className: b.dJ
         })]
       })]
-    }), (0, t.jsx)("div", {
-      className: x.ZS,
-      children: (null == l ? true : l.miniPreviewImage) != null ? (0, t.jsx)("img", {
+    }), (0, r.jsx)("div", {
+      className: b.ZS,
+      children: (null == l ? true : l.miniPreviewImage) != null ? (0, r.jsx)("img", {
         src: l.miniPreviewImage,
         alt: "",
-        className: x.oz
-      }) : (0, t.jsx)("div", {
-        className: x.FQ
+        className: b.oz
+      }) : (0, r.jsx)("div", {
+        className: b.FQ
       })
     })]
   })
 }
 
-function A(e) {
+function _(e) {
   let {
-    applicationId: a,
+    applicationId: t,
     size: n = "default"
   } = e, {
     trackUserProfileAction: i
-  } = (0, p.NJ)(), r = (0, m.h)(a), {
+  } = (0, f.NJ)(), a = (0, v.h)(t), {
     hasAlreadyLinked: o,
-    canStartAuthorization: f,
-    startAuthorization: g,
-    fetched: A
-  } = (0, u.RD)(r), {
-    analyticsLocations: j
-  } = (0, d.Ay)(c.A.USER_PROFILE_APPLICATION_WIDGET), h = l.useCallback(() => {
-    f && (i({
+    canStartAuthorization: A,
+    startAuthorization: m,
+    fetched: _
+  } = (0, c.RD)(a), {
+    analyticsLocations: O
+  } = (0, d.Ay)(u.A.USER_PROFILE_APPLICATION_WIDGET), E = l.useCallback(() => {
+    A && (i({
       action: "PRESS_APPLICATION_WIDGET_PLACEHOLDER_CONNECT",
-      applicationId: a
-    }), g({
-      analyticsLocations: j
+      applicationId: t
+    }), m({
+      analyticsLocations: O
     }))
-  }, [f, i, a, g, j]);
-  return "default" !== n || null == r ? null : (0, t.jsxs)("div", {
-    className: x.qr,
-    children: [(0, t.jsx)(s.A5T, {
+  }, [A, i, t, m, O]);
+  return "default" !== n || null == a ? null : (0, r.jsxs)("div", {
+    className: b.qr,
+    children: [(0, r.jsx)(s.A5T, {
       size: "xs"
-    }), (0, t.jsx)(s.EYj, {
+    }), (0, r.jsx)(s.EYj, {
       variant: "text-sm/medium",
       color: "text-subtle",
-      children: A ? o ? v.intl.format(v.t.wiyuG9, {
-        applicationName: r.name
-      }) : f ? v.intl.format(v.t.RNWFOQ, {
-        onConnect: h
-      }) : v.intl.string(v.t["9TX4UT"]) : (0, t.jsx)("div", {
-        className: x.bg
+      children: _ ? o ? p.intl.format(p.t.wiyuG9, {
+        applicationName: a.name
+      }) : A ? p.intl.format(p.t.RNWFOQ, {
+        onConnect: E
+      }) : p.intl.string(p.t["9TX4UT"]) : (0, r.jsx)("div", {
+        className: b.bg
       })
     })]
   })

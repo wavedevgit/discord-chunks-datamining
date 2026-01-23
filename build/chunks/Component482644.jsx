@@ -30,7 +30,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,22 +55,22 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = l().defaultRules.link,
-  v = {
+let v = l().defaultRules.link,
+  A = {
     section: Chunk652215.JJy.SETTINGS_CHANGELOG
   };
 
-function S() {
+function I() {
   h.default.track(m.HAw.PREMIUM_PROMOTION_OPENED, {
-    location: v
+    location: A
   })
 }
 
-function I(e, t) {
+function S(e, t) {
   return null == t ? [] : t.split(" ").map(t => e[t])
 }
 let T = e => {
@@ -81,7 +81,7 @@ let T = e => {
       styleSheet: a = {}
     } = e, o = (0, c.$Il)(), l = parseInt(t, 10), u = o + (isNaN(l) ? 1 : l) - 1;
     return i.createElement("h".concat(u), {
-      className: s()(...I(a, r))
+      className: s()(...S(a, r))
     }, n)
   },
   C = null != Chunk46054.A ? Chunk46054.A.defaultRules : null,
@@ -92,19 +92,19 @@ let T = e => {
           a = i.startsWith("https://discordapp.com/nitro") || i.startsWith("https://discord.com/nitro"),
           s = i.startsWith("/activities");
         return r = a ? e => {
-          S(), (0, _.openUserSettings)(p.X.NITRO_PANEL, {
+          I(), (0, _.openUserSettings)(p.X.NITRO_PANEL, {
             section: m.nc_.PREMIUM
           }), n.changeLog.track(m.HAw.CHANGE_LOG_CTA_CLICKED, {
             cta_type: "nitro"
           }), (0, c.OoC)(g.lb), e.preventDefault()
         } : s ? e => {
-          (0, f.pX)(i), n.changeLog.track(m.HAw.CHANGE_LOG_CTA_CLICKED, b({}, h.default.getCampaignParams(i))), (0, u.bz)(), (0, c.OoC)(g.lb), e.preventDefault()
+          (0, f.pX)(i), n.changeLog.track(m.HAw.CHANGE_LOG_CTA_CLICKED, y({}, h.default.getCampaignParams(i))), (0, u.bz)(), (0, c.OoC)(g.lb), e.preventDefault()
         } : () => {
-          n && "function" == typeof n.onLinkClick && n.onLinkClick(i), n.changeLog.track(m.HAw.CHANGE_LOG_CTA_CLICKED, b({
+          n && "function" == typeof n.onLinkClick && n.onLinkClick(i), n.changeLog.track(m.HAw.CHANGE_LOG_CTA_CLICKED, y({
             target: i,
             cta_type: "inline_link"
           }, h.default.getCampaignParams(i)))
-        }, O(b({}, A.parse(e, t, n)), {
+        }, O(y({}, v.parse(e, t, n)), {
           callToAction: r
         })
       },

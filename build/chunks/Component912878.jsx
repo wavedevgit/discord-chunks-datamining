@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk253506 = require("./253506.js"),
   Chunk665260 = require("./665260.js"),
   Chunk311907 = require("./311907.js"),
@@ -27,19 +27,19 @@ var Chunk627968 = require("./627968.js"),
 
 function C() {
   var e;
-  let t = (0, c.yK)([g.A], () => g.A.getSortedChannels()[1]),
-    [n, i] = l.useState(t.length > 0 ? t[0].channelId : true),
+  let t = (0, c.yK)([b.A], () => b.A.getSortedChannels()[1]),
+    [n, r] = l.useState(t.length > 0 ? t[0].channelId : true),
     {
-      selectedChannel: r,
+      selectedChannel: i,
       options: u
-    } = (0, c.cf)([f.A, b.default, x.A], () => ({
-      selectedChannel: f.A.getChannel(n),
+    } = (0, c.cf)([x.A, f.default, g.A], () => ({
+      selectedChannel: x.A.getChannel(n),
       options: t.map(e => {
-        let t = f.A.getChannel(e.channelId);
+        let t = x.A.getChannel(e.channelId);
         return {
           id: e.channelId,
           value: e.channelId,
-          label: null != t ? (0, p.m1)(t, b.default, x.A) : e.channelId,
+          label: null != t ? (0, p.m1)(t, f.default, g.A) : e.channelId,
           leading: null != t ? (0, a.jsx)(d.euF, {
             src: (0, m.Y)(t),
             "aria-hidden": true,
@@ -50,20 +50,20 @@ function C() {
     })),
     v = l.useCallback(() => {
       var e;
-      if (null == r || !r.isPrivate()) return;
-      let t = (0, o.PQ)(null != (e = r.recipientFlags) ? e : 0, s.o.DISMISSED_IN_GAME_MESSAGE_NUX);
-      h.A.updatePrivateChannelRecipientFlags(r.id, t)
-    }, [r]),
-    j = null != r && !!r.isPrivate() && (0, o.Lt)(null != (e = r.recipientFlags) ? e : 0, s.o.DISMISSED_IN_GAME_MESSAGE_NUX);
+      if (null == i || !i.isPrivate()) return;
+      let t = (0, o.PQ)(null != (e = i.recipientFlags) ? e : 0, s.o.DISMISSED_IN_GAME_MESSAGE_NUX);
+      h.A.updatePrivateChannelRecipientFlags(i.id, t)
+    }, [i]),
+    j = null != i && !!i.isPrivate() && (0, o.Lt)(null != (e = i.recipientFlags) ? e : 0, s.o.DISMISSED_IN_GAME_MESSAGE_NUX);
   return (0, a.jsxs)("div", {
-    className: _.gs,
+    className: y.gs,
     children: [(0, a.jsx)(d.ZiE, {
       label: "In-Game NUX Message for DMs",
       selectionMode: "single",
       options: u,
       placeholder: "Select DM",
       value: n,
-      onSelectionChange: i
+      onSelectionChange: r
     }), (0, a.jsx)(d.Button, {
       variant: "primary",
       size: "sm",
@@ -77,7 +77,7 @@ function C() {
 function S() {
   let e = l.useCallback(() => {
     u.A.openPrivateChannel({
-      recipientIds: [y.K]
+      recipientIds: [_.K]
     })
   }, []);
   return (0, a.jsx)(d.Button, {
@@ -101,11 +101,11 @@ function O() {
     }, t)
   });
   return (0, a.jsxs)("div", {
-    className: r()(A.nd, _.nd),
+    className: i()(A.nd, y.nd),
     children: [e, (0, a.jsx)("div", {
-      className: _.yF
+      className: y.yF
     }), (0, a.jsx)(C, {}), (0, a.jsx)("div", {
-      className: _.yF
+      className: y.yF
     }), (0, a.jsx)(S, {})]
   })
 }

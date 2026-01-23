@@ -21,7 +21,7 @@ var r, i, a, s, Chunk284009 = require("./284009.js"),
   Chunk652215 = require("./652215.js"),
   E = require("./264572.js").Buffer;
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,14 +30,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -54,21 +54,21 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = window.DiscordNative,
-  S = new Set(["jpg", "jpeg", "jfif", "png"]),
-  I = new Set(["jpg", "jpeg", "jfif", "png", "webp", "gif", "tiff", "bmp", "avif"]),
+let A = window.DiscordNative,
+  I = new Set(["jpg", "jpeg", "jfif", "png"]),
+  S = new Set(["jpg", "jpeg", "jfif", "png", "webp", "gif", "tiff", "bmp", "avif"]),
   T = e => e.startsWith("image/"),
   C = 5,
   N = null,
   R = null,
   w = null,
   P = {};
-null != v && (N = v.remoteApp.getVersion().split(".").map(e => parseInt(e)), w = null == (r = (i = v.remoteApp).getModuleVersions) ? true : r.call(i), R = null == (a = (s = v.remoteApp).getBuildNumber) ? true : a.call(s));
+null != A && (N = A.remoteApp.getVersion().split(".").map(e => parseInt(e)), w = null == (r = (i = A.remoteApp).getModuleVersions) ? true : r.call(i), R = null == (a = (s = A.remoteApp).getBuildNumber) ? true : a.call(s));
 let D = new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discord_spellcheck", "discord_utils", "discord_voice"]),
   x = false,
   L = "lastImageSaveDirectory",
@@ -155,19 +155,19 @@ function q(e) {
   } catch (e) {}
 }
 let X = {
-    requireModule: e => v.nativeModules.requireModule(e),
-    ensureModule: e => h.isPlatformEmbedded ? __OVERLAY__ && D.has(e) ? Promise.resolve() : v.nativeModules.ensureModule(e) : Promise.reject(Error("not embedded")),
+    requireModule: e => A.nativeModules.requireModule(e),
+    ensureModule: e => h.isPlatformEmbedded ? __OVERLAY__ && D.has(e) ? Promise.resolve() : A.nativeModules.ensureModule(e) : Promise.reject(Error("not embedded")),
     get canBootstrapNewUpdater() {
-      return v.nativeModules.canBootstrapNewUpdater || false
+      return A.nativeModules.canBootstrapNewUpdater || false
     },
-    getCrashReporterMetadata: () => v.crashReporter.getMetadata(),
-    getSetting: async (e, t) => await v.settings.get(e, t),
+    getCrashReporterMetadata: () => A.crashReporter.getMetadata(),
+    getSetting: async (e, t) => await A.settings.get(e, t),
     beforeUnload() {
       let e;
       try {
         e = this.requireModule("discord_overlay2")
       } catch (e) {}
-      e && e.reset && e.reset(), e && e.disconnectAllProcesses && e.destroyHostProcess && (e.disconnectAllProcesses(), e.destroyHostProcess()), v.remotePowerMonitor.removeAllListeners(), window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN && true !== f.w.get(c.qx) && this.supportsFeature(g.BYE.USER_DATA_CACHE) && v.userDataCache.cacheUserData(f.w.stringify())
+      e && e.reset && e.reset(), e && e.disconnectAllProcesses && e.destroyHostProcess && (e.disconnectAllProcesses(), e.destroyHostProcess()), A.remotePowerMonitor.removeAllListeners(), window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN && true !== f.w.get(c.qx) && this.supportsFeature(g.BYE.USER_DATA_CACHE) && A.userDataCache.cacheUserData(f.w.stringify())
     },
     inputEventRegister(e, t, n, r) {
       this.getDiscordUtils().inputEventRegister(parseInt("".concat(e)), t.map(e => {
@@ -191,7 +191,7 @@ let X = {
           i = this.getDiscordUtils();
         (t && null != i.setObservedGamesCallback2 ? i.setObservedGamesCallback2 : i.setObservedGamesCallback)(e.map(e => {
           let t = ++r;
-          return null != e.id && (P[t] = e.id), A(y({}, e), {
+          return null != e.id && (P[t] = e.id), v(b({}, e), {
             cmdline: e.cmdLine,
             id: t
           })
@@ -223,7 +223,7 @@ let X = {
       this.getDiscordUtils().clearCandidateGamesCallback()
     },
     setGameCandidateOverrides(e) {
-      this.getDiscordUtils().setGameCandidateOverrides(e.map(e => A(y({}, e), {
+      this.getDiscordUtils().setGameCandidateOverrides(e.map(e => v(b({}, e), {
         gameId: e.id,
         gameName: e.name
       })))
@@ -269,19 +269,19 @@ let X = {
     setBadge(e) {
       if ("darwin" === (0, h.getPlatformName)()) {
         let t = "";
-        false === e ? t = "•" : e > 0 && (t = "".concat(e)), v.remoteApp.dock.setBadge(t)
-      } else "win32" === (0, h.getPlatformName)() ? this.send("APP_BADGE_SET", e) : "linux" === (0, h.getPlatformName)() && v.remoteApp.setBadgeCount(e >= 0 ? e : 0)
+        false === e ? t = "•" : e > 0 && (t = "".concat(e)), A.remoteApp.dock.setBadge(t)
+      } else "win32" === (0, h.getPlatformName)() ? this.send("APP_BADGE_SET", e) : "linux" === (0, h.getPlatformName)() && A.remoteApp.setBadgeCount(e >= 0 ? e : 0)
     },
     setSystemTrayIcon(e) {
       h.isPlatformEmbedded && this.send("SYSTEM_TRAY_SET_ICON", e)
     },
     setThumbarButtons(e) {
       var t, n;
-      h.isPlatformEmbedded && (null == (n = v.thumbar) || null == (t = n.setThumbarButtons) || t.call(n, e, this.isSystemDarkMode()))
+      h.isPlatformEmbedded && (null == (n = A.thumbar) || null == (t = n.setThumbarButtons) || t.call(n, e, this.isSystemDarkMode()))
     },
     bounceDock(e) {
       if (h.isPlatformEmbedded) {
-        let t = v.remoteApp;
+        let t = A.remoteApp;
         if (null != t.dock) {
           let n = t.dock.bounce(e);
           return async () => {
@@ -295,11 +295,11 @@ let X = {
       h.isPlatformEmbedded && this.send("SYSTEM_TRAY_SET_APPLICATIONS", e)
     },
     get architecture() {
-      return h.isPlatformEmbedded ? v.process.arch : ""
+      return h.isPlatformEmbedded ? A.process.arch : ""
     },
     get releaseChannel() {
       if (!h.isPlatformEmbedded) return "";
-      let e = v.remoteApp.getReleaseChannel();
+      let e = A.remoteApp.getReleaseChannel();
       if (null != e) return e;
       return ""
     },
@@ -314,26 +314,26 @@ let X = {
     },
     get parsedOSRelease() {
       if (!h.isPlatformEmbedded) return [];
-      return v.os.release.split(".").map(e => parseInt(e, 10))
+      return A.os.release.split(".").map(e => parseInt(e, 10))
     },
     copy(e) {
-      h.isPlatformEmbedded && v.clipboard.copy(e)
+      h.isPlatformEmbedded && A.clipboard.copy(e)
     },
     async copyImage(e, t) {
-      l()(h.isPlatformEmbedded, "Copy image method called outside native app"), l()("function" == typeof v.clipboard.copyImage, "Copy image not supported");
+      l()(h.isPlatformEmbedded, "Copy image method called outside native app"), l()("function" == typeof A.clipboard.copyImage, "Copy image not supported");
       let n = await H(e),
         r = z(e, t),
-        i = null != r && S.has(r) ? "image.".concat(r) : e;
-      v.clipboard.copyImage(E.from(n), i)
+        i = null != r && I.has(r) ? "image.".concat(r) : e;
+      A.clipboard.copyImage(E.from(n), i)
     },
     async copyImageBlob(e, t) {
       let n = await e.arrayBuffer();
-      v.clipboard.copyImage(E.from(n), t)
+      A.clipboard.copyImage(E.from(n), t)
     },
     canSaveImage(e, t) {
       if (null == e || !h.isPlatformEmbedded) returnfalse;
       let n = z(e, t);
-      return null == n || I.has(n)
+      return null == n || S.has(n)
     },
     async saveImage(e, t, n) {
       var r, i, a;
@@ -357,12 +357,12 @@ let X = {
       let p = await H(e),
         _ = E.from(p),
         g = f.w.get(L);
-      if ("string" != typeof g && (g = true), "function" == typeof v.fileManager.saveWithDialog2) {
-        if (null == (s = await v.fileManager.saveWithDialog2(_, u, null != g ? g : true))) return "errored";
+      if ("string" != typeof g && (g = true), "function" == typeof A.fileManager.saveWithDialog2) {
+        if (null == (s = await A.fileManager.saveWithDialog2(_, u, null != g ? g : true))) return "errored";
         if (s.canceledByUser) return "canceled";
         o = s.directory
       } else try {
-        o = await v.fileManager.saveWithDialog(_, u, null != g ? g : true)
+        o = await A.fileManager.saveWithDialog(_, u, null != g ? g : true)
       } catch (e) {
         return "errored"
       }
@@ -377,66 +377,66 @@ let X = {
       null == t && (i = F(i));
       let a = await B(e),
         s = E.from(a),
-        o = await v.fileManager.saveWithDialog(s, i, true);
+        o = await A.fileManager.saveWithDialog(s, i, true);
       return null == o ? null : o
     },
     async downloadVoiceFilterFile(e, t, n) {
       l()(h.isPlatformEmbedded, "Download voice filter file method called outside native app");
       let r = m.A.toURLSafe(e);
-      return l()(r, "Could not download voice filter, fileSrc was not a valid path"), await v.fileManager.maybeDownloadVoiceFilterFile(e, t, n)
+      return l()(r, "Could not download voice filter, fileSrc was not a valid path"), await A.fileManager.maybeDownloadVoiceFilterFile(e, t, n)
     },
     stopVoiceFilterDownloads() {
-      v.fileManager.stopVoiceFilterDownloads()
+      A.fileManager.stopVoiceFilterDownloads()
     },
-    canCheckVoiceFilterFilesExist: () => "function" == typeof v.fileManager.checkVoiceFilterFilesExist,
-    checkVoiceFilterFilesExist: async e => await v.fileManager.checkVoiceFilterFilesExist(e),
-    cleanupUnusedVoiceFilterFiles: async e => await v.fileManager.cleanupUnusedVoiceFilterFiles(e),
+    canCheckVoiceFilterFilesExist: () => "function" == typeof A.fileManager.checkVoiceFilterFilesExist,
+    checkVoiceFilterFilesExist: async e => await A.fileManager.checkVoiceFilterFilesExist(e),
+    cleanupUnusedVoiceFilterFiles: async e => await A.fileManager.cleanupUnusedVoiceFilterFiles(e),
     async downloadMLModelFile(e, t, n) {
       l()(h.isPlatformEmbedded, "Download ML model file method called outside native app");
       let r = m.A.toURLSafe(e);
-      return l()(r, "Could not download ML model, fileSrc was not a valid path"), await v.fileManager.maybeDownloadMLModelFile(e, t, n)
+      return l()(r, "Could not download ML model, fileSrc was not a valid path"), await A.fileManager.maybeDownloadMLModelFile(e, t, n)
     },
     stopMLModelDownloads() {
-      v.fileManager.stopMLModelDownloads()
+      A.fileManager.stopMLModelDownloads()
     },
-    canCheckMLModelFilesExist: () => "function" == typeof v.fileManager.checkMLModelFilesExist,
-    checkMLModelFilesExist: async e => await v.fileManager.checkMLModelFilesExist(e),
-    cleanupUnusedMLModelFiles: async e => await v.fileManager.cleanupUnusedMLModelFiles(e),
+    canCheckMLModelFilesExist: () => "function" == typeof A.fileManager.checkMLModelFilesExist,
+    checkMLModelFilesExist: async e => await A.fileManager.checkMLModelFilesExist(e),
+    cleanupUnusedMLModelFiles: async e => await A.fileManager.cleanupUnusedMLModelFiles(e),
     canCopyImage() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : true;
-      if (!h.isPlatformEmbedded || "function" != typeof v.clipboard.copyImage) returnfalse;
+      if (!h.isPlatformEmbedded || "function" != typeof A.clipboard.copyImage) returnfalse;
       if (null != e) {
         let t = z(e, true);
-        if (null != t && !S.has(t)) returnfalse
+        if (null != t && !I.has(t)) returnfalse
       }
       returntrue
     },
     cut() {
-      h.isPlatformEmbedded && v.clipboard.cut()
+      h.isPlatformEmbedded && A.clipboard.cut()
     },
     paste() {
-      h.isPlatformEmbedded && v.clipboard.paste()
+      h.isPlatformEmbedded && A.clipboard.paste()
     },
-    readClipboard: () => h.isPlatformEmbedded ? v.clipboard.read() : "",
+    readClipboard: () => h.isPlatformEmbedded ? A.clipboard.read() : "",
     clipboardHasMixedContent() {
       var e, t, n;
-      return !!h.isPlatformEmbedded && null != (e = null == (t = (n = v.clipboard).hasMixedContent) ? true : t.call(n)) && e
+      return !!h.isPlatformEmbedded && null != (e = null == (t = (n = A.clipboard).hasMixedContent) ? true : t.call(n)) && e
     },
     on(e, t) {
-      v.ipc.on(e, t)
+      A.ipc.on(e, t)
     },
     invoke(e) {
       for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
-      return v.ipc.invoke(e, ...n)
+      return A.ipc.invoke(e, ...n)
     },
     send(e) {
       for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
-      v.ipc.send(e, ...n)
+      A.ipc.send(e, ...n)
     },
     isIPCReady() {
       if (!h.isPlatformEmbedded) returntrue;
       try {
-        return (null == v ? true : v.ipc) != null && "function" == typeof v.ipc.send
+        return (null == A ? true : A.ipc) != null && "function" == typeof A.ipc.send
       } catch (e) {
         returnfalse
       }
@@ -452,46 +452,46 @@ let X = {
       returnfalse
     },
     flashFrame(e) {
-      v.window.flashFrame(e)
+      A.window.flashFrame(e)
     },
-    webAuthnRegister: e => v.nativeModules.ensureModule("discord_webauthn").then(() => v.webAuthn.webAuthnRegister(e)),
-    webAuthnAuthenticate: e => v.nativeModules.ensureModule("discord_webauthn").then(() => v.webAuthn.webAuthnAuthenticate(e)),
+    webAuthnRegister: e => A.nativeModules.ensureModule("discord_webauthn").then(() => A.webAuthn.webAuthnRegister(e)),
+    webAuthnAuthenticate: e => A.nativeModules.ensureModule("discord_webauthn").then(() => A.webAuthn.webAuthnAuthenticate(e)),
     minimize(e) {
-      v.window.minimize(e)
+      A.window.minimize(e)
     },
     restore(e) {
-      v.window.restore(e)
+      A.window.restore(e)
     },
     maximize(e) {
-      v.window.maximize(e)
+      A.window.maximize(e)
     },
     focus(e) {
       let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-      t && (0, h.isWindows)() && this.minimize(null), v.window.focus(t, e)
+      t && (0, h.isWindows)() && this.minimize(null), A.window.focus(t, e)
     },
     blur() {
-      h.isPlatformEmbedded && null != v.window.blur ? v.window.blur() : window.blur()
+      h.isPlatformEmbedded && null != A.window.blur ? A.window.blur() : window.blur()
     },
     fullscreen(e) {
-      v.window.fullscreen(e)
+      A.window.fullscreen(e)
     },
     close(e) {
-      v.window.close(e)
+      A.window.close(e)
     },
     setAlwaysOnTop(e, t) {
-      "function" == typeof v.window.setAlwaysOnTop && v.window.setAlwaysOnTop(e, t)
+      "function" == typeof A.window.setAlwaysOnTop && A.window.setAlwaysOnTop(e, t)
     },
     async isAlwaysOnTop(e) {
       let t = false;
-      return "function" == typeof v.window.isAlwaysOnTop && (t = await v.window.isAlwaysOnTop(e)), t
+      return "function" == typeof A.window.isAlwaysOnTop && (t = await A.window.isAlwaysOnTop(e)), t
     },
     showInactive(e) {
       var t;
-      "function" == typeof(null == v || null == (t = v.window) ? true : t.showInactive) && v.window.showInactive(e)
+      "function" == typeof(null == A || null == (t = A.window) ? true : t.showInactive) && A.window.showInactive(e)
     },
     setMinimumSize(e, t) {
       var n, r;
-      null == v || null == (r = v.window) || null == (n = r.setMinimumSize) || n.call(r, e, t)
+      null == A || null == (r = A.window) || null == (n = r.setMinimumSize) || n.call(r, e, t)
     },
     setTrafficLightPosition(e) {
       if (h.isPlatformEmbedded && "darwin" === (0, h.getPlatformName)()) try {
@@ -499,58 +499,58 @@ let X = {
       } catch (e) {}
     },
     purgeMemory() {
-      h.isPlatformEmbedded && v.processUtils.purgeMemory()
+      h.isPlatformEmbedded && A.processUtils.purgeMemory()
     },
     updateCrashReporter(e) {
-      v.crashReporter.updateCrashReporter(e)
+      A.crashReporter.updateCrashReporter(e)
     },
     triggerJSException(e) {
-      v.crashReporter.triggerJSException(e)
+      A.crashReporter.triggerJSException(e)
     },
     flushDNSCache() {
-      h.isPlatformEmbedded && v.processUtils.flushDNSCache()
+      h.isPlatformEmbedded && A.processUtils.flushDNSCache()
     },
-    supportsFeature: e => v.features.supports(e),
-    getEnableHardwareAcceleration: () => !h.isPlatformEmbedded || !__OVERLAY__ && v.gpuSettings.getEnableHardwareAcceleration(),
+    supportsFeature: e => A.features.supports(e),
+    getEnableHardwareAcceleration: () => !h.isPlatformEmbedded || !__OVERLAY__ && A.gpuSettings.getEnableHardwareAcceleration(),
     setEnableHardwareAcceleration(e) {
-      v.gpuSettings.setEnableHardwareAcceleration(e)
+      A.gpuSettings.setEnableHardwareAcceleration(e)
     },
     setChromiumSwitches(e) {
-      v.gpuSettings.setChromiumSwitches(e)
+      A.gpuSettings.setChromiumSwitches(e)
     },
     setSetting(e, t) {
       var n, r;
-      null == (n = (r = v.gpuSettings).setSetting) || n.call(r, e, t)
+      null == (n = (r = A.gpuSettings).setSetting) || n.call(r, e, t)
     },
-    getOptionalUpdates: async () => await v.settings.get("OPTIN_OPTIONAL_UPDATES", false),
+    getOptionalUpdates: async () => await A.settings.get("OPTIN_OPTIONAL_UPDATES", false),
     async setOptionalUpdates(e) {
-      await v.settings.set("OPTIN_OPTIONAL_UPDATES", e)
+      await A.settings.set("OPTIN_OPTIONAL_UPDATES", e)
     },
     async getOpenOnStart() {
       var e, t, n;
-      return null != (e = await (null == (t = (n = v.app).getOpenOnStart) ? true : t.call(n))) ? e : await v.settings.get("OPEN_ON_STARTUP", true)
+      return null != (e = await (null == (t = (n = A.app).getOpenOnStart) ? true : t.call(n))) ? e : await A.settings.get("OPEN_ON_STARTUP", true)
     },
     getGPUDriverVersions() {
       return (0, h.isWindows)() && null != this.getDiscordUtils().getGPUDriverVersions ? this.getDiscordUtils().getGPUDriverVersions() : Promise.resolve(Object.freeze({}))
     },
-    setZoomFactor: e => !!h.isPlatformEmbedded && (v.window.setZoomFactor(e), true),
+    setZoomFactor: e => !!h.isPlatformEmbedded && (A.window.setZoomFactor(e), true),
     setBackgroundThrottling(e) {
-      null != v.window.setBackgroundThrottling ? v.window.setBackgroundThrottling(e) : v.window.webContents.setBackgroundThrottling(e)
+      null != A.window.setBackgroundThrottling ? A.window.setBackgroundThrottling(e) : A.window.webContents.setBackgroundThrottling(e)
     },
     setFocusable(e, t) {
-      "function" == typeof v.window.setFocusable && v.window.setFocusable(e, t)
+      "function" == typeof A.window.setFocusable && A.window.setFocusable(e, t)
     },
     pauseFrameEvictor() {
       var e, t;
-      null == (e = (t = v.app).pauseFrameEvictor) || e.call(t)
+      null == (e = (t = A.app).pauseFrameEvictor) || e.call(t)
     },
     unpauseFrameEvictor() {
       var e, t;
-      null == (e = (t = v.app).unpauseFrameEvictor) || e.call(t)
+      null == (e = (t = A.app).unpauseFrameEvictor) || e.call(t)
     },
     getPreferredSystemLanguages() {
       var e, t;
-      return null == (e = (t = v.app).getPreferredSystemLanguages) ? true : e.call(t)
+      return null == (e = (t = A.app).getPreferredSystemLanguages) ? true : e.call(t)
     },
     getPidFromDesktopSource(e) {
       if (!(0, h.isDesktop)() || null == this.getDiscordUtils().getPidFromWindowHandle) return null;
@@ -639,40 +639,40 @@ let X = {
       } = this.getDiscordUtils();
       return null == e ? true : e()
     },
-    showOpenDialog: e => v.fileManager.showOpenDialog({
+    showOpenDialog: e => A.fileManager.showOpenDialog({
       properties: e
     }),
     flushStorageData: () => h.isPlatformEmbedded ? new Promise((e, t) => {
-      null != v.processUtils.flushStorageData ? v.processUtils.flushStorageData(n => null != n ? t(Error(n)) : e()) : e()
+      null != A.processUtils.flushStorageData ? A.processUtils.flushStorageData(n => null != n ? t(Error(n)) : e()) : e()
     }) : Promise.resolve(),
     flushCookies: () => h.isPlatformEmbedded ? new Promise((e, t) => {
-      null != v.processUtils.flushCookies ? v.processUtils.flushCookies(n => null != n ? t(Error(n)) : e()) : e()
+      null != A.processUtils.flushCookies ? A.processUtils.flushCookies(n => null != n ? t(Error(n)) : e()) : e()
     }) : Promise.resolve(),
     setCrashInformation(e, t) {
       var n;
-      h.isPlatformEmbedded && (null == v || null == (n = v.processUtils) ? true : n.setCrashInformation) != null && v.processUtils.setCrashInformation(e, t)
+      h.isPlatformEmbedded && (null == A || null == (n = A.processUtils) ? true : n.setCrashInformation) != null && A.processUtils.setCrashInformation(e, t)
     },
-    blockDisplaySleep: () => h.isPlatformEmbedded && null != v.powerSaveBlocker ? v.powerSaveBlocker.blockDisplaySleep() : null,
+    blockDisplaySleep: () => h.isPlatformEmbedded && null != A.powerSaveBlocker ? A.powerSaveBlocker.blockDisplaySleep() : null,
     unblockDisplaySleep(e) {
-      h.isPlatformEmbedded && null != v.powerSaveBlocker && v.powerSaveBlocker.unblockDisplaySleep(e)
+      h.isPlatformEmbedded && null != A.powerSaveBlocker && A.powerSaveBlocker.unblockDisplaySleep(e)
     },
     cleanupDisplaySleep() {
-      h.isPlatformEmbedded && null != v.powerSaveBlocker && v.powerSaveBlocker.cleanupDisplaySleep()
+      h.isPlatformEmbedded && null != A.powerSaveBlocker && A.powerSaveBlocker.cleanupDisplaySleep()
     },
     relaunch() {
-      h.isPlatformEmbedded && null != v.remoteApp.relaunch && v.remoteApp.relaunch()
+      h.isPlatformEmbedded && null != A.remoteApp.relaunch && A.remoteApp.relaunch()
     },
     makeChunkedRequest(e, t, n) {
       let r = "".concat((0, u.TP)()).concat(e);
       if (!h.isPlatformEmbedded) return Promise.reject(Error("Not embedded!"));
-      if (null == v.http) return Promise.reject(Error("HTTP module not available"));
+      if (null == A.http) return Promise.reject(Error("HTTP module not available"));
       let {
         method: i,
         maxBps: a,
         token: s,
         chunkInterval: o,
         contentType: l
-      } = y({
+      } = b({
         maxBps: 8e3,
         chunkInterval: 50,
         contentType: "application/json"
@@ -686,7 +686,7 @@ let X = {
         p[e] = c.substring(t, t + d)
       }
       return new Promise((e, t) => {
-        null != v.http && v.http.makeChunkedRequest(r, p, {
+        null != A.http && A.http.makeChunkedRequest(r, p, {
           method: i,
           chunkInterval: o,
           contentType: l,
@@ -697,16 +697,16 @@ let X = {
     submitLiveCrashReport(e) {
       if (!(0, h.isWindows)() || null == this.getDiscordUtils().submitLiveCrashReport) return Promise.resolve();
       let t = this.getCrashReporterMetadata(),
-        n = v.app.getReleaseChannel(),
+        n = A.app.getReleaseChannel(),
         r = null == t ? true : t.sentry;
-      return this.getDiscordUtils().submitLiveCrashReport(n, y({}, r, e))
+      return this.getDiscordUtils().submitLiveCrashReport(n, b({}, r, e))
     },
     crash(e) {
       let t = this.getDiscordUtils().crash;
       return null != t && (t(e), true)
     },
     setApplicationBackgroundColor(e) {
-      v.ipc.send("SETTINGS_UPDATE_BACKGROUND_COLOR", e)
+      A.ipc.send("SETTINGS_UPDATE_BACKGROUND_COLOR", e)
     },
     initializeExitHook() {
       let {
@@ -858,7 +858,7 @@ let X = {
     },
     fetchRiotGamesLiveClientData(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-      return h.isPlatformEmbedded ? null == v.riotGames ? Promise.reject(Error("Riot Games module not available")) : v.riotGames.fetchLiveClientData(e, t) : Promise.reject(Error("Not embedded!"))
+      return h.isPlatformEmbedded ? null == A.riotGames ? Promise.reject(Error("Riot Games module not available")) : A.riotGames.fetchLiveClientData(e, t) : Promise.reject(Error("Not embedded!"))
     },
     appViewed() {
       (0, h.isDesktop)() && this.send("APP_VIEWED")

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk309326 = require("./309326.js"),
   Chunk337322 = require("./337322.js"),
@@ -15,21 +15,21 @@ var Chunk503698 = require("./503698.js"),
 function d(e) {
   let {
     powerup: t
-  } = e, r = (0, l.A)(t);
-  return (0, a.jsx)("div", {
-    className: i.I1,
+  } = e, r = (0, i.A)(t);
+  return (0, n.jsx)("div", {
+    className: l.I1,
     children: r.map(e => {
       let {
         Icon: t,
         className: r
-      } = (0, o.a)(e.perkIcon, false);
-      return (0, a.jsxs)("div", {
-        className: i.Ab,
-        children: [(0, a.jsx)(t, {
+      } = (0, c.a)(e.perkIcon, false);
+      return (0, n.jsxs)("div", {
+        className: l.Ab,
+        children: [(0, n.jsx)(t, {
           color: "currentColor",
-          className: s()(i.kf, r)
-        }), (0, a.jsx)(c.EYj, {
-          className: i.uL,
+          className: a()(l.kf, r)
+        }), (0, n.jsx)(s.EYj, {
+          className: l.uL,
           color: "text-default",
           variant: "text-sm/medium",
           children: e.description

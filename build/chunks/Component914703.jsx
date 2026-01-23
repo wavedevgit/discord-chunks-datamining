@@ -18,15 +18,15 @@ function u(e) {
     closePopout: n,
     onSelect: u,
     navId: d,
-    label: f
-  } = e, p = (0, i.A)(t, "Notifications Bell"), h = (0, a.A)(t), b = (0, o.X)(t);
+    label: p
+  } = e, h = (0, i.A)(t, "Notifications Bell"), f = (0, s.A)(t), g = (0, o.X)(t);
   return (0, r.jsxs)(l.W1t, {
     navId: d,
     onClose: n,
-    "aria-label": f,
+    "aria-label": p,
     onSelect: u,
     children: [(0, r.jsxs)(l.rXV, {
-      children: [t.isForumPost() ? p : null, h]
+      children: [t.isForumPost() ? h : null, f]
     }), (0, r.jsx)(l.rXV, {
       children: (0, c.EU)().map(e => {
         let {
@@ -37,10 +37,10 @@ function u(e) {
           group: "thread-notifications",
           id: "".concat(n),
           label: i,
-          action: () => s.A.setNotificationSettings(t, {
+          action: () => a.A.setNotificationSettings(t, {
             flags: n
           }),
-          checked: n === b
+          checked: n === g
         }, n)
       })
     })]

@@ -197,7 +197,7 @@ class Z extends(r = Chunk64700.Component) {
       onClick: i,
       tabIndex: s ? false : 0,
       "aria-label": L.intl.string(L.t.hsvh0i),
-      children: (0, a.jsx)(y.A, {
+      children: (0, a.jsx)(b.A, {
         className: j.pd
       }, "replay")
     }) : (0, a.jsx)(_.DUT, {
@@ -406,9 +406,9 @@ class ee {
       mime_type: this.metadata.mimeType,
       file_size: this.metadata.fileSize,
       file_duration_sec: this.metadata.fileDurationSec,
-      connection_type: b.A.getType(),
-      effective_connection_speed: b.A.getEffectiveConnectionSpeed(),
-      service_provider: b.A.getServiceProvider(),
+      connection_type: y.A.getType(),
+      effective_connection_speed: y.A.getEffectiveConnectionSpeed(),
+      service_provider: y.A.getServiceProvider(),
       error_message: this.errorMessage,
       error_code: this.errorCode
     })), this.playTimeSec = 0, this.playWallTimeMs = 0, this.firstPlayWaitingMs = 0, this.stallCount = 0, this.stallMs = 0, this.seekCount = 0, this.seekWaitingMs = 0, this.playbackStartTime = true, this.lastPlayingTime = true, this.moveToState("not_started")
@@ -557,10 +557,10 @@ class et extends(i = Chunk64700.PureComponent) {
       type: r,
       src: i
     } = this.props;
-    if (r === W.VIDEO && (I.Ay.addChangeListener(this.handleStatsStoreChange), this._hasStatsListener = true, I.Ay.isVideoStatsEnabled(i) && !this.state.showStats)) try {
+    if (r === W.VIDEO && (S.Ay.addChangeListener(this.handleStatsStoreChange), this._hasStatsListener = true, S.Ay.isVideoStatsEnabled(i) && !this.state.showStats)) try {
       this.toggleStats()
     } catch (e) {
-      I.Ay.setVideoStats(i, false)
+      S.Ay.setVideoStats(i, false)
     }
     let {
       current: a
@@ -586,8 +586,8 @@ class et extends(i = Chunk64700.PureComponent) {
       }
     } = this;
     if (a !== e.src && s === W.VIDEO) {
-      null != this._statsCollector && this._statsCollector.resetCodecInfo(this.props.fileSizeBytes), I.Ay.clearVideoStats(e.src);
-      let t = I.Ay.isVideoStatsEnabled(a);
+      null != this._statsCollector && this._statsCollector.resetCodecInfo(this.props.fileSizeBytes), S.Ay.clearVideoStats(e.src);
+      let t = S.Ay.isVideoStatsEnabled(a);
       f !== t && (t ? this.toggleStats() : f && this.toggleStats())
     }
     let {
@@ -597,17 +597,17 @@ class et extends(i = Chunk64700.PureComponent) {
     } = this.playPausePopRef;
     if (null == p) return;
     o && !t.playing ? (this.play(), this.handleMouseMove(), this.handleUIUpdate(), t.hasClickedPlay && (null == _ || _.pop(o))) : !o && t.playing && (p.pause(), null == _ || _.pop(o), null == n || n()), o && null == this._analytics.metadata.hasValidFrame && this.checkVideoDecodability();
-    let h = (0, S.qf)(p.parentNode, p);
-    l && !t.fullscreen && null != h ? ((0, S.tl)(h), h.addEventListener(S.Wb, this.handleFullScreenExit)) : !l && t.fullscreen && null != h && (h.removeEventListener(S.Wb, this.handleFullScreenExit), (0, S.sP)(h, h.ownerDocument)), u === T.A.Types.DURATION && t.dragging !== T.A.Types.DURATION && o ? p.pause() : u !== T.A.Types.DURATION && t.dragging === T.A.Types.DURATION && o && p.play(), c !== t.muted && (p.muted = c, null == i || i(c)), d !== t.volume && (p.volume = d, null == r || r(d))
+    let h = (0, I.qf)(p.parentNode, p);
+    l && !t.fullscreen && null != h ? ((0, I.tl)(h), h.addEventListener(I.Wb, this.handleFullScreenExit)) : !l && t.fullscreen && null != h && (h.removeEventListener(I.Wb, this.handleFullScreenExit), (0, I.sP)(h, h.ownerDocument)), u === T.A.Types.DURATION && t.dragging !== T.A.Types.DURATION && o ? p.pause() : u !== T.A.Types.DURATION && t.dragging === T.A.Types.DURATION && o && p.play(), c !== t.muted && (p.muted = c, null == i || i(c)), d !== t.volume && (p.volume = d, null == r || r(d))
   }
   componentWillUnmount() {
-    this._unmounted = true, null != this._statsCollector && (this._statsCollector.destroy(), this._statsCollector = null), this._hasStatsListener && (I.Ay.removeChangeListener(this.handleStatsStoreChange), this._hasStatsListener = false, this.props.type === W.VIDEO && I.Ay.clearVideoStats(this.props.src));
+    this._unmounted = true, null != this._statsCollector && (this._statsCollector.destroy(), this._statsCollector = null), this._hasStatsListener && (S.Ay.removeChangeListener(this.handleStatsStoreChange), this._hasStatsListener = false, this.props.type === W.VIDEO && S.Ay.clearVideoStats(this.props.src));
     let {
       current: e
     } = this.mediaRef;
     if (null == e) return;
-    let t = (0, S.qf)(e.parentNode, e);
-    null != t && (t.removeEventListener(S.Wb, this.handleFullScreenExit), (0, S.sP)(t))
+    let t = (0, I.qf)(e.parentNode, e);
+    null != t && (t.removeEventListener(I.Wb, this.handleFullScreenExit), (0, I.sP)(t))
   }
   play() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
@@ -629,7 +629,7 @@ class et extends(i = Chunk64700.PureComponent) {
         let e = r();
         e !== this.state.muted && (i.muted = e, a.muted = e)
       }
-      this.setState(a), i.play(), null == t || t(e, i.currentTime * A.A.Millis.SECOND, i.duration * A.A.Millis.SECOND)
+      this.setState(a), i.play(), null == t || t(e, i.currentTime * v.A.Millis.SECOND, i.duration * v.A.Millis.SECOND)
     }
   }
   getWidth() {
@@ -756,14 +756,14 @@ class et extends(i = Chunk64700.PureComponent) {
         playing: h,
         fullscreen: m,
         volume: g,
-        dragging: b
+        dragging: y
       }
-    } = this, y = this.getWidth();
+    } = this, b = this.getWidth();
     return f || n || t === W.AUDIO ? (0, a.jsx)(Z, {
       buffers: c,
       currentTime: u,
       duration: d,
-      volume: (0, v.M)(g, 1),
+      volume: (0, A.M)(g, 1),
       hide: t === W.VIDEO && p,
       muted: _,
       autoPlay: n,
@@ -778,10 +778,10 @@ class et extends(i = Chunk64700.PureComponent) {
       onControlsShow: l,
       onControlsHide: o,
       playing: h,
-      dragging: b,
+      dragging: y,
       type: t,
       ref: this.controlsRef,
-      width: m ? window.screen.width : y,
+      width: m ? window.screen.width : b,
       disabled: !r,
       children: t === W.VIDEO ? (0, a.jsx)(E.A, {
         "aria-label": L.intl.string(L.t["2nM3Pk"]),
@@ -789,7 +789,7 @@ class et extends(i = Chunk64700.PureComponent) {
         iconClassName: j.pd,
         guestWindow: window,
         onClick: this.toggleFullscreen,
-        node: (0, S.qf)(null == e ? true : e.parentNode, e)
+        node: (0, I.qf)(null == e ? true : e.parentNode, e)
       }) : null
     }) : (0, a.jsx)(C.A, {
       onPlay: this.handleVideoClick,
@@ -939,8 +939,8 @@ class et extends(i = Chunk64700.PureComponent) {
         current: e
       } = this.mediaRef;
       if (null == e) return;
-      let t = (0, S.qf)(e.parentNode, e);
-      null != t && (0, S._U)(t, null == t ? true : t.ownerDocument) || this.setState({
+      let t = (0, I.qf)(e.parentNode, e);
+      null != t && (0, I._U)(t, null == t ? true : t.ownerDocument) || this.setState({
         fullscreen: false
       })
     }), k(this, "toggleFullscreen", () => {
@@ -972,7 +972,7 @@ class et extends(i = Chunk64700.PureComponent) {
       } = this.mediaRef;
       if (t === T.A.Types.DURATION) null != n && isFinite(n.duration) && this.setTime(n.duration * e, false);
       else if (t === T.A.Types.VOLUME) {
-        let t = (0, v.w)(e, 1);
+        let t = (0, A.w)(e, 1);
         0 === t ? this.setState({
           muted: true,
           volume: t
@@ -1111,18 +1111,18 @@ class et extends(i = Chunk64700.PureComponent) {
       if (e) null != this._statsCollector && this._statsCollector.stopTracking(), this._isUpdatingStats = true, this.setState({
         showStats: false
       }, () => {
-        this._isUpdatingStats = false, this._unmounted || I.Ay.setVideoStats(this.props.src, false)
+        this._isUpdatingStats = false, this._unmounted || S.Ay.setVideoStats(this.props.src, false)
       });
       else if (null != t && (0, f.vq)(t, HTMLVideoElement)) try {
         null == this._statsCollector && (this._statsCollector = new R.s(t, this.props.fileSizeBytes)), this._statsCollector.startTracking(this.handleStatsUpdate), this._isUpdatingStats = true, this.setState({
           showStats: true,
           videoStats: this._statsCollector.getStats()
         }, () => {
-          this._isUpdatingStats = false, this._unmounted || I.Ay.setVideoStats(this.props.src, true)
+          this._isUpdatingStats = false, this._unmounted || S.Ay.setVideoStats(this.props.src, true)
         })
       } catch (e) {
-        null != this._statsCollector && (this._statsCollector.destroy(), this._statsCollector = null), this._isUpdatingStats = false, this._unmounted || I.Ay.setVideoStats(this.props.src, false)
-      } else I.Ay.setVideoStats(n, false)
+        null != this._statsCollector && (this._statsCollector.destroy(), this._statsCollector = null), this._isUpdatingStats = false, this._unmounted || S.Ay.setVideoStats(this.props.src, false)
+      } else S.Ay.setVideoStats(n, false)
     }), k(this, "handleStatsUpdate", e => {
       this.setState({
         videoStats: e
@@ -1132,7 +1132,7 @@ class et extends(i = Chunk64700.PureComponent) {
         src: e,
         type: t
       } = this.props;
-      t !== W.VIDEO || this._isUpdatingStats || I.Ay.isVideoStatsEnabled(e) !== this.state.showStats && this.toggleStats()
+      t !== W.VIDEO || this._isUpdatingStats || S.Ay.isVideoStatsEnabled(e) !== this.state.showStats && this.toggleStats()
     }), this._analytics = new ee({
       src: e.src,
       mimeType: null == (n = e.mimeType) ? true : n.join("/"),

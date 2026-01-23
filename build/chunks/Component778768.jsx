@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
   o = require.n(Chunk284009),
   Chunk110259 = require("./110259.js"),
@@ -53,14 +53,14 @@ function T(e) {
   let {
     channel: t,
     onHoverOrFocus: i,
-    setPopoutRef: s,
+    setPopoutRef: a,
     closePopout: u
-  } = e, f = l.useRef(null), p = (0, x.L7)(f), m = (0, x.kt)({
+  } = e, p = l.useRef(null), h = (0, v.L7)(p), b = (0, v.kt)({
     channel: t
   }), {
     analyticsLocations: A
-  } = (0, b.Ay)(h.A.VOICE_INVITE_SUGGESTIONS_POPOVER);
-  (0, g.A)({
+  } = (0, g.Ay)(f.A.VOICE_INVITE_SUGGESTIONS_POPOVER);
+  (0, m.A)({
     name: c.ImpressionNames.VOICE_INVITE_SUGGESTIONS_POPOVER,
     type: c.ImpressionTypes.POPOUT,
     properties: {
@@ -69,50 +69,50 @@ function T(e) {
       location_stack: A
     }
   }), l.useEffect(() => {
-    null == s || s(f.current)
-  }, [s]), l.useEffect(() => {
-    null == i || i(p.isHoveringOrFocusing)
-  }, [i, p]);
-  let O = l.useCallback(() => {
+    null == a || a(p.current)
+  }, [a]), l.useEffect(() => {
+    null == i || i(h.isHoveringOrFocusing)
+  }, [i, h]);
+  let _ = l.useCallback(() => {
     let e = y.A.getGuild(t.guild_id);
     o()(null != e, "VoiceInviteSuggestionsPopover must be used in context of a guild"), (0, d.mMO)(async () => {
       let {
         default: l
       } = await Promise.all([n.e("43600"), n.e("28136"), n.e("42821")]).then(n.bind(n, 234355));
       return n => {
-        var i, a;
-        return (0, r.jsx)(l, (i = I({}, n), a = a = {
+        var i, s;
+        return (0, r.jsx)(l, (i = I({}, n), s = s = {
           guild: e,
           channel: t,
-          source: E.PE1.VOICE_INVITE_SUGGESTIONS
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+          source: x.PE1.VOICE_INVITE_SUGGESTIONS
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+        })(Object(s)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
         }), i))
       }
     }), u()
   }, [t, u]);
   return (0, r.jsx)("div", {
-    ref: f,
-    "aria-label": _.intl.string(_.t.o53CL2),
-    className: a()(S.popover, C.oO),
+    ref: p,
+    "aria-label": E.intl.string(E.t.o53CL2),
+    className: s()(S.popover, C.oO),
     children: (0, r.jsx)("div", {
       className: C.vW,
       children: (0, r.jsxs)("ul", {
         className: C.p_,
-        children: [m.map(e => (0, r.jsx)(P, {
+        children: [b.map(e => (0, r.jsx)(P, {
           channel: t,
           user: e
         }, e.id)), (0, r.jsxs)(d.DUT, {
           tag: "li",
-          onClick: O,
-          className: a()(C.nM, C.vk),
+          onClick: _,
+          className: s()(C.nM, C.vk),
           children: [(0, r.jsx)("div", {
             className: C.R4,
             children: (0, r.jsx)(d.nFg, {
@@ -123,7 +123,7 @@ function T(e) {
             variant: "text-md/medium",
             className: C.UU,
             lineClamp: 1,
-            children: _.intl.string(_.t.NOP3Ry)
+            children: E.intl.string(E.t.NOP3Ry)
           })]
         })]
       })
@@ -135,58 +135,58 @@ function P(e) {
   let {
     channel: t,
     user: n
-  } = e, i = l.useRef(null), s = (0, u.bG)([A.Ay], () => A.Ay.getMember(t.guild_id, n.id), [t.guild_id, n.id]), {
+  } = e, i = l.useRef(null), a = (0, u.bG)([A.Ay], () => A.Ay.getMember(t.guild_id, n.id), [t.guild_id, n.id]), {
     isHoveringOrFocusing: o
-  } = (0, x.L7)(i), [c, h] = l.useState(null), b = "success" === c || "sending" === c, g = l.useCallback(async () => {
-    if (b) return;
+  } = (0, v.L7)(i), [c, f] = l.useState(null), g = "success" === c || "sending" === c, m = l.useCallback(async () => {
+    if (g) return;
     async function e() {
       var e, n, r;
-      let l = null != (e = O.A.getInvite(t.id, {})) ? e : null;
+      let l = null != (e = _.A.getInvite(t.id, {})) ? e : null;
       if (null == l) {
-        if (!j.A.can(E.xBc.CREATE_INSTANT_INVITE, t)) return null;
+        if (!O.A.can(x.xBc.CREATE_INSTANT_INVITE, t)) return null;
         try {
-          await f.Ay.createInvite(t.id, {}, N)
+          await p.Ay.createInvite(t.id, {}, N)
         } catch (e) {
           return null
         }
-        l = null != (r = O.A.getInvite(t.id, {})) ? r : null
+        l = null != (r = _.A.getInvite(t.id, {})) ? r : null
       }
       return null != (n = null == l ? true : l.code) ? n : null
     }
-    h("sending");
+    f("sending");
     let r = await e();
-    null == r ? h(null) : p.A.enqueue({
-      type: p.F.USER,
+    null == r ? f(null) : h.A.enqueue({
+      type: h.F.USER,
       user: n,
       inviteKey: r,
       location: N,
       inviteAnalyticsMetadata: {
-        source: E.PE1.VOICE_INVITE_SUGGESTIONS
+        source: x.PE1.VOICE_INVITE_SUGGESTIONS
       }
     }, e => {
-      h(e ? "success" : null)
+      f(e ? "success" : null)
     })
-  }, [b, n, t]), {
+  }, [g, n, t]), {
     avatarDecorationSrc: y,
     avatarSrc: S,
     eventHandlers: T
-  } = (0, m.A)({
+  } = (0, b.A)({
     userId: n.id,
     size: d._3J.SIZE_24,
     animateOnHover: !o,
     guildId: t.guild_id
   });
-  if (null == s) return null;
-  let P = v.Ay.getName(n),
-    w = _.intl.string(_.t.jYnGPG);
+  if (null == a) return null;
+  let P = j.Ay.getName(n),
+    w = E.intl.string(E.t.jYnGPG);
   return (0, r.jsxs)(d.DUT, {
     innerRef: i,
     tag: "li",
-    className: a()(C.nM, {
-      [C.vk]: !b
+    className: s()(C.nM, {
+      [C.vk]: !g
     }),
-    "aria-disabled": b,
-    onClick: g,
+    "aria-disabled": g,
+    onClick: m,
     "aria-label": w,
     children: [(0, r.jsx)(d.euF, I({
       className: C.my,
@@ -210,7 +210,7 @@ function P(e) {
       color: "text-muted",
       className: C.h5,
       lineClamp: 1,
-      children: _.intl.string(_.t["8BEiNn"])
+      children: E.intl.string(E.t["8BEiNn"])
     }), null == c && (0, r.jsx)("div", {
       className: C.SB,
       children: (0, r.jsx)(d.Rvf, {

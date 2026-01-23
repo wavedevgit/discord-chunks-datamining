@@ -1,7 +1,7 @@
 /** Chunk was on 18687 **/
 /** chunk id: 144482, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => g
+  default: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,24 +22,24 @@ let m = (0, Chunk240248.xI)(Chunk319060.A.INTERACTION_IFRAME_MODAL_MODAL_MIN_WID
   j = (0, Chunk240248.xI)(Chunk319060.A.INTERACTION_IFRAME_MODAL_MODAL_MARGIN),
   v = (0, Chunk240248.xI)(Chunk319060.A.INTERACTION_IFRAME_MODAL_MODAL_HEADER_HEIGHT);
 
-function g(e) {
-  var t, r, a;
+function _(e) {
+  var t, r, i;
   let {
-    title: f,
-    onClose: g
+    title: p,
+    onClose: _
   } = e, {
-    applicationIconURL: w,
-    applicationName: y,
-    queryParams: _,
+    applicationIconURL: g,
+    applicationName: w,
+    queryParams: y,
     iframeUrl: I
-  } = (0, b.aV)(e), {
+  } = (0, O.aV)(e), {
     width: x,
     height: N
-  } = (0, u.A)(), M = i.useMemo(() => {
+  } = (0, u.A)(), M = a.useMemo(() => {
     let e = Math.min((N - v - 2 * j) * 16 / 9, A);
     return Math.max(m, Math.min(x - 2 * j, e))
   }, [x, N]);
-  return (0, n.jsx)(o.EOs, (r = function(e) {
+  return (0, n.jsx)(c.EOs, (r = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -56,52 +56,52 @@ function g(e) {
       })
     }
     return e
-  }({}, e), a = a = {
-    size: o.rIJ.DYNAMIC,
-    className: h.zr,
+  }({}, e), i = i = {
+    size: c.rIJ.DYNAMIC,
+    className: f.zr,
     parentComponent: "InteractionIframeModal",
     "data-migration-pending": true,
     children: (0, n.jsxs)("div", {
       style: {
         width: M
       },
-      children: [(0, n.jsxs)(o.rQ0, {
+      children: [(0, n.jsxs)(c.rQ0, {
         separator: false,
-        className: h.Hc,
+        className: f.Hc,
         "data-migration-pending": true,
-        children: [(0, n.jsx)(o.euF, {
-          src: w,
-          size: o._3J.SIZE_32,
-          "aria-label": y,
-          className: h.In
+        children: [(0, n.jsx)(c.euF, {
+          src: g,
+          size: c._3J.SIZE_32,
+          "aria-label": w,
+          className: f.In
         }), (0, n.jsxs)("div", {
-          className: h.Wh,
+          className: f.Wh,
           children: [(0, n.jsxs)("div", {
-            children: [(0, n.jsx)(o.Heading, {
+            children: [(0, n.jsx)(c.Heading, {
               variant: "heading-sm/bold",
-              children: y
-            }), (0, n.jsx)(o.Text, {
+              children: w
+            }), (0, n.jsx)(c.Text, {
               variant: "text-xs/medium",
               color: "interactive-text-default",
-              children: f
+              children: p
             })]
           }), (0, n.jsx)(l.A, {
-            type: p.nu.BOT,
-            className: h.AO,
+            type: h.nu.BOT,
+            className: f.AO,
             verified: null == (t = e.application.bot) ? true : t.verified
           })]
-        }), (0, n.jsx)(c.$n, {
-          onClick: g,
-          innerClassName: h.b,
-          className: h.cG,
-          look: c.$n.Looks.BLANK,
-          size: c.$n.Sizes.NONE,
-          "aria-label": O.intl.string(O.t.WAI6xu),
+        }), (0, n.jsx)(o.$n, {
+          onClick: _,
+          innerClassName: f.b,
+          className: f.cG,
+          look: o.$n.Looks.BLANK,
+          size: o.$n.Sizes.NONE,
+          "aria-label": b.intl.string(b.t.WAI6xu),
           "data-migration-pending": true,
-          children: (0, n.jsx)(o.PGe, {
+          children: (0, n.jsx)(c.PGe, {
             size: "md",
             color: "currentColor",
-            className: h.ut
+            className: f.ut
           })
         })]
       }), (0, n.jsx)(d.A, {
@@ -109,19 +109,19 @@ function g(e) {
         children: (0, n.jsx)(s.o, {
           url: I,
           shouldRefocus: true,
-          className: h.pU,
-          queryParams: _
+          className: f.pU,
+          queryParams: y
         })
       })]
     })
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var n = Object.getOwnPropertySymbols(e);
       r.push.apply(r, n)
     }
     return r
-  })(Object(a)).forEach(function(e) {
-    Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
+  })(Object(i)).forEach(function(e) {
+    Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
   }), r))
 }

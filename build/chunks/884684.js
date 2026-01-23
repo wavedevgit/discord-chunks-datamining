@@ -1,5 +1,5 @@
 /** Chunk was on 88615 **/
-/** chunk id: 884684, original params: e,t,l (module,exports,require) **/
+/** chunk id: 884684, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   MO: () => d
 }), require("./896048.js"), require("./321073.js"), require("./667532.js");
@@ -11,26 +11,26 @@ var Chunk64700 = require("./64700.js"),
 let a = Object.entries({
     guildTagsBadgePacks: [Chunk512750.OJ, Chunk512750.jF]
   }).reduce((e, t) => {
-    let [l, r] = t;
-    for (let t of r) e[t] = l;
+    let [n, r] = t;
+    for (let t of r) e[t] = n;
     return e
   }, {}),
   u = [Chunk568065.o9.LEVEL, Chunk568065.o9.PERK];
 
 function d(e, t) {
-  let l = (0, i.bG)([s.A], () => s.A.getStateForGuild(e));
+  let n = (0, i.bG)([o.A], () => o.A.getStateForGuild(e));
   return r.useMemo(() => u.reduce((e, r) => {
-    let i = null == l ? true : l.powerupCatalog[r];
+    let i = null == n ? true : n.powerupCatalog[r];
     if (null == i) return e;
-    let s = function(e, t, l) {
+    let o = function(e, t, n) {
       let r = [],
         i = t.reduce((e, t) => {
-          if (t.type !== o.o9.PERK) return e;
-          let l = a[t.skuId];
-          return null == l || (null != e[l] || (e[l] = []), e[l].push(t)), e
+          if (t.type !== s.o9.PERK) return e;
+          let n = a[t.skuId];
+          return null == n || (null != e[n] || (e[n] = []), e[n].push(t)), e
         }, {});
       for (let e of t) {
-        if (e.type === o.o9.LEVEL) {
+        if (e.type === s.o9.LEVEL) {
           r.push({
             type: "singleLevel",
             powerup: e
@@ -52,16 +52,16 @@ function d(e, t) {
           powerup: e
         })
       }
-      return l && e === o.o9.PERK && r.unshift({
+      return n && e === s.o9.PERK && r.unshift({
           type: "gameServer"
         }),
         function(e) {
-          let t = e.findIndex(e => "singlePerk" === e.type && e.powerup.skuId === n.SL),
-            l = e.findIndex(e => "multiPerk" === e.type && "guildTagsBadgePacks" === e.group);
-          if (false !== t && false !== l && l !== t + 1) {
+          let t = e.findIndex(e => "singlePerk" === e.type && e.powerup.skuId === l.SL),
+            n = e.findIndex(e => "multiPerk" === e.type && "guildTagsBadgePacks" === e.group);
+          if (false !== t && false !== n && n !== t + 1) {
             let t = [...e],
-              [r] = t.splice(l, 1),
-              i = t.findIndex(e => "singlePerk" === e.type && e.powerup.skuId === n.SL);
+              [r] = t.splice(n, 1),
+              i = t.findIndex(e => "singlePerk" === e.type && e.powerup.skuId === l.SL);
             return t.splice(i + 1, 0, r), t
           }
           return e
@@ -69,7 +69,7 @@ function d(e, t) {
     }(r, i, t);
     return e.push({
       type: r,
-      listings: s
+      listings: o
     }), e
-  }, []), [null == l ? true : l.powerupCatalog, t])
+  }, []), [null == n ? true : n.powerupCatalog, t])
 }

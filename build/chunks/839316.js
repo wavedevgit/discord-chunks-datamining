@@ -62,16 +62,16 @@ function u(e, t) {
     weekday: e.weekdayStyle || "narrow",
     timeZone: t.timeZone
   }), {
-    locale: b
-  } = (0, l.Y)(), y = (0, a.useMemo)(() => {
-    let e = (0, i.kq)((0, i.Ec)(t.timeZone), b, d);
+    locale: y
+  } = (0, l.Y)(), b = (0, a.useMemo)(() => {
+    let e = (0, i.kq)((0, i.Ec)(t.timeZone), y, d);
     return [...Array(7).keys()].map(n => {
       let r = e.add({
         days: n
       }).toDate(t.timeZone);
       return E.format(r)
     })
-  }, [b, t.timeZone, E, d]), O = (0, i.RZ)(n, b, d);
+  }, [y, t.timeZone, E, d]), O = (0, i.RZ)(n, y, d);
   return {
     gridProps: (0, o.v)(g, {
       role: "grid",
@@ -85,7 +85,7 @@ function u(e, t) {
     headerProps: {
       "aria-hidden": true
     },
-    weekDays: y,
+    weekDays: b,
     weeksInMonth: O
   }
 }

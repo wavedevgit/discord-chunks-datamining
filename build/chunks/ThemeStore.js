@@ -50,41 +50,41 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = 0,
+let b = 0,
   O = Chunk185928.qj,
-  A = (0, Chunk677313.A)(),
-  v = O[A],
-  S = null;
+  v = (0, Chunk677313.A)(),
+  A = O[v],
+  I = null;
 
-function I() {
-  return __OVERLAY__ || null == S ? (0, c.A)(A, O) : S
+function S() {
+  return __OVERLAY__ || null == I ? (0, c.A)(v, O) : I
 }
 
 function T() {
-  let e = I();
-  return e !== v && (v = e, (0, u.A)(v), true)
+  let e = S();
+  return e !== A && (A = e, (0, u.A)(A), true)
 }
 class C extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    (null == e ? true : e.theme) != null && (y = 1, v = e.theme, (0, u.A)(v), null != e.preferences && (O = e.preferences), (0, a.Mw)(v) && (O[_.Fc.DARK] = v)), this.waitFor(f.Ay, d.A, p.A, o.A)
+    (null == e ? true : e.theme) != null && (b = 1, A = e.theme, (0, u.A)(A), null != e.preferences && (O = e.preferences), (0, a.Mw)(A) && (O[_.Fc.DARK] = A)), this.waitFor(f.Ay, d.A, p.A, o.A)
   }
   getState() {
     return {
       theme: this.theme,
       preferences: O,
-      status: y
+      status: b
     }
   }
   get theme() {
-    return v
+    return A
   }
   get systemTheme() {
-    return A
+    return v
   }
   themePreferenceForSystemTheme(e) {
     return O[e]
@@ -92,24 +92,24 @@ class C extends(r = Chunk311907.Ay.PersistedStore) {
 }
 
 function N() {
-  return 0 === y && (O = b(g({}, O), {
+  return 0 === b && (O = y(g({}, O), {
     [_.Fc.DARK]: h.NJ8.DARKER
-  }), y = 1), T()
+  }), b = 1), T()
 }
 
 function R() {
-  return (0, a.qB)(I())
+  return (0, a.qB)(S())
 }
 
 function w(e) {
-  return S = null, !e.isSwitchingAccount && v !== h.NJ8.DARK && (v = h.NJ8.DARK, (0, u.A)(v), T())
+  return I = null, !e.isSwitchingAccount && A !== h.NJ8.DARK && (A = h.NJ8.DARK, (0, u.A)(A), T())
 }
 
 function P(e) {
   let {
     systemTheme: t
   } = e;
-  return A = t, T()
+  return v = t, T()
 }
 
 function D(e) {
@@ -117,11 +117,11 @@ function D(e) {
 }
 
 function x(e) {
-  return S = e.theme, T()
+  return I = e.theme, T()
 }
 
 function L() {
-  return S = null, T()
+  return I = null, T()
 }
 
 function j() {
@@ -129,7 +129,7 @@ function j() {
 }
 m(C, "displayName", "ThemeStore"), m(C, "persistKey", "ThemeStore"), m(C, "migrations", [e => {
   let t = e.theme;
-  return "amoled" === t && (t = "midnight"), b(g({}, e), {
+  return "amoled" === t && (t = "midnight"), y(g({}, e), {
     theme: t
   })
 }, e => e]);

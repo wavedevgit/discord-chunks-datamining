@@ -48,7 +48,7 @@ function E(e) {
   }
 }
 
-function b(e) {
+function y(e) {
   if (null == e) return null;
   switch (e) {
     case _.pe.GUILD:
@@ -65,7 +65,7 @@ function b(e) {
   }
 }
 
-function y(e) {
+function b(e) {
   switch (e) {
     case g.XSMALL:
       return u.A.Sizes.SMALLER;
@@ -83,10 +83,10 @@ let O = Chunk64700.forwardRef(function(e, t) {
       game: a,
       guild: _,
       skuId: O,
-      pid: A,
-      className: v,
-      guildClassName: S,
-      size: I = g.MEDIUM,
+      pid: v,
+      className: A,
+      guildClassName: I,
+      size: S = g.MEDIUM,
       allowUnknownGameIcon: T = true
     } = e,
     [C, N] = i.useState(null),
@@ -99,10 +99,10 @@ let O = Chunk64700.forwardRef(function(e, t) {
     null != D.current && R && (cancelIdleCallback(D.current), D.current = null)
   }, [R]);
   let x = (0, o.K)(P);
-  if (null != O && (n = b(O)), null != a && null == n && (a instanceof f.Ay ? n = a.getIconURL(E(I)) : null != a.icon && (n = p.Ay.getApplicationIconURL({
+  if (null != O && (n = y(O)), null != a && null == n && (a instanceof f.Ay ? n = a.getIconURL(E(S)) : null != a.icon && (n = p.Ay.getApplicationIconURL({
       id: a.id,
       icon: a.icon
-    }))), n = (0, c.A)(A, n), i.useEffect(() => {
+    }))), n = (0, c.A)(v, n), i.useEffect(() => {
       if (null == n || "" === n) return;
       if ((0, p.V0)(n) || (0, d.LE)(n)) {
         console.log("JANK loaded src ".concat(n, " as data URI or isImageLoaded")), N(n);
@@ -119,9 +119,9 @@ let O = Chunk64700.forwardRef(function(e, t) {
         null != D.current && (cancelIdleCallback(D.current), D.current = null)
       }
     }, [n, R]), true === n && null != _) {
-    let e = y(I);
+    let e = b(S);
     return (0, r.jsx)(u.A, {
-      className: s()(m.Gt, S, v),
+      className: s()(m.Gt, I, A),
       guild: _,
       size: e
     })
@@ -129,7 +129,7 @@ let O = Chunk64700.forwardRef(function(e, t) {
   if (null == n || "" === n) return T ? (0, r.jsx)(l._7Z, {
     size: "md",
     color: "currentColor",
-    className: s()(m.Gt, I, v)
+    className: s()(m.Gt, S, A)
   }) : null;
   let L = null == a ? true : a.name,
     j = null != L && "" !== L ? h.intl.formatToPlainString(h.t.tiKyYg, {
@@ -140,12 +140,12 @@ let O = Chunk64700.forwardRef(function(e, t) {
     U = C === n || M || k;
   return (0, r.jsxs)(r.Fragment, {
     children: [U ? null : (0, r.jsx)("div", {
-      className: s()(m.qD, I, v)
+      className: s()(m.qD, S, A)
     }), (0, r.jsx)("img", {
       ref: t,
       alt: j,
       src: n,
-      className: s()(m.Gt, I, v),
+      className: s()(m.Gt, S, A),
       style: U ? true : {
         display: "none"
       }

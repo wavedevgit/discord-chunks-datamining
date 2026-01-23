@@ -35,7 +35,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,13 +59,13 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -128,7 +128,7 @@ class D extends Chunk513391.A {
   }
   startQueueMetricTimers(e) {
     let t = P.map(e => setTimeout(() => {
-      (0, o.zV)(b.HAw.SEND_MESSAGE_QUEUED, {
+      (0, o.zV)(y.HAw.SEND_MESSAGE_QUEUED, {
         queued_duration_ms: e
       })
     }, e));
@@ -141,7 +141,7 @@ class D extends Chunk513391.A {
   createResponseHandler(e, t) {
     return n => {
       if (null != e && (this.requests.delete(e), this.cancelQueueMetricTimers(e)), n.hasErr) return t(null, n);
-      if (null != n.body && (n.body.code === b.t02.SLOWMODE_RATE_LIMITED || n.body.code === b.t02.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED)) t(null, n);
+      if (null != n.body && (n.body.code === y.t02.SLOWMODE_RATE_LIMITED || n.body.code === y.t02.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED)) t(null, n);
       else if (429 === n.status) {
         let e = parseInt(n.headers["retry-after"]);
         isNaN(e) ? t(null, n) : t({
@@ -155,9 +155,9 @@ class D extends Chunk513391.A {
     let {
       channelId: r,
       analyticsLocation: i
-    } = e, s = I(e, ["channelId", "analyticsLocation"]), o = null != (n = (0, d.A)()) ? n : i, l = null != o ? {
+    } = e, s = S(e, ["channelId", "analyticsLocation"]), o = null != (n = (0, d.A)()) ? n : i, l = null != o ? {
       location: o
-    } : true, f = (0, u.O)(), _ = A({
+    } : true, f = (0, u.O)(), _ = v({
       mobile_network_type: p.A.getType()
     }, s, null != f && {
       signal_strength: f
@@ -175,12 +175,12 @@ class D extends Chunk513391.A {
     }
     let h = this.createResponseHandler(e.nonce, t),
       m = new AbortController;
-    this.startQueueMetricTimers(e.nonce), a.Bo.post(S(A({
-      url: b.Rsh.MESSAGES(r),
+    this.startQueueMetricTimers(e.nonce), a.Bo.post(I(v({
+      url: y.Rsh.MESSAGES(r),
       body: _,
       context: l,
       oldFormErrors: true
-    }, y.ZG), {
+    }, b.ZG), {
       signal: m.signal,
       rejectWithError: true,
       onRequestCreated: () => {
@@ -193,9 +193,9 @@ class D extends Chunk513391.A {
     let {
       channelId: r,
       analyticsLocation: i
-    } = e, s = I(e, ["channelId", "analyticsLocation"]), o = null != (n = (0, d.A)()) ? n : i, l = null != o ? {
+    } = e, s = S(e, ["channelId", "analyticsLocation"]), o = null != (n = (0, d.A)()) ? n : i, l = null != o ? {
       location: o
-    } : true, f = (0, u.O)(), _ = A({
+    } : true, f = (0, u.O)(), _ = v({
       mobile_network_type: p.A.getType()
     }, s, null != f && {
       signal_strength: f
@@ -213,12 +213,12 @@ class D extends Chunk513391.A {
     }
     let h = this.createResponseHandler(e.nonce, t),
       m = new AbortController;
-    this.startQueueMetricTimers(e.nonce), a.Bo.post(S(A({
-      url: b.Rsh.MESSAGES_ANNOUNCEMENT(r),
+    this.startQueueMetricTimers(e.nonce), a.Bo.post(I(v({
+      url: y.Rsh.MESSAGES_ANNOUNCEMENT(r),
       body: _,
       context: l,
       oldFormErrors: true
-    }, y.ZG), {
+    }, b.ZG), {
       signal: m.signal,
       rejectWithError: true,
       onRequestCreated: () => {
@@ -238,7 +238,7 @@ class D extends Chunk513391.A {
       analytics_location: p,
       sectionName: _,
       source: m
-    } = e, y = {
+    } = e, b = {
       type: s.G4.APPLICATION_COMMAND,
       application_id: n,
       guild_id: r,
@@ -250,11 +250,11 @@ class D extends Chunk513391.A {
       section_name: _,
       source: m
     };
-    null != u && (y.data.attachments = u.map((e, t) => (i()(e.status === E.jP.COMPLETED, "Uploads must be staged before trying to send a message"), (0, g.OW)(e, t))));
+    null != u && (b.data.attachments = u.map((e, t) => (i()(e.status === E.jP.COMPLETED, "Uploads must be staged before trying to send a message"), (0, g.OW)(e, t))));
     let O = new AbortController;
     a.Bo.post({
-      url: b.Rsh.INTERACTIONS,
-      body: y,
+      url: y.Rsh.INTERACTIONS,
+      body: b,
       signal: O.signal,
       rejectWithError: true,
       onRequestCreated: e => {
@@ -273,8 +273,8 @@ class D extends Chunk513391.A {
         channelId: i,
         messageId: s,
         isCrossposted: o
-      } = n, l = I(n, ["channelId", "messageId", "isCrossposted"]), [c] = r, u = new AbortController, d = this.createResponseHandler(s, c), f = {
-        url: b.Rsh.MESSAGE(i, s),
+      } = n, l = S(n, ["channelId", "messageId", "isCrossposted"]), [c] = r, u = new AbortController, d = this.createResponseHandler(s, c), f = {
+        url: y.Rsh.MESSAGE(i, s),
         body: l,
         retries: 1,
         oldFormErrors: true,

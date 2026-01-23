@@ -42,8 +42,8 @@ let R = null,
   P = new Chunk32603.Ay;
 
 function D() {
-  let e = A.A.getChannelId(),
-    t = A.A.getVoiceChannelId();
+  let e = v.A.getChannelId(),
+    t = v.A.getVoiceChannelId();
   return R = e, w = t, P.clear()
 }
 
@@ -158,7 +158,7 @@ function z(e) {
   return a()(t).map(e => {
     var t;
     return null == (t = g.A.getChannel(e.channelId)) ? true : t.guild_id
-  }).filter(S.Vq).uniq().forEach(e => {
+  }).filter(I.Vq).uniq().forEach(e => {
     P.clearGuildId(e) && (n = true)
   }), n
 }
@@ -189,8 +189,8 @@ function Q(e) {
 }
 
 function $() {
-  let e = A.A.getChannelId(),
-    t = A.A.getVoiceChannelId(),
+  let e = v.A.getChannelId(),
+    t = v.A.getVoiceChannelId(),
     n = R !== e || w !== t;
   return !!n && (a()([R, w, e, t]).uniq().forEach(e => {
     null != e && P.nonPositionalChannelIdUpdate(e) && (n = true)
@@ -267,13 +267,13 @@ function el(e) {
   if (n.type !== C.oD.PRELOADED_USER_SETTINGS) returnfalse;
   let r = null == (t = n.proto.guilds) ? true : t.guilds,
     i = false;
-  return null != r && I.default.keys(r).forEach(e => {
+  return null != r && S.default.keys(r).forEach(e => {
     null != r[e].guildRecentsDismissedAt && (i = P.updateRecentsCategory(e) || i)
   }), i
 }
 class ec extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(f.A, h.default, m.A, g.A, E.A, l.Ay, b.A, u.A, d.Ay, p.A, y.A, O.Ay, A.A, v.Ay, _.A)
+    this.waitFor(f.A, h.default, m.A, g.A, E.A, l.Ay, y.A, u.A, d.Ay, p.A, b.A, O.Ay, v.A, A.Ay, _.A)
   }
   getGuild(e, t) {
     var n, r;

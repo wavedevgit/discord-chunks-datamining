@@ -2,7 +2,7 @@
 /** chunk id: 286188, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js"), require("./264879.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -56,7 +56,7 @@ function E(e, t) {
   }), e
 }
 
-function b(e) {
+function y(e) {
   let {
     powerup: t
   } = e;
@@ -68,11 +68,11 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     guildId: t,
     onButtonClick: n
-  } = e, h = (0, d.A)(t), g = (0, c.Ay)(), y = (0, l.qB1)(g), O = (0, o.bG)([u.A], () => u.A.useReducedMotion), [A, v] = i.useState(O), [S, I] = (0, l.zhh)(() => ({
+  } = e, h = (0, d.A)(t), g = (0, c.Ay)(), b = (0, l.qB1)(g), O = (0, o.bG)([u.A], () => u.A.useReducedMotion), [v, A] = i.useState(O), [I, S] = (0, l.zhh)(() => ({
     scale: O ? 1 : .8,
     config: {
       tension: 500,
@@ -82,33 +82,33 @@ function y(e) {
   i.useEffect(() => {
     if (O) return;
     let e = setTimeout(() => {
-      I({
+      S({
         scale: 1
-      }), v(true)
+      }), A(true)
     }, 300);
     return () => clearTimeout(e)
-  }, [I, O]);
+  }, [S, O]);
   let T = i.useMemo(() => {
     let e;
     if (null == h || 0 === h.length) return "";
-    if (1 === h.length) e = (0, r.jsx)(b, {
+    if (1 === h.length) e = (0, r.jsx)(y, {
       powerup: h[0]
     });
     else if (2 === h.length) e = f.intl.format(p.default.MNO3sG, {
-      perk1: (0, r.jsx)(b, {
+      perk1: (0, r.jsx)(y, {
         powerup: h[0]
       }),
-      perk2: (0, r.jsx)(b, {
+      perk2: (0, r.jsx)(y, {
         powerup: h[1]
       })
     });
     else {
       let t = Array.from(h).reverse();
       e = f.intl.format(p.default.GmN3Vf, {
-        perk1: (0, r.jsx)(b, {
+        perk1: (0, r.jsx)(y, {
           powerup: t[0]
         }),
-        perk2: (0, r.jsx)(b, {
+        perk2: (0, r.jsx)(y, {
           powerup: t[1]
         })
       })
@@ -119,8 +119,8 @@ function y(e) {
   }, [h]);
   return null == h || 0 === h.length ? null : (0, r.jsxs)(a.animated.div, {
     className: _.kL,
-    style: E(m({}, S), {
-      opacity: +!!A
+    style: E(m({}, I), {
+      opacity: +!!v
     }),
     children: [(0, r.jsx)(s.EYj, {
       tag: "span",
@@ -128,7 +128,7 @@ function y(e) {
       className: _.h_,
       children: T
     }), (0, r.jsx)(s.$nd, {
-      variant: y ? "primary" : "overlay-primary",
+      variant: b ? "primary" : "overlay-primary",
       size: "sm",
       text: f.intl.string(p.default.E5V5KK),
       onClick: n

@@ -64,11 +64,11 @@ function E(e) {
   e in h && delete h[e]
 }
 
-function b(e) {
-  null != e.threads && e.threads.length > 0 && (h[e.id] = {}, e.threads.filter(e => l.A_.has(e.type)).forEach(t => y(e.id, t))), e.hasThreadsSubscription && m.add(e.id)
+function y(e) {
+  null != e.threads && e.threads.length > 0 && (h[e.id] = {}, e.threads.filter(e => l.A_.has(e.type)).forEach(t => b(e.id, t))), e.hasThreadsSubscription && m.add(e.id)
 }
 
-function y(e, t) {
+function b(e, t) {
   let n = h[e],
     r = t.parent_id;
   r in n || (n[r] = {}), h[e][r][t.id] = g(t)
@@ -76,34 +76,34 @@ function y(e, t) {
 
 function O(e) {
   h = {}, m.clear(), e.guilds.forEach(e => {
-    b(e)
-  })
-}
-
-function A(e) {
-  let {
-    channels: t
-  } = e;
-  h = {}, a()(t).filter(e => l.Le.has(e.type)).groupBy("guild_id").forEach((e, t) => {
-    h[t] = {}, e.forEach(e => y(t, e))
+    y(e)
   })
 }
 
 function v(e) {
   let {
-    guild: t
+    channels: t
   } = e;
-  E(t.id), b(t)
+  h = {}, a()(t).filter(e => l.Le.has(e.type)).groupBy("guild_id").forEach((e, t) => {
+    h[t] = {}, e.forEach(e => b(t, e))
+  })
 }
 
-function S(e) {
+function A(e) {
+  let {
+    guild: t
+  } = e;
+  E(t.id), y(t)
+}
+
+function I(e) {
   let {
     guild: t
   } = e;
   E(t.id)
 }
 
-function I(e) {
+function S(e) {
   var t, n;
   let {
     channel: r
@@ -127,7 +127,7 @@ function T(e) {
     channelIds: r
   } = e;
   for (let e in null == r && m.add(t), h[t] = f({}, h[t]), h[t]) h[t][e] = f({}, h[t][e]);
-  n.forEach(e => y(t, e))
+  n.forEach(e => b(t, e))
 }
 
 function C(e) {
@@ -187,11 +187,11 @@ class P extends(r = Chunk311907.Ay.Store) {
 d(P, "displayName", "ActiveThreadsStore");
 let D = new P(Chunk73153.h, {
   CONNECTION_OPEN: O,
-  OVERLAY_INITIALIZE: A,
-  GUILD_CREATE: v,
-  GUILD_DELETE: S,
-  THREAD_CREATE: I,
-  THREAD_UPDATE: I,
+  OVERLAY_INITIALIZE: v,
+  GUILD_CREATE: A,
+  GUILD_DELETE: I,
+  THREAD_CREATE: S,
+  THREAD_UPDATE: S,
   THREAD_LIST_SYNC: T,
   THREAD_DELETE: N,
   CHANNEL_DELETE: R

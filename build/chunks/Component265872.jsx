@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Q: () => O,
-  Y: () => y
+  Y: () => b
 }), require("./65821.js"), require("./896048.js"), require("./457529.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -80,7 +80,7 @@ let E = Object.freeze({
   4: Chunk44808.m.Types.FADE
 });
 
-function b(e) {
+function y(e) {
   switch (e) {
     case "top":
     case "bottom":
@@ -94,7 +94,7 @@ function b(e) {
   }
   throw Error("Unexpected position: ".concat(e))
 }
-class y extends(r = Chunk64700.Component) {
+class b extends(r = Chunk64700.Component) {
   render() {
     let {
       children: e,
@@ -114,24 +114,24 @@ class y extends(r = Chunk64700.Component) {
       useMouseEnter: m,
       renderPopout: g,
       layerContext: E,
-      position: y = "right",
+      position: b = "right",
       autoInvert: O = true,
-      nudgeAlignIntoViewport: A = true,
-      spacing: v = 8,
-      clickTrap: S = false
+      nudgeAlignIntoViewport: v = true,
+      spacing: A = 8,
+      clickTrap: I = false
     } = this.props;
     return (0, i.jsx)(l.$, {
       ref: this.ref,
       targetElementRef: this.props.targetElementRef,
       preload: f,
-      position: y,
-      align: null != a ? a : b(y),
+      position: b,
+      align: null != a ? a : y(b),
       autoInvert: O,
       fixed: s,
-      nudgeAlignIntoViewport: A,
+      nudgeAlignIntoViewport: v,
       useRawTargetDimensions: o,
       renderPopout: this.renderPopout,
-      spacing: v,
+      spacing: A,
       shouldShow: null != g && t,
       onRequestOpen: n,
       onRequestClose: r,
@@ -143,7 +143,7 @@ class y extends(r = Chunk64700.Component) {
       scrollBehavior: h,
       useMouseEnter: m,
       layerContext: E,
-      clickTrap: S,
+      clickTrap: I,
       children: e
     })
   }
@@ -193,10 +193,10 @@ function O(e) {
     if (!p.current) {
       p.current = true;
       let e = setTimeout(() => {
-          b(() => g), c(e => e + 1)
+          y(() => g), c(e => e + 1)
         }, 300),
         n = await t();
-      b(() => n), c(e => e + 1), clearTimeout(e)
+      y(() => n), c(e => e + 1), clearTimeout(e)
     }
   }
 
@@ -212,17 +212,17 @@ function O(e) {
       children: (0, i.jsx)(s.y$y, {})
     })
   }
-  let [E, b] = a.useState(() => d), O = a.useRef(d);
+  let [E, y] = a.useState(() => d), O = a.useRef(d);
   return a.useEffect(() => {
     O.current = d
   }), a.useEffect(() => {
     p.current ? t().then(e => {
-      b(() => e), c(e => e + 1)
-    }) : b(() => O.current)
-  }, [t]), (0, i.jsx)(y, _(f({
+      y(() => e), c(e => e + 1)
+    }) : y(() => O.current)
+  }, [t]), (0, i.jsx)(b, _(f({
     ref: r
   }, n), {
     renderPopout: E
   }))
 }
-d(y, "Animation", g), O.Animation = g
+d(b, "Animation", g), O.Animation = g

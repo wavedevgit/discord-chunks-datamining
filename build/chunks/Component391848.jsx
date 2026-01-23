@@ -61,7 +61,7 @@ let D = 512,
       filteredSectionId: J,
       scrollDown: ee,
       filterSection: et
-    } = y.cu({
+    } = b.cu({
       context: {
         channel: n,
         type: "channel"
@@ -116,11 +116,11 @@ let D = 512,
         } else et(e.id)
       }, [et, J]),
       el = i.useCallback((e, t, r) => {
-        b.Gf({
+        y.Gf({
           channelId: n.id,
           command: e,
           section: t,
-          location: A.Oh.DISCOVERY,
+          location: v.Oh.DISCOVERY,
           triggerSection: r
         })
       }, [n.id]);
@@ -134,7 +134,7 @@ let D = 512,
           if (t = n, F < (n += e.data.length)) {
             let n = e.data[F - t],
               r = q.find(e => e.id === n.applicationId);
-            el(n, r, (0, v.$S)(e.section));
+            el(n, r, (0, A.$S)(e.section));
             break
           } returntrue
       },
@@ -189,7 +189,7 @@ let D = 512,
         let a = Z[t.sectionIndex],
           s = a.data[t.sectionRowIndex],
           o = "".concat(a.section.id, ":").concat(null != (i = null == s ? true : s.id) ? i : e);
-        if (null == s || a.section.id !== s.applicationId && a.section.id !== C.Ik.FRECENCY || s.inputType === A.y$.PLACEHOLDER) return (0, r.jsx)(I.A, {}, o);
+        if (null == s || a.section.id !== s.applicationId && a.section.id !== C.Ik.FRECENCY || s.inputType === v.y$.PLACEHOLDER) return (0, r.jsx)(S.A, {}, o);
         let l = q.find(e => e.id === s.applicationId);
         return (0, r.jsx)(f.Ay.NewCommand, {
           index: e,
@@ -199,7 +199,7 @@ let D = 512,
           selected: F === e,
           showImage: a.section.id !== s.applicationId,
           section: l,
-          onClick: () => el(s, l, (0, v.$S)(a.section)),
+          onClick: () => el(s, l, (0, A.$S)(a.section)),
           onHover: () => {
             H(null), K(false)
           }
@@ -213,7 +213,7 @@ let D = 512,
       className: w.x9,
       innerClassName: w.iE,
       onMouseDown: B,
-      children: [(0, r.jsx)(S.A, {
+      children: [(0, r.jsx)(I.A, {
         className: w.H$,
         channel: n,
         sections: q,

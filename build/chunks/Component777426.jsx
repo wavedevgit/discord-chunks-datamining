@@ -48,14 +48,14 @@ function T(e) {
     analyticsLocations: U
   } = (0, p.Ay)(d.A.PREMIUM_GIFT_INTENT_FRIEND_ROW), {
     Component: G
-  } = (0, c.V)(), V = (0, o.bG)([v.Ay], () => v.Ay.getFriendAnniversaryYears(M.id)), B = (0, _.tA)({
+  } = (0, c.V)(), V = (0, o.bG)([v.Ay], () => v.Ay.getFriendAnniversaryYears(M.id)), B = (0, b.tA)({
     location: "gift-intent-friend-row",
     isGift: true,
     giftRecipient: M
   });
   i.useEffect(() => {
-    let e = b.A.getUserAffinity(M.id);
-    (0, f.x)({
+    let e = _.A.getUserAffinity(M.id);
+    (0, h.x)({
       name: s.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
       type: s.ImpressionTypes.VIEW,
       properties: {
@@ -66,7 +66,7 @@ function T(e) {
   }, [M, k]);
   let H = e => {
     e.stopPropagation();
-    let t = b.A.getUserAffinity(M.id);
+    let t = _.A.getUserAffinity(M.id);
     O.default.track(S.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
       gift_intent_type: k,
       affinity: null == t ? true : t.dmProbability,
@@ -81,7 +81,7 @@ function T(e) {
         object: S.ZSU.BUTTON_CTA,
         objectType: S.AnalyticsObjectTypes.GIFT
       }
-    }) : (0, h.A)({
+    }) : (0, g.A)({
       isGift: true,
       initialPlanId: null,
       giftRecipient: M,
@@ -95,7 +95,7 @@ function T(e) {
       }
     })
   };
-  return (0, r.jsx)(A.A, {
+  return (0, r.jsx)(f.A, {
     ref: t,
     isFocused: l,
     isActive: T,
@@ -105,13 +105,13 @@ function T(e) {
     height: 72,
     children: e => (0, r.jsxs)("div", {
       className: a()(N.a4, N.Z$),
-      children: [(0, r.jsx)(m.A, {
+      children: [(0, r.jsx)(A.A, {
         className: N.Cv,
         user: M,
         status: j,
         isMobile: L,
         subText: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(g.A, {
+          children: [(0, r.jsx)(m.A, {
             hovered: e,
             activities: x,
             applicationStream: P,

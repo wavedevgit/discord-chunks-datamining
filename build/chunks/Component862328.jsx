@@ -2,7 +2,7 @@
 /** chunk id: 862328, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Q: () => y
+  Q: () => b
 }), require("./65821.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -86,7 +86,7 @@ let m = 16,
         throw Error("Unsupported BlobMask squicle size: ".concat(e))
     }
   },
-  b = e => {
+  y = e => {
     switch (e) {
       case 48:
         return "M48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24Z";
@@ -99,7 +99,7 @@ let m = 16,
     }
   };
 
-function y(e) {
+function b(e) {
   let {
     selected: t = false,
     lowerBadgeSize: n = {
@@ -137,26 +137,26 @@ function O(e) {
     highlight: p,
     badgeMaskStroke: _,
     badgeMaskSize: h,
-    upperBadge: y,
+    upperBadge: b,
     lowerBadge: O,
-    rounded: A = false,
-    "aria-hidden": v
-  } = e, [S, I] = i.useState(false), T = () => {
-    I(true)
+    rounded: v = false,
+    "aria-hidden": A
+  } = e, [I, S] = i.useState(false), T = () => {
+    S(true)
   }, C = () => {
-    I(false)
-  }, N = null != y, R = null != O, w = i.useId(), P = "".concat(w, "-upper_badge_masks"), D = "".concat(w, "-lower_badge_masks"), x = "".concat(w, "-blob_mask"), L = "".concat(w, "-stroke_mask"), j = "".concat(w, "-highlight_mask"), M = (null == f ? true : f.width) != null ? f.width : m, k = (null == f ? true : f.height) != null ? f.height : m, U = {
+    S(false)
+  }, N = null != b, R = null != O, w = i.useId(), P = "".concat(w, "-upper_badge_masks"), D = "".concat(w, "-lower_badge_masks"), x = "".concat(w, "-blob_mask"), L = "".concat(w, "-stroke_mask"), j = "".concat(w, "-highlight_mask"), M = (null == f ? true : f.width) != null ? f.width : m, k = (null == f ? true : f.height) != null ? f.height : m, U = {
     width: d ? n : n + 8,
     height: d ? n : n + 8,
     x: d ? 0 : false,
     y: d ? 0 : false
-  }, G = d ? 20 : h, V = A ? b(n) : E(n);
+  }, G = d ? 20 : h, V = v ? y(n) : E(n);
   return (0, r.jsxs)("div", {
     className: s()(a, c.iE),
     style: l,
     onFocus: T,
     onBlur: C,
-    "aria-hidden": v,
+    "aria-hidden": A,
     children: [(0, r.jsxs)("svg", {
       width: U.width,
       height: U.height,
@@ -174,7 +174,7 @@ function O(e) {
         }), (0, r.jsx)("path", {
           d: V,
           id: x
-        }), null != y ? (0, r.jsx)("rect", {
+        }), null != b ? (0, r.jsx)("rect", {
           id: P,
           x: n - G + _,
           y: -_,
@@ -229,7 +229,7 @@ function O(e) {
           href: "#".concat(D),
           fill: "black"
         }) : null]
-      }) : null, S ? (0, r.jsxs)(r.Fragment, {
+      }) : null, I ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("g", {
           className: c.ZD,
           mask: "url(#".concat(L, ")"),
@@ -238,7 +238,7 @@ function O(e) {
           })
         }), (0, r.jsxs)("g", {
           className: c.e7,
-          children: [null != y ? (0, r.jsx)("use", {
+          children: [null != b ? (0, r.jsx)("use", {
             href: "#".concat(P)
           }) : null, null != O ? (0, r.jsx)("use", {
             href: "#".concat(D)
@@ -262,9 +262,9 @@ function O(e) {
     }, "svg"), null != O ? (0, r.jsx)("div", {
       className: c.H7,
       children: O
-    }) : null, null != y ? (0, r.jsx)("div", {
+    }) : null, null != b ? (0, r.jsx)("div", {
       className: c.A8,
-      children: y
+      children: b
     }) : null]
   }, "".concat(R, "-").concat(N))
 }

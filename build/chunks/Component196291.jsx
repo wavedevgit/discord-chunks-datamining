@@ -83,7 +83,7 @@ function V(e) {
     user: M,
     isVisible: U,
     shouldShow: V
-  } = e, F = v.Ay.isPremium(M), B = v.Ay.canUseAnimatedAvatar(M), {
+  } = e, F = A.Ay.isPremium(M), B = A.Ay.canUseAnimatedAvatar(M), {
     pendingAvatar: H,
     pendingThemeColors: Y,
     tryItOutThemeColors: W,
@@ -99,18 +99,18 @@ function V(e) {
     preset: q,
     onShuffle: X
   } = (0, f.A)(), Z = i.useRef(null);
-  (0, y.A)(Z, x._F.TRY_IT_OUT);
+  (0, b.A)(Z, x._F.TRY_IT_OUT);
   let {
     analyticsLocations: Q,
     newestAnalyticsLocation: $,
     sourceAnalyticsLocations: J
   } = (0, c.Ay)(l.A.USER_SETTINGS_TRY_OUT_PREMIUM), ee = e => {
-    e && ((0, o.zq)(K), (0, b.Zz)(W), (0, b.Dv)(z), A.default.track(P.HAw.TRY_IT_OUT_PRESET_SELECTED, {
+    e && ((0, o.zq)(K), (0, y.Zz)(W), (0, y.Dv)(z), v.default.track(P.HAw.TRY_IT_OUT_PRESET_SELECTED, {
       preset: q
     }))
   };
   i.useEffect(() => {
-    U && A.default.track(P.HAw.PREMIUM_UPSELL_VIEWED, {
+    U && v.default.track(P.HAw.PREMIUM_UPSELL_VIEWED, {
       type: D.e.PREMIUM_PROFILE_TRY_IT_OUT,
       location: {
         page: P.liQ.USER_SETTINGS
@@ -132,7 +132,7 @@ function V(e) {
       type: C.i.PREMIUM,
       isShown: true,
       hasBackground: true,
-      children: [(0, r.jsx)(S.A, {
+      children: [(0, r.jsx)(I.A, {
         layoutClassName: j.th,
         profilePreviewTitle: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.tvc, {
@@ -168,19 +168,19 @@ function V(e) {
               image: null != K ? K : H
             }),
             pendingColors: null != W ? W : Y,
-            onThemeColorsChange: b.a,
+            onThemeColorsChange: y.a,
             showPremiumIcon: false,
             preventDisabled: true
           }), (0, r.jsx)(N.A, {
             className: j.fz,
             isTryItOut: true,
             showRemoveBannerButton: null != z,
-            onBannerChange: b.xe,
+            onBannerChange: y.xe,
             showPremiumIcon: false
-          }), !B && (0, r.jsx)(I.A, {
+          }), !B && (0, r.jsx)(S.A, {
             className: j.fz,
             isTryItOut: true,
-            onAvatarChange: b.e$,
+            onAvatarChange: y.e$,
             showRemoveAvatarButton: false,
             changeAvatarButtonText: L.intl.string(L.t["7z0D1c"]),
             sectionTitle: L.intl.string(L.t.vtFfPX)

@@ -1,10 +1,10 @@
 /** Chunk was on 59275 **/
-/** chunk id: 797490, original params: e,t,l (module,exports,require) **/
+/** chunk id: 797490, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  $: () => r
+  $: () => l
 });
-let n = (0, require("./945810.js").mj)({
+let r = (0, require("./945810.js").mj)({
     name: "2026-01-valentines-day-drop",
     kind: "user",
     defaultConfig: {
@@ -19,6 +19,6 @@ let n = (0, require("./945810.js").mj)({
       }
     }
   }),
-  r = e => n.useConfig({
+  l = e => r.useConfig({
     location: e
   }).enabled

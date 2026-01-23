@@ -2,7 +2,7 @@
 /** chunk id: 51937, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => l
+  A: () => c
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -12,16 +12,16 @@ var Chunk55187 = require("./55187.jsx"),
   Chunk698395 = require("./698395.js"),
   Chunk169764 = require("./169764.js");
 
-function l(e) {
+function c(e) {
   let {
     isWaitingForConnection: t,
     onWaitingForConnection: n,
-    expectedCallbackState: l,
+    expectedCallbackState: c,
     onAuthToken: d,
-    onError: f,
-    onClose: b
-  } = e, u = t ? (0, r.jsx)("img", {
-    src: c.A,
+    onError: p,
+    onClose: u
+  } = e, f = t ? (0, r.jsx)("img", {
+    src: l.A,
     width: "231",
     height: "172",
     alt: ""
@@ -30,17 +30,17 @@ function l(e) {
     width: "231",
     height: "160",
     alt: ""
-  }), p = t ? o.intl.string(o.t.EuwcxO) : o.intl.string(o.t["e/z3na"]), g = t ? o.intl.string(o.t["1GjS/W"]) : o.intl.string(o.t["7tXu0i"]);
-  return (0, r.jsx)(s.b, {
-    platformType: i.fg2.XBOX,
+  }), b = t ? i.intl.string(i.t.EuwcxO) : i.intl.string(i.t["e/z3na"]), g = t ? i.intl.string(i.t["1GjS/W"]) : i.intl.string(i.t["7tXu0i"]);
+  return (0, r.jsx)(o.b, {
+    platformType: s.fg2.XBOX,
     isWaitingForConnection: t,
     onWaitingForConnection: n,
-    expectedCallbackState: l,
+    expectedCallbackState: c,
     onAuthToken: d,
-    onError: f,
-    onClose: b,
-    img: u,
-    title: p,
+    onError: p,
+    onClose: u,
+    img: f,
+    title: b,
     body: g
   })
 }

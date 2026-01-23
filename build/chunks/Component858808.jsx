@@ -21,28 +21,28 @@ function f(e) {
     iconSize: l = "refresh_sm",
     className: f,
     buttonRef: p,
-    onRemove: b
+    onRemove: g
   } = e, {
-    trackUserProfileEditAction: g
-  } = (0, o.NJ)();
+    trackUserProfileEditAction: m
+  } = (0, s.NJ)();
   return (0, r.jsx)(a.m, {
     text: u.intl.string(u.t.HUvyDc),
     ariaHidden: true,
-    children: (0, r.jsx)(s.DUT, {
+    children: (0, r.jsx)(o.DUT, {
       innerRef: p,
       onClick: () => {
-        (0, c.ef)(n, t.applicationId), s.ORC.announce(u.intl.string(u.t["08HmMj"])), g({
+        (0, c.ef)(n, t.applicationId), o.ORC.announce(u.intl.string(u.t["08HmMj"])), m({
           action: "GAME_REMOVED",
           gameId: t.applicationId,
           widgetEdited: n
-        }), null == b || b()
+        }), null == g || g()
       },
       "aria-label": u.intl.string(u.t.HUvyDc),
       className: i()(f, d.v),
-      children: (0, r.jsx)(s.ucK, {
+      children: (0, r.jsx)(o.ucK, {
         size: l,
         className: d.K,
-        color: s.LU0.colors.ICON_FEEDBACK_CRITICAL
+        color: o.LU0.colors.ICON_FEEDBACK_CRITICAL
       })
     })
   })

@@ -5,8 +5,8 @@ require.d(exports, {
   aW: () => g,
   ag: () => m,
   bN: () => E,
-  eC: () => y,
-  qo: () => b
+  eC: () => b,
+  qo: () => y
 }), require("./896048.js");
 var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
@@ -91,7 +91,7 @@ let m = async e => {
     flash: false,
     jumpType: s.US.INSTANT
   })
-}, b = (e, t) => {
+}, y = (e, t) => {
   i.h.dispatch({
     type: "SELECT_NEW_MEMBER_ACTION_CHANNEL",
     guildId: e,
@@ -105,7 +105,7 @@ let m = async e => {
     server_guide_channel_type: "member action",
     channel_action_type: r.actionType
   }), (0, l.iN)(t)
-}, y = (e, t) => {
+}, b = (e, t) => {
   if (i.h.dispatch({
       type: "COMPLETE_NEW_MEMBER_ACTION",
       guildId: e,

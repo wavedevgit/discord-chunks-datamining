@@ -12,25 +12,25 @@ var n, Chunk64700 = require("./64700.js"),
   Chunk638242 = require("./638242.js"),
   Chunk985018 = require("./985018.jsx"),
   d = ((n = {}).PURCHASE = "purchase", n.PREMIUM_PURCHASE = "premium_purchase", n.PREVIEW = "preview", n);
-let m = {
+let p = {
     skuId: "None"
   },
-  p = {
+  m = {
     skuId: "Shop"
   },
   x = () => {
     let e = (0, i.bG)([a.A], () => a.A.purchases),
       [t, l] = (0, i.yK)([s.A], () => [s.A.categories, s.A.products]);
-    return o.A.useConfig({
+    return c.A.useConfig({
       location: "use nameplate sections"
     }), (0, r.useMemo)(() => {
-      let n = (0, c.zd)(e, t).reduce((t, n) => {
+      let n = (0, o.zd)(e, t).reduce((t, n) => {
         var r;
         let i = e.get(n.skuId),
           s = l.get(n.skuId),
-          a = null != i ? (0, c.gA)(i) : (0, c.G0)(s),
-          o = null != (r = null == s ? true : s.isCategoryReward) && r;
-        return a ? t.premium_purchase.push(n) : null != i ? t.purchase.push(n) : a || o || t.preview.push(n), t
+          a = null != i ? (0, o.gA)(i) : (0, o.G0)(s),
+          c = null != (r = null == s ? true : s.isCategoryReward) && r;
+        return a ? t.premium_purchase.push(n) : null != i ? t.purchase.push(n) : a || c || t.preview.push(n), t
       }, {
         purchase: [],
         premium_purchase: [],
@@ -38,7 +38,7 @@ let m = {
       });
       return [{
         section: "purchase",
-        items: [m, p, ...n.purchase],
+        items: [p, m, ...n.purchase],
         height: 12,
         header: u.intl.string(u.t.WfGV52)
       }, {

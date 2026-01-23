@@ -25,58 +25,58 @@ var Chunk627968 = require("./627968.js"),
   Chunk690450 = require("./690450.js");
 
 function v() {
-  let e, t = (0, l.bG)([f.A], () => f.A.getGuildId()),
+  let e, t = (0, l.bG)([g.A], () => g.A.getGuildId()),
     n = (0, l.bG)([u.A], () => u.A.getGuild(t)),
-    v = (0, l.bG)([b.A], () => b.A.getCurrentPage());
+    v = (0, l.bG)([p.A], () => p.A.getCurrentPage());
   if (i.useEffect(() => {
-      (0, c.Dr)(s.M.COMMUNITY_GUILD_SETTINGS_SAFETY, {
+      (0, o.Dr)(s.M.COMMUNITY_GUILD_SETTINGS_SAFETY, {
         dismissAction: j.i.AUTO
       })
     }, []), null == n) return null;
-  let A = (0, h.N)(n);
+  let y = (0, x.N)(n);
   switch (v) {
-    case m.C.OVERVIEW:
-      e = (0, r.jsx)(p.A, {
+    case f.C.OVERVIEW:
+      e = (0, r.jsx)(b.A, {
         guild: n
       });
       break;
-    case m.C.CAPTCHA_AND_RAID_PROTECTION:
-      e = (0, r.jsx)(x.A, {
-        title: O.intl.string(O.t["53eF5o"]),
-        settings: A[m.C.CAPTCHA_AND_RAID_PROTECTION]
+    case f.C.CAPTCHA_AND_RAID_PROTECTION:
+      e = (0, r.jsx)(h.A, {
+        title: _.intl.string(_.t["53eF5o"]),
+        settings: y[f.C.CAPTCHA_AND_RAID_PROTECTION]
       });
       break;
-    case m.C.DM_AND_SPAM_PROTECTION:
-      e = (0, r.jsx)(x.A, {
-        title: O.intl.string(O.t.O0SfFy),
-        settings: A[m.C.DM_AND_SPAM_PROTECTION]
+    case f.C.DM_AND_SPAM_PROTECTION:
+      e = (0, r.jsx)(h.A, {
+        title: _.intl.string(_.t.O0SfFy),
+        settings: y[f.C.DM_AND_SPAM_PROTECTION]
       });
       break;
-    case m.C.AUTOMOD:
-      e = (0, r.jsx)(o.A, {
+    case f.C.AUTOMOD:
+      e = (0, r.jsx)(c.A, {
         guildId: n.id
       });
       break;
-    case m.C.PERMISSIONS:
-      e = (0, r.jsx)(x.A, {
-        title: O.intl.string(O.t.BXoNiT),
-        settings: A[m.C.PERMISSIONS]
+    case f.C.PERMISSIONS:
+      e = (0, r.jsx)(h.A, {
+        title: _.intl.string(_.t.BXoNiT),
+        settings: y[f.C.PERMISSIONS]
       })
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [v !== m.C.OVERVIEW && (0, r.jsx)(a.DUT, {
-      className: y.aX,
+    children: [v !== f.C.OVERVIEW && (0, r.jsx)(a.DUT, {
+      className: O.aX,
       onClick: () => {
-        (0, g.K)(m.C.OVERVIEW)
+        (0, m.K)(f.C.OVERVIEW)
       },
       children: (0, r.jsxs)("div", {
-        className: y.Gv,
+        className: O.Gv,
         children: [(0, r.jsx)(d.A, {
           direction: d.A.Directions.LEFT
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "interactive-text-default",
-          children: O.intl.string(O.t["13/7kX"])
+          children: _.intl.string(_.t["13/7kX"])
         })]
       })
     }), e]

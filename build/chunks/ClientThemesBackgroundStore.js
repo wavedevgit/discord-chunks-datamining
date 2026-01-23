@@ -24,7 +24,7 @@ var a, Chunk311907 = require("./311907.js"),
   Chunk385803 = require("./385803.js"),
   Chunk185928 = require("./185928.js");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,7 +32,7 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let I = true,
+let S = true,
   T = false,
   C = e => {
     let {
@@ -42,7 +42,7 @@ let I = true,
       r = true;
       return
     }
-    r = A.ag[t]
+    r = v.ag[t]
   },
   N = e => {
     let {
@@ -62,18 +62,18 @@ let I = true,
       channelId: t,
       guildId: n
     } = e, r = E.default.getCurrentUser();
-    if (null == t || null == n || (0, c.k8)(o.M.CLIENT_THEMES_COACHMARK) || !(0, y.G2)(r)) return;
+    if (null == t || null == n || (0, c.k8)(o.M.CLIENT_THEMES_COACHMARK) || !(0, b.G2)(r)) return;
     let i = g.A.getChannel(t);
     null != i && (0, m.ke)(i.type) && (T = true)
   };
 
 function P() {
-  I && (r = true), T = false
+  S && (r = true), T = false
 }
 let D = () => {
-    let e = !b.Ay.canUseClientThemes(E.default.getCurrentUser());
-    if (e === I) returnfalse;
-    I = e
+    let e = !y.Ay.canUseClientThemes(E.default.getCurrentUser());
+    if (e === S) returnfalse;
+    S = e
   },
   x = () => {
     if (!u.A.shouldSync("appearance")) returnfalse;
@@ -82,7 +82,7 @@ let D = () => {
       if (null == r) returnfalse;
       r = true
     } else {
-      let t = A.ag[e];
+      let t = v.ag[e];
       if (t === r) returnfalse;
       r = t
     }
@@ -90,20 +90,20 @@ let D = () => {
   L = () => {
     if (!u.A.shouldSync("appearance")) returnfalse;
     let e = _.eh.getSetting().backgroundGradientPresetId;
-    if (p.Ay.useSystemTheme === v.Q_.ON && null != e && (0, d.k7)(v.Q_.OFF), null == e) {
+    if (p.Ay.useSystemTheme === A.Q_.ON && null != e && (0, d.k7)(A.Q_.OFF), null == e) {
       null != r && (r = true);
       return
     }
-    let t = A.ag[e],
+    let t = v.ag[e],
       n = (null == r ? true : r.id) === (null == t ? true : t.id);
     null == t || n || (r = t)
   };
 class j extends(a = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    null != e && (r = (null == e ? true : e.gradientPresetId) != null ? A.ag[e.gradientPresetId] : true), this.waitFor(g.A, u.A, f.A, p.Ay, h.A, E.default), this.syncWith([E.default], D), this.syncWith([u.A], x)
+    null != e && (r = (null == e ? true : e.gradientPresetId) != null ? v.ag[e.gradientPresetId] : true), this.waitFor(g.A, u.A, f.A, p.Ay, h.A, E.default), this.syncWith([E.default], D), this.syncWith([u.A], x)
   }
   getState() {
-    return I ? {} : {
+    return S ? {} : {
       gradientPresetId: null == r ? true : r.id
     }
   }
@@ -114,7 +114,7 @@ class j extends(a = Chunk311907.Ay.PersistedStore) {
     return null == this.gradientPreset ? null : (0, O.FK)(this.gradientPreset)
   }
   get isPreview() {
-    return I
+    return S
   }
   get isCoachmark() {
     return T
@@ -123,7 +123,7 @@ class j extends(a = Chunk311907.Ay.PersistedStore) {
     return i
   }
   constructor(...e) {
-    super(...e), S(this, "migrations", [e => {
+    super(...e), I(this, "migrations", [e => {
       var t;
       return {
         gradientPresetId: null == e || null == (t = e.gradientPreset) ? true : t.id
@@ -131,7 +131,7 @@ class j extends(a = Chunk311907.Ay.PersistedStore) {
     }])
   }
 }
-S(j, "displayName", "ClientThemesBackgroundStore"), S(j, "persistKey", "ClientThemesBackgroundStore");
+I(j, "displayName", "ClientThemesBackgroundStore"), I(j, "persistKey", "ClientThemesBackgroundStore");
 let M = new j(Chunk73153.h, {
   UPDATE_BACKGROUND_GRADIENT_PRESET: C,
   UPDATE_MOBILE_PENDING_THEME_INDEX: N,

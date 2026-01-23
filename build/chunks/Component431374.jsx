@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  i = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
   Chunk843282 = require("./843282.jsx"),
@@ -34,12 +34,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk307731 = require("./307731.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk501336 = require("./501336.js");
-let C = "CLEAR_AFTER";
+let U = "CLEAR_AFTER";
 
 function M(t) {
   var e, n;
   let {
-    transitionState: r,
+    transitionState: i,
     onClose: M,
     sourceAnalyticsLocations: k = [],
     prompt: H = null
@@ -49,14 +49,14 @@ function M(t) {
     location: "CustomStatusModalWithPreview"
   }), {
     analyticsLocations: L
-  } = (0, h.Ay)(k, p.A.CUSTOM_STATUS_MODAL), F = (0, s.bG)([A.default], () => {
+  } = (0, h.Ay)(k, g.A.CUSTOM_STATUS_MODAL), F = (0, s.bG)([T.default], () => {
     var t;
-    return null != (t = A.default.getCurrentUser()) ? t : null
-  }), Z = (0, _.K)(), [z, V] = a.useState(null != (e = null == Z ? true : Z.state) ? e : ""), [W, q] = a.useState(null != (n = null == Z ? true : Z.emoji) ? n : null), [G, X] = a.useState((0, v.A)()), B = a.useRef(null), K = a.useRef(null), Q = a.useRef(null), J = Y && null != H ? H.label() : E.intl.string(E.t.xod367), [$, tt] = a.useState(J), {
+    return null != (t = T.default.getCurrentUser()) ? t : null
+  }), Z = (0, P.K)(), [z, B] = r.useState(null != (e = null == Z ? true : Z.state) ? e : ""), [V, W] = r.useState(null != (n = null == Z ? true : Z.emoji) ? n : null), [q, G] = r.useState((0, v.A)()), X = r.useRef(null), K = r.useRef(null), Q = r.useRef(null), J = Y && null != H ? H.label() : C.intl.string(C.t.xod367), [$, tt] = r.useState(J), {
     ref: te,
     width: tn
   } = (0, f.Ay)(J);
-  a.useEffect(() => {
+  r.useEffect(() => {
     let t = Q.current;
     if (null == tn || null == t) return;
     let e = tn - 78;
@@ -68,58 +68,58 @@ function M(t) {
         l = Math.floor((e - 3 * t) / t);
       tt("".concat(J.substring(0, l)).concat("..."))
     }
-  }, [tn, J]), a.useEffect(() => {
+  }, [tn, J]), r.useEffect(() => {
     y.default.track(N.HAw.OPEN_MODAL, {
-      type: p.A.CUSTOM_STATUS_MODAL,
+      type: g.A.CUSTOM_STATUS_MODAL,
       location_stack: L
     })
-  }, [L]), (0, g.Ay)(() => {
+  }, [L]), (0, p.Ay)(() => {
     var t, e;
-    null == (t = B.current) || t.focus(), null == (e = B.current) || e.setSelection(z.length, z.length)
+    null == (t = X.current) || t.focus(), null == (e = X.current) || e.setSelection(z.length, z.length)
   });
   let tl = () => {
-      G !== C && ((0, j.A)({
+      q !== U && ((0, j.A)({
         text: z,
-        emojiInfo: W,
-        clearAfter: G,
+        emojiInfo: V,
+        clearAfter: q,
         prompt: H,
         analyticsLocations: L
       }), M())
     },
-    ta = Y ? E.intl.string(E.t.rp0ahn) : E.intl.string(E.t.UcdRn2),
-    tr = "custom-status-input";
+    tr = Y ? C.intl.string(C.t.rp0ahn) : C.intl.string(C.t.UcdRn2),
+    ti = "custom-status-input";
   return (0, l.jsxs)(o.Modal, {
-    title: E.intl.string(E.t.Zx4jzN),
+    title: C.intl.string(C.t.Zx4jzN),
     actionBarInput: (0, l.jsx)("div", {
-      className: U.l3,
+      className: E.l3,
       children: (0, l.jsx)(u.Te, {
         maxVisibleItems: D.SX.length + 1,
-        value: G,
+        value: q,
         options: I ? [{
-          value: C,
-          key: C,
-          label: E.intl.string(E.t.E45wvP),
+          value: U,
+          key: U,
+          label: C.intl.string(C.t.E45wvP),
           disabled: true
         }, ...D.SX.map(t => ({
           value: t,
           key: t,
-          label: (0, x.A)(t, true)
+          label: (0, _.A)(t, true)
         }))] : D.SX.map(t => ({
           value: t,
           key: t,
-          label: (0, x.A)(t)
+          label: (0, _.A)(t)
         })),
-        onChange: t => X(t),
-        optionClassName: U.Pl,
+        onChange: t => G(t),
+        optionClassName: E.Pl,
         renderOptionLabel: t => {
           let {
             value: e,
             label: n,
-            disabled: a
+            disabled: r
           } = t;
           return (0, l.jsx)("span", {
-            className: i()(U.j3, a ? U.r9 : true),
-            children: e === C ? n : (0, P.A)(e, I)
+            className: a()(E.j3, r ? E.r9 : true),
+            children: e === U ? n : (0, x.A)(e, I)
           })
         },
         variant: "text-only",
@@ -131,52 +131,52 @@ function M(t) {
     onClose: async () => {
       await M()
     },
-    transitionState: r,
+    transitionState: i,
     actions: [{
-      text: E.intl.string(E.t["R3BPH+"]),
+      text: C.intl.string(C.t["R3BPH+"]),
       variant: "primary",
       onClick: tl
     }],
     children: [null != F && (0, l.jsx)("div", {
-      className: U.q5,
+      className: E.q5,
       children: (0, l.jsx)(w.A, {
         user: F,
         previewText: z,
-        previewEmoji: W,
+        previewEmoji: V,
         placeHolderText: J,
-        transitionState: r
+        transitionState: i
       })
     }), (0, l.jsxs)("div", {
-      className: U.eH,
+      className: E.eH,
       children: [(0, l.jsx)(d.Text, {
         tag: "label",
-        htmlFor: tr,
+        htmlFor: ti,
         variant: "heading-md/semibold",
-        className: U.wW,
-        children: ta
+        className: E.wW,
+        children: tr
       }), (0, l.jsxs)("div", {
-        className: U.Kf,
+        className: E.Kf,
         ref: te,
         children: [(0, l.jsx)("span", {
           ref: Q,
-          className: U._D,
+          className: E._D,
           "aria-hidden": "true"
         }), (0, l.jsx)("div", {
-          className: U.S0,
+          className: E.S0,
           children: (0, l.jsx)(d.YNO, {
             targetElementRef: K,
             renderPopout: t => {
               let {
                 closePopout: e
               } = t;
-              return (0, l.jsx)(T.A, {
+              return (0, l.jsx)(A.A, {
                 closePopout: e,
                 onSelectEmoji: t => {
                   let {
                     emoji: n,
                     willClose: l
                   } = t;
-                  null == n || q(null != n.id ? {
+                  null == n || W(null != n.id ? {
                     id: n.id,
                     name: n.name,
                     animated: n.animated
@@ -194,9 +194,9 @@ function M(t) {
             animation: d.YNO.Animation.NONE,
             align: "top",
             children: (t, e) => {
-              var n, a;
+              var n, r;
               let {
-                isShown: r
+                isShown: i
               } = e;
               return (0, l.jsx)(b.A, (n = function(t) {
                 for (var e = 1; e < arguments.length; e++) {
@@ -215,27 +215,27 @@ function M(t) {
                   })
                 }
                 return t
-              }({}, t), a = a = {
+              }({}, t), r = r = {
                 ref: K,
-                active: r,
-                className: U.Z8,
+                active: i,
+                className: E.Z8,
                 spriteSize: 24,
                 tabIndex: 0,
-                renderButtonContents: null == W ? null : () => (0, l.jsx)(m.A, {
-                  className: U.Zg,
-                  emojiId: W.id,
-                  emojiName: W.name,
-                  animated: !!W.animated
+                renderButtonContents: null == V ? null : () => (0, l.jsx)(m.A, {
+                  className: E.Zg,
+                  emojiId: V.id,
+                  emojiName: V.name,
+                  animated: !!V.animated
                 })
-              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(t, e) {
+              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {
                 var n = Object.keys(t);
                 if (Object.getOwnPropertySymbols) {
                   var l = Object.getOwnPropertySymbols(t);
                   n.push.apply(n, l)
                 }
                 return n
-              })(Object(a)).forEach(function(t) {
-                Object.defineProperty(n, t, Object.getOwnPropertyDescriptor(a, t))
+              })(Object(r)).forEach(function(t) {
+                Object.defineProperty(n, t, Object.getOwnPropertyDescriptor(r, t))
               }), n))
             }
           })
@@ -247,28 +247,28 @@ function M(t) {
           showRemainingCharacterCount: false,
           placeholder: $,
           onChange: t => {
-            V(t)
+            B(t)
           },
           onKeyDown: t => {
             "Enter" === t.key && tl()
           },
-          className: U.hF,
-          inputRef: B,
-          id: tr
-        }), (z.length > 0 || null != W) && (0, l.jsx)(d.DUT, {
-          "aria-label": E.intl.string(E.t.wfYTHe),
-          className: U.mt,
+          className: E.hF,
+          inputRef: X,
+          id: ti
+        }), (z.length > 0 || null != V) && (0, l.jsx)(d.DUT, {
+          "aria-label": C.intl.string(C.t.wfYTHe),
+          className: E.mt,
           onClick: () => {
-            V(""), q(null)
+            B(""), W(null)
           },
           children: (0, l.jsx)(d.aXh, {
             size: "md",
             color: "currentColor",
-            className: U.hj
+            className: E.hj
           })
         })]
       }), (0, l.jsx)(d.AC4, {
-        children: "".concat(E.intl.string(E.t.EVV6uZ), ": ").concat(J)
+        children: "".concat(C.intl.string(C.t.EVV6uZ), ": ").concat(J)
       })]
     })]
   })

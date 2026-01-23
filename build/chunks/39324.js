@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 39324, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => s
+  A: () => a
 });
 var Chunk353640 = require("./353640.js"),
   Chunk849077 = require("./849077.js");
@@ -11,13 +11,13 @@ let i = {
     [Chunk849077.Ur.YESTERDAY]: true,
     [Chunk849077.Ur.OLDER]: true
   },
-  a = {
+  s = {
     [Chunk849077.Ur.UNREAD]: true,
     [Chunk849077.Ur.TODAY]: false,
     [Chunk849077.Ur.YESTERDAY]: false,
     [Chunk849077.Ur.OLDER]: false
   },
-  s = (0, Chunk353640.v)((e, t) => ({
+  a = (0, Chunk353640.v)((e, t) => ({
     messageCategoryOpenStates: i,
     getOpenState: e => t().messageCategoryOpenStates[e],
     toggleOpenState: t => {
@@ -58,7 +58,7 @@ let i = {
     },
     setOpenStateFromUnreads: t => {
       e({
-        messageCategoryOpenStates: t ? a : i
+        messageCategoryOpenStates: t ? s : i
       })
     }
   }))

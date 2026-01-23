@@ -2,7 +2,7 @@
 /** chunk id: 256195, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -22,17 +22,17 @@ let m = 175,
   g = 195,
   Chunk913516 = require("./913516.js");
 
-function b(e) {
+function y(e) {
   let {
     participant: t,
     width: n,
     noArt: i = false,
-    selected: b = false
-  } = e, y = n < g, {
+    selected: y = false
+  } = e, b = n < g, {
     defaultWatchMultipleStreams: O
   } = (0, u.W)({
     location: "StreamHidden"
-  }), A = (0, s.bG)([d.A, f.default], () => d.A.getAllActiveStreams().some(e => {
+  }), v = (0, s.bG)([d.A, f.default], () => d.A.getAllActiveStreams().some(e => {
     let {
       ownerId: t
     } = e;
@@ -44,27 +44,27 @@ function b(e) {
       className: h.FP,
       artURL: E,
       noArt: i,
-      selected: b,
+      selected: y,
       size: (0, p.J)(n),
-      header: y ? null : _.intl.string(_.t.epU4Ec),
-      description: b ? null : (0, r.jsxs)("div", {
+      header: b ? null : _.intl.string(_.t.epU4Ec),
+      description: y ? null : (0, r.jsxs)("div", {
         className: a()(h.t2, {
-          [h.y8]: !y
+          [h.y8]: !b
         }),
         children: [(0, r.jsx)("div", {
           className: h.lO,
           children: (0, r.jsx)(l.Button, {
             variant: "secondary",
-            size: y ? "sm" : "md",
+            size: b ? "sm" : "md",
             text: n < m ? _.intl.string(_.t.I6JG46) : _.intl.string(_.t["7Xq/nV"])
           })
-        }), A && !O ? (0, r.jsx)("div", {
+        }), v && !O ? (0, r.jsx)("div", {
           className: a()(h.lO, h.EU),
           children: (0, r.jsx)(o.m_, {
             text: _.intl.string(_.t.wCrzut),
             children: (0, r.jsx)(l.K0, {
               variant: "secondary",
-              size: y ? "sm" : "md",
+              size: b ? "sm" : "md",
               icon: l.vAm,
               "aria-label": _.intl.string(_.t.wCrzut),
               onClick: e => {

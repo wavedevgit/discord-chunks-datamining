@@ -81,25 +81,25 @@ function L(e) {
     costDecorator: g,
     staticImageUrl: E,
     animatedImageUrl: O,
-    powerup: S,
+    powerup: I,
     isNew: N,
     onClose: w
   } = e, {
     analyticsLocations: D
-  } = (0, p.Ay)(), L = n !== I.b_.INACTIVE, j = (0, m.A)(t), M = (0, c.bG)([d.A], () => d.A.useReducedMotion), [k, U] = i.useState(false), [G, V] = i.useState(false), F = G, B = G && null != O && "" !== O && !M ? O : E, H = i.useCallback(() => {
-    let e = y.A.getGuild(t);
-    null != e && (0, A.g)({
+  } = (0, p.Ay)(), L = n !== S.b_.INACTIVE, j = (0, m.A)(t), M = (0, c.bG)([d.A], () => d.A.useReducedMotion), [k, U] = i.useState(false), [G, V] = i.useState(false), F = G, B = G && null != O && "" !== O && !M ? O : E, H = i.useCallback(() => {
+    let e = b.A.getGuild(t);
+    null != e && (0, v.g)({
       analyticsLocation: {
-        page: v.liQ.GUILD_POWERUPS_MARKETING,
-        section: v.JJy.GUILD_POWERUPS_MARKETING_PERKS_SECTION
+        page: A.liQ.GUILD_POWERUPS_MARKETING,
+        section: A.JJy.GUILD_POWERUPS_MARKETING_PERKS_SECTION
       },
       numberOfBoostsToAdd: 1,
       analyticsLocations: D,
       guild: e
     })
   }, [t, D]), Y = i.useCallback(() => {
-    w(), (0, b.A)(t, f.A.GUILD_POWERUPS_MARKETING, S.skuId)
-  }, [t, S.skuId, w]), W = {
+    w(), (0, y.A)(t, f.A.GUILD_POWERUPS_MARKETING, I.skuId)
+  }, [t, I.skuId, w]), W = {
     tension: 400,
     friction: 30
   }, K = (0, u.zhh)({
@@ -254,7 +254,7 @@ let M = 3,
           className: R.fV,
           variant: "text-md/medium",
           children: T.intl.format(N.default.S562fn, {
-            helpDeskArticle: O.A.getArticleURL(v.MVz.GUILD_BOOSTING_FAQ)
+            helpDeskArticle: O.A.getArticleURL(A.MVz.GUILD_BOOSTING_FAQ)
           })
         })]
       }), (0, r.jsx)("div", {

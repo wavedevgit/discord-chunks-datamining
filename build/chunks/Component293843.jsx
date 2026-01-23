@@ -72,9 +72,9 @@ function j(e) {
     }
   }, [G]);
   let H = () => {
-    (0, d.A)(p.A.getArticleURL(S.MVz.CHECKPOINT))
+    (0, d.A)(p.A.getArticleURL(I.MVz.CHECKPOINT))
   };
-  return n ? (0, r.jsxs)(b.A, {
+  return n ? (0, r.jsxs)(y.A, {
     className: C.Ur,
     children: [(0, r.jsx)(l.A, {
       autoPlay: !G,
@@ -86,52 +86,52 @@ function j(e) {
         src: R.A,
         type: "video/webm"
       })
-    }), (0, r.jsx)(y.A, {
+    }), (0, r.jsx)(b.A, {
       variant: "display-lg",
       className: C.Vy,
-      children: T.intl.string(I.default.kimsIr)
-    }), (0, r.jsx)(y.A, {
+      children: T.intl.string(S.default.kimsIr)
+    }), (0, r.jsx)(b.A, {
       variant: "heading-xl/medium",
       className: C.VA,
-      children: T.intl.format(I.default.GNHD4i, {
+      children: T.intl.format(S.default.GNHD4i, {
         learnMoreHook: (e, t) => (0, r.jsx)(u.DUT, {
           onClick: H,
           className: C.C2,
-          children: (0, r.jsx)(y.A, {
+          children: (0, r.jsx)(b.A, {
             variant: "heading-xl/medium",
             className: C.nf,
             children: e
           })
         }, t)
       })
-    }), (0, r.jsx)(y.A, {
+    }), (0, r.jsx)(b.A, {
       variant: "text-lg/medium",
-      children: T.intl.string(I.default["xLI+Hj"])
+      children: T.intl.string(S.default["xLI+Hj"])
     }), (0, r.jsx)(g.A, {
       className: C.Hk,
       textSize: 20
     })]
-  }) : (0, r.jsxs)(b.A, {
+  }) : (0, r.jsxs)(y.A, {
     className: C.Qs,
     noPadding: true,
-    children: [!a && (0, r.jsx)(y.A, {
+    children: [!a && (0, r.jsx)(b.A, {
       variant: "text-lg/medium",
       className: C.ed,
-      children: T.intl.format(I.default["1jPMeG"], {
+      children: T.intl.format(S.default["1jPMeG"], {
         learnMoreHook: (e, t) => (0, r.jsx)(u.DUT, {
           onClick: H,
           className: C.C2,
-          children: (0, r.jsx)(y.A, {
+          children: (0, r.jsx)(b.A, {
             variant: "text-lg/medium",
             className: C.nf,
             children: e
           })
         }, t)
       })
-    }), !a && (0, r.jsx)(y.A, {
+    }), !a && (0, r.jsx)(b.A, {
       variant: "text-md/medium",
       className: C.al,
-      children: T.intl.format(I.default.g476ZL, {
+      children: T.intl.format(S.default.g476ZL, {
         name: "Exyl"
       })
     }), a ? null : (0, r.jsx)(o.animated.div, {
@@ -161,25 +161,25 @@ function j(e) {
         type: "video/webm"
       })
     }), a ? null : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(A.A, {
+      children: [(0, r.jsx)(v.A, {
         variant: "display-lg",
         className: C.DD,
         textClassName: C.Qq,
-        text: T.intl.string(I.default["CdU/PF"]),
+        text: T.intl.string(S.default["CdU/PF"]),
         delay: x
-      }), (0, r.jsx)(A.A, {
+      }), (0, r.jsx)(v.A, {
         variant: "text-lg/medium",
         className: C.cz,
         textClassName: C.Qq,
-        text: T.intl.string(I.default["M/LvW0"]),
-        delay: x + A.f
+        text: T.intl.string(S.default["M/LvW0"]),
+        delay: x + v.f
       })]
     }), a ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(o.animated.div, {
         style: F,
         children: [(0, r.jsx)(E.A, {
           className: C.CB,
-          slide: v.P7.WELCOME
+          slide: A.P7.WELCOME
         }), (0, r.jsxs)(m.A, {
           contentClassName: C.a0,
           onClick: t,

@@ -66,10 +66,10 @@ function f(e) {
   } = e, m = u(e, ["activity", "user", "channelId", "guildId", "source", "size", "variant", "onAction"]), {
     tooltip: g,
     loading: E,
-    disabled: b,
-    onClick: y
+    disabled: y,
+    onClick: b
   } = (0, o.J$)(t, n, f, s.Ay.getNickname(d, l, n)), O = () => {
-    null == h || h(), y()
+    null == h || h(), b()
   };
   return (0, r.jsx)(i.m, {
     text: g,
@@ -78,7 +78,7 @@ function f(e) {
       size: p,
       variant: _,
       onClick: O,
-      disabled: b,
+      disabled: y,
       loading: E,
       "aria-label": null != g ? g : t.name
     }, m))

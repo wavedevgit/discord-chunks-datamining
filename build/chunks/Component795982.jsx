@@ -53,11 +53,11 @@ function P(e) {
     message: t,
     snapshot: n,
     index: u
-  } = e, f = i.useMemo(() => new S.j(t, n, u), [t, n, u]), p = (0, s.bG)([E.A, v.default, A.A, O.A, y.A, d.A], () => f.getForwardInfo(E.A, v.default, A.A, O.A, y.A, d.A).footerInfo, [f], o.A), _ = (0, s.bG)([E.A], () => {
+  } = e, f = i.useMemo(() => new I.j(t, n, u), [t, n, u]), p = (0, s.bG)([E.A, A.default, v.A, O.A, b.A, d.A], () => f.getForwardInfo(E.A, A.default, v.A, O.A, b.A, d.A).footerInfo, [f], o.A), _ = (0, s.bG)([E.A], () => {
     var e;
     return E.A.getChannel(null == (e = t.messageReference) ? true : e.channel_id)
   }), h = i.useCallback(() => {
-    (0, I.A)(t)
+    (0, S.A)(t)
   }, [t]);
   return null == p ? null : (0, r.jsxs)(c.DUT, {
     className: R.xQ,
@@ -100,21 +100,21 @@ function x(e) {
     message: n,
     snapshot: a,
     index: o
-  } = e, l = i.useMemo(() => (0, T.A)(n, a), [n, a]), c = g.hD.useSetting(), u = g.rs.useSetting(), d = c && u, m = (0, s.bG)([b.A], () => b.A.isDeveloper), y = (0, f.S)((null != (t = l.editedTimestamp) ? t : l.timestamp).valueOf()), {
+  } = e, l = i.useMemo(() => (0, T.A)(n, a), [n, a]), c = g.hD.useSetting(), u = g.rs.useSetting(), d = c && u, m = (0, s.bG)([y.A], () => y.A.isDeveloper), b = (0, f.S)((null != (t = l.editedTimestamp) ? t : l.timestamp).valueOf()), {
     content: O,
-    hasSpoilerEmbeds: A,
-    hasBailedAst: v
+    hasSpoilerEmbeds: v,
+    hasBailedAst: A
   } = (0, _.A)(l, {
     hideSimpleEmbedContent: d,
     isInteracting: false,
     formatInline: false,
-    allowList: y,
-    allowHeading: y,
+    allowList: b,
+    allowHeading: b,
     allowLinks: true,
     allowDevLinks: m,
     previewLinkTarget: true
-  }), S = (0, s.bG)([E.A], () => E.A.getChannel(n.channel_id)), I = g.hH.useSetting();
-  return null == S ? null : (0, r.jsxs)("div", {
+  }), I = (0, s.bG)([E.A], () => E.A.getChannel(n.channel_id)), S = g.hH.useSetting();
+  return null == I ? null : (0, r.jsxs)("div", {
     className: R.kL,
     children: [(0, r.jsx)("div", {
       className: R.hD
@@ -123,15 +123,15 @@ function x(e) {
       children: [(0, r.jsx)(w, {}), (0, r.jsx)(p.Ay, {
         message: l,
         content: O,
-        compact: I
+        compact: S
       }), (0, h.A)({
         channelMessageProps: {
           message: l,
-          channel: S,
-          compact: I
+          channel: I,
+          compact: S
         },
-        hasSpoilerEmbeds: A,
-        hasBailedAst: v,
+        hasSpoilerEmbeds: v,
+        hasBailedAst: A,
         isInteracting: false,
         isMessageSnapshot: true,
         renderThreadAccessory: false

@@ -10,11 +10,11 @@ function i(e, t) {
   let {
     isLoading: n,
     error: i,
-    onToggle: a
+    onToggle: s
   } = (0, l.A)(e, t);
   return {
     isLoading: n,
     error: i,
-    onDeactivate: r.useCallback(() => a(false), [a])
+    onDeactivate: r.useCallback(() => s(false), [s])
   }
 }

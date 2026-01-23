@@ -80,7 +80,7 @@ let k = () => (0, r.jsx)("div", {
       markAsDismissed: s
     } = e, {
       analyticsLocations: o
-    } = (0, m.Ay)(h.A.CLIENT_THEMES_EDITOR), [u, d] = (0, l.yK)([S.default, C.A], () => [C.A.gradientPreset, T.Ay.isPremium(S.default.getCurrentUser())]), p = (0, b.V)(), _ = (0, T.FY)({
+    } = (0, m.Ay)(h.A.CLIENT_THEMES_EDITOR), [u, d] = (0, l.yK)([I.default, C.A], () => [C.A.gradientPreset, T.Ay.isPremium(I.default.getCurrentUser())]), p = (0, y.V)(), _ = (0, T.FY)({
       intervalType: null == p || null == (t = p.subscription_trial) ? true : t.interval,
       intervalCount: null == p || null == (n = p.subscription_trial) ? true : n.interval_count
     }), g = d ? j.intl.string(j.t.IJI7yk) : (null == p || null == (i = p.subscription_trial) ? true : i.sku_id) === L.pe.TIER_2 ? _ : j.intl.string(j.t.mr4K7D), E = e => {
@@ -93,7 +93,7 @@ let k = () => (0, r.jsx)("div", {
         theme: u.theme
       })))
     };
-    return (0, r.jsx)(y.A, {
+    return (0, r.jsx)(b.A, {
       subscriptionTier: L.pe.TIER_2,
       defaultTextOverride: g,
       premiumModalAnalyticsLocation: {
@@ -113,7 +113,7 @@ let k = () => (0, r.jsx)("div", {
     } = (0, l.cf)([C.A], () => ({
       isPreview: C.A.isPreview
     })), [s, c] = i.useState(false), d = (0, R.H)(), f = () => {
-      null != t && t(x.i.DISMISS), d(D.HAw.CLIENT_THEME_PREVIEW_CLOSED), (0, N.D)(), n || (0, v.openUserSettings)(A.X.APPEARANCE_PANEL, {
+      null != t && t(x.i.DISMISS), d(D.HAw.CLIENT_THEME_PREVIEW_CLOSED), (0, N.D)(), n || (0, A.openUserSettings)(v.X.APPEARANCE_PANEL, {
         section: D.nc_.APPEARANCE
       })
     }, p = (0, E.X)({
@@ -162,19 +162,19 @@ function F(e) {
     shouldEditorAnimate: n && !_.A.useReducedMotion
   })), u = (0, g.fy)().activePanel === g.HP.CLIENT_THEMES, f = (0, R.H)();
   i.useEffect(() => f(D.HAw.CLIENT_THEME_PREVIEW_VIEWED), [f]), i.useEffect(() => {
-    o && I.default.track(D.HAw.PREMIUM_UPSELL_VIEWED, {
+    o && S.default.track(D.HAw.PREMIUM_UPSELL_VIEWED, {
       type: L.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       location_stack: a
     })
   }, [o, a]);
   let E = (0, R.Z)(),
-    b = (0, p.A)(null, o ? E : D.tEg);
+    y = (0, p.A)(null, o ? E : D.tEg);
   return i.useEffect(() => {
     if (o && !u) return E
   }, [o, u, E]), (0, r.jsx)(m.f5, {
     value: a,
     children: (0, r.jsx)("div", {
-      ref: b,
+      ref: y,
       "data-app-right-panel": true,
       className: s()(M.HS, c ? M.hP : null),
       children: (0, r.jsxs)(d.Fmo, {

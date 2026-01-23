@@ -15,13 +15,13 @@ function u(e) {
   let t = e.isDM() && !e.isSystemDM() && !e.rawRecipients.some(e => e.bot),
     n = t ? e.getRecipientId() : null,
     u = (0, i.l)(e.id);
-  return (0, r.bG)([a.A, l.A, s.A, o.default], () => {
-    if (null != u || !t || l.A.isMessageRequest(e.id) || null != n && s.A.getRelationshipType(n) === c.eA$.BLOCKED) returnfalse;
+  return (0, r.bG)([s.A, l.A, a.A, o.default], () => {
+    if (null != u || !t || l.A.isMessageRequest(e.id) || null != n && a.A.getRelationshipType(n) === c.eA$.BLOCKED) returnfalse;
     if (null != n) {
       let e = o.default.getUser(n);
       if (null != e && e.hasFlag(c.nhx.PROVISIONAL_ACCOUNT)) returnfalse
     }
-    let r = a.A.getMessages(e.id);
-    return r.ready && !r.hasMoreBefore && !r.hasMoreAfter && r.length < 25 && !a.A.hasCurrentUserSentMessage(e.id)
+    let r = s.A.getMessages(e.id);
+    return r.ready && !r.hasMoreBefore && !r.hasMoreAfter && r.length < 25 && !s.A.hasCurrentUserSentMessage(e.id)
   }, [u, t, e.id, n])
 }

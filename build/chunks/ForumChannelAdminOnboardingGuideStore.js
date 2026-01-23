@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function a(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -14,25 +14,25 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = new Set;
+let a = new Set;
 class o extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    null != e && (s = new Set(e))
+    null != e && (a = new Set(e))
   }
   hasHidden(e) {
-    return s.has(e)
+    return a.has(e)
   }
   getState() {
-    return s
+    return a
   }
 }
-a(o, "displayName", "ForumChannelAdminOnboardingGuideStore"), a(o, "persistKey", "ForumChannelAdminOnboardingGuideStore");
+s(o, "displayName", "ForumChannelAdminOnboardingGuideStore"), s(o, "persistKey", "ForumChannelAdminOnboardingGuideStore");
 let c = new o(Chunk73153.h, {
   ADMIN_ONBOARDING_GUIDE_HIDE: function(e) {
     let {
       channelId: t,
       hide: n
     } = e;
-    n ? s.add(t) : s.delete(t)
+    n ? a.add(t) : a.delete(t)
   }
 })

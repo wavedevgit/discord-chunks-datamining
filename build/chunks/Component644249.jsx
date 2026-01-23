@@ -2,7 +2,7 @@
 /** chunk id: 644249, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -51,13 +51,13 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -76,7 +76,7 @@ function O(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let A = Chunk64700.memo(function(e) {
+let v = Chunk64700.memo(function(e) {
   let t, n, {
       useChatFontScaling: i,
       hideEmoji: a,
@@ -84,21 +84,21 @@ let A = Chunk64700.memo(function(e) {
       className: m,
       count: g,
       me: E,
-      me_burst: b,
-      burst_count: y,
+      me_burst: y,
+      burst_count: b,
       burst_colors: O,
-      readOnly: A,
-      isLurking: v,
-      isGuest: S,
-      isPendingMember: I,
+      readOnly: v,
+      isLurking: A,
+      isGuest: I,
+      isPendingMember: S,
       type: T,
       emojiSize: C
     } = e,
     N = T === f.v.BURST,
-    R = (0, p.IN)(E, b, T),
+    R = (0, p.IN)(E, y, T),
     w = (0, d.g)(N && null != O ? O : []),
     P = i ? h : _,
-    D = N ? y : g,
+    D = N ? b : g,
     x = (0, u.x)(D, p.$Z),
     L = {};
   if (N && null != w) {
@@ -118,7 +118,7 @@ let A = Chunk64700.memo(function(e) {
   return (0, r.jsxs)("div", {
     className: s()(P.reaction, P.reactionInner, m, {
       [P.reactionMe]: R,
-      [P.reactionReadOnly]: A && !v && !I && !S
+      [P.reactionReadOnly]: v && !A && !S && !I
     }),
     style: L,
     children: [(0, r.jsx)(c.A, {
@@ -137,24 +137,24 @@ let A = Chunk64700.memo(function(e) {
   })
 });
 
-function v(e) {
+function A(e) {
   var t;
   return "".concat(e.type === f.v.BURST ? "burst:" : "").concat(null != (t = e.emoji.id) ? t : 0, ":").concat(e.emoji.name)
 }
-let S = Chunk64700.memo(function(e) {
+let I = Chunk64700.memo(function(e) {
   let {
     showImmediate: t,
     reactions: n
-  } = e, a = y(e, ["showImmediate", "reactions"]), [s, l] = i.useState(false), [c, u] = i.useTransition(), d = i.useCallback(e => {
+  } = e, a = b(e, ["showImmediate", "reactions"]), [s, l] = i.useState(false), [c, u] = i.useTransition(), d = i.useCallback(e => {
     !e || s || c || u(() => {
       l(true)
     })
-  }, [s, c]), f = (0, o.K)(d), _ = s && !c || t ? p.qT : A;
+  }, [s, c]), f = (0, o.K)(d), _ = s && !c || t ? p.qT : v;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       ref: f
-    }), n.map(e => (0, r.jsx)(_, b(g({}, a, e), {
+    }), n.map(e => (0, r.jsx)(_, y(g({}, a, e), {
       emojiSize: "reaction"
-    }), v(e)))]
+    }), A(e)))]
   })
 })

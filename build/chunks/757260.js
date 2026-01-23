@@ -23,33 +23,33 @@ function l(e, t, n) {
     validationState: m = "valid",
     isInvalid: g,
     onPressStart: E,
-    onPressEnd: b,
-    onPressChange: y,
+    onPressEnd: y,
+    onPressChange: b,
     onPress: O,
-    onPressUp: A,
-    onClick: v
-  } = e, S = e => {
+    onPressUp: v,
+    onClick: A
+  } = e, I = e => {
     e.stopPropagation(), t.setSelected(e.target.checked)
   }, {
-    pressProps: I,
+    pressProps: S,
     isPressed: T
   } = (0, s.d)({
     onPressStart: E,
-    onPressEnd: b,
-    onPressChange: y,
+    onPressEnd: y,
+    onPressChange: b,
     onPress: O,
-    onPressUp: A,
-    onClick: v,
+    onPressUp: v,
+    onClick: A,
     isDisabled: l
   }), {
     pressProps: C,
     isPressed: N
   } = (0, s.d)({
     onPressStart: E,
-    onPressEnd: b,
-    onPressChange: y,
-    onPressUp: A,
-    onClick: v,
+    onPressEnd: y,
+    onPressChange: b,
+    onPressUp: v,
+    onClick: A,
     onPress(e) {
       var r;
       null == O || O(e), t.toggle(), null == (r = n.current) || r.focus()
@@ -57,7 +57,7 @@ function l(e, t, n) {
     isDisabled: l || c
   }), {
     focusableProps: R
-  } = (0, o.Wc)(e, n), w = (0, r.v)(I, R), P = (0, i.$)(e, {
+  } = (0, o.Wc)(e, n), w = (0, r.v)(S, R), P = (0, i.$)(e, {
     labelable: true
   });
   return (0, a.F)(n, t.defaultSelected, t.setSelected), {
@@ -69,7 +69,7 @@ function l(e, t, n) {
       "aria-errormessage": e["aria-errormessage"],
       "aria-controls": e["aria-controls"],
       "aria-readonly": c || true,
-      onChange: S,
+      onChange: I,
       disabled: l,
       ...null == u ? {} : {
         value: u

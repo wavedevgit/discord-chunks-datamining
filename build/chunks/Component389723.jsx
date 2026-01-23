@@ -110,9 +110,9 @@ function L(e) {
     onSelectionChange: m,
     value: g,
     customMatchSorter: E,
-    matchSorterOptions: y,
-    required: A
-  } = u, v = i.useId(), S = i.useRef(null), [I, T] = i.useState(null), [C, R] = i.useState(false), [w, D] = i.useState(""), [L, j] = i.useState(""), {
+    matchSorterOptions: b,
+    required: v
+  } = u, A = i.useId(), I = i.useRef(null), [S, T] = i.useState(null), [C, R] = i.useState(false), [w, D] = i.useState(""), [L, j] = i.useState(""), {
     options: M,
     loading: k,
     onQueryChange: U
@@ -126,7 +126,7 @@ function L(e) {
   i.useEffect(() => {
     U(w)
   }, [U, w]);
-  let V = i.useMemo(() => "" === w ? M : null != E ? E(M, w) : (0, o.Ht)(M, w, null != y ? y : x), [M, w, E, y]),
+  let V = i.useMemo(() => "" === w ? M : null != E ? E(M, w) : (0, o.Ht)(M, w, null != b ? b : x), [M, w, E, b]),
     F = i.useRef(true),
     B = i.useMemo(() => ("single" === d ? F.current = M.find(e => e.value === g) : F.current = true, null == g || Array.isArray(g) && 0 === g.length) ? [] : (Array.isArray(g) ? g : [g]).map(e => M.find(t => t.value === e)).filter(e => null != e), [g, M, d]);
   i.useEffect(() => {
@@ -145,7 +145,7 @@ function L(e) {
   }, [s, T, V]);
   let H = f || p,
     Y = i.useCallback(e => {
-      if (H || A && 0 === e.length) return;
+      if (H || v && 0 === e.length) return;
       let t = Array.from(e);
       if ("multiple" === d && t.length < 1) m([]);
       else if ("multiple" === d) m(t.map(e => e.value));
@@ -154,14 +154,14 @@ function L(e) {
         m(null == (n = t[0]) ? true : n.value)
       }
       _ && s && (null == l || l(false)), R(false)
-    }, [H, d, m, _, s, l, A]),
+    }, [H, d, m, _, s, l, v]),
     W = B.length > 0;
-  return (0, r.jsx)(b.C.Provider, {
+  return (0, r.jsx)(y.C.Provider, {
     value: N({
-      activeDescendantIndex: I,
+      activeDescendantIndex: S,
       setActiveDescendantIndex: T,
-      listBoxId: v,
-      inputFieldRef: S,
+      listBoxId: A,
+      inputFieldRef: I,
       isInert: H,
       isCollapsible: n,
       hasValue: W,
@@ -205,7 +205,7 @@ function M(e) {
   let {
     id: t,
     autoFocus: n,
-    placeholder: a = S.intl.string(v.default["A+pfVR"]),
+    placeholder: a = I.intl.string(A.default["A+pfVR"]),
     hideTags: o,
     name: c,
     form: d,
@@ -242,7 +242,7 @@ function M(e) {
     setQuery: ei,
     isEditing: ea,
     setIsEditing: es
-  } = (0, b.h)(), eo = "multiple" === U && X, el = null != M ? (0, A.ZN)(Y, M) : true, ec = i.useCallback(() => {
+  } = (0, y.h)(), eo = "multiple" === U && X, el = null != M ? (0, v.ZN)(Y, M) : true, ec = i.useCallback(() => {
     z || null == J || J(!$)
   }, [z, $, J]), eu = i.useCallback(() => {
     var e;
@@ -305,7 +305,7 @@ function M(e) {
           let r = en[M];
           if (null == r || true === r.disabled) return;
           if (H && 1 === et.length && et.includes(r)) return void Z(et);
-          Z("single" === U ? [r] : (0, A.qH)(U, et, r));
+          Z("single" === U ? [r] : (0, v.qH)(U, et, r));
           break;
         case "Backspace":
           if ("multiple" === U && "" === er && et.length > 0 && null != D.current) {
@@ -328,13 +328,13 @@ function M(e) {
     eE = i.useCallback(e => {
       es(true), ei(e.target.value), null == J || J(true), null == _ || _(e), k(null)
     }, [_, es, ei, J, k]),
-    eb = i.useMemo(() => {
+    ey = i.useMemo(() => {
       if (0 === et.length) return null;
       if ("single" === U) {
         if (ea) return null;
         let e = Array.from(et)[0];
         return (0, r.jsx)("div", {
-          className: I.OS,
+          className: S.OS,
           children: (0, r.jsx)(E.c, w(N({}, e), {
             onClick: eh,
             "aria-hidden": true,
@@ -350,21 +350,21 @@ function M(e) {
           label: e.label,
           icon: t,
           isDisabled: G || e.disabled,
-          accessibilityHint: S.intl.string(v.default["/Y7vRd"])
+          accessibilityHint: I.intl.string(A.default["/Y7vRd"])
         }
       });
       return (0, r.jsx)(p.CR_, {
         listRef: D,
-        label: S.intl.string(v.default.VMNfsY),
+        label: I.intl.string(A.default.VMNfsY),
         items: e,
         layout: "inline",
         onRemove: em
       })
     }, [U, G, eh, em, ea, et, o]),
-    ey = (0, l.A)(W, P);
+    eb = (0, l.A)(W, P);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(y.p, {
-      ref: ey,
+    children: [(0, r.jsx)(b.p, {
+      ref: eb,
       disabled: G,
       readOnly: V,
       loading: F,
@@ -378,20 +378,20 @@ function M(e) {
       handleToggle: ec,
       handleClear: eu,
       children: (0, r.jsx)("div", {
-        className: s()(I._U, {
-          [I.kS]: eo,
-          [I.kj]: eo && R
+        className: s()(S._U, {
+          [S.kS]: eo,
+          [S.kj]: eo && R
         }),
         onClick: e_,
         children: (0, r.jsxs)("div", {
-          className: I.P$,
-          children: [eb, (0, r.jsx)(p.vN3, {
+          className: S.P$,
+          children: [ey, (0, r.jsx)(p.vN3, {
             ringTarget: W,
             children: (0, r.jsx)(h.p, {
               ref: x,
               id: t,
-              className: s()(T.input, I.kk, {
-                [I.kK]: "single" === U && X && !ea
+              className: s()(T.input, S.kk, {
+                [S.kK]: "single" === U && X && !ea
               }),
               autoFocus: n,
               placeholder: a,
@@ -446,8 +446,8 @@ function k(e) {
     disabled: m,
     handleSelectionChange: g,
     query: E,
-    loading: y
-  } = (0, b.h)(), {
+    loading: b
+  } = (0, y.h)(), {
     i18n: O
   } = i.useContext(p.VOr);
   return (0, r.jsx)(d.q, {
@@ -465,6 +465,6 @@ function k(e) {
       message: null == E || "" === E ? O.LISTBOX_EMPTY_STATE : O.LISTBOX_EMPTY_STATE_WITH_QUERY(E)
     }),
     maxVisibleItems: a,
-    loading: y
+    loading: b
   })
 }

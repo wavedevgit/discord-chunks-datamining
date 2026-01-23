@@ -2,7 +2,7 @@
 /** chunk id: 215050, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,19 +24,19 @@ function E(e) {
   return "media-view-scroll-thumbnail-".concat(e)
 }
 
-function b(e) {
+function y(e) {
   return "IMAGE" === e.type ? (0, f.E)({
     proxyURL: e.proxyUrl,
     url: e.url
   }) : "VIDEO" === e.type && null != e.proxyUrl ? (0, p.VZ)(e.proxyUrl) : null
 }
 
-function y(e) {
+function b(e) {
   var t, n;
   let {
     item: i,
     enabledContentHarmTypeFlags: a = 0
-  } = e, s = b(i);
+  } = e, s = y(i);
   return null == s ? null : (0, u.qo)({
     type: c.D.GenericMedia,
     media: i
@@ -66,9 +66,9 @@ function y(e) {
     mediaLayoutType: _.dG.MOSAIC
   })
 }
-let O = Chunk64700.memo(y);
+let O = Chunk64700.memo(b);
 
-function A(e) {
+function v(e) {
   let {
     items: t,
     currentIndex: n,

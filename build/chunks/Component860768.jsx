@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 860768, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,7 +14,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk988726 = require("./988726.js");
 
-function f(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,7 +22,7 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class h extends Chunk64700.PureComponent {
+class g extends Chunk64700.PureComponent {
   render() {
     let e = "".concat(d.intl.string(d.t.VWqWZQ), "\n").concat(d.intl.string(d.t["0Lgb/K"]));
     return (0, r.jsx)(o.A, {
@@ -38,7 +38,7 @@ class h extends Chunk64700.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "handleInvite", () => {
+    super(...e), h(this, "handleInvite", () => {
       let {
         guild: e
       } = this.props;
@@ -55,7 +55,7 @@ class h extends Chunk64700.PureComponent {
               "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
               }))), r.forEach(function(t) {
-                f(e, t, n[t])
+                h(e, t, n[t])
               })
             }
             return e
@@ -74,7 +74,7 @@ class h extends Chunk64700.PureComponent {
           }), i))
         }
       })
-    }), f(this, "handleClose", () => {
+    }), h(this, "handleClose", () => {
       let e = s.A.getChannelId(),
         t = d.intl.formatToPlainString(d.t.DEn7nu, {
           invitePeople: d.intl.string(d.t.Sd8Ixw)
@@ -83,4 +83,4 @@ class h extends Chunk64700.PureComponent {
     })
   }
 }
-let A = h
+let f = g

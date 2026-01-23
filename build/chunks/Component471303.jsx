@@ -20,14 +20,14 @@ function m() {
     m = t === c.cl.INVISIBLE || t === c.cl.OFFLINE;
   return (0, a.jsxs)("div", {
     className: u.k,
-    children: [(0, a.jsxs)(r.AC4, {
+    children: [(0, a.jsxs)(i.AC4, {
       tag: "div",
       children: [d.intl.string(d.t.AHoLf4), ":"]
-    }), n, n.length > 0 && m && (0, a.jsx)(i.m_, {
+    }), n, n.length > 0 && m && (0, a.jsx)(r.m_, {
       text: d.intl.string(d.t.L99HQm),
-      children: (0, a.jsx)(r.EpV, {
+      children: (0, a.jsx)(i.EpV, {
         size: "xs",
-        color: r.LU0.colors.STATUS_WARNING,
+        color: i.LU0.colors.STATUS_WARNING,
         "aria-label": d.intl.string(d.t.L99HQm)
       })
     })]

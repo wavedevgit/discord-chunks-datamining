@@ -1,16 +1,16 @@
 /** Chunk was on 95095 **/
-/** chunk id: 782997, original params: a,e,t (module,exports,require) **/
+/** chunk id: 782997, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  A: () => l
+  A: () => i
 });
 var Chunk954571 = require("./954571.js"),
   Chunk652215 = require("./652215.js");
 
-function l(a) {
+function i(e) {
   let {
-    rating: e = null
-  } = a;
+    rating: t = null
+  } = e;
   n.default.track(c.HAw.SAFETY_USER_SENTIMENT_FEEDBACK_SUBMITTED, {
-    rating: e
+    rating: t
   })
 }

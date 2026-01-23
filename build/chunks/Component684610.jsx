@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk294726 = require("./294726.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk396936 = require("./396936.js");
-let j = {
+let x = {
   steps: {
     [Chunk800007.HS.SERVER_SETTINGS]: {
       onBack: {
@@ -33,9 +33,9 @@ function v(e) {
   let {
     guildId: t,
     instance: n
-  } = e, f = a.useRef(null), v = (0, d.A)(n.providerType, n.gameServerPanelUrl);
-  return (0, o.A)(t) ? (0, r.jsx)(l.YNO, {
-    targetElementRef: f,
+  } = e, m = a.useRef(null), v = (0, d.A)(n.providerType, n.gameServerPanelUrl);
+  return (0, c.A)(t) ? (0, r.jsx)(i.YNO, {
+    targetElementRef: m,
     align: "top",
     position: "right",
     animationPosition: "bottom",
@@ -44,31 +44,31 @@ function v(e) {
       let {
         closePopout: a
       } = e;
-      return (0, r.jsx)(l.W1t, {
+      return (0, r.jsx)(i.W1t, {
         navId: "game_server-popout-context-menu",
         onClose: () => {
-          (0, i.Z_)(), a()
+          (0, l.Z_)(), a()
         },
-        "aria-label": m.intl.string(b.default["yb+ork"]),
+        "aria-label": g.intl.string(f.default["yb+ork"]),
         onSelect: true,
-        children: (0, r.jsxs)(l.rXV, {
-          children: [null != v && (0, r.jsx)(l.Drp, {
+        children: (0, r.jsxs)(i.rXV, {
+          children: [null != v && (0, r.jsx)(i.Drp, {
             id: "get-support",
-            icon: l.oyn,
-            label: m.intl.string(b.default.bBkeMs),
+            icon: i.oyn,
+            label: g.intl.string(f.default.bBkeMs),
             action: () => {
-              (0, c.h)({
+              (0, o.h)({
                 href: v
               })
             }
-          }), (0, r.jsx)(l.Drp, {
+          }), (0, r.jsx)(i.Drp, {
             id: "settings",
-            icon: l.Zes,
-            label: m.intl.string(b.default["feUiM/"]),
+            icon: i.Zes,
+            label: g.intl.string(f.default["feUiM/"]),
             action: () => {
               (0, u.A)({
                 guildId: t,
-                stepConfig: j,
+                stepConfig: x,
                 initialGameServerInstance: n,
                 analyticsLocation: s.A.GAME_SERVER_PAGE
               })
@@ -79,7 +79,7 @@ function v(e) {
     },
     children: e => {
       var t, n;
-      return (0, r.jsx)(l.DUT, (t = function(e) {
+      return (0, r.jsx)(i.DUT, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -97,11 +97,11 @@ function v(e) {
         }
         return e
       }({
-        "aria-label": m.intl.string(m.t["UKOtz+"]),
-        className: x.v
+        "aria-label": g.intl.string(g.t["UKOtz+"]),
+        className: _.v
       }, e), n = n = {
-        innerRef: f,
-        children: (0, r.jsx)(l.jNK, {
+        innerRef: m,
+        children: (0, r.jsx)(i.jNK, {
           color: "currentColor",
           size: "sm"
         })

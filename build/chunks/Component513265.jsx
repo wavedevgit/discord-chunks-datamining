@@ -1,5 +1,5 @@
 /** Chunk was on 64228 **/
-/** chunk id: 513265, original params: e,l,t (module,exports,require) **/
+/** chunk id: 513265, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => h
 }), require("./896048.js");
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk845913 = require("./845913.js"),
   Chunk910200 = require("./910200.js");
-let A = {
+let x = {
     [Chunk518477.jM.WIDGET_ADDED]: {
       message: Chunk985018.intl.string(Chunk985018.t.fFP1Uy),
       icon: (0, Chunk627968.jsx)(Chunk397927.A9s, {
@@ -54,34 +54,34 @@ let A = {
   },
   j = e => {
     let {
-      message: l,
-      icon: t,
+      message: t,
+      icon: n,
       type: i
     } = e;
-    return (0, n.jsxs)("div", {
-      className: s()(x.oR, m.oR),
+    return (0, l.jsxs)("div", {
+      className: s()(A.oR, f.oR),
       "data-type": i,
-      children: [(0, n.jsx)("div", {
-        className: m.RC,
-        children: t
-      }), (0, n.jsx)(d.Text, {
+      children: [(0, l.jsx)("div", {
+        className: f.RC,
+        children: n
+      }), (0, l.jsx)(c.Text, {
         color: "text-strong",
         variant: "text-sm/semibold",
-        children: l
+        children: t
       })]
     })
   },
   h = e => {
     let {
-      className: l,
-      onAutoHide: t
-    } = e, r = (0, u.fu)(), f = (0, o.bG)([c.A], () => c.A.useReducedMotion), [p, x] = i.useState(false), [h, g] = i.useState(null);
+      className: t,
+      onAutoHide: n
+    } = e, r = (0, u.fu)(), p = (0, a.bG)([d.A], () => d.A.useReducedMotion), [m, A] = i.useState(false), [h, g] = i.useState(null);
     i.useEffect(() => {
-      null !== r ? (x(true), g(A[r]), d.ORC.announce(A[r].message)) : x(false)
+      null !== r ? (A(true), g(x[r]), c.ORC.announce(x[r].message)) : A(false)
     }, [r]);
-    let v = (0, d.pnh)(p, {
+    let v = (0, c.pnh)(m, {
       from: {
-        transform: f ? "translateY(0)" : "translateY(-12px)",
+        transform: p ? "translateY(0)" : "translateY(-12px)",
         opacity: 0
       },
       enter: {
@@ -89,7 +89,7 @@ let A = {
         opacity: 1
       },
       leave: {
-        transform: f ? "translateY(0)" : "translateY(-12px)",
+        transform: p ? "translateY(0)" : "translateY(-12px)",
         opacity: 0
       },
       config: {
@@ -100,30 +100,30 @@ let A = {
       }
     }, "animate-always");
     return i.useEffect(() => {
-      if (p) {
+      if (m) {
         let e = setTimeout(() => {
-          null == t || t()
+          null == n || n()
         }, 2e3);
         return () => clearTimeout(e)
       }
-    }, [p, t]), (0, n.jsx)(n.Fragment, {
-      children: v((e, t) => t && null !== h && (0, n.jsx)(a.animated.div, {
-        className: s()(l, m.Jt),
+    }, [m, n]), (0, l.jsx)(l.Fragment, {
+      children: v((e, n) => n && null !== h && (0, l.jsx)(o.animated.div, {
+        className: s()(t, f.Jt),
         style: e,
-        children: (0, n.jsx)(j, function(e) {
-          for (var l = 1; l < arguments.length; l++) {
-            var t = null != arguments[l] ? arguments[l] : {},
-              n = Object.keys(t);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(t, e).enumerable
-            }))), n.forEach(function(l) {
-              var n;
-              n = t[l], l in e ? Object.defineProperty(e, l, {
-                value: n,
+        children: (0, l.jsx)(j, function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              l = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), l.forEach(function(t) {
+              var l;
+              l = n[t], t in e ? Object.defineProperty(e, t, {
+                value: l,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[l] = n
+              }) : e[t] = l
             })
           }
           return e

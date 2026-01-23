@@ -2,7 +2,7 @@
 /** chunk id: 377337, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => x
+  A: () => h
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk258761 = require("./258761.js");
 
-function b(e) {
+function p(e) {
   let {
     gameApplicationIds: t,
     handleChange: n,
@@ -24,27 +24,27 @@ function b(e) {
   } = e, {
     options: l,
     matchSorterOptions: s
-  } = (0, c.R)();
+  } = (0, o.R)();
   return (0, r.jsx)(a.ZiE, {
     selectionMode: "multiple",
     hideTags: true,
     options: l,
     value: t,
-    placeholder: f.intl.string(f.t.JTLolO),
+    placeholder: g.intl.string(g.t.JTLolO),
     onSelectionChange: n,
     disabled: 20 === t.length || i,
     matchSorterOptions: s
   })
 }
 
-function m(e) {
+function f(e) {
   let {
     gameApplicationIds: t,
     onRemoveGame: n,
     disabled: i
   } = e;
   return 0 === t.length ? null : (0, r.jsx)("div", {
-    className: g.Rh,
+    className: m.Rh,
     children: t.map(e => (0, r.jsx)(d.A, {
       applicationId: e,
       selected: true,
@@ -53,38 +53,38 @@ function m(e) {
     }, e))
   })
 }
-let p = [];
+let b = [];
 
-function x(e) {
+function h(e) {
   var t;
   let {
     profile: n,
     canManageGuild: l
-  } = e, c = n.id, d = null != (t = null == n ? true : n.gameApplicationIds) ? t : p, g = i.useCallback(e => {
-    o.A.updateGuildProfile(c, {
+  } = e, o = n.id, d = null != (t = null == n ? true : n.gameApplicationIds) ? t : b, m = i.useCallback(e => {
+    c.A.updateGuildProfile(o, {
       gameApplicationIds: e
     })
-  }, [c]), x = i.useCallback(e => {
+  }, [o]), h = i.useCallback(e => {
     let t = d.filter(t => t !== e);
-    o.A.updateGuildProfile(c, {
+    c.A.updateGuildProfile(o, {
       gameApplicationIds: t
     })
-  }, [c, d]), h = i.useRef(d), j = i.useMemo(() => (s().isEqual(new Set(d), new Set(h.current)) || (h.current = [...d]), h.current), [d]);
+  }, [o, d]), x = i.useRef(d), j = i.useMemo(() => (s().isEqual(new Set(d), new Set(x.current)) || (x.current = [...d]), x.current), [d]);
   return (0, r.jsxs)(a.nVY, {
-    label: f.intl.string(f.t.BR68vK),
-    description: f.intl.string(f.t.MobxiB),
-    children: [(0, r.jsx)(b, {
+    label: g.intl.string(g.t.BR68vK),
+    description: g.intl.string(g.t.MobxiB),
+    children: [(0, r.jsx)(p, {
       gameApplicationIds: d,
-      handleChange: g,
+      handleChange: m,
       disabled: !l
-    }), (0, r.jsx)(m, {
+    }), (0, r.jsx)(f, {
       gameApplicationIds: j,
-      onRemoveGame: x,
+      onRemoveGame: h,
       disabled: !l
     }), (0, r.jsx)(u.A, {
-      guildId: c,
+      guildId: o,
       selectedGameApplicationIds: d,
-      onUpdateGames: g,
+      onUpdateGames: m,
       disabled: !l
     })]
   })

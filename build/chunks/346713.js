@@ -1,14 +1,14 @@
 /** Chunk was on 64228 **/
-/** chunk id: 346713, original params: e,l,t (module,exports,require) **/
+/** chunk id: 346713, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => a
+  A: () => o
 });
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
   Chunk622543 = require("./622543.js");
 let s = [];
 
-function a(e) {
-  let l = (0, i.bG)([r.A], () => r.A.getUserProfile(e));
-  return (0, n.useMemo)(() => (null == l ? true : l.applicationRoleConnections) == null ? s : l.applicationRoleConnections, [null == l ? true : l.applicationRoleConnections])
+function o(e) {
+  let t = (0, i.bG)([r.A], () => r.A.getUserProfile(e));
+  return (0, l.useMemo)(() => (null == t ? true : t.applicationRoleConnections) == null ? s : t.applicationRoleConnections, [null == t ? true : t.applicationRoleConnections])
 }

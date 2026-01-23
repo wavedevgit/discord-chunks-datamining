@@ -2,7 +2,7 @@
 /** chunk id: 35587, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Eu: () => b,
+  Eu: () => y,
   IO: () => E,
   y7: () => g
 }), require("./896048.js");
@@ -32,36 +32,36 @@ function g() {
     n = (0, c.QQ)(),
     g = (0, i.bG)([o.A], () => o.A.hasAnyUnexpiredOffer()),
     E = (0, u.d)(),
-    [b, y] = r.useState(false),
-    [O, A] = r.useState([]);
+    [y, b] = r.useState(false),
+    [O, v] = r.useState([]);
   r.useEffect(() => {
     (null != e || E) && a.h.wait(() => p.Ay.markOutboundPromotionsSeen())
   }, [e, E]);
-  let v = r.useCallback(e => {
-      A(t => t.some(t => {
+  let A = r.useCallback(e => {
+      v(t => t.some(t => {
         let {
           promotion: n
         } = t;
         return n.id === e.promotion.id
       }) ? t : [...t, e])
     }, []),
-    S = l.Ay.isPremiumExactly(t, h.PremiumTypes.TIER_2),
-    I = d.m.useExperiment({
+    I = l.Ay.isPremiumExactly(t, h.PremiumTypes.TIER_2),
+    S = d.m.useExperiment({
       location: "useOutboundPromotions"
     }, {
       autoTrackExposure: false,
-      disable: S
-    }).enabled || S;
+      disable: I
+    }).enabled || I;
   r.useEffect(() => {
     a.h.wait(() => {
-      I && (null == e || E) && p.Ay.fetchActivePromotions()
+      S && (null == e || E) && p.Ay.fetchActivePromotions()
     })
-  }, [e, I, E]), r.useEffect(() => {
+  }, [e, S, E]), r.useEffect(() => {
     a.h.wait(() => {
       (0, f.b3)().then(e => {
-        A(e), y(true)
+        v(e), b(true)
       }).catch(() => {
-        A([]), y(true)
+        v([]), b(true)
       })
     })
   }, []);
@@ -79,7 +79,7 @@ function g() {
       return t
     }));
   return {
-    promotionsLoaded: b && (!I || null != e || E),
+    promotionsLoaded: y && (!S || null != e || E),
     activeOutboundPromotions: C,
     claimedEndedOutboundPromotions: O.filter(e => {
       let {
@@ -91,7 +91,7 @@ function g() {
       })
     }).filter(e => (0, f.OP)(e.promotion)),
     claimedOutboundPromotionCodeMap: T,
-    addClaimedOutboundPromotionCode: v
+    addClaimedOutboundPromotionCode: A
   }
 }
 
@@ -106,7 +106,7 @@ function E() {
   }), [t, e]).filter(e => (0, f.OP)(e))
 }
 
-function b() {
+function y() {
   return {
     promotion: (0, i.bG)([_.A], () => _.A.bogoPromotion)
   }

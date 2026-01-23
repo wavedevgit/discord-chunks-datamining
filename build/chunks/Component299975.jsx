@@ -14,12 +14,12 @@ var Chunk627968 = require("./627968.js"),
 
 function d(e, t) {
   if (null == t) return;
-  let d = s.HO.has(t.skuId);
+  let d = a.HO.has(t.skuId);
   (0, l.mMO)(async () => {
     let {
-      default: s
+      default: a
     } = await n.e("957").then(n.bind(n, 523084));
-    return n => (0, r.jsx)(s, function(e) {
+    return n => (0, r.jsx)(a, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -43,7 +43,7 @@ function d(e, t) {
       description: c.intl.formatToPlainString(o.default.y3wHot, {
         perkName: t.title
       }),
-      image: (0, r.jsx)(a.l, {
+      image: (0, r.jsx)(s.l, {
         className: u.Sl,
         powerup: t
       }),

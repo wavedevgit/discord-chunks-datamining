@@ -27,7 +27,7 @@ var Chunk205693 = require("./205693.js"),
   Chunk652215 = require("./652215.js"),
   Chunk502075 = require("./502075.js");
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,7 +42,7 @@ class T extends Chunk439372.A {
       state: n,
       streamKey: i
     } = e;
-    if (!(0, g.Pm)() || n !== v.S7L.RTC_CONNECTED) return;
+    if (!(0, g.Pm)() || n !== A.S7L.RTC_CONNECTED) return;
     let a = u.default.getId();
     if (t === r.x.DEFAULT) {
       this.applyUserVoiceRecording(a), this.applyUserSoundboardRecording(a);
@@ -75,7 +75,7 @@ class T extends Chunk439372.A {
     } = e;
     this.maybeShowClipsWarning(t), this.applyUserVoiceRecording(t), this.applyUserSoundboardRecording(t);
     let i = p.A.getRTCConnection(o._z({
-      streamType: null != r ? S.U4.GUILD : S.U4.CALL,
+      streamType: null != r ? I.U4.GUILD : I.U4.CALL,
       ownerId: t,
       channelId: n,
       guildId: r
@@ -87,7 +87,7 @@ class T extends Chunk439372.A {
       applicationName: t,
       errMsg: n
     } = e;
-    h.default.track(v.HAw.CLIPS_INIT_FAILURE, {
+    h.default.track(A.HAw.CLIPS_INIT_FAILURE, {
       application_name: t,
       error_message: n
     })
@@ -104,7 +104,7 @@ class T extends Chunk439372.A {
     null == (e = f.A.getUserIds()) || e.forEach(e => this.maybeShowClipsWarning(e))
   }
   handlePostConnectionOpen() {
-    !(0, y.A)(d.A) || (this.applyNativeClipsSettings(), (0, g.Pm)() && (this.loadClipsFromStorage(), (null == E.A.getHardwareClassification() || null == E.A.getHardwareClassificationForDecoupled() || E.A.getHardwareClassificationVersion() !== A.V0) && this.classifyHardwareAndTrack().then(e => {
+    !(0, b.A)(d.A) || (this.applyNativeClipsSettings(), (0, g.Pm)() && (this.loadClipsFromStorage(), (null == E.A.getHardwareClassification() || null == E.A.getHardwareClassificationForDecoupled() || E.A.getHardwareClassificationVersion() !== v.V0) && this.classifyHardwareAndTrack().then(e => {
       i.h.dispatch({
         type: "CLIPS_CLASSIFY_HARDWARE",
         classification: e
@@ -119,9 +119,9 @@ class T extends Chunk439372.A {
       channelId: i,
       guildId: a
     } = e;
-    if (n !== r.x.STREAM || !(0, y.A)(d.A)) return;
+    if (n !== r.x.STREAM || !(0, b.A)(d.A)) return;
     let s = p.A.getRTCConnection(o._z({
-      streamType: null != a ? S.U4.GUILD : S.U4.CALL,
+      streamType: null != a ? I.U4.GUILD : I.U4.CALL,
       ownerId: t,
       channelId: i,
       guildId: a
@@ -156,25 +156,25 @@ class T extends Chunk439372.A {
           }
         }
       })();
-      return h.default.track(v.HAw.CLIPS_HARDWARE_CLASSIFICATION, {
+      return h.default.track(A.HAw.CLIPS_HARDWARE_CLASSIFICATION, {
         classification: t,
-        version: A.V0,
+        version: v.V0,
         gpu_models: e
       }), t
     } catch (e) {
-      return b.k9.UNKNOWN
+      return y.k9.UNKNOWN
     }
   }
   classifyHardware(e) {
     if ((0, m.isWindows)()) {
-      let t = e.some(e => A.sc.test(e)),
-        n = e.some(e => A.l_.test(e));
-      return t ? b.k9.MEETS_AUTO_ENABLE : n ? b.k9.MEETS_MINIMUM : b.k9.BELOW_MINIMUM
+      let t = e.some(e => v.sc.test(e)),
+        n = e.some(e => v.l_.test(e));
+      return t ? y.k9.MEETS_AUTO_ENABLE : n ? y.k9.MEETS_MINIMUM : y.k9.BELOW_MINIMUM
     }
-    return (0, m.isMac)() ? "arm64" === s.A.remoteApp.getAppArch() ? b.k9.MEETS_AUTO_ENABLE : b.k9.MEETS_MINIMUM : b.k9.UNKNOWN
+    return (0, m.isMac)() ? "arm64" === s.A.remoteApp.getAppArch() ? y.k9.MEETS_AUTO_ENABLE : y.k9.MEETS_MINIMUM : y.k9.UNKNOWN
   }
   applyUserVoiceRecording(e) {
-    if (!(0, y.A)(d.A)) return;
+    if (!(0, b.A)(d.A)) return;
     let t = f.A.getRTCConnection();
     if (null == t) return;
     if (e === u.default.getId()) return void t.setClipRecordUser(e, "audio", (0, O.TD)());
@@ -182,12 +182,12 @@ class T extends Chunk439372.A {
     t.setClipRecordUser(e, "audio", n)
   }
   applyUserSoundboardRecording(e) {
-    if (!(0, y.A)(d.A)) return;
+    if (!(0, b.A)(d.A)) return;
     let t = f.A.getRTCConnection();
     null != t && t.setClipRecordUser(e, "soundboard", (0, O.TD)())
   }
   applyStreamRecording(e, t) {
-    if (!(0, y.A)(d.A)) return;
+    if (!(0, b.A)(d.A)) return;
     if (u.default.getId() === e) {
       let n = (0, O.TD)();
       t.setClipRecordUser(e, "audio", n), t.setClipRecordUser(e, "video", n);
@@ -206,7 +206,7 @@ class T extends Chunk439372.A {
   handleMessageCreate(e) {}
   handleRemoteClipTrigger(e) {}
   constructor(...e) {
-    super(...e), I(this, "actions", {
+    super(...e), S(this, "actions", {
       POST_CONNECTION_OPEN: e => this.handlePostConnectionOpen(),
       RTC_CONNECTION_FLAGS: e => this.handleRTCConnectionFlags(e),
       RTC_CONNECTION_USERS_MERGED: e => this.handleRTCUsersUpdate(e),

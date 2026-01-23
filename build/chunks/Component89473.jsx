@@ -1,5 +1,5 @@
 /** Chunk was on 20601 **/
-/** chunk id: 89473, original params: e,t,l (module,exports,require) **/
+/** chunk id: 89473, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => p
 });
@@ -19,15 +19,15 @@ var Chunk627968 = require("./627968.js"),
   Chunk260197 = require("./260197.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk70645 = require("./70645.js");
-let j = () => (0, n.jsx)(a.A, {
+let b = () => (0, l.jsx)(a.A, {
     submitting: false,
     message: v.intl.string(v.t["8g514U"]),
     onReset: () => {
-      (0, m.C7)(false)
+      (0, f.C7)(false)
     },
     onResetText: v.intl.string(v.t["ETE/oC"]),
     onSave: () => {
-      (0, m.C7)(false), (0, d.OoC)(h.LC)
+      (0, f.C7)(false), (0, u.OoC)(g.LC)
     },
     onSaveText: v.intl.string(v.t["Xt+Uab"]),
     onSaveButtonColor: c.XD.RED
@@ -35,43 +35,43 @@ let j = () => (0, n.jsx)(a.A, {
   p = e => {
     let {
       transitionState: t,
-      guildId: l,
+      guildId: n,
       onClose: a,
       onComplete: c,
-      inviteKey: h,
+      inviteKey: g,
       isPreview: v = false
-    } = e, p = (0, m.YN)(e => e.shouldShowWarning), {
-      verificationForm: C,
-      hasFetched: O
-    } = (0, x.$x)(l, v, h), y = (0, u.GV)();
+    } = e, p = (0, f.YN)(e => e.shouldShowWarning), {
+      verificationForm: _,
+      hasFetched: C
+    } = (0, x.$x)(n, v, g), y = (0, d.GV)();
     return (r.useEffect(() => {
-      O && C === f.U && a()
-    }, [O, a, C]), C === f.U) ? null : (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsxs)(s.dWK, {
+      C && _ === m.U && a()
+    }, [C, a, _]), _ === m.U) ? null : (0, l.jsxs)(l.Fragment, {
+      children: [(0, l.jsxs)(i.dWK, {
         transitionState: t,
         "aria-labelledby": y,
         size: "xxl",
         onClose: a,
-        children: [(0, n.jsx)("div", {
-          className: g.b,
-          children: (0, n.jsx)(o.JnF, {
+        children: [(0, l.jsx)("div", {
+          className: j.b,
+          children: (0, l.jsx)(o.JnF, {
             onClick: () => a(false)
           })
-        }), (0, n.jsx)("div", {
-          className: g.kL,
-          children: (0, n.jsx)(b.A, {
-            verificationForm: C,
+        }), (0, l.jsx)("div", {
+          className: j.kL,
+          children: (0, l.jsx)(h.A, {
+            verificationForm: _,
             headerId: y,
-            guildId: l,
+            guildId: n,
             onClose: a,
             onComplete: c,
             isPreview: v
           })
         })]
-      }), (0, n.jsx)(i.F, {
-        children: true === p && (0, n.jsx)(d.FQk, {
-          className: g.lm,
-          children: (0, n.jsx)(j, {})
+      }), (0, l.jsx)(s.F, {
+        children: true === p && (0, l.jsx)(u.FQk, {
+          className: j.lm,
+          children: (0, l.jsx)(b, {})
         })
       })]
     })

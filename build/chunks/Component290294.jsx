@@ -1,7 +1,7 @@
 /** Chunk was on 94503 **/
 /** chunk id: 290294, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -21,40 +21,40 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk438536 = require("./438536.js");
 
-function I() {
+function O() {
   return (0, l.jsxs)("div", {
-    className: h.wx,
+    className: I.wx,
     children: [(0, l.jsxs)("div", {
-      className: h.qd,
-      children: [(0, l.jsx)(u.A, {
+      className: I.qd,
+      children: [(0, l.jsx)(c.A, {
         width: 16,
         height: 16
       }), (0, l.jsx)(s.Heading, {
         variant: "heading-md/semibold",
-        children: f.intl.string(f.t.cf5lgh)
+        children: h.intl.string(h.t.cf5lgh)
       })]
     }), (0, l.jsx)("div", {
       children: (0, l.jsx)(s.e7I, {
         shortcut: "esc",
-        keyClassName: h.Wb,
-        className: h.ti
+        keyClassName: I.Wb,
+        className: I.ti
       })
     })]
   })
 }
 
-function O(e) {
+function m(e) {
   let {
     userId: t,
     guildId: n,
     location: r,
-    className: u,
-    onNavigate: f
-  } = e, O = (0, i.bG)([c.default], () => c.default.getUser(t), [t]), N = (0, i.bG)([o.Ay], () => o.Ay.getMember(n, t), [n, t]);
-  return null == O || null == N ? null : (0, l.jsxs)("div", {
-    className: a()(h.kL, u),
-    children: [(0, l.jsx)(I, {}), (0, l.jsxs)(s.HOs, {
-      className: h.WH,
+    className: c,
+    onNavigate: h
+  } = e, m = (0, i.bG)([u.default], () => u.default.getUser(t), [t]), N = (0, i.bG)([o.Ay], () => o.Ay.getMember(n, t), [n, t]);
+  return null == m || null == N ? null : (0, l.jsxs)("div", {
+    className: a()(I.kL, c),
+    children: [(0, l.jsx)(O, {}), (0, l.jsxs)(s.HOs, {
+      className: I.WH,
       children: [(0, l.jsx)(A.A, {
         member: N
       }), (0, l.jsx)(T.A, {
@@ -62,7 +62,7 @@ function O(e) {
         guildId: n
       }), (0, l.jsx)(g.A, {
         member: N,
-        onNavigate: f
+        onNavigate: h
       }), (0, l.jsx)(d.A, {
         member: N
       }), (0, l.jsx)(E.A, {

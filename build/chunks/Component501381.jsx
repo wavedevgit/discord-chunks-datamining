@@ -20,12 +20,12 @@ function d(e) {
   }, [t]);
   return (0, r.jsxs)(s.DUT, {
     onClick: n,
-    className: o.j,
+    className: c.j,
     children: [(0, r.jsx)(l.EYj, {
       tag: "span",
       variant: "text-sm/semibold",
       color: "text-brand",
-      children: c.intl.string(c.t.SKNnqq)
+      children: o.intl.string(o.t.SKNnqq)
     }), (0, r.jsx)(s.tfB, {
       size: "xs",
       color: "currentColor"

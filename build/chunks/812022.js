@@ -25,9 +25,9 @@ function E(e) {
   let n = d.A.toURLSafe("traces?".concat(t.toString()), "https://datadog.discord.tools/apm/");
   return null == n ? null : n.toString()
 }
-let b = /\/api(\/v\d+)?\/science/;
+let y = /\/api(\/v\d+)?\/science/;
 
-function y(e) {
+function b(e) {
   let t = 10;
   return e.reduce((e, n) => (10 === t ? e.push(n) : e.push("".concat(n, ";q=0.").concat(t)), t = Math.max(t - 1, 1), e), []).join(",")
 }
@@ -35,13 +35,13 @@ function y(e) {
 function O(e) {
   try {
     let t = new URL(e).pathname;
-    return b.test(t)
+    return y.test(t)
   } catch (t) {
-    return b.test(e)
+    return y.test(e)
   }
 }
 
-function A(e, t) {
+function v(e, t) {
   returnfalse
 }(0, Chunk562465.IA)({
   prepareRequest(e) {
@@ -69,7 +69,7 @@ function A(e, t) {
       if (null != u && "" !== u && e.set("X-Installation-ID", u), d) {
         let t = [];
         null != navigator && (t = (f = [...navigator.languages], f));
-        let n = y(t);
+        let n = b(t);
         e.set("Accept-Language", n)
       }
       e.set("X-Discord-Locale", o.locale);
@@ -91,9 +91,9 @@ function A(e, t) {
         }
       }
     }
-    let b = e.url,
-      v = e.method;
-    A(b, v) && (0, _.R)(b, v), a.z8("Network", "Sending ".concat(e.method, " to ").concat(e.url)), e.on("response", t => {
+    let y = e.url,
+      A = e.method;
+    v(y, A) && (0, _.R)(y, A), a.z8("Network", "Sending ".concat(e.method, " to ").concat(e.url)), e.on("response", t => {
       let n = null != t && t.status >= 400 ? t.text : null,
         r = null == n ? "" : "and body: ".concat(n);
       a.z8("Network", "Completed ".concat(e.method, " to ").concat(e.url, " with status: ").concat(null == t ? true : t.status, " ").concat(r))

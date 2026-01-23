@@ -1,7 +1,7 @@
 /** Chunk was on 36133 **/
 /** chunk id: 567987, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E: () => f
+  E: () => I
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -34,7 +34,7 @@ function w(e) {
   return e
 }
 
-function b(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,13 +47,13 @@ function b(e, t) {
   }), e
 }
 
-function f(e) {
+function I(e) {
   let {
     channel: t
   } = e;
-  return l.useCallback((e, l, i, f) => {
+  return l.useCallback((e, l, i, I) => {
     if (null == t) return;
-    let I = {
+    let O = {
       context: p.BRT.CALL_TILE_POPOUT
     };
     switch (e.type) {
@@ -69,21 +69,21 @@ function f(e) {
             minimal: i,
             exitFullscreen: () => {},
             onInteraction: (0, d.s)("StreamContextMenu", o.A.CALL_TILE_POPOUT, {
-              entrypoint: f,
+              entrypoint: I,
               tileType: h.qs.STREAM,
               targetUserId: e.user.id
             })
           }, n))
-        }, I);
+        }, O);
         return;
       case h.lp.USER:
-        let O = c.default.getUser(e.id);
-        if (null != O) {
-          if (i) return (0, u.r)(l, O, t, I, (e, t) => {
+        let b = c.default.getUser(e.id);
+        if (null != b) {
+          if (i) return (0, u.r)(l, b, t, O, (e, t) => {
             (0, d.s)(e, o.A.CALL_TILE_POPOUT, {
               entrypoint: h.GK.THREE_DOT,
               tileType: h.qs.USER,
-              targetUserId: O.id
+              targetUserId: b.id
             })(t)
           });
           switch (t.type) {
@@ -92,38 +92,38 @@ function f(e) {
                 let {
                   default: e
                 } = await Promise.all([n.e("97262"), n.e("29534"), n.e("39778"), n.e("54266")]).then(n.bind(n, 385913));
-                return n => (0, r.jsx)(e, b(w({}, n), {
+                return n => (0, r.jsx)(e, f(w({}, n), {
                   showChannelCallItems: true,
                   showMediaItems: true,
-                  user: O,
+                  user: b,
                   channel: t,
                   showModalItems: true,
                   onInteraction: (0, d.s)("DMUserContextMenu", o.A.CALL_TILE_POPOUT, {
-                    entrypoint: f,
+                    entrypoint: I,
                     tileType: h.qs.USER,
-                    targetUserId: O.id
+                    targetUserId: b.id
                   })
                 }))
-              }, I);
+              }, O);
             case p.rbe.GROUP_DM:
               return (0, a.L3)(l, async () => {
                 let {
                   default: e
                 } = await Promise.all([n.e("97262"), n.e("29534"), n.e("62891"), n.e("42296")]).then(n.bind(n, 228006));
-                return n => (0, r.jsx)(e, b(w({}, n), {
+                return n => (0, r.jsx)(e, f(w({}, n), {
                   showChannelCallItems: true,
                   showMediaItems: true,
                   showChatItems: false,
-                  user: O,
+                  user: b,
                   channel: t,
                   showModalItems: true,
                   onInteraction: (0, d.s)("GroupDMUserContextMenu", o.A.CALL_TILE_POPOUT, {
-                    entrypoint: f,
+                    entrypoint: I,
                     tileType: h.qs.USER,
-                    targetUserId: O.id
+                    targetUserId: b.id
                   })
                 }))
-              }, I);
+              }, O);
             case p.rbe.GUILD_VOICE:
             case p.rbe.PUBLIC_THREAD:
             case p.rbe.PRIVATE_THREAD:
@@ -132,21 +132,21 @@ function f(e) {
                 let {
                   default: l
                 } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("25623")]).then(n.bind(n, 107632));
-                return n => (0, r.jsx)(l, b(w({}, n), {
+                return n => (0, r.jsx)(l, f(w({}, n), {
                   showMediaItems: true,
                   showChannelCallItems: true,
                   showChatItems: false,
-                  user: O,
+                  user: b,
                   channel: t,
                   guildId: e,
                   showModalItems: true,
                   onInteraction: (0, d.s)("GuildChannelUserContextMenu", o.A.CALL_TILE_POPOUT, {
-                    entrypoint: f,
+                    entrypoint: I,
                     tileType: h.qs.USER,
-                    targetUserId: O.id
+                    targetUserId: b.id
                   })
                 }))
-              }, I)
+              }, O)
           }
         }
         return;

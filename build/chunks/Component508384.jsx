@@ -2,7 +2,7 @@
 /** chunk id: 508384, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => p
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,7 +17,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk967144 = require("./967144.js"),
   Chunk881762 = require("./881762.js");
 
-function f(e) {
+function p(e) {
   let {
     role: t,
     guild: r
@@ -77,7 +77,7 @@ function f(e) {
   }) : null
 }
 
-function p(e) {
+function f(e) {
   let {
     color: t,
     id: i,
@@ -85,7 +85,7 @@ function p(e) {
     guild: s,
     children: d,
     isDragging: u,
-    selectedItem: p,
+    selectedItem: f,
     onItemSelect: b,
     itemType: x,
     locked: j,
@@ -95,13 +95,13 @@ function p(e) {
     roleStyle: O,
     onContextMenu: C,
     "aria-label": N
-  } = e, E = (0, g.X_)(s.id, r, null == r ? true : r.colorStrings);
+  } = e, S = (0, g.X_)(s.id, r, null == r ? true : r.colorStrings);
   return u ? (0, l.jsx)("div", {
     className: m.rz
   }) : (0, l.jsx)(c.VQ0.Item, {
     className: m.JC,
     id: i,
-    selectedItem: p,
+    selectedItem: f,
     onItemSelect: b,
     itemType: x,
     "aria-label": null != A ? "".concat(N, ", ").concat(A) : N,
@@ -110,13 +110,13 @@ function p(e) {
       className: m.yl,
       children: ["dot" === O ? (0, l.jsx)(c.WYI, {
         color: null != t ? t : true,
-        colors: E,
+        colors: S,
         className: m.m4,
         background: false,
         tooltip: false
       }) : (0, l.jsx)(c.RYH, {
         color: null != t ? t : null,
-        colors: E,
+        colors: S,
         className: m.Ni
       }), function() {
         if (!j) return null;
@@ -131,7 +131,7 @@ function p(e) {
       }(), (0, l.jsx)("div", {
         className: m.dD,
         children: d
-      }), y && null != r ? (0, l.jsx)(f, {
+      }), y && null != r ? (0, l.jsx)(p, {
         guild: s,
         role: r
       }) : null]

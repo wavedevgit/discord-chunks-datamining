@@ -42,15 +42,15 @@ let k = function(e) {
   let {
     entrypoint: t = L.Mf.UserSettings
   } = e;
-  (0, y.P)(b.b);
+  (0, b.P)(y.b);
   let n = (0, m.H)(),
     {
       sourceAnalyticsLocations: a,
       analyticsLocations: k
     } = (0, h.Ay)(_.A.PREMIUM_MARKETING),
-    U = (0, o.bG)([S.A], () => S.A.hasFetchedSubscriptions()),
-    G = (0, o.bG)([v.A], () => v.A.hasFetchedPaymentSources),
-    V = (0, o.bG)([A.default], () => A.default.getCurrentUser()),
+    U = (0, o.bG)([I.A], () => I.A.hasFetchedSubscriptions()),
+    G = (0, o.bG)([A.A], () => A.A.hasFetchedPaymentSources),
+    V = (0, o.bG)([v.default], () => v.default.getCurrentUser()),
     F = null == V ? true : V.id,
     B = (0, P.V)(),
     H = (0, w.O)(),
@@ -70,7 +70,7 @@ let k = function(e) {
       await Promise.all([u.hP(), u.$o(), (0, d.zS)(null, null, j.tF5.DISCOVERY)]), z.current = Date.now() - e, K(false)
     })
   }, []), i.useEffect(() => {
-    W || I.default.track(j.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
+    W || S.default.track(j.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
       location_stack: a,
       load_duration_ms: z.current
     })

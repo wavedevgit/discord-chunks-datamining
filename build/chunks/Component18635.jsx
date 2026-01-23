@@ -33,7 +33,7 @@ var Chunk627968 = require("./627968.js"),
 function j() {
   return (0, r.jsx)("div", {
     className: T.N3,
-    children: (0, r.jsx)(m.A, {
+    children: (0, r.jsx)(A.A, {
       tooltip: N.intl.string(N.t["HfOgA/"])
     })
   })
@@ -50,15 +50,15 @@ let x = function(e) {
       l.replace(S.BVt.ME)
     })
   }, [l, n]), i.useEffect(() => {
-    d.I(S.BVt.FRIENDS), (0, _.d)("friends")
+    d.I(S.BVt.FRIENDS), (0, b.d)("friends")
   }, []);
-  let m = (0, o.bG)([E.A], () => E.A.theme),
+  let A = (0, o.bG)([E.A], () => E.A.theme),
     x = (0, y.kX)(),
     {
       section: P,
       rows: w
     } = (0, o.cf)([O.Ay], () => O.Ay.getState()),
-    L = (0, o.bG)([A.A], () => A.A.getSuggestionCount()),
+    L = (0, o.bG)([f.A], () => f.A.getSuggestionCount()),
     R = i.useMemo(() => w.getRelationshipCounts(), [w]);
   i.useEffect(() => {
     null != t && p.A.setInitialSection(t), 0 === R[S.eA$.FRIEND] && 0 === R[S.eA$.PENDING_INCOMING] && 0 === R[S.eA$.PENDING_OUTGOING] && 0 === R[S.eA$.BLOCKED] && p.A.transitionToSection(S.m3P.ADD_FRIEND)
@@ -68,8 +68,8 @@ let x = function(e) {
         explicit: true
       })
     },
-    M = (0, h.GV)(),
-    k = (0, h.GV)(),
+    M = (0, g.GV)(),
+    k = (0, g.GV)(),
     U = [{
       id: S.m3P.ONLINE,
       show: w.filter(S.m3P.ONLINE).length > 0,
@@ -118,30 +118,30 @@ let x = function(e) {
     G = null,
     V = (0, r.jsx)("div", {
       className: T.Xl,
-      children: (0, r.jsx)(b.A, {})
+      children: (0, r.jsx)(_.A, {})
     });
   return G = P === S.m3P.ADD_FRIEND ? (0, r.jsx)(I.A, {}) : (0, r.jsx)(v.A, {
     titleId: k
   }), (0, r.jsxs)("main", {
     className: T.kL,
     "aria-label": N.intl.string(N.t.TdEu5X),
-    children: [(0, r.jsx)(f.HI, {
+    children: [(0, r.jsx)(h.HI, {
       location: N.intl.string(N.t.TdEu5X)
     }), (0, r.jsx)(c.NPJ, {
-      theme: m,
-      children: e => (0, r.jsxs)(g.A, {
+      theme: A,
+      children: e => (0, r.jsxs)(m.A, {
         className: e,
         toolbar: (0, r.jsx)(j, {}),
         role: "navigation",
         "aria-labelledby": M,
         scrollable: true,
-        children: [(0, r.jsx)(g.A.Icon, {
+        children: [(0, r.jsx)(m.A.Icon, {
           icon: c.$yI,
           "aria-hidden": true
-        }), (0, r.jsx)(g.A.Title, {
+        }), (0, r.jsx)(m.A.Title, {
           id: M,
           children: N.intl.string(N.t.TdEu5X)
-        }), (0, r.jsx)(g.A.Divider, {}), (0, r.jsx)(c.VQ0, {
+        }), (0, r.jsx)(m.A.Divider, {}), (0, r.jsx)(c.VQ0, {
           "aria-label": N.intl.string(N.t.TdEu5X),
           selectedItem: P,
           type: "top-pill",

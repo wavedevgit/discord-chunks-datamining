@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 507238, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,37 +16,37 @@ var Chunk989349 = require("./989349.js"),
   Chunk477427 = require("./477427.js"),
   Chunk985018 = require("./985018.jsx");
 
-function h(e, t) {
+function f(e, t) {
   let n = null == e ? true : e.id,
     {
       muted: l,
-      muteConfig: h
-    } = (0, a.cf)([d.Ay], () => ({
+      muteConfig: f
+    } = (0, s.cf)([d.Ay], () => ({
       muted: null != n ? d.Ay.isMuted(n) : true,
       muteConfig: null != n ? d.Ay.getMuteConfig(n) : true
     }), [n]),
-    b = (0, u.M)(h);
-  return null == n ? null : l ? (0, r.jsx)(s.Drp, {
+    g = (0, u.M)(f);
+  return null == n ? null : l ? (0, r.jsx)(a.Drp, {
     id: "unmute-guild",
-    label: p.intl.string(p.t.De0BTC),
-    subtext: b,
+    label: h.intl.string(h.t.De0BTC),
+    subtext: g,
     action: () => o.A.updateGuildNotificationSettings(n, {
       muted: false
-    }, f.fd.Unmuted)
-  }) : (0, r.jsx)(s.Drp, {
+    }, p.fd.Unmuted)
+  }) : (0, r.jsx)(a.Drp, {
     id: "mute-guild",
-    label: p.intl.string(p.t.vRzp7P),
+    label: h.intl.string(h.t.vRzp7P),
     action: () => o.A.updateGuildNotificationSettings(n, {
       muted: true
-    }, f.fd.Muted),
+    }, p.fd.Muted),
     children: (0, c.gv)().map(e => {
       let {
         value: l,
-        label: a
+        label: s
       } = e;
-      return (0, r.jsx)(s.Drp, {
+      return (0, r.jsx)(a.Drp, {
         id: "".concat(l),
-        label: a,
+        label: s,
         action: () => (function(e) {
           if (null == n) return;
           let r = e > 0 ? i()().add(e, "second").toISOString() : null;
@@ -56,7 +56,7 @@ function h(e, t) {
               selected_time_window: e,
               end_time: r
             }
-          }, f.fd.Muted, t)
+          }, p.fd.Muted, t)
         })(l)
       }, l)
     })

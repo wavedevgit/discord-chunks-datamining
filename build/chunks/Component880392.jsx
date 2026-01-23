@@ -1,12 +1,12 @@
 /** Chunk was on 6759 **/
 /** chunk id: 880392, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  r = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -18,19 +18,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk853552 = require("./853552.js"),
   Chunk906471 = require("./906471.js");
 
-function b(e) {
+function h(e) {
   let {
     guild: t,
     onClick: n
   } = e;
-  return (0, l.jsxs)(d.DUT, {
+  return (0, l.jsxs)(o.DUT, {
     className: g.y5,
     onClick: n,
-    children: [(0, l.jsx)(o.A, {
+    children: [(0, l.jsx)(d.A, {
       guild: t,
-      size: o.A.Sizes.MEDIUM,
+      size: d.A.Sizes.MEDIUM,
       active: true
-    }), (0, l.jsx)(d.Text, {
+    }), (0, l.jsx)(o.Text, {
       className: g.J5,
       variant: "text-md/semibold",
       children: t.name
@@ -41,27 +41,27 @@ function b(e) {
   })
 }
 
-function f(e) {
+function p(e) {
   let {
     directoryChannelId: t,
     guild: n
-  } = e, s = (0, c.bG)([u.A], () => u.A.getDirectoryEntry(t, n.id)), a = i.useRef(null);
+  } = e, s = (0, c.bG)([u.A], () => u.A.getDirectoryEntry(t, n.id)), r = i.useRef(null);
   return (0, l.jsxs)("div", {
     className: g._S,
-    children: [(0, l.jsx)(o.A, {
+    children: [(0, l.jsx)(d.A, {
       guild: n,
-      size: o.A.Sizes.MEDIUM,
+      size: d.A.Sizes.MEDIUM,
       active: true
-    }), (0, l.jsx)(d.Text, {
+    }), (0, l.jsx)(o.Text, {
       className: g.J5,
       variant: "text-md/normal",
       children: n.name
-    }), (0, l.jsx)(x.A, {
+    }), (0, l.jsx)(m.A, {
       entry: s,
-      targetElementRef: a,
+      targetElementRef: r,
       children: e => {
         var t, n;
-        return (0, l.jsx)(d.jNK, (t = function(e) {
+        return (0, l.jsx)(o.jNK, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               l = Object.keys(n);
@@ -79,7 +79,7 @@ function f(e) {
           }
           return e
         }({
-          ref: a,
+          ref: r,
           size: "md",
           color: "currentColor"
         }, e), n = n = {
@@ -99,94 +99,94 @@ function f(e) {
   })
 }
 
-function h(e) {
+function f(e) {
   let t, {
       directoryChannelId: n,
       onGuildChosen: s,
       handleChooseCreate: c,
-      directoryGuildName: o,
+      directoryGuildName: d,
       availableGuilds: u,
-      addedGuilds: x,
+      addedGuilds: m,
       loading: j
     } = e,
-    [h, p] = i.useState(0);
+    [f, b] = i.useState(0);
   return t = j ? (0, l.jsx)("div", {
     className: g.do,
-    children: (0, l.jsx)(d.y$y, {})
-  }) : 0 === h ? 0 === u.length ? (0, l.jsxs)("div", {
+    children: (0, l.jsx)(o.y$y, {})
+  }) : 0 === f ? 0 === u.length ? (0, l.jsxs)("div", {
     className: g.do,
     children: [(0, l.jsx)("img", {
       src: C,
       alt: "",
       className: g.hd
-    }), (0, l.jsx)(d.Text, {
+    }), (0, l.jsx)(o.Text, {
       className: g.BI,
       color: "text-default",
       variant: "text-md/normal",
-      children: m.intl.string(m.t.liuEhd)
+      children: x.intl.string(x.t.liuEhd)
     })]
-  }) : u.map(e => (0, l.jsx)(b, {
+  }) : u.map(e => (0, l.jsx)(h, {
     guild: e,
     onClick: () => s(e)
-  }, e.id)) : 0 === x.length ? (0, l.jsxs)("div", {
+  }, e.id)) : 0 === m.length ? (0, l.jsxs)("div", {
     className: g.do,
     children: [(0, l.jsx)("img", {
       src: C,
       alt: "",
       className: g.hd
-    }), (0, l.jsx)(d.Text, {
+    }), (0, l.jsx)(o.Text, {
       className: g.BI,
       color: "text-default",
       variant: "text-md/normal",
-      children: m.intl.string(m.t.WJLuKK)
+      children: x.intl.string(x.t.WJLuKK)
     })]
-  }) : x.map(e => (0, l.jsx)(f, {
+  }) : m.map(e => (0, l.jsx)(p, {
     directoryChannelId: n,
     guild: e
   }, e.id)), (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)(r.rQ0, {
-      title: m.intl.formatToPlainString(m.t["9SKJdF"], {
-        guildName: o
+    children: [(0, l.jsx)(a.rQ0, {
+      title: x.intl.formatToPlainString(x.t["9SKJdF"], {
+        guildName: d
       }),
-      subtitle: m.intl.string(m.t.pYFZ9p)
-    }), (0, l.jsx)(r.cwr, {
-      controls: (0, l.jsxs)(d.VQ0, {
+      subtitle: x.intl.string(x.t.pYFZ9p)
+    }), (0, l.jsx)(a.cwr, {
+      controls: (0, l.jsxs)(o.VQ0, {
         className: g.$H,
-        selectedItem: h,
-        onItemSelect: p,
+        selectedItem: f,
+        onItemSelect: b,
         type: "top",
         look: "brand",
-        children: [(0, l.jsx)(d.VQ0.Item, {
-          className: a()(g.YU, {
-            [g.xR]: 0 === h
+        children: [(0, l.jsx)(o.VQ0.Item, {
+          className: r()(g.YU, {
+            [g.xR]: 0 === f
           }),
           id: 0,
-          children: m.intl.string(m.t.FTe8HS)
-        }), (0, l.jsx)(d.VQ0.Item, {
-          className: a()(g.YU, {
-            [g.xR]: 1 === h
+          children: x.intl.string(x.t.FTe8HS)
+        }), (0, l.jsx)(o.VQ0.Item, {
+          className: r()(g.YU, {
+            [g.xR]: 1 === f
           }),
           id: 1,
-          children: m.intl.string(m.t.epOumr)
+          children: x.intl.string(x.t.epOumr)
         })]
       }),
-      children: (0, l.jsx)(d.HOs, {
+      children: (0, l.jsx)(o.HOs, {
         className: g.XG,
         children: (0, l.jsx)("div", {
           className: g.OW,
           children: t
         })
       })
-    }), (0, l.jsxs)(r.jlY, {
-      children: [(0, l.jsx)(d.Heading, {
+    }), (0, l.jsxs)(a.jlY, {
+      children: [(0, l.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         className: g.K8,
-        children: m.intl.string(m.t.pgCZRP)
-      }), (0, l.jsx)(r.H7u, {
+        children: x.intl.string(x.t.pgCZRP)
+      }), (0, l.jsx)(a.H7u, {
         actionsFullWidth: true,
         actions: [{
           variant: "secondary",
-          text: m.intl.string(m.t.WqJbLi),
+          text: x.intl.string(x.t.WqJbLi),
           onClick: c
         }]
       })]

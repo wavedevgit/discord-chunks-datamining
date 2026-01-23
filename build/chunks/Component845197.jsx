@@ -2,7 +2,7 @@
 /** chunk id: 845197, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => A
+  M: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -29,7 +29,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,45 +54,45 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e) {
+function v(e) {
   let {
     user: t
-  } = e, a = (0, u.A)(), E = (0, d.xr)(), y = (0, o.bG)([c.default], () => c.default.getCurrentUser()), A = i.useCallback(() => {
-    s()(true !== y, "User must be logged in to accept a link request"), (0, l.mMO)(async () => {
+  } = e, a = (0, u.A)(), E = (0, d.xr)(), b = (0, o.bG)([c.default], () => c.default.getCurrentUser()), v = i.useCallback(() => {
+    s()(true !== b, "User must be logged in to accept a link request"), (0, l.mMO)(async () => {
       let {
         default: e
       } = await n.e("31385").then(n.bind(n, 58144));
-      return n => (0, r.jsx)(e, O(b({}, n), {
-        currentUser: y,
+      return n => (0, r.jsx)(e, O(y({}, n), {
+        currentUser: b,
         otherUser: t
       }))
     })
-  }, [y, t]), v = i.useCallback(() => {
-    s()(true !== y, "User must be logged in to decline a link request"), (0, l.mMO)(async () => {
+  }, [b, t]), A = i.useCallback(() => {
+    s()(true !== b, "User must be logged in to decline a link request"), (0, l.mMO)(async () => {
       let {
         default: e
       } = await n.e("84811").then(n.bind(n, 389094));
-      return n => (0, r.jsx)(e, O(b({}, n), {
-        currentUser: y,
+      return n => (0, r.jsx)(e, O(y({}, n), {
+        currentUser: b,
         otherUser: t
       }))
     })
-  }, [y, t]), S = i.useCallback(() => {
-    s()(true !== y, "User must be logged in to decline a link request"), (0, l.mMO)(async () => {
+  }, [b, t]), I = i.useCallback(() => {
+    s()(true !== b, "User must be logged in to decline a link request"), (0, l.mMO)(async () => {
       let {
         default: e
       } = await n.e("17219").then(n.bind(n, 187278));
-      return n => (0, r.jsx)(e, O(b({}, n), {
-        currentUser: y,
+      return n => (0, r.jsx)(e, O(y({}, n), {
+        currentUser: b,
         otherUser: t
       }))
     })
-  }, [y, t]);
+  }, [b, t]);
   return (0, r.jsxs)("div", {
     className: g.kL,
     children: [(0, r.jsx)("div", {
@@ -106,16 +106,16 @@ function A(e) {
       children: a ? (0, r.jsx)(f.A, {
         icon: l.PGe,
         tooltip: m.intl.string(h.default.e5iHmZ),
-        onClick: S
+        onClick: I
       }) : (0, r.jsxs)(r.Fragment, {
         children: [E ? null : (0, r.jsx)(f.A, {
           icon: l.A9s,
           tooltip: m.intl.string(h.default.krWQZK),
-          onClick: A
+          onClick: v
         }), (0, r.jsx)(f.A, {
           icon: l.PGe,
           tooltip: m.intl.string(h.default.bBDeNI),
-          onClick: v
+          onClick: A
         })]
       })
     })]

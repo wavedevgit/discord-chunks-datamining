@@ -23,14 +23,14 @@ function h(e, t, n) {
     disallowTypeAhead: m,
     keyboardDelegate: g,
     focusMode: E,
-    scrollRef: b,
-    getRowText: y,
+    scrollRef: y,
+    getRowText: b,
     onRowAction: O,
-    onCellAction: A,
-    escapeKeyBehavior: v = "clearSelection",
-    shouldSelectOnPressUp: S
+    onCellAction: v,
+    escapeKeyBehavior: A = "clearSelection",
+    shouldSelectOnPressUp: I
   } = e, {
-    selectionManager: I
+    selectionManager: S
   } = t;
   e["aria-label"] || e["aria-labelledby"] || console.warn("An aria-label or aria-labelledby prop is required for accessibility.");
   let T = (0, d.Q)({
@@ -54,36 +54,36 @@ function h(e, t, n) {
       collectionProps: w
     } = (0, _.y)({
       ref: n,
-      selectionManager: I,
+      selectionManager: S,
       keyboardDelegate: R,
       isVirtualized: h,
-      scrollRef: b,
+      scrollRef: y,
       disallowTypeAhead: m,
-      escapeKeyBehavior: v
+      escapeKeyBehavior: A
     }),
     P = (0, o.Bi)(e.id);
   i.B.set(t, {
     keyboardDelegate: R,
     actions: {
       onRowAction: O,
-      onCellAction: A
+      onCellAction: v
     },
-    shouldSelectOnPressUp: S
+    shouldSelectOnPressUp: I
   });
   let D = (0, s.m)({
-      selectionManager: I,
-      hasItemActions: !!(O || A)
+      selectionManager: S,
+      hasItemActions: !!(O || v)
     }),
     x = (0, l.$)(e, {
       labelable: true
     }),
     L = (0, u.useCallback)(e => {
-      if (I.isFocused) {
-        e.currentTarget.contains(e.target) || I.setFocused(false);
+      if (S.isFocused) {
+        e.currentTarget.contains(e.target) || S.setFocused(false);
         return
       }
-      e.currentTarget.contains(e.target) && I.setFocused(true)
-    }, [I]),
+      e.currentTarget.contains(e.target) && S.setFocused(true)
+    }, [S]),
     j = (0, u.useMemo)(() => ({
       onBlur: w.onBlur,
       onFocus: L
@@ -94,12 +94,12 @@ function h(e, t, n) {
     k = (0, c.v)(x, {
       role: "grid",
       id: P,
-      "aria-multiselectable": "multiple" === I.selectionMode ? "true" : true
+      "aria-multiselectable": "multiple" === S.selectionMode ? "true" : true
     }, t.isKeyboardNavigationDisabled ? j : w, 0 === t.collection.size && {
       tabIndex: M ? false : 0
     } || true, D);
   return h && (k["aria-rowcount"] = t.collection.size, k["aria-colcount"] = t.collection.columnCount), (0, a.H)({
-    getRowText: y
+    getRowText: b
   }, t), {
     gridProps: k
   }

@@ -1,19 +1,19 @@
 /** Chunk was on 96811 **/
 /** chunk id: 429432, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  s: () => f
+  s: () => u
 });
-var n, l, Chunk311907 = require("./311907.js"),
+var n, i, Chunk311907 = require("./311907.js"),
   Chunk250105 = require("./250105.js"),
   Chunk217222 = require("./217222.js"),
   Chunk128319 = require("./128319.js");
-let o = {
+let c = {
     smarterSourceOrdering: false
   },
   d = (0, Chunk250105.Ay)({
     name: "2025-08-go-live-source-ordering",
     kind: "user",
-    defaultConfig: o,
+    defaultConfig: c,
     variations: {
       1: (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -32,31 +32,31 @@ let o = {
           })
         }
         return e
-      }({}, o), l = l = {
+      }({}, c), i = i = {
         smarterSourceOrdering: true
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
           r.push.apply(r, n)
         }
         return r
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
       }), n)
     }
   });
 
-function f(e) {
+function u(e) {
   let {
     location: t
   } = e;
-  return (0, s.bG)([a.A], () => (function(e) {
+  return (0, l.bG)([a.A], () => (function(e) {
     let {
       location: t
     } = e, {
       isInHoldout: r
-    } = c.p.getCurrentConfig({
+    } = o.p.getCurrentConfig({
       location: t
     }, {
       autoTrackExposure: true

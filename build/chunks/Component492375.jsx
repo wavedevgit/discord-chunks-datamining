@@ -61,7 +61,7 @@ function m(e, t, n) {
     children: f,
     element: _,
     decorations: m
-  } = e, b = E(null != (i = null == m ? true : m[0]) ? i : {});
+  } = e, y = E(null != (i = null == m ? true : m[0]) ? i : {});
   switch (_.type) {
     case "line":
       if (null == (l = _.codeBlockState) ? true : l.isInCodeBlock) return (0, r.jsx)("div", h(p({
@@ -88,7 +88,7 @@ function m(e, t, n) {
     case "emoji":
       return (0, r.jsxs)(g, {
         attributes: u,
-        className: b,
+        className: y,
         children: [(0, r.jsx)(o.zT, {
           emoji: _.emoji
         }), f]
@@ -96,7 +96,7 @@ function m(e, t, n) {
     case "customEmoji":
       return (0, r.jsxs)(g, {
         attributes: u,
-        className: b,
+        className: y,
         children: [(0, r.jsx)(o.QT, {
           emoji: _.emoji
         }), f]
@@ -104,7 +104,7 @@ function m(e, t, n) {
     case "textMention":
       return (0, r.jsxs)(g, {
         attributes: u,
-        className: b,
+        className: y,
         children: [(0, r.jsx)(o.wN, {
           text: _.name
         }), f]
@@ -112,7 +112,7 @@ function m(e, t, n) {
     case "userMention":
       return (0, r.jsxs)(g, {
         attributes: u,
-        className: b,
+        className: y,
         children: [(0, r.jsx)(o.M9, {
           id: _.userId,
           channelId: n,
@@ -122,7 +122,7 @@ function m(e, t, n) {
     case "roleMention":
       return (0, r.jsxs)(g, {
         attributes: u,
-        className: b,
+        className: y,
         children: [(0, r.jsx)(o.ti, {
           id: _.roleId,
           guildId: t
@@ -131,7 +131,7 @@ function m(e, t, n) {
     case "channelMention":
       return (0, r.jsxs)(g, {
         attributes: u,
-        className: b,
+        className: y,
         children: [(0, r.jsx)(o.Cn, {
           id: _.channelId
         }), f]
@@ -139,7 +139,7 @@ function m(e, t, n) {
     case "staticRouteLink":
       return (0, r.jsxs)(g, {
         attributes: u,
-        className: b,
+        className: y,
         children: [(0, r.jsx)(o.sQ, {
           id: _.id,
           itemId: _.itemId,
@@ -149,7 +149,7 @@ function m(e, t, n) {
     case "soundboard":
       return (0, r.jsxs)(g, {
         attributes: u,
-        className: b,
+        className: y,
         children: [(0, r.jsx)(s.LF, {
           soundId: _.soundId
         }), f]
@@ -157,7 +157,7 @@ function m(e, t, n) {
     case "commandMention":
       return (0, r.jsxs)(g, {
         attributes: u,
-        className: b,
+        className: y,
         children: [(0, r.jsx)(o.gn, {
           text: _.commandName,
           id: _.commandId
@@ -166,7 +166,7 @@ function m(e, t, n) {
     case "timestamp":
       return (0, r.jsxs)(g, {
         attributes: u,
-        className: b,
+        className: y,
         children: [(0, r.jsx)(o.Dc, {
           timestamp: _.parsed
         }), f]
@@ -174,7 +174,7 @@ function m(e, t, n) {
     case "gameMention":
       return (0, r.jsxs)(g, {
         attributes: u,
-        className: b,
+        className: y,
         children: [(0, r.jsx)(o.NH, {
           id: _.applicationId
         }), f]

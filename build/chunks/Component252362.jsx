@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 252362, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,18 +14,18 @@ var Chunk627968 = require("./627968.js"),
   Chunk979286 = require("./979286.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let h = e => {
+let g = e => {
   let {
     displayOptions: t,
     targetElementRef: n,
-    onRequestClose: h,
-    onClick: A
+    onRequestClose: g,
+    onClick: f
   } = e, {
-    analyticsLocations: g
-  } = (0, c.Ay)(o.A.HOME_PAGE_SHOP_TAB), m = (0, s.Ay)(), b = (0, a.Mw)(m) ? t.assetDark : t.assetLight, _ = i.useRef(h);
-  return _.current = h, i.useEffect(() => () => {
+    analyticsLocations: m
+  } = (0, c.Ay)(o.A.HOME_PAGE_SHOP_TAB), A = (0, s.Ay)(), _ = (0, a.Mw)(A) ? t.assetDark : t.assetLight, b = i.useRef(g);
+  return b.current = g, i.useEffect(() => () => {
     var e;
-    null == (e = _.current) || e.call(_)
+    null == (e = b.current) || e.call(b)
   }, []), (0, r.jsx)(l.AM, {
     targetElementRef: n,
     position: "right",
@@ -38,18 +38,18 @@ let h = e => {
     body: t.body(),
     graphic: {
       type: "image",
-      src: b
+      src: _
     },
     actions: [{
-      text: f.intl.string(f.t.fYfGgK),
+      text: h.intl.string(h.t.fYfGgK),
       variant: "primary",
       onClick: () => {
-        null == A || A(), (0, u.pX)(p.BVt.COLLECTIBLES_SHOP), (0, d.Cz)({
-          analyticsLocations: g,
+        null == f || f(), (0, u.pX)(p.BVt.COLLECTIBLES_SHOP), (0, d.Cz)({
+          analyticsLocations: m,
           analyticsSource: o.A.HOME_PAGE_SHOP_TAB
         })
       }
     }],
-    onRequestClose: h
+    onRequestClose: g
   })
 }

@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   Ay: () => E,
-  NP: () => y,
+  NP: () => b,
   TA: () => g,
-  YY: () => b
+  YY: () => y
 }), require("./896048.js"), require("./938796.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
 var Chunk665260 = require("./665260.js"),
   Chunk311907 = require("./311907.js"),
@@ -201,7 +201,7 @@ let E = {
     },
     fetchApplication: g
   },
-  b = (0, Chunk311907.UT)(Chunk587895.A, {
+  y = (0, Chunk311907.UT)(Chunk587895.A, {
     getQueryId: Chunk652215.fic.APPLICATIONS,
     get: e => {
       var t;
@@ -211,12 +211,12 @@ let E = {
     getIsLoading: e => null != e && c.A.isFetchingApplication(e)
   });
 
-function y(e) {
+function b(e) {
   let {
     data: t,
     isLoading: n,
     error: r
-  } = b(e);
+  } = y(e);
   return {
     app: (0, i.bG)([o.A], () => {
       if (null == t) {

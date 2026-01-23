@@ -11,11 +11,11 @@ var Chunk64700 = require("./64700.js"),
 function s() {
   let [e, t] = r.useState(false), [n, s] = r.useState(), a = r.useRef(null);
   return {
-    createGuildApplication: async (e, n, r, c) => {
+    createGuildApplication: async (e, n, r, o) => {
       s(true);
       try {
         return t(true), null == a.current && (a.current = await l.Ay.createApplication({
-          name: c,
+          name: o,
           guildId: e.id,
           type: r,
           teamId: n

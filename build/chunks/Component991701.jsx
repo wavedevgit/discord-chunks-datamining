@@ -2,7 +2,7 @@
 /** chunk id: 991701, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk996988 = require("./996988.js"),
   Chunk346170 = require("./346170.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,14 +30,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -54,49 +54,49 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function v(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = S(e, t), Object.getOwnPropertySymbols)
+  if (a = I(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function S(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let I = function(e) {
-  var t, n, a, b, O, S;
+let S = function(e) {
+  var t, n, a, y, O, I;
   let {
-    style: I,
+    style: S,
     src: T,
     backgroundSrc: C,
     userId: N,
     guildId: R,
     pulseSpeakingIndicator: w = false,
     speaking: P = false
-  } = e, D = v(e, ["style", "src", "backgroundSrc", "userId", "guildId", "pulseSpeakingIndicator", "speaking"]), x = null != C ? C : T, L = (0, c.Ay)(x, o.A.unsafe_rawColors.PRIMARY_800.css), j = (0, f.Ay)(null != N ? N : m.dJq, R), M = null != (t = (0, d.tM)(null == j || null == (b = j.themeColors) ? true : b[0])) ? t : m.NJ8.DARK, {
+  } = e, D = A(e, ["style", "src", "backgroundSrc", "userId", "guildId", "pulseSpeakingIndicator", "speaking"]), x = null != C ? C : T, L = (0, c.Ay)(x, o.A.unsafe_rawColors.PRIMARY_800.css), j = (0, f.Ay)(null != N ? N : m.dJq, R), M = null != (t = (0, d.tM)(null == j || null == (y = j.themeColors) ? true : y[0])) ? t : m.NJ8.DARK, {
     profileThemeStyle: k,
     profileThemeClassName: U
   } = (0, p.A)({
     theme: M,
     themeType: g.d.VIDEO_TILE_BACKGROUND,
     primaryColor: null != (n = null == j || null == (O = j.themeColors) ? true : O[0]) ? n : null,
-    secondaryColor: null != (a = null == j || null == (S = j.themeColors) ? true : S[1]) ? a : null
+    secondaryColor: null != (a = null == j || null == (I = j.themeColors) ? true : I[1]) ? a : null
   }), {
     useProfileColors: G
   } = (0, h.a5)("VideoBackground-web");
@@ -106,15 +106,15 @@ let I = function(e) {
         dispatchWait: true
       })
     }, [G, N, R]), null == T) return null;
-  let V = (0, r.jsx)(l.euF, y({
+  let V = (0, r.jsx)(l.euF, b({
       className: E.R,
       src: T
     }, D)),
-    F = A(y({}, I), {
+    F = v(b({}, S), {
       backgroundColor: L
     });
   return (0, r.jsx)("div", {
-    style: G ? y({}, I, k) : y({}, F),
+    style: G ? b({}, S, k) : b({}, F),
     className: s()(E.T, {
       [U]: G
     }),

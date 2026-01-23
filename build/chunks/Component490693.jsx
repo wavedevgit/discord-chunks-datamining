@@ -2,7 +2,7 @@
 /** chunk id: 490693, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -72,7 +72,7 @@ function E(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-class b extends(r = Chunk64700.PureComponent) {
+class y extends(r = Chunk64700.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -123,7 +123,7 @@ class b extends(r = Chunk64700.PureComponent) {
         analyticsSource: m,
         contentType: g,
         originalContentType: E
-      } = this.props, b = {
+      } = this.props, y = {
         url: a,
         width: l,
         height: c,
@@ -141,7 +141,7 @@ class b extends(r = Chunk64700.PureComponent) {
       };
       (0, s.vq)(e.currentTarget) && e.currentTarget.blur(), (0, d.R)({
         onClose: this.onCloseImage,
-        items: [b],
+        items: [y],
         shouldHideMediaOptions: _,
         location: null != m ? m : "LazyImageZoomable",
         contextKey: this.modalContext
@@ -150,15 +150,15 @@ class b extends(r = Chunk64700.PureComponent) {
   }
 }
 
-function y(e) {
+function b(e) {
   let t = (0, l.Us)(),
     n = (0, f.j)();
-  return (0, i.jsx)(b, m(_({}, e), {
+  return (0, i.jsx)(y, m(_({}, e), {
     isWindowFocused: n,
     appContext: t
   }))
 }
-p(b, "defaultProps", {
+p(y, "defaultProps", {
   shouldLink: true,
   autoPlay: false,
   animated: false

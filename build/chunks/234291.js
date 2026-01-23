@@ -16,7 +16,7 @@ require.d(exports, {
 var Chunk643479 = require("./643479.js"),
   Chunk761799 = require("./761799.js");
 let a = {
-    isPngFile: y,
+    isPngFile: b,
     findPngOffsets: O
   },
   s = "\x89PNG\r\n\x1a\n",
@@ -32,9 +32,9 @@ let a = {
   m = "pHYs",
   g = "tIME",
   E = "eXIf",
-  b = "iCCP";
+  y = "iCCP";
 
-function y(e) {
+function b(e) {
   return !!e && (0, r.hT)(e, 0, s.length) === s
 }
 
@@ -45,14 +45,14 @@ function O(e, t) {
     },
     f = s.length;
   for (; f + o + l <= e.byteLength;) {
-    if (i.A.USE_PNG_FILE && A(e, f)) a.hasAppMarkers = true, a.pngHeaderOffset = f + d;
-    else if (i.A.USE_XMP && v(e, f)) {
+    if (i.A.USE_PNG_FILE && v(e, f)) a.hasAppMarkers = true, a.pngHeaderOffset = f + d;
+    else if (i.A.USE_XMP && A(e, f)) {
       let t = N(e, f);
       true !== t && (a.hasAppMarkers = true, a.xmpChunks = [{
         dataOffset: t,
         length: e.getUint32(f + c) - (t - (f + d))
       }])
-    } else if (S(e, f, t)) {
+    } else if (I(e, f, t)) {
       a.hasAppMarkers = true;
       let t = (0, r.hT)(e, f + u, l);
       a.pngTextChunks || (a.pngTextChunks = []), a.pngTextChunks.push({
@@ -60,7 +60,7 @@ function O(e, t) {
         type: t,
         offset: f + d
       })
-    } else if (I(e, f)) a.hasAppMarkers = true, a.tiffHeaderOffset = f + d;
+    } else if (S(e, f)) a.hasAppMarkers = true, a.tiffHeaderOffset = f + d;
     else if (i.A.USE_ICC && t && T(e, f)) {
       a.hasAppMarkers = true;
       let t = e.getUint32(f + c),
@@ -84,26 +84,26 @@ function O(e, t) {
   return a
 }
 
-function A(e, t) {
+function v(e, t) {
   let n = "IHDR";
   return (0, r.hT)(e, t + u, l) === n
 }
 
-function v(e, t) {
+function A(e, t) {
   return (0, r.hT)(e, t + u, l) === _ && (0, r.hT)(e, t + d, f.length) === f
 }
 
-function S(e, t, n) {
+function I(e, t, n) {
   let i = (0, r.hT)(e, t + u, l);
   return i === p || i === _ || i === h && n
 }
 
-function I(e, t) {
+function S(e, t) {
   return (0, r.hT)(e, t + u, l) === E
 }
 
 function T(e, t) {
-  return (0, r.hT)(e, t + u, l) === b
+  return (0, r.hT)(e, t + u, l) === y
 }
 
 function C(e, t) {

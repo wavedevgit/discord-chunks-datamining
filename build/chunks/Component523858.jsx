@@ -1,5 +1,5 @@
 /** Chunk was on 36456 **/
-/** chunk id: 523858, original params: n,e,t (module,exports,require) **/
+/** chunk id: 523858, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   A: () => s
 });
@@ -8,15 +8,15 @@ require("./64700.js");
 var Chunk748964 = require("./748964.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function s(n) {
+function s(e) {
   let {
-    onContinue: e,
+    onContinue: n,
     onClose: t
-  } = n;
-  return (0, i.jsx)(o.s, {
+  } = e;
+  return (0, o.jsx)(i.s, {
     title: r.intl.string(r.t["8YK70c"]),
     body: r.intl.string(r.t.moyYLf),
     onClose: t,
-    onContinue: e
+    onContinue: n
   })
 }

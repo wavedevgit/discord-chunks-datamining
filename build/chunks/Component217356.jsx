@@ -79,9 +79,9 @@ let E = Chunk64700.memo(function(e) {
     contextGuildId: a
   } = e, f = m(e, ["children", "isOverlay", "contextGuildId"]), [_, g] = i.useState({
     maskImage: "none"
-  }), E = i.useRef(null), b = (0, l.A)(() => {
+  }), E = i.useRef(null), y = (0, l.A)(() => {
     var e, t, r, i;
-    let a = null != (e = null == (r = y.current) ? true : r.getBoundingClientRect()) ? e : null,
+    let a = null != (e = null == (r = b.current) ? true : r.getBoundingClientRect()) ? e : null,
       s = null != (t = null == (i = E.current) ? true : i.getBoundingClientRect()) ? t : null;
     if (n || null == a || null == s) return void g({
       maskImage: "none"
@@ -93,10 +93,10 @@ let E = Chunk64700.memo(function(e) {
     }) : g({
       maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) ".concat(l, "px)")
     })
-  }), y = (0, o.w)(b), O = (0, c.Wb)(f.userId, a);
+  }), b = (0, o.w)(y), O = (0, c.Wb)(f.userId, a);
   return (0, r.jsxs)("div", {
     className: s()(d.kL, n && d.ur),
-    ref: y,
+    ref: b,
     children: [(0, r.jsx)("div", {
       className: d.QV,
       children: t

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Ay: () => P,
-  DN: () => b,
-  mt: () => S
+  DN: () => y,
+  mt: () => I
 }), require("./321073.js"), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -56,20 +56,20 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = {
+let y = {
     SIZE_16: 16,
     SIZE_24: 24,
     SIZE_32: 32,
     SIZE_56: 56
   },
-  y = 10,
+  b = 10,
   O = 15,
-  A = 20,
-  v = 35,
-  S = "user-icon";
+  v = 20,
+  A = 35,
+  I = "user-icon";
 
-function I(e, t) {
-  if (e === S) return "user-icon-".concat(t);
+function S(e, t) {
+  if (e === I) return "user-icon-".concat(t);
   let n = e instanceof d.A ? e : null != e ? e.user : null;
   return null != n ? n.id : "user-".concat(t)
 }
@@ -89,15 +89,15 @@ function C(e) {
 }
 
 function N() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : b.SIZE_24;
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : y.SIZE_24;
   switch (e) {
-    case b.SIZE_16:
+    case y.SIZE_16:
       return _.nc;
-    case b.SIZE_24:
+    case y.SIZE_24:
       return _.q1;
-    case b.SIZE_32:
+    case y.SIZE_32:
       return _.Hb;
-    case b.SIZE_56:
+    case y.SIZE_56:
       return _.dl;
     default:
       return _.q1
@@ -105,18 +105,18 @@ function N() {
 }
 
 function R() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : b.SIZE_24;
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : y.SIZE_24;
   switch (e) {
-    case b.SIZE_16:
-      return y;
-    case b.SIZE_24:
+    case y.SIZE_16:
+      return b;
+    case y.SIZE_24:
       return O;
-    case b.SIZE_32:
-      return A;
-    case b.SIZE_56:
+    case y.SIZE_32:
       return v;
+    case y.SIZE_56:
+      return A;
     default:
-      return y
+      return b
   }
 }
 class w extends(r = Chunk64700.PureComponent) {
@@ -135,13 +135,13 @@ class w extends(r = Chunk64700.PureComponent) {
       s.push(t ? (0, i.jsx)("div", {
         className: _.H,
         children: o
-      }, I(null != (d = e[u]) ? d : null, u)) : (0, i.jsx)(c.Ay, {
+      }, S(null != (d = e[u]) ? d : null, u)) : (0, i.jsx)(c.Ay, {
         className: _.aV,
         height: r,
         width: r,
         mask: c.Ay.Masks.VOICE_USER_SUMMARY_ITEM,
         children: o
-      }, I(e[u], u))), u++
+      }, S(e[u], u))), u++
     }
     return null != a ? s.push(a) : null != l && s.push(l), s
   }
@@ -245,7 +245,7 @@ class w extends(r = Chunk64700.PureComponent) {
             alt: "",
             className: _.my
           })
-        } if (e === S) {
+        } if (e === I) {
         let e = R(c);
         r = (0, i.jsx)(l.nys, {
           size: "custom",
@@ -261,8 +261,8 @@ class w extends(r = Chunk64700.PureComponent) {
       let d = (0, i.jsx)("div", {
         className: _.WK,
         children: r
-      }, I(e, n));
-      return a && e !== S ? (0, i.jsx)(l.DUT, {
+      }, S(e, n));
+      return a && e !== I ? (0, i.jsx)(l.DUT, {
         className: _.UC,
         onClick: () => {
           null != this._ref.current && null != e && this.setState({
@@ -271,7 +271,7 @@ class w extends(r = Chunk64700.PureComponent) {
         },
         tabIndex: false,
         children: d
-      }, I(e, n)) : d
+      }, S(e, n)) : d
     })
   }
 }
@@ -280,6 +280,6 @@ h(w, "defaultProps", {
   renderMoreUsers: T,
   renderIcon: false,
   showDefaultAvatarsForNullUsers: false,
-  size: b.SIZE_24
+  size: y.SIZE_24
 });
 let P = w

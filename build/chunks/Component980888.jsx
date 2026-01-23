@@ -1,7 +1,7 @@
 /** Chunk was on 64676 **/
 /** chunk id: 980888, original params: t,e,s (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => g
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -146,7 +146,7 @@ class I extends Chunk64700.PureComponent {
     })
   }
 }
-let f = Chunk311907.Ay.connectStores([Chunk775228.A], () => ({
+let g = Chunk311907.Ay.connectStores([Chunk775228.A], () => ({
   installationPaths: h.A.installationPaths,
   installationPathsMetadata: h.A.installationPathsMetadata
 }))(I)

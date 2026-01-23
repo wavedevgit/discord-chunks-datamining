@@ -37,61 +37,61 @@ function p(e) {
     itemType: t,
     onClose: p
   } = e, {
-    newestAnalyticsLocation: f
-  } = (0, s.Ay)(), m = t === l.R.AVATAR_DECORATION ? o.e.AVATAR_DECORATION_MODAL_UPSELL : t === l.R.PROFILE_EFFECT ? o.e.PROFILE_EFFECT_MODAL_UPSELL : t === l.R.NAMEPLATE ? o.e.NAMEPLATE_MODAL_UPSELL : null;
-  return null == m ? null : (0, r.jsxs)("div", {
+    newestAnalyticsLocation: m
+  } = (0, s.Ay)(), f = t === l.R.AVATAR_DECORATION ? c.e.AVATAR_DECORATION_MODAL_UPSELL : t === l.R.PROFILE_EFFECT ? c.e.PROFILE_EFFECT_MODAL_UPSELL : t === l.R.NAMEPLATE ? c.e.NAMEPLATE_MODAL_UPSELL : null;
+  return null == f ? null : (0, r.jsxs)("div", {
     className: u.hc,
     children: [(0, r.jsx)(i.tvc, {
       className: u.ax,
       size: "md",
-      color: c.k0.PREMIUM_TIER_2
+      color: o.k0.PREMIUM_TIER_2
     }), (0, r.jsx)(i.Text, {
       className: u.cf,
       variant: "text-md/medium",
-      children: m === o.e.AVATAR_DECORATION_MODAL_UPSELL ? a.intl.format(a.t["aFR/EI"], {
+      children: f === c.e.AVATAR_DECORATION_MODAL_UPSELL ? a.intl.format(a.t["aFR/EI"], {
         onClick: () => {
           (0, i.mMO)(async () => {
             let {
               default: e
             } = await n.e("64864").then(n.bind(n, 948265));
             return t => (0, r.jsx)(e, d({
-              premiumUpsellType: m,
+              premiumUpsellType: f,
               title: a.intl.string(a.t.JI7uhc),
               body: a.intl.string(a.t["5XvsdZ"]),
               glowUp: a.intl.string(a.t["5XvsdZ"]),
-              analyticsSource: f,
+              analyticsSource: m,
               onSecondaryClick: p
             }, t))
           })
         }
-      }) : m === o.e.PROFILE_EFFECT_MODAL_UPSELL ? a.intl.format(a.t.eWNONM, {
+      }) : f === c.e.PROFILE_EFFECT_MODAL_UPSELL ? a.intl.format(a.t.eWNONM, {
         onClick: () => {
           (0, i.mMO)(async () => {
             let {
               default: e
             } = await n.e("64864").then(n.bind(n, 948265));
             return t => (0, r.jsx)(e, d({
-              premiumUpsellType: m,
+              premiumUpsellType: f,
               title: a.intl.string(a.t.sYm15X),
               body: a.intl.string(a.t["Hza+Bu"]),
               glowUp: a.intl.string(a.t["Hza+Bu"]),
-              analyticsSource: f,
+              analyticsSource: m,
               onSecondaryClick: p
             }, t))
           })
         }
-      }) : m === o.e.NAMEPLATE_MODAL_UPSELL ? a.intl.format(a.t.G6b8TF, {
+      }) : f === c.e.NAMEPLATE_MODAL_UPSELL ? a.intl.format(a.t.G6b8TF, {
         onClick: () => {
           (0, i.mMO)(async () => {
             let {
               default: e
             } = await n.e("64864").then(n.bind(n, 948265));
             return t => (0, r.jsx)(e, d({
-              premiumUpsellType: m,
+              premiumUpsellType: f,
               title: a.intl.string(a.t.k7UN4k),
               body: a.intl.string(a.t["0/QPxO"]),
               glowUp: a.intl.string(a.t["0/QPxO"]),
-              analyticsSource: f,
+              analyticsSource: m,
               onSecondaryClick: p
             }, t))
           })

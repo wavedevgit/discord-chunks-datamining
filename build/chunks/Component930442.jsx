@@ -11,7 +11,7 @@ var Chunk627968 = require("./627968.js"),
 let o = e => {
   let {
     config: t
-  } = e, n = l.useMemo(() => (0, i.cloneDeep)(t), [t]), o = l.useMemo(() => t.effects.some(e => null != e.randomizedSources && e.randomizedSources.length > 0), [t]), c = l.useMemo(() => {
+  } = e, n = l.useMemo(() => (0, r.cloneDeep)(t), [t]), o = l.useMemo(() => t.effects.some(e => null != e.randomizedSources && e.randomizedSources.length > 0), [t]), c = l.useMemo(() => {
     if (o) {
       var e;
       let a = 1 === (e = n.effects.reduce((e, t) => {
@@ -30,7 +30,7 @@ let o = e => {
     config: c,
     skuId: "debug"
   }, true);
-  return (0, a.jsx)(r.p, {
+  return (0, a.jsx)(i.p, {
     profileEffectConfig: c,
     layerData: d,
     skuId: "debug"

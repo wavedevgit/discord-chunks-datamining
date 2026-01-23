@@ -25,7 +25,7 @@ function p(e) {
     note: p
   } = (0, c.A)(t), _ = null != p && "" !== p, h = _ ? o.ueQ : o.i2Q, m = _ ? d.intl.string(d.t["gs+qcM"]) : d.intl.string(d.t["1ZZtts"]), g = _ ? p : d.intl.string(d.t["1ZZtts"]), {
     trackUserProfileAction: E
-  } = (0, l.NJ)(), b = () => {
+  } = (0, l.NJ)(), y = () => {
     E({
       action: "PRESS_ADD_NOTE"
     }), null == i || i({
@@ -38,7 +38,7 @@ function p(e) {
     text: g,
     children: (0, r.jsx)(o.DUT, {
       "aria-label": m,
-      onClick: b,
+      onClick: y,
       className: a()(f.x, n && f.R),
       children: (0, r.jsx)(h, {
         size: "xs",

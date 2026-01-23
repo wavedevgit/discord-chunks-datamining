@@ -1,8 +1,8 @@
 /** Chunk was on 21738 **/
 /** chunk id: 845187, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  a: () => f,
-  default: () => h
+  a: () => h,
+  default: () => g
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,28 +14,28 @@ var Chunk627968 = require("./627968.js"),
   Chunk837921 = require("./837921.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let f = "Activity Encourages Hardware Acceleration";
+let h = "Activity Encourages Hardware Acceleration";
 
-function h(e) {
+function g(e) {
   var t;
   let {
     applicationId: n,
-    transitionState: h,
-    onClose: A
-  } = e, [g, m] = i.useState(false), [b] = (0, o.A)([n]), _ = null != (t = null == b ? true : b.name) ? t : "This Activity";
+    transitionState: g,
+    onClose: f
+  } = e, [m, A] = i.useState(false), [_] = (0, o.A)([n]), b = null != (t = null == _ ? true : _.name) ? t : "This Activity";
   i.useEffect(() => {
     c.default.track(d.HAw.OPEN_MODAL, {
-      type: f
+      type: h
     })
   }, []);
   let E = async () => {
     let e = "temporary";
-    g && (e = "permanent", s.Ay.updatedUnsyncedSettings({
+    m && (e = "permanent", s.Ay.updatedUnsyncedSettings({
       disableActivityHardwareAccelerationPrompt: true
     })), c.default.track(d.HAw.MODAL_DISMISSED, {
-      type: f,
+      type: h,
       dismiss_type: e
-    }), await A()
+    }), await f()
   }, O = async () => {
     c.default.track(d.HAw.ACTIVITY_ENABLE_HARDWARE_ACCELERATION, {
       application_id: n
@@ -43,13 +43,13 @@ function h(e) {
   };
   return (0, r.jsx)(l.Modal, {
     size: "md",
-    transitionState: h,
+    transitionState: g,
     onClose: E,
     "aria-label": p.intl.string(p.t.NQkK4l),
     title: p.intl.string(p.t.NQkK4l),
     actionBarInput: (0, r.jsx)(a.Checkbox, {
-      checked: g,
-      onChange: () => m(!g),
+      checked: m,
+      onChange: () => A(!m),
       label: p.intl.string(p.t["5E9SB9"]),
       labelType: "secondary"
     }),
@@ -65,7 +65,7 @@ function h(e) {
     children: (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       children: p.intl.format(p.t.B9eiaK, {
-        applicationName: _
+        applicationName: b
       })
     })
   })

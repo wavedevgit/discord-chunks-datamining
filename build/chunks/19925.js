@@ -1,8 +1,8 @@
 /** Chunk was on 21738 **/
 /** chunk id: 19925, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => f,
-  X: () => h
+  I: () => h,
+  X: () => g
 }), require("./733351.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -15,7 +15,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk601193 = require("./601193.js"),
   Chunk324580 = require("./324580.js");
 
-function f(e) {
+function h(e) {
   let {
     loadId: t
   } = e, n = c.A.useField("fetchedQuery"), l = c.A.useField("categoryId"), a = c.A.useField("languageCode"), u = r.useMemo(() => ({
@@ -25,10 +25,10 @@ function f(e) {
   }), [l, a, n]), d = (0, i.bG)([o.A], () => {
     var e;
     return null != (e = o.A.getGuildIds(u)) ? e : p.VX
-  }), f = (0, i.bG)([o.A], () => {
+  }), h = (0, i.bG)([o.A], () => {
     var e;
     return null != (e = o.A.getIsFetching(u)) && e
-  }), h = c.A.useField("resultsQuery"), A = h !== n, g = r.useCallback(() => {
+  }), g = c.A.useField("resultsQuery"), f = g !== n, m = r.useCallback(() => {
     let e = o.A.getGuildIds(u),
       n = o.A.getTotal(u);
     if (null == e || null == n) return;
@@ -44,14 +44,14 @@ function f(e) {
   }, [t, u]);
   return r.useMemo(() => ({
     guildIds: d,
-    loading: A || f,
-    searchResultsQuery: h,
-    loadMore: g,
+    loading: f || h,
+    searchResultsQuery: g,
+    loadMore: m,
     searchCategoryId: l
-  }), [d, A, f, h, g, l])
+  }), [d, f, h, g, m, l])
 }
 
-function h(e) {
+function g(e) {
   let {
     loadId: t
   } = e, n = d.A.useField("isSearchVisible"), i = c.A.useField("query");

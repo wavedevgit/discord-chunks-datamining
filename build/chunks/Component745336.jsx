@@ -1,7 +1,7 @@
 /** Chunk was on 23425 **/
 /** chunk id: 745336, original params: e,a,n (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,58 +13,58 @@ var Chunk627968 = require("./627968.js"),
   Chunk40449 = require("./40449.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk831498 = require("./831498.js");
-let f = function(e) {
+let m = function(e) {
   let {
     onClose: a,
     onComplete: n,
-    onCancel: i,
-    transitionState: f,
-    webviewUrl: b
-  } = e, m = (0, l.W$)(), h = t.useCallback(() => {
+    onCancel: s,
+    transitionState: m,
+    webviewUrl: f
+  } = e, h = (0, c.W$)(), _ = i.useCallback(() => {
     n(), a()
-  }, [n, a]), g = t.useCallback(() => {
-    (0, c.kBI)(o.SW) && h()
-  }, [h]);
-  (0, d.dZ)(g);
-  let j = t.useCallback(e => {
-    if (m && "" !== b) {
+  }, [n, a]), g = i.useCallback(() => {
+    (0, l.kBI)(d.SW) && _()
+  }, [_]);
+  (0, o.dZ)(g);
+  let j = i.useCallback(e => {
+    if (h && "" !== f) {
       var a;
-      (null == e || null == (a = e.data) ? true : a.eventType) === "Verification.Result" && h()
+      (null == e || null == (a = e.data) ? true : a.eventType) === "Verification.Result" && _()
     }
-  }, [b, h, m]);
-  return t.useEffect(() => (window.addEventListener("message", j), () => {
+  }, [f, _, h]);
+  return i.useEffect(() => (window.addEventListener("message", j), () => {
     window.removeEventListener("message", j)
-  }), [j]), (0, s.jsxs)(c.EOs, {
+  }), [j]), (0, t.jsxs)(l.EOs, {
     "data-migration-pending": true,
-    transitionState: f,
-    className: r()(u.zr, u.rh),
+    transitionState: m,
+    className: r()(p.zr, p.rh),
     parentComponent: "AgeVerificationModal",
-    size: c.rIJ.MEDIUM,
-    children: [(0, s.jsx)(c.$mQ, {
+    size: l.rIJ.MEDIUM,
+    children: [(0, t.jsx)(l.$mQ, {
       "data-migration-pending": true,
-      className: r()(u.Qs, u.WM),
+      className: r()(p.Qs, p.WM),
       scrollbarType: "none",
-      children: (0, s.jsx)("iframe", {
+      children: (0, t.jsx)("iframe", {
         id: "frame",
-        src: b,
-        className: u.pU,
+        src: f,
+        className: p.pU,
         allow: "camera; microphone"
       })
-    }), (0, s.jsx)(c.jlY, {
+    }), (0, t.jsx)(l.jlY, {
       "data-migration-pending": true,
-      children: (0, s.jsx)("div", {
-        className: u.qr,
-        children: (0, s.jsxs)(c.ButtonGroup, {
+      children: (0, t.jsx)("div", {
+        className: p.qr,
+        children: (0, t.jsxs)(l.ButtonGroup, {
           justify: "space-between",
           fullWidthContainer: true,
-          children: [(0, s.jsx)(c.QWc, {
+          children: [(0, t.jsx)(l.QWc, {
             variant: "secondary",
-            text: p.intl.string(p.t.fjKFae),
+            text: u.intl.string(u.t.fjKFae),
             onClick: a
-          }), null != i && (0, s.jsx)(c.QWc, {
+          }), null != s && (0, t.jsx)(l.QWc, {
             variant: "secondary",
-            text: p.intl.string(p.t["4gTnU0"]),
-            onClick: i
+            text: u.intl.string(u.t["4gTnU0"]),
+            onClick: s
           })]
         })
       })

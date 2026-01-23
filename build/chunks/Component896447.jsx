@@ -17,17 +17,17 @@ function c(e) {
     applicationId: t,
     guildId: c,
     sectionTitle: u,
-    skuIds: f,
-    variant: g = d.s.SMALL
-  } = e, p = a.useMemo(() => ({
+    skuIds: g,
+    variant: _ = d.s.SMALL
+  } = e, p = s.useMemo(() => ({
     pageSection: l,
     pageSectionTitle: u
   }), [l, u]);
-  return null == f || 0 === f.length ? null : (0, n.jsx)(i.E9, {
+  return null == g || 0 === g.length ? null : (0, n.jsx)(i.E9, {
     newValue: p,
     children: (0, n.jsxs)("div", {
       className: o.h,
-      children: [null != u && u.length > 0 && (0, n.jsx)(s.Heading, {
+      children: [null != u && u.length > 0 && (0, n.jsx)(a.Heading, {
         variant: "heading-lg/semibold",
         color: "text-strong",
         lineClamp: 1,
@@ -35,8 +35,8 @@ function c(e) {
         children: u
       }), (0, n.jsx)(r.$, {
         applicationId: t,
-        skuIds: f,
-        variant: g,
+        skuIds: g,
+        variant: _,
         guildId: c
       })]
     })

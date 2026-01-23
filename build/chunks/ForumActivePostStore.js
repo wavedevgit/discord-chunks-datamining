@@ -22,7 +22,7 @@ var i, Chunk735438 = require("./735438.js"),
   Chunk661191 = require("./661191.js"),
   Chunk767581 = require("./767581.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,10 +31,10 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 let O = [],
-  A = null,
   v = null,
-  S = new Set,
-  I = Chunk602137.T.LATEST_ACTIVITY,
+  A = null,
+  I = new Set,
+  S = Chunk602137.T.LATEST_ACTIVITY,
   T = Chunk392421.n.MATCH_SOME,
   C = 0,
   N = [],
@@ -57,7 +57,7 @@ function M(e) {
 
 function k(e) {
   return function(t, n) {
-    return (0, b.yr)(t) ? false : (0, b.yr)(n) ? 1 : e === l.T.LATEST_ACTIVITY ? E.default.compare(j(n), j(t)) : E.default.compare(n, t)
+    return (0, y.yr)(t) ? false : (0, y.yr)(n) ? 1 : e === l.T.LATEST_ACTIVITY ? E.default.compare(j(n), j(t)) : E.default.compare(n, t)
   }
 }
 
@@ -74,7 +74,7 @@ function U(e, t) {
 }
 
 function G() {
-  N = [], r = null, v = null, S = new Set, I = l.T.LATEST_ACTIVITY, T = o.n.MATCH_SOME, C = 0, w = [], P = s().chain(O), D = s().chain(O), L.clear(), x.clear()
+  N = [], r = null, A = null, I = new Set, S = l.T.LATEST_ACTIVITY, T = o.n.MATCH_SOME, C = 0, w = [], P = s().chain(O), D = s().chain(O), L.clear(), x.clear()
 }
 
 function V() {
@@ -93,11 +93,11 @@ function F(e) {
       id: t
     } = e;
     return t
-  }).sort(k(I))
+  }).sort(k(S))
 }
 
 function B(e) {
-  let t = h.A.getChannel(v);
+  let t = h.A.getChannel(A);
   if (null == t) return;
   (null == e ? true : e.refreshThreadIds) && (w = Object.values(f.A.getThreadsForParent(t.guild_id, t.id)).map(e => {
     let {
@@ -105,8 +105,8 @@ function B(e) {
     } = e;
     return t
   }), C = 0, R = true), 0 !== x.size && (w = w.filter(e => !x.has(e)), x.clear()), 0 !== L.size && (w = Array.from(new Set([...w, ...L])), L.clear()), ((null == e ? true : e.refreshThreadIds) || (null == e ? true : e.sortThreadIds)) && (D = s().chain(w).sort(k(l.T.LATEST_ACTIVITY)), P = s().chain(w).sort(k(l.T.CREATION_DATE)));
-  let n = (I === l.T.LATEST_ACTIVITY ? D : P).value(),
-    i = (N = 0 === S.size ? n : n.filter(U(S, T))).find(e => M(e));
+  let n = (S === l.T.LATEST_ACTIVITY ? D : P).value(),
+    i = (N = 0 === I.size ? n : n.filter(U(I, T))).find(e => M(e));
   r = null == i ? null : i
 }
 
@@ -115,7 +115,7 @@ function H(e) {
   let {
     guildId: n
   } = e;
-  if (null == v || n !== (null == (t = h.A.getChannel(v)) ? true : t.guild_id)) returnfalse;
+  if (null == A || n !== (null == (t = h.A.getChannel(A)) ? true : t.guild_id)) returnfalse;
   B({
     refreshThreadIds: true
   })
@@ -125,8 +125,8 @@ function Y(e) {
   let {
     channel: t
   } = e;
-  if (null == t.parent_id || t.parent_id !== v) returnfalse;
-  let n = (0, b.yr)(t.id),
+  if (null == t.parent_id || t.parent_id !== A) returnfalse;
+  let n = (0, y.yr)(t.id),
     r = L.has(t.id);
   if (n && !r) L.add(t.id), B({
     sortThreadIds: true
@@ -144,15 +144,15 @@ function W(e) {
     channel: t,
     isNewlyCreated: n
   } = e;
-  if (null == t.parent_id || t.parent_id !== v || !n) returnfalse;
-  t.ownerId !== _.default.getId() ? C++ : A = t.id
+  if (null == t.parent_id || t.parent_id !== A || !n) returnfalse;
+  t.ownerId !== _.default.getId() ? C++ : v = t.id
 }
 
 function K(e) {
   let {
     channel: t
   } = e;
-  if (null == t.parent_id || t.parent_id !== v) returnfalse;
+  if (null == t.parent_id || t.parent_id !== A) returnfalse;
   x.add(t.id), B({
     sortThreadIds: true
   })
@@ -162,7 +162,7 @@ function z(e) {
   let {
     channel: t
   } = e;
-  if (null == t.parent_id || t.parent_id !== v) returnfalse;
+  if (null == t.parent_id || t.parent_id !== A) returnfalse;
   G()
 }
 
@@ -170,7 +170,7 @@ function q(e) {
   let {
     channelId: t
   } = e;
-  if (null == t || t !== v) returnfalse;
+  if (null == t || t !== A) returnfalse;
   B({
     refreshThreadIds: true
   })
@@ -180,7 +180,7 @@ function X(e) {
   let {
     channelId: t
   } = e;
-  if (null == t || t !== v) returnfalse;
+  if (null == t || t !== A) returnfalse;
   R = false
 }
 class Z extends(i = Chunk311907.Ay.Store) {
@@ -194,11 +194,11 @@ class Z extends(i = Chunk311907.Ay.Store) {
     return R
   }
   getThreadIds(e, t, n, r) {
-    let i = e !== v,
-      a = !(0, c._)(n, S),
-      s = t !== I,
+    let i = e !== A,
+      a = !(0, c._)(n, I),
+      s = t !== S,
       o = r !== T;
-    return v = e, S = n, I = t, T = r, i ? B({
+    return A = e, I = n, S = t, T = r, i ? B({
       refreshThreadIds: true
     }) : s ? B({
       sortThreadIds: true
@@ -208,14 +208,14 @@ class Z extends(i = Chunk311907.Ay.Store) {
     return N
   }
   getAndDeleteMostRecentUserCreatedThreadId() {
-    let e = A;
-    return A = null, e
+    let e = v;
+    return v = null, e
   }
   getFirstNoReplyThreadId() {
     return r
   }
 }
-y(Z, "displayName", "ForumActivePostStore");
+b(Z, "displayName", "ForumActivePostStore");
 let Q = new Z(Chunk73153.h, {
   CONNECTION_OPEN: V,
   OVERLAY_INITIALIZE: V,

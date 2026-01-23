@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $U: () => W,
-  Cp: () => I,
+  Cp: () => S,
   D$: () => x,
   I5: () => F,
   Nc: () => L,
@@ -11,12 +11,12 @@ require.d(exports, {
   P7: () => P,
   Qu: () => N,
   Ry: () => T,
-  TP: () => y,
+  TP: () => b,
   Ys: () => R,
-  aG: () => S,
-  ax: () => v,
+  aG: () => I,
+  ax: () => A,
   fA: () => U,
-  fi: () => A,
+  fi: () => v,
   gb: () => C,
   k1: () => w,
   kN: () => B,
@@ -56,17 +56,17 @@ Object.freeze({
   8: 18,
   9: 24
 });
-var y = function(e) {
+var b = function(e) {
   return e[e.EMOJI = 1] = "EMOJI", e[e.AUDIO = 2] = "AUDIO", e[e.ANIMATED = 3] = "ANIMATED", e[e.CUSTOMIZATION = 4] = "CUSTOMIZATION", e[e.UPLOAD = 5] = "UPLOAD", e[e.VANITY = 6] = "VANITY", e[e.STREAM = 7] = "STREAM", e[e.STICKER = 8] = "STICKER", e[e.CUSTOM_ROLE_ICON = 11] = "CUSTOM_ROLE_ICON", e[e.STAGE_VIDEO = 12] = "STAGE_VIDEO", e[e.SOUNDBOARD = 13] = "SOUNDBOARD", e
 }({});
 let O = [Chunk652215.TVA.NONE, Chunk652215.TVA.TIER_1, Chunk652215.TVA.TIER_2, Chunk652215.TVA.TIER_3],
-  A = O.slice().reverse(),
-  v = e => {
+  v = O.slice().reverse(),
+  A = e => {
     var t;
     return e === _.TVA.NONE ? _.TVA.TIER_1 : null == (t = j.find(t => t.tier === e)) ? true : t.nextTier
   },
-  S = (e, t) => null != t && t.features.has(_.GuildFeatures.MORE_STICKERS) && e === _.TVA.TIER_3 ? a.K.MAX_STICKER_SLOTS : m.d8[e],
-  I = e => m.nk[e],
+  I = (e, t) => null != t && t.features.has(_.GuildFeatures.MORE_STICKERS) && e === _.TVA.TIER_3 ? a.K.MAX_STICKER_SLOTS : m.d8[e],
+  S = e => m.nk[e],
   T = e => {
     if (e === _.TVA.NONE) return m.y7[e];
     let t = O[O.indexOf(e) - 1];
@@ -132,7 +132,7 @@ function L(e) {
     a = null == n ? true : n.isPausedOrPausePending,
     o = i.length > 0;
   if (a && t === m.xc.NONE && !o) return E.intl.string(E.t.mOWsF1);
-  if (null == r ? true : r.isPremiumGroupMember()) return E.intl.formatToPlainString(b.default["5xN/C1"], {
+  if (null == r ? true : r.isPremiumGroupMember()) return E.intl.formatToPlainString(y.default["5xN/C1"], {
     premiumGroupProductName: (0, g.DP)()
   });
   let {
@@ -165,12 +165,12 @@ let j = [{
 }];
 
 function M(e, t) {
-  let n = I(t),
+  let n = S(t),
     r = O.indexOf(t);
   if (false === r) return 0;
   let i = O[r - 1],
-    a = null != i ? S(i) : 0,
-    s = S(t);
+    a = null != i ? I(i) : 0,
+    s = I(t);
   return Math.max(0, n - e.slice(a, s).length)
 }
 
@@ -202,7 +202,7 @@ function F(e) {
 
 function B(e) {
   var t;
-  return null != (t = A.find(t => e >= _.M2T[t])) ? t : _.TVA.NONE
+  return null != (t = v.find(t => e >= _.M2T[t])) ? t : _.TVA.NONE
 }
 
 function H(e) {

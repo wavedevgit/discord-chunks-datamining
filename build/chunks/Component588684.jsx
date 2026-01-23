@@ -15,13 +15,13 @@ function s(e) {
     title: n
   } = e;
   return (0, l.jsxs)("div", {
-    className: i.kL,
+    className: a.kL,
     children: [(0, l.jsx)(r.Heading, {
-      className: i.wx,
+      className: a.wx,
       variant: "text-sm/semibold",
-      children: null != n ? n : a.intl.string(a.t["k+QA9N"])
+      children: null != n ? n : i.intl.string(i.t["k+QA9N"])
     }), (0, l.jsx)("div", {
-      className: i.uk,
+      className: a.uk,
       children: t
     })]
   })

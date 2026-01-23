@@ -2,7 +2,7 @@
 /** chunk id: 538343, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js"), require("./321073.js"), require("./65821.js"), require("./667532.js");
 var Chunk311907 = require("./311907.js"),
   Chunk626584 = require("./626584.js"),
@@ -34,7 +34,7 @@ function E(e, t) {
   g[e] = [(r * i + t) / (i + 1), i + 1]
 }
 
-function b(e, t, n) {
+function y(e, t, n) {
   var r;
   if (null == n) returnfalse;
   let i = e[t],
@@ -46,7 +46,7 @@ function b(e, t, n) {
     u = t === a;
   return !!l && !c && !u
 }
-class y {
+class b {
   hasStuffToDispatchNow() {
     return this.queue.length > 0 && 2 === this.queue[0].status
   }
@@ -117,7 +117,7 @@ class y {
             let a = e[r];
             n = a.type, i = i || h.has(a.type);
             let s = performance.now();
-            if (this.dispatchOne(a), l = performance.now() - s, E(a.type, l), b(e, r, t)) {
+            if (this.dispatchOne(a), l = performance.now() - s, E(a.type, l), y(e, r, t)) {
               o = e.slice(r + 1), null != t && 0 >= t.timeRemaining() && this.scheduler.telemetry.timeTrack(c.YE.TIME_OVER_DEADLINE, t.timeSinceExpiration);
               break
             }

@@ -26,19 +26,19 @@ function d(e) {
     hideTooltip: m = false,
     canTruncate: g = true,
     showChannelName: E = false
-  } = e, b = (0, i.bG)([o.A], () => o.A.getChannel(t.channelId)), y = (0, s.Ay)(b), O = (null == n ? true : n.name) === "" ? null : null == n ? true : n.name, A = null != O ? O : u.intl.string(u.t.eXan7B), v = null != y ? "".concat(A, " (").concat(y, ")") : A, S = E ? v : A, I = v;
+  } = e, y = (0, i.bG)([o.A], () => o.A.getChannel(t.channelId)), b = (0, s.Ay)(y), O = (null == n ? true : n.name) === "" ? null : null == n ? true : n.name, v = null != O ? O : u.intl.string(u.t.eXan7B), A = null != b ? "".concat(v, " (").concat(b, ")") : v, I = E ? A : v, S = A;
   return (0, r.jsx)(c.A, {
     icon: _ ? true : (0, r.jsx)(l.A, {
       icon: a.Uk3,
       className: p
     }),
-    text: S,
-    tooltipText: m ? true : v,
+    text: I,
+    tooltipText: m ? true : A,
     textVariant: d,
     className: f,
     canTruncate: g,
     hideTooltip: m,
-    "aria-label": I,
+    "aria-label": S,
     hideText: h
   })
 }

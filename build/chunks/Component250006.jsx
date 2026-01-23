@@ -2,7 +2,7 @@
 /** chunk id: 250006, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => x
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,30 +20,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk931136 = require("./931136.js");
 
-function h(e) {
+function x(e) {
   let {
     connection: t,
     index: l,
-    onDragStart: h,
+    onDragStart: x,
     onDragReset: j,
-    onDragComplete: O,
-    draggingId: y
+    onDragComplete: _,
+    draggingId: O
   } = e, v = (0, d.Ay)(), {
-    drag: A,
-    drop: E,
-    dragSourcePosition: N,
-    setIsDraggable: _
-  } = (0, g.A)({
+    drag: y,
+    drop: A,
+    dragSourcePosition: E,
+    setIsDraggable: N
+  } = (0, m.A)({
     type: "ONBOARDING_CONNECTION_CARD",
     index: l,
     optionId: t.id,
-    onDragStart: () => h(t.id),
-    onDragComplete: e => O(e),
+    onDragStart: () => x(t.id),
+    onDragComplete: e => _(e),
     onDragReset: () => j()
   }), S = i.useCallback(() => {
-    (0, b.zN)(l)
-  }, [l]), T = i.useCallback(() => {
-    (0, o.mMO)(async () => {
+    (0, p.zN)(l)
+  }, [l]), I = i.useCallback(() => {
+    (0, c.mMO)(async () => {
       let {
         default: e
       } = await n.e("90194").then(n.bind(n, 566857));
@@ -81,9 +81,9 @@ function h(e) {
         }), i))
       }
     })
-  }, [t, l]), I = t.connection_type === m.wZ.APPLICATION, C = t.application_id, P = (0, a.bG)([f.A], () => I && null != C ? f.A.getApplication(C) : null, [I, C]), w = i.useMemo(() => (function(e, t, n) {
+  }, [t, l]), T = t.connection_type === f.wZ.APPLICATION, C = t.application_id, P = (0, a.bG)([g.A], () => T && null != C ? g.A.getApplication(C) : null, [T, C]), w = i.useMemo(() => (function(e, t, n) {
     var r, i, l;
-    if (e.connection_type === m.wZ.APPLICATION && null != e.application_id) {
+    if (e.connection_type === f.wZ.APPLICATION && null != e.application_id) {
       if (null != n) return {
         name: n.name,
         icon: null != (r = n.getIconURL(128)) ? r : null
@@ -99,73 +99,73 @@ function h(e) {
       }
     }
     return {
-      name: p.intl.string(p.t.kFlgsx),
+      name: b.intl.string(b.t.kFlgsx),
       icon: null
     }
   })(t, v, P), [t, v, P]);
   return (0, r.jsxs)("div", {
-    className: s()(x.Nr, {
-      [x.A]: null != N && l < N,
-      [x.Ze]: null != N && l > N
+    className: s()(h.Nr, {
+      [h.A]: null != E && l < E,
+      [h.Ze]: null != E && l > E
     }),
-    onMouseEnter: () => _(true),
-    onMouseLeave: () => _(false),
+    onMouseEnter: () => N(true),
+    onMouseLeave: () => N(false),
     ref: e => {
-      A(E(e))
+      y(A(e))
     },
     children: [(0, r.jsx)("div", {
-      className: x.BU,
-      children: (0, r.jsx)(o.WP0, {
+      className: h.BU,
+      children: (0, r.jsx)(c.WP0, {
         size: "sm",
         color: "currentColor"
       })
     }), (0, r.jsxs)("div", {
-      className: x.hu,
+      className: h.hu,
       children: [(0, r.jsx)("div", {
-        className: x.Kk,
+        className: h.Kk,
         children: null != w.icon ? (0, r.jsx)("img", {
           src: w.icon,
           alt: "",
           width: 40,
           height: 40
-        }) : (0, r.jsx)(o._xR, {
+        }) : (0, r.jsx)(c._xR, {
           size: "custom",
           width: 40,
           height: 40,
           color: "currentColor"
         })
       }), (0, r.jsxs)("div", {
-        className: x.P_,
-        children: [(0, r.jsx)(o.Text, {
+        className: h.P_,
+        children: [(0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "text-strong",
           children: w.name
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: null != t.description && t.description.length > 0 ? t.description : p.intl.string(p.t["4nNtsP"])
+          children: null != t.description && t.description.length > 0 ? t.description : b.intl.string(b.t["4nNtsP"])
         })]
       })]
     }), (0, r.jsxs)("div", {
-      className: x.o1,
-      children: [(0, r.jsx)(c.m, {
-        text: p.intl.string(p.t.bt75uw),
-        children: (0, r.jsx)(o.DUT, {
-          className: x.r9,
-          onClick: T,
-          "aria-label": p.intl.string(p.t.bt75uw),
-          children: (0, r.jsx)(o.R2l, {
+      className: h.o1,
+      children: [(0, r.jsx)(o.m, {
+        text: b.intl.string(b.t.bt75uw),
+        children: (0, r.jsx)(c.DUT, {
+          className: h.r9,
+          onClick: I,
+          "aria-label": b.intl.string(b.t.bt75uw),
+          children: (0, r.jsx)(c.R2l, {
             size: "xs",
             color: "currentColor"
           })
         })
-      }), (0, r.jsx)(c.m, {
-        text: p.intl.string(p.t.N86XcP),
-        children: (0, r.jsx)(o.DUT, {
-          className: x.DT,
+      }), (0, r.jsx)(o.m, {
+        text: b.intl.string(b.t.N86XcP),
+        children: (0, r.jsx)(c.DUT, {
+          className: h.DT,
           onClick: S,
-          "aria-label": p.intl.string(p.t.N86XcP),
-          children: (0, r.jsx)(o.ucK, {
+          "aria-label": b.intl.string(b.t.N86XcP),
+          children: (0, r.jsx)(c.ucK, {
             size: "xs",
             color: "currentColor"
           })

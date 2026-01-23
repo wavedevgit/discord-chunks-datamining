@@ -144,7 +144,7 @@ function E(e, t, n) {
   return "#".concat(i(0)).concat(i(8)).concat(i(4))
 }
 
-function b(e) {
+function y(e) {
   let t, n, r, i, a;
   var s = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(e);
   if (null == s) return null;
@@ -165,7 +165,7 @@ function b(e) {
   }
 }
 
-function y(e, t, n) {
+function b(e, t, n) {
   return f(E(e, t, n))
 }
 u(l({}, {
@@ -194,10 +194,10 @@ u(l({}, {
   "#5865f2": () => s.intl.string(s.t["Cn/LJ4"])
 });
 let O = 30,
-  A = 80,
-  v = 20,
-  S = 30,
-  I = 40,
+  v = 80,
+  A = 20,
+  I = 30,
+  S = 40,
   T = 15;
 
 function C(e) {
@@ -211,7 +211,7 @@ function C(e) {
     s = r,
     o = i,
     l = a;
-  o < O && (o += S), l > A && (l -= I), l < v && (l += T);
+  o < O && (o += I), l > v && (l -= S), l < A && (l += T);
   let c = 360 / (t + 1);
   for (; n.length < t;) {
     (s -= c) < 0 && (s += 360);
@@ -219,7 +219,7 @@ function C(e) {
       r: e,
       g: t,
       b: r
-    } = y(s, o, l);
+    } = b(s, o, l);
     n.push([e, t, r])
   }
   return n
@@ -299,7 +299,7 @@ function D(e) {
     var t;
     return {
       hex: e,
-      hsv: null != (t = b(e)) ? t : {
+      hsv: null != (t = y(e)) ? t : {
         h: 0,
         s: 0,
         v: 0

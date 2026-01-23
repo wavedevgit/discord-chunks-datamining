@@ -2,11 +2,11 @@
 /** chunk id: 721252, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  hh: () => v,
+  hh: () => A,
   kJ: () => g,
   r2: () => O,
   zK: () => E,
-  zX: () => A
+  zX: () => v
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -76,11 +76,11 @@ let g = {
       renderHeader: true
     }
   },
-  b = {
+  y = {
     key: Chunk166532.pn.AWAITING_PURCHASE_TOKEN_AUTH,
     renderStep: () => (0, r.jsx)(l.A, {})
   },
-  y = {
+  b = {
     key: Chunk166532.pn.AWAITING_AUTHENTICATION,
     renderStep: () => (0, r.jsx)(o.A, {}),
     options: {
@@ -94,8 +94,8 @@ let g = {
       useBreadcrumbLabel: () => f.intl.string(f.t.QBnNHq)
     }
   },
-  A = {
+  v = {
     key: Chunk166532.pn.CONFIRM,
     renderStep: e => (0, r.jsx)(c.k, _({}, e))
   },
-  v = [b, y]
+  A = [y, b]

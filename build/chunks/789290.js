@@ -1,18 +1,18 @@
 /** Chunk was on 38663 **/
 /** chunk id: 789290, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => s
+  A: () => o
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk172218 = require("./172218.js"),
   Chunk521741 = require("./521741.js"),
   Chunk633075 = require("./633075.js");
 
-function s(e) {
+function o(e) {
   let {
     widget: t,
     onAction: n
-  } = e, [s, o] = (0, r.useState)(false), c = t instanceof a.R ? t.applicationId : null, {
+  } = e, [o, s] = (0, r.useState)(false), c = t instanceof a.R ? t.applicationId : null, {
     fetched: u
   } = (0, i.U)(c), d = (0, r.useCallback)(e => {
     e && (n(function(e) {
@@ -34,7 +34,7 @@ function s(e) {
       return e
     }({
       action: "VIEW_WIDGET"
-    }, t.getProfileAnalyticsOptions())), o(true))
+    }, t.getProfileAnalyticsOptions())), s(true))
   }, [n, t]);
-  return (0, l.K)(d, true, !s && (null == c || u))
+  return (0, l.K)(d, true, !o && (null == c || u))
 }

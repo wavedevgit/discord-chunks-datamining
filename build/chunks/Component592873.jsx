@@ -81,20 +81,20 @@ function E(e) {
     rows: _,
     rowHeight: g,
     onScroll: E,
-    listClassName: b
-  } = e, y = i.useRef(null), O = i.useRef(null), A = i.useRef(null), v = i.useRef(null), {
-    isUsingKeyboardNavigation: S,
-    focusIndex: I
+    listClassName: y
+  } = e, b = i.useRef(null), O = i.useRef(null), v = i.useRef(null), A = i.useRef(null), {
+    isUsingKeyboardNavigation: I,
+    focusIndex: S
   } = f, T = m(f, ["isUsingKeyboardNavigation", "focusIndex"]);
   i.useLayoutEffect(() => {
     var e;
-    n && ((0, o.Y)(y), null == (e = A.current) || e.focus())
+    n && ((0, o.Y)(b), null == (e = v.current) || e.focus())
   }, [n]), i.useEffect(() => {
-    if (n && I >= 0 && S) {
+    if (n && S >= 0 && I) {
       var e;
-      null == (e = v.current) || e.scrollRowIntoView(I)
+      null == (e = A.current) || e.scrollRowIntoView(S)
     }
-  }, [n, S, I]);
+  }, [n, I, S]);
   let C = i.useCallback(e => _[e], [_]),
     N = (0, s.D)("MenuSubmenuListItem"),
     R = () => _.length > 0 && (0, r.jsx)("div", {
@@ -102,10 +102,10 @@ function E(e) {
       children: (0, r.jsx)("div", h(p({
         className: d.submenu
       }, T), {
-        ref: A,
+        ref: v,
         children: (0, r.jsx)(c.A, {
-          ref: v,
-          className: b,
+          ref: A,
+          className: y,
           listPadding: [6, 0, 6, 8],
           onScroll: E,
           renderRow: C,
@@ -145,7 +145,7 @@ function E(e) {
     children: R
   });
   return (0, r.jsxs)("div", {
-    ref: y,
+    ref: b,
     children: [(0, r.jsx)("div", {
       ref: O
     }), t, n ? w : null]

@@ -36,20 +36,20 @@ function m(e) {
 }
 let g = {},
   E = {},
-  b = null;
+  y = null;
 
-function y() {
-  null == b && (b = setInterval(() => {
+function b() {
+  null == y && (y = setInterval(() => {
     s.default.forEachKey(g, e => {
-      v(e) && A(e)
+      A(e) && v(e)
     })
   }, _))
 }
 async function O(e, t) {
-  null == g[e] && (g[e] = new Set), g[e].add(t), null == E[e] && (E[e] = Date.now()), v(e) && await A(e)
+  null == g[e] && (g[e] = new Set), g[e].add(t), null == E[e] && (E[e] = Date.now()), A(e) && await v(e)
 }
 
-function A(e) {
+function v(e) {
   if (null == g[e]) return;
   let t = Array.from(g[e]);
   g[e] = new Set, E[e] = Date.now(), requestAnimationFrame(async () => {
@@ -61,7 +61,7 @@ function A(e) {
   })
 }
 
-function v(e) {
+function A(e) {
   let t = g[e];
   if (null == t) returnfalse;
   let n = t.size >= h(e),
@@ -72,12 +72,12 @@ function v(e) {
   return null != r && i >= m(e)
 }
 
-function S(e) {
+function I(e) {
   g[e] = new Set, E[e] = null
 }
-class I extends Chunk439372.A {
+class S extends Chunk439372.A {
   handleInitialize() {
-    null == b && y()
+    null == y && b()
   }
   handleGuildMemberUpdate(e, t) {
     if (o.A.isInitialized(e)) return O(e, t)
@@ -87,13 +87,13 @@ class I extends Chunk439372.A {
   }
   handleGuildDelete(e) {
     let t = e.guild.id;
-    o.A.isInitialized(t) && S(t)
+    o.A.isInitialized(t) && I(t)
   }
   handleGuildMemberSearchSuccess(e) {
     let {
       guildId: t
     } = e;
-    o.A.isInitialized(t) && S(t)
+    o.A.isInitialized(t) && I(t)
   }
   constructor(...e) {
     super(...e), l(this, "actions", {
@@ -105,4 +105,4 @@ class I extends Chunk439372.A {
     })
   }
 }
-let T = new I
+let T = new S

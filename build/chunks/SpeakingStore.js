@@ -27,8 +27,8 @@ let h = new Map,
   m = null,
   g = null,
   E = null,
-  b = false,
-  y = false;
+  y = false,
+  b = false;
 
 function O() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p.x.DEFAULT,
@@ -36,19 +36,19 @@ function O() {
   return null == t && (t = new Map, h.set(e, t)), t
 }
 
-function A(e, t) {
+function v(e, t) {
   let n = h.get(e);
   if (null == n) returnfalse;
   let r = n.delete(t);
   return 0 === n.size && h.delete(e), r
 }
 
-function v(e, t, n) {
+function A(e, t, n) {
   var r, i, a;
   return ((null != (r = null == (a = h.get(e)) || null == (i = a.get(t)) ? true : i.flags) ? r : p.ME.NONE) & n) === n
 }
 
-function S(e, t) {
+function I(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = h.get(e);
   if (null == r) returnfalse;
@@ -59,7 +59,7 @@ function S(e, t) {
   returnfalse
 }
 
-function I(e, t, n) {
+function S(e, t, n) {
   var r, i;
   let a = arguments.length > 3 && true !== arguments[3] ? arguments[3] : false / 0,
     s = O(e),
@@ -103,7 +103,7 @@ function C(e) {
       context: e
     }) ? c.A.setCanHavePriority(n, true) : (c.A.setCanHavePriority(n, false), r &= ~p.ME.PRIORITY)
   }
-  return (r & p.ME.HIDDEN) === p.ME.HIDDEN && (r = 0), I(t, n, r, i)
+  return (r & p.ME.HIDDEN) === p.ME.HIDDEN && (r = 0), S(t, n, r, i)
 }
 
 function N(e) {
@@ -116,7 +116,7 @@ function N(e) {
       channelId: r,
       sessionId: i
     } = t, a = false, s = E;
-    return n === m && i === g && (E = null != r ? r : null), s !== E && (a = h.delete(p.x.DEFAULT) || a), null == r ? a = n === m && i === g ? h.delete(p.x.DEFAULT) || a : A(p.x.DEFAULT, n) || a : n === m && i !== g ? a = h.delete(p.x.DEFAULT) || a : n !== m && r !== u.A.getChannelId() && (a = A(p.x.DEFAULT, n) || a), a || e
+    return n === m && i === g && (E = null != r ? r : null), s !== E && (a = h.delete(p.x.DEFAULT) || a), null == r ? a = n === m && i === g ? h.delete(p.x.DEFAULT) || a : v(p.x.DEFAULT, n) || a : n === m && i !== g ? a = h.delete(p.x.DEFAULT) || a : n !== m && r !== u.A.getChannelId() && (a = v(p.x.DEFAULT, n) || a), a || e
   }, false)
 }
 
@@ -125,7 +125,7 @@ function R(e) {
     isActive: t,
     isLatched: n
   } = e;
-  b = n, y = t
+  y = n, b = t
 }
 class w extends(r = Chunk311907.Ay.Store) {
   initialize() {
@@ -140,37 +140,37 @@ class w extends(r = Chunk311907.Ay.Store) {
   getSpeakers() {
     var e, t;
     let n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p.x.DEFAULT;
-    return Array.from(null != (e = null == (t = h.get(n)) ? true : t.keys()) ? e : []).filter(e => v(n, e, p.ME.VOICE))
+    return Array.from(null != (e = null == (t = h.get(n)) ? true : t.keys()) ? e : []).filter(e => A(n, e, p.ME.VOICE))
   }
   isSpeaking(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : p.x.DEFAULT;
-    return v(t, e, p.ME.VOICE)
+    return A(t, e, p.ME.VOICE)
   }
   isPrioritySpeaker(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : p.x.DEFAULT;
-    return v(t, e, p.ME.PRIORITY)
+    return A(t, e, p.ME.PRIORITY)
   }
   isSoundSharing(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : p.x.DEFAULT;
-    return v(t, e, p.ME.SOUNDSHARE)
+    return A(t, e, p.ME.SOUNDSHARE)
   }
   isAnyoneElseSpeaking() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p.x.DEFAULT;
-    return S(e, p.ME.VOICE, true)
+    return I(e, p.ME.VOICE, true)
   }
   isCurrentUserSpeaking() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p.x.DEFAULT;
     return null != m && this.isSpeaking(m, e)
   }
   isCurrentUserPTTActive() {
-    return y
+    return b
   }
   isCurrentUserPTTLatched() {
-    return b
+    return y
   }
   isAnyonePrioritySpeaking() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p.x.DEFAULT;
-    return S(e, p.ME.VOICE | p.ME.PRIORITY)
+    return I(e, p.ME.VOICE | p.ME.PRIORITY)
   }
   isCurrentUserPrioritySpeaker() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p.x.DEFAULT;

@@ -2,7 +2,7 @@
 /** chunk id: 987144, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  g: () => A
+  g: () => v
 }), require("./321073.js"), require("./848778.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -57,19 +57,19 @@ function E(e, t) {
   }), e
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = y(e, t), Object.getOwnPropertySymbols)
+  if (a = b(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -77,16 +77,16 @@ function y(e, t) {
   return i
 }
 let O = "apply-guild-boost-modal";
-async function A(e) {
+async function v(e) {
   let {
     analyticsLocations: t,
     analyticsLocation: h,
     analyticsSourceLocation: g,
-    numberOfBoostsToAdd: y,
-    onClose: A,
-    onLoading: v,
-    closeLayer: S,
-    onSubscriptionConfirmation: I,
+    numberOfBoostsToAdd: b,
+    onClose: v,
+    onLoading: A,
+    closeLayer: I,
+    onSubscriptionConfirmation: S,
     onSubscribeComplete: T,
     guild: C,
     handleSubscribeModalClose: N,
@@ -103,7 +103,7 @@ async function A(e) {
     return t => {
       let {
         onClose: n
-      } = t, i = b(t, ["onClose"]);
+      } = t, i = y(t, ["onClose"]);
       return (0, r.jsx)(e, E(m({}, i), {
         onClose: n
       }))
@@ -112,28 +112,28 @@ async function A(e) {
     contextKey: x
   });
   let j = [];
-  u.A.isLoadedForPremiumSKUs() || j.push((0, o.zS)()), c.A.hasFetched || (j.push(a.hP()), j.push((0, s.CD)())), j.length > 0 && (null == v || v(true), await Promise.allSettled(j), null == v || v(false));
+  u.A.isLoadedForPremiumSKUs() || j.push((0, o.zS)()), c.A.hasFetched || (j.push(a.hP()), j.push((0, s.CD)())), j.length > 0 && (null == A || A(true), await Promise.allSettled(j), null == A || A(false));
   let M = (0, f.D$)(c.A.boostSlots),
     k = M.length,
     U = e => {
-      null == A || A(), null == N || N(e)
+      null == v || v(), null == N || N(e)
     },
     G = () => {
-      null == A || A(), null == S || S(), d.default.track(_.HAw.MODAL_DISMISSED, {
+      null == v || v(), null == I || I(), d.default.track(_.HAw.MODAL_DISMISSED, {
         type: _.liQ.PREMIUM_GUILD_USER_MODAL,
         location_section: h.section
       })
     };
-  if (k > 0 && (null == y || k >= y)) {
+  if (k > 0 && (null == b || k >= b)) {
     let e;
-    1 === k ? e = M.slice(0, 1) : null != y && (e = M.slice(0, y)), await (0, i.mMO)(async () => {
+    1 === k ? e = M.slice(0, 1) : null != b && (e = M.slice(0, b)), await (0, i.mMO)(async () => {
       let {
         default: t
       } = await Promise.resolve().then(n.bind(n, 657516));
       return n => {
         let {
           onClose: i
-        } = n, a = b(n, ["onClose"]);
+        } = n, a = y(n, ["onClose"]);
         return (0, r.jsx)(t, E(m({}, a), {
           onClose: e => {
             i(), U(e)
@@ -157,10 +157,10 @@ async function A(e) {
     analyticsSourceLocation: g,
     guildId: C.id,
     closeLayer: G,
-    totalNumberOfSlotsToAssign: null != y ? y : 1,
+    totalNumberOfSlotsToAssign: null != b ? b : 1,
     onCloseModal: U,
     disablePremiumUpsell: R,
-    onSubscriptionConfirmation: I,
+    onSubscriptionConfirmation: S,
     onSubscribeComplete: T,
     inPopout: w,
     applicationId: P,

@@ -2,7 +2,7 @@
 /** chunk id: 780679, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => c
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -11,13 +11,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function o(e) {
+function c(e) {
   let {
     rule: t,
     onChangeRule: n
-  } = e, [o, d] = i.useState(t.name);
+  } = e, [c, d] = i.useState(t.name);
   return (0, r.jsx)(l.ksK, {
-    label: c.intl.string(c.t.WVAHxF),
+    label: o.intl.string(o.t.WVAHxF),
     onChange: e => {
       var r, i;
       d(e), n((r = function(e) {
@@ -54,8 +54,8 @@ function o(e) {
     onKeyDown: e => {
       e.which === a.Ks6.SPACE && e.stopPropagation()
     },
-    placeholder: c.intl.string(c.t["5AO43K"]),
+    placeholder: o.intl.string(o.t["5AO43K"]),
     maxLength: s.NX,
-    value: o
+    value: c
   })
 }

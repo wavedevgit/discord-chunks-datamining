@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk200967 = require("./200967.js");
 
-function b(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,18 +34,18 @@ function b(e) {
   }
   return e
 }
-let m = {
+let f = {
   label: ""
 };
 
-function p(e) {
+function b(e) {
   let {
     emoji: t,
     disabled: n,
     handleSelectEmoji: d
-  } = e, f = i.useRef(null), g = i.useMemo(() => null == t || null == t.name ? null : function() {
+  } = e, g = i.useRef(null), m = i.useMemo(() => null == t || null == t.name ? null : function() {
     var e;
-    let n = o.Ay.isCustomEmoji(t) ? t.name : t.surrogates;
+    let n = c.Ay.isCustomEmoji(t) ? t.name : t.surrogates;
     return (0, r.jsx)(s.A, {
       animated: null != (e = t.animated) && e,
       emojiId: t.id,
@@ -55,15 +55,15 @@ function p(e) {
   return n ? (0, r.jsx)(a.A, {
     tabIndex: false,
     active: false,
-    renderButtonContents: g
+    renderButtonContents: m
   }) : (0, r.jsx)(l.YNO, {
-    targetElementRef: f,
+    targetElementRef: g,
     position: "bottom",
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(c.A, {
+      return (0, r.jsx)(o.A, {
         closePopout: t,
         onSelectEmoji: d(t),
         pickerIntention: u.b_.GUILD_PROFILE
@@ -74,11 +74,11 @@ function p(e) {
       let {
         isShown: l
       } = t;
-      return (0, r.jsx)(a.A, (n = b({}, e), i = i = {
-        ref: f,
+      return (0, r.jsx)(a.A, (n = p({}, e), i = i = {
+        ref: g,
         tabIndex: 0,
         active: l,
-        renderButtonContents: g
+        renderButtonContents: m
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -93,14 +93,14 @@ function p(e) {
   })
 }
 
-function x(e) {
+function h(e) {
   let {
     guildId: t,
     trait: n,
     index: s,
     onTraitUpdate: a,
-    disabled: c
-  } = e, o = i.useCallback(() => {
+    disabled: o
+  } = e, c = i.useCallback(() => {
     a(t, s, {
       emoji: true,
       label: ""
@@ -117,30 +117,30 @@ function x(e) {
     a(t, s, {
       label: e
     })
-  }, [t, s, a]), f = i.useMemo(() => n.emoji, [n.emoji]), b = null != n.label && n.label.length > 0 || null != n.emoji;
+  }, [t, s, a]), g = i.useMemo(() => n.emoji, [n.emoji]), p = null != n.label && n.label.length > 0 || null != n.emoji;
   return (0, r.jsx)("div", {
-    className: g.II,
+    className: m.II,
     children: (0, r.jsx)(l.ksK, {
-      disabled: c,
+      disabled: o,
       value: n.label,
       onChange: u,
       maxLength: 24,
       leading: {
         type: "emoji",
-        button: (0, r.jsx)(p, {
-          emoji: f,
-          disabled: c,
+        button: (0, r.jsx)(b, {
+          emoji: g,
+          disabled: o,
           handleSelectEmoji: d
         })
       },
       clearable: {
-        show: b
+        show: p
       },
-      onClear: o
+      onClear: c
     })
   })
 }
-let h = [0, 1, 2, 3, 4];
+let x = [0, 1, 2, 3, 4];
 
 function j(e) {
   let {
@@ -148,20 +148,20 @@ function j(e) {
     canManageGuild: n
   } = e, s = i.useMemo(() => t.traits, [t]), a = i.useCallback((e, t, n) => {
     let r = [...s];
-    r[t] = b({}, s[t], n), d.A.updateGuildProfile(e, {
+    r[t] = p({}, s[t], n), d.A.updateGuildProfile(e, {
       traits: r
     })
   }, [s]);
   return (0, r.jsx)(l.D0$, {
-    label: f.intl.string(f.t.S6JNrh),
-    description: f.intl.string(f.t.l7Ig5Z),
+    label: g.intl.string(g.t.S6JNrh),
+    description: g.intl.string(g.t.l7Ig5Z),
     children: (0, r.jsx)("div", {
-      className: g.Vg,
-      children: h.map(e => {
+      className: m.Vg,
+      children: x.map(e => {
         var i;
-        return (0, r.jsx)(x, {
+        return (0, r.jsx)(h, {
           guildId: t.id,
-          trait: null != (i = s[e]) ? i : m,
+          trait: null != (i = s[e]) ? i : f,
           index: e,
           onTraitUpdate: a,
           disabled: !n

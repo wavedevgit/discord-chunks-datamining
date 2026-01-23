@@ -2,7 +2,7 @@
 /** chunk id: 496841, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -74,21 +74,21 @@ function E(e, t) {
   return i
 }
 
-function b(e) {
+function y(e) {
   let {
     channel: t,
     centerButton: n = false,
     onCallJoined: p
   } = e, h = g(e, ["channel", "centerButton", "onCallJoined"]), {
     parentAnalyticsLocation: E
-  } = (0, o.Ay)(), b = n ? u.l : u.A, y = t.isManaged() || !t.isPrivate() ? f.intl.string(f.t.S0W8Z5) : f.intl.string(f.t["0D/6Rz"]), O = i.useCallback(() => {
+  } = (0, o.Ay)(), y = n ? u.l : u.A, b = t.isManaged() || !t.isPrivate() ? f.intl.string(f.t.S0W8Z5) : f.intl.string(f.t["0D/6Rz"]), O = i.useCallback(() => {
     null == p || p(), (0, l.X)(E, l.O.JOIN_CALL), s.default.selectVoiceChannel(t.id)
   }, [t.id, p, E]);
   return i.useEffect(() => (c._.subscribe(d.jej.CALL_ACCEPT, O), () => {
     c._.unsubscribe(d.jej.CALL_ACCEPT, O)
-  }), [O]), (0, r.jsx)(b, m(_({}, h), {
+  }), [O]), (0, r.jsx)(y, m(_({}, h), {
     iconComponent: a._jp,
-    label: y,
+    label: b,
     onClick: O,
     isTrayButton: false
   }))

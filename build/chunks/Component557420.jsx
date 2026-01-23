@@ -15,9 +15,9 @@ function a(e) {
     text: t,
     tooltipText: n,
     onClick: a,
-    disabled: c
+    disabled: o
   } = e;
-  return c ? (0, r.jsxs)("div", {
+  return o ? (0, r.jsxs)("div", {
     className: s.k,
     children: [(0, r.jsx)(l.j96, {
       size: "md",

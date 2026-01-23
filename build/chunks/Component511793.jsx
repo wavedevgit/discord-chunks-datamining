@@ -119,7 +119,7 @@ let L = (0, Chunk268218.Fe)({
     name: "ActivateDevice"
   }),
   H = (0, Chunk268218.Fe)({
-    createPromise: () => Promise.all([n.e("10614"), n.e("49681"), n.e("94678"), n.e("896"), n.e("73924"), n.e("92777"), n.e("17050"), n.e("87440"), n.e("99011"), n.e("28136"), n.e("72271"), n.e("49862"), n.e("8018"), n.e("59541"), n.e("60989"), n.e("49107"), n.e("24202"), n.e("33818"), n.e("79149"), n.e("94503"), n.e("14360"), n.e("83898"), n.e("4787"), n.e("88974"), n.e("6502"), n.e("79023"), n.e("28979"), n.e("31748"), n.e("1636"), n.e("20725"), n.e("48898"), n.e("74492"), n.e("34160"), n.e("33563"), n.e("98763"), n.e("97492"), n.e("22477"), n.e("28636"), n.e("46636"), n.e("71853"), n.e("94531"), n.e("56423"), n.e("21738")]).then(n.bind(n, 885041)),
+    createPromise: () => Promise.all([n.e("10614"), n.e("49681"), n.e("94678"), n.e("896"), n.e("73924"), n.e("92777"), n.e("17050"), n.e("87440"), n.e("99011"), n.e("28136"), n.e("72271"), n.e("49862"), n.e("8018"), n.e("59541"), n.e("60989"), n.e("49107"), n.e("24202"), n.e("33818"), n.e("79149"), n.e("94503"), n.e("14360"), n.e("83898"), n.e("4787"), n.e("88974"), n.e("20088"), n.e("6502"), n.e("79023"), n.e("28979"), n.e("31748"), n.e("1636"), n.e("20725"), n.e("48898"), n.e("74492"), n.e("34160"), n.e("33563"), n.e("21724"), n.e("97492"), n.e("22477"), n.e("28636"), n.e("46636"), n.e("71853"), n.e("94531"), n.e("56423"), n.e("21738")]).then(n.bind(n, 885041)),
     webpackId: 885041,
     name: "ViewsWithMainInterface",
     memo: true,
@@ -191,10 +191,10 @@ class ei extends Chunk64700.Component {
     let {
       isAuthenticated: e
     } = this.props;
-    C.Ay.cleanupDisplaySleep(), b.A.initialize(), O.A.wasAuthenticated = e
+    C.Ay.cleanupDisplaySleep(), y.A.initialize(), O.A.wasAuthenticated = e
   }
   componentWillUnmount() {
-    b.A.terminate()
+    y.A.terminate()
   }
   render() {
     let e, {
@@ -218,7 +218,7 @@ class ei extends Chunk64700.Component {
         path: er([N.BVt.LOGIN, N.BVt.REGISTER, N.BVt.INVITE(":inviteCode"), N.BVt.INVITE_LOGIN(":inviteCode"), N.BVt.GIFT_CODE(":giftCode"), N.BVt.GIFT_CODE_LOGIN(":giftCode"), N.BVt.RESET], false),
         component: Y
       }), (0, r.jsx)(_.A, {
-        path: N.BVt.INVITE_PROXY(y.pv.channelId()),
+        path: N.BVt.INVITE_PROXY(b.pv.channelId()),
         component: M
       }), (0, r.jsx)(s.rd, {
         from: N.BVt.INVITE(""),
@@ -241,7 +241,7 @@ class ei extends Chunk64700.Component {
         path: N.BVt.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
         component: Y
       }), t ? null : (0, r.jsx)(s.qh, {
-        path: N.BVt.CHANNEL(y.pv.guildId(), y.pv.channelId({
+        path: N.BVt.CHANNEL(b.pv.guildId(), b.pv.channelId({
           optional: true
         }), ":messageId?"),
         component: Y
@@ -249,7 +249,7 @@ class ei extends Chunk64700.Component {
         from: N.BVt.INVITE(""),
         to: N.BVt.LOGIN
       }), (0, r.jsx)(_.A, {
-        path: N.BVt.INVITE_PROXY(y.pv.channelId()),
+        path: N.BVt.INVITE_PROXY(b.pv.channelId()),
         component: M
       }), (0, r.jsx)(s.rd, {
         from: N.BVt.GIFT_CODE(""),
@@ -303,31 +303,31 @@ class ei extends Chunk64700.Component {
         path: N.BVt.DOWNLOAD_QR_CODE_REDIRECT,
         render: () => {
           var e, t, n;
-          let r = null == (t = v.default.getSuperProperties()) ? true : t.os,
+          let r = null == (t = A.default.getSuperProperties()) ? true : t.os,
             i = (0, a.parse)((null != (e = window.location.search) ? e : "").substr(1)),
             s = null == (n = i.referring_location) ? true : n.toString();
-          return ("iOS" === r || "Android" === r) && v.default.track(N.HAw.DOWNLOAD_APP, {
+          return ("iOS" === r || "Android" === r) && A.default.track(N.HAw.DOWNLOAD_APP, {
             platform: r,
             ptb: false,
             released: true,
             has_e_mail: "true" === i.has_e_mail,
             referring_location: s,
             qr_code: true
-          }), window.location.href = (0, S.b$)(null != s && "" !== s ? s : "qr_code", r), null
+          }), window.location.href = (0, I.b$)(null != s && "" !== s ? s : "qr_code", r), null
         }
       }), (0, r.jsx)(_.A, {
         path: N.BVt.OPEN_APP_FROM_EMAIL,
         render: () => {
           var e, t;
-          let n = null == (t = v.default.getSuperProperties()) ? true : t.os,
-            i = (0, I.Z)(null != (e = window.location.search) ? e : "");
+          let n = null == (t = A.default.getSuperProperties()) ? true : t.os,
+            i = (0, S.Z)(null != (e = window.location.search) ? e : "");
           if ("iOS" !== n && "Android" !== n) return (0, r.jsx)(s.rd, {
             to: null != i.desktop ? "".concat(i.desktop.pathname).concat(i.desktop.search) : N.BVt.APP
           });
           {
-            let e = (0, S.b$)("app_open_from_email", n, i.mobile),
+            let e = (0, I.b$)("app_open_from_email", n, i.mobile),
               t = (0, c.X7)(e);
-            null != t && v.default.track(N.HAw.DEEP_LINK_CLICKED, {
+            null != t && A.default.track(N.HAw.DEEP_LINK_CLICKED, {
               fingerprint: (0, u.v)(t.fingerprint),
               attempt_id: t.attemptId,
               source: t.utmSource,
@@ -385,7 +385,7 @@ function es(e) {
   }))
 }
 let eo = Chunk311907.Ay.connectStores([Chunk961350.default, Chunk7143.A], () => ({
-  isAuthenticated: A.default.isAuthenticated(),
+  isAuthenticated: v.default.isAuthenticated(),
   migrationStatus: g.A.getMigrationStatus()
 }), {
   forwardRef: true

@@ -148,13 +148,13 @@
     return [F(H(r)), F(a(e).toString(16)), F(a(t).toString(16)), F(a(n).toString(16))].join("")
   }
 
-  function b(e, t) {
+  function y(e, t) {
     t = 0 === t ? 0 : t || 10;
     var n = c(e).toHsl();
     return n.s -= t / 100, n.s = k(n.s), c(n)
   }
 
-  function y(e, t) {
+  function b(e, t) {
     t = 0 === t ? 0 : t || 10;
     var n = c(e).toHsl();
     return n.s += t / 100, n.s = k(n.s), c(n)
@@ -164,25 +164,25 @@
     return c(e).desaturate(100)
   }
 
-  function A(e, t) {
+  function v(e, t) {
     t = 0 === t ? 0 : t || 10;
     var n = c(e).toHsl();
     return n.l += t / 100, n.l = k(n.l), c(n)
   }
 
-  function v(e, t) {
+  function A(e, t) {
     t = 0 === t ? 0 : t || 10;
     var n = c(e).toRgb();
     return n.r = o(0, s(255, n.r - a(-(t / 100 * 255)))), n.g = o(0, s(255, n.g - a(-(t / 100 * 255)))), n.b = o(0, s(255, n.b - a(-(t / 100 * 255)))), c(n)
   }
 
-  function S(e, t) {
+  function I(e, t) {
     t = 0 === t ? 0 : t || 10;
     var n = c(e).toHsl();
     return n.l -= t / 100, n.l = k(n.l), c(n)
   }
 
-  function I(e, t) {
+  function S(e, t) {
     var n = c(e).toHsl(),
       r = (n.h + t) % 360;
     return n.h = r < 0 ? 360 + r : r, c(n)
@@ -381,25 +381,25 @@
       return this._r = n._r, this._g = n._g, this._b = n._b, this.setAlpha(n._a), this
     },
     lighten: function() {
-      return this._applyModification(A, arguments)
-    },
-    brighten: function() {
       return this._applyModification(v, arguments)
     },
+    brighten: function() {
+      return this._applyModification(A, arguments)
+    },
     darken: function() {
-      return this._applyModification(S, arguments)
+      return this._applyModification(I, arguments)
     },
     desaturate: function() {
-      return this._applyModification(b, arguments)
+      return this._applyModification(y, arguments)
     },
     saturate: function() {
-      return this._applyModification(y, arguments)
+      return this._applyModification(b, arguments)
     },
     greyscale: function() {
       return this._applyModification(O, arguments)
     },
     spin: function() {
-      return this._applyModification(I, arguments)
+      return this._applyModification(S, arguments)
     },
     _applyCombination: function(e, t) {
       return e.apply(null, [this].concat([].slice.call(t)))

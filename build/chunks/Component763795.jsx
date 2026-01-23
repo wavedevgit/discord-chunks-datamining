@@ -22,7 +22,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk456919 = require("./456919.js");
 
-function b(e, t) {
+function y(e, t) {
   let n = f.Ay.getDefaultPrice(e),
     {
       intervalType: r
@@ -40,7 +40,7 @@ function b(e, t) {
       })
   }
 }
-let y = e => {
+let b = e => {
     let {
       isTier0: t,
       discountAmount: n
@@ -67,14 +67,14 @@ let y = e => {
         plan: h,
         renderAnimation: g,
         onClose: O,
-        isGift: A,
-        upgradeToPremiumType: v,
-        className: S,
-        showTrialBadge: I = false,
+        isGift: v,
+        upgradeToPremiumType: A,
+        className: I,
+        showTrialBadge: S = false,
         showDiscountBadge: T = false
       } = e,
-      C = v === m.PremiumTypes.TIER_2;
-    n = v === m.PremiumTypes.TIER_0 ? c.A : v === m.PremiumTypes.TIER_1 ? u.A : l.A;
+      C = A === m.PremiumTypes.TIER_2;
+    n = A === m.PremiumTypes.TIER_0 ? c.A : A === m.PremiumTypes.TIER_1 ? u.A : l.A;
     let N = (0, _.O)(),
       R = null == N || null == (t = N.discount) ? true : t.amount;
     return (0, r.jsxs)("div", {
@@ -82,8 +82,8 @@ let y = e => {
       className: a()({
         [E.y2]: !C,
         [E.qG]: C
-      }, S),
-      children: [(I || T) && (0, r.jsx)(d.A, {
+      }, I),
+      children: [(S || T) && (0, r.jsx)(d.A, {
         className: E.N8
       }), g(), (0, r.jsxs)(o.A, {
         align: o.A.Align.START,
@@ -94,8 +94,8 @@ let y = e => {
             className: a()(E.nr, {
               [E.w6]: !C
             })
-          }), (I || T) && (0, r.jsx)(y, {
-            isTier0: v === m.PremiumTypes.TIER_0,
+          }), (S || T) && (0, r.jsx)(b, {
+            isTier0: A === m.PremiumTypes.TIER_0,
             discountAmount: T ? R : true
           })]
         }), !i && (0, r.jsx)(s.s_y, {
@@ -106,7 +106,7 @@ let y = e => {
         })]
       }), p && null != h ? (0, r.jsx)("div", {
         className: E.q9,
-        children: b(h, A)
+        children: y(h, v)
       }) : null]
     })
   }

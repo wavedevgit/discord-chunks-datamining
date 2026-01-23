@@ -166,16 +166,16 @@ function F({
     shouldUseVirtualFocus: p,
     disallowTypeAhead: _,
     filter: O,
-    ...A
-  } = e, v = (0, L.useContext)(M);
-  t = (0, R.U)((0, L.useMemo)(() => (0, w.P)(t, null == v ? true : v.tableRef), [t, null == v ? true : v.tableRef]));
-  let S = (0, h.j)({
-      ...A,
+    ...v
+  } = e, A = (0, L.useContext)(M);
+  t = (0, R.U)((0, L.useMemo)(() => (0, w.P)(t, null == A ? true : A.tableRef), [t, null == A ? true : A.tableRef]));
+  let I = (0, h.j)({
+      ...v,
       collection: r,
       children: true,
       UNSAFE_selectionState: n
     }),
-    I = (0, h.B)(S, O),
+    S = (0, h.B)(I, O),
     {
       isVirtualized: T,
       layoutDelegate: C,
@@ -188,11 +188,11 @@ function F({
     {
       gridProps: j
     } = (0, m.K)({
-      ...A,
+      ...v,
       layoutDelegate: C,
       isVirtualized: T
-    }, I, t),
-    k = I.selectionManager,
+    }, S, t),
+    k = S.selectionManager,
     V = !!(null == x ? true : x.useDraggableCollectionState),
     F = !!(null == x ? true : x.useDroppableCollectionState);
   (0, L.useRef)(V), (0, L.useRef)(F), (0, L.useEffect)(() => {}, [V, F]);
@@ -201,7 +201,7 @@ function F({
     W = (0, L.useRef)(null);
   if (V && x) {
     u = x.useDraggableCollectionState({
-      collection: I.collection,
+      collection: S.collection,
       selectionManager: k,
       preview: x.renderDragPreview ? W : true
     }), x.useDraggableCollection({}, u, t);
@@ -212,11 +212,11 @@ function F({
   }
   if (F && x) {
     d = x.useDroppableCollectionState({
-      collection: I.collection,
+      collection: S.collection,
       selectionManager: k
     });
     let e = new(0, g.n)({
-        collection: I.collection,
+        collection: S.collection,
         disabledKeys: k.disabledKeys,
         disabledBehavior: k.disabledBehavior,
         ref: t,
@@ -242,12 +242,12 @@ function F({
       isDropTarget: H,
       isFocused: z,
       isFocusVisible: q,
-      state: I
+      state: S
     }
   }), Z = !!(V && !(null == u ? true : u.isDisabled)), Q = X.style, $ = null;
-  v && ($ = v.useTableColumnResizeState({
-    tableWidth: v.tableWidth
-  }, I), T || (Q = {
+  A && ($ = A.useTableColumnResizeState({
+    tableWidth: A.tableWidth
+  }, S), T || (Q = {
     ...Q,
     tableLayout: "fixed",
     width: "fit-content"
@@ -258,7 +258,7 @@ function F({
     });
   return L.createElement(s.Kq, {
     values: [
-      [U, I],
+      [U, S],
       [G, $],
       [o.Ux, {
         dragAndDropHooks: x,
@@ -271,8 +271,8 @@ function F({
       [i.Co, null],
       [i.wv, null]
     ]
-  }, L.createElement(b.n1, null, L.createElement(J, {
-    ...(0, y.v)(ee, X, j, K, null == f ? true : f.collectionProps),
+  }, L.createElement(y.n1, null, L.createElement(J, {
+    ...(0, b.v)(ee, X, j, K, null == f ? true : f.collectionProps),
     style: Q,
     ref: t,
     slot: e.slot || true,
@@ -282,8 +282,8 @@ function F({
     "data-focused": z || true,
     "data-focus-visible": q || true
   }, L.createElement(c.D, null, L.createElement(D, {
-    collection: I.collection,
-    scrollRef: null != (l = null == v ? true : v.scrollRef) ? l : t,
+    collection: S.collection,
+    scrollRef: null != (l = null == A ? true : A.scrollRef) ? l : t,
     persistedKeys: (0, o.XW)(k, x, d)
   })))), Y)
 }
@@ -315,7 +315,7 @@ let W = (0, Chunk59845.yq)(Y, (e, t) => {
     {
       hoverProps: o,
       isHovered: l
-    } = (0, A.M)({
+    } = (0, v.M)({
       onHoverStart: e.onHoverStart,
       onHoverChange: e.onHoverChange,
       onHoverEnd: e.onHoverEnd
@@ -329,7 +329,7 @@ let W = (0, Chunk59845.yq)(Y, (e, t) => {
       }
     });
   return L.createElement(i, {
-    ...(0, y.v)((0, P.$)(e, {
+    ...(0, b.v)((0, P.$)(e, {
       global: true
     }), a, o),
     ...c,
@@ -352,13 +352,13 @@ function K({
     } = (0, L.useContext)(a.zL),
     {
       rowProps: l
-    } = (0, v.x)({
+    } = (0, A.x)({
       node: e,
       isVirtualized: r
     }, n, t),
     {
       checkboxProps: c
-    } = (0, S.q)(n),
+    } = (0, I.q)(n),
     u = B("tr");
   return L.createElement(u, {
     ...l,
@@ -387,7 +387,7 @@ let q = (0, Chunk59845.KU)(z, (e, t, n) => {
       } = (0, L.useContext)(a.zL),
       {
         columnHeaderProps: u
-      } = (0, I.f)({
+      } = (0, S.f)({
         node: n,
         isVirtualized: c
       }, l, o),
@@ -402,9 +402,9 @@ let q = (0, Chunk59845.KU)(z, (e, t, n) => {
     let {
       hoverProps: m,
       isHovered: g
-    } = (0, A.M)({
+    } = (0, v.M)({
       isDisabled: !e.allowsSorting
-    }), b = (0, s.Sl)({
+    }), y = (0, s.Sl)({
       ...e,
       id: true,
       children: n.rendered,
@@ -424,18 +424,18 @@ let q = (0, Chunk59845.KU)(z, (e, t, n) => {
           l.sort(n.key, e)
         }
       }
-    }), O = b.style;
+    }), O = y.style;
     _ && (O = {
       ...O,
       width: _.getColumnWidth(n.key)
     });
-    let v = B("th"),
-      S = (0, P.$)(e, {
+    let A = B("th"),
+      I = (0, P.$)(e, {
         global: true
       });
-    return delete S.id, L.createElement(v, {
-      ...(0, y.v)(S, u, p, m),
-      ...b,
+    return delete I.id, L.createElement(A, {
+      ...(0, b.v)(I, u, p, m),
+      ...y,
       style: O,
       ref: o,
       "data-hovered": g || true,
@@ -452,7 +452,7 @@ let q = (0, Chunk59845.KU)(z, (e, t, n) => {
         }],
         [a.zL, a.N]
       ]
-    }, b.children))
+    }, y.children))
   }),
   X = (0, Chunk64700.createContext)(null);
 class Z extends Chunk178375.ru {}
@@ -488,31 +488,31 @@ let Q = (0, Chunk59845.yq)(Z, (e, t) => {
       values: m
     }),
     E = B("tr"),
-    b = B("td"),
-    A = c.columnCount;
+    y = B("td"),
+    v = c.columnCount;
   if (h && e.renderEmptyState && i) {
     let t = {},
       n = {},
       i = {};
-    l ? (n["aria-colspan"] = A, i = {
+    l ? (n["aria-colspan"] = v, i = {
       display: "contents"
-    }) : n.colSpan = A, r = L.createElement(E, {
+    }) : n.colSpan = v, r = L.createElement(E, {
       role: "row",
       ...t,
       style: i
-    }, L.createElement(b, {
+    }, L.createElement(y, {
       role: "rowheader",
       ...n,
       style: i
     }, e.renderEmptyState(m)))
   }
   let {
-    rowGroupProps: v
-  } = (0, O.rs)(), S = B("tbody"), I = (0, P.$)(e, {
+    rowGroupProps: A
+  } = (0, O.rs)(), I = B("tbody"), S = (0, P.$)(e, {
     global: true
   });
-  return L.createElement(S, {
-    ...(0, y.v)(I, g, v),
+  return L.createElement(I, {
+    ...(0, b.v)(S, g, A),
     ref: t,
     "data-empty": h || true
   }, p && L.createElement(ea, null), L.createElement(u, {
@@ -544,7 +544,7 @@ let J = (0, Chunk59845.yq)($, (e, t, n) => {
       CollectionBranch: g
     } = (0, L.useContext)(a.zL),
     {
-      rowProps: b,
+      rowProps: y,
       ...O
     } = (0, T.A)({
       node: n,
@@ -552,8 +552,8 @@ let J = (0, Chunk59845.yq)($, (e, t, n) => {
       isVirtualized: m
     }, f, d),
     {
-      isFocused: v,
-      isFocusVisible: I,
+      isFocused: A,
+      isFocusVisible: S,
       focusProps: N
     } = (0, E.o)(),
     {
@@ -565,7 +565,7 @@ let J = (0, Chunk59845.yq)($, (e, t, n) => {
     {
       hoverProps: x,
       isHovered: j
-    } = (0, A.M)({
+    } = (0, v.M)({
       isDisabled: !O.allowsSelection && !O.hasAction,
       onHoverStart: e.onHoverStart,
       onHoverChange: e.onHoverChange,
@@ -573,7 +573,7 @@ let J = (0, Chunk59845.yq)($, (e, t, n) => {
     }),
     {
       checkboxProps: M
-    } = (0, S.B)({
+    } = (0, I.B)({
       key: n.key
     }, f);
   _ && p && (c = p.useDraggableItem({
@@ -607,8 +607,8 @@ let J = (0, Chunk59845.yq)($, (e, t, n) => {
       values: {
         ...O,
         isHovered: j,
-        isFocused: v,
-        isFocusVisible: I,
+        isFocused: A,
+        isFocusVisible: S,
         selectionMode: f.selectionManager.selectionMode,
         selectionBehavior: f.selectionManager.selectionBehavior,
         isDragging: F,
@@ -639,13 +639,13 @@ let J = (0, Chunk59845.yq)($, (e, t, n) => {
     ...u.dropIndicatorProps,
     ref: k
   }))), L.createElement(K, {
-    ...(0, y.v)(q, W, b, N, x, null == c ? true : c.dragProps, D),
+    ...(0, b.v)(q, W, y, N, x, null == c ? true : c.dragProps, D),
     ref: d,
     "data-disabled": O.isDisabled || true,
     "data-selected": O.isSelected || true,
     "data-hovered": j || true,
     "data-focused": O.isFocused || true,
-    "data-focus-visible": I || true,
+    "data-focus-visible": S || true,
     "data-pressed": O.isPressed || true,
     "data-dragging": F || true,
     "data-drop-target": (null == u ? true : u.isDropTarget) || true,
@@ -714,7 +714,7 @@ let et = (0, Chunk59845.KU)(ee, (e, t, n) => {
   } = (0, E.o)(), {
     hoverProps: h,
     isHovered: m
-  } = (0, A.M)({}), g = (0, s.Sl)({
+  } = (0, v.M)({}), g = (0, s.Sl)({
     ...e,
     id: true,
     defaultClassName: "react-aria-Cell",
@@ -725,11 +725,11 @@ let et = (0, Chunk59845.KU)(ee, (e, t, n) => {
       isHovered: m,
       id: n.key
     }
-  }), b = B("td"), O = (0, P.$)(e, {
+  }), y = B("td"), O = (0, P.$)(e, {
     global: true
   });
-  return delete O.id, L.createElement(b, {
-    ...(0, y.v)(O, g, u, _, h),
+  return delete O.id, L.createElement(y, {
+    ...(0, b.v)(O, g, u, _, h),
     ref: r,
     "data-focused": f || true,
     "data-focus-visible": p || true,
@@ -867,8 +867,8 @@ function ea() {
     m = B("td"),
     g = {},
     E = {},
-    b = {};
-  return i ? (E["aria-colspan"] = d, b = {
+    y = {};
+  return i ? (E["aria-colspan"] = d, y = {
     display: "contents"
   }) : E.colSpan = d, L.createElement(L.Fragment, null, L.createElement(h, {
     style: {
@@ -889,7 +889,7 @@ function ea() {
       width: 1
     }
   }))), o && _.children && L.createElement(h, {
-    ...(0, y.v)((0, P.$)(e, {
+    ...(0, b.v)((0, P.$)(e, {
       global: true
     }), g),
     ..._,
@@ -898,6 +898,6 @@ function ea() {
   }, L.createElement(m, {
     role: "rowheader",
     ...E,
-    style: b
+    style: y
   }, _.children)))
 })

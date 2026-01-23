@@ -1,8 +1,8 @@
 /** Chunk was on 72165 **/
 /** chunk id: 760207, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => C,
-  W: () => O
+  A: () => j,
+  W: () => C
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,26 +23,26 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk896743 = require("./896743.js");
 
-function O(e) {
+function C(e) {
   let {
     channelId: t
   } = e;
   return (0, l.jsx)(s.A, {
     sidebarType: s.X.ThreadSidebar,
     maxWidth: 600,
-    children: (0, l.jsx)(c.A, {
+    children: (0, l.jsx)(o.A, {
       channelId: t,
       baseChannelId: x.VV.CHANNEL_BROWSER
     })
   })
 }
 
-function C(e) {
+function j(e) {
   let {
     guildId: t
-  } = e, [s, c] = r.useState(""), O = (0, i.bG)([f.A], () => f.A.getGuild(t)), C = (0, i.bG)([u.Ay], () => u.Ay.getChannels(t)), y = (0, i.bG)([o.A], () => o.A.getCategories(t)), v = (0, p.vh)(t, y, C, s), _ = (0, i.bG)([b.A], () => b.A.canWithPartialContext(m.xBc.MANAGE_CHANNELS, {
+  } = e, [s, o] = r.useState(""), C = (0, i.bG)([h.A], () => h.A.getGuild(t)), j = (0, i.bG)([u.Ay], () => u.Ay.getChannels(t)), O = (0, i.bG)([d.A], () => d.A.getCategories(t)), v = (0, _.vh)(t, O, j, s), y = (0, i.bG)([p.A], () => p.A.canWithPartialContext(g.xBc.MANAGE_CHANNELS, {
     guildId: t
-  })), N = (0, i.bG)([d.Ay], () => null != d.Ay.getCurrentSidebarChannelId(x.VV.CHANNEL_BROWSER)), w = r.useCallback(() => c(""), [c]), E = r.useCallback(() => {
+  })), N = (0, i.bG)([c.Ay], () => null != c.Ay.getCurrentSidebarChannelId(x.VV.CHANNEL_BROWSER)), w = r.useCallback(() => o(""), [o]), I = r.useCallback(() => {
     (0, a.mMO)(async () => {
       let {
         default: e
@@ -82,29 +82,29 @@ function C(e) {
       }
     })
   }, [t]);
-  return null == O ? null : (0, l.jsxs)("div", {
-    className: j.kw,
+  return null == C ? null : (0, l.jsxs)("div", {
+    className: A.kw,
     children: [(0, l.jsxs)("div", {
-      className: j.wx,
+      className: A.wx,
       children: [(0, l.jsx)(a.IWV, {
         query: s,
         onChange: e => {
-          "" === s && "" !== e && h.default.track(m.HAw.SEARCH_STARTED, {
+          "" === s && "" !== e && f.default.track(g.HAw.SEARCH_STARTED, {
             search_type: "channel browser"
-          }), c(e.toLowerCase())
+          }), o(e.toLowerCase())
         },
         onClear: w,
-        placeholder: A.intl.string(A.t.s5MnmC)
-      }), _ ? (0, l.jsx)(a.Button, {
+        placeholder: b.intl.string(b.t.s5MnmC)
+      }), y ? (0, l.jsx)(a.Button, {
         icon: a.j96,
-        onClick: E,
-        text: A.intl.string(A.t.CumH4u)
+        onClick: I,
+        text: b.intl.string(b.t.CumH4u)
       }) : null]
-    }), (0, l.jsx)(g.A, {
-      className: j.T,
-      channels: C,
+    }), (0, l.jsx)(m.A, {
+      className: A.T,
+      channels: j,
       categories: v,
-      guild: O,
+      guild: C,
       hasSidebar: N
     })]
   })

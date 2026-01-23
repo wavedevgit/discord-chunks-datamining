@@ -25,11 +25,11 @@ var Chunk503698 = require("./503698.js"),
   Chunk837921 = require("./837921.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk551580 = require("./551580.js");
-let v = "#ffffff",
-  S = e => y.Ay.close(e),
-  I = e => y.Ay.minimize(e),
+let A = "#ffffff",
+  I = e => b.Ay.close(e),
+  S = e => b.Ay.minimize(e),
   T = (e, t) => {
-    (0, b.isMac)() && !t.altKey ? y.Ay.fullscreen(e) : y.Ay.maximize(e)
+    (0, y.isMac)() && !t.altKey ? b.Ay.fullscreen(e) : b.Ay.maximize(e)
   },
   C = e => {
     let {
@@ -38,20 +38,20 @@ let v = "#ffffff",
       themeOverride: i,
       hasOpenLayer: s
     } = e, l = (0, r.jsx)(o.DUT, {
-      className: A.d1,
-      onClick: () => S(n),
+      className: v.d1,
+      onClick: () => I(n),
       "aria-label": O.intl.string(O.t.ZdNUj2),
       tabIndex: false,
       children: (0, r.jsx)(p.A, {})
     }), c = (0, r.jsx)(o.DUT, {
-      className: A.T0,
+      className: v.T0,
       onClick: e => T(n, e),
       "aria-label": O.intl.string(O.t.G1u0hK),
       tabIndex: false,
       children: (0, r.jsx)(h.A, {})
     }), u = (0, r.jsx)(o.DUT, {
-      className: A.T0,
-      onClick: () => I(n),
+      className: v.T0,
+      onClick: () => S(n),
       "aria-label": O.intl.string(O.t.CxOC4U),
       tabIndex: false,
       children: (0, r.jsx)(g.A, {})
@@ -61,11 +61,11 @@ let v = "#ffffff",
     return (0, r.jsx)(o.NPJ, {
       theme: i,
       children: e => (0, r.jsxs)("div", {
-        className: a()(A._B, e, {
-          [A.N_]: !s
+        className: a()(v._B, e, {
+          [v.N_]: !s
         }),
         children: [(0, r.jsx)("div", {
-          className: A.X1,
+          className: v.X1,
           children: (0, r.jsx)(f.A, {})
         }), t, d]
       })
@@ -83,31 +83,31 @@ let v = "#ffffff",
     return (0, r.jsx)(o.NPJ, {
       theme: s,
       children: e => (0, r.jsxs)(o.DUT, {
-        className: a()(i ? A.zY : A.kE, t ? A.in : A.Vn, e, {
-          [A.N_]: !l
+        className: a()(i ? v.zY : v.kE, t ? v.in : v.Vn, e, {
+          [v.N_]: !l
         }),
-        onDoubleClick: () => y.Ay.maximize(n),
+        onDoubleClick: () => b.Ay.maximize(n),
         tabIndex: false,
         children: [c.A.window.USE_OSX_NATIVE_TRAFFIC_LIGHTS ? u : (0, r.jsxs)("div", {
-          className: A.lY,
+          className: v.lY,
           children: [(0, r.jsx)(o.DUT, {
-            className: A.gV,
-            onClick: () => S(n),
+            className: v.gV,
+            onClick: () => I(n),
             "aria-label": O.intl.string(O.t.ZdNUj2),
             tabIndex: false,
             children: (0, r.jsx)(_.A, {
               color: "#4c0000"
             })
           }), (0, r.jsx)(o.DUT, {
-            className: A.wv,
-            onClick: () => I(n),
+            className: v.wv,
+            onClick: () => S(n),
             "aria-label": O.intl.string(O.t.CxOC4U),
             tabIndex: false,
             children: (0, r.jsx)(E.A, {
               color: "#975500"
             })
           }), (0, r.jsx)(o.DUT, {
-            className: A.KH,
+            className: v.KH,
             onClick: e => T(n, e),
             "aria-label": O.intl.string(O.t["2nM3Pk"]),
             tabIndex: false,
@@ -116,9 +116,9 @@ let v = "#ffffff",
             })
           })]
         }), i ? (0, r.jsx)("div", {
-          className: A.Th,
+          className: v.Th,
           children: (0, r.jsx)(f.A, {
-            color: v
+            color: A
           })
         }) : null]
       })
@@ -135,13 +135,13 @@ function R(e) {
   } = e, c = (0, d.Us)(), f = (0, s.bG)([u.A], () => u.A.isFullscreenInContext(c)), p = (0, l.A)();
   if (f) return null;
   switch (n) {
-    case b.PlatformTypes.WINDOWS:
+    case y.PlatformTypes.WINDOWS:
       return (0, r.jsx)(C, {
         windowKey: i,
         themeOverride: o,
         hasOpenLayer: p
       });
-    case b.PlatformTypes.OSX:
+    case y.PlatformTypes.OSX:
       return (0, r.jsx)(N, {
         focused: t,
         windowKey: i,

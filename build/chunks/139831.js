@@ -12,37 +12,37 @@ function i(e) {
     context: n,
     canvasWidth: i,
     canvasHeight: a,
-    fallbackColor: s,
-    outlineColorDark: o,
+    fallbackColor: o,
+    outlineColorDark: s,
     outlineColorLight: c,
     linesDrawnAt: u,
     deadDrawables: d
   } = e;
   null == u.current[t.id] && (u.current[t.id] = Date.now()), n.lineCap = "round", n.lineJoin = "round";
-  let f = t.points.map(e => (0, l.RT)(e, i, a)),
+  let f = t.points.map(e => (0, r.RT)(e, i, a)),
     p = u.current[t.id],
-    b = e => p + e.deltaTime + 1500 >= Date.now(),
-    g = e => p + e.deltaTime <= Date.now() && b(e),
-    m = f.find(g);
-  if (null == m) {
-    b(t.points[t.points.length - 1]) || d.push(t);
+    g = e => p + e.deltaTime + 1500 >= Date.now(),
+    m = e => p + e.deltaTime <= Date.now() && g(e),
+    _ = f.find(m);
+  if (null == _) {
+    g(t.points[t.points.length - 1]) || d.push(t);
     return
   }
   let h = (e, t) => {
-      let l = null;
-      n.lineWidth = t * window.devicePixelRatio, n.strokeStyle = e, n.beginPath(), n.moveTo(m.x, m.y);
+      let r = null;
+      n.lineWidth = t * window.devicePixelRatio, n.strokeStyle = e, n.beginPath(), n.moveTo(_.x, _.y);
       for (let e = 1; e < f.length; e++) {
         let t = f[e];
-        g(t) && (n.lineTo(t.x, t.y), l = t)
+        m(t) && (n.lineTo(t.x, t.y), r = t)
       }
-      return n.stroke(), l
+      return n.stroke(), r
     },
     {
-      fillColor: A,
-      outlineColor: y
-    } = (0, l.yO)(t.userId, o, c, s),
-    _ = h(y, 9),
-    E = null != _ && g(_);
-  E && (0, r.y)(n, _.x, _.y, y, 3), h(A, 6), E && (0, r.k)(n, _.x, _.y, t.userId)
+      fillColor: y,
+      outlineColor: A
+    } = (0, r.yO)(t.userId, s, c, o),
+    b = h(A, 9),
+    E = null != b && m(b);
+  E && (0, l.y)(n, b.x, b.y, A, 3), h(y, 6), E && (0, l.k)(n, b.x, b.y, t.userId)
 }
 require("./824217.js")

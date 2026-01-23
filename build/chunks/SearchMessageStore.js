@@ -71,11 +71,11 @@ function E(e, t) {
   return _.set(e, r), true
 }
 
-function b(e, t) {
+function y(e, t) {
   return t(m(e))
 }
 
-function y() {
+function b() {
   p = new Map, _ = new Map, h = new Map
 }
 
@@ -85,7 +85,7 @@ function O(e) {
   })
 }
 
-function A(e) {
+function v(e) {
   e.data.forEach(e => {
     let t = g(e.id),
       n = e.messages.map(e => {
@@ -101,7 +101,7 @@ function A(e) {
   })
 }
 
-function v(e) {
+function A(e) {
   let t = e.message.id;
   if (null == t) returnfalse;
   let n = _.get(t);
@@ -110,7 +110,7 @@ function v(e) {
   _.set(t, r)
 }
 
-function S(e) {
+function I(e) {
   let {
     type: t,
     messageId: n,
@@ -127,7 +127,7 @@ function S(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     messageId: t,
     reactions: n
@@ -183,34 +183,34 @@ class D extends(r = Chunk311907.Ay.Store) {
     return _.get(e)
   }
   getTotalCount(e) {
-    return b(e, e => e.totalResults)
+    return y(e, e => e.totalResults)
   }
   getIsInitialFetchComplete(e) {
-    return b(e, e => e.isInitialFetchComplete)
+    return y(e, e => e.isInitialFetchComplete)
   }
   getIsIndexing(e) {
-    return b(e, e => e.isIndexing)
+    return y(e, e => e.isIndexing)
   }
   getIsHistoricalIndexing(e) {
-    return b(e, e => e.isHistoricalIndexing)
+    return y(e, e => e.isHistoricalIndexing)
   }
   getDocumentsIndexed(e) {
-    return b(e, e => e.documentsIndexed)
+    return y(e, e => e.documentsIndexed)
   }
   getIsFetching(e) {
-    return b(e, e => e.isFetching)
+    return y(e, e => e.isFetching)
   }
   getError(e) {
-    return b(e, e => e.error)
+    return y(e, e => e.error)
   }
   getMessages(e) {
-    return b(e, e => e.messages)
+    return y(e, e => e.messages)
   }
   getCursor(e) {
-    return b(e, e => e.cursor)
+    return y(e, e => e.cursor)
   }
   getAnalyticsId(e) {
-    return b(e, e => e.analyticsId)
+    return y(e, e => e.analyticsId)
   }
   hasSearchState(e) {
     return p.has(e)
@@ -219,16 +219,16 @@ class D extends(r = Chunk311907.Ay.Store) {
 d(D, "displayName", "SearchMessageStore");
 let x = new D(Chunk73153.h, {
   SEARCH_MESSAGES_START: O,
-  SEARCH_MESSAGES_SUCCESS: A,
+  SEARCH_MESSAGES_SUCCESS: v,
   SEARCH_MESSAGES_INDEXING: N,
   SEARCH_MESSAGES_FAILURE: R,
   SEARCH_MESSAGES_CLEAR: w,
   SEARCH_MESSAGES_CLEAR_ALL: P,
-  MESSAGE_UPDATE: v,
-  MESSAGE_REACTION_ADD: S,
-  MESSAGE_REACTION_ADD_MANY: I,
-  MESSAGE_REACTION_REMOVE: S,
+  MESSAGE_UPDATE: A,
+  MESSAGE_REACTION_ADD: I,
+  MESSAGE_REACTION_ADD_MANY: S,
+  MESSAGE_REACTION_REMOVE: I,
   MESSAGE_REACTION_REMOVE_ALL: T,
   MESSAGE_REACTION_REMOVE_EMOJI: C,
-  CONNECTION_OPEN: y
+  CONNECTION_OPEN: b
 })

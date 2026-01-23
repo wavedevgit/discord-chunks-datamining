@@ -2,7 +2,7 @@
 /** chunk id: 574660, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F: () => y,
+  F: () => b,
   t: () => O
 });
 var Chunk64700 = require("./64700.js"),
@@ -22,7 +22,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk488995 = require("./488995.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e) {
+function y(e) {
   let {
     isDiscoverable: t,
     customInstallUrl: n,
@@ -51,7 +51,7 @@ function b(e) {
   }
 }
 
-function y(e, t) {
+function b(e, t) {
   let {
     canViewApp: n,
     canOpenAppLauncher: i,
@@ -60,7 +60,7 @@ function y(e, t) {
     installParams: u,
     integrationTypesConfig: d,
     selectedGuildId: f
-  } = b(e);
+  } = y(e);
   return r.useMemo(() => n ? () => {
     (null == t || t(), i) ? (0, s.hg)(e.id) : (0, o.transitionToGlobalDiscovery)({
       tab: g.GlobalDiscoveryTab.APPS,
@@ -87,7 +87,7 @@ function O(e) {
   let {
     canViewApp: t,
     isInstallable: n
-  } = b(e), i = y(e);
+  } = y(e), i = b(e);
   return r.useMemo(() => t && null != i ? {
     label: E.intl.string(E.t.hvVgAZ),
     trackingArea: h.kY.VIEW,

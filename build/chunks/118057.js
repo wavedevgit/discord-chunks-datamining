@@ -54,13 +54,13 @@ function f(e) {
     getNewFocusPosition: m,
     dispatch: g,
     maintainFocusPosition: E,
-    enabled: b,
-    autoFocusElement: y,
+    enabled: y,
+    autoFocusElement: b,
     useVirtualFocus: O
-  } = e, A = r.useRef(b), v = u(c(t, f, p)), [S, I] = r.useState(false), [T, C] = r.useState(false), [N, R] = r.useState(false), [w] = r.useState(() => new s.Lp(e => {
+  } = e, v = r.useRef(y), A = u(c(t, f, p)), [I, S] = r.useState(false), [T, C] = r.useState(false), [N, R] = r.useState(false), [w] = r.useState(() => new s.Lp(e => {
     let [t, n] = e.split(",").map(Number);
     return () => {
-      I(true), g({
+      S(true), g({
         type: i.n.SET_FOCUSED_POSITION,
         x: t,
         y: n
@@ -69,9 +69,9 @@ function f(e) {
   }));
   r.useEffect(() => () => w.clean(), [w]);
   let P = r.useCallback(e => {
-      if (!A.current || !y) returnfalse;
+      if (!v.current || !b) returnfalse;
       e.focus()
-    }, [y]),
+    }, [b]),
     D = r.useCallback((e, n) => {
       let r = c(t, e, n);
       (null != h ? h(e, n, r) : Promise.resolve()).then(() => {
@@ -92,24 +92,24 @@ function f(e) {
     }, [g, f, p, m, t, P]),
     [L, j] = r.useState(false);
   r.useEffect(() => {
-    if (!L || !S) return;
+    if (!L || !I) return;
     j(false);
     let e = u(c(t, f, p));
     if (null != e) return void P(e);
-    I(false);
+    S(false);
     let n = u(c(t));
     null != n && P(n)
-  }, [t, L, S, P, f, p]);
+  }, [t, L, I, P, f, p]);
   let M = r.useCallback(e => {
-    A.current && null == e && j(true)
+    v.current && null == e && j(true)
   }, []);
   r.useEffect(() => {
-    S && T && null != v && (P(v), C(false))
-  }, [T, v]), r.useEffect(() => {
-    S && (N || D(f, p), R(false))
+    I && T && null != A && (P(A), C(false))
+  }, [T, A]), r.useEffect(() => {
+    I && (N || D(f, p), R(false))
   }, [f, p]);
   let k = r.useCallback(e => {
-      if (!A.current) return;
+      if (!v.current) return;
       if (!O && o.includes(e.key) && !(e.shiftKey || e.altKey || e.metaKey || e.ctrlKey) && e.currentTarget === e.target) {
         e.preventDefault(), e.stopPropagation(), x();
         return
@@ -129,17 +129,17 @@ function f(e) {
           });
           return;
         case a.X2.SELECT_FOCUSED_ITEM:
-          if (y && !d(v) || e.repeat) return;
+          if (b && !d(A) || e.repeat) return;
           e.preventDefault(), e.stopPropagation(), g({
             type: t
-          }), null != _ ? _(f, p, e) : null != v && v.click()
+          }), null != _ ? _(f, p, e) : null != A && A.click()
       }
-    }, [x, g, y, v, _, f, p]),
-    U = r.useCallback(e => e.currentTarget !== e.target ? (S || (I(true), R(true)), false) : S ? (x(false), false) : void(E && null != v ? D(f, p) : x(true)), [S, E, v, x, D, f, p]),
+    }, [x, g, b, A, _, f, p]),
+    U = r.useCallback(e => e.currentTarget !== e.target ? (I || (S(true), R(true)), false) : I ? (x(false), false) : void(E && null != A ? D(f, p) : x(true)), [I, E, A, x, D, f, p]),
     G = r.useCallback(e => {
       if (e.target !== e.currentTarget) {
         if (e.currentTarget.contains(e.relatedTarget)) returnfalse;
-        I(false)
+        S(false)
       }
     }, []),
     V = r.useMemo(() => Math.max(...n), [n]),
@@ -147,12 +147,12 @@ function f(e) {
       role: "grid",
       "aria-rowcount": n.length,
       "aria-colcount": V,
-      tabIndex: S && E ? false : 0,
+      tabIndex: I && E ? false : 0,
       "data-ref-id": t,
       onKeyDown: k,
       onFocus: U,
       onBlur: G
-    }), [n.length, V, S, E, t, k, U, G]),
+    }), [n.length, V, I, E, t, k, U, G]),
     B = r.useCallback((e, n) => {
       let r = {
         role: "gridcell",
@@ -193,26 +193,26 @@ function p(e) {
   } = e, g = r.useCallback((e, t) => {
     let n = (0, i.A)(e, t);
     return null != _ && _(e, n, t), n
-  }, [_]), [E, b] = r.useReducer(g, {
+  }, [_]), [E, y] = r.useReducer(g, {
     focusedX: a,
     focusedY: o,
     columnCounts: n
   }), {
-    columnCounts: y,
+    columnCounts: b,
     focusedX: O,
-    focusedY: A
-  } = E, [v] = r.useState(() => (0, s.nF)(b, 16));
+    focusedY: v
+  } = E, [A] = r.useState(() => (0, s.nF)(y, 16));
   return r.useEffect(() => {
-    b({
+    y({
       type: i.n.UPDATE_COLUMN_COUNTS,
       columnCounts: n
     })
   }, [n]), f({
     navId: t,
-    columnCounts: y,
+    columnCounts: b,
     focusedX: O,
-    focusedY: A,
-    dispatch: v,
+    focusedY: v,
+    dispatch: A,
     onSelect: l,
     prepareFocus: c,
     getNewFocusPosition: u,

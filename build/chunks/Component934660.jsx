@@ -19,15 +19,15 @@ function d(e) {
     onChangeRule: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.sp,
+    className: c.sp,
     children: [(0, r.jsx)(s.A, {
       step: 1,
-      header: c.intl.string(c.t["1YgPj/"])
+      header: o.intl.string(o.t["1YgPj/"])
     }), (0, r.jsx)(a.A, {
       type: a.A.Type.ARROW_DOWN
     }), (0, r.jsx)(s.A, {
       step: 2,
-      header: c.intl.string(c.t["18TOiQ"]),
+      header: o.intl.string(o.t["18TOiQ"]),
       children: (0, r.jsx)(i.A, {
         rule: t,
         onChangeRule: n
@@ -36,7 +36,7 @@ function d(e) {
       type: a.A.Type.CROSS
     }), (0, r.jsx)(s.A, {
       step: 3,
-      header: c.intl.string(c.t.eq3gjh),
+      header: o.intl.string(o.t.eq3gjh),
       children: (0, r.jsx)(l.A, {
         rule: t,
         onChangeRule: n

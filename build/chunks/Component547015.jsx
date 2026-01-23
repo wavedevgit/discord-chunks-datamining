@@ -1,7 +1,7 @@
 /** Chunk was on 94503 **/
 /** chunk id: 547015, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => G
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,42 +26,42 @@ var Chunk627968 = require("./627968.js"),
   Chunk586387 = require("./586387.jsx"),
   Chunk12999 = require("./12999.js");
 
-function b(e) {
+function G(e) {
   let {
     userId: t,
     guildId: n,
     onClose: a,
-    className: b,
-    infoPanelClassName: G,
-    style: R,
-    moderatorReportId: D
-  } = e, L = (0, N.q)(n), x = (0, s.bG)([O.default], () => O.default.getUser(t), [t]), C = (0, s.bG)([I.Ay], () => I.Ay.getMember(n, t), [n, t]), [M, v] = r.useState(null == x || null == C), j = (0, u.A)(C), U = r.useRef(null), {
+    className: G,
+    infoPanelClassName: R,
+    style: D,
+    moderatorReportId: C
+  } = e, L = (0, N.q)(n), b = (0, s.bG)([m.default], () => m.default.getUser(t), [t]), x = (0, s.bG)([O.Ay], () => O.Ay.getMember(n, t), [n, t]), [M, v] = r.useState(null == b || null == x), j = (0, c.A)(x), U = r.useRef(null), {
     analyticsLocations: y
-  } = (0, g.Ay)(_.A.GUILD_MEMBER_MOD_VIEW), P = (0, T.Ay)(t, n), k = (0, E.Ay)();
+  } = (0, g.Ay)(_.A.GUILD_MEMBER_MOD_VIEW), k = (0, T.Ay)(t, n), P = (0, E.Ay)();
   return (r.useEffect(() => {
     L || a()
   }, [L, a]), r.useEffect(() => {
-    null == j || null != C || M || a()
-  }, [M, C, a, j]), r.useEffect(() => {
-    null != x && null != C && v(false)
-  }, [x, C]), r.useEffect(() => {
-    let e = null == C;
+    null == j || null != x || M || a()
+  }, [M, x, a, j]), r.useEffect(() => {
+    null != b && null != x && v(false)
+  }, [b, x]), r.useEffect(() => {
+    let e = null == x;
     return !M && e && (U.current = window.setTimeout(a, 500)), () => {
       null != U.current && window.clearTimeout(U.current)
     }
-  }, [M, C, a]), (0, d.E)({
+  }, [M, x, a]), (0, d.E)({
     [n]: [t]
   }, "GuildMemberModViewSidebar"), r.useEffect(() => {
     !async function() {
-      let e = [c.A.requestMembersById(n, [t]), (0, A.jo)(n, [t]), (0, f.A)(t, true, {
+      let e = [u.A.requestMembersById(n, [t]), (0, A.jo)(n, [t]), (0, h.A)(t, true, {
         guildId: n,
         dispatchWait: true
       })];
       await Promise.all(e), v(false)
     }()
-  }, [n, t]), L) ? M || null == x || null == C ? (0, l.jsx)("div", {
-    className: i()(p.so, p.g4, b),
-    style: R,
+  }, [n, t]), L) ? M || null == b || null == x ? (0, l.jsx)("div", {
+    className: i()(S.so, S.g4, G),
+    style: D,
     children: (0, l.jsx)(o.y$y, {
       animated: true,
       type: M ? o.y$y.Type.SPINNING_CIRCLE : o.y$y.Type.CHASING_DOTS
@@ -69,27 +69,27 @@ function b(e) {
   }) : (0, l.jsx)(g.f5, {
     value: y,
     children: (0, l.jsx)("div", {
-      className: i()(p.so, b),
-      style: R,
-      children: (0, l.jsx)(h.A, {
-        user: x,
-        displayProfile: P,
+      className: i()(S.so, G),
+      style: D,
+      children: (0, l.jsx)(I.A, {
+        user: b,
+        displayProfile: k,
         themeType: null,
-        themeOverride: k,
+        themeOverride: P,
         forceShowPremium: true,
-        className: p.a2,
+        className: S.a2,
         children: (0, l.jsxs)("div", {
-          className: p.WH,
-          children: [(0, l.jsx)(S.Ay, {
+          className: S.WH,
+          children: [(0, l.jsx)(p.Ay, {
             userId: t,
             guildId: n,
             onClose: a,
-            moderatorReportId: D
-          }), (0, l.jsx)(m.A, {
+            moderatorReportId: C
+          }), (0, l.jsx)(f.A, {
             userId: t,
             guildId: n,
             onClose: a,
-            className: G
+            className: R
           })]
         })
       })

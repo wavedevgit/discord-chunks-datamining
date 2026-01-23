@@ -16,7 +16,7 @@ require.d(exports, {
   o4: () => J,
   q6: () => Q,
   s7: () => P,
-  vI: () => b,
+  vI: () => y,
   xT: () => D,
   z: () => L
 }), require("./747238.js"), require("./896048.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
@@ -70,14 +70,14 @@ function g(e, t) {
   }), e
 }
 let E = /^data:/,
-  b = (r = require("./820883.js").A).DEFAULT_AVATARS,
-  y = r.DEFAULT_PROVISIONAL_AVATARS;
+  y = (r = require("./820883.js").A).DEFAULT_AVATARS,
+  b = r.DEFAULT_PROVISIONAL_AVATARS;
 r.DEFAULT_GROUP_DM_AVATARS;
 let O = r.canUseWebp(),
-  A = 5,
-  v = 360,
-  S = 1096,
-  I = (0, Chunk723702.isAndroid)();
+  v = 5,
+  A = 360,
+  I = 1096,
+  S = (0, Chunk723702.isAndroid)();
 
 function T(e) {
   let t, {
@@ -107,7 +107,7 @@ function C(e) {
     animated: r,
     size: i,
     forcePNG: a = false
-  } = e, s = O ? "webp" : "png", o = O ? "webp" : "gif", c = a ? "png" : r ? o : s, u = O && r ? "&animated=true" : "", d = "size=".concat((0, l.kr)(i * (0, l.mZ)(), I)), p = false;
+  } = e, s = O ? "webp" : "png", o = O ? "webp" : "gif", c = a ? "png" : r ? o : s, u = O && r ? "&animated=true" : "", d = "size=".concat((0, l.kr)(i * (0, l.mZ)(), S)), p = false;
   try {
     let {
       getForceSdrEmojisStickersConfig: e
@@ -126,10 +126,10 @@ function C(e) {
 
 function N(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    r = n ? y : b;
+    r = n ? b : y;
   if (null == e && null == t) return r[0];
   let i = (0, c.cG)(t, 0);
-  return i > 0 ? r[i % A] : null != e ? r[a()(e).shiftRight(22).mod(r.length).toJSNumber()] : r[0]
+  return i > 0 ? r[i % v] : null != e ? r[a()(e).shiftRight(22).mod(r.length).toJSNumber()] : r[0]
 }
 
 function R(e) {
@@ -142,7 +142,7 @@ function R(e) {
   if (a) {
     let e = r.BOT_AVATARS[n];
     if (e) return e;
-    if (null == n && "0000" === i) return b[0]
+    if (null == n && "0000" === i) return y[0]
   }
   return T({
     endpoint: f.Rsh.AVATAR,
@@ -283,7 +283,7 @@ function G(e) {
     } = e,
     i = arguments.length > 1 && true !== arguments[1] && arguments[1];
   if (null == r) return null;
-  let a = (0, l.kr)(v * (0, l.mZ)()),
+  let a = (0, l.kr)(A * (0, l.mZ)()),
     o = O ? "webp" : "jpg",
     c = i && Z(r) ? er(O) : o,
     u = window.GLOBAL_ENV.CDN_HOST;
@@ -300,7 +300,7 @@ function V(e) {
     homeHeader: r
   } = e;
   if (null == r) return null;
-  let i = (0, l.kr)(S * (0, l.mZ)()),
+  let i = (0, l.kr)(I * (0, l.mZ)()),
     a = window.GLOBAL_ENV.CDN_HOST;
   return (null != a ? "https://".concat(a, "/home-headers/").concat(n, "/").concat(r, ".png") : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.Rsh.GUILD_HOME_HEADER(n, r)) + "?size=".concat(i)
 }

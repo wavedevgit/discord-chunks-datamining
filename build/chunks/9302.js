@@ -10,14 +10,14 @@ require.r(exports), require.d(exports, {
   OVERLAY_VERSION: () => u,
   UNSET_PID: () => h,
   getPID: () => g,
-  getRPCAuthToken: () => y,
-  isValidGamePID: () => b,
+  getRPCAuthToken: () => b,
+  isValidGamePID: () => y,
   log: () => O,
-  setOutOfProcessSupport: () => v,
+  setOutOfProcessSupport: () => A,
   setPID: () => E,
-  supportsLegacy: () => I,
-  supportsOutOfProcess: () => S,
-  validResolution: () => A
+  supportsLegacy: () => S,
+  supportsOutOfProcess: () => I,
+  validResolution: () => v
 }), require("./896048.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js"), require("./747238.js");
 var Chunk719129 = require("./719129.js"),
   Chunk996308 = require("./996308.js"),
@@ -50,11 +50,11 @@ function E(e) {
   r = e
 }
 
-function b(e) {
+function y(e) {
   return null != e && 0 !== e && e !== h
 }
 
-function y() {
+function b() {
   return new URLSearchParams(window.location.search).get("rpc_auth_token")
 }
 
@@ -62,24 +62,24 @@ function O(e) {
   (0, a.tN)({
     type: l.kGV.LOG_MESSAGES,
     pid: g(),
-    token: y(),
+    token: b(),
     payload: e
   })
 }
 
-function A(e) {
+function v(e) {
   return !s.isPlatformEmbedded || e.width >= f.width && e.height >= f.height
 }
 
-function v(e) {
+function A(e) {
   m = e
 }
 
-function S() {
+function I() {
   return m
 }
 
-function I() {
+function S() {
   let e = (0, s.isWindows)() && "arm64" === o.Ay.architecture;
   return c.OX && !e && !(0, i.Zi)()
 }

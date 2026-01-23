@@ -1,7 +1,7 @@
 /** Chunk was on 78870 **/
 /** chunk id: 812136, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  F: () => w
+  F: () => _
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -77,30 +77,30 @@ function v(e) {
   })
 }
 
-function w(e) {
+function _(e) {
   let {
     guild: t
   } = e, r = (0, p.YZ)(t.id, "guild_shop_category_selector"), {
     selectedTab: i,
     setSelectedTab: o,
-    categoryTabs: w,
-    handlePreviewDismiss: P
-  } = (0, f.k)(), _ = "false" === s.w.get(g.Db, "false"), L = (0, l.bG)([a.A], () => a.A.useReducedMotion), S = w.map(e => {
+    categoryTabs: _,
+    handlePreviewDismiss: w
+  } = (0, f.k)(), P = "false" === s.w.get(g.Db, "false"), L = (0, l.bG)([a.A], () => a.A.useReducedMotion), I = _.map(e => {
     switch (e) {
-      case b.B.GUILD_PRODUCTS:
+      case C.B.GUILD_PRODUCTS:
         return (0, n.jsx)(v, {
-          icon: (0, n.jsx)(C.A, {
+          icon: (0, n.jsx)(j.A, {
             width: 20,
             height: 20
           }),
           title: y.intl.string(y.t.odvTUp),
           body: y.intl.string(y.t["0JFpRW"]),
-          selected: i === b.B.GUILD_PRODUCTS,
-          onClick: () => o(b.B.GUILD_PRODUCTS)
+          selected: i === C.B.GUILD_PRODUCTS,
+          onClick: () => o(C.B.GUILD_PRODUCTS)
         }, e);
-      case b.B.GUILD_ROLE_SUBSCRIPTIONS:
+      case C.B.GUILD_ROLE_SUBSCRIPTIONS:
         return (0, n.jsx)(v, {
-          icon: (0, n.jsx)(j.A, {
+          icon: (0, n.jsx)(b.A, {
             width: 20,
             height: 20
           }),
@@ -109,12 +109,12 @@ function w(e) {
             openRoleSubPage: () => (0, u.pX)(h.BVt.CHANNEL(t.id, x.VV.ROLE_SUBSCRIPTIONS))
           }),
           disabled: !r,
-          selected: i === b.B.GUILD_ROLE_SUBSCRIPTIONS,
-          onClick: () => o(b.B.GUILD_ROLE_SUBSCRIPTIONS)
+          selected: i === C.B.GUILD_ROLE_SUBSCRIPTIONS,
+          onClick: () => o(C.B.GUILD_ROLE_SUBSCRIPTIONS)
         }, e);
-      case b.B.GUILD_PRODUCTS_PREVIEW:
+      case C.B.GUILD_PRODUCTS_PREVIEW:
         return (0, n.jsx)(v, {
-          icon: _ ? (0, n.jsx)("img", {
+          icon: P ? (0, n.jsx)("img", {
             src: L ? (0, d.n)("server_products/storefront/question-mark.png") : (0, d.n)("server_products/storefront/question-mark.gif"),
             className: m.kz,
             alt: ""
@@ -126,12 +126,12 @@ function w(e) {
           }),
           title: y.intl.string(y.t.odvTUp),
           body: y.intl.string(y.t["827i8I"]),
-          selected: i === b.B.GUILD_PRODUCTS_PREVIEW,
+          selected: i === C.B.GUILD_PRODUCTS_PREVIEW,
           onClick: () => {
-            o(b.B.GUILD_PRODUCTS_PREVIEW), s.w.set(g.Db, "true")
+            o(C.B.GUILD_PRODUCTS_PREVIEW), s.w.set(g.Db, "true")
           },
-          onPreviewDismiss: P,
-          isNew: _
+          onPreviewDismiss: w,
+          isNew: P
         }, e);
       default:
         return null
@@ -149,8 +149,8 @@ function w(e) {
       className: m.uW,
       children: [(0, n.jsx)("div", {
         className: m.vR,
-        children: S
-      }), i === b.B.GUILD_PRODUCTS && (0, n.jsx)(O.A, {})]
+        children: I
+      }), i === C.B.GUILD_PRODUCTS && (0, n.jsx)(O.A, {})]
     })]
   })
 }

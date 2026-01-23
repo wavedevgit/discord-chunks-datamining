@@ -44,19 +44,19 @@ let I = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     showTransferOwnershipItem: w
   } = e, {
     analyticsLocations: G
-  } = (0, A.Ay)(d.A.CONTEXT_MENU), R = (0, s.p)(), U = null != (t = null == x ? true : x[0]) ? t : G[0], B = (0, O.$9)(u, {
+  } = (0, A.Ay)(d.A.CONTEXT_MENU), R = (0, s.p)(), U = null != (t = null == x ? true : x[0]) ? t : G[0], B = (0, f.$9)(u, {
     location: U,
     targetUserId: n.id
   }), L = (0, i.bG)([y.A], () => {
     var e;
     return null != (e = y.A.getUserVoiceChannelId(u, n.id)) ? e : true
   }, [u, n.id]), k = l.useCallback(() => {
-    B(O.Nj.COPY_ID)
+    B(f.Nj.COPY_ID)
   }, [B]), V = (0, i.bG)([g.Ay], () => g.Ay.isMember(u, n.id), [u, n.id]), F = (0, S.A)({
     userId: n.id,
     guildId: u,
     sourceAnalyticsLocations: x
-  }), H = (0, m.A)(n.id, P), K = (0, f.A)({
+  }), H = (0, m.A)(n.id, P), K = (0, O.A)({
     guildId: u,
     userId: n.id,
     analyticsLocation: null != T ? T : R.location,

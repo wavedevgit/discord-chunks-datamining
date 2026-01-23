@@ -2,16 +2,16 @@
 /** chunk id: 594832, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B5: () => A,
-  Q8: () => y,
-  Zh: () => b,
+  B5: () => v,
+  Q8: () => b,
+  Zh: () => y,
   eT: () => w,
-  fw: () => S,
-  mQ: () => v,
+  fw: () => I,
+  mQ: () => A,
   mk: () => P,
   pE: () => x,
   pl: () => E,
-  rJ: () => I,
+  rJ: () => S,
   tA: () => D,
   uS: () => O
 }), require("./896048.js"), require("./321073.js");
@@ -31,19 +31,19 @@ var Chunk64700 = require("./64700.js"),
   Chunk652215 = require("./652215.js"),
   Chunk758836 = require("./758836.js");
 let E = 6,
-  b = 350,
-  y = 16;
+  y = 350,
+  b = 16;
 var O = function(e) {
     return e.WISHLIST = "wishlist", e.POPULAR = "popular", e
   }({}),
-  A = function(e) {
+  v = function(e) {
     return e.USER_PROFILE = "user_profile", e.POPOUT = "popout", e
   }({}),
-  v = function(e) {
+  A = function(e) {
     return e.DM_SIDE_PANEL = "dm_side_panel", e.POPOUT = "popout", e.WISHLIST_BANNER = "wishlist_banner", e
   }({});
 
-function S(e) {
+function I(e) {
   let {
     wishlistId: t,
     userId: n,
@@ -61,7 +61,7 @@ function S(e) {
   }
 }
 
-function I(e, t) {
+function S(e, t) {
   return (0, i.bG)([_.A], () => null != e && _.A.hasSkuId(e, t))
 }
 
@@ -133,7 +133,7 @@ function w(e) {
     wishlist: o,
     isFetching: l,
     error: u
-  } = S({
+  } = I({
     wishlistId: s,
     source: a
   }), d = r.useMemo(() => null != o && o.items.filter(e => true !== e.isOwned).length >= n, [o, n]), {
@@ -218,7 +218,7 @@ function D(e) {
     location: t
   }), f = (0, i.bG)([c.A], () => (null == a ? true : a.id) == null ? null : c.A.getFirstWishlistId(a.id)), {
     wishlist: p
-  } = S({
+  } = I({
     wishlistId: u && null != f && n && null != a ? f : null,
     userId: null == a ? true : a.id
   });
@@ -243,7 +243,7 @@ function L(e) {
     }), [e]);
   return r.useEffect(() => {
     null != e && null == n && null != t && null == n && (0, u.A)(t.id, t.getAvatarURL(null, 80))
-  }, [t, e, n]), S({
+  }, [t, e, n]), I({
     wishlistId: a,
     userId: e
   })

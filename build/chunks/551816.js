@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Tu: () => g,
-  z8: () => A
+  z8: () => v
 }), require("./321073.js"), require("./638769.js"), require("./896048.js");
 var Chunk33851 = require("./33851.js"),
   i = require.n(Chunk33851),
@@ -63,20 +63,20 @@ function E(e) {
   return e.isIncludedInSearchResults && t.push("INCLUDED_IN_SEARCH_RESULTS"), t
 }
 
-function b(e) {
+function y(e) {
   return e.sort
 }
 
-function y() {
-  return new a.J(E, b)
+function b() {
+  return new a.J(E, y)
 }
 
 function O(e) {
   return null != e && new Date(e).getTime() >= m - c.tX
 }
-class A {
+class v {
   reset() {
-    this._membersMap.clear(), this._membersMap = y(), this.resetNewMemberTimestamp()
+    this._membersMap.clear(), this._membersMap = b(), this.resetNewMemberTimestamp()
   }
   resetNewMemberTimestamp() {
     this.newMemberTimestamp = Date.now()
@@ -95,7 +95,7 @@ class A {
         joinSourceApplicationId: g,
         joinSourceChannelId: E
       } = this._computeMemberSupplementals(e.userId, e.unusualDMActivityUntil),
-      b = o.default.getUser(e.userId);
+      y = o.default.getUser(e.userId);
     return p(h(p({
       hasUnusualDmActivity: a,
       hasUnusualAccountActivity: s,
@@ -108,7 +108,7 @@ class A {
     }, e), {
       isCurrentGuildMemberByTimestamp: i <= this.newMemberTimestamp,
       isIncludedInSearchResults: false,
-      user: b,
+      user: y,
       sort: (0, d.R)(e, null != (n = t.selectedSort) ? n : c.mF.ORDER_BY_UNSPECIFIED),
       joinedAtTimestamp: i
     }), r)
@@ -177,6 +177,6 @@ class A {
     return this._membersMap.version
   }
   constructor(e) {
-    f(this, "guildId", true), f(this, "_membersMap", true), f(this, "newMemberTimestamp", Date.now()), this.guildId = e, this._membersMap = y()
+    f(this, "guildId", true), f(this, "_membersMap", true), f(this, "newMemberTimestamp", Date.now()), this.guildId = e, this._membersMap = b()
   }
 }

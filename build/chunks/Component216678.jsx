@@ -81,8 +81,8 @@ function m(e) {
     analyticsLocations: m,
     analyticsLocationObject: g,
     contextKey: E,
-    isGift: b = false
-  } = e, y = false, O = (0, i.A)();
+    isGift: y = false
+  } = e, b = false, O = (0, i.A)();
   (0, a.mMO)(async () => {
     let {
       default: e
@@ -97,27 +97,27 @@ function m(e) {
         skuId: u,
         analyticsLocations: m,
         analyticsLocationObject: g,
-        isGift: b,
+        isGift: y,
         onClose: e => {
           i(), null == f || f(e)
         },
         onComplete: e => {
-          y = true, null == h || h(e)
+          b = true, null == h || h(e)
         }
       }))
     }
   }, {
     contextKey: E,
     onCloseCallback: () => {
-      y || l.default.track(c.HAw.PAYMENT_FLOW_CANCELED, {
+      b || l.default.track(c.HAw.PAYMENT_FLOW_CANCELED, {
         load_id: O,
         payment_type: c.frM[c.VVm.ONE_TIME],
         location: g,
-        is_gift: b,
+        is_gift: y,
         sku_id: u,
         application_id: t,
         location_stack: m
-      }), (0, s.ET)(), (0, o.z)(), null == f || f(y)
+      }), (0, s.ET)(), (0, o.z)(), null == f || f(b)
     },
     onCloseRequest: c.tEg
   })

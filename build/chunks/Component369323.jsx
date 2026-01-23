@@ -1,7 +1,7 @@
 /** Chunk was on 71256 **/
-/** chunk id: 369323, original params: e,t,a (module,exports,require) **/
+/** chunk id: 369323, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => u
+  default: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -11,7 +11,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk400492 = require("./400492.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk654923 = require("./654923.js");
-let c = [{
+let u = [{
   preBold: "That's pretty...",
   bold: "fly!"
 }, {
@@ -24,36 +24,36 @@ let c = [{
   postBold: "lievable!"
 }];
 
-function b(e) {
+function c(t) {
   let {
-    punConfig: t
-  } = e;
-  return (0, n.jsxs)(n.Fragment, {
-    children: [t.preBold, (0, n.jsx)("b", {
-      children: (0, n.jsx)("i", {
-        children: t.bold
+    punConfig: e
+  } = t;
+  return (0, l.jsxs)(l.Fragment, {
+    children: [e.preBold, (0, l.jsx)("b", {
+      children: (0, l.jsx)("i", {
+        children: e.bold
       })
-    }), t.postBold]
+    }), e.postBold]
   })
 }
 
-function u(e) {
+function b(t) {
   let {
-    transitionState: t,
-    onClose: a,
-    asanaTask: u
-  } = e;
+    transitionState: e,
+    onClose: n,
+    asanaTask: b
+  } = t;
   i.useEffect(() => {
     (0, r.Ak)("success", .1)
   }, []);
-  let h = i.useRef(c[Math.floor(Math.random() * c.length)]).current;
-  return (0, n.jsx)(l.EOs, {
+  let m = i.useRef(u[Math.floor(Math.random() * u.length)]).current;
+  return (0, l.jsx)(o.EOs, {
     "data-migration-pending": true,
     className: p.Nk,
-    transitionState: t,
-    "aria-label": o.intl.string(o.t.mCCdwi),
+    transitionState: e,
+    "aria-label": d.intl.string(d.t.mCCdwi),
     parentComponent: "BugReporterSubmitModal",
-    children: (0, n.jsxs)(l.$mQ, {
+    children: (0, l.jsxs)(o.$mQ, {
       "data-migration-pending": true,
       style: {
         overflow: "hidden",
@@ -61,20 +61,20 @@ function u(e) {
       },
       className: p.jE,
       paddingFix: false,
-      children: [(0, n.jsx)(l.s_y, {
+      children: [(0, l.jsx)(o.s_y, {
         "data-migration-pending": true,
         onClick: () => {
-          null == a || a()
+          null == n || n()
         },
         className: p.b
-      }), (0, n.jsxs)(l.Text, {
+      }), (0, l.jsxs)(o.Text, {
         className: p.KP,
         variant: "text-sm/normal",
-        children: ["Thanks for submitting a ", (0, n.jsx)(d.A, {
-          onClick: () => (0, s.A)(u.permalink_url),
+        children: ["Thanks for submitting a ", (0, l.jsx)(s.A, {
+          onClick: () => (0, a.A)(b.permalink_url),
           children: "bug"
-        }), "!", (0, n.jsx)("br", {}), (0, n.jsx)(b, {
-          punConfig: h
+        }), "!", (0, l.jsx)("br", {}), (0, l.jsx)(c, {
+          punConfig: m
         })]
       })]
     })

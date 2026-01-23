@@ -26,10 +26,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk136267 = require("./136267.js");
 let Chunk843020 = require("./843020.js");
 
-function _() {
+function j() {
   let e, t = (0, i.zy)(),
-    [r, d] = n.useState(() => {
-      if (t.pathname === j.BVt.ACTIVATE_HANDOFF) {
+    [r, d] = a.useState(() => {
+      if (t.pathname === y.BVt.ACTIVATE_HANDOFF) {
         let {
           user_code: e
         } = s.parse(window.location.search);
@@ -43,28 +43,28 @@ function _() {
         usePrefilledCode: true
       }
     }),
-    _ = (0, l.bG)([f.A], () => f.A.hasLoadedExperiments);
-  n.useEffect(() => {
-    h.default.isAuthenticated() && !_ && c.A.getExperiments()
-  }, [_]), (0, o.A)(), (0, x.K)(r);
-  let C = n.useCallback(() => {
+    j = (0, l.bG)([p.A], () => p.A.hasLoadedExperiments);
+  a.useEffect(() => {
+    h.default.isAuthenticated() && !j && o.A.getExperiments()
+  }, [j]), (0, c.A)(), (0, x.K)(r);
+  let N = a.useCallback(() => {
       d({
         type: "user-code-input"
       })
     }, [d]),
-    E = n.useCallback(e => {
+    E = a.useCallback(e => {
       d({
         type: "authorization",
         userCodeData: e
       })
     }, [d]),
-    A = n.useCallback(e => {
+    O = a.useCallback(e => {
       d({
         type: "success",
         userCodeData: e
       })
     }, [d]),
-    O = n.useCallback(e => {
+    A = a.useCallback(e => {
       d({
         type: "error",
         userCodeData: e
@@ -73,54 +73,54 @@ function _() {
     I = true;
   switch (r.type) {
     case "handoff":
-      e = (0, a.jsx)(g.e, {
+      e = (0, n.jsx)(_.e, {
         code: r.code
       }), I = false;
       break;
     case "user-code-input":
-      e = (0, a.jsx)(v.H, {
+      e = (0, n.jsx)(v.H, {
         usePrefilledCode: r.usePrefilledCode || false,
         onUserCodeAccepted: E
       });
       break;
     case "authorization":
-      e = (0, a.jsx)(b.F, {
+      e = (0, n.jsx)(m.F, {
         data: r.userCodeData,
-        onDenied: C,
-        onError: O,
-        onSuccess: A
+        onDenied: N,
+        onError: A,
+        onSuccess: O
       }), I = false;
       break;
     case "success":
-      e = (0, a.jsx)(y.r, {
-        onComplete: () => (0, p.pX)(j.BVt.ME),
+      e = (0, n.jsx)(b.r, {
+        onComplete: () => (0, f.pX)(y.BVt.ME),
         data: r.userCodeData
       });
       break;
     case "error":
-      e = (0, a.jsx)(m.S, {
-        onTryAgain: C
+      e = (0, n.jsx)(g.S, {
+        onTryAgain: N
       });
       break;
     default:
       e = null
   }
-  return (0, a.jsxs)("div", {
-    className: w.fY,
-    children: [(0, a.jsx)("img", {
-      className: w.xX,
-      src: N,
+  return (0, n.jsxs)("div", {
+    className: C.fY,
+    children: [(0, n.jsx)("img", {
+      className: C.xX,
+      src: w,
       alt: ""
-    }), (0, a.jsx)(u.A, {
+    }), (0, n.jsx)(u.A, {
       show: true,
-      className: w.wm
-    }), I ? (0, a.jsx)("div", {
-      className: w.Qs,
+      className: C.wm
+    }), I ? (0, n.jsx)("div", {
+      className: C.Qs,
       children: e
     }) : e]
   })
 }
-let C = (0, Chunk114716.C)(_),
+let N = (0, Chunk114716.C)(j),
   E = function() {
-    return (0, i.zy)().pathname !== j.BVt.ACTIVATE_HANDOFF ? (0, a.jsx)(C, {}) : (0, a.jsx)(_, {})
+    return (0, i.zy)().pathname !== y.BVt.ACTIVATE_HANDOFF ? (0, n.jsx)(N, {}) : (0, n.jsx)(j, {})
   }

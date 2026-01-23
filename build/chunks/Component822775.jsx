@@ -41,19 +41,19 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = y(e, t), Object.getOwnPropertySymbols)
+  if (a = b(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -66,14 +66,14 @@ function O(e) {
     user: t,
     guildId: n,
     fullWidth: g,
-    appContext: y,
+    appContext: b,
     onClose: O
-  } = e, A = (0, a.bG)([c.default], () => c.default.getId() === t.id), v = (0, a.bG)([u.A], () => null != n ? u.A.getGuild(n) : null), S = (0, a.bG)([p.A], () => p.A.hasUnsavedChanges()), I = (0, l.A)({
-    guild: v
+  } = e, v = (0, a.bG)([c.default], () => c.default.getId() === t.id), A = (0, a.bG)([u.A], () => null != n ? u.A.getGuild(n) : null), I = (0, a.bG)([p.A], () => p.A.hasUnsavedChanges()), S = (0, l.A)({
+    guild: A
   }), T = (0, l.A)({}), {
     trackUserProfileAction: C
   } = (0, d.NJ)(), N = i.useRef(null);
-  return A ? null == v ? (0, r.jsx)(_.FD, {
+  return v ? null == A ? (0, r.jsx)(_.FD, {
     action: "EDIT_PROFILE",
     text: h.intl.string(h.t.s5vZlQ),
     icon: s.R2l,
@@ -81,7 +81,7 @@ function O(e) {
     fullWidth: g,
     variant: "primary",
     onClick: () => {
-      S ? f.A.notifyUnsavedWidgets() : (null == O || O(), T(), (0, o.A)(y))
+      I ? f.A.notifyUnsavedWidgets() : (null == O || O(), T(), (0, o.A)(b))
     }
   }) : (0, r.jsx)(s.YNO, {
     targetElementRef: N,
@@ -102,7 +102,7 @@ function O(e) {
           action: () => {
             C({
               action: "EDIT_GUILD_PROFILE"
-            }), null == O || O(), I(), (0, o.A)(y)
+            }), null == O || O(), S(), (0, o.A)(b)
           }
         }), (0, r.jsx)(s.Drp, {
           id: "edit-main-profile",
@@ -111,7 +111,7 @@ function O(e) {
           action: () => {
             C({
               action: "EDIT_PROFILE"
-            }), null == O || O(), T(), (0, o.A)(y)
+            }), null == O || O(), T(), (0, o.A)(b)
           }
         })]
       })
@@ -119,7 +119,7 @@ function O(e) {
     children: e => {
       let {
         onClick: t
-      } = e, n = b(e, ["onClick"]);
+      } = e, n = y(e, ["onClick"]);
       return (0, r.jsx)(_.FD, E({
         buttonRef: N,
         text: h.intl.string(h.t.s5vZlQ),
@@ -128,7 +128,7 @@ function O(e) {
         fullWidth: g,
         variant: "primary",
         onClick: () => {
-          S ? f.A.notifyUnsavedWidgets() : null == t || t()
+          I ? f.A.notifyUnsavedWidgets() : null == t || t()
         }
       }, n))
     }

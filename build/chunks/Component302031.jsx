@@ -30,7 +30,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,14 +55,14 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var A = function(e) {
+var v = function(e) {
   return e.TEXT = "text", e.ATTACHMENT = "attachment", e.EMBED = "embed", e
-}(A || {});
-let v = e => {
+}(v || {});
+let A = e => {
     let {
       className: t
     } = e;
@@ -71,7 +71,7 @@ let v = e => {
       children: m.intl.string(m.t["F+x38C"])
     })
   },
-  S = e => {
+  I = e => {
     let {
       className: t,
       isSingleMosaicItem: n,
@@ -92,7 +92,7 @@ let v = e => {
       })
     })
   },
-  I = e => {
+  S = e => {
     let {
       reason: t = _.Oc.SPOILER,
       className: n,
@@ -100,18 +100,18 @@ let v = e => {
     } = e;
     switch (t) {
       case _.Oc.SPOILER:
-        return (0, r.jsx)(v, {
+        return (0, r.jsx)(A, {
           className: n
         });
       case _.Oc.EXPLICIT_CONTENT:
       case _.Oc.GORE_CONTENT:
       case _.Oc.SELF_HARM_CONTENT:
-        return (0, r.jsx)(S, {
+        return (0, r.jsx)(I, {
           isSingleMosaicItem: i,
           className: n
         });
       case _.Oc.POTENTIAL_EXPLICIT_CONTENT:
-        return (0, r.jsx)(S, {
+        return (0, r.jsx)(I, {
           isSingleMosaicItem: i,
           className: n,
           obscureOnly: true
@@ -178,7 +178,7 @@ class N extends Chunk64700.PureComponent {
           }),
           role: h ? "presentation" : "button",
           tabIndex: h ? false : 0,
-          children: [h || t ? null : (0, r.jsx)(I, {
+          children: [h || t ? null : (0, r.jsx)(S, {
             reason: o,
             isSingleMosaicItem: l
           }), (0, r.jsx)("div", {
@@ -202,7 +202,7 @@ class N extends Chunk64700.PureComponent {
           }),
           role: h ? "presentation" : "button",
           tabIndex: h ? false : 0,
-          children: [h || t ? null : (0, r.jsx)(I, {
+          children: [h || t ? null : (0, r.jsx)(S, {
             reason: o,
             isSingleMosaicItem: l
           }), (0, r.jsx)("div", {
@@ -239,7 +239,7 @@ class N extends Chunk64700.PureComponent {
           }),
           role: f ? "presentation" : "button",
           tabIndex: f ? false : 0,
-          children: [f ? null : (0, r.jsx)(I, {
+          children: [f ? null : (0, r.jsx)(S, {
             reason: o,
             isSingleMosaicItem: i
           }), (0, r.jsx)("div", {
@@ -262,7 +262,7 @@ class N extends Chunk64700.PureComponent {
           style: n,
           role: f ? "presentation" : "button",
           tabIndex: f ? false : 0,
-          children: [f ? null : (0, r.jsx)(I, {
+          children: [f ? null : (0, r.jsx)(S, {
             reason: o,
             className: g.E6
           }), (0, r.jsx)("div", {
@@ -397,10 +397,10 @@ class N extends Chunk64700.PureComponent {
 let R = e => {
   let t = (0, p._R)() && null != e.reason && _.tY.has(e.reason),
     n = (0, f.yM)();
-  return (0, r.jsx)(N, O(b({}, e), {
+  return (0, r.jsx)(N, O(y({}, e), {
     shouldAgeVerify: t,
     isVerifiedTeen: n
   }))
 };
-R.Types = A, R.Reasons = Chunk338717.Oc;
+R.Types = v, R.Reasons = Chunk338717.Oc;
 let w = R

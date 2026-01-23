@@ -10,12 +10,12 @@ var Chunk627968 = require("./627968.js"),
 
 function s() {
   return (0, a.jsx)(l.IpV, {
-    className: r.nd,
+    className: i.nd,
     children: (0, a.jsx)("div", {
       style: {
         padding: "var(--space-8)"
       },
-      children: (0, a.jsx)(i.A, {})
+      children: (0, a.jsx)(r.A, {})
     })
   })
 }

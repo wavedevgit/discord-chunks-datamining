@@ -18,32 +18,32 @@ let d = function(e) {
     activities: n,
     applicationStream: d,
     status: p,
-    user: f,
-    userIgnored: h
+    user: h,
+    userIgnored: g
   } = e, {
-    voiceActivityStatusEnabled: A
+    voiceActivityStatusEnabled: f
   } = (0, i.G)({
     location: "StatusText"
   }), {
-    voiceChannel: g
+    voiceChannel: m
   } = (0, a.A)({
-    userId: null == f ? true : f.id
-  }), m = A ? g : true;
-  return h ? (0, r.jsx)("div", {
+    userId: null == h ? true : h.id
+  }), A = f ? m : true;
+  return g ? (0, r.jsx)("div", {
     className: u.Q,
     children: c.intl.string(c.t.tFY5Zb)
   }) : (0, l.A)({
     activities: n,
     status: p,
     applicationStream: d,
-    voiceChannel: m
+    voiceChannel: A
   }) ? (0, r.jsx)(s.A, {
     textClassName: u.q,
     activities: n,
     applicationStream: d,
-    voiceChannel: m,
+    voiceChannel: A,
     animateEmoji: t,
-    user: f,
+    user: h,
     textSize: "sm"
   }) : (0, r.jsx)("div", {
     className: u.Q,

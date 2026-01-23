@@ -8,13 +8,13 @@ var Chunk562465 = require("./562465.js"),
   Chunk568004 = require("./568004.js"),
   Chunk652215 = require("./652215.js");
 async function r(t, e, s, r) {
-  if (n.A.needsToFetchBuildSize(s)) {
-    a.h.dispatch({
+  if (a.A.needsToFetchBuildSize(s)) {
+    n.h.dispatch({
       type: "APPLICATION_BUILD_SIZE_FETCH_START",
       buildId: s
     });
     try {
-      let n = await l.Bo.post({
+      let a = await l.Bo.post({
         url: i.Rsh.APPLICATION_BUILD_SIZE(t, e, s),
         body: {
           manifest_ids: r
@@ -22,13 +22,13 @@ async function r(t, e, s, r) {
         oldFormErrors: true,
         rejectWithError: true
       });
-      a.h.dispatch({
+      n.h.dispatch({
         type: "APPLICATION_BUILD_SIZE_FETCH_SUCCESS",
         buildId: s,
-        sizeKB: n.body.size_kb
+        sizeKB: a.body.size_kb
       })
     } catch (t) {
-      a.h.dispatch({
+      n.h.dispatch({
         type: "APPLICATION_BUILD_SIZE_FETCH_FAIL",
         buildId: s
       })

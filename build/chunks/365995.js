@@ -1,20 +1,20 @@
 /** Chunk was on 13492 **/
-/** chunk id: 365995, original params: e,t,a (module,exports,require) **/
+/** chunk id: 365995, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  A: () => r
+  A: () => l
 });
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
   Chunk87001 = require("./87001.js"),
   Chunk652215 = require("./652215.js");
 
-function r() {
-  let e = (0, n.bG)([l.A], () => l.A.getWindow(d.MLl.ACTIVITY_POPOUT)),
-    t = c.useMemo(() => null == e ? true : e.window.document, [e]),
-    a = c.useMemo(() => null == t ? true : t.getElementById("app-mount"), [t]);
+function l() {
+  let e = (0, o.bG)([a.A], () => a.A.getWindow(i.MLl.ACTIVITY_POPOUT)),
+    n = r.useMemo(() => null == e ? true : e.window.document, [e]),
+    t = r.useMemo(() => null == n ? true : n.getElementById("app-mount"), [n]);
   return {
     popoutWindow: e,
-    currentDocument: t,
-    rootNode: a
+    currentDocument: n,
+    rootNode: t
   }
 }

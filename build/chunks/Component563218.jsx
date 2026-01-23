@@ -1,7 +1,7 @@
 /** Chunk was on 58652 **/
 /** chunk id: 563218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => v
 }), require("./228524.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,66 +19,66 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk71561 = require("./71561.js");
 
-function v(e) {
+function h(e) {
   let {
     title: t,
     description: n,
-    onButtonClick: a,
-    trackSettingsUpsellsAction: i
-  } = e, [o, d] = r.useState(false);
+    onButtonClick: i,
+    trackSettingsUpsellsAction: a
+  } = e, [o, c] = r.useState(false);
   return (0, s.Ay)(() => {
-    i(p.lJ.SETTINGS_UPSELLS_VIEWED)
-  }), (0, l.jsx)(c.PQ, {
+    a(b.lJ.SETTINGS_UPSELLS_VIEWED)
+  }), (0, l.jsx)(d.PQ, {
     title: t,
     description: n,
     buttonText: o ? g.intl.string(g.t["h+WsPb"]) : g.intl.string(g.t.A8t4Nf),
     buttonDisabled: o,
     onButtonPress: () => {
-      a(), d(true), i(p.lJ.SETTINGS_UPSELLS_APPLY_CLICKED)
+      i(), c(true), a(b.lJ.SETTINGS_UPSELLS_APPLY_CLICKED)
     }
   })
 }
 
-function h(e) {
+function v(e) {
   let {
     settingsUpsells: t,
     channelId: n,
     onModalClose: r,
     reportId: s,
-    reportType: c,
-    reportSubType: h
-  } = e, j = (0, a.bG)([m.A], () => m.A.getChannel(n)), _ = (0, b.MR)(t, null == j ? true : j.type), A = (0, p.Mw)(c, h, s);
-  return 0 === _.length ? null : (0, l.jsxs)("div", {
-    className: f.kL,
-    children: [(0, l.jsx)(i.Heading, {
+    reportType: d,
+    reportSubType: v
+  } = e, f = (0, i.bG)([m.A], () => m.A.getChannel(n)), j = (0, p.MR)(t, null == f ? true : f.type), A = (0, b.Mw)(d, v, s);
+  return 0 === j.length ? null : (0, l.jsxs)("div", {
+    className: _.kL,
+    children: [(0, l.jsx)(a.Heading, {
       variant: "text-sm/semibold",
-      className: f.wx,
+      className: _.wx,
       children: g.intl.string(g.t["1yxTIJ"])
     }), (0, l.jsx)("div", {
-      className: f.uk,
-      children: _.map((e, n) => {
+      className: _.uk,
+      children: j.map((e, n) => {
         let {
           getTitle: r,
-          getDescription: a,
-          onApply: i
+          getDescription: i,
+          onApply: a
         } = e;
-        return (0, l.jsx)(v, {
+        return (0, l.jsx)(h, {
           title: r(),
-          description: a(),
-          onButtonClick: i,
+          description: i(),
+          onButtonClick: a,
           trackSettingsUpsellsAction: A(t[n])
         }, n)
       })
-    }), (0, l.jsx)(i.QWc, {
+    }), (0, l.jsx)(a.QWc, {
       text: g.intl.string(g.t.olebGx),
       onClick: () => {
-        (0, u.openUserSettings)(d.X.CONTENT_AND_SOCIAL_PANEL, {
+        (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_PANEL, {
           section: x.nc_.CONTENT_AND_SOCIAL
         }), r(), o.Ay.trackWithMetadata(x.HAw.IAR_SETTINGS_UPSELLS_ACTION, {
           report_id: s,
-          report_type: c.name,
-          report_subtype: h,
-          action: p.lJ.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED
+          report_type: d.name,
+          report_subtype: v,
+          action: b.lJ.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED
         })
       }
     })]

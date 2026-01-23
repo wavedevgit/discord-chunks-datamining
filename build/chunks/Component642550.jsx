@@ -22,14 +22,14 @@ let _ = Chunk64700.forwardRef(function(e, t) {
     channel: h
   } = e, m = (0, u.ZO)(h), g = i.useRef(null), {
     searchQuery: E,
-    isSearchSuggestion: b
+    isSearchSuggestion: y
   } = (0, c.RQ)(e => ({
     searchQuery: e.searchQuery,
     isSearchSuggestion: e.isSearchSuggestion
-  }), a.x), y = l.bM.useStore(e => e.searchPlaceholder), O = l.bM.useStore(e => e.inspectedExpressionPosition, a.x), A = i.useCallback(e => {
+  }), a.x), b = l.bM.useStore(e => e.searchPlaceholder), O = l.bM.useStore(e => e.inspectedExpressionPosition, a.x), v = i.useCallback(e => {
     var t;
     l.bM.setActiveCategoryIndex("" === e ? 0 : false), l.bM.setInspectedExpressionPosition(0, 0), l.bM.setSearchPlaceholder(null), (0, c.Ri)(e), null == (t = _.current) || t.scrollTo(0)
-  }, [_]), v = i.useCallback(() => {
+  }, [_]), A = i.useCallback(() => {
     (0, c.Ri)("")
   }, []);
   return i.useImperativeHandle(t, () => ({
@@ -38,21 +38,21 @@ let _ = Chunk64700.forwardRef(function(e, t) {
       return null == (e = g.current) ? true : e.focus()
     }
   })), i.useLayoutEffect(() => {
-    if (b) {
+    if (y) {
       var e;
       null == (e = g.current) || e.focus()
     }
-  }, [b]), (0, r.jsx)("div", {
+  }, [y]), (0, r.jsx)("div", {
     className: p.i,
     children: (0, r.jsx)(o.IWV, {
       autoFocus: m,
       disabled: !m,
       query: E,
       ref: g,
-      placeholder: null != y ? y : m ? f.intl.string(f.t.dt5h1C) : f.intl.string(f.t["Pck/4U"]),
-      onClear: v,
+      placeholder: null != b ? b : m ? f.intl.string(f.t.dt5h1C) : f.intl.string(f.t["Pck/4U"]),
+      onClear: A,
       onKeyDown: n,
-      onChange: A,
+      onChange: v,
       inputProps: {
         "aria-haspopup": "grid",
         "aria-controls": d.lq,

@@ -2,27 +2,27 @@
 /** chunk id: 513521, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => c
+  A: () => o
 }), require("./896048.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk397927 = require("./397927.js"),
   Chunk650583 = require("./650583.js"),
   Chunk985018 = require("./985018.jsx");
-let c = e => {
+let o = e => {
   var t, n;
   let {
-    tags: c,
-    tagsLabel: o,
+    tags: o,
+    tagsLabel: c,
     value: d,
     onRemoveTag: u,
-    onAddTag: f,
-    onAddTagError: g,
-    maxTaxLength: b,
-    maxTags: m,
-    disabled: p,
-    placeholder: x
-  } = e, h = function(e, t) {
+    onAddTag: g,
+    onAddTagError: m,
+    maxTaxLength: p,
+    maxTags: f,
+    disabled: b,
+    placeholder: h
+  } = e, x = function(e, t) {
     if (null == e) return {};
     var n, r, i, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -38,26 +38,26 @@ let c = e => {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
     return l
-  }(e, ["tags", "tagsLabel", "value", "onRemoveTag", "onAddTag", "onAddTagError", "maxTaxLength", "maxTags", "disabled", "placeholder"]), [j, O] = i.useState(null != d ? d : ""), y = i.useCallback(() => {
+  }(e, ["tags", "tagsLabel", "value", "onRemoveTag", "onAddTag", "onAddTagError", "maxTaxLength", "maxTags", "disabled", "placeholder"]), [j, _] = i.useState(null != d ? d : ""), O = i.useCallback(() => {
     let e = j.trim();
     if (0 !== e.length) {
-      if (null != m && c.length >= m) {
-        null == g || g(a.intl.string(a.t.Xx7XeB));
+      if (null != f && o.length >= f) {
+        null == m || m(a.intl.string(a.t.Xx7XeB));
         return
       }
-      f(e), O("")
+      g(e), _("")
     }
-  }, [j, m, f, g, c.length]), v = i.useCallback(e => {
+  }, [j, f, g, m, o.length]), v = i.useCallback(e => {
     switch (e.key) {
       case s.dh.BACKSPACE:
-        0 === j.length && c.length > 0 && (e.preventDefault(), e.stopPropagation(), null == u || u(new Set([c[c.length - 1].id])));
+        0 === j.length && o.length > 0 && (e.preventDefault(), e.stopPropagation(), null == u || u(new Set([o[o.length - 1].id])));
         break;
       case s.dh.ENTER:
       case s.dh.TAB:
       case s.dh.COMMA:
-        e.preventDefault(), e.stopPropagation(), y()
+        e.preventDefault(), e.stopPropagation(), O()
     }
-  }, [y, j.length, u, c]);
+  }, [O, j.length, u, o]);
   return (0, r.jsx)(l.ksK, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -78,18 +78,18 @@ let c = e => {
   }({
     leading: {
       type: "tags",
-      label: o,
-      items: c,
+      label: c,
+      items: o,
       onRemove: u
     }
-  }, h), n = n = {
+  }, x), n = n = {
     value: j,
     onKeyDown: v,
-    onChange: O,
-    maxLength: b,
-    disabled: p,
-    onBlur: y,
-    placeholder: x
+    onChange: _,
+    maxLength: p,
+    disabled: b,
+    onBlur: O,
+    placeholder: h
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

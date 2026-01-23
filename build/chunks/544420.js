@@ -77,7 +77,7 @@ function M(e) {
     source: s,
     locationObject: o,
     analyticsLocations: l
-  }).then(e => 0 === e ? null : I.A.waitConnected(t).then(() => Promise.race([I.A.waitSubscribed(t, P.ZE4.ACTIVITY_JOIN)]))).then(() => {
+  }).then(e => 0 === e ? null : S.A.waitConnected(t).then(() => Promise.race([S.A.waitSubscribed(t, P.ZE4.ACTIVITY_JOIN)]))).then(() => {
     c.h.dispatch({
       type: "ACTIVITY_JOIN",
       applicationId: t,
@@ -148,22 +148,22 @@ async function G(e) {
       analyticsLocations: o
     }) ? 0 : Promise.resolve()
   }
-  if (y.A.isConnected(t)) return Promise.resolve();
+  if (b.A.isConnected(t)) return Promise.resolve();
   let l = null;
   if (null == n) {
-    let e = A.A.getActiveLibraryApplication(t);
+    let e = v.A.getActiveLibraryApplication(t);
     n = null != e ? e.branchId : t
   }
-  if (v.A.isLaunchable(t, n)) {
-    let e = v.A.getState(t, n),
-      r = A.A.getActiveLaunchOptionId(t, n);
+  if (A.A.isLaunchable(t, n)) {
+    let e = A.A.getState(t, n),
+      r = v.A.getActiveLaunchOptionId(t, n);
     if (null == e) throw Error("Missing dispatch game when launching");
-    let i = A.A.getLibraryApplication(t, n);
+    let i = v.A.getLibraryApplication(t, n);
     if (null == i) throw Error("Missing library application when launching");
-    l = U(t).then(t => I.A.launchDispatchApplication(e, t, b.default.locale, i.getBranchName(), r))
+    l = U(t).then(t => S.A.launchDispatchApplication(e, t, y.default.locale, i.getBranchName(), r))
   } else {
     let e = d.A.getApplication(t);
-    l = null != e ? I.A.launch(e) : I.A.launchGame(t)
+    l = null != e ? S.A.launch(e) : S.A.launchGame(t)
   }
   let f = Error("game not found");
   return null != l ? (c.h.dispatch({
@@ -196,7 +196,7 @@ let V = {
     c.h.dispatch({
       type: "RUNNING_GAME_ADD_OVERRIDE",
       pid: e
-    }), S.default.track(P.HAw.RUNNING_GAME_OVERRIDE_ADDED, {
+    }), I.default.track(P.HAw.RUNNING_GAME_OVERRIDE_ADDED, {
       game_name: t
     })
   },
@@ -204,7 +204,7 @@ let V = {
     let r = (0, E.Zh)(e),
       i = O.A.getGameByName(r.name);
     if (null != i) {
-      let e = A.A.getActiveLibraryApplication(i.id);
+      let e = v.A.getActiveLibraryApplication(i.id);
       if (null != e) {
         let r = e.getFlags(),
           i = s.Lt(r, P.hM6.OVERLAY_DISABLED);

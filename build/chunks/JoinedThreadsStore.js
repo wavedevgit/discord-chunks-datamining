@@ -58,12 +58,12 @@ function E(e) {
   h = a()(h).reject(t => t.guildId === e).keyBy("threadId").value()
 }
 
-function b(e) {
+function y(e) {
   var t;
-  null == (t = e.threads) || t.forEach(y)
+  null == (t = e.threads) || t.forEach(b)
 }
 
-function y(e) {
+function b(e) {
   c.A_.has(e.type) && null != e.member && (h[e.id] = {
     threadId: e.id,
     guildId: e.guild_id,
@@ -81,13 +81,13 @@ function O(e) {
   }) && (h[e].muted = false, (g = new Set(g)).delete(e))) : (g = new Set(g)).delete(e)
 }
 
-function A(e) {
+function v(e) {
   m.reset(), g = new Set, h = {}, e.guilds.forEach(e => {
-    b(e)
+    y(e)
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     joinedThreads: t
   } = e;
@@ -96,14 +96,14 @@ function v(e) {
   })).keyBy("threadId").value()
 }
 
-function S(e) {
+function I(e) {
   let {
     guild: t
   } = e;
-  E(t.id), b(t)
+  E(t.id), y(t)
 }
 
-function I(e) {
+function S(e) {
   let {
     guild: t
   } = e;
@@ -114,7 +114,7 @@ function T(e) {
   let {
     channel: t
   } = e;
-  y(t)
+  b(t)
 }
 
 function C(e) {
@@ -241,10 +241,10 @@ class x extends(r = Chunk311907.Ay.Store) {
 }
 d(x, "displayName", "JoinedThreadsStore");
 let L = new x(Chunk73153.h, {
-    CONNECTION_OPEN: A,
-    OVERLAY_INITIALIZE: v,
-    GUILD_CREATE: S,
-    GUILD_DELETE: I,
+    CONNECTION_OPEN: v,
+    OVERLAY_INITIALIZE: A,
+    GUILD_CREATE: I,
+    GUILD_DELETE: S,
     THREAD_CREATE: T,
     THREAD_LIST_SYNC: C,
     SEARCH_MESSAGES_SUCCESS: N,

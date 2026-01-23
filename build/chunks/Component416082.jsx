@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 416082, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,10 +14,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk516616 = require("./516616.js"),
   Chunk842503 = require("./842503.js");
-let h = function(e) {
+let g = function(e) {
   let {
     loadId: t
-  } = e, n = o.A.useField("categoryId"), h = (0, l.bG)([c.A], () => c.A.getCategoryName(n)), A = i.useCallback(() => {
+  } = e, n = o.A.useField("categoryId"), g = (0, l.bG)([c.A], () => c.A.getCategoryName(n)), f = i.useCallback(() => {
     o.A.setState({
       categoryId: u.Iq
     }), s.A.loadCategoryResults({
@@ -26,25 +26,25 @@ let h = function(e) {
       query: o.A.getField("fetchedQuery"),
       languageCode: o.A.getField("languageCode")
     })
-  }, [t]), g = n === u.Iq ? d.intl.string(d.t.Ivw1Is) : d.intl.formatToPlainString(d.t["+1WAFb"], {
-    categoryName: h
-  }), m = n === u.Iq ? d.intl.string(d.t.aXvEjd) : d.intl.format(d.t.XLioqn, {
-    onClick: A
+  }, [t]), m = n === u.Iq ? d.intl.string(d.t.Ivw1Is) : d.intl.formatToPlainString(d.t["+1WAFb"], {
+    categoryName: g
+  }), A = n === u.Iq ? d.intl.string(d.t.aXvEjd) : d.intl.format(d.t.XLioqn, {
+    onClick: f
   });
   return (0, r.jsxs)("div", {
     className: p.kL,
     children: [(0, r.jsx)("img", {
       alt: "",
-      src: f,
+      src: h,
       className: p.Sl
     }), (0, r.jsx)(a.Heading, {
       variant: "heading-xl/semibold",
       className: p.wx,
-      children: g
+      children: m
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "text-default",
-      children: m
+      children: A
     })]
   })
 }

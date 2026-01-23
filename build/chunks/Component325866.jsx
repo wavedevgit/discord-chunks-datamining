@@ -22,28 +22,28 @@ function p(e) {
   let {
     userRef: p,
     usernameSuggestionLoading: h = false,
-    oneClickFlow: O = false
-  } = e, y = function(e, t) {
+    oneClickFlow: y = false
+  } = e, O = function(e, t) {
     if (null == e) return {};
-    var r, n, i, s = {};
+    var r, n, i, a = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (i = 0, r = Reflect.ownKeys(e); i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n]);
-      return s
+      for (i = 0, r = Reflect.ownKeys(e); i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
+      return a
     }
-    if (s = function(e, t) {
+    if (a = function(e, t) {
         if (null == e) return {};
         var r, n, i = {},
-          s = Object.getOwnPropertyNames(e);
-        for (n = 0; n < s.length; n++) r = s[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+          a = Object.getOwnPropertyNames(e);
+        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
         return i
       }(e, t), Object.getOwnPropertySymbols)
-      for (i = 0, r = Object.getOwnPropertySymbols(e); i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n]);
-    return s
+      for (i = 0, r = Object.getOwnPropertySymbols(e); i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
+    return a
   }(e, ["userRef", "usernameSuggestionLoading", "oneClickFlow"]), {
-    user: b,
-    editState: S,
+    user: S,
+    editState: b,
     onClose: v
-  } = y, A = (0, o.Ay)(b.id), j = function(e, t, r) {
+  } = O, _ = (0, o.Ay)(S.id), A = function(e, t, r) {
     switch (e) {
       case m.iv.EDIT_USERNAME:
         return {
@@ -74,12 +74,12 @@ function p(e) {
           header: f.intl.string(f.t["a/zCWh"]), subtitle: f.intl.string(f.t.gGz0se)
         }
     }
-  }(S, u.Ay.getName(b), v), [_, x] = (0, a.zhh)(() => ({
+  }(b, u.Ay.getName(S), v), [j, N] = (0, s.zhh)(() => ({
     opacity: 0,
     y: 10
   }));
   return i.useEffect(() => {
-    x({
+    N({
       y: 0,
       opacity: 1,
       from: {
@@ -87,29 +87,29 @@ function p(e) {
         opacity: 0
       }
     })
-  }, [x, S]), (0, n.jsxs)("div", {
+  }, [N, b]), (0, n.jsxs)("div", {
     className: E.xm,
-    children: [(0, n.jsxs)(s.animated.div, {
+    children: [(0, n.jsxs)(a.animated.div, {
       style: {
-        opacity: _.opacity,
-        y: _.y
+        opacity: j.opacity,
+        y: j.y
       },
-      children: [(0, n.jsx)(a.Heading, {
+      children: [(0, n.jsx)(s.Heading, {
         className: E.DD,
         color: "text-strong",
         variant: "heading-xl/extrabold",
-        children: j.header
+        children: A.header
       }), (0, n.jsxs)("div", {
         className: E.VA,
-        children: [(0, n.jsx)(a.Heading, {
+        children: [(0, n.jsx)(s.Heading, {
           color: "text-default",
           variant: "heading-sm/medium",
-          children: j.subtitle
-        }), null != j.link && (0, n.jsx)(a.Text, {
+          children: A.subtitle
+        }), null != A.link && (0, n.jsx)(s.Text, {
           className: E.nf,
           color: "text-default",
           variant: "text-sm/medium",
-          children: j.link
+          children: A.link
         })]
       })]
     }), (0, n.jsx)(d.A, (t = function(e) {
@@ -129,11 +129,11 @@ function p(e) {
         })
       }
       return e
-    }({}, y), r = r = {
-      displayProfile: A,
+    }({}, O), r = r = {
+      displayProfile: _,
       ref: p,
       usernameSuggestionLoading: h,
-      oneClickFlow: O
+      oneClickFlow: y
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

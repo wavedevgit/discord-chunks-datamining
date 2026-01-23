@@ -2,7 +2,7 @@
 /** chunk id: 449754, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./896048.js");
 var Chunk982520 = require("./982520.js"),
   i = require.n(Chunk982520),
@@ -34,7 +34,7 @@ function h(e, t) {
 
 function m(e) {
   null != _ && clearInterval(_), p = 0;
-  let t = y();
+  let t = b();
   _ = setInterval(() => {
     h(t, e)
   }, l)
@@ -42,7 +42,7 @@ function m(e) {
 
 function g() {
   null != _ && clearInterval(_), d.loop(), p = c;
-  let e = y();
+  let e = b();
   _ = setInterval(() => h(e), l)
 }
 
@@ -50,20 +50,20 @@ function E() {
   m(d.pause.bind(d))
 }
 
-function b() {
+function y() {
   m(d.stop.bind(d))
 }
 
-function y() {
+function b() {
   return l / u * (p - f)
 }
 class O extends Chunk439372.A {
   constructor(...e) {
     super(...e), o(this, "actions", {
       VIBING_WUMPUS_PLAY_MUSIC: g,
-      VIBING_WUMPUS_STOP_MUSIC: b,
+      VIBING_WUMPUS_STOP_MUSIC: y,
       VIBING_WUMPUS_PAUSE_MUSIC: E
     })
   }
 }
-let A = new O
+let v = new O

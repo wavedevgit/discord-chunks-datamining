@@ -34,24 +34,24 @@ function S(e) {
       editRoleId: n,
       setEditRoleId: l,
       selectedSection: S,
-      setSelectedSection: T
+      setSelectedSection: I
     } = e,
-    I = (0, a.bG)([x.A], () => x.A.guild, []);
-  s()(null != I, "guildId cannot be null here");
+    T = (0, a.bG)([h.A], () => h.A.guild, []);
+  s()(null != T, "guildId cannot be null here");
   let {
     role: C,
     permissionSearchQuery: P
-  } = (0, a.cf)([x.A], () => ({
-    role: x.A.getRole(n),
-    permissionSearchQuery: x.A.getPermissionSearchQuery()
+  } = (0, a.cf)([h.A], () => ({
+    role: h.A.getRole(n),
+    permissionSearchQuery: h.A.getPermissionSearchQuery()
   }), [n]);
   i.useEffect(() => {
     null == C && l(null)
   }, [C, l]);
-  let w = (0, a.bG)([f.A], () => f.A.getHighestRole(I), [I]),
-    R = (0, a.bG)([f.A], () => !f.A.isRoleHigher(I, w, C)),
+  let w = (0, a.bG)([g.A], () => g.A.getHighestRole(T), [T]),
+    R = (0, a.bG)([g.A], () => !g.A.isRoleHigher(T, w, C)),
     D = i.useRef(null),
-    G = (0, a.bG)([p.A], () => p.A.getProps().integrations),
+    G = (0, a.bG)([b.A], () => b.A.getProps().integrations),
     L = {
       role: C,
       editRoleId: n
@@ -64,8 +64,8 @@ function S(e) {
       let {
         role: n,
         editRoleId: r
-      } = k.current, i = (0, h.L9)(S), l = null != (e = null == (t = m.A.getRoleMemberCount(I.id)) ? true : t[r]) ? e : 0;
-      g.default.track(N.HAw.ROLE_PAGE_VIEWED, function(e) {
+      } = k.current, i = (0, x.L9)(S), l = null != (e = null == (t = f.A.getRoleMemberCount(T.id)) ? true : t[r]) ? e : 0;
+      m.default.track(E.HAw.ROLE_PAGE_VIEWED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -84,66 +84,66 @@ function S(e) {
         return e
       }({
         tab_opened: i,
-        is_everyone: (0, d.N8)(I.id, r),
+        is_everyone: (0, d.N8)(T.id, r),
         role_id: r,
         role_mentionable: null == n ? true : n.mentionable,
         role_hoist: null == n ? true : n.hoist,
         role_permissions: null == n ? true : n.permissions.toString(),
         role_num_members: l
-      }, (0, o.H$)(I.id)))
-    }, [S, I.id, null == C ? true : C.id]), i.useEffect(() => {
-      (null == C ? true : C.id) != null && (0, u.os)(I.id, C.id)
-    }, [I.id, null == C ? true : C.id]), null == C) return null;
+      }, (0, c.H$)(T.id)))
+    }, [S, T.id, null == C ? true : C.id]), i.useEffect(() => {
+      (null == C ? true : C.id) != null && (0, u.os)(T.id, C.id)
+    }, [T.id, null == C ? true : C.id]), null == C) return null;
   switch (S) {
-    case E.T$.DISPLAY:
-      t = (0, r.jsx)(O.Ay, {
-        guild: I,
+    case A.T$.DISPLAY:
+      t = (0, r.jsx)(_.Ay, {
+        guild: T,
         role: C,
         locked: R,
         highestRole: w,
-        setSelectedSection: T
+        setSelectedSection: I
       });
       break;
-    case E.T$.PERMISSIONS:
+    case A.T$.PERMISSIONS:
       t = (0, r.jsx)(v.Ay, {
-        guild: I,
+        guild: T,
         role: C,
         locked: R,
-        setSelectedSection: T,
+        setSelectedSection: I,
         initialSearchQuery: P
       });
       break;
-    case E.T$.VERIFICATIONS:
+    case A.T$.VERIFICATIONS:
       t = (0, r.jsx)(j.A, {
-        guild: I,
+        guild: T,
         role: C,
         locked: R,
-        setSelectedSection: T,
+        setSelectedSection: I,
         integrations: null != G ? G : true
       });
       break;
-    case E.T$.MEMBERS:
-      t = (0, r.jsx)(y.Ay, {
-        guild: I,
+    case A.T$.MEMBERS:
+      t = (0, r.jsx)(O.Ay, {
+        guild: T,
         role: C,
         locked: R,
-        setSelectedSection: T
+        setSelectedSection: I
       });
       break;
     default:
-      (0, b.xb)(S)
+      (0, p.xb)(S)
   }
   return (0, r.jsxs)("div", {
-    className: _.MY,
-    children: [(0, r.jsx)(A.A, {
-      guild: I,
+    className: N.MY,
+    children: [(0, r.jsx)(y.A, {
+      guild: T,
       currentRoleId: n,
       setCurrentRoleId: l,
-      setSelectedSection: T
+      setSelectedSection: I
     }), (0, r.jsx)("div", {
-      className: _.hQ,
+      className: N.hQ,
       ref: D,
-      children: (0, r.jsx)(c.xpW, {
+      children: (0, r.jsx)(o.xpW, {
         containerRef: D,
         children: t
       })

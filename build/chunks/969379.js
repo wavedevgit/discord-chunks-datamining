@@ -12,16 +12,16 @@ let a = (e, t) => {
   let {
     groupType: n,
     teamId: i
-  } = t, [a, c] = r.useState(true), [o, d] = r.useState([]), u = r.useCallback(async () => {
-    if (d([]), null == e) return void c(false);
+  } = t, [a, o] = r.useState(true), [c, d] = r.useState([]), u = r.useCallback(async () => {
+    if (d([]), null == e) return void o(false);
     try {
-      c(true);
+      o(true);
       let t = await s.b(e, {
         grouping_type: n
       });
       d(t)
     } catch (e) {} finally {
-      c(false)
+      o(false)
     }
   }, [e, n]);
   return r.useEffect(() => {
@@ -43,7 +43,7 @@ let a = (e, t) => {
         i.amount += n.amount, i.paymentsCount += n.payments_count, i.ppgs[n.grouping_id] = n
       }
       return l().orderBy(Object.values(t), ["periodStartingAt"], ["desc"])
-    })(null != i ? o.filter(e => e.user_id === i) : o), [o, i]),
+    })(null != i ? c.filter(e => e.user_id === i) : c), [c, i]),
     loading: a
   }
 }

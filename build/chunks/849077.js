@@ -5,7 +5,7 @@ require.d(exports, {
   EM: () => u,
   Io: () => _,
   Sp: () => l,
-  Th: () => b,
+  Th: () => y,
   Ur: () => p,
   V$: () => c,
   VA: () => E,
@@ -13,7 +13,7 @@ require.d(exports, {
   XU: () => o,
   Yw: () => f,
   j5: () => d,
-  kR: () => y,
+  kR: () => b,
   v7: () => m,
   yL: () => h
 });
@@ -57,9 +57,9 @@ var g = function(e) {
   E = function(e) {
     return e.AUTO_LOAD = "auto_load", e.ON_OPEN = "on_open", e.FILL_SCROLLER = "fill_scroller", e.USER_SCROLL = "user_scroll", e.UNKNOWN = "unknown", e
   }({}),
-  b = function(e) {
+  y = function(e) {
     return e.MENTION = "MENTION", e.REPLY = "REPLY", e.REACTION = "REACTION", e.ANNOUNCEMENT = "ANNOUNCEMENT", e.MESSAGE = "MESSAGE", e
   }({}),
-  y = function(e) {
+  b = function(e) {
     return e.ACK = "ACK", e.BOOKMARK = "BOOKMARK", e.SETTINGS = "SETTINGS", e
   }({})

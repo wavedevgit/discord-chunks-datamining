@@ -21,24 +21,24 @@ let x = e => {
     channelId: n,
     reportId: x,
     reportType: g
-  } = e, f = (0, a.bG)([u.A], () => u.A.isBlocked(t.id), [t.id]), v = (0, a.bG)([d.A], () => d.A.getChannel(n), [n]), h = r.useMemo(() => m.Ay.getName(null == v ? true : v.guild_id, null == v ? true : v.id, t), [v, t]), j = r.useCallback(() => {
-    s.Ay.trackWithMetadata(b.HAw.IAR_BLOCK_USER_BUTTON_CLICKED, {
+  } = e, _ = (0, i.bG)([u.A], () => u.A.isBlocked(t.id), [t.id]), h = (0, i.bG)([c.A], () => c.A.getChannel(n), [n]), v = r.useMemo(() => m.Ay.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), f = r.useCallback(() => {
+    s.Ay.trackWithMetadata(p.HAw.IAR_BLOCK_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
       report_id: x
-    }), i.A.blockUser(t.id, {
+    }), a.A.blockUser(t.id, {
       location: "ReportMenuBlockUser-iOS"
     }).then(() => {
       o.A.showBlockSuccessToast(t.id, n)
     })
   }, [t, x, n]);
-  return (0, l.jsx)(c.PQ, {
-    title: p.intl.formatToPlainString(p.t["Q1o/f3"], {
-      username: h
+  return (0, l.jsx)(d.PQ, {
+    title: b.intl.formatToPlainString(b.t["Q1o/f3"], {
+      username: v
     }),
-    description: p.intl.string(p.t.G08MKu),
-    buttonText: f ? p.intl.string(p.t.ot2tSp) : p.intl.string(p.t["l+7PZY"]),
-    buttonDisabled: f,
-    onButtonPress: j,
-    buttonVariant: "application" === g.name && f ? "secondary" : "critical-primary"
+    description: b.intl.string(b.t.G08MKu),
+    buttonText: _ ? b.intl.string(b.t.ot2tSp) : b.intl.string(b.t["l+7PZY"]),
+    buttonDisabled: _,
+    onButtonPress: f,
+    buttonVariant: "application" === g.name && _ ? "secondary" : "critical-primary"
   })
 }

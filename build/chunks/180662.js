@@ -98,13 +98,13 @@ function U(e) {
   let {
     channelId: t,
     messageId: n
-  } = e, r = S.A.getMessage(t, n);
+  } = e, r = I.A.getMessage(t, n);
   if (null != r) return {
     message: r,
     channelId: t,
     messageId: n
   };
-  let a = b.A.getMessage(t, n);
+  let a = y.A.getMessage(t, n);
   if (null != a.message) return {
     channelId: t,
     messageId: n,
@@ -160,7 +160,7 @@ function F(e) {
     title: P.intl.string(P.t["7LpysO"]),
     body: P.intl.string(P.t["5sHHoy"])
   });
-  let a = S.A.getMessage(t, n);
+  let a = I.A.getMessage(t, n);
   if (null == a || null == a.poll || 0 === a.poll.answers.length) return;
   let s = null != r ? r : String(a.poll.answers[0].answer_id);
   T.W({
@@ -191,7 +191,7 @@ function H(e) {
   let {
     channelId: t,
     messageId: n
-  } = e, r = S.A.getMessage(t, n);
+  } = e, r = I.A.getMessage(t, n);
   return null == r ? [] : r.reactions.flatMap(e => true === e.me_vote ? e.emoji.name : [])
 }
 async function Y(e) {
@@ -202,7 +202,7 @@ async function Y(e) {
   } = e, i = H({
     channelId: t,
     messageId: n
-  }), a = s().difference(i, r), o = s().difference(r, i), c = y.default.getId(), d = [...a.map(e => ({
+  }), a = s().difference(i, r), o = s().difference(r, i), c = b.default.getId(), d = [...a.map(e => ({
     type: "MESSAGE_REACTION_REMOVE",
     id: e
   })), ...o.map(e => ({
@@ -241,7 +241,7 @@ async function W(e) {
     title: P.intl.string(P.t.Qic1FD),
     body: P.intl.string(P.t["5sHHoy"])
   });
-  if (!v.A.canChatInGuild(r.guild_id)) return void d.A.show({
+  if (!A.A.canChatInGuild(r.guild_id)) return void d.A.show({
     title: P.intl.string(P.t.p245wu),
     body: P.intl.string(P.t["U/uodt"])
   });
@@ -314,7 +314,7 @@ function z(e) {
   (0, N.A2)(t, n, e => {
     var r, i;
     let a = null == e || !e.showResults,
-      s = S.A.getMessage(t, n),
+      s = I.A.getMessage(t, n),
       o = null != s ? s.reactions.reduce((e, t) => {
         var n, r;
         return e + (null != (n = null == (r = t.count_details) ? true : r.vote) ? n : 0)
@@ -450,7 +450,7 @@ let X = {
       duration: a,
       layout: s,
       onClose: l
-    } = e, c = I.A.getUploads(t.id, A.C.Poll), u = r.map(e => {
+    } = e, c = S.A.getUploads(t.id, v.C.Poll), u = r.map(e => {
       var t, n;
       let r = null == c ? true : c.findIndex(t => t.id === e.localCreationAnswerId),
         i = {

@@ -2,7 +2,7 @@
 /** chunk id: 997954, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -52,24 +52,24 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e) {
+function b(e) {
   return {
     react(t, i, m) {
       let E = m.noStyleAndInteraction ? true : async n => {
         let r = await (0, d.AN)(t.attachmentUrl);
         e.shouldStopPropagation && (null == n || n.stopPropagation()), c.A.trackLinkClicked(r), e.shouldCloseDefaultModals && (0, s.s7G)(), (0, l.A)(r)
-      }, y = m.noStyleAndInteraction ? p.tEg : e => {
+      }, b = m.noStyleAndInteraction ? p.tEg : e => {
         (0, o.L3)(e, async () => {
           let {
             default: e
           } = await n.e("62529").then(n.bind(n, 740024));
-          return n => (0, r.jsx)(e, b(g({}, n), {
+          return n => (0, r.jsx)(e, y(g({}, n), {
             attachmentUrl: t.attachmentUrl,
             attachmentName: t.attachmentName
           }))
@@ -79,7 +79,7 @@ function y(e) {
         role: "link",
         href: t.attachmentUrl,
         onClick: E,
-        onContextMenu: y,
+        onContextMenu: b,
         className: "attachmentLink",
         children: [(0, r.jsx)(s.PtA, {
           size: "xs",

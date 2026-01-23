@@ -17,20 +17,20 @@ function o(e) {
     videoLimit: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: s.iE,
+    className: a.iE,
     children: [(0, r.jsxs)("span", {
-      className: i()(s.VV, {
-        [s.Ki]: l,
-        [s.$G]: n >= 100
+      className: i()(a.VV, {
+        [a.Ki]: l,
+        [a.$G]: n >= 100
       }),
-      children: [l ? (0, r.jsx)(a.npA, {
+      children: [l ? (0, r.jsx)(s.npA, {
         size: "md",
         color: "currentColor",
-        className: s.LB
+        className: a.LB
       }) : null, n.toString().padStart(2, "0")]
     }), (0, r.jsx)("span", {
-      className: i()(s.X5, {
-        [s.$G]: t >= 100
+      className: i()(a.X5, {
+        [a.$G]: t >= 100
       }),
       children: t.toString().padStart(2, "0")
     })]

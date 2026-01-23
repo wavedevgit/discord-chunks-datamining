@@ -10,7 +10,7 @@ require.d(exports, {
   Vw: () => m,
   ZJ: () => h,
   aZ: () => o,
-  ld: () => b,
+  ld: () => y,
   qv: () => l,
   tY: () => E
 });
@@ -56,7 +56,7 @@ function E(e, t) {
   return Object.assign(e, t)
 }
 
-function b(e) {
+function y(e) {
   let t = t => e().update(h(t)).digest(),
     n = e();
   return t.outputLen = n.outputLen, t.blockLen = n.blockLen, t.create = () => e(), t

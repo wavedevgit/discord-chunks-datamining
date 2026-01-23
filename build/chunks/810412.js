@@ -40,14 +40,14 @@ async function f(e, t, r) {
       default: g
     } = n(833551),
     E = null != (s = null == g ? true : g.getMostRecentOverlayRenderMethod()) ? s : true,
-    b = null != E ? l.Ue[E] : true;
-  __OVERLAY__ && (b = l.Ue[l.Ue.Hook]), o.default.track(c.HAw.OVERLAY_TOGGLED, {
+    y = null != E ? l.Ue[E] : true;
+  __OVERLAY__ && (y = l.Ue[l.Ue.Hook]), o.default.track(c.HAw.OVERLAY_TOGGLED, {
     enabled: e,
     setting_type: d(t),
     client_setting_type: t,
     application_id: null != (u = null == m ? true : m.id) ? u : true,
     application_name: null != (f = null == m ? true : m.name) ? f : true,
-    most_recent_overlay_render_method: b,
+    most_recent_overlay_render_method: y,
     hardware_display_count: null != (p = await (null === i.A || true === i.A || null == (h = i.A.hardware) || null == (_ = h.getDisplayCount) ? true : _.call(h))) ? p : null
   })
 }

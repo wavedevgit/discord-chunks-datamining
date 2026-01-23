@@ -40,28 +40,28 @@ function m(e) {
 }
 let g = 200,
   E = 40,
-  b = 80,
-  y = 132,
+  y = 80,
+  b = 132,
   O = 80,
-  A = {
+  v = {
     [Chunk652215.CUs.TOP_RIGHT]: Chunk315253.En,
     [Chunk652215.CUs.TOP_LEFT]: Chunk315253.rG,
     [Chunk652215.CUs.BOTTOM_LEFT]: Chunk315253.j$,
     [Chunk652215.CUs.BOTTOM_RIGHT]: Chunk315253.Ue
   },
-  v = {
+  A = {
     [Chunk652215.CUs.TOP_RIGHT]: Chunk761929.R.HORIZONTAL_LEFT,
     [Chunk652215.CUs.TOP_LEFT]: Chunk761929.R.HORIZONTAL_RIGHT,
     [Chunk652215.CUs.BOTTOM_LEFT]: Chunk761929.R.HORIZONTAL_RIGHT,
     [Chunk652215.CUs.BOTTOM_RIGHT]: Chunk761929.R.HORIZONTAL_LEFT
   };
 
-function S(e, t) {
+function I(e, t) {
   let n = Math.round(e / E) * E;
   return (0, l.clamp)(n, t.minWidth, t.maxWidth)
 }
 
-function I(e) {
+function S(e) {
   let {
     resizableNode: t,
     onResize: n,
@@ -74,14 +74,14 @@ function I(e) {
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: r,
-    orientation: v[l],
+    orientation: A[l],
     usePointerEvents: true
   }), d = a.useCallback(e => {
     e.stopPropagation(), u(e)
   }, [u]);
   return (0, i.jsx)("div", {
     onMouseDown: d,
-    className: o()(_.Di, A[l])
+    className: o()(_.Di, v[l])
   })
 }
 class T extends(r = Chunk64700.PureComponent) {
@@ -236,7 +236,7 @@ class T extends(r = Chunk64700.PureComponent) {
         ref: this.handleSetInnerDivRef,
         style: f,
         children: this.props.children
-      }), null != c ? (0, i.jsx)(I, {
+      }), null != c ? (0, i.jsx)(S, {
         onResize: this.handleResize,
         onResizeEnd: this.handleResizeEnd,
         resizableNode: this._innerDivRef,
@@ -259,7 +259,7 @@ class T extends(r = Chunk64700.PureComponent) {
         resizeConfig: i
       } = this.props;
       if (null == i) return;
-      let a = S(r - (t + n), i);
+      let a = I(r - (t + n), i);
       this.getWidth() > a && (this._width = a, null == e || e(a))
     }), h(this, "handleSetInnerDivRef", e => {
       this._innerDivRef.current = e;
@@ -280,7 +280,7 @@ class T extends(r = Chunk64700.PureComponent) {
         resizeConfig: n
       } = this.props;
       if (null == n) return;
-      let r = S(e, n);
+      let r = I(e, n);
       this._width = r, null == t || t(r), this.setState({
         isResizing: false
       }), this.ensureWidth()
@@ -328,10 +328,10 @@ let C = e => {
       pictureInPictureComponents: h,
       appContext: g,
       roundCorners: E,
-      resizeConfig: A,
-      className: v,
-      getDockedRectPositionY: S
-    } = e, [I, C] = a.useState(false), N = a.useMemo(() => null == t ? null : n.map(e => {
+      resizeConfig: v,
+      className: A,
+      getDockedRectPositionY: I
+    } = e, [S, C] = a.useState(false), N = a.useMemo(() => null == t ? null : n.map(e => {
       if (e.id !== t.id && e.component !== f.o1q.ACTIVITY && e.component !== f.o1q.FRAME) return null;
       let n = "string" == typeof e.component ? h[e.component] : e.component;
       return (0, i.jsx)(n, m({
@@ -349,8 +349,8 @@ let C = e => {
     }) : (0, i.jsx)(d.Ay, {
       children: (0, i.jsx)("div", {
         className: o()(_._I, {
-          [_.cB]: I
-        }, v),
+          [_.cB]: S
+        }, A),
         children: (0, i.jsx)(T, {
           appContext: g,
           position: t.position,
@@ -364,13 +364,13 @@ let C = e => {
           maxY: l,
           width: r,
           dockedRect: p,
-          getDockedRectPositionY: S,
-          edgeOffsetTop: b,
-          edgeOffsetBottom: y,
+          getDockedRectPositionY: I,
+          edgeOffsetTop: y,
+          edgeOffsetBottom: b,
           edgeOffsetLeft: O,
-          edgeOffsetRight: b,
+          edgeOffsetRight: y,
           roundCorners: E,
-          resizeConfig: P || D ? true : A,
+          resizeConfig: P || D ? true : v,
           children: N
         })
       })

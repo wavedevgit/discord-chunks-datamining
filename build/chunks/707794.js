@@ -55,8 +55,8 @@ function p(e) {
   }))), E = (0, u.A)({
     applicationId: null == _ ? true : _.id,
     onClose: m
-  }), b = (0, i.A)(p);
-  return b && null != _ ? E : !b && (0, a.A)(p) ? g : (0, r.A)(p) && n.id !== d.id ? () => (0, l.y)({
+  }), y = (0, i.A)(p);
+  return y && null != _ ? E : !y && (0, a.A)(p) ? g : (0, r.A)(p) && n.id !== d.id ? () => (0, l.y)({
     activity: p,
     user: n,
     index: 0

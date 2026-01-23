@@ -24,19 +24,19 @@ let d = Chunk64700.memo(function(e) {
     onClose: a,
     onSelect: () => {},
     className: u.VS,
-    children: Object.entries(o.Pb).map(e => {
-      let a, [s, u] = e,
-        d = (a = [], u.type === o.me.RADIO && a.push((0, r.jsx)(i.iDA, {
-          id: "".concat(s, "-none"),
-          group: s,
+    children: Object.entries(s.Pb).map(e => {
+      let a, [o, u] = e,
+        d = (a = [], u.type === s.me.RADIO && a.push((0, r.jsx)(i.iDA, {
+          id: "".concat(o, "-none"),
+          group: o,
           label: c.intl.string(c.t.PoWNfe),
           checked: !u.tags.some(e => t.includes(e)),
           action: () => l(u.tags)
         }, "none")), u.tags.forEach(e => {
-          let l = o.PT[e];
-          null != l && (u.type === o.me.RADIO ? a.push((0, r.jsx)(i.iDA, {
+          let l = s.PT[e];
+          null != l && (u.type === s.me.RADIO ? a.push((0, r.jsx)(i.iDA, {
             id: e,
-            group: s,
+            group: o,
             label: l.getText(),
             checked: t.includes(e),
             action: () => n(e, true)
@@ -50,7 +50,7 @@ let d = Chunk64700.memo(function(e) {
       return (0, r.jsx)(i.rXV, {
         label: u.getLabel(),
         children: d
-      }, s)
+      }, o)
     })
   })
 });
@@ -61,46 +61,46 @@ function f(e) {
     widgetType: n,
     applicationId: f,
     ref: p
-  } = e, b = (0, l.useRef)(null), {
-    trackUserProfileEditAction: g
-  } = (0, a.NJ)(), m = (0, l.useMemo)(() => null != t ? t : [], [t]), y = (0, l.useCallback)(function(e) {
+  } = e, g = (0, l.useRef)(null), {
+    trackUserProfileEditAction: m
+  } = (0, a.NJ)(), b = (0, l.useMemo)(() => null != t ? t : [], [t]), y = (0, l.useCallback)(function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      r = new Set(m);
+      r = new Set(b);
     if (t) {
-      let t = Object.values(o.Pb).find(t => t.tags.includes(e));
+      let t = Object.values(s.Pb).find(t => t.tags.includes(e));
       null != t && (t.tags.forEach(e => {
         r.delete(e)
-      }), r.add(e), g({
+      }), r.add(e), m({
         action: "TAG_ADDED",
         widgetEdited: n,
         gameId: f
       }))
-    } else r.has(e) ? (r.delete(e), g({
+    } else r.has(e) ? (r.delete(e), m({
       action: "TAG_REMOVED",
       widgetEdited: n,
       gameId: f
-    })) : (r.add(e), g({
+    })) : (r.add(e), m({
       action: "TAG_ADDED",
       widgetEdited: n,
       gameId: f
     }));
-    (0, s.s1)(n, f, Array.from(r))
-  }, [m, g, n, f]), O = (0, l.useCallback)(e => {
-    let t = new Set(m);
+    (0, o.s1)(n, f, Array.from(r))
+  }, [b, m, n, f]), O = (0, l.useCallback)(e => {
+    let t = new Set(b);
     e.forEach(e => {
       t.delete(e)
-    }), g({
+    }), m({
       action: "TAG_REMOVED",
       widgetEdited: n,
       gameId: f
-    }), (0, s.s1)(n, f, Array.from(t))
-  }, [m, g, n, f]);
+    }), (0, o.s1)(n, f, Array.from(t))
+  }, [b, m, n, f]);
   return (0, r.jsx)(i.YNO, {
-    targetElementRef: b,
+    targetElementRef: g,
     position: "right",
     align: "top",
     onRequestOpen: () => {
-      g({
+      m({
         action: "PRESS_ADD_TAG",
         widgetEdited: n
       })
@@ -110,7 +110,7 @@ function f(e) {
         closePopout: t
       } = e;
       return (0, r.jsx)(d, {
-        currentTags: m,
+        currentTags: b,
         onTagSelect: y,
         onNoneSelect: O,
         onClose: t
@@ -119,8 +119,8 @@ function f(e) {
     children: e => {
       var t, n;
       return (0, r.jsx)("div", {
-        ref: e => (null != e && (b.current = e, p.current = e), () => {
-          b.current = null, p.current = null
+        ref: e => (null != e && (g.current = e, p.current = e), () => {
+          g.current = null, p.current = null
         }),
         children: (0, r.jsx)(i.DUT, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {

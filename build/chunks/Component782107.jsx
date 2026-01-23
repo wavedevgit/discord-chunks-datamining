@@ -1,7 +1,7 @@
 /** Chunk was on 80360 **/
-/** chunk id: 782107, original params: t,n,e (module,exports,require) **/
+/** chunk id: 782107, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,78 +15,78 @@ var Chunk397927 = require("./397927.js"),
   Chunk25765 = require("./25765.js"),
   Chunk689588 = require("./689588.js");
 
-function f(t) {
+function b(t) {
   let {
-    transitionState: n,
-    onClose: e,
-    analyticsLocation: f,
-    platformType: A
+    transitionState: e,
+    onClose: n,
+    analyticsLocation: b,
+    platformType: C
   } = t, {
-    slide: T,
-    gotoNext: g,
-    gotoError: C,
-    handleWaitingForConnection: h,
-    handleAuthToken: N,
-    expectedCallbackState: _,
-    callbackData: u,
+    slide: A,
+    gotoNext: T,
+    gotoError: h,
+    handleWaitingForConnection: g,
+    handleAuthToken: u,
+    expectedCallbackState: N,
+    callbackData: f,
     errorCode: I
-  } = (0, a.m)(f, A);
+  } = (0, r.m)(b, C);
   return (0, o.jsx)(i.EOs, {
     "data-migration-pending": true,
     className: p.yl,
-    transitionState: n,
+    transitionState: e,
     disableTrack: true,
     parentComponent: "PlayStationLinkModal",
     children: (0, o.jsxs)(i.tN_, {
-      activeSlide: T,
+      activeSlide: A,
       width: 408,
       children: [(0, o.jsx)(i.q7S, {
-        id: b.N.LANDING,
-        children: (0, o.jsx)(r.g, {
-          platformType: A,
-          onContinue: g,
-          onClose: e
+        id: _.N.LANDING,
+        children: (0, o.jsx)(c.g, {
+          platformType: C,
+          onContinue: T,
+          onClose: n
         })
       }), (0, o.jsx)(i.q7S, {
-        id: b.N.PRE_CONNECT,
-        children: (0, o.jsx)(c.o, {
-          platformType: A,
+        id: _.N.PRE_CONNECT,
+        children: (0, o.jsx)(l.o, {
+          platformType: C,
           isWaitingForConnection: false,
-          onWaitingForConnection: h,
-          onAuthToken: N,
-          onError: C,
-          onClose: e
+          onWaitingForConnection: g,
+          onAuthToken: u,
+          onError: h,
+          onClose: n
         })
       }), (0, o.jsx)(i.q7S, {
-        id: b.N.PRE_CONNECT_WAITING,
-        children: (0, o.jsx)(c.o, {
-          platformType: A,
+        id: _.N.PRE_CONNECT_WAITING,
+        children: (0, o.jsx)(l.o, {
+          platformType: C,
           isWaitingForConnection: true,
-          expectedCallbackState: _,
-          onAuthToken: N,
-          onError: C,
-          onClose: e
+          expectedCallbackState: N,
+          onAuthToken: u,
+          onError: h,
+          onClose: n
         })
       }), (0, o.jsx)(i.q7S, {
-        id: b.N.DISCORD_CONSENT,
+        id: _.N.DISCORD_CONSENT,
         children: (0, o.jsx)(s.V, {
-          platformType: A,
-          authToken: u,
-          onContinue: g,
-          onError: C,
-          onClose: e
+          platformType: C,
+          authToken: f,
+          onContinue: T,
+          onError: h,
+          onClose: n
         })
       }), (0, o.jsx)(i.q7S, {
-        id: b.N.ERROR,
-        children: (0, o.jsx)(d.B, {
-          onContinue: g,
-          onClose: e,
+        id: _.N.ERROR,
+        children: (0, o.jsx)(a.B, {
+          onContinue: T,
+          onClose: n,
           errorCode: I
         })
       }), (0, o.jsx)(i.q7S, {
-        id: b.N.SUCCESS,
-        children: (0, o.jsx)(l.c, {
-          onClose: e
+        id: _.N.SUCCESS,
+        children: (0, o.jsx)(d.c, {
+          onClose: n
         })
       })]
     })

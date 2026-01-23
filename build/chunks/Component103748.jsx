@@ -1,12 +1,12 @@
 /** Chunk was on 22477 **/
 /** chunk id: 103748, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => T
+  A: () => N
 }), require("./896048.js"), require("./747238.js"), require("./812715.js"), require("./321073.js"), require("./457529.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk854284 = require("./854284.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -23,7 +23,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk865524 = require("./865524.js"),
   Chunk154878 = require("./154878.js");
 
-function _(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -66,16 +66,16 @@ let C = {
       transitionState: t,
       onClose: n,
       frameSrc: l,
-      placeholderSrc: i
+      placeholderSrc: r
     } = e;
     return (0, a.jsx)(c.EOs, {
       transitionState: t,
       size: c.rIJ.MEDIUM,
       parentComponent: "ReducedMotionPreviewModal",
       children: (0, a.jsxs)(c.$mQ, {
-        className: b.Xd,
+        className: f.Xd,
         children: [(0, a.jsx)("div", {
-          className: b.y6,
+          className: f.y6,
           children: (0, a.jsx)(c.K0, {
             "aria-label": "Close",
             onClick: n,
@@ -84,50 +84,50 @@ let C = {
             size: "sm"
           })
         }), (0, a.jsxs)("div", {
-          className: b.rU,
+          className: f.rU,
           children: [(0, a.jsx)("img", {
-            src: i,
+            src: r,
             alt: "",
-            className: b.Vw,
+            className: f.Vw,
             "aria-hidden": true
           }), null != l && "" !== l && (0, a.jsx)("img", {
             src: l,
-            className: b.BS,
+            className: f.BS,
             alt: "Reduced motion preview"
           })]
         })]
       })
     })
   },
-  N = e => {
+  T = e => {
     let {
       type: t,
       frame: n,
       showDarkTheme: l,
-      onClear: i
-    } = e, s = t === f.qH.REDUCED_MOTION, o = s ? l ? j : y : l ? g : v, d = (0, a.jsxs)(a.Fragment, {
+      onClear: r
+    } = e, s = t === x.qH.REDUCED_MOTION, o = s ? l ? j : _ : l ? b : v, d = (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)("img", {
         src: o,
         alt: "",
-        className: b.XM,
+        className: f.XM,
         "aria-hidden": true
       }), (null == n ? true : n.src) != null && "" !== n.src && (0, a.jsx)("img", {
         src: n.src,
-        className: b.SD,
+        className: f.SD,
         alt: ""
       })]
     });
     return (0, a.jsxs)("div", {
-      className: b.pK,
+      className: f.pK,
       children: [(0, a.jsx)(c.Heading, {
         variant: "heading-sm/bold",
         children: t
       }), s ? (0, a.jsx)(c.DUT, {
-        className: r()(b.zd, b.eB),
+        className: i()(f.zd, f.eB),
         onClick: () => {
           (0, c.kBI)(O) ? (0, c.OoC)(O) : (0, c.mMO)(() => Promise.resolve(e => {
             var t;
-            return (0, a.jsx)(E, A(_({}, e), {
+            return (0, a.jsx)(E, A(y({}, e), {
               frameSrc: null != (t = null == n ? true : n.src) ? t : null,
               placeholderSrc: o
             }))
@@ -138,22 +138,22 @@ let C = {
         },
         children: d
       }) : (0, a.jsx)("div", {
-        className: b.zd,
+        className: f.zd,
         children: d
       }), null != n && (0, a.jsx)(c.Button, {
         variant: "critical-secondary",
         size: "sm",
         text: "Clear",
-        onClick: i
+        onClick: r
       })]
     })
   },
-  T = e => {
+  N = e => {
     let {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.wu)(), i = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [j, y] = l.useState(true), O = l.useRef({}), [E, T] = l.useState(false), [I, k] = l.useState(false), [w, P] = l.useState([]), [R, D] = l.useState(C), M = l.useRef([]), [L, U] = l.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = l.useMemo(() => ({
+    } = (0, h.wu)(), r = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [j, _] = l.useState(true), O = l.useRef({}), [E, N] = l.useState(false), [w, I] = l.useState(false), [k, P] = l.useState([]), [R, D] = l.useState(C), M = l.useRef([]), [L, U] = l.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = l.useMemo(() => ({
       id: S,
       skuId: S,
       title: S,
@@ -161,16 +161,16 @@ let C = {
       accessibilityLabel: S,
       reducedMotionSrc: "",
       thumbnailPreviewSrc: "",
-      effects: w,
+      effects: k,
       animationType: s.l.ANIMATION_TYPE_UNSPECIFIED
-    }), [w]), F = e => {
+    }), [k]), F = e => {
       let t = e.currentTarget.files;
       return null == t ? null : t[0]
     }, V = (e, t) => {
       let n = F(t);
-      null != n && (0, f.Mz)(n, t => {
-        D(a => A(_({}, a), {
-          [e]: (0, f.GT)(t, n)
+      null != n && (0, x.Mz)(n, t => {
+        D(a => A(y({}, a), {
+          [e]: (0, x.GT)(t, n)
         }))
       })
     };
@@ -182,12 +182,12 @@ let C = {
       null != e && Object.entries(e).forEach(e => {
         let [t, n] = e;
         if (null != n) {
-          if ("" !== n.src && null != n.src && ("" === n.base64 || null == n.base64)) D(e => A(_({}, e), {
+          if ("" !== n.src && null != n.src && ("" === n.base64 || null == n.base64)) D(e => A(y({}, e), {
             [t]: n
           }));
           else if ("" !== n.base64 && null != n.base64) {
-            let e = (0, f.fB)(n.base64);
-            n.src = e, M.current.push(e), D(e => A(_({}, e), {
+            let e = (0, x.fB)(n.base64);
+            n.src = e, M.current.push(e), D(e => A(y({}, e), {
               [t]: n
             }))
           }
@@ -210,16 +210,16 @@ let C = {
         skuId: e.skuId,
         name: L,
         config: {
-          effects: w,
+          effects: k,
           stillFrames: R
         }
       })
-    }, [w, R, L]), l.useEffect(() => () => {
+    }, [k, R, L]), l.useEffect(() => () => {
       M.current.forEach(e => {
         URL.revokeObjectURL(e)
       }), M.current = []
-    }, []), null == i) ? (0, a.jsx)("div", {}) : (0, a.jsxs)("div", {
-      className: b.zr,
+    }, []), null == r) ? (0, a.jsx)("div", {}) : (0, a.jsxs)("div", {
+      className: f.zr,
       children: [(0, a.jsxs)("div", {
         style: {
           display: "none"
@@ -230,8 +230,8 @@ let C = {
           },
           onChange: e => {
             let t = F(e);
-            null != t && (0, f.Mz)(t, async e => {
-              let n = await (0, f.Ay)(e, t, w.length);
+            null != t && (0, x.Mz)(t, async e => {
+              let n = await (0, x.Ay)(e, t, k.length);
               P(e => [...e, n])
             })
           },
@@ -240,81 +240,81 @@ let C = {
           ref: e => {
             O.current.thumbnail = e
           },
-          onChange: e => V(f.qH.THUMBNAIL, e),
+          onChange: e => V(x.qH.THUMBNAIL, e),
           multiple: false
         }), (0, a.jsx)(u.A, {
           ref: e => {
             O.current.static = e
           },
-          onChange: e => V(f.qH.STATIC, e),
+          onChange: e => V(x.qH.STATIC, e),
           multiple: false
         }), (0, a.jsx)(u.A, {
           ref: e => {
             O.current.reducedMotion = e
           },
-          onChange: e => V(f.qH.REDUCED_MOTION, e),
+          onChange: e => V(x.qH.REDUCED_MOTION, e),
           multiple: false
         })]
       }), (0, a.jsxs)("div", {
-        className: b.Vg,
+        className: f.Vg,
         children: [(0, a.jsxs)("div", {
-          className: r()(b.nz, b.VH),
+          className: i()(f.nz, f.VH),
           children: [(0, a.jsx)("img", {
-            src: E ? g : v,
+            src: E ? b : v,
             alt: "",
             width: 450
           }), j && (0, a.jsx)("div", {
-            className: b.KJ,
-            children: (0, a.jsx)(x.A, {
+            className: f.KJ,
+            children: (0, a.jsx)(g.A, {
               config: G
             })
           })]
         }), (0, a.jsxs)("div", {
-          className: b.nz,
+          className: f.nz,
           children: [(0, a.jsxs)("div", {
-            className: r()(b.nz, b.uW),
+            className: i()(f.nz, f.uW),
             children: [(0, a.jsx)(c.Text, {
               variant: "text-md/normal",
               children: "Profile Effect Name"
             }), (0, a.jsx)("input", {
               type: "text",
               value: L,
-              className: b.hF,
+              className: f.hF,
               onChange: e => {
                 U(e.target.value)
               }
             })]
           }), (0, a.jsxs)("div", {
-            className: b.Vg,
+            className: f.Vg,
             children: [(0, a.jsxs)("div", {
-              className: b.nM,
+              className: f.nM,
               children: [(0, a.jsx)(c.Text, {
                 variant: "text-md/normal",
                 children: "Dark Theme"
               }), (0, a.jsx)("input", {
                 type: "checkbox",
                 checked: E,
-                className: b.OO,
+                className: f.OO,
                 onChange: () => {
-                  T(!E)
+                  N(!E)
                 }
               })]
             }), (0, a.jsxs)("div", {
-              className: b.nM,
+              className: f.nM,
               children: [(0, a.jsx)(c.Text, {
                 variant: "text-md/normal",
                 children: "Show User Profile"
               }), (0, a.jsx)("input", {
                 type: "checkbox",
-                checked: I,
-                className: b.OO,
+                checked: w,
+                className: f.OO,
                 onChange: () => {
-                  k(!I)
+                  I(!w)
                 }
               })]
             })]
           }), (0, a.jsxs)("div", {
-            className: b.nM,
+            className: f.nM,
             children: [(0, a.jsx)(c.Button, {
               variant: "active",
               text: "Upload Animated Layer",
@@ -327,7 +327,7 @@ let C = {
               children: "Make sure to upload the bottommost layer first!"
             })]
           }), (0, a.jsxs)("div", {
-            className: b.nM,
+            className: f.nM,
             children: [(0, a.jsx)(c.Button, {
               variant: "active",
               text: "Upload thumbnail.png",
@@ -351,19 +351,19 @@ let C = {
               }
             })]
           }), (0, a.jsx)("div", {
-            className: b.q6,
+            className: f.q6,
             children: (0, a.jsx)("div", {
-              className: b.nM,
+              className: f.nM,
               children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 text: "Replay Animation",
                 onClick: () => {
-                  y(false), setTimeout(() => y(true), 100)
+                  _(false), setTimeout(() => _(true), 100)
                 }
               })
             })
           }), (0, a.jsxs)("div", {
-            className: r()(b.q6, b.XA),
+            className: i()(f.q6, f.XA),
             children: [(0, a.jsx)(c.Text, {
               variant: "text-sm/semibold",
               children: "Please download both configs for the drop package!"
@@ -372,9 +372,9 @@ let C = {
               color: "text-feedback-critical",
               children: "WARNING: The full config is really big :0"
             }), (0, a.jsxs)("div", {
-              className: b.nM,
+              className: f.nM,
               children: [(0, a.jsx)(d.A, {
-                fileContents: () => (0, f.rs)(t.name, w),
+                fileContents: () => (0, x.rs)(t.name, k),
                 contentType: "text/plain",
                 fileName: "".concat(B, "_timing_config.txt"),
                 children: (0, a.jsx)(c.Button, {
@@ -383,11 +383,11 @@ let C = {
                   text: "Download Timing Config"
                 })
               }), (0, a.jsx)(d.A, {
-                fileContents: () => JSON.stringify(A(_({}, t), {
+                fileContents: () => JSON.stringify(A(y({}, t), {
                   name: L,
                   readonly: false,
-                  config: A(_({}, t.config), {
-                    effects: w,
+                  config: A(y({}, t.config), {
+                    effects: k,
                     stillFrames: R
                   })
                 })),
@@ -401,31 +401,31 @@ let C = {
               })]
             })]
           }), (0, a.jsxs)("div", {
-            className: b.uW,
+            className: f.uW,
             children: [(0, a.jsx)(c.Heading, {
               variant: "heading-lg/bold",
               children: "Still Frames"
             }), (0, a.jsx)("div", {
-              className: b.mv,
+              className: f.mv,
               children: Object.entries(R).map(e => {
                 let [t, n] = e;
-                return (0, a.jsx)(N, {
+                return (0, a.jsx)(T, {
                   type: t,
                   frame: n,
                   showDarkTheme: E,
                   onClear: () => {
-                    D(e => A(_({}, e), {
+                    D(e => A(y({}, e), {
                       [t]: null
                     }))
                   }
                 }, t)
               })
             })]
-          }), w.some(e => {
+          }), k.some(e => {
             var t;
             return (null != (t = e.randomizedSources) ? t : []).length > 0
           }) && (0, a.jsxs)("div", {
-            className: r()(b.uW, b.l7),
+            className: i()(f.uW, f.l7),
             children: [(0, a.jsx)(c.Text, {
               variant: "text-md/bold",
               children: "Rules of Randomized Effects"
@@ -441,23 +441,23 @@ let C = {
               })]
             })]
           }), (0, a.jsx)("div", {
-            children: I && (0, a.jsxs)("div", {
-              className: r()(b.p6, b.VH),
+            children: w && (0, a.jsxs)("div", {
+              className: i()(f.p6, f.VH),
               children: [(0, a.jsx)(m.A, {
-                user: i,
+                user: r,
                 pendingAvatar: true,
                 pendingProfileEffect: null,
                 canUsePremiumCustomization: true,
                 isTryItOut: true
-              }), (0, a.jsx)(x.A, {
+              }), (0, a.jsx)(g.A, {
                 config: G
               })]
             })
           })]
         }), (0, a.jsxs)("div", {
-          className: r()(b.Vg, b.ZF),
+          className: i()(f.Vg, f.ZF),
           children: [(0, a.jsx)("div", {
-            className: b.cD,
+            className: f.cD,
             children: (0, a.jsx)(c.Button, {
               variant: "critical-secondary",
               text: "Clear Assets",
@@ -465,16 +465,16 @@ let C = {
                 P([]), D(C)
               }
             })
-          }), w.map((e, t) => (0, a.jsxs)("div", {
-            className: b.ec,
+          }), k.map((e, t) => (0, a.jsxs)("div", {
+            className: f.ec,
             children: [(0, a.jsxs)("div", {
-              className: b.D1,
+              className: f.D1,
               children: [(0, a.jsx)(c.Heading, {
                 variant: "heading-md/bold",
                 children: e.name
               }), (0, a.jsx)("img", {
                 src: e.src,
-                className: b.oq,
+                className: f.oq,
                 alt: ""
               }), null != e.randomizedSources && (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(c.Heading, {
@@ -488,23 +488,23 @@ let C = {
                       children: e.filename
                     }), (0, a.jsx)("img", {
                       src: e.src,
-                      className: b.oq,
+                      className: f.oq,
                       alt: ""
                     })]
                   }, null != (n = e.filename) ? n : "randomized-".concat(t))
                 })]
               })]
             }), (0, a.jsxs)("div", {
-              className: r()(b.Vg, b.uW),
+              className: i()(f.Vg, f.uW),
               children: [(0, a.jsxs)("div", {
-                className: b.nz,
+                className: f.nz,
                 children: [(0, a.jsx)(c.Text, {
                   variant: "text-md/bold",
                   children: "Start"
                 }), (0, a.jsx)("input", {
                   type: "number",
                   value: e.start,
-                  className: b.hF,
+                  className: f.hF,
                   onChange: e => {
                     P(n => {
                       let a = [...n],
@@ -515,14 +515,14 @@ let C = {
                   contentEditable: true
                 })]
               }), (0, a.jsxs)("div", {
-                className: b.nz,
+                className: f.nz,
                 children: [(0, a.jsx)(c.Text, {
                   variant: "text-md/bold",
                   children: "Duration"
                 }), (0, a.jsx)("input", {
                   type: "number",
                   value: e.duration,
-                  className: b.hF,
+                  className: f.hF,
                   onChange: e => {
                     P(n => {
                       let a = [...n],
@@ -534,16 +534,16 @@ let C = {
                 })]
               })]
             }), (0, a.jsxs)("div", {
-              className: r()(b.Vg, b.uW),
+              className: i()(f.Vg, f.uW),
               children: [(0, a.jsxs)("div", {
-                className: b.nz,
+                className: f.nz,
                 children: [(0, a.jsx)(c.Text, {
                   variant: "text-md/bold",
                   children: "Loop"
                 }), (0, a.jsx)("input", {
                   type: "checkbox",
                   checked: e.loop,
-                  className: b.OO,
+                  className: f.OO,
                   onChange: e => {
                     P(n => {
                       let a = [...n],
@@ -553,7 +553,7 @@ let C = {
                   }
                 })]
               }), (0, a.jsx)("div", {
-                className: b.nz,
+                className: f.nz,
                 children: e.loop && (0, a.jsxs)(a.Fragment, {
                   children: [(0, a.jsx)(c.Text, {
                     variant: "text-md/bold",
@@ -561,7 +561,7 @@ let C = {
                   }), (0, a.jsx)("input", {
                     type: "number",
                     value: e.loopDelay,
-                    className: b.hF,
+                    className: f.hF,
                     onChange: e => {
                       P(n => {
                         let a = [...n],
@@ -583,23 +583,23 @@ let C = {
                 },
                 onChange: e => {
                   let n;
-                  null != (n = F(e)) && (0, f.Mz)(n, e => {
+                  null != (n = F(e)) && (0, x.Mz)(n, e => {
                     P(a => {
                       let l = [...a],
-                        i = a[t];
-                      if (null == i) return a;
-                      let r = _({}, i);
-                      return null == r.randomizedSources && (r.randomizedSources = []), r.randomizedSources.push({
+                        r = a[t];
+                      if (null == r) return a;
+                      let i = y({}, r);
+                      return null == i.randomizedSources && (i.randomizedSources = []), i.randomizedSources.push({
                         src: e,
                         filename: n.name
-                      }), l[t] = r, l
+                      }), l[t] = i, l
                     })
                   })
                 },
                 multiple: false
               })
             }), (0, a.jsxs)("div", {
-              className: r()(b.nM, b._N),
+              className: i()(f.nM, f._N),
               children: [(0, a.jsx)(c.Button, {
                 variant: "secondary",
                 text: "Add Alternative",

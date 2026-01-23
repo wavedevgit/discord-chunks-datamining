@@ -40,9 +40,9 @@ let u = e => {
           return e
         }({}, n), i = i = {
           guild: t,
-          source: s.PE1.HUB_DIRECTORY,
+          source: a.PE1.HUB_DIRECTORY,
           analyticsLocation: {
-            section: s.JJy.HUB_WELCOME_CTA
+            section: a.JJy.HUB_WELCOME_CTA
           }
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
@@ -73,13 +73,13 @@ let u = e => {
       variant: "text-md/normal",
       className: c.YI,
       children: o.intl.string(o.t.WypE0i)
-    }), null != u ? (0, r.jsx)(a.E, {
+    }), null != u ? (0, r.jsx)(s.E, {
       className: c.c5,
       iconUrl: n(928202),
       header: o.intl.string(o.t.hyK15i),
       completed: false,
       onClick: u
-    }) : null, (0, r.jsx)(a.E, {
+    }) : null, (0, r.jsx)(s.E, {
       className: c.c5,
       iconUrl: n(576877),
       header: o.intl.string(o.t.L4bwJ9),

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 /** chunk id: 859703, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a, s, o, l, c, u, d, f, p, _, h, m, g, E, b, y, O, A, v, S, I, T, C, N, R, w, P;
+let r, i, a, s, o, l, c, u, d, f, p, _, h, m, g, E, y, b, O, v, A, I, S, T, C, N, R, w, P;
 require.d(exports, {
   A: () => te
 }), require("./896048.js");
@@ -68,13 +68,13 @@ let Z = 6 * Chunk927813.A.Millis.HOUR,
   ei = 864e6;
 
 function ea() {
-  r = false, i = false, a = new Map, s = false, o = false, l = new Map, c = new Map, u = new Map, d = new Map, f = new Map, p = 0, _ = 0, h = new Set, m = new Set, g = new Set, E = new Set, b = new Set, Q = new Map, O = new Map, A = new Map, v = new Map, S = null, I = new Map, y = new Set, T = new Map, C = new Map, N = new Map, e3(), R = null, P = new Map, en = new Map, w = new Map
+  r = false, i = false, a = new Map, s = false, o = false, l = new Map, c = new Map, u = new Map, d = new Map, f = new Map, p = 0, _ = 0, h = new Set, m = new Set, g = new Set, E = new Set, y = new Set, Q = new Map, O = new Map, v = new Map, A = new Map, I = null, S = new Map, b = new Set, T = new Map, C = new Map, N = new Map, e3(), R = null, P = new Map, en = new Map, w = new Map
 }
 
 function es(e, t) {
   var n, r, i, a;
   if (null != t.userStatus)
-    for (let s of Object.values(null != (n = null == (r = t.userStatus) ? true : r.progress) ? n : {})) !(0, x.isNil)(s) && L.o.DESKTOP.has(s.eventName) && ((null == (i = s.heartbeat) ? true : i.lastBeatAt) != null ? y.add(e) : (null == (a = s.heartbeat) ? true : a.lastBeatAt) == null && y.delete(e))
+    for (let s of Object.values(null != (n = null == (r = t.userStatus) ? true : r.progress) ? n : {})) !(0, x.isNil)(s) && L.o.DESKTOP.has(s.eventName) && ((null == (i = s.heartbeat) ? true : i.lastBeatAt) != null ? b.add(e) : (null == (a = s.heartbeat) ? true : a.lastBeatAt) == null && b.delete(e))
 }
 
 function eo(e, t) {
@@ -113,8 +113,8 @@ function eu(e) {
 }
 
 function ed(e, t) {
-  let n = new Map(A);
-  n.set(e, t.items), A = n;
+  let n = new Map(v);
+  n.set(e, t.items), v = n;
   let r = u.get(e),
     i = null == r ? true : r.userStatus;
   if (null != i && null == i.claimedAt) {
@@ -132,7 +132,7 @@ function ed(e, t) {
 }
 
 function ef(e) {
-  null != v.get(e) && (v = new Map(v)).delete(e)
+  null != A.get(e) && (A = new Map(A)).delete(e)
 }
 
 function ep() {
@@ -174,57 +174,57 @@ function eE(e) {
   let {
     questId: t
   } = e;
-  (b = new Set(b)).add(t), (en = new Map(en)).delete(t)
-}
-
-function eb(e) {
-  let {
-    questId: t,
-    quest: n
-  } = e;
-  (b = new Set(b)).delete(t), (P = new Map(P)).set(t, n), (u = new Map(u)).set(t, n), (c = new Map(c)).set(t, n.config), (en = new Map(en)).delete(t)
+  (y = new Set(y)).add(t), (en = new Map(en)).delete(t)
 }
 
 function ey(e) {
   let {
     questId: t,
+    quest: n
+  } = e;
+  (y = new Set(y)).delete(t), (P = new Map(P)).set(t, n), (u = new Map(u)).set(t, n), (c = new Map(c)).set(t, n.config), (en = new Map(en)).delete(t)
+}
+
+function eb(e) {
+  let {
+    questId: t,
     error: n
   } = e;
-  (b = new Set(b)).delete(t), (en = new Map(en)).set(t, n)
+  (y = new Set(y)).delete(t), (en = new Map(en)).set(t, n)
 }
 
 function eO() {
   s = true
 }
 
-function eA(e) {
+function ev(e) {
   let {
     quests: t
   } = e;
   for (let e of (s = false, f = new Map, t)) f.set(e.id, e)
 }
 
-function ev() {
+function eA() {
   s = false
-}
-
-function eS(e) {
-  let {
-    questId: t,
-    streamKey: n,
-    userStatus: r
-  } = e;
-  y.add(t), eo(t, {
-    userStatus: r
-  }), null != n && ef(n)
 }
 
 function eI(e) {
   let {
     questId: t,
+    streamKey: n,
+    userStatus: r
+  } = e;
+  b.add(t), eo(t, {
+    userStatus: r
+  }), null != n && ef(n)
+}
+
+function eS(e) {
+  let {
+    questId: t,
     streamKey: n
   } = e;
-  null != n && null == v.get(n) && (v = new Map(v)).set(n, {
+  null != n && null == A.get(n) && (A = new Map(A)).set(n, {
     questId: t,
     streamKey: n,
     firstFailedAt: Date.now()
@@ -370,7 +370,7 @@ function eH(e) {
   } = e;
   eo(t.questId, {
     userStatus: t
-  }), null == t.claimedAt && (O = new Map(O)).delete(t.questId), null == t.enrolledAt && ((I = new Map(I)).delete(t.questId), V.Ay.getState().resetQuest(t.questId));
+  }), null == t.claimedAt && (O = new Map(O)).delete(t.questId), null == t.enrolledAt && ((S = new Map(S)).delete(t.questId), V.Ay.getState().resetQuest(t.questId));
   let n = u.get(t.questId);
   if (null != n) {
     let e = (0, H.Ic)(n);
@@ -382,7 +382,7 @@ function eY(e) {
   let {
     questId: t
   } = e;
-  S = S === t ? null : t
+  I = I === t ? null : t
 }
 
 function eW(e) {
@@ -390,7 +390,7 @@ function eW(e) {
     questId: t,
     platform: n
   } = e;
-  I = new Map(I), null == n ? I.delete(t) : I.set(t, n)
+  S = new Map(S), null == n ? S.delete(t) : S.set(t, n)
 }
 
 function eK(e) {
@@ -555,7 +555,7 @@ class e8 extends(D = Chunk311907.Ay.Store) {
     return s
   }
   isFetchingQuestPreview(e) {
-    return b.has(e)
+    return y.has(e)
   }
   get lastFetchedCurrentQuests() {
     return p
@@ -571,7 +571,7 @@ class e8 extends(D = Chunk311907.Ay.Store) {
     return null != (t = null == a ? true : a.get(e)) && t
   }
   get questDeliveryOverride() {
-    return u.get(null != S ? S : "")
+    return u.get(null != I ? I : "")
   }
   get questToDeliverForPlacement() {
     return T
@@ -601,10 +601,10 @@ class e8 extends(D = Chunk311907.Ay.Store) {
     return O.get(e)
   }
   getRewards(e) {
-    return A.get(e)
+    return v.get(e)
   }
   getStreamHeartbeatFailure(e) {
-    return v.get(e)
+    return A.get(e)
   }
   getQuest(e) {
     return u.get(e)
@@ -616,11 +616,11 @@ class e8 extends(D = Chunk311907.Ay.Store) {
     return c
   }
   isProgressingOnDesktop(e) {
-    return y.has(e)
+    return b.has(e)
   }
   selectedTaskPlatform(e) {
     var t;
-    return null != (t = I.get(e)) ? t : null
+    return null != (t = S.get(e)) ? t : null
   }
   getOptimisticProgress(e, t) {
     var n;
@@ -663,8 +663,8 @@ let e9 = new e8(Chunk73153.h, {
     QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: eh,
     QUESTS_FETCH_CURRENT_QUESTS_FAILURE: em,
     QUESTS_FETCH_CLAIMED_QUESTS_BEGIN: eO,
-    QUESTS_FETCH_CLAIMED_QUESTS_SUCCESS: eA,
-    QUESTS_FETCH_CLAIMED_QUESTS_FAILURE: ev,
+    QUESTS_FETCH_CLAIMED_QUESTS_SUCCESS: ev,
+    QUESTS_FETCH_CLAIMED_QUESTS_FAILURE: eA,
     QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN: eg,
     QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS: eq,
     QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE: eZ,
@@ -672,10 +672,10 @@ let e9 = new e8(Chunk73153.h, {
     QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_SUCCESS: e$,
     QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_FAILURE: eJ,
     QUESTS_FETCH_PREVIEW_BEGIN: eE,
-    QUESTS_FETCH_PREVIEW_SUCCESS: eb,
-    QUESTS_FETCH_PREVIEW_FAILURE: ey,
-    QUESTS_SEND_HEARTBEAT_SUCCESS: eS,
-    QUESTS_SEND_HEARTBEAT_FAILURE: eI,
+    QUESTS_FETCH_PREVIEW_SUCCESS: ey,
+    QUESTS_FETCH_PREVIEW_FAILURE: eb,
+    QUESTS_SEND_HEARTBEAT_SUCCESS: eI,
+    QUESTS_SEND_HEARTBEAT_FAILURE: eS,
     QUESTS_ENROLL_BEGIN: eN,
     QUESTS_ENROLL_SUCCESS: eR,
     QUESTS_ENROLL_FAILURE: ew,

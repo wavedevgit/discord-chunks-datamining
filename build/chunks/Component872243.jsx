@@ -1,7 +1,7 @@
 /** Chunk was on 83504 **/
-/** chunk id: 872243, original params: t,e,n (module,exports,require) **/
+/** chunk id: 872243, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => m
+  default: () => p
 }), require("./896048.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,48 +15,48 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk129115 = require("./129115.js");
 
-function m(t) {
+function p(t) {
   let {
-    channelId: e,
-    onClose: n,
-    transitionState: m,
-    heading: p,
+    channelId: n,
+    onClose: e,
+    transitionState: p,
+    heading: m,
     formTitle: f,
     allowReset: k = false
-  } = t, v = (0, i.bG)([o.A], () => o.A.getChannel(e)), C = (0, c.Ay)(v), b = u.A.getNickname(e), [g, j] = l.useState(null != b ? b : "");
+  } = t, v = (0, l.bG)([o.A], () => o.A.getChannel(n)), C = (0, c.Ay)(v), g = u.A.getNickname(n), [b, j] = i.useState(null != g ? g : "");
 
   function y(t) {
-    t.preventDefault(), (0, d.w6)(e, g), n()
+    t.preventDefault(), (0, d.w6)(n, b), e()
   }
   return (0, a.jsx)("form", {
     onSubmit: y,
     children: (0, a.jsxs)(s.aFV, {
-      title: p,
+      title: m,
       actions: [{
         text: x.intl.string(x.t["ETE/oC"]),
-        onClick: n,
+        onClick: e,
         variant: "secondary"
       }, {
-        text: p,
+        text: m,
         onClick: y,
         variant: "primary",
         type: "submit"
       }],
-      onClose: n,
-      transitionState: m,
+      onClose: e,
+      transitionState: p,
       children: [(0, a.jsx)(r.ksK, {
         label: f,
-        value: g,
+        value: b,
         onChange: j,
         placeholder: null != C ? C : true,
         maxLength: 100,
         autoFocus: true
-      }), k && null != b ? (0, a.jsx)("div", {
+      }), k && null != g ? (0, a.jsx)("div", {
         className: h.c,
         children: (0, a.jsx)(r.QWc, {
           text: x.intl.string(x.t.aE02Rz),
           onClick: function() {
-            (0, d.w6)(e, null), n()
+            (0, d.w6)(n, null), e()
           },
           textVariant: "text-sm/normal"
         })

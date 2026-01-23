@@ -55,11 +55,11 @@ function V(e) {
       s = x.A.getCurrentlySelectedChannelId(),
       o = C.Ay.getCurrentSidebarChannelId(null == (n = t.messageReference) ? true : n.channel_id),
       l = s === a && o === (null == r ? true : r.id);
-    null == r || null == i || l || null == a || (I.A.openModReportAsSidebar({
+    null == r || null == i || l || null == a || (S.A.openModReportAsSidebar({
       channelId: r.id,
       baseChannelId: a,
       guildId: r.guild_id
-    }), (0, S.iN)(a), j.default.track(k.HAw.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+    }), (0, I.iN)(a), j.default.track(k.HAw.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
       moderator_report_id: t.channel_id,
       destination_channel_id: a,
       destination_message_id: t.id
@@ -92,10 +92,10 @@ function F(e, t) {
   } = (0, O.A)(e.id, U.Fd), {
     usernameProfile: a,
     avatarProfile: s
-  } = n, o = (0, y.m)(e, t, a, r);
+  } = n, o = (0, b.m)(e, t, a, r);
   return {
     onClickUsername: o,
-    onClickAvatar: (0, y.Jo)(s, r),
+    onClickAvatar: (0, b.Jo)(s, r),
     onPopoutRequestClose: i.useCallback(() => r({
       usernameProfile: false,
       avatarProfile: false,
@@ -140,7 +140,7 @@ function B(e) {
       onPopoutRequestClose: u,
       showUsernamePopout: d,
       showAvatarPopout: f,
-      renderPopout: b.A,
+      renderPopout: y.A,
       compact: false,
       displayCompactAvatars: false
     }),
@@ -177,20 +177,20 @@ function H(e) {
     m = T.hD.useSetting(),
     g = T.rs.useSetting(),
     E = m && g,
-    b = (0, s.bG)([R.A], () => R.A.isDeveloper),
-    y = (0, _.S)((null != (t = h.editedTimestamp) ? t : h.timestamp).valueOf()),
+    y = (0, s.bG)([R.A], () => R.A.isDeveloper),
+    b = (0, _.S)((null != (t = h.editedTimestamp) ? t : h.timestamp).valueOf()),
     {
       content: O,
-      hasSpoilerEmbeds: S,
-      hasBailedAst: I
-    } = (0, A.A)(h, {
+      hasSpoilerEmbeds: I,
+      hasBailedAst: S
+    } = (0, v.A)(h, {
       hideSimpleEmbedContent: E,
       isInteracting: false,
       formatInline: false,
-      allowList: y,
-      allowHeading: y,
+      allowList: b,
+      allowHeading: b,
       allowLinks: true,
-      allowDevLinks: b,
+      allowDevLinks: y,
       previewLinkTarget: true
     }),
     C = (0, s.bG)([N.A], () => N.A.getChannel(o.channel_id));
@@ -204,14 +204,14 @@ function H(e) {
         channel: C,
         reportingUserId: null == l || null == (a = l.moderatorReport) ? true : a.reporting_user_id,
         reportedTimestamp: o.timestamp
-      }), (0, v.A)({
+      }), (0, A.A)({
         channelMessageProps: {
           message: h,
           channel: C,
           compact: false
         },
-        hasSpoilerEmbeds: S,
-        hasBailedAst: I,
+        hasSpoilerEmbeds: I,
+        hasBailedAst: S,
         isInteracting: false,
         isMessageSnapshot: true,
         renderThreadAccessory: false,

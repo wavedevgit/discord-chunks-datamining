@@ -2,7 +2,7 @@
 /** chunk id: 166862, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -66,7 +66,7 @@ function g(e) {
 }
 let E = (0, Chunk723702.isDesktop)();
 
-function b(e) {
+function y(e) {
   var t, n, r;
   let {
     choices: i,
@@ -90,15 +90,15 @@ function b(e) {
       }
     })) ? t : [],
     g = _.get(a),
-    b = null != g ? new Date().getTime() - g.getTime() : 0;
+    y = null != g ? new Date().getTime() - g.getTime() : 0;
   return (0, o.zV)(u.HAw.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, {
-    duration_ms: b,
+    duration_ms: y,
     error: false,
     num_options: m.length
   }), _.delete(a), null == (r = d.optionNameToAutocompleteQueries.get(l.name)) || r.set(l.query, m), d.optionNameToLastQuery.get(l.name) === l.query && (d.lastErrored = false, d.optionNameToLastResults.set(l.name, m)), d.lastResponseNonce = a, true
 }
 
-function y(e) {
+function b(e) {
   let {
     nonce: t
   } = e;
@@ -119,23 +119,23 @@ function O(e) {
     channelId: t,
     command: n
   } = e;
-  v(t, null == n ? true : n.id)
+  A(t, null == n ? true : n.id)
 }
 
-function A(e) {
+function v(e) {
   let {
     channelId: t,
     command: n
   } = e;
-  v(t, null == n ? true : n.id)
+  A(t, null == n ? true : n.id)
 }
 
-function v(e, t) {
+function A(e, t) {
   let n = c.A.getActiveOptionName(e),
     r = p.get(e);
   return null != r && (t !== r.commandId || n !== r.optionName) && (null != t && t !== r.commandId && (r.optionNameToLastResults.clear(), r.optionNameToNonce.clear(), r.optionNameToLastQuery.clear(), r.optionNameToAutocompleteQueries.clear()), r.lastErrored = false, r.commandId = t, r.optionName = n, true)
 }
-class S extends(r = Chunk311907.Ay.Store) {
+class I extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(c.A)
   }
@@ -153,15 +153,15 @@ class S extends(r = Chunk311907.Ay.Store) {
     return h(e).lastResponseNonce
   }
 }
-d(S, "displayName", "ApplicationCommandAutocompleteStore");
-let I = new S(Chunk73153.h, {
+d(I, "displayName", "ApplicationCommandAutocompleteStore");
+let S = new I(Chunk73153.h, {
   CONNECTION_OPEN: m,
   LOGOUT: m,
   CHANNEL_SELECT: m,
   APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST: g,
-  APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE: b,
-  INTERACTION_FAILURE: y,
+  APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE: y,
+  INTERACTION_FAILURE: b,
   APPLICATION_COMMAND_SET_ACTIVE_COMMAND: O,
   APP_LAUNCHER_SET_ACTIVE_COMMAND: O,
-  APPLICATION_COMMAND_UPDATE_CHANNEL_STATE: A
+  APPLICATION_COMMAND_UPDATE_CHANNEL_STATE: v
 })

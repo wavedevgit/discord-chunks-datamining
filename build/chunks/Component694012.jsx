@@ -2,7 +2,7 @@
 /** chunk id: 694012, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => c
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -12,61 +12,61 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk257554 = require("./257554.js");
 
-function o(e) {
+function c(e) {
   let {
     className: t,
     enabled: n,
     previewCTA: i,
-    onPreview: o,
+    onPreview: c,
     onToggle: d,
     animateStatus: u,
-    firstLine: f,
-    secondLine: g,
-    disabled: b
+    firstLine: g,
+    secondLine: m,
+    disabled: p
   } = e;
   return (0, r.jsxs)("div", {
-    className: l()(t, c.TV),
+    className: l()(t, o.TV),
     children: [n ? (0, r.jsx)(s.A9s, {
       size: "custom",
       color: "currentColor",
       width: 24,
       height: 24,
-      className: l()(c.nu, {
-        [c.i0]: u
+      className: l()(o.nu, {
+        [o.i0]: u
       })
     }) : (0, r.jsx)(s.R2l, {
       size: "custom",
       color: "currentColor",
       width: 24,
       height: 24,
-      className: l()(c.Vi, {
-        [c.i0]: u
+      className: l()(o.Vi, {
+        [o.i0]: u
       })
     }), (0, r.jsxs)("div", {
-      className: c.A5,
+      className: o.A5,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: f
+        children: g
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: g
+        children: m
       })]
     }), (0, r.jsxs)("div", {
-      className: c.UD,
-      children: [null == o ? null : (0, r.jsx)("div", {
+      className: o.UD,
+      children: [null == c ? null : (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: c.jc,
+        className: o.jc,
         children: (0, r.jsx)(s.Button, {
           variant: "secondary",
           size: "sm",
           text: null != i ? i : a.intl.string(a.t["5U0kL8"]),
-          onClick: o,
-          disabled: b
+          onClick: c,
+          disabled: p
         })
       }), (0, r.jsx)(s.Button, {
         variant: n ? "critical-primary" : "primary",
         size: "sm",
-        disabled: null == d || !n || b,
+        disabled: null == d || !n || p,
         text: n ? a.intl.string(a.t.R9GHya) : a.intl.string(a.t.JFfins),
         onClick: d
       })]

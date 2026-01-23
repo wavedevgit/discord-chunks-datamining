@@ -2,7 +2,7 @@
 /** chunk id: 445567, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  B: () => p
+  B: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,16 +18,16 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk664991 = require("./664991.js");
 
-function p(e) {
+function b(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, p = t.features.has(d.GuildFeatures.BANNER), x = t.features.has(d.GuildFeatures.ANIMATED_BANNER), h = p && n, {
+  } = e, b = t.features.has(d.GuildFeatures.BANNER), h = t.features.has(d.GuildFeatures.ANIMATED_BANNER), x = b && n, {
     analyticsLocations: j
-  } = (0, s.Ay)(), O = i.useCallback((e, n) => {
-    (0, o.fI)(t, j, e, n)
-  }, [j, t]), y = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, o.p_)({
+  } = (0, s.Ay)(), _ = i.useCallback((e, n) => {
+    (0, c.fI)(t, j, e, n)
+  }, [j, t]), O = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), (0, c.p_)({
       guild: t,
       analyticsLocations: j,
       analyticsSection: d.JJy.GUILD_BANNER,
@@ -36,22 +36,22 @@ function p(e) {
     })
   }, [j, t]), v = (0, r.jsx)(a.A, {
     image: t.banner,
-    makeURL: e => null != e ? c.Ay.getGuildBannerURL({
+    makeURL: e => null != e ? o.Ay.getGuildBannerURL({
       id: t.id,
       banner: e
-    }, x) : null,
-    disabled: !h,
-    onChange: O,
-    hint: b.intl.string(b.t.uPvxqJ),
-    onOpenImageSelectModal: () => (0, o.Nn)({
-      uploadType: f.HL.GUILD_BANNER,
-      maxFileSizeBytes: g.j,
+    }, h) : null,
+    disabled: !x,
+    onChange: _,
+    hint: p.intl.string(p.t.uPvxqJ),
+    onOpenImageSelectModal: () => (0, c.Nn)({
+      uploadType: g.HL.GUILD_BANNER,
+      maxFileSizeBytes: m.j,
       onComplete: e => {
         let {
           imageUri: t,
           file: n
         } = e;
-        return O(t, n)
+        return _(t, n)
       },
       analyticsLocation: {
         page: d.liQ.GUILD_SETTINGS,
@@ -59,13 +59,13 @@ function p(e) {
       },
       analyticsLocations: j
     }),
-    enabled: h
+    enabled: x
   });
-  return p ? v : (0, r.jsx)(l.DUT, {
+  return b ? v : (0, r.jsx)(l.DUT, {
     "aria-hidden": true,
     tabIndex: false,
-    className: m.U,
-    onClick: y,
+    className: f.U,
+    onClick: O,
     children: v
   })
 }

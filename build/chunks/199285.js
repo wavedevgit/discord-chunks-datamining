@@ -12,13 +12,13 @@ var Chunk311907 = require("./311907.js"),
 
 function c(e) {
   let t = null == e ? true : e.features.has(o.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL),
-    n = (0, r.bG)([s.A, i.default, l.Ay], () => {
+    n = (0, r.bG)([a.A, i.default, l.Ay], () => {
       if (null == e) return;
-      let t = s.A.getRequest(e.id),
+      let t = a.A.getRequest(e.id),
         n = i.default.getCurrentUser();
       if (null == n || null == t || t.userId !== n.id) return;
       let r = l.Ay.getMember(e.id, t.userId);
-      if (!(null != r && !r.isPending) || (0, a.Oe)(t)) return t.applicationStatus
+      if (!(null != r && !r.isPending) || (0, s.Oe)(t)) return t.applicationStatus
     }, [e]);
   return t ? n : true
 }

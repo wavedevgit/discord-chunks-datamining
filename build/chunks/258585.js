@@ -2,8 +2,8 @@
 /** chunk id: 258585, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  X5: () => y,
-  eO: () => b,
+  X5: () => b,
+  eO: () => y,
   pn: () => O
 });
 var Chunk311907 = require("./311907.js"),
@@ -76,7 +76,7 @@ let h = {
     }
   });
 
-function b(e) {
+function y(e) {
   let {
     location: t
   } = e, {
@@ -91,11 +91,11 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     location: t
   } = e;
-  return (0, r.bG)([o.A], () => b({
+  return (0, r.bG)([o.A], () => y({
     location: t
   }))
 }

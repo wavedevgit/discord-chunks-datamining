@@ -2,7 +2,7 @@
 /** chunk id: 99787, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => c
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -11,11 +11,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk449585 = require("./449585.jsx"),
   Chunk864557 = require("./864557.jsx");
 
-function o(e) {
+function c(e) {
   let {
     rule: t,
     onChangeRule: n
-  } = e, o = i.useMemo(() => (0, s.J6)(t.triggerType), [t.triggerType]), d = a.Bx(t.guildId), u = i.useMemo(() => (0, l.XO)(), []), f = (e, r) => {
+  } = e, c = i.useMemo(() => (0, s.J6)(t.triggerType), [t.triggerType]), d = a.Bx(t.guildId), u = i.useMemo(() => (0, l.XO)(), []), g = (e, r) => {
     var i, l;
     if (null == r) return;
     let s = t.actions.some(e => e.type === r.type),
@@ -55,9 +55,9 @@ function o(e) {
     }), i))
   };
   return (0, r.jsx)(r.Fragment, {
-    children: o.map(e => {
+    children: c.map(e => {
       let n = t.actions.find(t => t.type === e);
-      return (0, r.jsx)(c.A, {
+      return (0, r.jsx)(o.A, {
         guildId: t.guildId,
         triggerType: t.triggerType,
         action: null != n ? n : u[e],
@@ -69,8 +69,8 @@ function o(e) {
             s = n ? r : l;
           if (null != s && (!i || n)) {
             let n = d[e];
-            null != n ? f(true, await n(t, s)) : f(true, s)
-          } else f(false, i ? r : l)
+            null != n ? g(true, await n(t, s)) : g(true, s)
+          } else g(false, i ? r : l)
         }
       }, e)
     })

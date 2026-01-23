@@ -31,21 +31,21 @@ var Chunk627968 = require("./627968.js"),
 let C = () => {
     let e = (0, s.bG)([u.A], () => u.A.useReducedMotion);
     return (0, r.jsx)("div", {
-      className: v.s,
+      className: A.s,
       children: e ? (0, r.jsx)("img", {
-        src: S.A,
-        className: v.Cb,
+        src: I.A,
+        className: A.Cb,
         alt: "Orb"
       }) : (0, r.jsxs)(d.A, {
         autoPlay: true,
         loop: true,
-        className: v.Cb,
+        className: A.Cb,
         children: [(0, r.jsx)("source", {
-          src: I.A,
+          src: S.A,
           type: "video/webm"
         }), (0, r.jsx)("img", {
-          src: S.A,
-          className: v.Cb,
+          src: I.A,
+          className: A.Cb,
           alt: "Orb"
         })]
       })
@@ -57,19 +57,19 @@ function R(e) {
   let {
     targetElementRef: t,
     shouldShow: n,
-    onRequestClose: S,
-    ctaText: I,
+    onRequestClose: I,
+    ctaText: S,
     ctaOnClick: R
   } = e, w = (0, s.bG)([u.A], () => u.A.useReducedMotion), P = (0, s.bG)([f.A], () => f.A.getRewardForProgram(p.W.NITRO)), D = (0, s.bG)([h.default], () => h.default.getCurrentUser()), {
     balance: x
   } = (0, _.W)(), L = i.useMemo(() => {
-    let e = (0, g.YE)(D, b.PremiumTypes.TIER_2),
+    let e = (0, g.YE)(D, y.PremiumTypes.TIER_2),
       t = !(0, g.ki)(D);
     if (!f.A.passesGeneralUIInvariant(p.W.NITRO)) return null;
     if (t) return (0, r.jsx)(c.EYj, {
       variant: "text-xs/normal",
       color: "text-default",
-      children: A.intl.format(O.default.cjEl8a, {
+      children: v.intl.format(O.default.cjEl8a, {
         deepLinkToNitroOrbs: () => {}
       })
     });
@@ -79,7 +79,7 @@ function R(e) {
         children: [(0, r.jsx)(c.EYj, {
           variant: "text-xs/normal",
           color: "text-default",
-          children: A.intl.format(O.default["AvL/At"], {
+          children: v.intl.format(O.default["AvL/At"], {
             days: Math.max(1, e),
             deepLinkToNitroOrbs: () => {}
           })
@@ -91,7 +91,7 @@ function R(e) {
   return (0, r.jsxs)(o.x, {
     targetElementRef: t,
     shouldShow: n,
-    onRequestClose: S,
+    onRequestClose: I,
     position: "bottom",
     gradientColor: "blue",
     modal: true,
@@ -102,30 +102,30 @@ function R(e) {
       muted: true,
       playsInline: true,
       tabIndex: false,
-      className: v.yG,
+      className: A.yG,
       src: T.A
     }), (0, r.jsxs)("div", {
-      className: v.Qs,
+      className: A.Qs,
       children: [(0, r.jsx)(l.q, {
-        onClick: S
+        onClick: I
       }), (0, r.jsxs)("div", {
-        className: v.hQ,
+        className: A.hQ,
         children: [(0, r.jsx)(C, {}), (0, r.jsxs)("div", {
-          className: v.y$,
+          className: A.y$,
           children: [(0, r.jsxs)("div", {
-            className: v.E2,
+            className: A.E2,
             children: [(0, r.jsx)(c.EYj, {
               variant: "display-lg",
-              className: v.K,
+              className: A.K,
               children: null != x ? x : 0
             }), (null != x ? x : 0) > 0 && (0, r.jsx)(c.EYj, {
               variant: "text-xs/normal",
               color: "text-muted",
-              children: A.intl.string(O.default.KclK9z)
+              children: v.intl.string(O.default.KclK9z)
             })]
           }), L]
         }), (0, r.jsx)(c.$nd, {
-          text: I,
+          text: S,
           variant: "primary",
           size: "sm",
           onClick: R,
@@ -133,9 +133,9 @@ function R(e) {
         }), (0, r.jsx)(c.EYj, {
           variant: "text-xs/normal",
           color: "text-muted",
-          className: v.CU,
-          children: A.intl.format(O.default.fhAVek, {
-            helpdeskArticle: m.A.getArticleURL(y.MVz.ORBS_FAQ)
+          className: A.CU,
+          children: v.intl.format(O.default.fhAVek, {
+            helpdeskArticle: m.A.getArticleURL(b.MVz.ORBS_FAQ)
           })
         })]
       })]

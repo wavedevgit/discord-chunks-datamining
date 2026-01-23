@@ -21,14 +21,14 @@ function s(e) {
   let p = null != (0, a.LU)({
       applicationId: d.id
     }) ? i.KX8 : i.SYi,
-    f = false;
+    h = false;
 
-  function h(e) {
-    u(e, f)
+  function g(e) {
+    u(e, h)
   }
 
-  function A() {
-    f = true
+  function f() {
+    h = true
   }(0, i.mMO)(async () => {
     let {
       default: e
@@ -55,14 +55,14 @@ function s(e) {
       customId: s,
       linkId: o,
       message: c,
-      onCopyLink: A,
-      onShare: h
+      onCopyLink: f,
+      onShare: g
     }, n))
   }, {
     modalKey: "activity-share-moment-modal",
     contextKey: p,
     onCloseCallback: () => {
-      u(false, f)
+      u(false, h)
     }
   })
 }

@@ -89,7 +89,7 @@ let m = {
       r(l)
     }, [r, l])
   },
-  b = e => {
+  y = e => {
     let {
       currentAnimationType: t
     } = e, n = _(e, ["currentAnimationType"]), i = (0, s.N)(null != t ? t : "earn"), {
@@ -103,7 +103,7 @@ let m = {
       useLottieDefaultColors: true
     }))
   },
-  y = e => {
+  b = e => {
     let {
       currentAnimationType: t
     } = e, n = _(e, ["currentAnimationType"]), i = (0, a.q)(null != t ? t : "earn"), {
@@ -119,5 +119,5 @@ let m = {
   },
   O = e => {
     let t = (0, l.Ay)();
-    return (0, o.qB)(t) ? (0, r.jsx)(y, d({}, e)) : (0, r.jsx)(b, d({}, e))
+    return (0, o.qB)(t) ? (0, r.jsx)(b, d({}, e)) : (0, r.jsx)(y, d({}, e))
   }

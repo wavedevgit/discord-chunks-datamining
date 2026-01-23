@@ -2,7 +2,7 @@
 /** chunk id: 155130, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W: () => v
+  W: () => A
 });
 var Chunk755325 = require("./755325.js");
 
@@ -56,11 +56,11 @@ var f = new WeakMap,
   m = new WeakMap,
   g = new WeakMap,
   E = new WeakMap,
-  b = new WeakMap,
   y = new WeakMap,
+  b = new WeakMap,
   O = new WeakMap,
-  A = new WeakMap;
-class v {
+  v = new WeakMap;
+class A {
   constructor(e, t, n) {
     if (i(this, f, {
         writable: true,
@@ -98,26 +98,26 @@ class v {
         }
       }), s(this, "setup", () => {
         if ("u" > typeof window) {
-          if (v.isSetUp) throw Error("Cannot have two MultiBackends at the same time.");
-          v.isSetUp = true, o(this, E).call(this, window), o(this, _)[o(this, f)].instance.setup()
+          if (A.isSetUp) throw Error("Cannot have two MultiBackends at the same time.");
+          A.isSetUp = true, o(this, E).call(this, window), o(this, _)[o(this, f)].instance.setup()
         }
       }), s(this, "teardown", () => {
-        "u" > typeof window && (v.isSetUp = false, o(this, b).call(this, window), o(this, _)[o(this, f)].instance.teardown())
-      }), s(this, "connectDragSource", (e, t, n) => o(this, A).call(this, "connectDragSource", e, t, n)), s(this, "connectDragPreview", (e, t, n) => o(this, A).call(this, "connectDragPreview", e, t, n)), s(this, "connectDropTarget", (e, t, n) => o(this, A).call(this, "connectDropTarget", e, t, n)), s(this, "profile", () => o(this, _)[o(this, f)].instance.profile()), s(this, "previewEnabled", () => o(this, _)[o(this, f)].preview), s(this, "previewsList", () => o(this, p)), s(this, "backendsList", () => o(this, h)), i(this, E, {
+        "u" > typeof window && (A.isSetUp = false, o(this, y).call(this, window), o(this, _)[o(this, f)].instance.teardown())
+      }), s(this, "connectDragSource", (e, t, n) => o(this, v).call(this, "connectDragSource", e, t, n)), s(this, "connectDragPreview", (e, t, n) => o(this, v).call(this, "connectDragPreview", e, t, n)), s(this, "connectDropTarget", (e, t, n) => o(this, v).call(this, "connectDropTarget", e, t, n)), s(this, "profile", () => o(this, _)[o(this, f)].instance.profile()), s(this, "previewEnabled", () => o(this, _)[o(this, f)].preview), s(this, "previewsList", () => o(this, p)), s(this, "backendsList", () => o(this, h)), i(this, E, {
         writable: true,
         value: e => {
           o(this, h).forEach(t => {
-            t.transition && e.addEventListener(t.transition.event, o(this, y))
-          })
-        }
-      }), i(this, b, {
-        writable: true,
-        value: e => {
-          o(this, h).forEach(t => {
-            t.transition && e.removeEventListener(t.transition.event, o(this, y))
+            t.transition && e.addEventListener(t.transition.event, o(this, b))
           })
         }
       }), i(this, y, {
+        writable: true,
+        value: e => {
+          o(this, h).forEach(t => {
+            t.transition && e.removeEventListener(t.transition.event, o(this, b))
+          })
+        }
+      }), i(this, b, {
         writable: true,
         value: e => {
           let t = o(this, f);
@@ -136,7 +136,7 @@ class v {
       }), i(this, O, {
         writable: true,
         value: (e, t, n, r) => o(this, _)[o(this, f)].instance[e](t, n, r)
-      }), i(this, A, {
+      }), i(this, v, {
         writable: true,
         value: (e, t, n, r) => {
           let i = "".concat(e, "_").concat(t),
@@ -156,4 +156,4 @@ class v {
     }), c(this, f, o(this, h)[0].id), c(this, m, {})
   }
 }
-s(v, "isSetUp", false)
+s(A, "isSetUp", false)

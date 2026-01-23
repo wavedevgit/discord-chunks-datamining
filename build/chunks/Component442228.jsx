@@ -2,7 +2,7 @@
 /** chunk id: 442228, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -55,7 +55,7 @@ function g(e, t) {
   }), e
 }
 let E = 57.75,
-  b = Chunk64700.memo(function(e) {
+  y = Chunk64700.memo(function(e) {
     let {
       user: t,
       onClose: n,
@@ -63,30 +63,30 @@ let E = 57.75,
       hidePersonalInformation: _,
       viewFullBioDisabled: m = false
     } = e, {
-      context: b
+      context: y
     } = (0, c.NJ)(), {
-      analyticsLocations: y
-    } = (0, l.Ay)(), [O, A] = i.useState(false), [v, S] = i.useState(false), I = i.useRef(null), T = e => {
-      I.current = e, null == e || (A(!v && e.scrollHeight - e.clientHeight > 1), e.getBoundingClientRect().height > E && S(true))
+      analyticsLocations: b
+    } = (0, l.Ay)(), [O, v] = i.useState(false), [A, I] = i.useState(false), S = i.useRef(null), T = e => {
+      S.current = e, null == e || (v(!A && e.scrollHeight - e.clientHeight > 1), e.getBoundingClientRect().height > E && I(true))
     }, C = () => {
-      null == n || n(), (0, u.openUserProfileModal)(g(h({}, b), {
+      null == n || n(), (0, u.openUserProfileModal)(g(h({}, y), {
         userId: t.id,
-        sourceAnalyticsLocations: y
+        sourceAnalyticsLocations: b
       }))
     }, N = e => {
-      null == I.current || I.current.contains(e.relatedTarget) || (I.current.scrollTop = 0)
+      null == S.current || S.current.contains(e.relatedTarget) || (S.current.scrollTop = 0)
     };
     return _ || null == a || "" === a ? null : (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
         ref: T,
-        className: s()(p.mA, v && p.Em),
+        className: s()(p.mA, A && p.Em),
         onBlur: N,
         children: (0, r.jsx)(d.A, {
           userBio: a,
           setLineClamp: false,
           textColor: "text-strong"
         })
-      }), (O || v) && (0, r.jsx)("div", {
+      }), (O || A) && (0, r.jsx)("div", {
         className: p.HV,
         children: (0, r.jsx)(o.QWc, {
           textVariant: "text-xs/normal",

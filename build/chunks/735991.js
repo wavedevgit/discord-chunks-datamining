@@ -45,7 +45,7 @@ var Chunk487899 = require("./487899.js"),
   Chunk381941 = require("./381941.js"),
   Chunk985018 = require("./985018.jsx");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -54,14 +54,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -112,26 +112,26 @@ function P(e) {
 }
 
 function D(e) {
-  return P(e) ? e.name : v.intl.string(v.t.UB2gG2)
+  return P(e) ? e.name : A.intl.string(A.t.UB2gG2)
 }
 
 function x(e) {
-  return P(e) ? e.description : v.intl.string(v.t.X9fusn)
+  return P(e) ? e.description : A.intl.string(A.t.X9fusn)
 }
 
 function L(e) {
   var t;
-  return P(e) && (0, i.Lt)(null != (t = e.flags) ? t : 0, y.gfo.EMBEDDED)
+  return P(e) && (0, i.Lt)(null != (t = e.flags) ? t : 0, b.gfo.EMBEDDED)
 }
 
 function j(e) {
   var t;
-  return P(e) && (0, i.Lt)(null != (t = e.flags) ? t : 0, y.gfo.PARTNER)
+  return P(e) && (0, i.Lt)(null != (t = e.flags) ? t : 0, b.gfo.PARTNER)
 }
 
 function M(e) {
   var t;
-  return P(e) && (0, i.Lt)(null != (t = e.flags) ? t : 0, y.gfo.PROMOTED)
+  return P(e) && (0, i.Lt)(null != (t = e.flags) ? t : 0, b.gfo.PROMOTED)
 }
 
 function k(e) {
@@ -187,14 +187,14 @@ function V(e) {
         var e;
         let t = _.Ay.parse(d, a.content);
         t.tts = null != (e = a.tts) && e, s.A.sendMessage(r.channel.id, t, true, {
-          location: A.Hx.APP_COMMAND
+          location: v.Hx.APP_COMMAND
         })
       }
     } catch (e) {
       throw a.A.show({
-        title: v.intl.string(v.t["aHO//m"]),
-        body: v.intl.string(v.t.kuzKHK),
-        confirmText: v.intl.string(v.t["5911Lb"]),
+        title: A.intl.string(A.t["aHO//m"]),
+        body: A.intl.string(A.t.kuzKHK),
+        confirmText: A.intl.string(A.t["5911Lb"]),
         onConfirm: () => p()
       }), e
     }
@@ -209,7 +209,7 @@ function F(e) {
     } = t,
     r = N(t, ["fakeAppIconURL"]);
   return P(e) ? {
-    iconURL: m.Ay.getApplicationIconURL(C(I({}, r), {
+    iconURL: m.Ay.getApplicationIconURL(C(S({}, r), {
       id: e.id,
       icon: e.icon
     })),
@@ -217,8 +217,8 @@ function F(e) {
     description: e.description
   } : {
     iconURL: null != n ? n : null,
-    name: v.intl.string(v.t.UB2gG2),
-    description: v.intl.string(v.t.X9fusn)
+    name: A.intl.string(A.t.UB2gG2),
+    description: A.intl.string(A.t.X9fusn)
   }
 }
 
@@ -232,7 +232,7 @@ function H(e) {
 }
 
 function Y(e) {
-  return e === b.s4.TEXT
+  return e === y.s4.TEXT
 }
 
 function W(e) {
@@ -243,7 +243,7 @@ function K(e) {
   let t = [];
   for (let n of e) {
     let e = n.application_directory_collection_items.filter(e => e.type === r.L.APPLICATION && L(e.application));
-    0 !== e.length && t.push(C(I({}, n), {
+    0 !== e.length && t.push(C(S({}, n), {
       application_directory_collection_items: e
     }))
   }

@@ -6,20 +6,20 @@ require.d(exports, {
   Av: () => a,
   Ct: () => p,
   HZ: () => d,
-  Ls: () => b,
-  R0: () => v,
+  Ls: () => y,
+  R0: () => A,
   Sn: () => _,
   cX: () => l,
   fg: () => r,
   j9: () => c,
   m0: () => h,
   q4: () => g,
-  r_: () => A,
+  r_: () => v,
   t1: () => O,
   tn: () => E,
   uF: () => o,
   un: () => m,
-  uo: () => y,
+  uo: () => b,
   xl: () => u
 }), require("./747238.js");
 var r = function(e) {
@@ -46,7 +46,7 @@ function u() {
 }
 
 function d() {
-  return "WEB" === y()
+  return "WEB" === b()
 }
 
 function f() {
@@ -80,11 +80,11 @@ function E() {
   return g()
 }
 
-function b() {
+function y() {
   return u() || g() || a
 }
 
-function y() {
+function b() {
   return o() ? "WINDOWS" : l() ? "OSX" : c() ? "LINUX" : "WEB"
 }
 
@@ -92,7 +92,7 @@ function O() {
   return s
 }
 
-function A() {
+function v() {
   switch (s) {
     case "ios":
     case "android":
@@ -102,7 +102,7 @@ function A() {
   }
 }
 
-function v() {
+function A() {
   let {
     userAgent: e
   } = window.navigator;

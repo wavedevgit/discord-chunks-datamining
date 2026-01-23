@@ -28,7 +28,7 @@ function g(e) {
     emojiConfetti: n
   } = e, [a, d] = i.useState(false), f = i.useRef(null), g = (0, u.A)({
     location: "GiftEmoji"
-  }), E = s()(_.Qq, g && _.Ow), b = e => (0, r.jsxs)("div", {
+  }), E = s()(_.Qq, g && _.Ow), y = e => (0, r.jsxs)("div", {
     className: _.ZC,
     children: [(0, r.jsxs)("div", {
       className: _.Ry,
@@ -40,7 +40,7 @@ function g(e) {
         children: p.intl.string(p.t.stGFA3)
       })]
     }), e]
-  }), y = e => {
+  }), b = e => {
     let {
       emoji: n
     } = e;
@@ -60,10 +60,10 @@ function g(e) {
         children: (0, r.jsx)(c.A, {
           analyticsOverride: h,
           closePopout: t,
-          onSelectEmoji: y,
+          onSelectEmoji: b,
           wrapper: "div",
           pickerIntention: m,
-          renderHeader: b,
+          renderHeader: y,
           headerClassName: _.a8,
           className: _.vX,
           listHeaderClassName: _.vX,

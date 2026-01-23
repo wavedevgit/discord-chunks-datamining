@@ -2,8 +2,8 @@
 /** chunk id: 130222, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => I,
-  Us: () => A,
+  Ay: () => S,
+  Us: () => v,
   ls: () => O
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js");
@@ -28,12 +28,12 @@ let Chunk993830 = require("./993830.js"),
 var O = function(e) {
   return e.NONE = "NONE", e.STANDARD = "STANDARD", e.KRISP = "KRISP", e
 }({});
-let A = {
+let v = {
   page: Chunk652215.liQ.USER_SETTINGS,
   section: Chunk652215.JJy.SETTINGS_VOICE_AND_VIDEO
 };
 
-function v(e) {
+function A(e) {
   let t = e.currentTarget;
   d.default.track(m.HAw.NOISE_CANCELLATION_LINK_CLICKED, {
     text: t.text,
@@ -45,7 +45,7 @@ function v(e) {
   })
 }
 
-function S() {
+function I() {
   let e = (0, i.bG)([p.A], () => p.A.theme),
     {
       noiseCancellation: t,
@@ -78,7 +78,7 @@ function S() {
       description: g.intl.string(g.t.najZCV),
       options: h,
       onChange: e => {
-        o.A.setNoiseCancellation("KRISP" === e, A), o.A.setNoiseSuppression("STANDARD" === e, A)
+        o.A.setNoiseCancellation("KRISP" === e, v), o.A.setNoiseSuppression("STANDARD" === e, v)
       },
       value: _
     }), c && (0, r.jsx)(s.ZpM, {
@@ -86,13 +86,13 @@ function S() {
       children: (0, r.jsxs)("div", {
         className: E.C,
         children: [(0, r.jsx)("img", {
-          src: (0, a.qB)(e) ? b : y,
+          src: (0, a.qB)(e) ? y : b,
           width: 70,
           height: 40,
           alt: ""
         }), (0, r.jsx)(s.MzZ, {
           href: f.A.getArticleURL(m.MVz.NOISE_SUPPRESSION),
-          onClick: v,
+          onClick: A,
           children: g.intl.string(g.t.hvVgAZ)
         })]
       })
@@ -100,7 +100,7 @@ function S() {
   })
 }
 
-function I() {
+function S() {
   let {
     inputMode: e,
     inputDeviceId: t,
@@ -119,13 +119,13 @@ function I() {
     bypassSystemInputProcessing: u.A.getBypassSystemInputProcessing()
   })), {
     hasEchoCancellation: E,
-    hasNoiseSuppression: b,
-    hasAutomaticGainControl: y
+    hasNoiseSuppression: y,
+    hasAutomaticGainControl: b
   } = (0, i.cf)([c.A], () => ({
     hasEchoCancellation: c.A.hasEchoCancellation(t),
     hasNoiseSuppression: c.A.hasNoiseSuppression(t),
     hasAutomaticGainControl: c.A.hasAutomaticGainControl(t)
-  }), [t]), O = E || b || y, A = e === m.TBI.VOICE_ACTIVITY && d;
+  }), [t]), O = E || y || b, v = e === m.TBI.VOICE_ACTIVITY && d;
   return (0, r.jsxs)(_.A, {
     children: [O && (0, r.jsx)(s.wx6, {
       type: "info",
@@ -143,7 +143,7 @@ function I() {
       })
     }), (0, r.jsx)(l.x, {
       setting: h.H.VOICE_AND_VIDEO_ADVANCED_PROCESSING_NOISE_SUPPRESSION,
-      children: (0, r.jsx)(S, {})
+      children: (0, r.jsx)(I, {})
     }), (0, r.jsx)(l.x, {
       setting: h.H.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ADVANCED_VOICE_ACTIVITY,
       children: (0, r.jsx)(s.dOG, {
@@ -153,7 +153,7 @@ function I() {
         onChange: t => o.A.setMode(e, {
           vadUseKrisp: t
         }),
-        disabled: !A
+        disabled: !v
       })
     }), (0, r.jsx)(l.x, {
       setting: h.H.VOICE_AND_VIDEO_ADVANCED_PROCESSING_AUTOMATIC_GAIN_CONTROL,
@@ -165,7 +165,7 @@ function I() {
           page: m.liQ.USER_SETTINGS,
           section: m.JJy.SETTINGS_VOICE_AND_VIDEO
         }),
-        disabled: y
+        disabled: b
       })
     }), (0, r.jsx)(l.x, {
       setting: h.H.VOICE_AND_VIDEO_ADVANCED_PROCESSING_BYPASS_SYSTEM_INPUT_PROCESSING,

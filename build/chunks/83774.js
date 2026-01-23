@@ -60,8 +60,8 @@ function u(e, t, n, i, s) {
   var u, d, f, p, _, h, m;
   let g = {},
     E = {},
-    b = [],
-    y = [];
+    y = [],
+    b = [];
   for (let t of e.values()) switch (t.type) {
     case "candidate-pair":
       g[t.id] = t;
@@ -70,15 +70,15 @@ function u(e, t, n, i, s) {
       E[t.id] = t;
       break;
     case "inbound-rtp":
-      b.push(t);
+      y.push(t);
       break;
     case "outbound-rtp":
-      y.push(t)
+      b.push(t)
   }
   let O = Object.values(g).find(e => "succeeded" === e.state);
   if (true === O) return null;
-  let A = [];
-  for (let e of y) {
+  let v = [];
+  for (let e of b) {
     let t = E[e.codecId];
     if (null == t) continue;
     let i = {
@@ -92,7 +92,7 @@ function u(e, t, n, i, s) {
       packetsSent: e.packetsSent,
       bitrateTarget: e.targetBitrate
     };
-    if ("audio" === e.kind) A.push(o(a({}, i), {
+    if ("audio" === e.kind) v.push(o(a({}, i), {
       type: "audio"
     }));
     else if ("video" === e.kind && s) {
@@ -100,7 +100,7 @@ function u(e, t, n, i, s) {
         width: e.frameWidth,
         height: e.frameHeight
       } : true;
-      A.push(o(a({}, i), {
+      v.push(o(a({}, i), {
         framesEncoded: e.framesEncoded,
         keyFramesEncoded: e.keyFramesEncoded,
         firCount: e.firCount,
@@ -115,8 +115,8 @@ function u(e, t, n, i, s) {
       }))
     }
   }
-  let v = {};
-  for (let e of b) {
+  let A = {};
+  for (let e of y) {
     let s = E[e.codecId];
     if (null == s) continue;
     let c = t(e.ssrc);
@@ -137,18 +137,18 @@ function u(e, t, n, i, s) {
     };
     if ("audio" === e.kind) {
       let t = true !== e.jitterBufferDelay && true !== e.jitterBufferEmittedCount ? Math.round(1e3 * e.jitterBufferDelay / e.jitterBufferEmittedCount) : 0;
-      null == v[c] && (v[c] = []), v[c].push(o(a({}, u), {
+      null == A[c] && (A[c] = []), A[c].push(o(a({}, u), {
         audioLevel: e.audioLevel,
         jitter: 1e3 * e.jitter,
         jitterBuffer: t
       }))
     } else if ("video" === e.kind) {
-      null == v[c] && (v[c] = []);
+      null == A[c] && (A[c] = []);
       let t = null !== e.frameWidth ? {
         width: e.frameWidth,
         height: e.frameHeight
       } : true;
-      v[c].push(o(a({}, u), {
+      A[c].push(o(a({}, u), {
         resolution: t,
         framesDecoded: e.framesDecoded,
         keyFramesDecoded: e.keyFramesDecoded,
@@ -169,18 +169,18 @@ function u(e, t, n, i, s) {
       }))
     }
   }
-  let S = "firefox" === (null != (u = platform.name) ? u : "unknown").toLowerCase() && 142 === parseInt(null != (d = platform.version) ? d : "", 10),
-    I = (null != (f = O.currentRoundTripTime) ? f : 0) * (S ? 1 : 1e3);
+  let I = "firefox" === (null != (u = platform.name) ? u : "unknown").toLowerCase() && 142 === parseInt(null != (d = platform.version) ? d : "", 10),
+    S = (null != (f = O.currentRoundTripTime) ? f : 0) * (I ? 1 : 1e3);
   return {
     transport: {
       availableOutgoingBitrate: null != (p = O.availableOutgoingBitrate) ? p : 0,
       bytesReceived: O.bytesReceived,
       bytesSent: O.bytesSent,
-      ping: I
+      ping: S
     },
     rtp: {
-      inbound: v,
-      outbound: A
+      inbound: A,
+      outbound: v
     }
   }
 }

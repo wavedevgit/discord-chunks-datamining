@@ -42,21 +42,21 @@ function u() {
       guildId: n
     } = e, r = new Set(_);
     t ? r.delete(n) : r.add(n), m([...r])
-  }, E = e => _.includes(e), b = 0 !== _.length, y = () => {
-    b ? m([]) : m(u)
-  }, [O, A] = (0, r.useState)(() => c[n](f, p)), v = O.map(e => d[e.id]).filter(Boolean);
+  }, E = e => _.includes(e), y = 0 !== _.length, b = () => {
+    y ? m([]) : m(u)
+  }, [O, v] = (0, r.useState)(() => c[n](f, p)), A = O.map(e => d[e.id]).filter(Boolean);
   return {
-    guilds: "" === e ? v : v.filter(t => t.name.toLowerCase().includes(e.toLowerCase())),
+    guilds: "" === e ? A : A.filter(t => t.name.toLowerCase().includes(e.toLowerCase())),
     sortOrder: n,
     searchQuery: e,
     setSortOrder: e => {
-      A(c[e](f, p)), l(e)
+      v(c[e](f, p)), l(e)
     },
     setSearchQuery: t,
     onToggleActivityRestrictedGuild: g,
     isActivityRestricted: E,
-    hasActivityRestrictedGuilds: b,
-    onToggleAllActivityRestrictedGuilds: y,
+    hasActivityRestrictedGuilds: y,
+    onToggleAllActivityRestrictedGuilds: b,
     numTotalGuilds: u.length,
     numActivityRestrictedGuilds: _.length
   }

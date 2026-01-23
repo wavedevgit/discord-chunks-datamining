@@ -98,12 +98,12 @@ let U = e => {
     setCustomGiftMessage: l,
     giftRecipientError: _,
     setGiftRecipientError: E,
-    validatingGiftRecipient: y,
+    validatingGiftRecipient: b,
     giftRecipient: C,
     recommendedGiftSkuIds: N,
     giftingOrigin: L,
     setValidatingGiftRecipient: j
-  } = (0, I.Pv)(), {
+  } = (0, S.Pv)(), {
     selectedSkuId: M,
     setSelectedSkuId: k,
     selectedSkuPricePreview: U,
@@ -121,12 +121,12 @@ let U = e => {
     j(true), null != _ && E(), await (0, c.JJ)(e.id, t) || E(P.intl.string(P.t["4kgVqQ"])), j(false)
   };
   (0, s.Ay)(() => {
-    null != M && null != C && (L !== w.vQ.DM_CHANNEL_WISHLIST && v.default.track(R.HAw.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+    null != M && null != C && (L !== w.vQ.DM_CHANNEL_WISHLIST && A.default.track(R.HAw.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
       sku_id: M
     }), Z(C, M))
   });
   let Q = e => {
-      L !== w.vQ.DM_CHANNEL_WISHLIST && v.default.track(R.HAw.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+      L !== w.vQ.DM_CHANNEL_WISHLIST && A.default.track(R.HAw.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
         sku_id: e
       }), null != C && Z(C, e), k(e)
     },
@@ -135,10 +135,10 @@ let U = e => {
         n = null;
       if (null != t) {
         var i;
-        n = null != G && null != (i = t[G]) ? i : t[A.B]
+        n = null != G && null != (i = t[G]) ? i : t[v.B]
       }
       if (null == n) return;
-      let a = (0, S.$g)(n.amount, n.currency);
+      let a = (0, I.$g)(n.amount, n.currency);
       return (0, r.jsx)(d.A, {
         skuId: e,
         price: a,
@@ -175,7 +175,7 @@ let U = e => {
     renderRightColumn: () => {
       if (q) return (0, r.jsxs)("div", {
         className: D.Tc,
-        children: [(0, r.jsx)(b.Z, {
+        children: [(0, r.jsx)(y.Z, {
           giftRecipient: C
         }), (0, r.jsx)(g.t, {
           isShopGift: true,
@@ -189,11 +189,11 @@ let U = e => {
         selectedSkuId: M,
         skuPricePreviewsById: B,
         skusById: H,
-        formatPrice: S.$g
+        formatPrice: I.$g
       });
       return L === w.vQ.USER_PROFILE_WISHLIST || L === w.vQ.DM_CHANNEL_WISHLIST ? (0, r.jsxs)("div", {
         className: D.Tc,
-        children: [(0, r.jsx)(b.Z, {
+        children: [(0, r.jsx)(y.Z, {
           giftRecipient: C
         }), J(), null != e && null != M && (0, r.jsx)(d.A, {
           skuId: M,
@@ -229,7 +229,7 @@ let U = e => {
     onStepChange: t,
     onBackClick: n,
     ctaDisabled: null != _ || null == C || C.id === (null == Y ? true : Y.id) || o.length > w.Jo,
-    loading: y
+    loading: b
   }
 };
 
@@ -333,7 +333,7 @@ function F(e) {
     t(), (0, a.s7G)(), null == n ? (0, c.Cz)({
       analyticsLocations: i,
       analyticsSource: o.A.COLLECTIBLES_GIFT_CUSTOMIZATION_MODAL
-    }) : (0, y.pX)("".concat(R.BVt.COLLECTIBLES_SHOP, "#itemSkuId=").concat(n))
+    }) : (0, b.pX)("".concat(R.BVt.COLLECTIBLES_SHOP, "#itemSkuId=").concat(n))
   }
   return (0, r.jsx)(a.QWc, {
     text: P.intl.string(P.t.J82mpK),

@@ -2,8 +2,8 @@
 /** chunk id: 426978, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F: () => b,
-  X: () => y
+  F: () => y,
+  X: () => b
 }), require("./896048.js"), require("./638769.js"), require("./321073.js");
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438),
@@ -60,10 +60,10 @@ function E(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0;
   return null != e ? Math.round(e) : t
 }
-var b = function(e) {
+var y = function(e) {
   return e.FpsUpdate = "fps-update", e
 }({});
-class y extends Chunk972347.A {
+class b extends Chunk972347.A {
   addUserToStatsCollectionPausedSet(e) {
     this.statCollectionPausedUsers.add(e)
   }
@@ -199,8 +199,8 @@ class y extends Chunk972347.A {
         f = t.vmafHistogram.getReport(u),
         _ = t.psnrHistogram.getReport(u),
         m = t.targetBitrateHistogram.getReport(d),
-        b = t.outboundBandwidthSurplus.getReport(d),
-        y = this.videoEntropy.getReport(d),
+        y = t.outboundBandwidthSurplus.getReport(d),
+        b = this.videoEntropy.getReport(d),
         O = t.aggregationDuration / 1e3;
       e.push(g(h({}, this.getStats(t)), {
         target_fps: O > 0 ? Math.round((null != (r = t.targetFrames) ? r : 0) / O) : 0,
@@ -214,13 +214,13 @@ class y extends Chunk972347.A {
         target_bitrate_network_percentile99: m.count > 0 ? m.percentiles[99] : null,
         target_bitrate_max: O > 0 ? Math.round((null != (a = t.targetBytesMax) ? a : 0) * 8 / O) : 0,
         outbound_bandwidth_estimate: O > 0 ? Math.round((null != (s = t.outboundBytesAvailable) ? s : 0) * 8 / O) : 0,
-        outbound_bandwidth_surplus_percentile1: b.count > 0 ? b.percentiles[1] : null,
-        outbound_bandwidth_surplus_percentile5: b.count > 0 ? b.percentiles[5] : null,
-        outbound_bandwidth_surplus_percentile10: b.count > 0 ? b.percentiles[10] : null,
-        outbound_bandwidth_surplus_percentile25: b.count > 0 ? b.percentiles[25] : null,
-        outbound_bandwidth_surplus_percentile50: b.count > 0 ? b.percentiles[50] : null,
-        outbound_bandwidth_surplus_percentile75: b.count > 0 ? b.percentiles[75] : null,
-        outbound_bandwidth_surplus_percentile99: b.count > 0 ? b.percentiles[99] : null,
+        outbound_bandwidth_surplus_percentile1: y.count > 0 ? y.percentiles[1] : null,
+        outbound_bandwidth_surplus_percentile5: y.count > 0 ? y.percentiles[5] : null,
+        outbound_bandwidth_surplus_percentile10: y.count > 0 ? y.percentiles[10] : null,
+        outbound_bandwidth_surplus_percentile25: y.count > 0 ? y.percentiles[25] : null,
+        outbound_bandwidth_surplus_percentile50: y.count > 0 ? y.percentiles[50] : null,
+        outbound_bandwidth_surplus_percentile75: y.count > 0 ? y.percentiles[75] : null,
+        outbound_bandwidth_surplus_percentile99: y.count > 0 ? y.percentiles[99] : null,
         duration_encoder_nvidia_cuda: E(t.encoderBuckets[p.yo.NVIDIA_CUDA]),
         duration_encoder_nvidia_direct3d: E(t.encoderBuckets[p.yo.NVIDIA_DIRECT_3D]),
         duration_encoder_openh264: E(t.encoderBuckets[p.yo.OPENH264]),
@@ -258,13 +258,13 @@ class y extends Chunk972347.A {
         duration_both_simulcast_streams_encoded: E(this.bothSimulcastStreamsEncoded.totalDurationSeconds()),
         duration_fps_bandwidth_limited: E(this.bandwidthLimitedFramerate.totalDurationSeconds()),
         duration_resolution_bandwidth_limited: E(this.bandwidthLimitedResolution.totalDurationSeconds()),
-        video_entropy_percentile1: y.count > 0 ? y.percentiles[1] : null,
-        video_entropy_percentile5: y.count > 0 ? y.percentiles[5] : null,
-        video_entropy_percentile10: y.count > 0 ? y.percentiles[10] : null,
-        video_entropy_percentile25: y.count > 0 ? y.percentiles[25] : null,
-        video_entropy_percentile50: y.count > 0 ? y.percentiles[50] : null,
-        video_entropy_percentile75: y.count > 0 ? y.percentiles[75] : null,
-        video_entropy_percentile99: y.count > 0 ? y.percentiles[99] : null,
+        video_entropy_percentile1: b.count > 0 ? b.percentiles[1] : null,
+        video_entropy_percentile5: b.count > 0 ? b.percentiles[5] : null,
+        video_entropy_percentile10: b.count > 0 ? b.percentiles[10] : null,
+        video_entropy_percentile25: b.count > 0 ? b.percentiles[25] : null,
+        video_entropy_percentile50: b.count > 0 ? b.percentiles[50] : null,
+        video_entropy_percentile75: b.count > 0 ? b.percentiles[75] : null,
+        video_entropy_percentile99: b.count > 0 ? b.percentiles[99] : null,
         duration_encoder_exynos: E(t.encoderBuckets[p.yo.EXYNOS]),
         duration_encoder_qualcomm: E(t.encoderBuckets[p.yo.QUALCOMM]),
         duration_encoder_mediatek: E(t.encoderBuckets[p.yo.MEDIATEK]),
@@ -305,7 +305,7 @@ class y extends Chunk972347.A {
       f = e.inboundBitrateEstimateHistogram.getReport(o),
       _ = e.localWantHistogram.getReport(l),
       m = e.systemResources.getStats(),
-      b = h({
+      y = h({
         duration: Math.floor(r),
         duration_aggregation: E(i),
         duration_stopped_receiving: E(e.videoStoppedDuration.asSeconds()),
@@ -401,12 +401,12 @@ class y extends Chunk972347.A {
         duration_decoder_mediatek: E(e.decoderBuckets[p.eq.MEDIATEK])
       }, m),
       {
-        bytes: y,
+        bytes: b,
         framesDropped: O,
-        framesCodecError: A,
-        framesCodec: v,
-        framesNetwork: S,
-        packets: I,
+        framesCodecError: v,
+        framesCodec: A,
+        framesNetwork: I,
+        packets: S,
         packetsLost: T,
         nackCount: C,
         pliCount: N,
@@ -431,14 +431,14 @@ class y extends Chunk972347.A {
         qualitySizeMismatches: z
       } = e.aggregatedProperties,
       q = (null != U ? U : 0) - (null != (t = e.cryptorFailureBeforeSuccessCount) ? t : 0);
-    return e instanceof p.ET ? (b.sender_freeze_count = P, b.sender_total_freezes_duration = x, b.sender_total_frames_duration = L) : (b.receiver_freeze_count = P, b.receiver_total_freezes_duration = x, b.receiver_total_frames_duration = L, b.receiver_pause_count = w, b.receiver_total_pauses_duration = D), g(h({}, b), {
-      avg_bitrate: i > 0 ? Math.round((null != y ? y : 0) * 8 / i) : 0,
-      avg_fps: i > 0 ? Math.round((null != v ? v : 0) / i) : 0,
-      num_bytes: y,
+    return e instanceof p.ET ? (y.sender_freeze_count = P, y.sender_total_freezes_duration = x, y.sender_total_frames_duration = L) : (y.receiver_freeze_count = P, y.receiver_total_freezes_duration = x, y.receiver_total_frames_duration = L, y.receiver_pause_count = w, y.receiver_total_pauses_duration = D), g(h({}, y), {
+      avg_bitrate: i > 0 ? Math.round((null != b ? b : 0) * 8 / i) : 0,
+      avg_fps: i > 0 ? Math.round((null != A ? A : 0) / i) : 0,
+      num_bytes: b,
       num_packets_lost: T,
-      num_packets: I,
-      num_frames: S,
-      num_frames_codec_error: A,
+      num_packets: S,
+      num_frames: I,
+      num_frames_codec_error: v,
       time_to_first_frame_ms: e.timeToFirstFrame,
       num_frames_dropped: O,
       num_nacks: C,
@@ -478,19 +478,19 @@ class y extends Chunk972347.A {
       let r = t;
       if (null != r) {
         let t = r.ssrc,
-          S = this.outboundStats[t];
-        null == S && (console.warn("Unknown outbound video stream with SSRC: ".concat(t)), S = new p.ET(this.timestampProducer), this.outboundStats[t] = S), null == S.timeToFirstFrame && (r.framesEncoded > 0 || (null != (i = r.frameRateInput) ? i : 0) > 0) && (S.timeToFirstFrame = Math.max(0, e - S.startTime)), null != g && g >= 0 && this.videoEntropy.addSample(g);
-        let I = n.find(e => e.ssrc === t);
-        var i, a, s, c, u, f, _, m, E, b, y, O, A = true;
+          I = this.outboundStats[t];
+        null == I && (console.warn("Unknown outbound video stream with SSRC: ".concat(t)), I = new p.ET(this.timestampProducer), this.outboundStats[t] = I), null == I.timeToFirstFrame && (r.framesEncoded > 0 || (null != (i = r.frameRateInput) ? i : 0) > 0) && (I.timeToFirstFrame = Math.max(0, e - I.startTime)), null != g && g >= 0 && this.videoEntropy.addSample(g);
+        let S = n.find(e => e.ssrc === t);
+        var i, a, s, c, u, f, _, m, E, y, b, O, v = true;
         if (this.connection.context === o.x.STREAM) {
-          var v = this.connection.getRemoteVideoSinkWants(t);
-          (null == v || 0 === v) && (null == I ? true : I.quality) === h && (v = this.connection.getRemoteVideoSinkWants("any")), A = (null != v ? v : 0) > 0
+          var A = this.connection.getRemoteVideoSinkWants(t);
+          (null == A || 0 === A) && (null == S ? true : S.quality) === h && (A = this.connection.getRemoteVideoSinkWants("any")), v = (null != A ? A : 0) > 0
         }
-        let T = this.videoStopped.value || !A;
-        if (T !== S.isVideoStopped && S.setVideoStopped(T, p.iF.SenderStopped), !T) {
-          S.appendAndIncrementStats(p.tH.parseOutboundStats(r, e)), S.encoderCodec !== p.Wn.UNKNOWN && d.add(S.encoderCodec);
-          let t = null == I ? true : I.maxBitrate;
-          S.appendTargetRates(null == I ? true : I.maxFrameRate, null != (a = r.bitrateTarget) ? a : Math.min(null != (s = l.availableOutgoingBitrate) ? s : 0, null != t ? t : 0), t, l.availableOutgoingBitrate), S.averageEncodeTime = null != (c = r.averageEncodeTime) ? c : 0, S.framesDroppedRateLimiter = null != (u = r.framesDroppedRateLimiter) ? u : null, S.framesDroppedEncoderQueue = null != (f = r.framesDroppedEncoderQueue) ? f : null, S.framesDroppedCongestionWindow = null != (_ = r.framesDroppedCongestionWindow) ? _ : null, S.framesDroppedEncoder = null != (m = r.framesDroppedEncoder) ? m : null, this.hqSimulcastStreamEncoded.value = null != (E = r.hqSimulcastStreamEncoded) && E, this.lqSimulcastStreamEncoded.value = null != (b = r.lqSimulcastStreamEncoded) && b, this.bothSimulcastStreamsEncoded.value = this.hqSimulcastStreamEncoded.value && this.lqSimulcastStreamEncoded.value, this.bandwidthLimitedResolution.value = null != (y = r.bandwidthLimitedResolution) && y, this.bandwidthLimitedFramerate.value = null != (O = r.bandwidthLimitedFrameRate) && O
+        let T = this.videoStopped.value || !v;
+        if (T !== I.isVideoStopped && I.setVideoStopped(T, p.iF.SenderStopped), !T) {
+          I.appendAndIncrementStats(p.tH.parseOutboundStats(r, e)), I.encoderCodec !== p.Wn.UNKNOWN && d.add(I.encoderCodec);
+          let t = null == S ? true : S.maxBitrate;
+          I.appendTargetRates(null == S ? true : S.maxFrameRate, null != (a = r.bitrateTarget) ? a : Math.min(null != (s = l.availableOutgoingBitrate) ? s : 0, null != t ? t : 0), t, l.availableOutgoingBitrate), I.averageEncodeTime = null != (c = r.averageEncodeTime) ? c : 0, I.framesDroppedRateLimiter = null != (u = r.framesDroppedRateLimiter) ? u : null, I.framesDroppedEncoderQueue = null != (f = r.framesDroppedEncoderQueue) ? f : null, I.framesDroppedCongestionWindow = null != (_ = r.framesDroppedCongestionWindow) ? _ : null, I.framesDroppedEncoder = null != (m = r.framesDroppedEncoder) ? m : null, this.hqSimulcastStreamEncoded.value = null != (E = r.hqSimulcastStreamEncoded) && E, this.lqSimulcastStreamEncoded.value = null != (y = r.lqSimulcastStreamEncoded) && y, this.bothSimulcastStreamsEncoded.value = this.hqSimulcastStreamEncoded.value && this.lqSimulcastStreamEncoded.value, this.bandwidthLimitedResolution.value = null != (b = r.bandwidthLimitedResolution) && b, this.bandwidthLimitedFramerate.value = null != (O = r.bandwidthLimitedFrameRate) && O
         }
       }
     }), this.paused.value || i().forEach(t.rtp.inbound, (t, n) => {

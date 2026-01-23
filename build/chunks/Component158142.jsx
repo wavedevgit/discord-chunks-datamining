@@ -68,11 +68,11 @@ function p(e) {
     renderPageWrapper: g
   } = e, E = Math.ceil(n / i);
 
-  function b(e) {
+  function y(e) {
     null != _ && _(e)
   }
 
-  function y(e) {
+  function b(e) {
     let {
       key: t,
       disabled: n,
@@ -122,7 +122,7 @@ function p(e) {
     }, t)
   }
 
-  function A(e) {
+  function v(e) {
     return (0, r.jsx)(l.DUT, {
       className: s()(d.hJ, {
         [d.Xs]: e.selected
@@ -138,12 +138,12 @@ function p(e) {
     }, e.key)
   }
 
-  function v(e) {
-    let t = A(e);
+  function A(e) {
+    let t = v(e);
     return null != g ? g(e, t) : t
   }
 
-  function S(e) {
+  function I(e) {
     return (0, r.jsx)(f, {
       page: e,
       totalPageCount: E,
@@ -152,7 +152,7 @@ function p(e) {
     }, e.key)
   }
 
-  function I(e) {
+  function S(e) {
     let {
       pages: t,
       hasMultiplePages: n
@@ -164,11 +164,11 @@ function p(e) {
         children: t.map(e => {
           switch (e.type) {
             case c._.BACK:
-              return y(e);
+              return b(e);
             case c._.PAGE:
-              return v(e);
+              return A(e);
             case c._.GAP:
-              return S(e);
+              return I(e);
             case c._.NEXT:
               return O(e);
             default:
@@ -183,7 +183,7 @@ function p(e) {
     selectedPage: t,
     maxVisiblePages: a,
     hideMaxPage: h,
-    onPageChange: b,
-    children: I
+    onPageChange: y,
+    children: S
   })
 }

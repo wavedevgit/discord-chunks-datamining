@@ -20,19 +20,19 @@ function l(e) {
       className: o.qQ,
       color: "text-strong",
       variant: "heading-xl/bold",
-      children: a.intl.string(a.t["3C+rbC"])
+      children: s.intl.string(s.t["3C+rbC"])
     }), (0, n.jsx)(i.Text, {
       className: o.AC,
       color: "text-default",
       variant: "text-md/medium",
-      children: a.intl.string(a.t.TS1L09)
+      children: s.intl.string(s.t.TS1L09)
     }), (0, n.jsx)(i.Text, {
       className: o.mO,
       color: "text-default",
       variant: "text-md/medium",
-      children: a.intl.format(a.t.bWE0ZD, {
+      children: s.intl.format(s.t.bWE0ZD, {
         onClick: () => {
-          t(), (0, s.openUserSettings)()
+          t(), (0, a.openUserSettings)()
         }
       })
     }), (0, n.jsx)("div", {
@@ -41,7 +41,7 @@ function l(e) {
       children: (0, n.jsx)(i.Button, {
         variant: "primary",
         size: "sm",
-        text: a.intl.string(a.t["yD/zkn"]),
+        text: s.intl.string(s.t["yD/zkn"]),
         type: "button",
         onClick: t
       })

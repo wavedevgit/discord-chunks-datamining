@@ -42,21 +42,21 @@ function L(e) {
   let {
     avatarSize: t,
     guildId: n,
-    channelId: r,
+    channelId: l,
     users: i
-  } = e, a = null != t ? t : c._3J.SIZE_32, s = (0, c.FT9)(a);
-  return (0, l.jsx)(_.Ay, {
-    size: s,
+  } = e, a = null != t ? t : c._3J.SIZE_32, o = (0, c.FT9)(a);
+  return (0, r.jsx)(b.Ay, {
+    size: o,
     guildId: n,
     users: i,
     max: 4,
     renderUser: e => {
-      if (null == e || e === _.mt) return null;
-      let t = R.Ay.getName(n, r, e);
-      return (0, l.jsx)(o.m_, {
+      if (null == e || e === b.mt) return null;
+      let t = P.Ay.getName(n, l, e);
+      return (0, r.jsx)(s.m_, {
         text: t,
-        children: (0, l.jsx)("img", {
-          src: e.getAvatarURL(n, s),
+        children: (0, r.jsx)("img", {
+          src: e.getAvatarURL(n, o),
           alt: t,
           className: D.my
         }, e.id)
@@ -69,65 +69,65 @@ function M(e) {
   var t, n;
   let {
     participants: i,
-    application: o,
-    channel: b,
-    width: m
-  } = e, h = m > 400 ? 2 : +(m > 300), [A] = m > 400 ? [c._3J.SIZE_56, 56] : m > 300 ? [c._3J.SIZE_32, 32] : [c._3J.SIZE_24, 24], y = (0, s.yK)([I.default, j.default], () => Array.from(i).map(e => (0, p.S)(e, j.default) ? null : I.default.getUser(e.userId)).filter(w.Vq)), _ = (0, s.bG)([d.Ay], () => {
+    application: s,
+    channel: g,
+    width: _
+  } = e, h = _ > 400 ? 2 : +(_ > 300), [y] = _ > 400 ? [c._3J.SIZE_56, 56] : _ > 300 ? [c._3J.SIZE_32, 32] : [c._3J.SIZE_24, 24], A = (0, o.yK)([T.default, I.default], () => Array.from(i).map(e => (0, p.S)(e, I.default) ? null : T.default.getUser(e.userId)).filter(w.Vq)), b = (0, o.bG)([d.Ay], () => {
     var e;
-    return null != (e = d.Ay.getEmbeddedActivitiesForChannel(b.id).find(e => e.applicationId === o.id)) ? e : d.Ay.getEmbeddedActivitiesForStartingChannel(b.id).find(e => e.applicationId === o.id)
+    return null != (e = d.Ay.getEmbeddedActivitiesForChannel(g.id).find(e => e.applicationId === s.id)) ? e : d.Ay.getEmbeddedActivitiesForStartingChannel(g.id).find(e => e.applicationId === s.id)
   }), {
     analyticsLocations: E
-  } = (0, x.Ay)(), v = (0, u.p)(), O = R.Ay.getName(b.getGuildId(), b.id, null == y ? true : y[0]), N = (0, g.vG)({
-    userId: null == (n = I.default.getCurrentUser()) ? true : n.id,
-    channelId: b.id,
-    application: o
-  }) === g.Gy.CAN_JOIN, C = null != (t = b.getGuildId()) ? t : true, T = r.useId(), k = o.id, M = r.useMemo(() => ({
-    channel: b,
+  } = (0, x.Ay)(), v = (0, u.p)(), O = P.Ay.getName(g.getGuildId(), g.id, null == A ? true : A[0]), C = (0, m.vG)({
+    userId: null == (n = T.default.getCurrentUser()) ? true : n.id,
+    channelId: g.id,
+    application: s
+  }) === m.Gy.CAN_JOIN, N = null != (t = g.getGuildId()) ? t : true, j = l.useId(), k = s.id, M = l.useMemo(() => ({
+    channel: g,
     type: "channel"
-  }), [b]), {
+  }), [g]), {
     submitting: U
   } = (0, S.A)({
     applicationId: k,
     context: M,
-    launchingComponentId: T
+    launchingComponentId: j
   });
-  return (0, l.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: D.Yi,
-    children: [(0, l.jsx)(L, {
-      avatarSize: A,
-      guildId: C,
-      channelId: b.id,
-      users: y
-    }), (0, l.jsx)(c.Text, {
+    children: [(0, r.jsx)(L, {
+      avatarSize: y,
+      guildId: N,
+      channelId: g.id,
+      users: A
+    }), (0, r.jsx)(c.Text, {
       className: a()(D.m_, {
         [D.EX]: 0 === h,
         [D.Y]: 1 === h
       }),
       variant: "text-sm/normal",
-      children: y.length > 1 ? P.intl.formatToPlainString(P.t.cpe6CK, {
+      children: A.length > 1 ? R.intl.formatToPlainString(R.t.cpe6CK, {
         username: O,
-        count: y.length - 1
-      }) : P.intl.formatToPlainString(P.t["7Uuia2"], {
+        count: A.length - 1
+      }) : R.intl.formatToPlainString(R.t["7Uuia2"], {
         username: O
       })
-    }), (0, l.jsx)(c.Text, {
+    }), (0, r.jsx)(c.Text, {
       className: a()(D.wx, {
         [D.EX]: 0 === h,
         [D.Y]: 1 === h
       }),
       variant: "text-sm/normal",
-      children: o.name
-    }), (0, l.jsx)("div", {
+      children: s.name
+    }), (0, r.jsx)("div", {
       className: D.Uo,
-      children: N ? (0, l.jsx)(c.Button, {
-        text: P.intl.string(P.t["4i2vj+"]),
+      children: C ? (0, r.jsx)(c.Button, {
+        text: R.intl.string(R.t["4i2vj+"]),
         onClick: function(e) {
-          e.stopPropagation(), null != _ && (0, f.A)({
-            applicationId: _.applicationId,
-            activityChannelId: b.id,
+          e.stopPropagation(), null != b && (0, f.A)({
+            applicationId: b.applicationId,
+            activityChannelId: g.id,
             locationObject: v.location,
             analyticsLocations: E,
-            componentId: T
+            componentId: j
           })
         },
         loading: U,
@@ -144,43 +144,43 @@ function U(e) {
     width: n,
     selected: i,
     interactible: a,
-    channel: o
+    channel: s
   } = e, {
     analyticsLocations: c
   } = (0, x.Ay)(O.A.ACTIVITY_TILE), {
     applicationId: u
-  } = t, d = (0, m.A)(), f = null != d && (0, b.H)(d.location) === o.id && d.applicationId === u, [p] = (0, N.A)([u]), {
-    url: g
+  } = t, d = (0, _.A)(), f = null != d && (0, g.H)(d.location) === s.id && d.applicationId === u, [p] = (0, C.A)([u]), {
+    url: m
   } = (0, h.A)({
     applicationId: u,
     names: k,
     size: 1024
-  }), _ = !i && f, S = !f, j = !f && !i, I = (0, s.bG)([T.A, C.A], () => (0, v.A)({
-    LayerStore: T.A,
-    PopoutWindowStore: C.A
+  }), b = !i && f, S = !f, I = !f && !i, T = (0, o.bG)([j.A, N.A], () => (0, v.A)({
+    LayerStore: j.A,
+    PopoutWindowStore: N.A
   }));
-  return r.useEffect(() => {
-    if (_ && null != d && !I) {
+  return l.useEffect(() => {
+    if (b && null != d && !T) {
       let e = (0, E.A)(d.location.id, d.applicationId);
-      (0, y.cK)(e)
+      (0, A.cK)(e)
     }
-  }, [_, d, I]), (0, l.jsx)(x.f5, {
+  }, [b, d, T]), (0, r.jsx)(x.f5, {
     value: c,
-    children: (0, l.jsxs)("div", {
+    children: (0, r.jsxs)("div", {
       className: D.kL,
-      children: [_ && null != d && (0, l.jsx)(A.A, {
+      children: [b && null != d && (0, r.jsx)(y.A, {
         className: D.pU,
         embedId: (0, E.A)(d.location.id, u)
-      }), S && null != p && null != g && "" !== g ? (0, l.jsx)("img", {
+      }), S && null != p && null != m && "" !== m ? (0, r.jsx)("img", {
         className: D.j0,
         alt: p.name,
-        src: g
-      }) : null, j && null != p && (0, l.jsx)(M, {
+        src: m
+      }) : null, I && null != p && (0, r.jsx)(M, {
         width: n,
-        channel: o,
+        channel: s,
         participants: t.participants,
         application: p
-      }), a || S ? null : (0, l.jsx)("div", {
+      }), a || S ? null : (0, r.jsx)("div", {
         className: D.OB
       })]
     })

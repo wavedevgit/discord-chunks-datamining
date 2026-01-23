@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 533233, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 });
 var Chunk311907 = require("./311907.js"),
   Chunk313961 = require("./313961.js"),
@@ -13,15 +13,15 @@ var Chunk311907 = require("./311907.js"),
   Chunk96566 = require("./96566.js"),
   Chunk652215 = require("./652215.js");
 
-function f(e) {
+function p(e) {
   var t;
   let n = (0, r.bG)([l.A], () => l.A.getStageVideoLimitBoostUpsellDismissed(e.id), [e.id]),
-    f = (0, s.uy)(e.id),
-    p = (0, s.zy)(e.id, o.ip.AUDIENCE),
-    h = (0, u.qT)(e.id),
-    b = (0, r.bG)([i.A], () => i.A.getGuild(e.guild_id), [e.guild_id]),
-    g = (0, r.bG)([a.A], () => a.A.can(c.QY, e), [e]),
-    m = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0,
-    A = !(null != b && b.features.has(d.GuildFeatures.COMMUNITY)) && m > d.uaN;
-  return h && !n && g && !A && f + p >= m
+    p = (0, a.uy)(e.id),
+    h = (0, a.zy)(e.id, o.ip.AUDIENCE),
+    f = (0, u.qT)(e.id),
+    g = (0, r.bG)([i.A], () => i.A.getGuild(e.guild_id), [e.guild_id]),
+    m = (0, r.bG)([s.A], () => s.A.can(c.QY, e), [e]),
+    b = null != (t = null == g ? true : g.maxStageVideoChannelUsers) ? t : 0,
+    A = !(null != g && g.features.has(d.GuildFeatures.COMMUNITY)) && b > d.uaN;
+  return f && !n && m && !A && p + h >= b
 }

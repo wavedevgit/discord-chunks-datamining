@@ -18,16 +18,16 @@ let u = e => {
         subtitle: n,
         description: u,
         placeholder: m,
-        rows: b,
-        character_limit: p,
+        rows: p,
+        character_limit: b,
         pattern: x
       },
       onChange: g,
-      initialText: f,
-      isRequired: v
-    } = e, h = r.useMemo(() => {
+      initialText: _,
+      isRequired: h
+    } = e, v = r.useMemo(() => {
       var e, t;
-      return i.A.reactParserFor((e = function(e) {
+      return a.A.reactParserFor((e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             l = Object.keys(n);
@@ -44,7 +44,7 @@ let u = e => {
           })
         }
         return e
-      }({}, i.A.defaultRules), t = t = {
+      }({}, a.A.defaultRules), t = t = {
         link: s.B
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
@@ -56,14 +56,14 @@ let u = e => {
       })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e))
-    }, []), [j, _] = r.useState(""), [A, y] = r.useState(null);
+    }, []), [f, j] = r.useState(""), [A, y] = r.useState(null);
     r.useEffect(() => {
       var e;
-      _(null != (e = null == f ? true : f.value) ? e : "")
-    }, [f]);
+      j(null != (e = null == _ ? true : _.value) ? e : "")
+    }, [_]);
     let O = r.useCallback(e => {
       let t = null != x ? new RegExp(x) : null;
-      null == t || t.test(e) ? null != e && (y(null), _(e), g({
+      null == t || t.test(e) ? null != e && (y(null), j(e), g({
         value: e,
         isValid: true
       })) : (y(o.intl.string(o.t["24xrGb"])), g({
@@ -72,44 +72,44 @@ let u = e => {
       }))
     }, [g, x]);
     return (0, l.jsxs)("div", {
-      className: d.QB,
+      className: c.QB,
       children: [(0, l.jsxs)("div", {
-        className: d.QB,
-        children: [null != t && (0, l.jsxs)(a.Text, {
+        className: c.QB,
+        children: [null != t && (0, l.jsxs)(i.Text, {
           variant: "text-sm/bold",
-          children: [t, v && (0, l.jsx)("span", {
-            className: c.m,
+          children: [t, h && (0, l.jsx)("span", {
+            className: d.m,
             children: "*"
           })]
         }), null != u && (0, l.jsx)("div", {
-          className: d.a5,
-          children: (0, l.jsx)(a.Text, {
+          className: c.a5,
+          children: (0, l.jsx)(i.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
             children: u
           })
         })]
-      }), 1 === b ? (0, l.jsx)(a.ksK, {
-        maxLength: p,
+      }), 1 === p ? (0, l.jsx)(i.ksK, {
+        maxLength: b,
         onChange: O,
-        value: j,
+        value: f,
         error: A,
         placeholder: m,
         autoFocus: true
-      }) : (0, l.jsx)(a.fs1, {
-        maxLength: p,
+      }) : (0, l.jsx)(i.fs1, {
+        maxLength: b,
         onChange: O,
-        value: j,
+        value: f,
         error: A,
-        rows: b,
+        rows: p,
         placeholder: m,
         autoFocus: true
       }), null != n && (0, l.jsx)("div", {
-        className: d.a5,
-        children: (0, l.jsx)(a.Text, {
+        className: c.a5,
+        children: (0, l.jsx)(i.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: h(n)
+          children: v(n)
         })
       })]
     })
@@ -119,17 +119,17 @@ let u = e => {
       elements: t,
       onChange: n,
       state: r
-    } = e, a = t.map(e => {
+    } = e, i = t.map(e => {
       var t;
-      let a = e.name;
+      let i = e.name;
       return (0, l.jsx)(u, {
         data: e.data,
-        onChange: e => n(a, e.value, e.isValid),
-        initialText: null != (t = null == r ? true : r[a]) ? t : true,
+        onChange: e => n(i, e.value, e.isValid),
+        initialText: null != (t = null == r ? true : r[i]) ? t : true,
         isRequired: e.should_submit_data
-      }, a)
+      }, i)
     });
     return (0, l.jsx)("div", {
-      children: a
+      children: i
     })
   }

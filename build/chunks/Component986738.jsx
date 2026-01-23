@@ -15,8 +15,8 @@ function c(e) {
   let {
     className: t,
     guildId: c
-  } = e, u = (0, a.A)();
-  return (0, r.jsx)(s.A, {
+  } = e, u = (0, s.A)();
+  return (0, r.jsx)(a.A, {
     className: t,
     icon: (0, r.jsx)(i.CTc, {
       size: "custom",

@@ -98,7 +98,7 @@ function E(e) {
     u = g(e), d = true, u.info("Overlay logger initialized"), console.log = function() {
       for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
       if (p.log(...t), null != u) try {
-        let e = b(t).map(e => y(e)).join(" ");
+        let e = y(t).map(e => b(e)).join(" ");
         u.log(e)
       } catch (e) {
         p.error("[Logger Error]", e)
@@ -106,7 +106,7 @@ function E(e) {
     }, console.info = function() {
       for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
       if (p.info(...t), null != u) try {
-        let e = b(t).map(e => y(e)).join(" ");
+        let e = y(t).map(e => b(e)).join(" ");
         u.info(e)
       } catch (e) {
         p.error("[Logger Error]", e)
@@ -114,7 +114,7 @@ function E(e) {
     }, console.warn = function() {
       for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
       if (p.warn(...t), null != u) try {
-        let e = b(t).map(e => y(e)).join(" ");
+        let e = y(t).map(e => b(e)).join(" ");
         u.warn(e)
       } catch (e) {
         p.error("[Logger Error]", e)
@@ -122,7 +122,7 @@ function E(e) {
     }, console.error = function() {
       for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
       if (p.error(...t), null != u) try {
-        let e = b(t).map(e => y(e)).join(" ");
+        let e = y(t).map(e => b(e)).join(" ");
         u.error(e)
       } catch (e) {}
     }, window.addEventListener("error", e => {
@@ -194,7 +194,7 @@ function E(e) {
   }
 }
 
-function b(e) {
+function y(e) {
   if (0 === e.length) return e;
   let t = [],
     n = false;
@@ -215,7 +215,7 @@ function b(e) {
   return t
 }
 
-function y(e) {
+function b(e) {
   if (null === e) return "null";
   if (true === e) return "undefined";
   if ("string" == typeof e) return e;

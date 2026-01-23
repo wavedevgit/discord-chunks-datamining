@@ -99,19 +99,19 @@ function E(e, t) {
     function a() {
       "function" == typeof e.removeListener && e.removeListener("error", i), n([].slice.call(arguments))
     }
-    y(e, t, a, {
+    b(e, t, a, {
       once: true
-    }), "error" !== t && b(e, i, {
+    }), "error" !== t && y(e, i, {
       once: true
     })
   })
 }
 
-function b(e, t, n) {
-  "function" == typeof e.on && y(e, "error", t, n)
+function y(e, t, n) {
+  "function" == typeof e.on && b(e, "error", t, n)
 }
 
-function y(e, t, n, r) {
+function b(e, t, n, r) {
   if ("function" == typeof e.on) r.once ? e.once(t, n) : e.on(t, n);
   else if ("function" == typeof e.addEventListener) e.addEventListener(t, function i(a) {
     r.once && e.removeEventListener(t, i), n(a)

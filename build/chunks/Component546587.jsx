@@ -26,17 +26,17 @@ function E(e) {
     channel: n,
     sections: a,
     activeCategoryIndex: E,
-    filteredSectionId: b,
-    onSectionClick: y,
+    filteredSectionId: y,
+    onSectionClick: b,
     applicationCommandListRef: O
-  } = e, A = i.useRef(null), v = i.useCallback((e, t) => {
+  } = e, v = i.useRef(null), A = i.useCallback((e, t) => {
     var n;
     let r = 2 * m;
     return (null == (n = a[t + 1]) ? true : n.type) === d.Hf.BUILT_IN && (r += g), h + r
-  }, [a]), S = i.useCallback((e, t) => {
+  }, [a]), I = i.useCallback((e, t) => {
     var n;
     return t ? (null == (n = a[e + 1]) ? true : n.type) === d.Hf.BUILT_IN ? 0 : 2 * m : 0 === e ? 0 : 2 * m
-  }, [a]), I = i.useCallback((e, t) => {
+  }, [a]), S = i.useCallback((e, t) => {
     let i = a[t];
     if (null == i) return;
     let s = (0, f.Rg)(i),
@@ -45,7 +45,7 @@ function E(e) {
       _ = (0, r.jsx)(s, {
         channel: n,
         section: i,
-        isSelected: null != b ? i.id === b : E === t,
+        isSelected: null != y ? i.id === y : E === t,
         padding: c,
         width: u,
         height: u,
@@ -61,7 +61,7 @@ function E(e) {
         children: (0, r.jsx)(l.DUT, {
           "aria-label": i.name,
           onClick: () => {
-            y(i)
+            b(i)
           },
           children: _
         })
@@ -69,20 +69,20 @@ function E(e) {
         className: p.zQ
       }) : null]
     }, i.id)
-  }, [E, n, y, a, b]);
+  }, [E, n, b, a, y]);
   return 0 === a.length ? null : (0, r.jsx)("div", {
     className: s()(t, p.iE),
     children: (0, r.jsx)(u.A, {
-      categoryListRef: A,
+      categoryListRef: v,
       expressionsListRef: O,
       store: c.LS,
       categories: a,
       className: p.p_,
-      renderCategoryListItem: I,
+      renderCategoryListItem: S,
       rowCount: a.length,
-      categoryHeight: v,
+      categoryHeight: A,
       listPadding: _,
-      getScrollOffsetForIndex: S
+      getScrollOffsetForIndex: I
     })
   })
 }

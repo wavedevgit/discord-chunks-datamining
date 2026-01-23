@@ -208,7 +208,7 @@ function E(e) {
   }
 }
 
-function b(e) {
+function y(e) {
   let {
     currentTier: t
   } = e, n = E(t);
@@ -226,7 +226,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     isFocused: t,
     handleFocus: n,
@@ -303,7 +303,7 @@ let O = function(e) {
       children: f.intl.string(f.t["9GGb9k"])
     }), (0, r.jsxs)("div", {
       className: p.wY,
-      children: [null != o && (0, r.jsx)(b, {
+      children: [null != o && (0, r.jsx)(y, {
         currentTier: o.premiumTier
       }), (0, r.jsxs)("table", {
         className: p.tp,
@@ -337,7 +337,7 @@ let O = function(e) {
             function s() {
               g(i)
             }
-            return true === e.predicate ? (0, r.jsx)(y, {
+            return true === e.predicate ? (0, r.jsx)(b, {
               isFocused: a,
               handleFocus: s,
               handleRowBlur: E,

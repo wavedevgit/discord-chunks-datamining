@@ -2,14 +2,14 @@
 /** chunk id: 856644, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  EF: () => y,
+  EF: () => O,
   K5: () => j,
   L9: () => v,
-  SB: () => h,
-  Vh: () => A,
-  cG: () => O,
-  gz: () => x,
-  uc: () => p
+  SB: () => x,
+  Vh: () => y,
+  cG: () => _,
+  gz: () => h,
+  uc: () => b
 }), require("./321073.js"), require("./896048.js"), require("./733351.js");
 var Chunk64700 = require("./64700.js"),
   Chunk91871 = require("./91871.js"),
@@ -24,16 +24,16 @@ var Chunk64700 = require("./64700.js"),
   Chunk545868 = require("./545868.js"),
   Chunk927573 = require("./927573.js"),
   Chunk652215 = require("./652215.js");
-let p = 50,
-  x = 1e3;
+let b = 50,
+  h = 1e3;
 
-function h(e, t) {
+function x(e, t) {
   let n = (0, s.yK)([a.Ay], () => {
       let n = a.Ay.getMembers(e);
       return null == t ? n : n.filter(t)
     }, [e, t]),
-    i = (0, s.cf)([c.default], () => n.reduce((e, t) => {
-      let n = c.default.getUser(t.userId);
+    i = (0, s.cf)([o.default], () => n.reduce((e, t) => {
+      let n = o.default.getUser(t.userId);
       return null == n || (e[t.userId] = n), e
     }, {}), [n]);
   return r.useMemo(() => {
@@ -42,8 +42,8 @@ function h(e, t) {
       var r;
       let n = i[l.userId];
       null != n && t.push({
-        name: null != (r = l.nick) ? r : f.Ay.getName(n),
-        userTag: f.Ay.getUserTag(n),
+        name: null != (r = l.nick) ? r : g.Ay.getName(n),
+        userTag: g.Ay.getUserTag(n),
         id: l.userId,
         avatarSource: n.getAvatarSource(e),
         avatarURL: n.getAvatarURL(e, 80),
@@ -63,39 +63,39 @@ function j(e, t, n) {
   return r.useEffect(() => {
     i.current = n
   }), r.useEffect(() => {
-    (0, g.a)(e, t).catch(i.current)
-  }, [e, t]), h(e, r.useCallback(e => e.roles.includes(t), [t]))
+    (0, m.a)(e, t).catch(i.current)
+  }, [e, t]), x(e, r.useCallback(e => e.roles.includes(t), [t]))
 }
 
-function O(e, t) {
+function _(e, t) {
   let n = r.useRef(false);
   r.useEffect(() => {
-    u.A.requestMembers(e, t, 200), "" === t || n.current || (o.default.track(m.HAw.SEARCH_STARTED, {
+    u.A.requestMembers(e, t, 200), "" === t || n.current || (c.default.track(f.HAw.SEARCH_STARTED, {
       search_type: "Role Members"
     }), n.current = true)
   }, [e, t])
 }
 
-function y(e, t) {
+function O(e, t) {
   let n = e.trim().toLowerCase();
   return t.id === n || l()(n, t.name.toLowerCase()) || l()(n, t.userTag.toLowerCase())
 }
 
 function v(e) {
   switch (e) {
-    case b.T$.MEMBERS:
+    case p.T$.MEMBERS:
       return "Members";
-    case b.T$.PERMISSIONS:
+    case p.T$.PERMISSIONS:
       return "Permissions";
-    case b.T$.DISPLAY:
+    case p.T$.DISPLAY:
       return "Role Settings";
-    case b.T$.VERIFICATIONS:
+    case p.T$.VERIFICATIONS:
       return "Connections";
     default:
       (0, d.xb)(e)
   }
 }
 
-function A(e, t) {
+function y(e, t) {
   return "" === t || e.name.toLowerCase().includes(t.toLowerCase())
 }

@@ -1,14 +1,14 @@
 /** Chunk was on 97492 **/
 /** chunk id: 915667, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => s
+  A: () => a
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk568065 = require("./568065.js");
 
-function a(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -27,14 +27,14 @@ function a(e) {
   return e
 }
 
-function s(e, t) {
+function a(e, t) {
   (0, l.mMO)(async () => {
     switch (t.type) {
       case i.o9.LEVEL:
         let {
           default: l
         } = await n.e("96914").then(n.bind(n, 391209));
-        return n => (0, r.jsx)(l, a({
+        return n => (0, r.jsx)(l, s({
           guildId: e,
           powerup: t
         }, n));
@@ -42,7 +42,7 @@ function s(e, t) {
         let {
           default: l
         } = await Promise.all([n.e("63379"), n.e("34249")]).then(n.bind(n, 940481));
-        return n => (0, r.jsx)(l, a({
+        return n => (0, r.jsx)(l, s({
           guildId: e,
           powerup: t
         }, n))

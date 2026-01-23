@@ -2,7 +2,7 @@
 /** chunk id: 268075, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  k: () => f
+  k: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,25 +14,25 @@ var Chunk627968 = require("./627968.js"),
   Chunk498642 = require("./498642.js"),
   Chunk818348 = require("./818348.js");
 
-function f(e) {
+function g(e) {
   let {
     guild: t,
     discoverableGuild: n
-  } = e, f = null == t ? true : t.id, {
-    memberCount: g,
-    onlineCount: b
+  } = e, g = null == t ? true : t.id, {
+    memberCount: m,
+    onlineCount: p
   } = (0, s.cf)([d.A], () => {
     var e, t;
     return {
-      memberCount: null != (e = d.A.getMemberCount(f)) ? e : 1234,
-      onlineCount: null != (t = d.A.getOnlineCount(f)) ? t : 1234
+      memberCount: null != (e = d.A.getMemberCount(g)) ? e : 1234,
+      onlineCount: null != (t = d.A.getOnlineCount(g)) ? t : 1234
     }
-  }, [f]), m = i.useRef((0, l.A)()), p = i.useMemo(() => {
+  }, [g]), f = i.useRef((0, l.A)()), b = i.useMemo(() => {
     var e, r;
-    if (null != n) return c.GO.createFromDiscoverableGuild(n);
+    if (null != n) return o.GO.createFromDiscoverableGuild(n);
     if (null == t) return null;
     let i = a.Ay.getGuildEmoji(t.id);
-    return c.GO.createFromDiscoverableGuild((e = function(e) {
+    return o.GO.createFromDiscoverableGuild((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -53,8 +53,8 @@ function f(e) {
       premiumSubscriptionCount: null == t ? true : t.premiumSubscriberCount,
       emojis: i,
       emojiCount: i.length,
-      presenceCount: b,
-      memberCount: g
+      presenceCount: p,
+      memberCount: m
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -65,23 +65,23 @@ function f(e) {
     })(Object(r)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
     }), e))
-  }, [n, t, g, b]), x = i.useMemo(() => {
+  }, [n, t, m, p]), h = i.useMemo(() => {
     var e;
-    let t = null == p || null == (e = p.emojis) ? true : e[0];
+    let t = null == b || null == (e = b.emojis) ? true : e[0];
     return null != t ? {
       name: t.require_colons ? ":".concat(t.name, ":") : t.name,
       emojiId: t.id,
       animated: t.animated,
       jumboable: true
     } : {}
-  }, [null == p ? true : p.emojis]);
-  return null != p && p.isDiscoverable() ? (0, r.jsx)(o.sX, {
-    sourceType: c.rV.GUILD,
+  }, [null == b ? true : b.emojis]);
+  return null != b && b.isDiscoverable() ? (0, r.jsx)(c.sX, {
+    sourceType: o.rV.GUILD,
     expressionSourceApplication: null,
-    expressionSourceGuild: p,
-    node: x,
+    expressionSourceGuild: b,
+    node: h,
     closePopout: u.tE,
-    nonce: m.current,
+    nonce: f.current,
     demoMode: true
   }) : null
 }

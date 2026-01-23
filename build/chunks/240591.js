@@ -4,7 +4,7 @@
 require.d(exports, {
   Bh: () => m,
   MW: () => g,
-  ud: () => y,
+  ud: () => b,
   wz: () => O
 });
 var Chunk64700 = require("./64700.js"),
@@ -26,24 +26,24 @@ function m(e, t) {
   let p, h = null != (p = e instanceof c.YB && e.isThread() && null != (s = d.A.getChannel(e.parent_id)) ? s : e) ? O(p) : true,
     m = (0, l.S9)(),
     g = u.default.getId(),
-    y = null != (n = null == (i = _.default.getCurrentUser()) ? true : i.nsfwAllowed) && n,
-    A = null != h && null != (r = null == (a = f.Ay.getMember(h, g)) ? true : a.roles) ? r : [],
-    v = o.A.isViewingRoles(h),
+    b = null != (n = null == (i = _.default.getCurrentUser()) ? true : i.nsfwAllowed) && n,
+    v = null != h && null != (r = null == (a = f.Ay.getMember(h, g)) ? true : a.roles) ? r : [],
+    A = o.A.isViewingRoles(h),
     {
-      computedPermissions: S,
-      hasBaseAccessPermissions: I,
+      computedPermissions: I,
+      hasBaseAccessPermissions: S,
       hasSendMessagesPermission: T
-    } = b(p, e instanceof c.YB && e.isThread());
+    } = y(p, e instanceof c.YB && e.isThread());
   return {
     context: p,
     userId: g,
-    roleIds: A,
-    isImpersonating: v,
+    roleIds: v,
+    isImpersonating: A,
     commandTypes: t,
-    computedPermissions: S,
-    hasBaseAccessPermissions: I,
+    computedPermissions: I,
+    hasBaseAccessPermissions: S,
     hasSendMessagesPermission: T,
-    allowNsfw: E(p, y, m)
+    allowNsfw: E(p, b, m)
   }
 }
 
@@ -72,7 +72,7 @@ function g(e, t) {
       computedPermissions: r,
       hasBaseAccessPermissions: i,
       hasSendMessagesPermission: a
-    } = b(n, e instanceof c.YB && e.isThread());
+    } = y(n, e instanceof c.YB && e.isThread());
     return {
       context: n,
       userId: p,
@@ -91,7 +91,7 @@ function E(e, t, n) {
   return !!t && (!(e instanceof c.YB) || (null != e.guild_id ? e.nsfw : n))
 }
 
-function b(e, t) {
+function y(e, t) {
   let n, r;
   if (e instanceof c.YB && e.isPrivate() || null == e) return {
     computedPermissions: i.iu(0),
@@ -106,7 +106,7 @@ function b(e, t) {
   }
 }
 
-function y(e, t) {
+function b(e, t) {
   return e instanceof c.YB && (null == e ? true : e.guild_id) == null ? (null == e ? true : e.type) === h.rbe.DM && (null == e ? true : e.getRecipientId()) === t ? s.OL.BOT_DM : s.OL.PRIVATE_CHANNEL : s.OL.GUILD
 }
 

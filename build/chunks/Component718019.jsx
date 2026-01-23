@@ -27,7 +27,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk996988 = require("./996988.js"),
   Chunk735027 = require("./735027.js");
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function T(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -73,18 +73,18 @@ function w(e) {
     displayProfile: n,
     guildId: a,
     channelId: h,
-    themeType: I,
+    themeType: S,
     animateOnHover: C,
     onOpenProfile: w,
     className: P,
     previewStatus: D
   } = e, {
     theme: x
-  } = (0, b.E)(), {
+  } = (0, y.E)(), {
     analyticsLocations: L
   } = (0, d.Ay)(u.A.AVATAR), {
     trackUserProfileAction: j
-  } = (0, m.NJ)(), M = _.Ay.isPremiumAtLeast(null == n ? true : n.premiumType, A.PremiumTypes.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.c)(t, h), [t, h]), {
+  } = (0, m.NJ)(), M = _.Ay.isPremiumAtLeast(null == n ? true : n.premiumType, v.PremiumTypes.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.c)(t, h), [t, h]), {
     live: U
   } = (0, g.A)(t.id), [G] = U, {
     status: V,
@@ -92,7 +92,7 @@ function w(e) {
   } = (0, o.cf)([p.A], () => ({
     status: (0, c.A)(G) ? O.clD.STREAMING : p.A.getStatus(t.id),
     isMobileOnline: p.A.isMobileOnline(t.id)
-  })), B = true !== D ? D : V, H = [v.d.MODAL, v.d.MODAL_V2].includes(I) ? l._3J.SIZE_120 : l._3J.SIZE_80, Y = s()(S.my, P), {
+  })), B = true !== D ? D : V, H = [A.d.MODAL, A.d.MODAL_V2].includes(S) ? l._3J.SIZE_120 : l._3J.SIZE_80, Y = s()(I.my, P), {
     avatarDecorationSrc: W,
     avatarSrc: K,
     eventHandlers: z
@@ -106,20 +106,20 @@ function w(e) {
     avatarDecoration: W,
     size: H,
     "aria-label": t.username,
-    imageClassName: null != w ? S.Lw : true,
+    imageClassName: null != w ? I.Lw : true,
     status: k ? O.clD.UNKNOWN : B,
     statusBackdropColor: M && !k ? (0, l.C$5)(x) : true,
     isMobile: F,
     statusTooltip: true,
-    statusTooltipDelay: y.In
+    statusTooltipDelay: b.In
   });
   return null == w ? (0, r.jsx)("div", N(T({}, z), {
     className: Y,
     children: q
   })) : (0, r.jsx)(l.DUT, N(T({}, z), {
-    className: s()(Y, S.vk),
+    className: s()(Y, I.vk),
     focusProps: {
-      ringClassName: S.Rg
+      ringClassName: I.Rg
     },
     onClick: () => {
       j({

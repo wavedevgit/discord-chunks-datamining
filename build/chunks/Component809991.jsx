@@ -1,7 +1,7 @@
 /** Chunk was on 22477 **/
 /** chunk id: 809991, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => g
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,31 +18,31 @@ var Chunk554146 = require("./554146.js"),
   Chunk49999 = require("./49999.js"),
   Chunk654487 = require("./654487.js");
 
-function x(e) {
-  var t, n, x;
+function g(e) {
+  var t, n, g;
   let {
-    isQuestBarEmpty: b,
-    hasLoadedQuestBar: g
+    isQuestBarEmpty: f,
+    hasLoadedQuestBar: b
   } = (0, m.c9)({
-    location: f.rE.CONFLICT_CHECKS
-  }), v = null != e.targetElementRef.current && b && g, [j, y] = (0, o.r)(e.guildId, {
+    location: x.rE.CONFLICT_CHECKS
+  }), v = null != e.targetElementRef.current && f && b, [j, _] = (0, o.r)(e.guildId, {
     shouldShow: v
-  }), [_, A] = (0, o.L)(e.currentUser, {
+  }), [y, A] = (0, o.L)(e.currentUser, {
     shouldShow: v
-  }), [C, S] = (0, i.l)({
+  }), [C, S] = (0, r.l)({
     shouldShow: v
   });
   return v ? j === l.M.GUILD_TAG_AVAILABLE_COACHMARK_V2 ? (0, a.jsx)(c.w, {
     guildId: e.guildId,
-    onDismiss: y,
+    onDismiss: _,
     targetElementRef: e.targetElementRef,
     children: e.children
-  }) : _ === l.M.GUILD_TAG_UPDATED_COACHMARK ? (0, a.jsx)(c.o, {
-    guildId: null != (n = null == (x = e.currentUser.primaryGuild) ? true : x.identityGuildId) ? n : null,
+  }) : y === l.M.GUILD_TAG_UPDATED_COACHMARK ? (0, a.jsx)(c.o, {
+    guildId: null != (n = null == (g = e.currentUser.primaryGuild) ? true : g.identityGuildId) ? n : null,
     onDismiss: A,
     targetElementRef: e.targetElementRef,
     children: e.children
-  }) : C === l.M.DO_NOT_DISTURB_REMINDER_POPOVER ? (0, a.jsx)(i.A, {
+  }) : C === l.M.DO_NOT_DISTURB_REMINDER_POPOVER ? (0, a.jsx)(r.A, {
     targetElementRef: e.targetElementRef,
     onDismiss: S,
     children: e.children
@@ -50,30 +50,30 @@ function x(e) {
     children: [(0, a.jsx)(u.A, {
       groupName: h.m.ACCOUNT_NAME_ZONE,
       targetElementRef: e.targetElementRef
-    }), (0, a.jsx)(r.Ay, {
+    }), (0, a.jsx)(i.Ay, {
       contentTypes: v && null != (t = e.additionalDCs) ? t : [],
       groupName: h.m.ACCOUNT_NAME_ZONE,
       children: t => {
         let {
           visibleContent: n,
-          markAsDismissed: i
+          markAsDismissed: r
         } = t;
         switch (n) {
           case l.M.WIDGETS_RTC_UPSELL_COACHMARK:
             return (0, a.jsx)(p.A, {
-              markAsDismissed: i,
+              markAsDismissed: r,
               targetElementRef: e.targetElementRef,
               children: e.children
             });
           case l.M.DISPLAY_NAME_STYLES_COACHMARK:
             return (0, a.jsx)(s.l, {
-              markAsDismissed: i,
+              markAsDismissed: r,
               targetElementRef: e.targetElementRef,
               children: e.children
             });
           case l.M.TENURE_BADGE_CHURN_REMINDER:
             return (0, a.jsx)(d.A, {
-              markAsDismissed: i,
+              markAsDismissed: r,
               mode: "popover",
               targetElementRef: e.targetElementRef,
               children: e.children

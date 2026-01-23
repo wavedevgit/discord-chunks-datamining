@@ -23,7 +23,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk146449 = require("./146449.js"),
   Chunk544879 = require("./544879.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,13 +39,13 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,12 +56,12 @@ function A(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = e => {
+let I = e => {
     let {
       startingScreen: t,
       analyticsLocations: i
@@ -72,12 +72,12 @@ let S = e => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 303682));
-      return n => (0, r.jsx)(e, v(O({}, n), {
+      return n => (0, r.jsx)(e, A(O({}, n), {
         startingScreen: t
       }))
     })
   },
-  I = e => {
+  S = e => {
     let {
       user: t
     } = e, {
@@ -110,7 +110,7 @@ let S = e => {
       let e = [];
       for (let n = 0; n < _.Z; n++)
         if ((null == t ? true : t[n]) !== true) {
-          let i = (0, r.jsx)(I, {
+          let i = (0, r.jsx)(S, {
             user: t[n]
           }, t[n].id);
           e.push(i)
@@ -138,7 +138,7 @@ let S = e => {
       ringColorOverrideClassName: E.e0,
       overlayClassName: t === _.Z ? E.ys : true,
       children: (0, r.jsx)(o._V3, {
-        src: b.A,
+        src: y.A,
         height: 93,
         width: 93,
         zoomable: false
@@ -150,7 +150,7 @@ let S = e => {
       className: t
     } = e, {
       referralSentUsers: n
-    } = (0, _.J)(), i = (0, s.bG)([p.A], () => p.A.getRecipientStatus()), l = (0, s.bG)([p.A], () => p.A.getHasEligibleFriends()), c = i.size === _.Z && [...i.values()].every(e => e === f.aK.REDEEMED), d = i.size === _.Z, b = () => false === l ? g.intl.format(g.t["zWhX/Q"], {
+    } = (0, _.J)(), i = (0, s.bG)([p.A], () => p.A.getRecipientStatus()), l = (0, s.bG)([p.A], () => p.A.getHasEligibleFriends()), c = i.size === _.Z && [...i.values()].every(e => e === f.aK.REDEEMED), d = i.size === _.Z, y = () => false === l ? g.intl.format(g.t["zWhX/Q"], {
       helpdeskArticle: u.A.getArticleURL(m.MVz.REFERRAL_PROGRAM)
     }) : n.length === _.Z ? true === c ? g.intl.format(g.t["1aEjsH"], {
       helpdeskArticle: u.A.getArticleURL(m.MVz.REFERRAL_PROGRAM)
@@ -179,13 +179,13 @@ let S = e => {
           }), (0, r.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "text-subtle",
-            children: b()
+            children: y()
           })]
         }), (0, r.jsx)(o.Button, {
           variant: "primary",
           disabled: false === l || true === d,
           text: g.intl.string(g.t.Lm2nFc),
-          onClick: () => S({
+          onClick: () => I({
             startingScreen: h.SelectFriendsModalScreens.SELECT_FRIENDS,
             analyticsLocations: []
           })

@@ -2,7 +2,7 @@
 /** chunk id: 512122, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  p: () => m
+  p: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,31 +15,31 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk641131 = require("./641131.js"),
   Chunk841541 = require("./841541.js");
-async function b(e, t) {
-  return await o.A.saveGuild(e.id, {
+async function p(e, t) {
+  return await c.A.saveGuild(e.id, {
     moderatorReportingEnabled: t
   })
 }
 
-function m(e) {
+function f(e) {
   let {
     guild: t
-  } = e, n = (0, l.bG)([c.A], () => null != t && c.A.can(d.xBc.MANAGE_GUILD, t), [t]), o = t.features.has(d.GuildFeatures.REPORT_TO_MOD_PILOT), [m, p] = i.useState((0, a.A)(t) && o), x = i.useCallback(async e => {
-    p(e), await b(t, e)
+  } = e, n = (0, l.bG)([o.A], () => null != t && o.A.can(d.xBc.MANAGE_GUILD, t), [t]), c = t.features.has(d.GuildFeatures.REPORT_TO_MOD_PILOT), [f, b] = i.useState((0, a.A)(t) && c), h = i.useCallback(async e => {
+    b(e), await p(t, e)
   }, [t]);
-  return o && n ? (0, r.jsxs)(r.Fragment, {
+  return c && n ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: g.hu,
+      className: m.hu,
       children: (0, r.jsx)(s.dOG, {
-        label: u.intl.string(f.default["/xIz7G"]),
-        description: u.intl.string(f.default.uUMXyu),
+        label: u.intl.string(g.default["/xIz7G"]),
+        description: u.intl.string(g.default.uUMXyu),
         badge: "beta",
-        checked: m,
-        onChange: x,
+        checked: f,
+        onChange: h,
         disabled: !n
       })
     }), (0, r.jsx)(s.cGx, {
-      className: g.yF
+      className: m.yF
     })]
   }) : null
 }

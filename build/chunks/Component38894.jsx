@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 38894, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,7 +15,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk166641 = require("./166641.jsx"),
   Chunk324580 = require("./324580.js");
 
-function h(e) {
+function g(e) {
   let {
     onScroll: t,
     onGuildCardSeen: n,
@@ -23,18 +23,18 @@ function h(e) {
   } = e, s = (0, l.bG)([c.A], () => {
     var e;
     return null != (e = c.A.getGuildIds({
-      categoryId: f.Iq
-    })) ? e : f.VX
+      categoryId: h.Iq
+    })) ? e : h.VX
   }), u = (0, l.bG)([c.A], () => {
     var e;
     return null == (e = c.A.getIsFetching({
-      categoryId: f.Iq
+      categoryId: h.Iq
     })) || e
   });
   return i.useEffect(() => {
     o.A.fetchFeaturedGuilds()
   }, []), (0, r.jsx)(d.A, {
-    tab: f.o.FEATURED,
+    tab: h.o.FEATURED,
     guildIds: s,
     loading: u,
     onScroll: t,
@@ -43,18 +43,18 @@ function h(e) {
   })
 }
 
-function A(e) {
+function f(e) {
   let {
     tab: t,
     onScroll: n,
     onGuildCardSeen: a,
     onGuildCardClick: s
-  } = e, p = (0, u.Ub)(t), h = (0, l.bG)([c.A], () => {
+  } = e, p = (0, u.Ub)(t), g = (0, l.bG)([c.A], () => {
     var e;
     return null != (e = c.A.getGuildIds({
       categoryId: p
-    })) ? e : f.VX
-  }), A = (0, l.bG)([c.A], () => {
+    })) ? e : h.VX
+  }), f = (0, l.bG)([c.A], () => {
     var e;
     return null == (e = c.A.getIsFetching({
       categoryId: p
@@ -66,15 +66,15 @@ function A(e) {
     })
   }, [p]), (0, r.jsx)(d.A, {
     tab: t,
-    guildIds: h,
-    loading: A,
+    guildIds: g,
+    loading: f,
     onScroll: n,
     onGuildCardSeen: a,
     onGuildCardClick: s
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     selectedTab: t,
     onScroll: n,
@@ -87,25 +87,25 @@ function g(e) {
         selectedCategoryId: e
       })
     }, [t]), t) {
-    case f.o.FEATURED:
-      return (0, r.jsx)(h, {
+    case h.o.FEATURED:
+      return (0, r.jsx)(g, {
         tab: t,
         onScroll: n,
         onGuildCardClick: o,
         onGuildCardSeen: l
       });
-    case f.o.GAMING:
-    case f.o.MUSIC:
-    case f.o.ENTERTAINMENT:
-    case f.o.TECH:
-    case f.o.EDUCATION:
-      return (0, r.jsx)(A, {
+    case h.o.GAMING:
+    case h.o.MUSIC:
+    case h.o.ENTERTAINMENT:
+    case h.o.TECH:
+    case h.o.EDUCATION:
+      return (0, r.jsx)(f, {
         tab: t,
         onScroll: n,
         onGuildCardClick: o,
         onGuildCardSeen: l
       }, t);
-    case f.o.HUBS:
+    case h.o.HUBS:
       return (0, r.jsx)(p.A, {
         onScroll: n
       });

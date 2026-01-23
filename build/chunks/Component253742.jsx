@@ -95,8 +95,8 @@ function w(e) {
   var t, l;
   let p = i.useRef(null),
     {
-      parentAnalyticsLocation: f
-    } = (0, A.Ay)(),
+      parentAnalyticsLocation: h
+    } = (0, f.Ay)(),
     {
       channel: O,
       user: w,
@@ -138,12 +138,12 @@ function w(e) {
       mute: R,
       localMute: U
     })) ? l : {},
-    z = null != K ? C.intl.formatToPlainString(C.t["1+MVBP"], {
+    W = null != K ? C.intl.formatToPlainString(C.t["1+MVBP"], {
       userName: H,
       status: K()
     }) : H;
 
-  function W(e) {
+  function q(e) {
     null != V ? (0, u.L3)(e, async () => {
       let {
         default: e
@@ -153,7 +153,7 @@ function w(e) {
         guildId: V,
         channel: O,
         showMediaItems: true,
-        onInteraction: (0, b.s)("GuildChannelUserContextMenu", h.A.RTC_PANEL, {
+        onInteraction: (0, _.s)("GuildChannelUserContextMenu", g.A.RTC_PANEL, {
           targetUserId: w.id
         })
       }))
@@ -164,17 +164,17 @@ function w(e) {
       return t => (0, r.jsx)(e, j(T({}, t), {
         user: w,
         showMediaItems: true,
-        onInteraction: (0, b.s)("UserGenericContextMenu", h.A.RTC_PANEL, {
+        onInteraction: (0, _.s)("UserGenericContextMenu", g.A.RTC_PANEL, {
           targetUserId: w.id
         })
       }))
     })
   }
-  let q = (0, s.bG)([I.A], () => I.A.getVoiceVolume(w.id)),
-    Q = (0, g.v)({
+  let z = (0, s.bG)([I.A], () => I.A.getVoiceVolume(w.id)),
+    Q = (0, m.v)({
       isSpeaking: G,
-      voiceDb: q,
-      spreadDirection: g.O.INSET_ONLY,
+      voiceDb: z,
+      spreadDirection: m.O.INSET_ONLY,
       maxInnerSpreadRadius: 3
     });
   return (0, r.jsx)(E.A, {
@@ -185,16 +185,16 @@ function w(e) {
     position: "top",
     clickTrap: true,
     children: e => (0, r.jsx)(o.m, {
-      text: z,
+      text: W,
       children: (0, r.jsx)(c.DUT, {
         innerRef: p,
         onClick: t => {
-          e.onClick(t), (0, m.X)(f, m.O.VOICE_USER)
+          e.onClick(t), (0, A.X)(h, A.O.VOICE_USER)
         },
         className: N.H,
-        onContextMenu: W,
+        onContextMenu: q,
         focusProps: x,
-        children: (0, r.jsx)(_.A, {
+        children: (0, r.jsx)(b.A, {
           shakeLocation: S.uD.VOICE_USER,
           isShaking: G,
           children: (0, r.jsx)("div", {
@@ -221,11 +221,11 @@ function L(e) {
     voiceStates: t,
     channel: n,
     className: l
-  } = e, [u, d] = i.useState(false), h = (0, s.bG)([O.default], () => O.default.getId()), {
-    containerRef: A,
-    maxVisibleAvatars: g
+  } = e, [u, d] = i.useState(false), g = (0, s.bG)([O.default], () => O.default.getId()), {
+    containerRef: f,
+    maxVisibleAvatars: m
   } = function(e) {
-    let [t, n] = i.useState(7), r = (0, f.A)(() => {
+    let [t, n] = i.useState(7), r = (0, h.A)(() => {
       let t = null == l ? true : l.current;
       if (null == t) return;
       let r = Math.floor((t.offsetWidth + 4) / 28);
@@ -238,31 +238,31 @@ function L(e) {
       containerRef: l,
       maxVisibleAvatars: t
     }
-  }(t.length - 1), [m, b] = function(e, t, n) {
+  }(t.length - 1), [A, _] = function(e, t, n) {
     let r = [];
     for (let i of e)
       if (i.user.id !== t && !r.some(e => e.user.id === i.user.id)) {
         if (r.length >= n) return [r, true];
         r.push(i)
       } return [r, false]
-  }(t, h, g), _ = u ? c.QGg : c.j96, E = u ? C.intl.string(C.t["Z/Tya5"]) : C.intl.string(C.t.XR5BAc), y = (0, r.jsx)(o.m, {
+  }(t, g, m), b = u ? c.QGg : c.j96, E = u ? C.intl.string(C.t["Z/Tya5"]) : C.intl.string(C.t.XR5BAc), y = (0, r.jsx)(o.m, {
     text: E,
     ariaHidden: true,
     children: (0, r.jsx)(c.K0, {
       "aria-label": E,
       onClick: () => d(!u),
-      icon: () => (0, r.jsx)(_, {
+      icon: () => (0, r.jsx)(b, {
         size: "md"
       }),
       variant: "icon-only",
       size: "sm"
     })
-  }), I = b && u ? t : m;
+  }), I = _ && u ? t : A;
   return I.length <= 0 ? null : (0, r.jsx)(c.IpV, {
     className: a()(N.XG, l),
     fade: true,
     children: (0, r.jsxs)("div", {
-      ref: A,
+      ref: f,
       className: a()(N.Xk, !u && N.yZ),
       role: "group",
       "aria-label": C.intl.string(C.t["/ZgaVU"]),
@@ -272,7 +272,7 @@ function L(e) {
           nick: i,
           voiceState: l
         } = e;
-        return t.id !== h ? (0, r.jsx)(w, {
+        return t.id !== g ? (0, r.jsx)(w, {
           channel: n,
           user: t,
           nick: i,
@@ -282,7 +282,7 @@ function L(e) {
           serverMute: l.mute,
           serverDeaf: l.deaf
         }, t.id) : null
-      }), b ? y : null]
+      }), _ ? y : null]
     })
   })
 }

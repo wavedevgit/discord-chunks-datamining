@@ -14,27 +14,27 @@ let s = function(e) {
     index: n,
     isDragEnabled: s,
     isDropHovered: a,
-    onDrop: c,
-    onEdit: o,
+    onDrop: o,
+    onEdit: c,
     onRemove: d,
     canRemove: u,
-    actionsLocation: f,
-    fieldStyle: g
+    actionsLocation: g,
+    fieldStyle: m
   } = e, {
-    label: b
+    label: p
   } = t;
   return (0, r.jsx)(l.A, {
     field: t,
     index: n,
     isDragEnabled: s,
     isDropHovered: a,
-    onDrop: c,
-    onEdit: o,
+    onDrop: o,
+    onEdit: c,
     onRemove: d,
-    title: b,
+    title: p,
     canRemove: u,
-    actionsLocation: f,
-    fieldStyle: g,
+    actionsLocation: g,
+    fieldStyle: m,
     children: (0, r.jsx)(i.mR, {
       field: t,
       value: true,

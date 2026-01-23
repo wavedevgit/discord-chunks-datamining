@@ -2,7 +2,7 @@
 /** chunk id: 982832, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => p
 });
 var r, i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -12,48 +12,48 @@ var r, i, Chunk311907 = require("./311907.js"),
 let d = Chunk660496.C.OVERVIEW,
   u = null;
 
-function f(e) {
+function g(e) {
   let {
     subsection: t
   } = e;
   switch (t) {
-    case o.nd0.SAFETY_AUTOMOD:
-      d = c.C.AUTOMOD;
+    case c.nd0.SAFETY_AUTOMOD:
+      d = o.C.AUTOMOD;
       break;
-    case o.nd0.SAFETY_DM_AND_SPAM_PROTECTION:
-      d = c.C.DM_AND_SPAM_PROTECTION;
+    case c.nd0.SAFETY_DM_AND_SPAM_PROTECTION:
+      d = o.C.DM_AND_SPAM_PROTECTION;
       break;
-    case o.nd0.SAFETY_CAPTCHA_AND_RAID_PROTECTION:
-      d = c.C.CAPTCHA_AND_RAID_PROTECTION;
+    case c.nd0.SAFETY_CAPTCHA_AND_RAID_PROTECTION:
+      d = o.C.CAPTCHA_AND_RAID_PROTECTION;
       break;
-    case o.nd0.SAFETY_PERMISSIONS:
-      d = c.C.PERMISSIONS;
+    case c.nd0.SAFETY_PERMISSIONS:
+      d = o.C.PERMISSIONS;
       break;
-    case o.nd0.SAFETY_OVERVIEW:
+    case c.nd0.SAFETY_OVERVIEW:
     default:
-      d = c.C.OVERVIEW
+      d = o.C.OVERVIEW
   }
 }
-class g extends(i = Chunk311907.Ay.Store) {
+class m extends(i = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(a.A)
   }
   getCurrentPage() {
     return d
   }
-}(r = "displayName") in g ? Object.defineProperty(g, r, {
+}(r = "displayName") in m ? Object.defineProperty(m, r, {
   value: "GuildSettingsSafetyStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : g[r] = "GuildSettingsSafetyStore";
-let b = new g(Chunk73153.h, {
+}) : m[r] = "GuildSettingsSafetyStore";
+let p = new m(Chunk73153.h, {
   GUILD_SETTINGS_INIT: function() {
     if (a.A.getGuildId() === u) returnfalse;
     u = a.A.getGuildId()
   },
-  GUILD_SETTINGS_SET_SECTION: f,
-  GUILD_SETTINGS_SAFETY_SET_SUBSECTION: f,
+  GUILD_SETTINGS_SET_SECTION: g,
+  GUILD_SETTINGS_SAFETY_SET_SUBSECTION: g,
   GUILD_SETTINGS_SAFETY_PAGE: function(e) {
     let {
       page: t

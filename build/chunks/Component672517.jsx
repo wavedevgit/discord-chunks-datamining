@@ -1,5 +1,5 @@
 /** Chunk was on 36456 **/
-/** chunk id: 672517, original params: n,e,t (module,exports,require) **/
+/** chunk id: 672517, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   A: () => C
 });
@@ -12,27 +12,27 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk630552 = require("./630552.js");
 
-function C(n) {
+function C(e) {
   let {
-    onContinue: e,
+    onContinue: n,
     onClose: t
-  } = n, C = s.A.getArticleURL(d.MVz.CRUNCHYROLL_CONNECTION), b = o.useMemo(() => [{
-    label: l.intl.string(l.t["2TXHQd"]),
+  } = e, C = s.A.getArticleURL(a.MVz.CRUNCHYROLL_CONNECTION), _ = i.useMemo(() => [{
+    label: d.intl.string(d.t["2TXHQd"]),
     icon: r.Uk3
   }], []);
-  return (0, i.jsx)(a.B, {
-    platformType: d.fg2.CRUNCHYROLL,
-    headerConnect: l.intl.string(l.t["Da+3NJ"]),
-    body: l.intl.string(l.t.MaPpPL),
+  return (0, o.jsx)(l.B, {
+    platformType: a.fg2.CRUNCHYROLL,
+    headerConnect: d.intl.string(d.t["Da+3NJ"]),
+    body: d.intl.string(d.t.MaPpPL),
     learnMoreLink: C,
     onClose: t,
-    onContinue: e,
-    img: (0, i.jsx)("img", {
+    onContinue: n,
+    img: (0, o.jsx)("img", {
       src: c,
       width: 234,
       height: 152,
       alt: ""
     }),
-    valueProps: b
+    valueProps: _
   })
 }

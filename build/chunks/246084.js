@@ -11,7 +11,7 @@ function i(e) {
     channel: t,
     locked: n,
     video: i,
-    selected: a
+    selected: s
   } = e;
   return function(e) {
     let {
@@ -19,11 +19,11 @@ function i(e) {
       video: n,
       considerMaxStageVoiceUserLimit: i = true
     } = e, {
-      limit: a
-    } = (0, r.A)(t), s = false;
-    return (t.userLimit > 0 && (s = t.userLimit), n && a > 0 && (s = s > 0 ? Math.min(s, a) : a), i && s === l.RCc) ? 0 : s
+      limit: s
+    } = (0, r.A)(t), a = false;
+    return (t.userLimit > 0 && (a = t.userLimit), n && s > 0 && (a = a > 0 ? Math.min(a, s) : s), i && a === l.RCc) ? 0 : a
   }({
     channel: t,
     video: i
-  }) > 0 && !n && !a
+  }) > 0 && !n && !s
 }

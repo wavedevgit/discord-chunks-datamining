@@ -66,9 +66,9 @@ function d(e) {
     tooltip: m,
     loading: g,
     disabled: E,
-    onClick: b
-  } = (0, s._B)(t, n, o), y = () => {
-    null == p || p(), b()
+    onClick: y
+  } = (0, s._B)(t, n, o), b = () => {
+    null == p || p(), y()
   };
   return (0, r.jsx)(i.m, {
     text: m,
@@ -78,7 +78,7 @@ function d(e) {
       icon: a.L5T,
       text: h,
       fullWidth: f,
-      onClick: y,
+      onClick: b,
       disabled: E,
       loading: g
     }, _))

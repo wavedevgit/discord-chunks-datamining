@@ -6,8 +6,8 @@ require.d(exports, {
   E0: () => g,
   Ll: () => E,
   _e: () => p,
-  f0: () => y,
-  pv: () => b,
+  f0: () => b,
+  pv: () => y,
   ui: () => f,
   vA: () => h
 }), require("./896048.js");
@@ -59,12 +59,12 @@ function E(e, t) {
   return null != e && null != t && (0, s.eo)(t, c.A, o.A, l.A, a.default)[0]
 }
 
-function b(e) {
+function y(e) {
   return (0, u.vv)({
     config: e
   }) ? i.Z.VIDEO : i.Z.GAMEPLAY
 }
 
-function y(e, t) {
+function b(e, t) {
   return e.ctaQuests.some(e => e.questId === t)
 }

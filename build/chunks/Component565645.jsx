@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk218394 = require("./218394.js"),
   Chunk732139 = require("./732139.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,14 +30,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -54,32 +54,32 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function v(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = S(e, t), Object.getOwnPropertySymbols)
+  if (a = I(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function S(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let I = __OVERLAY__ ? () => (0, o.bG)([_.default], () => _.default.isInstanceFocused()) : Chunk218394.j;
+let S = __OVERLAY__ ? () => (0, o.bG)([_.default], () => _.default.isInstanceFocused()) : Chunk218394.j;
 
 function T(e) {
   var t, n;
@@ -90,9 +90,9 @@ function T(e) {
     emojiId: f,
     emojiName: _,
     channelId: g,
-    messageId: b,
+    messageId: y,
     animated: O,
-    size: S = "default",
+    size: I = "default",
     isInteracting: T = false,
     shouldAnimate: C,
     onMouseEnter: N,
@@ -102,10 +102,10 @@ function T(e) {
     registerInnerRef: D,
     registerAnimatedElementRef: x,
     surrogate: L
-  } = e, j = v(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerInnerRef", "registerAnimatedElementRef", "surrogate"]), [M, k] = i.useState(false), [U, G] = i.useState(true), V = i.useRef(true), {
+  } = e, j = A(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerInnerRef", "registerAnimatedElementRef", "surrogate"]), [M, k] = i.useState(false), [U, G] = i.useState(true), V = i.useRef(true), {
     triggerAnimation: F,
     untriggerAnimation: B
-  } = i.useContext(u.wE), H = p.Sf.useSetting(), Y = I(), W = null == P ? H : P, K = E.Ec[S], z = i.useRef(null), q = i.useMemo(() => {
+  } = i.useContext(u.wE), H = p.Sf.useSetting(), Y = S(), W = null == P ? H : P, K = E.Ec[I], z = i.useRef(null), q = i.useMemo(() => {
     if (null != a) return a;
     if (null != f) {
       let e = true === C && W;
@@ -131,16 +131,16 @@ function T(e) {
     } : {
       "data-name": _
     };
-    return y(A(y({}, j), {
+    return b(v(b({}, j), {
       className: s()("emoji", c, {
-        jumboable: "jumbo" === S
+        jumboable: "jumbo" === I
       }),
       onError: X,
       onMouseEnter: Z,
       onMouseLeave: Q,
       "data-type": "emoji"
     }), e)
-  }, [c, f, _, Z, Q, X, j, S]);
+  }, [c, f, _, Z, Q, X, j, I]);
   i.useEffect(() => () => {
     var e;
     return null == (e = V.current) ? true : e.call(V)
@@ -149,23 +149,23 @@ function T(e) {
       z.current = e, null == D || D(e), null == x || x(e)
     }, [D, x]),
     ee = (0, l.A)(z);
-  return null == q || "" === q ? (0, r.jsx)("span", A(y({}, $), {
+  return null == q || "" === q ? (0, r.jsx)("span", v(b({}, $), {
     ref: J,
     className: s()("emoji", "emoji-text"),
     children: null != L ? L : _
   })) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.q6, {
       channelId: g,
-      messageId: b,
+      messageId: y,
       emojiName: _,
       disable: false === W || false === H,
       emojiRef: ee
-    }), w ? (0, r.jsx)("img", A(y({}, $), {
+    }), w ? (0, r.jsx)("img", v(b({}, $), {
       ref: J,
       src: q,
       alt: null != (t = null != o ? o : _) ? t : true,
       draggable: false
-    }), U) : (0, r.jsx)("div", A(y({}, $), {
+    }), U) : (0, r.jsx)("div", v(b({}, $), {
       ref: J,
       role: "img",
       "aria-label": null != (n = null != o ? o : _) ? n : true,
@@ -188,12 +188,12 @@ function C(e) {
   } = t(), {
     disableAnimations: s
   } = i.useContext(c.Y);
-  return (0, r.jsx)(T, A(y({}, e), {
+  return (0, r.jsx)(T, v(b({}, e), {
     registerAnimatedElementRef: a,
     shouldAnimate: n && !s
   }))
 }
 
 function N(e) {
-  return null == e.emojiId && null == e.emojiName && null == e.src ? null : e.animated && true === e.shouldAnimate ? (0, r.jsx)(C, y({}, e)) : (0, r.jsx)(T, y({}, e))
+  return null == e.emojiId && null == e.emojiName && null == e.src ? null : e.animated && true === e.shouldAnimate ? (0, r.jsx)(C, b({}, e)) : (0, r.jsx)(T, b({}, e))
 }

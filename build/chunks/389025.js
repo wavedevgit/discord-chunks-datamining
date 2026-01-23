@@ -17,8 +17,8 @@ function d(e) {
       let t = a.A.getGuild(e);
       return null != t ? s.A.getEveryoneRole(t) : true
     }),
-    n = r.useMemo(() => null == t || (0, l._m)(t, o.xBc.VIEW_CHANNEL) ? c.c4.SOME_CHANNELS : c.c4.ALL_CHANNELS, [t]),
-    d = n === c.c4.ALL_CHANNELS;
+    n = r.useMemo(() => null == t || (0, l._m)(t, c.xBc.VIEW_CHANNEL) ? o.c4.SOME_CHANNELS : o.c4.ALL_CHANNELS, [t]),
+    d = n === o.c4.ALL_CHANNELS;
   return {
     format: n,
     isFullServerGating: d

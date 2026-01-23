@@ -2,7 +2,7 @@
 /** chunk id: 750112, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,19 +20,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk566492 = require("./566492.js"),
   Chunk73392 = require("./73392.js"),
   Chunk564515 = require("./564515.js");
-let b = [Chunk559949.x.CHERRY_BOMB, Chunk559949.x.CHICLE],
-  y = Chunk64700.memo(function(e) {
+let y = [Chunk559949.x.CHERRY_BOMB, Chunk559949.x.CHICLE],
+  b = Chunk64700.memo(function(e) {
     var t;
     let {
       userName: n,
       displayNameStyles: i,
       effectDisplayType: a = h.G.STATIC,
       inProfile: l = false,
-      textClassName: y,
-      loop: A = false,
-      shouldWrap: v = false,
-      boldFontOpacity: S = 1,
-      shouldUnderlineOnHover: I = false
+      textClassName: b,
+      loop: v = false,
+      shouldWrap: A = false,
+      boldFontOpacity: I = 1,
+      shouldUnderlineOnHover: S = false
     } = e, T = (0, g.a)({
       displayNameStyles: i
     }), {
@@ -47,22 +47,22 @@ let b = [Chunk559949.x.CHERRY_BOMB, Chunk559949.x.CHICLE],
     });
     if (!N || null == i) return n;
     let L = (0, m.P)(w, x, {
-        shouldWrap: v,
-        fontOpacity: b.includes(i.fontId) ? S : 1
+        shouldWrap: A,
+        fontOpacity: y.includes(i.fontId) ? I : 1
       }),
       j = O(w);
     return (0, r.jsxs)("div", {
-      className: s()(E.kL, T, y, {
+      className: s()(E.kL, T, b, {
         [E.rD]: a !== h.G.PLAIN,
         [E.CS]: a === h.G.ANIMATED && !C,
-        [E.HW]: A,
+        [E.HW]: v,
         [E.$E]: l
       }),
       style: L,
       children: [(0, r.jsx)("span", {
         "data-username-with-effects": P,
         className: s()(E.WH, null == j ? true : j.effectClassName, {
-          [E._W]: I
+          [E._W]: S
         }),
         children: D
       }), (null == j ? true : j.glowClassName) != null && (0, r.jsx)("span", {

@@ -2,7 +2,7 @@
 /** chunk id: 740916, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./65821.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -81,7 +81,7 @@ let _ = e => {
       children: (0, c.A)(t)
     })
   },
-  b = e => {
+  y = e => {
     let {
       sku: t,
       className: n
@@ -97,7 +97,7 @@ let _ = e => {
       })]
     })
   },
-  y = e => {
+  b = e => {
     let {
       className: t
     } = e;
@@ -128,7 +128,7 @@ class O extends(r = Chunk64700.PureComponent) {
     } = this.props;
     switch (e) {
       case 5:
-        return (0, i.jsx)(y, {
+        return (0, i.jsx)(b, {
           className: o()(t, n)
         });
       case 1:
@@ -141,7 +141,7 @@ class O extends(r = Chunk64700.PureComponent) {
           className: o()(t, n)
         });
       case 2:
-        return (0, i.jsx)(b, {
+        return (0, i.jsx)(y, {
           sku: r,
           className: o()(t, n)
         });
@@ -159,7 +159,7 @@ class O extends(r = Chunk64700.PureComponent) {
     } = this.props;
     switch (e) {
       case 5:
-        return (0, i.jsx)(y, {
+        return (0, i.jsx)(b, {
           className: t
         });
       case 3:
@@ -168,7 +168,7 @@ class O extends(r = Chunk64700.PureComponent) {
           className: o()(d.OB, t)
         });
       case 2:
-        return (0, i.jsx)(b, {
+        return (0, i.jsx)(y, {
           sku: n,
           className: o()(d.dk, t)
         });
@@ -186,7 +186,7 @@ class O extends(r = Chunk64700.PureComponent) {
     } = this.props;
     switch (e) {
       case 5:
-        t = (0, i.jsx)(y, {});
+        t = (0, i.jsx)(b, {});
         break;
       case 2:
         t = (0, i.jsxs)(a.Fragment, {
@@ -232,4 +232,4 @@ class O extends(r = Chunk64700.PureComponent) {
   }
 }
 f(O, "Types", p);
-let A = O
+let v = O

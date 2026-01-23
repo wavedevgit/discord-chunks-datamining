@@ -83,18 +83,18 @@ function L(e) {
 
 function j() {
   let e = i.useRef(null),
-    t = (0, o.bG)([b.A], () => b.A.getGuildId()),
+    t = (0, o.bG)([y.A], () => y.A.getGuildId()),
     n = (0, o.bG)([E.A], () => E.A.getChannelId(t)),
     {
       viewingRoles: a,
       backNavigationSection: s,
       isFullServerPreview: u,
-      isServerShopPreview: A
-    } = (0, o.cf)([S.A], () => ({
-      viewingRoles: null != t ? S.A.getViewingRoles(t) : null,
-      backNavigationSection: S.A.getBackNavigationSection(t),
-      isFullServerPreview: null != t && S.A.isFullServerPreview(t),
-      isServerShopPreview: null != t && S.A.isViewingServerShop(t)
+      isServerShopPreview: v
+    } = (0, o.cf)([I.A], () => ({
+      viewingRoles: null != t ? I.A.getViewingRoles(t) : null,
+      backNavigationSection: I.A.getBackNavigationSection(t),
+      isFullServerPreview: null != t && I.A.isFullServerPreview(t),
+      isServerShopPreview: null != t && I.A.isViewingServerShop(t)
     }));
   if (null == a || null == t) return null;
   let j = x(s),
@@ -104,7 +104,7 @@ function j() {
       let {
         backToSettings: n
       } = e;
-      null != t && (S.A.isFullServerPreview(t) && (0, g.pX)(T.BVt.CHANNEL(t)), p.Ay.shouldShowOnboarding(t) && (f.A.finishOnboarding(t), (0, _.Jg)(t)), (0, v.rf)(t), n && m.A.open(t, s), s === T.BEX.ROLE_SUBSCRIPTIONS && (0, h.Fx)(t))
+      null != t && (I.A.isFullServerPreview(t) && (0, g.pX)(T.BVt.CHANNEL(t)), p.Ay.shouldShowOnboarding(t) && (f.A.finishOnboarding(t), (0, _.Jg)(t)), (0, A.rf)(t), n && m.A.open(t, s), s === T.BEX.ROLE_SUBSCRIPTIONS && (0, h.Fx)(t))
     };
   return (0, r.jsxs)(d.$Td, {
     color: d.Hv$.BRAND,
@@ -114,10 +114,10 @@ function j() {
         backToSettings: true
       }),
       className: w.Gv,
-      children: [(0, r.jsx)(y.A, {
+      children: [(0, r.jsx)(b.A, {
         width: 16,
         height: 16,
-        direction: y.A.Directions.LEFT,
+        direction: b.A.Directions.LEFT,
         className: w.lJ
       }), j]
     }), k && u ? (0, r.jsx)("div", {
@@ -138,7 +138,7 @@ function j() {
       }), (0, r.jsx)(d.YNO, {
         targetElementRef: e,
         position: "bottom",
-        renderPopout: () => (0, r.jsx)(I.A, {
+        renderPopout: () => (0, r.jsx)(S.A, {
           guildId: t
         }),
         children: t => {
@@ -163,7 +163,7 @@ function j() {
           size: "xs",
           color: l.A.unsafe_rawColors.YELLOW_300.css
         })
-      }), A && (0, r.jsx)(c.m, {
+      }), v && (0, r.jsx)(c.m, {
         asContainer: true,
         text: R.intl.formatToPlainString(R.t.eummvd, {
           maxTiers: N.f7,
@@ -186,10 +186,10 @@ function M(e) {
   let {
     guildId: t
   } = e;
-  return (0, o.bG)([S.A], () => S.A.isViewingRoles(t)) ? (0, r.jsx)("div", {
+  return (0, o.bG)([I.A], () => I.A.isViewingRoles(t)) ? (0, r.jsx)("div", {
     className: s()(w.xd, {
-      [w.KF]: (0, A.isWindows)(),
-      [w.Xz]: (0, A.isMac)()
+      [w.KF]: (0, v.isWindows)(),
+      [w.Xz]: (0, v.isMac)()
     }),
     children: (0, r.jsx)(j, {})
   }) : null

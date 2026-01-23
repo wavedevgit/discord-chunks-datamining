@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 685374, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => v
 }), require("./896048.js"), require("./228524.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk695244 = require("./695244.js");
 
-function j(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function j(e) {
   return e
 }
 
-function v(e, t) {
+function j(e, t) {
   if (null == e) return {};
   var n, r, l, i = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -59,38 +59,38 @@ function v(e, t) {
   return i
 }
 
-function x(e) {
+function v(e) {
   let {
     channelId: t
-  } = e, n = v(e, ["channelId"]), i = (0, a.bG)([d.A], () => d.A.getChannel(t), [t]), s = (0, a.bG)([f.A], () => f.A.getGuild(null == i ? true : i.getGuildId()));
+  } = e, n = j(e, ["channelId"]), i = (0, s.bG)([d.A], () => d.A.getChannel(t), [t]), a = (0, s.bG)([p.A], () => p.A.getGuild(null == i ? true : i.getGuildId()));
   return (l.useEffect(() => {
-    p.default.track(A.HAw.OPEN_MODAL, {
+    h.default.track(A.HAw.OPEN_MODAL, {
       type: "Grant Channel Access"
     })
-  }, []), null == i || null == s) ? null : (0, r.jsx)(E, j({
-    guild: s,
+  }, []), null == i || null == a) ? null : (0, r.jsx)(x, O({
+    guild: a,
     channel: i
   }, n))
 }
 
-function E(e) {
+function x(e) {
   var t, n;
   let {
-    guild: a,
+    guild: s,
     channel: d,
-    onClose: f,
-    newChannel: p,
+    onClose: p,
+    newChannel: h,
     inSettings: A
-  } = e, x = v(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]), [E, _] = l.useState(""), [C, S] = l.useState({}), [I, N] = l.useState(false), [T, P] = l.useState(null), w = l.useRef(null), {
+  } = e, v = j(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]), [x, E] = l.useState(""), [C, S] = l.useState({}), [I, N] = l.useState(false), [T, P] = l.useState(null), w = l.useRef(null), {
     roles: R,
     members: D,
     getRichTag: M
-  } = (0, g.K)(a, d, d.accessPermissions, E), L = b.A.useSections({
+  } = (0, m.K)(s, d, d.accessPermissions, x), L = g.A.useSections({
     roles: R,
     members: D
-  }), G = p && 0 === Object.keys(C).length;
-  async function k() {
-    if (null == d || 0 === Object.keys(C).length) return void f();
+  }), k = h && 0 === Object.keys(C).length;
+  async function G() {
+    if (null == d || 0 === Object.keys(C).length) return void p();
     N(true);
     try {
       var e, t, n;
@@ -99,49 +99,49 @@ function E(e) {
         let {
           row: n
         } = t;
-        null != n.id && "" !== n.id && (n.rowType === m.T6.ROLE ? r.push((0, h.we)(n.id, e.type)) : n.rowType === m.T6.MEMBER && r.push((0, h.n3)(n.id, e.type)))
-      }), (0, o.R$)(e.id, r, n)), f(), N(false)
+        null != n.id && "" !== n.id && (n.rowType === b.T6.ROLE ? r.push((0, f.we)(n.id, e.type)) : n.rowType === b.T6.MEMBER && r.push((0, f.n3)(n.id, e.type)))
+      }), (0, o.R$)(e.id, r, n)), p(), N(false)
     } catch (t) {
       let e = new c.LG(t);
       N(false), P(e)
     }
   }
-  let U = (0, u.ke)(d.type) ? s.I$d : s.trU;
-  return (0, r.jsx)(b.A.Provider, {
+  let U = (0, u.ke)(d.type) ? a.I$d : a.trU;
+  return (0, r.jsx)(g.A.Provider, {
     listRef: w,
-    query: E,
-    setQuery: _,
+    query: x,
+    setQuery: E,
     pendingAdditions: C,
     setPendingAdditions: S,
     roles: R,
     members: D,
     getRichTag: M,
-    children: (0, r.jsx)(i.Modal, (t = j({}, x), n = n = {
+    children: (0, r.jsx)(i.Modal, (t = O({}, v), n = n = {
       title: y.intl.string(y.t.dMJ3Y6),
-      onClose: f,
+      onClose: p,
       input: (0, r.jsxs)("div", {
-        children: [(0, r.jsxs)(s.Text, {
-          className: O.HA,
+        children: [(0, r.jsxs)(a.Text, {
+          className: _.HA,
           variant: "text-lg/normal",
           color: "text-default",
           children: [(0, r.jsx)(U, {
-            className: O.p,
+            className: _.p,
             size: "sm",
             color: "currentColor"
           }), d.name]
-        }), d.isGuildStageVoice() && (0, r.jsx)(s.Text, {
+        }), d.isGuildStageVoice() && (0, r.jsx)(a.Text, {
           color: "text-default",
-          className: O.h_,
+          className: _.h_,
           variant: "text-sm/normal",
           children: y.intl.string(y.t.f7VbhF)
-        }), (0, r.jsx)(b.A.SearchBox, {
+        }), (0, r.jsx)(g.A.SearchBox, {
           placeholderText: y.intl.string(y.t.iezLLn)
-        }), (0, r.jsx)(s.Text, {
-          className: O.W$,
+        }), (0, r.jsx)(a.Text, {
+          className: _.W$,
           variant: "text-xs/normal",
           children: y.intl.string(y.t.rwFx85)
-        }), null != T ? (0, r.jsx)(s.Text, {
-          className: O.W$,
+        }), null != T ? (0, r.jsx)(a.Text, {
+          className: _.W$,
           variant: "text-xs/normal",
           color: "text-feedback-critical",
           children: T.getAnyErrorMessage()
@@ -149,24 +149,24 @@ function E(e) {
       }),
       listProps: {
         ref: w,
-        sectionHeight: b.A.SECTION_HEIGHT,
-        renderSection: b.A.renderSection,
-        rowHeight: b.A.ROW_HEIGHT,
-        renderRow: b.A.renderRow,
+        sectionHeight: g.A.SECTION_HEIGHT,
+        renderSection: g.A.renderSection,
+        rowHeight: g.A.ROW_HEIGHT,
+        renderRow: g.A.renderRow,
         sections: L
       },
-      actions: G ? [{
+      actions: k ? [{
         variant: "secondary",
         text: y.intl.string(y.t.u46sxe),
-        onClick: f
+        onClick: p
       }] : [{
         variant: "secondary",
         text: y.intl.string(y.t["ETE/oC"]),
-        onClick: f
+        onClick: p
       }, {
         variant: "primary",
         text: y.intl.string(y.t.i4jeWR),
-        onClick: k,
+        onClick: G,
         loading: I
       }]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

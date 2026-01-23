@@ -76,20 +76,20 @@ function g(e, t) {
     retryConfig: {
       maxRetries: g = _,
       backoff: E = h,
-      retryableErrors: b = p
+      retryableErrors: y = p
     } = {}
-  } = t, y = new Map;
+  } = t, b = new Map;
 
   function O(e) {
     if (null == e) return m;
-    let t = y.get(e);
+    let t = b.get(e);
     return null == t && (t = (0, i.v)(() => ({
       isLoading: false,
       error: null,
       backoff: E()
-    })), y.set(e, t)), t
+    })), b.set(e, t)), t
   }
-  async function A(e) {
+  async function v(e) {
     var t;
     let {
       queryId: n,
@@ -109,9 +109,9 @@ function g(e, t) {
       o.setState({
         error: e,
         isLoading: false
-      }), b(e) && g > c.fails && await new Promise((e, t) => {
+      }), y(e) && g > c.fails && await new Promise((e, t) => {
         c.fail(() => {
-          A({
+          v({
             queryId: n,
             args: r,
             useStoreState: o,
@@ -122,7 +122,7 @@ function g(e, t) {
     }
   }
 
-  function v() {
+  function A() {
     for (var t = arguments.length, i = Array(t), s = 0; s < t; s++) i[s] = arguments[s];
     let u = d(i),
       p = Array.isArray(e) ? e : [e],
@@ -131,22 +131,22 @@ function g(e, t) {
       m = (0, o.bG)(p, () => null == l ? true : l(...u), [u]),
       g = h(e => null == l && e.isLoading),
       E = null != m ? m : g,
-      b = (0, o.bG)(p, () => null == c ? true : c(...u), [u]),
-      y = h(e => null == c ? e.error : null),
-      v = null != b ? b : y,
-      S = (0, o.bG)(p, () => a(...u), [u], f);
+      y = (0, o.bG)(p, () => null == c ? true : c(...u), [u]),
+      b = h(e => null == c ? e.error : null),
+      A = null != y ? y : b,
+      I = (0, o.bG)(p, () => a(...u), [u], f);
     return (0, r.useEffect)(() => {
-      A({
+      v({
         queryId: _,
         args: u,
         useStoreState: h
       })
     }, [_, u, h]), {
-      data: S,
-      error: v,
+      data: I,
+      error: A,
       isLoading: E,
       refetch: (0, r.useCallback)(() => {
-        A({
+        v({
           queryId: _,
           args: u,
           useStoreState: h,
@@ -155,13 +155,13 @@ function g(e, t) {
       }, [_, u, h])
     }
   }
-  return v.refetch = async function() {
+  return A.refetch = async function() {
     for (var e = arguments.length, t = Array(e), r = 0; r < e; r++) t[r] = arguments[r];
     let i = n(...t);
-    O(i).getState().backoff.succeed(), await A({
+    O(i).getState().backoff.succeed(), await v({
       queryId: i,
       args: t,
       refetch: true
     })
-  }, v
+  }, A
 }

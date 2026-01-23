@@ -16,7 +16,7 @@ let o = Chunk64700.memo(function(e) {
     let {
       favoriteAdded: e,
       clearFavoriteAdded: t
-    } = (0, a.CJ)();
+    } = (0, s.CJ)();
     return l.useEffect(() => {
       if (e) {
         let e = setTimeout(() => {
@@ -34,7 +34,7 @@ let o = Chunk64700.memo(function(e) {
     spacing: 12,
     position: "right",
     align: "center",
-    text: s.intl.string(s.t["4tSWQg"]),
+    text: a.intl.string(a.t["4tSWQg"]),
     "aria-label": t,
     children: (0, r.jsx)("div", {
       children: n

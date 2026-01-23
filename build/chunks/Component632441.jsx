@@ -30,10 +30,10 @@ function T(e) {
   let {
     badgeText: t,
     badgeColor: r
-  } = e, u = l.useRef(t), a = l.useRef(r);
-  return (0, n.jsx)(i.LpS, {
+  } = e, u = l.useRef(t), i = l.useRef(r);
+  return (0, n.jsx)(a.LpS, {
     text: u.current,
-    color: a.current
+    color: i.current
   })
 }
 
@@ -41,92 +41,92 @@ function j(e) {
   var t, r;
   let {
     transitionState: j,
-    userId: N,
-    channelId: h,
-    onClose: R
-  } = e, v = (0, a.bG)([s.default], () => s.default.getUser(N)), w = (0, a.bG)([c.A], () => {
+    userId: h,
+    channelId: N,
+    onClose: v
+  } = e, R = (0, i.bG)([c.default], () => c.default.getUser(h)), w = (0, i.bG)([s.A], () => {
     var e;
-    return null == (e = c.A.getChannel(h)) ? true : e.getGuildId()
-  }), I = o.Ay.useName(w, null, v), {
+    return null == (e = s.A.getChannel(N)) ? true : e.getGuildId()
+  }), I = o.Ay.useName(w, null, R), {
     fingerprint: x,
     userKey: U
   } = (0, p.R)({
-    userId: N
+    userId: h
   }), F = (0, A.z)({
     fingerprintBase64: x,
     chunkSize: 5,
     desiredLength: 45
   }), P = l.useCallback(() => {
     (0, f.Hb)({
-      userId: N,
-      channelId: h
+      userId: h,
+      channelId: N
     })
-  }, [h, N]), k = (0, y.UF)({
-    userId: N,
-    channelId: h
+  }, [N, h]), k = (0, y.UF)({
+    userId: h,
+    channelId: N
   });
-  (0, E.w)({
-    channelId: h,
-    userId: N,
+  (0, b.w)({
+    channelId: N,
+    userId: h,
     nickname: I,
-    onAlertOpen: R
+    onAlertOpen: v
   });
   let {
     isCurrentUserKeyPersistent: D,
     isOtherUserKeyPersistent: M,
     loading: V
-  } = (0, b.q)({
-    userId: N
+  } = (0, E.q)({
+    userId: h
   }), G = l.useCallback(() => {
-    null != U && ((0, d.bk)(N, U, M, h, S.ThZ.E2EE_USER_VERIFY_MODAL), R())
-  }, [U, N, M, h, R]), L = l.useCallback(() => {
-    null != U && ((0, d.Dh)(N, U, M), R())
-  }, [U, N, M, R]), [K, Y] = l.useMemo(() => k ? [_.intl.string(_.t.UNUuem), i.LU0.colors.BACKGROUND_BRAND.css] : [_.intl.string(_.t.y2b7CA), i.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css], [k]), B = l.useMemo(() => (0, d.Z1)({
+    null != U && ((0, d.bk)(h, U, M, N, _.ThZ.E2EE_USER_VERIFY_MODAL), v())
+  }, [U, h, M, N, v]), L = l.useCallback(() => {
+    null != U && ((0, d.Dh)(h, U, M), v())
+  }, [U, h, M, v]), [K, Y] = l.useMemo(() => k ? [S.intl.string(S.t.UNUuem), a.LU0.colors.BACKGROUND_BRAND.css] : [S.intl.string(S.t.y2b7CA), a.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css], [k]), B = l.useMemo(() => (0, d.Z1)({
     isCurrentUserKeyPersistent: D,
     isOtherUserKeyPersistent: M,
     otherUserNickname: I
   }), [D, M, I]), z = (0, g.H)({
-    userId: N,
+    userId: h,
     keyToOmit: U
   });
   l.useEffect(() => {
     (0, f.HJ)({
-      userId: N,
-      channelId: h
+      userId: h,
+      channelId: N
     })
-  }, [h, N]);
+  }, [N, h]);
   let H = {
       transitionState: j,
-      title: _.intl.string(_.t["/WPGnF"]),
-      subtitle: _.intl.format(_.t.oc2kce, {
+      title: S.intl.string(S.t["/WPGnF"]),
+      subtitle: S.intl.format(S.t.oc2kce, {
         username: I
       })
     },
     q = (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsxs)("div", {
         className: C.Ot,
-        children: [z > 0 && (0, n.jsx)(i.po8, {
-          messageType: i.YCn.INFO,
+        children: [z > 0 && (0, n.jsx)(a.po8, {
+          messageType: a.YCn.INFO,
           className: C.Ht,
-          children: _.intl.format(_.t.uZDkz0, {
+          children: S.intl.format(S.t.uZDkz0, {
             count: z
           })
         }), (0, n.jsxs)("div", {
           className: C.wx,
-          children: [(0, n.jsx)(i.Heading, {
+          children: [(0, n.jsx)(a.Heading, {
             variant: "text-sm/bold",
             color: "text-strong",
-            children: _.intl.string(_.t["/WPGnF"])
+            children: S.intl.string(S.t["/WPGnF"])
           }), null != F && (0, n.jsx)(m.c, {
             className: C.nJ,
             chunks: F,
-            color: i.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
+            color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
             onCopy: P
           }), (0, n.jsx)("div", {
             className: C.ub,
-            children: null == F ? (0, n.jsx)(i.y$y, {
+            children: null == F ? (0, n.jsx)(a.y$y, {
               className: C.u1,
-              type: i.tVU.SPINNING_CIRCLE
+              type: a.tVU.SPINNING_CIRCLE
             }) : (0, n.jsx)(T, {
               badgeText: K,
               badgeColor: Y
@@ -137,7 +137,7 @@ function j(e) {
           chunks: F,
           columns: 3
         })]
-      }), (0, n.jsx)(i.Text, {
+      }), (0, n.jsx)(a.Text, {
         className: C.qr,
         variant: "text-sm/normal",
         color: "text-muted",
@@ -145,13 +145,13 @@ function j(e) {
       })]
     }),
     Z = {
-      text: k ? _.intl.string(_.t["Osb+/n"]) : _.intl.string(_.t["0tvNAn"]),
+      text: k ? S.intl.string(S.t["Osb+/n"]) : S.intl.string(S.t["0tvNAn"]),
       disabled: null == F || V,
       onClick: k ? L : G
     },
     J = {
-      text: _.intl.string(_.t["ETE/oC"]),
-      onClick: R,
+      text: S.intl.string(S.t["ETE/oC"]),
+      onClick: v,
       variant: "secondary"
     };
   return (0, n.jsx)(u.Modal, (t = function(e) {
@@ -172,7 +172,7 @@ function j(e) {
     }
     return e
   }({
-    onClose: R
+    onClose: v
   }, H), r = r = {
     actions: [J, Z],
     children: q

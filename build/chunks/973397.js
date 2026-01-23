@@ -18,12 +18,12 @@ function c(e) {
     isFetching: u
   } = (0, i.n)(e), d = (0, r.bG)([a.A], () => a.A.getDetectableGame(e)), f = (0, r.bG)([l.A], () => l.A.canFetch(e));
   return {
-    coverImageUrl: null != n ? n : s.Ay.getGameAssetURL({
+    coverImageUrl: null != n ? n : o.Ay.getGameAssetURL({
       id: e,
       hash: null == d ? true : d.cover_image_hash,
       keepAspectRatio: true
     }),
-    gameName: null != (t = null != c ? c : null == d ? true : d.name) ? t : o.intl.string(o.t.GIWFlF),
+    gameName: null != (t = null != c ? c : null == d ? true : d.name) ? t : s.intl.string(s.t.GIWFlF),
     isLoading: f || u
   }
 }

@@ -2,9 +2,9 @@
 /** chunk id: 418448, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  bN: () => p,
-  jr: () => x,
-  nx: () => m
+  bN: () => b,
+  jr: () => h,
+  nx: () => f
 }), require("./896048.js"), require("./65821.js");
 var Chunk73153 = require("./73153.js"),
   Chunk157559 = require("./157559.js"),
@@ -19,27 +19,27 @@ var Chunk73153 = require("./73153.js"),
   Chunk539916 = require("./539916.js"),
   Chunk985018 = require("./985018.jsx");
 
-function m() {
+function f() {
   r.h.dispatch({
     type: "GUILD_SETTINGS_DEFAULT_CHANNELS_RESET"
   })
 }
 
-function p(e) {
+function b(e) {
   r.h.dispatch({
     type: "GUILD_SETTINGS_DEFAULT_CHANNELS_TOGGLE",
     channelId: e
   })
 }
-async function x(e) {
-  let t = Array.from(d.A.editedDefaultChannelIds).filter(e => null != c.A.getChannel(e)),
-    n = f.A.advancedMode,
-    [m] = (0, a.ui)(e.id, [...t]),
-    p = (0, a.G4)(e.id, t, f.A.editedOnboardingPrompts, a.VU);
-  if (s.A.getEnabled(e.id) && (!n && m.length < g.Kd || n && p.length < g.Kd)) {
+async function h(e) {
+  let t = Array.from(d.A.editedDefaultChannelIds).filter(e => null != o.A.getChannel(e)),
+    n = g.A.advancedMode,
+    [f] = (0, a.ui)(e.id, [...t]),
+    b = (0, a.G4)(e.id, t, g.A.editedOnboardingPrompts, a.VU);
+  if (s.A.getEnabled(e.id) && (!n && f.length < m.Kd || n && b.length < m.Kd)) {
     if (i.A.show({
-        title: b.intl.string(b.t.iLdiqY),
-        body: b.intl.string(b.t.JOT74c)
+        title: p.intl.string(p.t.iLdiqY),
+        body: p.intl.string(p.t.JOT74c)
       }), n) throw Error("Chattable channels with questions requirement not met");
     return
   }
@@ -51,7 +51,7 @@ async function x(e) {
       let i = n ? (0, u.xR)(e, {
           ignoreDefaultPrompt: true
         }) : null,
-        l = null != i ? i.map(g.SA) : true;
+        l = null != i ? i.map(m.SA) : true;
       await (0, u.YN)(e.id, {
         default_channel_ids: t,
         prompts: l
@@ -67,14 +67,14 @@ async function x(e) {
         }
       })
     } catch (n) {
-      var x;
+      var h;
       let {
         fieldName: e,
         error: t
-      } = null != (x = new l.LG(n).getAnyErrorMessageAndField()) ? x : {};
+      } = null != (h = new l.LG(n).getAnyErrorMessageAndField()) ? h : {};
       i.A.show({
-        title: b.intl.string(b.t.iLdiqY),
-        body: [e, t].filter(o.Vq).join(": ")
+        title: p.intl.string(p.t.iLdiqY),
+        body: [e, t].filter(c.Vq).join(": ")
       }), r.h.dispatch({
         type: "GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_FAILED"
       })

@@ -28,17 +28,17 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 let E = 2e3,
-  b = new Chunk626584.A("EntityVersionsManager");
-class y extends Chunk439372.A {
+  y = new Chunk626584.A("EntityVersionsManager");
+class b extends Chunk439372.A {
   _initialize() {
-    s.h.subscribe("CONNECTION_OPEN", A)
+    s.h.subscribe("CONNECTION_OPEN", v)
   }
   _terminate() {
-    s.h.unsubscribe("CONNECTION_OPEN", A)
+    s.h.unsubscribe("CONNECTION_OPEN", v)
   }
   constructor(...e) {
     super(...e), g(this, "actions", {
-      GUILD_CREATE: v,
+      GUILD_CREATE: A,
       DELETED_ENTITY_IDS: O
     })
   }
@@ -47,32 +47,32 @@ class y extends Chunk439372.A {
 function O(e) {
   var t;
   let n = null == (t = _.A.getGuild(e.guild_id)) ? true : t.name;
-  b.fileOnly("received deleted guild entities (id: ".concat(e.guild_id, ", name: ").concat(n, ")")), a.Ay.Emitter.batched(() => {
+  y.fileOnly("received deleted guild entities (id: ".concat(e.guild_id, ", name: ").concat(n, ")")), a.Ay.Emitter.batched(() => {
     null != e.channels && C(e.guild_id, new Set(e.channels)), null != e.roles && N(e.guild_id, new Set(e.roles)), null != e.emojis && R(e.guild_id, new Set(e.emojis)), null != e.stickers && w(e.guild_id, new Set(e.stickers))
   })
 }
 
-function A() {
+function v() {
   l.A.getAll().then(e => {
-    e.forEach(e => S(e))
+    e.forEach(e => I(e))
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     guild: t
   } = e;
-  t.unableToSyncDeletes && S(t.id)
-}
-
-function S(e) {
-  setTimeout(() => I(e), Math.ceil(Math.random() * E))
+  t.unableToSyncDeletes && I(t.id)
 }
 
 function I(e) {
+  setTimeout(() => S(e), Math.ceil(Math.random() * E))
+}
+
+function S(e) {
   var t, n, r;
   let i = null == (n = _.A.getGuild(e)) ? true : n.name;
-  b.fileOnly("requesting deleted guild entities (id: ".concat(e, ", name: ").concat(i, ")"));
+  y.fileOnly("requesting deleted guild entities (id: ".concat(e, ", name: ").concat(i, ")"));
   let a = T(Object.keys(f.A.getMutableBasicGuildChannelsForGuild(e))),
     s = T(p.A.getSortedRoles(e).map(e => e.id)),
     o = T(u.Ay.getGuildEmoji(e).map(e => e.id)),
@@ -86,7 +86,7 @@ function T(e) {
 
 function C(e, t) {
   let n = h.default.keys(f.A.getMutableBasicGuildChannelsForGuild(e));
-  b.fileOnly("syncChannels", {
+  y.fileOnly("syncChannels", {
     channelIdsInMemory: n,
     channelIdsFromServer: t
   }), n.forEach(n => {
@@ -131,4 +131,4 @@ function w(e, t) {
     stickers: i
   })
 }
-let P = new y
+let P = new b

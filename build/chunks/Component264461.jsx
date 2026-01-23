@@ -1,12 +1,12 @@
 /** Chunk was on 22477 **/
 /** chunk id: 264461, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
   Chunk902592 = require("./902592.jsx"),
@@ -16,18 +16,18 @@ var Chunk627968 = require("./627968.js"),
   Chunk439895 = require("./439895.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk569885 = require("./569885.js");
-let x = e => {
+let g = e => {
     let {
       setTab: t
     } = e, n = (0, o.bG)([u.A], () => u.A.getWindowOpen(h.MLl.DEVTOOLS_POPOUT));
     return (0, a.jsxs)("div", {
-      className: f.Qs,
+      className: x.Qs,
       children: [(0, a.jsx)(s.DUT, {
         onClick: () => {
           t(1)
         },
         children: (0, a.jsx)("div", {
-          className: r()(f.vK, f.Dg),
+          className: i()(x.vK, x.Dg),
           children: (0, a.jsx)(s.EYj, {
             variant: "text-md/bold",
             color: "always-white",
@@ -39,7 +39,7 @@ let x = e => {
           t(2)
         },
         children: (0, a.jsx)("div", {
-          className: r()(f.vK, f.st),
+          className: i()(x.vK, x.st),
           children: (0, a.jsx)(s.EYj, {
             variant: "text-md/bold",
             color: "always-white",
@@ -51,7 +51,7 @@ let x = e => {
           t(3)
         },
         children: (0, a.jsx)("div", {
-          className: r()(f.vK, f.IP),
+          className: i()(x.vK, x.IP),
           children: (0, a.jsx)(s.EYj, {
             variant: "text-md/bold",
             color: "always-white",
@@ -84,12 +84,12 @@ let x = e => {
       })]
     })
   },
-  b = () => {
+  f = () => {
     let [e, t] = l.useState(0);
     return (0, a.jsxs)(s.IpV, {
-      className: f.iE,
+      className: x.iE,
       children: [(0, a.jsxs)("div", {
-        className: f.C$,
+        className: x.C$,
         children: [(0, a.jsx)(s.DZT, {
           variant: "heading-xxl/medium",
           children: "Collectibles DevTools"
@@ -107,7 +107,7 @@ let x = e => {
           case 3:
             return (0, a.jsx)(p.A, {});
           default:
-            return (0, a.jsx)(x, {
+            return (0, a.jsx)(g, {
               setTab: t
             })
         }

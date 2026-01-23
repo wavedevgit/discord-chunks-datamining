@@ -2,7 +2,7 @@
 /** chunk id: 316770, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk503698 = require("./503698.js"),
@@ -21,30 +21,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk380297 = require("./380297.js");
 
-function b(e) {
+function y(e) {
   let {
     channel: t,
     guild: n,
     onAction: i,
-    onClose: b
-  } = e, y = (0, c.Ay)(t), O = (0, s.bG)([p.A], () => t.isPrivate() || p.A.can(m.xB.CONNECT, t)), A = () => {
-    if (!O) return y;
+    onClose: y
+  } = e, b = (0, c.Ay)(t), O = (0, s.bG)([p.A], () => t.isPrivate() || p.A.can(m.xB.CONNECT, t)), v = () => {
+    if (!O) return b;
     let e = e => {
       e.stopPropagation(), t.isGuildStageVoice() ? (0, f.av)(t) : (l.default.selectVoiceChannel(t.id), (0, u.iN)(t.id)), null == i || i({
         action: "OPEN_VOICE_CHANNEL"
-      }), null == b || b()
+      }), null == y || y()
     };
     return (0, r.jsx)(o.DUT, {
       className: a()(E.sd, E.mG),
       onClick: e,
-      children: y
+      children: b
     })
-  }, v = () => {
+  }, A = () => {
     if (null == n) return null;
     let e = e => {
       e.stopPropagation(), (0, d.u)(n.id), null == i || i({
         action: "OPEN_VOICE_GUILD"
-      }), null == b || b()
+      }), null == y || y()
     };
     return (0, r.jsx)(_.A, {
       variant: "text-xs/normal",
@@ -64,7 +64,7 @@ function b(e) {
         size: "xxs",
         color: o.LU0.colors.TEXT_DEFAULT,
         className: E.Ow
-      }), A()]
-    }), v()]
+      }), v()]
+    }), A()]
   })
 }

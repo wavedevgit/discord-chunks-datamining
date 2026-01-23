@@ -1,7 +1,7 @@
 /** Chunk was on 94503 **/
 /** chunk id: 62697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => c
+  A: () => u
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -11,7 +11,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk848161 = require("./848161.js"),
   Chunk438536 = require("./438536.js");
 
-function c(e) {
+function u(e) {
   let {
     onNavigate: t,
     backPanel: n = a.g.INFO

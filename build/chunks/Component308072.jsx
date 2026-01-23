@@ -2,7 +2,7 @@
 /** chunk id: 308072, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,56 +14,56 @@ var Chunk627968 = require("./627968.js"),
   Chunk760751 = require("./760751.js"),
   Chunk677230 = require("./677230.js");
 
-function f(e) {
+function g(e) {
   let {
     applicationId: t,
     selected: n,
     onClick: l,
-    disabled: f
+    disabled: g
   } = e, {
-    isFetching: g,
-    coverImageUrl: b
-  } = (0, o.n)(t, {
+    isFetching: m,
+    coverImageUrl: p
+  } = (0, c.n)(t, {
     coverImageSize: 256
-  }), m = (0, c.bG)([d.A], () => {
+  }), f = (0, o.bG)([d.A], () => {
     var e, n;
     return null != (e = null == (n = d.A.getDetectableGame(t)) ? true : n.name) ? e : ""
-  }), p = i.useCallback(() => {
+  }), b = i.useCallback(() => {
     null == l || l(t)
-  }, [t, l]), x = i.useMemo(() => g ? null : null == b ? (0, r.jsx)("div", {
+  }, [t, l]), h = i.useMemo(() => m ? null : null == p ? (0, r.jsx)("div", {
     className: u.gP,
     children: (0, r.jsx)(a._7Z, {
       size: "lg"
     })
   }) : (0, r.jsx)("img", {
     className: u.Su,
-    alt: m,
-    src: b
-  }), [b, g, m]);
+    alt: f,
+    src: p
+  }), [p, m, f]);
   return (0, r.jsxs)("div", {
     className: s()(u.id, {
       [u.rX]: !n,
-      [u.r9]: f
+      [u.r9]: g
     }),
     children: [(0, r.jsxs)(a.DUT, {
-      "aria-disabled": f,
-      tabIndex: f ? false : 0,
-      onClick: f ? true : p,
+      "aria-disabled": g,
+      tabIndex: g ? false : 0,
+      onClick: g ? true : b,
       className: s()(u.a8, {
-        [u.AL]: g,
-        [u.r9]: f
+        [u.AL]: m,
+        [u.r9]: g
       }),
       children: [n && (0, r.jsx)("div", {
         className: u.jK,
         children: (0, r.jsx)(a.P7L, {
           checked: n
         })
-      }), x]
+      }), h]
     }), (0, r.jsx)(a.Text, {
       className: u.mO,
       variant: "text-xs/medium",
       color: "text-strong",
-      children: m
+      children: f
     })]
   })
 }

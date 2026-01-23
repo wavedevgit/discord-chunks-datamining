@@ -1,7 +1,7 @@
 /** Chunk was on 39579 **/
 /** chunk id: 783153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => y
+  A: () => j
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk225305 = require("./225305.js");
 
-function j(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,25 +53,25 @@ function v(e, t) {
   }), e
 }
 
-function y(e) {
+function j(e) {
   let {
     guildId: t,
     onComplete: n,
-    isLastStep: y,
-    isSubmitting: _ = false,
+    isLastStep: j,
+    isSubmitting: y = false,
     disableTracking: A
   } = e, N = i.useRef(false), {
     onboardingConnections: P,
     isLoading: E
-  } = (0, l.cf)([p.A], () => ({
-    onboardingConnections: p.A.getConnections(t),
-    isLoading: p.A.isLoading()
-  })), D = (0, l.bG)([o.default, d.A], () => P.some(e => {
-    if (e.connection_type === g.wZ.APPLICATION && null != e.application_id) {
-      let t = o.default.getNewestTokenForApplication(e.application_id);
-      return o.default.getFetchStateForApplication(e.application_id) === o.FetchState.FETCHED && null != t
+  } = (0, l.cf)([f.A], () => ({
+    onboardingConnections: f.A.getConnections(t),
+    isLoading: f.A.isLoading()
+  })), w = (0, l.bG)([c.default, d.A], () => P.some(e => {
+    if (e.connection_type === b.wZ.APPLICATION && null != e.application_id) {
+      let t = c.default.getNewestTokenForApplication(e.application_id);
+      return c.default.getFetchStateForApplication(e.application_id) === c.FetchState.FETCHED && null != t
     }
-    if (e.connection_type === g.wZ.PROVIDER_CONNECTED_ACCOUNT && null != e.provider_id) {
+    if (e.connection_type === b.wZ.PROVIDER_CONNECTED_ACCOUNT && null != e.provider_id) {
       let t = d.A.getAccount(null, e.provider_id);
       return null != t && !t.revoked
     }
@@ -79,10 +79,10 @@ function y(e) {
   }), [P]);
   i.useEffect(() => {
     if (A || E || 0 === P.length || N.current) return;
-    let e = (0, b.H_)(P),
-      n = (0, b.OG)(P);
-    u.default.track(O.HAw.GUILD_ONBOARDING_STEP_VIEWED, v(j({}, (0, a.H$)(t)), {
-      step: f.l8,
+    let e = (0, m.H_)(P),
+      n = (0, m.OG)(P);
+    u.default.track(_.HAw.GUILD_ONBOARDING_STEP_VIEWED, v(O({}, (0, a.H$)(t)), {
+      step: p.l8,
       required: false,
       provider_connections_connected: e.connected,
       provider_connections_not_connected: e.notConnected,
@@ -90,17 +90,17 @@ function y(e) {
       application_connections_not_connected: n.notConnected
     })), N.current = true
   }, [t, E, P, A]);
-  let w = i.useCallback(() => {
+  let D = i.useCallback(() => {
     if (!A) {
-      let e = (0, b.H_)(P),
-        n = (0, b.OG)(P);
-      u.default.track(O.HAw.GUILD_ONBOARDING_STEP_COMPLETED, v(j({}, (0, a.H$)(t)), {
-        step: f.l8,
-        skipped: !D,
+      let e = (0, m.H_)(P),
+        n = (0, m.OG)(P);
+      u.default.track(_.HAw.GUILD_ONBOARDING_STEP_COMPLETED, v(O({}, (0, a.H$)(t)), {
+        step: p.l8,
+        skipped: !w,
         back: false,
         options_selected: 0,
         in_onboarding: true,
-        is_final_step: y,
+        is_final_step: j,
         provider_connections_connected: e.connected,
         provider_connections_not_connected: e.notConnected,
         application_connections_connected: n.connected,
@@ -108,60 +108,60 @@ function y(e) {
       }))
     }
     n()
-  }, [n, A, t, P, D, y]);
+  }, [n, A, t, P, w, j]);
   return E ? (0, r.jsxs)("div", {
-    className: h.g4,
+    className: x.g4,
     children: [(0, r.jsx)(s.y$y, {}), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "text-muted",
-      children: x.intl.string(x.t.ZTNur7)
+      children: h.intl.string(h.t.ZTNur7)
     })]
   }) : (0, r.jsx)("div", {
-    className: h.kL,
+    className: x.kL,
     children: (0, r.jsxs)("div", {
-      className: h.Qs,
+      className: x.Qs,
       children: [(0, r.jsxs)("div", {
-        className: h.gT,
+        className: x.gT,
         children: [(0, r.jsxs)("div", {
-          className: h.wx,
+          className: x.wx,
           children: [(0, r.jsx)("div", {
-            className: h.qd,
+            className: x.qd,
             children: (0, r.jsx)(s.Heading, {
               variant: "heading-xl/semibold",
-              children: x.intl.string(x.t.eDVMrA)
+              children: h.intl.string(h.t.eDVMrA)
             })
           }), (0, r.jsx)("div", {
-            className: h.ux,
+            className: x.ux,
             children: (0, r.jsx)(s.Text, {
               variant: "text-md/normal",
               color: "text-muted",
-              children: x.intl.string(x.t.BozOXu)
+              children: h.intl.string(h.t.BozOXu)
             })
           })]
         }), (0, r.jsx)("div", {
-          className: h.A5,
+          className: x.A5,
           children: (0, r.jsx)("div", {
-            className: h.eF,
-            children: P.map((e, n) => (0, r.jsx)(m.A, {
+            className: x.eF,
+            children: P.map((e, n) => (0, r.jsx)(g.A, {
               connection: e,
               guildId: t,
-              location: c.A.GUILD_ONBOARDING
+              location: o.A.GUILD_ONBOARDING
             }, n))
           })
         })]
       }), (0, r.jsx)("div", {
-        className: h.qr,
+        className: x.qr,
         children: (0, r.jsxs)("div", {
-          className: h.o1,
+          className: x.o1,
           children: [(0, r.jsx)("div", {}), (0, r.jsx)("div", {
-            className: h.E3,
+            className: x.E3,
             children: (0, r.jsx)(s.Button, {
-              variant: D ? "primary" : "secondary",
-              onClick: w,
-              text: D ? y ? "".concat(x.intl.string(x.t["8SuVoE"]), " \uD83C\uDF89") : x.intl.string(x.t.PDTjLN) : x.intl.string(x.t["5Wxrcd"]),
-              disabled: _,
-              loading: _,
-              icon: y ? true : s.KS6,
+              variant: w ? "primary" : "secondary",
+              onClick: D,
+              text: w ? j ? "".concat(h.intl.string(h.t["8SuVoE"]), " \uD83C\uDF89") : h.intl.string(h.t.PDTjLN) : h.intl.string(h.t["5Wxrcd"]),
+              disabled: y,
+              loading: y,
+              icon: j ? true : s.KS6,
               iconPosition: "end"
             })
           })]

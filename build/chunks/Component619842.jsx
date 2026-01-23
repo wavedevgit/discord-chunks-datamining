@@ -19,29 +19,29 @@ function u(e) {
     guild: t,
     numSounds: n,
     isOutOfSlots: u
-  } = e, f = t.premiumTier, g = (0, s.ax)(f), b = c.y7[f] - 2;
-  if (null == g || f === a.TVA.TIER_3 || n < b) return null;
-  let m = u ? {
+  } = e, g = t.premiumTier, m = (0, s.ax)(g), p = o.y7[g] - 2;
+  if (null == m || g === a.TVA.TIER_3 || n < p) return null;
+  let f = u ? {
     color: i.XD.GREEN,
     look: i.pR.FILLED,
-    text: o.intl.string(o.t.cYzxGn)
+    text: c.intl.string(c.t.cYzxGn)
   } : true;
   return (0, r.jsx)(l.A, {
-    header: o.intl.string(o.t.zT9SxY),
-    text: o.intl.formatToPlainString(o.t.OKqEAU, {
-      level: g,
-      numAdditional: (0, s.Ry)(g)
+    header: c.intl.string(c.t.zT9SxY),
+    text: c.intl.formatToPlainString(c.t.OKqEAU, {
+      level: m,
+      numAdditional: (0, s.Ry)(m)
     }),
     headerColor: "text-strong",
     textColor: "text-default",
-    buttonProps: m,
+    buttonProps: f,
     useExpressiveButton: true,
     guild: t,
     analyticsLocation: {
       page: a.liQ.GUILD_SETTINGS,
       section: a.JJy.GUILD_SETTINGS_SOUNDBOARD,
       object: a.ZSU.BOOST_UPSELL_BANNER_SLOTS_FULL,
-      objectType: (0, s.k1)(g)
+      objectType: (0, s.k1)(m)
     },
     className: d.k
   })

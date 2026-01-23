@@ -2,10 +2,10 @@
 /** chunk id: 465364, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => y,
+  Ay: () => b,
   Le: () => g,
-  Tz: () => S,
-  jp: () => A,
+  Tz: () => I,
+  jp: () => v,
   ko: () => m
 }), require("./896048.js"), require("./733351.js"), require("./747238.js"), require("./812715.js");
 var Chunk436857 = require("./436857.js");
@@ -121,7 +121,7 @@ function E(e, t, n) {
       index: 0,
       0: d
     }
-  }]), a && (e = w(e, (null != l ? l : t).embeds)), s || (e = I(e, n)), e = b(e), t.embeds.length > 0 && (c = C(e, n)), s && (e = P(e)), null != o && (e = o(e, n)), e));
+  }]), a && (e = w(e, (null != l ? l : t).embeds)), s || (e = S(e, n)), e = y(e), t.embeds.length > 0 && (c = C(e, n)), s && (e = P(e)), null != o && (e = o(e, n)), e));
   return {
     hasSpoilerEmbeds: c,
     content: f,
@@ -129,7 +129,7 @@ function E(e, t, n) {
   }
 }
 
-function b(e) {
+function y(e) {
   let t = e.some(e => "link" !== e.type);
   return e.filter(e => {
     let n = "link" === e.type,
@@ -138,7 +138,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
   return E(t.formatInline ? a.A.parseInlineReply : a.A.parse, e, t)
 }
@@ -172,12 +172,12 @@ function O(e, t) {
   }, e => (Array.isArray(e) || (e = [e]), e))
 }
 
-function A(e, t) {
+function v(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
   return O(e, t, n)
 }
 
-function v(e, t, n, r) {
+function A(e, t, n, r) {
   return e(t, true, {
     allowLinks: false,
     allowDevLinks: false,
@@ -198,11 +198,11 @@ function v(e, t, n, r) {
   }, e => (Array.isArray(e) || (e = [e]), e))
 }
 
-function S(e, t, n) {
-  return v(a.A.parseAutoModerationSystemMessage, e, t, n)
+function I(e, t, n) {
+  return A(a.A.parseAutoModerationSystemMessage, e, t, n)
 }
 
-function I(e, t) {
+function S(e, t) {
   return t ? T(e) : ("paragraph" === e[0].type && e[0].content instanceof Array && (e[0].content = T(e[0].content)), e)
 }
 

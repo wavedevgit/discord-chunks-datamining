@@ -14,7 +14,7 @@ function s(e) {
     onChange: n,
     error: s,
     disabled: a,
-    autoFocus: c = false
+    autoFocus: o = false
   } = e;
   return (0, r.jsx)(i.ksK, {
     leading: "".concat(l.mu, "/"),
@@ -25,6 +25,6 @@ function s(e) {
     maxLength: 25,
     error: s,
     disabled: a,
-    autoFocus: c
+    autoFocus: o
   })
 }

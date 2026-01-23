@@ -26,7 +26,7 @@ var Chunk735438 = require("./735438.js"),
   Chunk502075 = require("./502075.js"),
   Chunk652215 = require("./652215.js");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -95,7 +95,7 @@ function k(e, t) {
 }
 class U extends Chunk439372.A {
   constructor(...e) {
-    super(...e), S(this, "handleStreamWatch", e => {
+    super(...e), I(this, "handleStreamWatch", e => {
       let {
         streamKey: t,
         allowMultiple: n
@@ -106,7 +106,7 @@ class U extends Chunk439372.A {
         let n = (0, O._z)(e);
         e.ownerId === f.default.getId() || n !== t && (0, s.vN)(n, false)
       })
-    }), S(this, "handleStreamStart", e => {
+    }), I(this, "handleStreamStart", e => {
       let {
         channelId: t,
         streamType: n,
@@ -118,7 +118,7 @@ class U extends Chunk439372.A {
         channelId: t,
         ownerId: f.default.getId()
       }), null == i ? true : i.isGuildStageVoice()), this.platformHandleStreamStart(e)
-    }), S(this, "handleStreamCreate", e => {
+    }), I(this, "handleStreamCreate", e => {
       var t;
       let {
         streamKey: n
@@ -128,31 +128,31 @@ class U extends Chunk439372.A {
         ownerId: r,
         guildId: i
       } = (0, O.Iy)(n);
-      if (null == i || null == r || (0, y.oZ)({
+      if (null == i || null == r || (0, b.oZ)({
           guildId: i,
           location: "ApplicationStreamingManager"
         }) || r !== (null == (t = E.default.getCurrentUser()) ? true : t.id)) return;
       let a = _.A.getMemberCount(i);
-      null == a || a < 2 || a > A.G1 || u.wv.getSetting() && T(n)
-    }), S(this, "handleStreamUpdate", e => {
+      null == a || a < 2 || a > v.G1 || u.wv.getSetting() && T(n)
+    }), I(this, "handleStreamUpdate", e => {
       let {
         streamKey: t
       } = e;
       L(t)
-    }), S(this, "handleStreamDelete", e => {
+    }), I(this, "handleStreamDelete", e => {
       let {
         reason: t,
         streamKey: n
       } = e;
-      L(n), t === v.H2B.STREAM_FULL && ((0, l.QW)(I({
+      L(n), t === A.H2B.STREAM_FULL && ((0, l.QW)(S({
         type: l.iy.STREAM_FULL
       }, (0, c.id)(n))), (0, s.Xi)(n, false), this.platformShowStreamFull())
-    }), S(this, "handleStreamClose", e => {
+    }), I(this, "handleStreamClose", e => {
       let {
         streamKey: t
       } = e;
       x(t), L(t)
-    }), S(this, "handleVoiceChannelSelect", e => {
+    }), I(this, "handleVoiceChannelSelect", e => {
       let {
         channelId: t
       } = e;
@@ -165,7 +165,7 @@ class U extends Chunk439372.A {
         return t !== f.default.getId()
       })[0];
       null != n && j(t, n.ownerId)
-    }), S(this, "handleVoiceStateUpdates", e => {
+    }), I(this, "handleVoiceStateUpdates", e => {
       let {
         voiceStates: t
       } = e;
@@ -180,13 +180,13 @@ class U extends Chunk439372.A {
           if (a && j(n, t)) return;
           let e = d.A.getActiveStreamForUser(t, r);
           if (null != e && e.channelId === n) {
-            if (!a && e.state !== v.XYD.ENDED) {
+            if (!a && e.state !== A.XYD.ENDED) {
               var o;
               let t = (0, O._z)(e),
                 n = null != (o = C[t]) ? o : new i.Ep;
               n.start(R, () => (0, s.Xi)(t, false)), C[t] = n
             }
-            if (a && e.state === v.XYD.ENDED) {
+            if (a && e.state === A.XYD.ENDED) {
               x((0, O._z)(e));
               let n = d.A.getStreamForUser(t, r);
               if (null == n) return;
@@ -195,19 +195,19 @@ class U extends Chunk439372.A {
           }
         }
       })
-    }), S(this, "handleCallUpdate", e => {
+    }), I(this, "handleCallUpdate", e => {
       let {
         channelId: t,
         region: n
       } = e, r = d.A.getCurrentUserActiveStream();
       (null == r ? true : r.channelId) === t && M((0, O._z)(r), n)
-    }), S(this, "handleChannelUpdates", e => {
+    }), I(this, "handleChannelUpdates", e => {
       let {
         channels: t
       } = e, n = d.A.getCurrentUserActiveStream();
       if (null != n)
         for (let e of t) n.channelId === e.id && M((0, O._z)(n), e.rtcRegion)
-    }), S(this, "actions", {
+    }), I(this, "actions", {
       STREAM_WATCH: this.handleStreamWatch,
       STREAM_START: this.handleStreamStart,
       STREAM_CREATE: this.handleStreamCreate,

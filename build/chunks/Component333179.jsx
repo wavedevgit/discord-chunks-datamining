@@ -1,7 +1,7 @@
 /** Chunk was on 80123 **/
-/** chunk id: 333179, original params: t,l,e (module,exports,require) **/
+/** chunk id: 333179, original params: t,e,l (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => y
 }), require("./896048.js"), require("./733351.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -53,23 +53,23 @@ function S() {
   }]
 }
 let j = S()[1].value,
-  y = S()[0].value;
+  x = S()[0].value;
 
-function C(t) {
-  let l, {
-      guildId: e,
+function y(t) {
+  let e, {
+      guildId: l,
       user: r,
       location: v,
-      userIds: C,
-      onBanMultiple: x,
+      userIds: y,
+      onBanMultiple: C,
       transitionState: k,
       onClose: M,
       canBulkBan: O = false,
       modReportId: R
     } = t,
-    [w, U] = i.useState(null != R ? y : j),
-    [D, I] = i.useState(""),
-    [P, T] = i.useState(null),
+    [w, T] = i.useState(null != R ? x : j),
+    [U, D] = i.useState(""),
+    [I, P] = i.useState(null),
     {
       isModReportClosed: Y,
       isModReport: B
@@ -81,37 +81,37 @@ function C(t) {
       }
     }),
     [E, K] = i.useState(false),
-    [H, J] = i.useState(false),
-    X = (0, d.$9)(e, {
+    [_, H] = i.useState(false),
+    J = (0, d.$9)(l, {
       location: v,
       targetUserId: null == r ? true : r.id,
-      targets: C
+      targets: y
     }),
-    L = i.useCallback(() => {
-      let t = null != P ? P : D;
-      if (null != x) {
-        if (!(null != C && (null == C ? true : C.size) > 0 && O) || E) return;
-        if ("" === D.trim() && !E) return void K(true);
-        x(e, [...C], w, t)
+    X = i.useCallback(() => {
+      let t = null != I ? I : U;
+      if (null != C) {
+        if (!(null != y && (null == y ? true : y.size) > 0 && O) || E) return;
+        if ("" === U.trim() && !E) return void K(true);
+        C(l, [...y], w, t)
       } else {
         if (null == r) return;
-        c.A.banUser(e, null == r ? true : r.id, w, t, R).then(() => {
-          H && null != R && h.A.resolveFlag(R)
+        c.A.banUser(l, null == r ? true : r.id, w, t, R).then(() => {
+          _ && null != R && p.A.resolveFlag(R)
         })
       }
-      X(d.Nj.BAN), M()
-    }, [P, D, x, X, M, C, O, E, e, w, r, R, H]),
+      J(d.Nj.BAN), M()
+    }, [I, U, C, J, M, y, O, E, l, w, r, R, _]),
+    F = i.useCallback(t => {
+      T(t)
+    }, []),
+    L = i.useCallback(t => {
+      D(t), K(false), P(null)
+    }, []),
     N = i.useCallback(t => {
-      U(t)
-    }, []),
-    W = i.useCallback(t => {
-      I(t), K(false), T(null)
-    }, []),
-    z = i.useCallback(t => {
-      T(t), E && K(false)
+      P(t), E && K(false)
     }, [E]),
-    F = B && !Y && null != R,
-    V = [{
+    W = B && !Y && null != R,
+    z = [{
       name: m.intl.string(m.t.tamLhT),
       value: m.intl.string(m.t.tamLhT)
     }, {
@@ -124,34 +124,34 @@ function C(t) {
       name: m.intl.string(m.t.BcZTKu),
       value: "other"
     }],
-    Z = (() => {
-      if (null != x && null != C) return m.intl.formatToPlainString(m.t.HVJexf, {
-        count: null == C ? true : C.size
+    V = (() => {
+      if (null != C && null != y) return m.intl.formatToPlainString(m.t.HVJexf, {
+        count: null == y ? true : y.size
       });
       if (null == r) return "";
-      let t = b.Ay.getName(e, null, r);
+      let t = h.Ay.getName(l, null, r);
       return m.intl.formatToPlainString(null != R ? m.t.WDR8Xd : m.t.jeKpok, {
         username: "@".concat(t)
       })
     })(),
-    _ = null == R ? null : m.intl.string(m.t.pQjhIK);
+    Z = null == R ? null : m.intl.string(m.t.pQjhIK);
   return (0, n.jsx)(u.Modal, {
     onClose: M,
     transitionState: k,
-    title: Z,
-    subtitle: null != _ ? _ : true,
-    actions: (l = [], B || l.push({
+    title: V,
+    subtitle: null != Z ? Z : true,
+    actions: (e = [], B || e.push({
       variant: "secondary",
       text: m.intl.string(m.t["ETE/oC"]),
       onClick: M
-    }), l.push({
+    }), e.push({
       variant: "critical-primary",
       text: m.intl.string(m.t["5MBJ5M"]),
-      onClick: L
-    }), l),
-    actionBarInput: F ? (0, n.jsx)(o.Checkbox, {
-      checked: H,
-      onChange: t => J(t),
+      onClick: X
+    }), e),
+    actionBarInput: W ? (0, n.jsx)(o.Checkbox, {
+      checked: _,
+      onChange: t => H(t),
       label: m.intl.string(f.default["8yIKem"])
     }) : true,
     children: (0, n.jsxs)(o.BJc, {
@@ -166,34 +166,34 @@ function C(t) {
         }), (0, n.jsx)(o.z6M, {
           required: true,
           label: m.intl.string(null != R ? m.t["+KCLVp"] : m.t.w4Ivys),
-          value: D,
-          options: V.map(t => (function(t) {
-            for (var l = 1; l < arguments.length; l++) {
-              var e = null != arguments[l] ? arguments[l] : {},
-                n = Object.keys(e);
-              "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(e).filter(function(t) {
-                return Object.getOwnPropertyDescriptor(e, t).enumerable
-              }))), n.forEach(function(l) {
+          value: U,
+          options: z.map(t => (function(t) {
+            for (var e = 1; e < arguments.length; e++) {
+              var l = null != arguments[e] ? arguments[e] : {},
+                n = Object.keys(l);
+              "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(l).filter(function(t) {
+                return Object.getOwnPropertyDescriptor(l, t).enumerable
+              }))), n.forEach(function(e) {
                 var n;
-                n = e[l], l in t ? Object.defineProperty(t, l, {
+                n = l[e], e in t ? Object.defineProperty(t, e, {
                   value: n,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : t[l] = n
+                }) : t[e] = n
               })
             }
             return t
           })({}, t)),
-          onChange: W
+          onChange: L
         }), (0, n.jsx)("div", {
           className: a()(A.Ar, {
-            [A.R]: "other" !== D
+            [A.R]: "other" !== U
           }),
           children: (0, n.jsx)(o.fs1, {
-            maxLength: p.hlA,
-            onChange: z,
-            value: null != P ? P : "",
+            maxLength: b.hlA,
+            onChange: N,
+            value: null != I ? I : "",
             rows: 5,
             autoFocus: true
           })
@@ -202,7 +202,7 @@ function C(t) {
         label: m.intl.string(null != R ? m.t.ERSM8H : m.t["8l3W0y"]),
         options: S(),
         value: w,
-        onSelectionChange: N,
+        onSelectionChange: F,
         selectionMode: "single",
         fullWidth: true
       })]

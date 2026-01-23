@@ -111,7 +111,7 @@ let w = e => {
     return (0, r.jsx)(o.Button, {
       variant: "expressive",
       size: "md",
-      text: v.intl.string(A.default.rjuKse),
+      text: A.intl.string(v.default.rjuKse),
       icon: a.tvc,
       onClick: c,
       disabled: t
@@ -153,7 +153,7 @@ let w = e => {
     return (0, r.jsx)(o.Button, {
       variant: "secondary",
       size: "md",
-      text: v.intl.string(A.default["eYHh+z"]),
+      text: A.intl.string(v.default["eYHh+z"]),
       onClick: s,
       disabled: t
     })
@@ -167,7 +167,7 @@ let w = e => {
       actionButton: l
     } = e;
     return (0, r.jsxs)(c.A, {
-      className: S.og,
+      className: I.og,
       compact: s,
       iconNode: (0, r.jsx)(a.tvc, {
         size: "md",
@@ -179,25 +179,25 @@ let w = e => {
         children: t
       }), (0, r.jsxs)(o.BJc, {
         direction: "horizontal",
-        className: S.x,
+        className: I.x,
         children: [(0, r.jsx)("img", {
-          src: I,
+          src: S,
           alt: "",
-          className: S.Sl
+          className: I.Sl
         }), (0, r.jsxs)("div", {
-          className: S.Qs,
+          className: I.Qs,
           children: [(0, r.jsx)(o.Exy, {
             type: "beta",
             variant: "expressive"
           }), (0, r.jsx)("h2", {
-            className: S.DD,
+            className: I.DD,
             children: n
           }), (0, r.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "text-subtle",
             children: i
           }), (0, r.jsx)("div", {
-            className: S.UD,
+            className: I.UD,
             children: l
           })]
         })]
@@ -218,7 +218,7 @@ let w = e => {
     } = (0, s.cf)([E.A, d.default, f.A], () => {
       var e;
       return {
-        inviteState: null != a ? E.A.getInviteState(a) : y.xI.NOT_FOUND,
+        inviteState: null != a ? E.A.getInviteState(a) : b.xI.NOT_FOUND,
         isFetching: null != a && E.A.isFetching(a),
         invite: null != a ? null == (e = E.A.getInvite(a)) ? true : e.invite : null,
         currentUser: d.default.getCurrentUser(),
@@ -228,18 +228,18 @@ let w = e => {
     if (null == p) return null;
     let h = t.author,
       m = p.id === h.id;
-    if (c || o === y.xI.FETCHING || o === y.xI.UNKNOWN) return (0, r.jsx)(l.Wb, {
+    if (c || o === b.xI.FETCHING || o === b.xI.UNKNOWN) return (0, r.jsx)(l.Wb, {
       isHorizontal: true
     });
-    let g = (0, b.o1)({
+    let g = (0, y.o1)({
       sender: h,
       channel: n,
       isSender: m,
       inviteState: o
     });
     if (null == g) return null;
-    let O = o === y.xI.PENDING,
-      A = m ? (0, r.jsx)(P, {
+    let O = o === b.xI.PENDING,
+      v = m ? (0, r.jsx)(P, {
         disabled: !O,
         invite: u,
         channel: n
@@ -253,6 +253,6 @@ let w = e => {
       header: g.header,
       body: g.body,
       compact: i,
-      actionButton: A
+      actionButton: v
     })
   }

@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 503062, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => j
+  A: () => O
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,25 +20,25 @@ var Chunk627968 = require("./627968.js"),
   Chunk996988 = require("./996988.js"),
   Chunk794904 = require("./794904.js");
 let y = Chunk397927._3J.SIZE_40,
-  O = (0, Chunk397927.FT9)(y);
+  _ = (0, Chunk397927.FT9)(y);
 
-function j(e) {
+function O(e) {
   let {
     user: t,
-    status: j,
-    guildId: v,
-    channelId: x,
-    onSelect: E
+    status: O,
+    guildId: j,
+    channelId: v,
+    onSelect: x
   } = e, {
-    theme: _,
+    theme: E,
     themeType: C
-  } = (0, b.E)(), S = l.useMemo(() => t.isNonUserBot() || (0, f.c)(t, x), [t, x]), {
+  } = (0, g.E)(), S = l.useMemo(() => t.isNonUserBot() || (0, p.c)(t, v), [t, v]), {
     activities: I,
     isMobileOnline: N
-  } = (0, i.cf)([h.A], () => ({
-    activities: h.A.getActivities(t.id),
-    isMobileOnline: h.A.isMobileOnline(t.id)
-  })), T = (0, p.A)(t.id), {
+  } = (0, i.cf)([f.A], () => ({
+    activities: f.A.getActivities(t.id),
+    isMobileOnline: f.A.isMobileOnline(t.id)
+  })), T = (0, h.A)(t.id), {
     voiceActivityStatusEnabled: P
   } = (0, c.g)({
     location: "UserProfileMutualFriendRow"
@@ -46,10 +46,10 @@ function j(e) {
     voiceChannel: w
   } = (0, u.A)({
     userId: P ? t.id : true,
-    guildId: v
+    guildId: j
   });
-  return (0, r.jsxs)(a.DUT, {
-    focusProps: C === m.d.MODAL_V2 ? {
+  return (0, r.jsxs)(s.DUT, {
+    focusProps: C === b.d.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -61,9 +61,9 @@ function j(e) {
       }
     },
     className: A.nM,
-    onClick: E,
+    onClick: x,
     onContextMenu: e => {
-      (0, s.L3)(e, async () => {
+      (0, a.L3)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("97262"), n.e("32418"), n.e("8893")]).then(n.bind(n, 668569));
@@ -101,12 +101,12 @@ function j(e) {
         }
       })
     },
-    children: [(0, r.jsx)(a.euF, {
-      src: t.getAvatarURL(v, O),
+    children: [(0, r.jsx)(s.euF, {
+      src: t.getAvatarURL(j, _),
       "aria-label": t.username,
       size: y,
-      status: S ? g.clD.UNKNOWN : j,
-      statusBackdropColor: S ? true : (0, a.C$5)(_),
+      status: S ? m.clD.UNKNOWN : O,
+      statusBackdropColor: S ? true : (0, s.C$5)(E),
       isMobile: N,
       className: A.my
     }), (0, r.jsxs)("div", {

@@ -76,14 +76,14 @@ let v = e => {
       }(e, t), Object.getOwnPropertySymbols)
       for (a = 0, r = Object.getOwnPropertySymbols(e); a < r.length; a++) n = r[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
     return i
-  }(e, ["captchaService", "sitekey", "rqdata", "onRender", "onVerify", "onError", "onOpen", "onClose", "onChalExpired", "size", "userflow"]), x = a.useRef(null), _ = (0, c.A)(), [P, k] = a.useState(false), S = a.useCallback(e => {
+  }(e, ["captchaService", "sitekey", "rqdata", "onRender", "onVerify", "onError", "onOpen", "onClose", "onChalExpired", "size", "userflow"]), _ = a.useRef(null), x = (0, c.A)(), [P, k] = a.useState(false), S = a.useCallback(e => {
     d.default.track(f.HAw.CAPTCHA_EVENT, {
       captcha_event_name: e,
       captcha_service: t,
       sitekey: r,
-      captcha_flow_key: _
+      captcha_flow_key: x
     })
-  }, [_, t, r]), I = a.useCallback(e => {
+  }, [x, t, r]), I = a.useCallback(e => {
     l.A.increment({
       name: s.K.CAPTCHA_EVENT,
       tags: ["event_name:".concat(e), "captcha_service:".concat(t)]
@@ -91,11 +91,11 @@ let v = e => {
   }, [t]), D = a.useCallback(() => {
     if (t === p.MS.HCAPTCHA) {
       var e, r;
-      null != v && "" !== v && null != x.current && (null == (e = x.current) || e.setData({
+      null != v && "" !== v && null != _.current && (null == (e = _.current) || e.setData({
         rqdata: v
-      })), "invisible" === A && null != x.current && (null == (r = x.current) || r.execute())
+      })), "invisible" === A && null != _.current && (null == (r = _.current) || r.execute())
     }
-  }, [v, x, A, t]), L = a.useCallback(() => {
+  }, [v, _, A, t]), L = a.useCallback(() => {
     P || (S("initial-load"), I("initial-load"), k(true)), D()
   }, [I, P, S, D]);
   a.useEffect(() => {
@@ -135,7 +135,7 @@ let v = e => {
     sitekey: r,
     action: R
   })) : t === p.MS.HCAPTCHA ? (0, n.jsx)(i.A, b(y({
-    ref: x
+    ref: _
   }, j), {
     sitekey: r,
     onLoad: L,

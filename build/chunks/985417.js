@@ -62,29 +62,29 @@ function f(e) {
     onItemMouseEnter: m,
     buttonOverlay: g,
     isNitroLocked: E,
-    shouldShowUpsell: b,
-    inExpressionPicker: y
-  } = e, O = i.LW.useStore(e => e.inspectedExpressionPosition), A = "".concat(l, "-").concat(u), v = f && O.rowIndex === l && O.columnIndex === u;
+    shouldShowUpsell: y,
+    inExpressionPicker: b
+  } = e, O = i.LW.useStore(e => e.inspectedExpressionPosition), v = "".concat(l, "-").concat(u), A = f && O.rowIndex === l && O.columnIndex === u;
   switch (t.item.type) {
     case a.uq.SOUND:
       return (0, r.createElement)(s.Ay, d(c({}, _(u), n), {
-        key: A,
+        key: v,
         sound: t.item.sound,
         suppressPlaySound: p,
-        focused: v,
+        focused: A,
         onMouseEnter: () => m(u),
         onSelectItem: e => h(t, e),
         enableSecondaryActions: true,
         buttonOverlay: g,
         inNitroLockedSection: E,
-        showLockForDisabledSound: b,
-        isSoundmoji: true === y
+        showLockForDisabledSound: y,
+        isSoundmoji: true === b
       }));
     case a.uq.ADD_SOUND:
       return (0, r.createElement)(o.A, d(c({}, _(u)), {
-        key: A,
+        key: v,
         guild: t.item.guild,
-        focused: v,
+        focused: A,
         onSelectItem: () => h(t)
       }))
   }

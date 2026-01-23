@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 310420, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,36 +16,36 @@ function d(e) {
   let {
     rating: t,
     onClick: n
-  } = e, s = t === o.P0.BAD ? i.ThumbsDownIcon : i.ThumbsUpIcon, c = l.useCallback(() => {
+  } = e, a = t === o.P0.BAD ? i.ThumbsDownIcon : i.ThumbsUpIcon, c = l.useCallback(() => {
     n(t)
   }, [n, t]);
-  return (0, r.jsx)(a.DUT, {
+  return (0, r.jsx)(s.DUT, {
     onClick: c,
     className: u.zc,
-    children: (0, r.jsx)(s, {
+    children: (0, r.jsx)(a, {
       size: "md",
       color: "currentColor",
       className: u.Kk
     })
   })
 }
-let f = function(e) {
+let p = function(e) {
   let {
     searchContext: t,
     dismissFeedbackEntrypoint: i
   } = e;
   l.useEffect(() => {
-    (0, s.J$)({
+    (0, a.J$)({
       searchContext: t
     })
   }, [t]);
-  let f = l.useCallback(e => {
-    i(), (0, a.mMO)(async () => {
+  let p = l.useCallback(e => {
+    i(), (0, s.mMO)(async () => {
       let {
         default: l
       } = await n.e("66536").then(n.bind(n, 306088));
       return n => {
-        var i, a;
+        var i, s;
         return (0, r.jsx)(l, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -63,25 +63,25 @@ let f = function(e) {
             })
           }
           return e
-        }({}, n), a = a = {
+        }({}, n), s = s = {
           searchContext: t,
           rating: e
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+        })(Object(s)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
         }), i))
       }
     })
   }, [i, t]);
   return (0, r.jsxs)("div", {
     className: u.kL,
-    children: [(0, r.jsx)(a.Text, {
+    children: [(0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "text-strong",
       children: c.intl.string(c.t["I+4OJC"])
@@ -89,10 +89,10 @@ let f = function(e) {
       className: u.Pt,
       children: [(0, r.jsx)(d, {
         rating: o.P0.GOOD,
-        onClick: f
+        onClick: p
       }), (0, r.jsx)(d, {
         rating: o.P0.BAD,
-        onClick: f
+        onClick: p
       })]
     })]
   })

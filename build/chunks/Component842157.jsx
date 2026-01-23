@@ -81,7 +81,7 @@ function M(e) {
       default:
         return null
     }
-  }).filter(y.Vq), [a]);
+  }).filter(b.Vq), [a]);
   if (!(null != n || l.length > 0)) return null;
   let u = null != n ? (0, T.C)(n) : L.intl.string(L.t["4dGUP0"]);
   return (0, r.jsxs)("div", {
@@ -105,7 +105,7 @@ function k(e) {
   var t, n, s;
   let {
     message: o,
-    application: y,
+    application: b,
     applicationName: T,
     channel: R,
     header: w,
@@ -143,7 +143,7 @@ function k(e) {
         textFontCode: false
       })]
     }) : null
-  }, [ee, null == W || null == (s = W.timestamps) ? true : s.end]), en = (0, S.v)(o), er = (0, E.s)(y.id), ei = i.useMemo(() => er.some(e => (0, m.CZ)(e) === a.m.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
+  }, [ee, null == W || null == (s = W.timestamps) ? true : s.end]), en = (0, I.v)(o), er = (0, E.s)(b.id), ei = i.useMemo(() => er.some(e => (0, m.CZ)(e) === a.m.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Y3C, {
       size: "xxs",
       color: "currentColor"
@@ -157,19 +157,19 @@ function k(e) {
   }), [en, o, T, R, k, et, ei]), es = i.useMemo(() => (0, r.jsxs)("div", {
     className: j.pq,
     children: [ea, z || en ? null : q]
-  }), [ea, z, en, q]), eo = !!U, el = (0, g.e)(y), {
+  }), [ea, z, en, q]), eo = !!U, el = (0, g.e)(b), {
     canJoin: ec,
     remoteJoinPlatform: eu
-  } = (0, A.D)({
+  } = (0, v.D)({
     presenceActivity: W,
     currentUserPresenceActivity: K,
     currentUserId: k,
     message: o,
-    application: y,
+    application: b,
     isEmbeddedApplication: G,
     isFrameApplication: el,
     isGameLaunchable: eo
-  }), ed = (0, A.M)(W, K, o, y), ef = (0, v.E)(W, o, y, k), ep = (0, I.w)(K, W), e_ = (0, l.bG)([b.A], () => null != W && null != W.application_id && b.A.getState(W.application_id, D.xL.JOIN) === D.eAD.LOADING), {
+  }), ed = (0, v.M)(W, K, o, b), ef = (0, A.E)(W, o, b, k), ep = (0, S.w)(K, W), e_ = (0, l.bG)([y.A], () => null != W && null != W.application_id && y.A.getState(W.application_id, D.xL.JOIN) === D.eAD.LOADING), {
     actions: eh,
     hasAccountLinkButton: em
   } = i.useMemo(() => {
@@ -265,7 +265,7 @@ function k(e) {
       primaryActionFirst: true,
       onClickContent: B,
       trackingConfig: {
-        id: y.id,
+        id: b.id,
         linkType: x.J.RICH_PRESENCE_INVITE,
         onView: Y,
         referrerId: o.author.id,

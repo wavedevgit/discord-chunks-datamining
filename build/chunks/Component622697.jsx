@@ -15,7 +15,7 @@ function d(e) {
   let {
     selected: t,
     onSelect: n
-  } = e, d = (0, i.Ay)();
+  } = e, d = (0, r.Ay)();
   return (0, a.jsxs)("div", {
     className: c.N,
     children: [(0, a.jsx)(l.Text, {
@@ -25,14 +25,14 @@ function d(e) {
       className: c.Z,
       children: s.Z6.map(e => {
         let l = d !== o.NJ8.LIGHT ? e.darkBackground : e.lightBackground,
-          i = t === e.name;
-        return (0, a.jsx)(r.S4, {
+          r = t === e.name;
+        return (0, a.jsx)(i.S4, {
           onSelect: () => n(e),
           style: {
             background: l
           },
           name: e.name,
-          isSelected: i
+          isSelected: r
         }, e.name)
       })
     })]

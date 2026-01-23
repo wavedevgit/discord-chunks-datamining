@@ -30,7 +30,7 @@ function E(e, t, n, r) {
       offset: u,
       length: d,
       type: f
-    } = t[c], p = b(e, u, d, f, n);
+    } = t[c], p = y(e, u, d, f, n);
     if (p instanceof Promise) a.push(p.then(({
       name: e,
       value: t,
@@ -70,7 +70,7 @@ function E(e, t, n, r) {
   }
 }
 
-function b(e, t, n, i, s) {
+function y(e, t, n, i, s) {
   let o, l = [],
     c = [],
     m = [],
@@ -78,7 +78,7 @@ function b(e, t, n, i, s) {
     E = r.Gl;
   for (let r = 0; r < n && t + r < e.byteLength; r++) {
     if (g === d) {
-      E = y({
+      E = b({
         type: i,
         dataView: e,
         offset: t + r
@@ -93,11 +93,11 @@ function b(e, t, n, i, s) {
     0 === s ? g = O(i, g) : g === u ? l.push(s) : g === f ? c.push(s) : g === p && m.push(s)
   }
   if (E !== r.Gl && !s) return {};
-  let b = (0, r.mF)(o, E, A(i));
-  return b instanceof Promise ? b.then(e => v(e, i, c, l)).catch(() => v("<text using unknown compression>".split(""), i, c, l)) : v(b, i, c, l)
+  let y = (0, r.mF)(o, E, v(i));
+  return y instanceof Promise ? y.then(e => A(e, i, c, l)).catch(() => A("<text using unknown compression>".split(""), i, c, l)) : A(y, i, c, l)
 }
 
-function y({
+function b({
   type: e,
   dataView: t,
   offset: n
@@ -112,27 +112,27 @@ function O(e, t) {
   return t === u && [a.Xo, a.aA].includes(e) ? d : t === d ? e === a.Xo ? f : _ : t === f ? p : _
 }
 
-function A(e) {
+function v(e) {
   return e === a.HL || e === a.aA ? "latin1" : "utf-8"
 }
 
-function v(e, t, n, r) {
-  let i = I(e);
+function A(e, t, n, r) {
+  let i = S(e);
   return {
-    name: S(t, n, r),
+    name: I(t, n, r),
     value: i,
     description: t === a.Xo ? T(e) : i
   }
 }
 
-function S(e, t, n) {
+function I(e, t, n) {
   let i = (0, r.YF)(n);
   if (e === a.HL || 0 === t.length) return i;
   let s = (0, r.YF)(t);
   return `${i} (${s})`
 }
 
-function I(e) {
+function S(e) {
   return e instanceof DataView ? (0, r.hT)(e, 0, e.byteLength) : e
 }
 

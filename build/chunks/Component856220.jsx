@@ -56,7 +56,7 @@ function j(e, t) {
 function A(e) {
   let {
     channel: t
-  } = e, r = (0, a.bG)([g.A], () => g.A.can(f.xBc.MANAGE_CHANNELS, t), [t]), u = t.availableTags.length >= 20, m = t.availableTags.length > 0, A = i.useCallback(() => {
+  } = e, r = (0, a.bG)([g.A], () => g.A.can(p.xBc.MANAGE_CHANNELS, t), [t]), u = t.availableTags.length >= 20, m = t.availableTags.length > 0, A = i.useCallback(() => {
     let e = t.availableTags.length >= 20;
     r && !e && (0, c.mMO)(async () => {
       let {
@@ -104,14 +104,14 @@ function A(e) {
       }),
       children: (0, l.jsx)(c.j96, {
         size: "custom",
-        "aria-label": p.intl.string(p.t["/jubeD"]),
+        "aria-label": f.intl.string(f.t["/jubeD"]),
         color: o.A.unsafe_rawColors.WHITE.css,
         width: 20,
         height: 20
       })
     }) : (0, l.jsx)(c.Button, {
       variant: "primary",
-      text: p.intl.string(p.t["/jubeD"]),
+      text: f.intl.string(f.t["/jubeD"]),
       disabled: !r,
       onClick: A
     })]
@@ -130,7 +130,7 @@ function y(e) {
   } = e, d = n.findIndex(e => e.id === t.id), {
     drag: h,
     dragSourcePosition: g,
-    drop: f,
+    drop: p,
     setIsDraggable: x
   } = (0, u.A)({
     type: "CHANNEL_SETTINGS_FORUM_TAGS",
@@ -146,14 +146,14 @@ function y(e) {
       [b.Ze]: null != g && d > g
     }),
     ref: e => {
-      h(f(e))
+      h(p(e))
     },
     onMouseEnter: () => x(i),
     onMouseLeave: () => x(false),
     children: (0, l.jsx)(m.A, {
       tag: t,
       disabled: !i,
-      ariaLabel: p.intl.formatToPlainString(p.t.jhSvB9, {
+      ariaLabel: f.intl.formatToPlainString(f.t.jhSvB9, {
         name: t.name
       }),
       onClick: i ? () => r(t) : true

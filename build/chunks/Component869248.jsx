@@ -28,13 +28,13 @@ function I(e) {
   let {
     channel: t,
     baseChannelId: n
-  } = e, I = (0, b.Ay)(t), v = (0, p.k)(), S = (0, p.r)(), C = (0, l.bG)([u.A], () => u.A.isMessageRequest(t.id)), N = (0, l.bG)([d.A], () => d.A.isSpam(t.id)), T = (0, h.D)(t.id, t.getRecipientId()), j = i.useCallback(() => {
-    g.A.closeChannelSidebar(m.fe), C && v && (0, A.iN)(t.id), N && S && (0, A.iN)(t.id)
+  } = e, I = (0, _.Ay)(t), v = (0, p.k)(), S = (0, p.r)(), C = (0, l.bG)([u.A], () => u.A.isMessageRequest(t.id)), N = (0, l.bG)([d.A], () => d.A.isSpam(t.id)), T = (0, g.D)(t.id, t.getRecipientId()), j = i.useCallback(() => {
+    m.A.closeChannelSidebar(A.fe), C && v && (0, f.iN)(t.id), N && S && (0, f.iN)(t.id)
   }, [t.id, N, S, C, v]), x = i.useCallback(() => {
     (0, a.showToast)((0, a.createToast)(E.intl.string(E.t.pIQ3h4), a.ToastType.FAILURE))
   }, []), {
     markAsNotSpam: P
-  } = (0, f.t)({
+  } = (0, h.t)({
     onAcceptSuccess: j,
     onError: x
   });
@@ -42,7 +42,7 @@ function I(e) {
   let w = [(0, r.jsx)(o.Ay.Icon, {
     icon: a.PGe,
     tooltip: E.intl.string(E.t.cpT0Cq),
-    onClick: () => g.A.closeChannelSidebar(n)
+    onClick: () => m.A.closeChannelSidebar(n)
   }, "close")];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.Ay, {
@@ -68,7 +68,7 @@ function I(e) {
       })]
     }), (0, r.jsx)("div", {
       className: O.T,
-      children: (0, r.jsx)(_.A, {
+      children: (0, r.jsx)(b.A, {
         channel: t,
         guild: null,
         chatInputType: s.oU.SIDEBAR

@@ -2,7 +2,7 @@
 /** chunk id: 40160, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => x
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -21,55 +21,55 @@ var Chunk735438 = require("./735438.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk690450 = require("./690450.js");
 
-function h(e) {
+function x(e) {
   let t, {
       guild: n
     } = e,
-    h = n.mfaLevel,
-    j = (0, l.bG)([u.A], () => null != n && u.A.can(m.xBc.MANAGE_GUILD, n), [n]),
-    O = (0, l.bG)([f.default], () => f.default.getCurrentUser()),
-    y = (0, d.bM)(n, O),
-    v = null == O ? true : O.mfaEnabled,
-    A = h === m.EkJ.ELEVATED,
-    E = y && v,
-    N = (0, i.throttle)(async e => {
-      E && await g.A.updateMFALevel({
+    x = n.mfaLevel,
+    j = (0, l.bG)([u.A], () => null != n && u.A.can(f.xBc.MANAGE_GUILD, n), [n]),
+    _ = (0, l.bG)([g.default], () => g.default.getCurrentUser()),
+    O = (0, d.bM)(n, _),
+    v = null == _ ? true : _.mfaEnabled,
+    y = x === f.EkJ.ELEVATED,
+    A = O && v,
+    E = (0, i.throttle)(async e => {
+      A && await m.A.updateMFALevel({
         guildId: n.id,
-        level: e ? m.EkJ.ELEVATED : m.EkJ.NONE
+        level: e ? f.EkJ.ELEVATED : f.EkJ.NONE
       })
     }, 1e3);
   if (!j) return null;
-  E || (t = y ? p.intl.format(p.t.nFwNyR, {
-    settingsHook: () => (0, o.openUserSettings)(c.X.ACCOUNT_PANEL, {
-      section: m.nc_.ACCOUNT
+  A || (t = O ? b.intl.format(b.t.nFwNyR, {
+    settingsHook: () => (0, c.openUserSettings)(o.X.ACCOUNT_PANEL, {
+      section: f.nc_.ACCOUNT
     })
-  }) : p.intl.string(p.t["9Ghu40"]));
-  let _ = n.features.has(m.GuildFeatures.DISCOVERABLE);
+  }) : b.intl.string(b.t["9Ghu40"]));
+  let N = n.features.has(f.GuildFeatures.DISCOVERABLE);
   return (0, r.jsxs)("div", {
-    className: x.ph,
+    className: h.ph,
     children: [(0, r.jsxs)("div", {
-      className: x.Ly,
+      className: h.Ly,
       children: [(0, r.jsx)(a.Heading, {
         variant: "text-md/semibold",
         color: "text-strong",
-        children: p.intl.string(p.t.lbBfEQ)
+        children: b.intl.string(b.t.lbBfEQ)
       }), (0, r.jsxs)(a.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: [p.intl.string(p.t["a/93J6"]), " ", t]
+        children: [b.intl.string(b.t["a/93J6"]), " ", t]
       })]
-    }), !E || A && _ ? (0, r.jsx)(s.m, {
-      text: _ ? p.intl.string(p.t["KG1V/E"]) : y ? p.intl.string(p.t.NmsheT) : p.intl.string(p.t.LieBta),
-      children: (0, r.jsx)(b.A, {
-        checked: A,
+    }), !A || y && N ? (0, r.jsx)(s.m, {
+      text: N ? b.intl.string(b.t["KG1V/E"]) : O ? b.intl.string(b.t.NmsheT) : b.intl.string(b.t.LieBta),
+      children: (0, r.jsx)(p.A, {
+        checked: y,
         disabled: true,
-        onChange: N,
-        className: x.R0
+        onChange: E,
+        className: h.R0
       })
-    }) : (0, r.jsx)(b.A, {
-      checked: A,
-      onChange: N,
-      className: x.R0
+    }) : (0, r.jsx)(p.A, {
+      checked: y,
+      onChange: E,
+      className: h.R0
     })]
   })
 }

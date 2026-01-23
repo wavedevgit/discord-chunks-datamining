@@ -51,15 +51,15 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = 4,
-  O = Math.round((Chunk838541.Rk - y) / 2);
+let b = 4,
+  O = Math.round((Chunk838541.Rk - b) / 2);
 
-function A(e) {
+function v(e) {
   return i.useMemo(() => {
     let [t, n] = u().partition(e, e => (0, f.Xg)(e.item.type)), [r, i] = u().partition(t, e => (0, f.EF)(e.item.type));
     return {
@@ -70,7 +70,7 @@ function A(e) {
   }, [e])
 }
 
-function v(e) {
+function A(e) {
   let {
     visualMediaItems: t,
     maxWidth: n,
@@ -78,13 +78,13 @@ function v(e) {
   } = e;
   null != i && l()(1 === t.length, "footer only gets applied to single items");
   let a = t.length;
-  if (1 === a) return (0, r.jsx)(S, {
+  if (1 === a) return (0, r.jsx)(I, {
     itemsForLayout: t,
     isSingleImage: true,
     footer: i,
     maxWidth: n
   });
-  if (2 === a) return (0, r.jsx)(I, {
+  if (2 === a) return (0, r.jsx)(S, {
     itemsForLayout: t,
     maxWidth: n
   });
@@ -98,10 +98,10 @@ function v(e) {
   });
   let s = a % 3;
   return (0, r.jsxs)(r.Fragment, {
-    children: [1 === s && (0, r.jsx)(S, {
+    children: [1 === s && (0, r.jsx)(I, {
       itemsForLayout: t.slice(0, s),
       maxWidth: n
-    }), 2 === s && (0, r.jsx)(I, {
+    }), 2 === s && (0, r.jsx)(S, {
       itemsForLayout: t.slice(0, s),
       maxWidth: n
     }), 0 === s ? (0, r.jsx)(N, {
@@ -114,7 +114,7 @@ function v(e) {
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     itemsForLayout: t,
     maxWidth: n,
@@ -137,11 +137,11 @@ function S(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     itemsForLayout: t,
     maxWidth: n
-  } = e, i = Math.round((n - y) / 2);
+  } = e, i = Math.round((n - b) / 2);
   return (0, r.jsx)("div", {
     className: h.SQ,
     children: t.map(e => (0, r.jsx)("div", {
@@ -159,7 +159,7 @@ function T(e) {
   let {
     itemsForLayout: t,
     maxWidth: n
-  } = e, i = Math.round(2 * (n - y) / 3), a = i / 2;
+  } = e, i = Math.round(2 * (n - b) / 3), a = i / 2;
   return (0, r.jsxs)("div", {
     className: s()(h.SQ, h.o_),
     children: [(0, r.jsx)("div", {
@@ -189,7 +189,7 @@ function C(e) {
   let {
     itemsForLayout: t,
     maxWidth: n
-  } = e, i = Math.round((n - y) / 2);
+  } = e, i = Math.round((n - b) / 2);
   return (0, r.jsx)("div", {
     className: h.av,
     children: t.map(e => (0, r.jsx)(P, {
@@ -205,7 +205,7 @@ function N(e) {
   let {
     itemsForLayout: t,
     maxWidth: n
-  } = e, i = Math.round((n - 2 * y) / 3);
+  } = e, i = Math.round((n - 2 * b) / 3);
   return (0, r.jsx)("div", {
     className: h._f,
     children: t.map(e => (0, r.jsx)(P, {
@@ -234,7 +234,7 @@ function P(e) {
     isSingleItem: s = false,
     footer: o,
     displayGridItem: l
-  } = e, c = t.item.type, u = b(g({}, t, "IMAGE" === c && R(t.className), "VIDEO" === c && w(t.className)), {
+  } = e, c = t.item.type, u = y(g({}, t, "IMAGE" === c && R(t.className), "VIDEO" === c && w(t.className)), {
     displayGridItem: l,
     mediaLayoutType: _.dG.MOSAIC,
     maxWidth: n,
@@ -244,7 +244,7 @@ function P(e) {
   });
   return (0, r.jsx)(d.G.Provider, {
     value: t.gifFavoriteButton,
-    children: (0, r.jsx)(p.Ay, b(g({}, u), {
+    children: (0, r.jsx)(p.Ay, y(g({}, u), {
       footer: o
     }))
   })
@@ -257,13 +257,13 @@ let D = function(e) {
     groupableVisualMediaItems: i,
     nonGroupableVisualMediaItems: a,
     nonVisualMediaItems: o
-  } = A(t), l = n ? _.ww : _.k6;
+  } = v(t), l = n ? _.ww : _.k6;
   return (0, r.jsxs)(r.Fragment, {
     children: [i.length > 0 && (0, r.jsx)("div", {
       className: s()(h.XU, {
         [h.dM]: n
       }),
-      children: (0, r.jsx)(v, {
+      children: (0, r.jsx)(A, {
         visualMediaItems: i,
         maxWidth: l
       })
@@ -276,7 +276,7 @@ let D = function(e) {
         className: s()(h.XU, {
           [h.dM]: n
         }),
-        children: (0, r.jsx)(v, {
+        children: (0, r.jsx)(A, {
           visualMediaItems: [e],
           footer: t,
           maxWidth: l

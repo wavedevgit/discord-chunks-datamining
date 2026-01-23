@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 822082, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -33,7 +33,7 @@ function p(e) {
   return e
 }
 
-function f(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -45,41 +45,41 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = function(e) {
+let g = function(e) {
   let {
     index: t,
     children: l,
-    user: h,
-    channel: A,
-    onClick: g,
-    isFocused: m,
-    isActive: b,
-    onOtherHover: _,
+    user: g,
+    channel: f,
+    onClick: m,
+    isFocused: A,
+    isActive: _,
+    onOtherHover: b,
     className: E
   } = e, [O, y] = i.useState(false), [I, v] = i.useState(false), S = () => {
-    y(true), !m || b || I || null == _ || _()
+    y(true), !A || _ || I || null == b || b()
   }, C = () => {
     y(false)
   };
   return (0, r.jsx)(o.tG, {
-    id: A.id,
+    id: f.id,
     children: e => (0, r.jsx)(c.vN3, {
       offset: {
         left: false,
         right: false
       },
-      children: (0, r.jsx)(s.A.div, f(p({
+      children: (0, r.jsx)(s.A.div, h(p({
         className: a()(d.Cf, E, {
-          [d.vu]: b || I,
+          [d.vu]: _ || I,
           [d.CJ]: 0 === t
         }),
         onContextMenu: e => {
-          null != h && (v(true), (0, u.L3)(e, async () => {
+          null != g && (v(true), (0, u.L3)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("97262"), n.e("32418"), n.e("99871")]).then(n.bind(n, 668569));
-            return t => (0, r.jsx)(e, f(p({}, t), {
-              user: h
+            return t => (0, r.jsx)(e, h(p({}, t), {
+              user: g
             }))
           }, {
             onClose: () => {
@@ -89,13 +89,13 @@ let h = function(e) {
         },
         onMouseEnter: S,
         onMouseLeave: C,
-        onClick: null != g ? g : true,
+        onClick: null != m ? m : true,
         style: {
           LIST_ROW_HEIGHT: 73,
           opacity: 1
         }
       }, e), {
-        children: l(O || b || I)
+        children: l(O || _ || I)
       }))
     })
   })

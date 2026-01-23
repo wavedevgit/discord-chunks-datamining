@@ -1,23 +1,23 @@
 /** Chunk was on 97492 **/
 /** chunk id: 946116, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Y1: () => p,
+  Y1: () => h,
   fx: () => d,
-  g2: () => b,
-  m8: () => f,
-  mU: () => h,
-  ul: () => g
+  g2: () => g,
+  m8: () => p,
+  mU: () => f,
+  ul: () => m
 });
-var r, l, i, a, Chunk136722 = require("./136722.js"),
+var r, l, i, s, Chunk136722 = require("./136722.js"),
   Chunk488926 = require("./488926.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   d = ((r = {})[r.GUILD = 0] = "GUILD", r[r.GUILD_SCHEDULED_EVENT = 1] = "GUILD_SCHEDULED_EVENT", r),
-  f = ((l = {}).GUILD_TEMPLATES = "guild-templates", l.CUSTOMIZE_NEW_GUILD = "customize-new-guild", l.CHOOSE_GUILD = "choose-guild", l.CUSTOMIZE_EXISTING_GUILD = "customize-existing-guild", l.CONFIRMATION = "confirmation", l),
-  p = ((i = {}).CREATE = "CREATE", i.HUB_SCHOOL_CLUB = "HUB_SCHOOL_CLUB", i.HUB_STUDY = "HUB_STUDY", i.HUB_CLASS = "HUB_CLASS", i.HUB_SOCIAL = "HUB_SOCIAL", i.HUB_MAJOR = "HUB_MAJOR", i.HUB_DORM = "HUB_DORM", i),
-  h = ((a = {})[a.ALL = false] = "ALL", a[a.UNCATEGORIZED = 0] = "UNCATEGORIZED", a[a.SCHOOL_CLUB = 1] = "SCHOOL_CLUB", a[a.CLASS = 2] = "CLASS", a[a.STUDY_SOCIAL = 3] = "STUDY_SOCIAL", a[a.MISC = 5] = "MISC", a);
+  p = ((l = {}).GUILD_TEMPLATES = "guild-templates", l.CUSTOMIZE_NEW_GUILD = "customize-new-guild", l.CHOOSE_GUILD = "choose-guild", l.CUSTOMIZE_EXISTING_GUILD = "customize-existing-guild", l.CONFIRMATION = "confirmation", l),
+  h = ((i = {}).CREATE = "CREATE", i.HUB_SCHOOL_CLUB = "HUB_SCHOOL_CLUB", i.HUB_STUDY = "HUB_STUDY", i.HUB_CLASS = "HUB_CLASS", i.HUB_SOCIAL = "HUB_SOCIAL", i.HUB_MAJOR = "HUB_MAJOR", i.HUB_DORM = "HUB_DORM", i),
+  f = ((s = {})[s.ALL = false] = "ALL", s[s.UNCATEGORIZED = 0] = "UNCATEGORIZED", s[s.SCHOOL_CLUB = 1] = "SCHOOL_CLUB", s[s.CLASS = 2] = "CLASS", s[s.STUDY_SOCIAL = 3] = "STUDY_SOCIAL", s[s.MISC = 5] = "MISC", s);
 
-function b(e) {
+function g(e) {
   return "883060064561299456" === e ? [{
     id: "club",
     value: 1,
@@ -55,7 +55,7 @@ function b(e) {
   }]
 }
 
-function g() {
+function m() {
   return {
     CREATE: {
       id: "CREATE",
@@ -138,7 +138,7 @@ function g() {
         name: "officers (example)",
         mentionable: true,
         hoist: true,
-        permissions: s.kg(o.qN, c.xBc.MANAGE_ROLES, c.xBc.MANAGE_CHANNELS, c.xBc.KICK_MEMBERS, c.xBc.BAN_MEMBERS, c.xBc.MANAGE_NICKNAMES, c.xBc.MANAGE_GUILD_EXPRESSIONS, c.xBc.MANAGE_MESSAGES, c.xBc.SEND_TTS_MESSAGES),
+        permissions: a.kg(o.qN, c.xBc.MANAGE_ROLES, c.xBc.MANAGE_CHANNELS, c.xBc.KICK_MEMBERS, c.xBc.BAN_MEMBERS, c.xBc.MANAGE_NICKNAMES, c.xBc.MANAGE_GUILD_EXPRESSIONS, c.xBc.MANAGE_MESSAGES, c.xBc.SEND_TTS_MESSAGES),
         color: 3066993
       }],
       system_channel_id: "12"

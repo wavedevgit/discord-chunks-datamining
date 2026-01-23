@@ -12,9 +12,9 @@ var Chunk311907 = require("./311907.js"),
 
 function c(e) {
   var t;
-  let n = (0, a.jN)((null == e ? true : e.getGuildId()) != null ? e.guild_id : s.eGj),
+  let n = (0, s.jN)((null == e ? true : e.getGuildId()) != null ? e.guild_id : a.eGj),
     c = (0, r.bG)([i.Ay], () => null != e && i.Ay.isChannelRecordOrParentOptedIn(e)),
-    u = (0, l.d)(null != (t = null == e ? true : e.guild_id) ? t : s.eGj);
+    u = (0, l.d)(null != (t = null == e ? true : e.guild_id) ? t : a.eGj);
   if (null == e) returnfalse;
   let d = u && e.hasFlag(o.lx.IS_GUILD_RESOURCE_CHANNEL);
   return n && !d && !c && !e.isThread()

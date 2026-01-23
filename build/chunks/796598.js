@@ -55,19 +55,19 @@ function u(e, t, n, a, o) {
     m = a.anchorY,
     g = c(u, t, p, _),
     E = g.dragPreviewWidth,
-    b = g.dragPreviewHeight,
-    y = function() {
-      var e = new i.f([0, .5, 1], [f.y, f.y / _ * b, f.y + b - _]).interpolate(m);
-      return (0, r.n)() && u && (e += (window.devicePixelRatio - 1) * b), e
+    y = g.dragPreviewHeight,
+    b = function() {
+      var e = new i.f([0, .5, 1], [f.y, f.y / _ * y, f.y + y - _]).interpolate(m);
+      return (0, r.n)() && u && (e += (window.devicePixelRatio - 1) * y), e
     },
     O = function() {
       return new i.f([0, .5, 1], [f.x, f.x / p * E, f.x + E - p]).interpolate(h)
     },
-    A = o.offsetX,
-    v = o.offsetY,
-    S = 0 === v || v;
+    v = o.offsetX,
+    A = o.offsetY,
+    I = 0 === A || A;
   return {
-    x: 0 === A || A ? A : O(),
-    y: S ? v : y()
+    x: 0 === v || v ? v : O(),
+    y: I ? A : b()
   }
 }

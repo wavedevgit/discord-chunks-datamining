@@ -2,7 +2,7 @@
 /** chunk id: 395011, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => eI
+  A: () => eS
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -26,7 +26,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk672396 = require("./672396.js"),
   Chunk644434 = require("./644434.js");
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,7 +42,7 @@ function T(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -139,7 +139,7 @@ function X() {
   }
 }
 async function Z() {
-  if (!y.A.isOverlayEnabled) return void X();
+  if (!b.A.isOverlayEnabled) return void X();
   await ei();
   let e = new Set(l.Ay.getRunningGames().filter(e => l.Ay.getOverlayEnabledForGame(e)).map(e => e.pid));
   for (let t of new Set([...w].filter(t => !e.has(t)))) q(t);
@@ -207,10 +207,10 @@ function er(e) {
   }
 }
 async function ei() {
-  y.A.isModuleLoaded || y.A.isModuleLoading || await (0, _.P_)(), D = await (0, A.N)()
+  b.A.isModuleLoaded || b.A.isModuleLoading || await (0, _.P_)(), D = await (0, v.N)()
 }
 async function ea(e) {
-  e.overlayMethod === f.Ue.OutOfProcess || e.overlayMethod === f.Ue.OutOfProcessLimitedInteraction ? (await ei(), z(e.pid, e.overlayMethod)) : q(e.pid), eS.emitChange()
+  e.overlayMethod === f.Ue.OutOfProcess || e.overlayMethod === f.Ue.OutOfProcessLimitedInteraction ? (await ei(), z(e.pid, e.overlayMethod)) : q(e.pid), eI.emitChange()
 }
 
 function es() {
@@ -319,30 +319,30 @@ function eE(e) {
   M = r, $(), null != i && null != r && H(r, (0, O.Oy)(i)), null != D && (null != i || (null == (t = D.version) ? true : t.call(D)) > 0) && (null == (n = D.setRenderingWindowHandle) || n.call(D, (0, O.Oy)(null != i ? i : "0"), r))
 }
 
-function eb(e) {
+function ey(e) {
   R.verbose("Updating OverlayMethod", e), ea(e)
 }
 
-function ey(e) {
+function eb(e) {
   V[e.pid] = e.overlayState
 }
 
 function eO() {
-  D = y.A.getNativeModule(), Z()
+  D = b.A.getNativeModule(), Z()
 }
 
-function eA() {
+function ev() {
   D = null
 }
-class ev extends(r = Chunk311907.Ay.Store) {
+class eA extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(c.default, u.A, h.A, m.A, g.A, E.A, b.A, y.A, l.Ay)
+    this.waitFor(c.default, u.A, h.A, m.A, g.A, E.A, y.A, b.A, l.Ay)
   }
   isOverlayV3EnabledForPID(e) {
     return w.has(e)
   }
   getWidgetByType(e) {
-    let t = u.A.getLayout(S.G);
+    let t = u.A.getLayout(I.G);
     if (null != t) {
       let r = t.widgets.find(t => {
         let n = u.A.getWidget(t);
@@ -360,7 +360,7 @@ class ev extends(r = Chunk311907.Ay.Store) {
     return null != t && t.pinned
   }
   getTargetPID() {
-    return v.ed && (j === d.UNSET_PID || null == j) ? d.DEV_PID : null != j ? j : d.UNSET_PID
+    return A.ed && (j === d.UNSET_PID || null == j) ? d.DEV_PID : null != j ? j : d.UNSET_PID
   }
   getFocusedPID() {
     return x
@@ -400,12 +400,12 @@ class ev extends(r = Chunk311907.Ay.Store) {
     return null != (t = F[e]) ? t : null
   }
 }
-I(ev, "displayName", "Overlay-V3-Store");
-let eS = new ev(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {
+S(eA, "displayName", "Overlay-V3-Store");
+let eI = new eA(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {
     OVERLAY_FOCUSED: e_
   } : {
-    OVERLAY_UPDATE_OVERLAY_METHOD: eb,
-    OVERLAY_UPDATE_OVERLAY_STATE: ey,
+    OVERLAY_UPDATE_OVERLAY_METHOD: ey,
+    OVERLAY_UPDATE_OVERLAY_STATE: eb,
     OVERLAY_FOCUSED: e_,
     OVERLAY_OOP_UI_INITIALIZED: em,
     OVERLAY_OOP_UI_SHOW_INACTIVE_SUCCESS: eh,
@@ -416,7 +416,7 @@ let eS = new ev(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {
     OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: el,
     OVERLAY_V3_WINDOW_CREATION_FAILURE: ec,
     OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS: eO,
-    OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: eA,
+    OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: ev,
     OVERLAY_V3_NATIVE_REFRESH_HOST_WINDOW: ed,
     OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: eu,
     OVERLAY_V3_NATIVE_FOCUS_GAINED: ef,
@@ -424,4 +424,4 @@ let eS = new ev(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {
     OVERLAY_V3_NATIVE_SUCCESSFULLY_SHOWN: en,
     OVERLAY_V3_NATIVE_WINDOW_HANDLE_INITIALIZED: er
   }),
-  eI = eS
+  eS = eI

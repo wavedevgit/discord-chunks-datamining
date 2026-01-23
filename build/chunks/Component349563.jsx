@@ -4,8 +4,8 @@
 require.d(exports, {
   Bp: () => g,
   G5: () => E,
-  Wy: () => b,
-  zF: () => y
+  Wy: () => y,
+  zF: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -78,7 +78,7 @@ function m(e, t) {
 let g = "premium_new_tier_2_gradient",
   E = "premium_old_tier_2_gradient";
 
-function b(e) {
+function y(e) {
   let {
     tier: t = c.PremiumTypes.TIER_2
   } = e, n = (0, o.Ay)(), i = (0, s.qB)(n);
@@ -89,22 +89,22 @@ function b(e) {
           [u.W4]: t === c.PremiumTypes.TIER_0,
           [u.WJ]: t === c.PremiumTypes.TIER_2
         })
-      }), (0, r.jsx)(y, {
+      }), (0, r.jsx)(b, {
         foreground: u.iM
       })]
-    }), (0, r.jsx)(y, {
+    }), (0, r.jsx)(b, {
       foreground: u.bP
-    }), (0, r.jsx)(y, {
+    }), (0, r.jsx)(b, {
       foreground: u.ir
-    }), (0, r.jsx)(y, {
+    }), (0, r.jsx)(b, {
       foreground: u.b4
-    }), (0, r.jsx)(y, {
+    }), (0, r.jsx)(b, {
       foreground: u.iG
     })]
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     width: t = 14,
     height: n = 13,

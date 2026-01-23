@@ -24,7 +24,7 @@ var Chunk687123 = require("./687123.js"),
   Chunk652215 = require("./652215.js"),
   Chunk835002 = require("./835002.js");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,37 +32,37 @@ function A(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let v = new Chunk626584.A("AgeVerificationManager");
+let A = new Chunk626584.A("AgeVerificationManager");
 
-function S(e) {
+function I(e) {
   var t, n, r;
   let {
     channelId: a,
     message: s
   } = e, o = h.A.getMessage(a, s.id);
   if ((null == o || null == (n = o.embeds) || null == (t = n[0]) ? true : t.type) === i.A.AGE_VERIFICATION_SYSTEM_NOTIFICATION) {
-    let e = null == (r = o.embeds[0].fields) ? true : r.find(e => e.rawName === b.uN.CONTENT_TYPE);
-    (null == e ? true : e.rawValue) === b.Wv.ERROR ? (f.A.showFailedToast(O.OB.TIGGER_PAWTECT_ERROR), (0, E.Vh)(E.oQ.ERROR)) : (null == e ? true : e.rawValue) === b.Wv.VERIFIED_ADULT ? (f.A.showSuccessToast(O.OB.TIGGER_PAWTECT_VERIFIED), (0, E.Vh)(E.oQ.VERIFIED_ADULT)) : (null == e ? true : e.rawValue) === b.Wv.VERIFIED_TEEN && (f.A.showSuccessToast(O.OB.TIGGER_PAWTECT_VERIFIED), (0, E.Vh)(E.oQ.VERIFIED_TEEN))
+    let e = null == (r = o.embeds[0].fields) ? true : r.find(e => e.rawName === y.uN.CONTENT_TYPE);
+    (null == e ? true : e.rawValue) === y.Wv.ERROR ? (f.A.showFailedToast(O.OB.TIGGER_PAWTECT_ERROR), (0, E.Vh)(E.oQ.ERROR)) : (null == e ? true : e.rawValue) === y.Wv.VERIFIED_ADULT ? (f.A.showSuccessToast(O.OB.TIGGER_PAWTECT_VERIFIED), (0, E.Vh)(E.oQ.VERIFIED_ADULT)) : (null == e ? true : e.rawValue) === y.Wv.VERIFIED_TEEN && (f.A.showSuccessToast(O.OB.TIGGER_PAWTECT_VERIFIED), (0, E.Vh)(E.oQ.VERIFIED_TEEN))
   }
 }
 
-function I(e) {
+function S(e) {
   a.A.fetchMessages({
     channelId: e,
-    limit: y.EMb
+    limit: b.EMb
   })
 }
 
 function T(e) {
   let t = _.A.getChannel(e);
-  ((null == t ? true : t.type) === y.rbe.GUILD_FORUM || (null == t ? true : t.type) === y.rbe.GUILD_MEDIA) && (0, u.kB)(t)
+  ((null == t ? true : t.type) === b.rbe.GUILD_FORUM || (null == t ? true : t.type) === b.rbe.GUILD_MEDIA) && (0, u.kB)(t)
 }
 class C extends Chunk439372.A {
   constructor(...e) {
-    super(...e), A(this, "_previousAgeVerificationStatus", null), A(this, "handlePostConnectionOpen", () => {
+    super(...e), v(this, "_previousAgeVerificationStatus", null), v(this, "handlePostConnectionOpen", () => {
       var e, t;
       this._previousAgeVerificationStatus = null != (e = null == (t = g.default.getCurrentUser()) ? true : t.ageVerificationStatus) ? e : null
-    }), A(this, "handleCurrentUserUpdate", e => {
+    }), v(this, "handleCurrentUserUpdate", e => {
       var t;
       let {
         user: n
@@ -76,17 +76,17 @@ class C extends Chunk439372.A {
               channelId: r
             } = n, i = _.A.getChannel(r);
             (null == i ? true : i.nsfw) && (l.A.clear(r), r === e && (t = true))
-          }), t && null != e && (I(e), T(e))
+          }), t && null != e && (S(e), T(e))
         }
       } catch (e) {
-        v.warn("Error clearing cache and refetching messages", e)
+        A.warn("Error clearing cache and refetching messages", e)
       } finally {
         this._previousAgeVerificationStatus = i
       }
-    }), A(this, "actions", {
+    }), v(this, "actions", {
       POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
       CURRENT_USER_UPDATE: this.handleCurrentUserUpdate,
-      MESSAGE_CREATE: S
+      MESSAGE_CREATE: I
     })
   }
 }

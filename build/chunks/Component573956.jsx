@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 573956, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G: () => x
+  G: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,19 +24,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk790782 = require("./790782.js"),
   Chunk985018 = require("./985018.jsx");
 
-function x(e) {
+function v(e) {
   let {
     guild: t,
-    selected: x
-  } = e, E = (0, f.A)(t), _ = (0, u.JZ)(a.M.CHANNEL_BROWSER_NEW_BADGE_NUX), C = (0, i.yK)([p.A], () => Array.from(p.A.getNewChannelIds(t.id)).filter(e => p.A.shouldIndicateNewChannel(t.id, e))), S = (0, i.bG)([b.Ay], () => b.Ay.hasUnread(t.id, j.P.GUILD_ONBOARDING_QUESTION)), I = C.length > m.rR, N = (0, i.bG)([d.A, b.Ay], () => {
+    selected: v
+  } = e, x = (0, p.A)(t), E = (0, u.JZ)(s.M.CHANNEL_BROWSER_NEW_BADGE_NUX), C = (0, i.yK)([h.A], () => Array.from(h.A.getNewChannelIds(t.id)).filter(e => h.A.shouldIndicateNewChannel(t.id, e))), S = (0, i.bG)([g.Ay], () => g.Ay.hasUnread(t.id, O.P.GUILD_ONBOARDING_QUESTION)), I = C.length > b.rR, N = (0, i.bG)([d.A, g.Ay], () => {
     let e = d.A.lastFetchedAt(t.id),
-      n = b.Ay.lastMessageId(t.id, j.P.GUILD_ONBOARDING_QUESTION);
+      n = g.Ay.lastMessageId(t.id, O.P.GUILD_ONBOARDING_QUESTION);
     if (null == n) returnfalse;
-    let r = g.default.extractTimestamp(n);
+    let r = m.default.extractTimestamp(n);
     return null != e && e > r
   }), T = l.useCallback(() => {
-    (0, h.pX)(y.BVt.CHANNEL(t.id, E ? O.VV.CUSTOMIZE_COMMUNITY : O.VV.CHANNEL_BROWSER))
-  }, [t.id, E]), P = l.useCallback(e => {
+    (0, f.pX)(y.BVt.CHANNEL(t.id, x ? _.VV.CUSTOMIZE_COMMUNITY : _.VV.CHANNEL_BROWSER))
+  }, [t.id, x]), P = l.useCallback(e => {
     (0, c.L3)(e, async () => {
       let {
         default: e
@@ -75,9 +75,9 @@ function x(e) {
       }
     })
   }, [t]), w = null;
-  return _ && !S && !I || x || N || (w = (0, r.jsx)(o.LpS, {
-    color: s.A.colors.BADGE_BACKGROUND_BRAND.css,
-    text: v.intl.string(v.t.y2b7CA)
+  return E && !S && !I || v || N || (w = (0, r.jsx)(o.LpS, {
+    color: a.A.colors.BADGE_BACKGROUND_BRAND.css,
+    text: j.intl.string(j.t.y2b7CA)
   })), (0, r.jsx)(A.G, {
     id: "channels-".concat(t.id),
     renderIcon: e => (0, r.jsx)(o.kiI, {
@@ -85,8 +85,8 @@ function x(e) {
       color: "currentColor",
       className: e
     }),
-    text: E ? v.intl.string(v.t.h9mGOP) : v.intl.string(v.t.et6wav),
-    selected: x,
+    text: x ? j.intl.string(j.t.h9mGOP) : j.intl.string(j.t.et6wav),
+    selected: v,
     onClick: T,
     onContextMenu: P,
     trailing: w

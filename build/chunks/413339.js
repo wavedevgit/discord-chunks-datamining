@@ -2,9 +2,9 @@
 /** chunk id: 413339, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  PX: () => A,
+  PX: () => v,
   S1: () => O,
-  gB: () => y
+  gB: () => b
 }), require("./927092.js"), require("./212978.js"), require("./597227.js"), require("./393431.js"), require("./752391.js"), require("./532706.js"), require("./42231.js"), require("./232424.js"), require("./757074.js"), require("./949626.js"), require("./767709.js"), require("./65162.js");
 var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
@@ -60,7 +60,7 @@ function E(e, t, n, r, i) {
     }
   })
 }
-async function b(e, t, n) {
+async function y(e, t, n) {
   let r, i = false;
   if (null == n) return E(e, t, a.gO.NONE);
   if ("blur" === n) return E(e, t, a.gO.BACKGROUND_BLUR);
@@ -85,12 +85,12 @@ async function b(e, t, n) {
     (0, c.Mj)()
   }
 }
-async function y(e, t) {
+async function b(e, t) {
   let {
     track: n = true,
     location: r
   } = t;
-  await b(a.Tr.CAMERA_BACKGROUND_LIVE, {
+  await y(a.Tr.CAMERA_BACKGROUND_LIVE, {
     type: a.Qo.INPUT_DEVICE
   }, e), n && (0, d.Uz)(e, r, "Enabled")
 }
@@ -99,17 +99,17 @@ async function O(e, t, n) {
     track: r = true,
     location: i
   } = n;
-  (0, c.Oo)(), await b(a.Tr.CAMERA_BACKGROUND_PREVIEW, {
+  (0, c.Oo)(), await y(a.Tr.CAMERA_BACKGROUND_PREVIEW, {
     type: a.Qo.STREAM,
     streamId: t
   }, e), r && (0, d.Uz)(e, i, "Preview")
 }
 
-function A() {
+function v() {
   let e = s.default.getCurrentUser();
   if (null == e) return;
   let t = (0, l.i)(e);
-  (0, p.A)() && !u.A.hasBeenApplied && null != t && y(t, {
+  (0, p.A)() && !u.A.hasBeenApplied && null != t && b(t, {
     track: false
   }).catch(h.tEg)
 }

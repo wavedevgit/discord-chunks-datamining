@@ -16,7 +16,7 @@ var a, Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk441609 = require("./441609.js");
 
-function x(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,8 +24,8 @@ function x(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let b = Chunk975571.A.getArticleURL(Chunk652215.MVz.VERIFICATION_FAQ);
-class g extends(a = Chunk64700.PureComponent) {
+let f = Chunk975571.A.getArticleURL(Chunk652215.MVz.VERIFICATION_FAQ);
+class b extends(a = Chunk64700.PureComponent) {
   renderFields() {
     let {
       types: e,
@@ -46,15 +46,15 @@ class g extends(a = Chunk64700.PureComponent) {
   render() {
     return (0, l.jsxs)(c.BJc, {
       gap: 16,
-      className: f.Ot,
+      className: x.Ot,
       align: "center",
       direction: "vertical",
       justify: "center",
       children: [(0, l.jsxs)(c.BJc, {
         gap: 16,
         fullWidth: false,
-        className: s()(f.kL, {
-          [f.Fr]: o.Fr
+        className: s()(x.kL, {
+          [x.Fr]: o.Fr
         }),
         align: "center",
         direction: "vertical",
@@ -65,9 +65,9 @@ class g extends(a = Chunk64700.PureComponent) {
           justify: "center",
           gap: 16,
           children: [(0, l.jsx)("div", {
-            className: f.Sl
+            className: x.Sl
           }), (0, l.jsxs)(c.BJc, {
-            className: f.FS,
+            className: x.FS,
             gap: 4,
             align: "center",
             direction: "vertical",
@@ -78,7 +78,7 @@ class g extends(a = Chunk64700.PureComponent) {
             }), (0, l.jsx)(c.Text, {
               variant: "text-md/normal",
               children: h.intl.format(h.t["0rqMV5"], {
-                helpCenterURL: b
+                helpCenterURL: f
               })
             })]
           })]
@@ -96,7 +96,7 @@ class g extends(a = Chunk64700.PureComponent) {
         justify: "center",
         children: [(0, l.jsx)(c.Text, {
           variant: "text-sm/normal",
-          className: f.qr,
+          className: x.qr,
           children: h.intl.string(h.t.qqYun3)
         }), (0, l.jsxs)(c.BJc, {
           gap: 8,
@@ -105,16 +105,16 @@ class g extends(a = Chunk64700.PureComponent) {
           justify: "center",
           children: [(0, l.jsx)(c.Text, {
             variant: "text-sm/semibold",
-            className: f.qr,
+            className: x.qr,
             children: h.intl.format(h.t.WL51ZR, {
               supportURL: u.A.getSubmitRequestURL()
             })
           }), (0, l.jsx)("div", {
-            className: s()(f.qr, f.mf),
+            className: s()(x.qr, x.mf),
             children: "•"
           }), (0, l.jsx)(c.Text, {
             variant: "text-sm/semibold",
-            className: f.qr,
+            className: x.qr,
             children: h.intl.format(h.t.Hv7ztc, {
               logoutOnClick: this.props.onLogout
             })
@@ -124,7 +124,7 @@ class g extends(a = Chunk64700.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), x(this, "handleClick", e => {
+    super(...e), g(this, "handleClick", e => {
       let {
         onClick: t
       } = this.props;
@@ -132,9 +132,9 @@ class g extends(a = Chunk64700.PureComponent) {
     })
   }
 }
-x(g, "defaultProps", {
+g(b, "defaultProps", {
   types: [Chunk652215.Fz7.CAPTCHA],
   onCaptchaVerify: Chunk652215.tEg,
   onLogout: Chunk652215.tEg
 });
-let v = g
+let v = b

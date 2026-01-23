@@ -26,7 +26,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk526008 = require("./526008.js");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -93,10 +93,10 @@ function D(e) {
     readOnly: n,
     autoFocus: a,
     clearable: _,
-    fullWidth: S,
+    fullWidth: I,
     closeOnSelect: T = true,
     shouldFocusWrap: R,
-    placeholder: D = A.intl.string(O.default["A+pfVR"]),
+    placeholder: D = v.intl.string(O.default["A+pfVR"]),
     name: j,
     form: M,
     autoComplete: k,
@@ -121,7 +121,7 @@ function D(e) {
     getReferenceProps: et,
     getFloatingProps: en,
     transitionStyles: er
-  } = (0, b.G)(), ei = i.useId(), {
+  } = (0, y.G)(), ei = i.useId(), {
     options: ea,
     loading: es
   } = (0, E.K)({
@@ -167,12 +167,12 @@ function D(e) {
     }, [em, eu, _, $, ed]),
     eE = i.useMemo(() => {
       let e = Array.isArray(B) ? B : [B];
-      return ea.filter(t => (0, y.fI)(t.value, e))
+      return ea.filter(t => (0, b.fI)(t.value, e))
     }, [B, ea]),
-    eb = i.useMemo(() => {
-      if (!S) return "".concat(Math.max(null != ef ? ef : 200, 200) * ("multiple" === t ? 1.5 : 1) + !!_ * w + P + 12, "px")
-    }, [S, ef, t, _]),
-    ey = i.useCallback(e => {
+    ey = i.useMemo(() => {
+      if (!I) return "".concat(Math.max(null != ef ? ef : 200, 200) * ("multiple" === t ? 1.5 : 1) + !!_ * w + P + 12, "px")
+    }, [I, ef, t, _]),
+    eb = i.useCallback(e => {
       if (ed) return;
       let n = Array.from(e);
       if ("multiple" === t && n.length < 1) F([]);
@@ -184,9 +184,9 @@ function D(e) {
       ec && Q && eh()
     }, [ed, t, F, ec, eh, Q]),
     eO = "multiple" === t && eE.length > 0,
-    eA = i.useRef(null);
+    ev = i.useRef(null);
   i.useEffect(() => {
-    clearTimeout(eA.current), eO && !H && (eA.current = setTimeout(() => {
+    clearTimeout(ev.current), eO && !H && (ev.current = setTimeout(() => {
       var e, t;
       null == (t = W.current) || null == (e = t.lastElementChild) || e.scrollIntoView({
         behavior: "smooth",
@@ -195,27 +195,27 @@ function D(e) {
       })
     }, 10))
   }, [eE, eO, H]);
-  let ev = (0, o.A)(el, J.setReference),
-    eS = i.useCallback(e => {
+  let eA = (0, o.A)(el, J.setReference),
+    eI = i.useCallback(e => {
       if (ed) return;
       let t = Array.from(e)[0],
         n = eE.filter(e => e.id !== t);
-      if (ey(n), 0 === n.length) {
+      if (eb(n), 0 === n.length) {
         var r;
         null == (r = eo.current) || r.focus()
       }
-    }, [ey, eE, ed]),
-    eI = Math.max(ea.findIndex(e => {
+    }, [eb, eE, ed]),
+    eS = Math.max(ea.findIndex(e => {
       var t;
       return e.id === (null == (t = eE[eE.length - 1]) ? true : t.id)
     }), 0),
     eT = i.useRef(null);
   i.useEffect(() => (!es && Q && (eT.current = setTimeout(() => {
     var e;
-    return null == (e = document.getElementById((0, y.ZN)(ei, eI))) ? true : e.focus()
+    return null == (e = document.getElementById((0, b.ZN)(ei, eS))) ? true : e.focus()
   }, 10)), () => {
     null != eT.current && clearTimeout(eT.current)
-  }), [es, ei, Q, eI]);
+  }), [es, ei, Q, eS]);
   let eC = (0, p.rdh)(f.A.modules.select.MAX_WIDTH),
     eN = i.useMemo(() => ({
       horizontalControlColumnWidth: "min(".concat(eC, "px, auto)")
@@ -223,13 +223,13 @@ function D(e) {
 
   function eR(e) {
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(g.p, C(I({
-        ref: ev,
+      children: [(0, r.jsx)(g.p, C(S({
+        ref: eA,
         disabled: Z,
         readOnly: n,
         loading: es,
         clearable: _,
-        fullWidth: S,
+        fullWidth: I,
         isOpen: Q,
         isInert: ed,
         hasValue: eu,
@@ -240,7 +240,7 @@ function D(e) {
         children: (0, r.jsxs)(d.sqX, {
           "aria-label": X,
           buttonRef: eo,
-          buttonProps: C(I({}, null != z ? {
+          buttonProps: C(S({}, null != z ? {
             id: z
           } : {}), {
             style: {
@@ -250,9 +250,9 @@ function D(e) {
           focusProps: {
             ringTarget: el
           },
-          className: s()(v.L5, {
-            [v.kj]: H,
-            [v.M8]: "multiple" === t
+          className: s()(A.L5, {
+            [A.kj]: H,
+            [A.M8]: "multiple" === t
           }),
           onClick: e_,
           onKeyDown: eg,
@@ -270,7 +270,7 @@ function D(e) {
             placeholder: D,
             selectionMode: t,
             selectedItems: eE,
-            onRemove: eS
+            onRemove: eI
           })]
         })
       })), (0, r.jsx)(h.H, {
@@ -280,13 +280,13 @@ function D(e) {
         autoComplete: k,
         selectionMode: t,
         selectedItems: eE,
-        onSelectionChange: ey,
+        onSelectionChange: eb,
         listItems: ea
-      }), !S && ep, !ed && Q && (0, r.jsx)("div", C(I({
+      }), !I && ep, !ed && Q && (0, r.jsx)("div", C(S({
         ref: J.setFloating,
-        className: v.S_
+        className: A.S_
       }, en()), {
-        style: I({}, ee, er),
+        style: S({}, ee, er),
         children: (0, r.jsx)(d.lGe, {
           children: (0, r.jsx)(u.q, {
             id: ei,
@@ -294,9 +294,9 @@ function D(e) {
             items: ea,
             selectionMode: t,
             selectedItems: eE,
-            onSelectionChange: ey,
+            onSelectionChange: eb,
             shouldFocusWrap: R,
-            renderListItem: e => (0, r.jsx)(m.c, I({}, e)),
+            renderListItem: e => (0, r.jsx)(m.c, S({}, e)),
             maxVisibleItems: U,
             loading: es,
             typeahead: true
@@ -305,12 +305,12 @@ function D(e) {
       }))]
     })
   }
-  return (0, r.jsx)(l.D, C(I({}, K), {
+  return (0, r.jsx)(l.D, C(S({}, K), {
     "data-mana-component": "select",
     layoutConfig: eN,
     children: e => (0, r.jsx)("div", {
       style: {
-        width: S ? "100%" : "minmax(".concat(eb, "px, 100%)")
+        width: I ? "100%" : "minmax(".concat(ey, "px, 100%)")
       },
       children: eR(e)
     })
@@ -341,7 +341,7 @@ function x(e, t) {
         selectedItems: [],
         onSelectionChange: () => {},
         shouldFocusWrap: false,
-        renderListItem: e => (0, r.jsx)(m.c, I({}, e))
+        renderListItem: e => (0, r.jsx)(m.c, S({}, e))
       })
     }), [e, t, s, n])
   }
@@ -356,7 +356,7 @@ function L(e) {
     tagGroupRef: s
   } = e;
   return null == i || 0 === i.length ? (0, r.jsx)("div", {
-    className: v.qf,
+    className: A.qf,
     children: (0, r.jsx)(d.EYj, {
       variant: "text-md/normal",
       color: "currentColor",
@@ -365,11 +365,11 @@ function L(e) {
     })
   }) : "multiple" === n ? (0, r.jsx)(d.CR_, {
     listRef: s,
-    label: A.intl.string(O.default.VMNfsY),
+    label: v.intl.string(O.default.VMNfsY),
     items: i,
     layout: "inline",
     onRemove: a
-  }) : (0, r.jsx)(m.c, C(I({}, i[0]), {
+  }) : (0, r.jsx)(m.c, C(S({}, i[0]), {
     inInput: true
   }))
 }

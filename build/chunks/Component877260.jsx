@@ -30,7 +30,7 @@ function v(e) {
     emptyState: s,
     searchQuery: O,
     onSearchChange: j
-  } = e, v = g.A.useField("showNavigationMobile"), P = l.useRef(null), w = l.useMemo(() => {
+  } = e, v = g.A.useField("showNavigationMobile"), P = l.useRef(null), _ = l.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
       let {
@@ -47,13 +47,13 @@ function v(e) {
         }
       })
     }), e
-  }, [t.layout]), [A, C] = l.useMemo(() => {
+  }, [t.layout]), [w, C] = l.useMemo(() => {
     let e = [],
       r = [];
     return t.layout.forEach(t => {
       t.hoisted ? e.push(t) : r.push(t)
     }), [e, r]
-  }, [t.layout]), E = (0, d.NC)(), T = (0, b.A)("settings-sidebar", P), N = g.A.useField("currentPanelKey");
+  }, [t.layout]), A = (0, d.NC)(), T = (0, f.A)("settings-sidebar", P), N = g.A.useField("currentPanelKey");
   return l.useEffect(() => {
     var e;
     if (null == P.current || null == N) return;
@@ -63,24 +63,24 @@ function v(e) {
     null != n && P.current.scrollIntoViewNode({
       node: n,
       padding: 8,
-      animate: !f.A.useReducedMotion && r
+      animate: !y.A.useReducedMotion && r
     })
   }, [N]), (0, n.jsx)(u.NPJ, {
-    theme: E,
-    children: e => (0, n.jsx)(y.Ay, {
-      contentTypes: w,
+    theme: A,
+    children: e => (0, n.jsx)(b.Ay, {
+      contentTypes: _,
       children: t => {
         let {
           visibleContent: l
         } = t;
         return (0, n.jsxs)("div", {
           className: a()(m.pz, e, {
-            [m.Hw]: i.Fr,
+            [m.Hw]: c.Fr,
             [m.n7]: v
           }),
           children: [(0, n.jsxs)("div", {
             className: m.gM,
-            children: [i.Fr && (0, n.jsx)("div", {
+            children: [c.Fr && (0, n.jsx)("div", {
               className: m.hg,
               children: (0, n.jsx)(u.K0, {
                 icon: u.d$L,
@@ -90,7 +90,7 @@ function v(e) {
                 "aria-label": h.intl.string(h.t.cpT0Cq)
               })
             }), (0, n.jsx)("div", {
-              children: A.map(e => (0, n.jsx)(x, {
+              children: w.map(e => (0, n.jsx)(x, {
                 section: e,
                 visibleContent: l,
                 hoisted: true
@@ -99,14 +99,14 @@ function v(e) {
               searchQuery: O,
               onSearchChange: j
             }), null != s && 0 === C.length && (0, n.jsx)(s, {})]
-          }), (0, n.jsx)(c.hD, {
+          }), (0, n.jsx)(i.hD, {
             navigator: T,
-            children: (0, n.jsx)(c.PR, {
+            children: (0, n.jsx)(i.PR, {
               children: e => {
                 var t, o;
                 let {
                   ref: a
-                } = e, c = function(e, t) {
+                } = e, i = function(e, t) {
                   if (null == e) return {};
                   var r, n, l, o = {};
                   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -147,7 +147,7 @@ function v(e) {
                   },
                   className: m.Mt,
                   fade: true
-                }, c), o = o = {
+                }, i), o = o = {
                   children: [(0, n.jsx)("nav", {
                     className: m.C$,
                     children: C.map(e => (0, n.jsx)(x, {
@@ -204,9 +204,9 @@ function S(e) {
   let {
     searchQuery: t,
     onSearchChange: r
-  } = e, o = l.useRef(null), [a, c] = (0, y.kn)([s.M.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]), i = l.useCallback(() => {
+  } = e, o = l.useRef(null), [a, i] = (0, b.kn)([s.M.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]), c = l.useCallback(() => {
     r("")
-  }, [r]), f = l.useMemo(() => ({
+  }, [r]), y = l.useMemo(() => ({
     title: h.intl.string(h.t.Kv519a),
     body: h.intl.string(h.t.cTGJBZ),
     badge: "new",
@@ -220,7 +220,7 @@ function S(e) {
       size: "md",
       query: t,
       onChange: r,
-      onClear: i
+      onClear: c
     }), (0, n.jsx)("div", {
       className: m.To,
       ref: o
@@ -228,8 +228,8 @@ function S(e) {
       dismissibleContentType: s.M.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER,
       targetElementRef: o,
       visibleContent: a,
-      markAsDismissed: c,
-      props: f
+      markAsDismissed: i,
+      props: y
     })]
   })
 }

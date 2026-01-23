@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   AE: () => R,
-  LE: () => S,
+  LE: () => I,
   kr: () => T,
   mZ: () => f.A,
-  yt: () => I
+  yt: () => S
 }), require("./896048.js"), require("./747238.js");
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438),
@@ -42,8 +42,8 @@ function h(e, t) {
 let m = 5,
   g = /\.webp($|\?|#)/i,
   E = /\.avif($|\?|#)/i,
-  b = [16, 20, 22, 24, 28, 32, 40, 44, 48, 56, 60, 64, 80, 96, 100, 128, 160, 240, 256, 300, 320, 480, 512, 600, 640, 1024, 1280, 1536, 2048, 3072, 4096],
-  y = new(s())({
+  y = [16, 20, 22, 24, 28, 32, 40, 44, 48, 56, 60, 64, 80, 96, 100, 128, 160, 240, 256, 300, 320, 480, 512, 600, 640, 1024, 1280, 1536, 2048, 3072, 4096],
+  b = new(s())({
     max: 1e3
   });
 
@@ -54,27 +54,27 @@ function O(e, t) {
   } = e;
   return async () => {
     await u.A.isOnline(), n.fails < m ? n.fail(() => {
-      A(e)
-    }) : v(true, e, t)
+      v(e)
+    }) : A(true, e, t)
   }
 }
 
-function A(e) {
+function v(e) {
   let t = new Image;
   t.onerror = O(e, t), t.onload = () => {
     let {
       backoff: n
     } = e;
-    null != n && n.succeed(), v(false, e, t)
+    null != n && n.succeed(), A(false, e, t)
   }, t.src = e.url
 }
 
-function v(e, t, n) {
+function A(e, t, n) {
   let {
     callbacks: r,
     url: i
   } = t;
-  if (e) y.del(i);
+  if (e) b.del(i);
   else {
     let {
       width: e,
@@ -85,18 +85,18 @@ function v(e, t, n) {
       loaded: true,
       width: e,
       height: r
-    }, y.set(i, t)
+    }, b.set(i, t)
   }
   null != r && r.forEach(n => n(e, t))
 }
 
-function S(e) {
-  let t = y.get(e);
+function I(e) {
+  let t = b.get(e);
   return null != t && t.loaded
 }
 
-function I(e, t) {
-  let n = y.get(e);
+function S(e, t) {
+  let n = b.get(e);
   if (null != n && n.loaded) return null != t && u.A.awaitOnline().then(() => {
     null != n && null != n.callbacks && n.callbacks.forEach(t => {
       null != n ? t(false, n) : t(true, {
@@ -110,7 +110,7 @@ function I(e, t) {
     return null == n && (n = {
       url: e,
       loaded: false
-    }, y.set(e, n), A(n)), null != t && (r = t.bind(null), null == n.callbacks && (n.callbacks = new Set), n.callbacks.add(r)), () => {
+    }, b.set(e, n), v(n)), null != t && (r = t.bind(null), null == n.callbacks && (n.callbacks = new Set), n.callbacks.add(r)), () => {
       null != r && null != n && (null != n.callbacks && n.callbacks.delete(r), null != n.backoff && n.backoff.cancel())
     }
   }
@@ -120,10 +120,10 @@ function T(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] && arguments[1];
   if (n) {
-    let t = b.filter(t => t <= e).pop();
+    let t = y.filter(t => t <= e).pop();
     if (null != t && e / t <= 1.25) return t
   }
-  return null != (t = b.find(t => e <= t)) ? t : b[b.length - 1]
+  return null != (t = y.find(t => e <= t)) ? t : y[y.length - 1]
 }
 
 function C(e) {
@@ -146,13 +146,13 @@ function N(e) {
   if (t.startsWith("data:image") || d.A.isDiscordCdnUrl(t)) return t;
   let [h, m] = C(t);
   null != l && (m.format = l), null != u && (m.quality = u), f && _ && (g.test(t) || E.test(t)) && (m.animated = true), E.test(t) && (m.format = "webp");
-  let b = (0, c.Uj)({
+  let y = (0, c.Uj)({
     width: a,
     height: s,
     maxWidth: p.uJv,
     maxHeight: p.uJv
   });
-  return a = b.width, s = b.height, (a !== n || s !== r) && (m.width = 0 | a, m.height = 0 | s), i().isEmpty(m) || (h += "?" + o.stringify(m)), h
+  return a = y.width, s = y.height, (a !== n || s !== r) && (m.width = 0 | a, m.height = 0 | s), i().isEmpty(m) || (h += "?" + o.stringify(m)), h
 }
 
 function R(e) {

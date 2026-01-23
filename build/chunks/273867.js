@@ -2,7 +2,7 @@
 /** chunk id: 273867, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./896048.js"), require("./321073.js");
 var Chunk136722 = require("./136722.js"),
   Chunk937724 = require("./937724.js"),
@@ -50,7 +50,7 @@ class E {
     null != e.channel.guild_id && this.unsync(e.channel.guild_id, t)
   }
   handleChannelUpdates(e, t) {
-    for (let n of e.channels.filter(e => null != e.guild_id)) b(c.A.getBasicChannel(n.id), n) && this.unsync(n.guild_id, t)
+    for (let n of e.channels.filter(e => null != e.guild_id)) y(c.A.getBasicChannel(n.id), n) && this.unsync(n.guild_id, t)
   }
   handleBackgroundSync(e, t) {
     for (let a of e.guilds) switch (a.data_mode) {
@@ -125,7 +125,7 @@ class E {
     this.synced = null
   }
   onGuildUpdate(e, t, n, r) {
-    (n.length > 0 || t.some(e => b(c.A.getBasicChannel(e.id), e))) && this.unsync(e, r)
+    (n.length > 0 || t.some(e => y(c.A.getBasicChannel(e.id), e))) && this.unsync(e, r)
   }
   onGuildSync(e, t) {
     this.unsync(e, t)
@@ -150,7 +150,7 @@ class E {
   }
   syncOne(e, t) {
     var n, r;
-    return !(null == d.A.getGuild(e) || (null == (n = this.synced) ? true : n.has(e))) && (null == (r = this.synced) || r.add(e), _.A.basicChannelsTransaction(t).put(e, y(e)), _.A.syncedBasicChannelsTransaction(t).put(e, true), true)
+    return !(null == d.A.getGuild(e) || (null == (n = this.synced) ? true : n.has(e))) && (null == (r = this.synced) || r.add(e), _.A.basicChannelsTransaction(t).put(e, b(e)), _.A.syncedBasicChannelsTransaction(t).put(e, true), true)
   }
   constructor() {
     m(this, "synced", null), m(this, "actions", {
@@ -170,11 +170,11 @@ class E {
   }
 }
 
-function b(e, t) {
+function y(e, t) {
   return null == e || e.type !== t.type || e.parent_id !== t.parent_id || f.A.computeBasicPermissions(e) !== f.A.computeBasicPermissions(t)
 }
 
-function y(e) {
+function b(e) {
   return Object.values(c.A.getMutableGuildChannelsForGuild(e)).map(e => ({
     id: e.id,
     type: e.type,
@@ -190,4 +190,4 @@ function O(e) {
   for (let [r, i] of e)(i ? t : n).push(r);
   return [t, n]
 }
-let A = new E
+let v = new E

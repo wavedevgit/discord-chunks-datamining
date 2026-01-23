@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 361908, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,7 +14,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk49999 = require("./49999.js"),
   Chunk985018 = require("./985018.jsx");
 
-function f(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,21 +33,21 @@ function f(e) {
   return e
 }
 
-function h(e) {
+function g(e) {
   let {
     guildId: t,
-    markAsDismissed: h,
-    renderTargetElement: A
-  } = e, g = {
+    markAsDismissed: g,
+    renderTargetElement: f
+  } = e, m = {
     text: p.intl.string(p.t.JzJpg4),
     onClick: () => {
-      o.default.track(u.HAw.MEDIA_CHANNEL_UPSELL_CLICKED, f({}, (0, s.H$)(t))), h(d.i.PRIMARY), (0, a.mMO)(async () => {
+      o.default.track(u.HAw.MEDIA_CHANNEL_UPSELL_CLICKED, h({}, (0, s.H$)(t))), g(d.i.PRIMARY), (0, a.mMO)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("64233"), n.e("9743")]).then(n.bind(n, 409200));
         return n => {
           var i, l;
-          return (0, r.jsx)(e, (i = f({}, n), l = l = {
+          return (0, r.jsx)(e, (i = h({}, n), l = l = {
             channelType: u.rbe.GUILD_MEDIA,
             guildId: t
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
@@ -64,11 +64,11 @@ function h(e) {
       })
     },
     variant: "primary"
-  }, m = i.useRef(null);
+  }, A = i.useRef(null);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      ref: m,
-      children: A()
+      ref: A,
+      children: f()
     }), (0, r.jsx)(l.HZ, {
       title: p.intl.string(p.t.fW7UqM),
       body: p.intl.string(p.t["yQ0X+T"]),
@@ -77,13 +77,13 @@ function h(e) {
         align: "center"
       },
       assetUrl: "https://cdn.discordapp.com/assets/media_channel/media_channel_upsell_demo.mp4",
-      action: g,
+      action: m,
       textLink: {
         link: c.A.getCreatorSupportArticleURL(u.MVz.MEDIA_CHANNEL),
         text: p.intl.string(p.t.w4DutA)
       },
-      targetElementRef: m,
-      onRequestClose: () => h(d.i.DISMISS)
+      targetElementRef: A,
+      onRequestClose: () => g(d.i.DISMISS)
     })]
   })
 }

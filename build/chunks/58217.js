@@ -2,7 +2,7 @@
 /** chunk id: 58217, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js"), require("./938796.js");
 var Chunk665260 = require("./665260.js"),
   Chunk439372 = require("./439372.js"),
@@ -28,7 +28,7 @@ function m(e, t, n) {
 }
 let g = null,
   E = null;
-class b extends Chunk439372.A {
+class y extends Chunk439372.A {
   constructor(...e) {
     super(...e), m(this, "actions", {
       GUILD_DELETE: e => this.handleGuildDelete(e),
@@ -62,4 +62,4 @@ class b extends Chunk439372.A {
     })
   }
 }
-let y = new b
+let b = new y

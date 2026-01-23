@@ -25,7 +25,7 @@ function m() {
     m = (0, l.sP)(),
     g = (0, o.yM)(),
     E = i.useMemo(() => (!m || !!g) && !t, [m, t, g]),
-    b = i.useCallback(e => {
+    y = i.useCallback(e => {
       m && e ? a.A.showAgeVerificationGetStartedModal({
         entryPoint: s.q1.AGE_RESTRICTED_SERVERS_ACCESS_SETTINGS
       }) : u.Kg.updateSetting(e)
@@ -35,7 +35,7 @@ function m() {
     children: (0, r.jsx)(p.Ay, {
       title: h.intl.string(h.t["L+yTsa"]),
       value: n,
-      onChange: b,
+      onChange: y,
       disabled: E,
       note: h.intl.string(h.t.hiM8pU)
     })

@@ -88,7 +88,7 @@ let k = {
       if (null == S.default.getCurrentUser()) return;
       let {
         guildTemplate: i
-      } = await b.A.resolveGuildTemplate(t);
+      } = await _.A.resolveGuildTemplate(t);
       if (null == i) throw new x.A({
         errorCode: L.Lw6.INVALID_GUILD_TEMPLATE
       }, "Invalid guild template id: ".concat(t));
@@ -228,8 +228,8 @@ let k = {
         case w.XK.OAUTH2:
           let l = new URL(L.BVt.OAUTH2_AUTHORIZE, window.location.origin);
           l.search = r.search;
-          let a = (0, _.getOAuth2AuthorizeProps)(l.toString());
-          if (null != a) return (0, _.openOAuth2ModalWithCreateGuildModal)(a), true;
+          let a = (0, b.getOAuth2AuthorizeProps)(l.toString());
+          if (null != a) return (0, b.openOAuth2ModalWithCreateGuildModal)(a), true;
           returnfalse;
         case w.XK.ONE_TIME_LOGIN:
           if (null != r) return (0, E.N)({
@@ -253,14 +253,14 @@ let k = {
             return async function(e, t, n) {
               try {
                 var r, i;
-                let l = f.Ay.getCurrentEmbeddedActivity();
+                let l = h.Ay.getCurrentEmbeddedActivity();
                 if ((null == l ? true : l.applicationId) === e) return void C.default.track(L.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {
                   application_id: e,
                   success: false,
                   failure_reason: "activity_already_running",
                   attempt_id: n
                 });
-                let a = await m.Ay.fetchApplication(e),
+                let a = await A.Ay.fetchApplication(e),
                   s = null == a || null == (i = a.bot) ? true : i.id;
                 if (null == s) return void C.default.track(L.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {
                   application_id: e,
@@ -275,11 +275,11 @@ let k = {
                   d = null != (r = c.searchParams.get("referrer_id")) ? r : true,
                   {
                     customId: p
-                  } = await (0, A.d9)(e, c.searchParams.get("link_id"), c.searchParams.get("custom_id"));
-                await (0, h.A)({
+                  } = await (0, f.d9)(e, c.searchParams.get("link_id"), c.searchParams.get("custom_id"));
+                await (0, g.A)({
                   targetApplicationId: e,
                   channelId: o,
-                  analyticsLocations: [g.A.DEEPLINK],
+                  analyticsLocations: [m.A.DEEPLINK],
                   customId: p,
                   referrerId: d
                 }), C.default.track(L.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {

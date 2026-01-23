@@ -27,26 +27,26 @@ let f = {},
   m = null,
   g = "lastChangeLogDate",
   E = null,
-  b = null,
-  y = new Set;
+  y = null,
+  b = new Set;
 
 function O(e) {
   let {
     key: t
   } = e;
-  if (y.has(t)) returnfalse;
-  (y = new Set(y)).add(t)
-}
-
-function A(e) {
-  let {
-    key: t
-  } = e;
-  if (!y.has(t)) returnfalse;
-  (y = new Set(y)).delete(t)
+  if (b.has(t)) returnfalse;
+  (b = new Set(b)).add(t)
 }
 
 function v(e) {
+  let {
+    key: t
+  } = e;
+  if (!b.has(t)) returnfalse;
+  (b = new Set(b)).delete(t)
+}
+
+function A(e) {
   let {
     config: t,
     latestChangelogId: n
@@ -54,7 +54,7 @@ function v(e) {
   _ = n, m = t
 }
 
-function S(e) {
+function I(e) {
   let {
     id: t,
     changelog: n
@@ -69,7 +69,7 @@ function S(e) {
   }, null == p[t] && (p[t] = {}), p[t][n.locale] = u._f.LOADED_SUCCESS
 }
 
-function I(e) {
+function S(e) {
   let {
     id: t,
     locale: n
@@ -89,7 +89,7 @@ function C(e) {
   let {
     changelogDate: t
   } = e;
-  b = new Date(t), a.w.set(g, t)
+  y = new Date(t), a.w.set(g, t)
 }
 
 function N() {
@@ -100,7 +100,7 @@ class R extends(r = Chunk311907.Ay.Store) {
     this.waitFor(o.default, c.A), this.syncWith([o.default], () => true), this.syncWith([c.A], N);
     let e = a.w.get(g);
     if (null != e) try {
-      b = new Date(e)
+      y = new Date(e)
     } catch (e) {
       a.w.remove(g)
     }
@@ -129,27 +129,27 @@ class R extends(r = Chunk311907.Ay.Store) {
     return E
   }
   lastSeenChangelogDate() {
-    return b
+    return y
   }
   getStateForDebugging() {
     return {
       changelogConfig: m,
       loadedChangelogs: p,
       lastSeenChangelogId: E,
-      lastSeenChangelogDate: b
+      lastSeenChangelogDate: y
     }
   }
   isLocked() {
-    return y.size > 0
+    return b.size > 0
   }
 }
 d(R, "displayName", "ChangelogStore");
 let w = new R(Chunk73153.h, {
   CHANGE_LOG_LOCK: O,
-  CHANGE_LOG_UNLOCK: A,
-  CHANGE_LOG_SET_CONFIG: v,
-  CHANGE_LOG_FETCH_SUCCESS: S,
-  CHANGE_LOG_FETCH_FAILED: I,
+  CHANGE_LOG_UNLOCK: v,
+  CHANGE_LOG_SET_CONFIG: A,
+  CHANGE_LOG_FETCH_SUCCESS: I,
+  CHANGE_LOG_FETCH_FAILED: S,
   CHANGE_LOG_SET_OVERRIDE: T,
   CHANGE_LOG_MARK_SEEN: C
 })

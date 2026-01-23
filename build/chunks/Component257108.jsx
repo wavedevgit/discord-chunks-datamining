@@ -2,7 +2,7 @@
 /** chunk id: 257108, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -23,15 +23,15 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk587590 = require("./587590.js");
 
-function y(e) {
-  var t, n, i, y;
+function b(e) {
+  var t, n, i, b;
   let {
     type: O,
-    textValue: A,
-    maxCharacterCount: v,
-    showRemainingCharsAfterCount: S,
-    className: I
-  } = e, T = (0, s.bG)([p.default], () => _.Ay.canUseIncreasedMessageLength(p.default.getCurrentUser())), C = (0, d.A)(), N = null != v ? v : C, R = null != (t = null != S ? S : v) ? t : C / 10, w = A.length, P = null != O.upsellLongMessages && (null != w ? w : 0) > m.uvi && T, D = null != O.upsellLongMessages && !T, x = (null == (i = (0, f.V)()) || null == (n = i.subscription_trial) ? true : n.sku_id) === g.pe.TIER_2, L = N - w, j = L > R, M = L < 0 && x, k = 0 === L ? E.intl.string(E.t.tU6YQ7) : L > 0 ? E.intl.formatToPlainString(E.t.qH8uFW, {
+    textValue: v,
+    maxCharacterCount: A,
+    showRemainingCharsAfterCount: I,
+    className: S
+  } = e, T = (0, s.bG)([p.default], () => _.Ay.canUseIncreasedMessageLength(p.default.getCurrentUser())), C = (0, d.A)(), N = null != A ? A : C, R = null != (t = null != I ? I : A) ? t : C / 10, w = v.length, P = null != O.upsellLongMessages && (null != w ? w : 0) > m.uvi && T, D = null != O.upsellLongMessages && !T, x = (null == (i = (0, f.V)()) || null == (n = i.subscription_trial) ? true : n.sku_id) === g.pe.TIER_2, L = N - w, j = L > R, M = L < 0 && x, k = 0 === L ? E.intl.string(E.t.tU6YQ7) : L > 0 ? E.intl.formatToPlainString(E.t.qH8uFW, {
     count: L
   }) : E.intl.string(E.t.YSRIqa), {
     analyticsLocations: U
@@ -41,9 +41,9 @@ function y(e) {
   return (0, r.jsx)(u.f5, {
     value: U,
     children: (0, r.jsxs)("div", {
-      className: a()(I, b.Dq),
+      className: a()(S, y.Dq),
       children: [(0, r.jsxs)("div", {
-        className: b.SW,
+        className: y.SW,
         children: [P && G ? (0, r.jsx)(o.m, {
           text: E.intl.formatToPlainString(E.t.vcvHa0, {
             maxLength: N
@@ -52,7 +52,7 @@ function y(e) {
           children: (0, r.jsx)(l.tvc, {
             size: "md",
             color: "currentColor",
-            className: b.y
+            className: y.y
           })
         }) : null, j || M ? null : (0, r.jsx)(o.m, {
           text: k,
@@ -70,8 +70,8 @@ function y(e) {
           count: L
         })
       }), D && !j ? (0, r.jsx)(h.A, {
-        className: b.UX,
-        iconOnly: (null == (y = O.upsellLongMessages) ? true : y.iconOnly) || false,
+        className: y.UX,
+        iconOnly: (null == (b = O.upsellLongMessages) ? true : b.iconOnly) || false,
         remaining: L
       }) : null]
     })

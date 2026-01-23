@@ -2,7 +2,7 @@
 /** chunk id: 133684, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./733351.js"), require("./747238.js"), require("./896048.js"), require("./812715.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -51,14 +51,14 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = ":",
+let b = ":",
   O = /(\t|\s)/;
-class A extends Chunk64700.PureComponent {
+class v extends Chunk64700.PureComponent {
   componentDidMount() {
     this.props.disableAutoFocus || (Promise.resolve().then(() => {
       var e;
@@ -218,7 +218,7 @@ class A extends Chunk64700.PureComponent {
       emoji: t,
       addSpace: n = false
     } = e;
-    this.insertText("".concat(y).concat(t.name).concat(y), true, n)
+    this.insertText("".concat(b).concat(t.name).concat(b), true, n)
   }
   getFirstText() {
     return this.props.value
@@ -284,7 +284,7 @@ class A extends Chunk64700.PureComponent {
         let {
           default: e
         } = await n.e("42312").then(n.bind(n, 216603));
-        return t => (0, r.jsx)(e, b(g({}, t), {
+        return t => (0, r.jsx)(e, y(g({}, t), {
           text: (0, p.u)()
         }))
       }, {
@@ -300,4 +300,4 @@ class A extends Chunk64700.PureComponent {
     })
   }
 }
-let v = A
+let A = v

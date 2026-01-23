@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 867624, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,10 +15,10 @@ var Chunk311907 = require("./311907.js"),
   Chunk521732 = require("./521732.js"),
   Chunk985018 = require("./985018.jsx");
 
-function p(e) {
+function h(e) {
   let {
     channel: t
-  } = e, n = (0, l.bG)([s.A], () => s.A.shouldShowTopicsBar());
+  } = e, n = (0, l.bG)([a.A], () => a.A.shouldShowTopicsBar());
   return (0, r.jsx)(c.Ay.Icon, {
     icon: i.Kck,
     onClick: () => {
@@ -28,9 +28,9 @@ function p(e) {
         guild_id: t.guild_id,
         channel_id: t.id,
         channel_type: t.type
-      }), (0, a.Oz)()
+      }), (0, s.Oz)()
     },
-    tooltip: n ? f.intl.string(f.t.nGs3kO) : f.intl.string(f.t.bIm2sF),
+    tooltip: n ? p.intl.string(p.t.nGs3kO) : p.intl.string(p.t.bIm2sF),
     selected: n,
     "aria-expanded": n
   })

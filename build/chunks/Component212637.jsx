@@ -24,14 +24,14 @@ async function _(e) {
     guildId: m,
     closeLayer: g,
     onCloseModal: E,
-    totalNumberOfSlotsToAssign: b = 1,
-    disablePremiumUpsell: y,
+    totalNumberOfSlotsToAssign: y = 1,
+    disablePremiumUpsell: b,
     onSubscribeComplete: O,
-    onSubscriptionConfirmation: A,
-    inPopout: v,
-    applicationId: S,
-    intent: I
-  } = e, T = v ? i.KX8 : i.SYi, C = l.A.getPremiumTypeSubscription();
+    onSubscriptionConfirmation: v,
+    inPopout: A,
+    applicationId: I,
+    intent: S
+  } = e, T = A ? i.KX8 : i.SYi, C = l.A.getPremiumTypeSubscription();
   if (null != C && C.isPurchasedExternally && null != C.paymentGateway) {
     null != g && g(), a.A.show({
       title: f.intl.formatToPlainString(f.t["rTk9v/"], {
@@ -69,13 +69,13 @@ async function _(e) {
         analyticsLocation: _,
         analyticsSourceLocation: null != h ? h : _,
         guildId: m,
-        totalNumberOfSlotsToAssign: b,
+        totalNumberOfSlotsToAssign: y,
         closeGuildPerksModal: g,
-        disablePremiumUpsell: y,
-        onSubscriptionConfirmation: A,
+        disablePremiumUpsell: b,
+        onSubscriptionConfirmation: v,
         onSubscribeComplete: O,
-        applicationId: S,
-        intent: I
+        applicationId: I,
+        intent: S
       })
     }
   }, {

@@ -9,5 +9,5 @@ var Chunk706276 = require("./706276.jsx"),
   Chunk808411 = require("./808411.jsx"),
   Chunk300235 = require("./300235.jsx");
 let s = () => (0, a.jsxs)("div", {
-  children: [(0, a.jsx)(l.o, {}), (0, a.jsx)(i.A, {}), (0, a.jsx)(r.A, {})]
+  children: [(0, a.jsx)(l.o, {}), (0, a.jsx)(r.A, {}), (0, a.jsx)(i.A, {})]
 })

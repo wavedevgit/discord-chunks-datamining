@@ -1,12 +1,12 @@
 /** Chunk was on 87102 **/
-/** chunk id: 243258, original params: e,t,a (module,exports,require) **/
+/** chunk id: 243258, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => S
 }), require("./321073.js"), require("./896048.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  c = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk192308 = require("./192308.js"),
   Chunk397927 = require("./397927.js"),
   Chunk843472 = require("./843472.js"),
@@ -36,174 +36,174 @@ var Chunk627968 = require("./627968.js"),
 function R(e) {
   var t;
   let {
-    clips: a
-  } = e, r = a[0], l = r.thumbnail, i = null;
-  return "" !== l && (i = (0, n.jsx)("div", {
-    className: c()(I.cR, I.JZ),
-    children: (0, n.jsx)(p.Ay, {
-      className: I.xn,
-      src: l,
+    clips: n
+  } = e, l = n[0], i = l.thumbnail, o = null;
+  return "" !== i && (o = (0, r.jsx)("div", {
+    className: a()(A.cR, A.JZ),
+    children: (0, r.jsx)(_.Ay, {
+      className: A.xn,
+      src: i,
       width: 56,
       height: 56
     })
-  }), a.length > 1 && (i = (0, n.jsxs)("div", {
-    className: I.EW,
-    children: [(0, n.jsx)(d.Ay, {
-      mask: d.Ay.Masks.FORWARD_ATTACHMENT_PILE_OVERFLOW,
+  }), n.length > 1 && (o = (0, r.jsxs)("div", {
+    className: A.EW,
+    children: [(0, r.jsx)(p.Ay, {
+      mask: p.Ay.Masks.FORWARD_ATTACHMENT_PILE_OVERFLOW,
       width: 56,
       height: 56,
-      children: i
-    }), (0, n.jsxs)(s.Text, {
-      className: I.mB,
+      children: o
+    }), (0, r.jsxs)(s.Text, {
+      className: A.mB,
       variant: "text-xs/semibold",
       color: "text-default",
-      children: ["+", a.length - 1]
+      children: ["+", n.length - 1]
     })]
-  }))), (0, n.jsxs)("div", {
-    className: I.sq,
-    children: [(0, n.jsx)("div", {
-      className: I.FG,
-      children: (0, n.jsxs)("div", {
-        className: I.kp,
-        children: [(0, n.jsx)(s.SfG, {
+  }))), (0, r.jsxs)("div", {
+    className: A.sq,
+    children: [(0, r.jsx)("div", {
+      className: A.FG,
+      children: (0, r.jsxs)("div", {
+        className: A.kp,
+        children: [(0, r.jsx)(s.SfG, {
           size: "custom",
           width: 20,
           color: s.LU0.colors.TEXT_MUTED
-        }), (0, n.jsx)(s.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-md/medium",
           color: "text-muted",
-          children: 1 === a.length ? null != (t = r.name) ? t : A.intl.string(A.t.Cyxddp) : A.intl.formatToPlainString(A.t.SJ6pPX, {
-            count: a.length
+          children: 1 === n.length ? null != (t = l.name) ? t : E.intl.string(E.t.Cyxddp) : E.intl.formatToPlainString(E.t.SJ6pPX, {
+            count: n.length
           })
         })]
       })
-    }), i]
+    }), o]
   })
 }
 
 function S(e) {
-  var t, a;
+  var t, n;
   let {
-    clips: l,
-    analyticsLocations: c,
-    onClose: d
-  } = e, p = function(e, t) {
+    clips: i,
+    analyticsLocations: a,
+    onClose: p
+  } = e, _ = function(e, t) {
     if (null == e) return {};
-    var a, n, r, l = {};
+    var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (r = 0, a = Reflect.ownKeys(e); r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-      return l
+      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+      return i
     }
-    if (l = function(e, t) {
+    if (i = function(e, t) {
         if (null == e) return {};
-        var a, n, r = {},
-          l = Object.getOwnPropertyNames(e);
-        for (n = 0; n < l.length; n++) a = l[n], !(t.indexOf(a) >= 0) && Object.prototype.propertyIsEnumerable.call(e, a) && (r[a] = e[a]);
-        return r
+        var n, r, l = {},
+          i = Object.getOwnPropertyNames(e);
+        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
+        return l
       }(e, t), Object.getOwnPropertySymbols)
-      for (r = 0, a = Object.getOwnPropertySymbols(e); r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-    return l
-  }(e, ["clips", "analyticsLocations", "onClose"]), I = r.useCallback(async (e, t, a) => {
+      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+    return i
+  }(e, ["clips", "analyticsLocations", "onClose"]), A = l.useCallback(async (e, t, n) => {
     let {
-      withMessage: n,
-      transitionToDestination: r,
-      closeAfterSend: f
+      withMessage: r,
+      transitionToDestination: l,
+      closeAfterSend: u
     } = t;
-    a(true);
+    n(true);
     try {
       let t = [],
-        h = [];
-      for (let e of l) {
-        var p;
-        let a = await (0, P.VO)(e),
-          n = null != (p = e.name) ? p : (0, E.cM)(w.default.extractTimestamp(e.id)),
-          r = (0, v.A)(n);
-        if (e.type === _.nQ.CLIP || e.type === _.nQ.VOICE_CLIP) {
-          let n = "".concat("" !== r ? r : "clip", ".mp4");
-          t.push(new File([a], n, {
+        m = [];
+      for (let e of i) {
+        var _;
+        let n = await (0, P.VO)(e),
+          r = null != (_ = e.name) ? _ : (0, I.cM)(w.default.extractTimestamp(e.id)),
+          l = (0, v.A)(r);
+        if (e.type === x.nQ.CLIP || e.type === x.nQ.VOICE_CLIP) {
+          let r = "".concat("" !== l ? l : "clip", ".mp4");
+          t.push(new File([n], r, {
             type: "video/mp4"
-          })), h.push({
+          })), m.push({
             clip: e
           })
-        } else if (e.type === _.nQ.SCREENSHOT) {
-          let e = "".concat("" !== r ? r : "screenshot", ".jpeg");
-          t.push(new File([a], e, {
+        } else if (e.type === x.nQ.SCREENSHOT) {
+          let e = "".concat("" !== l ? l : "screenshot", ".jpeg");
+          t.push(new File([n], e, {
             type: "image/jpeg"
-          })), h.push({})
+          })), m.push({})
         }
       }
-      let I = (await Promise.all(e.map(y.pk))).filter(j.Vq).filter(e => (0, T.t)(e));
-      if (0 === I.length) {
-        (0, s.showToast)((0, s.createToast)(A.intl.string(A.t.iufib1), s.ToastType.FAILURE)), a(false);
+      let A = (await Promise.all(e.map(h.pk))).filter(O.Vq).filter(e => (0, T.t)(e));
+      if (0 === A.length) {
+        (0, s.showToast)((0, s.createToast)(E.intl.string(E.t.iufib1), s.ToastType.FAILURE)), n(false);
         return
       }
-      for (let e of (f && d(), I)) {
-        let a = m.A.getChannel(e);
-        if (null != a) {
-          for (let e of ((0, x.R)(t, a, O.C.ChannelMessage, {
-              filesMetadata: h,
+      for (let e of (u && p(), A)) {
+        let n = b.A.getChannel(e);
+        if (null != n) {
+          for (let e of ((0, j.R)(t, n, y.C.ChannelMessage, {
+              filesMetadata: m,
               origin: "unknown:clip_share",
               requireConfirm: false
-            }), l)) g.default.track(k.HAw.CLIP_SHARED, {
-            location_stack: c,
-            guild_id: a.guild_id,
-            channel_id: a.id,
-            channel_type: a.type,
+            }), i)) g.default.track(k.HAw.CLIP_SHARED, {
+            location_stack: a,
+            guild_id: n.guild_id,
+            channel_id: n.id,
+            channel_type: n.type,
             application_id: e.applicationId,
             clip_id: e.id
           });
-          null != n && "" !== n.trim() && await o.A.sendMessage(a.id, u.Ay.parse(a, n), false, {
+          null != r && "" !== r.trim() && await c.A.sendMessage(n.id, d.Ay.parse(n, r), false, {
             location: C.Hx.FORWARDING
           })
         }
       }
-      r && 1 === I.length && ((0, b.iN)(I[0], {
+      l && 1 === A.length && ((0, f.iN)(A[0], {
         openTextInVoiceIfVoiceChannel: true
-      }), i.closeAllModals())
+      }), o.closeAllModals())
     } catch (e) {
-      (0, s.showToast)((0, s.createToast)(A.intl.string(A.t.iufib1), s.ToastType.FAILURE))
+      (0, s.showToast)((0, s.createToast)(E.intl.string(E.t.iufib1), s.ToastType.FAILURE))
     } finally {
-      a(false)
+      n(false)
     }
-  }, [l, c, d]), S = r.useCallback(e => {
-    if (e instanceof h.YB && !(0, T.t)(e.id)) return {
-      label: A.intl.string(A.t.iufib1)
+  }, [i, a, p]), S = l.useCallback(e => {
+    if (e instanceof m.YB && !(0, T.t)(e.id)) return {
+      label: E.intl.string(E.t.iufib1)
     }
   }, []);
-  return (0, n.jsx)(f.ForwardModal, (t = function(e) {
+  return (0, r.jsx)(u.ForwardModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var a = null != arguments[t] ? arguments[t] : {},
-        n = Object.keys(a);
-      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(a, e).enumerable
-      }))), n.forEach(function(t) {
-        var n;
-        n = a[t], t in e ? Object.defineProperty(e, t, {
-          value: n,
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = n
+        }) : e[t] = r
       })
     }
     return e
-  }({}, p), a = a = {
-    onClose: d,
-    customTitle: A.intl.string(A.t.I8lglT),
-    customSubtitle: A.intl.string(A.t.Ey7mOU),
-    customPreview: (0, n.jsx)(R, {
-      clips: l
+  }({}, _), n = n = {
+    onClose: p,
+    customTitle: E.intl.string(E.t.I8lglT),
+    customSubtitle: E.intl.string(E.t.Ey7mOU),
+    customPreview: (0, r.jsx)(R, {
+      clips: i
     }),
-    customSendHandler: I,
+    customSendHandler: A,
     customValidateDestination: S
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-    var a = Object.keys(e);
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      a.push.apply(a, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return a
-  })(Object(a)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(a, e))
+    return n
+  })(Object(n)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 }

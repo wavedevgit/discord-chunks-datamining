@@ -15,11 +15,11 @@ function u(e) {
   let {
     hasRequestedStartTimes: t,
     startTime: n
-  } = (0, i.cf)([s.A], () => ({
-    hasRequestedStartTimes: s.A.hasRequestedStartTimes(e.guild_id),
-    startTime: s.A.getStartTime(e)
-  })), u = (0, o.a)(e.guild_id, "useStartTime"), d = ((0, l.un)() || (0, l.m0)()) && !u, f = e.type === c.rbe.GUILD_VOICE;
+  } = (0, i.cf)([a.A], () => ({
+    hasRequestedStartTimes: a.A.hasRequestedStartTimes(e.guild_id),
+    startTime: a.A.getStartTime(e)
+  })), u = (0, o.a)(e.guild_id, "useStartTime"), d = ((0, l.un)() || (0, l.m0)()) && !u, p = e.type === c.rbe.GUILD_VOICE;
   return r.useEffect(() => {
-    t || !f || d || (0, a.U)(e.guild_id)
-  }, [f, e.guild_id, t, d]), n
+    t || !p || d || (0, s.U)(e.guild_id)
+  }, [p, e.guild_id, t, d]), n
 }

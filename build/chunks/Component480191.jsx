@@ -84,13 +84,13 @@ function G(e) {
     channel: V
   } = e, F = i.useRef(null), B = i.useRef(null), H = (0, R.D)(k, G), {
     setPopout: Y
-  } = (0, b.A)(G.id, P.Fd), W = (0, E.VL)(G, V, Y, true), K = A.kt.useSetting(), z = (0, C.j)(), [q, X] = i.useState(false), [Z, Q] = i.useState((null == H ? true : H.coverImage) == null), $ = (0, l.bG)([v.Ay, S.default], () => {
+  } = (0, y.A)(G.id, P.Fd), W = (0, E.VL)(G, V, Y, true), K = v.kt.useSetting(), z = (0, C.j)(), [q, X] = i.useState(false), [Z, Q] = i.useState((null == H ? true : H.coverImage) == null), $ = (0, l.bG)([A.Ay, I.default], () => {
     var e;
-    return v.Ay.isMember(null == H ? true : H.guildId, null == (e = S.default.getCurrentUser()) ? true : e.id)
-  }, [H]), J = (0, l.bG)([v.Ay], () => (null == H ? true : H.authorId) != null ? v.Ay.getMember(H.guildId, H.authorId) : null), ee = (0, p.A)((null == J ? true : J.avatarDecoration) != null ? null == J ? true : J.avatarDecoration : null == H || null == (a = H.user) ? true : a.avatarDecoration), [et, en, er] = i.useMemo(() => {
+    return A.Ay.isMember(null == H ? true : H.guildId, null == (e = I.default.getCurrentUser()) ? true : e.id)
+  }, [H]), J = (0, l.bG)([A.Ay], () => (null == H ? true : H.authorId) != null ? A.Ay.getMember(H.guildId, H.authorId) : null), ee = (0, p.A)((null == J ? true : J.avatarDecoration) != null ? null == J ? true : J.avatarDecoration : null == H || null == (a = H.user) ? true : a.avatarDecoration), [et, en, er] = i.useMemo(() => {
     var e, t;
     return [null != (e = null == J ? true : J.colorString) ? e : "inherit", null != (t = null == J ? true : J.colorStrings) ? t : null, null == J ? true : J.colorRoleId]
-  }, [J]), ei = (0, y.gn)(null == J ? true : J.guildId, null != (t = null == H ? true : H.authorId) ? t : true, en), {
+  }, [J]), ei = (0, b.gn)(null == J ? true : J.guildId, null != (t = null == H ? true : H.authorId) ? t : true, en), {
     reducedMotion: ea
   } = i.useContext(u.CZY), [es, eo] = i.useState(false), el = i.useCallback(() => {
     X(true)
@@ -107,7 +107,7 @@ function G(e) {
     }))
   }, [H, V, $]);
   if (null == H) return null;
-  let ed = (0, I.F_)({
+  let ed = (0, S.F_)({
       avatarDecoration: ee,
       size: (0, _.Te)(u._3J.SIZE_40),
       canAnimate: es

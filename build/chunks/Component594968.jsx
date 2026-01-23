@@ -30,17 +30,17 @@ function y(e) {
     applicationId: l,
     isGameRelationship: o,
     active: c
-  } = e, u = (null == (t = f.default.getCurrentUser()) ? true : t.isStaff()) && (null == n ? true : n.isStaff()), {
+  } = e, u = (null == (t = h.default.getCurrentUser()) ? true : t.isStaff()) && (null == n ? true : n.isStaff()), {
     acceptFriendRequest: d,
     cancelFriendRequest: p
-  } = (0, A.I)({
+  } = (0, f.I)({
     userId: n.id,
     applicationId: l,
     isGameRelationship: o,
     location: "Friends"
-  }), h = i.useCallback(e => {
+  }), g = i.useCallback(e => {
     e.stopPropagation(), d()
-  }, [d]), m = i.useCallback(e => {
+  }, [d]), A = i.useCallback(e => {
     e.stopPropagation(), p()
   }, [p]);
   return (0, r.jsxs)(r.Fragment, {
@@ -50,17 +50,17 @@ function y(e) {
         color: a.A.unsafe_rawColors.BRAND_500.css,
         text: E.intl.string(E.t.oMx98L)
       })
-    }), (0, r.jsx)(g.A, {
+    }), (0, r.jsx)(m.A, {
       icon: s.A9s,
-      actionType: g.A.ActionTypes.ACCEPT,
+      actionType: m.A.ActionTypes.ACCEPT,
       tooltip: E.intl.string(E.t.Zcibdf),
-      onClick: h,
+      onClick: g,
       shouldHighlight: c
-    }), (0, r.jsx)(g.A, {
+    }), (0, r.jsx)(m.A, {
       icon: s.PGe,
-      actionType: g.A.ActionTypes.DENY,
+      actionType: m.A.ActionTypes.DENY,
       tooltip: E.intl.string(E.t.xuio0C),
-      onClick: m,
+      onClick: A,
       shouldHighlight: c
     })]
   })
@@ -74,7 +74,7 @@ function I(e) {
     active: a
   } = e, {
     cancelFriendRequest: o
-  } = (0, A.I)({
+  } = (0, f.I)({
     userId: t,
     applicationId: n,
     isGameRelationship: l,
@@ -82,9 +82,9 @@ function I(e) {
   }), c = i.useCallback(e => {
     e.stopPropagation(), o()
   }, [o]);
-  return (0, r.jsx)(g.A, {
+  return (0, r.jsx)(m.A, {
     icon: s.PGe,
-    actionType: g.A.ActionTypes.DENY,
+    actionType: m.A.ActionTypes.DENY,
     tooltip: E.intl.string(E.t.eaq81S),
     onClick: c,
     shouldHighlight: a
@@ -97,24 +97,24 @@ function v(e) {
     applicationId: n,
     userTag: a,
     isProvisional: o
-  } = e, p = i.useMemo(() => t ? E.intl.string(E.t["Uv/eTx"]) : a, [t, a]), f = (0, l.bG)([c.A], () => null != n ? c.A.getApplication(n) : null);
+  } = e, p = i.useMemo(() => t ? E.intl.string(E.t["Uv/eTx"]) : a, [t, a]), h = (0, l.bG)([c.A], () => null != n ? c.A.getApplication(n) : null);
   return (0, r.jsxs)("div", {
     className: O.P9,
     children: [!o && (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "text-subtle",
       children: p
-    }), null != f && (0, r.jsxs)(r.Fragment, {
+    }), null != h && (0, r.jsxs)(r.Fragment, {
       children: [!o && (0, r.jsx)(d.A, {
         height: 2,
         width: 2
       }), (0, r.jsx)(u.A, {
-        game: f,
+        game: h,
         size: u.M.XXSMALL
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-subtle",
-        children: f.name
+        children: h.name
       })]
     })]
   })
@@ -127,8 +127,8 @@ function S(e) {
     status: i,
     isGameRelationship: l,
     applicationId: a
-  } = e, s = h.Ay.useUserTag(t);
-  return (0, r.jsx)(b.A, {
+  } = e, s = g.Ay.useUserTag(t);
+  return (0, r.jsx)(_.A, {
     user: t,
     hovered: n,
     status: i,
@@ -152,14 +152,14 @@ function C(e) {
     isGameRelationship: c
   } = e, {
     analyticsLocations: u
-  } = (0, o.Ay)(), d = l === _.clD.OFFLINE ? _.clD.UNKNOWN : l, f = i.useCallback(() => (0, p.openUserProfileModal)({
+  } = (0, o.Ay)(), d = l === b.clD.OFFLINE ? b.clD.UNKNOWN : l, h = i.useCallback(() => (0, p.openUserProfileModal)({
     userId: t.id,
     sourceAnalyticsLocations: u
   }), [u, t.id]);
-  return (0, r.jsx)(m.A, {
+  return (0, r.jsx)(A.A, {
     isFocused: a,
     user: t,
-    onClick: f,
+    onClick: h,
     children: e => (0, r.jsxs)("div", {
       className: O.a4,
       children: [(0, r.jsx)(S, {
@@ -170,7 +170,7 @@ function C(e) {
         applicationId: s
       }), (0, r.jsx)("div", {
         className: O.o1,
-        children: n === _.eA$.PENDING_INCOMING ? (0, r.jsx)(y, {
+        children: n === b.eA$.PENDING_INCOMING ? (0, r.jsx)(y, {
           user: t,
           applicationId: s,
           isGameRelationship: c,

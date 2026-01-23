@@ -2,7 +2,7 @@
 /** chunk id: 735305, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  x: () => y
+  x: () => b
 });
 var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
@@ -56,11 +56,11 @@ function E(e, t) {
   }), e
 }
 
-function b(e, t, n) {
+function y(e, t, n) {
   return (0, l.isDesktop)() && null != e && [_.pe.TIER_0, _.pe.TIER_2].includes(e) && !t && null == n
 }
 
-function y(e) {
+function b(e) {
   let {
     analyticsData: t,
     initialPlanId: n,
@@ -70,12 +70,12 @@ function y(e) {
     continueSessionToInitialStep: h
   } = e, {
     contextMetadata: g,
-    step: y,
+    step: b,
     paymentSources: O,
-    paymentSourceId: A,
-    setPaymentSourceId: v,
-    purchaseError: S,
-    setPurchaseError: I,
+    paymentSourceId: v,
+    setPaymentSourceId: A,
+    purchaseError: I,
+    setPurchaseError: S,
     purchaseErrorBlockRef: T,
     paymentAuthenticationState: C,
     selectedSkuId: N,
@@ -89,10 +89,10 @@ function y(e) {
     isGift: j
   } = (0, c.Pv)(), M = E(m({}, (0, s.KP)()), {
     paymentSources: O,
-    paymentSourceId: A,
-    setPaymentSourceId: v,
-    purchaseError: S,
-    setPurchaseError: I,
+    paymentSourceId: v,
+    setPaymentSourceId: A,
+    purchaseError: I,
+    setPurchaseError: S,
     purchaseErrorBlockRef: T,
     paymentAuthenticationState: C,
     selectedSkuId: N,
@@ -102,8 +102,8 @@ function y(e) {
       trackedFromStep: D ? d.pn.PAYMENT_ELEMENT : d.pn.PAYMENT_TYPE
     })
   }, U = null != _ ? _ : k;
-  i()(y, "Step should be set here");
-  let G = (0, a.A)(() => Date.now(), [y]),
+  i()(b, "Step should be set here");
+  let G = (0, a.A)(() => Date.now(), [b]),
     V = (0, a.A)(() => null != h && null == w.current ? D ? d.pn.PAYMENT_ELEMENT : h : D ? d.pn.PAYMENT_ELEMENT : d.pn.PAYMENT_TYPE, [h, w.current, D]);
   return (0, s.Y)({
     paymentModalArgs: M,
@@ -111,7 +111,7 @@ function y(e) {
     prependSteps: [d.pn.PROMOTION_INFO],
     appendSteps: [d.pn.REVIEW, d.pn.CONFIRM],
     breadcrumpSteps: r,
-    currentBreadcrumpStep: y,
+    currentBreadcrumpStep: b,
     usePaymentModalStep: true,
     analyticsData: t,
     onReturn: x ? true : U,
@@ -135,7 +135,7 @@ function y(e) {
       }))
     },
     isEligibleForTrial: L,
-    allowDesktopRedirectPurchase: b(N, j, R),
+    allowDesktopRedirectPurchase: y(N, j, R),
     continueSessionToInitialStep: h
   })
 }

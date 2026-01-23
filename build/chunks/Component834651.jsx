@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 834651, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  j: () => g
+  j: () => m
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,30 +18,30 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk719931 = require("./719931.js");
 
-function g(e) {
+function m(e) {
   let {
     guild: t,
     disabledUntil: n
-  } = e, [g, m] = (0, d.n)(t.id), A = (0, l.bG)([c.Ay, o.default], () => c.Ay.getMember(t.id, o.default.getId()), [t.id]);
+  } = e, [m, b] = (0, d.n)(t.id), A = (0, l.bG)([c.Ay, o.default], () => c.Ay.getMember(t.id, o.default.getId()), [t.id]);
   return (0, u.X)(A), (0, r.jsxs)("div", {
-    children: [g ? (0, r.jsx)(f.A, {
-      onClose: () => m(t.id),
+    children: [m ? (0, r.jsx)(p.A, {
+      onClose: () => b(t.id),
       guildName: t.name
-    }) : null, (0, r.jsx)(s._, {
+    }) : null, (0, r.jsx)(a._, {
       bannerIcon: (0, r.jsx)(i.gQi, {
         size: "md",
         color: "currentColor",
-        className: b.q3
+        className: g.q3
       }),
-      bannerHeader: h.intl.string(h.t["9UoK6Y"]),
-      bannerSubtext: h.intl.format(h.t["4ZwD5G"], {
-        link: p.MO
+      bannerHeader: f.intl.string(f.t["9UoK6Y"]),
+      bannerSubtext: f.intl.format(f.t["4ZwD5G"], {
+        link: h.MO
       }),
-      textStyles: b.cI,
-      headerStyles: b.U_,
+      textStyles: g.cI,
+      headerStyles: g.U_,
       children: (0, r.jsx)(i.Text, {
         variant: "text-sm/semibold",
-        children: (0, r.jsx)(a.A, {
+        children: (0, r.jsx)(s.A, {
           deadline: new Date(n),
           showUnits: true,
           stopAtOneSec: true

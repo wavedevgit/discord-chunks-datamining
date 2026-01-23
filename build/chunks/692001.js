@@ -17,21 +17,21 @@ module.exports = function(e, t, n, a, s) {
   var m = d.get("start"),
     g = h.get("start"),
     E = d ? m + n : null,
-    b = h ? g + s : null;
-  if (o.getAnchorKey() === c && o.getAnchorOffset() === E && o.getFocusKey() === p && o.getFocusOffset() === b) return o;
-  var y = false;
+    y = h ? g + s : null;
+  if (o.getAnchorKey() === c && o.getAnchorOffset() === E && o.getFocusKey() === p && o.getFocusOffset() === y) return o;
+  var b = false;
   if (c === p) {
     var O = d.get("end"),
-      A = h.get("end");
-    y = g === m && A === O ? s < n : g < m
-  } else y = e.getCurrentContent().getBlockMap().keySeq().skipUntil(function(e) {
+      v = h.get("end");
+    b = g === m && v === O ? s < n : g < m
+  } else b = e.getCurrentContent().getBlockMap().keySeq().skipUntil(function(e) {
     return e === c || e === p
   }).first() === p;
   return o.merge({
     anchorKey: c,
     anchorOffset: E,
     focusKey: p,
-    focusOffset: b,
-    isBackward: y
+    focusOffset: y,
+    isBackward: b
   })
 }

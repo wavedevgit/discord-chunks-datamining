@@ -40,15 +40,15 @@ function g(e) {
   } = e, {
     ref: g,
     width: E
-  } = (0, c.Ay)(), b = i.useMemo(() => null != E ? m(E) : 0, [E]), y = i.useMemo(() => {
-    let e = Math.abs(m(b * (100 - Math.max(0, Math.min(100, n))) / 100) - b);
+  } = (0, c.Ay)(), y = i.useMemo(() => null != E ? m(E) : 0, [E]), b = i.useMemo(() => {
+    let e = Math.abs(m(y * (100 - Math.max(0, Math.min(100, n))) / 100) - y);
     return {
       transform: "translateX(".concat(e, "px)")
     }
-  }, [n, b]), O = i.useMemo(() => ({
-    width: "".concat(b, "px"),
+  }, [n, y]), O = i.useMemo(() => ({
+    width: "".concat(y, "px"),
     background: n <= 0 ? "none" : "linear-gradient(to right, ".concat(a, ", ").concat(l, ")")
-  }), [l, a, n, b]);
+  }), [l, a, n, y]);
   return (0, r.jsxs)("div", {
     className: f.iE,
     ref: g,
@@ -57,9 +57,9 @@ function g(e) {
       style: O,
       children: [(0, r.jsx)("div", {
         className: f.qB,
-        style: y
-      }), 0 !== b && (0, r.jsx)(u.A, {
-        width: b,
+        style: b
+      }), 0 !== y && (0, r.jsx)(u.A, {
+        width: y,
         className: s()(f.DR, h[t], p)
       })]
     }), _]

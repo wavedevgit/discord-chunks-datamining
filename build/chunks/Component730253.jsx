@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk837381 = require("./837381.jsx"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -61,49 +61,49 @@ let R = {
 
 function D() {
   var e, t;
-  let i, D, M, L, G, k, U, V, F, H, B, K, W = (0, s.Vd)("favorites"),
+  let i, D, M, L, k, G, U, B, V, F, H, K, W = (0, a.Vd)("favorites"),
     {
       favoriteAdded: z,
       clearFavoriteAdded: Y
-    } = (0, _.CJ)(),
+    } = (0, E.CJ)(),
     [q, X] = l.useState(false),
     {
       favoriteServerMuted: J,
       favoriteChannels: Q
-    } = (0, o.cf)([E.A], () => ({
-      favoriteChannels: E.A.getFavoriteChannels(),
-      favoriteServerMuted: E.A.favoriteServerMuted
+    } = (0, o.cf)([x.A], () => ({
+      favoriteChannels: x.A.getFavoriteChannels(),
+      favoriteServerMuted: x.A.favoriteServerMuted
     })),
-    Z = (0, o.bG)([j.A], () => j.A.getChannelId(N.YYv)),
-    $ = (0, o.bG)([O.A], () => O.A.getChannel(Z)),
+    Z = (0, o.bG)([O.A], () => O.A.getChannelId(N.YYv)),
+    $ = (0, o.bG)([_.A], () => _.A.getChannel(Z)),
     ee = (0, A.A)(e => e.guildId) === N.YYv,
     {
       badge: et,
       unread: en
     } = (0, C.A)(Q),
-    er = (D = null != (i = (0, o.bG)([j.A], () => j.A.getVoiceChannelId())) && null != Q[i], M = (0, o.bG)([y.A], () => {
+    er = (D = null != (i = (0, o.bG)([O.A], () => O.A.getVoiceChannelId())) && null != Q[i], M = (0, o.bG)([y.A], () => {
       if (!D) returnfalse;
       let e = y.A.getCurrentUserActiveStream();
       return null != e && null != Q[e.channelId]
-    }), L = (0, o.bG)([y.A], () => y.A.getAllApplicationStreams().some(e => null != Q[e.channelId])), G = (0, o.bG)([v.A], () => D && null != i && v.A.hasVideo(i), [D, i]), k = (0, o.yK)([f.Ay], () => x.default.keys(Q).reduce((e, t) => (e.push(...f.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), U = (0, o.bG)([f.Ay], () => Array.from(f.Ay.getSelfEmbeddedActivities().values()).some(e => {
+    }), L = (0, o.bG)([y.A], () => y.A.getAllApplicationStreams().some(e => null != Q[e.channelId])), k = (0, o.bG)([j.A], () => D && null != i && j.A.hasVideo(i), [D, i]), G = (0, o.yK)([p.Ay], () => v.default.keys(Q).reduce((e, t) => (e.push(...p.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), U = (0, o.bG)([p.Ay], () => Array.from(p.Ay.getSelfEmbeddedActivities().values()).some(e => {
       let {
         location: t
-      } = e, n = (0, p.H)(t);
+      } = e, n = (0, h.H)(t);
       return null != n && null != Q[n]
-    })), V = k.length > 0, F = false, H = false, B = false, K = false, D ? (F = !G, H = G, B = M, K = U) : (B = L, K = V), (0, g.oi)({
-      audio: F,
-      video: H,
-      screenshare: B,
+    })), B = G.length > 0, V = false, F = false, H = false, K = false, D ? (V = !k, F = k, H = M, K = U) : (H = L, K = B), (0, m.oi)({
+      audio: V,
+      video: F,
+      screenshare: H,
       liveStage: false,
       isCurrentUserConnected: D,
       activity: K
     })),
-    el = et > 0 ? (0, m.w)(et) : null,
+    el = et > 0 ? (0, b.w)(et) : null,
     ei = l.useCallback(() => {
       Y()
     }, [Y]);
-  return (0, r.jsxs)(b.c, {
-    children: [(0, r.jsx)(h.A, {
+  return (0, r.jsxs)(g.c, {
+    children: [(0, r.jsx)(f.A, {
       selected: ee,
       hovered: q,
       unread: en && !J,
@@ -140,7 +140,7 @@ function D() {
               })
             },
             children: (0, r.jsx)("div", {
-              className: a()(P.hN, {
+              className: s()(P.hN, {
                 [P.b1]: z
               }),
               children: (0, r.jsx)(c.Gg5, {

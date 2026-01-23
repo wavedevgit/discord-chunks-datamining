@@ -13,13 +13,13 @@ var Chunk64700 = require("./64700.js"),
 
 function d(e, t, n, d) {
   let u = r.useRef(null),
-    [f, b] = r.useState(false);
+    [m, f] = r.useState(false);
   return {
-    handleCopyServerIp: r.useCallback(() => (null != u.current && clearTimeout(u.current), (0, c.ed)(e, t, n), (0, i.C)(null != d ? d : ""), (0, l.showToast)((0, a.o)(o.intl.string(o.t["+5kSoW"]), l.ToastType.SUCCESS)), b(true), u.current = setTimeout(() => {
-      b(false)
+    handleCopyServerIp: r.useCallback(() => (null != u.current && clearTimeout(u.current), (0, o.ed)(e, t, n), (0, l.C)(null != d ? d : ""), (0, i.showToast)((0, a.o)(c.intl.string(c.t["+5kSoW"]), i.ToastType.SUCCESS)), f(true), u.current = setTimeout(() => {
+      f(false)
     }, 2 * s.A.Millis.SECOND), () => {
       null != u.current && clearTimeout(u.current)
     }), [e, t, n, d]),
-    animateCopyIcon: f
+    animateCopyIcon: m
   }
 }

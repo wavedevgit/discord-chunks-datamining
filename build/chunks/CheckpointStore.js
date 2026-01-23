@@ -60,11 +60,11 @@ function E(e) {
   u = e.data, d = 2
 }
 
-function b() {
+function y() {
   d = 3
 }
 
-function y(e) {
+function b(e) {
   _.volume = e.volume
 }
 
@@ -72,18 +72,18 @@ function O() {
   _.isMuted = !_.isMuted
 }
 
-function A(e) {
+function v(e) {
   _.highestSlideSeen = e.slide
 }
 
-function v() {
+function A() {
   f = true
 }
 
-function S() {
+function I() {
   _.hasSeenRewatchPopover = true
 }
-class I extends(r = Chunk311907.Ay.PersistedStore) {
+class S extends(r = Chunk311907.Ay.PersistedStore) {
   getState() {
     return _
   }
@@ -112,15 +112,15 @@ class I extends(r = Chunk311907.Ay.PersistedStore) {
     return f
   }
 }
-o(I, "displayName", "CheckpointStore"), o(I, "persistKey", "CheckpointStore");
-let T = new I(Chunk73153.h, {
+o(S, "displayName", "CheckpointStore"), o(S, "persistKey", "CheckpointStore");
+let T = new S(Chunk73153.h, {
   CHECKPOINT_FETCH_START: g,
   CHECKPOINT_FETCH_SUCCESS: E,
-  CHECKPOINT_FETCH_FAILED: b,
-  CHECKPOINT_SET_VOLUME: y,
+  CHECKPOINT_FETCH_FAILED: y,
+  CHECKPOINT_SET_VOLUME: b,
   CHECKPOINT_TOGGLE_MUTE: O,
-  CHECKPOINT_SET_HIGHEST_SLIDE_SEEN: A,
-  CHECKPOINT_AFTER_CLOSED: v,
-  CHECKPOINT_SET_HAS_SEEN_REWATCH_POPOVER: S,
+  CHECKPOINT_SET_HIGHEST_SLIDE_SEEN: v,
+  CHECKPOINT_AFTER_CLOSED: A,
+  CHECKPOINT_SET_HAS_SEEN_REWATCH_POPOVER: I,
   LOGOUT: m
 })

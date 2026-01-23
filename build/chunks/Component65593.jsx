@@ -1,7 +1,7 @@
 /** Chunk was on 67096 **/
 /** chunk id: 65593, original params: e,A,t (module,exports,require) **/
 require.d(exports, {
-  A: () => v
+  A: () => h
 }), require("./228524.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,7 +15,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk893221 = require("./893221.js"),
   Chunk162253 = require("./162253.js");
 
-function f(e, A, t) {
+function p(e, A, t) {
   return A in e ? Object.defineProperty(e, A, {
     value: t,
     enumerable: true,
@@ -23,28 +23,28 @@ function f(e, A, t) {
     writable: true
   }) : e[A] = t, e
 }
-let p = new Chunk626584.A("UploadArea");
+let f = new Chunk626584.A("UploadArea");
 
 function m() {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)("div", {
-      className: a()(g.sG, u.sparkleOne)
+      className: a()(g.sG, c.sparkleOne)
     }), (0, r.jsx)("div", {
-      className: a()(g.sG, u.sparkleTwo)
+      className: a()(g.sG, c.sparkleTwo)
     }), (0, r.jsx)("div", {
-      className: a()(g.GK, u.lightOne)
+      className: a()(g.GK, c.lightOne)
     }), (0, r.jsx)("div", {
-      className: a()(g.GK, u.lightTwo)
+      className: a()(g.GK, c.lightTwo)
     }), (0, r.jsx)("div", {
-      className: a()(g.cp, u.crossOne)
+      className: a()(g.cp, c.crossOne)
     }), (0, r.jsx)("div", {
-      className: a()(g.cp, u.crossTwo)
+      className: a()(g.cp, c.crossTwo)
     }), (0, r.jsx)("div", {
-      className: a()(g.Tp, u.popOne)
+      className: a()(g.Tp, c.popOne)
     })]
   })
 }
-class b extends Chunk64700.Component {
+class v extends Chunk64700.Component {
   componentDidMount() {
     let e = this.elementDOMRef.current;
     null != e && (e.ownerDocument.body.addEventListener("dragover", this.handleDragOver, false), e.ownerDocument.body.addEventListener("drop", this.handleDragLeave, false), e.addEventListener("dragover", this.handleDragOverZone, false), e.addEventListener("dragleave", this.handleDragLeaveZone, false), e.addEventListener("drop", this.handleDrop, false))
@@ -63,24 +63,24 @@ class b extends Chunk64700.Component {
     } = this.props;
     return (0, r.jsx)("div", {
       ref: this.elementDOMRef,
-      className: a()(l, u.uploadArea, {
-        [u.droppable]: this.state.isDragging,
-        [u.uploadModalIn]: this.state.isOverZone
+      className: a()(l, c.uploadArea, {
+        [c.droppable]: this.state.isDragging,
+        [c.uploadModalIn]: this.state.isOverZone
       }),
       style: n,
       children: (0, r.jsxs)("div", {
-        className: u.uploadDropModal,
+        className: c.uploadDropModal,
         children: [this.state.isDragging && (0, r.jsx)(m, {}), (0, r.jsx)("div", {
-          className: u.bgScale
+          className: c.bgScale
         }), (0, r.jsxs)("div", {
-          className: u.inner,
-          children: [(0, r.jsx)(o.A, {
+          className: c.inner,
+          children: [(0, r.jsx)(s.A, {
             icons: t
           }), (0, r.jsx)("div", {
-            className: u.title,
+            className: c.title,
             children: e
           }), (0, r.jsx)("div", {
-            className: u.instructions,
+            className: c.instructions,
             children: (0, r.jsx)("pre", {
               children: A
             })
@@ -91,18 +91,18 @@ class b extends Chunk64700.Component {
   }
   constructor(...e) {
     var A;
-    super(...e), A = this, f(this, "state", {
+    super(...e), A = this, p(this, "state", {
       isDragging: false,
       isOverZone: false
-    }), f(this, "dragOverTimeout", null), f(this, "elementDOMRef", n.createRef()), f(this, "isAllDropFiles", e => {
+    }), p(this, "dragOverTimeout", null), p(this, "elementDOMRef", n.createRef()), p(this, "isAllDropFiles", e => {
       for (let t = 0; t < e.length; t++) try {
         var A;
         let r = null != (A = e[t].webkitGetAsEntry()) ? A : e[t].getAsEntry();
-        if (null == r) return p.warn("Dropped item is null or undefined"), false;
+        if (null == r) return f.warn("Dropped item is null or undefined"), false;
         if (!r.isFile) returnfalse
       } catch (e) {}
       returntrue
-    }), f(this, "preventUnwantedDrop", function(e) {
+    }), p(this, "preventUnwantedDrop", function(e) {
       let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
         r = e.dataTransfer;
       if (null == r) returntrue;
@@ -111,10 +111,10 @@ class b extends Chunk64700.Component {
       return !n && !l || (e.stopPropagation(), e.preventDefault(), r.effectAllowed = "none", r.dropEffect = "none", t && (A.setState({
         isDragging: false
       }), (0, d.openUploadError)({
-        title: c.intl.string(c.t.azO1Pe),
-        help: c.intl.string(c.t["Koklr/"])
+        title: u.intl.string(u.t.azO1Pe),
+        help: u.intl.string(u.t["Koklr/"])
       })), false)
-    }), f(this, "handleDragOver", e => {
+    }), p(this, "handleDragOver", e => {
       var A, t, r;
       if (!this.preventUnwantedDrop(e)) returnfalse;
       let n = e.dataTransfer;
@@ -132,23 +132,23 @@ class b extends Chunk64700.Component {
           }), null == (e = (A = this.props).onDragClear) || e.call(A)
         }, 1e3)
       }
-    }), f(this, "handleDragOverZone", () => {
+    }), p(this, "handleDragOverZone", () => {
       this.setState({
         isOverZone: true
       })
-    }), f(this, "handleDragLeaveZone", () => {
+    }), p(this, "handleDragLeaveZone", () => {
       this.setState({
         isOverZone: false
       })
-    }), f(this, "handleDragLeave", e => {
+    }), p(this, "handleDragLeave", e => {
       this.state.isDragging && (e.stopPropagation(), e.preventDefault(), this.clearDragging())
-    }), f(this, "clearDragging", () => {
+    }), p(this, "clearDragging", () => {
       var e, A;
       this.setState({
         isDragging: false,
         isOverZone: false
       }), null == (e = (A = this.props).onDragClear) || e.call(A)
-    }), f(this, "handleDrop", e => {
+    }), p(this, "handleDrop", e => {
       if (!this.preventUnwantedDrop(e, true)) returnfalse;
       let A = e.dataTransfer;
       if (null == A) returntrue;
@@ -156,4 +156,4 @@ class b extends Chunk64700.Component {
     })
   }
 }
-let v = b
+let h = v

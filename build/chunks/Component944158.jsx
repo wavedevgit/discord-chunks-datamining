@@ -37,9 +37,9 @@ function m() {
       label: e,
       value: e
     })), []);
-  return (0, a.jsxs)(i.nVY, {
+  return (0, a.jsxs)(r.nVY, {
     label: "Settings Navigation Tool",
-    children: [(0, a.jsx)(r.ZiE, {
+    children: [(0, a.jsx)(i.ZiE, {
       label: "Setting (Redesign)",
       placeholder: "Select a setting",
       value: e,
@@ -48,7 +48,7 @@ function m() {
       }),
       options: m,
       selectionMode: "single"
-    }), (0, a.jsx)(r.ZiE, {
+    }), (0, a.jsx)(i.ZiE, {
       label: "Setting Section (Legacy)",
       value: t,
       onSelectionChange: e => u.setState({
@@ -56,13 +56,13 @@ function m() {
       }),
       options: p,
       selectionMode: "single"
-    }), (0, a.jsx)(r.ksK, {
+    }), (0, a.jsx)(i.ksK, {
       label: "Setting Subsection (Legacy)",
       placeholder: "Type a subsection...",
       onChange: e => u.setState({
         subsection: e
       })
-    }), (0, a.jsx)(i.$nd, {
+    }), (0, a.jsx)(r.$nd, {
       variant: "primary",
       onClick: s,
       text: "Open User Settings"

@@ -39,14 +39,14 @@ let C = "dismissedCommunityFeaturesUpsell",
         guild: t,
         submitting: n,
         errors: i
-      } = (0, l.cf)([A.A], () => ({
-        submitting: A.A.isSubmitting(),
-        guild: A.A.getGuild(),
-        errors: A.A.getErrors()
+      } = (0, l.cf)([y.A], () => ({
+        submitting: y.A.isSubmitting(),
+        guild: y.A.getGuild(),
+        errors: y.A.getErrors()
       })),
       s = Object.keys(i),
       a = s.length > 0 ? s[0] : null;
-    return e = "rules_channel_id" === a ? S.intl.string(S.t["7IrBYt"]) : null != a ? i[a] : true, (0, r.jsx)(c.A, {
+    return e = "rules_channel_id" === a ? S.intl.string(S.t["7IrBYt"]) : null != a ? i[a] : true, (0, r.jsx)(o.A, {
       submitting: n,
       onReset: () => {
         null != t && v.A.init(t.id)
@@ -68,47 +68,47 @@ let C = "dismissedCommunityFeaturesUpsell",
     let {
       discoveryEnabled: t,
       onboardingEnabled: n,
-      guild: c
-    } = e, [o, d] = i.useState(true === a.w.get(C)), b = (0, l.bG)([x.A], () => {
+      guild: o
+    } = e, [c, d] = i.useState(true === a.w.get(C)), p = (0, l.bG)([h.A], () => {
       var e;
-      return null != (e = x.A.getMemberCount(c.id)) ? e : 0
-    }), [p, j] = i.useState(false);
-    (0, g.Ay)(() => {
+      return null != (e = h.A.getMemberCount(o.id)) ? e : 0
+    }), [b, j] = i.useState(false);
+    (0, m.Ay)(() => {
       s.Bo.get({
-        url: _.Rsh.GUILD_ADMIN_SERVER_ELIGIBILITY(c.id),
+        url: N.Rsh.GUILD_ADMIN_SERVER_ELIGIBILITY(o.id),
         rejectWithError: true
       }).then(e => {
         j(e.body.eligible_for_admin_server)
       }).catch(() => j(false))
     });
-    let O = (0, l.bG)([h.A], () => h.A.getGuild("942897714956472401")),
-      y = c.features.has(_.GuildFeatures.COMMUNITY) && b >= 1e3 && p && null == O;
-    if (t && n && !y) return null;
-    let A = async () => {
+    let _ = (0, l.bG)([x.A], () => x.A.getGuild("942897714956472401")),
+      O = o.features.has(N.GuildFeatures.COMMUNITY) && p >= 1e3 && b && null == _;
+    if (t && n && !O) return null;
+    let y = async () => {
       try {
         let e = await s.Bo.post({
-          url: _.Rsh.JOIN_ADMIN_SERVER(c.id),
+          url: N.Rsh.JOIN_ADMIN_SERVER(o.id),
           oldFormErrors: true,
           rejectWithError: true
         });
-        v.A.close(), (0, m.u)(e.body.id)
+        v.A.close(), (0, f.u)(e.body.id)
       } catch (e) {}
     };
-    return o && !y ? null : (0, r.jsxs)("div", {
-      className: T.Zj,
+    return c && !O ? null : (0, r.jsxs)("div", {
+      className: I.Zj,
       children: [(0, r.jsxs)("div", {
-        className: T.xw,
+        className: I.xw,
         children: [(0, r.jsx)("img", {
-          src: I,
+          src: T,
           alt: "",
           width: 60,
-          className: T.Tn
+          className: I.Tn
         }), (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(f.Heading, {
+          children: [(0, r.jsx)(g.Heading, {
             variant: "heading-md/semibold",
-            className: T.$P,
+            className: I.$P,
             children: S.intl.string(S.t["pR/Bge"])
-          }), (0, r.jsx)(f.Text, {
+          }), (0, r.jsx)(g.Text, {
             variant: "text-sm/normal",
             children: S.intl.string(S.t["V+Yo1l"])
           })]
@@ -117,56 +117,56 @@ let C = "dismissedCommunityFeaturesUpsell",
         "aria-label": S.intl.string(S.t.cpT0Cq),
         look: u.$n.Looks.BLANK,
         size: u.$n.Sizes.NONE,
-        className: T.kz,
+        className: I.kz,
         onClick: () => {
           a.w.set(C, true), d(true)
         },
-        children: (0, r.jsx)(f.PGe, {
+        children: (0, r.jsx)(g.PGe, {
           size: "md",
           color: "currentColor"
         })
       }), (0, r.jsxs)("div", {
-        className: T.dt,
-        children: [y && (0, r.jsx)("div", {
+        className: I.dt,
+        children: [O && (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: T.Oy,
-          children: (0, r.jsx)(f.Button, {
+          className: I.Oy,
+          children: (0, r.jsx)(g.Button, {
             variant: "primary",
             size: "sm",
             text: S.intl.string(S.t.iF1Asi),
-            onClick: A
+            onClick: y
           })
         }), n ? null : (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: T.Oy,
-          children: (0, r.jsx)(f.Button, {
+          className: I.Oy,
+          children: (0, r.jsx)(g.Button, {
             variant: "primary",
             size: "sm",
             text: S.intl.string(S.t["S/Dfid"]),
             onClick: () => {
-              v.A.setSection(_.BEX.ONBOARDING)
+              v.A.setSection(N.BEX.ONBOARDING)
             }
           })
         }), t ? null : (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: T.Oy,
-          children: (0, r.jsx)(f.Button, {
+          className: I.Oy,
+          children: (0, r.jsx)(g.Button, {
             variant: "secondary",
             size: "sm",
             text: S.intl.string(S.t["0kmJdw"]),
             onClick: () => {
-              v.A.setSection(_.BEX.ACCESS, _.nd0.ACCESS_DISCOVERABLE)
+              v.A.setSection(N.BEX.ACCESS, N.nd0.ACCESS_DISCOVERABLE)
             }
           })
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: T.Oy,
-          children: (0, r.jsx)(f.Button, {
+          className: I.Oy,
+          children: (0, r.jsx)(g.Button, {
             variant: "secondary",
             size: "sm",
             text: S.intl.string(S.t.BQIYTb),
             onClick: () => {
-              v.A.setSection(_.BEX.ANALYTICS)
+              v.A.setSection(N.BEX.ANALYTICS)
             }
           })
         })]
@@ -175,146 +175,146 @@ let C = "dismissedCommunityFeaturesUpsell",
   },
   R = () => {
     var e, t, n;
-    let s = (0, l.bG)([A.A], () => A.A.getGuild()),
+    let s = (0, l.bG)([y.A], () => y.A.getGuild()),
       {
-        canManageGuild: c,
+        canManageGuild: o,
         isGuildAdmin: u
       } = (0, l.cf)([j.A], () => ({
-        canManageGuild: j.A.can(_.xBc.MANAGE_GUILD, s),
-        isGuildAdmin: j.A.can(_.xBc.ADMINISTRATOR, s)
+        canManageGuild: j.A.can(N.xBc.MANAGE_GUILD, s),
+        isGuildAdmin: j.A.can(N.xBc.ADMINISTRATOR, s)
       })),
-      g = (0, l.bG)([p.Ay], () => null != s ? p.Ay.getChannels(s.id) : null),
-      m = i.useMemo(N.fr, []),
-      x = true !== a.w.get(C);
+      m = (0, l.bG)([b.Ay], () => null != s ? b.Ay.getChannels(s.id) : null),
+      f = i.useMemo(E.fr, []),
+      h = true !== a.w.get(C);
     if (null == s) return null;
-    let h = [];
-    null != g && g[p.I6].forEach(e => {
+    let x = [];
+    null != m && m[b.I6].forEach(e => {
       let {
         channel: t
       } = e;
-      t.type === _.rbe.GUILD_TEXT && h.push({
+      t.type === N.rbe.GUILD_TEXT && x.push({
         id: t.id,
         value: t.id,
-        label: (0, b.m1)(t, y.default, O.A, true)
+        label: (0, p.m1)(t, O.default, _.A, true)
       })
     });
-    let E = () => {
+    let A = () => {
         if (null == s) return;
         let e = new Set(s.features);
-        e.delete(_.GuildFeatures.COMMUNITY), e.delete(_.GuildFeatures.DISCOVERABLE), e.delete(_.GuildFeatures.PREVIEW_ENABLED), v.A.updateGuild({
+        e.delete(N.GuildFeatures.COMMUNITY), e.delete(N.GuildFeatures.DISCOVERABLE), e.delete(N.GuildFeatures.PREVIEW_ENABLED), v.A.updateGuild({
           features: e,
           rulesChannelId: null,
           publicUpdatesChannelId: null
         })
       },
-      T = e => {
+      I = e => {
         v.A.updateGuild({
           description: e
         })
       };
-    return (0, r.jsxs)(f.BJc, {
+    return (0, r.jsxs)(g.BJc, {
       gap: 24,
-      children: [(0, r.jsx)(f.Heading, {
+      children: [(0, r.jsx)(g.Heading, {
         variant: "heading-lg/semibold",
         children: S.intl.string(S.t.nRtNqn)
-      }), x ? (0, r.jsx)(w, {
-        discoveryEnabled: s.features.has(_.GuildFeatures.DISCOVERABLE),
-        onboardingEnabled: s.features.has(_.GuildFeatures.GUILD_ONBOARDING),
+      }), h ? (0, r.jsx)(w, {
+        discoveryEnabled: s.features.has(N.GuildFeatures.DISCOVERABLE),
+        onboardingEnabled: s.features.has(N.GuildFeatures.GUILD_ONBOARDING),
         guild: s
-      }) : null, (0, r.jsx)(f.ZiE, {
+      }) : null, (0, r.jsx)(g.ZiE, {
         selectionMode: "single",
         layout: "horizontal-responsive",
         label: S.intl.string(S.t["otcXP/"]),
         description: S.intl.string(S.t.BtwmYB),
         value: null != (e = s.rulesChannelId) ? e : true,
-        options: h,
+        options: x,
         onSelectionChange: e => {
           v.A.updateGuild({
             rulesChannelId: e
           })
         },
-        disabled: !c
-      }), (0, r.jsx)(f.cGx, {}), (0, r.jsx)(f.ZiE, {
+        disabled: !o
+      }), (0, r.jsx)(g.cGx, {}), (0, r.jsx)(g.ZiE, {
         selectionMode: "single",
         layout: "horizontal-responsive",
         label: S.intl.string(S.t.vAyDGU),
         description: S.intl.string(S.t.ZFeonu),
         value: null != (t = s.publicUpdatesChannelId) ? t : true,
-        options: h,
+        options: x,
         onSelectionChange: e => {
           v.A.updateGuild({
             publicUpdatesChannelId: e
           })
         },
         disabled: !u
-      }), (0, r.jsx)(f.cGx, {}), (0, r.jsx)(f.ZiE, {
+      }), (0, r.jsx)(g.cGx, {}), (0, r.jsx)(g.ZiE, {
         selectionMode: "single",
         layout: "horizontal-responsive",
         label: S.intl.string(S.t.sMkYE8),
         description: S.intl.string(S.t.htioQo),
         value: null != (n = s.safetyAlertsChannelId) ? n : true,
-        options: h,
+        options: x,
         onSelectionChange: e => {
           v.A.updateGuild({
             safetyAlertsChannelId: e
           })
         },
-        disabled: !c
-      }), (0, r.jsx)(f.cGx, {}), (0, r.jsx)(f.ZiE, {
+        disabled: !o
+      }), (0, r.jsx)(g.cGx, {}), (0, r.jsx)(g.ZiE, {
         selectionMode: "single",
         layout: "horizontal-responsive",
         label: S.intl.string(S.t.pO60fy),
         description: S.intl.string(S.t.aIR73T),
         value: s.preferredLocale,
-        options: m,
+        options: f,
         onSelectionChange: e => {
           v.A.updateGuild({
             preferredLocale: e
           })
         },
-        disabled: !c
-      }), (0, r.jsx)(f.cGx, {}), (() => {
+        disabled: !o
+      }), (0, r.jsx)(g.cGx, {}), (() => {
         var e;
-        if (null != s) return (0, r.jsx)(f.fs1, {
+        if (null != s) return (0, r.jsx)(g.fs1, {
           label: S.intl.string(S.t["RSfm+i"]),
           description: S.intl.string(S.t["/B6PRw"]),
           value: null != (e = s.description) ? e : "",
           placeholder: S.intl.string(S.t.Nvfowl),
-          onChange: T,
+          onChange: I,
           maxLength: 300,
-          disabled: !c
+          disabled: !o
         })
-      })(), (0, r.jsx)(f.cGx, {}), (0, r.jsx)(f.D0$, {
+      })(), (0, r.jsx)(g.cGx, {}), (0, r.jsx)(g.D0$, {
         label: S.intl.string(S.t.c1BmbC),
         description: S.intl.string(S.t.aQzVF8),
         layout: "horizontal",
         children: (0, r.jsx)(d.m, {
           text: u ? null : S.intl.string(S.t["pjG+T3"]),
           "aria-label": u ? true : S.intl.string(S.t["pjG+T3"]),
-          children: (0, r.jsx)(f.Button, {
+          children: (0, r.jsx)(g.Button, {
             variant: "critical-primary",
             size: "sm",
             text: S.intl.string(S.t.c1BmbC),
             onClick: () => {
-              s.features.has(_.GuildFeatures.DISCOVERABLE) && s.features.has(_.GuildFeatures.PARTNERED) ? (0, o.A)({
+              s.features.has(N.GuildFeatures.DISCOVERABLE) && s.features.has(N.GuildFeatures.PARTNERED) ? (0, c.A)({
                 title: S.intl.string(S.t.iBnVHc),
                 subtitle: S.intl.string(S.t["P+Sh8V"]),
                 confirmText: S.intl.string(S.t["cY+Oob"]),
                 cancelText: S.intl.string(S.t.oEAioF),
-                onConfirm: E
-              }) : s.features.has(_.GuildFeatures.DISCOVERABLE) ? (0, o.A)({
+                onConfirm: A
+              }) : s.features.has(N.GuildFeatures.DISCOVERABLE) ? (0, c.A)({
                 title: S.intl.string(S.t.iBnVHc),
                 subtitle: S.intl.string(S.t["eMx/uZ"]),
                 confirmText: S.intl.string(S.t["cY+Oob"]),
                 cancelText: S.intl.string(S.t.oEAioF),
-                onConfirm: E
-              }) : s.features.has(_.GuildFeatures.PARTNERED) ? (0, o.A)({
+                onConfirm: A
+              }) : s.features.has(N.GuildFeatures.PARTNERED) ? (0, c.A)({
                 title: S.intl.string(S.t.iBnVHc),
                 subtitle: S.intl.string(S.t.l1wLeX),
                 confirmText: S.intl.string(S.t["cY+Oob"]),
                 cancelText: S.intl.string(S.t.oEAioF),
-                onConfirm: E
-              }) : E()
+                onConfirm: A
+              }) : A()
             },
             disabled: !u
           })
@@ -323,8 +323,8 @@ let C = "dismissedCommunityFeaturesUpsell",
     })
   },
   D = () => {
-    let e = (0, l.bG)([A.A], () => A.A.getGuild());
-    return null == e ? null : e.features.has(_.GuildFeatures.COMMUNITY) ? (0, r.jsx)(R, {}) : (0, r.jsx)(E.A, {
+    let e = (0, l.bG)([y.A], () => y.A.getGuild());
+    return null == e ? null : e.features.has(N.GuildFeatures.COMMUNITY) ? (0, r.jsx)(R, {}) : (0, r.jsx)(A.A, {
       guild: e
     })
   }

@@ -1,7 +1,7 @@
 /** Chunk was on 6759 **/
 /** chunk id: 909806, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => x
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,41 +13,41 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk76616 = require("./76616.js");
 
-function x(e) {
+function m(e) {
   let {
     guildTemplate: t,
     onClick: n,
     autoFocus: s
-  } = e, a = i.useCallback(() => {
+  } = e, r = i.useCallback(() => {
     n(t)
   }, [t, n]);
-  return (0, l.jsx)(r.A, {
+  return (0, l.jsx)(a.A, {
     icon: c.s[t.id],
     message: t.label,
-    onClick: a,
+    onClick: r,
     autoFocus: s
   })
 }
 
-function m(e) {
+function x(e) {
   var t, n;
   let {
     onBack: i,
-    onChooseTemplate: r,
+    onChooseTemplate: a,
     directoryGuildName: c
-  } = e, m = (0, d.ul)();
+  } = e, x = (0, o.ul)();
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(s.rQ0, {
-      title: o.intl.formatToPlainString(o.t.T7aLYT, {
+      title: d.intl.formatToPlainString(d.t.T7aLYT, {
         guildName: c
       }),
-      subtitle: o.intl.string(o.t["RA+St6"])
+      subtitle: d.intl.string(d.t["RA+St6"])
     }), (0, l.jsx)(s.cwr, {
-      children: (0, l.jsx)(a.ArX, {
+      children: (0, l.jsx)(r.ArX, {
         className: u.XG,
         children: (0, l.jsxs)("div", {
           className: u.KA,
-          children: [(0, l.jsx)(x, {
+          children: [(0, l.jsx)(m, {
             guildTemplate: (t = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
@@ -65,8 +65,8 @@ function m(e) {
                 })
               }
               return e
-            }({}, m[d.Y1.CREATE]), n = n = {
-              label: o.intl.string(o.t.WqJbLi)
+            }({}, x[o.Y1.CREATE]), n = n = {
+              label: d.intl.string(d.t.WqJbLi)
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
@@ -77,38 +77,38 @@ function m(e) {
             })(Object(n)).forEach(function(e) {
               Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
             }), t),
-            onClick: r
-          }), (0, l.jsx)(a.Text, {
+            onClick: a
+          }), (0, l.jsx)(r.Text, {
             className: u.l8,
             color: "text-default",
             variant: "text-xs/bold",
-            children: o.intl.string(o.t.JGDkfg)
-          }), (0, l.jsx)(x, {
-            guildTemplate: m[d.Y1.HUB_STUDY],
-            onClick: r
-          }), (0, l.jsx)(x, {
-            guildTemplate: m[d.Y1.HUB_SCHOOL_CLUB],
-            onClick: r
-          }), (0, l.jsx)(x, {
-            guildTemplate: m[d.Y1.HUB_CLASS],
-            onClick: r
-          }), (0, l.jsx)(x, {
-            guildTemplate: m[d.Y1.HUB_SOCIAL],
-            onClick: r
-          }), (0, l.jsx)(x, {
-            guildTemplate: m[d.Y1.HUB_MAJOR],
-            onClick: r
-          }), (0, l.jsx)(x, {
-            guildTemplate: m[d.Y1.HUB_DORM],
-            onClick: r
+            children: d.intl.string(d.t.JGDkfg)
+          }), (0, l.jsx)(m, {
+            guildTemplate: x[o.Y1.HUB_STUDY],
+            onClick: a
+          }), (0, l.jsx)(m, {
+            guildTemplate: x[o.Y1.HUB_SCHOOL_CLUB],
+            onClick: a
+          }), (0, l.jsx)(m, {
+            guildTemplate: x[o.Y1.HUB_CLASS],
+            onClick: a
+          }), (0, l.jsx)(m, {
+            guildTemplate: x[o.Y1.HUB_SOCIAL],
+            onClick: a
+          }), (0, l.jsx)(m, {
+            guildTemplate: x[o.Y1.HUB_MAJOR],
+            onClick: a
+          }), (0, l.jsx)(m, {
+            guildTemplate: x[o.Y1.HUB_DORM],
+            onClick: a
           })]
         })
       })
     }), (0, l.jsx)(s.H7u, {
-      leading: (0, l.jsx)(a.QWc, {
+      leading: (0, l.jsx)(r.QWc, {
         textVariant: "text-sm/medium",
         variant: "secondary",
-        text: o.intl.string(o.t["13/7kX"]),
+        text: d.intl.string(d.t["13/7kX"]),
         onClick: i
       })
     })]

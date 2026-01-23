@@ -1,7 +1,7 @@
 /** Chunk was on 13492 **/
-/** chunk id: 833147, original params: e,t,a (module,exports,require) **/
+/** chunk id: 833147, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  A: () => o
+  A: () => c
 });
 var Chunk627968 = require("./627968.js"),
   Chunk536246 = require("./536246.js"),
@@ -9,18 +9,18 @@ var Chunk627968 = require("./627968.js"),
   Chunk360469 = require("./360469.js"),
   Chunk416367 = require("./416367.js");
 
-function o(e) {
+function c(e) {
   let {
-    application: t,
-    queryParams: a,
-    url: o
+    application: n,
+    queryParams: t,
+    url: c
   } = e;
-  return (0, c.jsx)(l.o, {
-    allowPopups: (0, n.b)(t),
-    referrerPolicy: d.$J.has(t.id) ? "no-referrer" : "origin",
-    url: o,
-    queryParams: a,
-    className: r.p,
+  return (0, r.jsx)(a.o, {
+    allowPopups: (0, o.b)(n),
+    referrerPolicy: i.$J.has(n.id) ? "no-referrer" : "origin",
+    url: c,
+    queryParams: t,
+    className: l.p,
     shouldRefocus: false
   })
 }

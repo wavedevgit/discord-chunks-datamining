@@ -36,7 +36,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk654487 = require("./654487.js"),
   Chunk652215 = require("./652215.js");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,14 +45,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -97,25 +97,25 @@ function D(e, t) {
 
 function x(e, t, n) {
   let r = (0, s.sN)(n).uuid;
-  return I({
+  return S({
     client_ad_session_id: r,
-    billing_session_id: D(r, (0, b.xn)(t))
-  }, (0, b.Kc)(e, t))
+    billing_session_id: D(r, (0, y.xn)(t))
+  }, (0, y.Kc)(e, t))
 }
 
 function L(e, t, n) {
   var r;
-  return I({
+  return S({
     quest_id: e.id,
     quest_type: (0, O.pv)(e.config),
     game_id: e.config.application.id,
     game_name: e.config.application.name,
-    application_ids: null != (r = (0, y._3)(e)) ? r : []
+    application_ids: null != (r = (0, b._3)(e)) ? r : []
   }, x(e.id, t, n))
 }
 
 function j(e, t, n, r) {
-  return I({
+  return S({
     ad_content_id: e,
     creative_type: t
   }, x(e, n, r))
@@ -134,8 +134,8 @@ function k(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = arguments.length > 3 ? arguments[3] : true;
   if ((0, E.Q)({
-      location: A.rE.QUEST_PREVIEW_TOOL
-    }) && d.A.getLayers().includes(v.zgK.USER_SETTINGS) || (u.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", e, t), r)) return;
+      location: v.rE.QUEST_PREVIEW_TOOL
+    }) && d.A.getLayers().includes(A.zgK.USER_SETTINGS) || (u.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", e, t), r)) return;
   let i = R.has(e);
   if (n) return l.Ay.trackWithMetadata(e, t, i);
   f.default.track(e, t, {
@@ -152,7 +152,7 @@ function U(e) {
     shouldExtendSession: a = false,
     sourceQuestContent: s
   } = e, o = h.A.quests.get(t);
-  null == o || k(n, I({}, L(o, s, a), r), i, o.preview)
+  null == o || k(n, S({}, L(o, s, a), r), i, o.preview)
 }
 
 function G(e) {
@@ -165,7 +165,7 @@ function G(e) {
     shouldExtendSession: s = false,
     sourceQuestContent: o
   } = e;
-  k(r, I({}, j(t, n, o, s), i), a, false)
+  k(r, S({}, j(t, n, o, s), i), a, false)
 }
 var V = function(e) {
   return e.LEARN_MORE = "LEARN_MORE", e.SHOW_REWARD = "SHOW_REWARD", e.CLAIM_REWARD = "CLAIM_REWARD", e.GET_REWARD_CODE = "GET_REWARD_CODE", e.COPY_REWARD_CODE = "COPY_REWARD_CODE", e.ACCEPT_QUEST = "ACCEPT_QUEST", e.COPY_QUEST_URL = "COPY_QUEST_URL", e.MOBILE_SHARESHEET = "MOBILE_SHARESHEET", e.TRACK_PROGRESS = "TRACK_PROGRESS", e.CONNECT_CONSOLE = "CONNECT_CONSOLE", e.CONNECT_CONSOLE_LINK = "CONNECT_CONSOLE_LINK", e.VIEW_CONSOLE_CONNECTIONS = "VIEW_CONSOLE_CONNECTION", e.VIEW_CONSOLE_CONNECTIONS_LINK = "VIEW_CONSOLE_CONNECTIONS_LINK", e.VIEW_REQUIREMENTS = "VIEW_REQUIREMENTS", e.SELECT_CONSOLE_PLATFORM = "SELECT_CONSOLE_PLATFORM", e.SELECT_DESKTOP_PLATFORM = "SELECT_DESKTOP_PLATFORM", e.DESELECT_PLATFORM = "DESELECT_PLATFORM", e.DEFIBRILLATOR = "DEFIBRILLATOR", e.DEFIBRILLATOR_RECONNECT_CONSOLE = "DEFIBRILLATOR_RECONNECT_CONSOLE", e.OPEN_DISCLOSURE = "OPEN_DISCLOSURE", e.WATCH_STREAM = "WATCH_STREAM", e.WATCH_STREAM_CONFIRM = "WATCH_STREAM_CONFIRM", e.REWARD_LEARN_MORE = "REWARD_LEARN_MORE", e.OPEN_GAME_LINK = "OPEN_GAME_LINK", e.OPEN_CONTEXT_MENU = "OPEN_CONTEXT_MENU", e.OPEN_QUEST_HOME = "OPEN_QUEST_HOME", e.QUEST_BAR_COPY_LINK = "QUEST_BAR.COPY_LINK", e.CONTEXT_MENU_COPY_LINK = "CONTEXT_MENU.COPY_LINK", e.REWARD_MODAL_COPY_LINK = "REWARD_MODAL.COPY_LINK", e.CONTEXT_MENU_HIDE_CONTENT = "CONTEXT_MENU.HIDE_CONTENT", e.CONTEXT_MENU_OPEN_GAME_LINK = "CONTEXT_MENU.OPEN_GAME_LINK", e.CONTEXT_MENU_OPEN_DISCLOSURE = "CONTEXT_MENU.OPEN_DISCLOSURE", e.CONTEXT_MENU_LEARN_MORE = "CONTEXT_MENU.LEARN_MORE", e.HOW_TO_HELP_ARTICLE_XBOX = "HOW_TO_HELP_ARTICLE_XBOX", e.HOW_TO_HELP_ARTICLE_PLAYSTATION = "HOW_TO_HELP_ARTICLE_PLAYSTATION", e.VIEW_QUESTS = "VIEW_QUESTS", e.EXPAND = "EXPAND", e.COLLAPSE = "COLLAPSE", e.START_QUEST = "START_QUEST", e.TRANSCRIPT_ENABLE = "TRANSCRIPT_ENABLE", e.TRANSCRIPT_DISABLE = "TRANSCRIPT_DISABLE", e.CLOSED_CAPTIONING_ENABLE = "CLOSED_CAPTIONING_ENABLE", e.CLOSED_CAPTIONING_DISABLE = "CLOSED_CAPTIONING_DISABLE", e.SEEK_BACKWARD = "SEEK_BACKWARD", e.SEEK_FORWARD = "SEEK_FORWARD", e.WATCH_VIDEO = "WATCH_VIDEO", e.QUEST_BAR_VIDEO_QUEST_PREVIEW = "QUEST_BAR_VIDEO_QUEST_PREVIEW", e.QUEST_HOME_TILE_HEADER_WATCH_VIDEO = "QUEST_HOME_TILE_HEADER_WATCH_VIDEO", e.REDEEM_REWARD = "REDEEM_REWARD", e.VISIT_REDEMPTION_LINK = "VISIT_REDEMPTION_LINK", e.SPONSORED_QUEST_SHEET = "SPONSORED_QUEST_SHEET", e.GAME_PROFILE_OPEN = "GAME_PROFILE_OPEN", e.GAME_STORE_OPEN_GAME_LINK = "GAME_STORE_OPEN_GAME_LINK", e.MOBILE_ORBS_ONBOARDING_DC = "MOBILE_ORBS_ONBOARDING_DC", e.LAUNCH_MOBILE_ACTIVITY = "LAUNCH_MOBILE_ACTIVITY", e
@@ -180,11 +180,11 @@ async function F(e) {
     impressionId: l,
     trackGuildAndChannelMetadata: u,
     sourceQuestContent: d
-  } = e, f = h.A.getQuest(t), _ = await (0, a.N)(w(n)), m = (0, b.Li)(n), g = (0, b.L4)(n), E = (0, b.yI)(n, t), y = (0, b.Gp)(n, t);
+  } = e, f = h.A.getQuest(t), _ = await (0, a.N)(w(n)), m = (0, y.Li)(n), g = (0, y.L4)(n), E = (0, y.yI)(n, t), b = (0, y.Gp)(n, t);
   U({
     questId: t,
-    event: v.HAw.QUEST_CONTENT_CLICKED,
-    properties: C(I({}, M(n, s, o), (0, c.A)()), {
+    event: A.HAw.QUEST_CONTENT_CLICKED,
+    properties: C(S({}, M(n, s, o), (0, c.A)()), {
       cta_name: r,
       quest_status: null != f ? P(f) : null,
       impression_id: l,
@@ -194,10 +194,10 @@ async function F(e) {
       metadata_raw: null != m ? m : null,
       metadata_sealed: null != g ? g : null,
       traffic_metadata_raw: null != E ? E : null,
-      traffic_metadata_sealed: null != y ? y : null
+      traffic_metadata_sealed: null != b ? b : null
     }),
     trackGuildAndChannelMetadata: u,
-    shouldExtendSession: (0, b.xn)(n),
+    shouldExtendSession: (0, y.xn)(n),
     sourceQuestContent: d
   })
 }
@@ -212,7 +212,7 @@ function B(e) {
   } = e, s = M(t);
   U({
     questId: r,
-    event: v.HAw.QUEST_BAR_MODE_CHANGED,
+    event: A.HAw.QUEST_BAR_MODE_CHANGED,
     properties: {
       content_id: s.content_id,
       content_name: s.content_name,
@@ -226,8 +226,8 @@ function B(e) {
 function H() {
   let e = (0, _.vU)();
   return r.useCallback(t => {
-    U(C(I({}, t), {
-      properties: C(I({}, t.properties), {
+    U(C(S({}, t), {
+      properties: C(S({}, t.properties), {
         impression_id: null == e ? true : e.getId()
       })
     }))
@@ -245,12 +245,12 @@ function Y() {
       questContentRowIndex: l,
       trackGuildAndChannelMetadata: u,
       sourceQuestContent: d
-    } = t, f = h.A.getQuest(n), _ = (0, b.Li)(r), m = (0, b.L4)(r), g = (0, b.yI)(r, n), E = (0, b.Gp)(r, n);
+    } = t, f = h.A.getQuest(n), _ = (0, y.Li)(r), m = (0, y.L4)(r), g = (0, y.yI)(r, n), E = (0, y.Gp)(r, n);
     (0, a.N)(w(r)).then(t => {
       e({
         questId: n,
-        event: v.HAw.QUEST_CONTENT_CLICKED,
-        properties: C(I({}, M(r, o, l), (0, c.A)()), {
+        event: A.HAw.QUEST_CONTENT_CLICKED,
+        properties: C(S({}, M(r, o, l), (0, c.A)()), {
           cta_name: s,
           quest_status: null != f ? P(f) : null,
           click_id: (0, i.A)(),
@@ -262,7 +262,7 @@ function Y() {
           traffic_metadata_sealed: null != E ? E : null
         }),
         trackGuildAndChannelMetadata: u,
-        shouldExtendSession: (0, b.xn)(r),
+        shouldExtendSession: (0, y.xn)(r),
         sourceQuestContent: d
       })
     })
@@ -276,7 +276,7 @@ function W(e, t) {
 }
 
 function K(e, t) {
-  l.Ay.trackWithMetadata(v.HAw.QUEST_EMBED_FALLBACK_VIEWED, {
+  l.Ay.trackWithMetadata(A.HAw.QUEST_EMBED_FALLBACK_VIEWED, {
     quest_id: e,
     reason: t
   })

@@ -72,51 +72,51 @@ function L(e) {
       integration: l,
       editedIntegration: s,
       isExpanded: L,
-      onToggleExpand: M,
-      onDisable: D,
+      onToggleExpand: D,
+      onDisable: M,
       onEnable: G
     } = e,
     [U, B] = r.useState(false),
-    W = (0, b.bG)([N.A], () => N.A.hidePersonalInformation),
-    H = (0, b.bG)([v.A], () => v.A.can(S.xBc.KICK_MEMBERS, n)),
+    W = (0, p.bG)([_.A], () => _.A.hidePersonalInformation),
+    H = (0, p.bG)([v.A], () => v.A.can(C.xBc.KICK_MEMBERS, n)),
     V = r.useCallback(() => {
       B(true), G(l)
     }, [l, G]),
     z = r.useCallback(() => {
-      l.syncing || (0, m.qfG)(e => {
-        if (!H && l.expire_behavior === c.F.KICK) return (0, i.jsx)(m.VoidConfirmModal, R(k({}, e), {
-          header: _.intl.string(_.t.emx3lN),
-          confirmText: _.intl.string(_.t.BddRzS),
-          confirmButtonColor: f.XD.BRAND,
-          children: (0, i.jsx)(m.Text, {
+      l.syncing || (0, b.qfG)(e => {
+        if (!H && l.expire_behavior === c.F.KICK) return (0, i.jsx)(b.VoidConfirmModal, R(k({}, e), {
+          header: S.intl.string(S.t.emx3lN),
+          confirmText: S.intl.string(S.t.BddRzS),
+          confirmButtonColor: m.XD.BRAND,
+          children: (0, i.jsx)(b.Text, {
             variant: "text-md/normal",
-            children: l.type === u.s.YOUTUBE ? _.intl.string(_.t.pDCiEf) : _.intl.string(_.t.sQqHFk)
+            children: l.type === u.s.YOUTUBE ? S.intl.string(S.t.pDCiEf) : S.intl.string(S.t.sQqHFk)
           })
         }));
-        let t = l.expire_behavior === c.F.REMOVE_ROLE ? _.intl.string(_.t["6kpw4i"]) : _.intl.string(_.t.fQUQIJ);
-        return (0, i.jsx)(m.VoidConfirmModal, R(k({}, e), {
-          header: _.intl.string(_.t.emx3lN),
+        let t = l.expire_behavior === c.F.REMOVE_ROLE ? S.intl.string(S.t["6kpw4i"]) : S.intl.string(S.t.fQUQIJ);
+        return (0, i.jsx)(b.VoidConfirmModal, R(k({}, e), {
+          header: S.intl.string(S.t.emx3lN),
           confirmText: t,
-          cancelText: _.intl.string(_.t["ETE/oC"]),
-          onConfirm: () => D(l),
-          children: (0, i.jsx)(m.Text, {
+          cancelText: S.intl.string(S.t["ETE/oC"]),
+          onConfirm: () => M(l),
+          children: (0, i.jsx)(b.Text, {
             variant: "text-md/normal",
-            children: l.type === u.s.YOUTUBE ? _.intl.string(_.t.anKQWU) : _.intl.string(_.t["BW/xtn"])
+            children: l.type === u.s.YOUTUBE ? S.intl.string(S.t.anKQWU) : S.intl.string(S.t["BW/xtn"])
           })
         }))
       })
-    }, [l, D, H]),
+    }, [l, M, H]),
     K = r.useCallback(() => {
       O.A.syncIntegration(n.id, l.id)
     }, [n.id, l.id]),
     F = r.useCallback(() => {
-      null != l.role_id && (O.A.setSection(S.BEX.ROLES), O.A.selectRole(l.role_id))
+      null != l.role_id && (O.A.setSection(C.BEX.ROLES), O.A.selectRole(l.role_id))
     }, [l.role_id]),
     {
       serviceName: Y,
       channelURL: q,
-      expireBehaviorLabel: Q,
-      syncLabel: J,
+      expireBehaviorLabel: J,
+      syncLabel: Q,
       subscribersText: Z
     } = r.useMemo(() => {
       var e, t, n, i, r;
@@ -127,41 +127,41 @@ function L(e) {
       switch (l.type) {
         case u.s.YOUTUBE:
           return {
-            serviceName: _.intl.string(_.t.aS6cK4), expireBehaviorLabel: _.intl.string(_.t.A5MiqO), syncLabel: _.intl.string(_.t["7vHKVe"]), subscribersText: _.intl.formatToPlainString(_.t["7lNtce"], {
+            serviceName: S.intl.string(S.t.aS6cK4), expireBehaviorLabel: S.intl.string(S.t.A5MiqO), syncLabel: S.intl.string(S.t["7vHKVe"]), subscribersText: S.intl.formatToPlainString(S.t["7lNtce"], {
               subscribers: null != (i = l.subscriber_count) ? i : 0
             }), channelURL: a
           };
         case u.s.TWITCH:
         default:
           return {
-            serviceName: _.intl.string(_.t.q4pBG3), expireBehaviorLabel: _.intl.string(_.t["S/WCrG"]), syncLabel: _.intl.string(_.t["0jbPK4"]), subscribersText: _.intl.formatToPlainString(_.t.RdUTrl, {
+            serviceName: S.intl.string(S.t.q4pBG3), expireBehaviorLabel: S.intl.string(S.t["S/WCrG"]), syncLabel: S.intl.string(S.t["0jbPK4"]), subscribersText: S.intl.formatToPlainString(S.t.RdUTrl, {
               subscribers: null != (r = l.subscriber_count) ? r : 0
             }), channelURL: a
           }
       }
     }, [l.account, l.subscriber_count, l.type]),
-    X = (0, b.bG)([A.A], () => null != l.role_id ? A.A.getRole(n.id, l.role_id) : true),
+    X = (0, p.bG)([A.A], () => null != l.role_id ? A.A.getRole(n.id, l.role_id) : true),
     {
       roleLink: $,
       syncDescriptionText: ee
     } = r.useMemo(() => {
       let e;
-      e = null != X ? (0, i.jsx)(m.MzZ, {
+      e = null != X ? (0, i.jsx)(b.MzZ, {
         onClick: F,
         children: X.name
-      }) : _.intl.string(_.t.PoWNfe);
+      }) : S.intl.string(S.t.PoWNfe);
       let t = h.A.get(l.type);
       return {
         roleLink: e,
-        syncDescriptionText: l.revoked && null != t ? _.intl.formatToPlainString(_.t.G16Wji, {
+        syncDescriptionText: l.revoked && null != t ? S.intl.formatToPlainString(S.t.G16Wji, {
           user: l.user,
           platformName: t.name
-        }) : _.intl.formatToPlainString(_.t.unl3AP, {
+        }) : S.intl.formatToPlainString(S.t.unl3AP, {
           datetime: o()(l.synced_at).calendar()
         })
       }
     }, [X, F, l.revoked, l.synced_at, l.type, l.user]),
-    et = (0, b.bG)([A.A], () => A.A.getSortedRoles(n.id)),
+    et = (0, p.bG)([A.A], () => A.A.getSortedRoles(n.id)),
     en = r.useMemo(() => {
       let e = j.Ay.getGuildEmoji(n.id),
         t = et.filter(e => null != e.tags && e.tags.integration_id === l.id).map(e => e.id);
@@ -170,18 +170,18 @@ function L(e) {
   if (r.useEffect(() => {
       (null == s ? true : s.id) === l.id && (null == s ? true : s.enabled) === true && B(false)
     }, [s, l.id]), l.enabled && null != l.user) t = [{
-    icon: m.O4,
-    text: W ? _.intl.formatToPlainString(_.t.gcdJ8J, {
-      timestamp: w.default.extractTimestamp(l.id)
-    }) : _.intl.formatToPlainString(_.t.Nu9sat, {
+    icon: b.O4,
+    text: W ? S.intl.formatToPlainString(S.t.gcdJ8J, {
+      timestamp: T.default.extractTimestamp(l.id)
+    }) : S.intl.formatToPlainString(S.t.Nu9sat, {
       user: null != l.user ? new y.A(l.user).tag : null,
-      timestamp: w.default.extractTimestamp(l.id)
+      timestamp: T.default.extractTimestamp(l.id)
     })
   }];
   else {
     let e = new URL(q);
     t = [{
-      text: _.intl.format(_.t.BegylZ, {
+      text: S.intl.format(S.t.BegylZ, {
         serviceName: Y,
         accountUrl: q,
         accountUrlText: e.hostname + e.pathname
@@ -191,14 +191,14 @@ function L(e) {
   let ei = (0, i.jsxs)(x.A, {
       className: I.wx,
       align: x.A.Align.CENTER,
-      children: [(0, i.jsx)(C.A, {
+      children: [(0, i.jsx)(E.A, {
         name: "".concat(l.name),
         detailsClassName: I.h_,
         details: t
       }), l.enabled ? (0, i.jsx)(x.A.Child, {
         shrink: 0,
         grow: 0,
-        children: (0, i.jsx)(E.A, {
+        children: (0, i.jsx)(N.A, {
           className: I.eO,
           expanded: L && !U,
           "aria-hidden": true
@@ -206,17 +206,17 @@ function L(e) {
       }) : (0, i.jsx)(x.A.Child, {
         shrink: 0,
         grow: 0,
-        children: U ? (0, i.jsx)(m.K0, {
+        children: U ? (0, i.jsx)(b.K0, {
           variant: "primary",
           size: "sm",
           disabled: true,
-          icon: m.fNY,
-          "aria-label": _.intl.string(_.t["7sCN8m"])
-        }) : (0, i.jsx)(m.Button, {
+          icon: b.fNY,
+          "aria-label": S.intl.string(S.t["7sCN8m"])
+        }) : (0, i.jsx)(b.Button, {
           variant: "primary",
           size: "sm",
           onClick: V,
-          text: _.intl.string(_.t["7sCN8m"])
+          text: S.intl.string(S.t["7sCN8m"])
         })
       })]
     }),
@@ -224,7 +224,7 @@ function L(e) {
   return L && !U && null != s && (er = (0, i.jsxs)(x.A, {
     className: I.rf,
     direction: x.A.Direction.VERTICAL,
-    children: [(0, i.jsx)(m.cGx, {
+    children: [(0, i.jsx)(b.cGx, {
       className: I.fV
     }), function(e) {
       let {
@@ -238,11 +238,11 @@ function L(e) {
       return (0, i.jsxs)(x.A, {
         children: [(0, i.jsxs)(x.A.Child, {
           basis: "50%",
-          children: [(0, i.jsx)(m.Heading, {
+          children: [(0, i.jsx)(b.Heading, {
             variant: "heading-md/semibold",
             className: P.QB,
-            children: _.intl.string(_.t.eBtNBa)
-          }), (0, i.jsx)(m.Text, {
+            children: S.intl.string(S.t.eBtNBa)
+          }), (0, i.jsx)(b.Text, {
             className: I.RZ,
             color: "text-strong",
             variant: "text-sm/normal",
@@ -250,7 +250,7 @@ function L(e) {
           })]
         }), (0, i.jsxs)(x.A.Child, {
           basis: "50%",
-          children: [(0, i.jsx)(m.Heading, {
+          children: [(0, i.jsx)(b.Heading, {
             variant: "heading-sm/semibold",
             className: P.QB,
             children: n
@@ -258,25 +258,25 @@ function L(e) {
             justify: x.A.Justify.BETWEEN,
             children: [(0, i.jsxs)(x.A, {
               direction: x.A.Direction.VERTICAL,
-              children: [(0, i.jsx)(m.Text, {
+              children: [(0, i.jsx)(b.Text, {
                 color: "text-strong",
                 variant: "text-sm/normal",
                 children: r
-              }), (0, i.jsx)(m.Text, {
+              }), (0, i.jsx)(b.Text, {
                 color: "text-default",
                 variant: "text-xs/normal",
                 children: l
               })]
-            }), t.syncing ? (0, i.jsx)(m.K0, {
+            }), t.syncing ? (0, i.jsx)(b.K0, {
               size: "sm",
               variant: "primary",
-              icon: m.fNY,
-              "aria-label": _.intl.string(_.t.BkuOO6),
+              icon: b.fNY,
+              "aria-label": S.intl.string(S.t.BkuOO6),
               disabled: true
-            }) : (0, i.jsx)(m.Button, {
+            }) : (0, i.jsx)(b.Button, {
               size: "sm",
               variant: "primary",
-              text: _.intl.string(_.t.BkuOO6),
+              text: S.intl.string(S.t.BkuOO6),
               disabled: t.revoked,
               onClick: s
             })]
@@ -285,12 +285,12 @@ function L(e) {
       })
     }({
       integration: s,
-      labelText: J,
+      labelText: Q,
       subscribersText: Z,
       descriptionText: ee,
       roleLink: $,
       onSync: K
-    }), (0, i.jsx)(m.cGx, {
+    }), (0, i.jsx)(b.cGx, {
       className: I.W7
     }), function(e) {
       let {
@@ -302,7 +302,7 @@ function L(e) {
       return (0, i.jsxs)(x.A, {
         children: [(0, i.jsx)(x.A.Child, {
           basis: "50%",
-          children: (0, i.jsx)(m.l6P, {
+          children: (0, i.jsx)(b.l6P, {
             selectionMode: "single",
             label: n,
             placeholder: n,
@@ -310,27 +310,27 @@ function L(e) {
             options: [{
               id: "remove-role",
               value: c.F.REMOVE_ROLE.toString(),
-              label: _.intl.string(_.t["6kpw4i"])
+              label: S.intl.string(S.t["6kpw4i"])
             }, {
               id: "kick",
               value: c.F.KICK.toString(),
-              label: _.intl.string(_.t.fQUQIJ)
+              label: S.intl.string(S.t.fQUQIJ)
             }],
             disabled: t.syncing,
             onSelectionChange: e => r(parseInt(e))
           })
         }), (0, i.jsx)(x.A.Child, {
           basis: "50%",
-          children: (0, i.jsx)(m.l6P, {
+          children: (0, i.jsx)(b.l6P, {
             selectionMode: "single",
-            label: _.intl.string(_.t.uiXMow),
-            placeholder: _.intl.string(_.t.uiXMow),
+            label: S.intl.string(S.t.uiXMow),
+            placeholder: S.intl.string(S.t.uiXMow),
             maxOptionsVisible: 5,
             value: "".concat(t.expire_grace_period),
             options: Object.values(d.u).filter(Number.isInteger).map(e => ({
               id: "".concat(e),
               value: "".concat(e),
-              label: _.intl.formatToPlainString(_.t.eGjmy5, {
+              label: S.intl.formatToPlainString(S.t.eGjmy5, {
                 days: e
               })
             })),
@@ -341,22 +341,22 @@ function L(e) {
       })
     }({
       integration: s,
-      labelText: Q,
+      labelText: J,
       onBehaviorChange: function(e) {
-        g.A.updateIntegration({
+        f.A.updateIntegration({
           expireBehavior: e
         })
       },
       onGracePeriodChange: function(e) {
-        g.A.updateIntegration({
+        f.A.updateIntegration({
           expireGracePeriod: e
         })
       }
-    }), !H && s.expire_behavior === c.F.KICK && (0, i.jsx)(m.Text, {
+    }), !H && s.expire_behavior === c.F.KICK && (0, i.jsx)(b.Text, {
       className: I.Ce,
       color: "text-feedback-critical",
       variant: "text-sm/normal",
-      children: _.intl.string(_.t.mThMlB)
+      children: S.intl.string(S.t.mThMlB)
     }), l.type === u.s.TWITCH ? function(e) {
       let {
         integration: t,
@@ -367,24 +367,24 @@ function L(e) {
         direction: x.A.Direction.VERTICAL,
         children: [(0, i.jsx)("div", {
           className: a()(P.QX, P.QB),
-          children: (0, i.jsx)(m.Checkbox, {
+          children: (0, i.jsx)(b.Checkbox, {
             checked: !!t.enable_emoticons,
             disabled: t.syncing,
             onChange: e => r(e),
-            label: _.intl.string(_.t["7r4OKg"])
+            label: S.intl.string(S.t["7r4OKg"])
           })
         }), (0, i.jsx)(x.A, {
           wrap: x.A.Wrap.WRAP,
           className: I.__invalid_twitchEmojis,
-          children: n.map((e, t) => (0, i.jsx)(p.m, {
+          children: n.map((e, t) => (0, i.jsx)(g.m, {
             text: e.name,
             children: (0, i.jsx)("img", {
-              alt: _.intl.formatToPlainString(_.t.n6ZZn4, {
+              alt: S.intl.formatToPlainString(S.t.n6ZZn4, {
                 name: e.name
               }),
               draggable: false,
               className: a()(I.Zg, "emoji", "jumboable"),
-              src: T.Ay.getEmojiURL({
+              src: w.Ay.getEmojiURL({
                 id: e.id,
                 animated: e.animated,
                 size: 28
@@ -397,29 +397,29 @@ function L(e) {
       integration: s,
       emojis: en,
       onToggle: function(e) {
-        g.A.updateIntegration({
+        f.A.updateIntegration({
           enableEmoticons: e
         })
       }
-    }) : null, (0, i.jsx)(m.cGx, {
+    }) : null, (0, i.jsx)(b.cGx, {
       className: I.Bd
     }), (0, i.jsx)(x.A, {
-      children: (0, i.jsx)(m.Button, {
+      children: (0, i.jsx)(b.Button, {
         size: "sm",
         variant: "critical-secondary",
-        text: _.intl.string(_.t.M6q6eX),
+        text: S.intl.string(S.t.M6q6eX),
         onClick: z
       })
     })]
-  })), (0, i.jsx)(m.ZpM, {
+  })), (0, i.jsx)(b.ZpM, {
     editable: true,
     className: I.Nr,
     children: (0, i.jsxs)(x.A, {
       direction: x.A.Direction.VERTICAL,
-      children: [l.enabled ? (0, i.jsx)(m.DUT, {
+      children: [l.enabled ? (0, i.jsx)(b.DUT, {
         className: I._S,
         "aria-expanded": L && !U,
-        onClick: M,
+        onClick: D,
         children: ei
       }) : ei, er]
     })

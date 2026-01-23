@@ -1,24 +1,24 @@
 /** Chunk was on 97492 **/
 /** chunk id: 682557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => a
+  A: () => s
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk283354 = require("./283354.jsx");
-let a = e => {
+let s = e => {
   let {
     entry: t,
     hideEditButton: n,
-    children: a,
-    onRequestOpen: s,
+    children: s,
+    onRequestOpen: a,
     onRequestClose: o,
     targetElementRef: c
   } = e;
   return (0, r.jsx)(l.YNO, {
     targetElementRef: c,
-    onRequestOpen: s,
+    onRequestOpen: a,
     onRequestClose: o,
     animation: l.YNO.Animation.NONE,
     position: "bottom",
@@ -34,6 +34,6 @@ let a = e => {
         hideEditButton: n
       })
     },
-    children: a
+    children: s
   })
 }

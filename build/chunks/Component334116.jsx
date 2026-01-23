@@ -14,7 +14,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk644434 = require("./644434.js");
 
-function f(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,32 +23,32 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 require("./518959.js");
-let h = (0, Chunk268218.Fe)({
+let g = (0, Chunk268218.Fe)({
     createPromise: () => n.e("71138").then(n.bind(n, 140539)),
     webpackId: 140539,
     name: "PopoutWindowChannelCall"
   }),
-  A = (0, Chunk268218.Fe)({
+  f = (0, Chunk268218.Fe)({
     createPromise: () => n.e("36133").then(n.bind(n, 943472)),
     webpackId: 943472,
     name: "PopoutWindowCallTile"
   }),
-  g = (0, Chunk268218.Fe)({
+  m = (0, Chunk268218.Fe)({
     createPromise: () => n.e("36308").then(n.bind(n, 911315)),
     webpackId: 911315,
     name: "PopoutWindowStageChannelCall"
   }),
-  m = (0, Chunk268218.Fe)({
+  A = (0, Chunk268218.Fe)({
     createPromise: () => n.e("71138").then(n.bind(n, 414760)),
     webpackId: 414760,
     name: "PopoutWindowRTCDebug"
   }),
-  b = (0, Chunk268218.Fe)({
+  _ = (0, Chunk268218.Fe)({
     createPromise: () => Promise.all([n.e("71447"), n.e("13492")]).then(n.bind(n, 860051)),
     webpackId: 860051,
     name: "PopoutWindowActivity"
   });
-class _ extends Chunk272355.A {
+class b extends Chunk272355.A {
   _initialize() {
     i.h.subscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), i.h.subscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), i.h.subscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), i.h.subscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.initializeStyleSheetObserver()
   }
@@ -59,10 +59,10 @@ class _ extends Chunk272355.A {
     let {
       channel: t
     } = e;
-    u.open(d.MLl.CHANNEL_CALL_POPOUT, e => t.isGuildStageVoice() ? (0, r.jsx)(g, {
+    u.open(d.MLl.CHANNEL_CALL_POPOUT, e => t.isGuildStageVoice() ? (0, r.jsx)(m, {
       windowKey: e,
       channelId: t.id
-    }) : (0, r.jsx)(h, {
+    }) : (0, r.jsx)(g, {
       windowKey: e,
       channelId: t.id
     }), {
@@ -89,7 +89,7 @@ class _ extends Chunk272355.A {
     null != this._observer && (this._observer.disconnect(), this._observer = null)
   }
   handleOpenRTCDebugPopout() {
-    u.open(d.MLl.RTC_DEBUG_POPOUT, e => (0, r.jsx)(m, {
+    u.open(d.MLl.RTC_DEBUG_POPOUT, e => (0, r.jsx)(A, {
       windowKey: e
     }), {
       defaultWidth: 854,
@@ -97,7 +97,7 @@ class _ extends Chunk272355.A {
     })
   }
   handleOpenActivityPopout() {
-    (0, l.Vz)(p.G, c.A.getDefaultLayout(p.G, 3), 3), u.open(d.MLl.ACTIVITY_POPOUT, e => (0, r.jsx)(b, {
+    (0, l.Vz)(p.G, c.A.getDefaultLayout(p.G, 3), 3), u.open(d.MLl.ACTIVITY_POPOUT, e => (0, r.jsx)(_, {
       windowKey: e
     }), {
       defaultWidth: 854,
@@ -105,12 +105,12 @@ class _ extends Chunk272355.A {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "_observer", null), f(this, "handleOpenCallTilePopout", e => {
+    super(...e), h(this, "_observer", null), h(this, "handleOpenCallTilePopout", e => {
       let {
         channelId: t,
         participantId: n
       } = e, i = (0, s.A)(t, n);
-      u.open(i, e => (0, r.jsx)(A, {
+      u.open(i, e => (0, r.jsx)(f, {
         windowKey: e,
         channelId: t,
         participantId: n
@@ -121,4 +121,4 @@ class _ extends Chunk272355.A {
     })
   }
 }
-let E = new _
+let E = new b

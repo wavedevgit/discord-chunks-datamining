@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk149650 = require("./149650.js");
 
-function b(e) {
+function y(e) {
   let {
     channel: t,
     type: n
@@ -35,13 +35,13 @@ function b(e) {
   }
 }
 
-function y(e) {
+function b(e) {
   let {
     thread: t,
     pendingScheduledMessage: n
   } = e, h = (0, d.Vp)({
     location: "ThreadsAlsoSendToChannelArea"
-  }), [b, y] = (0, s.yK)([p.A, f.A], () => [t.isThread() ? p.A.getChannel(t.parent_id) : null, f.A.getAlsoSendToChannel(t.id)]), O = i.useCallback(e => {
+  }), [y, b] = (0, s.yK)([p.A, f.A], () => [t.isThread() ? p.A.getChannel(t.parent_id) : null, f.A.getAlsoSendToChannel(t.id)]), O = i.useCallback(e => {
     _.default.track(m.HAw.MESSAGE_ALSO_SEND_TO_CHANNEL_TOGGLED, {
       value: e,
       guild_id: t.guild_id,
@@ -55,12 +55,12 @@ function y(e) {
     name: a.ImpressionNames.MESSAGE_ALSO_SEND_TO_CHANNEL,
     type: a.ImpressionTypes.VIEW
   }, {
-    disableTrack: null == b || !h.enabled
-  }, [b, h.enabled]);
-  let A = null != n;
-  if (!h.enabled || null == b) return null;
-  let v = (0, c.gU)(b),
-    S = g.intl.format(g.t.UqL10G, {
+    disableTrack: null == y || !h.enabled
+  }, [y, h.enabled]);
+  let v = null != n;
+  if (!h.enabled || null == y) return null;
+  let A = (0, c.gU)(y),
+    I = g.intl.format(g.t.UqL10G, {
       callToActionHook: (e, t) => (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
@@ -68,13 +68,13 @@ function y(e) {
         className: E.Pf,
         children: g.intl.string(g.t.Pi3JW7)
       }, t),
-      channelName: b.name,
+      channelName: y.name,
       channelNameHook: (e, t) => (0, r.jsxs)(o.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
         lineClamp: 1,
         className: E.Pf,
-        children: [null == v ? null : (0, r.jsx)(v, {
+        children: [null == A ? null : (0, r.jsx)(A, {
           color: "currentColor",
           className: E.Kk
         }, t), e]
@@ -83,10 +83,10 @@ function y(e) {
   return (0, r.jsx)("div", {
     className: E.kL,
     children: (0, r.jsx)(o.Checkbox, {
-      checked: y,
-      disabled: A,
+      checked: b,
+      disabled: v,
       onChange: O,
-      label: S,
+      label: I,
       labelType: "secondary"
     })
   })
@@ -99,11 +99,11 @@ function O(e) {
     pendingScheduledMessage: i
   } = e, {
     shouldShow: a
-  } = b({
+  } = y({
     channel: t,
     type: n
   });
-  return a ? (0, r.jsx)(y, {
+  return a ? (0, r.jsx)(b, {
     thread: t,
     pendingScheduledMessage: i
   }) : null

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   l: () => d,
-  u: () => o
+  u: () => c
 });
 var Chunk397927 = require("./397927.js"),
   Chunk918160 = require("./918160.jsx"),
@@ -11,7 +11,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk53594 = require("./53594.js"),
   Chunk411335 = require("./411335.js"),
   Chunk985018 = require("./985018.jsx");
-let o = e => {
+let c = e => {
   switch (e) {
     case a.uh.KEYWORD:
     case a.uh.USER_PROFILE:
@@ -22,7 +22,7 @@ let o = e => {
 };
 
 function d(e, t) {
-  var n, o, d, u, f, g;
+  var n, c, d, u, g, m;
   return null != e && (e => {
     switch (e) {
       case a.uh.KEYWORD:
@@ -36,35 +36,35 @@ function d(e, t) {
         returnfalse
     }
   })(e) ? {
-    headerText: null !== (n = null != (g = null == t ? true : t.name) ? g : s.i$[e].getDefaultRuleName()) && true !== n ? n : "",
-    headerSubtext: null != (o = ((e, t) => {
-      if ((0, l.wC)(t) && (0, l.KU)(t)) return t.triggerMetadata.regexPatterns.length > 0 ? c.intl.formatToPlainString(c.t.xZUvxR, {
+    headerText: null !== (n = null != (m = null == t ? true : t.name) ? m : s.i$[e].getDefaultRuleName()) && true !== n ? n : "",
+    headerSubtext: null != (c = ((e, t) => {
+      if ((0, l.wC)(t) && (0, l.KU)(t)) return t.triggerMetadata.regexPatterns.length > 0 ? o.intl.formatToPlainString(o.t.xZUvxR, {
         keywordCount: t.triggerMetadata.keywordFilter.length,
         regexPatternCount: t.triggerMetadata.regexPatterns.length
-      }) : c.intl.formatToPlainString(c.t.dJN7Lk, {
+      }) : o.intl.formatToPlainString(o.t.dJN7Lk, {
         keywordCount: t.triggerMetadata.keywordFilter.length
       })
-    })(0, t)) ? o : "",
+    })(0, t)) ? c : "",
     descriptionText: null != (d = (e => {
       switch (e) {
         case a.uh.KEYWORD:
-          return c.intl.string(c.t.TzvaeK);
+          return o.intl.string(o.t.TzvaeK);
         case a.uh.ML_SPAM:
-          return c.intl.string(c.t.jBZSQl);
+          return o.intl.string(o.t.jBZSQl);
         case a.uh.DEFAULT_KEYWORD_LIST:
-          return c.intl.string(c.t.Drc8ft);
+          return o.intl.string(o.t.Drc8ft);
         case a.uh.MENTION_SPAM:
-          return c.intl.string(c.t.flhXO4);
+          return o.intl.string(o.t.flhXO4);
         case a.uh.USER_PROFILE:
-          return c.intl.string(c.t.A35LyL);
+          return o.intl.string(o.t.A35LyL);
         default:
           return null
       }
     })(e)) ? d : "",
     descriptionSubtext: null != (u = (e => {
-      if (e === a.uh.KEYWORD) return c.intl.formatToPlainString(c.t.yNec2m, {})
+      if (e === a.uh.KEYWORD) return o.intl.formatToPlainString(o.t.yNec2m, {})
     })(e)) ? u : "",
-    icon: null != (f = (e => {
+    icon: null != (g = (e => {
       switch (e) {
         case a.uh.MENTION_SPAM:
           return r.XxR;
@@ -76,6 +76,6 @@ function d(e, t) {
         case a.uh.DEFAULT_KEYWORD_LIST:
           return r.ZB$
       }
-    })(e)) ? f : r.qYV
+    })(e)) ? g : r.qYV
   } : null
 }

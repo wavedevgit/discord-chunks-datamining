@@ -21,7 +21,7 @@ var Chunk735438 = require("./735438.js"),
   Chunk355097 = require("./355097.js"),
   Chunk705751 = require("./705751.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,11 +29,11 @@ function b(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let y = 10 + Math.random() * (10 * Chunk927813.A.Millis.SECOND),
+let b = 10 + Math.random() * (10 * Chunk927813.A.Millis.SECOND),
   O = 2 * Chunk927813.A.Millis.HOUR + Math.floor(Math.random() * (10 * Chunk927813.A.Millis.MINUTE)),
-  A = null,
-  v = false;
-class S extends Chunk439372.A {
+  v = null,
+  A = false;
+class I extends Chunk439372.A {
   _initialize() {
     _.bW.beforeSendCallbacks.push({
       hasChanges: () => false,
@@ -73,25 +73,25 @@ class S extends Chunk439372.A {
     })
   }
   constructor(...e) {
-    super(...e), b(this, "actions", {
-      POST_CONNECTION_OPEN: I,
-      CONNECTION_RESUMED: I,
+    super(...e), y(this, "actions", {
+      POST_CONNECTION_OPEN: S,
+      CONNECTION_RESUMED: S,
       CONNECTION_CLOSED: C,
       APP_STATE_UPDATE: T
     })
   }
 }
 
-function I() {
-  v = true, R(y, true)
+function S() {
+  A = true, R(b, true)
 }
 
 function T(e) {
-  v && "active" !== e.state && (clearTimeout(A), A = null, N(false))
+  A && "active" !== e.state && (clearTimeout(v), v = null, N(false))
 }
 
 function C() {
-  v && (clearTimeout(A), A = null, N(false))
+  A && (clearTimeout(v), v = null, N(false))
 }
 async function N(e) {
   R(O, false), !h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS) && (d.A.hasPendingUsage() || c.Ay.hasPendingUsage() || o.Ay.hasPendingUsage() || l.A.hasPendingUsage() || f.A.hasPendingUsage() && !e) && ((0, _.cE)(), await _.bW.loadIfNecessary()), i().forEach(_.Df, e => {
@@ -100,6 +100,6 @@ async function N(e) {
 }
 
 function R(e, t) {
-  null != A && clearTimeout(A), A = setTimeout(() => N(t), e)
+  null != v && clearTimeout(v), v = setTimeout(() => N(t), e)
 }
-let w = new S
+let w = new I

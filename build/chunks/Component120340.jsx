@@ -14,14 +14,14 @@ var Chunk492917 = require("./492917.js"),
 
 function d(t) {
   let {} = t, e = (0, l.RU)();
-  return (0, r.jsx)(s.A, {
+  return (0, r.jsx)(a.A, {
     heroImage: (0, r.jsx)(i.Zui, {
       alt: c.intl.string(c.t["2mJo21"])
     }),
     header: c.intl.string(c.t.eAbVfS),
     children: (0, r.jsx)("div", {
       className: o.lG,
-      children: (0, r.jsx)(a.A, {
+      children: (0, r.jsx)(s.A, {
         tips: e,
         headerText: c.intl.string(c.t["0QSL1C"])
       })

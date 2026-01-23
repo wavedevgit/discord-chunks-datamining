@@ -3,20 +3,20 @@
 "use strict";
 require.d(exports, {
   AN: () => g,
-  Ar: () => I,
+  Ar: () => S,
   DQ: () => m,
   E: () => em,
-  F1: () => ey,
+  F1: () => eb,
   GY: () => en,
   Ip: () => C,
   Ju: () => Y,
   KJ: () => M,
   NS: () => O,
-  PZ: () => S,
+  PZ: () => I,
   Po: () => ti,
   Q0: () => L,
   Qd: () => E,
-  Sx: () => A,
+  Sx: () => v,
   TO: () => f,
   TY: () => e_,
   Tz: () => _,
@@ -26,10 +26,10 @@ require.d(exports, {
   _o: () => tn,
   ak: () => eU,
   eF: () => d,
-  fL: () => y,
+  fL: () => b,
   he: () => p,
   iL: () => w,
-  ju: () => v,
+  ju: () => A,
   kW: () => T,
   nT: () => D,
   nx: () => V,
@@ -71,25 +71,25 @@ var Chunk852015 = require("./852015.js"),
   E = function(e) {
     return e[e.ACTIVITY_STATUS_UNSET = 0] = "ACTIVITY_STATUS_UNSET", e[e.ACTIVITY_STATUS_OFF = 1] = "ACTIVITY_STATUS_OFF", e[e.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS = 2] = "ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS", e[e.ACTIVITY_STATUS_ON = 3] = "ACTIVITY_STATUS_ON", e
   }({}),
-  b = function(e) {
+  y = function(e) {
     return e[e.OFF_FOR_NEW_GUILDS = 0] = "OFF_FOR_NEW_GUILDS", e[e.ON_FOR_NEW_GUILDS = 1] = "ON_FOR_NEW_GUILDS", e
   }({}),
-  y = function(e) {
+  b = function(e) {
     return e[e.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET = 0] = "SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET", e[e.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL = 1] = "SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL", e[e.SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME = 2] = "SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME", e[e.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE = 3] = "SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE", e
   }({}),
   O = function(e) {
     return e[e.UNSET_UI_DENSITY = 0] = "UNSET_UI_DENSITY", e[e.COMPACT = 1] = "COMPACT", e[e.COZY = 2] = "COZY", e[e.RESPONSIVE = 3] = "RESPONSIVE", e[e.DEFAULT = 4] = "DEFAULT", e
   }({}),
-  A = function(e) {
+  v = function(e) {
     return e[e.UNSET = 0] = "UNSET", e[e.DARK = 1] = "DARK", e[e.LIGHT = 2] = "LIGHT", e[e.DARKER = 3] = "DARKER", e[e.MIDNIGHT = 4] = "MIDNIGHT", e
   }({}),
-  v = function(e) {
+  A = function(e) {
     return e[e.MINT_APPLE = 0] = "MINT_APPLE", e[e.CITRUS_SHERBERT = 1] = "CITRUS_SHERBERT", e[e.RETRO_RAINCLOUD = 2] = "RETRO_RAINCLOUD", e[e.HANAMI = 3] = "HANAMI", e[e.SUNRISE = 4] = "SUNRISE", e[e.COTTON_CANDY = 5] = "COTTON_CANDY", e[e.LOFI_VIBES = 6] = "LOFI_VIBES", e[e.DESERT_KHAKI = 7] = "DESERT_KHAKI", e[e.SUNSET = 8] = "SUNSET", e[e.CHROMA_GLOW = 9] = "CHROMA_GLOW", e[e.FOREST = 10] = "FOREST", e[e.CRIMSON_MOON = 11] = "CRIMSON_MOON", e[e.MIDNIGHT_BLURPLE = 12] = "MIDNIGHT_BLURPLE", e[e.MARS = 13] = "MARS", e[e.DUSK = 14] = "DUSK", e[e.UNDER_THE_SEA = 15] = "UNDER_THE_SEA", e[e.EASTER_EGG = 16] = "EASTER_EGG", e[e.RETRO_STORM = 17] = "RETRO_STORM", e[e.NEON_NIGHTS = 18] = "NEON_NIGHTS", e[e.SEPIA = 19] = "SEPIA", e[e.STRAWBERRY_LEMONADE = 20] = "STRAWBERRY_LEMONADE", e[e.AURORA = 21] = "AURORA", e[e.BLURPLE_TWILIGHT = 22] = "BLURPLE_TWILIGHT", e
   }({}),
-  S = function(e) {
+  I = function(e) {
     return e[e.AUTO = 0] = "AUTO", e[e.H12 = 1] = "H12", e[e.H23 = 2] = "H23", e
   }({}),
-  I = function(e) {
+  S = function(e) {
     return e[e.LAUNCH_PAD_DISABLED = 0] = "LAUNCH_PAD_DISABLED", e[e.LAUNCH_PAD_GESTURE_FULL_SCREEN = 1] = "LAUNCH_PAD_GESTURE_FULL_SCREEN", e[e.LAUNCH_PAD_GESTURE_RIGHT_EDGE = 2] = "LAUNCH_PAD_GESTURE_RIGHT_EDGE", e[e.LAUNCH_PAD_PULL_TAB = 3] = "LAUNCH_PAD_PULL_TAB", e
   }({}),
   T = function(e) {
@@ -149,10 +149,10 @@ class P extends Chunk324281.G {
           a.debug = eE.internalBinaryRead(e, e.uint32(), n, a.debug);
           break;
         case 10:
-          a.gameLibrary = ey.internalBinaryRead(e, e.uint32(), n, a.gameLibrary);
+          a.gameLibrary = eb.internalBinaryRead(e, e.uint32(), n, a.gameLibrary);
           break;
         case 11:
-          a.status = eA.internalBinaryRead(e, e.uint32(), n, a.status);
+          a.status = ev.internalBinaryRead(e, e.uint32(), n, a.status);
           break;
         case 12:
           a.localization = eT.internalBinaryRead(e, e.uint32(), n, a.localization);
@@ -206,7 +206,7 @@ class P extends Chunk324281.G {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.versions && c.u.internalBinaryWrite(e.versions, t.tag(1, r.O0.LengthDelimited).fork(), n).join(), e.inbox && L.internalBinaryWrite(e.inbox, t.tag(2, r.O0.LengthDelimited).fork(), n).join(), e.guilds && M.internalBinaryWrite(e.guilds, t.tag(3, r.O0.LengthDelimited).fork(), n).join(), e.userContent && Z.internalBinaryWrite(e.userContent, t.tag(4, r.O0.LengthDelimited).fork(), n).join(), e.voiceAndVideo && en.internalBinaryWrite(e.voiceAndVideo, t.tag(5, r.O0.LengthDelimited).fork(), n).join(), e.textAndImages && ef.internalBinaryWrite(e.textAndImages, t.tag(6, r.O0.LengthDelimited).fork(), n).join(), e.notifications && e_.internalBinaryWrite(e.notifications, t.tag(7, r.O0.LengthDelimited).fork(), n).join(), e.privacy && em.internalBinaryWrite(e.privacy, t.tag(8, r.O0.LengthDelimited).fork(), n).join(), e.debug && eE.internalBinaryWrite(e.debug, t.tag(9, r.O0.LengthDelimited).fork(), n).join(), e.gameLibrary && ey.internalBinaryWrite(e.gameLibrary, t.tag(10, r.O0.LengthDelimited).fork(), n).join(), e.status && eA.internalBinaryWrite(e.status, t.tag(11, r.O0.LengthDelimited).fork(), n).join(), e.localization && eT.internalBinaryWrite(e.localization, t.tag(12, r.O0.LengthDelimited).fork(), n).join(), e.appearance && ew.internalBinaryWrite(e.appearance, t.tag(13, r.O0.LengthDelimited).fork(), n).join(), e.guildFolders && eM.internalBinaryWrite(e.guildFolders, t.tag(14, r.O0.LengthDelimited).fork(), n).join(), e.favorites && eV.internalBinaryWrite(e.favorites, t.tag(15, r.O0.LengthDelimited).fork(), n).join(), e.audioContextSettings && eK.internalBinaryWrite(e.audioContextSettings, t.tag(16, r.O0.LengthDelimited).fork(), n).join(), e.communities && eq.internalBinaryWrite(e.communities, t.tag(17, r.O0.LengthDelimited).fork(), n).join(), e.broadcast && e0.internalBinaryWrite(e.broadcast, t.tag(18, r.O0.LengthDelimited).fork(), n).join(), e.clips && e2.internalBinaryWrite(e.clips, t.tag(19, r.O0.LengthDelimited).fork(), n).join(), e.forLater && e5.internalBinaryWrite(e.forLater, t.tag(20, r.O0.LengthDelimited).fork(), n).join(), e.safetySettings && e6.internalBinaryWrite(e.safetySettings, t.tag(21, r.O0.LengthDelimited).fork(), n).join(), e.icymiSettings && e8.internalBinaryWrite(e.icymiSettings, t.tag(22, r.O0.LengthDelimited).fork(), n).join(), e.applications && te.internalBinaryWrite(e.applications, t.tag(23, r.O0.LengthDelimited).fork(), n).join(), e.ads && tl.internalBinaryWrite(e.ads, t.tag(24, r.O0.LengthDelimited).fork(), n).join(), e.inAppFeedbackSettings && t_.internalBinaryWrite(e.inAppFeedbackSettings, t.tag(25, r.O0.LengthDelimited).fork(), n).join();
+    e.versions && c.u.internalBinaryWrite(e.versions, t.tag(1, r.O0.LengthDelimited).fork(), n).join(), e.inbox && L.internalBinaryWrite(e.inbox, t.tag(2, r.O0.LengthDelimited).fork(), n).join(), e.guilds && M.internalBinaryWrite(e.guilds, t.tag(3, r.O0.LengthDelimited).fork(), n).join(), e.userContent && Z.internalBinaryWrite(e.userContent, t.tag(4, r.O0.LengthDelimited).fork(), n).join(), e.voiceAndVideo && en.internalBinaryWrite(e.voiceAndVideo, t.tag(5, r.O0.LengthDelimited).fork(), n).join(), e.textAndImages && ef.internalBinaryWrite(e.textAndImages, t.tag(6, r.O0.LengthDelimited).fork(), n).join(), e.notifications && e_.internalBinaryWrite(e.notifications, t.tag(7, r.O0.LengthDelimited).fork(), n).join(), e.privacy && em.internalBinaryWrite(e.privacy, t.tag(8, r.O0.LengthDelimited).fork(), n).join(), e.debug && eE.internalBinaryWrite(e.debug, t.tag(9, r.O0.LengthDelimited).fork(), n).join(), e.gameLibrary && eb.internalBinaryWrite(e.gameLibrary, t.tag(10, r.O0.LengthDelimited).fork(), n).join(), e.status && ev.internalBinaryWrite(e.status, t.tag(11, r.O0.LengthDelimited).fork(), n).join(), e.localization && eT.internalBinaryWrite(e.localization, t.tag(12, r.O0.LengthDelimited).fork(), n).join(), e.appearance && ew.internalBinaryWrite(e.appearance, t.tag(13, r.O0.LengthDelimited).fork(), n).join(), e.guildFolders && eM.internalBinaryWrite(e.guildFolders, t.tag(14, r.O0.LengthDelimited).fork(), n).join(), e.favorites && eV.internalBinaryWrite(e.favorites, t.tag(15, r.O0.LengthDelimited).fork(), n).join(), e.audioContextSettings && eK.internalBinaryWrite(e.audioContextSettings, t.tag(16, r.O0.LengthDelimited).fork(), n).join(), e.communities && eq.internalBinaryWrite(e.communities, t.tag(17, r.O0.LengthDelimited).fork(), n).join(), e.broadcast && e0.internalBinaryWrite(e.broadcast, t.tag(18, r.O0.LengthDelimited).fork(), n).join(), e.clips && e2.internalBinaryWrite(e.clips, t.tag(19, r.O0.LengthDelimited).fork(), n).join(), e.forLater && e5.internalBinaryWrite(e.forLater, t.tag(20, r.O0.LengthDelimited).fork(), n).join(), e.safetySettings && e6.internalBinaryWrite(e.safetySettings, t.tag(21, r.O0.LengthDelimited).fork(), n).join(), e.icymiSettings && e8.internalBinaryWrite(e.icymiSettings, t.tag(22, r.O0.LengthDelimited).fork(), n).join(), e.applications && te.internalBinaryWrite(e.applications, t.tag(23, r.O0.LengthDelimited).fork(), n).join(), e.ads && tl.internalBinaryWrite(e.ads, t.tag(24, r.O0.LengthDelimited).fork(), n).join(), e.inAppFeedbackSettings && t_.internalBinaryWrite(e.inAppFeedbackSettings, t.tag(25, r.O0.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.f$.onWrite : i)(this.typeName, e, t), t
   }
@@ -260,12 +260,12 @@ class P extends Chunk324281.G {
       no: 10,
       name: "game_library",
       kind: "message",
-      T: () => ey
+      T: () => eb
     }, {
       no: 11,
       name: "status",
       kind: "message",
-      T: () => eA
+      T: () => ev
     }, {
       no: 12,
       name: "localization",
@@ -2294,7 +2294,7 @@ class eh extends Chunk324281.G {
       no: 25,
       name: "guilds_leaderboard_opt_out_default",
       kind: "enum",
-      T: () => ["discord_protos.discord_users.v1.GuildsLeaderboardOptOutDefault", b]
+      T: () => ["discord_protos.discord_users.v1.GuildsLeaderboardOptOutDefault", y]
     }, {
       no: 26,
       name: "allow_game_friend_dms_in_discord",
@@ -2309,7 +2309,7 @@ class eh extends Chunk324281.G {
       no: 28,
       name: "slayer_sdk_receive_dms_in_game",
       kind: "enum",
-      T: () => ["discord_protos.discord_users.v1.SlayerSDKReceiveInGameDMs", y]
+      T: () => ["discord_protos.discord_users.v1.SlayerSDKReceiveInGameDMs", b]
     }, {
       no: 29,
       name: "default_guilds_activity_restricted_v2",
@@ -2368,7 +2368,7 @@ class eg extends Chunk324281.G {
   }
 }
 let eE = new eg;
-class eb extends Chunk324281.G {
+class ey extends Chunk324281.G {
   create(e) {
     let t = {};
     return globalThis.Object.defineProperty(t, a.$, {
@@ -2424,7 +2424,7 @@ class eb extends Chunk324281.G {
     }])
   }
 }
-let ey = new eb;
+let eb = new ey;
 class eO extends Chunk324281.G {
   create(e) {
     let t = {
@@ -2445,7 +2445,7 @@ class eO extends Chunk324281.G {
           a.status = o.hU.internalBinaryRead(e, e.uint32(), n, a.status);
           break;
         case 2:
-          a.customStatus = eS.internalBinaryRead(e, e.uint32(), n, a.customStatus);
+          a.customStatus = eI.internalBinaryRead(e, e.uint32(), n, a.customStatus);
           break;
         case 3:
           a.showCurrentGame = o._t.internalBinaryRead(e, e.uint32(), n, a.showCurrentGame);
@@ -2466,7 +2466,7 @@ class eO extends Chunk324281.G {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.status && o.hU.internalBinaryWrite(e.status, t.tag(1, r.O0.LengthDelimited).fork(), n).join(), e.customStatus && eS.internalBinaryWrite(e.customStatus, t.tag(2, r.O0.LengthDelimited).fork(), n).join(), e.showCurrentGame && o._t.internalBinaryWrite(e.showCurrentGame, t.tag(3, r.O0.LengthDelimited).fork(), n).join(), "0" !== e.statusExpiresAtMs && t.tag(4, r.O0.Bit64).fixed64(e.statusExpiresAtMs), e.statusCreatedAtMs && o.ol.internalBinaryWrite(e.statusCreatedAtMs, t.tag(5, r.O0.LengthDelimited).fork(), n).join();
+    e.status && o.hU.internalBinaryWrite(e.status, t.tag(1, r.O0.LengthDelimited).fork(), n).join(), e.customStatus && eI.internalBinaryWrite(e.customStatus, t.tag(2, r.O0.LengthDelimited).fork(), n).join(), e.showCurrentGame && o._t.internalBinaryWrite(e.showCurrentGame, t.tag(3, r.O0.LengthDelimited).fork(), n).join(), "0" !== e.statusExpiresAtMs && t.tag(4, r.O0.Bit64).fixed64(e.statusExpiresAtMs), e.statusCreatedAtMs && o.ol.internalBinaryWrite(e.statusCreatedAtMs, t.tag(5, r.O0.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.f$.onWrite : i)(this.typeName, e, t), t
   }
@@ -2480,7 +2480,7 @@ class eO extends Chunk324281.G {
       no: 2,
       name: "custom_status",
       kind: "message",
-      T: () => eS
+      T: () => eI
     }, {
       no: 3,
       name: "show_current_game",
@@ -2499,8 +2499,8 @@ class eO extends Chunk324281.G {
     }])
   }
 }
-let eA = new eO;
-class ev extends Chunk324281.G {
+let ev = new eO;
+class eA extends Chunk324281.G {
   create(e) {
     let t = {
       text: "",
@@ -2586,8 +2586,8 @@ class ev extends Chunk324281.G {
     }])
   }
 }
-let eS = new ev;
-class eI extends Chunk324281.G {
+let eI = new eA;
+class eS extends Chunk324281.G {
   create(e) {
     let t = {};
     return globalThis.Object.defineProperty(t, a.$, {
@@ -2643,7 +2643,7 @@ class eI extends Chunk324281.G {
     }])
   }
 }
-let eT = new eI;
+let eT = new eS;
 class eC extends Chunk324281.G {
   create(e) {
     let t = {};
@@ -2770,7 +2770,7 @@ class eR extends Chunk324281.G {
       no: 1,
       name: "theme",
       kind: "enum",
-      T: () => ["discord_protos.discord_users.v1.Theme", A]
+      T: () => ["discord_protos.discord_users.v1.Theme", v]
     }, {
       no: 2,
       name: "developer_mode",
@@ -2805,7 +2805,7 @@ class eR extends Chunk324281.G {
       no: 9,
       name: "timestamp_hour_cycle",
       kind: "enum",
-      T: () => ["discord_protos.discord_users.v1.TimestampHourCycle", S]
+      T: () => ["discord_protos.discord_users.v1.TimestampHourCycle", I]
     }, {
       no: 10,
       name: "happening_now_cards_disabled",
@@ -2815,7 +2815,7 @@ class eR extends Chunk324281.G {
       no: 11,
       name: "launch_pad_mode",
       kind: "enum",
-      T: () => ["discord_protos.discord_users.v1.LaunchPadMode", I]
+      T: () => ["discord_protos.discord_users.v1.LaunchPadMode", S]
     }, {
       no: 12,
       name: "ui_density",

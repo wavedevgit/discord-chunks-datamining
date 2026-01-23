@@ -31,10 +31,10 @@ function C(e) {
     onClose: n
   } = e, [C, S] = l.useState(false), {
     trackUserProfileEditAction: O
-  } = (0, p.NJ)(), E = (0, i.bG)([v.default], () => v.default.getId()), N = function() {
-    let e, t, n = (0, i.bG)([v.default], () => v.default.getId()),
-      a = (0, x.A)(n),
-      r = l.useMemo(() => a.filter(e => e instanceof h.R), [a]),
+  } = (0, p.NJ)(), E = (0, r.bG)([v.default], () => v.default.getId()), T = function() {
+    let e, t, n = (0, r.bG)([v.default], () => v.default.getId()),
+      a = (0, g.A)(n),
+      i = l.useMemo(() => a.filter(e => e instanceof h.R), [a]),
       s = (e = (0, d.ul)({
         location: "UserProfileAccountPopoutApplicationWidgetCoachmark"
       }), l.useMemo(() => null == e ? true : e.filter(e => e.isEligibleForEditProfileUpsell()), [e])),
@@ -44,54 +44,54 @@ function C(e) {
       }, [s]),
       p = (t = (0, u.A)(m), l.useMemo(() => t.filter(j.Vq), [t])),
       {
-        tokens: f,
-        fetched: b
+        tokens: x,
+        fetched: f
       } = (0, o.j)(m),
-      g = (0, c.U9)(p);
+      b = (0, c.U9)(p);
     return l.useMemo(() => {
-      if (null == s || null == f || !b) return null;
+      if (null == s || null == x || !f) return null;
       let e = [],
         t = [];
       for (let n of s) {
-        let a = f.find(e => e.application.id === n.applicationId),
-          l = r.find(e => e.applicationId === n.applicationId),
-          i = p.find(e => e.id === n.applicationId),
-          s = g.find(e => e.context.application.id === n.applicationId);
-        if (null == i) return null;
+        let a = x.find(e => e.application.id === n.applicationId),
+          l = i.find(e => e.applicationId === n.applicationId),
+          r = p.find(e => e.id === n.applicationId),
+          s = b.find(e => e.context.application.id === n.applicationId);
+        if (null == r) return null;
         null != a && null == l ? e.push({
           type: "linked",
           config: n,
-          application: i,
+          application: r,
           dismissibleContent: n.editProfileLinkedDc
         }) : null == a && (null == s ? true : s.preferredFlow) != null && t.push({
           type: "unlinked",
           config: n,
-          application: i,
+          application: r,
           dismissibleContent: n.editProfileUnlinkedDc,
           authFlow: s.preferredFlow
         })
       }
       return [...e, ...t]
-    }, [s, f, b, r, p, g])
+    }, [s, x, f, i, p, b])
   }(), {
-    analyticsLocations: T
+    analyticsLocations: N
   } = (0, s.Ay)();
-  return null == N || 0 === N.length ? null : (0, a.jsx)(m.Ay, {
-    contentTypes: N.map(e => e.dismissibleContent),
+  return null == T || 0 === T.length ? null : (0, a.jsx)(m.Ay, {
+    contentTypes: T.map(e => e.dismissibleContent),
     children: e => {
       let {
         visibleContent: l,
-        markAsDismissed: i
-      } = e, s = N.find(e => e.dismissibleContent === l);
+        markAsDismissed: r
+      } = e, s = T.find(e => e.dismissibleContent === l);
       if (null == s) return null;
       let o = "linked" === s.type,
-        c = () => (0, b.openUserProfileModal)({
+        c = () => (0, f.openUserProfileModal)({
           userId: E,
-          tabSection: _.RP.WIDGETS
+          tabSection: y.RP.WIDGETS
         }).then(() => {
-          i(y.i.TAKE_ACTION), n()
+          r(_.i.TAKE_ACTION), n()
         });
-      return (0, a.jsx)(r.AM, {
+      return (0, a.jsx)(i.AM, {
         targetElementRef: t,
         position: "right",
         gradientColor: "blue",
@@ -103,7 +103,7 @@ function C(e) {
           applicationName: s.application.name
         }),
         body: o ? A.intl.string(A.t["63Kso0"]) : A.intl.string(A.t.HwXoeC),
-        onRequestClose: () => i(y.i.USER_DISMISS),
+        onRequestClose: () => r(_.i.USER_DISMISS),
         actions: [o ? {
           text: A.intl.string(A.t.VSLDly),
           onClick: () => {
@@ -111,7 +111,7 @@ function C(e) {
               let e;
               return e = new h.R({
                 applicationId: s.application.id
-              }), void((0, f.Y5)(e), O(function(e) {
+              }), void((0, x.Y5)(e), O(function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     a = Object.keys(n);
@@ -130,7 +130,7 @@ function C(e) {
                 return e
               }({
                 action: "WIDGET_ADDED"
-              }, e.getProfileEditAnalyticsOptions())), (0, g.XA)(_.jM.WIDGET_ADDED))
+              }, e.getProfileEditAnalyticsOptions())), (0, b.XA)(y.jM.WIDGET_ADDED))
             }).finally(() => S(false))
           },
           loading: C
@@ -141,7 +141,7 @@ function C(e) {
               onConfirm: () => {
                 S(true), c().finally(() => S(false))
               },
-              analyticsLocations: T
+              analyticsLocations: N
             })
           },
           loading: C

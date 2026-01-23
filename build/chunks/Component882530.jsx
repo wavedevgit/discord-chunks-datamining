@@ -2,7 +2,7 @@
 /** chunk id: 882530, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -41,19 +41,19 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = y(e, t), Object.getOwnPropertySymbols)
+  if (a = b(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -68,7 +68,7 @@ let O = l().memoize(e => {
   }
   return t ? d.A.unsafe_rawColors.BLACK.css : d.A.unsafe_rawColors.WHITE.css
 });
-class A extends Chunk64700.PureComponent {
+class v extends Chunk64700.PureComponent {
   render() {
     let e, {
         selected: t,
@@ -123,15 +123,15 @@ class A extends Chunk64700.PureComponent {
           {
             onClick: t
           } = e;
-        t(b(e, ["onClick"]))
+        t(y(e, ["onClick"]))
       }
     }), g(this, "handleClick", () => {
       let e = this.props,
         {
           onClick: t
         } = e;
-      t(b(e, ["onClick"]))
+      t(y(e, ["onClick"]))
     })
   }
 }
-let v = A
+let A = v

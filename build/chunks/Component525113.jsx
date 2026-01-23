@@ -14,8 +14,8 @@ function a(e) {
   var t, n;
   let {
     className: a,
-    color: c = i.A.unsafe_rawColors.BRAND_500.css
-  } = e, o = function(e, t) {
+    color: o = i.A.unsafe_rawColors.BRAND_500.css
+  } = e, c = function(e, t) {
     if (null == e) return {};
     var n, r, i, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -49,9 +49,9 @@ function a(e) {
       })
     }
     return e
-  }({}, o), n = n = {
+  }({}, c), n = n = {
     text: s.intl.string(s.t.G6GWZ4),
-    color: c,
+    color: o,
     className: a
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

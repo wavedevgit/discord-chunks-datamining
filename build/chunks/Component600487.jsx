@@ -66,15 +66,15 @@ let q = () => {
     [ea, es] = i.useState(false),
     [eo, el] = i.useState(false),
     ec = (0, o.bG)([g.A], () => g.A.getPremiumTypeSubscription()),
-    eu = null != ec ? (0, y.EL)(ec) : null,
-    ed = null != eu ? y.Ay.getSkuIdForPlan(eu.planId) : null,
+    eu = null != ec ? (0, b.EL)(ec) : null,
+    ed = null != eu ? b.Ay.getSkuIdForPlan(eu.planId) : null,
     ef = null !== ed && ed !== B.pe.TIER_2 ? B.pe.TIER_2 : null,
     ep = (0, O.cg)(),
     e_ = null != ep && ep,
     {
       analyticsLocations: eh
     } = (0, _.Ay)(p.A.PREMIUM_MARKETING),
-    em = (0, v.A)({
+    em = (0, A.A)({
       location: "PremiumMarketing"
     }),
     eg = !J && !er && (em || !et);
@@ -83,26 +83,26 @@ let q = () => {
   }, []);
   let eE = [V.k.HOME, V.k.WHATS_NEW, V.k.BEST_OF_NITRO, V.k.PLANS, V.k.COMPARE],
     {
-      navBarSections: eb,
-      activeSectionId: ey
+      navBarSections: ey,
+      activeSectionId: eb
     } = (0, G.o)(eE),
     {
       home: eO,
-      whatsNew: eA,
-      bestOfNitro: ev,
-      plans: eS,
-      compare: eI
-    } = eb,
+      whatsNew: ev,
+      bestOfNitro: eA,
+      plans: eI,
+      compare: eS
+    } = ey,
     eT = em ? W : K,
     {
       variant: eC
-    } = (0, A.Ay)("PremiumBrandRefreshMarketingHeroHeading"),
-    eN = (0, I.V)(),
-    eR = (0, S.O)(),
+    } = (0, v.Ay)("PremiumBrandRefreshMarketingHeroHeading"),
+    eN = (0, S.V)(),
+    eR = (0, I.O)(),
     ew = E.A.getAlmostExpiringTrialOffers([B.pe.TIER_2]).length > 0 && null != eN && null != eN.expires_at && eN.trial_id !== B.Dw,
     eP = E.A.getAlmostExpiringDiscountOffers([B.pe.TIER_2]).length > 0 && null != eR && null != eR.expires_at,
     eD = ew ? eN.expires_at : eP ? eR.expires_at : null,
-    ex = eC === A.CJ.HERO_COUNTDOWN && (ew || eP) && null != eD,
+    ex = eC === v.CJ.HERO_COUNTDOWN && (ew || eP) && null != eD,
     eL = (0, r.jsxs)("div", {
       className: s()(eT.container, eT.responsiveContainer, {
         [eT.containerBackground]: em || $,
@@ -115,8 +115,8 @@ let q = () => {
             [W.topOfPageGradientWithCountdown]: ex
           })
         }), (0, r.jsx)(F.A, {
-          navBarSections: eb,
-          activeSectionId: ey
+          navBarSections: ey,
+          activeSectionId: eb
         })]
       }), !em && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
@@ -156,7 +156,7 @@ let q = () => {
           })
         }), (0, r.jsx)("div", {
           className: eT.whatsNewSectionContainer,
-          ref: eA.ref,
+          ref: ev.ref,
           children: (0, r.jsx)(R.Ct, {
             shouldLoadVideo: eo,
             isReducedMotion: Z,
@@ -164,7 +164,7 @@ let q = () => {
           })
         }), (0, r.jsx)("div", {
           className: eT.bestOfNitroSectionContainer,
-          ref: ev.ref,
+          ref: eA.ref,
           children: (0, r.jsx)(R.oO, {
             shouldLoadVideo: eo,
             isReducedMotion: Z,
@@ -172,7 +172,7 @@ let q = () => {
           })
         }), (0, r.jsx)("div", {
           className: eT.premiumTierCardsContainer,
-          ref: eS.ref,
+          ref: eI.ref,
           children: (0, r.jsx)(l.L, {
             innerRef: n,
             onChange: e => ei(e),
@@ -187,7 +187,7 @@ let q = () => {
           })
         }), (0, r.jsx)("div", {
           className: eT.planComparisonTableContainer,
-          ref: eI.ref,
+          ref: eS.ref,
           children: em ? (0, r.jsx)(M.A, {}) : (0, r.jsx)(D.A, {})
         })]
       }), !em && (0, r.jsx)(P.A, {
@@ -198,7 +198,7 @@ let q = () => {
       }), (0, r.jsx)(l.L, {
         innerRef: q,
         onChange: e => {
-          e && !ea && (b.default.track(H.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+          e && !ea && (y.default.track(H.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
             location_stack: eh
           }), es(true))
         },

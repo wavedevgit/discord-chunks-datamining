@@ -2,7 +2,7 @@
 /** chunk id: 384200, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./896048.js");
 var r, Chunk735438 = require("./735438.js"),
   a = require.n(Chunk735438),
@@ -41,7 +41,7 @@ function E(e) {
   }, h[t] = 0, m.delete(t)
 }
 
-function b(e) {
+function y(e) {
   let {
     streamKey: t,
     retryAfter: n
@@ -52,7 +52,7 @@ function b(e) {
   }, m.delete(t)
 }
 
-function y(e) {
+function b(e) {
   var t;
   let {
     streamKey: n
@@ -81,7 +81,7 @@ function O(e) {
     return delete _[s], delete h[s], true
   }, false)
 }
-class A extends(r = Chunk311907.Ay.Store) {
+class v extends(r = Chunk311907.Ay.Store) {
   getPreviewURL(e, t, n) {
     let r = _[(0, l._z)({
       streamType: null != e ? c.U4.GUILD : c.U4.CALL,
@@ -122,12 +122,12 @@ class A extends(r = Chunk311907.Ay.Store) {
     return m.has(r)
   }
 }
-u(A, "displayName", "ApplicationStreamPreviewStore");
-let v = new A(Chunk73153.h, {
+u(v, "displayName", "ApplicationStreamPreviewStore");
+let A = new v(Chunk73153.h, {
   CONNECTION_OPEN: g,
   LOGOUT: g,
-  STREAM_PREVIEW_FETCH_START: y,
+  STREAM_PREVIEW_FETCH_START: b,
   STREAM_PREVIEW_FETCH_SUCCESS: E,
-  STREAM_PREVIEW_FETCH_FAIL: b,
+  STREAM_PREVIEW_FETCH_FAIL: y,
   VOICE_STATE_UPDATES: O
 })

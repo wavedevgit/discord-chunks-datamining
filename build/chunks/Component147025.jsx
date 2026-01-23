@@ -51,7 +51,7 @@ function L(e) {
 }
 
 function j(e) {
-  var t, n, i, a, g, E, b, y;
+  var t, n, i, a, g, E, y, b;
   let {
     type: C,
     disabled: N,
@@ -75,26 +75,26 @@ function j(e) {
     iconOrder: W,
     expressionsCombinedIntoEmojiButton: K,
     reducedGap: z
-  } = v.C.useConfig({
+  } = A.C.useConfig({
     location: "ChannelTextAreaButtons"
   }), q = (0, m.RQ)(e => e.lastActiveView), X = (null == (t = C.gifs) ? true : t.button) != null && (null == (n = C.stickers) ? true : n.button) != null && null != q ? q : D.kx.EMOJI, Z = [], Q = !j.isDM() || true === j.recipients || j.recipients.length > 1, $ = (0, c.bG)([O.default], () => Q ? null : O.default.getUser(j.recipients[0])), J = (0, f.H)({
     channel: j,
     chatInputType: C
   }), ee = (null == (i = C.submit) ? true : i.button) != null && ((null == (a = C.submit) ? true : a.ignorePreference) || V);
-  if (!l.Fr && ((null == (E = C.gifts) ? true : E.button) != null && null == B && !Y && (null == $ || A.Ay.isPremiumEligible($)) && Z.push({
+  if (!l.Fr && ((null == (E = C.gifts) ? true : E.button) != null && null == B && !Y && (null == $ || v.Ay.isPremiumEligible($)) && Z.push({
       key: "gift",
       node: (0, r.jsx)(L, {
         disabled: N,
         channel: j
       }, "gift")
-    }), (null == (b = C.gifs) ? true : b.button) != null && null == B && G && Z.push({
+    }), (null == (y = C.gifs) ? true : y.button) != null && null == B && G && Z.push({
       key: "gif",
       node: (0, r.jsx)(T.A, {
         disabled: N,
         type: C,
         channel: j
       }, "gif")
-    }), (null == (y = C.stickers) ? true : y.button) != null && null == B && G && Z.push({
+    }), (null == (b = C.stickers) ? true : b.button) != null && null == B && G && Z.push({
       key: "sticker",
       node: (0, r.jsx)(w.A, {
         disabled: N,
@@ -108,7 +108,7 @@ function j(e) {
         inputType: C,
         channel: j
       }, "upload")
-    }), C !== S.oU.NORMAL || ee || Z.push({
+    }), C !== I.oU.NORMAL || ee || Z.push({
       key: "spacer",
       node: (0, r.jsx)("div", {
         className: x.jH
@@ -117,7 +117,7 @@ function j(e) {
     let e = K ? X : D.kx.EMOJI;
     Z.push({
       key: "emoji",
-      node: (0, r.jsx)(I.A, {
+      node: (0, r.jsx)(S.A, {
         disabled: N,
         type: C,
         pickerView: e,
@@ -148,10 +148,10 @@ function j(e) {
 }
 
 function M(e, t, n) {
-  return (0, c.bG)([b.A, y.A], () => {
-    let r = b.A.getStickerPreview(e, t.drafts.type),
+  return (0, c.bG)([y.A, b.A], () => {
+    let r = y.A.getStickerPreview(e, t.drafts.type),
       i = null != r && r.length > 0;
-    return 0 === y.A.getUploads(e, t.drafts.type).length && n && !i
+    return 0 === b.A.getUploads(e, t.drafts.type).length && n && !i
   })
 }
 let k = Chunk64700.memo(j)

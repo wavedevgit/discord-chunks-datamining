@@ -2,7 +2,7 @@
 /** chunk id: 839837, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => c
 });
 var Chunk64700 = require("./64700.js"),
   Chunk262828 = require("./262828.js"),
@@ -11,21 +11,21 @@ var Chunk64700 = require("./64700.js"),
   Chunk705751 = require("./705751.js"),
   Chunk311750 = require("./311750.js");
 
-function o(e) {
+function c(e) {
   var t;
   let {
     application: n,
-    loading: o
+    loading: c
   } = (0, i.A)(e, a.S7.GUILD_ROLE_SUBSCRIPTIONS), {
     payoutsByPeriod: d,
     loading: u
   } = (0, s.A)(null == n ? true : n.id, {
-    groupType: c.x1.GUILD_PRODUCT,
+    groupType: o.x1.GUILD_PRODUCT,
     teamId: null == n || null == (t = n.team) ? true : t.id
   }), {
-    currentPeriod: f,
-    previousPeriods: g,
-    metrics: b
+    currentPeriod: g,
+    previousPeriods: m,
+    metrics: p
   } = r.useMemo(() => {
     let {
       currentPeriod: e,
@@ -38,11 +38,11 @@ function o(e) {
     }
   }, [d]);
   return {
-    loading: o || u,
+    loading: c || u,
     payoutsByPeriod: d,
-    currentPeriod: f,
-    previousPeriods: g,
-    metrics: b,
+    currentPeriod: g,
+    previousPeriods: m,
+    metrics: p,
     application: n
   }
 }

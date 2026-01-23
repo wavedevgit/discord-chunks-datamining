@@ -2,8 +2,8 @@
 /** chunk id: 136523, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  default: () => S,
-  m: () => A
+  default: () => I,
+  m: () => v
 }), require("./896048.js"), require("./747238.js"), require("./812715.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,23 +24,23 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk171927 = require("./171927.js"),
   Chunk379649 = require("./379649.js");
-let A = "VoiceChannelStatusModal",
-  v = 500;
+let v = "VoiceChannelStatusModal",
+  A = 500;
 
-function S(e) {
+function I(e) {
   let {
     channel: t,
     transitionState: n,
-    sourceAnalyticsLocations: S,
-    onClose: I
-  } = e, T = (0, s.bG)([u.A], () => u.A.getChannelStatus(t)), C = (0, s.bG)([h.A], () => h.A.getMediaSessionId()), [N, R] = i.useState(null != T ? T : ""), [w, P] = i.useState(false), [D, x] = i.useState(null), L = (0, s.bG)([m.default], () => m.default.getCurrentUser()), j = N.length > v;
+    sourceAnalyticsLocations: I,
+    onClose: S
+  } = e, T = (0, s.bG)([u.A], () => u.A.getChannelStatus(t)), C = (0, s.bG)([h.A], () => h.A.getMediaSessionId()), [N, R] = i.useState(null != T ? T : ""), [w, P] = i.useState(false), [D, x] = i.useState(null), L = (0, s.bG)([m.default], () => m.default.getCurrentUser()), j = N.length > A;
   i.useEffect(() => {
     g.default.track(E.HAw.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
       guild_id: t.guild_id,
-      location_stack: S
+      location_stack: I
     })
-  }, [t.guild_id, S]);
+  }, [t.guild_id, I]);
   let M = e => {
       x(new o.LG(e, e.status).getAnyErrorMessage())
     },
@@ -61,7 +61,7 @@ function S(e) {
       }
     },
     U = async e => {
-      N === T && I(), null == e || e.preventDefault(), x(null), P(true);
+      N === T && S(), null == e || e.preventDefault(), x(null), P(true);
       let n = N.length,
         r = N.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
         i = _.Ay.parse(t, N),
@@ -77,8 +77,8 @@ function S(e) {
             media_session_id: C,
             raw_length: n,
             text_length: r,
-            location_stack: S
-          }), I()) : M(e)
+            location_stack: I
+          }), S()) : M(e)
         } catch (e) {
           M(e)
         }
@@ -90,13 +90,13 @@ function S(e) {
       shouldClear: false,
       shouldRefocus: true
     })), H = (0, r.jsx)(a.D0$, {
-      label: b.intl.string(b.t.Fq5lwN),
+      label: y.intl.string(y.t.Fq5lwN),
       errorMessage: D,
       children: (0, r.jsx)(p.Ay, {
-        innerClassName: y.Tg,
+        innerClassName: b.Tg,
         textValue: N,
         richValue: G,
-        placeholder: b.intl.formatToPlainString(b.t.DUXxBh, {
+        placeholder: y.intl.formatToPlainString(y.t.DUXxBh, {
           channelName: t.name
         }),
         focused: true,
@@ -107,30 +107,30 @@ function S(e) {
         canMentionRoles: false,
         canMentionChannels: false,
         allowNewLines: false,
-        parentModalKey: A,
-        maxCharacterCount: v,
-        showRemainingCharsAfterCount: v / 2,
+        parentModalKey: v,
+        maxCharacterCount: A,
+        showRemainingCharsAfterCount: A / 2,
         emojiPickerCloseOnModalOuterClick: true
       })
     });
   return (0, r.jsx)(a.ExpressiveModal, {
     transitionState: n,
-    onClose: I,
+    onClose: S,
     graphic: {
       type: "image",
       src: O
     },
-    title: b.intl.string(b.t["5CyJBd"]),
-    subtitle: b.intl.string(b.t.NRBYju),
+    title: y.intl.string(y.t["5CyJBd"]),
+    subtitle: y.intl.string(y.t.NRBYju),
     actions: [{
       variant: "secondary",
-      text: b.intl.string(b.t["ETE/oC"]),
-      onClick: I
+      text: y.intl.string(y.t["ETE/oC"]),
+      onClick: S
     }, {
       variant: "primary",
       loading: w,
       disabled: j,
-      text: b.intl.string(b.t.XqK2I2),
+      text: y.intl.string(y.t.XqK2I2),
       onClick: U
     }],
     children: H

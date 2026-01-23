@@ -71,38 +71,38 @@ async function E(e) {
     inputApplication: a,
     analyticsLocations: m,
     launchingComponentId: E,
-    sectionName: b,
-    inviterUserId: y
-  } = e, O = f.Ay.getEmbeddedActivitiesForChannel(t).find(e => e.applicationId === n && (null == r || e.launchId === r)), A = a;
-  if (null == A) {
+    sectionName: y,
+    inviterUserId: b
+  } = e, O = f.Ay.getEmbeddedActivitiesForChannel(t).find(e => e.applicationId === n && (null == r || e.launchId === r)), v = a;
+  if (null == v) {
     let e = await i.Ay.fetchApplication(n);
-    A = s.Ay.createFromServer(e)
+    v = s.Ay.createFromServer(e)
   }
-  if (null == O || null == A) return;
-  let v = u.default.getCurrentUser();
-  async function S() {
+  if (null == O || null == v) return;
+  let A = u.default.getCurrentUser();
+  async function I() {
     null != O && await (0, p.A)({
       applicationId: O.applicationId,
       activityChannelId: t,
       locationObject: {},
       analyticsLocations: m,
       componentId: E,
-      sectionName: b,
-      inviterUserId: y
+      sectionName: y,
+      inviterUserId: b
     })
   }
   g({
     embeddedActivityJoinability: (0, h.Ay)({
-      userId: null == v ? true : v.id,
-      application: A,
+      userId: null == A ? true : A.id,
+      application: v,
       channelId: t,
-      currentUser: v,
+      currentUser: A,
       isActivitiesEnabledForCurrentPlatform: (0, _.A)(),
       ChannelStore: o.A,
       VoiceStateStore: d.A,
       PermissionStore: c.A,
       GuildStore: l.A
     }),
-    handleCanJoin: S
+    handleCanJoin: I
   })
 }

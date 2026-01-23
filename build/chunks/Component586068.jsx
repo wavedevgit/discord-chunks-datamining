@@ -4,7 +4,7 @@
 require.d(exports, {
   KJ: () => N,
   N_: () => P,
-  OS: () => I,
+  OS: () => S,
   Y9: () => w,
   c3: () => T,
   lg: () => R,
@@ -31,7 +31,7 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk649134 = require("./649134.js");
 
-function v(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,7 +39,7 @@ function v(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class S extends Chunk64700.PureComponent {
+class I extends Chunk64700.PureComponent {
   componentDidMount() {
     let {
       focused: e,
@@ -77,18 +77,18 @@ class S extends Chunk64700.PureComponent {
       },
       tabIndex: false,
       innerRef: this.setRef,
-      className: A.Ke,
+      className: v.Ke,
       onClick: this.handleClick,
       onMouseEnter: this.handleMouseEnter,
       onContextMenu: r,
       children: [t, null != n ? (0, i.jsx)("div", {
-        className: A.fN,
+        className: v.fN,
         children: 0 | n
       }) : null]
     })
   }
   constructor(...e) {
-    super(...e), v(this, "node", true), v(this, "handleClick", e => {
+    super(...e), A(this, "node", true), A(this, "handleClick", e => {
       e.preventDefault();
       let {
         onClick: t
@@ -96,30 +96,30 @@ class S extends Chunk64700.PureComponent {
         node: n
       } = this;
       null != n && t(e, n)
-    }), v(this, "handleMouseEnter", e => {
+    }), A(this, "handleMouseEnter", e => {
       let {
         onMouseEnter: t
       } = this.props, {
         node: n
       } = this;
       null != n && t(e, n)
-    }), v(this, "setRef", e => {
+    }), A(this, "setRef", e => {
       this.node = e
     })
   }
 }
-class I extends Chunk64700.Component {
+class S extends Chunk64700.Component {
   renderIcon() {
     let {
       guild: e
     } = this.props;
     return (0, i.jsx)("div", {
-      className: A._C,
+      className: v._C,
       children: (0, i.jsx)(_.A, {
         tabIndex: false,
         guild: e,
         size: _.A.Sizes.MINI,
-        className: A.$f
+        className: v.$f
       })
     })
   }
@@ -128,9 +128,9 @@ class I extends Chunk64700.Component {
       guild: e
     } = this.props;
     return (0, i.jsx)("div", {
-      className: A.UU,
+      className: v.UU,
       children: (0, i.jsx)("span", {
-        className: A.YW,
+        className: v.YW,
         children: e.name
       })
     })
@@ -141,9 +141,9 @@ class I extends Chunk64700.Component {
       children: t
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: e ? A.XB : A.xr,
+      className: e ? v.XB : v.xr,
       children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
-        className: A.Lr,
+        className: v.Lr,
         children: t
       })]
     })
@@ -166,7 +166,7 @@ class I extends Chunk64700.Component {
       score: s,
       id: o
     } = this.props;
-    return (0, i.jsx)(S, {
+    return (0, i.jsx)(I, {
       id: o,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
@@ -188,11 +188,11 @@ class T extends(r = Chunk64700.Component) {
     if (null == n) return null;
     let r = null != (e = (0, d.A)(t)) ? e : "";
     return (0, i.jsx)("div", {
-      className: A.zc,
+      className: v.zc,
       role: "img",
       "aria-label": r,
       children: (0, i.jsx)(n, {
-        className: A.Kk,
+        className: v.Kk,
         size: "xs",
         color: "currentColor"
       })
@@ -206,17 +206,17 @@ class T extends(r = Chunk64700.Component) {
       isMentionLowImportance: s
     } = this.props;
     return null != n && n > 0 && (e = (0, i.jsx)(f.A, {
-      className: A.qS,
+      className: v.qS,
       value: n,
       lowImportance: s
     })), null != r && (t = (0, i.jsx)("span", {
-      className: A.N4,
-      children: (0, c.m1)(r, b.default, E.A)
+      className: v.N4,
+      children: (0, c.m1)(r, y.default, E.A)
     })), (0, i.jsxs)("div", {
-      className: A.UU,
+      className: v.UU,
       children: [(0, i.jsx)("span", {
-        className: A.YW,
-        children: (0, c.m1)(a, b.default, E.A)
+        className: v.YW,
+        children: (0, c.m1)(a, y.default, E.A)
       }), e, this.renderVoiceStates(), t]
     })
   }
@@ -226,7 +226,7 @@ class T extends(r = Chunk64700.Component) {
       channel: t
     } = this.props;
     return null == e ? null : (0, i.jsx)(m.A, {
-      className: A.x7,
+      className: v.x7,
       guildId: t.guild_id,
       users: e.map(e => {
         let {
@@ -247,9 +247,9 @@ class T extends(r = Chunk64700.Component) {
     } = this.props;
     return (0, i.jsxs)("div", {
       "aria-hidden": true,
-      className: e || null != t && t > 0 ? A.XB : A.xr,
+      className: e || null != t && t > 0 ? v.XB : v.xr,
       children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
-        className: A.Lr,
+        className: v.Lr,
         children: n
       })]
     })
@@ -258,7 +258,7 @@ class T extends(r = Chunk64700.Component) {
     var e;
     let {
       channel: t
-    } = this.props, n = null == (e = g.A.getGuild(this.props.channel.guild_id)) ? true : e.name, r = (0, c.m1)(t, b.default, E.A), i = (0, d.A)(t);
+    } = this.props, n = null == (e = g.A.getGuild(this.props.channel.guild_id)) ? true : e.name, r = (0, c.m1)(t, y.default, E.A), i = (0, d.A)(t);
     return O.intl.formatToPlainString(O.t["Vw/da+"], {
       name: r,
       type: i,
@@ -275,7 +275,7 @@ class T extends(r = Chunk64700.Component) {
       score: s,
       id: o
     } = this.props;
-    return (0, i.jsx)(S, {
+    return (0, i.jsx)(I, {
       id: o,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
@@ -288,7 +288,7 @@ class T extends(r = Chunk64700.Component) {
     })
   }
 }
-v(T, "defaultProps", {
+A(T, "defaultProps", {
   unread: false
 });
 class C extends Chunk64700.Component {
@@ -298,7 +298,7 @@ class C extends Chunk64700.Component {
       status: t
     } = this.props;
     return (0, i.jsx)("div", {
-      className: A.IU,
+      className: v.IU,
       children: (0, i.jsx)(s.euF, {
         src: (0, l.Y)(e),
         size: s._3J.SIZE_20,
@@ -313,13 +313,13 @@ class C extends Chunk64700.Component {
       channel: n
     } = this.props;
     return null != t && t > 0 && (e = (0, i.jsx)(f.A, {
-      className: A.qS,
+      className: v.qS,
       value: t
     })), (0, i.jsxs)("div", {
-      className: A.UU,
+      className: v.UU,
       children: [(0, i.jsx)("span", {
-        className: A.YW,
-        children: (0, c.m1)(n, b.default, E.A)
+        className: v.YW,
+        children: (0, c.m1)(n, y.default, E.A)
       }), e]
     })
   }
@@ -329,9 +329,9 @@ class C extends Chunk64700.Component {
       children: t
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: null != e && e > 0 ? A.XB : A.xr,
+      className: null != e && e > 0 ? v.XB : v.xr,
       children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
-        className: A.Lr,
+        className: v.Lr,
         children: t
       })]
     })
@@ -340,7 +340,7 @@ class C extends Chunk64700.Component {
     let {
       channel: e,
       mentions: t
-    } = this.props, n = (0, c.m1)(e, b.default, E.A);
+    } = this.props, n = (0, c.m1)(e, y.default, E.A);
     return null != t && t > 0 ? O.intl.formatToPlainString(O.t.LYdVfN, {
       name: n,
       mentions: t
@@ -358,7 +358,7 @@ class C extends Chunk64700.Component {
       score: s,
       id: o
     } = this.props;
-    return (0, i.jsx)(S, {
+    return (0, i.jsx)(I, {
       id: o,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
@@ -379,7 +379,7 @@ class N extends Chunk64700.Component {
       isMobile: n
     } = this.props;
     return (0, i.jsx)("div", {
-      className: A.zc,
+      className: v.zc,
       children: (0, i.jsx)(s.euF, {
         src: e.getAvatarURL(true, 20),
         "aria-hidden": true,
@@ -395,7 +395,7 @@ class N extends Chunk64700.Component {
         comparator: n
       } = this.props,
       r = E.A.getNickname(t.id);
-    return ((e = n === t.tag || null == n || "" === n ? t.username : n) === t.username || e === t.id) && (e = null != r ? r : y.Ay.getName(t)), e
+    return ((e = n === t.tag || null == n || "" === n ? t.username : n) === t.username || e === t.id) && (e = null != r ? r : b.Ay.getName(t)), e
   }
   renderName() {
     let e, {
@@ -404,16 +404,16 @@ class N extends Chunk64700.Component {
       } = this.props,
       r = this.getDisplayNickname();
     return null != n && n > 0 && (e = (0, i.jsx)(f.A, {
-      className: A.qS,
+      className: v.qS,
       value: n
     })), (0, i.jsxs)("div", {
-      className: A.UU,
+      className: v.UU,
       children: [(0, i.jsx)("span", {
-        className: A.YW,
+        className: v.YW,
         children: r
       }), e, (0, i.jsx)("span", {
-        className: A.Xh,
-        children: y.Ay.getUserTag(t)
+        className: v.Xh,
+        children: b.Ay.getUserTag(t)
       })]
     })
   }
@@ -423,9 +423,9 @@ class N extends Chunk64700.Component {
       mentions: t
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: null != t && t > 0 ? A.XB : A.xr,
+      className: null != t && t > 0 ? v.XB : v.xr,
       children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
-        className: A.Lr,
+        className: v.Lr,
         children: e
       })]
     })
@@ -434,7 +434,7 @@ class N extends Chunk64700.Component {
     let {
       mentions: e,
       user: t
-    } = this.props, n = this.getDisplayNickname(), r = y.Ay.getUserTag(t);
+    } = this.props, n = this.getDisplayNickname(), r = b.Ay.getUserTag(t);
     return null != e && e > 0 ? O.intl.formatToPlainString(O.t["6b9UrR"], {
       name: n,
       id: r,
@@ -454,7 +454,7 @@ class N extends Chunk64700.Component {
       score: s,
       id: o
     } = this.props;
-    return (0, i.jsx)(S, {
+    return (0, i.jsx)(I, {
       id: o,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
@@ -474,17 +474,17 @@ class R extends Chunk64700.Component {
       application: t
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: A.xr,
+      className: v.xr,
       children: [(0, i.jsx)("div", {
-        className: A.zc,
+        className: v.zc,
         children: (0, i.jsx)(p.A, {
           tabIndex: false,
-          className: A.Gt,
+          className: v.Gt,
           game: t,
-          size: A.D0
+          size: v.D0
         })
       }), t.name, (0, i.jsx)("div", {
-        className: A.Lr,
+        className: v.Lr,
         children: e
       })]
     })
@@ -497,7 +497,7 @@ class R extends Chunk64700.Component {
       focused: r,
       id: a
     } = this.props;
-    return (0, i.jsx)(S, {
+    return (0, i.jsx)(I, {
       id: a,
       onMouseEnter: e,
       onClick: t,
@@ -510,11 +510,11 @@ class R extends Chunk64700.Component {
 class w extends Chunk64700.Component {
   render() {
     return (0, i.jsx)("div", {
-      className: A.__invalid_resultDefault,
+      className: v.__invalid_resultDefault,
       children: (0, i.jsx)("div", {
-        className: A.xr,
+        className: v.xr,
         children: (0, i.jsx)("div", {
-          className: A.wx,
+          className: v.wx,
           children: this.props.children
         })
       })
@@ -538,12 +538,12 @@ class P extends Chunk64700.Component {
       size: "xs",
       color: "currentColor"
     })), (0, i.jsxs)("div", {
-      className: A.xr,
+      className: v.xr,
       children: [(0, i.jsx)("div", {
-        className: A.zc,
+        className: v.zc,
         children: t
       }), e, (0, i.jsx)("div", {
-        className: A.Lr,
+        className: v.Lr,
         children: r
       })]
     })
@@ -558,7 +558,7 @@ class P extends Chunk64700.Component {
       score: s,
       id: o
     } = this.props;
-    return (0, i.jsx)(S, {
+    return (0, i.jsx)(I, {
       id: o,
       onMouseEnter: e,
       onClick: t,
@@ -639,15 +639,15 @@ class D extends Chunk64700.Component {
         })
     }
     return (0, i.jsxs)("div", {
-      className: A.xr,
+      className: v.xr,
       children: [(0, i.jsx)("div", {
-        className: A.zc,
+        className: v.zc,
         children: r
       }), (0, i.jsx)("div", {
-        className: A.UU,
+        className: v.UU,
         children: n
       }), (0, i.jsx)("div", {
-        className: A.Lr,
+        className: v.Lr,
         children: l
       })]
     })
@@ -662,7 +662,7 @@ class D extends Chunk64700.Component {
       score: s,
       id: o
     } = this.props;
-    return (0, i.jsx)(S, {
+    return (0, i.jsx)(I, {
       id: o,
       onMouseEnter: e,
       onClick: t,

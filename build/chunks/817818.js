@@ -2,11 +2,11 @@
 /** chunk id: 817818, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Tg: () => b,
+  Tg: () => y,
   h9: () => O,
-  jx: () => y,
-  l8: () => S,
-  sy: () => A
+  jx: () => b,
+  l8: () => I,
+  sy: () => v
 }), require("./938796.js");
 var Chunk665260 = require("./665260.js"),
   Chunk562465 = require("./562465.js"),
@@ -60,14 +60,14 @@ function E(e, t) {
   }), e
 }
 
-function b(e) {
+function y(e) {
   u.default.track(p.HAw.GUILD_ONBOARDING_LOADED, E(m({}, (0, s.H$)(e)), {
     has_new_prompts: false,
     number_of_prompts: 0
   }))
 }
 
-function y(e) {
+function b(e) {
   return a.h.dispatch({
     type: "GUILD_ONBOARDING_PROMPTS_FETCH_START",
     guildId: e
@@ -95,26 +95,26 @@ async function O(e) {
   if (null == s || !s.features.has(p.GuildFeatures.GUILD_ONBOARDING)) return Promise.resolve();
   let u = d.A.shouldFetchPrompts(e),
     f = d.A.getOnboardingPrompts(e);
-  if (!u && f.length > 0) return f.every(e => !e.inOnboarding) ? I(e) : a || A(e), Promise.resolve();
-  let h = await y(e);
-  return Array.isArray(h) && h.every(e => !e.inOnboarding) ? (I(e), Promise.resolve()) : (a || A(e), h)
+  if (!u && f.length > 0) return f.every(e => !e.inOnboarding) ? S(e) : a || v(e), Promise.resolve();
+  let h = await b(e);
+  return Array.isArray(h) && h.every(e => !e.inOnboarding) ? (S(e), Promise.resolve()) : (a || v(e), h)
 }
 
-function A(e) {
+function v(e) {
   a.h.dispatch({
     type: "GUILD_ONBOARDING_START",
     guildId: e
   })
 }
-let v = false,
-  S = false;
+let A = false,
+  I = false;
 
-function I(e) {
+function S(e) {
   u.default.track(p.HAw.GUILD_ONBOARDING_STEP_VIEWED, E(m({}, (0, s.H$)(e)), {
-    step: v,
+    step: A,
     required: true
   })), u.default.track(p.HAw.GUILD_ONBOARDING_STEP_COMPLETED, E(m({}, (0, s.H$)(e)), {
-    step: v,
+    step: A,
     skipped: false,
     is_final_step: true,
     in_onboarding: true

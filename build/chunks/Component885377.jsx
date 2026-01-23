@@ -24,21 +24,21 @@ let s = {
       secondary: u
     } = e, b = function(e, t) {
       if (null == e) return {};
-      var r, n, c, i = {};
+      var r, n, i, a = {};
       if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (c = 0, r = Reflect.ownKeys(e); c < r.length; c++) n = r[c], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-        return i
+        for (i = 0, r = Reflect.ownKeys(e); i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
+        return a
       }
-      if (i = function(e, t) {
+      if (a = function(e, t) {
           if (null == e) return {};
-          var r, n, c = {},
-            i = Object.getOwnPropertyNames(e);
-          for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (c[r] = e[r]);
-          return c
+          var r, n, i = {},
+            a = Object.getOwnPropertyNames(e);
+          for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+          return i
         }(e, t), Object.getOwnPropertySymbols)
-        for (c = 0, r = Object.getOwnPropertySymbols(e); c < r.length; c++) n = r[c], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-      return i
-    }(e, ["children", "premiumModalType", "primary", "secondary"]), f = i.useMemo(() => {
+        for (i = 0, r = Object.getOwnPropertySymbols(e); i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
+      return a
+    }(e, ["children", "premiumModalType", "primary", "secondary"]), m = a.useMemo(() => {
       let e = [];
       return null != u && e.push({
         variant: "secondary",
@@ -50,7 +50,7 @@ let s = {
         onClick: p.onClick
       }), e
     }, [p, u]);
-    return (0, c.jsxs)(l.Modal, (t = function(e) {
+    return (0, i.jsxs)(l.Modal, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);
@@ -68,11 +68,11 @@ let s = {
       }
       return e
     }({}, b), r = r = {
-      actions: f,
-      children: [(0, c.jsx)("div", {
-        className: a[s[o]]
-      }), (0, c.jsx)("div", {
-        className: a.message,
+      actions: m,
+      children: [(0, i.jsx)("div", {
+        className: c[s[o]]
+      }), (0, i.jsx)("div", {
+        className: c.message,
         children: n
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

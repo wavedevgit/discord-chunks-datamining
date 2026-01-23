@@ -65,11 +65,11 @@ function G(e) {
       userId: B.id,
       activity: V
     }),
-    et = (0, i.bG)([T.A, O.A, x.A, v.A], () => Q || null != Z && (0, j.A)({
+    et = (0, i.bG)([T.A, O.A, x.A, A.A], () => Q || null != Z && (0, j.A)({
       LibraryApplicationStore: T.A,
       LaunchableGameStore: O.A,
       DispatchApplicationStore: x.A,
-      ConnectedAppsStore: v.A,
+      ConnectedAppsStore: A.A,
       applicationId: Z
     })),
     en = (0, i.bG)([c.Ay], () => Array.from(c.Ay.getSelfEmbeddedActivities().values()).some(e => {
@@ -80,24 +80,24 @@ function G(e) {
       return (t === (null == V ? true : V.application_id) || t === (null == F ? true : F.applicationId)) && (0, f.H)(n) === ee
     })),
     er = (0, i.bG)([D.A], () => null != V && null != V.application_id && D.A.getState(V.application_id, M.xL.JOIN) === M.eAD.LOADING),
-    ei = (0, b.h)(Z),
-    ea = (0, y.e)(ei),
+    ei = (0, y.h)(Z),
+    ea = (0, b.e)(ei),
     es = (0, _.vG)({
       userId: B.id,
       activity: V,
       channelId: ee,
       application: ei
     }),
-    eo = (0, i.bG)([A.A, I.A, S.A, N.A, R.A, P.A, C.A], () => null != F ? es === _.Gy.CAN_JOIN : (0, d.A)({
+    eo = (0, i.bG)([v.A, S.A, I.A, N.A, R.A, P.A, C.A], () => null != F ? es === _.Gy.CAN_JOIN : (0, d.A)({
       user: B,
       activity: V,
       application: ei,
       channelId: ee,
       currentUser: $,
       isEmbedded: Q,
-      ChannelStore: A.A,
-      GuildStore: I.A,
-      GuildMemberCountStore: S.A,
+      ChannelStore: v.A,
+      GuildStore: S.A,
+      GuildMemberCountStore: I.A,
       RelationshipStore: N.A,
       SelectedChannelStore: R.A,
       VoiceStateStore: P.A,
@@ -122,7 +122,7 @@ function G(e) {
       if (null == ep || null == Z) return;
       let n = (0, h.A)(t, M.jUm.EMBEDDED),
         r = R.A.getVoiceChannelId(),
-        i = A.A.getChannel(r);
+        i = v.A.getChannel(r);
       if (await s.A.join({
           userId: e.id,
           sessionId: ep,

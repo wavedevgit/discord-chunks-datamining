@@ -19,9 +19,9 @@ function p(e) {
     targetElementRef: t,
     markAsDismissed: n,
     children: p
-  } = e, h = (0, l.bG)([o.default], () => o.default.getId()), f = (0, l.bG)([r.A], () => r.A.useReducedMotion);
+  } = e, h = (0, l.bG)([o.default], () => o.default.getId()), x = (0, l.bG)([i.A], () => i.A.useReducedMotion);
   return (0, a.jsxs)(a.Fragment, {
-    children: [p, (0, a.jsx)(i.AM, {
+    children: [p, (0, a.jsx)(r.AM, {
       targetElementRef: t,
       title: m.intl.string(m.t.gxcsSq),
       body: m.intl.string(m.t["8L7E5l"]),
@@ -30,7 +30,7 @@ function p(e) {
       },
       graphic: {
         type: "image",
-        src: f ? "https://cdn.discordapp.com/assets/content/1b55390a202dcca3843b6c9205af0379cfa072f34d8b9217bce04aba4d373e5b.png" : "https://cdn.discordapp.com/assets/content/fdb6d4e8a2f01f917d2025a8ca58ebd55e4eada92df1d5386f73d91d6acad1f9.png"
+        src: x ? "https://cdn.discordapp.com/assets/content/1b55390a202dcca3843b6c9205af0379cfa072f34d8b9217bce04aba4d373e5b.png" : "https://cdn.discordapp.com/assets/content/fdb6d4e8a2f01f917d2025a8ca58ebd55e4eada92df1d5386f73d91d6acad1f9.png"
       },
       position: "top",
       align: "left",

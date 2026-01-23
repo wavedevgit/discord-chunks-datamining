@@ -1,12 +1,12 @@
 /** Chunk was on 48654 **/
 /** chunk id: 321565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => S
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk935462 = require("./935462.jsx"),
   Chunk397927 = require("./397927.js"),
   Chunk707685 = require("./707685.js"),
@@ -21,19 +21,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk285953 = require("./285953.js");
 
-function S(e, t) {
+function g(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   true === n || d.A.useReducedMotion ? e.set(t) : e.start(t)
 }
 
-function h(e) {
+function S(e) {
   let {
     onClose: t,
     items: n,
     startingIndex: r,
-    enabledContentHarmTypeFlags: h,
-    shouldHideMediaOptions: T = false,
-    transitionState: _
+    enabledContentHarmTypeFlags: S,
+    shouldHideMediaOptions: _ = false,
+    transitionState: T
   } = e, j = function(e, t) {
     if (null == e) return {};
     var n, l, i, r = {};
@@ -50,7 +50,7 @@ function h(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) l = n[i], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (r[l] = e[l]);
     return r
-  }(e, ["onClose", "items", "startingIndex", "enabledContentHarmTypeFlags", "shouldHideMediaOptions", "transitionState"]), [A, v] = i.useState(null != r ? r : 0), [C, I] = i.useState(false), [x, N] = (0, s.zhh)(() => ({
+  }(e, ["onClose", "items", "startingIndex", "enabledContentHarmTypeFlags", "shouldHideMediaOptions", "transitionState"]), [A, v] = i.useState(null != r ? r : 0), [C, I] = i.useState(false), [N, x] = (0, s.zhh)(() => ({
     scale: d.A.useReducedMotion ? 1 : .9,
     x: 0,
     y: 0,
@@ -65,9 +65,9 @@ function h(e) {
     }
   }, [t]), i.useEffect(() => {
     var e, t;
-    _ === s.ip4.ENTERING && S(x.scale, 1), _ === s.ip4.ENTERED && (u.A.disable(), u.A.enableTemp(c.w)), _ === s.ip4.HIDDEN && (S(x.scale, .9), u.A.disable(), u.A.enableTemp(c.b)), _ === s.ip4.EXITING && S(x.scale, .9);
+    T === s.ip4.ENTERING && g(N.scale, 1), T === s.ip4.ENTERED && (u.A.disable(), u.A.enableTemp(c.w)), T === s.ip4.HIDDEN && (g(N.scale, .9), u.A.disable(), u.A.enableTemp(c.b)), T === s.ip4.EXITING && g(N.scale, .9);
     let n = () => {
-        u.A.disable(), _ === s.ip4.ENTERED ? u.A.enableTemp(c.w) : u.A.enableTemp(c.b)
+        u.A.disable(), T === s.ip4.ENTERED ? u.A.enableTemp(c.w) : u.A.enableTemp(c.b)
       },
       l = () => {
         u.A.disableTemp()
@@ -76,25 +76,25 @@ function h(e) {
     return null == i || i.addEventListener("focus", n), null == i || i.addEventListener("blur", l), () => {
       null == i || i.removeEventListener("focus", n), null == i || i.removeEventListener("blur", l), u.A.disableTemp()
     }
-  }, [_, x]);
+  }, [T, N]);
   let R = i.useCallback(e => {
       v(e), (0, f.Yq)(f.NJ.SELECTED_ITEM_CHANGE)
     }, []),
     P = i.useMemo(() => ({
-      scale: x.scale,
-      x: x.x,
-      y: x.y,
+      scale: N.scale,
+      x: N.x,
+      y: N.y,
       setScale(e, t) {
-        S(x.scale, e, null == t ? true : t.immediate)
+        g(N.scale, e, null == t ? true : t.immediate)
       },
       setOffset(e, t, n) {
-        S(x.x, e, null == n ? true : n.immediate), S(x.y, t, null == n ? true : n.immediate)
+        g(N.x, e, null == n ? true : n.immediate), g(N.y, t, null == n ? true : n.immediate)
       },
       zoomed: C,
       setZoomed(e) {
-        I(e), S(x.scale, e ? 2.5 : 1), e || (S(x.x, 0), S(x.y, 0))
+        I(e), g(N.scale, e ? 2.5 : 1), e || (g(N.x, 0), g(N.y, 0))
       }
-    }), [C, x]);
+    }), [C, N]);
   return (0, l.jsx)(s.NPJ, {
     theme: y.NJ8.MIDNIGHT,
     children: e => {
@@ -119,20 +119,20 @@ function h(e) {
       }({
         "data-migration-pending": true,
         hideShadow: true,
-        className: a()(g.O, e),
-        transitionState: _
+        className: o()(h.O, e),
+        transitionState: T
       }, j), r = r = {
         size: s.rIJ.DYNAMIC,
-        animation: o.WM.SUBTLE,
+        animation: a.WM.SUBTLE,
         fullscreenOnMobile: false,
         onClick: t,
         "aria-label": E.intl.string(E.t.AMTX3j),
         parentComponent: "MediaViewerModal",
-        children: (0, l.jsxs)(b.f.Provider, {
+        children: (0, l.jsxs)(m.f.Provider, {
           value: P,
-          children: [(0, l.jsx)(m.A, {
+          children: [(0, l.jsx)(b.A, {
             item: n[A],
-            hideMediaOptions: T,
+            hideMediaOptions: _,
             onClose: t
           }), (0, l.jsx)("div", {
             style: {
@@ -143,8 +143,8 @@ function h(e) {
             items: n,
             startIndex: A,
             onIndexChange: R,
-            enabledContentHarmTypeFlags: h,
-            shouldHideMediaOptions: T
+            enabledContentHarmTypeFlags: S,
+            shouldHideMediaOptions: _
           })]
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

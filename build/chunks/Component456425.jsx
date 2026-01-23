@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 456425, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $: () => V
+  $: () => B
 }), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -37,23 +37,23 @@ var Chunk627968 = require("./627968.js"),
   Chunk537997 = require("./537997.js");
 
 function M(e) {
-  var t, n, l, i, s;
+  var t, n, l, i, a;
   let {
     item: c
   } = e, u = null == (n = c.message) ? true : n.content;
   if (null == u) return (0, r.jsx)("div", {});
-  let d = null != (t = m.default.getUser(null == (i = c.message) || null == (l = i.author) ? true : l.id)) ? t : new g.A(null == (s = c.message) ? true : s.author),
-    p = f.A.parse(u);
+  let d = null != (t = b.default.getUser(null == (i = c.message) || null == (l = i.author) ? true : l.id)) ? t : new m.A(null == (a = c.message) ? true : a.author),
+    h = p.A.parse(u);
   return (0, r.jsxs)("div", {
     className: w.PI,
     children: [(0, r.jsx)(o.A, {
       user: d,
-      size: a._3J.SIZE_24
-    }), (0, r.jsx)(a.Text, {
+      size: s._3J.SIZE_24
+    }), (0, r.jsx)(s.Text, {
       className: w.Bp,
       variant: "text-sm/normal",
       lineClamp: 2,
-      children: p
+      children: h
     })]
   })
 }
@@ -65,10 +65,10 @@ function L(e) {
     }
   } = e;
   if (null == t) return null;
-  let n = f.A.parse(t);
+  let n = p.A.parse(t);
   return (0, r.jsx)("div", {
     className: w.CD,
-    children: (0, r.jsx)(a.Text, {
+    children: (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       lineClamp: 2,
       children: n
@@ -76,7 +76,7 @@ function L(e) {
   })
 }
 
-function G(e) {
+function k(e) {
   let {
     item: t
   } = e, n = D, l = P.intl.string(P.t.SJTHJb);
@@ -86,7 +86,7 @@ function G(e) {
       className: w.kv,
       alt: "",
       src: n
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(s.Text, {
       className: w.mc,
       variant: "text-xs/bold",
       color: "text-default",
@@ -95,11 +95,11 @@ function G(e) {
   })
 }
 
-function k(e) {
+function G(e) {
   let {
     applicationId: t
   } = e, n = (0, i.bG)([u.A], () => u.A.getApplication(t));
-  return null == n ? (0, r.jsx)("div", {}) : (0, r.jsx)(p.A, {
+  return null == n ? (0, r.jsx)("div", {}) : (0, r.jsx)(h.A, {
     application: n
   }, n.id)
 }
@@ -110,8 +110,8 @@ let U = Chunk64700.memo(function(e) {
       ackedBeforeId: o
     } = e, {
       analyticsLocations: u
-    } = (0, c.Ay)(), p = (0, C.t)(i, o), b = l.useCallback(async () => {
-      if (p || (0, j.R7)(i), null != i.item_enum && i.item_enum === v.r_.FIND_FRIENDS) return void(0, a.mMO)(async () => {
+    } = (0, c.Ay)(), h = (0, C.t)(i, o), g = l.useCallback(async () => {
+      if (h || (0, O.R7)(i), null != i.item_enum && i.item_enum === j.r_.FIND_FRIENDS) return void(0, s.mMO)(async () => {
         let {
           default: e
         } = await n.e("67248").then(n.bind(n, 911539));
@@ -137,16 +137,16 @@ let U = Chunk64700.memo(function(e) {
         }, t))
       });
       if (null != i.deeplink) {
-        let t = O.A.safeParseWithQuery(i.deeplink);
+        let t = _.A.safeParseWithQuery(i.deeplink);
         if (null == t) return;
         let n = t.hostname,
           r = t.path;
         if (null == n || null == r) return;
-        if (O.A.isDiscordHostname(n)) {
+        if (_.A.isDiscordHostname(n)) {
           let t = r.match("^/users/(\\d+)");
           if (null != t && 2 === t.length) {
             var e;
-            (0, h.openUserProfileModal)({
+            (0, f.openUserProfileModal)({
               userId: t[1],
               messageId: null == (e = i.message) ? true : e.id,
               sourceAnalyticsLocations: u
@@ -154,23 +154,23 @@ let U = Chunk64700.memo(function(e) {
           } else await (0, d.A)(r)
         }
         A.default.track(T.HAw.NOTIFICATION_CENTER_ACTION, {
-          action_type: v.e1.CLICKED,
+          action_type: j.e1.CLICKED,
           notification_center_id: i.id,
           item_type: i.type,
-          acked: p
+          acked: h
         })
       }
-    }, [i, p, u]), g = null;
-    i.type === v.Uo.INCOMING_FRIEND_REQUESTS && null != i.other_user ? g = (0, r.jsx)(I.A, {
+    }, [i, h, u]), m = null;
+    i.type === j.Uo.INCOMING_FRIEND_REQUESTS && null != i.other_user ? m = (0, r.jsx)(I.A, {
       userId: i.other_user.id
-    }) : i.type === v.Uo.INCOMING_GAME_FRIEND_REQUESTS && null != i.other_user && (g = (0, r.jsx)(I.A, {
+    }) : i.type === j.Uo.INCOMING_GAME_FRIEND_REQUESTS && null != i.other_user && (m = (0, r.jsx)(I.A, {
       userId: i.other_user.id,
       applicationId: i.applicationId
     }));
-    let m = null != i.local_id,
-      _ = (0, E.A)({
+    let b = null != i.local_id,
+      E = (0, x.A)({
         item: i,
-        renderApplication: e => (0, r.jsx)(k, {
+        renderApplication: e => (0, r.jsx)(G, {
           applicationId: e
         })
       }),
@@ -178,52 +178,52 @@ let U = Chunk64700.memo(function(e) {
         emoji_id: P,
         emoji_name: R
       } = i,
-      D = null != P || null != R ? (0, r.jsx)(s.A, {
+      D = null != P || null != R ? (0, r.jsx)(a.A, {
         className: w.Zg,
         emojiId: P,
         emojiName: R
       }) : null;
     return (0, r.jsxs)("div", {
       className: w.nM,
-      children: [(0, r.jsxs)(a.sqX, {
+      children: [(0, r.jsxs)(s.sqX, {
         className: w.u4,
         focusProps: {
           offset: 4
         },
-        "aria-label": _,
-        onClick: b,
-        children: [p ? null : (0, r.jsx)("div", {
+        "aria-label": E,
+        onClick: g,
+        children: [h ? null : (0, r.jsx)("div", {
           className: w.gy
         }), (0, r.jsx)(S.J, {
           item: i
         }), (0, r.jsxs)("div", {
           className: w.rf,
-          children: ["lifecycle_item" === i.type && null != i.item_enum && (0, r.jsx)(G, {
+          children: ["lifecycle_item" === i.type && null != i.item_enum && (0, r.jsx)(k, {
             item: i
-          }), (0, r.jsxs)(a.Text, {
+          }), (0, r.jsxs)(s.Text, {
             variant: "text-md/normal",
-            color: p ? "text-muted" : "text-default",
-            children: ["string" != typeof _ ? _ : f.A.parse(_), D]
+            color: h ? "text-muted" : "text-default",
+            children: ["string" != typeof E ? E : p.A.parse(E), D]
           }), (null == (t = i.message) ? true : t.content) != null ? (0, r.jsx)(M, {
             item: i
           }) : null, null != i.callout ? (0, r.jsx)(L, {
             item: i
-          }) : null, (0, r.jsx)(a.Text, {
+          }) : null, (0, r.jsx)(s.Text, {
             variant: "text-xs/medium",
-            color: p ? "text-muted" : "text-default",
-            children: (0, x.jb)(y.default.extractTimestamp(i.id))
-          }), g]
+            color: h ? "text-muted" : "text-default",
+            children: (0, v.jb)(y.default.extractTimestamp(i.id))
+          }), m]
         })]
-      }), m ? null : (0, r.jsx)(N.e, {
+      }), b ? null : (0, r.jsx)(N.e, {
         item: i
       })]
     })
   }),
-  V = Chunk64700.memo(function(e) {
+  B = Chunk64700.memo(function(e) {
     let {
       items: t
-    } = e, n = b.ns.useSetting();
-    return (0, _.q)(t), (0, r.jsx)(r.Fragment, {
+    } = e, n = g.ns.useSetting();
+    return (0, E.q)(t), (0, r.jsx)(r.Fragment, {
       children: t.map(e => (0, r.jsx)(U, {
         item: e,
         ackedBeforeId: n

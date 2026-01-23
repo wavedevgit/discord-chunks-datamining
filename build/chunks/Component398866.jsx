@@ -2,7 +2,7 @@
 /** chunk id: 398866, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  o: () => v
+  o: () => A
 }), require("./896048.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -29,7 +29,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,12 +54,12 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e) {
+function v(e) {
   let {
     url: t,
     className: n,
@@ -67,24 +67,24 @@ function A(e) {
     onLoad: s,
     shouldRefocus: g,
     queryParams: E,
-    allowPopups: y = false,
-    referrerPolicy: A = "origin"
-  } = e, v = (0, f.xi)({}), S = (0, o.useMemoOne)(() => (0, l.A)(), [t]), I = i.useRef(null), T = (0, p.A)(I, g, null == v ? window : v), C = O(b({}, E), {
-    frame_id: S,
+    allowPopups: b = false,
+    referrerPolicy: v = "origin"
+  } = e, A = (0, f.xi)({}), I = (0, o.useMemoOne)(() => (0, l.A)(), [t]), S = i.useRef(null), T = (0, p.A)(S, g, null == A ? window : A), C = O(y({}, E), {
+    frame_id: I,
     platform: h.vu.DESKTOP
-  }), [N, R] = i.useState(false), w = u.A.theme, P = b({}, a);
+  }), [N, R] = i.useState(false), w = u.A.theme, P = y({}, a);
 
   function D(e) {
     var n;
-    null == s || s(e.target), I.current = e.target, T(true), null == (n = e.target.contentWindow) || n.postMessage([c.A.HELLO, C], null != t ? t : "")
+    null == s || s(e.target), S.current = e.target, T(true), null == (n = e.target.contentWindow) || n.postMessage([c.A.HELLO, C], null != t ? t : "")
   }
   return w === m.NJ8.LIGHT ? P.colorScheme = "light" : P.colorScheme = "dark", i.useEffect(() => (d._.dispatch(m.jej.IFRAME_MOUNT, {
-    id: S
+    id: I
   }), () => {
     d._.dispatch(m.jej.IFRAME_UNMOUNT, {
-      id: S
+      id: I
     })
-  }), [S]), i.useEffect(() => {
+  }), [I]), i.useEffect(() => {
     let e = e => {
       let {
         resizing: t
@@ -97,17 +97,17 @@ function A(e) {
   }, []), N && (P.pointerEvents = "none"), null != t ? (0, r.jsx)("iframe", {
     style: P,
     allow: "autoplay; encrypted-media",
-    referrerPolicy: A,
+    referrerPolicy: v,
     onLoad: D,
     sandbox: (0, _.A)({
-      allowPopups: y
+      allowPopups: b
     }),
     className: n,
     src: "".concat(t, "?").concat(new URLSearchParams(C))
   }) : null
 }
 
-function v(e) {
+function A(e) {
   let {
     onLoad: t
   } = e, [n, a] = i.useState(false), o = i.useCallback(e => {
@@ -119,7 +119,7 @@ function v(e) {
       className: s()(g.Qf, g.SL)
     }), (0, r.jsx)("div", {
       className: s()(g.Qf, n ? true : g.Ar),
-      children: (0, r.jsx)(A, O(b({}, e), {
+      children: (0, r.jsx)(v, O(y({}, e), {
         onLoad: o
       }))
     })]

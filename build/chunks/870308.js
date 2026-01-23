@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 870308, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk379197 = require("./379197.js"),
@@ -14,13 +14,13 @@ var Chunk64700 = require("./64700.js"),
   Chunk212407 = require("./212407.js"),
   Chunk158216 = require("./158216.js"),
   Chunk49999 = require("./49999.js");
-let h = () => {
+let g = () => {
   var e;
   let t = (0, a.bG)([u.A], () => u.A.getMarketingBySurface(i.R.DESKTOP_SHOP_BUTTON)),
     n = !(0, o.ueM)(),
-    [h, A] = (0, c.RF)(n ? s.M.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == t ? true : t.version) ? e : 0, true, true),
-    g = (0, d.bv)(t),
-    m = null != h ? ((e, t) => {
+    [g, f] = (0, c.RF)(n ? s.M.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == t ? true : t.version) ? e : 0, true, true),
+    m = (0, d.bv)(t),
+    A = null != g ? ((e, t) => {
       var n, r, i, a, s, o, c, u;
       if ((null == t ? true : t.type) === l.G.COACHTIP || e.hasPreviewAssets) {
         let i = null != t ? {
@@ -90,12 +90,12 @@ let h = () => {
         }
       }
       return null
-    })(g, t) : null,
-    b = r.useCallback(() => {
-      null != m && A(f.i.AUTO)
-    }, [m, A]);
+    })(m, t) : null,
+    _ = r.useCallback(() => {
+      null != A && f(h.i.AUTO)
+    }, [A, f]);
   return {
-    shopButtonDisplayOptions: m,
-    dismissShopButtonDC: b
+    shopButtonDisplayOptions: A,
+    dismissShopButtonDC: _
   }
 }

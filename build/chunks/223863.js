@@ -2,7 +2,7 @@
 /** chunk id: 223863, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => S,
+  Ay: () => I,
   I: () => m,
   _5: () => h,
   _g: () => g,
@@ -52,7 +52,7 @@ async function E(e) {
   }
 }
 
-function b(e) {
+function y(e) {
   if ("user" !== e.type) return (0, s.A)(e.id);
   {
     let t = u.default.getUser(e.id);
@@ -64,7 +64,7 @@ function b(e) {
   }
 }
 
-function y(e) {
+function b(e) {
   return e.type === AutocompleterResultTypes.USER || PermissionStore.can(Permissions.VIEW_CHANNEL, e.record)
 }
 
@@ -72,7 +72,7 @@ function O(e, t) {
   return e.type === a.rD.USER ? t || null != l.A.getDMChannelFromUserId(e.record.id) : e.type === a.rD.GROUP_DM || e.record.type !== p.rbe.GUILD_FORUM && e.record.type !== p.rbe.GUILD_MEDIA && c.A.can(p.xBc.VIEW_CHANNEL, e.record) && c.A.can(p.xBc.SEND_MESSAGES, e.record)
 }
 
-function A(e, t) {
+function v(e, t) {
   let n, r = new Set;
   if (null != t)
     for (let e of t) r.add(e);
@@ -89,11 +89,11 @@ function A(e, t) {
   return i
 }
 
-function v(e, t) {
+function A(e, t) {
   return e.filter(e => (0, d.Vq)(e) && (e.type === a.rD.HEADER || (0, f.N)(e) && O(e, t)))
 }
 
-function S(e) {
+function I(e) {
   let {
     results: t,
     hasQuery: n,
@@ -105,13 +105,13 @@ function S(e) {
     originDestination: d,
     includeMissingDMs: f
   } = e;
-  if (n) return A(v(t, f));
-  let p = null != u && u.length > 0 ? u.map(e => b(e)) : [],
+  if (n) return v(A(t, f));
+  let p = null != u && u.length > 0 ? u.map(e => y(e)) : [],
     h = o.A.getChannelHistory(),
     m = h.length > 0 ? h.map(e => (0, s.A)(e)) : [],
     g = a.length > 0 ? a.map(e => (0, s.A)(e.id)) : [],
-    E = v([...p, null != l ? b(l) : null, ...m, ...g], f),
-    y = (null == c ? true : c.find(e => (0, r.isEqual)(e, d))) != null,
-    O = null == d || y ? [] : [d.id];
-  return null != i ? A(E.filter(e => e.type === i)) : A(E, O).slice(0, _)
+    E = A([...p, null != l ? y(l) : null, ...m, ...g], f),
+    b = (null == c ? true : c.find(e => (0, r.isEqual)(e, d))) != null,
+    O = null == d || b ? [] : [d.id];
+  return null != i ? v(E.filter(e => e.type === i)) : v(E, O).slice(0, _)
 }

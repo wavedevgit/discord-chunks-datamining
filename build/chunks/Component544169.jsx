@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 544169, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => s
+  default: () => a
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -9,11 +9,11 @@ var Chunk158954 = require("./158954.js"),
   Chunk47167 = require("./47167.js"),
   Chunk985018 = require("./985018.jsx");
 
-function s(e) {
+function a(e) {
   let {
     channel: t,
     category: n
-  } = e, s = function(e, t) {
+  } = e, a = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -48,11 +48,11 @@ function s(e) {
     }
     return e
   }({
-    title: a.intl.string(a.t.YWMtRe),
-    subtitle: a.intl.format(a.t["iKW+jY"], {
+    title: s.intl.string(s.t.YWMtRe),
+    subtitle: s.intl.format(s.t["iKW+jY"], {
       channelName: o,
       categoryName: c
     }),
-    confirmText: a.intl.string(a.t.eW8Gy4)
-  }, s))
+    confirmText: s.intl.string(s.t.eW8Gy4)
+  }, a))
 }

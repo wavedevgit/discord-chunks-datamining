@@ -1,14 +1,14 @@
 /** Chunk was on 97492 **/
 /** chunk id: 531053, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => j,
-  g4: () => x,
-  qv: () => v
+  Ay: () => O,
+  g4: () => v,
+  qv: () => j
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
   o = require.n(Chunk284009),
   Chunk744818 = require("./744818.js"),
@@ -20,7 +20,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk581277 = require("./581277.js");
 
-function m(e) {
+function b(e) {
   let t = l.useRef(null),
     n = e.map(e => e[0]);
   return l.useLayoutEffect(() => {
@@ -36,14 +36,14 @@ function m(e) {
 function A(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = arguments.length > 3 && true !== arguments[3] && arguments[3];
-  return o()(t.type !== f.PJ.ROOT, "[GuildDropTarget] Tried using a root node as a drop target."), {
+  return o()(t.type !== p.PJ.ROOT, "[GuildDropTarget] Tried using a root node as a drop target."), {
     accept: e,
-    canDrop: e => e.nodeId !== t.id && (!r || e.type !== f.PJ.FOLDER || t.type !== f.PJ.FOLDER) && (e.type !== f.PJ.FOLDER || null == t.parentId),
+    canDrop: e => e.nodeId !== t.id && (!r || e.type !== p.PJ.FOLDER || t.type !== p.PJ.FOLDER) && (e.type !== p.PJ.FOLDER || null == t.parentId),
     drop(e) {
       let {
         nodeId: l
       } = e;
-      r && t.type !== f.PJ.FOLDER && d.default.track(h.HAw.GUILD_FOLDER_CREATED), u.A.moveById(l, t.id, n, r)
+      r && t.type !== p.PJ.FOLDER && d.default.track(f.HAw.GUILD_FOLDER_CREATED), u.A.moveById(l, t.id, n, r)
     },
     collect: e => ({
       canDrop: e.canDrop(),
@@ -57,42 +57,42 @@ function y(e) {
     name: t,
     targetNode: n,
     combine: i,
-    below: a
-  } = e, s = l.useMemo(() => A([f.PJ.GUILD, f.PJ.FOLDER], n, a, i), [n, a, i]), [{
+    below: s
+  } = e, a = l.useMemo(() => A([p.PJ.GUILD, p.PJ.FOLDER], n, s, i), [n, s, i]), [{
     canDrop: o,
     isOver: u
-  }, d] = (0, c.H)(s), p = m([
-    [o, g.OP],
-    [u, g.NQ]
+  }, d] = (0, c.H)(a), h = b([
+    [o, m.OP],
+    [u, m.NQ]
   ]);
   return (0, r.jsx)("div", {
     ref: e => {
-      p.current = e, d(e)
+      h.current = e, d(e)
     },
-    "data-dnd-name": b.intl.formatToPlainString(b.t["A5aDw+"], {
+    "data-dnd-name": g.intl.formatToPlainString(g.t["A5aDw+"], {
       itemName: t
     }),
-    className: g.aC
+    className: m.aC
   })
 }
 
-function O(e) {
+function _(e) {
   let {
     name: t,
     targetNode: n,
     onDragOverChanged: i
   } = e, [{
-    canDrop: s,
+    canDrop: a,
     isOver: o
-  }, u] = (0, c.H)(() => A([f.PJ.GUILD], n, true, true));
+  }, u] = (0, c.H)(() => A([p.PJ.GUILD], n, true, true));
   l.useEffect(() => {
     null == i || i(o)
   }, [i, o]);
-  let d = m([
-    [s, g.OP],
-    [o, g.NQ]
+  let d = b([
+    [a, m.OP],
+    [o, m.NQ]
   ]);
-  return (0, r.jsx)(p.A, {
+  return (0, r.jsx)(h.A, {
     text: t,
     shouldShow: o,
     forceOpen: o,
@@ -101,67 +101,67 @@ function O(e) {
       ref: e => {
         d.current = e, u(e)
       },
-      "data-dnd-name": b.intl.formatToPlainString(b.t.qiQ0QI, {
+      "data-dnd-name": g.intl.formatToPlainString(g.t.qiQ0QI, {
         itemName: t
       }),
-      className: a()(g.dw, {})
+      className: s()(m.dw, {})
     })
   })
 }
-let j = Chunk64700.memo(function(e) {
+let O = Chunk64700.memo(function(e) {
   let {
     name: t,
     targetNode: n,
     noCombine: l = false,
     below: i = false,
-    onDragOverChanged: a
-  } = e, s = !l && null == n.parentId;
+    onDragOverChanged: s
+  } = e, a = !l && null == n.parentId;
   return (0, r.jsxs)("div", {
-    className: g.iE,
+    className: m.iE,
     "aria-hidden": true,
     children: [(0, r.jsx)(y, {
       name: t,
       targetNode: n,
       below: i
-    }), s ? (0, r.jsx)(O, {
+    }), a ? (0, r.jsx)(_, {
       name: t,
       targetNode: n,
-      onDragOverChanged: a
+      onDragOverChanged: s
     }) : null]
   })
 });
 
-function v(e) {
+function j(e) {
   let {
     name: t,
     targetNode: n
   } = e, [{
     canDrop: l,
     isOver: i
-  }, a] = (0, c.H)(() => A([f.PJ.GUILD], n, true, true)), s = m([
-    [i, g.a7]
-  ]), o = m([
-    [i, g.NQ],
-    [l, g.OP]
+  }, s] = (0, c.H)(() => A([p.PJ.GUILD], n, true, true)), a = b([
+    [i, m.a7]
+  ]), o = b([
+    [i, m.NQ],
+    [l, m.OP]
   ]);
   return (0, r.jsx)("div", {
-    ref: s,
-    className: g.Ro,
+    ref: a,
+    className: m.Ro,
     "aria-hidden": true,
     children: (0, r.jsx)("div", {
-      className: g.aO,
+      className: m.aO,
       children: (0, r.jsx)("div", {
         ref: e => {
-          o.current = e, a(e)
+          o.current = e, s(e)
         },
         "aria-label": "At end of ".concat(t),
-        className: g.aC
+        className: m.aC
       })
     })
   })
 }
 
-function x(e) {
+function v(e) {
   let {
     children: t
   } = e, [, n] = (0, c.H)({

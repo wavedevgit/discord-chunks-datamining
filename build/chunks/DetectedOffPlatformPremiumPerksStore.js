@@ -27,12 +27,12 @@ function E(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let b = "DetectedOffPlatformPremiumPerksStore",
-  y = {},
+let y = "DetectedOffPlatformPremiumPerksStore",
+  b = {},
   O = {},
-  A = [];
+  v = [];
 
-function v() {
+function A() {
   let e = false;
   for (let {
       id: t,
@@ -44,21 +44,21 @@ function v() {
           skuId: n,
           applicationId: r
         }
-        of g.m_i) r !== t || A.includes(n) || null == O[n] && (h.A.applicationIdsFetched.has(r) || h.A.applicationIdsFetching.has(r) || null != h.A.getForSku(n) || c.LM(r), O[n] = {
+        of g.m_i) r !== t || v.includes(n) || null == O[n] && (h.A.applicationIdsFetched.has(r) || h.A.applicationIdsFetching.has(r) || null != h.A.getForSku(n) || c.LM(r), O[n] = {
         skuId: n,
         applicationId: r
       }, e = true);
-  return e && S(), e
+  return e && I(), e
 }
 
-function S() {
+function I() {
   let e = false;
   for (let {
       skuId: t,
       applicationId: n
     }
     of a().values(O)) {
-    if (A.includes(t)) continue;
+    if (v.includes(t)) continue;
     let r = f.A.getApplication(n);
     if (null == r) {
       f.A.isFetchingApplication(n) || f.A.didFetchingApplicationFail(n) || d.Ay.fetchApplication(n);
@@ -69,7 +69,7 @@ function S() {
       m.A.isFetching(t) || m.A.didFetchingSkuFail(t) || u.EX(r.id, t);
       continue
     }
-    h.A.applicationIdsFetching.has(r.id) || h.A.isEntitledToSku(_.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != y[t] && (delete y[t], e = true) : (y[t] = {
+    h.A.applicationIdsFetching.has(r.id) || h.A.isEntitledToSku(_.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != b[t] && (delete b[t], e = true) : (b[t] = {
       skuId: t,
       applicationId: n
     }, e = true)
@@ -77,33 +77,33 @@ function S() {
   return e
 }
 
-function I(e) {
+function S(e) {
   let {
     skuId: t
   } = e;
-  if (delete y[t], A.includes(t)) returnfalse;
-  A.push(t), o.w.set(b, A)
+  if (delete b[t], v.includes(t)) returnfalse;
+  v.push(t), o.w.set(y, v)
 }
 
 function T() {
-  y = {}, O = {}
+  b = {}, O = {}
 }
 class C extends(r = Chunk311907.Ay.Store) {
   initialize() {
     var e;
-    this.waitFor(f.A, h.A, p.Ay, m.A, _.default), A = null != (e = o.w.get(b)) ? e : A
+    this.waitFor(f.A, h.A, p.Ay, m.A, _.default), v = null != (e = o.w.get(y)) ? e : v
   }
   getDetectedOffPlatformPremiumPerks() {
-    return a().values(y)
+    return a().values(b)
   }
 }
 E(C, "displayName", "DetectedOffPlatformPremiumPerksStore");
 let N = new C(Chunk73153.h, {
   LOGOUT: T,
-  SKU_FETCH_SUCCESS: S,
-  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: S,
-  ENTITLEMENT_CREATE: S,
-  APPLICATION_FETCH_SUCCESS: S,
-  DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS: I,
-  RUNNING_GAMES_CHANGE: v
+  SKU_FETCH_SUCCESS: I,
+  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: I,
+  ENTITLEMENT_CREATE: I,
+  APPLICATION_FETCH_SUCCESS: I,
+  DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS: S,
+  RUNNING_GAMES_CHANGE: A
 })

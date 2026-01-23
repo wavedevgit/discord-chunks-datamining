@@ -72,17 +72,17 @@ module.exports = function(e) {
       end: "$",
       relevance: 5
     },
-    b = {
+    y = {
       className: "keyword",
       begin: "@[a-zA-Z_][a-zA-Z_\\d]*"
     },
-    y = e.COMMENT("\\/\\+", "\\+\\/", {
+    b = e.COMMENT("\\/\\+", "\\+\\/", {
       contains: ["self"],
       relevance: 10
     });
   return {
     name: "D",
     keywords: t,
-    contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, y, h, f, p, _, m, u, c, d, g, E, b]
+    contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, b, h, f, p, _, m, u, c, d, g, E, y]
   }
 }

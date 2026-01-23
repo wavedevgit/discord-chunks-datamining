@@ -2,7 +2,7 @@
 /** chunk id: 266244, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => g
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,8 +16,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk165386 = require("./165386.js");
-let b = () => (0, a.WU)("DM_SEARCH"),
-  g = Chunk64700.memo(function() {
+let g = () => (0, a.WU)("DM_SEARCH"),
+  y = Chunk64700.memo(function() {
     let e = (0, s.bG)([d.default], () => d.default.isLocked((0, u.getPID)()) ? "true" : "false"),
       t = (0, c.A)(e => {
         let {
@@ -32,7 +32,7 @@ let b = () => (0, a.WU)("DM_SEARCH"),
         children: (0, i.jsx)("button", {
           type: "button",
           className: f.lU,
-          onClick: b,
+          onClick: g,
           children: p.intl.string(p.t.LzcpeZ)
         })
       }), (0, i.jsx)(l.A, {

@@ -25,7 +25,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx");
 
-function v(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +34,20 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e) {
+function S(e) {
   let {
     handleClose: t,
     analyticsLocations: n
@@ -61,22 +61,22 @@ function I(e) {
     appliedUserDiscounts: h
   } = (0, m.P5)(), g = (0, o.bG)([u.A], () => u.A.getProduct(l)), O = i.useRef(false);
   s()(null != l, "Expected selectedSkuId"), s()(null != c, "Expected application");
-  let v = a[l];
-  s()(null != v, "Expected sku");
-  let S = null != d || null != f || null != p,
-    I = h.length > 0 ? A.intl.formatToPlainString(A.t.VuV3Td, {
+  let A = a[l];
+  s()(null != A, "Expected sku");
+  let I = null != d || null != f || null != p,
+    S = h.length > 0 ? v.intl.formatToPlainString(v.t.VuV3Td, {
       discountOfferAmount: h[0].discount.amount
     }) : true;
   return (i.useEffect(() => {
-    null == g || S || O.current || (O.current = true, (0, _.A)({
+    null == g || I || O.current || (O.current = true, (0, _.A)({
       product: g,
-      overrideTitle: I,
+      overrideTitle: S,
       analyticsLocations: n,
       onCloseCallback: t,
-      purchaseType: y.gs.FIAT
+      purchaseType: b.gs.FIAT
     }))
-  }, [g, n, t, S, I]), S) ? (0, r.jsx)(E.dZ, {
-    children: (0, r.jsx)(b.A, {})
+  }, [g, n, t, I, S]), I) ? (0, r.jsx)(E.dZ, {
+    children: (0, r.jsx)(y.A, {})
   }) : null
 }
 
@@ -88,21 +88,21 @@ function T(e) {
     hasSentMessage: s,
     giftRecipient: _,
     giftMessageError: E,
-    isSendingMessage: b,
-    giftingOrigin: y
-  } = (0, h.Pv)(), A = (0, o.bG)([c.A], () => c.A.useReducedMotion), v = i.useRef(null), {
+    isSendingMessage: y,
+    giftingOrigin: b
+  } = (0, h.Pv)(), v = (0, o.bG)([c.A], () => c.A.useReducedMotion), A = i.useRef(null), {
     selectedSkuId: T
   } = (0, m.P5)(), C = (0, o.bG)([u.A], () => u.A.getProduct(T)), {
     confettiColors: N
   } = (0, d.A)(null == C ? true : C.styles);
   return i.useEffect(() => {
-    t && null != _ && null != T && (y === O.vQ.USER_PROFILE_WISHLIST || y === O.vQ.DM_CHANNEL_WISHLIST) && l.h.dispatch({
+    t && null != _ && null != T && (b === O.vQ.USER_PROFILE_WISHLIST || b === O.vQ.DM_CHANNEL_WISHLIST) && l.h.dispatch({
       type: "WISHLIST_GIFT_SENT",
       skuId: T,
       recipientId: _.id
     })
-  }, [t, _, T, y]), t ? (0, r.jsxs)("div", {
-    ref: v,
+  }, [t, _, T, b]), t ? (0, r.jsxs)("div", {
+    ref: A,
     children: [(0, r.jsx)(g.A, {
       giftCode: n,
       onClose: e.handleClose,
@@ -110,12 +110,12 @@ function T(e) {
       hasSentMessage: s,
       giftRecipient: _,
       giftMessageError: E,
-      isSendingMessage: b
-    }), !e.hideConfetti && !A && (0, r.jsx)(f.A, {
-      confettiTarget: v.current,
+      isSendingMessage: y
+    }), !e.hideConfetti && !v && (0, r.jsx)(f.A, {
+      confettiTarget: A.current,
       confettiCanvas: e.confettiCanvas,
       sprites: (0, p.rA)(null == C ? true : C.categorySkuId),
       colors: null == N ? true : N.map(e => e.toHexString())
     })]
-  }) : (0, r.jsx)(I, S({}, e))
+  }) : (0, r.jsx)(S, I({}, e))
 }

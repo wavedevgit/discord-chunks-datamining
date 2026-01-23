@@ -17,24 +17,24 @@ var Chunk990078 = require("./990078.jsx"),
 function m(e) {
   let {
     product: t
-  } = e, n = (0, s.yt)(t, o.lid.PREMIUM_TIER_2);
+  } = e, n = (0, s.yt)(t, c.lid.PREMIUM_TIER_2);
   if (null == n) return null;
-  let m = (0, i.RS)(n.amount, n.currency);
+  let m = (0, a.RS)(n.amount, n.currency);
   return (0, r.jsxs)("div", {
-    className: u.k,
+    className: d.k,
     children: [(0, r.jsx)(l.m, {
-      text: d.intl.string(d.t.MPFyJ5),
-      "aria-label": d.intl.string(d.t.X3Ekj8),
-      children: (0, r.jsx)(a.tvc, {
+      text: u.intl.string(u.t.MPFyJ5),
+      "aria-label": u.intl.string(u.t.X3Ekj8),
+      children: (0, r.jsx)(i.tvc, {
         size: "md",
         color: "currentColor",
-        className: u.o
+        className: d.o
       })
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(i.Text, {
       variant: "text-xs/medium",
-      children: d.intl.format(d.t.Sv8iic, {
+      children: u.intl.format(u.t.Sv8iic, {
         price: m,
-        subscribeNowHook: e => (0, r.jsx)(c.Z, {
+        subscribeNowHook: e => (0, r.jsx)(o.Z, {
           text: e
         })
       })

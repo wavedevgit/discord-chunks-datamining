@@ -2,7 +2,7 @@
 /** chunk id: 520057, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  w: () => c
+  w: () => o
 });
 var Chunk136722 = require("./136722.js"),
   Chunk311907 = require("./311907.js"),
@@ -10,7 +10,7 @@ var Chunk136722 = require("./136722.js"),
   Chunk576705 = require("./576705.js"),
   Chunk652215 = require("./652215.js");
 
-function c(e) {
+function o(e) {
   return (0, i.bG)([l.A, s.A], () => {
     let t = l.A.getGuild(e);
     if (null == t) returnfalse;

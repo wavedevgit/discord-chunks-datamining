@@ -79,8 +79,8 @@ function m(e) {
     equalityFn: o.x,
     fireImmediately: true
   }), [_, t.key]);
-  let b = null == n ? true : n(_),
-    y = null == f ? true : f(),
+  let y = null == n ? true : n(_),
+    b = null == f ? true : f(),
     O = i.useCallback(e => {
       e && l.A.setState({
         navTransition: {
@@ -100,8 +100,8 @@ function m(e) {
       [d.h]: _
     }),
     children: (0, r.jsx)(u.f, {
-      title: b,
-      collapsedSubtitle: y,
+      title: y,
+      collapsedSubtitle: b,
       isExpanded: _,
       onExpandedChange: m,
       onExpandedChangeComplete: O,

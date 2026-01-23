@@ -2,7 +2,7 @@
 /** chunk id: 376151, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js");
 var Chunk451988 = require("./451988.js"),
   Chunk439372 = require("./439372.js"),
@@ -40,7 +40,7 @@ function g(e) {
   return e
 }
 let E = +Chunk927813.A.Millis.MINUTE;
-class b extends Chunk439372.A {
+class y extends Chunk439372.A {
   _initialize() {
     __OVERLAY__ ? this.stores = new Map : (this.stores = new Map().set(d.A, () => this._handleSpeakingStoreChanged()).set(c.A, () => this._handleRTCConnectionStoreChanged()), this._reset())
   }
@@ -113,4 +113,4 @@ class b extends Chunk439372.A {
     })
   }
 }
-let y = new b
+let b = new y

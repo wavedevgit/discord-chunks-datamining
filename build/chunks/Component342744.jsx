@@ -2,7 +2,7 @@
 /** chunk id: 342744, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  default: () => S
+  default: () => I
 }), require("./896048.js"), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -32,36 +32,36 @@ async function O(e, t, n, r) {
   }, (0, E.UC)(i, e.currency, e.paymentSourceId), r)
 }
 
-function A(e) {
+function v(e) {
   let {
     errorMsg: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: y.rf,
+    className: b.rf,
     children: [null !== t && (0, r.jsx)("div", {
-      className: y.z3,
+      className: b.z3,
       children: (0, r.jsx)(c.wx6, {
         type: "critical",
         children: t
       })
     }), (0, r.jsx)("div", {
-      children: b.intl.string(b.t.DY2CXs)
+      children: y.intl.string(y.t.DY2CXs)
     })]
   })
 }
 
-function v() {
+function A() {
   return (0, r.jsxs)("div", {
-    className: y.rf,
+    className: b.rf,
     children: [(0, r.jsx)("div", {
-      className: y.dk
+      className: b.dk
     }), (0, r.jsx)("div", {
-      children: b.intl.string(b.t.G27uHe)
+      children: y.intl.string(y.t.G27uHe)
     })]
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     guildBoostSlotId: t,
     transitionState: n,
@@ -72,48 +72,48 @@ function S(e) {
   i.useEffect(() => {
     g.A.hasFetchedSubscriptions() || (0, u.hP)()
   }, []);
-  let y = (0, l.bG)([g.A], () => g.A.getPremiumTypeSubscription()),
-    [S, I] = i.useState(1),
+  let b = (0, l.bG)([g.A], () => g.A.getPremiumTypeSubscription()),
+    [I, S] = i.useState(1),
     [T, C] = i.useState(false),
     [N, R] = i.useState(null),
     w = i.useCallback(async () => {
-      if (null != y) try {
+      if (null != b) try {
         C(true), R(null);
-        let e = (0, m.v)(y, 1);
-        s()((0, E.bx)(e) <= (0, E.bx)(y.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await O(y, e, t, d), I(2)
+        let e = (0, m.v)(b, 1);
+        s()((0, E.bx)(e) <= (0, E.bx)(b.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await O(b, e, t, d), S(2)
       } catch (t) {
         let e = t instanceof f.Ey ? t : new f.Ey(t, t.code);
-        R(b.intl.string(e.code === p.tG.BILLING_PAUSE_INVALID_UPDATE ? b.t.dq4vq7 : b.t["5mlOCW"])), C(false)
+        R(y.intl.string(e.code === p.tG.BILLING_PAUSE_INVALID_UPDATE ? y.t.dq4vq7 : y.t["5mlOCW"])), C(false)
       }
-    }, [y, t, d]),
+    }, [b, t, d]),
     P = () => {
-      switch (S) {
+      switch (I) {
         case 1:
-          return b.intl.string(b.t.l52ih2);
+          return y.intl.string(y.t.l52ih2);
         case 2:
-          return b.intl.string(b.t.H9QUAB);
+          return y.intl.string(y.t.H9QUAB);
         default:
           return ""
       }
     },
     D = () => {
-      switch (S) {
+      switch (I) {
         case 1:
           return [{
             variant: "secondary",
-            text: b.intl.string(b.t.oEAioF),
+            text: y.intl.string(y.t.oEAioF),
             disabled: T,
             onClick: a
           }, {
             variant: "primary",
-            text: b.intl.string(b.t.etZP4B),
+            text: y.intl.string(y.t.etZP4B),
             loading: T,
             onClick: w
           }];
         case 2:
           return [{
             variant: "primary",
-            text: b.intl.string(b.t.BddRzS),
+            text: y.intl.string(y.t.BddRzS),
             onClick: a
           }];
         default:
@@ -121,16 +121,16 @@ function S(e) {
       }
     },
     x = () => {
-      if (null == y) return (0, r.jsx)(c.y$y, {});
-      switch (S) {
+      if (null == b) return (0, r.jsx)(c.y$y, {});
+      switch (I) {
         case 1:
-          return (0, r.jsx)(A, {
+          return (0, r.jsx)(v, {
             errorMsg: N
           });
         case 2:
-          return (0, r.jsx)(v, {});
+          return (0, r.jsx)(A, {});
         default:
-          throw Error("Unexpected step: ".concat(S))
+          throw Error("Unexpected step: ".concat(I))
       }
     };
   return (0, r.jsx)(h.f5, {

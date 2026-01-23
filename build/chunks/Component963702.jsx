@@ -18,20 +18,20 @@ function o(e) {
     disableStars: c
   } = e;
   return (0, r.jsxs)("div", {
-    className: s.kL,
+    className: a.kL,
     children: [(0, r.jsxs)("div", {
-      className: s.zc,
+      className: a.zc,
       children: [(0, r.jsx)(t, {
         color: "currentColor",
         size: "custom",
-        className: s.Kk,
+        className: a.Kk,
         width: 36,
         height: 36
       }), c ? null : (0, r.jsx)(i.A, {
-        className: s.uf
+        className: a.uf
       })]
     }), (0, r.jsx)(l.Heading, {
-      className: s.wx,
+      className: a.wx,
       variant: "heading-xl/semibold",
       children: n
     }), (0, r.jsxs)(l.Text, {
@@ -39,10 +39,10 @@ function o(e) {
       variant: "text-xs/normal",
       children: [c ? null : (0, r.jsxs)(l.Text, {
         tag: "span",
-        className: s.PP,
+        className: a.PP,
         variant: "text-xs/bold",
         color: "text-feedback-positive",
-        children: [a.intl.string(a.t["8tvIiN"]), ":", " "]
+        children: [s.intl.string(s.t["8tvIiN"]), ":", " "]
       }), o]
     })]
   })

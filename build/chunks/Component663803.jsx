@@ -26,9 +26,9 @@ let d = e => {
     n(u(e) ? null != d ? d : 0 : e), _(e)
   }, E = e => {
     e.stopPropagation(), h || g(p - 1)
-  }, b = e => {
-    e.stopPropagation(), m || g(p + 1)
   }, y = e => {
+    e.stopPropagation(), m || g(p + 1)
+  }, b = e => {
     if (u(e)) return g(e);
     let t = parseInt(e);
     if (!isNaN(t)) return null != f && t >= f ? g(f) : null != d && t <= d ? g(d) : g(t)
@@ -46,13 +46,13 @@ let d = e => {
       className: c.U,
       children: (0, r.jsx)(o.ksK, {
         value: "".concat(p),
-        onChange: y
+        onChange: b
       })
     }), (0, r.jsx)(o.K0, {
       size: "sm",
       variant: "icon-only",
       icon: o.j96,
-      onClick: b,
+      onClick: y,
       "aria-label": l.intl.string(l.t.w8Sc4B),
       disabled: m
     })]

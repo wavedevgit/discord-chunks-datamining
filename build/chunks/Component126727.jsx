@@ -45,47 +45,47 @@ function f(e) {
       required: m,
       value: g
     } = e,
-    [E, b] = i.useState(null != g ? g : ""),
+    [E, y] = i.useState(null != g ? g : ""),
     {
-      state: y,
+      state: b,
       executeStateUpdate: O,
-      error: A
+      error: v
     } = (0, o.At)(e, null != g ? {
       type: n,
       value: g
     } : true),
-    v = (0, l.FG)(e.id);
+    A = (0, l.FG)(e.id);
   i.useEffect(() => {
-    (null == y ? true : y.type) === n && b(y.value)
-  }, [n, y]);
-  let S = {
+    (null == b ? true : b.type) === n && y(b.value)
+  }, [n, b]);
+  let I = {
     value: E,
     placeholder: p,
     minLength: _,
     maxLength: h,
     required: m,
     onChange: e => {
-      b(e), O({
+      y(e), O({
         type: n,
         value: e
       })
     },
-    autoFocus: v
+    autoFocus: A
   };
   switch (u) {
     case s.qz.SMALL:
-      t = (0, r.jsx)(a.ksK, d({}, S));
+      t = (0, r.jsx)(a.ksK, d({}, I));
       break;
     case s.qz.PARAGRAPH:
       t = (0, r.jsx)(a.fs1, d({
         autosize: true
-      }, S))
+      }, I))
   }
   return null != f ? (0, r.jsx)(a.eIh, {
     title: f,
     required: m,
     className: c.k,
-    error: A,
+    error: v,
     children: t
   }) : t
 }

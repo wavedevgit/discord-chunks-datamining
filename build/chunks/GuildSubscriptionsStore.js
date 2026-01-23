@@ -25,7 +25,7 @@ var i, Chunk735438 = require("./735438.js"),
   Chunk967198 = require("./967198.js"),
   Chunk652215 = require("./652215.js");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,7 +33,7 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let I = new Chunk432703.Ay(e => {
+let S = new Chunk432703.Ay(e => {
   for (let t in e) null != E.A.getGuild(t) || m.A.isUnavailable(t) || delete e[t];
   l.h.dispatch({
     type: "GUILD_SUBSCRIPTIONS_FLUSH",
@@ -43,9 +43,9 @@ let I = new Chunk432703.Ay(e => {
 
 function T(e, t) {
   let n = {};
-  I.forEach(i => {
+  S.forEach(i => {
     var a;
-    i !== A.A.getGuildId() && i !== b.A.getGuildId() && i !== (null == (a = h.A.getChannel(O.A.getChannelId())) ? true : a.getGuildId()) && (null == r || r.guildId !== i) && (I.clearWithoutFlushing(i, e), t && (n[i] = I.get(i)))
+    i !== v.A.getGuildId() && i !== y.A.getGuildId() && i !== (null == (a = h.A.getChannel(O.A.getChannelId())) ? true : a.getGuildId()) && (null == r || r.guildId !== i) && (S.clearWithoutFlushing(i, e), t && (n[i] = S.get(i)))
   }), s().isEmpty(n) || l.h.dispatch({
     type: "GUILD_SUBSCRIPTIONS_FLUSH",
     subscriptions: n
@@ -53,15 +53,15 @@ function T(e, t) {
 }
 
 function C(e, t) {
-  return I.subscribeToGuild(e), null != t && _.Ay.getSection(t) === v.YvQ.MEMBERS && N(e, t, c.LD)
+  return S.subscribeToGuild(e), null != t && _.Ay.getSection(t) === A.YvQ.MEMBERS && N(e, t, c.LD)
 }
 
 function N(e, t, n) {
-  if (t === p.sN) return I.subscribeChannel(e, t, n);
+  if (t === p.sN) return S.subscribeChannel(e, t, n);
   let r = h.A.getChannel(t);
   if (null == r) returnfalse;
   let i = r.getGuildId();
-  return (i !== e && e === v.YYv && I.subscribeToGuild(i), null != r && r.isThread()) ? r.type === v.rbe.ANNOUNCEMENT_THREAD ? I.subscribeChannel(i, r.parent_id, n) : !!r.isActiveThread() && I.subscribeThreadMemberList(i, t, O.A.getChannelId()) : I.subscribeChannel(i, t, n)
+  return (i !== e && e === A.YYv && S.subscribeToGuild(i), null != r && r.isThread()) ? r.type === A.rbe.ANNOUNCEMENT_THREAD ? S.subscribeChannel(i, r.parent_id, n) : !!r.isActiveThread() && S.subscribeThreadMemberList(i, t, O.A.getChannelId()) : S.subscribeChannel(i, t, n)
 }
 
 function R(e) {
@@ -69,11 +69,11 @@ function R(e) {
     type: t
   } = e;
   "CONNECTION_OPEN" === t && T(true, false);
-  let n = A.A.getGuildId();
+  let n = v.A.getGuildId();
   null != n && C(n, O.A.getChannelId(n));
   let r = {};
-  I.forEach(e => {
-    null == E.A.getGuild(e) ? I.clearWithoutFlushing(e, true) : r[e] = I.get(e)
+  S.forEach(e => {
+    null == E.A.getGuild(e) ? S.clearWithoutFlushing(e, true) : r[e] = S.get(e)
   }), s().isEmpty(r) || l.h.dispatch({
     type: "GUILD_SUBSCRIPTIONS_FLUSH",
     subscriptions: r
@@ -93,21 +93,21 @@ function P(e) {
 }
 
 function D() {
-  I.reset()
+  S.reset()
 }
 
 function x(e) {
   let {
     guild: t
   } = e;
-  t.id === A.A.getGuildId() && H()
+  t.id === v.A.getGuildId() && H()
 }
 
 function L(e) {
   let {
     guild: t
   } = e;
-  I.clearWithoutFlushing(t.id, true)
+  S.clearWithoutFlushing(t.id, true)
 }
 
 function j(e) {
@@ -116,7 +116,7 @@ function j(e) {
     userIds: n
   } = e;
   return n.forEach(e => {
-    e !== f.default.getId() && I.subscribeUser(t, e)
+    e !== f.default.getId() && S.subscribeUser(t, e)
   }), false
 }
 
@@ -126,7 +126,7 @@ function M(e) {
     userIds: n
   } = e;
   return n.forEach(e => {
-    I.unsubscribeUser(t, e)
+    S.unsubscribeUser(t, e)
   }), false
 }
 
@@ -134,21 +134,21 @@ function k(e) {
   let {
     guildId: t
   } = e;
-  I.subscribeToMemberUpdates(t)
+  S.subscribeToMemberUpdates(t)
 }
 
 function U(e) {
   let {
     guildId: t
   } = e;
-  I.unsubscribeFromMemberUpdates(t)
+  S.unsubscribeFromMemberUpdates(t)
 }
 
 function G(e) {
   let {
     guildId: t
   } = e;
-  return I.subscribeToGuild(t)
+  return S.subscribeToGuild(t)
 }
 
 function V(e) {
@@ -177,38 +177,38 @@ function B(e) {
 }
 
 function H() {
-  return C(A.A.getGuildId(), O.A.getChannelId())
+  return C(v.A.getGuildId(), O.A.getChannelId())
 }
 
 function Y(e) {
   let {
     channel: t
   } = e;
-  return t.isArchivedThread() ? I.unsubscribeThreadMemberList(t.guild_id, t.id) : !!t.isActiveThread() && O.A.getChannelId() === t.id && void I.subscribeThreadMemberList(t.guild_id, t.id, O.A.getChannelId())
+  return t.isArchivedThread() ? S.unsubscribeThreadMemberList(t.guild_id, t.id) : !!t.isActiveThread() && O.A.getChannelId() === t.id && void S.subscribeThreadMemberList(t.guild_id, t.id, O.A.getChannelId())
 }
 
 function W(e) {
   let {
     channel: t
   } = e;
-  return I.unsubscribeThreadMemberList(t.guild_id, t.id)
+  return S.unsubscribeThreadMemberList(t.guild_id, t.id)
 }
 
 function K() {
   let e = d.A.getSyncingWith();
-  if (null == e) null != r && (I.unsubscribeUser(r.guildId, r.userId), r = null);
+  if (null == e) null != r && (S.unsubscribeUser(r.guildId, r.userId), r = null);
   else {
     let {
       userId: t
     } = e;
-    if (null != r && r.userId === t || y.A.isFriend(t)) returnfalse;
+    if (null != r && r.userId === t || b.A.isFriend(t)) returnfalse;
     let n = g.Ay.memberOf(t);
     if (0 === n.length) returnfalse;
     let [i] = n;
     r = {
       guildId: i,
       userId: t
-    }, I.subscribeUser(i, t)
+    }, S.subscribeUser(i, t)
   }
   returnfalse
 }
@@ -217,31 +217,31 @@ function z(e) {
   let {
     guildIds: t
   } = e;
-  for (let e of t) null != e && I.subscribeToGuild(e);
+  for (let e of t) null != e && S.subscribeToGuild(e);
   returnfalse
 }
 class q extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(f.default, _.Ay, h.A, u.A, m.A, g.Ay, E.A, b.A, y.A, O.A, A.A, d.A), this.syncWith([d.A], K), this.syncWith([_.Ay], H)
+    this.waitFor(f.default, _.Ay, h.A, u.A, m.A, g.Ay, E.A, y.A, b.A, O.A, v.A, d.A), this.syncWith([d.A], K), this.syncWith([_.Ay], H)
   }
   getSubscribedThreadIds() {
-    return I.getSubscribedThreadIds()
+    return S.getSubscribedThreadIds()
   }
   isSubscribedToThreads(e) {
-    return I.isSubscribedToThreads(e)
+    return S.isSubscribedToThreads(e)
   }
   isSubscribedToAnyMember(e) {
-    return I.isSubscribedToAnyMember(e)
+    return S.isSubscribedToAnyMember(e)
   }
   isSubscribedToMemberUpdates(e) {
-    return I.isSubscribedToMemberUpdates(e)
+    return S.isSubscribedToMemberUpdates(e)
   }
   isSubscribedToAnyGuildChannel(e) {
-    let t = I.get(e).channels;
+    let t = S.get(e).channels;
     return null != t && Object.keys(t).length > 0
   }
 }
-S(q, "displayName", "GuildSubscriptionsStore");
+I(q, "displayName", "GuildSubscriptionsStore");
 let X = new q(Chunk73153.h, {
   CONNECTION_OPEN: R,
   CONNECTION_RESUMED: R,

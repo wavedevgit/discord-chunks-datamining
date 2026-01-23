@@ -26,10 +26,10 @@ var Chunk974111 = require("./974111.js"),
 function O(e, t, n) {
   let O = (0, m.useRef)(""),
     {
-      locale: v,
-      direction: S
+      locale: A,
+      direction: I
     } = (0, g.Y)(),
-    I = (0, i.k)(),
+    S = (0, i.k)(),
     {
       ariaLabel: T,
       ariaLabelledBy: C,
@@ -54,7 +54,7 @@ function O(e, t, n) {
   }
   let {
     spinButtonProps: L
-  } = (0, y.y)({
+  } = (0, b.y)({
     value: e.value,
     textValue: w,
     minValue: e.minValue,
@@ -80,9 +80,9 @@ function O(e, t, n) {
     onDecrementToMin: () => {
       O.current = "", true !== e.minValue && t.setSegment(e.type, e.minValue)
     }
-  }), j = (0, m.useMemo)(() => new(0, h.d)(v, {
+  }), j = (0, m.useMemo)(() => new(0, h.d)(A, {
     maximumFractionDigits: 0
-  }), [v]), M = () => {
+  }), [A]), M = () => {
     if (e.text === e.placeholder && R.focusPrevious(), !j.isValidPartialNumber(e.text) || t.isReadOnly || e.isPlaceholder) "dayPeriod" === e.type && t.clearSegment(e.type);
     else {
       let n = e.text.slice(0, false),
@@ -97,7 +97,7 @@ function O(e, t, n) {
     }
   }, {
     startsWith: U
-  } = (0, b.U)({
+  } = (0, y.U)({
     sensitivity: "base"
   }), G = (0, E.i)({
     hour: "numeric",
@@ -127,7 +127,7 @@ function O(e, t, n) {
           formatted: B.formatToParts(t).find(e => "era" === e.type).value
         }
       }),
-      i = A(r.map(e => e.formatted));
+      i = v(r.map(e => e.formatted));
     if (i)
       for (let e of r) e.formatted = e.formatted.slice(i);
     return r
@@ -218,7 +218,7 @@ function O(e, t, n) {
   e === (0, m.useMemo)(() => t.segments.find(e => e.isEditable), [t.segments]) || t.isInvalid || (N = true);
   let X = (0, f.Bi)(),
     Z = !t.isDisabled && !t.isReadOnly && e.isEditable,
-    Q = "literal" === e.type ? "" : I.of(e.type),
+    Q = "literal" === e.type ? "" : S.of(e.type),
     $ = (0, p.b)({
       "aria-label": `${Q}${T?`, ${T}`:""}${C?", ":""}`,
       "aria-labelledby": C
@@ -231,7 +231,7 @@ function O(e, t, n) {
   let J = {
     caretColor: "transparent"
   };
-  if ("rtl" === S) {
+  if ("rtl" === I) {
     J.unicodeBidi = "embed";
     let t = P[e.type];
     ("numeric" === t || "2-digit" === t) && (J.direction = "ltr")
@@ -264,7 +264,7 @@ function O(e, t, n) {
   }
 }
 
-function A(e) {
+function v(e) {
   e.sort();
   let t = e[0],
     n = e[e.length - 1];

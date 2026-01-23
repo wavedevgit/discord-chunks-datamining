@@ -20,7 +20,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk175820 = require("./175820.js");
 
-function h(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,22 +52,22 @@ function j(e, t) {
   }), e
 }
 
-function O(e) {
+function _(e) {
   let {
     palette: t,
     badge: n,
     isSelected: i,
     onClick: l
-  } = e, a = (0, c.Gx)({
+  } = e, a = (0, o.Gx)({
     isSelected: i,
     label: (0, d.A)(t.primary, t.secondary)
   });
-  return (0, r.jsx)(o.DUT, j(h({}, a), {
-    className: s()(x.Uh, {
-      [x.fT]: i
+  return (0, r.jsx)(c.DUT, j(x({}, a), {
+    className: s()(h.Uh, {
+      [h.fT]: i
     }),
     onClick: l,
-    children: (0, r.jsx)(f.J, {
+    children: (0, r.jsx)(g.J, {
       badge: n,
       width: 32,
       height: 32,
@@ -77,51 +77,51 @@ function O(e) {
   }))
 }
 
-function y(e) {
+function O(e) {
   let {
     badge: t,
     primary: n,
     secondary: i,
     isSelected: l,
     showColorPopout: d,
-    setShowColorPopout: f,
-    palettePopoutTargetRef: g,
-    handleChange: m
-  } = e, O = (0, c.Gx)({
+    setShowColorPopout: g,
+    palettePopoutTargetRef: m,
+    handleChange: f
+  } = e, _ = (0, o.Gx)({
     isSelected: l,
-    label: p.intl.formatToPlainString(p.t.hr4D2X, {
+    label: b.intl.formatToPlainString(b.t.hr4D2X, {
       primaryColor: n,
       secondaryColor: i
     })
   });
   return (0, r.jsx)(u.A, {
-    popoutTargetRef: g,
-    showSecondaryColor: b.C9[t] >= 2,
+    popoutTargetRef: m,
+    showSecondaryColor: p.C9[t] >= 2,
     palette: {
       primary: n,
       secondary: i
     },
     onPrimaryColorChange: e => {
-      m({
+      f({
         primary: (0, a.Hl)(e)
       })
     },
     onSecondaryColorChange: e => {
-      m({
+      f({
         secondary: (0, a.Hl)(e)
       })
     },
     shouldShow: d,
-    onRequestClose: () => f(false),
-    children: e => (0, r.jsx)(o.DUT, j(h({}, e, O), {
-      innerRef: g,
+    onRequestClose: () => g(false),
+    children: e => (0, r.jsx)(c.DUT, j(x({}, e, _), {
+      innerRef: m,
       onClick: () => {
-        f(e => !e)
+        g(e => !e)
       },
-      className: s()(x.Uh, {
-        [x.fT]: l
+      className: s()(h.Uh, {
+        [h.fT]: l
       }),
-      children: (0, r.jsx)(o.dDg, {
+      children: (0, r.jsx)(c.dDg, {
         size: "custom",
         width: 20,
         height: 20
@@ -136,44 +136,44 @@ let v = function(e) {
     badge: l,
     primaryColor: s,
     secondaryColor: a
-  } = e, [d, u] = i.useState(false), f = i.useRef(null), v = i.useId(), A = i.useId(), E = i.useMemo(() => b.Ub.every(e => e.primary !== s || e.secondary !== a), [s, a]), N = (0, c._u)({
+  } = e, [d, u] = i.useState(false), g = i.useRef(null), v = i.useId(), y = i.useId(), A = i.useMemo(() => p.Ub.every(e => e.primary !== s || e.secondary !== a), [s, a]), E = (0, o._u)({
     orientation: "horizontal",
     isDisabled: false,
     labelledBy: v
   });
 
-  function _(e) {
+  function N(e) {
     let t = {};
-    true !== e.primary && (t.badgeColorPrimary = e.primary), true !== e.secondary && (t.badgeColorSecondary = e.secondary), g.A.updateGuildProfile(n, t)
+    true !== e.primary && (t.badgeColorPrimary = e.primary), true !== e.secondary && (t.badgeColorSecondary = e.secondary), m.A.updateGuildProfile(n, t)
   }
   return (0, r.jsxs)("div", {
     className: t,
-    children: [(0, r.jsx)(o.D0$, {
-      label: p.intl.string(m.default.zSbMdX),
+    children: [(0, r.jsx)(c.D0$, {
+      label: b.intl.string(f.default.zSbMdX),
       id: v,
-      children: e => (0, r.jsxs)("div", j(h({}, N), {
+      children: e => (0, r.jsxs)("div", j(x({}, E), {
         id: e.controlId,
-        "aria-describedby": A,
-        className: x.p3,
-        children: [b.Ub.map(e => (0, r.jsx)(O, {
+        "aria-describedby": y,
+        className: h.p3,
+        children: [p.Ub.map(e => (0, r.jsx)(_, {
           palette: e,
           badge: l,
           isSelected: e.primary === s && e.secondary === a,
-          onClick: () => _(e)
-        }, "".concat(e.primary).concat(e.secondary))), (0, r.jsx)(y, {
+          onClick: () => N(e)
+        }, "".concat(e.primary).concat(e.secondary))), (0, r.jsx)(O, {
           badge: l,
           primary: s,
           secondary: a,
-          isSelected: E,
+          isSelected: A,
           showColorPopout: d,
           setShowColorPopout: u,
-          palettePopoutTargetRef: f,
-          handleChange: _
+          palettePopoutTargetRef: g,
+          handleChange: N
         })]
       }))
-    }), (0, r.jsx)(o.AC4, {
-      id: A,
-      children: p.intl.string(p.t.ovbW0Z)
+    }), (0, r.jsx)(c.AC4, {
+      id: y,
+      children: b.intl.string(b.t.ovbW0Z)
     })]
   })
 }

@@ -19,17 +19,17 @@ module.exports = function(e, t, n, s, o, l) {
   for (var m = c; ++f < d;) {
     var g = e[p = u[f]],
       E = t[p];
-    if (s) var b = c ? s(E, g, p, t, e, l) : s(g, E, p, e, t, l);
-    if (!(true === b ? g === E || o(g, E, n, s, l) : b)) {
+    if (s) var y = c ? s(E, g, p, t, e, l) : s(g, E, p, e, t, l);
+    if (!(true === y ? g === E || o(g, E, n, s, l) : y)) {
       h = false;
       break
     }
     m || (m = "constructor" == p)
   }
   if (h && !m) {
-    var y = e.constructor,
+    var b = e.constructor,
       O = t.constructor;
-    y != O && "constructor" in e && "constructor" in t && !("function" == typeof y && y instanceof y && "function" == typeof O && O instanceof O) && (h = false)
+    b != O && "constructor" in e && "constructor" in t && !("function" == typeof b && b instanceof b && "function" == typeof O && O instanceof O) && (h = false)
   }
   return l.delete(e), l.delete(t), h
 }

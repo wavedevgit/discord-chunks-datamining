@@ -1,7 +1,7 @@
 /** Chunk was on 80360 **/
-/** chunk id: 441124, original params: t,n,e (module,exports,require) **/
+/** chunk id: 441124, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  V: () => c
+  V: () => l
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -11,22 +11,22 @@ var Chunk518614 = require("./518614.js"),
   Chunk652215 = require("./652215.js"),
   Chunk544105 = require("./544105.js");
 
-function c(t) {
+function l(t) {
   let {
-    platformType: n,
-    authToken: e,
-    onContinue: c,
-    onError: l,
-    onClose: b
-  } = t, p = n === d.fg2.PLAYSTATION_STAGING ? a.i.PLAYSTATION_STAGING_APPLICATION_ID : a.i.PLAYSTATION_APPLICATION_ID, f = n === d.fg2.PLAYSTATION_STAGING ? i._.PLAYSTATION_STAGING : i._.PLAYSTATION;
+    platformType: e,
+    authToken: n,
+    onContinue: l,
+    onError: d,
+    onClose: _
+  } = t, p = e === a.fg2.PLAYSTATION_STAGING ? r.i.PLAYSTATION_STAGING_APPLICATION_ID : r.i.PLAYSTATION_APPLICATION_ID, b = e === a.fg2.PLAYSTATION_STAGING ? i._.PLAYSTATION_STAGING : i._.PLAYSTATION;
   return (0, o.jsx)(s.W, {
-    platformType: n,
+    platformType: e,
     clientId: p,
-    scopes: r.NL,
-    authToken: e,
-    onContinue: c,
-    onError: l,
-    onClose: b,
-    redirectUri: f
+    scopes: c.NL,
+    authToken: n,
+    onContinue: l,
+    onError: d,
+    onClose: _,
+    redirectUri: b
   })
 }

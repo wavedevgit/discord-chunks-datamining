@@ -1,7 +1,7 @@
 /** Chunk was on 22477 **/
 /** chunk id: 885293, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => x
 }), require("./747238.js"), require("./812715.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,19 +17,19 @@ var Chunk484030 = require("./484030.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk589049 = require("./589049.js");
 
-function f(e) {
+function x(e) {
   let {
     url: t,
     trustUrl: n,
-    isProtocol: f,
-    onConfirm: x,
-    onCancel: b,
-    onClose: g,
+    isProtocol: x,
+    onConfirm: g,
+    onCancel: f,
+    onClose: b,
     transitionState: v
   } = e, {
     protocol: j,
-    authorityPrefix: y,
-    hostname: _,
+    authorityPrefix: _,
+    hostname: y,
     theRestOfTheUrl: A,
     shouldTrustUrl: C,
     setShouldTrustUrl: S,
@@ -38,19 +38,19 @@ function f(e) {
   } = (0, u.u)({
     url: t,
     trustUrl: n,
-    onConfirm: x,
-    onCancel: b,
-    onClose: g
+    onConfirm: g,
+    onCancel: f,
+    onClose: b
   });
   return (0, o.A)({
-    type: i.ImpressionTypes.MODAL,
-    name: i.ImpressionNames.MASKED_LINK_MODAL
-  }), (0, a.jsxs)(r.Modal, {
+    type: r.ImpressionTypes.MODAL,
+    name: r.ImpressionNames.MASKED_LINK_MODAL
+  }), (0, a.jsxs)(i.Modal, {
     size: "md",
     transitionState: v,
-    onClose: g,
+    onClose: b,
     title: p.intl.string(p.t["3w1QGl"]),
-    subtitle: f ? p.intl.format(p.t.aCYv1z, {}) : p.intl.string(p.t.soRxRe),
+    subtitle: x ? p.intl.format(p.t.aCYv1z, {}) : p.intl.string(p.t.soRxRe),
     actions: [{
       text: p.intl.string(p.t["/g10LC"]),
       onClick: () => {
@@ -61,7 +61,7 @@ function f(e) {
       },
       variant: "secondary"
     }, {
-      text: f ? p.intl.string(p.t.COq6kk) : p.intl.string(p.t.NcJfJG),
+      text: x ? p.intl.string(p.t.COq6kk) : p.intl.string(p.t.NcJfJG),
       onClick: () => {
         O(), d.default.track(m.HAw.MASKED_LINK_MODAL_CLICKED, {
           is_trust_url_selected: C,
@@ -74,14 +74,14 @@ function f(e) {
       className: h.ul,
       children: [(0, a.jsxs)(s.Text, {
         tag: "span",
-        variant: f ? "text-md/semibold" : "text-md/normal",
-        color: f ? "text-default" : "text-muted",
-        children: [j, y]
+        variant: x ? "text-md/semibold" : "text-md/normal",
+        color: x ? "text-default" : "text-muted",
+        children: [j, _]
       }), (0, a.jsx)(s.Text, {
         tag: "span",
-        variant: f ? "text-md/normal" : "text-md/semibold",
-        color: f ? "text-muted" : "text-default",
-        children: _
+        variant: x ? "text-md/normal" : "text-md/semibold",
+        color: x ? "text-muted" : "text-default",
+        children: y
       }), (0, a.jsx)(s.Text, {
         tag: "span",
         variant: "text-md/normal",
@@ -93,17 +93,17 @@ function f(e) {
       children: (0, a.jsx)(s.Checkbox, {
         checked: C,
         onChange: e => S(e),
-        label: f ? p.intl.format(p.t["haA+Xw"], {
+        label: x ? p.intl.format(p.t["haA+Xw"], {
           protocol: j.replace(":", "")
         }) : p.intl.format(p.t.ZgXDsI, {
-          domain: _
+          domain: y
         }),
         labelType: "secondary"
       })
     }), (0, a.jsx)(l.tH, {
       fallback: null,
       children: (0, a.jsx)(c.l, {
-        onClose: g
+        onClose: b
       })
     })]
   })

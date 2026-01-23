@@ -29,21 +29,21 @@ function m(e) {
     location: "useCopyUserInfoItem"
   }, {
     autoTrackExposure: false
-  }), b = (0, l.A)({
+  }), y = (0, l.A)({
     id: t.id,
     label: h.intl.string(h.t["/AXYnE"]),
     onSuccess: a
-  }), y = i.useMemo(() => null == m ? null : m.getBannerURL({
+  }), b = i.useMemo(() => null == m ? null : m.getBannerURL({
     canAnimate: true,
     size: _.XAf
   }), [m]), O = i.useCallback(() => {
     (0, p.C)(t.id), null == a || a()
-  }, [t.id, a]), A = i.useCallback(() => {
+  }, [t.id, a]), v = i.useCallback(() => {
     let e = f.Ay.getUserAvatarURL(t, true, _.XAf);
     s()(null != e, "cannot copy null avatar URL"), (0, p.C)(e), null == a || a()
-  }, [t, a]), v = i.useCallback(() => {
-    s()(null != y, "cannot copy null banner URL"), (0, p.C)(y), null == a || a()
-  }, [y, a]);
+  }, [t, a]), A = i.useCallback(() => {
+    s()(null != b, "cannot copy null banner URL"), (0, p.C)(b), null == a || a()
+  }, [b, a]);
   return !__OVERLAY__ && g && p.p5 && null != t.id ? E ? (0, r.jsxs)(o.Drp, {
     id: "copy-user-info",
     label: h.intl.string(h.t.QvQeLv),
@@ -55,11 +55,11 @@ function m(e) {
     }), null != t.avatar && (0, r.jsx)(o.Drp, {
       id: "copy-user-avatar-link",
       label: h.intl.string(h.t.gERDvM),
-      action: A
-    }), null != y && (0, r.jsx)(o.Drp, {
+      action: v
+    }), null != b && (0, r.jsx)(o.Drp, {
       id: "copy-user-banner-link",
       label: h.intl.string(h.t.hsNv0R),
-      action: v
+      action: A
     })]
-  }) : b : null
+  }) : y : null
 }

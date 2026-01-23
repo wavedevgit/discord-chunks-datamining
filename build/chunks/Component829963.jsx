@@ -22,15 +22,15 @@ function h(e) {
   let {
     application: g,
     message: E,
-    header: b,
-    presenceActivity: y,
+    header: y,
+    presenceActivity: b,
     hideParty: O,
-    partyStatusElement: A,
-    currentUserPresenceActivity: v,
-    onClickContent: S,
-    onView: I,
+    partyStatusElement: v,
+    currentUserPresenceActivity: A,
+    onClickContent: I,
+    onView: S,
     guildId: T
-  } = e, C = (0, d.w)(v, y), N = (0, c.Gq)(y, E.author, "Invite Embed"), R = i.useMemo(() => {
+  } = e, C = (0, d.w)(A, b), N = (0, c.Gq)(b, E.author, "Invite Embed"), R = i.useMemo(() => {
     let e = [];
     if (!C) {
       var t;
@@ -45,10 +45,10 @@ function h(e) {
       })
     }
     return e
-  }, [C, N]), w = null != y && null != y.details && null != y.state ? p.intl.formatToPlainString(p.t.JCvHtx, {
-    track: y.details,
-    artist: y.state
-  }) : g.name, P = null != (t = null == y || null == (h = y.timestamps) ? true : h.start) ? t : null == y ? true : y.created_at, D = i.useMemo(() => {
+  }, [C, N]), w = null != b && null != b.details && null != b.state ? p.intl.formatToPlainString(p.t.JCvHtx, {
+    track: b.details,
+    artist: b.state
+  }) : g.name, P = null != (t = null == b || null == (h = b.timestamps) ? true : h.start) ? t : null == b ? true : b.created_at, D = i.useMemo(() => {
     var e;
     return null != P ? (0, r.jsxs)("div", {
       className: _.Ym,
@@ -58,14 +58,14 @@ function h(e) {
       }), (0, r.jsx)(l.z, {
         entry: {
           start: P,
-          end: null == y || null == (e = y.timestamps) ? true : e.end
+          end: null == b || null == (e = b.timestamps) ? true : e.end
         },
         textColor: "currentColor",
         textTabularNumbers: false,
         textFontCode: false
       })]
     }) : null
-  }, [P, null == y || null == (m = y.timestamps) ? true : m.end]), x = i.useMemo(() => (0, r.jsxs)("div", {
+  }, [P, null == b || null == (m = b.timestamps) ? true : m.end]), x = i.useMemo(() => (0, r.jsxs)("div", {
     className: _.pq,
     children: [(0, r.jsx)(a.Text, {
       variant: "text-xs/normal",
@@ -73,19 +73,19 @@ function h(e) {
       color: "none",
       lineClamp: 1,
       children: D
-    }), O ? null : A]
-  }), [D, O, A]);
+    }), O ? null : v]
+  }), [D, O, v]);
   return (0, r.jsx)(s.h, {
-    header: b,
+    header: y,
     title: w,
-    iconSrc: null != (n = (0, u.A)(y, g.id)) ? n : true,
+    iconSrc: null != (n = (0, u.A)(b, g.id)) ? n : true,
     info: x,
     actions: R,
-    onClickContent: S,
+    onClickContent: I,
     trackingConfig: {
       id: g.id,
       linkType: f.J.RICH_PRESENCE_INVITE,
-      onView: I,
+      onView: S,
       referrerId: E.author.id,
       guildId: T,
       channelId: E.channel_id,

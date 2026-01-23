@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 391257, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,34 +18,34 @@ var Chunk311907 = require("./311907.js"),
   Chunk516261 = require("./516261.js"),
   Chunk206314 = require("./206314.js");
 
-function g(e) {
+function m(e) {
   let {
     channel: t
-  } = e, n = (0, s.Ay)(t, true), g = (0, l.bG)([u.A], () => u.A.can(f.xBc.MANAGE_CHANNELS, t) && c.bk.has(t.type));
+  } = e, n = (0, a.Ay)(t, true), m = (0, l.bG)([u.A], () => u.A.can(p.xBc.MANAGE_CHANNELS, t) && c.bk.has(t.type));
   return (0, r.jsxs)(d.Ay, {
     channelId: t.id,
     children: [(0, r.jsx)(d.WK, {
       channelType: t.type
     }), (0, r.jsx)(d.cr, {
-      children: p.intl.format(p.t.I3R7Vn, {
+      children: h.intl.format(h.t.I3R7Vn, {
         channelName: n
       })
     }), (0, r.jsx)(d.j1, {
-      className: b.PT,
-      children: p.intl.format(p.t.pYMVRT, {
+      className: g.PT,
+      children: h.intl.format(h.t.pYMVRT, {
         channelName: n,
         topicHook: () => o.A.parseTopic(t.topic, true, {
           channelId: t.id
         })
       })
-    }), g ? (0, r.jsx)("div", {
-      className: h.U,
+    }), m ? (0, r.jsx)("div", {
+      className: f.U,
       children: (0, r.jsx)(i.Button, {
         size: "sm",
         variant: "secondary",
-        text: p.intl.string(p.t["3gUsJb"]),
+        text: h.intl.string(h.t["3gUsJb"]),
         onClick: () => {
-          a.Ay.open(t.id)
+          s.Ay.open(t.id)
         },
         icon: i.R2l
       })

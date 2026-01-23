@@ -96,31 +96,31 @@ let K = {
   X = "1337",
   Z = e => {
     let t = 0;
-    return [(0, y.rh)(W(H({}, (0, O.Ay)({
+    return [(0, b.rh)(W(H({}, (0, O.Ay)({
       channelId: X,
       content: G.intl.string(G.t.oZxkEq)
     })), {
       state: k.cmJ.SENT,
       id: "".concat(t++)
-    })), (0, y.rh)(W(H({}, (0, O.Ay)({
+    })), (0, b.rh)(W(H({}, (0, O.Ay)({
       channelId: X,
       content: (0, c.Mw)(e) ? G.intl.string(G.t["WGb/v7"]) : G.intl.string(G.t["62m4mz"])
     })), {
       state: k.cmJ.SENT,
       id: "".concat(t++)
-    })), (0, y.rh)(W(H({}, (0, O.Ay)({
+    })), (0, b.rh)(W(H({}, (0, O.Ay)({
       channelId: X,
       content: G.intl.string(G.t.a0Byo5)
     })), {
       state: k.cmJ.SENT,
       id: "".concat(t++)
-    })), (0, y.rh)(W(H({}, (0, O.Ay)({
+    })), (0, b.rh)(W(H({}, (0, O.Ay)({
       channelId: X,
       content: G.intl.string(G.t.bmwEWJ)
     })), {
       state: k.cmJ.SENT,
       id: "".concat(t++)
-    })), (0, y.rh)(W(H({}, (0, O.Ay)({
+    })), (0, b.rh)(W(H({}, (0, O.Ay)({
       channelId: X,
       content: G.intl.string(G.t["hK9QW/"])
     })), {
@@ -176,8 +176,8 @@ let K = {
         className: s()(V.VH, F.C2, e ? V.Me : true, "group-spacing-".concat(null != l ? l : e ? U.y5 : U.ES)),
         outline: true,
         "aria-hidden": true,
-        children: _.map((t, n) => (0, r.jsx)(v.A, {
-          author: (0, A.p_)(t),
+        children: _.map((t, n) => (0, r.jsx)(A.A, {
+          author: (0, v.p_)(t),
           message: t,
           compact: e,
           isGroupStart: n % 2 == 0,
@@ -287,10 +287,10 @@ class et extends Chunk64700.Component {
   render() {
     let {
       density: e
-    } = this.props, t = (0, r.jsxs)(S.x, {
+    } = this.props, t = (0, r.jsxs)(I.x, {
       setting: M.H.APPEARANCE_THEME,
       children: [this.renderPreview(), this.renderTheme()]
-    }), n = (0, r.jsx)(S.x, {
+    }), n = (0, r.jsx)(I.x, {
       setting: M.H.APPEARANCE_ICON,
       children: (0, r.jsx)(x.y, {})
     }), i = [{
@@ -302,7 +302,7 @@ class et extends Chunk64700.Component {
     }, {
       name: G.intl.string(G.t["4cuYHx"]),
       value: l.NS.COZY
-    }], a = (0, r.jsxs)(S.x, {
+    }], a = (0, r.jsxs)(I.x, {
       setting: M.H.APPEARANCE_LIST_SPACING,
       children: [(0, r.jsx)(u.z6M, {
         label: G.intl.string(G.t["C/5V0A"]),
@@ -315,7 +315,7 @@ class et extends Chunk64700.Component {
       }), (0, r.jsx)(u.cGx, {
         className: V.yF
       })]
-    }), s = (0, r.jsxs)(S.x, {
+    }), s = (0, r.jsxs)(I.x, {
       setting: M.H.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
       children: [(0, r.jsxs)(u.nVY, {
         label: G.intl.string(G.t["2ed/sA"]),
@@ -342,7 +342,7 @@ class et extends Chunk64700.Component {
       }), (0, r.jsx)(u.cGx, {
         className: V.yF
       })]
-    }), o = (0, r.jsxs)(S.x, {
+    }), o = (0, r.jsxs)(I.x, {
       setting: M.H.APPEARANCE_SCALING_SPACING,
       children: [(0, r.jsxs)(u.nVY, {
         label: G.intl.string(G.t["0Yh+ZX"]),
@@ -392,7 +392,7 @@ function en() {
   (0, f.Ay)(() => {
     (0, E.v)()
   });
-  let s = (0, I.qo)(),
+  let s = (0, S.qo)(),
     l = (0, o.cf)([N.A, R.Ay, h.A, T.default, g.A], () => {
       var e, t;
       return {

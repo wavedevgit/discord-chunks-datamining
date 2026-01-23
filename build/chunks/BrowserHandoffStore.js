@@ -25,34 +25,34 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 let E = "BrowserHandoffStore",
-  b = false,
-  y = new Chunk451988.Ep;
+  y = false,
+  b = new Chunk451988.Ep;
 
 function O() {
   null != r && null != i && (window.open("".concat(r, "&key=").concat(i)), _.A.focus(null, true))
 }
 
-function A() {
-  i = null, y.stop(), b = false, c.w.set(E, b)
+function v() {
+  i = null, b.stop(), y = false, c.w.set(E, y)
 }
 
-function v(e) {
+function A(e) {
   r = "".concat(location.protocol, "//").concat(location.host, "/handoff?rpc=").concat(e.port), O()
 }
 
-function S(e) {
+function I(e) {
   if (null != i) returnfalse;
-  i = (0, o.A)(), y.start(e.timeout, () => (0, f.mZ)()), O()
+  i = (0, o.A)(), b.start(e.timeout, () => (0, f.mZ)()), O()
 }
 
-function I(e) {
+function S(e) {
   let {
     handoffKey: t,
     handoffToken: n,
     timeout: r
   } = e;
   if (null == t || null == n) returnfalse;
-  b = true, y.start(r, () => (0, f.mZ)())
+  y = true, b.start(r, () => (0, f.mZ)())
 }
 
 function T(e) {
@@ -60,14 +60,14 @@ function T(e) {
 }
 
 function C() {
-  A()
+  v()
 }
 class N extends(s = Chunk311907.Ay.Store) {
   initialize() {
-    false !== c.w.get(E) && (b = h.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
+    false !== c.w.get(E) && (y = h.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
   }
   isHandoffAvailable() {
-    return !m.P.isDisallowPopupsSet() && b
+    return !m.P.isDisallowPopupsSet() && y
   }
   get user() {
     return a
@@ -78,10 +78,10 @@ class N extends(s = Chunk311907.Ay.Store) {
 }
 g(N, "displayName", "BrowserHandoffStore");
 let R = new N(Chunk73153.h, {
-  RPC_SERVER_READY: v,
-  BROWSER_HANDOFF_BEGIN: S,
-  BROWSER_HANDOFF_FROM_APP: I,
-  BROWSER_HANDOFF_UNAVAILABLE: A,
+  RPC_SERVER_READY: A,
+  BROWSER_HANDOFF_BEGIN: I,
+  BROWSER_HANDOFF_FROM_APP: S,
+  BROWSER_HANDOFF_UNAVAILABLE: v,
   BROWSER_HANDOFF_SET_USER: T,
   LOGIN: C,
   LOGIN_SUCCESS: C,

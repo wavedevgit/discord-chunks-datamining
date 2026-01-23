@@ -26,13 +26,13 @@ var Chunk735438 = require("./735438.js"),
   Chunk652215 = require("./652215.js"),
   Chunk731854 = require("./731854.js");
 
-function S(e) {
+function I(e) {
   var t;
   let n = c.A.getConnectionStats(e);
   return null == n ? null : null != (t = n.stats.rtp.outbound.find(e => "video" === e.type)) ? t : null
 }
 
-function I(e, t) {
+function S(e, t) {
   var n;
   if (null == t) return null;
   let r = c.A.getConnectionStats(e);
@@ -42,7 +42,7 @@ function I(e, t) {
 }
 
 function T(e, t, n) {
-  return e ? S(t) : I(t, n)
+  return e ? I(t) : S(t, n)
 }
 
 function C(e) {
@@ -80,7 +80,7 @@ function w(e) {
 
 function P(e, t, n) {
   var r, i, a, s;
-  return e ? null != (r = null == (i = S(t)) ? true : i.frameRateEncode) ? r : null : null != (a = null == (s = I(t, n)) ? true : s.frameRateDecode) ? a : null
+  return e ? null != (r = null == (i = I(t)) ? true : i.frameRateEncode) ? r : null : null != (a = null == (s = S(t, n)) ? true : s.frameRateDecode) ? a : null
 }
 
 function D(e, t) {
@@ -117,12 +117,12 @@ function D(e, t) {
       distributor: es
     } = (0, o.wH)(ee),
     eo = L.isErrorOutbound,
-    el = null != U ? U : v.x.DEFAULT,
+    el = null != U ? U : A.x.DEFAULT,
     ec = null != Q ? Q.ownerId : Z,
     eu = null != $ ? null == $ ? true : $.getVoiceParticipantType() : eo ? "sender" : "receiver",
     ed = null != (n = null == J ? true : J.getMediaEngineConnectionId()) ? n : null;
-  x = null != k && null != Q ? eo ? null == J || null == (c = J.getOutboundStats()) ? true : c.find(e => e.quality === v.Y4) : null == J ? true : J.getInboundStats(Q.ownerId) : eo ? null != (h = i().maxBy(null != (D = null == J ? true : J.getOutboundStats()) ? D : [], e => e.num_frames)) ? h : null : null != ec ? null == J ? true : J.getInboundStats(ec) : null, (0, g.w)().then(t => {
-    var n, r, i, o, l, c, u, d, h, m, g, O, w, D, k, Z, ee, ef, ep, e_, eh, em, eg, eE, eb, ey, eO, eA, ev, eS, eI, eT, eC, eN, eR, ew, eP, eD, ex, eL, ej, eM, ek, eU, eG, eV, eF, eB, eH;
+  x = null != k && null != Q ? eo ? null == J || null == (c = J.getOutboundStats()) ? true : c.find(e => e.quality === A.Y4) : null == J ? true : J.getInboundStats(Q.ownerId) : eo ? null != (h = i().maxBy(null != (D = null == J ? true : J.getOutboundStats()) ? D : [], e => e.num_frames)) ? h : null : null != ec ? null == J ? true : J.getInboundStats(ec) : null, (0, g.w)().then(t => {
+    var n, r, i, o, l, c, u, d, h, m, g, O, w, D, k, Z, ee, ef, ep, e_, eh, em, eg, eE, ey, eb, eO, ev, eA, eI, eS, eT, eC, eN, eR, ew, eP, eD, ex, eL, ej, eM, ek, eU, eG, eV, eF, eB, eH;
     let eY = {
       error_name: e.valueOf(),
       error_code: L.errorCode,
@@ -148,14 +148,14 @@ function D(e, t) {
       num_bytes: null != (O = null == x ? true : x.num_bytes) ? O : 0,
       num_packets_lost: null != (w = null == (ex = T(eo, ed, ec)) ? true : ex.packetsLost) ? w : 0,
       video_codec: null != (D = null != H ? H : (0, a.aV)(null == (eL = T(eo, ed, ec)) ? true : eL.codec.name)) ? D : null,
-      video_encoder: null != (k = null != Y ? Y : (0, a.kZ)(null == (ej = S(ed)) ? true : ej.encoderImplementationName)) ? k : null,
-      video_decoder: null != (Z = null != W ? W : (0, a.s7)(null == (eM = I(ed, ec)) ? true : eM.decoderImplementationName)) ? Z : null,
+      video_encoder: null != (k = null != Y ? Y : (0, a.kZ)(null == (ej = I(ed)) ? true : ej.encoderImplementationName)) ? k : null,
+      video_decoder: null != (Z = null != W ? W : (0, a.s7)(null == (eM = S(ed, ec)) ? true : eM.decoderImplementationName)) ? Z : null,
       audio_capture_sample_rate_mismatch_percent: null != K ? K : null,
       incoming_video_stopped_for_occlusion: !s.X.isIncomingVideoEnabled(),
       bitrate: null != (ee = null == (ek = T(eo, ed, ec)) ? true : ek.bitrate) ? ee : null,
-      target_bitrate: eo && null != (ef = null == (eU = S(ed)) ? true : eU.bitrateTarget) ? ef : null,
+      target_bitrate: eo && null != (ef = null == (eU = I(ed)) ? true : eU.bitrateTarget) ? ef : null,
       fps: null != (ep = P(eo, el, ec)) ? ep : null,
-      target_fps: el === v.x.STREAM && eo ? en : null,
+      target_fps: el === A.x.STREAM && eo ? en : null,
       sender_user_id: null != (e_ = null == Q ? true : Q.ownerId) ? e_ : null,
       stream_region: null != (eh = null == $ ? true : $.getRegion()) ? eh : null,
       stream_source_type: eo && null != (em = null == $ || null == (eG = $.analyticsContext) ? true : eG.streamSourceType) ? em : null,
@@ -168,18 +168,18 @@ function D(e, t) {
       share_application_executable: null != ea ? ea : null,
       share_application_distributor: null != es ? es : null,
       cpu_brand: null != (eE = null == t ? true : t.cpu_brand) ? eE : null,
-      cpu_vendor: null != (eb = null == t ? true : t.cpu_vendor) ? eb : null,
-      cpu_memory: null != (ey = null == t ? true : t.cpu_memory) ? ey : null,
+      cpu_vendor: null != (ey = null == t ? true : t.cpu_vendor) ? ey : null,
+      cpu_memory: null != (eb = null == t ? true : t.cpu_memory) ? eb : null,
       gpu_brand: null != (eO = null == t ? true : t.gpu_brand) ? eO : null,
-      gpu_count: null != (eA = null == t ? true : t.gpu_count) ? eA : null,
-      gpu_memory: null != (ev = null == t ? true : t.gpu_memory) ? ev : null,
-      gpu_device_vendor_id: null != (eS = null == t ? true : t.gpu_device_vendor_id) ? eS : null,
-      gpu_device_device_id: null != (eI = null == t ? true : t.gpu_device_device_id) ? eI : null,
+      gpu_count: null != (ev = null == t ? true : t.gpu_count) ? ev : null,
+      gpu_memory: null != (eA = null == t ? true : t.gpu_memory) ? eA : null,
+      gpu_device_vendor_id: null != (eI = null == t ? true : t.gpu_device_vendor_id) ? eI : null,
+      gpu_device_device_id: null != (eS = null == t ? true : t.gpu_device_device_id) ? eS : null,
       gpu_device_sub_sys_id: null != (eT = null == t ? true : t.gpu_device_sub_sys_id) ? eT : null,
       gpu_device_revision: null != (eC = null == t ? true : t.gpu_device_revision) ? eC : null,
       gpu_driver_version: null != (eN = null == t ? true : t.gpu_driver_version) ? eN : null,
-      cpu_usage: null != (eR = y.A.getCurrentCPUUsagePercent()) ? eR : null,
-      memory_usage: null != (ew = y.A.getCurrentMemoryUsageKB()) ? ew : null,
+      cpu_usage: null != (eR = b.A.getCurrentCPUUsagePercent()) ? eR : null,
+      memory_usage: null != (ew = b.A.getCurrentMemoryUsageKB()) ? ew : null,
       outbound_bitrate_estimate: C(ed),
       inbound_bitrate_estimate: N(ed),
       hardware_enabled: f.A.getHardwareEncoding(),
@@ -201,8 +201,8 @@ function D(e, t) {
       output_volume: f.A.getOutputVolume(),
       audio_input_device_count: Object.keys(f.A.getInputDevices()).length,
       audio_output_device_count: Object.keys(f.A.getOutputDevices()).length,
-      app_hardware_acceleration_enabled: b.A.getAppHardwareAccelerationEnabled()
+      app_hardware_acceleration_enabled: y.A.getAppHardwareAccelerationEnabled()
     };
-    E.default.track(A.HAw.AV_ERROR_REPORTED, eY)
+    E.default.track(v.HAw.AV_ERROR_REPORTED, eY)
   })
 }

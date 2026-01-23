@@ -122,7 +122,7 @@ function g(e) {
       var e, t;
       return m[null != (e = null == _ || null == (t = _.options) ? true : t.position) ? e : h.current]
     }, [_]),
-    b = (0, s.pnh)(_, f({
+    y = (0, s.pnh)(_, f({
       keys: e => {
         var t;
         return null != (t = null == e ? true : e.id) ? t : ""
@@ -134,7 +134,7 @@ function g(e) {
     }, g.current)
   }, [_, p]), (0, r.jsx)("div", {
     className: E.styles,
-    children: b((e, t) => null == t ? null : (0, r.jsx)(a.animated.div, {
+    children: y((e, t) => null == t ? null : (0, r.jsx)(a.animated.div, {
       style: e,
       children: (0, r.jsx)(o.y, f({}, t))
     }, t.id))

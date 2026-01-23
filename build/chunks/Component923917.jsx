@@ -128,13 +128,13 @@ class Z extends(r = Chunk64700.Component) {
       guestWindow: t
     } = this.props, n = t.document, r = false, i = n.head;
     c()(null != i, "Window document ".concat(r ? "body" : "head", " was null"));
-    let a = i.querySelector("style[".concat(S.Vg, "]"));
+    let a = i.querySelector("style[".concat(I.Vg, "]"));
     if (null != a) {
       a.textContent = e;
       return
     }
     let s = n.createElement("style");
-    s.setAttribute(S.Vg, "true"), s.textContent = e, i.appendChild(s)
+    s.setAttribute(I.Vg, "true"), s.textContent = e, i.appendChild(s)
   }
   registerPopoutGlobalKeybinds() {
     var e;
@@ -162,7 +162,7 @@ class Z extends(r = Chunk64700.Component) {
       titleBarTheme: _,
       hideModals: g = false,
       appContext: E
-    } = this.props, b = X({
+    } = this.props, y = X({
       withTitleBar: a,
       isFullScreen: r
     }), O = n === H.f ? x.A : R.A;
@@ -170,7 +170,7 @@ class Z extends(r = Chunk64700.Component) {
       children: (0, i.jsx)(j.e, {
         windowKey: n,
         themeOverride: d,
-        children: (0, i.jsx)(y.A, {
+        children: (0, i.jsx)(b.A, {
           children: (0, i.jsxs)(h.xpW, {
             containerRef: this.rootRef,
             children: [(0, i.jsx)(Q, {
@@ -180,11 +180,11 @@ class Z extends(r = Chunk64700.Component) {
                 children: [(0, i.jsx)(T.Al, {}), (0, i.jsx)(D.Wr, {
                   appContext: null != E ? E : B.BRT.POPOUT,
                   renderWindow: s,
-                  children: (0, i.jsx)(I.l, {
+                  children: (0, i.jsx)(S.l, {
                     children: (0, i.jsxs)(P.Yf, {
                       children: [(0, i.jsxs)("div", {
                         className: Y.SW,
-                        children: [b && (0, i.jsx)(p.NPJ, {
+                        children: [y && (0, i.jsx)(p.NPJ, {
                           theme: _,
                           children: e => (0, i.jsx)(C.cq, {
                             windowKey: n,
@@ -261,19 +261,19 @@ let Q = Chunk64700.forwardRef(function(e, t) {
     let {
       forcedColors: s,
       connectedEmbeddedActivity: o
-    } = (0, _.cf)([b.A, O.Ay], () => ({
-      forcedColors: b.A.useForcedColors ? "yes" : "no",
+    } = (0, _.cf)([y.A, O.Ay], () => ({
+      forcedColors: y.A.useForcedColors ? "yes" : "no",
       connectedEmbeddedActivity: O.Ay.getCurrentEmbeddedActivity()
     }));
     (0, N.A)(r, false);
     let {
       analyticsLocations: l
-    } = (0, v.Ay)(A.A.POPOUT_WINDOW), {
+    } = (0, A.Ay)(v.A.POPOUT_WINDOW), {
       clientThemesClassName: u,
       clientThemesCSS: d
-    } = (0, S.Ay)(), f = (0, L.NC)(), p = null != (n = e.themeOverride) ? n : f;
+    } = (0, I.Ay)(), f = (0, L.NC)(), p = null != (n = e.themeOverride) ? n : f;
     return null == r ? null : (0, i.jsx)(h.WaV, {
-      children: (0, i.jsx)(v.f5, {
+      children: (0, i.jsx)(A.f5, {
         value: l,
         children: (0, i.jsx)(Z, q(K({
           ref: t

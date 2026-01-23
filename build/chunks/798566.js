@@ -59,15 +59,15 @@ function g(e, t) {
   }), e
 }
 let E = "deviceProperties",
-  b = "referralProperties",
-  y = window.DiscordNative;
-if (null != y) {
-  let e, t = y.remoteApp.getVersion(),
-    n = y.process.platform,
-    i = y.os.release,
-    s = y.os.arch,
-    u = y.os.appArch,
-    d = y.remoteApp.getReleaseChannel(),
+  y = "referralProperties",
+  b = window.DiscordNative;
+if (null != b) {
+  let e, t = b.remoteApp.getVersion(),
+    n = b.process.platform,
+    i = b.os.release,
+    s = b.os.arch,
+    u = b.os.appArch,
+    d = b.remoteApp.getReleaseChannel(),
     p = (0, Chunk175259.c)();
   switch (require) {
     case "win32":
@@ -94,7 +94,7 @@ if (null != y) {
       has_client_mods: (0, Chunk70298.b)(),
       client_launch_id: Chunk71931.C
     }, (null == (a = o().name) ? true : a.toLocaleLowerCase()) === "electron" && (r.browser_user_agent = o().ua || "", r.browser_version = o().version || ""), "linux" === require) {
-    let e = y.crashReporter.getMetadata();
+    let e = b.crashReporter.getMetadata();
     r.window_manager = module.wm, r.distro = module.distro, r.runtime_environment = module.runtime_environment, r.display_server = module.display_server
   } else "darwin" === require ? r.os_sdk_version = null == i ? true : i.split(".")[0] : "win32" === require && (r.os_sdk_version = null == i ? true : i.split(".")[2])
 }
@@ -112,32 +112,32 @@ function O() {
   else return ""
 }
 
-function A(e, t) {
+function v(e, t) {
   if (null == e) return "";
   t = t.replace(/[[]/, "\\[").replace(/[\]]/, "\\]");
   let n = new RegExp("[\\?&]".concat(t, "=([^&#]*)")).exec(e);
   return null === n || "string" != typeof n[1] && n[1].length ? "" : decodeURIComponent(n[1]).replace(/\+/g, " ")
 }
 
-function v() {
+function A() {
   let e = document.referrer;
   return 0 === e.search("https?://(.*)google.([^/?]*)") ? "google" : 0 === e.search("https?://(.*)bing.com") ? "bing" : 0 === e.search("https?://(.*)yahoo.com") ? "yahoo" : 0 === e.search("https?://(.*)duckduckgo.com") ? "duckduckgo" : null
 }
 
-function S() {
+function I() {
   let e = {},
     t = document.referrer,
-    n = v(),
+    n = A(),
     r = "yahoo" !== n ? "q" : "p";
   if (null != n) {
     e.search_engine = n;
-    let i = A(t, r);
+    let i = v(t, r);
     i.length > 0 && (e.mp_keyword = i)
   }
   return e
 }
 
-function I() {
+function S() {
   let {
     userAgent: e,
     vendor: t = ""
@@ -185,7 +185,7 @@ function N() {
 
 function R() {
   let e = {};
-  return e.os = O(), e.browser = I(), e.device = T(), e.system_locale = (0, c.c)(), e.has_client_mods = (0, l.b)(), e
+  return e.os = O(), e.browser = S(), e.device = T(), e.system_locale = (0, c.c)(), e.has_client_mods = (0, l.b)(), e
 }
 
 function w() {
@@ -202,14 +202,14 @@ let P = "utm_source utm_medium utm_campaign utm_content utm_term".split(" ");
 function D(e) {
   let t = {};
   return P.forEach(n => {
-    let r = A(e, n);
+    let r = v(e, n);
     r.length > 0 && (t[n] = r)
   }), t
 }
 
 function x() {
   let e = {};
-  return e.referrer = document.referrer, e.referring_domain = C(), e = h({}, e, D(window.location.href), S())
+  return e.referrer = document.referrer, e.referring_domain = C(), e = h({}, e, D(window.location.href), I())
 }
 
 function L(e, t) {
@@ -220,10 +220,10 @@ function L(e, t) {
 function j() {
   let e = u.w.get(E);
   null == e && (e = R(), u.w.set(E, e));
-  let t = u.w.get(b);
-  null == t && (t = x(), u.w.set(b, t));
-  let n = d.u.get(b);
-  return null == n && (n = L(x(), "_current"), d.u.set(b, n)), h({}, e, w(), t, n)
+  let t = u.w.get(y);
+  null == t && (t = x(), u.w.set(y, t));
+  let n = d.u.get(y);
+  return null == n && (n = L(x(), "_current"), d.u.set(y, n)), h({}, e, w(), t, n)
 }
 if (null == r) try {
   r = j()
@@ -247,8 +247,8 @@ M(function() {
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == n.release_channel || "" === n.release_channel) && (n.release_channel = r.split("-")[0]);
-  let i = parseInt("488410", 10);
+  let i = parseInt("488463", 10);
   isNaN(i) || (n.client_build_number = i);
-  let a = null == y || null == (e = (t = y.remoteApp).getBuildNumber) ? true : e.call(t);
+  let a = null == b || null == (e = (t = b.remoteApp).getBuildNumber) ? true : e.call(t);
   return isNaN(a) || (n.native_build_number = a), n.client_event_source = N(), n.has_client_mods = (0, l.b)(), n.client_launch_id = f.C, n
 }())

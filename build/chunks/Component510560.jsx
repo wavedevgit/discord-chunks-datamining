@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 510560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -31,7 +31,7 @@ function d(e) {
   return e
 }
 
-function f(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,20 +44,20 @@ function f(e, t) {
   }), e
 }
 
-function p(e) {
+function h(e) {
   let {
     channel: t
   } = e, n = l.useRef(null);
-  return (0, r.jsx)(a.YNO, {
+  return (0, r.jsx)(s.YNO, {
     targetElementRef: n,
     align: "right",
-    animation: a.YNO.Animation.NONE,
+    animation: s.YNO.Animation.NONE,
     position: "bottom",
-    renderPopout: e => t.isThread() ? (0, r.jsx)(o.A, f(d({}, e), {
+    renderPopout: e => t.isThread() ? (0, r.jsx)(o.A, p(d({}, e), {
       channel: t,
       navId: "recents-thread-notifications",
       label: u.intl.string(u.t.ljs3Oe)
-    })) : (0, r.jsx)(s.A, f(d({}, e), {
+    })) : (0, r.jsx)(a.A, p(d({}, e), {
       channel: t,
       navId: "recents-notifications",
       label: u.intl.string(u.t.ljs3Oe),
@@ -73,9 +73,9 @@ function p(e) {
       return (0, r.jsx)(i.m_, {
         text: u.intl.string(u.t.h850Ss),
         targetElementRef: n,
-        children: (0, r.jsx)(a.K0, {
+        children: (0, r.jsx)(s.K0, {
           "aria-label": u.intl.string(u.t.h850Ss),
-          icon: a.XFE,
+          icon: s.XFE,
           variant: "secondary",
           size: "sm",
           onClick: t

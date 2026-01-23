@@ -109,7 +109,7 @@ class q extends Chunk64700.PureComponent {
     return e >= f.Tm
   }
   handleViewInventory() {
-    (0, T.openUserSettings)(I.X.GIFT_PANEL, {
+    (0, T.openUserSettings)(S.X.GIFT_PANEL, {
       section: G.nc_.INVENTORY
     })
   }
@@ -229,7 +229,7 @@ class X extends Chunk64700.Component {
     let o = r.isPreorder() ? F.intl.formatToPlainString(F.t.evinTd, {
       name: r.name
     }) : r.name;
-    if (e.redeemed) return e.isSubscription || (0, g.hU)(e) || (0, v.bF)(r) ? F.intl.string(F.t.mVC3Cv) : F.intl.format(F.t["ss/L+/"], {
+    if (e.redeemed) return e.isSubscription || (0, g.hU)(e) || (0, A.bF)(r) ? F.intl.string(F.t.mVC3Cv) : F.intl.format(F.t["ss/L+/"], {
       skuName: o,
       onViewInLibrary: this.handleViewLibrary
     });
@@ -295,7 +295,7 @@ class X extends Chunk64700.Component {
       sku: n
     } = this.props;
     if (null == e) return null;
-    let i = null != e.giftStyle && !(0, v.bF)(n);
+    let i = null != e.giftStyle && !(0, A.bF)(n);
     return (0, r.jsx)(U.k, {
       skuId: e.skuId,
       onEmbedClick: this.handleEmbedClick,
@@ -341,13 +341,13 @@ class X extends Chunk64700.Component {
       let {
         libraryApplication: t
       } = this.props;
-      e.preventDefault(), null != t && t.isHidden() ? (0, A.pX)(G.BVt.APPLICATION_LIBRARY_SETTINGS) : (0, A.pX)(G.BVt.APPLICATION_LIBRARY, {
+      e.preventDefault(), null != t && t.isHidden() ? (0, v.pX)(G.BVt.APPLICATION_LIBRARY_SETTINGS) : (0, v.pX)(G.BVt.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != t ? t.id : true
         }
       })
     }), H(this, "handleVerificationClick", e => {
-      e.stopPropagation(), e.preventDefault(), (0, T.openUserSettings)(I.X.ACCOUNT_PANEL, {
+      e.stopPropagation(), e.preventDefault(), (0, T.openUserSettings)(S.X.ACCOUNT_PANEL, {
         section: G.nc_.ACCOUNT
       })
     }), H(this, "handleAccept", e => {
@@ -365,7 +365,7 @@ class X extends Chunk64700.Component {
         })
       });
       let s = i !== G.lAJ.CUSTOM_GIFT ? true : r;
-      (0, y.h)({
+      (0, b.h)({
         processedCode: n,
         channelContext: t,
         customGiftMessage: s,
@@ -377,13 +377,13 @@ class X extends Chunk64700.Component {
         sku: n,
         skuApplication: r
       } = this.props;
-      null != n && (0, v.bF)(n) && null != r && null != r.guildId ? (e.preventDefault(), (0, S.R)({
+      null != n && (0, A.bF)(n) && null != r && null != r.guildId ? (e.preventDefault(), (0, I.R)({
         skuId: n.id,
         applicationId: r.id,
         guildId: r.guildId,
         isStorefront: false,
         analyticsLocations: [h.A.GIFT_CODE_EMBED]
-      })) : null != t && t.isSubscription && (e.preventDefault(), (0, T.openUserSettings)(I.X.NITRO_PANEL, {
+      })) : null != t && t.isSubscription && (e.preventDefault(), (0, T.openUserSettings)(S.X.NITRO_PANEL, {
         section: G.nc_.PREMIUM
       }))
     }), H(this, "handleClaimPromotion", e => {
@@ -412,7 +412,7 @@ class X extends Chunk64700.Component {
         children: [n && (0, r.jsx)(D.A, {
           className: B.nr
         }), null != e.giftStyle && (0, r.jsx)(O.A, {
-          defaultAnimationState: e.redeemed ? b.oA.LOOP : b.oA.IDLE,
+          defaultAnimationState: e.redeemed ? y.oA.LOOP : y.oA.IDLE,
           giftStyle: e.giftStyle,
           className: a
         })]

@@ -66,7 +66,7 @@ function j(e) {
   } = e, n = t.length > 1, j = function(e) {
     let {
       currentActivities: t
-    } = e, n = (0, l.bG)([m.A], () => m.A.getAccounts().some(e => e.type === c.A.get(v.fg2.XBOX).type)), i = t.some(e => {
+    } = e, n = (0, l.bG)([A.A], () => A.A.getAccounts().some(e => e.type === c.A.get(v.fg2.XBOX).type)), i = t.some(e => {
       let {
         activity: t
       } = e;
@@ -74,7 +74,7 @@ function j(e) {
     });
     return n || !i ? null : (0, r.jsx)(a.Drp, {
       id: "xbox-connect",
-      action: () => (0, g.openUserSettings)(A.X.CONNECTIONS_PANEL, {
+      action: () => (0, m.openUserSettings)(f.X.CONNECTIONS_PANEL, {
         section: v.nc_.CONNECTIONS
       }),
       label: S.intl.formatToPlainString(S.t.XWSHTb, {
@@ -85,24 +85,24 @@ function j(e) {
     let {
       currentActivities: t
     } = e, n = i.useContext(O.AnalyticsContext);
-    return (0, l.yK)([f.Ay, _.A, h.A, E.A, b.A], () => t.filter(e => !(0, d.A)(e.activity)).map(e => {
+    return (0, l.yK)([h.Ay, b.A, g.A, E.A, _.A], () => t.filter(e => !(0, d.A)(e.activity)).map(e => {
       let {
         activity: t,
         game: r
-      } = e, i = _.A.getActiveLibraryApplication(r.id);
+      } = e, i = b.A.getActiveLibraryApplication(r.id);
       return N(C({}, e), {
         libraryApplication: i,
         canJoin: null != t && (0, u.A)(t, v.jUm.JOIN) && t.type === v.$pd.PLAYING,
         canPlay: (0, y.A)({
-          LibraryApplicationStore: _.A,
-          LaunchableGameStore: h.A,
+          LibraryApplicationStore: b.A,
+          LaunchableGameStore: g.A,
           DispatchApplicationStore: E.A,
-          ConnectedAppsStore: b.A,
+          ConnectedAppsStore: _.A,
           applicationId: r.id,
           branchId: null != i ? i.branchId : null
         }),
-        isLaunching: h.A.launchingGames.has(r.id),
-        isRunning: f.Ay.getRunningVerifiedApplicationIds().includes(r.id),
+        isLaunching: g.A.launchingGames.has(r.id),
+        isRunning: h.Ay.getRunningVerifiedApplicationIds().includes(r.id),
         location: n.location
       })
     }), [n.location, t])

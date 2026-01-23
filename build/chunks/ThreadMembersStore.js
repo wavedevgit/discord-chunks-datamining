@@ -70,14 +70,14 @@ function E(e) {
   f = {}, e.guilds.forEach(h)
 }
 
-function b(e) {
+function y(e) {
   let {
     threadMembers: t
   } = e;
   f = d({}, t)
 }
 
-function y(e) {
+function b(e) {
   let {
     guild: t
   } = e;
@@ -91,28 +91,28 @@ function O(e) {
   p(t.id)
 }
 
-function A(e) {
+function v(e) {
   let {
     channel: t
   } = e;
   return g(t)
 }
 
-function v(e) {
+function A(e) {
   let {
     threads: t
   } = e;
   t.forEach(g)
 }
 
-function S(e) {
+function I(e) {
   let {
     threads: t
   } = e;
   t.forEach(R)
 }
 
-function I(e) {
+function S(e) {
   let {
     channel: t
   } = e;
@@ -183,18 +183,18 @@ class P extends(r = Chunk311907.Ay.Store) {
 u(P, "displayName", "ThreadMembersStore");
 let D = new P(Chunk73153.h, {
   CONNECTION_OPEN: E,
-  OVERLAY_INITIALIZE: b,
-  GUILD_CREATE: y,
+  OVERLAY_INITIALIZE: y,
+  GUILD_CREATE: b,
   GUILD_DELETE: O,
-  CHANNEL_DELETE: I,
-  THREAD_CREATE: A,
-  THREAD_UPDATE: A,
-  THREAD_LIST_SYNC: v,
+  CHANNEL_DELETE: S,
+  THREAD_CREATE: v,
+  THREAD_UPDATE: v,
+  THREAD_LIST_SYNC: A,
   THREAD_MEMBERS_UPDATE: w,
   SEARCH_MESSAGES_SUCCESS: N,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: N,
-  LOAD_THREADS_SUCCESS: S,
-  LOAD_ARCHIVED_THREADS_SUCCESS: S,
+  LOAD_THREADS_SUCCESS: I,
+  LOAD_ARCHIVED_THREADS_SUCCESS: I,
   THREAD_DELETE: T,
   LOAD_MESSAGES_SUCCESS: C
 })

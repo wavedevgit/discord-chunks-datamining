@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk837381 = require("./837381.jsx"),
   Chunk311907 = require("./311907.js"),
   Chunk3026 = require("./3026.jsx"),
@@ -70,24 +70,24 @@ let N = Chunk64700.memo(function(e) {
     let t, {
         channel: i,
         connectChannelDragSource: d,
-        connectChannelDropTarget: b,
-        disableManageChannels: j,
-        position: v,
+        connectChannelDropTarget: g,
+        disableManageChannels: O,
+        position: j,
         sortingPosition: N,
         hideIcon: T,
         children: P
       } = e,
-      w = (0, o.bG)([O.Ay], () => O.Ay.isChannelMuted(i.getGuildId(), i.id)),
-      R = (0, o.bG)([m.A], () => m.A.isCollapsed(i.id)),
-      D = (0, o.bG)([y.A], () => y.A.can(x.xBc.MANAGE_CHANNELS, i));
-    t = null != N ? v > N ? _.mU : _.TR : _.fx;
+      w = (0, o.bG)([_.Ay], () => _.Ay.isChannelMuted(i.getGuildId(), i.id)),
+      R = (0, o.bG)([b.A], () => b.A.isCollapsed(i.id)),
+      D = (0, o.bG)([y.A], () => y.A.can(v.xBc.MANAGE_CHANNELS, i));
+    t = null != N ? j > N ? E.mU : E.TR : E.fx;
     let M = l.useCallback(() => {
-        R ? (0, p.fh)(i.id) : (0, p.Gv)(i.id)
+        R ? (0, h.fh)(i.id) : (0, h.Gv)(i.id)
       }, [i.id, R]),
       L = l.useCallback(e => {
         if ("null" !== i.id) {
           let t = A.A.getGuild(i.getGuildId());
-          null != t && (0, h.L3)(e, async () => {
+          null != t && (0, f.L3)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("75149"), n.e("30997")]).then(n.bind(n, 725756));
@@ -98,10 +98,10 @@ let N = Chunk64700.memo(function(e) {
           })
         }
       }, [i]),
-      G = l.useCallback(() => {
-        let e = i.type === x.rbe.GUILD_CATEGORY ? null : i.type,
+      k = l.useCallback(() => {
+        let e = i.type === v.rbe.GUILD_CATEGORY ? null : i.type,
           t = i.getGuildId();
-        null != t && (0, f.mMO)(async () => {
+        null != t && (0, p.mMO)(async () => {
           let {
             default: l
           } = await Promise.all([n.e("64233"), n.e("9743")]).then(n.bind(n, 409200));
@@ -112,12 +112,12 @@ let N = Chunk64700.memo(function(e) {
           }))
         })
       }, [i]),
-      k = (0, s.rm)(i.id),
+      G = (0, a.rm)(i.id),
       {
         role: U,
-        tabIndex: V
-      } = k,
-      F = function(e, t) {
+        tabIndex: B
+      } = G,
+      V = function(e, t) {
         if (null == e) return {};
         var n, r, l, i = {};
         if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -133,65 +133,65 @@ let N = Chunk64700.memo(function(e) {
           }(e, t), Object.getOwnPropertySymbols)
           for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
         return i
-      }(k, ["role", "tabIndex"]),
+      }(G, ["role", "tabIndex"]),
+      F = l.useRef(null),
       H = l.useRef(null),
-      B = l.useRef(null),
       K = (0, r.jsxs)("li", {
         className: t,
         "data-dnd-name": i.name,
-        children: [(0, r.jsx)(f.vN3, {
-          focusTarget: H,
-          ringTarget: B,
+        children: [(0, r.jsx)(p.vN3, {
+          focusTarget: F,
+          ringTarget: H,
           offset: {
             left: 4,
             right: 4
           },
           children: (0, r.jsxs)("div", {
-            ref: B,
-            className: a()(_.Ki, _.iE, {
-              [_.yZ]: R,
-              [_.SU]: w,
-              [_.vk]: true
+            ref: H,
+            className: s()(E.Ki, E.iE, {
+              [E.yZ]: R,
+              [E.SU]: w,
+              [E.vk]: true
             }),
             onContextMenu: L,
-            children: [(0, r.jsxs)(f.DUT, S(C({
-              innerRef: H,
-              className: _.rb,
-              tabIndex: V
-            }, F), {
+            children: [(0, r.jsxs)(p.DUT, S(C({
+              innerRef: F,
+              className: E.rb,
+              tabIndex: B
+            }, V), {
               onClick: M,
-              "aria-label": E.intl.formatToPlainString(E.t.y5l3J2, {
+              "aria-label": x.intl.formatToPlainString(x.t.y5l3J2, {
                 categoryName: i.name
               }),
               "aria-expanded": !R,
               focusProps: {
                 enabled: false
               },
-              children: [(0, r.jsx)(g.A, {
-                className: _.UU,
+              children: [(0, r.jsx)(m.A, {
+                className: E.UU,
                 children: (0, r.jsx)(c.A, {
                   children: i.name
                 })
-              }), T ? null : (0, r.jsx)(f.abt, {
+              }), T ? null : (0, r.jsx)(p.abt, {
                 size: "md",
                 color: "currentColor",
-                className: _.Kk
+                className: E.Kk
               })]
             })), (0, r.jsx)("div", {
               onClick: I,
-              className: _.Y_,
-              children: D && !j ? (0, r.jsx)(u.m, {
-                text: E.intl.string(E.t["fUYU+j"]),
-                children: (0, r.jsx)(f.DUT, {
-                  className: a()(_.c9, _.ih),
-                  onClick: G,
-                  tabIndex: V,
+              className: E.Y_,
+              children: D && !O ? (0, r.jsx)(u.m, {
+                text: x.intl.string(x.t["fUYU+j"]),
+                children: (0, r.jsx)(p.DUT, {
+                  className: s()(E.c9, E.ih),
+                  onClick: k,
+                  tabIndex: B,
                   role: "button",
-                  "aria-label": E.intl.string(E.t["fUYU+j"]),
-                  children: (0, r.jsx)(f.TIR, {
+                  "aria-label": x.intl.string(x.t["fUYU+j"]),
+                  children: (0, r.jsx)(p.TIR, {
                     size: "xs",
                     color: "currentColor",
-                    className: _.hs
+                    className: E.hs
                   })
                 })
               }) : null
@@ -199,7 +199,7 @@ let N = Chunk64700.memo(function(e) {
           })
         }), P]
       });
-    return null != b && null != d ? b(d(K)) : K
+    return null != g && null != d ? g(d(K)) : K
   }),
   T = (0, Chunk676002.a)(N),
   P = Chunk64700.memo(function(e) {
@@ -209,27 +209,27 @@ let N = Chunk64700.memo(function(e) {
       className: l
     } = e;
     return (0, r.jsx)("li", {
-      className: a()(l, _.fx),
+      className: s()(l, E.fx),
       children: (0, r.jsxs)("div", {
-        className: a()(_.Ki, _._V),
+        className: s()(E.Ki, E._V),
         children: [(0, r.jsx)("div", {
-          className: _.rb,
-          children: (0, r.jsx)(g.A, {
-            className: _.UU,
+          className: E.rb,
+          children: (0, r.jsx)(m.A, {
+            className: E.UU,
             children: (0, r.jsx)(c.A, {
               children: t
             })
           })
         }), null != n ? (0, r.jsx)(u.m, {
           asContainer: true,
-          text: E.intl.string(E.t["5qNmsU"]),
-          children: (0, r.jsx)(f.DUT, {
-            className: _.r,
+          text: x.intl.string(x.t["5qNmsU"]),
+          children: (0, r.jsx)(p.DUT, {
+            className: E.r,
             onClick: n,
-            children: (0, r.jsx)(f.aXh, {
+            children: (0, r.jsx)(p.aXh, {
               size: "md",
               color: "currentColor",
-              className: _.X8
+              className: E.X8
             })
           })
         }) : null]
@@ -239,17 +239,17 @@ let N = Chunk64700.memo(function(e) {
   w = Chunk64700.memo(function(e) {
     let {
       category: t
-    } = e, n = (0, o.bG)([j.A], () => j.A.isVoiceCategoryCollapsed(t.guild.id)), i = l.useCallback(() => {
-      n ? (0, v.T)(t.guild.id) : (0, v.E)(t.guild.id)
+    } = e, n = (0, o.bG)([O.A], () => O.A.isVoiceCategoryCollapsed(t.guild.id)), i = l.useCallback(() => {
+      n ? (0, j.T)(t.guild.id) : (0, j.E)(t.guild.id)
     }, [t.guild.id, n]);
     return (0, r.jsx)("div", {
-      className: _.oA,
+      className: E.oA,
       children: (0, r.jsx)(d.$nd, {
         variant: "secondary",
         fullWidth: true,
         onClick: i,
-        icon: f.HKD,
-        text: n ? E.intl.string(E.t["/eB9Bg"]) : E.intl.string(E.t.Q2gPWl)
+        icon: p.HKD,
+        text: n ? x.intl.string(x.t["/eB9Bg"]) : x.intl.string(x.t.Q2gPWl)
       })
     })
   }),
@@ -257,15 +257,15 @@ let N = Chunk64700.memo(function(e) {
     let {
       category: t,
       channel: n
-    } = e, l = (0, o.bG)([j.A], () => j.A.isVoiceCategoryCollapsed(t.guild.id));
-    return l || null == n || n.record.type === x.rbe.GUILD_CATEGORY ? l ? (0, r.jsx)("li", {
-      className: _.fx,
+    } = e, l = (0, o.bG)([O.A], () => O.A.isVoiceCategoryCollapsed(t.guild.id));
+    return l || null == n || n.record.type === v.rbe.GUILD_CATEGORY ? l ? (0, r.jsx)("li", {
+      className: E.fx,
       children: (0, r.jsx)("div", {
-        className: a()(_.Ki, _._V),
-        children: (0, r.jsx)(g.A, {
-          className: _.UU,
+        className: s()(E.Ki, E._V),
+        children: (0, r.jsx)(m.A, {
+          className: E.UU,
           children: (0, r.jsx)(c.A, {
-            children: E.intl.string(E.t["V/u9Dy"])
+            children: x.intl.string(x.t["V/u9Dy"])
           })
         })
       })
@@ -280,11 +280,11 @@ let N = Chunk64700.memo(function(e) {
       channel: t
     } = e;
     return (0, r.jsx)("li", {
-      className: _.fx,
+      className: E.fx,
       children: (0, r.jsx)("div", {
-        className: a()(_.Ki, _._V),
-        children: (0, r.jsx)(g.A, {
-          className: _.UU,
+        className: s()(E.Ki, E._V),
+        children: (0, r.jsx)(m.A, {
+          className: E.UU,
           children: (0, r.jsx)(c.A, {
             children: t.name
           })

@@ -3,18 +3,18 @@
 "use strict";
 require.d(exports, {
   Cv: () => O,
-  M$: () => b,
-  OY: () => S,
-  Q6: () => I,
+  M$: () => y,
+  OY: () => I,
+  Q6: () => S,
   Xg: () => _,
   Ye: () => T,
   bF: () => h,
-  fq: () => A,
+  fq: () => v,
   jz: () => g,
   pV: () => p,
   sq: () => E,
-  ty: () => y,
-  xf: () => v,
+  ty: () => b,
+  xf: () => A,
   zf: () => m
 }), require("./228524.js"), require("./446912.js"), require("./896048.js");
 var Chunk735438 = require("./735438.js"),
@@ -71,7 +71,7 @@ function E(e) {
   }
 }
 
-function b(e) {
+function y(e) {
   if (null != e) return {
     carouselItems: e.carousel_items.map(e => ({
       thumbnailAssetId: e.thumbnail_asset_id,
@@ -88,7 +88,7 @@ function b(e) {
   }
 }
 
-function y(e) {
+function b(e) {
   return {
     skus: e.skus.map(e => s.A.createFromServer(e)),
     skusToRecommendationReasons: Object.fromEntries(Object.entries(e.skus_to_user_ids).map(e => {
@@ -118,24 +118,24 @@ function O(e, t) {
   }
 }
 
-function A(e) {
+function v(e) {
   var t, n, r;
   let i = null == e ? true : e.applicationId,
     a = null != (t = null == e || null == (r = e.tenantMetadata) || null == (n = r.socialLayer) ? true : n.cardImageAssetId) ? t : null == e ? true : e.thumbnailAssetId;
   if (null != a && null != i) return c.A.toURLSafe((0, l.YE)(i, a, 512, "webp"))
 }
 
-function v(e) {
+function A(e) {
   var t, n;
   if ((null == e || null == (n = e.tenantMetadata) || null == (t = n.socialLayer) ? true : t.cardBackgroundImageAssetId) != null && (null == e ? true : e.applicationId) != null) return c.A.toURLSafe((0, l.YE)(e.applicationId, e.tenantMetadata.socialLayer.cardBackgroundImageAssetId, 1024, p))
 }
 
-function S(e, t) {
+function I(e, t) {
   return "".concat(location.protocol).concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT).concat(f.BVt.GAME_SHOP(e, t.id, t.slug))
 }
 
-function I(e, t) {
-  return "".concat(S(e, t), "\n\n")
+function S(e, t) {
+  return "".concat(I(e, t), "\n\n")
 }
 
 function T(e, t) {

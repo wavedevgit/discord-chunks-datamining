@@ -2,7 +2,7 @@
 /** chunk id: 740816, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => c
+  A: () => o
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -10,8 +10,8 @@ var Chunk64700 = require("./64700.js"),
   Chunk41237 = require("./41237.js"),
   Chunk631576 = require("./631576.js");
 
-function c(e) {
-  let [t, n] = r.useState("loading"), c = (0, i.bG)([s.A], () => s.A.getStickersByGuildId(e));
+function o(e) {
+  let [t, n] = r.useState("loading"), o = (0, i.bG)([s.A], () => s.A.getStickersByGuildId(e));
   return (r.useEffect(() => {
     let t = new AbortController,
       r = t.signal;
@@ -26,7 +26,7 @@ function c(e) {
     }
   }, [e]), "success" === t) ? {
     status: t,
-    stickers: c.map(e => {
+    stickers: o.map(e => {
       let t = l.default.getUser(e.user_id);
       if (null != t) {
         var n, r;

@@ -172,7 +172,7 @@ function z(e) {
     return
   }
   if (!i.ready) returnfalse;
-  null != n.nonce && n.state !== D.cmJ.SENDING && L.has(n.nonce) && (i = i.remove(n.nonce), L.delete(n.nonce)), i = i.receiveMessage(n, true === v.A.isAtBottom(t)), u.A.commit(i)
+  null != n.nonce && n.state !== D.cmJ.SENDING && L.has(n.nonce) && (i = i.remove(n.nonce), L.delete(n.nonce)), i = i.receiveMessage(n, true === A.A.isAtBottom(t)), u.A.commit(i)
 }
 
 function q(e) {
@@ -265,7 +265,7 @@ function et() {
     let {
       channelId: t
     } = e;
-    null == A.A.getChannel(t) && u.A.clear(t)
+    null == v.A.getChannel(t) && u.A.clear(t)
   })
 }
 
@@ -357,7 +357,7 @@ function ed() {
 }
 
 function ef(e) {
-  for (let [t, n] of y.default.entries(e.messages)) {
+  for (let [t, n] of b.default.entries(e.messages)) {
     let e = u.A.getOrCreate(t).addCachedMessages(n, true);
     u.A.commit(e)
   }
@@ -376,11 +376,11 @@ function e_(e) {
 }
 class eh extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(O.default, A.A, v.A, S.Ay, I.Ay, T.A, h.A, b.default, C.A, N.A, R.A, w.A, P.default), this.syncWith([h.A], () => {})
+    this.waitFor(O.default, v.A, A.A, I.Ay, S.Ay, T.A, h.A, y.default, C.A, N.A, R.A, w.A, P.default), this.syncWith([h.A], () => {})
   }
   getMessages(e) {
     if (h.A.hasViewingRoles()) {
-      let t = A.A.getChannel(e),
+      let t = v.A.getChannel(e),
         n = null == t ? true : t.getGuildId();
       if (h.A.isViewingRoles(n) && !C.A.can(D.xBc.VIEW_CHANNEL, t)) return new u.A(e)
     }

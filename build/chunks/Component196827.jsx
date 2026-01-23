@@ -2,8 +2,8 @@
 /** chunk id: 196827, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => g,
-  u: () => f
+  A: () => m,
+  u: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,7 +15,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk694336 = require("./694336.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk591859 = require("./591859.js");
-let f = e => {
+let g = e => {
     let {
       value: t,
       isPercent: n
@@ -24,10 +24,10 @@ let f = e => {
     let {
       formattedValue: i,
       isPositive: s
-    } = (0, c.TP)(t, n);
+    } = (0, o.TP)(t, n);
     return (0, r.jsxs)("div", {
       className: u.Rx,
-      children: [(0, r.jsx)(o.A, {
+      children: [(0, r.jsx)(c.A, {
         className: l()(u.gv, {
           [u.fk]: !s
         })
@@ -40,13 +40,13 @@ let f = e => {
       })]
     })
   },
-  g = e => {
+  m = e => {
     let {
       label: t,
       sublabel: n,
       value: i,
       additionalContent: l,
-      tooltip: c
+      tooltip: o
     } = e;
     return (0, r.jsxs)("div", {
       className: u.kL,
@@ -57,8 +57,8 @@ let f = e => {
             variant: "text-xs/medium",
             className: u.Pf,
             children: t
-          }), null != c && (0, r.jsx)(s.m, {
-            text: c,
+          }), null != o && (0, r.jsx)(s.m, {
+            text: o,
             children: (0, r.jsx)(a.mir, {
               size: "xs",
               color: "currentColor",

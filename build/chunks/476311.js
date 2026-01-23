@@ -39,8 +39,8 @@ function l(e, t, n) {
     t.setInvalid(e.value, m.isInvalid ? m : g.current)
   };
   (0, s.useEffect)(E);
-  let b = t.realtimeValidation.isInvalid ? t.realtimeValidation : m,
-    y = "native" === h ? t.displayValidation : b,
+  let y = t.realtimeValidation.isInvalid ? t.realtimeValidation : m,
+    b = "native" === h ? t.displayValidation : y,
     O = (0, r.v)({
       ...e,
       isReadOnly: e.isReadOnly || t.isReadOnly,
@@ -50,8 +50,8 @@ function l(e, t, n) {
       isRequired: null != (c = e.isRequired) ? c : t.isRequired,
       validationBehavior: h,
       [a.Lf]: {
-        realtimeValidation: b,
-        displayValidation: y,
+        realtimeValidation: y,
+        displayValidation: b,
         resetValidation: t.resetValidation,
         commitValidation: t.commitValidation,
         updateValidation(e) {

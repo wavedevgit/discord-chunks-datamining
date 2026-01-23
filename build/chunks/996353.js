@@ -31,18 +31,18 @@ function h(e) {
     showRecommendations: g
   } = (0, l.u)({
     location: p
-  }), E = r.useMemo(() => _ === d.mQ.POPOUT ? g : _ !== d.mQ.DM_SIDE_PANEL || m, [_, m, g]), b = r.useMemo(() => _ === d.mQ.POPOUT ? d.B5.POPOUT : d.B5.USER_PROFILE, [_]), {
-    defaultWishlistId: y,
+  }), E = r.useMemo(() => _ === d.mQ.POPOUT ? g : _ !== d.mQ.DM_SIDE_PANEL || m, [_, m, g]), y = r.useMemo(() => _ === d.mQ.POPOUT ? d.B5.POPOUT : d.B5.USER_PROFILE, [_]), {
+    defaultWishlistId: b,
     wishlist: O,
-    popularCollectiblesProducts: A,
-    isFetchingWishlist: v,
-    isValidatingPopularProducts: S,
-    isFetchingPopularProducts: I,
+    popularCollectiblesProducts: v,
+    isFetchingWishlist: A,
+    isValidatingPopularProducts: I,
+    isFetchingPopularProducts: S,
     wishlistError: T
   } = (0, d.eT)({
     giftRecipient: t,
     minNumItems: E ? n : 0,
-    source: b
+    source: y
   }), C = (0, a.A)({
     displayProfile: h,
     location: p
@@ -65,7 +65,7 @@ function h(e) {
     wishlistItemCountToBeDisplayed: L
   } = (0, d.mk)({
     wishlist: O,
-    popularCollectiblesProducts: A,
+    popularCollectiblesProducts: v,
     popularSocialLayerStorefrontItems: w,
     wishlistError: T,
     numItems: n
@@ -75,15 +75,15 @@ function h(e) {
     hasMoreItems: D,
     totalWishlistItemCount: x,
     wishlistItemCountToBeDisplayed: L,
-    fetchState: r.useMemo(() => v || S || I ? {
+    fetchState: r.useMemo(() => A || I || S ? {
       status: "loading"
     } : null != T ? {
       status: "error",
       error: T
     } : {
       status: "success"
-    }, [v, S, I, T]),
-    defaultWishlistId: y,
+    }, [A, I, S, T]),
+    defaultWishlistId: b,
     wishlist: O
   }
 }

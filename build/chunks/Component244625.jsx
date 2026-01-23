@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 244625, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,11 +19,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk310633 = require("./310633.js");
 
-function b(e) {
+function _(e) {
   var t;
   let {
     item: n
-  } = e, b = i.useMemo(() => {
+  } = e, _ = i.useMemo(() => {
     switch (n.data.kind) {
       case "message":
       case "guildEvent":
@@ -35,7 +35,7 @@ function b(e) {
       default:
         return "unknown"
     }
-  }, [n]), _ = i.useMemo(() => {
+  }, [n]), b = i.useMemo(() => {
     switch (n.data.kind) {
       case "message":
         return n.data.message.channel_id;
@@ -57,21 +57,21 @@ function b(e) {
     switch (n.data.kind) {
       case "message":
       case "forumThread":
-        return h.default.extractTimestamp(n.data.message.id);
+        return g.default.extractTimestamp(n.data.message.id);
       case "guildEvent":
-        return h.default.extractTimestamp(n.data.eventId);
+        return g.default.extractTimestamp(n.data.eventId);
       case "generatedCandidate":
-        return h.default.extractTimestamp(n.data.item.content_id);
+        return g.default.extractTimestamp(n.data.item.content_id);
       default:
         return n.timestamp
     }
-  }, [n]), I = (0, a.bG)([d.A], () => d.A.getChannel(_), [_]), v = null != (t = null == I ? true : I.guild_id) ? t : E, S = (0, a.bG)([p.A], () => null != v ? p.A.getGuild(v) : null, [v]), C = (0, a.bG)([f.default], () => null != O ? f.default.getUser(O) : null, [O]);
-  return "unknown" === b ? null : (0, r.jsx)("div", {
-    className: m.kL,
+  }, [n]), I = (0, a.bG)([d.A], () => d.A.getChannel(b), [b]), v = null != (t = null == I ? true : I.guild_id) ? t : E, S = (0, a.bG)([p.A], () => null != v ? p.A.getGuild(v) : null, [v]), C = (0, a.bG)([h.default], () => null != O ? h.default.getUser(O) : null, [O]);
+  return "unknown" === _ ? null : (0, r.jsx)("div", {
+    className: A.kL,
     children: (0, r.jsxs)("div", {
-      className: m.wx,
+      className: A.wx,
       children: [(() => {
-        if ("guild" === b && null != S) return (0, r.jsx)(o.A, {
+        if ("guild" === _ && null != S) return (0, r.jsx)(o.A, {
           guild: S,
           size: "Medium",
           active: false,
@@ -81,29 +81,29 @@ function b(e) {
           tooltipPosition: "top",
           animate: false
         });
-        if ("user" === b && null != C) {
+        if ("user" === _ && null != C) {
           let e = C.getAvatarURL(true, 50);
           return (0, r.jsx)("img", {
             src: e,
             alt: C.username,
-            className: m.my
+            className: A.my
           })
         }
         return null
       })(), (0, r.jsxs)("div", {
-        className: m.Se,
+        className: A.Se,
         children: [(0, r.jsx)("div", {
-          className: m.$,
+          className: A.$,
           children: (0, r.jsxs)("div", {
-            className: m.gH,
-            children: ["guild" === b && null != S ? (0, r.jsx)("div", {
-              className: m.DD,
+            className: A.gH,
+            children: ["guild" === _ && null != S ? (0, r.jsx)("div", {
+              className: A.DD,
               children: S.name
-            }) : "user" === b && null != C ? (0, r.jsx)("div", {
-              className: m.DD,
+            }) : "user" === _ && null != C ? (0, r.jsx)("div", {
+              className: A.DD,
               children: C.username
             }) : null, (0, r.jsx)("div", {
-              className: m.vE,
+              className: A.vE,
               children: (0, u.jb)(y)
             })]
           })
@@ -111,21 +111,21 @@ function b(e) {
           let e = (() => {
             switch (n.data.kind) {
               case "message":
-                if (n.channelType === A.rbe.GUILD_ANNOUNCEMENT) return g.intl.string(g.t["8P08G9"]);
-                return g.intl.string(g.t.hMFMY9);
+                if (n.channelType === f.rbe.GUILD_ANNOUNCEMENT) return m.intl.string(m.t["8P08G9"]);
+                return m.intl.string(m.t.hMFMY9);
               case "generatedCandidate":
-                return g.intl.string(g.t.ljgIO9);
+                return m.intl.string(m.t.ljgIO9);
               case "guildEvent":
-                return g.intl.string(g.t["6pFsLQ"]);
+                return m.intl.string(m.t["6pFsLQ"]);
               case "forumThread":
-                return g.intl.string(g.t.bYNuVx);
+                return m.intl.string(m.t.bYNuVx);
               case "contentInventory":
                 switch (n.data.content.content_type) {
                   case l.I.CUSTOM_STATUS:
-                    return g.intl.string(g.t.fxOLPR);
+                    return m.intl.string(m.t.fxOLPR);
                   case l.I.TOP_GAME:
                   case l.I.PLAYED_GAME:
-                    return g.intl.string(g.t.ktOTRQ);
+                    return m.intl.string(m.t.ktOTRQ);
                   default:
                     return "".concat(n.data.content.content_type)
                 }
@@ -133,38 +133,38 @@ function b(e) {
                 return ""
             }
           })();
-          if ("user" === b) return (0, r.jsx)("div", {
-            className: m.VA,
+          if ("user" === _) return (0, r.jsx)("div", {
+            className: A.VA,
             children: (0, r.jsx)("span", {
-              className: m.o4,
+              className: A.o4,
               children: e
             })
           });
           if (null != I && null != e) {
             let t = (0, s.gU)(I, S);
             return (0, r.jsxs)("div", {
-              className: m.VA,
+              className: A.VA,
               children: [(0, r.jsx)("span", {
-                className: m.o4,
+                className: A.o4,
                 children: e
               }), (0, r.jsx)("span", {
-                className: m.o4,
-                children: g.intl.string(g.t.CHUAYk)
+                className: A.o4,
+                children: m.intl.string(m.t.CHUAYk)
               }), (0, r.jsxs)("span", {
-                className: m.o4,
+                className: A.o4,
                 children: [null != t && (0, r.jsx)(t, {
                   size: "custom",
                   width: 16,
                   height: 16,
-                  className: m.p
+                  className: A.p
                 }), I.name]
               })]
             })
           }
           return null != e ? (0, r.jsx)("div", {
-            className: m.VA,
+            className: A.VA,
             children: (0, r.jsx)("span", {
-              className: m.o4,
+              className: A.o4,
               children: e
             })
           }) : null

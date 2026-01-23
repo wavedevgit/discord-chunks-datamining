@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk761929 = require("./761929.js"),
   Chunk124070 = require("./124070.js");
 
@@ -15,7 +15,7 @@ function c(e) {
     resizableNode: t,
     minHeight: n,
     onResize: l
-  } = e, i = (0, s.A)({
+  } = e, r = (0, s.A)({
     minDimension: n,
     resizableDomNodeRef: t,
     onElementResize: l,
@@ -23,7 +23,7 @@ function c(e) {
     usePointerEvents: true
   });
   return (0, a.jsx)("div", {
-    onPointerDown: i,
+    onPointerDown: r,
     className: o.Di
   })
 }
@@ -32,9 +32,9 @@ function d(e) {
   let {
     children: t,
     className: n,
-    initialHeight: i,
+    initialHeight: r,
     minHeight: s
-  } = e, d = l.useRef(null), [u, m] = l.useState(i);
+  } = e, d = l.useRef(null), [u, m] = l.useState(r);
   return (0, a.jsxs)("div", {
     ref: d,
     className: o.kL,
@@ -47,7 +47,7 @@ function d(e) {
       minHeight: s,
       onResize: m
     }), (0, a.jsx)("div", {
-      className: r()(o.KZ, n),
+      className: i()(o.KZ, n),
       children: t
     })]
   })

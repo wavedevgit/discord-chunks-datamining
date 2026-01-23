@@ -102,7 +102,7 @@ function W(e) {
 function K(e) {
   let {
     markAsDismissed: t
-  } = e, n = (0, y.L)(M.PremiumTypes.TIER_2);
+  } = e, n = (0, b.L)(M.PremiumTypes.TIER_2);
   return (0, r.jsxs)("div", {
     className: G.CG,
     children: [(0, r.jsxs)("div", {
@@ -269,7 +269,7 @@ function Z(e) {
       s(false)
     }, []),
     E = a && !l,
-    b = () => (0, r.jsx)(d.$nd, {
+    y = () => (0, r.jsx)(d.$nd, {
       buttonRef: _,
       variant: "secondary",
       onClick: h,
@@ -291,7 +291,7 @@ function Z(e) {
       text: U.intl.string(k.default.c9MBEH),
       fullWidth: true
     });
-  return n ? b() : (0, r.jsx)(c.u, {
+  return n ? y() : (0, r.jsx)(c.u, {
     title: U.intl.string(k.default.NJ9m8Y),
     body: U.intl.string(k.default["6pabtR"]),
     position: "left",
@@ -300,7 +300,7 @@ function Z(e) {
     onTooltipShow: m,
     onTooltipHide: g,
     targetElementRef: _,
-    children: b()
+    children: y()
   })
 }
 
@@ -327,14 +327,14 @@ function $(e) {
   let {
     onSaveTheme: t,
     canApply: n
-  } = e, i = (0, y.L)(M.PremiumTypes.TIER_2);
+  } = e, i = (0, b.L)(M.PremiumTypes.TIER_2);
   return (0, w.wb)(i, h.A.CUSTOM_THEMES_EDITOR_COACHMARK), (0, r.jsx)("div", {
     className: G.M0,
     children: i ? (0, r.jsx)(Q, {
       disabled: !n,
       onApply: t,
       fullWidth: true
-    }) : (0, r.jsx)(b.A, {
+    }) : (0, r.jsx)(y.A, {
       subscriptionTier: M.pe.TIER_2,
       buttonTextOverride: U.intl.string(U.t.JST6jl),
       premiumModalAnalyticsLocation: {
@@ -352,10 +352,10 @@ function J(e) {
     onSaveTheme: n,
     canApply: i,
     metadata: a
-  } = e, o = (0, y.L)(M.PremiumTypes.TIER_2), c = (null == (t = (0, g.fy)().metadata) ? true : t.from) === g.xv.SHARE_MESSAGE;
+  } = e, o = (0, b.L)(M.PremiumTypes.TIER_2), c = (null == (t = (0, g.fy)().metadata) ? true : t.from) === g.xv.SHARE_MESSAGE;
   (0, w.wb)(o, h.A.CUSTOM_THEMES_EDITOR);
   let u = () => {
-      (0, w.uk)(), (0, E.Dr)(l.M.CUSTOM_THEME_COACHMARK), (null == a ? true : a.from) === g.xv.SETTING ? ((0, S.openUserSettings)(v.X.APPEARANCE_PANEL, {
+      (0, w.uk)(), (0, E.Dr)(l.M.CUSTOM_THEME_COACHMARK), (null == a ? true : a.from) === g.xv.SETTING ? ((0, I.openUserSettings)(A.X.APPEARANCE_PANEL, {
         section: L.nc_.APPEARANCE
       }), (0, g.Jp)()) : (null == a ? true : a.from) === g.xv.CLIENT_THEMES_EDITOR ? (0, g.nf)(g.HP.CLIENT_THEMES) : (0, g.Jp)()
     },
@@ -372,11 +372,11 @@ function J(e) {
       }), (0, r.jsx)(Q, {
         disabled: !i,
         onApply: () => {
-          c && I.default.track(L.HAw.CUSTOM_THEME_SHARE_APPLIED, {}), n()
+          c && S.default.track(L.HAw.CUSTOM_THEME_SHARE_APPLIED, {}), n()
         }
       })]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(b.A, {
+      children: [(0, r.jsx)(y.A, {
         subscriptionTier: M.pe.TIER_2,
         defaultTextOverride: U.intl.string(U.t.pj0XBN),
         premiumModalAnalyticsLocation: {
@@ -401,40 +401,40 @@ function ee(e) {
     markAsDismissed: a,
     isCoachmark: s,
     isMobile: c
-  } = e, u = (0, N.vC)(), b = (0, N.tr)(), y = i.useRef(false), {
-    colors: v,
-    chassisMixAmount: S,
-    gradientAngle: I,
+  } = e, u = (0, N.vC)(), y = (0, N.tr)(), b = i.useRef(false), {
+    colors: A,
+    chassisMixAmount: I,
+    gradientAngle: S,
     setColors: C,
     setChassisMixAmount: D,
     setGradientAngle: L
-  } = (0, T.ko)(), [M, V] = i.useState(null != (t = v[0]) ? t : T.OT), F = (0, o.bG)([A.A], () => A.A.theme), B = (0, E.JZ)(l.M.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
+  } = (0, T.ko)(), [M, V] = i.useState(null != (t = A[0]) ? t : T.OT), F = (0, o.bG)([v.A], () => v.A.theme), B = (0, E.JZ)(l.M.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
     analyticsLocations: H
   } = (0, m.Ay)(h.A.CUSTOM_THEMES_EDITOR), Y = (0, o.bG)([R.A], () => R.A.getSavedCustomTheme()), K = async () => {
-    y.current = true, await (0, p.u_)({
+    b.current = true, await (0, p.u_)({
       theme: F,
       customUserThemeSettings: {
-        colors: v,
+        colors: A,
         gradientColorStops: [],
-        gradientAngle: I,
-        baseMix: S
+        gradientAngle: S,
+        baseMix: I
       }
-    }), (0, w.Yl)(v, S, I, F, H), null == a || a(j.i.TAKE_ACTION), B || (0, E.Dr)(l.M.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Jp)(), (0, O.XG)()
+    }), (0, w.Yl)(A, I, S, F, H), null == a || a(j.i.TAKE_ACTION), B || (0, E.Dr)(l.M.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Jp)(), (0, O.XG)()
   }, z = () => {
     u(N.JB.RESET_BUTTON), (0, w.G_)()
-  }, Q = v.length > 0;
+  }, Q = A.length > 0;
   return i.useEffect(() => () => {
-    y.current || u(N.JB.EDITOR_CLOSE)
+    b.current || u(N.JB.EDITOR_CLOSE)
   }, [u]), (0, _.Ay)(() => {
     if (!s) {
       var e;
-      let t = (null != (e = null == v ? true : v.length) ? e : 0) > 0,
+      let t = (null != (e = null == A ? true : A.length) ? e : 0) > 0,
         n = null != Y;
       !t && n ? (T.ko.getState().setAll({
         colors: Y.colors,
         gradientAngle: Y.gradient_angle,
         chassisMixAmount: Y.base_mix
-      }), (0, N.IE)(Y.base_theme)) : (0, N.$Y)(v, M, C)
+      }), (0, N.IE)(Y.base_theme)) : (0, N.$Y)(A, M, C)
     }
   }), (0, r.jsxs)("div", {
     className: c ? G.AA : G.kL,
@@ -460,10 +460,10 @@ function ee(e) {
             children: U.intl.string(k.default.uSL2Gy)
           }), (0, r.jsx)(P.e, {
             onChange: e => {
-              V(e), 0 === v.length && (0, N.$Y)(v, e, C)
+              V(e), 0 === A.length && (0, N.$Y)(A, e, C)
             },
             value: M,
-            colors: v,
+            colors: A,
             setColors: C
           })]
         }), (0, r.jsxs)("div", {
@@ -472,13 +472,13 @@ function ee(e) {
             variant: "text-sm/semibold",
             color: "text-subtle",
             children: U.intl.string(k.default.F1t0c8)
-          }), v.length > 1 && (0, r.jsx)(q, {
-            gradientAngle: I,
+          }), A.length > 1 && (0, r.jsx)(q, {
+            gradientAngle: S,
             setGradientAngle: L
           }), (0, r.jsx)(X, {
-            chassisMixAmount: S,
+            chassisMixAmount: I,
             setChassisMixAmount: e => {
-              D(e), 0 === v.length && (0, N.$Y)(v, M, C)
+              D(e), 0 === A.length && (0, N.$Y)(A, M, C)
             }
           })]
         }), (0, r.jsxs)("div", {
@@ -489,7 +489,7 @@ function ee(e) {
           }), (0, r.jsx)(d.$nd, {
             variant: "secondary",
             onClick: z,
-            disabled: b,
+            disabled: y,
             text: U.intl.string(U.t.yBZMsQ),
             fullWidth: true
           })]

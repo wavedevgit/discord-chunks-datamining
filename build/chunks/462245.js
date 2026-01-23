@@ -34,16 +34,16 @@ let y = {
         },
         socket: n
       } = e, r = u.A.getChannel(t);
-      if (null == r) throw new g.A({
+      if (null == r) throw new m.A({
         errorCode: O.Lw6.INVALID_CHANNEL
       }, "Invalid channel id: ".concat(t));
       if (r.isPrivate()) {
         let e = n.authorization.scopes;
-        if (!e.includes(l.F.RPC) && !e.includes(l.F.DM_CHANNELS_READ)) throw new g.A({
+        if (!e.includes(l.F.RPC) && !e.includes(l.F.DM_CHANNELS_READ)) throw new m.A({
           errorCode: O.Lw6.INVALID_PERMISSIONS
         }, "Invalid scope")
       }
-      return (0, m.SN)(r, (0, m.B_)(r, n.application.id, n.authorization.scopes))
+      return (0, A.SN)(r, (0, A.B_)(r, n.application.id, n.authorization.scopes))
     }
   },
   [Chunk652215.e$_.GET_CHANNELS]: {
@@ -56,7 +56,7 @@ let y = {
       } = e, n = i().values(u.A.loadAllGuildAndPrivateChannelsFromDisk());
       if (t) {
         let e = d.A.getGuild(t);
-        if (null == e) throw new g.A({
+        if (null == e) throw new m.A({
           errorCode: O.Lw6.INVALID_GUILD
         }, "Invalid guild id: ".concat(t));
         n = n.filter(t => {
@@ -87,8 +87,8 @@ let y = {
       [Chunk613057.sm.ANY]: [Chunk179771.F.GUILDS_MEMBERS_READ, Chunk179771.F.GUILDS_CHANNELS_READ]
     },
     handler(e) {
-      let t = (0, _.A)();
-      if (null == t) throw new g.A({
+      let t = (0, b.A)();
+      if (null == t) throw new m.A({
         errorCode: O.Lw6.INVALID_CHANNEL
       }, "Invalid channel");
       return {
@@ -98,7 +98,7 @@ let y = {
   },
   [Chunk652215.e$_.SELECT_VOICE_CHANNEL]: {
     scope: Chunk179771.F.RPC,
-    validation: e => (0, b.A)(e).required().keys({
+    validation: e => (0, _.A)(e).required().keys({
       channel_id: e.string().allow(null),
       timeout: e.number().min(0).max(60),
       force: e.boolean(),
@@ -116,29 +116,29 @@ let y = {
         }
       } = e;
       if (!r) return s.default.selectVoiceChannel(null), null;
-      let b = f.A.getVoiceChannelId();
-      if (null != b && b !== r && false === l) throw new g.A({
+      let _ = h.A.getVoiceChannelId();
+      if (null != _ && _ !== r && false === l) throw new m.A({
         errorCode: O.Lw6.SELECT_VOICE_FORCE_REQUIRED
       }, "User is already joined to a voice channel.");
       return t.storeWait(n, () => u.A.getChannel(r), i).catch(() => {
-        throw new g.A({
+        throw new m.A({
           errorCode: O.Lw6.SELECT_CHANNEL_TIMED_OUT
         }, "Request to select voice channel timed out.")
       }).then(e => {
-        if (null == e) throw new g.A({
+        if (null == e) throw new m.A({
           errorCode: O.Lw6.INVALID_CHANNEL
         }, "Invalid channel id: ".concat(r));
-        if (!(0, c.gV)(e.type)) throw new g.A({
+        if (!(0, c.gV)(e.type)) throw new m.A({
           errorCode: O.Lw6.INVALID_CHANNEL
         }, "Channel is not a voice channel");
-        return Promise.all([Promise.resolve(e), (0, m.SN)(e, (0, m.B_)(e, n.application.id, n.authorization.scopes))])
+        return Promise.all([Promise.resolve(e), (0, A.SN)(e, (0, A.B_)(e, n.application.id, n.authorization.scopes))])
       }).then(e => {
         let [t, n] = e;
         if (n.guild_id) {
-          if ((0, A.Pd)(t, h.A, d.A)) throw new g.A({
+          if ((0, f.Pd)(t, g.A, d.A)) throw new m.A({
             errorCode: O.Lw6.INVALID_CHANNEL
           }, "Channel is full");
-          if (!p.A.can(O.xBc.CONNECT, t)) throw new g.A({
+          if (!p.A.can(O.xBc.CONNECT, t)) throw new m.A({
             errorCode: O.Lw6.INVALID_PERMISSIONS
           }, "Connect permission required to join channel")
         }
@@ -153,13 +153,13 @@ let y = {
     handler(e) {
       let {
         socket: t
-      } = e, n = f.A.getVoiceChannelId(), r = null != n ? u.A.getChannel(n) : null;
-      return null != r ? (0, m.SN)(r, (0, m.B_)(r, t.application.id, t.authorization.scopes)) : null
+      } = e, n = h.A.getVoiceChannelId(), r = null != n ? u.A.getChannel(n) : null;
+      return null != r ? (0, A.SN)(r, (0, A.B_)(r, t.application.id, t.authorization.scopes)) : null
     }
   },
   [Chunk652215.e$_.SELECT_TEXT_CHANNEL]: {
     scope: Chunk179771.F.RPC,
-    validation: e => (0, b.A)(e).required().keys({
+    validation: e => (0, _.A)(e).required().keys({
       channel_id: e.string().allow(null),
       timeout: e.number().min(0).max(60)
     }),
@@ -173,20 +173,20 @@ let y = {
         }
       } = e;
       return r ? t.storeWait(n, () => u.A.getChannel(r), i).catch(() => {
-        throw new g.A({
+        throw new m.A({
           errorCode: O.Lw6.SELECT_CHANNEL_TIMED_OUT
         }, "Request to select text channel timed out.")
       }).then(e => {
-        if (null == e) throw new g.A({
+        if (null == e) throw new m.A({
           errorCode: O.Lw6.INVALID_CHANNEL
         }, "Invalid channel id: ".concat(r));
-        if (!(0, c.pQ)(e.type)) throw new g.A({
+        if (!(0, c.pQ)(e.type)) throw new m.A({
           errorCode: O.Lw6.INVALID_CHANNEL
         }, "Channel is not a text channel");
-        return Promise.all([Promise.resolve(e), (0, m.SN)(e, (0, m.B_)(e, n.application.id, n.authorization.scopes))])
+        return Promise.all([Promise.resolve(e), (0, A.SN)(e, (0, A.B_)(e, n.application.id, n.authorization.scopes))])
       }).then(e => {
         let [t, n] = e;
-        if (n.guild_id && !p.A.can(O.xBc.VIEW_CHANNEL, t)) throw new g.A({
+        if (n.guild_id && !p.A.can(O.xBc.VIEW_CHANNEL, t)) throw new m.A({
           errorCode: O.Lw6.INVALID_CHANNEL
         }, "No permission to see channel");
         return n.guild_id ? (0, o.bG)(O.BVt.CHANNEL(n.guild_id, t.id)) : s.default.selectPrivateChannel(t.id), n
@@ -218,7 +218,7 @@ let y = {
         return l
       }(t, ["channel_id"]);
       return a.Ay.createInvite(n, r, "RPC").catch(() => {
-        throw new g.A({
+        throw new m.A({
           errorCode: O.Lw6.INVALID_PERMISSIONS
         }, "Unable to generate an invite for ".concat(n, ". Does this user have permissions?"))
       })

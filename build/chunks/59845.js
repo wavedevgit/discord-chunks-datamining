@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   GQ: () => _,
-  KU: () => A,
+  KU: () => v,
   pM: () => T,
-  yq: () => v
+  yq: () => A
 });
 var Chunk178375 = require("./178375.js"),
   Chunk392223 = require("./392223.js"),
@@ -59,22 +59,22 @@ function E(e) {
     document: t
   }
 }
-let b = (0, Chunk64700.createContext)(null);
+let y = (0, Chunk64700.createContext)(null);
 
-function y(e) {
+function b(e) {
   var t;
   return (t = class extends r.Pt {}).type = e, t
 }
 
 function O(e, t, n, r, i, a) {
-  "string" == typeof e && (e = y(e));
+  "string" == typeof e && (e = b(e));
   let s = (0, c.useCallback)(i => {
       null == i || i.setProps(t, n, e, r, a)
     }, [t, n, r, a, e]),
-    o = (0, c.useContext)(b);
+    o = (0, c.useContext)(y);
   if (o) {
     let s = o.ownerDocument.nodesByProps.get(t);
-    return s || ((s = o.ownerDocument.createElement(e.type)).setProps(t, n, e, r, a), o.appendChild(s), o.ownerDocument.updateCollection(), o.ownerDocument.nodesByProps.set(t, s)), i ? c.createElement(b.Provider, {
+    return s || ((s = o.ownerDocument.createElement(e.type)).setProps(t, n, e, r, a), o.appendChild(s), o.ownerDocument.updateCollection(), o.ownerDocument.nodesByProps.set(t, s)), i ? c.createElement(y.Provider, {
       value: s
     }, i) : null
   }
@@ -83,7 +83,7 @@ function O(e, t, n, r, i, a) {
   }, i)
 }
 
-function A(e, t) {
+function v(e, t) {
   let n = ({
       node: e
     }) => t(e.props, e.props.ref, e),
@@ -102,7 +102,7 @@ function A(e, t) {
   return r.displayName = t.name, r
 }
 
-function v(e, t, n = S) {
+function A(e, t, n = I) {
   let r = ({
       node: e
     }) => t(e.props, e.props.ref, e),
@@ -116,19 +116,19 @@ function v(e, t, n = S) {
   return i.displayName = t.name, i
 }
 
-function S(e) {
+function I(e) {
   return (0, a.p)({
     ...e,
     addIdAndValue: true
   })
 }
-let I = (0, Chunk64700.createContext)(null);
+let S = (0, Chunk64700.createContext)(null);
 
 function T(e) {
-  let t = (0, c.useContext)(I),
+  let t = (0, c.useContext)(S),
     n = ((null == t ? true : t.dependencies) || []).concat(e.dependencies),
     r = e.idScope || (null == t ? true : t.idScope),
-    i = S({
+    i = I({
       ...e,
       idScope: r,
       dependencies: n
@@ -136,7 +136,7 @@ function T(e) {
   return (0, c.useContext)(p) && (i = c.createElement(C, null, i)), t = (0, c.useMemo)(() => ({
     dependencies: n,
     idScope: r
-  }), [r, ...n]), c.createElement(I.Provider, {
+  }), [r, ...n]), c.createElement(S.Provider, {
     value: t
   }, i)
 }
@@ -150,7 +150,7 @@ function C({
     }, c.createElement(f.Provider, {
       value: true
     }, e)), [e]);
-  return (0, u.wR)() ? c.createElement(b.Provider, {
+  return (0, u.wR)() ? c.createElement(y.Provider, {
     value: t
   }, n) : (0, o.createPortal)(n, t)
 }

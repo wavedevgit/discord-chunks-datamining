@@ -7,8 +7,8 @@ require.d(exports, {
   OP: () => w,
   S0: () => P,
   So: () => R,
-  WD: () => v,
-  b3: () => I,
+  WD: () => A,
+  b3: () => S,
   kc: () => C,
   kd: () => T
 }), require("./747238.js"), require("./812715.js"), require("./938796.js"), require("./638769.js");
@@ -31,16 +31,16 @@ var Chunk665260 = require("./665260.js"),
   Chunk652215 = require("./652215.js"),
   Chunk360469 = require("./360469.js");
 let O = "{code}",
-  A = 2592e5;
+  v = 2592e5;
 
-function v(e, t) {
+function A(e, t) {
   let n = (0, s.Mw)(t) ? "logo-dark" : "logo-light",
     r = window.GLOBAL_ENV.CDN_HOST,
     i = "?size=256";
   return null != r ? "https://".concat(r, "/promotions/").concat(e, "/").concat(n).concat(i) : "".concat(location.protocol).concat(window.GLOBAL_ENV.API_ENDPOINT, "/promotions/").concat(e, "/").concat(n).concat(i)
 }
 
-function S(e) {
+function I(e) {
   return {
     code: e.code,
     userId: e.user_id,
@@ -48,15 +48,15 @@ function S(e) {
     promotion: u.A.createFromServer(e.promotion)
   }
 }
-async function I() {
+async function S() {
   return (await i.Bo.get({
-    url: b.Rsh.CLAIMED_OUTBOUND_PROMOTION_CODES,
+    url: y.Rsh.CLAIMED_OUTBOUND_PROMOTION_CODES,
     query: {
       locale: l.default.locale
     },
     oldFormErrors: true,
     rejectWithError: false
-  })).body.map(S)
+  })).body.map(I)
 }
 async function T(e) {
   let t, {
@@ -64,15 +64,15 @@ async function T(e) {
       analyticsLocations: r
     } = e,
     a = await i.Bo.post({
-      url: b.Rsh.CLAIM_OUTBOUND_PROMOTION_CODE(n),
+      url: y.Rsh.CLAIM_OUTBOUND_PROMOTION_CODE(n),
       rejectWithError: false
     }),
     s = a.body;
-  return t = y.vu.DESKTOP, p.default.track(b.HAw.OUTBOUND_PROMOTION_CLAIMED, {
+  return t = b.vu.DESKTOP, p.default.track(y.HAw.OUTBOUND_PROMOTION_CLAIMED, {
     platform: t,
     status: a.status,
     location_stack: r
-  }), S(s)
+  }), I(s)
 }
 
 function C(e, t) {
@@ -108,7 +108,7 @@ function N() {
 function R() {
   let e = N();
   return null != e && !(0, o.j6)(a.M.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR, e, {
-    cooldownDurationMs: A
+    cooldownDurationMs: v
   })
 }
 

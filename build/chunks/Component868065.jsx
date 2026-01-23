@@ -2,13 +2,13 @@
 /** chunk id: 868065, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Hp: () => A,
-  UA: () => y,
-  ZB: () => v,
-  Zp: () => b,
-  dM: () => S,
+  Hp: () => v,
+  UA: () => b,
+  ZB: () => A,
+  Zp: () => y,
+  dM: () => I,
   eG: () => E,
-  ik: () => I
+  ik: () => S
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -34,7 +34,7 @@ function E() {
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     children: t,
     selected: n,
@@ -50,7 +50,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     children: t
   } = e;
@@ -89,31 +89,31 @@ function O(e) {
   })
 }
 
-function A(e) {
+function v(e) {
   var t;
   let {
     guildId: n,
     channelId: i,
     entry: a,
     maxAvatars: l = 3
-  } = e, E = a.author_id, b = (0, s.bG)([p.default], () => p.default.getUser(E)), {
-    displayParticipants: y,
-    participant1: A,
-    participant2: v,
-    numOtherParticipants: S
-  } = (0, h.A)(a, l), I = (0, s.bG)([d.Ay], () => d.Ay.getMember(n, E)), T = (0, c.a)({
-    displayNameStyles: null == b ? true : b.displayNameStyles
+  } = e, E = a.author_id, y = (0, s.bG)([p.default], () => p.default.getUser(E)), {
+    displayParticipants: b,
+    participant1: v,
+    participant2: A,
+    numOtherParticipants: I
+  } = (0, h.A)(a, l), S = (0, s.bG)([d.Ay], () => d.Ay.getMember(n, E)), T = (0, c.a)({
+    displayNameStyles: null == y ? true : y.displayNameStyles
   }), C = (0, s.bG)([f.A], () => {
     var e;
-    return (null == I ? true : I.colorRoleId) != null ? null == (e = f.A.getRole(n, I.colorRoleId)) ? true : e.name : true
-  }, [n, I]), N = (0, u.gn)(n, E, null != (t = null == I ? true : I.colorStrings) ? t : null);
-  if (null == b) return null;
-  let R = null == I ? true : I.colorString,
-    w = _.Ay.getName(n, i, b);
+    return (null == S ? true : S.colorRoleId) != null ? null == (e = f.A.getRole(n, S.colorRoleId)) ? true : e.name : true
+  }, [n, S]), N = (0, u.gn)(n, E, null != (t = null == S ? true : S.colorStrings) ? t : null);
+  if (null == y) return null;
+  let R = null == S ? true : S.colorString,
+    w = _.Ay.getName(n, i, y);
   return (0, r.jsxs)("div", {
     className: g.dw,
     children: [(0, r.jsx)(O, {
-      users: y,
+      users: b,
       guildId: n,
       "aria-hidden": true
     }), (0, r.jsx)(o.gyj, {
@@ -124,20 +124,20 @@ function A(e) {
       className: g.nT,
       displayNameStylesFont: T,
       "aria-hidden": true
-    }), S > 0 ? (0, r.jsx)("div", {
+    }), I > 0 ? (0, r.jsx)("div", {
       className: g.kx,
       "aria-hidden": true,
       children: (0, r.jsxs)(o.Text, {
         variant: "text-xxs/medium",
         color: "text-default",
         className: g.b4,
-        children: ["+", S]
+        children: ["+", I]
       })
     }) : null, (0, r.jsx)(o.AC4, {
       children: m.intl.format(m.t.rH95Gu, {
-        user0: _.Ay.getName(n, i, A),
-        user1: _.Ay.getName(n, i, v),
-        countOthers: S,
+        user0: _.Ay.getName(n, i, v),
+        user1: _.Ay.getName(n, i, A),
+        countOthers: I,
         name0Hook: (e, t) => (0, r.jsx)("span", {
           children: e
         }, t),
@@ -152,7 +152,7 @@ function A(e) {
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     children: t
   } = e;
@@ -165,7 +165,7 @@ function v(e) {
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     children: t,
     className: n,
@@ -178,7 +178,7 @@ function S(e) {
   })
 }
 
-function I() {
+function S() {
   return (0, r.jsx)("div", {
     className: g.yF
   })

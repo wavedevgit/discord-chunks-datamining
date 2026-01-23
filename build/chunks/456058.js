@@ -2,7 +2,7 @@
 /** chunk id: 456058, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => c
 });
 var Chunk64700 = require("./64700.js"),
   Chunk105917 = require("./105917.js"),
@@ -11,27 +11,27 @@ var Chunk64700 = require("./64700.js"),
   Chunk22491 = require("./22491.js"),
   Chunk311750 = require("./311750.js");
 
-function o(e, t) {
+function c(e, t) {
   let n = null == t ? true : t.team,
     {
-      payoutsByPeriod: o,
+      payoutsByPeriod: c,
       loading: d
     } = (0, l.A)(null == t ? true : t.id, {
-      groupType: c.x1.SERVER_ROLE_SUBSCRIPTION,
+      groupType: o.x1.SERVER_ROLE_SUBSCRIPTION,
       teamId: null == n ? true : n.id
     }),
     u = (0, s.X)("useEarningMetrics"),
-    f = (0, a.A)(e),
+    g = (0, a.A)(e),
     {
-      currentPeriod: g,
-      previousPeriods: b,
-      metrics: m
+      currentPeriod: m,
+      previousPeriods: p,
+      metrics: f
     } = r.useMemo(() => {
       var e, t;
       let {
         currentPeriod: n,
         previousPeriods: r
-      } = (0, i.dc)(o), l = (0, i.El)(n, r[0]);
+      } = (0, i.dc)(c), l = (0, i.El)(n, r[0]);
       return {
         currentPeriod: n,
         previousPeriods: r,
@@ -53,7 +53,7 @@ function o(e, t) {
           }
           return e
         }({}, l), t = t = {
-          subscribers: f,
+          subscribers: g,
           subscriberChange: l.paymentsCountChange
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
@@ -66,13 +66,13 @@ function o(e, t) {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e)
       }
-    }, [o, f]);
+    }, [c, g]);
   return {
     loading: d || !u,
     team: n,
-    currentPeriod: g,
-    previousPeriods: b,
-    allPeriods: o,
-    metrics: m
+    currentPeriod: m,
+    previousPeriods: p,
+    allPeriods: c,
+    metrics: f
   }
 }

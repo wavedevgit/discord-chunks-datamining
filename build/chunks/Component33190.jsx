@@ -31,14 +31,14 @@ function h(e) {
     giftRecipient: E
   } = (0, l.Pv)();
   a()(null != h, "Expected selectedSkuId"), a()(null != m, "Expected application");
-  let b = i[h];
-  a()(null != b, "Expected sku");
-  let y = g ? p.intl.formatToPlainString(p.t["2VjPTw"], {
-    itemName: b.name,
+  let y = i[h];
+  a()(null != y, "Expected sku");
+  let b = g ? p.intl.formatToPlainString(p.t["2VjPTw"], {
+    itemName: y.name,
     giftRecipient: null != (t = null == E ? true : E.username) ? t : "your recipient"
   }) : p.intl.formatToPlainString(p.t.wK0IbP, {
     applicationName: m.name,
-    itemName: b.name
+    itemName: y.name
   });
   return (0, r.jsxs)(f.dZ, {
     children: [(0, r.jsx)(d.A, {}), (0, r.jsx)(u.A, {}), (0, r.jsxs)("div", {
@@ -49,7 +49,7 @@ function h(e) {
         children: "Success!"
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        children: y
+        children: b
       }), (0, r.jsx)("div", {
         className: _.yF
       }), (0, r.jsx)(s.$nd, {

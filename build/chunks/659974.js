@@ -34,27 +34,27 @@ function E(e) {
     spreadDirection: _ = "BOTH",
     maxOuterSpreadRadius: g = f,
     maxInnerSpreadRadius: E = p,
-    hideIfVolumeMissing: b = false
-  } = e, y = n(242286).default, {
+    hideIfVolumeMissing: y = false
+  } = e, b = n(242286).default, {
     shouldReduceMotion: O,
-    useForcedColors: A,
-    isAppFocusedOrOverlayVisible: v
-  } = (0, i.cf)([a.A, s.A, y], () => ({
+    useForcedColors: v,
+    isAppFocusedOrOverlayVisible: A
+  } = (0, i.cf)([a.A, s.A, b], () => ({
     shouldReduceMotion: a.A.useReducedMotion,
     useForcedColors: a.A.useForcedColors,
-    isAppFocusedOrOverlayVisible: s.A.isAppFocused() || null != y.getFocusedPID()
+    isAppFocusedOrOverlayVisible: s.A.isAppFocused() || null != b.getFocusedPID()
   }));
   return r.useMemo(() => {
     let e = {};
-    if (d === false / 0 && b) return e;
+    if (d === false / 0 && y) return e;
     if (t) {
       let t = o,
         n = l,
         r = c;
-      d !== false / 0 && !O && v && (t = "INSET_ONLY" === _ ? 0 : m(d, g), n = "OUTSET_ONLY" === _ ? 0 : m(d, E), r = "OUTSET_ONLY" === _ ? 0 : n + 1);
-      let i = A ? "Highlight" : "var(--status-speaking)";
+      d !== false / 0 && !O && A && (t = "INSET_ONLY" === _ ? 0 : m(d, g), n = "OUTSET_ONLY" === _ ? 0 : m(d, E), r = "OUTSET_ONLY" === _ ? 0 : n + 1);
+      let i = v ? "Highlight" : "var(--status-speaking)";
       e.boxShadow = ["0 0 0 ".concat(t, "px ").concat(i), "inset 0 0 0 ".concat(n, "px ").concat(i), "inset 0 0 0 ".concat(r, "px var(--background-base-lower)")].join(", ")
     } else u && (e.boxShadow = h);
-    return v && (e.transition = "box-shadow 50ms ease-out"), e
-  }, [t, u, v, O, A, d, _, g, E, b])
+    return A && (e.transition = "box-shadow 50ms ease-out"), e
+  }, [t, u, A, O, v, d, _, g, E, y])
 }

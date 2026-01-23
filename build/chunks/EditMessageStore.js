@@ -88,7 +88,7 @@ function E(e) {
   delete _[t], delete h[t]
 }
 
-function b(e) {
+function y(e) {
   var t;
   let {
     channelId: n,
@@ -96,7 +96,7 @@ function b(e) {
   } = e;
   (null == (t = _[n]) ? true : t.messageId) === r && (delete _[n], delete h[n])
 }
-class y extends(r = Chunk311907.Ay.Store) {
+class b extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(c.A)
   }
@@ -127,10 +127,10 @@ class y extends(r = Chunk311907.Ay.Store) {
     return h[e]
   }
 }
-u(y, "displayName", "EditMessageStore");
-let O = new y(Chunk73153.h, {
+u(b, "displayName", "EditMessageStore");
+let O = new b(Chunk73153.h, {
   MESSAGE_START_EDIT: m,
   MESSAGE_UPDATE_EDIT: g,
   MESSAGE_END_EDIT: E,
-  MESSAGE_DELETE: b
+  MESSAGE_DELETE: y
 })

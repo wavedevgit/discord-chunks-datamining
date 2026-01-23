@@ -41,7 +41,7 @@ let w = (e, t) => {
       videoRef: D
     } = e, {
       analyticsLocations: x
-    } = (0, f.Ay)(d.A.PREMIUM_MARKETING_HERO_CTA), L = (0, g.QQ)(), j = (0, m.ar)(), M = (0, o.bG)([h.A], () => h.A.affinities), k = (0, E.A)(), U = null != k, G = w ? l.XD.WHITE : l.XD.BRAND, V = M.length > 0, F = I.intl.string(I.t.YCZldK), B = (0, _.TM)(), H = (0, o.bG)([u.A], () => u.A.useReducedMotion);
+    } = (0, f.Ay)(d.A.PREMIUM_MARKETING_HERO_CTA), L = (0, g.QQ)(), j = (0, m.ar)(), M = (0, o.bG)([h.A], () => h.A.affinities), k = (0, E.A)(), U = null != k, G = w ? l.XD.WHITE : l.XD.BRAND, V = M.length > 0, F = S.intl.string(S.t.YCZldK), B = (0, _.TM)(), H = (0, o.bG)([u.A], () => u.A.useReducedMotion);
     return (0, r.jsx)(f.f5, {
       value: x,
       children: (0, r.jsxs)("div", {
@@ -52,7 +52,7 @@ let w = (e, t) => {
           className: T.kL,
           children: (0, r.jsxs)("div", {
             className: T.s8,
-            children: [j && (0, r.jsx)(v.A, {}), (0, r.jsx)(c.Heading, {
+            children: [j && (0, r.jsx)(A.A, {}), (0, r.jsx)(c.Heading, {
               className: T.WT,
               variant: "display-sm",
               color: "text-strong",
@@ -61,7 +61,7 @@ let w = (e, t) => {
               referrer: k
             }) : V && (0, r.jsx)("div", {
               className: T.kb,
-              children: (0, r.jsx)(y.A, {
+              children: (0, r.jsx)(b.A, {
                 textColor: "text-default",
                 smallerText: false,
                 isApplicationHome: true
@@ -70,11 +70,11 @@ let w = (e, t) => {
               className: s()(T.UD, T.$F, {
                 [T.In]: !(V || U)
               }),
-              children: (0, r.jsx)(b.A, {
+              children: (0, r.jsx)(y.A, {
                 className: s()(T.x6, i),
                 color: G
               })
-            }) : (0, r.jsx)(A.KN, {
+            }) : (0, r.jsx)(v.KN, {
               subscriptionTier: a,
               inOfferExperience: j,
               containerClassName: s()(T.$F, {
@@ -84,7 +84,7 @@ let w = (e, t) => {
               isApplicationHome: true,
               isDarkMode: w,
               isEligibleForBogoPromotion: P
-            }), (0, r.jsx)(A.U9, {
+            }), (0, r.jsx)(v.U9, {
               variant: "text-sm/normal",
               withBottomMargin: false,
               isApplicationHome: true
@@ -102,7 +102,7 @@ let w = (e, t) => {
             ref: D,
             children: (0, r.jsx)("source", {
               src: B ? C.A : R.A,
-              type: B ? S.a.MP4 : S.a.WEBM
+              type: B ? I.a.MP4 : I.a.WEBM
             })
           })
         })]

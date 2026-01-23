@@ -3,7 +3,7 @@
 "use strict";
 let r, i;
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./896048.js");
 var a, Chunk735438 = require("./735438.js"),
   o = require.n(Chunk735438),
@@ -52,23 +52,23 @@ function E() {
       })) ? true : s[0]) && (e = null != i && a.has(i) ? i : null == (c = n.first()) || null == (l = c.user) ? true : l.id)
     }
   }
-  i !== e && (i = e, t && A.emitChange())
+  i !== e && (i = e, t && v.emitChange())
 }
-let b = o().debounce(E, 300);
+let y = o().debounce(E, 300);
 
-function y() {
-  return b(), false
+function b() {
+  return y(), false
 }
 class O extends(a = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(u.A, p.default, h.A, f.A, _.A), this.syncWith([u.A, f.A], y)
+    this.waitFor(u.A, p.default, h.A, f.A, _.A), this.syncWith([u.A, f.A], b)
   }
   getSpeaker(e) {
     return r !== e && (r = e, E(false)), null != i ? i : p.default.getId()
   }
 }
 g(O, "displayName", "VideoSpeakerStore");
-let A = new O(Chunk73153.h, {
-    AUDIO_SET_LOCAL_VIDEO_DISABLED: y
+let v = new O(Chunk73153.h, {
+    AUDIO_SET_LOCAL_VIDEO_DISABLED: b
   }),
-  v = A
+  A = v

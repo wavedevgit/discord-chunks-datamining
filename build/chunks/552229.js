@@ -13,7 +13,7 @@ var Chunk549412 = require("./549412.js"),
   f = [1, 2, 3, 4, 5, 7, 9, 13, 17, 25, 33, 49, 65, 97, 129, 193, 257, 385, 513, 769, 1025, 1537, 2049, 3073, 4097, 6145, 8193, 12289, 16385, 24577, 0, 0],
   p = [16, 16, 16, 16, 17, 17, 18, 18, 19, 19, 20, 20, 21, 21, 22, 22, 23, 23, 24, 24, 25, 25, 26, 26, 27, 27, 28, 28, 29, 29, 64, 64];
 module.exports = function(e, t, n, _, h, m, g, E) {
-  var b, y, O, A, v, S, I, T, C, N = E.bits,
+  var y, b, O, v, A, I, S, T, C, N = E.bits,
     R = 0,
     w = 0,
     P = 0,
@@ -40,20 +40,20 @@ module.exports = function(e, t, n, _, h, m, g, E) {
   if (M > 0 && (e === o || 1 !== D)) return false;
   for (R = 1, B[1] = 0; R < i; R++) B[R + 1] = B[R] + F[R];
   for (w = 0; w < _; w++) 0 !== t[n + w] && (g[B[t[n + w]]++] = w);
-  if (e === o ? (G = H = g, S = 19) : e === l ? (G = u, V -= 257, H = d, Y -= 257, S = 256) : (G = f, H = p, S = false), U = 0, w = 0, R = P, v = m, L = x, j = 0, O = false, A = (k = 1 << x) - 1, e === l && k > a || e === c && k > s) return 1;
+  if (e === o ? (G = H = g, I = 19) : e === l ? (G = u, V -= 257, H = d, Y -= 257, I = 256) : (G = f, H = p, I = false), U = 0, w = 0, R = P, A = m, L = x, j = 0, O = false, v = (k = 1 << x) - 1, e === l && k > a || e === c && k > s) return 1;
   for (;;) {
-    I = R - j, g[w] < S ? (T = 0, C = g[w]) : g[w] > S ? (T = H[Y + g[w]], C = G[V + g[w]]) : (T = 96, C = 0), b = 1 << R - j, P = y = 1 << L;
-    do h[v + (U >> j) + (y -= b)] = I << 24 | T << 16 | C; while (0 !== y);
-    for (b = 1 << R - 1; U & b;) b >>= 1;
-    if (0 !== b ? (U &= b - 1, U += b) : U = 0, w++, 0 == --F[R]) {
+    S = R - j, g[w] < I ? (T = 0, C = g[w]) : g[w] > I ? (T = H[Y + g[w]], C = G[V + g[w]]) : (T = 96, C = 0), y = 1 << R - j, P = b = 1 << L;
+    do h[A + (U >> j) + (b -= y)] = S << 24 | T << 16 | C; while (0 !== b);
+    for (y = 1 << R - 1; U & y;) y >>= 1;
+    if (0 !== y ? (U &= y - 1, U += y) : U = 0, w++, 0 == --F[R]) {
       if (R === D) break;
       R = t[n + g[w]]
     }
-    if (R > x && (U & A) !== O) {
-      for (0 === j && (j = x), v += P, M = 1 << (L = R - j); L + j < D && !((M -= F[L + j]) <= 0);) L++, M <<= 1;
+    if (R > x && (U & v) !== O) {
+      for (0 === j && (j = x), A += P, M = 1 << (L = R - j); L + j < D && !((M -= F[L + j]) <= 0);) L++, M <<= 1;
       if (k += 1 << L, e === l && k > a || e === c && k > s) return 1;
-      h[O = U & A] = x << 24 | L << 16 | v - m
+      h[O = U & v] = x << 24 | L << 16 | A - m
     }
   }
-  return 0 !== U && (h[v + U] = R - j << 24 | 4194304), E.bits = x, 0
+  return 0 !== U && (h[A + U] = R - j << 24 | 4194304), E.bits = x, 0
 }

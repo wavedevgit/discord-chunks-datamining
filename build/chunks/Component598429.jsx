@@ -31,7 +31,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,14 +55,14 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class I extends(r = Chunk64700.PureComponent) {
+class S extends(r = Chunk64700.PureComponent) {
   get analyticsLocation() {
-    return S(A({}, this.props.analyticsContext.location), {
+    return I(v({}, this.props.analyticsContext.location), {
       object: E.ZSU.BUTTON_CTA
     })
   }
@@ -80,7 +80,7 @@ class I extends(r = Chunk64700.PureComponent) {
       tooltipPosition: o
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: y.Yr,
+      className: b.Yr,
       children: [(0, i.jsx)(s.$nd, {
         text: e,
         fullWidth: n,
@@ -91,7 +91,7 @@ class I extends(r = Chunk64700.PureComponent) {
         text: t,
         position: o,
         children: (0, i.jsx)("div", {
-          className: y.p5
+          className: b.p5
         })
       })]
     })
@@ -106,22 +106,22 @@ class I extends(r = Chunk64700.PureComponent) {
       isRunning: o,
       hideNotLaunchable: l
     } = this.props;
-    return r ? o ? this.renderDisabledButton(b.intl.string(b.t["3elwAB"])) : (0, i.jsxs)(s.e2v, {
+    return r ? o ? this.renderDisabledButton(y.intl.string(y.t["3elwAB"])) : (0, i.jsxs)(s.e2v, {
       size: t,
       wrap: false,
       fullWidth: e,
       children: [(0, i.jsx)(s.$nd, {
-        text: b.intl.string(b.t["359Pbd"]),
+        text: y.intl.string(y.t["359Pbd"]),
         variant: n,
         loading: a,
         onClick: this.handleClick
       }), this.hasMultipleLaunchOptions() ? (0, i.jsx)(s.K0, {
         icon: c.abt,
-        "aria-label": b.intl.string(b.t.KTPVLL),
+        "aria-label": y.intl.string(y.t.KTPVLL),
         variant: "secondary",
         onClick: this.handleDropdownClick
       }) : null]
-    }) : l ? null : this.renderDisabledButton(b.intl.string(b.t["359Pbd"]), m.isPlatformEmbedded ? b.intl.string(b.t.NASLa3) : b.intl.string(b.t.o1bhkD))
+    }) : l ? null : this.renderDisabledButton(y.intl.string(y.t["359Pbd"]), m.isPlatformEmbedded ? y.intl.string(y.t.NASLa3) : y.intl.string(y.t.o1bhkD))
   }
   constructor(...e) {
     super(...e), O(this, "handleDropdownClick", e => {
@@ -136,7 +136,7 @@ class I extends(r = Chunk64700.PureComponent) {
         let {
           default: e
         } = await n.e("33055").then(n.bind(n, 661991));
-        return n => (0, i.jsx)(e, S(A({}, n), {
+        return n => (0, i.jsx)(e, I(v({}, n), {
           libraryApplication: t,
           onPlay: this.handleClick
         }))
@@ -166,7 +166,7 @@ function T(e) {
     applicationId: t,
     libraryApplication: n
   } = e, r = (0, d.p)(), [a, s] = (0, o.yK)([_.A, p.A, h.A], () => [_.A.isConnected(t) || p.A.isLaunchable(t) || null != n && h.A.isLaunchable(n.id, n.branchId), p.A.launchingGames.has(t)], [t, n]), l = (0, o.bG)([f.Ay], () => new Set(f.Ay.getRunningVerifiedApplicationIds()).has(t), [t]), c = (0, o.bG)([h.A], () => null != n ? h.A.getState(n.id, n.branchId) : null, [n]);
-  return (0, i.jsx)(I, S(A({}, e), {
+  return (0, i.jsx)(S, I(v({}, e), {
     analyticsContext: r,
     isLaunchable: a,
     isLaunching: s,
@@ -174,7 +174,7 @@ function T(e) {
     dispatchState: c
   }))
 }
-O(I, "defaultProps", {
+O(S, "defaultProps", {
   fullWidth: false,
   size: "md",
   variant: "secondary",

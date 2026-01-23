@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Ay: () => T,
-  Oh: () => I,
-  gn: () => S
+  Oh: () => S,
+  gn: () => I
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -28,7 +28,7 @@ var Chunk627968 = require("./627968.js"),
 require("./827669.js");
 var Chunk985018 = require("./985018.jsx");
 
-function v(e, t, n, r, i) {
+function A(e, t, n, r, i) {
   if (null == e) return;
   let a = () => {
     let a = h.A.getChannel(e);
@@ -42,7 +42,7 @@ function v(e, t, n, r, i) {
     }, n, i);
     if (null != s && s.untranslatedName === t) {
       var l, f;
-      b._.dispatch(y.jej.FOCUS_CHANNEL_TEXT_AREA, {
+      y._.dispatch(b.jej.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: e
       });
       let t = null != o ? {
@@ -65,19 +65,19 @@ function v(e, t, n, r, i) {
     }
   };
   "" !== m.A.getDraft(e, m.C.ChannelMessage) ? (0, s.A)({
-    title: A.intl.string(A.t.pe26Cj),
-    subtitle: A.intl.string(A.t["+awCIy"]),
-    confirmText: A.intl.string(A.t.VkKicb),
+    title: v.intl.string(v.t.pe26Cj),
+    subtitle: v.intl.string(v.t["+awCIy"]),
+    confirmText: v.intl.string(v.t.VkKicb),
     onConfirm: () => a(),
     onCloseCallback: () => {
-      b._.dispatch(y.jej.FOCUS_CHANNEL_TEXT_AREA, {
+      y._.dispatch(b.jej.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: e
       })
     }
   }) : a()
 }
 
-function S(e) {
+function I(e) {
   var t;
   let {
     node: n,
@@ -90,25 +90,25 @@ function S(e) {
     hasSendMessagePerm: c,
     hasUseAppCommandsPerm: m
   } = (0, a.cf)([g.A], () => ({
-    hasSendMessagePerm: g.A.can(y.xBc.SEND_MESSAGES, l),
-    hasUseAppCommandsPerm: g.A.can(y.xBc.USE_APPLICATION_COMMANDS, l)
-  })), b = true !== l ? {
+    hasSendMessagePerm: g.A.can(b.xBc.SEND_MESSAGES, l),
+    hasUseAppCommandsPerm: g.A.can(b.xBc.USE_APPLICATION_COMMANDS, l)
+  })), y = true !== l ? {
     type: "channel",
     channel: l
   } : {
     type: "contextless"
   }, {
-    command: A
-  } = u.D3(b, null != (t = n.commandKey) ? t : ""), S = _.D_.useSetting(), I = i.useMemo(() => {
-    if (null == A || null == l || A.untranslatedName !== n.commandName || S) returnfalse;
+    command: v
+  } = u.D3(y, null != (t = n.commandKey) ? t : ""), I = _.D_.useSetting(), S = i.useMemo(() => {
+    if (null == v || null == l || v.untranslatedName !== n.commandName || I) returnfalse;
     let e = l.isPrivate();
     if ((0, p.UJ)(l) || !e && !c) returnfalse;
-    let t = (null == A ? true : A.applicationId) === O.Ik.BUILT_IN;
+    let t = (null == v ? true : v.applicationId) === O.Ik.BUILT_IN;
     return !!e || !!t || !!m
-  }, [l, A, c, m, n.commandName, S]), T = i.useCallback(e => {
-    null == e || e.stopPropagation(), null != l && null != n.commandName && null != n.commandKey && v(l.id, n.commandName, n.commandKey, d.Oh.MENTION)
+  }, [l, v, c, m, n.commandName, I]), T = i.useCallback(e => {
+    null == e || e.stopPropagation(), null != l && null != n.commandName && null != n.commandKey && A(l.id, n.commandName, n.commandKey, d.Oh.MENTION)
   }, [l, n.commandKey, n.commandName]);
-  return I ? (0, r.jsxs)(f.A, {
+  return S ? (0, r.jsxs)(f.A, {
     role: "link",
     onClick: T,
     children: ["/", o]
@@ -117,7 +117,7 @@ function S(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     commandId: t,
     commandName: n,
@@ -125,7 +125,7 @@ function I(e) {
     applicationId: s,
     onClick: c
   } = e, u = (0, a.bG)([E.A], () => E.A.getChannelId()), f = e => {
-    null == e || e.stopPropagation(), v(u, n, t, d.Oh.POPULAR_COMMANDS, s), null == c || c(t)
+    null == e || e.stopPropagation(), A(u, n, t, d.Oh.POPULAR_COMMANDS, s), null == c || c(t)
   };
   return (0, r.jsx)(o.m, {
     text: i,
@@ -141,7 +141,7 @@ function I(e) {
 
 function T(e) {
   return {
-    react: (e, t, n) => (0, r.jsx)(S, {
+    react: (e, t, n) => (0, r.jsx)(I, {
       node: e,
       stateKey: n.key,
       children: t(e.content, n)

@@ -63,15 +63,15 @@ function f(e) {
     variant: _ = "critical"
   } = e, h = u(e, ["confirmText", "cancelText", "checkboxProps", "onConfirm", "onCancel", "onCloseCallback", "variant"]), {
     i18n: m
-  } = (0, a.G9)(), g = m.CANCEL, E = m.INLINE_NOTICE_GENERIC_ERROR, [b, y] = i.useState(false), O = i.useRef(p);
+  } = (0, a.G9)(), g = m.CANCEL, E = m.INLINE_NOTICE_GENERIC_ERROR, [y, b] = i.useState(false), O = i.useRef(p);
   i.useLayoutEffect(() => {
     O.current = p
   }), i.useLayoutEffect(() => () => {
     var e;
     null == (e = O.current) || e.call(O)
   }, []);
-  let [A, v] = i.useState(true), S = e => {
-    v(e)
+  let [v, A] = i.useState(true), I = e => {
+    A(e)
   };
   return (0, r.jsx)(s.Modal, c({
     actions: [{
@@ -84,20 +84,20 @@ function f(e) {
       text: t,
       variant: "critical" === _ ? "critical-primary" : _,
       onClick: async () => {
-        v(true), y(true);
+        A(true), b(true);
         try {
-          await (null == d ? true : d(S)), h.onClose()
+          await (null == d ? true : d(I)), h.onClose()
         } catch (e) {
-          throw y(false), v(e => null != e ? e : E), e
+          throw b(false), A(e => null != e ? e : E), e
         }
       },
-      disabled: b,
-      loading: b
+      disabled: y,
+      loading: y
     }],
     actionBarInput: null != l ? (0, r.jsx)(o.e, c({}, l)) : true,
     role: "alertdialog",
-    notice: null != A ? {
-      message: A,
+    notice: null != v ? {
+      message: v,
       type: "critical"
     } : true
   }, h))

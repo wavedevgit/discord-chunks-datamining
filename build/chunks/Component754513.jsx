@@ -2,7 +2,7 @@
 /** chunk id: 754513, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => x
+  A: () => h
 }), require("./896048.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,50 +16,50 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk256893 = require("./256893.js");
-let m = Chunk975571.A.getArticleURL(Chunk652215.MVz.GUILD_AUTOMOD_REGEX);
+let f = Chunk975571.A.getArticleURL(Chunk652215.MVz.GUILD_AUTOMOD_REGEX);
 
-function p(e) {
+function b(e) {
   let {
     hasErrors: t,
     text: n,
     errorText: i
   } = e;
   return t ? (0, r.jsx)("div", {
-    className: b.W$,
+    className: p.W$,
     children: (0, r.jsx)(a.Text, {
-      className: b.F,
+      className: p.F,
       variant: "text-xs/medium",
       color: "text-feedback-critical",
-      children: null != i ? i : g.intl.format(g.t.jKYAPu, {
-        helpArticle: m
+      children: null != i ? i : m.intl.format(m.t.jKYAPu, {
+        helpArticle: f
       })
     })
   }) : (0, r.jsx)(a.Text, {
-    className: b.W$,
+    className: p.W$,
     variant: "text-xs/medium",
     color: "text-muted",
     children: n
   })
 }
 
-function x(e) {
+function h(e) {
   var t, n;
   let {
     rule: l,
     onChangeText: a,
-    className: c
+    className: o
   } = e, {
-    patterns: f,
-    valueError: x,
-    errors: h,
+    patterns: g,
+    valueError: h,
+    errors: x,
     validatePatternsChanged: j,
-    validateEditingValueChanged: O
-  } = (0, d.A)(l, a), [y] = i.useState(() => ({
-    tags: f,
+    validateEditingValueChanged: _
+  } = (0, d.A)(l, a), [O] = i.useState(() => ({
+    tags: g,
     value: "",
     selections: [],
     isSelecting: false
-  })), v = i.useMemo(() => h.reduce((e, t) => {
+  })), v = i.useMemo(() => x.reduce((e, t) => {
     let {
       pattern: n,
       message: r,
@@ -67,37 +67,37 @@ function x(e) {
       erroringCharacterLength: l = n.length,
       erroringCharacterOffset: s = 0
     } = t;
-    return null == f.find(e => e === n) || (e[n] = {
+    return null == g.find(e => e === n) || (e[n] = {
       value: n,
       message: null != i ? i : r,
       erroringCharacterLength: l,
       erroringCharacterOffset: s
     }), e
-  }, {}), [h, f]), A = i.useCallback(e => {
-    j(e, f)
-  }, [j, f]), E = i.useCallback(e => {
-    O(e)
-  }, [O]);
+  }, {}), [x, g]), y = i.useCallback(e => {
+    j(e, g)
+  }, [j, g]), A = i.useCallback(e => {
+    _(e)
+  }, [_]);
   return (0, r.jsxs)("div", {
-    className: s()(b.Qn, c),
-    children: [(0, r.jsx)(o.A, {
+    className: s()(p.Qn, o),
+    children: [(0, r.jsx)(c.A, {
       placeholder: "^b(a|@)d$\nw(o|0)rd(s|$)",
-      initialValue: y,
-      onChangeTags: A,
-      onChangeNewTagValue: E,
+      initialValue: O,
+      onChangeTags: y,
+      onChangeNewTagValue: A,
       tagErrors: v,
       maxTags: u.qm
-    }), (0, r.jsx)(p, {
-      text: g.intl.format(g.t["PGC/AJ"], {
-        helpArticle: m
+    }), (0, r.jsx)(b, {
+      text: m.intl.format(m.t["PGC/AJ"], {
+        helpArticle: f
       }),
-      hasErrors: h.length > 0 || null != x,
-      errorText: null != (t = null == (n = h.find(e => {
+      hasErrors: x.length > 0 || null != h,
+      errorText: null != (t = null == (n = x.find(e => {
         let {
           pattern: t
         } = e;
         return t === d.B
-      })) ? true : n.message) ? t : null == x ? true : x.message
+      })) ? true : n.message) ? t : null == h ? true : h.message
     })]
   })
 }

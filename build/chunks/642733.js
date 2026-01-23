@@ -20,15 +20,15 @@ function l(e) {
     forceOpen: d = false,
     overflowOnly: f = false,
     hideOnClick: p = true
-  } = e, _ = r.useRef(null), h = null != t ? t : _, [m, g] = r.useState(false), E = r.useRef(null), b = r.useRef(false);
+  } = e, _ = r.useRef(null), h = null != t ? t : _, [m, g] = r.useState(false), E = r.useRef(null), y = r.useRef(false);
   r.useEffect(() => (E.current = new a.Ep, () => {
     let e = E.current;
     null != e && e.stop()
   }), []);
-  let y = null != h.current,
-    O = false !== n && (m || d) && y && !b.current,
-    A = r.useCallback(() => {
-      if (b.current || f && null == h.current) return;
+  let b = null != h.current,
+    O = false !== n && (m || d) && b && !y.current,
+    v = r.useCallback(() => {
+      if (y.current || f && null == h.current) return;
       if (f && null != h.current) {
         let e = h.current;
         if ((0, i.vq)(e, HTMLElement) && e.offsetWidth >= e.scrollWidth) return
@@ -39,52 +39,52 @@ function l(e) {
         g(true), null == c || c()
       }, false)
     }, [l, c, f, h]),
-    v = r.useCallback(() => {
+    A = r.useCallback(() => {
       var e;
       null == (e = E.current) || e.stop(), g(false), null == u || u()
     }, [u]),
-    S = r.useCallback(() => {
-      p && v()
-    }, [v, p]),
-    I = r.useCallback(e => {
-      null == h.current && (h.current = e.currentTarget), b.current = false, A()
-    }, [A, h]),
+    I = r.useCallback(() => {
+      p && A()
+    }, [A, p]),
+    S = r.useCallback(e => {
+      null == h.current && (h.current = e.currentTarget), y.current = false, v()
+    }, [v, h]),
     T = r.useCallback(e => {
-      s.A.keyboardModeEnabled && (null == h.current && (h.current = e.currentTarget), b.current = false, A())
-    }, [A, h]),
+      s.A.keyboardModeEnabled && (null == h.current && (h.current = e.currentTarget), y.current = false, v())
+    }, [v, h]),
     C = r.useCallback(() => {
       var e;
-      null == (e = E.current) || e.stop(), v()
-    }, [v]),
+      null == (e = E.current) || e.stop(), A()
+    }, [A]),
     N = r.useMemo(() => ({
-      onMouseEnter: I,
+      onMouseEnter: S,
       onMouseLeave: C,
       onFocus: T,
-      onBlur: v,
-      onContextMenu: v,
-      onClick: S
-    }), [I, C, T, v, S]);
+      onBlur: A,
+      onContextMenu: A,
+      onClick: I
+    }), [S, C, T, A, I]);
   return r.useEffect(() => {
     var e, t;
     if (!O) return;
     let n = null != (e = null == (t = h.current) ? true : t.ownerDocument) ? e : document,
       r = e => {
-        ("Escape" === e.key || "Esc" === e.key) && (b.current = true, v())
+        ("Escape" === e.key || "Esc" === e.key) && (y.current = true, A())
       };
     return n.addEventListener("keydown", r), () => {
       n.removeEventListener("keydown", r)
     }
-  }, [O, v, h]), r.useEffect(() => {
+  }, [O, A, h]), r.useEffect(() => {
     var e, t;
     if (!O) return;
     let n = null != (e = null == (t = h.current) ? true : t.ownerDocument) ? e : document,
       r = () => {
-        v()
+        A()
       };
     return n.addEventListener("click", r), () => {
       n.removeEventListener("click", r)
     }
-  }, [O, v, h]), {
+  }, [O, A, h]), {
     isVisible: O,
     triggerProps: N
   }

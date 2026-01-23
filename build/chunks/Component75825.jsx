@@ -19,24 +19,24 @@ function u(e) {
     shouldAnimate: u = true,
     defaultAnimationState: d,
     idleAnimationState: f
-  } = e, p = (0, a.bG)([o.A], () => o.A.useReducedMotion), [_, h] = i.useState(d), m = i.useRef((0, l.z)(t, _)), [g, E] = i.useState(null == f), [b, y] = i.useState(false), [O, A] = i.useState(false), v = () => {
-    m.current = (0, l.z)(t, _), A(e => e + 1)
-  }, S = () => {
-    E(false), y(true), A(false), h(d)
+  } = e, p = (0, a.bG)([o.A], () => o.A.useReducedMotion), [_, h] = i.useState(d), m = i.useRef((0, l.z)(t, _)), [g, E] = i.useState(null == f), [y, b] = i.useState(false), [O, v] = i.useState(false), A = () => {
+    m.current = (0, l.z)(t, _), v(e => e + 1)
+  }, I = () => {
+    E(false), b(true), v(false), h(d)
   };
   i.useEffect(() => {
     null == f && h(d)
   }, [f, d]);
-  let I = {
-      applyAnimation: v,
+  let S = {
+      applyAnimation: A,
       idleAnimationState: f,
-      isChanging: b,
-      resetAnimation: S,
+      isChanging: y,
+      resetAnimation: I,
       versionKey: O
     },
-    T = i.useRef(I);
+    T = i.useRef(S);
   i.useEffect(() => {
-    T.current = I
+    T.current = S
   }), i.useEffect(() => {
     let {
       resetAnimation: e,
@@ -56,8 +56,8 @@ function u(e) {
       applyAnimation: e,
       idleAnimationState: t
     } = T.current;
-    b && (E(null == t), y(false), e())
-  }, [b]);
+    y && (E(null == t), b(false), e())
+  }, [y]);
   let C = () => {
     null != f && (h(f), E(true))
   };

@@ -2,9 +2,9 @@
 /** chunk id: 845188, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  fT: "_3e7b5ba68aea6c89",
-  DN: "_945764e5ff8f350a",
-  ED: "_9aa7dff73212848d",
-  rb: "c984fa0140e28c84",
-  w9: "_7a5e02519ad05693"
+  fT: "defaultColor__4bd52",
+  DN: "lineClamp1__4bd52",
+  ED: "lineClamp2Plus__4bd52",
+  rb: "selectable__4bd52",
+  w9: "tabularNumbers__4bd52"
 }

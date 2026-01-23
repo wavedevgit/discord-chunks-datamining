@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  i = require.n(Chunk503698),
+  r = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk206845 = require("./206845.jsx"),
   Chunk957565 = require("./957565.js"),
@@ -35,7 +35,7 @@ function p(e) {
     }),
     children: e => {
       var t, l;
-      return (0, a.jsx)(r.DUT, (t = function(e) {
+      return (0, a.jsx)(i.DUT, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             a = Object.keys(n);
@@ -53,11 +53,11 @@ function p(e) {
         }
         return e
       }({}, e), l = l = {
-        className: i()(m.c, {
+        className: r()(m.c, {
           [m.R]: n
         }),
         "aria-label": u.intl.string(u.t.y5MwJy),
-        children: (0, a.jsx)(r.TdU, {
+        children: (0, a.jsx)(i.TdU, {
           size: "xs",
           color: "currentColor"
         })

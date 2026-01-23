@@ -83,14 +83,14 @@ function E(e) {
   }), true
 }
 
-function b(e) {
+function y(e) {
   if (!_.autoToggle) returnfalse;
   {
     let t = e.count > 0;
     return _.enabled = t, d(t, true), true
   }
 }
-class y extends(r = Chunk311907.Ay.PersistedStore) {
+class b extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     Object.assign(p, e), this.syncWith([o.default], () => {
       let e = o.default.getId();
@@ -125,15 +125,15 @@ class y extends(r = Chunk311907.Ay.PersistedStore) {
     return this.enabled && _.enableContentProtection
   }
 }
-c(y, "displayName", "StreamerModeStore"), c(y, "persistKey", "StreamerModeStore"), c(y, "migrations", [e => {
+c(b, "displayName", "StreamerModeStore"), c(b, "persistKey", "StreamerModeStore"), c(b, "migrations", [e => {
   let t = o.default.getId();
   return null == e || null == t ? {} : {
     [t]: u({}, e)
   }
 }]);
-let O = new y(Chunk73153.h, {
+let O = new b(Chunk73153.h, {
   LOGOUT: m,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: g,
   STREAMER_MODE_UPDATE: E,
-  RUNNING_STREAMER_TOOLS_CHANGE: b
+  RUNNING_STREAMER_TOOLS_CHANGE: y
 })

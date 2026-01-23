@@ -1,7 +1,7 @@
 /** Chunk was on 80360 **/
-/** chunk id: 318085, original params: t,n,e (module,exports,require) **/
+/** chunk id: 318085, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  g: () => b
+  g: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,30 +12,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk547166 = require("./547166.js");
 
-function b(t) {
+function _(t) {
   let {
-    platformType: n,
-    onContinue: e,
-    onClose: b
+    platformType: e,
+    onContinue: n,
+    onClose: _
   } = t, p = i.useMemo(() => [{
-    label: c.intl.string(c.t["+eJP7o"]),
-    subLabel: c.intl.string(c.t["+0VIUh"]),
-    icon: a.HKD
+    label: l.intl.string(l.t["+eJP7o"]),
+    subLabel: l.intl.string(l.t["+0VIUh"]),
+    icon: r.HKD
   }, {
-    label: c.intl.string(c.t.ZH4QFa),
-    icon: a._xR
-  }], []), f = s.A.getArticleURL(r.MVz.PS_CONNECTION), A = c.intl.format(c.t.kqZQNe, {
-    helpdeskArticleUrl: f
+    label: l.intl.string(l.t.ZH4QFa),
+    icon: r._xR
+  }], []), b = s.A.getArticleURL(c.MVz.PS_CONNECTION), C = l.intl.format(l.t.kqZQNe, {
+    helpdeskArticleUrl: b
   });
-  return (0, o.jsx)(d.B, {
-    platformType: n,
-    headerConnect: c.intl.string(c.t.xAWHOy),
-    headerReconnect: c.intl.string(c.t["ZJ/vBh"]),
-    body: A,
-    onClose: b,
-    onContinue: e,
+  return (0, o.jsx)(a.B, {
+    platformType: e,
+    headerConnect: l.intl.string(l.t.xAWHOy),
+    headerReconnect: l.intl.string(l.t["ZJ/vBh"]),
+    body: C,
+    onClose: _,
+    onContinue: n,
     img: (0, o.jsx)("img", {
-      src: l.A,
+      src: d.A,
       width: 230,
       height: 160,
       alt: ""

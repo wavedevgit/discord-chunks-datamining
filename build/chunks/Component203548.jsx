@@ -14,13 +14,13 @@ let c = Math.ceil(Math.sqrt(115200)),
   d = Chunk64700.forwardRef(function(e, t) {
     let {
       children: n
-    } = e, [d, f] = l.useState(false), p = l.useCallback(e => {
-      f(e.contentRect.width)
-    }, []), h = (0, s.w)(p, [], {
+    } = e, [d, p] = l.useState(false), h = l.useCallback(e => {
+      p(e.contentRect.width)
+    }, []), f = (0, a.w)(h, [], {
       fireOnMount: true
     }), [{
-      shineSpring: b
-    }, g] = (0, a.zhh)(() => ({
+      shineSpring: g
+    }, m] = (0, s.zhh)(() => ({
       from: {
         shineSpring: 0
       },
@@ -30,35 +30,35 @@ let c = Math.ceil(Math.sqrt(115200)),
         tension: 170,
         friction: 38
       }
-    })), m = l.useCallback((e, t) => {
-      g({
+    })), b = l.useCallback((e, t) => {
+      m({
         shineSpring: 1,
         delay: t
       })
-    }, [g]), A = l.useCallback(() => {
-      g({
+    }, [m]), A = l.useCallback(() => {
+      m({
         shineSpring: 0,
         immediate: true
       })
-    }, [g]), y = l.useMemo(() => {
+    }, [m]), y = l.useMemo(() => {
       let e = (0, r.jsx)(i.animated.div, {
         className: o.q2,
         style: {
-          transform: b.to(e => "translateX(calc(".concat(e * d, "px + ").concat(e * c, "px)) translateY(-50%) rotate(45deg)"))
+          transform: g.to(e => "translateX(calc(".concat(e * d, "px + ").concat(e * c, "px)) translateY(-50%) rotate(45deg)"))
         }
       });
       return n(o.VU, o.Qq, o.Kk, e)
-    }, [n, d, b]);
+    }, [n, d, g]);
     return l.useImperativeHandle(t, () => ({
-      onMouseEnter: m,
+      onMouseEnter: b,
       onMouseLeave: A
-    }), [m, A]), (0, r.jsx)("div", {
+    }), [b, A]), (0, r.jsx)("div", {
       className: o.iE,
-      onMouseEnter: m,
+      onMouseEnter: b,
       onMouseLeave: A,
-      onFocus: m,
+      onFocus: b,
       onBlur: A,
-      ref: h,
+      ref: f,
       style: {
         "--custom-shine-dimensions": "".concat(240, "px"),
         "--custom-shine-rotated-dimensions-delta": "".concat(u, "px")

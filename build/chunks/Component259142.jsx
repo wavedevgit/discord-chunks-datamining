@@ -1,7 +1,7 @@
 /** Chunk was on 2347 **/
-/** chunk id: 259142, original params: e,t,r (module,exports,require) **/
+/** chunk id: 259142, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,53 +16,53 @@ var Chunk284009 = require("./284009.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk14036 = require("./14036.js");
 
-function f(e) {
+function b(t) {
   let {
-    attachment: t,
+    attachment: e,
     guildId: r,
     productId: o
-  } = e;
+  } = t;
   return (0, n.jsxs)("li", {
-    className: b.k,
-    children: [(0, n.jsx)(d.A, {
-      attachment: t
-    }), (0, n.jsx)(u.A, {
-      className: b.i,
+    className: p.k,
+    children: [(0, n.jsx)(u.A, {
+      attachment: e
+    }), (0, n.jsx)(d.A, {
+      className: p.i,
       icon: i.s3U,
       text: true,
       guildId: r,
       productId: o,
-      attachmentId: t.id
+      attachmentId: e.id
     })]
   })
 }
 
-function O(e) {
-  var t;
+function m(t) {
+  var e;
   let {
     guildId: r,
     productId: o,
     onClose: i,
-    transitionState: d
-  } = e, u = (0, l.bG)([s.A], () => s.A.getGuildProduct(o));
-  a()(null != u, "guildProductListing cannot be null");
-  let b = null != (t = u.attachments) ? t : [];
-  return (0, n.jsx)(c.Modal, {
+    transitionState: u
+  } = t, d = (0, c.bG)([s.A], () => s.A.getGuildProduct(o));
+  a()(null != d, "guildProductListing cannot be null");
+  let p = null != (e = d.attachments) ? e : [];
+  return (0, n.jsx)(l.Modal, {
     size: "md",
-    transitionState: d,
-    "aria-label": p.intl.string(p.t["3jaCac"]),
-    title: u.name,
-    subtitle: p.intl.format(p.t["6dOuaP"], {
-      count: u.attachments_count
+    transitionState: u,
+    "aria-label": f.intl.string(f.t["3jaCac"]),
+    title: d.name,
+    subtitle: f.intl.format(f.t["6dOuaP"], {
+      count: d.attachments_count
     }),
     actions: [],
     onClose: i,
     children: (0, n.jsx)("ul", {
-      children: b.map(e => (0, n.jsx)(f, {
+      children: p.map(t => (0, n.jsx)(b, {
         guildId: r,
-        productId: u.id,
-        attachment: e
-      }, e.id))
+        productId: d.id,
+        attachment: t
+      }, t.id))
     })
   })
 }

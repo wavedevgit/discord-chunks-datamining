@@ -23,7 +23,7 @@ let j = function(e) {
     showRequirements: b = true
   } = e;
   return null == (0, r.bG)([s.default], () => null != j ? j : s.default.getCurrentUser()) ? null : (0, n.jsxs)(n.Fragment, {
-    children: [b && (0, n.jsx)(c.fu, {
+    children: [b && (0, n.jsx)(o.fu, {
       icon: i.lmn,
       text: m.intl.string(m.t.v2z4c1),
       meetsRequirement: true
@@ -38,11 +38,11 @@ let j = function(e) {
             formField: e
           }, t);
         case a.rX.PARAGRAPH:
-          return (0, n.jsx)(o.P1, {
+          return (0, n.jsx)(d.P1, {
             formField: e
           }, t);
         case a.rX.MULTIPLE_CHOICE:
-          return (0, n.jsx)(d.CI, {
+          return (0, n.jsx)(c.CI, {
             formField: e
           }, t)
       }

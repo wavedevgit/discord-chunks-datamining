@@ -146,17 +146,17 @@ let ee = Chunk64700.memo(function(e) {
     onContextMenu: _,
     displayCompactAvatars: m = false,
     onPopoutRequestClose: E,
-    preview: b,
-    subscribeToGroupId: y,
-    hideGuildTag: A
-  } = e, v = (0, M.Ay)(t, n), S = i.useMemo(() => (0, F.y)({
+    preview: y,
+    subscribeToGroupId: b,
+    hideGuildTag: v
+  } = e, A = (0, M.Ay)(t, n), I = i.useMemo(() => (0, F.y)({
     message: t,
     channel: a,
     user: null == t ? true : t.author,
     compact: o,
     isRepliedMessage: false
-  }), [t, a, o]), I = i.useRef(null), T = (0, c.bG)([R.A], () => R.A.getGuild(s)), C = i.useMemo(() => ea(o, m, l, T), [o, m, l, T]), N = i.useMemo(() => null == l ? null : 1 === C && null != T ? (0, r.jsx)(d.YNO, {
-    targetElementRef: I,
+  }), [t, a, o]), S = i.useRef(null), T = (0, c.bG)([R.A], () => R.A.getGuild(s)), C = i.useMemo(() => ea(o, m, l, T), [o, m, l, T]), N = i.useMemo(() => null == l ? null : 1 === C && null != T ? (0, r.jsx)(d.YNO, {
+    targetElementRef: S,
     animation: d.YNO.Animation.TRANSLATE,
     align: "center",
     autoInvert: true,
@@ -172,7 +172,7 @@ let ee = Chunk64700.memo(function(e) {
         onClick: t
       } = e;
       return (0, r.jsx)(O.A, Z(q({
-        ref: I
+        ref: S
       }, l), {
         className: W.UT,
         onClick: t
@@ -198,11 +198,11 @@ let ee = Chunk64700.memo(function(e) {
       messageId: t.id
     }, "connections")), e
   }, [t, a, l, o, N, T, w]);
-  return null == v ? null : (0, r.jsxs)(r.Fragment, {
+  return null == A ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(k.A, {
       message: t,
       channel: a,
-      author: v,
+      author: A,
       compact: o,
       roleIcon: l,
       showPopout: u,
@@ -211,13 +211,13 @@ let ee = Chunk64700.memo(function(e) {
       onContextMenu: _,
       onPopoutRequestClose: E,
       decorations: {
-        [k.w.SYSTEM_TAG]: S,
+        [k.w.SYSTEM_TAG]: I,
         [k.w.BADGES]: D
       },
       previewGuildId: s,
-      preview: b,
-      subscribeToGroupId: y,
-      hideGuildTag: A
+      preview: y,
+      subscribeToGroupId: b,
+      hideGuildTag: v
     }), o && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("i", {
         className: W.me,
@@ -275,10 +275,10 @@ function en(e) {
     author: m,
     compact: g = false,
     subscribeToGroupId: E,
-    animate: y = true,
+    animate: b = true,
     onContextMenu: O,
-    onClickAvatar: A,
-    onPopoutRequestClose: v,
+    onClickAvatar: v,
+    onPopoutRequestClose: A,
     showAvatarPopout: T
   } = s, R = i.useRef(null), [w, L] = i.useState(false), {
     analyticsLocations: j
@@ -287,9 +287,9 @@ function en(e) {
     return null != (e = s.displayCompactAvatars) ? e : N.Ay.displayCompactAvatars
   }), U = (0, B.A)(h), G = g ? Q : $, {
     pendingAvatarDecoration: V
-  } = (0, S.A)({
+  } = (0, I.A)({
     guildId: l
-  }), F = (0, b.lw)({
+  }), F = (0, y.lw)({
     pendingValue: h.author.id === (null == M ? true : M.id) ? V : true,
     userValue: null == (t = h.author) ? true : t.avatarDecoration,
     guildValue: null == m ? true : m.guildMemberAvatarDecoration,
@@ -298,11 +298,11 @@ function en(e) {
     avatarSrc: Y,
     avatarDecorationSrc: W,
     eventHandlers: K
-  } = (0, I.A)({
+  } = (0, S.A)({
     userId: h.author.id,
     guildId: l,
     size: G,
-    animateOnHover: null != E ? !w : !y,
+    animateOnHover: null != E ? !w : !b,
     avatarDecorationOverride: F,
     showPending: true
   }), z = h.isInteractionPlaceholder(), X = i.useMemo(() => {
@@ -334,13 +334,13 @@ function en(e) {
       renderPopout: u,
       position: o.Fr ? "window_center" : "right",
       avatarUrl: X,
-      onRequestClose: v,
+      onRequestClose: A,
       clickTrap: T,
       children: e => J(Z(q({}, K), {
         avatarSrc: X,
         avatarDecorationSrc: W,
         compact: g,
-        onClick: A,
+        onClick: v,
         onContextMenu: O,
         onMouseDown: e.onMouseDown,
         onKeyDown: e.onKeyDown,
@@ -355,7 +355,7 @@ function en(e) {
       avatarSrc: X,
       avatarDecorationSrc: W,
       compact: g,
-      onClick: A,
+      onClick: v,
       onContextMenu: O,
       onMouseDown: true,
       onKeyDown: true,
@@ -380,7 +380,7 @@ function er(e) {
     className: m,
     messageClassname: g,
     badges: E
-  } = e, b = (0, l.Lt)(t.flags, H.pr7.SENT_BY_SOCIAL_LAYER_INTEGRATION) ? t.applicationId : null, y = (0, _.h)(b);
+  } = e, y = (0, l.Lt)(t.flags, H.pr7.SENT_BY_SOCIAL_LAYER_INTEGRATION) ? t.applicationId : null, b = (0, _.h)(y);
   return (0, r.jsxs)(r.Fragment, {
     children: [!c && n, (0, r.jsxs)(d.H, {
       className: s()(W.wx, m),
@@ -393,7 +393,7 @@ function er(e) {
         isVisibleOnlyOnHover: f,
         className: g,
         isInline: false,
-        application: y
+        application: b
       }), c && n, (0, r.jsx)("span", {
         id: a,
         className: o,
@@ -402,7 +402,7 @@ function er(e) {
         id: (0, U.xl)(t),
         timestamp: t.timestamp,
         className: g,
-        application: y
+        application: b
       }), null != E && E.length > 0 ? (0, r.jsx)("div", {
         className: W.cV,
         children: E
@@ -421,9 +421,9 @@ let es = Chunk64700.memo(function(e) {
     let {
       currentUserIsPremium: t,
       author: n
-    } = e, i = (0, c.bG)([v.A], () => {
+    } = e, i = (0, c.bG)([A.A], () => {
       var e;
-      return null == (e = v.A.getUserProfile(n.id)) ? true : e.premiumSince
+      return null == (e = A.A.getUserProfile(n.id)) ? true : e.premiumSince
     });
     return (0, r.jsx)(u.m, {
       asContainer: true,
@@ -458,29 +458,29 @@ let es = Chunk64700.memo(function(e) {
       hideTimestamp: h,
       hideGuildTag: g,
       className: E,
-      channel: b,
+      channel: y,
       preview: O
-    } = e, v = i.useMemo(() => null != o ? e => o(e, t) : true, [o, t]), [, S] = (0, m.Ay)(t.author.id, e.guildId), I = (0, c.bG)([w.A, R.A], () => {
+    } = e, A = i.useMemo(() => null != o ? e => o(e, t) : true, [o, t]), [, I] = (0, m.Ay)(t.author.id, e.guildId), S = (0, c.bG)([w.A, R.A], () => {
       let n = R.A.getGuild(e.guildId);
       return null != t.author && null != n && w.A.canManageUser(H.xBc.MODERATE_MEMBERS, t.author, n)
-    }, [t.author, e.guildId]), T = S && I, C = en({
+    }, [t.author, e.guildId]), T = I && S, C = en({
       props: e,
       guildId: e.guildId,
-      handleRenderPopout: v,
+      handleRenderPopout: A,
       showCommunicationDisabledStyles: T
     }), P = (0, c.bG)([N.Ay], () => {
       var t;
       return null != (t = e.displayCompactAvatars) ? t : N.Ay.displayCompactAvatars
     }), D = i.useMemo(() => (0, F.k)({
       message: t,
-      channel: b,
+      channel: y,
       user: null == t ? true : t.author,
       compact: a,
       isRepliedMessage: false
-    }), [t, b, a]), x = (0, c.bG)([R.A], () => ea(a, P, p, R.A.getGuild(e.guildId)), [a, P, p, e.guildId]), L = i.useMemo(() => {
+    }), [t, y, a]), x = (0, c.bG)([R.A], () => ea(a, P, p, R.A.getGuild(e.guildId)), [a, P, p, e.guildId]), L = i.useMemo(() => {
       let e = [];
-      return (0, l.Lt)(t.flags, H.pr7.SUPPRESS_NOTIFICATIONS) && e.push((0, r.jsx)(A.A, {}, "suppress-notifications")), e
-    }, [t]), j = (0, U.d$)(t, _), M = (0, U.xl)(t), k = h ? "".concat(j) : "".concat(j, " ").concat(M), G = (null == n ? true : n.state) === y.a.LOADED ? (0, U.nS)(t) : true, V = true !== h;
+      return (0, l.Lt)(t.flags, H.pr7.SUPPRESS_NOTIFICATIONS) && e.push((0, r.jsx)(v.A, {}, "suppress-notifications")), e
+    }, [t]), j = (0, U.d$)(t, _), M = (0, U.xl)(t), k = h ? "".concat(j) : "".concat(j, " ").concat(M), G = (null == n ? true : n.state) === b.a.LOADED ? (0, U.nS)(t) : true, V = true !== h;
     return (0, r.jsx)(er, {
       message: t,
       avatar: C,
@@ -498,10 +498,10 @@ let es = Chunk64700.memo(function(e) {
           })
         }), (0, r.jsx)(ee, Z(q({}, e), {
           message: t,
-          channel: b,
+          channel: y,
           compact: a,
           roleIconProps: p,
-          renderPopout: v,
+          renderPopout: A,
           preview: O,
           subscribeToGroupId: _,
           hideGuildTag: g

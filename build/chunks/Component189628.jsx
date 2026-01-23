@@ -26,7 +26,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk351341 = require("./351341.js");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -95,29 +95,29 @@ let w = (e, t) => "".concat(e, ":").concat(t),
       isDisabled: _,
       showPulse: m,
       columnIndex: g,
-      rowIndex: y,
-      size: S,
+      rowIndex: b,
+      size: I,
       surrogateCodePoint: T,
       allowAnimatedEmoji: R,
       selectedItemClassName: w,
       inNitroLockedSection: P
     } = n, D = N(n, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]), [x] = i, L = (0, o.bG)([E.A], () => a.type === p.i.GUILD ? E.A.getGuild(a.guildId) : true, [a]), j = () => {
-      let e = (0, b.N)(a);
-      return ((null == L ? true : L.name) != null && (e = A.intl.formatToPlainString(A.t["nXv4/B"], {
+      let e = (0, y.N)(a);
+      return ((null == L ? true : L.name) != null && (e = v.intl.formatToPlainString(v.t["nXv4/B"], {
         names: e,
         guildName: L.name
-      })), l) ? A.intl.formatToPlainString(A.t["9FI9Z0"], {
+      })), l) ? v.intl.formatToPlainString(v.t["9FI9Z0"], {
         names: e
       }) : e
     }, M = _ && !P;
     return (0, r.jsx)(c.vN3, {
-      children: (0, r.jsx)("button", C(I({}, D), {
-        className: s()(v._X, {
-          [v.lG]: u,
-          [v.Lh]: d,
-          [v.Bx]: f,
+      children: (0, r.jsx)("button", C(S({}, D), {
+        className: s()(A._X, {
+          [A.lG]: u,
+          [A.Lh]: d,
+          [A.Bx]: f,
           [null != w ? w : ""]: f,
-          [v.TV]: m
+          [A.TV]: m
         }),
         "data-type": h.g.EMOJI,
         "data-id": a.id,
@@ -128,9 +128,9 @@ let w = (e, t) => "".concat(e, ":").concat(t),
         children: (0, r.jsx)(O.A, {
           "aria-label": j(),
           columnIndex: g,
-          rowIndex: y,
+          rowIndex: b,
           emoji: a,
-          size: S,
+          size: I,
           surrogateCodePoint: T,
           allowAnimatedEmoji: R,
           isLocked: M
@@ -148,10 +148,10 @@ function D(e) {
     rowIndex: p,
     channelGuildId: h,
     onInspect: E,
-    onSelect: b,
+    onSelect: y,
     isScrolling: O,
-    isUsingKeyboardNavigation: v,
-    showEmojiFavoriteTooltip: S,
+    isUsingKeyboardNavigation: A,
+    showEmojiFavoriteTooltip: I,
     surrogateCodePoint: T,
     selectedItemClassName: R,
     getEmojiItemProps: D,
@@ -170,20 +170,20 @@ function D(e) {
     isDisabled: X,
     columnIndex: Z
   } = a, Q = e => {
-    if (e.stopPropagation(), O.current || v.current) return;
+    if (e.stopPropagation(), O.current || A.current) return;
     let t = e.altKey;
-    t && !f.Ay.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(z) && k(s), (0, m.sF)(m._2.FAVORITE_EMOJI_TOOLTIP), b(a, {
+    t && !f.Ay.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(z) && k(s), (0, m.sF)(m._2.FAVORITE_EMOJI_TOOLTIP), y(a, {
       isFinalSelection: !e.shiftKey,
       toggleFavorite: t
     })
   }, $ = () => {
-    O.current || v.current || E(a)
+    O.current || A.current || E(a)
   }, J = e => {
     (0, u.L3)(e, async () => {
       let {
         default: e
       } = await n.e("46132").then(n.bind(n, 233503));
-      return t => (0, r.jsx)(e, I({}, t))
+      return t => (0, r.jsx)(e, S({}, t))
     })
   }, ee = null != (t = D(Z, p)) ? t : {}, {
     ref: et,
@@ -218,12 +218,12 @@ function D(e) {
     selectedItemClassName: R,
     inNitroLockedSection: F
   }) : null;
-  return (0, i.createElement)("li", C(I({}, ei), {
+  return (0, i.createElement)("li", C(S({}, ei), {
     key: s,
     ref: K
-  }), S ? (0, r.jsx)(l.m_, {
-    text: A.intl.formatToPlainString(A.t.glqNsf, {
-      key: (0, y.isMac)() ? "Opt" : "Alt"
+  }), I ? (0, r.jsx)(l.m_, {
+    text: v.intl.formatToPlainString(v.t.glqNsf, {
+      key: (0, b.isMac)() ? "Opt" : "Alt"
     }),
     position: "top",
     delay: 200,

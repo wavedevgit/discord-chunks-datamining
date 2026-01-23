@@ -24,7 +24,7 @@ var r, Chunk812729 = require("./812729.js"),
   Chunk528767 = require("./528767.js"),
   Chunk652215 = require("./652215.js");
 
-function v(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,8 +32,8 @@ function v(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let S = false,
-  I = Chunk652215.clD.ONLINE,
+let I = false,
+  S = Chunk652215.clD.ONLINE,
   T = Chunk652215.clD.UNKNOWN,
   C = 0,
   N = [],
@@ -49,8 +49,8 @@ function M(e) {
   if (0 === e.length) return e;
   let t = [],
     n = [];
-  for (let r of e) r.type === A.$pd.PLAYING ? n.push(r) : t.push(r);
-  return 0 === n.length || 1 === n.length ? e : [...t, [...n].sort(y.m)[0]].sort(y.m)
+  for (let r of e) r.type === v.$pd.PLAYING ? n.push(r) : t.push(r);
+  return 0 === n.length || 1 === n.length ? e : [...t, [...n].sort(b.m)[0]].sort(b.m)
 }
 
 function k(e) {
@@ -64,53 +64,53 @@ function U(e) {
 
 function G(e) {
   var t;
-  if ((0, l.Lt)(null != (t = e.flags) ? t : 0, A.jUm.CONTEXTLESS)) returntrue;
+  if ((0, l.Lt)(null != (t = e.flags) ? t : 0, v.jUm.CONTEXTLESS)) returntrue;
   switch (e.type) {
-    case A.$pd.LISTENING:
+    case v.$pd.LISTENING:
       if ((0, d.A)(e)) return f.A.shouldShowActivity();
       if (null != e.application_id) return k(e.application_id);
       returnfalse;
-    case A.$pd.PLAYING:
+    case v.$pd.PLAYING:
       return null != e.application_id ? k(e.application_id) : U(e.name);
-    case A.$pd.STREAMING:
-    case A.$pd.WATCHING:
+    case v.$pd.STREAMING:
+    case v.$pd.WATCHING:
     default:
       return null == e.application_id || k(e.application_id)
   }
 }
 
 function V() {
-  P = true, T = I, F()
+  P = true, T = S, F()
 }
 
 function F() {
   var e;
-  if (C = null != (e = g.A.getIdleSince()) ? e : 0, w = g.A.isAFK(), P) I = T;
-  else if (S) I = A.clD.INVISIBLE;
+  if (C = null != (e = g.A.getIdleSince()) ? e : 0, w = g.A.isAFK(), P) S = T;
+  else if (I) S = v.clD.INVISIBLE;
   else {
     let e = p.jP.getSetting();
-    I = e !== A.clD.UNKNOWN ? e : A.clD.ONLINE
+    S = e !== v.clD.UNKNOWN ? e : v.clD.ONLINE
   }
-  I === A.clD.ONLINE && C > 0 && (I = A.clD.IDLE);
+  S === v.clD.ONLINE && C > 0 && (S = v.clD.IDLE);
   let t = false,
-    n = P || I === A.clD.INVISIBLE ? [] : b.A.getActivities().filter(G);
+    n = P || S === v.clD.INVISIBLE ? [] : y.A.getActivities().filter(G);
   a()(N, n) || (N = n, R = M(n), t = true);
   let r = O.A.getRemoteActivities();
   D !== r && (D = r, t = true);
   let i = O.A.getHiddenActivities();
-  x !== i && (x = i), t && (j = M(L = o()([...N, ...D.filter(e => e.type !== A.$pd.CUSTOM_STATUS)].sort(y.m)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
+  x !== i && (x = i), t && (j = M(L = o()([...N, ...D.filter(e => e.type !== v.$pd.CUSTOM_STATUS)].sort(b.m)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
 }
 
 function B(e) {
-  return S = e.invisible, F()
+  return I = e.invisible, F()
 }
 
 function H() {
-  return S = false, F()
+  return I = false, F()
 }
 
 function Y() {
-  P = false, T = A.clD.UNKNOWN, F(), y.A.setCurrentUserOnConnectionOpen(I, L)
+  P = false, T = v.clD.UNKNOWN, F(), b.A.setCurrentUserOnConnectionOpen(S, L)
 }
 
 function W() {
@@ -118,18 +118,18 @@ function W() {
 }
 class K extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(m.A, g.A, E.A, b.A, y.A, O.A, f.A, _.A), this.syncWith([b.A], F)
+    this.waitFor(m.A, g.A, E.A, y.A, b.A, O.A, f.A, _.A), this.syncWith([y.A], F)
   }
   getLocalPresence() {
     return {
-      status: I,
+      status: S,
       since: C,
       activities: R,
       afk: w
     }
   }
   getStatus() {
-    return I
+    return S
   }
   getActivities() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
@@ -155,7 +155,7 @@ class K extends(r = Chunk311907.Ay.Store) {
     return this.getActivities(t).find(e)
   }
 }
-v(K, "displayName", "SelfPresenceStore");
+A(K, "displayName", "SelfPresenceStore");
 let z = new K(Chunk73153.h, {
   START_SESSION: F,
   CONNECTION_OPEN: W,

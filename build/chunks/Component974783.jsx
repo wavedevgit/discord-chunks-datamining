@@ -2,7 +2,7 @@
 /** chunk id: 974783, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  c: () => p
+  c: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,7 +18,7 @@ let h = {
     [Chunk17372.tY.USER]: Chunk985018.t.F4jrRW,
     [Chunk17372.tY.GUILD]: Chunk985018.t.gH3aMs
   },
-  f = e => {
+  p = e => {
     let {
       title: t,
       menuType: n,
@@ -40,15 +40,15 @@ let h = {
       })]
     })
   },
-  p = e => {
+  g = e => {
     let {
       showBackButton: t,
       onBack: n,
       dsaCapabilities: i,
       renderFooter: o,
-      onClose: p,
-      onReopen: g
-    } = e, m = t && null != n ? (0, r.jsx)("div", {
+      onClose: g,
+      onReopen: m
+    } = e, f = t && null != n ? (0, r.jsx)("div", {
       className: d.Hq,
       children: (0, r.jsx)(s.Button, {
         variant: "secondary",
@@ -68,12 +68,12 @@ let h = {
         })
       }), (0, r.jsx)("div", {
         className: d.kL,
-        children: i.map(e => e === l.tY.MEDIA_TAKEDOWN || null == h[e] ? null : (0, r.jsx)(f, {
+        children: i.map(e => e === l.tY.MEDIA_TAKEDOWN || null == h[e] ? null : (0, r.jsx)(p, {
           title: u.intl.string(h[e]),
           menuType: e,
-          onClose: p,
-          onReopen: g
+          onClose: g,
+          onReopen: m
         }, e))
-      }), null == o ? true : o(m)]
+      }), null == o ? true : o(f)]
     })
   }

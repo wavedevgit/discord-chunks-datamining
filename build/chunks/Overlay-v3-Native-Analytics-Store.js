@@ -50,31 +50,31 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = {};
+let b = {};
 
 function O(e) {
   var t, n;
   return null != (t = null == (n = d.default.getTrackedGameByPid(e)) ? true : n.overlayMethod) ? t : null
 }
 
-function A(e) {
+function v(e) {
   let t = O(e);
-  y[e] = b(g({}, y[e]), {
+  b[e] = y(g({}, b[e]), {
     overlay_method: null != t ? u.Ue[t] : u.Ue[u.Ue.OutOfProcess]
   })
 }
 
-function v(e) {
+function A(e) {
   var t, n;
-  if (null != y[e]) return;
+  if (null != b[e]) return;
   let r = s.Ay.getGameOrTransformedSubgameForPID(e),
     i = O(e);
-  y[e] = {
+  b[e] = {
     overlay_method: null != i ? u.Ue[i] : u.Ue[u.Ue.OutOfProcess],
     success: false,
     game_name: null != (t = null == r ? true : r.name) ? t : null,
@@ -92,24 +92,24 @@ function v(e) {
   }
 }
 
-function S(e) {
+function I(e) {
   var t;
-  return null != (t = y[e]) ? t : {}
+  return null != (t = b[e]) ? t : {}
 }
 
-function I(e, t) {
+function S(e, t) {
   var n, r;
-  let i = null == (n = y[e]) ? true : n.error,
-    a = null == (r = y[e]) ? true : r.error_description;
-  y[e] = g({}, y[e], t), null != i && (y[e].error = i), null != a && (y[e].error_description = a)
+  let i = null == (n = b[e]) ? true : n.error,
+    a = null == (r = b[e]) ? true : r.error_description;
+  b[e] = g({}, b[e], t), null != i && (b[e].error = i), null != a && (b[e].error_description = a)
 }
 
 function T(e) {
-  o.default.track(h.HAw.OVERLAY_HOOK_RESULT, S(e))
+  o.default.track(h.HAw.OVERLAY_HOOK_RESULT, I(e))
 }
 
 function C(e, t) {
-  e !== l.UNSET_PID && I(e, {
+  e !== l.UNSET_PID && S(e, {
     host_crash_count: 1,
     error: t.message,
     error_description: t.stack
@@ -117,7 +117,7 @@ function C(e, t) {
 }
 
 function N(e, t) {
-  e !== l.UNSET_PID && I(e, {
+  e !== l.UNSET_PID && S(e, {
     renderer_crash_count: 1,
     error: t.message,
     error_description: t.stack
@@ -125,7 +125,7 @@ function N(e, t) {
 }
 
 function R() {
-  y = {}
+  b = {}
 }
 
 function w(e, t) {
@@ -153,7 +153,7 @@ function D(e) {
   let {
     createWindowTriggeringPID: t
   } = e;
-  return I(t, {
+  return S(t, {
     mounting_started_at: new Date().getTime()
   }), true
 }
@@ -162,20 +162,20 @@ function x(e) {
   var t, n;
   let {
     createWindowTriggeringPID: r
-  } = e, i = null != (t = null == (n = S(r)) ? true : n.mounting_started_at) ? t : new Date().getTime(), a = {
+  } = e, i = null != (t = null == (n = I(r)) ? true : n.mounting_started_at) ? t : new Date().getTime(), a = {
     renderer_started: true,
     fullscreen_type: (0, f.ph)(r),
     graphics_info_after: new Date().getTime() - i
   };
-  return I(r, a), true
+  return S(r, a), true
 }
 
 function L(e) {
   var t, n;
   let {
     createWindowTriggeringPID: r
-  } = e, i = null != (t = null == (n = S(r)) ? true : n.mounting_started_at) ? t : new Date().getTime();
-  return I(r, {
+  } = e, i = null != (t = null == (n = I(r)) ? true : n.mounting_started_at) ? t : new Date().getTime();
+  return S(r, {
     renderer_started_after: new Date().getTime() - i
   }), true
 }
@@ -184,7 +184,7 @@ function j(e) {
   let {
     pid: t
   } = e;
-  return v(t), true
+  return A(t), true
 }
 
 function M(e) {
@@ -198,18 +198,18 @@ function k(e) {
   var t, n;
   let {
     pid: r
-  } = e, i = null != (t = null == (n = S(r)) ? true : n.mounting_started_at) ? t : new Date().getTime();
-  return I(r, {
+  } = e, i = null != (t = null == (n = I(r)) ? true : n.mounting_started_at) ? t : new Date().getTime();
+  return S(r, {
     total_mount_time_ms: null != i ? new Date().getTime() - i : true,
     success: true
-  }), A(r), true
+  }), v(r), true
 }
 class U extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(d.default, p.A, s.Ay)
   }
   getData(e) {
-    return S(e)
+    return I(e)
   }
   getCrashExtra(e, t) {
     return w(e, t)

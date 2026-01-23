@@ -50,12 +50,12 @@ module.exports = function(e) {
       relevance: 0,
       begin: /#[a-zA-Z$][a-zA-Z0-9$]*|#+[0-9]?/
     },
-    b = {
+    y = {
       className: "brace",
       relevance: 0,
       begin: /[[\](){}]/
     },
-    y = {
+    b = {
       className: "message-name",
       relevance: 0,
       begin: n.concat("::", f)
@@ -74,6 +74,6 @@ module.exports = function(e) {
     },
     contains: [e.COMMENT(/\(\*/, /\*\)/, {
       contains: ["self"]
-    }), g, E, y, _, h, e.QUOTE_STRING_MODE, d, m, b]
+    }), g, E, b, _, h, e.QUOTE_STRING_MODE, d, m, y]
   }
 }

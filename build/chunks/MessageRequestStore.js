@@ -2,7 +2,7 @@
 /** chunk id: 380335, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./896048.js");
 var Chunk518977 = require("./518977.js"),
   Chunk734057 = require("./734057.js"),
@@ -69,14 +69,14 @@ function E(e) {
   return !!o.has(t.id) && (o.delete(t.id), true)
 }
 
-function b(e) {
+function y(e) {
   let {
     messageRequestChannelIds: t
   } = e;
   t.forEach(e => o.add(e))
 }
 
-function y(e) {
+function b(e) {
   let {
     countryCode: t
   } = e;
@@ -119,14 +119,14 @@ class O extends Chunk536802.A {
       CONNECTION_OPEN: _,
       CONNECTION_OPEN_SUPPLEMENTAL: _,
       CACHE_LOADED_LAZY: () => this.loadCache(),
-      OVERLAY_INITIALIZE: b,
+      OVERLAY_INITIALIZE: y,
       CHANNEL_CREATE: m,
       CHANNEL_UPDATES: g,
       CHANNEL_DELETE: E,
-      SET_LOCATION_METADATA: y,
+      SET_LOCATION_METADATA: b,
       MESSAGE_REQUEST_ACCEPT_OPTIMISTIC: h
     })
   }
 }
 s(O, "displayName", "MessageRequestStore"), s(O, "LATEST_SNAPSHOT_VERSION", 1);
-let A = new O
+let v = new O

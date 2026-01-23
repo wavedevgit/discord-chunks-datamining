@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 389405, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 }), require("./747238.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,17 +17,17 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk742249 = require("./742249.js");
 
-function g(e) {
+function m(e) {
   let {
     applicationId: t
-  } = e.match.params, [g, m] = i.useState(false), b = i.useRef(false), [_, E] = i.useState(null), O = !u.isPlatformEmbedded && !a.Fr && !g, y = i.useMemo(() => (0, l.A)(), []);
+  } = e.match.params, [m, A] = i.useState(false), _ = i.useRef(false), [b, E] = i.useState(null), O = !u.isPlatformEmbedded && !a.Fr && !m, y = i.useMemo(() => (0, l.A)(), []);
   return (i.useEffect(() => {
-    O && true !== b.current && (Promise.resolve().then(n.bind(n, 129014)).then(e => {
+    O && true !== _.current && (Promise.resolve().then(n.bind(n, 129014)).then(e => {
       let {
         default: n
       } = e;
       n.request(p.e$_.DEEP_LINK, {
-        type: f.XK.ACTIVITIES,
+        type: h.XK.ACTIVITIES,
         params: {
           applicationId: t,
           url: location.href,
@@ -49,25 +49,25 @@ function g(e) {
           rpc_success: false
         })
       }).then(() => n.disconnect())
-    }), b.current = true)
-  }, [t, O, y]), O && false !== _) ? true === _ ? (0, r.jsxs)("div", {
-    className: A.k,
+    }), _.current = true)
+  }, [t, O, y]), O && false !== b) ? true === b ? (0, r.jsxs)("div", {
+    className: f.k,
     children: [(0, r.jsx)(o.Heading, {
       variant: "heading-xxl/bold",
-      children: h.intl.string(h.t.csrAMJ)
+      children: g.intl.string(g.t.csrAMJ)
     }), (0, r.jsx)(o.Text, {
       variant: "text-xs/semibold",
-      children: h.intl.string(h.t["m1+IBn"])
+      children: g.intl.string(g.t["m1+IBn"])
     }), (0, r.jsx)(s.$nd, {
       variant: "primary",
-      text: h.intl.string(h.t.fIv16B),
-      onClick: () => m(true)
+      text: g.intl.string(g.t.fIv16B),
+      onClick: () => A(true)
     })]
   }) : (0, r.jsxs)("div", {
-    className: A.k,
+    className: f.k,
     children: [(0, r.jsx)(o.Heading, {
       variant: "heading-xxl/bold",
-      children: h.intl.string(h.t["Z+hCVU"])
+      children: g.intl.string(g.t["Z+hCVU"])
     }), (0, r.jsx)(o.y$y, {})]
   }) : (0, r.jsx)(d.A, function(e) {
     for (var t = 1; t < arguments.length; t++) {

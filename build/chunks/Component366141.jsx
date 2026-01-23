@@ -30,18 +30,18 @@ function g() {
       [u.PN.AT_RISK]: null,
       [u.PN.SUSPENDED]: null
     }),
-    b = i.useCallback(() => {
+    y = i.useCallback(() => {
       g(Math.max(Math.max(...Object.values(E.current).map(e => {
         var t;
         return null != (t = null == e ? true : e.getBoundingClientRect().height) ? t : m
       })), m))
     }, []);
   i.useEffect(() => {
-    b();
-    let e = (0, a.debounce)(b, 100);
+    y();
+    let e = (0, a.debounce)(y, 100);
     return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-  }, [b]);
-  let y = {
+  }, [y]);
+  let b = {
       [u.PN.ALL_GOOD]: {
         title: _.t.uaKrRi,
         description: _.intl.format(_.t.pEdBD4, {
@@ -83,11 +83,11 @@ function g() {
     },
     {
       title: O,
-      description: A,
-      color: v,
-      Icon: S
-    } = y[e.state],
-    I = Object.keys(y).length;
+      description: v,
+      color: A,
+      Icon: I
+    } = b[e.state],
+    S = Object.keys(b).length;
   return (0, r.jsxs)(l.ZpM, {
     className: h.kL,
     outline: false,
@@ -107,7 +107,7 @@ function g() {
           children: _.intl.format(O, {
             hook: e => (0, r.jsx)(l.Text, {
               style: {
-                color: v.css
+                color: A.css
               },
               variant: "heading-lg/bold",
               tag: "span",
@@ -117,7 +117,7 @@ function g() {
         }), (0, r.jsx)(l.Text, {
           color: "text-default",
           variant: "text-sm/normal",
-          children: A
+          children: v
         })]
       }), (0, r.jsxs)("div", {
         className: h.vK,
@@ -126,21 +126,21 @@ function g() {
         },
         children: [(0, r.jsx)("div", {
           className: h.n8
-        }), Object.entries(y).map((t, n) => {
+        }), Object.entries(b).map((t, n) => {
           let [i, a] = t, s = parseInt(i) === e.state;
           return (0, r.jsxs)("div", {
             className: h.Kx,
             ref: e => {
               E.current[parseInt(i)] = e
             },
-            children: [s ? (0, r.jsx)(S, {
+            children: [s ? (0, r.jsx)(I, {
               className: h.xL,
               color: a.color
             }) : (0, r.jsx)("div", {
               className: h.xL,
               style: {
                 marginLeft: 0 === n ? false : 0,
-                marginRight: n === I - 1 ? false : 0
+                marginRight: n === S - 1 ? false : 0
               },
               children: (0, r.jsx)("div", {
                 className: h.Ie

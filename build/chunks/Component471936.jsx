@@ -65,19 +65,19 @@ function E(e, t) {
   }), e
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = y(e, t), Object.getOwnPropertySymbols)
+  if (a = b(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -96,7 +96,7 @@ function O(e) {
   return i < e.length && n.push(e.substring(i)), n.length > 0 ? n : e
 }
 
-function A() {
+function v() {
   return (0, r.jsx)(u.Text, {
     variant: "text-sm/normal",
     color: "text-subtle",
@@ -104,7 +104,7 @@ function A() {
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     setIsSafetyAccepted: t
   } = e, [n, a] = i.useState([]), o = [{
@@ -127,7 +127,7 @@ function v(e) {
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     setIsPasscodeValid: t
   } = e, [n, a] = i.useState(""), s = e => {
@@ -140,14 +140,14 @@ function S(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {} = e, t = h({}, e), [n, a] = i.useState("intro"), [o, l] = i.useState(false), [c, u] = i.useState(false), d = [{
     stepKey: "intro",
     modalProps: {
       title: "Verify radness",
       subtitle: "To verify your radness, we need to ask you a few deep and personal questions."
     },
-    body: (0, r.jsx)(A, {}),
+    body: (0, r.jsx)(v, {}),
     nextButtonProps: {
       text: "Verify"
     }
@@ -157,7 +157,7 @@ function I(e) {
       title: "Safety first",
       subtitle: "Before we get started verifying your radness, we need to make sure you're safe and sound."
     },
-    body: (0, r.jsx)(v, {
+    body: (0, r.jsx)(A, {
       setIsSafetyAccepted: l
     }),
     nextEnabled: o
@@ -167,7 +167,7 @@ function I(e) {
       title: "Enter passcode",
       subtitle: "Enter your passcode to complete the radness verification process."
     },
-    body: (0, r.jsx)(S, {
+    body: (0, r.jsx)(I, {
       setIsPasscodeValid: u
     }),
     nextButtonProps: {
@@ -194,7 +194,7 @@ let T = {
         showPreview: n,
         showInput: i,
         subtitleIcon: a
-      } = e, o = b(e, ["showPreview", "showInput", "subtitleIcon"]), c = a ? {
+      } = e, o = y(e, ["showPreview", "showInput", "subtitleIcon"]), c = a ? {
         text: null != (t = o.subtitle) ? t : "Default subtitle",
         leadingIcon: s.N$i
       } : o.subtitle;
@@ -343,7 +343,7 @@ let T = {
         confirmError: a,
         subtitle: s,
         formatSubtitle: o
-      } = e, l = b(e, ["cancelText", "confirmDelay", "confirmError", "subtitle", "formatSubtitle"]), c = i.useMemo(() => o ? O(s) : s, [s, o]);
+      } = e, l = y(e, ["cancelText", "confirmDelay", "confirmError", "subtitle", "formatSubtitle"]), c = i.useMemo(() => o ? O(s) : s, [s, o]);
       return (0, r.jsxs)(u.BJc, {
         gap: 16,
         align: "center",
@@ -425,7 +425,7 @@ let T = {
       let {
         graphic: l,
         subtitleIcon: c
-      } = e, d = b(e, ["graphic", "subtitleIcon"]), _ = c ? {
+      } = e, d = y(e, ["graphic", "subtitleIcon"]), _ = c ? {
         text: null != (t = d.subtitle) ? t : "Default subtitle",
         leadingIcon: s.N$i
       } : d.subtitle, h = i.useMemo(() => 0 === l ? {
@@ -569,7 +569,7 @@ let T = {
     component: function(e) {
       let {
         dynamicText: t
-      } = e, i = b(e, ["dynamicText"]), a = {
+      } = e, i = y(e, ["dynamicText"]), a = {
         type: "dynamic",
         component: o.DynamicGraphicComponent.DEMO,
         aspectRatio: "6/4",
@@ -712,7 +712,7 @@ let T = {
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
           text: "Open MultiStepModal",
-          onClick: () => (0, u.qfG)(e => (0, r.jsx)(I, m({}, e)), {
+          onClick: () => (0, u.qfG)(e => (0, r.jsx)(S, m({}, e)), {
             dismissable: t.dismissable
           })
         })]

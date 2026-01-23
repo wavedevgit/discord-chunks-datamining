@@ -68,7 +68,7 @@ function m(e) {
       emoji: t,
       willClose: r
     }), r && (0, l.v8)()
-  }, [n]), b = e => {
+  }, [n]), y = e => {
     let {
       closePopout: t
     } = e;
@@ -102,7 +102,7 @@ function m(e) {
       })
     }), (0, r.jsx)(a.YNO, {
       targetElementRef: g,
-      renderPopout: b,
+      renderPopout: y,
       position: "bottom",
       animation: a.YNO.Animation.NONE,
       align: "left",

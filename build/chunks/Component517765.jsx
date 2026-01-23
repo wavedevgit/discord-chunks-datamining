@@ -28,27 +28,27 @@ function y(e) {
     name: y,
     icon: A,
     imageSrc: v,
-    iconBackgroundColor: N,
-    iconClassName: E,
-    iconWrapperClassName: T,
-    details: w,
-    integration: C,
-    buttonText: S,
-    buttonDisabled: _,
+    iconBackgroundColor: _,
+    iconClassName: N,
+    iconWrapperClassName: w,
+    details: T,
+    integration: E,
+    buttonText: C,
+    buttonDisabled: S,
     hasNextSection: I,
     onButtonClick: P,
     guildId: k,
     isScrolling: R,
     canShowMigrationTooltip: L,
-    trailing: M
-  } = e, [D, G] = r.useState(false), U = L && !R && !D && true !== k && null != C, B = r.useRef(null), W = r.useRef(null), H = null == S || null == P ? null : I ? (0, i.jsxs)(d.BJc, {
+    trailing: D
+  } = e, [M, G] = r.useState(false), U = L && !R && !M && true !== k && null != E, B = r.useRef(null), W = r.useRef(null), H = null == C || null == P ? null : I ? (0, i.jsxs)(d.BJc, {
     direction: "horizontal",
     fullWidth: false,
     align: "center",
     ref: W,
     children: [(0, i.jsx)(d.Text, {
       variant: "text-sm/normal",
-      children: S
+      children: C
     }), I ? (0, i.jsx)(d._BQ, {
       size: "custom",
       color: "currentColor",
@@ -59,13 +59,13 @@ function y(e) {
   }) : (0, i.jsx)(d.Button, {
     size: "sm",
     buttonRef: B,
-    disabled: _,
+    disabled: S,
     onClick: P,
-    text: S
+    text: C
   });
   r.useEffect(() => {
     var e, t;
-    U && m.default.track(x.HAw.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (e = function(e) {
+    U && b.default.track(x.HAw.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
@@ -83,7 +83,7 @@ function y(e) {
       }
       return e
     }({}, (0, u.H$)(k)), t = t = {
-      application_id: null == C ? true : C.application.id,
+      application_id: null == E ? true : E.application.id,
       location: "overview"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
@@ -95,13 +95,13 @@ function y(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [k, null == C ? true : C.application.id, U]);
+  }, [k, null == E ? true : E.application.id, U]);
   let V = U && (null != W.current || null != B.current) ? (0, i.jsx)(c.AM, {
       targetElementRef: I ? W : B,
       title: j.intl.string(j.t.ufFDiC),
       body: j.intl.string(j.t.TyMJwC),
       onRequestClose: () => {
-        G(true), h.A.dismissOverviewTooltip(k, C.integration)
+        G(true), h.A.dismissOverviewTooltip(k, E.integration)
       },
       position: "bottom",
       align: "center",
@@ -109,23 +109,23 @@ function y(e) {
         align: "center"
       }
     }) : null,
-    z = (0, o.yK)([f.A], () => {
+    z = (0, o.yK)([m.A], () => {
       var e;
-      return null != C && null != k && null != (e = f.A.getApplicationEntitlementsForGuild(C.application.id, k)) ? e : []
+      return null != E && null != k && null != (e = m.A.getApplicationEntitlementsForGuild(E.application.id, k)) ? e : []
     }),
-    K = (0, b.ON)(k, true),
-    F = (null == C ? true : C.application) != null && Object.keys(null != (t = null == (l = K.result) || null == (n = l.sections[C.application.id]) ? true : n.commands) ? t : {}).length > 0,
+    K = (0, p.ON)(k, true),
+    F = (null == E ? true : E.application) != null && Object.keys(null != (t = null == (l = K.result) || null == (n = l.sections[E.application.id]) ? true : n.commands) ? t : {}).length > 0,
     Y = (0, i.jsxs)(d.BJc, {
       direction: "horizontal",
       align: "center",
-      children: [(0, i.jsx)(g.A, {
+      children: [(0, i.jsx)(f.A, {
         name: y,
         icon: A,
         imageSrc: v,
-        iconBackgroundColor: N,
-        iconClassName: E,
-        iconWrapperClassName: T,
-        details: w,
+        iconBackgroundColor: _,
+        iconClassName: N,
+        iconWrapperClassName: w,
+        details: T,
         isPremium: z.length > 0,
         children: function(e, t) {
           var n, r;
@@ -138,7 +138,7 @@ function y(e) {
             } = e;
           return null != a.bot && (null == o || null == (n = o.scopes) ? true : n.includes(s.F.BOT)) && l.push({
             id: "bot",
-            label: new p.A(a.bot).isVerifiedBot() ? j.intl.string(j.t.xxcTGy) : j.intl.string(j.t.AOdOYr),
+            label: new g.A(a.bot).isVerifiedBot() ? j.intl.string(j.t.xxcTGy) : j.intl.string(j.t.AOdOYr),
             icon: d.CnV
           }), c.length > 0 && l.push({
             id: "webhooks",
@@ -159,12 +159,12 @@ function y(e) {
               items: l
             })
           })
-        }(C, F)
-      }), V, H, M]
+        }(E, F)
+      }), V, H, D]
     });
   return I ? (0, i.jsx)(d.DUT, {
     onClick: () => {
-      L && null != k && null != C && h.A.dismissOverviewTooltip(k, C.integration), null == P || P()
+      L && null != k && null != E && h.A.dismissOverviewTooltip(k, E.integration), null == P || P()
     },
     children: (0, i.jsx)(d.ZpM, {
       editable: true,

@@ -4,8 +4,8 @@
 require.d(exports, {
   Rg: () => d,
   eK: () => u,
-  fS: () => g,
-  v: () => f
+  fS: () => m,
+  v: () => g
 });
 var Chunk311907 = require("./311907.js"),
   Chunk734057 = require("./734057.js"),
@@ -23,11 +23,11 @@ function u(e, t) {
   return (0, r.bG)([a.A], () => e === t || null != t && a.A.editedDefaultChannelIds.has(t))
 }
 
-function f(e, t) {
-  return (0, r.bG)([a.A, i.A], () => null != t && a.A.editedDefaultChannelIds.has(t) ? o.intl.string(o.t.Lz94y1) : s.MJ(c.xBc.VIEW_CHANNEL, i.A.getChannel(e)) ? true : o.intl.string(o.t["031cXt"]))
+function g(e, t) {
+  return (0, r.bG)([a.A, i.A], () => null != t && a.A.editedDefaultChannelIds.has(t) ? c.intl.string(c.t.Lz94y1) : s.MJ(o.xBc.VIEW_CHANNEL, i.A.getChannel(e)) ? true : c.intl.string(c.t["031cXt"]))
 }
 
-function g(e, t) {
+function m(e, t) {
   let n = (0, r.bG)([l.A], () => {
       var n;
       return (null == (n = l.A.getGuild(e)) ? true : n.rulesChannelId) === t
@@ -36,5 +36,5 @@ function g(e, t) {
       var e;
       return null == (e = i.A.getChannel(t)) ? true : e.isGuildVocal()
     });
-  return n ? o.intl.string(o.t["2XWEK9"]) : s ? o.intl.string(o.t.t6iJLY) : true
+  return n ? c.intl.string(c.t["2XWEK9"]) : s ? c.intl.string(c.t.t6iJLY) : true
 }

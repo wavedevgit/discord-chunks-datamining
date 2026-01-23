@@ -19,20 +19,20 @@ function c(e) {
     onMouseEnter: u,
     onMouseLeave: d
   } = e, {
-    error: f,
-    loaded: p,
-    message: h
-  } = (0, s.I)(t);
-  if (null == h && (p || f)) return null;
-  let b = () => {
+    error: p,
+    loaded: h,
+    message: f
+  } = (0, a.I)(t);
+  if (null == f && (h || p)) return null;
+  let g = () => {
     null == c || c(), i.A.closePrivateChannel(t.id)
   };
   return (0, r.jsx)(l.Button, {
     variant: "critical-primary",
     size: "sm",
-    disabled: null == h,
+    disabled: null == f,
     onClick: e => {
-      e.stopPropagation(), null == n || n(), null != h && (0, a.b8)(h, b)
+      e.stopPropagation(), null == n || n(), null != f && (0, s.b8)(f, g)
     },
     onMouseEnter: u,
     onMouseLeave: d,

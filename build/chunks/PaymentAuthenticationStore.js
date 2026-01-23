@@ -2,7 +2,7 @@
 /** chunk id: 153084, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./65821.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -38,9 +38,9 @@ function E(e) {
     paymentId: r
   } = t;
   if (n !== l.Ay.ErrorCodes.CONFIRMATION_REQUIRED && n !== l.Ay.ErrorCodes.AUTHENTICATION_REQUIRED) return _ = false, false;
-  _ || (_ = true, h = r, n === l.Ay.ErrorCodes.AUTHENTICATION_REQUIRED && b(r))
+  _ || (_ = true, h = r, n === l.Ay.ErrorCodes.AUTHENTICATION_REQUIRED && y(r))
 }
-async function b(e) {
+async function y(e) {
   if (null == e) return;
   let {
     error: t
@@ -55,7 +55,7 @@ async function b(e) {
   }
 }
 
-function y(e) {
+function b(e) {
   let {
     error: t
   } = e;
@@ -73,7 +73,7 @@ function O(e) {
     (null == (r = t.metadata) ? true : r.billing_error_code) === l.tG.BILLING_INSUFFICIENT_FUNDS && (e = l.tG.BILLING_INSUFFICIENT_FUNDS), m = new l.Ay(f.intl.string(f.t.khEaRI), e)
   } else m = null, a.h.wait(s.ET), a.h.wait(o.T3)
 }
-class A extends(r = Chunk311907.Ay.Store) {
+class v extends(r = Chunk311907.Ay.Store) {
   get isAwaitingAuthentication() {
     return _
   }
@@ -84,8 +84,8 @@ class A extends(r = Chunk311907.Ay.Store) {
     return h
   }
 }
-p(A, "displayName", "PaymentAuthenticationStore");
-let v = new A(Chunk73153.h, {
+p(v, "displayName", "PaymentAuthenticationStore");
+let A = new v(Chunk73153.h, {
   BILLING_SUBSCRIPTION_UPDATE_START: g,
   PAYMENT_AUTHENTICATION_CLEAR_ERROR: g,
   PREMIUM_PAYMENT_ERROR_CLEAR: g,
@@ -103,7 +103,7 @@ let v = new A(Chunk73153.h, {
   PREMIUM_PAYMENT_UPDATE_FAIL: E,
   SKU_PURCHASE_FAIL: E,
   GIFT_CODE_REDEEM_FAILURE: E,
-  PAYMENT_AUTHENTICATION_ERROR: y,
+  PAYMENT_AUTHENTICATION_ERROR: b,
   PAYMENT_UPDATE: O,
   BILLING_PAYMENT_FETCH_SUCCESS: O
 })

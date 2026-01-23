@@ -1,5 +1,5 @@
 /** Chunk was on 88615 **/
-/** chunk id: 269032, original params: e,t,l (module,exports,require) **/
+/** chunk id: 269032, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => i
 }), require("./321073.js"), require("./896048.js");
@@ -9,9 +9,9 @@ var Chunk554146 = require("./554146.js"),
 function i(e) {
   let t = [];
   e || t.push(r.M.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
-  let [l, i] = (0, n.kn)(t);
+  let [n, i] = (0, l.kn)(t);
   return {
-    shouldShow: null != l && l === r.M.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK,
+    shouldShow: null != n && n === r.M.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK,
     markAsDismissed: i
   }
 }

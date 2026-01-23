@@ -1,16 +1,16 @@
 /** Chunk was on 21738 **/
 /** chunk id: 659088, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  kL: "_3497fa3423c536d5",
-  gn: "_507e84e35dbfeac4",
-  DD: "_1ffeef59f6e64a4b",
-  MJ: "_30379375e6c50466",
-  Qo: "e8a695f314d012ae",
-  At: "db74f2b0590fd8b5",
-  X_: "eae42677235989e2",
-  tj: "a47df92f17dc2ad2",
-  Yl: "c47654921d7f4af7",
-  oo: "a919da35b6d83305",
-  ik: "_5ef9a559022161be",
-  HA: "bcad1cb474734bf6"
+  kL: "container__935b3",
+  gn: "titleContainer__935b3",
+  DD: "title__935b3",
+  MJ: "messagesContainer__935b3",
+  Qo: "eventContainer__935b3",
+  At: "eventTimeAndUser__935b3",
+  X_: "eventTitle__935b3",
+  tj: "eventDescription__935b3",
+  Yl: "eventDivider__935b3",
+  oo: "eventInfoContainer__935b3",
+  ik: "eventLocationRow__935b3",
+  HA: "eventLocationText__935b3"
 }

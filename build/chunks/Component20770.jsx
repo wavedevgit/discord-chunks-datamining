@@ -2,7 +2,7 @@
 /** chunk id: 20770, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./938796.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -22,24 +22,24 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk551934 = require("./551934.js");
 
-function b(e) {
+function y(e) {
   var t;
   let {
     app: n,
     currentSubscription: a,
     currentListing: _,
     alternativeListings: m,
-    navigateToHome: b,
+    navigateToHome: y,
     subscriptionGroup: O,
-    renewalSkuId: A
-  } = e, v = (0, o.A)(n, 100), S = (0, p.PJ)(O.flags), I = S ? s.RR9 : s.nys, T = S ? g.intl.string(g.t["46YF2D"]) : g.intl.string(g.t.fFyGiA), C = null == (t = a.metadata) ? true : t.application_subscription_guild_id, N = (0, i.bG)([d.A], () => S && null != C ? d.A.getGuild(C) : true, [C, S]), R = (0, i.bG)([f.A], () => {
-    if (null != A) return f.A.get(A)
-  }, [A]), w = (0, h.Y)(a.currentPeriodEnd);
+    renewalSkuId: v
+  } = e, A = (0, o.A)(n, 100), I = (0, p.PJ)(O.flags), S = I ? s.RR9 : s.nys, T = I ? g.intl.string(g.t["46YF2D"]) : g.intl.string(g.t.fFyGiA), C = null == (t = a.metadata) ? true : t.application_subscription_guild_id, N = (0, i.bG)([d.A], () => I && null != C ? d.A.getGuild(C) : true, [C, I]), R = (0, i.bG)([f.A], () => {
+    if (null != v) return f.A.get(v)
+  }, [v]), w = (0, h.Y)(a.currentPeriodEnd);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsxs)("div", {
       className: E.wx,
-      children: [null != v && (0, r.jsx)(s._V3, {
-        src: v.href,
+      children: [null != A && (0, r.jsx)(s._V3, {
+        src: A.href,
         imageClassName: E.Z2,
         width: 48,
         height: 48
@@ -52,7 +52,7 @@ function b(e) {
           children: [(0, r.jsxs)(s.Heading, {
             variant: "heading-md/normal",
             className: E.N4,
-            children: [(0, r.jsx)(I, {
+            children: [(0, r.jsx)(S, {
               size: "xs",
               color: "currentColor"
             }), " ", T]
@@ -113,7 +113,7 @@ function b(e) {
             })
           })]
         })
-      }), m.map(e => e.skuId === A ? (0, r.jsx)(c.A, {
+      }), m.map(e => e.skuId === v ? (0, r.jsx)(c.A, {
         storeListing: e,
         cta: (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
@@ -122,16 +122,16 @@ function b(e) {
             startDate: w
           })
         })
-      }, e.id) : (0, r.jsx)(y, {
+      }, e.id) : (0, r.jsx)(b, {
         storeListing: e,
         guildId: C,
-        navigateToHome: b
+        navigateToHome: y
       }, e.id))]
     })]
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     storeListing: t,
     guildId: n,

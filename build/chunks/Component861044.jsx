@@ -26,7 +26,7 @@ function E(e) {
   var t, n;
   let {
     markAsDismissed: E
-  } = e, O = u.g[f.P7.WELCOME], y = (0, a.rdh)(O.primaryColor).hex(), I = (0, l.bG)([s.A], () => s.A.useReducedMotion);
+  } = e, O = u.g[h.P7.WELCOME], y = (0, a.rdh)(O.primaryColor).hex(), I = (0, l.bG)([s.A], () => s.A.useReducedMotion);
   return (0, r.jsx)(c.P.Provider, {
     value: (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -59,9 +59,9 @@ function E(e) {
     }), t),
     children: (0, r.jsx)(o.Ay, {
       children: (0, r.jsxs)("div", {
-        className: m.kL,
+        className: A.kL,
         style: {
-          backgroundImage: "url(".concat(_.A, "), linear-gradient(").concat(y, "80, black)"),
+          backgroundImage: "url(".concat(b.A, "), linear-gradient(").concat(y, "80, black)"),
           borderColor: y,
           boxShadow: "0 0 15px 5px ".concat(y, "50")
         },
@@ -70,29 +70,29 @@ function E(e) {
           muted: true,
           playsInline: true,
           loop: true,
-          className: m.wm,
+          className: A.wm,
           children: (0, r.jsx)("source", {
-            src: b.A,
+            src: _.A,
             type: "video/webm"
           })
         }), (0, r.jsxs)("div", {
-          className: m.FS,
+          className: A.FS,
           children: [(0, r.jsx)(a.Text, {
             variant: "display-sm",
             style: {
               color: y
             },
-            className: m.Vy,
-            children: g.intl.string(A.default["CdU/PF"])
+            className: A.Vy,
+            children: m.intl.string(f.default["CdU/PF"])
           }), (0, r.jsx)(a.Text, {
             variant: "text-md/medium",
             style: {
               color: y
             },
-            children: g.intl.string(A.default["M/LvW0"])
+            children: m.intl.string(f.default["M/LvW0"])
           }), (0, r.jsx)(a.DUT, {
-            className: m.r,
-            onClick: () => E(h.i.DISMISS),
+            className: A.r,
+            onClick: () => E(g.i.DISMISS),
             style: {
               color: y
             },
@@ -101,14 +101,14 @@ function E(e) {
               style: {
                 color: y
               },
-              children: g.intl.string(g.t.WAI6xu)
+              children: m.intl.string(m.t.WAI6xu)
             })
           })]
         }), (0, r.jsx)(p.A, {
-          className: m.vk,
-          contentClassName: m.x6,
+          className: A.vk,
+          contentClassName: A.x6,
           onClick: () => {
-            (0, d.A)("coachmark"), E(h.i.TAKE_ACTION)
+            (0, d.A)("coachmark"), E(g.i.TAKE_ACTION)
           },
           children: (0, r.jsx)(a.KS6, {
             color: y,

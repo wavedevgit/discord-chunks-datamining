@@ -106,13 +106,13 @@ function g(e) {
     errorMessage: _,
     successMessage: m,
     role: g,
-    layout: b = "vertical",
-    layoutConfig: y,
+    layout: y = "vertical",
+    layoutConfig: b,
     badge: O,
-    icon: A = null,
-    interactiveLabel: v = false,
-    auxiliaryContentPosition: S = "under-control",
-    trailingAuxiliaryContent: I,
+    icon: v = null,
+    interactiveLabel: A = false,
+    auxiliaryContentPosition: I = "under-control",
+    trailingAuxiliaryContent: S,
     ref: T
   } = e, C = h(e), {
     labelId: N,
@@ -121,21 +121,21 @@ function g(e) {
     describedById: P,
     helperTextId: D,
     descriptionId: x
-  } = C, L = null == y ? true : y.horizontalControlColumnWidth, j = "group" === g || "radiogroup" === g, M = j ? "span" : "label", k = j ? "fieldset" : "div", U = j ? (0, r.jsx)("legend", {
+  } = C, L = null == b ? true : b.horizontalControlColumnWidth, j = "group" === g || "radiogroup" === g, M = j ? "span" : "label", k = j ? "fieldset" : "div", U = j ? (0, r.jsx)("legend", {
     id: N,
     children: (0, r.jsx)(o.A, {
       children: t
     })
   }) : null, G = null != t && "" !== t, V = null != l && "" !== l, F = G ? (0, r.jsxs)(u.E, {
     "aria-hidden": j,
-    "data-interactive": v,
+    "data-interactive": A,
     id: N,
     tag: M,
     variant: "text-md/medium",
     color: "text-strong",
     htmlFor: R,
     className: f.Pf,
-    children: [null != A ? (0, r.jsx)(A, {
+    children: [null != v ? (0, r.jsx)(v, {
       "aria-hidden": true,
       size: "xs",
       className: f.Kk
@@ -155,7 +155,7 @@ function g(e) {
     successMessage: m,
     errorMessage: _,
     helperText: c,
-    trailing: I,
+    trailing: S,
     helperTextId: D,
     errorMessageId: w
   });
@@ -165,7 +165,7 @@ function g(e) {
       role: g,
       ref: T,
       className: f.kL,
-      "data-layout": b,
+      "data-layout": y,
       style: null != L ? {
         "--custom-field-horizontal-control-width": L
       } : true,
@@ -182,10 +182,10 @@ function g(e) {
           className: f.h_,
           id: x,
           children: l
-        }), "under-label" === S ? B : null]
+        }), "under-label" === I ? B : null]
       }) : null, (0, r.jsxs)("div", {
         className: f.A4,
-        children: ["function" == typeof p ? p(C) : p, "under-control" === S ? B : null]
+        children: ["function" == typeof p ? p(C) : p, "under-control" === I ? B : null]
       })]
     })
   })

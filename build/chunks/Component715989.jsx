@@ -1,12 +1,12 @@
 /** Chunk was on 97492 **/
 /** chunk id: 715989, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => a
+  A: () => s
 });
 var Chunk627968 = require("./627968.js"),
   Chunk837921 = require("./837921.js"),
   Chunk651761 = require("./651761.js");
-let a = Chunk837921.Ay.getEnableHardwareAcceleration() ? function() {
+let s = Chunk837921.Ay.getEnableHardwareAcceleration() ? function() {
   return (0, r.jsx)("div", {
     children: (0, r.jsxs)("div", {
       className: i.pm,

@@ -2,7 +2,7 @@
 /** chunk id: 318009, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -29,7 +29,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,15 +54,15 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A() {
+function v() {
   window.getSelection().removeAllRanges()
 }
-let v = e => {
+let A = e => {
   let {
     children: t,
     close: n,
@@ -72,13 +72,13 @@ let v = e => {
     position: h,
     align: m,
     impressionName: E,
-    impressionProperties: b,
-    disableClickTrap: y = false
-  } = e, O = i.useRef(null), v = i.useMemo(() => ({
+    impressionProperties: y,
+    disableClickTrap: b = false
+  } = e, O = i.useRef(null), A = i.useMemo(() => ({
     current: u
-  }), [u]), S = i.useRef(n);
+  }), [u]), I = i.useRef(n);
   i.useEffect(() => {
-    S.current = n
+    I.current = n
   }), i.useEffect(() => {
     var e, t, n;
     let r = null == (e = O.current) ? true : e.elementRef.current;
@@ -87,26 +87,26 @@ let v = e => {
       var t;
       let n = e.target,
         r = null == (t = O.current) ? true : t.elementRef.current;
-      null != r && (0, c.HG$)(r, n) || (A(), S.current())
+      null != r && (0, c.HG$)(r, n) || (v(), I.current())
     };
     return null == (t = r.ownerDocument) || t.addEventListener("click", i, true), null == (n = r.ownerDocument) || n.addEventListener("contextmenu", i, true), () => {
       var e, t;
       null == (e = r.ownerDocument) || e.removeEventListener("click", i, true), null == (t = r.ownerDocument) || t.removeEventListener("contextmenu", i, true)
     }
   }, []);
-  let I = i.useRef(o);
+  let S = i.useRef(o);
   i.useEffect(() => {
-    I.current = o
+    S.current = o
   }), i.useEffect(() => () => {
     var e;
-    return null == (e = I.current) ? true : e.call(I)
+    return null == (e = S.current) ? true : e.call(S)
   }, []), i.useLayoutEffect(() => {
     var e;
     null == (e = O.current) || e.updatePosition()
   }), (0, d.A)({
     type: a.ImpressionTypes.MENU,
     name: E,
-    properties: b
+    properties: y
   });
   let T = (0, p.aL)(),
     C = i.useCallback(() => {
@@ -122,11 +122,11 @@ let v = e => {
     open: true,
     ownerDocument: w,
     onOpenChange: e => {
-      e ? C() : (N(), A(), S.current())
+      e ? C() : (N(), v(), I.current())
     },
     overrideTargetRect: _,
     placement: (0, s.Pv)(null != h ? h : "right", null != m ? m : "top"),
-    blockPointerEvents: !y,
+    blockPointerEvents: !b,
     crossAccessFlip: false,
     renderLayer: e => {
       let {
@@ -140,18 +140,18 @@ let v = e => {
   }) : (0, r.jsx)(f.nE, {
     onMount: C,
     onUnmount: N,
-    targetRef: v,
+    targetRef: A,
     overrideTargetRect: _,
     position: null != h ? h : "right",
     align: null != m ? m : "top",
     autoInvert: true,
     ref: O,
     nudgeAlignIntoViewport: true,
-    clickTrap: !y,
+    clickTrap: !b,
     children: t
   })
 };
-class S extends Chunk64700.PureComponent {
+class I extends Chunk64700.PureComponent {
   componentDidMount() {
     let {
       renderLazy: e,
@@ -196,7 +196,7 @@ class S extends Chunk64700.PureComponent {
       rect: c,
       renderWindow: u
     } = this.props, d = null != (e = this.state.render) ? e : this.props.render;
-    return s && null != c && null != l && null != a && null != d && l.context === i && (null == (n = a.ownerDocument) ? true : n.defaultView) === u ? (0, r.jsx)(v, {
+    return s && null != c && null != l && null != a && null != d && l.context === i && (null == (n = a.ownerDocument) ? true : n.defaultView) === u ? (0, r.jsx)(A, {
       target: a,
       rect: c,
       close: this.close,
@@ -239,7 +239,7 @@ class S extends Chunk64700.PureComponent {
   }
 }
 
-function I() {
+function S() {
   let {
     contextMenu: e,
     version: t,
@@ -252,7 +252,7 @@ function I() {
     appContext: s,
     renderWindow: l
   } = i.useContext(p.Ay);
-  return (0, r.jsx)(S, O(b({
+  return (0, r.jsx)(I, O(y({
     appContext: s,
     renderWindow: l
   }, e), {

@@ -1,7 +1,7 @@
 /** Chunk was on 48666 **/
 /** chunk id: 883662, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,10 +14,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk418829 = require("./418829.jsx"),
   Chunk652215 = require("./652215.js");
 
-function y(e) {
+function b(e) {
   var t, r;
   let {
-    partialRoot: y,
+    partialRoot: b,
     target: d,
     defaultTarget: p,
     onPanelChange: g,
@@ -41,19 +41,19 @@ function y(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, r = Object.getOwnPropertySymbols(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
     return o
-  }(e, ["partialRoot", "target", "defaultTarget", "onPanelChange", "sidebarFooter", "emptyState", "searchQuery", "onSearchChange"]), [x, S] = l.useState(false), [P, w] = l.useState(1.4), A = l.useRef(null), C = (0, o.bG)([i.A], () => i.A.useReducedMotion), E = (0, o.bG)([s.A], () => s.A.isFocused());
+  }(e, ["partialRoot", "target", "defaultTarget", "onPanelChange", "sidebarFooter", "emptyState", "searchQuery", "onSearchChange"]), [x, S] = l.useState(false), [P, _] = l.useState(1.4), w = l.useRef(null), C = (0, o.bG)([c.A], () => c.A.useReducedMotion), A = (0, o.bG)([s.A], () => s.A.isFocused());
   return l.useEffect(() => {
     let e = e => {
       let {
         intensity: t,
         duration: r
       } = e;
-      !C && E && (S(true), w(null != t ? t : 1.4), clearTimeout(A.current), A.current = setTimeout(() => S(false), null != r ? r : 1e3))
+      !C && A && (S(true), _(null != t ? t : 1.4), clearTimeout(w.current), w.current = setTimeout(() => S(false), null != r ? r : 1e3))
     };
-    return u._.subscribe(b.jej.SHAKE_SETTINGS_MODAL, e), () => {
-      u._.unsubscribe(b.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(A.current)
+    return u._.subscribe(f.jej.SHAKE_SETTINGS_MODAL, e), () => {
+      u._.unsubscribe(f.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(w.current)
     }
-  }, [C, E]), (0, n.jsx)(c.bfh, {
+  }, [C, A]), (0, n.jsx)(i.bfh, {
     isShaking: x,
     intensity: P,
     children: (0, n.jsx)(a.N, (t = function(e) {
@@ -74,9 +74,9 @@ function y(e) {
       }
       return e
     }({}, v), r = r = {
-      children: (0, n.jsx)(f.A, {
+      children: (0, n.jsx)(y.A, {
         onClose: v.onClose,
-        partialRoot: y,
+        partialRoot: b,
         target: d,
         defaultTarget: p,
         onPanelChange: g,

@@ -27,7 +27,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk502167 = require("./502167.js");
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -52,7 +52,7 @@ function T() {
   return (0, r.jsx)(d.$nd, {
     variant: "primary",
     size: "md",
-    text: v.intl.string(v.t["/Nz9rY"]),
+    text: A.intl.string(A.t["/Nz9rY"]),
     onClick: n,
     loading: e
   })
@@ -76,10 +76,10 @@ class N extends Chunk64700.PureComponent {
       info: t
     });
     let r = (0, u.b)(),
-      i = b.A.captureCrash(e, {
+      i = y.A.captureCrash(e, {
         extra: t
       });
-    E.default.track(A.HAw.APP_CRASHED, {
+    E.default.track(v.HAw.APP_CRASHED, {
       path: n.pathname,
       extra: t,
       error_message: e.message,
@@ -87,7 +87,7 @@ class N extends Chunk64700.PureComponent {
       sentry_issue_id: i,
       uses_client_mods: r,
       error_level: "fatal"
-    }), C(r), y.Ay.cleanupDisplaySleep()
+    }), C(r), b.Ay.cleanupDisplaySleep()
   }
   _handleSubmitReport() {
     location.reload(true)
@@ -110,33 +110,33 @@ class N extends Chunk64700.PureComponent {
     if (null !== this.state.error) {
       let e = (0, r.jsxs)("div", {
           children: [(0, r.jsx)("p", {
-            children: v.intl.string(v.t.tx8CkI)
+            children: A.intl.string(A.t.tx8CkI)
           }), (0, r.jsx)("p", {
-            children: v.intl.string(v.t.CvQlAH)
+            children: A.intl.string(A.t.CvQlAH)
           })]
         }),
         n = (0, r.jsxs)(d.e2v, {
           children: [(0, r.jsx)(d.$nd, {
             variant: "primary",
             size: "md",
-            text: v.intl.string(v.t["+hivLW"]),
+            text: A.intl.string(A.t["+hivLW"]),
             onClick: this._handleSubmitReport
           }), (0, r.jsx)(T, {})]
         });
       return (0, r.jsx)(O.A, {
-        title: v.intl.string(v.t["3h+n+8"]),
+        title: A.intl.string(A.t["3h+n+8"]),
         note: null != t ? t() : e,
         action: n,
-        className: S.W
+        className: I.W
       })
     }
     return e
   }
   constructor(...e) {
-    super(...e), I(this, "state", {
+    super(...e), S(this, "state", {
       error: null,
       info: null
-    }), I(this, "discordErrorsSet", false)
+    }), S(this, "discordErrorsSet", false)
   }
 }
 let R = N

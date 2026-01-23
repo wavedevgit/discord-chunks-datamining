@@ -1,8 +1,8 @@
 /** Chunk was on 88615 **/
-/** chunk id: 777347, original params: e,t,l (module,exports,require) **/
+/** chunk id: 777347, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f,
-  U: () => p
+  A: () => p,
+  U: () => m
 }), require("./896048.js"), require("./638769.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -14,52 +14,52 @@ var Chunk64700 = require("./64700.js"),
   Chunk71393 = require("./71393.js"),
   Chunk661191 = require("./661191.js");
 
-function f(e, t) {
-  let l = (0, n.yK)([o.A], () => {
+function p(e, t) {
+  let n = (0, l.yK)([s.A], () => {
       var t;
-      return null != (t = o.A.getAppliedGuildBoostsForGuild(e)) ? t : []
+      return null != (t = s.A.getAppliedGuildBoostsForGuild(e)) ? t : []
     }, [e]),
-    f = r.useMemo(() => [...l].sort((e, t) => c.default.extractTimestamp(e.id) < c.default.extractTimestamp(t.id) ? 1 : false).slice(0, t), [l, t]),
-    p = (0, n.yK)([u.Ay], () => {
+    p = r.useMemo(() => [...n].sort((e, t) => c.default.extractTimestamp(e.id) < c.default.extractTimestamp(t.id) ? 1 : false).slice(0, t), [n, t]),
+    m = (0, l.yK)([u.Ay], () => {
       let t = new Set;
-      return f.forEach(l => {
-        null == u.Ay.getMember(e, l.userId) && t.add(l.userId)
+      return p.forEach(n => {
+        null == u.Ay.getMember(e, n.userId) && t.add(n.userId)
       }), Array.from(t)
-    }, [e, f]);
+    }, [e, p]);
   r.useEffect(() => {
-    p.length > 0 && p.forEach(t => a.A.requestMember(e, t))
-  }, [e, p]);
-  let m = r.useMemo(() => p.length > 0 ? {
-    [e]: p
-  } : {}, [e, p]);
-  (0, s.E)(m, "GuildPowerupsRecentActivity");
-  let v = (0, n.bG)([d.A], () => {
+    m.length > 0 && m.forEach(t => a.A.requestMember(e, t))
+  }, [e, m]);
+  let f = r.useMemo(() => m.length > 0 ? {
+    [e]: m
+  } : {}, [e, m]);
+  (0, o.E)(f, "GuildPowerupsRecentActivity");
+  let v = (0, l.bG)([d.A], () => {
     var t;
     return null == (t = d.A.getGuild(e)) ? true : t.premiumSubscriberCount
   });
   return r.useEffect(() => {
-    v !== l.length && (0, i.VU)(e)
-  }, [e, v, l.length]), f
+    v !== n.length && (0, i.VU)(e)
+  }, [e, v, n.length]), p
 }
 
-function p(e) {
+function m(e) {
   let t = new Date(c.default.extractTimestamp(e.id)),
     {
-      username: l,
+      username: n,
       roleColor: r,
       roleColorStrings: i
-    } = (0, n.cf)([u.Ay], () => {
-      var t, l, r, n;
+    } = (0, l.cf)([u.Ay], () => {
+      var t, n, r, l;
       let i = u.Ay.getMember(e.guildId, e.userId);
       return {
-        username: null != (t = u.Ay.getNick(e.guildId, e.userId)) ? t : null == (n = e.user) ? true : n.username,
-        roleColor: null != (l = null == i ? true : i.colorString) ? l : null,
+        username: null != (t = u.Ay.getNick(e.guildId, e.userId)) ? t : null == (l = e.user) ? true : l.username,
+        roleColor: null != (n = null == i ? true : i.colorString) ? n : null,
         roleColorStrings: null != (r = null == i ? true : i.colorStrings) ? r : null
       }
     }, [e]);
   return {
     timestamp: t,
-    username: l,
+    username: n,
     roleColor: r,
     roleColorStrings: i
   }

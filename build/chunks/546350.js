@@ -14,15 +14,15 @@ function o(e) {
     isQuestAccepted: t,
     isQuestCompleted: n,
     isQuestBarVisible: o
-  } = e, c = (0, l.bG)([r.A], () => r.A.useReducedMotion), [d, u] = a.useState(false), [m, p] = a.useState(true), [h, f] = a.useState(true), x = a.useRef(o), b = a.useCallback(e => {
+  } = e, c = (0, l.bG)([i.A], () => i.A.useReducedMotion), [d, u] = a.useState(false), [m, p] = a.useState(true), [h, x] = a.useState(true), g = a.useRef(o), f = a.useCallback(e => {
     n || (p(false), u(e))
-  }, [n]), g = a.useCallback(() => {
-    b(true)
-  }, [b]), v = a.useCallback(() => {
-    b(false)
-  }, [b]), j = t ? s.ZV : s.Ko, [{
-    expansionSpring: y
-  }, _] = (0, i.zhh)(() => ({
+  }, [n]), b = a.useCallback(() => {
+    f(true)
+  }, [f]), v = a.useCallback(() => {
+    f(false)
+  }, [f]), j = t ? s.ZV : s.Ko, [{
+    expansionSpring: _
+  }, y] = (0, r.zhh)(() => ({
     from: {
       expansionSpring: 0
     },
@@ -35,14 +35,14 @@ function o(e) {
     }
   }));
   a.useEffect(() => {
-    _({
+    y({
       expansionSpring: +!!d,
       immediate: c
     })
-  }, [d, _, c]);
+  }, [d, y, c]);
   let {
     visibilitySpring: A
-  } = (0, i.zhh)({
+  } = (0, r.zhh)({
     from: {
       visibilitySpring: 0
     },
@@ -55,22 +55,22 @@ function o(e) {
       clamp: true
     },
     onRest: () => {
-      f(true)
+      x(true)
     },
     onStart: () => {
-      f(false)
+      x(false)
     }
   });
   return a.useLayoutEffect(() => {
-    o !== x.current && f(false), x.current = o
+    o !== g.current && x(false), g.current = o
   }, [o]), {
     isExpanded: d,
-    setIsExpanded: b,
-    expandQuestBar: g,
+    setIsExpanded: f,
+    expandQuestBar: b,
     collapseQuestBar: v,
     isExpansionAnimationComplete: m,
     isVisibilityAnimationAtRest: h,
-    expansionSpring: y,
+    expansionSpring: _,
     visibilitySpring: A,
     springConfig: j
   }

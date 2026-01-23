@@ -18,15 +18,15 @@ function u(e) {
     children: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: i()(s.kL, t),
+    className: i()(a.kL, t),
     children: [(0, r.jsx)("img", {
-      alt: a.intl.string(a.t.VoB8Oc),
+      alt: s.intl.string(s.t.VoB8Oc),
       src: c,
-      className: i()(s.ot, s.Q_)
+      className: i()(a.ot, a.Q_)
     }), n, (0, r.jsx)("img", {
-      alt: a.intl.string(a.t.VoB8Oc),
+      alt: s.intl.string(s.t.VoB8Oc),
       src: o,
-      className: i()(s.ot, s.st)
+      className: i()(a.ot, a.st)
     })]
   })
 }

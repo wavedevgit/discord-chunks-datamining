@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 704860, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,49 +14,49 @@ var Chunk627968 = require("./627968.js"),
   Chunk841362 = require("./841362.jsx"),
   Chunk285745 = require("./285745.jsx");
 
-function p(e) {
+function h(e) {
   let {
     channel: t,
     message: n,
-    snapshot: p
+    snapshot: h
   } = e, {
-    moderatorReport: h
-  } = p, b = null == h ? true : h.reported_user_id, g = (0, i.bG)([s.default], () => null != b ? s.default.getUser(b) : null), m = (0, i.bG)([a.A], () => a.A.getGuild(t.guild_id));
+    moderatorReport: f
+  } = h, g = null == f ? true : f.reported_user_id, m = (0, i.bG)([a.default], () => null != g ? a.default.getUser(g) : null), b = (0, i.bG)([s.A], () => s.A.getGuild(t.guild_id));
   (0, o.ml)(n);
   let A = (0, c.A)({
       channel: t,
-      user: g,
-      guild: m
+      user: m,
+      guild: b
     }),
     y = (0, d.A)({
       channel: t,
-      user: g,
-      guild: m
+      user: m,
+      guild: b
     }),
-    O = [(0, u.A)({
+    _ = [(0, u.A)({
       channel: t,
       message: n,
-      user: g,
-      guild: m
-    }), A, y, (0, f.A)({
+      user: m,
+      guild: b
+    }), A, y, (0, p.A)({
       channel: t,
-      user: g,
-      guild: m
+      user: m,
+      guild: b
     })].filter(e => null != e);
-  return t.isModeratorReportChannel() && 0 !== O.length ? (0, r.jsx)(r.Fragment, {
-    children: O.map((e, t) => (0, r.jsx)(l.Fragment, {
+  return t.isModeratorReportChannel() && 0 !== _.length ? (0, r.jsx)(r.Fragment, {
+    children: _.map((e, t) => (0, r.jsx)(l.Fragment, {
       children: e
     }, t))
   }) : null
 }
 
-function h(e) {
+function f(e) {
   let {
     message: t,
     channel: n
   } = e;
   return (0, r.jsx)(r.Fragment, {
-    children: t.messageSnapshots.map((e, l) => (0, r.jsx)(p, {
+    children: t.messageSnapshots.map((e, l) => (0, r.jsx)(h, {
       channel: n,
       message: t,
       snapshot: e

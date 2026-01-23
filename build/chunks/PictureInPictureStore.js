@@ -51,13 +51,13 @@ function h(e, t) {
 let m = new Map,
   g = {},
   E = Chunk652215.CUs.BOTTOM_RIGHT,
-  b = {
+  y = {
     [Chunk806931.R8.VIDEO]: Chunk806931.fG[Chunk806931.R8.VIDEO],
     [Chunk806931.R8.CAMERA_PREVIEW]: Chunk806931.fG[Chunk806931.R8.CAMERA_PREVIEW],
     [Chunk806931.R8.HAVEN]: Chunk806931.fG[Chunk806931.R8.HAVEN]
   };
 
-function y(e) {
+function b(e) {
   var t, n;
   let {
     id: o,
@@ -99,7 +99,7 @@ function O(e) {
   }
 }
 
-function A(e) {
+function v(e) {
   let {
     id: t,
     position: n
@@ -115,15 +115,15 @@ function A(e) {
   }
 }
 
-function v(e) {
+function A(e) {
   let {
     width: t,
     pipType: n
   } = e;
-  b[n] = t
+  y[n] = t
 }
 
-function S(e) {
+function I(e) {
   let {
     id: t,
     rect: n
@@ -131,7 +131,7 @@ function S(e) {
   g[t] = n
 }
 
-function I(e) {
+function S(e) {
   let {
     id: t
   } = e;
@@ -173,14 +173,14 @@ class R extends(o = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     if (null == e) {
       var t;
-      E = u.CUs.BOTTOM_RIGHT, b = {
+      E = u.CUs.BOTTOM_RIGHT, y = {
         [d.R8.VIDEO]: d.fG[d.R8.VIDEO],
         [d.R8.CAMERA_PREVIEW]: d.fG[d.R8.CAMERA_PREVIEW],
         [d.R8.HAVEN]: null != (t = d.fG[d.R8.HAVEN]) ? t : d.fG[d.R8.VIDEO]
       };
       return
     }
-    E = e.openPosition, b = e.pipWidths
+    E = e.openPosition, y = e.pipWidths
   }
   get pipWindow() {
     var e, t, n;
@@ -202,7 +202,7 @@ class R extends(o = Chunk311907.Ay.PersistedStore) {
     return m
   }
   pipWidth(e) {
-    return b[e]
+    return y[e]
   }
   isEmbeddedActivityHidden() {
     return null == i
@@ -219,7 +219,7 @@ class R extends(o = Chunk311907.Ay.PersistedStore) {
   getState() {
     return {
       openPosition: E,
-      pipWidths: b
+      pipWidths: y
     }
   }
 }
@@ -235,13 +235,13 @@ f(R, "displayName", "PictureInPictureStore"), f(R, "persistKey", "PictureInPictu
   }
 }]);
 let w = new R(Chunk73153.h, {
-  PICTURE_IN_PICTURE_OPEN: y,
+  PICTURE_IN_PICTURE_OPEN: b,
   PICTURE_IN_PICTURE_CLOSE: O,
-  PICTURE_IN_PICTURE_MOVE: A,
-  PICTURE_IN_PICTURE_RESIZE: v,
-  PICTURE_IN_PICTURE_HIDE: I,
+  PICTURE_IN_PICTURE_MOVE: v,
+  PICTURE_IN_PICTURE_RESIZE: A,
+  PICTURE_IN_PICTURE_HIDE: S,
   PICTURE_IN_PICTURE_SHOW: T,
-  PICTURE_IN_PICTURE_UPDATE_RECT: S,
+  PICTURE_IN_PICTURE_UPDATE_RECT: I,
   PICTURE_IN_PICTURE_UPDATE_SELECTED_WINDOW: C,
   LOGOUT: N
 })

@@ -2,7 +2,7 @@
 /** chunk id: 598770, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 });
 var r, Chunk989349 = require("./989349.js"),
   a = require.n(Chunk989349),
@@ -86,12 +86,12 @@ function E(e) {
   })
 }
 
-function b() {
+function y() {
   for (let e in h) _.lastSeenNewlyAddedEmojiIds[e] = h[e]
 }
 
-function y() {
-  _ = p, b()
+function b() {
+  _ = p, y()
 }
 class O extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
@@ -128,11 +128,11 @@ c(O, "displayName", "NewlyAddedEmojiStore"), c(O, "persistKey", "NewlyAddedEmoji
     lastSeenNewlyAddedEmojiIds: n
   }
 }]);
-let A = new O(Chunk73153.h, {
+let v = new O(Chunk73153.h, {
   LOGOUT: m,
   NEWLY_ADDED_EMOJI_SEEN_ACKNOWLEDGED: g,
   NEWLY_ADDED_EMOJI_SEEN_PENDING: E,
-  NEWLY_ADDED_EMOJI_SEEN_UPDATED: b,
-  CLEAR_CACHES: y,
-  CONNECTION_CLOSED: b
+  NEWLY_ADDED_EMOJI_SEEN_UPDATED: y,
+  CLEAR_CACHES: b,
+  CONNECTION_CLOSED: y
 })

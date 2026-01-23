@@ -2,7 +2,7 @@
 /** chunk id: 401245, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./321073.js"), require("./896048.js");
 var Chunk554146 = require("./554146.js"),
   Chunk439372 = require("./439372.js"),
@@ -51,31 +51,31 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = new Chunk626584.A("VoiceFilterManager");
+let b = new Chunk626584.A("VoiceFilterManager");
 
 function O(e) {
   var t;
   let n = c.Ay.getVoiceFilters();
   return null != n.getModelIdsForVoiceId ? n.getModelIdsForVoiceId(e.id) : Object.values(null != (t = e.modelIds) ? t : {})
 }
-let A = null;
-class v extends Chunk439372.A {
+let v = null;
+class A extends Chunk439372.A {
   async handleVoiceFilterRequestSwitch(e) {
     let {
       newVoiceFilterId: t,
       analyticsContext: n
     } = e;
     if (__OVERLAY__) return;
-    null != A && A.abort();
+    null != v && v.abort();
     let r = new AbortController;
-    if (A = r, null == t) return void(0, f.DF)(null, n);
+    if (v = r, null == t) return void(0, f.DF)(null, n);
     let i = d.A.getVoiceFilter(t);
-    if (null == i) return void y.error("requested Voice Filter is missing in VoiceFilterStore");
+    if (null == i) return void b.error("requested Voice Filter is missing in VoiceFilterStore");
     let a = O(i);
     if (a.length > 0) {
       let e = d.A.getVoiceFilterModels(),
@@ -84,7 +84,7 @@ class v extends Chunk439372.A {
         var s;
         let r = null == (s = e[n]) ? true : s.url;
         if (null == r) {
-          y.error("Missing model url for voice filter", i.id, n);
+          b.error("Missing model url for voice filter", i.id, n);
           continue
         }
         t.push({
@@ -94,7 +94,7 @@ class v extends Chunk439372.A {
           fileName: (0, p.L)(n)
         })
       }
-      y.info("Waiting for dependencies for voice filter", i.id, t);
+      b.info("Waiting for dependencies for voice filter", i.id, t);
       let r = t.map(e => (0, f.g8)(e, n));
       await Promise.all(r)
     }
@@ -149,7 +149,7 @@ class v extends Chunk439372.A {
       dismissAction: h.i.INDIRECT_ACTION
     }), (0, s.Dr)(r.M.VOICE_FILTER_FIRST_USE_COACHMARK, {
       dismissAction: h.i.INDIRECT_ACTION
-    }), l.default.track(_.HAw.VOICE_FILTER_ENABLED, b(g({
+    }), l.default.track(_.HAw.VOICE_FILTER_ENABLED, y(g({
       active_voice_filter_id: t,
       previous_filter_id: a
     }, (0, u.A)(n)), {
@@ -178,4 +178,4 @@ class v extends Chunk439372.A {
     })
   }
 }
-let S = new v
+let I = new A

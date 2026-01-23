@@ -61,12 +61,12 @@ function x(e) {
     className: D.rf,
     children: [(0, r.jsx)(h.A, {
       userId: t.id
-    }), (0, r.jsx)(A.A, {
+    }), (0, r.jsx)(v.A, {
       user: t,
       guildId: null == L ? true : L.id,
       onOpenProfile: M,
       onClose: U,
-      usernameIcon: t.hasAvatarForGuild(null == L ? true : L.id) && (0, r.jsx)(I.A, {
+      usernameIcon: t.hasAvatarForGuild(null == L ? true : L.id) && (0, r.jsx)(S.A, {
         user: t,
         nickname: G
       }),
@@ -77,7 +77,7 @@ function x(e) {
         themeType: w.d.POPOUT,
         onClose: U
       }),
-      nicknameIcons: H ? null : (0, r.jsx)(v.A, {
+      nicknameIcons: H ? null : (0, r.jsx)(A.A, {
         userId: t.id,
         isVisible: j,
         onOpenProfile: M
@@ -116,19 +116,19 @@ function x(e) {
           userId: t.id
         })
       })
-    }) : (0, r.jsx)(S.A, {
+    }) : (0, r.jsx)(I.A, {
       user: t,
       bio: null == x ? true : x.bio,
       hidePersonalInformation: H,
       onClose: U
-    }), K && (0, r.jsx)(y.A, {
+    }), K && (0, r.jsx)(b.A, {
       user: t,
       widgets: null == x ? true : x.widgets,
       onOpenUserProfileModal: M
     }), W && (0, r.jsx)(_.A, {
       isPremiumUser: z,
       onInteraction: U
-    }), (0, r.jsx)(b.A, {
+    }), (0, r.jsx)(y.A, {
       user: t,
       currentUser: n,
       guildId: null == L ? true : L.id,

@@ -2,8 +2,8 @@
 /** chunk id: 502229, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I,
-  D: () => S
+  A: () => S,
+  D: () => I
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -42,22 +42,22 @@ function h(e) {
 let m = window.matchMedia("(prefers-reduced-motion: reduce)"),
   g = window.matchMedia("(prefers-contrast: more)"),
   E = window.matchMedia("(prefers-contrast: less)"),
-  b = window.matchMedia("(prefers-color-scheme: dark)"),
-  y = window.matchMedia("(prefers-color-scheme: light)"),
+  y = window.matchMedia("(prefers-color-scheme: dark)"),
+  b = window.matchMedia("(prefers-color-scheme: light)"),
   O = window.matchMedia("(forced-colors: active)"),
-  A = 5;
+  v = 5;
 
-function v() {
+function A() {
   let e = o.default.getCurrentUser();
   return null == e || Date.now() - e.createdAt < 864e5
 }
 
-function S() {
+function I() {
   return "windows" === (0, c.getOS)()
 }
-let I = {
+let S = {
   initBasic() {
-    m.addListener(this.handleSystemPrefersReducedMotionChanged), this.handleSystemPrefersReducedMotionChanged(m), b.addListener(this.handleSystemColorPreferencesChanged), y.addListener(this.handleSystemColorPreferencesChanged), O.addListener(this.handleSystemColorPreferencesChanged), this.handleSystemColorPreferencesChanged(), g.addListener(this.handleSystemPrefersContrastChanged), E.addListener(this.handleSystemPrefersContrastChanged), this.handleSystemPrefersContrastChanged()
+    m.addListener(this.handleSystemPrefersReducedMotionChanged), this.handleSystemPrefersReducedMotionChanged(m), y.addListener(this.handleSystemColorPreferencesChanged), b.addListener(this.handleSystemColorPreferencesChanged), O.addListener(this.handleSystemColorPreferencesChanged), this.handleSystemColorPreferencesChanged(), g.addListener(this.handleSystemPrefersContrastChanged), E.addListener(this.handleSystemPrefersContrastChanged), this.handleSystemPrefersContrastChanged()
   },
   init() {
     this.initBasic(), a.h.subscribe("ACCESSIBILITY_COLORBLIND_TOGGLE", () => {
@@ -71,7 +71,7 @@ let I = {
     })
   },
   maybeShowKeyboardNavigationExplainerModal() {
-    A = Math.max(A - 1, 0), v() || d.A.keyboardNavigationExplainerModalSeen || 0 !== A || (0, i.mMO)(async () => {
+    v = Math.max(v - 1, 0), A() || d.A.keyboardNavigationExplainerModalSeen || 0 !== v || (0, i.mMO)(async () => {
       let {
         default: e
       } = await n.e("98186").then(n.bind(n, 645905));
@@ -85,8 +85,8 @@ let I = {
   },
   handleSystemColorPreferencesChanged() {
     let e = p.Fc.NO_PREFERENCE;
-    b.matches ? e = p.Fc.DARK : y.matches && (e = p.Fc.LIGHT);
-    let t = (!c.isPlatformEmbedded || S()) && O.matches ? "active" : "none";
+    y.matches ? e = p.Fc.DARK : b.matches && (e = p.Fc.LIGHT);
+    let t = (!c.isPlatformEmbedded || I()) && O.matches ? "active" : "none";
     a.h.wait(() => {
       s.LA(e), u.RI(t)
     })

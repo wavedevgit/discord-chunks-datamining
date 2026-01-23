@@ -24,19 +24,19 @@ let o = {
       particlesPerBurst: p,
       offsetXPercentageMax: f,
       offsetXPercentageMin: h,
-      offsetYPercentageMax: y,
-      offsetYPercentageMin: b,
+      offsetYPercentageMax: m,
+      offsetYPercentageMin: y,
       customConfettiCanvas: g,
-      speedValues: m = o,
+      speedValues: b = o,
       dragCoefficientValue: O = 1.66,
       onAnimationEnd: j
     } = e, [A, x] = i.useState(null), {
       confettiCanvas: v
-    } = i.useContext(s.x), S = (0, l.f9)(null != g ? g : v, A), [P, w] = i.useState(false);
+    } = i.useContext(s.x), P = (0, l.f9)(null != g ? g : v, A), [S, _] = i.useState(false);
     i.useEffect(() => {
-      P && (null == j || j())
+      S && (null == j || j())
     });
-    let R = i.useMemo(() => {
+    let w = i.useMemo(() => {
       if (null != u) return [{
         src: u,
         colorize: false
@@ -46,18 +46,18 @@ let o = {
       if (null == t) return;
       let e = Array(null != d ? d : 4).fill(0);
       return e = e.map((r, n) => setTimeout(() => {
-        S.createMultipleConfetti(function(e, t, r, n, i) {
+        P.createMultipleConfetti(function(e, t, r, n, i) {
           var l, s;
           let u = arguments.length > 5 && true !== arguments[5] ? arguments[5] : o,
             d = arguments.length > 6 && true !== arguments[6] ? arguments[6] : 1.66,
             p = c(e.width, 100, r),
             f = c(e.height, 75, i),
             h = c(e.width, 350, t),
-            y = c(e.height, 75, n),
+            m = c(e.height, 75, n),
             {
-              xMin: b,
+              xMin: y,
               xMax: g,
-              yMin: m,
+              yMin: b,
               yMax: O
             } = u;
           return l = function(e) {
@@ -86,14 +86,14 @@ let o = {
               },
               maxValue: {
                 x: e.left + h,
-                y: e.top + y
+                y: e.top + m
               }
             },
             velocity: {
               type: "static-random",
               minValue: {
-                x: b,
-                y: m
+                x: y,
+                y: b
               },
               maxValue: {
                 x: g,
@@ -119,13 +119,13 @@ let o = {
           })(Object(s)).forEach(function(e) {
             Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(s, e))
           }), l
-        }(t.getBoundingClientRect(), f, h, y, b, m, O), null != p ? p : 50), n === e.length - 1 && null != j && w(true)
+        }(t.getBoundingClientRect(), f, h, m, y, b, O), null != p ? p : 50), n === e.length - 1 && null != j && _(true)
       }, 60 * n)), () => {
         for (let t of e) clearTimeout(t)
       }
-    }, [S, t, d, p, f, h, y, b, m, O, j]), (0, n.jsx)(l.K_, {
+    }, [P, t, d, p, f, h, m, y, b, O, j]), (0, n.jsx)(l.K_, {
       ref: x,
-      sprites: null != R ? R : a.uI,
+      sprites: null != w ? w : a.uI,
       colors: null != r ? r : a._t,
       spriteWidth: a.wn,
       spriteHeight: a.wn

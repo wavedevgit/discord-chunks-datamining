@@ -17,26 +17,26 @@ function o(t) {
     onClose: n,
     transitionState: o
   } = t;
-  return (0, a.jsx)(r.kpP, {
+  return (0, a.jsx)(l.kpP, {
     transitionState: o,
     onClose: n,
     graphic: {
-      src: i.A,
+      src: c.A,
       type: "image"
     },
     gradientColor: "blue",
-    title: c.intl.string(c.t["biy1X/"]),
-    subtitle: c.intl.format(c.t.J86cyX, {
+    title: i.intl.string(i.t["biy1X/"]),
+    subtitle: i.intl.format(i.t.J86cyX, {
       url: e
     }),
     actions: [{
-      text: c.intl.string(c.t.gQrLtr),
+      text: i.intl.string(i.t.gQrLtr),
       onClick: () => {
-        (0, l.A)(e, true)
+        (0, r.A)(e, true)
       },
       variant: "secondary"
     }, {
-      text: c.intl.string(c.t["xl8R+2"]),
+      text: i.intl.string(i.t["xl8R+2"]),
       onClick: n
     }],
     children: (0, a.jsx)(s.w, {

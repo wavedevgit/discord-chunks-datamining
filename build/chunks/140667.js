@@ -41,19 +41,19 @@
 
   function E() {}
 
-  function b() {}
-
   function y() {}
+
+  function b() {}
   var O = {};
   O[s] = function() {
     return this
   };
-  var A = Object.getPrototypeOf,
-    v = A && A(A(D([])));
-  v && v !== r && i.call(v, s) && (O = v);
-  var S = y.prototype = E.prototype = Object.create(O);
+  var v = Object.getPrototypeOf,
+    A = v && v(v(D([])));
+  A && A !== r && i.call(A, s) && (O = A);
+  var I = b.prototype = E.prototype = Object.create(O);
 
-  function I(e) {
+  function S(e) {
     ["next", "throw", "return"].forEach(function(t) {
       e[t] = function(e) {
         return this._invoke(t, e)
@@ -188,25 +188,25 @@
       done: true
     }
   }
-  b.prototype = S.constructor = y, y.constructor = b, y[l] = b.displayName = "GeneratorFunction", u.isGeneratorFunction = function(e) {
+  y.prototype = I.constructor = b, b.constructor = y, b[l] = y.displayName = "GeneratorFunction", u.isGeneratorFunction = function(e) {
     var t = "function" == typeof e && e.constructor;
-    return !!t && (t === b || "GeneratorFunction" === (t.displayName || t.name))
+    return !!t && (t === y || "GeneratorFunction" === (t.displayName || t.name))
   }, u.mark = function(e) {
-    return Object.setPrototypeOf ? Object.setPrototypeOf(e, y) : (e.__proto__ = y, l in e || (e[l] = "GeneratorFunction")), e.prototype = Object.create(S), e
+    return Object.setPrototypeOf ? Object.setPrototypeOf(e, b) : (e.__proto__ = b, l in e || (e[l] = "GeneratorFunction")), e.prototype = Object.create(I), e
   }, u.awrap = function(e) {
     return {
       __await: e
     }
-  }, I(T.prototype), T.prototype[o] = function() {
+  }, S(T.prototype), T.prototype[o] = function() {
     return this
   }, u.AsyncIterator = T, u.async = function(e, t, n, r) {
     var i = new T(d(e, t, n, r));
     return u.isGeneratorFunction(t) ? i : i.next().then(function(e) {
       return e.done ? e.value : i.next()
     })
-  }, I(S), S[l] = "Generator", S[s] = function() {
+  }, S(I), I[l] = "Generator", I[s] = function() {
     return this
-  }, S.toString = function() {
+  }, I.toString = function() {
     return "[object Generator]"
   }, u.keys = function(e) {
     var t = [];

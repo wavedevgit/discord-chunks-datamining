@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   $u: () => C,
-  IA: () => v,
+  IA: () => A,
   ID: () => N,
-  Tk: () => A,
+  Tk: () => v,
   Z$: () => R,
-  rf: () => S
+  rf: () => I
 }), require("./896048.js");
 var Chunk73153 = require("./73153.js"),
   Chunk58149 = require("./58149.js"),
@@ -34,7 +34,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,13 +59,13 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e, t) {
-  p.default.track(m.HAw.VIEW_AS_ROLES_SELECTED, O(b({
+function v(e, t) {
+  p.default.track(m.HAw.VIEW_AS_ROLES_SELECTED, O(y({
     num_roles: Object.keys(t.roles).length
   }, (0, i.H$)(e)), {
     is_viewing_as_member: t.type === h._.NEW_MEMBER
@@ -73,30 +73,30 @@ function A(e, t) {
     type: "IMPERSONATE_UPDATE",
     guildId: e,
     data: t
-  }), I(e)
+  }), S(e)
 }
 
-function v(e, t) {
+function A(e, t) {
   let n = _.A.getData(e);
-  null != n && n.type === t.type && (p.default.track(m.HAw.VIEW_AS_ROLES_SELECTED, O(b({
+  null != n && n.type === t.type && (p.default.track(m.HAw.VIEW_AS_ROLES_SELECTED, O(y({
     num_roles: Object.keys(n.roles).length
   }, (0, i.H$)(e)), {
     is_viewing_as_member: n.type === h._.NEW_MEMBER
   })), r.h.dispatch({
     type: "IMPERSONATE_UPDATE",
     guildId: e,
-    data: b({}, n, t)
-  }), I(e))
+    data: y({}, n, t)
+  }), S(e))
 }
 
-function S(e) {
+function I(e) {
   r.h.dispatch({
     type: "IMPERSONATE_STOP",
     guildId: e
   })
 }
 
-function I(e) {
+function S(e) {
   let t = d.A.getChannelId(e),
     n = s.A.getChannel(t);
   if (!(null != t && (0, g.jq)(t)) && !u.A.can(m.xBc.VIEW_CHANNEL, n)) {
@@ -119,7 +119,7 @@ function T(e, t) {
 
 function C(e, t, n) {
   let r = new Set(f.Ay.getOptedInChannels(e));
-  t.forEach(e => r.add(e)), n.forEach(e => r.delete(e)), v(e, {
+  t.forEach(e => r.add(e)), n.forEach(e => r.delete(e)), A(e, {
     type: h._.NEW_MEMBER,
     optInChannels: r
   })
@@ -129,14 +129,14 @@ function N(e, t) {
   T(e, t);
   let n = {};
   for (let r of c.A.getManyRoles(e, t)) n[r.id] = r;
-  v(e, {
+  A(e, {
     type: h._.NEW_MEMBER,
     roles: n
   })
 }
 
 function R(e, t) {
-  v(e, b({
+  A(e, y({
     type: h._.NEW_MEMBER
   }, t))
 }

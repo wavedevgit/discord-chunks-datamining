@@ -2,7 +2,7 @@
 /** chunk id: 264782, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./896048.js");
 var r, Chunk735438 = require("./735438.js"),
   a = require.n(Chunk735438),
@@ -115,7 +115,7 @@ class E extends(r = Chunk311907.Ay.Store) {
   }
 }
 l(E, "displayName", "ApplicationAssetsStore");
-let b = new E(Chunk73153.h, {
+let y = new E(Chunk73153.h, {
   APPLICATION_ASSETS_FETCH: _,
   APPLICATION_ASSETS_FETCH_SUCCESS: h,
   APPLICATION_ASSETS_UPDATE: m,

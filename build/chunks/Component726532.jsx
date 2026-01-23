@@ -25,7 +25,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk546991 = require("./546991.js");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +34,20 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function S(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -122,22 +122,22 @@ let T = () => (0, r.jsxs)(s.BJc, {
       f = a.currentPeriodEnd,
       {
         primary: h,
-        members: A
+        members: v
       } = l,
       {
-        title: S,
+        title: I,
         description: N
       } = (() => {
         switch (a.subscriptionStatus) {
           case E.Dmq.CANCELED:
             return {
-              title: y.intl.string(b.default.mCwdPj), description: y.intl.format(b.default.wH9NYG, {
+              title: b.intl.string(y.default.mCwdPj), description: b.intl.format(y.default.wH9NYG, {
                 endDate: f
               })
             };
           case E.Dmq.PAUSED:
             return {
-              title: y.intl.string(b.default.IDyd1e), description: y.intl.format(b.default["8MfYhr"], {
+              title: b.intl.string(y.default.IDyd1e), description: b.intl.format(y.default["8MfYhr"], {
                 premiumGroupProductName: (0, g.DP)(),
                 helpCenterLink: g.TE
               })
@@ -146,16 +146,16 @@ let T = () => (0, r.jsxs)(s.BJc, {
           case E.Dmq.ACCOUNT_HOLD:
           case E.Dmq.BILLING_RETRY:
             return {
-              title: y.intl.string(b.default.Duq8zp), description: y.intl.format(b.default["MHn/D6"], {
+              title: b.intl.string(y.default.Duq8zp), description: b.intl.format(y.default["MHn/D6"], {
                 endDate: f,
                 premiumGroupProductName: (0, g.DP)()
               })
             };
           default:
             return {
-              title: y.intl.formatToPlainString(b.default.xiUjMF, {
+              title: b.intl.formatToPlainString(y.default.xiUjMF, {
                 premiumGroupProductName: (0, g.DP)()
-              }), description: y.intl.format(b.default["2HEyqG"], {
+              }), description: b.intl.format(y.default["2HEyqG"], {
                 primaryName: (0, u.$3)(h),
                 premiumGroupProductName: (0, g.DP)(),
                 helpCenterLink: g.TE
@@ -168,7 +168,7 @@ let T = () => (0, r.jsxs)(s.BJc, {
           let {
             default: e
           } = await n.e("92796").then(n.bind(n, 205463));
-          return t => (0, r.jsx)(e, I(v({}, t), {
+          return t => (0, r.jsx)(e, S(A({}, t), {
             premiumGroupSubscriptionId: d,
             currentUser: i
           }))
@@ -180,11 +180,11 @@ let T = () => (0, r.jsxs)(s.BJc, {
       children: [(0, r.jsx)(T, {}), (0, r.jsxs)("div", {
         className: O.wS,
         children: [(0, r.jsx)(C, {
-          title: S,
+          title: I,
           description: N,
           button: (0, r.jsx)(s.Button, {
             variant: "secondary",
-            text: y.intl.string(b.default.NCu2JD),
+            text: b.intl.string(y.default.NCu2JD),
             onClick: R
           })
         }), (0, r.jsxs)(s.BJc, {
@@ -198,11 +198,11 @@ let T = () => (0, r.jsxs)(s.BJc, {
             variant: "heading-sm/medium",
             color: "text-strong",
             className: O.Or,
-            children: y.intl.string(b.default["oqw/KW"])
+            children: b.intl.string(y.default["oqw/KW"])
           }), (0, r.jsx)(m.U4, {
             user: h,
             isOwnUser: false
-          }), A.map(e => (0, r.jsx)(m.YF, {
+          }), v.map(e => (0, r.jsx)(m.YF, {
             user: e,
             isOwnUser: e.id === (null == i ? true : i.id)
           }, e.id))]
@@ -252,7 +252,7 @@ let T = () => (0, r.jsxs)(s.BJc, {
           children: [(0, r.jsx)(s.Heading, {
             variant: "heading-sm/medium",
             color: "text-strong",
-            children: y.intl.string(b.default["oqw/KW"])
+            children: b.intl.string(y.default["oqw/KW"])
           }), (0, r.jsx)(h.A, {
             onInvite: a,
             disabled: !i
@@ -260,7 +260,7 @@ let T = () => (0, r.jsxs)(s.BJc, {
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/medium",
           color: "text-subtle",
-          children: y.intl.format(b.default["/a/UoP"], {
+          children: b.intl.format(y.default["/a/UoP"], {
             usedSeats: u,
             totalSeats: c
           })
@@ -291,8 +291,8 @@ let T = () => (0, r.jsxs)(s.BJc, {
       isLoading: h
     } = (0, p.A)(t.id), {
       numAvailableInvites: m,
-      numTotalSeats: A,
-      numUsedSeats: S
+      numTotalSeats: v,
+      numUsedSeats: I
     } = (0, a.cf)([f.A], () => ({
       numAvailableInvites: f.A.getNumAvailableInvites(),
       numTotalSeats: f.A.getNumTotalSeats(),
@@ -304,7 +304,7 @@ let T = () => (0, r.jsxs)(s.BJc, {
         let {
           PremiumBrandRefreshSubscriptionCancellationModal: e
         } = await n.e("72820").then(n.bind(n, 281439));
-        return n => (0, r.jsx)(e, I(v({}, n), {
+        return n => (0, r.jsx)(e, S(A({}, n), {
           premiumSubscription: t,
           analyticsLocations: u
         }))
@@ -319,7 +319,7 @@ let T = () => (0, r.jsxs)(s.BJc, {
         let {
           default: i
         } = await n.e("21305").then(n.bind(n, 391040));
-        return n => (0, r.jsx)(i, I(v({}, n), {
+        return n => (0, r.jsx)(i, S(A({}, n), {
           subscriptionId: t.id,
           member: e
         }))
@@ -331,7 +331,7 @@ let T = () => (0, r.jsxs)(s.BJc, {
         let {
           default: e
         } = await n.e("73987").then(n.bind(n, 773486));
-        return n => (0, r.jsx)(e, I(v({}, n), {
+        return n => (0, r.jsx)(e, S(A({}, n), {
           subscription: t
         }))
       })
@@ -346,7 +346,7 @@ let T = () => (0, r.jsxs)(s.BJc, {
         let {
           default: i
         } = await n.e("15554").then(n.bind(n, 115225));
-        return n => (0, r.jsx)(i, I(v({}, n), {
+        return n => (0, r.jsx)(i, S(A({}, n), {
           subscriptionId: t.id,
           invitedUser: e,
           subscriptionGroupMemberId: null == a ? true : a.id
@@ -356,14 +356,14 @@ let T = () => (0, r.jsxs)(s.BJc, {
       switch (P) {
         case E.Dmq.CANCELED:
           return {
-            title: y.intl.string(b.default.KME8Q6), description: y.intl.format(b.default["1sNA+Y"], {
+            title: b.intl.string(y.default.KME8Q6), description: b.intl.format(y.default["1sNA+Y"], {
               endDate: t.currentPeriodEnd,
               premiumGroupProductName: (0, g.DP)()
             })
           };
         case E.Dmq.PAUSED:
           return {
-            title: y.intl.string(b.default["4flKoC"]), description: y.intl.format(b.default["Q++BmO"], {
+            title: b.intl.string(y.default["4flKoC"]), description: b.intl.format(y.default["Q++BmO"], {
               premiumGroupProductName: (0, g.DP)()
             })
           };
@@ -371,16 +371,16 @@ let T = () => (0, r.jsxs)(s.BJc, {
         case E.Dmq.ACCOUNT_HOLD:
         case E.Dmq.BILLING_RETRY:
           return {
-            title: y.intl.string(b.default.cfeFEt), description: y.intl.format(b.default["5+LPUW"], {
+            title: b.intl.string(y.default.cfeFEt), description: b.intl.format(y.default["5+LPUW"], {
               endDate: t.currentPeriodEnd,
               helpCenterLink: g.TE
             })
           };
         default:
           return {
-            title: y.intl.formatToPlainString(b.default.NRCfnQ, {
+            title: b.intl.formatToPlainString(y.default.NRCfnQ, {
               premiumGroupProductName: (0, g.DP)()
-            }), description: y.intl.format(b.default.lvnrnb, {
+            }), description: b.intl.format(y.default.lvnrnb, {
               totalSeats: g.LM,
               premiumGroupProductName: (0, g.DP)(),
               helpCenterLink: g.TE
@@ -390,13 +390,13 @@ let T = () => (0, r.jsxs)(s.BJc, {
     }, U = () => c.ki(t) ? (0, r.jsx)(s.Button, {
       variant: "expressive",
       size: "md",
-      text: y.intl.string(b.default.EFTJMQ),
+      text: b.intl.string(y.default.EFTJMQ),
       onClick: x,
       loading: N
     }) : (0, r.jsx)(s.Button, {
       variant: "secondary",
       size: "md",
-      text: y.intl.string(b.default.oO0EYw),
+      text: b.intl.string(y.default.oO0EYw),
       onClick: D
     }), G = i.useMemo(() => !g.BE.includes(t.status) && m > 0, [t.status, m]), {
       title: V,
@@ -418,8 +418,8 @@ let T = () => (0, r.jsxs)(s.BJc, {
           onInvite: j,
           onRemoveMember: L,
           onRemoveInvitedUser: M,
-          numTotalSeats: A,
-          numUsedSeats: S,
+          numTotalSeats: v,
+          numUsedSeats: I,
           numAvailableInvites: m
         })]
       })]

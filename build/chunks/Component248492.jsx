@@ -1,7 +1,7 @@
 /** Chunk was on 58652 **/
 /** chunk id: 248492, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,36 +17,36 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk449154 = require("./449154.js"),
   Chunk532406 = require("./532406.js");
-let f = e => {
+let _ = e => {
   var t, n;
   let {
-    entry: f
+    entry: _
   } = e, {
-    name: v
-  } = f, h = (0, a.bG)([m.default], () => m.default.getNewestTokenForApplication(f.id)), j = null != (t = f.getIconURL(40)) ? t : g, _ = (0, d.A)({
-    application: f
+    name: h
+  } = _, v = (0, i.bG)([m.default], () => m.default.getNewestTokenForApplication(_.id)), f = null != (t = _.getIconURL(40)) ? t : g, j = (0, c.A)({
+    application: _
   }), A = r.useRef(false);
   r.useEffect(() => {
     A.current || (o.A.fetch(), A.current = true)
   }, []);
-  let y = null != h ? b.default.extractTimestamp(h.id) : true;
+  let y = null != v ? p.default.extractTimestamp(v.id) : true;
   return (0, l.jsxs)("div", {
     className: x.kL,
     children: [(0, l.jsx)(s.Heading, {
       className: x.wx,
       variant: "heading-sm/semibold",
-      children: p.intl.string(p.t["aYfK/w"])
+      children: b.intl.string(b.t["aYfK/w"])
     }), (0, l.jsx)("div", {
       className: x.vU,
       children: (0, l.jsxs)("div", {
         className: x.qi,
-        children: [(0, l.jsx)(c.Ay, {
-          mask: c.Ay.Masks.AVATAR_DEFAULT,
+        children: [(0, l.jsx)(d.Ay, {
+          mask: d.Ay.Masks.AVATAR_DEFAULT,
           width: 40,
           height: 40,
           className: x.VE,
           children: (0, l.jsx)("img", {
-            src: j,
+            src: f,
             alt: "",
             className: x.Z2
           })
@@ -55,26 +55,26 @@ let f = e => {
           children: [(0, l.jsx)(s.Text, {
             color: "text-strong",
             variant: "text-md/medium",
-            children: v
-          }), _.length > 0 ? (0, l.jsxs)(l.Fragment, {
+            children: h
+          }), j.length > 0 ? (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(s.Text, {
               color: "text-default",
               variant: "text-md/normal",
-              children: (0, u.A)(_.length)
-            }), (0, l.jsx)(i.A, {
+              children: (0, u.A)(j.length)
+            }), (0, l.jsx)(a.A, {
               className: x.uM,
-              guilds: _,
+              guilds: j,
               maxGuilds: 6
             })]
           }) : (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(s.Text, {
               color: "text-default",
               variant: "text-md/normal",
-              children: null == (n = f.bot) ? true : n.tag
+              children: null == (n = _.bot) ? true : n.tag
             }), null != y && (0, l.jsx)(s.Text, {
               color: "text-default",
               variant: "text-md/normal",
-              children: p.intl.formatToPlainString(p.t.C9rUO8, {
+              children: b.intl.formatToPlainString(b.t.C9rUO8, {
                 authorizedAt: y
               })
             })]

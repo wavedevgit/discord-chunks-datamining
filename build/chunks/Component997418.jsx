@@ -2,7 +2,7 @@
 /** chunk id: 997418, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,30 +15,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk583970 = require("./583970.js"),
   Chunk985018 = require("./985018.jsx");
 
-function g() {
+function m() {
   let e = (0, l.bG)([d.A], () => d.A.getGuild()),
     t = null == e ? true : e.id,
     n = (0, l.bG)([d.A], () => d.A.getProfileError()),
-    g = (0, l.bG)([d.A], () => d.A.getGuildProfile()),
-    b = (0, l.bG)([c.A], () => c.A.getIsUpdating(t)),
-    m = i.useMemo(() => (null == n ? true : n.status) === 429 ? f.intl.string(u.default["bFRS/s"]) : null == n ? true : n.getAnyErrorMessage(), [n]),
-    p = i.useCallback(() => {
-      if (null == e || null == g) return;
+    m = (0, l.bG)([d.A], () => d.A.getGuildProfile()),
+    p = (0, l.bG)([o.A], () => o.A.getIsUpdating(t)),
+    f = i.useMemo(() => (null == n ? true : n.status) === 429 ? g.intl.string(u.default["bFRS/s"]) : null == n ? true : n.getAnyErrorMessage(), [n]),
+    b = i.useCallback(() => {
+      if (null == e || null == m) return;
       let t = {
-        tag: g.tag,
-        badge: g.badge,
-        badgeColorPrimary: g.badgeColorPrimary,
-        badgeColorSecondary: g.badgeColorSecondary
+        tag: m.tag,
+        badge: m.badge,
+        badgeColorPrimary: m.badgeColorPrimary,
+        badgeColorSecondary: m.badgeColorSecondary
       };
       (0, a._C)(e.id, t)
-    }, [e, g]),
-    x = i.useCallback(() => {
-      null != t && o.A.init(t)
+    }, [e, m]),
+    h = i.useCallback(() => {
+      null != t && c.A.init(t)
     }, [t]);
   return (0, r.jsx)(s.A, {
-    submitting: b,
-    errorMessage: m,
-    onSave: p,
-    onReset: x
+    submitting: p,
+    errorMessage: f,
+    onSave: b,
+    onReset: h
   })
 }

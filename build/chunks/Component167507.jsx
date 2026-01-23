@@ -79,10 +79,10 @@ function f(e) {
     channelId: h,
     attachmentId: m,
     name: p
-  } = e, f = "https://".concat(n, "/").concat(i ? "ephemeral-attachments" : "attachments", "/").concat(h, "/").concat(m, "/").concat(p), x = l.useCallback(async () => {
+  } = e, f = "https://".concat(n, "/").concat(i ? "ephemeral-attachments" : "attachments", "/").concat(h, "/").concat(m, "/").concat(p), g = l.useCallback(async () => {
     let e = await (0, d.AN)(f);
     o.A.trackLinkClicked(e), (0, s.A)(e)
-  }, [f]), g = l.useCallback(e => {
+  }, [f]), x = l.useCallback(e => {
     (0, a.L3)(e, async () => {
       let {
         default: e
@@ -125,8 +125,8 @@ function f(e) {
   return (0, r.jsxs)(u.A, {
     role: "link",
     href: f,
-    onClick: x,
-    onContextMenu: g,
+    onClick: g,
+    onContextMenu: x,
     className: "attachmentLink",
     children: [(0, r.jsx)(c.PtA, {
       size: "xs",

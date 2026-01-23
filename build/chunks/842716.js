@@ -2,7 +2,7 @@
 /** chunk id: 842716, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./733351.js"), require("./667532.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk506774 = require("./506774.js"),
@@ -77,7 +77,7 @@ class E extends(r = Chunk311907.Ay.Store) {
   }
 }
 l(E, "displayName", Chunk768570.yQ);
-let b = new E(Chunk73153.h, {
+let y = new E(Chunk73153.h, {
   SEARCH_HISTORY_WEB_CLEAR_ITEMS: _,
   SEARCH_HISTORY_WEB_REMOVE_ITEM: h,
   SEARCH_HISTORY_WEB_ADD_ITEM: p,

@@ -4,8 +4,8 @@
 require.d(exports, {
   $r: () => C,
   AN: () => R,
-  BX: () => y,
-  fr: () => b,
+  BX: () => b,
+  fr: () => y,
   w6: () => O
 }), require("./747238.js"), require("./896048.js");
 var r, i, a, Chunk562465 = require("./562465.js"),
@@ -25,14 +25,14 @@ let f = new Set(["/attachments/", "/ephemeral-attachments/"]),
   g = false,
   E = false;
 
-function b(e) {
+function y(e) {
   let t = h.has(e.hostname),
     n = g && d(e.hostname),
     r = Array.from(f).some(t => e.pathname.startsWith(t));
   return (t || n) && r
 }
 
-function y(e) {
+function b(e) {
   var t;
   let n = m.has(e.hostname),
     r = E && d(null != (t = e.hostname) ? t : ""),
@@ -47,35 +47,35 @@ function O(e) {
   return t
 }
 
-function A(e) {
+function v(e) {
   let t = e.searchParams.get("ex"),
     n = parseInt(null != t ? t : "", 16);
   return isNaN(n) ? true : n * o.A.Millis.SECOND
 }
 
-function v(e) {
-  let t = A(e);
+function A(e) {
+  let t = v(e);
   return null == t || t <= Date.now() + _
 }
 
-function S(e) {
+function I(e) {
   let t = l.A.toURLSafe(e.url);
-  return null != t && v(t)
+  return null != t && A(t)
 }
 
-function I(e) {
+function S(e) {
   if (null == e) returnfalse;
   let t = l.A.toURLSafe(e.url);
-  return null != t && !!b(t) && v(t)
+  return null != t && !!y(t) && A(t)
 }
 
 function T(e) {
   var t;
-  return I(e.image) || (null == (t = e.images) ? true : t.some(I)) || I(e.video)
+  return S(e.image) || (null == (t = e.images) ? true : t.some(S)) || S(e.video)
 }
 
 function C(e) {
-  return e.attachments.some(S) || e.embeds.some(T)
+  return e.attachments.some(I) || e.embeds.some(T)
 }
 async function N(e) {
   let t = await s.Bo.post({
@@ -89,7 +89,7 @@ async function N(e) {
 }
 async function R(e) {
   let t = l.A.toURLSafe(e);
-  if (null == t || !v(t)) return e;
+  if (null == t || !A(t)) return e;
   let n = await N(e);
   return null != n ? n : e
 }

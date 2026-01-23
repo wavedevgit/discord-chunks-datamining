@@ -64,7 +64,7 @@ let _ = e => {
     })
   },
   g = (e, t, n, g, E) => {
-    let b = {
+    let y = {
         0: {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t["09yRK3"])
@@ -349,10 +349,10 @@ let _ = e => {
         }
       },
       {
-        enabled: y
+        enabled: b
       } = l.K.useExperiment({
         location: "useGetPlanComparisonTableRows"
       }),
       O = E === c.xc.FP_ONLY;
-    return [...y ? [] : [b[0]], b[1], b[2], b[3], b[4], b[5], b[6], ...O ? [] : [b[7]], b[8], b[9], b[10], b[11], b[12], ...O ? [] : [b[13]], b[14], b[15], b[16], b[17], b[18], b[23], b[24]]
+    return [...b ? [] : [y[0]], y[1], y[2], y[3], y[4], y[5], y[6], ...O ? [] : [y[7]], y[8], y[9], y[10], y[11], y[12], ...O ? [] : [y[13]], y[14], y[15], y[16], y[17], y[18], y[23], y[24]]
   }

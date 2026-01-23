@@ -1,8 +1,8 @@
 /** Chunk was on 59275 **/
-/** chunk id: 695413, original params: e,t,l (module,exports,require) **/
+/** chunk id: 695413, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,56 +21,56 @@ var Chunk627968 = require("./627968.js"),
   Chunk940622 = require("./940622.js"),
   Chunk357704 = require("./357704.js"),
   Chunk758836 = require("./758836.js");
-let A = e => {
-  let t, l, A, x, {
-      isBlockLoading: S = false,
-      heroBlock: C,
-      tab: O
+let v = e => {
+  let t, n, v, C, {
+      isBlockLoading: A = false,
+      heroBlock: x,
+      tab: S
     } = e,
-    _ = (0, i.uM)(),
-    y = r.useMemo(() => o.A.getCategoryForProduct(C.rewardSkuId), [C.rewardSkuId]),
-    j = (0, s.bG)([c.A], () => c.A.getPurchase(C.rewardSkuId)),
+    O = (0, i.uM)(),
+    y = l.useMemo(() => o.A.getCategoryForProduct(x.rewardSkuId), [x.rewardSkuId]),
+    j = (0, s.bG)([c.A], () => c.A.getPurchase(x.rewardSkuId)),
     {
-      products: L
-    } = (t = (0, d.A)(), l = r.useMemo(() => S ? [] : t(C.rankedSkuIds).filter(e => e.skuId !== C.rewardSkuId || null != j), [S, t, C.rankedSkuIds, j, C.rewardSkuId]), A = (0, u.p)()(l), x = (0, f.X)(A), {
-      products: (0, h.od)(x)
+      products: T
+    } = (t = (0, d.A)(), n = l.useMemo(() => A ? [] : t(x.rankedSkuIds).filter(e => e.skuId !== x.rewardSkuId || null != j), [A, t, x.rankedSkuIds, j, x.rewardSkuId]), v = (0, u.p)()(n), C = (0, g.X)(v), {
+      products: (0, b.od)(C)
     }),
-    T = r.useMemo(() => !S && 0 !== C.rankedSkuIds.length && !(L.length > 0) && C.rankedSkuIds.every(e => {
+    L = l.useMemo(() => !A && 0 !== x.rankedSkuIds.length && !(T.length > 0) && x.rankedSkuIds.every(e => {
       var t;
       return (null == (t = o.A.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
-    }), [S, C.rankedSkuIds, L.length]),
-    I = S || T,
+    }), [A, x.rankedSkuIds, T.length]),
+    I = A || L,
     {
-      readyToClaim: N
-    } = (0, E.K)(y, C.rewardSkuId),
-    k = null == j && null != C.rewardSkuId && null != y;
-  return (0, n.jsx)(a.A, {
+      readyToClaim: k
+    } = (0, h.K)(y, x.rewardSkuId),
+    N = null == j && null != x.rewardSkuId && null != y;
+  return (0, r.jsx)(a.A, {
     gap: "xl",
-    children: I ? (0, n.jsx)(n.Fragment, {
-      children: [true, true, true, true, true].map((e, t) => (0, n.jsx)(m.A, {}, t))
-    }) : (0, n.jsxs)(n.Fragment, {
-      children: [k && N && (0, n.jsx)(i.R9, {
+    children: I ? (0, r.jsx)(r.Fragment, {
+      children: [true, true, true, true, true].map((e, t) => (0, r.jsx)(m.A, {}, t))
+    }) : (0, r.jsxs)(r.Fragment, {
+      children: [N && k && (0, r.jsx)(i.R9, {
         newValue: {
           tilePosition: 0,
           pageSection: "top 4",
           categoryPosition: 0
         },
-        children: (0, n.jsx)(p.A, {
+        children: (0, r.jsx)(_.A, {
           category: y,
-          rewardSkuId: C.rewardSkuId
+          rewardSkuId: x.rewardSkuId
         })
-      }, C.rewardSkuId), L.map((e, t) => {
-        let l = o.A.getCategoryForProduct(e.skuId);
-        return null == e || null == l ? null : (0, n.jsx)(i.R9, {
+      }, x.rewardSkuId), T.map((e, t) => {
+        let n = o.A.getCategoryForProduct(e.skuId);
+        return null == e || null == n ? null : (0, r.jsx)(i.R9, {
           newValue: {
             tilePosition: t,
             pageSection: "top 4",
             categoryPosition: 0
           },
-          children: (0, n.jsx)(b.A, {
+          children: (0, r.jsx)(f.A, {
             skuId: null == e ? true : e.skuId,
-            prioritizedCurrency: O === v.G2.ORBS ? g.Hi.ORBS : true,
-            onClickAnalytics: (0, g.UU)(e, O, _)
+            prioritizedCurrency: S === E.G2.ORBS ? p.Hi.ORBS : true,
+            onClickAnalytics: (0, p.UU)(e, S, O)
           }, e.skuId)
         }, null == e ? true : e.skuId)
       })]

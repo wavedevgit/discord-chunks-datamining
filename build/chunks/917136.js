@@ -4,9 +4,9 @@
 require.d(exports, {
   AF: () => E,
   JQ: () => _,
-  Mn: () => b,
+  Mn: () => y,
   Ud: () => f,
-  XW: () => y,
+  XW: () => b,
   YS: () => p,
   c6: () => m,
   fR: () => h,
@@ -168,13 +168,13 @@ async function E(e, t, n) {
   })
 }
 
-function b() {
+function y() {
   a.h.dispatch({
     type: "WEBAUTHN_TRIGGER_REGISTER"
   })
 }
 
-function y() {
+function b() {
   a.h.dispatch({
     type: "WEBAUTHN_CLEAR_REGISTER_TRIGGER"
   })

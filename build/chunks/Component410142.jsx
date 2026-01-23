@@ -64,18 +64,18 @@ function m(e) {
     action: g,
     className: E
   } = e, {
-    onInteraction: b
-  } = i.useContext(o.x), y = i.useRef(null), O = i.useId();
+    onInteraction: y
+  } = i.useContext(o.x), b = i.useRef(null), O = i.useId();
   i.useEffect(() => {
-    _ && (0, l.Y)(y)
+    _ && (0, l.Y)(b)
   }, [_]);
-  let A = i.useCallback(e => {
-    g(e), null == b || b({
+  let v = i.useCallback(e => {
+    g(e), null == y || y({
       type: o.Q.SWITCH
     })
-  }, [g, b]);
+  }, [g, y]);
   return (0, r.jsxs)("div", h(p({
-    ref: y,
+    ref: b,
     className: s()(d.item, d.switchItem, d.hideInteraction, u.jV[t], E, {
       [d.disabled]: f
     }),
@@ -94,7 +94,7 @@ function m(e) {
       children: (0, r.jsx)(c.dOG, {
         id: O,
         checked: a,
-        onChange: A,
+        onChange: v,
         disabled: f
       })
     })]

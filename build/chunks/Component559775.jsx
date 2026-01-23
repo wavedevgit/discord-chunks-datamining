@@ -2,7 +2,7 @@
 /** chunk id: 559775, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -41,7 +41,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,8 +52,8 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -63,7 +63,7 @@ function O(e, t) {
     disabled: n,
     type: a,
     channel: g
-  } = e, [b, O, A, v] = (0, d.RQ)(e => [e.activeView, e.pickerId, e.activeChannelId, e.activeViewType], o.x), S = false, I = b === _.kx.STICKER && v === a && A === g.id, T = false, C = i.useCallback(() => {
+  } = e, [y, O, v, A] = (0, d.RQ)(e => [e.activeView, e.pickerId, e.activeChannelId, e.activeViewType], o.x), I = false, S = y === _.kx.STICKER && A === a && v === g.id, T = false, C = i.useCallback(() => {
     (0, d.r$)(_.kx.STICKER, a, g.id)
   }, [a, g.id]), {
     Component: N,
@@ -77,18 +77,18 @@ function O(e, t) {
       shouldShow: null != P,
       text: h.intl.string(h.t.oOJ7KU),
       keyboardShortcut: P,
-      children: (0, r.jsx)(p.A, y(E({
+      children: (0, r.jsx)(p.A, b(E({
         className: s()(m.x6, m.KE)
       }, R), {
         onClick: () => {
           C(), w()
         },
-        isActive: I,
+        isActive: S,
         "aria-label": h.intl.string(h.t.rZpidU),
-        "aria-expanded": I,
+        "aria-expanded": S,
         "aria-haspopup": "dialog",
         "aria-controls": O,
-        sparkle: S,
+        sparkle: I,
         notification: T ? p.V.UPDATE : null,
         children: (0, r.jsx)(N, {
           size: "refresh_sm",
@@ -98,4 +98,4 @@ function O(e, t) {
     })
   })
 }
-let A = Chunk64700.memo(Chunk64700.forwardRef(O))
+let v = Chunk64700.memo(Chunk64700.forwardRef(O))

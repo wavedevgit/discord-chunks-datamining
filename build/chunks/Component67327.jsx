@@ -91,8 +91,8 @@ let Z = e => {
     return i.useEffect(() => {
       var e;
       if (t !== $.frR.CONFIRM) return;
-      let n = T.A.getSoundById(r);
-      (0, I.playGiftSound)(r, null != (e = null == n ? true : n.volume) ? e : 1)
+      let n = I.A.getSoundById(r);
+      (0, C.playGiftSound)(r, null != (e = null == n ? true : n.volume) ? e : 1)
     }, [t, r]), null
   };
 class et extends Chunk64700.Component {
@@ -104,10 +104,10 @@ class et extends Chunk64700.Component {
       giftCode: n,
       emojiName: i
     } = this.props;
-    null == e && null != t && b.Ay.fetchApplication(t.applicationId);
+    null == e && null != t && y.Ay.fetchApplication(t.applicationId);
     let l = null != r || null != n.giftStyle,
       s = (0, O.hU)(n),
-      a = null != i ? M.Ay.getURL(i) : true;
+      a = null != i ? G.Ay.getURL(i) : true;
     this.setState({
       isCustomGift: l,
       isCollectiblesGift: s,
@@ -126,7 +126,7 @@ class et extends Chunk64700.Component {
       opened: l,
       isCustomGift: s
     } = this.state;
-    return (0, G.v3)(e, r, {
+    return (0, L.v3)(e, r, {
       error: n,
       accepted: i,
       accepting: t,
@@ -135,7 +135,7 @@ class et extends Chunk64700.Component {
     })
   }
   get buttonText() {
-    return (0, G.UJ)(this.step, this.props.giftCode, {
+    return (0, L.UJ)(this.step, this.props.giftCode, {
       isCustomGift: this.state.isCustomGift
     })
   }
@@ -177,9 +177,9 @@ class et extends Chunk64700.Component {
         }
         return Q.intl.formatToPlainString(Q.t["0UR0u4"], {
           sender: t,
-          timeInterval: (null == i ? true : i.interval) === B.WT.MONTH ? Q.intl.string(Q.t.FPybU7) : Q.intl.string(Q.t.tfqrhj)
+          timeInterval: (null == i ? true : i.interval) === z.WT.MONTH ? Q.intl.string(Q.t.FPybU7) : Q.intl.string(Q.t.tfqrhj)
         })
-      } return null == this.props.sku ? null : (0, G.n$)(this.step, this.props.giftCode, this.props.sku)
+      } return null == this.props.sku ? null : (0, L.n$)(this.step, this.props.giftCode, this.props.sku)
   }
   get secondHeaderText() {
     if (!this.state.isCustomGift || this.state.opened || this.state.accepted) return null;
@@ -202,7 +202,7 @@ class et extends Chunk64700.Component {
       isCustomGift: s,
       opened: a
     } = this.state;
-    return !a && s ? null : (0, G.e_)({
+    return !a && s ? null : (0, L.e_)({
       step: this.step,
       sku: e,
       libraryApplication: r,
@@ -221,7 +221,7 @@ class et extends Chunk64700.Component {
       error: r,
       accepted: n
     } = this.state;
-    return (0, G.u1)(e, r, n, t, this.handleGoToLibrary)
+    return (0, L.u1)(e, r, n, t, this.handleGoToLibrary)
   }
   get handleClick() {
     let {
@@ -252,7 +252,7 @@ class et extends Chunk64700.Component {
     } = this.props, {
       isCustomGift: s
     } = this.state;
-    L.default.track($.HAw.GIFT_ACCEPT_STEP, {
+    M.default.track($.HAw.GIFT_ACCEPT_STEP, {
       to_step: this.step,
       location_stack: l,
       has_custom_message: s,
@@ -278,13 +278,13 @@ class et extends Chunk64700.Component {
       emojiName: p,
       soundId: f,
       isThemeDark: h
-    } = this.props, y = N.default.getUser(i.userId), {
-      isCustomGift: b,
+    } = this.props, m = N.default.getUser(i.userId), {
+      isCustomGift: y,
       isCollectiblesGift: g,
-      accepted: m,
+      accepted: b,
       opened: O,
       emojiURL: j
-    } = this.state, x = N.default.getCurrentUser(), v = this.step === $.frR.ERROR, S = (null == i ? true : i.userId) != null && null != x && (null == x ? true : x.id) != null && i.userId === x.id;
+    } = this.state, x = N.default.getCurrentUser(), v = this.step === $.frR.ERROR, P = (null == i ? true : i.userId) != null && null != x && (null == x ? true : x.id) != null && i.userId === x.id;
     switch (this.step) {
       case $.frR.ERROR:
         null == c || c(i, false);
@@ -301,12 +301,12 @@ class et extends Chunk64700.Component {
         className: q.yl,
         "aria-labelledby": l,
         parentComponent: "GiftCodeModal",
-        children: [null != i.giftStyle && !b && !g && (0, n.jsx)(z.A, {
+        children: [null != i.giftStyle && !y && !g && (0, n.jsx)(V.A, {
           defaultAnimationState: this.getDefaultAnimationStatus(),
           idleAnimationState: this.getIdleAnimationStatus(),
           giftStyle: i.giftStyle,
           className: q.C9
-        }), !b && (0, n.jsx)("div", {
+        }), !y && (0, n.jsx)("div", {
           className: q.Dv
         }), !g && (0, n.jsx)(u.s_y, {
           "data-migration-pending": true,
@@ -315,11 +315,11 @@ class et extends Chunk64700.Component {
         }), (0, n.jsxs)(u.$mQ, {
           "data-migration-pending": true,
           className: s()({
-            [q.Qs]: !b,
-            [q.Fl]: b
+            [q.Qs]: !y,
+            [q.Fl]: y
           }),
-          children: [!g && (null == i.giftStyle || b && m) ? (0, n.jsx)(P.A, {
-            size: P.M.LARGE,
+          children: [!g && (null == i.giftStyle || y && b) ? (0, n.jsx)(S.A, {
+            size: S.M.LARGE,
             game: e,
             skuId: i.skuId
           }) : null, v && (0, n.jsx)("img", {
@@ -328,23 +328,23 @@ class et extends Chunk64700.Component {
           }), (0, n.jsxs)(u.Heading, {
             id: l,
             className: s()({
-              [q.Ry]: b && !m,
-              [q.wx]: !b || m
+              [q.Ry]: y && !b,
+              [q.wx]: !y || b
             }),
             variant: "heading-sm/semibold",
             children: [(0, n.jsx)("div", {
               className: s()({
-                [q.Qw]: b
+                [q.Qw]: y
               }),
               children: this.firstHeaderText
             }), (0, n.jsx)("div", {
               children: this.secondHeaderText
             })]
-          }), !(b && !m) && (0, n.jsx)(u.Text, {
+          }), !(y && !b) && (0, n.jsx)(u.Text, {
             className: q.rf,
             variant: "text-sm/normal",
             children: this.bodyText
-          }), b && !g && null != i.giftStyle && !m && !v && (0, n.jsx)(z.A, {
+          }), y && !g && null != i.giftStyle && !b && !v && (0, n.jsx)(V.A, {
             defaultAnimationState: this.getDefaultAnimationStatus(),
             idleAnimationState: this.getIdleAnimationStatus(),
             className: q.l$,
@@ -355,12 +355,12 @@ class et extends Chunk64700.Component {
             className: q.rf,
             variant: "text-md/normal",
             children: this.errorMessage
-          }), b && this.state.opened && !this.state.accepted && !v && null != d && "" !== d && !S && (0, n.jsxs)(n.Fragment, {
+          }), y && this.state.opened && !this.state.accepted && !v && null != d && "" !== d && !P && (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)(u.Heading, {
               id: l,
               variant: "heading-md/semibold",
               children: Q.intl.format(Q.t.DDO4Wz, {
-                sender: U.Ay.getName(y)
+                sender: U.Ay.getName(m)
               })
             }), (0, n.jsx)(u.Text, {
               className: q.$B,
@@ -376,12 +376,12 @@ class et extends Chunk64700.Component {
             }
           })]
         })]
-      }), null != i.giftStyle && !o && this.step !== $.frR.ERROR && !m && !t && O && (null == p || null == j ? (0, n.jsx)(Z, {
-        openedGift: O && !m && !t
-      }) : (0, n.jsx)(V.A, {
+      }), null != i.giftStyle && !o && this.step !== $.frR.ERROR && !b && !t && O && (null == p || null == j ? (0, n.jsx)(Z, {
+        openedGift: O && !b && !t
+      }) : (0, n.jsx)(B.A, {
         confettiTarget: this.modalRef.current,
         emojiURL: j
-      })), !m && !t && O && null != f && (0, n.jsx)(ee, {
+      })), !b && !t && O && null != f && (0, n.jsx)(ee, {
         soundId: f,
         step: this.step
       })]
@@ -426,7 +426,7 @@ class et extends Chunk64700.Component {
         onClose: e,
         libraryApplication: t
       } = this.props;
-      (0, w.pX)($.BVt.APPLICATION_LIBRARY, {
+      (0, _.pX)($.BVt.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != t ? t.id : true
         }
@@ -442,10 +442,10 @@ let er = Chunk311907.Ay.connectStores([Chunk189081.A, Chunk67480.A, Chunk587895.
     } = e, r = D.A.get(t.skuId), n = null != r ? g.A.getApplication(r.applicationId) : null, i = f.A.useReducedMotion;
     return {
       sku: r,
-      libraryApplication: null != r && (null == t ? true : t.entitlementBranches) != null ? (0, G.YI)(t.entitlementBranches, r, _.A) : null,
+      libraryApplication: null != r && (null == t ? true : t.entitlementBranches) != null ? (0, L.YI)(t.entitlementBranches, r, E.A) : null,
       application: n,
       subscriptionPlan: null != t.subscriptionPlanId ? (0, F.c9)(t.subscriptionPlanId) : null,
-      accepting: E.A.getIsAccepting(t.code),
+      accepting: T.A.getIsAccepting(t.code),
       useReducedMotion: i
     }
   })(e => {
@@ -458,10 +458,10 @@ let er = Chunk311907.Ay.connectStores([Chunk189081.A, Chunk67480.A, Chunk587895.
       analyticsLocations: o,
       emojiName: c,
       soundId: u
-    } = e, d = null != t && (0, R.bF)(t);
+    } = e, d = null != t && (0, w.bF)(t);
     return (i.useEffect(() => {
       if (d) {
-        (0, C.b)({
+        (0, R.b)({
           sku: t,
           giftCode: r,
           channelContext: l,
@@ -499,20 +499,20 @@ let er = Chunk311907.Ay.connectStores([Chunk189081.A, Chunk67480.A, Chunk587895.
         }(e, t), Object.getOwnPropertySymbols)
         for (i = 0, r = Object.getOwnPropertySymbols(e); i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
       return l
-    }(e, ["channelContext", "code", "customGiftMessage", "emojiName", "soundId", "onClose"]), b = (0, S.GV)(), g = (0, o.bG)([E.A], () => E.A.get(l)), m = (0, p.Ay)(), {
+    }(e, ["channelContext", "code", "customGiftMessage", "emojiName", "soundId", "onClose"]), y = (0, P.GV)(), g = (0, o.bG)([T.A], () => T.A.get(l)), b = (0, p.Ay)(), {
       analyticsLocations: A
-    } = (0, y.Ay)(h.A.GIFT_CODE_MODAL), {
+    } = (0, m.Ay)(h.A.GIFT_CODE_MODAL), {
       product: v
     } = (0, j.q)(null == g ? true : g.skuId, true);
     return null == g ? null : (0, n.jsx)(er, (t = X({}, f), r = r = {
       customGiftMessage: s,
       channelContext: i,
       giftCode: g,
-      headerId: b,
+      headerId: y,
       emojiName: a,
       soundId: u,
       analyticsLocations: A,
-      isThemeDark: (0, c.Mw)(m),
+      isThemeDark: (0, c.Mw)(b),
       onClose: d,
       collectiblesItemType: (0, O.oj)(v),
       onAccept: null != v ? () => {

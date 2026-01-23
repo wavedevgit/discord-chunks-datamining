@@ -25,20 +25,20 @@ function O() {
     r = (0, i.bG)([l.A], () => l.A.useReducedMotion),
     o = t && e && !r ? (0, s.n)("server_products/storefront/question-mark.gif") : (0, s.n)("server_products/storefront/question-mark.png");
   return (0, n.jsxs)("div", {
-    className: j.Xq,
+    className: b.Xq,
     children: [(0, n.jsx)(c.A, {
       role: true,
       ctaComponent: null,
       imageUrl: (0, s.n)("server_products/storefront/preview-thumbnail.png"),
-      name: C.intl.string(C.t.U2hvDo),
-      description: C.intl.string(C.t["w/TNGT"]),
-      formattedPrice: (0, d.$g)(0, b.Yri.USD, {
+      name: j.intl.string(j.t.U2hvDo),
+      description: j.intl.string(j.t["w/TNGT"]),
+      formattedPrice: (0, d.$g)(0, C.Yri.USD, {
         localeMatcher: "best fit",
         style: "currency",
         maximumSignificantDigits: 1
       }),
       shouldShowFullDescriptionButton: false,
-      productType: C.intl.string(C.t.ih4QMU),
+      productType: j.intl.string(j.t.ih4QMU),
       onTapCard: () => null,
       hideRoleTag: true,
       lineClamp: 3,
@@ -46,7 +46,7 @@ function O() {
       cardWidth: 332,
       descriptionTextVariant: "text-xs/normal"
     }), (0, n.jsx)("img", {
-      className: j.kz,
+      className: b.kz,
       alt: "",
       src: o
     })]
@@ -55,15 +55,15 @@ function O() {
 
 function g() {
   return (0, n.jsxs)("div", {
-    className: j.od,
+    className: b.od,
     children: [(0, n.jsx)(o.mir, {
       size: "md",
       color: "currentColor",
-      className: j.ZC
+      className: b.ZC
     }), (0, n.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
-      children: C.intl.format(C.t.umfZ8q, {
+      children: j.intl.format(j.t.umfZ8q, {
         learnMoreLink: f.rv
       })
     })]
@@ -75,9 +75,9 @@ function h(e) {
     guildId: t
   } = e;
   return (0, n.jsxs)("div", {
-    className: j.Bh,
+    className: b.Bh,
     children: [(0, n.jsxs)("div", {
-      className: j.gp,
+      className: b.gp,
       children: [(0, n.jsx)(O, {}), (0, n.jsx)(p.A, {
         guildId: t,
         showCTA: true

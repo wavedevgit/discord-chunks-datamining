@@ -26,8 +26,8 @@ let f = Object.assign(Chunk64700.forwardRef(function(e, t) {
     forceUserTheme: g = false
   } = e, {
     theme: E,
-    primaryColor: b,
-    secondaryColor: y
+    primaryColor: y,
+    secondaryColor: b
   } = (0, l.A)({
     user: n,
     displayProfile: i,
@@ -36,16 +36,16 @@ let f = Object.assign(Chunk64700.forwardRef(function(e, t) {
     forceUserTheme: g
   }), {
     profileThemeStyle: O,
-    profileThemeClassName: A
+    profileThemeClassName: v
   } = (0, c.A)({
     theme: null != _ ? _ : E,
     themeType: a,
-    primaryColor: b,
-    secondaryColor: y,
+    primaryColor: y,
+    secondaryColor: b,
     forceUserTheme: g
   });
   return (0, r.jsx)("div", {
-    className: s()(d.A7, A, f),
+    className: s()(d.A7, v, f),
     style: O,
     ref: t,
     children: (0, r.jsx)("div", {
@@ -55,8 +55,8 @@ let f = Object.assign(Chunk64700.forwardRef(function(e, t) {
         children: (0, r.jsx)(u.U, {
           themeType: a,
           theme: null != _ ? _ : E,
-          primaryColor: b,
-          secondaryColor: y,
+          primaryColor: y,
+          secondaryColor: b,
           userId: n.id,
           children: h
         })

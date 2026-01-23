@@ -17,19 +17,19 @@ function d(e) {
   let {
     guildId: t,
     guildJoinRequests: n
-  } = e, l = r.useRef(false), [d, f] = r.useState(null), p = r.useRef(null), h = r.useRef(false);
+  } = e, l = r.useRef(false), [d, p] = r.useState(null), h = r.useRef(null), f = r.useRef(false);
   return {
     fetchNextPage: r.useCallback(async (e, r) => {
       if (l.current) return;
-      let b = "".concat(e, "-").concat(r),
-        g = false;
-      if (b !== p.current && (p.current = b, h.current = false, g = true), h.current) return;
-      null != d && f(null);
-      let m = function(e, t, n, r) {
+      let g = "".concat(e, "-").concat(r),
+        m = false;
+      if (g !== h.current && (h.current = g, f.current = false, m = true), f.current) return;
+      null != d && p(null);
+      let b = function(e, t, n, r) {
         let l = n === c.B5.SUBMITTED;
         if (t === c._e.TIMESTAMP_DESC)
           if (r) return {
-            before: s.default.fromTimestamp(new Date().getTime())
+            before: a.default.fromTimestamp(new Date().getTime())
           };
           else {
             let t = e[e.length - 1];
@@ -37,7 +37,7 @@ function d(e) {
               before: l ? t.joinRequestId : t.actionedAt
             }
           } if (r) return {
-          after: s.default.fromTimestamp(i()().subtract(180, "days").valueOf())
+          after: a.default.fromTimestamp(i()().subtract(180, "days").valueOf())
         };
         {
           let t = e[e.length - 1];
@@ -45,7 +45,7 @@ function d(e) {
             after: l ? t.joinRequestId : t.actionedAt
           }
         }
-      }(n, e, r, g);
+      }(n, e, r, m);
       try {
         l.current = true;
         let e = await o.A.fetchGuildJoinRequests(function(e) {
@@ -70,15 +70,15 @@ function d(e) {
           status: r,
           limit: u,
           force: true
-        }, m));
+        }, b));
         if (null != e) {
           let {
             guild_join_requests: t
           } = e.body;
-          t.length < u && (h.current = true)
+          t.length < u && (f.current = true)
         }
       } catch (e) {
-        f(new a.LG(e).getAnyErrorMessage())
+        p(new s.LG(e).getAnyErrorMessage())
       } finally {
         l.current = false
       }

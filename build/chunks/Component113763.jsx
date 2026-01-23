@@ -1,7 +1,7 @@
 /** Chunk was on 38663 **/
 /** chunk id: 113763, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,33 +17,33 @@ var Chunk627968 = require("./627968.js"),
   Chunk515054 = require("./515054.jsx"),
   Chunk828151 = require("./828151.js");
 
-function m(e) {
+function b(e) {
   let {
     user: t,
     guildId: n,
-    channelId: m,
+    channelId: b,
     onClose: y
   } = e, {
     analyticsLocations: O
   } = (0, a.Ay)(), {
     context: j,
     trackUserProfileAction: x
-  } = (0, o.NJ)(), {
+  } = (0, s.NJ)(), {
     mutualFriends: h,
     mutualFriendsCount: v
-  } = (0, c.A)(t), A = (0, i.A)();
+  } = (0, c.A)(t), _ = (0, i.A)();
   return l.useEffect(() => {
-    (0, u.A)(t.id, A)
-  }, [t.id, A]), (0, r.jsx)(b.K, {
-    className: g.XG,
+    (0, u.A)(t.id, _)
+  }, [t.id, _]), (0, r.jsx)(g.K, {
+    className: m.XG,
     children: null == h ? Array.from({
       length: null != v ? v : 10
     }).map((e, t) => (0, r.jsxs)("div", {
-      className: g.D$,
-      children: [(0, r.jsx)(s.FQ, {
+      className: m.D$,
+      children: [(0, r.jsx)(o.FQ, {
         width: 40,
         opacity: .08
-      }), (0, r.jsx)(s.FQ, {
+      }), (0, r.jsx)(o.FQ, {
         width: 135,
         opacity: .08
       })]
@@ -57,7 +57,7 @@ function m(e) {
         user: l,
         status: i,
         guildId: n,
-        channelId: m,
+        channelId: b,
         onSelect: () => {
           var e, t;
           null == y || y(), x({

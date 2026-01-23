@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk3026 = require("./3026.jsx"),
   Chunk397927 = require("./397927.js"),
@@ -26,40 +26,40 @@ function A(e) {
     hovered: i,
     subtitle: A,
     onClick: y,
-    showEmptyChannelTopic: O
-  } = e, j = (0, s.bG)([d.A], () => d.A.getChannelStatus(t)), v = null != j && j.length > 0, x = (0, u.Ay)(t, true), E = null != A && A.length > 0;
+    showEmptyChannelTopic: _
+  } = e, O = (0, a.bG)([d.A], () => d.A.getChannelStatus(t)), j = null != O && O.length > 0, v = (0, u.Ay)(t, true), x = null != A && A.length > 0;
   if (l.useEffect(() => {
-      v && p.default.track(h.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
+      j && h.default.track(f.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
         guild_id: t.guild_id
       })
-    }, [v, t.id, t.guild_id]), null == t.guild_id) return null;
-  let _ = a()(g.Ui, n && x ? g.BI : null);
-  return v ? (0, r.jsx)(c.DUT, {
-    className: _,
-    onClick: x ? y : true,
+    }, [j, t.id, t.guild_id]), null == t.guild_id) return null;
+  let E = s()(m.Ui, n && v ? m.BI : null);
+  return j ? (0, r.jsx)(c.DUT, {
+    className: E,
+    onClick: v ? y : true,
     children: (0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
-      className: a()(g.qS, m.PT),
+      className: s()(m.qS, b.PT),
       children: (0, r.jsx)(o.A, {
-        children: f.A.parseVoiceChannelStatus(j, true, {
+        children: p.A.parseVoiceChannelStatus(O, true, {
           channelId: t.id
         })
       })
     })
-  }) : n && x && (!E || i) && O ? (0, r.jsxs)(c.DUT, {
-    className: _,
+  }) : n && v && (!x || i) && _ ? (0, r.jsxs)(c.DUT, {
+    className: E,
     onClick: y,
     children: [(0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
-      className: g.qS,
-      children: b.intl.string(b.t.Mgpxiw)
+      className: m.qS,
+      children: g.intl.string(g.t.Mgpxiw)
     }), (0, r.jsx)(c.R2l, {
       color: "currentColor",
-      className: g.rD,
+      className: m.rD,
       size: "xxs"
     })]
-  }) : E ? (0, r.jsx)(o.A, {
+  }) : x ? (0, r.jsx)(o.A, {
     children: A
   }) : null
 }

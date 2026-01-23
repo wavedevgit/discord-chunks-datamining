@@ -27,8 +27,8 @@ function u(e) {
     hasError: m,
     showChevronButton: g = true,
     children: E,
-    handleToggle: b,
-    handleClear: y
+    handleToggle: y,
+    handleClear: b
   } = e;
   return (0, r.jsxs)(s.FON, {
     ref: t,
@@ -53,11 +53,11 @@ function u(e) {
     }), (0, r.jsx)(d, {
       show: true === l && !_ && true === h,
       iconSize: g ? "xs" : "sm",
-      onClick: y
+      onClick: b
     }), (0, r.jsx)(f, {
       show: g,
       isOpen: p,
-      onClick: b
+      onClick: y
     })]
   })
 }

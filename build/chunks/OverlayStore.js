@@ -39,7 +39,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,16 +50,16 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 require("./644434.js");
 let O = "migrated",
-  A = .02,
-  v = .01,
-  S = {
+  v = .02,
+  A = .01,
+  I = {
     [Chunk652215.uss.GUILDS]: {
       resizeX: false,
       resizeY: true,
@@ -163,7 +163,7 @@ let O = "migrated",
       layoutPolicy: Chunk881957.X.REQUIRED,
       defaultSettings: {
         anchor: {
-          left: v,
+          left: A,
           top: .35,
           bottom: true,
           right: true
@@ -187,9 +187,9 @@ let O = "migrated",
       layoutPolicy: Chunk881957.X.OPTIONAL_DEFAULT,
       defaultSettings: {
         anchor: {
-          left: v,
+          left: A,
           top: true,
-          bottom: A,
+          bottom: v,
           right: true
         },
         size: {
@@ -214,8 +214,8 @@ let O = "migrated",
         anchor: {
           left: true,
           top: true,
-          bottom: A,
-          right: v
+          bottom: v,
+          right: A
         },
         size: {
           fixed: true,
@@ -238,7 +238,7 @@ let O = "migrated",
       defaultSettings: {
         anchor: {
           left: .34,
-          top: A,
+          top: v,
           bottom: true,
           right: true
         },
@@ -261,8 +261,8 @@ let O = "migrated",
       layoutPolicy: Chunk881957.X.REQUIRED,
       defaultSettings: {
         anchor: {
-          left: v,
-          top: A,
+          left: A,
+          top: v,
           bottom: true,
           right: true
         },
@@ -288,7 +288,7 @@ let O = "migrated",
           left: true,
           top: .35,
           bottom: true,
-          right: v
+          right: A
         },
         size: {
           height: "auto",
@@ -310,9 +310,9 @@ let O = "migrated",
       defaultSettings: {
         anchor: {
           left: true,
-          top: 6 * A,
+          top: 6 * v,
           bottom: true,
-          right: v
+          right: A
         },
         size: {
           fixed: true,
@@ -377,7 +377,7 @@ let O = "migrated",
     }
   };
 
-function I(e) {
+function S(e) {
   let {
     layoutId: t,
     widgets: n,
@@ -388,13 +388,13 @@ function I(e) {
   let o = [];
   n.forEach((e, t) => {
     let n = T(e.type),
-      r = y(E({}, e), {
+      r = b(E({}, e), {
         zIndex: t
       });
-    "" === r.id && (r.id = (0, l.A)()), null != n && (r.pinned = n.pinned, false !== n.anchor.left && (r.anchor = (0, _.NO)(n.anchor, s)), false !== n.size.width && (r.size = (0, _.R9)(n.size, s))), i = y(E({}, i), {
+    "" === r.id && (r.id = (0, l.A)()), null != n && (r.pinned = n.pinned, false !== n.anchor.left && (r.anchor = (0, _.NO)(n.anchor, s)), false !== n.size.width && (r.size = (0, _.R9)(n.size, s))), i = b(E({}, i), {
       [r.id]: new p.A(r)
     }), o.push(r.id)
-  }), r = y(E({}, r), {
+  }), r = b(E({}, r), {
     [t]: new f.A({
       id: t,
       widgets: o,
@@ -468,7 +468,7 @@ function P(e) {
 
 function D(e, t) {
   var n;
-  i = y(E({}, i), {
+  i = b(E({}, i), {
     [e.id]: e.merge({
       meta: E({}, null != (n = e.meta) ? n : {}, t)
     })
@@ -494,7 +494,7 @@ function L(e) {
     minSize: s,
     defaultSize: o
   } = e;
-  if (i = y(E({}, i), {
+  if (i = b(E({}, i), {
       [t.id]: t.merge({
         anchor: null != n ? n : t.anchor,
         size: null != r ? r : t.size,
@@ -502,7 +502,7 @@ function L(e) {
         minSize: null != s ? s : t.minSize
       })
     }), null != o) {
-    let e = S[t.type];
+    let e = I[t.type];
     null != e && (e.defaultSettings.size = E({
       fixed: e.defaultSettings.size.fixed
     }, o))
@@ -510,7 +510,7 @@ function L(e) {
 }
 
 function j(e) {
-  i = y(E({}, i), {
+  i = b(E({}, i), {
     [e.id]: e.merge({
       showExtrasHintTimestamp: Date.now()
     })
@@ -535,7 +535,7 @@ function k(e) {
     let i = e.widgets.indexOf(t);
     if (i >= 0) {
       let t = [...e.widgets];
-      t.splice(i, 1), r = y(E({}, r), {
+      t.splice(i, 1), r = b(E({}, r), {
         [n]: e.set("widgets", t)
       })
     }
@@ -549,7 +549,7 @@ function U(e) {
   if (null == n) returnfalse;
   n.widgets.forEach(e => {
     i = E({}, i), delete i[e]
-  }), r = y(E({}, r), {
+  }), r = b(E({}, r), {
     [n.id]: n.set("widgets", [])
   })
 }
@@ -562,11 +562,11 @@ function G(e) {
     let t = new p.A(e),
       n = r[t.layoutId];
     if (null == n) throw Error("LayoutStore - handleAddWidget: Invalid layoutId");
-    t = t.set("zIndex", n.widgets.length), i = y(E({}, i), {
+    t = t.set("zIndex", n.widgets.length), i = b(E({}, i), {
       [t.id]: t
     });
     let a = [...n.widgets, t.id];
-    r = y(E({}, r), {
+    r = b(E({}, r), {
       [n.id]: n.set("widgets", a)
     })
   })
@@ -577,17 +577,17 @@ function V(e) {
     widgetType: t,
     defaultConfig: n
   } = e;
-  S[t] = E({}, S[t], n)
+  I[t] = E({}, I[t], n)
 }
 
 function F(e, t) {
-  i = y(E({}, i), {
+  i = b(E({}, i), {
     [e.id]: e.set("zIndex", t)
   })
 }
 
 function B(e, t) {
-  i = y(E({}, i), {
+  i = b(E({}, i), {
     [e.id]: e.set("pinned", null != t ? t : !e.pinned)
   })
 }
@@ -615,7 +615,7 @@ function W(e) {
 }
 
 function K(e) {
-  let t = S[e];
+  let t = I[e];
   if (null != t) return t.defaultSettings
 }
 class z extends(a = Chunk311907.Ay.PersistedStore) {
@@ -623,24 +623,24 @@ class z extends(a = Chunk311907.Ay.PersistedStore) {
     null != e && null != e.layouts && null != e.widgets ? (r = Y(e.layouts), i = W(e.widgets)) : (r = {}, i = {});
     let t = false,
       n = [];
-    o().forEach(S, (e, t) => {
+    o().forEach(I, (e, t) => {
       e.layoutPolicy === h.X.REQUIRED && n.push(t)
     }), o().forEach(r, (e, a) => {
       let s = this.getWidgetsForLayout(a),
         o = false;
       for (let r of n) {
         let n = s.find(e => e.type === r);
-        if (null != n || S[r].version !== e.version) continue;
+        if (null != n || I[r].version !== e.version) continue;
         o = t = true;
         let c = (0, l.A)(),
           u = K(r);
         if (null == u) return;
-        n = new p.A(y(E({}, u), {
+        n = new p.A(b(E({}, u), {
           type: r,
           id: c,
           layoutId: a,
           zIndex: s.length
-        })), s.push(n), i = y(E({}, i), {
+        })), s.push(n), i = b(E({}, i), {
           [c]: n
         })
       }
@@ -649,7 +649,7 @@ class z extends(a = Chunk311907.Ay.PersistedStore) {
           id: t
         } = e;
         return t
-      })), r = y(E({}, r), {
+      })), r = b(E({}, r), {
         [a]: e
       }))
     }), o().forEach(i, (e, n) => {
@@ -695,7 +695,7 @@ class z extends(a = Chunk311907.Ay.PersistedStore) {
     }), n
   }
   getWidgetConfig(e) {
-    return S[e]
+    return I[e]
   }
   getWidgetDefaultSettings(e) {
     return K(e)
@@ -711,7 +711,7 @@ class z extends(a = Chunk311907.Ay.PersistedStore) {
     return Object.values(i).filter(n => n.type === e && n.layoutId === t)
   }
   getRegisteredWidgets() {
-    return S
+    return I
   }
   getDefaultLayout(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0,
@@ -724,7 +724,7 @@ class z extends(a = Chunk311907.Ay.PersistedStore) {
           if ((null != (a = r.version) ? a : 0) === t) {
             let t = K(i);
             if (null == t) return;
-            n.push(y(E({}, t), {
+            n.push(b(E({}, t), {
               type: i,
               id: (0, l.A)(),
               layoutId: e
@@ -804,7 +804,7 @@ g(z, "displayName", "LayoutStore"), g(z, "persistKey", "LayoutStore"), g(z, "mig
     let s = (0, l.A)();
     n.widgets = [a, s];
     let o = K(m.uss.GUILDS_TEXT);
-    null != o && i.push([s, y(E({}, o), {
+    null != o && i.push([s, b(E({}, o), {
       type: m.uss.GUILDS_TEXT,
       id: s,
       layoutId: t,
@@ -836,7 +836,7 @@ g(z, "displayName", "LayoutStore"), g(z, "persistKey", "LayoutStore"), g(z, "mig
   } = e, r = {};
   for (let e in t) {
     let n = t[e];
-    r[e] = y(E({}, n), {
+    r[e] = b(E({}, n), {
       version: 0
     })
   }
@@ -846,7 +846,7 @@ g(z, "displayName", "LayoutStore"), g(z, "persistKey", "LayoutStore"), g(z, "mig
   }
 }]);
 let q = new z(Chunk73153.h, {
-  LAYOUT_CREATE: I,
+  LAYOUT_CREATE: S,
   LAYOUT_SET_PINNED: x,
   LAYOUT_UPDATE_WIDGET: N,
   LAYOUT_SET_TOP_WIDGET: R,

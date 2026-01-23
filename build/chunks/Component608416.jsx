@@ -47,7 +47,7 @@ let p = e => {
     loop: true
   } : {
     y: 0
-  }), g = (null == u ? true : u.path) === "sine" ? Math.sin : Math.cos, [E, b] = (0, i.useState)(1), y = (0, s.zhh)(null != c ? {
+  }), g = (null == u ? true : u.path) === "sine" ? Math.sin : Math.cos, [E, y] = (0, i.useState)(1), b = (0, s.zhh)(null != c ? {
     from: {
       scale: E > 0 ? c.startScale : c.endScale
     },
@@ -57,10 +57,10 @@ let p = e => {
     config: {
       duration: c.duration * _
     },
-    onRest: () => b(e => false * e)
+    onRest: () => y(e => false * e)
   } : {
     scale: 1
-  }), [O, A] = (0, i.useState)(1), v = (0, s.zhh)(null != l ? {
+  }), [O, v] = (0, i.useState)(1), A = (0, s.zhh)(null != l ? {
     from: {
       blur: O > 0 ? l.startBlurRadius : l.endBlurRadius
     },
@@ -70,20 +70,20 @@ let p = e => {
     config: {
       duration: l.duration * _
     },
-    onRest: () => A(e => false * e)
+    onRest: () => v(e => false * e)
   } : {
     blur: 0
-  }), S = (0, i.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), I = 5, [T, C] = (0, i.useState)(0), [N, R] = (0, i.useState)(1), w = (0, s.zhh)({
+  }), I = (0, i.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), S = 5, [T, C] = (0, i.useState)(0), [N, R] = (0, i.useState)(1), w = (0, s.zhh)({
     xOffset: T,
     config: {
       tension: 10,
       friction: 10,
-      duration: S
+      duration: I
     }
   });
   return ((0, o.A)(() => {
-    C(N * (.5 * Math.random() * I + I / 2)), R(e => false * e)
-  }, S), p) ? h : (0, r.jsx)(a.animated.div, {
+    C(N * (.5 * Math.random() * S + S / 2)), R(e => false * e)
+  }, I), p) ? h : (0, r.jsx)(a.animated.div, {
     style: {
       transform: null == (t = m.y) ? true : t.to(e => {
         if (null == u) return "translateY(0px)";
@@ -96,8 +96,8 @@ let p = e => {
         return "translateY(".concat(t + n, "px)")
       }),
       translateX: f ? w.xOffset.to(e => "".concat(e, "px")) : 0,
-      scale: y.scale,
-      filter: null == (n = v.blur) ? true : n.to(e => "blur(".concat(e, "px)")),
+      scale: b.scale,
+      filter: null == (n = A.blur) ? true : n.to(e => "blur(".concat(e, "px)")),
       opacity: null != d && d.changeOpacity ? d.containerVisibilityPercentage : 1
     },
     children: h

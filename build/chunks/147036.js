@@ -36,18 +36,18 @@ var Chunk652215 = require("./652215.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx");
 let {
-  GUILD_VOICE: y,
+  GUILD_VOICE: b,
   GUILD_CATEGORY: O,
-  GUILD_STAGE_VOICE: A
+  GUILD_STAGE_VOICE: v
 } = Chunk652215.rbe;
 
-function v(e, t) {
+function A(e, t) {
   return e === t || e === O
 }
 
-function S(e, t, n) {
+function I(e, t, n) {
   let i = h.x3;
-  return ((0, c.tr)(t) || t === O) && (i = r.WQ(i, g.xBc.VIEW_CHANNEL)), v(t, y) && (i = r.WQ(i, g.xBc.VIEW_CHANNEL), i = r.WQ(i, g.xBc.CONNECT)), {
+  return ((0, c.tr)(t) || t === O) && (i = r.WQ(i, g.xBc.VIEW_CHANNEL)), A(t, b) && (i = r.WQ(i, g.xBc.VIEW_CHANNEL), i = r.WQ(i, g.xBc.CONNECT)), {
     id: e,
     type: n,
     allow: h.x3,
@@ -55,9 +55,9 @@ function S(e, t, n) {
   }
 }
 
-function I(e, t, n) {
+function S(e, t, n) {
   let i = h.x3;
-  return ((0, c.tr)(t) || t === O) && (i = r.WQ(i, g.xBc.VIEW_CHANNEL)), (v(t, y) || v(t, A)) && (i = r.WQ(i, g.xBc.VIEW_CHANNEL), i = r.WQ(i, g.xBc.CONNECT)), {
+  return ((0, c.tr)(t) || t === O) && (i = r.WQ(i, g.xBc.VIEW_CHANNEL)), (A(t, b) || A(t, v)) && (i = r.WQ(i, g.xBc.VIEW_CHANNEL), i = r.WQ(i, g.xBc.CONNECT)), {
     id: e,
     type: n,
     deny: h.x3,
@@ -68,17 +68,17 @@ function I(e, t, n) {
 function T(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     a = [];
-  return (n.length > 0 || r) && a.push(S(e, t, i.r2.ROLE)), n.forEach(e => {
-    a.push(I(e, t, i.r2.ROLE))
+  return (n.length > 0 || r) && a.push(I(e, t, i.r2.ROLE)), n.forEach(e => {
+    a.push(S(e, t, i.r2.ROLE))
   }), a
 }
 
 function C(e, t) {
-  return I(e, t, i.r2.MEMBER)
+  return S(e, t, i.r2.MEMBER)
 }
 
 function N(e, t) {
-  return I(e, t, i.r2.ROLE)
+  return S(e, t, i.r2.ROLE)
 }
 
 function R(e) {
@@ -100,7 +100,7 @@ function w(e, t, n) {
     d = _.Ay.getVoiceStatesForChannel(e),
     p = f.A.can(g.xBc.MOVE_MEMBERS, e) && f.A.can(g.xBc.CONNECT, e),
     h = false;
-  h = e.type === A ? null != a && (t.hasVideo(e.id) || (0, s.t)(d)) && c > 0 && u >= c : null != a && t.hasVideo(e.id) && l > 0 && u >= l + +!!p;
+  h = e.type === v ? null != a && (t.hasVideo(e.id) || (0, s.t)(d)) && c > 0 && u >= c : null != a && t.hasVideo(e.id) && l > 0 && u >= l + +!!p;
   let m = e.userLimit > 0 && u >= e.userLimit;
   return h || m && !p
 }
@@ -146,25 +146,25 @@ function L(e) {
   } = e;
   switch (t) {
     case g.rbe.DM:
-      return b.intl.string(b.t.jN2DfZ);
+      return y.intl.string(y.t.jN2DfZ);
     case g.rbe.GROUP_DM:
-      return b.intl.string(b.t["e5y+gm"]);
+      return y.intl.string(y.t["e5y+gm"]);
     case g.rbe.GUILD_TEXT:
-      return b.intl.string(b.t.Pnajj0);
+      return y.intl.string(y.t.Pnajj0);
     case g.rbe.GUILD_FORUM:
-      return b.intl.string(b.t.GbryDd);
+      return y.intl.string(y.t.GbryDd);
     case g.rbe.GUILD_MEDIA:
-      return b.intl.string(b.t.seKITE);
+      return y.intl.string(y.t.seKITE);
     case g.rbe.GUILD_VOICE:
-      return b.intl.string(b.t.BVZqJl);
+      return y.intl.string(y.t.BVZqJl);
     case g.rbe.GUILD_STAGE_VOICE:
-      return b.intl.string(b.t.EErMzA);
+      return y.intl.string(y.t.EErMzA);
     case g.rbe.GUILD_ANNOUNCEMENT:
-      return b.intl.string(b.t.l1dkSD);
+      return y.intl.string(y.t.l1dkSD);
     case g.rbe.GUILD_STORE:
-      return b.intl.string(b.t["P1/Erq"]);
+      return y.intl.string(y.t["P1/Erq"]);
     case g.rbe.GUILD_CATEGORY:
-      return b.intl.string(b.t.vHCZwr);
+      return y.intl.string(y.t.vHCZwr);
     default:
       return null
   }

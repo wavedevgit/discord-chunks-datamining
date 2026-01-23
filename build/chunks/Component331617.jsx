@@ -1,7 +1,7 @@
 /** Chunk was on 45210 **/
 /** chunk id: 331617, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => P
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,7 +19,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk942609 = require("./942609.js"),
   Chunk473169 = require("./473169.js");
 
-function x(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -37,171 +37,171 @@ function x(e) {
   }
   return e
 }
-let g = "premium-guild-subscription-upsell-modal-header";
+let x = "premium-guild-subscription-upsell-modal-header";
 
 function O(e) {
   let {
     title: t,
     subtitle: r,
-    image: s
+    image: o
   } = e;
   return (0, n.jsxs)("div", {
-    className: m.wx,
-    children: [(0, n.jsx)(o.Heading, {
+    className: f.wx,
+    children: [(0, n.jsx)(s.Heading, {
       variant: "heading-xl/semibold",
-      id: g,
+      id: x,
       color: "text-strong",
       className: y.QB,
       children: t
-    }), (0, n.jsx)(o.Text, {
+    }), (0, n.jsx)(s.Text, {
       variant: "text-md/normal",
-      className: m.o4,
+      className: f.o4,
       children: r
-    }), s]
+    }), o]
   })
 }
 let h = e => {
     let {
       onClose: t,
       perks: r,
-      perkIntro: s = j.intl.string(j.t.Dr3GoS),
-      headerProps: a
+      perkIntro: o = m.intl.string(m.t.Dr3GoS),
+      headerProps: i
     } = e;
     return (0, n.jsxs)("div", {
-      className: m.iE,
-      children: [(0, n.jsx)(o.s_y, {
+      className: f.iE,
+      children: [(0, n.jsx)(s.s_y, {
         "data-migration-pending": true,
-        className: m.b,
+        className: f.b,
         onClick: () => {
           t()
         }
-      }), (0, n.jsx)(v, {
-        headerProps: a,
-        perkIntro: s
+      }), (0, n.jsx)(_, {
+        headerProps: i,
+        perkIntro: o
       }), (0, n.jsx)("div", {
-        className: m.md,
+        className: f.md,
         children: r.map((e, t) => {
           let {
             icon: r,
-            iconClassName: s,
-            description: o,
-            color: a
+            iconClassName: o,
+            description: s,
+            color: i
           } = e;
-          return (0, n.jsx)(p.A, {
+          return (0, n.jsx)(d.A, {
             icon: r,
-            iconClassName: s,
-            description: o,
-            color: a
+            iconClassName: o,
+            description: s,
+            color: i
           }, t)
         })
       })]
     })
   },
-  v = e => {
+  _ = e => {
     let {
       headerProps: t,
-      perkIntro: a
+      perkIntro: i
     } = e;
-    return (0, n.jsxs)(s.Fragment, {
-      children: [null != t ? (0, n.jsx)(O, x({}, t)) : (0, n.jsx)("img", {
-        className: m.c8,
+    return (0, n.jsxs)(o.Fragment, {
+      children: [null != t ? (0, n.jsx)(O, g({}, t)) : (0, n.jsx)("img", {
+        className: f.c8,
         src: r(69522),
-        alt: j.intl.string(j.t.PkcaAH)
-      }), (0, n.jsx)(o.Text, {
+        alt: m.intl.string(m.t.PkcaAH)
+      }), (0, n.jsx)(s.Text, {
         variant: "text-md/normal",
-        className: m.R_,
-        children: a
+        className: f.R_,
+        children: i
       })]
     })
   },
-  P = e => {
+  v = e => {
     let {
       guild: t,
       targetBoostedGuildTier: r,
-      onClose: s,
-      analyticsSourceLocation: a
-    } = e, c = {
-      section: f.JJy.PREMIUM_GUILD_UPSELL_MODAL,
-      object: f.ZSU.BUTTON_CTA,
+      onClose: o,
+      analyticsSourceLocation: i
+    } = e, l = {
+      section: j.JJy.PREMIUM_GUILD_UPSELL_MODAL,
+      object: j.ZSU.BUTTON_CTA,
       objectType: null != r ? (0, u.k1)(r) : null
     };
-    return (0, n.jsxs)(o.jlY, {
-      className: m.qr,
+    return (0, n.jsxs)(s.jlY, {
+      className: f.qr,
       "data-migration-pending": true,
-      children: [(0, n.jsx)(o.Button, {
+      children: [(0, n.jsx)(s.Button, {
         variant: "secondary",
         size: "sm",
-        text: j.intl.string(j.t.cpT0Cq),
+        text: m.intl.string(m.t.cpT0Cq),
         onClick: () => {
-          s()
+          o()
         }
       }), (0, n.jsx)(b.A, {
-        analyticsLocation: c,
-        analyticsSourceLocation: a,
+        analyticsLocation: l,
+        analyticsSourceLocation: i,
         guild: t,
         targetBoostedGuildTier: r,
         onClose: () => {
-          s()
+          o()
         }
       })]
     })
   };
 
-function _(e) {
+function P(e) {
   var t, r;
   let {
-    analyticsSourceLocation: s,
-    guild: p,
+    analyticsSourceLocation: o,
+    guild: d,
     targetBoostedGuildTier: u,
     perks: b,
-    perkIntro: f,
-    headerProps: j,
-    onClose: m
+    perkIntro: j,
+    headerProps: m,
+    onClose: f
   } = e, y = function(e, t) {
     if (null == e) return {};
-    var r, n, s, o = {};
+    var r, n, o, s = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (s = 0, r = Reflect.ownKeys(e); s < r.length; s++) n = r[s], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
-      return o
+      for (o = 0, r = Reflect.ownKeys(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n]);
+      return s
     }
-    if (o = function(e, t) {
+    if (s = function(e, t) {
         if (null == e) return {};
-        var r, n, s = {},
-          o = Object.getOwnPropertyNames(e);
-        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (s[r] = e[r]);
-        return s
+        var r, n, o = {},
+          s = Object.getOwnPropertyNames(e);
+        for (n = 0; n < s.length; n++) r = s[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
+        return o
       }(e, t), Object.getOwnPropertySymbols)
-      for (s = 0, r = Object.getOwnPropertySymbols(e); s < r.length; s++) n = r[s], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
-    return o
+      for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n]);
+    return s
   }(e, ["analyticsSourceLocation", "guild", "targetBoostedGuildTier", "perks", "perkIntro", "headerProps", "onClose"]), {
     analyticsLocations: O
-  } = (0, c.Ay)(a.A.ACTIVITY_DIRECTORY);
-  return (0, n.jsx)(c.f5, {
+  } = (0, l.Ay)(i.A.ACTIVITY_DIRECTORY);
+  return (0, n.jsx)(l.f5, {
     value: O,
-    children: (0, n.jsx)(l.PaymentContextProvider, {
+    children: (0, n.jsx)(c.PaymentContextProvider, {
       activeSubscription: null,
       stepConfigs: [],
       skuIDs: [],
-      children: (0, n.jsx)(o.EOs, (t = x({}, y), r = r = {
-        "aria-labelledby": g,
+      children: (0, n.jsx)(s.EOs, (t = g({}, y), r = r = {
+        "aria-labelledby": x,
         "data-migration-pending": true,
         parentComponent: "GuildBoostingUpsellModal",
-        children: (0, n.jsx)(d.A, {
+        children: (0, n.jsx)(p.A, {
           hideBreadcrumbs: true,
           body: (0, n.jsx)(h, {
-            onClose: m,
+            onClose: f,
             perks: b,
-            perkIntro: f,
-            headerProps: j
+            perkIntro: j,
+            headerProps: m
           }),
-          footer: (0, n.jsx)(P, {
-            guild: p,
+          footer: (0, n.jsx)(v, {
+            guild: d,
             targetBoostedGuildTier: u,
-            onClose: m,
-            analyticsSourceLocation: s
+            onClose: f,
+            analyticsSourceLocation: o
           }),
-          steps: [i.pn.PREMIUM_GUILD_UPSELL],
-          currentStep: i.pn.PREMIUM_GUILD_UPSELL
+          steps: [a.pn.PREMIUM_GUILD_UPSELL],
+          currentStep: a.pn.PREMIUM_GUILD_UPSELL
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var r = Object.keys(e);

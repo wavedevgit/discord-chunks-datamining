@@ -26,7 +26,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk530358 = require("./530358.js");
 
-function v(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,20 +35,20 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,7 +60,7 @@ function I(e, t) {
 }
 
 function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -70,22 +70,22 @@ let C = 40,
       roleIcon: t,
       guild: n
     } = e, {
-      name: v
+      name: A
     } = t;
     (0, o.Ay)(() => {
-      g.default.track(b.HAw.OPEN_POPOUT, S({
+      g.default.track(y.HAw.OPEN_POPOUT, I({
         type: "Role Icon Popout",
         guild_id: n.id
       }, (0, l.dI)(_.A.getChannel(m.A.getChannelId(n.id)))))
     });
-    let I = (0, i.bG)([h.A], () => null != t.roleId ? h.A.getRole(n.id, t.roleId) : true),
-      N = (0, d.U)(I),
+    let S = (0, i.bG)([h.A], () => null != t.roleId ? h.A.getRole(n.id, t.roleId) : true),
+      N = (0, d.U)(S),
       R = N ? O.intl.formatToPlainString(O.t.t0928V, {
-        name: v
+        name: A
       }) : O.intl.formatToPlainString(O.t.UDDkGy, {
-        name: v
+        name: A
       }),
-      w = T(S({}, t), {
+      w = T(I({}, t), {
         src: null == t.src ? t.src : (0, c.ux)(t.src, C),
         size: C
       }),
@@ -93,34 +93,34 @@ let C = 40,
         (0, u.K)({
           guildId: n.id,
           location: {
-            section: b.JJy.ROLE_ICON_POPOUT
+            section: y.JJy.ROLE_ICON_POPOUT
           }
         })
       },
       D = () => {
-        (0, p.pX)(b.BVt.CHANNEL(n.id, y.VV.ROLE_SUBSCRIPTIONS))
+        (0, p.pX)(y.BVt.CHANNEL(n.id, b.VV.ROLE_SUBSCRIPTIONS))
       },
       x = N ? D : P;
     return (0, r.jsx)(s.lGe, {
       children: (0, r.jsx)(E.Uq, {
         children: (0, r.jsxs)("div", {
-          className: A.jC,
+          className: v.jC,
           children: [(0, r.jsxs)("div", {
-            className: A.rb,
+            className: v.rb,
             children: [(0, r.jsx)("div", {
-              className: A.Xq,
-              children: (0, r.jsx)(f.A, T(S({}, w), {
+              className: v.Xq,
+              children: (0, r.jsx)(f.A, T(I({}, w), {
                 enableTooltip: false,
-                className: A.__invalid_roleIcon,
+                className: v.__invalid_roleIcon,
                 enableHeight: false
               }))
             }), (0, r.jsxs)("div", {
-              className: A.bM,
+              className: v.bM,
               children: [(0, r.jsx)(s.Heading, {
                 variant: "heading-md/semibold",
-                className: A.S3,
+                className: v.S3,
                 children: (0, r.jsx)(a.A, {
-                  children: v
+                  children: A
                 })
               }), (0, r.jsx)(s.Text, {
                 variant: "text-sm/normal",

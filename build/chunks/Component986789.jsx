@@ -1,7 +1,7 @@
 /** Chunk was on 22477 **/
 /** chunk id: 986789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -34,7 +34,7 @@ function h(e) {
   return e
 }
 
-function f(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,44 +47,44 @@ function f(e, t) {
   }), e
 }
 
-function x() {
-  let e = (0, r.bG)([m.A], () => m.A.getGuildId()),
-    t = (0, r.bG)([u.A], () => {
+function g() {
+  let e = (0, i.bG)([m.A], () => m.A.getGuildId()),
+    t = (0, i.bG)([u.A], () => {
       var t;
       return null == (t = u.A.getGuild(e)) ? true : t.name
     }),
-    n = (0, r.bG)([d.A], () => {
+    n = (0, i.bG)([d.A], () => {
       var t;
       return null == (t = d.A.getStateForGuild(e)) ? true : t.instances
     }),
-    x = l.useMemo(() => Object.values(null != n ? n : {})[0], [n]),
-    b = l.useCallback(t => {
-      null != x && null != e && o.h.dispatch({
+    g = l.useMemo(() => Object.values(null != n ? n : {})[0], [n]),
+    f = l.useCallback(t => {
+      null != g && null != e && o.h.dispatch({
         type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
         guildId: e,
-        instance: f(h({}, x), {
+        instance: x(h({}, g), {
           status: t
         })
       })
-    }, [x, e]),
-    g = l.useMemo(() => Object.values(i.M).map(e => (0, a.jsx)(s.Button, {
+    }, [g, e]),
+    b = l.useMemo(() => Object.values(r.M).map(e => (0, a.jsx)(s.Button, {
       variant: "primary",
       text: e,
       onClick: () => {
-        b(e)
+        f(e)
       }
-    }, e)), [b]),
+    }, e)), [f]),
     v = l.useCallback(() => {
-      null != x && null != e && o.h.dispatch({
+      null != g && null != e && o.h.dispatch({
         type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
         guildId: e,
-        instance: f(h({}, x), {
+        instance: x(h({}, g), {
           serverIP: true,
           port: true,
           gameServerPanelUrl: true
         })
       })
-    }, [x, e]);
+    }, [g, e]);
   return null == e ? null : (0, a.jsxs)(s.IpV, {
     className: p.kL,
     children: [(0, a.jsx)("div", {
@@ -97,10 +97,10 @@ function x() {
       className: p.uW,
       children: [(0, a.jsx)(s.Text, {
         variant: "eyebrow",
-        children: "Set server state for first server: ".concat(null == x ? true : x.name)
+        children: "Set server state for first server: ".concat(null == g ? true : g.name)
       }), (0, a.jsx)("div", {
         className: p.UD,
-        children: g
+        children: b
       }), (0, a.jsx)(s.Text, {
         variant: "eyebrow",
         children: "Remove Server Info"

@@ -24,20 +24,20 @@ function u(e) {
       },
       minValue: g,
       maxValue: E,
-      selectionAlignment: b,
-      isDateUnavailable: y,
+      selectionAlignment: y,
+      isDateUnavailable: b,
       pageBehavior: O = "visible",
-      firstDayOfWeek: A
+      firstDayOfWeek: v
     } = e,
-    v = (0, c.useMemo)(() => h(p.calendar), [h, p.calendar]),
-    [S, I] = (0, l.P)(e.value, null != (t = e.defaultValue) ? t : null, e.onChange),
-    T = (0, c.useMemo)(() => S ? (0, a.yP)((0, a.gw)(S), v) : null, [S, v]),
-    C = (0, c.useMemo)(() => S && "timeZone" in S ? S.timeZone : p.timeZone, [S, p.timeZone]),
-    N = (0, c.useMemo)(() => e.focusedValue ? (0, r.X8)((0, a.yP)((0, a.gw)(e.focusedValue), v), g, E) : true, [e.focusedValue, v, g, E]),
-    R = (0, c.useMemo)(() => (0, r.X8)(e.defaultFocusedValue ? (0, a.yP)((0, a.gw)(e.defaultFocusedValue), v) : T || (0, a.yP)((0, s.Ec)(C), v), g, E), [e.defaultFocusedValue, T, C, v, g, E]),
+    A = (0, c.useMemo)(() => h(p.calendar), [h, p.calendar]),
+    [I, S] = (0, l.P)(e.value, null != (t = e.defaultValue) ? t : null, e.onChange),
+    T = (0, c.useMemo)(() => I ? (0, a.yP)((0, a.gw)(I), A) : null, [I, A]),
+    C = (0, c.useMemo)(() => I && "timeZone" in I ? I.timeZone : p.timeZone, [I, p.timeZone]),
+    N = (0, c.useMemo)(() => e.focusedValue ? (0, r.X8)((0, a.yP)((0, a.gw)(e.focusedValue), A), g, E) : true, [e.focusedValue, A, g, E]),
+    R = (0, c.useMemo)(() => (0, r.X8)(e.defaultFocusedValue ? (0, a.yP)((0, a.gw)(e.defaultFocusedValue), A) : T || (0, a.yP)((0, s.Ec)(C), A), g, E), [e.defaultFocusedValue, T, C, A, g, E]),
     [w, P] = (0, l.P)(N, R, e.onFocusChange),
     [D, x] = (0, c.useState)(() => {
-      switch (b) {
+      switch (y) {
         case "start":
           return (0, r.CT)(w, m, _, g, E);
         case "end":
@@ -53,10 +53,10 @@ function u(e) {
       };
       return e.days ? e.days-- : e.days = false, D.add(e)
     }, [D, m]),
-    [k, U] = (0, c.useState)(v);
-  if (!(0, s.Jg)(v, k)) {
-    let e = (0, a.yP)(w, v);
-    x((0, r.Hu)(e, m, _, g, E)), P(e), U(v)
+    [k, U] = (0, c.useState)(A);
+  if (!(0, s.Jg)(A, k)) {
+    let e = (0, a.yP)(w, A);
+    x((0, r.Hu)(e, m, _, g, E)), P(e), U(A)
   }
 
   function G(e) {
@@ -66,11 +66,11 @@ function u(e) {
   function V(t) {
     if (!e.isDisabled && !e.isReadOnly) {
       let e = t;
-      if (null === e) return void I(null);
-      e = (0, r.X8)(e, g, E), (e = (0, r.Nf)(e, D, y)) && (e = (0, a.yP)(e, (null == S ? true : S.calendar) || new(0, o.FG)), S && "hour" in S ? I(S.set(e)) : I(e))
+      if (null === e) return void S(null);
+      e = (0, r.X8)(e, g, E), (e = (0, r.Nf)(e, D, b)) && (e = (0, a.yP)(e, (null == I ? true : I.calendar) || new(0, o.FG)), I && "hour" in I ? S(I.set(e)) : S(e))
     }
   }(0, r.If)(w, g, E) ? P((0, r.X8)(w, g, E)): 0 > w.compare(D) ? x((0, r.ZT)(w, m, _, g, E)) : w.compare(M) > 0 && x((0, r.CT)(w, m, _, g, E));
-  let F = (0, c.useMemo)(() => !!T && (!!(y && y(T)) || (0, r.If)(T, g, E)), [T, y, g, E]),
+  let F = (0, c.useMemo)(() => !!T && (!!(b && b(T)) || (0, r.If)(T, g, E)), [T, b, g, E]),
     B = e.isInvalid || "invalid" === e.validationState || F,
     H = B ? "invalid" : null,
     Y = (0, c.useMemo)(() => "visible" === O ? m : d(m), [O, m]);
@@ -141,7 +141,7 @@ function u(e) {
       })) : G(w.subtract(d(m)))
     },
     selectFocusedDate() {
-      y && y(w) || V(w)
+      b && b(w) || V(w)
     },
     selectDate(e) {
       V(e)
@@ -174,8 +174,8 @@ function u(e) {
           weeks: e
         }),
         r = [];
-      n = (0, s.kq)(n, _, A);
-      let i = (0, s.SJ)(n, _, A);
+      n = (0, s.kq)(n, _, v);
+      let i = (0, s.SJ)(n, _, v);
       for (let e = 0; e < i; e++) r.push(null);
       for (; r.length < 7;) {
         r.push(n);

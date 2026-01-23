@@ -55,16 +55,16 @@ let m = function() {
     onToggleAllActivityRestrictedGuilds: m,
     onToggleActivityRestrictedGuild: g,
     isActivityRestricted: E,
-    numActivityRestrictedGuilds: b,
-    numTotalGuilds: y
+    numActivityRestrictedGuilds: y,
+    numTotalGuilds: b
   } = (0, u.M)(), O = () => {
     l.default.track(d.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
       interaction: "search_cleared",
       sort_order: a,
-      activity_restricted_guild_count: b,
-      total_guild_count: y
+      activity_restricted_guild_count: y,
+      total_guild_count: b
     }), n("")
-  }, A = (0, i.useId)();
+  }, v = (0, i.useId)();
   return (0, r.jsxs)("div", {
     className: _.iE,
     children: [(0, r.jsxs)("div", {
@@ -76,19 +76,19 @@ let m = function() {
         onFocus: () => l.default.track(d.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
           interaction: "search_focused",
           sort_order: a,
-          activity_restricted_guild_count: b,
-          total_guild_count: y
+          activity_restricted_guild_count: y,
+          total_guild_count: b
         }),
         onBlur: () => l.default.track(d.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
           interaction: "search_blurred",
           sort_order: a,
-          activity_restricted_guild_count: b,
-          total_guild_count: y
+          activity_restricted_guild_count: y,
+          total_guild_count: b
         }),
         placeholder: p.intl.string(p.t["H+nRYw"]),
         "aria-label": p.intl.string(p.t["5h0QOP"]),
         inputProps: {
-          "aria-controls": A,
+          "aria-controls": v,
           "aria-expanded": true
         }
       }), e.length > 0 && (0, r.jsxs)("div", {
@@ -117,8 +117,8 @@ let m = function() {
             l.default.track(d.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
               interaction: "sort_order_changed",
               sort_order: e,
-              activity_restricted_guild_count: b,
-              total_guild_count: y
+              activity_restricted_guild_count: y,
+              total_guild_count: b
             }), o(e)
           },
           value: a,
@@ -137,7 +137,7 @@ let m = function() {
       })
     }), (0, r.jsxs)("ul", {
       className: _.X1,
-      id: A,
+      id: v,
       "aria-label": p.intl.string(p.t["7hB4kg"]),
       children: [0 === e.length && (0, r.jsx)("div", {
         className: _.pb,

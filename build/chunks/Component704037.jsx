@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 704037, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  l: () => p
+  l: () => h
 }), require("./896048.js"), require("./667532.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,30 +13,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk743790 = require("./743790.jsx"),
   Chunk960016 = require("./960016.js");
 
-function f(e) {
+function p(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsx)(s.Ay, {
+  return (0, r.jsx)(a.Ay, {
     className: d.Iu,
-    mask: s.Ay.Masks.SQUIRCLE,
+    mask: a.Ay.Masks.SQUIRCLE,
     width: 25,
     height: 25,
     children: t
   })
 }
 
-function p(e) {
+function h(e) {
   let {
     guildIds: t
-  } = e, n = (0, i.bG)([c.A], () => c.A.getGuildId()), s = (0, i.yK)([o.A], () => t.map(e => o.A.getGuild(e)), [t]), p = (0, l.useMemo)(() => s.filter(e => null != e), [s]), {
-    visibleGuilds: h,
-    numTruncated: b
+  } = e, n = (0, i.bG)([c.A], () => c.A.getGuildId()), a = (0, i.yK)([o.A], () => t.map(e => o.A.getGuild(e)), [t]), h = (0, l.useMemo)(() => a.filter(e => null != e), [a]), {
+    visibleGuilds: f,
+    numTruncated: g
   } = (0, l.useMemo)(() => {
-    let e = [...p];
+    let e = [...h];
     if (null != n) {
-      let t = p.findIndex(e => e.id === n);
-      false !== t && (e.splice(t, 1), e.unshift(p[t]))
+      let t = h.findIndex(e => e.id === n);
+      false !== t && (e.splice(t, 1), e.unshift(h[t]))
     }
     return 4 === e.length ? {
       visibleGuilds: e,
@@ -47,20 +47,20 @@ function p(e) {
       visibleGuilds: e.slice(0, 3),
       numTruncated: e.length - 3
     }
-  }, [p, n]);
+  }, [h, n]);
   return (0, r.jsxs)("div", {
     className: d.WM,
-    children: [h.map(e => (0, r.jsx)(f, {
+    children: [f.map(e => (0, r.jsx)(p, {
       children: (0, r.jsx)(u.$, {
         guild: e,
         size: 20
       })
-    }, e.id)), b > 0 && (0, r.jsx)(f, {
-      children: (0, r.jsxs)(a.Text, {
+    }, e.id)), g > 0 && (0, r.jsx)(p, {
+      children: (0, r.jsxs)(s.Text, {
         className: d.br,
         color: "text-subtle",
         variant: "text-xxs/semibold",
-        children: ["+", b]
+        children: ["+", g]
       })
     })]
   })

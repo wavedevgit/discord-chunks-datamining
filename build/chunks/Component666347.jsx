@@ -58,7 +58,7 @@ function x(e) {
     onReload: l,
     onDisable: c,
     onCrashDisabled: u
-  } = e, p = i.useMemo(() => new o.SpringValue(1), []), m = i.useRef(null), [g, y] = i.useState(false), [O, A] = i.useState(false), v = (0, d.bG)([E.default], () => E.default.getCurrentUser());
+  } = e, p = i.useMemo(() => new o.SpringValue(1), []), m = i.useRef(null), [g, b] = i.useState(false), [O, v] = i.useState(false), A = (0, d.bG)([E.default], () => E.default.getCurrentUser());
   (0, h.Ay)(() => (m.current = setTimeout(w, D), _.A.track(C.HAw.NOTIFICATION_VIEWED, {
     notif_type: T.KS.OverlayCrashed
   }), () => {
@@ -68,18 +68,18 @@ function x(e) {
       p.set(0), null != m.current && clearTimeout(m.current), m.current = null, null == s || s(), null == u || u()
     }, [p, s, u]),
     P = i.useCallback(e => {
-      O || (A(true), null == s || s(), _.A.track(C.HAw.NOTIFICATION_CLICKED, {
+      O || (v(true), null == s || s(), _.A.track(C.HAw.NOTIFICATION_CLICKED, {
         notif_type: T.KS.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => null == l ? true : l(), 200))
     }, [s, l, O]),
     x = i.useCallback(e => {
-      e.stopPropagation(), e.shiftKey ? (y(true), null != m.current && clearTimeout(m.current)) : y(false)
-    }, [y]),
+      e.stopPropagation(), e.shiftKey ? (b(true), null != m.current && clearTimeout(m.current)) : b(false)
+    }, [b]),
     L = i.useCallback(e => {
       e.stopPropagation(), null == s || s(), null == c || c()
     }, [c, s]),
-    j = (0, d.bG)([S.A], () => S.A.getFocusedRunningGame()),
+    j = (0, d.bG)([I.A], () => I.A.getFocusedRunningGame()),
     M = g ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
@@ -104,14 +104,14 @@ function x(e) {
       })]
     }) : null,
     k = g ? null : N.intl.string(N.t.oEJEFq),
-    U = null != (t = null == v ? true : v.isStaff()) && t || null != (n = null == v ? true : v.isStaffPersonal()) && n;
-  return (0, r.jsx)(I.$, {
+    U = null != (t = null == A ? true : A.isStaff()) && t || null != (n = null == A ? true : A.isStaffPersonal()) && n;
+  return (0, r.jsx)(S.$, {
     title: N.intl.string(N.t.U38qZj),
     body: M,
     hint: U ? k : true,
     confirmText: N.intl.string(N.t.a3HlgJ),
     cancelText: null != j ? N.intl.string(N.t.qIYnPo) : true,
-    icon: (0, r.jsx)(b.A, {
+    icon: (0, r.jsx)(y.A, {
       width: 40,
       height: 40,
       className: R.Lo
@@ -138,9 +138,9 @@ class L extends Chunk64700.PureComponent {
       error: e,
       info: t
     });
-    let r = S.A.getTargetPID();
+    let r = I.A.getTargetPID();
     _.A.setOverlayCrashed(r, e), _.A.setInputLocked(true, r);
-    let i = (0, O.St)(e, A.Ue.OutOfProcess, {
+    let i = (0, O.St)(e, v.Ue.OutOfProcess, {
       extra: {
         info: t,
         location: n
@@ -163,30 +163,30 @@ class L extends Chunk64700.PureComponent {
       error: n,
       showError: i
     } = this.state;
-    return null != n ? i ? (0, r.jsx)(v.A, {
+    return null != n ? i ? (0, r.jsx)(A.A, {
       className: R.wz,
       children: (0, r.jsx)(x, {
         error: n,
         onLock: () => {
           var e;
-          let t = null != (e = this.pid) ? e : S.A.getTargetPID();
+          let t = null != (e = this.pid) ? e : I.A.getTargetPID();
           _.A.setInputLocked(true, t), this.setState({
             showError: false
           })
         },
         onDisable: () => {
-          let e = S.A.getFocusedRunningGame();
+          let e = I.A.getFocusedRunningGame();
           null != e && p.A.toggleOverlay(e, false, false)
         },
         onCrashDisabled: () => {
           var e;
-          let t = null != (e = this.pid) ? e : S.A.getTargetPID();
-          _.A.updateOverlayState(t, A.AR.OVERLAY_CRASHED_DISABLED, "OOPOverlayErrorBoundary"), this.setState({
+          let t = null != (e = this.pid) ? e : I.A.getTargetPID();
+          _.A.updateOverlayState(t, v.AR.OVERLAY_CRASHED_DISABLED, "OOPOverlayErrorBoundary"), this.setState({
             showError: false
           })
         },
         onReload: () => {
-          _.A.setReloadOverlay(S.A.getTargetPID()), this.setState({
+          _.A.setReloadOverlay(I.A.getTargetPID()), this.setState({
             showError: false
           })
         }

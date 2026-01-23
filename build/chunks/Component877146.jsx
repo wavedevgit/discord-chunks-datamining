@@ -26,15 +26,15 @@ function m(e) {
     activeCommand: m,
     pendingReply: g,
     pendingScheduledMessage: E,
-    selectedAutocompleteInputType: b,
-    selectedAutocompleteInputError: y
+    selectedAutocompleteInputType: y,
+    selectedAutocompleteInputError: b
   } = e, {
     activeCommandOption: O,
-    activeCommandOptionStates: A
+    activeCommandOptionStates: v
   } = (0, a.cf)([s.A], () => ({
     activeCommandOption: s.A.getActiveOption(t.id),
     activeCommandOptionStates: s.A.getOptionStates(t.id)
-  })), v = (0, c.x)(t);
+  })), A = (0, c.x)(t);
   return i.useMemo(() => {
     let e = [],
       i = [];
@@ -45,20 +45,20 @@ function m(e) {
     })), null != m && e.push((0, r.jsx)(o.A, {
       activeCommand: m,
       activeOption: null != O ? O : null,
-      optionStates: A,
+      optionStates: v,
       channelId: t.id
     })), null != g && e.push((0, r.jsx)(_.A, {
       reply: g,
       chatInputType: n
-    })), v && e.push((0, r.jsx)(c.X, {})), null != E && e.push((0, r.jsx)(f.C, {
+    })), A && e.push((0, r.jsx)(c.X, {})), null != E && e.push((0, r.jsx)(f.C, {
       pendingScheduledMessage: E
-    })), "gameMentionInput" === b && i.push((0, r.jsx)(l.S, {})), "timestampMentionInput" === b && i.push((0, r.jsx)(u.S, {
-      error: null != y && y
+    })), "gameMentionInput" === y && i.push((0, r.jsx)(l.S, {})), "timestampMentionInput" === y && i.push((0, r.jsx)(u.S, {
+      error: null != b && b
     })), {
       stacked: e,
       floating: i
     }
-  }, [m, O, A, t, g, v, n, E, b, y])
+  }, [m, O, v, t, g, A, n, E, y, b])
 }
 
 function g(e) {

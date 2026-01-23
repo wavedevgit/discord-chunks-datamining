@@ -1,14 +1,14 @@
 /** Chunk was on 97492 **/
 /** chunk id: 137089, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => v,
-  fz: () => O,
-  tt: () => j
+  Ay: () => j,
+  fz: () => _,
+  tt: () => O
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk104171 = require("./104171.jsx"),
   Chunk186369 = require("./186369.js"),
@@ -27,84 +27,84 @@ let y = Chunk64700.memo(function(e) {
     guildChannels: t,
     guildChannelsVersion: n
   } = e, i = l.useMemo(() => t.getCategoryFromSection(t.voiceChannelsSectionNumber), [t, n]);
-  return null == i ? null : (0, r.jsx)(g.AV, {
+  return null == i ? null : (0, r.jsx)(m.AV, {
     category: i
   })
 });
 
-function O(e) {
+function _(e) {
   let {
     sectionIndex: t,
     guildChannels: n,
     voiceStates: r,
     selectedChannelId: l,
     selectedVoiceChannelId: i,
-    optInEnabled: a,
-    visualRefreshEnabled: s,
+    optInEnabled: s,
+    visualRefreshEnabled: a,
     density: o
   } = e;
   if (t === n.voiceChannelsSectionNumber) return 44;
   let {
     hasDivider: c,
     canHaveVoiceSummary: u
-  } = (0, b.B3)(n, a, t), d = c ? s ? 9 : 12 : 0;
-  if (!u || t === h.PU) return d;
-  let f = n.getNamedCategoryFromSection(t);
-  return null == f ? d : (0, b.Bo)({
-    category: f,
+  } = (0, g.B3)(n, s, t), d = c ? a ? 9 : 12 : 0;
+  if (!u || t === f.PU) return d;
+  let p = n.getNamedCategoryFromSection(t);
+  return null == p ? d : (0, g.Bo)({
+    category: p,
     selectedChannelId: l,
     selectedVoiceChannelId: i,
     voiceStates: r
-  }) ? (s && "cozy" === o ? 42 : 34) + d : d
+  }) ? (a && "cozy" === o ? 42 : 34) + d : d
 }
 
-function j(e, t, n) {
+function O(e, t, n) {
   if (e === t.voiceChannelsSectionNumber) return "voice-channels-button";
   let {
     hasDivider: r,
     canHaveVoiceSummary: l
-  } = (0, b.B3)(t, n, e);
+  } = (0, g.B3)(t, n, e);
   return "section-footer-".concat(e).concat(r ? "-divider" : "").concat(l ? "-voice-summary" : "")
 }
-let v = Chunk64700.memo(function(e) {
+let j = Chunk64700.memo(function(e) {
   let {
     sectionIndex: t,
     guildChannels: n,
     guildChannelsVersion: i,
-    voiceStates: g,
-    guildId: O,
-    selectedChannelId: j,
-    selectedVoiceChannelId: v,
-    optInEnabled: x
+    voiceStates: m,
+    guildId: _,
+    selectedChannelId: O,
+    selectedVoiceChannelId: j,
+    optInEnabled: v
   } = e, {
-    hasDivider: E,
-    canHaveVoiceSummary: _
-  } = l.useMemo(() => (0, b.B3)(n, x, t), [n, x, t, i]), C = l.useMemo(() => t === h.PU ? null : n.getCategoryFromSection(t), [n, t, i]), S = (0, d.jN)(O), {
+    hasDivider: x,
+    canHaveVoiceSummary: E
+  } = l.useMemo(() => (0, g.B3)(n, v, t), [n, v, t, i]), C = l.useMemo(() => t === f.PU ? null : n.getCategoryFromSection(t), [n, t, i]), S = (0, d.jN)(_), {
     enableWaveformIcon: I
-  } = (0, c.b)(O, "ChannelListSectionFooter"), N = (0, s.yK)([f.Ay], () => {
-    if (null == C || !C.isCollapsed || !_) return [];
+  } = (0, c.b)(_, "ChannelListSectionFooter"), N = (0, a.yK)([p.Ay], () => {
+    if (null == C || !C.isCollapsed || !E) return [];
     let e = C.getChannelRecords(),
       t = [];
     for (let n of e) {
       if (!n.isGuildVocal()) continue;
-      let e = f.Ay.isChannelOrParentOptedIn(O, n.id);
+      let e = p.Ay.isChannelOrParentOptedIn(_, n.id);
       (!S || e) && t.push(n)
     }
     return t
-  }, [C, _, O, S]), T = l.useMemo(() => (0, p.fK)({
+  }, [C, E, _, S]), T = l.useMemo(() => (0, h.fK)({
     channels: N,
-    selectedChannelId: j,
-    selectedVoiceChannelId: v,
-    voiceStates: g
-  }), [N, j, v, g]);
+    selectedChannelId: O,
+    selectedVoiceChannelId: j,
+    voiceStates: m
+  }), [N, O, j, m]);
   if (t === n.voiceChannelsSectionNumber) return (0, r.jsx)(y, {
     guildChannels: n,
     guildChannelsVersion: i
   });
-  let P = E ? (0, r.jsx)("div", {
+  let P = x ? (0, r.jsx)("div", {
     className: A.ts
   }) : null;
-  return _ && 0 !== T.length ? (0, r.jsxs)(r.Fragment, {
+  return E && 0 !== T.length ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: A.qz,
       children: (0, r.jsx)(o.Ay, {
@@ -112,10 +112,10 @@ let v = Chunk64700.memo(function(e) {
         users: T,
         max: 8,
         showUserPopout: true,
-        guildId: O,
+        guildId: _,
         renderLeadingIcon: I ? e => (0, r.jsx)(u.A, {
           color: "currentColor",
-          className: a()(e, m.Gj)
+          className: s()(e, b.Gj)
         }) : true
       })
     }), P]

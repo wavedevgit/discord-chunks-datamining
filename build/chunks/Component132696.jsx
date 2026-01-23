@@ -28,7 +28,7 @@ function h(e, t, n) {
 let m = 2e3,
   g = 400,
   E = .3;
-class b extends Chunk64700.Component {
+class y extends Chunk64700.Component {
   renderMedia() {
     let {
       src: e,
@@ -100,7 +100,7 @@ class b extends Chunk64700.Component {
     })
   }
 }
-class y extends Chunk64700.Component {
+class b extends Chunk64700.Component {
   componentWillUnmount() {
     this.videoTimeout.stop()
   }
@@ -127,7 +127,7 @@ class y extends Chunk64700.Component {
       title: i,
       splashClassName: a
     } = this.props;
-    return null == t ? (0, r.jsx)(b, {
+    return null == t ? (0, r.jsx)(y, {
       className: s()(_.Yi, a),
       src: n,
       title: i
@@ -205,7 +205,7 @@ class y extends Chunk64700.Component {
             type: "video/mp4"
           })
         }), (0, r.jsx)(u.F, {
-          children: o && e ? null : (0, r.jsx)(b, {
+          children: o && e ? null : (0, r.jsx)(y, {
             className: s()(_.NB, h),
             src: n,
             title: a
@@ -237,11 +237,11 @@ class y extends Chunk64700.Component {
       } = this.props, {
         currentIndex: o
       } = this.state;
-      return i ? (0, r.jsx)(b, {
+      return i ? (0, r.jsx)(y, {
         className: s()(_.Yi, a),
         src: e[o],
         title: n
-      }, o) : (0, r.jsx)(b, {
+      }, o) : (0, r.jsx)(y, {
         className: s()(_.Yi, a),
         src: t,
         title: n
@@ -249,4 +249,4 @@ class y extends Chunk64700.Component {
     })
   }
 }
-let O = y
+let O = b

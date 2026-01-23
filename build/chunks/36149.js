@@ -41,9 +41,9 @@ var Chunk64700 = require("./64700.js"),
   Chunk835002 = require("./835002.js"),
   Chunk536242 = require("./536242.js"),
   Chunk985018 = require("./985018.jsx");
-let S = new Set([Chunk847599.q1.STAGE_CHANNEL_AGE_VERIFICATION_PROMPT, Chunk847599.q1.START_STAGE_PROMPT, Chunk847599.q1.STAGE_CHANNEL_RAISE_HAND]),
-  I = new Set([Chunk204925.w_.NSFW_SERVER, Chunk204925.w_.NSFW_SERVER_INVITE, Chunk204925.w_.NSFW_SERVER_INVITE_EMBED, Chunk204925.w_.LARGE_GUILD, Chunk204925.w_.JOIN_LARGE_GUILD_UNDERAGE, Chunk204925.w_.ACCESS_LARGE_GUILD_UNDERAGE]),
-  T = e => I.has(e);
+let I = new Set([Chunk847599.q1.STAGE_CHANNEL_AGE_VERIFICATION_PROMPT, Chunk847599.q1.START_STAGE_PROMPT, Chunk847599.q1.STAGE_CHANNEL_RAISE_HAND]),
+  S = new Set([Chunk204925.w_.NSFW_SERVER, Chunk204925.w_.NSFW_SERVER_INVITE, Chunk204925.w_.NSFW_SERVER_INVITE_EMBED, Chunk204925.w_.LARGE_GUILD, Chunk204925.w_.JOIN_LARGE_GUILD_UNDERAGE, Chunk204925.w_.ACCESS_LARGE_GUILD_UNDERAGE]),
+  T = e => S.has(e);
 
 function C() {
   let e = p.default.getCurrentUser();
@@ -83,7 +83,7 @@ var x = function(e) {
 
 function j(e, t) {
   let n = f.A.getMessage(e, t);
-  if (null == n || null == n.embeds || 0 === n.embeds.length || null == n.embeds[0].fields || n.embeds[0].type !== b.Auw.AGE_VERIFICATION_SYSTEM_NOTIFICATION) returnfalse;
+  if (null == n || null == n.embeds || 0 === n.embeds.length || null == n.embeds[0].fields || n.embeds[0].type !== y.Auw.AGE_VERIFICATION_SYSTEM_NOTIFICATION) returnfalse;
   let r = n.embeds[0].fields.find(e => "ctas" === e.rawName);
   return null == r ? true : r.rawValue.split(",").includes("retry")
 }
@@ -107,16 +107,16 @@ function U(e) {
     shouldShowExpressiveModal: d = false,
     classificationId: f = null
   } = e, [h, m] = r.useState(false), E = (0, i.bG)([p.default], () => p.default.getCurrentUser()), {
-    current: b
-  } = r.useRef(null == E ? true : E.ageVerificationStatus), y = (0, c.W$)(), A = r.useCallback(() => {
+    current: y
+  } = r.useRef(null == E ? true : E.ageVerificationStatus), b = (0, c.W$)(), v = r.useCallback(() => {
     a.h.dispatch({
       type: "CLOSE_AGE_VERIFICATION_MODAL",
-      status: b
-    }), s || y || u.A.maybeOpenAgeVerificationUserFeedback({
+      status: y
+    }), s || b || u.A.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_intro_screen",
       visibleContent: o
     })
-  }, [b, s, o, y]), v = r.useCallback(async e => {
+  }, [y, s, o, b]), A = r.useCallback(async e => {
     m(true);
     try {
       a.h.dispatch({
@@ -131,20 +131,20 @@ function U(e) {
         verificationRequestId: r.verification_request_id,
         verificationVendorName: r.verification_vendor_name,
         onComplete: t,
-        onClose: A,
-        onCancel: A,
+        onClose: v,
+        onCancel: v,
         entryPoint: n,
         shouldShowExpressiveModal: d
       })
     } catch (e) {
-      l.A.showFailedToast(O.OB.TIGGER_PAWTECT_ERROR), A()
+      l.A.showFailedToast(O.OB.TIGGER_PAWTECT_ERROR), v()
     } finally {
       m(false)
     }
-  }, [t, A, d, f, n]);
+  }, [t, v, d, f, n]);
   return {
     loading: h,
-    initiateAgeVerification: v
+    initiateAgeVerification: A
   }
 }
 
@@ -168,12 +168,12 @@ function V(e) {
 }
 
 function F(e) {
-  return S.has(e) ? v.intl.string(v.t.lSWVTM) : (0, m.H)(v.intl.string(v.t.JHNunj), v.intl.string(v.t.xYXsr6))
+  return I.has(e) ? A.intl.string(A.t.lSWVTM) : (0, m.H)(A.intl.string(A.t.JHNunj), A.intl.string(A.t.xYXsr6))
 }
 
 function B(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-  return S.has(e) ? v.intl.string(v.t["S/xS/w"]) : n ? (0, m.H)(v.intl.string(A.default["1/6wta"]), v.intl.string(A.default.h7qzoa)) : null != t ? v.intl.format(A.default.RpMIT0, {
+  return I.has(e) ? A.intl.string(A.t["S/xS/w"]) : n ? (0, m.H)(A.intl.string(v.default["1/6wta"]), A.intl.string(v.default.h7qzoa)) : null != t ? A.intl.format(v.default.RpMIT0, {
     handleOnHelpUrlHook: t
-  }) : (0, m.H)(v.intl.string(v.t["+BLIGh"]), v.intl.string(v.t.HxS3oQ))
+  }) : (0, m.H)(A.intl.string(A.t["+BLIGh"]), A.intl.string(A.t.HxS3oQ))
 }

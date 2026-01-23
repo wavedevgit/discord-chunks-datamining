@@ -1,7 +1,7 @@
 /** Chunk was on 64228 **/
-/** chunk id: 160983, original params: e,l,t (module,exports,require) **/
+/** chunk id: 160983, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => A
 }), require("./321073.js");
 var Chunk777480 = require("./777480.js"),
   Chunk107563 = require("./107563.js"),
@@ -16,32 +16,32 @@ var Chunk777480 = require("./777480.js"),
   Chunk518477 = require("./518477.js"),
   Chunk985018 = require("./985018.jsx");
 
-function x(e) {
+function A(e) {
   let {
-    user: l,
-    currentUser: t
+    user: t,
+    currentUser: n
   } = e, {
-    mutualFriendsCount: x,
-    mutualGuilds: A
-  } = (0, d.A)(l), j = null == A ? true : A.length, h = (0, o.A)(l), g = (0, c.A)(l.id), v = (0, a.A)(l.id), b = [], I = l.id === (null == t ? true : t.id), y = s.A.getFirstWishlistId(l.id), O = null != y, N = O ? s.A.getWishlistSettings(l.id, y) : null, E = (O ? i.A.getWishlistItems(y) : []).length > 0, _ = g.length > 0;
-  (I || _) && b.push({
-    text: m.intl.string(m.t.laViwx),
-    section: p.RP.WIDGETS
+    mutualFriendsCount: A,
+    mutualGuilds: x
+  } = (0, c.A)(t), j = null == x ? true : x.length, h = (0, a.A)(t), g = (0, d.A)(t.id), v = (0, o.A)(t.id), b = [], I = t.id === (null == n ? true : n.id), y = s.A.getFirstWishlistId(t.id), _ = null != y, O = _ ? s.A.getWishlistSettings(t.id, y) : null, N = (_ ? i.A.getWishlistItems(y) : []).length > 0, E = g.length > 0;
+  (I || E) && b.push({
+    text: f.intl.string(f.t.laViwx),
+    section: m.RP.WIDGETS
   }), b.push({
-    text: m.intl.string(m.t.chq59f),
-    section: p.RP.ACTIVITY
+    text: f.intl.string(f.t.chq59f),
+    section: m.RP.ACTIVITY
   });
-  let T = false === l.nsfwAllowed,
-    P = r.A.isFriend(l.id),
-    S = (null == N ? true : N.visibility) === n.a.PUBLIC;
-  return (I || !I && E && S && v && (!T || T && P)) && b.push({
-    text: m.intl.string(m.t["7lZ31J"]),
-    section: p.RP.WISHLIST
-  }), l.id !== (null == t ? true : t.id) && h && (b.push({
-    text: (0, u.A)(x),
-    section: p.RP.MUTUAL_FRIENDS
+  let T = false === t.nsfwAllowed,
+    P = r.A.isFriend(t.id),
+    C = (null == O ? true : O.visibility) === l.a.PUBLIC;
+  return (I || !I && N && C && v && (!T || T && P)) && b.push({
+    text: f.intl.string(f.t["7lZ31J"]),
+    section: m.RP.WISHLIST
+  }), t.id !== (null == n ? true : n.id) && h && (b.push({
+    text: (0, u.A)(A),
+    section: m.RP.MUTUAL_FRIENDS
   }), b.push({
-    text: (0, f.A)(j),
-    section: p.RP.MUTUAL_GUILDS
+    text: (0, p.A)(j),
+    section: m.RP.MUTUAL_GUILDS
   })), b
 }

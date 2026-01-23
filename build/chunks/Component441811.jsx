@@ -18,7 +18,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk927961 = require("./927961.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk439315 = require("./439315.js");
-let g = new Chunk626584.A("DisplayNameStylesCoachmark");
+let b = new Chunk626584.A("DisplayNameStylesCoachmark");
 
 function v(e) {
   let {
@@ -27,7 +27,7 @@ function v(e) {
     children: o
   } = e, {
     analyticsLocations: v
-  } = (0, s.Ay)(), j = (0, l.useRef)(null), y = (0, i.bG)([u.A], () => u.A.isFocused()), _ = (0, l.useCallback)(() => {
+  } = (0, s.Ay)(), j = (0, l.useRef)(null), _ = (0, r.bG)([u.A], () => u.A.isFocused()), y = (0, l.useCallback)(() => {
     t(h.i.TAKE_ACTION), (0, d.openUserSettings)(c.X.PROFILE_PANEL, {
       section: p.nc_.PROFILE_CUSTOMIZATION,
       analyticsLocations: v
@@ -41,9 +41,9 @@ function v(e) {
   }, [t]);
   return (0, l.useEffect)(() => {
     var e, t, n;
-    y && (null == (e = j.current) ? true : e.paused) ? null == (t = j.current) || t.play().catch(g.error) : y || null == (n = j.current) || n.pause()
-  }, [y]), (0, a.jsxs)(a.Fragment, {
-    children: [o, (0, a.jsx)(r.A, {
+    _ && (null == (e = j.current) ? true : e.paused) ? null == (t = j.current) || t.play().catch(b.error) : _ || null == (n = j.current) || n.pause()
+  }, [_]), (0, a.jsxs)(a.Fragment, {
+    children: [o, (0, a.jsx)(i.A, {
       targetElementRef: n,
       shouldShow: true,
       onRequestClose: A,
@@ -56,17 +56,17 @@ function v(e) {
       graphic: {
         type: "video",
         ref: j,
-        src: b.A,
+        src: f.A,
         aspectRatio: "21/9",
         loop: true
       },
       size: "lg",
-      title: x.intl.string(f.default["1AE464"]),
-      body: [x.intl.string(f.default.cNc1g9), x.intl.string(x.t["4JNXHG"])],
+      title: g.intl.string(x.default["1AE464"]),
+      body: [g.intl.string(x.default.cNc1g9), g.intl.string(g.t["4JNXHG"])],
       actions: [{
-        text: x.intl.string(x.t.uw9zI7),
+        text: g.intl.string(g.t.uw9zI7),
         variant: "primary",
-        onClick: _
+        onClick: y
       }]
     })]
   })

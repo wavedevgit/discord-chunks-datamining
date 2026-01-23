@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 623413, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,22 +20,22 @@ var Chunk627968 = require("./627968.js"),
   Chunk566388 = require("./566388.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk852887 = require("./852887.js");
-let O = function(e) {
+let _ = function(e) {
   let {
     participants: t,
     channel: n,
-    hasConnectPermission: O
-  } = e, j = (0, d.H)(n.guild_id), v = l.useCallback(() => {
-    j ? (0, u.Ze)(n.guild_id, () => s.default.selectVoiceChannel(n.id)) : s.default.selectVoiceChannel(n.id)
-  }, [n.id, n.guild_id, j]), x = t.filter(e => e.type === b.wY.VOICE), E = 4 === x.length ? 2 : 3, _ = (0, i.yK)([o.A], () => x.map(e => o.A.getParticipant(n.id, e.id)).filter(h.Vq), [n.id, x]);
+    hasConnectPermission: _
+  } = e, O = (0, d.H)(n.guild_id), j = l.useCallback(() => {
+    O ? (0, u.Ze)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
+  }, [n.id, n.guild_id, O]), v = t.filter(e => e.type === g.wY.VOICE), x = 4 === v.length ? 2 : 3, E = (0, i.yK)([o.A], () => v.map(e => o.A.getParticipant(n.id, e.id)).filter(f.Vq), [n.id, v]);
   return (0, r.jsxs)("div", {
     className: y.kL,
-    children: [(0, r.jsx)(p.A, {}), (0, r.jsx)("div", {
+    children: [(0, r.jsx)(h.A, {}), (0, r.jsx)("div", {
       className: y.os,
       style: {
-        maxWidth: 168 * E
+        maxWidth: 168 * x
       },
-      children: _.slice(0, 5).map(e => (0, r.jsx)(f.Ay, {
+      children: E.slice(0, 5).map(e => (0, r.jsx)(p.Ay, {
         participant: e,
         channel: n,
         className: y.Vs,
@@ -44,29 +44,29 @@ let O = function(e) {
         popoutType: c.N.NO_POPOUT,
         width: 48
       }, e.id))
-    }), (0, r.jsx)(a.Heading, {
+    }), (0, r.jsx)(s.Heading, {
       className: y.HA,
       variant: "heading-xxl/normal",
       children: n.name
     }), (0, r.jsx)("div", {
       className: y.Nu,
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(s.Text, {
         tag: "div",
         color: "text-default",
         variant: "heading-lg/normal",
-        children: (0, g.DO)(n, x)
+        children: (0, m.DO)(n, v)
       })
     }), (0, r.jsxs)("div", {
       className: y.UD,
       children: [(0, r.jsx)("div", {
         className: y.PD,
-        children: (0, r.jsx)(a.Button, {
+        children: (0, r.jsx)(s.Button, {
           variant: "overlay-primary",
-          text: O ? A.intl.string(A.t["7vb2cc"]) : A.intl.string(A.t.TVBCKZ),
-          onClick: v,
-          disabled: !O
+          text: _ ? A.intl.string(A.t["7vb2cc"]) : A.intl.string(A.t.TVBCKZ),
+          onClick: j,
+          disabled: !_
         })
-      }), (0, r.jsx)(m.l, {
+      }), (0, r.jsx)(b.l, {
         channel: n
       })]
     })]

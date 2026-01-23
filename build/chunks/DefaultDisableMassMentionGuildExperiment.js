@@ -2,7 +2,7 @@
 /** chunk id: 15073, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   TZ: () => d,
-  zi: () => c
+  zi: () => o
 });
 var Chunk311907 = require("./311907.js"),
   Chunk600975 = require("./600975.js"),
@@ -24,7 +24,7 @@ let r = (0, Chunk600975.C)({
   }]
 });
 
-function c(e) {
+function o(e) {
   return r.useExperiment({
     guildId: e,
     location: "dd4beb_1"
@@ -45,6 +45,6 @@ function d(e) {
       autoTrackExposure: true
     });
   if (null == e) returnfalse;
-  let c = e.features.has(a.GuildFeatures.COMMUNITY);
-  return i && c && l
+  let o = e.features.has(a.GuildFeatures.COMMUNITY);
+  return i && o && l
 }

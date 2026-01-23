@@ -2,7 +2,7 @@
 /** chunk id: 188072, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  default: () => y
+  default: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,76 +20,76 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk536518 = require("./536518.js");
 
-function x(e) {
+function h(e) {
   let {
     step: t,
     instructions: r
   } = e;
   return (0, n.jsxs)("div", {
-    className: h.RA,
+    className: g.RA,
     children: [(0, n.jsx)("div", {
-      className: h.RY,
+      className: g.RY,
       children: (0, n.jsx)(l.Text, {
         variant: "text-sm/semibold",
-        className: h.CD,
+        className: g.CD,
         children: t
       })
     }), (0, n.jsx)(l.Text, {
       variant: "text-sm/normal",
       color: "text-strong",
-      className: h.GA,
+      className: g.GA,
       children: r
     })]
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     channel: t,
     transitionState: r,
-    onClose: y
-  } = e, O = (0, i.bG)([d.default], () => null != d.default.getRemoteSessionId()), j = (0, u.A)(t, {
+    onClose: b
+  } = e, O = (0, i.bG)([u.default], () => null != u.default.getRemoteSessionId()), _ = (0, f.A)(t, {
     forQRCode: true
   });
   return s.useEffect(() => {
-    O && y()
-  }, [O, y]), s.useEffect(() => {
-    (0, p.A)(t.id, b.f$.XBOX)
-  }, [t.id]), (0, n.jsx)(a.Modal, {
-    title: g.intl.string(g.t["f+Aijq"]),
-    subtitle: g.intl.string(g.t.mYFmDY),
+    O && b()
+  }, [O, b]), s.useEffect(() => {
+    (0, p.A)(t.id, m.f$.XBOX)
+  }, [t.id]), (0, n.jsx)(o.Modal, {
+    title: y.intl.string(y.t["f+Aijq"]),
+    subtitle: y.intl.string(y.t.mYFmDY),
     actions: [],
-    onClose: y,
+    onClose: b,
     transitionState: r,
     children: (0, n.jsxs)("div", {
-      className: h.Nr,
+      className: g.Nr,
       children: [(0, n.jsxs)("div", {
-        className: h.O,
+        className: g.O,
         children: [(0, n.jsxs)(l.Text, {
           variant: "text-lg/semibold",
           color: "text-strong",
-          className: h.RA,
+          className: g.RA,
           children: [(0, n.jsx)(c.A, {
-            className: h.Fp
-          }), g.intl.string(g.t.ZNlYbK)]
-        }), (0, n.jsx)(x, {
+            className: g.Fp
+          }), y.intl.string(y.t.ZNlYbK)]
+        }), (0, n.jsx)(h, {
           step: 1,
-          instructions: g.intl.string(g.t.dDtkl9)
-        }), (0, n.jsx)(x, {
+          instructions: y.intl.string(y.t.dDtkl9)
+        }), (0, n.jsx)(h, {
           step: 2,
-          instructions: g.intl.string(g.t.IWuXjC)
+          instructions: y.intl.string(y.t.IWuXjC)
         }), (0, n.jsx)(l.Text, {
           variant: "text-sm/medium",
           children: (0, n.jsx)(l.MzZ, {
-            className: h.C2,
-            href: f.A.getArticleURL(m.MVz.XBOX_CONNECTION),
-            children: g.intl.string(g.t.hvVgAZ)
+            className: g.C2,
+            href: d.A.getArticleURL(x.MVz.XBOX_CONNECTION),
+            children: y.intl.string(y.t.hvVgAZ)
           })
         })]
-      }), (0, n.jsx)(o.Ay, {
-        className: h.JB,
+      }), (0, n.jsx)(a.Ay, {
+        className: g.JB,
         size: 120,
-        text: j
+        text: _
       })]
     })
   })

@@ -2,7 +2,7 @@
 /** chunk id: 902811, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./667532.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk724875 = require("./724875.js"),
   Chunk540085 = require("./540085.js");
 
-function b(e) {
+function y(e) {
   let {
     movDark: t = d,
     movLight: n = h,
@@ -30,41 +30,41 @@ function b(e) {
     pngDark: s = p,
     pngLight: o = g,
     webmDark: c = _,
-    webmLight: b = E
-  } = e, y = (0, l.Z5)(), O = [(0, r.jsx)("source", {
+    webmLight: y = E
+  } = e, b = (0, l.Z5)(), O = [(0, r.jsx)("source", {
     src: i,
     type: "video/mp4"
   }, "mp4"), (0, r.jsx)("img", {
     alt: "",
     src: s
-  }, "png")], A = [(0, r.jsx)("source", {
+  }, "png")], v = [(0, r.jsx)("source", {
     src: a,
     type: "video/mp4"
   }, "mp4"), (0, r.jsx)("img", {
     alt: "",
     src: o
   }, "png")];
-  return (y > 52 || false === y) && (O.unshift((0, r.jsx)("source", {
+  return (b > 52 || false === b) && (O.unshift((0, r.jsx)("source", {
     src: c,
     type: "video/webm"
-  }, "webm")), A.unshift((0, r.jsx)("source", {
-    src: b,
+  }, "webm")), v.unshift((0, r.jsx)("source", {
+    src: y,
     type: "video/webm"
   }, "webm"))), (0, l.TM)() && (O.unshift((0, r.jsx)("source", {
     src: t,
     type: "video/mp4"
-  }, "hevc")), A.unshift((0, r.jsx)("source", {
+  }, "hevc")), v.unshift((0, r.jsx)("source", {
     src: n,
     type: "video/mp4"
   }, "hevc"))), {
     [u.NJ8.DARK]: O,
-    [u.NJ8.LIGHT]: A
+    [u.NJ8.LIGHT]: v
   }
 }
-let y = Chunk552122.A.getAppSpinnerSources(),
-  O = null != y ? b(y) : null,
-  A = b({}),
-  v = e => {
+let b = Chunk552122.A.getAppSpinnerSources(),
+  O = null != b ? y(b) : null,
+  v = y({}),
+  A = e => {
     var t;
     let {
       loop: n = true,
@@ -76,7 +76,7 @@ let y = Chunk552122.A.getAppSpinnerSources(),
       theme: p
     } = (0, s.wRf)(), {
       reducedMotion: _
-    } = i.useContext(s.CZY), h = A;
+    } = i.useContext(s.CZY), h = v;
     null != O && (h = O);
     let m = null != (t = h[(0, a.Mw)(p) ? u.NJ8.DARK : u.NJ8.LIGHT]) ? t : h[u.NJ8.DARK];
     return (0, r.jsx)(c.A, {

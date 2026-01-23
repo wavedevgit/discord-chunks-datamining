@@ -3,14 +3,14 @@
 "use strict";
 require.d(exports, {
   FD: () => x,
-  Id: () => v,
+  Id: () => A,
   NO: () => N,
   Qn: () => w,
   T5: () => R,
   Xw: () => D,
   Y4: () => j,
   YS: () => P,
-  l3: () => I,
+  l3: () => S,
   o1: () => U,
   o6: () => L,
   sL: () => T,
@@ -33,13 +33,13 @@ let {
   PROJECT_ENV: m,
   ASSET_ENDPOINT: g,
   CDN_HOST: E
-} = window.GLOBAL_ENV, b = Object.values(Chunk842086.y3), y = decodeURIComponent(Chunk652215.Rsh.STICKER_ASSET("[\\d]+", "(".concat(b.join("|"), ")"))), O = RegExp("(".concat(location.protocol).concat(g, "|").concat(location.protocol).concat(h, ")(").concat(y, ")"), "ig"), A = RegExp("".concat(location.protocol).concat(_, "(").concat(y, ")"), "ig"), v = e => {
+} = window.GLOBAL_ENV, y = Object.values(Chunk842086.y3), b = decodeURIComponent(Chunk652215.Rsh.STICKER_ASSET("[\\d]+", "(".concat(y.join("|"), ")"))), O = RegExp("(".concat(location.protocol).concat(g, "|").concat(location.protocol).concat(h, ")(").concat(b, ")"), "ig"), v = RegExp("".concat(location.protocol).concat(_, "(").concat(b, ")"), "ig"), A = e => {
   if (null != e.cover_sticker_id) {
     let t = e.stickers.find(t => t.id === e.cover_sticker_id);
     if (null != t) return t
   }
   return e.stickers[0]
-}, S = e => {
+}, I = e => {
   switch (e) {
     case d.TG.PNG:
       return o.QB ? d.y3.WEBP : d.y3.PNG;
@@ -52,7 +52,7 @@ let {
     default:
       throw Error("Unexpected format type: ".concat(e))
   }
-}, I = e => {
+}, S = e => {
   switch (e) {
     case "application/json":
       return d.TG.LOTTIE;
@@ -66,7 +66,7 @@ let {
     default:
       throw Error("Unexpected file type: ".concat(e))
   }
-}, T = e => null == e ? null : "".concat(e.name, ".").concat(S(e.format_type)), C = function(e) {
+}, T = e => null == e ? null : "".concat(e.name, ".").concat(I(e.format_type)), C = function(e) {
   let {
     isPreview: t = false,
     size: i = 160
@@ -74,7 +74,7 @@ let {
   if (null == e.format_type) return null;
   let a = e.format_type;
   e.format_type === d.TG.GIF && t && (a = d.TG.PNG);
-  let s = S(a),
+  let s = I(a),
     o = p.Rsh.STICKER_ASSET(e.id, s),
     c = false;
   try {
@@ -95,12 +95,12 @@ let {
   }
   let _ = "".concat(location.protocol).concat(h).concat(o);
   return c ? "".concat(_, "?force_sdr=true") : _
-}, N = e => null != e.match("development" !== m ? O : A), R = e => ({
+}, N = e => null != e.match("development" !== m ? O : v), R = e => ({
   type: d.Z2.PACK,
   id: e.id,
   name: e.name,
   stickers: e.stickers,
-  previewSticker: v(e)
+  previewSticker: A(e)
 }), w = (e, t) => e === f.BJ.ANIMATE_ON_INTERACTION ? t : e !== f.BJ.NEVER_ANIMATE, P = (e, t, n, r) => {
   if (s.A.getUploadCount(n, r) > 0) returntrue;
   let i = c.A.getStickerPreview(n, r);

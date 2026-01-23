@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 205120, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,7 +13,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk921522 = require("./921522.js");
 
-function f(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,11 +22,11 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function h(e) {
   e.stopPropagation()
 }
 
-function h() {
+function f() {
   let e = window.getSelection();
   if (null == e) return {
     selection: null,
@@ -41,11 +41,11 @@ function h() {
   }
 }
 
-function b(e, t, n) {
+function g(e, t, n) {
   let r = document.createRange();
   r.setStart(t, n), r.collapse(true), e.removeAllRanges(), e.addRange(r)
 }
-class g extends Chunk64700.PureComponent {
+class m extends Chunk64700.PureComponent {
   render() {
     let {
       className: e,
@@ -53,20 +53,20 @@ class g extends Chunk64700.PureComponent {
       richValue: n,
       message: l,
       channel: i,
-      onCancel: a,
-      children: s
+      onCancel: s,
+      children: a
     } = this.props, o = (0, r.jsx)("div", {
       className: d.z,
       children: u.intl.format(u.t.wDsPXs, {
-        onCancel: () => a(i.id),
+        onCancel: () => s(i.id),
         onSave: this.onClickSave
       })
     });
     return (0, r.jsxs)("div", {
       className: e,
       ref: this.node,
-      onContextMenu: p,
-      children: [s({
+      onContextMenu: h,
+      children: [a({
         textValue: t,
         richValue: n,
         message: l,
@@ -79,12 +79,12 @@ class g extends Chunk64700.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "node", l.createRef()), f(this, "onClickSave", () => {
+    super(...e), p(this, "node", l.createRef()), p(this, "onClickSave", () => {
       let {
         textValue: e
       } = this.props;
       this.onSubmit(e)
-    }), f(this, "onSubmit", e => {
+    }), p(this, "onSubmit", e => {
       let {
         message: t,
         channel: n,
@@ -107,19 +107,19 @@ class g extends Chunk64700.PureComponent {
           shouldClear: false,
           shouldRefocus: false
         });
-        let d = (0, a.S)(e, {
+        let d = (0, s.S)(e, {
           channel: n,
           isEdit: true
         });
         if ((null == d ? true : d.content) != null && (e = d.content), t.hasFlag(o.pr7.IS_COMPONENTS_V2) && this.props.channel.type === o.rbe.GUILD_ANNOUNCEMENT) {
-          let t = s.Ay.parse(this.props.channel, e),
+          let t = a.Ay.parse(this.props.channel, e),
             n = this.props.message.components.filter(e => e.type === i.I5.TEXT_DISPLAY);
           if (1 === n.length) {
             let r = n[0];
             e !== r.content && c(this.props.channel.id, this.props.message.id, t)
           }
         } else {
-          let t = s.Ay.parse(this.props.channel, e);
+          let t = a.Ay.parse(this.props.channel, e);
           t.content !== this.props.message.content && c(this.props.channel.id, this.props.message.id, t)
         }
         return l(n.id), Promise.resolve({
@@ -127,13 +127,13 @@ class g extends Chunk64700.PureComponent {
           shouldRefocus: true
         })
       })
-    }), f(this, "onChange", (e, t, n) => {
+    }), p(this, "onChange", (e, t, n) => {
       let {
         channel: r,
         onChange: l
       } = this.props;
       l(r.id, t, n)
-    }), f(this, "onKeyDown", e => {
+    }), p(this, "onKeyDown", e => {
       if (e.key === c.dh.ESCAPE && !e.shiftKey) {
         let {
           channel: t,
@@ -147,9 +147,9 @@ class g extends Chunk64700.PureComponent {
           selection: t,
           rangeStartContainer: n,
           rangeStartOffset: r
-        } = h();
+        } = f();
         if (null == t || null == n || null == r) return;
-        b(t, n, 0)
+        g(t, n, 0)
       }
       if (e.key === c.dh.END && !(e.shiftKey || e.ctrlKey)) {
         e.preventDefault();
@@ -157,11 +157,11 @@ class g extends Chunk64700.PureComponent {
           selection: t,
           rangeStartContainer: n,
           rangeStartOffset: r
-        } = h();
+        } = f();
         if (null == t || null == n || null == r) return;
         let l = n.textContent;
         if (null == l) return;
-        b(t, n, l.length)
+        g(t, n, l.length)
       }
     })
   }

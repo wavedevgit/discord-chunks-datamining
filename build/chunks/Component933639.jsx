@@ -2,7 +2,7 @@
 /** chunk id: 933639, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -41,7 +41,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,22 +52,22 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let O = 300,
-  A = e => (0, c.mMO)(async () => {
+  v = e => (0, c.mMO)(async () => {
     let {
       default: t
     } = await n.e("41091").then(n.bind(n, 431374));
-    return n => (0, r.jsx)(t, y(E({}, n), {
+    return n => (0, r.jsx)(t, b(E({}, n), {
       sourceAnalyticsLocations: e
     }))
   });
 
-function v(e) {
+function A(e) {
   let {
     isVisible: t,
     isExpandable: n,
@@ -76,10 +76,10 @@ function v(e) {
     analyticsLocations: g
   } = (0, d.Ay)(), {
     trackUserProfileAction: E
-  } = (0, _.NJ)(), b = i.useRef(null), y = i.useRef(null), [v, S] = (0, o.yK)([u.A], () => [u.A.useReducedMotion, u.A.keyboardModeEnabled]), I = !n || v || S ? 0 : O, T = () => {
+  } = (0, _.NJ)(), y = i.useRef(null), b = i.useRef(null), [A, I] = (0, o.yK)([u.A], () => [u.A.useReducedMotion, u.A.keyboardModeEnabled]), S = !n || A || I ? 0 : O, T = () => {
     E({
       action: "PRESS_EDIT_CUSTOM_STATUS"
-    }), A(g), null == a || a()
+    }), v(g), null == a || a()
   }, C = () => {
     E({
       action: "PRESS_CLEAR_CUSTOM_STATUS"
@@ -92,12 +92,12 @@ function v(e) {
     }),
     children: [(0, r.jsx)(l.m, {
       asContainer: true,
-      targetElementRef: b,
+      targetElementRef: y,
       text: h.intl.string(h.t.bt75uw),
-      delay: I,
+      delay: S,
       ariaHidden: true,
       children: (0, r.jsx)(f.$n, {
-        ref: b,
+        ref: y,
         className: s()(m.x6, m.kb),
         "aria-label": h.intl.string(h.t.QdHxos),
         "aria-haspopup": "dialog",
@@ -110,10 +110,10 @@ function v(e) {
     }), (0, r.jsx)(l.m, {
       asContainer: true,
       text: h.intl.string(h.t.VkKicb),
-      delay: I,
+      delay: S,
       ariaHidden: true,
       children: (0, r.jsx)(f.$n, {
-        ref: y,
+        ref: b,
         className: s()(m.x6, m.pG),
         "aria-label": h.intl.string(h.t.wfYTHe),
         onClick: C,

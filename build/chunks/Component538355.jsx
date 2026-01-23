@@ -23,13 +23,13 @@ function m(e, t) {
     hideSimpleEmbedContent: m,
     formatInline: g = false,
     noStyleAndInteraction: E = false,
-    isInteracting: b = false,
-    allowHeading: y = false,
+    isInteracting: y = false,
+    allowHeading: b = false,
     allowList: O = false,
-    allowLinks: A = false,
-    allowDevLinks: v = false,
-    previewLinkTarget: S = false,
-    viewingChannelId: I
+    allowLinks: v = false,
+    allowDevLinks: A = false,
+    previewLinkTarget: I = false,
+    viewingChannelId: S
   } = t, T = a.m.useExperiment({
     location: "useMessageRenderedContent"
   }).enabled, C = (0, d.I)({
@@ -63,7 +63,7 @@ function m(e, t) {
           value: {
             messageId: e.id,
             channelId: e.channel_id,
-            viewingChannelId: I,
+            viewingChannelId: S,
             guildId: (0, o.U)(e),
             setHasSpoilerEmbeds: w
           },
@@ -78,14 +78,14 @@ function m(e, t) {
       hideSimpleEmbedContent: m,
       formatInline: g,
       noStyleAndInteraction: E,
-      isInteracting: b,
-      allowHeading: y,
+      isInteracting: y,
+      allowHeading: b,
       allowList: O,
-      allowLinks: A,
-      allowDevLinks: v,
-      previewLinkTarget: S,
-      viewingChannelId: I,
+      allowLinks: v,
+      allowDevLinks: A,
+      previewLinkTarget: I,
+      viewingChannelId: S,
       allowGameMentions: T
     })
-  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, m, g, E, b, y, O, A, S, v, I, C.enabled, T, N])
+  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, m, g, E, y, b, O, v, I, A, S, C.enabled, T, N])
 }

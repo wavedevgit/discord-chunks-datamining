@@ -1,7 +1,7 @@
 /** Chunk was on 1784 **/
 /** chunk id: 184659, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  z: () => u
+  z: () => d
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -11,35 +11,35 @@ var Chunk627968 = require("./627968.js"),
   Chunk927578 = require("./927578.js"),
   Chunk132198 = require("./132198.jsx"),
   Chunk266371 = require("./266371.js");
-let u = e => {
+let d = e => {
   var t, n;
   let {
-    user: u
-  } = e, m = c.Ay.canUsePremiumProfileCustomization(u), f = (0, l.cf)([s.A], () => s.A.getAllPending()), {
-    pendingAvatar: b
-  } = f, p = function(e, t) {
+    user: d
+  } = e, m = o.Ay.canUsePremiumProfileCustomization(d), p = (0, l.cf)([s.A], () => s.A.getAllPending()), {
+    pendingAvatar: f
+  } = p, x = function(e, t) {
     if (null == e) return {};
-    var n, r, l, a = {};
+    var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-      return a
+      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+      return i
     }
-    if (a = function(e, t) {
+    if (i = function(e, t) {
         if (null == e) return {};
         var n, r, l = {},
-          a = Object.getOwnPropertyNames(e);
-        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
+          i = Object.getOwnPropertyNames(e);
+        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
         return l
       }(e, t), Object.getOwnPropertySymbols)
-      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-  }(f, ["pendingAvatar"]), x = (0, i.V7)({
-    userId: u.id,
-    image: b
+      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+    return i
+  }(p, ["pendingAvatar"]), v = (0, a.V7)({
+    userId: d.id,
+    image: f
   });
   return (0, r.jsx)("div", {
-    className: d.k,
-    children: (0, r.jsx)(a.A, (t = function(e) {
+    className: u.k,
+    children: (0, r.jsx)(i.A, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -56,10 +56,10 @@ let u = e => {
         })
       }
       return e
-    }({}, p), n = n = {
-      pendingAvatar: x,
-      user: u,
-      pendingBadges: [(0, o._)()],
+    }({}, x), n = n = {
+      pendingAvatar: v,
+      user: d,
+      pendingBadges: [(0, c._)()],
       canUsePremiumCustomization: m,
       disabledInputs: true,
       hideExampleButton: true

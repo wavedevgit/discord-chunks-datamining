@@ -26,19 +26,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk272984 = require("./272984.js"),
   Chunk985018 = require("./985018.jsx");
 
-function S(e) {
-  if (e === a.j.WEEK) return v.t.SjOZfm
+function I(e) {
+  if (e === a.j.WEEK) return A.t.SjOZfm
 }
-let I = (e, t, n, r) => {
-    let i = S(r),
+let S = (e, t, n, r) => {
+    let i = I(r),
       a = f.Ay.getName(t.guild_id, t.id, n),
       s = e.extra.artist.name;
-    return v.intl.formatToMarkdownString(i, {
+    return A.intl.formatToMarkdownString(i, {
       artist: s,
       userName: a
     }).replaceAll("*", "")
   },
-  T = (e, t) => v.intl.formatToPlainString(v.t.Osmpr9, {
+  T = (e, t) => A.intl.formatToPlainString(A.t.Osmpr9, {
     username: t.username,
     artist: e.extra.artist.name
   }),
@@ -49,7 +49,7 @@ let I = (e, t, n, r) => {
       onReaction: a,
       onVoiceChannelPreview: f
     } = e, {
-      parent_title: S,
+      parent_title: I,
       provider: C,
       image_url: N
     } = n.extra.media, R = n.extra.artist.name, w = (0, o.bG)([c.default], () => c.default.getUser(n.author_id)), {
@@ -57,7 +57,7 @@ let I = (e, t, n, r) => {
       secondaryColor: D
     } = (0, m.A)(N), x = (0, p.TQ)(n), L = i.useCallback(() => {
       if (null == t || null == w || !(0, d.S1)(x, g.wE)) return;
-      let e = I(n, t, w, x);
+      let e = S(n, t, w, x);
       return (0, _.Lu)({
         user: w,
         channel: t,
@@ -70,29 +70,29 @@ let I = (e, t, n, r) => {
     }, [N, R, t, n, P, x, D, w]), j = (0, h.A)(O.fg2.SPOTIFY);
     if (null == w || !(0, d.S1)(x, g.wE)) return null;
     let M = () => {
-        let e = A.M0.ALBUM,
-          t = l.A.isProtocolRegistered() ? A.RQ.PLAYER_OPEN(e, n.extra.media.external_parent_id) : A.RQ.WEB_OPEN(e, n.extra.media.external_parent_id);
+        let e = v.M0.ALBUM,
+          t = l.A.isProtocolRegistered() ? v.RQ.PLAYER_OPEN(e, n.extra.media.external_parent_id) : v.RQ.WEB_OPEN(e, n.extra.media.external_parent_id);
         window.open(t)
       },
       k = () => {
-        let e = A.M0.ARTIST,
-          t = l.A.isProtocolRegistered() ? A.RQ.PLAYER_OPEN(e, n.extra.artist.external_id) : A.RQ.WEB_OPEN(e, n.extra.artist.external_id);
+        let e = v.M0.ARTIST,
+          t = l.A.isProtocolRegistered() ? v.RQ.PLAYER_OPEN(e, n.extra.artist.external_id) : v.RQ.WEB_OPEN(e, n.extra.artist.external_id);
         window.open(t)
       };
-    return (0, r.jsxs)(b.YN, {
-      children: [(0, r.jsx)(b.BC, {
+    return (0, r.jsxs)(y.YN, {
+      children: [(0, r.jsx)(y.BC, {
         onClickTitle: M,
         onClickSubtitle: k,
         onClickThumbnail: M,
         channel: t,
         entry: n,
-        headerIcons: C === s.X.SPOTIFY ? (0, r.jsx)(y.A, {
+        headerIcons: C === s.X.SPOTIFY ? (0, r.jsx)(b.A, {
           onClick: j,
           Icon: u.A,
-          "aria-label": v.intl.string(v.t["0ZB/XE"])
+          "aria-label": A.intl.string(A.t["0ZB/XE"])
         }) : null,
-        userDescription: v.t.CcVI1T,
-        title: S,
+        userDescription: A.t.CcVI1T,
+        title: I,
         subtitle: R,
         badges: (0, r.jsx)(E.mG, {
           location: E.N5.POPOUT,
@@ -100,8 +100,8 @@ let I = (e, t, n, r) => {
             entry: n
           }, t))
         })
-      }), (0, r.jsx)(b.Eh, {
-        children: (0, r.jsx)(b.fD, {
+      }), (0, r.jsx)(y.Eh, {
+        children: (0, r.jsx)(y.fD, {
           onReaction: a,
           onVoiceChannelPreview: f,
           user: w,

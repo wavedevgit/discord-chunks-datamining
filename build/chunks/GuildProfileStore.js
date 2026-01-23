@@ -112,7 +112,7 @@ function E(e) {
   }))
 }
 
-function b(e) {
+function y(e) {
   let {
     guildId: t,
     profile: n
@@ -125,7 +125,7 @@ function b(e) {
   }))
 }
 
-function y(e) {
+function b(e) {
   let {
     guildId: t,
     error: n
@@ -151,7 +151,7 @@ function O(e) {
   }))
 }
 
-function A(e) {
+function v(e) {
   let {
     form: t,
     guildId: n
@@ -169,7 +169,7 @@ function A(e) {
   }))
 }
 
-function v(e) {
+function A(e) {
   let {
     invite: t
   } = e, {
@@ -189,14 +189,14 @@ function v(e) {
   }))
 }
 
-function S(e) {
+function I(e) {
   let {
     channel: t
   } = e;
   t.type === o.rbe.GUILD_ANNOUNCEMENT && null != t.guild_id && p.delete(t.guild_id)
 }
 
-function I(e) {
+function S(e) {
   let {
     guildId: t,
     enabled: n
@@ -248,15 +248,15 @@ let N = new C(Chunk73153.h, {
   GUILD_PROFILE_FETCH_SUCCESS: m,
   GUILD_PROFILE_FETCH_FAILURE: g,
   GUILD_PROFILE_UPDATE: E,
-  GUILD_PROFILE_UPDATE_SUCCESS: b,
-  GUILD_PROFILE_UPDATE_FAILURE: y,
-  MEMBER_VERIFICATION_FORM_UPDATE: A,
-  INVITE_RESOLVE_SUCCESS: v,
-  INSTANT_INVITE_CREATE_SUCCESS: v,
-  CHANNEL_CREATE: S,
-  GUILD_SETTINGS_SET_WIDGET: I,
+  GUILD_PROFILE_UPDATE_SUCCESS: y,
+  GUILD_PROFILE_UPDATE_FAILURE: b,
+  MEMBER_VERIFICATION_FORM_UPDATE: v,
+  INVITE_RESOLVE_SUCCESS: A,
+  INSTANT_INVITE_CREATE_SUCCESS: A,
+  CHANNEL_CREATE: I,
+  GUILD_SETTINGS_SET_WIDGET: S,
   GUILD_UPDATE: T,
   GUILD_PROFILE_UPDATE_VISIBILITY: E,
   GUILD_PROFILE_UPDATE_VISIBILITY_SUCCESS: O,
-  GUILD_PROFILE_UPDATE_VISIBILITY_FAILURE: y
+  GUILD_PROFILE_UPDATE_VISIBILITY_FAILURE: b
 })

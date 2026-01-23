@@ -2,7 +2,7 @@
 /** chunk id: 93879, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,29 +22,29 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk809519 = require("./809519.js");
 
-function y(e) {
+function b(e) {
   let {
     className: t,
     applicationId: n,
     userIds: a,
-    cardSize: y = c.Y.SMALL,
+    cardSize: b = c.Y.SMALL,
     location: O,
-    guildId: A,
-    channelId: v
-  } = e, S = (0, l.h)(n), I = (0, p.A)(S, O), T = i.useMemo(() => {
-    let e = null != I ? I.getIconURL(g.iu.SMALL) : true;
+    guildId: v,
+    channelId: A
+  } = e, I = (0, l.h)(n), S = (0, p.A)(I, O), T = i.useMemo(() => {
+    let e = null != S ? S.getIconURL(g.iu.SMALL) : true;
     return null != e ? (0, r.jsx)("img", {
-      className: b.In,
+      className: y.In,
       src: e,
       alt: ""
     }) : true
-  }, [I]), {
+  }, [S]), {
     state: C,
     recommendations: N,
     skuIdToUserIdsReasons: R
   } = (0, _.A)({
-    guildId: null == I ? true : I.guildId,
-    applicationId: null == I ? true : I.id,
+    guildId: null == S ? true : S.guildId,
+    applicationId: null == S ? true : S.id,
     numWishlistItems: 2,
     location: O,
     includeWishlists: true,
@@ -62,36 +62,36 @@ function y(e) {
         userIdsForRecommendation: s,
         userIdsForGifting: a,
         wishlistItem: t,
-        guildId: A,
-        channelId: v,
-        cardSize: y,
-        contextContainerClassName: b.RL
+        guildId: v,
+        channelId: A,
+        cardSize: b,
+        contextContainerClassName: y.RL
       }, t.skuId)
     })
-  }, [y, v, A, N, R, P, a, w]);
+  }, [b, A, v, N, R, P, a, w]);
   i.useEffect(() => {
     0 !== N.length && u.default.track(m.HAw.COMMERCE_SHOP_GIFTING_BREADCRUMB_VIEWED, {
-      guild_id: A,
-      channel_id: v,
+      guild_id: v,
+      channel_id: A,
       sku_ids: N.map(e => e.skuId),
       location: O
     })
-  }, [A, v, N, O]);
+  }, [v, A, N, O]);
   let x = "loading" === C || 0 === N.length;
   return (0, r.jsxs)("div", {
-    className: s()(b.kL, t),
+    className: s()(y.kL, t),
     children: [(0, r.jsxs)("div", {
-      className: b.wx,
+      className: y.wx,
       children: [(0, r.jsx)(o.EYj, {
         variant: "text-xs/medium",
         color: "text-muted",
         children: P ? E.intl.string(E.t["7lZ31J"]) : E.intl.string(E.t.BCi1gT)
       }), null != T ? T : null]
     }), (0, r.jsx)("div", {
-      className: b.ld,
+      className: y.ld,
       children: x ? (0, r.jsx)(o.y$y, {
         type: o.y$y.Type.SPINNING_CIRCLE,
-        className: b.u1
+        className: y.u1
       }) : D
     })]
   })

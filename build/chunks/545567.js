@@ -37,7 +37,7 @@ function u(e) {
         channelId: "1337",
         content: e
       })), n = n = {
-        state: c.cmJ.SENT,
+        state: o.cmJ.SENT,
         id: "31337"
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -51,12 +51,12 @@ function u(e) {
       }), t)),
       u = new a.A({
         id: "313337",
-        username: o.intl.string(o.t.cqpybK),
+        username: c.intl.string(c.t.cqpybK),
         discriminator: "0000",
         bot: false
       });
     r.author = u;
-    let f = i.nj(u);
-    return null != f && (r.author = f, r.author.getAvatarURL = () => d.A), r
+    let g = i.nj(u);
+    return null != g && (r.author = g, r.author.getAvatarURL = () => d.A), r
   }, [e])
 }

@@ -2,7 +2,7 @@
 /** chunk id: 49463, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => ey,
+  A: () => eb,
   N: () => em
 }), require("./896048.js"), require("./938796.js"), require("./65821.js"), require("./228524.js"), require("./747238.js"), require("./812715.js"), require("./457529.js");
 var Chunk735438 = require("./735438.js"),
@@ -42,7 +42,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,16 +53,16 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let O = "scientist:triggered",
-  A = "exerimentOverrides",
-  v = "userExperimentOverrides",
-  S = "guildExperimentOverrides",
-  I = 1,
+  v = "exerimentOverrides",
+  A = "userExperimentOverrides",
+  I = "guildExperimentOverrides",
+  S = 1,
   T = new Chunk626584.A("ExperimentStore"),
   C = false,
   N = {},
@@ -175,7 +175,7 @@ function Q(e) {
     null != a && (e.context_guild_id = a.guildId);
     let f = u ? m.HAw.EXPERIMENT_USER_TRIGGERED_FALLBACK : m.HAw.EXPERIMENT_USER_TRIGGERED;
     if (c) {
-      let t = y(E({}, e), {
+      let t = b(E({}, e), {
         assignment_fingerprint: n.fingerprint,
         current_session_id: d.default.getSessionId(),
         current_fingerprint: d.default.getFingerprint(),
@@ -209,7 +209,7 @@ function Q(e) {
         holdout_bucket: n.holdoutBucket
       };
     if (c) {
-      let e = y(E({}, a), {
+      let e = b(E({}, a), {
         assignment_fingerprint: n.fingerprint,
         current_session_id: d.default.getSessionId(),
         current_fingerprint: d.default.getFingerprint(),
@@ -456,7 +456,7 @@ function eo(e) {
     serializedExperimentStore: t,
     user: n
   } = e;
-  if (!U && Y(n) && (U = true), C = t.hasLoadedExperiments, N = t.trackedExposureExperiments, D = t.loadedUserExperiments, j = t.userExperimentOverrides, M = t.guildExperimentOverrides, P = y(E({}, P), {
+  if (!U && Y(n) && (U = true), C = t.hasLoadedExperiments, N = t.trackedExposureExperiments, D = t.loadedUserExperiments, j = t.userExperimentOverrides, M = t.guildExperimentOverrides, P = b(E({}, P), {
       source: t.assignmentSource,
       sessionId: t.assignmentSessionId,
       fingerprint: t.assignmentFingerprint
@@ -474,7 +474,7 @@ function ec(e) {
   let {
     isSwitchingAccount: t
   } = e;
-  o.w.remove(O), t || (o.w.remove(A), o.w.remove(v), o.w.remove(S), j = {}, M = {}), D = {}, P = y(E({}, P), {
+  o.w.remove(O), t || (o.w.remove(v), o.w.remove(A), o.w.remove(I), j = {}, M = {}), D = {}, P = b(E({}, P), {
     rawUserExperiments: []
   }), N = {}, C = false
 }
@@ -485,7 +485,7 @@ function eu() {
 
 function ed() {
   let e = o.w.get(O);
-  if (null == e || e.v !== I) return {};
+  if (null == e || e.v !== S) return {};
   let t = e.e,
     n = Date.now(),
     r = false;
@@ -517,7 +517,7 @@ function ef() {
 
 function ep() {
   var e, t, n;
-  let r = [null != (e = o.w.get(A)) ? e : {}, null != (t = o.w.get(v)) ? t : {}, null != (n = o.w.get(S)) ? n : {}];
+  let r = [null != (e = o.w.get(v)) ? e : {}, null != (t = o.w.get(A)) ? t : {}, null != (n = o.w.get(I)) ? n : {}];
   j = {}, M = {};
   let a = !i().isEmpty(r[0]);
   for (let e of r)
@@ -529,7 +529,7 @@ function ep() {
 
 function e_() {
   try {
-    o.w.set(v, j)
+    o.w.set(A, j)
   } catch (e) {
     T.error("Error saving user experiment overrides, unsaved data will be lost", e), p.default.track(m.HAw.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
       module: "discord_app",
@@ -537,7 +537,7 @@ function e_() {
     })
   }
   try {
-    o.w.set(S, M)
+    o.w.set(I, M)
   } catch (e) {
     T.error("Error saving guild experiment overrides, unsaved data will be lost", e), p.default.track(m.HAw.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
       module: "discord_app",
@@ -549,7 +549,7 @@ function e_() {
 function eh(e) {
   try {
     o.w.set(O, {
-      v: I,
+      v: S,
       e: e
     })
   } catch (e) {
@@ -587,7 +587,7 @@ function eg(e) {
     skipCleanup: a
   } = e, s = null != i ? i : null == (t = w[n]) ? true : t.type;
   if (null == s) returnfalse;
-  if (null == r ? (j = E({}, j), delete j[n], M = E({}, M), delete M[n]) : "user" === s ? j = y(E({}, j), {
+  if (null == r ? (j = E({}, j), delete j[n], M = E({}, M), delete M[n]) : "user" === s ? j = b(E({}, j), {
       [n]: {
         type: s,
         revision: 1,
@@ -595,7 +595,7 @@ function eg(e) {
         bucket: r,
         override: true
       }
-    }) : M = y(E({}, M), {
+    }) : M = b(E({}, M), {
       [n]: {
         type: s,
         revision: 1,
@@ -617,17 +617,17 @@ function eE(e) {
     t.id === n && delete L[e]
   }
 }
-class eb extends Chunk536802.A {
+class ey extends Chunk536802.A {
   initialize() {
     N = ed(), ep(), this.waitFor(d.default), this.loadCache()
   }
   loadCache() {
-    let e = this.readSnapshot(eb.LATEST_SNAPSHOT_VERSION);
+    let e = this.readSnapshot(ey.LATEST_SNAPSHOT_VERSION);
     null != e && ("loadedUserExperiments" in e ? (D = e.loadedUserExperiments, x = es(e.loadedGuildExperiments), Object.values(D).forEach(e => e.loadedFromCache = true), Object.values(x).forEach(e => e.loadedFromCache = true)) : en(e, true))
   }
   takeSnapshot() {
     return {
-      version: eb.LATEST_SNAPSHOT_VERSION,
+      version: ey.LATEST_SNAPSHOT_VERSION,
       data: E({}, P)
     }
   }
@@ -745,5 +745,5 @@ class eb extends Chunk536802.A {
     }, l.A.Early), g(this, "trackExposure", Q)
   }
 }
-g(eb, "displayName", "ExperimentStore"), g(eb, "LATEST_SNAPSHOT_VERSION", 1);
-let ey = new eb
+g(ey, "displayName", "ExperimentStore"), g(ey, "LATEST_SNAPSHOT_VERSION", 1);
+let eb = new ey

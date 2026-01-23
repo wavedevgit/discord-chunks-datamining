@@ -3,9 +3,9 @@
 require.d(exports, {
   Fr: () => u,
   JX: () => d,
-  YR: () => o,
+  YR: () => c,
   eM: () => s,
-  kq: () => c
+  kq: () => o
 }), require("./896048.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
 var Chunk976860 = require("./976860.js"),
   Chunk767599 = require("./767599.js"),
@@ -13,29 +13,29 @@ var Chunk976860 = require("./976860.js"),
   Chunk652215 = require("./652215.js");
 let s = () => {
     let e = {
-      previousView: (0, r.R4)()
+      previousView: (0, i.R4)()
     };
-    (0, l.pX)(i.BVt.GLOBAL_DISCOVERY_APPS, {
+    (0, r.pX)(a.BVt.GLOBAL_DISCOVERY_APPS, {
       state: e
-    })
-  },
-  c = e => {
-    let {
-      categoryId: t
-    } = e, n = {
-      previousView: (0, r.R4)()
-    };
-    (0, l.pX)(i.BVt.GLOBAL_DISCOVERY_APPS_CATEGORY(t), {
-      state: n
     })
   },
   o = e => {
     let {
+      categoryId: t
+    } = e, n = {
+      previousView: (0, i.R4)()
+    };
+    (0, r.pX)(a.BVt.GLOBAL_DISCOVERY_APPS_CATEGORY(t), {
+      state: n
+    })
+  },
+  c = e => {
+    let {
       applicationId: t
     } = e, n = {
-      previousView: (0, r.R4)()
+      previousView: (0, i.R4)()
     };
-    (0, l.pX)(i.BVt.GLOBAL_DISCOVERY_APPS_PROFILE(t), {
+    (0, r.pX)(a.BVt.GLOBAL_DISCOVERY_APPS_PROFILE(t), {
       state: n
     })
   },
@@ -45,11 +45,11 @@ let s = () => {
       categoryId: t,
       page: n
     } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, s = {
-      previousView: (0, r.R4)()
-    }, c = new URLSearchParams;
-    null != e && "" !== e && c.set("q", e), null != t && t !== a.lj && c.set("category_id", t.toString()), null != n && n > 1 && c.set("page", n.toString()), (0, l.pX)(i.BVt.GLOBAL_DISCOVERY_APPS_SEARCH, {
+      previousView: (0, i.R4)()
+    }, o = new URLSearchParams;
+    null != e && "" !== e && o.set("q", e), null != t && t !== l.lj && o.set("category_id", t.toString()), null != n && n > 1 && o.set("page", n.toString()), (0, r.pX)(a.BVt.GLOBAL_DISCOVERY_APPS_SEARCH, {
       state: s,
-      search: c.toString()
+      search: o.toString()
     })
   },
   u = e => {
@@ -57,6 +57,6 @@ let s = () => {
       location: {
         state: t
       }
-    } = (0, l.JK)();
-    (0, l.bG)(e, t)
+    } = (0, r.JK)();
+    (0, r.bG)(e, t)
   }

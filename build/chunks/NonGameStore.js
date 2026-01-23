@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./896048.js");
 var i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -42,11 +42,11 @@ function E() {
   r = true
 }
 
-function b() {
+function y() {
   r = false, m = true
 }
 
-function y(e) {
+function b(e) {
   let {
     nonGames: t,
     etag: n
@@ -94,8 +94,8 @@ class O extends(i = Chunk311907.Ay.PersistedStore) {
   }
 }
 d(O, "displayName", "NonGameStore"), d(O, "persistKey", "NonGameStore");
-let A = new O(Chunk73153.h, {
+let v = new O(Chunk73153.h, {
   NON_GAMES_DATABASE_FETCH: E,
-  NON_GAMES_DATABASE_FETCH_FAIL: b,
-  NON_GAMES_DATABASE_UPDATE: y
+  NON_GAMES_DATABASE_FETCH_FAIL: y,
+  NON_GAMES_DATABASE_UPDATE: b
 })

@@ -2,7 +2,7 @@
 /** chunk id: 658679, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y,
+  A: () => b,
   R: () => E
 }), require("./938796.js");
 var Chunk627968 = require("./627968.js");
@@ -44,13 +44,13 @@ function E(e) {
   return g.intl.string(g.t.YScQSF)
 }
 
-function b(e, t) {
+function y(e, t) {
   null != e.current && (e.current.scrollIntoView({
     behavior: "smooth"
   }), t())
 }
 
-function y(e) {
+function b(e) {
   var t;
   let {
     legalTermsNodeRef: n,
@@ -59,12 +59,12 @@ function y(e) {
     disablePurchase: f,
     flashLegalTerms: p,
     isSubmitting: m,
-    premiumSubscription: y,
+    premiumSubscription: b,
     isGift: O,
-    planGroup: A,
-    isPrepaid: v,
-    isTrial: S,
-    makePurchase: I,
+    planGroup: v,
+    isPrepaid: A,
+    isTrial: I,
+    makePurchase: S,
     needsPaymentSource: T,
     inReverseTrial: C,
     onNext: N,
@@ -81,10 +81,10 @@ function y(e) {
   } = (0, d.P5)(), U = E({
     purchaseType: x,
     plan: P,
-    premiumSubscription: y,
+    premiumSubscription: b,
     isGift: O,
-    planGroup: A,
-    isPrepaidPaymentSource: v,
+    planGroup: v,
+    isPrepaidPaymentSource: A,
     inReverseTrial: C,
     paymentSourceId: L,
     hasPaymentSources: k
@@ -126,11 +126,11 @@ function y(e) {
       disabled: true
     })
   });
-  if (S) return (0, r.jsx)(l.Button, {
+  if (I) return (0, r.jsx)(l.Button, {
     variant: "expressive",
     "data-testid": D ? "purchase" : "submitButton",
     text: U,
-    onClick: D ? I : () => b(n, p),
+    onClick: D ? S : () => y(n, p),
     loading: m,
     iconPosition: "start",
     icon: () => (0, r.jsx)(l.tvc, {
@@ -143,7 +143,7 @@ function y(e) {
       variant: "active",
       text: U,
       type: "submit",
-      onClick: () => b(n, p),
+      onClick: () => y(n, p),
       "data-testid": "submitButton"
     })
   });
@@ -159,7 +159,7 @@ function y(e) {
     variant: "active",
     text: U,
     "data-testid": "purchase",
-    onClick: I,
+    onClick: S,
     loading: m
   })
 }

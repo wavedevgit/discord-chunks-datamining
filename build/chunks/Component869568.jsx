@@ -67,13 +67,13 @@ function w(e, t) {
 async function R(e, t, n) {
   let i = e.roles.filter(e => e !== n);
   try {
-    await O.A.updateMemberRoles(t, e.id, i, [], [n])
+    await _.A.updateMemberRoles(t, e.id, i, [], [n])
   } catch (t) {
-    let e = new f.A(t);
+    let e = new g.A(t);
     (0, d.qfG)(t => (0, r.jsx)(a.Modal, w(P({}, t), {
-      title: T.intl.string(T.t.R0RpRX),
+      title: I.intl.string(I.t.R0RpRX),
       actions: [{
-        text: T.intl.string(T.t.BddRzS),
+        text: I.intl.string(I.t.BddRzS),
         variant: "primary",
         onClick: t.onClose
       }],
@@ -90,45 +90,45 @@ function D(e) {
   let {
     member: t,
     guildId: l,
-    roleId: c,
-    locked: f
-  } = e, b = i.useRef(null), m = i.useMemo(() => ({
+    roleId: o,
+    locked: g
+  } = e, p = i.useRef(null), f = i.useMemo(() => ({
     [l]: [t.id]
   }), [l, t.id]);
 
-  function h(e) {
-    if (e.stopPropagation(), !f) {
+  function x(e) {
+    if (e.stopPropagation(), !g) {
       let n;
-      if (e.shiftKey) return void R(t, l, c);
-      n = y.A.getRole(c), (0, d.qfG)(e => (0, r.jsx)(a.Modal, w(P({}, e), {
-        title: T.intl.string(T.t["7sFNfW"]),
-        subtitle: T.intl.format(T.t.scORUv, {
+      if (e.shiftKey) return void R(t, l, o);
+      n = O.A.getRole(o), (0, d.qfG)(e => (0, r.jsx)(a.Modal, w(P({}, e), {
+        title: I.intl.string(I.t["7sFNfW"]),
+        subtitle: I.intl.format(I.t.scORUv, {
           username: t.name,
           roleName: null == n ? true : n.name
         }),
         actions: [{
-          text: T.intl.string(T.t["ETE/oC"]),
+          text: I.intl.string(I.t["ETE/oC"]),
           variant: "secondary",
           onClick: e.onClose
         }, {
-          text: T.intl.string(T.t.N86XcP),
+          text: I.intl.string(I.t.N86XcP),
           variant: "critical-primary",
           onClick: () => {
-            R(t, l, c), e.onClose()
+            R(t, l, o), e.onClose()
           }
         }],
         children: (0, r.jsx)(d.Text, {
-          className: I.Of,
+          className: T.Of,
           color: "text-muted",
           variant: "text-md/normal",
-          children: T.intl.string(T.t.jxIxJL)
+          children: I.intl.string(I.t.jxIxJL)
         })
       })))
     }
   }
 
   function j(e) {
-    let i = x.default.getUser(t.id);
+    let i = h.default.getUser(t.id);
     null != i && (0, u.L3)(e, async () => {
       let {
         default: e
@@ -140,35 +140,35 @@ function D(e) {
       }))
     })
   }
-  return (0, g.E)(m, "GuildSettingsRolesEditMembers"), (0, r.jsx)("div", {
+  return (0, m.E)(f, "GuildSettingsRolesEditMembers"), (0, r.jsx)("div", {
     className: C.Q,
-    children: (0, r.jsx)(p.A, {
-      targetElementRef: b,
+    children: (0, r.jsx)(b.A, {
+      targetElementRef: p,
       userId: t.id,
       guildId: l,
-      roleId: c,
+      roleId: o,
       position: "left",
       children: e => (0, r.jsxs)(d.DUT, w(P({}, e), {
-        innerRef: b,
-        className: I.TL,
+        innerRef: p,
+        className: T.TL,
         onContextMenu: j,
-        children: [(0, r.jsx)(N.A, {
-          className: I.bu,
+        children: [(0, r.jsx)(E.A, {
+          className: T.bu,
           avatarURL: t.avatarURL,
           name: t.name,
           bot: t.bot,
           verifiedBot: t.verifiedBot,
           userTag: t.userTag
         }), (0, r.jsx)("div", {
-          className: I.O6,
-          children: (0, r.jsx)(o.m, {
-            text: f ? T.intl.string(T.t.wkrQaK) : T.intl.string(T.t["7sFNfW"]),
+          className: T.O6,
+          children: (0, r.jsx)(c.m, {
+            text: g ? I.intl.string(I.t.wkrQaK) : I.intl.string(I.t["7sFNfW"]),
             position: "top",
             children: (0, r.jsx)(d.DUT, {
-              className: s()(I.DT, {
-                [I.li]: f
+              className: s()(T.DT, {
+                [T.li]: g
               }),
-              onClick: h,
+              onClick: x,
               children: (0, r.jsx)(d.aXh, {
                 size: "xs",
                 color: "currentColor"
@@ -189,15 +189,15 @@ function G(e) {
   return (0, r.jsx)("div", {
     className: C.Q,
     children: (0, r.jsxs)("div", {
-      className: s()(I.TL, I.xs),
+      className: s()(T.TL, T.xs),
       children: [(0, r.jsx)(d.nFg, {
         size: "md",
         color: "currentColor"
       }), (0, r.jsx)(d.Text, {
-        className: I.Tf,
+        className: T.Tf,
         variant: "text-sm/semibold",
         color: "text-muted",
-        children: T.intl.format(T.t.P9pZOW, {
+        children: I.intl.format(I.t.P9pZOW, {
           addMembersHook: function(e, i) {
             return n ? null : (0, r.jsx)(d.MzZ, {
               onClick: t,
@@ -217,20 +217,20 @@ function L(e) {
     query: l,
     headerHeight: s,
     locked: a,
-    onScroll: c,
-    roleMembers: o,
+    onScroll: o,
+    roleMembers: c,
     handleAddClick: u
   } = e, {
-    analyticsLocations: f
-  } = (0, m.Ay)(b.A.MEMBER_LIST), g = i.useMemo(() => l.trim().toLowerCase(), [l]);
-  (0, v.cG)(t, g);
-  let p = i.useMemo(() => o.filter(e => (0, v.EF)(g, e)), [o, g]),
-    x = i.useMemo(() => p.sort((e, t) => e.name.localeCompare(t.name)), [p]);
-  return (0, r.jsx)(m.f5, {
-    value: f,
+    analyticsLocations: g
+  } = (0, f.Ay)(p.A.MEMBER_LIST), m = i.useMemo(() => l.trim().toLowerCase(), [l]);
+  (0, v.cG)(t, m);
+  let b = i.useMemo(() => c.filter(e => (0, v.EF)(m, e)), [c, m]),
+    h = i.useMemo(() => b.sort((e, t) => e.name.localeCompare(t.name)), [b]);
+  return (0, r.jsx)(f.f5, {
+    value: g,
     children: (0, r.jsx)(d.Eie, {
-      className: I.p_,
-      sections: [Math.max(p.length, 1)],
+      className: T.p_,
+      sections: [Math.max(b.length, 1)],
       sectionHeight: s,
       renderSection: () => (0, r.jsx)("div", {
         style: {
@@ -245,11 +245,11 @@ function L(e) {
         let {
           row: i
         } = e;
-        if (0 === x.length) return (0, r.jsx)(G, {
+        if (0 === h.length) return (0, r.jsx)(G, {
           handleAddClick: u,
           locked: a
         }, "empty");
-        let l = x[i];
+        let l = h[i];
         return (0, r.jsx)(D, {
           member: l,
           guildId: t,
@@ -257,7 +257,7 @@ function L(e) {
           locked: a
         }, l.id)
       },
-      onScroll: c
+      onScroll: o
     })
   })
 }
@@ -270,19 +270,19 @@ function k(e) {
     handleAddClick: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: I.MT,
+    className: T.MT,
     children: [(0, r.jsx)(d.IWV, {
       query: t,
       onChange: n,
       onClear: () => n(""),
-      placeholder: T.intl.string(T.t.pYHobK),
-      "aria-label": T.intl.string(T.t.pYHobK)
+      placeholder: I.intl.string(I.t.pYHobK),
+      "aria-label": I.intl.string(I.t.pYHobK)
     }), (0, r.jsx)(d.Button, {
       onClick: l,
       variant: "primary",
       size: "sm",
       disabled: i,
-      text: T.intl.string(T.t.cHszXg)
+      text: I.intl.string(I.t.cHszXg)
     })]
   })
 }
@@ -292,18 +292,18 @@ function M(e) {
     guild: t,
     role: l,
     locked: a,
-    setSelectedSection: o
-  } = e, [u, f] = i.useState(""), {
-    headerHeight: g,
-    headerRef: b
-  } = (0, A.A)(0), {
-    scrolledToTop: m,
-    handleScroll: p
-  } = (0, E.u)(), x = l.managed || a, O = (0, v.K5)(t.id, l.id), y = (0, c.bG)([j.A], () => {
+    setSelectedSection: c
+  } = e, [u, g] = i.useState(""), {
+    headerHeight: m,
+    headerRef: p
+  } = (0, y.A)(0), {
+    scrolledToTop: f,
+    handleScroll: b
+  } = (0, A.u)(), h = l.managed || a, _ = (0, v.K5)(t.id, l.id), O = (0, o.bG)([j.A], () => {
     var e, n;
     return null != (e = null == (n = j.A.getRoleMemberCount(t.id)) ? true : n[l.id]) ? e : 0
-  }) > O.length, N = () => {
-    h.default.track(S.HAw.OPEN_MODAL, {
+  }) > _.length, E = () => {
+    x.default.track(S.HAw.OPEN_MODAL, {
       type: "Add Role Members",
       location_page: "Role Settings",
       location_section: "Members"
@@ -318,42 +318,42 @@ function M(e) {
     })
   };
   return (0, r.jsxs)("div", {
-    className: I.kL,
+    className: T.kL,
     children: [(0, r.jsx)("div", {
-      className: I.N1,
-      ref: b,
+      className: T.N1,
+      ref: p,
       children: (0, r.jsx)("div", {
         className: C.Q,
         children: (0, r.jsxs)("div", {
           className: s()(C.wx, {
-            [C.l6]: !m
+            [C.l6]: !f
           }),
-          children: [(0, r.jsx)(E.A, {
+          children: [(0, r.jsx)(A.A, {
             guild: t,
             role: l,
-            selectedSection: _.T$.MEMBERS,
-            setSelectedSection: o
+            selectedSection: N.T$.MEMBERS,
+            setSelectedSection: c
           }), (0, r.jsx)(k, {
             query: u,
-            setQuery: f,
-            locked: x,
-            handleAddClick: N
-          }), y ? (0, r.jsx)(d.po8, {
-            className: I.v6,
+            setQuery: g,
+            locked: h,
+            handleAddClick: E
+          }), O ? (0, r.jsx)(d.po8, {
+            className: T.v6,
             messageType: d.YCn.INFO,
-            children: T.intl.string(T.t.RQxHZ8)
+            children: I.intl.string(I.t.RQxHZ8)
           }) : null]
         })
       })
     }), (0, r.jsx)(L, {
-      headerHeight: g + 8,
+      headerHeight: m + 8,
       query: u,
       guildId: t.id,
       roleId: l.id,
-      locked: x,
-      onScroll: p,
-      roleMembers: O,
-      handleAddClick: N
+      locked: h,
+      onScroll: b,
+      roleMembers: _,
+      handleAddClick: E
     })]
   })
 }

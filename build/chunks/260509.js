@@ -12,7 +12,7 @@ require.d(exports, {
   ok: () => h,
   uA: () => u,
   vI: () => c,
-  wh: () => b
+  wh: () => y
 }), require("./896048.js");
 var Chunk867051 = require("./867051.js"),
   Chunk329972 = require("./329972.js"),
@@ -98,7 +98,7 @@ function E(e, t) {
   return (0, r.hZ)(e, "joinedAt", "string" == typeof t ? new Date(t) : t)
 }
 
-function b(e) {
+function y(e) {
   var t;
   return null != e && ((0, i.v)("guild_record") ? u.has(e.nsfwLevel) : u.has(null != (t = e.ownerConfiguredContentLevel) ? t : l.ftr.DEFAULT))
 }

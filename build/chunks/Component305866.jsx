@@ -78,8 +78,8 @@ let p = Chunk64700.createContext({
       impression: c,
       disableTrack: f,
       returnRef: _
-    } = e, h = d(e, ["children", "impressionType", "impression", "disableTrack", "returnRef"]), m = i.useRef(null), g = i.useRef(null), [E, b] = i.useState(false), y = E ? g : m;
-    (0, a.tjt)(y, {
+    } = e, h = d(e, ["children", "impressionType", "impression", "disableTrack", "returnRef"]), m = i.useRef(null), g = i.useRef(null), [E, y] = i.useState(false), b = E ? g : m;
+    (0, a.tjt)(b, {
       returnRef: _
     }), i.useContext(s.A)({
       type: o,
@@ -89,7 +89,7 @@ let p = Chunk64700.createContext({
       disableTrack: f
     }), i.useImperativeHandle(t, () => m.current);
     let O = i.useCallback(e => {
-      E !== e && b(e)
+      E !== e && y(e)
     }, [E]);
     return (0, r.jsx)(p.Provider, {
       value: {

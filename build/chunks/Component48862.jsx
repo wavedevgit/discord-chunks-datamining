@@ -2,7 +2,7 @@
 /** chunk id: 48862, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk133440 = require("./133440.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,14 +30,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -48,13 +48,13 @@ function O() {
     let {
       default: e
     } = await n.e("66920").then(n.bind(n, 220763));
-    return t => (0, r.jsx)(e, y({
+    return t => (0, r.jsx)(e, b({
       channel: null
     }, t))
   })
 }
 
-function A(e) {
+function v(e) {
   let {
     className: t,
     iconOnly: n
@@ -62,7 +62,7 @@ function A(e) {
     let e = p.A.getChannel(_.A.getChannelId());
     return (null == e ? true : e.isPrivate()) ? m.liQ.DM_CHANNEL : m.liQ.GUILD_CHANNEL
   }), {
-    analyticsLocations: b
+    analyticsLocations: y
   } = (0, d.Ay)(u.A.PREMIUM_UPSELL);
   i.useEffect(() => {
     h.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
@@ -71,10 +71,10 @@ function A(e) {
         location_page: a,
         location_section: m.JJy.CHANNEL_TEXT_AREA
       },
-      location_stack: b
+      location_stack: y
     })
-  }, [a, b]);
-  let y = () => (0, r.jsxs)("div", {
+  }, [a, y]);
+  let b = () => (0, r.jsxs)("div", {
       className: s()(E.zr, t),
       children: [(0, r.jsx)(c.tvc, {
         size: "md",
@@ -88,7 +88,7 @@ function A(e) {
         })
       })]
     }),
-    A = () => (0, r.jsx)(c.DUT, {
+    v = () => (0, r.jsx)(c.DUT, {
       className: E.e7,
       onClick: () => O(),
       children: (0, r.jsx)(l.m, {
@@ -101,5 +101,5 @@ function A(e) {
         })
       })
     });
-  return n ? A() : y()
+  return n ? v() : b()
 }

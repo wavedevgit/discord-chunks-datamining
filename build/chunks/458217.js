@@ -33,8 +33,8 @@ function c(e) {
     m = u,
     g = u + d,
     E = i().contrast(f, p),
-    b = s;
-  for (; b-- > 0;) {
+    y = s;
+  for (; y-- > 0;) {
     let e = E < m,
       t = E > g;
     if (!e && !t) break;

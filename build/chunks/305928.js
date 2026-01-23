@@ -12,22 +12,22 @@ var Chunk64700 = require("./64700.js"),
 
 function c(e) {
   var t;
-  let n = (0, l.bG)([s.A], () => s.A.getGuildId()),
+  let n = (0, l.bG)([a.A], () => a.A.getGuildId()),
     c = e.children.map(e => e.id),
     u = null != n && c.includes(n),
     d = false,
-    f = false,
     p = false,
-    h = (0, l.bG)([s.A], () => s.A.getChannelId()),
-    b = null == (t = (0, i.A)()) ? true : t.guild_id,
-    g = null != b && c.includes(b),
-    m = (0, l.bG)([o.A], () => null != h && o.A.hasVideo(h), [h]),
-    A = (0, l.bG)([a.A], () => a.A.getCurrentUserActiveStream());
-  return u && (d = !m, f = m, p = null != A && null != A.guildId && c.includes(A.guildId)), r.useMemo(() => ({
+    h = false,
+    f = (0, l.bG)([a.A], () => a.A.getChannelId()),
+    g = null == (t = (0, i.A)()) ? true : t.guild_id,
+    m = null != g && c.includes(g),
+    b = (0, l.bG)([o.A], () => null != f && o.A.hasVideo(f), [f]),
+    A = (0, l.bG)([s.A], () => s.A.getCurrentUserActiveStream());
+  return u && (d = !b, p = b, h = null != A && null != A.guildId && c.includes(A.guildId)), r.useMemo(() => ({
     audio: d,
-    video: f,
-    screenshare: p,
-    liveStage: g,
+    video: p,
+    screenshare: h,
+    liveStage: m,
     isCurrentUserConnected: u
-  }), [d, f, p, g, u])
+  }), [d, p, h, m, u])
 }

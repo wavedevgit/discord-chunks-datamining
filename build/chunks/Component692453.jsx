@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => j,
-  R: () => O
+  R: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk902973 = require("./902973.js");
 
-function h(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,13 +43,13 @@ function h(e) {
 function j(e) {
   let {
     saveOnClose: t
-  } = e, s = (0, l.bG)([d.A], () => d.A.getGuildId()), j = (0, l.bG)([f.A], () => f.A.getEditedConnections()), O = (0, l.bG)([f.A], () => f.A.isSubmitting()), y = i.useRef(s);
+  } = e, s = (0, l.bG)([d.A], () => d.A.getGuildId()), j = (0, l.bG)([g.A], () => g.A.getEditedConnections()), _ = (0, l.bG)([g.A], () => g.A.isSubmitting()), O = i.useRef(s);
   i.useEffect(() => {
-    y.current = s
+    O.current = s
   }, [s]), i.useEffect(() => {
     let {
       current: e
-    } = y;
+    } = O;
     return () => {
       t && null != e && (0, u.fH)(e)
     }
@@ -59,13 +59,13 @@ function j(e) {
         let {
           default: e
         } = await n.e("90194").then(n.bind(n, 566857));
-        return t => (0, r.jsx)(e, h({}, t))
+        return t => (0, r.jsx)(e, x({}, t))
       })
     }, [s]),
-    A = i.useMemo(() => j.map(e => {
+    y = i.useMemo(() => j.map(e => {
       var t, n;
-      return t = h({}, e), n = n = {
-        id: (0, m.Sq)(e)
+      return t = x({}, e), n = n = {
+        id: (0, f.Sq)(e)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -77,7 +77,7 @@ function j(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t
     }), [j]),
-    E = i.useCallback(e => {
+    A = i.useCallback(e => {
       let t = e.map(e => {
         let {
           id: t
@@ -103,43 +103,43 @@ function j(e) {
       (0, u.Bq)(t)
     }, []),
     {
-      handleDragStart: N,
-      handleDragReset: _,
+      handleDragStart: E,
+      handleDragReset: N,
       handleDragComplete: S,
-      draggingId: T
-    } = (0, c.A)(A, E);
+      draggingId: I
+    } = (0, o.A)(y, A);
   if (null == s) return null;
-  let I = j.length < m.pA;
+  let T = j.length < f.pA;
   return (0, r.jsx)("div", {
-    className: x.kL,
+    className: h.kL,
     children: (0, r.jsxs)("div", {
-      className: x.jx,
+      className: h.jx,
       children: [(0, r.jsxs)("div", {
-        className: x.G6,
+        className: h.G6,
         children: [(0, r.jsx)(a.Heading, {
           variant: "heading-lg/bold",
-          children: p.intl.string(p.t.Cl8F8H)
+          children: b.intl.string(b.t.Cl8F8H)
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-strong",
-          children: p.intl.format(p.t.vqgyJR, {
-            linkedRolesUrl: o.A.getArticleURL(b.MVz.CONNECTION_DETAILS_ADMIN)
+          children: b.intl.format(b.t.vqgyJR, {
+            linkedRolesUrl: c.A.getArticleURL(p.MVz.CONNECTION_DETAILS_ADMIN)
           })
         })]
       }), j.length > 0 && (0, r.jsx)("div", {
-        className: x.eF,
-        children: A.map((e, t) => (0, r.jsx)(g.A, {
+        className: h.eF,
+        children: y.map((e, t) => (0, r.jsx)(m.A, {
           connection: e,
           index: t,
-          onDragStart: N,
-          onDragReset: _,
+          onDragStart: E,
+          onDragReset: N,
           onDragComplete: S,
-          draggingId: T
+          draggingId: I
         }, e.id))
       }), (0, r.jsxs)("button", {
-        className: x.qG,
+        className: h.qG,
         onClick: v,
-        disabled: !I || O,
+        disabled: !T || _,
         type: "button",
         children: [(0, r.jsx)(a.U1e, {
           size: "custom",
@@ -149,23 +149,23 @@ function j(e) {
         }), (0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
           color: "text-brand",
-          children: p.intl.string(p.t["03EqaC"])
+          children: b.intl.string(b.t["03EqaC"])
         })]
-      }), !I && (0, r.jsx)(a.Text, {
+      }), !T && (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: p.intl.format(p.t.Nc7guW, {
-          max: m.pA
+        children: b.intl.format(b.t.Nc7guW, {
+          max: f.pA
         })
       })]
     })
   })
 }
 
-function O() {
+function _() {
   let e = (0, l.bG)([d.A], () => d.A.getGuildId()),
-    t = (0, l.bG)([f.A], () => f.A.isSubmitting()),
-    n = (0, l.bG)([f.A], () => f.A.getErrors());
+    t = (0, l.bG)([g.A], () => g.A.isSubmitting()),
+    n = (0, l.bG)([g.A], () => g.A.getErrors());
   if (null == e) return null;
   let i = n.length > 0;
   return (0, r.jsx)(s.A, {
@@ -174,14 +174,14 @@ function O() {
     },
     onReset: u.p2,
     submitting: t,
-    onSaveText: p.intl.string(p.t["R3BPH+"]),
+    onSaveText: b.intl.string(b.t["R3BPH+"]),
     disabled: i,
     errorMessage: i ? (0, r.jsx)("div", {
-      className: x.Tt,
+      className: h.Tt,
       children: (0, r.jsx)("ul", {
-        className: x.qr,
+        className: h.qr,
         children: n.map((e, t) => (0, r.jsxs)("li", {
-          className: x.Ff,
+          className: h.Ff,
           children: [(0, r.jsx)(a.EpV, {
             size: "sm",
             color: "currentColor"

@@ -25,35 +25,35 @@ function p(e) {
     display: m,
     onSelect: g,
     onClose: E,
-    appContext: b,
-    targetElementRef: y
-  } = e, [O, A] = i.useState(false), {
-    analyticsLocations: v
-  } = (0, o.Ay)(s.A.USER_PROFILE_ACTIVITY_CONTEXT_MENU), S = (0, c.A)({
+    appContext: y,
+    targetElementRef: b
+  } = e, [O, v] = i.useState(false), {
+    analyticsLocations: A
+  } = (0, o.Ay)(s.A.USER_PROFILE_ACTIVITY_CONTEXT_MENU), I = (0, c.A)({
     display: m,
     user: p,
     activity: _,
     entry: h,
-    analyticsLocations: v
-  }), I = (0, u.NR)(), T = i.useRef(null), C = null != (t = null == I ? true : I.interactionPopoutTargetRef) ? t : T, N = (0, d.A)({
+    analyticsLocations: A
+  }), S = (0, u.NR)(), T = i.useRef(null), C = null != (t = null == S ? true : S.interactionPopoutTargetRef) ? t : T, N = (0, d.A)({
     entry: h,
     activity: _,
     user: p,
     display: m,
     onClose: E,
-    onAction: S,
+    onAction: I,
     isMenuOpen: O,
-    appContext: b
+    appContext: y
   });
   return 0 === N.length || p.bot ? null : (0, r.jsx)(a.YNO, {
-    targetElementRef: null != y ? y : C,
+    targetElementRef: null != b ? b : C,
     align: "top",
     position: "right",
     disablePointerEvents: false,
     onRequestOpen: () => {
-      S({
+      I({
         action: "OPEN_MENU"
-      }), A(true)
+      }), v(true)
     },
     renderPopout: e => {
       let {
@@ -64,7 +64,7 @@ function p(e) {
         children: (0, r.jsx)(a.W1t, {
           navId: l.n,
           onClose: () => {
-            t(), A(false)
+            t(), v(false)
           },
           "aria-label": f.intl.string(f.t.PlAQz1),
           onSelect: g,

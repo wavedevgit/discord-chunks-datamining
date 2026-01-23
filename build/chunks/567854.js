@@ -15,10 +15,10 @@ var Chunk64700 = require("./64700.js"),
 
 function x(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null,
-    [x, f] = l.useState(false),
-    [j, g] = l.useState(null),
+    [x, g] = l.useState(false),
+    [j, m] = l.useState(null),
     h = l.useMemo(() => u.A.getStageInstanceByChannel(null == e ? true : e.id), [null == e ? true : e.id]),
-    m = (0, c.Z)(e);
+    f = (0, c.Z)(e);
   return {
     loading: x,
     error: j,
@@ -29,12 +29,12 @@ function x(e, t) {
         sendStartNotification: x
       } = l;
       if (null != e && "" !== c && null != u) {
-        f(true), g(null), null != n && (r.A.selectGuild(n), i.default.selectVoiceChannel(e.id));
+        g(true), m(null), null != n && (r.A.selectGuild(n), i.default.selectVoiceChannel(e.id));
         try {
           let n;
-          null != h ? n = await o.b3(e, c, u) : (n = await o.Nx(e, c, u, null != x && x), m && s.sF(d._.LIVE_STAGE_NOTIFICATION_BADGE)), t(n)
+          null != h ? n = await o.b3(e, c, u) : (n = await o.Nx(e, c, u, null != x && x), f && s.sF(d._.LIVE_STAGE_NOTIFICATION_BADGE)), t(n)
         } catch (e) {
-          g(new a.LG(e)), f(false)
+          m(new a.LG(e)), g(false)
         }
       }
     }

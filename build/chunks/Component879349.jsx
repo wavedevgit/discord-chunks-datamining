@@ -14,7 +14,7 @@ var Chunk311907 = require("./311907.js"),
 function c(e) {
   let {
     channel: t
-  } = e, n = (0, l.bG)([s.A], () => s.A.getGuild(t.guild_id)), c = (0, a.gU)(t, n);
+  } = e, n = (0, l.bG)([a.A], () => a.A.getGuild(t.guild_id)), c = (0, s.gU)(t, n);
   return null == c ? null : (0, r.jsxs)("div", {
     className: o.hY,
     children: [(0, r.jsx)(c, {

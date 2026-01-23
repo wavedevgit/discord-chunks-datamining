@@ -1,7 +1,7 @@
 /** Chunk was on 81890 **/
-/** chunk id: 603738, original params: e,t,a (module,exports,require) **/
+/** chunk id: 603738, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => N
 }), require("./896048.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,78 +20,78 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk216344 = require("./216344.js");
 
-function h(e) {
+function N(e) {
   let {
     onComplete: t,
-    onClose: a
-  } = e, [i, h] = l.useState(null), [x, A] = l.useState(null), [T, y] = l.useState(false), j = (0, r.bG)([b.default], () => b.default.getCurrentUser()), O = l.useRef(null);
-  async function g(e) {
-    e.preventDefault(), s()(null != i, "Cannot submit null birthday."), y(true);
+    onClose: n
+  } = e, [l, N] = i.useState(null), [A, x] = i.useState(null), [T, y] = i.useState(false), j = (0, r.bG)([p.default], () => p.default.getCurrentUser()), g = i.useRef(null);
+  async function O(e) {
+    e.preventDefault(), s()(null != l, "Cannot submit null birthday."), y(true);
     try {
-      await u.n7(i, p.w_.NEW_USER_FLOW), t()
+      await _.n7(l, b.w_.NEW_USER_FLOW), t()
     } catch (e) {
-      if (null != e.body && null != e.body.date_of_birth) u.Xv(p.w_.NEW_USER_FLOW), u.$2(p.w_.NEW_USER_FLOW), a();
+      if (null != e.body && null != e.body.date_of_birth) _.Xv(b.w_.NEW_USER_FLOW), _.$2(b.w_.NEW_USER_FLOW), n();
       else {
-        var n;
-        (null == e || null == (n = e.body) ? true : n.username) != null ? A(E.intl.string(E.t["TGg/2k"])) : A(null == e ? true : e.body.message)
+        var a;
+        (null == e || null == (a = e.body) ? true : a.username) != null ? x(E.intl.string(E.t["TGg/2k"])) : x(null == e ? true : e.body.message)
       }
     }
     y(false)
   }
-  l.useEffect(() => {
+  i.useEffect(() => {
     null != j && null != j.nsfwAllowed && t()
   }, [j, t]);
-  let v = l.useCallback(e => {
-      h(e)
-    }, [h]),
-    D = l.useCallback(() => {
+  let v = i.useCallback(e => {
+      N(e)
+    }, [N]),
+    C = i.useCallback(() => {
       var e;
-      null == (e = O.current) || e.focus()
-    }, [O]);
-  return null == j ? null : (0, n.jsxs)("form", {
-    className: N.Qs,
-    onSubmit: g,
-    children: [(0, n.jsx)(d.pVd, {
+      null == (e = g.current) || e.focus()
+    }, [g]);
+  return null == j ? null : (0, a.jsxs)("form", {
+    className: h.Qs,
+    onSubmit: O,
+    children: [(0, a.jsx)(d.pVd, {
       size: "custom",
       width: 56,
       height: 40,
-      className: N.wm,
-      color: c.A.unsafe_rawColors.BRAND_500.css
-    }), (0, n.jsx)(d.Heading, {
-      className: N.DD,
+      className: h.wm,
+      color: o.A.unsafe_rawColors.BRAND_500.css
+    }), (0, a.jsx)(d.Heading, {
+      className: h.DD,
       variant: "heading-xl/semibold",
       children: E.intl.string(E.t.n7i7sv)
-    }), (0, n.jsx)(d.Text, {
+    }), (0, a.jsx)(d.Text, {
       color: "text-default",
-      className: N.h_,
+      className: h.h_,
       variant: "text-md/normal",
       children: E.intl.format(E.t.fa8kW1, {
-        helpURL: _.A.getArticleURL(m.MVz.AGE_GATE)
+        helpURL: m.A.getArticleURL(f.MVz.AGE_GATE)
       })
-    }), (0, n.jsx)(d.wXn, {
-      theme: m.NJ8.LIGHT,
-      children: (0, n.jsx)(f.A, {
+    }), (0, a.jsx)(d.wXn, {
+      theme: f.NJ8.LIGHT,
+      children: (0, a.jsx)(u.A, {
         required: true,
         autoFocus: true,
-        wrapperClassName: N.kz,
+        wrapperClassName: h.kz,
         label: E.intl.string(E.t.rhBeKe),
         name: "birthday",
         onChange: v,
-        onPopulated: D,
-        error: x,
-        value: i
+        onPopulated: C,
+        error: A,
+        value: l
       })
-    }), (0, n.jsx)("div", {
-      className: N.qr,
-      children: (0, n.jsx)("div", {
-        className: N._o,
-        children: (0, n.jsx)(o.$n, {
+    }), (0, a.jsx)("div", {
+      className: h.qr,
+      children: (0, a.jsx)("div", {
+        className: h._o,
+        children: (0, a.jsx)(c.$n, {
           "data-migration-pending": true,
-          buttonRef: O,
+          buttonRef: g,
           type: "submit",
-          size: o.$n.Sizes.LARGE,
+          size: c.$n.Sizes.LARGE,
           submitting: T,
-          disabled: null == i,
+          disabled: null == l,
           fullWidth: true,
           children: E.intl.string(E.t.PDTjLN)
         })

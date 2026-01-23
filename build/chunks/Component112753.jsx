@@ -94,7 +94,7 @@ let $ = 52,
   et = .025;
 
 function en(e) {
-  return null == e.id ? y.Ay.convertSurrogateToName(e.name) : ":".concat(e.name, ":")
+  return null == e.id ? b.Ay.convertSurrogateToName(e.name) : ":".concat(e.name, ":")
 }
 
 function er(e, t, n, i) {
@@ -120,13 +120,13 @@ let ei = e => {
     } = e, [o, l] = i.useState(true), [c, u] = i.useState([]), d = i.useMemo(() => {
       if (null == c || c.length < 1) return;
       let e = (0, T.eT)(t, c[0], n, {
-        emojiSize: I.x.LARGE,
+        emojiSize: S.x.LARGE,
         messageId: a
       });
-      return (0, r.jsx)(I.A, {
+      return (0, r.jsx)(S.A, {
         className: K.__invalid_effect,
         effect: e,
-        emojiSize: I.x.LARGE,
+        emojiSize: S.x.LARGE,
         onComplete: () => l(false)
       })
     }, [c, t, n, a]);
@@ -162,7 +162,7 @@ let ei = e => {
       setSelected: o,
       reactionType: l,
       colors: u
-    } = e, f = i.useMemo(() => en(t), [t]), p = i.useMemo(() => er(t, ee, K.Zg, s()(K.Zg, K.at)), [t]), h = l === S.v.BURST, m = h ? W.t.VmiNjd : W.t["cNfs1/"], g = W.intl.formatToPlainString(m, {
+    } = e, f = i.useMemo(() => en(t), [t]), p = i.useMemo(() => er(t, ee, K.Zg, s()(K.Zg, K.at)), [t]), h = l === I.v.BURST, m = h ? W.t.VmiNjd : W.t["cNfs1/"], g = W.intl.formatToPlainString(m, {
       name: f,
       n: n
     }), E = i.useMemo(() => {
@@ -176,7 +176,7 @@ let ei = e => {
         a ? (e.background = null != (t = (0, c.xp)(s, o)) ? t : "", e.border = "1px solid ".concat(null != (n = (0, c.xp)(s, 1.1 * o)) ? n : "")) : (e.background = null != (r = (0, c.xp)(s, et)) ? r : "", e.border = "1px solid ".concat(null != (i = (0, c.xp)(s, 2 * et)) ? i : ""))
       }
       return e
-    }, [h, u, a]), b = i.useMemo(() => {
+    }, [h, u, a]), y = i.useMemo(() => {
       let e = {};
       if (h) {
         let {
@@ -185,7 +185,7 @@ let ei = e => {
         e.color = t
       }
       return e
-    }, [h, u]), y = i.useCallback(() => {
+    }, [h, u]), b = i.useCallback(() => {
       o({
         emoji: t,
         reactionType: l
@@ -202,11 +202,11 @@ let ei = e => {
         }),
         "aria-label": g,
         "aria-selected": a,
-        onClick: y,
+        onClick: b,
         style: E,
         children: [p, (0, r.jsx)(_.Text, {
           variant: "text-sm/bold",
-          style: b,
+          style: y,
           children: n
         })]
       })
@@ -222,7 +222,7 @@ function es(e) {
     guildId: o,
     reactionType: l,
     onRemoveReactor: c
-  } = e, d = (0, u.bG)([R.default], () => R.default.getId()), p = (0, u.bG)([M.default], () => M.default.getUser(n.id), [n]), h = (0, C.Id)(a), E = (0, u.bG)([L.A], () => L.A.can(Y.xBc.MANAGE_MESSAGES, a) && h) || d === n.id, y = (0, u.bG)([P.Ay, w.A, j.A], () => G.Ay.getName(o, a.id, n));
+  } = e, d = (0, u.bG)([R.default], () => R.default.getId()), p = (0, u.bG)([M.default], () => M.default.getUser(n.id), [n]), h = (0, C.Id)(a), E = (0, u.bG)([L.A], () => L.A.can(Y.xBc.MANAGE_MESSAGES, a) && h) || d === n.id, b = (0, u.bG)([P.Ay, w.A, j.A], () => G.Ay.getName(o, a.id, n));
 
   function O() {
     B.et({
@@ -232,17 +232,17 @@ function es(e) {
       location: B.qN.MESSAGE,
       userId: n.id,
       options: {
-        burst: l === S.v.BURST
+        burst: l === I.v.BURST
       }
     }), null == c || c()
   }
-  return (0, r.jsxs)(b.A, {
+  return (0, r.jsxs)(y.A, {
     className: K.Px,
     onContextMenu: e => (0, F.wQ)(e, n, a),
-    align: b.A.Align.CENTER,
+    align: y.A.Align.CENTER,
     tabIndex: 0,
     "aria-label": n.username,
-    children: [(0, r.jsx)(b.A.Child, {
+    children: [(0, r.jsx)(y.A.Child, {
       wrap: true,
       grow: 0,
       shrink: 0,
@@ -251,19 +251,19 @@ function es(e) {
         user: null != p ? p : n,
         size: _._3J.SIZE_32
       })
-    }), (0, r.jsxs)(b.A.Child, {
+    }), (0, r.jsxs)(y.A.Child, {
       className: K.Bi,
       children: [(0, r.jsx)(_.Text, {
         tag: "strong",
         variant: "text-md/normal",
         className: K.UU,
-        children: null != y && "" !== y && (0, r.jsx)("span", {
+        children: null != b && "" !== b && (0, r.jsx)("span", {
           className: K.Ci,
-          children: y
+          children: b
         })
       }), (0, r.jsx)(m.A, {
         user: n,
-        className: null != y && "" !== y ? K.rW : null,
+        className: null != b && "" !== b ? K.rW : null,
         usernameClass: s()(K.Xh, K.Ci),
         discriminatorClass: K.D2,
         forceUsername: true
@@ -328,7 +328,7 @@ class eo extends Chunk64700.PureComponent {
     } = this.props, s = [];
     return 0 === t.length && this.state.loadingMore ? s.push(1) : (s.push(t.length), e && s.push(1)), (0, r.jsxs)("div", {
       className: K.Ro,
-      children: [a === S.v.BURST && (0, r.jsx)(ei, {
+      children: [a === I.v.BURST && (0, r.jsx)(ei, {
         emoji: n.emoji,
         channelId: i.getChannelId(),
         messageId: i.id
@@ -405,7 +405,7 @@ let el = Chunk311907.Ay.connectStores([Chunk956703.A], e => {
     hasMore: false
   };
   let a = Array.from(i.values()),
-    s = (r === S.v.BURST ? n.burst_count : n.count) > a.length;
+    s = (r === I.v.BURST ? n.burst_count : n.count) > a.length;
   return {
     reactors: a,
     hasMore: s
@@ -432,7 +432,7 @@ function eu(e, t, n) {
   let [r, a] = i.useState(null != e ? e : t);
   return i.useEffect(() => {
     null != r && null == n.find(e => {
-      let t = null != e.me_vote ? S.v.VOTE : e.burst_count > 0 ? S.v.BURST : S.v.NORMAL,
+      let t = null != e.me_vote ? I.v.VOTE : e.burst_count > 0 ? I.v.BURST : I.v.NORMAL,
         n = (0, H.i6)(e.emoji, r.emoji),
         i = t === r.reactionType;
       return n && i
@@ -447,22 +447,22 @@ function ed(e) {
     onClose: a,
     transitionState: s,
     "aria-label": o = W.intl.string(W.t.gHp0C4)
-  } = e, l = (0, u.bG)([w.A], () => w.A.getChannel(t.getChannelId())), c = null == l ? true : l.getGuildId(), d = (0, u.bG)([x.A, A.A], () => {
+  } = e, l = (0, u.bG)([w.A], () => w.A.getChannel(t.getChannelId())), c = null == l ? true : l.getGuildId(), d = (0, u.bG)([x.A, v.A], () => {
     var e, n;
-    let r = null != (e = x.A.getMessage(t.getChannelId(), t.id)) ? e : null == (n = A.A.getMessage(V.default.castMessageIdAsChannelId(t.id))) ? true : n.firstMessage;
+    let r = null != (e = x.A.getMessage(t.getChannelId(), t.id)) ? e : null == (n = v.A.getMessage(V.default.castMessageIdAsChannelId(t.id))) ? true : n.firstMessage;
     return null != r ? r.reactions : []
-  }, [t]), h = ec(d), m = h[0], [g, b] = eu(n, null != m ? {
+  }, [t]), h = ec(d), m = h[0], [g, y] = eu(n, null != m ? {
     emoji: m.emoji,
-    reactionType: m.burst_count > 0 ? S.v.BURST : S.v.NORMAL
-  } : null, h), y = i.useMemo(() => {
+    reactionType: m.burst_count > 0 ? I.v.BURST : I.v.NORMAL
+  } : null, h), b = i.useMemo(() => {
     var e;
     return null == g ? null : null != (e = d.find(e => (0, H.i6)(e.emoji, g.emoji))) ? e : null
-  }, [d, g]), I = (0, u.bG)([E.A], () => E.A.saturation), T = (0, u.bG)([N.A], () => (0, p.Mw)(N.A.theme));
+  }, [d, g]), S = (0, u.bG)([E.A], () => E.A.saturation), T = (0, u.bG)([N.A], () => (0, p.Mw)(N.A.theme));
   if (i.useEffect(() => {
-      (0 === d.length || null == g && null == y) && setImmediate(a)
-    }, [a, d.length, y, g]), null == g || null == y) return (0, r.jsx)(_.y$y, {});
+      (0 === d.length || null == g && null == b) && setImmediate(a)
+    }, [a, d.length, b, g]), null == g || null == b) return (0, r.jsx)(_.y$y, {});
   if (null == l) throw Error("MessageReactions.render: Message does not have a channelId");
-  return (0, r.jsx)(v.A.Provider, {
+  return (0, r.jsx)(A.A.Provider, {
     value: null != c ? c : true,
     children: (0, r.jsxs)(f.dWK, {
       transitionState: s,
@@ -482,17 +482,17 @@ function ed(e) {
             var t;
             let n = e.burst_count > 0;
             return (0, r.jsx)(ea, {
-              isSelected: ef(g, e, n ? S.v.BURST : S.v.NORMAL),
-              setSelected: b,
-              reactionType: n ? S.v.BURST : S.v.NORMAL,
+              isSelected: ef(g, e, n ? I.v.BURST : I.v.NORMAL),
+              setSelected: y,
+              reactionType: n ? I.v.BURST : I.v.NORMAL,
               emoji: e.emoji,
               count: n ? e.burst_count : e.count,
-              colors: null != e.burst_colors ? (0, O.V)(e.burst_colors, I, T) : true
+              colors: null != e.burst_colors ? (0, O.V)(e.burst_colors, S, T) : true
             }, "".concat(n ? "burst-" : "normal-").concat(null != (t = e.emoji.id) ? t : "", ":").concat(e.emoji.name))
           })
         }), (0, r.jsx)(el, {
           message: t,
-          reaction: y,
+          reaction: b,
           guildId: c,
           channel: l,
           reactionType: g.reactionType

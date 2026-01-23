@@ -5,10 +5,10 @@ require.d(exports, {
 }), require("./321073.js");
 var r, l, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
-let s = [];
+let a = [];
 class o extends(r = Chunk311907.Ay.Store) {
   getGeoRestrictedGuilds() {
-    return s
+    return a
   }
 }(l = "displayName") in o ? Object.defineProperty(o, l, {
   value: "GeoRestrictedGuildStore",
@@ -18,23 +18,23 @@ class o extends(r = Chunk311907.Ay.Store) {
 }) : o[l] = "GeoRestrictedGuildStore";
 let c = new o(Chunk73153.h, {
   CONNECTION_OPEN: function(e) {
-    s = e.geoRestrictedGuilds
+    a = e.geoRestrictedGuilds
   },
   GUILD_DELETE: function(e) {
     let {
       guild: t
     } = e;
-    if (false === s.findIndex(e => e.id === t.id)) returnfalse;
-    s = s.filter(e => e.id !== t.id)
+    if (false === a.findIndex(e => e.id === t.id)) returnfalse;
+    a = a.filter(e => e.id !== t.id)
   },
   GUILD_GEO_RESTRICTED: function(e) {
-    let t = s.filter(t => t.id !== e.guildId);
+    let t = a.filter(t => t.id !== e.guildId);
     t.push({
       id: e.guildId,
       name: e.name,
       icon: e.icon,
       unavailable: true,
       geo_restricted: true
-    }), s = t
+    }), a = t
   }
 })

@@ -28,7 +28,7 @@ function x(e) {
     destinationPanel: t,
     originPanel: r
   } = e;
-  (0, b.iY)({
+  (0, f.iY)({
     destinationPane: t,
     originPane: r,
     subsection: u.A.getSubsection(),
@@ -56,16 +56,16 @@ function S(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, r = Object.getOwnPropertySymbols(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
     return o
-  }(e, ["target"]), a = y.A.useField("query"), b = l.useRef(null);
-  (0, i.Ay)(() => {
+  }(e, ["target"]), a = b.A.useField("query"), f = l.useRef(null);
+  (0, c.Ay)(() => {
     let e = u.A.getSection();
     null != e && (x({
       destinationPanel: e,
       originPanel: null
-    }), b.current = e)
+    }), f.current = e)
   });
   let m = l.useCallback(e => {
-      y.A.setState({
+      b.A.setState({
         query: e
       })
     }, []),
@@ -75,11 +75,11 @@ function S(e) {
       (0, o.flushSync)(() => {
         S(true), (0, g.default)()
       }), setImmediate(() => {
-        c.A.logout("settings")
+        i.A.logout("settings")
       })
     };
-    return f._.subscribe(h.jej.SETTINGS_TRIGGER_LOGOUT, e), () => {
-      f._.unsubscribe(h.jej.SETTINGS_TRIGGER_LOGOUT, e)
+    return y._.subscribe(h.jej.SETTINGS_TRIGGER_LOGOUT, e), () => {
+      y._.unsubscribe(h.jej.SETTINGS_TRIGGER_LOGOUT, e)
     }
   }, []), v) ? null : (0, n.jsx)(s.A, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -106,8 +106,8 @@ function S(e) {
       let t = (0, j.getUserSettingsSectionsByWebUserSettings)().get(e);
       null != t && (x({
         destinationPanel: t,
-        originPanel: b.current
-      }), b.current = t)
+        originPanel: f.current
+      }), f.current = t)
     },
     target: t,
     defaultTarget: d.X.ACCOUNT_PANEL,

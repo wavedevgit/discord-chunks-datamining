@@ -18,38 +18,38 @@ function x(e) {
     guildId: t,
     transitionState: l,
     onClose: x
-  } = e, [m, j] = r.useState([]), [b, f] = r.useState(), h = [{
-    label: o.intl.string(o.t["//3pvi"]),
-    value: c.n7.DM_SPAM
+  } = e, [m, j] = r.useState([]), [b, h] = r.useState(), f = [{
+    label: d.intl.string(d.t["//3pvi"]),
+    value: o.n7.DM_SPAM
   }, {
-    label: o.intl.string(o.t.SdVsip),
-    value: c.n7.MENTION_SPAM
+    label: d.intl.string(d.t.SdVsip),
+    value: o.n7.MENTION_SPAM
   }, {
-    label: o.intl.string(o.t.uTiSVL),
-    value: c.n7.CHANNEL_SPAM
+    label: d.intl.string(d.t.uTiSVL),
+    value: o.n7.CHANNEL_SPAM
   }, {
-    label: o.intl.string(o.t.GQczU8),
-    value: c.n7.SUS_NEW_MEMBERS
+    label: d.intl.string(d.t.GQczU8),
+    value: o.n7.SUS_NEW_MEMBERS
   }, {
-    label: o.intl.string(o.t.AAgqy3),
-    value: c.n7.CHANGING_SETTINGS
+    label: d.intl.string(d.t.AAgqy3),
+    value: o.n7.CHANGING_SETTINGS
   }, {
-    label: o.intl.string(o.t.ryPKb7),
-    value: c.n7.OTHER
+    label: d.intl.string(d.t.ryPKb7),
+    value: o.n7.OTHER
   }], g = r.useCallback(e => {
     j(e)
   }, []);
   return null == t ? (x(), null) : (0, n.jsx)(i.Modal, {
     transitionState: l,
-    title: o.intl.string(o.t.f5hd9P),
+    title: d.intl.string(d.t.f5hd9P),
     actions: [{
-      text: o.intl.string(o.t["ETE/oC"]),
+      text: d.intl.string(d.t["ETE/oC"]),
       onClick: x,
       variant: "secondary"
     }, {
-      text: o.intl.string(o.t.nAt0rE),
+      text: d.intl.string(d.t.nAt0rE),
       onClick: function() {
-        (0, a.zV)(d.HAw.GUILD_RAID_LOCKDOWN_FEEDBACK, {
+        (0, a.zV)(c.HAw.GUILD_RAID_LOCKDOWN_FEEDBACK, {
           raid_lockdown_feedback_type: m,
           raid_lockdown_feedback_other_reason: b,
           guild_id: t
@@ -63,12 +63,12 @@ function x(e) {
       children: [(0, n.jsx)(s.$QX, {
         selectedValues: m,
         onChange: g,
-        options: h
-      }), m.includes(c.n7.OTHER) && (0, n.jsx)("div", {
+        options: f
+      }), m.includes(o.n7.OTHER) && (0, n.jsx)("div", {
         className: u.Q8,
         children: (0, n.jsx)(s.fs1, {
-          placeholder: o.intl.string(o.t["PAM+JR"]),
-          onChange: f,
+          placeholder: d.intl.string(d.t["PAM+JR"]),
+          onChange: h,
           value: b,
           autoFocus: true
         })

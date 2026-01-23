@@ -5,9 +5,9 @@ require.d(exports, {
   CS: () => w,
   GQ: () => P,
   O0: () => D,
-  Pl: () => v,
-  RE: () => I,
-  X1: () => S,
+  Pl: () => A,
+  RE: () => S,
+  X1: () => I,
   we: () => R
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -31,12 +31,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk859804 = require("./859804.js");
 
-function v(e) {
+function A(e) {
   let {
     children: t
   } = e;
   return (0, r.jsx)("div", {
-    className: A.oB,
+    className: v.oB,
     children: (0, r.jsx)(u.Text, {
       variant: "text-xs/semibold",
       color: "text-strong",
@@ -44,9 +44,9 @@ function v(e) {
     })
   })
 }
-let S = 7e3;
+let I = 7e3;
 
-function I(e, t) {
+function S(e, t) {
   return C((0, o.bG)([_.A], () => _.A.getWidget(e), [e]), t)
 }
 let T = (e, t) => Date.now() - e < t;
@@ -54,7 +54,7 @@ let T = (e, t) => Date.now() - e < t;
 function C(e, t) {
   let n = i.useRef(null == e ? true : e.showExtrasHintTimestamp),
     [r, a] = i.useState(false),
-    s = (0, y.A)(),
+    s = (0, b.A)(),
     o = i.useRef(true);
   return i.useEffect(() => {
     let r = null == e ? true : e.showExtrasHintTimestamp;
@@ -76,16 +76,16 @@ function R(e) {
   let {
     children: t,
     widgetId: n
-  } = e, i = (0, o.bG)([_.A], () => _.A.getWidget(n), [n]), a = C(i, N), s = () => (0, E.sI)((0, b.Jn)(), O.t["1XA04X"], O.intl.string(O.t.uZZGzf), {
+  } = e, i = (0, o.bG)([_.A], () => _.A.getWidget(n), [n]), a = C(i, N), s = () => (0, E.sI)((0, y.Jn)(), O.t["1XA04X"], O.intl.string(O.t.uZZGzf), {
     useFlexboxLayout: true,
     highlightAdminWarningIfElevated: false,
-    keybindClassName: A.P
+    keybindClassName: v.P
   });
   return a ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m.A, {
-      className: A.Z,
+      className: v.Z,
       children: (0, r.jsx)(u.DUT, {
-        className: A.SM,
+        className: v.SM,
         onClick: () => {
           null != i && (f.A.setInputLocked(false, g.A.getTargetPID()), (0, h.YX)(i.type, {
             type: h.Z5.KEYBIND_HINT,
@@ -99,10 +99,10 @@ function R(e) {
         })
       })
     }), (0, r.jsx)("div", {
-      className: A.Xk
+      className: v.Xk
     })]
   }) : (0, r.jsx)("div", {
-    className: A.oB,
+    className: v.oB,
     children: (0, r.jsx)(u.Text, {
       variant: "text-xs/semibold",
       color: "text-strong",
@@ -115,13 +115,13 @@ function w(e) {
   let {
     onClick: t
   } = e;
-  if ((0, y.A)()) return null;
+  if ((0, b.A)()) return null;
   let n = O.intl.string(O.t["3D5yo/"]);
   return (0, r.jsx)(c.m, {
     text: n,
     "aria-label": n,
     children: (0, r.jsx)(u.DUT, {
-      className: A.x6,
+      className: v.x6,
       onClick: t,
       children: (0, r.jsx)(u.Zes, {
         size: "xxs",
@@ -140,11 +140,11 @@ function P(e) {
       showAllStreams: !n
     })
   };
-  return (0, y.A)() ? null : (0, r.jsx)(c.m, {
+  return (0, b.A)() ? null : (0, r.jsx)(c.m, {
     text: i,
     "aria-label": i,
     children: (0, r.jsx)(u.DUT, {
-      className: s()(A.x6, n && A.vu),
+      className: s()(v.x6, n && v.vu),
       onClick: a,
       children: (0, r.jsx)(u.kN9, {
         size: "xxs",
@@ -158,13 +158,13 @@ function D(e) {
   let {
     id: t,
     pinned: n
-  } = e, i = n ? O.intl.string(O.t.cSu80j) : O.intl.string(O.t.cM8Vnm), a = (0, y.A)();
+  } = e, i = n ? O.intl.string(O.t.cSu80j) : O.intl.string(O.t.cM8Vnm), a = (0, b.A)();
   return (0, r.jsx)(c.m, {
     text: i,
     "aria-label": i,
     asContainer: true,
     children: (0, r.jsx)(u.DUT, {
-      className: s()(A.x6, n && A.vu),
+      className: s()(v.x6, n && v.vu),
       onClick: () => {
         a || (0, d.v0)(t)
       },

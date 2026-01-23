@@ -2,7 +2,7 @@
 /** chunk id: 551378, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -21,7 +21,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk896498 = require("./896498.js"),
   Chunk272673 = require("./272673.js"),
   Chunk607913 = require("./607913.js");
-let b = () => {
+let y = () => {
     let e = (0, u.Li)(),
       t = (0, c.A)(),
       {
@@ -36,7 +36,7 @@ let b = () => {
       }) : (0, r.jsx)(d.A, {})
     })
   },
-  y = () => {
+  b = () => {
     let e = (0, c.A)(),
       t = (0, o.y)(_.intl.string(p.default["T7GyW+"]), _.intl.string(p.default.goKE2b)),
       n = (0, o.y)(_.intl.format(p.default.MXjDSv, {
@@ -61,7 +61,7 @@ let b = () => {
               children: n
             })]
           })
-        }), (0, r.jsx)(b, {})]
+        }), (0, r.jsx)(y, {})]
       }), (0, r.jsx)("div", {
         className: h.F0,
         children: (0, r.jsx)("img", {

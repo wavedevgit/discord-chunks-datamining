@@ -1,12 +1,12 @@
 /** Chunk was on 22477 **/
 /** chunk id: 41280, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => x
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   o = require.n(Chunk735438),
   Chunk108531 = require("./108531.js"),
@@ -20,34 +20,34 @@ let h = {
   friction: 140
 };
 
-function f(e) {
+function x(e) {
   let {
     className: t,
     pageMultiplier: n
-  } = e, i = (0, d.bG)([m.A], () => m.A.useReducedMotion), [s, f] = l.useState({
+  } = e, r = (0, d.bG)([m.A], () => m.A.useReducedMotion), [s, x] = l.useState({
     x: 0,
     y: 0
-  }), x = l.useMemo(() => o().throttle(e => {
-    i || f({
+  }), g = l.useMemo(() => o().throttle(e => {
+    r || x({
       x: (window.innerWidth - e.pageX * n) / 90,
       y: (window.innerHeight - e.pageY * n) / 90
     })
-  }, 20), [n, i]);
-  l.useEffect(() => (window.addEventListener("mousemove", x), () => window.removeEventListener("mousemove", x)), [x]);
-  let [b, g] = (0, u.zhh)(() => ({
+  }, 20), [n, r]);
+  l.useEffect(() => (window.addEventListener("mousemove", g), () => window.removeEventListener("mousemove", g)), [g]);
+  let [f, b] = (0, u.zhh)(() => ({
     x: 0,
     y: 0,
     config: h
   }));
   return l.useEffect(() => {
-    g({
+    b({
       x: s.x,
       y: s.y
     })
-  }, [s.x, s.y, g]), (0, a.jsx)(c.animated.div, {
+  }, [s.x, s.y, b]), (0, a.jsx)(c.animated.div, {
     style: {
-      transform: (0, c.to)([b.x, b.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
+      transform: (0, c.to)([f.x, f.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
     },
-    className: r()(p.T, t)
+    className: i()(p.T, t)
   })
 }

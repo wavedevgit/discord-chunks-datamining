@@ -47,7 +47,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,12 +59,12 @@ function b(e) {
   }
   return e
 }
-let y = ["discordapp.com/gifts", "discord.com/gifts"],
+let b = ["discordapp.com/gifts", "discord.com/gifts"],
   O = 3,
-  A = [Chunk257120.A.escape(window.GLOBAL_ENV.GIFT_CODE_HOST), ...y.map(e => p.A.escape(e))].join("|"),
-  v = RegExp("(?: |^|https?://)(?:".concat(A, ")/([a-z0-9-]+)"), "gi"),
-  S = [...["discord.com/billing/promotions", "promos.discord.gg"].map(e => p.A.escape(e))].join("|"),
-  I = RegExp("(?: |^|https?://)(?:".concat(S, ")(/|(/)?\\?code=)([a-z0-9-]+)"), "gi"),
+  v = [Chunk257120.A.escape(window.GLOBAL_ENV.GIFT_CODE_HOST), ...b.map(e => p.A.escape(e))].join("|"),
+  A = RegExp("(?: |^|https?://)(?:".concat(v, ")/([a-z0-9-]+)"), "gi"),
+  I = [...["discord.com/billing/promotions", "promos.discord.gg"].map(e => p.A.escape(e))].join("|"),
+  S = RegExp("(?: |^|https?://)(?:".concat(I, ")(/|(/)?\\?code=)([a-z0-9-]+)"), "gi"),
   T = "abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789",
   C = (e, t) => Array(t).fill(true).map(() => "[".concat(T, "]{").concat(e, "}")).join("-?"),
   N = C(4, 4),
@@ -106,8 +106,8 @@ let F = e => {
     let t;
     if (null == e) return [];
     let n = new Set;
-    for (; null != (t = v.exec(e)) && n.size < O;) n.add(V(t[1]));
-    for (; null != (t = I.exec(e)) && n.size < O;) n.add(V(t[t.length - 1]));
+    for (; null != (t = A.exec(e)) && n.size < O;) n.add(V(t[1]));
+    for (; null != (t = S.exec(e)) && n.size < O;) n.add(V(t[t.length - 1]));
     return Array.from(n)
   };
 
@@ -149,7 +149,7 @@ async function Y(e) {
 }
 
 function W(e, t) {
-  u.default.track(h.HAw.GIFT_CODE_COPIED, b({}, (0, o.A)(t, false, false), e.analyticsData))
+  u.default.track(h.HAw.GIFT_CODE_COPIED, y({}, (0, o.A)(t, false, false), e.analyticsData))
 }
 
 function K(e, t, n) {

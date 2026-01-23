@@ -13,8 +13,8 @@ var Chunk311907 = require("./311907.js"),
 function o(e) {
   let t = (0, r.bG)([i.A], () => i.A.getGuild(e.guildId)),
     n = (0, r.bG)([l.A], () => l.A.getChannel(e.channelId)),
-    o = (0, r.bG)([a.A], () => a.A.can(s.xBc.ADMINISTRATOR, t)),
-    c = (0, r.bG)([a.A], () => a.A.can(s.xBc.MANAGE_MESSAGES, n));
+    o = (0, r.bG)([s.A], () => s.A.can(a.xBc.ADMINISTRATOR, t)),
+    c = (0, r.bG)([s.A], () => s.A.can(a.xBc.MANAGE_MESSAGES, n));
   return {
     isEntryAdmin: o,
     canEdit: o || c,
@@ -23,5 +23,5 @@ function o(e) {
 }
 
 function c(e) {
-  return (0, r.bG)([a.A], () => a.A.can(s.xBc.SEND_MESSAGES, e))
+  return (0, r.bG)([s.A], () => s.A.can(a.xBc.SEND_MESSAGES, e))
 }

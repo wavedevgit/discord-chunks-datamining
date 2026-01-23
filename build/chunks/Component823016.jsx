@@ -8,8 +8,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk775602 = require("./775602.js"),
   Chunk818348 = require("./818348.js");
-let s = Chunk64700.createContext(null),
-  o = {
+let o = Chunk64700.createContext(null),
+  s = {
     registerItemRef: () => a.tE,
     registerDragHandleRef: () => a.tE,
     manageFocusOnReorder: Chunk818348.tE,
@@ -17,15 +17,15 @@ let s = Chunk64700.createContext(null),
   };
 
 function c() {
-  let e = l.useContext(s);
-  return null != e ? e : o
+  let e = l.useContext(o);
+  return null != e ? e : s
 }
 
 function u(e) {
   let {
     children: t,
     emptyListFallbackRef: n
-  } = e, a = l.useRef(new Map), o = l.useRef(new Map), c = l.useRef([]), u = l.useCallback(() => {
+  } = e, a = l.useRef(new Map), s = l.useRef(new Map), c = l.useRef([]), u = l.useCallback(() => {
     c.current = Array.from(a.current.keys()).sort((e, t) => {
       let n = a.current.get(e),
         r = a.current.get(t);
@@ -34,15 +34,15 @@ function u(e) {
       return (l & Node.DOCUMENT_POSITION_FOLLOWING) != 0 ? false : +((l & Node.DOCUMENT_POSITION_PRECEDING) != 0)
     })
   }, []), d = l.useCallback(e => t => {
-    null != t ? o.current.set(e, t) : o.current.delete(e)
+    null != t ? s.current.set(e, t) : s.current.delete(e)
   }, []), f = l.useCallback(e => t => {
     null != t ? a.current.set(e, t) : a.current.delete(e)
   }, []), p = l.useCallback(e => {
     i.A.keyboardModeEnabled && requestAnimationFrame(() => {
-      let t = o.current.get(e);
+      let t = s.current.get(e);
       null == t || t.focus()
     })
-  }, []), b = l.useCallback(e => {
+  }, []), g = l.useCallback(e => {
     if (!i.A.keyboardModeEnabled) return;
     u();
     let t = c.current,
@@ -58,14 +58,14 @@ function u(e) {
     } else requestAnimationFrame(() => {
       null == n || n.focus()
     })
-  }, [n, u]), g = l.useMemo(() => ({
+  }, [n, u]), m = l.useMemo(() => ({
     registerDragHandleRef: d,
     registerItemRef: f,
     manageFocusOnReorder: p,
-    manageFocusOnDelete: b
-  }), [d, f, p, b]);
-  return (0, r.jsx)(s.Provider, {
-    value: g,
+    manageFocusOnDelete: g
+  }), [d, f, p, g]);
+  return (0, r.jsx)(o.Provider, {
+    value: m,
     children: t
   })
 }

@@ -81,38 +81,38 @@ let g = e => {
     iconType: m,
     onMouseEnter: g,
     onMouseLeave: E
-  } = e, b = h(e, ["ref", "children", "className", "color", "roleColors", "iconType", "onMouseEnter", "onMouseLeave"]), [y, O] = i.useState(false), {
-    gradientStyle: A,
-    gradientClassname: v
+  } = e, y = h(e, ["ref", "children", "className", "color", "roleColors", "iconType", "onMouseEnter", "onMouseLeave"]), [b, O] = i.useState(false), {
+    gradientStyle: v,
+    gradientClassname: A
   } = (0, l.v5K)({
     colorStrings: null != p ? p : null,
     roleStyle: "username",
-    animateGradient: y
-  }), S = i.useCallback(e => {
+    animateGradient: b
+  }), I = i.useCallback(e => {
     O(true), null == g || g(e)
-  }, [O, g]), I = i.useCallback(e => {
+  }, [O, g]), S = i.useCallback(e => {
     O(false), null == E || E(e)
   }, [O, E]), T = {};
   return null != d && (T = {
     color: (0, o.Hl)(d),
-    backgroundColor: y ? (0, o.gq)(d, .3) : (0, o.gq)(d, .1)
-  }), (0, r.jsx)(l.DUT, _(f({}, b), {
+    backgroundColor: b ? (0, o.gq)(d, .3) : (0, o.gq)(d, .1)
+  }), (0, r.jsx)(l.DUT, _(f({}, y), {
     innerRef: t,
     tag: "span",
     className: s()(a, {
       [u.i]: true,
-      interactive: b.onClick
+      interactive: y.onClick
     }),
-    onMouseEnter: S,
-    onMouseLeave: I,
+    onMouseEnter: I,
+    onMouseLeave: S,
     style: T,
-    tabIndex: null != b.onClick ? 0 : false,
+    tabIndex: null != y.onClick ? 0 : false,
     children: null != m ? (0, r.jsx)(c.A, {
       iconType: m,
       children: n
     }) : null != p ? (0, r.jsx)("span", {
-      style: f({}, A),
-      className: v,
+      style: f({}, v),
+      className: A,
       children: n
     }) : n
   }))

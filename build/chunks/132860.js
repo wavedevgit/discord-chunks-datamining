@@ -11,11 +11,11 @@ var Chunk961350 = require("./961350.js"),
   Chunk219935 = require("./219935.js");
 
 function c(e) {
-  if (!e.isGuildVoice() || s.Ay.getGuildScheduledEventsByIndex(s.ej.CHANNEL_EVENT_ACTIVE(e.id)).length < 1 || !l.A.can(o.EN, e)) returnfalse;
+  if (!e.isGuildVoice() || a.Ay.getGuildScheduledEventsByIndex(a.ej.CHANNEL_EVENT_ACTIVE(e.id)).length < 1 || !l.A.can(o.EN, e)) returnfalse;
   let t = new Set(i.Ay.getVoiceStatesForChannel(e).map(e => e.user.id)),
     n = r.default.getId();
   for (let r of t)
-    if (r !== n && a.$3({
+    if (r !== n && s.$3({
         permission: o.EN,
         user: r,
         context: e

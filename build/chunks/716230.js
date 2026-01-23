@@ -16,17 +16,17 @@ var Chunk514119 = require("./514119.js"),
   m = "[object Set]",
   g = "[object String]",
   E = "[object WeakMap]",
-  b = "[object ArrayBuffer]",
-  y = "[object DataView]",
+  y = "[object ArrayBuffer]",
+  b = "[object DataView]",
   O = "[object Float64Array]",
-  A = "[object Int8Array]",
-  v = "[object Int16Array]",
-  S = "[object Int32Array]",
-  I = "[object Uint8Array]",
+  v = "[object Int8Array]",
+  A = "[object Int16Array]",
+  I = "[object Int32Array]",
+  S = "[object Uint8Array]",
   T = "[object Uint8ClampedArray]",
   C = "[object Uint16Array]",
   N = "[object Uint32Array]",
   R = {};
-R["[object Float32Array]"] = R[O] = R[A] = R[v] = R[S] = R[I] = R[T] = R[C] = R[N] = true, R[s] = R[o] = R[b] = R[l] = R[y] = R[c] = R[u] = R[d] = R[f] = R[p] = R[_] = R[h] = R[m] = R[g] = R[E] = false, module.exports = function(e) {
+R["[object Float32Array]"] = R[O] = R[v] = R[A] = R[I] = R[S] = R[T] = R[C] = R[N] = true, R[s] = R[o] = R[y] = R[l] = R[b] = R[c] = R[u] = R[d] = R[f] = R[p] = R[_] = R[h] = R[m] = R[g] = R[E] = false, module.exports = function(e) {
   return a(e) && i(e.length) && !!R[r(e)]
 }

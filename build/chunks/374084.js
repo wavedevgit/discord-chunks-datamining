@@ -4,25 +4,25 @@
 require.d(exports, {
   CW: () => m,
   Fi: () => o,
-  Fn: () => v,
-  Ic: () => I,
+  Fn: () => A,
+  Ic: () => S,
   K5: () => N,
   Mu: () => h,
   NewMemberActionTypes: () => g,
-  RR: () => b,
+  RR: () => y,
   Rc: () => C,
   SM: () => p,
-  Xu: () => y,
+  Xu: () => b,
   Y4: () => O,
   Yt: () => T,
   _7: () => f,
   dl: () => l,
-  jJ: () => S,
+  jJ: () => I,
   kh: () => u,
   kk: () => E,
   oW: () => _,
   oc: () => c,
-  xr: () => A
+  xr: () => v
 }), require("./228524.js"), require("./896048.js");
 var Chunk734057 = require("./734057.js"),
   Chunk403362 = require("./403362.js"),
@@ -58,7 +58,7 @@ function E(e) {
   }
 }
 
-function b(e) {
+function y(e) {
   var t, n;
   return {
     channelId: e.channel_id,
@@ -73,7 +73,7 @@ function b(e) {
   }
 }
 
-function y(e) {
+function b(e) {
   if (null == e) return null;
   let {
     welcome_message: t,
@@ -87,7 +87,7 @@ function y(e) {
   return {
     welcomeMessage: o,
     newMemberActions: n.filter(e => (0, i.Vq)(r.A.getChannel(e.channel_id))).map(E),
-    resourceChannels: a.filter(e => (0, i.Vq)(r.A.getChannel(e.channel_id))).map(b),
+    resourceChannels: a.filter(e => (0, i.Vq)(r.A.getChannel(e.channel_id))).map(y),
     enabled: s
   }
 }
@@ -139,25 +139,25 @@ function O(e, t) {
     enabled: c
   }
 }
-let A = e => {
+let v = e => {
   if (null == e) return null;
   let t = {};
   for (let n in e.channel_actions) t[n] = e.channel_actions[n].completed;
   return t
 };
 
-function v(e) {
+function A(e) {
   return null == e || (null == e.message || !(e.message.length > 0)) && (null == e.authorIds || !(e.authorIds.length > 0))
 }
 
-function S(e) {
-  return null == e || !!v(e.welcomeMessage) && (null == e.newMemberActions || !(e.newMemberActions.length > 0)) && (null == e.resourceChannels || !(e.resourceChannels.length > 0))
+function I(e) {
+  return null == e || !!A(e.welcomeMessage) && (null == e.newMemberActions || !(e.newMemberActions.length > 0)) && (null == e.resourceChannels || !(e.resourceChannels.length > 0))
 }
 
-function I(e) {
+function S(e) {
   var t, n;
   if (null == e) returnfalse;
-  if (S(e)) returntrue;
+  if (I(e)) returntrue;
   if ((null == (t = e.welcomeMessage) ? true : t.message) == null || e.welcomeMessage.message.length < o || (null == (n = e.welcomeMessage) ? true : n.authorIds) == null || 0 === e.welcomeMessage.authorIds.length || null == e.newMemberActions || e.newMemberActions.length < d) returnfalse;
   if (null != e.newMemberActions)
     for (let t of e.newMemberActions) {

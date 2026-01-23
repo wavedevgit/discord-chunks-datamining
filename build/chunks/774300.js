@@ -10,7 +10,7 @@ var l, Chunk308528 = require("./308528.js"),
   Chunk734057 = require("./734057.js"),
   Chunk927813 = require("./927813.js"),
   Chunk513391 = require("./513391.js");
-let u = +Chunk927813.A.Millis.SECOND + 10;
+let c = +Chunk927813.A.Millis.SECOND + 10;
 var E = ((l = {})[l.GROUP_DM = 0] = "GROUP_DM", l[l.USER = 1] = "USER", l[l.CHANNEL = 2] = "CHANNEL", l);
 class d extends Chunk513391.A {
   _sendInvite(e, t, n, l, r) {
@@ -34,7 +34,7 @@ class d extends Chunk513391.A {
     }
   }
   constructor() {
-    super(new i.A("InviteQueue"), u)
+    super(new i.A("InviteQueue"), c)
   }
 }
 let _ = new d

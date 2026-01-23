@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 470743, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,8 +14,8 @@ var Chunk397927 = require("./397927.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function f() {
-  let e = (0, s.Us)(),
+function p() {
+  let e = (0, a.Us)(),
     {
       analyticsLocations: t
     } = (0, i.Ay)();
@@ -23,7 +23,7 @@ function f() {
     id: "voice-and-video-settings",
     label: d.intl.string(d.t.dsXapM),
     action: () => {
-      (0, a.A)(null, e === u.BRT.POPOUT), (0, c.openUserSettings)(o.X.VOICE_AND_VIDEO_PANEL, {
+      (0, s.A)(null, e === u.BRT.POPOUT), (0, c.openUserSettings)(o.X.VOICE_AND_VIDEO_PANEL, {
         section: u.nc_.VOICE,
         analyticsLocations: t
       })

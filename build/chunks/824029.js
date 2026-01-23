@@ -62,14 +62,14 @@ async function E() {
     {
       didCrashReporterSeeCrash: r,
       didCrashOrUncleanExit: a
-    } = b(i.w.get(h, {}), n),
+    } = y(i.w.get(h, {}), n),
     s = O(r, a, n);
   o.default.track(d.HAw.APP_NATIVE_CRASH, s), i.w.set(h, {
     lastId: null == n ? true : n.id
-  }), a && setTimeout(async () => await y(), 1e4)
+  }), a && setTimeout(async () => await b(), 1e4)
 }
 
-function b(e, t) {
+function y(e, t) {
   var n;
   let r = (null == e ? true : e.lastId) !== (null == t ? true : t.id) && (null == t ? true : t.id) != null,
     i = null != (n = null == t ? true : t.rendererCrashExitCode) ? n : null,
@@ -79,7 +79,7 @@ function b(e, t) {
     didCrashOrUncleanExit: a
   }
 }
-async function y() {
+async function b() {
   var e, t;
   if (null != (e = null == (t = s.default.getCurrentUser()) ? true : t.isStaff()) && e) try {
     await a.A.getMediaEngine().writeAudioDebugState(), await (0, u.a)(d.Umv.RTC), console.log("Successfully uploaded debug files")
@@ -89,13 +89,13 @@ async function y() {
 }
 
 function O(e, t, n) {
-  var i, a, s, o, l, c, u, d, f, _, h, m, g, E, b, y, O, A, v;
+  var i, a, s, o, l, c, u, d, f, _, h, m, g, E, y, b, O, v, A;
 
-  function S(e) {
+  function I(e) {
     return (null == n ? true : n.storedInformation) != null && 1 === n.storedInformation[e]
   }
 
-  function I(e) {
+  function S(e) {
     return (null == n ? true : n.storedInformation) == null || null == n.storedInformation[e] ? null : n.storedInformation[e]
   }
   let T = {
@@ -105,20 +105,20 @@ function O(e, t, n) {
     child_process_crash_type: null,
     child_process_crash_reason: null,
     child_process_crash_exit_code: null,
-    had_rtc_connection: S(r.du.HasRTCConnection),
-    was_sending_video: S(r.du.IsSendingVideo),
-    was_sending_stream: S(r.du.IsSendingStream),
-    was_receiving_video: S(r.du.IsReceivingVideo),
-    was_receiving_stream: S(r.du.IsReceivingStream),
-    video_media_session_id: I(r.du.VideoMediaSessionId),
-    stream_media_session_id: I(r.du.StreamMediaSessionId),
-    intentional_crash_reason: I(r.du.IntentionalCrashReason),
+    had_rtc_connection: I(r.du.HasRTCConnection),
+    was_sending_video: I(r.du.IsSendingVideo),
+    was_sending_stream: I(r.du.IsSendingStream),
+    was_receiving_video: I(r.du.IsReceivingVideo),
+    was_receiving_stream: I(r.du.IsReceivingStream),
+    video_media_session_id: S(r.du.VideoMediaSessionId),
+    stream_media_session_id: S(r.du.StreamMediaSessionId),
+    intentional_crash_reason: S(r.du.IntentionalCrashReason),
     last_memory_usage_kb: null != (s = null == n || null == (E = n.lastMemoryInformation) ? true : E.memoryUsageKB) ? s : null,
-    last_used_js_heap_size_kb: null != (o = null == n || null == (b = n.lastMemoryInformation) ? true : b.usedJSHeapSizeKB) ? o : null,
-    last_memory_usage_uptime: null != (l = null == n || null == (y = n.lastMemoryInformation) ? true : y.uptimeSeconds) ? l : null,
+    last_used_js_heap_size_kb: null != (o = null == n || null == (y = n.lastMemoryInformation) ? true : y.usedJSHeapSizeKB) ? o : null,
+    last_memory_usage_uptime: null != (l = null == n || null == (b = n.lastMemoryInformation) ? true : b.uptimeSeconds) ? l : null,
     highest_memory_usage_kb: null != (c = null == n || null == (O = n.highestMemoryInformation) ? true : O.memoryUsageKB) ? c : null,
-    highest_used_js_heap_size_kb: null != (u = null == n || null == (A = n.highestMemoryInformation) ? true : A.usedJSHeapSizeKB) ? u : null,
-    highest_memory_usage_uptime: null != (d = null == n || null == (v = n.highestMemoryInformation) ? true : v.uptimeSeconds) ? d : null
+    highest_used_js_heap_size_kb: null != (u = null == n || null == (v = n.highestMemoryInformation) ? true : v.usedJSHeapSizeKB) ? u : null,
+    highest_memory_usage_uptime: null != (d = null == n || null == (A = n.highestMemoryInformation) ? true : A.uptimeSeconds) ? d : null
   };
   if (!e || null == n) return p({
     electron_crash_reporter_did_crash: false,

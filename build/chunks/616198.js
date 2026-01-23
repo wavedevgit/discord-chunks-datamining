@@ -1,7 +1,7 @@
 /** Chunk was on 92818 **/
 /** chunk id: 616198, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  Ad: "c54ef6abbf8625cd",
-  rm: "cd0dcd26271d094d",
-  bG: "a897bf606956d087"
+  Ad: "newBadge__03991",
+  rm: "newBadgeText__03991",
+  bG: "iconBadge__03991"
 }

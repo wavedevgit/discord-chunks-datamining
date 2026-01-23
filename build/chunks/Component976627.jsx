@@ -1,7 +1,7 @@
 /** Chunk was on 40433 **/
-/** chunk id: 976627, original params: e,a,t (module,exports,require) **/
+/** chunk id: 976627, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => s
+  default: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,62 +14,62 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function s(e) {
+function m(e) {
   let {
-    onClose: a,
-    transitionState: s
-  } = e, p = (0, f.A)(o.jZ), g = r.useMemo(() => p.map(e => e.value), [p]);
-  r.useEffect(() => {
-    b.default.track(i.HAw.OPEN_MODAL, {
+    onClose: t,
+    transitionState: m
+  } = e, d = (0, _.A)(b.jZ), p = o.useMemo(() => d.map(e => e.value), [d]);
+  o.useEffect(() => {
+    l.default.track(s.HAw.OPEN_MODAL, {
       type: "Ignore User Feedback"
     })
   }, []);
-  let h = r.useCallback(e => {
-    var a;
+  let f = o.useCallback(e => {
+    var t;
     let {
-      rating: r,
-      problem: f,
-      feedback: c
-    } = e, b = null == r;
-    (0, l.mf)(r, c, null != (a = null == f ? true : f.value) ? a : null, b), b || (0, d.mMO)(async () => {
+      rating: o,
+      problem: _,
+      feedback: i
+    } = e, l = null == o;
+    (0, a.mf)(o, i, null != (t = null == _ ? true : _.value) ? t : null, l), l || (0, c.mMO)(async () => {
       let {
         default: e
-      } = await t.e("37836").then(t.bind(t, 845671));
-      return a => (0, n.jsx)(e, function(e) {
-        for (var a = 1; a < arguments.length; a++) {
-          var t = null != arguments[a] ? arguments[a] : {},
-            n = Object.keys(t);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(t, e).enumerable
-          }))), n.forEach(function(a) {
-            var n;
-            n = t[a], a in e ? Object.defineProperty(e, a, {
-              value: n,
+      } = await n.e("37836").then(n.bind(n, 845671));
+      return t => (0, r.jsx)(e, function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[a] = n
+            }) : e[t] = r
           })
         }
         return e
       }({
         body: u.intl.string(u.t["d9+vQ8"])
-      }, a))
+      }, t))
     })
   }, []);
-  return (0, n.jsx)(c.A, {
+  return (0, r.jsx)(i.A, {
     modalType: "ignore_user",
     header: u.intl.string(u.t.Ib6bic),
     body: u.intl.string(u.t["uW0/nV"]),
     problemTitle: u.intl.string(u.t.avs5Vg),
-    problems: p,
-    freeformNeededProblems: g,
-    onSubmit: h,
-    onClose: a,
-    transitionState: s,
-    otherKey: o.w$.SOMETHING_ELSE,
+    problems: d,
+    freeformNeededProblems: p,
+    onSubmit: f,
+    onClose: t,
+    transitionState: m,
+    otherKey: b.w$.SOMETHING_ELSE,
     hideHelpDeskLink: true,
     hideDontShowAgainCheckbox: true,
-    freeformDescription: e => null == e ? null : e.value === o.w$.SOMETHING_ELSE ? u.intl.string(u.t.h95hcn) : u.intl.string(u.t.wRGel3)
+    freeformDescription: e => null == e ? null : e.value === b.w$.SOMETHING_ELSE ? u.intl.string(u.t.h95hcn) : u.intl.string(u.t.wRGel3)
   })
 }

@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk615300 = require("./615300.js"),
   Chunk451988 = require("./451988.js"),
   Chunk397927 = require("./397927.js"),
@@ -15,7 +15,7 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk792728 = require("./792728.js");
 
-function b(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,18 +23,18 @@ function b(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let g = {
+let m = {
   friction: 15,
   tension: 100
 };
-class m extends(r = Chunk64700.PureComponent) {
+class b extends(r = Chunk64700.PureComponent) {
   componentDidMount() {
     this.setState({
       shown: true
-    }), d._.subscribe(f.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
+    }), d._.subscribe(p.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
   }
   componentWillUnmount() {
-    this.focusTimeout.stop(), d._.unsubscribe(f.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
+    this.focusTimeout.stop(), d._.unsubscribe(p.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
   }
   componentDidUpdate() {
     let {
@@ -53,51 +53,51 @@ class m extends(r = Chunk64700.PureComponent) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          b(e, t, n[t])
+          g(e, t, n[t])
         })
       }
       return e
     }({
       toValue: Math.min(e, 250)
-    }, g)).start()
+    }, m)).start()
   }
   renderArrowGroup(e) {
     return (0, l.jsxs)("div", {
-      className: s()(h.XN, e),
+      className: a()(f.XN, e),
       children: [(0, l.jsx)(o.A.div, {
-        className: s()(h.Hf, h.xM),
+        className: a()(f.Hf, f.xM),
         style: this.getStyle(),
         children: (0, l.jsx)("img", {
           alt: "",
           src: n(824829),
-          className: h.D6
+          className: f.D6
         })
       }), (0, l.jsx)("div", {
-        className: s()(h.Hf, h.JM),
+        className: a()(f.Hf, f.JM),
         children: (0, l.jsx)("img", {
           alt: "",
           src: n(162206),
-          className: h.D6
+          className: f.D6
         })
       }), (0, l.jsx)("div", {
-        className: s()(h.Hf, h.QJ),
+        className: a()(f.Hf, f.QJ),
         children: (0, l.jsx)("img", {
           alt: "",
           src: n(298607),
-          className: h.D6
+          className: f.D6
         })
       })]
     })
   }
   renderContent() {
     return (0, l.jsxs)("div", {
-      className: h.fi,
+      className: f.fi,
       children: [(0, l.jsx)("div", {
-        className: h.Iv,
-        children: p.intl.string(p.t.Mp0IGK)
+        className: f.Iv,
+        children: h.intl.string(h.t.Mp0IGK)
       }), (0, l.jsx)("div", {
-        className: h.kp,
-        children: p.intl.string(p.t["3CbpwH"])
+        className: f.kp,
+        children: h.intl.string(h.t["3CbpwH"])
       })]
     })
   }
@@ -109,11 +109,11 @@ class m extends(r = Chunk64700.PureComponent) {
     } = this.state;
     return (0, l.jsxs)("div", {
       ref: this.rootRef,
-      className: s()(h.d$, {
-        [h.SP]: t,
-        [h.tG]: e
+      className: a()(f.d$, {
+        [f.SP]: t,
+        [f.tG]: e
       }),
-      children: [this.renderContent(), this.renderArrowGroup(h.__invalid_left), this.renderArrowGroup(h.pG)]
+      children: [this.renderContent(), this.renderArrowGroup(f.__invalid_left), this.renderArrowGroup(f.pG)]
     })
   }
   getStyle() {
@@ -133,10 +133,10 @@ class m extends(r = Chunk64700.PureComponent) {
     }
   }
   constructor(...e) {
-    super(...e), b(this, "state", {
+    super(...e), g(this, "state", {
       shown: false,
       translateY: new o.A.Value(0)
-    }), b(this, "rootRef", i.createRef()), b(this, "focusTimeout", new c.Ep), b(this, "handleResultFocus", e => {
+    }), g(this, "rootRef", i.createRef()), g(this, "focusTimeout", new c.Ep), g(this, "handleResultFocus", e => {
       let {
         node: t
       } = e;
@@ -153,5 +153,5 @@ class m extends(r = Chunk64700.PureComponent) {
     })
   }
 }
-b(m, "contextType", Chunk397927.CZY);
-let A = m
+g(b, "contextType", Chunk397927.CZY);
+let A = b

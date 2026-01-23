@@ -21,10 +21,10 @@ function p(e) {
     slide: n,
     videoEntrySrc: a,
     videoLoopSrc: p
-  } = e, _ = i.useRef(null), h = i.useRef(null), m = (0, l.bG)([c.A], () => c.A.useReducedMotion), [g, E] = i.useState(m), b = i.useContext(u.GD), y = i.useContext(d.Aq), O = i.useCallback(() => {
+  } = e, _ = i.useRef(null), h = i.useRef(null), m = (0, l.bG)([c.A], () => c.A.useReducedMotion), [g, E] = i.useState(m), y = i.useContext(u.GD), b = i.useContext(d.Aq), O = i.useCallback(() => {
     var e, t;
     E(true), m || null == (t = h.current) || t.play(), null == (e = _.current) || e.pause()
-  }, [m]), A = i.useCallback(e => {
+  }, [m]), v = i.useCallback(e => {
     let t = (g ? h : _).current,
       r = e.detail.canvas,
       i = e.detail.context;
@@ -38,9 +38,9 @@ function p(e) {
       d = a.width,
       f = a.height,
       p = 0;
-    null == y || y((e, t) => (t === n && (p = Math.max(e.opacity.get(), 0)), null)), i.save(), i.globalCompositeOperation = "screen", i.globalAlpha = p, i.drawImage(t, c, u, d, f), i.restore()
-  }, [g, n, y]);
-  return i.useEffect(() => (b.addEventListener("frameEnd", A), () => b.removeEventListener("frameEnd", A)), [b, A]), (0, r.jsxs)("div", {
+    null == b || b((e, t) => (t === n && (p = Math.max(e.opacity.get(), 0)), null)), i.save(), i.globalCompositeOperation = "screen", i.globalAlpha = p, i.drawImage(t, c, u, d, f), i.restore()
+  }, [g, n, b]);
+  return i.useEffect(() => (y.addEventListener("frameEnd", v), () => y.removeEventListener("frameEnd", v)), [y, v]), (0, r.jsxs)("div", {
     className: s()(f.iE, t),
     children: [(0, r.jsx)(o.A, {
       ref: _,

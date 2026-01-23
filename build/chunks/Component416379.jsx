@@ -24,20 +24,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk785263 = require("./785263.js");
-let v = 2,
-  S = 10;
+let A = 2,
+  I = 10;
 
-function I(e, t) {
+function S(e, t) {
   let n = e.id,
     r = t.id;
   return (0, o.bG)([E.A], () => {
     let e = r;
-    for (let t = 0; t < S; t++) {
+    for (let t = 0; t < I; t++) {
       let r = E.A.getMessage(n, e);
-      if ((null == r ? true : r.type) !== y.lAJ.REPLY || null == r.messageReference) return t;
+      if ((null == r ? true : r.type) !== b.lAJ.REPLY || null == r.messageReference) return t;
       e = r.messageReference.message_id
     }
-    return S
+    return I
   }, [n, r])
 }
 
@@ -55,15 +55,15 @@ function T(e) {
   return i.useEffect(() => {
     o.current = a
   }), i.useEffect(() => {
-    (0, u.zV)(y.HAw.THREAD_NUDGE_SHOWN, {
-      type: "Reply Chain (".concat(v + 1, ")"),
+    (0, u.zV)(b.HAw.THREAD_NUDGE_SHOWN, {
+      type: "Reply Chain (".concat(A + 1, ")"),
       reply_chain_length: o.current + 1,
       channel_id: t.id,
       guild_id: t.guild_id
     })
   }, [t]), (0, r.jsxs)(c.DUT, {
     onClick: s,
-    className: A._r,
+    className: v._r,
     focusProps: {
       offset: {
         right: false,
@@ -72,14 +72,14 @@ function T(e) {
     },
     children: [(0, r.jsx)(c.Text, {
       color: "text-default",
-      className: A.Qq,
+      className: v.Qq,
       variant: "text-sm/normal",
       children: O.intl.format(O.t.B3V0FM, {
-        count: Math.min(S, a + 1)
+        count: Math.min(I, a + 1)
       })
     }), (0, r.jsx)(c.Text, {
       color: "text-link",
-      className: A.NG,
+      className: v.NG,
       variant: "text-sm/semibold",
       children: O.intl.string(O.t.rBIGBL)
     })]
@@ -98,14 +98,14 @@ function C(e) {
   } = t, {
     guildId: g,
     nick: E,
-    colorString: S,
+    colorString: I,
     colorStrings: C,
     colorRoleName: N,
     authorId: R,
     displayNameStyles: w
   } = (0, f.Ay)(a), P = (0, p.gn)(g, R, C), D = (0, d.a)({
     displayNameStyles: w
-  }), x = I(i, a), L = (0, m.n)(i, a), j = n.showThreadPromptOnReply && x >= v && L, M = () => (0, h.pX)(y.BVt.CHANNEL(i.getGuildId(), i.id, a.id));
+  }), x = S(i, a), L = (0, m.n)(i, a), j = n.showThreadPromptOnReply && x >= A && L, M = () => (0, h.pX)(b.BVt.CHANNEL(i.getGuildId(), i.id, a.id));
 
   function k(e) {
     e.stopPropagation(), (0, _.vz)(i.id, !o)
@@ -115,11 +115,11 @@ function C(e) {
     e.stopPropagation(), (0, _.Jx)(i.id)
   }
   return (0, r.jsx)("div", {
-    className: A.e1,
+    className: v.e1,
     children: (0, r.jsxs)("div", {
-      className: A.kL,
+      className: v.kL,
       children: [(0, r.jsxs)("div", {
-        className: A.eU,
+        className: v.eU,
         children: [(0, r.jsx)(c.DUT, {
           onClick: M,
           focusProps: {
@@ -132,13 +132,13 @@ function C(e) {
           },
           children: (0, r.jsx)(c.Text, {
             color: "text-default",
-            className: s()(A.Qq, A.Fn),
+            className: s()(v.Qq, v.Fn),
             variant: "text-sm/normal",
             children: O.intl.format(O.t["8E4GxS"], {
               userHook: (e, t) => (0, r.jsx)(c.gyj, {
-                className: A.UU,
+                className: v.UU,
                 name: E,
-                colorString: S,
+                colorString: I,
                 colorStrings: P,
                 roleName: N,
                 displayNameStylesFont: D
@@ -146,7 +146,7 @@ function C(e) {
             })
           })
         }), (0, r.jsxs)("div", {
-          className: A.o1,
+          className: v.o1,
           children: [u && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(l.m, {
               asContainer: true,
@@ -158,20 +158,20 @@ function C(e) {
                 children: (0, r.jsxs)(c.Text, {
                   variant: "text-sm/bold",
                   color: o ? "text-link" : "text-muted",
-                  className: A.Z4,
+                  className: v.Z4,
                   children: [(0, r.jsx)(c.XxR, {
                     size: "md",
                     color: "currentColor",
                     "aria-label": O.intl.string(O.t.P8tvKG),
-                    className: A.mM
+                    className: v.mM
                   }), o ? O.intl.string(O.t.p9jC2r) : O.intl.string(O.t.U7f3bK)]
                 })
               })
             }), (0, r.jsx)("div", {
-              className: A.me,
+              className: v.me,
               "aria-hidden": true
             })]
-          }), (0, r.jsx)(b.x, {
+          }), (0, r.jsx)(y.x, {
             onClick: U
           })]
         })]

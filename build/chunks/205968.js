@@ -38,10 +38,10 @@ var Chunk225758 = require("./225758.js"),
   Chunk116740 = require("./116740.js"),
   Chunk797686 = require("./797686.js"),
   E = Chunk661551("draft_tree_data_support"),
-  b = Chunk116740.List,
-  y = Chunk116740.Map,
+  y = Chunk116740.List,
+  b = Chunk116740.Map,
   O = Chunk116740.OrderedMap,
-  A = function(e, t) {
+  v = function(e, t) {
     var n = e.key,
       r = e.type,
       i = e.data;
@@ -50,11 +50,11 @@ var Chunk225758 = require("./225758.js"),
       depth: e.depth || 0,
       type: r || "unstyled",
       key: n || _(),
-      data: y(i),
-      characterList: v(e, t)
+      data: b(i),
+      characterList: A(e, t)
     }
   },
-  v = function(e, t) {
+  A = function(e, t) {
     var n = e.text,
       i = e.entityRanges,
       a = e.inlineStyleRanges,
@@ -67,12 +67,12 @@ var Chunk225758 = require("./225758.js"),
       })
     })))
   },
-  S = function(e) {
+  I = function(e) {
     return r({}, e, {
       key: e.key || _()
     })
   },
-  I = function(e, t, n) {
+  S = function(e, t, n) {
     var i = t.map(function(e) {
       return r({}, e, {
         parentRef: n
@@ -81,18 +81,18 @@ var Chunk225758 = require("./225758.js"),
     return e.concat(i.reverse())
   },
   T = function(e, t) {
-    return e.map(S).reduce(function(n, i, a) {
+    return e.map(I).reduce(function(n, i, a) {
       Array.isArray(i.children) || g(false);
-      var o = i.children.map(S),
-        l = new s(r({}, A(i, t), {
+      var o = i.children.map(I),
+        l = new s(r({}, v(i, t), {
           prevSibling: 0 === a ? null : e[a - 1].key,
           nextSibling: a === e.length - 1 ? null : e[a + 1].key,
-          children: b(o.map(function(e) {
+          children: y(o.map(function(e) {
             return e.key
           }))
         }));
       n = n.set(l.getKey(), l);
-      for (var c = I([], o, l); c.length > 0;) {
+      for (var c = S([], o, l); c.length > 0;) {
         var u = c.pop(),
           d = u.parentRef,
           f = d.getChildKeys(),
@@ -102,23 +102,23 @@ var Chunk225758 = require("./225758.js"),
           _ || g(false);
           break
         }
-        var h = u.children.map(S),
-          m = new s(r({}, A(u, t), {
+        var h = u.children.map(I),
+          m = new s(r({}, v(u, t), {
             parent: d.getKey(),
-            children: b(h.map(function(e) {
+            children: y(h.map(function(e) {
               return e.key
             })),
             prevSibling: 0 === p ? null : f.get(p - 1),
             nextSibling: p === f.size - 1 ? null : f.get(p + 1)
           }));
-        n = n.set(m.getKey(), m), c = I(c, h, m)
+        n = n.set(m.getKey(), m), c = S(c, h, m)
       }
       return n
     }, O())
   },
   C = function(e, t) {
     return O(e.map(function(e) {
-      var n = new a(A(e, t));
+      var n = new a(v(e, t));
       return [n.getKey(), n]
     }))
   },

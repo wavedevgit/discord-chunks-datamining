@@ -17,13 +17,13 @@ let d = function() {
     {
       invites: t,
       guild: n
-    } = (0, i.cf)([c.A], () => c.A.getProps(), []),
+    } = (0, i.cf)([o.A], () => o.A.getProps(), []),
     {
       analyticsLocations: d
     } = (0, s.Ay)(l.A.GUILD_SETTINGS_PROFILE_PAGE);
   return (0, r.jsx)(s.f5, {
     value: d,
-    children: (0, r.jsx)(o.A, {
+    children: (0, r.jsx)(c.A, {
       invites: t,
       guild: n,
       showChannel: true,

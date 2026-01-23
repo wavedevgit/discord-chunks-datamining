@@ -17,36 +17,36 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk202115 = require("./202115.js");
-let m = e => {
+let b = e => {
     let {
       channel: t
     } = e;
-    return (0, f.bG)({
+    return (0, p.bG)({
       channelId: t.id
     }) ? (0, r.jsx)(i.m, {
-      text: b.intl.string(b.t.QyZ4Td),
-      children: (0, r.jsx)(a.m5V, {
+      text: g.intl.string(g.t.QyZ4Td),
+      children: (0, r.jsx)(s.m5V, {
         size: "xs",
-        "aria-label": b.intl.string(b.t.VHXh8a),
-        color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT
+        "aria-label": g.intl.string(g.t.VHXh8a),
+        color: s.LU0.colors.INTERACTIVE_TEXT_DEFAULT
       })
     }) : null
   },
   A = Chunk64700.memo(function(e) {
     let {
       channel: t
-    } = e, l = t.id, f = (0, c.Ay)(t);
+    } = e, l = t.id, p = (0, c.Ay)(t);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.m, {
         asContainer: true,
-        text: b.intl.string(b.t["5Q9+/L"]),
+        text: g.intl.string(g.t["5Q9+/L"]),
         position: "bottom",
-        children: (0, r.jsxs)(a.DUT, {
-          className: g.cD,
+        children: (0, r.jsxs)(s.DUT, {
+          className: m.cD,
           onClick: () => {
             (0, d.U)(l, o.A.HEADER_BAR)
           },
-          onContextMenu: e => (0, s.L3)(e, () => Promise.all([n.e("97262"), n.e("60200"), n.e("26021")]).then(n.bind(n, 4027)).then(e => {
+          onContextMenu: e => (0, a.L3)(e, () => Promise.all([n.e("97262"), n.e("60200"), n.e("26021")]).then(n.bind(n, 4027)).then(e => {
             let {
               default: n
             } = e;
@@ -88,30 +88,30 @@ let m = e => {
           }),
           onDoubleClick: e => e.stopPropagation(),
           onMouseEnter: () => {
-            p.default.track(h.HAw.GDM_EDIT_INTERACTED, {
+            h.default.track(f.HAw.GDM_EDIT_INTERACTED, {
               channel_id: t.id,
               action: "entry_point_hovered",
               location: o.A.HEADER_BAR
             })
           },
-          "aria-label": b.intl.string(b.t["5Q9+/L"]),
+          "aria-label": g.intl.string(g.t["5Q9+/L"]),
           children: [(0, r.jsx)(u.A, {
-            className: g.gn,
+            className: m.gn,
             "aria-hidden": true,
             channel: t,
-            size: a._3J.SIZE_20,
-            facepileSizeOverride: a._3J.SIZE_24
-          }), (0, r.jsx)(a.Text, {
+            size: s._3J.SIZE_20,
+            facepileSizeOverride: s._3J.SIZE_24
+          }), (0, r.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-strong",
-            children: null != f ? f : ""
-          }), (0, r.jsx)(a.R2l, {
-            className: g.IZ,
+            children: null != p ? p : ""
+          }), (0, r.jsx)(s.R2l, {
+            className: m.IZ,
             size: "xs",
             color: "currentColor"
           })]
         })
-      }), (0, r.jsx)(m, {
+      }), (0, r.jsx)(b, {
         channel: t
       })]
     })

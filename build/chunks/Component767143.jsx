@@ -102,7 +102,7 @@ let $ = 32,
     let {
       node: t
     } = e;
-    (0, S.i)({
+    (0, I.i)({
       emojiId: t.emojiId,
       currentGuildId: L.A.getGuildId()
     });
@@ -110,7 +110,7 @@ let $ = 32,
       i = n !== t.name;
     return (0, r.jsx)(c.l, {
       children: (0, r.jsx)(B.Uq, {
-        children: (0, r.jsxs)(b.A, {
+        children: (0, r.jsxs)(y.A, {
           className: z.gH,
           children: [(0, r.jsx)(h.A, {
             emojiName: t.name,
@@ -118,9 +118,9 @@ let $ = 32,
             src: t.src,
             animated: false,
             size: "jumbo"
-          }), (0, r.jsxs)(b.A, {
-            direction: b.A.Direction.VERTICAL,
-            justify: b.A.Justify.CENTER,
+          }), (0, r.jsxs)(y.A, {
+            direction: y.A.Direction.VERTICAL,
+            justify: y.A.Justify.CENTER,
             className: z.bM,
             children: [(0, r.jsx)(p.Text, {
               className: z.__invalid_emojiName,
@@ -164,8 +164,8 @@ let $ = 32,
         alt: "",
         className: z.$f
       }), " :"]
-    }) : (0, r.jsx)(I.A, {
-      size: I.A.Sizes.SMALL,
+    }) : (0, r.jsx)(S.A, {
+      size: S.A.Sizes.SMALL,
       className: z.oi,
       guild: t
     }), m = () => f ? (0, r.jsx)(p.DUT, {
@@ -213,25 +213,25 @@ let $ = 32,
       color: "text-default",
       children: K.intl.string(K.t.H29mx4)
     });
-    return (0, r.jsxs)(b.A, {
-      align: b.A.Align.CENTER,
-      children: [(0, r.jsx)(y.Ay, {
-        mask: y.Ay.Masks.SQUIRCLE,
+    return (0, r.jsxs)(y.A, {
+      align: y.A.Align.CENTER,
+      children: [(0, r.jsx)(b.Ay, {
+        mask: b.Ay.Masks.SQUIRCLE,
         width: c,
         height: c,
         className: z.__invalid_guildIconContainer,
         children: h()
-      }), (0, r.jsxs)(b.A, {
-        direction: b.A.Direction.VERTICAL,
+      }), (0, r.jsxs)(y.A, {
+        direction: y.A.Direction.VERTICAL,
         className: s()(z.__invalid_guildInformation, z.bM),
-        children: [(0, r.jsxs)(b.A, {
-          align: b.A.Align.CENTER,
+        children: [(0, r.jsxs)(y.A, {
+          align: y.A.Align.CENTER,
           children: [(0, r.jsx)(T.A, {
             guild: t,
             className: z.n2
           }), m()]
-        }), (0, r.jsx)(b.A, {
-          align: b.A.Align.CENTER,
+        }), (0, r.jsx)(y.A, {
+          align: y.A.Align.CENTER,
           children: O()
         })]
       })]
@@ -250,7 +250,7 @@ let $ = 32,
       joinedEmojiSourceGuildRecord: u,
       emoji: d,
       isFetching: f
-    } = (0, A.y)({
+    } = (0, v.y)({
       emojiId: t.emojiId,
       refreshPositionKey: i
     });
@@ -275,15 +275,15 @@ let $ = 32,
     let {
       node: c,
       sourceType: d,
-      expressionSourceApplication: y,
-      expressionSourceGuild: A,
-      joinedEmojiSourceGuildRecord: I,
+      expressionSourceApplication: b,
+      expressionSourceGuild: v,
+      joinedEmojiSourceGuildRecord: S,
       closePopout: T,
       onToggleShowMoreEmojis: D,
       guildEmoji: x,
       demoMode: k = false,
       nonce: U
-    } = e, F = (0, l.bG)([j.default], () => j.default.getCurrentUser()), q = (0, l.bG)([L.A], () => L.A.getGuildId()), X = G.Ay.isPremium(F), Z = null != q && (q === (null == A ? true : A.id) || q === (null == I ? true : I.id)), Q = null != I, $ = null != (t = null == A ? true : A.isDiscoverable()) && t;
+    } = e, F = (0, l.bG)([j.default], () => j.default.getCurrentUser()), q = (0, l.bG)([L.A], () => L.A.getGuildId()), X = G.Ay.isPremium(F), Z = null != q && (q === (null == v ? true : v.id) || q === (null == S ? true : S.id)), Q = null != S, $ = null != (t = null == v ? true : v.isDiscoverable()) && t;
     k && (X = true, $ = true, Q = false, Z = false);
     let J = ee(),
       {
@@ -317,7 +317,7 @@ let $ = 32,
     let el = L.A.getGuildId(),
       ec = (0, V.O)({
         sourceType: d,
-        expressionSourceApplication: y,
+        expressionSourceApplication: b,
         isPremium: X,
         hasJoinedEmojiSourceGuild: Q,
         isRoleSubscriptionEmoji: et,
@@ -335,11 +335,11 @@ let $ = 32,
       }),
       eu = Q && er && !es && (X && et || !X),
       ed = ec.emojiDescription,
-      ef = (0, S.i)({
+      ef = (0, I.i)({
         emojiId: c.emojiId,
         currentGuildId: el,
         popoutData: ec,
-        emojiSourceGuildId: null == A ? true : A.id,
+        emojiSourceGuildId: null == v ? true : v.id,
         nonce: U,
         demoMode: k
       }),
@@ -347,14 +347,14 @@ let $ = 32,
       e_ = ec.type === V.u.GET_PREMIUM,
       eh = () => {
         let e = async () => {
-          if (k || null == A || Q) return;
+          if (k || null == v || Q) return;
           T();
-          let e = A.id;
+          let e = v.id;
           try {
             await _.A.joinGuild(e), _.A.transitionToGuildSync(e)
           } catch (e) {}
         }, t = () => {
-          T(), (null == I ? true : I.id) != null && _.A.transitionToGuildSync(I.id, {
+          T(), (null == S ? true : S.id) != null && _.A.transitionToGuildSync(S.id, {
             sourceLocationStack: [m.A.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL]
           }, Y.VV.ROLE_SUBSCRIPTIONS)
         }, n = !Q && $, i = () => e_ ? (0, r.jsx)(P.A, {
@@ -366,7 +366,7 @@ let $ = 32,
             textOverride: ec.text
           },
           onSubscribeModalClose: t => t ? e() : T(),
-          postSuccessGuild: n && null != A ? A : true,
+          postSuccessGuild: n && null != v ? v : true,
           premiumModalAnalyticsLocation: J
         }) : ep ? (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
@@ -381,16 +381,16 @@ let $ = 32,
         }) : true;
         return (0, r.jsxs)("div", {
           className: z.gH,
-          children: [(0, r.jsxs)(b.A, {
+          children: [(0, r.jsxs)(y.A, {
             children: [(0, r.jsx)(h.A, {
               className: z.P$,
               emojiId: c.emojiId,
               emojiName: c.name,
               animated: c.animated,
               size: "jumbo"
-            }), (0, r.jsxs)(b.A, {
-              direction: b.A.Direction.VERTICAL,
-              justify: b.A.Justify.CENTER,
+            }), (0, r.jsxs)(y.A, {
+              direction: y.A.Direction.VERTICAL,
+              justify: y.A.Justify.CENTER,
               className: z.bM,
               children: [(0, r.jsx)(p.Text, {
                 variant: "text-md/semibold",
@@ -413,7 +413,7 @@ let $ = 32,
       [em, eg] = i.useState(false),
       eE = () => {
         var e, t;
-        let n = null != A && !Q && $ && (null != (e = null == A || null == (t = A.emojis) ? true : t.length) ? e : 0) > 1,
+        let n = null != v && !Q && $ && (null != (e = null == v || null == (t = v.emojis) ? true : t.length) ? e : 0) > 1,
           i = () => {
             n && (null == D || D(), em || k || M.default.track(H.HAw.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ef), eg(!em))
           },
@@ -422,7 +422,7 @@ let $ = 32,
             return (0, r.jsx)(p.DUT, {
               onClick: i,
               className: z.wK,
-              children: (0, r.jsxs)(b.A, {
+              children: (0, r.jsxs)(y.A, {
                 children: [(0, r.jsx)(p.Text, {
                   className: z.__invalid_showMoreEmojisLabel,
                   "aria-label": e,
@@ -447,13 +447,13 @@ let $ = 32,
             color: "text-subtle",
             children: Q ? K.intl.string(K.t.ohTzZH) : K.intl.string(K.t["eLfh+a"])
           }), (0, r.jsx)(en, {
-            expressionSourceGuild: null != A ? A : v.GO.createFromGuildRecord(I),
+            expressionSourceGuild: null != v ? v : A.GO.createFromGuildRecord(S),
             hasJoinedExpressionSourceGuild: Q,
             isDisplayingJoinGuildButtonInPopout: ep
           }), n && (0, r.jsxs)(r.Fragment, {
             children: [a(), null != c.emojiId && em && (0, r.jsx)(ea, {
               emojiId: c.emojiId,
-              expressionSourceGuild: A,
+              expressionSourceGuild: v,
               popoutData: ec,
               onClose: T,
               hasJoinedEmojiSourceGuild: Q,
@@ -462,10 +462,10 @@ let $ = 32,
           })]
         })
       },
-      eb = $ || Q && !Z || null != A;
+      ey = $ || Q && !Z || null != v;
     return (0, r.jsxs)(B.Uq, {
       className: z.Bm,
-      children: [eh(), eb && eE()]
+      children: [eh(), ey && eE()]
     })
   },
   ea = e => {

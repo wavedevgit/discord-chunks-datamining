@@ -46,13 +46,13 @@ function N(e) {
     onClick: l,
     selectedOverride: s = false,
     popoutProps: o,
-    ref: A,
-    focusSectionProps: m
-  } = e, [E, O] = i.useState(false), N = (0, b.lI)(), T = s || N, j = s || T, {
+    ref: f,
+    focusSectionProps: A
+  } = e, [E, O] = i.useState(false), N = (0, _.lI)(), T = s || N, j = s || T, {
     backForwardButtons: x,
     titlebarIconSize: P,
     titlebarHoverHighlight: w
-  } = (0, f.p)({
+  } = (0, h.p)({
     location: "NotificationsInboxTitleBarButton"
   }), L = (0, r.jsx)(d.XFE, {
     className: I.icon,
@@ -61,9 +61,9 @@ function N(e) {
   }), {
     badge: R,
     badgeType: D
-  } = (0, _.ux)({
+  } = (0, b.ux)({
     isSelected: T
-  }), M = (0, g.isDesktop)() && x, k = (0, h.C)(), U = (0, g.isMac)() ? v[k] : M ? S[k] : C[k];
+  }), M = (0, m.isDesktop)() && x, k = (0, g.C)(), U = (0, m.isMac)() ? v[k] : M ? S[k] : C[k];
   return (0, r.jsxs)(d.BJc, {
     gap: 0,
     direction: "horizontal",
@@ -92,11 +92,11 @@ function N(e) {
         }
         return e
       }({
-        innerRef: A,
+        innerRef: f,
         className: a()(I.clickableContainer, {
           [I.withHoverHighlight]: w
         })
-      }, m, o), n = n = {
+      }, A, o), n = n = {
         onMouseEnter: () => {
           O(true)
         },
@@ -139,15 +139,15 @@ function T() {
     focusSectionProps: e
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = i.useRef(null), {
     notificationCenterVariant: n
-  } = (0, m.X8)({
+  } = (0, A.X8)({
     location: "NotificationsInboxButton"
-  }), l = (0, o.bG)([A.A], () => A.A.getChannelId()), a = i.useMemo(() => O.BVt.CHANNEL(O.gNP, null != l ? l : true), [l]), c = (0, _.HN)();
-  return n === m.U5.SIDEBAR ? (0, r.jsx)(N, {
+  }), l = (0, o.bG)([f.A], () => f.A.getChannelId()), a = i.useMemo(() => O.BVt.CHANNEL(O.gNP, null != l ? l : true), [l]), c = (0, b.HN)();
+  return n === A.U5.SIDEBAR ? (0, r.jsx)(N, {
     onClick: () => {
       c(), (0, s.pX)(a)
     },
     focusSectionProps: e
-  }) : n === m.U5.POPOUT ? (0, r.jsx)(E.A, {
+  }) : n === A.U5.POPOUT ? (0, r.jsx)(E.A, {
     targetElementRef: t,
     popoutPosition: "bottom",
     popoutAlign: "left",

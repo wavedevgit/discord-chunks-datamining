@@ -1,30 +1,30 @@
 /** Chunk was on 28636 **/
 /** chunk id: 867333, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => c
+  A: () => o
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk1305 = require("./1305.js");
 
-function c(e) {
+function o(e) {
   let {
     loading: t,
     children: n
   } = e;
-  return (0, l.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: s.kL,
-    children: [t ? (0, l.jsx)("div", {
+    children: [t ? (0, r.jsx)("div", {
       className: s.dc,
-      children: (0, l.jsx)(i.y$y, {
+      children: (0, r.jsx)(a.y$y, {
         className: s.u1,
-        type: i.y$y.Type.SPINNING_CIRCLE
+        type: a.y$y.Type.SPINNING_CIRCLE
       })
-    }) : null, (0, l.jsx)("div", {
-      className: r()({
+    }) : null, (0, r.jsx)("div", {
+      className: i()({
         [s.Lq]: t
       }),
       children: n

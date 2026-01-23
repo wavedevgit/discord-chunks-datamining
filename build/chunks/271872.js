@@ -2,7 +2,7 @@
 /** chunk id: 271872, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => u
+  A: () => f
 });
 var Chunk562465 = require("./562465.js"),
   Chunk47167 = require("./47167.js"),
@@ -14,19 +14,19 @@ var Chunk562465 = require("./562465.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function u(e, t) {
+function f(e, t) {
   var r;
   let {
-    nonce: u,
+    nonce: f,
     forQRCode: p
-  } = t, b = e.getGuildId(), m = a.A.getGuild(b), g = (0, c.hw)({
-    guildId: null != b ? b : f.D0I,
+  } = t, m = e.getGuildId(), x = o.A.getGuild(m), y = (0, c.hw)({
+    guildId: null != m ? m : d.D0I,
     channelId: e.id,
-    channelName: (0, s.m1)(e, o.default, l.A),
-    guildName: null != (r = null == m ? true : m.name) ? r : d.intl.string(d.t.LJpTRF),
+    channelName: (0, s.m1)(e, a.default, l.A),
+    guildName: null != (r = null == x ? true : x.name) ? r : u.intl.string(u.t.LJpTRF),
     muted: i.A.isSelfMute(),
     deafened: i.A.isSelfDeaf(),
-    nonce: u
+    nonce: f
   });
-  return p ? "".concat((0, n.TP)()).concat(f.Rsh.XBOX_HANDOFF, "?").concat(g.toString()) : "".concat(c.Gp, "?").concat(g.toString())
+  return p ? "".concat((0, n.TP)()).concat(d.Rsh.XBOX_HANDOFF, "?").concat(y.toString()) : "".concat(c.Gp, "?").concat(y.toString())
 }

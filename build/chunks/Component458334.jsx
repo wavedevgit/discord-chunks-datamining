@@ -2,7 +2,7 @@
 /** chunk id: 458334, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,42 +16,42 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e, t) {
+function p(e, t) {
   let n = (0, s.bG)([u.A], () => u.A.getProps().integrations);
   return i.useMemo(() => (function(e, t, n) {
-    var i, s, u, b;
-    let m;
+    var i, s, u, p;
+    let f;
     if (!t.managed) return null;
-    let p = null == (i = t.tags) ? true : i.bot_id,
-      x = null == (s = t.tags) ? true : s.integration_id,
-      h = (null == (u = t.tags) ? true : u.premium_subscriber) !== true,
-      j = (null == (b = t.tags) ? true : b.guild_connections) !== true;
-    if (null != p ? m = null == n ? true : n.find(e => {
+    let b = null == (i = t.tags) ? true : i.bot_id,
+      h = null == (s = t.tags) ? true : s.integration_id,
+      x = (null == (u = t.tags) ? true : u.premium_subscriber) !== true,
+      j = (null == (p = t.tags) ? true : p.guild_connections) !== true;
+    if (null != b ? f = null == n ? true : n.find(e => {
         var t;
         let {
           application: n
         } = e;
-        return (null == n || null == (t = n.bot) ? true : t.id) === p
-      }) : null != x && (m = null == n ? true : n.find(e => {
+        return (null == n || null == (t = n.bot) ? true : t.id) === b
+      }) : null != h && (f = null == n ? true : n.find(e => {
         let {
           id: t
         } = e;
-        return t === x
-      })), null != m && null != m.application && null != m.name) {
-      let e = m.application.id,
-        t = m.name;
-      [l.s.TWITCH, l.s.YOUTUBE].includes(m.type) && (t = "".concat(c.A.get(m.type).name, " - ").concat(t));
+        return t === h
+      })), null != f && null != f.application && null != f.name) {
+      let e = f.application.id,
+        t = f.name;
+      [l.s.TWITCH, l.s.YOUTUBE].includes(f.type) && (t = "".concat(o.A.get(f.type).name, " - ").concat(t));
       let n = () => {
-        d.A.setSection(f.BEX.INTEGRATIONS), a.A.setSection(f.wLn.APPLICATION, e)
+        d.A.setSection(g.BEX.INTEGRATIONS), a.A.setSection(g.wLn.APPLICATION, e)
       };
-      return g.intl.format(g.t.FuXsWm, {
+      return m.intl.format(m.t.FuXsWm, {
         name: t,
-        integrationNameHook: (e, t) => (0, r.jsx)(o.A, {
+        integrationNameHook: (e, t) => (0, r.jsx)(c.A, {
           onClick: n,
           children: e
         }, t)
       })
     }
-    return h ? g.intl.string(g.t.oF6FYT) : j ? g.intl.string(g.t.ZQ37tH) : g.intl.string(g.t.k5d7DJ)
+    return x ? m.intl.string(m.t.oF6FYT) : j ? m.intl.string(m.t.ZQ37tH) : m.intl.string(m.t.k5d7DJ)
   })(0, t, n), [e, t, n])
 }

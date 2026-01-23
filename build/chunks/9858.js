@@ -2,7 +2,7 @@
 /** chunk id: 9858, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J: () => A
+  J: () => v
 }), require("./747238.js"), require("./812715.js"), require("./896048.js");
 var Chunk87955 = require("./87955.js"),
   Chunk735438 = require("./735438.js"),
@@ -95,20 +95,20 @@ class E {
     })
   }
 }
-let b = a().debounce((e, t) => {
+let y = a().debounce((e, t) => {
   let n = O(t);
   null != n && e.detectLanguage(n)
 }, _);
 
-function y(e) {
-  null != document.body && document.body.addEventListener("beforeinput", t => b(e, t.target), true)
+function b(e) {
+  null != document.body && document.body.addEventListener("beforeinput", t => y(e, t.target), true)
 }
 
 function O(e) {
   return null == e ? null : (0, s.vq)(e, HTMLInputElement) || (0, s.vq)(e, HTMLTextAreaElement) ? e.value : (0, s.vq)(e) && e.hasAttribute("contenteditable") ? e.textContent : true
 }
-async function A() {
+async function v() {
   var e;
   let t = new E((null != (e = await m.getAvailableDictionaries()) ? e : []).map(g).filter(u.Vq));
-  return y(t), t
+  return b(t), t
 }

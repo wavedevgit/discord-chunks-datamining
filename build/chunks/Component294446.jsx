@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 294446, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => b
 }), require("./896048.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -19,7 +19,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function m(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function m(e) {
   return e
 }
 
-function b(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,14 +50,14 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = (0, Chunk990007.A)(e => {
+let b = (0, Chunk990007.A)(e => {
   var t;
   let {
     clientId: n,
     authorizations: u,
     scopes: d,
-    parsedPermissions: f,
-    responseType: _,
+    parsedPermissions: h,
+    responseType: b,
     redirectUri: E,
     codeChallenge: O,
     codeChallengeMethod: y,
@@ -72,12 +72,12 @@ let _ = (0, Chunk990007.A)(e => {
     signal: P
   } = e, w = "OAuth2Authorize_".concat(n, "_").concat(v, "_").concat(S), L = null != j ? null == u ? true : u.get(j) : true, R = null != (t = null == L ? true : L.application) ? t : a.A.getApplication(n);
   return new Promise((e, t) => {
-    let a = (0, h.d5)(x),
+    let a = (0, g.d5)(x),
       L = i.SYi;
     null != R && null != (0, l.Ay)({
       application: R,
       channelId: S
-    }) ? L = i.KX8 : a.context === A.BRT.POPOUT && (L = i.KX8);
+    }) ? L = i.KX8 : a.context === f.BRT.POPOUT && (L = i.KX8);
     let D = false,
       M = l => {
         let {
@@ -87,16 +87,16 @@ let _ = (0, Chunk990007.A)(e => {
         if (null == s || s === n) {
           if (D = true, null == o) {
             t(new p.A({
-              errorCode: A.Lw6.OAUTH2_ERROR
+              errorCode: f.Lw6.OAUTH2_ERROR
             }, "OAuth2 Error: No location provided")), a.lock();
             return
-          }(e(o), null == E || null == R) ? a.lock(): null == new URL(o).searchParams.get("error") ? (0, i.qfG)(e => (0, r.jsx)(c.Sm, m({
+          }(e(o), null == E || null == R) ? a.lock(): null == new URL(o).searchParams.get("error") ? (0, i.qfG)(e => (0, r.jsx)(c.Sm, A({
             application: R
           }, e)), {
             onCloseCallback: () => {
               a.lock()
             }
-          }, L) : (0, i.qfG)(e => (0, r.jsx)(c.xb, m({}, e)), {
+          }, L) : (0, i.qfG)(e => (0, r.jsx)(c.xb, A({}, e)), {
             onCloseCallback: () => {
               a.lock()
             }
@@ -107,11 +107,11 @@ let _ = (0, Chunk990007.A)(e => {
         cleanup: k
       } = function(e, t) {
         function n() {
-          (0, i.OoC)(e) && (0, i.qfG)(e => (0, r.jsx)(o.f, b(m({}, e), {
-            title: g.intl.string(g.t.j2d6Km),
-            subtitle: g.intl.string(g.t["4LKmN5"]),
+          (0, i.OoC)(e) && (0, i.qfG)(e => (0, r.jsx)(o.f, _(A({}, e), {
+            title: m.intl.string(m.t.j2d6Km),
+            subtitle: m.intl.string(m.t["4LKmN5"]),
             actions: [{
-              text: g.intl.string(g.t.cpT0Cq),
+              text: m.intl.string(m.t.cpT0Cq),
               onClick: e.onClose
             }]
           })))
@@ -122,18 +122,18 @@ let _ = (0, Chunk990007.A)(e => {
           }
         }
       }(w, P);
-    (0, i.qfG)(e => (0, r.jsx)(s.OAuth2AuthorizeModal, b(m({}, e), {
+    (0, i.qfG)(e => (0, r.jsx)(s.OAuth2AuthorizeModal, _(A({}, e), {
       authorizations: u,
       clientId: n,
       scopes: null != d ? d : [],
       disclosures: null != T ? T : [],
       callback: M,
-      responseType: _,
+      responseType: b,
       redirectUri: E,
       codeChallenge: O,
       codeChallengeMethod: y,
       state: I,
-      permissions: f,
+      permissions: h,
       guildId: v,
       channelId: S,
       prompt: C,
@@ -144,13 +144,13 @@ let _ = (0, Chunk990007.A)(e => {
       modalKey: w,
       onCloseCallback: () => {
         k(), D || (t(new p.A({
-          errorCode: A.Lw6.OAUTH2_ERROR
+          errorCode: f.Lw6.OAUTH2_ERROR
         }, "User cancelled authorization")), a.lock())
       }
     }, L)
   })
 }, function(e, t, n) {
-  if ((0, h.kS)(n) || !u.isPlatformEmbedded) return;
+  if ((0, g.kS)(n) || !u.isPlatformEmbedded) return;
   let r = (0, l.Ay)({
     application: e,
     channelId: t

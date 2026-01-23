@@ -86,8 +86,8 @@ function E(e, t) {
       t = e
     }
   }
-  let h = b(n, null != t ? t : "", d),
-    m = b(n, "", d);
+  let h = y(n, null != t ? t : "", d),
+    m = y(n, "", d);
   return r.useMemo(() => {
     var e;
     let t = new l.A,
@@ -102,20 +102,20 @@ function E(e, t) {
   }, [h, m, n])
 }
 
-function b(e, t, n) {
+function y(e, t, n) {
   let i = g(),
     a = (0, u.A)(e, t, {
       legacyMatches: n,
       bypassPredicates: i
     }),
     [s, o] = r.useState(a),
-    l = y(s, a);
+    l = b(s, a);
   return r.useEffect(() => {
     l && o(a)
   }, [l, a]), s
 }
 
-function y(e, t) {
+function b(e, t) {
   if (e.size !== t.size) returntrue;
   for (let n of e)
     if (!t.has(n)) returntrue;

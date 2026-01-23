@@ -2,14 +2,14 @@
 /** chunk id: 376708, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C$: () => y,
+  C$: () => b,
   Fo: () => g,
-  G9: () => v,
+  G9: () => A,
   KB: () => _,
   Mn: () => O,
-  Yj: () => A,
+  Yj: () => v,
   iU: () => m,
-  uW: () => b,
+  uW: () => y,
   xJ: () => E
 }), require("./638769.js"), require("./136722.js");
 var Chunk811602 = require("./811602.js"),
@@ -38,7 +38,7 @@ function _(e) {
 }
 
 function h(e) {
-  return b(l.A.getChannel(e))
+  return y(l.A.getChannel(e))
 }
 
 function m(e) {
@@ -53,11 +53,11 @@ function E(e) {
   return null != e && e.isModeratorReportChannel() && e.isForumPost()
 }
 
-function b(e) {
+function y(e) {
   return null != e && (g(e) || E(e))
 }
 
-function y(e) {
+function b(e) {
   if (null == e || !(0, o.L)() || !h(e)) returntrue;
   let {
     loaded: t,
@@ -70,11 +70,11 @@ function O(e, t) {
   return !!e.isFirstMessageInForumPost(t) && !!e.isSystemDM() && E(t)
 }
 
-function A(e) {
+function v(e) {
   return e.sort((e, t) => e.id == a.b.MULTIPLE_REPORTS ? false : +(t.id == a.b.MULTIPLE_REPORTS))
 }
 
-function v(e, t) {
+function A(e, t) {
   var n, r, i;
   let a = l.A.getChannel(e);
   if (null == a || !a.isModeratorReportChannel()) returnfalse;

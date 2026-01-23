@@ -25,11 +25,11 @@
         return e < 0 ? 0 : e
       }
     },
-    E = b(function() {
+    E = y(function() {
       d = 22, p = 66, f = 0
     });
 
-  function b(e) {
+  function y(e) {
     var t, n, r = 99,
       i = function() {
         var a = Date.now() - n;
@@ -40,35 +40,35 @@
     }
   }
 
-  function y() {
+  function b() {
     u && (i && o(i), r && clearTimeout(r), u = false)
   }
 
   function O() {
-    125 != p && (d = 7, p = 125, f = 35, u && (y(), S())), E()
-  }
-
-  function A() {
-    i = null, r = setTimeout(I, 0)
+    125 != p && (d = 7, p = 125, f = 35, u && (b(), I())), E()
   }
 
   function v() {
-    r = null, s(A)
+    i = null, r = setTimeout(S, 0)
   }
 
-  function S() {
-    u || (t = p - (Date.now() - h), e = Date.now(), u = true, f && t < f && (t = f), t > 9 ? r = setTimeout(v, t) : (t = 0, v()))
+  function A() {
+    r = null, s(v)
   }
 
   function I() {
+    u || (t = p - (Date.now() - h), e = Date.now(), u = true, f && t < f && (t = f), t > 9 ? r = setTimeout(A, t) : (t = 0, A()))
+  }
+
+  function S() {
     var n, i, a, s = d > 9 ? 9 : 1;
     if (h = Date.now(), u = false, r = null, c > 2 || h - t - 50 < e)
       for (i = 0, a = l.length; i < a && g.timeRemaining() > s; i++) n = l.shift(), m++, n && n(g);
-    l.length ? S() : c = 0
+    l.length ? I() : c = 0
   }
 
   function T(e) {
-    return _++, l.push(e), S(), _
+    return _++, l.push(e), I(), _
   }
 
   function C(e) {

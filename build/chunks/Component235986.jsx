@@ -2,7 +2,7 @@
 /** chunk id: 235986, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -93,7 +93,7 @@ let h = {
     WRAP: Chunk20976.LV,
     WRAP_REVERSE: Chunk20976.Tt
   },
-  b = e => {
+  y = e => {
     let {
       children: t,
       className: n,
@@ -103,21 +103,21 @@ let h = {
       wrap: c = E.NO_WRAP,
       shrink: d = 1,
       grow: _ = 1,
-      basis: b = "auto",
-      style: y
+      basis: y = "auto",
+      style: b
     } = e, O = p(e, ["children", "className", "direction", "justify", "align", "wrap", "shrink", "grow", "basis", "style"]);
     return (0, r.jsx)("div", f(u({
       style: u({
         flexShrink: d,
         flexGrow: _,
-        flexBasis: b
-      }, y),
+        flexBasis: y
+      }, b),
       className: s()(o.Uu, i, a, l, c, n)
     }, O), {
       children: t
     }))
   };
-b.Child = e => {
+y.Child = e => {
   let {
     children: t,
     className: n,
@@ -141,5 +141,5 @@ b.Child = e => {
   return (0, r.jsx)("div", f(u({}, m), {
     children: t
   }))
-}, b.Direction = h, b.Align = g, b.Justify = m, b.Wrap = E;
-let y = b
+}, y.Direction = h, y.Align = g, y.Justify = m, y.Wrap = E;
+let b = y

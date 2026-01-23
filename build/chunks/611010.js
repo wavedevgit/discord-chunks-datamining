@@ -155,7 +155,7 @@ class m extends h {
     }))
   }
   mergeFromApplicationUpdate(e) {
-    var t, n, r, i, a, s, o, l, c, d, f, p, _, h, g, E, b, y, O, A, v, S, I, T, C, N, R, w, P, D, x, L, j, M, k, U, G, V, F, B, H, Y, W, K, z;
+    var t, n, r, i, a, s, o, l, c, d, f, p, _, h, g, E, y, b, O, v, A, I, S, T, C, N, R, w, P, D, x, L, j, M, k, U, G, V, F, B, H, Y, W, K, z;
     return new m({
       id: null != (t = e.id) ? t : this.id,
       name: null != (n = e.name) ? n : this.name,
@@ -173,13 +173,13 @@ class m extends h {
       storeListingSkuId: null != (h = e.storeListingSkuId) ? h : this.storeListingSkuId,
       thirdPartySkus: null != (g = e.thirdPartySkus) ? g : this.thirdPartySkus,
       guildId: null != (E = e.guildId) ? E : this.guildId,
-      guild: null != (b = e.guild) ? b : this.guild,
-      executables: null != (y = e.executables) ? y : this.executables,
+      guild: null != (y = e.guild) ? y : this.guild,
+      executables: null != (b = e.executables) ? b : this.executables,
       hashes: null != (O = e.hashes) ? O : this.hashes,
-      description: null != (A = e.description) ? A : this.description,
-      eulaId: null != (v = e.eulaId) ? v : this.eulaId,
-      slug: null != (S = e.slug) ? S : this.slug,
-      coverImage: null != (I = e.coverImage) ? I : this.coverImage,
+      description: null != (v = e.description) ? v : this.description,
+      eulaId: null != (A = e.eulaId) ? A : this.eulaId,
+      slug: null != (I = e.slug) ? I : this.slug,
+      coverImage: null != (S = e.coverImage) ? S : this.coverImage,
       bot: null != (T = e.bot) ? T : this.bot,
       flags: null != (C = e.flags) ? C : this.flags,
       maxParticipants: null != (N = e.maxParticipants) ? N : this.maxParticipants,
@@ -224,9 +224,9 @@ class m extends h {
     return null != e && (e & t) === t
   }
   constructor(e) {
-    var t, n, i, a, s, o, l, d, p, h, g, E, b, y, O, A, v, S, I, T;
-    super(e), c(this, "overlay", true), c(this, "overlayWarn", true), c(this, "overlayCompatibilityHook", true), c(this, "overlayMethods", true), c(this, "hook", true), c(this, "aliases", true), c(this, "publishers", true), c(this, "developers", true), c(this, "storeListingSkuId", true), c(this, "guildId", true), c(this, "guild", true), c(this, "executables", true), c(this, "hashes", true), c(this, "eulaId", true), c(this, "slug", true), c(this, "flags", true), c(this, "maxParticipants", true), c(this, "tags", true), c(this, "embeddedActivityConfig", true), c(this, "team", true), c(this, "integrationTypesConfig", true), c(this, "storefront_available", true), c(this, "termsOfServiceUrl", true), c(this, "privacyPolicyUrl", true), c(this, "isDiscoverable", true), c(this, "customInstallUrl", true), c(this, "installParams", true), c(this, "directoryEntry", true), c(this, "categories", true), c(this, "linkedGames", true), c(this, "deepLinkUri", true), this.overlay = null != (t = e.overlay) && t, this.overlayWarn = null != (n = e.overlayWarn) && n, this.overlayCompatibilityHook = null != (i = e.overlayCompatibilityHook) && i, this.overlayMethods = null != (a = e.overlayMethods) ? a : r.b.DEFAULT, this.hook = null == (s = e.hook) || s, this.aliases = null != (o = e.aliases) ? o : [], this.publishers = null != (l = e.publishers) ? l : [], this.developers = null != (d = e.developers) ? d : [], this.storeListingSkuId = e.storeListingSkuId, this.guildId = e.guildId, this.guild = e.guild, this.executables = (null != (p = e.executables) ? p : []).map(_), this.hashes = null != (h = e.hashes) ? h : [], this.eulaId = e.eulaId, this.slug = e.slug, this.flags = null != (g = e.flags) ? g : 0, this.tags = null != (E = e.tags) ? E : [], this.maxParticipants = e.maxParticipants, this.embeddedActivityConfig = null != (b = e.embedded_activity_config) ? b : e.embeddedActivityConfig, this.team = e.team, this.integrationTypesConfig = e.integrationTypesConfig, this.storefront_available = e.storefront_available, this.termsOfServiceUrl = e.termsOfServiceUrl, this.privacyPolicyUrl = e.privacyPolicyUrl, this.isDiscoverable = null != (y = e.is_discoverable) ? y : e.isDiscoverable, this.customInstallUrl = null != (O = e.custom_install_url) ? O : e.customInstallUrl, this.installParams = null != (A = e.install_params) ? A : e.installParams, this.directoryEntry = null != (v = e.directory_entry) ? v : e.directoryEntry, this.categories = e.categories, this.linkedGames = null != (S = null == (T = e.linked_games) ? true : T.map(e => f(u({}, e), {
+    var t, n, i, a, s, o, l, d, p, h, g, E, y, b, O, v, A, I, S, T;
+    super(e), c(this, "overlay", true), c(this, "overlayWarn", true), c(this, "overlayCompatibilityHook", true), c(this, "overlayMethods", true), c(this, "hook", true), c(this, "aliases", true), c(this, "publishers", true), c(this, "developers", true), c(this, "storeListingSkuId", true), c(this, "guildId", true), c(this, "guild", true), c(this, "executables", true), c(this, "hashes", true), c(this, "eulaId", true), c(this, "slug", true), c(this, "flags", true), c(this, "maxParticipants", true), c(this, "tags", true), c(this, "embeddedActivityConfig", true), c(this, "team", true), c(this, "integrationTypesConfig", true), c(this, "storefront_available", true), c(this, "termsOfServiceUrl", true), c(this, "privacyPolicyUrl", true), c(this, "isDiscoverable", true), c(this, "customInstallUrl", true), c(this, "installParams", true), c(this, "directoryEntry", true), c(this, "categories", true), c(this, "linkedGames", true), c(this, "deepLinkUri", true), this.overlay = null != (t = e.overlay) && t, this.overlayWarn = null != (n = e.overlayWarn) && n, this.overlayCompatibilityHook = null != (i = e.overlayCompatibilityHook) && i, this.overlayMethods = null != (a = e.overlayMethods) ? a : r.b.DEFAULT, this.hook = null == (s = e.hook) || s, this.aliases = null != (o = e.aliases) ? o : [], this.publishers = null != (l = e.publishers) ? l : [], this.developers = null != (d = e.developers) ? d : [], this.storeListingSkuId = e.storeListingSkuId, this.guildId = e.guildId, this.guild = e.guild, this.executables = (null != (p = e.executables) ? p : []).map(_), this.hashes = null != (h = e.hashes) ? h : [], this.eulaId = e.eulaId, this.slug = e.slug, this.flags = null != (g = e.flags) ? g : 0, this.tags = null != (E = e.tags) ? E : [], this.maxParticipants = e.maxParticipants, this.embeddedActivityConfig = null != (y = e.embedded_activity_config) ? y : e.embeddedActivityConfig, this.team = e.team, this.integrationTypesConfig = e.integrationTypesConfig, this.storefront_available = e.storefront_available, this.termsOfServiceUrl = e.termsOfServiceUrl, this.privacyPolicyUrl = e.privacyPolicyUrl, this.isDiscoverable = null != (b = e.is_discoverable) ? b : e.isDiscoverable, this.customInstallUrl = null != (O = e.custom_install_url) ? O : e.customInstallUrl, this.installParams = null != (v = e.install_params) ? v : e.installParams, this.directoryEntry = null != (A = e.directory_entry) ? A : e.directoryEntry, this.categories = e.categories, this.linkedGames = null != (I = null == (T = e.linked_games) ? true : T.map(e => f(u({}, e), {
       application: null != e.application ? m.createFromServer(e.application) : true
-    }))) ? S : e.linkedGames, this.deepLinkUri = null != (I = e.deepLinkUri) ? I : e.deeplink_uri
+    }))) ? I : e.linkedGames, this.deepLinkUri = null != (S = e.deepLinkUri) ? S : e.deeplink_uri
   }
 }

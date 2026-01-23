@@ -21,14 +21,14 @@ function p(e) {
     onClose: n
   } = e, {
     trackUserProfileAction: p
-  } = (0, s.NJ)(), {
-    mutualGuilds: b,
-    isFetching: g
-  } = (0, o.A)(t);
+  } = (0, o.NJ)(), {
+    mutualGuilds: g,
+    isFetching: m
+  } = (0, s.A)(t);
   return (0, r.jsx)(d.K, {
     className: f.XG,
     fade: true,
-    children: null == b && g ? Array.from({
+    children: null == g && m ? Array.from({
       length: 10
     }).map((e, t) => (0, r.jsxs)("div", {
       className: f.Y7,
@@ -39,15 +39,15 @@ function p(e) {
         width: 135,
         opacity: .08
       })]
-    }, t)) : (null != b || g) && (null == b ? true : b.length) !== 0 ? null == b ? true : b.map(e => {
+    }, t)) : (null != g || m) && (null == g ? true : g.length) !== 0 ? null == g ? true : g.map(e => {
       let {
         guild: i,
-        nick: s
+        nick: o
       } = e;
       return (0, r.jsx)(c.A, {
         user: t,
         guild: i,
-        nick: s,
+        nick: o,
         onSelect: () => {
           p({
             action: "PRESS_MUTUAL_GUILD"

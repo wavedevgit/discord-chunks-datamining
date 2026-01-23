@@ -64,20 +64,20 @@ function N(e, t) {
 function T(e) {
   let {
     channel: t
-  } = e, [n, a] = l.useState(false), s = l.useRef(null);
+  } = e, [n, s] = l.useState(false), a = l.useRef(null);
 
   function o() {
-    a(e => !e)
+    s(e => !e)
   }
   let c = S.intl.string(S.t["UKOtz+"]);
   return (0, r.jsx)(i.YNO, {
-    targetElementRef: s,
+    targetElementRef: a,
     shouldShow: n,
     animation: i.YNO.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: false,
-    onRequestClose: () => a(false),
+    onRequestClose: () => s(false),
     renderPopout: function(e) {
       return (0, r.jsx)(P, N(I({}, e), {
         channel: t
@@ -87,8 +87,8 @@ function T(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsx)(O.Ay.Icon, N(I({}, e), {
-        ref: s,
+      return (0, r.jsx)(_.Ay.Icon, N(I({}, e), {
+        ref: a,
         onClick: o,
         tooltip: n ? null : c,
         icon: i.jNK,
@@ -104,13 +104,13 @@ function P(e) {
     channel: t,
     closePopout: n,
     onSelect: l
-  } = e, y = (0, c.A)(t, "Sidebar Overflow"), O = (0, d.A)(t), x = (0, b.A)(t), E = (0, g.A)(t), _ = (0, a.A)(t), I = (0, u.A)(t), N = (0, h.A)(t.id), T = (0, p.A)(t), P = (0, o.A)(t), w = (0, s.A)(t), R = (0, A.A)({
+  } = e, y = (0, c.A)(t, "Sidebar Overflow"), _ = (0, d.A)(t), v = (0, g.A)(t), x = (0, m.A)(t), E = (0, s.A)(t), I = (0, u.A)(t), N = (0, f.A)(t.id), T = (0, h.A)(t), P = (0, o.A)(t), w = (0, a.A)(t), R = (0, A.A)({
     id: t.id,
     label: S.intl.string(S.t.DQ797g)
-  }), D = (0, m.A)(t), M = (0, f.A)(t);
+  }), D = (0, b.A)(t), M = (0, p.A)(t);
 
   function L() {
-    (0, j.iN)(t.id)
+    (0, O.iN)(t.id)
   }
   return (0, r.jsxs)(i.W1t, {
     navId: "thread-context",
@@ -124,9 +124,9 @@ function P(e) {
         action: L
       })]
     }), (0, r.jsxs)(i.rXV, {
-      children: [x, E]
+      children: [v, x]
     }), (0, r.jsxs)(i.rXV, {
-      children: [T, O, N, M]
+      children: [T, _, N, M]
     }), (0, r.jsxs)(i.rXV, {
       children: [(0, r.jsx)(i.Drp, {
         id: "search",
@@ -134,7 +134,7 @@ function P(e) {
         icon: i.tfB,
         action: function() {
           L(), setTimeout(() => {
-            v._.dispatch(C.jej.FOCUS_SEARCH, {
+            j._.dispatch(C.jej.FOCUS_SEARCH, {
               prefillCurrentChannel: false
             })
           }, 2e3)
@@ -144,11 +144,11 @@ function P(e) {
         label: S.intl.string(S.t["2BSH7n"]),
         icon: i.tfB,
         action: function() {
-          L(), v._.dispatch(C.jej.TOGGLE_CHANNEL_PINS)
+          L(), j._.dispatch(C.jej.TOGGLE_CHANNEL_PINS)
         }
       })]
     }), (0, r.jsxs)(i.rXV, {
-      children: [D, _, I, P]
+      children: [D, E, I, P]
     }), (0, r.jsxs)(i.rXV, {
       children: [w, R]
     })]
@@ -161,16 +161,16 @@ function w(e) {
     baseChannelId: n
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [t.isForumPost() ? null : (0, r.jsx)(E.A, {
+    children: [t.isForumPost() ? null : (0, r.jsx)(x.A, {
       channel: t
-    }), t.isModeratorReportChannel() ? (0, r.jsx)(x.A, {
+    }), t.isModeratorReportChannel() ? (0, r.jsx)(v.A, {
       channel: t
     }) : null, (0, r.jsx)(T, {
       channel: t
-    }), (0, r.jsx)(O.Ay.Icon, {
+    }), (0, r.jsx)(_.Ay.Icon, {
       icon: i.PGe,
       tooltip: S.intl.string(S.t.cpT0Cq),
-      onClick: () => (0, _.xu)((0, y.j)(t), null != n ? n : t.parent_id)
+      onClick: () => (0, E.xu)((0, y.j)(t), null != n ? n : t.parent_id)
     })]
   })
 }

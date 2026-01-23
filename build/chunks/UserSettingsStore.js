@@ -43,30 +43,30 @@ let h = (window.innerWidth - Chunk652215.MdR) / 2,
 function E() {
   return null == g && (g = Math.max((window.innerWidth - u.MdR) * .4, u.da6)), g
 }
-let b = {};
+let y = {};
 
-function y(e) {
-  b = _({}, b, e.settings)
+function b(e) {
+  y = _({}, y, e.settings)
 }
 
 function O() {
-  b = {
-    useSystemTheme: b.useSystemTheme,
-    darkSidebar: b.darkSidebar
+  y = {
+    useSystemTheme: y.useSystemTheme,
+    darkSidebar: y.darkSidebar
   }
 }
 
-function A() {
-  null == b && (b = {})
+function v() {
+  null == y && (y = {})
 }
 
-function v() {}
-
-function S() {
-  return b.darkSidebar = !b.darkSidebar, true
-}
+function A() {}
 
 function I() {
+  return y.darkSidebar = !y.darkSidebar, true
+}
+
+function S() {
   var e;
   let t = s.Ay.PersistedStore.migrateAndReadStoreState("AccessibilityStore", []).state;
   return null != (e = null == t ? true : t.darkSidebar) && e
@@ -74,120 +74,120 @@ function I() {
 class T extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   initialize(e) {
     var t, n;
-    (b = null != e ? e : {}).darkSidebar = null != (t = b.darkSidebar) ? t : I(), b.hdrDynamicRange = null != (n = b.hdrDynamicRange) ? n : "no-limit"
+    (y = null != e ? e : {}).darkSidebar = null != (t = y.darkSidebar) ? t : S(), y.hdrDynamicRange = null != (n = y.hdrDynamicRange) ? n : "no-limit"
   }
   getUserAgnosticState() {
-    return b
+    return y
   }
   get displayCompactAvatars() {
     var e;
-    return null != (e = b.displayCompactAvatars) && e
+    return null != (e = y.displayCompactAvatars) && e
   }
   get lowQualityImageMode() {
     var e;
-    return null != (e = b.lowQualityImageMode) && e
+    return null != (e = y.lowQualityImageMode) && e
   }
   get videoUploadQuality() {
     var e;
-    return null != (e = b.videoUploadQuality) ? e : m
+    return null != (e = y.videoUploadQuality) ? e : m
   }
   get dataSavingMode() {
     var e, t;
-    return null != (e = null != (t = b.dataSavingMode) ? t : b.lowQualityImageMode) && e
+    return null != (e = null != (t = y.dataSavingMode) ? t : y.lowQualityImageMode) && e
   }
   get expressionPickerWidth() {
     var e;
-    return null != (e = b.expressionPickerWidth) ? e : d.wp.MIN
+    return null != (e = y.expressionPickerWidth) ? e : d.wp.MIN
   }
   get messageRequestSidebarWidth() {
     var e;
-    return null != (e = b.messageRequestSidebarWidth) ? e : u.ItT
+    return null != (e = y.messageRequestSidebarWidth) ? e : u.ItT
   }
   get threadSidebarWidth() {
     var e;
-    return null != (e = b.threadSidebarWidth) ? e : u.da6
+    return null != (e = y.threadSidebarWidth) ? e : u.da6
   }
   get postSidebarWidth() {
     var e;
-    return null != (e = b.postSidebarWidth) ? e : h
+    return null != (e = y.postSidebarWidth) ? e : h
   }
   get callChatSidebarWidth() {
     var e;
-    return null != (e = b.callChatSidebarWidth) ? e : u.da6
+    return null != (e = y.callChatSidebarWidth) ? e : u.da6
   }
   get homeSidebarWidth() {
     var e;
-    return null != (e = b.homeSidebarWidth) ? e : E()
+    return null != (e = y.homeSidebarWidth) ? e : E()
   }
   get callParticipantsSidebarWidth() {
     var e;
-    return null != (e = b.callParticipantsSidebarWidth) ? e : 360
+    return null != (e = y.callParticipantsSidebarWidth) ? e : 360
   }
   get callHeaderHeight() {
-    return b.callHeaderHeight
+    return y.callHeaderHeight
   }
   get useSystemTheme() {
     var e;
-    return null != (e = b.useSystemTheme) ? e : c.Q_.UNSET
+    return null != (e = y.useSystemTheme) ? e : c.Q_.UNSET
   }
   get activityPanelHeight() {
-    return b.activityPanelHeight
+    return y.activityPanelHeight
   }
   get disableVoiceChannelChangeAlert() {
     var e;
-    return null != (e = b.disableVoiceChannelChangeAlert) && e
+    return null != (e = y.disableVoiceChannelChangeAlert) && e
   }
   get disableEmbeddedActivityPopOutAlert() {
     var e;
-    return null != (e = b.disableEmbeddedActivityPopOutAlert) && e
+    return null != (e = y.disableEmbeddedActivityPopOutAlert) && e
   }
   get disableActivityHardwareAccelerationPrompt() {
     var e;
-    return null != (e = b.disableActivityHardwareAccelerationPrompt) && e
+    return null != (e = y.disableActivityHardwareAccelerationPrompt) && e
   }
   get disableInviteWithTextChannelActivityLaunch() {
     var e;
-    return null != (e = b.disableInviteWithTextChannelActivityLaunch) && e
+    return null != (e = y.disableInviteWithTextChannelActivityLaunch) && e
   }
   get disableHideSelfStreamAndVideoConfirmationAlert() {
     var e;
-    return null != (e = b.disableHideSelfStreamAndVideoConfirmationAlert) && e
+    return null != (e = y.disableHideSelfStreamAndVideoConfirmationAlert) && e
   }
   get pushUpsellUserSettingsDismissed() {
     var e;
-    return null != (e = b.pushUpsellDismissed) && e
+    return null != (e = y.pushUpsellDismissed) && e
   }
   get disableActivityHostLeftNitroUpsell() {
     var e;
-    return null != (e = b.disableActivityHostLeftNitroUpsell) && e
+    return null != (e = y.disableActivityHostLeftNitroUpsell) && e
   }
   get disableCallUserConfirmationPrompt() {
     var e;
-    return null != (e = b.disableCallUserConfirmationPrompt) && e
+    return null != (e = y.disableCallUserConfirmationPrompt) && e
   }
   get disableApplicationSubscriptionCancellationSurvey() {
     var e;
-    return null != (e = b.disableApplicationSubscriptionCancellationSurvey) && e
+    return null != (e = y.disableApplicationSubscriptionCancellationSurvey) && e
   }
   get darkSidebar() {
     var e;
-    return null != (e = b.darkSidebar) && e
+    return null != (e = y.darkSidebar) && e
   }
   get saveCameraUploadsToDevice() {
     var e;
-    return null == (e = b.saveCameraUploadsToDevice) || e
+    return null == (e = y.saveCameraUploadsToDevice) || e
   }
   isVisualRefreshDisabled(e) {
     var t;
-    return null != (t = b.disableVisualRefresh) ? t : e
+    return null != (t = y.disableVisualRefresh) ? t : e
   }
   get listDensity() {
     var e;
-    return null != (e = b.listDensity) ? e : f.YP.COZY
+    return null != (e = y.listDensity) ? e : f.YP.COZY
   }
   get hdrDynamicRange() {
     var e;
-    return null != (e = b.hdrDynamicRange) ? e : "no-limit"
+    return null != (e = y.hdrDynamicRange) ? e : "no-limit"
   }
 }
 p(T, "displayName", "UnsyncedUserSettingsStore"), p(T, "persistKey", "UnsyncedUserSettingsStore"), p(T, "migrations", [() => {
@@ -197,9 +197,9 @@ p(T, "displayName", "UnsyncedUserSettingsStore"), p(T, "persistKey", "UnsyncedUs
   delete e.disableVisualRefresh
 }]);
 let C = new T(Chunk73153.h, {
-  UNSYNCED_USER_SETTINGS_UPDATE: y,
+  UNSYNCED_USER_SETTINGS_UPDATE: b,
   LOGOUT: O,
-  LOGIN_SUCCESS: A,
-  REGISTER_SUCCESS: v,
-  ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: S
+  LOGIN_SUCCESS: v,
+  REGISTER_SUCCESS: A,
+  ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: I
 })

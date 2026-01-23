@@ -1,7 +1,7 @@
 /** Chunk was on 15682 **/
 /** chunk id: 32246, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => x
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -19,55 +19,55 @@ var Chunk503698 = require("./503698.js"),
   Chunk880203 = require("./880203.js"),
   Chunk248997 = require("./248997.js");
 
-function g(e) {
+function x(e) {
   let {
     selectedFontId: t,
     setSelectedFontId: l,
-    displayName: a,
-    className: g
-  } = e, j = t !== r.x.DEFAULT, h = (0, d.Xr)(a);
+    displayName: r,
+    className: x
+  } = e, b = t !== a.x.DEFAULT, h = (0, d.Xr)(r);
   return (0, n.jsxs)("div", {
-    className: g,
-    children: [(0, n.jsxs)(i.DZT, {
+    className: x,
+    children: [(0, n.jsxs)(o.DZT, {
       variant: "heading-md/semibold",
-      className: p.s,
-      children: [b.intl.string(m.default.nP0ngb), (0, n.jsx)(c.tvc, {
+      className: g.s,
+      children: [f.intl.string(p.default.nP0ngb), (0, n.jsx)(c.tvc, {
         size: "xs",
         color: c.LU0.colors.TEXT_DEFAULT
       })]
-    }), (0, n.jsx)(i.BJc, {
+    }), (0, n.jsx)(o.BJc, {
       direction: "horizontal",
       align: "center",
       wrap: true,
-      children: f.rA.map(e => {
-        let a = (0, u.p)(e),
-          r = e === t;
-        return (0, n.jsx)(o.m, {
-          text: b.intl.string(a.name),
+      children: m.rA.map(e => {
+        let r = (0, u.p)(e),
+          a = e === t;
+        return (0, n.jsx)(i.m, {
+          text: f.intl.string(r.name),
           asContainer: true,
           children: (0, n.jsx)(c.DUT, {
-            className: s()(x.SO, {
-              [x.wH]: r
+            className: s()(_.SO, {
+              [_.wH]: a
             }),
             onClick: () => l(e),
-            "aria-label": b.intl.string(a.name),
-            children: (0, n.jsx)(i.EYj, {
+            "aria-label": f.intl.string(r.name),
+            children: (0, n.jsx)(o.EYj, {
               variant: "text-lg/semibold",
-              color: r ? "text-strong" : "text-default",
-              className: s()(x.FH, a.className),
+              color: a ? "text-strong" : "text-default",
+              className: s()(_.FH, r.className),
               children: "Gg"
             })
           })
         }, e)
       })
-    }), j && h && (0, n.jsxs)("div", {
-      className: x.Lb,
-      children: [(0, n.jsx)(i.mir, {
+    }), b && h && (0, n.jsxs)("div", {
+      className: _.Lb,
+      children: [(0, n.jsx)(o.mir, {
         size: "lg"
-      }), (0, n.jsx)(i.EYj, {
+      }), (0, n.jsx)(o.EYj, {
         variant: "text-sm/normal",
         color: "text-subtle",
-        children: b.intl.string(m.default["+O1xL2"])
+        children: f.intl.string(p.default["+O1xL2"])
       })]
     })]
   })

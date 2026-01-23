@@ -2,7 +2,7 @@
 /** chunk id: 586621, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,34 +15,34 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk796416 = require("./796416.js");
 
-function f(e) {
+function g(e) {
   let {
     children: t,
     revenue: n,
-    revenueTrend: f,
-    summaryMetricLabel: g,
-    summaryMetricValue: b,
-    summaryMetricTrend: m,
-    summaryMetricTrendIsPercent: p
+    revenueTrend: g,
+    summaryMetricLabel: m,
+    summaryMetricValue: p,
+    summaryMetricTrend: f,
+    summaryMetricTrendIsPercent: b
   } = e;
   return (0, r.jsx)(i.nVY, {
     label: d.intl.string(d.t.ofmOzb),
     children: (0, r.jsxs)("div", {
       className: u.E7,
-      children: [(0, r.jsxs)(c.t, {
+      children: [(0, r.jsxs)(o.t, {
         children: [(0, r.jsx)(a.A, {
           label: d.intl.string(d.t.iY1jW3),
-          value: (0, s.$g)(null != n ? n : 0, o.Yri.USD),
+          value: (0, s.$g)(null != n ? n : 0, c.Yri.USD),
           additionalContent: (0, r.jsx)(l.u, {
-            value: f,
+            value: g,
             isPercent: true
           })
         }), (0, r.jsx)(a.A, {
-          label: g,
-          value: b,
+          label: m,
+          value: p,
           additionalContent: (0, r.jsx)(l.u, {
-            value: m,
-            isPercent: p
+            value: f,
+            isPercent: b
           })
         })]
       }), t]

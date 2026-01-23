@@ -1,12 +1,12 @@
 /** Chunk was on 97492 **/
 /** chunk id: 964918, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => v
 }), require("./896048.js"), require("./638769.js"), require("./264879.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
-  a = require.n(Chunk735438),
+  s = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk730134 = require("./730134.jsx"),
@@ -24,30 +24,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk533848 = require("./533848.js");
 
-function x(e) {
+function v(e) {
   let {
     channel: t
-  } = e, i = (0, s.yK)([d.A, b.Ay, h.A], () => {
+  } = e, i = (0, a.yK)([d.A, g.Ay, f.A], () => {
     let e = d.A.getActiveJoinedRelevantThreadsForParent(t.guild_id, t.id);
-    return a()(d.A.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(a().values(d.A.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && h.A.can(y.xBc.VIEW_CHANNEL, t)).sort((e, t) => {
-      let n = b.Ay.lastMessageId(e.id),
-        r = b.Ay.lastMessageId(t.id);
+    return s()(d.A.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(s().values(d.A.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && f.A.can(y.xBc.VIEW_CHANNEL, t)).sort((e, t) => {
+      let n = g.Ay.lastMessageId(e.id),
+        r = g.Ay.lastMessageId(t.id);
       return A.default.compare(n, r)
     }).reverse().value()
   }), c = t.isForumLikeChannel() ? 5 : 3;
   return l.useEffect(() => {
-    (0, f.TE)()
+    (0, p.TE)()
   }, []), (0, r.jsxs)("div", {
-    className: v.SW,
+    className: j.SW,
     children: [(0, r.jsx)(o.Text, {
-      className: v.DD,
+      className: j.DD,
       variant: "text-xs/bold",
       color: "text-default",
-      children: t.isForumLikeChannel() ? j.intl.string(j.t.ioVdO2) : j.intl.string(j.t.VNYs2v)
-    }), i.slice(0, t.isForumLikeChannel() ? i.length : c).map(e => (0, r.jsx)(E, {
+      children: t.isForumLikeChannel() ? O.intl.string(O.t.ioVdO2) : O.intl.string(O.t.VNYs2v)
+    }), i.slice(0, t.isForumLikeChannel() ? i.length : c).map(e => (0, r.jsx)(x, {
       thread: e
     }, e.id)).filter(e => l.isValidElement(e)).slice(0, c), (0, r.jsx)(o.DUT, {
-      className: v.OS,
+      className: j.OS,
       onClick: () => {
         t.isForumLikeChannel() ? (0, u.iN)(t.id) : (0, o.mMO)(async () => {
           let {
@@ -78,42 +78,42 @@ function x(e) {
       children: (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "none",
-        children: j.intl.string(j.t["4qdZ93"])
+        children: O.intl.string(O.t["4qdZ93"])
       })
     })]
   })
 }
 
-function E(e) {
+function x(e) {
   let {
     thread: t
-  } = e, n = (0, s.bG)([g.default], () => g.default.getUser(t.ownerId)), l = (0, f.JO)(t);
+  } = e, n = (0, a.bG)([m.default], () => m.default.getUser(t.ownerId)), l = (0, p.JO)(t);
   return (0, r.jsxs)(o.DUT, {
-    className: v.nM,
+    className: j.nM,
     onClick: e => {
-      (0, p.JA)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, O.H9.POPOUT)
+      (0, h.JA)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, _.H9.POPOUT)
     },
     children: [null == n ? (0, r.jsx)("img", {
-      className: v.my,
-      src: m.Ay.getDefaultAvatarURL(true, true),
+      className: j.my,
+      src: b.Ay.getDefaultAvatarURL(true, true),
       alt: ""
     }) : (0, r.jsx)(c.A, {
-      className: v.my,
+      className: j.my,
       user: n,
       size: o._3J.SIZE_16
     }), (0, r.jsx)(o.Text, {
-      className: v.UU,
+      className: j.UU,
       variant: "text-sm/normal",
       color: "none",
       children: t.name
     }), (0, r.jsxs)(o.Text, {
-      className: v.vE,
+      className: j.vE,
       variant: "text-sm/normal",
       color: "none",
       children: [(0, r.jsx)("span", {
-        className: v.xE,
+        className: j.xE,
         children: "•"
-      }), (0, f.aK)(l)]
+      }), (0, p.aK)(l)]
     })]
   })
 }

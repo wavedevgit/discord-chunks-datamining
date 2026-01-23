@@ -2,9 +2,9 @@
 /** chunk id: 246282, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Et: () => c,
+  Et: () => o,
   QS: () => u,
-  hz: () => o,
+  hz: () => c,
   yP: () => d
 });
 var Chunk627968 = require("./627968.js");
@@ -14,7 +14,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk837649 = require("./837649.js");
 
-function c() {
+function o() {
   return (0, r.jsxs)("div", {
     className: a.kL,
     children: [(0, r.jsx)(i.Text, {
@@ -45,7 +45,7 @@ function c() {
   })
 }
 
-function o() {
+function c() {
   return (0, r.jsxs)("div", {
     className: a.kL,
     children: [(0, r.jsx)(i.Text, {

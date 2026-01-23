@@ -28,51 +28,51 @@ let h = 750,
   m = 15,
   g = 500,
   E = 25,
-  b = 25,
-  y = 1,
+  y = 25,
+  b = 1,
   O = null,
-  A = new Chunk447508.o(h, g),
-  v = new Chunk383682.K(m),
-  S = false;
-class I extends Chunk536802.A {
+  v = new Chunk447508.o(h, g),
+  A = new Chunk383682.K(m),
+  I = false;
+class S extends Chunk536802.A {
   initialize() {
     this.waitFor(r.A), this.waitFor(s.A), this.waitFor(i.A), this.syncWith([o.A], () => true), this.syncWith([s.A], T)
   }
   loadCache() {
-    let e = this.readSnapshot(I.LATEST_SNAPSHOT_VERSION);
-    null != e && (S = true, I.mergeSnapshot(e))
+    let e = this.readSnapshot(S.LATEST_SNAPSHOT_VERSION);
+    null != e && (I = true, S.mergeSnapshot(e))
   }
   canEvictOrphans() {
-    return S
+    return I
   }
   saveLimit(e) {
     let t = r.A.getBasicChannel(e);
-    return null != t && (0, d.Z)(t) ? E : null != t && (s.A.getChannelId() === e || A.has(e)) ? b : y
+    return null != t && (0, d.Z)(t) ? E : null != t && (s.A.getChannelId() === e || v.has(e)) ? y : b
   }
   getSaveableChannels() {
     let e = r.A.getChannelIds(null).map(e => ({
       guildId: null,
       channelId: e
     }));
-    return o.A.isLowDisk ? null != O ? [...e, O] : e : [...e, ...A.values()]
+    return o.A.isLowDisk ? null != O ? [...e, O] : e : [...e, ...v.values()]
   }
   takeSnapshot() {
     return {
-      version: I.LATEST_SNAPSHOT_VERSION,
+      version: S.LATEST_SNAPSHOT_VERSION,
       data: {
-        channels: [...A.allValues()].filter(e => !e.fallback),
-        penalized: [...v.keys()],
+        channels: [...v.allValues()].filter(e => !e.fallback),
+        penalized: [...A.keys()],
         lastChannel: O
       }
     }
   }
   static mergeSnapshot(e) {
-    let t = A,
-      n = v;
-    for (let n of (A = new l.o(A.primaryCapacity, A.extendedCapacity), v = new c.K(v.capacity), O = null != O ? O : e.lastChannel, [e.channels, t.values()]))
-      for (let e of n) e.fallback || A.put(e.channelId, e);
+    let t = v,
+      n = A;
+    for (let n of (v = new l.o(v.primaryCapacity, v.extendedCapacity), A = new c.K(A.capacity), O = null != O ? O : e.lastChannel, [e.channels, t.values()]))
+      for (let e of n) e.fallback || v.put(e.channelId, e);
     for (let t of [e.penalized, n.keys()])
-      for (let e of t) v.put(e, null)
+      for (let e of t) A.put(e, null)
   }
   static recordChannel(e) {
     let t = r.A.getBasicChannel(e);
@@ -83,26 +83,26 @@ class I extends Chunk536802.A {
         channelId: e,
         channelType: t.type
       };
-      O = r, A.put(e, r), (0, u.qA)(t) && null != v.put(e, null) && A.delete(e)
+      O = r, v.put(e, r), (0, u.qA)(t) && null != A.put(e, null) && v.delete(e)
     }
   }
   static deleteChannel(e) {
-    A.delete(e)
+    v.delete(e)
   }
   static deleteGuild(e) {
-    for (let t of A.allValues()) t.guildId === e && A.delete(t.channelId)
+    for (let t of v.allValues()) t.guildId === e && v.delete(t.channelId)
   }
   static dropUnreachableChannels() {
-    for (let e of A.keys()) {
+    for (let e of v.keys()) {
       let t = r.A.getBasicChannel(e);
-      (0, f.c)(t) || I.deleteChannel(e)
+      (0, f.c)(t) || S.deleteChannel(e)
     }
   }
   static deleteUnreadableGuildChannels(e) {
-    for (let t of A.values()) e !== t.guildId || (0, f.J)(t.channelId) || I.deleteChannel(t.channelId)
+    for (let t of v.values()) e !== t.guildId || (0, f.J)(t.channelId) || S.deleteChannel(t.channelId)
   }
   static replaceLru(e) {
-    A = e
+    v = e
   }
   constructor() {
     super({
@@ -121,18 +121,18 @@ class I extends Chunk536802.A {
 
 function T() {
   let e = s.A.getChannelId();
-  null != e && I.recordChannel(e)
+  null != e && S.recordChannel(e)
 }
 
 function C() {
-  I.dropUnreachableChannels(), I.replaceLru((0, p.I)(A, h + g))
+  S.dropUnreachableChannels(), S.replaceLru((0, p.I)(v, h + g))
 }
 
 function N(e) {
   let t = e.id,
     n = (0, f.c)(e),
     r = s.A.getChannelId();
-  n && t === r && I.recordChannel(t), n || I.deleteChannel(t)
+  n && t === r && S.recordChannel(t), n || S.deleteChannel(t)
 }
 
 function R(e) {
@@ -140,7 +140,7 @@ function R(e) {
 }
 
 function w(e) {
-  I.deleteChannel(e.channel.id)
+  S.deleteChannel(e.channel.id)
 }
 
 function P(e) {
@@ -148,19 +148,19 @@ function P(e) {
 }
 
 function D(e) {
-  I.deleteChannel(e.channel.id)
+  S.deleteChannel(e.channel.id)
 }
 
 function x(e) {
-  return !e.guild.unavailable && (I.deleteGuild(e.guild.id), true)
+  return !e.guild.unavailable && (S.deleteGuild(e.guild.id), true)
 }
 
 function L(e) {
-  A.clear(), v.clear(), S = false
+  v.clear(), A.clear(), I = false
 }
 
 function j(e) {
-  S = true
+  I = true
 }
-_(I, "displayName", "SaveableChannelsStore"), _(I, "LATEST_SNAPSHOT_VERSION", 1);
-let M = new I
+_(S, "displayName", "SaveableChannelsStore"), _(S, "LATEST_SNAPSHOT_VERSION", 1);
+let M = new S

@@ -47,12 +47,12 @@ var t = t || function(e) {
       m = function(t, c, f) {
         f || (t = h(t));
         var m, g, E = this,
-          b = t.type,
-          y = false,
+          y = t.type,
+          b = false,
           O = function() {
             _(E, "writestart progress write writeend".split(" "))
           },
-          A = function() {
+          v = function() {
             if (g && s && "u" > typeof FileReader) {
               var r = new FileReader;
               r.onloadend = function() {
@@ -60,14 +60,14 @@ var t = t || function(e) {
                 g.location.href = "data:attachment/file" + e.slice(e.search(/[,;]/)), E.readyState = E.DONE, O()
               }, r.readAsDataURL(t), E.readyState = E.INIT;
               return
-            }(y || !m) && (m = n().createObjectURL(t)), g ? g.location.href = m : true === e.open(m, "_blank") && s && (e.location.href = m), E.readyState = E.DONE, O(), p(m)
+            }(b || !m) && (m = n().createObjectURL(t)), g ? g.location.href = m : true === e.open(m, "_blank") && s && (e.location.href = m), E.readyState = E.DONE, O(), p(m)
           },
-          v = function(e) {
+          A = function(e) {
             return function() {
               if (E.readyState !== E.DONE) return e.apply(this, arguments)
             }
           },
-          S = {
+          I = {
             create: true,
             exclusive: false
           };
@@ -76,33 +76,33 @@ var t = t || function(e) {
             r.href = m, r.download = c, a(r), O(), p(m), E.readyState = E.DONE
           });
           return
-        }(e.chrome && b && b !== u && (t = (t.slice || t.webkitSlice).call(t, 0, t.size, u), y = true), o && "download" !== c && (c += ".download"), (b === u || o) && (g = e), l) ? (d += t.size, l(e.TEMPORARY, d, v(function(e) {
-          e.root.getDirectory("saved", S, v(function(e) {
+        }(e.chrome && y && y !== u && (t = (t.slice || t.webkitSlice).call(t, 0, t.size, u), b = true), o && "download" !== c && (c += ".download"), (y === u || o) && (g = e), l) ? (d += t.size, l(e.TEMPORARY, d, A(function(e) {
+          e.root.getDirectory("saved", I, A(function(e) {
             var n = function() {
-              e.getFile(c, S, v(function(e) {
-                e.createWriter(v(function(n) {
+              e.getFile(c, I, A(function(e) {
+                e.createWriter(A(function(n) {
                   n.onwriteend = function(t) {
                     g.location.href = e.toURL(), E.readyState = E.DONE, _(E, "writeend", t), p(e)
                   }, n.onerror = function() {
                     var e = n.error;
-                    e.code !== e.ABORT_ERR && A()
+                    e.code !== e.ABORT_ERR && v()
                   }, "writestart progress write abort".split(" ").forEach(function(e) {
                     n["on" + e] = E["on" + e]
                   }), n.write(t), E.abort = function() {
                     n.abort(), E.readyState = E.DONE
                   }, E.readyState = E.WRITING
-                }), A)
-              }), A)
+                }), v)
+              }), v)
             };
             e.getFile(c, {
               create: false
-            }, v(function(e) {
+            }, A(function(e) {
               e.remove(), n()
-            }), v(function(e) {
-              e.code === e.NOT_FOUND_ERR ? n() : A()
+            }), A(function(e) {
+              e.code === e.NOT_FOUND_ERR ? n() : v()
             }))
-          }), A)
-        }), A)) : A()
+          }), v)
+        }), v)) : v()
       },
       g = m.prototype,
       E = function(e, t, n) {

@@ -29,7 +29,7 @@ function S(t) {
     m = k ? d.ko.CONFIRM_START : d.ko.EMAIL_AND_PASSWORD,
     [h, x] = r.useState(m),
     [p, v] = r.useState(null),
-    [T, f] = r.useState(null),
+    [f, T] = r.useState(null),
     [y, R] = r.useState(""),
     [M, O] = r.useState();
   switch (h) {
@@ -41,8 +41,8 @@ function S(t) {
       });
     case d.ko.CONFIRM_CODE:
       return (0, a.jsx)(E.A, {
-        error: T,
-        setError: f,
+        error: f,
+        setError: T,
         setEmailToken: v,
         onNext: () => x(d.ko.CHANGE_EMAIL_REASONS),
         transitionState: e,

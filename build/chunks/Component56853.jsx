@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk417597 = require("./417597.js"),
   Chunk990078 = require("./990078.jsx"),
@@ -40,14 +40,14 @@ function P(e) {
     variant: n = "default"
   } = e;
   return (0, a.jsx)("div", {
-    className: r()(w.Io, {
-      [w.tV]: "brand" === n,
+    className: i()(k.Io, {
+      [k.tV]: "brand" === n,
       "theme-light": "default" === n
     }),
     children: (0, a.jsx)(u.Text, {
       variant: "eyebrow",
       color: "brand" === n ? "always-white" : "text-default",
-      className: w.Xi,
+      className: k.Xi,
       children: t
     })
   })
@@ -57,53 +57,53 @@ function R(e) {
   var t;
   let {
     quest: n,
-    errorHints: i,
-    warningHints: r,
+    errorHints: r,
+    warningHints: i,
     isDarkTheme: o,
     sourceQuestContent: c
   } = e, {
     ref: d,
     height: p = 0
-  } = (0, m.Ay)([i]), h = (null == (t = n.userStatus) ? true : t.completedAt) != null, f = (0, g.Vn)(n), {
-    type: x,
-    hints: b
-  } = l.useMemo(() => h || f ? {
+  } = (0, m.Ay)([r]), h = (null == (t = n.userStatus) ? true : t.completedAt) != null, x = (0, b.Vn)(n), {
+    type: g,
+    hints: f
+  } = l.useMemo(() => h || x ? {
     type: 2,
     hints: []
-  } : i.length > 0 ? {
-    type: 0,
-    hints: i.map(e => e.message)
   } : r.length > 0 ? {
+    type: 0,
+    hints: r.map(e => e.message)
+  } : i.length > 0 ? {
     type: 1,
-    hints: r
+    hints: i
   } : {
     type: 2,
     hints: []
-  }, [i, h, f, r]), v = 2 !== x, j = (0, u.zhh)({
+  }, [r, h, x, i]), v = 2 !== g, j = (0, u.zhh)({
     opacity: +!!v,
     height: v ? p : 0,
-    config: T.N
-  }), y = 0 === x ? u.EpV : u.mir, A = u.LU0.unsafe_rawColors.RED_345.css, C = 0 === x ? A : o ? u.LU0.colors.TEXT_DEFAULT : u.LU0.colors.WHITE;
+    config: N.N
+  }), _ = 0 === g ? u.EpV : u.mir, A = u.LU0.unsafe_rawColors.RED_345.css, C = 0 === g ? A : o ? u.LU0.colors.TEXT_DEFAULT : u.LU0.colors.WHITE;
   return (0, a.jsx)(s.animated.div, {
     style: j,
     children: (0, a.jsxs)("div", {
       ref: d,
-      className: w.XZ,
+      className: k.XZ,
       children: [(0, a.jsxs)("div", {
-        className: w.M5,
-        children: [(0, a.jsx)(y, {
+        className: k.M5,
+        children: [(0, a.jsx)(_, {
           size: "xs",
           color: C
         }), (0, a.jsx)(u.Text, {
           variant: "text-xs/medium",
           color: o ? "text-muted" : "always-white",
-          children: b.at(0)
+          children: f.at(0)
         })]
-      }), 0 === x && (0, a.jsx)(u.QWc, {
-        text: k.intl.string(k.t["yKJi+/"]),
-        onClick: () => (0, _.i)({
+      }), 0 === g && (0, a.jsx)(u.QWc, {
+        text: I.intl.string(I.t["yKJi+/"]),
+        onClick: () => (0, y.i)({
           quest: n,
-          errorHints: i,
+          errorHints: r,
           sourceQuestContent: c
         }),
         variant: "always-white",
@@ -114,10 +114,10 @@ function R(e) {
 }
 
 function D(e) {
-  var t, n, i, s, m;
+  var t, n, r, s, m;
   let {
-    quest: _,
-    isHovering: T,
+    quest: y,
+    isHovering: N,
     errorHints: D,
     warningHints: M,
     isVisibleInViewport: L,
@@ -125,76 +125,76 @@ function D(e) {
     onCtxMenuOpen: B,
     onCtxMenuSelect: G,
     sourceQuestContent: F
-  } = e, V = (0, j.IO)(_), W = (0, p.Ay)(), H = ((0, d.Mw)(W) ? I.NJ8.DARK : I.NJ8.LIGHT) === I.NJ8.DARK, K = (0, g.LS)(_), z = (null == (n = _.userStatus) ? true : n.claimedAt) != null, q = (0, g.S5)(_.config.expiresAt, {
+  } = e, V = (0, j.IO)(y), W = (0, p.Ay)(), H = ((0, d.Mw)(W) ? w.NJ8.DARK : w.NJ8.LIGHT) === w.NJ8.DARK, K = (0, b.LS)(y), z = (null == (n = y.userStatus) ? true : n.claimedAt) != null, q = (0, b.S5)(y.config.expiresAt, {
     month: "numeric",
     day: "numeric"
-  }), Q = (null == (i = _.userStatus) ? true : i.enrolledAt) != null, Y = (null == (s = _.userStatus) ? true : s.completedAt) != null, {
+  }), Q = (null == (r = y.userStatus) ? true : r.enrolledAt) != null, Y = (null == (s = y.userStatus) ? true : s.completedAt) != null, {
     onAssetLoadComplete: J
   } = l.useContext(E.M), X = H ? "text-muted" : "always-white", Z = l.useCallback(() => {
     V && (0, O.d5)({
-      quest: _,
-      questContent: b.uF.QUEST_HOME_DESKTOP,
+      quest: y,
+      questContent: f.uF.QUEST_HOME_DESKTOP,
       sourceQuestContent: F,
-      sourceQuestContentCTA: f.Cy.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
+      sourceQuestContentCTA: x.Cy.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
     })
-  }, [V, _, F]), $ = (0, o.bG)([x.A], () => x.A.getQuestHomeTakeoverConfig()), ee = l.useMemo(() => null != $ && (0, y.f0)($, _.id), [$, _.id]);
+  }, [V, y, F]), $ = (0, o.bG)([g.A], () => g.A.getQuestHomeTakeoverConfig()), ee = l.useMemo(() => null != $ && (0, _.f0)($, y.id), [$, y.id]);
   return (0, a.jsxs)("div", {
-    className: w.kL,
+    className: k.kL,
     children: [(0, a.jsx)("div", {
-      className: w.IC,
+      className: k.IC,
       children: (0, a.jsx)(A.A, {
-        quest: _,
-        isInteracting: T,
+        quest: y,
+        isInteracting: N,
         hideAssets: !L,
         imageSize: {
           width: 1320,
           height: 370
         },
-        containerClassName: w.l1
+        containerClassName: k.l1
       })
     }), (0, a.jsx)("div", {
-      className: r()(w.Lw, {
-        [w.So]: W === I.NJ8.LIGHT,
-        [w.en]: W === I.NJ8.DARK,
-        [w.FN]: W === I.NJ8.DARKER,
-        [w.QQ]: W === I.NJ8.MIDNIGHT
+      className: i()(k.Lw, {
+        [k.So]: W === w.NJ8.LIGHT,
+        [k.en]: W === w.NJ8.DARK,
+        [k.FN]: W === w.NJ8.DARKER,
+        [k.QQ]: W === w.NJ8.MIDNIGHT
       })
     }), (0, a.jsxs)("div", {
-      className: w.nX,
+      className: k.nX,
       children: [(0, a.jsxs)("div", {
-        className: w.PG,
+        className: k.PG,
         children: [(0, a.jsxs)("div", {
-          className: w.mY,
-          children: [(ee || _.preview) && (0, a.jsxs)(u.BJc, {
-            className: w.Bv,
+          className: k.mY,
+          children: [(ee || y.preview) && (0, a.jsxs)(u.BJc, {
+            className: k.Bv,
             direction: "horizontal",
             fullWidth: false,
             gap: 8,
-            children: [ee && !(0, v.Ic)(_) && (0, a.jsx)(P, {
-              children: k.intl.string(k.t.Jt6u7B)
-            }), _.preview && (0, a.jsx)(P, {
+            children: [ee && !(0, v.Ic)(y) && (0, a.jsx)(P, {
+              children: I.intl.string(I.t.Jt6u7B)
+            }), y.preview && (0, a.jsx)(P, {
               variant: "brand",
-              children: k.intl.string(k.t.SKNnqq)
+              children: I.intl.string(I.t.SKNnqq)
             })]
           }), V && (0, a.jsx)(c.m, {
-            text: Y ? k.intl.string(k.t.YsCuyF) : Q ? k.intl.string(k.t["74KqrR"]) : (0, v.Ic)(_) ? k.intl.string(k.t.I6JG46) : k.intl.string(k.t.umdNin),
+            text: Y ? I.intl.string(I.t.YsCuyF) : Q ? I.intl.string(I.t["74KqrR"]) : (0, v.Ic)(y) ? I.intl.string(I.t.I6JG46) : I.intl.string(I.t.umdNin),
             asContainer: true,
             tag: "span",
             children: (0, a.jsx)(u.DUT, {
-              className: w.iI,
-              "aria-label": k.intl.string(k.t.RscU7I),
+              className: k.iI,
+              "aria-label": I.intl.string(I.t.RscU7I),
               onClick: Z,
               children: (0, a.jsx)(u.udU, {
                 color: "currentColor",
-                className: w.A9
+                className: k.A9
               })
             })
           }), (0, a.jsx)(C.C, {
             onOpen: B,
             onClose: U,
             onSelect: G,
-            questContent: b.uF.QUEST_HOME_DESKTOP,
-            quest: _,
+            questContent: f.uF.QUEST_HOME_DESKTOP,
+            quest: y,
             hideLearnMore: true,
             shouldShowDisclosure: true,
             showShareLink: true,
@@ -219,12 +219,12 @@ function D(e) {
                 }
                 return e
               }({}, e), n = n = {
-                className: w.iI,
-                "aria-label": k.intl.string(k.t.DEoVWZ),
+                className: k.iI,
+                "aria-label": I.intl.string(I.t.DEoVWZ),
                 children: (0, a.jsx)(u.jNK, {
                   size: "md",
                   color: "currentColor",
-                  className: w.A9
+                  className: k.A9
                 })
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                 var n = Object.keys(e);
@@ -238,29 +238,29 @@ function D(e) {
               }), t))
             }
           })]
-        }), (0, a.jsx)(N.A, {
+        }), (0, a.jsx)(T.A, {
           showPlaceholder: !L,
           width: 100,
           height: 30,
-          className: w.Iu,
+          className: k.Iu,
           children: (0, a.jsx)(S.Ay, {
-            className: w.Iu,
-            logotypeClassName: w.ND,
-            quest: _,
+            className: k.Iu,
+            logotypeClassName: k.ND,
+            quest: y,
             separatorSpacing: S.C8.MEDIUM,
             withGameTile: false,
             onLoadComplete: J
           })
         }), (0, a.jsxs)("div", {
-          className: w.E_,
+          className: k.E_,
           children: [(0, a.jsxs)("span", {
-            className: w.O,
+            className: k.O,
             children: [(0, a.jsx)(u.Text, {
               variant: "text-sm/medium",
               color: X,
-              children: k.intl.string(k.t.VAbKhK)
+              children: I.intl.string(I.t.VAbKhK)
             }), (0, a.jsx)(h.A, {
-              className: w.w$,
+              className: k.w$,
               size: 16,
               color: u.LU0.unsafe_rawColors.GREEN_360.css,
               allowFullSizedIcon: true,
@@ -273,18 +273,18 @@ function D(e) {
             }), (0, a.jsx)(u.Text, {
               variant: "text-sm/medium",
               color: "always-white",
-              children: null != (t = null == (m = _.config.cosponsorMetadata) ? true : m.name) ? t : _.config.messages.gamePublisher
+              children: null != (t = null == (m = y.config.cosponsorMetadata) ? true : m.name) ? t : y.config.messages.gamePublisher
             })]
           }), K || z ? null : (0, a.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: X,
-            children: k.intl.format(k.t["7D8r4F"], {
+            children: I.intl.format(I.t["7D8r4F"], {
               expiryDate: q
             })
           })]
         })]
       }), (0, a.jsx)(R, {
-        quest: _,
+        quest: y,
         errorHints: D,
         warningHints: M,
         isDarkTheme: H,

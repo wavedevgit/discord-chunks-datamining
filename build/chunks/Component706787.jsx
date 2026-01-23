@@ -14,9 +14,9 @@ var Chunk627968 = require("./627968.js"),
   Chunk614518 = require("./614518.js"),
   Chunk804771 = require("./804771.js");
 let p = 6 * Chunk927813.A.Millis.SECOND,
-  b = 2 * Chunk927813.A.Millis.SECOND,
   g = 2 * Chunk927813.A.Millis.SECOND,
-  m = e => "scale(".concat(1 - -(e / 120), ") rotate(").concat(e, "deg)");
+  m = 2 * Chunk927813.A.Millis.SECOND,
+  _ = e => "scale(".concat(1 - -(e / 120), ") rotate(").concat(e, "deg)");
 
 function h(e) {
   let {
@@ -25,8 +25,8 @@ function h(e) {
     onComplete: u
   } = e, {
     emoji: h,
-    sentAt: A
-  } = n, y = (0, a.bG)([c.A], () => c.A.useReducedMotion), [_, E] = r.useState(true), v = !y, O = (0, s.pnh)(_, {
+    sentAt: y
+  } = n, A = (0, a.bG)([c.A], () => c.A.useReducedMotion), [b, E] = l.useState(true), v = !A, O = (0, o.pnh)(b, {
     from: {
       rotate: false
     },
@@ -44,24 +44,24 @@ function h(e) {
       "leave" === n && u()
     }
   });
-  return (r.useEffect(() => {
+  return (l.useEffect(() => {
     let e;
-    return Date.now() - A >= g ? (0, d.a)(t) : e = setTimeout(() => {
+    return Date.now() - y >= m ? (0, d.a)(t) : e = setTimeout(() => {
       E(false), v && (0, d.a)(t)
-    }, v ? b : p), () => {
+    }, v ? g : p), () => {
       null != e && clearTimeout(e)
     }
-  }, [A, t, v]), v) ? null : O((e, t) => {
+  }, [y, t, v]), v) ? null : O((e, t) => {
     var n;
     let {
-      rotate: r
+      rotate: l
     } = e;
-    return t && (0, l.jsx)(i.animated.div, {
+    return t && (0, r.jsx)(i.animated.div, {
       className: f._,
       style: {
-        transform: r.to(m)
+        transform: l.to(_)
       },
-      children: (0, l.jsx)(o.A, {
+      children: (0, r.jsx)(s.A, {
         className: f.F,
         emojiId: h.id,
         emojiName: h.name,

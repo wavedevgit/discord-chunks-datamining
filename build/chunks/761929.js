@@ -28,7 +28,7 @@ let l = e => {
     orientation: p,
     usePointerEvents: _ = false,
     getClampedValue: h = i.clamp
-  } = e, [m, g] = r.useState(false), E = r.useRef(0), b = r.useRef(false), y = r.useRef(null == t ? 0 : t);
+  } = e, [m, g] = r.useState(false), E = r.useRef(0), y = r.useRef(false), b = r.useRef(null == t ? 0 : t);
   return r.useLayoutEffect(() => {
     if (!m || null == n.current) return;
 
@@ -36,7 +36,7 @@ let l = e => {
       let t = 1 === o(p) ? e.screenX : e.screenY,
         n = 0 === p || 2 === p,
         r = (t - E.current) * (n ? false : 1);
-      return y.current + r
+      return b.current + r
     }
 
     function t(e) {
@@ -48,22 +48,22 @@ let l = e => {
         let a = e(i),
           s = t(a),
           l = 1 === o(p) ? "width" : "height";
-        n.current.style[l] = "".concat(s, "px"), b.current || (b.current = true, null == u || u(s)), r(s, a)
+        n.current.style[l] = "".concat(s, "px"), y.current || (y.current = true, null == u || u(s)), r(s, a)
       },
       O = n => {
         g(false);
         let r = e(n),
           i = t(r);
-        c(i, r), null == d || d(i), b.current = false
+        c(i, r), null == d || d(i), y.current = false
       },
-      A = _ ? "pointerup" : "mouseup",
-      v = _ ? "pointermove" : "mousemove",
-      S = n.current.ownerDocument;
-    return S.addEventListener(A, O), S.addEventListener(v, a), () => {
-      S.removeEventListener(A, O), S.removeEventListener(v, a), r.cancel()
+      v = _ ? "pointerup" : "mouseup",
+      A = _ ? "pointermove" : "mousemove",
+      I = n.current.ownerDocument;
+    return I.addEventListener(v, O), I.addEventListener(A, a), () => {
+      I.removeEventListener(v, O), I.removeEventListener(A, a), r.cancel()
     }
   }, [m, c, l, s, p, n, f, d, _, h, u]), r.useCallback(e => {
     let t = 1 === o(p);
-    null != n.current && (y.current = t ? n.current.offsetWidth : n.current.offsetHeight), E.current = t ? e.screenX : e.screenY, g(true)
+    null != n.current && (b.current = t ? n.current.offsetWidth : n.current.offsetHeight), E.current = t ? e.screenX : e.screenY, g(true)
   }, [p, n])
 }

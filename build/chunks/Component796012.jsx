@@ -91,10 +91,10 @@ class E extends(r = Chunk64700.PureComponent) {
   }
 }
 h(E, "Scenes", m);
-var b = function(e) {
+var y = function(e) {
   return e.NORMAL = "normal", e.SPEED_START = "speed_start", e.SPEED_LOOP = "speed_loop", e.FINISH = "finish", e.IDLE = "idle", e
-}(b || {});
-let y = {
+}(y || {});
+let b = {
   normal: {
     BEG: 0,
     END: 600,
@@ -149,7 +149,7 @@ class O extends(i = Chunk64700.PureComponent) {
       className: u()(_.AI, e),
       importData: this.importDefault,
       nextScene: i ? "idle" : t,
-      sceneSegments: y,
+      sceneSegments: b,
       onScenePlay: n,
       onSceneComplete: r,
       pauseWhileUnfocused: a,
@@ -157,11 +157,11 @@ class O extends(i = Chunk64700.PureComponent) {
     })
   }
 }
-h(O, "Scenes", b);
-var A = function(e) {
+h(O, "Scenes", y);
+var v = function(e) {
   return e.IDLE_ENTRY = "idle_entry", e.IDLE_LOOP = "idle_loop", e.BOOST_START = "boost_start", e.BOOST_LOOP = "boost_loop", e.BOOST_END = "boost_end", e.VICTORY = "victory", e.ERROR = "error", e
-}(A || {});
-let v = {
+}(v || {});
+let A = {
   idle_entry: {
     BEG: 0,
     END: 50
@@ -192,7 +192,7 @@ let v = {
     END: 375
   }
 };
-class S extends Chunk64700.PureComponent {
+class I extends Chunk64700.PureComponent {
   getStyle(e) {
     let {
       animation: t
@@ -227,7 +227,7 @@ class S extends Chunk64700.PureComponent {
     })
   }
 }
-let I = Object.freeze({
+let S = Object.freeze({
     IDLE_ENTRY: {
       toValue: 1,
       duration: 1500
@@ -289,23 +289,23 @@ class C extends(a = Chunk64700.PureComponent) {
     })]).start()
   }
   animateIdleEntry() {
-    this.animateEntry(I.IDLE_ENTRY)
+    this.animateEntry(S.IDLE_ENTRY)
   }
   animateError() {
-    this.animateEntry(I.ERROR)
+    this.animateEntry(S.ERROR)
   }
   animateIdleLoop() {
     this.animateIdleLoopBackground(), this.animateIdleLoopForeground()
   }
   animateBoostStart() {
     f.A.parallel([f.A.timing(this.foregroundAnimation.y, {
-      toValue: I.BOOST_START.toValue,
-      duration: I.BOOST_START.duration,
-      delay: I.BOOST_START.delay
+      toValue: S.BOOST_START.toValue,
+      duration: S.BOOST_START.duration,
+      delay: S.BOOST_START.delay
     }), f.A.timing(this.backgroundAnimation.y, {
-      toValue: I.BOOST_START.toValue,
-      duration: I.BOOST_START.duration * T,
-      delay: I.BOOST_START.delay
+      toValue: S.BOOST_START.toValue,
+      duration: S.BOOST_START.duration * T,
+      delay: S.BOOST_START.delay
     })]).start()
   }
   render() {
@@ -325,10 +325,10 @@ class C extends(a = Chunk64700.PureComponent) {
           className: _.aM
         })]
       }) : (0, o.jsxs)(o.Fragment, {
-        children: [(0, o.jsx)(S, {
+        children: [(0, o.jsx)(I, {
           className: _.RK,
           animation: this.backgroundAnimation
-        }), (0, o.jsx)(S, {
+        }), (0, o.jsx)(I, {
           className: _.aM,
           animation: this.foregroundAnimation
         })]
@@ -336,7 +336,7 @@ class C extends(a = Chunk64700.PureComponent) {
         className: _.AI,
         importData: this.importData,
         nextScene: n ? "idle_loop" : t,
-        sceneSegments: v,
+        sceneSegments: A,
         onScenePlay: this.handleScenePlay,
         onSceneComplete: r,
         pauseWhileUnfocused: false,
@@ -353,15 +353,15 @@ class C extends(a = Chunk64700.PureComponent) {
       y: 0
     })), h(this, "didUnmount", false), h(this, "animateIdleLoopBackground", () => {
       this.didUnmount || (this.backgroundAnimation.x.setValue(0), f.A.timing(this.backgroundAnimation.x, {
-        toValue: I.IDLE_LOOP.toValue,
-        duration: I.IDLE_LOOP.duration * T,
+        toValue: S.IDLE_LOOP.toValue,
+        duration: S.IDLE_LOOP.duration * T,
         easing: f.A.Easing.linear
       }).start(this.animateIdleLoopBackground))
     }), h(this, "animateIdleLoopForeground", () => {
       this.didUnmount || (this.foregroundAnimation.x.setValue(0), f.A.timing(this.foregroundAnimation.x, {
-        toValue: I.IDLE_LOOP.toValue,
-        duration: I.IDLE_LOOP.duration,
-        easing: I.IDLE_LOOP.easing
+        toValue: S.IDLE_LOOP.toValue,
+        duration: S.IDLE_LOOP.duration,
+        easing: S.IDLE_LOOP.easing
       }).start(this.animateIdleLoopForeground))
     }), h(this, "handleScenePlay", e => {
       switch (e) {
@@ -381,7 +381,7 @@ class C extends(a = Chunk64700.PureComponent) {
     })
   }
 }
-h(C, "Scenes", A);
+h(C, "Scenes", v);
 var N = function(e) {
   return e.ENTRY = "entry", e.IDLE = "idle", e.STARS = "stars", e.ERROR = "error", e.SUCCESS = "success", e
 }(N || {});

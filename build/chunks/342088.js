@@ -2,6 +2,6 @@
 /** chunk id: 342088, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  i: "_8d0a4c62f8d62cef",
-  x: "be0ded6ba7190897"
+  i: "descriptionText__535f5",
+  x: "truncate__535f5"
 }

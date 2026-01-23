@@ -29,7 +29,7 @@ let l = {
         showDisabledItems: m,
         showColoredItems: g,
         dangerItemColor: E
-      } = e, [b, y] = i.useState(true), [O, A] = i.useState(false), [v, S] = i.useState("text"), [I, T] = i.useState("cozy"), [C, N] = i.useState(true), R = e => (0, r.jsxs)(s.W1t, {
+      } = e, [y, b] = i.useState(true), [O, v] = i.useState(false), [A, I] = i.useState("text"), [S, T] = i.useState("cozy"), [C, N] = i.useState(true), R = e => (0, r.jsxs)(s.W1t, {
         navId: "menu-story",
         "aria-label": "Story Menu",
         variant: t,
@@ -105,20 +105,20 @@ let l = {
           children: [(0, r.jsx)(s.bXX, {}), (0, r.jsx)(s.sLh, {
             id: "notifications",
             label: "Enable Notifications Enable Notifications Enable Notifications",
-            checked: b,
-            action: () => y(!b)
+            checked: y,
+            action: () => b(!y)
           }), (0, r.jsx)(s.sLh, {
             id: "mute",
             label: "Mute Channel",
             checked: O,
-            action: () => A(!O)
+            action: () => v(!O)
           })]
         }), d && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.bXX, {}), (0, r.jsx)(s.fPC, {
             id: "switch-notifications",
             label: "Push Notifications",
-            checked: b,
-            action: () => y(!b)
+            checked: y,
+            action: () => b(!y)
           })]
         }), u && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.bXX, {}), (0, r.jsxs)(s.rXV, {
@@ -127,14 +127,14 @@ let l = {
               id: "radio-text",
               group: "channel-type",
               label: "Text Channel Text Channel Text Channel Text Channel Text Channel Text Channel ",
-              checked: "text" === v,
-              action: () => S("text")
+              checked: "text" === A,
+              action: () => I("text")
             }), (0, r.jsx)(s.iDA, {
               id: "radio-voice",
               group: "channel-type",
               label: "Voice Channel",
-              checked: "voice" === v,
-              action: () => S("voice")
+              checked: "voice" === A,
+              action: () => I("voice")
             })]
           }), (0, r.jsx)(s.bXX, {}), (0, r.jsxs)(s.rXV, {
             label: "View Mode",
@@ -142,13 +142,13 @@ let l = {
               id: "radio-cozy",
               group: "view-mode",
               label: "Cozy",
-              checked: "cozy" === I,
+              checked: "cozy" === S,
               action: () => T("cozy")
             }), (0, r.jsx)(s.iDA, {
               id: "radio-compact",
               group: "view-mode",
               label: "Compact",
-              checked: "compact" === I,
+              checked: "compact" === S,
               action: () => T("compact")
             })]
           })]

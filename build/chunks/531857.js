@@ -32,7 +32,7 @@ function o(e, t) {
     if (g < 0 && (g += h + 1), g > 0 && g <= h) {
       var E = true;
       g > 1 ? (E = _ + (g - 1) * 7, _ !== n && (E -= 7 - n)) : E = _;
-      for (var b = 0; b < 7 && (p.wnomask[E] = 1, E++, p.wdaymask[E] !== t.wkst); b++);
+      for (var y = 0; y < 7 && (p.wnomask[E] = 1, E++, p.wdaymask[E] !== t.wkst); y++);
     }
   }
   if ((0, a.mK)(t.byweekno, 1)) {
@@ -41,16 +41,16 @@ function o(e, t) {
       for (var m = 0; m < 7 && (p.wnomask[E] = 1, E += 1, p.wdaymask[E] !== t.wkst); m++);
   }
   if (_) {
-    var y = true;
-    if ((0, a.mK)(t.byweekno, false)) y = false;
+    var b = true;
+    if ((0, a.mK)(t.byweekno, false)) b = false;
     else {
       var O = (0, i.VJ)((0, i.w$)(e - 1, 1, 1)),
-        A = (0, a._D)(7 - O.valueOf() + t.wkst, 7),
-        v = (0, i.U_)(e - 1) ? 366 : 365,
-        S = true;
-      A >= 4 ? (A = 0, S = v + (0, a._D)(O - t.wkst, 7)) : S = c - _, y = Math.floor(52 + (0, a._D)(S, 7) / 4)
+        v = (0, a._D)(7 - O.valueOf() + t.wkst, 7),
+        A = (0, i.U_)(e - 1) ? 366 : 365,
+        I = true;
+      v >= 4 ? (v = 0, I = A + (0, a._D)(O - t.wkst, 7)) : I = c - _, b = Math.floor(52 + (0, a._D)(I, 7) / 4)
     }
-    if ((0, a.mK)(t.byweekno, y))
+    if ((0, a.mK)(t.byweekno, b))
       for (var E = 0; E < _; E++) p.wnomask[E] = 1
   }
   return p

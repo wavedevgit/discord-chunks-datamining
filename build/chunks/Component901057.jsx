@@ -23,7 +23,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk449054 = require("./449054.js"),
   Chunk652215 = require("./652215.js");
 
-function y(e, t) {
+function b(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   if (null == e || null == t) return;
   let r = _.A.getGuild(e);
@@ -33,12 +33,12 @@ function y(e, t) {
   let i = p.A.getChannel(t);
   if (null != i && (0, f.ay)(i.type)) {
     if (n) {
-      o.A.updateChatOpen(i.id, true), (0, d.pX)(b.BVt.CHANNEL(e, t));
+      o.A.updateChatOpen(i.id, true), (0, d.pX)(y.BVt.CHANNEL(e, t));
       return
     }
     l.default.selectVoiceChannel(i.id);
     return
-  }(0, d.pX)(b.BVt.CHANNEL(e, t))
+  }(0, d.pX)(y.BVt.CHANNEL(e, t))
 }
 
 function O(e) {
@@ -57,7 +57,7 @@ function O(e) {
       role: "link",
       className: l,
       onClick: e => {
-        e.stopPropagation(), null != n ? n() : (null != o && o(), (0, s.s7G)(), y(null == t ? true : t.guild_id, null == t ? true : t.id, d))
+        e.stopPropagation(), null != n ? n() : (null != o && o(), (0, s.s7G)(), b(null == t ? true : t.guild_id, null == t ? true : t.id, d))
       },
       iconType: (0, g.QG)(t),
       children: f

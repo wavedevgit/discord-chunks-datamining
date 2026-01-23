@@ -5,11 +5,11 @@ let r;
 require.d(exports, {
   Ay: () => H,
   Bk: () => F,
-  ER: () => S,
+  ER: () => I,
   Oj: () => W,
   ZA: () => r,
   ZD: () => K,
-  de: () => I,
+  de: () => S,
   fu: () => U,
   kZ: () => Y,
   o2: () => G
@@ -32,7 +32,7 @@ var Chunk845625 = require("./845625.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,13 +48,13 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,17 +65,17 @@ function A(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e) {
+function I(e) {
   return e.type === E.lAJ.AUTO_MODERATION_ACTION
 }
 
-function I(e) {
+function S(e) {
   var t;
   return null == (t = e.embeds) ? true : t.some(e => {
     let {
@@ -156,28 +156,28 @@ function j(e, t, n) {
   function r(e) {
     switch (e) {
       case a.d.NICKNAME_UPDATE:
-        return b.intl.string(b.t.t98DPb);
+        return y.intl.string(y.t.t98DPb);
       case a.d.NICKNAME_RESET:
-        return b.intl.string(b.t["7u/rlU"]);
+        return y.intl.string(y.t["7u/rlU"]);
       default:
         return
     }
   }
 
   function i() {
-    return b.intl.string(b.t.MrYeyS)
+    return y.intl.string(y.t.MrYeyS)
   }
 
   function s(e) {
     switch (e) {
       case u.c.MESSAGE_SEND:
-        return b.intl.string(b.t.PmSMMS);
+        return y.intl.string(y.t.PmSMMS);
       case u.c.GUILD_JOIN:
-        return b.intl.string(b.t.m9wWzo);
+        return y.intl.string(y.t.m9wWzo);
       case u.c.USERNAME_UPDATE:
-        return b.intl.string(b.t.KNSkC6);
+        return y.intl.string(y.t.KNSkC6);
       case u.c.CLAN_TAG_UPDATE:
-        return b.intl.string(b.t.qV4K6j);
+        return y.intl.string(y.t.qV4K6j);
       default:
         return
     }
@@ -186,14 +186,14 @@ function j(e, t, n) {
 
 function M(e, t) {
   var n;
-  return t ? null != (n = null == e ? true : e.name) ? n : b.intl.string(b.t.J90oLW) : b.intl.string(b.t["/YzI63"])
+  return t ? null != (n = null == e ? true : e.name) ? n : y.intl.string(y.t.J90oLW) : y.intl.string(y.t["/YzI63"])
 }
 
 function k(e, t, n) {
   let r = N(e, l.G.VOICE_CHANNEL_STATUS_OUTCOME);
   if (null == r) return null;
-  let i = "blocked" === r ? b.t.cLQrqz : b.t.bma6cs;
-  return b.intl.format(i, {
+  let i = "blocked" === r ? y.t.cLQrqz : y.t.bma6cs;
+  return y.intl.format(i, {
     channelName: t,
     channelHook: n
   })
@@ -216,47 +216,47 @@ function U(e, t) {
   }
   let m = h.A.can(E.xBc.VIEW_CHANNEL, t),
     g = M(t, m),
-    y = null != t && m ? n : E.FXj,
+    b = null != t && m ? n : E.FXj,
     O = k(e, g, n);
-  return null != O ? O : null != _ ? p === o.i.MODAL && null != i ? f !== s.z.BLOCKED ? b.intl.format(b.t["4xL9Sk"], {
+  return null != O ? O : null != _ ? p === o.i.MODAL && null != i ? f !== s.z.BLOCKED ? y.intl.format(y.t["4xL9Sk"], {
     applicationName: _,
     interactionUserHook: i,
     integrationOwnerHook: r
-  }) : b.intl.format(b.t.S3lNIT, {
+  }) : y.intl.format(y.t.S3lNIT, {
     applicationName: _,
     interactionUserHook: i,
     integrationOwnerHook: r
-  }) : f !== s.z.BLOCKED ? b.intl.format(b.t.AXQufN, {
+  }) : f !== s.z.BLOCKED ? y.intl.format(y.t.AXQufN, {
     applicationName: _,
     channelName: g,
-    channelHook: y,
+    channelHook: b,
     integrationOwnerHook: r
-  }) : b.intl.format(b.t.s3tjMN, {
+  }) : y.intl.format(y.t.s3tjMN, {
     applicationName: _,
     channelName: g,
-    channelHook: y,
+    channelHook: b,
     integrationOwnerHook: r
-  }) : f !== s.z.BLOCKED ? b.intl.format(b.t.IZg0VQ, {
+  }) : f !== s.z.BLOCKED ? y.intl.format(y.t.IZg0VQ, {
     channelName: g,
-    channelHook: y
-  }) : b.intl.format(b.t.lOIOSK, {
+    channelHook: b
+  }) : y.intl.format(y.t.lOIOSK, {
     channelName: g,
-    channelHook: y
+    channelHook: b
   })
 }
 
 function G(e) {
   switch (e) {
     case f.d.NICKNAME:
-      return b.intl.string(b.t["fkBQa/"]);
+      return y.intl.string(y.t["fkBQa/"]);
     case f.d.USERNAME:
-      return b.intl.string(b.t.pJQVnr);
+      return y.intl.string(y.t.pJQVnr);
     case f.d.GLOBAL_NAME:
-      return b.intl.string(b.t.V9eJ85);
+      return y.intl.string(y.t.V9eJ85);
     case f.d.CLAN_TAG:
-      return b.intl.string(b.t.Rtum01);
+      return y.intl.string(y.t.Rtum01);
     default:
-      return b.intl.string(b.t.pJQVnr)
+      return y.intl.string(y.t.pJQVnr)
   }
 }
 
@@ -313,7 +313,7 @@ function B(e) {
 function H(e) {
   let t = i.useMemo(() => B(e), [e]),
     n = (0, p.bG)([_.A], () => _.A.getChannel(t.embedChannelId), [t.embedChannelId]);
-  return v(O({}, t), {
+  return A(O({}, t), {
     embedChannel: n
   })
 }
@@ -327,16 +327,16 @@ function Y(e) {
 }
 
 function W(e) {
-  if (null == e) return b.intl.string(b.t.Gh3A0O);
+  if (null == e) return y.intl.string(y.t.Gh3A0O);
   switch (e) {
     case g.no.LEGITIMATE_ACTIVITY:
-      return b.intl.string(b.t["riQ+HH"]);
+      return y.intl.string(y.t["riQ+HH"]);
     case g.no.DM_SPAM:
-      return b.intl.string(b.t.j5V0ij);
+      return y.intl.string(y.t.j5V0ij);
     case g.no.JOIN_RAID:
-      return b.intl.string(b.t.qhaRbG);
+      return y.intl.string(y.t.qhaRbG);
     default:
-      return b.intl.string(b.t.GPg6JM)
+      return y.intl.string(y.t.GPg6JM)
   }
 }
 

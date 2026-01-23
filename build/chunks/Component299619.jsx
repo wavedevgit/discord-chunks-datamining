@@ -96,12 +96,12 @@ let _ = e => {
       }))
     }
 
-    function b() {
+    function y() {
       var e;
       o && (null == g || null == (e = g.current) || e.pause())
     }
 
-    function y() {
+    function b() {
       return f === a.d.MOSAIC ? {
         width: "100%",
         height: "100%",
@@ -130,10 +130,10 @@ let _ = e => {
       ref: g,
       autoPlay: m,
       onMouseEnter: E,
-      onMouseLeave: b,
+      onMouseLeave: y,
       onFocus: E,
-      onBlur: b,
-      style: y()
+      onBlur: y,
+      style: b()
     }, h))
   },
   h = Chunk64700.forwardRef((e, t) => (0, r.jsx)(_, u(l({}, e), {

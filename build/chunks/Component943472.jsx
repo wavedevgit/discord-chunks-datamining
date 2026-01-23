@@ -31,11 +31,11 @@ function m(e) {
     windowKey: t,
     channelId: n,
     participantId: o
-  } = e, m = (0, i.bG)([b.A], () => b.A.getChannel(n)), E = (0, i.bG)([I.A], () => I.A.getParticipant(n, o), [n, o]), g = null != m && null != E, U = (0, i.bG)([f.A], () => f.A.getVoiceChannelId() === n);
+  } = e, m = (0, i.bG)([f.A], () => f.A.getChannel(n)), E = (0, i.bG)([O.A], () => O.A.getParticipant(n, o), [n, o]), g = null != m && null != E, _ = (0, i.bG)([I.A], () => I.A.getVoiceChannelId() === n);
   l.useEffect(() => {
-    g && U || d.close(t)
-  }, [g, U, t]);
-  let _ = l.useCallback(e => {
+    g && _ || d.close(t)
+  }, [g, _, t]);
+  let U = l.useCallback(e => {
       let {
         unmountWindow: t
       } = e;
@@ -59,7 +59,7 @@ function m(e) {
     windowKey: t,
     title: v,
     channelId: n,
-    onBeforeUnload: _,
+    onBeforeUnload: U,
     appContext: C.BRT.CALL_TILE_POPOUT,
     hideModals: true,
     children: g ? (0, r.jsx)(u.A.Provider, {
@@ -72,7 +72,7 @@ function m(e) {
           channel: m,
           width: x.width,
           inCall: true,
-          popoutType: O.N.CALL_TILE,
+          popoutType: b.N.CALL_TILE,
           focused: true,
           noBorder: true,
           onContextMenu: j,

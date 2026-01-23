@@ -46,8 +46,8 @@ function C(e) {
   }, []), U = i.useCallback(() => {
     k()
   }, [k]), G = i.useCallback(() => {
-    null == C || C(), _.default.track(S.HAw.MODAL_DISMISSED, {
-      type: S.liQ.PREMIUM_GUILD_USER_MODAL,
+    null == C || C(), _.default.track(I.HAw.MODAL_DISMISSED, {
+      type: I.liQ.PREMIUM_GUILD_USER_MODAL,
       location_stack: x,
       location_section: t.section,
       location_object: t.object,
@@ -55,8 +55,8 @@ function C(e) {
       duration_open_ms: Date.now() - D
     })
   }, [C, t, x, D, n.id]), V = i.useCallback(e => {
-    e && !P.current && (_.default.track(S.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-      type: S.liQ.PREMIUM_GUILD_USER_MODAL,
+    e && !P.current && (_.default.track(I.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+      type: I.liQ.PREMIUM_GUILD_USER_MODAL,
       location_stack: x,
       location_section: t.section,
       location_object: t.object,
@@ -64,8 +64,8 @@ function C(e) {
     }), P.current = true)
   }, [t, x, n.id]);
   i.useEffect(() => {
-    _.default.track(S.HAw.OPEN_MODAL, {
-      type: S.liQ.PREMIUM_GUILD_USER_MODAL,
+    _.default.track(I.HAw.OPEN_MODAL, {
+      type: I.liQ.PREMIUM_GUILD_USER_MODAL,
       location_stack: x,
       location_section: t.section,
       location_object: t.object,
@@ -98,7 +98,7 @@ function C(e) {
       children: (0, r.jsx)(o.DUT, {
         className: T.b,
         onClick: G,
-        "aria-label": I.intl.string(I.t.cpT0Cq),
+        "aria-label": S.intl.string(S.t.cpT0Cq),
         children: (0, r.jsx)(o.PGe, {
           size: "md",
           color: "currentColor"
@@ -113,14 +113,14 @@ function C(e) {
           className: T.y2
         }), (0, r.jsxs)("div", {
           className: T.AZ,
-          children: [(0, r.jsx)(y.A, {
+          children: [(0, r.jsx)(b.A, {
             guildId: e.guild.id,
             onButtonClick: U
           }), (0, r.jsx)(m.A, {
             guild: n,
             closeLayer: G,
             onCtaVisibilityChange: w
-          }), (0, r.jsx)(b.A, {
+          }), (0, r.jsx)(y.A, {
             guild: n
           })]
         })]
@@ -135,7 +135,7 @@ function C(e) {
         className: T.o6,
         children: (0, r.jsxs)("div", {
           className: T.y$,
-          children: [(0, r.jsx)(A.A, {
+          children: [(0, r.jsx)(v.A, {
             className: T.Q,
             guild: n
           }), (0, r.jsx)(h.A, {}), (0, r.jsx)(g.A, {})]
@@ -148,7 +148,7 @@ function C(e) {
           className: T.mR
         })
       })]
-    }), (0, r.jsx)(v.A, {
+    }), (0, r.jsx)(A.A, {
       guild: n,
       isVisible: !R,
       closeLayer: G

@@ -20,15 +20,15 @@ function u(e) {
     destinationKey: p
   } = f, _ = null == (t = f.useSubtitle) ? true : t.call(f), {
     accessibleDirectory: h
-  } = (0, a._)(), m = h.entry(p), g = (null == m ? true : m.parentPanelKey) != null ? h.get(m.parentPanelKey) : true, E = null == (n = f.useTitle) ? true : n.call(f), b = null == g || null == (u = g.useTitle) ? true : u.call(g);
+  } = (0, a._)(), m = h.entry(p), g = (null == m ? true : m.parentPanelKey) != null ? h.get(m.parentPanelKey) : true, E = null == (n = f.useTitle) ? true : n.call(f), y = null == g || null == (u = g.useTitle) ? true : u.call(g);
   if (null == g) return null;
-  let y = (null == (d = g.parent) ? true : d.type) === s.Z6.SIDEBAR_ITEM ? g.parent.icon : true;
+  let b = (null == (d = g.parent) ? true : d.type) === s.Z6.SIDEBAR_ITEM ? g.parent.icon : true;
   return (0, r.jsx)(l.U, {
-    title: null != E ? E : b,
+    title: null != E ? E : y,
     description: _,
-    leadingElement: null != y && (0, r.jsx)("div", {
+    leadingElement: null != b && (0, r.jsx)("div", {
       className: c.z,
-      children: (0, r.jsx)(y, {
+      children: (0, r.jsx)(b, {
         color: "currentColor"
       })
     }),

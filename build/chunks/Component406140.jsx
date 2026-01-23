@@ -19,14 +19,14 @@ function u(e) {
     guild: u,
     description: d,
     children: p
-  } = e, f = a.kt.useSetting(), h = (0, s.j)(), [A, g] = (0, o.A)(t, h && f);
+  } = e, h = a.kt.useSetting(), g = (0, s.j)(), [f, m] = (0, o.A)(t, g && h);
   return (0, r.jsxs)("div", {
     className: c.kL,
     children: [(0, r.jsx)("div", {
-      ref: A,
+      ref: f,
       className: c.El,
-      children: null != g && (0, r.jsx)("img", {
-        src: g,
+      children: null != m && (0, r.jsx)("img", {
+        src: m,
         alt: "",
         className: c.N4
       })

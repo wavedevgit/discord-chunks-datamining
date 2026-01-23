@@ -22,12 +22,12 @@ let f = Chunk64700.forwardRef(function(e, t) {
       onFocus: _,
       autoFocus: h,
       defaultSearchPlaceholder: m
-    } = e, g = i.useRef(null), E = (0, c.RQ)(e => e.searchQuery), [b, y] = l.Om.useStore(e => [e.inspectedExpressionPosition, e.searchPlaceholder], a.x), O = i.useCallback(e => {
+    } = e, g = i.useRef(null), E = (0, c.RQ)(e => e.searchQuery), [y, b] = l.Om.useStore(e => [e.inspectedExpressionPosition, e.searchPlaceholder], a.x), O = i.useCallback(e => {
       var t;
       l.Om.setActiveCategoryIndex("" === e ? 0 : false), l.Om.setInspectedExpressionPosition(0, 0), l.Om.setSearchPlaceholder(null), (0, c.Ri)(e), null == (t = n.current) || t.scrollTo(0)
-    }, [n]), A = i.useCallback(() => {
+    }, [n]), v = i.useCallback(() => {
       (0, c.Ri)("")
-    }, []), v = e => {
+    }, []), A = e => {
       switch (e.key) {
         case u.dh.ARROW_LEFT:
         case u.dh.ARROW_RIGHT:
@@ -46,9 +46,9 @@ let f = Chunk64700.forwardRef(function(e, t) {
       autoFocus: h,
       query: E,
       ref: g,
-      placeholder: null != y ? y : m,
-      onClear: A,
-      onKeyDown: v,
+      placeholder: null != b ? b : m,
+      onClear: v,
+      onKeyDown: A,
       onFocus: _,
       onChange: O,
       inputProps: {
@@ -56,7 +56,7 @@ let f = Chunk64700.forwardRef(function(e, t) {
         "aria-haspopup": "grid",
         "aria-controls": f,
         "aria-expanded": true,
-        "aria-activedescendant": (0, s.Aq)(f, b.columnIndex, b.rowIndex)
+        "aria-activedescendant": (0, s.Aq)(f, y.columnIndex, y.rowIndex)
       }
     })
   }),

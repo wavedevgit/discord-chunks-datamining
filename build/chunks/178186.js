@@ -1,9 +1,9 @@
 /** Chunk was on 61376 **/
 /** chunk id: 178186, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Ey: () => l,
+  Ey: () => o,
   O$: () => s,
-  Rw: () => o,
+  Rw: () => l,
   S9: () => u,
   q0: () => c
 });
@@ -12,33 +12,33 @@ var Chunk562465 = require("./562465.js"),
   Chunk652215 = require("./652215.js");
 
 function c() {
-  a.h.dispatch({
+  i.h.dispatch({
     type: "VIBING_WUMPUS_PLAY_MUSIC"
   })
 }
 
 function u() {
-  a.h.dispatch({
+  i.h.dispatch({
     type: "VIBING_WUMPUS_STOP_MUSIC"
   })
 }
 
 function s() {
-  a.h.dispatch({
+  i.h.dispatch({
     type: "VIBING_WUMPUS_PAUSE_MUSIC"
   })
 }
 
-function l(t) {
+function o(t) {
   return r.Bo.del({
-    url: i.Rsh.DELETE_SAFETY_WARNINGS(t),
+    url: a.Rsh.DELETE_SAFETY_WARNINGS(t),
     rejectWithError: false
   })
 }
 
-function o(t, e) {
+function l(t, e) {
   return r.Bo.post({
-    url: i.Rsh.ADD_SAFETY_WARNING(t),
+    url: a.Rsh.ADD_SAFETY_WARNING(t),
     body: {
       safety_warning_type: e
     },

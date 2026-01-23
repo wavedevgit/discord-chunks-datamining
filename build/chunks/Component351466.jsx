@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 351466, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,16 +18,16 @@ var Chunk627968 = require("./627968.js"),
   Chunk285395 = require("./285395.js"),
   Chunk488995 = require("./488995.js"),
   Chunk34352 = require("./34352.js");
-let b = function() {
+let _ = function() {
   let e = (0, a.bG)([o.A], () => o.A.hasLoadedExperiments),
-    t = h.A.useField("selectedTab"),
+    t = g.A.useField("selectedTab"),
     n = function(e) {
       switch (e) {
-        case g.GlobalDiscoveryTab.SERVERS:
+        case m.GlobalDiscoveryTab.SERVERS:
           return (0, r.jsx)(u.A, {});
-        case g.GlobalDiscoveryTab.APPS:
+        case m.GlobalDiscoveryTab.APPS:
           return (0, r.jsx)(c.default, {});
-        case g.GlobalDiscoveryTab.QUESTS:
+        case m.GlobalDiscoveryTab.QUESTS:
           return (0, r.jsx)(d.A, {
             topLevelRoute: false
           });
@@ -35,23 +35,23 @@ let b = function() {
           (0, p.xb)(e)
       }
     }(t),
-    b = (0, l.zy)();
+    _ = (0, l.zy)();
   return i.useEffect(() => {
-    let e = b.pathname,
-      t = (0, A.j)(e);
-    t !== h.A.getField("selectedTab") && h.A.setState({
+    let e = _.pathname,
+      t = (0, f.j)(e);
+    t !== g.A.getField("selectedTab") && g.A.setState({
       selectedTab: t
     })
-  }, [b.pathname]), i.useEffect(() => {
-    e && (0, f.tx)({
+  }, [_.pathname]), i.useEffect(() => {
+    e && (0, h.tx)({
       selectedTab: t
     })
   }, [t, e]), (0, r.jsxs)("section", {
-    className: m.k,
+    className: A.k,
     children: [(0, r.jsx)(s.HI, {
-      location: (0, A.t)(t)
+      location: (0, f.t)(t)
     }), (0, r.jsx)("div", {
-      className: m.T
+      className: A.T
     }), n]
   })
 }

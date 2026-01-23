@@ -2,7 +2,7 @@
 /** chunk id: 623646, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H: () => v,
+  H: () => A,
   Q: () => D
 }), require("./896048.js"), require("./65821.js");
 var r, Chunk627968 = require("./627968.js"),
@@ -41,7 +41,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,32 +52,32 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let O = new WeakMap;
 
-function A(e) {
+function v(e) {
   let t = (0, u.p3)(e, m.qd);
   return null == t && (t = (0, u.wB)(e, _.IP)), null != t ? t : null
 }
 
-function v(e, t) {
+function A(e, t) {
   if (e.contains(t)) returntrue;
-  let n = A(t);
+  let n = v(t);
   for (; null != n;) {
     let t = O.get(n);
     if (null == t) break;
     if (e.contains(t)) returntrue;
-    n = A(t)
+    n = v(t)
   }
   returnfalse
 }
-let S = 12;
+let I = 12;
 
-function I(e) {
+function S(e) {
   let {
     positionKey: t,
     position: n,
@@ -138,8 +138,8 @@ function R(e, t, n) {
   if (null != e && e < 0 && ("top" === n.position || "bottom" === n.position) && null != t && Math.abs(e) < (null == t ? true : t.offsetHeight) && null != n.style) {
     let t = "top" === n.position ? "bottom" : "top",
       r = n.style[t];
-    return y(E({}, n), {
-      style: y(E({}, n.style), {
+    return b(E({}, n), {
+      style: b(E({}, n.style), {
         [t]: (null == r ? 0 : r) + e
       })
     })
@@ -170,8 +170,8 @@ class D extends(r = Chunk64700.Component) {
     } = this.props;
     if (!r) return e;
     let i = n.offsetWidth,
-      a = e + t.offsetWidth - i + S;
-    return a > 0 ? Math.max(S, e - a) : Math.max(S, e)
+      a = e + t.offsetWidth - i + I;
+    return a > 0 ? Math.max(I, e - a) : Math.max(I, e)
   }
   nudgeRightAlignment(e, t, n) {
     let {
@@ -179,7 +179,7 @@ class D extends(r = Chunk64700.Component) {
     } = this.props;
     if (!r) return 0;
     let i = t.offsetWidth;
-    return Math.min(n.offsetWidth - e - i - S, 0)
+    return Math.min(n.offsetWidth - e - i - I, 0)
   }
   getHorizontalAlignmentStyle(e, t, n, r) {
     let {
@@ -191,7 +191,7 @@ class D extends(r = Chunk64700.Component) {
         let i = this.formatDimension(this.nudgeLeftAlignment(e.left + a, t, n)),
           s = this.formatDimension(e.left + a) - i;
         return {
-          style: y(E({}, r), {
+          style: b(E({}, r), {
             left: i
           }),
           nudge: s
@@ -201,7 +201,7 @@ class D extends(r = Chunk64700.Component) {
         let i = this.formatDimension(n.offsetWidth - e.right - a),
           s = this.nudgeRightAlignment(i, t, n);
         return {
-          style: y(E({}, r), {
+          style: b(E({}, r), {
             right: i + s
           }),
           nudge: 0
@@ -212,7 +212,7 @@ class D extends(r = Chunk64700.Component) {
           s = this.formatDimension(this.nudgeLeftAlignment(i, t, n)),
           o = this.formatDimension(i) - s;
         return {
-          style: y(E({}, r), {
+          style: b(E({}, r), {
             left: s
           }),
           nudge: o
@@ -228,16 +228,16 @@ class D extends(r = Chunk64700.Component) {
     } = this.props;
     if (!r) return e;
     if (e < 0) return 0;
-    let i = e + t.getBoundingClientRect().height - n.offsetHeight + S;
-    return i > 0 ? Math.max(S, e - i) : e
+    let i = e + t.getBoundingClientRect().height - n.offsetHeight + I;
+    return i > 0 ? Math.max(I, e - i) : e
   }
   nudgeBottomAlignment(e, t, n) {
     let {
       nudgeAlignIntoViewport: r
     } = this.props, i = n.offsetHeight, a = i - e;
     if (!r) return a;
-    let s = a + t.offsetHeight - i + S;
-    return s > 0 ? Math.max(S, a - s) : a
+    let s = a + t.offsetHeight - i + I;
+    return s > 0 ? Math.max(I, a - s) : a
   }
   getVerticalAlignmentStyle(e, t, n, r) {
     let {
@@ -249,7 +249,7 @@ class D extends(r = Chunk64700.Component) {
         let i = this.formatDimension(this.nudgeTopAlignment(e.top + a, t, n)),
           s = this.formatDimension(e.top + a) - i;
         return {
-          style: y(E({}, r), {
+          style: b(E({}, r), {
             top: i
           }),
           nudge: s
@@ -259,7 +259,7 @@ class D extends(r = Chunk64700.Component) {
         let i = this.formatDimension(this.nudgeBottomAlignment(e.bottom + a, t, n)),
           s = this.formatDimension(e.bottom + a) - i;
         return {
-          style: y(E({}, r), {
+          style: b(E({}, r), {
             bottom: i
           }),
           nudge: s
@@ -270,7 +270,7 @@ class D extends(r = Chunk64700.Component) {
           s = this.formatDimension(this.nudgeTopAlignment(i, t, n)),
           o = this.formatDimension(i) - s;
         return {
-          style: y(E({}, r), {
+          style: b(E({}, r), {
             top: s
           }),
           nudge: o
@@ -307,7 +307,7 @@ class D extends(r = Chunk64700.Component) {
         });
       case "overlap_horizontal":
         return this.getVerticalAlignmentStyle(o, t, n, {
-          [r]: S
+          [r]: I
         });
       case "center":
         return this.getVerticalAlignmentStyle(o, t, n, {
@@ -376,7 +376,7 @@ class D extends(r = Chunk64700.Component) {
     c()(null != i, "Missing elementRef"), null != n.current && O.set(i, n.current), null == i || null == (t = i.ownerDocument) || null == (e = t.defaultView) || e.addEventListener("resize", this.updatePosition), null == r || r()
   }
   componentDidUpdate(e, t) {
-    if (I(e) === I(this.props) && P(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
+    if (S(e) === S(this.props) && P(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
       var n, r;
       null == (n = (r = this.props).onPositionChange) || n.call(r, this.state.position)
     }
@@ -391,7 +391,7 @@ class D extends(r = Chunk64700.Component) {
     if (null == e) return;
     let t = (0, h.J$)(e),
       n = this.state.style;
-    return null != n.top ? Math.max(0, t.offsetHeight - n.top - S) : null != n.bottom ? Math.max(0, t.offsetHeight - n.bottom - S) : Math.max(0, t.offsetHeight - 2 * S)
+    return null != n.top ? Math.max(0, t.offsetHeight - n.top - I) : null != n.bottom ? Math.max(0, t.offsetHeight - n.bottom - I) : Math.max(0, t.offsetHeight - 2 * I)
   }
   render() {
     let {
@@ -424,7 +424,7 @@ class D extends(r = Chunk64700.Component) {
                 [m.CA]: false,
                 [m.Hc]: a
               }),
-              style: y(E({
+              style: b(E({
                 position: r ? "fixed" : "absolute"
               }, this.state.style), {
                 "--reference-position-layer-max-height": null != _ ? "".concat(_, "px") : true

@@ -53,10 +53,10 @@ function P(e) {
     fetchKey: d
   } = e;
   if (null == n || (0, C.jq)(n)) return;
-  let _ = b.A.getChannel(n);
+  let _ = y.A.getChannel(n);
   if ((null == _ ? true : _.type) === T.rbe.GUILD_STORE || (null == _ ? true : _.type) != null && T.kvI.GUILD_THREADS_ONLY.has(_.type)) return;
   let m = f.A.getOrCreate(n);
-  m.some(I.$r) && (w.log("Found expired attachment link, clearing messages"), f.A.clear(n), m = f.A.getOrCreate(n)), null != m.jumpTargetId && null == r && (m = m.mutate({
+  m.some(S.$r) && (w.log("Found expired attachment link, clearing messages"), f.A.clear(n), m = f.A.getOrCreate(n)), null != m.jumpTargetId && null == r && (m = m.mutate({
     jumpTargetId: null,
     jumped: false,
     jumpType: u.US.ANIMATED
@@ -64,7 +64,7 @@ function P(e) {
     focusTargetId: null
   }), f.A.commit(m));
   let g = i;
-  if (!a || h.A.isConnected() || m.loadingMore ? m.loadingMore || m.ready && !m.cached ? null != r && (g = true) : (null == t || null != y.A.getGuild(t)) && (g = true) : g = true, (0, p.A)(n) && O.Ay.hasUnread(n) && (g = true), g)
+  if (!a || h.A.isConnected() || m.loadingMore ? m.loadingMore || m.ready && !m.cached ? null != r && (g = true) : (null == t || null != b.A.getGuild(t)) && (g = true) : g = true, (0, p.A)(n) && O.Ay.hasUnread(n) && (g = true), g)
     if (f.A.commit(m.mutate({
         loadingMore: true
       })), null != r) c.A.jumpToMessage({
@@ -146,9 +146,9 @@ function j(e) {
 }
 
 function M() {
-  let e = A.A.getChannelId();
+  let e = v.A.getChannelId();
   if (null == e) return;
-  let t = b.A.getChannel(e);
+  let t = y.A.getChannel(e);
   if (null == t) return;
   let n = j(t.id);
   r = true, P({
@@ -161,9 +161,9 @@ function M() {
 }
 
 function k() {
-  let e = A.A.getChannelId();
+  let e = v.A.getChannelId();
   if (null == e) return;
-  let t = b.A.getChannel(e);
+  let t = y.A.getChannel(e);
   if (null == t) return;
   if (!(0, g.pQ)(t.type)) return void F(t.getGuildId(), t.id);
   let n = f.A.getOrCreate(e);
@@ -230,8 +230,8 @@ function F(e, t) {
 }
 
 function B() {
-  let e = A.A.getChannelId(),
-    t = v.A.getGuildId();
+  let e = v.A.getChannelId(),
+    t = A.A.getGuildId();
   if (null == t || null == e) return;
   let n = E.Ay.getSidebarState(e);
   (null == n ? true : n.type) !== m.PE.VIEW_CHANNEL && F(t, e)
@@ -254,7 +254,7 @@ function Y(e) {
     channel: t,
     messageId: n
   } = e, r = t.guild_id;
-  null != r && A.A.getChannelId(r) === t.id && P({
+  null != r && v.A.getChannelId(r) === t.id && P({
     guildId: r,
     channelId: t.id,
     messageId: n
@@ -288,9 +288,9 @@ function z(e) {
   } = e;
   if (a) return;
   let s = null != (t = K[n]) ? t : 0;
-  if (Date.now() - s < 10 * S.A.Millis.SECOND) return;
+  if (Date.now() - s < 10 * I.A.Millis.SECOND) return;
   K[n] = Date.now();
-  let o = A.A.getChannelId(),
+  let o = v.A.getChannelId(),
     l = E.Ay.getCurrentSidebarChannelId(o),
     u = n === o || n === l;
   i && h.A.isConnected() && u && c.A.fetchMessages({
@@ -322,7 +322,7 @@ function X(e) {
     state: t
   } = e;
   if ("active" !== t) returnfalse;
-  let n = A.A.getChannelId();
+  let n = v.A.getChannelId();
   if (null == n) returnfalse;
   c.A.fetchNewLocalMessages(n, T.EMb)
 }

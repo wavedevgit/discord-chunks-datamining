@@ -1,7 +1,7 @@
 /** Chunk was on 13492 **/
-/** chunk id: 127938, original params: e,t,a (module,exports,require) **/
+/** chunk id: 127938, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => d
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,33 +12,33 @@ var Chunk627968 = require("./627968.js"),
   Chunk193855 = require("./193855.jsx"),
   Chunk360469 = require("./360469.js");
 
-function b() {
-  let e = (0, l.bG)([o.A], () => o.A.getConnectedFrame()),
-    t = (0, l.bG)([o.A], () => (null == e ? true : e.applicationId) != null && o.A.isProxyTicketRefreshing(e.applicationId), [e]),
-    a = n.useCallback(e => {
+function d() {
+  let e = (0, a.bG)([c.A], () => c.A.getConnectedFrame()),
+    n = (0, a.bG)([c.A], () => (null == e ? true : e.applicationId) != null && c.A.isProxyTicketRefreshing(e.applicationId), [e]),
+    t = o.useCallback(e => {
       let {
-        application: t
+        application: n
       } = e;
-      return (0, c.jsx)(i.A, {
-        applicationId: t.id
+      return (0, r.jsx)(_.A, {
+        applicationId: n.id
       })
     }, []),
-    b = n.useCallback(t => {
+    d = o.useCallback(n => {
       let {
-        application: a
-      } = t, n = {};
-      null != e && (n.instance_id = "example-cl-instance", n.platform = f.vu.DESKTOP, null != e.proxyTicket && (n.discord_proxy_ticket = e.proxyTicket));
-      let l = null == e ? true : e.url;
-      return (0, c.jsx)(d.A, {
-        application: a,
-        queryParams: n,
-        url: l
+        application: t
+      } = n, o = {};
+      null != e && (o.instance_id = "example-cl-instance", o.platform = s.vu.DESKTOP, null != e.proxyTicket && (o.discord_proxy_ticket = e.proxyTicket));
+      let a = null == e ? true : e.url;
+      return (0, r.jsx)(i.A, {
+        application: t,
+        queryParams: o,
+        url: a
       })
     }, [e]);
-  return (0, c.jsx)(r.E, {
+  return (0, r.jsx)(l.E, {
     activity: e,
-    isLoading: t,
-    renderHeader: a,
-    renderActivityIFrameWithLoadedData: b
+    isLoading: n,
+    renderHeader: t,
+    renderActivityIFrameWithLoadedData: d
   })
 }

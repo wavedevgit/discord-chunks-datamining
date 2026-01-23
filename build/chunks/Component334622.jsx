@@ -22,7 +22,7 @@ function A(t) {
     onNext: d,
     transitionState: g
   } = t, [N, S] = r.useState(""), [k, m] = r.useState(""), [h, x] = r.useState(false), p = (0, i.bG)([o.A], () => o.A.getErrors()), v = r.useRef(null);
-  async function T(t) {
+  async function f(t) {
     t.preventDefault(), x(true);
     let e = await (0, s.yu)({
       email: N,
@@ -59,7 +59,7 @@ function A(t) {
       variant: "primary",
       text: u.intl.string(u.t.i4jeWR),
       loading: h,
-      onClick: T
+      onClick: f
     }],
     children: (0, a.jsxs)(l.BJc, {
       gap: 20,

@@ -1,7 +1,7 @@
 /** Chunk was on 83247 **/
-/** chunk id: 608391, original params: e,t,a (module,exports,require) **/
+/** chunk id: 608391, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => i
+  default: () => u
 }), require("./896048.js"), require("./492834.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,36 +12,36 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk669979 = require("./669979.js");
 
-function i(e) {
+function u(e) {
   let {
     guildId: t,
-    gameInstance: a
-  } = e, i = function(e, t) {
+    gameInstance: n
+  } = e, u = function(e, t) {
     if (null == e) return {};
-    var a, r, n, c = {};
+    var n, r, o, a = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (n = 0, a = Reflect.ownKeys(e); n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (c[r] = e[r]);
-      return c
+      for (o = 0, n = Reflect.ownKeys(e); o < n.length; o++) r = n[o], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
+      return a
     }
-    if (c = function(e, t) {
+    if (a = function(e, t) {
         if (null == e) return {};
-        var a, r, n = {},
-          c = Object.getOwnPropertyNames(e);
-        for (r = 0; r < c.length; r++) a = c[r], !(t.indexOf(a) >= 0) && Object.prototype.propertyIsEnumerable.call(e, a) && (n[a] = e[a]);
-        return n
+        var n, r, o = {},
+          a = Object.getOwnPropertyNames(e);
+        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
+        return o
       }(e, t), Object.getOwnPropertySymbols)
-      for (n = 0, a = Object.getOwnPropertySymbols(e); n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (c[r] = e[r]);
-    return c
-  }(e, ["guildId", "gameInstance"]), [s, u] = n.useState(false), [p, y] = n.useState(true), g = (0, l.A)(a.gameId, "cover");
-  return (0, r.jsx)(c.O, function(e) {
+      for (o = 0, n = Object.getOwnPropertySymbols(e); o < n.length; o++) r = n[o], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
+    return a
+  }(e, ["guildId", "gameInstance"]), [f, d] = o.useState(false), [p, _] = o.useState(true), g = (0, b.A)(n.gameId, "cover");
+  return (0, r.jsx)(a.O, function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var a = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(a);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(a, e).enumerable
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
       }))), r.forEach(function(t) {
         var r;
-        r = a[t], t in e ? Object.defineProperty(e, t, {
+        r = n[t], t in e ? Object.defineProperty(e, t, {
           value: r,
           enumerable: true,
           configurable: true,
@@ -52,28 +52,28 @@ function i(e) {
     return e
   }({
     size: "sm",
-    title: a.name,
+    title: n.name,
     body: (0, r.jsx)("div", {
-      className: d.Z,
+      className: s.Z,
       children: (0, r.jsx)("img", {
         alt: "",
         src: null != g ? g : "",
-        className: d.S
+        className: s.S
       })
     }),
-    warningText: f.intl.string(b.default.ukbS3E),
-    acknowledgementText: f.intl.string(b.default.xjRtF9),
-    isLoading: s,
+    warningText: l.intl.string(i.default.ukbS3E),
+    acknowledgementText: l.intl.string(i.default.xjRtF9),
+    isLoading: f,
     error: p,
     onDeactivate: () => {
-      y(true), u(true), (0, o.e_)(t, a.planId, a.entitlementId).then(() => {
-        i.onClose()
+      _(true), d(true), (0, c.e_)(t, n.planId, n.entitlementId).then(() => {
+        u.onClose()
       }).catch(e => {
         var t;
-        y(null != (t = e.body.message) ? t : e.message)
+        _(null != (t = e.body.message) ? t : e.message)
       }).finally(() => {
-        u(false)
+        d(false)
       })
     }
-  }, i))
+  }, u))
 }

@@ -57,12 +57,12 @@ function N(e) {
   } = e, a = (0, l.bG)([E.A], () => E.A.getGuild(n)), {
     loading: T,
     subscriptionsSettings: N
-  } = (0, y.G)(n), {
+  } = (0, b.G)(n), {
     listingsLoaded: R
   } = (0, h.bb)(n), w = (0, h.fZ)(n, {
     publishedOnly: true
   }), P = i.useCallback(async () => {
-    b.default.track(v.HAw.GUILD_SHOP_EMBED_CLICKED, C({}, (0, f.H$)(n))), await (0, m.A)(v.BVt.SERVER_SHOP(n))
+    y.default.track(A.HAw.GUILD_SHOP_EMBED_CLICKED, C({}, (0, f.H$)(n))), await (0, m.A)(A.BVt.SERVER_SHOP(n))
   }, [n]);
   (0, p.A)({
     type: o.ImpressionTypes.VIEW,
@@ -72,32 +72,32 @@ function N(e) {
   });
   let D = w.length > 0 ? new Date(Math.min(...w.map(e => Date.parse(e.published_at)))) : true;
   return T || !R ? (0, r.jsx)("div", {
-    className: s()(I.lm, I.dc),
+    className: s()(S.lm, S.dc),
     children: (0, r.jsx)(d.y$y, {})
   }) : null == a || null == N ? null : (0, r.jsxs)("div", {
-    className: I.lm,
+    className: S.lm,
     children: [(0, r.jsx)(O.C, {
       coverImageAsset: null != (t = N.cover_image_asset) ? t : null
     }), (0, r.jsx)(d.hKd, {
       size: 16
     }), (0, r.jsxs)("div", {
-      className: I.qs,
-      children: [(0, r.jsx)(A.h, {
+      className: S.qs,
+      children: [(0, r.jsx)(v.h, {
         height: "16px",
         width: "16px",
         color: c.A.colors.INTERACTIVE_TEXT_DEFAULT.css
       }), (0, r.jsx)(d.Heading, {
         variant: "heading-sm/semibold",
         color: "interactive-text-default",
-        className: I.Nl,
-        children: S.intl.string(S.t.al5EXL)
+        className: S.Nl,
+        children: I.intl.string(I.t.al5EXL)
       })]
     }), (0, r.jsx)(d.hKd, {
       size: 16
     }), (0, r.jsx)(d.Heading, {
       variant: "heading-md/semibold",
       color: "text-default",
-      children: S.intl.format(S.t.NZeik9, {
+      children: I.intl.format(I.t.NZeik9, {
         guildName: a.name
       })
     }), (0, r.jsx)(d.hKd, {
@@ -112,16 +112,16 @@ function N(e) {
     }), (0, r.jsx)(g.A, {}), (0, r.jsx)(d.hKd, {
       size: 16
     }), (0, r.jsxs)("div", {
-      className: I.kS,
+      className: S.kS,
       children: [(0, r.jsx)(_.A, {
         guild: a
       }), (0, r.jsxs)("ul", {
-        className: I.q6,
+        className: S.q6,
         children: [(0, r.jsx)("li", {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: S.intl.format(S.t.tKZNlb, {
+            children: I.intl.format(I.t.tKZNlb, {
               listingCount: w.length
             })
           })
@@ -129,17 +129,17 @@ function N(e) {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: S.intl.format(S.t["kXr8+b"], {
+            children: I.intl.format(I.t["kXr8+b"], {
               createdYear: D.getFullYear()
             })
           })
         })]
       }), (0, r.jsx)("div", {
-        className: I.$h,
+        className: S.$h,
         children: (0, r.jsx)(u.$nd, {
           onClick: P,
-          icon: A.A,
-          text: S.intl.string(S.t.jXx1CC)
+          icon: v.A,
+          text: I.intl.string(I.t.jXx1CC)
         })
       })]
     })]

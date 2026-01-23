@@ -28,19 +28,19 @@ let h = false,
   g = null,
   E = {};
 
-function b() {
+function y() {
   null != m && null == f.A.getGuild(m) && null == o.A.getRequest(m) && (m = null), null != g && null == f.A.getGuild(g) && null == o.A.getRequest(g) && (g = null), O(m)
 }
 
-function y(e) {
-  m = e.selectedGuildId, g = true, b()
+function b(e) {
+  m = e.selectedGuildId, g = true, y()
 }
 
 function O(e) {
   null != e && (E[e] = Date.now())
 }
 
-function A(e) {
+function v(e) {
   let {
     guildId: t
   } = e;
@@ -48,27 +48,27 @@ function A(e) {
   O(m), O(t), null != t && (g = t), m = t
 }
 
-function v(e) {
+function A(e) {
   let t = false;
   return delete E[e], g === e && (g = null, t = true), m === e && (f.A.getGuildsArray().find(t => t.id !== e), m = null, (0, c.bG)(p.BVt.ME), t = true), t
 }
 
-function S(e) {
+function I(e) {
   let {
     guild: {
       id: t,
       unavailable: n
     }
   } = e;
-  returntrue !== n && v(t)
+  returntrue !== n && A(t)
 }
 
-function I(e) {
+function S(e) {
   let {
     guildId: t,
     user: n
   } = e;
-  return n.id === u.default.getId() && v(t)
+  return n.id === u.default.getId() && A(t)
 }
 
 function T() {
@@ -103,10 +103,10 @@ class C extends(r = Chunk311907.Ay.PersistedStore) {
 }
 _(C, "displayName", "SelectedGuildStore"), _(C, "persistKey", "SelectedGuildStore");
 let N = new C(Chunk73153.h, {
-  CONNECTION_OPEN: b,
-  OVERLAY_INITIALIZE: y,
-  CHANNEL_SELECT: A,
-  GUILD_MEMBER_REMOVE: I,
-  GUILD_DELETE: S,
+  CONNECTION_OPEN: y,
+  OVERLAY_INITIALIZE: b,
+  CHANNEL_SELECT: v,
+  GUILD_MEMBER_REMOVE: S,
+  GUILD_DELETE: I,
   LOGOUT: T
 })

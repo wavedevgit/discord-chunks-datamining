@@ -98,13 +98,13 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
     let {
       containerWidth: s,
       channel: c,
-      onSelectSticker: A,
+      onSelectSticker: v,
       closePopout: G
     } = e, {
       location: F
     } = (0, d.p)(), {
       analyticsLocations: q
-    } = (0, p.Ay)(f.A.STICKER_PICKER), X = (null == (a = (0, E.V)()) ? true : a.subscription_trial) != null, Z = i.useRef(null), ee = i.useRef(null), er = i.useRef(null), ei = (0, v.P)(e => e.showPremiumUpsell), [ea, es] = (0, h.RQ)(e => [e.searchQuery, e.isSearchSuggestion], o.x), eo = i.useRef("");
+    } = (0, p.Ay)(f.A.STICKER_PICKER), X = (null == (a = (0, E.V)()) ? true : a.subscription_trial) != null, Z = i.useRef(null), ee = i.useRef(null), er = i.useRef(null), ei = (0, A.P)(e => e.showPremiumUpsell), [ea, es] = (0, h.RQ)(e => [e.searchQuery, e.isSearchSuggestion], o.x), eo = i.useRef("");
     i.useImperativeHandle(t, () => ({
       onPickerOpen: eL
     }));
@@ -117,26 +117,26 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         listPaddingLeft: Y,
         listScrollbarWidth: J
       }),
-      ed = b.tP.useSetting(),
+      ed = y.tP.useSetting(),
       ef = i.useMemo(() => new Set(ed), [ed]),
-      ep = (0, l.bG)([y.default], () => y.default.getCurrentUser()),
+      ep = (0, l.bG)([b.default], () => b.default.getCurrentUser()),
       e_ = i.useMemo(() => (0, L.y)(ea, ep, c), [ea, ep, c]),
       eh = (0, T.Gc)(),
       em = (0, T.UT)(),
       eg = (0, l.cf)([C.A], () => C.A.getAllGuildStickers()),
       {
         sendable: eE = [],
-        sendableWithPremium: eb = []
+        sendableWithPremium: ey = []
       } = null != e_ ? e_ : {},
-      ey = eE.length + eb.length,
+      eb = eE.length + ey.length,
       eO = i.useCallback(e => {
-        "" === ea ? (0, I.ry)(e) : (0, I.nQ)(e, ea, ey), A(e.sticker, N.D6.STICKER_PICKER)
-      }, [A, ea, ey]),
-      eA = null != eu && eu > H,
+        "" === ea ? (0, S.ry)(e) : (0, S.nQ)(e, ea, eb), v(e.sticker, N.D6.STICKER_PICKER)
+      }, [v, ea, eb]),
+      ev = null != eu && eu > H,
       {
-        rowCount: ev,
-        rowCountBySection: eS,
-        stickersGrid: eI,
+        rowCount: eA,
+        rowCountBySection: eI,
+        stickersGrid: eS,
         gutterWidth: eT,
         columnCounts: eC
       } = (0, T._c)({
@@ -145,8 +145,8 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         collapsedStickersCategories: ef,
         listWidth: eu,
         listPaddingRight: W,
-        stickerNodeMargin: eA ? K : z,
-        stickerNodeWidth: eA ? Q : $
+        stickerNodeMargin: ev ? K : z,
+        stickerNodeWidth: ev ? Q : $
       }),
       eN = i.useCallback((e, t) => {
         let {
@@ -167,7 +167,7 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
             });
             break;
           case N.op.STICKER:
-            null != e.sticker && (0, S.G7)(e.sticker, ep, c) && eO(e)
+            null != e.sticker && (0, I.G7)(e.sticker, ep, c) && eO(e)
         }
       }, [F, ep, c, eO]),
       {
@@ -179,7 +179,7 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       } = (0, R.J)({
         columnCounts: eC,
         stickersListRef: ee,
-        stickersGrid: eI,
+        stickersGrid: eS,
         onGridItemSelect: eN,
         store: _.bM,
         setInspectedStickerPosition: _.bM.setInspectedExpressionPosition,
@@ -196,7 +196,7 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       let r = 0;
       null != eg && [...eg.values()].forEach(e => {
         r += e.length
-      }), (0, I.p4)({
+      }), (0, S.p4)({
         containerWidth: s,
         favoriteStickers: eh,
         frequentlyUsedStickers: em,
@@ -205,10 +205,10 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       })
     };
     i.useEffect(() => {
-      "" === eo.current && "" !== ea && (0, I.Fg)(), eo.current = ea
+      "" === eo.current && "" !== ea && (0, S.Fg)(), eo.current = ea
     }, [ea]), i.useEffect(() => {
-      0 === ey ? et(ea) : en(ea, ey, es)
-    }, [ea, ey, es]), i.useLayoutEffect(() => {
+      0 === eb ? et(ea) : en(ea, eb, es)
+    }, [ea, eb, es]), i.useLayoutEffect(() => {
       var e;
       null == (e = er.current) || e.focus()
     }, []);
@@ -246,10 +246,10 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
             gutterWidth: eT,
             isUsingKeyboardNavigation: ex,
             onSelectSticker: eO,
-            rowCount: ev,
-            rowCountBySection: eS,
+            rowCount: eA,
+            rowCountBySection: eI,
             stickersCategories: el,
-            stickersGrid: eI,
+            stickersGrid: eS,
             channel: c
           }) : null
         })), (0, r.jsx)(w.A, {

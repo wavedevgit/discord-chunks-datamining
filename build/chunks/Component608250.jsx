@@ -2,7 +2,7 @@
 /** chunk id: 608250, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  v: () => I
+  v: () => S
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -56,19 +56,19 @@ function E(e, t) {
   }), e
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = y(e, t), Object.getOwnPropertySymbols)
+  if (a = b(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -88,7 +88,7 @@ function O(e) {
   })
 }
 
-function A(e) {
+function v(e) {
   let {
     lottie: t,
     props: n
@@ -103,7 +103,7 @@ function A(e) {
   }, n))
 }
 
-function v(e) {
+function A(e) {
   let {
     rive: t,
     props: n
@@ -117,7 +117,7 @@ function v(e) {
   }, n))
 }
 
-function S(e) {
+function I(e) {
   let {
     ref: t,
     src: n,
@@ -156,17 +156,17 @@ function S(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   var t, n;
   let {
     aspectRatio: i = "16/9"
-  } = e, a = b(e, ["aspectRatio"]), l = (0, u.G9)(), c = (0, o.R)(), p = null != (t = null == (n = l.isWindowFocused) ? true : n.call(l)) ? t : c;
+  } = e, a = y(e, ["aspectRatio"]), l = (0, u.G9)(), c = (0, o.R)(), p = null != (t = null == (n = l.isWindowFocused) ? true : n.call(l)) ? t : c;
 
   function h() {
     if ((0, f.wu)(a)) return (0, r.jsx)(O, m({}, a));
-    if ((0, f.al)(a)) return (0, r.jsx)(A, m({}, a));
-    if ((0, f.$P)(a)) return (0, r.jsx)(v, m({}, a));
-    if ((0, f.cZ)(a)) return (0, r.jsx)(S, E(m({}, a), {
+    if ((0, f.al)(a)) return (0, r.jsx)(v, m({}, a));
+    if ((0, f.$P)(a)) return (0, r.jsx)(A, m({}, a));
+    if ((0, f.cZ)(a)) return (0, r.jsx)(I, E(m({}, a), {
       isWindowFocused: p
     }));
     if ((0, f.Kh)(a)) return null == l.dynamicGraphicComponents ? (console.warn("Dynamic graphic used but no dynamicGraphicComponents provided in ManaContext"), null) : (0, d.o)({

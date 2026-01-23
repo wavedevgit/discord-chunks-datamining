@@ -15,9 +15,9 @@ function c(e) {
   let {
     className: t,
     isFolder: n
-  } = e, l = (0, a.rdh)(a.LU0.modules.guildbar.AVATAR_SIZE);
-  return (0, r.jsx)(s.Ay, {
-    mask: s.Ay.Masks.SQUIRCLE,
+  } = e, l = (0, s.rdh)(s.LU0.modules.guildbar.AVATAR_SIZE);
+  return (0, r.jsx)(a.Ay, {
+    mask: a.Ay.Masks.SQUIRCLE,
     className: i()(t, o.OL, {
       [o.lQ]: n
     }),

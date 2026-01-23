@@ -96,10 +96,10 @@ let V = 80,
   };
 
 function q(e) {
-  S.default.track(P.HAw.PREMIUM_PROMOTION_OPENED, {
+  I.default.track(P.HAw.PREMIUM_PROMOTION_OPENED, {
     location_page: null != e.guild_id ? P.liQ.GUILD_CHANNEL : P.liQ.DM_CHANNEL,
     location_section: P.JJy.STICKER_POPOUT
-  }), (0, y.Z)()
+  }), (0, b.Z)()
 }
 
 function X(e) {
@@ -156,12 +156,12 @@ let Z = e => {
         let {
           channel: e
         } = m.current;
-        S.default.track(P.HAw.OPEN_POPOUT, k({
+        I.default.track(P.HAw.OPEN_POPOUT, k({
           type: P.JJy.STICKER_POPOUT,
           guild_id: e.getGuildId(),
           sticker_pack_id: n.pack_id
         }, (0, _.dI)(e)))
-      }, [n.pack_id]), c || null == l) return (0, r.jsx)(b.Y0, {
+      }, [n.pack_id]), c || null == l) return (0, r.jsx)(y.Y0, {
       className: L.v0
     });
     let g = u,
@@ -171,7 +171,7 @@ let Z = e => {
           stickerPickerCategories: p
         }), t()
       };
-    return (0, r.jsxs)(b.Uq, {
+    return (0, r.jsxs)(y.Uq, {
       className: L.Bm,
       children: [(0, r.jsx)(d.Heading, {
         variant: "heading-md/semibold",
@@ -202,13 +202,13 @@ let Z = e => {
         sticker: n,
         channel: a,
         closePopout: l,
-        refreshPositionKey: y
+        refreshPositionKey: b
       } = e,
       [T, C] = i.useState(null),
       [N, w] = i.useState(false),
-      M = v.default.getCurrentUser(),
-      U = I.Ay.canUseCustomStickersEverywhere(M),
-      V = (0, o.bG)([A.A], () => A.A.getGuild(n.guild_id)),
+      M = A.default.getCurrentUser(),
+      U = S.Ay.canUseCustomStickersEverywhere(M),
+      V = (0, o.bG)([v.A], () => v.A.getGuild(n.guild_id)),
       F = null != V,
       [Y, K] = i.useState(false),
       [z, Z] = i.useState(null),
@@ -223,7 +223,7 @@ let Z = e => {
       }, (0, _.dI)(a))),
       J = {
         stickerSourceGuild: V,
-        refreshPositionKey: y
+        refreshPositionKey: b
       },
       ee = i.useRef(J);
     i.useEffect(() => {
@@ -252,10 +252,10 @@ let Z = e => {
         } = ee.current;
         e()
       }, [N, T]), (0, p.Ay)(() => {
-        S.default.track(P.HAw.OPEN_POPOUT, k({
+        I.default.track(P.HAw.OPEN_POPOUT, k({
           type: ei
         }, $))
-      }), !N) return (0, r.jsx)(b.Y0, {
+      }), !N) return (0, r.jsx)(y.Y0, {
       className: L.v0
     });
     {
@@ -302,7 +302,7 @@ let Z = e => {
           if (!en && !F) return;
           let t = (null != (e = null == T ? true : T.stickers) ? e : []).slice(0, W + 1).filter(e => e.id !== n.id).slice(0, W),
             i = () => {
-              y(), K(!Y)
+              b(), K(!Y)
             },
             a = null != T ? m.GO.createFromDiscoverableGuild(T) : m.GO.createFromGuildRecord(V);
           return (0, r.jsxs)("div", {
@@ -341,7 +341,7 @@ let Z = e => {
                 className: j.LX,
                 children: t.map(e => (0, r.jsx)(c.m, G(k({
                   text: e.name
-                }, b.Uk), {
+                }, y.Uk), {
                   children: (0, r.jsx)("div", {
                     className: s()(j.Th, {
                       [L.vT]: null != z && z !== e.id
@@ -366,7 +366,7 @@ let Z = e => {
             })]
           })
         };
-      return (0, r.jsxs)(b.Uq, {
+      return (0, r.jsxs)(y.Uq, {
         className: j.Bm,
         children: [e(), (null != V || null != T) && i()]
       })
@@ -379,7 +379,7 @@ function $(e) {
     closePopout: n,
     sticker: i
   } = e;
-  return (0, r.jsx)(b.Uq, {
+  return (0, r.jsx)(y.Uq, {
     className: L.Bm,
     children: (0, r.jsx)(X, {
       sticker: i,
@@ -412,5 +412,5 @@ let J = e => {
     channel: n,
     closePopout: i,
     sticker: t
-  }) : (i(), null) : (0, r.jsx)(b.Y0, {})
+  }) : (i(), null) : (0, r.jsx)(y.Y0, {})
 }

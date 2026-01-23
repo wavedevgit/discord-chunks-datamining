@@ -9,36 +9,36 @@ let i = {
   getStatus: function(e) {
     let t, n, i = arguments.length > 1 && true !== arguments[1] && arguments[1];
     switch (e) {
-      case l.S7L.CONNECTING:
-        t = l.vkP.CONNECTING, n = r.intl.string(r.t.MzW9sN);
+      case r.S7L.CONNECTING:
+        t = r.vkP.CONNECTING, n = l.intl.string(l.t.MzW9sN);
         break;
-      case l.S7L.AUTHENTICATING:
-        t = l.vkP.CONNECTING, n = r.intl.string(r.t.GxXwE2);
+      case r.S7L.AUTHENTICATING:
+        t = r.vkP.CONNECTING, n = l.intl.string(l.t.GxXwE2);
         break;
-      case l.S7L.AWAITING_ENDPOINT:
-        t = l.vkP.CONNECTING, n = r.intl.string(r.t.xEbu0Q);
+      case r.S7L.AWAITING_ENDPOINT:
+        t = r.vkP.CONNECTING, n = l.intl.string(l.t.xEbu0Q);
         break;
-      case l.S7L.RTC_CONNECTED:
-        t = l.vkP.CONNECTED, n = i ? r.intl.string(r.t.HtVOdd) : r.intl.string(r.t.daXg45);
+      case r.S7L.RTC_CONNECTED:
+        t = r.vkP.CONNECTED, n = i ? l.intl.string(l.t.HtVOdd) : l.intl.string(l.t.daXg45);
         break;
-      case l.S7L.RTC_CONNECTING:
-        t = l.vkP.CONNECTING, n = r.intl.string(r.t.Gp51dl);
+      case r.S7L.RTC_CONNECTING:
+        t = r.vkP.CONNECTING, n = l.intl.string(l.t.Gp51dl);
         break;
-      case l.S7L.ICE_CHECKING:
-        t = l.vkP.CONNECTING, n = r.intl.string(r.t["rdCyA/"]);
+      case r.S7L.ICE_CHECKING:
+        t = r.vkP.CONNECTING, n = l.intl.string(l.t["rdCyA/"]);
         break;
-      case l.S7L.DTLS_CONNECTING:
-        t = l.vkP.CONNECTING, n = r.intl.string(r.t.UvB3gV);
+      case r.S7L.DTLS_CONNECTING:
+        t = r.vkP.CONNECTING, n = l.intl.string(l.t.UvB3gV);
         break;
-      case l.S7L.NO_ROUTE:
-        t = l.vkP.ERROR, n = r.intl.string(r.t.mGhOIi);
+      case r.S7L.NO_ROUTE:
+        t = r.vkP.ERROR, n = l.intl.string(l.t.mGhOIi);
         break;
-      case l.S7L.RTC_DISCONNECTED:
-        t = l.vkP.ERROR, n = r.intl.string(r.t.M7LDmE);
+      case r.S7L.RTC_DISCONNECTED:
+        t = r.vkP.ERROR, n = l.intl.string(l.t.M7LDmE);
         break;
-      case l.S7L.DISCONNECTED:
+      case r.S7L.DISCONNECTED:
       default:
-        t = l.vkP.ERROR, n = r.intl.string(r.t.NLKQbx)
+        t = r.vkP.ERROR, n = l.intl.string(l.t.NLKQbx)
     }
     return {
       connectionStatus: t,

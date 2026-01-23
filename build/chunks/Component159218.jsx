@@ -114,7 +114,7 @@ let j = Chunk64700.forwardRef(function(e, t) {
       analyticsLocations: l
     } = (0, _.Ay)(), {
       trackUserProfileAction: c
-    } = (0, y.NJ)(), d = () => {
+    } = (0, b.NJ)(), d = () => {
       c({
         action: "PRESS_ADD_CUSTOM_STATUS"
       }), null == i || i(), (0, u.mMO)(async () => {
@@ -180,17 +180,17 @@ let j = Chunk64700.forwardRef(function(e, t) {
       animate: h,
       className: g,
       renderToolbar: E,
-      onShowToolbar: b,
-      placeholderText: A,
-      hasEntered: v = true
-    } = e, S = (0, O.NR)(), {
+      onShowToolbar: y,
+      placeholderText: v,
+      hasEntered: A = true
+    } = e, I = (0, O.NR)(), {
       trackUserProfileAction: N
-    } = (0, y.NJ)(), R = (0, m.h)({
+    } = (0, b.NJ)(), R = (0, m.h)({
       location: "CustomStatusBubble"
-    }), w = 1.25 * (null != p), P = 36 + w, D = 144 + w, x = i.useRef(null), j = i.useRef(null), M = i.useRef(null), k = i.useRef(P), U = i.useRef(D), G = null != p && null == _, [V, F] = i.useState(false), [B, H] = i.useState(true), [Y, W] = i.useState(!G && v), K = v && V, z = (0, l.bG)([d.A], () => d.A.useReducedMotion), [q] = i.useState(() => new c.Ep);
+    }), w = 1.25 * (null != p), P = 36 + w, D = 144 + w, x = i.useRef(null), j = i.useRef(null), M = i.useRef(null), k = i.useRef(P), U = i.useRef(D), G = null != p && null == _, [V, F] = i.useState(false), [B, H] = i.useState(true), [Y, W] = i.useState(!G && A), K = A && V, z = (0, l.bG)([d.A], () => d.A.useReducedMotion), [q] = i.useState(() => new c.Ep);
     i.useEffect(() => () => q.stop(), [q]), i.useEffect(() => {
-      null == S || S.onInteractionPopoutTargetRefChange(x)
-    }, [S]);
+      null == I || I.onInteractionPopoutTargetRefChange(x)
+    }, [I]);
     let [X, Z] = (0, u.zhh)(() => ({
       maxHeight: "".concat(k.current, "px"),
       config: {
@@ -223,7 +223,7 @@ let j = Chunk64700.forwardRef(function(e, t) {
         emoji: p,
         animate: h,
         hideTooltip: false,
-        tooltipDelay: I.In,
+        tooltipDelay: S.In,
         className: C.H0
       }) : null,
       J = null != _ ? (0, r.jsx)(u.Text, {
@@ -231,12 +231,12 @@ let j = Chunk64700.forwardRef(function(e, t) {
         className: C.qS,
         children: _
       }) : null,
-      ee = true === A || null != p && R ? null : (0, r.jsx)(u.Text, {
+      ee = true === v || null != p && R ? null : (0, r.jsx)(u.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        "aria-label": "".concat(T.intl.string(T.t.EVV6uZ), ": ").concat(A),
+        "aria-label": "".concat(T.intl.string(T.t.EVV6uZ), ": ").concat(v),
         className: s()(C.qS, R && C.R9),
-        children: null != A ? A : ""
+        children: null != v ? v : ""
       }),
       et = null == J || "" === _ ? ee : J,
       en = (0, r.jsxs)("div", {
@@ -266,7 +266,7 @@ let j = Chunk64700.forwardRef(function(e, t) {
       ea = (0, r.jsxs)(L, {
         children: [en, er]
       });
-    return null == b ? (0, r.jsxs)(r.Fragment, {
+    return null == y ? (0, r.jsxs)(r.Fragment, {
       children: [ea, (0, r.jsxs)("div", {
         ref: x,
         className: s()(C.kL, g),
@@ -298,19 +298,19 @@ let j = Chunk64700.forwardRef(function(e, t) {
         ref: x,
         className: s()(C.kL, g),
         onFocus: () => {
-          b(true), Q(true)
+          y(true), Q(true)
         },
         onBlur: e => {
           var t;
-          (null == (t = x.current) ? true : t.contains(e.relatedTarget)) || (b(false), Q(false))
+          (null == (t = x.current) ? true : t.contains(e.relatedTarget)) || (y(false), Q(false))
         },
         onMouseEnter: () => {
           N({
             action: "HOVER_CUSTOM_STATUS"
-          }), b(true), Q(true)
+          }), y(true), Q(true)
         },
         onMouseLeave: () => {
-          b(false), Q(false)
+          y(false), Q(false)
         },
         children: [(0, r.jsx)(u.vN3, {
           children: (0, r.jsx)("div", {
@@ -339,7 +339,7 @@ let j = Chunk64700.forwardRef(function(e, t) {
       text: o,
       className: C.LL,
       onShowToolbar: f,
-      renderToolbar: e => (0, r.jsx)(S.A, {
+      renderToolbar: e => (0, r.jsx)(I.A, {
         isVisible: d,
         isExpandable: e,
         onCloseProfile: l
@@ -357,13 +357,13 @@ function U(e) {
     themeType: l
   } = e, c = D(e, ["emoji", "text", "user", "guildId", "channelId", "themeType"]), {
     trackUserProfileAction: u
-  } = (0, y.NJ)(), {
+  } = (0, b.NJ)(), {
     interactionType: d,
     interactionSource: f,
     resetInteraction: p
-  } = (0, O.Pq)(), _ = f === I.dS.STATUS && d === I.AQ.REACT, h = f === I.dS.STATUS && d === I.AQ.REPLY, m = _ || h, g = i.useRef(null), b = i.useRef(t), S = i.useRef(n);
+  } = (0, O.Pq)(), _ = f === S.dS.STATUS && d === S.AQ.REACT, h = f === S.dS.STATUS && d === S.AQ.REPLY, m = _ || h, g = i.useRef(null), y = i.useRef(t), I = i.useRef(n);
   i.useEffect(() => {
-    f === I.dS.STATUS && ((b.current !== t || S.current !== n) && p(), b.current = t, S.current = n)
+    f === S.dS.STATUS && ((y.current !== t || I.current !== n) && p(), y.current = t, I.current = n)
   }, [f, p, t, n]);
   let [T, N] = i.useState(false), w = i.useCallback(e => {
     (e || !m) && N(e)
@@ -371,13 +371,13 @@ function U(e) {
     let e = x(t);
     return null == n ? e : L(e, n)
   };
-  return (0, r.jsx)(A.A, {
+  return (0, r.jsx)(v.A, {
     user: a,
     guildId: s,
     channelId: o,
     themeType: l,
     sourceDetails: j(),
-    sourceType: I.dS.STATUS,
+    sourceType: S.dS.STATUS,
     onAction: u,
     onClose: () => N(false),
     children: () => (0, r.jsx)(M, P(R({}, c), {
@@ -387,10 +387,10 @@ function U(e) {
       themeType: l,
       className: m ? C.zf : true,
       onShowToolbar: w,
-      renderToolbar: e => (0, r.jsx)(v.Ay, {
+      renderToolbar: e => (0, r.jsx)(A.Ay, {
         targetRef: g,
         user: a,
-        sourceType: I.dS.STATUS,
+        sourceType: S.dS.STATUS,
         isVisible: T && !m,
         isExpandable: e,
         onAction: u
@@ -410,7 +410,7 @@ let G = Chunk64700.forwardRef(function(e, t) {
     disableToolbar: f = false
   } = e, h = D(e, ["user", "onCloseProfile", "previewText", "previewEmoji", "placeholderText", "prompt", "disableToolbar"]), m = (0, g.A)(a.id), {
     analyticsLocations: E
-  } = (0, _.Ay)(p.A.USER_PROFILE_CUSTOM_STATUS_BUBBLE), y = (0, l.bG)([b.default], () => b.default.getId() === a.id), O = y && !f, A = !y && !a.bot && !f;
+  } = (0, _.Ay)(p.A.USER_PROFILE_CUSTOM_STATUS_BUBBLE), b = (0, l.bG)([y.default], () => y.default.getId() === a.id), O = b && !f, v = !b && !a.bot && !f;
   if (null != o || null != c) {
     let e = null != c ? c : null,
       n = null != o && "" !== o ? o : null;
@@ -424,36 +424,36 @@ let G = Chunk64700.forwardRef(function(e, t) {
       }, h))
     })
   }
-  let v = null != (n = null == m ? true : m.emoji) ? n : null,
-    S = null != (i = null == m ? true : m.state) ? i : null,
-    I = null != S && "" !== S ? S : null;
-  return null != v || null != I || O ? null == v && null == I ? (0, r.jsx)(_.f5, {
+  let A = null != (n = null == m ? true : m.emoji) ? n : null,
+    I = null != (i = null == m ? true : m.state) ? i : null,
+    S = null != I && "" !== I ? I : null;
+  return null != A || null != S || O ? null == A && null == S ? (0, r.jsx)(_.f5, {
     value: E,
     children: (0, r.jsx)(j, R({
       onCloseProfile: s,
       prompt: d,
       ref: t
     }, h))
-  }) : A ? (0, r.jsx)(_.f5, {
+  }) : v ? (0, r.jsx)(_.f5, {
     value: E,
     children: (0, r.jsx)(U, R({
       user: a,
-      emoji: v,
-      text: I
+      emoji: A,
+      text: S
     }, h))
   }) : O ? (0, r.jsx)(_.f5, {
     value: E,
     children: (0, r.jsx)(k, R({
-      emoji: v,
-      text: I,
+      emoji: A,
+      text: S,
       onCloseProfile: s,
       ref: t
     }, h))
   }) : (0, r.jsx)(_.f5, {
     value: E,
     children: (0, r.jsx)(M, R({
-      emoji: v,
-      text: I,
+      emoji: A,
+      text: S,
       ref: t
     }, h))
   }) : null

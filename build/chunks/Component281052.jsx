@@ -42,8 +42,8 @@ function j(e) {
   var t, n, i, j;
   let {
     guild: M
-  } = e, k = (0, s.bG)([S.default], () => {
-    let e = S.default.getCurrentUser();
+  } = e, k = (0, s.bG)([I.default], () => {
+    let e = I.default.getCurrentUser();
     return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
   }), U = (0, u.L)(D.PremiumTypes.TIER_2), {
     pendingAvatar: G,
@@ -79,9 +79,9 @@ function j(e) {
   }), q = null != M ? M : K;
   a()(null != q, "guild should not be null");
   let X = (0, c.EC)(q.id),
-    Z = (0, s.bG)([v.Ay], () => null == q.id ? null : v.Ay.getMember(q.id, k.id)),
-    Q = (0, s.bG)([A.A], () => A.A.getGuildMemberProfile(k.id, q.id)),
-    $ = I.Ay.canUsePremiumProfileCustomization(k),
+    Z = (0, s.bG)([A.Ay], () => null == q.id ? null : A.Ay.getMember(q.id, k.id)),
+    Q = (0, s.bG)([v.A], () => v.A.getGuildMemberProfile(k.id, q.id)),
+    $ = S.Ay.canUsePremiumProfileCustomization(k),
     J = (0, d.z5)(G, null == Z ? true : Z.avatar),
     ee = (0, d.Ac)(F, null == Q ? true : Q.banner),
     et = (0, R.lS)(Y, null == Q ? true : Q.themeColors),
@@ -102,7 +102,7 @@ function j(e) {
       currentNick: null == Z ? true : Z.nick,
       user: k,
       guild: q
-    }, "nick"), (0, r.jsx)(y.A, {
+    }, "nick"), (0, r.jsx)(b.A, {
       sectionTitle: x.intl.string(x.t["+T3RI/"]),
       errors: null == W ? true : W.pronouns,
       onPronounsChange: e => {
@@ -175,7 +175,7 @@ function j(e) {
         onBannerChange: ea,
         guildId: null == q ? true : q.id,
         disabled: !$
-      }, "banner"), (0, r.jsx)(b.A, {
+      }, "banner"), (0, r.jsx)(y.A, {
         user: k,
         pendingAvatarSrc: z,
         pendingColors: Y,

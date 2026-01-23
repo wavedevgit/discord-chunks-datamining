@@ -110,7 +110,7 @@ function er(e) {
 
 function ei(e) {
   return null == $[e] && ($ = B(V({}, $), {
-    [e]: new I.A({
+    [e]: new S.A({
       url: e
     })
   })), $[e]
@@ -121,7 +121,7 @@ function ea(e) {
 }
 
 function es(e) {
-  if ((0, d.A)(e)) return S.HT;
+  if ((0, d.A)(e)) return I.HT;
   if ((0, f.A)(e)) return er(e.name);
   let t = null != e.application_id ? m.A.getApplication(e.application_id) : null;
   return null != t ? t : (0, p.A)(e) && null != e.url ? ei(e.url) : (null != e.application_id && ea(e.application_id), t)
@@ -133,7 +133,7 @@ function eo(e) {
     tags: {
       source: "ACTIVITIES"
     }
-  }), null) : e === S.WY ? S.HT : e.startsWith(T.W) ? er(e.slice(T.W.length)) : e.startsWith(I.K) ? ei(e.slice(I.K.length)) : (ea(e), null)
+  }), null) : e === I.WY ? I.HT : e.startsWith(T.W) ? er(e.slice(T.W.length)) : e.startsWith(S.K) ? ei(e.slice(S.K.length)) : (ea(e), null)
 }
 
 function el(e) {
@@ -164,7 +164,7 @@ function ed(e) {
 function ef(e, t, n) {
   let r, i = j.default.getCurrentUser(),
     s = O.A.getUserAffinitiesMap(),
-    o = (0, v.L)(t, s, "NowPlayingViewStore - partiedMembers"),
+    o = (0, A.L)(t, s, "NowPlayingViewStore - partiedMembers"),
     d = o.map(e => e.id),
     f = o.filter(t => e.has(t.id)),
     p = false,
@@ -173,7 +173,7 @@ function ef(e, t, n) {
     g = false,
     E = [];
   for (let e of o) {
-    var I, T, R, L;
+    var S, T, R, L;
     let t = C.A.getAnyStreamForUser(e.id),
       n = N.A.getChannel(null == t ? true : t.channelId);
     if ((0, _.qR)(n)) continue;
@@ -183,9 +183,9 @@ function ef(e, t, n) {
         streamUser: e,
         activity: r
       }), null == r) continue;
-    let s = (0, b.A)(r);
+    let s = (0, y.A)(r);
     if (null == s) continue;
-    g = s === S.WY;
+    g = s === I.WY;
     let d = eo(s);
     if ((0, u.A)(r)) {
       let t = (0, l.A)();
@@ -202,7 +202,7 @@ function ef(e, t, n) {
           GuildStore: P.A
         }) !== c.Gy.CAN_JOIN) continue
     }
-    if (!y.IS(r) || null == d || m.has(d.id)) continue;
+    if (!b.IS(r) || null == d || m.has(d.id)) continue;
     let f = null != r ? es(r) : null;
     (null == f || f.id !== d.id) && (r = null);
     let O = [];
@@ -217,7 +217,7 @@ function ef(e, t, n) {
       game: d,
       activity: r,
       activityUser: e,
-      startedPlayingTime: null != (I = null == r || null == (T = r.timestamps) ? true : T.start) ? I : null == r ? true : r.created_at,
+      startedPlayingTime: null != (S = null == r || null == (T = r.timestamps) ? true : T.start) ? S : null == r ? true : r.created_at,
       playingMembers: O
     })
   }
@@ -233,7 +233,7 @@ function ef(e, t, n) {
     if (F.has(i) && V.has(t) || null == n || null == s || n.id === s.afkChannelId) null == n && (r = null, U = true);
     else {
       let e = M.A.getVoiceStatesForChannel(n.id),
-        l = (0, A.Y1)("NowPlayingViewStore - voiceMembers"),
+        l = (0, v.Y1)("NowPlayingViewStore - voiceMembers"),
         c = ed;
       null != l && (c = e => {
         var t, n;
@@ -319,14 +319,14 @@ function eE(e) {
   })
 }
 
-function eb(e) {
+function ey(e) {
   return e.map(e => ({
     type: U.ZzC.USER,
     party: e
   }))
 }
 
-function ey() {
+function eb() {
   if (J.size > 0) {
     let e = Array.from(J);
     h.Ay.fetchApplications(e), e.forEach(e => ee.add(e)), J.clear()
@@ -337,27 +337,27 @@ function eO() {
   return z && E.A.isConnected()
 }
 
-function eA() {
+function ev() {
   if (!eO()) returnfalse;
-  J.clear(), Z = eb(X = eE(e_(ep(ec(Array.from(et()).reduce((e, t) => {
+  J.clear(), Z = ey(X = eE(e_(ep(ec(Array.from(et()).reduce((e, t) => {
     let n = j.default.getUser(t);
     return null == n || n.bot || e.push(n), e
-  }, [])))))), ey(), q = true
+  }, [])))))), eb(), q = true
 }
-let ev = a().throttle(() => {
-  eA(), eR.emitChange()
+let eA = a().throttle(() => {
+  ev(), eR.emitChange()
 }, K);
 
-function eS() {
-  return !!eO() && (ev(), false)
+function eI() {
+  return !!eO() && (eA(), false)
 }
 
-function eI() {
+function eS() {
   z = false, X = [], Z = [], J.clear()
 }
 
 function eT() {
-  z = true, ev()
+  z = true, eA()
 }
 
 function eC() {
@@ -365,7 +365,7 @@ function eC() {
 }
 class eN extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.syncWith([j.default, m.A, x.A, w.A, M.A, C.A, L.A, R.A, O.A], eS), this.waitFor(m.A, C.A, N.A, R.A, w.A, E.A, P.A, D.A, x.A, L.A, O.A, j.default, M.A)
+    this.syncWith([j.default, m.A, x.A, w.A, M.A, C.A, L.A, R.A, O.A], eI), this.waitFor(m.A, C.A, N.A, R.A, w.A, E.A, P.A, D.A, x.A, L.A, O.A, j.default, M.A)
   }
   get currentActivityParties() {
     return X
@@ -382,7 +382,7 @@ class eN extends(r = Chunk311907.Ay.Store) {
 }
 G(eN, "displayName", "NowPlayingViewStore");
 let eR = new eN(Chunk73153.h, {
-    LOGOUT: eI,
+    LOGOUT: eS,
     NOW_PLAYING_MOUNTED: eT,
     NOW_PLAYING_UNMOUNTED: eC
   }),

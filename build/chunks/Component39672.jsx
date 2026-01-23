@@ -61,10 +61,10 @@ function g(e) {
     hasCancelableGuildBoostSlot: h,
     premiumSubscription: g,
     onSelect: E,
-    fractionalState: b
+    fractionalState: y
   } = e;
 
-  function y() {
+  function b() {
     (0, a.mMO)(async () => {
       let {
         default: e
@@ -87,7 +87,7 @@ function g(e) {
     })
   }
 
-  function A() {
+  function v() {
     (0, a.mMO)(async () => {
       let {
         default: e
@@ -97,7 +97,7 @@ function g(e) {
       }))
     })
   }
-  let v = {
+  let A = {
     transfer: {
       label: null != t.premiumGuildSubscription ? d.intl.string(d.t["PR0n//"]) : d.intl.string(d.t["+fmEYG"]),
       subtext: t.isOnCooldown() ? d.intl.string(d.t.XnB8M0) : null,
@@ -116,13 +116,13 @@ function g(e) {
   };
   switch (g.status) {
     case c.Dmq.PAST_DUE:
-      v.cancel.disabled = true, v.cancel.subtext = d.intl.string(d.t.WnL6DV), v.uncancel.disabled = true;
+      A.cancel.disabled = true, A.cancel.subtext = d.intl.string(d.t.WnL6DV), A.uncancel.disabled = true;
       break;
     case c.Dmq.PAUSE_PENDING:
     case c.Dmq.PAUSED:
-      b === u.xc.NONE && (v.transfer.disabled = true, v.transfer.subtext = d.intl.string(d.t.LiLRRT), v.cancel.subtext = d.intl.string(d.t["1ywaWL"]), v.cancel.disabled = true, v.uncancel.disabled = true)
+      y === u.xc.NONE && (A.transfer.disabled = true, A.transfer.subtext = d.intl.string(d.t.LiLRRT), A.cancel.subtext = d.intl.string(d.t["1ywaWL"]), A.cancel.disabled = true, A.uncancel.disabled = true)
   }
-  let S = i.useMemo(() => g.isPausedOrPausePending && b === u.xc.NONE ? (0, r.jsx)(a.Drp, {
+  let I = i.useMemo(() => g.isPausedOrPausePending && y === u.xc.NONE ? (0, r.jsx)(a.Drp, {
     id: "manage-subscription",
     label: d.intl.string(d.t.obRG6Y),
     action: () => (0, o.openUserSettings)(s.X.SUBSCRIPTIONS_PANEL, {
@@ -130,7 +130,7 @@ function g(e) {
     }),
     iconLeft: a.xmO,
     className: f.v
-  }) : null, [b, g]);
+  }) : null, [y, g]);
   return (0, r.jsxs)(a.W1t, {
     onSelect: E,
     navId: "subscription-context",
@@ -139,23 +139,23 @@ function g(e) {
     onClose: p,
     children: [(0, r.jsx)(a.Drp, {
       id: "apply",
-      label: v.transfer.label,
-      subtext: v.transfer.subtext,
-      action: y,
-      disabled: v.transfer.disabled
+      label: A.transfer.label,
+      subtext: A.transfer.subtext,
+      action: b,
+      disabled: A.transfer.disabled
     }), (0, l.I5)(t) ? (0, r.jsx)(a.Drp, {
       id: "uncancel",
-      label: v.uncancel.label,
-      subtext: v.uncancel.subtext,
-      action: A,
-      disabled: v.uncancel.disabled
+      label: A.uncancel.label,
+      subtext: A.uncancel.subtext,
+      action: v,
+      disabled: A.uncancel.disabled
     }) : (0, r.jsx)(a.Drp, {
       id: "cancel",
-      label: v.cancel.label,
-      subtext: v.cancel.subtext,
+      label: A.cancel.label,
+      subtext: A.cancel.subtext,
       action: O,
-      disabled: v.cancel.disabled,
+      disabled: A.cancel.disabled,
       color: "danger"
-    }), S]
+    }), I]
   })
 }

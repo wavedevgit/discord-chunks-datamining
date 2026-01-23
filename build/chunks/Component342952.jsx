@@ -42,7 +42,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,8 +53,8 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -66,12 +66,12 @@ function O(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = A(e, t), Object.getOwnPropertySymbols)
+  if (a = v(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function A(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -79,7 +79,7 @@ function A(e, t) {
   return i
 }
 
-function v() {
+function A() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : u._3J.SIZE_24;
   switch (e) {
     case u._3J.SIZE_16:
@@ -92,7 +92,7 @@ function v() {
   }
 }
 
-function S() {
+function I() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : u._3J.SIZE_24;
   switch (e) {
     case u._3J.SIZE_16:
@@ -104,7 +104,7 @@ function S() {
   }
 }
 
-function I(e) {
+function S(e) {
   let {
     users: t,
     maxUsers: n,
@@ -113,36 +113,36 @@ function I(e) {
     size: o = u._3J.SIZE_24,
     shouldShowOverflowCount: d,
     disableUsernameTooltip: f
-  } = e, h = v(o), g = d ? n - 1 : Math.min(t.length, n), E = g - 1, b = l()(t).take(g).map((e, t) => {
+  } = e, h = A(o), g = d ? n - 1 : Math.min(t.length, n), E = g - 1, y = l()(t).take(g).map((e, t) => {
     let n = p.Ay.getNickname(i, a, e),
       l = null != n ? n : _.Ay.getName(e),
       g = t === E && !d,
-      b = s()(m.my, h, g && m.NE),
-      y = (0, r.jsx)(u.euF, {
+      y = s()(m.my, h, g && m.NE),
+      b = (0, r.jsx)(u.euF, {
         src: e.getAvatarURL(i, 24),
         size: o,
         "aria-hidden": true
       });
     return (0, r.jsx)("li", {
-      className: b,
+      className: y,
       children: f ? (0, r.jsx)("span", {
         role: "img",
         "aria-label": l,
-        children: y
+        children: b
       }) : (0, r.jsx)(c.m, {
         text: l,
         ariaHidden: true,
         children: (0, r.jsx)("span", {
           role: "img",
           "aria-label": l,
-          children: y
+          children: b
         })
       })
     }, e.id)
   }).value();
   return (0, r.jsx)("ul", {
     className: m.HD,
-    children: b
+    children: y
   })
 }
 
@@ -153,7 +153,7 @@ function T(e) {
     color: i = "interactive-text-default",
     size: a = u._3J.SIZE_24,
     className: o
-  } = e, l = v(a), c = null != n ? n : S(a);
+  } = e, l = A(a), c = null != n ? n : I(a);
   return (0, r.jsxs)(u.Text, {
     variant: c,
     color: i,
@@ -181,7 +181,7 @@ function C(e) {
     hideOverflowCount: c = false
   } = e, d = t.length - n, f = d + 1, p = d > 0 && !c;
   return t.length <= 0 ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(I, {
+    children: [(0, r.jsx)(S, {
       users: t,
       maxUsers: n,
       guildId: i,
@@ -224,11 +224,11 @@ function R(e) {
     className: c,
     size: _ = u._3J.SIZE_24,
     overflowCountVariant: g,
-    overflowCountColor: b = "interactive-text-default",
+    overflowCountColor: y = "interactive-text-default",
     overflowCountClassName: O,
-    hideOverflowCount: A = false,
-    disableUsernameTooltip: v = false,
-    disableUserPopout: S = false,
+    hideOverflowCount: v = false,
+    disableUsernameTooltip: A = false,
+    disableUserPopout: I = false,
     onClickOverflow: C,
     onFocusOverflow: N,
     onUserClick: R,
@@ -236,7 +236,7 @@ function R(e) {
     "aria-label": P,
     "aria-labelledby": D,
     "aria-hidden": x
-  } = e, [L, j] = i.useState(false), M = i.useRef(null), k = t.length - a, U = k + 1, G = k > 0 && !A && !x, V = () => (0, r.jsx)(u.lGe, {
+  } = e, [L, j] = i.useState(false), M = i.useRef(null), k = t.length - a, U = k + 1, G = k > 0 && !v && !x, V = () => (0, r.jsx)(u.lGe, {
     className: m.XM,
     "aria-label": P,
     "aria-labelledby": D,
@@ -247,7 +247,7 @@ function R(e) {
         guildId: o,
         channelId: l,
         nick: p.Ay.getNickname(o, l, e),
-        disablePopout: "function" == typeof S ? S(e.id) : S,
+        disablePopout: "function" == typeof I ? I(e.id) : I,
         onClick: R,
         onPopoutRequestClose: () => {
           j(false), null == w || w()
@@ -256,7 +256,7 @@ function R(e) {
           let {
             default: t
           } = await Promise.all([n.e("97262"), n.e("32418"), n.e("8893")]).then(n.bind(n, 668569));
-          return n => (0, r.jsx)(t, y(E({}, n), {
+          return n => (0, r.jsx)(t, b(E({}, n), {
             user: e,
             guildId: o,
             channelId: l
@@ -272,7 +272,7 @@ function R(e) {
     shouldShow: L,
     position: "bottom",
     onRequestClose: () => j(false),
-    children: e => (0, r.jsx)(u.DUT, y(E({}, e), {
+    children: e => (0, r.jsx)(u.DUT, b(E({}, e), {
       innerRef: M,
       className: m.x6,
       onFocus: N,
@@ -285,7 +285,7 @@ function R(e) {
       children: (0, r.jsx)(T, {
         count: U,
         textVariant: g,
-        color: b,
+        color: y,
         size: _,
         className: O
       })
@@ -297,14 +297,14 @@ function R(e) {
     "aria-labelledby": D,
     className: s()(c, m.HD),
     "aria-hidden": x,
-    children: [(0, r.jsx)(I, {
+    children: [(0, r.jsx)(S, {
       users: t,
       maxUsers: a,
       guildId: o,
       channelId: l,
       size: _,
       shouldShowOverflowCount: G,
-      disableUsernameTooltip: v
+      disableUsernameTooltip: A
     }), F()]
   })
 }

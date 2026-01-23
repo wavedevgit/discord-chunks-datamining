@@ -51,13 +51,13 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e) {
+function b(e) {
   let {
     id: t,
     experiment: n,
@@ -136,23 +136,23 @@ function O() {
       } = e;
       return null == t
     }), [p]),
-    A = i.useMemo(() => E.map(y), [E]),
-    v = i.useMemo(() => O.map(y), [O]),
-    S = (0, r.jsx)(o.aK1, {
+    v = i.useMemo(() => E.map(b), [E]),
+    A = i.useMemo(() => O.map(b), [O]),
+    I = (0, r.jsx)(o.aK1, {
       id: "experiments-search",
-      control: (e, t) => (0, r.jsx)(o.VPO, b(g({}, e), {
+      control: (e, t) => (0, r.jsx)(o.VPO, y(g({}, e), {
         query: c,
         onChange: f,
         ref: t,
         placeholder: h.intl.string(h.t["5h0QOP"])
       }))
     }, "experiments-search");
-  return A.length > 0 ? [(0, r.jsx)(o.rXV, {
+  return v.length > 0 ? [(0, r.jsx)(o.rXV, {
     label: "Overridden Experiments",
-    children: A
+    children: v
   }, "overridden-group"), (0, r.jsx)(o.bXX, {}, "separator-2"), (0, r.jsxs)(o.Drp, {
     id: "other-experiments",
     label: "Other Experiments",
-    children: [S, v]
-  }, "other-experiments")] : [S, ...v]
+    children: [I, A]
+  }, "other-experiments")] : [I, ...A]
 }

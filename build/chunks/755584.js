@@ -25,25 +25,25 @@ let p = {
       userLimit: m,
       parentId: g,
       skuId: E,
-      branchId: b
+      branchId: y
     } = e;
     a.h.dispatch({
       type: "CREATE_CHANNEL_MODAL_SUBMIT",
       guildId: t,
       channelType: n
     });
-    let y = {
+    let b = {
       type: n,
       name: p,
       permission_overwrites: _
     };
-    if (null != h && h !== d.gp3 && (y.bitrate = h), null != m && m > 0 && (y.user_limit = m), null != g && (y.parent_id = g), n === d.rbe.GUILD_STORE) {
+    if (null != h && h !== d.gp3 && (b.bitrate = h), null != m && m > 0 && (b.user_limit = m), null != g && (b.parent_id = g), n === d.rbe.GUILD_STORE) {
       if (null == E) throw Error("Unexpected missing SKU");
-      y.sku_id = E, y.branch_id = b
+      b.sku_id = E, b.branch_id = y
     }
     return c.A.post({
       url: d.Rsh.GUILD_CHANNELS(t),
-      body: y,
+      body: b,
       oldFormErrors: true,
       trackedActionData: {
         event: r.NetworkActionNames.CHANNEL_CREATE,

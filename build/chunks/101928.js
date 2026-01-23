@@ -23,19 +23,19 @@ function f(e) {
     pendingAvatarSrc: m,
     isPreview: g,
     forceUserTheme: E
-  } = e, b = (0, o.Ay)(), y = (0, i.bG)([l.A], () => l.A.syncProfileThemeWithUserTheme), O = null != m ? m : null == p ? true : p.getAvatarURL(null == _ ? true : _.guildId, 80), A = (0, a.nt)("PRIMARY_530", {
+  } = e, y = (0, o.Ay)(), b = (0, i.bG)([l.A], () => l.A.syncProfileThemeWithUserTheme), O = null != m ? m : null == p ? true : p.getAvatarURL(null == _ ? true : _.guildId, 80), v = (0, a.nt)("PRIMARY_530", {
     saturation: 1
-  }), [v, S] = (0, c.rh)(O, A, false);
+  }), [A, I] = (0, c.rh)(O, v, false);
   if (!(null == _ ? true : _.canEditThemes) && !g) return {
-    theme: b,
+    theme: y,
     primaryColor: null,
     secondaryColor: null
   };
-  let I = null == _ ? true : _.getPreviewThemeColors(h),
-    T = null != (t = null == I ? true : I[0]) ? t : (0, r.LX)(v),
-    C = null != (n = null == I ? true : I[1]) ? n : (0, r.LX)(S),
-    N = y || E ? b : null != (f = (0, u.tM)(T)) ? f : b;
-  return N === d.NJ8.DARK && (0, s.Mw)(b) ? N = b : N === d.NJ8.DARK && (0, s.qB)(b) && (N = d.NJ8.DARKER), {
+  let S = null == _ ? true : _.getPreviewThemeColors(h),
+    T = null != (t = null == S ? true : S[0]) ? t : (0, r.LX)(A),
+    C = null != (n = null == S ? true : S[1]) ? n : (0, r.LX)(I),
+    N = b || E ? y : null != (f = (0, u.tM)(T)) ? f : y;
+  return N === d.NJ8.DARK && (0, s.Mw)(y) ? N = y : N === d.NJ8.DARK && (0, s.qB)(y) && (N = d.NJ8.DARKER), {
     theme: N,
     primaryColor: T,
     secondaryColor: C

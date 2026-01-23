@@ -26,7 +26,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk5867 = require("./5867.js"),
   Chunk130139 = require("./130139.js");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -90,7 +90,7 @@ let w = 490,
   x = 200,
   L = 120,
   j = Chunk64700.forwardRef(function(e, t) {
-    var n, a, S, T, R, j, M, k, U;
+    var n, a, I, T, R, j, M, k, U;
     let {
       channel: G,
       type: V,
@@ -101,11 +101,11 @@ let w = 490,
     } = e, W = (0, h.GV)(), K = (0, l.bG)([E.A], () => {
       var e;
       return null != (e = E.A.getGuild(G.guild_id)) ? e : null
-    }, [G.guild_id]), z = i.useRef(null), [q, X, Z] = (0, O.A)(C(I({}, e), {
+    }, [G.guild_id]), z = i.useRef(null), [q, X, Z] = (0, O.A)(C(S({}, e), {
       guild: K
-    }), t, z), Q = (null == (S = V.autocomplete) ? true : S.forceChatLayer) ? g.Ay : m.Ay, $ = (0, p.aI)(q.selectedIndex);
+    }), t, z), Q = (null == (I = V.autocomplete) ? true : I.forceChatLayer) ? g.Ay : m.Ay, $ = (0, p.aI)(q.selectedIndex);
     (0, _.gf)(W, q.isVisible, $);
-    let J = (0, y.l)({
+    let J = (0, b.l)({
         editorHeight: F,
         type: V,
         state: q
@@ -113,7 +113,7 @@ let w = 490,
       ee = (0, l.bG)([d.Ay], () => {
         let e = d.Ay.getSelfEmbeddedActivityForChannel(G.id),
           t = d.Ay.getActivityPanelMode();
-        return (0, u.AX)(G) && null != e && (0, f.H)(e.location) === G.id && t === A.Gd.PANEL
+        return (0, u.AX)(G) && null != e && (0, f.H)(e.location) === G.id && t === v.Gd.PANEL
       }, [G]),
       et = i.useMemo(() => (null == J ? true : J.top) == null && (null == J ? true : J.left) == null && (null == J ? true : J.bottom) == null && (null == J ? true : J.right) == null ? "" : String(Date.now()), [null == J ? true : J.top, null == J ? true : J.left, null == J ? true : J.bottom, null == J ? true : J.right]);
     if (i.useEffect(() => {
@@ -132,21 +132,21 @@ let w = 490,
     })) ? n : null;
     if (null == en) return null;
     let er = {
-        [v.pK]: null == J,
-        [v.YB]: null != J,
-        [v.sQ]: null == J && "bottom" === e.position,
-        [v.mO]: ee,
-        [v.Wi]: (null == (R = q.query) ? true : R.type) === b.DB.MENTION_SUGGESTIONS
+        [A.pK]: null == J,
+        [A.YB]: null != J,
+        [A.sQ]: null == J && "bottom" === e.position,
+        [A.mO]: ee,
+        [A.Wi]: (null == (R = q.query) ? true : R.type) === y.DB.MENTION_SUGGESTIONS
       },
       ei = w;
-    null != J && (ei = (null == (M = V.autocomplete) ? true : M.small) ? x : (null == (k = q.query) ? true : k.type) === b.DB.EMOJIS_AND_STICKERS ? P : D);
+    null != J && (ei = (null == (M = V.autocomplete) ? true : M.small) ? x : (null == (k = q.query) ? true : k.type) === y.DB.EMOJIS_AND_STICKERS ? P : D);
     let ea = Math.max(F, null != (a = null == H || null == (j = H.current) ? true : j.clientHeight) ? a : 0),
       es = Math.min(.5 * window.innerHeight, ea);
     ei = Math.min(window.innerHeight - L - es - (null != Y ? Y : 0), ei);
     let eo = (0, r.jsx)(p.Ay, {
       id: W,
-      className: s()(v.nx, er),
-      innerClassName: v.Fv,
+      className: s()(A.nx, er),
+      innerClassName: A.Fv,
       onMouseDown: e => e.preventDefault(),
       children: (0, r.jsx)(o.hD, {
         navigator: Z,
@@ -155,7 +155,7 @@ let w = 490,
             let {
               ref: t
             } = e, n = N(e, ["ref"]);
-            return (0, r.jsx)(c.ChK, C(I({
+            return (0, r.jsx)(c.ChK, C(S({
               id: W,
               ref: e => {
                 var n;
@@ -164,7 +164,7 @@ let w = 490,
               orientation: "vertical",
               overflow: "auto"
             }, n), {
-              className: v.XG,
+              className: A.XG,
               style: {
                 maxHeight: ei
               },

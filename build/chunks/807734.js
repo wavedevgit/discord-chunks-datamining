@@ -19,14 +19,14 @@ let u = function(e) {
   } = e, {
     methods: m,
     loading: p
-  } = (0, l.cf)([r.A], () => ({
-    methods: r.A.methods,
-    loading: r.A.loading
+  } = (0, l.cf)([i.A], () => ({
+    methods: i.A.methods,
+    loading: i.A.loading
   })), {
     initiateAgeVerification: h
   } = (0, o.nn)({
     onComplete: t,
-    entryPoint: i.q1.EXPRESSIVE_GET_STARTED,
+    entryPoint: r.q1.EXPRESSIVE_GET_STARTED,
     shouldShowExpressiveModal: true,
     classificationId: u
   });
@@ -45,7 +45,7 @@ let u = function(e) {
         title: d.intl.string(a),
         description: d.intl.string(l),
         onClick: async t => {
-          (0, i.St)(t, i.WU.EXPRESSIVE_PRIMARY, i._7.METHOD_SELECT, e), null == n || n(), await h(e)
+          (0, r.St)(t, r.WU.EXPRESSIVE_PRIMARY, r._7.METHOD_SELECT, e), null == n || n(), await h(e)
         }
       }
     }).filter(e => null != e),

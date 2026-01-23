@@ -29,19 +29,19 @@ function h() {
       isMuted: u.A.isMuted
     })),
     [g, E] = (0, i.useState)(false),
-    [b, y] = (0, i.useState)(false),
+    [y, b] = (0, i.useState)(false),
     O = (0, i.useRef)(false),
-    A = m ? 0 : 100 * h,
-    v = g || b,
-    S = e => {
-      (0, l.ls)(e / 100), y(true), clearTimeout(O.current), O.current = setTimeout(() => {
-        y(false)
+    v = m ? 0 : 100 * h,
+    A = g || y,
+    I = e => {
+      (0, l.ls)(e / 100), b(true), clearTimeout(O.current), O.current = setTimeout(() => {
+        b(false)
       }, _)
     };
   (0, i.useEffect)(() => {
     null != n.current && (n.current.volume = h)
   }, [h]);
-  let I = m ? o._RO : A > 90 ? o.HKD : o.S24;
+  let S = m ? o._RO : v > 90 ? o.HKD : o.S24;
   return (0, r.jsxs)("div", {
     onMouseEnter: () => E(true),
     onMouseLeave: () => E(false),
@@ -51,22 +51,22 @@ function h() {
       className: f.b,
       style: {
         color: t,
-        borderLeft: v ? 0 : true
+        borderLeft: A ? 0 : true
       },
-      children: (0, r.jsx)(I, {
+      children: (0, r.jsx)(S, {
         colorClass: p.d7,
         color: t
       })
-    }), v ? (0, r.jsx)("div", {
+    }), A ? (0, r.jsx)("div", {
       className: d.xJ,
       style: {
         borderColor: t
       },
       children: (0, r.jsx)(o.Apm, {
-        initialValue: A,
+        initialValue: v,
         minValue: 0,
         maxValue: 100,
-        asValueChanges: S,
+        asValueChanges: I,
         grabberClassName: d.Ub,
         fillStyles: {
           backgroundColor: t,

@@ -22,11 +22,11 @@ let b = e => {
     onClose: s
   } = e, {
     avatarSrc: b,
-    eventHandlers: g
-  } = (0, c.A)({
+    eventHandlers: m
+  } = (0, o.A)({
     userId: null == t ? true : t.id,
     size: l._3J.SIZE_56
-  }), m = u.Ay.getName(t), y = !r;
+  }), g = u.Ay.getName(t), y = !r;
   return (0, n.jsxs)("div", {
     className: i()(p.nM, {
       [p.z3]: y
@@ -50,21 +50,21 @@ let b = e => {
       return e
     }({
       src: b,
-      "aria-label": m,
+      "aria-label": g,
       size: l._3J.SIZE_32
-    }, g)), (0, n.jsxs)("div", {
+    }, m)), (0, n.jsxs)("div", {
       className: p.Qs,
       children: [(0, n.jsx)(l.Heading, {
         variant: "heading-md/semibold",
         color: "text-strong",
         className: p.QC,
-        children: m
+        children: g
       }), y && (0, n.jsx)(l.Text, {
         variant: "text-xs/normal",
         color: "text-strong",
         className: p.kc,
         children: f.intl.format(d.default["Y/oMwY"], {
-          userName: m
+          userName: g
         })
       })]
     }), r && (0, n.jsx)(l.Button, {
@@ -74,7 +74,7 @@ let b = e => {
       icon: l.oyn,
       onClick: () => {
         var e;
-        return e = t.id, void((0, o.default)(), a.A.openPrivateChannel({
+        return e = t.id, void((0, c.default)(), a.A.openPrivateChannel({
           recipientIds: e
         }), s())
       }

@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 932340, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,11 +19,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk696016 = require("./696016.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e) {
+function _(e) {
   let {
     canShowReminder: t = false,
-    className: b
-  } = e, _ = (0, f.A)(u.A), {
+    className: _
+  } = e, b = (0, h.A)(u.A), {
     showClipsHeaderEntrypoint: E
   } = d.L_.useExperiment({
     location: "ClipsButton"
@@ -39,7 +39,7 @@ function b(e) {
     lastClipsSession: p.A.getLastClipsSession(),
     remindersEnabled: p.A.getSettings().remindersEnabled,
     hasAnyClipAnimations: p.A.hasAnyClipAnimations()
-  })), S = null != y && y.newClipIds.length > 0, C = (0, h.K)(e => e.clipsButtonRef), N = (0, h.K)(e => e.setClipsButtonRef), T = (0, l.bG)([c.A], () => c.A.hasLayers()), {
+  })), S = null != y && y.newClipIds.length > 0, C = (0, g.K)(e => e.clipsButtonRef), N = (0, g.K)(e => e.setClipsButtonRef), T = (0, l.bG)([c.A], () => c.A.hasLayers()), {
     preventIdle: j,
     allowIdle: x
   } = (0, o.o)("animation");
@@ -68,21 +68,21 @@ function b(e) {
         return e
       }({}, t))
     }, {
-      modalKey: g.nm
+      modalKey: m.nm
     })
   }
-  return (i.useEffect(() => (v ? j() : x(), () => x()), [v, j, x]), E && _) ? (0, r.jsxs)(r.Fragment, {
-    children: [null != C && t && I && S && !(0, a.ueM)() && !T && (0, r.jsx)(A.A, {
+  return (i.useEffect(() => (v ? j() : x(), () => x()), [v, j, x]), E && b) ? (0, r.jsxs)(r.Fragment, {
+    children: [null != C && t && I && S && !(0, a.ueM)() && !T && (0, r.jsx)(f.A, {
       clipIconRef: C,
       lastClipsSession: y,
       onOpenClipsGallery: P
     }), (0, r.jsx)("div", {
       ref: N,
       children: (0, r.jsx)(s.In, {
-        className: b,
+        className: _,
         icon: a.xgA,
         showBadge: O,
-        tooltip: m.intl.string(m.t.MXaLEM),
+        tooltip: A.intl.string(A.t.MXaLEM),
         onClick: P
       })
     })]

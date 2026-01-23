@@ -1,44 +1,44 @@
 /** Chunk was on 69079 **/
 /** chunk id: 59375, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => s
+  A: () => i
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk407943 = require("./407943.js");
 
-function s(e) {
+function i(e) {
   var t;
   let {
     attachment: n
-  } = e, s = Math.round((null != (t = n.size) ? t : 0) / 1024 / 1024 * 100) / 100;
+  } = e, i = Math.round((null != (t = n.size) ? t : 0) / 1024 / 1024 * 100) / 100;
   return (0, r.jsxs)("div", {
-    className: l.kL,
-    children: [(0, r.jsx)(a.DF1, {
+    className: a.kL,
+    children: [(0, r.jsx)(l.DF1, {
       size: "xs",
       color: "currentColor",
-      className: l.Yg
-    }), (0, r.jsx)(a.hKd, {
+      className: a.Yg
+    }), (0, r.jsx)(l.hKd, {
       size: 8,
       horizontal: true
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       color: "text-default",
-      className: l.Md,
+      className: a.Md,
       children: n.filename
-    }), (0, r.jsx)(a.hKd, {
+    }), (0, r.jsx)(l.hKd, {
       size: 8,
       horizontal: true
     }), (0, r.jsx)("div", {
-      className: l.Om
-    }), (0, r.jsx)(a.hKd, {
+      className: a.Om
+    }), (0, r.jsx)(l.hKd, {
       size: 8,
       horizontal: true
-    }), (0, r.jsxs)(a.Text, {
+    }), (0, r.jsxs)(l.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
-      children: [s, "MB"]
+      children: [i, "MB"]
     })]
   })
 }

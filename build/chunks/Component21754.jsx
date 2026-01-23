@@ -24,43 +24,43 @@ function g(t) {
   var n, e;
   let {
     guildId: g,
-    userId: C,
-    anaylticsLocations: w,
+    userId: w,
+    anaylticsLocations: C,
     transitionState: x,
     onClose: A
   } = t, {
     analyticsLocations: k
-  } = (0, d.Ay)(), D = null != (n = null != (e = null == w ? true : w[0]) ? e : null == k ? true : k[0]) ? n : null, T = (0, s.bG)([h.default], () => h.default.getUser(C), [C]), [_, S] = (0, f.Ay)(C, g), [U, E] = a.useState(false), O = a.useCallback(async () => {
-    if (null != T) {
+  } = (0, d.Ay)(), D = null != (n = null != (e = null == C ? true : C[0]) ? e : null == k ? true : k[0]) ? n : null, _ = (0, s.bG)([h.default], () => h.default.getUser(w), [w]), [T, S] = (0, f.Ay)(w, g), [U, E] = a.useState(false), O = a.useCallback(async () => {
+    if (null != _) {
       E(true);
       try {
-        await o.A.setCommunicationDisabledDuration(g, C, null, null, D), (0, r.showToast)((0, r.createToast)(y.intl.string(y.t["/Mmbfv"]), r.ToastType.SUCCESS)), A()
+        await o.A.setCommunicationDisabledDuration(g, w, null, null, D), (0, r.showToast)((0, r.createToast)(y.intl.string(y.t["/Mmbfv"]), r.ToastType.SUCCESS)), A()
       } catch (t) {
         (0, r.showToast)((0, r.createToast)(y.intl.string(y.t.epyCuh), r.ToastType.FAILURE))
       } finally {
         E(false)
       }
     }
-  }, [g, T, C, A, D]), j = a.useCallback(() => {
+  }, [g, _, w, A, D]), j = a.useCallback(() => {
     S || A()
   }, [S, A]);
   return ((0, u.Ay)(() => {
-    null != T && p.default.track(v.HAw.OPEN_MODAL, {
+    null != _ && p.default.track(v.HAw.OPEN_MODAL, {
       type: m.Rv,
       guild_id: g,
-      other_user_id: T.id
+      other_user_id: _.id
     })
   }), a.useEffect(() => {
-    (null == T || null == g) && A()
-  }), null == T || null == g) ? null : (0, l.jsx)(i.Modal, {
+    (null == _ || null == g) && A()
+  }), null == _ || null == g) ? null : (0, l.jsx)(i.Modal, {
     transitionState: x,
     onClose: A,
     title: y.intl.string(y.t["+ZD3ou"]),
     subtitle: y.intl.format(y.t["t+abNU"], {
-      username: T.username,
-      countdown: t => null == _ ? null : (0, l.jsx)(c.A, {
+      username: _.username,
+      countdown: t => null == T ? null : (0, l.jsx)(c.A, {
         className: b.q,
-        deadline: new Date(_),
+        deadline: new Date(T),
         onInterval: j,
         showUnits: true,
         stopAtOneSec: true

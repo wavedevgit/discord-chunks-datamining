@@ -53,20 +53,20 @@ function g(e, t) {
   }), e
 }
 let E = 5 * Chunk927813.A.Millis.MINUTE,
-  b = 10 * Chunk927813.A.Millis.SECOND,
-  y = {},
+  y = 10 * Chunk927813.A.Millis.SECOND,
+  b = {},
   O = {},
-  A = {},
-  v = {};
+  v = {},
+  A = {};
 
-function S() {
-  y = {}, O = {}, A = {}, v = {}, setInterval(() => {
+function I() {
+  b = {}, O = {}, v = {}, A = {}, setInterval(() => {
     let e = Date.now();
-    for (let [t, n] of Object.entries(v)) e - n.insertedAt > b && delete v[t]
+    for (let [t, n] of Object.entries(A)) e - n.insertedAt > y && delete A[t]
   }, E)
 }
 
-function I(e) {
+function S(e) {
   let {
     nonce: t,
     messageId: n,
@@ -76,7 +76,7 @@ function I(e) {
     onSuccess: s,
     onFailure: o
   } = e;
-  null != n && (O[n] = t, A[t] = n), y[t] = {
+  null != n && (O[n] = t, v[t] = n), b[t] = {
     state: p.m.QUEUED,
     data: r,
     onCreate: i,
@@ -93,7 +93,7 @@ function T(e) {
     interactionId: r
   } = e;
   if (null == n) returnfalse;
-  let i = y[n];
+  let i = b[n];
   if (null == i || i.state !== p.m.QUEUED) returnfalse;
   i.state = p.m.CREATED, null == (t = i.onCreate) || t.call(i, r)
 }
@@ -112,7 +112,7 @@ function N(e) {
   if (null == t.nonce) returnfalse;
   {
     var n;
-    let e = y[t.nonce];
+    let e = b[t.nonce];
     if (null == e) returnfalse;
     null == (n = e.onSuccess) || n.call(e), k(t.nonce)
   }
@@ -128,9 +128,9 @@ function R(e) {
     reasonCode: s
   } = e;
   if (null == n) returnfalse;
-  let o = y[n];
+  let o = b[n];
   if (null == o) returnfalse;
-  null == (t = o.onFailure) || t.call(o, r, i, a, s), o.data.interactionType === c.G4.APPLICATION_COMMAND ? k(n) : y[n] = g(h({}, o), {
+  null == (t = o.onFailure) || t.call(o, r, i, a, s), o.data.interactionType === c.G4.APPLICATION_COMMAND ? k(n) : b[n] = g(h({}, o), {
     state: p.m.FAILED,
     errorCode: r,
     errorMessage: i
@@ -142,7 +142,7 @@ function w(e) {
     channelId: t
   } = e;
   if (null == d.A.getChannel(t)) returnfalse;
-  for (let [e, t] of Object.entries(y)) t.state === p.m.FAILED && k(e)
+  for (let [e, t] of Object.entries(b)) t.state === p.m.FAILED && k(e)
 }
 
 function P(e) {
@@ -179,24 +179,24 @@ function j(e) {
     a = u.default.getId(),
     s = r.find(e => e.user_id === a && e.session_id === i);
   if (null == s || null == s.nonce) return;
-  let o = v[s.nonce];
-  null == o ? (t = A[s.nonce], n = y[s.nonce]) : (t = o.messageId, n = o.interaction), null != n && null != t && (k(s.nonce), null != t && "channelId" in n.data && l.A.deleteMessage(n.data.channelId, t, true))
+  let o = A[s.nonce];
+  null == o ? (t = v[s.nonce], n = b[s.nonce]) : (t = o.messageId, n = o.interaction), null != n && null != t && (k(s.nonce), null != t && "channelId" in n.data && l.A.deleteMessage(n.data.channelId, t, true))
 }
 
 function M(e) {
   var t;
   if (null == e) returnfalse;
-  let n = y[e];
+  let n = b[e];
   if (null == n) returnfalse;
   null == (t = n.onSuccess) || t.call(n), k(e)
 }
 
 function k(e) {
-  if (null != v[e]) return void delete v[e];
-  let t = y[e];
-  delete y[e];
-  let n = A[e];
-  null != n && delete O[n], delete A[e], v[e] = {
+  if (null != A[e]) return void delete A[e];
+  let t = b[e];
+  delete b[e];
+  let n = v[e];
+  null != n && delete O[n], delete v[e], A[e] = {
     insertedAt: Date.now(),
     nonce: e,
     messageId: n,
@@ -209,19 +209,19 @@ class U extends(a = Chunk311907.Ay.Store) {
   }
   getInteraction(e) {
     let t = O[e.id];
-    return null != t ? y[t] : null
+    return null != t ? b[t] : null
   }
   getMessageInteractionStates() {
     let e = {};
-    for (let [t, n] of Object.entries(y)) {
-      let r = A[t];
+    for (let [t, n] of Object.entries(b)) {
+      let r = v[t];
       null != r && (e[r] = n.state)
     }
     return e
   }
   canQueueInteraction(e, t) {
     let n = O[e];
-    return (null == n || null == y[n] || y[n].state === p.m.FAILED) && (null == y[t] || y[t].state === p.m.FAILED)
+    return (null == n || null == b[n] || b[n].state === p.m.FAILED) && (null == b[t] || b[t].state === p.m.FAILED)
   }
   getIFrameModalApplicationId() {
     return i
@@ -232,8 +232,8 @@ class U extends(a = Chunk311907.Ay.Store) {
 }
 _(U, "displayName", "InteractionStore");
 let G = new U(Chunk73153.h, {
-  LOGOUT: S,
-  INTERACTION_QUEUE: I,
+  LOGOUT: I,
+  INTERACTION_QUEUE: S,
   INTERACTION_CREATE: T,
   INTERACTION_SUCCESS: C,
   INTERACTION_FAILURE: R,

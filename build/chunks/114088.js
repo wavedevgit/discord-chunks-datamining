@@ -8,12 +8,12 @@ require.r(exports), require.d(exports, {
   ParsingResult: () => a.s4,
   ReferenceWithTimezone: () => a.b5,
   Weekday: () => s.Bw,
-  casual: () => b,
-  createCasualConfiguration: () => v,
-  createConfiguration: () => S,
+  casual: () => y,
+  createCasualConfiguration: () => A,
+  createConfiguration: () => I,
   parse: () => O,
-  parseDate: () => A,
-  strict: () => y
+  parseDate: () => v,
+  strict: () => b
 });
 var Chunk125659 = require("./125659.js"),
   Chunk880683 = require("./880683.js"),
@@ -31,23 +31,23 @@ var Chunk125659 = require("./125659.js"),
   Chunk60655 = require("./60655.js"),
   Chunk993059 = require("./993059.js"),
   Chunk475500 = require("./475500.js");
-let b = new Chunk880683.u(v()),
-  y = new Chunk880683.u(S(true));
+let y = new Chunk880683.u(A()),
+  b = new Chunk880683.u(I(true));
 
 function O(e, t, n) {
-  return b.parse(e, t, n)
+  return y.parse(e, t, n)
 }
 
-function A(e, t, n) {
-  return b.parseDate(e, t, n)
+function v(e, t, n) {
+  return y.parseDate(e, t, n)
 }
 
-function v(e = true) {
-  let t = S(false, e);
+function A(e = true) {
+  let t = I(false, e);
   return t.parsers.unshift(new h.A), t.parsers.unshift(new _.A), t.parsers.unshift(new g.A), t
 }
 
-function S(e = true, t = true) {
+function I(e = true, t = true) {
   return (0, r.i)({
     parsers: [new l.A, new o.A(t), new c.A, new d.A, new m.A, new u.A, new E.A],
     refiners: [new f.A, new p.A]

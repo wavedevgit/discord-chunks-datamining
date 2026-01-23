@@ -78,15 +78,15 @@ let k = Chunk64700.forwardRef(function(e, t) {
     "aria-activedescendant": em,
     "aria-controls": eg,
     "aria-invalid": eE,
-    "aria-describedby": eb,
-    "aria-labelledby": ey,
+    "aria-describedby": ey,
+    "aria-labelledby": eb,
     "aria-autocomplete": eO
-  } = e, eA = i.useRef(null), ev = i.useRef(null), eS = i.useRef(true), eI = i.useRef(true), eT = V || F, eC = i.useCallback((e, t, n) => {
+  } = e, ev = i.useRef(null), eA = i.useRef(null), eI = i.useRef(true), eS = i.useRef(true), eT = V || F, eC = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
       selection: a
-    } = n, s = b.VW.richValue(e), o = e.selection, l = false;
+    } = n, s = y.VW.richValue(e), o = e.selection, l = false;
     if (true !== i && i !== s) {
       if (e.children = i, "parent" === t && !e.previewMarkdown && e.chatInputType === p.oU.EDIT) {
         try {
@@ -97,15 +97,15 @@ let k = Chunk64700.forwardRef(function(e, t) {
       }
       "undo" !== t && true !== i && i !== s && h.o.insertEntry(e, "other", false, s, o), l = true
     }
-    if (null == a || b.Ot.isValid(e, a) || (a = true), (l || !b.Ot.isValid(e, o)) && true === a) {
-      let t = b.VW.end(e, []);
+    if (null == a || y.Ot.isValid(e, a) || (a = true), (l || !y.Ot.isValid(e, o)) && true === a) {
+      let t = y.VW.end(e, []);
       a = {
         anchor: t,
         focus: t
       }
     }
-    let u = null != a && !b.Ot.equals(a, o);
-    if (l && !el && b.VW.focus(e), null != a && u) {
+    let u = null != a && !y.Ot.equals(a, o);
+    if (l && !el && y.VW.focus(e), null != a && u) {
       e.selection = a;
       let t = h.o.currentEntry(e);
       null != t && (t.selection = a), l = true
@@ -115,15 +115,15 @@ let k = Chunk64700.forwardRef(function(e, t) {
         (0, R.t)(e, k.id, null, true)
       }), l)
       if ("parent" === t) try {
-        eI.current = false, e.onChange()
+        eS.current = false, e.onChange()
       } finally {
-        eI.current = true
+        eS.current = true
       } else e.onChange()
   }, [k.id, k.guild_id, el]), eN = i.useCallback(() => {
-    eS.current = false
+    eI.current = false
   }, []), eR = i.useCallback(() => {
-    eS.current = true
-  }, []), ew = (0, S.A)({
+    eI.current = true
+  }, []), ew = (0, I.A)({
     channel: k,
     chatInputType: a,
     canUseCommands: es,
@@ -139,7 +139,7 @@ let k = Chunk64700.forwardRef(function(e, t) {
       results: r
     }
   }, [k.guild_id, k.id, ew]), eD = i.useCallback(() => {
-    let e, t = b.VW.getNodesOfType(ew, ["gameMentionInput", "timestampMentionInput"]),
+    let e, t = y.VW.getNodesOfType(ew, ["gameMentionInput", "timestampMentionInput"]),
       n = null != t ? [...t] : null,
       r = es ? c.A.getActiveCommand(k.id) : null,
       i = false;
@@ -167,7 +167,7 @@ let k = Chunk64700.forwardRef(function(e, t) {
         error: true
       }, {
         at: t
-      }), i || E.b.select(ew, b.VW.end(ew, t)), i = true;
+      }), i || E.b.select(ew, y.VW.end(ew, t)), i = true;
     if (i) {
       f._.dispatch(j.jej.SHAKE_APP, {
         duration: 200,
@@ -175,12 +175,12 @@ let k = Chunk64700.forwardRef(function(e, t) {
       }), null == et || et();
       return
     }
-    null == ee || ee((0, g.WO)(b.VW.richValue(ew), {
+    null == ee || ee((0, g.WO)(y.VW.richValue(ew), {
       mode: "raw",
       ignoreTrailingEmptyNodes: true
     }), r, e)
   }, [k.id, ew, ee, et, eP, es]);
-  (0, I.A)(t, ew, k, eD), (0, N.A)(ew, eA, z);
+  (0, S.A)(t, ew, k, eD), (0, N.A)(ew, ev, z);
   let {
     handleKeyDown: ex,
     handleKeyUp: eL
@@ -202,12 +202,12 @@ let k = Chunk64700.forwardRef(function(e, t) {
   } = (0, C.A)(ew, eT, K), ek = i.useCallback(e => {
     null == en || en()
   }, [en]), eU = i.useCallback(e => {
-    e !== ev.current ? eI.current && (null == W || W(null, (0, g.WO)(e, {
+    e !== eA.current ? eS.current && (null == W || W(null, (0, g.WO)(e, {
       mode: "raw"
-    }), e)) : eI.current && en()
+    }), e)) : eS.current && en()
   }, [en, W]);
   i.useLayoutEffect(() => {
-    eS.current && (ev.current = n, eC(ew, "parent", {
+    eI.current && (eA.current = n, eC(ew, "parent", {
       value: n
     }))
   }, [ew, n, eC]), i.useEffect(() => {
@@ -218,7 +218,7 @@ let k = Chunk64700.forwardRef(function(e, t) {
     };
     return u.A.addChangeListener(e), () => u.A.removeChangeListener(e)
   }, [k, ew, eP]);
-  let eG = i.useCallback(e => [...(0, A.A)(ew, e, k.guild_id), ...(0, y.A)(ew, e), ...(0, O.A)(ew, e), ...(0, v.A)(ew, e, k, {
+  let eG = i.useCallback(e => [...(0, v.A)(ew, e, k.guild_id), ...(0, b.A)(ew, e), ...(0, O.A)(ew, e), ...(0, A.A)(ew, e, k, {
       isIdle: ed,
       currentAutocompleteType: ef
     })], [ew, k, ed, ef]),
@@ -232,7 +232,7 @@ let k = Chunk64700.forwardRef(function(e, t) {
       event: j.jej.GLOBAL_CLIPBOARD_PASTE,
       handler: eM
     }), (0, r.jsx)("div", {
-      ref: eA,
+      ref: ev,
       className: s()(U, M.pC),
       children: (0, r.jsx)(m.A, {
         id: G,
@@ -260,8 +260,8 @@ let k = Chunk64700.forwardRef(function(e, t) {
         "aria-expanded": e_,
         "aria-activedescendant": em,
         "aria-controls": eg,
-        "aria-labelledby": ey,
-        "aria-describedby": eb,
+        "aria-labelledby": eb,
+        "aria-describedby": ey,
         "aria-invalid": eE,
         "aria-autocomplete": eO,
         "aria-required": H

@@ -18,12 +18,12 @@ let o = e => {
     children: [(0, l.jsx)(r.Heading, {
       className: s.wx,
       variant: "heading-sm/semibold",
-      children: i.intl.string(i.t.Rsth7z)
+      children: a.intl.string(a.t.Rsth7z)
     }), (0, l.jsx)("div", {
       className: s.f1,
       children: (0, l.jsxs)("div", {
         className: s.eF,
-        children: [(0, l.jsx)(a.A, {
+        children: [(0, l.jsx)(i.A, {
           className: s.Hk,
           user: t,
           size: r._3J.SIZE_40

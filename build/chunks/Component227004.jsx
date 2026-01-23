@@ -23,32 +23,32 @@ function A(e) {
   let {
     guild: t,
     selected: n
-  } = e, A = (0, i.bG)([h.A], () => h.A.can(g.xBc.KICK_MEMBERS, t)), y = (0, i.bG)([u.A], () => u.A.getSubmittedGuildJoinRequestTotal(t.id)), O = A && null != y ? y : 0;
+  } = e, A = (0, i.bG)([f.A], () => f.A.can(m.xBc.KICK_MEMBERS, t)), y = (0, i.bG)([u.A], () => u.A.getSubmittedGuildJoinRequestTotal(t.id)), _ = A && null != y ? y : 0;
   l.useEffect(() => {
-    A && t.features.has(g.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(g.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.A.fetchGuildJoinRequests({
+    A && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.A.fetchGuildJoinRequests({
       guildId: t.id,
       status: d.B5.SUBMITTED,
-      limit: f.L
+      limit: p.L
     })
   }, [A, t]);
-  let j = l.useCallback(() => {
-      (0, b.aZ)(t.id)
+  let O = l.useCallback(() => {
+      (0, g.aZ)(t.id)
     }, [t.id]),
-    v = (0, o.q8)(t.id, a.M.MEMBERS_LAUNCH_UPSELL);
+    j = (0, o.q8)(t.id, s.M.MEMBERS_LAUNCH_UPSELL);
   return (0, r.jsx)("div", {
-    ref: v,
-    children: (0, r.jsx)(p.G, {
+    ref: j,
+    children: (0, r.jsx)(h.G, {
       id: "members-".concat(t.id),
-      renderIcon: e => (0, r.jsx)(s.nFg, {
+      renderIcon: e => (0, r.jsx)(a.nFg, {
         size: "md",
         color: "currentColor",
         className: e
       }),
-      text: m.intl.string(m.t.oclz3Z),
+      text: b.intl.string(b.t.oclz3Z),
       selected: n,
-      onClick: j,
-      trailing: O > 0 ? (0, r.jsx)(s.hVq, {
-        count: O
+      onClick: O,
+      trailing: _ > 0 ? (0, r.jsx)(a.hVq, {
+        count: _
       }) : null
     })
   })

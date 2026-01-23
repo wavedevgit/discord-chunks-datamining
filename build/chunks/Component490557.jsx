@@ -2,7 +2,7 @@
 /** chunk id: 490557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   b: () => d,
-  l: () => f
+  l: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk503698 = require("./503698.js"),
@@ -24,12 +24,12 @@ function d(e) {
   })
 }
 
-function f(e) {
+function p(e) {
   let {
     className: t,
     powerup: n,
     isHovering: l
-  } = e, u = (0, s.A)(n, l);
+  } = e, u = (0, a.A)(n, l);
   switch (n.type) {
     case o.o9.LEVEL:
       return (0, r.jsx)(d, {});
@@ -38,7 +38,7 @@ function f(e) {
         alt: "",
         src: u,
         className: i()(c.T, {
-          [c.W]: n.skuId === a.aN
+          [c.W]: n.skuId === s.aN
         }, t)
       })
   }

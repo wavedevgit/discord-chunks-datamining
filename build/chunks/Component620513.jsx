@@ -23,20 +23,20 @@ function p(e) {
     spoiler: p
   } = e, _ = i.useMemo(() => null != t.contentType && false !== t.contentType.indexOf("/") ? t.contentType.split("/") : ["unknown", "unknown"], [t.contentType]), [h, m] = i.useState(p), [g, E] = i.useState(p);
   p !== h && (m(p), E(p));
-  let b = i.useMemo(() => () => (0, r.jsx)(c.zB, {
+  let y = i.useMemo(() => () => (0, r.jsx)(c.zB, {
       mimeType: _,
       downloadURL: t.url,
       showDownload: true,
       isVisualMediaType: false
     }), [t, _]),
-    y = e => (0, r.jsx)(o.A, {
+    b = e => (0, r.jsx)(o.A, {
       className: s()({
         [f.V]: e
       }),
       url: t.url,
       fileName: null != n ? n : d.intl.string(d.t.GnuJ5u),
       fileSize: null != a ? a : 0,
-      renderAdjacentContent: b
+      renderAdjacentContent: y
     });
   return (0, r.jsx)("div", {
     className: f.O,
@@ -45,7 +45,7 @@ function p(e) {
       reason: l.Oc.SPOILER,
       obscured: g,
       onToggleObscurity: () => E(e => !e),
-      children: e => y(e)
-    }) : y(false)
+      children: e => b(e)
+    }) : b(false)
   })
 }

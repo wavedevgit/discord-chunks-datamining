@@ -2,7 +2,7 @@
 /** chunk id: 866315, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => S
+  M: () => I
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -32,7 +32,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,16 +44,16 @@ function A(e) {
   }
   return e
 }
-let v = 1e3;
+let A = 1e3;
 
-function S() {
-  let [e, t] = i.useState(false), O = (0, l.Ry6)(E.lb), S = i.useMemo(() => [s.M.DESKTOP_REFRESH_ONBOARDING_MODAL], []), [I, T] = (0, p.kn)(S), C = I === s.M.DESKTOP_REFRESH_ONBOARDING_MODAL, N = (0, a.bG)([h.default], () => h.default.getId());
+function I() {
+  let [e, t] = i.useState(false), O = (0, l.Ry6)(E.lb), I = i.useMemo(() => [s.M.DESKTOP_REFRESH_ONBOARDING_MODAL], []), [S, T] = (0, p.kn)(I), C = S === s.M.DESKTOP_REFRESH_ONBOARDING_MODAL, N = (0, a.bG)([h.default], () => h.default.getId());
   i.useLayoutEffect(() => {
     null != N && g.default.age(N) < m.A.Millis.DAY && (0, f.Dr)(s.M.DESKTOP_REFRESH_ONBOARDING_MODAL);
     let e = "desktop_refresh_theme_migration_key",
       t = "true" === o.w.get(e);
-    !C || t || _.A.theme !== y.NJ.DARK || null != d.A.gradientPreset || t || (o.w.set(e, "true"), (0, u.u_)({
-      theme: y.NJ.DARKER
+    !C || t || _.A.theme !== b.NJ.DARK || null != d.A.gradientPreset || t || (o.w.set(e, "true"), (0, u.u_)({
+      theme: b.NJ.DARKER
     }))
   }, [C, N]), i.useLayoutEffect(() => {
     function e() {
@@ -68,11 +68,11 @@ function S() {
       let {
         DesktopRefreshOnboardingModal: e
       } = await n.e("33638").then(n.bind(n, 887781));
-      return t => (0, r.jsx)(e, A({}, t))
+      return t => (0, r.jsx)(e, v({}, t))
     }, {
       backdropStyle: l.F2Z.TOP_RADIAL,
       onCloseCallback: () => {
-        T(b.i.USER_DISMISS)
+        T(y.i.USER_DISMISS)
       }
     })
   }, [T]);
@@ -80,7 +80,7 @@ function S() {
     if (C && !O && e) {
       let e = setTimeout(() => {
         R()
-      }, v);
+      }, A);
       return () => clearTimeout(e)
     }
   }, [e, O, C, R])

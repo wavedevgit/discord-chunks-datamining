@@ -2,10 +2,10 @@
 /** chunk id: 690521, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => A,
-  D_: () => v,
-  Ez: () => S,
-  N: () => I
+  Ay: () => v,
+  D_: () => A,
+  Ez: () => I,
+  N: () => S
 }), require("./896048.js"), require("./747238.js"), require("./812715.js"), require("./321073.js");
 var Chunk836039 = require("./836039.js"),
   Chunk770335 = require("./770335.js"),
@@ -24,12 +24,12 @@ let h = 2097152,
   g = new Set([...m, Chunk307731.Am.GUILD_SUBSCRIPTION_UNAVAILABLE, Chunk307731.Am.ROLE_SUBSCRIPTION_UNAVAILABLE]),
   E = new Set([Chunk307731.Am.DISALLOW_CUSTOM, Chunk307731.Am.DISALLOW_EXTERNAL, Chunk307731.Am.GUILD_SUBSCRIPTION_UNAVAILABLE, Chunk307731.Am.ONLY_GUILD_EMOJIS_ALLOWED]);
 
-function b(e) {
+function y(e) {
   return e.type === i.i.GUILD || null != e.guildId
 }
 
-function y(e, t) {
-  return null != e && null != t && (!b(e) || t === e.guildId)
+function b(e, t) {
+  return null != e && null != t && (!y(e) || t === e.guildId)
 }
 
 function O(e) {
@@ -40,14 +40,14 @@ function O(e) {
     intention: c,
     forceIncludeExternalGuilds: u
   } = e;
-  if (!b(t)) return null;
+  if (!y(t)) return null;
   if (c === _.b_.GUILD_PROFILE) return _.Am.DISALLOW_CUSTOM;
   let d = null != n && (0, s.ke)(n.type),
     h = null != n && (0, s.ay)(n.type),
-    m = y(t, i),
+    m = b(t, i),
     g = o.A.can(p.xBc.USE_EXTERNAL_EMOJIS, n);
   if (c === _.b_.COMMUNITY_CONTENT) return m && null != t.guildId && t.available ? null : _.Am.DISALLOW_EXTERNAL;
-  if (!(0, _.Re)(c) && !y(t, i) && !u || (d || h) && !m && !g) return _.Am.DISALLOW_EXTERNAL;
+  if (!(0, _.Re)(c) && !b(t, i) && !u || (d || h) && !m && !g) return _.Am.DISALLOW_EXTERNAL;
   if (null != t.id && !t.available) return _.Am.GUILD_SUBSCRIPTION_UNAVAILABLE;
   let E = l.default.getCurrentUser();
   if (!f.Ay.canUseEmojisEverywhere(E) && !m) {
@@ -56,16 +56,16 @@ function O(e) {
   }
   return (0, a.JN)(t, null != i ? i : true) ? (0, r.tE)(t.guildId) ? _.Am.ROLE_SUBSCRIPTION_UNAVAILABLE : _.Am.ROLE_SUBSCRIPTION_LOCKED : !t.animated || f.Ay.canUseAnimatedEmojis(E) || (0, a.kT)(t) ? null : _.Am.PREMIUM_LOCKED
 }
-let A = {
+let v = {
   sanitizeEmojiName(e) {
     for (e = e.replace(_.ZT, "").slice(0, _.zj); e.length < 2;) e += "_";
     return e
   },
   filterUnsupportedEmojis: Chunk300703.A.filterUnsupportedEmojis,
   getURL: Chunk300703.A.getURL,
-  isInternalEmojiForGuildId: y,
+  isInternalEmojiForGuildId: b,
   getEmojiUnavailableReason: O,
-  isCustomEmoji: b,
+  isCustomEmoji: y,
   getEmojiUnavailableReasons(e) {
     let {
       categoryEmojis: t,
@@ -129,11 +129,11 @@ let A = {
   isFileTooBig: e => e.size > h,
   isDataTooBig: e => (0, d.EW)(e) > _.W5
 };
-async function v(e) {
+async function A(e) {
   return await u.A.getEmojiColors(e)
 }
 
-function S(e) {
+function I(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 32,
     {
       id: n,
@@ -147,6 +147,6 @@ function S(e) {
   }) : u.A.getURL(r)
 }
 
-function I(e) {
+function S(e) {
   return "allNamesString" in e ? e.allNamesString : ":".concat(e.name, ":")
 }

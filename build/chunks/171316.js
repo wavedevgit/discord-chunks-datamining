@@ -2,10 +2,10 @@
 /** chunk id: 171316, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  KK: () => b,
-  NZ: () => y,
+  KK: () => y,
+  NZ: () => b,
   gr: () => E,
-  lH: () => S,
+  lH: () => I,
   uM: () => O,
   xs: () => g
 });
@@ -58,14 +58,14 @@ let g = () => {
       goreContentGuilds: a.TO.BLUR
     }
   },
-  b = () => {
+  y = () => {
     let e = (0, _.x)(),
       t = l.qz.useControlledSetting(null == e ? true : e.id),
       n = l.yr.useControlledSetting(null == e ? true : e.id);
     return null != n ? n : !!t || t
   };
 
-function y() {
+function b() {
   let e = (0, _.x)(),
     t = l.up.useControlledSetting(null == e ? true : e.id),
     n = r.useMemo(() => (0, u.Lx)(t), [t]);
@@ -78,12 +78,12 @@ function O() {
   return (null == e ? true : e.nsfwAllowed) === false && t
 }
 
-function A(e) {
+function v(e) {
   let t = (0, _.k)();
   return (0, i.bG)([f.A], () => f.A.hasConsented(t, e))
 }
 
-function v(e) {
+function A(e) {
   let t = (0, _.k)();
   return r.useCallback(async n => {
     if (null == t) return;
@@ -97,9 +97,9 @@ function v(e) {
   }, [t, e])
 }
 
-function S(e) {
+function I(e) {
   return {
-    hasConsented: A(e),
-    updateConsent: v(e)
+    hasConsented: v(e),
+    updateConsent: A(e)
   }
 }

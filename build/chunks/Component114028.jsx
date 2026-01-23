@@ -27,7 +27,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk198606 = require("./198606.js");
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function T(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -77,11 +77,11 @@ function P(e) {
   } = e;
   return (0, r.jsx)(u.DUT, N(T({}, a), {
     onClick: i,
-    className: s()(S.Yl, {
-      [S.wH]: n
+    className: s()(I.Yl, {
+      [I.wH]: n
     }),
     children: (0, r.jsx)(t, {
-      className: S.xi,
+      className: I.xi,
       color: "currentColor"
     })
   }))
@@ -112,7 +112,7 @@ function D(e, t, n, i, a) {
       }, e.key);
     case E.Cx.GUILD:
       return (0, r.jsx)(u.DUT, N(T({}, i), {
-        className: S.L1,
+        className: I.L1,
         onClick: t,
         children: (0, r.jsx)(d.A, {
           guild: e.categoryInfo.guild,
@@ -135,15 +135,15 @@ function D(e, t, n, i, a) {
 function x(e) {
   switch (e.categoryInfo.type) {
     case E.Cx.FAVORITES:
-      return v.intl.string(v.t.k8fFjp);
+      return A.intl.string(A.t.k8fFjp);
     case E.Cx.RECENTLY_HEARD:
-      return v.intl.string(v.t["8i/+SA"]);
+      return A.intl.string(A.t["8i/+SA"]);
     case E.Cx.FREQUENTLY_USED:
-      return v.intl.string(v.t["+cGVV6"]);
+      return A.intl.string(A.t["+cGVV6"]);
     case E.Cx.GUILD:
       return e.categoryInfo.guild.name;
     case E.Cx.DEFAULTS:
-      return v.intl.string(v.t.Rtvk9X)
+      return A.intl.string(A.t.Rtvk9X)
   }
 }
 
@@ -175,16 +175,16 @@ function j(e) {
     guildId: o,
     inExpressionPicker: c,
     showPinnedDefaultsShortcut: d = false
-  } = e, _ = i.useRef(null), E = (0, l.bG)([h.default], () => h.default.getCurrentUser()), I = (0, g.TW)(E, A.PremiumTypes.TIER_2), T = i.useCallback(e => {
+  } = e, _ = i.useRef(null), E = (0, l.bG)([h.default], () => h.default.getCurrentUser()), S = (0, g.TW)(E, v.PremiumTypes.TIER_2), T = i.useCallback(e => {
     var r;
     let i = n.length - 1;
     e(i), null == (r = t.current) || r.scrollToSectionTop(i)
   }, [n.length, t]), C = i.useCallback((e, t, n, i) => {
-    let s = a && (0, b.B)(e.categoryInfo, I, o),
+    let s = a && (0, y.B)(e.categoryInfo, S, o),
       l = () => {
-        m.default.track(y.HAw.EXPRESSION_PICKER_CATEGORY_SELECTED, {
+        m.default.track(b.HAw.EXPRESSION_PICKER_CATEGORY_SELECTED, {
           location: {
-            page: y.liQ.SOUNDBOARD_POPOUT
+            page: b.liQ.SOUNDBOARD_POPOUT
           },
           guild_id: null != o ? o : null,
           num_expressions: e.items.length,
@@ -200,9 +200,9 @@ function j(e) {
       isSelected: i,
       isNitroLocked: s
     })
-  }, [o, a, I]);
+  }, [o, a, S]);
   return (0, r.jsx)(p.A, {
-    className: c ? S.HZ : S.jv,
+    className: c ? I.HZ : I.jv,
     categoryListRef: _,
     expressionsListRef: t,
     store: f.LW,
@@ -212,8 +212,8 @@ function j(e) {
     rowCount: n.length,
     categoryHeight: w,
     children: e => d && (0, r.jsx)(u.DUT, {
-      "aria-label": v.intl.string(v.t.Rtvk9X),
-      className: S.xe,
+      "aria-label": A.intl.string(A.t.Rtvk9X),
+      className: I.xe,
       onClick: () => T(e),
       children: (0, r.jsx)(u.pVd, {
         size: "custom",

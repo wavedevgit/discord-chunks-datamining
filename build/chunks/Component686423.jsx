@@ -2,7 +2,7 @@
 /** chunk id: 686423, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -55,7 +55,7 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = function() {
+let y = function() {
   let e = i.useRef(null),
     {
       analyticsLocations: t
@@ -76,7 +76,7 @@ let b = function() {
       guild: n
     })
   }
-  async function b() {
+  async function y() {
     e.current = await (0, o.mMO)(async () => {
       let {
         default: e
@@ -90,7 +90,7 @@ let b = function() {
       }
     })
   }
-  let y = (0, d.Nc)({
+  let b = (0, d.Nc)({
     fractionalState: h
   });
   return (0, r.jsxs)("div", {
@@ -104,20 +104,20 @@ let b = function() {
       variant: "text-sm/medium",
       children: p.intl.format(p.t.kqC5vq, {
         boostAnyGuildHook: (e, t) => {
-          let n = null != y,
+          let n = null != b,
             i = (0, o.Oer)(e),
             l = (0, r.jsx)("div", {
               className: _.lO,
               children: (0, r.jsx)(s.QWc, {
                 variant: "primary",
-                onClick: n ? true : b,
+                onClick: n ? true : y,
                 text: i,
                 disabled: n
               }, t)
             });
           return n ? (0, r.jsx)(a.A, {
-            text: y,
-            "aria-label": y.toString(),
+            text: b,
+            "aria-label": b.toString(),
             children: e => (0, r.jsx)("span", E(m({}, e), {
               children: l
             }))

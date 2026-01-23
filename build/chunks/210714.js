@@ -58,7 +58,7 @@ class _ {
   trackEvent(e) {
     let t = Date.now();
     requestIdleCallback(() => {
-      a.default.track(l.HAw.APP_UI_VIEWED, f(u({}, E(), b()), {
+      a.default.track(l.HAw.APP_UI_VIEWED, f(u({}, E(), y()), {
         load_id: this.loadId,
         screen_name: e,
         duration_ms_since_app_opened: t - p(),
@@ -117,7 +117,7 @@ function E() {
   return {}
 }
 
-function b() {
+function y() {
   let e = false,
     t = {
       total_compressed_byte_size: 0,

@@ -70,7 +70,7 @@ function f(e) {
     optional: () => _(e),
     and: t => g(e, t),
     or: t => E(e, t),
-    select: t => true === t ? y(e) : y(t, e)
+    select: t => true === t ? b(e) : b(t, e)
   })
 }
 
@@ -84,7 +84,7 @@ function p(e) {
     }
   }), {
     optional: () => p(_(e)),
-    select: t => p(true === t ? y(e) : y(t, e))
+    select: t => p(true === t ? b(e) : b(t, e))
   })
 }
 
@@ -158,7 +158,7 @@ function E(...e) {
   })
 }
 
-function b(e) {
+function y(e) {
   return {
     [r]: () => ({
       match: t => ({
@@ -168,7 +168,7 @@ function b(e) {
   }
 }
 
-function y(...e) {
+function b(...e) {
   let t = "string" == typeof e[0] ? e[0] : true,
     n = 2 === e.length ? e[1] : "string" == typeof e[0] ? true : e[0];
   return f({
@@ -193,47 +193,47 @@ function O(e) {
   return "number" == typeof e
 }
 
-function A(e) {
+function v(e) {
   return "string" == typeof e
 }
 
-function v(e) {
+function A(e) {
   return "bigint" == typeof e
 }
-let S = f(b(function(e) {
+let I = f(y(function(e) {
     returntrue
   })),
-  I = S,
+  S = I,
   T = e => Object.assign(f(e), {
     startsWith: t => {
       var n;
-      return T(g(e, (n = t, b(e => A(e) && e.startsWith(n)))))
+      return T(g(e, (n = t, y(e => v(e) && e.startsWith(n)))))
     },
     endsWith: t => {
       var n;
-      return T(g(e, (n = t, b(e => A(e) && e.endsWith(n)))))
+      return T(g(e, (n = t, y(e => v(e) && e.endsWith(n)))))
     },
-    minLength: t => T(g(e, (e => b(t => A(t) && t.length >= e))(t))),
-    maxLength: t => T(g(e, (e => b(t => A(t) && t.length <= e))(t))),
+    minLength: t => T(g(e, (e => y(t => v(t) && t.length >= e))(t))),
+    maxLength: t => T(g(e, (e => y(t => v(t) && t.length <= e))(t))),
     includes: t => {
       var n;
-      return T(g(e, (n = t, b(e => A(e) && e.includes(n)))))
+      return T(g(e, (n = t, y(e => v(e) && e.includes(n)))))
     },
     regex: t => {
       var n;
-      return T(g(e, (n = t, b(e => A(e) && !!e.match(n)))))
+      return T(g(e, (n = t, y(e => v(e) && !!e.match(n)))))
     }
   }),
-  C = T(b(A)),
-  N = (e, t) => b(n => O(n) && e <= n && t >= n),
-  R = e => b(t => O(t) && t < e),
-  w = e => b(t => O(t) && t > e),
-  P = e => b(t => O(t) && t <= e),
-  D = e => b(t => O(t) && t >= e),
-  x = () => b(e => O(e) && Number.isInteger(e)),
-  L = () => b(e => O(e) && Number.isFinite(e)),
-  j = () => b(e => O(e) && e > 0),
-  M = () => b(e => O(e) && e < 0),
+  C = T(y(v)),
+  N = (e, t) => y(n => O(n) && e <= n && t >= n),
+  R = e => y(t => O(t) && t < e),
+  w = e => y(t => O(t) && t > e),
+  P = e => y(t => O(t) && t <= e),
+  D = e => y(t => O(t) && t >= e),
+  x = () => y(e => O(e) && Number.isInteger(e)),
+  L = () => y(e => O(e) && Number.isFinite(e)),
+  j = () => y(e => O(e) && e > 0),
+  M = () => y(e => O(e) && e < 0),
   k = e => Object.assign(f(e), {
     between: (t, n) => k(g(e, N(t, n))),
     lt: t => k(g(e, R(t))),
@@ -245,14 +245,14 @@ let S = f(b(function(e) {
     positive: () => k(g(e, j())),
     negative: () => k(g(e, M()))
   }),
-  U = k(b(O)),
-  G = (e, t) => b(n => v(n) && e <= n && t >= n),
-  V = e => b(t => v(t) && t < e),
-  F = e => b(t => v(t) && t > e),
-  B = e => b(t => v(t) && t <= e),
-  H = e => b(t => v(t) && t >= e),
-  Y = () => b(e => v(e) && e > 0),
-  W = () => b(e => v(e) && e < 0),
+  U = k(y(O)),
+  G = (e, t) => y(n => A(n) && e <= n && t >= n),
+  V = e => y(t => A(t) && t < e),
+  F = e => y(t => A(t) && t > e),
+  B = e => y(t => A(t) && t <= e),
+  H = e => y(t => A(t) && t >= e),
+  Y = () => y(e => A(e) && e > 0),
+  W = () => y(e => A(e) && e < 0),
   K = e => Object.assign(f(e), {
     between: (t, n) => K(g(e, G(t, n))),
     lt: t => K(g(e, V(t))),
@@ -262,14 +262,14 @@ let S = f(b(function(e) {
     positive: () => K(g(e, Y())),
     negative: () => K(g(e, W()))
   }),
-  z = K(b(v)),
-  q = f(b(function(e) {
+  z = K(y(A)),
+  q = f(y(function(e) {
     return "boolean" == typeof e
   })),
-  X = f(b(function(e) {
+  X = f(y(function(e) {
     return "symbol" == typeof e
   })),
-  Z = f(b(function(e) {
+  Z = f(y(function(e) {
     return null == e
   }));
 var Q = {
@@ -381,10 +381,10 @@ var Q = {
       })
     })
   },
-  when: b,
-  select: y,
-  any: S,
-  _: I,
+  when: y,
+  select: b,
+  any: I,
+  _: S,
   string: C,
   between: N,
   lt: R,
@@ -408,12 +408,12 @@ var Q = {
   symbol: X,
   nullish: Z,
   instanceOf: function(e) {
-    return f(b(function(e) {
+    return f(y(function(e) {
       return t => t instanceof e
     }(e)))
   },
   shape: function(e) {
-    return f(b(d(e)))
+    return f(y(d(e)))
   }
 };
 let $ = {

@@ -47,22 +47,22 @@ function E(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = b(e, t), Object.getOwnPropertySymbols)
+  if (a = y(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let y = 5,
+let b = 5,
   O = 1500;
 
-function A(e) {
+function v(e) {
   return a.A.fetchRecentMentions({
     before: e,
     limit: h.Ue3,
@@ -71,9 +71,9 @@ function A(e) {
     feature: _.j5
   })
 }
-let v = (0, Chunk735438.throttle)(I, O);
+let A = (0, Chunk735438.throttle)(S, O);
 
-function S(e) {
+function I(e) {
   let t = p.A.getChannelInfoMap(),
     n = [];
   for (let i of e) {
@@ -81,7 +81,7 @@ function S(e) {
     if ((null == (r = t[i]) ? true : r.loadState) === _.Ve.LOADED) continue;
     let e = u.Ay.lastMessageId(i),
       a = null != e && d.default.age(e) > _.V$;
-    if (n.length >= y || a) break;
+    if (n.length >= b || a) break;
     let o = s.A.fetchMessages({
       channelId: i,
       limit: _.EM,
@@ -91,16 +91,16 @@ function S(e) {
   }
   return n
 }
-async function I(e) {
+async function S(e) {
   let {
     preload: t = false
   } = e, n = E(e, ["preload"]), r = Date.now(), a = p.A.getNotifyingChannelIds();
   if (null == a) return;
-  let s = t ? [] : S(a),
+  let s = t ? [] : I(a),
     o = l.Ay.getMentions(),
     c = null != o && o.length > 0 ? o[o.length - 1].id : null,
     u = false;
-  if (!l.Ay.hasMore && l.Ay.hasLoadedEver || l.Ay.loading || (s.push(A(c)), u = true), 0 === s.length) return void i.h.dispatch({
+  if (!l.Ay.hasMore && l.Ay.hasLoadedEver || l.Ay.loading || (s.push(v(c)), u = true), 0 === s.length) return void i.h.dispatch({
     type: "NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_SUCCESS",
     preload: t,
     hasMoreToLoad: false
@@ -141,7 +141,7 @@ let T = {
     i.h.dispatch({
       type: "NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_START",
       preload: n
-    }), v(g({
+    }), A(g({
       preload: n
     }, r))
   },

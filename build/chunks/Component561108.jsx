@@ -2,7 +2,7 @@
 /** chunk id: 561108, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => x
+  A: () => h
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -20,42 +20,42 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk945586 = require("./945586.js");
 
-function x(e) {
+function h(e) {
   let {
     guild: t,
     scrollToQuestions: n
-  } = e, i = (0, s.bG)([g.A], () => g.A.editedDefaultChannelIds), l = (0, u.$)(t.id, i).filter(e => e.isCategory() || (0, o.S)(e.guild_id, e.id));
+  } = e, i = (0, s.bG)([m.A], () => m.A.editedDefaultChannelIds), l = (0, u.$)(t.id, i).filter(e => e.isCategory() || (0, c.S)(e.guild_id, e.id));
   return (0, r.jsxs)("div", {
-    className: p.kL,
+    className: b.kL,
     children: [(0, r.jsx)("div", {
-      className: p.wx,
-      children: (0, r.jsx)(b.A, {
+      className: b.wx,
+      children: (0, r.jsx)(p.A, {
         guildId: t.id,
         scrollToQuestions: n
       })
     }), (0, r.jsxs)("div", {
-      className: p.o5,
-      children: [(0, r.jsx)(O, {}), 0 === l.length && (0, r.jsx)(h, {}), (0, r.jsx)(j, {
+      className: b.o5,
+      children: [(0, r.jsx)(_, {}), 0 === l.length && (0, r.jsx)(x, {}), (0, r.jsx)(j, {
         channels: l
       })]
     })]
   })
 }
 
-function h() {
+function x() {
   return (0, r.jsxs)("div", {
-    className: p.p$,
+    className: b.p$,
     children: [(0, r.jsx)("div", {
-      className: p.AI,
+      className: b.AI,
       children: (0, r.jsx)(a.N$i, {
         size: "md",
         color: "currentColor"
       })
     }), (0, r.jsx)(a.Text, {
-      className: p.HA,
+      className: b.HA,
       variant: "text-md/normal",
       color: "text-muted",
-      children: m.intl.string(m.t.Qj6O91)
+      children: f.intl.string(f.t.Qj6O91)
     })]
   })
 }
@@ -65,7 +65,7 @@ function j(e) {
     channels: t
   } = e;
   return (0, r.jsx)(r.Fragment, {
-    children: t.map(e => e.isCategory() ? (0, r.jsx)(y, {
+    children: t.map(e => e.isCategory() ? (0, r.jsx)(O, {
       label: e.name
     }, e.id) : (0, r.jsx)(v, {
       channel: e
@@ -73,23 +73,23 @@ function j(e) {
   })
 }
 
-function O() {
+function _() {
   return (0, r.jsx)("div", {
-    className: p.yF
+    className: b.yF
   })
 }
 
-function y(e) {
+function O(e) {
   let {
     label: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: p.L1,
-    children: [(0, r.jsx)(f.A, {
-      className: p.OW,
+    className: b.L1,
+    children: [(0, r.jsx)(g.A, {
+      className: b.OW,
       width: 12,
       height: 12,
-      direction: f.A.Directions.DOWN
+      direction: g.A.Directions.DOWN
     }), (0, r.jsx)(a.Text, {
       variant: "text-xs/semibold",
       color: "text-muted",
@@ -103,22 +103,22 @@ function v(e) {
   var t;
   let {
     channel: n
-  } = e, i = (0, d.sZ)(n), s = null != (t = (0, c.gU)(n)) ? t : a.N$i;
+  } = e, i = (0, d.sZ)(n), s = null != (t = (0, o.gU)(n)) ? t : a.N$i;
   return (0, r.jsxs)("div", {
-    className: p.Ix,
+    className: b.Ix,
     children: [(0, r.jsx)(s, {
-      className: p.p,
+      className: b.p,
       size: "xs",
       color: "currentColor"
     }), (0, r.jsx)(a.Text, {
-      className: p.HA,
+      className: b.HA,
       variant: "text-md/normal",
       color: "text-muted",
       lineClamp: 1,
       children: n.name
     }), (0, r.jsx)("div", {
       className: l()({
-        [p.al]: i
+        [b.al]: i
       })
     })]
   })

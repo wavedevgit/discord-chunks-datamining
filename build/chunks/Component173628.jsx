@@ -25,7 +25,7 @@ let u = [{
   }
 }, {
   key: "affinity",
-  renderHeader: () => (0, a.jsx)(i.Text, {
+  renderHeader: () => (0, a.jsx)(r.Text, {
     variant: "text-sm/semibold",
     children: "COMMUNICATION AFFINITY"
   }),
@@ -38,7 +38,7 @@ let u = [{
   }
 }, {
   key: "vcProbability",
-  renderHeader: () => (0, a.jsx)(i.Text, {
+  renderHeader: () => (0, a.jsx)(r.Text, {
     variant: "text-sm/semibold",
     children: "VOICE AFFINITY"
   }),
@@ -51,7 +51,7 @@ let u = [{
   }
 }, {
   key: "isFriend",
-  renderHeader: () => (0, a.jsx)(i.Text, {
+  renderHeader: () => (0, a.jsx)(r.Text, {
     variant: "text-sm/semibold",
     children: "IS FRIEND"
   }),
@@ -65,7 +65,7 @@ let u = [{
 }];
 
 function m() {
-  let e = (0, l.yK)([r.A, s.default], () => r.A.getUserAffinities().map(e => {
+  let e = (0, l.yK)([i.A, s.default], () => i.A.getUserAffinities().map(e => {
     let {
       otherUserId: t,
       communicationProbability: n,

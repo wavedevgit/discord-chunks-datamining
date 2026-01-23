@@ -2,8 +2,8 @@
 /** chunk id: 231643, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => j,
-  BW: () => b,
-  fu: () => x
+  BW: () => f,
+  fu: () => g
 }), require("./896048.js");
 var a, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,23 +17,23 @@ var a, Chunk627968 = require("./627968.js"),
   Chunk867041 = require("./867041.js"),
   Chunk786574 = require("./786574.jsx"),
   Chunk661251 = require("./661251.js"),
-  x = ((a = {}).NONE = "", a.DCF = "DCF", a.EXPERIMENTS = "Experiments", a.EVENTS = "Events", a.PREMIUM = "Premium", a.QUESTS = "Quests", a.BILLING = "Billing", a.USERS = "Users", a.GUILDS = "Guilds", a.UI = "UI", a.GAMES = "Games", a.AUDIO_VIDEO = "Audio / Video", a.DEVELOPMENT = "Development", a.BOOSTING = "Boosting", a);
-let b = ["Experiments", "DCF", "Events", "Premium", "Quests", "Billing", "Users", "Guilds", "UI", "Games", "Boosting", "Audio / Video", "Development"],
-  g = Chunk64700.forwardRef(function(e, t) {
+  g = ((a = {}).NONE = "", a.DCF = "DCF", a.EXPERIMENTS = "Experiments", a.EVENTS = "Events", a.PREMIUM = "Premium", a.QUESTS = "Quests", a.BILLING = "Billing", a.USERS = "Users", a.GUILDS = "Guilds", a.UI = "UI", a.GAMES = "Games", a.AUDIO_VIDEO = "Audio / Video", a.DEVELOPMENT = "Development", a.BOOSTING = "Boosting", a);
+let f = ["Experiments", "DCF", "Events", "Premium", "Quests", "Billing", "Users", "Guilds", "UI", "Games", "Boosting", "Audio / Video", "Development"],
+  b = Chunk64700.forwardRef(function(e, t) {
     let {
       id: n,
       selected: a,
-      onClick: i,
-      children: r
+      onClick: r,
+      children: i
     } = e;
     return (0, l.jsx)(c.DUT, {
-      className: s()(f.V3, {
-        [f.wH]: a
+      className: s()(x.V3, {
+        [x.wH]: a
       }),
       "data-tab-id": n,
       innerRef: t,
-      onClick: i,
-      children: r
+      onClick: r,
+      children: i
     })
   });
 
@@ -42,19 +42,19 @@ function v(e) {
     tabs: t,
     selectedTabId: n,
     onSelectTab: a
-  } = e, r = i.useRef(new Map), [s, x] = i.useState(() => new Set), {
-    ref: b,
+  } = e, i = r.useRef(new Map), [s, g] = r.useState(() => new Set), {
+    ref: f,
     width: v
-  } = (0, d.Ay)(), j = i.useRef(null), y = (0, h.N)(t, a);
-  i.useEffect(() => {
-    var e, a, l, i;
+  } = (0, d.Ay)(), j = r.useRef(null), _ = (0, h.N)(t, a);
+  r.useEffect(() => {
+    var e, a, l, r;
     if (null == v) return;
     let s = new Set,
       o = null != v ? v : 0;
-    for (let c of (o -= null != (e = null == (a = r.current.get(n)) ? true : a.getBoundingClientRect().width) ? e : 0, t)) c.id !== n && (o -= null != (l = null == (i = r.current.get(c.id)) ? true : i.getBoundingClientRect().width) ? l : 0) < 0 && s.add(c.id);
-    x(s)
-  }, [t, v, b, n]);
-  let _ = i.useCallback(e => {
+    for (let c of (o -= null != (e = null == (a = i.current.get(n)) ? true : a.getBoundingClientRect().width) ? e : 0, t)) c.id !== n && (o -= null != (l = null == (r = i.current.get(c.id)) ? true : r.getBoundingClientRect().width) ? l : 0) < 0 && s.add(c.id);
+    g(s)
+  }, [t, v, f, n]);
+  let y = r.useCallback(e => {
     let {
       closePopout: t
     } = e;
@@ -64,49 +64,49 @@ function v(e) {
       onClose: t,
       "aria-label": "Overflowed DevTools Tabs",
       onSelect: t,
-      children: y
+      children: _
     })
-  }, [y]);
+  }, [_]);
   return (0, l.jsxs)("div", {
-    className: f.Mv,
+    className: x.Mv,
     children: [(0, l.jsxs)("div", {
-      className: f.$H,
-      ref: b,
+      className: x.$H,
+      ref: f,
       children: [t.map(e => {
         let {
           id: t,
-          name: i
+          name: r
         } = e;
-        if (!s.has(t)) return (0, l.jsx)(g, {
+        if (!s.has(t)) return (0, l.jsx)(b, {
           id: t,
           selected: n === t,
           onClick: n !== t ? () => a(t) : true,
-          children: i
+          children: r
         }, t)
       }).filter(m.Vq), (0, l.jsx)("div", {
-        className: f.g,
+        className: x.g,
         children: t.map(e => {
           let {
             id: t,
-            name: i
+            name: r
           } = e;
-          return (0, l.jsx)(g, {
+          return (0, l.jsx)(b, {
             id: t,
             selected: n === t,
             ref: e => {
-              r.current.set(t, e)
+              i.current.set(t, e)
             },
             onClick: n !== t ? () => a(t) : true,
-            children: i
+            children: r
           }, t)
         })
       })]
     }), (0, l.jsx)("div", {
-      className: f.MK,
+      className: x.MK,
       children: s.size > 0 && (0, l.jsx)(c.YNO, {
         targetElementRef: j,
         layerContext: p.He,
-        renderPopout: _,
+        renderPopout: y,
         position: "bottom",
         align: "right",
         autoInvert: false,
@@ -132,11 +132,11 @@ function v(e) {
             return e
           }({}, e), n = n = {
             buttonRef: j,
-            className: f.Iq,
+            className: x.Iq,
             size: o.$n.Sizes.ICON,
             look: o.$n.Looks.BLANK,
             children: (0, l.jsx)(u.A, {
-              className: f.__invalid_overflowIcon,
+              className: x.__invalid_overflowIcon,
               width: 16,
               height: 16
             })
@@ -157,21 +157,21 @@ function v(e) {
 }
 
 function j(e, t) {
-  var n, a, r;
+  var n, a, i;
   let {
     tabs: s,
     initialSelectedTabId: o,
     onChangeTab: c
-  } = e, [d, u] = i.useState(null != o ? o : null == (a = s[0]) ? true : a.id);
+  } = e, [d, u] = r.useState(null != o ? o : null == (a = s[0]) ? true : a.id);
   return {
-    TabBar: i.useCallback(() => (0, l.jsx)(v, {
+    TabBar: r.useCallback(() => (0, l.jsx)(v, {
       tabs: s,
       selectedTabId: d,
       onSelectTab: e => {
         u(e), null == c || c(e)
       }
     }), [d, u, c, ...t]),
-    renderSelectedTab: null != (n = null == (r = s.find(e => e.id === d)) ? true : r.render) ? n : () => null,
+    renderSelectedTab: null != (n = null == (i = s.find(e => e.id === d)) ? true : i.render) ? n : () => null,
     selectedTabId: d
   }
 }

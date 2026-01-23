@@ -2,7 +2,7 @@
 /** chunk id: 27591, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => p
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,7 +15,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk165683 = require("./165683.js"),
   Chunk921503 = require("./921503.js");
-let g = [{
+let m = [{
     key: "tier_name",
     cellClassName: Chunk165683.Cg,
     renderHeader: () => d.intl.string(d.t["2Uiha2"]),
@@ -33,7 +33,7 @@ let g = [{
           }), n.name]
         })
       }
-      return (0, r.jsx)(o.fh, {
+      return (0, r.jsx)(c.fh, {
         className: u.uR,
         children: t
       })
@@ -42,7 +42,7 @@ let g = [{
     key: "subscribers",
     cellClassName: l()(Chunk165683.wC, Chunk921503.WI),
     renderHeader: () => d.intl.string(d.t.zu8go1),
-    render: e => (0, r.jsx)(o.MD, {
+    render: e => (0, r.jsx)(c.MD, {
       children: e.roleMemberCount
     })
   }, {
@@ -53,25 +53,25 @@ let g = [{
       let {
         subscriptionListing: t
       } = e, n = null == t ? true : t.subscription_plans[0], i = null == n ? true : n.price;
-      return (0, r.jsx)(o.Kh, {
+      return (0, r.jsx)(c.Kh, {
         children: i
       })
     }
   }],
-  b = e => {
+  p = e => {
     let {
       totalPayoutsForPeriod: t,
       guildId: n,
       className: i
-    } = e, a = (0, c.A)(n, t);
+    } = e, a = (0, o.A)(n, t);
     return (0, r.jsx)("div", {
-      className: l()(f.CZ, i),
+      className: l()(g.CZ, i),
       children: (0, r.jsx)(s.A, {
-        columns: g,
+        columns: m,
         data: a,
-        className: l()(f.tp, u.tp),
+        className: l()(g.tp, u.tp),
         rowClassName: u.nM,
-        headerClassName: l()(f.wx, u.wx)
+        headerClassName: l()(g.wx, u.wx)
       })
     })
   }

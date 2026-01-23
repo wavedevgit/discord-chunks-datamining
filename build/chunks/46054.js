@@ -67,21 +67,21 @@ let m = {
     enableBuildOverrides: true
   })]),
   E = i().omit(h(Chunk542664.A.RULES, [(0, Chunk999443.A)(m)]), "paragraph", "newline"),
-  b = h(Chunk542664.A.CHANNEL_TOPIC_RULES, [(0, Chunk999443.A)(f(u({}, m), {
+  y = h(Chunk542664.A.CHANNEL_TOPIC_RULES, [(0, Chunk999443.A)(f(u({}, m), {
     emojiTooltipPosition: "bottom"
   })), {
     codeBlock: {
       react: Chunk542664.A.RULES.text.react
     }
   }]),
-  y = h(Chunk542664.A.VOICE_CHANNEL_STATUS_RULES, [(0, Chunk999443.A)(f(u({}, m), {
+  b = h(Chunk542664.A.VOICE_CHANNEL_STATUS_RULES, [(0, Chunk999443.A)(f(u({}, m), {
     enableEmojiClick: false
   }))]),
   O = h(Chunk542664.A.EMBED_TITLE_RULES, [(0, Chunk999443.A)(m)]),
-  A = i().omit(h(Chunk542664.A.EMBED_TITLE_RULES, [(0, Chunk999443.A)(m)]), _),
-  v = h(Chunk542664.A.INLINE_REPLY_RULES, [(0, Chunk999443.A)(m)]),
-  S = h(Chunk542664.A.GUILD_VERIFICATION_FORM_RULES, [(0, Chunk999443.A)(m)]),
-  I = h(Chunk542664.A.GUILD_EVENT_RULES, [(0, Chunk999443.A)(m)]),
+  v = i().omit(h(Chunk542664.A.EMBED_TITLE_RULES, [(0, Chunk999443.A)(m)]), _),
+  A = h(Chunk542664.A.INLINE_REPLY_RULES, [(0, Chunk999443.A)(m)]),
+  I = h(Chunk542664.A.GUILD_VERIFICATION_FORM_RULES, [(0, Chunk999443.A)(m)]),
+  S = h(Chunk542664.A.GUILD_EVENT_RULES, [(0, Chunk999443.A)(m)]),
   T = h(Chunk542664.A.AUTO_MODERATION_SYSTEM_MESSAGE_RULES, [(0, Chunk999443.A)(m)]),
   C = i().omit(h(Chunk542664.A.RULES, [(0, Chunk999443.A)(m)]), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "list", "heading", "subtext", ..._),
   N = {
@@ -92,27 +92,27 @@ let m = {
     createReactRules: Chunk999443.A,
     defaultReactRuleOptions: m,
     defaultRules: g,
-    guildEventRules: I,
+    guildEventRules: S,
     notifCenterV2MessagePreviewRules: C,
     lockscreenWidgetMessageRules: N,
     astParserFor: Chunk436857.X,
     reactParserFor: Chunk436857.aV,
     parse: Chunk436857.aV(g),
-    parseTopic: (e, t, n, r) => a.aV(b)(e, t, u({
+    parseTopic: (e, t, n, r) => a.aV(y)(e, t, u({
       allowLinks: true
     }, n), r),
-    parseVoiceChannelStatus: Chunk436857.aV(y),
+    parseVoiceChannelStatus: Chunk436857.aV(b),
     parseEmbedTitle: Chunk436857.aV(O),
-    parseEmbedTitleWithoutLinks: Chunk436857.aV(A),
-    parseInlineReply: Chunk436857.aV(v),
-    parseGuildVerificationFormRule: Chunk436857.aV(S),
-    parseGuildEventDescription: Chunk436857.aV(I),
+    parseEmbedTitleWithoutLinks: Chunk436857.aV(v),
+    parseInlineReply: Chunk436857.aV(A),
+    parseGuildVerificationFormRule: Chunk436857.aV(I),
+    parseGuildEventDescription: Chunk436857.aV(S),
     parseAutoModerationSystemMessage: Chunk436857.aV(T),
     parseForumPostGuidelines: Chunk436857.aV(E),
     parseToAST: Chunk436857.X(g),
-    parseTopicToAST: Chunk436857.X(b),
+    parseTopicToAST: Chunk436857.X(y),
     parseEmbedTitleToAST: Chunk436857.X(O),
-    parseEmbedTitleWithoutLinksToAST: Chunk436857.X(A),
-    parseInlineReplyToAST: Chunk436857.X(v),
+    parseEmbedTitleWithoutLinksToAST: Chunk436857.X(v),
+    parseInlineReplyToAST: Chunk436857.X(A),
     parseAutoModerationSystemMessageToAST: Chunk436857.X(T)
   }

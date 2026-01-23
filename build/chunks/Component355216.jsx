@@ -1,13 +1,13 @@
 /** Chunk was on 97492 **/
 /** chunk id: 355216, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  HN: () => g,
-  ux: () => m
+  HN: () => m,
+  ux: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk187508 = require("./187508.js"),
@@ -19,30 +19,30 @@ var Chunk627968 = require("./627968.js"),
 require("./445368.js");
 var Chunk626600 = require("./626600.js");
 
-function g() {
+function m() {
   let {
     setSelectedFilter: e
-  } = (0, d.A)(), t = (0, p.S)(e => e.setInboxReadState);
+  } = (0, d.A)(), t = (0, h.S)(e => e.setInboxReadState);
   return () => {
-    e(h.Io.ALL), t(false)
+    e(f.Io.ALL), t(false)
   }
 }
 
-function m(e) {
+function b(e) {
   let t, n, i, {
       isSelected: d
     } = e,
     {
-      unreadRecentMentionsCount: p,
-      unreadChannelIds: h
-    } = (0, f.U4)(),
-    g = (t = function() {
+      unreadRecentMentionsCount: h,
+      unreadChannelIds: f
+    } = (0, p.U4)(),
+    m = (t = function() {
       let {
         unreadRecentMentionsCount: e
-      } = (0, f.U4)(), {
+      } = (0, p.U4)(), {
         hasMoreMentions: t,
         mentionsLoading: n
-      } = (0, s.cf)([c.Ay], () => ({
+      } = (0, a.cf)([c.Ay], () => ({
         hasMoreMentions: c.Ay.hasMore,
         mentionsLoading: c.Ay.loading
       })), r = Math.min(e, 25), l = e > r || t || n, i = (0, o.o6S)(r) + 6 * !!l;
@@ -62,7 +62,7 @@ function m(e) {
         style: {
           width: l
         },
-        className: b.xF
+        className: g.xF
       })
     })(t, n), [t, n]), l.useMemo(() => ({
       badge: i,
@@ -73,18 +73,18 @@ function m(e) {
       }
     }), [i, t.width])),
     {
-      entrypoint: m
+      entrypoint: b
     } = (0, u.X8)({
       location: "useInboxBadgeInfo"
     });
   return l.useMemo(() => {
-    if (p > 0) return g;
-    let e = h.length;
+    if (h > 0) return m;
+    let e = f.length;
     if (0 === e) return {
       badge: null,
       badgeType: null
     };
-    if (m === u.RK.SERVER_RAIL_TOP) {
+    if (b === u.RK.SERVER_RAIL_TOP) {
       let t, n = (0, o.o6S)(e) - 3;
       return {
         badge: (t = (0, o.o6S)(e) - 3, (0, r.jsx)(o.hVq, {
@@ -96,8 +96,8 @@ function m(e) {
             minHeight: 13,
             minWidth: 13
           },
-          className: a()(b.xF, b.pw, {
-            [b.wH]: d
+          className: s()(g.xF, g.pw, {
+            [g.wH]: d
           })
         })),
         badgeType: "unread",
@@ -107,7 +107,7 @@ function m(e) {
         }
       }
     }
-    return m === u.RK.TITLE_BAR_LEFT ? {
+    return b === u.RK.TITLE_BAR_LEFT ? {
       badge: (0, r.jsx)(o.Text, {
         variant: "eyebrow",
         children: (0, o.Gub)(e)
@@ -117,5 +117,5 @@ function m(e) {
       badge: null,
       badgeType: null
     }
-  }, [p, g, h.length, m, d])
+  }, [h, m, f.length, b, d])
 }

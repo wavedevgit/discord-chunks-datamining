@@ -15,9 +15,9 @@ function r(e) {
     location: t
   } = e, r = (0, d.kt)({
     location: t
-  }), o = (0, a.bG)([i.A], () => null != l ? i.A.getStorefrontData(l) : true, [l]);
+  }), o = (0, s.bG)([i.A], () => null != l ? i.A.getStorefrontData(l) : true, [l]);
   return n.useEffect(() => {
-    null != l && r && (0, s.Rw)(l, {
+    null != l && r && (0, a.Rw)(l, {
       eager: false
     })
   }, [l, o, r]), o

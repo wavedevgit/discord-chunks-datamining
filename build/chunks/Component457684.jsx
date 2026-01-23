@@ -59,14 +59,14 @@ function g(e) {
     currentUser: t,
     userTeamsLoading: n,
     userTeams: p
-  } = e, [h, g] = i.useState(false), [E, b] = i.useState(false), [y, O] = i.useState(false), [A, v] = i.useState(false), [S, I] = i.useState(null), T = i.useCallback(e => {
+  } = e, [h, g] = i.useState(false), [E, y] = i.useState(false), [b, O] = i.useState(false), [v, A] = i.useState(false), [I, S] = i.useState(null), T = i.useCallback(e => {
     if (e.body.code === d.t02.INVALID_PASSWORD) throw e;
-    v(true), I(e.body.message)
+    A(true), S(e.body.message)
   }, []), C = i.useCallback((e, t) => (0, s.U_)(e, t).then(d.tEg, T), [T]), N = i.useCallback(function() {
     var e;
     let n = arguments.length > 0 && true !== arguments[0] && arguments[0],
       i = l.A.getGuildsArray().filter(e => e.ownerId === t.id);
-    (null != (e = null == p ? true : p.filter(e => e.owner_user_id === t.id)) ? e : []).length > 0 ? g(true) : i.length > 0 ? b(true) : t.isClaimed() ? (0, a.qfG)(e => (0, r.jsx)(o.default, m(_({}, e), {
+    (null != (e = null == p ? true : p.filter(e => e.owner_user_id === t.id)) ? e : []).length > 0 ? g(true) : i.length > 0 ? y(true) : t.isClaimed() ? (0, a.qfG)(e => (0, r.jsx)(o.default, m(_({}, e), {
       handleSubmit: e => C(e, n),
       title: n ? f.intl.string(f.t["8lQ2rR"]) : f.intl.string(f.t.jf5GGb),
       actionText: n ? f.intl.string(f.t["8lQ2rR"]) : f.intl.string(f.t.jf5GGb),
@@ -82,14 +82,14 @@ function g(e) {
     }), (0, r.jsx)(u.A, {
       shouldRenderOwnedTeamsModal: h,
       shouldRenderOwnedGuildsModal: E,
-      shouldRenderDeleteAccountConfirmModal: y,
-      shouldRenderDisableAccountErrorModal: A,
-      disableAccountErrorMessage: S,
+      shouldRenderDeleteAccountConfirmModal: b,
+      shouldRenderDisableAccountErrorModal: v,
+      disableAccountErrorMessage: I,
       onOwnedTeamsWarningModalClose: () => g(false),
-      onOwnedGuildsWarningModalClose: () => b(false),
+      onOwnedGuildsWarningModalClose: () => y(false),
       onDeleteAccountConfirmModalClose: () => O(false),
       onDisableAccountErrorModalClose: () => {
-        v(false), I(null)
+        A(false), S(null)
       }
     })]
   })

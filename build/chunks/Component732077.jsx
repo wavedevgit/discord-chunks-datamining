@@ -1,12 +1,12 @@
 /** Chunk was on 97492 **/
 /** chunk id: 732077, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk734057 = require("./734057.js"),
@@ -15,41 +15,41 @@ var Chunk627968 = require("./627968.js"),
   Chunk108197 = require("./108197.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk316945 = require("./316945.js");
-let b = Chunk64700.memo(function(e) {
+let g = Chunk64700.memo(function(e) {
   let {
     channel: t,
     selectedChannel: n,
     selectedVoiceChannelId: l,
     sortedThreadIds: i,
-    withGuildIcon: b
+    withGuildIcon: g
   } = e, {
-    density: g
-  } = (0, o.wRf)(), m = (0, s.yK)([c.A], () => i.map(e => c.A.getChannel(e)).filter(d.Vq), [i]), A = (0, s.bG)([u.Ay], () => {
-    let e = m[m.length - 1];
+    density: m
+  } = (0, o.wRf)(), b = (0, a.yK)([c.A], () => i.map(e => c.A.getChannel(e)).filter(d.Vq), [i]), A = (0, a.bG)([u.Ay], () => {
+    let e = b[b.length - 1];
     if (null == e) return 0;
     let t = u.Ay.getVoiceStates(e.guild_id)[e.id];
     return null == t || 0 === t.length ? 0 : l !== e.id ? 40 : 32 * t.length + 8
   });
   return (0, r.jsx)("li", {
-    className: h.kL,
+    className: f.kL,
     children: (0, r.jsxs)("ul", {
       role: "group",
-      "aria-label": p.intl.formatToPlainString(p.t.EiyIi6, {
+      "aria-label": h.intl.formatToPlainString(h.t.EiyIi6, {
         channelName: t.name
       }),
       children: [(0, r.jsx)("div", {
-        className: a()(h.eh, {
-          [h.ET]: b
+        className: s()(f.eh, {
+          [f.ET]: g
         }),
         style: {
-          bottom: ("cozy" === g ? 28 : 24) + A
+          bottom: ("cozy" === m ? 28 : 24) + A
         }
-      }), m.map((e, t) => (0, r.jsx)(f.A, {
+      }), b.map((e, t) => (0, r.jsx)(p.A, {
         thread: e,
         isSelectedChannel: (null == n ? true : n.id) === e.id,
         isSelectedVoice: l === e.id,
-        isLast: t === m.length - 1,
-        withGuildIcon: b
+        isLast: t === b.length - 1,
+        withGuildIcon: g
       }, e.id))]
     })
   })

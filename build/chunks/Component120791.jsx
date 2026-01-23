@@ -1,7 +1,7 @@
 /** Chunk was on 38663 **/
 /** chunk id: 120791, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function b(e) {
+function g(e) {
   let {
     games: t
   } = e, n = function(e, t) {
@@ -57,7 +57,7 @@ function b(e) {
     registerItemRef: l,
     manageFocusOnDelete: i
   } = (0, a.r)();
-  return (0, r.jsx)(s.A, {
+  return (0, r.jsx)(o.A, {
     games: t,
     renderGame: (e, t) => (0, r.jsx)(d.h, p({
       index: t,
@@ -68,20 +68,20 @@ function b(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   var t, n;
   let {
-    userId: s,
+    userId: o,
     widgetType: d,
-    disableInteraction: g,
-    games: m
-  } = e, y = (0, l.bG)([i.default], () => i.default.getId() === s), {
+    disableInteraction: m,
+    games: b
+  } = e, y = (0, l.bG)([i.default], () => i.default.getId() === o), {
     getManageButtonForWidget: O
   } = (0, f.r)(), j = O(d), {
     expanded: x,
     setExpanded: h
-  } = (0, c.B)(), v = x ? m : m.slice(0, 8), A = m.length > 8, w = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(b, (t = p({}, e), n = n = {
+  } = (0, c.B)(), v = x ? b : b.slice(0, 8), _ = b.length > 8, A = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(g, (t = p({}, e), n = n = {
       games: v
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -92,18 +92,18 @@ function g(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), A && (0, r.jsx)(u.A, {
+    }), t)), _ && (0, r.jsx)(u.A, {
       expanded: x,
       onClick: () => h(e => !e)
     })]
   });
-  return y && !g ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.A, {
+  return y && !m ? (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(s.A, {
       widgetType: d,
-      gameCount: m.length
+      gameCount: b.length
     }), (0, r.jsx)(a.B, {
       emptyListFallbackRef: j,
-      children: w
+      children: A
     })]
-  }) : w
+  }) : A
 }

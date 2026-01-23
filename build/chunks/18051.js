@@ -17,9 +17,9 @@ require.r(exports), require.d(exports, {
   PerfTestRive: () => h.Q,
   PulseGradientRive: () => m.M,
   UnlockRive: () => g.V,
-  VibingWumpusBackgroundRive: () => b.R,
+  VibingWumpusBackgroundRive: () => y.R,
   VibingWumpusRive: () => E.Z,
-  WandAndSparklesRive: () => y.r
+  WandAndSparklesRive: () => b.r
 });
 var Chunk388108 = require("./388108.jsx"),
   Chunk234479 = require("./234479.jsx"),

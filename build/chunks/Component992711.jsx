@@ -2,7 +2,7 @@
 /** chunk id: 992711, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,76 +17,76 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk821683 = require("./821683.js");
 
-function b(e) {
+function p(e) {
   let {
     guildId: t,
     scrollToQuestions: n
-  } = e, b = (0, i.bG)([a.A], () => a.A.isAdvancedMode(t)), m = (0, i.bG)([o.A], () => o.A.editedDefaultChannelIds), [p, x] = (0, c.tb)(t, m), [h, j] = (0, d.tB)(t, [...m]), O = b ? j.length : x.length, y = b ? h.length : p.length, v = y >= u.Kd, A = j.length - x.length, E = (0, r.jsx)(s.yr3, {
+  } = e, p = (0, i.bG)([a.A], () => a.A.isAdvancedMode(t)), f = (0, i.bG)([c.A], () => c.A.editedDefaultChannelIds), [b, h] = (0, o.tb)(t, f), [x, j] = (0, d.tB)(t, [...f]), _ = p ? j.length : h.length, O = p ? x.length : b.length, v = O >= u.Kd, y = j.length - h.length, A = (0, r.jsx)(s.yr3, {
     size: "sm",
     color: l.A.unsafe_rawColors.BRAND_500.css,
     secondaryColor: l.A.unsafe_rawColors.WHITE.css,
-    className: g.Kk
-  }), N = (0, r.jsx)(s.aXh, {
+    className: m.Kk
+  }), E = (0, r.jsx)(s.aXh, {
     size: "sm",
-    className: g.Kk,
+    className: m.Kk,
     color: l.A.colors.WHITE.css,
     secondaryColor: l.A.colors.BACKGROUND_MOD_MUTED.css
-  }), _ = [Math.min(u.Kd, y) / u.Kd * 100], S = v ? [l.A.colors.TEXT_FEEDBACK_POSITIVE.css] : [l.A.colors.TEXT_BRAND.css];
+  }), N = [Math.min(u.Kd, O) / u.Kd * 100], S = v ? [l.A.colors.TEXT_FEEDBACK_POSITIVE.css] : [l.A.colors.TEXT_BRAND.css];
   return (0, r.jsxs)("div", {
-    className: g.kL,
+    className: m.kL,
     children: [(0, r.jsxs)("div", {
-      className: g.wx,
+      className: m.wx,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-xs/bold",
         color: "text-brand",
-        children: f.intl.format(f.t.kvroKO, {
-          count: y
+        children: g.intl.format(g.t.kvroKO, {
+          count: O
         })
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/bold",
         color: "text-muted",
-        children: f.intl.format(f.t["0MjxJ5"], {
-          count: O
+        children: g.intl.format(g.t["0MjxJ5"], {
+          count: _
         })
       })]
     }), (0, r.jsx)(s.LvI, {
       foregroundColors: S,
-      percents: _,
+      percents: N,
       size: s.LvI.Sizes.XSMALL
     }), (0, r.jsxs)("div", {
-      className: g.n,
-      children: [v ? E : N, (0, r.jsx)(s.Text, {
+      className: m.n,
+      children: [v ? A : E, (0, r.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: f.intl.format(f.t.PwXgSy, {
+        children: g.intl.format(g.t.PwXgSy, {
           count: u.Kd
         })
       })]
-    }), b && (0, r.jsxs)(r.Fragment, {
+    }), p && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: g.n,
+        className: m.n,
         children: [(0, r.jsx)(s.mir, {
           size: "sm",
           color: l.A.colors.WHITE.css,
           secondaryColor: l.A.colors.BACKGROUND_MOD_MUTED.css,
-          className: g.Kk
+          className: m.Kk
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: f.intl.string(f.t.AyvkOK)
+          children: g.intl.string(g.t.AyvkOK)
         })]
       }), (0, r.jsxs)("div", {
-        className: g.n,
+        className: m.n,
         children: [(0, r.jsx)(s.mir, {
           size: "sm",
           color: l.A.colors.WHITE.css,
           secondaryColor: l.A.colors.BACKGROUND_MOD_MUTED.css,
-          className: g.Kk
+          className: m.Kk
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: f.intl.format(f.t["8Geut3"], {
-            count: A,
+          children: g.intl.format(g.t["8Geut3"], {
+            count: y,
             prejoinHook: e => (0, r.jsx)(s.MzZ, {
               onClick: n,
               children: (0, r.jsx)(s.Text, {

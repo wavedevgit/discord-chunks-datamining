@@ -26,15 +26,15 @@ function x(t) {
     transitionState: a,
     clientSettingType: x,
     gameId: b
-  } = t, [f, k] = l.useState("unreported"), [w, A] = l.useState(""), [C, S] = l.useState(false), [j, M] = l.useState(false), [N, P] = l.useState(false), [R, z] = l.useState(false), D = (0, r.bG)([m.A, c.Ay], () => {
+  } = t, [f, k] = i.useState("unreported"), [w, A] = i.useState(""), [C, S] = i.useState(false), [j, M] = i.useState(false), [H, N] = i.useState(false), [P, R] = i.useState(false), z = (0, r.bG)([m.A, c.Ay], () => {
     var t;
     let e = null != b ? b : null == (t = c.Ay.getCurrentGameForAnalytics()) ? true : t.id;
     return null == e ? null : m.A.getDetectableGame(e)
-  }), E = (0, r.bG)([v.default], () => {
+  }), D = (0, r.bG)([v.default], () => {
     var t;
     let e = null != (t = null === v.default || true === v.default ? true : v.default.getMostRecentOverlayRenderMethod()) ? t : true;
     return null != e ? h.Ue[e] : true
-  }), F = l.useMemo(() => {
+  }), E = i.useMemo(() => {
     let t = {
       not_working: g.t.CHXHFX,
       not_useful: g.t.a95skc,
@@ -49,61 +49,61 @@ function x(t) {
       name: g.intl.string(t[e]),
       value: e
     }))
-  }, []), L = l.useCallback(async () => {
+  }, []), F = i.useCallback(async () => {
     var t, a, n;
     if ("unreported" === f && 0 === w.length) {
-      P(true), await (0, s.yy)(100), P(false), z(true);
+      N(true), await (0, s.yy)(100), N(false), R(true);
       return
     }
     S(true), await _.default.track(y.HAw.OVERLAY_DISABLED_SURVEY, {
       reason: f,
       comment: w,
       client_setting_type: x,
-      application_id: null == D ? true : D.id,
-      application_name: null == D ? true : D.name,
-      most_recent_overlay_render_method: E,
+      application_id: null == z ? true : z.id,
+      application_name: null == z ? true : z.name,
+      most_recent_overlay_render_method: D,
       hardware_display_count: null != (t = await (null === u.A || true === u.A || null == (n = u.A.hardware) || null == (a = n.getDisplayCount) ? true : a.call(n))) ? t : null
     }), await (0, s.yy)(1e3), S(false), M(true), await (0, s.yy)(1500), e()
-  }, [f, w, x, null == D ? true : D.id, null == D ? true : D.name, E, e]);
+  }, [f, w, x, null == z ? true : z.id, null == z ? true : z.name, D, e]);
   (0, d.Ay)(() => {
     _.default.track(y.HAw.OPEN_MODAL, {
       type: "overlay_disabled_questionnaire_modal"
     })
   });
-  let O = l.useMemo(() => [{
+  let L = i.useMemo(() => [{
     variant: "secondary",
     text: g.intl.string(g.t["5Wxrcd"]),
     onClick: e,
     disabled: C
   }, {
-    variant: N ? "secondary" : "primary",
+    variant: H ? "secondary" : "primary",
     text: j ? g.intl.string(g.t.bxiZU6) : g.intl.string(g.t.geKm7t),
-    onClick: L,
+    onClick: F,
     disabled: C || j,
     loading: C,
     autoFocus: false
-  }], [e, C, j, L, N]);
-  return (0, n.jsxs)(i.Modal, {
+  }], [e, C, j, F, H]);
+  return (0, n.jsxs)(l.Modal, {
     onClose: e,
     transitionState: a,
     title: g.intl.string(g.t["9JKzxe"]),
     subtitle: g.intl.string(g.t["2yjnmb"]),
-    actions: O,
+    actions: L,
     children: [(0, n.jsxs)("div", {
       children: [(0, n.jsx)(o.bfh, {
-        isShaking: N,
+        isShaking: H,
         intensity: 1,
         className: p.lm,
         children: (0, n.jsx)(o.Text, {
           variant: "text-sm/semibold",
-          color: R ? "text-feedback-critical" : "text-muted",
+          color: P ? "text-feedback-critical" : "text-muted",
           children: g.intl.string(g.t.yhUvdd)
         })
       }), (0, n.jsx)(o.z6M, {
         value: f,
-        options: F,
+        options: E,
         onChange: t => {
-          k(t), z(false), P(false)
+          k(t), R(false), N(false)
         }
       })]
     }), (0, n.jsxs)("div", {

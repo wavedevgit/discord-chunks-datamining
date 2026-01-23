@@ -2,7 +2,7 @@
 /** chunk id: 862651, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => x
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -18,7 +18,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk700458 = require("./700458.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function p(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function p(e) {
   return e
 }
 
-function x(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,59 +50,59 @@ function x(e, t) {
   }), e
 }
 
-function h() {
+function x() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, c.O)(), [h, j] = o.UN(e, t), O = (0, u.A)(t, e), {
-    setCurrentTab: y
-  } = (0, b.Tj)(), v = () => y(b.Oi.EMOJIS), A = (0, i.bG)([s.A], () => s.A.getGuild(t)), E = null != A ? (0, d.A)(A) : true;
+  } = (0, o.O)(), [x, j] = c.UN(e, t), _ = (0, u.A)(t, e), {
+    setCurrentTab: O
+  } = (0, p.Tj)(), v = () => O(p.Oi.EMOJIS), y = (0, i.bG)([s.A], () => s.A.getGuild(t)), A = null != y ? (0, d.A)(y) : true;
 
-  function N(e) {
-    null == h ? j(new Set(e)) : j(new Set([...h, ...e]))
+  function E(e) {
+    null == x ? j(new Set(e)) : j(new Set([...x, ...e]))
   }
 
-  function _(e) {
-    let t = new Set(h);
+  function N(e) {
+    let t = new Set(x);
     t.delete(e), j(t)
   }
   let S = (0, a.gN)();
   return (0, r.jsxs)(l.D0$, {
-    label: m.intl.string(m.t["D0qeO+"]),
-    description: m.intl.format(m.t.zuwely, {
-      premiumEmojiMaximum: E
+    label: f.intl.string(f.t["D0qeO+"]),
+    description: f.intl.format(f.t.zuwely, {
+      premiumEmojiMaximum: A
     }),
-    helperText: m.intl.format(m.t.sEkgBk, {
+    helperText: f.intl.format(f.t.sEkgBk, {
       handleTransitionToManageEmoji: v
     }),
     disabled: S,
-    children: [(0, r.jsx)(g.d, {
-      tierEmojiIds: h,
+    children: [(0, r.jsx)(m.d, {
+      tierEmojiIds: x,
       guildId: t,
       onRemoveEmoji: function(e) {
-        e.roles.filter(e => e !== (null == O ? true : O.id)).length > 0 ? _(e.id) : (0, l.mMO)(async () => {
+        e.roles.filter(e => e !== (null == _ ? true : _.id)).length > 0 ? N(e.id) : (0, l.mMO)(async () => {
           let {
             default: t
           } = await n.e("55631").then(n.bind(n, 185074));
-          return n => (0, r.jsx)(t, x(p({}, n), {
+          return n => (0, r.jsx)(t, h(b({}, n), {
             onConfirmDelete: () => {
-              _(e.id), n.onClose()
+              N(e.id), n.onClose()
             }
           }))
         })
       }
-    }), null != h && h.size > 0 ? (0, r.jsx)(l.hKd, {
+    }), null != x && x.size > 0 ? (0, r.jsx)(l.hKd, {
       size: 8
-    }) : null, (0, r.jsx)(f.n, {
+    }) : null, (0, r.jsx)(g.n, {
       onClick: function() {
         (0, l.mMO)(async () => {
           let {
             EmojiAddModal: e
           } = await n.e("90410").then(n.bind(n, 126033));
-          return n => (0, r.jsx)(e, x(p({}, n), {
+          return n => (0, r.jsx)(e, h(b({}, n), {
             guildId: t,
-            initialTierEmojiIds: h,
-            onSubmit: N,
+            initialTierEmojiIds: x,
+            onSubmit: E,
             transitionToManageEmoji: () => {
               v(), n.onClose()
             }
@@ -110,7 +110,7 @@ function h() {
         })
       },
       disabled: S,
-      children: m.intl.string(m.t.ouOOVy)
+      children: f.intl.string(f.t.ouOOVy)
     })]
   })
 }

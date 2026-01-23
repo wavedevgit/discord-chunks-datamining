@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Wg: () => g,
-  cy: () => b,
+  cy: () => y,
   p: () => E
 });
 var Chunk627968 = require("./627968.js"),
@@ -103,7 +103,7 @@ let g = e => {
       children: u
     }) : u
   },
-  b = e => {
+  y = e => {
     let {
       primaryCTAButtonProps: t,
       showLockIcon: n,

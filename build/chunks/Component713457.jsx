@@ -1,7 +1,7 @@
 /** Chunk was on 22477 **/
 /** chunk id: 713457, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => I
+  A: () => w
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -39,7 +39,7 @@ let E = [{
   }
 }];
 
-function N(e) {
+function T(e) {
   let t, n, {
     value: l
   } = e;
@@ -59,7 +59,7 @@ function N(e) {
   })
 }
 
-function T(e) {
+function N(e) {
   if (0 === e.length) return null;
   switch (e[0].value) {
     case C.fO.DESKTOP:
@@ -77,40 +77,40 @@ function T(e) {
   }
 }
 
-function I(e) {
-  var t, n, I, k;
+function w(e) {
+  var t, n, w, I;
   let {
-    quest: w,
+    quest: k,
     questContent: P,
     onReceiveErrorHints: R,
     contentPosition: D,
     rowIndex: M,
     sourceQuestContent: L
-  } = e, U = (0, i.bG)([d.A], () => d.A.useReducedMotion), B = (0, y.Xf)({
+  } = e, U = (0, r.bG)([d.A], () => d.A.useReducedMotion), B = (0, _.Xf)({
     useReducedMotion: U
-  }), G = (0, m.Ut)(), F = (0, b.RR)({
-    quest: w
-  }), V = (0, b.Vn)(w), W = (0, b.S5)(w.config.expiresAt, {
+  }), G = (0, m.Ut)(), F = (0, f.RR)({
+    quest: k
+  }), V = (0, f.Vn)(k), W = (0, f.S5)(k.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), {
     isClaiming: H,
     isEnrolling: K,
     isQuestEnrollmentBlocked: z
-  } = (0, i.cf)([p.A], () => ({
-    isClaiming: p.A.isClaimingReward(w.id) || p.A.isFetchingRewardCode(w.id),
-    isEnrolling: p.A.isEnrolling(w.id),
+  } = (0, r.cf)([p.A], () => ({
+    isClaiming: p.A.isClaimingReward(k.id) || p.A.isFetchingRewardCode(k.id),
+    isEnrolling: p.A.isEnrolling(k.id),
     isQuestEnrollmentBlocked: null != p.A.questEnrollmentBlockedUntil
-  })), q = (null == (t = w.userStatus) ? true : t.enrolledAt) != null, Q = (null == (n = w.userStatus) ? true : n.completedAt) != null, Y = Q && (null == (I = w.userStatus) ? true : I.claimedAt) == null, J = (0, g.if)(w), X = !(0, g.Ic)(w), Z = (0, b.In)(w), $ = (0, v.IO)(w), ee = (0, v.BS)(w), et = (0, v.Cr)(w), en = (0, b.fc)(w), [ea, el, ei] = (0, b.Qo)(w, en), er = X && Z === b.F3.ACCEPTED, es = er && ea === h.X0.SELECT, eo = er && !es && el.length > 1, ec = f.t$.useConfig({
+  })), q = (null == (t = k.userStatus) ? true : t.enrolledAt) != null, Q = (null == (n = k.userStatus) ? true : n.completedAt) != null, Y = Q && (null == (w = k.userStatus) ? true : w.claimedAt) == null, J = (0, b.if)(k), X = !(0, b.Ic)(k), Z = (0, f.In)(k), $ = (0, v.IO)(k), ee = (0, v.BS)(k), et = (0, v.Cr)(k), en = (0, f.fc)(k), [ea, el, er] = (0, f.Qo)(k, en), ei = X && Z === f.F3.ACCEPTED, es = ei && ea === h.X0.SELECT, eo = ei && !es && el.length > 1, ec = x.t$.useConfig({
     location: C.rE.QUEST_HOME_DESKTOP
   }).enabled, ed = l.useCallback(e => {
-    ei(e), e === C.fO.DESKTOP && R([])
-  }, [ei, R]), {
+    er(e), e === C.fO.DESKTOP && R([])
+  }, [er, R]), {
     text: eu,
     onClick: em
-  } = (0, y._c)({
+  } = (0, _._c)({
     progressState: Z,
-    quest: w,
+    quest: k,
     questContent: P,
     questContentPosition: D,
     questContentRowIndex: M,
@@ -121,11 +121,11 @@ function I(e) {
   }), {
     startingConsoleQuest: ep,
     startConsoleQuest: eh
-  } = (0, b.Wj)({
-    questId: w.id,
+  } = (0, f.Wj)({
+    questId: k.id,
     beforeRequest: () => {
       B.startAnimation(), G({
-        questId: w.id,
+        questId: k.id,
         questContent: P,
         questContentCTA: m.Cy.DEFIBRILLATOR,
         questContentPosition: D,
@@ -136,13 +136,13 @@ function I(e) {
     afterRequest: e => {
       B.stopAnimation(), R(e)
     }
-  }), ef = (null == (k = w.userStatus) ? true : k.claimedAt) != null, {
-    launchInGameActivity: ex
-  } = (0, b.zW)(w), eb = (0, x.NA)({
-    quest: w,
+  }), ex = (null == (I = k.userStatus) ? true : I.claimedAt) != null, {
+    launchInGameActivity: eg
+  } = (0, f.zW)(k), ef = (0, g.NA)({
+    quest: k,
     shortText: true
-  }), eg = null;
-  return (J && Y ? eg = (0, a.jsx)("div", {
+  }), eb = null;
+  return (J && Y ? eb = (0, a.jsx)("div", {
     className: O.x6,
     children: (0, a.jsx)(s.$nd, {
       variant: "primary",
@@ -151,7 +151,7 @@ function I(e) {
       text: eu,
       fullWidth: true
     })
-  }) : Q ? eg = $ ? (0, a.jsxs)(s.e2v, {
+  }) : Q ? eb = $ ? (0, a.jsxs)(s.e2v, {
     direction: "horizontal",
     fullWidth: true,
     children: [(0, a.jsx)(s.$nd, {
@@ -160,7 +160,7 @@ function I(e) {
       text: S.intl.string(S.t.YsCuyF),
       onClick: () => {
         (0, A.d5)({
-          quest: w,
+          quest: k,
           questContent: P,
           sourceQuestContent: L,
           sourceQuestContentCTA: m.Cy.WATCH_VIDEO,
@@ -172,15 +172,15 @@ function I(e) {
       onClick: null != em ? em : true,
       text: eu
     })]
-  }) : (0, j.vA)(w) ? (0, a.jsxs)(s.e2v, {
+  }) : (0, j.vA)(k) ? (0, a.jsxs)(s.e2v, {
     direction: "horizontal",
     fullWidth: true,
     children: [(0, a.jsx)(s.$nd, {
       variant: "secondary",
-      icon: w.config.features.includes(C.Li.CLOUD_GAMING_ACTIVITY) ? c.hpF : c._xR,
-      text: eb,
+      icon: k.config.features.includes(C.Li.CLOUD_GAMING_ACTIVITY) ? c.hpF : c._xR,
+      text: ef,
       onClick: () => {
-        ex()
+        eg()
       }
     }), (0, a.jsx)(s.$nd, {
       variant: "primary",
@@ -195,7 +195,7 @@ function I(e) {
       text: eu,
       fullWidth: true
     })
-  }) : X ? X && Y ? eg = (0, a.jsx)("div", {
+  }) : X ? X && Y ? eb = (0, a.jsx)("div", {
     className: O.x6,
     children: (0, a.jsx)(s.$nd, {
       variant: "primary",
@@ -204,10 +204,10 @@ function I(e) {
       text: eu,
       fullWidth: true
     })
-  }) : ee ? eg = ec && !q ? (0, a.jsx)("div", {
+  }) : ee ? eb = ec && !q ? (0, a.jsx)("div", {
     className: O.x6,
-    children: (0, a.jsx)(_.A, {
-      quest: w,
+    children: (0, a.jsx)(y.A, {
+      quest: k,
       analyticsCtxQuestContent: P,
       analyticsCtxSourceQuestContent: L,
       analyticsCtxQuestContentPosition: D
@@ -221,13 +221,13 @@ function I(e) {
       text: eu,
       fullWidth: true
     })
-  }) : X && q && !ef ? eg = es ? (0, a.jsx)(r.Pw, {
+  }) : X && q && !ex ? eb = es ? (0, a.jsx)(i.Pw, {
     className: O.dd,
     isSelected: () => false,
     options: E,
     placeholder: S.intl.string(S.t.drVw4T),
-    renderOptionLabel: N,
-    renderOptionValue: T,
+    renderOptionLabel: T,
+    renderOptionValue: N,
     select: ed,
     serialize: e => {
       switch (e) {
@@ -241,7 +241,7 @@ function I(e) {
     },
     size: "sm",
     "data-migration-pending": true
-  }) : (0, v.g5)(w) && !V && ea !== h.X0.DESKTOP ? F ? (0, a.jsx)("div", {
+  }) : (0, v.g5)(k) && !V && ea !== h.X0.DESKTOP ? F ? (0, a.jsx)("div", {
     className: O.x6,
     children: (0, a.jsx)(s.$nd, {
       variant: "secondary",
@@ -267,11 +267,11 @@ function I(e) {
       text: eu,
       fullWidth: true
     })
-  }) : (0, j.vA)(w) ? (0, a.jsx)("div", {
+  }) : (0, j.vA)(k) ? (0, a.jsx)("div", {
     className: O.x6,
     children: (0, a.jsx)(s.$nd, {
       variant: "primary",
-      icon: (0, A.Oz)(w),
+      icon: (0, A.Oz)(k),
       onClick: null != em ? em : true,
       text: eu,
       fullWidth: true
@@ -284,7 +284,7 @@ function I(e) {
       text: S.intl.string(S.t["9KoPyB"]),
       fullWidth: true
     })
-  }) : X && !q && (eg = z ? (0, a.jsxs)(s.e2v, {
+  }) : X && !q && (eb = z ? (0, a.jsxs)(s.e2v, {
     direction: "horizontal",
     fullWidth: true,
     children: [(0, a.jsx)(s.$nd, {
@@ -293,13 +293,13 @@ function I(e) {
       text: S.intl.string(S.t.V293qn)
     }), (0, a.jsx)(s.$nd, {
       variant: "primary",
-      onClick: () => (0, A.m6)(w, P, L),
+      onClick: () => (0, A.m6)(k, P, L),
       text: S.intl.string(S.t.vY9GgG)
     })]
   }) : (0, a.jsx)("div", {
     className: O.x6,
-    children: ec ? (0, a.jsx)(_.A, {
-      quest: w,
+    children: ec ? (0, a.jsx)(y.A, {
+      quest: k,
       analyticsCtxQuestContent: P,
       analyticsCtxSourceQuestContent: L,
       analyticsCtxQuestContentPosition: D
@@ -308,10 +308,10 @@ function I(e) {
       variant: "primary",
       onClick: null != em ? em : true,
       text: eu,
-      icon: (0, A.Oz)(w),
+      icon: (0, A.Oz)(k),
       fullWidth: true
     })
-  })) : eg = (0, a.jsx)("div", {
+  })) : eb = (0, a.jsx)("div", {
     className: O.x6,
     children: (0, a.jsx)(s.$nd, {
       variant: "secondary",
@@ -321,14 +321,14 @@ function I(e) {
       }),
       fullWidth: true
     })
-  }), null == eg) ? null : (0, a.jsxs)("div", {
+  }), null == eb) ? null : (0, a.jsxs)("div", {
     className: O.kL,
     children: [(0, a.jsx)("div", {
       className: O.qz,
-      children: eg
+      children: eb
     }), eo && (0, a.jsx)("div", {
       className: O.qz,
-      children: (0, a.jsx)(r.Pw, {
+      children: (0, a.jsx)(i.Pw, {
         className: O.xZ,
         isSelected: e => {
           switch (ea) {
@@ -342,8 +342,8 @@ function I(e) {
         },
         options: E,
         placeholder: S.intl.string(S.t.drVw4T),
-        renderOptionLabel: N,
-        renderOptionValue: T,
+        renderOptionLabel: T,
+        renderOptionValue: N,
         select: ed,
         serialize: e => {
           switch (e) {

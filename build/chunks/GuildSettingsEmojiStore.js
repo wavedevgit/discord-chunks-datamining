@@ -13,11 +13,11 @@ var l, r, Chunk635377 = require("./635377.js"),
 let m = {},
   h = {},
   g = 0,
-  f = new(a())({
+  b = new(a())({
     max: 5,
     maxAge: Chunk927813.A.Millis.HOUR
   });
-class b extends(r = Chunk311907.Ay.Store) {
+class f extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(c.A)
   }
@@ -32,15 +32,15 @@ class b extends(r = Chunk311907.Ay.Store) {
     return h[e]
   }
   getEmojiRawAsset(e) {
-    return f.get(e)
+    return b.get(e)
   }
-}(l = "displayName") in b ? Object.defineProperty(b, l, {
+}(l = "displayName") in f ? Object.defineProperty(f, l, {
   value: "GuildSettingsEmojiStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : b[l] = "GuildSettingsEmojiStore";
-let j = new b(Chunk73153.h, {
+}) : f[l] = "GuildSettingsEmojiStore";
+let j = new f(Chunk73153.h, {
   EMOJI_DELETE: function(e) {
     let {
       guildId: t,
@@ -72,7 +72,7 @@ let j = new b(Chunk73153.h, {
       emojiId: t,
       userImage: n
     } = e;
-    f.set(t, n)
+    b.set(t, n)
   },
   GUILD_EMOJIS_UPDATE: function(e) {
     var t;

@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 844358, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,12 +16,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk742249 = require("./742249.js");
 
-function A(e) {
+function f(e) {
   let {
     applicationId: t
-  } = e, [A, g] = i.useState(null), [m, b] = i.useState(false), _ = i.useRef(false), E = !u.isPlatformEmbedded && !a.Fr, O = i.useMemo(() => (0, l.A)(), []);
+  } = e, [f, m] = i.useState(null), [A, _] = i.useState(false), b = i.useRef(false), E = !u.isPlatformEmbedded && !a.Fr, O = i.useMemo(() => (0, l.A)(), []);
   if (i.useEffect(() => {
-      E && true !== _.current ? (Promise.resolve().then(n.bind(n, 129014)).then(e => {
+      E && true !== b.current ? (Promise.resolve().then(n.bind(n, 129014)).then(e => {
         let {
           default: n
         } = e;
@@ -34,32 +34,32 @@ function A(e) {
           }
         }).then(e => {
           let t = null != e && e;
-          g(t), t || b(true)
+          m(t), t || _(true)
         }).catch(() => {
-          g(false), b(true)
+          m(false), _(true)
         }).then(() => n.disconnect())
-      }), _.current = true) : E || b(true)
-    }, [t, E, O]), m) return (0, r.jsx)(c.A, {});
-  if (E && false !== A)
-    if (true === A) return (0, r.jsxs)("div", {
-      className: h.k,
+      }), b.current = true) : E || _(true)
+    }, [t, E, O]), A) return (0, r.jsx)(c.A, {});
+  if (E && false !== f)
+    if (true === f) return (0, r.jsxs)("div", {
+      className: g.k,
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-xxl/bold",
-        children: f.intl.string(f.t.csrAMJ)
+        children: h.intl.string(h.t.csrAMJ)
       }), (0, r.jsx)(o.Text, {
         variant: "text-xs/semibold",
-        children: f.intl.string(f.t["m1+IBn"])
+        children: h.intl.string(h.t["m1+IBn"])
       }), (0, r.jsx)(s.$nd, {
         variant: "primary",
-        text: f.intl.string(f.t.fIv16B),
-        onClick: () => b(true)
+        text: h.intl.string(h.t.fIv16B),
+        onClick: () => _(true)
       })]
     });
     else return (0, r.jsxs)("div", {
-      className: h.k,
+      className: g.k,
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-xxl/bold",
-        children: f.intl.string(f.t["Z+hCVU"])
+        children: h.intl.string(h.t["Z+hCVU"])
       }), (0, r.jsx)(o.y$y, {})]
     });
   return (0, r.jsx)(c.A, {})

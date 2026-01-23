@@ -17,27 +17,27 @@ var Chunk557939 = require("./557939.js"),
   m = "DOMException",
   g = Chunk230606("Error"),
   E = Chunk230606(m),
-  b = function() {
-    c(this, y);
+  y = function() {
+    c(this, b);
     var e = arguments.length,
       t = d(e < 1 ? true : arguments[0]),
       n = d(e < 2 ? true : arguments[1], "Error"),
       r = new E(t, n),
       i = new g(t);
-    return i.name = m, o(r, "stack", s(1, p(i.stack, 1))), u(r, this, b), r
+    return i.name = m, o(r, "stack", s(1, p(i.stack, 1))), u(r, this, y), r
   },
-  y = b.prototype = E.prototype,
+  b = y.prototype = E.prototype,
   O = "stack" in new g(m),
-  A = "stack" in new E(1, 2),
-  v = E && Chunk257943 && Object.getOwnPropertyDescriptor(Chunk860511, m),
-  S = !!v && !(v.writable && v.configurable),
-  I = O && !S && !A;
+  v = "stack" in new E(1, 2),
+  A = E && Chunk257943 && Object.getOwnPropertyDescriptor(Chunk860511, m),
+  I = !!A && !(A.writable && A.configurable),
+  S = O && !I && !v;
 Chunk557939({
   global: true,
   constructor: true,
-  forced: Chunk105712 || I
+  forced: Chunk105712 || S
 }, {
-  DOMException: I ? b : E
+  DOMException: S ? y : E
 });
 var T = Chunk230606(m),
   C = T.prototype;

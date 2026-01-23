@@ -39,13 +39,13 @@ function E(e) {
   return t.reduce((e, t) => r !== t.sessionId ? e : (p !== t.suppress && (_ = !(p = t.suppress)), i !== t.channelId && (i = t.channelId, _ = !p), (h || null == t.channelId) && (_ = true), true), false)
 }
 
-function b(e) {
+function y(e) {
   let {
     forever: t
   } = e;
   _ = true, t && (h = true, o.w.set(f, h))
 }
-class y extends(a = Chunk311907.Ay.Store) {
+class b extends(a = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(c.A, u.A), h = o.w.get(f) || h
   }
@@ -60,10 +60,10 @@ class y extends(a = Chunk311907.Ay.Store) {
     return !(null == (e = c.A.getChannel(i)) ? true : e.isGuildStageVoice()) && !_
   }
 }
-d(y, "displayName", "PermissionSpeakStore");
-let O = new y(Chunk73153.h, {
+d(b, "displayName", "PermissionSpeakStore");
+let O = new b(Chunk73153.h, {
   CONNECTION_OPEN: m,
   CONNECTION_CLOSED: g,
   VOICE_STATE_UPDATES: E,
-  PERMISSION_CLEAR_SUPPRESS_WARNING: b
+  PERMISSION_CLEAR_SUPPRESS_WARNING: y
 })

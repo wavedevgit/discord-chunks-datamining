@@ -26,14 +26,14 @@ let g = e => {
     titleClassName: i = "",
     buttonClassName: g = "",
     subtitle: E = "",
-    description: b = "",
-    descriptionCta: y = "",
+    description: y = "",
+    descriptionCta: b = "",
     isPremiumGetCta: O,
-    onCtaClick: A,
-    cardVariant: v
-  } = e, S = (0, u.V)(), I = null == S ? true : S.subscription_trial, T = (0, c.O)(), C = (0, o.FY)({
-    intervalType: null == I ? true : I.interval,
-    intervalCount: null == I ? true : I.interval_count
+    onCtaClick: v,
+    cardVariant: A
+  } = e, I = (0, u.V)(), S = null == I ? true : I.subscription_trial, T = (0, c.O)(), C = (0, o.FY)({
+    intervalType: null == S ? true : S.interval,
+    intervalCount: null == S ? true : S.interval_count
   }), N = (0, l.G)({
     defaultResponse: h.intl.string(h.t["8x0jKT"]),
     onNonTier2Subscriber: h.intl.string(h.t.IJI7yk),
@@ -42,7 +42,7 @@ let g = e => {
     onDiscountOffer: h.intl.formatToPlainString(h.t.bkQ4bH, {
       percent: null == T ? true : T.discount.amount
     })
-  }), R = (0, f.Q)(v), w = e => (null == e ? true : e.hideOnHoverComponent) !== true;
+  }), R = (0, f.Q)(A), w = e => (null == e ? true : e.hideOnHoverComponent) !== true;
   return (0, r.jsxs)("div", {
     className: a()(m.L_, null == R || null == (t = R.description) ? true : t.className),
     children: [(0, r.jsx)(p.A, {
@@ -50,7 +50,7 @@ let g = e => {
       cardVariantStyleInfo: R,
       titleClassName: i,
       subtitle: E,
-      description: b
+      description: y
     }), O && (0, r.jsx)(d.A, {
       className: g,
       look: s.$n.Looks.BLANK,
@@ -60,11 +60,11 @@ let g = e => {
         textOverride: N
       },
       showGradient: true
-    }), 0 !== y.length && w(null == R ? true : R.descriptionCta) && null != A && (0, r.jsx)(s.$n, {
+    }), 0 !== b.length && w(null == R ? true : R.descriptionCta) && null != v && (0, r.jsx)(s.$n, {
       "data-migration-pending": true,
       className: g,
-      onClick: A,
-      children: y
+      onClick: v,
+      children: b
     })]
   })
 }

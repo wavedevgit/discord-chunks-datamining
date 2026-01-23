@@ -2,7 +2,7 @@
 /** chunk id: 20851, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -63,23 +63,23 @@ function E(e) {
     compact: _,
     className: m,
     isGroupStart: E,
-    hideSimpleEmbedContent: b = true,
-    disableInteraction: y,
+    hideSimpleEmbedContent: y = true,
+    disableInteraction: b,
     previewGuildId: O,
-    preview: A,
-    author: v
-  } = e, S = null != O ? O : (0, l.U)(n), I = (0, o.S)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
+    preview: v,
+    author: A
+  } = e, I = null != O ? O : (0, l.U)(n), S = (0, o.S)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
     content: T
   } = (0, u.A)(n, {
-    hideSimpleEmbedContent: b,
-    allowList: I,
-    allowHeading: I,
+    hideSimpleEmbedContent: y,
+    allowList: S,
+    allowHeading: S,
     allowLinks: true,
     previewLinkTarget: true
   }), C = i.useMemo(() => (0, f.A)(g(h({}, e), {
     channel: a,
-    guildId: S
-  })), [e, a, S]);
+    guildId: I
+  })), [e, a, I]);
   return (0, r.jsx)(c.A, {
     compact: _,
     className: s()(m, {
@@ -89,9 +89,9 @@ function E(e) {
     }),
     childrenHeader: C,
     childrenMessageContent: (0, d.A)(e, T),
-    disableInteraction: y,
-    author: v,
-    preview: A
+    disableInteraction: b,
+    author: A,
+    preview: v
   })
 }
-let b = Chunk64700.memo(E)
+let y = Chunk64700.memo(E)

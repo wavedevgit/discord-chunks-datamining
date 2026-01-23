@@ -61,7 +61,7 @@ function E(e) {
   _.set(t, true)
 }
 
-function b(e) {
+function y(e) {
   let {
     applicationId: t,
     proxyTicket: n
@@ -76,7 +76,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     applicationId: t
   } = e;
@@ -90,7 +90,7 @@ function O(e) {
   (null == p ? true : p.applicationId) === t && (p = null)
 }
 
-function A(e) {
+function v(e) {
   let {
     applicationId: t,
     layoutMode: n
@@ -100,7 +100,7 @@ function A(e) {
   }))
 }
 
-function v(e) {
+function A(e) {
   let {
     activityPanelMode: t
   } = e;
@@ -109,7 +109,7 @@ function v(e) {
   }))
 }
 
-function S(e) {
+function I(e) {
   let {
     applicationId: t,
     lockState: n,
@@ -118,7 +118,7 @@ function S(e) {
   null == n ? m.delete(t) : m.set(t, n), null === r ? g.delete(t) : true !== r && g.set(t, r)
 }
 
-function I(e) {
+function S(e) {
   let {
     applicationId: t,
     refreshing: n
@@ -167,12 +167,12 @@ class C extends(r = Chunk311907.Ay.Store) {
 c(C, "displayName", "FramesStore");
 let N = new C(Chunk73153.h, {
   FRAME_LAUNCH_START: E,
-  FRAME_LAUNCH: b,
-  FRAME_LAUNCH_FAIL: y,
+  FRAME_LAUNCH: y,
+  FRAME_LAUNCH_FAIL: b,
   FRAME_STOP: O,
-  FRAME_UPDATE_LAYOUT_MODE: A,
-  FRAME_SET_PANEL_MODE: v,
-  FRAME_SET_ORIENTATION_LOCK_STATE: S,
-  FRAME_SET_PROXY_TICKET_REFRESHING: I,
+  FRAME_UPDATE_LAYOUT_MODE: v,
+  FRAME_SET_PANEL_MODE: A,
+  FRAME_SET_ORIENTATION_LOCK_STATE: I,
+  FRAME_SET_PROXY_TICKET_REFRESHING: S,
   FRAME_UPDATE_PROXY_TICKET: T
 })

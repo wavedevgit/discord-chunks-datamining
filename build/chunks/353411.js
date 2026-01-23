@@ -2,9 +2,9 @@
 /** chunk id: 353411, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Gq: () => A,
+  Gq: () => v,
   J$: () => O,
-  _B: () => y
+  _B: () => b
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -44,12 +44,12 @@ function E(e) {
   }
 }
 
-function b(e, t) {
+function y(e, t) {
   return (0, i.cf)([u.A, o.default], () => (0, p.A)(u.A, o.default, t, e), [e, t])
 }
 
-function y(e, t, n) {
-  let i = b(e, t),
+function b(e, t, n) {
+  let i = y(e, t),
     {
       notPlayable: a,
       isCurrentUser: s,
@@ -75,7 +75,7 @@ function y(e, t, n) {
 
 function O(e, t, n, i) {
   let a = null != i ? i : c.Ay.getName(t),
-    s = b(e, t),
+    s = y(e, t),
     {
       notPlayable: o,
       syncingWithUser: l,
@@ -85,11 +85,11 @@ function O(e, t, n, i) {
     {
       loading: h,
       startLoading: g,
-      clearLoading: y
+      clearLoading: b
     } = E(s),
     O = r.useCallback(() => {
-      g(), (0, _.A)(s, m.Qp.USER_ACTIVITY_SYNC, n).catch(y)
-    }, [s, n, g, y]);
+      g(), (0, _.A)(s, m.Qp.USER_ACTIVITY_SYNC, n).catch(b)
+    }, [s, n, g, b]);
   return {
     label: (0, d.A)(s, m.Qp.USER_ACTIVITY_SYNC),
     tooltip: (0, f.A)(s, m.Qp.USER_ACTIVITY_SYNC, a),
@@ -100,8 +100,8 @@ function O(e, t, n, i) {
   }
 }
 
-function A(e, t, n) {
-  let i = b(e, t),
+function v(e, t, n) {
+  let i = y(e, t),
     {
       notPlayable: a,
       syncingWithUser: s,

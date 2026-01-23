@@ -2,7 +2,7 @@
 /** chunk id: 572957, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./896048.js"), require("./938796.js");
 var r, Chunk665260 = require("./665260.js"),
   Chunk311907 = require("./311907.js"),
@@ -41,14 +41,14 @@ function E(e) {
   g.add(r.id)
 }
 
-function b(e) {
+function y(e) {
   let {
     message: t
   } = e;
   g.has(t.id) && i.Lt(Number(t.flags), p.pr7.CROSSPOSTED) && g.delete(t.id)
 }
 
-function y(e) {
+function b(e) {
   let {
     messageId: t
   } = e;
@@ -62,10 +62,10 @@ function O(e) {
   m.add(t), s.w.set(h, m), g.clear()
 }
 
-function A(e) {
+function v(e) {
   g.clear()
 }
-class v extends(r = Chunk311907.Ay.Store) {
+class A extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(l.default, c.A, u.A, d.default), m = new Set(s.w.get(h))
   }
@@ -73,11 +73,11 @@ class v extends(r = Chunk311907.Ay.Store) {
     return g.has(e)
   }
 }
-_(v, "displayName", "ChannelFollowingPublishBumpStore");
-let S = new v(Chunk73153.h, {
+_(A, "displayName", "ChannelFollowingPublishBumpStore");
+let I = new A(Chunk73153.h, {
   MESSAGE_CREATE: E,
-  MESSAGE_UPDATE: b,
-  CHANNEL_SELECT: A,
-  CHANNEL_FOLLOWING_PUBLISH_BUMP_DISMISSED: y,
+  MESSAGE_UPDATE: y,
+  CHANNEL_SELECT: v,
+  CHANNEL_FOLLOWING_PUBLISH_BUMP_DISMISSED: b,
   CHANNEL_FOLLOWING_PUBLISH_BUMP_HIDE_PERMANENTLY: O
 })

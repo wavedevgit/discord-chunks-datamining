@@ -26,21 +26,21 @@ function h(e) {
     pendingAvatar: m,
     pendingNickname: g,
     pendingGlobalName: E,
-    pendingBio: b,
-    pendingPronouns: y,
+    pendingBio: y,
+    pendingPronouns: b,
     pendingLegacyUsernameDisabled: O,
-    pendingBadges: A,
-    pendingDisplayNameStyles: v,
-    pendingPrimaryGuildId: S,
-    isTryItOut: I,
+    pendingBadges: v,
+    pendingDisplayNameStyles: A,
+    pendingPrimaryGuildId: I,
+    isTryItOut: S,
     hideBioSection: T,
     shouldOpenBadgeTooltip: C
-  } = e, N = (0, i.bG)([u.Ay], () => null == h ? null : u.Ay.getMember(h.id, t.id)), R = (0, i.bG)([d.A], () => d.A.hidePersonalInformation), w = null == n ? true : n.getPreviewBio(b), P = null != y ? y : null == n ? true : n.pronouns, D = (0, f.eh)({
+  } = e, N = (0, i.bG)([u.Ay], () => null == h ? null : u.Ay.getMember(h.id, t.id)), R = (0, i.bG)([d.A], () => d.A.hidePersonalInformation), w = null == n ? true : n.getPreviewBio(y), P = null != b ? b : null == n ? true : n.pronouns, D = (0, f.eh)({
     pendingNickname: g,
     pendingGlobalName: E,
     user: t,
     guildMember: N
-  }), x = (0, a.gS)(S), L = () => {
+  }), x = (0, a.gS)(I), L = () => {
     if (null != N && null !== m && (null != N.avatar || null != m)) return (0, r.jsx)(c.A, {
       user: t,
       nickname: D
@@ -54,15 +54,15 @@ function h(e) {
       guildId: null == h ? true : h.id,
       usernameIcon: L(),
       nickname: D,
-      pendingDisplayNameStyles: v,
+      pendingDisplayNameStyles: A,
       pronouns: P,
       primaryGuild: x,
-      isTryItOut: I,
+      isTryItOut: S,
       tags: (0, r.jsx)(s.A, {
         displayProfile: n,
         themeType: p.d.POPOUT,
         pendingLegacyUsernameDisabled: O,
-        pendingBadges: A,
+        pendingBadges: v,
         shouldOpenBadgeTooltip: C
       })
     }), !T && null != w && "" !== w && (0, r.jsx)(l.A, {

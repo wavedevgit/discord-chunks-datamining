@@ -63,7 +63,7 @@ function u(e) {
     autoComplete: m,
     inputProps: g,
     "aria-label": E = a.intl.string(a.t["5h0QOP"]),
-    ref: b
+    ref: y
   } = e;
   return (0, r.jsx)(i.ksK, c(o({}, g), {
     onFocus: h,
@@ -76,7 +76,7 @@ function u(e) {
     autoFocus: n,
     autoComplete: m,
     "aria-label": E,
-    inputRef: b,
+    inputRef: y,
     leading: i.$p$,
     clearable: null != s,
     size: d,

@@ -2,7 +2,7 @@
 /** chunk id: 16986, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,17 +21,17 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b() {
+function y() {
   let e = _.ML.useSetting(),
     t = _.eK.useSetting(),
     n = _.SI.useSetting(),
-    b = _.gs.useSetting(),
-    y = _.SY.useSetting(),
+    y = _.gs.useSetting(),
+    b = _.SY.useSetting(),
     O = _._z.useSetting(),
-    A = _.j7.useSetting(),
-    v = _.X6.useSetting(),
-    S = _.hD.useSetting(),
-    I = _.rs.useSetting(),
+    v = _.j7.useSetting(),
+    A = _.X6.useSetting(),
+    I = _.hD.useSetting(),
+    S = _.rs.useSetting(),
     T = _.jW.useSetting(),
     C = _.ng.useSetting(),
     N = _.Hu.useSetting(),
@@ -63,7 +63,7 @@ function b() {
         value: g.P6Q.ALWAYS
       }],
       onChange: e => _.gs.updateSetting(e),
-      value: b
+      value: y
     });
   return (0, r.jsx)(h.A, {
     title: E.intl.string(E.t["/VQax8"]),
@@ -77,14 +77,14 @@ function b() {
           children: [(0, r.jsx)(f.x, {
             setting: m.H.CHAT_INLINE_MEDIA_LINKS,
             children: (0, r.jsx)(a.dOG, {
-              checked: S,
+              checked: I,
               onChange: _.hD.updateSetting,
               label: E.intl.string(E.t.U47N1p)
             })
           }), (0, r.jsx)(f.x, {
             setting: m.H.CHAT_INLINE_MEDIA_UPLOADS,
             children: (0, r.jsx)(a.dOG, {
-              checked: v,
+              checked: A,
               description: E.intl.formatToPlainString(E.t.qjjvqO, {
                 maxSize: 10
               }),
@@ -108,7 +108,7 @@ function b() {
           children: (0, r.jsx)(f.x, {
             setting: m.H.CHAT_EMBEDS_LINK_PREVIEWS,
             children: (0, r.jsx)(a.dOG, {
-              checked: I,
+              checked: S,
               onChange: _.rs.updateSetting,
               label: E.intl.string(E.t.xX0ZTA)
             })
@@ -128,7 +128,7 @@ function b() {
           }), (0, r.jsx)(f.x, {
             setting: m.H.CHAT_EMOJI_EMOTICONS,
             children: (0, r.jsx)(a.dOG, {
-              checked: A,
+              checked: v,
               description: c.A.parse(E.intl.string(E.t["20dvuQ"])),
               onChange: _.j7.updateSetting,
               label: E.intl.string(E.t["79qal8"])
@@ -215,7 +215,7 @@ function b() {
           children: (0, r.jsx)(f.x, {
             setting: m.H.CHAT_THREADS_SPLIT_VIEW,
             children: (0, r.jsx)(a.dOG, {
-              checked: y,
+              checked: b,
               onChange: _.SY.updateSetting,
               label: E.intl.string(E.t.AInv5m)
             })

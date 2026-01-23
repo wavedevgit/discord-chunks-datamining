@@ -22,13 +22,13 @@ function o(e, t, n, r, i, a) {
     m = e[t++] ^ n[r++],
     g = e[t++] ^ n[r++],
     E = e[t++] ^ n[r++],
-    b = e[t++] ^ n[r++],
     y = e[t++] ^ n[r++],
+    b = e[t++] ^ n[r++],
     O = e[t++] ^ n[r++],
-    A = e[t++] ^ n[r++],
-    v = o,
-    S = l,
-    I = c,
+    v = e[t++] ^ n[r++],
+    A = o,
+    I = l,
+    S = c,
     T = u,
     C = d,
     N = f,
@@ -38,12 +38,12 @@ function o(e, t, n, r, i, a) {
     D = m,
     x = g,
     L = E,
-    j = b,
-    M = y,
+    j = y,
+    M = b,
     k = O,
-    U = A;
-  for (let e = 0; e < 8; e += 2) C ^= (0, s.aZ)(v + j | 0, 7), P ^= (0, s.aZ)(C + v | 0, 9), j ^= (0, s.aZ)(P + C | 0, 13), v ^= (0, s.aZ)(j + P | 0, 18), D ^= (0, s.aZ)(N + S | 0, 7), M ^= (0, s.aZ)(D + N | 0, 9), S ^= (0, s.aZ)(M + D | 0, 13), N ^= (0, s.aZ)(S + M | 0, 18), k ^= (0, s.aZ)(x + R | 0, 7), I ^= (0, s.aZ)(k + x | 0, 9), R ^= (0, s.aZ)(I + k | 0, 13), x ^= (0, s.aZ)(R + I | 0, 18), T ^= (0, s.aZ)(U + L | 0, 7), w ^= (0, s.aZ)(T + U | 0, 9), L ^= (0, s.aZ)(w + T | 0, 13), U ^= (0, s.aZ)(L + w | 0, 18), S ^= (0, s.aZ)(v + T | 0, 7), I ^= (0, s.aZ)(S + v | 0, 9), T ^= (0, s.aZ)(I + S | 0, 13), v ^= (0, s.aZ)(T + I | 0, 18), R ^= (0, s.aZ)(N + C | 0, 7), w ^= (0, s.aZ)(R + N | 0, 9), C ^= (0, s.aZ)(w + R | 0, 13), N ^= (0, s.aZ)(C + w | 0, 18), L ^= (0, s.aZ)(x + D | 0, 7), P ^= (0, s.aZ)(L + x | 0, 9), D ^= (0, s.aZ)(P + L | 0, 13), x ^= (0, s.aZ)(D + P | 0, 18), j ^= (0, s.aZ)(U + k | 0, 7), M ^= (0, s.aZ)(j + U | 0, 9), k ^= (0, s.aZ)(M + j | 0, 13), U ^= (0, s.aZ)(k + M | 0, 18);
-  i[a++] = o + v | 0, i[a++] = l + S | 0, i[a++] = c + I | 0, i[a++] = u + T | 0, i[a++] = d + C | 0, i[a++] = f + N | 0, i[a++] = p + R | 0, i[a++] = _ + w | 0, i[a++] = h + P | 0, i[a++] = m + D | 0, i[a++] = g + x | 0, i[a++] = E + L | 0, i[a++] = b + j | 0, i[a++] = y + M | 0, i[a++] = O + k | 0, i[a++] = A + U | 0
+    U = v;
+  for (let e = 0; e < 8; e += 2) C ^= (0, s.aZ)(A + j | 0, 7), P ^= (0, s.aZ)(C + A | 0, 9), j ^= (0, s.aZ)(P + C | 0, 13), A ^= (0, s.aZ)(j + P | 0, 18), D ^= (0, s.aZ)(N + I | 0, 7), M ^= (0, s.aZ)(D + N | 0, 9), I ^= (0, s.aZ)(M + D | 0, 13), N ^= (0, s.aZ)(I + M | 0, 18), k ^= (0, s.aZ)(x + R | 0, 7), S ^= (0, s.aZ)(k + x | 0, 9), R ^= (0, s.aZ)(S + k | 0, 13), x ^= (0, s.aZ)(R + S | 0, 18), T ^= (0, s.aZ)(U + L | 0, 7), w ^= (0, s.aZ)(T + U | 0, 9), L ^= (0, s.aZ)(w + T | 0, 13), U ^= (0, s.aZ)(L + w | 0, 18), I ^= (0, s.aZ)(A + T | 0, 7), S ^= (0, s.aZ)(I + A | 0, 9), T ^= (0, s.aZ)(S + I | 0, 13), A ^= (0, s.aZ)(T + S | 0, 18), R ^= (0, s.aZ)(N + C | 0, 7), w ^= (0, s.aZ)(R + N | 0, 9), C ^= (0, s.aZ)(w + R | 0, 13), N ^= (0, s.aZ)(C + w | 0, 18), L ^= (0, s.aZ)(x + D | 0, 7), P ^= (0, s.aZ)(L + x | 0, 9), D ^= (0, s.aZ)(P + L | 0, 13), x ^= (0, s.aZ)(D + P | 0, 18), j ^= (0, s.aZ)(U + k | 0, 7), M ^= (0, s.aZ)(j + U | 0, 9), k ^= (0, s.aZ)(M + j | 0, 13), U ^= (0, s.aZ)(k + M | 0, 18);
+  i[a++] = o + A | 0, i[a++] = l + I | 0, i[a++] = c + S | 0, i[a++] = u + T | 0, i[a++] = d + C | 0, i[a++] = f + N | 0, i[a++] = p + R | 0, i[a++] = _ + w | 0, i[a++] = h + P | 0, i[a++] = m + D | 0, i[a++] = g + x | 0, i[a++] = E + L | 0, i[a++] = y + j | 0, i[a++] = b + M | 0, i[a++] = O + k | 0, i[a++] = v + U | 0
 }
 
 function l(e, t, n, r, i) {
@@ -80,8 +80,8 @@ function c(e, t, n) {
       dkLen: _ * c
     }),
     E = (0, s.DH)(g),
-    b = (0, s.DH)(new Uint8Array(_ * o)),
-    y = (0, s.DH)(new Uint8Array(_)),
+    y = (0, s.DH)(new Uint8Array(_ * o)),
+    b = (0, s.DH)(new Uint8Array(_)),
     O = () => {};
   if (p) {
     let e = 2 * o * c,
@@ -97,10 +97,10 @@ function c(e, t, n) {
     p: c,
     dkLen: u,
     blockSize32: h,
-    V: b,
+    V: y,
     B32: E,
     B: g,
-    tmp: y,
+    tmp: b,
     blockMixCb: O,
     asyncTick: d
   }

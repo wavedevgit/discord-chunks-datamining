@@ -4,7 +4,7 @@
 require.d(exports, {
   Ay: () => O,
   BE: () => E,
-  hS: () => y
+  hS: () => b
 });
 var Chunk160517 = require("./160517.js"),
   Chunk562465 = require("./562465.js"),
@@ -35,9 +35,9 @@ function E() {
       autoTrackExposure: false,
       disable: n
     }).enabled;
-  (r || n || i) && !h.A.isFetchingActivePromotions && (e && null != h.A.lastFetchedActivePromotions || b())
+  (r || n || i) && !h.A.isFetchingActivePromotions && (e && null != h.A.lastFetchedActivePromotions || y())
 }
-async function b() {
+async function y() {
   try {
     s.h.dispatch({
       type: "ACTIVE_PROMOTIONS_FETCH"
@@ -69,7 +69,7 @@ async function b() {
     })
   }
 }
-async function y() {
+async function b() {
   if (!h.A.isFetchingActiveBogoPromotion) try {
     s.h.dispatch({
       type: "ACTIVE_BOGO_PROMOTION_FETCH"
@@ -92,7 +92,7 @@ async function y() {
   }
 }
 let O = {
-  fetchActivePromotions: b,
+  fetchActivePromotions: y,
   dismissOutboundPromotionNotice: function() {
     s.h.dispatch({
       type: "OUTBOUND_PROMOTION_NOTICE_DISMISS"
@@ -109,5 +109,5 @@ let O = {
       type: "OUTBOUND_PROMOTIONS_SEEN"
     })
   },
-  fetchActiveBogoPromotion: y
+  fetchActiveBogoPromotion: b
 }

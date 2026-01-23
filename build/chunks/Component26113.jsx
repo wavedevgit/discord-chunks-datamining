@@ -24,7 +24,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk204137 = require("./204137.js"),
   Chunk976092 = require("./976092.js");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,20 +33,20 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,8 +57,8 @@ function S(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -66,7 +66,7 @@ let T = e => {
   let {
     channel: t,
     width: n
-  } = e, a = (0, o.bG)([c.A], () => c.A.getFilteredParticipants(t.id)), A = (0, g.A)(t.id), S = i.useMemo(() => (0, u.m1)(t, m.default, h.A), [t]), T = (0, d.A)(t), C = n * (E.i.height / E.i.width), N = 1156, R = 1050, [w, P] = i.useState(.65), [D, x] = i.useState({
+  } = e, a = (0, o.bG)([c.A], () => c.A.getFilteredParticipants(t.id)), v = (0, g.A)(t.id), I = i.useMemo(() => (0, u.m1)(t, m.default, h.A), [t]), T = (0, d.A)(t), C = n * (E.i.height / E.i.width), N = 1156, R = 1050, [w, P] = i.useState(.65), [D, x] = i.useState({
     x: 0,
     y: 0
   }), L = (0, l.w)(e => {
@@ -80,8 +80,8 @@ let T = e => {
   });
   return (0, r.jsx)(f.Ay, {
     timeout: 2e3,
-    children: e => (0, r.jsx)(_.A, I(v({
-      title: S,
+    children: e => (0, r.jsx)(_.A, S(A({
+      title: I,
       backgroundKey: t.id,
       screenMessage: null,
       onJumpToChannel: T,
@@ -91,19 +91,19 @@ let T = e => {
     }, e), {
       children: (0, r.jsx)("div", {
         ref: L,
-        className: y.n,
+        className: b.n,
         style: {
           width: n,
           height: C
         },
         children: (0, r.jsx)("div", {
-          className: s()(b.VT, b.rh),
+          className: s()(y.VT, y.rh),
           style: {
             transform: "translate(".concat(D.x, "px, ").concat(D.y, "px) scale(").concat(w, ")")
           },
           children: (0, r.jsx)(E.A, {
-            roomSeats: A.seats,
-            roomParticipants: A.participants,
+            roomSeats: v.seats,
+            roomParticipants: v.participants,
             participants: a,
             channel: t,
             idle: e.idle,

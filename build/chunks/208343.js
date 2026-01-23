@@ -8,8 +8,8 @@ var Chunk311907 = require("./311907.js"),
   Chunk3137 = require("./3137.js");
 
 function a(e) {
-  let t = (0, l.bG)([r.A], () => r.A.isFocused());
-  return (0, l.bG)([i.A], () => i.A.isEnabled({
+  let t = (0, r.bG)([l.A], () => l.A.isFocused());
+  return (0, r.bG)([i.A], () => i.A.isEnabled({
     shakeLocation: e
   }) && t ? i.A.shakeIntensity : 0)
 }

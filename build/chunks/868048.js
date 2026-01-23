@@ -13,8 +13,8 @@ var Chunk832712 = require("./832712.js"),
 
 function u(e, t, n) {
   r.A.updateChannelOverrideSettings(e, t, {
-    flags: (0, a.mD)(l.Ay.getChannelIdFlags(e, t), n)
+    flags: (0, s.mD)(l.Ay.getChannelIdFlags(e, t), n)
   }, i.G_.unreads(n === c.vv.UNREADS_ALL_MESSAGES ? o.e.ALL_MESSAGES : o.e.ONLY_MENTIONS), {
-    object: s.ZSU.NOTIFICATION_SETTING_UNREAD_NOTICE
+    object: a.ZSU.NOTIFICATION_SETTING_UNREAD_NOTICE
   })
 }

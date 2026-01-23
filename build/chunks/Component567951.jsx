@@ -19,21 +19,21 @@ let d = e => {
   } = e, {
     send: d,
     sending: f,
-    canSend: b
+    canSend: p
   } = (0, l.Vw)();
   return (0, n.jsx)(a.Modal, {
-    title: u.intl.string(i.default.zgFs8C),
+    title: u.intl.string(c.default.zgFs8C),
     actions: [{
       variant: "primary",
       text: u.intl.string(u.t.TXNS7S),
       onClick: d,
       loading: f,
-      disabled: !b()
+      disabled: !p()
     }],
     transitionState: t,
     onClose: r,
     input: (0, n.jsx)(s.l, {}),
-    actionBarInput: (0, n.jsx)(c.t, {}),
+    actionBarInput: (0, n.jsx)(i.t, {}),
     children: (0, n.jsx)(o.o, {})
   })
 }

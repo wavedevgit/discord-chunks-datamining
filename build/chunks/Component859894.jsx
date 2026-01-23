@@ -18,7 +18,7 @@ function d(e) {
     className: t,
     channel: n,
     highlight: d
-  } = e, f = (0, a.Us)();
+  } = e, p = (0, s.Us)();
   return (0, o.zU)() ? null : (0, r.jsx)(c.A, {
     highlight: null != d && d,
     className: t,
@@ -32,7 +32,7 @@ function d(e) {
     title: u.intl.string(u.t.OYbHfv),
     description: u.intl.string(u.t.yXwLMQ),
     onClick: function() {
-      (0, s.tQ)(n, f)
+      (0, a.tQ)(n, p)
     }
   })
 }

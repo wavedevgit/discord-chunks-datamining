@@ -2,7 +2,7 @@
 /** chunk id: 708281, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N: () => b
+  N: () => y
 }), require("./896048.js"), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -143,6 +143,6 @@ function E(e) {
   }))
 }
 
-function b(e) {
+function y(e) {
   (0, s.mMO)(() => Promise.resolve(t => (0, r.jsx)(E, _({}, t, e))))
 }

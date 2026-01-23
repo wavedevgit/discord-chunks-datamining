@@ -1,7 +1,7 @@
 /** Chunk was on 94286 **/
 /** chunk id: 868952, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => N
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,65 +19,92 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk636250 = require("./636250.js");
 
-function g(e) {
+function h(e) {
   let {
     guild: t
-  } = e, n = x.Ay.getGuildIconURL({
+  } = e, n = m.Ay.getGuildIconURL({
     id: t.id,
     icon: t.icon,
     size: 120
   });
-  return (0, s.jsxs)(l.rQ0, {
-    className: j.wx,
+  return (0, r.jsxs)(a.rQ0, {
+    className: g.wx,
     "data-migration-pending": true,
-    children: [(0, s.jsx)("div", {
-      className: j.O_,
-      children: null != n ? (0, s.jsx)(l.euF, {
+    children: [(0, r.jsx)("div", {
+      className: g.O_,
+      children: null != n ? (0, r.jsx)(a.euF, {
         src: n,
         "aria-label": t.name,
-        size: l._3J.SIZE_120,
-        className: j.__invalid_guildIcon
-      }) : (0, s.jsx)("div", {
-        className: j.q9,
-        children: (0, d.Rb)(t)
+        size: a._3J.SIZE_120,
+        className: g.__invalid_guildIcon
+      }) : (0, r.jsx)("div", {
+        className: g.q9,
+        children: (0, c.Rb)(t)
       })
-    }), (0, s.jsxs)("div", {
-      className: j.TK,
-      children: [(0, s.jsx)(l.Heading, {
+    }), (0, r.jsxs)("div", {
+      className: g.TK,
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-lg/extrabold",
         color: "text-strong",
-        children: p.intl.string(p.t.MatO7M)
-      }), (0, s.jsx)(l.Text, {
+        children: b.intl.string(b.t.MatO7M)
+      }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "text-strong",
-        children: p.intl.string(p.t.VyPIeu)
+        children: b.intl.string(b.t.VyPIeu)
       })]
     })]
   })
 }
-let h = e => e.toString() === f.xBc.MENTION_EVERYONE.toString() ? p.intl.string(p.t.yCpsQw) : (0, c.hx)(e);
+let _ = e => e.toString() === p.xBc.MENTION_EVERYONE.toString() ? b.intl.string(b.t.yCpsQw) : (0, o.hx)(e);
 
 function v(e) {
   let {
     permissions: t
   } = e;
-  return (0, s.jsxs)("div", {
-    className: j.CZ,
-    children: [(0, s.jsx)(l.Text, {
-      className: j.qd,
+  return (0, r.jsxs)("div", {
+    className: g.CZ,
+    children: [(0, r.jsx)(a.Text, {
+      className: g.qd,
       variant: "text-xs/semibold",
       color: "text-muted",
-      children: p.intl.string(p.t["0WZKI4"])
-    }), (0, s.jsx)("div", {
-      className: j.lM,
-      children: t.map((e, t) => (0, s.jsxs)("div", {
-        className: j.ce,
-        children: [(0, s.jsx)("div", {
-          className: j.dT
-        }), (0, s.jsx)(l.Text, {
+      children: b.intl.string(b.t["0WZKI4"])
+    }), (0, r.jsx)("div", {
+      className: g.lM,
+      children: t.map((e, t) => (0, r.jsxs)("div", {
+        className: g.ce,
+        children: [(0, r.jsx)("div", {
+          className: g.dT
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: h(e)
+          children: _(e)
+        })]
+      }, t))
+    })]
+  })
+}
+
+function f(e) {
+  let {
+    permissions: t
+  } = e;
+  return (0, r.jsxs)("div", {
+    className: g.CZ,
+    children: [(0, r.jsx)(a.Text, {
+      className: g.qd,
+      variant: "text-xs/semibold",
+      color: "text-muted",
+      children: b.intl.string(b.t.Yo5qlq)
+    }), (0, r.jsx)("div", {
+      className: g.lM,
+      children: t.map((e, t) => (0, r.jsxs)("div", {
+        className: g.ce,
+        children: [(0, r.jsx)("div", {
+          className: g.xE
+        }), (0, r.jsx)(a.Text, {
+          variant: "text-sm/normal",
+          color: "text-muted",
+          children: _(e)
         })]
       }, t))
     })]
@@ -87,45 +114,40 @@ function v(e) {
 function O(e) {
   let {
     permissions: t
-  } = e;
-  return (0, s.jsxs)("div", {
-    className: j.CZ,
-    children: [(0, s.jsx)(l.Text, {
-      className: j.qd,
-      variant: "text-xs/semibold",
-      color: "text-muted",
-      children: p.intl.string(p.t.Yo5qlq)
-    }), (0, s.jsx)("div", {
-      className: j.lM,
-      children: t.map((e, t) => (0, s.jsxs)("div", {
-        className: j.ce,
-        children: [(0, s.jsx)("div", {
-          className: j.xE
-        }), (0, s.jsx)(l.Text, {
-          variant: "text-sm/normal",
-          color: "text-muted",
-          children: h(e)
-        })]
-      }, t))
-    })]
+  } = e, {
+    enabledPermissions: n,
+    disabledPermissions: s
+  } = t;
+  return (0, r.jsx)(a.$mQ, {
+    "data-migration-pending": true,
+    children: (0, r.jsxs)("div", {
+      className: g.tp,
+      children: [(0, r.jsx)(v, {
+        permissions: n
+      }), (0, r.jsx)(f, {
+        permissions: s
+      })]
+    })
   })
 }
 
 function y(e) {
   let {
-    permissions: t
-  } = e, {
-    enabledPermissions: n,
-    disabledPermissions: r
-  } = t;
-  return (0, s.jsx)(l.$mQ, {
+    onConfirm: t,
+    onDismiss: n
+  } = e;
+  return (0, r.jsx)(a.jlY, {
+    className: g.qr,
     "data-migration-pending": true,
-    children: (0, s.jsxs)("div", {
-      className: j.tp,
-      children: [(0, s.jsx)(v, {
-        permissions: n
-      }), (0, s.jsx)(O, {
-        permissions: r
+    children: (0, r.jsxs)(l.e2v, {
+      fullWidth: true,
+      children: [(0, r.jsx)(l.$nd, {
+        variant: "secondary",
+        text: b.intl.string(b.t.gWQZvr),
+        onClick: n
+      }), (0, r.jsx)(l.$nd, {
+        text: b.intl.string(b.t.iOSdAW),
+        onClick: t
       })]
     })
   })
@@ -133,91 +155,69 @@ function y(e) {
 
 function N(e) {
   let {
-    onConfirm: t,
-    onDismiss: n
-  } = e;
-  return (0, s.jsx)(l.jlY, {
-    className: j.qr,
-    "data-migration-pending": true,
-    children: (0, s.jsxs)(a.e2v, {
-      fullWidth: true,
-      children: [(0, s.jsx)(a.$nd, {
-        variant: "secondary",
-        text: p.intl.string(p.t.gWQZvr),
-        onClick: n
-      }), (0, s.jsx)(a.$nd, {
-        text: p.intl.string(p.t.iOSdAW),
-        onClick: t
-      })]
-    })
-  })
-}
-
-function _(e) {
-  let {
     guild: t,
     transitionState: n,
-    onClose: a
-  } = e, c = r.useMemo(() => {
+    onClose: l
+  } = e, o = s.useMemo(() => {
     let e = [],
       n = [];
-    return b.dR.map(s => {
-      m.Ib(s, t) ? e.push(s) : n.push(s)
+    return j.dR.map(r => {
+      x.Ib(r, t) ? e.push(r) : n.push(r)
     }), {
       enabledPermissions: e,
       disabledPermissions: n
     }
   }, [t]);
   if (null == t) return null;
-  let d = async () => {
+  let c = async () => {
     var e, n;
-    let s = null != t ? o.A.getEveryoneRole(t) : true;
-    if (null == s) return;
-    let r = i.TF(s.permissions, b.e$);
+    let r = null != t ? d.A.getEveryoneRole(t) : true;
+    if (null == r) return;
+    let s = i.TF(r.permissions, j.e$);
     await (0, u.JY)(t.id, [(e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          s = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), s.forEach(function(t) {
-          var s;
-          s = n[t], t in e ? Object.defineProperty(e, t, {
-            value: s,
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = s
+          }) : e[t] = r
         })
       }
       return e
-    }({}, s), n = n = {
-      permissions: r
+    }({}, r), n = n = {
+      permissions: s
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var s = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, s)
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
       }
       return n
     })(Object(n)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-    }), e)]), a()
+    }), e)]), l()
   };
-  return (0, s.jsxs)(l.EOs, {
+  return (0, r.jsxs)(a.EOs, {
     transitionState: n,
-    size: l.rIJ.SMALL,
-    className: j.yl,
+    size: a.rIJ.SMALL,
+    className: g.yl,
     parentComponent: "DisableRiskyPermsModal",
     "data-migration-pending": true,
-    children: [(0, s.jsx)(g, {
+    children: [(0, r.jsx)(h, {
       guild: t
-    }), (0, s.jsx)(y, {
-      permissions: c
-    }), (0, s.jsx)(N, {
-      onConfirm: d,
+    }), (0, r.jsx)(O, {
+      permissions: o
+    }), (0, r.jsx)(y, {
+      onConfirm: c,
       onDismiss: () => {
-        a()
+        l()
       }
     })]
   })

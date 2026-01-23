@@ -2,7 +2,7 @@
 /** chunk id: 845885, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E: () => y
+  E: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,14 +22,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk731854 = require("./731854.js"),
   Chunk985018 = require("./985018.jsx");
 
-function y(e) {
-  var t, n, y;
+function b(e) {
+  var t, n, b;
   let {
     stream: O,
-    handleGoLive: A,
-    showReportOption: v = false,
-    disableChangeWindows: S = false,
-    minimal: I = false,
+    handleGoLive: v,
+    showReportOption: A = false,
+    disableChangeWindows: I = false,
+    minimal: S = false,
     appContext: T = m.BRT.APP
   } = e, {
     desktopSourceId: C,
@@ -46,8 +46,8 @@ function y(e) {
   }), R = (0, a.bG)([d.A], () => d.A.getState().soundshareEnabled), w = f.A.supports(E.O5.DESKTOP_CAPTURE_APPLICATIONS), P = (0, a.bG)([f.A], () => f.A.supports(E.O5.SOUNDSHARE)), D = (0, a.bG)([f.A], () => f.A.supportsScreenSoundshare()), x = (0, h.A)(O, T), L = (0, _.A)(O, T, g.FX), j = null != C && P && (!C.startsWith("screen") || D), M = (0, a.bG)([f.A], () => f.A.getUseSystemScreensharePicker() && (0, p.isLinux)()), k = i.useCallback(() => {
     (null == C ? true : C.startsWith("prepicked:")) ? f.A.getMediaEngine().eachConnection(e => {
       e.context === E.x.STREAM && e.presentDesktopSourcePicker("window")
-    }): A()
-  }, [C, A]), U = null != (t = null == C ? true : C.startsWith("prepicked:")) && t, G = (0, p.isMac)() && p.isPlatformEmbedded && U && (null != (n = null == N ? true : N.windows.length) ? n : 0) > 0, V = (0, p.isMac)() && p.isPlatformEmbedded && U && (null != (y = null == N ? true : N.applications.length) ? y : 0) > 0, F = G ? b.intl.string(b.t.qDK8gQ) : V ? b.intl.string(b.t["3m8w+Q"]) : I ? b.intl.string(b.t.eAktHv) : b.intl.string(b.t.qntSal), B = i.useCallback(() => {
+    }): v()
+  }, [C, v]), U = null != (t = null == C ? true : C.startsWith("prepicked:")) && t, G = (0, p.isMac)() && p.isPlatformEmbedded && U && (null != (n = null == N ? true : N.windows.length) ? n : 0) > 0, V = (0, p.isMac)() && p.isPlatformEmbedded && U && (null != (b = null == N ? true : N.applications.length) ? b : 0) > 0, F = G ? y.intl.string(y.t.qDK8gQ) : V ? y.intl.string(y.t["3m8w+Q"]) : S ? y.intl.string(y.t.eAktHv) : y.intl.string(y.t.qntSal), B = i.useCallback(() => {
     let {
       preset: e,
       resolution: t,
@@ -72,22 +72,22 @@ function y(e) {
   }, [C, R]);
   if (null == O) return (0, r.jsx)(s.Drp, {
     id: "share-your-screen",
-    label: b.intl.string(b.t.fjBNo1),
+    label: y.intl.string(y.t.fjBNo1),
     icon: s.Fzq,
-    action: A
+    action: v
   });
   let H = p.isPlatformEmbedded ? (0, r.jsx)(s.Drp, {
       id: "stream-settings",
-      label: b.intl.string(b.t.ytAD9d),
+      label: y.intl.string(y.t.ytAD9d),
       children: x
     }) : null,
     Y = j ? (0, r.jsx)(s.sLh, {
       id: "stream-settings-audio-enable",
-      label: I ? b.intl.string(b.t.af2Tw1) : b.intl.string(b.t.ZJEHt7),
+      label: S ? y.intl.string(y.t.af2Tw1) : y.intl.string(y.t.ZJEHt7),
       checked: R,
       action: B
     }) : null,
-    W = !w || S || M ? null : (0, r.jsx)(s.Drp, {
+    W = !w || I || M ? null : (0, r.jsx)(s.Drp, {
       id: "change-windows",
       label: F,
       icon: s.Fzq,
@@ -96,13 +96,13 @@ function y(e) {
     K = (0, r.jsx)(s.Drp, {
       id: "stop-streaming",
       color: "danger",
-      label: b.intl.string(b.t.S5anIc),
+      label: y.intl.string(y.t.S5anIc),
       icon: s.GT3,
       action: () => (0, u.A)(O)
     });
-  return I ? (0, r.jsxs)(r.Fragment, {
+  return S ? (0, r.jsxs)(r.Fragment, {
     children: [K, W, H, Y]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [H, v ? L : null, Y, W, K]
+    children: [H, A ? L : null, Y, W, K]
   })
 }

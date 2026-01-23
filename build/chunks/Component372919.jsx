@@ -46,7 +46,7 @@ async function G(e, t, n, r) {
   if (null == l || null == l.secrets || !(0, P.px)(r, l.party, l.secrets)) throw new x.A({
     errorCode: k.Lw6.NO_ELIGIBLE_ACTIVITY
   }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
-  let a = (0, g.A)(l, v.A);
+  let a = (0, m.A)(l, v.A);
   if (a) {
     let {
       lock: t
@@ -183,7 +183,7 @@ let V = {
         channel: l,
         guild: a,
         frame: o
-      } = (0, R.W)(), u = (0, A.Ay)({
+      } = (0, R.W)(), u = (0, f.Ay)({
         application: t.application,
         channelId: null == l ? true : l.id
       }), d = null != u ? E.A.getWindow(u) : true;
@@ -259,11 +259,11 @@ let V = {
       return new Promise((e, t) => {
         ! function(e, t) {
           let n;
-          if ((0, f.f)()) n = E.A.getWindow(k.MLl.ACTIVITY_POPOUT);
+          if ((0, h.f)()) n = E.A.getWindow(k.MLl.ACTIVITY_POPOUT);
           else {
             var r;
             let e = S.A.getLastFocusedWindowId();
-            n = null == e ? null : null == (r = (0, _.Iy)(e)) ? true : r.renderWindow
+            n = null == e ? null : null == (r = (0, b.Iy)(e)) ? true : r.renderWindow
           }
           if (null == n) throw new x.A({
             errorCode: k.Lw6.UNKNOWN_ERROR
@@ -281,7 +281,7 @@ let V = {
             l()
           }), n.document.body.addEventListener("focus", l, true), n.document.body.appendChild(i), i.click()
         }(async n => {
-          let l = await (0, h.CS)(r, i, n);
+          let l = await (0, g.CS)(r, i, n);
           (0, C.Vq)(l) && (0, C.Vq)(l.url) && !(l instanceof p.A) ? e({
             image_url: l.url
           }): t(l)
@@ -318,7 +318,7 @@ let V = {
       if (!T.A.isDiscordCdnUrl(r)) throw new x.A({
         errorCode: k.Lw6.INVALID_PAYLOAD
       }, "mediaUrl must be a Discord CDN url");
-      (0, m.g)({
+      (0, A.g)({
         applicationId: i,
         channelId: null == a ? true : a.id,
         mediaUrl: r
@@ -343,18 +343,18 @@ let V = {
             pid: p
           }
         } = e,
-        f = r.application.id;
-      if (null == f) throw new x.A({
+        h = r.application.id;
+      if (null == h) throw new x.A({
         errorCode: k.Lw6.INVALID_COMMAND
       }, "No application.");
-      if (!U.mO.includes(f)) throw new x.A({
+      if (!U.mO.includes(h)) throw new x.A({
         errorCode: k.Lw6.INVALID_COMMAND
       }, "Unsupported application.");
       if (!(0, l.Lt)(null != (t = r.application.flags) ? t : 0, k.gfo.EMBEDDED)) throw new x.A({
         errorCode: k.Lw6.INVALID_COMMAND
       }, "This application cannot access this API");
-      let h = (0, L.A)();
-      if (null == h && c) throw new x.A({
+      let g = (0, L.A)();
+      if (null == g && c) throw new x.A({
         errorCode: k.Lw6.INVALID_COMMAND
       }, "No channel found");
       if (null !== a || null !== o || null !== u) {
@@ -369,7 +369,7 @@ let V = {
           width: a.width
         }]), n = new O.Ay({
           id: N.default.cast(N.default.fromTimestamp(Date.now())),
-          applicationId: f,
+          applicationId: h,
           content: u,
           components: o,
           attachments: e
@@ -379,9 +379,9 @@ let V = {
         let t = false,
           r = (0, D.d5)(p),
           l = s.SYi;
-        (E.A.getWindowOpen(k.MLl.ACTIVITY_POPOUT) || r.context === k.BRT.POPOUT) && (l = s.KX8), (0, b.m)({
-          applicationId: f,
-          channel: h,
+        (E.A.getWindowOpen(k.MLl.ACTIVITY_POPOUT) || r.context === k.BRT.POPOUT) && (l = s.KX8), (0, _.m)({
+          applicationId: h,
+          channel: g,
           command: {
             name: i,
             options: d

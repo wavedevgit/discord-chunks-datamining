@@ -16,28 +16,28 @@ let d = e => {
   let t, {
     searchQuery: n,
     setSearchQuery: d,
-    mostRecentQuery: f,
-    handleClearSearch: p,
-    handleSearchKeyPress: h,
-    handleCreateOrAddGuild: b,
-    searchResults: g,
-    searchFetching: m
+    mostRecentQuery: p,
+    handleClearSearch: h,
+    handleSearchKeyPress: f,
+    handleCreateOrAddGuild: g,
+    searchResults: m,
+    searchFetching: b
   } = e;
-  if (m) t = (0, r.jsx)("div", {
+  if (b) t = (0, r.jsx)("div", {
     className: o.$$,
     children: (0, r.jsx)(l.y$y, {
       className: o.u1
     })
   });
-  else if (0 === g.length) {
-    let e = null != b ? s.intl.format(s.t.qWFupn, {
+  else if (0 === m.length) {
+    let e = null != g ? a.intl.format(a.t.qWFupn, {
       addServerHook: function(e, t) {
         return (0, r.jsx)(l.MzZ, {
-          onClick: b,
+          onClick: g,
           children: e
         }, t)
       }
-    }) : s.intl.string(s.t.vYyEnv);
+    }) : a.intl.string(a.t.vYyEnv);
     t = (0, r.jsxs)("div", {
       className: c.Je,
       children: [(0, r.jsx)("img", {
@@ -48,7 +48,7 @@ let d = e => {
         variant: "heading-xl/semibold",
         color: "text-strong",
         className: c.gR,
-        children: s.intl.string(s.t["6HXiuE"])
+        children: a.intl.string(a.t["6HXiuE"])
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         color: "text-default",
@@ -58,7 +58,7 @@ let d = e => {
     })
   } else t = (0, r.jsx)("div", {
     className: o.vY,
-    children: g.map(e => (0, r.jsx)(a.A, {
+    children: m.map(e => (0, r.jsx)(s.A, {
       entry: e
     }, e.guildId))
   });
@@ -71,7 +71,7 @@ let d = e => {
         children: [(0, r.jsxs)("div", {
           className: c.Dr,
           children: [(0, r.jsx)(l.DUT, {
-            onClick: p,
+            onClick: h,
             className: c.UE,
             children: (0, r.jsx)(i.A, {
               direction: i.A.Directions.LEFT
@@ -79,18 +79,18 @@ let d = e => {
           }), (0, r.jsx)(l.Heading, {
             variant: "heading-xl/semibold",
             className: c.s7,
-            children: s.intl.format(s.t.UkOHRd, {
-              numResults: g.length,
-              query: f
+            children: a.intl.format(a.t.UkOHRd, {
+              numResults: m.length,
+              query: p
             })
           })]
         }), (0, r.jsx)(l.IWV, {
           query: n,
-          "aria-label": s.intl.string(s.t.nL2wKD),
-          placeholder: s.intl.string(s.t.nL2wKD),
+          "aria-label": a.intl.string(a.t.nL2wKD),
+          placeholder: a.intl.string(a.t.nL2wKD),
           onChange: d,
-          onClear: p,
-          onKeyDown: h
+          onClear: h,
+          onKeyDown: f
         })]
       }), t]
     })

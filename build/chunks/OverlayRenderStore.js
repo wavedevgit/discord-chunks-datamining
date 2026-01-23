@@ -101,11 +101,11 @@ let D = new Chunk626584.A("OverlayRenderStore"),
   W = new Chunk635731.A(1e4);
 
 function K(e, t, n) {
-  let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : b.QJ.Info;
-  (0, v.aS)({
+  let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : y.QJ.Info;
+  (0, A.aS)({
     pid: e,
     name: t,
-    type: b.ON.Renderer,
+    type: y.ON.Renderer,
     data: n,
     logType: r
   })
@@ -116,7 +116,7 @@ function z() {
 }
 
 function q() {
-  return S.A.isOverlayEnabled
+  return I.A.isOverlayEnabled
 }
 
 function X() {
@@ -283,7 +283,7 @@ function ea(e, t) {
     reason: "Legacy overlay disabled"
   });
   let s = null == (r = _.A.getGameByName(i.name)) ? true : r.id,
-    o = (0, O.zi)(i) || A.A.isLimitedInteractionOverrideEnabled(null != (n = i.id) ? n : s);
+    o = (0, O.zi)(i) || v.A.isLimitedInteractionOverrideEnabled(null != (n = i.id) ? n : s);
   switch (t) {
     case l.aI.MINIMIZED:
     case l.aI.WINDOWED:
@@ -403,7 +403,7 @@ async function ef(e) {
   let t = false,
     n = Z(e);
   if (null == n) return D.error("Tried to determine overlay method swap for untracked pid ".concat(e)), false;
-  if (y.Q.has(n.state)) return D.verbose("Skipping overlay method swap for pid ".concat(e, " - state is ").concat(n.state)), false;
+  if (b.Q.has(n.state)) return D.verbose("Skipping overlay method swap for pid ".concat(e, " - state is ").concat(n.state)), false;
   let r = await (0, O.E1)(e, 0);
   if (null == r) return D.error("Failed to get revised fullscreen type for pid ".concat(e)), false;
   n.fullscreenType !== r && D.verbose("Fullscreen type different in swap for pid ".concat(e), {
@@ -475,7 +475,7 @@ function em(e) {
   }, e))
 }
 async function eg(e, t) {
-  if (!I.OX) return void D.verbose("setOverlayEnabled: not supported");
+  if (!S.OX) return void D.verbose("setOverlayEnabled: not supported");
   if (D.info("setOverlayEnabled: supported", {
       newLegacyEnabled: e,
       newOopEnabled: t
@@ -485,7 +485,7 @@ async function eg(e, t) {
     }), D.info("setOverlayEnabled", {
       newOopEnabled: t,
       newLegacyEnabled: e
-    }), e || t) return void ev();
+    }), e || t) return void eA();
   for (let e of Q()) await eo(e), await (0, a.yy)(16)
 }
 
@@ -493,7 +493,7 @@ function eE() {
   ed(), j = false, F = null, eL()
 }
 
-function eb(e) {
+function ey(e) {
   let {
     legacyEnabled: t,
     oopEnabled: n
@@ -504,7 +504,7 @@ function eb(e) {
   }), eg(t, n), true
 }
 
-function ey(e) {
+function eb(e) {
   if (null != e.pids)
     for (let t of e.pids) es(t)
 }
@@ -514,7 +514,7 @@ function eO(e) {
   for (let t of e.removed) eo(t.pid)
 }
 
-function eA(e) {
+function ev(e) {
   if (__OVERLAY__ && D.error("Running handleGameToggleOverlay While in Overlay Context!"), D.verbose("handleGameToggleOverlay", {
       action: e
     }), !X()) {
@@ -541,23 +541,23 @@ function eA(e) {
     pid: t,
     legacyEnabled: i,
     overlayV3Enabled: a
-  }), ee(t) ? ev() : es(t)) : eo(t), true
+  }), ee(t) ? eA() : es(t)) : eo(t), true
 }
-async function ev() {
-  await eS(), await (0, a.yy)(2e3);
+async function eA() {
+  await eI(), await (0, a.yy)(2e3);
   let e = Q(),
     t = new Set([...f.Ay.getRunningGames().filter(e => f.Ay.getOverlayEnabledForGame(e)).map(e => e.pid), ...e]);
   for (let n of (D.info("Retracking ".concat(t.size, " games (").concat(e.length, " already tracked)")), t)) await es(n), await (0, a.yy)(16);
   D.info("Retracked ".concat(e.length, " games"))
 }
-async function eS() {
+async function eI() {
   for (let e of Q()) await eo(e), await (0, a.yy)(16)
 }
 
-function eI(e) {
+function eS(e) {
   return D.error("Overlay reload for pid", {
     pid: e.pid
-  }), ev(), true
+  }), eA(), true
 }
 
 function eT(e) {
@@ -565,7 +565,7 @@ function eT(e) {
 }
 
 function eC(e) {
-  return x = e.mode, ev(), true
+  return x = e.mode, eA(), true
 }
 
 function eN(e) {
@@ -573,7 +573,7 @@ function eN(e) {
 }
 
 function eR() {
-  return ev(), true
+  return eA(), true
 }
 
 function ew(e) {
@@ -610,11 +610,11 @@ function ej() {
 }
 
 function eM() {
-  j = false, F = null, eS()
+  j = false, F = null, eI()
 }
 class ek extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(p.default, d.A, _.A, A.A, f.Ay, S.A), this.syncWith([d.A], eL)
+    this.waitFor(p.default, d.A, _.A, v.A, f.Ay, I.A), this.syncWith([d.A], eL)
   }
   getDevToolsFocusedPidsWithTimestamp() {
     return W
@@ -696,15 +696,15 @@ let eU = new ek(Chunk73153.h, !M ? {} : {
     LOGIN: ej,
     LOGOUT: eM,
     EXPERIMENT_OVERRIDE_BUCKET: eE,
-    OVERLAY_SET_ENABLED: eb,
-    GAME_LAUNCH_SUCCESS: ey,
+    OVERLAY_SET_ENABLED: ey,
+    GAME_LAUNCH_SUCCESS: eb,
     RUNNING_GAMES_CHANGE: eO,
-    RUNNING_GAME_TOGGLE_OVERLAY: eA,
+    RUNNING_GAME_TOGGLE_OVERLAY: ev,
     OVERLAY_FORCE_RENDER_MODE: eC,
     OVERLAY_UPDATE_OVERLAY_STATE: eN,
     OVERLAY_SET_LIMITED_INTERACTION_OVERRIDE: eR,
     OVERLAY_CRASHED: eT,
-    OVERLAY_RELOAD: eI,
+    OVERLAY_RELOAD: eS,
     OVERLAY_FOCUSED: eD,
     OVERLAY_SUCCESSFULLY_SHOWN: ex,
     OVERLAY_RENDER_DEBUG_MODE: ew,

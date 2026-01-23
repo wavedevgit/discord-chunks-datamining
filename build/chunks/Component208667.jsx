@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 208667, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,13 +14,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk456425 = require("./456425.jsx"),
   Chunk1347 = require("./1347.js");
 
-function p(e) {
+function h(e) {
   let {
     initialized: t,
     items: n,
-    loading: p,
-    loadMore: h
-  } = e, b = l.useRef(null), g = (0, o.A)("for-you", b);
+    loading: h,
+    loadMore: f
+  } = e, g = l.useRef(null), m = (0, o.A)("for-you", g);
   (0, c.A)({
     type: i.ImpressionTypes.VIEW,
     name: i.ImpressionNames.NOTIFICATION_CENTER_LANDING,
@@ -30,19 +30,19 @@ function p(e) {
   }, {
     disableTrack: !t
   }, [t]);
-  let m = () => {
+  let b = () => {
     var e;
-    let t = null == (e = b.current) ? true : e.getScrollerState();
-    null == t || t.scrollHeight - t.scrollTop - t.offsetHeight < 1500 && h()
+    let t = null == (e = g.current) ? true : e.getScrollerState();
+    null == t || t.scrollHeight - t.scrollTop - t.offsetHeight < 1500 && f()
   };
-  return t ? 0 === n.length ? (0, r.jsx)(u.H, {}) : (0, r.jsx)(a.hD, {
-    navigator: g,
-    children: (0, r.jsx)(a.PR, {
+  return t ? 0 === n.length ? (0, r.jsx)(u.H, {}) : (0, r.jsx)(s.hD, {
+    navigator: m,
+    children: (0, r.jsx)(s.PR, {
       children: e => {
         var t, l;
         let {
           ref: i
-        } = e, a = function(e, t) {
+        } = e, s = function(e, t) {
           if (null == e) return {};
           var n, r, l, i = {};
           if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -59,7 +59,7 @@ function p(e) {
             for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
           return i
         }(e, ["ref"]);
-        return (0, r.jsxs)(s.T7Y, (t = function(e) {
+        return (0, r.jsxs)(a.T7Y, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -77,17 +77,17 @@ function p(e) {
           }
           return e
         }({
-          className: f.kL,
+          className: p.kL,
           ref: e => {
             var t;
-            b.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
+            g.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           }
-        }, a), l = l = {
-          onScroll: m,
+        }, s), l = l = {
+          onScroll: b,
           children: [(0, r.jsx)(d.$, {
             items: n
-          }), p ? (0, r.jsx)(s.y$y, {
-            className: f.u1
+          }), h ? (0, r.jsx)(a.y$y, {
+            className: p.u1
           }) : null]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
@@ -101,7 +101,7 @@ function p(e) {
         }), t))
       }
     })
-  }) : (0, r.jsx)(s.y$y, {
-    className: f.k$
+  }) : (0, r.jsx)(a.y$y, {
+    className: p.k$
   })
 }

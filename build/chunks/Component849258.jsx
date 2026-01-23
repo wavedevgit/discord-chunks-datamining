@@ -72,7 +72,7 @@ let C = (e, t) => T.intl.formatToPlainString(T.t.tAwI1k, {
       details: L,
       activity: j,
       embeddedActivity: M
-    } = (0, S.u)(n), {
+    } = (0, I.u)(n), {
       primaryColor: k,
       secondaryColor: U
     } = (0, O.A)(null == D ? true : D.src), G = (0, a.bG)([_.default], () => _.default.locale), {
@@ -90,12 +90,12 @@ let C = (e, t) => T.intl.formatToPlainString(T.t.tAwI1k, {
         users: [F, B],
         countOthers: H
       }) : N(n, t, x);
-      return (0, y.Vq)({
+      return (0, b.Vq)({
         entry: n,
         applicationImageSrc: null == D ? true : D.src,
         avatarSrcs: V.map(e => e.getAvatarURL(t.guild_id, 128)),
         description: r,
-        timestamp: (0, b.As)(n, G),
+        timestamp: (0, y.As)(n, G),
         colors: [k, U],
         channelId: e
       })
@@ -106,13 +106,13 @@ let C = (e, t) => T.intl.formatToPlainString(T.t.tAwI1k, {
       analyticsLocations: [d.A.MEMBER_LIST_ACTIVITY_CONTENT_POPOUT]
     });
     if (null == x) return null;
-    let q = (0, r.jsx)(A.iT, {
-        location: A.N5.POPOUT,
+    let q = (0, r.jsx)(v.iT, {
+        location: v.N5.POPOUT,
         entry: n
       }),
-      X = (0, r.jsx)(v.BC, {
+      X = (0, r.jsx)(A.BC, {
         channel: t,
-        userDescription: (0, b.JM)(n) ? T.t.vPg1JT : T.t.rPqqts,
+        userDescription: (0, y.JM)(n) ? T.t.vPg1JT : T.t.rPqqts,
         title: n.extra.activity_name,
         subtitle: L,
         badges: q,
@@ -122,7 +122,7 @@ let C = (e, t) => T.intl.formatToPlainString(T.t.tAwI1k, {
         onClickSubtitle: P ? true : Y,
         onClickThumbnail: P ? true : Y
       }),
-      Z = (0, o.A)(j, I.jUm.JOIN) || (0, l.A)(j),
+      Z = (0, o.A)(j, S.jUm.JOIN) || (0, l.A)(j),
       Q = Z ? (0, r.jsx)(u.A, {
         embeddedActivity: M,
         activity: j,
@@ -148,9 +148,9 @@ let C = (e, t) => T.intl.formatToPlainString(T.t.tAwI1k, {
         icon: s.k9F
       }),
       ee = [$, Z && !P ? Q : J].filter(h.Vq);
-    return (0, r.jsxs)(v.YN, {
-      children: [X, (0, r.jsx)(v.Eh, {
-        children: (0, r.jsx)(v.fD, {
+    return (0, r.jsxs)(A.YN, {
+      children: [X, (0, r.jsx)(A.Eh, {
+        children: (0, r.jsx)(A.fD, {
           onReaction: m,
           onVoiceChannelPreview: w,
           user: x,

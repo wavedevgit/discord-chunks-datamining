@@ -2,7 +2,7 @@
 /** chunk id: 915417, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  g: () => O
+  g: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -40,91 +40,91 @@ let j = {
   badgeColorSecondary: null
 };
 
-function O(e) {
+function _(e) {
   let {
     pendingFields: t
   } = e, {
     guild: n,
-    guildProfile: O
-  } = (0, a.cf)([g.A], () => ({
-    guild: g.A.getGuild(),
-    guildProfile: g.A.getGuildProfile()
-  })), y = null == n ? true : n.id, v = (0, a.bG)([o.A], () => o.A.get(y)), {
-    fetchGuildProfile: A
-  } = (0, d.u)(y), E = (null == O ? true : O.visibility) == null || !l.i.VISIBLE.has(null == O ? true : O.visibility), N = (null == O ? true : O.visibility) === l.n.PUBLIC_WITH_RECRUITMENT;
+    guildProfile: _
+  } = (0, a.cf)([m.A], () => ({
+    guild: m.A.getGuild(),
+    guildProfile: m.A.getGuildProfile()
+  })), O = null == n ? true : n.id, v = (0, a.bG)([c.A], () => c.A.get(O)), {
+    fetchGuildProfile: y
+  } = (0, d.u)(O), A = (null == _ ? true : _.visibility) == null || !l.i.VISIBLE.has(null == _ ? true : _.visibility), E = (null == _ ? true : _.visibility) === l.n.PUBLIC_WITH_RECRUITMENT;
   i.useEffect(() => {
-    null != y && A()
-  }, [y, A]);
-  let _ = i.useMemo(() => null == n || null == O ? j : O, [n, O]),
+    null != O && y()
+  }, [O, y]);
+  let N = i.useMemo(() => null == n || null == _ ? j : _, [n, _]),
     S = i.useCallback(() => {
-      (null == n ? true : n.id) != null && (N ? f.A.updateGuildProfile(n.id, {
+      (null == n ? true : n.id) != null && (E ? g.A.updateGuildProfile(n.id, {
         visibility: l.n.PUBLIC
-      }) : f.A.updateGuildProfile(n.id, {
+      }) : g.A.updateGuildProfile(n.id, {
         visibility: l.n.PUBLIC_WITH_RECRUITMENT
       }))
-    }, [null == n ? true : n.id, N]),
-    T = i.useCallback(() => {
-      f.A.setSection(p.BEX.PROFILE)
+    }, [null == n ? true : n.id, E]),
+    I = i.useCallback(() => {
+      g.A.setSection(b.BEX.PROFILE)
     }, []);
   if (null == n) return null;
-  let I = null != t ? t : null == v ? true : v.formFields;
+  let T = null != t ? t : null == v ? true : v.formFields;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.DZT, {
       variant: "heading-md/semibold",
       color: "text-strong",
-      children: x.intl.string(x.t.AHJddL)
+      children: h.intl.string(h.t.AHJddL)
     }), (0, r.jsx)(s.EYj, {
       tag: "p",
       variant: "text-sm/medium",
       color: "text-subtle",
-      className: h.nB,
-      children: x.intl.string(x.t.Z7TCtd)
-    }), (0, r.jsx)(m.o, {
+      className: x.nB,
+      children: h.intl.string(h.t.Z7TCtd)
+    }), (0, r.jsx)(f.o, {
       guildId: n.id
     }), (0, r.jsx)("div", {
-      className: h.Zd,
-      children: null != I ? (0, r.jsx)(b.a, {
+      className: x.Zd,
+      children: null != T ? (0, r.jsx)(p.a, {
         guild: n,
-        formFields: I
-      }) : (0, r.jsx)(c.y$y, {})
+        formFields: T
+      }) : (0, r.jsx)(o.y$y, {})
     }), (0, r.jsx)("div", {
-      className: h.yF
+      className: x.yF
     }), (0, r.jsxs)("div", {
-      className: h.Im,
+      className: x.Im,
       children: [(0, r.jsxs)("div", {
-        className: h.fi,
-        children: [(0, r.jsx)(c.dOG, {
-          label: x.intl.string(x.t["N/0232"]),
-          checked: N,
+        className: x.fi,
+        children: [(0, r.jsx)(o.dOG, {
+          label: h.intl.string(h.t["N/0232"]),
+          checked: E,
           onChange: S,
-          disabled: E
+          disabled: A
         }), (0, r.jsx)(s.EYj, {
           variant: "text-sm/normal",
           color: "text-subtle",
-          children: x.intl.string(x.t["3TSZYK"])
-        }), E && (0, r.jsx)(s.EYj, {
+          children: h.intl.string(h.t["3TSZYK"])
+        }), A && (0, r.jsx)(s.EYj, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: x.intl.format(x.t.Bk0VOi, {
-            profileLink: (e, t) => (0, r.jsx)(c.MzZ, {
-              onClick: T,
+          children: h.intl.format(h.t.Bk0VOi, {
+            profileLink: (e, t) => (0, r.jsx)(o.MzZ, {
+              onClick: I,
               children: e
             }, t)
           })
         })]
       }), (0, r.jsx)("div", {
-        className: h.fi,
+        className: x.fi,
         children: (0, r.jsxs)("div", {
-          className: h.cK,
+          className: x.cK,
           children: [(0, r.jsx)("div", {
-            className: h.D7
+            className: x.D7
           }), (0, r.jsx)(u.Ay, {
-            className: h.VH,
-            profile: _,
+            className: x.VH,
+            profile: N,
             CTAOverride: (0, r.jsx)(s.$nd, {
               variant: "active",
               size: "sm",
-              text: x.intl.string(x.t["7XdMW2"]),
+              text: h.intl.string(h.t["7XdMW2"]),
               fullWidth: true
             }),
             disableGuildNameClick: true

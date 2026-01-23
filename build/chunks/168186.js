@@ -8,7 +8,7 @@ require.d(exports, {
   Cq: () => P,
   Ez: () => k,
   Lz: () => T,
-  Oe: () => A,
+  Oe: () => v,
   PV: () => N,
   Qr: () => L,
   XM: () => R,
@@ -44,7 +44,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,12 +69,12 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e) {
+function v(e) {
   var t, n, r;
   let i, {
     rootCommand: a,
@@ -98,7 +98,7 @@ function A(e) {
     type: null != (t = a.type) ? t : u.kc.CHAT,
     inputType: _.y$.BOT,
     untranslatedDescription: s.description,
-    options: v(s.options),
+    options: A(s.options),
     rootCommand: a,
     subCommandPath: l,
     defaultMemberPermissions: null == a.default_member_permissions ? true : c.iu(a.default_member_permissions),
@@ -114,38 +114,38 @@ function A(e) {
   }
 }
 
-function v(e) {
+function A(e) {
   return null == e ? true : e.map(e => {
     var t, n;
-    let r = O(b({}, e), {
-      choices: S(e.choices),
-      options: v(e.options),
+    let r = O(y({}, e), {
+      choices: I(e.choices),
+      options: A(e.options),
       serverLocalizedName: e.name_localized,
       displayName: null != (t = e.name_localized) ? t : e.name,
       displayDescription: null != (n = e.description_localized) ? n : e.description
     });
-    return e.type === u.n4.CHANNEL && "channel_types" in e ? O(b({}, r), {
+    return e.type === u.n4.CHANNEL && "channel_types" in e ? O(y({}, r), {
       channelTypes: e.channel_types
-    }) : (e.type === u.n4.NUMBER || e.type === u.n4.INTEGER) && ("min_value" in e || "max_value" in e) ? O(b({}, r), {
+    }) : (e.type === u.n4.NUMBER || e.type === u.n4.INTEGER) && ("min_value" in e || "max_value" in e) ? O(y({}, r), {
       minValue: e.min_value,
       maxValue: e.max_value
-    }) : e.type === u.n4.STRING && ("min_length" in e || "max_length" in e) ? O(b({}, r), {
+    }) : e.type === u.n4.STRING && ("min_length" in e || "max_length" in e) ? O(y({}, r), {
       minLength: e.min_length,
       maxLength: e.max_length
     }) : r
   })
 }
 
-function S(e) {
+function I(e) {
   return null == e ? true : e.map(e => {
     var t;
-    return O(b({}, e), {
+    return O(y({}, e), {
       displayName: null != (t = e.name_localized) ? t : e.name
     })
   })
 }
 
-function I(e) {
+function S(e) {
   var t, n;
   let {
     rootCommand: r,
@@ -155,14 +155,14 @@ function I(e) {
     useKeyedPermissions: o
   } = e;
   if (i.hasOwnProperty("id")) {
-    if (null == i.options || 0 === i.options.length) return [A({
+    if (null == i.options || 0 === i.options.length) return [v({
       rootCommand: r,
       command: i,
       applicationId: a,
       subCommandPath: s,
       useKeyedPermissions: o
     })]
-  } else if (i.type !== u.n4.SUB_COMMAND && i.type !== u.n4.SUB_COMMAND_GROUP && (null == i.options || 0 === i.options.length)) return [A({
+  } else if (i.type !== u.n4.SUB_COMMAND && i.type !== u.n4.SUB_COMMAND_GROUP && (null == i.options || 0 === i.options.length)) return [v({
     rootCommand: r,
     command: i,
     applicationId: a,
@@ -172,7 +172,7 @@ function I(e) {
   let l = [];
   if (null == i.options) return l;
   let c = i.options.filter(e => e.type === u.n4.SUB_COMMAND_GROUP);
-  for (let e = 0; e < c.length; e++) l.push(...I({
+  for (let e = 0; e < c.length; e++) l.push(...S({
     rootCommand: r,
     command: c[e],
     applicationId: a,
@@ -184,7 +184,7 @@ function I(e) {
     useKeyedPermissions: o
   }));
   let d = i.options.filter(e => e.type === u.n4.SUB_COMMAND);
-  for (let e = 0; e < d.length; e++) l.push(A({
+  for (let e = 0; e < d.length; e++) l.push(v({
     rootCommand: r,
     command: d[e],
     applicationId: a,
@@ -195,7 +195,7 @@ function I(e) {
     }]),
     useKeyedPermissions: o
   }));
-  return 0 === c.length && 0 === d.length && l.push(A({
+  return 0 === c.length && 0 === d.length && l.push(v({
     rootCommand: r,
     command: i,
     applicationId: a,
@@ -205,7 +205,7 @@ function I(e) {
 }
 
 function T(e, t) {
-  return l().flatMap(e, e => (s()(null != e.id, "Missing command id"), I({
+  return l().flatMap(e, e => (s()(null != e.id, "Missing command id"), S({
     rootCommand: e,
     command: e,
     applicationId: e.application_id,

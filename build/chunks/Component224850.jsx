@@ -50,7 +50,7 @@ function m(e) {
     affinity: e,
     applyMask: t !== h.length - 1,
     size: _ ? d._3.SIZE_24 : d._3.SIZE_32
-  }, e.id)), E = e => null != e.globalName ? e.globalName : e.username, b = i.useMemo(() => 3 === h.length ? f.intl.formatToPlainString(f.t.c7ETJH, {
+  }, e.id)), E = e => null != e.globalName ? e.globalName : e.username, y = i.useMemo(() => 3 === h.length ? f.intl.formatToPlainString(f.t.c7ETJH, {
     username: E(h[2])
   }) : 2 === h.length ? f.intl.formatToPlainString(f.t["st8Rh/"], {
     username: E(h[1]),
@@ -60,19 +60,19 @@ function m(e) {
   }) : "", [h]);
   if (0 === h.length) return null;
 
-  function y() {
+  function b() {
     return _ ? (0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
       color: a,
-      children: b
+      children: y
     }) : t || c ? (0, r.jsx)(l.Text, {
       variant: c ? "text-sm/normal" : "text-lg/medium",
       color: a,
-      children: b
+      children: y
     }) : (0, r.jsx)(l.Heading, {
       variant: "heading-xl/medium",
       color: a,
-      children: b
+      children: y
     })
   }
   return (0, r.jsxs)("div", {
@@ -84,7 +84,7 @@ function m(e) {
       children: m
     }), (0, r.jsx)("div", {
       className: p.FS,
-      children: (0, r.jsx)(y, {})
+      children: (0, r.jsx)(b, {})
     })]
   })
 }

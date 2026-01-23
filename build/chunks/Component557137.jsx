@@ -19,7 +19,7 @@ function d(e) {
     headingId: n,
     widget: l,
     disableInteraction: a = false,
-    title: o,
+    title: s,
     subtitle: c,
     actionButtons: d = [],
     className: p
@@ -28,12 +28,12 @@ function d(e) {
     className: i()(u.U1, p),
     children: [(0, r.jsxs)("div", {
       className: u.DD,
-      children: [(0, r.jsx)(s.Heading, {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-sm/medium",
         color: "text-default",
         id: n,
-        children: o
-      }), null != c && (0, r.jsx)(s.Text, {
+        children: s
+      }), null != c && (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: "text-subtle",
         children: c
@@ -53,11 +53,11 @@ function f(e) {
     actionButtons: n,
     disabledInteraction: l,
     userId: i
-  } = e, s = (0, a.bG)([o.default], () => o.default.getId());
+  } = e, o = (0, a.bG)([s.default], () => s.default.getId());
   return l ? null : null != n && n.length > 0 ? (0, r.jsx)("div", {
     className: u.o1,
     children: n
-  }) : s !== i ? (0, r.jsx)("div", {
+  }) : o !== i ? (0, r.jsx)("div", {
     className: u.o1,
     children: (0, r.jsx)(c.A, {
       widget: t,

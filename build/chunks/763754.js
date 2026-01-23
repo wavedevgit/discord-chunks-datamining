@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ay: () => _,
-  FT: () => b,
+  FT: () => y,
   X4: () => h,
   d8: () => E,
   m2: () => g,
@@ -36,27 +36,27 @@ function h(e) {
     m = p.Ay.useName((null == e ? true : e.author.bot) ? null == e ? true : e.author : h),
     g = (0, a.bG)([u.A], () => u.A.getGuild(i), [i]),
     E = null == _ ? true : _.colorRoleId,
-    b = (0, a.bG)([c.A], () => null != i && null != E ? c.A.getRole(i, E) : true, [i, E]),
+    y = (0, a.bG)([c.A], () => null != i && null != E ? c.A.getRole(i, E) : true, [i, E]),
     O = (0, a.bG)([d.A], () => null != r && (null == n ? true : n.isPrivate()) ? d.A.getNickname(r) : null),
-    A = (0, s.A)({
+    v = (0, s.A)({
       userId: r,
       guildId: i
     });
-  return null == e ? null : y({
+  return null == e ? null : b({
     user: e.author,
     channel: n,
     guild: g,
-    memberColorRole: b,
+    memberColorRole: y,
     userName: m,
     member: _,
     friendNickname: O,
-    displayNameStyles: A
+    displayNameStyles: v
   })
 }
 
 function m(e) {
   let t = o.A.getChannel(e.channel_id);
-  return b(e.author, t)
+  return y(e.author, t)
 }
 
 function g(e, t) {
@@ -73,7 +73,7 @@ function E(e, t) {
     f = (0, a.bG)([c.A], () => null != r && null != o ? c.A.getRole(r, o) : true, [r, o]),
     _ = (0, a.bG)([d.A], () => null != n && (null == t ? true : t.isPrivate()) ? d.A.getNickname(n) : null),
     h = p.Ay.useName(e);
-  return y({
+  return b({
     user: e,
     channel: t,
     guild: s,
@@ -85,14 +85,14 @@ function E(e, t) {
   })
 }
 
-function b(e, t) {
+function y(e, t) {
   let n = null == e ? true : e.id,
     r = null == t ? true : t.guild_id,
     i = u.A.getGuild(r),
     a = null == r || null == n ? null : l.Ay.getMember(r, n),
     s = null != r && (null == a ? true : a.colorRoleId) != null ? c.A.getRole(r, a.colorRoleId) : true,
     o = null != n && null != t && t.isPrivate() ? d.A.getNickname(n) : null;
-  return y({
+  return b({
     user: e,
     channel: t,
     guild: i,
@@ -103,7 +103,7 @@ function b(e, t) {
   })
 }
 
-function y(e) {
+function b(e) {
   var t, n;
   let {
     user: r,

@@ -19,9 +19,9 @@ module.exports = function(e, t, n, s, o, l) {
   l.set(e, t), l.set(t, e);
   for (var g = c; ++f < d;) {
     var E = e[p = u[f]],
-      b = t[p];
-    if (s) var y = c ? s(b, E, p, t, e, l) : s(E, b, p, e, t, l);
-    if (!(true === y ? E === b || o(E, b, n, s, l) : y)) {
+      y = t[p];
+    if (s) var b = c ? s(y, E, p, t, e, l) : s(E, y, p, e, t, l);
+    if (!(true === b ? E === y || o(E, y, n, s, l) : b)) {
       m = false;
       break
     }
@@ -29,8 +29,8 @@ module.exports = function(e, t, n, s, o, l) {
   }
   if (m && !g) {
     var O = e.constructor,
-      A = t.constructor;
-    O != A && "constructor" in e && "constructor" in t && !("function" == typeof O && O instanceof O && "function" == typeof A && A instanceof A) && (m = false)
+      v = t.constructor;
+    O != v && "constructor" in e && "constructor" in t && !("function" == typeof O && O instanceof O && "function" == typeof v && v instanceof v) && (m = false)
   }
   return l.delete(e), l.delete(t), m
 }

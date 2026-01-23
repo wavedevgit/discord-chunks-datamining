@@ -51,17 +51,17 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = "default",
+let b = "default",
   O = [],
-  A = [],
   v = [],
-  S = 0,
-  I = null,
+  A = [],
+  I = 0,
+  S = null,
   T = null,
   C = {},
   N = null,
@@ -71,7 +71,7 @@ let y = "default",
   D = new Map,
   x = {
     clipsEnabled: false,
-    storageLocation: y,
+    storageLocation: b,
     clipsQuality: {
       resolution: Chunk753070.on.RESOLUTION_1080,
       frameRate: Chunk753070.kn.FPS_30
@@ -110,7 +110,7 @@ let y = "default",
     }
   };
 async function j() {
-  if (L.clipsSettings.storageLocation !== y || null == o.A || null == o.A.remoteApp) return;
+  if (L.clipsSettings.storageLocation !== b || null == o.A || null == o.A.remoteApp) return;
   let e = await o.A.remoteApp.getPath("documents");
   L.clipsSettings.storageLocation = e, ec.emitChange()
 }
@@ -128,9 +128,9 @@ function k(e) {
   let {
     clip: t
   } = e;
-  for (let [e, n] of A.entries())
+  for (let [e, n] of v.entries())
     if (n.id === t.id) {
-      A[e] = t, A = [...A];
+      v[e] = t, v = [...v];
       return
     }
 }
@@ -139,7 +139,7 @@ function U(e) {
   let {
     settings: t
   } = e;
-  L = b(g({}, L), {
+  L = y(g({}, L), {
     clipsSettings: g({}, L.clipsSettings, t)
   })
 }
@@ -150,7 +150,7 @@ function G(e) {
     streamKey: n,
     thumbnail: r
   } = e;
-  if (S += 1, L.hasTakenDecoupledClip = L.hasTakenDecoupledClip || t === p.Fv.DECOUPLED, null != n && null != r) {
+  if (I += 1, L.hasTakenDecoupledClip = L.hasTakenDecoupledClip || t === p.Fv.DECOUPLED, null != n && null != r) {
     var i;
     let e = Date.now();
     w = null != w ? w : e, P[n] = [...null != (i = P[n]) ? i : [], {
@@ -169,7 +169,7 @@ function V(e) {
 }
 
 function F() {
-  S = Math.max(S - 1, 0)
+  I = Math.max(I - 1, 0)
 }
 
 function B(e) {
@@ -177,33 +177,33 @@ function B(e) {
   let {
     clip: r
   } = e;
-  S = Math.max(S - 1, 0), T = b(g({
+  I = Math.max(I - 1, 0), T = y(g({
     applicationName: r.applicationName,
     ended: false
   }, T), {
     newClipIds: [...null != (t = null == T ? true : T.newClipIds) ? t : [], r.id]
-  }), L = b(g({}, L), {
+  }), L = y(g({}, L), {
     newClipIds: [...null != (n = L.newClipIds) ? n : [], r.id]
-  }), v = v.filter(e => {
+  }), A = A.filter(e => {
     let {
       id: t
     } = e;
     return t !== r.id
-  }), A = [r, ...A], L.hasClips = true
+  }), v = [r, ...v], L.hasClips = true
 }
 
 function H(e) {
   let {
     clip: t
   } = e;
-  v = [t, ...v]
+  A = [t, ...A]
 }
 
 function Y(e) {
   let {
     clipId: t
   } = e;
-  v = v.filter(e => {
+  A = A.filter(e => {
     let {
       id: n
     } = e;
@@ -215,14 +215,14 @@ function W(e) {
   let {
     channelId: t
   } = e;
-  I = t
+  S = t
 }
 
 function K(e) {
   let {
     channelId: t
   } = e;
-  t !== I && (I = null)
+  t !== S && (S = null)
 }
 
 function z(e) {
@@ -269,17 +269,17 @@ function Z(e) {
     streamKey: t
   } = e;
   if (w = null, P[t] = [], null == T || (0, c.Iy)(t).ownerId !== u.default.getId()) returnfalse;
-  T = 0 === T.newClipIds.length ? null : b(g({}, T), {
+  T = 0 === T.newClipIds.length ? null : y(g({}, T), {
     ended: true
   })
 }
 
 function Q(e) {
-  L.hasClips = e.clips.length > 0, A = e.clips
+  L.hasClips = e.clips.length > 0, v = e.clips
 }
 
 function $(e) {
-  0 === (A = A.filter(t => {
+  0 === (v = v.filter(t => {
     let {
       filepath: n
     } = t;
@@ -367,10 +367,10 @@ class el extends(r = Chunk311907.Ay.DeviceSettingsStore) {
     null != e && (L = e), j(), this.waitFor(l.Ay)
   }
   getClips() {
-    return A
+    return v
   }
   getPendingClips() {
-    return v
+    return A
   }
   getUserAgnosticState() {
     return L
@@ -382,7 +382,7 @@ class el extends(r = Chunk311907.Ay.DeviceSettingsStore) {
     return T
   }
   getClipsWarningShown(e) {
-    return I === e
+    return S === e
   }
   getActiveAnimation() {
     return w
@@ -404,7 +404,7 @@ class el extends(r = Chunk311907.Ay.DeviceSettingsStore) {
     return L.hardwareClassificationVersion
   }
   getIsAtMaxSaveClipOperations() {
-    return S >= p.VP
+    return I >= p.VP
   }
   getLastClipsError() {
     return N
@@ -438,7 +438,7 @@ class el extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   }
   getMatchingGroupClip(e, t) {
     if (null == e && null == t) return null;
-    for (let s of A) {
+    for (let s of v) {
       var n, r, i, a;
       if (null != t && s.id === t || null != e && (null == (r = s.decision) || null == (n = r.signal) ? true : n.type) === f.Gy.DISTRIBUTED && (null == (a = s.decision) || null == (i = a.signal) ? true : i.remoteTriggerClipId) === e) return s
     }
@@ -455,61 +455,61 @@ m(el, "displayName", "ClipsStore"), m(el, "persistKey", "ClipsStore"), m(el, "mi
   newClipsCount: 0
 }), e => {
   let t = g({}, x, e.clipsSettings);
-  return b(g({}, e), {
+  return y(g({}, e), {
     clipsSettings: t
   })
 }, e => {
   var t;
-  return b(g({}, e), {
+  return y(g({}, e), {
     newClipIds: null != (t = e.newClipIds) ? t : []
   })
 }, e => {
   var t, n;
-  return b(g({}, e), {
+  return y(g({}, e), {
     hardwareClassification: null != (t = e.hardwareClassification) ? t : null,
     hardwareClassificationVersion: null != (n = e.hardwareClassificationVersion) ? n : 0
   })
 }, e => {
   var t;
-  return b(g({}, e), {
+  return y(g({}, e), {
     hasClips: null != (t = e.hasClips) && t
   })
-}, e => b(g({}, e), {
-  clipsSettings: b(g({}, e.clipsSettings), {
+}, e => y(g({}, e), {
+  clipsSettings: y(g({}, e.clipsSettings), {
     decoupledClipsEnabled: x.decoupledClipsEnabled
   })
 }), e => {
   var t;
-  return b(g({}, e), {
+  return y(g({}, e), {
     hardwareClassificationForDecoupled: null != (t = e.hardwareClassificationForDecoupled) ? t : null
   })
 }, e => {
   var t;
   let r = null == (t = n(430452).A) ? true : t.getHardwareEncoding();
-  return b(g({}, e), {
-    clipsSettings: b(g({}, e.clipsSettings), {
+  return y(g({}, e), {
+    clipsSettings: y(g({}, e.clipsSettings), {
       clipsEnabled: !!r && e.clipsSettings.clipsEnabled,
       decoupledClipsEnabled: !!r && e.clipsSettings.decoupledClipsEnabled
     })
   })
 }, e => {
   var t;
-  return b(g({}, e), {
+  return y(g({}, e), {
     newClipIds: null != (t = e.newClipIds) ? t : [],
     newClipIDs: true
   })
-}, e => b(g({}, e), {
-  clipsSettings: b(g({}, e.clipsSettings), {
+}, e => y(g({}, e), {
+  clipsSettings: y(g({}, e.clipsSettings), {
     clipsQuality: "number" == typeof e.clipsSettings.clipsQuality || null == e.clipsSettings.clipsQuality ? x.clipsQuality : e.clipsSettings.clipsQuality
   })
 }), e => {
   var t;
-  return b(g({}, e), {
-    clipsSettings: b(g({}, e.clipsSettings), {
+  return y(g({}, e), {
+    clipsSettings: y(g({}, e.clipsSettings), {
       remindersEnabled: null != (t = e.clipsSettings.remindersEnabled) ? t : x.remindersEnabled
     })
   })
-}, e => b(g({}, e), {
+}, e => y(g({}, e), {
   hasTakenDecoupledClip: false,
   clipsEducationState: {
     dismissedAt: null,
@@ -518,16 +518,16 @@ m(el, "displayName", "ClipsStore"), m(el, "persistKey", "ClipsStore"), m(el, "mi
   }
 }), e => {
   var t, n, r, i;
-  return b(g({}, e), {
-    clipsSettings: b(g({}, e.clipsSettings), {
+  return y(g({}, e), {
+    clipsSettings: y(g({}, e.clipsSettings), {
       maxAutoClips: null != (t = e.clipsSettings.maxAutoClips) ? t : x.maxAutoClips,
       clipSignals: null != (n = e.clipsSettings.clipSignals) ? n : x.clipSignals,
       mlPipelinesEnabled: null != (r = e.clipsSettings.mlPipelinesEnabled) ? r : x.mlPipelinesEnabled,
       autoClipPhrases: null != (i = e.clipsSettings.autoClipPhrases) ? i : x.autoClipPhrases
     })
   })
-}, e => b(g({}, e), {
-  clipsSettings: b(g({}, e.clipsSettings), {
+}, e => y(g({}, e), {
+  clipsSettings: y(g({}, e.clipsSettings), {
     autoClipPhrases: 0 === e.clipsSettings.autoClipPhrases.length ? x.autoClipPhrases : e.clipsSettings.autoClipPhrases
   })
 })]);

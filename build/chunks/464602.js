@@ -10,10 +10,10 @@ require.r(exports), require.d(exports, {
   Weekday: () => o.Bw,
   casual: () => g,
   createCasualConfiguration: () => O,
-  createConfiguration: () => A,
+  createConfiguration: () => v,
   hans: () => m,
-  parse: () => b,
-  parseDate: () => y,
+  parse: () => y,
+  parseDate: () => b,
   strict: () => E
 });
 var Chunk321287 = require("./321287.js"),
@@ -31,22 +31,22 @@ var Chunk321287 = require("./321287.js"),
   Chunk127569 = require("./127569.js");
 let m = new Chunk880683.u(O()),
   g = new Chunk880683.u(O()),
-  E = new Chunk880683.u(A());
+  E = new Chunk880683.u(v());
 
-function b(e, t, n) {
+function y(e, t, n) {
   return g.parse(e, t, n)
 }
 
-function y(e, t, n) {
+function b(e, t, n) {
   return g.parseDate(e, t, n)
 }
 
 function O() {
-  let e = A();
+  let e = v();
   return e.parsers.unshift(new l.A), e
 }
 
-function A() {
+function v() {
   let e = (0, i.i)({
     parsers: [new c.A, new d.A, new p.A, new f.A, new u.A],
     refiners: [new _.A, new h.A]

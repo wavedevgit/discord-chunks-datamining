@@ -4,18 +4,18 @@
 let r, i, a;
 require.d(exports, {
   EL: () => O,
-  JK: () => v,
+  JK: () => A,
   MX: () => N,
-  PR: () => S,
+  PR: () => I,
   SB: () => C,
   TX: () => g,
-  UC: () => I,
+  UC: () => S,
   aX: () => R,
-  bG: () => A,
+  bG: () => v,
   m: () => T,
-  pX: () => b,
+  pX: () => y,
   sY: () => w,
-  uh: () => y
+  uh: () => b
 }), require("./321073.js"), require("./896048.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js"), require("./747238.js"), require("./457529.js"), require("./812715.js");
 var Chunk830845 = require("./830845.js"),
   Chunk626584 = require("./626584.js"),
@@ -66,7 +66,7 @@ function E(e, t) {
   return !!("string" == typeof e && _.some(t => e.startsWith(t))) && (p.log("".concat(t, " - route to external path ").concat(e)), window.dispatchEvent(new Event("beforeunload")), window.location[t](e), true)
 }
 
-function b(e, t) {
+function y(e, t) {
   if (E(e, "assign")) return;
   p.log("transitionTo - Transitioning to ".concat(e));
   let n = null == t ? true : t.source;
@@ -84,31 +84,31 @@ function b(e, t) {
   i = n, a = s
 }
 
-function y(e, t, n, r) {
+function b(e, t, n, r) {
   p.log("transitionToGuild - Transitioning to ".concat(JSON.stringify({
     guildId: e,
     channelId: t,
     messageId: n
-  }))), b(u.BVt.CHANNEL(e, t, n), r)
+  }))), y(u.BVt.CHANNEL(e, t, n), r)
 }
 
 function O() {
   return null != i && c.n.has(i)
 }
 
-function A(e, t, n) {
+function v(e, t, n) {
   E(e, "replace") || (p.log("Replacing route with ".concat(e)), "string" == typeof e ? r.replace(e, t) : r.replace(e), i = n)
 }
 
-function v() {
+function A() {
   return r
 }
 
-function S() {
+function I() {
   return i
 }
 
-function I() {
+function S() {
   return a
 }
 

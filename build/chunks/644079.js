@@ -4,7 +4,7 @@
 require.d(exports, {
   Wb: () => _,
   Xz: () => E,
-  yz: () => y
+  yz: () => b
 }), require("./747238.js"), require("./812715.js"), require("./733351.js"), require("./321073.js"), require("./638769.js"), require("./896048.js"), require("./65821.js");
 var Chunk989349 = require("./989349.js"),
   i = require.n(Chunk989349),
@@ -36,8 +36,8 @@ let o = /^[0]+/,
   m = 15,
   g = "LT",
   E = (e, t) => e.clone().hours(t.hour()).minutes(t.minutes()).seconds(0),
-  b = (e, t) => e.value.unix() - t.value.unix();
-class y {
+  y = (e, t) => e.value.unix() - t.value.unix();
+class b {
   lookupByValue(e) {
     if (null == e) return;
     let t = E(h, e);
@@ -72,7 +72,7 @@ class y {
       id: t.toISOString(),
       label: n,
       value: t
-    }), this.options.sort(b), e
+    }), this.options.sort(y), e
   }
   _guessOptions(e) {
     let t = [];
@@ -97,7 +97,7 @@ class y {
       let e = [...this.options];
       return t.forEach(t => {
         null == this.lookupByValue(t) && e.push(this._createNewOption(t))
-      }), e.sort(b), e
+      }), e.sort(y), e
     }
   }
   selectValue(e) {

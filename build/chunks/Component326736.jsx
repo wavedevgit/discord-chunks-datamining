@@ -2,7 +2,7 @@
 /** chunk id: 326736, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk180022 = require("./180022.jsx"),
   Chunk128906 = require("./128906.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,13 +38,13 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,12 +55,12 @@ function A(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = e => {
+let I = e => {
     let {
       showAllPerksButton: t,
       leftAlignHeaders: n,
@@ -69,31 +69,31 @@ let S = e => {
     } = e, s = (0, r.jsx)(l.Heading, {
       variant: "heading-xxl/extrabold",
       color: "text-strong",
-      className: null != a ? a : b.R_,
+      className: null != a ? a : y.R_,
       children: i
     });
     return null == t ? s : n ? (0, r.jsxs)("div", {
-      className: b.bV,
+      className: y.bV,
       children: [s, null != t && (0, r.jsx)("div", {
-        className: b.W0,
+        className: y.W0,
         children: t
       })]
     }) : (0, r.jsx)("div", {
-      className: b.kL,
+      className: y.kL,
       children: (0, r.jsx)("div", {
-        className: b.pr,
+        className: y.pr,
         children: s
       })
     })
   },
-  I = e => {
+  S = e => {
     let {
       className: t,
       variant: n,
       noBackground: a = false,
-      leftAlignHeaders: y = false,
-      showAllPerksButton: A,
-      headerClassname: I
+      leftAlignHeaders: b = false,
+      showAllPerksButton: v,
+      headerClassname: S
     } = e, T = i.useRef(null), C = n === m.cJ.WHATS_NEW, N = (0, o.bG)([u.default], () => u.default.getCurrentUser()), R = (0, _.E)();
     i.useEffect(() => {
       C && R()
@@ -123,33 +123,33 @@ let S = e => {
       U = k.some(e => null != e.pillText);
     return (0, r.jsxs)("div", {
       ref: T,
-      className: s()(b.uW, {
-        [b.qO]: !y,
-        [b.Uv]: y
+      className: s()(y.uW, {
+        [y.qO]: !b,
+        [y.Uv]: b
       }, t),
-      children: [(0, r.jsx)(S, {
-        showAllPerksButton: A,
-        leftAlignHeaders: y,
+      children: [(0, r.jsx)(I, {
+        showAllPerksButton: v,
+        leftAlignHeaders: b,
         title: w.title,
-        headerClassname: I
+        headerClassname: S
       }), (0, r.jsx)(l.Text, {
         variant: "text-lg/normal",
         color: "text-strong",
-        className: s()(b.VA, {
-          [b.VA]: null == A || y,
-          [b.Xx]: null != A && !y,
-          [b.Ij]: C || y,
-          [b.Ob]: U,
-          [b.dO]: y,
-          [b.br]: !y
+        className: s()(y.VA, {
+          [y.VA]: null == v || b,
+          [y.Xx]: null != v && !b,
+          [y.Ij]: C || b,
+          [y.Ob]: U,
+          [y.dO]: b,
+          [y.br]: !b
         }),
         children: w.subtitle
-      }), !y && null != A && (0, r.jsx)("div", {
-        className: b.xk,
-        children: A
+      }), !b && null != v && (0, r.jsx)("div", {
+        className: y.xk,
+        children: v
       }), (0, r.jsx)("div", {
-        className: b.Ui,
-        children: k.map((e, t) => (0, r.jsx)(E.A, v(O({}, e), {
+        className: y.Ui,
+        children: k.map((e, t) => (0, r.jsx)(E.A, A(O({}, e), {
           forceShadow: a
         }), "".concat(e.name, "_").concat(t)))
       })]

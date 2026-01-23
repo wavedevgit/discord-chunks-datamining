@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ay: () => O,
-  CG: () => y,
+  CG: () => b,
   J$: () => E
 });
 var Chunk627968 = require("./627968.js");
@@ -53,13 +53,13 @@ function E(e) {
     style: {
       background: i
     }
-  }) : (0, r.jsx)(b, {
+  }) : (0, r.jsx)(y, {
     profile: t,
     className: n
   })
 }
 
-function b(e) {
+function y(e) {
   var t;
   let {
     profile: n,
@@ -77,7 +77,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     profile: t,
     onIconChange: i
@@ -168,7 +168,7 @@ function O(e) {
     className: a()(h.kL, i),
     children: [(0, r.jsx)(E, {
       profile: t
-    }), (0, r.jsx)(y, {
+    }), (0, r.jsx)(b, {
       onIconChange: n,
       profile: t
     }), (0, r.jsx)(f.A, {

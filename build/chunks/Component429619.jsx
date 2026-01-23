@@ -25,19 +25,19 @@ let m = () => {
     asset: m,
     popoutAsset: g,
     title: E,
-    body: b,
-    version: y,
+    body: y,
+    version: b,
     revertTextColor: O
-  } = (0, d.M)(), A = i.useContext(l.gl), v = null != (e = null == A ? true : A.navigateWithValidation) ? e : e => e();
+  } = (0, d.M)(), v = i.useContext(l.gl), A = null != (e = null == v ? true : v.navigateWithValidation) ? e : e => e();
   i.useEffect(() => {
     c.default.track(f.HAw.PREMIUM_UPSELL_VIEWED, {
       type: p.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
       location_stack: t,
-      version: y
+      version: b
     })
-  }, [t, y]);
-  let S = () => {
-    v(() => (0, u.Cz)({
+  }, [t, b]);
+  let I = () => {
+    A(() => (0, u.Cz)({
       analyticsLocations: t,
       analyticsSource: s.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
     }))
@@ -67,10 +67,10 @@ let m = () => {
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: O ? "text-overlay-dark" : "currentColor",
-        children: b
+        children: y
       })]
     }), (0, r.jsx)(a.Button, {
-      onClick: S,
+      onClick: I,
       variant: "overlay-primary",
       text: _.intl.string(_.t.fYfGgK)
     })]

@@ -2,7 +2,7 @@
 /** chunk id: 834730, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E: () => b
+  E: () => y
 }), require("./446912.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -73,7 +73,7 @@ function g(e, t) {
   return i
 }
 let E = Object.fromEntries(Object.keys(Chunk827734.A.colors).map(e => [l()(e), e])),
-  b = Chunk64700.forwardRef(function(e, t) {
+  y = Chunk64700.forwardRef(function(e, t) {
     let n, [i, ...a] = [e, t],
       {
         variant: o,
@@ -81,19 +81,19 @@ let E = Object.fromEntries(Object.keys(Chunk827734.A.colors).map(e => [l()(e), e
         selectable: f = false,
         className: _,
         lineClamp: g,
-        color: b,
-        tabularNumbers: y = false,
+        color: y,
+        tabularNumbers: b = false,
         scaleFontToUserSetting: O = false
       } = i,
-      A = m(i, ["variant", "tag", "selectable", "className", "lineClamp", "color", "tabularNumbers", "scaleFontToUserSetting"]),
-      [v] = a,
-      S = l,
-      I = "",
+      v = m(i, ["variant", "tag", "selectable", "className", "lineClamp", "color", "tabularNumbers", "scaleFontToUserSetting"]),
+      [A] = a,
+      I = l,
+      S = "",
       T = {};
-    if (null != g && (1 === g ? I = u.DN : (I = u.ED, T = {
+    if (null != g && (1 === g ? S = u.DN : (S = u.ED, T = {
         lineClamp: g,
         WebkitLineClamp: g
-      })), true !== b) switch (b) {
+      })), true !== y) switch (y) {
       case "currentColor":
         n = "currentColor";
         break;
@@ -105,20 +105,20 @@ let E = Object.fromEntries(Object.keys(Chunk827734.A.colors).map(e => [l()(e), e
         break;
       default:
         var C;
-        n = null == (C = c.A.colors[E[b]]) ? true : C.css
+        n = null == (C = c.A.colors[E[y]]) ? true : C.css
     }
     let N = p({
       color: n
-    }, T, A.style);
-    return (0, r.jsx)(S, h(p({
-      ref: v,
+    }, T, v.style);
+    return (0, r.jsx)(I, h(p({
+      ref: A,
       className: s()({
-        [u.fT]: true === b,
+        [u.fT]: true === y,
         [u.rb]: f,
-        [u.w9]: y,
+        [u.w9]: b,
         [d.fontScaling]: O
-      }, I, d[o], _)
-    }, A), {
+      }, S, d[o], _)
+    }, v), {
       style: Object.values(N).filter(Boolean).length > 0 ? N : true,
       "data-text-variant": o
     }))

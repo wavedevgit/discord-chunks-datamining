@@ -28,19 +28,19 @@ let f = 5,
   g = new Map,
   E = 0;
 
-function b(e) {
+function y(e) {
   return e.replace(/[^\w\s]|\b\d+\b/g, "")
 }
 
-function y(e) {
-  return b(e).replace(/(https?:\/\/[^\s]+|ftp:\/\/[^\s]+|www\.[^\s]+|[^\s]*\.[a-z]{2,}\/[^\s]*|[^\s]*\.(?:com|org|net)[^\s]*|<a?:(\w+):(\d+)>|<@(?:!|&)?\d+>)/g, "").split(/\s+/)
+function b(e) {
+  return y(e).replace(/(https?:\/\/[^\s]+|ftp:\/\/[^\s]+|www\.[^\s]+|[^\s]*\.[a-z]{2,}\/[^\s]*|[^\s]*\.(?:com|org|net)[^\s]*|<a?:(\w+):(\d+)>|<@(?:!|&)?\d+>)/g, "").split(/\s+/)
 }
 
 function O(e) {
   return Array.from(e.entries()).sort((e, t) => t[1] - e[1])
 }
 
-function A(e, t) {
+function v(e, t) {
   if (e.size <= t) return;
   let n = O(e);
   e.clear();
@@ -50,28 +50,28 @@ function A(e, t) {
   }
 }
 
-function v() {
+function A() {
   let e = 1e3,
     t = 5e3,
     n = .05;
   return E < 1e3 || Math.random() < (1 - n) * Math.max(0, 1 - (E - e) / (t - e)) + n
 }
 
-function S(e) {
+function I(e) {
   null == r && (r = l.M.createEstimate(_, h));
   let t = false;
   for (let n of e)
-    if (v())
-      for (let e of y(n.content.toLowerCase())) {
+    if (A())
+      for (let e of b(n.content.toLowerCase())) {
         if (0 === e.length || e.length > f) continue;
         r.update(e);
         let n = r.query(e);
         g.set(e, n), n > E && (E = n), t = true
       }
-  A(g, p), t && D.emitChange()
+  v(g, p), t && D.emitChange()
 }
 
-function I() {
+function S() {
   let e = u.R.getCurrentConfig({
       location: "WordFrequencyStore"
     }, {
@@ -95,8 +95,8 @@ let C = () => {
 };
 
 function N(e) {
-  return I() ? (requestIdleCallback(() => {
-    S(e)
+  return S() ? (requestIdleCallback(() => {
+    I(e)
   }), false) : !!T() && g.size > 0 && (C(), true)
 }
 let R = e => {

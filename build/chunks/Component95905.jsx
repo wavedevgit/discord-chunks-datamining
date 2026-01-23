@@ -13,15 +13,15 @@ let s = e => {
   var t, n;
   let {
     message: s,
-    originalAuthor: c,
-    channel: o
-  } = e, d = (0, a.d8)(c, o), u = null != (t = null != (n = null == d ? true : d.nick) ? n : null == c ? true : c.username) ? t : "", m = (0, i.P)({
-    user: null != c ? c : true,
-    channelId: o.id,
-    guildId: o.guild_id,
+    originalAuthor: o,
+    channel: c
+  } = e, d = (0, i.d8)(o, c), u = null != (t = null != (n = null == d ? true : d.nick) ? n : null == o ? true : o.username) ? t : "", m = (0, a.P)({
+    user: null != o ? o : true,
+    channelId: c.id,
+    guildId: c.guild_id,
     messageId: null == s ? true : s.id,
     stopPropagation: true
-  })(null != d ? d : true)(u, o.id);
+  })(null != d ? d : true)(u, c.id);
   return (0, l.jsx)(r.Text, {
     variant: "text-md/semibold",
     children: m

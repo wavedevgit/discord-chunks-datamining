@@ -33,12 +33,12 @@ function u(e) {
     image: g,
     canAnimate: m,
     size: u
-  }) : true, b = true !== p ? p : E, y = (0, i.bG)([o.Ay], () => null != n && null != t ? o.Ay.getMember(n, t.id) : null);
+  }) : true, y = true !== p ? p : E, b = (0, i.bG)([o.Ay], () => null != n && null != t ? o.Ay.getMember(n, t.id) : null);
   return {
-    avatarSrc: r.useMemo(() => null != t ? (0, a.sv)(b, y, t, {
+    avatarSrc: r.useMemo(() => null != t ? (0, a.sv)(y, b, t, {
       canAnimate: m,
       size: u
-    }) : true, [b, y, t, m, u]),
+    }) : true, [y, b, t, m, u]),
     isAvatarAnimating: m,
     eventHandlers: {
       onMouseEnter: _,

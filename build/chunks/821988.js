@@ -2,7 +2,7 @@
 /** chunk id: 821988, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  p6: () => y
+  p6: () => b
 }), require("./321073.js"), require("./228524.js"), require("./284009.js");
 var Chunk989349 = require("./989349.js"),
   i = require.n(Chunk989349),
@@ -103,7 +103,7 @@ let g = (e, t) => m({
     }
     return n
   },
-  b = (e, t) => {
+  y = (e, t) => {
     let {
       timestamp: n,
       colors: r,
@@ -166,7 +166,7 @@ let g = (e, t) => m({
       maxWidth: 260
     })
   },
-  y = async e => {
+  b = async e => {
     let {
       applicationImageSrc: t,
       entry: n,
@@ -178,7 +178,7 @@ let g = (e, t) => m({
     } = e, u = n.extra.game_name, d = g(r, t);
     return await (0, l.r)({
       assetsToLoad: d,
-      drawImage: e => b(e, {
+      drawImage: e => y(e, {
         timestamp: a,
         colors: s,
         description: i,

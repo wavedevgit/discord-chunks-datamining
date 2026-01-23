@@ -29,20 +29,20 @@ let h = e => {
       errorOnCancel: h,
       errorOnRedeem: g,
       setActiveStep: E,
-      activeStep: b
+      activeStep: y
     } = e, {
-      analyticsLocations: y
-    } = (0, s.Ay)(a.A.USER_SETTINGS), [O, A] = i.useState(m(b));
+      analyticsLocations: b
+    } = (0, s.Ay)(a.A.USER_SETTINGS), [O, v] = i.useState(m(y));
     return (0, i.useEffect)(() => {
-      A(m(b))
-    }, [b]), (0, r.jsx)(d.CancellationContext.Provider, {
+      v(m(y))
+    }, [y]), (0, r.jsx)(d.CancellationContext.Provider, {
       value: {
         setStep: E,
         premiumType: l,
         onClose: n,
         transitionState: t,
         premiumSubscription: o,
-        analyticsLocations: y,
+        analyticsLocations: b,
         analyticsLocation: _.ThZ.USER_SETTINGS,
         confettiCanvas: null,
         churnUserDiscountOffer: c,

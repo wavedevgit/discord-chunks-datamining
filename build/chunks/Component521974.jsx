@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  i = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk488995 = require("./488995.js"),
   Chunk510000 = require("./510000.js");
@@ -15,39 +15,39 @@ function d(e) {
   let {
     state: t,
     query: n,
-    placeholder: r,
+    placeholder: i,
     onTextChange: d,
     onCollapsedClick: u,
     onClear: p,
     onBlur: h,
     onSubmit: m
-  } = e, b = a.useRef(null), f = a.useCallback(e => {
+  } = e, g = l.useRef(null), _ = l.useCallback(e => {
     "Enter" === e.key && m()
-  }, [m]), g = a.useCallback(() => {
+  }, [m]), b = l.useCallback(() => {
     u(), setTimeout(() => {
       var e;
-      return null == (e = b.current) ? true : e.focus()
+      return null == (e = g.current) ? true : e.focus()
     })
   }, [u]);
-  return t === c.GlobalDiscoverySearchBarState.COLLAPSED ? (0, l.jsx)(s.DUT, {
-    className: o.qc,
-    onClick: g,
-    children: (0, l.jsx)(s.$p$, {
+  return t === o.GlobalDiscoverySearchBarState.COLLAPSED ? (0, r.jsx)(s.DUT, {
+    className: c.qc,
+    onClick: b,
+    children: (0, r.jsx)(s.$p$, {
       size: "sm",
       color: s.LU0.colors.ICON_STRONG
     })
-  }) : (0, l.jsx)("div", {
-    className: i()(o.ON, {
-      [o.Nz]: t === c.GlobalDiscoverySearchBarState.FLOATING
+  }) : (0, r.jsx)("div", {
+    className: a()(c.ON, {
+      [c.Nz]: t === o.GlobalDiscoverySearchBarState.FLOATING
     }),
-    children: (0, l.jsx)(s.IWV, {
+    children: (0, r.jsx)(s.IWV, {
       size: "sm",
-      ref: b,
+      ref: g,
       query: n,
-      placeholder: r,
+      placeholder: i,
       onChange: d,
       onClear: p,
-      onKeyDown: f,
+      onKeyDown: _,
       onBlur: h
     })
   })

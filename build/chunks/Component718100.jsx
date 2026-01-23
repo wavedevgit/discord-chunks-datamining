@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk898461 = require("./898461.js"),
   Chunk483968 = require("./483968.jsx"),
@@ -18,7 +18,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk606586 = require("./606586.js");
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -37,7 +37,7 @@ function A(e) {
   return e
 }
 
-function h(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -67,17 +67,17 @@ function f(e, t) {
     for (l = 0, r = Object.getOwnPropertySymbols(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let v = () => 80,
-  y = e => {
+let y = () => 80,
+  _ = e => {
     let {
       children: t,
       className: r,
       onSelect: l,
       isSelected: i = false
-    } = e, c = f(e, ["children", "className", "onSelect", "isSelected"]);
-    return (0, n.jsx)(s.DUT, h(A({
-      className: a()(b.eA, i ? b.wH : true, r)
-    }, c), {
+    } = e, o = f(e, ["children", "className", "onSelect", "isSelected"]);
+    return (0, n.jsx)(a.DUT, A(v({
+      className: s()(h.eA, i ? h.wH : true, r)
+    }, o), {
       onClick: l,
       children: t
     }))
@@ -87,32 +87,32 @@ let v = () => 80,
       user: t,
       avatarDecoration: r,
       innerRef: i,
-      section: a,
-      canUsePremiumCollectibles: s,
-      isSelected: c = false
+      section: s,
+      canUsePremiumCollectibles: a,
+      isSelected: o = false
     } = e, d = f(e, ["user", "avatarDecoration", "innerRef", "section", "canUsePremiumCollectibles", "isSelected"]), m = l.useRef(null), {
       isHoveringOrFocusing: g
     } = (0, u.A)(null != i ? i : m), {
-      avatarDecorationSrc: v
+      avatarDecorationSrc: y
     } = (0, x.A)({
       user: t,
       avatarDecorationOverride: r,
       size: 80,
       onlyAnimateOnHoverOrFocus: !g
     });
-    return (0, n.jsxs)(y, h(A({
+    return (0, n.jsxs)(_, A(v({
       innerRef: null != i ? i : m,
-      isSelected: c
+      isSelected: o
     }, d), {
       children: [(0, n.jsx)("img", {
-        className: b.Pw,
-        src: v,
+        className: h.Pw,
+        src: y,
         alt: r.label
-      }), (0, n.jsx)(o.A, {
+      }), (0, n.jsx)(c.A, {
         skuId: r.skuId,
-        canUsePremiumCollectibles: s,
-        isPurchaseSection: a === p.wn.PURCHASE,
-        isPremiumSection: a === p.wn.PREMIUM_PURCHASE
+        canUsePremiumCollectibles: a,
+        isPurchaseSection: s === p.wn.PURCHASE,
+        isPremiumSection: s === p.wn.PREMIUM_PURCHASE
       })]
     }))
   },
@@ -122,12 +122,12 @@ let v = () => 80,
       guild: r,
       pendingAvatarDecoration: l,
       selectedAvatarDecorationRef: i,
-      onSelect: a,
-      onOpenShop: o
+      onSelect: s,
+      onOpenShop: c
     } = e, u = (0, p.Ay)(), x = d.Ay.canUseCollectibles(t);
-    return (0, n.jsx)(s.a0_, {
+    return (0, n.jsx)(a.a0_, {
       fade: true,
-      className: b.p_,
+      className: h.p_,
       columns: 3,
       sections: u.map(e => {
         let {
@@ -140,51 +140,51 @@ let v = () => 80,
       paddingHorizontal: 12,
       paddingVertical: 0,
       removeEdgeItemGutters: true,
-      renderItem: (e, d, h, f) => {
+      renderItem: (e, d, A, f) => {
         let {
-          section: v,
+          section: y,
           items: O
-        } = u[e], _ = O[d];
-        if (_ === p.dP) return (0, n.jsxs)(y, {
-          style: A({}, h),
+        } = u[e], b = O[d];
+        if (b === p.dP) return (0, n.jsxs)(_, {
+          style: v({}, A),
           isSelected: null === l,
-          onSelect: () => a(null),
-          children: [(0, n.jsx)(s.KTN, {
+          onSelect: () => s(null),
+          children: [(0, n.jsx)(a.KTN, {
             size: "md",
             color: "currentColor",
-            className: b.Kk
-          }), (0, n.jsx)(s.Text, {
+            className: h.Kk
+          }), (0, n.jsx)(a.Text, {
             variant: "text-xs/normal",
             color: "text-strong",
             children: (0, m.uZ)(t, r) ? g.intl.string(g.t.CHf9iJ) : g.intl.string(g.t.PoWNfe)
           })]
         }, f);
-        if (_ === p.ZK) return (0, n.jsxs)(y, {
-          style: h,
-          onSelect: o,
-          children: [(0, n.jsx)(s.U1X, {
+        if (b === p.ZK) return (0, n.jsxs)(_, {
+          style: A,
+          onSelect: c,
+          children: [(0, n.jsx)(a.U1X, {
             size: "custom",
             width: 23,
             height: 23,
             color: "currentColor",
-            className: b.sV
-          }), (0, n.jsx)(s.Text, {
+            className: h.sV
+          }), (0, n.jsx)(a.Text, {
             variant: "text-xs/normal",
             color: "text-strong",
             children: g.intl.string(g.t.pWG4ze)
           })]
         }, f);
-        if ((0, c.T)(_)) {
-          let e = (null == l ? true : l.skuId) === _.skuId;
+        if ((0, o.T)(b)) {
+          let e = (null == l ? true : l.skuId) === b.skuId;
           return (0, n.jsx)(j, {
-            style: A({}, h),
+            style: v({}, A),
             user: t,
-            avatarDecoration: _,
-            section: v,
+            avatarDecoration: b,
+            section: y,
             innerRef: e ? i : true,
             canUsePremiumCollectibles: x,
             isSelected: e,
-            onSelect: () => a(_)
+            onSelect: () => s(b)
           }, f)
         }
         return null
@@ -194,11 +194,11 @@ let v = () => 80,
           header: r
         } = u[e];
         return (0, n.jsx)("div", {
-          className: b.so,
-          style: h(A({}, t), {
+          className: h.so,
+          style: A(v({}, t), {
             position: "absolute"
           }),
-          children: (0, n.jsx)(s.Text, {
+          children: (0, n.jsx)(a.Text, {
             variant: "text-md/medium",
             children: r
           })
@@ -206,6 +206,6 @@ let v = () => 80,
       },
       getSectionHeight: e => u[e].height,
       getItemKey: (e, t) => u[e].items[t].skuId,
-      getItemHeight: v
+      getItemHeight: y
     })
   }

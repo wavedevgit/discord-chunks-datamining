@@ -29,13 +29,13 @@ function a(e, t) {
       scrollMarginBottom: g,
       scrollMarginLeft: E
     } = getComputedStyle(t),
-    b = o + parseInt(u, 10),
-    y = l + parseInt(c, 10),
-    O = b + e.clientWidth,
-    A = y + e.clientHeight,
-    v = parseInt(d, 10) || 0,
-    S = parseInt(p, 10) || 0,
-    I = parseInt(f, 10) || 0,
+    y = o + parseInt(u, 10),
+    b = l + parseInt(c, 10),
+    O = y + e.clientWidth,
+    v = b + e.clientHeight,
+    A = parseInt(d, 10) || 0,
+    I = parseInt(p, 10) || 0,
+    S = parseInt(f, 10) || 0,
     T = parseInt(_, 10) || 0,
     C = parseInt(h, 10) || 0,
     N = parseInt(g, 10) || 0,
@@ -45,10 +45,10 @@ function a(e, t) {
     D = r - C,
     x = r + a + N,
     L = o + parseInt(u, 10) + T,
-    j = O - I,
-    M = l + parseInt(c, 10) + v,
-    k = A - S;
-  (w > L || P < j) && (w <= o + T ? o = w - parseInt(u, 10) - T : P > O - I && (o += P - O + I)), (D > M || x < k) && (D <= y + v ? l = D - parseInt(c, 10) - v : x > A - S && (l += x - A + S)), e.scrollTo({
+    j = O - S,
+    M = l + parseInt(c, 10) + A,
+    k = v - I;
+  (w > L || P < j) && (w <= o + T ? o = w - parseInt(u, 10) - T : P > O - S && (o += P - O + S)), (D > M || x < k) && (D <= b + A ? l = D - parseInt(c, 10) - A : x > v - I && (l += x - v + I)), e.scrollTo({
     left: o,
     top: l
   })

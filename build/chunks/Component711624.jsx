@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => T,
-  p: () => I
+  p: () => S
 }), require("./65821.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -24,7 +24,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk333354 = require("./333354.js"),
   Chunk195450 = require("./195450.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,13 +40,13 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,13 +57,13 @@ function A(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e) {
+function I(e) {
   switch (e) {
     case h.TVA.TIER_3:
       return h.AnalyticsObjectTypes.TIER_3;
@@ -75,7 +75,7 @@ function S(e) {
       throw Error("Unsupported Boosting tier: ".concat(e))
   }
 }
-let I = {
+let S = {
     [Chunk652215.TVA.NONE]: 0,
     [Chunk652215.TVA.TIER_1]: 1 / 3,
     [Chunk652215.TVA.TIER_2]: 2 / 3,
@@ -86,22 +86,22 @@ let I = {
       children: t,
       confettiTriggerRef: n,
       guild: i,
-      isProgressBarAnimationComplete: y,
-      setConfettiCount: A,
+      isProgressBarAnimationComplete: b,
+      setConfettiCount: v,
       setShouldFireConfetti: T,
       tier: C,
       tierMarkerAnimationPosition: N,
       totalAvailableBoostsCount: R
     } = e, {
       analyticsLocations: w
-    } = (0, c.Ay)(), P = (0, u.A)(), D = h.M2T[C], x = D - R, L = C <= N || y, j = L && C <= i.premiumTier, M = L && C < i.premiumTier, k = L && C === i.premiumTier, U = i.premiumTier < C && R >= D, {
+    } = (0, c.Ay)(), P = (0, u.A)(), D = h.M2T[C], x = D - R, L = C <= N || b, j = L && C <= i.premiumTier, M = L && C < i.premiumTier, k = L && C === i.premiumTier, U = i.premiumTier < C && R >= D, {
       scaleFactor: G
     } = (0, l.zhh)({
       from: {
         scaleFactor: 0
       },
       to: {
-        scaleFactor: N >= C || y && N + 1 === C || y && false === N && C === h.TVA.NONE ? 1 : 0
+        scaleFactor: N >= C || b && N + 1 === C || b && false === N && C === h.TVA.NONE ? 1 : 0
       },
       config: {
         tension: 360,
@@ -109,18 +109,18 @@ let I = {
       }
     }), V = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.animated.div, {
-        className: b.sO,
+        className: y.sO,
         style: {
           transform: G.to(e => "translate(-50%, -50%) scale(".concat(e, ")"))
         }
       }), C !== h.TVA.NONE ? U ? (0, r.jsx)(l.x8N, {
-        className: a()(b.Wo, b.GV),
+        className: a()(y.Wo, y.GV),
         size: "xxs",
         color: "currentColor"
       }) : (0, r.jsx)(d.A, {
         tier: C,
         color: "currentColor",
-        className: b.Wo
+        className: y.Wo
       }) : true]
     });
 
@@ -131,7 +131,7 @@ let I = {
           page: h.liQ.PREMIUM_GUILD_USER_MODAL,
           section: h.JJy.PREMIUM_GUILD_USER_MODAL_PROGRESS_BAR,
           object: h.ZSU.SUBSCRIBE_TO_TIER_BUTTON,
-          objectType: S(C)
+          objectType: I(C)
         },
         numberOfBoostsToAdd: x,
         guild: i
@@ -156,31 +156,31 @@ let I = {
           useLevels: false
         })
       }),
-      K = (0, r.jsxs)(H, v(O({
-        className: a()(b.Ll, {
-          [b.kZ]: j,
-          [b.ng]: B,
-          [b.uZ]: M,
-          [b.Ue]: k
+      K = (0, r.jsxs)(H, A(O({
+        className: a()(y.Ll, {
+          [y.kZ]: j,
+          [y.ng]: B,
+          [y.uZ]: M,
+          [y.Ue]: k
         }),
         style: {
-          left: "".concat(100 * I[C], "%")
+          left: "".concat(100 * S[C], "%")
         }
       }, Y), {
         children: [!j && (0, r.jsx)("div", {
-          className: b.cj
+          className: y.cj
         }), j && C === h.TVA.TIER_3 ? (0, r.jsx)(_.H, {
           confettiTriggerRef: n,
-          setConfettiCount: A,
+          setConfettiCount: v,
           setShouldFireConfetti: T,
           children: V
         }) : V, (0, r.jsxs)(l.Text, {
-          className: b.Td,
+          className: y.Td,
           variant: "text-md/normal",
           children: [j && C !== h.TVA.NONE && (0, r.jsx)(l.A9s, {
             size: "md",
             color: "currentColor",
-            className: b.ZI
+            className: y.ZI
           }), t]
         })]
       }));

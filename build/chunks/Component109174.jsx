@@ -14,8 +14,8 @@ function s(e) {
     children: n
   } = e;
   return (0, i.jsxs)("div", {
-    className: r.k,
-    children: [(0, i.jsx)(a.r, {
+    className: a.k,
+    children: [(0, i.jsx)(r.r, {
       rewardName: t
     }), n]
   })

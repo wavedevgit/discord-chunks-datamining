@@ -26,13 +26,13 @@ function h(e) {
     onSelect: m,
     analyticsSource: g,
     suppressPlaySound: E,
-    shouldValidateSelectedSound: b,
-    shouldShowUpsell: y = true,
+    shouldValidateSelectedSound: y,
+    shouldShowUpsell: b = true,
     gridNotice: O,
-    inExpressionPicker: A,
-    soundButtonOverlay: v,
-    listPadding: S,
-    renderHeader: I,
+    inExpressionPicker: v,
+    soundButtonOverlay: A,
+    listPadding: I,
+    renderHeader: S,
     defaultSoundsOnly: T
   } = e, {
     fetching: C,
@@ -45,29 +45,29 @@ function h(e) {
   return i.useEffect(() => {
     N()
   }, [N]), i.useEffect(() => {
-    A || (0, u.Ri)("")
-  }, [A]), (0, r.jsx)(c.f5, {
+    v || (0, u.Ri)("")
+  }, [v]), (0, r.jsx)(c.f5, {
     value: w,
     children: (0, r.jsx)(o.lGe, {
       className: s()(_.Nz, {
         [_.Bg]: C,
-        [_.yV]: A
+        [_.yV]: v
       }),
       children: C ? (0, r.jsx)(o.y$y, {}) : (0, r.jsx)(p.A, {
         guildId: t,
         channel: n,
         onClose: h,
         onSelect: m,
-        shouldValidateSelectedSound: b,
+        shouldValidateSelectedSound: y,
         containerWidth: a,
         suppressPlaySound: E,
-        shouldShowUpsell: y,
+        shouldShowUpsell: b,
         gridNotice: O,
-        soundButtonOverlay: v,
-        listPadding: S,
-        renderHeader: I,
+        soundButtonOverlay: A,
+        listPadding: I,
+        renderHeader: S,
         defaultSoundsOnly: T,
-        inExpressionPicker: A,
+        inExpressionPicker: v,
         analyticsSource: g,
         enablePickerUpsellPremiumBrandRefresh: R
       })

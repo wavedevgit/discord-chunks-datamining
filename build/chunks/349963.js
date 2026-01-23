@@ -25,15 +25,15 @@ var Chunk299855 = require("./299855.js"),
 function O() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
-  if (!(0, m.A)(d.A) || null != o.A.getCurrentUserActiveStream()) returnfalse;
-  let n = f.A.getVoiceChannelId(),
+  if (!(0, A.A)(d.A) || null != o.A.getCurrentUserActiveStream()) returnfalse;
+  let n = h.A.getVoiceChannelId(),
     r = c.A.getChannel(n);
   if (null == r) returnfalse;
   let O = r.getGuildId();
-  if (!(0, g.vz)(r, u.A, p.A, false)) returnfalse;
-  if (d.A.getUseSystemScreensharePicker())(0, A.isMac)() && i().satisfies(null === a.A || true === a.A ? true : a.A.os.release, E.WZ) ? (0, b.a)() : (0, b.a)("window");
+  if (!(0, m.vz)(r, u.A, p.A, false)) returnfalse;
+  if (d.A.getUseSystemScreensharePicker())(0, f.isMac)() && i().satisfies(null === a.A || true === a.A ? true : a.A.os.release, E.WZ) ? (0, _.a)() : (0, _.a)("window");
   else {
-    let n = (0, _.A)(s.Ay, h.A);
+    let n = (0, b.A)(s.Ay, g.A);
     if (null == n || n.isLauncher && !e) returnfalse;
     (0, l.XI)(O, r.id, {
       pid: n.pid,

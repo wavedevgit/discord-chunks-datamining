@@ -46,7 +46,7 @@ let L = () => {
     var e, t;
     let {
       analyticsLocations: n
-    } = (0, f.Ay)(d.A.USER_SETTINGS), s = (0, a.bG)([p.A], () => p.A.isPreview), o = (null == (t = (0, b.V)()) || null == (e = t.subscription_trial) ? true : e.sku_id) === P.pe.TIER_2, c = (0, E.O)(), u = (0, O.U9)(c, P.pe.TIER_2), m = (0, C.dk)("UserSettingsAppearanceClientThemes"), g = () => {
+    } = (0, f.Ay)(d.A.USER_SETTINGS), s = (0, a.bG)([p.A], () => p.A.isPreview), o = (null == (t = (0, y.V)()) || null == (e = t.subscription_trial) ? true : e.sku_id) === P.pe.TIER_2, c = (0, E.O)(), u = (0, O.U9)(c, P.pe.TIER_2), m = (0, C.dk)("UserSettingsAppearanceClientThemes"), g = () => {
       if (!s || o) return null;
       let e = u ? D.intl.formatToPlainString(D.t.bkQ4bH, {
         percent: null == c ? true : c.discount.amount
@@ -57,7 +57,7 @@ let L = () => {
           variant: "secondary",
           text: D.intl.string(D.t["E+COuA"]),
           onClick: () => L()
-        }), (0, r.jsx)(y.A, {
+        }), (0, r.jsx)(b.A, {
           subscriptionTier: P.pe.TIER_2,
           defaultTextOverride: e,
           premiumModalAnalyticsLocation: {
@@ -69,12 +69,12 @@ let L = () => {
       })
     };
     i.useEffect(() => {
-      s && S.default.track(R.HAw.PREMIUM_UPSELL_VIEWED, {
+      s && I.default.track(R.HAw.PREMIUM_UPSELL_VIEWED, {
         type: P.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
         location_stack: n
       })
     }, [s, n]);
-    let v = o && s && (0, r.jsxs)("div", {
+    let A = o && s && (0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
           className: x.c7,
           children: (0, r.jsx)(l.Button, {
@@ -85,17 +85,17 @@ let L = () => {
           })
         }), (0, r.jsx)("div", {
           className: x.BU
-        }), (0, r.jsx)(A.Ay, {
+        }), (0, r.jsx)(v.Ay, {
           type: P.e.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
           subscriptionTier: P.pe.TIER_2
         })]
       }),
-      I = (() => {
+      S = (() => {
         let e = (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(h.Ay.Gradient, {
             disabled: false,
             renderCTAButtons: g
-          }), v]
+          }), A]
         });
         return s && (e = (0, r.jsx)("div", {
           className: x._$,
@@ -107,7 +107,7 @@ let L = () => {
         type: h.v0.SETTINGS,
         children: [(0, r.jsx)(h.Ay.Basic, {
           className: x.a6
-        }), (0, r.jsx)(M, {}), (0, r.jsx)(_.A, {}), I]
+        }), (0, r.jsx)(M, {}), (0, r.jsx)(_.A, {}), S]
       }), !m && (0, r.jsx)(l.cGx, {
         className: x.yF
       })]
@@ -115,13 +115,13 @@ let L = () => {
   };
 
 function M() {
-  let e = (0, v.qo)(),
+  let e = (0, A.qo)(),
     {
       theme: t,
       useForcedColors: n,
       gradientPreset: i
-    } = (0, a.cf)([I.A, u.A, p.A], () => ({
-      theme: I.A.theme,
+    } = (0, a.cf)([S.A, u.A, p.A], () => ({
+      theme: S.A.theme,
       useForcedColors: u.A.useForcedColors,
       gradientPreset: p.A.gradientPreset
     })),

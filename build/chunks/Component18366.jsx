@@ -1,12 +1,12 @@
 /** Chunk was on 20601 **/
-/** chunk id: 18366, original params: e,t,l (module,exports,require) **/
+/** chunk id: 18366, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => a
 }), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk397927 = require("./397927.js");
-let i = [{
+let s = [{
   position: 0,
   alpha: 0
 }, {
@@ -50,12 +50,12 @@ let i = [{
 function a(e) {
   let {
     className: t,
-    children: l,
+    children: n,
     containerRef: a,
     faderSize: o,
     faderEdgeThreshold: c
-  } = e, d = r.useRef(null), [u, f] = r.useState(0), [m, x] = r.useState(0), [b, h] = r.useState(0), v = r.useCallback(() => {
-    null != d.current && (f(d.current.getDistanceFromTop()), x(d.current.getDistanceFromBottom()), h(d.current.getScrollerState().offsetHeight))
+  } = e, u = r.useRef(null), [d, m] = r.useState(0), [f, x] = r.useState(0), [h, g] = r.useState(0), v = r.useCallback(() => {
+    null != u.current && (m(u.current.getDistanceFromTop()), x(u.current.getDistanceFromBottom()), g(u.current.getScrollerState().offsetHeight))
   }, []);
   r.useEffect(() => {
     if (v(), null == a.current) return;
@@ -65,40 +65,40 @@ function a(e) {
     return e.observe(a.current), () => {
       e.disconnect()
     }
-  }, [d, a, v]);
-  let g = r.useMemo(() => {
-    if (0 === u && 0 === m) return {};
+  }, [u, a, v]);
+  let j = r.useMemo(() => {
+    if (0 === d && 0 === f) return {};
     let e = [];
-    if (e.push("to bottom"), u > 0) {
-      let t = c > 0 ? 1 - Math.min(c, u) / c : 1;
-      for (let l = 0; l < i.length; l++) {
+    if (e.push("to bottom"), d > 0) {
+      let t = c > 0 ? 1 - Math.min(c, d) / c : 1;
+      for (let n = 0; n < s.length; n++) {
         let {
-          position: n,
+          position: l,
           alpha: r
-        } = i[l], s = (n * o).toFixed(2);
-        e.push("hsla(0, 0%, 0%, ".concat(t + r * (1 - t), ") ").concat(s, "px"))
+        } = s[n], i = (l * o).toFixed(2);
+        e.push("hsla(0, 0%, 0%, ".concat(t + r * (1 - t), ") ").concat(i, "px"))
       }
     }
-    if (m > 0) {
-      let t = b - o,
-        l = c > 0 ? 1 - Math.min(c, m) / c : 1;
-      for (let n = i.length - 1; n >= 0; n--) {
+    if (f > 0) {
+      let t = h - o,
+        n = c > 0 ? 1 - Math.min(c, f) / c : 1;
+      for (let l = s.length - 1; l >= 0; l--) {
         let {
           position: r,
-          alpha: s
-        } = i[n], a = (t + (1 - r) * o).toFixed(2);
-        e.push("hsla(0, 0%, 0%, ".concat(l + s * (1 - l), ") ").concat(a, "px"))
+          alpha: i
+        } = s[l], a = (t + (1 - r) * o).toFixed(2);
+        e.push("hsla(0, 0%, 0%, ".concat(n + i * (1 - n), ") ").concat(a, "px"))
       }
     }
     return {
       maskImage: "linear-gradient(".concat(e.join(","), ")")
     }
-  }, [m, u, c, o, b]);
-  return (0, n.jsx)(s.zCo, {
-    ref: d,
-    style: g,
+  }, [f, d, c, o, h]);
+  return (0, l.jsx)(i.zCo, {
+    ref: u,
+    style: j,
     className: t,
     onScroll: v,
-    children: l
+    children: n
   })
 }

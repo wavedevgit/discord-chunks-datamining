@@ -2,7 +2,7 @@
 /** chunk id: 991054, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./228524.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -41,7 +41,7 @@ function g(e) {
 }
 let E = 84;
 
-function b(e) {
+function y(e) {
   let {
     application: t,
     onSelect: n
@@ -77,7 +77,7 @@ function b(e) {
         rendersPlaceholder: true
       }), (0, r.jsx)(O, {
         application: t
-      }), (0, r.jsx)(y, {
+      }), (0, r.jsx)(b, {
         application: t
       })]
     }), (0, r.jsx)("ul", {
@@ -114,7 +114,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     application: t
   } = e, n = t.description;
@@ -122,7 +122,7 @@ function y(e) {
     className: p.wt,
     children: (0, r.jsx)("div", {
       className: p.bH,
-      children: null != n && n.length > 0 ? (0, r.jsx)(v, {
+      children: null != n && n.length > 0 ? (0, r.jsx)(A, {
         description: n
       }) : null
     })
@@ -149,9 +149,9 @@ function O(e) {
     }) : null]
   })
 }
-let A = 3;
+let v = 3;
 
-function v(e) {
+function A(e) {
   let {
     description: t
   } = e, [a, o] = i.useState(true);
@@ -166,7 +166,7 @@ function v(e) {
       ref: u,
       lineHeight: d,
       lineCount: h
-    } = S(),
+    } = I(),
     m = i.useMemo(() => {
       if (null == d || null == h) return {
         key: 0
@@ -174,35 +174,35 @@ function v(e) {
       let e = d * h;
       return {
         key: 1,
-        minHeightOverride: Math.min(e, A * d),
+        minHeightOverride: Math.min(e, v * d),
         maxHeightOverride: e
       }
     }, [h, d]),
     {
       ref: E,
-      isTransitioning: b,
-      onTransitionEnd: y
+      isTransitioning: y,
+      onTransitionEnd: b
     } = (0, c.A)(g({
       isExpanded: a
     }, m)),
-    O = a || b;
+    O = a || y;
   return (0, r.jsxs)("div", {
     className: p.iQ,
     children: [(0, r.jsx)("div", {
       ref: E,
       className: p.ZT,
-      onTransitionEnd: y,
+      onTransitionEnd: b,
       children: (0, r.jsx)(s.Text, {
         ref: u,
         className: _.PT,
         variant: "text-sm/medium",
-        lineClamp: O ? true : A,
+        lineClamp: O ? true : v,
         style: {
           maxHeight: O ? true : m.minHeightOverride
         },
         children: l
       })
-    }), null != h && h > A ? (0, r.jsxs)(s.DUT, {
+    }), null != h && h > v ? (0, r.jsxs)(s.DUT, {
       className: p.lP,
       onClick: () => o(e => !e),
       children: [(0, r.jsx)(s.Text, {
@@ -220,7 +220,7 @@ function v(e) {
   })
 }
 
-function S() {
+function I() {
   let e = i.useRef(null),
     [t, n] = i.useState(null),
     [r, a] = i.useState(null);

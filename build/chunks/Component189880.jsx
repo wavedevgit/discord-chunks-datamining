@@ -25,14 +25,14 @@ function E(e) {
     user: t,
     application: n,
     bot: E,
-    accountScopes: b,
-    showLogout: y,
+    accountScopes: y,
+    showLogout: b,
     location: O,
-    scopes: A
-  } = e, v = (0, p.i)(), S = u.Ay.getApplicationIconURL({
+    scopes: v
+  } = e, A = (0, p.i)(), I = u.Ay.getApplicationIconURL({
     id: n.id,
     icon: n.icon
-  }), I = u.Ay.getUserAvatarURL(t), T = i.useMemo(() => A.some(e => (0, f.RM)(e)) ? (0, r.jsxs)(r.Fragment, {
+  }), S = u.Ay.getUserAvatarURL(t), T = i.useMemo(() => v.some(e => (0, f.RM)(e)) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.E, {
       variant: "text-lg/normal",
       color: "text-default",
@@ -50,7 +50,7 @@ function E(e) {
         className: g.AO,
         verified: null != E.public_flags && (0, a.Lt)(E.public_flags, _.nhx.VERIFIED_BOT)
       }) : null]
-    }), b.length > 0 ? (0, r.jsx)(l.E, {
+    }), y.length > 0 ? (0, r.jsx)(l.E, {
       variant: "text-md/normal",
       color: "text-default",
       children: m.intl.string(m.t.jFbDnJ)
@@ -59,15 +59,15 @@ function E(e) {
       color: "text-default",
       children: m.intl.string(m.t["X+Fdpo"])
     })]
-  }), [b.length, n, E, A]);
+  }), [y.length, n, E, v]);
   return (0, r.jsxs)("header", {
-    id: v,
+    id: A,
     className: g.wx,
     children: [(0, r.jsxs)("div", {
       className: g.Y,
       children: [(0, r.jsx)(o.eu, {
         className: g.my,
-        src: S,
+        src: I,
         size: h._3.SIZE_80,
         "aria-label": n.name
       }), (0, r.jsxs)("div", {
@@ -81,11 +81,11 @@ function E(e) {
         })]
       }), (0, r.jsx)(o.eu, {
         className: g.my,
-        src: I,
+        src: S,
         size: h._3.SIZE_80,
         "aria-label": t.username
       })]
-    }), T, y ? (0, r.jsx)("div", {
+    }), T, b ? (0, r.jsx)("div", {
       className: g.Ny,
       children: (0, r.jsxs)(l.E, {
         variant: "text-sm/normal",

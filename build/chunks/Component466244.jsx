@@ -18,7 +18,7 @@ let c = () => n.e("44678").then(n.t.bind(n, 144759, 19)).then(e => {
   }),
   u = e => {
     var t, n;
-    let u = (0, a.GV)();
+    let u = (0, s.GV)();
     return (0, r.jsxs)(l.dWK, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -51,13 +51,13 @@ let c = () => n.e("44678").then(n.t.bind(n, 144759, 19)).then(e => {
             variant: "heading-lg/semibold",
             className: o.wx,
             id: u,
-            children: s.intl.format(s.t.z9qozJ, {
+            children: a.intl.format(a.t.z9qozJ, {
               guildName: e.guildName
             })
           }), (0, r.jsx)(i.Text, {
             variant: "text-sm/medium",
             color: "text-default",
-            children: s.intl.string(s.t.nwpqyc)
+            children: a.intl.string(a.t.nwpqyc)
           })]
         })
       }), (0, r.jsx)(l.H7u, {
@@ -66,7 +66,7 @@ let c = () => n.e("44678").then(n.t.bind(n, 144759, 19)).then(e => {
           onClick: () => {
             e.onAccept(), e.onClose()
           },
-          text: s.intl.string(s.t.NuzmOA)
+          text: a.intl.string(a.t.NuzmOA)
         }],
         actionsFullWidth: true
       })]

@@ -1,13 +1,13 @@
 /** Chunk was on 22477 **/
 /** chunk id: 480237, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => i
+  A: () => r
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk397927 = require("./397927.js");
 
-function i(e) {
+function r(e) {
   (0, l.mMO)(async () => {
     let {
       default: e

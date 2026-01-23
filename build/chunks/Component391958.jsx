@@ -19,37 +19,37 @@ function u(e) {
     maxWordCount: n,
     className: l,
     textAreaClassName: u,
-    subtitleText: f,
-    initialValue: g
-  } = e, b = i.useMemo(() => null != g ? g : [], [g]), {
-    value: m,
-    onChange: p,
-    errorMessage: x
-  } = (0, c.A)(t, g, n);
+    subtitleText: g,
+    initialValue: m
+  } = e, p = i.useMemo(() => null != m ? m : [], [m]), {
+    value: f,
+    onChange: b,
+    errorMessage: h
+  } = (0, o.A)(t, m, n);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: s()(d.Qn, l),
       children: [(0, r.jsx)(a.d4u, {
         className: s()(d.To, u),
-        value: m,
-        onChange: p,
-        placeholder: o.intl.string(o.t.UyaxJy)
+        value: f,
+        onChange: b,
+        placeholder: c.intl.string(c.t.UyaxJy)
       }), (0, r.jsx)(a.Text, {
         className: d.fE,
         variant: "text-xs/normal",
         color: "text-muted",
-        children: "".concat(b.length, " / ").concat(n)
+        children: "".concat(p.length, " / ").concat(n)
       })]
-    }), null != x ? (0, r.jsx)(a.Text, {
+    }), null != h ? (0, r.jsx)(a.Text, {
       className: s()(d.dG, d.kc),
       variant: "text-xs/medium",
       color: "text-feedback-critical",
-      children: x
+      children: h
     }) : (0, r.jsx)(a.Text, {
       className: d.dG,
       variant: "text-xs/normal",
       color: "text-default",
-      children: null != f ? f : o.intl.string(o.t.Gm6G5x)
+      children: null != g ? g : c.intl.string(c.t.Gm6G5x)
     })]
   })
 }

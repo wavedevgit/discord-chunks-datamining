@@ -106,7 +106,7 @@ function R(e) {
     windowKey: t,
     themeOverride: n,
     children: a
-  } = e, s = null != t, [c] = i.useState(() => v.Ay.getEnableHardwareAcceleration()), {
+  } = e, s = null != t, [c] = i.useState(() => A.Ay.getEnableHardwareAcceleration()), {
     locale: p,
     theme: E,
     focused: T,
@@ -121,13 +121,13 @@ function R(e) {
     useReducedMotion: M,
     alwaysShowLinkDecorations: k,
     highContrastMode: U
-  } = (0, l.cf)([y.default, d.A, O.A, b.A, A.A], () => {
+  } = (0, l.cf)([b.default, d.A, O.A, y.A, v.A], () => {
     var e;
     return {
-      locale: y.default.locale,
+      locale: b.default.locale,
       theme: null != n ? n : O.A.theme,
-      focused: s ? b.A.getWindowFocused(t) : A.A.isFocused(),
-      currentWindow: s && null != (e = b.A.getWindow(t)) ? e : window,
+      focused: s ? y.A.getWindowFocused(t) : v.A.isFocused(),
+      currentWindow: s && null != (e = y.A.getWindow(t)) ? e : window,
       fontScale: d.A.fontScale,
       fontScaleClass: d.A.fontScaleClass,
       keyboardModeEnabled: d.A.keyboardModeEnabled,
@@ -145,7 +145,7 @@ function R(e) {
     autoTrackExposure: true
   }).enabled, V = (0, h.A)(C, __OVERLAY__ || T), F = 0;
   1 !== D && (F = (0, u.yVx)(F, u.ofu.REDUCE_SATURATION_ENABLED));
-  let B = (0, S.C)(),
+  let B = (0, I.C)(),
     H = (0, m.qK)("RootThemeContextProvider"),
     Y = (0, m.k5)("RootThemeContextProvider"),
     W = (0, m.lV)("RootThemeContextProvider"),
@@ -164,7 +164,7 @@ function R(e) {
       flags: F,
       saturation: D,
       density: B,
-      children: (0, r.jsx)(I.fs, {
+      children: (0, r.jsx)(S.fs, {
         lang: p,
         theme: E,
         density: B,

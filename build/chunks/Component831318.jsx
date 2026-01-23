@@ -81,14 +81,14 @@ let m = e => {
     videoSrc: m,
     loopAt: g
   } = e, E = _(e, ["gradientColor", "title", "subtitle", "onClose", "onSecondaryClick", "videoSrc", "loopAt"]), {
-    subscribeButtonProps: b,
-    subscriptionTier: y
+    subscribeButtonProps: y,
+    subscriptionTier: b
   } = (0, s.$)({
     subscriptionTier: l.pe.TIER_2,
     defaultTextOverride: c.intl.string(c.t.pj0XBN)
   }), O = (0, o.A)(l.pe.TIER_2);
   return (0, r.jsx)(a.A, {
-    subscriptionTier: y,
+    subscriptionTier: b,
     children: e => {
       let {
         onClick: a
@@ -111,7 +111,7 @@ let m = e => {
           variant: "secondary",
           text: c.intl.string(c.t.ZnqyZ2),
           onClick: h
-        }, p(d({}, b), {
+        }, p(d({}, y), {
           onClick: a
         })]
       }, null != O && {

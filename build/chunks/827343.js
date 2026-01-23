@@ -24,7 +24,7 @@ var Chunk111956 = require("./111956.js"),
   Chunk257645 = require("./257645.js"),
   Chunk731854 = require("./731854.js");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,22 +33,22 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
-let S = new Chunk626584.A("AudioActionCreators");
+let I = new Chunk626584.A("AudioActionCreators");
 
-function I() {
-  (0, o.Ak)("mention3", true, true, true, y.a.VOICE)
+function S() {
+  (0, o.Ak)("mention3", true, true, true, b.a.VOICE)
 }
 
 function T() {
@@ -68,7 +68,7 @@ function C(e, t, n, r) {
     c = e[n],
     u = p.A.getMediaEngine().getAudioSubsystem(),
     _ = p.A.getMediaEngine().getAudioLayer();
-  g.default.track(b.HAw.MEDIA_DEVICE_CHANGED, {
+  g.default.track(y.HAw.MEDIA_DEVICE_CHANGED, {
     device_from_name: d.A.getCertifiedDeviceName(t, null != l ? l.name : ""),
     device_to_name: d.A.getCertifiedDeviceName(n, null != c ? c.name : ""),
     device_type: r,
@@ -81,7 +81,7 @@ function C(e, t, n, r) {
   })
 }
 let N = i()((e, t, n) => {
-    g.default.track(b.HAw.USER_VOLUME_SETTING_UPDATED, {
+    g.default.track(y.HAw.USER_VOLUME_SETTING_UPDATED, {
       target_user_id: e,
       context: t,
       volume: n,
@@ -115,7 +115,7 @@ let N = i()((e, t, n) => {
       return P() ? Promise.resolve() : (D({
         usedKeybind: r,
         location: s
-      }), i = i && !p.A.hasActiveCallKitCall(), (null == (e = m.default.getCurrentUser()) ? true : e.isStaff()) && S.info("Toggling self mute"), p.A.isEnabled()) ? a.h.dispatch({
+      }), i = i && !p.A.hasActiveCallKitCall(), (null == (e = m.default.getCurrentUser()) ? true : e.isStaff()) && I.info("Toggling self mute"), p.A.isEnabled()) ? a.h.dispatch({
         type: "AUDIO_TOGGLE_SELF_MUTE",
         context: t,
         syncRemote: n,
@@ -125,7 +125,7 @@ let N = i()((e, t, n) => {
     setSelfMute(e, t) {
       var n;
       let r = !(arguments.length > 2) || true === arguments[2] || arguments[2];
-      P() || (r = r && !p.A.hasActiveCallKitCall(), (null == (n = m.default.getCurrentUser()) ? true : n.isStaff()) && S.info("Setting self mute", t), a.h.dispatch({
+      P() || (r = r && !p.A.hasActiveCallKitCall(), (null == (n = m.default.getCurrentUser()) ? true : n.isStaff()) && I.info("Setting self mute", t), a.h.dispatch({
         type: "AUDIO_SET_SELF_MUTE",
         context: e,
         mute: t,
@@ -134,7 +134,7 @@ let N = i()((e, t, n) => {
     },
     setTemporarySelfMute(e) {
       var t;
-      P() || ((null == (t = m.default.getCurrentUser()) ? true : t.isStaff()) && S.info("Setting temporary self mute", e), a.h.dispatch({
+      P() || ((null == (t = m.default.getCurrentUser()) ? true : t.isStaff()) && I.info("Setting temporary self mute", e), a.h.dispatch({
         type: "AUDIO_SET_TEMPORARY_SELF_MUTE",
         mute: e
       }))
@@ -217,14 +217,14 @@ let N = i()((e, t, n) => {
           type: "AUDIO_SET_MODE",
           context: n,
           mode: e,
-          options: v({}, s, t)
+          options: A({}, s, t)
         }), i) {
         let t = p.A.getMediaEngine().getAudioSubsystem(),
           n = p.A.getMediaEngine().getAudioLayer(),
           i = h.A.getVoiceChannelId(),
           a = null != i ? f.A.getChannel(i) : null,
           s = T();
-        g.default.track(b.HAw.VOICE_ACTIVATION_MODE_CHANGED, {
+        g.default.track(y.HAw.VOICE_ACTIVATION_MODE_CHANGED, {
           mode: e,
           location_stack: r,
           voice_channel_type: null == a ? true : a.type,
@@ -232,13 +232,13 @@ let N = i()((e, t, n) => {
           audio_subsystem: t,
           audio_layer: n
         })
-      } else if (e === b.TBI.VOICE_ACTIVITY && s !== t) {
+      } else if (e === y.TBI.VOICE_ACTIVITY && s !== t) {
         let e = p.A.getMediaEngine().getAudioSubsystem(),
           n = p.A.getMediaEngine().getAudioLayer(),
           i = h.A.getVoiceChannelId(),
           a = null != i ? f.A.getChannel(i) : null,
           o = T();
-        g.default.track(b.HAw.VOICE_ACTIVITY_THRESHOLD_CHANGED, {
+        g.default.track(y.HAw.VOICE_ACTIVITY_THRESHOLD_CHANGED, {
           location_stack: r,
           voice_channel_type: null == a ? true : a.type,
           input_device_name: o,
@@ -269,7 +269,7 @@ let N = i()((e, t, n) => {
       });
       let n = h.A.getVoiceChannelId(),
         r = null != n ? f.A.getChannel(n) : null;
-      g.default.track(b.HAw.MEDIA_INPUT_VOLUME_CHANGED, {
+      g.default.track(y.HAw.MEDIA_INPUT_VOLUME_CHANGED, {
         volume: e,
         location_stack: t,
         voice_channel_type: null == r ? true : r.type
@@ -286,7 +286,7 @@ let N = i()((e, t, n) => {
       });
       let n = h.A.getVoiceChannelId(),
         r = null != n ? f.A.getChannel(n) : null;
-      g.default.track(b.HAw.MEDIA_OUTPUT_VOLUME_CHANGED, {
+      g.default.track(y.HAw.MEDIA_OUTPUT_VOLUME_CHANGED, {
         volume: e,
         location_stack: t,
         voice_channel_type: null == r ? true : r.type
@@ -306,7 +306,7 @@ let N = i()((e, t, n) => {
         type: "AUDIO_SET_INPUT_DEVICE",
         id: e,
         oldId: r
-      }), I()
+      }), S()
     },
     setOutputDevice(e) {
       let {
@@ -322,7 +322,7 @@ let N = i()((e, t, n) => {
         type: "AUDIO_SET_OUTPUT_DEVICE",
         id: e,
         oldId: r
-      }), I()
+      }), S()
     },
     setVideoDevice(e) {
       let {

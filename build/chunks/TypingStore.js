@@ -39,11 +39,11 @@ let h = 10 * Chunk927813.A.Millis.SECOND,
   m = 1.5 * Chunk927813.A.Millis.SECOND,
   g = 5,
   E = {},
-  b = Object.freeze({});
+  y = Object.freeze({});
 
-function y(e) {
+function b(e) {
   var t;
-  return null != (t = E[e]) ? t : b
+  return null != (t = E[e]) ? t : y
 }
 
 function O(e) {
@@ -83,18 +83,18 @@ function O(e) {
     channelId: t,
     timeout: c,
     prevSend: i
-  }, I({
+  }, S({
     channelId: t,
     userId: n
   })
 }
 
-function A(e) {
+function v(e) {
   if (null == r || r.channelId !== e) returnfalse;
   null != r.timeout && clearTimeout(r.timeout), r = null
 }
 
-function v(e) {
+function A(e) {
   let {
     channelId: t
   } = e, n = u.default.getId();
@@ -104,7 +104,7 @@ function v(e) {
   }))
 }
 
-function S(e, t) {
+function I(e, t) {
   return setTimeout(() => {
     o.h.dispatch({
       type: "TYPING_STOP",
@@ -114,12 +114,12 @@ function S(e, t) {
   }, h)
 }
 
-function I(e) {
+function S(e) {
   let {
     channelId: t,
     userId: n
-  } = e, r = _({}, y(t));
-  clearTimeout(r[n]), r[n] = S(t, n), E[t] = r
+  } = e, r = _({}, b(t));
+  clearTimeout(r[n]), r[n] = I(t, n), E[t] = r
 }
 
 function T(e) {
@@ -140,7 +140,7 @@ function C(e) {
     },
     optimistic: r
   } = e;
-  return r && A(t), null != n && T({
+  return r && v(t), null != n && T({
     channelId: t,
     userId: n.id
   })
@@ -151,26 +151,26 @@ function N() {
 }
 
 function R(e) {
-  let t = y(e);
-  return t === b ? 0 : Object.keys(t).length
+  let t = b(e);
+  return t === y ? 0 : Object.keys(t).length
 }
 class w extends(i = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(u.default)
   }
   getTypingUsers(e) {
-    return y(e)
+    return b(e)
   }
   isTyping(e, t) {
-    return null != y(e)[t]
+    return null != b(e)[t]
   }
 }
 p(w, "displayName", "TypingStore");
 let P = new w(Chunk73153.h, {
-  TYPING_START: I,
+  TYPING_START: S,
   TYPING_STOP: T,
   TYPING_START_LOCAL: O,
-  TYPING_STOP_LOCAL: v,
+  TYPING_STOP_LOCAL: A,
   CONNECTION_OPEN: N,
   OVERLAY_INITIALIZE: N,
   MESSAGE_CREATE: C

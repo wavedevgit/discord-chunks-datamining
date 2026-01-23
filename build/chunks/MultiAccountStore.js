@@ -80,11 +80,11 @@ function E(e) {
     let {
       id: t
     } = e;
-    y(t)
+    b(t)
   })
 }
 
-function b(e) {
+function y(e) {
   g = !!e.isSwitchingAccount, e.isSwitchingAccount || (m = m.filter(e => {
     let {
       id: t
@@ -93,7 +93,7 @@ function b(e) {
   })), r = null
 }
 
-function y(e) {
+function b(e) {
   m = m.filter(t => {
     let {
       id: n
@@ -114,7 +114,7 @@ function O(e) {
   null != r && (r.avatar = t.avatar, r.username = t.username, r.discriminator = t.discriminator, m = n)
 }
 
-function A(e, t) {
+function v(e, t) {
   let n = m.slice(),
     r = n.find(t => {
       let {
@@ -125,7 +125,7 @@ function A(e, t) {
   null != r && (r.tokenStatus = t, m = n)
 }
 
-function v(e) {
+function A(e) {
   let {
     from: t,
     to: n
@@ -133,14 +133,14 @@ function v(e) {
   m = (0, c.E8)(m, t, n)
 }
 
-function S(e) {
+function I(e) {
   let {
     multiAccountMobileExperimentEnabled: t
   } = e;
   i = t
 }
 
-function I(e) {
+function S(e) {
   let {
     userId: t,
     pushSyncToken: n
@@ -222,14 +222,14 @@ d(C, "displayName", "MultiAccountStore"), d(C, "persistKey", "MultiAccountStore"
 }]);
 let N = new C(Chunk73153.h, {
   CONNECTION_OPEN: E,
-  LOGOUT: b,
-  MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST: e => A(e.userId, 1),
-  MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS: e => A(e.userId, 2),
-  MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE: e => A(e.userId, 0),
-  MULTI_ACCOUNT_REMOVE_ACCOUNT: e => y(e.userId),
-  MULTI_ACCOUNT_MOVE_ACCOUNT: v,
+  LOGOUT: y,
+  MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST: e => v(e.userId, 1),
+  MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS: e => v(e.userId, 2),
+  MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE: e => v(e.userId, 0),
+  MULTI_ACCOUNT_REMOVE_ACCOUNT: e => b(e.userId),
+  MULTI_ACCOUNT_MOVE_ACCOUNT: A,
   CURRENT_USER_UPDATE: O,
-  MULTI_ACCOUNT_MOBILE_EXPERIMENT_UPDATE: S,
-  MULTI_ACCOUNT_UPDATE_PUSH_SYNC_TOKEN: I,
+  MULTI_ACCOUNT_MOBILE_EXPERIMENT_UPDATE: I,
+  MULTI_ACCOUNT_UPDATE_PUSH_SYNC_TOKEN: S,
   MULTI_ACCOUNT_INVALIDATE_PUSH_SYNC_TOKENS: T
 })

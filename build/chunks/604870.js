@@ -1,7 +1,7 @@
 /** Chunk was on 21968 **/
 /** chunk id: 604870, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  t: () => g
+  t: () => f
 }), require("./321073.js"), require("./896048.js"), require("./667532.js");
 var Chunk64700 = require("./64700.js"),
   Chunk284009 = require("./284009.js"),
@@ -17,23 +17,23 @@ var Chunk64700 = require("./64700.js"),
   Chunk633334 = require("./633334.js"),
   Chunk652215 = require("./652215.js");
 
-function g(e) {
+function f(e) {
   let t = (0, a.bG)([d.A], () => d.A.getGuild(e));
   l()(null != t, "guild must be present to be editing its integration settings");
   let n = (0, a.bG)([u.A], () => u.A.getHighestRole(t)),
     r = (0, a.yK)([o.Ay], () => o.Ay.getMembers(e), [e]),
-    g = (0, a.cf)([b.default], () => b.default.getUsers()),
+    f = (0, a.cf)([p.default], () => p.default.getUsers()),
     j = (0, a.bG)([c.A], () => c.A.getSortedRoles(e), [e]),
     O = i.useMemo(() => {
       let e = [];
       for (let n of r) {
-        let i = g[n.userId];
+        let i = f[n.userId];
         if (null == i || i.bot) continue;
-        let r = i.id !== t.ownerId && !f.$3({
-          permission: m.xBc.ADMINISTRATOR,
+        let r = i.id !== t.ownerId && !m.$3({
+          permission: b.xBc.ADMINISTRATOR,
           user: i,
           context: t
-        }) && u.A.canManageUser(m.xBc.USE_APPLICATION_COMMANDS, i, t);
+        }) && u.A.canManageUser(b.xBc.USE_APPLICATION_COMMANDS, i, t);
         e.push({
           id: i.id,
           canManage: r,
@@ -42,7 +42,7 @@ function g(e) {
         })
       }
       return e
-    }, [t, r, g]),
+    }, [t, r, f]),
     y = e => {
       var t;
       return e.managed && (null == (t = e.tags) ? true : t.bot_id) != null
@@ -51,7 +51,7 @@ function g(e) {
       let e = [];
       for (let i of j) {
         if (y(i)) continue;
-        let r = !(0, s._m)(i, m.xBc.ADMINISTRATOR) && u.A.isRoleHigher(t, n, i),
+        let r = !(0, s._m)(i, b.xBc.ADMINISTRATOR) && u.A.isRoleHigher(t, n, i),
           l = {
             id: i.id,
             name: i.name,
@@ -61,21 +61,21 @@ function g(e) {
       }
       return e
     }, [j, t, n]),
-    [v, N] = i.useState(""),
-    E = i.useMemo(() => {
+    [v, _] = i.useState(""),
+    N = i.useMemo(() => {
       var t;
       let n = (t = v).startsWith("@") ? t.substr(1) : t,
         i = v.startsWith("@") ? A.filter(t => t.id === e) : A;
       return {
-        members: (0, p.I)(O, h, n),
-        roles: (0, p.I)(i, x, n)
+        members: (0, g.I)(O, h, n),
+        roles: (0, g.I)(i, x, n)
       }
     }, [e, O, v, A]);
   return {
     query: v,
-    results: E,
-    setQuery: N,
-    unfilteredCount: E.members.length + E.roles.length
+    results: N,
+    setQuery: _,
+    unfilteredCount: N.members.length + N.roles.length
   }
 }
 

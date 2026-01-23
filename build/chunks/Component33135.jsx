@@ -1,5 +1,5 @@
 /** Chunk was on 71138 **/
-/** chunk id: 33135, original params: e,t,n (module,exports,require) **/
+/** chunk id: 33135, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   A: () => k
 }), require("./321073.js"), require("./896048.js"), require("./114821.js"), require("./339614.js"), require("./667532.js");
@@ -32,7 +32,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk518959 = require("./518959.js");
 
-function I(e, t, n, a, i) {
+function I(e, t, r, a, i) {
   let s = [];
   if (null == t) return s;
   let {
@@ -49,28 +49,28 @@ function I(e, t, n, a, i) {
         context: e
       })
     }), null != c && s.push({
-      section: (0, f.Xi)(e, S.zWA.TRANSPORT, n),
+      section: (0, f.Xi)(e, S.zWA.TRANSPORT, r),
       label: P.intl.string(P.t.wU9IN2),
       element: F.A,
       elementProps: {
         context: e,
-        index: n
+        index: r
       }
     }), null == y || l().isEmpty(y) || s.push({
-      section: (0, f.Xi)(e, S.zWA.OUTBOUND, n),
+      section: (0, f.Xi)(e, S.zWA.OUTBOUND, r),
       label: P.intl.string(P.t["3u0gII"]),
       element: D.A,
       elementProps: {
         context: e,
-        index: n
+        index: r
       }
     }), null != h && s.push({
-      section: (0, f.Xi)(e, S.zWA.CAMERA, n),
+      section: (0, f.Xi)(e, S.zWA.CAMERA, r),
       label: P.intl.string(P.t["2AGBWH"]),
       element: C.A,
       elementProps: {
         context: e,
-        index: n,
+        index: r,
         camera: h
       }
     }), null != p && !l().isEmpty(p)) {
@@ -78,31 +78,31 @@ function I(e, t, n, a, i) {
     Object.keys(p).forEach(l => {
       let s, c = v.default.getUser(l),
         u = g.Ay.getNick(i, l),
-        y = (0, f.Xi)(e, l, n);
+        y = (0, f.Xi)(e, l, r);
       null != p[l] && p[l].length > 0 && t.push({
         section: y,
-        label: null != c ? (0, r.jsx)(m.A, {
+        label: null != c ? (0, n.jsx)(m.A, {
           align: m.A.Align.CENTER,
-          children: (0, r.jsx)(m.A.Child, {
-            children: (0, r.jsxs)(m.A, {
+          children: (0, n.jsx)(m.A.Child, {
+            children: (0, n.jsxs)(m.A, {
               align: m.A.Align.CENTER,
-              children: [(0, r.jsx)(o.euF, {
+              children: [(0, n.jsx)(o.euF, {
                 size: o._3J.SIZE_24,
                 src: c.getAvatarURL(i, 24),
                 "aria-label": c.username,
                 className: N.my
-              }), (0, r.jsx)("span", {
+              }), (0, n.jsx)("span", {
                 className: N.Xh,
                 children: null != u ? u : b.Ay.getName(c)
               })]
             })
           })
-        }) : (s = null != u ? u : l, (0, r.jsx)(m.A, {
+        }) : (s = null != u ? u : l, (0, n.jsx)(m.A, {
           align: m.A.Align.CENTER,
-          children: (0, r.jsx)(m.A.Child, {
-            children: (0, r.jsx)(m.A, {
+          children: (0, n.jsx)(m.A.Child, {
+            children: (0, n.jsx)(m.A, {
               align: m.A.Align.CENTER,
-              children: (0, r.jsx)("span", {
+              children: (0, n.jsx)("span", {
                 className: N.Xh,
                 children: s
               })
@@ -116,7 +116,7 @@ function I(e, t, n, a, i) {
         element: x.A,
         elementProps: {
           context: e,
-          index: n,
+          index: r,
           videoStreams: a
         }
       })
@@ -131,21 +131,21 @@ function I(e, t, n, a, i) {
 function k() {
   var e, t;
   let {
-    defaultStats: n,
+    defaultStats: r,
     streamStats: i
   } = (0, s.bG)([f.Ay], () => ({
     defaultStats: f.Ay.getAllStats(j.x.DEFAULT),
     streamStats: f.Ay.getAllStats(j.x.STREAM)
-  }), [], s.My), l = (0, s.bG)([A.A, h.A], () => h.A.getChannel(A.A.getChannelId())), m = null == (e = n.concat(i).find(e => null != e.screenshare)) ? true : e.screenshare, g = null == (t = i.find(e => null != e.clips)) ? true : t.clips, v = (0, s.bG)([y.A], () => y.A.theme), b = (0, p.NC)(), C = (0, s.bG)([f.Ay], () => f.Ay.getSection()), x = function(e) {
+  }), [], s.My), l = (0, s.bG)([A.A, h.A], () => h.A.getChannel(A.A.getChannelId())), m = null == (e = r.concat(i).find(e => null != e.screenshare)) ? true : e.screenshare, g = null == (t = i.find(e => null != e.clips)) ? true : t.clips, v = (0, s.bG)([y.A], () => y.A.theme), b = (0, p.NC)(), C = (0, s.bG)([f.Ay], () => f.Ay.getSection()), x = function(e) {
     let {
       defaultStats: t,
-      streamStats: n,
+      streamStats: r,
       videoStreams: a,
       screenshare: i,
       clips: l,
       channel: s,
       connectionState: d
-    } = e, c = t.flatMap((e, t) => I(j.x.DEFAULT, e, t, a, null == s ? true : s.getGuildId())), m = n.flatMap((e, t) => I(j.x.STREAM, e, t, a, null == s ? true : s.getGuildId())), p = [], y = [], h = {
+    } = e, c = t.flatMap((e, t) => I(j.x.DEFAULT, e, t, a, null == s ? true : s.getGuildId())), m = r.flatMap((e, t) => I(j.x.STREAM, e, t, a, null == s ? true : s.getGuildId())), p = [], y = [], h = {
       section: u.Fq.DIVIDER
     };
     return null != i && (p.push(h), p.push({
@@ -165,7 +165,7 @@ function k() {
     })), m.length > 0 && m.unshift(h), [...null != s ? [{
       section: u.Fq.CUSTOM,
       label: "Channel Name",
-      element: () => (0, r.jsx)(o.Heading, {
+      element: () => (0, n.jsx)(o.Heading, {
         className: N.HA,
         variant: "heading-lg/semibold",
         children: s.name
@@ -173,14 +173,14 @@ function k() {
     }] : [], {
       section: u.Fq.CUSTOM,
       label: "Connection State",
-      element: () => (0, r.jsx)(o.Heading, {
+      element: () => (0, n.jsx)(o.Heading, {
         className: N.HA,
         variant: "heading-md/normal",
         children: d === S.S7L.RTC_CONNECTED ? "Connected" : "Disconnected"
       })
     }, ...c, ...m, ...p, ...y]
   }({
-    defaultStats: n,
+    defaultStats: r,
     streamStats: i,
     videoStreams: (0, s.bG)([f.Ay], () => f.Ay.getVideoStreams()),
     screenshare: m,
@@ -190,7 +190,7 @@ function k() {
   });
   return a.useEffect(() => () => {
     d.VN()
-  }, []), (0, r.jsx)(c.Ay, {
+  }, []), (0, n.jsx)(c.Ay, {
     theme: v,
     sidebarTheme: b,
     section: C,

@@ -2,7 +2,7 @@
 /** chunk id: 31995, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -32,7 +32,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,31 +56,31 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = function(e) {
+let S = function(e) {
   let {
     gameId: t,
     channelId: a
-  } = e, O = i.useRef(null), v = (0, o.bG)([h.A], () => h.A.getDetectableGame(t)), I = (0, o.bG)([_.A], () => _.A.getChannel(a)), T = null != I ? I.getGuildId() : null, C = null != v ? e => {
+  } = e, O = i.useRef(null), A = (0, o.bG)([h.A], () => h.A.getDetectableGame(t)), S = (0, o.bG)([_.A], () => _.A.getChannel(a)), T = null != S ? S.getGuildId() : null, C = null != A ? e => {
     (0, u.L3)(e, async () => {
       let {
         default: e
       } = await n.e("24843").then(n.bind(n, 348902));
-      return t => (0, r.jsx)(e, S(A({}, t), {
-        game: v,
+      return t => (0, r.jsx)(e, I(v({}, t), {
+        game: A,
         guildId: T
       }))
     })
-  } : true, N = null != v ? (0, r.jsx)("img", {
+  } : true, N = null != A ? (0, r.jsx)("img", {
     alt: "",
-    className: s()(y.Kk, y.FP),
+    className: s()(b.Kk, b.FP),
     src: m.Ay.getApplicationIconURL({
-      id: v.id,
-      icon: v.icon,
+      id: A.id,
+      icon: A.icon,
       size: 32
     })
   }) : null, R = (0, f.Ay)({
@@ -94,9 +94,9 @@ let I = function(e) {
       let {
         default: e
       } = await n.e("56466").then(n.bind(n, 188841));
-      return t => (0, r.jsx)(e, A({}, t))
+      return t => (0, r.jsx)(e, v({}, t))
     })
-  }, []), P = null != v ? "@game ".concat(v.name) : true;
+  }, []), P = null != A ? "@game ".concat(A.name) : true;
   return (0, r.jsx)(p.A, {
     applicationId: t,
     targetElementRef: O,
@@ -109,7 +109,7 @@ let I = function(e) {
         text: P,
         "aria-label": P,
         delay: 750,
-        children: (0, r.jsxs)(g.A, S(A({
+        children: (0, r.jsxs)(g.A, I(v({
           onContextMenu: C,
           ref: O
         }, e), {
@@ -122,8 +122,8 @@ let I = function(e) {
           children: [(0, r.jsx)(E.A, {
             children: N
           }), (0, r.jsx)("span", {
-            className: y.UU,
-            children: null != (n = null == v ? true : v.name) ? n : b.intl.string(b.t["11pdXZ"])
+            className: b.UU,
+            children: null != (n = null == A ? true : A.name) ? n : y.intl.string(y.t["11pdXZ"])
           })]
         }))
       })

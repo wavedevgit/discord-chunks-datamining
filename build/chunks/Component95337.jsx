@@ -27,15 +27,15 @@ let m = () => {
       premiumSubscription: p,
       paymentsBlocked: m,
       planId: E,
-      handleCancellation: b
-    } = (0, u.X)(), [y, O] = (0, i.useState)(false), [A, v] = (0, i.useState)(false), S = async () => {
-      O(true), v(false);
+      handleCancellation: y
+    } = (0, u.X)(), [b, O] = (0, i.useState)(false), [v, A] = (0, i.useState)(false), I = async () => {
+      O(true), A(false);
       try {
-        await b(), n()
+        await y(), n()
       } catch (e) {
-        v(true), O(false)
+        A(true), O(false)
       }
-    }, I = p.items.some(e => {
+    }, S = p.items.some(e => {
       let {
         planId: t
       } = e;
@@ -50,18 +50,18 @@ let m = () => {
       text: h.intl.string(h.t.h9tkAK),
       onClick: () => n(),
       variant: "secondary"
-    }), I ? T.push({
+    }), S ? T.push({
       text: h.intl.string(h.t.PDTjLN),
       onClick: () => f(c.g.PREVIEW),
-      disabled: y,
+      disabled: b,
       variant: "critical-primary",
-      loading: y
+      loading: b
     }) : T.push({
       text: h.intl.string(h.t["cY+Oob"]),
-      onClick: () => S(),
-      disabled: y,
+      onClick: () => I(),
+      disabled: b,
       variant: "critical-primary",
-      loading: y
+      loading: b
     });
     let C = (0, l.Zb)(E),
       N = C ? h.intl.string(_.default.qbDPGM) : h.intl.formatToPlainString(h.t.LZunzZ, {
@@ -74,7 +74,7 @@ let m = () => {
       subtitle: g(m, o, p, C),
       actions: T,
       onClose: async () => n(),
-      children: A ? (0, r.jsx)(s.wx6, {
+      children: v ? (0, r.jsx)(s.wx6, {
         type: "critical",
         children: h.intl.string(h.t["5mlOCW"])
       }) : null

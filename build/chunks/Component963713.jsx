@@ -1,12 +1,12 @@
 /** Chunk was on 22477 **/
 /** chunk id: 963713, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => r,
-  T: () => i
+  C: () => i,
+  T: () => r
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js");
-let i = Chunk64700.createContext({
+let r = Chunk64700.createContext({
     onCtxMenuClose: () => {},
     onCtxMenuOpen: () => {},
     onCtxMenuSelect: () => {},
@@ -18,11 +18,11 @@ let i = Chunk64700.createContext({
     quest: null,
     taskDetails: null
   }),
-  r = e => {
+  i = e => {
     let {
       children: t,
       isExpanded: n,
-      isExpansionAnimationComplete: r,
+      isExpansionAnimationComplete: i,
       onCtxMenuClose: s,
       onCtxMenuOpen: o,
       onCtxMenuSelect: c,
@@ -31,9 +31,9 @@ let i = Chunk64700.createContext({
       collapsedHeight: m,
       quest: p,
       taskDetails: h
-    } = e, f = l.useMemo(() => ({
+    } = e, x = l.useMemo(() => ({
       isExpanded: n,
-      isExpansionAnimationComplete: r,
+      isExpansionAnimationComplete: i,
       onCtxMenuClose: s,
       onCtxMenuOpen: o,
       onCtxMenuSelect: c,
@@ -42,9 +42,9 @@ let i = Chunk64700.createContext({
       collapsedHeight: m,
       quest: p,
       taskDetails: h
-    }), [n, r, s, o, c, d, u, m, p, h]);
-    return (0, a.jsx)(i.Provider, {
-      value: f,
+    }), [n, i, s, o, c, d, u, m, p, h]);
+    return (0, a.jsx)(r.Provider, {
+      value: x,
       children: t
     })
   }

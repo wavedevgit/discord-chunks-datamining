@@ -39,20 +39,20 @@ function p(e) {
     m = e.gpuAcceleration,
     g = e.adaptive,
     E = e.roundOffsets,
-    b = e.isFixed,
-    y = _.x,
-    O = true === y ? 0 : y,
-    A = _.y,
-    v = true === A ? 0 : A,
-    S = "function" == typeof E ? E({
+    y = e.isFixed,
+    b = _.x,
+    O = true === b ? 0 : b,
+    v = _.y,
+    A = true === v ? 0 : v,
+    I = "function" == typeof E ? E({
       x: O,
-      y: v
+      y: A
     }) : {
       x: O,
-      y: v
+      y: A
     };
-  O = S.x, v = S.y;
-  var I = _.hasOwnProperty("x"),
+  O = I.x, A = I.y;
+  var S = _.hasOwnProperty("x"),
     T = _.hasOwnProperty("y"),
     C = r.kb,
     N = r.Mn,
@@ -61,19 +61,19 @@ function p(e) {
     var w = (0, i.A)(l),
       P = "clientHeight",
       D = "clientWidth";
-    w === (0, a.A)(l) && (w = (0, s.A)(l), "static" !== (0, o.A)(w).position && "absolute" === h && (P = "scrollHeight", D = "scrollWidth")), (u === r.Mn || (u === r.kb || u === r.pG) && p === r._N) && (N = r.sQ, v -= (b && w === R && R.visualViewport ? R.visualViewport.height : w[P]) - c.height, v *= m ? 1 : false), (u === r.kb || (u === r.Mn || u === r.sQ) && p === r._N) && (C = r.pG, O -= (b && w === R && R.visualViewport ? R.visualViewport.width : w[D]) - c.width, O *= m ? 1 : false)
+    w === (0, a.A)(l) && (w = (0, s.A)(l), "static" !== (0, o.A)(w).position && "absolute" === h && (P = "scrollHeight", D = "scrollWidth")), (u === r.Mn || (u === r.kb || u === r.pG) && p === r._N) && (N = r.sQ, A -= (y && w === R && R.visualViewport ? R.visualViewport.height : w[P]) - c.height, A *= m ? 1 : false), (u === r.kb || (u === r.Mn || u === r.sQ) && p === r._N) && (C = r.pG, O -= (y && w === R && R.visualViewport ? R.visualViewport.width : w[D]) - c.width, O *= m ? 1 : false)
   }
   var x = Object.assign({
       position: h
     }, g && d),
     L = true === E ? f({
       x: O,
-      y: v
+      y: A
     }, (0, a.A)(l)) : {
       x: O,
-      y: v
+      y: A
     };
-  return (O = L.x, v = L.y, m) ? Object.assign({}, x, ((n = {})[N] = T ? "0" : "", n[C] = I ? "0" : "", n.transform = 1 >= (R.devicePixelRatio || 1) ? "translate(" + O + "px, " + v + "px)" : "translate3d(" + O + "px, " + v + "px, 0)", n)) : Object.assign({}, x, ((t = {})[N] = T ? v + "px" : "", t[C] = I ? O + "px" : "", t.transform = "", t))
+  return (O = L.x, A = L.y, m) ? Object.assign({}, x, ((n = {})[N] = T ? "0" : "", n[C] = S ? "0" : "", n.transform = 1 >= (R.devicePixelRatio || 1) ? "translate(" + O + "px, " + A + "px)" : "translate3d(" + O + "px, " + A + "px, 0)", n)) : Object.assign({}, x, ((t = {})[N] = T ? A + "px" : "", t[C] = S ? O + "px" : "", t.transform = "", t))
 }
 let _ = {
   name: "computeStyles",

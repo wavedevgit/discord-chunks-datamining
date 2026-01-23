@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   Fx: () => O,
-  JH: () => v,
-  SY: () => y,
-  aV: () => S,
+  JH: () => A,
+  SY: () => b,
+  aV: () => I,
   fE: () => g,
-  pF: () => A,
+  pF: () => v,
   zu: () => E
 }), require("./321073.js"), require("./896048.js"), require("./848778.js"), require("./228524.js");
 var Chunk975975 = require("./975975.js"),
@@ -53,7 +53,7 @@ function E(e, t, n) {
   return p
 }
 
-function b(e) {
+function y(e) {
   let t = d.y.getState().editStateIdsForGroup[e],
     n = d.y.getState().listings,
     r = new Set;
@@ -75,8 +75,8 @@ function b(e) {
   return i
 }
 
-function y(e) {
-  let t = b(e);
+function b(e) {
+  let t = y(e);
   m[e] = t, t.forEach(e => {
     let t = e.set("flags", h.lx.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
     s.h.dispatch({
@@ -88,14 +88,14 @@ function y(e) {
 
 function O(e) {
   var t;
-  (null != (t = m[e]) ? t : b(e)).forEach(e => {
+  (null != (t = m[e]) ? t : y(e)).forEach(e => {
     s.h.dispatch({
       type: "CHANNEL_DELETE",
       channel: e
     })
   })
 }
-async function A(e, t) {
+async function v(e, t) {
   let n = [],
     r = [];
   t.forEach(t => {
@@ -121,7 +121,7 @@ async function A(e, t) {
   })
 }
 
-function v(e, t) {
+function A(e, t) {
   var n, r;
   let i = d.y.getState().listings[e],
     a = null == i ? true : i.usedTemplate;
@@ -161,6 +161,6 @@ function v(e, t) {
   }
 }
 
-function S(e) {
+function I(e) {
   return (0, f.X9)(e) && e.features.has(_.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED) && (0, c.D3)() && (0, c.TG)(e.id)
 }

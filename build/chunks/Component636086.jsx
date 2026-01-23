@@ -1,7 +1,7 @@
 /** Chunk was on 88615 **/
-/** chunk id: 636086, original params: e,t,l (module,exports,require) **/
+/** chunk id: 636086, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk158954 = require("./158954.js"),
@@ -13,7 +13,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk279648 = require("./279648.js"),
   Chunk314986 = require("./314986.js");
 
-function f(e) {
+function p(e) {
   let {
     markAsDismissed: t
   } = e;
@@ -23,11 +23,11 @@ function f(e) {
       alt: "",
       className: d.Sl,
       src: c
-    }), (0, r.jsx)(n.EYj, {
+    }), (0, r.jsx)(l.EYj, {
       color: "always-white",
       variant: "text-md/semibold",
       children: u.intl.string(a.default.diMhWc)
-    }), (0, r.jsx)(n.EYj, {
+    }), (0, r.jsx)(l.EYj, {
       color: "always-white",
       variant: "text-sm/medium",
       children: u.intl.string(a.default.pycxTr)
@@ -38,9 +38,9 @@ function f(e) {
         size: "md",
         "aria-label": u.intl.string(u.t.cpT0Cq),
         onClick: () => {
-          t(o.i.USER_DISMISS)
+          t(s.i.USER_DISMISS)
         },
-        icon: s.PGe
+        icon: o.PGe
       })
     })]
   })

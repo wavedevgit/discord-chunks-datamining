@@ -2,7 +2,7 @@
 /** chunk id: 874486, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 });
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -73,7 +73,7 @@ function E(e) {
   if (!l.A.isEnabled()) returnfalse;
   g(t)
 }
-class b extends(r = Chunk311907.Ay.PersistedStore) {
+class y extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     this.waitFor(s.default, l.A, c.Ay);
     let t = null != e ? e : d({}, h);
@@ -90,7 +90,7 @@ class b extends(r = Chunk311907.Ay.PersistedStore) {
     return null != (t = m.unlockedAchievements[e]) ? t : null
   }
 }
-u(b, "displayName", "PoggermodeAchievementStore"), u(b, "persistKey", "PoggermodeAchievementStore");
-let y = new b(Chunk73153.h, {
+u(y, "displayName", "PoggermodeAchievementStore"), u(y, "persistKey", "PoggermodeAchievementStore");
+let b = new y(Chunk73153.h, {
   POGGERMODE_ACHIEVEMENT_UNLOCK: E
 })

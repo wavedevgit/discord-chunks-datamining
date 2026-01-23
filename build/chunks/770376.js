@@ -13,7 +13,7 @@ let o = "doNotShowReorderModal";
 
 function c() {
   (0, i.uh)(r.M.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
-    dismissAction: s.i.USER_DISMISS
+    dismissAction: a.i.USER_DISMISS
   })
 }
 
@@ -22,7 +22,7 @@ function u() {
   let {
     isDismissed: e
   } = (0, i.FZ)(r.M.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
-    cooldownDurationMs: a.A.Millis.WEEK
+    cooldownDurationMs: s.A.Millis.WEEK
   });
   return !e
 }

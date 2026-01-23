@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   Q9: () => m,
-  eO: () => y,
+  eO: () => b,
   lA: () => g,
-  nj: () => b,
+  nj: () => y,
   q0: () => O,
   rQ: () => h,
   wz: () => E
@@ -85,13 +85,13 @@ function E(e) {
   }), d.default.getUser(e)))
 }
 
-function b(e) {
+function y(e) {
   return o.h.dispatch({
     type: "USER_UPDATE",
     user: e
   }), d.default.getUser(e.id)
 }
-async function y(e) {
+async function b(e) {
   let {
     type: t,
     withMutualGuilds: n,

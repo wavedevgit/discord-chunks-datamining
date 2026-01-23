@@ -1,7 +1,7 @@
 /** Chunk was on 88014 **/
-/** chunk id: 627261, original params: n,l,i (module,exports,require) **/
+/** chunk id: 627261, original params: l,n,i (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => h
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,76 +14,76 @@ var Chunk311907 = require("./311907.js"),
   Chunk975571 = require("./975571.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk137397 = require("./137397.js");
-let p = n => {
+let h = l => {
   let {
-    onClose: l,
+    onClose: n,
     transitionState: i
-  } = n, {
-    error: p,
+  } = l, {
+    error: h,
     applicationName: v
-  } = (0, d.cf)([c.A, e.A], () => {
-    let n = c.A.getLastError(),
-      l = null;
-    if (null != n && null != n.applicationId) {
-      let i = e.A.getApplication(n.applicationId);
-      null != i && (l = i.name)
+  } = (0, t.cf)([o.A, d.A], () => {
+    let l = o.A.getLastError(),
+      n = null;
+    if (null != l && null != l.applicationId) {
+      let i = d.A.getApplication(l.applicationId);
+      null != i && (n = i.name)
     }
     return {
-      error: n,
-      applicationName: l
+      error: l,
+      applicationName: n
     }
   });
-  return (0, t.jsxs)(a.EOs, {
+  return (0, r.jsxs)(a.EOs, {
     transitionState: i,
     size: a.rIJ.SMALL,
     "aria-label": u.intl.string(u.t["6kHRYP"]),
     parentComponent: "DispatchErrorModal",
-    children: [(0, t.jsxs)(a.rQ0, {
+    children: [(0, r.jsxs)(a.rQ0, {
       justify: s.A.Justify.BETWEEN,
       separator: false,
-      children: [(0, t.jsx)(s.A.Child, {
+      children: [(0, r.jsx)(s.A.Child, {
         grow: 1,
-        children: (0, t.jsx)(a.Heading, {
+        children: (0, r.jsx)(a.Heading, {
           variant: "heading-lg/semibold",
           children: u.intl.string(u.t["6kHRYP"])
         })
-      }), (0, t.jsx)(s.A.Child, {
+      }), (0, r.jsx)(s.A.Child, {
         grow: 0,
-        children: (0, t.jsx)(a.s_y, {
-          onClick: l
+        children: (0, r.jsx)(a.s_y, {
+          onClick: n
         })
       })]
-    }), (0, t.jsx)(a.$mQ, {
-      children: (0, t.jsxs)("div", {
-        className: h.rf,
-        children: [(0, t.jsx)("div", {
+    }), (0, r.jsx)(a.$mQ, {
+      children: (0, r.jsxs)("div", {
+        className: p.rf,
+        children: [(0, r.jsx)("div", {
           children: u.intl.format(u.t["NnE/6P"], {
             link: "https://dis.gd/dispatch-error"
           })
-        }), (0, t.jsx)("div", {
-          className: h.dr,
+        }), (0, r.jsx)("div", {
+          className: p.dr,
           children: u.intl.string(u.t["o+efY9"])
-        }), (0, t.jsx)("div", {
-          className: h.Vk,
+        }), (0, r.jsx)("div", {
+          className: p.Vk,
           children: u.intl.string(u.t.BiSnZ9)
-        }), (0, t.jsx)("div", {
-          className: h.nf,
-          children: (0, t.jsxs)("div", {
-            children: [null != v ? "Game: ".concat(v, "\n") : null, (null == p ? true : p.applicationId) != null ? "Game ID: ".concat(p.applicationId, "\n") : null, (null == p ? true : p.branchId) != null && (null == p ? true : p.applicationId) !== (null == p ? true : p.branchId) ? "Branch ID: ".concat(null == p ? true : p.branchId, "\n") : null, (null == p ? true : p.code) != null ? "Error Code: ".concat(null == p ? true : p.code, "\n") : null, (null == p ? true : p.uuid) != null ? "Unique Case ID: ".concat(null == p ? true : p.uuid) : null]
+        }), (0, r.jsx)("div", {
+          className: p.nf,
+          children: (0, r.jsxs)("div", {
+            children: [null != v ? "Game: ".concat(v, "\n") : null, (null == h ? true : h.applicationId) != null ? "Game ID: ".concat(h.applicationId, "\n") : null, (null == h ? true : h.branchId) != null && (null == h ? true : h.applicationId) !== (null == h ? true : h.branchId) ? "Branch ID: ".concat(null == h ? true : h.branchId, "\n") : null, (null == h ? true : h.code) != null ? "Error Code: ".concat(null == h ? true : h.code, "\n") : null, (null == h ? true : h.uuid) != null ? "Unique Case ID: ".concat(null == h ? true : h.uuid) : null]
           })
         })]
       })
-    }), (0, t.jsxs)(a.jlY, {
-      children: [(0, t.jsx)(a.Button, {
+    }), (0, r.jsxs)(a.jlY, {
+      children: [(0, r.jsx)(a.Button, {
         variant: "primary",
         text: u.intl.string(u.t.VdyWmB),
         onClick: () => {
-          window.open(o.A.getSubmitRequestURL())
+          window.open(c.A.getSubmitRequestURL())
         }
-      }), (0, t.jsx)(r.$n, {
-        look: r.$n.Looks.LINK,
-        onClick: l,
-        color: h.bE,
+      }), (0, r.jsx)(e.$n, {
+        look: e.$n.Looks.LINK,
+        onClick: n,
+        color: p.bE,
         children: u.intl.string(u.t.cpT0Cq)
       })]
     })]

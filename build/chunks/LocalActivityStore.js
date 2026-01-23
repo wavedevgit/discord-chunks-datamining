@@ -76,7 +76,7 @@ let j = [],
 function k() {
   var e, t;
   let n = [],
-    r = A.G2.getSetting();
+    r = v.G2.getSetting();
   null != r && ("0" === r.expiresAtMs || new Date(Number(r.expiresAtMs)).getTime() - new Date().getTime() > 0) && n.push((0, _.F)(r));
   let i = E.A.getActivities();
   n.push(...i);
@@ -90,9 +90,9 @@ function k() {
     null != t.application_id && (l.add(t.name), n.push(t))
   });
   let c = h.Ay.getVisibleGame(),
-    u = null != c && null != c.name && (l.has(c.name) || (0, b.v)(c, [...n, ...R.A.getRemoteActivities()])),
+    u = null != c && null != c.name && (l.has(c.name) || (0, y.v)(c, [...n, ...R.A.getRemoteActivities()])),
     d = null != c && c.isLauncher,
-    f = null != S.A.getCurrentUserActiveStream(),
+    f = null != I.A.getCurrentUserActiveStream(),
     p = u || d && !f;
   if (null != c && null != c.name && !p) {
     let t = T.A.getGameByName(c.name);
@@ -103,19 +103,19 @@ function k() {
       timestamps: {
         start: c.start
       }
-    }, (0, y.CO)(c)))
+    }, (0, b.CO)(c)))
   }
-  let v = O.A.getActivity();
-  null != v && n.push(D({
+  let A = O.A.getActivity();
+  null != A && n.push(D({
     type: w.$pd.LISTENING
-  }, v));
+  }, A));
   let P = g.A.getCurrentHangStatus();
   if (null != P) {
     let e = g.A.getCustomHangStatus(),
       {
         defaultStatusVariant: r
       } = (0, m.ko)({
-        guildId: null == (t = I.A.getChannel(N.A.getVoiceChannelId())) ? true : t.guild_id,
+        guildId: null == (t = S.A.getChannel(N.A.getVoiceChannelId())) ? true : t.guild_id,
         location: "LocalActivityStore"
       });
     n.push({
@@ -177,7 +177,7 @@ function H() {
 }
 class Y extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(p.A, S.A, I.A, d.Ay, C.A, E.A, T.A, g.A, h.Ay, N.A, R.A, O.A, v.A), this.syncWith([E.A, g.A], () => k())
+    this.waitFor(p.A, I.A, S.A, d.Ay, C.A, E.A, T.A, g.A, h.Ay, N.A, R.A, O.A, A.A), this.syncWith([E.A, g.A], () => k())
   }
   getActivities() {
     return j

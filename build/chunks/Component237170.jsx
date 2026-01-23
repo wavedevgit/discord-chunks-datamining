@@ -1,7 +1,7 @@
 /** Chunk was on 18108 **/
 /** chunk id: 237170, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  G: () => h,
+  G: () => A,
   default: () => g
 }), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
@@ -15,7 +15,7 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk705656 = require("./705656.js");
 
-function A(t) {
+function m(t) {
   for (var e = 1; e < arguments.length; e++) {
     var n = null != arguments[e] ? arguments[e] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function A(t) {
   return t
 }
 
-function f(t, e) {
+function h(t, e) {
   return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
     var n = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
@@ -46,94 +46,94 @@ function f(t, e) {
     Object.defineProperty(t, n, Object.getOwnPropertyDescriptor(e, n))
   }), t
 }
-var h = ((r = {})[r.INTRO = 0] = "INTRO", r[r.SAFETY_TIPS = 1] = "SAFETY_TIPS", r[r.TAKE_ACTION = 2] = "TAKE_ACTION", r);
+var A = ((r = {})[r.INTRO = 0] = "INTRO", r[r.SAFETY_TIPS = 1] = "SAFETY_TIPS", r[r.TAKE_ACTION = 2] = "TAKE_ACTION", r);
 let g = t => {
   let {
     warningId: e,
     warningType: n,
     senderId: r,
-    modalProps: h,
+    modalProps: A,
     channelId: g
-  } = t, [O, j] = a.useState(0), _ = a.useMemo(() => ({
+  } = t, [O, p] = s.useState(0), j = s.useMemo(() => ({
     channelId: g,
     senderId: r,
     warningId: e,
     warningType: n,
     isNudgeWarning: false
   }), [g, r, e, n]);
-  a.useEffect(() => {
-    (0, c.QF)(f(A({}, _), {
+  s.useEffect(() => {
+    (0, c.QF)(h(m({}, j), {
       viewName: c.gN.SAFETY_TAKEOVER_MODAL
     }))
-  }, [_]);
-  let p = a.useCallback(t => {
-      (0, c._$)(f(A({}, _), {
+  }, [j]);
+  let b = s.useCallback(t => {
+      (0, c._$)(h(m({}, j), {
         cta: t
       }))
-    }, [_]),
-    [v, b] = a.useState(false);
+    }, [j]),
+    [v, E] = s.useState(false);
 
-  function E(t) {
-    j(t)
+  function T(t) {
+    p(t)
   }
-  return (0, i.jsxs)(s.EOs, {
+  return (0, i.jsxs)(a.EOs, {
     "data-migration-pending": true,
-    transitionState: h.transitionState,
+    transitionState: A.transitionState,
     parentComponent: "InappropriateConversationModal",
     children: [(0, i.jsx)("div", {
-      className: m.kL,
-      children: (0, i.jsxs)(s.tN_, {
+      className: x.kL,
+      children: (0, i.jsxs)(a.tN_, {
         width: 440,
         activeSlide: O,
         centered: false,
         overflow: "visible",
         contentDisplay: "flex",
-        children: [(0, i.jsx)(s.q7S, {
+        children: [(0, i.jsx)(a.q7S, {
           id: 0,
           children: (0, i.jsx)(o.A, {
             warningId: e,
             senderId: r,
-            trackAnalyticsEvent: p,
-            onNavigate: E
+            trackAnalyticsEvent: b,
+            onNavigate: T
           })
-        }), (0, i.jsx)(s.q7S, {
+        }), (0, i.jsx)(a.q7S, {
           id: 1,
           children: (0, i.jsx)(d.A, {
             warningId: e,
             senderId: r,
-            trackAnalyticsEvent: p
+            trackAnalyticsEvent: b
           })
-        }), (0, i.jsx)(s.q7S, {
+        }), (0, i.jsx)(a.q7S, {
           id: 2,
           children: (0, i.jsx)(u.A, {
             warningId: e,
             senderId: r,
-            trackAnalyticsEvent: p,
+            trackAnalyticsEvent: b,
             channelId: g,
             hasReported: v,
             onReport: function() {
-              b(true)
+              E(true)
             }
           })
         })]
       })
-    }), (0, i.jsxs)(s.jlY, {
+    }), (0, i.jsxs)(a.jlY, {
       "data-migration-pending": true,
-      className: m.qr,
-      children: [(0, i.jsx)(s.QWc, {
+      className: x.qr,
+      children: [(0, i.jsx)(a.QWc, {
         variant: "secondary",
         size: "sm",
-        text: x.intl.string(x.t.cpT0Cq),
+        text: _.intl.string(_.t.cpT0Cq),
         onClick: function() {
-          h.onClose(), (0, l.xi)(g, [e]), p(c.Wm.USER_TAKEOVER_MODAL_DISMISS)
+          A.onClose(), (0, l.xi)(g, [e]), b(c.Wm.USER_TAKEOVER_MODAL_DISMISS)
         },
         textVariant: "text-sm/normal"
-      }), 0 !== O && (0, i.jsx)(s.QWc, {
+      }), 0 !== O && (0, i.jsx)(a.QWc, {
         variant: "secondary",
         size: "sm",
-        text: x.intl.string(x.t["13/7kX"]),
+        text: _.intl.string(_.t["13/7kX"]),
         textVariant: "text-sm/normal",
-        onClick: () => E(0)
+        onClick: () => T(0)
       })]
     })]
   })

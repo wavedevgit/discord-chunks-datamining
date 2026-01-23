@@ -2,12 +2,12 @@
 /** chunk id: 410280, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  kL: "c500e08d3bff4fe5",
-  gd: "_154c87dd318359f1",
-  $n: "_2978beb322302f13",
-  gj: "_63a6597de8e0fb38",
-  tJ: "dc03d392a7849b40",
-  Nz: "_96f3056f5656bd50",
-  jy: "c7b40aaa3dbbe7bb",
-  Om: "_838a693d2ae9432b"
+  kL: "container__9a52c",
+  gd: "activityRow__9a52c",
+  $n: "activitySettings__9a52c",
+  gj: "connectionIcon__9a52c",
+  tJ: "metadataContainer__9a52c",
+  Nz: "metadataItem__9a52c",
+  jy: "metadataRefreshButton__9a52c",
+  Om: "dot__9a52c"
 }

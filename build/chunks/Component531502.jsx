@@ -95,7 +95,7 @@ function B(e) {
     powerLevel: u = 0,
     powerLevelPercentile: f = 0,
     cardId: _ = 0
-  } = (0, c.bG)([A.A], () => A.A.getCheckpointData()), h = (0, c.bG)([E.default], () => E.default.getCurrentUser()), m = (0, i.useContext)(O.P), g = (0, S.A)((0, d.rdh)(m.primaryColor).hex()), b = (0, y.j5)(g), T = (0, c.bG)([p.A], () => p.A.useReducedMotion), C = (0, i.useRef)(null), [N, w] = (0, i.useState)(true), M = (0, i.useMemo)(() => n <= P.Wf.END_REWARD ? 1 : n === P.Wf.END_CLAIM ? 2 : 3, [n]), k = (0, i.useMemo)(() => s().throttle(() => {
+  } = (0, c.bG)([v.A], () => v.A.getCheckpointData()), h = (0, c.bG)([E.default], () => E.default.getCurrentUser()), m = (0, i.useContext)(O.P), g = (0, I.A)((0, d.rdh)(m.primaryColor).hex()), y = (0, b.j5)(g), T = (0, c.bG)([p.A], () => p.A.useReducedMotion), C = (0, i.useRef)(null), [N, w] = (0, i.useState)(true), M = (0, i.useMemo)(() => n <= P.Wf.END_REWARD ? 1 : n === P.Wf.END_CLAIM ? 2 : 3, [n]), k = (0, i.useMemo)(() => s().throttle(() => {
     null != C.current && w(C.current.clientWidth)
   }, F), []), B = (0, i.useCallback)(() => n <= P.Wf.END_REWARD ? "100%" : n === P.Wf.END_CLAIM ? "50%" : "30%", [n]), H = (0, l.zhh)({
     onChange: k,
@@ -154,12 +154,12 @@ function B(e) {
           PersonaName: P.J4[_],
           AnimationState: M,
           FillColor: {
-            r: b.r,
-            g: b.g,
-            b: b.b,
-            a: 255 * b.a
+            r: y.r,
+            g: y.g,
+            b: y.b,
+            a: 255 * y.a
           },
-          PowerMeter: (0, v._V)(f),
+          PowerMeter: (0, A._V)(f),
           Icon: G[_],
           Illustration: U[_],
           reducedMotion: T
@@ -168,7 +168,7 @@ function B(e) {
       }, "rive")
     }), n <= P.Wf.END_REWARD && (0, r.jsx)("div", {
       className: j.Qs,
-      children: (0, r.jsx)(I.A, {
+      children: (0, r.jsx)(S.A, {
         onClick: a,
         muteSound: true,
         children: (0, r.jsx)(R.A, {
@@ -185,7 +185,7 @@ function H() {
   let e = (0, c.bG)([E.default], () => E.default.getCurrentUser()),
     {
       avatarDecoration: t
-    } = (0, c.bG)([A.A], () => A.A.getCheckpointData());
+    } = (0, c.bG)([v.A], () => v.A.getCheckpointData());
   return (0, r.jsxs)("div", {
     className: j.ZG,
     children: [(0, r.jsx)(R.A, {
@@ -246,12 +246,12 @@ function Y(e) {
     } = {
       applications: []
     }
-  } = (0, c.bG)([A.A], () => A.A.getCheckpointData()), E = (0, c.bG)([p.A], () => p.A.useReducedMotion), y = o.length > 0 ? o[0] : null, O = d.length > 0 ? d[0].guild : null, S = _.length > 0 ? _[0].game : null, {
-    unit: I,
+  } = (0, c.bG)([v.A], () => v.A.getCheckpointData()), E = (0, c.bG)([p.A], () => p.A.useReducedMotion), b = o.length > 0 ? o[0] : null, O = d.length > 0 ? d[0].guild : null, I = _.length > 0 ? _[0].game : null, {
+    unit: S,
     duration: T
-  } = (0, v.oO)(a), C = (0, c.bG)([g.A], () => g.A.getGuild(null == O ? true : O.id)), N = null != S && null != S.icon ? b.Ay.getApplicationIconURL({
-    id: S.id,
-    icon: S.icon
+  } = (0, A.oO)(a), C = (0, c.bG)([g.A], () => g.A.getGuild(null == O ? true : O.id)), N = null != I && null != I.icon ? y.Ay.getApplicationIconURL({
+    id: I.id,
+    icon: I.icon
   }) : null, P = (0, w.HL)(), M = (0, i.useMemo)(() => [{
     icon: l.oyn,
     title: x.intl.string(D.default.wWKySP),
@@ -262,7 +262,7 @@ function Y(e) {
     })
   }, {
     icon: l.cNw,
-    title: I === u.pJ.HOURS ? x.intl.formatToPlainString(D.default.Xu0QsX, {
+    title: S === u.pJ.HOURS ? x.intl.formatToPlainString(D.default.Xu0QsX, {
       numHours: T
     }) : x.intl.string(D.default.RmVTph),
     content: (0, r.jsx)(R.A, {
@@ -283,22 +283,22 @@ function Y(e) {
     title: x.intl.string(D.default["3sARW7"]),
     content: (0, r.jsxs)("div", {
       className: L.DD,
-      children: [null != y ? (0, r.jsxs)("div", {
+      children: [null != b ? (0, r.jsxs)("div", {
         className: L.DD,
         children: [(0, r.jsx)(f.A, {
-          emojiName: null == y.id ? y.name : "",
-          emojiId: y.id,
-          animated: !E && y.animated,
+          emojiName: null == b.id ? b.name : "",
+          emojiId: b.id,
+          animated: !E && b.animated,
           className: j.Gl
         }), (0, r.jsx)(R.A, {
           variant: "text-md/medium",
-          children: null == y.id ? h.Ay.convertSurrogateToName(y.name) : ":".concat(y.name, ":")
+          children: null == b.id ? h.Ay.convertSurrogateToName(b.name) : ":".concat(b.name, ":")
         })]
       }) : (0, r.jsx)(l._7Z, {
         color: t,
         size: "md",
         className: j.Gl
-      }), null == y && (0, r.jsx)(R.A, {
+      }), null == b && (0, r.jsx)(R.A, {
         variant: "text-md/medium",
         children: x.intl.string(x.t.PoWNfe)
       })]
@@ -318,7 +318,7 @@ function Y(e) {
         className: j.Gl
       }), (0, r.jsx)(R.A, {
         variant: "text-md/medium",
-        children: null != S ? S.name : x.intl.string(x.t.PoWNfe)
+        children: null != I ? I.name : x.intl.string(x.t.PoWNfe)
       })]
     })
   }, {
@@ -338,7 +338,7 @@ function Y(e) {
         children: null != C ? C.name : x.intl.string(x.t.PoWNfe)
       })]
     })
-  }], [n, T, I, s, y, E, t, N, S, C]);
+  }], [n, T, S, s, b, E, t, N, I, C]);
   return (0, r.jsx)(w.gy.Provider, {
     value: P,
     children: (0, r.jsx)("div", {

@@ -1,18 +1,18 @@
 /** Chunk was on 99484 **/
 /** chunk id: 26095, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => o
+  A: () => a
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk73153 = require("./73153.js");
-let o = {
+let a = {
   open(e) {
-    i.h.dispatch({
+    o.h.dispatch({
       type: "SAFETY_HUB_APPEAL_OPEN",
       classificationId: e
-    }), (0, a.mMO)(async () => {
+    }), (0, i.mMO)(async () => {
       let {
         default: t
       } = await Promise.all([n.e("74327"), n.e("5482")]).then(n.bind(n, 355690));
@@ -39,7 +39,7 @@ let o = {
     })
   },
   close() {
-    i.h.dispatch({
+    o.h.dispatch({
       type: "SAFETY_HUB_APPEAL_CLOSE"
     })
   }

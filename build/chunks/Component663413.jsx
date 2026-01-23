@@ -2,7 +2,7 @@
 /** chunk id: 663413, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js");
 let E = new Set([Chunk652215.BVt.LOGIN, Chunk652215.BVt.REGISTER]);
 
-function b(e) {
+function y(e) {
   let {
     lang: t,
     style: n,
@@ -38,7 +38,7 @@ function b(e) {
   })
 }
 
-function y() {
+function b() {
   let [e, t] = i.useState([]);
   return i.useEffect(() => {
     Promise.all(u.x.map(e => n(907790)("./".concat(e, ".woff2")).then(e => {
@@ -73,7 +73,7 @@ function O(e) {
     [d.Vg]: true
   }, s);
   return (0, r.jsxs)(o.mg, {
-    children: [b(a), y(), l, t]
+    children: [y(a), b(), l, t]
   })
 }
-let A = Chunk64700.memo(O)
+let v = Chunk64700.memo(O)

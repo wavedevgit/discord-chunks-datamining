@@ -17,7 +17,7 @@ let u = function(e) {
     selectedSortMethod: u
   } = e, d = i.useCallback(e => {
     t(e)
-  }, [t]), p = (0, a.XD)(), f = i.useMemo(() => p.map(e => ({
+  }, [t]), p = (0, a.XD)(), h = i.useMemo(() => p.map(e => ({
     name: e.label,
     value: e.value,
     radioBarClassName: n
@@ -32,7 +32,7 @@ let u = function(e) {
           id: t,
           children: c.intl.string(c.t.tZXJIS)
         }), (0, r.jsx)(l.z6M, {
-          options: f,
+          options: h,
           onChange: e => {
             n(), d(e)
           },

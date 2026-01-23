@@ -32,9 +32,9 @@ function u(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (c[n] = e[n]);
     return c
-  }(e, ["createReminder"]), [b, f] = o.useState(() => l()()), [O, y] = o.useState(() => l()()), d = o.useCallback(() => {
+  }(e, ["createReminder"]), [b, f] = o.useState(() => l()()), [O, y] = o.useState(() => l()()), j = o.useCallback(() => {
     c(b.toDate())
-  }, [c, b]), j = e => {
+  }, [c, b]), d = e => {
     e.isValid() && f(e)
   };
   return (0, n.jsx)(s.VoidConfirmModal, (t = function(e) {
@@ -59,7 +59,7 @@ function u(e) {
     confirmText: a.intl.string(a.t["R3BPH+"]),
     cancelText: a.intl.string(a.t["ETE/oC"]),
     confirmButtonColor: i.$n.Colors.BRAND,
-    onConfirm: d
+    onConfirm: j
   }, u), r = r = {
     children: (0, n.jsxs)("div", {
       className: p.U,
@@ -67,13 +67,13 @@ function u(e) {
         label: a.intl.string(a.t.pSZKvM),
         required: true,
         value: b,
-        onSelect: j,
+        onSelect: d,
         minDate: O
       }), (0, n.jsx)(s.czz, {
         label: a.intl.string(a.t.GOmEb8),
         required: true,
         value: b,
-        onChange: j
+        onChange: d
       })]
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

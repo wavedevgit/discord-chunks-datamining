@@ -213,15 +213,15 @@ let h = {
         customOffset: m,
         delay: g,
         spacing: E,
-        forceOpen: b
-      } = e, y = p(e, ["title", "body", "showAsset", "assetSize", "position", "align", "caretAlign", "customOffset", "delay", "spacing", "forceOpen"]), O = i.useMemo(() => {
+        forceOpen: y
+      } = e, b = p(e, ["title", "body", "showAsset", "assetSize", "position", "align", "caretAlign", "customOffset", "delay", "spacing", "forceOpen"]), O = i.useMemo(() => {
         if ("center" !== h && null != h) return "custom" === h ? {
           align: h,
           customOffset: m
         } : {
           align: h
         }
-      }, [h, m]), A = i.useMemo(() => o ? {
+      }, [h, m]), v = i.useMemo(() => o ? {
         type: "image",
         src: l.A,
         aspectRatio: "1/1"
@@ -234,10 +234,10 @@ let h = {
         delay: g,
         spacing: E,
         caretConfig: O,
-        asset: A,
+        asset: v,
         assetSize: c,
-        forceOpen: b
-      }, y), {
+        forceOpen: y
+      }, b), {
         children: (0, r.jsx)(a.Button, {
           variant: "primary",
           text: "Hover me (rich)"

@@ -1,7 +1,7 @@
 /** Chunk was on 58652 **/
 /** chunk id: 796071, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,30 +14,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk562153 = require("./562153.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let p = e => {
+let b = e => {
   let {
     user: t,
     channelId: n,
-    reportId: p
+    reportId: b
   } = e, {
     isIgnored: x,
     isBlocked: g
-  } = (0, a.cf)([d.A], () => ({
-    isIgnored: d.A.isIgnored(t.id),
-    isBlocked: d.A.isBlocked(t.id)
-  }), [t]), f = (0, a.bG)([c.A], () => c.A.getChannel(n), [n]), v = r.useMemo(() => u.Ay.getName(null == f ? true : f.guild_id, null == f ? true : f.id, t), [f, t]), h = r.useCallback(() => {
+  } = (0, i.cf)([c.A], () => ({
+    isIgnored: c.A.isIgnored(t.id),
+    isBlocked: c.A.isBlocked(t.id)
+  }), [t]), _ = (0, i.bG)([d.A], () => d.A.getChannel(n), [n]), h = r.useMemo(() => u.Ay.getName(null == _ ? true : _.guild_id, null == _ ? true : _.id, t), [_, t]), v = r.useCallback(() => {
     s.Ay.trackWithMetadata(m.HAw.IAR_IGNORE_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
-      report_id: p
-    }), i.A.ignoreUser(t.id, "web_iar_ignore_user_element", n)
-  }, [t, p, n]), j = r.useMemo(() => x || g, [x, g]);
+      report_id: b
+    }), a.A.ignoreUser(t.id, "web_iar_ignore_user_element", n)
+  }, [t, b, n]), f = r.useMemo(() => x || g, [x, g]);
   return (0, l.jsx)(o.PQ, {
-    title: b.intl.formatToPlainString(b.t.U3yyFs, {
-      username: v
+    title: p.intl.formatToPlainString(p.t.U3yyFs, {
+      username: h
     }),
-    description: b.intl.string(b.t.naWE6W),
-    buttonText: j ? b.intl.string(b.t.nDdxOG) : b.intl.string(b.t.ICYEfY),
-    buttonDisabled: j,
-    onButtonPress: h
+    description: p.intl.string(p.t.naWE6W),
+    buttonText: f ? p.intl.string(p.t.nDdxOG) : p.intl.string(p.t.ICYEfY),
+    buttonDisabled: f,
+    onButtonPress: v
   })
 }

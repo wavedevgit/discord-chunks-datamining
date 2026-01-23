@@ -14,5 +14,5 @@ function o() {
     resolution: e,
     fps: t
   } = (0, r.cf)([l.A], () => l.A.getState());
-  if (!(0, a.w)(e, t)) return "".concat((0, s.zr)(e), " ").concat((0, i.Bs)(t))
+  if (!(0, s.w)(e, t)) return "".concat((0, a.zr)(e), " ").concat((0, i.Bs)(t))
 }

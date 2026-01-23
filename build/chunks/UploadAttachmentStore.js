@@ -36,16 +36,16 @@ function E(e) {
   return null != (t = h.get(e)) ? t : new Map
 }
 
-function b(e, t, n) {
+function y(e, t, n) {
   let r = E(e);
   r.set(t, n), h.set(e, r)
 }
 
-function y(e) {
+function b(e) {
   let {
     channelId: t
   } = e, n = [...g(t, d.C.ChannelMessage)];
-  n.shift(), b(t, d.C.ChannelMessage, n)
+  n.shift(), y(t, d.C.ChannelMessage, n)
 }
 let O = e => {
   let {
@@ -62,10 +62,10 @@ let O = e => {
   }) : (a().forEach(t, e => {
     let t = new c.bK(e, n, s.length, i);
     t.upload(), s.push(t)
-  }), b(n, r, s))
+  }), y(n, r, s))
 };
 
-function A(e) {
+function v(e) {
   let {
     channelId: t,
     id: n,
@@ -74,10 +74,10 @@ function A(e) {
     uri: n,
     filename: n
   }, e));
-  a > false && (i.splice(a, 1)[0].removeFromMsgDraft(), b(t, r, i))
+  a > false && (i.splice(a, 1)[0].removeFromMsgDraft(), y(t, r, i))
 }
 
-function v(e) {
+function A(e) {
   let {
     channelId: t,
     attachmentIds: n,
@@ -86,10 +86,10 @@ function v(e) {
   n.forEach(e => {
     let t = i.findIndex(t => e === t.id);
     t > false && i.splice(t, 1)[0].removeFromMsgDraft()
-  }), b(t, r, i)
+  }), y(t, r, i)
 }
 
-function S(e) {
+function I(e) {
   let {
     channelId: t,
     id: n,
@@ -99,10 +99,10 @@ function S(e) {
     thumbnail: s,
     draftType: o
   } = e, l = [...g(t, o)].map(e => (e.id === n && (true !== r && (e.filename = r), true !== a && (e.spoiler = a), true !== i && (e.description = i), true !== s && (e.isThumbnail = s)), e));
-  b(t, o, l)
+  y(t, o, l)
 }
 
-function I(e) {
+function S(e) {
   let {
     channelId: t,
     id: n,
@@ -110,7 +110,7 @@ function I(e) {
     draftType: i,
     allowOptimization: a
   } = e, s = [...g(t, i)].filter(e => e.id !== n), o = new c.bK(r, t, true, a);
-  o.upload(), s.push(o), b(t, i, s)
+  o.upload(), s.push(o), y(t, i, s)
 }
 
 function T(e) {
@@ -119,7 +119,7 @@ function T(e) {
     uploads: n,
     draftType: r
   } = e;
-  b(t, r, n)
+  y(t, r, n)
 }
 
 function C(e) {
@@ -127,14 +127,14 @@ function C(e) {
     channelId: t,
     draftType: n
   } = e;
-  b(t, n, [])
+  y(t, n, [])
 }
 
 function N(e) {
   let {
     baseChannelId: t
   } = e;
-  b(t, d.C.FirstThreadMessage, [])
+  y(t, d.C.FirstThreadMessage, [])
 }
 class R extends(r = Chunk311907.Ay.Store) {
   getFirstUpload(e, t) {
@@ -161,13 +161,13 @@ class R extends(r = Chunk311907.Ay.Store) {
 }
 _(R, "displayName", "UploadAttachmentStore");
 let w = new R(Chunk73153.h, {
-  UPLOAD_ATTACHMENT_POP_FILE: y,
+  UPLOAD_ATTACHMENT_POP_FILE: b,
   UPLOAD_ATTACHMENT_ADD_FILES: O,
-  UPLOAD_ATTACHMENT_UPDATE_FILE: S,
-  UPLOAD_ATTACHMENT_REMOVE_FILE: A,
-  UPLOAD_ATTACHMENT_REMOVE_FILES: v,
+  UPLOAD_ATTACHMENT_UPDATE_FILE: I,
+  UPLOAD_ATTACHMENT_REMOVE_FILE: v,
+  UPLOAD_ATTACHMENT_REMOVE_FILES: A,
   UPLOAD_ATTACHMENT_CLEAR_ALL_FILES: C,
   UPLOAD_ATTACHMENT_SET_UPLOADS: T,
-  UPLOAD_ATTACHMENT_SET_FILE: I,
+  UPLOAD_ATTACHMENT_SET_FILE: S,
   SIDEBAR_CLOSE: N
 })

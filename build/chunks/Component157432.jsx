@@ -15,9 +15,9 @@ let d = e => {
   let {
     channelId: t
   } = e, n = l.useCallback(() => {
-    s.A.reopenModReport(t)
+    a.A.reopenModReport(t)
   }, [t]);
-  return (0, r.jsx)(a._, {
+  return (0, r.jsx)(s._, {
     bannerHeader: (0, r.jsx)(i.Text, {
       variant: "text-md/medium",
       color: "text-muted",

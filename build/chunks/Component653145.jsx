@@ -94,44 +94,44 @@ function z(e) {
     handleCategorySelect: u,
     isWindowFocused: d,
     useReducedMotion: p
-  } = e, _ = (0, c.rm)("expression-guild-".concat(n)), h = l.type === I.s.GUILD ? null : l.id, m = t === n, E = l.type === I.s.GUILD ? l.guild : null, y = (0, r.jsxs)(f.DUT, x(P({}, _), {
+  } = e, _ = (0, c.rm)("expression-guild-".concat(n)), h = l.type === S.s.GUILD ? null : l.id, m = t === n, E = l.type === S.s.GUILD ? l.guild : null, b = (0, r.jsxs)(f.DUT, x(P({}, _), {
     "aria-label": (0, O.wt)(l, E),
     className: s()({
       [R.ZG]: null != E,
       [R.Bj]: null == E,
       [R.s6]: null == E && m,
-      [R.xg]: l.type === I.s.RECENT
+      [R.xg]: l.type === S.s.RECENT
     }),
     onClick: () => {
-      null != E && b.default.track(T.HAw.EXPRESSION_PICKER_CATEGORY_SELECTED, {
+      null != E && y.default.track(T.HAw.EXPRESSION_PICKER_CATEGORY_SELECTED, {
         location: null == a ? true : a.location,
         tab: C.kx.EMOJI,
         guild_id: E.id
       }), u(n)
     },
-    children: [null != E ? (0, r.jsx)(v.A, {
+    children: [null != E ? (0, r.jsx)(A.A, {
       guild: E,
       isSelected: m,
       shouldAnimate: !p && d,
       isLocked: l.isNitroLocked
-    }) : null, null == E && null != h ? (0, r.jsx)(A.A, {
+    }) : null, null == E && null != h ? (0, r.jsx)(v.A, {
       categoryId: h,
       className: R.Yl,
       height: M,
       width: M,
       size: "custom"
     }) : null]
-  })), S = o[n + 1], N = null != S && l.type === I.s.GUILD && S.type !== I.s.GUILD;
+  })), I = o[n + 1], N = null != I && l.type === S.s.GUILD && I.type !== S.s.GUILD;
   return null != E ? (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(g.Q, {
       guild: E,
       children: (0, r.jsx)("div", {
-        children: y
+        children: b
       })
     }), N ? (0, r.jsx)("hr", {
       className: R.ny
     }, "separator") : null]
-  }) : y
+  }) : b
 }
 let q = e => {
   var t;
@@ -142,29 +142,29 @@ let q = e => {
     intention: c,
     channel: d,
     fallbackGuildId: g,
-    shouldShowSoundmojiInEmojiPicker: b = false,
-    showOnlyUnicode: y = false
-  } = e, A = h.Om.useStore(e => e.activeCategoryIndex), v = (0, S.cr)({
+    shouldShowSoundmojiInEmojiPicker: y = false,
+    showOnlyUnicode: b = false
+  } = e, v = h.Om.useStore(e => e.activeCategoryIndex), A = (0, I.cr)({
     sectionDescriptors: o,
     emojiListRef: a
-  }), T = (0, p.p)(), C = (0, O.ss)(c, d, null != (t = null == d ? true : d.guild_id) ? t : g, b), w = i.useMemo(() => y ? (0, O.CQ)() : C, [C, y]), P = i.useRef(null), D = (0, u.bG)([E.A], () => E.A.isFocused()), x = (0, u.bG)([_.A], () => _.A.useReducedMotion, []), L = i.useMemo(() => l().memoize((e, t) => {
+  }), T = (0, p.p)(), C = (0, O.ss)(c, d, null != (t = null == d ? true : d.guild_id) ? t : g, y), w = i.useMemo(() => b ? (0, O.CQ)() : C, [C, b]), P = i.useRef(null), D = (0, u.bG)([E.A], () => E.A.isFocused()), x = (0, u.bG)([_.A], () => _.A.useReducedMotion, []), L = i.useMemo(() => l().memoize((e, t) => {
     let n = w[t];
     if (null != n) return (0, r.jsx)(z, {
-      activeIndex: A,
+      activeIndex: v,
       analyticsContext: T,
       categories: w,
       category: n,
       categoryIndex: t,
-      handleCategorySelect: v,
+      handleCategorySelect: A,
       isWindowFocused: D,
       useReducedMotion: x
     }, t)
-  }), [A, T, w, v, D, x]), U = i.useMemo(() => [8, 8, 0, 8], []), q = i.useCallback((e, t) => {
+  }), [v, T, w, A, D, x]), U = i.useMemo(() => [8, 8, 0, 8], []), q = i.useCallback((e, t) => {
     let n = w[t];
-    if (n.type === I.s.RECENT) return B;
-    if (n.type === I.s.GUILD) {
+    if (n.type === S.s.RECENT) return B;
+    if (n.type === S.s.GUILD) {
       let e = w[t + 1];
-      return null != e && e.type !== I.s.GUILD ? Y : H
+      return null != e && e.type !== S.s.GUILD ? Y : H
     }
     return W
   }, [w]), {
@@ -178,7 +178,7 @@ let q = e => {
       n = 0,
       r = 0;
     w.forEach(i => {
-      i.type === I.s.GUILD ? (t += 1, n += 1) : i.type === I.s.UNICODE ? r += 1 : (e += 1, t += 1)
+      i.type === S.s.GUILD ? (t += 1, n += 1) : i.type === S.s.UNICODE ? r += 1 : (e += 1, t += 1)
     });
     let i = B + t * H + Y;
     return {
@@ -204,10 +204,10 @@ let q = e => {
       let n = w[e];
       if (null == n) return 0;
       let r = J ? G : 0;
-      if (n.type === I.s.RECENT) return t ? 0 : k;
-      if (n.type === I.s.GUILD) {
+      if (n.type === S.s.RECENT) return t ? 0 : k;
+      if (n.type === S.s.GUILD) {
         let n = w[e + 1];
-        return null != n && n.type !== I.s.GUILD ? t ? V + false * F + j + r : j : t ? r : j
+        return null != n && n.type !== S.s.GUILD ? t ? V + false * F + j + r : j : t ? r : j
       }
       return t ? j + r : 2 * j
     }, [w, J]),

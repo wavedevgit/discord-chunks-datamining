@@ -21,7 +21,7 @@ function c(e) {
   {
     if (1 === n.length) return (0, r.jsx)("div", {
       className: i()(o.kL, t, l && o.F4),
-      children: (0, r.jsx)(s.A, {
+      children: (0, r.jsx)(a.A, {
         game: n[0].application,
         className: o.wK
       })
@@ -29,13 +29,13 @@ function c(e) {
     let e = n.length - 1;
     return (0, r.jsxs)("div", {
       className: i()(o.kL, t, l && o.F4),
-      children: [(0, r.jsx)(s.A, {
+      children: [(0, r.jsx)(a.A, {
         game: n[0].application,
         className: o.wK
-      }), 2 === n.length ? (0, r.jsx)(s.A, {
+      }), 2 === n.length ? (0, r.jsx)(a.A, {
         game: n[1].application,
         className: o.wK
-      }) : (0, r.jsx)(a.Text, {
+      }) : (0, r.jsx)(s.Text, {
         className: o.ju,
         variant: "text-xs/bold",
         color: "interactive-text-active",

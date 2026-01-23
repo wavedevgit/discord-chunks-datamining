@@ -4,7 +4,7 @@
 let r;
 require.d(exports, {
   A: () => H,
-  m: () => y
+  m: () => b
 }), require("./896048.js"), require("./638769.js"), require("./264879.js");
 var i, Chunk735438 = require("./735438.js"),
   s = require.n(Chunk735438),
@@ -21,7 +21,7 @@ var i, Chunk735438 = require("./735438.js"),
   Chunk661191 = require("./661191.js"),
   Chunk152007 = require("./152007.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,19 +29,19 @@ function b(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let y = 25,
+let b = 25,
   O = false,
-  A = true,
-  v = false,
-  S = false,
-  I = null,
+  v = true,
+  A = false,
+  I = false,
+  S = null,
   T = Chunk602137.T.LATEST_ACTIVITY,
   C = [],
   N = 0,
   R = Chunk392421.n.MATCH_SOME;
 
 function w() {
-  O = false, A = true, v = false, S = false, I = null, T = l.T.LATEST_ACTIVITY, r = new Set, N = 0, C = [], R = o.n.MATCH_SOME
+  O = false, v = true, A = false, I = false, S = null, T = l.T.LATEST_ACTIVITY, r = new Set, N = 0, C = [], R = o.n.MATCH_SOME
 }
 
 function P(e, t) {
@@ -49,14 +49,14 @@ function P(e, t) {
 }
 
 function D(e) {
-  e.channelId === I && e.sortOrder === T && (0, c._)(e.tagFilter, r) && e.tagSetting === R || w(), I = e.channelId, T = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), R = e.tagSetting, O = true, A = false
+  e.channelId === S && e.sortOrder === T && (0, c._)(e.tagFilter, r) && e.tagSetting === R || w(), S = e.channelId, T = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), R = e.tagSetting, O = true, v = false
 }
 
 function x(e) {
-  if (e.channelId !== I || e.sortOrder !== T || !(0, c._)(e.tagFilter, r) || e.tagSetting !== R) returnfalse;
+  if (e.channelId !== S || e.sortOrder !== T || !(0, c._)(e.tagFilter, r) || e.tagSetting !== R) returnfalse;
   let t = e.threads.filter(e => _.A_.has(e.type)).map(e => e.id);
   C = C.concat(t);
-  let n = h.A.getChannel(I);
+  let n = h.A.getChannel(S);
   null != n && n.isForumLikeChannel() && (0, p._Z)({
     guildId: n.guild_id,
     channelId: n.id,
@@ -64,19 +64,19 @@ function x(e) {
     hasMoreThreads: e.hasMore,
     filterTagIds: Array.from(e.tagFilter),
     sortOrder: e.sortOrder
-  }), j(), v = e.hasMore, N = e.offset + y, O = false, A = false
+  }), j(), A = e.hasMore, N = e.offset + b, O = false, v = false
 }
 
 function L(e) {
-  return (null == I || null == e.channelId || I === e.channelId) && j()
+  return (null == S || null == e.channelId || S === e.channelId) && j()
 }
 
 function j() {
-  if (null == I) returnfalse;
-  let e = !v,
+  if (null == S) returnfalse;
+  let e = !A,
     t = h.A.getChannel(C[C.length - 1]),
     n = null == t ? null : P(t, T);
-  C = s()(h.A.getAllThreadsForParent(I)).filter(e => e.isArchivedThread()).filter(t => {
+  C = s()(h.A.getAllThreadsForParent(S)).filter(e => e.isArchivedThread()).filter(t => {
     if (0 !== r.size) {
       var i, a;
       if (R === o.n.MATCH_SOME) {
@@ -95,12 +95,12 @@ function j() {
 }
 
 function M(e) {
-  if (e.channelId !== I || e.sortOrder !== T || !(0, c._)(e.tagFilter, r) || e.tagSetting !== R) returnfalse;
-  O = false, S = true, A = false
+  if (e.channelId !== S || e.sortOrder !== T || !(0, c._)(e.tagFilter, r) || e.tagSetting !== R) returnfalse;
+  O = false, I = true, v = false
 }
 
 function k(e) {
-  if (e.channel.id !== I) returnfalse;
+  if (e.channel.id !== S) returnfalse;
   w()
 }
 
@@ -120,7 +120,7 @@ function V(e) {
   let {
     channel: t
   } = e;
-  return I === t.parent_id && !!(0, f.yr)(t.id) && void U(t.id)
+  return S === t.parent_id && !!(0, f.yr)(t.id) && void U(t.id)
 }
 let F = [];
 class B extends(i = Chunk311907.Ay.Store) {
@@ -128,22 +128,22 @@ class B extends(i = Chunk311907.Ay.Store) {
     this.waitFor(h.A, E.A, m.Ay)
   }
   get canLoadMore() {
-    return v && !O && !S
+    return A && !O && !I
   }
   get nextOffset() {
     return N
   }
   get isInitialLoad() {
-    return A
+    return v
   }
   isLoading(e, t, n, i) {
-    return I === e && T === t && (0, c._)(r, n) && R === i ? O : (w(), false)
+    return S === e && T === t && (0, c._)(r, n) && R === i ? O : (w(), false)
   }
   getThreads(e, t, n, i) {
-    return I === e && T === t && (0, c._)(r, n) && R === i ? C : F
+    return S === e && T === t && (0, c._)(r, n) && R === i ? C : F
   }
 }
-b(B, "displayName", "ArchivedThreadsStore");
+y(B, "displayName", "ArchivedThreadsStore");
 let H = new B(Chunk73153.h, {
   CONNECTION_OPEN: w,
   THREAD_DELETE: G,

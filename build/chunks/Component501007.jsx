@@ -139,7 +139,7 @@ function z(e) {
     className: o,
     isGift: l = false,
     priceOptions: c
-  } = e, u = (0, s.bG)([h.A], () => h.A.getPremiumTypeSubscription()), d = (0, I.V)(), f = null == d || null == (t = d.subscription_trial) ? true : t.sku_id, p = !!(null == u ? true : u.hasActiveTrial), _ = null != f || p;
+  } = e, u = (0, s.bG)([h.A], () => h.A.getPremiumTypeSubscription()), d = (0, S.V)(), f = null == d || null == (t = d.subscription_trial) ? true : t.sku_id, p = !!(null == u ? true : u.hasActiveTrial), _ = null != f || p;
   return (0, r.jsxs)("div", {
     className: a()(V.Vd, V.Nr, V.g1, o, {
       [V.vt]: !l && _,
@@ -183,15 +183,15 @@ function q(e) {
     className: c,
     isGift: u = false,
     priceOptions: d
-  } = e, f = (0, s.bG)([h.A], () => h.A.getPremiumTypeSubscription()), p = (0, s.bG)([_.default], () => _.default.getCurrentUser()), m = (0, I.V)(), E = null == m || null == (t = m.subscription_trial) ? true : t.sku_id, b = !!(null == f ? true : f.hasActiveTrial), y = b ? null == p ? true : p.premiumType : null, O = null != E || b, A = (0, R.Lj)(y, E);
+  } = e, f = (0, s.bG)([h.A], () => h.A.getPremiumTypeSubscription()), p = (0, s.bG)([_.default], () => _.default.getCurrentUser()), m = (0, S.V)(), E = null == m || null == (t = m.subscription_trial) ? true : t.sku_id, y = !!(null == f ? true : f.hasActiveTrial), b = y ? null == p ? true : p.premiumType : null, O = null != E || y, v = (0, R.Lj)(b, E);
   return (0, r.jsxs)("div", {
     className: a()(V.Vd, V.Nr, c, {
       [V.vt]: !u && O,
       [V.lr]: !u && O
     }),
-    children: [!u && null != A && (0, r.jsxs)(r.Fragment, {
+    children: [!u && null != v && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(R.ir, {
-        text: A,
+        text: v,
         className: V.LW,
         colorOptions: R.at.PREMIUM_TIER_0_WHITE_FILL
       }), (0, r.jsx)("div", {
@@ -241,7 +241,7 @@ function Z(e) {
     enablePremiumBrandRefresh: o = false,
     isApplicationHome: c = false,
     firstFeatureItemClassName: u
-  } = e, d = (0, s.bG)([p.default], () => p.default.locale), f = (0, s.bG)([b.A], () => b.A.affinities), _ = !o && n && !i && f.length > 0, h = 3 === t || 0 === t, m = 3 === t || 0 === t && o && c, g = (() => {
+  } = e, d = (0, s.bG)([p.default], () => p.default.locale), f = (0, s.bG)([y.A], () => y.A.affinities), _ = !o && n && !i && f.length > 0, h = 3 === t || 0 === t, m = 3 === t || 0 === t && o && c, g = (() => {
     switch (t) {
       case 3:
         return L.z9;
@@ -290,7 +290,7 @@ function Q(e) {
     isModal: p = false,
     priceOptions: _,
     showPromotionalGiftBanner: h = false
-  } = e, g = (0, I.V)(), E = null == g || null == (t = g.subscription_trial) ? true : t.sku_id, b = (0, O.ar)(), T = (0, S.O)(), R = null != g ? j.Vk.PREMIUM_TRIAL : null != T ? j.Vk.PREMIUM_DISCOUNT : null, w = (0, y.cg)(), D = !f && b, x = null == (n = (0, A.A)()) ? true : n.planSelection, L = null == x || null == (i = x.getBackgroundImageUrl) ? true : i.call(x), M = null == x || null == (s = x.getCardImageUrl) ? true : s.call(x), k = (0, N._)();
+  } = e, g = (0, S.V)(), E = null == g || null == (t = g.subscription_trial) ? true : t.sku_id, y = (0, O.ar)(), T = (0, I.O)(), R = null != g ? j.Vk.PREMIUM_TRIAL : null != T ? j.Vk.PREMIUM_DISCOUNT : null, w = (0, b.cg)(), D = !f && y, x = null == (n = (0, v.A)()) ? true : n.planSelection, L = null == x || null == (i = x.getBackgroundImageUrl) ? true : i.call(x), M = null == x || null == (s = x.getCardImageUrl) ? true : s.call(x), k = (0, N._)();
   return (0, r.jsxs)("div", {
     className: a()(V.Nr, V.hA, V.aD, d, {
       [V.J5]: D,
@@ -342,7 +342,7 @@ function Q(e) {
           isApplicationHome: true
         })
       })]
-    }), o, h && (0, r.jsx)(v.K, {})]
+    }), o, h && (0, r.jsx)(A.K, {})]
   })
 }
 
@@ -354,11 +354,11 @@ function $(e) {
     showYearlyPrice: p,
     featureSet: g = 0,
     className: E,
-    isGift: b = false,
+    isGift: y = false,
     isModal: T = false,
     priceOptions: D,
     showPromotionalGiftBanner: x = false
-  } = e, L = (0, s.bG)([h.A], () => h.A.getPremiumTypeSubscription()), k = (0, s.bG)([_.default], () => _.default.getCurrentUser()), U = (0, I.V)(), G = null == U || null == (t = U.subscription_trial) ? true : t.sku_id, F = (null == L ? true : L.hasActiveTrial) ? null == k ? true : k.premiumType : null, B = (0, O.ar)(), Y = (0, S.O)(), W = (0, O.k5)(), K = null != G || null != F ? j.Vk.PREMIUM_TRIAL : null != Y || W ? j.Vk.PREMIUM_DISCOUNT : null, z = (0, y.cg)(), q = !b && B, X = null == (n = (0, A.A)()) ? true : n.planSelection, Q = null == X || null == (i = X.getBackgroundImageUrl) ? true : i.call(X), $ = null == X || null == (u = X.getCardImageUrl) ? true : u.call(X), J = (0, N._)(), ee = (0, o.qB)((0, c.Ay)()), et = ee ? R.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL_LIGHT_MODE : R.at.PREMIUM_TIER_2_WHITE_FILL, en = (0, R.rm)(W, F, Y, U, G), er = q && !ee ? V.on : true;
+  } = e, L = (0, s.bG)([h.A], () => h.A.getPremiumTypeSubscription()), k = (0, s.bG)([_.default], () => _.default.getCurrentUser()), U = (0, S.V)(), G = null == U || null == (t = U.subscription_trial) ? true : t.sku_id, F = (null == L ? true : L.hasActiveTrial) ? null == k ? true : k.premiumType : null, B = (0, O.ar)(), Y = (0, I.O)(), W = (0, O.k5)(), K = null != G || null != F ? j.Vk.PREMIUM_TRIAL : null != Y || W ? j.Vk.PREMIUM_DISCOUNT : null, z = (0, b.cg)(), q = !y && B, X = null == (n = (0, v.A)()) ? true : n.planSelection, Q = null == X || null == (i = X.getBackgroundImageUrl) ? true : i.call(X), $ = null == X || null == (u = X.getCardImageUrl) ? true : u.call(X), J = (0, N._)(), ee = (0, o.qB)((0, c.Ay)()), et = ee ? R.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL_LIGHT_MODE : R.at.PREMIUM_TIER_2_WHITE_FILL, en = (0, R.rm)(W, F, Y, U, G), er = q && !ee ? V.on : true;
   return (0, r.jsxs)("div", {
     className: a()(V.Nr, V.hA, E, {
       [V.J5]: q,
@@ -374,7 +374,7 @@ function $(e) {
       className: V.gx,
       alt: "",
       src: Q
-    }), !b && null != en && (0, r.jsxs)(r.Fragment, {
+    }), !y && null != en && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(R.ir, {
         text: en,
         className: V.LW,
@@ -396,14 +396,14 @@ function $(e) {
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(m.A, {
           className: a()(V.DD, V.$l)
-        }), !b && G !== j.pe.TIER_2 && z && (0, r.jsx)("div", {
+        }), !y && G !== j.pe.TIER_2 && z && (0, r.jsx)("div", {
           children: (0, r.jsx)(l.Text, {
             variant: "text-xs/bold",
             className: V.zu,
             children: J
           })
         }), (0, r.jsx)(P.A, {
-          isGift: b,
+          isGift: y,
           premiumTier: j.PremiumTypes.TIER_2,
           offerType: K,
           offerTierMatchesCard: G === j.pe.TIER_2 || (0, C.U9)(Y, j.pe.TIER_2),
@@ -416,12 +416,12 @@ function $(e) {
         children: (0, r.jsx)(Z, {
           featureSet: g,
           isModal: T,
-          isGift: b
+          isGift: y
         })
       })]
-    }), b || G !== j.pe.TIER_2 && null == Y ? null : (0, r.jsx)(w.Wy, {
+    }), y || G !== j.pe.TIER_2 && null == Y ? null : (0, r.jsx)(w.Wy, {
       tier: j.PremiumTypes.TIER_2
-    }), f, x && (0, r.jsx)(v.K, {})]
+    }), f, x && (0, r.jsx)(A.K, {})]
   })
 }
 let J = e => t => {

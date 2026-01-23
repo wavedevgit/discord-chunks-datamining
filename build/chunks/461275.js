@@ -36,7 +36,7 @@ function h() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
   return e
 }
-p && (_ = setInterval(b, a));
+p && (_ = setInterval(y, a));
 let m = new Map;
 
 function g(e) {
@@ -49,10 +49,10 @@ function E() {
   returnfalse
 }
 
-function b() {
-  for (let [e, t] of(E() || "" !== d ? y() : i.log("No violators found"), m)) t.warned = false, t.execTime = 0, t.execCount = 0
+function y() {
+  for (let [e, t] of(E() || "" !== d ? b() : i.log("No violators found"), m)) t.warned = false, t.execTime = 0, t.execCount = 0
 }
-let y = function() {
+let b = function() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 34,
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 20,
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 20,

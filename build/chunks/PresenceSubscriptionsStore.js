@@ -13,68 +13,68 @@ var r, l, Chunk311907 = require("./311907.js"),
 function d(e, t) {
   return "".concat(e, ":").concat(t)
 }
-let f = {},
-  p = {},
-  h = new Chunk451988.J_(3e3, function() {
+let p = {},
+  h = {},
+  f = new Chunk451988.J_(3e3, function() {
     let e = [];
-    for (let [t, n] of Object.entries(p)) e.push(n), f[t] = n, delete p[t];
+    for (let [t, n] of Object.entries(h)) e.push(n), p[t] = n, delete h[t];
     0 !== e.length && o.A.subscribeActivities(e)
   });
 
-function b(e) {
+function g(e) {
   let t = d(e.applicationId, e.partyId);
-  return t in f || t in p
+  return t in p || t in h
 }
 
-function g() {
-  f = {}, p = {}
+function m() {
+  p = {}, h = {}
 }
-class m extends(r = Chunk311907.Ay.Store) {
+class b extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(c.A)
   }
   isSubscribed(e) {
-    return b(e)
+    return g(e)
   }
-}(l = "displayName") in m ? Object.defineProperty(m, l, {
+}(l = "displayName") in b ? Object.defineProperty(b, l, {
   value: "PresenceSubscriptionsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : m[l] = "PresenceSubscriptionsStore";
-let A = new m(Chunk73153.h, {
+}) : b[l] = "PresenceSubscriptionsStore";
+let A = new b(Chunk73153.h, {
   PRESENCE_SUBSCRIPTIONS_ADD: function(e) {
     let {
       subscription: t
     } = e, n = function() {
       let e = false,
         t = Date.now();
-      for (let [n, r] of Object.entries(f)) r.expiresAt < t && (delete f[n], e = true);
       for (let [n, r] of Object.entries(p)) r.expiresAt < t && (delete p[n], e = true);
+      for (let [n, r] of Object.entries(h)) r.expiresAt < t && (delete h[n], e = true);
       return e
     }(), {
       userId: r,
       applicationId: l,
       partyId: i,
-      messageId: a,
-      channelId: s,
+      messageId: s,
+      channelId: a,
       inviteTime: o
     } = t;
-    if (b(t) || o + u.dm < Date.now()) return n;
+    if (g(t) || o + u.dm < Date.now()) return n;
     let c = d(l, i),
-      g = u.dm + Date.now();
-    return p[c] = {
+      m = u.dm + Date.now();
+    return h[c] = {
       userId: r,
       applicationId: l,
       partyId: i,
-      messageId: a,
-      channelId: s,
-      expiresAt: g
-    }, h.delay(), true
+      messageId: s,
+      channelId: a,
+      expiresAt: m
+    }, f.delay(), true
   },
-  CONNECTION_OPEN: g,
-  CONNECTION_RESUMED: g,
+  CONNECTION_OPEN: m,
+  CONNECTION_RESUMED: m,
   LOGOUT: function() {
-    f = {}, p = {}
+    p = {}, h = {}
   }
 })

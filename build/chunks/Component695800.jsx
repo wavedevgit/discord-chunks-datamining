@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Nn: () => u,
-  fI: () => g,
-  p_: () => f
+  fI: () => m,
+  p_: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
@@ -21,8 +21,8 @@ function u(e) {
     maxFileSizeBytes: l,
     onComplete: s,
     showUpsellHeader: a = true,
-    analyticsLocation: c,
-    analyticsLocations: o
+    analyticsLocation: o,
+    analyticsLocations: c
   } = e;
   (0, i.mMO)(async () => {
     let {
@@ -50,26 +50,26 @@ function u(e) {
       onComplete: s,
       uploadType: t,
       showUpsellHeader: a,
-      analyticsLocation: c,
-      analyticsLocations: o
+      analyticsLocation: o,
+      analyticsLocations: c
     }, n))
   })
 }
 
-function f(e) {
+function g(e) {
   let {
     guild: t,
     analyticsLocations: n,
     analyticsSection: r,
     analyticsObject: i,
     perks: s,
-    targetPremiumGuildTier: o
+    targetPremiumGuildTier: c
   } = e;
   (0, l.zV)(d.HAw.PREMIUM_GUILD_PROMOTION_OPENED, {
     location: {
       section: r,
       object: d.ZSU.LEARN_MORE,
-      objectType: o ? (0, c.k1)(o) : true
+      objectType: c ? (0, o.k1)(c) : true
     },
     guild_id: t.id,
     location_stack: n
@@ -85,7 +85,7 @@ function f(e) {
   })
 }
 
-function g(e, t, n, r) {
+function m(e, t, n, r) {
   let i = null == r ? true : r.type,
     l = {
       page: d.liQ.GUILD_SETTINGS,
@@ -113,7 +113,7 @@ function g(e, t, n, r) {
         isGIF: true
       });
       return
-    } o.A.updateGuild({
+    } c.A.updateGuild({
     banner: n
   })
 }

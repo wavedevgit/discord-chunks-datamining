@@ -17,18 +17,18 @@ function o(e) {
   return e.toLowerCase()
 }
 
-function c(e) {
+function u(e) {
   return i.has(e)
 }
 
-function u(e) {
+function c(e) {
   return 0 === e.length
 }
 
 function E(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = e.length >= 3 && e.length <= 12 && t,
-    l = new Set(r()(e.split(/\W+/)).map(s).reject(u).map(o).reject(c).map(a.U).value());
+    l = new Set(r()(e.split(/\W+/)).map(s).reject(c).map(o).reject(u).map(a.U).value());
   return e => (function e(t, n, l) {
     if (Array.isArray(t)) t.forEach(t => e(t, n, l));
     else if ("list" === t.type) t.items.forEach(t => e(t, n, l));
@@ -38,7 +38,7 @@ function E(e) {
       t.content.split(/(\W+)/g).forEach(t => {
         ! function(e, t) {
           let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-          if (u(e = o(s(e))) || c(e)) returnfalse;
+          if (c(e = o(s(e))) || u(e)) returnfalse;
           let l = (0, a.U)(e);
           if (n) {
             for (let e of t.values())

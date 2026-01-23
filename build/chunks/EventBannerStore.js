@@ -7,7 +7,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk988794 = require("./988794.js");
 
-function s(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,7 +23,7 @@ function o(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -45,7 +45,7 @@ class u extends(r = Chunk311907.Ay.PersistedStore) {
     }
   }
 }
-s(u, "displayName", "EventBannerStore"), s(u, "persistKey", "EventBanner");
+a(u, "displayName", "EventBannerStore"), a(u, "persistKey", "EventBanner");
 let d = new u(Chunk73153.h, {
   EVENT_BANNER_DISMISS: function(e) {
     var t, n;
@@ -69,7 +69,7 @@ let d = new u(Chunk73153.h, {
     let {
       guildScheduledEvent: t
     } = e;
-    if (t.status !== a.XG.CANCELED && t.status !== a.XG.COMPLETED || null == c[t.id]) returnfalse;
+    if (t.status !== s.XG.CANCELED && t.status !== s.XG.COMPLETED || null == c[t.id]) returnfalse;
     let n = o({}, c);
     delete n[t.id], c = n
   },

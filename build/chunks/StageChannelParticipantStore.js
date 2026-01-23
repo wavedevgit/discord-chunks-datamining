@@ -26,7 +26,7 @@ var r, Chunk812729 = require("./812729.js"),
   Chunk312006 = require("./312006.js"),
   Chunk446600 = require("./446600.js");
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -68,7 +68,7 @@ function x(e) {
 
 function L(e) {
   let t = R[e];
-  return null == t && (t = new A.Ay(e), R[e] = t, t.rebuild()), t
+  return null == t && (t = new v.Ay(e), R[e] = t, t.rebuild()), t
 }
 
 function j(e) {
@@ -208,7 +208,7 @@ function J(e) {
 let ee = [];
 class et extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(p.default, b.default, _.A, E.A, y.A, m.A, O.Ay, h.A, v.Ay, g.A, S.A, f.A)
+    this.waitFor(p.default, y.default, _.A, E.A, b.A, m.A, O.Ay, h.A, A.Ay, g.A, I.A, f.A)
   }
   getParticipantsVersion(e) {
     var t, n;
@@ -241,7 +241,7 @@ class et extends(r = Chunk311907.Ay.Store) {
     return null != (n = null == (r = x(e)) ? true : r.getParticipant(t)) ? n : null
   }
 }
-I(et, "displayName", "StageChannelParticipantStore");
+S(et, "displayName", "StageChannelParticipantStore");
 let en = new et(Chunk73153.h, {
   CONNECTION_OPEN: F,
   OVERLAY_INITIALIZE: F,

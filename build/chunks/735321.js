@@ -2,17 +2,17 @@
 /** chunk id: 735321, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  FM: () => b,
+  FM: () => y,
   L: () => E,
   R_: () => L,
   Un: () => j,
   XX: () => B,
   Y5: () => N,
-  cv: () => v,
+  cv: () => A,
   ef: () => M,
   ew: () => x,
   g1: () => V,
-  mS: () => A,
+  mS: () => v,
   nS: () => F,
   oc: () => D,
   qA: () => R,
@@ -20,7 +20,7 @@ require.d(exports, {
   tg: () => P,
   uA: () => k,
   y9: () => O,
-  yy: () => y
+  yy: () => b
 }), require("./896048.js"), require("./638769.js");
 var Chunk926675 = require("./926675.js"),
   Chunk761915 = require("./761915.js"),
@@ -74,7 +74,7 @@ function g(e, t) {
 }
 let E = e => f.Ok[e.type](e);
 
-function b(e, t) {
+function y(e, t) {
   let {
     isCurrentUser: n
   } = t, i = e.games.length > 0;
@@ -83,7 +83,7 @@ function b(e, t) {
   })
 }
 
-function y(e) {
+function b(e) {
   var t;
   return (null == e || null == (t = e.widgets) ? true : t.some(l.fu)) === true
 }
@@ -92,33 +92,33 @@ function O(e) {
   return f._u.includes(e)
 }
 
-function A(e) {
+function v(e) {
   return f.gk.includes(e)
 }
 
-function v(e) {
+function A(e) {
   return e in r.um ? r.um[e] : 0
 }
 
-function S() {
+function I() {
   var e;
   let t = o.default.getCurrentUser(),
     n = null != t ? c.A.getUserProfile(t.id) : null;
   return null != (e = null == n ? true : n.widgets) ? e : []
 }
 
-function I() {
+function S() {
   var e;
-  return d.A.hasPendingChanges() ? null != (e = d.A.getPendingWidgets()) ? e : [] : S()
+  return d.A.hasPendingChanges() ? null != (e = d.A.getPendingWidgets()) ? e : [] : I()
 }
 
 function T(e) {
   var t;
-  return null != (t = I().filter(l.fu).find(t => t.type === e)) ? t : null
+  return null != (t = S().filter(l.fu).find(t => t.type === e)) ? t : null
 }
 
 function C(e) {
-  let t = I(),
+  let t = S(),
     n = t.findIndex(t => t.getUniqueKey() === e.getUniqueKey());
   if (false === n) return [e, ...t];
   {
@@ -128,12 +128,12 @@ function C(e) {
 }
 
 function N(e) {
-  let t = I();
+  let t = S();
   null == t.find(t => t.getUniqueKey() === e.getUniqueKey()) && u.A.setPendingWidgets([e, ...t])
 }
 
 function R(e) {
-  let t = I().filter(t => t.getUniqueKey() !== e.getUniqueKey());
+  let t = S().filter(t => t.getUniqueKey() !== e.getUniqueKey());
   u.A.setPendingWidgets(t)
 }
 
@@ -186,7 +186,7 @@ function x(e) {
       ignoreMaxGames: d = false
     } = e,
     f = T(o),
-    p = v(o);
+    p = A(o);
   if (null != f) {
     let e = null != (t = null == (r = f.games) ? true : r.length) ? t : 0;
     if (!d && e >= p || (null != (n = f.games) ? n : []).some(e => e.applicationId === c.applicationId)) return
@@ -207,7 +207,7 @@ function x(e) {
 
 function L(e, t) {
   if (e === t) return;
-  let n = I();
+  let n = S();
   if (e < 0 || e >= n.length || t < 0 || t >= n.length) return;
   let r = [...n],
     [i] = r.splice(e, 1);
@@ -238,7 +238,7 @@ function M(e, t) {
 }
 
 function k(e) {
-  let t = v(e.type);
+  let t = A(e.type);
   return e.games.length >= t
 }
 
@@ -248,7 +248,7 @@ function U(e) {
 
 function G(e, t, n) {
   if (e.applicationId !== t.applicationId || O(n) && U(e.comment) !== U(t.comment)) returnfalse;
-  if (A(n)) {
+  if (v(n)) {
     let n = U(e.tags),
       r = U(t.tags);
     if (null === n != (null === r) || null !== n && null !== r && (n.length !== r.length || !n.every((e, t) => e === r[t]))) returnfalse

@@ -2,7 +2,7 @@
 /** chunk id: 65995, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
@@ -102,7 +102,7 @@ function E(e) {
   if (null == d[t]) returnfalse;
   delete d[t]
 }
-class b extends(r = Chunk311907.Ay.Store) {
+class y extends(r = Chunk311907.Ay.Store) {
   getCompletedActions(e) {
     return null == e ? null : d[e]
   }
@@ -117,8 +117,8 @@ class b extends(r = Chunk311907.Ay.Store) {
     }
   }
 }
-s(b, "displayName", "GuildOnboardingMemberActionStore");
-let y = new b(Chunk73153.h, {
+s(y, "displayName", "GuildOnboardingMemberActionStore");
+let b = new y(Chunk73153.h, {
   GUILD_NEW_MEMBER_ACTIONS_FETCH_START: h,
   GUILD_NEW_MEMBER_ACTIONS_FETCH_SUCCESS: _,
   GUILD_NEW_MEMBER_ACTIONS_FETCH_FAIL: m,

@@ -34,17 +34,17 @@ function O(e) {
   } = e;
   return (0, m.W$)() ? (0, a.jsx)(o.Text, {
     variant: "text-xs/medium",
-    children: A.intl.format(_.default.htWh1G, {
+    children: A.intl.format(y.default.htWh1G, {
       handleOnHelpUrlHook: () => {
-        f.A.openUrl(y.d$.LEARN_MORE_UU_APPEAL_LINK), (0, x.St)(t, x.WU.EXPRESSIVE_PRIMARY, x._7.LEARN_MORE)
+        x.A.openUrl(_.d$.LEARN_MORE_UU_APPEAL_LINK), (0, g.St)(t, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
       }
     })
-  }) : n === x.q1.SAFETY_FLOWS ? (0, a.jsx)(o.QWc, {
+  }) : n === g.q1.SAFETY_FLOWS ? (0, a.jsx)(o.QWc, {
     size: "sm",
     textVariant: "text-sm/medium",
     text: A.intl.string(A.t["2jxGer"]),
     onClick: () => {
-      (0, x.St)(t, x.WU.EXPRESSIVE_PRIMARY, x._7.LOG_OUT), (0, u.k)("age_verification_get_started_modal")
+      (0, g.St)(t, g.WU.EXPRESSIVE_PRIMARY, g._7.LOG_OUT), (0, u.k)("age_verification_get_started_modal")
     }
   }) : null
 }
@@ -53,35 +53,35 @@ let E = function(e) {
     transitionState: t,
     entryPoint: n,
     onClose: u,
-    onComplete: y,
+    onComplete: _,
     dismissable: E,
-    classificationId: N
-  } = e, [T, I] = l.useState(s.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), k = l.useRef(T), [w, P] = (0, c.kn)([T], true, true), R = l.useMemo(() => (0, i.A)(), []), D = l.useRef(false), M = (0, m.W$)();
+    classificationId: T
+  } = e, [N, w] = l.useState(s.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), I = l.useRef(N), [k, P] = (0, c.kn)([N], true, true), R = l.useMemo(() => (0, r.A)(), []), D = l.useRef(false), M = (0, m.W$)();
   l.useEffect(() => {
-    k.current = w
-  }, [w]);
+    I.current = k
+  }, [k]);
   let {
     loading: L,
     ageVerificationMethods: U
   } = (0, v.A)({
     onClose: () => {
-      null == y || y(), u()
+      null == _ || _(), u()
     },
     onMethodClick: () => {
-      I(s.M.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
+      w(s.M.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
     },
-    classificationId: N
+    classificationId: T
   });
   return l.useLayoutEffect(() => () => {
     if (D.current) return;
-    let e = k.current;
+    let e = I.current;
     null != e && (D.current = true, p.A.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_get_started_modal",
       visibleContent: e
     }))
   }, []), l.useEffect(() => {
-    (0, x.Bs)(R, x.WU.EXPRESSIVE_PRIMARY, n)
-  }, [R, n]), (0, a.jsx)(r.ExpressiveModal, {
+    (0, g.Bs)(R, g.WU.EXPRESSIVE_PRIMARY, n)
+  }, [R, n]), (0, a.jsx)(i.ExpressiveModal, {
     transitionState: t,
     onClose: u,
     gradientColor: "blue",
@@ -90,9 +90,9 @@ let E = function(e) {
       type: "image",
       src: S.A
     },
-    title: (0, g.ST)(n),
-    subtitle: (0, g.mK)(n, () => {
-      f.A.openUrl(h.A.getArticleURL(j.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, x.St)(R, x.WU.EXPRESSIVE_PRIMARY, x._7.LEARN_MORE)
+    title: (0, b.ST)(n),
+    subtitle: (0, b.mK)(n, () => {
+      x.A.openUrl(h.A.getArticleURL(j.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, g.St)(R, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
     }, M),
     actionBarInput: (0, a.jsx)(O, {
       modalSessionId: R,
@@ -119,7 +119,7 @@ let E = function(e) {
         }), (0, a.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "text-feedback-info",
-          children: A.intl.string(_.default.ar3a3q)
+          children: A.intl.string(y.default.ar3a3q)
         })]
       }), null == U || 0 === U.length ? (0, a.jsxs)(o.BJc, {
         direction: "vertical",
@@ -128,13 +128,13 @@ let E = function(e) {
         children: [(0, a.jsx)(o.Text, {
           variant: "text-xs/medium",
           color: "text-subtle",
-          children: A.intl.string(_.default.cR6336)
+          children: A.intl.string(y.default.cR6336)
         }), (0, a.jsx)(o.Button, {
           variant: "primary",
           size: "sm",
-          text: A.intl.string(_.default.hDvmYP),
+          text: A.intl.string(y.default.hDvmYP),
           onClick: () => {
-            (0, b.DJ)()
+            (0, f.DJ)()
           }
         })]
       }) : (0, a.jsx)(o.BJc, {

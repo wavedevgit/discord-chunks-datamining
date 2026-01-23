@@ -42,20 +42,20 @@ var o = function() {
       if (g * E <= 0) h.push(0);
       else {
         i = f[m];
-        var b = f[m + 1],
-          y = i + b;
-        h.push(3 * y / ((y + b) / g + (y + i) / E))
+        var y = f[m + 1],
+          b = i + y;
+        h.push(3 * b / ((b + y) / g + (b + i) / E))
       }
     }
     h.push(p[p.length - 1]);
-    for (var O = [], A = [], v = 0; v < h.length - 1; v++) {
-      o = p[v];
-      var S = h[v],
-        I = 1 / f[v],
-        T = S + h[v + 1] - o - o;
-      O.push((o - S - T) * I), A.push(T * I * I)
+    for (var O = [], v = [], A = 0; A < h.length - 1; A++) {
+      o = p[A];
+      var I = h[A],
+        S = 1 / f[A],
+        T = I + h[A + 1] - o - o;
+      O.push((o - I - T) * S), v.push(T * S * S)
     }
-    this.xs = t, this.ys = n, this.c1s = h, this.c2s = O, this.c3s = A
+    this.xs = t, this.ys = n, this.c1s = h, this.c2s = O, this.c3s = v
   }
   return a(e, [{
     key: "interpolate",

@@ -59,7 +59,7 @@ function E(e, t, n) {
   h.set(n, a), a.add(e)
 }
 
-function b(e, t, n, r) {
+function y(e, t, n, r) {
   let i = n.find(e => null != e.party && e.party.id),
     a = null != i && null != i.party ? i.party.id : null,
     s = m(t, e);
@@ -71,7 +71,7 @@ function b(e, t, n, r) {
   E(t, e, a)
 }
 
-function y(e) {
+function b(e) {
   let {
     guilds: t,
     presences: n
@@ -81,8 +81,8 @@ function y(e) {
       status: t,
       activities: i
     }
-    of n) null != e && false !== b(d.ME, e.id, i, t) && (r = true);
-  for (let e of t) false !== A({
+    of n) null != e && false !== y(d.ME, e.id, i, t) && (r = true);
+  for (let e of t) false !== v({
     guild: e
   }) && (r = true);
   return r
@@ -96,7 +96,7 @@ function O(e) {
   h = new Map, _ = p({}, n), Object.keys(t).forEach(e => h.set(e, new Set(t[e])))
 }
 
-function A(e) {
+function v(e) {
   let {
     guild: t
   } = e, n = false;
@@ -105,11 +105,11 @@ function A(e) {
       status: r,
       activities: i
     }
-    of t.presences) false !== b(t.id, e.id, i, r) && (n = true);
+    of t.presences) false !== y(t.id, e.id, i, r) && (n = true);
   return n
 }
 
-function v(e) {
+function A(e) {
   let {
     presences: t
   } = e, n = false;
@@ -117,11 +117,11 @@ function v(e) {
       user: e,
       activities: r
     }
-    of t) null != e && false !== b(d.ME, e.id, r) && (n = true);
+    of t) null != e && false !== y(d.ME, e.id, r) && (n = true);
   return n
 }
 
-function S(e) {
+function I(e) {
   let {
     updates: t
   } = e;
@@ -132,11 +132,11 @@ function S(e) {
       status: r,
       activities: i
     } = e;
-    return b(null != t ? t : d.ME, n.id, i, r)
+    return y(null != t ? t : d.ME, n.id, i, r)
   }).some(e => e)
 }
 
-function I(e) {
+function S(e) {
   let {
     guildId: t,
     members: n
@@ -155,14 +155,14 @@ function T(e) {
 function C(e, t) {
   let n = false;
   return t.forEach(t => {
-    null != t && b(e, t.user.id, t.activities, t.status) && (n = true)
+    null != t && y(e, t.user.id, t.activities, t.status) && (n = true)
   }), n
 }
 
 function N() {
   let e = l.default.getId(),
     t = u.A.getActivities();
-  return b(d.ME, e, t)
+  return y(d.ME, e, t)
 }
 
 function R(e) {
@@ -204,12 +204,12 @@ class P extends(r = Chunk311907.Ay.Store) {
 }
 f(P, "displayName", "GamePartyStore");
 let D = new P(Chunk73153.h, {
-  CONNECTION_OPEN_SUPPLEMENTAL: y,
+  CONNECTION_OPEN_SUPPLEMENTAL: b,
   OVERLAY_INITIALIZE: O,
-  GUILD_CREATE: A,
-  PRESENCES_REPLACE: v,
-  PRESENCE_UPDATES: S,
-  THREAD_MEMBER_LIST_UPDATE: I,
+  GUILD_CREATE: v,
+  PRESENCES_REPLACE: A,
+  PRESENCE_UPDATES: I,
+  THREAD_MEMBER_LIST_UPDATE: S,
   THREAD_MEMBERS_UPDATE: T,
   RELATIONSHIP_ADD: R,
   RELATIONSHIP_UPDATE: R,

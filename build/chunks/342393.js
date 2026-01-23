@@ -114,17 +114,17 @@
   function _(e) {
     return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e
   }
-  var h, m, g, E, b = {
+  var h, m, g, E, y = {
     exports: {}
   };
 
-  function y() {
+  function b() {
     return m ? h : (m = 1, h = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED")
   }
-  b.exports = (function() {
+  y.exports = (function() {
     if (E) return g;
     E = 1;
-    var e = y();
+    var e = b();
 
     function t() {}
 
@@ -166,8 +166,8 @@
       return a.PropTypes = a, a
     }
   })()();
-  var O = _(b.exports),
-    A = function(e, n, r) {
+  var O = _(y.exports),
+    v = function(e, n, r) {
       var i = !!r,
         a = t.useRef(r);
       t.useEffect(function() {
@@ -183,24 +183,24 @@
           }
       }, [i, n, e, a])
     },
-    v = function(e) {
+    A = function(e) {
       var n = t.useRef(e);
       return t.useEffect(function() {
         n.current = e
       }, [e]), n.current
     },
-    S = function(e) {
+    I = function(e) {
       return null !== e && "object" === i(e)
     },
-    I = function(e) {
-      return S(e) && "function" == typeof e.then
+    S = function(e) {
+      return I(e) && "function" == typeof e.then
     },
     T = function(e) {
-      return S(e) && "function" == typeof e.elements && "function" == typeof e.createToken && "function" == typeof e.createPaymentMethod && "function" == typeof e.confirmCardPayment
+      return I(e) && "function" == typeof e.elements && "function" == typeof e.createToken && "function" == typeof e.createPaymentMethod && "function" == typeof e.confirmCardPayment
     },
     C = "[object Object]",
     N = function e(t, n) {
-      if (!S(t) || !S(n)) return t === n;
+      if (!I(t) || !I(n)) return t === n;
       var r = Array.isArray(t);
       if (r !== Array.isArray(n)) returnfalse;
       var i = Object.prototype.toString.call(t) === C;
@@ -221,8 +221,8 @@
       return u.every(p)
     },
     R = function(e, t, n) {
-      return S(e) ? Object.keys(e).reduce(function(i, s) {
-        var o = !S(t) || !N(e[s], t[s]);
+      return I(e) ? Object.keys(e).reduce(function(i, s) {
+        var o = !I(t) || !N(e[s], t[s]);
         return n.includes(s) ? (o && console.warn("Unsupported prop change: options.".concat(s, " is not a mutable property.")), i) : o ? r(r({}, i || {}), {}, a({}, s, e[s])) : i
       }, null) : null
     },
@@ -234,7 +234,7 @@
     },
     D = function(e) {
       var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : w;
-      if (I(e)) return {
+      if (S(e)) return {
         tag: "async",
         stripePromise: Promise.resolve(e).then(function(e) {
           return P(e, t)
@@ -296,11 +296,11 @@
             e = false
           }
       }, [a, o, r]);
-      var u = v(n);
+      var u = A(n);
       t.useEffect(function() {
         null !== u && u !== n && console.warn("Unsupported prop change on Elements: You cannot change the `stripe` prop after setting it.")
       }, [u, n]);
-      var d = v(r);
+      var d = A(r);
       return t.useEffect(function() {
         if (o.elements) {
           var e = R(r, d, ["clientSecret", "fonts"]);
@@ -384,12 +384,12 @@
             e = false
           }
       }, [a, d, r, c]);
-      var h = v(n);
+      var h = A(n);
       t.useEffect(function() {
         null !== h && h !== n && console.warn("Unsupported prop change on CheckoutProvider: You cannot change the `stripe` prop after setting it.")
       }, [h, n]);
-      var m = v(r),
-        g = v(d.checkoutSdk);
+      var m = A(r),
+        g = A(d.checkoutSdk);
       t.useEffect(function() {
         if (d.checkoutSdk) {
           var e, t, n = null == m || null == (e = m.elementsOptions) ? true : e.appearance,
@@ -451,11 +451,11 @@
             m = n.onClick,
             g = n.onLoadError,
             E = n.onLoaderStart,
-            b = n.onNetworksChange,
-            y = n.onConfirm,
+            y = n.onNetworksChange,
+            b = n.onConfirm,
             O = n.onCancel,
-            S = n.onShippingAddressChange,
-            I = n.onShippingRateChange,
+            I = n.onShippingAddressChange,
+            S = n.onShippingRateChange,
             T = q("mounts <".concat(r, ">")),
             C = "elements" in T ? T.elements : null,
             N = "checkoutSdk" in T ? T.checkoutSdk : null,
@@ -464,9 +464,9 @@
             D = w[1],
             x = t.useRef(null),
             L = t.useRef(null);
-          A(P, "blur", d), A(P, "focus", f), A(P, "escape", h), A(P, "click", m), A(P, "loaderror", g), A(P, "loaderstart", E), A(P, "networkschange", b), A(P, "confirm", y), A(P, "cancel", O), A(P, "shippingaddresschange", S), A(P, "shippingratechange", I), A(P, "change", _), p && (i = "expressCheckout" === e ? p : function() {
+          v(P, "blur", d), v(P, "focus", f), v(P, "escape", h), v(P, "click", m), v(P, "loaderror", g), v(P, "loaderstart", E), v(P, "networkschange", y), v(P, "confirm", b), v(P, "cancel", O), v(P, "shippingaddresschange", I), v(P, "shippingratechange", S), v(P, "change", _), p && (i = "expressCheckout" === e ? p : function() {
             p(P)
-          }), A(P, "ready", i), t.useLayoutEffect(function() {
+          }), v(P, "ready", i), t.useLayoutEffect(function() {
             if (null === x.current && null !== L.current && (C || N)) {
               var t = null;
               if (N) switch (e) {
@@ -494,7 +494,7 @@
               x.current = t, D(t), t && t.mount(L.current)
             }
           }, [C, N, u]);
-          var j = v(u);
+          var j = A(u);
           return t.useEffect(function() {
             if (x.current) {
               var e = R(u, j, ["paymentRequest"]);
@@ -586,11 +586,11 @@
       }, [u.embeddedCheckout]), t.useEffect(function() {
         x(o)
       }, [o]);
-      var f = v(n);
+      var f = A(n);
       t.useEffect(function() {
         null !== f && f !== n && console.warn("Unsupported prop change on EmbeddedCheckoutProvider: You cannot change the `stripe` prop after setting it.")
       }, [f, n]);
-      var p = v(r);
+      var p = A(r);
       return t.useEffect(function() {
         if (null != p) {
           if (null == r) return void console.warn("Unsupported prop change on EmbeddedCheckoutProvider: You cannot unset options after setting them.");
@@ -642,14 +642,14 @@
     em = $("p24Bank", J),
     eg = $("epsBank", J),
     eE = $("payment", J),
-    eb = $("expressCheckout", J),
-    ey = $("currencySelector", J),
+    ey = $("expressCheckout", J),
+    eb = $("currencySelector", J),
     eO = $("paymentRequestButton", J),
-    eA = $("linkAuthentication", J),
-    ev = $("address", J),
-    eS = $("shippingAddress", J),
-    eI = $("paymentMethodMessaging", J),
+    ev = $("linkAuthentication", J),
+    eA = $("address", J),
+    eI = $("shippingAddress", J),
+    eS = $("paymentMethodMessaging", J),
     eT = $("affirmMessage", J),
     eC = $("afterpayClearpayMessage", J);
-  e.AddressElement = ev, e.AffirmMessageElement = eT, e.AfterpayClearpayMessageElement = eC, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CheckoutProvider = K, e.CurrencySelectorElement = ey, e.Elements = M, e.ElementsConsumer = G, e.EmbeddedCheckout = es, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = eb, e.FpxBankElement = ep, e.IbanElement = e_, e.IdealBankElement = eh, e.LinkAuthenticationElement = eA, e.P24BankElement = em, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eI, e.PaymentRequestButtonElement = eO, e.ShippingAddressElement = eS, e.useCheckout = X, e.useElements = U, e.useStripe = eo
+  e.AddressElement = eA, e.AffirmMessageElement = eT, e.AfterpayClearpayMessageElement = eC, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CheckoutProvider = K, e.CurrencySelectorElement = eb, e.Elements = M, e.ElementsConsumer = G, e.EmbeddedCheckout = es, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = ey, e.FpxBankElement = ep, e.IbanElement = e_, e.IdealBankElement = eh, e.LinkAuthenticationElement = ev, e.P24BankElement = em, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eS, e.PaymentRequestButtonElement = eO, e.ShippingAddressElement = eI, e.useCheckout = X, e.useElements = U, e.useStripe = eo
 })

@@ -2,7 +2,7 @@
 /** chunk id: 412977, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,10 +15,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk690450 = require("./690450.js");
 
-function g(e) {
+function m(e) {
   let {
     guild: t
-  } = e, l = t.verificationLevel, g = i.useMemo(() => (0, c.RU)(l), [l]);
+  } = e, l = t.verificationLevel, m = i.useMemo(() => (0, o.RU)(l), [l]);
   return (0, r.jsxs)(a.DUT, {
     onClick: () => (0, a.mMO)(async () => {
       let {
@@ -58,9 +58,9 @@ function g(e) {
         }), i))
       }
     }),
-    className: s()(f.ph, f.vk),
+    className: s()(g.ph, g.vk),
     children: [(0, r.jsxs)("div", {
-      className: f.Ly,
+      className: g.Ly,
       children: [(0, r.jsx)(a.Heading, {
         variant: "text-md/semibold",
         color: "text-strong",
@@ -70,11 +70,11 @@ function g(e) {
         color: "text-default",
         children: u.intl.string(u.t.mA17eD)
       }), (0, r.jsx)("div", {
-        className: f.__invalid_pillRow,
+        className: g.__invalid_pillRow,
         children: (0, r.jsxs)(a.Text, {
           variant: "text-xs/medium",
           color: "interactive-text-default",
-          className: f.Lp,
+          className: g.Lp,
           children: [l === d.PvD.VERY_HIGH ? (0, r.jsx)(a.u6o, {
             size: "custom",
             color: "currentColor",
@@ -85,14 +85,14 @@ function g(e) {
             color: "currentColor",
             width: 16,
             height: 16
-          }), g]
+          }), m]
         })
       })]
-    }), (0, r.jsx)(o.A, {
+    }), (0, r.jsx)(c.A, {
       height: 24,
       width: 24,
-      direction: o.A.Directions.RIGHT,
-      className: f.OW
+      direction: c.A.Directions.RIGHT,
+      className: g.OW
     })]
   })
 }

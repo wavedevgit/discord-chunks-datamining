@@ -100,7 +100,7 @@ let p = {
           qos: u,
           silence_warning: d,
           deaf: p,
-          mute: f
+          mute: h
         }
       } = e;
       if (t && (null != t.device_id && i.A.setInputDevice(t.device_id), null != t.volume && i.A.setInputVolume(t.volume)), n && (null != n.device_id && i.A.setOutputDevice(n.device_id), null != n.volume && i.A.setOutputVolume(n.volume)), r) {
@@ -112,9 +112,9 @@ let p = {
         let e = l.A.isSelfDeaf();
         (e && !p || !e && p) && i.A.toggleSelfDeaf()
       }
-      if (null != f) {
+      if (null != h) {
         let e = l.A.isSelfMute();
-        (e && !f || !e && f) && i.A.toggleSelfMute()
+        (e && !h || !e && h) && i.A.toggleSelfMute()
       }
       return (0, c.l6)()
     }

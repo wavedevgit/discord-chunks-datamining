@@ -55,7 +55,7 @@ function g(e, t) {
 let E = () => (0, a.jsx)(c.cGx, {
     className: p.yF
   }),
-  b = e => {
+  y = e => {
     let {
       children: t
     } = e;
@@ -64,14 +64,14 @@ let E = () => (0, a.jsx)(c.cGx, {
       children: t
     })
   };
-class y extends(r = Chunk64700.PureComponent) {
+class b extends(r = Chunk64700.PureComponent) {
   render() {
     return (0, a.jsx)(d.I, g(h({}, this.props), {
       size: "sm"
     }))
   }
 }
-_(y, "defaultProps", {
+_(b, "defaultProps", {
   autoFocus: true
 });
 class O extends(i = Chunk64700.PureComponent) {
@@ -87,4 +87,4 @@ class O extends(i = Chunk64700.PureComponent) {
     })
   }
 }
-_(O, "SearchBar", y), _(O, "Item", Chunk882530.A), _(O, "Divider", E), _(O, "Empty", b)
+_(O, "SearchBar", b), _(O, "Item", Chunk882530.A), _(O, "Divider", E), _(O, "Empty", y)

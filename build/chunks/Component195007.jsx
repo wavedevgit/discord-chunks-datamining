@@ -16,7 +16,7 @@ var Chunk311907 = require("./311907.js"),
 function d(e) {
   let {
     channel: t
-  } = e, n = (0, l.bG)([s.Ay], () => s.Ay.getVoiceStatesForChannel(t));
+  } = e, n = (0, l.bG)([a.Ay], () => a.Ay.getVoiceStatesForChannel(t));
   return (0, r.jsxs)("div", {
     className: u.zr,
     children: [(0, r.jsx)(i.Text, {
@@ -27,7 +27,7 @@ function d(e) {
       })
     }), (0, r.jsx)(i.HOs, {
       className: u.XG,
-      children: (0, r.jsx)(a.A, {
+      children: (0, r.jsx)(s.A, {
         allowDragging: false,
         allowPreviews: false,
         className: u.Xk,

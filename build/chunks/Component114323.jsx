@@ -29,7 +29,7 @@ var Chunk73510 = require("./73510.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk31639 = require("./31639.js");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,14 +38,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -61,7 +61,7 @@ function C() {
     let {
       default: e
     } = await n.e("76429").then(n.bind(n, 717020));
-    return t => (0, r.jsx)(e, I({}, t))
+    return t => (0, r.jsx)(e, S({}, t))
   })
 }
 
@@ -71,10 +71,10 @@ function N(e) {
 let R = {
   sentinel: "/",
   stores: [Chunk861382.A, Chunk264322.Ay, Chunk576705.A],
-  matches: (e, t, n, r, i) => i.commands !== y.Ze.DISABLED && null == f.A.getActiveCommand(e.id) && (r || i.commands !== y.Ze.OLD_BUILT_INS),
+  matches: (e, t, n, r, i) => i.commands !== b.Ze.DISABLED && null == f.A.getActiveCommand(e.id) && (r || i.commands !== b.Ze.OLD_BUILT_INS),
   queryResults(e, t, n, r, i) {
-    if (0 === n.length && r.commands !== y.Ze.OLD_BUILT_INS) return T;
-    if (r.commands === y.Ze.OLD_BUILT_INS) {
+    if (0 === n.length && r.commands !== b.Ze.OLD_BUILT_INS) return T;
+    if (r.commands === b.Ze.OLD_BUILT_INS) {
       let r = (0, l.Ez)([s.kc.CHAT], false, false),
         i = RegExp("^".concat(E.A.escape(n)), "i"),
         a = (0, _.PV)(r, i, {
@@ -134,15 +134,15 @@ let R = {
       options: o,
       onHover: l,
       onClick: c
-    } = e, u = (0, h.Yn)(a, s), d = o.commands === y.Ze.OLD_BUILT_INS;
-    return (0, b.GM)({
+    } = e, u = (0, h.Yn)(a, s), d = o.commands === b.Ze.OLD_BUILT_INS;
+    return (0, y.GM)({
       query: u.text,
       selectedIndex: n,
       autocompletes: t,
       onHover: l,
       onClick: c,
-      titleWithQuery: A.t.HFRoZR,
-      titleWithoutQuery: A.intl.string(A.t["0hKkS+"]),
+      titleWithQuery: v.t.HFRoZR,
+      titleWithoutQuery: v.intl.string(v.t["0hKkS+"]),
       getQuery: e => "".concat("/").concat(e),
       Component: d ? m.Ay.Command : m.Ay.NewCommand,
       getProps: e => {
@@ -160,11 +160,11 @@ let R = {
         }
       },
       key: "commands",
-      headerClassName: d ? v.Y : null,
+      headerClassName: d ? A.Y : null,
       headerTrailingContent: d && (0, r.jsx)(i.QWc, {
         size: "xs",
         onClick: C,
-        text: A.intl.string(A.t["8a0P0y"])
+        text: v.intl.string(v.t["8a0P0y"])
       })
     })
   },
@@ -184,7 +184,7 @@ let R = {
       section: u
     } = t[n];
     if (c.inputType === p.y$.PLACEHOLDER) return null;
-    if (i.commands === y.Ze.OLD_BUILT_INS) i.insertText(N(c));
+    if (i.commands === b.Ze.OLD_BUILT_INS) i.insertText(N(c));
     else {
       let e = s;
       null == e && (e = l ? p.Oh.QUERY : p.Oh.DISCOVERY), o.Gf({
@@ -196,7 +196,7 @@ let R = {
       })
     }
     return {
-      type: y.kc.COMMAND
+      type: b.kc.COMMAND
     }
   }
 }

@@ -33,62 +33,62 @@ function k(e) {
     transitionState: E
   } = e, O = (0, o.bG)([b.A], () => b.A.getGuild(n), [n]);
   s()(null != O, "");
-  let [x, A] = i.useState(null), {
+  let [x, A] = r.useState(null), {
     query: T,
     results: M,
     setQuery: P
-  } = j(n), [S, I] = i.useState({}), q = i.useMemo(() => Object.keys(S).length, [S]), N = q + w >= f.iW, V = i.useMemo(() => M.filter(e => {
+  } = j(n), [S, I] = r.useState({}), _ = r.useMemo(() => Object.keys(S).length, [S]), q = _ + w >= f.iW, N = r.useMemo(() => M.filter(e => {
     let t = (0, p.Eu)(e.id, e.type);
     return !C.includes(t)
-  }), [C, M]), W = i.useCallback((e, t) => {
+  }), [C, M]), V = r.useCallback((e, t) => {
     I(n => {
-      let r = (0, p.Eu)(e, t),
-        i = function(e) {
+      let i = (0, p.Eu)(e, t),
+        r = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              i = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
+            }))), i.forEach(function(t) {
+              var i;
+              i = n[t], t in e ? Object.defineProperty(e, t, {
+                value: i,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = r
+              }) : e[t] = i
             })
           }
           return e
         }({}, n);
-      return r in n ? delete i[r] : N || (i[r] = {
+      return i in n ? delete r[i] : q || (r[i] = {
         id: e,
         permission: true,
         type: t
-      }), i
+      }), r
     })
-  }, [N, I]), D = i.useCallback(() => {
+  }, [q, I]), W = r.useCallback(() => {
     t(S, []), m()
   }, [t, m, S]);
-  i.useEffect(() => () => clearTimeout(x), [x]);
-  let G = i.useCallback(e => {
+  r.useEffect(() => () => clearTimeout(x), [x]);
+  let D = r.useCallback(e => {
       P(e), l && A(t => (clearTimeout(t), 0 === e.length) ? null : setTimeout(() => {
         d.A.requestMembers(n, e, 200, false)
       }, 500))
     }, [n, l, P, A]),
-    H = i.useCallback(e => {
-      let t = V[e.rowIndex],
+    G = r.useCallback(e => {
+      let t = N[e.rowIndex],
         n = (0, p.Eu)(t.id, t.type),
-        i = n in S,
-        l = N && !i;
-      return (0, r.jsx)("div", {
+        r = n in S,
+        l = q && !r;
+      return (0, i.jsx)("div", {
         className: y.A,
-        children: (0, r.jsx)(u.Kj, {
+        children: (0, i.jsx)(u.Kj, {
           type: u.Xo.INVERTED,
           disabled: l,
-          value: i,
-          onChange: () => W(t.id, t.type),
-          children: (0, r.jsx)(g.A, {
+          value: r,
+          onChange: () => V(t.id, t.type),
+          children: (0, i.jsx)(g.A, {
             guild: O,
             id: t.id,
             type: t.type,
@@ -96,20 +96,20 @@ function k(e) {
           })
         })
       }, n)
-    }, [V, O, N, W, S]);
-  return i.useEffect(() => {
+    }, [N, O, q, V, S]);
+  return r.useEffect(() => {
     d.A.requestMembers(n, true, 200, false)
-  }, [n]), (0, r.jsx)(a.Modal, {
+  }, [n]), (0, i.jsx)(a.Modal, {
     "aria-label": h.intl.string(h.t["N+InBa"]),
     transitionState: E,
     title: k,
-    subtitle: N ? h.intl.string(h.t["XTwtW/"]) : true,
+    subtitle: q ? h.intl.string(h.t["XTwtW/"]) : true,
     onClose: m,
-    input: (0, r.jsx)(c.IWV, {
+    input: (0, i.jsx)(c.IWV, {
       query: T,
       placeholder: v,
       "aria-label": v,
-      onChange: G,
+      onChange: D,
       onClear: () => P("")
     }),
     actions: [{
@@ -118,13 +118,13 @@ function k(e) {
       variant: "secondary"
     }, {
       text: h.intl.string(h.t.OYkgVk),
-      onClick: D,
+      onClick: W,
       variant: "primary",
-      disabled: 0 === q
+      disabled: 0 === _
     }],
     listProps: {
-      renderRow: H,
-      sections: [V.length],
+      renderRow: G,
+      sections: [N.length],
       rowHeight: 36,
       sectionHeight: 36
     }

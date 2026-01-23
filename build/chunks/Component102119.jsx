@@ -35,13 +35,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk378399 = require("./378399.js");
 let D = () => {
     var e, t, n;
-    let i = (0, o.bG)([O.default], () => v.Ay.isPremium(O.default.getCurrentUser())),
+    let i = (0, o.bG)([O.default], () => A.Ay.isPremium(O.default.getCurrentUser())),
       a = (0, m.V)(),
       s = (null == a || null == (e = a.subscription_trial) ? true : e.sku_id) === R.pe.TIER_2;
     return (0, r.jsx)(g.A, {
       size: c.$n.Sizes.MEDIUM,
       textOptions: {
-        textOverride: i ? w.intl.string(w.t.IJI7yk) : s ? (0, v.FY)({
+        textOverride: i ? w.intl.string(w.t.IJI7yk) : s ? (0, A.FY)({
           intervalType: null == a || null == (t = a.subscription_trial) ? true : t.interval,
           intervalCount: null == a || null == (n = a.subscription_trial) ? true : n.interval_count
         }) : w.intl.string(w.t.mr4K7D)
@@ -53,7 +53,7 @@ let D = () => {
     let {
       markAsDismissed: t
     } = e, n = () => {
-      null == t || t(N.i.DISMISS), (0, h.Jp)(), (0, S.U)()
+      null == t || t(N.i.DISMISS), (0, h.Jp)(), (0, I.U)()
     };
     return (0, r.jsxs)("div", {
       className: P.nV,
@@ -80,8 +80,8 @@ let D = () => {
     let {
       isCoachmark: t,
       markAsDismissed: n
-    } = e, i = (0, o.bG)([I.A], () => I.A.isUpsellPreview), a = () => {
-      null == n || n(N.i.DISMISS), (0, h.Jp)(), (0, S.U)(), t || (0, y.openUserSettings)(b.X.APPEARANCE_PANEL, {
+    } = e, i = (0, o.bG)([S.A], () => S.A.isUpsellPreview), a = () => {
+      null == n || n(N.i.DISMISS), (0, h.Jp)(), (0, I.U)(), t || (0, b.openUserSettings)(y.X.APPEARANCE_PANEL, {
         section: C.nc_.APPEARANCE
       })
     };
@@ -105,19 +105,19 @@ function j(e) {
   } = (0, _.Ay)(p.A.APP_ICON_EDITOR), l = (0, o.bG)([O.default], () => O.default.getCurrentUser()), {
     isUpsellPreview: c,
     shouldEditorAnimate: m
-  } = (0, o.cf)([I.A, f.A], () => ({
-    isUpsellPreview: I.A.isUpsellPreview,
+  } = (0, o.cf)([S.A, f.A], () => ({
+    isUpsellPreview: S.A.isUpsellPreview,
     shouldEditorAnimate: t && !f.A.useReducedMotion
   })), g = h.fy.getState().activePanel === h.HP.APP_ICON;
   i.useEffect(() => {
-    c && A.default.track(C.HAw.PREMIUM_UPSELL_VIEWED, {
+    c && v.default.track(C.HAw.PREMIUM_UPSELL_VIEWED, {
       type: R.e.APP_ICON_UPSELL,
       location_stack: a
     })
   }, [c, a]);
-  let E = (0, d.A)(null, c ? S.U : C.tEg);
+  let E = (0, d.A)(null, c ? I.U : C.tEg);
   return (i.useEffect(() => {
-    if (c && !g) return S.U
+    if (c && !g) return I.U
   }, [c, g]), null == l) ? null : (0, r.jsx)(_.f5, {
     value: a,
     children: (0, r.jsx)("div", {

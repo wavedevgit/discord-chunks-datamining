@@ -99,38 +99,38 @@ function A(e) {
     buttonImage: a,
     onEmojiSelect: s,
     onEmojiRemove: f,
-    answerIndex: b,
+    answerIndex: m,
     shouldShowEmojiPicker: g,
     toggleEmojiPicker: A,
     containerRef: C
-  } = e, R = l.useRef(null), k = (0, o.bG)([d.A], () => d.A.getChannel(t)), {
-    emoji: E,
-    isLoadingMedia: x,
-    hasUpload: S,
-    mediaUrl: D,
-    mediaFilename: N
+  } = e, k = l.useRef(null), R = (0, o.bG)([d.A], () => d.A.getChannel(t)), {
+    emoji: x,
+    isLoadingMedia: E,
+    hasUpload: _,
+    mediaUrl: S,
+    mediaFilename: D
   } = (0, p.A)({
     channelId: t,
     localCreationAnswerId: n,
     image: a
-  }), I = S || null != E, _ = l.useCallback(() => {
-    f(b)
-  }, [f, b]), T = l.useMemo(() => S ? y.intl.formatToPlainString(y.t.vcC7Qn, {
-    imageName: (0, m.Kj)(N),
-    answerNumber: b + 1
-  }) : null != E ? y.intl.formatToPlainString(y.t.ncOAha, {
-    emojiName: E.name,
-    answerNumber: b + 1
+  }), I = _ || null != x, N = l.useCallback(() => {
+    f(m)
+  }, [f, m]), T = l.useMemo(() => _ ? y.intl.formatToPlainString(y.t.vcC7Qn, {
+    imageName: (0, b.Kj)(D),
+    answerNumber: m + 1
+  }) : null != x ? y.intl.formatToPlainString(y.t.ncOAha, {
+    emojiName: x.name,
+    answerNumber: m + 1
   }) : y.intl.formatToPlainString(y.t.emdpNo, {
-    answerNumber: b + 1
-  }), [S, E, b, N]), U = l.useCallback(e => {
+    answerNumber: m + 1
+  }), [_, x, m, D]), U = l.useCallback(e => {
     let {
       closePopout: t
     } = e;
     return (0, r.jsx)("div", {
       className: h.Fb,
       children: (0, r.jsx)(u.A, {
-        channel: k,
+        channel: R,
         pickerIntention: O.b_.POLLS,
         closePopout: t,
         onNavigateAway: t,
@@ -139,28 +139,28 @@ function A(e) {
             emoji: n,
             willClose: r
           } = e;
-          null != n && s(n, b), r && t()
+          null != n && s(n, m), r && t()
         }
       })
     })
-  }, [k, s, b]), L = l.useCallback(e => {
+  }, [R, s, m]), L = l.useCallback(e => {
     let {
       closePopout: t
     } = e;
     return (0, r.jsx)(P, {
       onSelect: t,
       onEditMedia: A,
-      onDeleteMedia: _,
+      onDeleteMedia: N,
       closePopout: t
     })
-  }, [_, A]), K = x ? (0, r.jsx)(c.y$y, {
+  }, [N, A]), K = E ? (0, r.jsx)(c.y$y, {
     className: h.EC
   }) : (0, r.jsx)(w, {
-    hasUpload: S,
-    mediaUrl: D,
-    mediaFilename: N,
+    hasUpload: _,
+    mediaUrl: S,
+    mediaFilename: D,
     imageClassName: i()(h.$_, h.qX),
-    emoji: E,
+    emoji: x,
     emojiClassName: i()(h.$_, h.qZ),
     fallback: (0, r.jsx)(c.nm2, {
       size: "sm",
@@ -184,7 +184,7 @@ function A(e) {
         "aria-expanded": n
       } = e;
       return v(e, ["aria-controls", "aria-expanded"]), (0, r.jsx)(c.YNO, {
-        targetElementRef: R,
+        targetElementRef: k,
         animation: c.YNO.Animation.NONE,
         position: "bottom",
         renderPopout: L,
@@ -213,7 +213,7 @@ function A(e) {
             }
             return e
           }({
-            innerRef: R
+            innerRef: k
           }, u), a = a = {
             className: Y,
             onClick: I && !g ? i : A,
@@ -269,20 +269,20 @@ function C(e) {
       return null == (e = C.current) ? true : e.focus()
     }
   }));
-  let [R, k] = l.useState(false), E = l.useCallback(() => {
-    k(e => !e)
-  }, []), x = l.useCallback(e => {
+  let [k, R] = l.useState(false), x = l.useCallback(() => {
+    R(e => !e)
+  }, []), E = l.useCallback(e => {
     let t = e.ctrlKey && !(e.altKey || e.metaKey || e.shiftKey),
       r = e.metaKey && !(e.altKey || e.ctrlKey || e.shiftKey);
     switch (e.key.toLowerCase()) {
       case "enter":
         var l;
-        i && (e.preventDefault(), ((0, m.ND)(n) || "macos" !== (0, b.getOS)() ? t : r) ? (e.stopPropagation(), O()) : p()), null == (l = v.current[a + 1]) || l.focusInput();
+        i && (e.preventDefault(), ((0, b.ND)(n) || "macos" !== (0, m.getOS)() ? t : r) ? (e.stopPropagation(), O()) : p()), null == (l = v.current[a + 1]) || l.focusInput();
         break;
       case "e":
-        ("macos" === (0, b.getOS)() ? r : t) && (e.preventDefault(), e.stopPropagation(), E())
+        ("macos" === (0, m.getOS)() ? r : t) && (e.preventDefault(), e.stopPropagation(), x())
     }
-  }, [p, n, v, a, i, O, E]), S = (0, r.jsx)(A, {
+  }, [p, n, v, a, i, O, x]), _ = (0, r.jsx)(A, {
     containerRef: w,
     channelId: t,
     buttonImage: n.image,
@@ -290,8 +290,8 @@ function C(e) {
     onEmojiRemove: u,
     localCreationAnswerId: n.localCreationAnswerId,
     answerIndex: a,
-    shouldShowEmojiPicker: R,
-    toggleEmojiPicker: E
+    shouldShowEmojiPicker: k,
+    toggleEmojiPicker: x
   });
   return (0, r.jsx)("div", {
     ref: w,
@@ -299,7 +299,7 @@ function C(e) {
       error: j,
       leading: {
         type: "emoji",
-        button: S
+        button: _
       },
       trailing: f ? {
         "aria-label": y.intl.formatToPlainString(y.t["22fjEc"], {
@@ -319,7 +319,7 @@ function C(e) {
         index: a,
         localCreationAnswerId: n.localCreationAnswerId
       }),
-      onKeyDown: x,
+      onKeyDown: E,
       maxLength: g.dv,
       inputRef: C
     })

@@ -1,7 +1,7 @@
 /** Chunk was on 48982 **/
 /** chunk id: 622501, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  A: () => j
+  A: () => T
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -31,32 +31,32 @@ var Chunk627968 = require("./627968.js"),
 function h(e) {
   let {
     shouldUpsellFromNoneTier: n
-  } = e, t = (0, a.bG)([A.default], () => A.default.locale);
+  } = e, t = (0, o.bG)([y.default], () => y.default.locale);
   return (0, l.jsxs)("div", {
     className: M.mH,
-    children: [(0, l.jsx)(P.A, {
+    children: [(0, l.jsx)(A.A, {
       icon: u._Jp,
       iconClassName: M.pl,
       description: O.intl.formatToPlainString(O.t.sQBgs2, {
-        numFreeGuildSubscriptions: I.M4
+        numFreeGuildSubscriptions: N.M4
       }),
       color: u.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK.css
-    }), (0, l.jsx)(P.A, {
+    }), (0, l.jsx)(A.A, {
       icon: u._Jp,
       iconClassName: M.pl,
       description: O.intl.formatToPlainString(O.t["1A6vXi"], {
-        percent: (0, f.l9)(t, I.oX / 100)
+        percent: (0, g.l9)(t, N.oX / 100)
       }),
       color: u.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK.css
-    }), n ? (0, l.jsx)(P.A, {
+    }), n ? (0, l.jsx)(A.A, {
       icon: u.nm2,
       iconClassName: M.zO,
       description: O.intl.string(O.t.Z9b2x2)
-    }) : null, (0, l.jsx)(P.A, {
+    }) : null, (0, l.jsx)(A.A, {
       icon: u.Fzq,
       iconClassName: M.Kg,
       description: O.intl.string(O.t["8dqG5E"])
-    }), (0, l.jsx)(P.A, {
+    }), (0, l.jsx)(A.A, {
       icon: u.JMY,
       iconClassName: M.$z,
       description: O.intl.string(O.t.cBorIy)
@@ -64,26 +64,26 @@ function h(e) {
   })
 }
 
-function j(e) {
+function T(e) {
   var n;
   let {
     premiumSubscriptionPlan: t,
     onClose: r,
-    onBack: a,
-    onSkip: P,
-    onSubscriptionConfirmation: A,
-    analyticsLocation: f,
-    analyticsSourceLocation: j,
+    onBack: o,
+    onSkip: A,
+    onSubscriptionConfirmation: y,
+    analyticsLocation: g,
+    analyticsSourceLocation: T,
     priceOptions: L
   } = e, {
-    analyticsLocations: T,
+    analyticsLocations: j,
     sourceAnalyticsLocations: C
-  } = (0, p.Ay)(d.A.GUILD_BOOSTING_PREMIUM_UPSELL), {
+  } = (0, d.Ay)(p.A.GUILD_BOOSTING_PREMIUM_UPSELL), {
     theme: x
-  } = (0, u.wRf)(), D = (0, o.qB)(x) ? c.$n.Colors.PRIMARY : c.$n.Colors.WHITE, R = null == t || null == t.premiumSubscriptionType, w = g.Ay.getPrice(I.gD.PREMIUM_MONTH_TIER_2, false, false, L), v = (0, S.$g)(w.amount, w.currency), k = (0, E.V)(), G = null == k ? true : k.trial_id, U = (null == k || null == (n = k.subscription_trial) ? true : n.sku_id) === I.pe.TIER_2;
+  } = (0, u.wRf)(), D = (0, a.qB)(x) ? c.$n.Colors.PRIMARY : c.$n.Colors.WHITE, R = null == t || null == t.premiumSubscriptionType, k = f.Ay.getPrice(N.gD.PREMIUM_MONTH_TIER_2, false, false, L), w = (0, S.$g)(k.amount, k.currency), v = (0, E.V)(), G = null == v ? true : v.trial_id, U = (null == v || null == (n = v.subscription_trial) ? true : n.sku_id) === N.pe.TIER_2;
   return i.useEffect(() => {
-    y.default.track(N.HAw.PREMIUM_UPSELL_VIEWED, {
-      type: I.e.GUILD_PREMIUM_UPSELL_MODAL,
+    b.default.track(I.HAw.PREMIUM_UPSELL_VIEWED, {
+      type: N.e.GUILD_PREMIUM_UPSELL_MODAL,
       location_stack: C
     })
   }, [C]), (0, l.jsxs)(l.Fragment, {
@@ -94,7 +94,7 @@ function j(e) {
         "data-migration-pending": true,
         onClick: r,
         className: M.b
-      }), U && (0, l.jsx)(b.Vq, {
+      }), U && (0, l.jsx)(P.Vq, {
         className: M.Fg
       }), (0, l.jsx)("div", {
         className: s()(M.Tn, {
@@ -103,22 +103,22 @@ function j(e) {
       }), (0, l.jsx)("div", {
         className: M.G3,
         children: null != G ? O.intl.string(O.t.AoSzEr) : O.intl.format(O.t["7vePZb"], {
-          monthlyPrice: v
+          monthlyPrice: w
         })
       }), (0, l.jsx)(h, {
         shouldUpsellFromNoneTier: R
       })]
     }), (0, l.jsxs)(u.jlY, {
       "data-migration-pending": true,
-      align: m.A.Align.CENTER,
-      justify: m.A.Justify.END,
+      align: _.A.Align.CENTER,
+      justify: _.A.Justify.END,
       children: [(0, l.jsxs)("div", {
         className: M.wV,
         children: [(0, l.jsx)(c.$n, {
           "data-migration-pending": true,
           look: c.$n.Looks.LINK,
           color: D,
-          onClick: P,
+          onClick: A,
           children: O.intl.string(O.t["SI/adm"])
         }), (0, l.jsx)(u.Button, {
           variant: "active",
@@ -126,10 +126,10 @@ function j(e) {
           type: "submit",
           onClick: () => {
             var e, n;
-            r(), (0, _.A)({
+            r(), (0, m.A)({
               initialPlanId: null,
-              subscriptionTier: I.pe.TIER_2,
-              analyticsLocations: T,
+              subscriptionTier: N.pe.TIER_2,
+              analyticsLocations: j,
               analyticsObject: (e = function(e) {
                 for (var n = 1; n < arguments.length; n++) {
                   var t = null != arguments[n] ? arguments[n] : {},
@@ -147,8 +147,8 @@ function j(e) {
                   })
                 }
                 return e
-              }({}, f), n = n = {
-                section: N.JJy.PREMIUM_GUILD_PURCHASE_MODAL
+              }({}, g), n = n = {
+                section: I.JJy.PREMIUM_GUILD_PURCHASE_MODAL
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
                 var t = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -159,8 +159,8 @@ function j(e) {
               })(Object(n)).forEach(function(t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               }), e),
-              analyticsSourceLocation: j,
-              onSubscriptionConfirmation: A,
+              analyticsSourceLocation: T,
+              onSubscriptionConfirmation: y,
               trialId: G
             })
           }
@@ -172,7 +172,7 @@ function j(e) {
           color: D,
           look: c.$n.Looks.LINK,
           size: c.$n.Sizes.NONE,
-          onClick: () => a(),
+          onClick: () => o(),
           children: O.intl.string(O.t["13/7kX"])
         })
       })]

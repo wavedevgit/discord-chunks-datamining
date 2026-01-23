@@ -15,19 +15,19 @@ function a(e) {
   let {
     action: n,
     actionType: a,
-    triggerType: c
-  } = e, o = (0, l.x)(null != (t = null == n ? true : n.type) ? t : a, n, c);
-  if (null == o) return null;
+    triggerType: o
+  } = e, c = (0, l.x)(null != (t = null == n ? true : n.type) ? t : a, n, o);
+  if (null == c) return null;
   let {
     headerText: d,
     helperText: u,
-    icon: f
-  } = o;
+    icon: g
+  } = c;
   return (0, r.jsxs)("div", {
     className: s.Ik,
     children: [(0, r.jsx)("div", {
       className: s.TV,
-      children: (0, r.jsx)(f, {
+      children: (0, r.jsx)(g, {
         size: "custom",
         color: "currentColor",
         width: 14,

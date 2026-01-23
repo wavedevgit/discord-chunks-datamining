@@ -2,9 +2,9 @@
 /** chunk id: 782505, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   IA: () => v,
-  jB: () => A,
-  qv: () => P,
-  zf: () => w
+  jB: () => _,
+  qv: () => w,
+  zf: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,11 +20,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk308497 = require("./308497.js");
-let y = [() => g.intl.string(g.t.madJdE), () => g.intl.string(g.t.NYmfoP), () => g.intl.string(g.t.R2PaCg), () => g.intl.string(g.t.laSR8h), () => g.intl.string(g.t.DnsJE8)],
-  O = [() => g.intl.string(g.t.nFSbeE), () => g.intl.string(g.t.gTcxOz), () => g.intl.string(g.t["8T0wYj"]), () => g.intl.string(g.t.BIHl1g), () => g.intl.string(g.t["jhBm0+"])],
-  j = [() => g.intl.string(g.t.AyMGXA), () => g.intl.string(g.t.aAFW7V), e => g.intl.formatToPlainString(g.t.h2g0cM, {
+let y = [() => m.intl.string(m.t.madJdE), () => m.intl.string(m.t.NYmfoP), () => m.intl.string(m.t.R2PaCg), () => m.intl.string(m.t.laSR8h), () => m.intl.string(m.t.DnsJE8)],
+  O = [() => m.intl.string(m.t.nFSbeE), () => m.intl.string(m.t.gTcxOz), () => m.intl.string(m.t["8T0wYj"]), () => m.intl.string(m.t.BIHl1g), () => m.intl.string(m.t["jhBm0+"])],
+  j = [() => m.intl.string(m.t.AyMGXA), () => m.intl.string(m.t.aAFW7V), e => m.intl.formatToPlainString(m.t.h2g0cM, {
     name: e
-  }), () => g.intl.string(g.t.rrYh58), () => g.intl.string(g.t["HX3K+F"]), () => g.intl.string(g.t["/yW3aY"]), () => g.intl.string(g.t["PmL/v0"]), () => g.intl.string(g.t.IALa3h), () => g.intl.string(g.t.HRcTFL), () => g.intl.string(g.t.NuCqPt), () => g.intl.string(g.t["M1tw+4"]), () => g.intl.string(g.t.UBm1y2), () => g.intl.string(g.t.Cu95PQ), () => g.intl.string(g.t["R/wFuh"]), () => g.intl.string(g.t.HQPAVT), () => g.intl.string(g.t.YolGh4)],
+  }), () => m.intl.string(m.t.rrYh58), () => m.intl.string(m.t["HX3K+F"]), () => m.intl.string(m.t["/yW3aY"]), () => m.intl.string(m.t["PmL/v0"]), () => m.intl.string(m.t.IALa3h), () => m.intl.string(m.t.HRcTFL), () => m.intl.string(m.t.NuCqPt), () => m.intl.string(m.t["M1tw+4"]), () => m.intl.string(m.t.UBm1y2), () => m.intl.string(m.t.Cu95PQ), () => m.intl.string(m.t["R/wFuh"]), () => m.intl.string(m.t.HQPAVT), () => m.intl.string(m.t.YolGh4)],
   x = [Chunk652215.fg2.STEAM, Chunk652215.fg2.PLAYSTATION, Chunk652215.fg2.XBOX, Chunk652215.fg2.TWITCH, Chunk652215.fg2.BATTLENET, Chunk652215.fg2.LEAGUE_OF_LEGENDS, Chunk652215.fg2.EPIC_GAMES, Chunk652215.fg2.RIOT_GAMES, Chunk652215.fg2.ROBLOX, Chunk652215.fg2.SPOTIFY, Chunk652215.fg2.YOUTUBE, Chunk652215.fg2.CRUNCHYROLL, Chunk652215.fg2.BUNGIE];
 
 function h(e) {
@@ -34,9 +34,9 @@ function h(e) {
     children: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: m.Ie,
+    className: b.Ie,
     children: [(0, r.jsxs)("div", {
-      className: m.FS,
+      className: b.FS,
       children: [(0, r.jsx)(a.Heading, {
         variant: "heading-md/medium",
         color: "text-strong",
@@ -51,7 +51,7 @@ function h(e) {
 }
 
 function v() {
-  let e = g.intl.string(g.t.RnD2yZ),
+  let e = m.intl.string(m.t.RnD2yZ),
     [t] = l.useState(() => {
       var e;
       return (null != (e = (0, i.sample)(y)) ? e : y[0])()
@@ -62,8 +62,8 @@ function v() {
   })
 }
 
-function A() {
-  let e = g.intl.string(g.t.bFgqYJ),
+function _() {
+  let e = m.intl.string(m.t.bFgqYJ),
     [t] = l.useState(() => {
       var e;
       return (null != (e = (0, i.sample)(O)) ? e : O[0])()
@@ -74,30 +74,30 @@ function A() {
   })
 }
 
-function w(e) {
+function A(e) {
   let {
     user: t,
     guildId: n,
-    channelId: o,
+    channelId: s,
     onClose: c
-  } = e, u = f.Ay.getName(n, o, t), d = g.intl.formatToPlainString(g.t.sjSitP, {
+  } = e, u = f.Ay.getName(n, s, t), d = m.intl.formatToPlainString(m.t.sjSitP, {
     name: u
-  }), [b] = l.useState(() => {
+  }), [g] = l.useState(() => {
     var e;
     return (null != (e = (0, i.sample)(j)) ? e : j[0])(u)
   }), y = l.useCallback(() => {
-    s.A.openPrivateChannel({
+    o.A.openPrivateChannel({
       recipientIds: t.id
     }), null == c || c()
   }, [t.id, c]);
   return (0, r.jsx)(h, {
     heading: d,
-    bodyText: b,
+    bodyText: g,
     children: (0, r.jsx)("div", {
-      className: m.v0,
+      className: b.v0,
       children: (0, r.jsx)(p.FD, {
         icon: a.oyn,
-        text: g.intl.string(g.t["g33r/P"]),
+        text: m.intl.string(m.t["g33r/P"]),
         onClick: y
       })
     })
@@ -105,9 +105,9 @@ function w(e) {
 }
 
 function I() {
-  let e = (0, o.Ay)();
+  let e = (0, s.Ay)();
   return (0, r.jsx)("div", {
-    className: m.HU,
+    className: b.HU,
     children: x.map((t, n) => {
       let l = c.A.get(t);
       if (null == l) return null;
@@ -115,35 +115,35 @@ function I() {
       return (0, r.jsx)("img", {
         src: i,
         alt: l.name,
-        className: m.gj
+        className: b.gj
       }, n)
     })
   })
 }
 
-function P(e) {
+function w(e) {
   let {
     onClose: t
   } = e, n = l.useCallback(() => {
     null == t || t(), (0, d.openUserSettings)(u.X.CONNECTIONS_PANEL, {
-      section: b.nc_.CONNECTIONS
+      section: g.nc_.CONNECTIONS
     })
   }, [t]), i = l.useCallback(() => {
     null == t || t(), (0, d.openUserSettings)(u.X.CONTENT_AND_SOCIAL_PANEL, {
-      section: b.nc_.CONTENT_AND_SOCIAL,
+      section: g.nc_.CONTENT_AND_SOCIAL,
       subsection: "CONNECTED_GAMES"
     })
   }, [t]);
   return (0, r.jsxs)(h, {
-    heading: g.intl.string(g.t.VB6LWY),
-    bodyText: g.intl.string(g.t.KpjsU9),
+    heading: m.intl.string(m.t.VB6LWY),
+    bodyText: m.intl.string(m.t.KpjsU9),
     children: [(0, r.jsx)(I, {}), (0, r.jsxs)("div", {
-      className: m.v0,
+      className: b.v0,
       children: [(0, r.jsx)(p.FD, {
-        text: g.intl.string(g.t["/Hl24U"]),
+        text: m.intl.string(m.t["/Hl24U"]),
         onClick: n
       }), (0, r.jsx)(p.FD, {
-        text: g.intl.string(g.t.GTCx0p),
+        text: m.intl.string(m.t.GTCx0p),
         onClick: i
       })]
     })]

@@ -2,7 +2,7 @@
 /** chunk id: 27322, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk49999 = require("./49999.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk529071 = require("./529071.js");
-let y = (0, Chunk353640.v)(e => ({
+let b = (0, Chunk353640.v)(e => ({
     activeEntryId: null,
     setActiveEntryId: t => e({
       activeEntryId: t
@@ -35,19 +35,19 @@ let y = (0, Chunk353640.v)(e => ({
     } = e, {
       data: O
     } = (0, _.YY)(t.extra.application_id), {
-      analyticsLocations: A
-    } = (0, f.Ay)(d.A.CLOUD_PLAY_POPOVER), v = (0, u.A)({
+      analyticsLocations: v
+    } = (0, f.Ay)(d.A.CLOUD_PLAY_POPOVER), A = (0, u.A)({
       application: O,
-      analyticsLocations: A
-    }), S = (0, h.JZ)(o.M.CLOUD_PLAY_NEW_BADGE), I = null != v && !S && n, {
+      analyticsLocations: v
+    }), I = (0, h.JZ)(o.M.CLOUD_PLAY_NEW_BADGE), S = null != A && !I && n, {
       activeEntryId: T,
       setActiveEntryId: C
-    } = y(), N = T === t.id, R = I && N ? [o.M.CLOUD_PLAY_POPOVER] : [], [w, P] = (0, m.kn)(R), D = w === o.M.CLOUD_PLAY_POPOVER;
+    } = b(), N = T === t.id, R = S && N ? [o.M.CLOUD_PLAY_POPOVER] : [], [w, P] = (0, m.kn)(R), D = w === o.M.CLOUD_PLAY_POPOVER;
     i.useEffect(() => {
-      I && null === T && C(t.id)
-    }, [T, I, t.id, C]);
+      S && null === T && C(t.id)
+    }, [T, S, t.id, C]);
     let x = () => {
-      null == v || v()
+      null == A || A()
     };
     i.useEffect(() => () => {
       D && (P(g.i.USER_DISMISS), C(null))
@@ -59,7 +59,7 @@ let y = (0, Chunk353640.v)(e => ({
       name: s.ImpressionNames.CLOUD_PLAY_CTA,
       type: s.ImpressionTypes.VIEW,
       properties: {
-        location_stack: A
+        location_stack: v
       }
     }, {
       disableTrack: !L
@@ -79,7 +79,7 @@ let y = (0, Chunk353640.v)(e => ({
       gradientColor: "pink",
       graphic: {
         type: "image",
-        src: b.A
+        src: y.A
       },
       actions: [{
         icon: c.hpF,
@@ -89,7 +89,7 @@ let y = (0, Chunk353640.v)(e => ({
       onRequestClose: M
     })
   },
-  A = e => {
+  v = e => {
     let {
       entry: t,
       isFirstApplicationOccurrence: n,

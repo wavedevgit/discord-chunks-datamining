@@ -4,8 +4,8 @@
 require.d(exports, {
   Kh: () => O,
   Rw: () => g,
-  SP: () => b,
-  Xg: () => y,
+  SP: () => y,
+  Xg: () => b,
   g9: () => m,
   qf: () => E
 }), require("./65821.js");
@@ -130,7 +130,7 @@ async function E(e, t) {
   }
 }
 
-function b(e, t, n) {
+function y(e, t, n) {
   i.h.dispatch({
     type: "SET_SOCIAL_LAYER_STOREFRONT_STATE",
     guildId: e,
@@ -138,7 +138,7 @@ function b(e, t, n) {
     skuId: n
   })
 }
-async function y(e) {
+async function b(e) {
   let {
     applicationId: t,
     userIds: n,

@@ -10,7 +10,7 @@ require.r(exports), require.d(exports, {
   intl: () => E,
   systemLocale: () => m,
   t: () => l.X,
-  useSyncMessages: () => b
+  useSyncMessages: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -111,4 +111,4 @@ let m = h("en-US"),
     formatToMarkdownString: Chunk932433.markdownFormatter,
     formatToParts: Chunk932433.astFormatter
   }),
-  b = e => (0, c.tp)(e, E)
+  y = e => (0, c.tp)(e, E)

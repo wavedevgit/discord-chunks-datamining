@@ -38,8 +38,8 @@ let f = e => {
       orbRedemptionError: o,
       onRedeemVirtualCurrency: l
     }), {
-      disabled: b,
-      tooltipText: y,
+      disabled: y,
+      tooltipText: b,
       text: O
     } = (0, u.J6)({
       orbBalance: h,
@@ -61,8 +61,8 @@ let f = e => {
         onClick: m,
         loading: s,
         text: O,
-        disabled: b,
-        tooltipText: y
+        disabled: y,
+        tooltipText: b
       },
       warningMessage: g ? d.intl.format(d.t.fsOXXO, {}) : null,
       errorMessage: E
@@ -148,7 +148,7 @@ let f = e => {
         onCheckoutSuccess: d,
         analyticsLocations: i,
         rentalDuration: f
-      }), b = (0, c.My)({
+      }), y = (0, c.My)({
         onClose: s.onClose,
         skuId: t,
         analyticsLocations: i,
@@ -164,7 +164,7 @@ let f = e => {
             analyticsSourceLocation: a,
             flowSpecificOptions: o
           },
-          paymentModalProps: b,
+          paymentModalProps: y,
           renderModalProps: s
         },
         children: (0, r.jsx)(m.Provider, {

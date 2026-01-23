@@ -24,38 +24,38 @@ function _(e, t, n) {
   let m, g, {
       node: E
     } = e,
-    b = E.props.allowsSorting,
+    y = E.props.allowsSorting,
     {
-      gridCellProps: y
+      gridCellProps: b
     } = (0, d.Q)({
       ...e,
       focusMode: "child"
     }, t, n),
     O = E.props.isSelectionCell && "single" === t.selectionManager.selectionMode,
     {
-      pressProps: A
+      pressProps: v
     } = (0, c.d)({
-      isDisabled: !b || O,
+      isDisabled: !y || O,
       onPress() {
         t.sort(E.key)
       },
       ref: n
     }),
     {
-      focusableProps: v
+      focusableProps: A
     } = (0, u.Wc)({}, n),
-    S = (null == (_ = t.sortDescriptor) ? true : _.column) === E.key,
-    I = null == (h = t.sortDescriptor) ? true : h.direction;
-  E.props.allowsSorting && !(0, a.m0)() && (g = S ? I : "none");
+    I = (null == (_ = t.sortDescriptor) ? true : _.column) === E.key,
+    S = null == (h = t.sortDescriptor) ? true : h.direction;
+  E.props.allowsSorting && !(0, a.m0)() && (g = I ? S : "none");
   let T = (0, f.o)(p(i.A), "@react-aria/table");
-  b && (m = `${T.format("sortable")}`, S && I && (0, a.m0)() && (m = `${m}, ${T.format(I)}`));
+  y && (m = `${T.format("sortable")}`, I && S && (0, a.m0)() && (m = `${m}, ${T.format(S)}`));
   let C = (0, s.I)(m),
     N = 0 === t.collection.size;
   return (0, l.useEffect)(() => {
     N && t.selectionManager.focusedKey === E.key && t.selectionManager.setFocusedKey(null)
   }, [N, t.selectionManager, E.key]), {
     columnHeaderProps: {
-      ...(0, o.v)(v, y, A, C, N ? {
+      ...(0, o.v)(A, b, v, C, N ? {
         tabIndex: false
       } : null),
       role: "columnheader",

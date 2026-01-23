@@ -1,26 +1,26 @@
 /** Chunk was on 14691 **/
-/** chunk id: 588591, original params: e,t,l (module,exports,require) **/
+/** chunk id: 588591, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
 });
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function i(e, t, l) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
-    value: l,
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[t] = l, e
+  }) : e[t] = n, e
 }
 let a = {},
   d = [];
 
-function c() {
+function o() {
   a = {}
 }
-class o extends(r = Chunk311907.Ay.Store) {
+class c extends(r = Chunk311907.Ay.Store) {
   getRegionStateForPingUrl(e) {
     if (null != e) return a[e]
   }
@@ -31,40 +31,40 @@ class o extends(r = Chunk311907.Ay.Store) {
     return d
   }
 }
-i(o, "displayName", "GameServerRegionStore");
-let u = new o(Chunk73153.h, {
-  LOGOUT: c,
+s(c, "displayName", "GameServerRegionStore");
+let u = new c(Chunk73153.h, {
+  LOGOUT: o,
   GAME_SERVER_REGION_PING_STATE_UPDATE: function(e) {
-    var t, l;
+    var t, n;
     let {
       pingUrl: r,
-      state: n
+      state: l
     } = e;
     t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
-        var l = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(l);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(l, e).enumerable
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          i(e, t, l[t])
+          s(e, t, n[t])
         })
       }
       return e
-    }({}, a), l = l = {
-      [r]: n
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-      var l = Object.keys(e);
+    }({}, a), n = n = {
+      [r]: l
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
-        l.push.apply(l, r)
+        n.push.apply(n, r)
       }
-      return l
-    })(Object(l)).forEach(function(e) {
-      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(l, e))
+      return n
+    })(Object(n)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), a = t
   },
-  GAME_SERVER_REGION_PING_STATE_RESET: c,
+  GAME_SERVER_REGION_PING_STATE_RESET: o,
   GAME_SERVER_FETCH_REGIONS_SUCCESS: function(e) {
     let {
       regions: t

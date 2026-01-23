@@ -4,10 +4,10 @@
 require.d(exports, {
   Ay: () => R,
   C3: () => T,
-  sw: () => I,
-  tM: () => S,
-  wW: () => y,
-  xc: () => v
+  sw: () => S,
+  tM: () => I,
+  wW: () => b,
+  xc: () => A
 }), require("./896048.js");
 var Chunk353640 = require("./353640.js"),
   Chunk118356 = require("./118356.js"),
@@ -60,34 +60,34 @@ function g(e, t) {
   }), e
 }
 let E = "overlayKeybindExperimentPreviousKeybindSettings",
-  b = new Chunk118356.Vy("OverlayKeybindExperimentManager"),
-  y = (0, Chunk353640.v)(() => s.w.get(E, {}));
+  y = new Chunk118356.Vy("OverlayKeybindExperimentManager"),
+  b = (0, Chunk353640.v)(() => s.w.get(E, {}));
 
 function O() {
-  return y.getState()
+  return b.getState()
 }
 
-function A(e) {
-  y.setState(t => h({}, t, e), true), s.w.set(E, y.getState())
+function v(e) {
+  b.setState(t => h({}, t, e), true), s.w.set(E, b.getState())
 }
-let v = () => {
-    A({
+let A = () => {
+    v({
       isNewOverlayUser: true
     })
   },
-  S = () => {
-    A({
+  I = () => {
+    v({
       isUsingDefaultOverlayKeybind: true
     })
   },
-  I = e => {
-    A({
+  S = e => {
+    v({
       overrideIsNewOverlayUser: e
     })
   };
 
 function T(e) {
-  A({
+  v({
     overrideIsUsingDefaultOverlayKeybind: e
   })
 }
@@ -103,7 +103,7 @@ class N extends Chunk439372.A {
     super(...e), _(this, "_hasInitialized", false), _(this, "_isProcessing", false), _(this, "initializeKeybind", () => {
       if (null != O().previousKeybind) return;
       let e = u.Ay.getOverlayKeybind();
-      A({
+      v({
         previousKeybind: (0, d.dI)(e.shortcut)
       })
     }), _(this, "dispatchSetKeybind", e => {
@@ -120,9 +120,9 @@ class N extends Chunk439372.A {
       let {
         keybindOverride: e
       } = (0, f.sq)("OverlayKeybindExperimentManager", false), t = this.isEligibleForExperiment();
-      O().keybindTreatment !== e && (null == e ? (await this.restoreKeybind(), A({
+      O().keybindTreatment !== e && (null == e ? (await this.restoreKeybind(), v({
         keybindTreatment: true
-      })) : t && (await this.dispatchSetKeybind(e), A({
+      })) : t && (await this.dispatchSetKeybind(e), v({
         keybindTreatment: e
       })))
     }), _(this, "processExperiment", async () => {
@@ -131,7 +131,7 @@ class N extends Chunk439372.A {
         try {
           await this.processKeybindExperiment()
         } catch (e) {
-          b.error("Experiments processing failed", {
+          y.error("Experiments processing failed", {
             error: e
           })
         } finally {
@@ -139,10 +139,10 @@ class N extends Chunk439372.A {
         }
       }
     }), _(this, "maybeInitExperiment", async () => {
-      this._hasInitialized || (this._hasInitialized = true, b.info("Experiments initializing..."), await this.processExperiment(), b.info("Experiments initialized"))
-    }), _(this, "isNewOverlayUser", () => (null == O().isNewOverlayUser && A({
+      this._hasInitialized || (this._hasInitialized = true, y.info("Experiments initializing..."), await this.processExperiment(), y.info("Experiments initialized"))
+    }), _(this, "isNewOverlayUser", () => (null == O().isNewOverlayUser && v({
       isNewOverlayUser: !(0, c.k8)(a.M.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX) && !(0, c.k8)(a.M.OVERLAY_OOP_WELCOME_NUX)
-    }), null != O().overrideIsNewOverlayUser) ? O().overrideIsNewOverlayUser : O().isNewOverlayUser), _(this, "isUsingDefaultOverlayKeybind", () => (null == O().isUsingDefaultOverlayKeybind && A({
+    }), null != O().overrideIsNewOverlayUser) ? O().overrideIsNewOverlayUser : O().isNewOverlayUser), _(this, "isUsingDefaultOverlayKeybind", () => (null == O().isUsingDefaultOverlayKeybind && v({
       isUsingDefaultOverlayKeybind: C()
     }), null != O().overrideIsUsingDefaultOverlayKeybind) ? O().overrideIsUsingDefaultOverlayKeybind : O().isUsingDefaultOverlayKeybind), _(this, "isEligibleForExperiment", () => {
       let e = this.isNewOverlayUser(),
@@ -153,11 +153,11 @@ class N extends Chunk439372.A {
     }), _(this, "handleExperimentsInit", async () => {
       __OVERLAY__ || this._isProcessing || await this.maybeInitExperiment()
     }), _(this, "handleExperimentOverrideBucket", async e => {
-      __OVERLAY__ || this._isProcessing || (b.info("Experiments processing...", {
+      __OVERLAY__ || this._isProcessing || (y.info("Experiments processing...", {
         action: e
       }), await this.processExperiment())
     }), _(this, "handleKeybindSet", e => {
-      __OVERLAY__ || this._isProcessing || e.keybind.action === p.hCu.TOGGLE_OVERLAY_INPUT_LOCK && A({
+      __OVERLAY__ || this._isProcessing || e.keybind.action === p.hCu.TOGGLE_OVERLAY_INPUT_LOCK && v({
         previousKeybind: (0, d.dI)(e.keybind.shortcut)
       })
     }), _(this, "handleOverlayReady", () => {

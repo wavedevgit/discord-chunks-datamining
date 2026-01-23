@@ -2,7 +2,7 @@
 /** chunk id: 873879, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./591487.js"), require("./727858.js"), require("./747238.js"), require("./812715.js"), require("./866193.js");
 var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
@@ -55,46 +55,46 @@ let d = /\n{2,}$/,
   m = _ + "[^\\n]*(?:\\n(?!%INDENT_CAPTURE_PATTERN%" + p + " )[^\\n]*)*(\n|$)",
   g = / *\n$/,
   E = RegExp("^( *)(" + p + ") [\\s\\S]+?(?:\\n(?! )(?!\\1" + p + " )|$)"),
-  b = /^[ \t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]+$/,
-  y = 10,
+  y = /^[ \t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]+$/,
+  b = 10,
   O = 1,
-  A = 1e9,
-  v = e => e.map(e => ("text" === e.type && null != e.content && (e.content = e.content.replace(/\n+\s*$/, "")), e)),
-  S = u(l({}, s().defaultRules.list), {
+  v = 1e9,
+  A = e => e.map(e => ("text" === e.type && null != e.content && (e.content = e.content.replace(/\n+\s*$/, "")), e)),
+  I = u(l({}, s().defaultRules.list), {
     requiredFirstCharacters: " *-0123456789".split(""),
     match: (e, t) => {
-      if (!t.allowList || t._listLevel >= y + 1) return null;
+      if (!t.allowList || t._listLevel >= b + 1) return null;
       let n = null == t.prevCapture ? "" : t.prevCapture[0],
         r = f.exec(n);
-      return null == r || b.test(r[0]) ? null : E.exec(e)
+      return null == r || y.test(r[0]) ? null : E.exec(e)
     },
     parse: (e, t, n) => {
       let r = e[2],
         a = r.length > 1,
-        s = a ? Math.min(A, Math.max(O, +r)) : true,
+        s = a ? Math.min(v, Math.max(O, +r)) : true,
         o = e[0].replace(d, "\n"),
         c = h.exec(o),
         f = null != c ? c[0].length : 0,
         p = null != c ? c[1].length : 0,
         _ = " {".concat(p, ",").concat(p + 1, "}"),
         E = RegExp(m.replaceAll("%INDENT_CAPTURE_PATTERN%", _), "gm"),
-        b = RegExp("^ {1," + f + "}", "gm"),
-        y = o.match(E);
-      i()(null != y, "markup list items can not be parsed.");
-      let S = false;
+        y = RegExp("^ {1," + f + "}", "gm"),
+        b = o.match(E);
+      i()(null != b, "markup list items can not be parsed.");
+      let I = false;
       return {
         ordered: a,
         start: s,
-        items: y.map((e, r) => {
-          let i, a = e.replace(h, "").replace(b, ""),
-            s = r === y.length - 1,
-            o = false !== a.indexOf("\n\n") || s && S;
-          S = o;
+        items: b.map((e, r) => {
+          let i, a = e.replace(h, "").replace(y, ""),
+            s = r === b.length - 1,
+            o = false !== a.indexOf("\n\n") || s && I;
+          I = o;
           let c = n.inline,
             d = n._list,
             f = n._listLevel;
           n._list = true, n._listLevel = (null != f ? f : 0) + 1, o ? (n.inline = false, i = a.replace(g, "\n\n")) : (n.inline = true, i = a.replace(g, ""));
-          let p = v(t(i, u(l({}, n), {
+          let p = A(t(i, u(l({}, n), {
             allowHeading: false
           })));
           return n.inline = c, n._list = d, n._listLevel = f, p

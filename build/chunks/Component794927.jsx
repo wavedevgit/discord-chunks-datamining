@@ -17,14 +17,14 @@ function d(e) {
   let {
     channel: t,
     guild: d,
-    width: f,
-    inPopout: p
+    width: p,
+    inPopout: h
   } = e;
   return (0, r.jsx)(i.A, {
     className: c.zr,
-    children: (0, r.jsx)(a.A, {
+    children: (0, r.jsx)(s.A, {
       artURL: u,
-      size: (0, a.J)(f),
+      size: (0, s.J)(p),
       header: o.intl.string(o.t.O4FiWi),
       onCTAClick: () => (0, l.mMO)(async () => {
         let {
@@ -52,7 +52,7 @@ function d(e) {
           }({}, n), i = i = {
             guild: d,
             channel: t,
-            source: s.PE1.CHANNEL_CALL
+            source: a.PE1.CHANNEL_CALL
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ function d(e) {
           }), l))
         }
       }, {
-        contextKey: p ? l.KX8 : l.SYi
+        contextKey: h ? l.KX8 : l.SYi
       }),
       callToAction: o.intl.string(o.t.VINpSK)
     })

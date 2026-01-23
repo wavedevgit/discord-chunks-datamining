@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 91624, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => E
 }), require("./938796.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,12 +24,12 @@ var Chunk627968 = require("./627968.js"),
 require("./294920.js");
 var Chunk119907 = require("./119907.js");
 
-function v(e) {
+function j(e) {
   let {
     value: t,
     channel: n
   } = e;
-  return (0, g.i)({
+  return (0, m.i)({
     type: c.oU.EDIT,
     content: t,
     channel: n,
@@ -38,7 +38,7 @@ function v(e) {
   })
 }
 
-function x(e) {
+function v(e) {
   let {
     channel: t,
     message: n
@@ -46,35 +46,35 @@ function x(e) {
     id: c
   } = t, {
     id: u
-  } = n, b = t.getGuildId(), g = (0, a.bG)([p.A], () => p.A.getGuild(b), [b]), A = t.type === O.rbe.GUILD_ANNOUNCEMENT, x = null != g && g.features.has(O.GuildFeatures.NEWS), _ = A && x, {
+  } = n, g = t.getGuildId(), m = (0, s.bG)([h.A], () => h.A.getGuild(g), [g]), A = t.type === _.rbe.GUILD_ANNOUNCEMENT, v = null != m && m.features.has(_.GuildFeatures.NEWS), E = A && v, {
     editingMessage: C,
     editingTextValue: S,
     editingRichValue: I
-  } = (0, a.cf)([f.A], () => ({
-    editingMessage: f.A.getEditingMessage(c),
-    editingTextValue: f.A.getEditingTextValue(c),
-    editingRichValue: f.A.getEditingRichValue(c)
-  }), [c]), N = (0, a.bG)([d.default], () => d.default.getId()), T = l.useCallback((e, r, l) => {
+  } = (0, s.cf)([p.A], () => ({
+    editingMessage: p.A.getEditingMessage(c),
+    editingTextValue: p.A.getEditingTextValue(c),
+    editingRichValue: p.A.getEditingRichValue(c)
+  }), [c]), N = (0, s.bG)([d.default], () => d.default.getId()), T = l.useCallback((e, r, l) => {
     let {
-      content: a
-    } = l, c = h.A.can(O.xBc.MANAGE_MESSAGES, t), u = null != C && null != C.author ? C.author.id : null, d = _ && (u === N || c), f = {
-      content: a,
+      content: s
+    } = l, c = f.A.can(_.xBc.MANAGE_MESSAGES, t), u = null != C && null != C.author ? C.author.id : null, d = E && (u === N || c), p = {
+      content: s,
       components: true
     };
-    if (n.hasFlag(O.pr7.IS_COMPONENTS_V2)) {
-      var p;
-      let e = (null == (p = n.components[0]) ? true : p.type) === o.I5.MEDIA_GALLERY,
+    if (n.hasFlag(_.pr7.IS_COMPONENTS_V2)) {
+      var h;
+      let e = (null == (h = n.components[0]) ? true : h.type) === o.I5.MEDIA_GALLERY,
         t = n.components.filter(e => e.type !== o.I5.TEXT_DISPLAY);
       t.splice(+!!e, 0, {
         type: o.I5.TEXT_DISPLAY,
-        content: a,
+        content: s,
         id: "".concat(82744)
-      }), f.content = "", f.components = t
+      }), p.content = "", p.components = t
     }
-    return d && null != C && (0, i.Lt)(C.flags, O.pr7.CROSSPOSTED) ? m.A.confirmEdit(e, r, f) : s.A.editMessage(e, r, f), Promise.resolve()
-  }, [C, _, N, t, n]), P = l.useCallback(e => {
+    return d && null != C && (0, i.Lt)(C.flags, _.pr7.CROSSPOSTED) ? b.A.confirmEdit(e, r, p) : a.A.editMessage(e, r, p), Promise.resolve()
+  }, [C, E, N, t, n]), P = l.useCallback(e => {
     var t, n;
-    return (0, l.createElement)(E, (t = function(e) {
+    return (0, l.createElement)(x, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -92,7 +92,7 @@ function x(e) {
       }
       return e
     }({}, e), n = n = {
-      className: j.gM,
+      className: O.gM,
       key: u
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -111,35 +111,35 @@ function x(e) {
     message: n,
     textValue: S,
     richValue: I,
-    onCancel: s.A.endEditMessage,
-    onChange: s.A.updateEditMessage,
-    onConfirmDelete: m.A.confirmDelete,
+    onCancel: a.A.endEditMessage,
+    onChange: a.A.updateEditMessage,
+    onConfirmDelete: b.A.confirmDelete,
     saveMessage: T,
-    validateEdit: v,
+    validateEdit: j,
     children: P
   }) : null
 }
 
-function E(e) {
+function x(e) {
   let {
     textValue: t,
     richValue: n,
     message: i,
-    channel: a,
-    onChange: s,
+    channel: s,
+    onChange: a,
     onSubmit: o,
     onKeyDown: d,
-    renderLeftAccessories: f
-  } = e, [p, h] = l.useState(true), g = l.useCallback(() => h(true), []), m = l.useCallback(() => h(false), []);
-  return l.useEffect(() => (b._.subscribe(O.jej.TEXTAREA_FOCUS, g), b._.subscribe(O.jej.TEXTAREA_BLUR, m), () => {
-    b._.unsubscribe(O.jej.TEXTAREA_FOCUS, g), b._.unsubscribe(O.jej.TEXTAREA_BLUR, m)
-  }), [g, m]), (0, r.jsx)(u.Ay, {
-    className: j.gM,
+    renderLeftAccessories: p
+  } = e, [h, f] = l.useState(true), m = l.useCallback(() => f(true), []), b = l.useCallback(() => f(false), []);
+  return l.useEffect(() => (g._.subscribe(_.jej.TEXTAREA_FOCUS, m), g._.subscribe(_.jej.TEXTAREA_BLUR, b), () => {
+    g._.unsubscribe(_.jej.TEXTAREA_FOCUS, m), g._.unsubscribe(_.jej.TEXTAREA_BLUR, b)
+  }), [m, b]), (0, r.jsx)(u.Ay, {
+    className: O.gM,
     textValue: t,
     richValue: n,
-    channel: a,
+    channel: s,
     type: c.oU.EDIT,
-    onChange: s,
+    onChange: a,
     onSubmit: e => {
       let {
         value: t
@@ -147,25 +147,25 @@ function E(e) {
       return o(t)
     },
     onKeyDown: d,
-    focused: p,
-    onFocus: g,
-    onBlur: m,
-    renderLeftAccessories: f
+    focused: h,
+    onFocus: m,
+    onBlur: b,
+    renderLeftAccessories: p
   }, i.id)
 }
 
-function _(e, t, n) {
+function E(e, t, n) {
   let {
     message: l,
     channel: i,
-    compact: a
+    compact: s
   } = e;
-  return n ? (0, r.jsx)(x, {
+  return n ? (0, r.jsx)(v, {
     channel: i,
     message: l
   }) : (0, r.jsx)(A.Ay, {
     message: l,
     content: t,
-    compact: null != a && a
+    compact: null != s && s
   })
 }

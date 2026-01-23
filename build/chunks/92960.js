@@ -31,26 +31,26 @@ let T = {
   binds: ["esc", "shift+pagedown"],
   comboKeysBindGlobal: true,
   action(e) {
-    if (v.A.isElementFullScreen()) returnfalse;
-    if (S._.hasSubscribers(I.jej.CALL_DECLINE)) return S._.dispatch(I.jej.CALL_DECLINE), false;
-    if (A.A.close()) returnfalse;
-    if (S._.hasSubscribers(I.jej.MEDIA_MODAL_CLOSE)) return S._.dispatch(I.jej.MEDIA_MODAL_CLOSE), false;
+    if (A.A.isElementFullScreen()) returnfalse;
+    if (I._.hasSubscribers(S.jej.CALL_DECLINE)) return I._.dispatch(S.jej.CALL_DECLINE), false;
+    if (v.A.close()) returnfalse;
+    if (I._.hasSubscribers(S.jej.MEDIA_MODAL_CLOSE)) return I._.dispatch(S.jej.MEDIA_MODAL_CLOSE), false;
     let t = (0, o.wp)(e);
-    if (null == t ? true : t.hasSubscribers(I.jej.POPOUT_CLOSE)) return t.dispatch(I.jej.POPOUT_CLOSE), false;
-    if (S._.hasSubscribers(I.jej.CLOSE_GIF_PICKER)) return S._.dispatch(I.jej.CLOSE_GIF_PICKER), false;
-    if (S._.hasSubscribers(I.jej.MODAL_CLOSE)) return S._.dispatch(I.jej.MODAL_CLOSE), false;
-    if (S._.hasSubscribers(I.jej.SEARCH_RESULTS_CLOSE)) return S._.dispatch(I.jej.SEARCH_RESULTS_CLOSE), false;
-    if (null == t ? true : t.hasSubscribers(I.jej.POPOUT_CLOSE_AFTER_MODALS)) return t.dispatch(I.jej.POPOUT_CLOSE_AFTER_MODALS), false;
+    if (null == t ? true : t.hasSubscribers(S.jej.POPOUT_CLOSE)) return t.dispatch(S.jej.POPOUT_CLOSE), false;
+    if (I._.hasSubscribers(S.jej.CLOSE_GIF_PICKER)) return I._.dispatch(S.jej.CLOSE_GIF_PICKER), false;
+    if (I._.hasSubscribers(S.jej.MODAL_CLOSE)) return I._.dispatch(S.jej.MODAL_CLOSE), false;
+    if (I._.hasSubscribers(S.jej.SEARCH_RESULTS_CLOSE)) return I._.dispatch(S.jej.SEARCH_RESULTS_CLOSE), false;
+    if (null == t ? true : t.hasSubscribers(S.jej.POPOUT_CLOSE_AFTER_MODALS)) return t.dispatch(S.jej.POPOUT_CLOSE_AFTER_MODALS), false;
     let n = O.A.getGuildId(),
-      i = y.A.getChannelId(n),
+      i = b.A.getChannelId(n),
       a = h.A.getChannel(i),
-      l = _.Ay.getSection(i, null == a ? true : a.isDM()) === I.YvQ.SIDEBAR_CHAT ? _.Ay.getSidebarState(i) : null,
+      l = _.Ay.getSection(i, null == a ? true : a.isDM()) === S.YvQ.SIDEBAR_CHAT ? _.Ay.getSidebarState(i) : null,
       c = (null == l ? true : l.type) === d.PE.VIEW_THREAD || (null == l ? true : l.type) === d.PE.VIEW_CHANNEL ? l.channelId : null;
     if (false === C(i) || false === C(c)) returnfalse;
     if (null != i && (null == l ? true : l.type) === d.PE.CREATE_THREAD) return u.A.closeChannelSidebar(i), false;
     let f = N(i),
       p = N(c);
-    return null == i || f || p || null == l ? null != i && !f && s.A.getChatOpen(i) ? r.A.updateChatOpen(i, false) : S._.dispatch(I.jej.SCROLLTO_PRESENT) : u.A.closeChannelSidebar(i), false
+    return null == i || f || p || null == l ? null != i && !f && s.A.getChatOpen(i) ? r.A.updateChatOpen(i, false) : I._.dispatch(S.jej.SCROLLTO_PRESENT) : u.A.closeChannelSidebar(i), false
   }
 };
 
@@ -65,8 +65,8 @@ function C(e) {
 function N(e) {
   if (null == e) returnfalse;
   let t = false;
-  return E.A.getMessages(e).hasMoreAfter && (i.A.jumpToPresent(e, I.EMb), t = true), b.Ay.hasUnread(e) && ((0, a.ack)(e, {
-    object: I.ZSU.MARK_CHANNEL_AS_READ_KEYBIND,
-    objectType: I.AnalyticsObjectTypes.ACK_MANUAL
+  return E.A.getMessages(e).hasMoreAfter && (i.A.jumpToPresent(e, S.EMb), t = true), y.Ay.hasUnread(e) && ((0, a.ack)(e, {
+    object: S.ZSU.MARK_CHANNEL_AS_READ_KEYBIND,
+    objectType: S.AnalyticsObjectTypes.ACK_MANUAL
   }), t = true), (0, a.fb)(e), t
 }

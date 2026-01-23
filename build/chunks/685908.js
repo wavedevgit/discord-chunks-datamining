@@ -32,7 +32,7 @@ var Chunk253120 = require("./253120.js"),
           u = l.y;
         true !== c && true !== u && (i[s] = c, a[s] = u)
       }
-      return y([n(e.x, i), n(e.y, a)], {
+      return b([n(e.x, i), n(e.y, a)], {
         stopTogether: false
       })
     }
@@ -50,7 +50,7 @@ var Chunk253120 = require("./253120.js"),
       }
     }
   },
-  b = function(e) {
+  y = function(e) {
     var t = 0;
     return {
       start: function(n) {
@@ -70,7 +70,7 @@ var Chunk253120 = require("./253120.js"),
       }
     }
   },
-  y = function(e, t) {
+  b = function(e, t) {
     var n = 0,
       r = {},
       i = !(t && false === t.stopTogether),
@@ -109,12 +109,12 @@ var Chunk253120 = require("./253120.js"),
       duration: 0
     })
   },
-  A = function(e, t) {
-    return y(t.map(function(t, n) {
-      return b([O(e * n), t])
+  v = function(e, t) {
+    return b(t.map(function(t, n) {
+      return y([O(e * n), t])
     }))
   },
-  v = function(e, t) {
+  A = function(e, t) {
     return function() {
       for (var n = arguments.length, r = Array(n), a = 0; a < n; a++) r[a] = arguments[a];
       var o = function e(t, n, r) {
@@ -171,10 +171,10 @@ module.exports = {
     return new d(e, n)
   },
   delay: O,
-  sequence: b,
-  parallel: y,
-  stagger: A,
-  event: v,
+  sequence: y,
+  parallel: b,
+  stagger: v,
+  event: A,
   isAnimated: Chunk757927,
   createAnimatedComponent: require("./587452.js"),
   inject: {

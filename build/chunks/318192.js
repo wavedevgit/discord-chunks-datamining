@@ -97,21 +97,21 @@ function p(e, t, n, r) {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2
     }).formatToParts(.001).find(e => "decimal" === e.type)) ? true : s.value,
-    b = null == (o = u.find(e => "group" === e.type)) ? true : o.value,
-    y = [...new Set([...u.filter(e => !d.has(e.type)).map(e => h(e.value)), ..._.flatMap(e => e.filter(e => !d.has(e.type)).map(e => h(e.value)))])].sort((e, t) => t.length - e.length),
-    O = 0 === y.length ? RegExp("[\\p{White_Space}]", "gu") : RegExp(`${y.join("|")}|[\\p{White_Space}]`, "gu"),
-    A = [...new Intl.NumberFormat(n.locale, {
+    y = null == (o = u.find(e => "group" === e.type)) ? true : o.value,
+    b = [...new Set([...u.filter(e => !d.has(e.type)).map(e => h(e.value)), ..._.flatMap(e => e.filter(e => !d.has(e.type)).map(e => h(e.value)))])].sort((e, t) => t.length - e.length),
+    O = 0 === b.length ? RegExp("[\\p{White_Space}]", "gu") : RegExp(`${b.join("|")}|[\\p{White_Space}]`, "gu"),
+    v = [...new Intl.NumberFormat(n.locale, {
       useGrouping: false
     }).format(0x24cb016ea)].reverse(),
-    v = new Map(A.map((e, t) => [e, t]));
+    A = new Map(v.map((e, t) => [e, t]));
   return {
     minusSign: m,
     plusSign: g,
     decimal: E,
-    group: b,
+    group: y,
     literals: O,
-    numeral: RegExp(`[${A.join("")}]`, "g"),
-    index: e => String(v.get(e))
+    numeral: RegExp(`[${v.join("")}]`, "g"),
+    index: e => String(A.get(e))
   }
 }
 

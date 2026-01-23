@@ -54,14 +54,14 @@ let p = "mp4",
   m = "webm",
   g = "tinywebm",
   E = "nanowebm",
-  b = "fixed_height.mp4",
-  y = "fixed_height_small.mp4",
+  y = "fixed_height.mp4",
+  b = "fixed_height_small.mp4",
   O = "fixed_width.mp4",
-  A = "fixed_width_small.mp4",
-  v = "downsized_small.mp4",
-  S = "original.mp4",
-  I = m,
-  T = M(I) ? Chunk803805.TL.VIDEO : Chunk803805.TL.IMAGE,
+  v = "fixed_width_small.mp4",
+  A = "downsized_small.mp4",
+  I = "original.mp4",
+  S = m,
+  T = M(S) ? Chunk803805.TL.VIDEO : Chunk803805.TL.IMAGE,
   C = null,
   N = "",
   R = "",
@@ -80,12 +80,12 @@ function j(e) {
 
 function M(e) {
   switch (e) {
-    case b:
     case y:
+    case b:
     case O:
-    case A:
     case v:
-    case S:
+    case A:
+    case I:
     case p:
     case _:
     case h:
@@ -185,7 +185,7 @@ class Y extends(r = Chunk311907.Ay.Store) {
     return P
   }
   getSelectedFormat() {
-    return I
+    return S
   }
   getSuggestions() {
     return D

@@ -1,7 +1,7 @@
 /** Chunk was on 39679 **/
 /** chunk id: 90386, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => c,
+  I: () => _,
   T: () => u
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -11,7 +11,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk562153 = require("./562153.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk441805 = require("./441805.js");
-let c = (e, t) => {
+let _ = (e, t) => {
     if (1 === e.length) {
       let n = a.default.getUser(e[0]);
       return null != n ? (0, s.jsx)(i.euF, {
@@ -26,23 +26,23 @@ let c = (e, t) => {
     })
   },
   u = (e, t, n, r) => {
-    let c = [...e].map(e => a.default.getUser(e)),
+    let _ = [...e].map(e => a.default.getUser(e)),
       u = e => (0, s.jsx)(i.Text, {
         variant: "text-md/semibold",
         className: d.Xh,
-        children: l.Ay.getName(n, r, e)
+        children: o.Ay.getName(n, r, e)
       });
-    return t >= 4 ? o.intl.format(o.t.qfo6KR, {
-      usernameHook1: () => u(c[0]),
-      usernameHook2: () => u(c[1]),
+    return t >= 4 ? l.intl.format(l.t.qfo6KR, {
+      usernameHook1: () => u(_[0]),
+      usernameHook2: () => u(_[1]),
       numberOfOtherUsers: t - e.length
-    }) : 3 === t ? o.intl.format(o.t["67ZE+9"], {
-      usernameHook1: () => u(c[0]),
-      usernameHook2: () => u(c[1])
-    }) : 2 === t ? o.intl.format(o.t.veV4IN, {
-      usernameHook1: () => u(c[0]),
-      usernameHook2: () => u(c[1])
-    }) : o.intl.format(o.t["4WHCtq"], {
-      usernameHook: () => u(c[0])
+    }) : 3 === t ? l.intl.format(l.t["67ZE+9"], {
+      usernameHook1: () => u(_[0]),
+      usernameHook2: () => u(_[1])
+    }) : 2 === t ? l.intl.format(l.t.veV4IN, {
+      usernameHook1: () => u(_[0]),
+      usernameHook2: () => u(_[1])
+    }) : l.intl.format(l.t["4WHCtq"], {
+      usernameHook: () => u(_[0])
     })
   }

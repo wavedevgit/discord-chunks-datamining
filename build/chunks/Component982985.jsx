@@ -1,8 +1,8 @@
 /** Chunk was on 64228 **/
-/** chunk id: 982985, original params: e,l,t (module,exports,require) **/
+/** chunk id: 982985, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  e: () => p,
-  l: () => m
+  e: () => m,
+  l: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,88 +12,88 @@ var Chunk627968 = require("./627968.js"),
   Chunk518477 = require("./518477.js"),
   Chunk985018 = require("./985018.jsx");
 
-function c(e) {
-  for (var l = 1; l < arguments.length; l++) {
-    var t = null != arguments[l] ? arguments[l] : {},
-      n = Object.keys(t);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(t, e).enumerable
-    }))), n.forEach(function(l) {
-      var n;
-      n = t[l], l in e ? Object.defineProperty(e, l, {
-        value: n,
+function d(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      l = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), l.forEach(function(t) {
+      var l;
+      l = n[t], t in e ? Object.defineProperty(e, t, {
+        value: l,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[l] = n
+      }) : e[t] = l
     })
   }
   return e
 }
 
-function u(e, l) {
+function u(e, t) {
   if (null == e) return {};
-  var t, n, i, r = {};
+  var n, l, i, r = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
-    for (i = 0, t = Reflect.ownKeys(e); i < t.length; i++) n = t[i], !(l.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n]);
+    for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) l = n[i], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (r[l] = e[l]);
     return r
   }
-  if (r = function(e, l) {
+  if (r = function(e, t) {
       if (null == e) return {};
-      var t, n, i = {},
+      var n, l, i = {},
         r = Object.getOwnPropertyNames(e);
-      for (n = 0; n < r.length; n++) t = r[n], !(l.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (i[t] = e[t]);
+      for (l = 0; l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
       return i
-    }(e, l), Object.getOwnPropertySymbols)
-    for (i = 0, t = Object.getOwnPropertySymbols(e); i < t.length; i++) n = t[i], !(l.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n]);
+    }(e, t), Object.getOwnPropertySymbols)
+    for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) l = n[i], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (r[l] = e[l]);
   return r
-}
-
-function f(e) {
-  let {
-    userId: l,
-    onClose: t
-  } = e, n = i.useCallback(() => {
-    s.A.openPrivateChannel({
-      recipientIds: l
-    }), null == t || t(), (0, r.s7G)()
-  }, [l, t]);
-  return {
-    action: o.pt.SEND_MESSAGE,
-    icon: r.oyn,
-    onClick: n,
-    text: d.intl.string(d.t.zROXEV)
-  }
 }
 
 function p(e) {
   let {
-    userId: l,
-    onClose: t,
-    variant: i = "primary"
-  } = e, r = u(e, ["userId", "onClose", "variant"]), s = f({
-    userId: l,
-    onClose: t
-  });
-  return (0, n.jsx)(a.FD, c({
-    variant: i
-  }, s, r))
+    userId: t,
+    onClose: n
+  } = e, l = i.useCallback(() => {
+    s.A.openPrivateChannel({
+      recipientIds: t
+    }), null == n || n(), (0, r.s7G)()
+  }, [t, n]);
+  return {
+    action: a.pt.SEND_MESSAGE,
+    icon: r.oyn,
+    onClick: l,
+    text: c.intl.string(c.t.zROXEV)
+  }
 }
 
 function m(e) {
   let {
-    userId: l,
-    onClose: t,
+    userId: t,
+    onClose: n,
     variant: i = "primary"
-  } = e, r = u(e, ["userId", "onClose", "variant"]), s = f({
-    userId: l,
-    onClose: t
-  }), {
-    text: o
-  } = s, d = u(s, ["text"]);
-  return (0, n.jsx)(a.q3, c({
-    tooltipText: o,
-    "aria-label": o,
+  } = e, r = u(e, ["userId", "onClose", "variant"]), s = p({
+    userId: t,
+    onClose: n
+  });
+  return (0, l.jsx)(o.FD, d({
     variant: i
-  }, d, r))
+  }, s, r))
+}
+
+function f(e) {
+  let {
+    userId: t,
+    onClose: n,
+    variant: i = "primary"
+  } = e, r = u(e, ["userId", "onClose", "variant"]), s = p({
+    userId: t,
+    onClose: n
+  }), {
+    text: a
+  } = s, c = u(s, ["text"]);
+  return (0, l.jsx)(o.q3, d({
+    tooltipText: a,
+    "aria-label": a,
+    variant: i
+  }, c, r))
 }

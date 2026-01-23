@@ -23,60 +23,60 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk93100 = require("./93100.js");
 
-function y(e) {
+function O(e) {
   let {
     guildId: t
   } = e, {
-    guildProfile: o,
-    fetchGuildProfile: g,
-    fetchStatus: y
-  } = (0, f.u)(t), v = y !== u.X.FETCHED, {
-    fetchedEmbed: A,
-    embedEnabled: E,
-    embedChannelId: N
-  } = (0, a.cf)([m.A], () => {
+    guildProfile: c,
+    fetchGuildProfile: m,
+    fetchStatus: O
+  } = (0, g.u)(t), v = O !== u.X.FETCHED, {
+    fetchedEmbed: y,
+    embedEnabled: A,
+    embedChannelId: E
+  } = (0, a.cf)([f.A], () => {
     let {
       fetchedEmbed: e,
       embedEnabled: t,
       embedChannelId: n
-    } = m.A.getProps();
+    } = f.A.getProps();
     return {
       fetchedEmbed: e,
       embedEnabled: t,
       embedChannelId: n
     }
-  }), _ = i.useMemo(() => (0, x.k)(t), [t]), S = i.useMemo(() => (0, x.Z)(t), [t]), [T, I] = i.useState(false), C = null != o && l.i.VISIBLE.has(o.visibility), P = !v && !C && !E;
+  }), N = i.useMemo(() => (0, h.k)(t), [t]), S = i.useMemo(() => (0, h.Z)(t), [t]), [I, T] = i.useState(false), C = null != c && l.i.VISIBLE.has(c.visibility), P = !v && !C && !A;
   i.useEffect(() => {
-    A || (0, b.D)(t)
-  }, [A, t]), i.useEffect(() => {
-    g()
-  }, [t, g]);
+    y || (0, p.D)(t)
+  }, [y, t]), i.useEffect(() => {
+    m()
+  }, [t, m]);
   let w = i.useCallback(async e => {
-    I(true), await (0, p.E)(t, e, N), I(false)
-  }, [N, t]);
-  return A ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.dOG, {
+    T(true), await (0, b.E)(t, e, E), T(false)
+  }, [E, t]);
+  return y ? (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(o.dOG, {
       label: j.intl.string(j.t.NR6huS),
-      checked: E,
+      checked: A,
       onChange: w,
-      disabled: T
+      disabled: I
     }), P ? (0, r.jsx)(s.EYj, {
       variant: "text-sm/normal",
       color: "text-subtle",
-      className: O.W$,
+      className: _.W$,
       children: j.intl.string(j.t["zCGuJ+"])
-    }) : null, E ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(h.s, {
+    }) : null, A ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(x.s, {
         label: j.intl.string(j.t.LUo0Q8),
         description: j.intl.string(j.t.LxVR9A),
         guildId: t,
-        widgetEnabled: E,
-        widgetChannelId: N,
+        widgetEnabled: A,
+        widgetChannelId: E,
         enableLocalUpdate: true
       }), (0, r.jsxs)("div", {
-        className: O.cL,
+        className: _.cL,
         children: [(0, r.jsx)("div", {
-          className: O.fi,
+          className: _.fi,
           children: (0, r.jsx)(s.D0$, {
             label: j.intl.string(j.t.TRyLUh),
             children: (0, r.jsx)(d.A, {
@@ -84,20 +84,20 @@ function y(e) {
             })
           })
         }), (0, r.jsx)("div", {
-          className: O.fi,
+          className: _.fi,
           children: (0, r.jsx)(s.D0$, {
             label: j.intl.string(j.t.VECJcK),
             children: (0, r.jsx)(d.A, {
-              value: _
+              value: N
             })
           })
         })]
       }), (0, r.jsx)("div", {
-        className: O.yF
+        className: _.yF
       }), (0, r.jsxs)("div", {
-        className: O.cL,
+        className: _.cL,
         children: [(0, r.jsx)("div", {
-          className: O.fi,
+          className: _.fi,
           children: (0, r.jsx)(s.D0$, {
             label: j.intl.string(j.t.XVGbn1),
             description: j.intl.string(j.t["+baN11"]),
@@ -106,24 +106,24 @@ function y(e) {
             })
           })
         }), (0, r.jsx)("img", {
-          className: O.fi,
+          className: _.fi,
           "data-accessibility": "desaturate",
           alt: "",
           src: n(224932)
         })]
       })]
     }) : null]
-  }) : (0, r.jsx)(c.y$y, {})
+  }) : (0, r.jsx)(o.y$y, {})
 }
 
 function v(e) {
   let {
     guildId: t
-  } = e, n = (0, a.bG)([g.A], () => g.A.enabled);
-  return (0, r.jsx)(c.nVY, {
+  } = e, n = (0, a.bG)([m.A], () => m.A.enabled);
+  return (0, r.jsx)(o.nVY, {
     label: j.intl.string(j.t["qlhNb+"]),
     description: j.intl.string(j.t["dNn/1i"]),
-    children: n ? (0, r.jsx)(o.A, {}) : (0, r.jsx)(y, {
+    children: n ? (0, r.jsx)(c.A, {}) : (0, r.jsx)(O, {
       guildId: t
     })
   })

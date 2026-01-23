@@ -59,7 +59,7 @@ function E() {
   return l.A
 }
 
-function b() {
+function y() {
   if (m = {}, !h)
     for (let [e, t] of Object.entries(E())) {
       let n = false !== p[e];
@@ -68,10 +68,10 @@ function b() {
     }
 }
 
-function y(e) {
+function b(e) {
   p = f(u({}, p), {
     [e.tutorialId]: false
-  }), _ = u({}, _), delete _[e.tutorialId], b()
+  }), _ = u({}, _), delete _[e.tutorialId], y()
 }
 
 function O(e) {
@@ -80,22 +80,22 @@ function O(e) {
   })
 }
 
-function A(e) {
+function v(e) {
   _ = u({}, _), delete _[e.tutorialId]
 }
 
-function v() {
+function A() {
   h = true
 }
 
-function S(e) {
+function I(e) {
   let {
     tutorial: t
   } = e;
-  g = true, h = true, p = {}, null != t && (h = t.indicators_suppressed, t.indicators_confirmed.forEach(e => p[e] = false)), b()
+  g = true, h = true, p = {}, null != t && (h = t.indicators_suppressed, t.indicators_confirmed.forEach(e => p[e] = false)), y()
 }
 
-function I() {
+function S() {
   g = false
 }
 
@@ -104,7 +104,7 @@ function T(e) {
 }
 class C extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    b(), this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(o.A)
+    y(), this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(o.A)
   }
   shouldShow(e) {
     return !(!g || h || T(e)) && (m[e] || false)
@@ -125,10 +125,10 @@ class C extends(r = Chunk311907.Ay.Store) {
 }
 c(C, "displayName", "TutorialIndicatorStore");
 let N = new C(Chunk73153.h, {
-  CONNECTION_OPEN: S,
-  CONNECTION_CLOSED: I,
-  TUTORIAL_INDICATOR_DISMISS: y,
+  CONNECTION_OPEN: I,
+  CONNECTION_CLOSED: S,
+  TUTORIAL_INDICATOR_DISMISS: b,
   TUTORIAL_INDICATOR_SHOW: O,
-  TUTORIAL_INDICATOR_HIDE: A,
-  TUTORIAL_INDICATOR_SUPPRESS_ALL: v
+  TUTORIAL_INDICATOR_HIDE: v,
+  TUTORIAL_INDICATOR_SUPPRESS_ALL: A
 })

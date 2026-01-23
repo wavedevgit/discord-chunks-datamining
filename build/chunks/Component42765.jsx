@@ -2,7 +2,7 @@
 /** chunk id: 42765, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  q: () => y
+  q: () => b
 }), require("./667532.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -30,7 +30,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,30 +43,30 @@ function b(e) {
   return e
 }
 
-function y() {
+function b() {
   var e;
   let t = null == (e = (0, f.A)()) || e,
     n = (0, d.uM)(),
     E = (0, u.G)(),
     {
-      goreContentGuilds: y,
+      goreContentGuilds: b,
       goreContentFriendDm: O,
-      goreContentNonFriendDm: A
+      goreContentNonFriendDm: v
     } = (0, c.g)(),
-    v = e => {
+    A = e => {
       let t = Object.values(e);
       (0, o.hK)() && t.includes(i.TO.SHOW) ? a.A.showAgeVerificationGetStartedModal({
         entryPoint: s.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
       }) : (0, l.qY)(e)
     },
-    S = [{
+    I = [{
       value: i.TO.BLUR,
       label: m.intl.string(m.t.S49Uad)
     }, {
       value: i.TO.BLOCK,
       label: m.intl.string(m.t["D/157Y"])
     }],
-    I = [{
+    S = [{
       value: i.TO.BLUR,
       label: m.intl.string(m.t.S49Uad)
     }],
@@ -74,7 +74,7 @@ function y() {
       value: i.TO.SHOW,
       label: m.intl.string(m.t["5k5OFp"])
     };
-  t && (S.unshift(T), I.unshift(T));
+  t && (I.unshift(T), S.unshift(T));
   let C = {
     isDisabled: E,
     tooltipText: n ? m.intl.string(g.default["6Af/cw"]) : true
@@ -82,28 +82,28 @@ function y() {
   return (0, r.jsxs)(p.E, {
     setting: h.H.GORE_MEDIA_REDACTION,
     description: m.intl.string(m.t.XgH9eh),
-    children: [(0, r.jsx)(_.A, b({
+    children: [(0, r.jsx)(_.A, y({
       title: m.intl.string(m.t["+uI23H"]),
       value: O,
-      onChange: e => v({
+      onChange: e => A({
         goreContentFriendDm: e
       }),
-      options: S
-    }, C)), (0, r.jsx)(_.A, b({
+      options: I
+    }, C)), (0, r.jsx)(_.A, y({
       title: m.intl.string(m.t["Yh+HX1"]),
-      value: A,
-      onChange: e => v({
+      value: v,
+      onChange: e => A({
         goreContentNonFriendDm: e
       }),
-      options: S
+      options: I
     }, C)), (0, r.jsx)(_.A, {
       title: m.intl.string(m.t["FP+a42"]),
-      value: y,
-      onChange: e => v({
+      value: b,
+      onChange: e => A({
         goreContentGuilds: e
       }),
       isDisabled: !t || E,
-      options: I,
+      options: S,
       tooltipText: n ? m.intl.string(g.default["6Af/cw"]) : true
     })]
   })

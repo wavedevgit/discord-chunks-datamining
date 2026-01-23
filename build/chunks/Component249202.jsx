@@ -2,7 +2,7 @@
 /** chunk id: 249202, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  E: () => b
+  E: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,51 +16,51 @@ var Chunk627968 = require("./627968.js"),
   Chunk478644 = require("./478644.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e) {
+function p(e) {
   let {
     guild: t,
     canManageGuild: n,
-    buttonClassName: b
+    buttonClassName: p
   } = e, {
-    analyticsLocations: m
-  } = (0, s.Ay)(), p = t.features.has(o.GuildFeatures.BANNER), x = i.useCallback(e => {
+    analyticsLocations: f
+  } = (0, s.Ay)(), b = t.features.has(c.GuildFeatures.BANNER), h = i.useCallback(e => {
     let {
       imageUri: n,
       file: r
     } = e;
-    (0, c.fI)(t, m, n, r)
-  }, [m, t]), h = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, c.p_)({
+    (0, o.fI)(t, f, n, r)
+  }, [f, t]), x = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), (0, o.p_)({
       guild: t,
-      analyticsLocations: m,
-      analyticsSection: o.JJy.GUILD_BANNER,
-      analyticsObject: o.ZSU.BUTTON_CTA,
+      analyticsLocations: f,
+      analyticsSection: c.JJy.GUILD_BANNER,
+      analyticsObject: c.ZSU.BUTTON_CTA,
       perks: (0, d.QR)()
     })
-  }, [m, t]), j = i.useCallback(() => {
-    (0, c.Nn)({
+  }, [f, t]), j = i.useCallback(() => {
+    (0, o.Nn)({
       uploadType: u.HL.GUILD_BANNER,
-      maxFileSizeBytes: f.j,
-      onComplete: x,
+      maxFileSizeBytes: g.j,
+      onComplete: h,
       analyticsLocation: {
-        page: o.liQ.GUILD_SETTINGS,
-        section: o.JJy.GUILD_BANNER
+        page: c.liQ.GUILD_SETTINGS,
+        section: c.JJy.GUILD_BANNER
       },
-      analyticsLocations: m
+      analyticsLocations: f
     })
-  }, [m, x]);
-  return p ? (0, r.jsx)("div", {
-    className: b,
+  }, [f, h]);
+  return b ? (0, r.jsx)("div", {
+    className: p,
     children: (0, r.jsx)(l.$nd, {
-      disabled: !(p && n),
+      disabled: !(b && n),
       variant: "primary",
-      text: g.intl.string(g.t.yG2pUi),
+      text: m.intl.string(m.t.yG2pUi),
       onClick: j
     })
   }) : (0, r.jsx)("div", {
-    className: b,
+    className: p,
     children: (0, r.jsx)(a.u, {
-      onClick: h
+      onClick: x
     })
   })
 }

@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   $q: () => g,
-  E9: () => S,
+  E9: () => I,
   H2: () => E,
-  W0: () => y,
+  W0: () => b,
   j3: () => O,
-  j6: () => A,
-  jA: () => v,
+  j6: () => v,
+  jA: () => A,
   tQ: () => m
 });
 var Chunk627968 = require("./627968.js");
@@ -89,11 +89,11 @@ function g(e, t) {
 
 function E(e) {}
 
-function b(e) {
+function y(e) {
   (0, a.iN)(e.id)
 }
 
-function y(e, t) {
+function b(e, t) {
   (0, i.openModalLazy)(async () => {
     let {
       default: i
@@ -118,18 +118,18 @@ function O(e, t) {
   })
 }
 
-function A(e) {
+function v(e) {
   let t = s.default.getId(),
     n = (0, c.G1)(e),
     r = (0, c.Gc)(e);
   return !o.Ay.isModerator(t, e) && (n > 0 || r > 0)
 }
 
-function v(e, t) {
-  t !== e.id && (0, l.ek)(true), b(e)
+function A(e, t) {
+  t !== e.id && (0, l.ek)(true), y(e)
 }
 
-function S(e, t) {
+function I(e, t) {
   return (0, i.openModalLazy)(async () => {
     let {
       default: i

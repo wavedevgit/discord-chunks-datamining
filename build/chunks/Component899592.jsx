@@ -15,7 +15,7 @@ function o() {
     animatedComponentProps: t,
     recalculateAnimationPositions: n,
     mountPoints: o
-  } = l.useContext(r.PW), {
+  } = l.useContext(i.PW), {
     isExpanded: c
   } = l.useContext(s.T);
   return l.useEffect(() => {
@@ -35,12 +35,12 @@ function o() {
       let {
         id: n,
         collapsedLeft: l,
-        expandedLeft: r,
+        expandedLeft: i,
         collapsedTop: s,
         expandedTop: c,
         width: d
       } = t, u = o.get(n);
-      return (0, a.jsx)(i.animated.div, {
+      return (0, a.jsx)(r.animated.div, {
         ref: u,
         style: {
           zIndex: 2,
@@ -48,9 +48,9 @@ function o() {
           top: 0,
           left: 0,
           width: d,
-          transform: (0, i.to)([e.to({
+          transform: (0, r.to)([e.to({
             range: [0, 1],
-            output: [l, r]
+            output: [l, i]
           }), e.to({
             range: [0, 1],
             output: [s, c]

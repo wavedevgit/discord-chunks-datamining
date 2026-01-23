@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => j,
-  h: () => N
+  h: () => E
 }), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,7 +20,7 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk576943 = require("./576943.js");
 
-function h(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,22 +29,22 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 let j = false,
-  O = (0, Chunk240248.xI)(Chunk319060.A.PREMIUM_GUILD_PROGRESS_BAR_PROGRESS_BAR_WIDTH),
-  y = (0, Chunk240248.xI)(Chunk319060.A.PREMIUM_GUILD_PROGRESS_BAR_TIER_MARKER_SIZE),
+  _ = (0, Chunk240248.xI)(Chunk319060.A.PREMIUM_GUILD_PROGRESS_BAR_PROGRESS_BAR_WIDTH),
+  O = (0, Chunk240248.xI)(Chunk319060.A.PREMIUM_GUILD_PROGRESS_BAR_TIER_MARKER_SIZE),
   v = {
     tension: 140,
     friction: 30
   },
-  A = {
+  y = {
     tension: 800,
     friction: 20
   };
-class E extends(r = Chunk64700.Component) {
+class A extends(r = Chunk64700.Component) {
   getTotalHeight() {
     let {
       tiers: e
     } = this.props;
-    return e[e.length - 1].y + y / 2
+    return e[e.length - 1].y + O / 2
   }
   getProgressHeight(e) {
     let t, {
@@ -85,16 +85,16 @@ class E extends(r = Chunk64700.Component) {
     let {
       progress: t
     } = this.props;
-    if (null == e.name || e.key === b.TVA.NONE) return null;
+    if (null == e.name || e.key === p.TVA.NONE) return null;
     let n = Math.min(t, e.numRequired);
     return this.getTierDisabled(e) ? {
       title: null,
-      body: p.intl.formatToPlainString(m.default["9CtPjt"], {
+      body: b.intl.formatToPlainString(f.default["9CtPjt"], {
         perk: e.name
       })
     } : {
       title: e.name,
-      body: p.intl.format(p.t.AkLa6n, {
+      body: b.intl.format(b.t.AkLa6n, {
         subscribers: n,
         numRequired: e.numRequired
       })
@@ -106,23 +106,23 @@ class E extends(r = Chunk64700.Component) {
         tiers: s
       } = this.props,
       a = s[n],
-      o = l >= e.numRequired,
+      c = l >= e.numRequired,
       u = null != a && e.key === a.key,
-      g = e.key === s[0].key,
-      b = this.getTierDisabled(e);
-    r = g ? x.LR : b ? x.B2 : u ? x.E2 : o ? x.lZ : x.B2;
-    let m = e.y - (g ? 0 : y / 2),
-      p = this.state.tierMarkerActive >= t,
-      h = !g && u && p,
+      m = e.key === s[0].key,
+      p = this.getTierDisabled(e);
+    r = m ? h.LR : p ? h.B2 : u ? h.E2 : c ? h.lZ : h.B2;
+    let f = e.y - (m ? 0 : O / 2),
+      b = this.state.tierMarkerActive >= t,
+      x = !m && u && b,
       j = this.getTierMarkerTooltipText(e);
-    return (0, i.jsx)(f.c7X, {
+    return (0, i.jsx)(g.c7X, {
       from: {
         scale: 1
       },
       to: {
-        scale: h ? 1.625 : 1
+        scale: x ? 1.625 : 1
       },
-      config: A,
+      config: y,
       children: t => {
         var n, l, s;
         return (0, i.jsx)(d.un, {
@@ -131,16 +131,16 @@ class E extends(r = Chunk64700.Component) {
           shouldShow: null != j,
           position: "right",
           "aria-label": null != (s = e.name) ? s : "",
-          children: (0, i.jsx)(c.animated.div, {
+          children: (0, i.jsx)(o.animated.div, {
             className: r,
             style: {
-              top: m,
+              top: f,
               transform: t.scale.interpolate(e => "scale(".concat(e, ")"))
             },
-            children: h && (0, i.jsx)(f.A9s, {
+            children: x && (0, i.jsx)(g.A9s, {
               size: "md",
               color: "currentColor",
-              className: x.zw
+              className: h.zw
             })
           })
         })
@@ -156,13 +156,13 @@ class E extends(r = Chunk64700.Component) {
       children: [(0, i.jsx)("rect", {
         x: "0",
         y: "0",
-        width: O,
+        width: _,
         height: e,
         fill: "white"
       }), t.map(e => (0, i.jsx)("circle", {
-        cx: O / 2,
+        cx: _ / 2,
         cy: e.y,
-        r: O / 2,
+        r: _ / 2,
         fill: "black"
       }, e.key))]
     })
@@ -175,10 +175,10 @@ class E extends(r = Chunk64700.Component) {
     return (0, i.jsxs)("g", {
       mask: "url(#".concat(this.tierMarkerMaskId, ")"),
       children: [(0, i.jsx)("rect", {
-        className: x.Tp,
+        className: h.Tp,
         height: e,
         fill: "currentColor"
-      }), (0, i.jsx)(f.c7X, {
+      }), (0, i.jsx)(g.c7X, {
         from: {
           height: 0
         },
@@ -189,8 +189,8 @@ class E extends(r = Chunk64700.Component) {
         delay: r ? 0 : this.props.initialAnimationDelay,
         onChange: this.handleForegroundFrame,
         onRest: r ? true : this.handleFinishedInitialAnimation,
-        children: e => (0, i.jsx)(c.animated.rect, {
-          className: x.CU,
+        children: e => (0, i.jsx)(o.animated.rect, {
+          className: h.CU,
           height: e.height.interpolate(e => Math.max(0, e)),
           fill: "currentColor"
         })
@@ -203,23 +203,23 @@ class E extends(r = Chunk64700.Component) {
       tiers: t
     } = this.props, n = this.getCurrentTierIndex(), r = this.getTotalHeight();
     return (0, i.jsxs)("div", {
-      className: a()(e, x.hr),
+      className: a()(e, h.hr),
       style: {
         height: r
       },
       children: [(0, i.jsxs)("svg", {
-        viewBox: "0 0 ".concat(O, " ").concat(r),
-        width: O,
+        viewBox: "0 0 ".concat(_, " ").concat(r),
+        width: _,
         height: r,
         children: [this.renderProgressMask(r), this.renderProgressBar(r, n)]
       }), t.map((e, t) => this.renderTierMarker(e, t, n))]
     })
   }
   constructor(...e) {
-    super(...e), h(this, "state", {
+    super(...e), x(this, "state", {
       tierMarkerActive: 0,
       finishedInitialAnimation: false
-    }), h(this, "tierMarkerMaskId", (0, o.A)()), h(this, "handleForegroundFrame", e => {
+    }), x(this, "tierMarkerMaskId", (0, c.A)()), x(this, "handleForegroundFrame", e => {
       let {
         height: t
       } = e, {
@@ -239,14 +239,14 @@ class E extends(r = Chunk64700.Component) {
           return
         }
       }
-    }), h(this, "handleFinishedInitialAnimation", () => {
+    }), x(this, "handleFinishedInitialAnimation", () => {
       this.setState({
         finishedInitialAnimation: true
       })
     })
   }
 }
-h(E, "defaultProps", {
+x(A, "defaultProps", {
   initialAnimationDelay: 0
 });
-let N = E
+let E = A

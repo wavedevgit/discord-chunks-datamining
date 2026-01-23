@@ -2,7 +2,7 @@
 /** chunk id: 945086, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => p
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,7 +15,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk721923 = require("./721923.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk283008 = require("./283008.js");
-let g = e => {
+let m = e => {
   let {
     guild: t,
     analyticsLocation: n,
@@ -26,62 +26,62 @@ let g = e => {
     },
     useExpressiveButton: a
   } = e, {
-    color: c,
-    text: o
-  } = l, f = t.premiumTier + 1;
+    color: o,
+    text: c
+  } = l, g = t.premiumTier + 1;
   return (0, r.jsx)(d.A, {
-    color: c,
+    color: o,
     analyticsLocation: n,
     guild: t,
-    buttonText: o,
-    targetBoostedGuildTier: f,
+    buttonText: c,
+    targetBoostedGuildTier: g,
     className: i,
     useExpressiveButton: a
   })
 };
 
-function b(e) {
+function p(e) {
   let {
     header: t,
     text: i,
     analyticsLocation: s,
     guild: d,
     className: u,
-    textColor: b,
-    headerColor: m,
-    buttonProps: p,
-    useExpressiveButton: x
+    textColor: p,
+    headerColor: f,
+    buttonProps: b,
+    useExpressiveButton: h
   } = e, {
-    analyticsLocations: h
-  } = (0, o.Ay)(c.A.GUILD_BOOSTING_UPSELL_BANNER);
-  return (0, r.jsx)(o.f5, {
-    value: h,
+    analyticsLocations: x
+  } = (0, c.Ay)(o.A.GUILD_BOOSTING_UPSELL_BANNER);
+  return (0, r.jsx)(c.f5, {
+    value: x,
     children: (0, r.jsxs)("div", {
-      className: l()(f.vK, u),
+      className: l()(g.vK, u),
       children: [(0, r.jsx)("img", {
-        className: f.__invalid_headerGraphic,
+        className: g.__invalid_headerGraphic,
         alt: "",
         src: n(549408)
       }), (0, r.jsxs)("div", {
-        className: f.Qs,
+        className: g.Qs,
         children: [(0, r.jsx)(a.Text, {
           variant: "text-lg/semibold",
-          color: null != m ? m : "always-white",
-          className: f.wx,
+          color: null != f ? f : "always-white",
+          className: g.wx,
           children: t
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
-          color: null != b ? b : "always-white",
+          color: null != p ? p : "always-white",
           children: i
         })]
       }), (0, r.jsx)("div", {
-        className: f.OQ,
-        children: (0, r.jsx)(g, {
+        className: g.OQ,
+        children: (0, r.jsx)(m, {
           guild: d,
           analyticsLocation: s,
-          className: f.x6,
-          buttonProps: p,
-          useExpressiveButton: x
+          className: g.x6,
+          buttonProps: b,
+          useExpressiveButton: h
         })
       })]
     })

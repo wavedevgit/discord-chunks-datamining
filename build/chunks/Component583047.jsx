@@ -2,7 +2,7 @@
 /** chunk id: 583047, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  a: () => m
+  a: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,100 +17,100 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk35407 = require("./35407.js");
 
-function m(e) {
+function f(e) {
   var t;
   let {
     guild: n,
-    formFields: o
-  } = e, [m, x] = i.useState(o);
-  i.useEffect(() => x(o), [o]);
-  let h = null != (t = (0, a.H)({
+    formFields: c
+  } = e, [f, h] = i.useState(c);
+  i.useEffect(() => h(c), [c]);
+  let x = null != (t = (0, a.H)({
       guildId: n.id
     })) ? t : 0,
-    [j, O] = i.useState(null),
-    y = i.useMemo(() => null == m ? true : m.some(e => (0, s.i7)(e)), [m]),
-    v = i.useMemo(() => m.length === f.OK, [m]),
-    A = i.useCallback(e => {
-      u.A.setPendingMemberVerificationRules(n.id, e), x(e), null != j && O(null)
+    [j, _] = i.useState(null),
+    O = i.useMemo(() => null == f ? true : f.some(e => (0, s.i7)(e)), [f]),
+    v = i.useMemo(() => f.length === g.OK, [f]),
+    y = i.useCallback(e => {
+      u.A.setPendingMemberVerificationRules(n.id, e), h(e), null != j && _(null)
     }, [j, n.id]),
+    A = i.useCallback(e => {
+      y([...f, e])
+    }, [f, y]),
     E = i.useCallback(e => {
-      A([...m, e])
-    }, [m, A]),
-    N = i.useCallback(e => {
-      A([...m.slice(0, e), ...m.slice(e + 1)])
-    }, [m, A]),
-    _ = i.useCallback((e, t) => {
-      if (m[e] === t) return;
-      let n = [...m];
-      n[e] = t, A(n)
-    }, [m, A]),
+      y([...f.slice(0, e), ...f.slice(e + 1)])
+    }, [f, y]),
+    N = i.useCallback((e, t) => {
+      if (f[e] === t) return;
+      let n = [...f];
+      n[e] = t, y(n)
+    }, [f, y]),
     S = i.useCallback((e, t, n) => {
-      let r = m.indexOf(e),
-        i = [...m];
-      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), x(i)), n ? (A(i), null !== j && O(null)) : j !== t && O(t)
-    }, [j, m, A]);
+      let r = f.indexOf(e),
+        i = [...f];
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), h(i)), n ? (y(i), null !== j && _(null)) : j !== t && _(t)
+    }, [j, f, y]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.DZT, {
       variant: "text-xs/bold",
       color: "text-muted",
-      className: b.DD,
-      children: g.intl.format(g.t["sm+75n"], {
-        currentCount: m.length,
-        maxCount: f.OK
+      className: p.DD,
+      children: m.intl.format(m.t["sm+75n"], {
+        currentCount: f.length,
+        maxCount: g.OK
       })
-    }), m.map(e => (0, d.Td)({
+    }), f.map(e => (0, d.Td)({
       dropHoveredIndex: j,
       formField: e,
       guild: n,
-      index: m.indexOf(e),
-      isDragEnabled: m.length > 1,
-      submittedGuildJoinRequestsCount: h,
-      removeFormField: N,
-      updateFormField: _,
+      index: f.indexOf(e),
+      isDragEnabled: f.length > 1,
+      submittedGuildJoinRequestsCount: x,
+      removeFormField: E,
+      updateFormField: N,
       updateFormFieldOrder: S,
-      canRemove: m.length > 1,
+      canRemove: f.length > 1,
       actionsLocation: "side",
       fieldStyle: s.Vf.COMPACT
     })), !v && (0, r.jsx)("div", {
-      className: b.At,
-      children: (0, r.jsx)(c.A, {
-        addFormField: E,
+      className: p.At,
+      children: (0, r.jsx)(o.A, {
+        addFormField: A,
         guild: n,
-        allowTerms: !y
+        allowTerms: !O
       })
-    }), !v && (0, r.jsx)(p, {
-      addFormField: E
+    }), !v && (0, r.jsx)(b, {
+      addFormField: A
     })]
   })
 }
 
-function p(e) {
+function b(e) {
   let {
     addFormField: t
   } = e, n = i.useMemo(() => [{
-    text: g.intl.string(g.t.EOwiEk),
+    text: m.intl.string(m.t.EOwiEk),
     onClick: () => {
       t({
         field_type: s.rX.TEXT_INPUT,
-        label: g.intl.string(g.t.EOwiEk),
+        label: m.intl.string(m.t.EOwiEk),
         required: true
       })
     }
   }, {
-    text: g.intl.string(g.t.jqrNDh),
+    text: m.intl.string(m.t.jqrNDh),
     onClick: () => {
       t({
         field_type: s.rX.TEXT_INPUT,
-        label: g.intl.string(g.t.jqrNDh),
+        label: m.intl.string(m.t.jqrNDh),
         required: true
       })
     }
   }, {
-    text: g.intl.string(g.t.I5q8vp),
+    text: m.intl.string(m.t.I5q8vp),
     onClick: () => {
       t({
         field_type: s.rX.TEXT_INPUT,
-        label: g.intl.string(g.t.I5q8vp),
+        label: m.intl.string(m.t.I5q8vp),
         required: true
       })
     }
@@ -119,9 +119,9 @@ function p(e) {
     children: [(0, r.jsx)(l.DZT, {
       variant: "text-xs/bold",
       color: "text-muted",
-      className: b.hD,
-      children: g.intl.string(g.t.ID04cA)
-    }), (0, r.jsx)(o.z, {
+      className: p.hD,
+      children: m.intl.string(m.t.ID04cA)
+    }), (0, r.jsx)(c.z, {
       pills: n
     })]
   })

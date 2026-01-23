@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk990078 = require("./990078.jsx"),
   Chunk397927 = require("./397927.js"),
@@ -66,15 +66,15 @@ let N = Chunk64700.memo(function(e) {
   } = e;
   return (0, r.jsxs)(c.DUT, {
     onClick: t,
-    className: _.Eo,
+    className: E.Eo,
     children: [(0, r.jsx)("img", {
       alt: "",
       src: C
     }), (0, r.jsx)(c.Text, {
       variant: "text-sm/semibold",
       color: "text-strong",
-      className: _.Kk,
-      children: E.intl.string(E.t.H9jxS1)
+      className: E.Kk,
+      children: x.intl.string(x.t.H9jxS1)
     })]
   })
 });
@@ -82,17 +82,17 @@ let N = Chunk64700.memo(function(e) {
 function T(e) {
   let {
     entry: t
-  } = e, [i, s] = l.useState(false), u = l.useRef(null), {
+  } = e, [i, a] = l.useState(false), u = l.useRef(null), {
     canEdit: d
-  } = (0, j.A)(t);
+  } = (0, O.A)(t);
   return (0, r.jsx)("div", {
-    className: a()(_.fc, {
-      [_.QX]: i
+    className: s()(E.fc, {
+      [E.QX]: i
     }),
-    children: (0, r.jsxs)(p.Ay, {
+    children: (0, r.jsxs)(h.Ay, {
       children: [d ? (0, r.jsx)(o.m, {
-        text: E.intl.string(E.t.XnuOvN),
-        children: (0, r.jsx)(p.$n, {
+        text: x.intl.string(x.t.XnuOvN),
+        children: (0, r.jsx)(h.$n, {
           onClick: () => {
             (0, c.mMO)(async () => {
               let {
@@ -103,17 +103,17 @@ function T(e) {
               }))
             })
           },
-          "aria-label": E.intl.string(E.t.XnuOvN),
+          "aria-label": x.intl.string(x.t.XnuOvN),
           children: (0, r.jsx)(c.R2l, {
             size: "xs",
             color: "currentColor",
-            className: _.IQ
+            className: E.IQ
           })
         })
-      }) : null, (0, r.jsx)(v.A, {
+      }) : null, (0, r.jsx)(j.A, {
         targetElementRef: u,
-        onRequestOpen: () => s(true),
-        onRequestClose: () => s(false),
+        onRequestOpen: () => a(true),
+        onRequestClose: () => a(false),
         entry: t,
         hideEditButton: true,
         children: e => {
@@ -137,17 +137,17 @@ function T(e) {
             return i
           }(e, ["onClick"]);
           return (0, r.jsx)(o.m, {
-            text: E.intl.string(E.t["UKOtz+"]),
-            children: (0, r.jsx)(p.$n, I(S({}, n), {
+            text: x.intl.string(x.t["UKOtz+"]),
+            children: (0, r.jsx)(h.$n, I(S({}, n), {
               onClick: e => {
                 t(e)
               },
               ref: u,
-              "aria-label": E.intl.string(E.t["UKOtz+"]),
+              "aria-label": x.intl.string(x.t["UKOtz+"]),
               children: (0, r.jsx)(c.jNK, {
                 size: "md",
                 color: "currentColor",
-                className: _.IQ
+                className: E.IQ
               })
             }))
           })
@@ -160,26 +160,26 @@ let P = Chunk64700.memo(function(e) {
   var t;
   let {
     entry: i
-  } = e, [a, o] = l.useState(false), p = null != (0, s.bG)([A.A], () => A.A.getGuild(i.guildId)), j = async () => {
+  } = e, [s, o] = l.useState(false), h = null != (0, a.bG)([A.A], () => A.A.getGuild(i.guildId)), O = async () => {
     o(true);
     try {
-      p ? (0, m.u)(i.guildId) : await d.A.joinGuild(i.guildId, {
-        source: x.Q4z.DIRECTORY_ENTRY
+      h ? (0, b.u)(i.guildId) : await d.A.joinGuild(i.guildId, {
+        source: v.Q4z.DIRECTORY_ENTRY
       })
     } finally {
       o(false)
     }
-  }, v = y.Ay.getGuildSplashURL({
+  }, j = y.Ay.getGuildSplashURL({
     id: i.guildId,
     splash: i.splash,
-    size: 300 * (0, g.mZ)()
+    size: 300 * (0, m.mZ)()
   }), C = null != (t = y.Ay.getGuildIconURL({
     id: i.guildId,
     icon: i.icon,
     size: 40
-  })) ? t : true, N = E.intl.string(E.t.VJlc0S);
-  return p && (N = E.intl.string(E.t.cqWE2Z)), (0, r.jsxs)("div", {
-    className: _.Nr,
+  })) ? t : true, N = x.intl.string(x.t.VJlc0S);
+  return h && (N = x.intl.string(x.t.cqWE2Z)), (0, r.jsxs)("div", {
+    className: E.Nr,
     onContextMenu: e => {
       (0, u.L3)(e, async () => {
         let {
@@ -191,81 +191,81 @@ let P = Chunk64700.memo(function(e) {
       })
     },
     children: [(0, r.jsxs)("div", {
-      className: _.MY,
+      className: E.MY,
       children: [(0, r.jsx)("div", {
-        className: _.Yi,
-        children: null != v && (0, r.jsx)("img", {
-          src: v,
+        className: E.Yi,
+        children: null != j && (0, r.jsx)("img", {
+          src: j,
           alt: "",
-          className: _.j0
+          className: E.j0
         })
       }), (0, r.jsx)("div", {
-        className: _.$f,
-        children: (0, r.jsx)(f.Ay, {
-          mask: f.Ay.Masks.SQUIRCLE,
+        className: E.$f,
+        children: (0, r.jsx)(p.Ay, {
+          mask: p.Ay.Masks.SQUIRCLE,
           width: 48,
           height: 48,
           children: (0, r.jsx)("div", {
-            className: _.SA,
-            children: (0, r.jsx)(h.A, {
-              className: _.rZ,
+            className: E.SA,
+            children: (0, r.jsx)(f.A, {
+              className: E.rZ,
               iconSrc: C,
-              guild: (0, O.xi)(i),
-              size: h.A.Sizes.MEDIUM,
+              guild: (0, _.xi)(i),
+              size: f.A.Sizes.MEDIUM,
               active: true
             })
           })
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: _.OA,
+      className: E.OA,
       children: [(0, r.jsxs)("div", {
-        className: _.DD,
-        children: [(0, r.jsx)(b.A, {
-          className: _.n2,
+        className: E.DD,
+        children: [(0, r.jsx)(g.A, {
+          className: E.n2,
           guild: i
         }), (0, r.jsx)(c.Text, {
-          className: _.J5,
+          className: E.J5,
           variant: "heading-md/semibold",
           color: "text-strong",
           children: i.name
         })]
       }), (0, r.jsx)(c.Text, {
-        className: _.h_,
+        className: E.h_,
         variant: "text-sm/normal",
         color: "text-default",
         children: i.description
       }), (0, r.jsxs)("div", {
-        className: _.Fj,
+        className: E.Fj,
         children: [null != i.approximatePresenceCount && (0, r.jsxs)("div", {
-          className: _.Kl,
+          className: E.Kl,
           children: [(0, r.jsx)("div", {
-            className: _.JX
+            className: E.JX
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "text-default",
-            children: E.intl.format(E.t["LC+S+m"], {
+            children: x.intl.format(x.t["LC+S+m"], {
               membersOnline: i.approximatePresenceCount
             })
           })]
         }), null != i.approximateMemberCount && (0, r.jsxs)("div", {
-          className: _.Kl,
+          className: E.Kl,
           children: [(0, r.jsx)("div", {
-            className: _.Li
+            className: E.Li
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "text-default",
-            children: E.intl.format(E.t.zRl6XR, {
+            children: x.intl.format(x.t.zRl6XR, {
               count: i.approximateMemberCount
             })
           })]
         })]
       }), (0, r.jsx)("div", {
-        className: _.PD,
+        className: E.PD,
         children: (0, r.jsx)(c.Button, {
-          loading: a,
-          variant: p ? "secondary" : "active",
-          onClick: j,
+          loading: s,
+          variant: h ? "secondary" : "active",
+          onClick: O,
           text: N,
           fullWidth: true
         })

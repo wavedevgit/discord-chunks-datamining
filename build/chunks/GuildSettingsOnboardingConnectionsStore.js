@@ -2,7 +2,7 @@
 /** chunk id: 352821, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => m
+  A: () => f
 }), require("./896048.js"), require("./228524.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -10,7 +10,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk555337 = require("./555337.js"),
   Chunk539916 = require("./539916.js");
 
-function o(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,17 +20,17 @@ function o(e, t, n) {
 }
 let d = [],
   u = false,
-  f = [];
+  g = [];
 
-function g() {
+function m() {
   let e = a.A.getGuildId();
   if (null == e) {
-    d = [], f = [], u = false;
+    d = [], g = [], u = false;
     return
   }
-  d = [...s.A.getConnections(e)], f = [], u = false
+  d = [...s.A.getConnections(e)], g = [], u = false
 }
-class b extends(r = Chunk311907.Ay.Store) {
+class p extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(s.A, a.A)
   }
@@ -38,7 +38,7 @@ class b extends(r = Chunk311907.Ay.Store) {
     return d
   }
   getErrors() {
-    return f
+    return g
   }
   isSubmitting() {
     return u
@@ -56,29 +56,29 @@ class b extends(r = Chunk311907.Ay.Store) {
     return this.hasChanges()
   }
   hasValidationErrors() {
-    return f.length > 0
+    return g.length > 0
   }
 }
-o(b, "displayName", "GuildSettingsOnboardingConnectionsStore");
-let m = new b(Chunk73153.h, {
-  GUILD_SETTINGS_INIT: g,
-  GUILD_SETTINGS_SET_SECTION: g,
-  GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: g,
+c(p, "displayName", "GuildSettingsOnboardingConnectionsStore");
+let f = new p(Chunk73153.h, {
+  GUILD_SETTINGS_INIT: m,
+  GUILD_SETTINGS_SET_SECTION: m,
+  GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: m,
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_ADD: function(e) {
     let {
       connection: t
     } = e;
-    if (d.length >= c.pA) {
-      f = ["Maximum ".concat(c.pA, " connections allowed")];
+    if (d.length >= o.pA) {
+      g = ["Maximum ".concat(o.pA, " connections allowed")];
       return
     }
-    d = [...d, t], f = (0, c.n4)(d)
+    d = [...d, t], g = (0, o.n4)(d)
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_REMOVE: function(e) {
     let {
       index: t
     } = e;
-    d = d.filter((e, n) => n !== t), f = (0, c.n4)(d)
+    d = d.filter((e, n) => n !== t), g = (0, o.n4)(d)
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_UPDATE: function(e) {
     let {
@@ -92,39 +92,39 @@ let m = new b(Chunk73153.h, {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          o(e, t, n[t])
+          c(e, t, n[t])
         })
       }
       return e
-    }({}, e, n) : e), f = (0, c.n4)(d)
+    }({}, e, n) : e), g = (0, o.n4)(d)
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_REORDER: function(e) {
     let {
       connections: t
     } = e;
-    d = [...t], f = (0, c.n4)(d)
+    d = [...t], g = (0, o.n4)(d)
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_RESET: function() {
     let e = a.A.getGuildId();
     if (null == e) {
-      d = [], f = [];
+      d = [], g = [];
       return
     }
-    d = [...s.A.getConnections(e)], f = []
+    d = [...s.A.getConnections(e)], g = []
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SUBMIT: function() {
-    u = true, f = (0, c.n4)(d)
+    u = true, g = (0, o.n4)(d)
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_SUCCESS: function(e) {
     let {
       connections: t
     } = e;
-    u = false, f = [], d = [...t]
+    u = false, g = [], d = [...t]
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_FAILED: function(e) {
     let {
       errors: t
     } = e;
-    u = false, f = t
+    u = false, g = t
   }
 })

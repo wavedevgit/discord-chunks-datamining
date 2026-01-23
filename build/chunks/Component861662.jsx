@@ -1,14 +1,14 @@
 /** Chunk was on 58652 **/
 /** chunk id: 861662, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => c
+  B: () => d
 });
 var l, r, Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk280230 = require("./280230.js"),
   s = require.n(Chunk280230),
   Chunk397927 = require("./397927.js");
-let c = (l = function(e) {
+let d = (l = function(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -27,7 +27,7 @@ let c = (l = function(e) {
   return e
 }({}, s().defaultRules.link), r = r = {
   react: function(e, t, n) {
-    return (0, a.jsx)(o.MzZ, {
+    return (0, i.jsx)(o.MzZ, {
       href: e.target,
       target: "_blank",
       children: t(e.content, n)

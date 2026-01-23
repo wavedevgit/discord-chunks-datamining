@@ -26,19 +26,19 @@ function f(e, t) {
   } = e, {
     direction: E
   } = (0, d.Y)(), {
-    isInvalid: b,
-    validationErrors: y,
+    isInvalid: y,
+    validationErrors: b,
     validationDetails: O
   } = t.displayValidation, {
-    labelProps: A,
-    fieldProps: v,
-    descriptionProps: S,
-    errorMessageProps: I
+    labelProps: v,
+    fieldProps: A,
+    descriptionProps: I,
+    errorMessageProps: S
   } = (0, c.M)({
     ...e,
     labelElementType: "span",
     isInvalid: t.isInvalid,
-    errorMessage: e.errorMessage || y
+    errorMessage: e.errorMessage || b
   }), T = (0, i.$)(e, {
     labelable: true
   }), {
@@ -78,8 +78,8 @@ function f(e, t) {
   return r.V.set(t, {
     name: R,
     form: f,
-    descriptionId: S.id,
-    errorMessageId: I.id,
+    descriptionId: I.id,
+    errorMessageId: S.id,
     validationBehavior: g
   }), {
     radioGroupProps: (0, o.v)(T, {
@@ -91,14 +91,14 @@ function f(e, t) {
       "aria-required": _ || true,
       "aria-disabled": h || true,
       "aria-orientation": m,
-      ...v,
+      ...A,
       ...C
     }),
-    labelProps: A,
-    descriptionProps: S,
-    errorMessageProps: I,
-    isInvalid: b,
-    validationErrors: y,
+    labelProps: v,
+    descriptionProps: I,
+    errorMessageProps: S,
+    isInvalid: y,
+    validationErrors: b,
     validationDetails: O
   }
 }

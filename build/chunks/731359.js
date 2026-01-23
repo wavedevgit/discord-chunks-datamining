@@ -23,20 +23,20 @@ function d(e, t, n) {
     onPressEnd: m,
     onPressChange: g,
     onPress: E,
-    onPressUp: b,
-    onClick: y
-  } = e, O = e.isDisabled || t.isDisabled, A = t.selectedValue === d, v = e => {
+    onPressUp: y,
+    onClick: b
+  } = e, O = e.isDisabled || t.isDisabled, v = t.selectedValue === d, A = e => {
     e.stopPropagation(), t.setSelectedValue(d)
   }, {
-    pressProps: S,
-    isPressed: I
+    pressProps: I,
+    isPressed: S
   } = (0, l.d)({
     onPressStart: h,
     onPressEnd: m,
     onPressChange: g,
     onPress: E,
-    onPressUp: b,
-    onClick: y,
+    onPressUp: y,
+    onClick: b,
     isDisabled: O
   }), {
     pressProps: T,
@@ -45,8 +45,8 @@ function d(e, t, n) {
     onPressStart: h,
     onPressEnd: m,
     onPressChange: g,
-    onPressUp: b,
-    onClick: y,
+    onPressUp: y,
+    onClick: b,
     isDisabled: O,
     onPress(e) {
       var r;
@@ -56,7 +56,7 @@ function d(e, t, n) {
     focusableProps: N
   } = (0, c.Wc)((0, i.v)(e, {
     onFocus: () => t.setLastFocusedValue(d)
-  }), n), R = (0, i.v)(S, N), w = (0, a.$)(e, {
+  }), n), R = (0, i.v)(I, N), w = (0, a.$)(e, {
     labelable: true
   }), P = false;
   null != t.selectedValue ? t.selectedValue === d && (P = 0) : (t.lastFocusedValue === d || null == t.lastFocusedValue) && (P = 0), O && (P = true);
@@ -82,13 +82,13 @@ function d(e, t, n) {
       tabIndex: P,
       disabled: O,
       required: t.isRequired && "native" === M,
-      checked: A,
+      checked: v,
       value: d,
-      onChange: v,
+      onChange: A,
       "aria-describedby": [e["aria-describedby"], t.isInvalid ? j : null, L].filter(Boolean).join(" ") || true
     }),
     isDisabled: O,
-    isSelected: A,
-    isPressed: I || C
+    isSelected: v,
+    isPressed: S || C
   }
 }

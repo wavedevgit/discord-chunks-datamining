@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $v: () => V,
-  Bc: () => I,
+  Bc: () => S,
   Gc: () => U,
   Gn: () => P,
   Jm: () => G,
@@ -40,23 +40,23 @@ var Chunk687123 = require("./687123.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function A(e) {
+function v(e) {
   return {
     description: e ? (0, o.H)(O.intl.string(O.t["lSgO/q"]), O.intl.string(O.t.SAoMVJ)) : O.intl.string(O.t.SxY4IW),
     agreement: e ? (0, o.H)(O.intl.string(O.t.PBG51l), O.intl.string(O.t.Zt4Mf4)) : (0, o.H)(O.intl.string(O.t["5B+npG"]), O.intl.string(O.t.FDSSia))
   }
 }
-let v = new Date("06/16/2020"),
-  S = [Chunk652215.ftr.AGE_RESTRICTED, Chunk652215.ftr.EXPLICIT],
-  I = new Set([Chunk204925.w_.NSFW_SERVER, Chunk204925.w_.NSFW_SERVER_INVITE, Chunk204925.w_.NSFW_SERVER_INVITE_EMBED]);
+let A = new Date("06/16/2020"),
+  I = [Chunk652215.ftr.AGE_RESTRICTED, Chunk652215.ftr.EXPLICIT],
+  S = new Set([Chunk204925.w_.NSFW_SERVER, Chunk204925.w_.NSFW_SERVER_INVITE, Chunk204925.w_.NSFW_SERVER_INVITE_EMBED]);
 
 function T() {
   let e = h.default.getCurrentUser();
-  return null != e && g.default.extractTimestamp(e.id) > v.getTime() && null == e.nsfwAllowed
+  return null != e && g.default.extractTimestamp(e.id) > A.getTime() && null == e.nsfwAllowed
 }
 
 function C(e) {
-  return S.includes(e.nsfwLevel)
+  return I.includes(e.nsfwLevel)
 }
 
 function N() {
@@ -103,7 +103,7 @@ function w(e) {
   } : r ? {
     title: O.intl.string(n ? O.t["H0SG/g"] : O.t.NEabBa),
     description: O.intl.format(n ? O.t["6++3cX"] : O.t["2kHZes"], {
-      helpURL: m.A.getArticleURL(y.MVz.NSFW_AGE_GATING)
+      helpURL: m.A.getArticleURL(b.MVz.NSFW_AGE_GATING)
     }),
     agreement: null,
     modalType: a.A5.NSFW_CHANNEL_UNDERAGE
@@ -118,7 +118,7 @@ function w(e) {
 function P(e) {
   let t = (0, l.b8)(),
     n = R(),
-    r = e === b.w_.NSFW_SERVER || e === b.w_.NSFW_SERVER_INVITE || e === b.w_.NSFW_SERVER_INVITE_EMBED,
+    r = e === y.w_.NSFW_SERVER || e === y.w_.NSFW_SERVER_INVITE || e === y.w_.NSFW_SERVER_INVITE_EMBED,
     a = (0, i.bG)([h.default], () => {
       var e;
       return (null == (e = h.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
@@ -133,9 +133,9 @@ function P(e) {
     f = (0, o.W)(O.intl.string(O.t["5B+npG"]), O.intl.string(O.t.FDSSia)),
     p = (0, o.W)(O.intl.string(O.t.akjk0f), O.intl.string(O.t.V6Gmu9)),
     _ = (0, o.W)(O.intl.string(O.t["u/xqhc"]), O.intl.string(O.t["5rygLk"]));
-  if (e === b.w_.JOIN_LARGE_GUILD_UNDERAGE || e === b.w_.ACCESS_LARGE_GUILD_UNDERAGE) {
-    let n = e === b.w_.JOIN_LARGE_GUILD_UNDERAGE ? O.t["u/xsK9"] : O.t.MjQbfi,
-      r = A(t);
+  if (e === y.w_.JOIN_LARGE_GUILD_UNDERAGE || e === y.w_.ACCESS_LARGE_GUILD_UNDERAGE) {
+    let n = e === y.w_.JOIN_LARGE_GUILD_UNDERAGE ? O.t["u/xsK9"] : O.t.MjQbfi,
+      r = v(t);
     return {
       verifyTitle: O.intl.string(n),
       verifyGateDescription: r.description,
@@ -146,14 +146,14 @@ function P(e) {
     verifyAgreementButtonText: u,
     verifyGateDescription: r ? O.intl.format(c ? O.t["8tk6bB"] : O.t["7uIWQM"], {}) : O.intl.format(c ? O.t.XQZvwn : O.t.x1coPo, {}),
     verifyTitle: r ? O.intl.string(O.t.xi46lg) : O.intl.string(O.t.ZmwvDc)
-  } : e === b.w_.LARGE_GUILD ? {
+  } : e === y.w_.LARGE_GUILD ? {
     verifyTitle: d,
     verifyGateDescription: O.intl.string(O.t.SxY4IW),
     verifyAgreementButtonText: f
   } : a && r && !n ? {
     verifyTitle: O.intl.string(O.t["H0SG/g"]),
     verifyGateDescription: O.intl.format(O.t["6++3cX"], {
-      helpURL: m.A.getArticleURL(y.MVz.AGE_GATE)
+      helpURL: m.A.getArticleURL(b.MVz.AGE_GATE)
     }),
     verifyAgreementButtonText: null
   } : {
@@ -175,15 +175,15 @@ let D = () => {
   },
   L = e => !!D() && null != e && F(f.A.getChannel(e)),
   j = e => N() && L(e),
-  M = e => !!j(e) && ((0, E.yO)(b.w_.NSFW_VOICE_CHANNEL), true);
+  M = e => !!j(e) && ((0, E.yO)(y.w_.NSFW_VOICE_CHANNEL), true);
 
 function k(e, t, n) {
   if (x(e)) {
-    let e = null != n && I.has(n) ? n : b.w_.NSFW_SERVER;
+    let e = null != n && S.has(n) ? n : y.w_.NSFW_SERVER;
     (0, E.yO)(e);
     return
   }
-  if (H() && L(t)) return void(0, E.yO)(null != n ? n : b.w_.NSFW_CHANNEL)
+  if (H() && L(t)) return void(0, E.yO)(null != n ? n : y.w_.NSFW_CHANNEL)
 }
 let U = e => null != e && (e.isNSFW() || (0, d.wh)(_.A.getGuild(e.guild_id))),
   G = e => {

@@ -239,34 +239,34 @@ class E extends(r = Chunk64700.PureComponent) {
         snapOrientation: g
       } = this.props, {
         dragging: E,
-        dragging: b,
-        verticalOrientation: y,
+        dragging: y,
+        verticalOrientation: b,
         horizontalOrientation: O
-      } = this.state, A = false;
+      } = this.state, v = false;
       if (null == r || !E && l(this._dragStart, {
           x: t,
           y: n
         }) < c) return;
       E = true;
       let {
-        clientWidth: v,
-        clientHeight: S
-      } = r, I = m(d({
+        clientWidth: A,
+        clientHeight: I
+      } = r, S = m(d({
         top: n - this._offsetY,
         left: t - this._offsetX
-      }, i, a, v, S));
+      }, i, a, A, I));
       if (g) {
-        let e = p(I = _(I));
-        y = e[0], O = e[1]
-      } else I = {
-        top: I.top,
-        left: I.left
+        let e = p(S = _(S));
+        b = e[0], O = e[1]
+      } else S = {
+        top: S.top,
+        left: S.left
       };
-      2 === o && O !== this.state.horizontalOrientation && (this._offsetX = v - this._offsetX, A = true), 2 === s && y !== this.state.verticalOrientation && (this._offsetY = S - this._offsetY, A = true), this.setDOMPositions(I), b || null == u || u(I, r), null == f || f(I, r), A && (null == h || h([y, O])), this.setState({
+      2 === o && O !== this.state.horizontalOrientation && (this._offsetX = A - this._offsetX, v = true), 2 === s && b !== this.state.verticalOrientation && (this._offsetY = I - this._offsetY, v = true), this.setDOMPositions(S), y || null == u || u(S, r), null == f || f(S, r), v && (null == h || h([b, O])), this.setState({
         dragging: E,
-        verticalOrientation: y,
+        verticalOrientation: b,
         horizontalOrientation: O,
-        atTopEdge: 0 === I.top
+        atTopEdge: 0 === S.top
       })
     }), o(this, "handleMouseUp", () => {
       window.removeEventListener("mousemove", this.handleMouseMove), window.removeEventListener("mouseup", this.handleMouseUp), this.state.dragging && this.setState({

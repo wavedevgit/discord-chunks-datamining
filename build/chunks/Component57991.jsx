@@ -143,24 +143,24 @@ function x(e) {
     guildTraits: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: I.V8,
+    className: S.V8,
     children: [(0, r.jsxs)("div", {
-      className: s()(I.f, I.N5),
+      className: s()(S.f, S.N5),
       children: [(0, r.jsx)(E.A, {
         width: 18,
         height: 18,
-        className: I.F8
+        className: S.F8
       }), (0, r.jsx)(u.Text, {
         variant: "text-xs/semibold",
         color: "always-white",
-        children: b.gb(t.premiumTier)
+        children: y.gb(t.premiumTier)
       })]
     }), (0, r.jsx)("div", {
-      className: I.f,
+      className: S.f,
       children: (0, r.jsx)(u.Text, {
         variant: "text-xs/semibold",
         color: "always-white",
-        children: S.intl.format(S.t["dR/SVH"], {
+        children: I.intl.format(I.t["dR/SVH"], {
           count: t.premiumSubscriberCount
         })
       })
@@ -176,10 +176,10 @@ function L(e) {
     tooltipTitle: i,
     tooltipSubtitle: a,
     tooltipDescription: s
-  } = (0, A.V)(t, n.visibility);
+  } = (0, v.V)(t, n.visibility);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: I.Rf,
+      className: S.Rf,
       children: [(0, r.jsx)(u.Text, {
         color: "interactive-text-active",
         variant: "text-xs/bold",
@@ -207,9 +207,9 @@ function j(e) {
       tooltipPosition: d,
       className: g,
       flowerStarClassName: E,
-      iconClassName: b,
-      badgeStrokeColor: A,
-      badgeColor: S,
+      iconClassName: y,
+      badgeStrokeColor: v,
+      badgeColor: I,
       disableBoostClick: T,
       "aria-label": N = false
     } = e,
@@ -220,18 +220,18 @@ function j(e) {
     }),
     j = (0, o.bG)([_.A], () => _.A.theme),
     M = (0, O.Jp)(s),
-    k = (0, y.K)(M),
+    k = (0, b.K)(M),
     U = i.useMemo(() => M.premium && x && !T, [T, M.premium, x]),
     G = i.useCallback(e => {
       U && (e.stopPropagation(), e.preventDefault(), (0, f.K)({
         guildId: s.id,
         location: {
-          section: v.JJy.GUILD_HEADER,
-          object: v.ZSU.BOOST_GEM_ICON
+          section: A.JJy.GUILD_HEADER,
+          object: A.ZSU.BOOST_GEM_ICON
         }
       }))
     }, [U, s.id]);
-  if (k === y._.NONE) return null;
+  if (k === b._.NONE) return null;
   let {
     IconComponent: V,
     backgroundDarkColor: F,
@@ -256,7 +256,7 @@ function j(e) {
       badgeType: k,
       guildTraits: M
     }),
-    tooltipContentClassName: I.Hj,
+    tooltipContentClassName: S.Hj,
     children: e => (0, r.jsx)(u.DUT, {
       onClick: G,
       tabIndex: U ? 0 : false,
@@ -264,14 +264,14 @@ function j(e) {
         className: g,
         flowerStarClassName: E,
         allowFullSizedIcon: true,
-        color: null != a ? a : S,
-        stroke: A,
+        color: null != a ? a : I,
+        stroke: v,
         size: P,
         children: (0, r.jsx)(V, {
           size: "custom",
           width: Z,
           height: Z,
-          className: b,
+          className: y,
           color: null != n ? n : "currentColor"
         })
       }))

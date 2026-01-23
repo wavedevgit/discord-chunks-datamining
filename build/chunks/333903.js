@@ -23,11 +23,11 @@ function d(e, t, n) {
     linkBehavior: m = "action",
     keyboardNavigationBehavior: g = "arrow",
     escapeKeyBehavior: E = "clearSelection",
-    shouldSelectOnPressUp: b
+    shouldSelectOnPressUp: y
   } = e;
   e["aria-label"] || e["aria-labelledby"] || console.warn("An aria-label or aria-labelledby prop is required for accessibility.");
   let {
-    listProps: y
+    listProps: b
   } = (0, u.y)({
     selectionManager: t.selectionManager,
     collection: t.collection,
@@ -48,26 +48,26 @@ function d(e, t, n) {
     onAction: _,
     linkBehavior: m,
     keyboardNavigationBehavior: g,
-    shouldSelectOnPressUp: b
+    shouldSelectOnPressUp: y
   });
-  let A = (0, o.m)({
+  let v = (0, o.m)({
       selectionManager: t.selectionManager,
       hasItemActions: !!_
     }),
-    v = (0, c.$)(n, {
+    A = (0, c.$)(n, {
       isDisabled: 0 !== t.collection.size
     }),
-    S = (0, a.$)(e, {
+    I = (0, a.$)(e, {
       labelable: true
     }),
-    I = (0, s.v)(S, {
+    S = (0, s.v)(I, {
       role: "grid",
       id: O,
       "aria-multiselectable": "multiple" === t.selectionManager.selectionMode ? "true" : true
     }, 0 === t.collection.size ? {
-      tabIndex: v ? false : 0
-    } : y, A);
-  return d && (I["aria-rowcount"] = t.collection.size, I["aria-colcount"] = 1), (0, l.H)({}, t), {
-    gridProps: I
+      tabIndex: A ? false : 0
+    } : b, v);
+  return d && (S["aria-rowcount"] = t.collection.size, S["aria-colcount"] = 1), (0, l.H)({}, t), {
+    gridProps: S
   }
 }

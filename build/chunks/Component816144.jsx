@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 816144, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => F
+  A: () => V
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -41,19 +41,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk82842 = require("./82842.js"),
   Chunk473169 = require("./473169.js");
 
-function V(e) {
+function B(e) {
   let {
     canManageRoles: t,
     channel: n
-  } = e, l = t && (0, f.Ae)(n), a = (0, i.bG)([O.Ay], () => null != n.guild_id && n === O.Ay.getDefaultChannel(n.guild_id), [n]);
-  if ((0, p.A)(n.id)) return null;
+  } = e, l = t && (0, p.Ae)(n), s = (0, i.bG)([_.Ay], () => null != n.guild_id && n === _.Ay.getDefaultChannel(n.guild_id), [n]);
+  if ((0, h.A)(n.id)) return null;
   if (n.isForumPost()) return (0, r.jsx)(C.A, {
     channel: n
   });
   if (A.Le.has(n.type)) return (0, r.jsx)(R.A, {
     channel: n
   });
-  if (a) return (0, r.jsx)(D.A, {
+  if (s) return (0, r.jsx)(D.A, {
     channel: n
   });
   if (l) return (0, r.jsx)(P.A, {
@@ -64,84 +64,84 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   var t;
   let {
     channel: n,
-    showingBanner: f
-  } = e, p = (0, d.Ay)(n), {
+    showingBanner: p
+  } = e, h = (0, d.Ay)(n), {
     type: A
-  } = n, O = (0, i.bG)([v.default], () => n.isPrivate() ? v.default.getUser(n.getRecipientId()) : null), C = x.Ay.useUserTag(O), {
+  } = n, _ = (0, i.bG)([j.default], () => n.isPrivate() ? j.default.getUser(n.getRecipientId()) : null), C = v.Ay.useUserTag(_), {
     canManageRoles: P,
     canReadMessageHistory: w
-  } = (0, i.cf)([j.A], () => ({
-    canManageRoles: j.A.can(M.xBc.MANAGE_ROLES, n),
-    canReadMessageHistory: j.A.can(M.xBc.READ_MESSAGE_HISTORY, n)
-  })), R = (0, i.bG)([g.A], () => A === M.rbe.DM ? g.A.getMutualGuilds(n.getRecipientId()) : null, [n, A]), D = (0, u.A)(null != (t = null == O ? true : O.id) ? t : M.dJq), {
-    authorizedAppToken: F,
-    authorizedAppsFetchState: H
+  } = (0, i.cf)([O.A], () => ({
+    canManageRoles: O.A.can(M.xBc.MANAGE_ROLES, n),
+    canReadMessageHistory: O.A.can(M.xBc.READ_MESSAGE_HISTORY, n)
+  })), R = (0, i.bG)([m.A], () => A === M.rbe.DM ? m.A.getMutualGuilds(n.getRecipientId()) : null, [n, A]), D = (0, u.A)(null != (t = null == _ ? true : _.id) ? t : M.dJq), {
+    authorizedAppToken: V,
+    authorizedAppsFetchState: F
   } = (0, i.cf)([y.default], () => ({
     authorizedAppToken: y.default.getNewestTokenForApplication(null == D ? true : D.id),
     authorizedAppsFetchState: y.default.getFetchState()
-  })), B = c.A.useExperiment({
+  })), H = c.A.useExperiment({
     location: "EmptyMessages"
   }).enabledDesktop;
   if (l.useEffect(() => {
-      A === M.rbe.DM && null == R && null != O && s.h.wait(() => (0, m.A)(n.getRecipientId(), O.getAvatarURL(null, 80), {
+      A === M.rbe.DM && null == R && null != _ && a.h.wait(() => (0, b.A)(n.getRecipientId(), _.getAvatarURL(null, 80), {
         withMutualGuilds: true
       }))
-    }, [R, A, n, O]), l.useEffect(() => {
-      (null == O ? true : O.bot) && H === y.FetchState.NOT_FETCHED && o.A.fetch()
-    }, [null == O ? true : O.bot, H]), n.isSystemDM()) return (0, r.jsx)(T.A, {
+    }, [R, A, n, _]), l.useEffect(() => {
+      (null == _ ? true : _.bot) && F === y.FetchState.NOT_FETCHED && o.A.fetch()
+    }, [null == _ ? true : _.bot, F]), n.isSystemDM()) return (0, r.jsx)(T.A, {
     channel: n,
-    children: G.intl.string(G.t.Rzvnig)
+    children: k.intl.string(k.t.Rzvnig)
   });
   if (A === M.rbe.DM) {
     let e;
-    if (null != O && null != D) {
+    if (null != _ && null != D) {
       let t = [];
-      null != F && (t.push((0, r.jsx)(N.X, {
+      null != V && (t.push((0, r.jsx)(N.X, {
         channel: n,
-        user: O
+        user: _
       }, "mute")), t.push((0, r.jsx)(I.L, {
-        user: O,
+        user: _,
         application: D,
         channel: n,
-        oauth2Token: F
-      }, "manage"))), B && t.push((0, r.jsx)(h.A, {
+        oauth2Token: V
+      }, "manage"))), H && t.push((0, r.jsx)(f.A, {
         channel: n
       }, "report")), t.length > 0 && (e = (0, r.jsx)("div", {
-        className: k.U,
+        className: G.U,
         children: t
       }))
-    } else e = (0, r.jsx)(E.A, {
+    } else e = (0, r.jsx)(x.A, {
       userId: n.getRecipientId(),
       channel: n,
-      showingBanner: f
+      showingBanner: p
     });
     return (0, r.jsxs)(T.A, {
       channel: n,
-      user: O,
-      children: [null != O && !O.isProvisional && (0, r.jsx)(a.Heading, {
+      user: _,
+      children: [null != _ && !_.isProvisional && (0, r.jsx)(s.Heading, {
         variant: "heading-xl/medium",
         className: U.SX,
         children: C
-      }), G.intl.format(G.t["Qvg+6+"], {
-        username: p
-      }), (null == O ? true : O.isProvisional) && (0, r.jsx)(b.Y, {
-        userId: O.id
+      }), k.intl.format(k.t["Qvg+6+"], {
+        username: h
+      }), (null == _ ? true : _.isProvisional) && (0, r.jsx)(g.Y, {
+        userId: _.id
       }), e]
     })
   }
   if (n.isMultiUserDM())
-    if (n.isManaged()) return (0, r.jsxs)(_.Ay, {
+    if (n.isManaged()) return (0, r.jsxs)(E.Ay, {
       channelId: n.id,
-      children: [(0, r.jsx)(_.cr, {
-        children: G.intl.format(G.t.I3R7Vn, {
-          channelName: p
+      children: [(0, r.jsx)(E.cr, {
+        children: k.intl.format(k.t.I3R7Vn, {
+          channelName: h
         })
-      }), (0, r.jsx)(_.j1, {
-        children: G.intl.string(G.t.M8Ao6I)
+      }), (0, r.jsx)(E.j1, {
+        children: k.intl.string(k.t.M8Ao6I)
       })]
     });
     else if (n.hasFlag(L.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, r.jsx)(S.A, {
@@ -149,18 +149,18 @@ function F(e) {
   });
   else return (0, r.jsx)(T.A, {
     channel: n,
-    children: G.intl.format(G.t.MFwcqO, {
-      name: p
+    children: k.intl.format(k.t.MFwcqO, {
+      name: h
     })
   });
-  return w ? (0, r.jsx)(V, {
+  return w ? (0, r.jsx)(B, {
     channel: n,
     canManageRoles: P
-  }) : (0, r.jsx)(_.Ay, {
+  }) : (0, r.jsx)(E.Ay, {
     channelId: n.id,
-    children: (0, r.jsx)(_.j1, {
-      children: G.intl.format(G.t.hPVEQG, {
-        channelName: p
+    children: (0, r.jsx)(E.j1, {
+      children: k.intl.format(k.t.hPVEQG, {
+        channelName: h
       })
     })
   })

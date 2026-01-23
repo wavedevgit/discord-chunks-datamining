@@ -41,12 +41,12 @@ let h = {
   g = new Set,
   E = false;
 
-function b() {
+function y() {
   a = null
 }
 
-function y() {
-  r = null, i = null, g = new Set, m.applicationId = null, m.originURL = null, b()
+function b() {
+  r = null, i = null, g = new Set, m.applicationId = null, m.originURL = null, y()
 }
 
 function O(e) {
@@ -56,7 +56,7 @@ function O(e) {
   g.add(t), a = null
 }
 
-function A(e) {
+function v(e) {
   let {
     applicationId: t,
     originURL: n
@@ -64,7 +64,7 @@ function A(e) {
   r = t, i = n, g.delete(t), a = null, m.applicationId = t, m.originURL = n
 }
 
-function v(e) {
+function A(e) {
   let {
     applicationId: t,
     error: n
@@ -72,13 +72,13 @@ function v(e) {
   g.delete(t), a = n
 }
 
-function S(e) {
+function I(e) {
   let {
     testModeApplicationId: t
   } = e;
   r = t
 }
-class I extends(s = Chunk311907.Ay.PersistedStore) {
+class S extends(s = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     r = (m = _({}, null != e ? e : h)).applicationId, i = m.originURL, this.waitFor(f.A, c.A, d.A), this.syncWith([d.A, c.A], () => true), f.A.whenInitialized(() => {
       E = true
@@ -120,13 +120,13 @@ class I extends(s = Chunk311907.Ay.PersistedStore) {
     })
   }
 }
-p(I, "displayName", "TestModeStore"), p(I, "persistKey", "TestModeStore");
-let T = new I(Chunk73153.h, {
+p(S, "displayName", "TestModeStore"), p(S, "persistKey", "TestModeStore");
+let T = new S(Chunk73153.h, {
   DEVELOPER_TEST_MODE_AUTHORIZATION_START: O,
-  DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS: A,
-  DEVELOPER_TEST_MODE_AUTHORIZATION_FAIL: v,
-  OVERLAY_INITIALIZE: S,
-  DEVELOPER_TEST_MODE_RESET_ERROR: b,
-  LOGOUT: y,
-  DEVELOPER_TEST_MODE_RESET: y
+  DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS: v,
+  DEVELOPER_TEST_MODE_AUTHORIZATION_FAIL: A,
+  OVERLAY_INITIALIZE: I,
+  DEVELOPER_TEST_MODE_RESET_ERROR: y,
+  LOGOUT: b,
+  DEVELOPER_TEST_MODE_RESET: b
 })

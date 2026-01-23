@@ -64,7 +64,7 @@ function M(e) {
       variant: "heading-xxl/medium",
       className: D.VA,
       children: w.intl.string(R.default.sEPtGY)
-    }), (0, r.jsx)(S.e, {
+    }), (0, r.jsx)(I.e, {
       slide: N.P7.FRIENDS
     })]
   })
@@ -88,7 +88,7 @@ function U(e) {
   } = e, {
     unit: a,
     duration: o
-  } = (0, A.oO)(null != (t = null == i ? true : i.numVoiceMinutes) ? t : 0);
+  } = (0, v.oO)(null != (t = null == i ? true : i.numVoiceMinutes) ? t : 0);
   return (0, r.jsxs)("div", {
     className: D.Qs,
     children: [(0, r.jsxs)("div", {
@@ -143,7 +143,7 @@ function G(e) {
   } = e, {
     users: d = [],
     sidekick: _
-  } = (0, u.bG)([O.A], () => O.A.getCheckpointData()), h = (0, i.useContext)(y.P), b = (0, f.rdh)(h.primaryColor).hex(), A = d[1], v = d[0], S = (0, u.bG)([m.default], () => m.default.getCurrentUser()), C = (0, i.useRef)(0), R = (0, i.useRef)(true), w = (0, i.useRef)(null), P = null != (t = (0, E.tx)(null == _ ? true : _.user)) ? t : "", j = null != (n = (0, E.tx)(A)) ? n : "", G = null != (a = (0, E.tx)(v)) ? a : "", V = 1 === d.length, F = (0, u.bG)([p.A], () => p.A.useReducedMotion);
+  } = (0, u.bG)([O.A], () => O.A.getCheckpointData()), h = (0, i.useContext)(b.P), y = (0, f.rdh)(h.primaryColor).hex(), v = d[1], A = d[0], I = (0, u.bG)([m.default], () => m.default.getCurrentUser()), C = (0, i.useRef)(0), R = (0, i.useRef)(true), w = (0, i.useRef)(null), P = null != (t = (0, E.tx)(null == _ ? true : _.user)) ? t : "", j = null != (n = (0, E.tx)(v)) ? n : "", G = null != (a = (0, E.tx)(A)) ? a : "", V = 1 === d.length, F = (0, u.bG)([p.A], () => p.A.useReducedMotion);
   (0, i.useEffect)(() => (s === N.Wf.FRIENDS_LEAVE && (R.current ? l() : F ? (o(), R.current = true) : C.current = setTimeout(() => {
     o(), R.current = true
   }, x)), () => clearTimeout(C.current)), [o, l, F, s]);
@@ -174,7 +174,7 @@ function G(e) {
       return () => clearInterval(e)
     }, [F, V]),
     W = (0, i.useMemo)(() => s < N.Wf.FRIENDS_INTRO ? N.Wf.FRIENDS_INTRO : s >= N.Wf.FRIENDS_BEST ? N.Wf.FRIENDS_BEST : s, [s]);
-  return (0, r.jsxs)(I.A, {
+  return (0, r.jsxs)(S.A, {
     children: [(0, r.jsx)(c.m0T, {
       ref: w,
       className: D.lW,
@@ -184,10 +184,10 @@ function G(e) {
       dataBinding: {
         AnimationState: B,
         "Avatar01/img": H(null == _ ? true : _.user),
-        "Avatar02/img": H(A),
-        "Avatar03/img": H(v),
+        "Avatar02/img": H(v),
+        "Avatar03/img": H(A),
         "Avatar04/img": H(null == _ ? true : _.user),
-        "Avatar05/img": H(S),
+        "Avatar05/img": H(I),
         "Avatar01/Username": P,
         "Avatar02/Username": j,
         "Avatar03/Username": G,
@@ -205,7 +205,7 @@ function G(e) {
         children: [(0, r.jsx)(f.q7S, {
           id: N.Wf.FRIENDS_INTRO,
           children: (0, r.jsx)(M, {
-            primaryColor: b
+            primaryColor: y
           })
         }), (0, r.jsx)(f.q7S, {
           id: N.Wf.FRIENDS_TRANSITION,
@@ -213,7 +213,7 @@ function G(e) {
         }), (0, r.jsx)(f.q7S, {
           id: N.Wf.FRIENDS_BEST,
           children: (0, r.jsx)(U, {
-            primaryColor: b,
+            primaryColor: y,
             sidekick: _
           })
         })]
@@ -225,7 +225,7 @@ function G(e) {
 function V() {
   var e;
   let t = (0, i.useMemo)(() => (0, N.qk)(), []),
-    n = (0, i.useContext)(y.P),
+    n = (0, i.useContext)(b.P),
     a = (0, f.rdh)(n.primaryColor).hex(),
     d = (0, i.useRef)(null),
     [p, m] = (0, i.useState)((0, o.sample)(t)),
@@ -233,12 +233,12 @@ function V() {
       sidekick: g
     } = (0, u.bG)([O.A], () => O.A.getCheckpointData()),
     E = null == g ? true : g.user,
-    A = (0, _.A)(null != (e = null == E ? true : E.id) ? e : "0"),
-    S = (0, u.bG)([h.A], () => h.A.isBlocked(null == E ? true : E.id)),
-    I = A && !S,
+    v = (0, _.A)(null != (e = null == E ? true : E.id) ? e : "0"),
+    I = (0, u.bG)([h.A], () => h.A.isBlocked(null == E ? true : E.id)),
+    S = v && !I,
     [T, C] = (0, i.useState)(false),
     x = T || null == p || p.length < 1 || p.length > j,
-    L = (0, v.V)(l.A),
+    L = (0, A.V)(l.A),
     M = T ? w.intl.string(w.t.fjcCk5) : "";
   (0, i.useEffect)(() => {
     null != d.current && (d.current.style.height = "".concat(Math.min(d.current.scrollHeight, 140), "px"))
@@ -254,9 +254,9 @@ function V() {
       m(e.target.value)
     }, []),
     G = (0, i.useCallback)(() => {
-      x || (null == E ? true : E.id) == null || (L(), (0, b.fr)(p, null == E ? true : E.id), m(true), C(true))
+      x || (null == E ? true : E.id) == null || (L(), (0, y.fr)(p, null == E ? true : E.id), m(true), C(true))
     }, [x, L, p, null == E ? true : E.id]);
-  return I ? (0, r.jsxs)("div", {
+  return S ? (0, r.jsxs)("div", {
     className: D.I6,
     children: [(0, r.jsx)(f.Text, {
       variant: "text-sm/semibold",

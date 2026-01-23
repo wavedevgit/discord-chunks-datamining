@@ -83,16 +83,16 @@ function V(e) {
     activeStatus: n,
     title: a,
     description: c,
-    cost: b,
-    costDecorator: y,
+    cost: y,
+    costDecorator: b,
     imageUrl: O,
-    skuId: A,
-    isNew: S,
-    onClose: I,
+    skuId: v,
+    isNew: I,
+    onClose: S,
     onHover: C
   } = e, {
     analyticsLocations: M
-  } = (0, _.Ay)(), U = n !== R.b_.INACTIVE, V = (0, v.A)(t), F = (0, u.bG)([E.default], () => E.default.getCurrentUser()), [B, H] = i.useState(false), [Y, W] = i.useState(false), K = Y, z = i.useCallback(() => {
+  } = (0, _.Ay)(), U = n !== R.b_.INACTIVE, V = (0, A.A)(t), F = (0, u.bG)([E.default], () => E.default.getCurrentUser()), [B, H] = i.useState(false), [Y, W] = i.useState(false), K = Y, z = i.useCallback(() => {
     let e = g.A.getGuild(t);
     null != e && (0, h.g)({
       analyticsLocation: {
@@ -104,8 +104,8 @@ function V(e) {
       guild: e
     })
   }, [t, M]), q = i.useCallback(() => {
-    I(), (0, T.A)(t, p.A.GUILD_POWERUPS_MARKETING, A)
-  }, [t, A, I]), X = {
+    S(), (0, T.A)(t, p.A.GUILD_POWERUPS_MARKETING, v)
+  }, [t, v, S]), X = {
     tension: 400,
     friction: 30
   }, Z = (0, f.zhh)({
@@ -153,8 +153,8 @@ function V(e) {
         heading: a,
         description: c,
         label: x.intl.formatToPlainString(D.default.QOacIS, {
-          quantity: b,
-          decorator: null != y ? y : ""
+          quantity: y,
+          decorator: null != b ? b : ""
         }),
         isEnabled: U
       }), (0, r.jsxs)(o.animated.div, {
@@ -185,7 +185,7 @@ function V(e) {
           })
         })]
       })]
-    }), S && (0, r.jsx)(f.LpS, {
+    }), I && (0, r.jsx)(f.LpS, {
       className: j.zG,
       text: x.intl.string(x.t.y2b7CA)
     }), B && (0, r.jsx)("div", {
@@ -201,7 +201,7 @@ function F(e) {
     costDecorator: a,
     isNew: s,
     onClose: o
-  } = e, [l, c] = i.useState(false), u = (0, I.Ay)(t, n).type, d = (0, A.A)(n, l);
+  } = e, [l, c] = i.useState(false), u = (0, S.Ay)(t, n).type, d = (0, v.A)(n, l);
   return (0, r.jsx)(V, {
     guildId: t,
     activeStatus: u,
@@ -227,9 +227,9 @@ let B = 3,
       onClose: a
     } = e;
     i.useEffect(() => {
-      O.A.shouldFetchCatalogForGuild(n.id) && (0, y.AK)(n.id), O.A.shouldFetchPowerupsForGuild(n.id) && (0, y.Xd)(n.id)
+      O.A.shouldFetchCatalogForGuild(n.id) && (0, b.AK)(n.id), O.A.shouldFetchPowerupsForGuild(n.id) && (0, b.Xd)(n.id)
     }, [n.id]);
-    let s = (0, S.A)(n.id),
+    let s = (0, I.A)(n.id),
       o = Array.from(null != s ? s : []).reverse().slice(0, B);
     return 0 === o.length ? null : (0, r.jsxs)("div", {
       ref: t,
@@ -240,7 +240,7 @@ let B = 3,
       }), (0, r.jsx)(c.EYj, {
         variant: "text-lg/medium",
         children: x.intl.format(D.default.OdCzjA, {
-          helpDeskArticle: b.A.getArticleURL(w.MVz.GUILD_BOOSTING_FAQ)
+          helpDeskArticle: y.A.getArticleURL(w.MVz.GUILD_BOOSTING_FAQ)
         })
       }), (0, r.jsx)("div", {
         className: L.DO,

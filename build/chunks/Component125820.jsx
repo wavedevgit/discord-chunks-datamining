@@ -1,7 +1,7 @@
 /** Chunk was on 71791 **/
-/** chunk id: 125820, original params: e,s,a (module,exports,require) **/
+/** chunk id: 125820, original params: e,s,t (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => k
+  default: () => f
 }), require("./896048.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -25,72 +25,72 @@ var Chunk627968 = require("./627968.js"),
   Chunk604880 = require("./604880.js"),
   Chunk318808 = require("./318808.js");
 Chunk311907.Ay.initialize();
-let A = Chunk607399.Fr || Chunk607399.v1;
+let T = Chunk607399.Fr || Chunk607399.v1;
 
-function k(e) {
+function f(e) {
   let {
     match: s
-  } = e, a = (0, c.bG)([h.A], () => h.A.getState("quests")), r = s.params.questId, k = function(e) {
-    let [s, a] = l.useState(null);
-    return l.useEffect(() => {
-      (0, x.xB)(e).then(e => a({
+  } = e, t = (0, n.bG)([u.A], () => u.A.getState("quests")), l = s.params.questId, f = function(e) {
+    let [s, t] = r.useState(null);
+    return r.useEffect(() => {
+      (0, m.xB)(e).then(e => t({
         status: "ok",
         value: e
-      })).catch(() => a({
+      })).catch(() => t({
         status: "error"
       }))
-    }, [a, e]), s
-  }(r);
-  l.useEffect(() => {
-    A || (null == a ? ((0, N.av)({
-      questId: r,
-      event: _.HAw.QUEST_SHARE_LINK_DEEP_LINKED_INTO_DESKTOP_CLIENT,
+    }, [t, e]), s
+  }(l);
+  r.useEffect(() => {
+    T || (null == t ? ((0, o.av)({
+      questId: l,
+      event: p.HAw.QUEST_SHARE_LINK_DEEP_LINKED_INTO_DESKTOP_CLIENT,
       properties: {},
-      sourceQuestContent: f.uF.QUEST_HOME_DESKTOP
-    }), u.A.openNativeAppModal("quests", _.e$_.DEEP_LINK, {
-      type: g.XK.QUEST_HOME,
+      sourceQuestContent: g.uF.QUEST_HOME_DESKTOP
+    }), _.A.openNativeAppModal("quests", p.e$_.DEEP_LINK, {
+      type: E.XK.QUEST_HOME,
       params: {
-        questId: r
+        questId: l
       }
-    })) : a === _.fAW.OPEN_FAIL && (0, m.bG)({
-      pathname: _.BVt.QUEST_HOME,
-      hash: r
+    })) : t === p.fAW.OPEN_FAIL && (0, h.bG)({
+      pathname: p.BVt.QUEST_HOME,
+      hash: l
     }))
-  }, [a, r]);
-  let C = l.useCallback(() => (0, o.QA)(r), [r]);
-  if (A) return (0, t.jsxs)("div", {
-    className: p.MY,
-    children: [(0, t.jsx)("img", {
-      className: p.Bg,
-      src: v.Ay,
+  }, [t, l]);
+  let C = r.useCallback(() => (0, x.QA)(l), [l]);
+  if (T) return (0, a.jsxs)("div", {
+    className: A.MY,
+    children: [(0, a.jsx)("img", {
+      className: A.Bg,
+      src: k.Ay,
       alt: ""
-    }), (0, t.jsx)("div", {
-      className: p.r$,
-      children: (0, t.jsx)("img", {
-        src: b,
+    }), (0, a.jsx)("div", {
+      className: A.r$,
+      children: (0, a.jsx)("img", {
+        src: v,
         alt: ""
       })
-    }), null != k && (0, t.jsxs)("div", {
-      className: p.Nr,
-      children: ["ok" === k.status && (0, t.jsxs)(t.Fragment, {
-        children: [(0, t.jsx)("div", {
-          className: p.rC,
-          children: (0, t.jsx)("img", {
-            src: "".concat(E.CI).concat(r, "/dark/").concat(k.value.assets.gameTile),
+    }), null != f && (0, a.jsxs)("div", {
+      className: A.Nr,
+      children: ["ok" === f.status && (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)("div", {
+          className: A.rC,
+          children: (0, a.jsx)("img", {
+            src: "".concat(N.CI).concat(l, "/dark/").concat(f.value.assets.gameTile),
             alt: "",
-            className: p.o4
+            className: A.o4
           })
-        }), (0, t.jsx)(n.Heading, {
+        }), (0, a.jsx)(c.Heading, {
           variant: "heading-lg/semibold",
           color: "text-default",
-          className: p.ky,
-          children: k.value.messages.questName
+          className: A.ky,
+          children: f.value.messages.questName
         })]
-      }), (0, t.jsx)(n.Text, {
+      }), (0, a.jsx)(c.Text, {
         variant: "text-md/normal",
-        className: p.G3,
+        className: A.G3,
         children: j.intl.string(j.t.NweJI8)
-      }), (0, t.jsx)(n.Button, {
+      }), (0, a.jsx)(c.Button, {
         variant: "primary",
         text: j.intl.string(j.t.UQvCf7),
         fullWidth: true,
@@ -98,23 +98,23 @@ function k(e) {
       })]
     })]
   });
-  let I = null == a || a === _.fAW.OPENING || a === _.fAW.OPEN_FAIL;
-  return (0, t.jsxs)(t.Fragment, {
-    children: [(0, t.jsx)(i.A, {
-      className: p.Lq,
+  let I = null == t || t === p.fAW.OPENING || t === p.fAW.OPEN_FAIL;
+  return (0, a.jsxs)(a.Fragment, {
+    children: [(0, a.jsx)(i.A, {
+      className: A.Lq,
       preserveAspectRatio: "xMinYMin slice"
-    }), (0, t.jsx)("div", {
-      className: p.kL,
-      children: (0, t.jsx)(d.Ay, {
-        children: I ? (0, t.jsxs)(t.Fragment, {
-          children: [(0, t.jsx)(d.hE, {
+    }), (0, a.jsx)("div", {
+      className: A.kL,
+      children: (0, a.jsx)(d.Ay, {
+        children: I ? (0, a.jsxs)(a.Fragment, {
+          children: [(0, a.jsx)(d.hE, {
             children: j.intl.string(j.t["Z+hCVU"])
-          }), (0, t.jsx)(d.CK, {})]
-        }) : (0, t.jsxs)(t.Fragment, {
-          children: [(0, t.jsx)(d.hE, {
-            className: p.Ns,
+          }), (0, a.jsx)(d.CK, {})]
+        }) : (0, a.jsxs)(a.Fragment, {
+          children: [(0, a.jsx)(d.hE, {
+            className: A.Ns,
             children: j.intl.string(j.t.csrAMJ)
-          }), (0, t.jsx)(d.tK, {
+          }), (0, a.jsx)(d.tK, {
             children: j.intl.string(j.t.ghBJz9)
           })]
         })

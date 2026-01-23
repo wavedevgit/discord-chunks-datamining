@@ -74,13 +74,13 @@ function E(e) {
   g(e.channel)
 }
 
-function b(e) {
+function y(e) {
   e.channels.forEach(e => {
     g(e)
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     channel: t
   } = e;
@@ -98,7 +98,7 @@ function O(e) {
   }) : e))
 }
 
-function A(e) {
+function v(e) {
   let {
     channelId: t
   } = e, n = _[t];
@@ -107,7 +107,7 @@ function A(e) {
   })))
 }
 
-function v(e) {
+function A(e) {
   let {
     channelId: t,
     warningIds: n
@@ -119,14 +119,14 @@ function v(e) {
   }) : e)
 }
 
-function S(e) {
+function I(e) {
   let {
     channelId: t
   } = e;
   h.add(t)
 }
 
-function I() {
+function S() {
   _ = {}, Object.values(a.A.getMutablePrivateChannels()).forEach(e => {
     g(e)
   })
@@ -153,12 +153,12 @@ class C extends Chunk311907.Ay.Store {
 }
 let N = new C(Chunk73153.h, {
   CHANNEL_CREATE: E,
-  CHANNEL_DELETE: y,
-  CHANNEL_UPDATES: b,
-  CONNECTION_OPEN: I,
-  CONNECTION_OPEN_SUPPLEMENTAL: I,
+  CHANNEL_DELETE: b,
+  CHANNEL_UPDATES: y,
+  CONNECTION_OPEN: S,
+  CONNECTION_OPEN_SUPPLEMENTAL: S,
   CHANNEL_SAFETY_WARNING_FEEDBACK: O,
-  CLEAR_CHANNEL_SAFETY_WARNINGS: A,
-  DISMISS_CHANNEL_SAFETY_WARNINGS: v,
-  ACKNOWLEDGE_CHANNEL_SAFETY_WARNING_TOOLTIP: S
+  CLEAR_CHANNEL_SAFETY_WARNINGS: v,
+  DISMISS_CHANNEL_SAFETY_WARNINGS: A,
+  ACKNOWLEDGE_CHANNEL_SAFETY_WARNING_TOOLTIP: I
 })

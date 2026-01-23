@@ -2,7 +2,7 @@
 /** chunk id: 84763, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,18 +15,18 @@ var Chunk417597 = require("./417597.js"),
   Chunk652215 = require("./652215.js"),
   Chunk705751 = require("./705751.js");
 
-function f() {
+function g() {
   let e = (0, i.bG)([a.A], () => a.A.getGuild()),
-    t = (0, c.w)(null == e ? true : e.id, "guild_product_settings"),
+    t = (0, o.w)(null == e ? true : e.id, "guild_product_settings"),
     {
       application: n,
-      loading: f
+      loading: g
     } = (0, s.A)(null == e ? true : e.id, u.S7.GUILD_ROLE_SUBSCRIPTIONS),
-    g = null != n && (null == e ? true : e.features.has(d.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED)) === true;
+    m = null != n && (null == e ? true : e.features.has(d.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED)) === true;
   return (0, r.jsx)("main", {
-    children: null == e || !t || f ? (0, r.jsx)(l.y$y, {}) : (0, r.jsx)(o.o, {
+    children: null == e || !t || g ? (0, r.jsx)(l.y$y, {}) : (0, r.jsx)(c.o, {
       guildId: e.id,
-      hasValidApplication: g
+      hasValidApplication: m
     })
   })
 }

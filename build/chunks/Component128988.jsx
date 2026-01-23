@@ -1,7 +1,7 @@
 /** Chunk was on 38663 **/
 /** chunk id: 128988, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,19 +15,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk18983 = require("./18983.jsx"),
   Chunk330966 = require("./330966.js");
 
-function b(e) {
+function g(e) {
   var t;
   let {
     scrollerRef: n
   } = e, {
-    isDragging: b,
-    item: g,
-    sourceClientOffset: m
+    isDragging: g,
+    item: m,
+    sourceClientOffset: b
   } = (0, i.V)(e => ({
     isDragging: e.isDragging(),
     item: e.getItem(),
     sourceClientOffset: e.getSourceClientOffset()
-  })), y = (0, a.bG)([o.default], () => o.default.getCurrentUser()), O = (0, s.VUy)(), j = l.useMemo(() => null == y || null == g ? null : function(e, t) {
+  })), y = (0, a.bG)([s.default], () => s.default.getCurrentUser()), O = (0, o.VUy)(), j = l.useMemo(() => null == y || null == m ? null : function(e, t) {
     let {
       id: n,
       itemType: l,
@@ -86,7 +86,7 @@ function b(e) {
       })
     }
     return null
-  }(g, y), [g, y]), x = l.useRef(null), h = l.useCallback(() => {
+  }(m, y), [m, y]), x = l.useRef(null), h = l.useCallback(() => {
     if (null == n.current) return;
     let e = n.current.getBoundingClientRect();
     x.current = {
@@ -95,24 +95,24 @@ function b(e) {
     }
   }, [n]);
   if (l.useEffect(() => {
-      if (!b) {
+      if (!g) {
         x.current = null;
         return
       }
       null == x.current && h()
-    }, [b, h]), true !== b || null == m || null == j) return null;
+    }, [g, h]), true !== g || null == b || null == j) return null;
   null == x.current && h();
   let {
     x: v,
-    y: A
+    y: _
   } = null != (t = x.current) ? t : {
     x: 0,
     y: 0
-  }, w = m.x - v - 60 * !!O, I = m.y - A;
+  }, A = b.x - v - 60 * !!O, I = b.y - _;
   return (0, r.jsx)("div", {
     className: p.kL,
     style: {
-      transform: "translate3d(".concat(w, "px, ").concat(I, "px, 0)")
+      transform: "translate3d(".concat(A, "px, ").concat(I, "px, 0)")
     },
     children: j
   })

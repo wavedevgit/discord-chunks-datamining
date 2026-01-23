@@ -1,11 +1,11 @@
 /** Chunk was on 94503 **/
 /** chunk id: 100411, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  Fz: "_3fbd99d0d176937b",
-  ol: "cfff475d5936d235",
-  bl: "_92c98d41b18e3bc0",
-  NR: "_8eb1bcd89b02ca4d",
-  uV: "_92c07ac152f77ae0",
-  xO: "cd729dab6233e49d",
-  Rp: "d80ae49ac9eab503"
+  Fz: "modInfoItemContainer__96c0b",
+  ol: "modInfoItem__96c0b",
+  bl: "modInfoItemIcon__96c0b",
+  NR: "modInfoItemName__96c0b",
+  uV: "modInfoItemDescription__96c0b",
+  xO: "modInfoAction__96c0b",
+  Rp: "modInfoItemActionIcon__96c0b"
 }

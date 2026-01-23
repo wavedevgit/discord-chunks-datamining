@@ -4,7 +4,7 @@
 let r, i, a, s;
 require.d(exports, {
   A: () => U,
-  x: () => I
+  x: () => S
 }), require("./896048.js"), require("./321073.js");
 var o, Chunk812729 = require("./812729.js"),
   c = require.n(Chunk812729),
@@ -29,7 +29,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,18 +53,18 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = 6,
+let S = 6,
   T = 7,
   C = N();
 
 function N() {
   return {
-    recentStatuses: b.UO,
+    recentStatuses: y.UO,
     favoritedStatuses: [],
     currentDefaultStatus: null
   }
@@ -80,7 +80,7 @@ function w(e) {
     guildId: n,
     saveAsDefault: o
   } = e;
-  if (d()(t !== b.Kk.CUSTOM, "Hang Status cannot be custom"), r = t, i = null, s = null, null != t) {
+  if (d()(t !== y.Kk.CUSTOM, "Hang Status cannot be custom"), r = t, i = null, s = null, null != t) {
     let e = [...C.recentStatuses],
       n = e.findIndex(e => (0, E.A)(e) && e === t);
     n >= 0 ? e.splice(n, 1) : e.length === T && e.splice(T - 1, 1), C.recentStatuses = [t, ...e]
@@ -97,7 +97,7 @@ function w(e) {
     location: "UpdateHangStatus"
   });
   a = {
-    type: y.$pd.HANG_STATUS,
+    type: b.$pd.HANG_STATUS,
     name: "Hang Status",
     state: "".concat(r, ":").concat(l)
   }
@@ -109,7 +109,7 @@ function P(e) {
     emoji: n,
     saveAsDefault: o
   } = e;
-  r = b.Kk.CUSTOM, s = null, i = {
+  r = y.Kk.CUSTOM, s = null, i = {
     status: t,
     emoji: n
   };
@@ -120,7 +120,7 @@ function P(e) {
     customHangStatus: i,
     gameActivityHangStatus: s
   }), a = {
-    type: y.$pd.HANG_STATUS,
+    type: b.$pd.HANG_STATUS,
     name: "Hang Status",
     state: r,
     details: t,
@@ -159,7 +159,7 @@ function L(e) {
     status: t,
     emoji: n
   };
-  return false === a && i.length < I ? (i.push(s), r = true) : a >= 0 && (i.splice(a, 1), r = true), !!r && (C.favoritedStatuses = i, true)
+  return false === a && i.length < S ? (i.push(s), r = true) : a >= 0 && (i.splice(a, 1), r = true), !!r && (C.favoritedStatuses = i, true)
 }
 
 function j() {
@@ -185,7 +185,7 @@ function M(e) {
 }
 class k extends(o = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    C = A({}, N(), null != e ? e : {}), this.waitFor(m.Ay), this.syncWith([m.Ay], j)
+    C = v({}, N(), null != e ? e : {}), this.waitFor(m.Ay), this.syncWith([m.Ay], j)
   }
   getState() {
     return C
@@ -218,10 +218,10 @@ class k extends(o = Chunk311907.Ay.PersistedStore) {
 }
 O(k, "displayName", "HangStatusStore"), O(k, "persistKey", "HangStatusStore"), O(k, "migrations", [e => {
   if (null != e.currentDefaultStatus && null == e.currentDefaultStatus.gameActivityHangStatus) {
-    let t = S(A({}, e.currentDefaultStatus), {
+    let t = I(v({}, e.currentDefaultStatus), {
       gameActivityHangStatus: null
     });
-    return S(A({}, e), {
+    return I(v({}, e), {
       currentDefaultStatus: t
     })
   }

@@ -20,13 +20,13 @@ let f = 100,
   m = 5,
   g = 4,
   E = 3,
-  b = 2,
-  y = 1,
+  y = 2,
+  b = 1,
   O = 350,
-  A = s()(S, O),
-  v = s()(I, O);
+  v = s()(I, O),
+  A = s()(S, O);
 
-function S(e, t) {
+function I(e, t) {
   c.default.track(d.HAw.SEARCH_STARTED, {
     channel_id: t,
     search_type: d.I4_.SOUNDBOARD,
@@ -34,7 +34,7 @@ function S(e, t) {
   })
 }
 
-function I(e, t, n, r) {
+function S(e, t, n, r) {
   c.default.track(d.HAw.SEARCH_RESULT_VIEWED, {
     search_type: d.I4_.SOUNDBOARD,
     channel_id: n,
@@ -50,13 +50,13 @@ function T(e, t, n, r) {
     c = t.name.toLocaleLowerCase(),
     d = null != t.emojiId ? o.Ay.getCustomEmojiById(t.emojiId) : null,
     O = null != t.emojiName ? l.Ay.convertSurrogateToName(t.emojiName, false) : null,
-    A = null != O ? l.Ay.getByName(O) : null,
-    v = null != d ? [d.name] : null != (a = null == A ? true : A.names) ? a : [];
-  return e === c && (s += p), v.includes(e) && (s += _), c.startsWith(e) && (s += h), v.some(t => t.startsWith(e)) && (s += m), c.endsWith(e) && (s += g), v.some(t => t.endsWith(e)) && (s += E), i()(e, t.name.toLocaleLowerCase()) && (s += b), v.some(t => i()(e, t)) && (s += y), s > 0 && (0, u.Ir)(n, t, r) && (s += f), s
+    v = null != O ? l.Ay.getByName(O) : null,
+    A = null != d ? [d.name] : null != (a = null == v ? true : v.names) ? a : [];
+  return e === c && (s += p), A.includes(e) && (s += _), c.startsWith(e) && (s += h), A.some(t => t.startsWith(e)) && (s += m), c.endsWith(e) && (s += g), A.some(t => t.endsWith(e)) && (s += E), i()(e, t.name.toLocaleLowerCase()) && (s += y), A.some(t => i()(e, t)) && (s += b), s > 0 && (0, u.Ir)(n, t, r) && (s += f), s
 }
 
 function C(e, t, n, r, i) {
-  let a = t.reduce((t, a) => (A(i, null == r ? true : r.id), t[a.soundId] = T(e.toLocaleLowerCase(), a, n, r), t), {}),
+  let a = t.reduce((t, a) => (v(i, null == r ? true : r.id), t[a.soundId] = T(e.toLocaleLowerCase(), a, n, r), t), {}),
     s = t.filter(e => a[e.soundId] > 0).sort((e, t) => a[t.soundId] - a[e.soundId]);
-  return v(s, i, null == r ? true : r.id, e), s
+  return A(s, i, null == r ? true : r.id, e), s
 }

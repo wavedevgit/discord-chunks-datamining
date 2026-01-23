@@ -27,13 +27,13 @@ function E(e) {
     guildId: n,
     usernameIcon: i,
     tags: E,
-    nickname: b,
-    nicknameIcons: y,
+    nickname: y,
+    nicknameIcons: b,
     pendingDisplayNameStyles: O,
-    pronouns: A,
-    primaryGuild: v,
-    className: S,
-    tagClassName: I,
+    pronouns: v,
+    primaryGuild: A,
+    className: I,
+    tagClassName: S,
     isTryItOut: T,
     onOpenProfile: C,
     onClose: N,
@@ -43,7 +43,7 @@ function E(e) {
     className: g.pt,
     "aria-label": m.intl.string(m.t["+Xp3hq"]),
     children: e
-  }), P = null != A && A.length > 0, D = (0, c.r)(t), x = (0, d.A)({
+  }), P = null != v && v.length > 0, D = (0, c.r)(t), x = (0, d.A)({
     userId: t.id,
     guildId: n,
     pendingDisplayNameStyles: O
@@ -51,13 +51,13 @@ function E(e) {
   return (0, r.jsxs)("div", {
     className: a()(g.kL, {
       [g.Od]: null != D
-    }, S),
+    }, I),
     children: [(0, r.jsxs)("div", {
       className: g.Fj,
       children: [w(L ? (0, r.jsx)(o.Text, {
         variant: R,
         children: (0, r.jsx)(p.A, {
-          userName: b,
+          userName: y,
           displayNameStyles: x,
           effectDisplayType: f.G.ANIMATED,
           textClassName: g.iA,
@@ -69,13 +69,13 @@ function E(e) {
       }) : (0, r.jsx)(o.Text, {
         className: g.$R,
         variant: R,
-        children: b
+        children: y
       })), null != D && (0, r.jsx)(u.A, {
         type: D,
         verified: t.isVerifiedBot()
-      }), null != y && (0, r.jsx)("div", {
+      }), null != b && (0, r.jsx)("div", {
         className: g.t4,
-        children: y
+        children: b
       })]
     }), (0, r.jsxs)("div", {
       className: a()(g._A, {
@@ -87,7 +87,7 @@ function E(e) {
         usernameIcon: i,
         forceUsername: true,
         forcePomelo: T,
-        className: a()(g.a1, I),
+        className: a()(g.a1, S),
         usernameClass: g.eb,
         discriminatorClass: g.sw,
         hideBotTag: true
@@ -100,14 +100,14 @@ function E(e) {
           text: m.intl.string(m.t.GI2A8C),
           delay: h.In,
           children: (0, r.jsx)(o.Text, {
-            className: a()(g.kc, I),
+            className: a()(g.kc, S),
             variant: "text-sm/medium",
             color: "text-strong",
-            children: A
+            children: v
           })
         })]
       }), (0, r.jsx)(_.Ay, {
-        primaryGuild: v,
+        primaryGuild: A,
         userId: t.id,
         onClose: N,
         containerClassName: g.L4,

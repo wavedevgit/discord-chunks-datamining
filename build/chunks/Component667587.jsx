@@ -42,7 +42,7 @@ var Chunk627968 = require("./627968.js"),
 function k(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
     n = arguments.length > 2 ? arguments[2] : true;
-  h.Ay.trackWithMetadata(P.HAw.SETTINGS_PANE_VIEWED, {
+  h.Ay.trackWithMetadata(L.HAw.SETTINGS_PANE_VIEWED, {
     settings_type: "channel",
     origin_pane: t,
     destination_pane: e,
@@ -68,7 +68,7 @@ class G extends Chunk64700.PureComponent {
       canManageWebhooks: a,
       canUnlinkChannel: o
     } = this.props;
-    (s || r || a || o) && (l !== P.XlH.CLOSED || l === t) && (r || i !== P.p_A.PERMISSIONS) && (a || o || i !== P.p_A.INTEGRATIONS) ? i !== n && k(i, n): (0, c.jH)()
+    (s || r || a || o) && (l !== L.XlH.CLOSED || l === t) && (r || i !== L.p_A.PERMISSIONS) && (a || o || i !== L.p_A.INTEGRATIONS) ? i !== n && k(i, n): (0, c.jH)()
   }
   render() {
     let {
@@ -79,14 +79,14 @@ class G extends Chunk64700.PureComponent {
       category: r,
       canManageRoles: a,
       canManageChannels: h,
-      canDeleteChannels: p,
+      canDeleteChannels: f,
       canManageWebhooks: b,
       canUnlinkChannel: x
     } = this.props;
     return null == i ? null : (0, l.jsx)(d.Ay, {
       theme: e,
       sidebarTheme: t,
-      section: null != n ? n : P.p_A.OVERVIEW,
+      section: null != n ? n : L.p_A.OVERVIEW,
       onSetSection: o.c4,
       onClose: c.jH,
       sections: function(e) {
@@ -98,67 +98,67 @@ class G extends Chunk64700.PureComponent {
           canDeleteChannels: a,
           canManageWebhooks: d,
           canUnlinkChannel: h
-        } = e, p = (0, m.gU)(t), {
+        } = e, f = (0, m.gU)(t), {
           GUILD_CATEGORY: b
-        } = P.rbe, x = A.Le.has(t.type), j = t.type === b ? _.intl.string(_.t.ifbXnL) : x ? t.isForumPost() ? _.intl.string(_.t.nEOg1N) : _.intl.string(_.t.H7vTe2) : _.intl.string(_.t["8D8Rsb"]);
+        } = L.rbe, x = A.Le.has(t.type), j = t.type === b ? P.intl.string(P.t.ifbXnL) : x ? t.isForumPost() ? P.intl.string(P.t.nEOg1N) : P.intl.string(P.t.H7vTe2) : P.intl.string(P.t["8D8Rsb"]);
         return [{
           section: u.Fq.HEADER,
           label: null != t ? (0, l.jsxs)(l.Fragment, {
-            children: [null != p ? (0, l.jsx)(p, {
+            children: [null != f ? (0, l.jsx)(f, {
               size: "xxs",
               color: "currentColor",
               className: D.p
-            }) : null, (0, g.m1)(t, S.default, E.A), null != n ? (0, l.jsx)(s.Text, {
+            }) : null, (0, g.m1)(t, E.default, S.A), null != n ? (0, l.jsx)(s.Text, {
               tag: "span",
               variant: "text-xs/semibold",
               color: "text-default",
               lineClamp: 1,
               className: D.L,
-              children: (0, g.m1)(n, S.default, E.A)
+              children: (0, g.m1)(n, E.default, S.A)
             }) : null]
-          }) : _.intl.string(_.t.XPDhcc)
+          }) : P.intl.string(P.t.XPDhcc)
         }, {
-          section: P.p_A.OVERVIEW,
-          label: _.intl.string(_.t["/dp6yY"]),
-          ariaLabel: _.intl.string(_.t["/dp6yY"]),
-          element: I.A,
+          section: L.p_A.OVERVIEW,
+          label: P.intl.string(P.t["/dp6yY"]),
+          ariaLabel: P.intl.string(P.t["/dp6yY"]),
+          element: R.A,
           notice: {
-            element: I.w,
+            element: R.w,
             stores: [O.A]
           },
           predicate: () => !t.isModeratorReportChannel()
         }, {
-          section: P.p_A.PERMISSIONS,
-          label: _.intl.string(_.t.xrmhRX),
-          element: f.A,
+          section: L.p_A.PERMISSIONS,
+          label: P.intl.string(P.t.xrmhRX),
+          element: p.A,
           notice: {
-            element: L.$,
+            element: I.$,
             stores: [v.A]
           },
           predicate: () => i && !x
         }, {
-          section: P.p_A.INSTANT_INVITES,
-          label: _.intl.string(_.t["9F90ic"]),
-          element: R.A,
+          section: L.p_A.INSTANT_INVITES,
+          label: P.intl.string(P.t["9F90ic"]),
+          element: M.A,
           type: u.Py.CUSTOM,
           predicate: () => t.type !== b && r && !x && !t.isModeratorReportChannel()
         }, {
-          section: P.p_A.INTEGRATIONS,
-          label: _.intl.string(_.t.s69NLF),
-          ariaLabel: _.intl.string(_.t.s69NLF),
-          element: M.A,
+          section: L.p_A.INTEGRATIONS,
+          label: P.intl.string(P.t.s69NLF),
+          ariaLabel: P.intl.string(P.t.s69NLF),
+          element: w.A,
           notice: {
             stores: [y.A],
-            element: M.q
+            element: w.q
           },
           predicate: () => !(!d && !h || t.isModeratorReportChannel()) && A.oH.has(t.type)
         }, {
           section: u.Fq.DIVIDER
         }, {
-          section: P.p_A.DELETE,
+          section: L.p_A.DELETE,
           onClick() {
-            (0, w.O)(t, function() {
-              T._.subscribeOnce(P.jej.LAYER_POP_COMPLETE, () => {
+            (0, T.O)(t, function() {
+              _._.subscribeOnce(L.jej.LAYER_POP_COMPLETE, () => {
                 (0, o.D3)(t.id)
               }), (0, c.jH)()
             })
@@ -177,7 +177,7 @@ class G extends Chunk64700.PureComponent {
         category: r,
         canManageRoles: a,
         canManageChannels: h,
-        canDeleteChannels: p,
+        canDeleteChannels: f,
         canManageWebhooks: b,
         canUnlinkChannel: x
       })
@@ -195,10 +195,10 @@ function B() {
     canManageWebhooks: h,
     canUnlinkChannel: g
   } = (0, r.cf)([N.A], () => ({
-    canManageChannels: N.A.can(P.xBc.MANAGE_CHANNELS, e),
-    canManageRoles: null != e && N.A.can(P.xBc.MANAGE_ROLES, e),
-    canManageWebhooks: null != e && N.A.can(P.xBc.MANAGE_WEBHOOKS, e),
-    canUnlinkChannel: (0, p.n)(e, N.A)
+    canManageChannels: N.A.can(L.xBc.MANAGE_CHANNELS, e),
+    canManageRoles: null != e && N.A.can(L.xBc.MANAGE_ROLES, e),
+    canManageWebhooks: null != e && N.A.can(L.xBc.MANAGE_WEBHOOKS, e),
+    canUnlinkChannel: (0, f.n)(e, N.A)
   })), m = (0, r.bG)([C.A], () => C.A.getChannel(null == e ? true : e.parent_id));
   return (0, l.jsx)(G, {
     channel: e,

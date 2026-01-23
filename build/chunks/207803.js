@@ -2,20 +2,20 @@
 /** chunk id: 207803, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dv: () => A,
+  Dv: () => v,
   EW: () => D,
-  Er: () => S,
+  Er: () => I,
   FY: () => j,
   Go: () => R,
-  Gr: () => y,
-  Iz: () => v,
-  Oz: () => I,
+  Gr: () => b,
+  Iz: () => A,
+  Oz: () => S,
   RE: () => O,
   XW: () => T,
   Zz: () => C,
   a: () => P,
   e$: () => N,
-  gi: () => b,
+  gi: () => y,
   w5: () => x,
   xe: () => w
 });
@@ -61,7 +61,7 @@ function E(e) {
     feature_tier: h.tz.PREMIUM_STANDARD
   })
 }
-async function b(e, t) {
+async function y(e, t) {
   var n;
   let r = null == (n = l.default.getCurrentUser()) ? true : n.id;
   if (null == r) return;
@@ -100,7 +100,7 @@ async function b(e, t) {
   }
 }
 
-function y(e, t) {
+function b(e, t) {
   var n;
   let r = null == (n = l.default.getCurrentUser()) ? true : n.id;
   null != r && a.h.dispatch({
@@ -117,25 +117,25 @@ function O() {
   })
 }
 
-function A(e) {
-  (null == e ? true : e.startsWith("https:")) === true ? fetch(e).then(e => e.blob()).then(e => (0, u.We)(e)).then(e => v(e)) : null != e && v(e)
+function v(e) {
+  (null == e ? true : e.startsWith("https:")) === true ? fetch(e).then(e => e.blob()).then(e => (0, u.We)(e)).then(e => A(e)) : null != e && A(e)
 }
 
-function v(e) {
+function A(e) {
   a.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_BANNER",
     banner: e
   })
 }
 
-function S(e) {
+function I(e) {
   a.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_BIO",
     bio: e
   })
 }
 
-function I(e) {
+function S(e) {
   a.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS",
     pronouns: e

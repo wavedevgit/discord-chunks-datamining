@@ -91,7 +91,7 @@ async function j(e, t, n) {
     errorCode: v.Lw6.OAUTH2_ERROR
   }, "Redirect URI cannot be used in the RPC OAuth2 Authorization flow");
   let G = [];
-  if ("string" == typeof j ? G = j.split(" ").filter(e => e.length > 0) : Array.isArray(j) && (G = j), null == _.default.getCurrentUser()) throw new y.A({
+  if ("string" == typeof j ? G = j.split(" ").filter(e => e.length > 0) : Array.isArray(j) && (G = j), null == b.default.getCurrentUser()) throw new y.A({
     errorCode: v.Lw6.OAUTH2_ERROR
   }, "Client is not logged in");
   if (null != D) l = Number(D);
@@ -100,14 +100,14 @@ async function j(e, t, n) {
         var t;
         return null != e && (0, s.Lt)(e.flags, v.gfo.EMBEDDED) && (null == (t = e.integrationTypesConfig) ? true : t[i.b.USER_INSTALL]) != null
       },
-      t = f.A.getApplication(d);
-    l = e(t) || e(t = b.Ay.createFromServer(await (0, m.TA)(d, k))) ? i.b.USER_INSTALL : i.b.GUILD_INSTALL
+      t = h.A.getApplication(d);
+    l = e(t) || e(t = _.Ay.createFromServer(await (0, A.TA)(d, k))) ? i.b.USER_INSTALL : i.b.GUILD_INSTALL
   }
   try {
     [o, {
       disclosures: c,
       allAcked: u
-    }] = await Promise.all([(0, A.qY)({
+    }] = await Promise.all([(0, f.qY)({
       clientId: d,
       scopes: G,
       responseType: p,
@@ -117,7 +117,7 @@ async function j(e, t, n) {
       state: C,
       integrationType: l,
       signal: k
-    }), (0, h.vG)(d)])
+    }), (0, g.vG)(d)])
   } catch (t) {
     let {
       body: e
@@ -126,8 +126,8 @@ async function j(e, t, n) {
       errorCode: v.Lw6.OAUTH2_ERROR
     }, "OAuth2 Authorization Error: ".concat((null == e ? true : e.message) || "Unknown Error"))
   }
-  if (L === g.l.NONE && null != o && o.authorized && u) try {
-    return (await (0, A.Gq)({
+  if (L === m.l.NONE && null != o && o.authorized && u) try {
+    return (await (0, f.Gq)({
       authorize: true,
       clientId: d,
       scopes: G,
@@ -201,7 +201,7 @@ function x(e, t) {
     if (e.application.id !== r.id) throw new y.A({
       errorCode: v.Lw6.INVALID_CLIENTID
     }, "Application does not match the connection's");
-    let s = _.default.getCurrentUser();
+    let s = b.default.getCurrentUser();
     if (null == s || !i || s.id !== i.id) throw new y.A({
       errorCode: v.Lw6.INVALID_TOKEN
     }, "Token does not match current user");

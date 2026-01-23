@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 762561, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => k
+  A: () => G
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -38,7 +38,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk743789 = require("./743789.js");
 
-function G(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,87 +57,87 @@ function G(e) {
   return e
 }
 
-function k(e) {
+function G(e) {
   var t;
   let {
     user: n,
-    currentUser: g,
+    currentUser: m,
     channel: M
-  } = e, k = __OVERLAY__, V = (0, m.Ay)(n.id), F = (0, o.Ay)(), H = l.useRef(Date.now()), {
-    analyticsLocations: B
-  } = (0, u.Ay)(c.A.USER_PROFILE_SIDEBAR), K = (0, b.pb)({
+  } = e, G = __OVERLAY__, B = (0, b.Ay)(n.id), V = (0, o.Ay)(), F = l.useRef(Date.now()), {
+    analyticsLocations: H
+  } = (0, u.Ay)(c.A.USER_PROFILE_SIDEBAR), K = (0, g.pb)({
     layout: "SIDEBAR",
     userId: n.id,
     channelId: M.id
   }), W = l.useRef(null), {
     isHoveringOrFocusing: z,
     isHovering: Y
-  } = (0, d.A)(W), q = (0, A.fC)(), X = (0, s.zhh)({
+  } = (0, d.A)(W), q = (0, A.fC)(), X = (0, a.zhh)({
     opacity: +(null != q.interactionType),
     config: {
       duration: 150
     }
   }), J = e => {
-    (0, y.openUserProfileModal)(G({
-      sourceAnalyticsLocations: B,
+    (0, y.openUserProfileModal)(k({
+      sourceAnalyticsLocations: H,
       hideRestrictedProfile: true
     }, K, e))
-  }, Q = (null == V ? true : V.widgets) != null && V.widgets.length > 0, {
+  }, Q = (null == B ? true : B.widgets) != null && B.widgets.length > 0, {
     displayedWishlistItems: Z,
     defaultWishlistId: $,
     title: ee
-  } = (0, h.aO)({
+  } = (0, f.aO)({
     user: n,
-    numItems: h.h,
-    source: p.mQ.DM_SIDE_PANEL,
+    numItems: f.h,
+    source: h.mQ.DM_SIDE_PANEL,
     location: "UserProfileSidebar"
   }), et = null != Z && Z.length > 0;
   return (0, r.jsx)(u.f5, {
-    value: B,
-    children: (0, r.jsx)(b.of, {
+    value: H,
+    children: (0, r.jsx)(g.of, {
       value: K,
-      openedAt: H.current,
-      fetchStartedAt: null == V ? true : V.fetchStartedAt,
-      fetchEndedAt: null == V ? true : V.fetchEndedAt,
-      isLoaded: null == V ? true : V.isLoaded,
+      openedAt: F.current,
+      fetchStartedAt: null == B ? true : B.fetchStartedAt,
+      fetchEndedAt: null == B ? true : B.fetchEndedAt,
+      isLoaded: null == B ? true : B.isLoaded,
       children: (0, r.jsx)(A.Hl, {
         value: q,
-        children: (0, r.jsxs)(E.A, {
+        children: (0, r.jsxs)(x.A, {
           ref: W,
           user: n,
-          displayProfile: V,
+          displayProfile: B,
           themeType: D.d.SIDEBAR,
-          themeOverride: F,
+          themeOverride: V,
           children: [null != q.interactionType && (0, r.jsx)(i.animated.div, {
             style: X,
             className: L.tB
-          }), (0, r.jsxs)(a.d_W, {
+          }), (0, r.jsxs)(s.d_W, {
             children: [(0, r.jsxs)(C.A, {
               children: [(0, r.jsx)(S.A, {
                 user: n,
                 themeType: D.d.SIDEBAR
-              }), n.bot ? (0, r.jsx)(_.A, {
+              }), n.bot ? (0, r.jsx)(E.A, {
                 user: n
               }) : (0, r.jsx)(I.yo, {
                 user: n
               })]
             }), (0, r.jsxs)("div", {
               className: L.wx,
-              children: [(0, r.jsx)(j.A, {
+              children: [(0, r.jsx)(O.A, {
                 user: n,
-                displayProfile: V,
+                displayProfile: B,
                 themeType: D.d.SIDEBAR,
                 animateOnHoverOrFocusOnly: !z,
                 className: L.vK
-              }), (0, r.jsx)(v.A, {
+              }), (0, r.jsx)(j.A, {
                 userId: n.id,
                 className: L.oR
-              }), (0, r.jsx)(O.A, {
+              }), (0, r.jsx)(_.A, {
                 user: n,
-                displayProfile: V,
+                displayProfile: B,
                 channelId: M.id,
                 themeType: D.d.SIDEBAR,
-                onOpenProfile: k ? true : J
+                onOpenProfile: G ? true : J
               }), (0, r.jsx)(N.A, {
                 user: n,
                 channelId: M.id,
@@ -146,16 +146,16 @@ function k(e) {
               })]
             }), (0, r.jsx)(T.A, {
               user: n,
-              currentUser: g,
-              displayProfile: V,
+              currentUser: m,
+              displayProfile: B,
               channel: M,
               isHoveringOrFocusing: null == q.interactionType && z,
-              onOpenProfile: k ? true : J
+              onOpenProfile: G ? true : J
             }), Q && (0, r.jsx)("div", {
               className: L.sJ,
-              children: (0, r.jsx)(x.A, {
+              children: (0, r.jsx)(v.A, {
                 user: n,
-                widgets: V.widgets,
+                widgets: B.widgets,
                 onOpenUserProfileModal: J
               })
             }), et && (0, r.jsx)("div", {
@@ -175,12 +175,12 @@ function k(e) {
               user: n,
               channelId: M.id
             })]
-          }), !k && (0, r.jsx)(U, {
+          }), !G && (0, r.jsx)(U, {
             handleOpenProfile: J,
-            analyticsLocations: B,
+            analyticsLocations: H,
             context: K
-          }), (null == V ? true : V.profileEffect) != null && (0, r.jsx)(f.A, {
-            skuId: null == V || null == (t = V.profileEffect) ? true : t.skuId,
+          }), (null == B ? true : B.profileEffect) != null && (0, r.jsx)(p.A, {
+            skuId: null == B || null == (t = B.profileEffect) ? true : t.skuId,
             isHovering: Y
           })]
         })
@@ -193,21 +193,21 @@ let U = e => {
     handleOpenProfile: t,
     analyticsLocations: n,
     context: i
-  } = e, [a, o] = l.useState("interactive-text-default");
+  } = e, [s, o] = l.useState("interactive-text-default");
   return (0, r.jsx)("div", {
     className: L.qr,
-    children: (0, r.jsx)(s.DUT, {
+    children: (0, r.jsx)(a.DUT, {
       onMouseEnter: () => o("interactive-text-hover"),
       onMouseLeave: () => o("interactive-text-default"),
       onClick: () => {
-        t(), (0, g.Wn)(G({
+        t(), (0, m.Wn)(k({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: n
         }, i))
       },
       className: L.wC,
-      children: (0, r.jsx)(s.Text, {
-        color: a,
+      children: (0, r.jsx)(a.Text, {
+        color: s,
         variant: "text-sm/normal",
         children: M.intl.string(M.t["+Xp3hq"])
       })

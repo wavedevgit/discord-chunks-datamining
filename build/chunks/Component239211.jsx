@@ -62,21 +62,21 @@ function m(e) {
     onBlock: m,
     onIgnore: g,
     onUnblock: E,
-    location: b = "ContextMenu",
-    appContext: y = u.BRT.APP
+    location: y = "ContextMenu",
+    appContext: b = u.BRT.APP
   } = e, {
     id: O
-  } = t, A = (0, i.bG)([c.default], () => {
+  } = t, v = (0, i.bG)([c.default], () => {
     var e;
     return (null == (e = c.default.getCurrentUser()) ? true : e.id) === O
-  }, [O]), v = (0, i.bG)([l.A], () => l.A.isBlocked(O), [O]), S = v ? "default" : "danger";
-  return A ? null : (0, r.jsx)(a.Drp, {
+  }, [O]), A = (0, i.bG)([l.A], () => l.A.isBlocked(O), [O]), I = A ? "default" : "danger";
+  return v ? null : (0, r.jsx)(a.Drp, {
     id: "block",
-    color: null != S ? S : "default",
-    label: v ? d.intl.string(d.t.XyHpKH) : d.intl.string(d.t.l4Emac),
-    action: v ? () => {
+    color: null != I ? I : "default",
+    label: A ? d.intl.string(d.t.XyHpKH) : d.intl.string(d.t.l4Emac),
+    action: A ? () => {
       null == E || E(), s.A.unblockUser(O, {
-        location: b
+        location: y
       }), o.A.showUnblockSuccessToast(O, null != _ ? _ : true)
     } : () => {
       (0, a.mMO)(async () => {
@@ -89,10 +89,10 @@ function m(e) {
           channelId: _,
           onBlock: m,
           onIgnore: g,
-          location: b
+          location: y
         }))
       }, {
-        contextKey: (0, a.TId)(y)
+        contextKey: (0, a.TId)(b)
       })
     }
   })

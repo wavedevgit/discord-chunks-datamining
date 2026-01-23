@@ -32,7 +32,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,32 +57,32 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = v(e, t), Object.getOwnPropertySymbols)
+  if (a = A(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function v(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let S = Chunk64700.lazy(() => Promise.all([n.e("47950"), n.e("87680")]).then(n.bind(n, 370640))),
-  I = 7,
+let I = Chunk64700.lazy(() => Promise.all([n.e("47950"), n.e("87680")]).then(n.bind(n, 370640))),
+  S = 7,
   T = () => Promise.resolve();
 
 function C(e) {
@@ -100,20 +100,20 @@ function N(e) {
     onClick: _,
     isGradient: m = false,
     "aria-label": E,
-    gradientStart: y,
-    gradientEnd: A,
-    gradientDegrees: v = 180
-  } = e, S = (0, o.rm)("color-".concat(t)), I = {};
-  if (m && null != y && null != A) {
-    let e = (0, c.Hl)(y),
-      t = (0, c.Hl)(A);
-    I = {
-      background: "linear-gradient(".concat(v, "deg, ").concat(e, ", ").concat(t, ")")
+    gradientStart: b,
+    gradientEnd: v,
+    gradientDegrees: A = 180
+  } = e, I = (0, o.rm)("color-".concat(t)), S = {};
+  if (m && null != b && null != v) {
+    let e = (0, c.Hl)(b),
+      t = (0, c.Hl)(v);
+    S = {
+      background: "linear-gradient(".concat(A, "deg, ").concat(e, ", ").concat(t, ")")
     }
-  } else I = {
+  } else S = {
     backgroundColor: null != t ? (0, c.Hl)(t) : f.backgroundColor
   };
-  let T = m ? y : t,
+  let T = m ? b : t,
     C = false;
 
   function N() {
@@ -128,7 +128,7 @@ function N(e) {
   }
   return i && !a ? C = true : (i || a) && (C = (0, c.OK)(null != T ? T : h.TGz) > .2), (0, r.jsx)(u.vN3, {
     offset: false,
-    children: (0, r.jsxs)("button", O(b({
+    children: (0, r.jsxs)("button", O(y({
       type: "button",
       className: s()(g.iH, {
         [g.r9]: l,
@@ -139,12 +139,12 @@ function N(e) {
       }),
       disabled: l,
       onClick: () => null == _ ? true : _(m ? {
-        start: y,
-        end: A
+        start: b,
+        end: v
       } : t),
-      style: b({}, f, I),
-      "aria-label": null != E ? E : m ? "Gradient ".concat(y, "-").concat(A) : I.backgroundColor
-    }, S), {
+      style: y({}, f, S),
+      "aria-label": null != E ? E : m ? "Gradient ".concat(b, "-").concat(v) : S.backgroundColor
+    }, I), {
       children: [i ? (0, r.jsx)(p.R2l, {
         size: "custom",
         className: g.M2,
@@ -202,9 +202,9 @@ function P(e) {
     middle: d,
     footer: h,
     showEyeDropper: E,
-    wrapperComponentType: y,
-    className: A
-  } = e, v = (0, _.A)(), T = C(t), N = null != T ? T : 0, R = (0, c.Hl)(N), w = (0, c.tf)(N), [P, D] = i.useState({
+    wrapperComponentType: b,
+    className: v
+  } = e, A = (0, _.A)(), T = C(t), N = null != T ? T : 0, R = (0, c.Hl)(N), w = (0, c.tf)(N), [P, D] = i.useState({
     current: N,
     pending: {
       hex: R,
@@ -227,7 +227,7 @@ function P(e) {
   }, [T, P]), i.useEffect(() => o, [o]);
   let x = e => {
       let t = "#" === e[0] ? e : "#".concat(e);
-      if (!(0, c.qt)(t)) return void D(e => O(b({}, e), {
+      if (!(0, c.qt)(t)) return void D(e => O(y({}, e), {
         input: t
       }));
       let n = (0, c.LX)(t),
@@ -242,14 +242,14 @@ function P(e) {
       }), a(n)
     },
     L = async () => {
-      if (null != v) try {
+      if (null != A) try {
         let {
           sRGBHex: e
-        } = await v.open();
+        } = await A.open();
         x(e)
       } catch (e) {}
     }, j = i.useCallback(e => {
-      D(t => O(b({}, t), {
+      D(t => O(y({}, t), {
         pending: e,
         input: e.hex
       })), n && a((0, c.LX)(e.hex))
@@ -258,7 +258,7 @@ function P(e) {
     }, k = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.Suspense, {
         fallback: null,
-        children: (0, r.jsx)(S, {
+        children: (0, r.jsx)(I, {
           onChange: j,
           onChangeComplete: e => {
             let {
@@ -271,9 +271,9 @@ function P(e) {
       }), d, (0, r.jsx)(p.ksK, {
         value: P.input.slice(1),
         onChange: x,
-        maxLength: I - 1,
+        maxLength: S - 1,
         leading: "#",
-        trailing: E && null != v ? {
+        trailing: E && null != A ? {
           icon: p.dDg,
           onClick: L,
           "aria-label": m.intl.string(m.t["0dU9Ny"])
@@ -289,10 +289,10 @@ function P(e) {
           onClick: () => x(e)
         }, "".concat(e, "-").concat(t)))
       }), h]
-    }), U = null != y ? y : f.l;
+    }), U = null != b ? b : f.l;
   return (0, r.jsx)(U, {
     "aria-label": m.intl.string(m.t.WTqQ5e),
-    className: s()(g.zi, A),
+    className: s()(g.zi, v),
     children: k
   })
 }
@@ -313,9 +313,9 @@ function x(e) {
     colorContainerClassName: h,
     isGradient: m,
     renderGradientCustomButton: E,
-    gradientDegrees: y,
-    allowBlackCustomColor: v
-  } = e, S = e => (0, r.jsx)("div", {
+    gradientDegrees: b,
+    allowBlackCustomColor: A
+  } = e, I = e => (0, r.jsx)("div", {
     className: g._D,
     children: m ? e.map(e => (0, r.jsx)(N, {
       gradientStart: e.start,
@@ -326,7 +326,7 @@ function x(e) {
       disabled: d,
       isGradient: true,
       "aria-label": e.name,
-      gradientDegrees: y
+      gradientDegrees: b
     }, "".concat(e.start, "-").concat(e.end))) : e.map(e => (0, r.jsx)(N, {
       color: e,
       isSelected: e === c,
@@ -334,7 +334,7 @@ function x(e) {
       disabled: d,
       isGradient: false
     }, e))
-  }), I = a.slice(0, a.length / 2), C = a.slice(a.length / 2, a.length), R = (0, l.Ay)({
+  }), S = a.slice(0, a.length / 2), C = a.slice(a.length / 2, a.length), R = (0, l.Ay)({
     id: "color-picker",
     isEnabled: true,
     scrollToStart: T,
@@ -346,8 +346,8 @@ function x(e) {
       children: e => {
         let {
           ref: o
-        } = e, l = A(e, ["ref"]);
-        return (0, r.jsxs)("div", O(b({
+        } = e, l = v(e, ["ref"]);
+        return (0, r.jsxs)("div", O(y({
           className: s()(g.kL, t, {
             [g.D7]: m
           }),
@@ -361,7 +361,7 @@ function x(e) {
                 color: n,
                 onChange: f,
                 disabled: d,
-                allowBlackCustomColor: v
+                allowBlackCustomColor: A
               })
             }), (0, r.jsx)("div", {
               className: s()(g.BQ, h),
@@ -380,7 +380,7 @@ function x(e) {
               disabled: d
             })
           }), (0, r.jsxs)("div", {
-            children: [S(I), S(C)]
+            children: [I(S), I(C)]
           })]
         }))
       }

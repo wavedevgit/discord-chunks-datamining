@@ -13,7 +13,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk260484 = require("./260484.js");
 
 function u() {
-  let [e, t] = a.useState("");
+  let [e, t] = l.useState("");
   return (0, n.jsxs)("div", {
     className: d.kL,
     children: [(0, n.jsxs)("div", {
@@ -22,7 +22,7 @@ function u() {
         className: d.B0,
         children: [(0, n.jsx)("div", {
           className: d.my,
-          children: (0, n.jsx)(l.pVd, {
+          children: (0, n.jsx)(a.pVd, {
             size: "custom",
             width: 24,
             height: 24
@@ -38,12 +38,12 @@ function u() {
             })]
           }), (0, n.jsxs)("div", {
             className: d.Qc,
-            children: [(0, n.jsx)(l.Text, {
+            children: [(0, n.jsx)(a.Text, {
               variant: "text-sm/medium",
               color: "text-muted",
               className: d.pc,
-              children: "".concat(c.mu, "/")
-            }), (0, n.jsx)(l.Text, {
+              children: "".concat(o.mu, "/")
+            }), (0, n.jsx)(a.Text, {
               variant: "text-sm/medium",
               color: "text-link",
               className: d.Po,
@@ -75,11 +75,11 @@ function u() {
         value: e,
         onChange: t
       })]
-    }), (0, n.jsx)(l.Text, {
+    }), (0, n.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       className: d.ed,
-      children: o.intl.string(i.default.u5iNbz)
+      children: c.intl.string(i.default.u5iNbz)
     })]
   })
 }

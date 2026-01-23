@@ -2,7 +2,7 @@
 /** chunk id: 948331, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  g: () => A
+  g: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk7410 = require("./7410.js"),
   Chunk936037 = require("./936037.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,13 +38,13 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function A() {
+function v() {
   return (0, p.A)() ? (0, r.jsx)("div", {
     className: g.do,
     children: (0, r.jsxs)("div", {
@@ -69,7 +69,7 @@ function A() {
     children: [(0, r.jsxs)("div", {
       className: g.U6,
       children: [(0, r.jsx)("img", {
-        src: b,
+        src: y,
         className: g.Sl,
         alt: ""
       }), (0, r.jsx)(l.Heading, {
@@ -82,11 +82,11 @@ function A() {
         color: "text-muted",
         children: m.intl.string(m.t.F6u3E3)
       })]
-    }), (0, r.jsx)(v, {})]
+    }), (0, r.jsx)(A, {})]
   })
 }
 
-function v() {
+function A() {
   let e = (0, f.Dd)(h.PremiumTypes.TIER_2),
     t = i.useCallback(() => (0, l.mMO)(async () => {
       let {

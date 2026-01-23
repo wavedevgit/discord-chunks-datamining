@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk596475 = require("./596475.js");
 
-function y(e, t) {
+function b(e, t) {
   return null != t && null != t.discord_web && e.id === t.discord_web.id && e.type === t.discord_web.type
 }
 
@@ -35,32 +35,32 @@ function O(e) {
     })
   }, [t, n]);
   return i.useEffect(() => () => clearTimeout(o.current), []), p.p5 ? (0, r.jsxs)(c.DUT, {
-    className: s()(b.S, n ? b.pG : null),
+    className: s()(y.S, n ? y.pG : null),
     onClick: l,
     children: [(0, r.jsx)(c.qYV, {
       size: "md",
       color: "currentColor",
-      className: b.n7
+      className: y.n7
     }), n ? E.intl.string(E.t.GmrIJY) : E.intl.string(E.t.iVzBOh)]
   }) : null
 }
 
-function A() {
+function v() {
   return (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: b.NT,
+      className: y.NT,
       children: [(0, r.jsx)("div", {
-        className: s()(b.Pz, b.w9)
+        className: s()(y.Pz, y.w9)
       }), (0, r.jsx)("div", {
-        className: b.Pz
+        className: y.Pz
       })]
     }), (0, r.jsx)("div", {
-      className: b.MM
+      className: y.MM
     })]
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     subHead: t,
     buildDetails: n,
@@ -72,13 +72,13 @@ function v(e) {
   } = e;
   return (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: b.NT,
+      className: y.NT,
       children: [(0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
-        className: b.V$,
+        className: y.V$,
         children: t
       }), (0, r.jsx)("div", {
-        className: b.Jb,
+        className: y.Jb,
         children: n
       })]
     }), (0, r.jsx)(c.Button, {
@@ -92,7 +92,7 @@ function v(e) {
   })
 }
 
-function S(e) {
+function I(e) {
   let t, n, r, {
       currentOverrides: i,
       linkMeta: a,
@@ -103,13 +103,13 @@ function S(e) {
     f = ["discord_web"];
   h.isPlatformEmbedded || f.push("discord_marketing", "discord_developers");
   let p = (0, m.A)(a, f);
-  if (!p.valid) return I(p.reason);
+  if (!p.valid) return S(p.reason);
   l()(null != a, "BuildOverrideEmbed.renderResolved: linkMeta should never be null if resolved");
   let {
     discord_web: _,
     discord_developers: g
-  } = a.targetBuildOverride, b = null != _ ? _ : g;
-  l()(null != b, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), y(b, i) ? (n = E.intl.string(E.t.tX4xrt), t = o, r = "critical-primary") : (n = E.intl.string(E.t.nOunHC), t = s, r = "primary");
+  } = a.targetBuildOverride, y = null != _ ? _ : g;
+  l()(null != y, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), b(y, i) ? (n = E.intl.string(E.t.tX4xrt), t = o, r = "critical-primary") : (n = E.intl.string(E.t.nOunHC), t = s, r = "primary");
   let O = () => {
     d.A.isConnected() ? u.A.show({
       title: E.intl.string(E.t.tiu1ly),
@@ -120,9 +120,9 @@ function S(e) {
       confirmVariant: "critical-primary"
     }) : t()
   };
-  return v({
+  return A({
     subHead: E.intl.string(E.t.RCYGot),
-    buildDetails: b.id,
+    buildDetails: y.id,
     buttonClick: O,
     buttonText: n,
     variant: r,
@@ -130,8 +130,8 @@ function S(e) {
   })
 }
 
-function I(e) {
-  return v({
+function S(e) {
+  return A({
     subHead: E.intl.string(E.t.ODXApH),
     variant: "secondary",
     buttonText: "Invalid",
@@ -143,20 +143,20 @@ function I(e) {
 function T(e, t, n) {
   return (0, r.jsxs)(c.Text, {
     variant: "text-xs/normal",
-    className: b.lS,
+    className: y.lS,
     children: [(0, r.jsx)("strong", {
-      className: b.DD,
+      className: y.DD,
       children: null != e && null != e.releaseChannel ? E.intl.formatToPlainString(E.t.bFj63b, {
         releaseChannel: e.releaseChannel
       }) : E.intl.string(E.t.Wj3LW4)
     }), (0, r.jsx)(c.MzZ, {
-      className: b.Pl,
+      className: y.Pl,
       href: _.A.getArticleURL(g.MVz.BUILD_OVERRIDE_EMBED),
       target: "_blank",
       children: (0, r.jsx)(c.mir, {
         size: "xs",
         color: "currentColor",
-        className: b.G
+        className: y.G
       })
     }), n ? null : (0, r.jsx)(O, {
       url: t
@@ -177,12 +177,12 @@ let C = e => {
     c || (u(true), l().catch(() => u(false)))
   }, [l, c]);
   return (0, r.jsxs)("div", {
-    className: b.iE,
+    className: y.iE,
     children: [T(a, s, t), (0, r.jsxs)("div", {
-      className: b.Qs,
+      className: y.Qs,
       children: [(0, r.jsx)(f.A, {
-        className: b.Kk
-      }), t ? A() : S({
+        className: y.Kk
+      }), t ? v() : I({
         currentOverrides: n,
         linkMeta: a,
         applyBuildOverride: d,

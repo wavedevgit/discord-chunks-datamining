@@ -2,7 +2,7 @@
 /** chunk id: 626031, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -58,11 +58,11 @@ function E(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let b = new Chunk626584.A("BalanceCounter"),
-  y = (0, Chunk572009._$)(true) === Chunk115093.B.PRODUCTION,
+let y = new Chunk626584.A("BalanceCounter"),
+  b = (0, Chunk572009._$)(true) === Chunk115093.B.PRODUCTION,
   O = e => null == e ? 0 : "".concat(e.toFixed(0)).length,
-  A = (e, t, n) => null === n ? Math.max(e, t) : Math.max(t, n),
-  v = e => {
+  v = (e, t, n) => null === n ? Math.max(e, t) : Math.max(t, n),
+  A = e => {
     var t, n;
     let {
       value: a,
@@ -86,11 +86,11 @@ let b = new Chunk626584.A("BalanceCounter"),
     let g = null != a ? a : 0,
       E = null != (t = h.current) ? t : g,
       {
-        duration: A,
-        delay: v
+        duration: v,
+        delay: A
       } = (0, f.Y)(g - E, d),
       {
-        number: S
+        number: I
       } = (0, l.zhh)({
         from: {
           number: null != (n = h.current) ? n : g
@@ -100,16 +100,16 @@ let b = new Chunk626584.A("BalanceCounter"),
           mass: 1,
           tension: 20,
           friction: 10,
-          duration: A
+          duration: v
         },
-        delay: v,
+        delay: A,
         onStart: () => {
           s(O(E))
         },
         onRest: () => {
-          if (_(p + 1), u(), !y && null !== m.current && null !== h.current) {
+          if (_(p + 1), u(), !b && null !== m.current && null !== h.current) {
             let e = Date.now();
-            b.log("Balance Counter finished updating: ", {
+            y.log("Balance Counter finished updating: ", {
               time: e - m.current.lastChangedAt,
               delta: g - h.current
             })
@@ -117,28 +117,28 @@ let b = new Chunk626584.A("BalanceCounter"),
           s(O(g)), h.current = g
         }
       }),
-      I = O(Math.max(null != a ? a : 0, S.get()));
+      S = O(Math.max(null != a ? a : 0, I.get()));
     return (0, r.jsx)(o.animated.div, {
       style: {
-        width: "calc(".concat(I, "ch)")
+        width: "calc(".concat(S, "ch)")
       },
-      children: S.to(e => "".concat(e.toFixed(0)))
+      children: I.to(e => "".concat(e.toFixed(0)))
     })
   },
-  S = e => {
+  I = e => {
     var t;
     let {
       value: n,
       className: a
-    } = e, o = g(e, ["value", "className"]), u = null === n, [d, f] = (0, i.useState)(null), p = (0, i.useMemo)(() => O(n), [n]), h = null != (t = (0, c.A)(p)) ? t : 0, E = (0, i.useMemo)(() => A(h, p, d), [h, p, d]), b = "".concat(u ? 0 : E, "ch");
+    } = e, o = g(e, ["value", "className"]), u = null === n, [d, f] = (0, i.useState)(null), p = (0, i.useMemo)(() => O(n), [n]), h = null != (t = (0, c.A)(p)) ? t : 0, E = (0, i.useMemo)(() => v(h, p, d), [h, p, d]), y = "".concat(u ? 0 : E, "ch");
     return (0, r.jsx)(l.Text, {
       variant: "text-md/semibold",
       className: s()(_.S, u ? true : _.r, a),
       style: {
-        width: b,
+        width: y,
         opacity: u ? "0" : 1
       },
-      children: u ? null : (0, r.jsx)(v, m({
+      children: u ? null : (0, r.jsx)(A, m({
         onSetDigitCount: e => {
           e !== d && f(e)
         },

@@ -1,7 +1,7 @@
 /** Chunk was on 36456 **/
-/** chunk id: 572196, original params: n,e,t (module,exports,require) **/
+/** chunk id: 572196, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  A: () => a
+  A: () => l
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -9,20 +9,20 @@ var Chunk59198 = require("./59198.jsx"),
   Chunk278086 = require("./278086.js"),
   Chunk652215 = require("./652215.js");
 
-function a(n) {
+function l(e) {
   let {
-    authToken: e,
+    authToken: n,
     onContinue: t,
-    onError: a,
-    onClose: d
-  } = n;
-  return (0, i.jsx)(o.W, {
+    onError: l,
+    onClose: a
+  } = e;
+  return (0, o.jsx)(i.W, {
     platformType: s.fg2.CRUNCHYROLL,
     clientId: r.ex,
     scopes: r._B,
-    authToken: e,
+    authToken: n,
     onContinue: t,
-    onError: a,
-    onClose: d
+    onError: l,
+    onClose: a
   })
 }

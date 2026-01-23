@@ -7,7 +7,7 @@ require.d(exports, {
   bv: () => d,
   qY: () => p,
   s4: () => o,
-  w$: () => f
+  w$: () => h
 });
 var Chunk64700 = require("./64700.js"),
   Chunk488430 = require("./488430.js"),
@@ -59,20 +59,20 @@ let s = e => {
       u = (0, l.mb)(a.RN.SHOP_BUTTON_BG_RESTING_LIGHT),
       d = (0, l.mb)(a.RN.COACHTIP_AVATAR);
     return r.useMemo(() => {
-      var r, l, a, p, f;
-      let h = [t, n, s, o, c, u, d].some(e => null != e);
+      var r, l, a, p, h;
+      let g = [t, n, s, o, c, u, d].some(e => null != e);
       if ((null == e ? true : e.type) === i.G.COACHMARK) return {
         hasPreviewAssets: false
       };
-      let A = null == e || null == (f = e.refTargetBackground) ? true : f.asset,
-        g = null == A ? true : A.resting,
-        m = null == A ? true : A.hovered;
+      let f = null == e || null == (h = e.refTargetBackground) ? true : h.asset,
+        m = null == f ? true : f.resting,
+        A = null == f ? true : f.hovered;
       return {
-        hasPreviewAssets: h,
-        buttonBGHoverDark: null != (r = null != n ? n : t) ? r : null == m ? true : m.dark,
-        buttonBGHoverLight: null != (l = null != s ? s : t) ? l : null == m ? true : m.light,
-        buttonBGRestingDark: null != (a = null != c ? c : o) ? a : null == g ? true : g.dark,
-        buttonBGRestingLight: null != (p = null != u ? u : o) ? p : null == g ? true : g.light,
+        hasPreviewAssets: g,
+        buttonBGHoverDark: null != (r = null != n ? n : t) ? r : null == A ? true : A.dark,
+        buttonBGHoverLight: null != (l = null != s ? s : t) ? l : null == A ? true : A.light,
+        buttonBGRestingDark: null != (a = null != c ? c : o) ? a : null == m ? true : m.dark,
+        buttonBGRestingLight: null != (p = null != u ? u : o) ? p : null == m ? true : m.light,
         coachtipAvatar: null != d ? d : null == e ? true : e.avatar
       }
     }, [t, n, s, o, c, u, d, e])
@@ -81,7 +81,7 @@ let s = e => {
     bannerUrl: e.bannerUrl,
     bannerAnimatedUrl: e.bannerAnimatedUrl
   }),
-  f = e => ({
+  h = e => ({
     bannerURL: e.bannerURL,
     bannerAnimatedURL: e.bannerAnimatedURL
   })

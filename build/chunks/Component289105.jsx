@@ -11,10 +11,10 @@ var Chunk827734 = require("./827734.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk382945 = require("./382945.js");
 let c = () => (0, r.jsx)(i.m, {
-  text: s.intl.string(s.t.GMZqSi),
+  text: a.intl.string(a.t.GMZqSi),
   children: (0, r.jsx)("div", {
     className: o.k,
-    children: (0, r.jsx)(a.A, {
+    children: (0, r.jsx)(s.A, {
       color: l.A.unsafe_rawColors.WHITE.css
     })
   })

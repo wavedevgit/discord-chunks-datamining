@@ -27,9 +27,9 @@ let m = {
   };
 
 function E(e, t, n) {
-  var E, y, O, A, v, S;
+  var E, b, O, v, A, I;
   let {
-    node: I,
+    node: S,
     isVirtualized: T
   } = e, {
     direction: C
@@ -40,21 +40,21 @@ function E(e, t, n) {
     shouldSelectOnPressUp: P
   } = r.nV.get(t), D = (0, i.X1)(), x = (0, f.useRef)(null), L = () => {
     var e;
-    null === n.current || (null == x.current || I.key === x.current) && (null == (e = n.current) ? true : e.contains(document.activeElement)) || (0, u.l)(n.current)
-  }, j = {}, M = e.hasChildItems, k = t.selectionManager.isLink(I.key);
-  if (null != I && "expandedKeys" in t) {
-    let e = null == (O = (A = t.collection).getChildren) ? true : O.call(A, I.key);
-    M = M || [...null != e ? e : []].length > 1, null == N && !k && "none" === t.selectionManager.selectionMode && M && (N = () => t.toggleKey(I.key));
-    let n = M ? t.expandedKeys.has(I.key) : true,
+    null === n.current || (null == x.current || S.key === x.current) && (null == (e = n.current) ? true : e.contains(document.activeElement)) || (0, u.l)(n.current)
+  }, j = {}, M = e.hasChildItems, k = t.selectionManager.isLink(S.key);
+  if (null != S && "expandedKeys" in t) {
+    let e = null == (O = (v = t.collection).getChildren) ? true : O.call(v, S.key);
+    M = M || [...null != e ? e : []].length > 1, null == N && !k && "none" === t.selectionManager.selectionMode && M && (N = () => t.toggleKey(S.key));
+    let n = M ? t.expandedKeys.has(S.key) : true,
       r = 1;
-    if (I.level > 0 && (null == I ? true : I.parentKey) != null) {
-      let e = t.collection.getItem(I.parentKey);
-      e && (r = [...null == (v = (S = t.collection).getChildren) ? true : v.call(S, e.key)].filter(e => "item" === e.type).length)
+    if (S.level > 0 && (null == S ? true : S.parentKey) != null) {
+      let e = t.collection.getItem(S.parentKey);
+      e && (r = [...null == (A = (I = t.collection).getChildren) ? true : A.call(I, e.key)].filter(e => "item" === e.type).length)
     } else r = [...t.collection].filter(e => 0 === e.level && "item" === e.type).length;
     j = {
       "aria-expanded": n,
-      "aria-level": I.level + 1,
-      "aria-posinset": (null == I ? true : I.index) + 1,
+      "aria-level": S.level + 1,
+      "aria-posinset": (null == S ? true : S.index) + 1,
       "aria-setsize": r
     }
   }
@@ -63,22 +63,22 @@ function E(e, t, n) {
     ...G
   } = (0, _.p)({
     selectionManager: t.selectionManager,
-    key: I.key,
+    key: S.key,
     ref: n,
     isVirtualized: T,
     shouldSelectOnPressUp: e.shouldSelectOnPressUp || P,
-    onAction: N || (null == (E = I.props) ? true : E.onAction) ? (0, a.c)(null == (y = I.props) ? true : y.onAction, N ? () => N(I.key) : true) : true,
+    onAction: N || (null == (E = S.props) ? true : E.onAction) ? (0, a.c)(null == (b = S.props) ? true : b.onAction, N ? () => N(S.key) : true) : true,
     focus: L,
     linkBehavior: R
   }), V = e => {
     if (!e.currentTarget.contains(e.target) || !n.current || !document.activeElement) return;
     let r = (0, d.N$)(n.current);
     if (r.currentNode = document.activeElement, "expandedKeys" in t && document.activeElement === n.current) {
-      if (e.key === m[C] && t.selectionManager.focusedKey === I.key && M && !t.expandedKeys.has(I.key)) {
-        t.toggleKey(I.key), e.stopPropagation();
+      if (e.key === m[C] && t.selectionManager.focusedKey === S.key && M && !t.expandedKeys.has(S.key)) {
+        t.toggleKey(S.key), e.stopPropagation();
         return
-      } else if (e.key === g[C] && t.selectionManager.focusedKey === I.key && M && t.expandedKeys.has(I.key)) {
-        t.toggleKey(I.key), e.stopPropagation();
+      } else if (e.key === g[C] && t.selectionManager.focusedKey === S.key && M && t.expandedKeys.has(S.key)) {
+        t.toggleKey(S.key), e.stopPropagation();
         return
       }
     }
@@ -94,7 +94,7 @@ function E(e, t, n) {
           });
           else {
             r.currentNode = n.current;
-            let e = b(r);
+            let e = y(r);
             e && ((0, u.l)(e), (0, s.o)(e, {
               containingElement: (0, o.m)(n.current)
             }))
@@ -112,7 +112,7 @@ function E(e, t, n) {
           });
           else {
             r.currentNode = n.current;
-            let e = b(r);
+            let e = y(r);
             e && ((0, u.l)(e), (0, s.o)(e, {
               containingElement: (0, o.m)(n.current)
             }))
@@ -127,8 +127,8 @@ function E(e, t, n) {
         }
     }
   }, F = e => {
-    if (x.current = I.key, e.target !== n.current) {
-      (0, p.pP)() || t.selectionManager.setFocusedKey(I.key);
+    if (x.current = S.key, e.target !== n.current) {
+      (0, p.pP)() || t.selectionManager.setFocusedKey(S.key);
       return
     }
   }, B = e => {
@@ -138,16 +138,16 @@ function E(e, t, n) {
       });
       t.currentNode = document.activeElement, (e.shiftKey ? t.previousNode() : t.nextNode()) && e.stopPropagation()
     }
-  }, H = (0, l.HI)(I.props), Y = G.hasAction ? H : {}, W = (0, c.v)(U, Y, {
+  }, H = (0, l.HI)(S.props), Y = G.hasAction ? H : {}, W = (0, c.v)(U, Y, {
     role: "row",
     onKeyDownCapture: V,
     onKeyDown: B,
     onFocus: F,
-    "aria-label": I.textValue || true,
-    "aria-selected": t.selectionManager.canSelectItem(I.key) ? t.selectionManager.isSelected(I.key) : true,
-    "aria-disabled": t.selectionManager.isDisabled(I.key) || true,
-    "aria-labelledby": D && I.textValue ? `${(0,r.uk)(t,I.key)} ${D}` : true,
-    id: (0, r.uk)(t, I.key)
+    "aria-label": S.textValue || true,
+    "aria-selected": t.selectionManager.canSelectItem(S.key) ? t.selectionManager.isSelected(S.key) : true,
+    "aria-disabled": t.selectionManager.isDisabled(S.key) || true,
+    "aria-labelledby": D && S.textValue ? `${(0,r.uk)(t,S.key)} ${D}` : true,
+    id: (0, r.uk)(t, S.key)
   });
   if (T) {
     let {
@@ -156,7 +156,7 @@ function E(e, t, n) {
     W["aria-rowindex"] = n.find(e => "section" === e.type) ? [...e.getKeys()].filter(t => {
       var n;
       return (null == (n = e.getItem(t)) ? true : n.type) !== "section"
-    }).findIndex(e => e === I.key) + 1 : I.index + 1
+    }).findIndex(e => e === S.key) + 1 : S.index + 1
   }
   let K = {
     role: "gridcell",
@@ -174,7 +174,7 @@ function E(e, t, n) {
   }
 }
 
-function b(e) {
+function y(e) {
   let t = null,
     n = null;
   do(n = e.lastChild()) && (t = n); while (n);

@@ -25,7 +25,7 @@ function l(e) {
     SelectedChannelStore: m,
     VoiceStateStore: g,
     PermissionStore: E
-  } = e, b = (0, i.A)();
+  } = e, y = (0, i.A)();
   if (null == t) returnfalse;
   if (d && null != c) return (0, a.Ay)({
     userId: t.id,
@@ -33,7 +33,7 @@ function l(e) {
     channelId: c,
     currentUser: u,
     application: l,
-    isActivitiesEnabledForCurrentPlatform: b,
+    isActivitiesEnabledForCurrentPlatform: y,
     ChannelStore: f,
     VoiceStateStore: g,
     PermissionStore: E,

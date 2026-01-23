@@ -2,7 +2,7 @@
 /** chunk id: 723278, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  L: () => f,
+  L: () => g,
   N: () => u
 });
 var Chunk627968 = require("./627968.js"),
@@ -20,7 +20,7 @@ function u(e) {
     section: n
   } = e;
   (0, s.transitionToGlobalDiscovery)({
-    tab: c.GlobalDiscoveryTab.APPS,
+    tab: o.GlobalDiscoveryTab.APPS,
     newSessionState: {
       guildId: t,
       entrypoint: {
@@ -31,11 +31,11 @@ function u(e) {
   }), (0, l.jH)()
 }
 
-function f() {
+function g() {
   return (0, r.jsxs)("div", {
     className: d.q,
     children: [(0, r.jsx)("div", {
-      children: o.intl.string(o.t.AKcFUj)
+      children: c.intl.string(c.t.AKcFUj)
     }), (0, r.jsx)(i.tfB, {
       size: "xs",
       color: "currentColor",

@@ -23,7 +23,7 @@ function m(e) {
     guild: t,
     channel: n,
     message: m
-  } = e, g = d.A.getGuildId(), E = u.A.getChannelId(g), b = i.useCallback(() => {
+  } = e, g = d.A.getGuildId(), E = u.A.getChannelId(g), y = i.useCallback(() => {
     var e;
     f.default.track(p.HAw.CHANNEL_LINK_PREVIEW_JOINED, {
       author_id: null == (e = m.author) ? true : e.id,
@@ -33,7 +33,7 @@ function m(e) {
       guild_id: g,
       channel_id: E
     }), (0, o.i)(t.id, n.id), s.default.selectVoiceChannel(n.id)
-  }, [m, t, n, g, E]), y = (0, r.jsx)(c.A.Channel, {
+  }, [m, t, n, g, E]), b = (0, r.jsx)(c.A.Channel, {
     channel: n
   });
   return (0, r.jsx)(c.A, {
@@ -43,8 +43,8 @@ function m(e) {
         children: [(0, r.jsx)(c.A.Icon, {
           guild: t
         }), (0, r.jsx)(c.A.Info, {
-          title: y,
-          onClick: b,
+          title: b,
+          onClick: y,
           children: (0, r.jsxs)("span", {
             className: h.FA,
             children: [_.intl.format(_.t["2wimj5"], {
@@ -62,7 +62,7 @@ function m(e) {
         className: h.UD,
         children: (0, r.jsx)(a.$nd, {
           fullWidth: true,
-          onClick: b,
+          onClick: y,
           variant: "active",
           text: n.isGuildStageVoice() ? _.intl.string(_.t["7vb2cc"]) : _.intl.string(_.t["96ANUN"])
         })

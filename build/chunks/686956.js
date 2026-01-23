@@ -116,8 +116,8 @@ let k = e => {
   };
 
 function V(e) {
-  return new Promise(t => b.A.addConditionalChangeListener(() => {
-    let n = b.A.getGuild(e);
+  return new Promise(t => y.A.addConditionalChangeListener(() => {
+    let n = y.A.getGuild(e);
     return null == n || (t(n), false)
   }))
 }
@@ -135,8 +135,8 @@ let B = {
         lurkLocation: g
       } = d,
       E = null != (t = d.lurker) && t,
-      v = A.default.getCurrentUser();
-    if (null != (r = null == v ? true : v.hasFlag(N.nhx.QUARANTINED)) && r) return (0, p.default)(), new Promise((e, t) => t(Error()));
+      A = v.default.getCurrentUser();
+    if (null != (r = null == A ? true : A.hasFlag(N.nhx.QUARANTINED)) && r) return (0, p.default)(), new Promise((e, t) => t(Error()));
     s.h.wait(() => s.h.dispatch({
       type: "GUILD_JOIN",
       guildId: e,
@@ -146,7 +146,7 @@ let B = {
     }));
     try {
       let t = O.A.getGuildId(),
-        r = e === t && null != b.A.getGuild(e) ? y.A.getChannelId(e) : null,
+        r = e === t && null != y.A.getGuild(e) ? b.A.getChannelId(e) : null,
         i = await a.Bo.put({
           url: N.Rsh.GUILD_JOIN(e),
           query: {
@@ -166,7 +166,7 @@ let B = {
           type: "USER_GUILD_JOIN_REQUEST_UPDATE",
           guildId: e,
           request: i.body.join_request
-        }), null == b.A.getGuild(e) && i.body.show_verification_form) return (0, h.pX)(N.BVt.GUILD_MEMBER_VERIFICATION(e)), i;
+        }), null == y.A.getGuild(e) && i.body.show_verification_form) return (0, h.pX)(N.BVt.GUILD_MEMBER_VERIFICATION(e)), i;
       if (null != i.body.welcome_screen && s.h.dispatch({
           type: "WELCOME_SCREEN_UPDATE",
           guildId: i.body.id,
@@ -187,8 +187,8 @@ let B = {
       return i
     } catch (t) {
       if ((null == (i = t.body) ? true : i.code) === N.t02.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED && (0, l.yO)(R.w_.JOIN_LARGE_GUILD_UNDERAGE), (null == (o = t.body) ? true : o.code) === N.t02.TOO_MANY_USER_GUILDS) {
-        let e = A.default.getCurrentUser();
-        I.Ay.canUseIncreasedGuildCap(e) || (null == e ? true : e.isStaff()) ? k(N.cZu) : k(N.qlD)
+        let e = v.default.getCurrentUser();
+        S.Ay.canUseIncreasedGuildCap(e) || (null == e ? true : e.isStaff()) ? k(N.cZu) : k(N.qlD)
       }
       throw (null == (c = t.body) ? true : c.code) === N.t02.GUILD_AT_CAPACITY && G(), E && (null == (u = t.body) ? true : u.code) === N.t02.UNKNOWN_GUILD && U(e), t
     }
@@ -328,7 +328,7 @@ let B = {
         secondary_color: null,
         tertiary_color: null
       },
-      permissions: S.x3
+      permissions: I.x3
     };
     try {
       let t = await a.Bo.post({
@@ -452,7 +452,7 @@ let B = {
     })
   },
   createGuildFolderLocal(e, t) {
-    v.default.track(N.HAw.GUILD_FOLDER_CREATED), s.h.dispatch({
+    A.default.track(N.HAw.GUILD_FOLDER_CREATED), s.h.dispatch({
       type: "GUILD_FOLDER_CREATE_LOCAL",
       sourceIds: e,
       name: t
@@ -474,7 +474,7 @@ let B = {
   },
   toggleGuildFolderExpand(e) {
     let t = g.A.isFolderExpanded(e);
-    v.default.track(N.HAw.GUILD_FOLDER_CLICKED, {
+    A.default.track(N.HAw.GUILD_FOLDER_CLICKED, {
       source: "sidebar",
       action: t ? "collapsed" : "expanded"
     }), s.h.dispatch({

@@ -86,13 +86,13 @@ function g(e, t, n) {
     });
   return (0, i.forwardRef)(function(n, m) {
     var g;
-    let [E, ...b] = [n, m], {
-      onScroll: y,
+    let [E, ...y] = [n, m], {
+      onScroll: b,
       dir: O = "ltr",
-      sections: A,
-      columns: v,
-      getItemKey: S,
-      getItemHeight: I,
+      sections: v,
+      columns: A,
+      getItemKey: I,
+      getItemHeight: S,
       getSectionHeight: T,
       chunkSize: C,
       renderSection: N,
@@ -110,7 +110,7 @@ function g(e, t, n) {
       maxContentWidth: V,
       renderAccessory: F,
       onItemVisibilityChange: B
-    } = E, H = h(E, ["onScroll", "dir", "sections", "columns", "getItemKey", "getItemHeight", "getSectionHeight", "chunkSize", "renderSection", "renderItem", "getSectionProps", "itemGutter", "removeEdgeItemGutters", "sectionGutter", "padding", "paddingVertical", "paddingHorizontal", "fade", "className", "style", "maxContentWidth", "renderAccessory", "onItemVisibilityChange"]), [Y] = b, W = i.useRef(null), K = i.useRef(null), z = i.useRef({}), [q, X] = i.useState(false), {
+    } = E, H = h(E, ["onScroll", "dir", "sections", "columns", "getItemKey", "getItemHeight", "getSectionHeight", "chunkSize", "renderSection", "renderItem", "getSectionProps", "itemGutter", "removeEdgeItemGutters", "sectionGutter", "padding", "paddingVertical", "paddingHorizontal", "fade", "className", "style", "maxContentWidth", "renderAccessory", "onItemVisibilityChange"]), [Y] = y, W = i.useRef(null), K = i.useRef(null), z = i.useRef({}), [q, X] = i.useState(false), {
       scrollerRef: Z,
       scrollerState: Q,
       getScrollerState: $
@@ -131,10 +131,10 @@ function g(e, t, n) {
       forceUpdate: ei,
       masonryComputer: ea
     } = (0, o.vL)({
-      sections: A,
-      columns: v,
-      getItemKey: S,
-      getItemHeight: I,
+      sections: v,
+      columns: A,
+      getItemKey: I,
+      getItemHeight: S,
       getSectionHeight: T,
       chunkSize: C,
       itemGutter: P,
@@ -173,8 +173,8 @@ function g(e, t, n) {
     let ed = (0, i.useCallback)(e => {
       es(1), null == W.current ? X(true) : clearTimeout(W.current), W.current = setTimeout(() => {
         W.current = null, X(false)
-      }, 200), null != y && y(e)
-    }, [y, es]);
+      }, 200), null != b && b(e)
+    }, [b, es]);
     return i.useLayoutEffect(() => {
       2 !== Q.current.dirty && (Q.current.dirty = 2)
     }, [er, Q]), (0, r.jsxs)("div", _(f({

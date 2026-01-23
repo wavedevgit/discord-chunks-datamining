@@ -2,7 +2,7 @@
 /** chunk id: 273198, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./747238.js"), require("./812715.js"), require("./866193.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,11 +21,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk299846 = require("./299846.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e) {
+function y(e) {
   if (e === a.j.WEEK) return E.t["7TXfc6"]
 }
-let y = (e, t, n, r) => {
-    let i = b(r),
+let b = (e, t, n, r) => {
+    let i = y(r),
       a = o.Ay.getName(t.guild_id, t.id, n),
       s = e.extra.game_name;
     return E.intl.formatToMarkdownString(i, {
@@ -37,38 +37,38 @@ let y = (e, t, n, r) => {
     username: t.username,
     activity: e.extra.game_name
   }),
-  A = e => {
+  v = e => {
     let {
       channel: t,
       entry: n,
       disableGameProfileLinks: a,
       onReaction: o,
-      onVoiceChannelPreview: b
+      onVoiceChannelPreview: y
     } = e, {
-      largeImage: A
+      largeImage: v
     } = (0, l.nO)({
       entry: n
     }), {
-      user: v,
-      details: S,
-      appName: I
+      user: A,
+      details: I,
+      appName: S
     } = (0, g.u)(n), {
       primaryColor: T,
       secondaryColor: C
-    } = (0, d.A)(null == A ? true : A.src), N = (0, c.ty)(n), R = (0, c.TQ)(n), w = i.useCallback(e => {
-      if (null != t && null != v && null != N && null != R && (0, p._E)(R)) return (0, u.p6)({
+    } = (0, d.A)(null == v ? true : v.src), N = (0, c.ty)(n), R = (0, c.TQ)(n), w = i.useCallback(e => {
+      if (null != t && null != A && null != N && null != R && (0, p._E)(R)) return (0, u.p6)({
         entry: n,
-        applicationImageSrc: null == A ? true : A.src,
-        avatarSrcs: [v.getAvatarURL(null == t ? true : t.guild_id, 128)],
-        description: y(n, t, v, R),
+        applicationImageSrc: null == v ? true : v.src,
+        avatarSrcs: [A.getAvatarURL(null == t ? true : t.guild_id, 128)],
+        description: b(n, t, A, R),
         timestamp: E.intl.formatToPlainString(E.t.YL7UE3, {
           hours: Math.round(N / s.A.Seconds.HOUR)
         }),
         colors: [T, C],
         channelId: e
       })
-    }, [null == A ? true : A.src, t, N, n, T, R, C, v]);
-    if (null == v || null == N || null == R || !(0, p._E)(R)) return null;
+    }, [null == v ? true : v.src, t, N, n, T, R, C, A]);
+    if (null == A || null == N || null == R || !(0, p._E)(R)) return null;
     let P = null != n.extra.platform ? f.n[n.extra.platform] : null;
     return (0, r.jsxs)(h.YN, {
       children: [(0, r.jsx)(h.BC, {
@@ -79,8 +79,8 @@ let y = (e, t, n, r) => {
         }),
         entry: n,
         userDescription: E.t.rPqqts,
-        title: I,
-        subtitle: S,
+        title: S,
+        subtitle: I,
         badges: (0, r.jsx)(_.mG, {
           location: _.N5.POPOUT,
           children: p.ac.map((e, t) => (0, r.jsx)(e, {
@@ -91,11 +91,11 @@ let y = (e, t, n, r) => {
       }), (0, r.jsx)(h.Eh, {
         children: (0, r.jsx)(h.fD, {
           onReaction: o,
-          onVoiceChannelPreview: b,
-          user: v,
+          onVoiceChannelPreview: y,
+          user: A,
           channel: t,
           generateReactionImage: w,
-          reactionImageAltText: O(n, v),
+          reactionImageAltText: O(n, A),
           entry: n
         })
       })]

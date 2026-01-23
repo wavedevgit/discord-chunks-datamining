@@ -20,7 +20,7 @@ var Chunk562465 = require("./562465.js"),
   Chunk613057 = require("./613057.js"),
   Chunk652215 = require("./652215.js");
 
-function b(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function b(e) {
   return e
 }
 
-function _(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,32 +62,32 @@ let E = 10 * Chunk927813.A.Millis.SECOND,
         try {
           var o;
           let e;
-          if (null == i) throw new A.A({
-            errorCode: m.Lw6.INVALID_COMMAND
+          if (null == i) throw new f.A({
+            errorCode: A.Lw6.INVALID_COMMAND
           }, "No application.");
           let t = c.A.getApplication(i);
-          if (null == t) throw new A.A({
-            errorCode: m.Lw6.INVALID_ENTITLEMENT
+          if (null == t) throw new f.A({
+            errorCode: A.Lw6.INVALID_ENTITLEMENT
           }, "SKU does not exist.");
           let n = t.primarySkuId;
-          if (null == n) throw new A.A({
-            errorCode: m.Lw6.INVALID_ENTITLEMENT
+          if (null == n) throw new f.A({
+            errorCode: A.Lw6.INVALID_ENTITLEMENT
           }, "SKU does not exist.");
           return Promise.race([(o = t.id, e = d.A.isEntitledToSku(u.default.getCurrentUser(), n, o), null != e ? Promise.resolve(e) : (0, s.LM)(o).then(() => true === d.A.isEntitledToSku(u.default.getCurrentUser(), n, o))).then(e => {
-            if (!e) throw new A.A({
-              errorCode: m.Lw6.INVALID_ENTITLEMENT
+            if (!e) throw new f.A({
+              errorCode: A.Lw6.INVALID_ENTITLEMENT
             }, "User does not have entitlement.")
           }), (0, l.BK)(E).then(() => {
-            throw new A.A({
-              errorCode: m.Lw6.INVALID_ENTITLEMENT
+            throw new f.A({
+              errorCode: A.Lw6.INVALID_ENTITLEMENT
             }, "Timed out fetching entitlement.")
           })])
         } catch (e) {
-          throw e.code === m.Lw6.INVALID_ENTITLEMENT && (h.Ay.focus(null, true), (0, a.mMO)(async () => {
+          throw e.code === A.Lw6.INVALID_ENTITLEMENT && (g.Ay.focus(null, true), (0, a.mMO)(async () => {
             let {
               default: e
             } = await n.e("26766").then(n.bind(n, 448701));
-            return t => (0, r.jsx)(e, _(b({}, t), {
+            return t => (0, r.jsx)(e, b(_({}, t), {
               applicationId: i
             }))
           })), e
@@ -100,11 +100,11 @@ let E = 10 * Chunk927813.A.Millis.SECOND,
         let {
           socket: t
         } = e, l = t.application.id;
-        if (null == l) throw new A.A({
-          errorCode: m.Lw6.INVALID_COMMAND
+        if (null == l) throw new f.A({
+          errorCode: A.Lw6.INVALID_COMMAND
         }, "No application.");
         return i.Bo.post({
-          url: m.Rsh.ENTITLEMENT_TICKET(l),
+          url: A.Rsh.ENTITLEMENT_TICKET(l),
           body: {
             test_mode: p.A.inTestModeForApplication(l) || o.A.inDevModeForApplication(l)
           },
@@ -117,11 +117,11 @@ let E = 10 * Chunk927813.A.Millis.SECOND,
           } = e;
           return t
         }).catch(e => {
-          throw h.Ay.focus(null, true), (0, a.mMO)(async () => {
+          throw g.Ay.focus(null, true), (0, a.mMO)(async () => {
             let {
               default: e
             } = await n.e("26766").then(n.bind(n, 448701));
-            return t => (0, r.jsx)(e, _(b({}, t), {
+            return t => (0, r.jsx)(e, b(_({}, t), {
               applicationId: l
             }))
           }), e

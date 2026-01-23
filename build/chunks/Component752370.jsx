@@ -2,8 +2,8 @@
 /** chunk id: 752370, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  g: () => y,
-  k: () => v
+  g: () => b,
+  k: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -63,12 +63,12 @@ function E(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = b(e, t), Object.getOwnPropertySymbols)
+  if (a = y(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -76,7 +76,7 @@ function b(e, t) {
   return i
 }
 
-function y(e) {
+function b(e) {
   let {
     disabled: t,
     isSelected: n
@@ -122,7 +122,7 @@ function O() {
   })
 }
 
-function A(e) {
+function v(e) {
   let {
     desc: t,
     disabled: n,
@@ -130,13 +130,13 @@ function A(e) {
     name: u,
     value: _,
     isSelected: h
-  } = e, m = (0, i.useRef)(null), g = (0, i.useRef)(null), [E, b] = (0, i.useState)(true), y = (0, i.useRef)(false);
+  } = e, m = (0, i.useRef)(null), g = (0, i.useRef)(null), [E, y] = (0, i.useState)(true), b = (0, i.useRef)(false);
   return (0, i.useEffect)(() => {
-    if (!y.current) {
-      y.current = true;
+    if (!b.current) {
+      b.current = true;
       return
     }
-    b(h ? "animateIn" : "animateOut")
+    y(h ? "animateIn" : "animateOut")
   }, [h]), (0, r.jsx)(c.vN, {
     focusTarget: m,
     ringTarget: m,
@@ -171,7 +171,7 @@ function A(e) {
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     onChange: t,
     options: n,
@@ -193,7 +193,7 @@ function v(e) {
       "aria-errormessage": e.errorMessageId,
       "data-mana-component": "BaseRadioGroup",
       value: null != i ? String(i) : true,
-      children: n.map((e, t) => (0, r.jsx)(A, g(h({
+      children: n.map((e, t) => (0, r.jsx)(v, g(h({
         index: t
       }, e), {
         value: String(e.value),

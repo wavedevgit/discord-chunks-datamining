@@ -15,10 +15,10 @@ var r, l, Chunk627968 = require("./627968.js"),
   Chunk423993 = require("./423993.js"),
   Chunk851007 = require("./851007.js");
 
-function g(e) {
-  let t = (0, d.bG)([f.A], () => f.A.useReducedMotion),
-    n = a.useRef(null);
-  return a.useEffect(() => {
+function m(e) {
+  let t = (0, d.bG)([p.A], () => p.A.useReducedMotion),
+    n = s.useRef(null);
+  return s.useEffect(() => {
     let r;
     return null != n.current && (r = u().loadAnimation({
       container: n.current,
@@ -32,13 +32,13 @@ function g(e) {
   }, [n, t, e]), n
 }
 
-function m(e) {
+function b(e) {
   let {
     className: t
   } = e;
   return (0, i.jsx)("div", {
-    ref: g(r || (r = n.t(p, 2))),
-    className: o()(b.ys, t)
+    ref: m(r || (r = n.t(h, 2))),
+    className: o()(g.ys, t)
   })
 }
 
@@ -47,8 +47,8 @@ function A(e) {
     className: t
   } = e;
   return (0, i.jsx)("div", {
-    ref: g(l || (l = n.t(h, 2))),
-    className: o()(b.R0, t)
+    ref: m(l || (l = n.t(f, 2))),
+    className: o()(g.R0, t)
   })
 }
 let y = e => {
@@ -57,18 +57,18 @@ let y = e => {
     animationContainerClassName: n,
     glowClassName: r,
     trinketsClassName: l,
-    onMount: s
+    onMount: a
   } = e;
-  return a.useEffect(() => {
-    s()
-  }, [s]), (0, i.jsxs)("div", {
+  return s.useEffect(() => {
+    a()
+  }, [a]), (0, i.jsxs)("div", {
     className: n,
-    children: [(0, i.jsx)(m, {
+    children: [(0, i.jsx)(b, {
       className: r
     }), (0, i.jsx)("div", {
-      className: b.cw
+      className: g.cw
     }), (0, i.jsx)("div", {
-      className: b.h$,
+      className: g.h$,
       children: t
     }), (0, i.jsx)(A, {
       className: l

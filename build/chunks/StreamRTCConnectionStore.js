@@ -25,7 +25,7 @@ var i, Chunk284009 = require("./284009.js"),
   Chunk652215 = require("./652215.js"),
   Chunk502075 = require("./502075.js");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,7 +33,7 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let I = {},
+let S = {},
   T = {},
   C = {},
   N = {},
@@ -87,7 +87,7 @@ function k(e) {
     channelId: a,
     ownerId: E.default.getId()
   });
-  if (I[m] = {
+  if (S[m] = {
       appContext: s,
       analyticsLocations: h
     }, l().forEach(D, e => {
@@ -115,7 +115,7 @@ function U(e) {
     appContext: t,
     streamKey: n
   } = e;
-  I[n] = {
+  S[n] = {
     appContext: t,
     analyticsLocations: true
   }, l().forEach(D, e => {
@@ -137,15 +137,15 @@ function G(e) {
   } = e, s = D[t], o = (0, _.Iy)(t);
   if (null == s && null != n) {
     var l, c;
-    null == C[t] && (T[t] = null), null == T[t] && null == N[t] && (T[t] = (0, h.Ee)(o, y.A));
+    null == C[t] && (T[t] = null), null == T[t] && null == N[t] && (T[t] = (0, h.Ee)(o, b.A));
     let e = new p.t({
       streamRegion: i,
       streamApplication: T[t],
       streamSourceType: Z(N[t]),
-      actionContext: null == (l = I[t]) ? true : l.appContext,
+      actionContext: null == (l = S[t]) ? true : l.appContext,
       numViewers: null != a ? a.length : 0,
       goLiveModalDurationMs: R[t],
-      analyticsLocations: null == (c = I[t]) ? true : c.analyticsLocations
+      analyticsLocations: null == (c = S[t]) ? true : c.analyticsLocations
     });
     s = x(t, n, r, e), D[t] = s
   }
@@ -210,7 +210,7 @@ function K(e) {
     guildId: i,
     channelId: a
   } = e, s = (0, _._z)({
-    streamType: null == i ? v.U4.CALL : v.U4.GUILD,
+    streamType: null == i ? A.U4.CALL : A.U4.GUILD,
     guildId: i,
     channelId: a,
     ownerId: r
@@ -263,7 +263,7 @@ function Z(e) {
 }
 class Q extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(E.default, b.A, O.A, f.Ay)
+    this.waitFor(E.default, y.A, O.A, f.Ay)
   }
   getRTCConnections() {
     return D
@@ -276,7 +276,7 @@ class Q extends(i = Chunk311907.Ay.Store) {
   }
   getQuality(e) {
     var t, n;
-    return (0, m.A)(b.A) && null != e && null != (t = null == (n = D[e]) ? true : n.quality) ? t : A.bFR.UNKNOWN
+    return (0, m.A)(y.A) && null != e && null != (t = null == (n = D[e]) ? true : n.quality) ? t : v.bFR.UNKNOWN
   }
   getMediaSessionId(e) {
     if (null == e) return null;
@@ -332,7 +332,7 @@ class Q extends(i = Chunk311907.Ay.Store) {
     return null == r ? true : r.get(t)
   }
 }
-S(Q, "displayName", "StreamRTCConnectionStore");
+I(Q, "displayName", "StreamRTCConnectionStore");
 let $ = new Q(Chunk73153.h, !Chunk430452.A.isSupported() || __OVERLAY__ ? {} : {
   CONNECTION_OPEN: j,
   CONNECTION_CLOSED: M,

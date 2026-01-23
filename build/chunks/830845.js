@@ -115,12 +115,12 @@ function E(e, t) {
   t(window.confirm(e))
 }
 
-function b() {
+function y() {
   var e = window.navigator.userAgent;
   return (false === e.indexOf("Android 2.") && false === e.indexOf("Android 4.0") || false === e.indexOf("Mobile Safari") || false !== e.indexOf("Chrome") || false !== e.indexOf("Windows Phone")) && window.history && "pushState" in window.history
 }
 
-function y() {
+function b() {
   return false === window.navigator.userAgent.indexOf("Trident")
 }
 
@@ -128,13 +128,13 @@ function O() {
   return false === window.navigator.userAgent.indexOf("Firefox")
 }
 
-function A(e) {
+function v(e) {
   return true === e.state && false === navigator.userAgent.indexOf("CriOS")
 }
-var v = "popstate",
-  S = "hashchange";
+var A = "popstate",
+  I = "hashchange";
 
-function I() {
+function S() {
   try {
     return window.history.state || {}
   } catch (e) {
@@ -145,8 +145,8 @@ function I() {
 function T(e) {
   true === e && (e = {}), g || (0, s.A)(false);
   var t = window.history,
-    n = b(),
-    i = !y(),
+    n = y(),
+    i = !b(),
     a = e,
     l = a.forceRefresh,
     c = true !== l && l,
@@ -175,11 +175,11 @@ function T(e) {
   }
 
   function D(e) {
-    A(e) || j(N(e.state))
+    v(e) || j(N(e.state))
   }
 
   function x() {
-    j(N(I()))
+    j(N(S()))
   }
   var L = false;
 
@@ -205,7 +205,7 @@ function T(e) {
     var i = n - r;
     i && (L = true, B(i))
   }
-  var k = N(I()),
+  var k = N(S()),
     U = [k.key];
 
   function G(e) {
@@ -277,7 +277,7 @@ function T(e) {
   var W = 0;
 
   function K(e) {
-    1 === (W += e) && 1 === e ? (window.addEventListener(v, D), i && window.addEventListener(S, x)) : 0 === W && (window.removeEventListener(v, D), i && window.removeEventListener(S, x))
+    1 === (W += e) && 1 === e ? (window.addEventListener(A, D), i && window.addEventListener(I, x)) : 0 === W && (window.removeEventListener(A, D), i && window.removeEventListener(I, x))
   }
   var z = false;
 
@@ -362,19 +362,19 @@ function x(e) {
     c = true === l ? "slash" : l,
     f = e.basename ? d(o(e.basename)) : "",
     h = N[c],
-    b = h.encodePath,
-    y = h.decodePath;
+    y = h.encodePath,
+    b = h.decodePath;
 
-  function A() {
-    var e = y(w());
+  function v() {
+    var e = b(w());
     return f && (e = u(e, f)), _(e)
   }
-  var v = m();
+  var A = m();
 
-  function S(e) {
-    (0, r.A)($, e), $.length = t.length, v.notifyListeners($.location, $.action)
+  function I(e) {
+    (0, r.A)($, e), $.length = t.length, A.notifyListeners($.location, $.action)
   }
-  var I = false,
+  var S = false,
     T = null;
 
   function x(e, t) {
@@ -383,22 +383,22 @@ function x(e) {
 
   function L() {
     var e = w(),
-      t = b(e);
+      t = y(e);
     if (e !== t) D(t);
     else {
-      var n = A(),
+      var n = v(),
         r = $.location;
-      if (!I && x(r, n) || T === p(n)) return;
+      if (!S && x(r, n) || T === p(n)) return;
       T = null, j(n)
     }
   }
 
   function j(e) {
-    if (I) I = false, S();
+    if (S) S = false, I();
     else {
       var t = "POP";
-      v.confirmTransitionTo(e, t, a, function(n) {
-        n ? S({
+      A.confirmTransitionTo(e, t, a, function(n) {
+        n ? I({
           action: t,
           location: e
         }) : M(e)
@@ -413,37 +413,37 @@ function x(e) {
     var r = V.lastIndexOf(p(e));
     false === r && (r = 0);
     var i = n - r;
-    i && (I = true, Y(i))
+    i && (S = true, Y(i))
   }
   var k = w(),
-    U = b(k);
+    U = y(k);
   k !== U && D(U);
-  var G = A(),
+  var G = v(),
     V = [p(G)];
 
   function F(e) {
     var t = document.querySelector("base"),
       n = "";
-    return t && t.getAttribute("href") && (n = R(window.location.href)), n + "#" + b(f + p(e))
+    return t && t.getAttribute("href") && (n = R(window.location.href)), n + "#" + y(f + p(e))
   }
 
   function B(e, t) {
     var n = "PUSH",
       r = _(e, true, true, $.location);
-    v.confirmTransitionTo(r, n, a, function(e) {
+    A.confirmTransitionTo(r, n, a, function(e) {
       if (e) {
         var t = p(r),
-          i = b(f + t),
+          i = y(f + t),
           a = w() !== i;
         if (a) {
           T = t, P(i);
           var s = V.lastIndexOf(p($.location)),
             o = V.slice(0, s + 1);
-          o.push(t), V = o, S({
+          o.push(t), V = o, I({
             action: n,
             location: r
           })
-        } else S()
+        } else I()
       }
     })
   }
@@ -451,14 +451,14 @@ function x(e) {
   function H(e, t) {
     var n = "REPLACE",
       r = _(e, true, true, $.location);
-    v.confirmTransitionTo(r, n, a, function(e) {
+    A.confirmTransitionTo(r, n, a, function(e) {
       if (e) {
         var t = p(r),
-          i = b(f + t),
+          i = y(f + t),
           a = w() !== i;
         a && (T = t, D(i));
         var s = V.indexOf(p($.location));
-        false !== s && (V[s] = t), S({
+        false !== s && (V[s] = t), I({
           action: n,
           location: r
         })
@@ -486,7 +486,7 @@ function x(e) {
 
   function Z(e) {
     true === e && (e = false);
-    var t = v.setPrompt(e);
+    var t = A.setPrompt(e);
     return X || (q(1), X = true),
       function() {
         return X && (X = false, q(false)), t()
@@ -494,7 +494,7 @@ function x(e) {
   }
 
   function Q(e) {
-    var t = v.appendListener(e);
+    var t = A.appendListener(e);
     return q(1),
       function() {
         q(false), t()
@@ -545,7 +545,7 @@ function j(e) {
     }),
     E = p;
 
-  function b(e, t) {
+  function y(e, t) {
     var r = "PUSH",
       i = _(e, t, f(), C.location);
     u.confirmTransitionTo(i, r, n, function(e) {
@@ -563,7 +563,7 @@ function j(e) {
     })
   }
 
-  function y(e, t) {
+  function b(e, t) {
     var r = "REPLACE",
       i = _(e, t, f(), C.location);
     u.confirmTransitionTo(i, r, n, function(e) {
@@ -587,20 +587,20 @@ function j(e) {
     })
   }
 
-  function A() {
+  function v() {
     O(false)
   }
 
-  function v() {
+  function A() {
     O(1)
   }
 
-  function S(e) {
+  function I(e) {
     var t = C.index + e;
     return t >= 0 && t < C.entries.length
   }
 
-  function I(e) {
+  function S(e) {
     return true === e && (e = false), u.setPrompt(e)
   }
 
@@ -614,13 +614,13 @@ function j(e) {
     index: h,
     entries: g,
     createHref: E,
-    push: b,
-    replace: y,
+    push: y,
+    replace: b,
     go: O,
-    goBack: A,
-    goForward: v,
-    canGo: S,
-    block: I,
+    goBack: v,
+    goForward: A,
+    canGo: I,
+    block: S,
     listen: T
   };
   return C

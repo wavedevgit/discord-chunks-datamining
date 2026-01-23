@@ -2,7 +2,7 @@
 /** chunk id: 994870, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk110259 = require("./110259.js"),
@@ -14,7 +14,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk5164 = require("./5164.js"),
   Chunk584643 = require("./584643.js");
 
-function f(e) {
+function g(e) {
   let {
     config: t
   } = e, {
@@ -28,19 +28,19 @@ function f(e) {
     children: [(0, r.jsx)("img", {
       className: d.__invalid_heroBanner,
       src: u,
-      alt: o.intl.string(o.t.Af4klP)
+      alt: c.intl.string(c.t.Af4klP)
     }), (0, r.jsxs)("div", {
       className: d.__invalid_ctaContent,
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
         color: "text-strong",
-        children: o.intl.string(o.t["PqYfh/"])
+        children: c.intl.string(c.t["PqYfh/"])
       }), (0, r.jsx)(l.hKd, {
         size: 12
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        children: o.intl.string(o.t["41wkMc"])
+        children: c.intl.string(c.t["41wkMc"])
       }), (0, r.jsx)(l.hKd, {
         size: 24
       }), (0, r.jsx)(l.po8, {
@@ -57,14 +57,14 @@ function f(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     guild: t,
     config: n
   } = e, {
-    isLoading: o,
+    isLoading: c,
     error: u,
-    creatorMonetizationOnboardingMarketing: g
+    creatorMonetizationOnboardingMarketing: m
   } = (0, a.A)(t.id);
   return ((0, s.A)({
     type: i.ImpressionTypes.PANE,
@@ -72,12 +72,12 @@ function g(e) {
     properties: {
       guild_id: t.id
     }
-  }), o) ? (0, r.jsx)(l.y$y, {}) : (0, r.jsxs)("div", {
+  }), c) ? (0, r.jsx)(l.y$y, {}) : (0, r.jsxs)("div", {
     className: d.__invalid_container,
-    children: [(0, r.jsx)(f, {
+    children: [(0, r.jsx)(g, {
       config: n
-    }), (0, r.jsx)(c.j, {
-      onboardingMarketing: g,
+    }), (0, r.jsx)(o.j, {
+      onboardingMarketing: m,
       onboardingMarketingError: u
     })]
   })

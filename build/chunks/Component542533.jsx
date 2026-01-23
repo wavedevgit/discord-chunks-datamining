@@ -25,72 +25,72 @@ function x(e) {
     guildId: h,
     page: A
   } = e, {
-    ref: b,
-    width: m
-  } = (0, i.Ay)(), k = (0, o.jM)(), {
-    analyticsLocations: v
-  } = (0, d.Ay)(), j = a.useRef(null), {
+    ref: m,
+    width: k
+  } = (0, i.Ay)(), v = (0, o.jM)(), {
+    analyticsLocations: j
+  } = (0, d.Ay)(), b = s.useRef(null), {
     handleScroll: E
-  } = (0, p.b)(j, k, v), [S, N] = a.useMemo(() => {
+  } = (0, p.b)(b, v, j), [S, C] = s.useMemo(() => {
     if ((null == A ? true : A.skuIds) == null || 0 === A.skuIds.length) return [
       [],
       []
     ];
-    let e = Math.round(null != m ? m : 0);
+    let e = Math.round(null != k ? k : 0);
     return (null == A ? true : A.leaderboard) == null || null == e || e < 564 ? [
       [], A.skuIds
     ] : e < 1104 ? A.skuIds.length >= 2 ? [
       [], A.skuIds
     ] : [A.skuIds.slice(0, 1), A.skuIds.slice(1)] : [A.skuIds.slice(0, 2), A.skuIds.slice(2)]
-  }, [A, m]), L = 1 === S.length && null != m && m >= 834;
-  return (a.useEffect(() => {
+  }, [A, k]), N = 1 === S.length && null != k && k >= 834;
+  return (s.useEffect(() => {
     let {
       sessionId: e,
       guildId: l,
       pageIndex: t,
       pageTitle: n,
-      isUserGuildMember: a,
-      pageHasLeaderboard: s
-    } = k;
+      isUserGuildMember: s,
+      pageHasLeaderboard: a
+    } = v;
     r.default.track(I.HAw.SLAYER_STOREFRONT_PAGE_VIEWED, {
       slayer_storefront_session_id: e,
       guild_id: l,
       page_index: t,
       page_title: n,
-      is_user_guild_member: a,
-      page_has_leaderboard: s,
-      location_stack: v
+      is_user_guild_member: s,
+      page_has_leaderboard: a,
+      location_stack: j
     })
-  }, [k, v]), null == A) ? null : (0, n.jsx)(s.ChK, {
-    ref: j,
+  }, [v, j]), null == A) ? null : (0, n.jsx)(a.ChK, {
+    ref: b,
     onScroll: E,
     children: (0, n.jsxs)("section", {
-      ref: b,
-      className: _.k,
-      children: [(0, n.jsx)(f.m, {
+      ref: m,
+      className: f.k,
+      children: [(0, n.jsx)(g.m, {
         applicationId: x,
         backgroundImageAssetId: null == (l = A.leaderboard) ? true : l.backgroundImageAssetId
       }), (0, n.jsx)(u.I, {
         analyticsSectionId: "leaderboard",
         leaderboard: A.leaderboard,
-        skuId: L ? S[0] : true,
+        skuId: N ? S[0] : true,
         applicationId: x,
         guildId: h,
-        analyticsLocations: v
-      }), (0, n.jsx)(g.A, {
+        analyticsLocations: j
+      }), (0, n.jsx)(_.A, {
         analyticsSectionId: "featured-top-section",
         applicationId: x,
         guildId: h,
-        skuIds: L ? true : S,
+        skuIds: N ? true : S,
         variant: c.s.MEDIUM
-      }), (0, n.jsx)(g.A, {
+      }), (0, n.jsx)(_.A, {
         analyticsSectionId: "non-featured-top-section",
         applicationId: x,
         guildId: h,
-        skuIds: N
+        skuIds: C
       }), null == (t = A.sections) ? true : t.map((e, l) => {
         var t;
-        return (0, n.jsx)(g.A, {
+        return (0, n.jsx)(_.A, {
           analyticsSectionId: "index:".concat(l),
           guildId: h,
           applicationId: x,

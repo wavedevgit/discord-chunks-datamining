@@ -23,8 +23,8 @@ function p(e) {
     icon: s,
     title: p,
     body: f,
-    hint: b,
-    notifType: g
+    hint: g,
+    notifType: y
   } = function(e, t) {
     if (t.type === d.Jr.NEWS) {
       var n, i, r, s, l, o, a, c;
@@ -44,16 +44,16 @@ function p(e) {
     hint: h,
     notifType: d.KS.WelcomeNudge
   }, e), {
-    trackView: y,
-    trackClick: A
-  } = (0, c.Y)(g, {
-    notif_type: g
+    trackView: A,
+    trackClick: m
+  } = (0, c.Y)(y, {
+    notif_type: y
   });
   return {
     icon: s,
     title: p,
     body: f,
-    hint: b,
+    hint: g,
     renderFooter: () => (0, i.jsx)("div", {
       style: {
         textAlign: "center",
@@ -62,13 +62,13 @@ function p(e) {
       children: u.intl.string(u.t["9MyuT0"])
     }),
     onNotificationShow: () => {
-      y()
+      A()
     },
     onNotificationClick: (e, n) => {
-      A("unlock"), t === d.Jr.NEWS && r.A.updateNotificationStatus(n), l.default.isOverlayOOPEnabledForPid((0, a.getPID)()) ? r.A.setInputLocked(false, (0, a.getPID)()) : o.default.isInstanceLocked() && r.A.setInstanceLocked(false)
+      m("unlock"), t === d.Jr.NEWS && r.A.updateNotificationStatus(n), l.default.isOverlayOOPEnabledForPid((0, a.getPID)()) ? r.A.setInputLocked(false, (0, a.getPID)()) : o.default.isInstanceLocked() && r.A.setInstanceLocked(false)
     },
     onDismissClick: () => {
-      A("dismiss")
+      m("dismiss")
     }
   }
 }

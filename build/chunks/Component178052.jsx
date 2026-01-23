@@ -1,7 +1,7 @@
 /** Chunk was on 35894 **/
 /** chunk id: 178052, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -32,7 +32,7 @@ function C(e) {
   return e
 }
 
-function f(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,24 +44,24 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = {
+let p = {
     duration: 100,
     easing: Chunk615300.A.Easing.inOut(Chunk615300.A.Easing.back()),
     clamp: true
   },
-  m = {
+  b = {
     duration: 2e3,
     easing: Chunk615300.A.Easing.quad,
     clamp: true
   };
 
-function p(e) {
+function f(e) {
   let {
     value: t,
     children: n,
     equalityFn: i = o(),
     style: s
-  } = e, p = function(e, t) {
+  } = e, f = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -77,17 +77,17 @@ function p(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(e, ["value", "children", "equalityFn", "style"]), j = (0, u.A)(t), [{
+  }(e, ["value", "children", "equalityFn", "style"]), j = (0, d.A)(t), [{
     spring: g
-  }, h] = (0, d.zhh)(() => ({
+  }, h] = (0, u.zhh)(() => ({
     spring: 0
-  }), "animate-always"), x = (0, d.rdh)(c.A.colors.BACKGROUND_BASE_LOW).hex(), y = (0, d.rdh)(c.A.colors.CONTROL_BRAND_FOREGROUND).hex(), O = l.useCallback(() => {
+  }), "animate-always"), x = (0, u.rdh)(c.A.colors.BACKGROUND_BASE_LOW).hex(), y = (0, u.rdh)(c.A.colors.CONTROL_BRAND_FOREGROUND).hex(), O = l.useCallback(() => {
     h({
       spring: 1,
-      config: b
+      config: p
     }), h({
       spring: 0,
-      config: m,
+      config: b,
       delay: 300
     })
   }, [h]);
@@ -98,13 +98,13 @@ function p(e) {
       range: [0, 1],
       output: ["".concat(x, "00"), "".concat(y, "27")]
     }),
-    H = null != s ? f(C({}, s), {
+    _ = null != s ? m(C({}, s), {
       backgroundColor: v
     }) : {
       backgroundColor: v
     };
-  return (0, r.jsx)(a.animated.tr, f(C({}, p), {
-    style: H,
+  return (0, r.jsx)(a.animated.tr, m(C({}, f), {
+    style: _,
     children: n
   }))
 }

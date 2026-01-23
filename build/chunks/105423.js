@@ -6,11 +6,11 @@ require.d(exports, {
   Ct: () => h,
   MJ: () => g,
   Qb: () => _,
-  SI: () => y,
+  SI: () => b,
   dA: () => E,
   eU: () => m,
   eY: () => p,
-  lt: () => b
+  lt: () => y
 });
 var Chunk643479 = require("./643479.js"),
   Chunk761799 = require("./761799.js"),
@@ -28,8 +28,8 @@ let f = (0, Chunk643479.dP)({}, Chunk52510.A, Chunk999418.A),
   m = "gps",
   g = "interoperability",
   E = "mpf",
-  b = "canon",
-  y = "pentax",
+  y = "canon",
+  b = "pentax",
   O = {
     [p]: f,
     [_]: Chunk52510.A,
@@ -37,6 +37,6 @@ let f = (0, Chunk643479.dP)({}, Chunk52510.A, Chunk999418.A),
     [m]: Chunk669670.A,
     [g]: Chunk915816.A,
     [E]: Chunk761799.A.USE_MPF ? Chunk678467.A : {},
-    [b]: Chunk761799.A.USE_MAKER_NOTES ? Chunk4213.A : {},
-    [y]: Chunk761799.A.USE_MAKER_NOTES ? Chunk393384.A : {}
+    [y]: Chunk761799.A.USE_MAKER_NOTES ? Chunk4213.A : {},
+    [b]: Chunk761799.A.USE_MAKER_NOTES ? Chunk393384.A : {}
   }

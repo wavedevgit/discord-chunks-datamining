@@ -42,21 +42,21 @@ function f(e, t, n) {
     shouldFocusWrap: true,
     linkBehavior: "override",
     keyboardNavigationBehavior: "tab"
-  }, t, n), [b, y] = (0, o.useState)(false), {
+  }, t, n), [y, b] = (0, o.useState)(false), {
     focusWithinProps: O
   } = (0, c.R)({
-    onFocusWithinChange: y
-  }), A = (0, i.$)(e), v = (0, o.useRef)(t.collection.size);
+    onFocusWithinChange: b
+  }), v = (0, i.$)(e), A = (0, o.useRef)(t.collection.size);
   return (0, o.useEffect)(() => {
-    n.current && v.current > 0 && 0 === t.collection.size && b && n.current.focus(), v.current = t.collection.size
-  }, [t.collection.size, b, n]), d.set(t, {
+    n.current && A.current > 0 && 0 === t.collection.size && y && n.current.focus(), A.current = t.collection.size
+  }, [t.collection.size, y, n]), d.set(t, {
     onRemove: e.onRemove
   }), {
-    gridProps: (0, a.v)(E, A, {
+    gridProps: (0, a.v)(E, v, {
       role: t.collection.size ? "grid" : "group",
       "aria-atomic": false,
       "aria-relevant": "additions",
-      "aria-live": b ? "polite" : "off",
+      "aria-live": y ? "polite" : "off",
       ...O,
       ...h
     }),

@@ -82,33 +82,33 @@ function g(e) {
     textClassName: m,
     disablePopout: g,
     ignoreModalClicks: E,
-    onClick: b,
-    onContextMenu: y,
+    onClick: y,
+    onContextMenu: b,
     onPopoutRequestOpen: O,
-    onPopoutRequestClose: A
-  } = e, v = i.useRef(null);
+    onPopoutRequestClose: v
+  } = e, A = i.useRef(null);
   return (0, r.jsx)(c.A, {
-    targetElementRef: v,
+    targetElementRef: A,
     user: t,
     guildId: n,
     channelId: a,
     position: "left",
     shouldShow: !g && true,
     onRequestOpen: O,
-    onRequestClose: A,
+    onRequestClose: v,
     ignoreModalClicks: E,
     children: e => {
       let {
         onClick: i
       } = e, a = h(e, ["onClick"]);
       return (0, r.jsxs)(o.DUT, _(f({}, a), {
-        innerRef: v,
+        innerRef: A,
         className: s()(u.DV, p, {
           [u.YR]: g
         }),
-        onContextMenu: y,
+        onContextMenu: b,
         onClick: e => {
-          i(e), null == b || b(e)
+          i(e), null == y || y(e)
         },
         children: [(0, r.jsx)(o.euF, {
           src: t.getAvatarURL(n, (0, o.FT9)(o._3J.SIZE_24)),

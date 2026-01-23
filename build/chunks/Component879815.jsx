@@ -2,7 +2,7 @@
 /** chunk id: 879815, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -43,7 +43,7 @@ let E = {
     tension: 1200,
     friction: 70
   },
-  b = {
+  y = {
     [Chunk532294.P7.WELCOME]: Chunk397927.fAJ,
     [Chunk532294.P7.MESSAGES]: Chunk397927.oyn,
     [Chunk532294.P7.EMOJIS]: Chunk397927.nm2,
@@ -55,7 +55,7 @@ let E = {
     [Chunk532294.P7.END]: Chunk397927.MZT
   };
 
-function y(e) {
+function b(e) {
   let {
     isSelected: t,
     icon: n,
@@ -92,11 +92,11 @@ function O() {
   let e = (0, p.A)();
   return (0, f.A)(e).map(e => ({
     slide: e,
-    icon: b[e]
+    icon: y[e]
   }))
 }
 
-function A(e) {
+function v(e) {
   let {
     activeSlide: t,
     setActiveSlide: n,
@@ -112,7 +112,7 @@ function A(e) {
         icon: i,
         slide: s
       } = e, o = Number.parseInt(s, 10);
-      return f >= o ? (0, r.jsx)(y, {
+      return f >= o ? (0, r.jsx)(b, {
         isSelected: c === o,
         icon: i,
         onClick: () => n(s),

@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 558416, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  w: () => f
+  w: () => h
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -62,20 +62,20 @@ function p(e) {
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     className: t,
     focusSectionProps: n
-  } = e, [a, s] = i.useState(false), [f, h] = i.useState(0), A = i.useRef(null), g = e => {
-    clearTimeout(f), h(setTimeout(() => {
+  } = e, [a, s] = i.useState(false), [h, g] = i.useState(0), f = i.useRef(null), m = e => {
+    clearTimeout(h), g(setTimeout(() => {
       s(e)
     }, 100))
   };
   return (0, r.jsx)("div", {
-    onMouseEnter: () => g(true),
-    onMouseLeave: () => g(false),
+    onMouseEnter: () => m(true),
+    onMouseLeave: () => m(false),
     children: (0, r.jsx)(l.YNO, {
-      targetElementRef: A,
+      targetElementRef: f,
       shouldShow: a,
       animation: l.YNO.Animation.NONE,
       position: "bottom",
@@ -91,7 +91,7 @@ function f(e) {
           isShown: a
         } = i;
         return (0, r.jsx)(o.In, u({
-          ref: A,
+          ref: f,
           onClick: d,
           icon: l.Q5O,
           "aria-label": c.intl.string(c.t["5LqopY"]),

@@ -26,7 +26,7 @@ var Chunk607399 = require("./607399.js"),
   Chunk746080 = require("./746080.js"),
   Chunk892513 = require("./892513.js");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,20 +35,20 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,8 +59,8 @@ function S(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -100,10 +100,10 @@ function R(e) {
     channelType: l,
     guildId: m,
     innerClassname: g,
-    transparent: A = false,
-    hidden: v = false,
-    toolbar: S,
-    mobileToolbar: I,
+    transparent: v = false,
+    hidden: A = false,
+    toolbar: I,
+    mobileToolbar: S,
     "aria-label": T,
     "aria-labelledby": C,
     scrollable: R,
@@ -111,7 +111,7 @@ function R(e) {
     hideSearch: P,
     showDivider: D,
     disableDoubleClick: x
-  } = e, L = null == o || (0, y.jq)(o) ? null : o, j = (0, a.bG)([h.A], () => h.A.isInChannel(L) || false), M = (0, a.bG)([c.A], () => null != L && c.A.getParticipantsListOpen(L)), {
+  } = e, L = null == o || (0, b.jq)(o) ? null : o, j = (0, a.bG)([h.A], () => h.A.isInChannel(L) || false), M = (0, a.bG)([c.A], () => null != L && c.A.getParticipantsListOpen(L)), {
     enabled: k,
     inInbox: U
   } = d.A.useExperiment({
@@ -123,14 +123,14 @@ function R(e) {
   });
 
   function V() {
-    if (null == S) return null;
+    if (null == I) return null;
     let e = null != o && !P;
-    return i.Fr ? I : (0, r.jsxs)(r.Fragment, {
-      children: [S, e && !(0, y.jq)(o) ? (0, r.jsx)(p.Ay, {
+    return i.Fr ? S : (0, r.jsxs)(r.Fragment, {
+      children: [I, e && !(0, b.jq)(o) ? (0, r.jsx)(p.Ay, {
         guildId: m,
         channelId: o,
         className: O.$P
-      }, null != m ? m : o) : null, D && (0, r.jsx)(E.Ay.Divider, {}), k && !U ? (0, r.jsx)(f.A, {}) : null, G && j && null != L && !M && l === b.rbe.GROUP_DM && (0, r.jsxs)("div", {
+      }, null != m ? m : o) : null, D && (0, r.jsx)(E.Ay.Divider, {}), k && !U ? (0, r.jsx)(f.A, {}) : null, G && j && null != L && !M && l === y.rbe.GROUP_DM && (0, r.jsxs)("div", {
         className: O.pc,
         children: [(0, r.jsx)(E.Ay.Divider, {}), (0, r.jsx)(_.A, {
           onClick: () => s.A.toggleParticipantsList(L, !M)
@@ -142,8 +142,8 @@ function R(e) {
     className: n,
     innerClassName: g,
     toolbar: V(),
-    transparent: A,
-    hidden: v,
+    transparent: v,
+    hidden: A,
     onDoubleClick: () => N(x),
     "aria-label": T,
     "aria-labelledby": C,
@@ -180,9 +180,9 @@ function P(e) {
   } = (0, l.Ay)(o.A.HEADER_BAR);
   return (0, r.jsx)(l.f5, {
     value: i,
-    children: t ? (0, r.jsx)(R, I(v({}, n), {
+    children: t ? (0, r.jsx)(R, S(A({}, n), {
       className: n.className
-    })) : (0, r.jsx)(w, I(v({}, n), {
+    })) : (0, r.jsx)(w, S(A({}, n), {
       className: n.className
     }))
   })

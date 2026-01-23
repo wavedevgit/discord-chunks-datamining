@@ -31,7 +31,7 @@ function a(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (c[n] = e[n]);
     return c
-  }(e, ["header", "body", "onSubmit"]), [f, u] = o.useState(false);
+  }(e, ["header", "body", "onSubmit"]), [u, f] = o.useState(false);
   return (0, n.jsxs)(c.VoidConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -54,7 +54,7 @@ function a(e) {
     confirmText: l.intl.string(l.t["26C4oi"]),
     cancelText: l.intl.string(l.t["ETE/oC"]),
     onConfirm: () => {
-      s(null, f)
+      s(null, u)
     }
   }, b), r = r = {
     children: [(0, n.jsx)(c.Text, {
@@ -63,8 +63,8 @@ function a(e) {
     }), (0, n.jsx)("div", {
       className: i.k,
       children: (0, n.jsx)(c.Checkbox, {
-        checked: f,
-        onChange: () => u(e => !e),
+        checked: u,
+        onChange: () => f(e => !e),
         label: l.intl.string(l.t.bq3JXs),
         labelType: "secondary"
       })

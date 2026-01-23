@@ -53,12 +53,12 @@ function w(e, t) {
 
 function P(e) {
   switch (e) {
-    case S.e.ANIMATED_AVATAR_MODAL_UPSELL:
-    case S.e.ANIMATED_BANNER_MODAL_UPSELL:
-    case S.e.PROFILE_EFFECT_MODAL_UPSELL:
-    case S.e.AVATAR_DECORATION_MODAL_UPSELL:
-    case S.e.FOR_LATER_MODAL_UPSELL:
-    case S.e.VOICE_FILTERS_UPSELL:
+    case I.e.ANIMATED_AVATAR_MODAL_UPSELL:
+    case I.e.ANIMATED_BANNER_MODAL_UPSELL:
+    case I.e.PROFILE_EFFECT_MODAL_UPSELL:
+    case I.e.AVATAR_DECORATION_MODAL_UPSELL:
+    case I.e.FOR_LATER_MODAL_UPSELL:
+    case I.e.VOICE_FILTERS_UPSELL:
       returntrue;
     default:
       returnfalse
@@ -93,7 +93,7 @@ function D(e) {
     showNewBadge: J = false,
     showBetaBadge: ee = false,
     enableArtBoxShadow: et = true,
-    subscriptionTier: en = S.pe.TIER_2,
+    subscriptionTier: en = I.pe.TIER_2,
     isLoading: er = false,
     hideBackButton: ei,
     backButtonText: ea,
@@ -106,17 +106,17 @@ function D(e) {
     backgroundElements: ef,
     smallText: ep = false,
     footerClassName: e_
-  } = e, eh = R(e, ["title", "type", "guildBoostProps", "analyticsSource", "analyticsLocation", "body", "context", "glowUp", "modalClassName", "modalContentClassName", "artContainerClassName", "artClassName", "headerClassName", "bodyClassName", "transitionState", "onClose", "onSubscribeClick", "onSubscribeFinish", "onSecondaryClick", "secondaryCTA", "secondaryCTAClassName", "subscribeButtonText", "showNewBadge", "showBetaBadge", "enableArtBoxShadow", "subscriptionTier", "isLoading", "hideBackButton", "backButtonText", "showEnhancedUpsell", "useSubscribeButtonGradient", "subscribeButtonClassname", "hidePremiumOfferUpsell", "children", "LeadingComponent", "backgroundElements", "smallText", "footerClassName"]), em = null != x, eg = (0, b.V)(), eE = (0, E.O)(), eb = !ec && ((null == eg || null == (n = eg.subscription_trial) ? true : n.sku_id) === en || (0, O.U9)(eE, en)) && !em, {
-    analyticsLocations: ey
+  } = e, eh = R(e, ["title", "type", "guildBoostProps", "analyticsSource", "analyticsLocation", "body", "context", "glowUp", "modalClassName", "modalContentClassName", "artContainerClassName", "artClassName", "headerClassName", "bodyClassName", "transitionState", "onClose", "onSubscribeClick", "onSubscribeFinish", "onSecondaryClick", "secondaryCTA", "secondaryCTAClassName", "subscribeButtonText", "showNewBadge", "showBetaBadge", "enableArtBoxShadow", "subscriptionTier", "isLoading", "hideBackButton", "backButtonText", "showEnhancedUpsell", "useSubscribeButtonGradient", "subscribeButtonClassname", "hidePremiumOfferUpsell", "children", "LeadingComponent", "backgroundElements", "smallText", "footerClassName"]), em = null != x, eg = (0, y.V)(), eE = (0, E.O)(), ey = !ec && ((null == eg || null == (n = eg.subscription_trial) ? true : n.sku_id) === en || (0, O.U9)(eE, en)) && !em, {
+    analyticsLocations: eb
   } = (0, f.Ay)(d.A.PREMIUM_UPSELL_MODAL), eO = {
     analyticsLocation: j,
-    analyticsLocations: ey,
+    analyticsLocations: eb,
     analyticsSource: L,
     guildBoostProps: x,
     type: D
-  }, eA = i.useRef(eO);
+  }, ev = i.useRef(eO);
   i.useEffect(() => {
-    eA.current = eO
+    ev.current = eO
   }), i.useEffect(() => {
     if (er) return;
     let {
@@ -125,14 +125,14 @@ function D(e) {
       analyticsSource: n,
       guildBoostProps: r,
       type: i
-    } = eA.current;
-    em ? h.default.track(I.HAw.PREMIUM_GUILD_UPSELL_VIEWED, {
+    } = ev.current;
+    em ? h.default.track(S.HAw.PREMIUM_GUILD_UPSELL_VIEWED, {
       type: "".concat(i, " - Tier ").concat(null == r ? true : r.boostedGuildTier),
       guild_id: null == r ? true : r.guild.id,
       channel_id: null == r ? true : r.channelId,
       location: e,
       location_stack: t
-    }) : h.default.track(I.HAw.PREMIUM_UPSELL_VIEWED, {
+    }) : h.default.track(S.HAw.PREMIUM_UPSELL_VIEWED, {
       type: i,
       source: n,
       location: e,
@@ -140,12 +140,12 @@ function D(e) {
       sku_id: (0, m.mH)(en)
     })
   }, [em, en, er]);
-  let ev = (0, o.bG)([g.A], () => g.A.affinities),
-    eS = ev.length > 1 && P(D),
-    eI = (0, o.bG)([g.A], () => g.A.hasFetched);
+  let eA = (0, o.bG)([g.A], () => g.A.affinities),
+    eI = eA.length > 1 && P(D),
+    eS = (0, o.bG)([g.A], () => g.A.hasFetched);
   i.useEffect(() => {
-    eI || u.xG()
-  }, [eI]);
+    eS || u.xG()
+  }, [eS]);
   let eT = () => {
       if (em) return (0, r.jsx)(_.A, {
         analyticsLocation: j,
@@ -153,7 +153,7 @@ function D(e) {
         onClose: K
       });
       let e = es ? T.intl.string(T.t.pj0XBN) : true;
-      if (eb)
+      if (ey)
         if (null != eg) {
           var t, n;
           e = (0, m.FY)({
@@ -163,7 +163,7 @@ function D(e) {
         } else null != eE && (e = T.intl.formatToPlainString(T.t.bkQ4bH, {
           percent: eE.discount.amount
         }));
-      return (0, r.jsx)(y.A, {
+      return (0, r.jsx)(b.A, {
         className: el,
         showGradient: es || eo,
         premiumModalAnalyticsLocation: j,
@@ -187,7 +187,7 @@ function D(e) {
     src: eh.artURL
   }) : null != eh.artElement && (eN = eh.artElement), (0, r.jsxs)(c.EOs, {
     "data-migration-pending": true,
-    className: s()(C.zr, !eb && G),
+    className: s()(C.zr, !ey && G),
     "aria-label": w,
     transitionState: W,
     parentComponent: "PremiumUpsellModal",
@@ -201,11 +201,11 @@ function D(e) {
     }), (0, r.jsx)(c.$mQ, {
       "data-migration-pending": true,
       scrollbarType: "none",
-      className: s()(es ? C.es : C.Qs, !eb && V),
-      children: er ? (0, r.jsx)(c.y$y, {}) : eb ? (0, r.jsx)(A.Ay, {
+      className: s()(es ? C.es : C.Qs, !ey && V),
+      children: er ? (0, r.jsx)(c.y$y, {}) : ey ? (0, r.jsx)(v.Ay, {
         onClose: K,
         type: D,
-        subscriptionTier: null != (t = null == eg || null == (a = eg.subscription_trial) ? true : a.sku_id) ? t : S.pe.TIER_2,
+        subscriptionTier: null != (t = null == eg || null == (a = eg.subscription_trial) ? true : a.sku_id) ? t : I.pe.TIER_2,
         headingText: w,
         context: k,
         analyticsLocationObject: j,
@@ -224,8 +224,8 @@ function D(e) {
             children: [w, ee ? (0, r.jsx)(p.A, {
               className: C.TN
             }) : null]
-          }), eS ? (0, r.jsx)(v.A, {
-            affinities: ev
+          }), eI ? (0, r.jsx)(A.A, {
+            affinities: eA
           }) : true, eu, (0, r.jsx)(c.Text, {
             variant: ep ? "text-sm/normal" : "text-md/normal",
             className: s()(Y, C.uI),

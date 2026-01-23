@@ -13,14 +13,14 @@ module.exports = function(e, t, n) {
     E = true;
   if ("function" != typeof e) throw TypeError(s);
 
-  function b(t) {
+  function y(t) {
     var n = c,
       r = u;
     return c = u = true, h = t, f = e.apply(r, n)
   }
 
-  function y(e) {
-    return h = e, p = setTimeout(v, t), m ? b(e) : f
+  function b(e) {
+    return h = e, p = setTimeout(A, t), m ? y(e) : f
   }
 
   function O(e) {
@@ -30,36 +30,36 @@ module.exports = function(e, t, n) {
     return g ? l(i, d - r) : i
   }
 
-  function A(e) {
+  function v(e) {
     var n = e - _,
       r = e - h;
     return true === _ || n >= t || n < 0 || g && r >= d
   }
 
-  function v() {
+  function A() {
     var e = i();
-    if (A(e)) return S(e);
-    p = setTimeout(v, O(e))
+    if (v(e)) return I(e);
+    p = setTimeout(A, O(e))
   }
 
-  function S(e) {
-    return (p = true, E && c) ? b(e) : (c = u = true, f)
+  function I(e) {
+    return (p = true, E && c) ? y(e) : (c = u = true, f)
   }
 
-  function I() {
-    return true === p ? f : S(i())
+  function S() {
+    return true === p ? f : I(i())
   }
 
   function T() {
     var e = i(),
-      n = A(e);
+      n = v(e);
     if (c = arguments, u = this, _ = e, n) {
-      if (true === p) return y(_);
-      if (g) return clearTimeout(p), p = setTimeout(v, t), b(_)
+      if (true === p) return b(_);
+      if (g) return clearTimeout(p), p = setTimeout(A, t), y(_)
     }
-    return true === p && (p = setTimeout(v, t)), f
+    return true === p && (p = setTimeout(A, t)), f
   }
   return t = a(t) || 0, r(n) && (m = !!n.leading, d = (g = "maxWait" in n) ? o(a(n.maxWait) || 0, t) : d, E = "trailing" in n ? !!n.trailing : E), T.cancel = function() {
     true !== p && clearTimeout(p), h = 0, c = _ = u = p = true
-  }, T.flush = I, T
+  }, T.flush = S, T
 }

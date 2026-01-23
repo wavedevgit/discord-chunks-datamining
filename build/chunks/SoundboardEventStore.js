@@ -20,7 +20,7 @@ var r, Chunk735438 = require("./735438.js"),
   Chunk980504 = require("./980504.js"),
   Chunk355097 = require("./355097.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,14 +29,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -53,16 +53,16 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = [],
-  S = new(o())({
+let A = [],
+  I = new(o())({
     max: Chunk980504.E7
   }),
-  I = new Chunk283047.A({
+  S = new Chunk283047.A({
     computeBonus: () => 100,
     lookupKey: e => _.A.getSoundById(e),
     afterCompute: () => {},
@@ -91,14 +91,14 @@ function C(e) {
 }
 
 function N(e) {
-  S.set(e, e)
+  I.set(e, e)
 }
 
 function R(e) {
-  I.track(e), v.push({
+  S.track(e), A.push({
     key: e,
     timestamp: Date.now()
-  }), I.compute()
+  }), S.compute()
 }
 
 function w(e) {
@@ -108,7 +108,7 @@ function w(e) {
 }
 
 function P(e) {
-  return a().mapValues(e, e => A(y({}, e), {
+  return a().mapValues(e, e => v(b({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   }))
 }
@@ -117,7 +117,7 @@ function D() {
   var e;
   if (!j()) return;
   let t = null == (e = d.A.frecencyWithoutFetchingLatest.playedSoundFrecency) ? true : e.playedSounds;
-  I.overwriteHistory(P(null != t ? t : {}), v)
+  S.overwriteHistory(P(null != t ? t : {}), A)
 }
 
 function x(e) {
@@ -127,7 +127,7 @@ function x(e) {
     },
     wasSaved: n
   } = e;
-  j() && t === E.oD.FRECENCY_AND_FAVORITES_SETTINGS && n && (v = [])
+  j() && t === E.oD.FRECENCY_AND_FAVORITES_SETTINGS && n && (A = [])
 }
 
 function L() {
@@ -142,28 +142,28 @@ function j() {
 }
 class M extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    this.waitFor(_.A, d.A, f.default), (null == e ? true : e.recentlyHeardCache) != null && S.load(e.recentlyHeardCache), (null == e ? true : e.playedEventsPendingFlush) != null && (v = e.playedEventsPendingFlush), this.syncWith([d.A], D)
+    this.waitFor(_.A, d.A, f.default), (null == e ? true : e.recentlyHeardCache) != null && I.load(e.recentlyHeardCache), (null == e ? true : e.playedEventsPendingFlush) != null && (A = e.playedEventsPendingFlush), this.syncWith([d.A], D)
   }
   getState() {
     return {
-      recentlyHeardCache: S.dump(),
-      playedEventsPendingFlush: v
+      recentlyHeardCache: I.dump(),
+      playedEventsPendingFlush: A
     }
   }
   hasPendingUsage() {
-    return v.length > 0
+    return A.length > 0
   }
   get playedSoundHistory() {
-    return I.usageHistory
+    return S.usageHistory
   }
   get recentlyHeardSoundIds() {
-    return S.values()
+    return I.values()
   }
   get frecentlyPlayedSounds() {
-    return I.frequently
+    return S.frequently
   }
 }
-b(M, "displayName", "SoundboardEventStore"), b(M, "persistKey", "SoundboardEventStore");
+y(M, "displayName", "SoundboardEventStore"), y(M, "persistKey", "SoundboardEventStore");
 let k = new M(Chunk73153.h, {
   GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: T,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: C,

@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 9905, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => f
+  J: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -27,36 +27,36 @@ let d = e => {
       })
     })
   },
-  f = Chunk64700.memo(function(e) {
+  p = Chunk64700.memo(function(e) {
     var t, n;
     let {
       item: l
-    } = e, f = null, p = false, h = (0, i.bG)([o.A], () => o.A.getGuild(l.guild_id));
-    if (null != l.icon_name) f = (0, r.jsx)("img", {
+    } = e, p = null, h = false, f = (0, i.bG)([o.A], () => o.A.getGuild(l.guild_id));
+    if (null != l.icon_name) p = (0, r.jsx)("img", {
       alt: "",
       src: c.rr[(0, c.yI)(l.icon_name)]
     });
     else if (null != l.other_user) {
-      let e = l.other_user instanceof s.A ? l.other_user : new s.A(l.other_user),
+      let e = l.other_user instanceof a.A ? l.other_user : new a.A(l.other_user),
         n = null != (t = e.globalName) ? t : e.username;
-      f = (0, r.jsx)("img", {
+      p = (0, r.jsx)("img", {
         alt: n,
         className: u.Sl,
         src: e.getAvatarURL(true, 40)
-      }), p = true
-    } else f = null != l.icon_url ? (0, r.jsx)("img", {
-      alt: null != (n = null == h ? true : h.name) ? n : "",
+      }), h = true
+    } else p = null != l.icon_url ? (0, r.jsx)("img", {
+      alt: null != (n = null == f ? true : f.name) ? n : "",
       className: u.Sl,
       src: l.icon_url
     }) : (0, r.jsx)("img", {
       alt: "",
       src: c.rr[(0, c.sW)(l)]
     });
-    let b = (0, c.rS)(l.type);
+    let g = (0, c.rS)(l.type);
     return (0, r.jsxs)("div", {
       className: u.kL,
-      children: [(0, r.jsx)(a.Ay, {
-        mask: null == b ? a.hW.AVATAR_DEFAULT : a.hW.AVATAR_STATUS_ROUND_16,
+      children: [(0, r.jsx)(s.Ay, {
+        mask: null == g ? s.hW.AVATAR_DEFAULT : s.hW.AVATAR_STATUS_ROUND_16,
         width: 40,
         height: 40,
         rightOverhang: 3,
@@ -64,13 +64,13 @@ let d = e => {
         className: u.dK,
         children: (0, r.jsx)("div", {
           className: u.ZS,
-          style: p ? true : {
+          style: h ? true : {
             backgroundColor: (0, c.Pm)(l)
           },
-          children: f
+          children: p
         })
       }), (0, r.jsx)(d, {
-        mask: b
+        mask: g
       })]
     })
   })

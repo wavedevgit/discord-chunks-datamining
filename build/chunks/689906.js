@@ -12,23 +12,23 @@ var Chunk64700 = require("./64700.js"),
 
 function c(e, t) {
   let n = r.useCallback(n => {
-    if (n.stopPropagation(), t.type !== s.o9.LEVEL) switch ((0, i.OoC)(s.Fq), t.skuId) {
+    if (n.stopPropagation(), t.type !== a.o9.LEVEL) switch ((0, i.OoC)(a.Fq), t.skuId) {
       case l.SL:
-        a.A.open(e, o.BEX.TAG, o.JJy.GUILD_POWERUPS_OVERVIEW_CARD);
+        s.A.open(e, o.BEX.TAG, o.JJy.GUILD_POWERUPS_OVERVIEW_CARD);
         return;
       case l.aN:
-        a.A.open(e, o.BEX.ROLES, o.JJy.GUILD_POWERUPS_OVERVIEW_CARD);
+        s.A.open(e, o.BEX.ROLES, o.JJy.GUILD_POWERUPS_OVERVIEW_CARD);
         return;
       case l.FB:
-        a.A.open(e, o.BEX.BOOST_PERKS, o.JJy.GUILD_POWERUPS_OVERVIEW_CARD, o.nd0.BOOST_PERKS_VANITY_URL);
+        s.A.open(e, o.BEX.BOOST_PERKS, o.JJy.GUILD_POWERUPS_OVERVIEW_CARD, o.nd0.BOOST_PERKS_VANITY_URL);
         return;
       case l.jF:
       case l.OJ:
-        (0, i.s7G)(), a.A.open(e, o.BEX.TAG, o.JJy.GUILD_POWERUPS_OVERVIEW_CARD);
+        (0, i.s7G)(), s.A.open(e, o.BEX.TAG, o.JJy.GUILD_POWERUPS_OVERVIEW_CARD);
         return;
       default:
         return
     }
   }, [e, t]);
-  return t.type === s.o9.PERK ? n : true
+  return t.type === a.o9.PERK ? n : true
 }

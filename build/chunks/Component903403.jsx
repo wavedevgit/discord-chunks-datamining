@@ -1,8 +1,8 @@
 /** Chunk was on 59275 **/
-/** chunk id: 903403, original params: e,t,l (module,exports,require) **/
+/** chunk id: 903403, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,43 +19,43 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk68763 = require("./68763.js");
 
-function h(e) {
+function b(e) {
   let {
     category: t
-  } = e, l = (0, i.bG)([c.A], () => c.A.useReducedMotion), s = (0, i.bG)([d.A], () => d.A.isFocused()), {
-    catalogBannerStatic: f,
-    catalogBannerAnimated: h,
-    catalogBannerRive: E
-  } = (0, g.MV)(t), v = r.useRef(null), A = null != E;
-  return (0, n.jsxs)("div", {
-    ref: v,
-    className: a()(p.sW, {
-      [p.by]: A
+  } = e, n = (0, i.bG)([c.A], () => c.A.useReducedMotion), s = (0, i.bG)([d.A], () => d.A.isFocused()), {
+    catalogBannerStatic: g,
+    catalogBannerAnimated: b,
+    catalogBannerRive: h
+  } = (0, p.MV)(t), E = l.useRef(null), v = null != h;
+  return (0, r.jsxs)("div", {
+    ref: E,
+    className: a()(_.sW, {
+      [_.by]: v
     }),
-    children: [A ? (0, n.jsx)(o._, {
-      src: E,
+    children: [v ? (0, r.jsx)(o._, {
+      src: h,
       fit: "cover",
       alignment: "center-left",
       style: {
         width: "100%",
         height: "100%"
       },
-      eventTargetRef: v,
+      eventTargetRef: E,
       autoplay: true
-    }) : (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)("img", {
-        className: p.ze,
-        src: f,
+    }) : (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)("img", {
+        className: _.ze,
+        src: g,
         alt: t.name
-      }), null != h && !l && s && (0, n.jsx)(u.A, {
-        src: h,
-        className: p.tr,
+      }), null != b && !n && s && (0, r.jsx)(u.A, {
+        src: b,
+        className: _.tr,
         autoPlay: true,
         loop: true
       })]
-    }), (0, n.jsx)(b.A, {
+    }), (0, r.jsx)(f.A, {
       category: t,
-      className: p.v0,
+      className: _.v0,
       daysRemainingText: m.t["8gsP5M"]
     })]
   })

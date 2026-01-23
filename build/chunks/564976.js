@@ -27,18 +27,18 @@ let _ = {
       m = true === h || h,
       g = n.altAxis,
       E = true !== g && g,
-      b = n.boundary,
-      y = n.rootBoundary,
+      y = n.boundary,
+      b = n.rootBoundary,
       O = n.altBoundary,
-      A = n.padding,
-      v = n.tether,
-      S = true === v || v,
-      I = n.tetherOffset,
-      T = true === I ? 0 : I,
+      v = n.padding,
+      A = n.tether,
+      I = true === A || A,
+      S = n.tetherOffset,
+      T = true === S ? 0 : S,
       C = (0, u.A)(t, {
-        boundary: b,
-        rootBoundary: y,
-        padding: A,
+        boundary: y,
+        rootBoundary: b,
+        padding: v,
         altBoundary: O
       }),
       N = (0, i.A)(t.placement),
@@ -72,11 +72,11 @@ let _ = {
           Y = x[P],
           W = Y + C[F],
           K = Y - C[B],
-          z = S ? -j[H] / 2 : 0,
+          z = I ? -j[H] / 2 : 0,
           q = R === r.ni ? L[H] : j[H],
           X = R === r.ni ? -j[H] : -L[H],
           Z = t.elements.arrow,
-          Q = S && Z ? (0, l.A)(Z) : {
+          Q = I && Z ? (0, l.A)(Z) : {
             width: 0,
             height: 0
           },
@@ -91,7 +91,7 @@ let _ = {
           es = null != (V = null == U ? true : U[P]) ? V : 0,
           eo = Y + en - es - ea,
           el = Y + er - es,
-          ec = (0, o.u)(S ? (0, p.jk)(W, eo) : W, Y, S ? (0, p.T9)(K, el) : K);
+          ec = (0, o.u)(I ? (0, p.jk)(W, eo) : W, Y, I ? (0, p.T9)(K, el) : K);
         x[P] = ec, G[P] = ec - Y
       }
       if (E) {
@@ -103,9 +103,9 @@ let _ = {
           em = ep - C[ef],
           eg = false !== [r.Mn, r.kb].indexOf(N),
           eE = null != (eu = null == U ? true : U[D]) ? eu : 0,
-          eb = eg ? eh : ep - L[e_] - j[e_] - eE + k.altAxis,
-          ey = eg ? ep + L[e_] + j[e_] - eE - k.altAxis : em,
-          eO = S && eg ? (0, o.P)(eb, ep, ey) : (0, o.u)(S ? eb : eh, ep, S ? ey : em);
+          ey = eg ? eh : ep - L[e_] - j[e_] - eE + k.altAxis,
+          eb = eg ? ep + L[e_] + j[e_] - eE - k.altAxis : em,
+          eO = I && eg ? (0, o.P)(ey, ep, eb) : (0, o.u)(I ? ey : eh, ep, I ? eb : em);
         x[D] = eO, G[D] = eO - ep
       }
       t.modifiersData[_] = G

@@ -29,7 +29,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,20 +54,20 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = {
+let v = {
     hiddenSurveys: {},
     surveyOverride: null,
     lastFetched: null,
     lastSeen: null,
     lastActionTriggered: null
   },
-  v = A,
-  S = false,
+  A = v,
   I = false,
+  S = false,
   T = {},
   C = null,
   N = false,
@@ -80,11 +80,11 @@ var D = function(e) {
 let x = new Set(Object.values(D));
 
 function L() {
-  return null == v.lastFetched || Date.now() - v.lastFetched >= R
+  return null == A.lastFetched || Date.now() - A.lastFetched >= R
 }
 
 function j() {
-  !N && (L() || null != v.surveyOverride) && (N = true, (0, u.BC)(v.surveyOverride, true))
+  !N && (L() || null != A.surveyOverride) && (N = true, (0, u.BC)(A.surveyOverride, true))
 }
 
 function M(e) {
@@ -149,9 +149,9 @@ function V(e) {
     survey: t,
     isActionTriggered: n
   } = e;
-  N = false, v.lastFetched = Date.now(), n && (v.lastActionTriggered = Date.now()), null == v.hiddenSurveys && (v.hiddenSurveys = {});
+  N = false, A.lastFetched = Date.now(), n && (A.lastActionTriggered = Date.now()), null == A.hiddenSurveys && (A.hiddenSurveys = {});
   let r = null != t,
-    i = r && null == v.hiddenSurveys[t.key],
+    i = r && null == A.hiddenSurveys[t.key],
     a = r && M(t);
   G(P);
   let s = false;
@@ -162,26 +162,26 @@ function F(e) {
   let {
     id: t
   } = e;
-  v.surveyOverride = t, null != t && delete v.hiddenSurveys[t], (0, u.BC)(v.surveyOverride, true)
+  A.surveyOverride = t, null != t && delete A.hiddenSurveys[t], (0, u.BC)(A.surveyOverride, true)
 }
 
 function B() {
-  S = true
+  I = true
 }
 
 function H() {
-  I = true
+  S = true
 }
 
 function Y(e) {
   let {
     key: t
   } = e;
-  v.hiddenSurveys[t] = true, C = null, T = null != T ? T : {}, delete T[t]
+  A.hiddenSurveys[t] = true, C = null, T = null != T ? T : {}, delete T[t]
 }
 
 function W() {
-  v.hiddenSurveys = {}
+  A.hiddenSurveys = {}
 }
 
 function K(e) {
@@ -202,40 +202,40 @@ function q() {
 }
 
 function X() {
-  v.lastSeen = Date.now()
+  A.lastSeen = Date.now()
 }
 class Z extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    this.waitFor(f.A, p.A, _.A, h.A, m.default), v = null != e ? e : A, this.syncWith([h.A], q)
+    this.waitFor(f.A, p.A, _.A, h.A, m.default), A = null != e ? e : v, this.syncWith([h.A], q)
   }
   getState() {
-    return v
+    return A
   }
   getCurrentSurvey() {
     return L() ? null : C
   }
   getSurveyOverride() {
-    return v.surveyOverride
+    return A.surveyOverride
   }
   getLastSeenTimestamp() {
-    return v.lastSeen
+    return A.lastSeen
   }
   shouldAllowSurveyAction() {
     var e;
-    return Date.now() - (null != (e = v.lastActionTriggered) ? e : 0) >= w
+    return Date.now() - (null != (e = A.lastActionTriggered) ? e : 0) >= w
   }
 }
 E(Z, "displayName", "SurveyStore"), E(Z, "persistKey", "SurveyStore"), E(Z, "migrations", [e => {
-  let t = b({}, e);
+  let t = y({}, e);
   return delete t.validSurveys, delete t.currentSurvey, delete t.iosIsPushNotificationClicked, delete t.iosIsInviteShown, delete t.iosFirstRunDate, t
 }, e => {
   var t;
-  return O(b({}, e), {
+  return O(y({}, e), {
     lastSeen: null != (t = e.lastSeen) ? t : null
   })
 }, e => {
   var t;
-  return O(b({}, e), {
+  return O(y({}, e), {
     hiddenSurveys: null != (t = e.hiddenSurveys) ? t : {}
   })
 }]);

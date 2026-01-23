@@ -2,14 +2,14 @@
 /** chunk id: 907445, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => m
+  A: () => f
 });
 var r, Chunk133977 = require("./133977.js"),
   l = require.n(Chunk133977),
   Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function c(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,11 +17,11 @@ function c(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = ["pct_retained", "new_members", "visitors", "communicators"],
+let c = ["pct_retained", "new_members", "visitors", "communicators"],
   d = {},
   u = null;
 
-function f(e) {
+function g(e) {
   let {
     guildId: t,
     stats: n
@@ -31,7 +31,7 @@ function f(e) {
     i = {},
     s = n[0],
     a = n[1];
-  null != s && o.forEach(e => {
+  null != s && c.forEach(e => {
     if (null != s[e]) {
       let t = l()(e);
       null != a && 0 !== a[e] && (r["".concat(t, "Change")] = (s[e] - a[e]) * 100 / a[e]), i[t] = s[e]
@@ -43,20 +43,20 @@ function f(e) {
       "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
       }))), r.forEach(function(t) {
-        c(e, t, n[t])
+        o(e, t, n[t])
       })
     }
     return e
   }({}, i, r, d[t])
 }
 
-function g(e) {
+function m(e) {
   let {
     error: t
   } = e;
   u = t.code
 }
-class b extends(r = Chunk311907.Ay.Store) {
+class p extends(r = Chunk311907.Ay.Store) {
   getOverviewAnalytics(e) {
     return d[e]
   }
@@ -64,12 +64,12 @@ class b extends(r = Chunk311907.Ay.Store) {
     return u
   }
 }
-c(b, "displayName", "GuildSettingsAnalyticsStore");
-let m = new b(Chunk73153.h, {
-  GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_SUCCESS: f,
-  GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_SUCCESS: f,
-  GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_SUCCESS: f,
-  GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_FAILURE: g,
-  GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_FAILURE: g,
-  GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_FAILURE: g
+o(p, "displayName", "GuildSettingsAnalyticsStore");
+let f = new p(Chunk73153.h, {
+  GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_SUCCESS: g,
+  GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_SUCCESS: g,
+  GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_SUCCESS: g,
+  GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_FAILURE: m,
+  GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_FAILURE: m,
+  GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_FAILURE: m
 })

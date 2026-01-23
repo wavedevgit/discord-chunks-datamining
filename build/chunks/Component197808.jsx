@@ -73,7 +73,7 @@ class U extends Chunk64700.PureComponent {
       activityPIPWindow: p,
       chatOpen: _,
       callChatSidebarWidth: h
-    } = this.props, m = document.body.style.getPropertyValue("--custom-guild-sidebar-width"), b = "" !== m ? parseInt(m, 10) : R.MdR, y = d.width - b - (_ ? h : 0), O = null != p, A = !f && O && _ && y < 550;
+    } = this.props, m = document.body.style.getPropertyValue("--custom-guild-sidebar-width"), y = "" !== m ? parseInt(m, 10) : R.MdR, b = d.width - y - (_ ? h : 0), O = null != p, v = !f && O && _ && b < 550;
     return (0, r.jsxs)(E.ic, {
       children: [(0, r.jsx)(g.A, {
         pictureInPictureComponents: j,
@@ -91,7 +91,7 @@ class U extends Chunk64700.PureComponent {
         resizeConfig: M,
         getDockedRectPositionY: u
       }), (0, r.jsx)(E.Md, {
-        className: A ? x.ah : true
+        className: v ? x.ah : true
       })]
     })
   }
@@ -109,39 +109,39 @@ let G = Chunk311907.Ay.connectStores([Chunk869146.A, Chunk933958.Ay, Chunk531685
       popoutWindowKey: g,
       popoutWindowHasTitleBar: E = false
     } = e,
-    v = y.A.getWindowOpen(R.MLl.CHANNEL_CALL_POPOUT),
-    x = y.A.getWindowOpen(R.MLl.ACTIVITY_POPOUT),
+    A = b.A.getWindowOpen(R.MLl.CHANNEL_CALL_POPOUT),
+    x = b.A.getWindowOpen(R.MLl.ACTIVITY_POPOUT),
     L = o.Ay.getCurrentEmbeddedActivity(),
     j = (0, c.H)(null == L ? true : L.location),
-    M = null != L && !(0, u.A)(j, S.A, T.A),
+    M = null != L && !(0, u.A)(j, I.A, T.A),
     U = o.Ay.getActivityPanelMode(),
     G = M && U === w.Gd.PANEL,
     V = null != L && null != j && (null == (n = f.A.getSelectedParticipant(j)) ? true : n.type) === P.lp.ACTIVITY,
     F = _.A.getConnectedFrame(),
     B = _.A.getFrameLayoutMode() === D.y.FOCUSED,
     H = null != g,
-    Y = H ? y.A.getWindow(g) : null,
-    W = !!H && y.A.isWindowFullScreen(g),
+    Y = H ? b.A.getWindow(g) : null,
+    W = !!H && b.A.isWindowFullScreen(g),
     K = C.A.windowSize();
   H && (K = null == Y ? K : {
     width: Y.innerWidth,
     height: Y.innerHeight
   });
   let z = H ? R.BRT.POPOUT : R.BRT.APP,
-    q = e => H && (0, b.q)({
+    q = e => H && (0, y.q)({
       withTitleBar: E,
       isFullScreen: W
     }) ? e - (0, p.LI)({
       isPopoutWindow: H
     }) : e;
-  m = null != L && x || H && M || H && null != F ? null : H || !v || M || null != F ? null != L && G ? null != (r = I.A.pipActivityWindow) ? r : I.A.pipVideoWindow : null != F && B ? null != (i = null != (a = I.A.pipFrameWindow) ? a : I.A.pipVideoWindow) ? i : I.A.pipActivityWindow : null != (s = null != (d = null != (h = I.A.pipHavenWindow) ? h : I.A.pipVideoWindow) ? d : I.A.pipActivityWindow) ? s : I.A.pipFrameWindow : null;
-  let X = Array.from(I.A.pipWindows.values()),
-    Z = I.A.pipWidth(P.R8.VIDEO),
+  m = null != L && x || H && M || H && null != F ? null : H || !A || M || null != F ? null != L && G ? null != (r = S.A.pipActivityWindow) ? r : S.A.pipVideoWindow : null != F && B ? null != (i = null != (a = S.A.pipFrameWindow) ? a : S.A.pipVideoWindow) ? i : S.A.pipActivityWindow : null != (s = null != (d = null != (h = S.A.pipHavenWindow) ? h : S.A.pipVideoWindow) ? d : S.A.pipActivityWindow) ? s : S.A.pipFrameWindow : null;
+  let X = Array.from(S.A.pipWindows.values()),
+    Z = S.A.pipWidth(P.R8.VIDEO),
     Q = X.find(e => e.component === R.o1q.VIDEO),
     $ = X.find(e => e.component === R.o1q.ACTIVITY),
     J = X.find(e => e.component === R.o1q.FRAME),
     ee = [X.find(e => e.component === R.o1q.HAVEN), Q, $, J].filter(N.Vq),
-    et = A.Ay.callChatSidebarWidth,
+    et = v.Ay.callChatSidebarWidth,
     en = T.A.getVoiceChannelId(),
     er = T.A.getChannelId() === en,
     ei = null != en && f.A.getChatOpen(en),
@@ -155,7 +155,7 @@ let G = Chunk311907.Ay.connectStores([Chunk869146.A, Chunk933958.Ay, Chunk531685
     maxX: K.width - (eo ? et : 0),
     maxY: K.height,
     theme: O.A.theme,
-    dockedRect: I.A.getDockedRect(null != (t = null == m ? true : m.id) ? t : ""),
+    dockedRect: S.A.getDockedRect(null != (t = null == m ? true : m.id) ? t : ""),
     getDockedRectPositionY: q,
     appContext: z,
     roundCorners: !es,

@@ -10,7 +10,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk411335 = require("./411335.js"),
   Chunk985018 = require("./985018.jsx");
 
-function c(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,7 +29,7 @@ function c(e) {
   return e
 }
 
-function o(e, t) {
+function c(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -69,16 +69,16 @@ function u(e) {
   let {
     rule: n,
     onChangeRule: a
-  } = e, [u, f] = i.useState(new Set(null == n || null == (t = n.triggerMetadata) ? true : t.presets)), g = i.useMemo(() => e => {
-    a(o(c({}, n), {
-      triggerMetadata: o(c({}, n.triggerMetadata), {
+  } = e, [u, g] = i.useState(new Set(null == n || null == (t = n.triggerMetadata) ? true : t.presets)), m = i.useMemo(() => e => {
+    a(c(o({}, n), {
+      triggerMetadata: c(o({}, n.triggerMetadata), {
         presets: e
       })
     }))
-  }, [a, n]), b = i.useCallback(e => {
+  }, [a, n]), p = i.useCallback(e => {
     let t = e.map(e => e);
-    f(new Set(t)), g(t)
-  }, [g]), m = i.useMemo(() => [{
+    g(new Set(t)), m(t)
+  }, [m]), f = i.useMemo(() => [{
     label: d(s.vY.PROFANITY).headerText,
     description: d(s.vY.PROFANITY).subtitleText,
     value: String(s.vY.PROFANITY)
@@ -94,8 +94,8 @@ function u(e) {
   return (0, r.jsx)("div", {
     children: (0, r.jsx)(l.$QX, {
       selectedValues: Array.from(u).map(String),
-      onChange: b,
-      options: m
+      onChange: p,
+      options: f
     })
   })
 }

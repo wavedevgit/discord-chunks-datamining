@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => d,
-  q: () => o
+  q: () => c
 }), require("./896048.js"), require("./321073.js"), require("./638769.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -13,12 +13,12 @@ var Chunk311907 = require("./311907.js"),
   Chunk64749 = require("./64749.jsx"),
   Chunk652215 = require("./652215.js");
 
-function o(e, t) {
+function c(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = arguments.length > 3 && true !== arguments[3] && arguments[3];
   return (0, i.yK)([s.Ay], () => {
-    let i = s.Ay.getChannels(e)[c.rbe.GUILD_CATEGORY],
-      o = [...s.Ay.getChannels(e)[s.I6], ...s.Ay.getChannels(e)[s.vM]],
+    let i = s.Ay.getChannels(e)[o.rbe.GUILD_CATEGORY],
+      c = [...s.Ay.getChannels(e)[s.I6], ...s.Ay.getChannels(e)[s.vM]],
       d = [],
       u = {};
     return i.forEach(e => {
@@ -30,7 +30,7 @@ function o(e, t) {
         channel: t,
         comparator: n
       }))
-    }), o.forEach(e => {
+    }), c.forEach(e => {
       let {
         channel: i,
         comparator: s
@@ -75,12 +75,12 @@ function d(e) {
     onChange: i,
     placeholder: l,
     includeRoleRestrictedPrivateChannels: s = false,
-    includeStageVoiceChannels: c = false,
+    includeStageVoiceChannels: o = false,
     helperText: d,
     className: u
-  } = e, f = o(t, n, s, c);
+  } = e, g = c(t, n, s, o);
   return (0, r.jsx)(a.Ay, {
-    channelRows: f,
+    channelRows: g,
     guildId: t,
     selectedChannelIds: n,
     onChange: (e, t) => i(e),

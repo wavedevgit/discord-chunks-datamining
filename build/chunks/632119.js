@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Bb: () => _,
-  C$: () => y,
+  C$: () => b,
   Jz: () => O,
   Ys: () => m,
   fu: () => h
@@ -67,7 +67,7 @@ let f = {
     if (null != t && t !== i.TO.UNSET_EXPLICIT_CONTENT_REDACTION) return t;
     let c = l.default.getCurrentUser(),
       u = (0, s.o)("resolveExplicitContentSettingWithDefaults");
-    return (0, a.To)(r.p.SENSITIVE_CONTENT) || u ? b({
+    return (0, a.To)(r.p.SENSITIVE_CONTENT) || u ? y({
       isDm: n,
       isFriend: o
     }) : (null == c ? true : c.nsfwAllowed) === false ? E({
@@ -96,14 +96,14 @@ let f = {
     let r = o.cj.getSetting();
     return n ? _[r] : h[r]
   },
-  b = e => {
+  y = e => {
     let {
       isDm: t = false,
       isFriend: n = false
     } = e;
     return t && !n ? i.TO.BLOCK : i.TO.BLUR
   },
-  y = e => {
+  b = e => {
     let t = null != e ? e : o.Vd.getSetting();
     return {
       explicitContentGuilds: m({
@@ -121,6 +121,6 @@ let f = {
     }
   },
   O = e => {
-    let t = y();
+    let t = b();
     o.Vd.updateSetting(d({}, t, e))
   }

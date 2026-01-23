@@ -22,7 +22,7 @@ function d(e) {
     intervalCount: f,
     currency: p,
     defaultExpanded: _ = false
-  } = e, [h, m] = i.useState(_), g = i.useMemo(() => a.reduce((e, t) => e + t.amount, 0), [a]), E = (0, l.$g)(g, p), b = (0, l.CE)(E, d, f), y = (0, r.jsxs)(c.h, {
+  } = e, [h, m] = i.useState(_), g = i.useMemo(() => a.reduce((e, t) => e + t.amount, 0), [a]), E = (0, l.$g)(g, p), y = (0, l.CE)(E, d, f), b = (0, r.jsxs)(c.h, {
     label: t,
     defaultExpanded: _,
     isDisabled: a.length <= 0,
@@ -30,7 +30,7 @@ function d(e) {
     collapsedContent: (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
       color: "text-subtle",
-      children: b
+      children: y
     }),
     children: [a.map(e => {
       let {
@@ -50,7 +50,7 @@ function d(e) {
       className: u.m
     }), (0, r.jsx)(c.i, {
       label: null != n ? n : t,
-      value: b,
+      value: y,
       color: "text-strong"
     })]
   });
@@ -58,6 +58,6 @@ function d(e) {
     className: s()({
       [u.k]: h
     }),
-    children: y
+    children: b
   })
 }

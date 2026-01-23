@@ -1,7 +1,7 @@
 /** Chunk was on 7133 **/
-/** chunk id: 580812, original params: e,t,n (module,exports,require) **/
+/** chunk id: 580812, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,59 +16,59 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk383110 = require("./383110.js");
 
-function p(e) {
+function A(t) {
   let {
-    guildId: t,
+    guildId: e,
     messageId: n,
-    transitionState: p,
-    onClose: A
-  } = e, [f, I] = l.useState([]), [E, h] = l.useState(), g = l.useCallback(() => {
-    let e = {
+    transitionState: A,
+    onClose: b
+  } = t, [I, f] = l.useState([]), [E, h] = l.useState(), g = l.useCallback(() => {
+    let t = {
       raid_alert_type: c.TF.JOIN_RAID,
       raid_alert_id: n,
-      false_alarm_type: f.map(e => e.toString()),
+      false_alarm_type: I.map(t => t.toString()),
       false_alarm_other_reason: E,
-      guild_id: t
+      guild_id: e
     };
-    (0, s.zV)(d.HAw.GUILD_RAID_FEEDBACK, e), (0, o.xE)(t, n, (0, c.W_)(f)), A(), u.A.showSuccessToast(_.OB.SAFETY_FEEDBACK_SUCCESS)
-  }, [A, n, t, E, f]), y = [{
-    label: b.intl.string(b.t.yeaXw5),
+    (0, s.zV)(d.HAw.GUILD_RAID_FEEDBACK, t), (0, o.xE)(e, n, (0, c.W_)(I)), b(), u.A.showSuccessToast(_.OB.SAFETY_FEEDBACK_SUCCESS)
+  }, [b, n, e, E, I]), y = [{
+    label: p.intl.string(p.t.yeaXw5),
     value: c.no.LEGITIMATE_ACTIVITY
   }, {
-    label: b.intl.string(b.t["o++3B8"]),
+    label: p.intl.string(p.t["o++3B8"]),
     value: c.no.DM_SPAM
   }, {
-    label: b.intl.string(b.t.UfHAwZ),
+    label: p.intl.string(p.t.UfHAwZ),
     value: c.no.JOIN_RAID
   }, {
-    label: b.intl.string(b.t.K3UWeR),
+    label: p.intl.string(p.t.K3UWeR),
     value: c.no.OTHER
-  }], D = l.useCallback(e => {
-    I(e)
+  }], D = l.useCallback(t => {
+    f(t)
   }, []);
   return (0, r.jsx)(a.Modal, {
-    onClose: A,
-    transitionState: p,
-    title: b.intl.string(b.t["1zmw/H"]),
-    subtitle: b.intl.string(b.t.nF79oO),
+    onClose: b,
+    transitionState: A,
+    title: p.intl.string(p.t["1zmw/H"]),
+    subtitle: p.intl.string(p.t.nF79oO),
     actions: [{
-      text: b.intl.string(b.t["ETE/oC"]),
-      onClick: A,
+      text: p.intl.string(p.t["ETE/oC"]),
+      onClick: b,
       variant: "secondary"
     }, {
-      text: b.intl.string(b.t.Gh3A0O),
+      text: p.intl.string(p.t.Gh3A0O),
       onClick: g
     }],
     children: (0, r.jsxs)("div", {
       className: O.fF,
       children: [(0, r.jsx)(i.$QX, {
-        selectedValues: f,
+        selectedValues: I,
         onChange: D,
         options: y
-      }), f.includes(c.no.OTHER) && (0, r.jsx)("div", {
+      }), I.includes(c.no.OTHER) && (0, r.jsx)("div", {
         className: O.Q8,
         children: (0, r.jsx)(i.fs1, {
-          placeholder: b.intl.string(b.t["PAM+JR"]),
+          placeholder: p.intl.string(p.t["PAM+JR"]),
           onChange: h,
           value: E,
           autoFocus: true

@@ -19,12 +19,12 @@ let u = e => {
     ticking: m,
     time: g,
     hasPlayedThrough: E,
-    setHasPlayedThrough: b,
-    maxLoops: y,
+    setHasPlayedThrough: y,
+    maxLoops: b,
     loopEnd: O,
-    bannerAdjustment: A,
-    imageData: v
-  } = e, S = true, I = 0, T = (0, s.gm)() && null != _.loopDelay && _.loopDelay > 0 && (null == v ? true : v.src) != null, [C, N] = i.useState("reset"), R = i.useRef(null != (t = null == v ? true : v.src) ? t : _.src), [w, P] = i.useState(null != (n = null == v ? true : v.src) ? n : _.src);
+    bannerAdjustment: v,
+    imageData: A
+  } = e, I = true, S = 0, T = (0, s.gm)() && null != _.loopDelay && _.loopDelay > 0 && (null == A ? true : A.src) != null, [C, N] = i.useState("reset"), R = i.useRef(null != (t = null == A ? true : A.src) ? t : _.src), [w, P] = i.useState(null != (n = null == A ? true : A.src) ? n : _.src);
   i.useEffect(() => {
     if (!T || "layer" === C) return;
     let e = new AbortController;
@@ -36,7 +36,7 @@ let u = e => {
           }),
           r = await n.blob();
         if (e.signal.aborted) return;
-        t !== (null == v ? true : v.src) && URL.revokeObjectURL(t), R.current = URL.createObjectURL(r), P(() => R.current)
+        t !== (null == A ? true : A.src) && URL.revokeObjectURL(t), R.current = URL.createObjectURL(r), P(() => R.current)
       } catch (e) {
         if ("AbortError" === e.name) return null;
         o.A.captureException(e)
@@ -44,21 +44,21 @@ let u = e => {
     })(), () => {
       e.abort()
     }
-  }, [C, T, P, null == v ? true : v.src]), i.useEffect(() => () => {
-    R.current !== (null == v ? true : v.src) && URL.revokeObjectURL(R.current)
+  }, [C, T, P, null == A ? true : A.src]), i.useEffect(() => () => {
+    R.current !== (null == A ? true : A.src) && URL.revokeObjectURL(R.current)
   }, []);
   let D = e => {
     (0, s.gm)() && e !== C && N(e)
   };
-  if (m || (S = false), g < _.start && (S = false), !_.loop && g > _.duration + _.start && (S = false), h === a.l.ANIMATION_TYPE_PERSISTENT && !E && null != y && g >= O && b(true), _.loop && true !== _.loopDelay && _.loopDelay > 0) {
+  if (m || (I = false), g < _.start && (I = false), !_.loop && g > _.duration + _.start && (I = false), h === a.l.ANIMATION_TYPE_PERSISTENT && !E && null != b && g >= O && y(true), _.loop && true !== _.loopDelay && _.loopDelay > 0) {
     let e = _.duration + _.loopDelay;
-    I = Math.floor((g - _.start) / e), g - _.start - I * e > _.duration && (h === a.l.ANIMATION_TYPE_INTERMITTENT && !E && null != y && I >= y && b(true), S = false)
+    S = Math.floor((g - _.start) / e), g - _.start - S * e > _.duration && (h === a.l.ANIMATION_TYPE_INTERMITTENT && !E && null != b && S >= b && y(true), I = false)
   }
-  return S ? (D("layer"), (0, r.jsx)("img", {
+  return I ? (D("layer"), (0, r.jsx)("img", {
     src: w,
     className: c.QZ,
     style: {
-      top: (null != (u = null == (f = _.position) ? true : f.y) ? u : 0) - A,
+      top: (null != (u = null == (f = _.position) ? true : f.y) ? u : 0) - v,
       left: null != (d = null == (p = _.position) ? true : p.x) ? d : 0
     },
     alt: "",

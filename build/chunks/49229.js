@@ -2,7 +2,7 @@
 /** chunk id: 49229, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 }), require("./896048.js"), require("./747238.js");
 var Chunk562465 = require("./562465.js"),
   Chunk582754 = require("./582754.js"),
@@ -21,7 +21,7 @@ var Chunk562465 = require("./562465.js"),
   Chunk235627 = require("./235627.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,14 +30,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -47,11 +47,11 @@ function O(e) {
   (0, h.Z_)(), _.A.show(e)
 }
 
-function A() {
+function v() {
   (0, h.Z_)(), (0, l.default)()
 }
 
-function v(e, t, n) {
+function A(e, t, n) {
   let {
     status: r,
     body: i
@@ -77,7 +77,7 @@ function v(e, t, n) {
         break
       }
     default:
-      if (a === m.t02.USER_QUARANTINED) A();
+      if (a === m.t02.USER_QUARANTINED) v();
       else if ((0, u.O)(r, a)) break;
       else if (a === m.t02.RELATIONSHIP_INVALID_NO_CONFIRMATION) break;
       else if (0 === t) {
@@ -91,7 +91,7 @@ function v(e, t, n) {
   }
   throw e
 }
-let S = {
+let I = {
     sendRequest(e) {
       let {
         discordTag: t,
@@ -101,7 +101,7 @@ let S = {
       } = e, [s, o] = t.split("#");
       return r.Bo.post({
         url: m.Rsh.USER_RELATIONSHIPS(),
-        body: y({
+        body: b({
           username: s,
           discriminator: parseInt(o)
         }, i),
@@ -109,7 +109,7 @@ let S = {
         oldFormErrors: true,
         rejectWithError: false
       }).catch(e => {
-        v(e, a, t)
+        A(e, a, t)
       })
     },
     addRelationship(e, t) {
@@ -123,7 +123,7 @@ let S = {
       } = e, c = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 0, u = d.default.getUser(n);
       return r.Bo.put({
         url: m.Rsh.USER_RELATIONSHIP(n),
-        body: y({
+        body: b({
           type: a,
           from_friend_suggestion: s,
           confirm_stranger_request: o
@@ -133,31 +133,31 @@ let S = {
         rejectWithError: false
       }).then(() => {
         null == t || t()
-      }).catch(e => (v(e, c, p.Ay.getUserTag(u)), Promise.reject(e)))
+      }).catch(e => (A(e, c, p.Ay.getUserTag(u)), Promise.reject(e)))
     },
     acceptFriendRequest(e) {
       function t() {
         i.OR.announce(E.intl.string(E.t["3goNa5"]))
       }
-      return S.addRelationship(e, t)
+      return I.addRelationship(e, t)
     },
     cancelFriendRequest(e, t) {
       function n() {
         i.OR.announce(E.intl.string(E.t.pLUaxR))
       }
-      return S.removeRelationship(e, t, n)
+      return I.removeRelationship(e, t, n)
     },
     removeFriend(e, t) {
       function n() {
         i.OR.announce(E.intl.string(E.t.vGSLa2))
       }
-      S.removeRelationship(e, t, n)
+      I.removeRelationship(e, t, n)
     },
     blockUser(e, t) {
       function n() {
         i.OR.announce(E.intl.string(E.t.mU0Vrp))
       }
-      return S.addRelationship({
+      return I.addRelationship({
         userId: e,
         context: t,
         type: m.eA$.BLOCKED
@@ -167,7 +167,7 @@ let S = {
       function n() {
         i.OR.announce(E.intl.string(E.t["9t1au7"]))
       }
-      return S.removeRelationship(e, t, n)
+      return I.removeRelationship(e, t, n)
     },
     removeRelationship: (e, t, n) => r.Bo.del({
       url: m.Rsh.USER_RELATIONSHIP(e),
@@ -257,4 +257,4 @@ let S = {
       c.A.showFailedToast(), i.OR.announce(E.intl.string(E.t.n6Jo3E))
     })
   },
-  I = S
+  S = I

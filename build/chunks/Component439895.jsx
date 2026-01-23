@@ -1,7 +1,7 @@
 /** Chunk was on 22477 **/
 /** chunk id: 439895, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => g
 }), require("./896048.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,7 +15,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk751304 = require("./751304.jsx"),
   Chunk61750 = require("./61750.jsx"),
   Chunk841015 = require("./841015.js");
-let f = e => {
+let x = e => {
     let [t, n] = l.useState(0);
     return l.useLayoutEffect(() => {
       let e = d.A.getPurchase;
@@ -44,65 +44,65 @@ let f = e => {
       }({}, e), t)
     })
   },
-  x = () => {
-    let e = (0, i.bG)([o.default], () => o.default.getCurrentUser()),
-      t = (0, i.bG)([c.A], () => c.A.categories),
-      n = (0, i.bG)([d.A], () => d.A.purchases),
-      m = (0, i.bG)([c.A], () => c.A.lastSuccessfulFetch),
-      x = t.size > 0 && n.size > 0 && null != m,
+  g = () => {
+    let e = (0, r.bG)([o.default], () => o.default.getCurrentUser()),
+      t = (0, r.bG)([c.A], () => c.A.categories),
+      n = (0, r.bG)([d.A], () => d.A.purchases),
+      m = (0, r.bG)([c.A], () => c.A.lastSuccessfulFetch),
+      g = t.size > 0 && n.size > 0 && null != m,
       {
-        isFetching: b,
-        categories: g
+        isFetching: f,
+        categories: b
       } = (0, u.Ay)({
         logPerf: false,
         stalePurchasesOK: true,
-        noOp: x
+        noOp: g
       }),
-      v = x ? t : g,
-      j = x || !b && v.size > 0,
-      [y, _] = l.useState(""),
+      v = g ? t : b,
+      j = g || !f && v.size > 0,
+      [_, y] = l.useState(""),
       [A, C] = l.useState(null),
       [S, O] = l.useState(null);
     return (l.useEffect(() => {
-      if ("" === y.trim() || !j) {
+      if ("" === _.trim() || !j) {
         C(null), O(null);
         return
       }
-      let e = c.A.getProduct(y),
-        t = c.A.getCategoryForProduct(y);
+      let e = c.A.getProduct(_),
+        t = c.A.getCategoryForProduct(_);
       null != e && null != t ? (C(e), O(t)) : (C(null), O(null))
-    }, [y, j]), b) ? (0, a.jsx)(r.Text, {
+    }, [_, j]), f) ? (0, a.jsx)(i.Text, {
       variant: "text-md/normal",
       children: "Loading categories and collectibles..."
-    }) : null == e ? (0, a.jsx)(r.Text, {
+    }) : null == e ? (0, a.jsx)(i.Text, {
       variant: "text-md/normal",
       children: "No user found"
     }) : (0, a.jsxs)("div", {
       className: h.kL,
       children: [(0, a.jsxs)("div", {
         className: h.uW,
-        children: [(0, a.jsx)(r.Heading, {
+        children: [(0, a.jsx)(i.Heading, {
           variant: "heading-lg/semibold",
           children: "Product Configuration"
         }), (0, a.jsxs)("div", {
           className: h.qp,
-          children: [(0, a.jsx)(r.Text, {
+          children: [(0, a.jsx)(i.Text, {
             variant: "text-md/semibold",
             className: h.NB,
             children: "Primary Product SKU ID"
-          }), (0, a.jsx)(r.ksK, {
-            value: y,
-            onChange: _,
+          }), (0, a.jsx)(i.ksK, {
+            value: _,
+            onChange: y,
             placeholder: "Enter product SKU ID"
-          }), !j && "" !== y.trim() && (0, a.jsx)(r.Text, {
+          }), !j && "" !== _.trim() && (0, a.jsx)(i.Text, {
             variant: "text-sm/normal",
             className: h.KQ,
             children: "Loading products..."
-          }), j && "" !== y.trim() && null == A && (0, a.jsx)(r.Text, {
+          }), j && "" !== _.trim() && null == A && (0, a.jsx)(i.Text, {
             variant: "text-sm/normal",
             className: h.kc,
             children: "Product not found"
-          }), null != A && (0, a.jsxs)(r.Text, {
+          }), null != A && (0, a.jsxs)(i.Text, {
             variant: "text-sm/normal",
             className: h.xT,
             children: ["Found: ", A.name]
@@ -110,14 +110,14 @@ let f = e => {
         })]
       }), (0, a.jsxs)("div", {
         className: h.uW,
-        children: [(0, a.jsx)(r.Heading, {
+        children: [(0, a.jsx)(i.Heading, {
           variant: "heading-lg/semibold",
           children: "Product Preview"
         }), null != A && null != S ? (0, a.jsxs)("div", {
           className: h.i1,
-          children: [(0, a.jsx)(f, {
+          children: [(0, a.jsx)(x, {
             skuId: A.skuId
-          }), (0, a.jsx)(r.Button, {
+          }), (0, a.jsx)(i.Button, {
             variant: "primary",
             onClick: () => {
               null != A && null != e && (0, p.A)({
@@ -129,7 +129,7 @@ let f = e => {
           })]
         }) : (0, a.jsx)("div", {
           className: h.qf,
-          children: (0, a.jsx)(r.Text, {
+          children: (0, a.jsx)(i.Text, {
             variant: "text-md/normal",
             className: h.X2,
             children: "Enter a valid product SKU ID to see the preview"

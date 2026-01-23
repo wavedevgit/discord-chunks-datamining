@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 766319, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => v
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,66 +23,66 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk281783 = require("./281783.js");
 
-function v(e) {
+function j(e) {
   let t, {
       activity: n,
       channel: i,
-      userId: a
+      userId: s
     } = e,
     u = (0, d.YY)(n.application_id).data,
-    [f, p] = l.useState(false),
-    [b, g] = l.useState(0),
-    m = (0, s.bG)([h.A], () => h.A.getChannelId() !== i.id);
-  async function v() {
-    g(1);
+    [p, h] = l.useState(false),
+    [g, m] = l.useState(0),
+    b = (0, a.bG)([f.A], () => f.A.getChannelId() !== i.id);
+  async function j() {
+    m(1);
     try {
       await c.A.sendActivityInvite({
         type: A.xL.STREAM_REQUEST,
         channelId: i.id,
         activity: n,
-        content: "<@".concat(a, ">"),
+        content: "<@".concat(s, ">"),
         location: "request to stream hover",
-        targetUserId: a
+        targetUserId: s
       })
     } catch (e) {
-      g(0);
+      m(0);
       return
     }
-    g(2)
+    m(2)
   }
-  if (m && (t = O.intl.string(y.default.qRXats)), n.type === A.$pd.PLAYING) {
+  if (b && (t = _.intl.string(y.default.qRXats)), n.type === A.$pd.PLAYING) {
     let e = null == u ? true : u.getIconURL(46);
     return (0, r.jsxs)("div", {
-      className: j.gd,
+      className: O.gd,
       children: [(0, r.jsxs)("div", {
-        className: j.xi,
-        children: [f || null == e ? (0, r.jsx)(o._7Z, {
+        className: O.xi,
+        children: [p || null == e ? (0, r.jsx)(o._7Z, {
           size: "custom",
           width: 46,
           height: 46
         }) : (0, r.jsx)("img", {
           src: e,
           alt: n.name,
-          onError: () => p(true)
+          onError: () => h(true)
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(o.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
-            children: O.intl.string(O.t.BMTj28)
+            children: _.intl.string(_.t.BMTj28)
           }), (0, r.jsx)(o.Text, {
             variant: "text-md/medium",
             children: n.name
           })]
         })]
       }), (0, r.jsx)(o.Button, {
-        loading: 1 === b,
-        disabled: m || 2 === b,
+        loading: 1 === g,
+        disabled: b || 2 === g,
         fullWidth: true,
         size: "sm",
-        text: 2 === b ? O.intl.string(y.default["8HU1M2"]) : O.intl.string(y.default.DKHhec),
-        onClick: v
+        text: 2 === g ? _.intl.string(y.default["8HU1M2"]) : _.intl.string(y.default.DKHhec),
+        onClick: j
       }), null != t && (0, r.jsx)(o.Text, {
-        className: j.H$,
+        className: O.H$,
         variant: "text-xs/normal",
         color: "text-muted",
         children: t
@@ -91,29 +91,29 @@ function v(e) {
   }
 }
 
-function x(e) {
+function v(e) {
   let {
     userId: t,
     channel: n
-  } = e, o = (0, s.bG)([b.default], () => b.default.getUser(t)), c = (0, m.A)(t, n.guild_id), d = (0, g.A)(t, n.id), h = l.useMemo(() => i.uniqWith(c, (e, t) => {
+  } = e, o = (0, a.bG)([g.default], () => g.default.getUser(t)), c = (0, b.A)(t, n.guild_id), d = (0, m.A)(t, n.id), f = l.useMemo(() => i.uniqWith(c, (e, t) => {
     if (e.application_id === t.application_id) returntrue;
-    let n = p.A.getGameByName(e.name),
-      r = p.A.getGameByName(t.name);
+    let n = h.A.getGameByName(e.name),
+      r = h.A.getGameByName(t.name);
     return null != n && n === r || e.name === t.name
-  }), [c]), A = null == o || !d || 0 === h.length;
+  }), [c]), A = null == o || !d || 0 === f.length;
   return ((0, u.A)({
-    type: a.ImpressionTypes.POPOUT,
-    name: a.ImpressionNames.VOICE_USER_ACTIVITY_POPOUT,
+    type: s.ImpressionTypes.POPOUT,
+    name: s.ImpressionNames.VOICE_USER_ACTIVITY_POPOUT,
     properties: {}
   }, {
     disableTrack: A
-  }), A) ? null : (0, r.jsx)(f.A.Provider, {
+  }), A) ? null : (0, r.jsx)(p.A.Provider, {
     value: n.guild_id,
     children: (0, r.jsx)("div", {
-      className: j.zr,
+      className: O.zr,
       children: (0, r.jsx)("div", {
-        className: j.Ci,
-        children: h.map(e => (0, r.jsx)(v, {
+        className: O.Ci,
+        children: f.map(e => (0, r.jsx)(j, {
           activity: e,
           channel: n,
           userId: t

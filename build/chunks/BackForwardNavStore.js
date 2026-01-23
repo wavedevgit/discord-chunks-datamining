@@ -66,10 +66,10 @@ function E(e) {
   h < _.length - 1 && h++
 }
 
-function b(e) {
+function y(e) {
   h > 0 && h--
 }
-class y extends(r = Chunk311907.Ay.Store) {
+class b extends(r = Chunk311907.Ay.Store) {
   initialize() {
     _ = [], h = 0
   }
@@ -89,9 +89,9 @@ class y extends(r = Chunk311907.Ay.Store) {
     return this.canGoForward ? _[h - 1] : null
   }
 }
-u(y, "displayName", "BackForwardNavStore");
-let O = new y(Chunk73153.h, {
+u(b, "displayName", "BackForwardNavStore");
+let O = new b(Chunk73153.h, {
   ROUTE_CHANGED: g,
   GO_BACK: E,
-  GO_FORWARD: b
+  GO_FORWARD: y
 })

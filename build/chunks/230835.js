@@ -2,7 +2,7 @@
 /** chunk id: 230835, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $Y: () => b,
+  $Y: () => y,
   IE: () => m,
   JB: () => _,
   eq: () => E,
@@ -42,7 +42,7 @@ function g() {
       resetGradientAngle: r,
       resetChassisMixAmount: i,
       resetBaseTheme: a
-    } = y(t, e);
+    } = b(t, e);
     c.ko.getState().setAll({
       colors: n,
       gradientAngle: r,
@@ -58,11 +58,11 @@ function E() {
   e !== o.A.theme && m(e)
 }
 
-function b(e, t, n) {
+function y(e, t, n) {
   0 === e.length && n([t]), E()
 }
 
-function y(e, t) {
+function b(e, t) {
   var n, r, i, a;
   let s = l.eh.getSetting().customUserThemeSettings,
     o = d.A.getSavedCustomTheme(),
@@ -88,6 +88,6 @@ function O() {
     resetGradientAngle: u,
     resetChassisMixAmount: d,
     resetBaseTheme: f
-  } = y("reset_button", s);
+  } = b("reset_button", s);
   return JSON.stringify(e) === JSON.stringify(l) && t === d && n === u && a === f
 }

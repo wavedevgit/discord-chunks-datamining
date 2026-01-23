@@ -30,30 +30,30 @@ function S(e) {
     applicationId: t,
     customId: n,
     linkId: S,
-    message: P,
-    onClose: T,
-    onCopyLink: E,
+    message: _,
+    onClose: P,
+    onCopyLink: T,
     onShare: w,
-    transitionState: C
-  } = e, [N] = (0, o.A)([t]), D = (0, s.bG)([m.default], () => m.default.getCurrentUser()), [k, L] = l.useState(false), [_, R] = l.useState(""), [M, G] = l.useState("");
+    transitionState: E
+  } = e, [C] = (0, c.A)([t]), L = (0, a.bG)([m.default], () => m.default.getCurrentUser()), [N, k] = l.useState(false), [D, R] = l.useState(""), [I, M] = l.useState("");
   l.useEffect(() => {
-    G((0, c.W)({
+    M((0, o.W)({
       applicationId: t,
-      referrerId: null == D ? true : D.id,
+      referrerId: null == L ? true : L.id,
       customId: n,
       linkId: S
     }))
-  }, [t, D, n, S, G]);
-  let I = l.useRef(0),
+  }, [t, L, n, S, M]);
+  let G = l.useRef(0),
     [U, H] = l.useState([]),
     V = U.length,
     q = V >= 5;
   l.useEffect(() => {
-    if ("" === _) {
+    if ("" === D) {
       var e;
       null == (e = B.current) || e.focus()
     }
-  }, [_]);
+  }, [D]);
   let z = l.useCallback(() => {
       R("")
     }, [R]),
@@ -77,28 +77,28 @@ function S(e) {
           } = t;
           return n === e.type && r === e.id
         });
-        if (false === n) return q ? t : (R(""), I.current += 1, [e, ...t]);
+        if (false === n) return q ? t : (R(""), G.current += 1, [e, ...t]);
         let r = [...t];
-        return r.splice(n, 1), I.current += 1, r
+        return r.splice(n, 1), G.current += 1, r
       })
     }, [q]),
     Z = l.useCallback(async e => {
-      if (null == N) return;
-      let t = (0, y.r)(P, N, M);
-      L(true), (await Promise.all(e.map(f.pk))).filter(h.Vq).forEach(async e => {
+      if (null == C) return;
+      let t = (0, y.r)(_, C, I);
+      k(true), (await Promise.all(e.map(f.pk))).filter(h.Vq).forEach(async e => {
         let n = p.A.getChannel(e);
         null != n && await u.A.sendMessage(e, d.Ay.parse(n, t), false, {
           location: j.Hx.ACTIVITY_SHARE
         })
       }), (0, i.showToast)((0, i.createToast)(A.intl.formatToPlainString(A.t.jQULqL, {
-        applicationName: N.name
-      }), i.ToastType.SUCCESS)), w(true), T()
-    }, [P, M, T, w, N]),
+        applicationName: C.name
+      }), i.ToastType.SUCCESS)), w(true), P()
+    }, [_, I, P, w, C]),
     K = l.useCallback(() => {
-      (0, g.C)(M, () => {
-        E(), (0, i.showToast)((0, i.createToast)(A.intl.string(A.t.t5VZ88), i.ToastType.SUCCESS))
+      (0, g.C)(I, () => {
+        T(), (0, i.showToast)((0, i.createToast)(A.intl.string(A.t.t5VZ88), i.ToastType.SUCCESS))
       })
-    }, [M, E]),
+    }, [I, T]),
     X = F.length > 0 ? (0, r.jsx)(x.x, {
       paddingBottom: 8,
       paddingTop: 8,
@@ -118,15 +118,15 @@ function S(e) {
         children: A.intl.string(A.t.V6nAfF)
       })]
     });
-  return (0, r.jsx)(a.Modal, {
-    transitionState: C,
-    onClose: T,
+  return (0, r.jsx)(s.Modal, {
+    transitionState: E,
+    onClose: P,
     title: A.intl.string(A.t.r9qKow),
-    subtitle: P,
+    subtitle: _,
     size: "md",
     input: (0, r.jsx)(i.IWV, {
       ref: B,
-      query: _,
+      query: D,
       onChange: Q,
       onClear: z,
       placeholder: A.intl.string(A.t["5h0QOP"]),
@@ -141,7 +141,7 @@ function S(e) {
       text: A.intl.string(A.t.TXNS7S),
       variant: "primary",
       onClick: () => Z(U),
-      loading: k,
+      loading: N,
       disabled: !(V > 0)
     }],
     children: X

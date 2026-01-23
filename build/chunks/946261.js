@@ -2,7 +2,7 @@
 /** chunk id: 946261, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  WebAudioSound: () => b,
+  WebAudioSound: () => y,
   playGiftSound: () => g,
   voiceSinkId: () => h
 }), require("./747238.js"), require("./65821.js");
@@ -63,7 +63,7 @@ async function E() {
   }
 }
 Chunk723702.isPlatformEmbedded && (Chunk430452.A.addChangeListener(E), E());
-let b = class {
+let y = class {
   get volume() {
     return this._volume
   }

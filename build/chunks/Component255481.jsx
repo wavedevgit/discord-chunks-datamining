@@ -1,7 +1,7 @@
 /** Chunk was on 96811 **/
 /** chunk id: 255481, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => u
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,15 +13,15 @@ var Chunk627968 = require("./627968.js"),
   Chunk688465 = require("./688465.jsx"),
   Chunk977529 = require("./977529.js");
 
-function u() {
+function f() {
   let [{
     selectedSource: e
-  }] = (0, d.tS)(), [t, r] = l.useState(null), [u, h] = l.useState(true);
-  return l.useEffect(() => {
+  }] = (0, d.tS)(), [t, r] = i.useState(null), [f, h] = i.useState(true);
+  return i.useEffect(() => {
     !async function() {
       var t, n;
       if (null == e) return;
-      if (h(true), null == (n = e.id) ? true : n.startsWith(s.fS.CAMERA)) {
+      if (h(true), null == (n = e.id) ? true : n.startsWith(l.fS.CAMERA)) {
         "url" in e && (r(e.url), h(false));
         return
       }
@@ -29,11 +29,11 @@ function u() {
         r(e.url), h(false);
         return
       }
-      let l = "windowHandle" in e ? e.windowHandle : true;
-      if (null != l) {
+      let i = "windowHandle" in e ? e.windowHandle : true;
+      if (null != i) {
         try {
           let e = a.A.getMediaEngine(),
-            t = await e.getSingleWindowPreview(l, 960, 540);
+            t = await e.getSingleWindowPreview(i, 960, 540);
           if (null != t) {
             r(t.url), h(false);
             return
@@ -41,30 +41,30 @@ function u() {
         } catch (e) {}
         let {
           windowSources: e
-        } = await (0, o.d)({
+        } = await (0, c.d)({
           width: 960,
           height: 540,
-          types: [s.fS.WINDOW]
-        }), t = e.find(e => (0, c.A)(e.id, l));
+          types: [l.fS.WINDOW]
+        }), t = e.find(e => (0, o.A)(e.id, i));
         null != t && (r(t.url), h(false));
         return
       }
       let {
-        screenSources: i,
+        screenSources: s,
         windowSources: d
-      } = await (0, o.d)({
+      } = await (0, c.d)({
         width: 960,
         height: 540,
-        types: [s.fS.SCREEN, s.fS.WINDOW]
-      }), f = null != (t = d.find(t => "windowHandle" in e ? (0, c.A)(t.id, e.windowHandle) : t.id === e.id)) ? t : i.find(t => e.id === t.id);
-      null != f && (r(f.url), h(false))
+        types: [l.fS.SCREEN, l.fS.WINDOW]
+      }), u = null != (t = d.find(t => "windowHandle" in e ? (0, o.A)(t.id, e.windowHandle) : t.id === e.id)) ? t : s.find(t => e.id === t.id);
+      null != u && (r(u.url), h(false))
     }()
   }, [e]), (0, n.jsx)("div", {
-    className: f.z,
-    children: u ? (0, n.jsx)(i.y$y, {}) : null != t ? (0, n.jsx)("img", {
+    className: u.z,
+    children: f ? (0, n.jsx)(s.y$y, {}) : null != t ? (0, n.jsx)("img", {
       src: t,
       alt: "",
-      className: f.Q
+      className: u.Q
     }) : null
   })
 }

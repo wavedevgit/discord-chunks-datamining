@@ -17,36 +17,36 @@ var Chunk397927 = require("./397927.js"),
   Chunk552762 = require("./552762.js"),
   Chunk326513 = require("./326513.js");
 
-function p() {
+function b() {
   return (0, r.jsxs)("div", {
-    className: b.rV,
+    className: u.rV,
     children: [(0, r.jsxs)("div", {
-      className: b.bF,
-      children: [(0, r.jsxs)(s.Heading, {
-        className: b.n5,
+      className: u.bF,
+      children: [(0, r.jsxs)(o.Heading, {
+        className: u.n5,
         variant: "text-lg/semibold",
         children: [(0, r.jsx)("div", {
-          className: b.YD,
+          className: u.YD,
           children: (0, r.jsx)("img", {
-            src: i.A.get(l.fg2.XBOX).icon.whiteSVG,
+            src: s.A.get(c.fg2.XBOX).icon.whiteSVG,
             alt: ""
           })
-        }), f.intl.string(f.t["12Kx2v"])]
-      }), (0, r.jsx)(s.Text, {
+        }), p.intl.string(p.t["12Kx2v"])]
+      }), (0, r.jsx)(o.Text, {
         tag: "p",
         variant: "text-md/normal",
         color: "text-default",
-        children: f.intl.string(f.t.M5yEcb)
-      }), (0, r.jsx)(s.Text, {
+        children: p.intl.string(p.t.M5yEcb)
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: (0, r.jsx)(s.MzZ, {
-          href: a.A.getArticleURL(l.MVz.XBOX_CONNECTION),
-          children: f.intl.string(f.t.hvVgAZ)
+        children: (0, r.jsx)(o.MzZ, {
+          href: a.A.getArticleURL(c.MVz.XBOX_CONNECTION),
+          children: p.intl.string(p.t.hvVgAZ)
         })
       })]
-    }), (0, r.jsx)(o.Ay, {
-      className: b.C9,
+    }), (0, r.jsx)(i.Ay, {
+      className: u.C9,
       text: d.EY,
       size: 90
     })]
@@ -57,16 +57,16 @@ function g(e) {
   let {
     onClose: t
   } = e;
-  return (0, r.jsx)(c.b, {
+  return (0, r.jsx)(l.b, {
     img: (0, r.jsx)("img", {
-      src: u.A,
+      src: f.A,
       width: "124",
       height: "160",
       alt: ""
     }),
-    title: f.intl.string(f.t["7QsHmh"]),
-    body: f.intl.string(f.t.byYNPX),
-    content: (0, r.jsx)(p, {}),
+    title: p.intl.string(p.t["7QsHmh"]),
+    body: p.intl.string(p.t.byYNPX),
+    content: (0, r.jsx)(b, {}),
     onClose: t
   })
 }

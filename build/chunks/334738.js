@@ -6,7 +6,7 @@ require.d(exports, {
   Z5: () => g,
   _9: () => m,
   ack: () => d,
-  d_: () => b,
+  d_: () => y,
   fb: () => h,
   hK: () => E,
   hS: () => p
@@ -106,7 +106,7 @@ function E(e, t, n) {
   })
 }
 
-function b(e, t) {
+function y(e, t) {
   var n;
   null != (null == (n = l.default.getCurrentUser()) ? true : n.id) && r.h.dispatch({
     type: "USER_NON_CHANNEL_ACK",

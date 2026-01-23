@@ -2,13 +2,13 @@
 /** chunk id: 418522, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  GB: () => I,
-  casual: () => v,
+  GB: () => S,
+  casual: () => A,
   createCasualConfiguration: () => N,
   createConfiguration: () => R,
   parse: () => T,
   parseDate: () => C,
-  strict: () => S
+  strict: () => I
 });
 var Chunk191824 = require("./191824.js"),
   Chunk998275 = require("./998275.js"),
@@ -30,16 +30,16 @@ var Chunk191824 = require("./191824.js"),
   Chunk774188 = require("./774188.js"),
   Chunk789374 = require("./789374.js"),
   Chunk740789 = require("./740789.js");
-let v = new Chunk880683.u(N(false)),
-  S = new Chunk880683.u(R(true, false)),
-  I = new Chunk880683.u(R(false, true));
+let A = new Chunk880683.u(N(false)),
+  I = new Chunk880683.u(R(true, false)),
+  S = new Chunk880683.u(R(false, true));
 
 function T(e, t, n) {
-  return v.parse(e, t, n)
+  return A.parse(e, t, n)
 }
 
 function C(e, t, n) {
-  return v.parseDate(e, t, n)
+  return A.parseDate(e, t, n)
 }
 
 function N(e = false) {
@@ -49,7 +49,7 @@ function N(e = false) {
 
 function R(e = true, t = false) {
   return (0, _.i)({
-    parsers: [new y.A(t), new r.A, new i.A, new a.A, new g.A, new o.A, new l.A, new c.A(e), new u.A(e), new d.A(e)],
-    refiners: [new A.A, new p.A, new f.A]
+    parsers: [new b.A(t), new r.A, new i.A, new a.A, new g.A, new o.A, new l.A, new c.A(e), new u.A(e), new d.A(e)],
+    refiners: [new v.A, new p.A, new f.A]
   }, e)
 }

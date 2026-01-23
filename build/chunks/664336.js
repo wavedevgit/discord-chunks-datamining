@@ -1,10 +1,10 @@
 /** Chunk was on 28636 **/
 /** chunk id: 664336, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => a
+  A: () => l
 });
 var Chunk108531 = require("./108531.js");
-class a {
+class l {
   handleScroll(e) {
     this.top.set(e.currentTarget.scrollTop)
   }
@@ -19,6 +19,6 @@ class a {
         configurable: true,
         writable: true
       }) : e.top = n
-    }(this, 0, new l.SpringValue(0))
+    }(this, 0, new r.SpringValue(0))
   }
 }

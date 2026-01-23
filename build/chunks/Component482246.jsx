@@ -18,14 +18,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk576622 = require("./576622.js"),
   Chunk287809 = require("./287809.js"),
   Chunk674658 = require("./674658.js"),
+  Chunk645178 = require("./645178.js"),
   Chunk898461 = require("./898461.js"),
   Chunk203632 = require("./203632.js"),
   Chunk14702 = require("./14702.jsx"),
-  Chunk764999 = require("./764999.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk245948 = require("./245948.js");
 
-function v(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +34,20 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function I(e, t) {
 }
 
 function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -69,8 +69,8 @@ let C = e => {
     isSelected: n,
     price: a,
     onSelect: o,
-    shouldDisplayHeader: v = false,
-    className: I,
+    shouldDisplayHeader: A = false,
+    className: S,
     previewHeaderClassName: C,
     hideProfilePreview: N = false
   } = e, {
@@ -78,7 +78,7 @@ let C = e => {
   } = (0, m.q)(t, true), {
     giftRecipient: w,
     giftRecipientError: P
-  } = (0, f.Pv)(), D = (0, u.bG)([h.default], () => h.default.getCurrentUser()), x = (0, y.o7)(R), L = i.useRef(null);
+  } = (0, f.Pv)(), D = (0, u.bG)([h.default], () => h.default.getCurrentUser()), x = (0, g.o7)(R), L = i.useRef(null);
   if (null == R) return null;
   let [j] = R.items;
   l()(null != j, "Product item should not be empty");
@@ -100,27 +100,27 @@ let C = e => {
       null != t && null != o && o(t)
     };
   return (0, r.jsxs)("div", {
-    className: I,
-    children: [v && (0, r.jsx)("div", {
-      className: s()(A.QU, C),
+    className: S,
+    children: [A && (0, r.jsx)("div", {
+      className: s()(v.QU, C),
       children: (0, r.jsx)(d.D0$, {
         label: O.intl.string(O.t.PpoJzt),
         children: k && (0, r.jsx)(d.YNO, {
           targetElementRef: L,
           preload: () => (0, _.A)(w.id, w.getAvatarURL(null, 80)),
-          renderPopout: e => (0, r.jsx)(p.A, T(S({}, e), {
+          renderPopout: e => (0, r.jsx)(p.A, T(I({}, e), {
             user: w,
             pendingAvatar: w.getAvatarURL(null, (0, d.FT9)(d._3J.SIZE_80)),
-            pendingAvatarDecoration: (0, g.T)(j) ? j : null,
-            pendingProfileEffect: (0, E.C)(j) ? j : null,
+            pendingAvatarDecoration: (0, E.T)(j) ? j : null,
+            pendingProfileEffect: (0, y.C)(j) ? j : null,
             canUsePremiumCustomization: true,
             disabledInputs: true,
             hideExampleButton: true
           })),
           align: "center",
           position: "right",
-          children: e => (0, r.jsx)(d.DUT, T(S({}, e), {
-            className: A.Nx,
+          children: e => (0, r.jsx)(d.DUT, T(I({}, e), {
+            className: v.Nx,
             innerRef: L,
             children: (0, r.jsx)(d.Text, {
               variant: "text-xs/medium",
@@ -133,17 +133,17 @@ let C = e => {
     }), (0, r.jsxs)(d.DUT, {
       tag: "div",
       onClick: U,
-      className: s()(A.i1, {
-        [A.no]: n && null == P,
-        [A.cN]: n && null != P
+      className: s()(v.i1, {
+        [v.no]: n && null == P,
+        [v.cN]: n && null != P
       }),
       children: [(0, r.jsxs)("div", {
-        className: A.Ug,
+        className: v.Ug,
         children: [(0, r.jsx)(b.O, {
           product: R,
           fallbackLabel: null
         }), (0, r.jsxs)("div", {
-          className: A.JZ,
+          className: v.JZ,
           children: [(0, r.jsx)(d.Text, {
             variant: "text-md/semibold",
             children: x
@@ -157,7 +157,7 @@ let C = e => {
           children: a
         })]
       }), n && null != P && (0, r.jsx)("div", {
-        className: A.Wh,
+        className: v.Wh,
         children: (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-feedback-critical",

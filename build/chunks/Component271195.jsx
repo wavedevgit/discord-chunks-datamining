@@ -2,8 +2,8 @@
 /** chunk id: 271195, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v,
-  X: () => A
+  A: () => A,
+  X: () => v
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -31,7 +31,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -64,7 +64,7 @@ function O(e, t) {
   return i
 }
 
-function A(e) {
+function v(e) {
   let {
     title: t,
     onJumpToChannel: n,
@@ -104,7 +104,7 @@ function A(e) {
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     children: t,
     idle: n,
@@ -118,9 +118,9 @@ function v(e) {
     screenMessage: m,
     hideControls: E = false,
     className: O,
-    innerClassName: v,
-    videoControlsClassName: S
-  } = e, I = y(e, ["children", "idle", "onJumpToChannel", "onHide", "backgroundKey", "onActive", "onForceIdle", "renderBottomLeftControls", "renderBottomRightControls", "screenMessage", "hideControls", "className", "innerClassName", "videoControlsClassName"]);
+    innerClassName: A,
+    videoControlsClassName: I
+  } = e, S = b(e, ["children", "idle", "onJumpToChannel", "onHide", "backgroundKey", "onActive", "onForceIdle", "renderBottomLeftControls", "renderBottomRightControls", "screenMessage", "hideControls", "className", "innerClassName", "videoControlsClassName"]);
   return (0, r.jsxs)("div", {
     onMouseMove: u,
     onMouseDown: u,
@@ -131,20 +131,20 @@ function v(e) {
     onDoubleClick: i,
     children: [(0, r.jsx)(o.F, {
       children: (0, r.jsx)(d.o, {
-        className: v,
+        className: A,
         children: t
       }, l)
-    }), null != m ? (0, r.jsx)(_.A, b({
+    }), null != m ? (0, r.jsx)(_.A, y({
       size: "small"
     }, m)) : null, !E && (0, r.jsxs)("div", {
-      className: a()(g._v, S, "theme-dark"),
+      className: a()(g._v, I, "theme-dark"),
       children: [(0, r.jsx)("div", {
         className: g.K1,
-        children: (0, r.jsx)(A, b({
+        children: (0, r.jsx)(v, y({
           idle: n,
           onJumpToChannel: i,
           onHide: s
-        }, I))
+        }, S))
       }), (0, r.jsxs)("div", {
         className: g.q6,
         children: [(0, r.jsx)(c.A, {

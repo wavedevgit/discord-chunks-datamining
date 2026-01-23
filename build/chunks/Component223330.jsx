@@ -58,25 +58,25 @@ function P(e) {
     newestAnalyticsLocation: s
   } = (0, d.Ay)(), {
     trackUserProfileAction: o
-  } = (0, y.NJ)();
+  } = (0, b.NJ)();
   return (0, r.jsxs)("div", {
     className: R.JO,
     children: [(0, r.jsx)("div", {
       className: R.xB,
-      children: n ? (0, r.jsx)(A.FD, {
-        action: v.pt.VIEW_PREMIUM_PERKS,
+      children: n ? (0, r.jsx)(v.FD, {
+        action: A.pt.VIEW_PREMIUM_PERKS,
         fullWidth: true,
         size: "sm",
         variant: "secondary",
         icon: u.tvc,
         text: N.intl.string(N.t["0Q61kF"]),
         onClick: () => {
-          (0, E.pX)(S.BVt.APPLICATION_STORE), null == i || i()
+          (0, E.pX)(I.BVt.APPLICATION_STORE), null == i || i()
         }
       }) : (0, r.jsx)(g.A, {
         onClick: () => {
           o({
-            action: v.pt.GET_PREMIUM
+            action: A.pt.GET_PREMIUM
           }), null == i || i()
         },
         textOptions: {
@@ -84,7 +84,7 @@ function P(e) {
         },
         subscriptionTier: T.pe.TIER_2,
         premiumModalAnalyticsLocation: {
-          section: S.JJy.USER_PROFILE
+          section: I.JJy.USER_PROFILE
         },
         className: R.Js,
         size: t ? c.$n.Sizes.TINY : c.$n.Sizes.SMALL,
@@ -95,8 +95,8 @@ function P(e) {
       })
     }), (0, r.jsx)("div", {
       className: R.xB,
-      children: (0, r.jsx)(A.FD, {
-        action: v.pt.VISIT_SHOP,
+      children: (0, r.jsx)(v.FD, {
+        action: A.pt.VISIT_SHOP,
         fullWidth: true,
         icon: u.U1X,
         text: N.intl.string(N.t.b2d0N0),
@@ -120,7 +120,7 @@ function D(e) {
     className: a
   } = e, c = (0, p.GV)(), {
     themeType: d
-  } = (0, O.E)(), f = d === C.d.MODAL, g = (0, h.JZ)(l.M.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), E = (0, o.bG)([b.A], () => b.A.getGuildId());
+  } = (0, O.E)(), f = d === C.d.MODAL, g = (0, h.JZ)(l.M.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), E = (0, o.bG)([y.A], () => y.A.getGuildId());
   if (i.useEffect(() => {
       if (!g) return (0, m.Vh)(l.M.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), () => {
         (0, _.pd)({
@@ -128,21 +128,21 @@ function D(e) {
         }, false)
       }
     }, [g]), g) return null;
-  let y = (0, r.jsx)(u.Heading, {
+  let b = (0, r.jsx)(u.Heading, {
       variant: "text-sm/normal",
       id: c,
       children: N.intl.string(N.t.EIYbj6)
     }),
-    A = (0, r.jsx)(w, {
+    v = (0, r.jsx)(w, {
       onClose: () => {
         (0, h.Dr)(l.M.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS, {
-          dismissAction: I.i.USER_DISMISS,
+          dismissAction: S.i.USER_DISMISS,
           guildId: E,
           forceTrack: true
         })
       }
     }),
-    v = (0, r.jsx)(P, {
+    A = (0, r.jsx)(P, {
       isPremiumUser: t,
       onInteraction: n,
       tiny: f
@@ -152,12 +152,12 @@ function D(e) {
     "aria-labelledby": c,
     children: (0, r.jsxs)("div", {
       className: s()(R.xw, R.xq),
-      children: [y, (0, r.jsxs)("div", {
+      children: [b, (0, r.jsxs)("div", {
         className: R.A_,
         children: [(0, r.jsx)("div", {
-          children: v
-        }), (0, r.jsx)("div", {
           children: A
+        }), (0, r.jsx)("div", {
+          children: v
         })]
       })]
     })
@@ -168,10 +168,10 @@ function D(e) {
       className: s()(R.xw, R.K1),
       children: [(0, r.jsxs)("div", {
         className: R.$P,
-        children: [y, (0, r.jsx)("div", {
-          children: A
+        children: [b, (0, r.jsx)("div", {
+          children: v
         })]
-      }), v]
+      }), A]
     })
   })
 }

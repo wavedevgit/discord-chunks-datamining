@@ -2,7 +2,7 @@
 /** chunk id: 574520, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $: () => b,
+  $: () => y,
   A: () => T
 }), require("./896048.js");
 var r, Chunk735438 = require("./735438.js"),
@@ -29,11 +29,11 @@ function m(e, t, n) {
 let g = new Set([Chunk681154.I.LISTENED_SESSION]),
   E = new Map;
 
-function b(e) {
+function y(e) {
   return "".concat(e.author_id, ":").concat(e.id)
 }
 
-function y(e) {
+function b(e) {
   return (0, _.I5)(e) ? null : (0, _.JM)(e) && e.author_type === s.t.USER ? u.A.getActivities(e.author_id).find(t => t.type === h.$pd.PLAYING && (0, f.P)(e) ? (0, p.fp)(e, t) : !!(t.type === h.$pd.LISTENING && (0, f.Tq)(e)) && (0, p.qb)(e, t)) : true
 }
 
@@ -41,9 +41,9 @@ function O(e) {
   let t = new Set,
     n = new Set;
   for (let r of e) {
-    let e = y(r.content);
+    let e = b(r.content);
     if (true !== e) {
-      let i = b(r.content);
+      let i = y(r.content);
       n.add(i), e !== E.get(i) && (t.add(i), E.set(i, e))
     }
   }
@@ -53,7 +53,7 @@ function O(e) {
   }
 }
 
-function A(e) {
+function v(e) {
   let {
     feed: t
   } = e, {
@@ -62,11 +62,11 @@ function A(e) {
   return n.size > 0
 }
 
-function v() {
+function A() {
   E.clear()
 }
 
-function S() {
+function I() {
   let e = false,
     t = Array.from(E.keys()),
     n = new Set,
@@ -75,7 +75,7 @@ function S() {
     let {
       updatedKeys: i,
       matchedKeys: a
-    } = O(n.size > 0 ? t.entries.filter(e => !n.has(b(e.content))) : t.entries);
+    } = O(n.size > 0 ? t.entries.filter(e => !n.has(y(e.content))) : t.entries);
     for (let e of i) n.add(e);
     for (let e of a) r.add(e);
     e = e || i.size > 0
@@ -83,19 +83,19 @@ function S() {
   for (let n of a().difference(t, [...r])) E.delete(n), e = true;
   return e
 }
-class I extends(r = Chunk311907.Ay.Store) {
+class S extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(d.A, u.A), this.syncWith([u.A], S)
+    this.waitFor(d.A, u.A), this.syncWith([u.A], I)
   }
   getMatchingActivity(e) {
-    return (0, _.I5)(e) ? null : E.get(b(e))
+    return (0, _.I5)(e) ? null : E.get(y(e))
   }
   constructor(...e) {
     super(...e), m(this, "canRenderContent", e => !(0, _.I5)(e) && (!g.has(e.content_type) || null != this.getMatchingActivity(e)))
   }
 }
-m(I, "displayName", "ContentInventoryActivityStore");
-let T = new I(Chunk73153.h, {
-  CONNECTION_OPEN: v,
-  CONTENT_INVENTORY_SET_FEED: A
+m(S, "displayName", "ContentInventoryActivityStore");
+let T = new S(Chunk73153.h, {
+  CONNECTION_OPEN: A,
+  CONTENT_INVENTORY_SET_FEED: v
 })

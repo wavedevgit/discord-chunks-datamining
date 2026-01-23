@@ -15,7 +15,7 @@ function c(e) {
   let {
     nameplate: n
   } = e, c = (0, l.bG)([s.default], () => s.default.getCurrentUser()), d = null != (t = o.Ay.useName(c)) ? t : "";
-  return (0, a.jsx)(r.g, {
+  return (0, a.jsx)(i.g, {
     username: d,
     selfMute: false,
     selfDeaf: false,
@@ -24,7 +24,7 @@ function c(e) {
     suppress: false,
     speaking: false,
     streaming: false,
-    status: i.cl.ONLINE,
+    status: r.cl.ONLINE,
     currentUser: c,
     activities: [],
     applicationStream: true,

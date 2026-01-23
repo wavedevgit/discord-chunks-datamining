@@ -2,7 +2,7 @@
 /** chunk id: 570766, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -81,7 +81,7 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     answer: t,
     isExpired: n,
@@ -119,7 +119,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     isExpired: t,
     myAvatarUrl: n,
@@ -133,7 +133,7 @@ function y(e) {
     }),
     myAvatarUrl: n,
     answersInteraction: i,
-    renderAnswerContent: e => (0, r.jsx)(b, {
+    renderAnswerContent: e => (0, r.jsx)(y, {
       answer: e,
       isExpired: t,
       myAvatarUrl: n,

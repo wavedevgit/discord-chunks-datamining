@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   BC: () => eN,
-  Eh: () => ev,
+  Eh: () => eA,
   Fl: () => eR,
   YN: () => eO,
-  fD: () => eS
+  fD: () => eI
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -115,19 +115,19 @@ function eE(e, t) {
   }), e
 }
 
-function eb(e, t) {
+function ey(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = ey(e, t), Object.getOwnPropertySymbols)
+  if (a = eb(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function ey(e, t) {
+function eb(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -145,7 +145,7 @@ function eO(e) {
   })
 }
 
-function eA(e) {
+function ev(e) {
   let {
     children: t,
     backgroundImgSrc: n,
@@ -166,7 +166,7 @@ function eA(e) {
   })
 }
 
-function ev(e) {
+function eA(e) {
   let {
     children: t
   } = e;
@@ -176,7 +176,7 @@ function ev(e) {
   })
 }
 
-function eS(e) {
+function eI(e) {
   let {
     channel: t,
     user: n,
@@ -185,7 +185,7 @@ function eS(e) {
     buttons: o = [],
     header: f,
     onVoiceChannelPreview: m
-  } = e, [g, E] = i.useState(false), [b, y] = i.useState(null), A = i.useRef(null), v = (0, c.bG)([B.A], () => null != t && eu.kvI.CONTENT_ENTRY_EMBEDS.has(t.type) && B.A.can(eu.xBc.SEND_MESSAGES, t)), [I, T] = i.useState(false), [C, N] = i.useState(false), {
+  } = e, [g, E] = i.useState(false), [y, b] = i.useState(null), v = i.useRef(null), A = (0, c.bG)([B.A], () => null != t && eu.kvI.CONTENT_ENTRY_EMBEDS.has(t.type) && B.A.can(eu.xBc.SEND_MESSAGES, t)), [S, T] = i.useState(false), [C, N] = i.useState(false), {
     voiceBar: R,
     joinVoiceButton: w
   } = eP({
@@ -207,7 +207,7 @@ function eS(e) {
           surface_type: ec.UG.GUILD_MEMBER_LIST,
           channel_id: null == t ? true : t.id,
           guild_id: null == t ? true : t.guild_id
-        }), (0, S.Dr)(u.M.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), T(true), N(false), g) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
+        }), (0, I.Dr)(u.M.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), T(true), N(false), g) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
       else {
         var s;
         let e = await h.A.getOrEnsurePrivateChannel(n.id);
@@ -227,7 +227,7 @@ function eS(e) {
     }
   }, Y = async e => {
     let r;
-    if ((0, S.Dr)(u.M.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), g) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
+    if ((0, I.Dr)(u.M.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), g) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
     else {
       let e = await h.A.openPrivateChannel({
           recipientIds: n.id
@@ -251,7 +251,7 @@ function eS(e) {
       interactionType: i,
       requiresChannelReadiness: a
     } = e;
-    null == b || b.focus(), await (0, et.d)({
+    null == y || y.focus(), await (0, et.d)({
       channel: n,
       content: t,
       entry: s,
@@ -260,26 +260,26 @@ function eS(e) {
       location: ed.Hx.CONTENT_INVENTORY_MEMBERLIST
     }), null == r || r(i, n)
   }, K = null != f ? f : null != R ? R : null != D ? D : true, z = () => {
-    E(e => !e), M && (null == b || b.focus())
+    E(e => !e), M && (null == y || y.focus())
   }, X = e => {
-    k(e), e && (null == b || b.focus())
+    k(e), e && (null == y || y.focus())
   };
   return (0, r.jsx)("div", {
-    ref: A,
+    ref: v,
     style: {
-      pointerEvents: I ? "none" : "all"
+      pointerEvents: S ? "none" : "all"
     },
     children: (0, r.jsx)(_.Oky, {
-      containerRef: A,
+      containerRef: v,
       children: (0, r.jsxs)("div", {
         children: [(0, r.jsx)(el.A, {
           sent: C,
-          shown: I,
+          shown: S,
           className: e_.Jt
         }), null != K ? K : (0, r.jsx)(es.A, {
           children: (0, r.jsxs)("div", {
             className: e_.T7,
-            children: [(0, r.jsx)(eI, {
+            children: [(0, r.jsx)(eS, {
               channel: t,
               onClickSuggestion: H
             }), (0, r.jsx)(O.g1, {
@@ -291,12 +291,12 @@ function eS(e) {
           children: [(0, r.jsx)(O.nd, {
             placeholder: G,
             onEnter: Y,
-            setEditorRef: e => y(e),
+            setEditorRef: e => b(e),
             channel: g ? t : true,
             showEmojiButton: null != K,
             className: e_.N8,
             autoFocus: false,
-            renderAttachButton: v ? () => (0, r.jsx)(p.m, {
+            renderAttachButton: A ? () => (0, r.jsx)(p.m, {
               text: F,
               children: (0, r.jsx)(_.DUT, {
                 className: e_.wD,
@@ -336,7 +336,7 @@ function eS(e) {
     })
   })
 }
-let eI = e => {
+let eS = e => {
   let {
     channel: t,
     onClickSuggestion: n
@@ -344,8 +344,8 @@ let eI = e => {
   i.useEffect(() => {
     s(true)
   }, []);
-  let o = !!b.A.keyboardModeEnabled && !a,
-    l = (0, I.Fj)(null == t ? true : t.guild_id).slice(0, 5).map(e => null == e.id ? {
+  let o = !!y.A.keyboardModeEnabled && !a,
+    l = (0, S.Fj)(null == t ? true : t.guild_id).slice(0, 5).map(e => null == e.id ? {
       emoji: e,
       url: e.url
     } : {
@@ -401,7 +401,7 @@ function eT(e) {
     numOtherParticipants: h
   } = (0, er.A)(i, 3), m = (0, c.bG)([W.default], () => W.default.getUser(i.author_id)), {
     streamPreviewUrl: g
-  } = (0, ei.A)(i), E = null != g, b = [d, p];
+  } = (0, ei.A)(i), E = null != g, y = [d, p];
   return (0, r.jsxs)("div", {
     className: e_.MH,
     children: [(0, r.jsxs)("div", {
@@ -420,8 +420,8 @@ function eT(e) {
         variant: "heading-sm/normal",
         className: s()(e_.Xn, e_.zA),
         children: ep.intl.format(n, {
-          user0: Z.Ay.getName(l, null == t ? true : t.id, b[0]),
-          user1: Z.Ay.getName(l, null == t ? true : t.id, b[1]),
+          user0: Z.Ay.getName(l, null == t ? true : t.id, y[0]),
+          user1: Z.Ay.getName(l, null == t ? true : t.id, y[1]),
           countOthers: h,
           countOthersHook: (e, t) => (0, r.jsx)(_.Text, {
             variant: "text-sm/medium",
@@ -431,7 +431,7 @@ function eT(e) {
           name0Hook: (e, n) => (0, r.jsx)(J.A, {
             textClassName: s()(e_.Mj, e_.nk),
             text: e,
-            user: b[0],
+            user: y[0],
             channel: t,
             onPopoutClosed: o,
             enableDisplayNameStyles: true
@@ -439,15 +439,15 @@ function eT(e) {
           name1Hook: (e, n) => (0, r.jsx)(J.A, {
             textClassName: s()(e_.Mj, e_.nk),
             text: e,
-            user: b[1],
+            user: y[1],
             channel: t,
             onPopoutClosed: o,
             enableDisplayNameStyles: true
           }, n)
         })
       })]
-    }), E && (0, r.jsx)(v.Ay, {
-      size: v.Ay.Sizes.SMALL
+    }), E && (0, r.jsx)(A.Ay, {
+      size: A.Ay.Sizes.SMALL
     }), null != m && (0, r.jsx)(eo.A, {
       user: m,
       channel: t,
@@ -485,40 +485,40 @@ function eN(e) {
     showCoverImage: m = true,
     onUserPopoutClosed: g,
     trackRankingItemInteraction: E
-  } = e, b = eb(e, ["title", "subtitle", "badges", "children", "onClickThumbnail", "onClickTitle", "onClickSubtitle", "headerIcons", "disableGameProfileLinks", "showCoverImage", "onUserPopoutClosed", "trackRankingItemInteraction"]), {
-    entry: y
-  } = b, O = (0, $.zD)(y), A = O ? null == (t = y.extra) ? true : t.application_id : true, v = (0, N.A)({
+  } = e, y = ey(e, ["title", "subtitle", "badges", "children", "onClickThumbnail", "onClickTitle", "onClickSubtitle", "headerIcons", "disableGameProfileLinks", "showCoverImage", "onUserPopoutClosed", "trackRankingItemInteraction"]), {
+    entry: b
+  } = y, O = (0, $.zD)(b), v = O ? null == (t = b.extra) ? true : t.application_id : true, A = (0, N.A)({
     location: "ContentPopout",
-    applicationId: h ? true : A,
+    applicationId: h ? true : v,
     source: C.Ob.ActivityCard,
     trackEntryPointImpression: true,
-    sourceUserId: y.author_id
+    sourceUserId: b.author_id
   }, {
     onOpened: () => null == E ? true : E(ec.PA.OPENED_GAME_PROFILE)
   }), {
-    largeImage: S,
-    smallImage: I
+    largeImage: I,
+    smallImage: S
   } = (0, Q.nO)({
-    entry: y,
+    entry: b,
     showCoverImage: m
   }), T = (0, L.w)({
     location: "content_inventory"
-  }), R = O ? v : true;
+  }), R = O ? A : true;
   return (0, r.jsxs)("div", {
     className: e_.au,
     children: [(0, r.jsx)(eT, eE(em({
       disableGameProfileLinks: h
-    }, b), {
+    }, y), {
       onUserPopoutClosed: g
-    })), (0, r.jsxs)(eA, {
-      backgroundImgSrc: null == S ? true : S.src,
+    })), (0, r.jsxs)(ev, {
+      backgroundImgSrc: null == I ? true : I.src,
       children: [(0, r.jsxs)("div", {
         className: e_.CG,
         children: [(0, r.jsx)("div", {
           className: e_.Fb,
           children: (0, r.jsx)(ee.d, {
-            image: S,
-            smallImage: I,
+            image: I,
+            smallImage: S,
             aspectRatio: m ? "none" : true,
             onClick: null != u ? u : R,
             size: ee.w.SIZE_72
@@ -550,14 +550,14 @@ function eN(e) {
           children: p
         })]
       }), c]
-    }), T && null != A && ef.sQ.has(A) ? (0, r.jsx)(j.A, {
+    }), T && null != v && ef.sQ.has(v) ? (0, r.jsx)(j.A, {
       className: e_.zu,
-      applicationId: A,
-      userIds: [y.author_id],
+      applicationId: v,
+      userIds: [b.author_id],
       cardSize: M.Y.SMALL_SQUARE,
       location: "content_popout",
-      guildId: null == (n = b.channel) ? true : n.guild_id,
-      channelId: null == (i = b.channel) ? true : i.id
+      guildId: null == (n = y.channel) ? true : n.guild_id,
+      channelId: null == (i = y.channel) ? true : i.id
     }) : null]
   })
 }
@@ -574,35 +574,35 @@ function eR(e) {
     onClickSubtitle: p,
     onUserPopoutClosed: h,
     trackRankingItemInteraction: m
-  } = e, b = eb(e, ["title", "subtitle", "badges", "stream", "onClickThumbnail", "onClickTitle", "onClickSubtitle", "onUserPopoutClosed", "trackRankingItemInteraction"]), y = (0, c.bG)([V.A], () => V.A.getChannel(null == u ? true : u.channelId)), [O] = i.useMemo(() => (0, R.eo)(y, K.A, F.A, B.A, T.default), [y]), {
-    entry: A
-  } = b, v = (0, $.zD)(A), S = v ? null == (t = A.extra) ? true : t.application_id : true, I = (0, N.A)({
+  } = e, y = ey(e, ["title", "subtitle", "badges", "stream", "onClickThumbnail", "onClickTitle", "onClickSubtitle", "onUserPopoutClosed", "trackRankingItemInteraction"]), b = (0, c.bG)([V.A], () => V.A.getChannel(null == u ? true : u.channelId)), [O] = i.useMemo(() => (0, R.eo)(b, K.A, F.A, B.A, T.default), [b]), {
+    entry: v
+  } = y, A = (0, $.zD)(v), I = A ? null == (t = v.extra) ? true : t.application_id : true, S = (0, N.A)({
     location: "ContentPopout",
-    applicationId: S,
+    applicationId: I,
     source: C.Ob.ActivityCard,
     trackEntryPointImpression: true,
-    sourceUserId: A.author_id
+    sourceUserId: v.author_id
   }, {
     onOpened: () => null == m ? true : m(ec.PA.OPENED_GAME_PROFILE)
-  }), P = v ? I : true, {
+  }), P = A ? S : true, {
     activity: D,
     activityApplication: x,
     fallbackApplication: k
-  } = (0, en.A)(A), {
+  } = (0, en.A)(v), {
     largeImage: U,
     smallImage: G
   } = (0, Q.D8)(D, null != x ? x : k), {
     largeImage: H
   } = (0, Q.nO)({
-    entry: A
+    entry: v
   }), Y = (0, L.w)({
     location: "content_inventory"
   });
   return (0, r.jsxs)("div", {
     className: e_.au,
-    children: [(0, r.jsx)(eT, eE(em({}, b), {
+    children: [(0, r.jsx)(eT, eE(em({}, y), {
       onUserPopoutClosed: h
-    })), (0, r.jsxs)(eA, {
+    })), (0, r.jsxs)(ev, {
       backgroundImgSrc: null == H ? true : H.src,
       className: e_.uR,
       children: [(0, r.jsx)(eC, {
@@ -655,21 +655,21 @@ function eR(e) {
           }), l]
         })]
       })]
-    }), Y && null != S && ef.sQ.has(S) ? (0, r.jsx)(j.A, {
+    }), Y && null != I && ef.sQ.has(I) ? (0, r.jsx)(j.A, {
       className: e_.zu,
-      applicationId: S,
-      userIds: [A.author_id],
+      applicationId: I,
+      userIds: [v.author_id],
       cardSize: M.Y.SMALL_SQUARE,
       location: "content_popout",
-      guildId: null == (n = b.channel) ? true : n.guild_id,
-      channelId: null == (a = b.channel) ? true : a.id
+      guildId: null == (n = y.channel) ? true : n.guild_id,
+      channelId: null == (a = y.channel) ? true : a.id
     }) : null]
   })
 }
 
 function ew(e) {
-  let t = (0, c.bG)([F.A], () => F.A.getGuild((0, y.D)(null == e ? true : e.location))),
-    n = (0, c.bG)([V.A], () => V.A.getChannel((0, y.H)(null == e ? true : e.location))),
+  let t = (0, c.bG)([F.A], () => F.A.getGuild((0, b.D)(null == e ? true : e.location))),
+    n = (0, c.bG)([V.A], () => V.A.getChannel((0, b.H)(null == e ? true : e.location))),
     i = (0, c.yK)([W.default], () => {
       var t, n;
       return null != (t = null == e || null == (n = e.participants) ? true : n.map(e => W.default.getUser(e.userId))) ? t : []
@@ -747,11 +747,11 @@ function eP(e) {
     joinVoiceButton: true
   };
   let E = null != s,
-    b = () => {
+    y = () => {
       m.A.updateChatOpen(o.id, true), (0, x.iN)(o.id), null == a || a(o)
     },
-    y = () => {
-      A.A.handleVoiceConnect({
+    b = () => {
+      v.A.handleVoiceConnect({
         channel: o,
         connected: h,
         needSubscriptionToAccess: l,
@@ -787,7 +787,7 @@ function eP(e) {
           hasRestrictedOrMutedVCParticipant: g,
           children: (0, r.jsxs)(_.DUT, {
             "aria-label": ep.intl.string(ep.t.WIVYqJ),
-            onClick: b,
+            onClick: y,
             className: e_.I3,
             children: [(0, r.jsx)(P.A, {
               guild: u,
@@ -833,7 +833,7 @@ function eP(e) {
     joinVoiceButton: h ? null : (0, r.jsx)(O, {
       hasRestrictedOrMutedVCParticipant: g,
       children: (0, r.jsx)(_.Button, {
-        onClick: y,
+        onClick: b,
         fullWidth: true,
         text: E ? ep.intl.string(ep.t.I6JG46) : ep.intl.string(ep.t.VJlc0S),
         icon: E ? _.kN9 : _.HKD,

@@ -2,7 +2,7 @@
 /** chunk id: 142120, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => ey
+  A: () => eb
 });
 var r, Chunk735438 = require("./735438.js"),
   a = require.n(Chunk735438),
@@ -49,22 +49,22 @@ let P = new Chunk626584.A("ConnectionStore"),
   k = null;
 
 function U() {
-  return S.sZ.isClosed() ? (P.verbose("Socket is reconnecting because of starting new session"), S.sZ.connect()) : (P.verbose("Socket is not reconnecting during a new session because it is not closed"), false)
+  return I.sZ.isClosed() ? (P.verbose("Socket is reconnecting because of starting new session"), I.sZ.connect()) : (P.verbose("Socket is not reconnecting during a new session because it is not closed"), false)
 }
 
 function G(e) {
-  e.isSwitchingAccount && S.OV.handleAccountSwitch(), P.verbose("Closing socket because of logout"), S.sZ.close()
+  e.isSwitchingAccount && I.OV.handleAccountSwitch(), P.verbose("Closing socket because of logout"), I.sZ.close()
 }
 
 function V() {
   return P.verbose("session refresh dispatched", {
-    isEstablished: S.sZ.isSessionEstablished()
-  }), !!S.sZ.isSessionEstablished() && (S.sZ.close(), S.sZ.connect())
+    isEstablished: I.sZ.isSessionEstablished()
+  }), !!I.sZ.isSessionEstablished() && (I.sZ.close(), I.sZ.connect())
 }
 async function F(e) {
-  x = Date.now(), L = e.sessionId, S.OV.handleConnectionOpen();
+  x = Date.now(), L = e.sessionId, I.OV.handleConnectionOpen();
   let t = {},
-    n = b.A.getVoiceChannelId();
+    n = y.A.getVoiceChannelId();
   if (null != n) {
     var r, i, a, s, o, c, u, f;
     if ((null == (o = window) || null == (s = o.performance) || null == (a = s.getEntriesByType) || null == (i = a.call(s, "navigation")) || null == (r = i[0]) ? true : r.type) !== "reload" && (null == (c = await (null == w || null == (f = w.processUtils) || null == (u = f.getLastCrash) ? true : u.call(f))) ? true : c.rendererCrashReason) == null && j) g.A.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
@@ -76,7 +76,7 @@ async function F(e) {
       }, (0, d.CX)(n))
     }
   }
-  S.Xo.update(t, true), j = false, k = null
+  I.Xo.update(t, true), j = false, k = null
 }
 
 function B() {
@@ -88,18 +88,18 @@ function H() {
 }
 
 function Y(e) {
-  return e.resetSocket && (S.sZ.close(), S.sZ.dispatcher.clear(), S.sZ.connect()), false
+  return e.resetSocket && (I.sZ.close(), I.sZ.dispatcher.clear(), I.sZ.connect()), false
 }
 
 function W(e) {
-  return S.Xo.update({
+  return I.Xo.update({
     guildId: e.guildId,
     channelId: e.channelId
-  }), k = e.lockVoiceStateForResume && null != e.channelId ? e.channelId : null, (0, A.isIOS)() && M === C.g6G.BACKGROUND && (null == e.channelId ? S.sZ.close(true) : S.sZ.isClosed() && (I.V(false), S.sZ.connect())), false
+  }), k = e.lockVoiceStateForResume && null != e.channelId ? e.channelId : null, (0, v.isIOS)() && M === C.g6G.BACKGROUND && (null == e.channelId ? I.sZ.close(true) : I.sZ.isClosed() && (S.V(false), I.sZ.connect())), false
 }
 
 function K() {
-  S.Xo.update()
+  I.Xo.update()
 }
 
 function z(e) {
@@ -115,13 +115,13 @@ function q(e) {
     if (p.default.getId() !== t.userId) return e;
     if (t.sessionId === L) {
       if (null != k) return P.verbose("Ignoring voice state for own session due to VSU lock on channel:", k), e;
-      S.Xo.setState({
+      I.Xo.setState({
         guildId: t.guildId,
         channelId: t.channelId
       })
     } else {
-      if (t.guildId !== S.Xo.guildId) return e;
-      S.Xo.setState({
+      if (t.guildId !== I.Xo.guildId) return e;
+      I.Xo.setState({
         guildId: null,
         channelId: null
       })
@@ -131,7 +131,7 @@ function q(e) {
 }
 
 function X(e) {
-  e.guild.id === S.Xo.guildId && S.Xo.setState({
+  e.guild.id === I.Xo.guildId && I.Xo.setState({
     guildId: null,
     channelId: null
   })
@@ -141,9 +141,9 @@ function Z(e) {
   let {
     channelId: t
   } = e;
-  if (t === S.Xo.channelId) {
+  if (t === I.Xo.channelId) {
     if (k === t) returnfalse;
-    S.Xo.setState({
+    I.Xo.setState({
       guildId: null,
       channelId: null
     })
@@ -154,7 +154,7 @@ function Q(e) {
   let {
     channel: t
   } = e;
-  t.id === S.Xo.channelId && S.Xo.setState({
+  t.id === I.Xo.channelId && I.Xo.setState({
     guildId: null,
     channelId: null
   })
@@ -162,28 +162,28 @@ function Q(e) {
 
 function $(e) {
   if (e.state !== C.S7L.DISCONNECTED) returnfalse;
-  e.willReconnect && (null != e.streamKey ? S.sZ.streamPing(e.streamKey) : S.sZ.voiceServerPing())
+  e.willReconnect && (null != e.streamKey ? I.sZ.streamPing(e.streamKey) : I.sZ.voiceServerPing())
 }
 
 function J(e) {
-  return (0, A.isIOS)() ? (p.default.isAuthenticated() && (M === C.g6G.INACTIVE && e.state === C.g6G.BACKGROUND && null == S.Xo.channelId ? S.sZ.close(true) : M === C.g6G.BACKGROUND && e.state === C.g6G.ACTIVE && S.sZ.isClosed() && (I.V(false), S.sZ.connect())), M = e.state) : e.state === C.g6G.ACTIVE && (I.V(false), p.default.isAuthenticated() && S.sZ.resetBackoff("App state is active")), false
+  return (0, v.isIOS)() ? (p.default.isAuthenticated() && (M === C.g6G.INACTIVE && e.state === C.g6G.BACKGROUND && null == I.Xo.channelId ? I.sZ.close(true) : M === C.g6G.BACKGROUND && e.state === C.g6G.ACTIVE && I.sZ.isClosed() && (S.V(false), I.sZ.connect())), M = e.state) : e.state === C.g6G.ACTIVE && (S.V(false), p.default.isAuthenticated() && I.sZ.resetBackoff("App state is active")), false
 }
 
 function ee() {
-  return S.Xo.update(), false
+  return I.Xo.update(), false
 }
 
 function et() {
-  return S.OV.update(), false
+  return I.OV.update(), false
 }
 
 function en(e) {
-  return S.sZ.isSessionEstablished() && ("userIds" in e ? a()(e.userIds).chunk(D).forEach(t => {
-    S.sZ.requestGuildMembers(e.guildIds, {
+  return I.sZ.isSessionEstablished() && ("userIds" in e ? a()(e.userIds).chunk(D).forEach(t => {
+    I.sZ.requestGuildMembers(e.guildIds, {
       userIds: t,
       presences: !!e.presences
     })
-  }) : S.sZ.requestGuildMembers(e.guildIds, {
+  }) : I.sZ.requestGuildMembers(e.guildIds, {
     query: e.query,
     limit: e.limit,
     presences: !!e.presences
@@ -196,7 +196,7 @@ function er(e) {
     query: n,
     continuationToken: r
   } = e;
-  S.sZ.isSessionEstablished() && S.sZ.searchRecentMembers(t, {
+  I.sZ.isSessionEstablished() && I.sZ.searchRecentMembers(t, {
     query: n,
     continuationToken: r
   })
@@ -206,22 +206,22 @@ function ei(e) {
   let {
     subscriptions: t
   } = e;
-  return S.sZ.isSessionEstablished() && S.sZ.updateGuildSubscriptions(t), false
+  return I.sZ.isSessionEstablished() && I.sZ.updateGuildSubscriptions(t), false
 }
 
 function ea(e) {
   let {
     channelId: t
   } = e;
-  return S.sZ.isSessionEstablished() && S.sZ.callConnect(t), false
+  return I.sZ.isSessionEstablished() && I.sZ.callConnect(t), false
 }
 
 function es(e) {
   let {
     channelIds: t
   } = e;
-  return S.sZ.isSessionEstablished() && t.forEach(e => {
-    S.sZ.callConnect(e)
+  return I.sZ.isSessionEstablished() && t.forEach(e => {
+    I.sZ.callConnect(e)
   }), false
 }
 
@@ -230,11 +230,11 @@ function eo(e) {
     sessionId: t,
     payload: n
   } = e;
-  return S.sZ.isSessionEstablished() && S.sZ.remoteCommand(t, n), false
+  return I.sZ.isSessionEstablished() && I.sZ.remoteCommand(t, n), false
 }
 
 function el(e) {
-  S.sZ.isSessionEstablished() && S.sZ.streamDelete(e)
+  I.sZ.isSessionEstablished() && I.sZ.streamDelete(e)
 }
 
 function ec() {
@@ -252,10 +252,10 @@ function ed(e) {
     guildId: n,
     channelId: r
   } = e;
-  if (S.sZ.isSessionEstablished()) {
+  if (I.sZ.isSessionEstablished()) {
     var i, a;
     let e = null != n ? null == (i = h.A.getChannel(r)) ? true : i.rtcRegion : null == (a = _.A.getCall(r)) ? true : a.region;
-    S.sZ.streamCreate(t, n, r, null != e ? e : E.A.getPreferredRegion())
+    I.sZ.streamCreate(t, n, r, null != e ? e : E.A.getPreferredRegion())
   }
   returnfalse
 }
@@ -265,7 +265,7 @@ function ef(e) {
     streamKey: t,
     paused: n
   } = e;
-  S.sZ.isSessionEstablished() && S.sZ.streamSetPaused(t, n)
+  I.sZ.isSessionEstablished() && I.sZ.streamSetPaused(t, n)
 }
 
 function ep(e) {
@@ -273,7 +273,7 @@ function ep(e) {
     streamKey: t,
     allowMultiple: n
   } = e;
-  return S.sZ.isSessionEstablished() && (n || ec(), S.sZ.streamWatch(t)), false
+  return I.sZ.isSessionEstablished() && (n || ec(), I.sZ.streamWatch(t)), false
 }
 
 function e_(e) {
@@ -284,7 +284,7 @@ function e_(e) {
 }
 
 function eh() {
-  return S.sZ.expeditedHeartbeat(5e3, "user clicked on notification", true), false
+  return I.sZ.expeditedHeartbeat(5e3, "user clicked on notification", true), false
 }
 
 function em(e) {
@@ -293,41 +293,41 @@ function em(e) {
     channelId: n,
     threads: r
   } = e;
-  S.sZ.requestForumUnreads(t, n, r)
+  I.sZ.requestForumUnreads(t, n, r)
 }
 
 function eg(e) {
-  S.sZ.connectionState !== v.A.WILL_RECONNECT && S.sZ.resetSocketOnError(e.args)
+  I.sZ.connectionState !== A.A.WILL_RECONNECT && I.sZ.resetSocketOnError(e.args)
 }
 
 function eE(e) {
   let {
     guildIds: t
   } = e;
-  S.sZ.requestSoundboardSounds(t)
+  I.sZ.requestSoundboardSounds(t)
 }
-class eb extends(r = Chunk311907.Ay.Store) {
+class ey extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(p.default, _.A, h.A, m.A, g.A, E.A, b.A, y.A, O.A, f.A), this.syncWith([m.A], ee), this.syncWith([y.A], et)
+    this.waitFor(p.default, _.A, h.A, m.A, g.A, E.A, y.A, b.A, O.A, f.A), this.syncWith([m.A], ee), this.syncWith([b.A], et)
   }
   getSocket() {
-    return S.sZ
+    return I.sZ
   }
   isTryingToConnect() {
-    return !S.sZ.isClosed()
+    return !I.sZ.isClosed()
   }
   isConnected() {
-    return S.sZ.isSessionEstablished()
+    return I.sZ.isSessionEstablished()
   }
   isConnectedOrOverlay() {
-    return S.sZ.isSessionEstablished() || __OVERLAY__
+    return I.sZ.isSessionEstablished() || __OVERLAY__
   }
   lastTimeConnectedChanged() {
     return x
   }
 }
-R(eb, "displayName", "GatewayConnectionStore");
-let ey = new eb(Chunk73153.h, {
+R(ey, "displayName", "GatewayConnectionStore");
+let eb = new ey(Chunk73153.h, {
   START_SESSION: U,
   LOGIN_SUCCESS: V,
   LOGOUT: G,

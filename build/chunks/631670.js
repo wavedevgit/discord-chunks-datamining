@@ -3,21 +3,21 @@
 "use strict";
 require.d(exports, {
   $I: () => g,
-  Ch: () => A,
+  Ch: () => v,
   Cw: () => f,
   F7: () => C,
   IM: () => T,
-  U6: () => b,
+  U6: () => y,
   U_: () => _,
   Uo: () => p,
-  VG: () => y,
+  VG: () => b,
   WR: () => O,
   _e: () => N,
-  dM: () => v,
+  dM: () => A,
   fw: () => R,
   gt: () => h,
-  pZ: () => I,
-  x8: () => S,
+  pZ: () => S,
+  x8: () => I,
   yu: () => m,
   zq: () => E
 });
@@ -95,15 +95,15 @@ function m(e) {
     avatarDecoration: m,
     newPassword: g,
     globalName: E,
-    legacyUsername: b,
-    nameplate: y,
+    legacyUsername: y,
+    nameplate: b,
     primaryGuildId: O,
-    displayNameStyles: A
+    displayNameStyles: v
   } = e;
   s.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT"
   });
-  let v = {
+  let A = {
     username: r,
     email: o,
     email_token: l,
@@ -113,15 +113,15 @@ function m(e) {
     avatar_id: _,
     discriminator: a,
     global_name: E,
-    legacy_username: b,
+    legacy_username: y,
     new_password: g
   };
-  true !== m && (v.avatar_decoration_sku_id = null != (t = null == m ? true : m.skuId) ? t : null), true !== y && (v.nameplate_sku_id = null != (n = null == y ? true : y.skuId) ? n : null), true !== O && (v.primary_guild_id = O), null != A ? (v.display_name_font_id = A.fontId, v.display_name_effect_id = A.effectId, v.display_name_colors = A.colors) : null === A && (v.display_name_font_id = null, v.display_name_effect_id = null, v.display_name_colors = null);
-  let S = i.w.get(c.Xlh),
-    I = (0, u.oH)();
-  null != I && null != S && (v.push_provider = I, v.push_token = S);
+  true !== m && (A.avatar_decoration_sku_id = null != (t = null == m ? true : m.skuId) ? t : null), true !== b && (A.nameplate_sku_id = null != (n = null == b ? true : b.skuId) ? n : null), true !== O && (A.primary_guild_id = O), null != v ? (A.display_name_font_id = v.fontId, A.display_name_effect_id = v.effectId, A.display_name_colors = v.colors) : null === v && (A.display_name_font_id = null, A.display_name_effect_id = null, A.display_name_colors = null);
+  let I = i.w.get(c.Xlh),
+    S = (0, u.oH)();
+  null != S && null != I && (A.push_provider = S, A.push_token = I);
   let T = i.w.get(c.Ahp);
-  return null != u.vz && null != T && (v.push_voip_provider = u.vz, v.push_voip_token = T), h(v).then(e => (s.h.dispatch({
+  return null != u.vz && null != T && (A.push_voip_provider = u.vz, A.push_voip_token = T), h(A).then(e => (s.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS"
   }), (null != f || null != _) && s.h.dispatch({
     type: "RECENT_AVATARS_UPDATE"
@@ -149,14 +149,14 @@ function E(e) {
   }), null == e ? a.OR.announce(d.intl.string(d.t["f1+oNk"])) : a.OR.announce(d.intl.string(d.t.NstziV))
 }
 
-function b(e) {
+function y(e) {
   s.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME",
     globalName: e
   })
 }
 
-function y(e) {
+function b(e) {
   s.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_LEGACY_USERNAME_DISABLED",
     legacyUsernameDisabled: e
@@ -170,27 +170,27 @@ function O(e) {
   })
 }
 
-function A(e) {
+function v(e) {
   s.h.dispatch({
     type: "USER_SETTINGS_SET_PENDING_PRIMARY_GUILD_ID",
     primaryGuildId: e
   })
 }
 
-function v(e) {
+function A(e) {
   s.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_DISPLAY_NAME_STYLES",
     displayNameStyles: e
   })
 }
 
-function S() {
+function I() {
   s.h.dispatch({
     type: "USER_SETTINGS_CLEAR_ERRORS"
   })
 }
 
-function I() {
+function S() {
   s.h.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES"
   })

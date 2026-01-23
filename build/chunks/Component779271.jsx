@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk402216 = require("./402216.jsx"),
   Chunk667992 = require("./667992.jsx"),
@@ -18,41 +18,41 @@ let d = Chunk64700.memo(function(e) {
     onClick: l,
     className: i,
     collapsed: d,
-    speakers: f,
-    channel: p,
-    isStreamLive: h
+    speakers: p,
+    channel: h,
+    isStreamLive: f
   } = e;
-  return (0, r.jsxs)(s.DUT, {
+  return (0, r.jsxs)(a.DUT, {
     onClick: l,
-    className: a()(u.kL, i),
-    children: [null == f ? (0, r.jsx)(s.nFg, {
+    className: s()(u.kL, i),
+    children: [null == p ? (0, r.jsx)(a.nFg, {
       size: "custom",
       color: "currentColor",
       width: 20,
       height: 20,
       className: u.Vo
-    }) : (0, r.jsx)(s.cNw, {
+    }) : (0, r.jsx)(a.cNw, {
       size: "custom",
       color: "currentColor",
       width: 20,
       height: 20,
       className: u.Vo
-    }), (0, r.jsxs)(s.Text, {
+    }), (0, r.jsxs)(a.Text, {
       color: "text-strong",
       variant: "text-md/semibold",
       className: u.Qq,
       children: [t, " — ", n]
-    }), d && null != p && null != f && f.length > 0 && (0, r.jsxs)(r.Fragment, {
+    }), d && null != h && null != p && p.length > 0 && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.A, {
-        channel: p,
-        speakers: f
-      }), h && (0, r.jsx)(o.Ay, {})]
-    }), (0, r.jsx)(s.abt, {
+        channel: h,
+        speakers: p
+      }), f && (0, r.jsx)(o.Ay, {})]
+    }), (0, r.jsx)(a.abt, {
       size: "custom",
       color: "currentColor",
       width: 20,
       height: 20,
-      className: a()(u.mw, {
+      className: s()(u.mw, {
         [u.VU]: d
       })
     })]

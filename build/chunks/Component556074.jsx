@@ -1,9 +1,9 @@
 /** Chunk was on 52986 **/
-/** chunk id: 556074, original params: e,t,r (module,exports,require) **/
+/** chunk id: 556074, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  VerifyAccountDeekLink: () => g,
-  VerifyAccountLoading: () => E,
-  default: () => w
+  VerifyAccountDeekLink: () => E,
+  VerifyAccountLoading: () => w,
+  default: () => g
 }), require("./896048.js"), require("./747238.js"), require("./812715.js"), require("./492834.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,124 +24,124 @@ var Chunk627968 = require("./627968.js"),
   Chunk538644 = require("./538644.js");
 let b = null != window.opener;
 
-function w() {
+function g() {
   var e, t;
-  let r = (0, l.W6)(),
+  let n = (0, c.W6)(),
     i = (0, f.o)(),
-    u = i.get("code"),
+    s = i.get("code"),
     O = i.get("oauth_verifier"),
     S = null != (e = i.get("state")) ? e : "",
     C = i.get("loading"),
-    w = null != (t = i.get("iss")) ? t : true,
+    g = null != (t = i.get("iss")) ? t : true,
     {
       type: j
-    } = (0, l.g)(),
-    A = (0, y.mw)(j),
-    [R, T] = c.useState(false),
-    [x, D] = c.useState(false),
+    } = (0, c.g)(),
+    A = (0, m.mw)(j),
+    [R, T] = l.useState(false),
+    [D, x] = l.useState(false),
     I = (0, d.A)(),
-    k = null == O ? null != u ? u : "" : O;
-  c.useEffect(() => {
+    k = null == O ? null != s ? s : "" : O;
+  l.useEffect(() => {
     let e;
     if (null != C) return;
     for (let t of i.keys()) t.startsWith("openid.") && (null == e && (e = {}), e[t] = i.get(t));
-    let t = (0, y.mw)(j);
+    let t = (0, m.mw)(j);
     !async function() {
       if (null == t || !p.A.isSupported(t)) return;
 
-      function n(e) {
+      function r(e) {
         let {
-          status: n,
-          body: c
+          status: r,
+          body: l
         } = e;
         if (null != t) {
-          if (null == c ? true : c.redirect) {
-            window.location = c.redirect;
+          if (null == l ? true : l.redirect) {
+            window.location = l.redirect;
             return
           }
-          if ([200, 204].includes(n)) {
-            r.replace(m.BVt.CONNECTIONS_SUCCESS(t)), b && window.close();
+          if ([200, 204].includes(r)) {
+            n.replace(y.BVt.CONNECTIONS_SUCCESS(t)), b && window.close();
             return
-          }(null == c ? true : c.code) != null && i.append("error-code", c.code), r.replace("".concat(m.BVt.CONNECTIONS_ERROR(t), "?").concat(i.toString()))
+          }(null == l ? true : l.code) != null && i.append("error-code", l.code), n.replace("".concat(y.BVt.CONNECTIONS_ERROR(t), "?").concat(i.toString()))
         }
       }
-      if (await h({
+      if (await _({
           platformType: t,
           code: k,
           state: S,
           openidParams: e,
-          iss: w,
-          handleCallbackResponse: n
+          iss: g,
+          handleCallbackResponse: r
         })) return;
-      let c = await v(t, S, k, e, w);
-      0 === c ? T(true) : 1 === c ? r.replace("".concat(m.BVt.CONNECTIONS_ERROR(t), "?").concat(i.toString())) : 3 === c ? a.Fr ? D(true) : r.replace("".concat(m.BVt.CONNECTIONS_ERROR(t), "?").concat(i.toString())) : _({
+      let l = await v(t, S, k, e, g);
+      0 === l ? T(true) : 1 === l ? n.replace("".concat(y.BVt.CONNECTIONS_ERROR(t), "?").concat(i.toString())) : 3 === l ? a.Fr ? x(true) : n.replace("".concat(y.BVt.CONNECTIONS_ERROR(t), "?").concat(i.toString())) : h({
         platformType: t,
         state: S,
-        handleCallbackResponse: n,
+        handleCallbackResponse: r,
         handleCallbackError: e => {
-          var n;
-          (null == e || null == (n = e.body) ? true : n.code) != null && i.append("error-code", e.body.code), r.replace("".concat(m.BVt.CONNECTIONS_ERROR(t), "?").concat(i.toString()))
+          var r;
+          (null == e || null == (r = e.body) ? true : r.code) != null && i.append("error-code", e.body.code), n.replace("".concat(y.BVt.CONNECTIONS_ERROR(t), "?").concat(i.toString()))
         },
         openidParams: e,
         code: k,
-        iss: w
+        iss: g
       })
     }()
-  }, [k, r, C, j, i, S, w]), c.useEffect(() => {
+  }, [k, n, C, j, i, S, g]), l.useEffect(() => {
     let e;
     if (!R) return;
     let t = 0;
-    async function n() {
+    async function r() {
       if (null == A) return;
       let {
-        handoff_status: c,
-        success_redirect: l
-      } = (await s.A.getHandoffStatus(A, S)).body;
-      if (c === o.N.HANDOFF_SUCCESS)
-        if (null == N.A.toURLSafe(l)) return r.replace(m.BVt.CONNECTIONS_SUCCESS(A));
+        handoff_status: l,
+        success_redirect: c
+      } = (await u.A.getHandoffStatus(A, S)).body;
+      if (l === o.N.HANDOFF_SUCCESS)
+        if (null == N.A.toURLSafe(c)) return n.replace(y.BVt.CONNECTIONS_SUCCESS(A));
         else {
-          window.location = l;
+          window.location = c;
           return
-        } if (c === o.N.HANDOFF_ERROR || t >= 10) return r.replace(m.BVt.CONNECTIONS_ERROR(A));
+        } if (l === o.N.HANDOFF_ERROR || t >= 10) return n.replace(y.BVt.CONNECTIONS_ERROR(A));
       e = setTimeout(() => {
-        I() && (t += 1, n())
+        I() && (t += 1, r())
       }, 1e3)
     }
-    return n(), () => {
+    return r(), () => {
       null != e && clearTimeout(e)
     }
-  }, [I, r, A, R, S]);
-  let P = c.useMemo(() => {
-    if (null != A) return "discord://".concat(m.BVt.CONNECTIONS(A), "/?").concat(i.toString())
+  }, [I, n, A, R, S]);
+  let P = l.useMemo(() => {
+    if (null != A) return "discord://".concat(y.BVt.CONNECTIONS(A), "/?").concat(i.toString())
   }, [A, i]);
-  return null != A && p.A.isSupported(A) ? x ? (0, n.jsx)(g, {
+  return null != A && p.A.isSupported(A) ? D ? (0, r.jsx)(E, {
     platformType: A,
     deeplink: P,
     onClick: () => {
-      D(false), T(true)
+      x(false), T(true)
     }
-  }) : (0, n.jsx)(E, {
+  }) : (0, r.jsx)(w, {
     platformType: A
   }) : null
 }
 
-function E(e) {
+function w(e) {
   let {
     platformType: t
-  } = e, r = p.A.get(t);
-  return (0, n.jsxs)(y.mP, {
+  } = e, n = p.A.get(t);
+  return (0, r.jsxs)(m.mP, {
     platformType: t,
-    children: [(0, n.jsx)("div", {
+    children: [(0, r.jsx)("div", {
       className: C.iU,
       children: S.intl.format(S.t.AOKOe7, {
-        name: r.name
+        name: n.name
       })
-    }), (0, n.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: C.UD,
-      children: (0, n.jsx)(i.$n, {
+      children: (0, r.jsx)(i.$n, {
         className: C.HM,
         disabled: true,
-        children: (0, n.jsx)(u.y$y, {
+        children: (0, r.jsx)(s.y$y, {
           itemClassName: C.$N
         })
       })
@@ -149,27 +149,27 @@ function E(e) {
   })
 }
 
-function g(e) {
+function E(e) {
   let {
     deeplink: t,
-    onClick: r,
-    platformType: c
-  } = e, l = p.A.get(c);
-  return (0, n.jsx)(y.mP, {
-    platformType: c,
-    children: (0, n.jsxs)("div", {
+    onClick: n,
+    platformType: l
+  } = e, c = p.A.get(l);
+  return (0, r.jsx)(m.mP, {
+    platformType: l,
+    children: (0, r.jsxs)("div", {
       className: C.UD,
-      children: [(0, n.jsx)("div", {
+      children: [(0, r.jsx)("div", {
         className: C.iU,
         children: S.intl.format(S.t["6ig6i5"], {
-          connectionName: l.name
+          connectionName: c.name
         })
-      }), (0, n.jsx)(u.DUT, {
+      }), (0, r.jsx)(s.DUT, {
         tag: "a",
         href: t,
-        onClick: r,
+        onClick: n,
         target: "_self",
-        children: (0, n.jsx)(i.$n, {
+        children: (0, r.jsx)(i.$n, {
           className: C.HM,
           children: S.intl.string(S.t.flvacA)
         })
@@ -177,51 +177,51 @@ function g(e) {
     })
   })
 }
-async function h(e) {
+async function _(e) {
   let {
     platformType: t,
-    code: r,
-    state: n,
-    openidParams: c,
-    iss: l,
+    code: n,
+    state: r,
+    openidParams: l,
+    iss: c,
     handleCallbackResponse: o
   } = e;
   if (a.Fr || b) returnfalse;
   try {
-    var i, u;
-    let e = await O.default.request(m.e$_.CONNECTIONS_CALLBACK, (i = function(e) {
+    var i, s;
+    let e = await O.default.request(y.e$_.CONNECTIONS_CALLBACK, (i = function(e) {
       for (var t = 1; t < arguments.length; t++) {
-        var r = null != arguments[t] ? arguments[t] : {},
-          n = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(r, e).enumerable
-        }))), n.forEach(function(t) {
-          var n;
-          n = r[t], t in e ? Object.defineProperty(e, t, {
-            value: n,
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = n
+          }) : e[t] = r
         })
       }
       return e
     }({}, {
-      code: r,
-      openid_params: c,
-      iss: l,
-      state: n
-    }), u = {
+      code: n,
+      openid_params: l,
+      iss: c,
+      state: r
+    }), s = {
       providerType: t
-    }, u = null != u ? u : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
-      var r = Object.keys(e);
+    }, s = null != s ? s : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+      var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var n = Object.getOwnPropertySymbols(e);
-        r.push.apply(r, n)
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
       }
-      return r
-    })(Object(u)).forEach(function(e) {
-      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(u, e))
+      return n
+    })(Object(s)).forEach(function(e) {
+      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
     }), i)).finally(() => {
       O.default.disconnect()
     });
@@ -230,35 +230,35 @@ async function h(e) {
     returnfalse
   }
 }
-async function v(e, t, r, n, c) {
+async function v(e, t, n, r, l) {
   try {
-    return await s.A.sessionHandoff(e, t, r, n, c), 0
+    return await u.A.sessionHandoff(e, t, n, r, l), 0
   } catch (e) {
-    var l, a;
-    if ((null == e || null == (l = e.body) ? true : l.code) === 10020) return 2;
+    var c, a;
+    if ((null == e || null == (c = e.body) ? true : c.code) === 10020) return 2;
     if ((null == e || null == (a = e.body) ? true : a.code) === 40001) return 3;
     return 1
   }
 }
-async function _(e) {
+async function h(e) {
   let {
     platformType: t,
-    state: r,
-    handleCallbackResponse: n,
-    handleCallbackError: c,
-    openidParams: l,
+    state: n,
+    handleCallbackResponse: r,
+    handleCallbackError: l,
+    openidParams: c,
     code: a,
     iss: o
   } = e;
   try {
-    let e = await s.A.callback(t, {
+    let e = await u.A.callback(t, {
       code: a,
-      openid_params: l,
-      state: r,
+      openid_params: c,
+      state: n,
       iss: o
     }, !b);
-    return n(e), true
+    return r(e), true
   } catch (e) {
-    return c(e), true
+    return l(e), true
   }
 }

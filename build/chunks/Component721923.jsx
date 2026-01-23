@@ -26,7 +26,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk737211 = require("./737211.js");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -89,7 +89,7 @@ let w = e => {
     analyticsLocation: t,
     analyticsSourceLocation: n,
     guild: a,
-    buttonText: S,
+    buttonText: I,
     targetBoostedGuildTier: T,
     onClose: R = () => {},
     closeLayer: w = () => {},
@@ -102,7 +102,7 @@ let w = e => {
     useExpressiveButton: k = false
   } = e, U = N(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent", "useExpressiveButton"]), {
     analyticsLocations: G
-  } = (0, p.Ay)(), V = (0, h.Us)() === y.BRT.POPOUT, [F, B] = i.useState(false), {
+  } = (0, p.Ay)(), V = (0, h.Us)() === b.BRT.POPOUT, [F, B] = i.useState(false), {
     fractionalState: H
   } = (0, _.A)(), Y = (0, o.bG)([m.A], () => m.A.hasFetched);
   i.useEffect(() => {
@@ -114,7 +114,7 @@ let w = e => {
       fractionalState: H
     }),
     q = async () => {
-      B(true), await (0, b.g)({
+      B(true), await (0, y.g)({
         analyticsLocations: G,
         analyticsLocation: t,
         analyticsSourceLocation: n,
@@ -128,14 +128,14 @@ let w = e => {
         intent: M
       }), B(false)
     }, X = g.A.getPremiumTypeSubscription(), Z = (0, r.jsxs)("div", {
-      className: v.x6,
-      children: [j, null != S ? S : A.intl.string(A.t.gKmQ1G)]
+      className: A.x6,
+      children: [j, null != I ? I : v.intl.string(v.t.gKmQ1G)]
     }), Q = false;
   return ((Q = null !== X && !(W.length > 0) && (null == X ? true : X.isPausedOrPausePending) && H === O.xc.NONE) && (Z = (0, r.jsxs)("div", {
-    className: v.x6,
+    className: A.x6,
     children: [(0, r.jsx)(d.XAi, {
       size: "xs",
-      className: v.iA
+      className: A.iA
     }), " ", Z]
   }), U.disabled = true), null != z) ? k ? (0, r.jsx)(c.m_, {
     text: z,
@@ -144,12 +144,12 @@ let w = e => {
       icon: d.XAi,
       iconPosition: "start",
       disabled: true,
-      text: null != S ? S : A.intl.string(A.t.gKmQ1G)
+      text: null != I ? I : v.intl.string(v.t.gKmQ1G)
     })
   }) : (0, r.jsx)(l.A, {
     text: z,
     "aria-label": false,
-    children: e => (0, r.jsx)(d.wLn, C(I(C(I({
+    children: e => (0, r.jsx)(d.wLn, C(S(C(S({
       "data-migration-pending": true
     }, e), {
       disabled: true,
@@ -162,14 +162,14 @@ let w = e => {
     variant: "expressive",
     disabled: Q,
     loading: F,
-    text: null != S ? S : A.intl.string(A.t.gKmQ1G),
+    text: null != I ? I : v.intl.string(v.t.gKmQ1G),
     onClick: q
-  }) : (0, r.jsx)(d.wLn, C(I({
+  }) : (0, r.jsx)(d.wLn, C(S({
     "data-migration-pending": true,
     size: u.$n.Sizes.SMALL
   }, U), {
     className: s()(U.className, {
-      [v.yj]: L
+      [A.yj]: L
     }),
     submitting: F,
     onClick: q,

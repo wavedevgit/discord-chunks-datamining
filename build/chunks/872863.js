@@ -2,7 +2,7 @@
 /** chunk id: 872863, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  OH: () => A,
+  OH: () => v,
   vN: () => g
 });
 var Chunk761799 = require("./761799.js"),
@@ -47,10 +47,10 @@ function E(e, t) {
     i = 8,
     a = 12,
     s = e.getUint32(t);
-  return b(s) ? {
+  return y(s) ? {
     length: e.byteLength - t,
     contentOffset: t + n + r
-  } : y(s) && O(e, t) ? {
+  } : b(s) && O(e, t) ? {
     length: e.getUint32(t + a),
     contentOffset: t + n + r + i
   } : {
@@ -59,11 +59,11 @@ function E(e, t) {
   }
 }
 
-function b(e) {
+function y(e) {
   return 0 === e
 }
 
-function y(e) {
+function b(e) {
   return 1 === e
 }
 
@@ -72,18 +72,18 @@ function O(e, t) {
   return 0 === e.getUint32(t + n)
 }
 
-function A(e) {
+function v(e) {
   if (r.A.USE_EXIF || r.A.USE_XMP || r.A.USE_ICC) {
     let t = {},
-      n = v(e);
-    return n ? (r.A.USE_EXIF && (t.tiffHeaderOffset = S(e, n)), r.A.USE_XMP && (t.xmpChunks = N(n)), r.A.USE_ICC && (t.iccChunks = w(n)), t.hasAppMarkers = true !== t.tiffHeaderOffset || true !== t.xmpChunks || true !== t.iccChunks, t) : {
+      n = A(e);
+    return n ? (r.A.USE_EXIF && (t.tiffHeaderOffset = I(e, n)), r.A.USE_XMP && (t.xmpChunks = N(n)), r.A.USE_ICC && (t.iccChunks = w(n)), t.hasAppMarkers = true !== t.tiffHeaderOffset || true !== t.xmpChunks || true !== t.iccChunks, t) : {
       hasAppMarkers: false
     }
   }
   return {}
 }
 
-function v(e) {
+function A(e) {
   let t = 4,
     n = 4,
     r = 0;
@@ -95,9 +95,9 @@ function v(e) {
   }
 }
 
-function S(e, t) {
+function I(e, t) {
   try {
-    let n = I(t).itemId,
+    let n = S(t).itemId,
       r = T(t, n),
       i = r.baseOffset + r.extents[0].extentOffset;
     return C(e, i)
@@ -106,7 +106,7 @@ function S(e, t) {
   }
 }
 
-function I(e) {
+function S(e) {
   return e.subBoxes.find(e => "iinf" === e.type).itemInfos.find(e => e.itemType === _)
 }
 

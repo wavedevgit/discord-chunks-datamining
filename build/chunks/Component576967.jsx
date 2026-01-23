@@ -19,13 +19,13 @@ function o(e) {
     t.has(e) && (t.delete(e), n(new Set(t)))
   } : true;
   return (0, r.jsx)("div", {
-    className: i()(s._, {
-      [s.L]: l
+    className: i()(a._, {
+      [a.L]: l
     }),
-    children: Array.from(t).map(e => (0, r.jsx)(a.A, {
+    children: Array.from(t).map(e => (0, r.jsx)(s.A, {
       tag: e,
       onRemove: o,
-      size: null == o ? a.A.Sizes.SMALL : a.A.Sizes.MEDIUM
+      size: null == o ? s.A.Sizes.SMALL : s.A.Sizes.MEDIUM
     }, e.id))
   })
 }

@@ -25,7 +25,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk233080 = require("./233080.js"),
   Chunk710504 = require("./710504.js");
 
-function v(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +34,20 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function I(e, t) {
 }
 
 function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -75,7 +75,7 @@ class C extends Chunk64700.Component {
       isReactionPickerActive: o
     } = this.state;
     if (e.state === E.cmJ.SENDING || (0, c.Lt)(e.flags, E.pr7.EPHEMERAL)) return null;
-    let l = i ? A : O,
+    let l = i ? v : O,
       u = {
         size: "sm",
         color: "currentColor",
@@ -96,28 +96,28 @@ class C extends Chunk64700.Component {
         } = i;
         return (0, r.jsx)(d.m_, {
           asContainer: true,
-          text: y.intl.string(y.t.lfIHs4),
-          children: (0, r.jsxs)(f.DUT, T(S({}, e), {
+          text: b.intl.string(b.t.lfIHs4),
+          children: (0, r.jsxs)(f.DUT, T(I({}, e), {
             innerRef: this.ref,
             tabIndex: a,
             onClick: e => {
               this.handleAddReactionClick(e)
             },
-            onMouseEnter: () => (0, p.K)(b.Vl.AddReactionPopoutMouseEntered),
-            onFocus: () => (0, p.K)(b.Vl.AddReactionPopoutFocused),
+            onMouseEnter: () => (0, p.K)(y.Vl.AddReactionPopoutMouseEntered),
+            onFocus: () => (0, p.K)(y.Vl.AddReactionPopoutFocused),
             className: s()(l.reactionBtn, {
               [l.active]: o
             }, t),
-            children: [(0, r.jsx)(f.nm2, S({}, u)), n]
+            children: [(0, r.jsx)(f.nm2, I({}, u)), n]
           }))
         })
       }
     })
   }
   constructor(...e) {
-    super(...e), v(this, "state", {
+    super(...e), A(this, "state", {
       isReactionPickerActive: false
-    }), v(this, "ref", i.createRef()), v(this, "onAddReaction", (e, t) => {
+    }), A(this, "ref", i.createRef()), A(this, "onAddReaction", (e, t) => {
       if (null == e) return;
       let {
         channel: n,
@@ -127,13 +127,13 @@ class C extends Chunk64700.Component {
       (0, h.BB)(n.id, r.id, (0, m.jq)(e), i ? h.qN.FORUM_TOOLBAR : h.qN.MESSAGE_INLINE_BUTTON, {
         burst: t
       })
-    }), v(this, "handleReactionPickerToggle", () => {
+    }), A(this, "handleReactionPickerToggle", () => {
       this.setState(e => ({
         isReactionPickerActive: !e.isReactionPickerActive
       }))
-    }), v(this, "handleAddReactionClick", e => {
+    }), A(this, "handleAddReactionClick", e => {
       e.stopPropagation(), this.handleReactionPickerToggle()
-    }), v(this, "renderReactionPopout", e => {
+    }), A(this, "renderReactionPopout", e => {
       let {
         closePopout: t
       } = e, {
@@ -161,7 +161,7 @@ class C extends Chunk64700.Component {
             inDialog: t
           } = e;
           return t ? (0, r.jsx)(f.lGe, {
-            "aria-label": y.intl.string(y.t["7Xqzdj"]),
+            "aria-label": b.intl.string(b.t["7Xqzdj"]),
             children: s
           }) : s
         }

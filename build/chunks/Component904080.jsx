@@ -12,7 +12,7 @@ var Chunk716970 = require("./716970.js"),
   Chunk295811 = require("./295811.js"),
   Chunk194878 = require("./194878.js");
 let d = () => {
-  let e = (0, i.bG)([o.A], () => o.A.getShopHomeConfigOverride()),
+  let e = (0, r.bG)([o.A], () => o.A.getShopHomeConfigOverride()),
     t = [{
       id: "none",
       label: "DISABLED (no override)",
@@ -24,7 +24,7 @@ let d = () => {
     }))];
   return (0, a.jsx)("div", {
     className: c.k,
-    children: (0, a.jsx)(r.l6P, {
+    children: (0, a.jsx)(i.l6P, {
       label: "Shop Home Override",
       options: t,
       value: e,

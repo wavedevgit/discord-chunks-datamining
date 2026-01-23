@@ -2,7 +2,7 @@
 /** chunk id: 86933, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,53 +15,53 @@ var Chunk73939 = require("./73939.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk181765 = require("./181765.js");
 
-function f(e) {
+function g(e) {
   let {
     guildId: t,
     existingRules: n
   } = e, {
-    cancelEditingRule: f,
-    isLoading: g,
-    hasChanges: b,
-    editingRule: m,
-    errorMessage: p,
-    saveEditingRule: x
-  } = (0, o.S)(), {
-    updateRule: h
-  } = (0, c.wP)(t), j = null != m, O = j && !(0, a.wC)(m), y = j || b || O, v = async () => {
-    if (!b && !O) return f();
-    null == m || O || h(m);
+    cancelEditingRule: g,
+    isLoading: m,
+    hasChanges: p,
+    editingRule: f,
+    errorMessage: b,
+    saveEditingRule: h
+  } = (0, c.S)(), {
+    updateRule: x
+  } = (0, o.wP)(t), j = null != f, _ = j && !(0, a.wC)(f), O = j || p || _, v = async () => {
+    if (!p && !_) return g();
+    null == f || _ || x(f);
     let e = n.find(e => {
       let {
         id: t
       } = e;
-      return t === (null == m ? true : m.id)
+      return t === (null == f ? true : f.id)
     });
     try {
-      let e = await x(n);
-      null != e && h(e)
+      let e = await h(n);
+      null != e && x(e)
     } catch (t) {
-      null != e && h(e)
+      null != e && x(e)
     }
-  }, A = d.intl.string(d.t["ETE/oC"]), E = !b && j ? d.intl.formatToPlainString(d.t.nula34, {
-    ruleName: null == m ? true : m.name
+  }, y = d.intl.string(d.t["ETE/oC"]), A = !p && j ? d.intl.formatToPlainString(d.t.nula34, {
+    ruleName: null == f ? true : f.name
   }) : true;
-  return null != p && (E = (0, r.jsx)(s.Text, {
+  return null != b && (A = (0, r.jsx)(s.Text, {
     variant: "text-md/normal",
     color: "text-feedback-critical",
     className: u.i,
-    children: p
+    children: b
   })), (0, r.jsx)(i.F, {
     component: "div",
     className: u.n,
-    children: y && (0, r.jsx)(s.FQk, {
+    children: O && (0, r.jsx)(s.FQk, {
       children: (0, r.jsx)(l.A, {
-        submitting: g,
-        disabled: g,
+        submitting: m,
+        disabled: m,
         onSave: v,
-        onReset: f,
-        onResetText: A,
-        message: E
+        onReset: g,
+        onResetText: y,
+        message: A
       })
     })
   })

@@ -1,16 +1,16 @@
 /** Chunk was on 97492 **/
 /** chunk id: 717518, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 });
 var r, l, Chunk735438 = require("./735438.js"),
-  a = require.n(Chunk735438),
+  s = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk71393 = require("./71393.js");
 let u = null,
   d = {};
-class f extends(l = Chunk311907.Ay.Store) {
+class p extends(l = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(c.A)
   }
@@ -23,7 +23,7 @@ class f extends(l = Chunk311907.Ay.Store) {
         optimal: t
       } = e;
       return t
-    })) ? e : a().sample(n) : null
+    })) ? e : s().sample(n) : null
   }
   getOptimalRegionId() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
@@ -33,7 +33,7 @@ class f extends(l = Chunk311907.Ay.Store) {
   getRandomRegion() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
       t = this.getRegions(e);
-    return null != t ? a().sample(t) : null
+    return null != t ? s().sample(t) : null
   }
   getRandomRegionId() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
@@ -43,15 +43,15 @@ class f extends(l = Chunk311907.Ay.Store) {
   getRegions(e) {
     return null != e ? d[e] : u
   }
-}(r = "displayName") in f ? Object.defineProperty(f, r, {
+}(r = "displayName") in p ? Object.defineProperty(p, r, {
   value: "RegionStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : f[r] = "RegionStore";
-let p = new f(Chunk73153.h, {
+}) : p[r] = "RegionStore";
+let h = new p(Chunk73153.h, {
   LOAD_REGIONS: function(e) {
-    let t = a().sortBy(e.regions, e => e.name);
+    let t = s().sortBy(e.regions, e => e.name);
     null != e.guildId ? d[e.guildId] = t : u = t
   },
   GUILD_DELETE: function(e) {

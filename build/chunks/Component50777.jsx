@@ -2,7 +2,7 @@
 /** chunk id: 50777, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,8 +26,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk928625 = require("./928625.js");
 
-function S(e) {
-  var t, n, S, I, T, C, N, R;
+function I(e) {
+  var t, n, I, S, T, C, N, R;
   let {
     guildId: w,
     skuId: P,
@@ -69,34 +69,34 @@ function S(e) {
       })
     }, [L, k]);
   return x && null == L ? (0, r.jsx)("div", {
-    className: v.kL,
+    className: A.kL,
     children: (0, r.jsx)(o.y$y, {
-      className: v.u1
+      className: A.u1
     })
   }) : null == L ? null : (0, r.jsxs)("div", {
-    className: v.kL,
-    children: [(0, r.jsx)(y.A, {
-      className: v.Nr,
+    className: A.kL,
+    children: [(0, r.jsx)(b.A, {
+      className: A.Nr,
       applicationId: L.applicationId,
       skuId: P,
       guildId: w,
-      variant: y.s.EMBEDDED,
+      variant: b.s.EMBEDDED,
       onClick: V,
       analyticsLocations: M
     }), (0, r.jsxs)("div", {
-      className: v.zH,
+      className: A.zH,
       children: [(0, r.jsxs)("div", {
-        className: v.lI,
+        className: A.lI,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/medium",
           lineClamp: 1,
           children: L.name
         }), (0, r.jsxs)("div", {
-          className: v.PB,
+          className: A.PB,
           children: [null != U && (0, r.jsx)("img", {
             src: U.toString(),
             alt: G,
-            className: v.ye
+            className: A.ye
           }), (0, r.jsx)(o.Text, {
             variant: "text-md/bold",
             lineClamp: 1,
@@ -109,16 +109,16 @@ function S(e) {
         children: [(0, r.jsx)(a.$nd, {
           variant: "secondary",
           onClick: V,
-          text: A.intl.string(A.t.KLBTgF),
+          text: v.intl.string(v.t.KLBTgF),
           fullWidth: true
         }), (0, r.jsx)(a.$nd, {
           variant: "primary",
           onClick: F,
-          text: A.intl.format(A.t.Xp5WTn, {
-            price: (0, _.$g)(null != (S = null == (N = L.price) ? true : N.amount) ? S : 0, null != (I = null == (R = L.price) ? true : R.currency) ? I : O.Yr.USD)
+          text: v.intl.format(v.t.Xp5WTn, {
+            price: (0, _.$g)(null != (I = null == (N = L.price) ? true : N.amount) ? I : 0, null != (S = null == (R = L.price) ? true : R.currency) ? S : O.Yr.USD)
           }),
           fullWidth: true
-        }), (0, r.jsx)(b.A, {
+        }), (0, r.jsx)(y.A, {
           onGift: B
         })]
       })]

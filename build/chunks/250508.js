@@ -133,7 +133,7 @@ module.exports = function(e) {
       begin: /@\B/,
       relevance: 0
     },
-    b = {
+    y = {
       className: "function",
       begin: /\[.*\]\s*[\w]+[ ]??\(/,
       end: /$/,
@@ -148,14 +148,14 @@ module.exports = function(e) {
         endsParent: true
       })]
     },
-    y = [b, f, s, e.NUMBER_MODE, c, u, p, o, l, E],
+    b = [y, f, s, e.NUMBER_MODE, c, u, p, o, l, E],
     O = {
       begin: /\[/,
       end: /\]/,
       excludeBegin: true,
       excludeEnd: true,
       relevance: 0,
-      contains: [].concat("self", y, {
+      contains: [].concat("self", b, {
         begin: "(" + t.join("|") + ")",
         className: "built_in",
         relevance: 0
@@ -165,11 +165,11 @@ module.exports = function(e) {
         relevance: 0
       })
     };
-  return b.contains.unshift(O), {
+  return y.contains.unshift(O), {
     name: "PowerShell",
     aliases: ["pwsh", "ps", "ps1"],
     case_insensitive: true,
     keywords: i,
-    contains: y.concat(_, h, m, g, O)
+    contains: b.concat(_, h, m, g, O)
   }
 }

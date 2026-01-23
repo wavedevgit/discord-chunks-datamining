@@ -27,7 +27,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk76397 = require("./76397.js");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,14 +36,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -84,20 +84,20 @@ function R(e) {
       } : true,
       type: m.Ay.Types.ATTACHMENT,
       onReveal: () => c(true),
-      className: s()(v.spoilerContainer, {
-        [v.sizeXSmall]: o === O.L.XSMALL,
-        [v.sizeXXSmall]: o === O.L.XXSMALL
+      className: s()(A.spoilerContainer, {
+        [A.sizeXSmall]: o === O.L.XSMALL,
+        [A.sizeXXSmall]: o === O.L.XXSMALL
       }),
       children: e => (0, r.jsxs)("div", {
-        className: v.spoilerWrapper,
+        className: A.spoilerWrapper,
         children: [a(e), (0, r.jsxs)("div", {
-          className: v.tags,
+          className: A.tags,
           children: [null != t && "" !== t ? (0, r.jsx)("span", {
-            className: v.altTag,
-            children: A.intl.string(A.t.QEW81z)
+            className: A.altTag,
+            children: v.intl.string(v.t.QEW81z)
           }) : null, l && n ? (0, r.jsx)("span", {
-            className: v.altTag,
-            children: A.intl.string(A.t["F+x38C"])
+            className: A.altTag,
+            children: v.intl.string(v.t["F+x38C"])
           }) : null]
         })]
       })
@@ -141,11 +141,11 @@ function w(e) {
       let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
       return null == u ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)("img", {
         src: u,
-        className: s()(v.media, {
-          [v.spoiler]: e,
-          [v.imageSmall]: _,
-          [v.sizeXSmall]: o === O.L.XSMALL,
-          [v.sizeXXSmall]: o === O.L.XXSMALL
+        className: s()(A.media, {
+          [A.spoiler]: e,
+          [A.imageSmall]: _,
+          [A.sizeXSmall]: o === O.L.XSMALL,
+          [A.sizeXXSmall]: o === O.L.XXSMALL
         }),
         "aria-hidden": true,
         alt: null != n ? n : "",
@@ -162,22 +162,22 @@ function w(e) {
         shouldHideMediaOptions: true
       })
     }, [u]),
-    b = (null == t ? true : t.name) != null ? t.name : A.intl.string(A.t.lduvqL),
-    y = null != n && "" !== n ? A.intl.formatToPlainString(A.t["8TRAzR"], {
-      filename: b,
+    y = (null == t ? true : t.name) != null ? t.name : v.intl.string(v.t.lduvqL),
+    b = null != n && "" !== n ? v.intl.formatToPlainString(v.t["8TRAzR"], {
+      filename: y,
       alt: n
-    }) : A.intl.formatToPlainString(A.t.lXoOEZ, {
-      filename: b
+    }) : v.intl.formatToPlainString(v.t.lXoOEZ, {
+      filename: y
     });
   return (0, r.jsx)("div", {
     onMouseEnter: l,
-    className: s()(v.mediaContainer, {
-      [v.imageSmall]: _
+    className: s()(A.mediaContainer, {
+      [A.imageSmall]: _
     }),
     children: (0, r.jsx)(c.DUT, {
       onClick: g,
-      className: v.clickableMedia,
-      "aria-label": y,
+      className: A.clickableMedia,
+      "aria-label": b,
       children: (0, r.jsx)(R, {
         size: o,
         alt: n,
@@ -205,7 +205,7 @@ function P(e) {
     }
   }, [t]), (0, r.jsx)("div", {
     onMouseEnter: l,
-    className: v.mediaContainer,
+    className: A.mediaContainer,
     children: (0, r.jsx)(R, {
       size: o,
       alt: n,
@@ -213,11 +213,11 @@ function P(e) {
       renderContent: e => (0, r.jsx)(_.A, {
         ref: f,
         src: u,
-        className: s()(v.media, {
-          [v.spoiler]: e,
-          [v.sizeClip]: o === O.L.CLIP,
-          [v.sizeXSmall]: o === O.L.XSMALL,
-          [v.sizeXXSmall]: o === O.L.XXSMALL
+        className: s()(A.media, {
+          [A.spoiler]: e,
+          [A.sizeClip]: o === O.L.CLIP,
+          [A.sizeXSmall]: o === O.L.XSMALL,
+          [A.sizeXXSmall]: o === O.L.XXSMALL
         }),
         onError: c,
         preload: "none",
@@ -249,16 +249,16 @@ function D(e) {
     onVideoLoadError: () => c(true)
   }) : (0, r.jsx)("div", {
     onMouseEnter: o,
-    className: s()(v.icon, v[null != (t = n.classification) ? t : ""], {
-      [v.imageSmall]: a === O.L.SMALL,
-      [v.sizeXSmall]: a === O.L.XSMALL,
-      [v.sizeXXSmall]: a === O.L.XXSMALL
+    className: s()(A.icon, A[null != (t = n.classification) ? t : ""], {
+      [A.imageSmall]: a === O.L.SMALL,
+      [A.sizeXSmall]: a === O.L.XSMALL,
+      [A.sizeXXSmall]: a === O.L.XXSMALL
     }),
     children: (0, r.jsx)("div", {
-      className: v.tags,
+      className: A.tags,
       children: n.spoiler ? (0, r.jsx)("span", {
-        className: v.altTag,
-        children: A.intl.string(A.t["F+x38C"])
+        className: A.altTag,
+        children: v.intl.string(v.t["F+x38C"])
       }) : null
     })
   })
@@ -274,12 +274,12 @@ function x(e) {
     size: h = O.L.MEDIUM,
     canEdit: m = true,
     hideFileName: E = false,
-    clip: S
-  } = e, T = null != S, N = (h = T ? O.L.CLIP : h) === O.L.SMALL, R = (0, o.bG)([g.A], () => {
+    clip: I
+  } = e, T = null != I, N = (h = T ? O.L.CLIP : h) === O.L.SMALL, R = (0, o.bG)([g.A], () => {
     var e;
     return null == (e = g.A.getChannel(t)) ? true : e.guild_id
   }), w = e => {
-    e.stopPropagation(), (0, c.qfG)(e => (0, r.jsx)(d.default, C(I({}, e), {
+    e.stopPropagation(), (0, c.qfG)(e => (0, r.jsx)(d.default, C(S({}, e), {
       draftType: n,
       upload: a,
       channelId: t,
@@ -299,11 +299,11 @@ function x(e) {
   };
   return (0, r.jsxs)(O.A, {
     actions: (0, r.jsxs)(i.Fragment, {
-      children: [m ? (0, r.jsx)(y.A, {
+      children: [m ? (0, r.jsx)(b.A, {
         className: s()({
-          [v.action]: N
+          [A.action]: N
         }),
-        tooltip: T ? A.intl.string(A.t.MYgdY2) : A.intl.string(A.t.cuurzA),
+        tooltip: T ? v.intl.string(v.t.MYgdY2) : v.intl.string(v.t.cuurzA),
         onClick: () => u.A.update(t, a.id, n, {
           spoiler: !a.spoiler
         }),
@@ -311,40 +311,40 @@ function x(e) {
           size: "md",
           color: "currentColor",
           className: s()({
-            [v.actionBarIcon]: N
+            [A.actionBarIcon]: N
           })
         }) : (0, r.jsx)(c.bMW, {
           size: "xs",
           color: "currentColor",
           className: s()({
-            [v.actionBarIcon]: N
+            [A.actionBarIcon]: N
           })
         })
-      }) : null, m && !T ? (0, r.jsx)(y.A, {
+      }) : null, m && !T ? (0, r.jsx)(b.A, {
         className: s()({
-          [v.action]: N
+          [A.action]: N
         }),
-        tooltip: A.intl.string(A.t.Y8ujqr),
+        tooltip: v.intl.string(v.t.Y8ujqr),
         onClick: w,
         children: (0, r.jsx)(c.R2l, {
           size: "xs",
           color: "currentColor",
           className: s()({
-            [v.actionBarIcon]: N
+            [A.actionBarIcon]: N
           })
         })
-      }) : null, (0, r.jsx)(y.A, {
+      }) : null, (0, r.jsx)(b.A, {
         className: s()({
-          [v.action]: N
+          [A.action]: N
         }),
-        tooltip: T ? A.intl.string(A.t.MskAXa) : A.intl.string(A.t.vN7REz),
+        tooltip: T ? v.intl.string(v.t.MskAXa) : v.intl.string(v.t.vN7REz),
         onClick: () => u.A.remove(t, a.id, n),
         dangerous: true,
         children: (0, r.jsx)(c.ucK, {
           size: "md",
           color: "currentColor",
           className: s()({
-            [v.actionBarIcon]: N
+            [A.actionBarIcon]: N
           })
         })
       })]
@@ -356,31 +356,31 @@ function x(e) {
     keyboardModeEnabled: f,
     size: h,
     className: s()({
-      [v.attachmentItemSmall]: N
+      [A.attachmentItemSmall]: N
     }),
     children: [(0, r.jsx)(D, {
       upload: a,
       size: h
     }), !E && !T && (0, r.jsx)("div", {
-      className: v.filenameContainer,
+      className: A.filenameContainer,
       "aria-hidden": true,
       children: (0, r.jsx)(c.Text, {
-        className: v.filename,
+        className: A.filename,
         variant: "text-sm/normal",
         children: null != _ ? _ : a.filename
       })
     }), T && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(p.A, {
-        className: v.clipsFooter,
-        createdAt: b.default.extractTimestamp(S.id),
-        participantIds: S.users,
-        applicationId: S.applicationId,
-        title: S.name,
+        className: A.clipsFooter,
+        createdAt: y.default.extractTimestamp(I.id),
+        participantIds: I.users,
+        applicationId: I.applicationId,
+        title: I.name,
         guildId: R
       }), (0, r.jsx)(c.LpS, {
         color: l.A.colors.BACKGROUND_BRAND.css,
-        className: v.clipsBadge,
-        text: A.intl.string(A.t.oA4afG)
+        className: A.clipsBadge,
+        text: v.intl.string(v.t.oA4afG)
       })]
     })]
   })

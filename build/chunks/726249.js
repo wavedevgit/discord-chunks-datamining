@@ -2,10 +2,10 @@
 /** chunk id: 726249, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  HI: () => v,
-  HU: () => A,
+  HI: () => A,
+  HU: () => v,
   cu: () => T,
-  iA: () => b,
+  iA: () => y,
   sF: () => g
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
@@ -98,16 +98,16 @@ function E(e) {
   }
 }
 
-function b(e) {
+function y(e) {
   let t = u(l({}, p, e), {
     id: f++
   });
   return t.count = Math.max(t.count, t.messages.length), _.setState(e => ({
     flashQueue: [...e.flashQueue, t]
-  })), () => y(t.id)
+  })), () => b(t.id)
 }
 
-function y(e) {
+function b(e) {
   _.setState(t => ({
     flashQueue: t.flashQueue.filter(t => t.id !== e)
   }))
@@ -119,15 +119,15 @@ function O() {
   })
 }
 
-function A(e) {
+function v(e) {
   r.useEffect(() => E(e), [...Object.values(e)])
 }
 
-function v(e) {
-  return A(e), null
+function A(e) {
+  return v(e), null
 }
 
-function S() {
+function I() {
   let [e, t] = _(e => {
     let {
       flashQueue: t
@@ -140,12 +140,12 @@ function S() {
       return
     }
     if (document.hasFocus() && t.onlyWhenBlurred) {
-      y(t.id), a(false);
+      b(t.id), a(false);
       return
     }
     let e = setInterval(() => {
       if (s.current >= t.count) {
-        y(t.id), a(false);
+        b(t.id), a(false);
         return
       }
       a(e => !e || (s.current += 1, false))
@@ -154,7 +154,7 @@ function S() {
   }, [t]), n ? o : e
 }
 
-function I() {
+function S() {
   r.useEffect(() => {
     function e() {
       O()
@@ -171,8 +171,8 @@ function T() {
   let {
     skipsSettingDefaultPageTitle: e
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-  I();
-  let t = S();
+  S();
+  let t = I();
   r.useEffect(() => {
     let n = t === d.base;
     e && n || (document.title = t)

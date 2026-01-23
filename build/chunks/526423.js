@@ -2,7 +2,7 @@
 /** chunk id: 526423, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => p
+  A: () => g
 }), require("./896048.js");
 var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
@@ -20,7 +20,7 @@ function h(e, t) {
     handoff_source: t
   })
 }
-class f extends Chunk272355.A {
+class p extends Chunk272355.A {
   _initialize() {
     i.h.subscribe("BROWSER_HANDOFF_END", this.handleEnd), i.h.subscribe("BROWSER_HANDOFF_FROM_APP", this.handleHandoff)
   }
@@ -79,4 +79,4 @@ class f extends Chunk272355.A {
       })
   }
 }
-let p = new f
+let g = new p

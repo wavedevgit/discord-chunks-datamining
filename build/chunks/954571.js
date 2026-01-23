@@ -48,7 +48,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,7 +61,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -72,13 +72,13 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -413,15 +413,15 @@ function Z(e) {
     let {
       location: e
     } = a;
-    a = A({}, I(a, ["location"]), Y(e))
+    a = v({}, S(a, ["location"]), Y(e))
   }
   if (null != a.source) {
     let {
       source: e
     } = a;
-    a = A({}, I(a, ["source"]), W(e))
+    a = v({}, S(a, ["source"]), W(e))
   }
-  a.client_performance_cpu = h.A.getCurrentCPUUsagePercent(), a.client_performance_memory = h.A.getCurrentMemoryUsageKB(), a.cpu_core_count = h.A.getCPUCoreCount(), a.accessibility_features = K(), a.rendered_locale = y.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - G) / w);
+  a.client_performance_cpu = h.A.getCurrentCPUUsagePercent(), a.client_performance_memory = h.A.getCurrentMemoryUsageKB(), a.cpu_core_count = h.A.getCPUCoreCount(), a.accessibility_features = K(), a.rendered_locale = b.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - G) / w);
   let s = h.A.getProcessUptime();
   null != s && (a.uptime_process_renderer = Math.floor(s));
   let {
@@ -482,14 +482,14 @@ let es = (0, Chunk110259.trackMaker)({
 });
 
 function eo(e) {
-  return e === b.S7.GAME || e === b.S7.DEPRECATED_GAME
+  return e === y.S7.GAME || e === y.S7.DEPRECATED_GAME
 }
 
 function el(e, t) {
-  let n = Z(A({
+  let n = Z(v({
     location: (0, u.g$)()
   }, t));
-  (0, u.eE)(e, A({
+  (0, u.eE)(e, v({
     type: "action"
   }, t)), Q(e, n), es(e, n)
 }
@@ -497,7 +497,7 @@ function el(e, t) {
 function ec() {
   return (0, i.A)()
 }
-let eu = S(A({}, Chunk110259), {
+let eu = I(v({}, Chunk110259), {
   getCampaignParams: Chunk110259.getCampaignParams,
   setSystemAccessibilityFeatures: z,
   expandEventProperties: Z,

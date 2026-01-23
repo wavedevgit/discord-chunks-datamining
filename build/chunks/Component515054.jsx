@@ -25,7 +25,7 @@ function O(e) {
   let {
     children: l,
     className: i,
-    scrollerRef: o
+    scrollerRef: s
   } = e, c = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
@@ -43,7 +43,7 @@ function O(e) {
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
   }(e, ["children", "className", "scrollerRef"]);
-  return (0, r.jsx)(s.HOs, (t = function(e) {
+  return (0, r.jsx)(o.HOs, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -61,7 +61,7 @@ function O(e) {
     }
     return e
   }({
-    ref: o,
+    ref: s,
     className: a()(y.gN, i),
     fade: true
   }, c), n = n = {
@@ -85,29 +85,29 @@ function j(e) {
     section: l,
     displayProfile: i,
     guildId: a,
-    channelId: s,
-    onClose: o
+    channelId: o,
+    onClose: s
   } = e;
-  return l === m.RP.ACTIVITY ? (0, r.jsx)(d.A, {
+  return l === b.RP.ACTIVITY ? (0, r.jsx)(d.A, {
     user: t,
     currentUser: n,
     displayProfile: i,
     guildId: a,
-    channelId: s,
-    onClose: o
-  }) : l === m.RP.MUTUAL_FRIENDS ? (0, r.jsx)(f.A, {
+    channelId: o,
+    onClose: s
+  }) : l === b.RP.MUTUAL_FRIENDS ? (0, r.jsx)(f.A, {
     user: t,
     guildId: a,
-    channelId: s,
-    onClose: o
-  }) : l === m.RP.MUTUAL_GUILDS ? (0, r.jsx)(p.A, {
+    channelId: o,
+    onClose: s
+  }) : l === b.RP.MUTUAL_GUILDS ? (0, r.jsx)(p.A, {
     user: t,
-    onClose: o
-  }) : l === m.RP.WIDGETS ? (0, r.jsx)(b.A, {
+    onClose: s
+  }) : l === b.RP.WIDGETS ? (0, r.jsx)(g.A, {
     user: t,
     guildId: a,
-    channelId: s
-  }) : l === m.RP.WISHLIST ? (0, r.jsx)(g.A, {
+    channelId: o
+  }) : l === b.RP.WISHLIST ? (0, r.jsx)(m.A, {
     profileOwner: t
   }) : null
 }
@@ -121,32 +121,32 @@ function x(e) {
     guildId: d,
     channelId: f,
     items: p,
-    initialSection: b,
-    onClose: g
+    initialSection: g,
+    onClose: m
   } = e, {
     trackUserProfileAction: O
-  } = (0, o.NJ)(), [{
+  } = (0, s.NJ)(), [{
     section: x,
     text: h
   }, v] = l.useState(null != (t = p.find(e => {
     let {
       section: t
     } = e;
-    return t === b
+    return t === g
   })) ? t : p[0]);
   return (0, r.jsxs)("div", {
     className: y.kL,
-    children: [(0, r.jsx)(s.HOs, {
+    children: [(0, r.jsx)(o.HOs, {
       orientation: "horizontal",
       className: y.gU,
       fade: true,
       paddingFix: false,
-      children: (0, r.jsx)(s.VQ0, {
+      children: (0, r.jsx)(o.VQ0, {
         type: "top",
         look: "custom",
         selectedItem: x,
         onItemSelect: e => {
-          u.A.hasUnsavedChanges() && x === m.RP.WIDGETS ? c.A.notifyUnsavedWidgets() : (O({
+          u.A.hasUnsavedChanges() && x === b.RP.WIDGETS ? c.A.notifyUnsavedWidgets() : (O({
             action: "PRESS_SECTION",
             section: e
           }), v(t => {
@@ -154,20 +154,20 @@ function x(e) {
             return null != (n = p.find(t => t.section === e)) ? n : t
           }))
         },
-        children: p.map(e => (0, r.jsx)(s.VQ0.Item, {
+        children: p.map(e => (0, r.jsx)(o.VQ0.Item, {
           className: y.YU,
           id: e.section,
           "aria-label": e.text,
           children: e.text
         }, e.section))
       })
-    }), (0, r.jsx)(s.VQ0.Panel, {
+    }), (0, r.jsx)(o.VQ0.Panel, {
       id: x,
       "aria-label": h,
       className: y.NM,
-      children: (0, r.jsx)(s.Fmo, {
-        component: (0, r.jsx)(s.AC4, {
-          children: (0, r.jsx)(s.H, {
+      children: (0, r.jsx)(o.Fmo, {
+        component: (0, r.jsx)(o.AC4, {
+          children: (0, r.jsx)(o.H, {
             children: h
           })
         }),
@@ -178,7 +178,7 @@ function x(e) {
           guildId: d,
           channelId: f,
           section: x,
-          onClose: g
+          onClose: m
         })
       })
     })]

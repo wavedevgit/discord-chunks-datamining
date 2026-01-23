@@ -97,8 +97,8 @@ let h = () => {
       contextMetadata: g
     } = (0, a.P5)(), {
       loadId: E,
-      startTime: b
-    } = g, y = (0, r.useMemo)(() => {
+      startTime: y
+    } = g, b = (0, r.useMemo)(() => {
       var e, r;
       return f(_(f({
         load_id: E,
@@ -119,27 +119,27 @@ let h = () => {
     }, [E, p, t, i, d, n]);
     return {
       emitOrbCheckoutPaymentFlowEvent: (0, r.useCallback)((e, t) => {
-        let n = Date.now() - b;
-        e === c.HAw.PAYMENT_FLOW_STARTED ? o.default.track(c.HAw.PAYMENT_FLOW_STARTED, _(f({}, y), {
+        let n = Date.now() - y;
+        e === c.HAw.PAYMENT_FLOW_STARTED ? o.default.track(c.HAw.PAYMENT_FLOW_STARTED, _(f({}, b), {
           has_saved_payment_source: m,
           payment_gateway: u.ps.VIRTUAL_CURRENCY,
           continue_session_initial_step: null
-        })) : e === c.HAw.PAYMENT_FLOW_LOADED ? o.default.track(c.HAw.PAYMENT_FLOW_LOADED, _(f({}, y), {
+        })) : e === c.HAw.PAYMENT_FLOW_LOADED ? o.default.track(c.HAw.PAYMENT_FLOW_LOADED, _(f({}, b), {
           has_saved_payment_source: m,
           initial_step: s.pn.REVIEW,
           duration_ms: n
-        })) : e === c.HAw.PAYMENT_FLOW_CANCELED ? o.default.track(c.HAw.PAYMENT_FLOW_CANCELED, _(f({}, y), {
+        })) : e === c.HAw.PAYMENT_FLOW_CANCELED ? o.default.track(c.HAw.PAYMENT_FLOW_CANCELED, _(f({}, b), {
           duration_ms: n
-        })) : e === c.HAw.PAYMENT_FLOW_COMPLETED ? o.default.track(c.HAw.PAYMENT_FLOW_COMPLETED, _(f({}, y), {
+        })) : e === c.HAw.PAYMENT_FLOW_COMPLETED ? o.default.track(c.HAw.PAYMENT_FLOW_COMPLETED, _(f({}, b), {
           duration_ms: n
-        })) : e === c.HAw.PAYMENT_FLOW_SUCCEEDED ? o.default.track(c.HAw.PAYMENT_FLOW_SUCCEEDED, _(f({}, y), {
+        })) : e === c.HAw.PAYMENT_FLOW_SUCCEEDED ? o.default.track(c.HAw.PAYMENT_FLOW_SUCCEEDED, _(f({}, b), {
           duration_ms: n
-        })) : e === c.HAw.PAYMENT_FLOW_FAILED && o.default.track(c.HAw.PAYMENT_FLOW_FAILED, f(_(f({}, y), {
+        })) : e === c.HAw.PAYMENT_FLOW_FAILED && o.default.track(c.HAw.PAYMENT_FLOW_FAILED, f(_(f({}, b), {
           duration_ms: n
         }), null != t ? {
           payment_error_code: t.code,
           error_message: t.message
         } : {}))
-      }, [b, y, m])
+      }, [y, b, m])
     }
   }

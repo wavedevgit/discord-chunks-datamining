@@ -50,29 +50,29 @@ function l(e) {
       }
       continue
     }
-    let b = g[1];
-    if (!(b in f) && !a(b)) throw new o(b, s, E);
-    let y = f[b];
+    let y = g[1];
+    if (!(y in f) && !a(y)) throw new o(y, s, E);
+    let b = f[y];
     switch (E) {
       case i.FormatJsNodeType.Argument:
-        "object" == typeof y || "function" == typeof y ? n.pushObject(y) : n.pushLiteralText(String(y));
+        "object" == typeof b || "function" == typeof b ? n.pushObject(b) : n.pushLiteralText(String(b));
         break;
       case i.FormatJsNodeType.Date: {
         let e = g[2],
           t = e in _.date ? _.date[e] : null != e ? (0, r.parseDateTimeSkeleton)(e) : true;
-        n.pushLiteralText(p.formatDate(y, t));
+        n.pushLiteralText(p.formatDate(b, t));
         break
       }
       case i.FormatJsNodeType.Time: {
         let e = g[2],
           t = e in _.time ? _.time[e] : null != e ? (0, r.parseDateTimeSkeleton)(e) : true;
-        n.pushLiteralText(p.formatTime(y, t));
+        n.pushLiteralText(p.formatTime(b, t));
         break
       }
       case i.FormatJsNodeType.Number: {
         let e = g[2],
           i = e in _.number ? _.number[e] : null != e ? (0, r.parseNumberSkeleton)((0, r.parseNumberSkeletonFromString)(e)) : true,
-          a = "number" != typeof y ? y : y * (null != (t = null == i ? true : i.scale) ? t : 1);
+          a = "number" != typeof b ? b : b * (null != (t = null == i ? true : i.scale) ? t : 1);
         n.pushLiteralText(p.formatNumber(a, i));
         break
       }
@@ -99,19 +99,19 @@ function l(e) {
             currentPluralValue: h,
             keyPrefix: `${m}.${e}-control`
           }) : [];
-        if (a(b)) n.pushRichTextTag(b, i, s);
+        if (a(y)) n.pushRichTextTag(y, i, s);
         else {
-          if ("function" != typeof y) throw `expected a function type for a Tag formatting value, ${b}. got ${typeof y}: ${y}`;
-          let t = y(i, `${m}.${e}`);
+          if ("function" != typeof b) throw `expected a function type for a Tag formatting value, ${y}. got ${typeof b}: ${b}`;
+          let t = b(i, `${m}.${e}`);
           for (let e of t = Array.isArray(t) ? t : [t]) "string" == typeof e ? n.pushLiteralText(e) : n.pushObject(e)
         }
         break
       }
       case i.FormatJsNodeType.Select: {
-        let t = y,
+        let t = b,
           r = g[2],
           i = t in r ? r[t] : r.other;
-        if (null == i) throw `${t} is not a known option for select value ${b}. Valid options are ${Object.keys(r).join(", ")}`;
+        if (null == i) throw `${t} is not a known option for select value ${y}. Valid options are ${Object.keys(r).join(", ")}`;
         l({
           builder: n,
           nodes: i,
@@ -129,12 +129,12 @@ function l(e) {
           i = g[4],
           a = (() => {
             var e;
-            let n = `=${y}`;
+            let n = `=${b}`;
             return n in t ? t[n] : null != (e = t[p.getPluralRules({
               type: i
-            }).select(y - (null != r ? r : 0))]) ? e : t.other
+            }).select(b - (null != r ? r : 0))]) ? e : t.other
           })();
-        if (null == a) throw `${y} is not a known option for plural value ${b}. Valid options are ${Object.keys(t).join(", ")}`;
+        if (null == a) throw `${b} is not a known option for plural value ${y}. Valid options are ${Object.keys(t).join(", ")}`;
         l({
           builder: n,
           nodes: a,
@@ -142,7 +142,7 @@ function l(e) {
           dataFormatters: p,
           formatConfig: _,
           values: f,
-          currentPluralValue: y - (null != r ? r : 0),
+          currentPluralValue: b - (null != r ? r : 0),
           keyPrefix: `${m}.${e}`
         })
       }

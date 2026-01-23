@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 750448, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => j
+  A: () => O
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,8 +16,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk583613 = require("./583613.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let g = "app-download-item",
-  m = "add-server-item";
+let m = "app-download-item",
+  b = "add-server-item";
 
 function A() {
   returnfalse
@@ -26,15 +26,15 @@ function A() {
 function y(e) {
   var t;
   let n = o.default.getMutableGuildStates();
-  return e === h.sFm.SERVER_DISCOVERY_BADGE && !d.A.hasViewed(h.sFm.SERVER_DISCOVERY_BADGE) || e !== g && e !== m && (null == (t = n[null != e ? e : "null"]) ? true : t.highImportanceMentionCount) > 0
+  return e === f.sFm.SERVER_DISCOVERY_BADGE && !d.A.hasViewed(f.sFm.SERVER_DISCOVERY_BADGE) || e !== m && e !== b && (null == (t = n[null != e ? e : "null"]) ? true : t.highImportanceMentionCount) > 0
 }
-let O = (0, Chunk583613.L_)((e, t, n) => ["null", ...t, ...e, m, h.sFm.E3_SERVER_DISCOVERY_BADGE, g]),
-  j = Chunk64700.forwardRef(function(e, t) {
+let _ = (0, Chunk583613.L_)((e, t, n) => ["null", ...t, ...e, b, f.sFm.E3_SERVER_DISCOVERY_BADGE, m]),
+  O = Chunk64700.forwardRef(function(e, t) {
     var n, l;
-    let d = (0, i.yK)([u.Ay, c.A, o.default], () => O(u.Ay.getGuildFolders(), c.A.getUnreadPrivateChannelIds(), o.default.getStoreChangeSentinel())),
-      p = (0, i.bG)([f.A], () => f.A.isFocused()),
-      h = (0, i.bG)([s.A], () => s.A.getExpandedFolders());
-    return (0, r.jsx)(a.A, (n = function(e) {
+    let d = (0, i.yK)([u.Ay, c.A, o.default], () => _(u.Ay.getGuildFolders(), c.A.getUnreadPrivateChannelIds(), o.default.getStoreChangeSentinel())),
+      h = (0, i.bG)([p.A], () => p.A.isFocused()),
+      f = (0, i.bG)([a.A], () => a.A.getExpandedFolders());
+    return (0, r.jsx)(s.A, (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -55,11 +55,11 @@ let O = (0, Chunk583613.L_)((e, t, n) => ["null", ...t, ...e, m, h.sFm.E3_SERVER
       ref: t,
       items: d,
       isUnread: A,
-      textUnread: b.intl.string(b.t.y2b7CA),
-      textMention: b.intl.string(b.t.y2b7CA),
+      textUnread: g.intl.string(g.t.y2b7CA),
+      textMention: g.intl.string(g.t.y2b7CA),
       isMentioned: y,
-      animate: p,
-      expandedFolders: h
+      animate: h,
+      expandedFolders: f
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

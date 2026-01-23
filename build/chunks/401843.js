@@ -71,7 +71,7 @@ function w(e, t, n) {
     streamType: null != e ? T.U4.GUILD : T.U4.CALL,
     guildId: e,
     channelId: t,
-    appContext: __OVERLAY__ ? I.BRT.OVERLAY : I.BRT.APP
+    appContext: __OVERLAY__ ? S.BRT.OVERLAY : S.BRT.APP
   }, n))
 }
 
@@ -86,7 +86,7 @@ function P(e, t) {
 
 function D(e, t) {
   let n = m.A.getChannel(t);
-  return i()(null != n, "Cannot join a null voice channel"), !b.A.isInChannel(t) && (0, y.Pd)(n, b.A, g.A)
+  return i()(null != n, "Cannot join a null voice channel"), !y.A.isInChannel(t) && (0, b.Pd)(n, y.A, g.A)
 }
 
 function x(e, t) {
@@ -112,7 +112,7 @@ function x(e, t) {
     type: "STREAM_WATCH",
     streamKey: a,
     allowMultiple: s || n
-  }), (null == t ? true : t.forceFocus) !== true && (s || null != t && t.noFocus) || S.A.selectParticipant(e.channelId, a)
+  }), (null == t ? true : t.forceFocus) !== true && (s || null != t && t.noFocus) || I.A.selectParticipant(e.channelId, a)
 }
 
 function L(e, t) {
@@ -130,7 +130,7 @@ function j(e, t) {
   } = e;
   if (null != n && D(n, r)) return;
   x(e, t);
-  let i = f.A.getWindowOpen(I.MLl.CHANNEL_CALL_POPOUT),
+  let i = f.A.getWindowOpen(S.MLl.CHANNEL_CALL_POPOUT),
     a = E.A.getVoiceChannelId();
   i && a === r || (0, d.A)(e)
 }
@@ -141,7 +141,7 @@ function M(e) {
   n && k(e, t), o.h.dispatch({
     type: "STREAM_STOP",
     streamKey: e,
-    appContext: __OVERLAY__ ? I.BRT.OVERLAY : I.BRT.APP
+    appContext: __OVERLAY__ ? S.BRT.OVERLAY : S.BRT.APP
   })
 }
 
@@ -167,7 +167,7 @@ async function U(e, t, n) {
   });
   try {
     let e = await s.Bo.get({
-      url: I.Rsh.STREAM_PREVIEW(r),
+      url: S.Rsh.STREAM_PREVIEW(r),
       query: {
         version: Date.now()
       },
@@ -190,8 +190,8 @@ async function U(e, t, n) {
 }
 async function G(e) {
   try {
-    await v.A.post({
-      url: I.Rsh.STREAM_NOTIFY(e),
+    await A.A.post({
+      url: S.Rsh.STREAM_NOTIFY(e),
       oldFormErrors: true,
       trackedActionData: {
         event: a.NetworkActionNames.STREAM_NOTIFY
@@ -202,14 +202,14 @@ async function G(e) {
 }
 
 function V(e) {
-  true !== e.noTrack && (0, A.K2)(e.preset, e.resolution, e.frameRate), o.h.dispatch(N({
+  true !== e.noTrack && (0, v.K2)(e.preset, e.resolution, e.frameRate), o.h.dispatch(N({
     type: "STREAM_UPDATE_SETTINGS"
   }, e))
 }
 
 function F(e, t) {
   s.Bo.patch({
-    url: I.Rsh.STREAM(e),
+    url: S.Rsh.STREAM(e),
     body: {
       region: t
     },

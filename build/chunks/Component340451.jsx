@@ -2,7 +2,7 @@
 /** chunk id: 340451, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => _
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,52 +18,52 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function m(e) {
+function f(e) {
   n.g.location.assign(e)
 }
 
-function A(e) {
+function _(e) {
   let {
     location: t,
-    transitionTo: n = m
-  } = e, [s, A] = i.useState("submitting"), x = i.useRef(true);
+    transitionTo: n = f
+  } = e, [s, _] = i.useState("submitting"), A = i.useRef(true);
   (0, o.Ay)(() => {
     (0, h.d)("verify_email");
     let e = (0, c.A)(t);
-    null == e ? A("failed") : (async () => {
+    null == e ? _("failed") : (async () => {
       try {
         let t = await a.A.verify(e);
-        A("succeeded"), x.current = t
+        _("succeeded"), A.current = t
       } catch (e) {
-        A("failed")
+        _("failed")
       }
     })()
   });
-  let _ = i.useCallback(() => {
-      n(p.BVt.LOGIN, {
+  let x = i.useCallback(() => {
+      n(g.BVt.LOGIN, {
         source: "verify_email"
       })
     }, [n]),
     E = i.useCallback(() => {
-      f.default.track(p.HAw.VERIFY_ACCOUNT_APP_OPENED, {
-        verifying_user_id: x.current
+      p.default.track(g.HAw.VERIFY_ACCOUNT_APP_OPENED, {
+        verifying_user_id: A.current
       }), (0, d.A)("verify_email")
     }, []);
   return "failed" === s ? (0, r.jsx)(u.A, {
-    title: g.intl.string(g.t["PCgG3+"]),
-    subtitle: g.intl.string(g.t.tQpeA3),
-    buttonText: g.intl.string(g.t.dKhVQN),
-    onButtonClick: _
+    title: m.intl.string(m.t["PCgG3+"]),
+    subtitle: m.intl.string(m.t.tQpeA3),
+    buttonText: m.intl.string(m.t.dKhVQN),
+    onButtonClick: x
   }) : "succeeded" === s ? (0, r.jsx)(u.A, {
-    title: g.intl.string(g.t["dAfGb+"]),
-    buttonText: g.intl.string(g.t["uJWIj/"]),
+    title: m.intl.string(m.t["dAfGb+"]),
+    buttonText: m.intl.string(m.t["uJWIj/"]),
     onButtonClick: E,
     image: (0, r.jsx)(l.bqQ, {
-      alt: g.intl.string(g.t["dAfGb+"])
+      alt: m.intl.string(m.t["dAfGb+"])
     })
   }) : (0, r.jsx)(u.A, {
-    title: g.intl.string(g.t["0c8+5n"]),
-    subtitle: g.intl.string(g.t.ULTCBE),
+    title: m.intl.string(m.t["0c8+5n"]),
+    subtitle: m.intl.string(m.t.ULTCBE),
     loading: true
   })
 }

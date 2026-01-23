@@ -2,8 +2,8 @@
 /** chunk id: 793367, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $e: () => b,
-  C9: () => y,
+  $e: () => y,
+  C9: () => b,
   H9: () => _,
   NJ: () => d,
   RH: () => O,
@@ -107,14 +107,14 @@ function E(e, t) {
   }, g()))
 }
 
-function b(e, t) {
+function y(e, t) {
   a.default.track(s.HAw.MEDIA_VIEWER_IMAGE_COPIED, l({
     url: e,
     success: t
   }, g()))
 }
 
-function y(e, t) {
+function b(e, t) {
   a.default.track(s.HAw.MEDIA_VIEWER_LINK_COPIED, l({
     href: e,
     success: t

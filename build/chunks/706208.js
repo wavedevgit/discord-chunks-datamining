@@ -23,13 +23,13 @@ let a = {
   m = 18,
   g = 8,
   E = "ICC_PROFILE\0",
-  b = 4 + E.length,
-  y = b + 1,
+  y = 4 + E.length,
+  b = y + 1,
   O = "MPF\0",
-  A = 65472,
-  v = 65474,
-  S = 65476,
-  I = 65499,
+  v = 65472,
+  A = 65474,
+  I = 65476,
+  S = 65499,
   T = 65501,
   C = 65498,
   N = 65504,
@@ -63,8 +63,8 @@ function F(e) {
       t = e.getUint16(O + u);
       let n = O + m,
         r = t - (m - u),
-        i = e.getUint8(O + b),
-        a = e.getUint8(O + y);
+        i = e.getUint8(O + y),
+        a = e.getUint8(O + b);
       h || (h = []), h.push({
         offset: n,
         length: r,
@@ -92,11 +92,11 @@ function F(e) {
 }
 
 function B(e, t) {
-  return e.getUint16(t) === A
+  return e.getUint16(t) === v
 }
 
 function H(e, t) {
-  return e.getUint16(t) === v
+  return e.getUint16(t) === A
 }
 
 function Y(e, t) {
@@ -158,7 +158,7 @@ function ee(e, t) {
 
 function et(e, t) {
   let n = e.getUint16(t);
-  return n >= N && n <= D || n === x || n === A || n === v || n === S || n === I || n === T || n === C
+  return n >= N && n <= D || n === x || n === v || n === A || n === I || n === S || n === T || n === C
 }
 
 function en(e, t) {

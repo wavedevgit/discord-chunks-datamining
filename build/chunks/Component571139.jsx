@@ -2,7 +2,7 @@
 /** chunk id: 571139, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -25,7 +25,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk121615 = require("./121615.js"),
   Chunk1624 = require("./1624.js");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,36 +34,36 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
-let S = () => {
+let I = () => {
   var e, t;
   let i = (0, o.bG)([d.A], () => d.A.getGuildId(), []),
-    A = (0, o.bG)([u.A], () => u.A.getGuild(i), [i]),
-    S = (0, o.bG)([m.A], () => null != i ? m.A.getRequest(i) : null, [i]),
-    I = (0, s.zy)(),
-    T = (null == (t = (0, s.B6)(I.pathname, g.BVt.CHANNEL(null == A ? true : A.id, E.VV.GUILD_ONBOARDING))) ? true : t.isExact) === true;
-  if (null == A || !(0, h.Qd)(A) || T) return null;
+    v = (0, o.bG)([u.A], () => u.A.getGuild(i), [i]),
+    I = (0, o.bG)([m.A], () => null != i ? m.A.getRequest(i) : null, [i]),
+    S = (0, s.zy)(),
+    T = (null == (t = (0, s.B6)(S.pathname, g.BVt.CHANNEL(null == v ? true : v.id, E.VV.GUILD_ONBOARDING))) ? true : t.isExact) === true;
+  if (null == v || !(0, h.Qd)(v) || T) return null;
   let C = () => {
-      (0, p.Ze)(A.id)
+      (0, p.Ze)(v.id)
     },
     N = () => {
       (0, l.A)({
-        title: b.intl.string(b.t.aIz1oV),
-        subtitle: b.intl.string(b.t["13tjTU"]),
+        title: y.intl.string(y.t.aIz1oV),
+        subtitle: y.intl.string(y.t["13tjTU"]),
         variant: "primary",
-        confirmText: b.intl.string(b.t["cY+Oob"]),
-        onConfirm: () => f.A.removeGuildJoinRequest(A.id)
+        confirmText: y.intl.string(y.t["cY+Oob"]),
+        onConfirm: () => f.A.removeGuildJoinRequest(v.id)
       })
     },
     R = () => {
@@ -71,30 +71,30 @@ let S = () => {
         let {
           default: e
         } = await n.e("37548").then(n.bind(n, 856103));
-        return t => (0, r.jsx)(e, v({
-          guildId: A.id
+        return t => (0, r.jsx)(e, A({
+          guildId: v.id
         }, t))
       })
     },
-    w = null != (e = null == S ? true : S.applicationStatus) ? e : _.B5.STARTED,
+    w = null != (e = null == I ? true : I.applicationStatus) ? e : _.B5.STARTED,
     P = null,
     D = null,
     x = null,
-    L = [y.lm, O.lm];
+    L = [b.lm, O.lm];
   switch (w) {
     case _.B5.SUBMITTED:
-      P = b.intl.string(b.t["5iLvSx"]), D = b.intl.string(b.t.mqtdmQ), x = N;
+      P = y.intl.string(y.t["5iLvSx"]), D = y.intl.string(y.t.mqtdmQ), x = N;
       break;
     case _.B5.REJECTED:
-      P = b.intl.string(b.t.lk30cY), D = b.intl.string(b.t["8RrsHr"]), x = R, L.push(y.z3);
+      P = y.intl.string(y.t.lk30cY), D = y.intl.string(y.t["8RrsHr"]), x = R, L.push(b.z3);
       break;
     default:
-      P = b.intl.string(b.t.G5YKXP), D = b.intl.string(b.t["r8/DT+"]), x = C
+      P = y.intl.string(y.t.G5YKXP), D = y.intl.string(y.t["r8/DT+"]), x = C
   }
   return (0, r.jsxs)("div", {
     className: a()(...L),
     children: [(0, r.jsx)(c.Text, {
-      className: y.wx,
+      className: b.wx,
       variant: "text-sm/normal",
       children: P
     }), (0, r.jsx)(c.Button, {

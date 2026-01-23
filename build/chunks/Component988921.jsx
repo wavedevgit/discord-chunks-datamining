@@ -2,7 +2,7 @@
 /** chunk id: 988921, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  l: () => f
+  l: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
@@ -14,7 +14,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk815873 = require("./815873.js");
 
-function f(e) {
+function g(e) {
   let {
     guild: t,
     canManageGuild: n
@@ -27,7 +27,7 @@ function f(e) {
         variant: "heading-md/medium",
         color: "text-strong",
         className: u.DD,
-        children: [d.intl.string(d.t["0r0AzF"]), (0, r.jsx)(c.B6, {
+        children: [d.intl.string(d.t["0r0AzF"]), (0, r.jsx)(o.B6, {
           guild: t
         })]
       }), (0, r.jsx)(i.Text, {
@@ -40,7 +40,7 @@ function f(e) {
         color: "text-subtle",
         className: u.Qq,
         children: d.intl.format(d.t.vBcWUv, {
-          articleURL: l.A.getArticleURL(o.MVz.GUILD_BANNER_SPLASH)
+          articleURL: l.A.getArticleURL(c.MVz.GUILD_BANNER_SPLASH)
         })
       }), (0, r.jsx)(s.E, {
         guild: t,

@@ -24,12 +24,12 @@ function E(e) {
   let {
     code: t,
     message: n
-  } = e, [E, b, y] = (0, o.yK)([_.A], () => [_.A.getApplication(t), _.A.isInvalidApplication(t), _.A.getApplicationFetchState(t)], [t]), O = (0, o.bG)([d.A], () => {
+  } = e, [E, y, b] = (0, o.yK)([_.A], () => [_.A.getApplication(t), _.A.isInvalidApplication(t), _.A.getApplicationFetchState(t)], [t]), O = (0, o.bG)([d.A], () => {
     var e;
     return null != (e = d.A.getGuildId()) ? e : true
-  }), [A, v] = i.useState(false), S = i.useCallback(e => {
-    e && v(true)
-  }, []), I = (0, a.K)(S), T = i.useCallback(() => {
+  }), [v, A] = i.useState(false), I = i.useCallback(e => {
+    e && A(true)
+  }, []), S = (0, a.K)(I), T = i.useCallback(() => {
     f.default.track(h.HAw.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: t,
       device_platform: s.Fr ? "mobile_web" : "desktop_web",
@@ -41,16 +41,16 @@ function E(e) {
   return (i.useEffect(() => {
     (0, p.eP)(t)
   }, [t]), i.useEffect(() => {
-    A && y === _.e.FETCHED && T()
-  }, [A, y, T]), i.useEffect(() => {
-    A && b && f.default.track(h.HAw.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+    v && b === _.e.FETCHED && T()
+  }, [v, b, T]), i.useEffect(() => {
+    v && y && f.default.track(h.HAw.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
       device_platform: s.Fr ? "mobile_web" : "desktop_web",
       sender_user_id: n.author.id,
       guild_id: O,
       channel_id: n.channel_id
     })
-  }, [A, O, b, n.author.id, n.channel_id]), b) ? (0, r.jsxs)(c.A, {
-    containerRef: I,
+  }, [v, O, y, n.author.id, n.channel_id]), y) ? (0, r.jsxs)(c.A, {
+    containerRef: S,
     children: [(0, r.jsx)(c.A.Header, {
       text: m.intl.string(m.t.j4KtLa)
     }), (0, r.jsx)(c.A.Body, {
@@ -65,8 +65,8 @@ function E(e) {
         })]
       })
     })]
-  }) : null == E || y === _.e.FETCHING ? (0, r.jsxs)(c.A, {
-    containerRef: I,
+  }) : null == E || b === _.e.FETCHING ? (0, r.jsxs)(c.A, {
+    containerRef: S,
     children: [(0, r.jsx)(c.A.Header, {
       text: m.intl.string(m.t.m9hXGR)
     }), (0, r.jsx)(c.A.Body, {

@@ -2,7 +2,7 @@
 /** chunk id: 19147, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  S: () => b
+  S: () => y
 }), require("./896048.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -140,7 +140,7 @@ let g = [{
     leading: Chunk158954.N$i,
     disabled: true
   }],
-  b = {
+  y = {
     title: "Select",
     stories: [{
       id: "select",
@@ -149,7 +149,7 @@ let g = [{
         let {
           selectionMode: t,
           withLeadingAndTrailing: n
-        } = e, a = h(e, ["selectionMode", "withLeadingAndTrailing"]), [s, o] = i.useState(true), [l, u] = i.useState([]), d = y(n, a.asyncOptions);
+        } = e, a = h(e, ["selectionMode", "withLeadingAndTrailing"]), [s, o] = i.useState(true), [l, u] = i.useState([]), d = b(n, a.asyncOptions);
         return "single" === t ? (0, r.jsx)(c.l, _(f({}, a), {
           selectionMode: t,
           options: d,
@@ -284,7 +284,7 @@ let g = [{
           selectionMode: t,
           withLeadingAndTrailing: n,
           asyncOptions: a
-        } = e, s = h(e, ["selectionMode", "withLeadingAndTrailing", "asyncOptions"]), [o, c] = i.useState(true), [u, d] = i.useState([]), p = y(n, a);
+        } = e, s = h(e, ["selectionMode", "withLeadingAndTrailing", "asyncOptions"]), [o, c] = i.useState(true), [u, d] = i.useState([]), p = b(n, a);
         return "single" === t ? (0, r.jsx)(l.Z, _(f({}, s), {
           selectionMode: t,
           onSelectionChange: c,
@@ -408,20 +408,20 @@ let g = [{
           placeholder: m
         } = e, g = h(e, ["selectionMode", "label", "hideLabel", "description", "helperText", "errorMessage", "successMessage", "wrapTags", "withLeadingAndTrailing", "placeholder"]), {
           required: E,
-          disabled: b
-        } = g, O = y(p, g.asyncOptions), [A, v] = i.useState(null);
+          disabled: y
+        } = g, O = b(p, g.asyncOptions), [v, A] = i.useState(null);
         return (0, r.jsxs)(o.iS, _(f({
           selectionMode: t,
-          onSelectionChange: v,
+          onSelectionChange: A,
           options: O,
-          value: A
+          value: v
         }, g), {
           children: [(0, r.jsx)(o.a3, {
             label: n,
             hideLabel: a,
             placeholder: m,
             required: E,
-            disabled: b,
+            disabled: y,
             description: s,
             helperText: l,
             errorMessage: c,
@@ -570,7 +570,7 @@ let g = [{
     }]
   };
 
-function y(e, t) {
+function b(e, t) {
   let n = i.useRef(null);
   return i.useMemo(() => {
     let r = e ? E : g;

@@ -388,7 +388,7 @@ class J extends W {
     return (0, i.jsxs)(P.Mr, {
       children: [(0, i.jsx)(P.oC, {
         children: (0, i.jsx)(P.dB, {
-          children: (0, i.jsx)(y.A, {
+          children: (0, i.jsx)(b.A, {
             node: e,
             showTooltip: false
           })
@@ -473,7 +473,7 @@ class er extends W {
       emoji: e,
       sentinel: t,
       guild: n
-    } = this.props, r = I.Sf.getSetting(), a = null != e.id || "" !== e.url ? (0, i.jsx)("img", {
+    } = this.props, r = S.Sf.getSetting(), a = null != e.id || "" !== e.url ? (0, i.jsx)("img", {
       alt: "",
       className: j.mp,
       src: null != e.id ? R.Ay.getEmojiURL({
@@ -513,7 +513,7 @@ class ei extends W {
       {
         hovered: l
       } = this.state;
-    return (0, S.FD)(o) ? n = null == (e = v.A.getStickerPack(o.pack_id)) ? true : e.name : (0, S.Xw)(o) && (n = null == (t = T.A.getGuild(o.guild_id)) ? true : t.name), (0, i.jsxs)(P.Mr, {
+    return (0, I.FD)(o) ? n = null == (e = A.A.getStickerPack(o.pack_id)) ? true : e.name : (0, I.Xw)(o) && (n = null == (t = T.A.getGuild(o.guild_id)) ? true : t.name), (0, i.jsxs)(P.Mr, {
       children: [(0, i.jsx)(P.Ch, {
         children: a(o, l || true === s)
       }), (0, i.jsxs)(P.oC, {
@@ -553,14 +553,14 @@ class ea extends W {
 }
 class es extends W {
   renderContent() {
-    return (0, i.jsx)(b.A, {
+    return (0, i.jsx)(y.A, {
       emojis: this.props.emojis
     })
   }
 }
 class eo extends W {
   renderContent() {
-    return (0, i.jsx)(A.A, k({}, this.props))
+    return (0, i.jsx)(v.A, k({}, this.props))
   }
 }
 class el extends W {

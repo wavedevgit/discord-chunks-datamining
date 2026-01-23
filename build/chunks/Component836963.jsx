@@ -62,13 +62,13 @@ function _(e) {
     onScroll: m,
     hasSearchResults: g,
     defaultSearchPlaceholder: E,
-    emptySearchPlaceholder: b,
-    renderEmptyState: y,
+    emptySearchPlaceholder: y,
+    renderEmptyState: b,
     renderRow: O,
-    renderSection: A,
-    renderSectionHeader: v,
-    renderSectionFooter: S,
-    renderInspector: I,
+    renderSection: v,
+    renderSectionHeader: A,
+    renderSectionFooter: I,
+    renderInspector: S,
     renderEmptySearchState: T,
     renderCategoryList: C,
     renderHeaderAccessories: N,
@@ -119,10 +119,10 @@ function _(e) {
     rowIndex: e,
     totalRowCount: q,
     sectionIndex: t.sectionIndex
-  }, t => $(e, t), t => f.setInspectedExpressionPosition(t, e)), [z, $, J, Q, en, O, f, q]), ei = i.useCallback(e => null == v ? true : v(t[e], e), [t, v]), ea = i.useCallback(e => null == S ? true : S(t[e], e), [t, S]), es = i.useCallback(() => {
+  }, t => $(e, t), t => f.setInspectedExpressionPosition(t, e)), [z, $, J, Q, en, O, f, q]), ei = i.useCallback(e => null == A ? true : A(t[e], e), [t, A]), ea = i.useCallback(e => null == I ? true : I(t[e], e), [t, I]), es = i.useCallback(() => {
     var e;
-    return null == I ? true : I(null == z || null == (e = z[W.rowIndex]) ? true : e[W.columnIndex])
-  }, [z, W.columnIndex, W.rowIndex, I]);
+    return null == S ? true : S(null == z || null == (e = z[W.rowIndex]) ? true : e[W.columnIndex])
+  }, [z, W.columnIndex, W.rowIndex, S]);
   i.useEffect(() => {
     h(Y)
   }, [h, Y]), i.useEffect(() => {
@@ -141,14 +141,14 @@ function _(e) {
       expressionsListRef: F,
       gridNavigatorId: M,
       defaultSearchPlaceholder: E,
-      emptySearchPlaceholder: b
+      emptySearchPlaceholder: y
     }), null == N ? true : N()]
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [null != U ? U(eo) : (0, r.jsxs)("div", {
       className: c.wx,
       children: [" ", eo, " "]
-    }), H && null != y ? y(c.p$) : (0, r.jsxs)(r.Fragment, {
+    }), H && null != b ? b(c.p$) : (0, r.jsxs)(r.Fragment, {
       children: [C(F), null != k && (0, r.jsx)("div", {
         className: c.Eb,
         children: k
@@ -164,10 +164,10 @@ function _(e) {
           hasSearchResults: g,
           listPadding: j,
           renderRow: er,
-          renderSection: A,
-          renderSectionHeader: null != v ? ei : true,
-          renderSectionFooter: null != S ? ea : true,
-          renderInspector: null != I ? es : true,
+          renderSection: v,
+          renderSectionHeader: null != A ? ei : true,
+          renderSectionFooter: null != I ? ea : true,
+          renderInspector: null != S ? es : true,
           renderEmptySearchState: T,
           rowCount: q,
           rowCountBySection: X,

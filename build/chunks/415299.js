@@ -17,26 +17,26 @@ function u(e) {
     hasChanges: t,
     selectedFontId: l,
     selectedEffectId: u,
-    selectedColors: f,
-    defaultColor: m,
-    guildId: b,
-    isTryItOut: p,
-    onClose: x
+    selectedColors: m,
+    defaultColor: p,
+    guildId: f,
+    isTryItOut: g,
+    onClose: _
   } = e;
   return n.useCallback(() => {
     if (t) {
-      let e = f;
-      u === a.z.SOLID && f.length > 0 && f[0] === m && (e = []);
+      let e = m;
+      u === r.z.SOLID && m.length > 0 && m[0] === p && (e = []);
       let t = {
         fontId: l,
         effectId: u,
         colors: e
       };
-      null != b ? (0, i.mZ)(t) : p ? (0, o.EW)(t) : (0, r.dM)(t), c.default.track(d.HAw.DISPLAY_NAME_STYLES_APPLIED, {
+      null != f ? (0, o.mZ)(t) : g ? (0, i.EW)(t) : (0, a.dM)(t), c.default.track(d.HAw.DISPLAY_NAME_STYLES_APPLIED, {
         font_name: s.x[l],
-        effect_name: a.z[u],
-        colors: f
-      }), null == x || x()
+        effect_name: r.z[u],
+        colors: m
+      }), null == _ || _()
     }
-  }, [t, l, u, f, m, x, b, p])
+  }, [t, l, u, m, p, _, f, g])
 }

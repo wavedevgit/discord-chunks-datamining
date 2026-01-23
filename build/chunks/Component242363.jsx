@@ -2,7 +2,7 @@
 /** chunk id: 242363, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => A
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -36,7 +36,7 @@ function f(e) {
   return e
 }
 
-function b(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,7 +49,7 @@ function b(e, t) {
   }), e
 }
 
-function g() {
+function y() {
   return (0, i.jsx)("div", {
     className: p.q,
     children: (0, i.jsx)(r.Button, {
@@ -61,15 +61,15 @@ function g() {
   })
 }
 
-function y(e) {
+function A(e) {
   switch (e.type) {
     case u.Jr.GO_LIVE_VOICE: {
       let {
         game: t,
         voiceGuild: p
       } = e, {
-        trackView: y,
-        trackClick: A
+        trackView: A,
+        trackClick: m
       } = (0, d.Y)(u.KS.GoLiveNudge, {
         notif_type: u.KS.GoLiveNudge
       });
@@ -80,13 +80,13 @@ function y(e) {
           game: t.name,
           server: p.name
         }),
-        hint: () => (0, i.jsx)(g, {}),
-        renderFooter: () => (0, i.jsx)(g, {}),
+        hint: () => (0, i.jsx)(y, {}),
+        renderFooter: () => (0, i.jsx)(y, {}),
         onNotificationShow: () => {
-          y()
+          A()
         },
         onNotificationClick: (e, t) => {
-          A("unlock");
+          m("unlock");
           let d = (0, c.getPID)();
           s.A.updateNotificationStatus(t);
           let u = o.default.isOverlayOOPEnabledForPid(d);
@@ -98,7 +98,7 @@ function y(e) {
             let {
               default: e
             } = await Promise.all([n.e("96811"), n.e("13337")]).then(n.bind(n, 648230));
-            return t => (0, i.jsx)(e, b(f({}, t), {
+            return t => (0, i.jsx)(e, g(f({}, t), {
               sourcePID: d,
               selectSource: false,
               analyticsLocations: [l.A.OVERLAY_NUDGE]
@@ -106,7 +106,7 @@ function y(e) {
           }, h)
         },
         onDismissClick: () => {
-          A("dismiss")
+          m("dismiss")
         }
       }
     }
@@ -125,8 +125,8 @@ function y(e) {
         body: h.intl.formatToPlainString(h.t["0SVWgF"], {
           game: t.name
         }),
-        hint: () => (0, i.jsx)(g, {}),
-        renderFooter: () => (0, i.jsx)(g, {}),
+        hint: () => (0, i.jsx)(y, {}),
+        renderFooter: () => (0, i.jsx)(y, {}),
         onNotificationShow: () => {
           a()
         },
@@ -143,7 +143,7 @@ function y(e) {
             let {
               default: e
             } = await Promise.all([n.e("96811"), n.e("13337")]).then(n.bind(n, 648230));
-            return t => (0, i.jsx)(e, b(f({}, t), {
+            return t => (0, i.jsx)(e, g(f({}, t), {
               sourcePID: a,
               selectSource: false,
               analyticsLocations: [l.A.OVERLAY_NUDGE]

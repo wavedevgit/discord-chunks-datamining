@@ -2,7 +2,7 @@
 /** chunk id: 660110, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b,
-  V: () => m
+  V: () => f
 });
 var l, Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,7 +17,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx");
 
 function j() {
-  return (0, o.yM)() ? f.intl.format(f.t.iWGjcg, {
+  return (0, o.yM)() ? g.intl.format(g.t.iWGjcg, {
     hook: e => (0, r.jsx)(i.MzZ, {
       onClick: e => {
         e.preventDefault(), e.stopPropagation(), (0, a.A)(u.A.getArticleURL(x.MVz.TIGGER_PAWTECT_LEARN_MORE))
@@ -25,7 +25,7 @@ function j() {
       useDefaultUnderlineStyles: false,
       children: e.join("")
     })
-  }) : f.intl.format(f.t.edpbxy, {
+  }) : g.intl.format(g.t.edpbxy, {
     hook: e => (0, r.jsx)(i.MzZ, {
       onClick: e => {
         e.preventDefault(), e.stopPropagation(), s.A.showAgeVerificationGetStartedModal({
@@ -38,7 +38,7 @@ function j() {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     className: t
   } = e, n = (0, o.yM)();
@@ -75,7 +75,7 @@ function h(e) {
     })
   })
 }
-var m = ((l = {})[l.TOP = 0] = "TOP", l[l.BOTTOM = 1] = "BOTTOM", l);
+var f = ((l = {})[l.TOP = 0] = "TOP", l[l.BOTTOM = 1] = "BOTTOM", l);
 
 function b(e) {
   let {
@@ -91,7 +91,7 @@ function b(e) {
       gap: 16
     }), (0, r.jsx)("div", {
       className: t,
-      children: n ? (0, r.jsx)(h, {}) : (0, r.jsx)(g, {})
+      children: n ? (0, r.jsx)(h, {}) : (0, r.jsx)(m, {})
     }), (null == s ? true : s.includes(1)) && (0, r.jsx)(i.cGx, {
       gap: 16
     })]

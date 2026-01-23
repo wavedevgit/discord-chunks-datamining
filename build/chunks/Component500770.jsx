@@ -82,13 +82,13 @@ function h(e) {
     ctaComponent: m,
     shouldShowFullDescriptionButton: g = true,
     onShowFullDescription: E,
-    productType: b,
-    onTapCard: y,
+    productType: y,
+    onTapCard: b,
     actionMenu: O,
-    showOpaqueBackground: A = false,
-    hideRoleTag: v = false,
-    lineClamp: S = 1,
-    cardWidth: I = 332,
+    showOpaqueBackground: v = false,
+    hideRoleTag: A = false,
+    lineClamp: I = 1,
+    cardWidth: S = 332,
     cardHeight: T,
     thumbnailHeight: C = 187,
     descriptionTextVariant: N = "text-sm/normal",
@@ -121,13 +121,13 @@ function h(e) {
           children: (0, r.jsx)(l.A, {
             variant: N,
             color: "text-muted",
-            lineClamp: S,
+            lineClamp: I,
             text: i
           })
         }), g && (0, r.jsx)(_, {
           onShowFullDescription: E,
           variant: N
-        }), v || null == h || "" === h.name ? null : (0, r.jsxs)(r.Fragment, {
+        }), A || null == h || "" === h.name ? null : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.hKd, {
             size: 16
           }), (0, r.jsx)(u.A, {
@@ -146,7 +146,7 @@ function h(e) {
         variant: "text-xxs/normal",
         color: "text-default",
         className: f.__invalid_productType,
-        children: b
+        children: y
       }), (0, r.jsx)("div", {
         className: f.QW,
         onClick: P,
@@ -154,13 +154,13 @@ function h(e) {
       })]
     })]
   });
-  return null == y ? (0, r.jsx)("article", {
-    className: a()(f.Um, A ? f.sG : f.Wi),
+  return null == b ? (0, r.jsx)("article", {
+    className: a()(f.Um, v ? f.sG : f.Wi),
     "aria-labelledby": w,
     children: D
   }) : (0, r.jsx)("div", {
     style: {
-      width: I,
+      width: S,
       height: T
     },
     children: (0, r.jsx)(s.sqX, {
@@ -168,8 +168,8 @@ function h(e) {
       "aria-label": d.intl.formatToPlainString(d.t["e+TmJa"], {
         productName: n
       }),
-      className: a()(f.Um, A ? f.sG : f.Wi, f.GA),
-      onClick: y,
+      className: a()(f.Um, v ? f.sG : f.Wi, f.GA),
+      onClick: b,
       children: D
     })
   })

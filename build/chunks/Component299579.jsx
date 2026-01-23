@@ -54,15 +54,15 @@ function j(e) {
     onGuildCardClick: l
   } = e, {
     guildIds: o,
-    loading: f,
+    loading: h,
     searchResultsQuery: I,
     loadMore: j,
     searchCategoryId: x
-  } = (0, m.I)({
+  } = (0, A.I)({
     loadId: t
-  }), P = 0 === o.length && !f, w = i.useContext(d.AnalyticsContext), [L, R] = i.useState((0, g.YP)()), [D, M] = i.useState(true), k = i.useRef(D), [U, G] = i.useState(3), V = i.useRef(U), B = i.useRef(null), H = i.useCallback(e => {
-    null == e || P || f || 336 * (o.length / U) <= e.height && j()
-  }, [P, f, o.length, U, j]), F = i.useCallback(e => {
+  }), P = 0 === o.length && !h, w = i.useContext(d.AnalyticsContext), [L, R] = i.useState((0, m.YP)()), [D, M] = i.useState(true), k = i.useRef(D), [U, G] = i.useState(3), V = i.useRef(U), B = i.useRef(null), H = i.useCallback(e => {
+    null == e || P || h || 336 * (o.length / U) <= e.height && j()
+  }, [P, h, o.length, U, j]), F = i.useCallback(e => {
     let t = e.contentRect;
     if (null == t) return;
     let n = t.width;
@@ -72,20 +72,20 @@ function j(e) {
     r !== V.current && (V.current = r, G(r)), H(t)
   }, [D, H]), Y = (0, u.w)(F, [D, H]);
   i.useEffect(() => {
-    R((0, g.YP)())
+    R((0, m.YP)())
   }, [I]), i.useEffect(() => {
     T({
       loadId: t,
       searchId: L,
       query: I,
-      guildResults: o.map(h.A.getGuild).filter(p.Vq),
+      guildResults: o.map(g.A.getGuild).filter(p.Vq),
       analyticsContext: w,
       categoryId: x
     })
   }, [w, o, t, x, L, I]);
   let K = i.useCallback(e => n(e, x), [n, x]),
-    z = i.useMemo(() => f ? [o.length, 0] : [o.length], [o.length, f]),
-    W = i.useCallback((e, n, i) => {
+    W = i.useMemo(() => h ? [o.length, 0] : [o.length], [o.length, h]),
+    q = i.useCallback((e, n, i) => {
       switch (e) {
         case 0:
           return (0, r.jsxs)("div", {
@@ -98,7 +98,7 @@ function j(e) {
             }),
             children: [!D && (0, r.jsxs)("div", {
               className: v.eW,
-              children: [(0, r.jsx)(_.A, {
+              children: [(0, r.jsx)(b.A, {
                 loadId: t
               }), (0, r.jsx)(O.A, {
                 loadId: t
@@ -115,7 +115,7 @@ function j(e) {
           }, i)
       }
     }, [P, D, t]),
-    q = i.useCallback(e => {
+    z = i.useCallback(e => {
       switch (e) {
         case 0:
           let t = D ? 16 : 50;
@@ -150,11 +150,11 @@ function j(e) {
       var i, a;
       await l(e, t, n, r);
       let s = null == (a = B.current) || null == (i = a.getScrollerState()) ? true : i.scrollTop;
-      null != s && A.A.setState({
+      null != s && f.A.setState({
         scrollPosition: s
       })
     }, [l]),
-    J = i.useCallback((e, t, n, i) => {
+    $ = i.useCallback((e, t, n, i) => {
       if (0 !== e) return null;
       {
         let e = o[t];
@@ -173,26 +173,26 @@ function j(e) {
     return () => {
       var t;
       let n = null == e || null == (t = e.getScrollerState()) ? true : t.scrollTop;
-      null != n && A.A.setState({
+      null != n && f.A.setState({
         scrollPosition: n
       })
     }
   }, []), i.useLayoutEffect(() => {
-    let e = A.A.getField("scrollPosition");
+    let e = f.A.getField("scrollPosition");
     null != e && setTimeout(() => {
       var t;
       null == (t = B.current) || t.scrollTo({
         to: e,
         animate: false,
         callback: () => {
-          A.A.setState({
+          f.A.setState({
             scrollPosition: null
           })
         }
       })
     })
   }, []);
-  let $ = i.useMemo(() => (0, s.debounce)(() => {
+  let J = i.useMemo(() => (0, s.debounce)(() => {
       var e;
       let t = null == (e = B.current) ? true : e.getScrollerState();
       if (null == t) return;
@@ -208,17 +208,17 @@ function j(e) {
     children: (0, r.jsx)(c.a0_, {
       ref: B,
       className: v.kf,
-      sections: z,
+      sections: W,
       columns: U,
       itemGutter: 16,
       padding: ee,
-      renderItem: J,
-      renderSection: W,
-      getSectionHeight: q,
+      renderItem: $,
+      renderSection: q,
+      getSectionHeight: z,
       getItemKey: Q,
       getItemHeight: X,
       chunkSize: 24,
-      onScroll: $,
+      onScroll: J,
       renderAccessory: e => D ? (0, r.jsx)("div", {
         className: v.pz,
         style: {
@@ -231,7 +231,7 @@ function j(e) {
             children: (0, r.jsx)(O.A, {
               loadId: t
             })
-          }), (0, r.jsx)(b.A, {
+          }), (0, r.jsx)(_.A, {
             loadId: t
           })]
         })

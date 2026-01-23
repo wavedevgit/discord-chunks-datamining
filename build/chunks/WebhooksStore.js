@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js");
 var i, Chunk735438 = require("./735438.js"),
   s = require.n(Chunk735438),
@@ -68,7 +68,7 @@ function E(e) {
   } = e;
   delete _(t)[n]
 }
-class b extends(i = Chunk311907.Ay.Store) {
+class y extends(i = Chunk311907.Ay.Store) {
   isFetching(e, t) {
     return null != f[p(e, t)]
   }
@@ -82,8 +82,8 @@ class b extends(i = Chunk311907.Ay.Store) {
     return r
   }
 }
-u(b, "displayName", "WebhooksStore");
-let y = new b(Chunk73153.h, {
+u(y, "displayName", "WebhooksStore");
+let b = new y(Chunk73153.h, {
   WEBHOOKS_UPDATE: h,
   WEBHOOKS_FETCHING: m,
   WEBHOOK_CREATE: g,

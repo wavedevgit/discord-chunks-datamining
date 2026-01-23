@@ -80,7 +80,7 @@ let k = /^( *>>> +([\s\S]*))|^( *>(?!>>) +[^\n]*(\n *>(?!>>) +[^\n]*)*\n?)/,
   F = /^((?:https?|steam):\/\/[^\s<]+[^<.,:;"'\]\s])/;
 
 function B(e) {
-  let t = (0, A.W1)(e[1]);
+  let t = (0, v.W1)(e[1]);
   if (null == t) return {
     type: "text",
     content: e[1]

@@ -172,27 +172,27 @@ let X = Chunk64700.memo(function(e) {
       setHideConnectedAnimation: m
     } = q(n, a), {
       ref: E,
-      width: b
-    } = (0, _.Ay)(), y = (0, l.bG)([g.A], () => g.A.useReducedMotion), O = p ? "entering" : "exiting", {
-      width: A
+      width: y
+    } = (0, _.Ay)(), b = (0, l.bG)([g.A], () => g.A.useReducedMotion), O = p ? "entering" : "exiting", {
+      width: v
     } = (0, o.useSpring)(G(k({}, K[O]), {
-      width: f ? b : u
+      width: f ? y : u
     })), {
-      opacity: v
+      opacity: A
     } = (0, o.useSpring)(G(k({}, z[O]), {
       opacity: +!!f,
       onRest: () => {
         f || m(true)
       }
-    })), S = i.useMemo(() => h || y ? "none" : "block", [h, y]);
+    })), I = i.useMemo(() => h || b ? "none" : "block", [h, b]);
     return (0, r.jsx)(o.animated.div, {
       className: s()(j.rH, {
         [j.pG]: d
       }),
       style: {
-        width: A,
-        opacity: v,
-        display: S
+        width: v,
+        opacity: A,
+        display: I
       },
       children: (0, r.jsxs)("div", {
         ref: E,
@@ -203,7 +203,7 @@ let X = Chunk64700.memo(function(e) {
         }),
         children: [d && (0, r.jsx)(c.akl, {
           importData: B,
-          shouldAnimate: !y,
+          shouldAnimate: !b,
           className: j.lY
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(c.Text, {
@@ -215,7 +215,7 @@ let X = Chunk64700.memo(function(e) {
           })
         }), !d && (0, r.jsx)(c.akl, {
           importData: B,
-          shouldAnimate: !y,
+          shouldAnimate: !b,
           className: j.lY
         }), (0, r.jsx)("div", {
           className: j.k1
@@ -238,7 +238,7 @@ let X = Chunk64700.memo(function(e) {
         width: s,
         height: s
       },
-      children: (0, r.jsx)(b.A, {
+      children: (0, r.jsx)(y.A, {
         userId: n,
         channelId: i,
         guildId: a,
@@ -261,8 +261,8 @@ let X = Chunk64700.memo(function(e) {
       displayUserMode: f,
       size: m = x.OSZ.LARGE,
       onClick: g,
-      onContextMenu: b,
-      context: A,
+      onContextMenu: y,
+      context: v,
       guildId: T,
       isSettingsPreview: P = false,
       voiceState: L,
@@ -271,7 +271,7 @@ let X = Chunk64700.memo(function(e) {
       onWatchStream: U,
       connectedOn: G,
       ref: B
-    } = e, H = (0, l.bG)([I.default], () => I.default.getId() === o.id, [o.id]), {
+    } = e, H = (0, l.bG)([S.default], () => S.default.getId() === o.id, [o.id]), {
       ref: Y,
       width: W
     } = (0, _.Ay)(), {
@@ -279,15 +279,15 @@ let X = Chunk64700.memo(function(e) {
     } = q(G, P), z = null == L ? true : L.sessionId, $ = t.id, J = o.id, [ee] = (0, l.bG)([R.A], () => {
       var e;
       return [null != (e = R.A.getVoiceStateForChannel($, J)) ? e : R.A.getVoiceStateForSession(J, z), R.A.getVoiceStateVersion()]
-    }, [$, J, z], w.D), et = P ? L : null != ee ? ee : L, [en, er, ei] = (0, l.yK)([C.A], () => H ? [!C.A.isSupported() || C.A.isSelfMute() || C.A.isSelfMutedTemporarily(), C.A.isSelfDeaf(), false] : [!C.A.isSupported() || C.A.isLocalMute(o.id), false, C.A.isLocalVideoDisabled(o.id)], [H, o.id]), ea = (0, l.bG)([S.A], () => {
-      let e = S.A.getCurrentUserActiveStream();
-      return null != e && e.ownerId !== o.id && S.A.getViewerIds(e).filter(e => e === o.id).length > 0
+    }, [$, J, z], w.D), et = P ? L : null != ee ? ee : L, [en, er, ei] = (0, l.yK)([C.A], () => H ? [!C.A.isSupported() || C.A.isSelfMute() || C.A.isSelfMutedTemporarily(), C.A.isSelfDeaf(), false] : [!C.A.isSupported() || C.A.isLocalMute(o.id), false, C.A.isLocalVideoDisabled(o.id)], [H, o.id]), ea = (0, l.bG)([I.A], () => {
+      let e = I.A.getCurrentUserActiveStream();
+      return null != e && e.ownerId !== o.id && I.A.getViewerIds(e).filter(e => e === o.id).length > 0
     }, [o.id]), es = P && (null == L ? true : L.discoverable), eo = (0, h.A)({
       userId: o.id,
-      context: A
-    }) || es, el = (0, l.bG)([S.A], () => S.A.getStreamForUser(o.id, T)), ec = null != el, eu = i.useCallback(() => {
+      context: v
+    }) || es, el = (0, l.bG)([I.A], () => I.A.getStreamForUser(o.id, T)), ec = null != el, eu = i.useCallback(() => {
       (M || null != ec) && k(null)
-    }, [k, M, ec]), ed = i.useCallback(() => (0, r.jsx)(y.A, {
+    }, [k, M, ec]), ed = i.useCallback(() => (0, r.jsx)(b.A, {
       user: o,
       channel: t,
       onWatch: () => {
@@ -301,8 +301,8 @@ let X = Chunk64700.memo(function(e) {
       location: x.ThZ.UNLOCKED_OVERLAY,
       hideTip: true
     }), [o, t, el, M, eu, U]), ef = i.useCallback(e => {
-      a || null == b || b(e, o)
-    }, [a, b, o]), ep = i.useCallback(() => {
+      a || null == y || y(e, o)
+    }, [a, y, o]), ep = i.useCallback(() => {
       a || null != ec && k(o.id)
     }, [a, k, ec, o]), e_ = a || P, eh = i.useMemo(() => V(m), [m]), em = i.useMemo(() => F(eh), [eh]), eg = i.useMemo(() => o.getAvatarURL(T, em), [o, T, em]), eE = (0, l.bG)([N.A], () => N.A.getVoiceVolume(J));
     return f === x.f5z.ONLY_WHILE_SPEAKING && e_ && !eo || null == et ? null : n ? (0, r.jsxs)(c.DUT, {
@@ -327,7 +327,7 @@ let X = Chunk64700.memo(function(e) {
         children: () => (0, r.jsxs)("div", {
           className: j.Xh,
           ref: Y,
-          children: [(0, r.jsx)(v.Kc, {
+          children: [(0, r.jsx)(A.Kc, {
             guildId: T,
             user: o,
             video: et.selfVideo,
@@ -447,7 +447,7 @@ let X = Chunk64700.memo(function(e) {
                 userId: o.id
               })
             }
-          }), (0, r.jsx)(v.Kc, {
+          }), (0, r.jsx)(A.Kc, {
             guildId: T,
             user: o,
             video: et.selfVideo,
@@ -481,21 +481,21 @@ let X = Chunk64700.memo(function(e) {
       isSettingsPreview: m,
       context: g
     } = e, E = i.useRef(null), {
-      user: b,
-      member: y,
+      user: y,
+      member: b,
       voiceState: O,
-      connectedOn: v
-    } = s, [S, I] = i.useState(null), [C, N] = i.useState(null);
+      connectedOn: A
+    } = s, [I, S] = i.useState(null), [C, N] = i.useState(null);
     i.useEffect(() => {
       c && N(null)
     }, [c]), i.useEffect(() => {
-      null != S && (0, D.YX)(x.uss.VOICE_V3, {
+      null != I && (0, D.YX)(x.uss.VOICE_V3, {
         type: D.Z5.GO_LIVE,
         value: D.IP.STREAM_PREVIEWED
       })
-    }, [S]);
+    }, [I]);
     let R = e => {
-        I(e)
+        S(e)
       },
       w = (e, t) => {
         m || (0, u.L3)(e, async () => {
@@ -539,15 +539,15 @@ let X = Chunk64700.memo(function(e) {
           userId: e.ownerId
         })
       }, [a, t]);
-    if (null == b || null == a || null == O) return null;
+    if (null == y || null == a || null == O) return null;
     let j = c || h;
-    return (0, r.jsx)(A.A, {
+    return (0, r.jsx)(v.A, {
       targetElementRef: E,
-      user: b,
+      user: y,
       guildId: a.guild_id,
       channelId: a.id,
       appContext: x.BRT.OVERLAY,
-      shouldShow: C === b.id,
+      shouldShow: C === y.id,
       onRequestClose: () => N(null),
       spacing: 24,
       children: () => {
@@ -555,9 +555,9 @@ let X = Chunk64700.memo(function(e) {
         return (0, r.jsx)($, {
           ref: E,
           guildId: null == a ? true : a.guild_id,
-          user: b,
-          connectedOn: v,
-          nick: null != (e = null == y ? true : y.nick) ? e : P.Ay.getName(b),
+          user: y,
+          connectedOn: A,
+          nick: null != (e = null == b ? true : b.nick) ? e : P.Ay.getName(y),
           flipped: p,
           voiceState: O,
           displayNameMode: o,
@@ -568,11 +568,11 @@ let X = Chunk64700.memo(function(e) {
           onClick: w,
           context: g,
           channel: a,
-          showStreamPreview: b.id === S,
+          showStreamPreview: y.id === I,
           onShowStreamPreview: R,
           onWatchStream: L,
           isSettingsPreview: m
         })
       }
-    }, b.id)
+    }, y.id)
   })

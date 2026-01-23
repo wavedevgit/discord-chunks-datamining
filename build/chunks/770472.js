@@ -1,41 +1,41 @@
 /** Chunk was on 28636 **/
 /** chunk id: 770472, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  p: () => c
+  p: () => o
 });
 var Chunk64700 = require("./64700.js"),
   Chunk488995 = require("./488995.js"),
   Chunk982339 = require("./982339.js");
-let i = 20 + Chunk488995.GLOBAL_DISCOVERY_SEARCH_BAR_WIDTH_PX - Chunk488995.GLOBAL_DISCOVERY_SEARCH_BAR_ICON_WIDTH_PX,
+let a = 20 + Chunk488995.GLOBAL_DISCOVERY_SEARCH_BAR_WIDTH_PX - Chunk488995.GLOBAL_DISCOVERY_SEARCH_BAR_ICON_WIDTH_PX,
   s = 20 + Chunk488995.GLOBAL_DISCOVERY_SEARCH_BAR_WIDTH_PX + Chunk488995.GLOBAL_DISCOVERY_SEARCH_BAR_ICON_WIDTH_PX;
 
-function c(e) {
+function o(e) {
   let {
     isSearchBarVisible: t,
     isSearchBarEmpty: n,
-    searchBarState: c,
-    setSearchBarState: o
-  } = e, d = l.useCallback(e => {
+    searchBarState: o,
+    setSearchBarState: c
+  } = e, d = r.useCallback(e => {
     if (!t) return;
-    let l = Math.round(e);
-    switch (c) {
-      case a.GlobalDiscoverySearchBarState.DEFAULT:
-        l < 20 && o(n ? a.GlobalDiscoverySearchBarState.COLLAPSED : a.GlobalDiscoverySearchBarState.FLOATING);
+    let r = Math.round(e);
+    switch (o) {
+      case l.GlobalDiscoverySearchBarState.DEFAULT:
+        r < 20 && c(n ? l.GlobalDiscoverySearchBarState.COLLAPSED : l.GlobalDiscoverySearchBarState.FLOATING);
         break;
-      case a.GlobalDiscoverySearchBarState.COLLAPSED:
-        l > i && o(a.GlobalDiscoverySearchBarState.DEFAULT);
+      case l.GlobalDiscoverySearchBarState.COLLAPSED:
+        r > a && c(l.GlobalDiscoverySearchBarState.DEFAULT);
         break;
-      case a.GlobalDiscoverySearchBarState.FLOATING:
-        l > s && o(a.GlobalDiscoverySearchBarState.DEFAULT)
+      case l.GlobalDiscoverySearchBarState.FLOATING:
+        r > s && c(l.GlobalDiscoverySearchBarState.DEFAULT)
     }
-  }, [n, t, c, o]), u = l.useCallback(() => {
-    o(a.GlobalDiscoverySearchBarState.FLOATING)
-  }, [o]), p = l.useCallback(() => {
-    c === a.GlobalDiscoverySearchBarState.FLOATING && n && o(a.GlobalDiscoverySearchBarState.COLLAPSED)
-  }, [n, c, o]);
+  }, [n, t, o, c]), u = r.useCallback(() => {
+    c(l.GlobalDiscoverySearchBarState.FLOATING)
+  }, [c]), p = r.useCallback(() => {
+    o === l.GlobalDiscoverySearchBarState.FLOATING && n && c(l.GlobalDiscoverySearchBarState.COLLAPSED)
+  }, [n, o, c]);
   return {
     onTabsAvailableWidthChange: d,
-    tabsClassName: c === a.GlobalDiscoverySearchBarState.FLOATING ? r.b6 : true,
+    tabsClassName: o === l.GlobalDiscoverySearchBarState.FLOATING ? i.b6 : true,
     onCollapsedSearchBarClick: u,
     onSearchBarBlur: p
   }

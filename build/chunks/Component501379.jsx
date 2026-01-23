@@ -1,7 +1,7 @@
 /** Chunk was on 22477 **/
 /** chunk id: 501379, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => g
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,11 +17,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk708403 = require("./708403.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function x() {
+function g() {
   let e = (0, c.bG)([m.default], () => m.default.locale),
     [t, n] = l.useState(),
-    r = (0, i.runtimeHashMessageKey)(null != t ? t : ""),
-    x = l.useMemo(() => f.t[r], [r]);
+    i = (0, r.runtimeHashMessageKey)(null != t ? t : ""),
+    g = l.useMemo(() => x.t[i], [i]);
   return (0, a.jsxs)("div", {
     children: [(0, a.jsxs)(u.Ay, {
       children: [(0, a.jsx)(u.Ay.Icon, {
@@ -39,10 +39,10 @@ function x() {
         children: e
       }), (0, a.jsx)(h.mA, {
         name: "System",
-        children: f.systemLocale
+        children: x.systemLocale
       }), (0, a.jsx)(h.mA, {
         name: "@discord/intl",
-        children: f.intl.currentLocale
+        children: x.intl.currentLocale
       }), (0, a.jsx)(h.mA, {
         name: "common i18n",
         children: o.A.getLocale()
@@ -60,7 +60,7 @@ function x() {
     }), (0, a.jsx)(h.OA, {
       children: (0, a.jsx)(h.mA, {
         name: "Unique Rendered Main Messages",
-        children: Object.keys(f.t).length
+        children: Object.keys(x.t).length
       })
     }), (0, a.jsx)("div", {
       style: {
@@ -76,13 +76,13 @@ function x() {
     }), (0, a.jsxs)(h.OA, {
       children: [(0, a.jsx)(h.mA, {
         name: "Hashed key",
-        children: r
+        children: i
       }), (0, a.jsx)(h.mA, {
         name: "Exists?",
-        children: null != x ? "yes" : "no"
+        children: null != g ? "yes" : "no"
       })]
     }), (0, a.jsx)(p.A, {
-      data: null == x ? true : x(e)
+      data: null == g ? true : g(e)
     })]
   })
 }

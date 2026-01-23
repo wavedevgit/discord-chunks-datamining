@@ -76,7 +76,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk453263 = require("./453263.js");
 
-function eO(e) {
+function e_(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -95,7 +95,7 @@ function eO(e) {
   return e
 }
 
-function ey(e, t) {
+function eO(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -109,276 +109,276 @@ function ey(e, t) {
 }
 let ev = {
   getSectionDefinition: function(e, t) {
-    let ev = (0, x.$)(t.guild.id, "guild_settings"),
-      eA = (0, u.Zy)(t.guild.id),
-      eE = false === t.guild.features.has(ep.GuildFeatures.CREATOR_MONETIZABLE) && false === t.guild.features.has(ep.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL),
-      eN = ev && eE ? {
+    let ev = (0, h.$)(t.guild.id, "guild_settings"),
+      ey = (0, u.Zy)(t.guild.id),
+      eA = false === t.guild.features.has(eb.GuildFeatures.CREATOR_MONETIZABLE) && false === t.guild.features.has(eb.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL),
+      eE = ev && eA ? {
         label: (0, r.jsx)("div", {
           className: ej.vf,
-          children: eh.intl.string(eh.t.Tn7Koo)
+          children: ex.intl.string(ex.t.Tn7Koo)
         }),
-        ariaLabel: eh.intl.string(eh.t.Tn7Koo)
+        ariaLabel: ex.intl.string(ex.t.Tn7Koo)
       } : {
         label: (0, r.jsx)("div", {
           className: ej.vf,
-          children: eh.intl.string(eh.t["KzCF/6"])
+          children: ex.intl.string(ex.t["KzCF/6"])
         }),
-        ariaLabel: eh.intl.string(eh.t["KzCF/6"])
+        ariaLabel: ex.intl.string(ex.t["KzCF/6"])
       },
-      e_ = t.guild.features.has(ep.GuildFeatures.COMMUNITY) && t.canViewGuildAnalytics;
+      eN = t.guild.features.has(eb.GuildFeatures.COMMUNITY) && t.canViewGuildAnalytics;
     switch (e) {
-      case ep.BEX.PROFILE:
+      case eb.BEX.PROFILE:
         return {
-          section: ep.BEX.PROFILE, impressionName: i.ImpressionNames.GUILD_SETTINGS_PROFILE, label: eh.intl.string(eh.t.txdaxf), ariaLabel: eh.intl.string(eh.t.txdaxf), element: eb.A, type: o.Py.SCROLLABLE_CUSTOM, notice: {
+          section: eb.BEX.PROFILE, impressionName: i.ImpressionNames.GUILD_SETTINGS_PROFILE, label: ex.intl.string(ex.t.txdaxf), ariaLabel: ex.intl.string(ex.t.txdaxf), element: ep.A, type: c.Py.SCROLLABLE_CUSTOM, notice: {
             stores: [C.A],
-            element: em.A
+            element: ef.A
           }
         };
-      case ep.BEX.TAG:
+      case eb.BEX.TAG:
         return {
-          section: ep.BEX.TAG, impressionName: i.ImpressionNames.GUILD_SETTINGS_TAG, label: eh.intl.string(eh.t["2QmKZ2"]), ariaLabel: eh.intl.string(eh.t["2QmKZ2"]), element: en.A, predicate: () => t.canManageGuild, notice: {
+          section: eb.BEX.TAG, impressionName: i.ImpressionNames.GUILD_SETTINGS_TAG, label: ex.intl.string(ex.t["2QmKZ2"]), ariaLabel: ex.intl.string(ex.t["2QmKZ2"]), element: en.A, predicate: () => t.canManageGuild, notice: {
             stores: [C.A],
             element: er.A
           }
         };
-      case ep.BEX.ENGAGEMENT:
+      case eb.BEX.ENGAGEMENT:
         return {
-          section: ep.BEX.ENGAGEMENT, impressionName: i.ImpressionNames.GUILD_SETTINGS_ENGAGEMENT, label: eh.intl.string(eh.t["6TAHbx"]), ariaLabel: eh.intl.string(eh.t["6TAHbx"]), element: ec.A, notice: {
+          section: eb.BEX.ENGAGEMENT, impressionName: i.ImpressionNames.GUILD_SETTINGS_ENGAGEMENT, label: ex.intl.string(ex.t["6TAHbx"]), ariaLabel: ex.intl.string(ex.t["6TAHbx"]), element: eo.A, notice: {
             stores: [C.A],
-            element: eo.y
+            element: ec.y
           }
         };
-      case ep.BEX.BOOST_PERKS:
+      case eb.BEX.BOOST_PERKS:
         return {
-          section: ep.BEX.BOOST_PERKS, impressionName: i.ImpressionNames.GUILD_SETTINGS_BOOST_PERKS, label: eh.intl.string(eh.t.UKgg5N), ariaLabel: eh.intl.string(eh.t.UKgg5N), element: q.H, notice: {
-            stores: [C.A, Q.A],
+          section: eb.BEX.BOOST_PERKS, impressionName: i.ImpressionNames.GUILD_SETTINGS_BOOST_PERKS, label: ex.intl.string(ex.t.UKgg5N), ariaLabel: ex.intl.string(ex.t.UKgg5N), element: Q.H, notice: {
+            stores: [C.A, q.A],
             element: $.l
           }
         };
-      case ep.BEX.INVITES:
+      case eb.BEX.INVITES:
         return {
-          section: ep.BEX.INVITES, impressionName: i.ImpressionNames.GUILD_SETTINGS_INVITES_V2, label: eh.intl.string(eh.t.YOt3Om), ariaLabel: eh.intl.string(eh.t.YOt3Om), element: ed.A, type: o.Py.CUSTOM, predicate: () => t.canManageGuild
+          section: eb.BEX.INVITES, impressionName: i.ImpressionNames.GUILD_SETTINGS_INVITES_V2, label: ex.intl.string(ex.t.YOt3Om), ariaLabel: ex.intl.string(ex.t.YOt3Om), element: ed.A, type: c.Py.CUSTOM, predicate: () => t.canManageGuild
         };
-      case ep.BEX.ROLES:
+      case eb.BEX.ROLES:
         return {
-          section: ep.BEX.ROLES, impressionName: i.ImpressionNames.GUILD_SETTINGS_ROLES, label: eh.intl.string(eh.t["LPJmL/"]), element: W.A, type: o.Py.MINIMAL, ariaLabel: eh.intl.string(eh.t.KXcEC9), notice: {
-            stores: [Y.A],
-            element: W.W
+          section: eb.BEX.ROLES, impressionName: i.ImpressionNames.GUILD_SETTINGS_ROLES, label: ex.intl.string(ex.t["LPJmL/"]), element: Y.A, type: c.Py.MINIMAL, ariaLabel: ex.intl.string(ex.t.KXcEC9), notice: {
+            stores: [W.A],
+            element: Y.W
           }, predicate: () => t.canManageRoles, icon: t.permissionMigrationAvailable ? (0, r.jsx)("div", {
             className: ej.Vx
           }) : true
         };
-      case ep.BEX.EMOJI:
+      case eb.BEX.EMOJI:
         return {
-          section: ep.BEX.EMOJI, impressionName: i.ImpressionNames.GUILD_SETTINGS_EMOJI, label: eh.intl.string(eh.t.sMOuuS), element: ei.Ay, predicate: () => t.canManageGuildExpressions
+          section: eb.BEX.EMOJI, impressionName: i.ImpressionNames.GUILD_SETTINGS_EMOJI, label: ex.intl.string(ex.t.sMOuuS), element: ei.Ay, predicate: () => t.canManageGuildExpressions
         };
-      case ep.BEX.STICKERS:
+      case eb.BEX.STICKERS:
         return {
-          section: ep.BEX.STICKERS, impressionName: i.ImpressionNames.GUILD_SETTINGS_STICKERS, label: eh.intl.string(eh.t.R5nQkS), ariaLabel: eh.intl.string(eh.t.R5nQkS), element: et.A, predicate: () => t.canManageGuildExpressions
+          section: eb.BEX.STICKERS, impressionName: i.ImpressionNames.GUILD_SETTINGS_STICKERS, label: ex.intl.string(ex.t.R5nQkS), ariaLabel: ex.intl.string(ex.t.R5nQkS), element: et.A, predicate: () => t.canManageGuildExpressions
         };
-      case ep.BEX.SOUNDBOARD:
+      case eb.BEX.SOUNDBOARD:
         return {
-          section: ep.BEX.SOUNDBOARD, impressionName: i.ImpressionNames.GUILD_SETTINGS_SOUNDBOARD, label: eh.intl.string(eh.t.OWQNYr), ariaLabel: eh.intl.string(eh.t.OWQNYr), element: ee.A, predicate: () => t.canManageGuildExpressions
+          section: eb.BEX.SOUNDBOARD, impressionName: i.ImpressionNames.GUILD_SETTINGS_SOUNDBOARD, label: ex.intl.string(ex.t.OWQNYr), ariaLabel: ex.intl.string(ex.t.OWQNYr), element: ee.A, predicate: () => t.canManageGuildExpressions
         };
-      case ep.BEX.GUILD_TEMPLATES:
+      case eb.BEX.GUILD_TEMPLATES:
         return {
-          section: ep.BEX.GUILD_TEMPLATES, impressionName: i.ImpressionNames.GUILD_SETTINGS_TEMPLATE, label: (0, r.jsx)(ea.A, {
+          section: eb.BEX.GUILD_TEMPLATES, impressionName: i.ImpressionNames.GUILD_SETTINGS_TEMPLATE, label: (0, r.jsx)(ea.A, {
             showDirtyIndicator: t.showDirtyGuildTemplateIndicator
-          }), ariaLabel: eh.intl.string(eh.t.KUw7Ss), element: es.Ay, notice: {
+          }), ariaLabel: ex.intl.string(ex.t.KUw7Ss), element: es.Ay, notice: {
             stores: [es.Jx],
             element: es.lz
           }, predicate: () => t.canManageGuild
         };
-      case ep.BEX.ACCESS:
+      case eb.BEX.ACCESS:
         return {
-          section: ep.BEX.ACCESS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ACCESS, label: eh.intl.string(eh.t.YJlvBM), element: eu.y, notice: {
-            stores: [eg.A],
-            element: ef.G
-          }, predicate: () => t.canManageGuild, ariaLabel: eh.intl.string(eh.t.YJlvBM)
+          section: eb.BEX.ACCESS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ACCESS, label: ex.intl.string(ex.t.YJlvBM), element: eu.y, notice: {
+            stores: [em.A],
+            element: eg.G
+          }, predicate: () => t.canManageGuild, ariaLabel: ex.intl.string(ex.t.YJlvBM)
         };
-      case ep.BEX.INTEGRATIONS:
+      case eb.BEX.INTEGRATIONS:
         return {
-          section: ep.BEX.INTEGRATIONS, impressionName: i.ImpressionNames.GUILD_SETTINGS_INTEGRATION, label: eh.intl.string(eh.t.CIsNZw), ariaLabel: eh.intl.string(eh.t.CIsNZw), element: M.A, notice: {
+          section: eb.BEX.INTEGRATIONS, impressionName: i.ImpressionNames.GUILD_SETTINGS_INTEGRATION, label: ex.intl.string(ex.t.CIsNZw), ariaLabel: ex.intl.string(ex.t.CIsNZw), element: M.A, notice: {
             stores: [k.default, C.A],
             element: M.K
           }, predicate: () => t.canManageGuild || t.canManageWebhooks || t.canUnlinkChannels
         };
-      case ep.BEX.APP_DIRECTORY:
+      case eb.BEX.APP_DIRECTORY:
         return {
-          section: ep.BEX.APP_DIRECTORY, label: (0, r.jsx)(P.L, {}), ariaLabel: eh.intl.string(eh.t.AKcFUj), onClick: () => {
+          section: eb.BEX.APP_DIRECTORY, label: (0, r.jsx)(P.L, {}), ariaLabel: ex.intl.string(ex.t.AKcFUj), onClick: () => {
             (0, P.N)({
               guildId: t.guild.id,
               section: e
             })
           }
         };
-      case ep.BEX.SAFETY:
+      case eb.BEX.SAFETY:
         return {
-          section: ep.BEX.SAFETY, impressionName: i.ImpressionNames.GUILD_SETTINGS_SAFETY, label: eh.intl.string(eh.t["suhY+Y"]), ariaLabel: eh.intl.string(eh.t["suhY+Y"]), element: J.A, newIndicatorDismissibleContentTypes: [l.M.COMMUNITY_GUILD_SETTINGS_SAFETY], predicate: () => t.canManageGuild && t.guild.features.has(ep.GuildFeatures.COMMUNITY)
+          section: eb.BEX.SAFETY, impressionName: i.ImpressionNames.GUILD_SETTINGS_SAFETY, label: ex.intl.string(ex.t["suhY+Y"]), ariaLabel: ex.intl.string(ex.t["suhY+Y"]), element: J.A, newIndicatorDismissibleContentTypes: [l.M.COMMUNITY_GUILD_SETTINGS_SAFETY], predicate: () => t.canManageGuild && t.guild.features.has(eb.GuildFeatures.COMMUNITY)
         };
-      case ep.BEX.MODERATION:
+      case eb.BEX.MODERATION:
         return {
-          section: ep.BEX.MODERATION, impressionName: i.ImpressionNames.GUILD_SETTINGS_MODERATION, label: eh.intl.string(eh.t["suhY+Y"]), element: Z.Ay, predicate: () => t.canManageGuild && !t.guild.features.has(ep.GuildFeatures.COMMUNITY)
+          section: eb.BEX.MODERATION, impressionName: i.ImpressionNames.GUILD_SETTINGS_MODERATION, label: ex.intl.string(ex.t["suhY+Y"]), element: Z.Ay, predicate: () => t.canManageGuild && !t.guild.features.has(eb.GuildFeatures.COMMUNITY)
         };
-      case ep.BEX.GUILD_AUTOMOD:
+      case eb.BEX.GUILD_AUTOMOD:
         return {
-          section: ep.BEX.GUILD_AUTOMOD, label: (0, r.jsx)("div", {
+          section: eb.BEX.GUILD_AUTOMOD, label: (0, r.jsx)("div", {
             className: ej.o2,
-            children: eh.intl.string(eh.t.uRelgx)
-          }), ariaLabel: eh.intl.string(eh.t.uRelgx), element: b.A, newIndicatorDismissibleContentTypes: null, predicate: () => !t.guild.features.has(ep.GuildFeatures.COMMUNITY) && ((0, g.hX)(t.guild.id) || (0, g.i_)(t.guild.id))
+            children: ex.intl.string(ex.t.uRelgx)
+          }), ariaLabel: ex.intl.string(ex.t.uRelgx), element: p.A, newIndicatorDismissibleContentTypes: null, predicate: () => !t.guild.features.has(eb.GuildFeatures.COMMUNITY) && ((0, m.hX)(t.guild.id) || (0, m.i_)(t.guild.id))
         };
-      case ep.BEX.AUDIT_LOG:
+      case eb.BEX.AUDIT_LOG:
         return {
-          section: ep.BEX.AUDIT_LOG, impressionName: i.ImpressionNames.GUILD_SETTINGS_AUDIT_LOG, label: eh.intl.string(eh.t.SPWLyT), element: w.A, type: o.Py.CUSTOM, predicate: () => t.canViewAuditLog
+          section: eb.BEX.AUDIT_LOG, impressionName: i.ImpressionNames.GUILD_SETTINGS_AUDIT_LOG, label: ex.intl.string(ex.t.SPWLyT), element: w.A, type: c.Py.CUSTOM, predicate: () => t.canViewAuditLog
         };
-      case ep.BEX.BANS:
+      case eb.BEX.BANS:
         return {
-          section: ep.BEX.BANS, impressionName: i.ImpressionNames.GUILD_SETTINGS_BANS, label: eh.intl.string(eh.t.ZbeITS), element: X.A, predicate: () => t.canManageBans
+          section: eb.BEX.BANS, impressionName: i.ImpressionNames.GUILD_SETTINGS_BANS, label: ex.intl.string(ex.t.ZbeITS), element: X.A, predicate: () => t.canManageBans
         };
-      case ep.BEX.COMMUNITY:
-        let eS = eh.intl.string(eh.t.ElKTeb);
-        return t.guild.features.has(ep.GuildFeatures.COMMUNITY) && (eS = eh.intl.string(eh.t["8nY2LE"])), {
-          section: ep.BEX.COMMUNITY,
-          impressionName: t.guild.features.has(ep.GuildFeatures.COMMUNITY) ? i.ImpressionNames.GUILD_SETTINGS_COMMUNITY_OVERVIEW : i.ImpressionNames.GUILD_SETTINGS_ENABLE_COMMUNITY,
+      case eb.BEX.COMMUNITY:
+        let eS = ex.intl.string(ex.t.ElKTeb);
+        return t.guild.features.has(eb.GuildFeatures.COMMUNITY) && (eS = ex.intl.string(ex.t["8nY2LE"])), {
+          section: eb.BEX.COMMUNITY,
+          impressionName: t.guild.features.has(eb.GuildFeatures.COMMUNITY) ? i.ImpressionNames.GUILD_SETTINGS_COMMUNITY_OVERVIEW : i.ImpressionNames.GUILD_SETTINGS_ENABLE_COMMUNITY,
           label: eS,
           element: D.A,
           ariaLabel: eS,
-          newIndicator: !t.guild.features.has(ep.GuildFeatures.COMMUNITY) && null != t.memberCount && t.memberCount >= ex.dH && A.HP.hasHotspot(A._2.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL),
+          newIndicator: !t.guild.features.has(eb.GuildFeatures.COMMUNITY) && null != t.memberCount && t.memberCount >= eh.dH && y.HP.hasHotspot(y._2.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL),
           notice: {
             stores: [C.A],
             element: D.L
           }
         };
-      case ep.BEX.ONBOARDING:
+      case eb.BEX.ONBOARDING:
         return {
-          section: ep.BEX.ONBOARDING, label: eh.intl.string(eh.t["LdxCK/"]), element: K.A, ariaLabel: eh.intl.string(eh.t["LdxCK/"]), newIndicatorDismissibleContentTypes: t.onboardingEnabled ? null : [l.M.COMMUNITY_ONBOARDING_NEW_BADGE], notice: {
-            stores: [B.A, F.A, U.A],
+          section: eb.BEX.ONBOARDING, label: ex.intl.string(ex.t["LdxCK/"]), element: K.A, ariaLabel: ex.intl.string(ex.t["LdxCK/"]), newIndicatorDismissibleContentTypes: t.onboardingEnabled ? null : [l.M.COMMUNITY_ONBOARDING_NEW_BADGE], notice: {
+            stores: [F.A, B.A, U.A],
             element: z.A
-          }, predicate: () => (0, p.rs)(t.guild.id), decoration: function(e, t) {
-            if (m.A.getEnabled(e)) return eh.intl.string(eh.t.pPSmxg).toUpperCase();
-            if ((0, V.o)(e)) return eh.intl.string(eh.t["HDF4o/"]).toUpperCase();
+          }, predicate: () => (0, b.rs)(t.guild.id), decoration: function(e, t) {
+            if (f.A.getEnabled(e)) return ex.intl.string(ex.t.pPSmxg).toUpperCase();
+            if ((0, V.o)(e)) return ex.intl.string(ex.t["HDF4o/"]).toUpperCase();
             let n = H.ti,
               r = n.findIndex(e => e === t);
-            if (false !== r) return eh.intl.formatToPlainString(eh.t["5r28iW"], {
+            if (false !== r) return ex.intl.formatToPlainString(ex.t["5r28iW"], {
               count: r + 1,
               total: n.length
             })
           }(t.guild.id, t.onboardingStep)
         };
-      case ep.BEX.ANALYTICS:
+      case eb.BEX.ANALYTICS:
         return {
-          section: ep.BEX.ANALYTICS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ANALYTICS, label: eh.intl.string(eh.t["0wWfUG"]), ariaLabel: eh.intl.string(eh.t["0wWfUG"]), element: R.A, predicate: () => e_
+          section: eb.BEX.ANALYTICS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ANALYTICS, label: ex.intl.string(ex.t["0wWfUG"]), ariaLabel: ex.intl.string(ex.t["0wWfUG"]), element: R.A, predicate: () => eN
         };
-      case ep.BEX.DISCOVERY_LANDING_PAGE:
+      case eb.BEX.DISCOVERY_LANDING_PAGE:
         return {
-          section: ep.BEX.DISCOVERY_LANDING_PAGE, impressionName: i.ImpressionNames.GUILD_SETTINGS_DISCOVERY_LANDING_PAGE, label: (0, r.jsxs)("div", {
+          section: eb.BEX.DISCOVERY_LANDING_PAGE, impressionName: i.ImpressionNames.GUILD_SETTINGS_DISCOVERY_LANDING_PAGE, label: (0, r.jsxs)("div", {
             className: ej.o2,
-            children: [eh.intl.string(eh.t.kGlQGF), " ", (0, r.jsx)(f.A, {})]
-          }), ariaLabel: eh.intl.string(eh.t.kGlQGF), element: L.A, notice: {
+            children: [ex.intl.string(ex.t.kGlQGF), " ", (0, r.jsx)(g.A, {})]
+          }), ariaLabel: ex.intl.string(ex.t.kGlQGF), element: L.A, notice: {
             stores: [C.A],
             element: L.j
-          }, type: o.Py.CUSTOM, predicate() {
+          }, type: c.Py.CUSTOM, predicate() {
             var e;
-            return t.canManageGuild && (t.guild.features.has(ep.GuildFeatures.DISCOVERABLE) || !!(null == (e = t.guildMetadata) ? true : e.isPublished))
+            return t.canManageGuild && (t.guild.features.has(eb.GuildFeatures.DISCOVERABLE) || !!(null == (e = t.guildMetadata) ? true : e.isPublished))
           }
         };
-      case ep.BEX.COMMUNITY_WELCOME:
+      case eb.BEX.COMMUNITY_WELCOME:
         return {
-          section: ep.BEX.COMMUNITY_WELCOME, impressionName: i.ImpressionNames.GUILD_SETTINGS_COMMUNITY_WELCOME, label: eh.intl.string(eh.t["2rkmDr"]), ariaLabel: eh.intl.string(eh.t["2rkmDr"]), element: G.A, notice: {
-            stores: [E.A],
-            element: N.A
-          }, predicate: () => t.canManageGuild && t.guild.features.has(ep.GuildFeatures.COMMUNITY) && !t.welcomeScreenEmpty && !t.guild.features.has(ep.GuildFeatures.GUILD_SERVER_GUIDE)
+          section: eb.BEX.COMMUNITY_WELCOME, impressionName: i.ImpressionNames.GUILD_SETTINGS_COMMUNITY_WELCOME, label: ex.intl.string(ex.t["2rkmDr"]), ariaLabel: ex.intl.string(ex.t["2rkmDr"]), element: G.A, notice: {
+            stores: [A.A],
+            element: E.A
+          }, predicate: () => t.canManageGuild && t.guild.features.has(eb.GuildFeatures.COMMUNITY) && !t.welcomeScreenEmpty && !t.guild.features.has(eb.GuildFeatures.GUILD_SERVER_GUIDE)
         };
-      case ep.BEX.ROLE_SUBSCRIPTIONS:
-        return ey(eO({}, eN), {
-          section: ep.BEX.ROLE_SUBSCRIPTIONS,
-          element: y.A,
-          type: o.Py.CUSTOM,
-          predicate: () => eA ? t.monetizationPredicate() && ((0, j.hA)(t.guild) || d.A.hasSeenCreatorOnboardingForGuild(t.guild.id)) : t.monetizationPredicate(),
-          newIndicatorDismissibleContentTypes: (0, O.aV)(t.guild) ? [l.M.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE] : null
+      case eb.BEX.ROLE_SUBSCRIPTIONS:
+        return eO(e_({}, eE), {
+          section: eb.BEX.ROLE_SUBSCRIPTIONS,
+          element: O.A,
+          type: c.Py.CUSTOM,
+          predicate: () => ey ? t.monetizationPredicate() && ((0, j.hA)(t.guild) || d.A.hasSeenCreatorOnboardingForGuild(t.guild.id)) : t.monetizationPredicate(),
+          newIndicatorDismissibleContentTypes: (0, _.aV)(t.guild) ? [l.M.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE] : null
         });
-      case ep.BEX.GUILD_PRODUCTS:
+      case eb.BEX.GUILD_PRODUCTS:
         return {
-          section: ep.BEX.GUILD_PRODUCTS, label: eh.intl.string(eh.t.X6h2gz), ariaLabel: eh.intl.string(eh.t.X6h2gz), element: h.A, predicate: () => t.monetizationPredicate() && (0, x.$)(t.guild.id, "guild_product_settings_predicate") && (0, j.hA)(t.guild)
+          section: eb.BEX.GUILD_PRODUCTS, label: ex.intl.string(ex.t.X6h2gz), ariaLabel: ex.intl.string(ex.t.X6h2gz), element: x.A, predicate: () => t.monetizationPredicate() && (0, h.$)(t.guild.id, "guild_product_settings_predicate") && (0, j.hA)(t.guild)
         };
-      case ep.BEX.ROLE_SUBSCRIPTIONS_STORE_PAGE:
+      case eb.BEX.ROLE_SUBSCRIPTIONS_STORE_PAGE:
         return {
-          section: ep.BEX.ROLE_SUBSCRIPTIONS_STORE_PAGE, impressionName: i.ImpressionNames.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS, newIndicator: 2022 === new Date().getFullYear(), label: eh.intl.string(eh.t.ipTYsk), ariaLabel: eh.intl.string(eh.t.ipTYsk), element: v.A, predicate: () => t.monetizationPredicate() && (0, j.hA)(t.guild)
+          section: eb.BEX.ROLE_SUBSCRIPTIONS_STORE_PAGE, impressionName: i.ImpressionNames.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS, newIndicator: 2022 === new Date().getFullYear(), label: ex.intl.string(ex.t.ipTYsk), ariaLabel: ex.intl.string(ex.t.ipTYsk), element: v.A, predicate: () => t.monetizationPredicate() && (0, j.hA)(t.guild)
         };
-      case ep.BEX.MEMBERS:
+      case eb.BEX.MEMBERS:
         return {
-          section: ep.BEX.MEMBERS, impressionName: i.ImpressionNames.GUILD_SETTINGS_MEMBERS, label: (0, r.jsx)(el.Q$, {}), ariaLabel: eh.intl.string(eh.t["9Oq93m"]), element: el.Ay, type: o.Py.CUSTOM, predicate: () => t.canAccessMembersPage, onClick: () => {
+          section: eb.BEX.MEMBERS, impressionName: i.ImpressionNames.GUILD_SETTINGS_MEMBERS, label: (0, r.jsx)(el.Q$, {}), ariaLabel: ex.intl.string(ex.t["9Oq93m"]), element: el.Ay, type: c.Py.CUSTOM, predicate: () => t.canAccessMembersPage, onClick: () => {
             (0, el.N8)()
           }
         };
-      case ep.BEX.DELETE:
+      case eb.BEX.DELETE:
         return {
-          section: ep.BEX.DELETE, onClick() {
-            let e = _.default.getCurrentUser();
+          section: eb.BEX.DELETE, onClick() {
+            let e = N.default.getCurrentUser();
             if (null == e) return;
             let {
               name: i
             } = t.guild, l = () => {
-              S._.subscribeOnce(ep.jej.LAYER_POP_COMPLETE, () => {
-                I.A.deleteGuild(t.guild.id)
-              }), (0, c.jH)()
+              S._.subscribeOnce(eb.jej.LAYER_POP_COMPLETE, () => {
+                T.A.deleteGuild(t.guild.id)
+              }), (0, o.jH)()
             };
             e.mfaEnabled ? (0, s.A)({
-              title: eh.intl.formatToPlainString(eh.t.us7mC1, {
+              title: ex.intl.formatToPlainString(ex.t.us7mC1, {
                 name: i
               }),
-              subtitle: eh.intl.format(eh.t["Zuo+Vd"], {
+              subtitle: ex.intl.format(ex.t["Zuo+Vd"], {
                 name: i
               }),
-              confirmText: eh.intl.string(eh.t.l3hWP6),
+              confirmText: ex.intl.string(ex.t.l3hWP6),
               onConfirm: l
             }) : (0, a.mMO)(async () => {
               let {
                 default: e
               } = await n.e("45199").then(n.bind(n, 310482));
-              return t => (0, r.jsx)(e, ey(eO({}, t), {
+              return t => (0, r.jsx)(e, eO(e_({}, t), {
                 onConfirm: l,
                 guildName: i
               }))
             })
-          }, label: eh.intl.string(eh.t.l3hWP6), ariaLabel: eh.intl.string(eh.t.l3hWP6), icon: (0, r.jsx)(a.ucK, {
+          }, label: ex.intl.string(ex.t.l3hWP6), ariaLabel: ex.intl.string(ex.t.l3hWP6), icon: (0, r.jsx)(a.ucK, {
             size: "xs",
             color: "currentColor"
           }), variant: "destructive", predicate: () => t.isOwnerWithRequiredMfaLevel
         };
-      case ep.BEX.LANDING:
-      case ep.BEX.MEMBER_EDIT:
-      case ep.BEX.MEMBER_TIMEOUT:
-      case ep.BEX.MEMBER_KICK:
-      case ep.BEX.MEMBER_BAN:
-      case ep.BEX.CHANNELS:
-      case ep.BEX.ROLE_EDIT:
-      case ep.BEX.ROLE_PERMISSIONS:
-      case ep.BEX.MEMBER_VERIFICATION:
-      case ep.BEX.INTEGRATION_SETTINGS:
-      case ep.BEX.SECURITY:
-      case ep.BEX.AUDIT_LOG_FILTER:
-      case ep.BEX.ROLE_SUBSCRIPTIONS_TIER_EDIT:
-      case ep.BEX.VANITY_URL:
-      case ep.BEX.INSTANT_INVITES:
-      case ep.BEX.OVERVIEW:
-      case ep.BEX.WEBHOOKS:
-      case ep.BEX.EDIT_WEBHOOK:
-      case ep.BEX.INTEGRATION_PLATFORM:
-      case ep.BEX.LOBBIES_LINKED:
-      case ep.BEX.EDIT_LINKED_LOBBY:
-      case ep.BEX.CHANNELS_FOLLOWED:
-      case ep.BEX.COMMUNITY_INTRO:
-      case ep.BEX.ROLE_EDIT_REFRESH:
-      case ep.BEX.ROLE_SUBSCRIPTIONS_ENABLE_MONETIZATION:
-      case ep.BEX.ROLE_SUBSCRIPTIONS_BASIC:
-      case ep.BEX.ROLE_SUBSCRIPTIONS_TIERS:
-      case ep.BEX.ROLE_SUBSCRIPTIONS_PAYMENTS:
-      case ep.BEX.ROLE_SUBSCRIPTIONS_EMOJIS:
-      case ep.BEX.ROLE_SUBSCRIPTIONS_TIER_TEMPLATE_SELECTION:
+      case eb.BEX.LANDING:
+      case eb.BEX.MEMBER_EDIT:
+      case eb.BEX.MEMBER_TIMEOUT:
+      case eb.BEX.MEMBER_KICK:
+      case eb.BEX.MEMBER_BAN:
+      case eb.BEX.CHANNELS:
+      case eb.BEX.ROLE_EDIT:
+      case eb.BEX.ROLE_PERMISSIONS:
+      case eb.BEX.MEMBER_VERIFICATION:
+      case eb.BEX.INTEGRATION_SETTINGS:
+      case eb.BEX.SECURITY:
+      case eb.BEX.AUDIT_LOG_FILTER:
+      case eb.BEX.ROLE_SUBSCRIPTIONS_TIER_EDIT:
+      case eb.BEX.VANITY_URL:
+      case eb.BEX.INSTANT_INVITES:
+      case eb.BEX.OVERVIEW:
+      case eb.BEX.WEBHOOKS:
+      case eb.BEX.EDIT_WEBHOOK:
+      case eb.BEX.INTEGRATION_PLATFORM:
+      case eb.BEX.LOBBIES_LINKED:
+      case eb.BEX.EDIT_LINKED_LOBBY:
+      case eb.BEX.CHANNELS_FOLLOWED:
+      case eb.BEX.COMMUNITY_INTRO:
+      case eb.BEX.ROLE_EDIT_REFRESH:
+      case eb.BEX.ROLE_SUBSCRIPTIONS_ENABLE_MONETIZATION:
+      case eb.BEX.ROLE_SUBSCRIPTIONS_BASIC:
+      case eb.BEX.ROLE_SUBSCRIPTIONS_TIERS:
+      case eb.BEX.ROLE_SUBSCRIPTIONS_PAYMENTS:
+      case eb.BEX.ROLE_SUBSCRIPTIONS_EMOJIS:
+      case eb.BEX.ROLE_SUBSCRIPTIONS_TIER_TEMPLATE_SELECTION:
         return null;
       default:
-        (0, T.xb)(e)
+        (0, I.xb)(e)
     }
   }
 }

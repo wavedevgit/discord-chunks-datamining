@@ -1,7 +1,7 @@
 /** Chunk was on 13146 **/
-/** chunk id: 949004, original params: e,a,t (module,exports,require) **/
+/** chunk id: 949004, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => g
+  default: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,66 +16,66 @@ var Chunk627968 = require("./627968.js"),
   Chunk294589 = require("./294589.js"),
   Chunk985018 = require("./985018.jsx");
 
-function g(e) {
+function m(e) {
   let {
-    onClose: a,
-    transitionState: g,
-    dismissibleContent: O
+    onClose: t,
+    transitionState: m,
+    dismissibleContent: p
   } = e;
-  (0, l.kn)([O]);
-  let _ = (0, r.A)((0, o.ay)(O)),
-    k = f.useMemo(() => _.map(e => e.value), [_]);
-  f.useEffect(() => {
-    b.default.track(u.HAw.OPEN_MODAL, {
+  (0, l.kn)([p]);
+  let g = (0, a.A)((0, u.ay)(p)),
+    h = r.useMemo(() => g.map(e => e.value), [g]);
+  r.useEffect(() => {
+    _.default.track(s.HAw.OPEN_MODAL, {
       type: "Age Verification User Feedback"
     })
   }, []);
-  let m = f.useCallback(e => {
-    var a;
+  let j = r.useCallback(e => {
+    var t;
     let {
-      rating: f,
-      problem: r,
+      rating: r,
+      problem: a,
       feedback: l
-    } = e, c = null == f, b = (0, i.JO)(O);
-    (0, i.dN)(f, "" !== l ? l : null, null != (a = null == r ? true : r.value) ? a : null, c, b), c || (0, n.mMO)(async () => {
+    } = e, i = null == r, _ = (0, b.JO)(p);
+    (0, b.dN)(r, "" !== l ? l : null, null != (t = null == a ? true : a.value) ? t : null, i, _), i || (0, c.mMO)(async () => {
       let {
         default: e
-      } = await t.e("37836").then(t.bind(t, 845671));
-      return a => (0, d.jsx)(e, function(e) {
-        for (var a = 1; a < arguments.length; a++) {
-          var t = null != arguments[a] ? arguments[a] : {},
-            d = Object.keys(t);
-          "function" == typeof Object.getOwnPropertySymbols && (d = d.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(t, e).enumerable
-          }))), d.forEach(function(a) {
-            var d;
-            d = t[a], a in e ? Object.defineProperty(e, a, {
-              value: d,
+      } = await n.e("37836").then(n.bind(n, 845671));
+      return t => (0, o.jsx)(e, function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            o = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), o.forEach(function(t) {
+            var o;
+            o = n[t], t in e ? Object.defineProperty(e, t, {
+              value: o,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[a] = d
+            }) : e[t] = o
           })
         }
         return e
       }({
-        body: p.intl.string(s.default["4djgO/"])
-      }, a))
+        body: f.intl.string(d.default["4djgO/"])
+      }, t))
     })
-  }, [O]);
-  return (0, d.jsx)(c.A, {
+  }, [p]);
+  return (0, o.jsx)(i.A, {
     modalType: "age_verification",
-    header: p.intl.string(s.default.RqoA4v),
-    body: p.intl.string(s.default.RPb8Zk),
-    problemTitle: p.intl.string(s.default.KZw6kn),
-    problems: _,
-    freeformNeededProblems: k,
-    onSubmit: m,
-    onClose: a,
-    transitionState: g,
-    otherKey: o.VY.SOMETHING_ELSE,
+    header: f.intl.string(d.default.RqoA4v),
+    body: f.intl.string(d.default.RPb8Zk),
+    problemTitle: f.intl.string(d.default.KZw6kn),
+    problems: g,
+    freeformNeededProblems: h,
+    onSubmit: j,
+    onClose: t,
+    transitionState: m,
+    otherKey: u.VY.SOMETHING_ELSE,
     hideHelpDeskLink: true,
     hideDontShowAgainCheckbox: true,
-    freeformDescription: e => null == e ? null : e.value === o.VY.SOMETHING_ELSE ? p.intl.string(s.default.Q5cQ46) : p.intl.string(s.default.zApKaR)
+    freeformDescription: e => null == e ? null : e.value === u.VY.SOMETHING_ELSE ? f.intl.string(d.default.Q5cQ46) : f.intl.string(d.default.zApKaR)
   })
 }

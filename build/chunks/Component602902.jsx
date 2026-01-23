@@ -2,7 +2,7 @@
 /** chunk id: 602902, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  K: () => v
+  K: () => A
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -22,7 +22,7 @@ var Chunk192308 = require("./192308.js"),
   Chunk696016 = require("./696016.js"),
   Chunk652215 = require("./652215.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,14 +31,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -55,23 +55,23 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function v(e, t) {
+async function A(e, t) {
   let {
-    channelId: b,
+    channelId: y,
     analyticsLocations: O,
-    messageReference: v
-  } = t, S = l.A.getChannel(b);
-  if (null != S) {
-    if (null != v) {
-      let e = u.A.getMessage(v.channel_id, v.message_id);
+    messageReference: A
+  } = t, I = l.A.getChannel(y);
+  if (null != I) {
+    if (null != A) {
+      let e = u.A.getMessage(A.channel_id, A.message_id);
       null != e && (0, o.Yf)({
         message: e,
-        channel: S,
+        channel: I,
         shouldMention: false,
         showMentionToggle: false
       })
@@ -80,9 +80,9 @@ async function v(e, t) {
       let t = [],
         n = [];
       for (let r of e) {
-        var I;
+        var S;
         let e = await (0, m.VO)(r),
-          i = null != (I = r.name) ? I : (0, g.cM)(f.default.extractTimestamp(r.id)),
+          i = null != (S = r.name) ? S : (0, g.cM)(f.default.extractTimestamp(r.id)),
           a = (0, h.A)(i);
         if (r.type === _.nQ.CLIP || r.type === _.nQ.VOICE_CLIP) {
           let i = "".concat("" !== a ? a : "clip", ".mp4");
@@ -99,13 +99,13 @@ async function v(e, t) {
         }
         d.default.track(E.HAw.CLIP_SHARED, {
           location_stack: O,
-          guild_id: S.guild_id,
-          channel_id: S.id,
-          channel_type: S.type,
+          guild_id: I.guild_id,
+          channel_id: I.id,
+          channel_type: I.type,
           application_id: r.applicationId,
           clip_id: r.id
         })
-      }(0, p.R)(t, S, c.C.ChannelMessage, {
+      }(0, p.R)(t, I, c.C.ChannelMessage, {
         filesMetadata: n,
         origin: "unknown:clip_share"
       }), i.closeAllModals()
@@ -116,7 +116,7 @@ async function v(e, t) {
     let {
       default: t
     } = await Promise.all([n.e("96758"), n.e("43622"), n.e("87102")]).then(n.bind(n, 243258));
-    return n => (0, r.jsx)(t, A(y({}, n), {
+    return n => (0, r.jsx)(t, v(b({}, n), {
       clips: e,
       analyticsLocations: O
     }))

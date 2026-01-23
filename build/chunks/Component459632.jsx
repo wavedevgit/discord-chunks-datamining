@@ -1,7 +1,7 @@
 /** Chunk was on 13492 **/
-/** chunk id: 459632, original params: e,t,a (module,exports,require) **/
+/** chunk id: 459632, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  A: () => i
+  A: () => _
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -11,51 +11,51 @@ var Chunk397927 = require("./397927.js"),
   Chunk709562 = require("./709562.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function i(e) {
+function _(e) {
   let {
-    onClick: t
-  } = e, a = function(e, t) {
+    onClick: n
+  } = e, t = function(e, n) {
     if (null == e) return {};
-    var a, c, n, l = {};
+    var t, r, o, a = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (n = 0, a = Reflect.ownKeys(e); n < a.length; n++) c = a[n], !(t.indexOf(c) >= 0) && Object.prototype.propertyIsEnumerable.call(e, c) && (l[c] = e[c]);
-      return l
+      for (o = 0, t = Reflect.ownKeys(e); o < t.length; o++) r = t[o], !(n.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
+      return a
     }
-    if (l = function(e, t) {
+    if (a = function(e, n) {
         if (null == e) return {};
-        var a, c, n = {},
-          l = Object.getOwnPropertyNames(e);
-        for (c = 0; c < l.length; c++) a = l[c], !(t.indexOf(a) >= 0) && Object.prototype.propertyIsEnumerable.call(e, a) && (n[a] = e[a]);
-        return n
-      }(e, t), Object.getOwnPropertySymbols)
-      for (n = 0, a = Object.getOwnPropertySymbols(e); n < a.length; n++) c = a[n], !(t.indexOf(c) >= 0) && Object.prototype.propertyIsEnumerable.call(e, c) && (l[c] = e[c]);
-    return l
+        var t, r, o = {},
+          a = Object.getOwnPropertyNames(e);
+        for (r = 0; r < a.length; r++) t = a[r], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t]);
+        return o
+      }(e, n), Object.getOwnPropertySymbols)
+      for (o = 0, t = Object.getOwnPropertySymbols(e); o < t.length; o++) r = t[o], !(n.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
+    return a
   }(e, ["onClick"]), {
-    parentAnalyticsLocation: i
-  } = (0, l.Ay)();
-  return (0, c.jsx)(r.A, function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var a = null != arguments[t] ? arguments[t] : {},
-        c = Object.keys(a);
-      "function" == typeof Object.getOwnPropertySymbols && (c = c.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(a, e).enumerable
-      }))), c.forEach(function(t) {
-        var c;
-        c = a[t], t in e ? Object.defineProperty(e, t, {
-          value: c,
+    parentAnalyticsLocation: _
+  } = (0, a.Ay)();
+  return (0, r.jsx)(l.A, function(e) {
+    for (var n = 1; n < arguments.length; n++) {
+      var t = null != arguments[n] ? arguments[n] : {},
+        r = Object.keys(t);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(t, e).enumerable
+      }))), r.forEach(function(n) {
+        var r;
+        r = t[n], n in e ? Object.defineProperty(e, n, {
+          value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = c
+        }) : e[n] = r
       })
     }
     return e
   }({
-    label: o.intl.string(o.t["UKOtz+"]),
-    iconComponent: n.jNK,
+    label: c.intl.string(c.t["UKOtz+"]),
+    iconComponent: o.jNK,
     tooltipPosition: "bottom",
     onClick: e => {
-      (0, d.X)(i, d.O.MORE), t(e)
+      (0, i.X)(_, i.O.MORE), n(e)
     }
-  }, a))
+  }, t))
 }

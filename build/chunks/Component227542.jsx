@@ -29,18 +29,18 @@ function E() {
     {
       theme: n,
       useSystemTheme: E,
-      useForcedColors: b
+      useForcedColors: y
     } = (0, i.cf)([f.A, p.Ay, c.A], () => ({
       theme: f.A.theme,
       useSystemTheme: p.Ay.useSystemTheme,
       useForcedColors: c.A.useForcedColors
     })),
-    y = _.Xi.useSetting(),
+    b = _.Xi.useSetting(),
     O = (e, i) => (0, r.jsx)(s.iDA, {
       id: e,
       group: "input-modes",
       label: i,
-      disabled: b,
+      disabled: y,
       checked: E === h.Q_.ON ? "system" === e : e === n,
       action: () => {
         (0, d.X8)({
@@ -52,16 +52,16 @@ function E() {
         })
       }
     }),
-    A = [(0, r.jsxs)(s.rXV, {
+    v = [(0, r.jsxs)(s.rXV, {
       children: [O(m.NJ8.LIGHT, g.intl.string(g.t.K2sFfo)), O(m.NJ8.DARK, g.intl.string(g.t.SMPT1k)), O(m.NJ8.DARKER, g.intl.string(g.t.b8Cei3)), O(m.NJ8.MIDNIGHT, g.intl.string(g.t.Do4ZJx)), O("system", g.intl.string(g.t["7rOU6j"]))]
     }, "theme-items")];
-  return A.push((0, r.jsxs)(s.rXV, {
+  return v.push((0, r.jsxs)(s.rXV, {
     label: "UI Density",
     children: [(0, r.jsx)(s.iDA, {
       id: "compact-ui",
       group: "list-density",
       label: g.intl.string(g.t["7iegX4"]),
-      checked: y === a.NS.COMPACT,
+      checked: b === a.NS.COMPACT,
       action: () => {
         _.Xi.updateSetting(a.NS.COMPACT)
       }
@@ -69,7 +69,7 @@ function E() {
       id: "default-ui",
       group: "list-density",
       label: g.intl.string(g.t.bBvAEH),
-      checked: y === a.NS.DEFAULT,
+      checked: b === a.NS.DEFAULT,
       action: () => {
         _.Xi.updateSetting(a.NS.DEFAULT)
       }
@@ -77,12 +77,12 @@ function E() {
       id: "cozy-ui",
       group: "list-density",
       label: g.intl.string(g.t["4cuYHx"]),
-      checked: y === a.NS.COZY,
+      checked: b === a.NS.COZY,
       action: () => {
         _.Xi.updateSetting(a.NS.COZY)
       }
     })]
-  }, "list-density")), A.push((0, r.jsxs)(s.rXV, {
+  }, "list-density")), v.push((0, r.jsxs)(s.rXV, {
     label: "Message Display",
     children: [(0, r.jsx)(s.iDA, {
       id: "cozy-chat",
@@ -101,5 +101,5 @@ function E() {
         _.hH.updateSetting(true), (0, l.AC)()
       }
     })]
-  }, "chat-density")), A
+  }, "chat-density")), v
 }

@@ -10,7 +10,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk615300 = require("./615300.js"),
   Chunk876575 = require("./876575.js");
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,7 +19,7 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 
-function u(e) {
+function c(e) {
   let t = e => e.interpolate({
     inputRange: [0, 1],
     outputRange: ["0px", "1px"]
@@ -85,7 +85,7 @@ class E extends Chunk64700.Component {
               id: "search-index-foreground-mask-b",
               fill: "#fff",
               children: (0, l.jsx)(s.A.use, {
-                style: u(this.state),
+                style: c(this.state),
                 className: o.dK,
                 xlinkHref: "#search-index-foreground-mask-a"
               })
@@ -350,7 +350,7 @@ class E extends Chunk64700.Component {
             })]
           }), (0, l.jsxs)(s.A.g, {
             className: o.KS,
-            style: u(this.state),
+            style: c(this.state),
             children: [(0, l.jsx)("path", {
               fill: "#C9D2F0",
               d: "M89.8311 190.9259c-2.441-2.441-2.441-6.4 0-8.841l36.771-36.771 8.841 8.841-36.771 36.771c-2.441 2.441-6.4 2.441-8.841 0"
@@ -393,10 +393,10 @@ class E extends Chunk64700.Component {
     })
   }
   constructor(...e) {
-    super(...e), c(this, "state", {
+    super(...e), u(this, "state", {
       x: new s.A.Value(0),
       y: new s.A.Value(0)
-    }), c(this, "_isMounted", false), c(this, "shouldLoop", () => this._isMounted)
+    }), u(this, "_isMounted", false), u(this, "shouldLoop", () => this._isMounted)
   }
 }
 let d = E

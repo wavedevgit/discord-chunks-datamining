@@ -2,7 +2,7 @@
 /** chunk id: 47199, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,17 +21,17 @@ var Chunk627968 = require("./627968.js"),
   Chunk796812 = require("./796812.jsx"),
   Chunk379979 = require("./379979.js");
 
-function b(e) {
+function y(e) {
   let {
     applicationId: t,
     name: n,
     setPopoutRef: a,
-    onClose: b,
-    source: y
-  } = e, O = (0, p.h)(t), A = (0, o.bG)([_.A], () => _.A.getGame(t)), {
-    isFetching: v,
-    fetchFailed: S,
-    isFetchingDetectable: I,
+    onClose: y,
+    source: b
+  } = e, O = (0, p.h)(t), v = (0, o.bG)([_.A], () => _.A.getGame(t)), {
+    isFetching: A,
+    fetchFailed: I,
+    isFetchingDetectable: S,
     detectableFetchFailed: T
   } = (0, o.cf)([f.A, _.A], () => ({
     isFetching: f.A.isFetchingApplication(t),
@@ -50,17 +50,17 @@ function b(e) {
   }, [C, a]), (0, u.Ay)(() => {
     var e;
     (0, h.rw)({
-      source: y,
+      source: b,
       viewId: N,
       applicationId: t,
-      gameName: null != (e = null == A ? true : A.name) ? e : "",
+      gameName: null != (e = null == v ? true : v.name) ? e : "",
       profileType: h.HV.MiniProfile
     })
   });
-  let w = i.useMemo(() => v || I ? (0, r.jsx)("div", {
+  let w = i.useMemo(() => A || S ? (0, r.jsx)("div", {
     className: s()(E.k, E.d),
     children: (0, r.jsx)(l.y$y, {})
-  }) : S || T || null == O || null == A ? (0, r.jsx)("div", {
+  }) : I || T || null == O || null == v ? (0, r.jsx)("div", {
     className: E.k,
     children: (0, r.jsx)(m.A, {
       name: n,
@@ -70,10 +70,10 @@ function b(e) {
     className: E.k,
     children: (0, r.jsx)(g.Ay, {
       application: O,
-      detectedGame: A,
-      onClose: b
+      detectedGame: v,
+      onClose: y
     })
-  }), [v, I, S, T, O, A, n, R, b]);
+  }), [A, S, I, T, O, v, n, R, y]);
   return (0, r.jsx)(l.lGe, {
     ref: C,
     "aria-label": null == O ? true : O.name,

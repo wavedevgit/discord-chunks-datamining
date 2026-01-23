@@ -36,18 +36,18 @@ var a, Chunk387739 = require("./387739.js"),
   Chunk116740 = require("./116740.js"),
   g = Chunk116740.List,
   E = Chunk116740.Map,
-  b = Chunk116740.OrderedSet,
+  y = Chunk116740.OrderedSet,
   Chunk154745 = require("./154745.js"),
   Chunk882586 = require("./882586.js"),
   Chunk537578 = require("./537578.js"),
   Chunk609395 = require("./609395.js"),
-  S = Chunk661551("draft_tree_data_support"),
-  I = "&nbsp;",
+  I = Chunk661551("draft_tree_data_support"),
+  S = "&nbsp;",
   T = " ",
   C = RegExp("\r", "g"),
   N = RegExp("\n", "g"),
   R = RegExp("^\n", "g"),
-  w = RegExp(I, "g"),
+  w = RegExp(S, "g"),
   P = RegExp("&#13;?", "g"),
   D = RegExp("&#8203;?", "g"),
   x = ["bold", "bolder", "500", "600", "700", "800", "900"],
@@ -83,17 +83,17 @@ var a, Chunk387739 = require("./387739.js"),
     }), t
   },
   F = function(e) {
-    if (!y(e)) returnfalse;
+    if (!b(e)) returnfalse;
     var t = e;
     return !!(t.href && ("http:" === t.protocol || "https:" === t.protocol || "mailto:" === t.protocol))
   },
   B = function(e) {
-    if (!v(e)) returnfalse;
+    if (!A(e)) returnfalse;
     var t = e;
     return !!(t.attributes.getNamedItem("src") && t.attributes.getNamedItem("src").value)
   },
   H = function(e, t) {
-    if (!A(e)) return t;
+    if (!v(e)) return t;
     var n = e,
       r = n.style.fontWeight,
       i = n.style.fontStyle,
@@ -114,9 +114,9 @@ var a, Chunk387739 = require("./387739.js"),
       this.characterList = g(), this.blockConfigs = [], this.currentBlockType = "unstyled", this.currentDepth = 0, this.currentEntity = null, this.currentText = "", this.entityMap = u, this.wrapper = null, this.contentBlocks = []
     }, t.addDOMNode = function(e) {
       var t;
-      return this.contentBlocks = [], this.currentDepth = 0, (t = this.blockConfigs).push.apply(t, this._toBlockConfigs([e], b())), this._trimCurrentText(), "" !== this.currentText && this.blockConfigs.push(this._makeBlockConfig()), this
+      return this.contentBlocks = [], this.currentDepth = 0, (t = this.blockConfigs).push.apply(t, this._toBlockConfigs([e], y())), this._trimCurrentText(), "" !== this.currentText && this.blockConfigs.push(this._makeBlockConfig()), this
     }, t.getContentBlocks = function() {
-      return 0 === this.contentBlocks.length && (S ? this._toContentBlocks(this.blockConfigs) : this._toFlatContentBlocks(this.blockConfigs)), {
+      return 0 === this.contentBlocks.length && (I ? this._toContentBlocks(this.blockConfigs) : this._toFlatContentBlocks(this.blockConfigs)), {
         contentBlocks: this.contentBlocks,
         entityMap: this.entityMap
       }
@@ -151,7 +151,7 @@ var a, Chunk387739 = require("./387739.js"),
           this._trimCurrentText(), "" !== this.currentText && n.push(this._makeBlockConfig());
           var c = this.currentDepth,
             u = this.wrapper;
-          if (this.wrapper = "pre" === a ? "pre" : this.wrapper, "string" != typeof l && (l = this.disambiguate(a, this.wrapper) || l[0] || "unstyled"), !S && A(i) && ("unordered-list-item" === l || "ordered-list-item" === l)) {
+          if (this.wrapper = "pre" === a ? "pre" : this.wrapper, "string" != typeof l && (l = this.disambiguate(a, this.wrapper) || l[0] || "unstyled"), !I && v(i) && ("unordered-list-item" === l || "ordered-list-item" === l)) {
             var d = i;
             this.currentDepth = V(d, this.currentDepth)
           }
@@ -207,7 +207,7 @@ var a, Chunk387739 = require("./387739.js"),
     }, t._addBreakNode = function(e, t) {
       O(e) && this._appendText("\n", t)
     }, t._addImgNode = function(e, t) {
-      if (v(e)) {
+      if (A(e)) {
         var n = e,
           r = {};
         M.forEach(function(e) {
@@ -216,7 +216,7 @@ var a, Chunk387739 = require("./387739.js"),
         }), this.currentEntity = this.entityMap.__create("IMAGE", "IMMUTABLE", r), h("draftjs_fix_paste_for_img") ? "presentation" !== n.getAttribute("role") && this._appendText("\uD83D\uDCF7", t) : this._appendText("\uD83D\uDCF7", t), this.currentEntity = null
       }
     }, t._addAnchorNode = function(e, t, n) {
-      if (y(e)) {
+      if (b(e)) {
         var r = e,
           i = {};
         j.forEach(function(e) {

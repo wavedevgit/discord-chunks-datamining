@@ -38,11 +38,11 @@ function T(e) {
     x = (0, s.zy)(),
     P = (0, o.bG)([O.A], () => O.A.getGuildId()),
     w = (0, o.bG)([E.A], () => E.A.getChannelId()),
-    L = (0, o.bG)([b.A], () => b.A.getChannel(w), [w]),
+    L = (0, o.bG)([_.A], () => _.A.getChannel(w), [w]),
     R = null != P ? P : null == L ? true : L.guild_id,
-    D = (0, o.bG)([_.A], () => _.A.getGuild(R), [R]),
-    M = (0, f.A)(),
-    k = (0, g.lI)(),
+    D = (0, o.bG)([b.A], () => b.A.getGuild(R), [R]),
+    M = (0, h.A)(),
+    k = (0, m.lI)(),
     {
       guildTitleIconSize: U,
       guildIconSize: G
@@ -52,11 +52,11 @@ function T(e) {
     {
       application: V,
       isFrameInFocusedMode: B
-    } = (0, o.cf)([d.A, h.A], () => {
-      let e = h.A.getConnectedFrame();
+    } = (0, o.cf)([d.A, g.A], () => {
+      let e = g.A.getConnectedFrame();
       return {
         application: d.A.getApplication(null == e ? true : e.applicationId),
-        isFrameInFocusedMode: h.A.getFrameLayoutMode() === v.y.FOCUSED
+        isFrameInFocusedMode: g.A.getFrameLayoutMode() === v.y.FOCUSED
       }
     }),
     H = null != V ? y.Ay.getApplicationIconURL({
@@ -75,7 +75,7 @@ function T(e) {
     size: U
   })) : null != D ? (F = M ? (0, r.jsx)(u.Gg5, {
     size: U
-  }) : (0, r.jsx)(A.A, {
+  }) : (0, r.jsx)(f.A, {
     guild: D,
     size: G,
     active: true,
@@ -98,7 +98,7 @@ function T(e) {
     size: U
   }));
   let Y = i.useCallback(e => {
-      (0, m.L$)("fast-travel")
+      (0, A.L$)("fast-travel")
     }, []),
     K = (null == l || "" === l) && T ? S.intl.string(S.t.ZvKwYa) : l;
   return null == K || "" === K ? null : (0, r.jsx)(c.m_, {

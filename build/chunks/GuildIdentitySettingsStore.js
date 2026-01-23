@@ -10,7 +10,7 @@ var h, Chunk575593 = require("./575593.js"),
   Chunk73153 = require("./73153.js"),
   Chunk652215 = require("./652215.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,32 +19,32 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 let O = Chunk652215.XlH.CLOSED,
-  A = {};
+  v = {};
 
-function v(e) {
-  p = e.guild, O = b.XlH.OPEN, A = {}, _ = e.source
-}
-
-function S() {
-  O = b.XlH.CLOSED, A = {}, _ = true
+function A(e) {
+  p = e.guild, O = y.XlH.OPEN, v = {}, _ = e.source
 }
 
 function I() {
-  O = b.XlH.SUBMITTING, A = {}
+  O = y.XlH.CLOSED, v = {}, _ = true
+}
+
+function S() {
+  O = y.XlH.SUBMITTING, v = {}
 }
 
 function T(e) {
-  p = e.guild, A = {}
+  p = e.guild, v = {}
 }
 
 function C(e) {
   var t;
-  if (O !== b.XlH.SUBMITTING) returnfalse;
-  O = b.XlH.OPEN, A = null != (t = e.errors) ? t : {}
+  if (O !== y.XlH.SUBMITTING) returnfalse;
+  O = y.XlH.OPEN, v = null != (t = e.errors) ? t : {}
 }
 
 function N(e) {
-  O = b.XlH.OPEN, A = e.errors
+  O = y.XlH.OPEN, v = e.errors
 }
 
 function R(e) {
@@ -104,7 +104,7 @@ function M(e) {
 }
 
 function k() {
-  U(), G(), A = {}, O = b.XlH.OPEN
+  U(), G(), v = {}, O = y.XlH.OPEN
 }
 
 function U() {
@@ -116,24 +116,24 @@ function G() {
 }
 
 function V() {
-  A = {}
+  v = {}
 }
 
 function F() {
-  k(), S()
+  k(), I()
 }
 class B extends(h = Chunk311907.Ay.Store) {
   getFormState() {
     return O
   }
   getErrors() {
-    return A
+    return v
   }
   showNotice() {
     return true !== r || true !== i || true !== s || true !== o || true !== l || true !== c || true !== u || true !== d || true !== a || true !== f
   }
   getIsSubmitDisabled() {
-    return true !== l && l.length > b.NA2
+    return true !== l && l.length > y.NA2
   }
   getPendingAvatar() {
     return r
@@ -189,12 +189,12 @@ class B extends(h = Chunk311907.Ay.Store) {
     return _
   }
 }
-y(B, "displayName", "GuildIdentitySettingsStore");
+b(B, "displayName", "GuildIdentitySettingsStore");
 let H = new B(Chunk73153.h, {
-  GUILD_IDENTITY_SETTINGS_INIT: v,
+  GUILD_IDENTITY_SETTINGS_INIT: A,
   GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: F,
   GUILD_IDENTITY_SETTINGS_SET_GUILD: T,
-  GUILD_IDENTITY_SETTINGS_SUBMIT: I,
+  GUILD_IDENTITY_SETTINGS_SUBMIT: S,
   GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: C,
   USER_PROFILE_UPDATE_FAILURE: N,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: R,

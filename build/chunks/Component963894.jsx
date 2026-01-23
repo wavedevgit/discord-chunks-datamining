@@ -24,8 +24,8 @@ function _(e) {
     setConfettiCount: c,
     setShouldFireConfetti: f,
     tooltipProps: _
-  } = e, [h, m] = i.useState(0), g = i.useRef(false), E = i.useRef(true), b = (0, s.bG)([l.A], () => l.A.useReducedMotion), {
-    scaleFactor: y
+  } = e, [h, m] = i.useState(0), g = i.useRef(false), E = i.useRef(true), y = (0, s.bG)([l.A], () => l.A.useReducedMotion), {
+    scaleFactor: b
   } = (0, o.zhh)({
     from: {
       scaleFactor: 1
@@ -40,10 +40,10 @@ function _(e) {
   });
   return (i.useEffect(() => () => {
     E.current = false
-  }, []), b) ? t : (0, r.jsx)(a.animated.div, {
+  }, []), y) ? t : (0, r.jsx)(a.animated.div, {
     className: u.WD,
     style: {
-      transform: y.to(e => "scale(".concat(e, ")"))
+      transform: b.to(e => "scale(".concat(e, ")"))
     },
     children: (0, r.jsx)(o.DUT, {
       className: u.hh,

@@ -4,8 +4,8 @@
 require.d(exports, {
   $K: () => O,
   KF: () => m,
-  Mx: () => b,
-  iH: () => y,
+  Mx: () => y,
+  iH: () => b,
   kj: () => g,
   ri: () => E
 }), require("./228524.js");
@@ -109,7 +109,7 @@ function E() {
     className: c.yF
   })
 }
-let b = e => {
+let y = e => {
     let {
       className: t,
       title: n,
@@ -129,7 +129,7 @@ let b = e => {
       })]
     }))
   },
-  y = e => {
+  b = e => {
     let {
       applicationId: t,
       storeListingBenefits: n,

@@ -3,7 +3,7 @@
 "use strict";
 let r, i, a;
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./896048.js");
 var s, Chunk735438 = require("./735438.js"),
   Chunk311907 = require("./311907.js"),
@@ -36,10 +36,10 @@ let d = new Map,
   E = e => {
     r = e.skuId, a = true
   },
-  b = e => {
+  y = e => {
     null == e.purchases || 0 === e.purchases.length ? f = d : (0, o.isEqual)([...f.values()], e.purchases) || (f = new Map(e.purchases.map(e => [e.skuId, e]))), r = true, a = true
   },
-  y = e => {
+  b = e => {
     let {
       error: t,
       skuId: n
@@ -49,7 +49,7 @@ let d = new Map,
   O = e => {
     f = d, p = false, r = true, i = true, a = true, _ = false
   };
-class A extends(s = Chunk311907.Ay.Store) {
+class v extends(s = Chunk311907.Ay.Store) {
   get isFetching() {
     return p
   }
@@ -75,13 +75,13 @@ class A extends(s = Chunk311907.Ay.Store) {
     return e.map(e => f.get(e)).filter(e => null != e)
   }
 }
-u(A, "displayName", "CollectiblesPurchaseStore");
-let v = new A(Chunk73153.h, {
+u(v, "displayName", "CollectiblesPurchaseStore");
+let A = new v(Chunk73153.h, {
   COLLECTIBLES_PURCHASES_FETCH: h,
   COLLECTIBLES_PURCHASES_FETCH_SUCCESS: g,
   COLLECTIBLES_PURCHASES_FETCH_FAILURE: m,
   COLLECTIBLES_CLAIM: E,
-  COLLECTIBLES_CLAIM_SUCCESS: b,
-  COLLECTIBLES_CLAIM_FAILURE: y,
+  COLLECTIBLES_CLAIM_SUCCESS: y,
+  COLLECTIBLES_CLAIM_FAILURE: b,
   LOGOUT: O
 })

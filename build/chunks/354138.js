@@ -28,30 +28,30 @@ var Chunk773669 = require("./773669.js"),
   Chunk82293 = require("./82293.js"),
   Chunk680646 = require("./680646.js"),
   Chunk652215 = require("./652215.js");
-let y = 1e3,
+let b = 1e3,
   O = 5e3,
-  A = 10,
-  v = 864e5,
-  S = 6e5,
-  I = new Map;
+  v = 10,
+  A = 864e5,
+  I = 6e5,
+  S = new Map;
 async function T(e) {
   var t;
   let n = Date.now(),
-    i = null != (t = I.get(e)) ? t : 0;
-  if (p.A.getApplicationFetchState(e) === p.e.FETCHING || p.A.isInvalidApplication(e) || n < i + S) return;
-  I.set(e, n), c.h.dispatch({
+    i = null != (t = S.get(e)) ? t : 0;
+  if (p.A.getApplicationFetchState(e) === p.e.FETCHING || p.A.isInvalidApplication(e) || n < i + I) return;
+  S.set(e, n), c.h.dispatch({
     type: "APPLICATION_DIRECTORY_FETCH_APPLICATION",
     applicationId: e
   });
-  let a = new r.A(y, O),
-    s = (e, t) => 429 === e.status && a.fails < A && (a.fail(() => {
+  let a = new r.A(b, O),
+    s = (e, t) => 429 === e.status && a.fails < v && (a.fail(() => {
       t(true, s)
     }), true);
   try {
     let t = (await l.Bo.get({
-      url: b.Rsh.APPLICATION_DIRECTORY_EMBED_APPLICATION(e),
+      url: y.Rsh.APPLICATION_DIRECTORY_EMBED_APPLICATION(e),
       backoff: a,
-      retries: A,
+      retries: v,
       interceptResponse: s,
       rejectWithError: false
     })).body;
@@ -76,7 +76,7 @@ async function C(e) {
       dontRefetchMs: a,
       noCache: s
     } = t,
-    o = null != i && i + (null != a ? a : S) > n;
+    o = null != i && i + (null != a ? a : I) > n;
   if (r !== p.e.FETCHING && !o) {
     c.h.dispatch({
       type: "APPLICATION_DIRECTORY_FETCH_APPLICATION",
@@ -84,7 +84,7 @@ async function C(e) {
     });
     try {
       let t = await l.Bo.get({
-        url: b.Rsh.APPLICATION_DIRECTORY_APPLICATION(e),
+        url: y.Rsh.APPLICATION_DIRECTORY_APPLICATION(e),
         query: {
           locale: u.default.locale,
           nocache: s
@@ -107,9 +107,9 @@ async function C(e) {
 async function N() {
   let e = Date.now(),
     t = _.A.getLastFetchTimeMs();
-  if (null != t && t + S > e) return;
+  if (null != t && t + I > e) return;
   let n = await l.Bo.get({
-    url: b.Rsh.APPLICATION_DIRECTORY_CATEGORIES,
+    url: y.Rsh.APPLICATION_DIRECTORY_CATEGORIES,
     query: {
       locale: u.default.locale
     },
@@ -137,7 +137,7 @@ async function R(e) {
     applicationId: n,
     guildId: r
   })) ? t : {};
-  if (o !== g.e.FETCHING && (null == d || !(d + S > s))) {
+  if (o !== g.e.FETCHING && (null == d || !(d + I > s))) {
     c.h.dispatch({
       type: "APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS",
       applicationId: n,
@@ -146,7 +146,7 @@ async function R(e) {
     });
     try {
       let e = await l.Bo.get({
-        url: b.Rsh.APPLICATION_DIRECTORY_SIMILAR(n),
+        url: y.Rsh.APPLICATION_DIRECTORY_SIMILAR(n),
         query: {
           guild_id: r,
           page: a,
@@ -189,8 +189,8 @@ async function w(e) {
     excludeAppsWithCustomInstallUrl: h,
     excludeNonEmbeddedApps: g,
     excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: E,
-    source: y = o.V.APP_DIRECTORY
-  } = null != i ? i : {}, O = Date.now(), A = m.A.getFetchState({
+    source: b = o.V.APP_DIRECTORY
+  } = null != i ? i : {}, O = Date.now(), v = m.A.getFetchState({
     query: n,
     guildId: r,
     page: s,
@@ -198,7 +198,7 @@ async function w(e) {
     categoryId: f,
     integrationType: p
   }), {
-    lastFetchTimeMs: v
+    lastFetchTimeMs: A
   } = null != (t = m.A.getSearchResults({
     query: n,
     guildId: r,
@@ -207,7 +207,7 @@ async function w(e) {
     categoryId: f,
     integrationType: p
   })) ? t : {};
-  if (A !== m.e.FETCHING && (null == v || !(v + S > O))) {
+  if (v !== m.e.FETCHING && (null == A || !(A + I > O))) {
     c.h.dispatch({
       type: "APPLICATION_DIRECTORY_FETCH_SEARCH",
       query: n,
@@ -220,11 +220,11 @@ async function w(e) {
       excludeAppsWithCustomInstallUrl: h,
       excludeNonEmbeddedApps: g,
       excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: E,
-      source: y
+      source: b
     });
     try {
       let e = await l.Bo.get({
-        url: b.Rsh.APPLICATION_DIRECTORY_SEARCH,
+        url: y.Rsh.APPLICATION_DIRECTORY_SEARCH,
         query: {
           query: n,
           guild_id: r,
@@ -237,7 +237,7 @@ async function w(e) {
           exclude_apps_with_custom_install_url: h,
           exclude_non_embedded_apps: g,
           exclude_embedded_apps_without_primary_entry_point_app_command: E,
-          source: y
+          source: b
         },
         rejectWithError: true
       });
@@ -261,7 +261,7 @@ async function w(e) {
         excludeAppsWithCustomInstallUrl: h,
         excludeNonEmbeddedApps: g,
         excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: E,
-        source: y
+        source: b
       }), null == a || a(e.body.result_count)
     } catch (e) {
       c.h.dispatch({
@@ -276,7 +276,7 @@ async function w(e) {
         excludeAppsWithCustomInstallUrl: h,
         excludeNonEmbeddedApps: g,
         excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: E,
-        source: y
+        source: b
       })
     }
   }
@@ -298,7 +298,7 @@ async function D() {
   });
   if (a === h.e.FETCHING) return;
   let f = !n && t === i.W.ACTIVE;
-  if (!f || null == o || !(o + S > r)) {
+  if (!f || null == o || !(o + I > r)) {
     c.h.dispatch({
       type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS",
       surface: e,
@@ -306,7 +306,7 @@ async function D() {
     });
     try {
       let n = await l.Bo.get({
-        url: b.Rsh.APPLICATION_DIRECTORY_COLLECTIONS,
+        url: y.Rsh.APPLICATION_DIRECTORY_COLLECTIONS,
         query: {
           surface: e,
           active_state: t,
@@ -336,13 +336,13 @@ async function x() {
     t = E.A.getFetchState(),
     n = E.A.getLastFetchTimeMs(),
     r = E.A.getNextFetchRetryTimeMs();
-  if (t !== E.e.FETCHING && (null == n || !(n + v > e)) && (null == r || !(e < r))) {
+  if (t !== E.e.FETCHING && (null == n || !(n + A > e)) && (null == r || !(e < r))) {
     c.h.dispatch({
       type: "FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS"
     });
     try {
       let e = await l.Bo.get({
-        url: b.Rsh.INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS,
+        url: y.Rsh.INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS,
         rejectWithError: false
       });
       c.h.dispatch({

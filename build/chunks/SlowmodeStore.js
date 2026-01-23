@@ -2,7 +2,7 @@
 /** chunk id: 101392, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I,
+  A: () => S,
   R: () => p
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
@@ -65,14 +65,14 @@ function E(e) {
   return g(t, 0)
 }
 
-function b(e) {
+function y(e) {
   let {
     channelId: t
   } = e, n = c.A.getChannel(t);
   return null != n && h(n, 0, 0)
 }
 
-function y(e) {
+function b(e) {
   let {
     channelId: t,
     slowmodeType: n
@@ -90,7 +90,7 @@ function O(e) {
   h(i, n, 0 === r ? 0 : r + f)
 }
 
-function A(e) {
+function v(e) {
   let {
     channels: t
   } = e;
@@ -104,12 +104,12 @@ function A(e) {
   })
 }
 
-function v() {
+function A() {
   [0, 1].forEach(e => {
     Object.keys(_[e]).forEach(t => _[e][t].timer.stop()), _[e] = {}
   })
 }
-class S extends(r = Chunk311907.Ay.Store) {
+class I extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(c.A, u.A)
   }
@@ -121,13 +121,13 @@ class S extends(r = Chunk311907.Ay.Store) {
     return this.getSlowmodeCooldownGuess(e.id, t) > 0 && e.rateLimitPerUser > 0
   }
 }
-d(S, "displayName", "SlowmodeStore");
-let I = new S(Chunk73153.h, {
-  SLOWMODE_RESET_COOLDOWN: y,
+d(I, "displayName", "SlowmodeStore");
+let S = new I(Chunk73153.h, {
+  SLOWMODE_RESET_COOLDOWN: b,
   SLOWMODE_SET_COOLDOWN: O,
   UPLOAD_START: E,
-  UPLOAD_FAIL: b,
-  UPLOAD_CANCEL_REQUEST: b,
-  CHANNEL_UPDATES: A,
-  LOGOUT: v
+  UPLOAD_FAIL: y,
+  UPLOAD_CANCEL_REQUEST: y,
+  CHANNEL_UPDATES: v,
+  LOGOUT: A
 })

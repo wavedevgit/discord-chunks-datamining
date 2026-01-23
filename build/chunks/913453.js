@@ -29,11 +29,11 @@ function u(e) {
       } = t;
       return null != (n = e[r.id]) ? n : _.length
     })
-  }, [u, _]), g = (0, s.A)(t), E = (0, s.A)(h), b = (0, s.A)(m);
+  }, [u, _]), g = (0, s.A)(t), E = (0, s.A)(h), y = (0, s.A)(m);
   return {
     mutualFriendsCount: null != t ? t : g,
     mutualFriends: null != h ? h : E,
-    mutualGuilds: null != m ? m : b,
+    mutualGuilds: null != m ? m : y,
     isFetching: d,
     isFetchingFriends: f
   }

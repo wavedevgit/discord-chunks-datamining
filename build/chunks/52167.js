@@ -119,31 +119,31 @@ let k = (e, t, n) => (0, i.Mw)(e) ? t : n,
       moreGuildsAlt: {
         title: p.intl.string(p.t.Bv8Pfk),
         description: p.intl.string(p.t.JMfaTU),
-        imageSource: k(i, b, y),
+        imageSource: k(i, y, b),
         imageClassName: t.moreGuildsAltImage
       },
       soundboard: {
         title: p.intl.string(p.t["lGcW+c"]),
         description: p.intl.string(p.t["/fDyO+"]),
-        imageSource: k(i, O, A),
+        imageSource: k(i, O, v),
         imageClassName: t.soundboardImage
       },
       stickers: {
         title: p.intl.string(p.t["1c+xwT"]),
         description: p.intl.string(p.t.hJG8ZN),
-        imageSource: k(i, v, L),
+        imageSource: k(i, A, L),
         imageClassName: t.stickersImage
       },
       stickersBurst: {
         title: p.intl.string(p.t.tzdIwI),
         description: p.intl.string(p.t.hJG8ZN),
-        imageSource: k(i, v, L),
+        imageSource: k(i, A, L),
         imageClassName: t.stickersImage
       },
       stickersPremiumPerk: {
         title: p.intl.string(p.t.tzdIwI),
         description: p.intl.string(p.t.hJG8ZN),
-        imageSource: k(i, v, L),
+        imageSource: k(i, A, L),
         imageClassName: t.stickersImage
       },
       streaming: {
@@ -155,7 +155,7 @@ let k = (e, t, n) => (0, i.Mw)(e) ? t : n,
       superReactions: {
         title: p.intl.string(p.t["uZt5q/"]),
         description: p.intl.string(p.t.ZK3ZoX),
-        imageSource: k(i, S, I),
+        imageSource: k(i, I, S),
         imageClassName: t.superReactionsImage
       },
       upload: {

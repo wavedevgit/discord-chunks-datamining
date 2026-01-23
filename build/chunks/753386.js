@@ -5,9 +5,9 @@ require.d(exports, {
   J$: () => O,
   WM: () => m,
   Xi: () => E,
-  cZ: () => y,
+  cZ: () => b,
   eG: () => h,
-  vm: () => b,
+  vm: () => y,
   zh: () => g,
   zv: () => p
 });
@@ -49,7 +49,7 @@ function E(e) {
   return null != n && null != i ? n : null != (t = null != i ? i : n) ? t : null
 }
 
-function b(e) {
+function y(e) {
   var t, n;
   let {
     questId: r,
@@ -81,10 +81,10 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   return "VIDEO-QUEST-".concat(e)
 }
 
 function O(e) {
-  return !!(0, u.vv)(e) && (0, n(192308).hasModalOpen)(y(e.id))
+  return !!(0, u.vv)(e) && (0, n(192308).hasModalOpen)(b(e.id))
 }

@@ -1,11 +1,11 @@
 /** Chunk was on 22477 **/
 /** chunk id: 346858, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  kL: "_301d9a6a0128553a",
-  Di: "_57ab4840cc2edca5",
-  wp: "_64078172f7091b71",
-  J$: "_31e2f61f1b0674d2",
-  PQ: "ae09f72e101c710e",
-  n7: "_7fa0b812f8520904",
-  jC: "ec88a7f4b561ded8"
+  kL: "container_db0ccb",
+  Di: "resizeHandle_db0ccb",
+  wp: "sidebarContent_db0ccb",
+  J$: "mobileHeaderCollapsed_db0ccb",
+  PQ: "mobileContainerExpanded_db0ccb",
+  n7: "layerContainer_db0ccb",
+  jC: "popoutContainer_db0ccb"
 }

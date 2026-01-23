@@ -2,7 +2,7 @@
 /** chunk id: 720281, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,12 +15,12 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk552873 = require("./552873.js");
 
-function f(e) {
+function g(e) {
   let {
     guild: t
-  } = e, n = (0, i.bG)([o.default], () => {
-    let e = o.default.getCurrentUser();
-    return (0, c.bM)(t, e)
+  } = e, n = (0, i.bG)([c.default], () => {
+    let e = c.default.getCurrentUser();
+    return (0, o.bM)(t, e)
   });
   return (0, r.jsxs)(s.BJc, {
     gap: 24,

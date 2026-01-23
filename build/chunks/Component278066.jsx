@@ -1,8 +1,8 @@
 /** Chunk was on 21738 **/
 /** chunk id: 278066, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b,
-  a: () => h
+  A: () => _,
+  a: () => g
 }), require("./65821.js"), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,7 +14,7 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk149460 = require("./149460.js");
 
-function f(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,8 +22,8 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var h = ((r = {}).SECTION_NO_RESULTS = "SECTION_NO_RESULTS", r);
-let A = Object.freeze({
+var g = ((r = {}).SECTION_NO_RESULTS = "SECTION_NO_RESULTS", r);
+let f = Object.freeze({
     SECTION_ALL: {
       lightSrc: require("./445451.js"),
       darkSrc: require("./642269.js"),
@@ -97,7 +97,7 @@ let A = Object.freeze({
       })
     }
   }),
-  g = e => {
+  m = e => {
     let {
       theme: t
     } = e, n = d.intl.string(d.t["oi+B4p"]);
@@ -108,7 +108,7 @@ let A = Object.freeze({
       })
     })
   };
-class m extends Chunk64700.PureComponent {
+class A extends Chunk64700.PureComponent {
   render() {
     let {
       type: e,
@@ -120,15 +120,15 @@ class m extends Chunk64700.PureComponent {
       switch (e) {
         case u.m3P.ADD_FRIEND:
         case u.m3P.ALL:
-          return A.SECTION_ALL;
+          return f.SECTION_ALL;
         case u.m3P.ONLINE:
-          return A.SECTION_ONLINE;
+          return f.SECTION_ONLINE;
         case u.m3P.PENDING:
-          return A.SECTION_PENDING;
+          return f.SECTION_PENDING;
         case u.m3P.SUGGESTIONS:
-          return A.SECTION_SUGGESTIONS;
+          return f.SECTION_SUGGESTIONS;
         case "SECTION_NO_RESULTS":
-          return A.SECTION_NO_RESULTS;
+          return f.SECTION_NO_RESULTS;
         default:
           throw Error("FriendsEmptyState: Invalid empty state")
       }
@@ -136,7 +136,7 @@ class m extends Chunk64700.PureComponent {
     return e === u.m3P.ADD_FRIEND ? (0, i.jsx)(a.A.div, {
       className: p.VD,
       style: r,
-      children: (0, i.jsx)(g, {
+      children: (0, i.jsx)(m, {
         theme: n
       })
     }) : (0, i.jsx)(a.A.div, {
@@ -149,14 +149,14 @@ class m extends Chunk64700.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "state", {
+    super(...e), h(this, "state", {
       opacity: new a.A.Value(1)
-    }), f(this, "componentWillEnter", e => {
+    }), h(this, "componentWillEnter", e => {
       this.state.opacity.setValue(0), a.A.timing(this.state.opacity, {
         toValue: 1,
         duration: 250
       }).start(e)
-    }), f(this, "componentWillLeave", e => {
+    }), h(this, "componentWillLeave", e => {
       a.A.timing(this.state.opacity, {
         toValue: 0,
         duration: 250
@@ -164,8 +164,8 @@ class m extends Chunk64700.PureComponent {
     })
   }
 }
-let b = Chunk311907.Ay.connectStores([Chunk544028.A], () => ({
+let _ = Chunk311907.Ay.connectStores([Chunk544028.A], () => ({
   theme: c.A.theme
 }), {
   forwardRef: true
-})(m)
+})(A)

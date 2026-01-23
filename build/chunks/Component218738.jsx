@@ -1,5 +1,5 @@
 /** Chunk was on 80760 **/
-/** chunk id: 218738, original params: e,n,a (module,exports,require) **/
+/** chunk id: 218738, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => p
 });
@@ -18,101 +18,101 @@ var Chunk627968 = require("./627968.js"),
 
 function p(e) {
   let {
-    isStreamer: n,
+    isStreamer: t,
     stream: p,
-    streamApplication: m,
+    streamApplication: f,
     onClose: g,
     transitionState: O,
-    analyticsData: y
+    analyticsData: j
   } = e;
-  r.useEffect(() => {
-    u.default.track(f.HAw.OPEN_MODAL, {
+  i.useEffect(() => {
+    s.default.track(u.HAw.OPEN_MODAL, {
       type: "Stream Problem Report",
       other_user_id: p.ownerId,
-      application_id: null != m ? m.id : null,
-      application_name: null != m ? m.name : null,
-      game_id: null != m ? m.id : null,
+      application_id: null != f ? f.id : null,
+      application_name: null != f ? f.name : null,
+      game_id: null != f ? f.id : null,
       source: "Stream End"
     })
-  }, [p.ownerId, m]);
-  let E = b.intl.string(b.t["5smP3R"]),
-    v = b.intl.string(b.t["0uxA2V"]),
-    w = b.intl.string(b.t.CqjnLN),
+  }, [p.ownerId, f]);
+  let y = b.intl.string(b.t["5smP3R"]),
+    E = b.intl.string(b.t["0uxA2V"]),
+    v = b.intl.string(b.t.CqjnLN),
     S = {
-      impressionName: i.ImpressionNames.STREAM_FEEDBACK_MODAL,
+      impressionName: o.ImpressionNames.STREAM_FEEDBACK_MODAL,
       impressionProperties: {
-        media_session_id: y.media_session_id,
-        rtc_connection_id: y.rtc_connection_id,
-        parent_media_session_id: y.parent_media_session_id
+        media_session_id: j.media_session_id,
+        rtc_connection_id: j.rtc_connection_id,
+        parent_media_session_id: j.parent_media_session_id
       }
     },
-    j = {
-      value: n ? s.Eq.STREAMING : s.Eq.STREAM_WATCHING,
-      label: b.intl.string(n ? _.default["0ZBLiZ"] : _.default.TVTIT1),
+    w = {
+      value: t ? d.Eq.STREAMING : d.Eq.STREAM_WATCHING,
+      label: b.intl.string(t ? m.default["0ZBLiZ"] : m.default.TVTIT1),
       problemsHeader: b.intl.string(b.t["6Y1t5P"]),
-      problemOptions: (0, o.wq)({
-        isStreamer: n
+      problemOptions: (0, l.wq)({
+        isStreamer: t
       }),
       freeformConfig: {
-        value: s.j6.FREEFORM,
+        value: d.j6.FREEFORM,
         label: b.intl.string(b.t.emlT91)
       }
     };
-  return (0, t.jsx)(d.A, {
+  return (0, r.jsx)(_.A, {
     onSubmit: function(e) {
-      var n, r;
+      var t, i;
       let {
-        dontShowAgain: i,
-        rating: d,
-        feedback: u,
-        category: f,
-        problem: _
+        dontShowAgain: o,
+        rating: _,
+        feedback: s,
+        category: u,
+        problem: m
       } = e;
-      i && (0, o.n3)({
-        feedbackType: s.MW.STREAM,
+      o && (0, l.n3)({
+        feedbackType: d.MW.STREAM,
         location: "StreamFeedback"
-      }), null == d || ((0, c.A)({
-        problem: null != (n = null == _ ? true : _.value) ? n : null,
-        category: f,
-        variant: null != (r = null == _ ? true : _.variant) ? r : null,
+      }), null == _ || ((0, c.A)({
+        problem: null != (t = null == m ? true : m.value) ? t : null,
+        category: u,
+        variant: null != (i = null == m ? true : m.variant) ? i : null,
         stream: p,
-        feedback: u,
-        streamApplication: m,
-        analyticsData: y,
+        feedback: s,
+        streamApplication: f,
+        analyticsData: j,
         location: "Stream End",
-        rating: d
-      }), null != _ && (0, l.mMO)(async () => {
+        rating: _
+      }), null != m && (0, a.mMO)(async () => {
         let {
           default: e
-        } = await a.e("37836").then(a.bind(a, 845671));
-        return n => (0, t.jsx)(e, function(e) {
-          for (var n = 1; n < arguments.length; n++) {
-            var a = null != arguments[n] ? arguments[n] : {},
-              t = Object.keys(a);
-            "function" == typeof Object.getOwnPropertySymbols && (t = t.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(a, e).enumerable
-            }))), t.forEach(function(n) {
-              var t;
-              t = a[n], n in e ? Object.defineProperty(e, n, {
-                value: t,
+        } = await n.e("37836").then(n.bind(n, 845671));
+        return t => (0, r.jsx)(e, function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[n] = t
+              }) : e[t] = r
             })
           }
           return e
         }({
           body: b.intl.string(b.t.mMTVnv)
-        }, n))
+        }, t))
       }))
     },
     onClose: g,
-    ratingHeader: E,
+    ratingHeader: y,
     ratingEmojiKind: "face",
-    ratingBody: n ? v : w,
-    categoriesHeader: b.intl.string(_.default.tq8598),
-    optionsTree: [j],
+    ratingBody: t ? E : v,
+    categoriesHeader: b.intl.string(m.default.tq8598),
+    optionsTree: [w],
     impression: S,
     transitionState: O
   })

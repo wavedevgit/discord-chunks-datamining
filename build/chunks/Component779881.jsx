@@ -18,7 +18,7 @@ function d(e) {
     guild: t,
     selected: d
   } = e;
-  return (0, r.jsx)(s.G, {
+  return (0, r.jsx)(a.G, {
     id: "subscriptions-".concat(t.id),
     renderIcon: e => (0, r.jsx)(i.A, {
       className: e
@@ -26,7 +26,7 @@ function d(e) {
     text: u.intl.string(u.t["KzCF/6"]),
     selected: d,
     onClick: () => {
-      (0, a.pX)(o.BVt.CHANNEL(t.id, c.VV.ROLE_SUBSCRIPTIONS))
+      (0, s.pX)(o.BVt.CHANNEL(t.id, c.VV.ROLE_SUBSCRIPTIONS))
     },
     onContextMenu: e => {
       null != t && (0, l.L3)(e, async () => {

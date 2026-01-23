@@ -21,8 +21,8 @@ function u(e) {
   return (0, r.jsx)("div", {
     className: d.k,
     children: (0, r.jsx)(i.D0$, {
-      label: o.intl.string(o.t.arFPfJ),
-      description: o.intl.string(o.t["IT/0AI"]),
+      label: c.intl.string(c.t.arFPfJ),
+      description: c.intl.string(c.t["IT/0AI"]),
       children: (0, r.jsx)(i.Button, {
         size: "sm",
         variant: "secondary",
@@ -32,10 +32,10 @@ function u(e) {
             roles: {
               [n.id]: n
             },
-            returnToSection: c.BEX.ROLES
+            returnToSection: o.BEX.ROLES
           })
         },
-        text: o.intl.string(o.t.arFPfJ),
+        text: c.intl.string(c.t.arFPfJ),
         icon: i.KS6,
         iconPosition: "end"
       })

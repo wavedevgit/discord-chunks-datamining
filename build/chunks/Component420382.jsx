@@ -2,7 +2,7 @@
 /** chunk id: 420382, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => x
+  A: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,58 +20,58 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk473169 = require("./473169.js");
 
-function x(e) {
+function A(e) {
   let {
     location: t,
-    transitionTo: s = f.pX
-  } = e, [a, x] = i.useState("submitting");
+    transitionTo: s = p.pX
+  } = e, [a, A] = i.useState("submitting");
 
-  function _() {
+  function x() {
     return "Android" === l().os.family || "iOS" === l().os.family ? null : (0, r.jsx)(o.Button, {
-      text: m.intl.string(m.t.dKhVQN),
+      text: f.intl.string(f.t.dKhVQN),
       fullWidth: true,
-      onClick: () => s(g.BVt.LOGIN, {
+      onClick: () => s(m.BVt.LOGIN, {
         source: "authorizeIPAdress"
       })
     })
   }
   return ((0, u.Ay)(() => {
-    (0, p.d)("authorize_ip");
+    (0, g.d)("authorize_ip");
     let e = (0, d.A)(t);
-    null == e ? x("failed") : (async () => {
+    null == e ? A("failed") : (async () => {
       try {
-        await c.A.authorizeIPAddress(e), x("succeeded")
+        await c.A.authorizeIPAddress(e), A("succeeded")
       } catch (e) {
-        x("failed")
+        A("failed")
       }
     })()
   }), "failed" === a) ? (0, r.jsxs)(h.Ay, {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(792009),
-      className: A.SX
+      className: _.SX
     }), (0, r.jsx)(h.hE, {
-      className: A.QB,
-      children: m.intl.string(m.t["f/54az"])
+      className: _.QB,
+      children: f.intl.string(f.t["f/54az"])
     }), (0, r.jsx)(h.tK, {
-      className: A.C2,
-      children: m.intl.string(m.t.i3ehMr)
-    }), _()]
+      className: _.C2,
+      children: f.intl.string(f.t.i3ehMr)
+    }), x()]
   }) : "succeeded" === a ? (0, r.jsxs)(h.Ay, {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(841406),
-      className: A.SX
+      className: _.SX
     }), (0, r.jsx)(h.hE, {
-      className: A.QB,
-      children: m.intl.string(m.t.iG0SlK)
+      className: _.QB,
+      children: f.intl.string(f.t.iG0SlK)
     }), (0, r.jsx)(h.tK, {
-      className: A.C2,
-      children: m.intl.string(m.t["Elv+qt"])
-    }), _()]
+      className: _.C2,
+      children: f.intl.string(f.t["Elv+qt"])
+    }), x()]
   }) : (0, r.jsxs)(h.Ay, {
     children: [(0, r.jsx)(h.CK, {}), (0, r.jsx)(h.hE, {
-      children: m.intl.string(m.t["9exy+V"])
+      children: f.intl.string(f.t["9exy+V"])
     })]
   })
 }

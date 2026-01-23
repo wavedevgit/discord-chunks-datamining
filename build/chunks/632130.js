@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 632130, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 }), require("./896048.js"), require("./321073.js");
 var Chunk339048 = require("./339048.js"),
   Chunk830382 = require("./830382.js"),
@@ -13,7 +13,7 @@ var Chunk339048 = require("./339048.js"),
   Chunk994717 = require("./994717.js"),
   Chunk613057 = require("./613057.js"),
   Chunk652215 = require("./652215.js");
-async function f(e, t) {
+async function h(e, t) {
   let n = t.filter(e => e.type === p.Puh.SUBSCRIPTION_GROUP),
     r = await Promise.all(n.map(async t => await (0, s.vz)(e, t.id))),
     i = [];
@@ -45,7 +45,7 @@ async function f(e, t) {
     }), r.filter(e => (null == e ? true : e.price) != null).forEach(e => i.push(e))
   }), i
 }
-async function h(e) {
+async function g(e) {
   let {
     socket: t
   } = e;
@@ -56,14 +56,14 @@ async function h(e) {
   }, "No application.");
   if (o.A.inTestModeForApplication(n) || a.A.inDevModeForApplication(n)) {
     let e = await i.O1(n, false),
-      t = await f(n, e);
+      t = await h(n, e);
     return [...e.filter(e => null != e.price), ...t]
   }
   let r = await l.JI(n);
-  return [...r.filter(e => e.sku.type !== p.Puh.SUBSCRIPTION_GROUP).map(e => e.sku).filter(e => null != e.price), ...await f(n, r.map(e => e.sku))]
+  return [...r.filter(e => e.sku.type !== p.Puh.SUBSCRIPTION_GROUP).map(e => e.sku).filter(e => null != e.price), ...await h(n, r.map(e => e.sku))]
 }
 
-function A(e) {
+function f(e) {
   let {
     socket: t
   } = e;
@@ -74,25 +74,25 @@ function A(e) {
   }, "No application.");
   return r.LM(n)
 }
-let g = {
+let m = {
   [Chunk652215.e$_.GET_SKUS]: {
     [Chunk613057.sm.ANY]: [Chunk613057.VH, Chunk613057.hj],
-    handler: h
+    handler: g
   },
   [Chunk652215.e$_.GET_ENTITLEMENTS]: {
     [Chunk613057.sm.ANY]: [Chunk613057.VH, Chunk613057.hj],
-    handler: A
+    handler: f
   },
   [Chunk652215.e$_.GET_SKUS_EMBEDDED]: {
     [Chunk613057.sm.ANY]: [Chunk613057.VH, Chunk613057.hj],
     handler: async e => ({
-      skus: await h(e)
+      skus: await g(e)
     })
   },
   [Chunk652215.e$_.GET_ENTITLEMENTS_EMBEDDED]: {
     [Chunk613057.sm.ANY]: [Chunk613057.VH, Chunk613057.hj],
     handler: async e => ({
-      entitlements: await A(e)
+      entitlements: await f(e)
     })
   }
 }

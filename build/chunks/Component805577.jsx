@@ -4,7 +4,7 @@
 require.d(exports, {
   Ay: () => ei,
   YD: () => ea,
-  iI: () => eb
+  iI: () => ey
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -108,7 +108,7 @@ function ei(e) {
     autoTrackExposure: true
   }).enabled;
   let t = (0, E.t)("UserSettingsAccessibility"),
-    n = (0, y.y)("UserSettingsAccessibility"),
+    n = (0, b.y)("UserSettingsAccessibility"),
     i = (0, m.i)("UserSettingsAccessibility");
   return (0, r.jsx)(U.A, {
     title: W.intl.string(W.t.G0neg7),
@@ -184,7 +184,7 @@ function ea() {
   let e = L.hH.useSetting(),
     [t] = i.useState(() => {
       let e = "1337",
-        t = (0, v.rh)($(Z({}, (0, S.Ay)({
+        t = (0, A.rh)($(Z({}, (0, I.Ay)({
           channelId: e,
           content: W.intl.formatToPlainString(W.t.bB80LC, {
             previewLink: "https://discord.com/accessibility"
@@ -218,7 +218,7 @@ function ea() {
         className: z.QS,
         children: (0, r.jsx)(T.A, {
           compact: e,
-          author: $(Z({}, (0, I.p_)(t)), {
+          author: $(Z({}, (0, S.p_)(t)), {
             colorString: "#DD80F4"
           }),
           message: t
@@ -390,7 +390,7 @@ function ep() {
     label: W.intl.string(K.default["2gFUEw"]),
     description: W.intl.format(K.default.L8U56h, {
       onClickOpenModal() {
-        (0, A.L)({
+        (0, v.L)({
           analyticsLocations: t
         })
       }
@@ -577,7 +577,7 @@ function eE() {
   })
 }
 
-function eb() {
+function ey() {
   let e = (0, o.bG)([w.A], () => w.A.speechRate);
   return (0, r.jsxs)(c.BJc, {
     gap: 16,
@@ -603,11 +603,11 @@ function eb() {
         children: "x1.0"
       }) : e % 1 == 0 ? "" : true,
       "aria-labelledby": et
-    }), (0, r.jsx)(ey, {})]
+    }), (0, r.jsx)(eb, {})]
   })
 }
 
-function ey() {
+function eb() {
   let [e, t] = i.useState(false), n = () => {
     if (e) {
       (0, R.pr)(), t(false);
@@ -640,7 +640,7 @@ function eO() {
         })
       }), (0, r.jsx)(N.x, {
         setting: F.H.ACCESSIBILITY_TEXT_TO_SPEECH_RATE,
-        children: (0, r.jsx)(eb, {})
+        children: (0, r.jsx)(ey, {})
       })]
     })
   }) : null

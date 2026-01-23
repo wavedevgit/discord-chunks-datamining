@@ -109,7 +109,7 @@ class P extends Chunk64700.PureComponent {
     })
   }
   renderPasskeyCTASection() {
-    return b.A.hasCredentials ? null : (0, r.jsxs)(C, {
+    return f.A.hasCredentials ? null : (0, r.jsxs)(C, {
       label: O.intl.string(O.t.xMDCHa),
       text: O.intl.string(O.t.okgGTu),
       children: [(0, r.jsx)(d.Text, {
@@ -198,7 +198,7 @@ let w = Chunk311907.Ay.connectStores([Chunk287809.default, Chunk670492.A], () =>
   let t = y.default.getCurrentUser();
   return o()(null != t, "MFAEnableSuccess: currentUser cannot be undefined"), {
     currentUser: t,
-    backupCodes: f.A.getBackupCodes(),
-    hasSeenBackupPrompt: f.A.hasSeenBackupPrompt
+    backupCodes: b.A.getBackupCodes(),
+    hasSeenBackupPrompt: b.A.hasSeenBackupPrompt
   }
 })(P)

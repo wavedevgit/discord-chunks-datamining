@@ -27,23 +27,23 @@ function h(e, t, n) {
 let m = {},
   g = {},
   E = {},
-  b = {},
-  y = false,
+  y = {},
+  b = false,
   O = false,
-  A = false;
+  v = false;
 
-function v() {
-  m = {}, g = {}, E = {}, b = {}, r = null, O = false, A = false, y = false
+function A() {
+  m = {}, g = {}, E = {}, y = {}, r = null, O = false, v = false, b = false
 }
 
-function S(e) {
+function I(e) {
   let {
     channel: t
   } = e;
   delete m[t.id], delete g[t.id], delete E[t.id]
 }
 
-function I(e) {
+function S(e) {
   let {
     channelId: t,
     invite: n
@@ -67,18 +67,18 @@ function C(e) {
 
 function N(e) {
   var t;
-  b[e.invite.code] = p.A.createFromServer(e.invite), r = null != (t = s()(l()(u()(Object.values(b), "createdAt")))) ? t : null, A = false
+  y[e.invite.code] = p.A.createFromServer(e.invite), r = null != (t = s()(l()(u()(Object.values(y), "createdAt")))) ? t : null, v = false
 }
 
 function R() {
-  A = false
+  v = false
 }
 
 function w(e) {
   var t;
   null != e.invites && e.invites.forEach(e => {
-    null != b[e.code] && delete b[e.code]
-  }), r = null != (t = s()(l()(u()(Object.values(b), "createdAt")))) ? t : null, O = false
+    null != y[e.code] && delete y[e.code]
+  }), r = null != (t = s()(l()(u()(Object.values(y), "createdAt")))) ? t : null, O = false
 }
 
 function P() {
@@ -86,18 +86,18 @@ function P() {
 }
 
 function D() {
-  A = true
+  v = true
 }
 
 function x() {
-  y = true
+  b = true
 }
 
 function L(e) {
   var t;
-  b = {}, e.invites.forEach(e => {
-    b[e.code] = p.A.createFromServer(e)
-  }), r = null != (t = s()(l()(u()(Object.values(b), "createdAt")))) ? t : null, y = false
+  y = {}, e.invites.forEach(e => {
+    y[e.code] = p.A.createFromServer(e)
+  }), r = null != (t = s()(l()(u()(Object.values(y), "createdAt")))) ? t : null, b = false
 }
 
 function j(e) {
@@ -117,20 +117,20 @@ class M extends(i = Chunk311907.Ay.Store) {
     return r
   }
   getFriendInvitesFetching() {
-    return y
+    return b
   }
   canRevokeFriendInvite() {
-    return null != r && !O && !A
+    return null != r && !O && !v
   }
 }
 h(M, "displayName", "InstantInviteStore");
 let k = new M(Chunk73153.h, {
-  CONNECTION_OPEN: v,
-  CHANNEL_DELETE: S,
+  CONNECTION_OPEN: A,
+  CHANNEL_DELETE: I,
   FRIEND_INVITE_CREATE_SUCCESS: N,
   FRIEND_INVITE_CREATE_FAILURE: R,
   FRIEND_INVITE_REVOKE_SUCCESS: w,
-  INSTANT_INVITE_CREATE_SUCCESS: I,
+  INSTANT_INVITE_CREATE_SUCCESS: S,
   INSTANT_INVITE_CREATE_FAILURE: T,
   INSTANT_INVITE_REVOKE_SUCCESS: C,
   FRIEND_INVITE_REVOKE_REQUEST: P,

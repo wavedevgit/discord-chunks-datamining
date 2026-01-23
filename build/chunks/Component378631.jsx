@@ -25,7 +25,7 @@ function m() {
     m = (0, l.sP)(),
     g = (0, o.yM)(),
     E = i.useMemo(() => (!m || !!g) && !n, [m, n, g]),
-    b = i.useCallback(e => {
+    y = i.useCallback(e => {
       m && e ? a.A.showAgeVerificationGetStartedModal({
         entryPoint: s.q1.AGE_RESTRICTED_DM_COMMANDS_SETTINGS
       }) : u.Qe.updateSetting(e)
@@ -34,7 +34,7 @@ function m() {
     setting: _.H.PRIVACY_SERVER_PRIVACY_DEFAULTS_AGE_RESTRICTED_APPS_V2,
     children: (0, r.jsx)(p.Ay, {
       value: t,
-      onChange: b,
+      onChange: y,
       title: h.intl.string(h.t.XahVjj),
       note: h.intl.string(h.t.R9fXyS),
       disabled: E

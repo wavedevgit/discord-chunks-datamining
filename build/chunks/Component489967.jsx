@@ -31,7 +31,7 @@ let m = [{
 }];
 
 function p() {
-  let [e, t] = l.useState(null), [n, p] = l.useState(0), [h, f] = l.useState(1e3), [x, b] = l.useState(0), g = (0, i.bG)([c.A], () => {
+  let [e, t] = l.useState(null), [n, p] = l.useState(0), [h, x] = l.useState(1e3), [g, f] = l.useState(0), b = (0, r.bG)([c.A], () => {
     var t;
     return null === e ? null : null != (t = c.A.getFeedbackConfig(d.MW[e])) ? t : o.u[d.MW[e]]
   }), v = Object.entries(d.MW), j = v.slice(v.length / 2).map(e => {
@@ -41,12 +41,12 @@ function p() {
       label: t,
       value: t
     }
-  }), y = l.useMemo(() => null != e && x >= 0 && x <= 100 && n >= 0, [e, x, n]);
+  }), _ = l.useMemo(() => null != e && g >= 0 && g <= 100 && n >= 0, [e, g, n]);
   return (0, a.jsx)("div", {
     className: u.kL,
-    children: (0, a.jsxs)(r.BJc, {
+    children: (0, a.jsxs)(i.BJc, {
       gap: 32,
-      children: [(0, a.jsx)(r.l6P, {
+      children: [(0, a.jsx)(i.l6P, {
         label: "Feedback Survey",
         options: j,
         value: e,
@@ -54,90 +54,90 @@ function p() {
         placeholder: "Select Feedback Survey",
         selectionMode: "single",
         fullWidth: true
-      }), (0, a.jsxs)(r.nVY, {
+      }), (0, a.jsxs)(i.nVY, {
         label: "Override Survey Cooldown",
-        children: [null != g && (0, a.jsxs)(a.Fragment, {
-          children: [(0, a.jsx)(r.Text, {
+        children: [null != b && (0, a.jsxs)(a.Fragment, {
+          children: [(0, a.jsx)(i.Text, {
             variant: "text-sm/semibold",
             children: "Current cooldown"
-          }), (0, a.jsx)(r.Text, {
+          }), (0, a.jsx)(i.Text, {
             variant: "text-sm/normal",
-            children: "".concat(g.cooldown / 1e3, " second(s) or")
-          }), (0, a.jsx)(r.Text, {
+            children: "".concat(b.cooldown / 1e3, " second(s) or")
+          }), (0, a.jsx)(i.Text, {
             variant: "text-sm/normal",
-            children: "".concat(g.cooldown / 6e4, " minute(s) or")
-          }), (0, a.jsx)(r.Text, {
+            children: "".concat(b.cooldown / 6e4, " minute(s) or")
+          }), (0, a.jsx)(i.Text, {
             variant: "text-sm/normal",
-            children: "".concat(g.cooldown / 36e5, " hour(s) or")
-          }), (0, a.jsx)(r.Text, {
+            children: "".concat(b.cooldown / 36e5, " hour(s) or")
+          }), (0, a.jsx)(i.Text, {
             variant: "text-sm/normal",
-            children: "".concat(g.cooldown / 864e5, " day(s)")
+            children: "".concat(b.cooldown / 864e5, " day(s)")
           })]
-        }), (0, a.jsxs)(r.BJc, {
+        }), (0, a.jsxs)(i.BJc, {
           direction: "horizontal",
           align: "end",
-          children: [(0, a.jsx)(r.ksK, {
+          children: [(0, a.jsx)(i.ksK, {
             label: "Override cooldown",
             min: 0,
             value: n.toString(),
             type: "number",
             placeholder: "Duration length",
             onChange: e => p(parseFloat(e))
-          }), (0, a.jsx)(r.l6P, {
+          }), (0, a.jsx)(i.l6P, {
             label: "Override cooldown duration type",
             hideLabel: true,
             options: m,
             value: h,
-            onSelectionChange: f,
+            onSelectionChange: x,
             selectionMode: "single",
             fullWidth: true
           })]
         })]
-      }), (0, a.jsx)(r.cGx, {}), (0, a.jsx)(r.nVY, {
+      }), (0, a.jsx)(i.cGx, {}), (0, a.jsx)(i.nVY, {
         label: "Override Survey Chance",
-        children: (0, a.jsx)(r.ksK, {
+        children: (0, a.jsx)(i.ksK, {
           label: "Override chance",
-          description: null != g ? "Current chance: ".concat(100 * g.chance, "%") : true,
+          description: null != b ? "Current chance: ".concat(100 * b.chance, "%") : true,
           helperText: "As a percentage",
           min: 0,
           max: 100,
-          value: x.toString(),
+          value: g.toString(),
           type: "number",
-          onChange: e => b(parseFloat(e))
+          onChange: e => f(parseFloat(e))
         })
-      }), (0, a.jsxs)(r.ButtonGroup, {
-        children: [(0, a.jsx)(r.Button, {
+      }), (0, a.jsxs)(i.ButtonGroup, {
+        children: [(0, a.jsx)(i.Button, {
           variant: "critical-primary",
           text: "Clear Override",
-          onClick: () => void(null != g && s.h.dispatch({
+          onClick: () => void(null != b && s.h.dispatch({
             type: "FEEDBACK_OVERRIDE_CLEAR",
-            feedbackType: g.feedbackType
+            feedbackType: b.feedbackType
           })),
-          disabled: !y
-        }), (0, a.jsx)(r.Button, {
+          disabled: !_
+        }), (0, a.jsx)(i.Button, {
           variant: "primary",
           text: "Update",
-          onClick: () => void(null != g && s.h.dispatch({
+          onClick: () => void(null != b && s.h.dispatch({
             type: "FEEDBACK_OVERRIDE_SET",
-            feedbackType: g.feedbackType,
+            feedbackType: b.feedbackType,
             cooldown: n * h,
-            chance: x / 100
+            chance: g / 100
           })),
-          disabled: !y
+          disabled: !_
         })]
-      }), null == e && (0, a.jsx)(r.Text, {
+      }), null == e && (0, a.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-feedback-critical",
         children: "Error: need to select a survey"
-      }), !(n >= 0) && (0, a.jsx)(r.Text, {
+      }), !(n >= 0) && (0, a.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-feedback-critical",
         children: "Error: cooldown needs to be a number greater than 0"
-      }), !(x >= 0 && x <= 100) && (0, a.jsx)(r.Text, {
+      }), !(g >= 0 && g <= 100) && (0, a.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-feedback-critical",
         children: "Error: chance needs to be a number between 0 and 100"
-      }), (0, a.jsx)(r.Text, {
+      }), (0, a.jsx)(i.Text, {
         variant: "text-sm/normal",
         children: "Clear override resets a feedback survey to its default values"
       })]

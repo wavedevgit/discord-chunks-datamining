@@ -1,7 +1,7 @@
 /** Chunk was on 35894 **/
 /** chunk id: 512068, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,23 +16,23 @@ var Chunk627968 = require("./627968.js"),
   Chunk576705 = require("./576705.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk510403 = require("./510403.js");
-let p = e => {
+let f = e => {
   let {
     guild: t,
     transitionState: n,
     onClose: i
-  } = e, [p, j] = l.useState(7), [g, h] = l.useState(null), [x, y] = l.useState([]), O = l.useCallback(async () => {
-    h(null), h(await d.A.updateEstimate(t.id, p, x))
-  }, [p, t.id, x]);
+  } = e, [f, j] = l.useState(7), [g, h] = l.useState(null), [x, y] = l.useState([]), O = l.useCallback(async () => {
+    h(null), h(await u.A.updateEstimate(t.id, f, x))
+  }, [f, t.id, x]);
   l.useEffect(() => {
     O()
   }, [O]);
   let v = l.useCallback(() => {
-      d.A.prune(t.id, p, x), i()
-    }, [t.id, p, x, i]),
-    H = (0, a.yK)([f.A, C.A], () => {
-      let e = f.A.getHighestRole(t);
-      return o()(C.A.getSortedRoles(t.id)).filter(n => !(0, u.Oy)(n) && f.A.isRoleHigher(t, e, n)).map(e => {
+      u.A.prune(t.id, f, x), i()
+    }, [t.id, f, x, i]),
+    _ = (0, a.yK)([m.A, C.A], () => {
+      let e = m.A.getHighestRole(t);
+      return o()(C.A.getSortedRoles(t.id)).filter(n => !(0, d.Oy)(n) && m.A.isRoleHigher(t, e, n)).map(e => {
         let {
           id: t,
           name: n
@@ -45,13 +45,13 @@ let p = e => {
       }).value()
     }, [t]);
   return (0, r.jsx)(s.aFV, {
-    title: "".concat(b.intl.string(b.t.zbyz7p), "—").concat(null != t ? t.name : ""),
+    title: "".concat(p.intl.string(p.t.zbyz7p), "—").concat(null != t ? t.name : ""),
     actions: [{
-      text: b.intl.string(b.t["ETE/oC"]),
+      text: p.intl.string(p.t["ETE/oC"]),
       onClick: i,
       variant: "secondary"
     }, {
-      text: b.intl.string(b.t["2mIlKQ"]),
+      text: p.intl.string(p.t["2mIlKQ"]),
       onClick: v
     }],
     onClose: async () => {
@@ -59,17 +59,17 @@ let p = e => {
     },
     transitionState: n,
     children: (0, r.jsxs)("div", {
-      className: m.Q,
+      className: b.Q,
       children: [(0, r.jsx)(c.z6M, {
-        label: b.intl.string(b.t.YccTvK),
-        value: String(p),
+        label: p.intl.string(p.t.YccTvK),
+        value: String(f),
         options: [{
-          name: b.intl.formatToPlainString(b.t.FM1dHS, {
+          name: p.intl.formatToPlainString(p.t.FM1dHS, {
             days: 7
           }),
           value: "7"
         }, {
-          name: b.intl.formatToPlainString(b.t.FM1dHS, {
+          name: p.intl.formatToPlainString(p.t.FM1dHS, {
             days: 30
           }),
           value: "30"
@@ -78,23 +78,23 @@ let p = e => {
           j(Number(e))
         }
       }), (0, r.jsx)(c.IpV, {
-        className: m.X,
+        className: b.X,
         children: (0, r.jsx)(c.ZiE, {
           selectionMode: "multiple",
-          label: b.intl.string(b.t.buoe17),
+          label: p.intl.string(p.t.buoe17),
           maxOptionsVisible: 10,
           value: x,
           onSelectionChange: e => y(e),
-          options: H
+          options: _
         })
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
-        children: x.length > 0 ? b.intl.format(b.t["5WxHHp"], {
+        children: x.length > 0 ? p.intl.format(p.t["5WxHHp"], {
           members: g,
-          days: p
-        }) : b.intl.format(b.t.f13az9, {
+          days: f
+        }) : p.intl.format(p.t.f13az9, {
           members: g,
-          days: p
+          days: f
         })
       })]
     })

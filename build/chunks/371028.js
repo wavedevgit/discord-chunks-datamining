@@ -1,5 +1,5 @@
 /** Chunk was on 88615 **/
-/** chunk id: 371028, original params: e,t,l (module,exports,require) **/
+/** chunk id: 371028, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
 });
@@ -12,10 +12,10 @@ var Chunk64700 = require("./64700.js"),
 
 function u(e, t) {
   let {
-    spent: l
-  } = (0, s.A)(e), u = (0, n.bG)([i.A], () => i.A.getAppliedGuildBoostsForGuild(e), [e]), d = l - r.useMemo(() => {
-    var e, t, l;
-    return null != (e = null == u || null == (l = u.filter) || null == (t = l.call(u, e => !e.ended && null == e.endsAt)) ? true : t.length) ? e : 0
+    spent: n
+  } = (0, o.A)(e), u = (0, l.bG)([i.A], () => i.A.getAppliedGuildBoostsForGuild(e), [e]), d = n - r.useMemo(() => {
+    var e, t, n;
+    return null != (e = null == u || null == (n = u.filter) || null == (t = n.call(u, e => !e.ended && null == e.endsAt)) ? true : t.length) ? e : 0
   }, [u]);
   return r.useMemo(() => d <= 0 ? {
     shouldShow: false,
@@ -24,8 +24,8 @@ function u(e, t) {
     requiredBoostCount: 0
   } : {
     shouldShow: true,
-    title: a.intl.string(o.default.n5hQhc),
-    description: a.intl.formatToPlainString(o.default.iAaAiG, {
+    title: a.intl.string(s.default.n5hQhc),
+    description: a.intl.formatToPlainString(s.default.iAaAiG, {
       boostCount: d,
       perksString: t.join(", ")
     }),

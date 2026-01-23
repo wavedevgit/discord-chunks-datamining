@@ -2,12 +2,12 @@
 /** chunk id: 2915, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => j,
-  I: () => g
+  I: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk334279 = require("./334279.js"),
   Chunk421380 = require("./421380.js"),
   Chunk397927 = require("./397927.js"),
@@ -18,7 +18,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk753879 = require("./753879.js"),
   Chunk815907 = require("./815907.js"),
   Chunk661251 = require("./661251.js");
-let b = {
+let f = {
     [Chunk652215.GD.QUEST_REWARD]: "Quest Reward",
     [Chunk652215.GD.DEVELOPER_GIFT]: "Developer Gift",
     [Chunk652215.GD.INVOICE]: "Invoice",
@@ -27,20 +27,20 @@ let b = {
     [Chunk652215.GD.SUBSCRIPTION]: "Subscription",
     [Chunk652215.GD.SUBSCRIPTION_MEMBER]: "Subscription Member"
   },
-  g = e => {
+  b = e => {
     var t;
     let n, {
         entitlement: l,
-        active: i,
+        active: r,
         onDelete: s
       } = e,
       d = e => null != e ? (0, u.i$)(e, "LLL") : "---";
     return (0, a.jsxs)("div", {
-      className: r()(h.Nr, i ? f.C1 : ""),
+      className: i()(h.Nr, r ? x.C1 : ""),
       children: [(0, a.jsxs)(c.Text, {
         variant: "text-md/normal",
         children: ["ID: ", l.id, " "]
-      }), !i && (0, a.jsxs)(c.Text, {
+      }), !r && (0, a.jsxs)(c.Text, {
         variant: "text-md/normal",
         children: ["SKU: ", null == (t = v.find(e => e.value === l.skuId)) ? true : t.label]
       }), null != l.startsAt && null != l.endsAt && (0, a.jsxs)(a.Fragment, {
@@ -53,8 +53,8 @@ let b = {
         })]
       }), (0, a.jsxs)(c.Text, {
         variant: "text-md/normal",
-        children: ["Entitlement source type: ", null != (n = l.sourceType) && n in b ? b[n] : "Unknown source type ".concat(n)]
-      }), i && null != s && (0, a.jsx)(o.$n, {
+        children: ["Entitlement source type: ", null != (n = l.sourceType) && n in f ? f[n] : "Unknown source type ".concat(n)]
+      }), r && null != s && (0, a.jsx)(o.$n, {
         className: h.RW,
         size: o.$n.Sizes.TINY,
         color: o.$n.Colors.RED,
@@ -79,8 +79,8 @@ let b = {
   }];
 
 function j() {
-  let [e, t] = l.useState(false), [n, i] = l.useState(s.j.PREMIUM_TIER_2_1_HOUR), [u, b] = l.useState([]), [j, y] = l.useState([]), {
-    refreshEntitlementList: _,
+  let [e, t] = l.useState(false), [n, r] = l.useState(s.j.PREMIUM_TIER_2_1_HOUR), [u, f] = l.useState([]), [j, _] = l.useState([]), {
+    refreshEntitlementList: y,
     grantFractionalPremium: A,
     deleteFractionalPremium: C,
     triggerNextEntitlementFulfillment: S,
@@ -88,15 +88,15 @@ function j() {
     loading: E
   } = (0, m.o)();
   return l.useEffect(() => {
-    _()
-  }, [_]), l.useEffect(() => {
-    b(O.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === p.zF_.FRACTIONAL_REDEMPTION)), y(O.filter(e => Object.values(s.j).includes(e.skuId) && null == e.startsAt))
+    y()
+  }, [y]), l.useEffect(() => {
+    f(O.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === p.zF_.FRACTIONAL_REDEMPTION)), _(O.filter(e => Object.values(s.j).includes(e.skuId) && null == e.startsAt))
   }, [O]), (0, a.jsx)(c.IpV, {
-    className: x.nd,
+    className: g.nd,
     children: (0, a.jsxs)("div", {
-      className: f.l$,
+      className: x.l$,
       children: [(0, a.jsxs)("div", {
-        className: f.dL,
+        className: x.dL,
         children: [(0, a.jsx)(c.Text, {
           style: {
             marginBottom: "8px"
@@ -138,12 +138,12 @@ function j() {
         style: {
           marginBottom: "8px"
         },
-        className: r()([h.uW, f.Uo]),
+        className: i()([h.uW, x.Uo]),
         children: [(0, a.jsx)(c.l6P, {
           label: "Fractional Premium SKU",
           value: n,
           options: v,
-          onSelectionChange: i,
+          onSelectionChange: r,
           selectionMode: "single",
           fullWidth: true
         }), (0, a.jsx)(c.Button, {
@@ -157,7 +157,7 @@ function j() {
           style: {
             flexWrap: "wrap"
           },
-          className: f.dL,
+          className: x.dL,
           children: [(0, a.jsx)(c.Text, {
             style: {
               marginBottom: "8px"
@@ -184,7 +184,7 @@ function j() {
               disabled: E,
               look: o.$n.Looks.BLANK,
               size: o.$n.Sizes.ICON,
-              onClick: _,
+              onClick: y,
               children: (0, a.jsx)("span", {
                 title: "Refresh",
                 children: (0, a.jsx)(c.fNY, {
@@ -202,7 +202,7 @@ function j() {
             variant: "text-md/bold",
             children: "Active premium"
           }), (0, a.jsx)("div", {
-            children: u.map(e => (0, a.jsx)(g, {
+            children: u.map(e => (0, a.jsx)(b, {
               entitlement: e,
               active: true,
               onDelete: () => C(e.id)
@@ -216,7 +216,7 @@ function j() {
             variant: "text-md/bold",
             children: "Unconsumed Fractional Premium"
           }), (0, a.jsx)("div", {
-            children: j.map(e => (0, a.jsx)(g, {
+            children: j.map(e => (0, a.jsx)(b, {
               entitlement: e
             }, e.id))
           })]

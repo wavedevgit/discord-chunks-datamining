@@ -2,7 +2,7 @@
 /** chunk id: 675219, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  o: () => I
+  o: () => S
 }), require("./896048.js"), require("./321073.js"), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk835245 = require("./835245.js"),
@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,14 +30,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -54,13 +54,13 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = (e, t) => null != t && t.implemented && t.flowType === e,
-  S = {
+let A = (e, t) => null != t && t.implemented && t.flowType === e,
+  I = {
     [Chunk285871.C.ORB_CHECKOUT]: {
       allowGiftCustomization: false,
       disablePaymentAuthSteps: true,
@@ -78,7 +78,7 @@ let v = (e, t) => null != t && t.implemented && t.flowType === e,
       allowGiftCustomization: false
     }
   };
-class I {
+class S {
   getUnifiedStepDefinition(e) {
     return this.tenantCheckoutFlowConfig.UnifiedCheckoutStepDefinitions[e]
   }
@@ -104,7 +104,7 @@ class I {
       })
     } : {
       key: null,
-      renderStep: e => (0, r.jsx)(o.I, y({}, e))
+      renderStep: e => (0, r.jsx)(o.I, b({}, e))
     }
   }
   getAddPaymentStepConfig(e) {
@@ -194,7 +194,7 @@ class I {
       analyticsLocations: _
     } = e, h = null != d ? d : (0, i.A)(), {
       modalKey: m
-    } = t, g = this.generateRenderHeader(), E = null != f ? f : this.getApplicationId(u), b = false, O = null != s ? s : true;
+    } = t, g = this.generateRenderHeader(), E = null != f ? f : this.getApplicationId(u), y = false, O = null != s ? s : true;
     return (0, a.mMO)(async () => {
       let {
         WrappedUnifiedPaymentModal: e
@@ -207,7 +207,7 @@ class I {
           isGift: !!(null != o && o.isGift)
         }),
         onComplete: e => {
-          null != l && l(e), b = true
+          null != l && l(e), y = true
         },
         onClose: c,
         renderHeader: g,
@@ -220,9 +220,9 @@ class I {
         giftContextProps: o,
         flowSpecificOptions: O
       })
-    }, A(y({}, t), {
+    }, v(b({}, t), {
       onCloseRequest() {
-        null != t.onCloseRequest && t.onCloseRequest(b, h), (0, a.OoC)(m)
+        null != t.onCloseRequest && t.onCloseRequest(y, h), (0, a.OoC)(m)
       },
       modalKey: m
     }))
@@ -230,9 +230,9 @@ class I {
   constructor({
     checkoutFlow: e
   }) {
-    b(this, "checkoutFlow", true), b(this, "checkoutFlowConfiguration", true), b(this, "tenantCheckoutFlowConfig", true), b(this, "internalCheckoutFlowControls", true), this.checkoutFlow = e;
+    y(this, "checkoutFlow", true), y(this, "checkoutFlowConfiguration", true), y(this, "tenantCheckoutFlowConfig", true), y(this, "internalCheckoutFlowControls", true), this.checkoutFlow = e;
     const t = f.Y[e];
-    if (!v(e, t)) throw Error("Checkout flow ".concat(e, " is not implemented"));
-    this.checkoutFlowConfiguration = t, this.tenantCheckoutFlowConfig = t.TENANT_CHECKOUT_FLOW_CONFIG, this.internalCheckoutFlowControls = S[e]
+    if (!A(e, t)) throw Error("Checkout flow ".concat(e, " is not implemented"));
+    this.checkoutFlowConfiguration = t, this.tenantCheckoutFlowConfig = t.TENANT_CHECKOUT_FLOW_CONFIG, this.internalCheckoutFlowControls = I[e]
   }
 }

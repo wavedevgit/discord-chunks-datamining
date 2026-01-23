@@ -2,7 +2,7 @@
 /** chunk id: 408213, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => I
+  Ay: () => S
 }), require("./228524.js");
 var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
@@ -21,7 +21,7 @@ var Chunk562465 = require("./562465.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,14 +30,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -54,20 +54,20 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = false;
+let A = false;
 
-function S(e) {
+function I(e) {
   i.h.dispatch({
     type: "USER_GUILD_JOIN_REQUEST_COACHMARK_SHOW",
     guildId: e
   })
 }
-let I = {
+let S = {
   fetchVerificationForm: async (e, t) => {
     let n = null != t ? t : p.A.getInviteKeyForGuildId(e),
       a = _.default.getCurrentUser(),
@@ -200,7 +200,7 @@ let I = {
         type: "USER_GUILD_JOIN_REQUEST_UPDATE",
         guildId: e,
         request: a
-      }), (0, m.j5)(t.formFields) && n !== v && setTimeout(() => S(e), n), a
+      }), (0, m.j5)(t.formFields) && n !== A && setTimeout(() => I(e), n), a
     } catch (t) {
       let {
         status: e
@@ -211,16 +211,16 @@ let I = {
             title: E.intl.string(E.t.MmIrpf),
             body: E.intl.string(E.t.yjpDQ3),
             confirmText: E.intl.string(E.t.XNGT1O)
-          }), A(y({}, t), {
+          }), v(b({}, t), {
             message: E.intl.string(E.t.yjpDQ3)
           });
         case 403:
-          throw A(y({}, t), {
+          throw v(b({}, t), {
             message: E.intl.string(E.t["8T1rxN"])
           });
         default:
           var l, d;
-          throw A(y({}, t), {
+          throw v(b({}, t), {
             message: null != (l = (d = new o.LG(t), d.getAnyErrorMessage())) ? l : E.intl.string(E.t.R0RpRX)
           })
       }

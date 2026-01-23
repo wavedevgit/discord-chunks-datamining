@@ -22,35 +22,35 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk49999 = require("./49999.js"),
   Chunk985018 = require("./985018.jsx");
-let y = 1,
+let b = 1,
   O = 15;
 
-function A() {
-  let e = I();
-  return 1 === e ? b.intl.string(b.t.NBae0i) : b.intl.format(b.t.GSynLW, {
+function v() {
+  let e = S();
+  return 1 === e ? y.intl.string(y.t.NBae0i) : y.intl.format(y.t.GSynLW, {
     time: e
   })
 }
 
-function v() {
+function A() {
   let e = (0, a.bG)([u.A], () => u.A.getPremiumSubscription());
   return null != e && e.status === g.Dmq.CANCELED ? e : null
 }
 
-function S() {
-  let e = v(),
-    t = I();
-  return null != e && t >= y && t <= O
+function I() {
+  let e = A(),
+    t = S();
+  return null != e && t >= b && t <= O
 }
 
-function I() {
-  let e = v();
+function S() {
+  let e = A();
   return null != e ? (0, f.x6)(e) : 0
 }
 
 function T(e, t) {
   let n = (0, _.Lh)(),
-    r = S(),
+    r = I(),
     i = (0, p.u)(e, t);
   return null != n && r && i
 }
@@ -63,8 +63,8 @@ let C = e => {
     tooltipDelay: f = 300,
     targetElementRef: p
   } = e, {
-    analyticsLocations: v
-  } = (0, l.Ay)(o.A.TIERED_TENURE_BADGE_CHURN_REMINDER), S = A(), T = I(), C = null != (t = (0, _.Lh)()) ? t : m.Ac.PREMIUM_TENURE_1_MONTH, N = (0, i.useCallback)(() => {
+    analyticsLocations: A
+  } = (0, l.Ay)(o.A.TIERED_TENURE_BADGE_CHURN_REMINDER), I = v(), T = S(), C = null != (t = (0, _.Lh)()) ? t : m.Ac.PREMIUM_TENURE_1_MONTH, N = (0, i.useCallback)(() => {
     d.default.track(g.HAw.TOOLTIP_VIEWED, {
       type: "tiered_tenure_badge_churn_reminder"
     })
@@ -72,19 +72,19 @@ let C = e => {
     null == n || n(E.i.TAKE_ACTION), (0, c.A)({
       initialPlanId: null,
       subscriptionTier: null,
-      analyticsLocations: v
+      analyticsLocations: A
     })
-  }, [n, v]), w = [{
-    text: b.intl.string(b.t.iIvF2z),
+  }, [n, A]), w = [{
+    text: y.intl.string(y.t.iIvF2z),
     variant: "expressive",
     icon: s.tvc,
     iconPosition: "start",
     onClick: R
-  }], P = T >= y && T <= O ? Math.max(1, Math.min(100, (O - T) / O * 100)) : 1, D = T <= 10 ? "critical" : "warning";
+  }], P = T >= b && T <= O ? Math.max(1, Math.min(100, (O - T) / O * 100)) : 1, D = T <= 10 ? "critical" : "warning";
   return (0, r.jsx)(h.A, {
     badgeId: C,
     targetElementRef: p,
-    body: S,
+    body: I,
     mode: u,
     tooltipDelay: f,
     markAsDismissed: n,

@@ -2,7 +2,7 @@
 /** chunk id: 668133, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  h: () => c
+  h: () => o
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -11,7 +11,7 @@ var Chunk158954 = require("./158954.js"),
   Chunk308889 = require("./308889.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function c(e) {
+function o(e) {
   let {
     canManageGuild: t,
     guild: n

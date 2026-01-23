@@ -50,23 +50,23 @@ module.exports = function(e, t) {
     }
   }
   var E = [],
-    b = n.getText(),
-    y = n.getHTML(),
+    y = n.getText(),
+    b = n.getHTML(),
     O = e._latestEditorState;
-  if (!(e.props.handlePastedText && f(e.props.handlePastedText(b, y, O)))) {
-    if (b && (E = p(b)), !e.props.stripPastedStyles) {
-      var A = e.getClipboard();
-      if (n.isRichText() && A) {
-        if (false !== y.indexOf(e.getEditorKey()) || 1 === E.length && 1 === A.size && A.first().getText() === b) return void e.update(_(e._latestEditorState, A))
-      } else if (A && n.types.includes("com.apple.webarchive") && !n.types.includes("text/html") && h(E, A)) return void e.update(_(e._latestEditorState, A));
-      if (y) {
-        var v = o.processHTML(y, e.props.blockRenderMap);
-        if (v) {
-          var S = v.contentBlocks,
-            I = v.entityMap;
-          if (S) {
-            var T = r.createFromArray(S);
-            e.update(_(e._latestEditorState, T, I));
+  if (!(e.props.handlePastedText && f(e.props.handlePastedText(y, b, O)))) {
+    if (y && (E = p(y)), !e.props.stripPastedStyles) {
+      var v = e.getClipboard();
+      if (n.isRichText() && v) {
+        if (false !== b.indexOf(e.getEditorKey()) || 1 === E.length && 1 === v.size && v.first().getText() === y) return void e.update(_(e._latestEditorState, v))
+      } else if (v && n.types.includes("com.apple.webarchive") && !n.types.includes("text/html") && h(E, v)) return void e.update(_(e._latestEditorState, v));
+      if (b) {
+        var A = o.processHTML(b, e.props.blockRenderMap);
+        if (A) {
+          var I = A.contentBlocks,
+            S = A.entityMap;
+          if (I) {
+            var T = r.createFromArray(I);
+            e.update(_(e._latestEditorState, T, S));
             return
           }
         }

@@ -31,19 +31,19 @@ let c = null,
   g = /\ud83c[\udffb-\udfff](?=\ud83c[\udffb-\udfff])|(?:[^\ud800-\udfff][\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]?|[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff]|[\ud800-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?(?:\u200d(?:[^\ud800-\udfff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?)*/g,
   {
     emojis: E,
-    emojisByCategory: b,
-    nameToEmoji: y,
+    emojisByCategory: y,
+    nameToEmoji: b,
     surrogateToEmoji: O,
-    numDiversitySprites: A,
-    numNonDiversitySprites: v
+    numDiversitySprites: v,
+    numNonDiversitySprites: A
   } = require("./13474.js");
 
-function S(e) {
-  let t = y[e];
+function I(e) {
+  let t = b[e];
   return null == t ? null : E[t]
 }
 
-function I(e) {
+function S(e) {
   let t = O[e];
   return null == t ? null : E[t]
 }
@@ -90,7 +90,7 @@ class T {
   get name() {
     if (this.hasDiversity && null != c) {
       var e;
-      return "".concat(this.uniqueName, "::").concat(null == (e = I(c)) ? true : e.names[0])
+      return "".concat(this.uniqueName, "::").concat(null == (e = S(c)) ? true : e.names[0])
     }
     return this.uniqueName
   }
@@ -137,11 +137,11 @@ function w() {
 }
 
 function P() {
-  return Object.keys(b)
+  return Object.keys(y)
 }
 
 function D(e) {
-  let t = S(e);
+  let t = I(e);
   return null != t ? C(t) : null
 }
 let x = new Map;
@@ -149,7 +149,7 @@ let x = new Map;
 function L(e) {
   let t = x.get(e);
   if (null == t) {
-    let n = b[e];
+    let n = y[e];
     t = s.Ay.filterUnsupportedEmojis(E.slice(n[0], n[1])).map(C), x.set(e, t)
   }
   return t
@@ -165,7 +165,7 @@ function M(e) {
 
 function k(e) {
   var t;
-  let n = null == (t = I(e)) ? true : t.names[0];
+  let n = null == (t = S(e)) ? true : t.names[0];
   return null != n ? {
     type: "emoji",
     surrogate: e,
@@ -226,14 +226,14 @@ function H(e) {
 function Y(e) {
   var t, n;
   let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "";
-  return null != (t = null == (n = S(e)) ? true : n.surrogates) ? t : r
+  return null != (t = null == (n = I(e)) ? true : n.surrogates) ? t : r
 }
 
 function W(e) {
   var t, n;
   let r = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "",
-    a = null != (t = null == (n = I(e)) ? true : n.names[0]) ? t : i;
+    a = null != (t = null == (n = S(e)) ? true : n.names[0]) ? t : i;
   return r ? ":".concat(a, ":") : a
 }
 
@@ -263,8 +263,8 @@ let z = {
   forEach: e => {
     for (let t of E) t.hasDiversityParent || t.hasMultiDiversityParent || e(C(t))
   },
-  numDiversitySprites: A,
-  numNonDiversitySprites: v,
+  numDiversitySprites: v,
+  numNonDiversitySprites: A,
   EMOJI_NAME_RE: f,
   EMOJI_NAME_AND_DIVERSITY_RE: p,
   EMOJI_SHORTCUT_RE: h,

@@ -19,7 +19,7 @@ let p = e => {
     onClose: n,
     classificationId: p,
     source: m
-  } = e, f = (0, o.A)(), h = () => {
+  } = e, h = (0, o.A)(), f = () => {
     n(), (0, r.openUserSettings)(l.X.ACCOUNT_PANEL, {
       section: c.nc_.ACCOUNT,
       subsection: d.H.PRIVACY_AND_SAFETY_STANDING
@@ -40,11 +40,11 @@ let p = e => {
     }), (0, i.jsx)(a.$mQ, {
       "data-migration-pending": true,
       className: u.jE,
-      children: f ? (0, i.jsx)(a.y$y, {}) : (0, i.jsx)(s.A, {
+      children: h ? (0, i.jsx)(a.y$y, {}) : (0, i.jsx)(s.A, {
         classificationId: p,
         source: m,
-        onError: h,
-        onClose: h
+        onError: f,
+        onClose: f
       })
     })]
   })

@@ -25,65 +25,65 @@ function h(e) {
   let h, v, {
       showBenefits: y,
       handleClose: P,
-      onSubscriptionConfirmation: O
+      onSubscriptionConfirmation: S
     } = e,
     {
-      updatedSubscription: S,
+      updatedSubscription: O,
       readySlideId: A,
-      selectedSku: E,
-      selectedStoreListing: T,
-      application: N
+      selectedSku: C,
+      selectedStoreListing: E,
+      application: T
     } = (0, d.P5)(),
-    C = (0, l.A)(x.Y),
+    N = (0, l.A)(x.Y),
     {
-      createMultipleConfettiAt: w
+      createMultipleConfettiAt: _
     } = i.useContext(s.x),
-    k = null != (t = null == E ? true : E.name) ? t : "",
-    _ = () => {
-      P(), null == O || O()
+    w = null != (t = null == C ? true : C.name) ? t : "",
+    k = () => {
+      P(), null == S || S()
     },
     D = A === p.pn.CONFIRM,
-    I = (0, o.bg)(null != (n = null == E ? true : E.flags) ? n : 0),
-    R = null != T && T.benefits.length > 0 ? j.intl.formatToPlainString(j.t["+IQQVM"], {
-      benefitCount: T.benefits.length
+    I = (0, o.bg)(null != (n = null == C ? true : C.flags) ? n : 0),
+    R = null != E && E.benefits.length > 0 ? j.intl.formatToPlainString(j.t["+IQQVM"], {
+      benefitCount: E.benefits.length
     }) : null;
-  return y ? C ? h = (0, r.jsx)(u.E, {
+  return y ? N ? h = (0, r.jsx)(u.E, {
     title: j.intl.format(j.t.ea6tZr, {
-      tierName: k
+      tierName: w
     }),
-    subtitle: null != T && T.benefits.length > 0 ? j.intl.formatToPlainString(j.t.HNepft, {
+    subtitle: null != E && E.benefits.length > 0 ? j.intl.formatToPlainString(j.t.HNepft, {
       benefits: R
     }) : null,
-    onConfirm: _,
+    onConfirm: k,
     confirmCta: j.intl.string(j.t.nlkywz)
-  }) : (h = null != T && null != N ? (0, r.jsx)(c.Uf, {
-    icon: T.thumbnail,
-    storeListingBenefits: T.benefits,
-    application: N,
+  }) : (h = null != E && null != T ? (0, r.jsx)(c.Uf, {
+    icon: E.thumbnail,
+    storeListingBenefits: E.benefits,
+    application: T,
     title: j.intl.format(j.t["Q+qktS"], {
-      tier: k
+      tier: w
     }),
     subtitle: j.intl.string(j.t.ECKxXU),
     description: I ? j.intl.format(j.t["MAtQk/"], {
-      applicationName: null == N ? true : N.name
+      applicationName: null == T ? true : T.name
     }) : j.intl.format(j.t.vHkMF4, {
-      tier: k
+      tier: w
     })
   }) : (0, r.jsx)(f.A, {}), v = (0, r.jsx)(m.A, {
-    onPrimary: _,
+    onPrimary: k,
     primaryCTA: m.t.CONTINUE,
     primaryText: j.intl.string(j.t["JtWl+a"])
-  })) : h = C ? (0, r.jsx)(u.v, {
-    tierName: k,
-    onConfirm: _,
-    subscription: S
+  })) : h = N ? (0, r.jsx)(u.v, {
+    tierName: w,
+    onConfirm: k,
+    subscription: O
   }) : (0, r.jsx)(c.XG, {
-    tierName: k,
-    onConfirm: _,
-    subscription: S
+    tierName: w,
+    onConfirm: k,
+    subscription: O
   }), i.useEffect(() => {
-    a.A.useReducedMotion && D && w(window.innerWidth / 2, window.innerHeight / 2)
-  }, [w, D]), (0, r.jsxs)(r.Fragment, {
+    a.A.useReducedMotion && D && _(window.innerWidth / 2, window.innerHeight / 2)
+  }, [_, D]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(b.dZ, {
       children: [(0, r.jsx)(g.A, {}), h]
     }), null != v && (0, r.jsx)(b.UX, {

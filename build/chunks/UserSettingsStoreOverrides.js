@@ -2,7 +2,7 @@
 /** chunk id: 397438, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk506774 = require("./506774.js"),
@@ -78,7 +78,7 @@ function E() {
   }
   return t
 }
-class b extends(r = Chunk311907.Ay.PersistedStore) {
+class y extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     u = null != e ? e : {}, this.syncWith([o.A], p)
   }
@@ -93,12 +93,12 @@ class b extends(r = Chunk311907.Ay.PersistedStore) {
     return u[e]
   }
 }
-l(b, "displayName", "UserSettingsOverridesStore"), l(b, "persistKey", "UserSettingsOverridesStore"), l(b, "migrations", [() => {
+l(y, "displayName", "UserSettingsOverridesStore"), l(y, "persistKey", "UserSettingsOverridesStore"), l(y, "migrations", [() => {
   var e;
   let t = null != (e = a.w.get("UserSettingsStoreOverrides")) ? e : {};
   return a.w.remove("UserSettingsStoreOverrides"), t
 }]);
-let y = new b(Chunk73153.h, {
+let b = new y(Chunk73153.h, {
   USER_SETTINGS_PROTO_UPDATE: E,
   USER_SETTINGS_OVERRIDE_APPLY: m,
   USER_SETTINGS_OVERRIDE_CLEAR: g,

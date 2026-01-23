@@ -57,7 +57,7 @@ function c() {
     })
   }, [e]);
   return (0, r.jsxs)(i.DUT, {
-    className: o.E,
+    className: s.E,
     onClick: t,
     children: [(0, r.jsx)(i.j96, {
       size: "sm",
@@ -65,7 +65,7 @@ function c() {
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/medium",
       color: "text-default",
-      children: s.intl.string(s.t["lBG2s/"])
+      children: o.intl.string(o.t["lBG2s/"])
     })]
   })
 }

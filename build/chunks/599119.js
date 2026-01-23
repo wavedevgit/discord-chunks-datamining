@@ -15,7 +15,7 @@ function a(e) {
     onDragStart: s,
     onDragComplete: o,
     onDragReset: c
-  } = e, [d, u] = i.useState(false), [, b] = (0, r.i)({
+  } = e, [d, u] = i.useState(false), [, p] = (0, r.i)({
     type: t,
     item: () => (s(a), {
       id: a,
@@ -30,8 +30,8 @@ function a(e) {
       null == n ? c() : o(n.optionId)
     }
   }), [{
-    dragSourcePosition: f
-  }, p] = (0, l.H)({
+    dragSourcePosition: m
+  }, g] = (0, l.H)({
     accept: t,
     canDrop: () => true,
     collect: e => {
@@ -47,9 +47,9 @@ function a(e) {
     })
   });
   return {
-    drag: b,
-    dragSourcePosition: f,
-    drop: p,
+    drag: p,
+    dragSourcePosition: m,
+    drop: g,
     setIsDraggable: u
   }
 }

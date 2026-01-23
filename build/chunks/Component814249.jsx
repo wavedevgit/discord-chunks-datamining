@@ -2,7 +2,7 @@
 /** chunk id: 814249, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  K: () => y,
+  K: () => b,
   default: () => O
 }), require("./896048.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
@@ -57,7 +57,7 @@ function E(e, t) {
   }), e
 }
 
-function b(e) {
+function y(e) {
   let {
     surveyId: t,
     survey: n,
@@ -66,8 +66,8 @@ function b(e) {
   } = e, {
     getSurveyResponses: h,
     setResponse: g,
-    trackDisplayedQuestions: b
-  } = (0, c.i)(), y = h(t), O = (0, d.i)(n), [A, v] = i.useState(O.blockId), [S, I] = i.useState(O.pageIndex), [T, C] = i.useState(false), N = (e, n) => {
+    trackDisplayedQuestions: y
+  } = (0, c.i)(), b = h(t), O = (0, d.i)(n), [v, A] = i.useState(O.blockId), [I, S] = i.useState(O.pageIndex), [T, C] = i.useState(false), N = (e, n) => {
     g(t, e, n)
   }, R = i.useCallback(() => (T ? s() : (0, o.qfG)(e => (0, r.jsx)(a.Modal, E(m({
     title: p.intl.string(p.t.T9Sx3z),
@@ -87,19 +87,19 @@ function b(e) {
       variant: "text-md/normal",
       children: p.intl.string(p.t.iCK6G0)
     })
-  }))), Promise.resolve()), [s, T]), w = i.useMemo(() => null == A ? [] : (0, d.uy)(n, {
-    blockId: A,
-    pageIndex: S,
-    responses: y
-  }), [n, A, S, y]), P = i.useCallback(() => {
-    if (null == n || null == A) return;
+  }))), Promise.resolve()), [s, T]), w = i.useMemo(() => null == v ? [] : (0, d.uy)(n, {
+    blockId: v,
+    pageIndex: I,
+    responses: b
+  }), [n, v, I, b]), P = i.useCallback(() => {
+    if (null == n || null == v) return;
     let e = (0, d.vt)(n, {
-      blockId: A,
-      pageIndex: S,
-      responses: y
+      blockId: v,
+      pageIndex: I,
+      responses: b
     });
-    b(t, w), e.isComplete && l.Ay.submitSurveyResponse(t, y), v(e.blockId), I(e.pageIndex), C(e.isComplete)
-  }, [n, A, S, y, t, w, b]);
+    y(t, w), e.isComplete && l.Ay.submitSurveyResponse(t, b), A(e.blockId), S(e.pageIndex), C(e.isComplete)
+  }, [n, v, I, b, t, w, y]);
   i.useEffect(() => {
     0 === w.length && P()
   }, [w, P]);
@@ -110,7 +110,7 @@ function b(e) {
         return null == n ? null : (0, r.jsx)(f.A, {
           question: n,
           questionId: t,
-          responses: y,
+          responses: b,
           onResponseChange: N
         }, t)
       })
@@ -121,12 +121,12 @@ function b(e) {
         var e, t;
         let i = n.Questions[r];
         if ((null == i || null == (t = i.Validation) || null == (e = t.Settings) ? true : e.ForceResponse) === "ON") {
-          let e = y[r];
+          let e = b[r];
           if (null == e || "" === e.trim()) returnfalse
         }
       }
       returntrue
-    }, [T, w, n, y]);
+    }, [T, w, n, b]);
   return T ? (0, r.jsxs)(a.Modal, {
     transitionState: u,
     onClose: s,
@@ -163,7 +163,7 @@ function b(e) {
     })
   })
 }
-async function y(e) {
+async function b(e) {
   null != await l.Ay.fetchSurveyDetails(e) && (c.i.getState().clearSurveyResponses(e), (0, o.mMO)(async () => {
     let {
       default: t
@@ -186,7 +186,7 @@ function O(e) {
     variant: "text-md/medium",
     className: _.Lq,
     children: p.intl.string(p.t.MKDeyL)
-  }) : (0, r.jsx)(b, {
+  }) : (0, r.jsx)(y, {
     surveyId: t,
     survey: a,
     onClose: n,

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk732955 = require("./732955.js"),
   Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
@@ -18,21 +18,21 @@ function d(e) {
     iconContainerClassName: n,
     icon: i,
     title: d,
-    description: f,
-    userCount: p,
-    onClick: h,
-    highlight: b,
-    onDismiss: g
-  } = e, m = l.useCallback(e => {
-    e.stopPropagation(), null == g || g()
-  }, [g]);
+    description: p,
+    userCount: h,
+    onClick: f,
+    highlight: g,
+    onDismiss: m
+  } = e, b = l.useCallback(e => {
+    e.stopPropagation(), null == m || m()
+  }, [m]);
   return (0, r.jsxs)(o.DUT, {
-    className: a()(u.kL, t, null != b && {
-      [u.U6]: b
+    className: s()(u.kL, t, null != g && {
+      [u.U6]: g
     }),
-    onClick: h,
+    onClick: f,
     children: [(0, r.jsx)("div", {
-      className: a()(u.Kk, n),
+      className: s()(u.Kk, n),
       children: i
     }), (0, r.jsxs)("div", {
       className: u.FS,
@@ -44,8 +44,8 @@ function d(e) {
         variant: "text-xs/normal",
         color: "text-strong",
         className: u.mG,
-        children: f
-      }), null != p && p > 0 ? (0, r.jsxs)(r.Fragment, {
+        children: p
+      }), null != h && h > 0 ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(o.Text, {
           variant: "text-xs/normal",
           color: "text-strong",
@@ -56,15 +56,15 @@ function d(e) {
           color: "text-strong",
           className: u.mG,
           children: c.intl.format(c.t.NywdIj, {
-            count: p
+            count: h
           })
         })]
       }) : null]
-    }), null != g ? (0, r.jsx)("div", {
+    }), null != m ? (0, r.jsx)("div", {
       className: u.r,
-      children: (0, r.jsx)(s.JnF, {
+      children: (0, r.jsx)(a.JnF, {
         size: "xs",
-        onClick: m
+        onClick: b
       })
     }) : (0, r.jsx)(o._BQ, {
       size: "xs",

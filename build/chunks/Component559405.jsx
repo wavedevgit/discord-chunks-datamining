@@ -43,11 +43,11 @@ let u = new Set([Chunk934551.MagicDoorIcon.name, Chunk934551.GameControllerIcon.
       alt: "",
       className: null != i ? i : true
     }) : null;
-    let b = E;
-    return u.has(E.name) ? (0, r.jsx)(b, {
+    let y = E;
+    return u.has(E.name) ? (0, r.jsx)(y, {
       size: null != (n = d[f]) ? n : true,
       className: i
-    }) : (0, r.jsx)(b, {
+    }) : (0, r.jsx)(y, {
       size: f,
       className: i
     })

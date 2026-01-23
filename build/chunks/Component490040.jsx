@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ay: () => T,
-  LF: () => S
+  LF: () => I
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,7 +26,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk543218 = require("./543218.js");
 
-function v(e) {
+function A(e) {
   let {
     playSound: t
   } = e;
@@ -34,18 +34,18 @@ function v(e) {
     title: "Risky Click",
     tag: "span",
     onClick: t,
-    className: A.Ls,
+    className: v.Ls,
     children: [(0, r.jsx)(c.HKD, {
       size: "md",
       color: "currentColor",
-      className: A.uA
+      className: v.uA
     }), (0, r.jsx)("span", {
       children: "Unknown"
     })]
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     soundId: t
   } = e, n = (0, o.bG)([m.A], () => m.A.getSoundById(t)), i = (0, f.tj)({
@@ -54,15 +54,15 @@ function S(e) {
     isPlaying: a,
     playSound: s
   } = (0, h.A)(n);
-  return i ? null == n ? (0, r.jsx)(v, {}) : (0, r.jsx)(I, {
-    className: A.wg,
+  return i ? null == n ? (0, r.jsx)(A, {}) : (0, r.jsx)(S, {
+    className: v.wg,
     isPlaying: a,
     playSound: s,
     sound: n
   }) : null
 }
 
-function I(e) {
+function S(e) {
   let {
     className: t,
     sound: n,
@@ -78,13 +78,13 @@ function I(e) {
     "aria-label": l,
     tag: "span",
     onClick: i,
-    className: s()(A.Ls, A.oR, {
-      [A.he]: true === a
+    className: s()(v.Ls, v.oR, {
+      [v.he]: true === a
     }, t),
     children: [o && (0, r.jsx)(u.A, {
       emojiId: null == n ? true : n.emojiId,
       emojiName: null == n ? true : n.emojiName,
-      className: A.JS
+      className: v.JS
     }), (0, r.jsx)("span", {
       children: " ".concat(null == n ? true : n.name, " ")
     })]
@@ -97,33 +97,33 @@ let T = function(e) {
     soundId: a,
     messageSounds: s,
     jumbo: c = false
-  } = e, u = b.hH.useSetting(), f = (0, o.bG)([m.A], () => m.A.getSoundById(a), [a]), O = i.useMemo(() => {
+  } = e, u = y.hH.useSetting(), f = (0, o.bG)([m.A], () => m.A.getSoundById(a), [a]), O = i.useMemo(() => {
     var e;
     return null != (e = (0, p.A)(t, n, a, s)) ? e : f
-  }, [t, n, a, s, f]), S = (0, o.bG)([y.A], () => y.A.getChannel(t)), T = (0, d.X9)({
+  }, [t, n, a, s, f]), I = (0, o.bG)([b.A], () => b.A.getChannel(t)), T = (0, d.X9)({
     location: "SoundboardMention"
   }), C = i.useRef(null), {
     isPlaying: N,
     playSound: R
-  } = (0, h.A)(O, S), w = i.useCallback(async () => {
+  } = (0, h.A)(O, I), w = i.useCallback(async () => {
     if (await R()) {
       var e;
       null == (e = C.current) || e.addAnimation()
     }
   }, [R]);
-  return T ? null == O ? (0, r.jsx)(v, {
+  return T ? null == O ? (0, r.jsx)(A, {
     playSound: w
   }) : c && !u ? (0, r.jsx)(E.Ay, {
-    containerClassName: A.Ti,
-    className: A.UX,
+    containerClassName: v.Ti,
+    className: v.UX,
     sound: O,
-    channel: S,
+    channel: I,
     onSelectItem: w,
     isPlayingSoundOverride: N,
     isSoundmoji: true,
     buttonOverlay: g.If.SOUNDMOJI,
-    tooltipClassName: A.YL,
-    tooltipContentClassName: A.R3,
+    tooltipClassName: v.YL,
+    tooltipContentClassName: v.R3,
     tooltipOverride: (0, r.jsx)(_.WE, {
       sound: O
     }),
@@ -137,7 +137,7 @@ let T = function(e) {
     position: "top",
     delay: 500,
     children: (0, r.jsx)("span", {
-      children: (0, r.jsx)(I, {
+      children: (0, r.jsx)(S, {
         sound: O,
         playSound: w,
         isPlaying: N

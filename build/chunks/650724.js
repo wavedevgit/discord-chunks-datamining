@@ -2,7 +2,7 @@
 /** chunk id: 650724, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D: () => A
+  D: () => v
 });
 var Chunk64700 = require("./64700.js"),
   Chunk417597 = require("./417597.js"),
@@ -29,7 +29,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,23 +54,23 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e, t) {
+function v(e, t) {
   let n = (0, _.$k)(),
     E = (0, m.CI)(e),
-    y = (0, i.bG)([c.Ay, o.default], () => {
+    b = (0, i.bG)([c.Ay, o.default], () => {
       let e = o.default.getId();
       return c.Ay.isMember(null == E ? true : E.guildId, e)
     }, [E]),
-    A = (0, i.bG)([a.A], () => null != E && (null == E ? true : E.channelId) != null && a.A.isChannelGated(E.guildId, E.channelId), [E]),
-    v = t.hasFlag(g.pr7.IS_CROSSPOST),
+    v = (0, i.bG)([a.A], () => null != E && (null == E ? true : E.channelId) != null && a.A.isChannelGated(E.guildId, E.channelId), [E]),
+    A = t.hasFlag(g.pr7.IS_CROSSPOST),
     {
-      rawMediaPostEmbedData: S,
-      guild: I,
+      rawMediaPostEmbedData: I,
+      guild: S,
       parentChannel: T,
       user: C,
       selectedGuildId: N,
@@ -94,21 +94,21 @@ function A(e, t) {
     }, [E]),
     w = r.useMemo(() => {
       let e = (0, m.tU)({
-        mediaPostEmbedData: S,
-        guild: I,
+        mediaPostEmbedData: I,
+        guild: S,
         parentChannel: T,
         user: C,
         selectedGuildId: N,
         canAccess: R
       });
-      return null == e ? null : O(b({}, e), {
+      return null == e ? null : O(y({}, e), {
         user: C
       })
-    }, [S, I, T, C, N, R]);
+    }, [I, S, T, C, N, R]);
   return r.useEffect(() => {
     if ((null == E ? true : E.threadId) != null) {
       let e = h.A.getEmbedFetchState(E.threadId);
-      true !== n || e !== h.e.NOT_FETCHED || y && false === A || !y && v || (0, p.O0)(null == E ? true : E.threadId)
+      true !== n || e !== h.e.NOT_FETCHED || b && false === v || !b && A || (0, p.O0)(null == E ? true : E.threadId)
     }
-  }, [E, n, y, A, v]), w
+  }, [E, n, b, v, A]), w
 }

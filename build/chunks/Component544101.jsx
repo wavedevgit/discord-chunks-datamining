@@ -29,15 +29,15 @@ function _(e) {
       width: t,
       height: t
     }) : null
-  }, b = e => (0, r.jsx)("span", {
+  }, y = e => (0, r.jsx)("span", {
     className: p.Pf,
     children: e.label
-  }), y = i.useMemo(() => (0, u.iA)(e.defaultValues, null == m ? true : m.id, t), [e.defaultValues, m, t]);
+  }), b = i.useMemo(() => (0, u.iA)(e.defaultValues, null == m ? true : m.id, t), [e.defaultValues, m, t]);
   return (0, r.jsx)(d.Ay, {
     selectActionComponent: e,
     queryOptions: g,
     renderIcon: E,
-    renderOptionLabel: b,
-    defaultValues: y
+    renderOptionLabel: y,
+    defaultValues: b
   })
 }

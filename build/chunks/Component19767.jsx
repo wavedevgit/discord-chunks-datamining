@@ -12,16 +12,16 @@ var Chunk627968 = require("./627968.js"),
   Chunk607335 = require("./607335.js");
 
 function d() {
-  let e = (0, i.bG)([o.A], () => o.A.allWithDescriptions(), [], i.My),
+  let e = (0, r.bG)([o.A], () => o.A.allWithDescriptions(), [], r.My),
     t = l.useMemo(() => e.map(e => {
       let [t, n, l] = e;
       return (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(r.dOG, {
+        children: [(0, a.jsx)(i.dOG, {
           label: l,
           description: t,
           checked: n,
           onChange: e => (0, s.L)(t, e)
-        }, t), (0, a.jsx)(r.cGx, {
+        }, t), (0, a.jsx)(i.cGx, {
           gap: 16
         })]
       })
@@ -31,7 +31,7 @@ function d() {
     children: [(0, a.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: c.x6,
-      children: (0, a.jsx)(r.Button, {
+      children: (0, a.jsx)(i.Button, {
         variant: "primary",
         text: "Clear all",
         onClick: s.$,

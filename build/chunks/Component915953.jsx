@@ -26,14 +26,14 @@ function o(e) {
     asValueChanges: m,
     markers: g,
     onMarkerRender: E,
-    stickToMarkers: b,
-    fieldLayout: y
-  } = t, [O] = i.useState(() => o()), A = d(), v = null == f ? true : f(), S = null == p ? true : p(), I = null == _ ? true : _(), T = null == u ? true : u();
+    stickToMarkers: y,
+    fieldLayout: b
+  } = t, [O] = i.useState(() => o()), v = d(), A = null == f ? true : f(), I = null == p ? true : p(), S = null == _ ? true : _(), T = null == u ? true : u();
   return (0, r.jsxs)(s.L, {
     children: [(0, r.jsx)(a.Apm, {
-      label: A,
-      description: v,
-      disabled: I,
+      label: v,
+      description: A,
+      disabled: S,
       initialValue: O,
       minValue: l,
       maxValue: c,
@@ -44,12 +44,12 @@ function o(e) {
       orientation: "horizontal",
       markers: g,
       onMarkerRender: E,
-      stickToMarkers: b,
-      layout: y
-    }), null != S && (0, r.jsx)(a.Text, {
+      stickToMarkers: y,
+      layout: b
+    }), null != I && (0, r.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
-      children: S
+      children: I
     })]
   })
 }

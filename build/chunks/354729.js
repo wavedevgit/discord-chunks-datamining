@@ -53,18 +53,18 @@ var r, i = "basil",
       }))
     }
   },
-  b = function(e, t) {
+  y = function(e, t) {
     return function() {
       window.Stripe ? e(window.Stripe) : t(Error("Stripe.js not available"))
     }
   },
-  y = function(e) {
+  b = function(e) {
     return null !== h ? h : (h = new Promise(function(t, n) {
       if ("u" < typeof window || "u" < typeof document) return void t(null);
       if (window.Stripe && e && console.warn(u), window.Stripe) return void t(window.Stripe);
       try {
         var r, i = f();
-        i && e ? console.warn(u) : i ? i && null !== g && null !== m && (i.removeEventListener("load", g), i.removeEventListener("error", m), null == (r = i.parentNode) || r.removeChild(i), i = p(e)) : i = p(e), g = b(t, n), m = E(n), i.addEventListener("load", g), i.addEventListener("error", m)
+        i && e ? console.warn(u) : i ? i && null !== g && null !== m && (i.removeEventListener("load", g), i.removeEventListener("error", m), null == (r = i.parentNode) || r.removeChild(i), i = p(e)) : i = p(e), g = y(t, n), m = E(n), i.addEventListener("load", g), i.addEventListener("error", m)
       } catch (e) {
         n(e);
         return
@@ -82,27 +82,27 @@ var r, i = "basil",
     var l = e.apply(true, t);
     return _(l, n), l
   },
-  A = function(e) {
+  v = function(e) {
     var t = "invalid load parameters; expected object of shape\n\n    {advancedFraudSignals: boolean}\n\nbut received\n\n    ".concat(JSON.stringify(e), "\n");
     if (null === e || "object" !== n(e)) throw Error(t);
     if (1 === Object.keys(e).length && "boolean" == typeof e.advancedFraudSignals) return e;
     throw Error(t)
   },
-  v = false,
-  S = function() {
+  A = false,
+  I = function() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-    v = true;
+    A = true;
     var i = Date.now();
-    return y(r).then(function(e) {
+    return b(r).then(function(e) {
       return O(e, t, i)
     })
   };
-S.setLoadParameters = function(e) {
-  if (!(v && r && Object.keys(A(e)).reduce(function(t, n) {
+I.setLoadParameters = function(e) {
+  if (!(A && r && Object.keys(v(e)).reduce(function(t, n) {
       var i;
       return t && e[n] === (null == (i = r) ? true : i[n])
     }, true))) {
-    if (v) throw Error("You cannot change load parameters after calling loadStripe");
-    r = A(e)
+    if (A) throw Error("You cannot change load parameters after calling loadStripe");
+    r = v(e)
   }
-}, exports.loadStripe = S
+}, exports.loadStripe = I

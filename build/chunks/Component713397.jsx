@@ -17,18 +17,18 @@ function c(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: o.kL,
-    children: [(0, r.jsx)(a.A, {}), (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(s.A, {}), (0, r.jsxs)("div", {
       className: o.Qs,
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-lg/normal",
-        children: n ? s.intl.string(s.t.KIConm) : s.intl.format(s.t.ilLVLr, {})
+        children: n ? a.intl.string(a.t.KIConm) : a.intl.format(a.t.ilLVLr, {})
       }), !n && (0, r.jsx)(l.Button, {
         variant: "secondary",
         size: "md",
         onClick: e => {
           e.stopPropagation(), i.A.toggleVoiceParticipantsHidden(t, false)
         },
-        text: s.intl.string(s.t.kLQySL)
+        text: a.intl.string(a.t.kLQySL)
       })]
     })]
   })

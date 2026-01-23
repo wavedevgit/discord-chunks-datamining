@@ -2,13 +2,13 @@
 /** chunk id: 302487, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => T,
-  h: () => E
+  A: () => S,
+  h: () => w
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk284009 = require("./284009.js"),
-  i = require.n(Chunk284009),
+  a = require.n(Chunk284009),
   Chunk108531 = require("./108531.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -25,32 +25,32 @@ var Chunk627968 = require("./627968.js"),
   Chunk853742 = require("./853742.js"),
   Chunk652215 = require("./652215.js"),
   Chunk149707 = require("./149707.js");
-let C = {
+let A = {
     scale: .95,
     opacity: 0
   },
+  C = {
+    scale: 1,
+    opacity: 1
+  },
+  T = {
+    scale: 1,
+    opacity: 1
+  },
   O = {
-    scale: 1,
-    opacity: 1
-  },
-  N = {
-    scale: 1,
-    opacity: 1
-  },
-  S = {
     tension: 2400,
     friction: 52
   };
 
-function T(e) {
+function S(e) {
   let {
     channelId: t,
     onClick: n,
-    onClose: a,
+    onClose: i,
     onMouseEnter: s
-  } = e, u = r.useRef(null), m = (0, c.bG)([g.A], () => g.A.getChannel(t), [t]);
-  return i()(null != m, "Forum Channel is null"), (0, l.jsxs)(o.DUT, {
-    className: A.EJ,
+  } = e, u = r.useRef(null), m = (0, o.bG)([x.A], () => x.A.getChannel(t), [t]);
+  return a()(null != m, "Forum Channel is null"), (0, l.jsxs)(c.DUT, {
+    className: y.EJ,
     onMouseEnter: s,
     onClick: () => {
       (0, v.ri)({
@@ -66,64 +66,64 @@ function T(e) {
       }
     },
     children: [(0, l.jsx)(d.A, {
-      className: A.Fg,
+      className: y.Fg,
       ref: u,
       onChange: e => {
-        null == a || a(), (0, j.R)(e.currentTarget.files, m, x.C.FirstThreadMessage, {
+        null == i || i(), (0, j.R)(e.currentTarget.files, m, f.C.FirstThreadMessage, {
           requireConfirm: true,
           origin: "file_picker"
-        }), p._.dispatch(y.jej.TEXTAREA_FOCUS), e.currentTarget.value = null
+        }), b._.dispatch(_.jej.TEXTAREA_FOCUS), e.currentTarget.value = null
       },
       multiple: m.rateLimitPerUser <= 0,
       tabIndex: false,
       "aria-hidden": true
-    }), (0, l.jsx)(o.XGR, {
+    }), (0, l.jsx)(c.XGR, {
       size: "custom",
       color: "currentColor",
       width: 28,
       height: 28,
-      className: A.T3
+      className: y.T3
     })]
   })
 }
 
-function _(e) {
+function N(e) {
   let {
     channelId: t,
     closePopout: n
-  } = e, [a, i] = r.useState(false), {
+  } = e, [i, a] = r.useState(false), {
     reducedMotion: d
-  } = r.useContext(o.CZY), g = (0, o.zhh)({
-    from: d.enabled ? O : C,
-    to: N,
-    config: S
-  }, "animate-always"), x = (0, c.bG)([u.A], () => u.A.keyboardModeEnabled), p = (0, c.bG)([b.A], () => b.A.getUploads(t, m.oU.CREATE_FORUM_POST.drafts.type));
+  } = r.useContext(c.CZY), x = (0, c.zhh)({
+    from: d.enabled ? C : A,
+    to: T,
+    config: O
+  }, "animate-always"), f = (0, o.bG)([u.A], () => u.A.keyboardModeEnabled), b = (0, o.bG)([p.A], () => p.A.getUploads(t, m.oU.CREATE_FORUM_POST.drafts.type));
   return (0, l.jsx)(s.animated.div, {
-    className: A.jC,
+    className: y.jC,
     onMouseLeave: () => {
-      a || n()
+      i || n()
     },
-    style: g,
-    children: (0, l.jsxs)(o.IpV, {
+    style: x,
+    children: (0, l.jsxs)(c.IpV, {
       orientation: "horizontal",
-      className: A.SW,
+      className: y.SW,
       paddingFix: false,
       fade: true,
-      children: [(0, l.jsx)(T, {
+      children: [(0, l.jsx)(S, {
         channelId: t,
         onClick: () => {
-          i(true)
+          a(true)
         },
         onClose: () => {
-          i(false), n()
+          a(false), n()
         }
       }), (0, l.jsx)("div", {
-        className: A.p8,
-        children: p.map(e => (0, l.jsx)(f.A, {
+        className: y.p8,
+        children: b.map(e => (0, l.jsx)(g.A, {
           channelId: t,
           draftType: m.oU.CREATE_FORUM_POST.drafts.type,
           upload: e,
-          keyboardModeEnabled: x,
+          keyboardModeEnabled: f,
           hideFileName: true,
           size: h.L.SMALL
         }, e.id))
@@ -132,34 +132,34 @@ function _(e) {
   })
 }
 
-function E(e) {
+function w(e) {
   let {
     channelId: t
-  } = e, [n, a] = r.useState(false), i = (0, c.bG)([b.A], () => b.A.getUploads(t, m.oU.CREATE_FORUM_POST.drafts.type)), s = i.length, o = s > 0;
+  } = e, [n, i] = r.useState(false), a = (0, o.bG)([p.A], () => p.A.getUploads(t, m.oU.CREATE_FORUM_POST.drafts.type)), s = a.length, c = s > 0;
   r.useEffect(() => {
-    n && !o && a(false)
-  }, [n, o]);
+    n && !c && i(false)
+  }, [n, c]);
   let d = () => {
-    o && a(true)
+    c && i(true)
   };
   return (0, l.jsxs)("div", {
-    className: A.kL,
-    children: [o ? (0, l.jsxs)(l.Fragment, {
-      children: [(0, l.jsx)(f.J, {
-        upload: i[0],
+    className: y.kL,
+    children: [c ? (0, l.jsxs)(l.Fragment, {
+      children: [(0, l.jsx)(g.J, {
+        upload: a[0],
         size: h.L.SMALL,
         onMouseEnter: d
       }), !n && (0, l.jsx)("div", {
-        className: A.qS,
+        className: y.qS,
         children: s
       })]
-    }) : (0, l.jsx)(T, {
+    }) : (0, l.jsx)(S, {
       onMouseEnter: d,
       channelId: t
-    }), n && (0, l.jsx)(_, {
+    }), n && (0, l.jsx)(N, {
       channelId: t,
       closePopout: () => {
-        a(false)
+        i(false)
       }
     })]
   })

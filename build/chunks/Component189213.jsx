@@ -82,26 +82,26 @@ function m(e) {
     actions: m,
     actionBarInput: g,
     actionBarInputLayout: E = "default",
-    listProps: b,
-    notice: y,
+    listProps: y,
+    notice: b,
     onScroll: O,
-    scrollerRef: A,
-    children: v
-  } = e, S = _(e, ["size", "title", "subtitle", "input", "preview", "actions", "actionBarInput", "actionBarInputLayout", "listProps", "notice", "onScroll", "scrollerRef", "children"]), I = null != t ? t : null != f || null != g || (0, s.y)(v) || null != b ? "md" : "sm";
-  return (0, r.jsxs)(i.d, p(d({}, S), {
-    size: I,
+    scrollerRef: v,
+    children: A
+  } = e, I = _(e, ["size", "title", "subtitle", "input", "preview", "actions", "actionBarInput", "actionBarInputLayout", "listProps", "notice", "onScroll", "scrollerRef", "children"]), S = null != t ? t : null != f || null != g || (0, s.y)(A) || null != y ? "md" : "sm";
+  return (0, r.jsxs)(i.d, p(d({}, I), {
+    size: S,
     children: [(0, r.jsx)(l.rQ, {
       title: n,
       subtitle: u
     }), (0, r.jsx)(c.i, {
-      message: null == y ? true : y.message,
-      type: null == y ? true : y.type
+      message: null == b ? true : b.message,
+      type: null == b ? true : b.type
     }), (0, r.jsx)(s.c, {
       controls: f,
-      listProps: b,
+      listProps: y,
       onScroll: O,
-      scrollerRef: A,
-      children: v
+      scrollerRef: v,
+      children: A
     }), (0, r.jsx)(o.j, {
       children: h
     }), (0, r.jsx)(a.H, {

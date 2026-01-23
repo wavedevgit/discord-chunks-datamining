@@ -2,7 +2,7 @@
 /** chunk id: 251408, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 }), require("./896048.js");
 var Chunk439372 = require("./439372.js"),
   Chunk58149 = require("./58149.js"),
@@ -70,4 +70,4 @@ class E extends Chunk439372.A {
     })
   }
 }
-let b = new E
+let y = new E

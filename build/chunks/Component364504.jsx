@@ -26,7 +26,7 @@ function h(e) {
     markAsDismissed: n
   } = e, {
     analyticsLocations: o
-  } = (0, r.Ay)([i.A.WISHLIST_ACCOUNT_POPOUT_UPSSELL]);
+  } = (0, i.Ay)([r.A.WISHLIST_ACCOUNT_POPOUT_UPSSELL]);
   return (0, a.jsxs)(s.A, {
     heading: u.intl.string(u.t["vy/61K"]),
     subheading: u.intl.string(u.t.tEee9t),

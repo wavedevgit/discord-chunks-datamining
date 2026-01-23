@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   Ay: () => w,
-  Fq: () => v,
+  Fq: () => A,
   Py: () => C,
   gJ: () => T,
-  ic: () => I
+  ic: () => S
 });
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -44,7 +44,7 @@ function E(e) {
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,8 +55,8 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -68,25 +68,25 @@ function O(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = A(e, t), Object.getOwnPropertySymbols)
+  if (a = v(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function A(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let v = {
+let A = {
     HEADER: "HEADER",
     DIVIDER: "DIVIDER",
     CUSTOM: "CUSTOM"
   },
-  S = Chunk64700.createContext(null);
-class I extends(r = Chunk64700.PureComponent) {
+  I = Chunk64700.createContext(null);
+class S extends(r = Chunk64700.PureComponent) {
   renderContent() {
     let e = this.props,
       {
@@ -95,7 +95,7 @@ class I extends(r = Chunk64700.PureComponent) {
       n = O(e, ["scrollerRef"]);
     return (0, i.jsx)("div", {
       className: m.customContainer,
-      children: (0, i.jsx)(f.Eie, y(E({}, n), {
+      children: (0, i.jsx)(f.Eie, b(E({}, n), {
         className: o()(m.customScroller, m.contentRegionScroller),
         ref: t
       }))
@@ -124,7 +124,7 @@ function T(e) {
     })
   })
 }
-g(I, "defaultProps", {
+g(S, "defaultProps", {
   paddingTop: 60,
   paddingBottom: 60
 });
@@ -178,10 +178,10 @@ let w = function(e) {
     sidebarTheme: h,
     contentType: g,
     scrollerRef: E,
-    mobileSidebarOpen: b,
-    toggleSidebar: y,
+    mobileSidebarOpen: y,
+    toggleSidebar: b,
     hideSidebar: O = false
-  } = e, A = a.useRef(null), v = a.useRef(null), I = (0, p.A)(s), T = (0, f.pnh)(O, {
+  } = e, v = a.useRef(null), A = a.useRef(null), S = (0, p.A)(s), T = (0, f.pnh)(O, {
     from: {
       position: "absolute",
       opacity: 0
@@ -192,16 +192,16 @@ let w = function(e) {
     reverse: O,
     config: l.config.stiff
   }, "animate-always"), C = a.useCallback(e => {
-    A.current = e, null != E && (E.current = e)
+    v.current = e, null != E && (E.current = e)
   }, [E]);
   a.useLayoutEffect(() => {
-    null != A.current && I !== s && A.current.scrollTo({
+    null != v.current && S !== s && v.current.scrollTo({
       to: 0
     })
-  }, [s, I, A]);
+  }, [s, S, v]);
   let w = (0, i.jsx)(R, {
     isMobile: u.Fr,
-    mobileSidebarOpen: b,
+    mobileSidebarOpen: y,
     closeAction: _
   });
 
@@ -215,13 +215,13 @@ let w = function(e) {
   }
 
   function D() {
-    let e = null != y && null != _ && b,
+    let e = null != b && null != _ && y,
       t = u.Fr && (0, i.jsxs)("div", {
         className: o()(m.mobileContentHeader, {
           [m.hideHamburger]: !e
         }),
         children: [e && (0, i.jsx)(c._, {
-          onClick: y
+          onClick: b
         }), w]
       });
     if ("custom" === g) return (0, i.jsxs)(d.F, {
@@ -235,13 +235,13 @@ let w = function(e) {
       children: [t, (0, i.jsxs)(f.GtU, {
         className: o()(m.contentRegionScroller, O ? m.contentRegionHiddenSidebar : m.contentRegionShownSidebar),
         ref: C,
-        children: [(0, i.jsx)(S.Provider, {
-          value: A.current,
+        children: [(0, i.jsx)(I.Provider, {
+          value: v.current,
           children: (0, i.jsx)("div", {
-            ref: v,
+            ref: A,
             className: m.contentColumnScrollable,
             children: (0, i.jsx)(f.xpW, {
-              containerRef: v,
+              containerRef: A,
               children: n
             })
           })
@@ -252,26 +252,26 @@ let w = function(e) {
     return (0, i.jsxs)(d.F, {
       component: "div",
       className: o()(m.contentRegion, {
-        [m.hidden]: u.Fr && true === b
+        [m.hidden]: u.Fr && true === y
       }),
       children: [(0, i.jsxs)("div", {
         className: m.contentTransitionWrap,
         children: [t, (0, i.jsxs)(f.GtU, {
           className: o()(m.contentRegionScroller, O ? m.contentRegionHiddenSidebar : m.contentRegionShownSidebar),
           ref: C,
-          children: [(0, i.jsx)(S.Provider, {
-            value: A.current,
+          children: [(0, i.jsx)(I.Provider, {
+            value: v.current,
             children: (0, i.jsx)(f.VQ0.Panel, {
               id: s,
               className: o()(m.contentColumn, m[r], {
                 [m.mobileContent]: u.Fr
               }),
-              ref: v,
+              ref: A,
               style: u.Fr ? {
                 maxWidth: window.innerWidth
               } : true,
               children: O ? n : (0, i.jsx)(f.xpW, {
-                containerRef: v,
+                containerRef: A,
                 children: n
               })
             })
@@ -287,7 +287,7 @@ let w = function(e) {
       children: e => (0, i.jsx)("div", {
         className: o()(m.sidebarRegion, e, {
           [m.flexFullWidth]: u.Fr,
-          [m.hidden]: u.Fr && false === b
+          [m.hidden]: u.Fr && false === y
         }),
         children: (0, i.jsx)(f.ChK, {
           className: m.sidebarRegionScroller,

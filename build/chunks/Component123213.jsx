@@ -28,15 +28,15 @@ function m(e) {
     onAcceptInvite: u,
     onStartApplication: f,
     onComplete: m
-  } = e, [g, E] = i.useState(false), b = (0, l.A)(t), y = i.useCallback(() => {
+  } = e, [g, E] = i.useState(false), y = (0, l.A)(t), b = i.useCallback(() => {
     (0, c.pX)(_.BVt.GUILD_MEMBER_VERIFICATION(t))
   }, [t]), O = i.useCallback(async () => {
     await (0, d.Z2)(t, {
       object: _.ZSU.GUILD_PROFILE
     })
   }, [t]), {
-    text: A,
-    onClick: v
+    text: v,
+    onClick: A
   } = i.useMemo(() => {
     switch (n) {
       case p.SP.IS_MEMBER:
@@ -45,11 +45,11 @@ function m(e) {
         };
       case p.SP.ADOPT_TAG:
         return {
-          text: h.intl.string(h.t.cQDYRu), onClick: b
+          text: h.intl.string(h.t.cQDYRu), onClick: y
         };
       case p.SP.HAS_APPLICATION:
         return {
-          text: h.intl.string(h.t["4yfIDk"]), onClick: y
+          text: h.intl.string(h.t["4yfIDk"]), onClick: b
         };
       case p.SP.APPLY_TO_JOIN:
         return {
@@ -72,21 +72,21 @@ function m(e) {
           text: null, onClick: null
         }
     }
-  }, [n, y, O, u, o, f, b]), S = i.useCallback(async e => {
+  }, [n, b, O, u, o, f, y]), I = i.useCallback(async e => {
     e.stopPropagation(), E(true);
     try {
-      await (null == v ? true : v())
+      await (null == A ? true : A())
     } catch (e) {} finally {
       null == m || m(), E(false)
     }
-  }, [v, m]);
-  return null == A ? null : (0, r.jsx)(a.Button, {
+  }, [A, m]);
+  return null == v ? null : (0, r.jsx)(a.Button, {
     variant: "active",
     size: "sm",
-    text: A,
+    text: v,
     fullWidth: true,
     loading: g || s,
-    onClick: S
+    onClick: I
   })
 }
 

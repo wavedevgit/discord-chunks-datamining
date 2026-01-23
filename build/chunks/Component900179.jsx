@@ -25,9 +25,9 @@ function f(e) {
     headingClassName: h,
     headingVariant: m = "text-xs/semibold",
     headingColor: g = "text-default"
-  } = e, E = (0, l.GV)(), b = i.useRef(null), y = (0, u.g)(), O = null != _ && y === _;
-  return (0, c.A)(b, O), (0, r.jsxs)("section", {
-    ref: O ? b : true,
+  } = e, E = (0, l.GV)(), y = i.useRef(null), b = (0, u.g)(), O = null != _ && b === _;
+  return (0, c.A)(y, O), (0, r.jsxs)("section", {
+    ref: O ? y : true,
     className: s()(d.uW, p),
     "aria-labelledby": null != n ? E : true,
     children: [null != n && (0, r.jsxs)("div", {

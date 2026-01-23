@@ -19,7 +19,7 @@ function u() {
     originalGuild: t,
     submitting: n,
     errors: u
-  } = (0, s.cf)([o.A], () => o.A.getProps()), f = i.useMemo(() => (0, d.$s)(u), [u]), g = i.useCallback(async () => {
+  } = (0, s.cf)([c.A], () => c.A.getProps()), g = i.useMemo(() => (0, d.$s)(u), [u]), m = i.useCallback(async () => {
     if (null == e) return Promise.resolve();
     let n = {
       systemChannelFlags: e.systemChannelFlags,
@@ -28,21 +28,21 @@ function u() {
       afkTimeout: e.afkTimeout,
       defaultMessageNotifications: e.defaultMessageNotifications
     };
-    if ((0, l._)(new Set(e.features), new Set(t.features)) || (n.features = e.features), o.A.hasChanges() && await c.A.saveGuild(e.id, n), o.A.widgetHasChanges()) {
+    if ((0, l._)(new Set(e.features), new Set(t.features)) || (n.features = e.features), c.A.hasChanges() && await o.A.saveGuild(e.id, n), c.A.widgetHasChanges()) {
       let {
         enabled: t,
         channelId: n
-      } = o.A.getWidget();
-      await c.A.updateEmbed(e.id, t, n)
+      } = c.A.getWidget();
+      await o.A.updateEmbed(e.id, t, n)
     }
     return Promise.resolve()
-  }, [e, t]), b = i.useCallback(() => {
-    null != e && c.A.init(e.id)
+  }, [e, t]), p = i.useCallback(() => {
+    null != e && o.A.init(e.id)
   }, [e]);
   return (0, r.jsx)(a.A, {
     submitting: n,
-    errorMessage: f,
-    onSave: g,
-    onReset: b
+    errorMessage: g,
+    onSave: m,
+    onReset: p
   })
 }

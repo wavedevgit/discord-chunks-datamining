@@ -1,9 +1,9 @@
 /** Chunk was on 28636 **/
 /** chunk id: 590858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => l
+  q: () => r
 });
-let l = Object.freeze({
+let r = Object.freeze({
   SMALL: "small",
   LARGE: "large"
 })

@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk818348 = require("./818348.js"),
   Chunk629865 = require("./629865.js");
 
-function y(e, t) {
+function b(e, t) {
   return e in t
 }
 
@@ -33,10 +33,10 @@ function O(e) {
   } = e, {
     selectedSkuId: a,
     step: O,
-    selectedPlan: A,
-    purchaseState: v,
-    purchaseType: S,
-    selectedSku: I,
+    selectedPlan: v,
+    purchaseState: A,
+    purchaseType: I,
+    selectedSku: S,
     enablePremiumBrandRefresh: T,
     isDisplayingWowMomentConfirmation: C,
     isPremiumGroupPurchase: N,
@@ -46,27 +46,27 @@ function O(e) {
     isGift: P,
     selectedGiftStyle: D,
     giftRecipient: x
-  } = (0, p.Pv)(), L = (null == I ? true : I.productLine) === m.EZt.COLLECTIBLES, j = (null == I ? true : I.productLine) === m.EZt.SOCIAL_LAYER_GAME_ITEM, M = P && (0, f.Ik)(x) && O === h.pn.CONFIRM && null != D && !L && !j, k = null != t && null != O, U = [h.pn.SKU_SELECT, h.pn.SELECT_FREE_SKU], G = null != O && !U.includes(O) && null != a;
+  } = (0, p.Pv)(), L = (null == S ? true : S.productLine) === m.EZt.COLLECTIBLES, j = (null == S ? true : S.productLine) === m.EZt.SOCIAL_LAYER_GAME_ITEM, M = P && (0, f.Ik)(x) && O === h.pn.CONFIRM && null != D && !L && !j, k = null != t && null != O, U = [h.pn.SKU_SELECT, h.pn.SELECT_FREE_SKU], G = null != O && !U.includes(O) && null != a;
   return i.useMemo(() => {
     if (null == O) return;
     let e = null;
     return M ? e = (0, r.jsxs)("div", {
-      className: b.kL,
+      className: y.kL,
       children: [(0, r.jsx)(c.A, {
         defaultAnimationState: l.oA.LOOP,
         giftStyle: D,
-        className: b.qq
+        className: y.qq
       }), (0, r.jsx)(o.s_y, {
         onClick: n,
-        className: b.b,
+        className: y.b,
         "data-migration-pending": true
       })]
-    }) : k ? e = t(null != A ? A : null, n, O) : S === E.VV.ONE_TIME ? e = (0, r.jsx)(d.fs, {
+    }) : k ? e = t(null != v ? v : null, n, O) : I === E.VV.ONE_TIME ? e = (0, r.jsx)(d.fs, {
       step: O,
       onClose: n
-    }) : G && (s()(y(a, g.WN), "invalid sku id: ".concat(a)), e = (0, r.jsx)(u.A, {
+    }) : G && (s()(b(a, g.WN), "invalid sku id: ".concat(a)), e = (0, r.jsx)(u.A, {
       currentStep: null != O ? O : true,
-      purchaseState: v,
+      purchaseState: A,
       premiumType: g.WN[a],
       onClose: n,
       showTrialBadge: R,
@@ -78,5 +78,5 @@ function O(e) {
       isDisplayingWowMomentConfirmation: C,
       isPremiumGroupPurchase: N
     })), e
-  }, [D, n, v, t, A, a, O, R, w, M, G, k, S, P, x, T, C, N])
+  }, [D, n, A, t, v, a, O, R, w, M, G, k, I, P, x, T, C, N])
 }

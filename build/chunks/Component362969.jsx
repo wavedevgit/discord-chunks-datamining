@@ -2,7 +2,7 @@
 /** chunk id: 362969, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -42,16 +42,16 @@ function E(e) {
   return e
 }
 
-function b() {
+function y() {
   let {
     enabled: e,
     autoToggle: t,
     hideInstantInvites: g,
-    hidePersonalInformation: b,
-    disableSounds: y,
+    hidePersonalInformation: y,
+    disableSounds: b,
     disableNotifications: O,
-    enableContentProtection: A
-  } = (0, i.cf)([l.A], () => E({}, l.A.getSettings())), v = () => (0, r.jsxs)(a.ZpM, {
+    enableContentProtection: v
+  } = (0, i.cf)([l.A], () => E({}, l.A.getSettings())), A = () => (0, r.jsxs)(a.ZpM, {
     type: a.ZpM.Types.PRIMARY,
     className: m.dH,
     children: [(0, r.jsxs)("div", {
@@ -71,14 +71,14 @@ function b() {
       alt: "",
       className: m.Ox
     })]
-  }), S = () => {
+  }), I = () => {
     if (c.isPlatformEmbedded) return (0, r.jsx)(a.dOG, {
       label: h.intl.string(h.t["PKDAJ/"]),
       description: h.intl.string(h.t.ZPi4lM),
       checked: t,
-      onChange: e => I("autoToggle", e)
+      onChange: e => S("autoToggle", e)
     })
-  }, I = (e, t) => {
+  }, S = (e, t) => {
     s.A.update({
       [e]: t
     })
@@ -93,7 +93,7 @@ function b() {
       gap: 24,
       children: [(0, r.jsx)(o.x, {
         setting: p.H.STREAMER_MODE_INTEGRATIONS,
-        children: v()
+        children: A()
       }), (0, r.jsx)(o.x, {
         setting: p.H.STREAMER_MODE_ENABLE,
         children: (0, r.jsxs)(a.BJc, {
@@ -104,8 +104,8 @@ function b() {
               onClick: T
             }),
             checked: e,
-            onChange: e => I("enabled", e)
-          }), S(), (0, r.jsx)(a.cGx, {})]
+            onChange: e => S("enabled", e)
+          }), I(), (0, r.jsx)(a.cGx, {})]
         })
       }), (0, r.jsxs)(a.nVY, {
         label: h.intl.string(h.t["+1H47t"]),
@@ -115,8 +115,8 @@ function b() {
           children: (0, r.jsx)(a.dOG, {
             label: h.intl.string(h.t.UpQziA),
             description: h.intl.string(h.t["+9Lra7"]),
-            checked: b,
-            onChange: e => I("hidePersonalInformation", e)
+            checked: y,
+            onChange: e => S("hidePersonalInformation", e)
           })
         }), (0, r.jsx)(o.x, {
           setting: p.H.STREAMER_MODE_HIDE_INVITE_LINKS,
@@ -124,15 +124,15 @@ function b() {
             label: h.intl.string(h.t.q7WNGv),
             description: h.intl.string(h.t.m7mS2U),
             checked: g,
-            onChange: e => I("hideInstantInvites", e)
+            onChange: e => S("hideInstantInvites", e)
           })
         }), (0, r.jsx)(o.x, {
           setting: p.H.STREAMER_MODE_DISABLE_SOUNDS,
           children: (0, r.jsx)(a.dOG, {
             label: h.intl.string(h.t.o56OZu),
             description: h.intl.string(h.t.eAkaik),
-            checked: y,
-            onChange: e => I("disableSounds", e)
+            checked: b,
+            onChange: e => S("disableSounds", e)
           })
         }), (0, r.jsx)(o.x, {
           setting: p.H.STREAMER_MODE_DISABLE_NOTIFICATIONS,
@@ -140,15 +140,15 @@ function b() {
             label: h.intl.string(h.t.qmYiYd),
             description: h.intl.string(h.t["ZAmpQ/"]),
             checked: O,
-            onChange: e => I("disableNotifications", e)
+            onChange: e => S("disableNotifications", e)
           })
         }), (0, r.jsx)(o.x, {
           setting: p.H.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE,
           children: (0, r.jsx)(a.dOG, {
             label: h.intl.string(h.t["iA81+a"]),
             description: h.intl.string(h.t.P4vj0h),
-            checked: A,
-            onChange: e => I("enableContentProtection", e)
+            checked: v,
+            onChange: e => S("enableContentProtection", e)
           })
         })]
       })]

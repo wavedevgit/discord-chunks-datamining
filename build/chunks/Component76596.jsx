@@ -18,10 +18,10 @@ function d(e) {
     emojiClassName: n,
     emoji: d,
     setEmoji: m,
-    channel: p
-  } = e, j = r.useRef(null), g = null == d || null == d.name ? null : () => {
+    channel: j
+  } = e, p = r.useRef(null), g = null == d || null == d.name ? null : () => {
     var e;
-    return (0, l.jsx)(a.A, {
+    return (0, l.jsx)(o.A, {
       className: n,
       animated: null != (e = d.animated) && e,
       emojiId: d.id,
@@ -34,13 +34,13 @@ function d(e) {
       m(null)
     },
     children: (0, l.jsx)(i.YNO, {
-      targetElementRef: j,
+      targetElementRef: p,
       position: "bottom",
       renderPopout: e => {
         let {
           closePopout: t
         } = e;
-        return (0, l.jsx)(o.A, {
+        return (0, l.jsx)(a.A, {
           closePopout: t,
           onSelectEmoji: e => {
             var n, l;
@@ -57,13 +57,13 @@ function d(e) {
             }), i && t())
           },
           pickerIntention: u.b_.COMMUNITY_CONTENT,
-          channel: p
+          channel: j
         })
       },
       children: (e, n) => {
         var r, i;
         let {
-          isShown: a
+          isShown: o
         } = n;
         return (0, l.jsx)(s.A, (r = function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -83,9 +83,9 @@ function d(e) {
           }
           return e
         }({}, e), i = i = {
-          ref: j,
+          ref: p,
           tabIndex: 0,
-          active: a,
+          active: o,
           className: t,
           renderButtonContents: g
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

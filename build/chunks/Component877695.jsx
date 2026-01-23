@@ -26,7 +26,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk875871 = require("./875871.js");
-let I = 292,
+let S = 292,
   T = 36,
   C = 48;
 
@@ -37,10 +37,10 @@ function N(e) {
     message: a,
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d
-  } = e, f = i.useRef(null), [_, m] = i.useState(true), [N, w] = i.useState(false), P = t.state === A.elq.ACCEPTING, D = (0, o.bG)([u.A], () => u.A.useReducedMotion);
+  } = e, f = i.useRef(null), [_, m] = i.useState(true), [N, w] = i.useState(false), P = t.state === v.elq.ACCEPTING, D = (0, o.bG)([u.A], () => u.A.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
-    w((null != (e = null == (t = f.current) ? true : t.clientHeight) ? e : 0) > I)
+    w((null != (e = null == (t = f.current) ? true : t.clientHeight) ? e : 0) > S)
   }, [w]);
   let x = (0, p.oO)(t),
     L = i.useCallback(() => {
@@ -52,56 +52,56 @@ function N(e) {
     M = i.useMemo(() => {
       var e;
       return N && (null == (e = f.current) ? true : e.clientHeight) != null ? {
-        height: _ ? I : f.current.clientHeight + T + C,
+        height: _ ? S : f.current.clientHeight + T + C,
         transition: D ? true : "height 0.2s ease"
       } : {}
     }, [_, N, D]);
   return null == x ? (0, r.jsx)(O.A, {}) : (0, r.jsxs)(l.sqX, {
-    className: s()(S.Gg, {
-      [S.vk]: N && _
+    className: s()(I.Gg, {
+      [I.vk]: N && _
     }),
     onClick: L,
     style: M,
-    "aria-label": v.intl.string(v.t.dcl9MQ),
+    "aria-label": A.intl.string(A.t.dcl9MQ),
     children: [(0, r.jsxs)("div", {
-      className: S.uY,
+      className: I.uY,
       ref: f,
       children: [(0, r.jsx)(E.J$, {
         profile: x,
-        className: S.vK
+        className: I.vK
       }), (0, r.jsx)(E.CG, {
         profile: x
       }), (0, r.jsx)(g.A, {
         profile: x
       }), (0, r.jsx)(h.P, {
         profile: x,
-        className: S.rb
-      }), (0, r.jsx)(y.A, {
-        guild: null != t.guild ? (0, b.DY)(t.guild) : null,
+        className: I.rb
+      }), (0, r.jsx)(b.A, {
+        guild: null != t.guild ? (0, y.DY)(t.guild) : null,
         roles: t.roles,
-        className: S.Ei
+        className: I.Ei
       })]
     }), N && !_ ? (0, r.jsx)("div", {
-      className: S.Se,
+      className: I.Se,
       children: (0, r.jsx)(l.QWc, {
         textVariant: "text-xs/medium",
         variant: "secondary",
         size: "sm",
         onClick: j,
-        text: v.intl.string(v.t.xdCLeM)
+        text: A.intl.string(A.t.xdCLeM)
       })
     }) : null, (0, r.jsxs)("div", {
-      className: s()(S.qr, {
-        [S.iK]: N
+      className: s()(I.qr, {
+        [I.iK]: N
       }),
       children: [N && _ ? (0, r.jsx)("div", {
-        className: S.D7
+        className: I.D7
       }) : null, (0, r.jsx)("div", {
-        className: s()(S.z8, {
-          [S.it]: N && _
+        className: s()(I.z8, {
+          [I.it]: N && _
         }),
         children: (0, r.jsx)("div", {
-          className: S.UD,
+          className: I.UD,
           children: (0, r.jsx)(R, {
             invite: t,
             profile: x,

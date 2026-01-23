@@ -57,31 +57,31 @@ function R(e) {
   let {
     user: n,
     channel: R
-  } = e, D = __OVERLAY__ || !(0, u.A)(n.id), M = (0, g.Ay)(n.id), L = (0, s.Ay)(), G = l.useRef(Date.now()), {
-    analyticsLocations: k
-  } = (0, c.Ay)(o.A.USER_PROFILE_SIDEBAR), U = (0, h.pb)({
+  } = e, D = __OVERLAY__ || !(0, u.A)(n.id), M = (0, m.Ay)(n.id), L = (0, a.Ay)(), k = l.useRef(Date.now()), {
+    analyticsLocations: G
+  } = (0, c.Ay)(o.A.USER_PROFILE_SIDEBAR), U = (0, f.pb)({
     layout: "SIDEBAR",
     userId: n.id,
     channelId: R.id
-  }), V = l.useRef(null), {
-    isHoveringOrFocusing: F,
-    isHovering: H
-  } = (0, d.A)(V), B = () => {
-    (0, m.openUserProfileModal)(w({
-      sourceAnalyticsLocations: k,
+  }), B = l.useRef(null), {
+    isHoveringOrFocusing: V,
+    isHovering: F
+  } = (0, d.A)(B), H = () => {
+    (0, b.openUserProfileModal)(w({
+      sourceAnalyticsLocations: G,
       hideRestrictedProfile: true
     }, U))
   };
   return (0, r.jsx)(c.f5, {
-    value: k,
-    children: (0, r.jsx)(h.of, {
+    value: G,
+    children: (0, r.jsx)(f.of, {
       value: U,
-      openedAt: G.current,
+      openedAt: k.current,
       fetchStartedAt: null == M ? true : M.fetchStartedAt,
       fetchEndedAt: null == M ? true : M.fetchEndedAt,
       isLoaded: null == M ? true : M.isLoaded,
-      children: (0, r.jsxs)(E.A, {
-        ref: V,
+      children: (0, r.jsxs)(x.A, {
+        ref: B,
         user: n,
         displayProfile: M,
         themeType: I.d.SIDEBAR,
@@ -93,45 +93,45 @@ function R(e) {
             })
           }), (0, r.jsxs)("div", {
             className: T.wx,
-            children: [(0, r.jsx)(O.A, {
+            children: [(0, r.jsx)(_.A, {
               user: n,
               displayProfile: M,
               themeType: I.d.SIDEBAR,
-              animateOnHoverOrFocusOnly: !F
+              animateOnHoverOrFocusOnly: !V
             }), (0, r.jsx)(A.A, {
               user: n,
               displayProfile: M,
               channelId: R.id,
               themeType: I.d.SIDEBAR,
-              onOpenProfile: D ? true : B
+              onOpenProfile: D ? true : H
             })]
           }), (0, r.jsxs)("div", {
             className: P.rf,
-            children: [(0, r.jsx)(_.A, {
+            children: [(0, r.jsx)(E.A, {
               user: n,
               guildId: R.guild_id,
-              nickname: p.Ay.getName(null, R.id, n),
+              nickname: h.Ay.getName(null, R.id, n),
               pronouns: null == M ? true : M.pronouns,
-              onOpenProfile: D ? true : B,
+              onOpenProfile: D ? true : H,
               tags: (0, r.jsx)(y.A, {
                 displayProfile: M,
                 themeType: I.d.SIDEBAR
               })
-            }), (0, r.jsxs)(E.A.Overlay, {
+            }), (0, r.jsxs)(x.A.Overlay, {
               className: P.Lw,
-              children: [(0, r.jsx)(x.A, {
+              children: [(0, r.jsx)(v.A, {
                 heading: N.intl.string(N.t["61W33d"]),
                 headingColor: "text-strong",
-                children: (0, r.jsx)(j.A, {
+                children: (0, r.jsx)(O.A, {
                   userBio: null == M ? true : M.bio,
                   userId: n.id,
                   animateOnHoverOrFocusOnly: true,
-                  isHoveringOrFocusing: F
+                  isHoveringOrFocusing: V
                 })
-              }), (0, r.jsx)(x.A, {
+              }), (0, r.jsx)(v.A, {
                 heading: N.intl.string(N.t["A//N4k"]),
                 headingColor: "text-strong",
-                children: (0, r.jsx)(v.A, {
+                children: (0, r.jsx)(j.A, {
                   userId: n.id
                 })
               })]
@@ -139,19 +139,19 @@ function R(e) {
           })]
         }), !D && (0, r.jsx)("div", {
           className: T.qr,
-          children: (0, r.jsx)(a.DUT, {
+          children: (0, r.jsx)(s.DUT, {
             onClick: () => {
-              B(), (0, b.Wn)(w({
+              H(), (0, g.Wn)(w({
                 action: "PRESS_VIEW_PROFILE",
-                analyticsLocations: k
+                analyticsLocations: G
               }, U))
             },
             className: T.wC,
             children: N.intl.string(N.t["+Xp3hq"])
           })
-        }), (null == M ? true : M.profileEffect) != null && (0, r.jsx)(f.A, {
+        }), (null == M ? true : M.profileEffect) != null && (0, r.jsx)(p.A, {
           skuId: null == M || null == (t = M.profileEffect) ? true : t.skuId,
-          isHovering: H
+          isHovering: F
         })]
       })
     })

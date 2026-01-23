@@ -80,9 +80,9 @@ let _ = 1,
       autoCorrect: p = "off"
     } = n, _ = f(n, ["style", "autoFocus", "disabled", "autoCorrect"]), [h] = r, m = a.useRef(null), g = e => {
       m.current = e, "function" == typeof h ? h(m.current) : null != h && (h.current = e)
-    }, [E, y] = a.useState(() => b(m.current, _.rows, _.value));
+    }, [E, b] = a.useState(() => y(m.current, _.rows, _.value));
     return a.useLayoutEffect(() => {
-      y(b(m.current, _.rows, _.value))
+      b(y(m.current, _.rows, _.value))
     }, [_.rows, _.value]), (0, i.jsx)(o.vN3, {
       children: (0, i.jsx)("textarea", d(c({}, _), {
         ref: g,
@@ -96,7 +96,7 @@ let _ = 1,
     })
   });
 
-function b(e, t, n) {
+function y(e, t, n) {
   if (null == e) return;
   n = null != n ? n : e.value, null == r && null != document.body && (r = document.createElement("textarea"), document.body.appendChild(r));
   let {
@@ -107,13 +107,13 @@ function b(e, t, n) {
   } = O(e), {
     minHeight: l,
     maxHeight: c
-  } = y(o, i, a, s);
+  } = b(o, i, a, s);
   r.setAttribute("style", o + ";" + m), r.value = n, null != t ? r.setAttribute("rows", "".concat(t)) : r.removeAttribute("rows");
   let u = r.scrollHeight;
   return "border-box" === s ? u += a : "content-box" === s && (u -= i), u = Math.max(l, Math.min(u, c))
 }
 
-function y(e, t, n, i) {
+function b(e, t, n, i) {
   null == r && null != document.body && (r = document.createElement("textarea"), document.body.appendChild(r)), r.setAttribute("style", e + ";" + m), r.setAttribute("rows", "".concat(_)), r.value = "";
   let a = r.scrollHeight;
   r.setAttribute("rows", "".concat(h)), r.value = "";

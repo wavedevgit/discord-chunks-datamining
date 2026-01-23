@@ -29,7 +29,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b() {
+function y() {
   return m.A.getCurrentConfig({
     location: "NativeIntentsManager"
   }, {
@@ -38,7 +38,7 @@ function b() {
   }).searchEnabled
 }
 
-function y() {
+function b() {
   return m.A.getCurrentConfig({
     location: "NativeIntentsManager"
   }, {
@@ -56,12 +56,12 @@ function O() {
   }).activityEnabled
 }
 
-function A(e) {
+function v(e) {
   var t;
   return (null == e || null == (t = e.startsWith) ? true : t.call(e, "/")) ? location.origin + e : null != e ? e : true
 }
 
-function v(e, t) {
+function A(e, t) {
   var n;
   let r = arguments.length > 2 && true !== arguments[2] && arguments[2],
     o = (0, a.m1)(e, d.default, c.A, true),
@@ -85,7 +85,7 @@ function v(e, t) {
     type: "url",
     title: h,
     displayName: h,
-    thumbnailURL: A((0, i.Y)(e, 128, false)),
+    thumbnailURL: v((0, i.Y)(e, 128, false)),
     rankingHint: e.type === g.rbe.DM ? 75 : 50,
     keywords: p,
     alternateNames: f,
@@ -93,17 +93,17 @@ function v(e, t) {
   }
 }
 
-function S(e) {
-  return null != e ? A(f.Ay.getGuildIconURL({
+function I(e) {
+  return null != e ? v(f.Ay.getGuildIconURL({
     id: e.id,
     icon: e.icon,
     size: 128
   })) : true
 }
 
-function I(e) {
+function S(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-    n = S(e),
+    n = I(e),
     r = g.BVt.CHANNEL(e.id),
     i = [{
       id: r,
@@ -117,9 +117,9 @@ function I(e) {
     a = s.A.getMutableGuildChannelsForGuild(e.id);
   for (let n in a) {
     let r = a[n];
-    l.A.can(g.xBc.VIEW_CHANNEL, r) && i.push(v(r, e, t))
+    l.A.can(g.xBc.VIEW_CHANNEL, r) && i.push(A(r, e, t))
   }
-  for (let n of s.A.getAllThreadsForGuild(e.id)) l.A.can(g.xBc.VIEW_CHANNEL, n) && i.push(v(n, e, t));
+  for (let n of s.A.getAllThreadsForGuild(e.id)) l.A.can(g.xBc.VIEW_CHANNEL, n) && i.push(A(n, e, t));
   return {
     id: e.id,
     items: i,
@@ -167,13 +167,13 @@ function C(e) {
 }
 
 function N() {
-  if (!b()) return;
-  let e = o.A.getGuildsArray().map(e => I(e)),
+  if (!y()) return;
+  let e = o.A.getGuildsArray().map(e => S(e)),
     t = [],
     n = s.A.getMutablePrivateChannels();
   for (let e in n) {
     let r = n[e];
-    t.push(v(r))
+    t.push(A(r))
   }
   e.push({
     id: g.ME,
@@ -187,7 +187,7 @@ function R(e) {
 }
 
 function w(e) {
-  if (!b()) return;
+  if (!y()) return;
   let t = [],
     n = [],
     r = {};
@@ -196,11 +196,11 @@ function w(e) {
       var i;
       let e = o.A.getGuild(a.guild_id),
         n = null != (i = null == e ? true : e.id) ? i : g.ME,
-        s = v(a, e, true),
+        s = A(a, e, true),
         l = r[n];
       if (null != l) l.push(s);
       else {
-        let i = S(e),
+        let i = I(e),
           a = [s];
         t.push({
           id: n,
@@ -213,10 +213,10 @@ function w(e) {
 }
 class P extends Chunk439372.A {
   handleInit() {
-    C(u.A.getCurrentlySelectedChannelId()), y() && h.A.clearSearchIndex(), b() && N()
+    C(u.A.getCurrentlySelectedChannelId()), b() && h.A.clearSearchIndex(), y() && N()
   }
   handleLogout() {
-    y() && h.A.clearSearchIndex()
+    b() && h.A.clearSearchIndex()
   }
   handleChannelSelect(e) {
     let {
@@ -229,13 +229,13 @@ class P extends Chunk439372.A {
     let {
       channel: n
     } = e;
-    if (!b() || !l.A.can(g.xBc.VIEW_CHANNEL, n)) return;
+    if (!y() || !l.A.can(g.xBc.VIEW_CHANNEL, n)) return;
     let r = o.A.getGuild(n.guild_id);
     if (null == r && null != n.guild_id) return;
-    let i = S(r);
+    let i = I(r);
     h.A.indexDomains([{
       id: null != (t = null == r ? true : r.id) ? t : g.ME,
-      items: [v(n, r)],
+      items: [A(n, r)],
       defaultThumbnailURL: i
     }])
   }
@@ -243,7 +243,7 @@ class P extends Chunk439372.A {
     let {
       channel: t
     } = e;
-    b() && h.A.deleteSearchItems([t.id])
+    y() && h.A.deleteSearchItems([t.id])
   }
   handleChannelUpdates(e) {
     let {
@@ -256,16 +256,16 @@ class P extends Chunk439372.A {
       guild: t,
       type: n
     } = e;
-    if (b()) {
+    if (y()) {
       let e = o.A.getGuild(t.id);
-      null != e ? h.A.indexDomains([I(e, "GUILD_UPDATE" === n)]) : h.A.deleteSearchDomains([t.id])
+      null != e ? h.A.indexDomains([S(e, "GUILD_UPDATE" === n)]) : h.A.deleteSearchDomains([t.id])
     }
   }
   handleGuildDelete(e) {
     let {
       guild: t
     } = e;
-    b() && h.A.deleteSearchDomains([t.id])
+    y() && h.A.deleteSearchDomains([t.id])
   }
   handleThreadUpdate(e) {
     let {

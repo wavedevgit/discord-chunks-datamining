@@ -2,7 +2,7 @@
 /** chunk id: 419707, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,24 +13,24 @@ var Chunk627968 = require("./627968.js"),
   Chunk765671 = require("./765671.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk301563 = require("./301563.js");
-let f = Chunk64700.memo(function(e) {
+let g = Chunk64700.memo(function(e) {
   var t, n;
   let {
     renderHeader: l,
-    children: f,
-    isExpanded: g,
-    isStuck: b,
-    onExpand: m,
-    disableAnimation: p,
-    disableBackground: x
-  } = e, [h, j] = i.useState(true), [O, y] = i.useState(false), {
+    children: g,
+    isExpanded: m,
+    isStuck: p,
+    onExpand: f,
+    disableAnimation: b,
+    disableBackground: h
+  } = e, [x, j] = i.useState(true), [_, O] = i.useState(false), {
     ref: v,
-    height: A = 0
-  } = (0, o.Ay)(), {
-    ref: E,
-    height: N = 0
-  } = (0, o.Ay)(), [_, S] = i.useState(g), T = (0, c.zhh)({
-    height: _ ? N + A : A,
+    height: y = 0
+  } = (0, c.Ay)(), {
+    ref: A,
+    height: E = 0
+  } = (0, c.Ay)(), [N, S] = i.useState(m), I = (0, o.zhh)({
+    height: N ? E + y : y,
     config: (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -61,40 +61,40 @@ let f = Chunk64700.memo(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t),
     onStart: () => {
-      y(false)
+      O(false)
     },
     onRest: () => {
-      y(true)
+      O(true)
     }
-  }, h || p ? "animate-never" : "respect-motion-settings");
+  }, x || b ? "animate-never" : "respect-motion-settings");
   return i.useLayoutEffect(() => {
-    y(false), S(g)
-  }, [g]), i.useLayoutEffect(() => {
+    O(false), S(m)
+  }, [m]), i.useLayoutEffect(() => {
     let e = setTimeout(() => {
       j(false)
     }, 100);
     return () => clearTimeout(e)
-  }, []), (0, r.jsx)(c.DUT, {
+  }, []), (0, r.jsx)(o.DUT, {
     className: s()(u.Lo, {
-      [u.$M]: g,
-      [u._$]: x
+      [u.$M]: m,
+      [u._$]: h
     }),
     children: (0, r.jsxs)(a.animated.div, {
       className: s()(u.N0, {
-        [u.Mm]: g && O
+        [u.Mm]: m && _
       }),
-      style: T,
-      children: [(0, r.jsx)(c.DUT, {
+      style: I,
+      children: [(0, r.jsx)(o.DUT, {
         innerRef: v,
-        onClick: b ? true : m,
+        onClick: p ? true : f,
         className: s()(u.MU, {
-          [u.$M]: g && b
+          [u.$M]: m && p
         }),
         "aria-label": d.intl.string(d.t.dcl9MQ),
         children: l
       }), (0, r.jsx)("div", {
-        ref: E,
-        children: f
+        ref: A,
+        children: g
       })]
     })
   })

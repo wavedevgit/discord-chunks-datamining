@@ -14,7 +14,7 @@ require.d(exports, {
   a4: () => V,
   aB: () => M,
   e_: () => w,
-  le: () => I,
+  le: () => S,
   mQ: () => k,
   pe: () => N,
   t7: () => x,
@@ -38,13 +38,13 @@ var Chunk271830 = require("./271830.js"),
   Chunk692807 = require("./692807.js"),
   g = require.n(Chunk692807),
   Chunk907014 = require("./907014.js"),
-  b = require.n(Chunk907014),
+  y = require.n(Chunk907014),
   Chunk70986 = require("./70986.js"),
   O = require.n(Chunk70986),
   Chunk1214 = require("./1214.js"),
-  v = require.n(Chunk1214);
+  A = require.n(Chunk1214);
 
-function S(e, t, n, i) {
+function I(e, t, n, i) {
   let a = i.getCurrentContent(),
     s = null;
   null != e && (s = (a = a.createEntity(...e)).getLastCreatedEntityKey());
@@ -60,7 +60,7 @@ function S(e, t, n, i) {
   })
 }
 
-function I(e, t, n, i) {
+function S(e, t, n, i) {
   let a, s, l = t.getCurrentContent(),
     c = l.getFirstBlock(),
     u = c.getText();
@@ -82,7 +82,7 @@ function T(e, t) {
     case "delete-word":
       return p()(t);
     case "backspace":
-      return b()(t);
+      return y()(t);
     case "backspace-word":
       return d()(t);
     case "backspace-to-start-of-line":
@@ -95,7 +95,7 @@ function T(e, t) {
 function C(e, t) {
   switch (e) {
     case "transpose-characters":
-      return v()(t);
+      return A()(t);
     case "move-selection-to-start-of-block":
       return g()(t);
     case "move-selection-to-end-of-block":
@@ -133,14 +133,14 @@ function R(e, t) {
           start: a,
           end: s
         } = e, o = e.getFullMatch();
-        !n.processed && (n.type === i && n.start === a && n.text === o ? (n.processed = true, r = true) : (a >= n.start && a < n.end || s > n.start && s <= n.end) && (n.processed = true, t = S(null, n.start, n.end, t)))
+        !n.processed && (n.type === i && n.start === a && n.text === o ? (n.processed = true, r = true) : (a >= n.start && a < n.end || s > n.start && s <= n.end) && (n.processed = true, t = I(null, n.start, n.end, t)))
       }), r) return;
     let i = n[e.type];
-    t = S([e.type, null != i && i.mutable ? "MUTABLE" : "IMMUTABLE", {
+    t = I([e.type, null != i && i.mutable ? "MUTABLE" : "IMMUTABLE", {
       token: e
     }], e.start, e.end, t)
   }), s.forEach(e => {
-    e.processed || (t = S(null, e.start, e.end, t))
+    e.processed || (t = I(null, e.start, e.end, t))
   }), t
 }
 
@@ -160,7 +160,7 @@ function D(e) {
 
 function x(e, t) {
   let n = N(t);
-  return I(e, t, 0, n.length)
+  return S(e, t, 0, n.length)
 }
 
 function L(e, t) {
@@ -203,7 +203,7 @@ function V(e) {
     n = N(e);
   if (n.length > t) {
     let i = e.getSelection();
-    e = I("", e, t, n.length), i.getAnchorOffset() > t && (i = i.set("anchorOffset", t)), i.getFocusOffset() > t && (i = i.set("focusOffset", t)), e = r.EditorState.forceSelection(e, i)
+    e = S("", e, t, n.length), i.getAnchorOffset() > t && (i = i.set("anchorOffset", t)), i.getFocusOffset() > t && (i = i.set("focusOffset", t)), e = r.EditorState.forceSelection(e, i)
   }
   return e
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk615300 = require("./615300.js"),
   Chunk311907 = require("./311907.js"),
   Chunk554146 = require("./554146.js"),
@@ -70,14 +70,14 @@ function R(e) {
     className: t,
     iconUrl: n,
     icon: i,
-    header: s,
+    header: a,
     completed: o,
     onClick: c
-  } = e, [d, p] = l.useState(false), h = (0, f.A)(o);
+  } = e, [d, h] = l.useState(false), f = (0, p.A)(o);
   return l.useEffect(() => {
-    null != h && o !== h && (p(true), setTimeout(() => p(false), 1e3))
-  }, [o, h]), (0, r.jsxs)(u.DUT, {
-    className: a()(t, T.Nr, {
+    null != f && o !== f && (h(true), setTimeout(() => h(false), 1e3))
+  }, [o, f]), (0, r.jsxs)(u.DUT, {
+    className: s()(t, T.Nr, {
       [T.so]: o
     }),
     onClick: c,
@@ -87,43 +87,43 @@ function R(e) {
       alt: ""
     }), (0, r.jsx)(u.Text, {
       color: "text-strong",
-      className: a()(T.t$, T.MY),
+      className: s()(T.t$, T.MY),
       variant: "text-sm/normal",
-      children: s
+      children: a
     }), o ? (0, r.jsx)(u.A9s, {
       size: "md",
       color: "currentColor",
-      className: a()(T.AI, {
+      className: s()(T.AI, {
         [T.i0]: d
       })
-    }) : (0, r.jsx)(j.A, {
+    }) : (0, r.jsx)(O.A, {
       className: T.UE,
-      direction: j.A.Directions.RIGHT
+      direction: O.A.Directions.RIGHT
     })]
   })
 }
 
 function D(e) {
-  let t, i, f, j, D, M, {
+  let t, i, p, O, D, M, {
       channel: L
     } = e,
-    G = (0, o.bG)([y.A], () => null != L ? y.A.getGuild(L.getGuildId()) : null, [L]),
-    k = null != G && _.default.extractTimestamp(G.id) < Date.now() - S.NOr,
-    U = (0, o.bG)([A.default], () => (null == G ? true : G.ownerId) === A.default.getId(), [G]),
+    k = (0, o.bG)([y.A], () => null != L ? y.A.getGuild(L.getGuildId()) : null, [L]),
+    G = null != k && E.default.extractTimestamp(k.id) < Date.now() - S.NOr,
+    U = (0, o.bG)([A.default], () => (null == k ? true : k.ownerId) === A.default.getId(), [k]),
     {
-      canInvite: V,
-      canManageGuild: F,
-      canMessage: H
-    } = (0, h.Sk)(L, G),
-    B = (0, o.bG)([O.default], () => {
+      canInvite: B,
+      canManageGuild: V,
+      canMessage: F
+    } = (0, f.Sk)(L, k),
+    H = (0, o.bG)([_.default], () => {
       var e, t;
-      return (null == (e = O.default.getCurrentUser()) ? true : e.desktop) === true || (null == (t = O.default.getCurrentUser()) ? true : t.mobile) === true
+      return (null == (e = _.default.getCurrentUser()) ? true : e.desktop) === true || (null == (t = _.default.getCurrentUser()) ? true : t.mobile) === true
     }),
     {
       guildPopulated: K,
       guildMessaged: W,
       guildPersonalized: z
-    } = (0, h.lF)(G),
+    } = (0, f.lF)(k),
     {
       handleInvite: Y,
       handleMessage: q,
@@ -131,42 +131,42 @@ function D(e) {
       handleDownload: J,
       handleAddApplication: Q
     } = (t = l.useCallback(() => {
-      p.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
+      h.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
         setup_type: I.XT.CHANNEL_WELCOME,
         action: I.AG.INVITE
-      }), null != G && (0, u.mMO)(async () => {
+      }), null != k && (0, u.mMO)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("43600"), n.e("28136"), n.e("42821")]).then(n.bind(n, 234355));
         return t => (0, r.jsx)(e, w(P({}, t), {
-          guild: G,
+          guild: k,
           source: S.PE1.CHANNEL_WELCOME,
           analyticsLocation: {
             section: S.JJy.CHANNEL_WELCOME_CTA
           }
         }))
       })
-    }, [G]), i = l.useCallback(() => {
-      p.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
+    }, [k]), i = l.useCallback(() => {
+      h.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
         setup_type: I.XT.CHANNEL_WELCOME,
         action: I.AG.SEND_MESSAGE
-      }), v._.dispatch(S.jej.TEXTAREA_FOCUS, {
+      }), j._.dispatch(S.jej.TEXTAREA_FOCUS, {
         highlight: true,
         channelId: S.dJq
       })
-    }, []), f = l.useCallback(() => {
-      p.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
+    }, []), p = l.useCallback(() => {
+      h.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
         setup_type: I.XT.CHANNEL_WELCOME,
         action: I.AG.PERSONALIZE_SERVER
-      }), null != G && b.A.open(G.id, (0, m.x)(), {
+      }), null != k && g.A.open(k.id, (0, b.x)(), {
         section: S.JJy.CHANNEL_WELCOME_CTA
       })
-    }, [G]), {
+    }, [k]), {
       handleInvite: t,
       handleMessage: i,
-      handlePersonalize: f,
+      handlePersonalize: p,
       handleDownload: l.useCallback(() => {
-        p.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
+        h.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
           setup_type: I.XT.CHANNEL_WELCOME,
           action: I.AG.DOWNLOAD
         }), (0, u.mMO)(async () => {
@@ -179,7 +179,7 @@ function D(e) {
         })
       }, []),
       handleAddApplication: l.useCallback(() => {
-        null != G && (p.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
+        null != k && (h.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
           setup_type: I.XT.CHANNEL_WELCOME,
           action: I.AG.ADD_APP
         }), (0, u.mMO)(async () => {
@@ -189,42 +189,42 @@ function D(e) {
           return t => {
             var n;
             return (0, r.jsx)(e, w(P({
-              guildId: null != (n = G.id) ? n : ""
+              guildId: null != (n = k.id) ? n : ""
             }, t), {
               analyticsType: c.M.APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL
             }))
           }
         }))
-      }, [G])
+      }, [k])
     }),
-    Z = !(B || K || W || z),
+    Z = !(H || K || W || z),
     {
       titleAnimatedStyle: $,
       opacities: ee
-    } = (j = (0, d.A)(() => new s.A.Value(0)), D = (0, d.A)(() => new s.A.Value(0)), M = (0, d.A)(() => [new s.A.Value(0), new s.A.Value(0), new s.A.Value(0), new s.A.Value(0)]), l.useEffect(() => {
-      s.A.stagger(300, [s.A.parallel([s.A.timing(D, {
+    } = (O = (0, d.A)(() => new a.A.Value(0)), D = (0, d.A)(() => new a.A.Value(0)), M = (0, d.A)(() => [new a.A.Value(0), new a.A.Value(0), new a.A.Value(0), new a.A.Value(0)]), l.useEffect(() => {
+      a.A.stagger(300, [a.A.parallel([a.A.timing(D, {
         toValue: 1,
         duration: 450
-      }), s.A.timing(j, {
+      }), a.A.timing(O, {
         toValue: 1,
         duration: 450
-      })]), s.A.stagger(100, [s.A.timing(M[0], {
+      })]), a.A.stagger(100, [a.A.timing(M[0], {
         toValue: 1,
         duration: 300
-      }), s.A.timing(M[1], {
+      }), a.A.timing(M[1], {
         toValue: 1,
         duration: 300
-      }), s.A.timing(M[2], {
+      }), a.A.timing(M[2], {
         toValue: 1,
         duration: 300
-      }), s.A.timing(M[3], {
+      }), a.A.timing(M[3], {
         toValue: 1,
         duration: 300
       })])]).start()
-    }, [D, j, M]), {
+    }, [D, O, M]), {
       titleAnimatedStyle: Z ? {
         transform: [{
-          translateY: j.interpolate({
+          translateY: O.interpolate({
             inputRange: [0, 1],
             outputRange: ["-20px", "0px"]
           })
@@ -239,13 +239,13 @@ function D(e) {
       (async () => {
         try {
           var e;
-          let t = await (0, g.c)(null != (e = null == G ? true : G.id) ? e : S.dJq);
+          let t = await (0, m.c)(null != (e = null == k ? true : k.id) ? e : S.dJq);
           en(t.map(e => e.id))
         } catch (e) {}
       })()
-    }, [null == G ? true : G.id]), null == G) return null;
+    }, [null == k ? true : k.id]), null == k) return null;
   let el = [];
-  k || (V && el.push((0, r.jsx)(s.A.div, {
+  G || (B && el.push((0, r.jsx)(a.A.div, {
     className: T.cW,
     style: Z ? {
       opacity: ee[el.length]
@@ -256,7 +256,7 @@ function D(e) {
       completed: K,
       onClick: Y
     })
-  }, "invite")), F && el.push((0, r.jsx)(s.A.div, {
+  }, "invite")), V && el.push((0, r.jsx)(a.A.div, {
     className: T.cW,
     style: Z ? {
       opacity: ee[el.length]
@@ -267,7 +267,7 @@ function D(e) {
       completed: z,
       onClick: X
     })
-  }, "customize")), H && el.push((0, r.jsx)(s.A.div, {
+  }, "customize")), F && el.push((0, r.jsx)(a.A.div, {
     className: T.cW,
     style: Z ? {
       opacity: ee[el.length]
@@ -278,7 +278,7 @@ function D(e) {
       completed: W,
       onClick: q
     })
-  }, "message")), (0, E.isWeb)() && el.push((0, r.jsx)(s.A.div, {
+  }, "message")), (0, x.isWeb)() && el.push((0, r.jsx)(a.A.div, {
     className: T.cW,
     style: Z ? {
       opacity: ee[el.length]
@@ -286,10 +286,10 @@ function D(e) {
     children: (0, r.jsx)(R, {
       iconUrl: u.Gl0,
       header: N.intl.string(N.t.pGVNI9),
-      completed: B,
+      completed: H,
       onClick: J
     })
-  }, "download")), el.push((0, r.jsx)(s.A.div, {
+  }, "download")), el.push((0, r.jsx)(a.A.div, {
     className: T.cW,
     style: Z ? {
       opacity: ee[el.length]
@@ -302,31 +302,31 @@ function D(e) {
     })
   }, "addapp")));
   let ei = U ? N.intl.string(N.t["1ach9C"]) : N.intl.string(N.t["ezm+/j"]);
-  k && (ei = N.intl.string(N.t["gwyU/J"]));
-  let ea = "".concat(x.A.getArticleURL(S.MVz.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
+  G && (ei = N.intl.string(N.t["gwyU/J"]));
+  let es = "".concat(v.A.getArticleURL(S.MVz.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
   return (0, r.jsx)(C.Ay, {
     channelId: L.id,
     children: (0, r.jsx)("div", {
       className: T.kL,
       children: (0, r.jsxs)("div", {
         className: T.vW,
-        children: [(0, r.jsxs)(s.A.div, {
+        children: [(0, r.jsxs)(a.A.div, {
           style: $,
           children: [(0, r.jsx)(u.Heading, {
             className: T.ud,
             variant: "heading-xxl/medium",
             children: N.intl.format(N.t.rkHVKf, {
-              guildName: G.name
+              guildName: k.name
             })
           }), (0, r.jsxs)(u.Text, {
             color: "text-default",
-            className: a()({
+            className: s()({
               [T.VA]: true,
               [T.lg]: 0 === el.length
             }),
             variant: "text-sm/normal",
             children: [ei, " ", el.length > 0 ? N.intl.format(N.t.UOtD32, {
-              guideURL: ea
+              guideURL: es
             }) : null]
           })]
         }), el]

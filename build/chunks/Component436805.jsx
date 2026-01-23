@@ -2,7 +2,7 @@
 /** chunk id: 436805, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -116,7 +116,7 @@ let p = e => {
       isSubscription: E
     } = (0, d.GZ)(null != p ? p : null, n);
     if (null != t && !E && null == p || null == _) return null;
-    let b = (0, u.$g)(i, a);
+    let y = (0, u.$g)(i, a);
     return (0, r.jsxs)("div", {
       className: s()(f.kL, o),
       children: [E ? (0, r.jsx)(m, {
@@ -131,10 +131,10 @@ let p = e => {
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-subtle",
-          children: b
+          children: y
         })]
       })]
     })
   });
 E.displayName = "FamilyCenterActivityPurchaseRow";
-let b = E
+let y = E

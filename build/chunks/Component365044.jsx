@@ -2,7 +2,7 @@
 /** chunk id: 365044, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  I: () => f
+  I: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
@@ -14,7 +14,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk815873 = require("./815873.js");
 
-function f(e) {
+function g(e) {
   let {
     guild: t,
     canManageGuild: n
@@ -40,7 +40,7 @@ function f(e) {
         color: "text-subtle",
         className: u.Qq,
         children: d.intl.format(d.t.ZYA9PV, {
-          articleURL: l.A.getArticleURL(o.MVz.GUILD_INVITE_SPLASH)
+          articleURL: l.A.getArticleURL(c.MVz.GUILD_INVITE_SPLASH)
         })
       }), (0, r.jsx)(a.l, {
         guild: t,
@@ -49,7 +49,7 @@ function f(e) {
       })]
     }), (0, r.jsx)("div", {
       className: u.fi,
-      children: (0, r.jsx)(c.S, {
+      children: (0, r.jsx)(o.S, {
         guild: t,
         canManageGuild: n
       })

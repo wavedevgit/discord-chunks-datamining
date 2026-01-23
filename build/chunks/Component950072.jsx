@@ -18,8 +18,8 @@ function E(e) {
   let {
     role: n,
     guildId: r
-  } = e, s = (0, c.X_)(r, null != n ? n : true, null == n ? true : n.colorStrings), u = (0, a.bG)([o.A], () => o.A.roleStyle), E = (0, i.rdh)(i.LU0.unsafe_rawColors.PRIMARY_300).hex(), d = null != (t = null == n ? true : n.colorString) ? t : E;
-  return null == n ? null : "dot" === u ? (0, l.jsx)(i.WYI, {
+  } = e, s = (0, u.X_)(r, null != n ? n : true, null == n ? true : n.colorStrings), c = (0, a.bG)([o.A], () => o.A.roleStyle), E = (0, i.rdh)(i.LU0.unsafe_rawColors.PRIMARY_300).hex(), d = null != (t = null == n ? true : n.colorString) ? t : E;
+  return null == n ? null : "dot" === c ? (0, l.jsx)(i.WYI, {
     color: null != d ? d : true,
     colors: s,
     background: false,
@@ -36,8 +36,8 @@ function d(e) {
     guildId: n,
     role: a,
     className: o,
-    canRemove: c = false,
-    onRemove: E = u.tE
+    canRemove: u = false,
+    onRemove: E = c.tE
   } = e, d = (0, i.rdh)(i.LU0.unsafe_rawColors.PRIMARY_300).hex(), _ = null != (t = null == a ? true : a.colorString) ? t : d, g = r.useMemo(() => ({
     backgroundColor: "".concat(_, "27")
   }), [_]);
@@ -47,7 +47,7 @@ function d(e) {
       style: g,
       role: a,
       guildId: n,
-      canRemove: c,
+      canRemove: u,
       onRemove: E
     })
   })

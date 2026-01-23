@@ -2,8 +2,8 @@
 /** chunk id: 659746, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => I,
-  Or: () => v
+  Ay: () => S,
+  Or: () => A
 }), require("./65821.js"), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -51,13 +51,13 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -76,7 +76,7 @@ function O(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let A = Object.freeze({
+let v = Object.freeze({
   DURATION: {
     [Chunk788868.PremiumTypes.TIER_0]: 1e3,
     [Chunk788868.PremiumTypes.TIER_1]: 1e3,
@@ -90,10 +90,10 @@ let A = Object.freeze({
   FLASH_TIME_PERCENT: .72,
   FLASH_DURATION_PERCENT: .08
 });
-var v = function(e) {
+var A = function(e) {
   return e.PREMIUM_ACTIVATED = "PREMIUM_ACTIVATED", e.PREMIUM_UPDATED = "PREMIUM_UPDATED", e.PREMIUM_UPGRADED = "PREMIUM_UPGRADED", e.GUILD_BOOST_APPLIED = "GUILD_BOOST_APPLIED", e.PREMIUM_PAYMENT_STARTED = "PREMIUM_PAYMENT_STARTED", e
 }({});
-class S extends(r = Chunk64700.PureComponent) {
+class I extends(r = Chunk64700.PureComponent) {
   componentDidMount() {
     this.animate()
   }
@@ -103,14 +103,14 @@ class S extends(r = Chunk64700.PureComponent) {
     } = this.props;
     l.A.timing(this.animation, {
       toValue: 1,
-      delay: A.DELAY[e],
-      duration: A.DURATION[e]
+      delay: v.DELAY[e],
+      duration: v.DURATION[e]
     }).start()
   }
   getContainerStyle() {
     let {
       flashColor: e
-    } = this.props, t = A.FLASH_TIME_PERCENT, n = A.FLASH_DURATION_PERCENT, r = (0, p.tp)(e, 0);
+    } = this.props, t = v.FLASH_TIME_PERCENT, n = v.FLASH_DURATION_PERCENT, r = (0, p.tp)(e, 0);
     return {
       backgroundColor: this.animation.interpolate({
         inputRange: [0, t, t, t + n, 1],
@@ -349,13 +349,13 @@ class S extends(r = Chunk64700.PureComponent) {
   }
 }
 
-function I(e) {
+function S(e) {
   let {
     theme: t
-  } = e, n = y(e, ["theme"]), r = (0, d.rdh)(c.A.unsafe_rawColors.WHITE).hex(), a = (0, d.rdh)(c.A.unsafe_rawColors.BRAND_500).hex(), s = (0, u.Mw)(t) ? r : a;
-  return (0, i.jsx)(S, b(g({}, n), {
+  } = e, n = b(e, ["theme"]), r = (0, d.rdh)(c.A.unsafe_rawColors.WHITE).hex(), a = (0, d.rdh)(c.A.unsafe_rawColors.BRAND_500).hex(), s = (0, u.Mw)(t) ? r : a;
+  return (0, i.jsx)(I, y(g({}, n), {
     theme: t,
     flashColor: s
   }))
 }
-m(S, "Types", v), I.Types = v
+m(I, "Types", A), S.Types = A

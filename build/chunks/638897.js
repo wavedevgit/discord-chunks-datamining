@@ -2,7 +2,7 @@
 /** chunk id: 638897, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk27867 = require("./27867.js"),
@@ -29,7 +29,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,13 +54,13 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e, t, n) {
-  var E, y, A, v, S, I, T, C, N, R, w;
+function v(e, t, n) {
+  var E, b, v, A, I, S, T, C, N, R, w;
   let {
     channel: P,
     type: D
@@ -85,9 +85,9 @@ function A(e, t, n) {
     scrollerRef: n,
     state: x,
     onFocus: e => K.setSelectedIndex(e)
-  }), B = null == (S = e.editorRef.current) ? true : S.getCurrentWord(), H = null == (I = e.editorRef.current) ? true : I.getSlateEditor(), Y = null;
+  }), B = null == (I = e.editorRef.current) ? true : I.getCurrentWord(), H = null == (S = e.editorRef.current) ? true : S.getSlateEditor(), Y = null;
   null != H && (Y = null != (R = null == (w = c.VW.getSelectedParentOfType(H, _.mk)) ? true : w[0]) ? R : null);
-  let W = O(b({}, e), {
+  let W = O(y({}, e), {
       navigator: F,
       activeCommand: G,
       activeCommandOption: V,
@@ -97,11 +97,11 @@ function A(e, t, n) {
       hidePersonalInformation: U,
       hideMentionDescription: D === l.oU.RULES_INPUT,
       emojiIntention: D === l.oU.RULES_INPUT ? g.b_.COMMUNITY_CONTENT : g.b_.CHAT,
-      currentWord: null != (y = null == B ? true : B.word) ? y : "",
+      currentWord: null != (b = null == B ? true : B.word) ? b : "",
       currentWordIsAtStart: (null == B ? true : B.isAtStart) === true,
-      currentFullWord: null != (A = null == B ? true : B.fullWord) ? A : "",
+      currentFullWord: null != (v = null == B ? true : B.fullWord) ? v : "",
       optionText: null != V ? (0, s.AA)({
-        [V.name]: null != (v = null == (C = e.editorRef.current) ? true : C.getCurrentCommandOptionValue()) ? v : []
+        [V.name]: null != (A = null == (C = e.editorRef.current) ? true : C.getCurrentCommandOptionValue()) ? A : []
       }, V.name) : ""
     }),
     [K] = r.useState(() => new _.Ay(W));

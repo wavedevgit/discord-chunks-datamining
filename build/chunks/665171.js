@@ -2,14 +2,14 @@
 /** chunk id: 665171, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Jr: () => v,
+  Jr: () => A,
   KH: () => E,
-  QK: () => b,
+  QK: () => y,
   Wp: () => g,
-  as: () => S,
+  as: () => I,
   cq: () => h,
-  e_: () => A,
-  jL: () => y,
+  e_: () => v,
+  jL: () => b,
   pj: () => O,
   tT: () => m,
   z9: () => _
@@ -121,7 +121,7 @@ function E() {
   })
 }
 
-function b(e, t) {
+function y(e, t) {
   i.h.dispatch({
     type: "GAME_SERVER_REGION_PING_STATE_UPDATE",
     pingUrl: e,
@@ -129,7 +129,7 @@ function b(e, t) {
   })
 }
 
-function y(e, t, n, i) {
+function b(e, t, n, i) {
   return r.Bo.post({
     url: p.Rsh.GUILD_POWERUP_TOGGLE(e, t),
     body: {
@@ -153,7 +153,7 @@ function O(e, t, n, i) {
   })
 }
 
-function A(e, t, n) {
+function v(e, t, n) {
   return r.Bo.del({
     url: p.Rsh.GUILD_POWERUP_TOGGLE(e, t),
     query: {
@@ -164,7 +164,7 @@ function A(e, t, n) {
   })
 }
 
-function v(e) {
+function A(e) {
   return r.Bo.get({
     url: p.Rsh.GAME_SERVER_REGIONS(e),
     rejectWithError: true,
@@ -178,7 +178,7 @@ function v(e) {
   })
 }
 
-function S(e, t) {
+function I(e, t) {
   return r.Bo.post({
     url: p.Rsh.GAME_SERVER_WAKE(e, t),
     rejectWithError: true

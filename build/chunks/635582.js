@@ -15,27 +15,27 @@ var Chunk64700 = require("./64700.js"),
 
 function u(e, t) {
   let n = (0, i.bG)([a.A], () => a.A.getGuild(e)),
-    [u, f] = r.useState(),
-    [g, b] = r.useState(false),
-    m = (0, d.ME)(n);
+    [u, g] = r.useState(),
+    [m, p] = r.useState(false),
+    f = (0, d.ME)(n);
   return {
-    canSubmitAcceptance: (0, i.bG)([c.default], () => {
-      let e = c.default.getCurrentUser();
+    canSubmitAcceptance: (0, i.bG)([o.default], () => {
+      let e = o.default.getCurrentUser();
       return null != n && (0, s.bM)(n, e)
     }, [n]),
     error: u,
-    loading: g,
+    loading: m,
     submitAcceptTermsRequest: r.useCallback(async () => {
-      if (null != e && (m || null != t)) {
-        b(true), f(true);
+      if (null != e && (f || null != t)) {
+        p(true), g(true);
         try {
-          null != t ? await o.DP(e, t) : await o.Bo(e)
+          null != t ? await c.DP(e, t) : await c.Bo(e)
         } catch (e) {
-          f(new l.A(e))
+          g(new l.A(e))
         } finally {
-          b(false)
+          p(false)
         }
       }
-    }, [e, t, m])
+    }, [e, t, f])
   }
 }

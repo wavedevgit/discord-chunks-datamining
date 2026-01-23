@@ -15,45 +15,45 @@ var Chunk627968 = require("./627968.js"),
 function d(e) {
   let {
     onClick: t
-  } = e, [n, a] = l.useState(false), d = () => {
+  } = e, [n, s] = l.useState(false), d = () => {
     t(), o.default.track(c.HAw.INBOX_CHANNEL_ACKED, {
       marked_all_channels_as_read: true,
       num_unread_channels_remaining: 0
     })
   };
   return (0, r.jsxs)(r.Fragment, {
-    children: [n ? (0, r.jsx)(f, {
+    children: [n ? (0, r.jsx)(p, {
       confirm: d,
-      cancel: () => a(false)
+      cancel: () => s(false)
     }) : null, (0, r.jsx)(i.m_, {
       text: u.intl.string(u.t["8k+6QY"]),
-      children: (0, r.jsx)(s.K0, {
+      children: (0, r.jsx)(a.K0, {
         variant: "secondary",
         "aria-label": u.intl.string(u.t["8k+6QY"]),
         size: "sm",
-        icon: s.iA$,
+        icon: a.iA$,
         onClick: e => {
-          e.shiftKey ? d() : a(true)
+          e.shiftKey ? d() : s(true)
         }
       })
     })]
   })
 }
 
-function f(e) {
+function p(e) {
   let {
     cancel: t,
     confirm: n
   } = e;
-  return (0, r.jsx)(s.MJ3, {
+  return (0, r.jsx)(a.MJ3, {
     dismissable: true,
     header: u.intl.string(u.t.h4bVZ2),
     confirmText: u.intl.string(u.t.e6RscS),
     cancelText: u.intl.string(u.t["ETE/oC"]),
-    confirmButtonColor: a.$n.Colors.BRAND,
+    confirmButtonColor: s.$n.Colors.BRAND,
     onCancel: t,
     onConfirm: n,
-    children: (0, r.jsx)(s.Text, {
+    children: (0, r.jsx)(a.Text, {
       color: "text-default",
       variant: "text-sm/normal",
       children: u.intl.string(u.t["0MQ0Bf"])

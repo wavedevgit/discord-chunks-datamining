@@ -61,21 +61,21 @@ function g(e) {
     smallImage: _,
     aspectRatio: g,
     onClick: E,
-    size: b,
-    className: y
+    size: y,
+    className: b
   } = e, {
     imageSize: O,
-    smallImageSize: A,
-    mask: v
-  } = h[b];
+    smallImageSize: v,
+    mask: A
+  } = h[y];
   if (null == o) return (0, r.jsx)(c.V, {
     src: true,
     alt: d.intl.string(d.t["2B/phM"]),
     size: O,
-    className: a()(f.fO, p[null != g ? g : "default"], y),
+    className: a()(f.fO, p[null != g ? g : "default"], b),
     constrain: "width"
   });
-  let S = (0, r.jsx)(c.V, {
+  let I = (0, r.jsx)(c.V, {
     src: o.src,
     alt: null != (t = null != (n = o.alt) ? n : o.text) ? t : d.intl.string(d.t["2B/phM"]),
     size: O,
@@ -83,7 +83,7 @@ function g(e) {
     constrain: "width"
   });
   return (0, r.jsxs)("div", {
-    className: a()(f.B_, y),
+    className: a()(f.B_, b),
     children: [(0, r.jsx)(m, {
       onClick: E,
       children: (0, r.jsx)(u.O, {
@@ -93,16 +93,16 @@ function g(e) {
           asContainer: true,
           children: (0, r.jsx)(l.Ay, {
             className: f.ZS,
-            mask: v,
+            mask: A,
             width: O,
             height: O,
-            children: S
+            children: I
           })
         }) : (0, r.jsx)(s.m_, {
           text: o.text,
           children: (0, r.jsx)("div", {
             className: f.ZS,
-            children: S
+            children: I
           })
         })
       })
@@ -115,7 +115,7 @@ function g(e) {
           children: (0, r.jsx)(c.V, {
             src: _.src,
             alt: null != (i = _.alt) ? i : _.text,
-            size: A,
+            size: v,
             className: f.fO,
             constrain: "width"
           })

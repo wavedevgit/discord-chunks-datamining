@@ -20,29 +20,29 @@ let _ = (0, Chunk400492.aN)("poggermode_applause", Chunk312671.A.getSoundpack())
   m = 1,
   g = .1,
   E = 1e3,
-  b = false,
   y = false,
+  b = false,
   O = [],
-  A = null,
-  v = () => {
-    b || (_.loop(), b = true)
-  },
-  S = () => {
-    _.stop(), b = false
+  v = null,
+  A = () => {
+    y || (_.loop(), y = true)
   },
   I = () => {
+    _.stop(), y = false
+  },
+  S = () => {
     let e = d.A.isEnabled(),
       t = d.A.comboSoundsEnabled;
     return !!e && !!t && null != c.A.getChannelId()
   },
   T = () => {
-    if (0 === O.length || !I() || y) return;
-    y = true;
+    if (0 === O.length || !S() || b) return;
+    b = true;
     let [e, t] = O[O.length - 1];
-    (0, a.Ak)(e, t), A = setTimeout(C, E)
+    (0, a.Ak)(e, t), v = setTimeout(C, E)
   },
   C = () => {
-    O.pop(), y = false, T()
+    O.pop(), b = false, T()
   },
   N = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1,
@@ -54,7 +54,7 @@ class R extends Chunk272355.A {
     f.Ay.addChangeListener(this.startAudio), r.h.subscribe("RTC_CONNECTION_STATE", this.setVolume), r.h.subscribe("TYPING_STOP", this.stopAudio), r.h.subscribe("TYPING_STOP_LOCAL", this.stopAudio), r.h.subscribe("CHANNEL_SELECT", this.stopAudio), r.h.subscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio)
   }
   _terminate() {
-    f.Ay.removeChangeListener(this.startAudio), r.h.unsubscribe("RTC_CONNECTION_STATE", this.setVolume), r.h.unsubscribe("TYPING_STOP", this.stopAudio), r.h.unsubscribe("TYPING_STOP_LOCAL", this.stopAudio), r.h.unsubscribe("CHANNEL_SELECT", this.stopAudio), r.h.unsubscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio), clearTimeout(A)
+    f.Ay.removeChangeListener(this.startAudio), r.h.unsubscribe("RTC_CONNECTION_STATE", this.setVolume), r.h.unsubscribe("TYPING_STOP", this.stopAudio), r.h.unsubscribe("TYPING_STOP_LOCAL", this.stopAudio), r.h.unsubscribe("CHANNEL_SELECT", this.stopAudio), r.h.unsubscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio), clearTimeout(v)
   }
   setVolume(e) {
     let {
@@ -66,24 +66,24 @@ class R extends Chunk272355.A {
     let {
       userId: t
     } = e;
-    o.default.getId() === t && S()
+    o.default.getId() === t && I()
   }
   stopAudio() {
-    S()
+    I()
   }
   startAudio() {
     var e;
-    if (!I()) return;
+    if (!S()) return;
     let t = c.A.getChannelId();
     if (null == t) return;
     let n = o.default.getId(),
       r = u.A.isTyping(t, n),
       i = f.Ay.getUserCombo(n, t),
       a = null != (e = null == i ? true : i.multiplier) ? e : 1;
-    r && a >= h ? v() : S()
+    r && a >= h ? A() : I()
   }
   playAchievementUnlockSound() {
-    I() && N("poggermode_achievement_unlock")
+    S() && N("poggermode_achievement_unlock")
   }
 }
 let w = new R

@@ -34,11 +34,11 @@ function g() {
 }
 let E = g();
 
-function b(e, t) {
+function y(e, t) {
   e.index = t
 }
 
-function y(e) {
+function b(e) {
   let t = u.Ay.getChannels(e),
     n = g(),
     r = e => {
@@ -59,20 +59,11 @@ function y(e) {
       channel: t,
       index: false
     }), n[t.id] = []
-  }), t[u.I6].forEach(r), t[u.vM].forEach(r), (0, s.A)(n._categories, n).forEach(b), h[e] = n, n
+  }), t[u.I6].forEach(r), t[u.vM].forEach(r), (0, s.A)(n._categories, n).forEach(y), h[e] = n, n
 }
 
 function O() {
-  h = {}, null != _ && y(_)
-}
-
-function A(e) {
-  let {
-    guild: {
-      id: t
-    }
-  } = e;
-  h[t] = true, _ === t && y(t)
+  h = {}, null != _ && b(_)
 }
 
 function v(e) {
@@ -81,27 +72,36 @@ function v(e) {
       id: t
     }
   } = e;
+  h[t] = true, _ === t && b(t)
+}
+
+function A(e) {
+  let {
+    guild: {
+      id: t
+    }
+  } = e;
   delete h[t]
 }
 
-function S(e) {
+function I(e) {
   let {
     channel: {
       guild_id: t
     }
   } = e;
   if (null == t) returnfalse;
-  h[t] = true, _ === t && y(t)
+  h[t] = true, _ === t && b(t)
 }
 
-function I(e) {
+function S(e) {
   let {
     channels: t
   } = e, n = false;
   for (let {
       guild_id: e
     }
-    of t) null != e && (h[e] = true, n = true, _ === e && y(e));
+    of t) null != e && (h[e] = true, n = true, _ === e && b(e));
   return n
 }
 
@@ -111,25 +111,25 @@ function T(e) {
     user: n
   } = e;
   if (l.default.getId() !== n.id) returnfalse;
-  h[t] = true, t === _ && y(t)
+  h[t] = true, t === _ && b(t)
 }
 
 function C() {
   if (null == _) returnfalse;
-  y(_)
+  b(_)
 }
 
 function N(e) {
   let {
     guildId: t
   } = e;
-  h[t] = true, t === _ && y(t)
+  h[t] = true, t === _ && b(t)
 }
 
 function R(e, t) {
   if (m = t, null == e || null == e.getGuildId()) returnfalse;
   let n = e.getGuildId();
-  return null != n && (h[n] = true, n === _ && y(n), true)
+  return null != n && (h[n] = true, n === _ && b(n), true)
 }
 
 function w(e) {
@@ -157,16 +157,16 @@ function D(e) {
     guildId: t
   } = e;
   if (_ = null != t ? t : null, null == t || null != h[t]) returnfalse;
-  y(t)
+  b(t)
 }
 
 function x() {
-  y(f.YYv)
+  b(f.YYv)
 }
 
 function L(e) {
   let t = h[e];
-  return null != t ? t : y(e)
+  return null != t ? t : b(e)
 }
 class j extends(r = Chunk311907.Ay.Store) {
   initialize() {
@@ -182,12 +182,12 @@ let M = new j(Chunk73153.h, {
   CONNECTION_OPEN: O,
   OVERLAY_INITIALIZE: O,
   CACHE_LOADED_LAZY: O,
-  GUILD_CREATE: A,
-  GUILD_UPDATE: A,
-  GUILD_DELETE: v,
-  CHANNEL_CREATE: S,
-  CHANNEL_DELETE: S,
-  CHANNEL_UPDATES: I,
+  GUILD_CREATE: v,
+  GUILD_UPDATE: v,
+  GUILD_DELETE: A,
+  CHANNEL_CREATE: I,
+  CHANNEL_DELETE: I,
+  CHANNEL_UPDATES: S,
   GUILD_MEMBER_UPDATE: T,
   CURRENT_USER_UPDATE: C,
   GUILD_ROLE_CREATE: N,

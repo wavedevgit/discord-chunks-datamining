@@ -83,7 +83,7 @@ function F() {
     lastConnectedTime: l,
     selectedChannelIds: M,
     mostRecentSelectedTextChannelIds: U,
-    knownThreadIds: f()(M).values().concat(f().values(U)).filter(b.Vq).uniq().filter(e => {
+    knownThreadIds: f()(M).values().concat(f().values(U)).filter(y.Vq).uniq().filter(e => {
       let t = O.A.getBasicChannel(e);
       return G.has(e) || null != t && E.Le.has(t.type)
     }).value()
@@ -92,7 +92,7 @@ function F() {
 
 function B(e) {
   if (null != e) {
-    let t = A.Ay.getDefaultChannel(e);
+    let t = v.Ay.getDefaultChannel(e);
     if (null != t) return t.id
   }
 }
@@ -113,7 +113,7 @@ function Y(e) {
 
 function W() {
   let e = false,
-    t = v.A.getGuildsArray();
+    t = A.A.getGuildsArray();
   return f().each(M, (t, n) => {
     null != t && (O.A.hasChannel(t) || t === a || G.has(t) || (0, N.mP)(t)) || (delete M[n], delete k[n], e = true)
   }), f().each(U, (t, n) => {
@@ -127,7 +127,7 @@ function W() {
 function K(e) {
   if (r = e.sessionId, null != o) {
     let e = O.A.getChannel(o);
-    null != e && I.A.can(p.kg(C.xBc.VIEW_CHANNEL, C.xBc.CONNECT), e) || (o = null)
+    null != e && S.A.can(p.kg(C.xBc.VIEW_CHANNEL, C.xBc.CONNECT), e) || (o = null)
   }
   W() && F()
 }
@@ -167,7 +167,7 @@ function Q(e, t, n) {
     let n = T.A.getGuildId();
     M[V(n)] === e && (t = n)
   }
-  let i = null != v.A.getGuild(t) ? t : null,
+  let i = null != A.A.getGuild(t) ? t : null,
     a = false;
   o === e && (o = null, a = true), M[V(i)] === e && (M[V(i)] = r && null != n ? n : B(V(i)), T.A.getGuildId() === i && (0, g.bG)(C.BVt.CHANNEL(t, M[V(i)])), a = true), null != i && U[i] === e && (delete U[i], a = true), a && F()
 }
@@ -225,7 +225,7 @@ function en(e) {
         l = Date.now(), F()
       }, j)), F()
     } else {
-      if (t.userId !== y.default.getId()) return e;
+      if (t.userId !== b.default.getId()) return e;
       clearInterval(c), c = true, l = 0;
       let n = null == (i = O.A.getChannel(o)) ? true : i.getGuildId(),
         r = null == (a = O.A.getChannel(t.channelId)) ? true : a.getGuildId();
@@ -278,7 +278,7 @@ class es extends(u = Chunk311907.Ay.Store) {
         null: null
       }))
     }
-    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type && "VOICE_STATE_UPDATES" !== e.type), this.waitFor(y.default, O.A, A.Ay, v.A, S.A, I.A, T.A)
+    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type && "VOICE_STATE_UPDATES" !== e.type), this.waitFor(b.default, O.A, v.Ay, A.A, I.A, S.A, T.A)
   }
   getChannelId(e) {
     var t, n;
@@ -287,7 +287,7 @@ class es extends(u = Chunk311907.Ay.Store) {
     return r ? null != (n = M[i]) ? n : B(i) : M[i]
   }
   getVoiceChannelId() {
-    return S.A.isSupported() ? o : null
+    return I.A.isSupported() ? o : null
   }
   getMostRecentSelectedTextChannelId(e) {
     var t;

@@ -27,7 +27,7 @@ let m = e => {
     onConnect: g
   } = e, E = (0, c.Ay)();
 
-  function b(e) {
+  function y(e) {
     let t = u.A.get(e);
     (0, f.A)({
       platformType: t.type,
@@ -38,9 +38,9 @@ let m = e => {
       platform_type: t.type
     })
   }
-  let y = u.A.get((0, d.ML)(n));
+  let b = u.A.get((0, d.ML)(n));
   return (0, r.jsx)(s.m, {
-    text: y.name,
+    text: b.name,
     children: (0, r.jsx)("div", {
       className: a()(h.iE, i),
       children: (0, r.jsx)(l.vN3, {
@@ -49,10 +49,10 @@ let m = e => {
           type: "button",
           disabled: t,
           style: {
-            backgroundImage: "url('".concat((0, o.Mw)(E) ? y.icon.darkSVG : y.icon.lightSVG, "')")
+            backgroundImage: "url('".concat((0, o.Mw)(E) ? b.icon.darkSVG : b.icon.lightSVG, "')")
           },
-          onClick: null != g ? g : () => b(n),
-          "aria-label": y.name
+          onClick: null != g ? g : () => y(n),
+          "aria-label": b.name
         })
       })
     })

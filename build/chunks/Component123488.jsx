@@ -2,7 +2,7 @@
 /** chunk id: 123488, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,13 +13,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk403362 = require("./403362.js"),
   Chunk555337 = require("./555337.js"),
   Chunk92911 = require("./92911.jsx");
-let f = () => {
+let g = () => {
   let {
     guild: e
   } = (0, l.bG)([d.A], () => d.A.getProps()), [t, n] = i.useState(0);
   switch (i.useEffect(() => {
       null != e && a.h.wait(() => {
-        (0, c.Fy)(e.id).then(() => {
+        (0, o.Fy)(e.id).then(() => {
           n(1)
         })
       })
@@ -33,6 +33,6 @@ let f = () => {
         guild: e
       });
     default:
-      return (0, o.xb)(t)
+      return (0, c.xb)(t)
   }
 }

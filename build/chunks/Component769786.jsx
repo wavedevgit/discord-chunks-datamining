@@ -1,7 +1,7 @@
 /** Chunk was on 94503 **/
 /** chunk id: 769786, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => f
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -29,85 +29,85 @@ function N(e) {
     roleIds: a,
     guild: _,
     specMap: g
-  } = e, A = h.xBc[r], f = null != (t = null == (n = g[A.toString()]) ? true : n.title) ? t : (0, E.hx)(A), N = T.S2.has(A), m = (0, s.yK)([d.A], () => d.A.getManyRoles(_.id, a), [_.id, a]);
+  } = e, A = I.xBc[r], h = null != (t = null == (n = g[A.toString()]) ? true : n.title) ? t : (0, E.hx)(A), N = T.S2.has(A), f = (0, s.yK)([d.A], () => d.A.getManyRoles(_.id, a), [_.id, a]);
   return (0, l.jsx)(o.m, {
-    "aria-label": I.intl.string(I.t["0g8Xd/"]),
+    "aria-label": O.intl.string(O.t["0g8Xd/"]),
     __unsupportedReactNodeAsText: (0, l.jsxs)(l.Fragment, {
-      children: [(0, l.jsx)(c.Text, {
+      children: [(0, l.jsx)(u.Text, {
         variant: "text-sm/normal",
-        children: N ? I.intl.string(I.t["GEuu/O"]) : I.intl.string(I.t.wgGiCk)
-      }), m.map(e => (0, l.jsx)("div", {
-        className: O.Zf,
-        children: (0, l.jsx)(u.A, {
+        children: N ? O.intl.string(O.t["GEuu/O"]) : O.intl.string(O.t.wgGiCk)
+      }), f.map(e => (0, l.jsx)("div", {
+        className: m.Zf,
+        children: (0, l.jsx)(c.A, {
           role: e,
           guildId: _.id
         })
       }, e.id))]
     }),
-    children: (0, l.jsxs)(c.DUT, {
-      className: i()(O.t2, {
-        [O.aE]: N
+    children: (0, l.jsxs)(u.DUT, {
+      className: i()(m.t2, {
+        [m.aE]: N
       }),
-      children: [N && (0, l.jsx)(c.m5V, {
+      children: [N && (0, l.jsx)(u.m5V, {
         size: "custom",
         width: 16,
         height: 16,
-        color: c.LU0.colors.TEXT_BRAND
-      }), (0, l.jsx)(c.Text, {
+        color: u.LU0.colors.TEXT_BRAND
+      }), (0, l.jsx)(u.Text, {
         variant: "text-xs/medium",
         color: "interactive-text-default",
-        children: f
+        children: h
       })]
     })
   })
 }
-let m = Chunk64700.memo(function(e) {
+let f = Chunk64700.memo(function(e) {
   let {
     member: t,
     onNavigate: n
-  } = e, a = (0, s.bG)([_.A], () => _.A.getGuild(t.guildId), [t.guildId]), o = (0, T.RP)(t.userId, t.guildId, T.yO), u = (0, T.RP)(t.userId, t.guildId, T.lp), E = Object.keys(o).length, d = Object.keys(u).length, m = r.useMemo(() => null != a ? g.A.getGuildPermissionSpecMap(a) : null, [a]), S = r.useMemo(() => null != a ? g.A.generateGuildPermissionSpec(a) : null, [a]), p = r.useMemo(() => {
-    if (null == a || null == m) return null;
+  } = e, a = (0, s.bG)([_.A], () => _.A.getGuild(t.guildId), [t.guildId]), o = (0, T.RP)(t.userId, t.guildId, T.yO), c = (0, T.RP)(t.userId, t.guildId, T.lp), E = Object.keys(o).length, d = Object.keys(c).length, f = r.useMemo(() => null != a ? g.A.getGuildPermissionSpecMap(a) : null, [a]), p = r.useMemo(() => null != a ? g.A.generateGuildPermissionSpec(a) : null, [a]), S = r.useMemo(() => {
+    if (null == a || null == f) return null;
     if (0 === E) return (0, l.jsx)("div", {
-      className: i()(O.t2, O.FI),
-      children: (0, l.jsx)(c.Text, {
+      className: i()(m.t2, m.FI),
+      children: (0, l.jsx)(u.Text, {
         variant: "text-sm/normal",
         color: "text-feedback-positive",
-        children: I.intl.string(I.t.sXhykX)
+        children: O.intl.string(O.t.sXhykX)
       })
     });
     let e = [];
-    return null == S || S.forEach(t => {
+    return null == p || p.forEach(t => {
       t.permissions.forEach(t => {
         let n = t.flag,
-          r = T.lp.find(e => h.xBc[e] === n);
+          r = T.lp.find(e => I.xBc[e] === n);
         if (null == r) return;
         let i = o[r];
         null != i && e.push((0, l.jsx)(N, {
           permission: r,
           roleIds: i,
           guild: a,
-          specMap: m
+          specMap: f
         }, r))
       })
     }), e
-  }, [a, E, o, S, m]);
+  }, [a, E, o, p, f]);
   return null == a ? null : (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsxs)("div", {
-      className: O.N1,
-      children: [(0, l.jsx)(c.Text, {
+      className: m.N1,
+      children: [(0, l.jsx)(u.Text, {
         variant: "eyebrow",
         color: "text-default",
-        children: I.intl.string(I.t.ZCq2nC)
-      }), (0, l.jsxs)(c.DUT, {
-        className: O.bz,
-        onClick: () => n(f.g.PERMISSIONS),
-        children: [(0, l.jsx)(c.Text, {
+        children: O.intl.string(O.t.ZCq2nC)
+      }), (0, l.jsxs)(u.DUT, {
+        className: m.bz,
+        onClick: () => n(h.g.PERMISSIONS),
+        children: [(0, l.jsx)(u.Text, {
           variant: "eyebrow",
           color: "interactive-text-default",
-          children: I.intl.format(I.t["0x6aTm"], {
+          children: O.intl.format(O.t["0x6aTm"], {
             count: d
           })
-        }), (0, l.jsx)(c._BQ, {
+        }), (0, l.jsx)(u._BQ, {
           size: "custom",
           width: 16,
           height: 16
@@ -116,8 +116,8 @@ let m = Chunk64700.memo(function(e) {
     }), (0, l.jsx)(A.SQ, {
       children: (0, l.jsx)(A.RU, {
         description: (0, l.jsx)("div", {
-          className: O.SL,
-          children: p
+          className: m.SL,
+          children: S
         })
       })
     })]

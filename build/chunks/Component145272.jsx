@@ -24,20 +24,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk217590 = require("./217590.js");
 
-function A() {
+function v() {
   return (0, r.jsx)("div", {
     className: O.wG,
     children: (0, r.jsx)(_.y$y, {})
   })
 }
-let v = (0, Chunk156828.Fe)({
+let A = (0, Chunk156828.Fe)({
     createPromise: () => Promise.all([n.e("47950"), n.e("86537")]).then(n.bind(n, 33136)),
     webpackId: 33136,
     name: "CustomThemeColorPickerControlV2",
-    renderLoader: A
+    renderLoader: v
   }),
-  S = 5,
-  I = "#000000";
+  I = 5,
+  S = "#000000";
 
 function T(e, t) {
   return e.length < 1 ? 0 : t / (e.length - 1) * 80 + 10
@@ -89,7 +89,7 @@ function N(e) {
   let {
     color: t
   } = e, n = i.useMemo(() => ({
-    backgroundColor: (0, u.qt)(t) ? t : I
+    backgroundColor: (0, u.qt)(t) ? t : S
   }), [t]);
   return (0, r.jsx)("div", {
     className: O.ld,
@@ -111,14 +111,14 @@ function w(e) {
     className: a,
     colors: s,
     setColors: o
-  } = e, c = (0, h.A)(), [A, I] = i.useState(0), [T, w] = i.useState(t);
+  } = e, c = (0, h.A)(), [v, S] = i.useState(0), [T, w] = i.useState(t);
   i.useEffect(() => {
-    if (s.length > 0 && A < s.length) {
-      let e = s[A];
+    if (s.length > 0 && v < s.length) {
+      let e = s[v];
       (0, u.qt)(e) && (w(e), n(e))
     }
-    A >= s.length && I(0)
-  }, [A, s, n]);
+    v >= s.length && S(0)
+  }, [v, s, n]);
   let P = e => {
       let t = e.trim();
       return t.startsWith("#") ? t : t.length > 0 ? "#".concat(t) : t
@@ -127,7 +127,7 @@ function w(e) {
       let t = P(e);
       if (w(t), (0, u.qt)(t) && ((0, E.CE)(), n(t), s.length > 0)) {
         let e = [...s];
-        e[A] = t, o(e)
+        e[v] = t, o(e)
       }
     },
     x = i.useCallback(e => {
@@ -136,7 +136,7 @@ function w(e) {
     L = e => {
       if ((0, E.VE)(), n(e.hex), s.length > 0) {
         let t = [...s];
-        t[A] = e.hex, o(t)
+        t[v] = e.hex, o(t)
       }
     },
     j = async () => {
@@ -147,28 +147,28 @@ function w(e) {
         (0, E.AL)(), D(e)
       } catch (e) {}
     }, M = () => {
-      if (s.length === S) return;
+      if (s.length === I) return;
       0 === s.length && (0, g.eq)(), (0, E.HU)();
       let e = s.length > 0 ? s[s.length - 1] : T,
         t = s.length > 0 ? R(e) : e,
         n = [...s, t];
-      o(n), I(n.length - 1)
+      o(n), S(n.length - 1)
     }, k = e => {
       if (s.length > 1) {
         (0, E.f1)();
         let t = s.filter((t, n) => n !== e);
-        o(t), A >= t.length ? I(t.length - 1) : A > e && I(A - 1)
+        o(t), v >= t.length ? S(t.length - 1) : v > e && S(v - 1)
       }
     }, U = e => {
-      I(e), (0, E.mx)()
+      S(e), (0, E.mx)()
     }, G = s.length > 1;
   return (0, r.jsxs)("div", {
     className: l()(O.kL, a),
     children: [G && (0, r.jsx)(C, {
       colors: s,
-      selectedIndex: A,
+      selectedIndex: v,
       onColorSelect: U
-    }), (0, r.jsx)(v, {
+    }), (0, r.jsx)(A, {
       onChange: x,
       onChangeComplete: L,
       color: T
@@ -186,31 +186,31 @@ function w(e) {
       }), (0, r.jsxs)("div", {
         className: O.hE,
         children: [null != c && (0, r.jsx)(f.m, {
-          text: y.intl.string(b.default["NCFz+N"]),
+          text: b.intl.string(y.default["NCFz+N"]),
           children: (0, r.jsx)(p.K0, {
             variant: "icon-only",
             size: "sm",
             onClick: j,
             icon: d.d,
-            "aria-label": y.intl.string(b.default["NCFz+N"])
+            "aria-label": b.intl.string(y.default["NCFz+N"])
           })
         }), G && (0, r.jsx)(f.m, {
-          text: y.intl.string(y.t.N86XcP),
+          text: b.intl.string(b.t.N86XcP),
           children: (0, r.jsx)(p.K0, {
             variant: "icon-only",
             size: "sm",
-            onClick: () => k(A),
+            onClick: () => k(v),
             icon: _.QGg,
-            "aria-label": y.intl.string(y.t.N86XcP)
+            "aria-label": b.intl.string(b.t.N86XcP)
           })
         })]
       })]
-    }), s.length < S && (0, r.jsx)(p.$nd, {
+    }), s.length < I && (0, r.jsx)(p.$nd, {
       variant: "secondary",
       size: "md",
       onClick: M,
       icon: _.TIR,
-      text: y.intl.string(b.default.JUQcdT),
+      text: b.intl.string(y.default.JUQcdT),
       fullWidth: true
     })]
   })

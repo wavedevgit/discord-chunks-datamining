@@ -42,11 +42,11 @@ function h(e) {
     questId: m,
     listenForSourceError: g = false,
     retrySourceLoadOnError: E = false
-  } = e, [b, y] = i.useState(false), [O, A] = i.useState(new Set), [v, S] = i.useState(false), I = i.useRef(false);
+  } = e, [y, b] = i.useState(false), [O, v] = i.useState(new Set), [A, I] = i.useState(false), S = i.useRef(false);
   i.useEffect(() => {
     let e = new Set;
     for (let t of O) f(t) || e.add(t);
-    e.size !== O.size && A(e)
+    e.size !== O.size && v(e)
   }, [O]);
   let T = i.useCallback(e => {
       let {
@@ -66,16 +66,16 @@ function h(e) {
         tags: {
           source: h
         }
-      }), y(true)
+      }), b(true)
     }, [n, h, m]),
     C = i.useCallback(e => {
-      A(t => {
+      v(t => {
         let n = new Set(t);
         return n.delete(e), n
       })
     }, []),
     N = i.useCallback((e, t) => {
-      S(true);
+      I(true);
       let n = p(e),
         r = new AbortController,
         i = new a.A;
@@ -98,7 +98,7 @@ function h(e) {
           e.load()
         }) : l(t)
       }
-      if (f(e) || (A(t => {
+      if (f(e) || (v(t => {
           let n = new Set(t);
           return n.add(e), n
         }), e.addEventListener(n, o)), e.addEventListener("error", l, {
@@ -120,16 +120,16 @@ function h(e) {
       }
       return d
     }, [T, C, g, E]),
-    R = i.useMemo(() => O.size > 0 || !v, [v, O]);
+    R = i.useMemo(() => O.size > 0 || !A, [A, O]);
   i.useEffect(() => {
-    R || (I.current = true)
+    R || (S.current = true)
   }, [R]);
   let w = i.useMemo(() => ({
     registerAsset: N,
     unregisterAsset: C,
-    hasError: b,
-    isLoading: R && !I.current
-  }), [N, C, b, R]);
+    hasError: y,
+    isLoading: R && !S.current
+  }), [N, C, y, R]);
   return (0, r.jsx)(d.Provider, {
     value: w,
     children: t

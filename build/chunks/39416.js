@@ -257,12 +257,12 @@ function H(e, {
     let {
       readTags: t,
       readTagsPromise: r
-    } = b.A.read(e, U, n, i);
+    } = y.A.read(e, U, n, i);
     eo(t), r && N.push(r.then(e => e.forEach(eo)))
   }
   if (a.A.USE_PNG && en(G)) {
     T = true;
-    let n = y.A.read(e, G);
+    let n = b.A.read(e, G);
     t ? C.png = C.png ? (0, r.dP)({}, C.png, n) : n : C = (0, r.dP)({}, C, n)
   }
   if (a.A.USE_WEBP && er(V)) {
@@ -272,13 +272,13 @@ function H(e, {
   }
   if (a.A.USE_GIF && ei(F)) {
     T = true;
-    let n = A.A.read(e, F);
+    let n = v.A.read(e, F);
     t ? C.gif = C.gif ? (0, r.dP)({}, C.gif, n) : n : C = (0, r.dP)({}, C, n)
   }
-  let B = S.A.get(C, t);
+  let B = I.A.get(C, t);
   B && (t ? C.composite = B : C = (0, r.dP)({}, C, B));
-  let ea = (a.A.USE_JPEG || a.A.USE_WEBP) && a.A.USE_EXIF && a.A.USE_THUMBNAIL && v.A.get(e, C.Thumbnail, D);
-  if (ea ? (T = true, C.Thumbnail = ea) : delete C.Thumbnail, R && (t ? (C.file || (C.file = {}), C.file.FileType = R) : C.FileType = R, T = true), !T) throw new I.A.MetadataMissingError;
+  let ea = (a.A.USE_JPEG || a.A.USE_WEBP) && a.A.USE_EXIF && a.A.USE_THUMBNAIL && A.A.get(e, C.Thumbnail, D);
+  if (ea ? (T = true, C.Thumbnail = ea) : delete C.Thumbnail, R && (t ? (C.file || (C.file = {}), C.file.FileType = R) : C.FileType = R, T = true), !T) throw new S.A.MetadataMissingError;
   if (n) return Promise.all(N).then(() => C);
   return C;
 

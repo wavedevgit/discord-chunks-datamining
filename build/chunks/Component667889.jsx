@@ -24,7 +24,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk775269 = require("./775269.js");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,32 +33,32 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = I(e, t), Object.getOwnPropertySymbols)
+  if (a = S(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -73,7 +73,7 @@ function C(e) {
   let {
     positionTargetRef: t,
     align: n
-  } = e, i = S(e, ["positionTargetRef", "align"]);
+  } = e, i = I(e, ["positionTargetRef", "align"]);
   return (0, r.jsx)("span", {
     style: g.sK,
     children: (0, r.jsx)(c.nE, {
@@ -93,8 +93,8 @@ function C(e) {
           className: O.V,
           role: "dialog",
           style: T,
-          "aria-label": y.intl.string(y.t["3CNGLK"]),
-          children: t && (0, r.jsx)(R, v({}, i))
+          "aria-label": b.intl.string(b.t["3CNGLK"]),
+          children: t && (0, r.jsx)(R, A({}, i))
         })
       }
     })
@@ -111,11 +111,11 @@ function R(e) {
     closeOnModalOuterClick: n = false,
     parentModalKey: c
   } = e, p = i.useRef(null), {
-    renderWindow: y,
+    renderWindow: b,
     windowDispatch: O
-  } = i.useContext(u.Ay), A = null != c, v = (0, s.useIsModalAtTop)(null != c ? c : ""), S = i.useCallback(e => {
+  } = i.useContext(u.Ay), v = null != c, A = (0, s.useIsModalAtTop)(null != c ? c : ""), I = i.useCallback(e => {
     var t;
-    if (!A && (0, s.hasAnyModalOpen)() || A && !(v && n) || d.A.isOpen() || e.defaultPrevented) return;
+    if (!v && (0, s.hasAnyModalOpen)() || v && !(A && n) || d.A.isOpen() || e.defaultPrevented) return;
     let {
       target: r
     } = e;
@@ -125,20 +125,20 @@ function R(e) {
       if (r === p.current) return;
       if (r.classList.contains(g.KG) || r.classList.contains(g.Gu)) return void e.preventDefault();
       if (r.classList.contains(g.qp)) return;
-      let t = [b.Do, l.n];
+      let t = [y.Do, l.n];
       if (r.classList.contains(g.TY) || t.includes(r.id)) return;
       r = r.parentNode
     }
     N();
     let i = null == (t = (0, a.BF)(e)) ? true : t.activeElement;
     (null == i || "BODY" === i.tagName) && f._.dispatchToLastSubscribed(E.jej.TEXTAREA_FOCUS)
-  }, [n, v, A]);
-  i.useLayoutEffect(() => (y.addEventListener("mousedown", S), y.addEventListener("contextmenu", S), O.subscribe(E.jej.POPOUT_CLOSE, N), () => {
-    y.removeEventListener("mousedown", S), y.removeEventListener("contextmenu", S), O.unsubscribe(E.jej.POPOUT_CLOSE, N)
-  }), [S, y, O]), (0, o.tjt)(p), i.useEffect(() => {
-    (!A && (0, s.hasAnyModalOpen)() || A && !v) && N()
-  }, [v, A]);
-  let I = (0, m.A)();
+  }, [n, A, v]);
+  i.useLayoutEffect(() => (b.addEventListener("mousedown", I), b.addEventListener("contextmenu", I), O.subscribe(E.jej.POPOUT_CLOSE, N), () => {
+    b.removeEventListener("mousedown", I), b.removeEventListener("contextmenu", I), O.unsubscribe(E.jej.POPOUT_CLOSE, N)
+  }), [I, b, O]), (0, o.tjt)(p), i.useEffect(() => {
+    (!v && (0, s.hasAnyModalOpen)() || v && !A) && N()
+  }, [A, v]);
+  let S = (0, m.A)();
   return (0, r.jsx)(h.A, {
     ref: p,
     context: {
@@ -146,7 +146,7 @@ function R(e) {
       type: "channel"
     },
     entrypoint: _.s4.TEXT,
-    initHistory: I
+    initHistory: S
   })
 }
 let w = Chunk64700.memo(C)

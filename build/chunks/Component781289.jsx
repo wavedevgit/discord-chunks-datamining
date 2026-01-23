@@ -2,7 +2,7 @@
 /** chunk id: 781289, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,33 +15,33 @@ var Chunk417597 = require("./417597.js"),
   Chunk311750 = require("./311750.js"),
   Chunk985018 = require("./985018.jsx");
 
-function f(e) {
+function g(e) {
   let {
     guildId: t,
-    allPeriods: f
-  } = e, g = (0, i.bG)([c.A], () => c.A.getGuild(t)), b = (0, o.uP)(t, {
+    allPeriods: g
+  } = e, m = (0, i.bG)([o.A], () => o.A.getGuild(t)), p = (0, c.uP)(t, {
     includeSoftDeleted: true
-  }), m = (0, a.fZ)(t, {
+  }), f = (0, a.fZ)(t, {
     publishedOnly: false
   }), {
-    allowSelfRemoveMonetization: p
-  } = (0, s.nq)(t), x = f.filter(e => {
+    allowSelfRemoveMonetization: b
+  } = (0, s.nq)(t), h = g.filter(e => {
     var t;
     let n = Object.values(null != (t = e.ppgs) ? t : {})[0];
     return (null == n ? true : n.status) === d.U1.OPEN || (null == n ? true : n.status) === d.U1.PAYOUT_DEFERRED
-  }), h = b.length > 0, j = m.length > 0, O = x.length > 0;
-  return null == g ? null : (0, r.jsxs)("div", {
+  }), x = p.length > 0, j = f.length > 0, _ = h.length > 0;
+  return null == m ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: u.intl.format(u.t.fvOn6J, {
-        guildName: g.name
+        guildName: m.name
       })
     }), (0, r.jsx)(l.hKd, {
       size: 16
     }), (0, r.jsx)(l.Button, {
       variant: "critical-primary",
       text: u.intl.string(u.t.FrOFSo),
-      disabled: !p || h || j || O,
+      disabled: !b || x || j || _,
       onClick: () => {
         (0, l.mMO)(async () => {
           let {
@@ -67,7 +67,7 @@ function f(e) {
               }
               return e
             }({}, t), i = i = {
-              guild: g
+              guild: m
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

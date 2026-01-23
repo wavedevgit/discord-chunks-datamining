@@ -2,7 +2,7 @@
 /** chunk id: 287809, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  ASSISTANT_WUMPUS_VOICE_USER: () => v,
+  ASSISTANT_WUMPUS_VOICE_USER: () => A,
   default: () => ek,
   mergeUser: () => R,
   transformUser: () => C,
@@ -26,7 +26,7 @@ var Chunk735438 = require("./735438.js"),
   Chunk652215 = require("./652215.js"),
   Chunk788868 = require("./788868.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,21 +35,21 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 let O = {},
-  A = 0,
-  v = "47835198259242069";
+  v = 0,
+  A = "47835198259242069";
 
-function S(e, t, n) {
+function I(e, t, n) {
   let r = O[e];
   if (null == r) returnfalse;
   let i = r;
   i = null == n ? r.removeGuildAvatarHash(t) : r.addGuildAvatarHash(t, n), O[r.id] = i;
   let a = r !== i;
-  return a && A++, a
+  return a && v++, a
 }
 
-function I(e, t) {
+function S(e, t) {
   let n = O[e];
-  return !(null == n || (0, u.D)(n.primaryGuild, t.primary_guild)) && (null == n.primaryGuild || null != t.primary_guild) && (n.primaryGuild = (0, u.j)(t.primary_guild), O[n.id] = n, A++, true)
+  return !(null == n || (0, u.D)(n.primaryGuild, t.primary_guild)) && (null == n.primaryGuild || null != t.primary_guild) && (n.primaryGuild = (0, u.j)(t.primary_guild), O[n.id] = n, v++, true)
 }
 
 function T(e, t) {
@@ -91,8 +91,8 @@ function C(e) {
   true !== g && (e.primary_guild = (0, u.j)(g));
   let E = e.display_name_styles;
   true !== E && (e.displayNameStyles = (0, c.mT)(E), delete e.display_name_styles);
-  let b = e.premium_state;
-  return true !== b && (e.premiumState = (0, f.f)(b), delete e.premium_state), e
+  let y = e.premium_state;
+  return true !== y && (e.premiumState = (0, f.f)(y), delete e.premium_state), e
 }
 
 function N(e) {
@@ -110,7 +110,7 @@ function R(e) {
     true !== (t = null != (a = n.premium_type) ? a : n.premiumType) && i && (0, p._D)(n) && (n = w(n)), n = T(r, n), r = r.merge(n)
   }(0, p.gX)((0, p.I9)(r), t, r.premiumType);
   let s = O[e.id] !== r;
-  return O[e.id] = r, s && A++, s
+  return O[e.id] = r, s && v++, s
 }
 
 function w(e) {
@@ -124,7 +124,7 @@ function P(e, t) {
   if (!e) return t;
   let n = d.A.getPremiumTypeOverride(),
     r = d.A.getPremiumTypeActual();
-  return n === b.$I ? r : n
+  return n === y.$I ? r : n
 }
 
 function D(e, t) {
@@ -162,10 +162,10 @@ function L(e) {
     R(e)
   }), r.forEach(e => {
     e.members.forEach(t => {
-      S(t.user.id, e.id, t.avatar), I(t.user.id, t.user)
+      I(t.user.id, e.id, t.avatar), S(t.user.id, t.user)
     })
-  }), null != O[m.default.getId()] && (O[v] = new _.A({
-    id: v,
+  }), null != O[m.default.getId()] && (O[A] = new _.A({
+    id: A,
     username: "Wumpus",
     discriminator: "0",
     globalName: "Wumpus",
@@ -180,7 +180,7 @@ function j(e) {
   } = e;
   t.forEach(e => {
     e.members.forEach(t => {
-      S(t.user.id, e.id, t.avatar), I(t.user.id, t.user)
+      I(t.user.id, e.id, t.avatar), S(t.user.id, t.user)
     })
   }), null == n || n.forEach(e => {
     var t;
@@ -327,7 +327,7 @@ function X(e) {
     if (null == t) return;
     R(t);
     let i = null == r ? true : r.avatar;
-    null != i && S(t.id, n, i)
+    null != i && I(t.id, n, i)
   })
 }
 
@@ -421,7 +421,7 @@ function es(e) {
 
 function eo(e) {
   let t = R(e.user);
-  return S(e.user.id, e.guildId, e.avatar) || t
+  return I(e.user.id, e.guildId, e.avatar) || t
 }
 
 function el(e) {
@@ -433,7 +433,7 @@ function el(e) {
       var n;
       let t = null == (n = e.item.member) ? true : n.user;
       if (null == t) continue;
-      I(t.id, t)
+      S(t.id, t)
     } returnfalse
 }
 
@@ -443,14 +443,14 @@ function ec(e) {
   } = e, n = false;
   for (let e of t) n = e.members.reduce((t, n) => {
     let r = R(n.user);
-    return S(n.user.id, e.guildId, n.avatar) || r || t
+    return I(n.user.id, e.guildId, n.avatar) || r || t
   }, false) || n;
   return n
 }
 
 function eu(e) {
   let t = false;
-  for (let n of e.members) R(n.user) && (t = true), S(n.user.id, e.guildId, n.avatar) && (t = true);
+  for (let n of e.members) R(n.user) && (t = true), I(n.user.id, e.guildId, n.avatar) && (t = true);
   return t
 }
 
@@ -500,7 +500,7 @@ function e_(e) {
       avatar: i,
       discriminator: a,
       bot: s
-    }), S(n, t.id, o)
+    }), I(n, t.id, o)
   })
 }
 
@@ -523,14 +523,14 @@ function eE(e) {
   return R(e.suggestion.suggested_user)
 }
 
-function eb(e) {
+function ey(e) {
   let {
     suggestions: t
   } = e;
   return t.reduce((e, t) => R(t.suggested_user) || e, false)
 }
 
-function ey(e) {
+function eb(e) {
   let {
     users: t
   } = e;
@@ -546,7 +546,7 @@ function eO(e) {
   return null != t.user && R(t.user)
 }
 
-function eA(e) {
+function ev(e) {
   let {
     appliedBoosts: t
   } = e;
@@ -558,7 +558,7 @@ function eA(e) {
   })
 }
 
-function ev(e) {
+function eA(e) {
   let {
     request: t
   } = e, {
@@ -568,7 +568,7 @@ function ev(e) {
   return null != n && (i = i || R(n)), null != r && (i = i || R(r)), i
 }
 
-function eS(e) {
+function eI(e) {
   let {
     users: t,
     familyCenterTeenActivity: n
@@ -578,7 +578,7 @@ function eS(e) {
   return [...t, ...r].reduce((e, t) => R(t) || e, false)
 }
 
-function eI(e) {
+function eS(e) {
   let {
     users: t
   } = e;
@@ -686,7 +686,7 @@ class eM extends Chunk536802.A {
       }
   }
   getUserStoreVersion() {
-    return A
+    return v
   }
   getUser(e) {
     if (null != e) return O[e]
@@ -744,8 +744,8 @@ class eM extends Chunk536802.A {
       CHANNEL_RECIPIENT_ADD: es,
       CHANNEL_RECIPIENT_REMOVE: es,
       GUILD_STICKERS_FETCH_SUCCESS: ej,
-      GUILD_JOIN_REQUEST_CREATE: ev,
-      GUILD_JOIN_REQUEST_UPDATE: ev,
+      GUILD_JOIN_REQUEST_CREATE: eA,
+      GUILD_JOIN_REQUEST_UPDATE: eA,
       GUILD_MEMBER_ADD: eo,
       GUILD_MEMBER_UPDATE: eo,
       GUILD_MEMBERS_CHUNK_BATCH: ec,
@@ -758,11 +758,11 @@ class eM extends Chunk536802.A {
       GAME_RELATIONSHIP_ADD: em,
       LOAD_RELATIONSHIPS_SUCCESS: eg,
       FRIEND_SUGGESTION_CREATE: eE,
-      LOAD_FRIEND_SUGGESTIONS_SUCCESS: eb,
-      AUDIT_LOG_FETCH_SUCCESS: ey,
-      AUDIT_LOG_FETCH_NEXT_PAGE_SUCCESS: ey,
+      LOAD_FRIEND_SUGGESTIONS_SUCCESS: ey,
+      AUDIT_LOG_FETCH_SUCCESS: eb,
+      AUDIT_LOG_FETCH_NEXT_PAGE_SUCCESS: eb,
       GIFT_CODE_RESOLVE_SUCCESS: eO,
-      GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: eA,
+      GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: ev,
       LOAD_THREADS_SUCCESS: K,
       LOAD_ARCHIVED_THREADS_SUCCESS: K,
       LOAD_FORUM_POSTS: z,
@@ -772,8 +772,8 @@ class eM extends Chunk536802.A {
       LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_SUCCESS: q,
       PASSIVE_UPDATE_V2: eu,
       LOCAL_MESSAGES_LOADED: ed,
-      FAMILY_CENTER_INITIAL_LOAD: eS,
-      FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: eI,
+      FAMILY_CENTER_INITIAL_LOAD: eI,
+      FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: eS,
       FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: eC,
       FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: eN,
       FAMILY_CENTER_REQUEST_LINK_SUCCESS: eT,
@@ -786,5 +786,5 @@ class eM extends Chunk536802.A {
     })
   }
 }
-y(eM, "displayName", "UserStore"), y(eM, "LATEST_SNAPSHOT_VERSION", 1);
+b(eM, "displayName", "UserStore"), b(eM, "LATEST_SNAPSHOT_VERSION", 1);
 let ek = new eM

@@ -14,10 +14,10 @@ function o(e) {
   let {
     fullWidth: t
   } = e;
-  return (0, r.jsx)(a.c, {
+  return (0, r.jsx)(s.c, {
     children: (0, r.jsx)("div", {
-      className: i()(s.t, {
-        [s.I]: t
+      className: i()(a.t, {
+        [a.I]: t
       })
     })
   })

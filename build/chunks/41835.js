@@ -7,7 +7,7 @@ var Chunk72290 = require("./72290.js"),
   },
   a = /%[sdj%]/g;
 exports.format = function(e) {
-  if (!v(e)) {
+  if (!A(e)) {
     for (var t = [], n = 0; n < arguments.length; n++) t.push(c(arguments[n]));
     return t.join(" ")
   }
@@ -56,7 +56,7 @@ function c(e, n) {
     seen: [],
     stylize: d
   };
-  return arguments.length >= 3 && (r.depth = arguments[2]), arguments.length >= 4 && (r.colors = arguments[3]), y(n) ? r.showHidden = n : n && t._extend(r, n), S(r.showHidden) && (r.showHidden = false), S(r.depth) && (r.depth = 2), S(r.colors) && (r.colors = false), S(r.customInspect) && (r.customInspect = true), r.colors && (r.stylize = u), p(r, e, r.depth)
+  return arguments.length >= 3 && (r.depth = arguments[2]), arguments.length >= 4 && (r.colors = arguments[3]), b(n) ? r.showHidden = n : n && t._extend(r, n), I(r.showHidden) && (r.showHidden = false), I(r.depth) && (r.depth = 2), I(r.colors) && (r.colors = false), I(r.customInspect) && (r.customInspect = true), r.colors && (r.stylize = u), p(r, e, r.depth)
 }
 
 function u(e, t) {
@@ -78,7 +78,7 @@ function f(e) {
 function p(e, n, r) {
   if (e.customInspect && n && R(n.inspect) && n.inspect !== t.inspect && !(n.constructor && n.constructor.prototype === n)) {
     var i, a = n.inspect(r, e);
-    return v(a) || (a = p(e, a, r)), a
+    return A(a) || (a = p(e, a, r)), a
   }
   var s = _(e, n);
   if (s) return s;
@@ -90,29 +90,29 @@ function p(e, n, r) {
       var c = n.name ? ": " + n.name : "";
       return e.stylize("[Function" + c + "]", "special")
     }
-    if (I(n)) return e.stylize(RegExp.prototype.toString.call(n), "regexp");
+    if (S(n)) return e.stylize(RegExp.prototype.toString.call(n), "regexp");
     if (C(n)) return e.stylize(Date.prototype.toString.call(n), "date");
     if (N(n)) return h(n)
   }
   var u = "",
     d = false,
-    y = ["{", "}"];
-  if (b(n) && (d = true, y = ["[", "]"]), R(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), I(n) && (u = " " + RegExp.prototype.toString.call(n)), C(n) && (u = " " + Date.prototype.toUTCString.call(n)), N(n) && (u = " " + h(n)), 0 === o.length && (!d || 0 == n.length)) return y[0] + u + y[1];
+    b = ["{", "}"];
+  if (y(n) && (d = true, b = ["[", "]"]), R(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), S(n) && (u = " " + RegExp.prototype.toString.call(n)), C(n) && (u = " " + Date.prototype.toUTCString.call(n)), N(n) && (u = " " + h(n)), 0 === o.length && (!d || 0 == n.length)) return b[0] + u + b[1];
   if (r < 0)
-    if (I(n)) return e.stylize(RegExp.prototype.toString.call(n), "regexp");
+    if (S(n)) return e.stylize(RegExp.prototype.toString.call(n), "regexp");
     else return e.stylize("[Object]", "special");
   return e.seen.push(n), i = d ? m(e, n, r, l, o) : o.map(function(t) {
     return g(e, n, r, l, t, d)
-  }), e.seen.pop(), E(i, u, y)
+  }), e.seen.pop(), E(i, u, b)
 }
 
 function _(e, t) {
-  if (S(t)) return e.stylize("undefined", "undefined");
-  if (v(t)) {
+  if (I(t)) return e.stylize("undefined", "undefined");
+  if (A(t)) {
     var n = "'" + JSON.stringify(t).replace(/^"|"$/g, "").replace(/'/g, "\\'").replace(/\\"/g, '"') + "'";
     return e.stylize(n, "string")
   }
-  return A(t) ? e.stylize("" + t, "number") : y(t) ? e.stylize("" + t, "boolean") : O(t) ? e.stylize("null", "null") : true
+  return v(t) ? e.stylize("" + t, "number") : b(t) ? e.stylize("" + t, "boolean") : O(t) ? e.stylize("null", "null") : true
 }
 
 function h(e) {
@@ -134,7 +134,7 @@ function g(e, t, n, r, i, a) {
       return "  " + e
     }).join("\n").slice(2) : "\n" + o.split("\n").map(function(e) {
       return "   " + e
-    }).join("\n")) : o = e.stylize("[Circular]", "special")), S(s)) {
+    }).join("\n")) : o = e.stylize("[Circular]", "special")), I(s)) {
     if (a && i.match(/^\d+$/)) return o;
     (s = JSON.stringify("" + i)).match(/^"([a-zA-Z_][a-zA-Z_0-9]*)"$/) ? (s = s.slice(1, false), s = e.stylize(s, "name")) : (s = s.replace(/'/g, "\\'").replace(/\\"/g, '"').replace(/(^"|"$)/g, "'"), s = e.stylize(s, "string"))
   }
@@ -148,11 +148,11 @@ function E(e, t, n) {
   }, 0) > 60 ? n[0] + ("" === t ? "" : t + "\n ") + " " + e.join(",\n  ") + " " + n[1] : n[0] + t + " " + e.join(", ") + " " + n[1]
 }
 
-function b(e) {
+function y(e) {
   return Array.isArray(e)
 }
 
-function y(e) {
+function b(e) {
   return "boolean" == typeof e
 }
 
@@ -160,19 +160,19 @@ function O(e) {
   return null === e
 }
 
-function A(e) {
+function v(e) {
   return "number" == typeof e
 }
 
-function v(e) {
+function A(e) {
   return "string" == typeof e
 }
 
-function S(e) {
+function I(e) {
   return true === e
 }
 
-function I(e) {
+function S(e) {
   return T(e) && "[object RegExp]" === w(e)
 }
 
@@ -232,11 +232,11 @@ exports.debuglog = function(e) {
   string: "green",
   date: "magenta",
   regexp: "red"
-}, exports.types = require("./709930.js"), exports.isArray = b, exports.isBoolean = y, exports.isNull = O, exports.isNullOrUndefined = function(e) {
+}, exports.types = require("./709930.js"), exports.isArray = y, exports.isBoolean = b, exports.isNull = O, exports.isNullOrUndefined = function(e) {
   return null == e
-}, exports.isNumber = A, exports.isString = v, exports.isSymbol = function(e) {
+}, exports.isNumber = v, exports.isString = A, exports.isSymbol = function(e) {
   return "symbol" == typeof e
-}, exports.isUndefined = S, exports.isRegExp = I, exports.types.isRegExp = I, exports.isObject = T, exports.isDate = C, exports.types.isDate = C, exports.isError = N, exports.types.isNativeError = N, exports.isFunction = R, exports.isPrimitive = function(e) {
+}, exports.isUndefined = I, exports.isRegExp = S, exports.types.isRegExp = S, exports.isObject = T, exports.isDate = C, exports.types.isDate = C, exports.isError = N, exports.types.isNativeError = N, exports.isFunction = R, exports.isPrimitive = function(e) {
   return null === e || "boolean" == typeof e || "number" == typeof e || "string" == typeof e || "symbol" == typeof e || true === e
 }, exports.isBuffer = require("./308505.js");
 var D = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];

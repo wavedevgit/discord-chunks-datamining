@@ -55,13 +55,13 @@ let h = null,
   m = null,
   g = {},
   E = false,
-  b = L(),
-  y = j(),
+  y = L(),
+  b = j(),
   O = null,
-  A = x(),
-  v = false,
-  S = false,
-  I = null,
+  v = x(),
+  A = false,
+  I = false,
+  S = null,
   T = null,
   C = [],
   N = [],
@@ -100,16 +100,16 @@ function M() {
 }
 
 function k(e) {
-  true !== e && (y = e)
+  true !== e && (b = e)
 }
 
 function U(e, t) {
-  let n = t ? b : L();
+  let n = t ? y : L();
   return e.forEach(e => {
     let t = e.display_type,
       r = n.get(t);
     true === r || r.has(e.event_id) || r.set(e.event_id, e)
-  }), b = n
+  }), y = n
 }
 
 function G(e) {
@@ -141,7 +141,7 @@ function V(e) {
 }
 
 function F() {
-  S = true
+  I = true
 }
 
 function B(e) {
@@ -160,7 +160,7 @@ function B(e) {
     totalSpendCurrency: f,
     invoices: p
   } = n;
-  h = s, m = l, U(r), k(a), G(i), M(t), null != p && V(p), C = c, N = u, R = d, w = f, S = false, I = o.default.fromTimestamp(Date.now()), v = true
+  h = s, m = l, U(r), k(a), G(i), M(t), null != p && V(p), C = c, N = u, R = d, w = f, I = false, S = o.default.fromTimestamp(Date.now()), A = true
 }
 
 function H(e) {
@@ -194,7 +194,7 @@ function W(e) {
     totalSpendCurrency: d,
     invoices: f
   } = t;
-  h = a, m = s, U(n), k(r), G(i), null != f && V(f), C = l, N = c, S = false, I = o.default.fromTimestamp(Date.now()), R = u, w = d
+  h = a, m = s, U(n), k(r), G(i), null != f && V(f), C = l, N = c, I = false, S = o.default.fromTimestamp(Date.now()), R = u, w = d
 }
 
 function K(e) {
@@ -232,7 +232,7 @@ function Z(e) {
   let {
     tab: t
   } = e;
-  A = t
+  v = t
 }
 
 function Q(e) {
@@ -267,20 +267,20 @@ function J(e) {
 
 function ee() {
   let e = [];
-  return b.forEach(t => {
+  return y.forEach(t => {
     e.push(...Array.from(t.values()))
   }), e
 }
 
 function et() {
-  return Object.entries(y).map(e => {
+  return Object.entries(b).map(e => {
     let [t, n] = e;
     return "".concat(t, ":").concat(n)
   })
 }
 
 function en(e) {
-  y = e.reduce((e, t) => {
+  b = e.reduce((e, t) => {
     let [n, r] = t.split(":"), i = (0, c.k5)(n);
     return true === i ? e : _(f({}, e), {
       [i]: parseInt(r, 10)
@@ -289,7 +289,7 @@ function en(e) {
 }
 
 function er() {
-  h = null, m = null, g = {}, b = L(), y = j(), D = {}, S = false, I = null, A = x(), E = false, C = [], N = [], R = null, w = null, P = {}
+  h = null, m = null, g = {}, y = L(), b = j(), D = {}, I = false, S = null, v = x(), E = false, C = [], N = [], R = null, w = null, P = {}
 }
 class ei extends Chunk536802.A {
   initialize() {
@@ -325,11 +325,11 @@ class ei extends Chunk536802.A {
     return null == m ? null : o.default.extractTimestamp(m)
   }
   getActionsForDisplayType(e) {
-    let t = b.get(e);
+    let t = y.get(e);
     return null != t ? Array.from(t.values()) : []
   }
   getTotalForDisplayType(e) {
-    return y[e]
+    return b[e]
   }
   getLinkCode() {
     return O
@@ -338,13 +338,13 @@ class ei extends Chunk536802.A {
     return D[e]
   }
   getSelectedTab() {
-    return A
+    return v
   }
   getStartId() {
     return m
   }
   getIsInitialized() {
-    return v
+    return A
   }
   getAreLinkedUsersProcessed() {
     return E
@@ -353,7 +353,7 @@ class ei extends Chunk536802.A {
     return T
   }
   isLoading() {
-    return S
+    return I
   }
   getTopUserActivities() {
     return C
@@ -371,7 +371,7 @@ class ei extends Chunk536802.A {
     return P[e]
   }
   canRefetch() {
-    return null === I || o.default.age(I) > u.fD
+    return null === S || o.default.age(S) > u.fD
   }
   constructor() {
     super({

@@ -14,31 +14,31 @@ function c(e) {
   let {
     callTileRef: t,
     isFiring: n
-  } = e, l = (0, s.A)(), i = (0, a.A)(t);
-  return r.useEffect(() => {
-    n && null != i && null != t && l.fire(i.x + t.clientWidth / 2, i.y + t.clientHeight / 2, {
+  } = e, r = (0, o.A)(), i = (0, a.A)(t);
+  return l.useEffect(() => {
+    n && null != i && null != t && r.fire(i.x + t.clientWidth / 2, i.y + t.clientHeight / 2, {
       countMultiplier: 4
     })
-  }, [t, l, n, i]), null
+  }, [t, r, n, i]), null
 }
 
 function u(e) {
-  return (0, l.jsx)(i.A, {
-    confettiLocation: o.k.CALL_TILE,
-    children: (0, l.jsx)(c, function(e) {
+  return (0, r.jsx)(i.A, {
+    confettiLocation: s.k.CALL_TILE,
+    children: (0, r.jsx)(c, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          l = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), l.forEach(function(t) {
-          var l;
-          l = n[t], t in e ? Object.defineProperty(e, t, {
-            value: l,
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = l
+          }) : e[t] = r
         })
       }
       return e

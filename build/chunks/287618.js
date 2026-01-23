@@ -15,20 +15,20 @@ function c(e) {
     channelId: c,
     localCreationAnswerId: s,
     image: u
-  } = e, f = null == u ? true : u.emoji, d = (null == u || null == (t = u.mediaAttachmentState) ? true : t.status) === o.k.PREPARING, b = (0, l.bG)([i.A], () => i.A.getUpload(c, s, a.C.Poll)), [m, p] = r.useState(), [g, O] = r.useState("");
+  } = e, f = null == u ? true : u.emoji, d = (null == u || null == (t = u.mediaAttachmentState) ? true : t.status) === o.k.PREPARING, m = (0, l.bG)([i.A], () => i.A.getUpload(c, s, a.C.Poll)), [b, p] = r.useState(), [g, O] = r.useState("");
   return r.useEffect(() => {
     var e;
-    if ((null == b || null == (e = b.item) ? true : e.file) == null) return;
-    let t = URL.createObjectURL(b.item.file);
-    return p(t), O(b.item.file.name), () => {
+    if ((null == m || null == (e = m.item) ? true : e.file) == null) return;
+    let t = URL.createObjectURL(m.item.file);
+    return p(t), O(m.item.file.name), () => {
       URL.revokeObjectURL(t)
     }
-  }, [null == b || null == (n = b.item) ? true : n.file]), {
+  }, [null == m || null == (n = m.item) ? true : n.file]), {
     emoji: f,
     isLoadingMedia: d,
-    hasUpload: null != b,
-    upload: b,
-    mediaUrl: m,
+    hasUpload: null != m,
+    upload: m,
+    mediaUrl: b,
     mediaFilename: g
   }
 }

@@ -2,8 +2,8 @@
 /** chunk id: 396478, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  G8: () => b,
-  SG: () => y,
+  G8: () => y,
+  SG: () => b,
   pp: () => O
 });
 var Chunk627968 = require("./627968.js"),
@@ -59,7 +59,7 @@ let {
   Provider: g,
   Consumer: E
 } = Chunk64700.createContext(Chunk652215.NJ8.DARK);
-class b extends Chunk64700.PureComponent {
+class y extends Chunk64700.PureComponent {
   render() {
     let {
       lightSrc: e,
@@ -85,7 +85,7 @@ class b extends Chunk64700.PureComponent {
     })
   }
 }
-let y = e => {
+let b = e => {
   let {
     children: t,
     className: n,

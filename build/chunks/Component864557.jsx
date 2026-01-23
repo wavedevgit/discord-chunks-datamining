@@ -2,7 +2,7 @@
 /** chunk id: 864557, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -20,18 +20,18 @@ function u(e) {
     triggerType: n,
     toggled: s,
     onToggleAction: a
-  } = e, c = (0, l.x)(t.type, t, n);
-  if (null == c) return null;
+  } = e, o = (0, l.x)(t.type, t, n);
+  if (null == o) return null;
   let {
-    headerText: o,
+    headerText: c,
     descriptionText: u,
-    icon: f
-  } = c;
+    icon: g
+  } = o;
   return (0, r.jsxs)("div", {
     className: d.Ik,
     children: [(0, r.jsx)("div", {
       className: d.TV,
-      children: (0, r.jsx)(f, {
+      children: (0, r.jsx)(g, {
         size: "md",
         color: "currentColor",
         className: d.gE
@@ -40,7 +40,7 @@ function u(e) {
       className: d.xj,
       children: [(0, r.jsx)(i.Heading, {
         variant: "heading-sm/semibold",
-        children: o
+        children: c
       }), (0, r.jsx)(i.Text, {
         color: "interactive-text-default",
         variant: "text-xs/medium",
@@ -48,17 +48,17 @@ function u(e) {
       })]
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(i.DUT, {
-        onClick: c.isEditable ? () => a(false) : true,
+        onClick: o.isEditable ? () => a(false) : true,
         children: (0, r.jsx)(i.P7L, {
           checked: s,
-          disabled: !c.isEditable
+          disabled: !o.isEditable
         })
       })
     })]
   })
 }
 
-function f(e) {
+function g(e) {
   let {
     action: t,
     guildId: n,
@@ -67,14 +67,14 @@ function f(e) {
     onToggleAction: d
   } = e;
   switch (t.type) {
-    case o.AH.FLAG_TO_CHANNEL:
-      return (0, r.jsx)(c.A, {
+    case c.AH.FLAG_TO_CHANNEL:
+      return (0, r.jsx)(o.A, {
         action: t,
         triggerType: i,
         toggled: l,
         onToggleAction: d
       });
-    case o.AH.USER_COMMUNICATION_DISABLED:
+    case c.AH.USER_COMMUNICATION_DISABLED:
       return (0, r.jsx)(a.A, {
         action: t,
         guildId: n,
@@ -82,7 +82,7 @@ function f(e) {
         toggled: l,
         onToggleAction: d
       });
-    case o.AH.BLOCK_MESSAGE:
+    case c.AH.BLOCK_MESSAGE:
       return (0, r.jsx)(s.A, {
         action: t,
         triggerType: i,

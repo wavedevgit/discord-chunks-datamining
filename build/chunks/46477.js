@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   CA: () => m,
-  _W: () => y,
+  _W: () => b,
   we: () => O,
   zl: () => g
 }), require("./896048.js");
@@ -30,10 +30,10 @@ function g(e, t, n) {
     context: l,
     commandTypes: m,
     allowNsfw: g,
-    computedPermissions: A,
-    userId: v,
-    roleIds: S,
-    isImpersonating: I,
+    computedPermissions: v,
+    userId: A,
+    roleIds: I,
+    isImpersonating: S,
     hasBaseAccessPermissions: T
   } = t, {
     applicationAllowedForUser: C,
@@ -57,17 +57,17 @@ function g(e, t, n) {
   }
   if (e.applicationId === _.Ik.BUILT_IN) return 0;
   let x = null != l ? (0, p.wz)(l) : true;
-  if (null == x || s.zy(A, h.xBc.ADMINISTRATOR) || w && (null == (r = e.integration_types) ? true : r.includes(a.b.USER_INSTALL))) return 0;
+  if (null == x || s.zy(v, h.xBc.ADMINISTRATOR) || w && (null == (r = e.integration_types) ? true : r.includes(a.b.USER_INSTALL))) return 0;
   if (!T && R && (null == e.integration_types || e.integration_types.includes(a.b.GUILD_INSTALL))) return 5;
   if (l instanceof c.YB) {
     i()(true !== N, "missing applicationAllowedForChannel");
-    let t = y(e.permissions, l, x);
-    if (b(t) || !E(t) && b(N)) return 6
+    let t = b(e.permissions, l, x);
+    if (y(t) || !E(t) && y(N)) return 6
   }
-  let L = O(e.permissions, x, v, S, I);
+  let L = O(e.permissions, x, A, I, S);
   if (E(L)) return 0;
-  if (b(L) || b(C)) return 7;
-  if (null != e.defaultMemberPermissions && !(!s.aI(e.defaultMemberPermissions, f.Cq) && s.zy(A, e.defaultMemberPermissions))) return 7;
+  if (y(L) || y(C)) return 7;
+  if (null != e.defaultMemberPermissions && !(!s.aI(e.defaultMemberPermissions, f.Cq) && s.zy(v, e.defaultMemberPermissions))) return 7;
   return 0
 }
 
@@ -75,11 +75,11 @@ function E(e) {
   returntrue === e
 }
 
-function b(e) {
+function y(e) {
   returnfalse === e
 }
 
-function y(e, t, n) {
+function b(e, t, n) {
   if (null == e) return null;
   let r = t.id;
   if (t.isThread()) {

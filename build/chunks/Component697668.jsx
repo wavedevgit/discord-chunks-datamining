@@ -122,11 +122,11 @@ function D(e) {
               name: J
             })
           })
-        }), (0, r.jsxs)(y.A, {
+        }), (0, r.jsxs)(b.A, {
           user: t,
           displayProfile: W,
           themeType: C.d.POPOUT,
-          children: [(0, r.jsx)(A.A, {
+          children: [(0, r.jsx)(v.A, {
             children: (0, r.jsx)(O.A, {
               user: t,
               guildId: w,
@@ -134,7 +134,7 @@ function D(e) {
             })
           }), (0, r.jsxs)("div", {
             className: R.wx,
-            children: [(0, r.jsx)(b.A, {
+            children: [(0, r.jsx)(y.A, {
               user: t,
               displayProfile: W,
               guildId: w,
@@ -146,13 +146,13 @@ function D(e) {
               channelId: D,
               themeType: C.d.POPOUT,
               onOpenProfile: U ? true : X
-            }), (0, r.jsx)(v.A, {
+            }), (0, r.jsx)(A.A, {
               user: t,
               themeType: C.d.POPOUT,
               onCloseProfile: M,
               disableToolbar: true
             })]
-          }), (0, r.jsx)(S.A, {
+          }), (0, r.jsx)(I.A, {
             user: t,
             currentUser: n,
             displayProfile: W,
@@ -161,7 +161,7 @@ function D(e) {
             onOpenProfile: U ? true : X,
             channelId: D,
             onClose: M
-          }), (0, r.jsx)(I.A, {
+          }), (0, r.jsx)(S.A, {
             user: t,
             guildId: w,
             channelId: D,

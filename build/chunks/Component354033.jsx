@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   X: () => T,
-  Y: () => I
+  Y: () => S
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -25,18 +25,18 @@ var Chunk503698 = require("./503698.js"),
   Chunk2242 = require("./2242.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk906489 = require("./906489.js");
-let A = 440,
-  v = 80,
-  S = 4,
-  I = e => {
+let v = 440,
+  A = 80,
+  I = 4,
+  S = e => {
     let {
       onClose: t,
       listing: n,
       step: i,
       guildId: s
-    } = e, o = (0, h.Tq)(s), c = (0, u.A)(b.TQ), f = () => {
+    } = e, o = (0, h.Tq)(s), c = (0, u.A)(y.TQ), f = () => {
       if (i !== d.pn.CONFIRM) return null;
-      let e = null == n.image_asset ? true : (0, p.YE)(n.application_id, n.image_asset, v);
+      let e = null == n.image_asset ? true : (0, p.YE)(n.application_id, n.image_asset, A);
       return (0, r.jsx)("div", {
         className: O.z9,
         children: (0, r.jsx)("img", {
@@ -48,7 +48,7 @@ let A = 440,
     }, _ = (() => {
       var e;
       if (c) return null;
-      let t = (null == o || null == (e = o.cover_image_asset) ? true : e.application_id) != null ? (0, p.YE)(o.cover_image_asset.application_id, o.cover_image_asset, A) : true;
+      let t = (null == o || null == (e = o.cover_image_asset) ? true : e.application_id) != null ? (0, p.YE)(o.cover_image_asset.application_id, o.cover_image_asset, v) : true;
       return null == t && i !== d.pn.CONFIRM ? null : null == t ? (0, r.jsx)("div", {
         className: O.gI
       }) : (0, r.jsx)("img", {
@@ -64,7 +64,7 @@ let A = 440,
       children: [_, f(), (0, r.jsx)(l.DUT, {
         className: O.G3,
         onClick: () => t(false),
-        "aria-label": y.intl.string(y.t.cpT0Cq),
+        "aria-label": b.intl.string(b.t.cpT0Cq),
         children: (0, r.jsx)(l.PGe, {
           size: "md",
           color: "currentColor",
@@ -78,7 +78,7 @@ let A = 440,
       onClose: t,
       listing: n,
       guildId: i
-    } = e, a = (0, s.bG)([f.A], () => f.A.getGuild(i), [i]), u = (0, m.A)(i).filter(e => e.roles.includes(n.role_id)), d = n.role_benefits.benefits.filter(_.B1).slice(0, null === u.length ? S : S - 1), p = (0, g.A)(d).slice(0, null === u.length ? S : S - 1), h = () => {
+    } = e, a = (0, s.bG)([f.A], () => f.A.getGuild(i), [i]), u = (0, m.A)(i).filter(e => e.roles.includes(n.role_id)), d = n.role_benefits.benefits.filter(_.B1).slice(0, null === u.length ? I : I - 1), p = (0, g.A)(d).slice(0, null === u.length ? I : I - 1), h = () => {
       var e;
       if (0 === u.length) return null;
       let t = u[0];
@@ -87,7 +87,7 @@ let A = 440,
           variant: "text-xs/medium",
           color: "text-default",
           className: O.n2,
-          children: y.intl.string(y.t["6Y1FLi"])
+          children: b.intl.string(b.t["6Y1FLi"])
         }), (0, r.jsxs)("div", {
           className: O.DI,
           children: [(0, r.jsx)(c.A, {
@@ -100,11 +100,11 @@ let A = 440,
               variant: "text-md/medium",
               color: "text-strong",
               className: O.cC,
-              children: y.intl.string(y.t.PrKk4n)
+              children: b.intl.string(b.t.PrKk4n)
             }), (0, r.jsx)(l.Text, {
               color: "interactive-text-default",
               variant: "text-sm/normal",
-              children: y.intl.format(y.t["2ICUkG"], {
+              children: b.intl.format(b.t["2ICUkG"], {
                 count: u.length
               })
             })]
@@ -118,14 +118,14 @@ let A = 440,
         className: O.RS,
         variant: "heading-xl/semibold",
         color: "text-default",
-        children: y.intl.format(y.t["1HIsTk"], {
+        children: b.intl.format(b.t["1HIsTk"], {
           serverName: null == a ? true : a.name
         })
       }), (0, r.jsx)(l.Text, {
         className: O.sT,
         variant: "text-md/normal",
         color: "text-default",
-        children: y.intl.format(y.t.oi3gip, {
+        children: b.intl.format(b.t.oi3gip, {
           tier: n.name
         })
       }), p.length > 0 && (0, r.jsxs)(r.Fragment, {
@@ -133,7 +133,7 @@ let A = 440,
           variant: "text-xs/normal",
           color: "text-default",
           className: O.n2,
-          children: y.intl.string(y.t.w0CQ01)
+          children: b.intl.string(b.t.w0CQ01)
         }), (0, r.jsx)("div", {
           className: O.M3,
           children: p.map(e => (0, r.jsx)(E.A, {
@@ -147,7 +147,7 @@ let A = 440,
         className: O.EJ,
         children: (0, r.jsx)(o.$nd, {
           variant: "primary",
-          text: y.intl.string(y.t["Ph+ecI"]),
+          text: b.intl.string(b.t["Ph+ecI"]),
           onClick: () => t(true)
         })
       })]

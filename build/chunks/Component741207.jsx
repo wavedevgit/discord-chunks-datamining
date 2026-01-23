@@ -2,7 +2,7 @@
 /** chunk id: 741207, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => m
+  A: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,64 +18,64 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk86181 = require("./86181.js");
 
-function m(e) {
+function f(e) {
   var t;
   let {
     action: n,
-    triggerType: m,
-    guildId: p,
-    toggled: x,
-    onToggleAction: h
-  } = e, j = e => () => h(e), O = (0, o.x)(n.type, n, m), y = null == (t = n.metadata) ? true : t.durationSeconds, v = null != y ? (0, f.getFriendlyDurationString)(y) : null, A = (0, i.bG)([c.A, a.A], () => c.A.can(u.xBc.MODERATE_MEMBERS, a.A.getGuild(p)), [p]);
-  if (null == O) return null;
+    triggerType: f,
+    guildId: b,
+    toggled: h,
+    onToggleAction: x
+  } = e, j = e => () => x(e), _ = (0, c.x)(n.type, n, f), O = null == (t = n.metadata) ? true : t.durationSeconds, v = null != O ? (0, g.getFriendlyDurationString)(O) : null, y = (0, i.bG)([o.A, a.A], () => o.A.can(u.xBc.MODERATE_MEMBERS, a.A.getGuild(b)), [b]);
+  if (null == _) return null;
   let {
-    headerText: E,
-    descriptionText: N,
-    icon: _
-  } = O;
+    headerText: A,
+    descriptionText: E,
+    icon: N
+  } = _;
   return (0, r.jsxs)("div", {
-    className: b.Ik,
+    className: p.Ik,
     children: [(0, r.jsx)("div", {
-      className: b.TV,
-      children: (0, r.jsx)(_, {
+      className: p.TV,
+      children: (0, r.jsx)(N, {
         size: "md",
         color: "currentColor",
-        className: b.gE
+        className: p.gE
       })
     }), (0, r.jsxs)("div", {
-      className: b.xj,
+      className: p.xj,
       children: [(0, r.jsx)(s.Heading, {
         variant: "heading-sm/semibold",
-        children: E
+        children: A
       }), (0, r.jsx)(s.Text, {
         color: "interactive-text-default",
         variant: "text-xs/medium",
-        children: N
-      }), x && (0, r.jsxs)(s.Text, {
+        children: E
+      }), h && (0, r.jsxs)(s.Text, {
         color: "interactive-text-default",
         variant: "text-xs/medium",
-        children: [null === v ? null : m === d.uh.MENTION_SPAM ? g.intl.format(g.t.i3lsKD, {
+        children: [null === v ? null : f === d.uh.MENTION_SPAM ? m.intl.format(m.t.i3lsKD, {
           friendlyDurationString: v
-        }) : g.intl.format(g.t.mvHxze, {
+        }) : m.intl.format(m.t.mvHxze, {
           friendlyDurationString: v
-        }), A && (0, r.jsx)(s.DUT, {
+        }), y && (0, r.jsx)(s.DUT, {
           onClick: j(true),
-          className: b._2,
+          className: p._2,
           tag: "span",
           role: "link",
-          children: g.intl.string(g.t["0B95RJ"])
+          children: m.intl.string(m.t["0B95RJ"])
         })]
       })]
     }), (0, r.jsx)(l.m, {
-      text: g.intl.format(g.t.wx6Vb9, {}),
-      "aria-label": g.intl.formatToMarkdownString(g.t.wx6Vb9, {}),
-      shouldShow: !A,
+      text: m.intl.format(m.t.wx6Vb9, {}),
+      "aria-label": m.intl.formatToMarkdownString(m.t.wx6Vb9, {}),
+      shouldShow: !y,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(s.DUT, {
-          onClick: A ? j(false) : true,
+          onClick: y ? j(false) : true,
           children: (0, r.jsx)(s.P7L, {
-            checked: x,
-            disabled: !A
+            checked: h,
+            disabled: !y
           })
         })
       })

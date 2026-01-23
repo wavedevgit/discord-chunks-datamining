@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 397938, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => E
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -25,21 +25,21 @@ var Chunk652215 = require("./652215.js"),
   Chunk790782 = require("./790782.js"),
   Chunk626600 = require("./626600.js");
 
-function x() {
-  let e = (0, a.bG)([h.default], () => h.default.getCurrentUser());
-  return (0, a.bG)([f.Ay], () => (null == e ? true : e.id) != null && f.Ay.getMentionCount(e.id, j.P.NOTIFICATION_CENTER) > 0)
+function v() {
+  let e = (0, s.bG)([f.default], () => f.default.getCurrentUser());
+  return (0, s.bG)([p.Ay], () => (null == e ? true : e.id) != null && p.Ay.getMentionCount(e.id, O.P.NOTIFICATION_CENTER) > 0)
 }
 
-function E(e) {
+function x(e) {
   var t, n;
   let {
     onClick: d,
-    selectedOverride: f = false,
-    popoutProps: h,
+    selectedOverride: p = false,
+    popoutProps: f,
     ref: A
-  } = e, j = (0, i.Vd)("notifications-inbox"), [E, _] = l.useState(false), C = (0, g.lI)(), S = f || C, {
+  } = e, O = (0, i.Vd)("notifications-inbox"), [x, E] = l.useState(false), C = (0, m.lI)(), S = p || C, {
     notificationCenterVariant: I
-  } = (0, b.X8)({
+  } = (0, g.X8)({
     location: "NotificationsInboxButtonInner"
   }), {
     badge: N,
@@ -48,24 +48,24 @@ function E(e) {
   } = function(e) {
     let {
       notificationCenterVariant: t
-    } = (0, b.X8)({
+    } = (0, g.X8)({
       location: "NotificationsInboxButtonInner"
     }), {
       unreadChannelIds: n
-    } = (0, g.U4)(), l = x(), {
+    } = (0, m.U4)(), l = v(), {
       badge: i,
-      dimensions: a
-    } = (0, m.ux)({
+      dimensions: s
+    } = (0, b.ux)({
       isSelected: e
     });
-    return t === b.U5.LEGACY ? {
+    return t === g.U5.LEGACY ? {
       badge: l ? (0, r.jsx)(o.SC0, {
         style: {
           height: 13,
           width: 13,
           position: "relative"
         },
-        color: s.A.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css
+        color: a.A.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css
       }) : null,
       unreadChannelsCount: 0,
       badgeDimensions: {
@@ -75,22 +75,22 @@ function E(e) {
     } : {
       badge: i,
       unreadChannelsCount: n.length,
-      badgeDimensions: a
+      badgeDimensions: s
     }
-  }(S), w = I === b.U5.LEGACY ? o.K$s : o.XFE, R = (0, a.bG)([p.A], () => p.A.getChannelId()), D = l.useMemo(() => {
-    if (I === b.U5.SIDEBAR) return O.BVt.CHANNEL(O.gNP, R)
+  }(S), w = I === g.U5.LEGACY ? o.K$s : o.XFE, R = (0, s.bG)([h.A], () => h.A.getChannelId()), D = l.useMemo(() => {
+    if (I === g.U5.SIDEBAR) return _.BVt.CHANNEL(_.gNP, R)
   }, [I, R]);
   return (0, r.jsxs)(u.c, {
     ref: A,
     children: [(0, r.jsx)(c.A, {
-      selected: S && I === b.U5.SIDEBAR,
-      hovered: E && I === b.U5.SIDEBAR,
+      selected: S && I === g.U5.SIDEBAR,
+      hovered: x && I === g.U5.SIDEBAR,
       unread: P > 0,
-      className: v.Io,
-      disabled: I === b.U5.LEGACY
+      className: j.Io,
+      disabled: I === g.U5.LEGACY
     }), (0, r.jsx)(y.A, {
       children: (0, r.jsx)(o.Qk9, {
-        selected: S || E,
+        selected: S || x,
         lowerBadge: N,
         lowerBadgeSize: T,
         children: (0, r.jsx)(o.jlP, (t = function(e) {
@@ -110,16 +110,16 @@ function E(e) {
             })
           }
           return e
-        }({}, j, h), n = n = {
+        }({}, O, f), n = n = {
           onClick: d,
           to: D,
-          selected: S || E,
-          onMouseEnter: () => _(true),
-          onMouseLeave: () => _(false),
+          selected: S || x,
+          onMouseEnter: () => E(true),
+          onMouseLeave: () => E(false),
           children: (0, r.jsx)(w, {
             size: "custom",
             color: "currentColor",
-            className: v.iZ,
+            className: j.iZ,
             width: 20,
             height: 20
           })
@@ -138,22 +138,22 @@ function E(e) {
   })
 }
 
-function _() {
+function E() {
   let e = l.useRef(null),
     {
       notificationCenterVariant: t
-    } = (0, b.X8)({
+    } = (0, g.X8)({
       location: "NotificationsInboxButton"
     }),
-    n = x(),
-    i = (0, m.HN)();
-  return t === b.U5.SIDEBAR ? (0, r.jsx)(E, {
+    n = v(),
+    i = (0, b.HN)();
+  return t === g.U5.SIDEBAR ? (0, r.jsx)(x, {
     onClick: i
-  }) : t === b.U5.POPOUT ? (0, r.jsx)(A.A, {
+  }) : t === g.U5.POPOUT ? (0, r.jsx)(A.A, {
     targetElementRef: e,
     popoutPosition: "right",
     popoutAlign: "bottom",
-    children: (t, n, l) => (0, r.jsx)(E, {
+    children: (t, n, l) => (0, r.jsx)(x, {
       ref: e,
       selectedOverride: n,
       onClick: () => {
@@ -161,7 +161,7 @@ function _() {
       },
       popoutProps: l
     })
-  }) : t === b.U5.LEGACY ? (0, r.jsx)(d.C, {
+  }) : t === g.U5.LEGACY ? (0, r.jsx)(d.C, {
     spacing: 0,
     badgeState: {
       badgeForYou: n
@@ -169,8 +169,8 @@ function _() {
     targetElementRef: e,
     popoutPosition: "right",
     popoutAlign: "top",
-    dialogClassName: v.T8,
-    children: (t, n, l) => (0, r.jsx)(E, {
+    dialogClassName: j.T8,
+    children: (t, n, l) => (0, r.jsx)(x, {
       ref: e,
       selectedOverride: n,
       onClick: () => {

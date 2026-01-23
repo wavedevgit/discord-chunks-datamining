@@ -1,13 +1,13 @@
 /** Chunk was on 81890 **/
-/** chunk id: 651614, original params: e,t,a (module,exports,require) **/
+/** chunk id: 651614, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  wx: "_18d2264b689d9a40",
-  b: "_24a2b158b1676b9b",
-  KA: "_0e61392a9b030275",
-  DD: "_74377830c9e66e1d",
-  VA: "_2d544c6e008da48b",
-  l8: "_7b4ab6d60103984f",
-  qr: "_23a56e464b199d5f",
-  K8: "_40dee3195fc5b9dd",
-  wC: "_85629ca0a4251127"
+  wx: "header_c04f35",
+  b: "closeButton_c04f35",
+  KA: "templatesList_c04f35",
+  DD: "title_c04f35",
+  VA: "subtitle_c04f35",
+  l8: "optionHeader_c04f35",
+  qr: "footer_c04f35",
+  K8: "footerTitle_c04f35",
+  wC: "footerButton_c04f35"
 }

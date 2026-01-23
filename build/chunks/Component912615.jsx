@@ -36,20 +36,20 @@ function E(e) {
   } = e, {
     authorizedApplicationId: u,
     authorizationError: E,
-    authorizing: b
+    authorizing: y
   } = (0, s.cf)([f.A], () => ({
     authorizedApplicationId: f.A.testModeApplicationId,
     authorizationError: f.A.error,
     authorizing: f.A.isFetchingAuthorization
-  })), [y, O] = i.useState(null != u ? u : ""), [A, v] = i.useState("8080"), [S, I] = i.useState("localhost"), T = m.test(y);
+  })), [b, O] = i.useState(null != u ? u : ""), [v, A] = i.useState("8080"), [I, S] = i.useState("localhost"), T = m.test(b);
   async function C() {
     c.SH();
-    let e = g(S, A, y);
-    null != await c.q1(y, e) && t()
+    let e = g(I, v, b);
+    null != await c.q1(b, e) && t()
   }
 
   function N() {
-    c.cL(), O(""), I(null)
+    c.cL(), O(""), S(null)
   }
 
   function R(e) {
@@ -57,7 +57,7 @@ function E(e) {
   }
 
   function w(e) {
-    I(e)
+    S(e)
   }
 
   function P() {
@@ -71,28 +71,28 @@ function E(e) {
   }
 
   function D() {
-    return "localhost" !== S ? null : (0, r.jsx)("div", {
+    return "localhost" !== I ? null : (0, r.jsx)("div", {
       className: _.I,
       children: (0, r.jsx)(o.ksK, {
         required: true,
         label: p.intl.string(p.t.fF4zxq),
-        value: A,
+        value: v,
         maxLength: 5,
-        onChange: e => v(e),
-        disabled: b
+        onChange: e => A(e),
+        disabled: y
       })
     })
   }
   i.useEffect(() => () => l.h.wait(() => c.SH()), []);
-  let x = null != u && u === y,
+  let x = null != u && u === b,
     L = x ? N : C,
     j = i.useMemo(() => [{
-      loading: b,
-      disabled: !T || 0 === y.length || "localhost" === S && 0 === A.length,
+      loading: y,
+      disabled: !T || 0 === b.length || "localhost" === I && 0 === v.length,
       variant: x ? "critical-primary" : "active",
       text: x ? p.intl.string(p.t.d6TR3I) : p.intl.string(p.t.qwuK5I),
       onClick: L
-    }], [y.length, b, x, T, A.length, L, S]);
+    }], [b.length, y, x, T, v.length, L, I]);
   return (0, r.jsxs)(a.Modal, {
     title: p.intl.string(p.t.f8fzky),
     subtitle: p.intl.string(p.t.a6Vill),
@@ -107,19 +107,19 @@ function E(e) {
         children: (0, r.jsx)(o.ksK, {
           label: p.intl.string(p.t.P6TzgI),
           required: true,
-          value: y,
+          value: b,
           maxLength: 19,
           error: T ? null : p.intl.string(p.t.gPNgKO),
           onChange: R,
-          disabled: b
+          disabled: y
         })
       }), (0, r.jsx)("div", {
         className: _.I,
         children: (0, r.jsx)(o.l6P, {
           selectionMode: "single",
           label: p.intl.string(p.t["/GTqXG"]),
-          disabled: !T || "" === y,
-          value: S,
+          disabled: !T || "" === b,
+          value: I,
           options: [{
             value: "localhost",
             label: p.intl.string(p.t["+Y9Y6r"]),

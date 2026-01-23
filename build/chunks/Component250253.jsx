@@ -59,7 +59,7 @@ let x = 24,
         className: D.Pp,
         "aria-labelledby": m,
         children: l.map((e, t) => (0, r.jsx)("li", {
-          children: (0, r.jsx)(I.A, {
+          children: (0, r.jsx)(S.A, {
             guildId: a,
             benefit: e
           }, (0, h.nh)(e))
@@ -75,7 +75,7 @@ let x = 24,
     let {
       guildId: t,
       listingId: n
-    } = e, i = (0, y.A)(t), [a] = g.UN(n, t), s = i.filter(e => a.has(e.id));
+    } = e, i = (0, b.A)(t), [a] = g.UN(n, t), s = i.filter(e => a.has(e.id));
 
     function o(e) {
       return _.Ay.getEmojiURL({
@@ -119,7 +119,7 @@ let x = 24,
       listingId: t,
       guildId: n,
       className: i
-    } = e, a = (0, O.A)(n, t), [o] = g.lZ(t), l = (0, A.A)(o), [u] = g.$O(t), d = g.It(t, n), [f] = g.UN(t, n);
+    } = e, a = (0, O.A)(n, t), [o] = g.lZ(t), l = (0, v.A)(o), [u] = g.$O(t), d = g.It(t, n), [f] = g.UN(t, n);
     return null == a && 0 === l.length && 0 === u.length && 0 === f.size ? null : (0, r.jsxs)("div", {
       className: s()(D.bp, i),
       children: [null != a && (0, r.jsxs)(c.Fmo, {
@@ -131,7 +131,7 @@ let x = 24,
         }),
         children: [(0, r.jsx)(c.hKd, {
           size: 8
-        }), (0, r.jsx)(v.A, {
+        }), (0, r.jsx)(A.A, {
           role: d,
           guildId: n,
           className: D.gP
@@ -170,17 +170,17 @@ let x = 24,
       groupListingId: a,
       analyticsLocation: d
     } = e, _ = (0, m.dB)(t), {
-      openModal: y,
+      openModal: b,
       canOpenModal: O,
-      cannotOpenReason: A,
-      isCheckingTrialEligibility: v
-    } = (0, N.A)(_, n, a, d), I = (0, o.bG)([p.A], () => p.A.isSyncing), {
+      cannotOpenReason: v,
+      isCheckingTrialEligibility: A
+    } = (0, N.A)(_, n, a, d), S = (0, o.bG)([p.A], () => p.A.isSyncing), {
       activeSubscription: x,
       activeSubscriptionListing: L
     } = (0, E.A)(a), j = (null == L ? true : L.id) === t, M = (null == x ? true : x.status) === w.Dmq.CANCELED, [G, V] = i.useState(false), [F, B] = i.useState(false), H = i.useCallback(e => {
       let t = false;
       null != e && (t = e.scrollHeight - e.clientHeight > 1), B(t)
-    }, []), [Y] = g.tx(t), [W] = g.I8(t), [K] = g.V_(t), [z] = g.hh(t), q = (0, b.A)(n, t), X = null != K && null == x && q, Z = () => V(e => !e), Q = (0, u.A)(R.Yl), [$, J] = i.useState(false), ee = $ || !Q, et = () => J(e => !e), en = (0, o.bG)([f.A], () => f.A.isViewingServerShop(n)), er = (null == _ ? true : _.published) === true, ei = (null == _ ? true : _.soft_deleted) === true, ea = P.intl.string(P.t.KzmEA9);
+    }, []), [Y] = g.tx(t), [W] = g.I8(t), [K] = g.V_(t), [z] = g.hh(t), q = (0, y.A)(n, t), X = null != K && null == x && q, Z = () => V(e => !e), Q = (0, u.A)(R.Yl), [$, J] = i.useState(false), ee = $ || !Q, et = () => J(e => !e), en = (0, o.bG)([f.A], () => f.A.isViewingServerShop(n)), er = (null == _ ? true : _.published) === true, ei = (null == _ ? true : _.soft_deleted) === true, ea = P.intl.string(P.t.KzmEA9);
     return (er || en) && !ei ? (0, r.jsxs)("article", {
       className: D.kL,
       "aria-label": Y,
@@ -226,14 +226,14 @@ let x = 24,
               children: [O ? null : (0, r.jsx)(c.po8, {
                 className: D.Ht,
                 messageType: c.YCn.INFO,
-                children: A
+                children: v
               }), (0, r.jsx)(c.Button, {
                 fullWidth: true,
                 text: P.intl.string(P.t.fM5ZsX),
-                disabled: !O || I,
-                loading: v,
-                onClick: y,
-                icon: S.A,
+                disabled: !O || S,
+                loading: A,
+                onClick: b,
+                icon: I.A,
                 variant: "primary"
               })]
             }), (0, r.jsxs)(c.BJc, {

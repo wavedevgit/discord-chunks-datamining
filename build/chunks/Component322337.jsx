@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => O,
-  p: () => b
+  p: () => y
 }), require("./896048.js"), require("./638769.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -74,13 +74,13 @@ function E(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let b = {
+let y = {
   DropdownSizes: Chunk543594.A.DropdownSizes,
   Sizes: Chunk543594.A.Sizes,
   Colors: Chunk543594.A.Colors,
   Looks: Chunk543594.A.Looks
 };
-class y extends Chunk64700.PureComponent {
+class b extends Chunk64700.PureComponent {
   render() {
     let e = this.props,
       {
@@ -139,4 +139,4 @@ let O = Chunk311907.Ay.connectStores([Chunk67480.A, Chunk587895.A], e => {
     skus: (null != (t = u.A.getForApplication(n)) ? t : []).sort((e, t) => null != r && e.id === r.id ? false : null != r && t.id === r.id ? 1 : e.name >= t.name ? false : 1),
     primarySKU: r
   }
-})(y)
+})(b)

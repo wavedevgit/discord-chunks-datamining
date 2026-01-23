@@ -42,9 +42,9 @@ let c = 2592e6,
   m = 0,
   g = false,
   E = false,
-  b = 1e3;
+  y = 1e3;
 
-function y() {
+function b() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
   if (!e && Date.now() < m) return;
   let t = 0,
@@ -55,7 +55,7 @@ function y() {
     else break
   }
   t > 0 && (p.itemImpressions = p.itemImpressions.slice(t)), p.itemImpressions.length > d && (p.itemImpressions = p.itemImpressions.slice(-d));
-  let r = E ? b : u,
+  let r = E ? y : u,
     i = new Set,
     a = new Set,
     s = Date.now() - r,
@@ -68,26 +68,26 @@ function O(e) {
   let {
     itemIds: t
   } = e;
-  g || y();
+  g || b();
   let n = Date.now(),
     r = false;
   for (let e of t) h.has(e) || (p.itemImpressions.push([e, n]), r = true);
-  return y(r), r
-}
-
-function A() {
-  p.itemImpressions = [], y(true)
+  return b(r), r
 }
 
 function v() {
+  p.itemImpressions = [], b(true)
+}
+
+function A() {
   return console.log("Item impressions:", p.itemImpressions), false
 }
 
-function S() {
+function I() {
   E = !E
 }
 
-function I() {
+function S() {
   p.hidden = !p.hidden
 }
 class T extends(r = Chunk311907.Ay.PersistedStore) {
@@ -98,7 +98,7 @@ class T extends(r = Chunk311907.Ay.PersistedStore) {
     return p
   }
   getImpressionCappedItemIds() {
-    return y(), _
+    return b(), _
   }
   getDebugFastImpressionCappingEnabled() {
     return E
@@ -113,8 +113,8 @@ class T extends(r = Chunk311907.Ay.PersistedStore) {
 o(T, "displayName", "ContentInventoryPersistedStore"), o(T, "persistKey", "ContentInventoryPersistedStore");
 let C = new T(Chunk73153.h, {
   CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS: O,
-  CONTENT_INVENTORY_DEBUG_CLEAR_IMPRESSIONS: A,
-  CONTENT_INVENTORY_DEBUG_LOG_IMPRESSIONS: v,
-  CONTENT_INVENTORY_DEBUG_TOGGLE_FAST_IMPRESSION_CAPPING: S,
-  CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: I
+  CONTENT_INVENTORY_DEBUG_CLEAR_IMPRESSIONS: v,
+  CONTENT_INVENTORY_DEBUG_LOG_IMPRESSIONS: A,
+  CONTENT_INVENTORY_DEBUG_TOGGLE_FAST_IMPRESSION_CAPPING: I,
+  CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: S
 })

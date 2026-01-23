@@ -1,5 +1,5 @@
 /** Chunk was on 52986 **/
-/** chunk id: 97649, original params: e,t,r (module,exports,require) **/
+/** chunk id: 97649, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => f
 }), require("./747238.js"), require("./812715.js");
@@ -15,34 +15,34 @@ var Chunk627968 = require("./627968.js"),
 function d(e) {
   let {
     platformType: t
-  } = e, r = (0, a.W6)();
-  return c.useEffect(() => {
+  } = e, n = (0, a.W6)();
+  return l.useEffect(() => {
     let {
       code: e,
-      state: n
-    } = l.parse(window.location.search), c = "".concat(s.BVt.CONNECTIONS_ERROR(t)).concat(window.location.search);
-    null == e || null == n ? r.replace(c) : i.A.linkDispatchAuthCallback(t, {
+      state: r
+    } = c.parse(window.location.search), l = "".concat(u.BVt.CONNECTIONS_ERROR(t)).concat(window.location.search);
+    null == e || null == r ? n.replace(l) : i.A.linkDispatchAuthCallback(t, {
       code: e,
-      state: n
+      state: r
     }).then(e => {
       let {
-        status: n
+        status: r
       } = e;
-      204 === n ? r.replace(s.BVt.CONNECTIONS_SUCCESS(t)) : r.replace(c)
+      204 === r ? n.replace(u.BVt.CONNECTIONS_SUCCESS(t)) : n.replace(l)
     }, () => {
-      r.replace(c)
+      n.replace(l)
     })
-  }, [r, t]), (0, n.jsx)(u.VerifyAccountLoading, {
+  }, [n, t]), (0, r.jsx)(s.VerifyAccountLoading, {
     platformType: t
   })
 }
 let f = function(e) {
   let {
     match: t
-  } = e, r = t.params.type, {
-    two_way_link_type: c
-  } = l.parse(window.location.search);
-  return [s.fg2.XBOX, s.fg2.PLAYSTATION_STAGING, s.fg2.PLAYSTATION, s.fg2.CRUNCHYROLL].includes(r) && c === o.I.DESKTOP ? (0, n.jsx)(d, {
-    platformType: r
+  } = e, n = t.params.type, {
+    two_way_link_type: l
+  } = c.parse(window.location.search);
+  return [u.fg2.XBOX, u.fg2.PLAYSTATION_STAGING, u.fg2.PLAYSTATION, u.fg2.CRUNCHYROLL].includes(n) && l === o.I.DESKTOP ? (0, r.jsx)(d, {
+    platformType: n
   }) : null
 }

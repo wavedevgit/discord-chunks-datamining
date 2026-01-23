@@ -2,8 +2,8 @@
 /** chunk id: 272207, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y,
-  h: () => b
+  A: () => b,
+  h: () => y
 }), require("./896048.js");
 var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
@@ -63,10 +63,10 @@ function E(e) {
     quantity: e.quantity
   }
 }
-class b extends Chunk315069.A {
+class y extends Chunk315069.A {
   static createFromServer(e) {
     var t;
-    return new b(g(h({
+    return new y(g(h({
       id: e.id,
       type: e.type,
       createdAt: new Date(e.created_at),
@@ -208,4 +208,4 @@ class b extends Chunk315069.A {
     this.planId = n, this.additionalPlans = e.items.filter(e => e.planId !== n), null != t && null != r && (t.planId = r, t.additionalPlans = t.items.filter(e => e.planId !== r))
   }
 }
-let y = b
+let b = y

@@ -2,7 +2,7 @@
 /** chunk id: 986268, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => A
+  A: () => v
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -23,7 +23,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk617286 = require("./617286.js");
 
-function y(e) {
+function b(e) {
   let {
     guild: t,
     isBannerVisible: n,
@@ -45,23 +45,23 @@ function y(e) {
         }
       })
     },
-    y = c === g.TVA.NONE ? E.intl.string(E.t.c2wsn6) : m.gb(c);
+    b = c === g.TVA.NONE ? E.intl.string(E.t.c2wsn6) : m.gb(c);
   return (0, r.jsx)("div", {
-    className: b._C,
+    className: y._C,
     children: (0, r.jsx)(o.un, {
-      title: y,
+      title: b,
       body: E.intl.format(E.t.If4iTS, {
         subscriberCount: u
       }),
       position: "bottom",
       children: (0, r.jsx)(l.DUT, {
-        className: b.__invalid_premiumGuildIcon,
+        className: y.__invalid_premiumGuildIcon,
         onClick: d,
         children: (0, r.jsx)(p.A, {
           size: 18,
           premiumTier: c,
-          iconBackgroundClassName: n ? b.z_ : true,
-          iconClassName: n && c !== g.TVA.TIER_3 ? b.S1 : null
+          iconBackgroundClassName: n ? y.z_ : true,
+          iconClassName: n && c !== g.TVA.TIER_3 ? y.S1 : null
         })
       })
     })
@@ -75,32 +75,32 @@ function O(e) {
     disableBoostClick: i
   } = e;
   return (0, c.A)(t) ? (0, r.jsx)("div", {
-    className: b.Qv,
+    className: y.Qv,
     children: (0, r.jsx)(d.A, {
       guild: t,
       size: 18,
       tooltipPosition: "bottom",
       tooltipColor: l.STz.Colors.PRIMARY,
-      className: a()(b.n2, {
-        [b.cE]: n
+      className: a()(y.n2, {
+        [y.cE]: n
       }),
       disableBoostClick: i
     })
   }) : (0, r.jsx)("div", {
-    className: b._C,
+    className: y._C,
     children: (0, r.jsx)(u.A, {
       guild: t,
       size: 18,
       tooltipPosition: "bottom",
       tooltipColor: l.STz.Colors.PRIMARY,
-      className: a()(b.n2, {
-        [b.cE]: n
+      className: a()(y.n2, {
+        [y.cE]: n
       })
     })
   })
 }
 
-function A(e) {
+function v(e) {
   let {
     guild: t,
     disableBoostClick: n
@@ -112,7 +112,7 @@ function A(e) {
   }) : t.features.has(g.GuildFeatures.VERIFIED) || t.features.has(g.GuildFeatures.PARTNERED) ? (0, r.jsx)(O, {
     guild: t,
     disableColor: !i
-  }) : (0, r.jsx)(y, {
+  }) : (0, r.jsx)(b, {
     guild: t,
     isBannerVisible: i,
     disableBoostClick: n

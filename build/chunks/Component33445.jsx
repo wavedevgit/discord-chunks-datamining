@@ -1,8 +1,8 @@
 /** Chunk was on 13492 **/
-/** chunk id: 33445, original params: e,t,a (module,exports,require) **/
+/** chunk id: 33445, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  A: () => v,
-  E: () => A
+  A: () => h,
+  E: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,42 +20,42 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk405429 = require("./405429.js");
 
-function A(e) {
+function y(e) {
   let {
-    activity: t,
-    renderHeader: a,
-    renderActivityIFrameWithLoadedData: b,
-    isLoading: u = false
-  } = e, p = n.useRef(null), _ = (0, r.A)(t);
-  n.useEffect(() => {
-    null != t ? clearTimeout(p.current) : null != _ && null == t && (p.current = window.setTimeout(() => {
-      (0, f.close)(m.MLl.ACTIVITY_POPOUT)
+    activity: n,
+    renderHeader: t,
+    renderActivityIFrameWithLoadedData: d,
+    isLoading: p = false
+  } = e, b = o.useRef(null), f = (0, l.A)(n);
+  o.useEffect(() => {
+    null != n ? clearTimeout(b.current) : null != f && null == n && (b.current = window.setTimeout(() => {
+      (0, s.close)(m.MLl.ACTIVITY_POPOUT)
     }, 5e3))
-  }, [_, t]);
-  let A = (0, l.bG)([o.A], () => {
-      let e = null == t ? true : t.applicationId;
-      return null == e ? true : o.A.getApplication(e)
+  }, [f, n]);
+  let y = (0, a.bG)([c.A], () => {
+      let e = null == n ? true : n.applicationId;
+      return null == e ? true : c.A.getApplication(e)
     }),
-    v = (0, s.V)();
-  return (0, c.jsx)("div", {
-    className: x.kL,
-    children: null == t || null == A || u ? (0, c.jsx)(d.y$y, {
-      className: x.pU
-    }) : (0, c.jsx)("div", {
-      className: x.U$,
-      children: (0, c.jsxs)("div", {
-        className: x.kq,
-        children: [(0, c.jsx)("div", {
-          className: x.N1,
-          children: a({
-            application: A
+    h = (0, u.V)();
+  return (0, r.jsx)("div", {
+    className: v.kL,
+    children: null == n || null == y || p ? (0, r.jsx)(i.y$y, {
+      className: v.pU
+    }) : (0, r.jsx)("div", {
+      className: v.U$,
+      children: (0, r.jsxs)("div", {
+        className: v.kq,
+        children: [(0, r.jsx)("div", {
+          className: v.N1,
+          children: t({
+            application: y
           })
-        }), (0, c.jsx)("div", {
-          className: x.Wc,
-          children: b({
-            application: A
+        }), (0, r.jsx)("div", {
+          className: v.Wc,
+          children: d({
+            application: y
           })
-        }), v ? (0, c.jsx)(i.A, {
+        }), h ? (0, r.jsx)(_.A, {
           isEmbeddedActivity: true
         }) : null]
       })
@@ -63,47 +63,47 @@ function A(e) {
   })
 }
 
-function v() {
+function h() {
   let {
     embeddedActivity: e,
-    channelId: t,
-    guildId: a
-  } = (0, l.cf)([b.Ay], () => {
-    let e = b.Ay.getCurrentEmbeddedActivity(),
-      t = (0, u.H)(null == e ? true : e.location),
-      a = (0, u.D)(null == e ? true : e.location);
+    channelId: n,
+    guildId: t
+  } = (0, a.cf)([d.Ay], () => {
+    let e = d.Ay.getCurrentEmbeddedActivity(),
+      n = (0, p.H)(null == e ? true : e.location),
+      t = (0, p.D)(null == e ? true : e.location);
     return {
       embeddedActivity: e,
-      channelId: t,
-      guildId: a
+      channelId: n,
+      guildId: t
     }
-  }), d = (0, l.bG)([b.Ay], () => (null == e ? true : e.applicationId) != null && b.Ay.isProxyTicketRefreshing(e.applicationId), [e]), r = n.useCallback(e => {
+  }), i = (0, a.bG)([d.Ay], () => (null == e ? true : e.applicationId) != null && d.Ay.isProxyTicketRefreshing(e.applicationId), [e]), l = o.useCallback(e => {
+    let {
+      application: t
+    } = e;
+    return (0, r.jsx)(f.A, {
+      applicationId: t.id,
+      channelId: n
+    })
+  }, [n]), c = o.useCallback(o => {
     let {
       application: a
-    } = e;
-    return (0, c.jsx)(_.A, {
-      applicationId: a.id,
-      channelId: t
-    })
-  }, [t]), o = n.useCallback(n => {
-    let {
-      application: l
-    } = n, d = {};
+    } = o, i = {};
     if (null != e) {
-      var r, o, i;
-      d.instance_id = null != (r = null != (o = e.compositeInstanceId) ? o : e.launchId) ? r : "", d.location_id = null == (i = e.location) ? true : i.id, d.launch_id = e.launchId, d.referrer_id = e.referrerId, d.custom_id = e.customId, null != a && "" !== a && (d.guild_id = a), null != t && "" !== t && (d.channel_id = t)
+      var l, c, _;
+      i.instance_id = null != (l = null != (c = e.compositeInstanceId) ? c : e.launchId) ? l : "", i.location_id = null == (_ = e.location) ? true : _.id, i.launch_id = e.launchId, i.referrer_id = e.referrerId, i.custom_id = e.customId, null != t && "" !== t && (i.guild_id = t), null != n && "" !== n && (i.channel_id = n)
     }
-    let f = null == e ? true : e.url;
-    return (0, c.jsx)(p.A, {
-      application: l,
-      queryParams: d,
-      url: f
+    let s = null == e ? true : e.url;
+    return (0, r.jsx)(b.A, {
+      application: a,
+      queryParams: i,
+      url: s
     })
-  }, [t, a, e]);
-  return (0, c.jsx)(A, {
+  }, [n, t, e]);
+  return (0, r.jsx)(y, {
     activity: e,
-    isLoading: d,
-    renderHeader: r,
-    renderActivityIFrameWithLoadedData: o
+    isLoading: i,
+    renderHeader: l,
+    renderActivityIFrameWithLoadedData: c
   })
 }

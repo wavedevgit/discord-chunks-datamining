@@ -28,29 +28,29 @@ function E(e) {
     userId: n,
     transitionState: E,
     onClose: C
-  } = e, k = i.useRef(false), O = (0, a.bG)([u.A], () => u.A.isBlocked(n)), b = (0, a.bG)([c.A], () => c.A.getChannel(t));
+  } = e, k = i.useRef(false), O = (0, a.bG)([u.A], () => u.A.isBlocked(n)), v = (0, a.bG)([_.A], () => _.A.getChannel(t));
   if ((0, d.l0)(() => {
-      k.current || (0, f.$Y)(n)
-    }), null == _.default.getUser(n)) return null;
-  let v = [{
-      icon: (0, x.I)([n], null == b ? true : b.guild_id),
-      text: (0, x.T)([n], 1, null == b ? true : b.guild_id, t),
+      k.current || (0, g.$Y)(n)
+    }), null == c.default.getUser(n)) return null;
+  let I = [{
+      icon: (0, x.I)([n], null == v ? true : v.guild_id),
+      text: (0, x.T)([n], 1, null == v ? true : v.guild_id, t),
       className: p.n
     }, {
       icon: (0, s.jsx)("div", {
         className: p.K,
-        children: (0, s.jsx)(l.id, {})
+        children: (0, s.jsx)(o.id, {})
       }),
       text: h.intl.string(h.t["+4O9nX"]),
       className: p.n
     }],
-    I = O ? h.intl.string(h.t.QnTzrp) : h.intl.string(h.t.QsWbfY);
-  return (0, s.jsx)(g.A, {
+    T = O ? h.intl.string(h.t.QnTzrp) : h.intl.string(h.t.QsWbfY);
+  return (0, s.jsx)(f.A, {
     headerText: h.intl.string(h.t["1/gpFh"]),
-    descriptionText: I,
-    infoRows: v,
+    descriptionText: T,
+    infoRows: I,
     onDismissAndStay: () => {
-      k.current = true, C(), (0, f.$Y)(n), m.default.track(A.HAw.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
+      k.current = true, C(), (0, g.$Y)(n), m.default.track(A.HAw.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
         action: N.Qi.CLICK_TO_STAY,
         channel_id: t,
         blocked_user_ids: O ? [n] : [],
@@ -59,7 +59,7 @@ function E(e) {
       })
     },
     onDismissAndLeave: () => {
-      k.current = true, C(), o.default.disconnect(), m.default.track(A.HAw.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
+      k.current = true, C(), l.default.disconnect(), m.default.track(A.HAw.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
         action: N.Qi.CLICK_TO_LEAVE,
         channel_id: t,
         blocked_user_ids: O ? [n] : [],

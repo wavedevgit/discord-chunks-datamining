@@ -2,7 +2,7 @@
 /** chunk id: 682561, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./321073.js"), require("./65821.js"), require("./896048.js"), require("./457529.js"), require("./667532.js"), require("./747238.js");
 var r, Chunk837385 = require("./837385.js"),
   a = require.n(Chunk837385),
@@ -20,7 +20,7 @@ var r, Chunk837385 = require("./837385.js"),
   Chunk731854 = require("./731854.js"),
   Chunk396574 = require("./396574.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,14 +28,14 @@ function b(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let y = 10,
+let b = 10,
   O = 10,
-  A = null == (r = c().name) ? true : r.toLowerCase().includes("firefox");
+  v = null == (r = c().name) ? true : r.toLowerCase().includes("firefox");
 
-function v(e, t) {
+function A(e, t) {
   e.sender.replaceTrack(t), e.direction = null != t ? "sendrecv" : "recvonly"
 }
-class S extends Chunk909131.A {
+class I extends Chunk909131.A {
   destroy() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
     super.destroy(e), "closed" !== this.signalingState && this.pc.close()
@@ -47,7 +47,7 @@ class S extends Chunk909131.A {
   }
   setStream(e) {
     let t = "closed" === this.iceConnectionState;
-    null != e && !t && (v(this.audioTransceiver, e.getAudioTracks()[0]), this.videoSupported && v(this.videoTransceiver, e.getVideoTracks()[0])), this.logger.info("Renegotiating: Streams changed"), this.handleNegotiationNeeded()
+    null != e && !t && (A(this.audioTransceiver, e.getAudioTracks()[0]), this.videoSupported && A(this.videoTransceiver, e.getVideoTracks()[0])), this.logger.info("Renegotiating: Streams changed"), this.handleNegotiationNeeded()
   }
   createUser(e, t, n) {
     var r, i, a;
@@ -61,10 +61,10 @@ class S extends Chunk909131.A {
         ssrc: t
       });
       let n = this.inactiveTransceivers.audio.length,
-        r = y + this.unassignedStreams.audio.length - n;
+        r = b + this.unassignedStreams.audio.length - n;
       this.addTransceivers("audio", "recvonly", r)
     }
-    if (this.videoSupported && true !== n && (!A || true === o.videoSSRC)) {
+    if (this.videoSupported && true !== n && (!v || true === o.videoSSRC)) {
       let t = null != n && n.length > 0 ? n[0] : 0;
       if (t > 0) {
         if (o.videoSSRC !== t) {
@@ -381,13 +381,13 @@ class S extends Chunk909131.A {
   }
   constructor(e) {
     var t;
-    super(e), b(this, "pc", true), b(this, "sdp", null), b(this, "negotiating", false), b(this, "negotiationNeeded", false), b(this, "audioTransceiver", true), b(this, "videoTransceiver", true), b(this, "users", new Map), b(this, "userIdsBySsrc", new Map), b(this, "assignedStreams", new Map), b(this, "unassignedStreams", {
+    super(e), y(this, "pc", true), y(this, "sdp", null), y(this, "negotiating", false), y(this, "negotiationNeeded", false), y(this, "audioTransceiver", true), y(this, "videoTransceiver", true), y(this, "users", new Map), y(this, "userIdsBySsrc", new Map), y(this, "assignedStreams", new Map), y(this, "unassignedStreams", {
       audio: [],
       video: []
-    }), b(this, "inactiveTransceivers", {
+    }), y(this, "inactiveTransceivers", {
       audio: [],
       video: []
-    }), b(this, "trackUserIds", {}), b(this, "audioCodec", null), b(this, "audioPayloadType", null), b(this, "videoCodec", null), b(this, "videoPayloadType", null), b(this, "rtxPayloadType", null), b(this, "enableAudioNack", false), b(this, "extensions", []), b(this, "codecs", []), b(this, "daveSessionManager", null), b(this, "logger", true), b(this, "getUserIdBySsrc", e => this.userIdsBySsrc.get(e)), b(this, "handlePeerConnectionStateChange", () => {
+    }), y(this, "trackUserIds", {}), y(this, "audioCodec", null), y(this, "audioPayloadType", null), y(this, "videoCodec", null), y(this, "videoPayloadType", null), y(this, "rtxPayloadType", null), y(this, "enableAudioNack", false), y(this, "extensions", []), y(this, "codecs", []), y(this, "daveSessionManager", null), y(this, "logger", true), y(this, "getUserIdBySsrc", e => this.userIdsBySsrc.get(e)), y(this, "handlePeerConnectionStateChange", () => {
       let e = this.peerConnectionState;
       switch (this.logger.info("peerConnectionState =>", e), e) {
         case "connected":
@@ -403,7 +403,7 @@ class S extends Chunk909131.A {
         case "closed":
           this.setConnectionState(g.$I.DISCONNECTED)
       }
-    }), b(this, "handleIceConnectionStateChange", () => {
+    }), y(this, "handleIceConnectionStateChange", () => {
       let e = this.iceConnectionState;
       switch (this.logger.info("iceConnectionState =>", e), e) {
         case "connected":
@@ -419,12 +419,12 @@ class S extends Chunk909131.A {
         case "closed":
           this.setConnectionState(g.$I.DISCONNECTED)
       }
-    }), b(this, "handleSignalingStateChange", () => {
+    }), y(this, "handleSignalingStateChange", () => {
       let e = this.signalingState;
       this.logger.info("signalingState => ".concat(e))
-    }), b(this, "handleIceGatheringStateChange", () => {
+    }), y(this, "handleIceGatheringStateChange", () => {
       this.logger.info("iceGatheringState =>", this.iceGatheringState)
-    }), b(this, "handleTrack", e => {
+    }), y(this, "handleTrack", e => {
       let t = e.streams[0].id,
         n = e.track;
       if (!/^default/.test(n.id)) {
@@ -455,6 +455,6 @@ class S extends Chunk909131.A {
       sendEncodings: [{
         maxBitrate: this.voiceBitrate
       }]
-    }), null == (t = this.daveSessionManager) || t.setupEncodedTransformsForTransceiver(this.audioTransceiver), this.videoSupported && (this.addTransceivers("video", "recvonly", 1, this.input.getVideoStream()), this.videoTransceiver = r.getTransceivers()[1]), this.addTransceivers("audio", "recvonly", y), this.videoSupported && this.addTransceivers("video", "recvonly", O), this.setStream(this.input.stream), this.logger.info("Renegotiating: Initial negotiation, user id: ".concat(e.userId)), this.handleNegotiationNeeded(true)
+    }), null == (t = this.daveSessionManager) || t.setupEncodedTransformsForTransceiver(this.audioTransceiver), this.videoSupported && (this.addTransceivers("video", "recvonly", 1, this.input.getVideoStream()), this.videoTransceiver = r.getTransceivers()[1]), this.addTransceivers("audio", "recvonly", b), this.videoSupported && this.addTransceivers("video", "recvonly", O), this.setStream(this.input.stream), this.logger.info("Renegotiating: Initial negotiation, user id: ".concat(e.userId)), this.handleNegotiationNeeded(true)
   }
 }

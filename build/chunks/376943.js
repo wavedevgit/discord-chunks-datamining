@@ -6,7 +6,7 @@ require.d(exports, {
   Ju: () => _,
   SK: () => g,
   nc: () => E,
-  r9: () => b,
+  r9: () => y,
   vu: () => m
 }), require("./591487.js"), require("./727858.js"), require("./747238.js");
 var Chunk734057 = require("./734057.js"),
@@ -66,7 +66,7 @@ function E(e) {
   return !!e.isPrivate() || a.A.can(o.xBc.VIEW_CHANNEL, e)
 }
 
-function b(e) {
+function y(e) {
   let {
     guildId: t,
     channelId: n

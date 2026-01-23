@@ -1,7 +1,7 @@
 /** Chunk was on 22477 **/
 /** chunk id: 996958, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => y
+  A: () => _
 }), require("./896048.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -52,20 +52,20 @@ function j(e, t) {
   }), e
 }
 
-function y() {
+function _() {
   var e, t;
-  let [n, i] = (0, l.useState)(false), [s, d] = (0, l.useState)(false), [h, x] = (0, l.useState)(null), y = (0, u.Ay)(e => e.toolsCache), {
+  let [n, r] = (0, l.useState)(false), [s, d] = (0, l.useState)(false), [h, g] = (0, l.useState)(null), _ = (0, u.Ay)(e => e.toolsCache), {
     setToolsCache: O,
     removeToolsCache: E
   } = (0, u.DE)(), {
-    setImgCache: N
-  } = (0, u.TW)(), T = (0, l.useCallback)(e => {
-    let t = y[e];
-    null != t && x({
+    setImgCache: T
+  } = (0, u.TW)(), N = (0, l.useCallback)(e => {
+    let t = _[e];
+    null != t && g({
       src: t.url,
       palette: t.palette,
       preview: true
-    }), x(t => null == t ? {
+    }), g(t => null == t ? {
       src: e,
       palette: m.Wj,
       preview: true
@@ -73,77 +73,77 @@ function y() {
       src: e,
       preview: true
     }))
-  }, [y]), I = (0, l.useCallback)(e => {
-    x(t => null == t ? null : j(v({}, t), {
+  }, [_]), w = (0, l.useCallback)(e => {
+    g(t => null == t ? null : j(v({}, t), {
       palette: e,
       preview: true
     }))
-  }, []), k = (0, l.useCallback)(e => {
+  }, []), I = (0, l.useCallback)(e => {
     E(e)
   }, [E]);
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsxs)("div", {
-      className: g.ne,
+      className: b.ne,
       children: [(0, a.jsxs)("div", {
-        className: g.gO,
-        children: [(0, a.jsx)(r.Button, {
+        className: b.gO,
+        children: [(0, a.jsx)(i.Button, {
           size: "sm",
           onClick: () => {
-            d(false), i(e => !e)
+            d(false), r(e => !e)
           },
           variant: "secondary",
           text: "Toggle Themes"
-        }), (0, a.jsx)(r.Button, {
+        }), (0, a.jsx)(i.Button, {
           size: "sm",
           onClick: () => {
-            i(false), d(e => !e)
+            r(false), d(e => !e)
           },
           variant: "secondary",
           text: "Toggle Gradients"
         })]
       }), (0, a.jsxs)("div", {
-        className: g.uQ,
-        children: [n && (0, a.jsx)(c.I, {}), s && (0, a.jsx)(f.A, {
+        className: b.uQ,
+        children: [n && (0, a.jsx)(c.I, {}), s && (0, a.jsx)(x.A, {
           selected: null == h || null == (e = h.palette) ? true : e.name,
           onSelect: e => {
-            (null == h ? true : h.src) != null && O(h.src, h.src, e), I(e)
+            (null == h ? true : h.src) != null && O(h.src, h.src, e), w(e)
           }
         })]
       })]
     }), (0, a.jsxs)("div", {
-      className: g.iW,
-      children: [(0, a.jsx)(_, {
+      className: b.iW,
+      children: [(0, a.jsx)(y, {
         nameplate: h
       }, null == h || null == (t = h.palette) ? true : t.name), (0, a.jsxs)("div", {
-        className: g.Uo,
-        children: [(0, a.jsx)(r.Text, {
+        className: b.Uo,
+        children: [(0, a.jsx)(i.Text, {
           variant: "text-sm/semibold",
           children: "Drag background image to screen"
         }), (0, a.jsx)(o.A, {
           title: "upload image",
           description: "upload the background",
-          icons: b.xi,
+          icons: f.xi,
           onDrop: async e => {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
               a = await n.arrayBuffer();
-            N(t, t, (0, p.nI)(a)), O(t, t, m.Wj)
+            T(t, t, (0, p.nI)(a)), O(t, t, m.Wj)
           }
         }), (0, a.jsx)("div", {
-          className: g.is,
-          children: Object.values(y).map(e => {
+          className: b.is,
+          children: Object.values(_).map(e => {
             let {
               url: t
             } = e;
             return (0, a.jsx)(A, {
               src: t,
-              onSetStatic: T,
-              removeAsset: k
+              onSetStatic: N,
+              removeAsset: I
             }, t)
           })
         }), (0, a.jsx)(S, {
           label: "gradient override",
-          onChange: e => I({
+          onChange: e => w({
             name: m.AK,
             darkBackground: e,
             lightBackground: e
@@ -157,13 +157,13 @@ function y() {
   })
 }
 
-function _(e) {
+function y(e) {
   let {
     nameplate: t
-  } = e, [n, i] = (0, l.useState)(320), s = (0, l.useRef)(null), o = (0, l.useRef)(null), c = (0, l.useRef)(null), d = (0, l.useRef)(document), u = (0, l.useCallback)(e => {
+  } = e, [n, r] = (0, l.useState)(320), s = (0, l.useRef)(null), o = (0, l.useRef)(null), c = (0, l.useRef)(null), d = (0, l.useRef)(document), u = (0, l.useCallback)(e => {
     if (null != s.current) {
       let t = s.current.getBoundingClientRect();
-      i(Math.max(264, Math.min(432, e.clientX - t.left)))
+      r(Math.max(264, Math.min(432, e.clientX - t.left)))
     }
   }, []), m = (0, l.useCallback)(e => {
     e.preventDefault(), e.stopPropagation();
@@ -179,32 +179,32 @@ function _(e) {
   }, [u]);
   return (0, l.useEffect)(() => () => {
     null != o.current && (d.current.removeEventListener("mousemove", o.current), o.current = null), null != c.current && (d.current.removeEventListener("mouseup", c.current), c.current = null)
-  }, []), (0, a.jsx)(r.IpV, {
-    className: g.Fp,
+  }, []), (0, a.jsx)(i.IpV, {
+    className: b.Fp,
     orientation: "horizontal",
     children: (0, a.jsxs)("div", {
       ref: s,
-      className: g.ey,
+      className: b.ey,
       style: {
         width: "".concat(n, "px")
       },
-      children: [(0, a.jsx)(r.Text, {
+      children: [(0, a.jsx)(i.Text, {
         variant: "text-sm/semibold",
         children: "Memberlist"
       }), (0, a.jsx)(O, {
         nameplate: t
-      }), (0, a.jsx)(r.Text, {
+      }), (0, a.jsx)(i.Text, {
         variant: "text-sm/semibold",
         children: "DMs"
       }), (0, a.jsx)(E, {
         nameplate: t
-      }), (0, a.jsx)(r.Text, {
+      }), (0, a.jsx)(i.Text, {
         variant: "text-sm/semibold",
         children: "RTC"
-      }), (0, a.jsx)(N, {
+      }), (0, a.jsx)(T, {
         nameplate: t
       }), (0, a.jsx)("div", {
-        className: g.Di,
+        className: b.Di,
         onMouseDown: m
       })]
     })
@@ -218,23 +218,23 @@ function A(e) {
     removeAsset: l
   } = e;
   return (0, a.jsxs)("div", {
-    className: g.xO,
-    children: [(0, a.jsx)(r.DUT, {
+    className: b.xO,
+    children: [(0, a.jsx)(i.DUT, {
       onClick: () => l(t),
-      className: g.yV,
-      children: (0, a.jsx)(r.PGe, {
+      className: b.yV,
+      children: (0, a.jsx)(i.PGe, {
         size: "custom",
         width: 16,
         height: 16,
         name: "x"
       })
     }), (0, a.jsx)("img", {
-      className: g.Ez,
+      className: b.Ez,
       src: t,
       alt: ""
     }), (0, a.jsx)("div", {
-      className: g.Lu,
-      children: (0, a.jsx)(r.Button, {
+      className: b.Lu,
+      children: (0, a.jsx)(i.Button, {
         onClick: () => n(t),
         size: "sm",
         variant: "secondary",
@@ -250,11 +250,11 @@ function C(e) {
     onClick: n
   } = e;
   return (0, a.jsxs)("div", {
-    className: g.Uu,
-    children: [(0, a.jsx)(r.Text, {
+    className: b.Uu,
+    children: [(0, a.jsx)(i.Text, {
       variant: "text-sm/normal",
       children: "coming soon"
-    }), (0, a.jsx)(r.Button, {
+    }), (0, a.jsx)(i.Button, {
       variant: "secondary",
       size: "sm",
       text: t,
@@ -270,15 +270,15 @@ function S(e) {
     onChange: n
   } = e;
   return (0, a.jsxs)("div", {
-    className: g.Im,
-    children: [(0, a.jsx)(r.Text, {
+    className: b.Im,
+    children: [(0, a.jsx)(i.Text, {
       variant: "text-sm/normal",
       children: t
     }), (0, a.jsx)("input", {
       onChange: e => {
         n(e.target.value)
       },
-      className: g.QL,
+      className: b.QL,
       placeholder: "#000000"
     })]
   })
@@ -287,21 +287,21 @@ function S(e) {
 function O(e) {
   let {
     nameplate: t
-  } = e, n = (0, i.bG)([d.default], () => d.default.getCurrentUser());
+  } = e, n = (0, r.bG)([d.default], () => d.default.getCurrentUser());
   return (0, a.jsx)("div", {
-    className: g.VH,
+    className: b.VH,
     children: (0, a.jsxs)("div", {
-      className: g.H1,
-      children: [(0, a.jsx)(r.Text, {
-        className: g.Pf,
+      className: b.H1,
+      children: [(0, a.jsx)(i.Text, {
+        className: b.Pf,
         variant: "text-sm/semibold",
         children: "DEFAULT"
       }), (0, a.jsx)(s.A, {
         nameplate: t,
         user: n,
         currentUser: n
-      }), (0, a.jsx)(r.Text, {
-        className: g.Pf,
+      }), (0, a.jsx)(i.Text, {
+        className: b.Pf,
         variant: "text-sm/semibold",
         children: "FOCUSED"
       }), (0, a.jsxs)("div", {
@@ -325,24 +325,24 @@ function E(e) {
     nameplate: t
   } = e;
   return (0, a.jsx)("div", {
-    className: g.VH,
+    className: b.VH,
     children: (0, a.jsxs)("div", {
-      className: g.H1,
-      children: [(0, a.jsx)(r.Text, {
-        className: g.Pf,
+      className: b.H1,
+      children: [(0, a.jsx)(i.Text, {
+        className: b.Pf,
         variant: "text-sm/semibold",
         children: "DEFAULT"
-      }), (0, a.jsx)(x.A, {
+      }), (0, a.jsx)(g.A, {
         nameplate: t
-      }), (0, a.jsx)(r.Text, {
-        className: g.Pf,
+      }), (0, a.jsx)(i.Text, {
+        className: b.Pf,
         variant: "text-sm/semibold",
         children: "FOCUSED"
       }), (0, a.jsxs)("div", {
-        children: [(0, a.jsx)(x.A, {
+        children: [(0, a.jsx)(g.A, {
           selected: true,
           nameplate: t
-        }), (0, a.jsx)(x.A, {
+        }), (0, a.jsx)(g.A, {
           selected: true
         })]
       })]
@@ -350,14 +350,14 @@ function E(e) {
   })
 }
 
-function N(e) {
+function T(e) {
   let {
     nameplate: t
   } = e;
   return (0, a.jsx)("div", {
-    className: g.VH,
+    className: b.VH,
     children: (0, a.jsx)("div", {
-      className: g.X2,
+      className: b.X2,
       children: (0, a.jsx)(h.A, {
         nameplate: t
       })

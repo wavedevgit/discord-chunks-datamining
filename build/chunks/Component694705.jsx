@@ -2,8 +2,8 @@
 /** chunk id: 694705, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => A,
-  v: () => y
+  f: () => v,
+  v: () => b
 }), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -59,10 +59,10 @@ function E(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let b = Chunk64700.createContext(true);
+let y = Chunk64700.createContext(true);
 
-function y() {
-  let e = i.useContext(b);
+function b() {
+  let e = i.useContext(y);
   return s()(null != e, "useEntryDataContext must be used within a EntryDataContextProvider"), e
 }
 
@@ -77,11 +77,11 @@ function O(e) {
   }, n);
   switch (t.content_type) {
     case o.I.TOP_ARTIST:
-      return (0, r.jsx)(S, m({
+      return (0, r.jsx)(I, m({
         entry: t
       }, i));
     case o.I.TOP_GAME:
-      return (0, r.jsx)(I, m({
+      return (0, r.jsx)(S, m({
         entry: t
       }, i));
     case o.I.PLAYED_GAME:
@@ -97,7 +97,7 @@ function O(e) {
         entry: t
       }, i));
     case o.I.LAUNCHED_ACTIVITY:
-      return (0, r.jsx)(v, m({
+      return (0, r.jsx)(A, m({
         entry: t
       }, i));
     default:
@@ -105,7 +105,7 @@ function O(e) {
   }
 }
 
-function A(e) {
+function v(e) {
   let {
     errorFallback: t
   } = e, n = g(e, ["errorFallback"]);
@@ -115,29 +115,14 @@ function A(e) {
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     entry: t,
     children: n
   } = e, i = g(e, ["entry", "children"]), a = (0, c.A)(m({
     entry: t
   }, i));
-  return (0, r.jsx)(b.Provider, {
-    value: m({
-      parsedEntry: a
-    }, i),
-    children: n
-  })
-}
-
-function S(e) {
-  let {
-    entry: t,
-    children: n
-  } = e, i = g(e, ["entry", "children"]), a = (0, p.A)(m({
-    entry: t
-  }, i));
-  return (0, r.jsx)(b.Provider, {
+  return (0, r.jsx)(y.Provider, {
     value: m({
       parsedEntry: a
     }, i),
@@ -149,10 +134,25 @@ function I(e) {
   let {
     entry: t,
     children: n
+  } = e, i = g(e, ["entry", "children"]), a = (0, p.A)(m({
+    entry: t
+  }, i));
+  return (0, r.jsx)(y.Provider, {
+    value: m({
+      parsedEntry: a
+    }, i),
+    children: n
+  })
+}
+
+function S(e) {
+  let {
+    entry: t,
+    children: n
   } = e, i = g(e, ["entry", "children"]), a = (0, d.A)(m({
     entry: t
   }, i));
-  return (0, r.jsx)(b.Provider, {
+  return (0, r.jsx)(y.Provider, {
     value: m({
       parsedEntry: a
     }, i),
@@ -167,7 +167,7 @@ function T(e) {
   } = e, i = g(e, ["entry", "children"]), a = (0, d.A)(m({
     entry: t
   }, i));
-  return (0, r.jsx)(b.Provider, {
+  return (0, r.jsx)(y.Provider, {
     value: m({
       parsedEntry: a
     }, i),
@@ -182,7 +182,7 @@ function C(e) {
   } = e, i = g(e, ["entry", "children"]), a = (0, _.A)(m({
     entry: t
   }, i));
-  return (0, r.jsx)(b.Provider, {
+  return (0, r.jsx)(y.Provider, {
     value: m({
       parsedEntry: a
     }, i),
@@ -197,7 +197,7 @@ function N(e) {
   } = e, i = g(e, ["entry", "children"]), a = (0, f.A)(m({
     entry: t
   }, i));
-  return (0, r.jsx)(b.Provider, {
+  return (0, r.jsx)(y.Provider, {
     value: m({
       parsedEntry: a
     }, i),

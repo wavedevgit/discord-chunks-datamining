@@ -2,7 +2,7 @@
 /** chunk id: 649658, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  y: () => b
+  y: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -94,7 +94,7 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     readyState: t,
     aspectRatio: n,
@@ -102,10 +102,10 @@ function b(e) {
     placeholderVersion: d,
     placeholderStyle: f,
     children: p
-  } = e, _ = t === l.Rv1.LOADING, [h] = i.useState(_), [m, b] = i.useState(false), y = (0, o._)(u, d, h);
+  } = e, _ = t === l.Rv1.LOADING, [h] = i.useState(_), [m, y] = i.useState(false), b = (0, o._)(u, d, h);
   i.useEffect(() => {
     let e = setTimeout(() => {
-      b(true)
+      y(true)
     }, 2e3);
     return () => {
       clearTimeout(e)
@@ -117,9 +117,9 @@ function b(e) {
     style: {
       aspectRatio: n
     },
-    children: [p, null != y && (0, r.jsx)(E, {
+    children: [p, null != b && (0, r.jsx)(E, {
       readyState: t,
-      placeholderImg: y,
+      placeholderImg: b,
       placeholderStyle: f
     }), O((e, t) => t && (0, r.jsx)(a.animated.div, {
       style: e,

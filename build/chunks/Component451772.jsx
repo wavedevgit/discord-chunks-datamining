@@ -23,7 +23,7 @@ let u = 5500,
       onClick: _,
       skipNewUserEducation: h = false,
       shadowPosition: m
-    } = e, g = (0, l.A)(), E = i.useMemo(() => null == g ? true : g.seats[p], [g, p]), b = i.useMemo(() => null == E ? true : E.seat, [E]), y = i.useMemo(() => null == E ? true : E.shadow, [E]);
+    } = e, g = (0, l.A)(), E = i.useMemo(() => null == g ? true : g.seats[p], [g, p]), y = i.useMemo(() => null == E ? true : E.seat, [E]), b = i.useMemo(() => null == E ? true : E.shadow, [E]);
     return (0, r.jsx)(o.DUT, {
       "aria-label": "claim seat",
       onClick: null != _ ? e => {
@@ -37,14 +37,14 @@ let u = 5500,
       },
       children: (0, r.jsxs)("div", {
         className: c.LU,
-        children: [null != y && null != m && (0, r.jsx)("img", {
+        children: [null != b && null != m && (0, r.jsx)("img", {
           className: s()(c.Sl, c.r7),
           style: {
             transform: "translate(".concat(m.x, "px, ").concat(m.y, "px)")
           },
           src: null == E ? true : E.shadow,
           alt: ""
-        }), null != b && (0, r.jsx)("img", {
+        }), null != y && (0, r.jsx)("img", {
           onDragStart: e => e.preventDefault(),
           className: s()(c.Sl, {
             [c.Sf]: null != n,

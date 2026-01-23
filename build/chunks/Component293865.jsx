@@ -1,7 +1,7 @@
 /** Chunk was on 33957 **/
 /** chunk id: 293865, original params: e,n,l (module,exports,require) **/
 require.d(exports, {
-  A: () => N
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,14 +23,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk66087 = require("./66087.js"),
   Chunk540725 = require("./540725.js");
 
-function y(e) {
+function v(e) {
   let {
     guild: n
   } = e, {
     variant: l,
-    icon: a,
-    text: r
-  } = n.features.has(g.GuildFeatures.BANNER) ? {
+    icon: r,
+    text: a
+  } = n.features.has(b.GuildFeatures.BANNER) ? {
     variant: "overlay-secondary",
     icon: c.XGR,
     text: j.intl.string(j.t.b0y3DL)
@@ -40,74 +40,74 @@ function y(e) {
     text: j.intl.string(j.t["+7XY31"])
   };
   return (0, t.jsx)("div", {
-    className: A.SY,
+    className: p.SY,
     children: (0, t.jsx)(c.Button, {
       variant: l,
-      icon: a,
-      text: r,
+      icon: r,
+      text: a,
       onClick: () => {
-        h.A.open(n.id, g.BEX.ONBOARDING, true, g.nd0.SERVER_GUIDE)
+        h.A.open(n.id, b.BEX.ONBOARDING, true, b.nd0.SERVER_GUIDE)
       }
     })
   })
 }
-let N = Chunk64700.memo(function(e) {
+let y = Chunk64700.memo(function(e) {
   let n, {
-      guild: r,
+      guild: a,
       titleClassName: h
     } = e,
     {
-      homeHeaderImage: N,
-      isHomeHeaderImageSet: O
+      homeHeaderImage: y,
+      isHomeHeaderImageSet: I
     } = {
-      homeHeaderImage: n = a.useMemo(() => null == r ? null : x.Ay.getGuildHomeHeaderURL({
-        id: r.id,
-        homeHeader: r.homeHeader
-      }), [r]),
+      homeHeaderImage: n = r.useMemo(() => null == a ? null : x.Ay.getGuildHomeHeaderURL({
+        id: a.id,
+        homeHeader: a.homeHeader
+      }), [a]),
       isHomeHeaderImageSet: null != n,
       homeHeaderScroll: 200 * (null != n)
     },
-    I = (0, f.A2)(r.id),
-    C = (0, s.bG)([m.A], () => (0, b.K)(m.A, r)),
-    _ = (0, d.Ay)();
+    N = (0, m.A2)(a.id),
+    C = (0, s.bG)([g.A], () => (0, f.K)(g.A, a)),
+    O = (0, o.Ay)();
   return (0, t.jsxs)("div", {
-    className: A.wx,
+    className: p.wx,
     children: [(0, t.jsxs)("div", {
-      className: A.w5,
+      className: p.w5,
       children: [(0, t.jsx)("div", {
-        className: i()(A.NC, {
-          [A.KN]: !O
+        className: i()(p.NC, {
+          [p.KN]: !I
         }),
         style: {
-          backgroundImage: "url(".concat(O ? N : "dark" === _ ? p : v, ")")
+          backgroundImage: "url(".concat(I ? y : "dark" === O ? A : _, ")")
         }
-      }), I && (0, t.jsx)(y, {
-        guild: r
+      }), N && (0, t.jsx)(v, {
+        guild: a
       })]
     }), (0, t.jsx)("div", {
-      className: A.oB,
+      className: p.oB,
       children: (0, t.jsxs)("div", {
         className: h,
-        children: [(0, t.jsx)(o.A, {
-          className: A.nr,
-          guild: r,
-          size: o.A.Sizes.XLARGE,
+        children: [(0, t.jsx)(d.A, {
+          className: p.nr,
+          guild: a,
+          size: d.A.Sizes.XLARGE,
           active: true
         }), (0, t.jsx)(c.Fmo, {
           children: (0, t.jsxs)("div", {
-            className: A.Bv,
+            className: p.Bv,
             children: [(0, t.jsx)(c.Heading, {
-              className: A.Bv,
+              className: p.Bv,
               variant: "heading-xxl/bold",
-              children: r.name
+              children: a.name
             }), (0, t.jsx)(u.A, {
               size: 24,
-              guild: r,
+              guild: a,
               tooltipPosition: "bottom",
               tooltipColor: c.STz.Colors.PRIMARY
             }), C && (0, t.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
-              className: A.ak,
+              className: p.ak,
               children: (0, t.jsx)(c.Button, {
                 variant: "secondary",
                 text: j.intl.string(j.t.VINpSK),
@@ -116,7 +116,7 @@ let N = Chunk64700.memo(function(e) {
                     default: e
                   } = await Promise.all([l.e("43600"), l.e("65202")]).then(l.bind(l, 234355));
                   return n => {
-                    var l, a;
+                    var l, r;
                     return (0, t.jsx)(e, (l = function(e) {
                       for (var n = 1; n < arguments.length; n++) {
                         var l = null != arguments[n] ? arguments[n] : {},
@@ -134,18 +134,18 @@ let N = Chunk64700.memo(function(e) {
                         })
                       }
                       return e
-                    }({}, n), a = a = {
-                      guild: r,
-                      source: g.PE1.GUILD_HOME
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, n) {
+                    }({}, n), r = r = {
+                      guild: a,
+                      source: b.PE1.GUILD_HOME
+                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(r)) : (function(e, n) {
                       var l = Object.keys(e);
                       if (Object.getOwnPropertySymbols) {
                         var t = Object.getOwnPropertySymbols(e);
                         l.push.apply(l, t)
                       }
                       return l
-                    })(Object(a)).forEach(function(e) {
-                      Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
+                    })(Object(r)).forEach(function(e) {
+                      Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(r, e))
                     }), l))
                   }
                 })

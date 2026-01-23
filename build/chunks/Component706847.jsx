@@ -1,13 +1,13 @@
 /** Chunk was on 97492 **/
 /** chunk id: 706847, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  p: () => m,
+  p: () => b,
   z: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk58149 = require("./58149.js"),
   Chunk954571 = require("./954571.js"),
@@ -17,7 +17,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk783971 = require("./783971.js");
 
-function b(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function b(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,29 +49,29 @@ function g(e, t) {
   }), e
 }
 
-function m(e) {
+function b(e) {
   let {
     channel: t,
     narrow: n
   } = e, i = (0, d.lK)(t);
   return l.useEffect(() => {
-    c.default.track(f.HAw.CHANNEL_BANNER_VIEWED, g(b({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
+    c.default.track(p.HAw.CHANNEL_BANNER_VIEWED, m(g({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
       banner_type: "thread"
     }))
   }, [t]), (0, r.jsxs)("div", {
-    className: a()(h.JD, {
-      [h.sc]: n
+    className: s()(f.JD, {
+      [f.sc]: n
     }),
-    children: [(0, r.jsx)(s.Text, {
-      className: h.E5,
+    children: [(0, r.jsx)(a.Text, {
+      className: f.E5,
       variant: "text-sm/normal",
       color: "text-default",
-      children: t.isForumPost() ? p.intl.string(p.t["833FDn"]) : p.intl.string(p.t.rEeodK)
-    }), i ? (0, r.jsx)(s.Button, {
+      children: t.isForumPost() ? h.intl.string(h.t["833FDn"]) : h.intl.string(h.t.rEeodK)
+    }), i ? (0, r.jsx)(a.Button, {
       variant: "secondary",
-      text: p.intl.string(p.t["0dvvEi"]),
+      text: h.intl.string(h.t["0dvvEi"]),
       onClick: () => {
-        c.default.track(f.HAw.CHANNEL_BANNER_CTA_CLICKED, g(b({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
+        c.default.track(p.HAw.CHANNEL_BANNER_CTA_CLICKED, m(g({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
           banner_type: "thread",
           cta_type: "unarchive"
         })), u.A.unarchiveThread(t, false)
@@ -87,23 +87,23 @@ function A(e) {
     narrow: n
   } = e, i = (0, d.H_)(t);
   return l.useEffect(() => {
-    c.default.track(f.HAw.CHANNEL_BANNER_VIEWED, g(b({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
+    c.default.track(p.HAw.CHANNEL_BANNER_VIEWED, m(g({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
       banner_type: "thread"
     }))
   }, [t]), (0, r.jsxs)("div", {
-    className: a()(h.JD, {
-      [h.sc]: n
+    className: s()(f.JD, {
+      [f.sc]: n
     }),
-    children: [(0, r.jsx)(s.Text, {
-      className: h.E5,
+    children: [(0, r.jsx)(a.Text, {
+      className: f.E5,
       variant: "text-sm/normal",
       color: "text-default",
-      children: t.isForumPost() ? p.intl.string(p.t.E7oO8u) : p.intl.string(p.t["V/JF2N"])
-    }), i ? (0, r.jsx)(s.Button, {
+      children: t.isForumPost() ? h.intl.string(h.t.E7oO8u) : h.intl.string(h.t["V/JF2N"])
+    }), i ? (0, r.jsx)(a.Button, {
       variant: "secondary",
-      text: p.intl.string(p.t.zA9d1J),
+      text: h.intl.string(h.t.zA9d1J),
       onClick: () => {
-        c.default.track(f.HAw.CHANNEL_BANNER_CTA_CLICKED, g(b({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
+        c.default.track(p.HAw.CHANNEL_BANNER_CTA_CLICKED, m(g({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
           banner_type: "thread",
           cta_type: "unlock"
         })), u.A.unlockThread(t)

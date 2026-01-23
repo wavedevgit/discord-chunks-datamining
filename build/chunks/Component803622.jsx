@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk607399 = require("./607399.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -34,27 +34,27 @@ let T = e => {
     let {
       userId: t,
       channelId: n
-    } = e, i = (0, o.bG)([y.A], () => y.A.getMutualGuilds(t), [t]), a = l.useMemo(() => null != i ? i.slice(0, 3).map((e, t) => {
+    } = e, i = (0, o.bG)([y.A], () => y.A.getMutualGuilds(t), [t]), s = l.useMemo(() => null != i ? i.slice(0, 3).map((e, t) => {
       let {
         guild: n
-      } = e, l = null != n ? E.Ay.getGuildIconURL({
+      } = e, l = null != n ? x.Ay.getGuildIconURL({
         id: n.id,
         icon: n.icon,
         size: 24
       }) : null;
       if (null == l) return null;
-      let a = t === (i.length > 3 ? 3 : i.length) - 1,
-        s = (0, r.jsx)("img", {
+      let s = t === (i.length > 3 ? 3 : i.length) - 1,
+        a = (0, r.jsx)("img", {
           src: l,
           alt: "",
           className: N.my
         }, t);
-      return a ? s : (0, r.jsx)(f.Ay, {
+      return s ? a : (0, r.jsx)(p.Ay, {
         className: N.cp,
-        mask: f.Ay.Masks.VOICE_USER_SUMMARY_ITEM,
+        mask: p.Ay.Masks.VOICE_USER_SUMMARY_ITEM,
         width: 24,
         height: 24,
-        children: s
+        children: a
       }, t)
     }).filter(e => null != e) : [], [i]);
     return null == i || 0 === i.length ? (0, r.jsx)(c.Text, {
@@ -64,10 +64,10 @@ let T = e => {
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: N.H,
-        children: a
+        children: s
       }), (0, r.jsx)(c.DUT, {
         onClick: () => {
-          (0, O.openUserProfileModal)({
+          (0, _.openUserProfileModal)({
             userId: t,
             channelId: n,
             tabSection: S.RP.MUTUAL_GUILDS,
@@ -90,7 +90,7 @@ let T = e => {
       relationshipType: n,
       userId: l,
       showingBanner: i
-    } = e, a = null == (t = x.default.getUser(l)) ? true : t.bot, s = () => {
+    } = e, s = null == (t = v.default.getUser(l)) ? true : t.bot, a = () => {
       u.A.addRelationship({
         userId: l,
         context: {
@@ -106,14 +106,14 @@ let T = e => {
         })
       },
       text: I.intl.string(I.t.l4Emac)
-    }), d = (0, p.D)(l);
+    }), d = (0, h.D)(l);
     switch (n) {
       case C.eA$.NONE:
         return (0, r.jsxs)(r.Fragment, {
-          children: [!a && !i && (0, r.jsx)(c.Button, {
+          children: [!s && !i && (0, r.jsx)(c.Button, {
             size: "sm",
             variant: "primary",
-            onClick: s,
+            onClick: a,
             text: d
           }), o]
         });
@@ -146,7 +146,7 @@ let T = e => {
           children: [(0, r.jsx)(c.Button, {
             size: "sm",
             variant: "primary",
-            onClick: s,
+            onClick: a,
             text: I.intl.string(I.t["+WbSn5"])
           }), (0, r.jsx)(c.Button, {
             size: "sm",
@@ -178,37 +178,37 @@ let T = e => {
       otherUserId: n
     } = e, i = l.useCallback(() => {
       (0, c.showToast)((0, c.createToast)(I.intl.string(I.t.a2j0hv), c.ToastType.FAILURE))
-    }, []), a = l.useCallback(() => {
-      A.A.closeChannelSidebar(j.fe)
     }, []), s = l.useCallback(() => {
-      A.A.closeChannelSidebar(j.fe)
+      A.A.closeChannelSidebar(O.fe)
+    }, []), a = l.useCallback(() => {
+      A.A.closeChannelSidebar(O.fe)
     }, []), {
       acceptMessageRequest: o,
       rejectMessageRequest: u,
       isAcceptLoading: d,
-      isRejectLoading: f,
-      isOptimisticAccepted: p,
-      isOptimisticRejected: h
-    } = (0, b.t)({
-      user: x.default.getUser(n),
+      isRejectLoading: p,
+      isOptimisticAccepted: h,
+      isOptimisticRejected: f
+    } = (0, g.t)({
+      user: v.default.getUser(n),
       onError: i,
-      onAcceptSuccess: s,
-      onRejectSuccess: a
-    }), g = d || f || p || h;
+      onAcceptSuccess: a,
+      onRejectSuccess: s
+    }), m = d || p || h || f;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.Button, {
         variant: "primary",
         size: "sm",
-        disabled: g,
+        disabled: m,
         onClick: () => o(t),
         loading: d,
         text: I.intl.string(I.t.Kz8Pwr)
       }), (0, r.jsx)(c.Button, {
         variant: "secondary",
         size: "sm",
-        disabled: g,
+        disabled: m,
         onClick: () => u(t),
-        loading: f,
+        loading: p,
         text: I.intl.string(I.t.B2nygW)
       })]
     })
@@ -220,12 +220,12 @@ let T = e => {
       showingBanner: l
     } = e, {
       channelId: i
-    } = (0, g.N)(), u = (0, o.bG)([h.A], () => null != i && h.A.isSpam(i), [i]), d = (0, o.bG)([v.A], () => v.A.getRelationshipType(t), [t]), f = n.id === i, p = !s.Fr && !f, b = !!s.Fr || f || u, A = u || f ? (0, r.jsxs)("div", {
+    } = (0, m.N)(), u = (0, o.bG)([f.A], () => null != i && f.A.isSpam(i), [i]), d = (0, o.bG)([j.A], () => j.A.getRelationshipType(t), [t]), p = n.id === i, h = !a.Fr && !p, g = !!a.Fr || p || u, A = u || p ? (0, r.jsxs)("div", {
       className: N.mG,
       children: [(0, r.jsx)(w, {
         channelId: n.id,
         otherUserId: t
-      }), (0, r.jsx)(m.A, {
+      }), (0, r.jsx)(b.A, {
         channel: n
       })]
     }) : (0, r.jsxs)("div", {
@@ -234,28 +234,28 @@ let T = e => {
         relationshipType: d,
         userId: t,
         showingBanner: l
-      }), !l && (0, r.jsx)(_.A, {
+      }), !l && (0, r.jsx)(E.A, {
         otherUserId: t,
         channel: n,
-        navigateAwayOnReportSuccess: p
+        navigateAwayOnReportSuccess: h
       })]
-    }), y = d !== C.eA$.PENDING_INCOMING || u || f ? null : (0, r.jsx)(c.Text, {
+    }), y = d !== C.eA$.PENDING_INCOMING || u || p ? null : (0, r.jsx)(c.Text, {
       color: "text-default",
       variant: "text-sm/normal",
       children: I.intl.string(I.t.c2v5nO)
     });
     return (0, r.jsxs)("div", {
-      className: b ? N.AA : N.kL,
+      className: g ? N.AA : N.kL,
       children: [(0, r.jsx)("div", {
         className: N.mG,
         children: (0, r.jsx)(T, {
           userId: t,
           channelId: n.id
         })
-      }), !b && (0, r.jsx)("div", {
+      }), !g && (0, r.jsx)("div", {
         className: N.yF
       }), (0, r.jsxs)("div", {
-        className: a()(N.mG, N.LV),
+        className: s()(N.mG, N.LV),
         children: [y, A]
       })]
     })

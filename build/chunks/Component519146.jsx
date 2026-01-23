@@ -1,12 +1,12 @@
 /** Chunk was on 69079 **/
 /** chunk id: 519146, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => A
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk284009 = require("./284009.js"),
-  l = require.n(Chunk284009),
+  a = require.n(Chunk284009),
   Chunk110259 = require("./110259.js"),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
@@ -23,72 +23,72 @@ var Chunk284009 = require("./284009.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk451144 = require("./451144.js");
 
-function O(e) {
+function A(e) {
   var t, n;
   let {
-    transitionState: a,
-    guildProductListingId: O,
-    analyticsLocation: v,
-    guildId: _,
+    transitionState: l,
+    guildProductListingId: A,
+    analyticsLocation: O,
+    guildId: v,
     onClose: y
-  } = e, N = (0, c.bG)([f.A], () => f.A.getGuildProduct(O));
-  l()(null != N, "guildProductListing cannot be null"), (0, u.A)({
-    type: s.ImpressionTypes.MODAL,
-    name: s.ImpressionNames.GUILD_PRODUCT_LISTING_INFO_MODAL,
+  } = e, N = (0, o.bG)([h.A], () => h.A.getGuildProduct(A));
+  a()(null != N, "guildProductListing cannot be null"), (0, u.A)({
+    type: i.ImpressionTypes.MODAL,
+    name: i.ImpressionNames.GUILD_PRODUCT_LISTING_INFO_MODAL,
     properties: {
-      guild_product_listing_id: O,
+      guild_product_listing_id: A,
       has_entitlement: true === N.has_entitlement,
-      location: v
+      location: O
     }
   });
-  let D = null != (t = (0, b.z)(N)) ? t : "",
-    I = (0, b.X)(N),
-    z = (0, c.bG)([h.A], () => h.A.getGuild(_)),
-    P = (0, p.A)({
-      guildId: _,
-      guildProductListingId: O,
+  let I = null != (t = (0, p.z)(N)) ? t : "",
+    D = (0, p.X)(N),
+    z = (0, o.bG)([f.A], () => f.A.getGuild(v)),
+    P = (0, _.A)({
+      guildId: v,
+      guildProductListingId: A,
       sourceAnalyticsLocations: d.A.GUILD_PRODUCT_INFO_MODAL
     });
-  return (0, r.jsxs)(i.Modal, {
+  return (0, r.jsxs)(s.Modal, {
     title: N.name,
     subtitle: g.intl.format(g.t.xImSei, {
-      productType: D,
+      productType: I,
       personName: null != (n = null == z ? true : z.name) ? n : ""
     }),
     size: "md",
-    transitionState: a,
+    transitionState: l,
     onClose: y,
     "aria-label": N.name,
     actions: [P],
-    actionBarInput: (0, r.jsx)(o.Text, {
+    actionBarInput: (0, r.jsx)(c.Text, {
       tag: "div",
       variant: "heading-xl/semibold",
       color: "text-strong",
-      children: I
+      children: D
     }),
     children: [(0, r.jsx)(m.y, {
       height: 267,
       listing: N,
-      className: A.F0,
+      className: b.F0,
       alt: ""
     }), (0, r.jsxs)("div", {
-      className: A.rf,
+      className: b.rf,
       children: [(0, r.jsx)(j.A, {
         listing: N
-      }), (0, r.jsx)(o.hKd, {
+      }), (0, r.jsx)(c.hKd, {
         size: 16
       }), (0, r.jsx)("div", {
-        className: A.OO
-      }), (0, r.jsx)(o.hKd, {
+        className: b.OO
+      }), (0, r.jsx)(c.hKd, {
         size: 16
-      }), (0, r.jsx)(o.Heading, {
+      }), (0, r.jsx)(c.Heading, {
         variant: "heading-lg/medium",
         color: "text-strong",
         children: g.intl.string(g.t.TNnDJs)
-      }), (0, r.jsx)(o.hKd, {
+      }), (0, r.jsx)(c.hKd, {
         size: 12
       }), (0, r.jsx)(x.A, {
-        className: A.h_,
+        className: b.h_,
         variant: "text-md/normal",
         color: "text-muted",
         text: N.description

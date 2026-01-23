@@ -1,12 +1,12 @@
 /** Chunk was on 26489 **/
-/** chunk id: 353174, original params: e,t,s (module,exports,require) **/
+/** chunk id: 353174, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   A: () => w
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  l = require.n(Chunk503698),
+  r = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
   n = require.n(Chunk284009),
   Chunk311907 = require("./311907.js"),
@@ -28,79 +28,79 @@ require("./232198.js");
 var Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk535828 = require("./535828.js");
-let S = e => {
+let b = e => {
     let {
       user: t,
-      trialCreationResult: s,
+      trialCreationResult: i,
       onClose: a
     } = e, {
-      avatarSrc: r,
+      avatarSrc: l,
       eventHandlers: n
     } = (0, f.A)({
       userId: null == t ? true : t.id,
       size: c._3J.SIZE_56
-    }), C = _.Ay.getName(t), o = t.username !== C && s === m.o.SUCCESS, h = s === m.o.FAIL;
-    return (0, i.jsxs)("div", {
-      className: A.El,
-      children: [(0, i.jsx)(c.euF, function(e) {
+    }), C = j.Ay.getName(t), o = t.username !== C && i === m.o.SUCCESS, h = i === m.o.FAIL;
+    return (0, s.jsxs)("div", {
+      className: S.El,
+      children: [(0, s.jsx)(c.euF, function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var s = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(s);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(s).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(s, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = s[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
+          var i = null != arguments[t] ? arguments[t] : {},
+            s = Object.keys(i);
+          "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(i).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(i, e).enumerable
+          }))), s.forEach(function(t) {
+            var s;
+            s = i[t], t in e ? Object.defineProperty(e, t, {
+              value: s,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = i
+            }) : e[t] = s
           })
         }
         return e
       }({
-        imageClassName: l()({
-          [A.jN]: h
+        imageClassName: r()({
+          [S.jN]: h
         }),
-        src: r,
+        src: l,
         "aria-label": C,
         size: c._3J.SIZE_56
-      }, n)), (0, i.jsxs)("div", {
-        className: A.Dp,
-        children: [h ? (0, i.jsxs)(i.Fragment, {
-          children: [(0, i.jsx)(c.Text, {
-            className: A.E0,
+      }, n)), (0, s.jsxs)("div", {
+        className: S.Dp,
+        children: [h ? (0, s.jsxs)(s.Fragment, {
+          children: [(0, s.jsx)(c.Text, {
+            className: S.E0,
             variant: "text-md/medium",
             children: C
-          }), (0, i.jsx)(c.Text, {
+          }), (0, s.jsx)(c.Text, {
             variant: "text-md/medium",
-            className: A.nT,
-            children: b.intl.format(b.t.RO3T4B, {
+            className: S.nT,
+            children: A.intl.format(A.t.RO3T4B, {
               userName: C
             })
           })]
-        }) : (0, i.jsx)(d.m, {
+        }) : (0, s.jsx)(d.m, {
           asContainer: true,
-          text: b.intl.string(b.t.xkVQPN),
+          text: A.intl.string(A.t.xkVQPN),
           position: "right",
-          children: (0, i.jsx)(c.DUT, {
+          children: (0, s.jsx)(c.DUT, {
             onClick: () => {
               var e;
               return e = t.id, void(u.A.hasLayers() && (0, p.jH)(), x.A.openPrivateChannel({
                 recipientIds: e
               }), a())
             },
-            className: A.t0,
-            children: (0, i.jsx)(c.Text, {
+            className: S.t0,
+            children: (0, s.jsx)(c.Text, {
               variant: "text-md/medium",
-              className: A.QC,
+              className: S.QC,
               children: C
             })
           })
-        }), o && (0, i.jsx)(c.Text, {
+        }), o && (0, s.jsx)(c.Text, {
           variant: "text-md/medium",
-          className: A.nT,
+          className: S.nT,
           children: t.username
         })]
       })]
@@ -109,44 +109,44 @@ let S = e => {
   w = e => {
     let {
       selectedUsers: t,
-      trialCreationResult: s,
+      trialCreationResult: i,
       onClose: a
-    } = e, l = [...t].map(e => (0, i.jsx)(S, {
+    } = e, r = [...t].map(e => (0, s.jsx)(b, {
       user: e,
-      trialCreationResult: s.get(e.id),
+      trialCreationResult: i.get(e.id),
       onClose: a
-    }, e.id)), r = (0, C.bG)([g.A], () => g.A.getReferralsRemaining());
-    n()(null !== r, "Referrals remaining should not be null");
+    }, e.id)), l = (0, C.bG)([g.A], () => g.A.getReferralsRemaining());
+    n()(null !== l, "Referrals remaining should not be null");
     let d = (0, h.DP)(),
       x = (0, o.qB)(d) ? y.A : L.A,
-      p = b.intl.string(b.t.Pcb7KF),
-      f = [...s.values()].filter(e => e === m.o.SUCCESS).length;
-    return r > 0 && (p = b.intl.formatToPlainString(b.t.iWtOfC, {
+      p = A.intl.string(A.t.Pcb7KF),
+      f = [...i.values()].filter(e => e === m.o.SUCCESS).length;
+    return l > 0 && (p = A.intl.formatToPlainString(A.t.iWtOfC, {
       numReferrals: f
-    })), 0 === f && (p = b.intl.string(b.t["7VBEue"])), (0, i.jsxs)("div", {
-      className: A.Jc,
-      children: [(0, i.jsx)(c.DUT, {
+    })), 0 === f && (p = A.intl.string(A.t["7VBEue"])), (0, s.jsxs)("div", {
+      className: S.Jc,
+      children: [(0, s.jsx)(c.DUT, {
         onClick: a,
-        className: A.cG,
-        children: (0, i.jsx)(c.PGe, {
+        className: S.cG,
+        children: (0, s.jsx)(c.PGe, {
           size: "custom",
           width: 20,
           height: 20
         })
-      }), (0, i.jsx)(x, {
-        className: A.nr
-      }), (0, i.jsx)(c.Heading, {
+      }), (0, s.jsx)(x, {
+        className: S.nr
+      }), (0, s.jsx)(c.Heading, {
         variant: "heading-lg/bold",
-        className: A.R_,
+        className: S.R_,
         children: p
-      }), (0, i.jsx)("div", {
-        className: A.wj,
-        children: l
-      }), (0, i.jsx)(c.Text, {
+      }), (0, s.jsx)("div", {
+        className: S.wj,
+        children: r
+      }), (0, s.jsx)(c.Text, {
         variant: "text-md/medium",
-        children: b.intl.format(b.t.CZaMHn, {
+        children: A.intl.format(A.t.CZaMHn, {
           days: 10,
-          helpdeskArticle: j.A.getArticleURL(v.MVz.REFERRAL_PROGRAM)
+          helpdeskArticle: _.A.getArticleURL(v.MVz.REFERRAL_PROGRAM)
         })
       })]
     })

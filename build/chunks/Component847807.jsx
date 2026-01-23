@@ -10,7 +10,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk653523 = require("./653523.jsx"),
   Chunk818348 = require("./818348.js");
 let c = function() {
-  let e = (0, r.Ay)();
+  let e = (0, i.Ay)();
   return (0, a.jsx)(l.D0$, {
     label: "Theme",
     children: (0, a.jsxs)("div", {
@@ -21,13 +21,13 @@ let c = function() {
       children: [(0, a.jsx)(s.zy, {
         theme: o.NJ.LIGHT,
         isSelected: e === o.NJ.LIGHT,
-        onSelect: () => (0, i.u_)({
+        onSelect: () => (0, r.u_)({
           theme: o.NJ.LIGHT
         })
       }), (0, a.jsx)(s.zy, {
         theme: o.NJ.DARK,
         isSelected: e === o.NJ.DARK,
-        onSelect: () => (0, i.u_)({
+        onSelect: () => (0, r.u_)({
           theme: o.NJ.DARK
         })
       })]

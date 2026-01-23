@@ -81,11 +81,11 @@ function _(e) {
     analyticsLocation: m,
     analyticsLocations: g,
     analyticsSubscriptionType: E,
-    renderHeader: b,
-    renderPurchaseConfirmation: y,
+    renderHeader: y,
+    renderPurchaseConfirmation: b,
     planGroup: O,
-    reviewWarningMessage: A,
-    skuId: v
+    reviewWarningMessage: v,
+    skuId: A
   } = e;
   (0, i.mMO)(async () => {
     let {
@@ -97,30 +97,30 @@ function _(e) {
     } = await Promise.all([n.e("14704"), n.e("29716"), n.e("2824"), n.e("58846")]).then(n.bind(n, 674619));
     return n => {
       let {
-        onClose: S
-      } = n, I = f(n, ["onClose"]);
+        onClose: I
+      } = n, S = f(n, ["onClose"]);
       return (0, r.jsx)(e, {
         activeSubscription: l,
         stepConfigs: o,
-        skuIDs: [v],
+        skuIDs: [A],
         children: (0, r.jsx)(s.Qt, {
           children: (0, r.jsx)(a.dX, {
-            children: (0, r.jsx)(i, d(c({}, I), {
+            children: (0, r.jsx)(i, d(c({}, S), {
               initialPlanId: t,
               onClose: e => {
-                S(), null == _ || _(e)
+                I(), null == _ || _(e)
               },
               analyticsLocations: g,
               analyticsObject: h,
               analyticsLocation: m,
               analyticsSubscriptionType: E,
-              skuId: v,
-              renderHeader: b,
-              renderPurchaseConfirmation: y,
+              skuId: A,
+              renderHeader: y,
+              renderPurchaseConfirmation: b,
               planGroup: O,
               trialId: u,
               trialFooterMessageOverride: p,
-              reviewWarningMessage: A
+              reviewWarningMessage: v
             }))
           })
         })

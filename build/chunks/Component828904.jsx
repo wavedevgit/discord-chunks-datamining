@@ -1,5 +1,5 @@
 /** Chunk was on 71138 **/
-/** chunk id: 828904, original params: e,t,n (module,exports,require) **/
+/** chunk id: 828904, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   C6: () => R,
   HI: () => S
@@ -33,15 +33,15 @@ let D = {
 
 function R(e) {
   let t = [],
-    n = 0;
-  for (e.length % 2 != 0 && e.push((0, r.jsx)(m.A, {
+    r = 0;
+  for (e.length % 2 != 0 && e.push((0, n.jsx)(m.A, {
       basis: "50%",
       grow: 0
-    }, n++)); e.length > 0;) t.push((0, r.jsx)(m.A, {
+    }, r++)); e.length > 0;) t.push((0, n.jsx)(m.A, {
     basis: "50%",
     grow: 0,
     children: e.splice(0, 2)
-  }, n++));
+  }, r++));
   return t
 }
 let F = {
@@ -52,7 +52,7 @@ let F = {
 function S(e) {
   let {
     streams: t,
-    context: n,
+    context: r,
     mediaEngineConnectionId: i,
     userId: S,
     videoStreams: j,
@@ -60,39 +60,39 @@ function S(e) {
     showUserInfo: N = false,
     showSimulcastOverride: I = false
   } = e, [k, B] = a.useState("0"), w = (0, o.bG)([g.A], () => N ? g.A.getGuildId() : null), T = (0, o.bG)([f.default], () => N && null != S ? f.default.getUser(S) : null), L = (0, o.bG)([y.Ay], () => N && null != w && null != S ? y.Ay.getNick(w, S) : null);
-  if (null == t || N && null == S || 0 === t.length) return (0, r.jsx)(d.y$y, {
+  if (null == t || N && null == S || 0 === t.length) return (0, n.jsx)(d.y$y, {
     type: d.y$y.Type.SPINNING_CIRCLE
   });
   let O = P;
   N && null != T && (O = "".concat(P, " — ").concat(null != L ? L : v.Ay.getName(T)));
   let M = t.map((e, t) => {
-      let n, a;
-      return (0, r.jsx)(d.VQ0.Item, {
+      let r, a;
+      return (0, n.jsx)(d.VQ0.Item, {
         id: t.toString(),
-        children: (n = (0, s.$G)(e.type), a = "", "resolution" in e && null != e.resolution && 0 !== e.resolution.width && 0 !== e.resolution.height && (a = " (".concat(e.resolution.width, "x").concat(e.resolution.height, ")")), n + a)
+        children: (r = (0, s.$G)(e.type), a = "", "resolution" in e && null != e.resolution && 0 !== e.resolution.width && 0 !== e.resolution.height && (a = " (".concat(e.resolution.width, "x").concat(e.resolution.height, ")")), r + a)
       }, t.toString())
     }),
     G = Math.min(parseInt(k, 10), t.length - 1),
     H = t[G],
-    U = function(e, t, n, a, i) {
+    U = function(e, t, r, a, i) {
       let s, o = [];
       for (let t of Object.keys(e).sort((e, t) => {
-          let n = F[e],
-            r = F[t];
-          return n !== r ? true === n ? 1 : true === r ? false : n - r : A.iA[e] !== A.iA[t] ? A.iA[e] ? 1 : false : e > t ? 1 : false
+          let r = F[e],
+            n = F[t];
+          return r !== n ? true === r ? 1 : true === n ? false : r - n : A.iA[e] !== A.iA[t] ? A.iA[e] ? 1 : false : e > t ? 1 : false
         })) {
-        let n = e[t];
-        b.R[t] || true === n || o.push((0, r.jsx)(b.q7, {
+        let r = e[t];
+        b.R[t] || true === r || o.push((0, n.jsx)(b.q7, {
           section: a,
           label: t,
-          value: n
+          value: r
         }, t))
       }
-      return (0, r.jsxs)("div", {
+      return (0, n.jsxs)("div", {
         className: x.C2,
-        children: ["video" === e.type && null != n && null != a && null != i && (null != (s = i.get(n, a, e.ssrc)) ? (0, r.jsx)("div", {
+        children: ["video" === e.type && null != r && null != a && null != i && (null != (s = i.get(r, a, e.ssrc)) ? (0, n.jsx)("div", {
           className: l()(E.tN, x.C2),
-          children: (0, r.jsx)(p.A, {
+          children: (0, n.jsx)(p.A, {
             streamId: s,
             videoComponent: h.A.getMediaEngine().Video,
             paused: false,
@@ -102,15 +102,15 @@ function S(e) {
         }) : null), R(o)]
       }, "".concat(e.type, " + ").concat(e.ssrc))
     }(H, 0, i, S, j),
-    q = I && "video" === H.type && null != i && null != S && null != j && (0, r.jsx)(m.A, {
+    q = I && "video" === H.type && null != i && null != S && null != j && (0, n.jsx)(m.A, {
       className: x.SX,
-      children: (0, r.jsx)(m.A.Child, {
+      children: (0, n.jsx)(m.A.Child, {
         basis: "100%",
-        children: (0, r.jsx)(d.l6P, {
+        children: (0, n.jsx)(d.l6P, {
           label: "Simulcast Override",
-          value: A.Ay.getSimulcastDebugOverride(S, n),
+          value: A.Ay.getSimulcastDebugOverride(S, r),
           onSelectionChange: e => {
-            c.z0(S, n, e)
+            c.z0(S, r, e)
           },
           options: Object.values(C.r8).map(e => ({
             id: e,
@@ -122,12 +122,12 @@ function S(e) {
         })
       })
     });
-  return (0, r.jsxs)(d.BJc, {
+  return (0, n.jsxs)(d.BJc, {
     gap: 16,
-    children: [(0, r.jsx)(d.Heading, {
+    children: [(0, n.jsx)(d.Heading, {
       variant: "heading-md/medium",
       children: O
-    }), (0, r.jsx)(d.VQ0, {
+    }), (0, n.jsx)(d.VQ0, {
       type: "top",
       look: "brand",
       selectedItem: k,

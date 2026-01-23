@@ -23,22 +23,22 @@ function y(e) {
     status: y
   } = e, O = function(e, t) {
     if (null == e) return {};
-    var r, n, o, l = {};
+    var r, n, o, a = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (o = 0, r = Reflect.ownKeys(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-      return l
+      for (o = 0, r = Reflect.ownKeys(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
+      return a
     }
-    if (l = function(e, t) {
+    if (a = function(e, t) {
         if (null == e) return {};
         var r, n, o = {},
-          l = Object.getOwnPropertyNames(e);
-        for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
+          a = Object.getOwnPropertyNames(e);
+        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
         return o
       }(e, t), Object.getOwnPropertySymbols)
-      for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-    return l
+      for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
+    return a
   }(e, ["gameServerGame", "guildId", "status"]), m = (0, i.A)(t.gameId, "cover");
-  return (0, n.jsx)(a.default, function(e) {
+  return (0, n.jsx)(l.default, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -75,7 +75,7 @@ function y(e) {
         variant: "primary",
         text: f.intl.string(p.default.VkItSr),
         onClick: () => {
-          (0, l.pX)(s.BVt.CHANNEL(r, u.VV.GAME_SERVERS)), O.onClose()
+          (0, a.pX)(s.BVt.CHANNEL(r, u.VV.GAME_SERVERS)), O.onClose()
         }
       })
     })

@@ -2,7 +2,7 @@
 /** chunk id: 249434, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,14 +14,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk577332 = require("./577332.js");
 
-function f(e) {
+function g(e) {
   let {
     profile: t,
     handleIconChange: l,
-    canManageGuild: c
-  } = e, f = i.useCallback(() => {
+    canManageGuild: o
+  } = e, g = i.useCallback(() => {
     l(null)
-  }, [l]), g = i.useCallback((e, t) => {
+  }, [l]), m = i.useCallback((e, t) => {
     (0, s.mMO)(async () => {
       let {
         default: i
@@ -44,7 +44,7 @@ function f(e) {
         }
         return e
       }({
-        uploadType: o.HL.GUILD_ICON,
+        uploadType: c.HL.GUILD_ICON,
         imageUri: e,
         file: t,
         onCrop: e => {
@@ -66,37 +66,37 @@ function f(e) {
           tabIndex: false,
           size: "sm",
           variant: "primary",
-          disabled: !c,
+          disabled: !o,
           text: d.intl.string(d.t.r3JdsT)
         }), (0, r.jsx)(a.Ay, {
           tabIndex: 0,
-          onChange: g,
-          disabled: !c
+          onChange: m,
+          disabled: !o
         })]
       })
     }), null != t.icon ? (0, r.jsx)(s.Button, {
       variant: "critical-secondary",
       size: "sm",
       text: d.intl.string(d.t.x8AlTm),
-      onClick: f,
-      disabled: !c
+      onClick: g,
+      disabled: !o
     }) : null]
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     profile: t,
     canManageGuild: n,
     onIconChange: i
-  } = e, a = (0, l.bG)([c.A], () => c.A.getError("icon"));
+  } = e, a = (0, l.bG)([o.A], () => o.A.getError("icon"));
   return (0, r.jsx)("section", {
     className: u.kL,
     children: (0, r.jsx)(s.D0$, {
       label: d.intl.string(d.t.FkQnxJ),
       description: d.intl.string(d.t.KjkA0W),
       errorMessage: a,
-      children: (0, r.jsx)(f, {
+      children: (0, r.jsx)(g, {
         profile: t,
         canManageGuild: n,
         handleIconChange: i

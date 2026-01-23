@@ -1,7 +1,7 @@
 /** Chunk was on 59276 **/
 /** chunk id: 549223, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => O
 }), require("./228524.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -57,7 +57,7 @@ let f = {
       height: 22
     })
   },
-  b = e => {
+  j = e => {
     let {
       header: t,
       description: r,
@@ -65,16 +65,16 @@ let f = {
     } = e;
     return (0, o.jsxs)(n.BJc, {
       direction: "horizontal",
-      className: h.nM,
+      className: d.nM,
       padding: 16,
       align: "center",
       gap: 16,
       fullWidth: false,
       children: [(0, o.jsx)("div", {
-        className: h.zc,
+        className: d.zc,
         children: c
       }), (0, o.jsxs)("div", {
-        className: h.u4,
+        className: d.u4,
         children: [(0, o.jsx)(i.Text, {
           variant: "text-sm/bold",
           children: t
@@ -85,11 +85,11 @@ let f = {
       })]
     })
   },
-  j = e => {
+  O = e => {
     let {
       transitionState: t,
       onClose: r
-    } = e, i = (0, l.y)(p.intl.string(d.default.q3IRal), p.intl.string(d.default.JNLpDZ)), a = (0, s.A)(), u = (0, c.Mo)();
+    } = e, i = (0, l.y)(h.intl.string(p.default.q3IRal), h.intl.string(p.default.JNLpDZ)), a = (0, s.A)(), u = (0, c.Mo)();
     return (0, o.jsx)(n.Modal, {
       transitionState: t,
       onClose: r,
@@ -100,7 +100,7 @@ let f = {
         fullWidth: false,
         children: u.map(e => {
           let [t, r] = e;
-          return (0, o.jsx)(b, {
+          return (0, o.jsx)(j, {
             icon: f[t],
             header: r.tooltipHeader(),
             description: r.tooltipDescription(null != a ? a : true)

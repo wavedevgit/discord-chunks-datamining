@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 665450, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,13 +14,13 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk177432 = require("./177432.js");
 
-function f(e) {
+function p(e) {
   let {
     height: t
-  } = e, l = (0, a.bG)([o.A], () => o.A.useReducedMotion);
+  } = e, l = (0, s.bG)([o.A], () => o.A.useReducedMotion);
   return (0, r.jsxs)("div", {
     className: d.zr,
-    children: [(0, r.jsx)(s.akl, {
+    children: [(0, r.jsx)(a.akl, {
       importData: () => n.e("35066").then(n.t.bind(n, 844512, 19)).then(e => {
         let {
           default: t
@@ -31,11 +31,11 @@ function f(e) {
       className: i()(d.Qw, {
         [d.R]: t <= 280
       })
-    }), (0, r.jsx)(s.Heading, {
+    }), (0, r.jsx)(a.Heading, {
       className: d.wx,
       variant: "heading-md/bold",
       children: u.intl.string(u.t["C+tj1c"])
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "text-default",
       children: u.intl.format(u.t["nNHd/y"], {

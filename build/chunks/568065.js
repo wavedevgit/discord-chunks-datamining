@@ -5,23 +5,23 @@ require.d(exports, {
   At: () => P,
   Fq: () => g,
   G0: () => N,
-  HO: () => b,
+  HO: () => y,
   On: () => m,
   Pn: () => w,
   Wb: () => d,
-  YV: () => A,
+  YV: () => v,
   a8: () => _,
   aH: () => T,
-  b_: () => S,
+  b_: () => I,
   mB: () => p,
   o2: () => f,
   o9: () => u,
   oN: () => E,
-  q: () => I,
+  q: () => S,
   r9: () => C,
   sy: () => O,
-  w$: () => y,
-  wr: () => v,
+  w$: () => b,
+  wr: () => A,
   y7: () => h,
   yG: () => R,
   z0: () => D
@@ -63,9 +63,9 @@ let d = "1340102344645283891",
     [Chunk512750.FB],
     [Chunk512750.OJ, Chunk512750.jF]
   ],
-  b = new Set([Chunk512750.SL, Chunk512750.aN, Chunk512750.FB, Chunk512750.OJ, Chunk512750.jF]);
+  y = new Set([Chunk512750.SL, Chunk512750.aN, Chunk512750.FB, Chunk512750.OJ, Chunk512750.jF]);
 Chunk512750.aN;
-let y = () => ({
+let b = () => ({
     [l.GuildFeatures.VIDEO_BITRATE_ENHANCED]: {
       perkIcon: a.TP.STREAM,
       description: c.intl.string(c.t.y4ft4D)
@@ -143,19 +143,19 @@ let y = () => ({
       boostPrice: 5
     }
   },
-  A = {
+  v = {
     [Chunk652215.GuildFeatures.GAME_SERVERS]: {
       boostPrice: 3,
       isEnabled: e => (0, s.TS)(e, "GuildPowerupsConstants")
     }
   },
-  v = {
+  A = {
     [Chunk512750.FB]: Chunk652215.TVA.TIER_3
   };
-var S = function(e) {
+var I = function(e) {
     return e.INACTIVE = "inactive", e.POWERUP_ACTIVATED = "powerup_activated", e.LEVEL_ACTIVATED = "level_activated", e.TIER_OVERRIDE_ACTIVATED = "tier_override_activated", e
   }({}),
-  I = function(e) {
+  S = function(e) {
     return e[e.VANITY_URL = 1] = "VANITY_URL", e[e.GUILD_TAG_BADGE_PACKS_WAVE_ONE = 2] = "GUILD_TAG_BADGE_PACKS_WAVE_ONE", e[e.GAME_SERVER_HOSTING = 3] = "GAME_SERVER_HOSTING", e
   }({});
 let T = new Set([Chunk512750.OJ, Chunk512750.jF]),

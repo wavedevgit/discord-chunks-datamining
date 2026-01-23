@@ -29,7 +29,7 @@ function _(e) {
   } = e, y = (0, u.bG)([h.default], () => {
     let e = h.default.getCurrentUser();
     return a()(null != e, "ChangeUsernameModal: currentUser cannot be undefined"), e
-  }), T = i.useMemo(() => f.Ay.canEditDiscriminator(y) && !y.hasUniqueUsername(), [y]), [p, A] = i.useState(y.username), [R, L] = i.useState(y.discriminator), [b, P] = i.useState(""), [M, C] = i.useState(false), U = (0, u.bG)([E.A], () => E.A.getErrors()), w = y.hasUniqueUsername(), k = (0, m.i)(p, w, false, y.username), I = i.useRef(null), N = i.useMemo(() => {
+  }), T = i.useMemo(() => f.Ay.canEditDiscriminator(y) && !y.hasUniqueUsername(), [y]), [p, A] = i.useState(y.username), [R, L] = i.useState(y.discriminator), [b, P] = i.useState(""), [C, M] = i.useState(false), U = (0, u.bG)([E.A], () => E.A.getErrors()), w = y.hasUniqueUsername(), k = (0, m.i)(p, w, false, y.username), I = i.useRef(null), N = i.useMemo(() => {
     var e, t, n;
     return null != (e = null == U || null == (t = U.username) ? true : t[0]) ? e : null == U || null == (n = U.discriminator) ? true : n[0]
   }, [U]);
@@ -41,13 +41,13 @@ function _(e) {
   }, [s]);
   let G = R !== y.discriminator;
   async function x(e) {
-    e.preventDefault(), C(true);
+    e.preventDefault(), M(true);
     let t = await (0, g.yu)({
       username: p,
       discriminator: T ? R : true,
       password: b
     });
-    C(false), (null == t ? true : t.ok) && _()
+    M(false), (null == t ? true : t.ok) && _()
   }
   return (0, r.jsx)("form", {
     onSubmit: x,
@@ -64,7 +64,7 @@ function _(e) {
         variant: "primary",
         text: v.intl.string(v.t.i4jeWR),
         type: "submit",
-        loading: M
+        loading: C
       }],
       children: (0, r.jsxs)(d.BJc, {
         gap: 16,

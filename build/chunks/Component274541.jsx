@@ -1,7 +1,7 @@
 /** Chunk was on 72165 **/
 /** chunk id: 274541, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => L
+  A: () => T
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -65,43 +65,43 @@ function R(e, t) {
   }), e
 }
 
-function L(e) {
+function T(e) {
   let {
     channelId: t,
-    baseChannelId: L,
-    channelViewSource: T = "Split View",
-    isResourceChannelView: G
-  } = e, H = (0, i.bG)([y.A], () => y.A.getChannel(t)), M = (0, i.bG)([_.A], () => _.A.getGuild(null == H ? true : H.getGuildId())), k = (0, w.Ay)(H), U = (0, i.bG)([A.A], () => (null == M ? true : M.id) != null && A.A.isLurking(M.id), [M]), B = (0, p.A)(t), V = (0, i.bG)([h.h], () => {
+    baseChannelId: T,
+    channelViewSource: L = "Split View",
+    isResourceChannelView: k
+  } = e, H = (0, i.bG)([O.A], () => O.A.getChannel(t)), M = (0, i.bG)([y.A], () => y.A.getGuild(null == H ? true : H.getGuildId())), G = (0, w.Ay)(H), B = (0, i.bG)([b.A], () => (null == M ? true : M.id) != null && b.A.isLurking(M.id), [M]), U = (0, _.A)(t), V = (0, i.bG)([f.h], () => {
     var e;
-    return null == (e = h.h.getResourceForChannel(null == M ? true : M.id, t)) ? true : e.title
-  }), F = (0, d.vL)(H), W = r.useRef(false);
+    return null == (e = f.h.getResourceForChannel(null == M ? true : M.id, t)) ? true : e.title
+  }), F = (0, c.vL)(H), W = r.useRef(false);
   if (r.useEffect(() => {
-      null == H || W.current || (W.current = true, (0, o.zV)(S.HAw.CHANNEL_OPENED, R(D({}, (0, o.qL)(H.id)), {
-        channel_view: T
+      null == H || W.current || (W.current = true, (0, d.zV)(S.HAw.CHANNEL_OPENED, R(D({}, (0, d.qL)(H.id)), {
+        channel_view: L
       })), (0, u.k)(S.HAw.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: H.id
       }))
-    }, [H, T]), null == H || null == M) return null;
+    }, [H, L]), null == H || null == M) return null;
   let q = [];
-  return (U || q.push((0, l.jsx)(m.A, {
+  return (B || q.push((0, l.jsx)(g.A, {
     channel: H
-  }, "notifications")), q.push((0, l.jsx)(g.Ay.Icon, {
+  }, "notifications")), q.push((0, l.jsx)(m.Ay.Icon, {
     icon: a.PGe,
-    tooltip: I.intl.string(I.t.cpT0Cq),
-    onClick: () => O.A.closeChannelSidebar(L)
-  }, "close")), F) ? (0, l.jsx)(C.A, {
+    tooltip: E.intl.string(E.t.cpT0Cq),
+    onClick: () => C.A.closeChannelSidebar(T)
+  }, "close")), F) ? (0, l.jsx)(j.A, {
     guild: M,
     channelId: H.id
   }) : (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)(c.A, {
+    children: [(0, l.jsx)(o.A, {
       channel: H,
       draftType: v.C.ChannelMessage
-    }), (0, l.jsx)(g.Ay, {
+    }), (0, l.jsx)(m.Ay, {
       toolbar: q,
-      "aria-label": I.intl.string(I.t.BIYAqa),
+      "aria-label": E.intl.string(E.t.BIYAqa),
       children: (0, x.zF)({
         channel: H,
-        channelName: B ? V : k,
+        channelName: U ? V : G,
         guild: M,
         inSidebar: true,
         handleContextMenu: e => {
@@ -117,18 +117,18 @@ function L(e) {
         },
         handleClick: () => {
           let e = N.A.getMessages(H.id);
-          if (G) {
-            (0, j.pX)(S.BVt.CHANNEL(H.guild_id, H.id)), (0, b.bN)(H.guild_id, null);
+          if (k) {
+            (0, A.pX)(S.BVt.CHANNEL(H.guild_id, H.id)), (0, p.bN)(H.guild_id, null);
             return
-          }(0, j.uh)(H.guild_id, H.id, e.jumpTargetId)
+          }(0, A.uh)(H.guild_id, H.id, e.jumpTargetId)
         }
       })
     }), (0, l.jsx)("div", {
       className: P.T,
-      children: (0, l.jsx)(E.A, {
+      children: (0, l.jsx)(I.A, {
         channel: H,
         guild: M,
-        chatInputType: f.oU.SIDEBAR
+        chatInputType: h.oU.SIDEBAR
       }, t)
     })]
   })

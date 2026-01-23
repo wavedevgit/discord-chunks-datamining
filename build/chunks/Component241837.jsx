@@ -1,7 +1,7 @@
 /** Chunk was on 28636 **/
 /** chunk id: 241837, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,37 +17,37 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk100669 = require("./100669.js");
 
-function f(e) {
+function _(e) {
   let {
     application: t
-  } = e, n = a.useMemo(() => {
-    var e, n, l;
-    return null != (e = (null != (n = null == (l = t.directory_entry) ? true : l.carousel_items) ? n : []).map(s.xb).filter(i.Vq)) ? e : []
+  } = e, n = l.useMemo(() => {
+    var e, n, r;
+    return null != (e = (null != (n = null == (r = t.directory_entry) ? true : r.carousel_items) ? n : []).map(s.xb).filter(a.Vq)) ? e : []
   }, [t]);
-  return (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsxs)("div", {
-      className: b.Xb,
-      children: [(0, l.jsx)(c.A, {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)("div", {
+      className: g.Xb,
+      children: [(0, r.jsx)(o.A, {
         application: t,
         carouselItems: n
-      }), (0, l.jsx)(p.A, {
+      }), (0, r.jsx)(p.A, {
         application: t
-      }), (0, l.jsx)(o.A, {
+      }), (0, r.jsx)(c.A, {
         application: t
-      }), (0, l.jsx)(h.A, {
+      }), (0, r.jsx)(h.A, {
         application: t
-      }), (0, l.jsx)(d.A, {
+      }), (0, r.jsx)(d.A, {
         application: t
       })]
-    }), (0, l.jsxs)("div", {
-      className: b.Q9,
-      children: [(0, l.jsx)("div", {
-        className: b.yF
-      }), (0, l.jsx)(r.DZT, {
+    }), (0, r.jsxs)("div", {
+      className: g.Q9,
+      children: [(0, r.jsx)("div", {
+        className: g.yF
+      }), (0, r.jsx)(i.DZT, {
         variant: "heading-lg/semibold",
         color: "text-strong",
         children: m.intl.string(m.t["mD+J/i"])
-      }), (0, l.jsx)(u.A, {
+      }), (0, r.jsx)(u.A, {
         application: t,
         view: "embedded"
       })]

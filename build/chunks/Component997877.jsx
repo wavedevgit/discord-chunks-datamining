@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk989349 = require("./989349.js"),
   u = require.n(Chunk989349),
   Chunk837381 = require("./837381.jsx"),
@@ -55,7 +55,7 @@ function R(e) {
   return e
 }
 
-function M(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,41 +68,41 @@ function M(e, t) {
   }), e
 }
 
-function G(e, t) {
+function M(e, t) {
   if (null == e) return {};
-  var n, r, l, a = {};
+  var n, r, l, s = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
-    for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
+    for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (s[r] = e[r]);
+    return s
   }
-  if (a = function(e, t) {
+  if (s = function(e, t) {
       if (null == e) return {};
       var n, r, l = {},
-        a = Object.getOwnPropertyNames(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
+        s = Object.getOwnPropertyNames(e);
+      for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
       return l
     }(e, t), Object.getOwnPropertySymbols)
-    for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-  return a
+    for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (s[r] = e[r]);
+  return s
 }
 
-function I(e) {
+function G(e) {
   let {
     destination: t,
     icon: n,
-    label: a,
+    label: s,
     subLabel: i,
     selected: u,
-    disabled: o,
+    disabled: c,
     onPressDestination: f,
     "aria-setsize": b,
     "aria-posinset": p
-  } = e, m = (0, c.rm)(t.id), g = l.useCallback(() => {
-    o || null == f || f(t)
-  }, [f, o, t]);
-  return (0, r.jsxs)(d.DUT, M(R({
-    className: s()(_.HP, {
-      [_.r9]: o
+  } = e, m = (0, o.rm)(t.id), g = l.useCallback(() => {
+    c || null == f || f(t)
+  }, [f, c, t]);
+  return (0, r.jsxs)(d.DUT, I(R({
+    className: a()(D.HP, {
+      [D.r9]: c
     }),
     onClick: g,
     "aria-selected": u,
@@ -110,27 +110,27 @@ function I(e) {
     "aria-posinset": p
   }, m), {
     children: [(0, r.jsxs)("div", {
-      className: _.D_,
+      className: D.D_,
       children: [(0, r.jsx)("div", {
-        className: _.P0,
+        className: D.P0,
         children: n
       }), (0, r.jsxs)("div", {
-        className: _.WD,
+        className: D.WD,
         children: [(0, r.jsx)(d.Text, {
           tag: "strong",
-          className: _.Pf,
+          className: D.Pf,
           variant: "text-md/semibold",
           lineClamp: 1,
-          children: a
+          children: s
         }), (0, r.jsx)(d.Text, {
-          className: _.J2,
+          className: D.J2,
           variant: "text-xs/normal",
           color: "text-muted",
           children: i
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: _.kv,
+      className: D.kv,
       children: (0, r.jsx)(d.P7L, {
         checked: u
       })
@@ -142,18 +142,18 @@ function U(e) {
   let {
     user: t,
     subLabel: n
-  } = e, l = G(e, ["user", "subLabel"]), a = N.Ay.useName(t), s = N.Ay.useUserTag(t, {
+  } = e, l = M(e, ["user", "subLabel"]), s = C.Ay.useName(t), a = C.Ay.useUserTag(t, {
     decoration: "never"
-  }), i = (0, o.bG)([T.A], () => T.A.getNickname(t.id)), u = (0, o.bG)([S.A], () => S.A.getStatus(t.id));
-  return (0, r.jsx)(I, M(R({}, l), {
+  }), i = (0, c.bG)([P.A], () => P.A.getNickname(t.id)), u = (0, c.bG)([S.A], () => S.A.getStatus(t.id));
+  return (0, r.jsx)(G, I(R({}, l), {
     icon: (0, r.jsx)(f.A, {
       "aria-hidden": true,
       size: d._3J.SIZE_32,
       user: t,
       status: u
     }),
-    label: null != i ? i : a,
-    subLabel: null != n ? n : s
+    label: null != i ? i : s,
+    subLabel: null != n ? n : a
   }))
 }
 
@@ -161,15 +161,15 @@ function H(e) {
   let {
     channel: t,
     subLabel: n
-  } = e, l = G(e, ["channel", "subLabel"]), a = (0, m.Ay)(t), s = (0, y.i)(t);
-  return (0, r.jsx)(I, M(R({}, l), {
+  } = e, l = M(e, ["channel", "subLabel"]), s = (0, m.Ay)(t), a = (0, y.i)(t);
+  return (0, r.jsx)(G, I(R({}, l), {
     icon: (0, r.jsx)(g.A, {
       "aria-hidden": true,
       size: d._3J.SIZE_32,
       channel: t
     }),
-    label: a,
-    subLabel: null != n ? n : s
+    label: s,
+    subLabel: null != n ? n : a
   }))
 }
 
@@ -177,43 +177,43 @@ function V(e) {
   let {
     channel: t,
     subLabel: n
-  } = e, l = G(e, ["channel", "subLabel"]), a = (0, o.bG)([v.A], () => v.A.getGuild(null == t ? true : t.guild_id)), s = (0, m.Ay)(t), i = (0, o.bG)([A.A, E.default, T.A], () => {
+  } = e, l = M(e, ["channel", "subLabel"]), s = (0, c.bG)([v.A], () => v.A.getGuild(null == t ? true : t.guild_id)), a = (0, m.Ay)(t), i = (0, c.bG)([A.A, T.default, P.A], () => {
     let e = A.A.getChannel(t.parent_id);
-    return null == e ? null : (0, m.m1)(e, E.default, T.A, false)
-  }), c = (0, o.bG)([P.Ay], () => P.Ay.lastMessageTimestamp(t.id, k.P.CHANNEL)), f = null == a ? true : a.name;
+    return null == e ? null : (0, m.m1)(e, T.default, P.A, false)
+  }), o = (0, c.bG)([_.Ay], () => _.Ay.lastMessageTimestamp(t.id, N.P.CHANNEL)), f = null == s ? true : s.name;
   if (t.isThread() || t.isForumPost()) {
     let e = t.isForumPost() ? d.bSJ : d.N$i;
     f = (0, r.jsxs)("div", {
-      className: _.vr,
+      className: D.vr,
       children: [(0, r.jsx)(e, {
         color: d.LU0.colors.TEXT_SUBTLE,
-        className: _.Q9
+        className: D.Q9
       }), (0, r.jsx)(d.Text, {
         variant: "text-xs/medium",
         color: "text-subtle",
         lineClamp: 1,
         children: i
-      }), null != c ? (0, r.jsxs)(r.Fragment, {
+      }), null != o ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.Text, {
-          className: _.Ql,
+          className: D.Ql,
           variant: "text-xs/medium",
           color: "text-subtle",
           children: "•"
         }), (0, r.jsx)(d.Text, {
           variant: "text-xs/medium",
           color: "text-subtle",
-          children: (0, w.Fe)(u()(c))
+          children: (0, w.Fe)(u()(o))
         })]
       }) : null]
     })
   }
-  return (0, r.jsx)(I, M(R({}, l), {
+  return (0, r.jsx)(G, I(R({}, l), {
     icon: (0, r.jsx)(h.A, {
       size: h.q.SMALL_32,
-      guild: a,
+      guild: s,
       channel: t
     }),
-    label: s,
+    label: a,
     subLabel: null != n ? n : f
   }))
 }
@@ -222,9 +222,9 @@ function q(e) {
   let {
     rowData: t,
     selectedDestinations: n,
-    handleToggleDestination: a,
-    disableSelection: s
-  } = e, i = G(e, ["rowData", "selectedDestinations", "handleToggleDestination", "disableSelection"]), u = l.useMemo(() => [t.length], [t.length]), o = l.useCallback(() => 48, []), f = l.useMemo(() => {
+    handleToggleDestination: s,
+    disableSelection: a
+  } = e, i = M(e, ["rowData", "selectedDestinations", "handleToggleDestination", "disableSelection"]), u = l.useMemo(() => [t.length], [t.length]), c = l.useCallback(() => 48, []), f = l.useMemo(() => {
     var e;
     return null != (e = null == n ? true : n.map(x.I)) ? e : []
   }, [n]), m = l.useCallback(e => {
@@ -238,27 +238,27 @@ function q(e) {
       record: u
     } = t[l];
     if (i === p.rD.HEADER) return;
-    let c = i === p.rD.USER ? {
+    let o = i === p.rD.USER ? {
         type: "user",
         id: u.id
       } : {
         type: "channel",
         id: u.id
       },
-      o = (0, x.I)(c),
+      c = (0, x.I)(o),
       d = function(e) {
-        if (e instanceof j.YB && (0, j.zy)(e.type) && null != e.rateLimitPerUser && e.rateLimitPerUser > 0 && !(O.A.can(D.xBc.MANAGE_CHANNELS, e) || O.A.can(D.xBc.MANAGE_MESSAGES, e))) return {
-          label: L.intl.string(L.t.Icu3bf)
+        if (e instanceof j.YB && (0, j.zy)(e.type) && null != e.rateLimitPerUser && e.rateLimitPerUser > 0 && !(O.A.can(L.xBc.MANAGE_CHANNELS, e) || O.A.can(L.xBc.MANAGE_MESSAGES, e))) return {
+          label: k.intl.string(k.t.Icu3bf)
         }
       }(u),
-      b = f.includes(o),
+      b = f.includes(c),
       m = {
-        key: o,
-        destination: c,
+        key: c,
+        destination: o,
         subLabel: null != d ? d.label : true,
-        disabled: s && !b || null != d,
+        disabled: a && !b || null != d,
         selected: b,
-        onPressDestination: a,
+        onPressDestination: s,
         "aria-posinset": l + 1,
         "aria-setsize": t.length
       };
@@ -268,16 +268,16 @@ function q(e) {
       channel: u
     }, m)) : i === p.rD.TEXT_CHANNEL || i === p.rD.VOICE_CHANNEL ? (0, r.jsx)(V, R({
       channel: u
-    }, m)) : void(0, C.xb)(i)
-  }, [s, a, t, f]), g = l.useRef(null), h = (0, b.A)("share-command-modal", g);
-  return (0, r.jsx)(c.hD, {
+    }, m)) : void(0, E.xb)(i)
+  }, [a, s, t, f]), g = l.useRef(null), h = (0, b.A)("share-command-modal", g);
+  return (0, r.jsx)(o.hD, {
     navigator: h,
-    children: (0, r.jsx)(c.PR, {
+    children: (0, r.jsx)(o.PR, {
       children: e => {
         let {
           ref: t
-        } = e, n = G(e, ["ref"]);
-        return (0, r.jsx)(d.OZj, M(R({
+        } = e, n = M(e, ["ref"]);
+        return (0, r.jsx)(d.OZj, I(R({
           ref: e => {
             var n;
             g.current = e, t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null
@@ -286,7 +286,7 @@ function q(e) {
           sections: u,
           sectionHeight: 0,
           renderRow: m,
-          rowHeight: o
+          rowHeight: c
         }))
       }
     })

@@ -34,15 +34,15 @@ function c(e, t, n) {
     }, t, n);
   (0, s.X)(e, c, n);
   let {
-    isIndeterminate: b,
-    isRequired: y,
+    isIndeterminate: y,
+    isRequired: b,
     validationBehavior: O = "aria"
   } = e;
   (0, r.useEffect)(() => {
-    n.current && (n.current.indeterminate = !!b)
+    n.current && (n.current.indeterminate = !!y)
   });
   let {
-    pressProps: A
+    pressProps: v
   } = (0, o.d)({
     isDisabled: g || E,
     onPress() {
@@ -55,14 +55,14 @@ function c(e, t, n) {
     }
   });
   return {
-    labelProps: (0, i.v)(p, A, (0, r.useMemo)(() => ({
+    labelProps: (0, i.v)(p, v, (0, r.useMemo)(() => ({
       onMouseDown: e => e.preventDefault()
     }), [])),
     inputProps: {
       ..._,
       checked: h,
-      "aria-required": y && "aria" === O || true,
-      required: y && "native" === O
+      "aria-required": b && "aria" === O || true,
+      required: b && "native" === O
     },
     isSelected: h,
     isPressed: m,

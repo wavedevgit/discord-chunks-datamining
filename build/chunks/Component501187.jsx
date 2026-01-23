@@ -2,7 +2,7 @@
 /** chunk id: 501187, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  W: () => A
+  W: () => _
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -20,66 +20,66 @@ var Chunk607399 = require("./607399.js"),
   Chunk886083 = require("./886083.js"),
   Chunk604880 = require("./604880.js");
 
-function A(e) {
+function _(e) {
   let {
     token: t,
     hasError: n,
-    errorReason: A
+    errorReason: _
   } = e;
   return n ? (0, r.jsxs)("div", {
-    className: g.MY,
+    className: m.MY,
     children: [(0, r.jsx)("div", {
-      className: g.r$,
+      className: m.r$,
       children: (0, r.jsx)("img", {
-        src: m,
+        src: f,
         alt: ""
       })
     }), (0, r.jsxs)("div", {
-      className: g.Qs,
+      className: m.Qs,
       children: [(0, r.jsx)(a.DeQ, {
         alt: ""
       }), (0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
-        className: g.ky,
-        children: p.intl.string(p.t.RtCSr1)
+        className: m.ky,
+        children: g.intl.string(g.t.RtCSr1)
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        className: g.G3,
-        children: p.intl.string(p.t["S+YjYJ"])
+        className: m.G3,
+        children: g.intl.string(g.t["S+YjYJ"])
       }), (0, r.jsx)(o.Button, {
         variant: "primary",
-        text: p.intl.string(p.t.j3cG2p),
+        text: g.intl.string(g.t.j3cG2p),
         fullWidth: true,
         onClick: () => {
-          d.default.track(f.HAw.ONE_TIME_LOGIN_BACK_TO_LOGIN_CLICKED, {
-            error_reason: A
-          }), (0, c.pX)(f.BVt.LOGIN)
+          d.default.track(p.HAw.ONE_TIME_LOGIN_BACK_TO_LOGIN_CLICKED, {
+            error_reason: _
+          }), (0, c.pX)(p.BVt.LOGIN)
         }
       })]
     })]
   }) : (0, r.jsxs)("div", {
-    className: g.MY,
+    className: m.MY,
     children: [(0, r.jsx)("div", {
-      className: g.r$,
+      className: m.r$,
       children: (0, r.jsx)("img", {
-        src: m,
+        src: f,
         alt: ""
       })
     }), (0, r.jsxs)("div", {
-      className: g.Qs,
+      className: m.Qs,
       children: [(0, r.jsx)(a.DeQ, {
         alt: ""
       }), (0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
-        className: g.ky,
-        children: p.intl.string(p.t["9h/0Rl"])
+        className: m.ky,
+        children: g.intl.string(g.t["9h/0Rl"])
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        className: g.G3,
-        children: p.intl.string(p.t.Wgm7Om)
+        className: m.G3,
+        children: g.intl.string(g.t.Wgm7Om)
       }), (0, r.jsx)(o.Button, {
         variant: "primary",
-        text: p.intl.string(p.t.NydsTd),
+        text: g.intl.string(g.t.NydsTd),
         fullWidth: true,
         onClick: () => {
           var e;
@@ -98,17 +98,17 @@ function A(e) {
               })
             }
             return "discord://"
-          }(t), r = (0, s.X7)(n), d.default.track(f.HAw.ONE_TIME_LOGIN_APP_DETECTION_ATTEMPTED, {
+          }(t), r = (0, s.X7)(n), d.default.track(p.HAw.ONE_TIME_LOGIN_APP_DETECTION_ATTEMPTED, {
             detection_type: "mobile_button_clicked",
             device_type: i.Fr ? "mobile" : "tablet",
             platform: null == (e = d.default.getSuperProperties()) ? true : e.os
-          }), null != r && d.default.track(f.HAw.DEEP_LINK_CLICKED, {
+          }), null != r && d.default.track(p.HAw.DEEP_LINK_CLICKED, {
             fingerprint: (0, l.v)(r.fingerprint),
             attempt_id: r.attemptId,
             source: r.utmSource
           }), h.A.launch(n, e => {
             e || (0, c.bG)({
-              pathname: f.BVt.LOGIN
+              pathname: p.BVt.LOGIN
             })
           })
         }

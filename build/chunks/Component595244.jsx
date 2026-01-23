@@ -147,28 +147,28 @@ function k(e) {
     })
   }, [s, null == n ? true : n.id]), d = window.location.pathname.startsWith(T.BVt.APPLICATION_DIRECTORY), f = i.useCallback(() => {
     (null == n ? true : n.id) != null && (null == s || s(), null != l && (0, m.pX)(""), setImmediate(() => {
-      v._.dispatchToLastSubscribed(T.jej.OPEN_APP_LAUNCHER, {
+      A._.dispatchToLastSubscribed(T.jej.OPEN_APP_LAUNCHER, {
         applicationId: n.id
       }), O.default.track(T.HAw.OAUTH2_AUTHORIZE_SUCCESS_OPEN_APP_CLICKED, {
         application_id: n.id
       })
     }))
-  }, [null == n ? true : n.id, s, l]), p = (0, u.bG)([y.A, E.A], () => E.A.getChannel(y.A.getChannelId())), _ = (0, u.bG)([b.A], () => b.A.can(T.xBc.SEND_MESSAGES, p)), A = null != t, S = null == t && _ && (!d || null != l), N = [];
+  }, [null == n ? true : n.id, s, l]), p = (0, u.bG)([b.A, E.A], () => E.A.getChannel(b.A.getChannelId())), _ = (0, u.bG)([y.A], () => y.A.can(T.xBc.SEND_MESSAGES, p)), v = null != t, I = null == t && _ && (!d || null != l), N = [];
   return (null != t || null != s) && (null != s && N.push({
     variant: "secondary",
     text: C.intl.string(C.t.cpT0Cq),
     onClick: c
-  }), A && N.push({
+  }), v && N.push({
     variant: "primary",
     text: (null == t ? true : t.name.length) > 30 ? C.intl.string(C.t.M35zFB) : C.intl.format(C.t.UdYYP3, {
       guildName: null == t ? true : t.name
     }),
     onClick: o
-  }), S && N.push({
+  }), I && N.push({
     variant: "primary",
     text: C.intl.string(C.t["0cCDKP"]),
     onClick: f
-  })), (0, r.jsx)(I.f, D(w({}, a), {
+  })), (0, r.jsx)(S.f, D(w({}, a), {
     actions: N,
     children: (0, r.jsx)(U, w({
       guild: t,
@@ -220,7 +220,7 @@ function G(e) {
       application_id: t.id
     })
   }, [a, t.id]);
-  return (0, r.jsx)(I.f, D(w({}, n), {
+  return (0, r.jsx)(S.f, D(w({}, n), {
     actions: [{
       variant: "primary",
       text: C.intl.string(C.t["31Bci5"]),
@@ -233,7 +233,7 @@ function G(e) {
         className: N.LR,
         children: (0, r.jsx)("img", {
           alt: t.name,
-          src: A.Ay.getApplicationIconURL({
+          src: v.Ay.getApplicationIconURL({
             id: t.id,
             icon: t.icon
           })
@@ -259,7 +259,7 @@ function G(e) {
 }
 
 function V(e) {
-  return (0, r.jsx)(I.f, D(w({}, e), {
+  return (0, r.jsx)(S.f, D(w({}, e), {
     title: C.intl.string(C.t.j2d6Km),
     subtitle: C.intl.string(C.t["/B7kXy"]),
     actions: [{
@@ -278,9 +278,9 @@ function F(e) {
 function B() {
   var e, t;
   let n = (0, l.zy)();
-  return (0, r.jsx)(I.$, {
+  return (0, r.jsx)(S.$, {
     removeChildWrapper: true,
-    children: (0, r.jsx)(I.f, {
+    children: (0, r.jsx)(S.f, {
       transitionState: c.ip4.ENTERED,
       hideHeader: true,
       children: (0, r.jsx)(U, {
@@ -299,14 +299,14 @@ function H(e) {
   } = e;
   i.useEffect(() => {
     if (null == a || "" === a.search) return;
-    let e = null != document.referrer && "" !== document.referrer ? S.A.toURLSafe(document.referrer) : null;
+    let e = null != document.referrer && "" !== document.referrer ? I.A.toURLSafe(document.referrer) : null;
     (null == e || e.host !== window.location.host || e.pathname !== T.BVt.OAUTH2_AUTHORIZE) && (0, m.pX)(T.BVt.INDEX)
   }, [a]);
   let s = null != a ? (0, o.parse)(a.search) : {},
     l = null != (t = null != (n = s.error_description) ? n : s.error) ? t : C.intl.string(C.t.mqn873);
-  return (0, r.jsx)(I.$, {
+  return (0, r.jsx)(S.$, {
     removeChildWrapper: true,
-    children: (0, r.jsx)(I.f, {
+    children: (0, r.jsx)(S.f, {
       transitionState: c.ip4.ENTERED,
       hideHeader: true,
       children: (0, r.jsx)(F, {

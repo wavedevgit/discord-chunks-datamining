@@ -2,15 +2,15 @@
 /** chunk id: 493405, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $e: () => A,
+  $e: () => v,
   DD: () => h,
   LR: () => m,
   Rz: () => g,
   UU: () => _,
   _b: () => O,
   fB: () => E,
-  gm: () => y,
-  jR: () => v
+  gm: () => b,
+  jR: () => A
 }), require("./65821.js"), require("./896048.js");
 var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
@@ -176,7 +176,7 @@ function E() {
   })
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return Promise.resolve();
   i.h.dispatch(t);
   try {
@@ -186,25 +186,25 @@ function b(e, t) {
   }
 }
 
-function y() {
-  return b(a.A.getPayPalClient(), {
+function b() {
+  return y(a.A.getPayPalClient(), {
     type: "BRAINTREE_TEARDOWN_PAYPAL_CLIENT"
   })
 }
 
 function O() {
-  return b(a.A.getVenmoClient(), {
+  return y(a.A.getVenmoClient(), {
     type: "BRAINTREE_TEARDOWN_VENMO_CLIENT"
   })
 }
 
-function A() {
+function v() {
   let e = a.A.getLastURL();
   null == e ? g() : (i.h.dispatch({
     type: "BRAINTREE_TOKENIZE_PAYPAL_START"
   }), window.open(e))
 }
 
-function v() {
+function A() {
   E()
 }

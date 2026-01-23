@@ -47,20 +47,20 @@ function p(e) {
       onCancel: m,
       onClose: g,
       onCloseCallback: E,
-      bodyClassName: b,
-      transitionState: y,
+      bodyClassName: y,
+      transitionState: b,
       loading: O = false,
-      confirmButtonColor: A = o.$n.Colors.RED,
-      focusCancel: v = false,
-      impression: S
+      confirmButtonColor: v = o.$n.Colors.RED,
+      focusCancel: A = false,
+      impression: I
     } = e,
-    I = i.useRef(null);
+    S = i.useRef(null);
   return i.useEffect(() => {
-    v || setTimeout(() => {
+    A || setTimeout(() => {
       var e;
-      return null == (e = I.current) ? true : e.focus()
+      return null == (e = S.current) ? true : e.focus()
     }, 0)
-  }, [v]), i.useLayoutEffect(() => () => null == E ? true : E()), null != p && (t = (0, r.jsx)(o.$n, {
+  }, [A]), i.useLayoutEffect(() => () => null == E ? true : E()), null != p && (t = (0, r.jsx)(o.$n, {
     "data-migration-pending": true,
     type: "button",
     look: o.$n.Looks.FILLED,
@@ -71,14 +71,14 @@ function p(e) {
     onClick: () => {
       null == m || m(), g()
     },
-    autoFocus: v,
+    autoFocus: A,
     children: p
   })), null != f && (n = (0, r.jsx)(o.$n, {
     "data-migration-pending": true,
-    buttonRef: I,
+    buttonRef: S,
     type: "submit",
     size: o.$n.Sizes.MEDIUM,
-    color: A,
+    color: v,
     submitting: O,
     onClick: async () => {
       try {
@@ -87,13 +87,13 @@ function p(e) {
         throw e
       }
     },
-    autoFocus: !v,
+    autoFocus: !A,
     children: f
   })), (0, r.jsxs)(l.EO, {
     "data-migration-pending": true,
     className: _,
-    transitionState: y,
-    impression: S,
+    transitionState: b,
+    impression: I,
     parentComponent: "ConfirmModal",
     children: [null != a ? (0, r.jsx)(l.rQ, {
       "data-migration-pending": true,
@@ -104,7 +104,7 @@ function p(e) {
       })
     }) : null, (0, r.jsx)(l.$m, {
       "data-migration-pending": true,
-      className: s()(u.Q, b),
+      className: s()(u.Q, y),
       children: d
     }), (0, r.jsxs)(l.jl, {
       "data-migration-pending": true,

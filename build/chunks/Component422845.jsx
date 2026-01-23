@@ -1,7 +1,7 @@
 /** Chunk was on 86317 **/
 /** chunk id: 422845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -45,51 +45,51 @@ function x(e, t) {
   }), e
 }
 
-function f(e) {
+function g(e) {
   let {
     className: t,
     onScheduleChange: n,
     onRecurrenceChange: r,
-    onTimeChange: f,
+    onTimeChange: g,
     timeSelected: j = true,
-    schedule: g,
+    schedule: m,
     recurrenceRule: h,
-    showEndDate: m = false,
+    showEndDate: f = false,
     requireEndDate: b = false,
     disableStartDateTime: p = false
   } = e;
-  if (null == g) return null;
+  if (null == m) return null;
   let v = null,
-    y = g.startDate,
+    y = m.startDate,
     O = i()(),
-    A = i()().add(s.IS, "days"),
-    D = i()().add(s.Xy, "days");
-  null != h && (A.add(s.Ze, "years"), D.add(s.Ze, "years"));
-  let S = e => {
-    n(x(d({}, g), {
+    _ = i()().add(s.IS, "days"),
+    A = i()().add(s.Xy, "days");
+  null != h && (_.add(s.Ze, "years"), A.add(s.Ze, "years"));
+  let D = e => {
+    n(x(d({}, m), {
       endDate: e
     }))
   };
-  return m && (v = null != g.endDate || b ? (0, l.jsxs)(l.Fragment, {
+  return f && (v = null != m.endDate || b ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsxs)("div", {
       className: u.U,
       children: [(0, l.jsx)(a.J3s, {
         label: o.intl.string(o.t.CTLgZJ),
         required: b,
-        value: g.endDate,
-        onSelect: S,
-        minDate: g.startDate,
-        maxDate: D
+        value: m.endDate,
+        onSelect: D,
+        minDate: m.startDate,
+        maxDate: A
       }), (0, l.jsx)(a.czz, {
         label: o.intl.string(o.t.j2RuXF),
         required: b,
-        value: g.endDate,
-        onChange: S
+        value: m.endDate,
+        onChange: D
       })]
     }), b ? null : (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(a.QWc, {
         onClick: () => {
-          S(true)
+          D(true)
         },
         text: o.intl.string(o.t.petdfk),
         size: "sm"
@@ -100,7 +100,7 @@ function f(e) {
   }) : (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(a.QWc, {
       onClick: () => {
-        S(i()(g.startDate).add(1, "hour"))
+        D(i()(m.startDate).add(1, "hour"))
       },
       text: o.intl.string(o.t.ncdPcn),
       size: "sm"
@@ -114,21 +114,21 @@ function f(e) {
       children: [(0, l.jsx)(a.J3s, {
         label: o.intl.string(o.t.kKOIwJ),
         required: true,
-        value: g.startDate,
+        value: m.startDate,
         onSelect: e => {
-          n(x(d({}, g), {
+          n(x(d({}, m), {
             startDate: e
           }))
         },
         minDate: O,
-        maxDate: A,
+        maxDate: _,
         disabled: p
       }), (0, l.jsx)(a.czz, {
         label: o.intl.string(o.t["6dGmCD"]),
         required: true,
-        value: g.startDate,
+        value: m.startDate,
         onChange: e => {
-          e.isValid() && (null == f || f(true), n(x(d({}, g), {
+          e.isValid() && (null == g || g(true), n(x(d({}, m), {
             startDate: e
           })))
         },

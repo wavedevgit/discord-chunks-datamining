@@ -77,7 +77,7 @@ let _ = new Chunk626584.A("useStripePaymentElementOptions"),
     let {
       onSetupError: t,
       elementsAppearanceOptions: n = {}
-    } = e, [i, s] = r.useState(true), [f, m] = r.useState(null), [g, E] = r.useState(true), [b, y] = r.useState([]), [O, A] = r.useState({}), v = r.useCallback(async () => {
+    } = e, [i, s] = r.useState(true), [f, m] = r.useState(null), [g, E] = r.useState(true), [y, b] = r.useState([]), [O, v] = r.useState({}), A = r.useCallback(async () => {
       var e;
       let n = (0, u.J)({
         ipCountryCode: null != (e = o.A.ipCountryCode) ? e : "ALL",
@@ -88,7 +88,7 @@ let _ = new Chunk626584.A("useStripePaymentElementOptions"),
           client_secret: e,
           custom_payment_methods: t
         } = await (0, c.w)(n), r = (0, d.Dd)(t), i = t.reduce((e, t) => (e[t.custom_payment_method_id] = t.payment_source_type, e), {});
-        y(r), A(i), s(e)
+        b(r), v(i), s(e)
       } catch (e) {
         m(e), null != t && t(e), _.error("there was an error on setup for Payment Elements: ", e), (0, l.pM)(e, {
           tags: {
@@ -99,25 +99,25 @@ let _ = new Chunk626584.A("useStripePaymentElementOptions"),
       E(false)
     }, [t]);
     (0, a.Ay)(() => {
-      v()
+      A()
     });
     let {
-      elementsAppearance: S,
-      elementsAppearanceOptions: I
+      elementsAppearance: I,
+      elementsAppearanceOptions: S
     } = h(n);
     return {
       setupError: f,
       elementsOptions: r.useMemo(() => g ? null : p({
         clientSecret: i
       }, {
-        appearance: S,
-        customPaymentMethods: b,
+        appearance: I,
+        customPaymentMethods: y,
         paymentMethodCreation: "manual"
-      }), [S, i, b, g]),
+      }), [I, i, y, g]),
       setupIntentSecret: i,
-      customPaymentMethods: b,
+      customPaymentMethods: y,
       customPaymentMethodIdsToSourceTypes: O,
       isLoading: g,
-      elementsAppearanceOptions: I
+      elementsAppearanceOptions: S
     }
   }

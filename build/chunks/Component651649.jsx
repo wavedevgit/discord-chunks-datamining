@@ -2,7 +2,7 @@
 /** chunk id: 651649, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -22,7 +22,7 @@ var Chunk735438 = require("./735438.js"),
   Chunk670455 = require("./670455.js"),
   Chunk652215 = require("./652215.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,14 +31,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -55,14 +55,14 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class v extends Chunk37962.A {
+class A extends Chunk37962.A {
   constructor(...e) {
-    super(...e), b(this, "actions", {
+    super(...e), y(this, "actions", {
       VOICE_CHANNEL_SHOW_FEEDBACK: e => this.handleVoiceChannelFeedback(e),
       STREAM_CLOSE: e => this.handleStreamClose(e),
       VIDEO_BACKGROUND_SHOW_FEEDBACK: e => this.handleVideoBackgroundShowFeedback(e),
@@ -70,7 +70,7 @@ class v extends Chunk37962.A {
       IN_APP_REPORTS_SHOW_FEEDBACK: e => this.handleInAppReportsFeedback(e),
       BLOCK_USER_SHOW_FEEDBACK: () => this.handleBlockUserFeedback(),
       AGE_VERIFICATION_SHOW_FEEDBACK: e => this.handleAgeVerificationFeedback(e)
-    }), b(this, "handleVoiceChannelFeedback", e => {
+    }), y(this, "handleVoiceChannelFeedback", e => {
       let {
         analyticsData: t
       } = e;
@@ -79,7 +79,7 @@ class v extends Chunk37962.A {
           let {
             VoiceFilterFeedbackModal: e
           } = await Promise.all([n.e("16833"), n.e("26484"), n.e("51997")]).then(n.bind(n, 455071));
-          return n => (0, r.jsx)(e, A(y({}, n), {
+          return n => (0, r.jsx)(e, v(b({}, n), {
             analyticsData: t
           }))
         })
@@ -88,17 +88,17 @@ class v extends Chunk37962.A {
           let {
             default: e
           } = await Promise.all([n.e("16833"), n.e("49911"), n.e("36278")]).then(n.bind(n, 302252));
-          return n => (0, r.jsx)(e, A(y({}, n), {
+          return n => (0, r.jsx)(e, v(b({}, n), {
             analyticsData: t
           }))
         })
       })
-    }), b(this, "handleStreamClose", e => {
+    }), y(this, "handleStreamClose", e => {
       var t, i;
       let {
         streamKey: s,
         canShowFeedback: o
-      } = e, u = (0, l.Iy)(s), f = (0, c.Ee)(u, p.A), _ = null != (t = h.A.getVideoStats(s)) ? t : {}, m = y({
+      } = e, u = (0, l.Iy)(s), f = (0, c.Ee)(u, p.A), _ = null != (t = h.A.getVideoStats(s)) ? t : {}, m = b({
         media_session_id: h.A.getMediaSessionId(s),
         rtc_connection_id: h.A.getRtcConnectionId(s),
         stream_region: h.A.getRegion(s),
@@ -110,7 +110,7 @@ class v extends Chunk37962.A {
           let {
             default: e
           } = await Promise.all([n.e("16833"), n.e("49911"), n.e("80760")]).then(n.bind(n, 218738));
-          return t => (0, r.jsx)(e, A(y({
+          return t => (0, r.jsx)(e, v(b({
             stream: u,
             streamApplication: f,
             isStreamer: u.ownerId === d.default.getId()
@@ -119,7 +119,7 @@ class v extends Chunk37962.A {
           }))
         })
       })
-    }), b(this, "handleVideoBackgroundShowFeedback", e => {
+    }), y(this, "handleVideoBackgroundShowFeedback", e => {
       let {
         analyticsData: t
       } = e;
@@ -128,12 +128,12 @@ class v extends Chunk37962.A {
           let {
             default: e
           } = await Promise.all([n.e("16833"), n.e("26484"), n.e("23866")]).then(n.bind(n, 932140));
-          return n => (0, r.jsx)(e, A(y({}, n), {
+          return n => (0, r.jsx)(e, v(b({}, n), {
             analyticsData: t
           }))
         })
       })
-    }), b(this, "handleActivityClose", e => {
+    }), y(this, "handleActivityClose", e => {
       let {
         applicationId: t,
         location: i,
@@ -147,7 +147,7 @@ class v extends Chunk37962.A {
           let {
             default: e
           } = await Promise.all([n.e("16833"), n.e("26484"), n.e("24921")]).then(n.bind(n, 969611));
-          return t => (0, r.jsx)(e, A(y({}, t), {
+          return t => (0, r.jsx)(e, v(b({}, t), {
             activityApplication: c,
             channel: p,
             embeddedActivityLocation: i,
@@ -157,7 +157,7 @@ class v extends Chunk37962.A {
           contextKey: m
         })
       })
-    }), b(this, "handleInAppReportsFeedback", e => {
+    }), y(this, "handleInAppReportsFeedback", e => {
       let {
         reportId: t,
         reportType: i
@@ -167,22 +167,22 @@ class v extends Chunk37962.A {
           let {
             default: e
           } = await Promise.all([n.e("16833"), n.e("26484"), n.e("94759")]).then(n.bind(n, 255189));
-          return n => (0, r.jsx)(e, A(y({}, n), {
+          return n => (0, r.jsx)(e, v(b({}, n), {
             reportId: t,
             reportType: i
           }))
         })
       })
-    }), b(this, "handleBlockUserFeedback", () => {
+    }), y(this, "handleBlockUserFeedback", () => {
       this.possiblyShowFeedbackModal(g.MW.BLOCK_USER, () => {
         (0, a.mMO)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("16833"), n.e("26484"), n.e("38008")]).then(n.bind(n, 307750));
-          return t => (0, r.jsx)(e, y({}, t))
+          return t => (0, r.jsx)(e, b({}, t))
         })
       })
-    }), b(this, "handleAgeVerificationFeedback", e => {
+    }), y(this, "handleAgeVerificationFeedback", e => {
       let {
         dismissibleContent: t
       } = e;
@@ -191,7 +191,7 @@ class v extends Chunk37962.A {
           let {
             default: e
           } = await Promise.all([n.e("16833"), n.e("26484"), n.e("13146")]).then(n.bind(n, 949004));
-          return n => (0, r.jsx)(e, y({
+          return n => (0, r.jsx)(e, b({
             dismissibleContent: t
           }, n))
         })
@@ -199,4 +199,4 @@ class v extends Chunk37962.A {
     })
   }
 }
-let S = new v
+let I = new A

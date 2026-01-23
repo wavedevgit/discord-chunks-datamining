@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   CV: () => s,
-  E9: () => A,
+  E9: () => v,
   EB: () => d,
   Pl: () => O,
   Wp: () => o,
@@ -287,19 +287,19 @@ function E(e) {
   let t = parseInt(e);
   return (0, i.D)(t)
 }
-let b = `(${f})\\s{0,3}(${(0,Chunk476858.uJ)(d)})`,
-  y = RegExp(b, "i"),
-  O = (0, Chunk476858.mb)("(?:(?:около|примерно)\\s{0,3})?", b);
+let y = `(${f})\\s{0,3}(${(0,Chunk476858.uJ)(d)})`,
+  b = RegExp(y, "i"),
+  O = (0, Chunk476858.mb)("(?:(?:около|примерно)\\s{0,3})?", y);
 
-function A(e) {
+function v(e) {
   let t = {},
     n = e,
-    r = y.exec(n);
-  for (; r;) v(t, r), n = n.substring(r[0].length).trim(), r = y.exec(n);
+    r = b.exec(n);
+  for (; r;) A(t, r), n = n.substring(r[0].length).trim(), r = b.exec(n);
   return t
 }
 
-function v(e, t) {
+function A(e, t) {
   let n = p(t[1]);
   e[d[t[2].toLowerCase()]] = n
 }

@@ -97,14 +97,14 @@ function X(e) {
     className: Z,
     onClose: Q,
     appContext: $
-  } = e, J = (0, b.GV)(), ee = (0, b.GV)(), {
+  } = e, J = (0, y.GV)(), ee = (0, y.GV)(), {
     analyticsLocations: et
   } = (0, _.Ay)(p.A.USER_PROFILE_LIVE_ACTIVITY_CARD), {
     themeType: en
   } = (0, R.E)(), er = (0, E.A)({
     activity: i,
     user: t
-  }), ei = (0, I.A)({
+  }), ei = (0, S.A)({
     display: "live",
     user: t,
     activity: i,
@@ -159,7 +159,7 @@ function X(e) {
     })
   }, ep = () => i.type === V.$pd.HANG_STATUS ? (0, r.jsx)(j.Q, {
     variant: "heading-sm/semibold",
-    text: (0, y.Au)(t.id, i),
+    text: (0, b.Au)(t.id, i),
     id: J
   }) : (0, f.A)(i) && null != X ? (0, r.jsxs)("div", {
     className: Y.FH,
@@ -172,7 +172,7 @@ function X(e) {
       text: X.name,
       id: J
     })]
-  }) : (0, d.A)(i) || (0, S.Cy)(i) ? (0, r.jsx)(j.Q, {
+  }) : (0, d.A)(i) || (0, I.Cy)(i) ? (0, r.jsx)(j.Q, {
     variant: "heading-sm/semibold",
     text: i.name,
     id: J
@@ -195,7 +195,7 @@ function X(e) {
         guildName: z.name
       }),
       onClick: () => {
-        (0, v.u)(z.id), ei({
+        (0, A.u)(z.id), ei({
           action: "OPEN_VOICE_GUILD"
         }), null == Q || Q()
       }
@@ -207,7 +207,7 @@ function X(e) {
         text: i.details
       })
     });
-    if ((0, S.Cy)(i)) {
+    if ((0, I.Cy)(i)) {
       var e;
       return (0, r.jsx)(j.A, {
         variant: "text-xs/normal",
@@ -225,7 +225,7 @@ function X(e) {
     var e, t, n, a, s, o, l, c;
     if (i.type === V.$pd.WATCHING) return null;
     if ((0, d.A)(i)) return em();
-    if ((0, S.Cy)(i) && (null == (e = i.party) ? true : e.size) != null && (null == (t = i.party) ? true : t.size.length) >= 2) {
+    if ((0, I.Cy)(i) && (null == (e = i.party) ? true : e.size) != null && (null == (t = i.party) ? true : t.size.length) >= 2) {
       let e = H.intl.formatToPlainString(H.t["JC/3xw"], {
         numSpeakers: null == (a = i.party) ? true : a.size[0],
         numListeners: (null == (s = i.party) ? true : s.size[1]) - (null == (o = i.party) ? true : o.size[0])
@@ -303,13 +303,13 @@ function X(e) {
       }), eu(e)
     },
     children: [ep(), e_(), eh()]
-  }), eb = () => null == z || null == X ? null : (0, r.jsx)(M.A, {
+  }), ey = () => null == z || null == X ? null : (0, r.jsx)(M.A, {
     user: t,
     guild: z,
     channel: X,
     onAction: ei,
     onClose: Q
-  }), ey = () => (0, r.jsx)(w.A, {
+  }), eb = () => (0, r.jsx)(w.A, {
     containerClassName: Y.o1,
     activity: i,
     user: t,
@@ -337,7 +337,7 @@ function X(e) {
           onClose: Q,
           appContext: $
         })
-      })), (0, r.jsx)(A.A, {
+      })), (0, r.jsx)(v.A, {
         applicationId: null == W ? true : W.id,
         questContent: s.u.USER_PROFILE_ACTIVITY,
         children: e => (0, r.jsxs)("div", {
@@ -351,11 +351,11 @@ function X(e) {
                 user: t,
                 activity: i,
                 className: Y.jp
-              }), eg(), en === B.d.MODAL_V2 && ey()]
-            }), en === B.d.MODAL && ey()]
-          }), eb()]
+              }), eg(), en === B.d.MODAL_V2 && eb()]
+            }), en === B.d.MODAL && eb()]
+          }), ey()]
         })
-      }), en !== B.d.MODAL && en !== B.d.MODAL_V2 && ey(), (0, r.jsx)(D.A, {
+      }), en !== B.d.MODAL && en !== B.d.MODAL_V2 && eb(), (0, r.jsx)(D.A, {
         applicationId: null == W ? true : W.id,
         onAction: ei,
         onClose: Q,

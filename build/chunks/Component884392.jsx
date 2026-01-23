@@ -2,7 +2,7 @@
 /** chunk id: 884392, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk412703 = require("./412703.js"),
@@ -85,7 +85,7 @@ function E(e, t, n, r) {
     }), null == r || r()
   }
 }
-let b = function(e) {
+let y = function(e) {
   let {
     quest: t,
     taskType: n,
@@ -101,19 +101,19 @@ let b = function(e) {
     sourceQuestContent: u,
     questContentPosition: d,
     questContentRowIndex: p
-  }, b = t.id, {
-    isEnrolling: y
+  }, y = t.id, {
+    isEnrolling: b
   } = (0, a.cf)([c.A], () => ({
-    isEnrolling: c.A.isEnrolling(b)
-  }), [b]), O = (0, f.Oz)(t), A = g(n, t), v = h(n, t.config.features), S = E(n, t, _, null != A ? A : true);
+    isEnrolling: c.A.isEnrolling(y)
+  }), [y]), O = (0, f.Oz)(t), v = g(n, t), A = h(n, t.config.features), I = E(n, t, _, null != v ? v : true);
   return (0, r.jsx)(s.Button, {
     size: i,
-    loading: y,
+    loading: b,
     variant: "primary",
     onClick: () => {
-      null == o || o(), S()
+      null == o || o(), I()
     },
-    text: v,
+    text: A,
     icon: O,
     fullWidth: true
   })

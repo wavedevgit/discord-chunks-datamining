@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  i = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk46054 = require("./46054.js"),
   Chunk957565 = require("./957565.js"),
@@ -19,11 +19,11 @@ function m(e) {
       data: {
         title: t,
         body: n,
-        sms: a,
+        sms: i,
         is_localized: m
       }
     }
-  } = e, [b, p] = r.useState(false), x = r.useRef(o.A.reactParserFor(o.A.defaultRules));
+  } = e, [p, b] = r.useState(false), x = r.useRef(o.A.reactParserFor(o.A.defaultRules));
   return m ? (0, l.jsxs)("div", {
     className: u.kL,
     children: [(0, l.jsx)(s.Heading, {
@@ -37,23 +37,23 @@ function m(e) {
       children: x.current(n)
     }), (0, l.jsx)("div", {
       children: (0, l.jsxs)("div", {
-        className: i()(u.GH, {
-          [u.pG]: b
+        className: a()(u.GH, {
+          [u.pG]: p
         }),
         children: [(0, l.jsx)(s.Text, {
           variant: "text-md/normal",
           selectable: true,
           className: u.Kk,
-          children: a
+          children: i
         }), (0, l.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: u.__invalid_trailingButton,
           children: (0, l.jsx)(s.Button, {
             variant: "secondary",
             size: "sm",
-            text: b ? d.intl.string(d.t.t5VZ88) : d.intl.string(d.t.OpuAlK),
+            text: p ? c.intl.string(c.t.t5VZ88) : c.intl.string(c.t.OpuAlK),
             onClick: () => {
-              (0, c.C)(a, () => p(true))
+              (0, d.C)(i, () => b(true))
             }
           })
         })]

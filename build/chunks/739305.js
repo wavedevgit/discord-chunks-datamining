@@ -18,13 +18,13 @@ var r, i, a, Chunk593858 = require("./593858.js"),
   Chunk380744 = require("./380744.js"),
   Chunk753891 = require("./753891.js"),
   Chunk883972 = require("./883972.js"),
-  v = Chunk883972.enforce,
-  S = Chunk883972.get,
-  I = Chunk860511.Int8Array,
-  T = I && I.prototype,
+  A = Chunk883972.enforce,
+  I = Chunk883972.get,
+  S = Chunk860511.Int8Array,
+  T = S && S.prototype,
   C = Chunk860511.Uint8ClampedArray,
   N = C && C.prototype,
-  R = I && Chunk42756(I),
+  R = S && Chunk42756(S),
   w = T && Chunk42756(T),
   P = Object.prototype,
   D = Chunk860511.TypeError,
@@ -56,7 +56,7 @@ var r, i, a, Chunk593858 = require("./593858.js"),
   F = function(e) {
     var t = E(e);
     if (u(t)) {
-      var n = S(t);
+      var n = I(t);
       return n && d(n, j) ? n[j] : F(t)
     }
   },
@@ -70,7 +70,7 @@ var r, i, a, Chunk593858 = require("./593858.js"),
     throw new D("Target is not a typed array")
   },
   Y = function(e) {
-    if (c(e) && (!b || g(R, e))) return e;
+    if (c(e) && (!y || g(R, e))) return e;
     throw new D(p(e) + " is not a typed array constructor")
   },
   W = function(e, t, n, r) {
@@ -91,7 +91,7 @@ var r, i, a, Chunk593858 = require("./593858.js"),
   K = function(e, t, n) {
     var r, i;
     if (o) {
-      if (b) {
+      if (y) {
         if (n) {
           for (r in U)
             if ((i = l[r]) && d(i, e)) try {
@@ -106,8 +106,8 @@ var r, i, a, Chunk593858 = require("./593858.js"),
       for (r in U)(i = l[r]) && (!i[e] || n) && h(i, e, t)
     }
   };
-for (r in U)(a = (i = Chunk860511[r]) && i.prototype) ? v(a)[j] = i : M = false;
-for (r in G)(a = (i = Chunk860511[r]) && i.prototype) && (v(a)[j] = i);
+for (r in U)(a = (i = Chunk860511[r]) && i.prototype) ? A(a)[j] = i : M = false;
+for (r in G)(a = (i = Chunk860511[r]) && i.prototype) && (A(a)[j] = i);
 if ((!M || !Chunk339626(R) || R === Function.prototype) && (R = function() {
     throw new D("Incorrect invocation")
   }, M))

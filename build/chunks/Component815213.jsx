@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 815213, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,27 +15,27 @@ var Chunk627968 = require("./627968.js"),
   Chunk543465 = require("./543465.js"),
   Chunk531685 = require("./531685.js");
 
-function h(e) {
+function f(e) {
   let t = u.A.getChannel(e);
-  return null != t && null != t.getGuildId() && !(t.isThread() ? c.A.isMuted(t.id) : f.Ay.isChannelMuted(t.getGuildId(), t.id)) && (0, o.Y)(t)
+  return null != t && null != t.getGuildId() && !(t.isThread() ? c.A.isMuted(t.id) : p.Ay.isChannelMuted(t.getGuildId(), t.id)) && (0, o.Y)(t)
 }
 
-function b(e) {
+function g(e) {
   let t = u.A.getChannel(e);
   if (null == t) returnfalse;
   let n = t.getGuildId();
   if (null == n) returnfalse;
-  let r = f.Ay.isGuildCollapsed(n),
-    l = f.Ay.isChannelMuted(n, t.id);
+  let r = p.Ay.isGuildCollapsed(n),
+    l = p.Ay.isChannelMuted(n, t.id);
   return (!r || !l) && d.Ay.getMentionCount(e) > 0
 }
-let g = Chunk64700.forwardRef(function(e, t) {
+let m = Chunk64700.forwardRef(function(e, t) {
   var n, l;
   let [o, ...c] = [e, t], {
     guildId: u,
     guildChannels: d,
-    guildChannelsVersion: f
-  } = o, g = function(e, t) {
+    guildChannelsVersion: p
+  } = o, m = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -51,12 +51,12 @@ let g = Chunk64700.forwardRef(function(e, t) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(o, ["guildId", "guildChannels", "guildChannelsVersion"]), [m] = c, A = (0, a.W)(u, d, f, {
+  }(o, ["guildId", "guildChannels", "guildChannelsVersion"]), [b] = c, A = (0, s.W)(u, d, p, {
     withVoiceChannels: false
   }, {
     ignoreRecents: true
-  }), y = (0, i.bG)([p.A], () => p.A.isFocused());
-  return (0, r.jsx)(s.A, (n = function(e) {
+  }), y = (0, i.bG)([h.A], () => h.A.isFocused());
+  return (0, r.jsx)(a.A, (n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -74,10 +74,10 @@ let g = Chunk64700.forwardRef(function(e, t) {
     }
     return e
   }({
-    ref: m
-  }, g), l = l = {
-    isUnread: h,
-    isMentioned: b,
+    ref: b
+  }, m), l = l = {
+    isUnread: f,
+    isMentioned: g,
     items: A,
     animate: y
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {

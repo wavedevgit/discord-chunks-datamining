@@ -2,7 +2,7 @@
 /** chunk id: 111162, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => I
+  default: () => S
 }), require("./938796.js");
 var r, Chunk158390 = require("./158390.js"),
   Chunk247775 = require("./247775.js"),
@@ -92,103 +92,103 @@ let m = (() => {
     personaForceIdVerificationFail: false,
     personaDisableModularPilotTestTemplate: false
   },
-  b = h({}, E);
+  y = h({}, E);
 
-function y(e) {
-  b = h({}, E, b, e), m.set(b.sourceMapsEnabled), l.w.set(g, b)
+function b(e) {
+  y = h({}, E, y, e), m.set(y.sourceMapsEnabled), l.w.set(g, y)
 }
 
 function O(e) {
   let {
     settings: t
   } = e;
-  y(t)
-}
-
-function A(e) {
-  y(E)
+  b(t)
 }
 
 function v(e) {
+  b(E)
+}
+
+function A(e) {
   var t;
   let n = ((null != (t = e.user.flags) ? t : 0) & p.nhx.STAFF) === p.nhx.STAFF,
     r = n || null != e.user.personal_connection_id;
-  n && m.set(b.sourceMapsEnabled), f.A.setTags({
+  n && m.set(y.sourceMapsEnabled), f.A.setTags({
     isStaff: r.toString()
   })
 }
-class S extends(r = Chunk311907.Ay.Store) {
+class I extends(r = Chunk311907.Ay.Store) {
   initialize() {
     let e = l.w.get(g);
-    null != e && (b = h({}, E, e))
+    null != e && (y = h({}, E, e))
   }
   get isTracingRequests() {
-    return b.trace
+    return y.trace
   }
   get isForcedCanary() {
-    return b.canary
+    return y.canary
   }
   get isLoggingGatewayEvents() {
-    return b.logGatewayEvents
+    return y.logGatewayEvents
   }
   get isLoggingOverlayEvents() {
-    return b.logOverlayEvents
+    return y.logOverlayEvents
   }
   get isLoggingAnalyticsEvents() {
-    return b.logAnalyticsEvents
+    return y.logAnalyticsEvents
   }
   get isAxeEnabled() {
-    return b.axeEnabled
+    return y.axeEnabled
   }
   get cssDebuggingEnabled() {
-    return b.cssDebuggingEnabled
+    return y.cssDebuggingEnabled
   }
   get layoutDebuggingEnabled() {
-    return b.layoutDebuggingEnabled
+    return y.layoutDebuggingEnabled
   }
   get sourceMapsEnabled() {
-    return b.sourceMapsEnabled
+    return y.sourceMapsEnabled
   }
   get isBugReporterEnabled() {
-    return b.bugReporterEnabled
+    return y.bugReporterEnabled
   }
   get isIdleStatusIndicatorEnabled() {
-    return b.idleStatusIndicatorEnabled
+    return y.idleStatusIndicatorEnabled
   }
   get onlyShowPreviewAppCollections() {
-    return b.onlyShowPreviewAppCollections
+    return y.onlyShowPreviewAppCollections
   }
   get disableAppCollectionsCache() {
-    return b.disableAppCollectionsCache
+    return y.disableAppCollectionsCache
   }
   get isStreamInfoOverlayEnabled() {
-    return b.isStreamInfoOverlayEnabled
+    return y.isStreamInfoOverlayEnabled
   }
   get preventPopoutClose() {
-    return b.preventPopoutClose
+    return y.preventPopoutClose
   }
   get logKeyboardMismatches() {
-    return b.logKeyboardMismatches
+    return y.logKeyboardMismatches
   }
   get alertStartupMetrics() {
-    return b.alertStartupMetrics
+    return y.alertStartupMetrics
   }
   get personaForceFaeFail() {
-    return b.personaForceFaeFail
+    return y.personaForceFaeFail
   }
   get personaForceIdVerificationFail() {
-    return b.personaForceIdVerificationFail
+    return y.personaForceIdVerificationFail
   }
   get personaDisableModularPilotTestTemplate() {
-    return b.personaDisableModularPilotTestTemplate
+    return y.personaDisableModularPilotTestTemplate
   }
   getDebugOptionsHeaderValue() {
-    return Object.keys(b).map(e => b[e]), Object.keys(b).filter(e => b[e]).join(",")
+    return Object.keys(y).map(e => y[e]), Object.keys(y).filter(e => y[e]).join(",")
   }
 }
-_(S, "displayName", "DeveloperOptionsStore");
-let I = new S(Chunk73153.h, {
-  LOGOUT: A,
-  CONNECTION_OPEN: v,
+_(I, "displayName", "DeveloperOptionsStore");
+let S = new I(Chunk73153.h, {
+  LOGOUT: v,
+  CONNECTION_OPEN: A,
   DEVELOPER_OPTIONS_UPDATE_SETTINGS: O
 })

@@ -67,8 +67,8 @@ function c(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
     return l
-  }(e, ["width", "height", "color", "foreground", "gradientConfig"]), f = null;
-  return null != d && (f = (0, r.jsx)(i.A, s(a({}, d), {
+  }(e, ["width", "height", "color", "foreground", "gradientConfig"]), h = null;
+  return null != d && (h = (0, r.jsx)(i.A, s(a({}, d), {
     color: c,
     id: o(d.id)
   }))), (0, r.jsxs)("svg", s(a({}, (0, l.A)(p)), {
@@ -76,7 +76,7 @@ function c(e) {
     height: n,
     viewBox: "0 0 24 24",
     children: [(0, r.jsx)("defs", {
-      children: f
+      children: h
     }), (0, r.jsx)("path", {
       d: "M0 0h24v24H0z",
       fill: "none"

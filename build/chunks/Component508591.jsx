@@ -61,13 +61,13 @@ let g = e => {
     mode: h = "popover",
     tooltipDelay: g = 300,
     targetElementRef: E,
-    body: b,
-    progressCircleText: y,
+    body: y,
+    progressCircleText: b,
     progressCirclePercent: O,
-    progressCircleUrgency: A,
-    actions: v,
-    onShow: S,
-    estimatedTooltipHeight: I = 300
+    progressCircleUrgency: v,
+    actions: A,
+    onShow: I,
+    estimatedTooltipHeight: S = 300
   } = e, T = u.VD[t].nameUnformattedNitro, C = f.intl.string(T).toLocaleUpperCase(), N = (0, s.A)(t), R = (0, o.I)(t);
   (0, i.useEffect)(() => {
     a.m[a.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE](), new Image().src = R
@@ -85,20 +85,20 @@ let g = e => {
         props: {
           src: R,
           alt: C,
-          progressCircleText: y,
+          progressCircleText: b,
           progressCirclePercent: O,
-          progressCircleUrgency: A
+          progressCircleUrgency: v
         }
       },
       title: C,
-      body: b,
-      actions: v
+      body: y,
+      actions: A
     };
   return "tooltip" === h ? (0, r.jsx)(c.A, m(_({
     targetElementRef: E,
-    estimatedTooltipHeight: I,
+    estimatedTooltipHeight: S,
     delay: g,
-    onShow: S
+    onShow: I
   }, P), {
     children: p
   })) : (0, r.jsxs)(r.Fragment, {

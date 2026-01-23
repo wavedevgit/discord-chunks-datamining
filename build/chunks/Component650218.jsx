@@ -2,7 +2,7 @@
 /** chunk id: 650218, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => I
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,7 +24,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk612704 = require("./612704.js"),
   Chunk911850 = require("./911850.js");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,26 +33,26 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e) {
+function I(e) {
   let {
     user: t,
     guildId: n,
-    setPopoutRef: A,
-    channelId: S,
-    messageId: I,
+    setPopoutRef: v,
+    channelId: I,
+    messageId: S,
     roleId: T,
     openedAt: C,
     onHide: N,
@@ -65,13 +65,13 @@ function S(e) {
     layout: "POPOUT",
     userId: t.id,
     guildId: n,
-    channelId: S,
-    messageId: I,
+    channelId: I,
+    messageId: S,
     roleId: T
   }), j = i.useRef(null), M = (0, p.Ay)(t.id, n);
   i.useEffect(() => {
-    null == A || A(null == j ? true : j.current)
-  }, [j, A]);
+    null == v || v(null == j ? true : j.current)
+  }, [j, v]);
   let k = D ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
     U = w ? "div" : s.lGe;
   return (0, r.jsx)(l.f5, {
@@ -91,26 +91,26 @@ function S(e) {
           displayProfile: M,
           themeType: E.d.POPOUT,
           children: (0, r.jsxs)("div", {
-            className: y.kL,
+            className: b.kL,
             children: [(0, r.jsx)("img", {
               alt: "",
               src: O,
-              className: y.VH,
+              className: b.VH,
               "aria-hidden": true
             }), (0, r.jsxs)("div", {
-              className: y.rf,
+              className: b.rf,
               children: [(0, r.jsxs)("div", {
-                className: y.N1,
+                className: b.N1,
                 children: [(0, r.jsx)(_.A, {
                   user: t,
                   guildId: n
                 }), (0, r.jsx)(s.Heading, {
                   variant: "heading-lg/bold",
-                  children: b.intl.string(b.t.b33pLD)
+                  children: y.intl.string(y.t.b33pLD)
                 }), (0, r.jsx)(s.Text, {
                   variant: "text-sm/medium",
-                  children: b.intl.format(D ? b.t["8F+WNz"] : b.t["/cZp5s"], {
-                    username: u.Ay.getName(n, S, t)
+                  children: y.intl.format(D ? y.t["8F+WNz"] : y.t["/cZp5s"], {
+                    username: u.Ay.getName(n, I, t)
                   })
                 })]
               }), (0, r.jsxs)(s.BJc, {
@@ -118,7 +118,7 @@ function S(e) {
                 children: [(0, r.jsx)(g.A, {
                   isBlocked: D,
                   onClick: () => {
-                    N(), (0, f.Wn)(v({
+                    N(), (0, f.Wn)(A({
                       action: k,
                       analyticsLocations: x
                     }, L))
@@ -126,7 +126,7 @@ function S(e) {
                 }), (0, r.jsx)(m.A, {
                   userId: t.id,
                   onClick: () => {
-                    N(), (0, f.Wn)(v({
+                    N(), (0, f.Wn)(A({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                       analyticsLocations: x
                     }, L))

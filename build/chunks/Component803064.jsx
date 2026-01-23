@@ -23,8 +23,8 @@ var Chunk627968 = require("./627968.js"),
 let j = function(e) {
   let {
     guild: t
-  } = e, j = t.features.has(g.GuildFeatures.BANNER), O = i.useCallback((e, i) => {
-    null == e || true === i ? f.A.saveGuild(t.id, {
+  } = e, j = t.features.has(m.GuildFeatures.BANNER), _ = i.useCallback((e, i) => {
+    null == e || true === i ? g.A.saveGuild(t.id, {
       homeHeader: null
     }) : (0, l.mMO)(async () => {
       let {
@@ -54,70 +54,70 @@ let j = function(e) {
           let {
             imageUri: n
           } = e;
-          return f.A.saveGuild(t.id, {
+          return g.A.saveGuild(t.id, {
             homeHeader: n
           })
         },
-        uploadType: m.HL.HOME_HEADER
+        uploadType: f.HL.HOME_HEADER
       }, n))
     })
-  }, [t.id]), y = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, s.zV)(g.HAw.PREMIUM_GUILD_PROMOTION_OPENED, {
+  }, [t.id]), O = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), (0, s.zV)(m.HAw.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: {
-        section: g.JJy.GUILD_SETTINGS_ONBOARDING,
-        object: g.ZSU.LEARN_MORE
+        section: m.JJy.GUILD_SETTINGS_ONBOARDING,
+        object: m.ZSU.LEARN_MORE
       },
       guild_id: null == t ? true : t.id,
       location_stack: []
-    }), (0, c.A)({
+    }), (0, o.A)({
       analyticsLocations: [],
       analyticsSourceLocation: {
-        section: g.JJy.GUILD_SETTINGS_ONBOARDING,
-        object: g.ZSU.ONBOARDING_EDIT,
-        page: g.liQ.GUILD_SETTINGS
+        section: m.JJy.GUILD_SETTINGS_ONBOARDING,
+        object: m.ZSU.ONBOARDING_EDIT,
+        page: m.liQ.GUILD_SETTINGS
       },
       guild: t,
-      perks: (0, b.QR)()
+      perks: (0, p.QR)()
     })
-  }, [t]), v = (0, r.jsx)(o.A, {
+  }, [t]), v = (0, r.jsx)(c.A, {
     image: t.homeHeader,
     makeURL: e => null != e ? u.Ay.getGuildHomeHeaderURL({
       id: t.id,
       homeHeader: e
     }) : null,
     disabled: !j,
-    onChange: O,
-    hint: x.intl.string(x.t.NyXznh),
+    onChange: _,
+    hint: h.intl.string(h.t.NyXznh),
     enabled: j,
-    maxFileSizeBytes: p.j
+    maxFileSizeBytes: b.j
   });
   return j ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: h.bV,
+      className: x.bV,
       children: [(0, r.jsx)(l.Heading, {
-        className: h.wx,
+        className: x.wx,
         variant: "heading-lg/extrabold",
-        children: x.intl.string(x.t.BBj1nY)
+        children: h.intl.string(h.t.BBj1nY)
       }), (0, r.jsx)(a.A, {
-        className: h.ts,
+        className: x.ts,
         guild: t,
-        guildFeature: g.GuildFeatures.BANNER,
-        onClick: y
+        guildFeature: m.GuildFeatures.BANNER,
+        onClick: O
       })]
     }), (0, r.jsxs)("div", {
-      className: h.uW,
+      className: x.uW,
       children: [(0, r.jsxs)("div", {
-        className: h.uc,
+        className: x.uc,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: x.intl.string(x.t.Vwintv)
+          children: h.intl.string(h.t.Vwintv)
         }), (0, r.jsx)("div", {
-          className: h.au,
+          className: x.au,
           children: (0, r.jsx)(d.A, {
-            onChange: O,
-            maxFileSizeBytes: p.j,
-            text: x.intl.string(x.t.yG2pUi),
+            onChange: _,
+            maxFileSizeBytes: b.j,
+            text: h.intl.string(h.t.yG2pUi),
             size: "md",
             variant: "primary"
           })
@@ -128,37 +128,37 @@ let j = function(e) {
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: h.bV,
+      className: x.bV,
       children: [(0, r.jsx)(l.Heading, {
-        className: h.wx,
+        className: x.wx,
         variant: "heading-lg/extrabold",
-        children: x.intl.string(x.t.BBj1nY)
+        children: h.intl.string(h.t.BBj1nY)
       }), (0, r.jsx)(a.A, {
-        className: h.ts,
+        className: x.ts,
         guild: t,
-        guildFeature: g.GuildFeatures.BANNER,
-        onClick: y
+        guildFeature: m.GuildFeatures.BANNER,
+        onClick: O
       })]
     }), (0, r.jsxs)("div", {
-      className: h.uW,
+      className: x.uW,
       children: [(0, r.jsxs)("div", {
-        className: h.uc,
+        className: x.uc,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          className: h.tb,
-          children: x.intl.string(x.t.Vwintv)
+          className: x.tb,
+          children: h.intl.string(h.t.Vwintv)
         }), (0, r.jsx)(l.Button, {
           variant: "expressive",
           icon: l._Jp,
-          text: x.intl.string(x.t["+7XY31"]),
-          onClick: y
+          text: h.intl.string(h.t["+7XY31"]),
+          onClick: O
         })]
       }), (0, r.jsx)("div", {
         children: (0, r.jsx)(l.DUT, {
           "aria-hidden": true,
           tabIndex: false,
-          onClick: y,
+          onClick: O,
           children: v
         })
       })]

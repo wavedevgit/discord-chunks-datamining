@@ -27,7 +27,7 @@ let E = {
   },
   handleRequiredAction(e) {
     let t = e.requiredAction;
-    !h.P.isDisallowPopupsSet() && null != f.default.getCurrentUser() && (t === g.a3B.REQUIRE_CAPTCHA || t === g.a3B.REQUIRE_VERIFIED_EMAIL || t === g.a3B.REQUIRE_VERIFIED_PHONE || t === g.a3B.REQUIRE_REVERIFIED_PHONE || t === g.a3B.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE || t === g.a3B.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === g.a3B.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || u.A.isEmailReverification(t) ? (0, o.P3)({
+    !g.P.isDisallowPopupsSet() && null != h.default.getCurrentUser() && (t === m.a3B.REQUIRE_CAPTCHA || t === m.a3B.REQUIRE_VERIFIED_EMAIL || t === m.a3B.REQUIRE_VERIFIED_PHONE || t === m.a3B.REQUIRE_REVERIFIED_PHONE || t === m.a3B.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE || t === m.a3B.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === m.a3B.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || u.A.isEmailReverification(t) ? (0, o.P3)({
       location: "verification-legacy"
     }) ? (0, a.B8)(e => {
       let {
@@ -37,12 +37,12 @@ let E = {
         onClose: t
       })
     }, {
-      layerKey: b._s,
+      layerKey: _._s,
       Layer: s.Ay
     }) : (0, a.B8)(() => (0, r.jsx)(d.A, {}), {
-      layerKey: b._s,
+      layerKey: _._s,
       Layer: s.Ay
-    }) : t === g.a3B.AGREEMENTS ? (0, i.qfG)(e => (0, r.jsx)(A.default, function(e) {
+    }) : t === m.a3B.AGREEMENTS ? (0, i.qfG)(e => (0, r.jsx)(f.default, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -60,10 +60,10 @@ let E = {
       }
       return e
     }({}, e)), {
-      modalKey: b.i$,
-      onCloseRequest: _.FX,
+      modalKey: _.i$,
+      onCloseRequest: b.FX,
       dismissable: false
-    }) : t === g.a3B.REQUIRE_SAFETY_FLOWS ? (0, a.B8)(e => {
+    }) : t === m.a3B.REQUIRE_SAFETY_FLOWS ? (0, a.B8)(e => {
       let {
         closeLayer: t
       } = e;
@@ -71,17 +71,17 @@ let E = {
         onClose: t
       })
     }, {
-      layerKey: b._s,
+      layerKey: _._s,
       Layer: s.Ay
-    }) : null == t && ((0, a.dF)(b._s), (0, i.kBI)(b.i$) && (0, i.OoC)(b.i$)))
+    }) : null == t && ((0, a.dF)(_._s), (0, i.kBI)(_.i$) && (0, i.OoC)(_.i$)))
   },
   handleAuthenticationStoreChanged() {
-    null == p.default.getId() && ((0, a.dF)(b._s), (0, i.OoC)(b.i$), (0, i.OoC)(b.Pr), (0, i.OoC)(b.H1), (0, i.OoC)(m.V))
+    null == p.default.getId() && ((0, a.dF)(_._s), (0, i.OoC)(_.i$), (0, i.OoC)(_.Pr), (0, i.OoC)(_.H1), (0, i.OoC)(A.V))
   },
   handleCurrentUserUpdate(e) {
     let {
       user: t
     } = e;
-    t.verified && (0, i.OoC)(b.H1)
+    t.verified && (0, i.OoC)(_.H1)
   }
 }

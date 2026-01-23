@@ -96,7 +96,7 @@ class V extends Chunk64700.PureComponent {
     }) : w.Yy.has(t) ? (0, r.jsx)(u.po8, {
       messageType: u.YCn.ERROR,
       children: P.intl.format(P.t.MOIaNd, {
-        keyboardNavArticle: S.A.getArticleURL(R.MVz.KEYBOARD_NAVIGATION)
+        keyboardNavArticle: I.A.getArticleURL(R.MVz.KEYBOARD_NAVIGATION)
       })
     }) : (0, r.jsx)(u.Text, {
       variant: "text-md/normal",
@@ -233,7 +233,7 @@ class F extends Chunk64700.PureComponent {
       value: R.hCu.TOGGLE_STREAMER_MODE,
       label: P.intl.string(P.t.BK0Ncc)
     }];
-    return (0, b.L)() && s.push({
+    return (0, y.L)() && s.push({
       id: "toggle-camera",
       value: R.hCu.TOGGLE_CAMERA,
       label: P.intl.string(P.t.hf8JVT)
@@ -245,11 +245,11 @@ class F extends Chunk64700.PureComponent {
       id: "activate-overlay-region-text-widget",
       value: R.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET,
       label: P.intl.string(P.t.hurHWo)
-    })), t && ((0, I.isWindows)() || A.A.getUseSystemScreensharePicker()) && s.push({
+    })), t && ((0, S.isWindows)() || v.A.getUseSystemScreensharePicker()) && s.push({
       id: "toggle-go-live-streaming",
       value: R.hCu.TOGGLE_GO_LIVE_STREAMING,
       label: P.intl.string(P.t.ybdjJD)
-    }), (0, I.isDesktop)() && (s.push({
+    }), (0, S.isDesktop)() && (s.push({
       id: "navigate-back",
       value: R.hCu.NAVIGATE_BACK,
       label: P.intl.string(P.t.gRSaOa)
@@ -303,7 +303,7 @@ class F extends Chunk64700.PureComponent {
       location: "UserSettingsKeybinds"
     }, {
       autoTrackExposure: false
-    }).separateKeybind && (i[R.hCu.VAD_PRIORITY] = P.intl.string(P.t.rSe8IZ)), (0, b.L)() && (i[R.hCu.TOGGLE_CAMERA] = P.intl.string(P.t.v1JBtL)), e && (i[R.hCu.TOGGLE_OVERLAY_INPUT_LOCK] = P.intl.string(P.t.IoP5vc)), t && (0, I.isWindows)() && (i[R.hCu.TOGGLE_GO_LIVE_STREAMING] = P.intl.string(P.t.s4C238)), (0, I.isDesktop)() && (i[R.hCu.NAVIGATE_BACK] = P.intl.string(P.t.nKDlEt), i[R.hCu.NAVIGATE_FORWARD] = P.intl.string(P.t.DK0FFk), i[R.hCu.SOUNDBOARD] = (0, I.isWindows)() ? P.intl.string(P.t["5wJefL"]) : P.intl.string(P.t.gzjsSP), i[R.hCu.SOUNDBOARD_HOLD] = (0, I.isWindows)() ? P.intl.string(P.t.RRkZc9) : P.intl.string(P.t.laNlTl), n && (i[R.hCu.SAVE_CLIP] = P.intl.string(P.t.z3Wbam), r && (i[R.hCu.SAVE_SCREENSHOT] = P.intl.string(P.t.m0zd57)))), i
+    }).separateKeybind && (i[R.hCu.VAD_PRIORITY] = P.intl.string(P.t.rSe8IZ)), (0, y.L)() && (i[R.hCu.TOGGLE_CAMERA] = P.intl.string(P.t.v1JBtL)), e && (i[R.hCu.TOGGLE_OVERLAY_INPUT_LOCK] = P.intl.string(P.t.IoP5vc)), t && (0, S.isWindows)() && (i[R.hCu.TOGGLE_GO_LIVE_STREAMING] = P.intl.string(P.t.s4C238)), (0, S.isDesktop)() && (i[R.hCu.NAVIGATE_BACK] = P.intl.string(P.t.nKDlEt), i[R.hCu.NAVIGATE_FORWARD] = P.intl.string(P.t.DK0FFk), i[R.hCu.SOUNDBOARD] = (0, S.isWindows)() ? P.intl.string(P.t["5wJefL"]) : P.intl.string(P.t.gzjsSP), i[R.hCu.SOUNDBOARD_HOLD] = (0, S.isWindows)() ? P.intl.string(P.t.RRkZc9) : P.intl.string(P.t.laNlTl), n && (i[R.hCu.SAVE_CLIP] = P.intl.string(P.t.z3Wbam), r && (i[R.hCu.SAVE_SCREENSHOT] = P.intl.string(P.t.m0zd57)))), i
   }
   renderKeybinds(e) {
     return e.map((t, n) => (0, r.jsxs)(i.Fragment, {
@@ -335,7 +335,7 @@ class F extends Chunk64700.PureComponent {
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(N.A, {
         title: P.intl.string(P.t.T9DA2K),
-        children: I.isPlatformEmbedded ? (0, r.jsxs)(r.Fragment, {
+        children: S.isPlatformEmbedded ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)("div", {
             className: D.OQ,
             children: [this.renderKeybindWarning(), (0, r.jsx)("div", {
@@ -425,16 +425,16 @@ function B() {
   i.useEffect(() => (d.A.enableAll(false), () => {
     d.A.enableAll(true)
   }), []);
-  let e = (0, o.bG)([v.Ay], () => v.Ay.getState()),
-    t = (0, o.bG)([A.A], () => (0, g.A)(A.A)),
-    n = (0, o.bG)([y.A], () => y.A.isSupported),
+  let e = (0, o.bG)([A.Ay], () => A.Ay.getState()),
+    t = (0, o.bG)([v.A], () => (0, g.A)(v.A)),
+    n = (0, o.bG)([b.A], () => b.A.isSupported),
     a = (0, m.sw)(),
     s = (0, m.BW)();
   return (0, r.jsx)(F, {
     keybinds: e,
     canGoLive: t,
     overlaySupported: n,
-    allowSoundboard: (0, I.isWindows)(),
+    allowSoundboard: (0, S.isWindows)(),
     enableClips: a,
     enableScreenshotKeybind: s
   })

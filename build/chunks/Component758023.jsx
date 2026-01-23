@@ -2,7 +2,7 @@
 /** chunk id: 758023, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => x
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,13 +19,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk817136 = require("./817136.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk659233 = require("./659233.js");
-let h = function(e) {
+let x = function(e) {
   let {
     guildId: t
-  } = e, l = (0, a.cf)([b.A], () => {
+  } = e, l = (0, a.cf)([p.A], () => {
     var e;
-    return null != (e = b.A.getSettings().welcomeMessage) ? e : m.p
-  }), h = i.useCallback(() => (0, o.mMO)(async () => {
+    return null != (e = p.A.getSettings().welcomeMessage) ? e : f.p
+  }), x = i.useCallback(() => (0, c.mMO)(async () => {
     let {
       default: e
     } = await n.e("94194").then(n.bind(n, 930345));
@@ -51,7 +51,7 @@ let h = function(e) {
       }({}, n), s = s = {
         guildId: t,
         welcomeMessage: l,
-        onSave: e => (0, g.hL)(e)
+        onSave: e => (0, m.hL)(e)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -63,30 +63,30 @@ let h = function(e) {
         Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
       }), i))
     }
-  }), [t, l]), j = (0, a.bG)([f.default], () => f.default.getId());
-  return (0, d.Fn)(l) ? (0, r.jsx)(o.Button, {
+  }), [t, l]), j = (0, a.bG)([g.default], () => g.default.getId());
+  return (0, d.Fn)(l) ? (0, r.jsx)(c.Button, {
     variant: "primary",
     size: "sm",
-    text: p.intl.string(p.t["9Z+aEP"]),
-    onClick: h
-  }) : (0, r.jsxs)(o.DUT, {
-    className: x.ab,
-    onClick: h,
+    text: b.intl.string(b.t["9Z+aEP"]),
+    onClick: x
+  }) : (0, r.jsxs)(c.DUT, {
+    className: h.ab,
+    onClick: x,
     children: [(0, r.jsx)(u.A, {
       guildId: t,
       welcomeMessage: {
         authorIds: l.authorIds.length > 0 ? l.authorIds : [j],
         message: l.message
       }
-    }), (0, r.jsx)(c.m, {
-      text: p.intl.string(p.t.bt75uw),
+    }), (0, r.jsx)(o.m, {
+      text: b.intl.string(b.t.bt75uw),
       children: (0, r.jsxs)("div", {
-        className: s()(x.Md, x.Tu),
-        children: [(0, r.jsx)(o.R2l, {
+        className: s()(h.Md, h.Tu),
+        children: [(0, r.jsx)(c.R2l, {
           size: "md",
           color: "currentColor"
-        }), (0, r.jsx)(o.AC4, {
-          children: p.intl.string(p.t.bt75uw)
+        }), (0, r.jsx)(c.AC4, {
+          children: b.intl.string(b.t.bt75uw)
         })]
       })
     })]

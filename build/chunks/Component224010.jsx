@@ -25,7 +25,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk645700 = require("./645700.js");
 
-function v(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +34,20 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function I(e, t) {
 }
 
 function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -71,16 +71,16 @@ let C = e => {
       count: a
     } = e;
     return (0, r.jsxs)(l.DUT, {
-      className: A.wx,
+      className: v.wx,
       onClick: n,
       children: [(0, r.jsx)("div", {
-        className: A.Y5,
+        className: v.Y5,
         children: (0, r.jsx)(l.id, {
           size: "md",
           color: "active" === t ? l.LU0.colors.INTERACTIVE_TEXT_ACTIVE : l.LU0.colors.ICON_MUTED
         })
       }), (0, r.jsxs)("div", {
-        className: A.DD,
+        className: v.DD,
         children: [(0, r.jsx)(l.Heading, {
           variant: "heading-md/semibold",
           color: "text-default",
@@ -95,7 +95,7 @@ let C = e => {
           children: "active" === t ? O.intl.string(O.t.XJ2YVR) : O.intl.string(O.t.SzGV0g)
         })]
       }), (0, r.jsx)("div", {
-        className: A.OW,
+        className: v.OW,
         children: (0, r.jsx)(c.A, {
           width: 18,
           height: 18,
@@ -105,34 +105,34 @@ let C = e => {
     })
   },
   N = () => (0, r.jsxs)("div", {
-    className: A.p$,
+    className: v.p$,
     children: [(0, r.jsxs)("div", {
-      className: A.zc,
+      className: v.zc,
       children: [(0, r.jsx)("div", {
-        className: A.Wk,
+        className: v.Wk,
         children: (0, r.jsx)(l.OR, {
           size: "md",
           color: "currentColor",
-          className: A.Kk
+          className: v.Kk
         })
       }), (0, r.jsx)(u.A, {
-        className: A.uf
+        className: v.uf
       })]
     }), (0, r.jsx)(l.Heading, {
       variant: "heading-md/bold",
-      className: A.q6,
+      className: v.q6,
       children: O.intl.string(O.t.reLFaV)
     }), (0, r.jsx)(l.Text, {
       variant: "text-xs/normal",
-      className: A.WO,
+      className: v.WO,
       children: O.intl.string(O.t.ERdH1o)
     })]
   }),
   R = () => (0, r.jsx)("div", {
-    className: A.p$,
+    className: v.p$,
     children: (0, r.jsx)(l.Text, {
       variant: "text-xs/normal",
-      className: A.WO,
+      className: v.WO,
       children: O.intl.string(O.t.RV3AXf)
     })
   }),
@@ -142,13 +142,13 @@ let C = e => {
     } = e;
     return (0, r.jsx)(l.Text, {
       variant: "text-xs/normal",
-      className: A.vE,
+      className: v.vE,
       children: (0, h._W)(t)
     })
   },
   P = () => (0, r.jsx)(l.Text, {
     variant: "text-xs/bold",
-    className: A.Ad,
+    className: v.Ad,
     children: O.intl.string(O.t.QKMRC4)
   }),
   D = e => {
@@ -167,7 +167,7 @@ let C = e => {
           children: e
         })
       };
-      return (0, h._g)(t) ? (null == t || null == (e = t.guild_metadata) ? true : e.member_type) === p.Z9.OWNER ? O.intl.format(O.t.Lb0HVv, T(S({}, a), {
+      return (0, h._g)(t) ? (null == t || null == (e = t.guild_metadata) ? true : e.member_type) === p.Z9.OWNER ? O.intl.format(O.t.Lb0HVv, T(I({}, a), {
         guildName: null == t || null == (n = t.guild_metadata) ? true : n.name
       })) : O.intl.format(O.t.rmpEPD, {
         guildName: null == t || null == (i = t.guild_metadata) ? true : i.name,
@@ -179,19 +179,19 @@ let C = e => {
         let {
           default: e
         } = await n.e("9407").then(n.bind(n, 956450));
-        return t => (0, r.jsx)(e, S({
+        return t => (0, r.jsx)(e, I({
           classificationId: a,
-          source: b.XN.StandingTab
+          source: y.XN.StandingTab
         }, t))
       })
     };
     return (0, r.jsx)(l.DUT, {
       onClick: _,
-      className: s()(A.zk, {
-        [A.V5]: u
+      className: s()(v.zk, {
+        [v.V5]: u
       }),
       children: (0, r.jsxs)("div", {
-        className: A.iQ,
+        className: v.iQ,
         children: [u ? (0, r.jsx)(P, {}) : (0, r.jsx)(w, {
           timestamp: c
         }), (0, r.jsx)(l.Heading, {
@@ -207,25 +207,25 @@ let C = e => {
       classifications: n
     } = e, [a, s] = i.useState(false), [c, u] = i.useState(3), f = (0, g.K)(), p = (0, o.bG)([_.A], () => _.A.getIsDsaEligible()), h = i.useMemo(() => n.slice(0, c), [n, c]);
     i.useEffect(() => {
-      a && d.default.track(y.HAw.SAFETY_HUB_ACTION, {
-        action: b.ZU.ViewViolationsDropdown,
+      a && d.default.track(b.HAw.SAFETY_HUB_ACTION, {
+        action: y.ZU.ViewViolationsDropdown,
         account_standing: f.state,
         classification_ids: h.map(e => Number(e.id)),
-        source: b.XN.StandingTab,
+        source: y.XN.StandingTab,
         is_violative_content_shown: false,
         is_dsa_eligible: p
       })
     }, [a, f.state, h, p]);
     let m = n.length - h.length > 3 ? 3 : n.length - h.length;
     return (0, r.jsxs)("div", {
-      className: A.Wm,
+      className: v.Wm,
       children: [(0, r.jsx)(C, {
         status: t,
         onClick: () => s(e => !e),
         opened: a,
         count: n.length
       }), a && (0, r.jsxs)("div", {
-        className: A.ld,
+        className: v.ld,
         children: [(0, r.jsx)(l.VQ0.Separator, {
           style: {
             height: "1px",
@@ -240,7 +240,7 @@ let C = e => {
               width: "100%"
             }
           }), (0, r.jsx)("button", {
-            className: A.Hr,
+            className: v.Hr,
             onClick: () => u(e => e + m),
             children: O.intl.format(O.t["9Ml56H"], {
               nextPageSize: m

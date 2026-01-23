@@ -2,7 +2,7 @@
 /** chunk id: 946015, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  s: () => v
+  s: () => A
 });
 var r, i, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -81,12 +81,12 @@ let g = {
     BETWEEN: Chunk112303.G1,
     AROUND: Chunk112303.nm
   },
-  b = {
+  y = {
     NO_WRAP: Chunk112303.B,
     WRAP: Chunk112303.aR,
     WRAP_REVERSE: Chunk112303.KM
   },
-  y = {
+  b = {
     START: Chunk112303.j$,
     END: Chunk112303.S_,
     CENTER: Chunk112303.YO,
@@ -96,7 +96,7 @@ let g = {
     SMALL: Chunk50567.sf,
     LARGE: Chunk50567.S6
   };
-class A extends(r = Chunk64700.PureComponent) {
+class v extends(r = Chunk64700.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -126,12 +126,12 @@ class A extends(r = Chunk64700.PureComponent) {
     }))
   }
 }
-d(A, "defaultProps", {
+d(v, "defaultProps", {
   className: Chunk50567.Gu,
   style: {},
   wrap: false
 });
-class v extends(i = Chunk64700.PureComponent) {
+class A extends(i = Chunk64700.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -148,24 +148,24 @@ class v extends(i = Chunk64700.PureComponent) {
         gutter: g
       } = e,
       E = h(e, ["children", "className", "direction", "justify", "align", "wrap", "shrink", "grow", "basis", "style", "gutter"]),
-      b = f({
+      y = f({
         flexShrink: c,
         flexGrow: d,
         flexBasis: p
       }, m);
     return (0, a.jsx)("div", _(f({
-      style: b,
+      style: y,
       className: l()(u.Uu, r, i, s, o, g, n)
     }, E), {
       children: t
     }))
   }
 }
-d(v, "Child", A), d(v, "Direction", g), d(v, "Align", y), d(v, "Justify", E), d(v, "Wrap", b), d(v, "Gutter", O), d(v, "defaultProps", {
+d(A, "Child", v), d(A, "Direction", g), d(A, "Align", b), d(A, "Justify", E), d(A, "Wrap", y), d(A, "Gutter", O), d(A, "defaultProps", {
   direction: g.HORIZONTAL,
   justify: E.START,
-  align: y.STRETCH,
-  wrap: b.WRAP,
+  align: b.STRETCH,
+  wrap: y.WRAP,
   shrink: 1,
   grow: 1,
   basis: "auto",

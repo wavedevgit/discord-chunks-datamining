@@ -12,11 +12,11 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function c(e) {
-  let t = (0, l.bG)([a.A], () => a.A.getToastsEnabled(e));
+  let t = (0, l.bG)([s.A], () => s.A.getToastsEnabled(e));
   return (0, r.jsx)(i.sLh, {
     id: "show-call-chat-toasts",
     label: o.intl.string(o.t["5NL5vT"]),
     checked: t,
-    action: () => s.A.setCallChatToastsEnabled(e, !t)
+    action: () => a.A.setCallChatToastsEnabled(e, !t)
   })
 }

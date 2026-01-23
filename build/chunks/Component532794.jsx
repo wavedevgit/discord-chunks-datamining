@@ -33,7 +33,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,13 +57,13 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -88,7 +88,7 @@ function C(e) {
   let {
     initialPlanId: i,
     followupSKUInfo: O,
-    onClose: v,
+    onClose: A,
     onComplete: T,
     onSubscriptionConfirmation: C,
     analyticsLocations: N,
@@ -110,7 +110,7 @@ function C(e) {
     returnRef: Y,
     subscription: W,
     skipConfirm: K
-  } = null != e ? e : {}, z = false, q = null != (t = (0, g.A)()) ? t : (0, s.A)(), X = p.default.getCurrentUser(), Z = (0, m.YE)(X, y.PremiumTypes.TIER_2), Q = a()("payment-modal"), $ = (0, m.mH)(k), J = false;
+  } = null != e ? e : {}, z = false, q = null != (t = (0, g.A)()) ? t : (0, s.A)(), X = p.default.getCurrentUser(), Z = (0, m.YE)(X, b.PremiumTypes.TIER_2), Q = a()("payment-modal"), $ = (0, m.mH)(k), J = false;
   return (0, o.mMO)(async () => {
     let {
       default: e
@@ -118,8 +118,8 @@ function C(e) {
     return t => {
       let {
         onClose: n
-      } = t, a = I(t, ["onClose"]);
-      return (0, r.jsx)(e, S(A({}, a), {
+      } = t, a = S(t, ["onClose"]);
+      return (0, r.jsx)(e, I(v({}, a), {
         loadId: q,
         subscriptionTier: k,
         skuId: $,
@@ -132,9 +132,9 @@ function C(e) {
         followupSKUInfo: O,
         onClose: e => {
           if (J) return;
-          J = true, h._.dispatch(b.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED);
+          J = true, h._.dispatch(y.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED);
           let t = () => {
-            n(), null == v || v(e), e && (null == C || C()), l.h.dispatch({
+            n(), null == A || A(e), e && (null == C || C()), l.h.dispatch({
               type: "PREMIUM_PAYMENT_MODAL_CLOSE",
               didSucceed: e
             })
@@ -154,7 +154,7 @@ function C(e) {
         confirmationFooter: D,
         trialId: U,
         postSuccessGuild: G,
-        planGroup: y.LE,
+        planGroup: b.LE,
         openInvoiceId: V,
         applicationId: F,
         referralTrialOfferId: B,
@@ -166,24 +166,24 @@ function C(e) {
     }
   }, {
     onCloseRequest: () => {
-      J || (J = true, h._.dispatch(b.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), f.A.isDisplayingWowMomentConfirmation && f.A.isAnimated ? setTimeout(() => {
+      J || (J = true, h._.dispatch(y.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), f.A.isDisplayingWowMomentConfirmation && f.A.isAnimated ? setTimeout(() => {
         (0, o.OoC)(Q)
       }, E.K) : (0, o.OoC)(Q))
     },
     modalKey: Q,
     onCloseCallback: () => {
-      z || _.default.track(b.HAw.PAYMENT_FLOW_CANCELED, {
+      z || _.default.track(y.HAw.PAYMENT_FLOW_CANCELED, {
         load_id: q,
-        payment_type: b.frM[b.VVm.SUBSCRIPTION],
+        payment_type: y.frM[y.VVm.SUBSCRIPTION],
         location: null != w ? w : R,
         source: P,
-        subscription_type: b.rzx.PREMIUM,
+        subscription_type: y.rzx.PREMIUM,
         is_gift: x,
         sku_id: $,
         eligible_for_trial: null != U,
         application_id: F,
         location_stack: N
-      }), (0, u.ET)(), (0, c.ET)(), (0, d.z)(), null == v || v(z), z && (null == C || C())
+      }), (0, u.ET)(), (0, c.ET)(), (0, d.z)(), null == A || A(z), z && (null == C || C())
     }
   })
 }

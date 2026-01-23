@@ -34,13 +34,13 @@ function c(e) {
       r = m.current;
     return null != n && t.observe(n), null != r && (t.observe(r), e()), () => t.disconnect()
   }, []);
-  let b = {
+  let y = {
       text: l.intl.string(l.t.RzWDqY),
       onClick: () => {
         u(), c(), d(o.i.TAKE_ACTION)
       }
     },
-    y = () => {
+    b = () => {
       c(), d(o.i.USER_DISMISS)
     };
   return (0, r.jsxs)(r.Fragment, {
@@ -55,12 +55,12 @@ function c(e) {
       title: null != (t = null == f ? true : f.header) ? t : "",
       body: null != (n = null == f ? true : f.body) ? n : "",
       assetUrl: null != _ ? _ : "",
-      action: b,
+      action: y,
       caretConfig: {
         align: "custom",
         customOffset: g
       },
-      onRequestClose: y,
+      onRequestClose: b,
       popoverRef: m
     })]
   })

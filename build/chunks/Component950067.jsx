@@ -79,21 +79,21 @@ class P extends Chunk272355.A {
     if (null == a) return;
     switch (a) {
       case v.zY.INVITE_UNCLAIMED:
-        f.A.flowStart(N.do.INVITE, N.ju.NUF_STARTED);
+        h.A.flowStart(N.do.INVITE, N.ju.NUF_STARTED);
         break;
       case v.zY.ORGANIC_REGISTERED:
-        f.A.flowStart(N.do.ORGANIC, N.ju.NUF_STARTED);
+        h.A.flowStart(N.do.ORGANIC, N.ju.NUF_STARTED);
         break;
       case v.zY.MARKETING_UNCLAIMED:
-        f.A.flowStart(N.do.ORGANIC_MARKETING, N.ju.NUF_STARTED)
+        h.A.flowStart(N.do.ORGANIC_MARKETING, N.ju.NUF_STARTED)
     }
     let s = false,
-      x = b.A.getGuildId();
+      x = _.A.getGuildId();
     if (a === v.zY.INVITE_UNCLAIMED) {
-      let e = m.A.getGuild(x);
-      null != e && (0, d.Qd)(e) && (s = true, (0, h.Fy)(e.id))
+      let e = A.A.getGuild(x);
+      null != e && (0, d.Qd)(e) && (s = true, (0, g.Fy)(e.id))
     }
-    let P = () => 0 === g.A.totalGuilds && !O.isPlatformEmbedded,
+    let P = () => 0 === m.A.totalGuilds && !O.isPlatformEmbedded,
       w = o.xq();
     e = [{
       key: "Unified NUF Modal",
@@ -101,25 +101,25 @@ class P extends Chunk272355.A {
         let t = e => {
           switch (e) {
             case S.i.AGE_GATE:
-              f.A.flowStep(N.do.ANY, N.ju.AGE_GATE);
+              h.A.flowStep(N.do.ANY, N.ju.AGE_GATE);
               break;
             case S.i.CHOOSE_TEMPLATE:
-              f.A.flowStep(N.do.ANY, N.jC.GUILD_TEMPLATES);
+              h.A.flowStep(N.do.ANY, N.jC.GUILD_TEMPLATES);
               break;
             case S.i.CUSTOMIZE_GUILD:
-              f.A.flowStep(N.do.ANY, N.jC.GUILD_CREATE);
+              h.A.flowStep(N.do.ANY, N.jC.GUILD_CREATE);
               break;
             case S.i.CHANNEL_PROMPT:
-              f.A.flowStep(N.do.ANY, N.jC.CHANNEL_PROMPT);
+              h.A.flowStep(N.do.ANY, N.jC.CHANNEL_PROMPT);
               break;
             case S.i.JOIN_GUILD:
-              f.A.flowStep(N.do.ANY, N.jC.JOIN_GUILD);
+              h.A.flowStep(N.do.ANY, N.jC.JOIN_GUILD);
               break;
             case S.i.CREATION_INTENT:
-              f.A.flowStep(N.do.ANY, N.jC.CREATION_INTENT);
+              h.A.flowStep(N.do.ANY, N.jC.CREATION_INTENT);
               break;
             case S.i.COMPLETE:
-              f.A.flowStep(N.do.ANY, N.jC.SUCCESS);
+              h.A.flowStep(N.do.ANY, N.jC.SUCCESS);
               break;
             case null:
               break;
@@ -150,14 +150,14 @@ class P extends Chunk272355.A {
       open: e => c.R(O.isPlatformEmbedded, e),
       predicate: () => {
         var e;
-        return !s && null != _.default.getCurrentUser() && !(null == (e = _.default.getCurrentUser()) ? true : e.isClaimed()) && !(0, p._9)()
+        return !s && null != b.default.getCurrentUser() && !(null == (e = b.default.getCurrentUser()) ? true : e.isClaimed()) && !(0, p._9)()
       }
     }, {
       key: "Verification Gate with Claim Account",
       open: e => (0, u.Ze)(x, null != e ? e : true),
       predicate: () => {
         var e;
-        return s && !(null == (e = _.default.getCurrentUser()) ? true : e.isClaimed()) && true
+        return s && !(null == (e = b.default.getCurrentUser()) ? true : e.isClaimed()) && true
       }
     }, {
       key: "Guild Welcome Modal",
@@ -171,9 +171,9 @@ class P extends Chunk272355.A {
       }, {
         onCloseCallback: e
       }),
-      predicate: () => null != x && null != A.A.get(x) && A.A.get(x) !== A.E
+      predicate: () => null != x && null != f.A.get(x) && f.A.get(x) !== f.E
     }], t = () => {
-      y.D(), f.A.flowStep(N.do.ANY, N.ju.NUF_COMPLETE, true)
+      y.D(), h.A.flowStep(N.do.ANY, N.ju.NUF_COMPLETE, true)
     }, [...e].reverse().forEach(e => {
       let n = t;
       t = () => {

@@ -91,7 +91,7 @@ function Z(e) {
         size: "refresh_sm",
         color: "currentColor"
       })
-    }), (0, r.jsx)(b._, {
+    }), (0, r.jsx)(y._, {
       skuId: n.id,
       isCardHovered: a,
       nuxGraphic: (0, D.N)(n),
@@ -102,7 +102,7 @@ function Z(e) {
 }
 
 function Q(e) {
-  var t, n, a, o, c, b, O, D, x, X;
+  var t, n, a, o, c, y, O, D, x, X;
   let {
     positionInSection: Q,
     applicationId: $,
@@ -112,9 +112,9 @@ function Q(e) {
     onClick: en,
     className: er,
     analyticsLocations: ei
-  } = e, ea = i.useRef(null), es = (0, f.bG)([v.A], () => v.A.get(J)), eo = (0, f.bG)([A.A], () => (0, d.Mwr)(A.A.theme)), el = (0, f.bG)([h.A], () => h.A.useReducedMotion), {
+  } = e, ea = i.useRef(null), es = (0, f.bG)([A.A], () => A.A.get(J)), eo = (0, f.bG)([v.A], () => (0, d.Mwr)(v.A.theme)), el = (0, f.bG)([h.A], () => h.A.useReducedMotion), {
     isHoveringOrFocusing: ec
-  } = (0, y.A)(ea), eu = (0, C.jM)(), {
+  } = (0, b.A)(ea), eu = (0, C.jM)(), {
     analyticsLocations: ed
   } = (0, g.Ay)(null != ei ? ei : []), ef = i.useRef({
     positionInSection: Q,
@@ -127,12 +127,12 @@ function Q(e) {
     [Y.jz]: 2 === ee
   }), [ee]), {
     handleCardHover: eE,
-    handleCardUnhover: eb
+    handleCardUnhover: ey
   } = (0, U.Z)(J, eu, Q, ed), {
-    handleCardVisibilityChange: ey
+    handleCardVisibilityChange: eb
   } = (0, G.a)(J, eu, Q, ed);
   i.useEffect(() => {
-    ey(ep)
+    eb(ep)
   }, [ep]);
   let eO = i.useCallback(e => {
       let {
@@ -148,7 +148,7 @@ function Q(e) {
         isUserGuildMember: c,
         pageHasLeaderboard: u
       } = eu;
-      S.default.track(F.HAw.SLAYER_STOREFRONT_CARD_ELEMENT_CLICKED, {
+      I.default.track(F.HAw.SLAYER_STOREFRONT_CARD_ELEMENT_CLICKED, {
         slayer_storefront_session_id: r,
         sku_id: J,
         guild_id: i,
@@ -164,14 +164,14 @@ function Q(e) {
       })
     }, [J, eu]),
     {
-      primaryIconAsset: eA,
-      primaryIconLabel: ev
+      primaryIconAsset: ev,
+      primaryIconLabel: eA
     } = i.useMemo(() => (0, T.Cv)(es, $), [es, $]),
-    eS = (0, f.bG)([N.A], () => {
+    eI = (0, f.bG)([N.A], () => {
       var e, t;
       return null != et && null != (e = null == (t = N.A.getStorefrontState(et)) ? true : t.activePage) ? e : 0
     }),
-    eI = i.useMemo(() => {
+    eS = i.useMemo(() => {
       var e, t;
       if ((null == es || null == (t = es.tenantMetadata) || null == (e = t.socialLayer) ? true : e.expiresAt) == null) return null;
       let n = u()(),
@@ -179,7 +179,7 @@ function Q(e) {
       return r <= q ? H.intl.format(H.t.PWw4Vp, {
         days: r
       }) : null
-    }, [null == es || null == (b = es.tenantMetadata) || null == (c = b.socialLayer) ? true : c.expiresAt]),
+    }, [null == es || null == (y = es.tenantMetadata) || null == (c = y.socialLayer) ? true : c.expiresAt]),
     eT = (0, T.xf)(es),
     [eC, eN] = (0, E.rh)(null == eT ? true : eT.toString(), "#000000"),
     eR = i.useMemo(() => {
@@ -196,11 +196,11 @@ function Q(e) {
     eP = i.useCallback(e => {
       (eO(V.bB.CARD), null != en) ? en(e): null != et && (0, R.A)({
         guildId: et,
-        pageIndex: eS,
+        pageIndex: eI,
         skuId: J,
         slug: null == es ? true : es.slug
       })
-    }, [eO, et, J, en, eS, null == es ? true : es.slug]);
+    }, [eO, et, J, en, eI, null == es ? true : es.slug]);
   if (null == es) return null;
   let eD = (0, T.fq)(es);
   return (0, r.jsx)(p.L, {
@@ -212,7 +212,7 @@ function Q(e) {
         onClick: eP,
         onMouseDown: ew,
         onMouseEnter: eE,
-        onMouseLeave: eb,
+        onMouseLeave: ey,
         className: l()(eg, {
           [Y.Zl]: !el && 2 !== ee,
           [Y.BN]: eo,
@@ -221,8 +221,8 @@ function Q(e) {
         }, er),
         ref: ea,
         "aria-label": es.name,
-        children: [null != eI && (0, r.jsx)(_.LpS, {
-          text: eI,
+        children: [null != eS && (0, r.jsx)(_.LpS, {
+          text: eS,
           disableColor: true,
           className: Y.qS
         }), (0, r.jsx)(Z, {
@@ -269,15 +269,15 @@ function Q(e) {
             }), (0, r.jsx)("div", {
               className: Y.iQ,
               children: eh ? (0, r.jsxs)(r.Fragment, {
-                children: [null != eA && (0, r.jsx)("img", {
-                  src: eA.toString(),
-                  alt: ev,
+                children: [null != ev && (0, r.jsx)("img", {
+                  src: ev.toString(),
+                  alt: eA,
                   className: Y.ye
                 }), (0, r.jsx)(_.Text, {
                   variant: "text-md/bold",
                   color: "always-white",
                   lineClamp: 1,
-                  children: (0, I.$g)(null != (t = null == (O = es.price) ? true : O.amount) ? t : 0, null != (n = null == (D = es.price) ? true : D.currency) ? n : B.Yr.USD)
+                  children: (0, S.$g)(null != (t = null == (O = es.price) ? true : O.amount) ? t : 0, null != (n = null == (D = es.price) ? true : D.currency) ? n : B.Yr.USD)
                 })]
               }) : (0, r.jsx)(k.r, {})
             })]
@@ -296,7 +296,7 @@ function Q(e) {
                   })
                 },
                 text: H.intl.format(H.t.Xp5WTn, {
-                  price: (0, I.$g)(null != (a = null == (x = es.price) ? true : x.amount) ? a : 0, null != (o = null == (X = es.price) ? true : X.currency) ? o : B.Yr.USD)
+                  price: (0, S.$g)(null != (a = null == (x = es.price) ? true : x.amount) ? a : 0, null != (o = null == (X = es.price) ? true : X.currency) ? o : B.Yr.USD)
                 }),
                 fullWidth: true
               }), (0, r.jsx)(M.A, {

@@ -79,7 +79,7 @@ function P(e) {
   return (n.forEach(e => {
     a[e.id] = Date.now(), e.options.forEach(e => l[e.id] = Date.now())
   }), t) ? s.Bo.post({
-    url: S.Rsh.GUILD_ONBOARDING_RESPONSES(e),
+    url: I.Rsh.GUILD_ONBOARDING_RESPONSES(e),
     body: {
       onboarding_responses: i.map(e => e.id),
       onboarding_prompts_seen: a,
@@ -94,8 +94,8 @@ function P(e) {
       prompts_seen: t.body.onboarding_prompts_seen,
       options_seen: t.body.onboarding_responses_seen
     })
-  }).catch(e => b.A.captureException(e)) : s.Bo.put({
-    url: S.Rsh.GUILD_ONBOARDING_RESPONSES(e),
+  }).catch(e => y.A.captureException(e)) : s.Bo.put({
+    url: I.Rsh.GUILD_ONBOARDING_RESPONSES(e),
     body: {
       onboarding_responses: i.map(e => e.id),
       onboarding_prompts_seen: a,
@@ -111,7 +111,7 @@ function P(e) {
       options_seen: t.body.onboarding_responses_seen
     })
   }).catch(t => {
-    b.A.captureException(Error("Failed to update onboarding responses for guild ".concat(e, ": ").concat(t.statusCode), {
+    y.A.captureException(Error("Failed to update onboarding responses for guild ".concat(e, ": ").concat(t.statusCode), {
       cause: t
     }))
   })
@@ -147,18 +147,18 @@ let x = {
   completeOnboarding(e, t) {
     let n = t.length > 0 ? t[t.length - 1] : null,
       r = O.A.getSelectedOptions(e),
-      i = (0, A.a)(r),
-      s = (0, A.vV)(r),
+      i = (0, v.a)(r),
+      s = (0, v.vV)(r),
       o = O.A.getEnabled(e) ? O.A.getDefaultChannelIds(e) : [],
-      [u, p] = (0, A._N)(e, t, o),
-      b = [...s, ...o],
-      C = b.map(e => _.A.getChannel(e)).filter(E.Vq),
-      R = (0, v.w)(e, new Set(b), C, true).length,
+      [u, p] = (0, v._N)(e, t, o),
+      y = [...s, ...o],
+      C = y.map(e => _.A.getChannel(e)).filter(E.Vq),
+      R = (0, A.w)(e, new Set(y), C, true).length,
       D = null == n ? [] : n.options.map(e => e.id),
       x = O.A.getConnections(e),
-      L = (0, A.H_)(x),
-      j = (0, A.OG)(x);
-    if (g.default.track(S.HAw.GUILD_ONBOARDING_STEP_COMPLETED, w(N({}, (0, c.H$)(e)), {
+      L = (0, v.H_)(x),
+      j = (0, v.OG)(x);
+    if (g.default.track(I.HAw.GUILD_ONBOARDING_STEP_COMPLETED, w(N({}, (0, c.H$)(e)), {
         step: t.length - 1,
         options_selected: null == n ? 0 : r.filter(e => D.includes(e.id)).length,
         skipped: D.length > 0,
@@ -173,8 +173,8 @@ let x = {
         provider_connections_not_connected: L.notConnected,
         application_connections_connected: j.connected,
         application_connections_not_connected: j.notConnected
-      })), (0, l.hK)(e, T.P.GUILD_ONBOARDING_QUESTION, y.default.fromTimestamp(Date.now())), P(e, true), f.A.isFullServerPreview(e)) {
-      (0, d.$u)(e, b, []), (0, d.Z$)(e, {
+      })), (0, l.hK)(e, T.P.GUILD_ONBOARDING_QUESTION, b.default.fromTimestamp(Date.now())), P(e, true), f.A.isFullServerPreview(e)) {
+      (0, d.$u)(e, y, []), (0, d.Z$)(e, {
         optInEnabled: true
       }), (0, d.ID)(e, Array.from(i));
       let t = m.default.getCurrentUser();
@@ -183,7 +183,7 @@ let x = {
         let n = null != (M = null == (k = h.Ay.getMember(e, t.id)) ? true : k.flags) ? M : 0;
         (0, d.Z$)(e, {
           memberOptions: {
-            flags: (0, a.lA)(n, I.D.COMPLETED_ONBOARDING, true)
+            flags: (0, a.lA)(n, S.D.COMPLETED_ONBOARDING, true)
           }
         })
       }
@@ -192,7 +192,7 @@ let x = {
   onboardExistingMember(e, t) {
     let n = new Set(t);
     (O.A.getEnabled(e) ? O.A.getDefaultChannelIds(e) : []).forEach(e => n.add(e)), n.size > 0 && (0, p.Hb)(e, Array.from(n), true, {
-      page: S.liQ.GUILD_ONBOARDING
+      page: I.liQ.GUILD_ONBOARDING
     })
   },
   finishOnboarding(e) {
@@ -214,7 +214,7 @@ let x = {
       var n, r;
       let i = null != (n = null == (r = h.Ay.getMember(e, t.id)) ? true : r.flags) ? n : 0;
       await (0, u.T)(e, {
-        flags: (0, a.lA)(i, I.D.COMPLETED_ONBOARDING, false)
+        flags: (0, a.lA)(i, S.D.COMPLETED_ONBOARDING, false)
       })
     }
   }

@@ -2,7 +2,7 @@
 /** chunk id: 850381, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => m
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,41 +18,41 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function m(e) {
+function f(e) {
   let {
     location: t
-  } = e, [n, m] = i.useState(false), {
-    verifySuccess: A,
-    verifyErrors: x,
-    redirectGuildId: _
+  } = e, [n, f] = i.useState(false), {
+    verifySuccess: _,
+    verifyErrors: A,
+    redirectGuildId: x
   } = (0, s.bG)([h.A], () => h.A.getState());
   i.useEffect(() => {
     let e = (0, o.A)(t);
     a.A.verify(e), (0, d.d)("verify_hub_email")
   }, [t]);
   let E = () => {
-    (0, f.A)(_), m(true)
+    (0, p.A)(x), f(true)
   };
   return n ? (0, r.jsx)(c.A, {
-    title: g.intl.string(g.t.csrAMJ),
-    subtitle: g.intl.string(g.t["m1+IBn"]),
-    buttonText: g.intl.string(g.t.fIv16B),
-    onButtonClick: () => (0, u.pX)(p.BVt.CHANNEL(_))
-  }) : A ? (0, r.jsx)(c.A, {
-    title: g.intl.string(g.t["dAfGb+"]),
-    buttonText: g.intl.string(g.t["uJWIj/"]),
+    title: m.intl.string(m.t.csrAMJ),
+    subtitle: m.intl.string(m.t["m1+IBn"]),
+    buttonText: m.intl.string(m.t.fIv16B),
+    onButtonClick: () => (0, u.pX)(g.BVt.CHANNEL(x))
+  }) : _ ? (0, r.jsx)(c.A, {
+    title: m.intl.string(m.t["dAfGb+"]),
+    buttonText: m.intl.string(m.t["uJWIj/"]),
     onButtonClick: E,
     image: (0, r.jsx)(l.bqQ, {
-      alt: g.intl.string(g.t["dAfGb+"])
+      alt: m.intl.string(m.t["dAfGb+"])
     })
-  }) : null != x ? (0, r.jsx)(c.A, {
-    title: g.intl.string(g.t["PCgG3+"]),
-    subtitle: g.intl.string(g.t.tQpeA3),
-    buttonText: g.intl.string(g.t["uJWIj/"]),
+  }) : null != A ? (0, r.jsx)(c.A, {
+    title: m.intl.string(m.t["PCgG3+"]),
+    subtitle: m.intl.string(m.t.tQpeA3),
+    buttonText: m.intl.string(m.t["uJWIj/"]),
     onButtonClick: E
   }) : (0, r.jsx)(c.A, {
-    title: g.intl.string(g.t["0c8+5n"]),
-    subtitle: g.intl.string(g.t.ULTCBE),
+    title: m.intl.string(m.t["0c8+5n"]),
+    subtitle: m.intl.string(m.t.ULTCBE),
     loading: true
   })
 }

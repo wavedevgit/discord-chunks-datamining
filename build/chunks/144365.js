@@ -2,7 +2,7 @@
 /** chunk id: 144365, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  XO: "_5a1d677d686754a0",
-  rd: "_13db07b0dd8a5639",
-  Kk: "_0ad735343cb41361"
+  XO: "ephemeralMessage__124d2",
+  rd: "userAppsBetaContent__124d2",
+  Kk: "icon__124d2"
 }

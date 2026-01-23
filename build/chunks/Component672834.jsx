@@ -241,7 +241,7 @@ function eV(e) {
     guildId: n.guild_id,
     messageId: t.id
   });
-  return n.isThread() ? (0, r.jsx)(ev.A, {
+  return n.isThread() ? (0, r.jsx)(eA.A, {
     message: t,
     channel: n,
     compact: i,
@@ -296,7 +296,7 @@ function eF(e) {
       }))
     })
   }, [t]);
-  return (0, r.jsx)(eA.A, {
+  return (0, r.jsx)(ev.A, {
     message: t,
     compact: l,
     usernameHook: c,
@@ -324,7 +324,7 @@ function eB(e) {
     guildId: n.guild_id,
     messageId: t.id
   });
-  return n.isThread() ? (0, r.jsx)(eS.A, {
+  return n.isThread() ? (0, r.jsx)(eI.A, {
     message: t,
     channel: n,
     compact: i,
@@ -462,7 +462,7 @@ function ez(e) {
     message: t,
     compact: n
   } = e, i = t.getChannelId(), s = (0, a.bG)([G.A], () => G.A.getChannel(i), [i]), o = null != s ? s.getGuildId() : null, l = () => {
-    null != o && v.A.open(o, eN.BEX.ACCESS, eN.nd0.ACCESS_DISCOVERABLE)
+    null != o && A.A.open(o, eN.BEX.ACCESS, eN.nd0.ACCESS_DISCOVERABLE)
   };
   return (0, r.jsx)(ec.Rk, {
     message: t,
@@ -552,11 +552,11 @@ function e$(e) {
     messageId: t.id
   }), o = (0, a.bG)([O.Ay], () => O.Ay.getActiveEventByChannel(n.id), [n.id]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(eb.A, {
+    children: [(0, r.jsx)(ey.A, {
       message: t,
       compact: i,
       usernameHook: s
-    }), null != o && o.name === t.content ? (0, r.jsx)(A.A, {
+    }), null != o && o.name === t.content ? (0, r.jsx)(v.A, {
       code: "".concat(n.guild_id, "-").concat(o.id)
     }) : null]
   })
@@ -591,7 +591,7 @@ function e0(e) {
     guildId: n.guild_id,
     messageId: t.id
   });
-  return (0, r.jsx)(ey.A, {
+  return (0, r.jsx)(eb.A, {
     message: t,
     compact: i,
     usernameHook: a
@@ -677,7 +677,7 @@ function e4(e) {
     channel: i,
     compact: a
   } = e;
-  return (null == (t = n.purchaseNotification) ? true : t.type) === d.hE.GUILD_PRODUCT ? (0, r.jsx)(b.A, {
+  return (null == (t = n.purchaseNotification) ? true : t.type) === d.hE.GUILD_PRODUCT ? (0, r.jsx)(y.A, {
     message: n,
     channel: i,
     compact: a
@@ -782,7 +782,7 @@ function tr(e) {
     channel: n,
     compact: i
   } = e;
-  return (0, r.jsx)(I.A, {
+  return (0, r.jsx)(S.A, {
     message: t,
     channel: n,
     compact: i

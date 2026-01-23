@@ -2,7 +2,7 @@
 /** chunk id: 826292, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h,
+  A: () => x,
   K: () => j
 });
 var Chunk627968 = require("./627968.js");
@@ -22,39 +22,39 @@ var Chunk788373 = require("./788373.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function h(e) {
+function x(e) {
   let {
     refToScroller: t
-  } = e, n = (0, l.bG)([f.A], () => f.A.getGuild()), {
+  } = e, n = (0, l.bG)([g.A], () => g.A.getGuild()), {
     section: i,
     sectionId: s,
     integrations: a,
-    editedIntegration: c,
+    editedIntegration: o,
     webhooks: d,
     editedWebhook: u,
-    isFetching: b,
-    errors: m
-  } = (0, l.cf)([g.default], () => ({
-    editedIntegration: g.default.editedIntegration,
-    editedWebhook: g.default.editedWebhook,
-    errors: g.default.getErrors(),
-    integrations: g.default.integrations,
-    isFetching: g.default.isFetching(),
-    section: g.default.getSection(),
-    sectionId: g.default.getSectionId(),
-    webhooks: g.default.webhooks
+    isFetching: p,
+    errors: f
+  } = (0, l.cf)([m.default], () => ({
+    editedIntegration: m.default.editedIntegration,
+    editedWebhook: m.default.editedWebhook,
+    errors: m.default.getErrors(),
+    integrations: m.default.integrations,
+    isFetching: m.default.isFetching(),
+    section: m.default.getSection(),
+    sectionId: m.default.getSectionId(),
+    webhooks: m.default.webhooks
   }));
-  return null == n ? null : (0, r.jsx)(o.A, {
+  return null == n ? null : (0, r.jsx)(c.A, {
     guild: n,
     section: i,
     sectionId: s,
     integrations: a,
     webhooks: d,
-    editedIntegration: c,
+    editedIntegration: o,
     editedWebhook: u,
-    isFetchingWebhooks: b,
-    hasChanges: g.default.hasChanges,
-    errors: m,
+    isFetchingWebhooks: p,
+    hasChanges: m.default.hasChanges,
+    errors: f,
     refToScroller: t
   })
 }
@@ -64,32 +64,32 @@ function j() {
   let {
     guild: t,
     submitting: n
-  } = (0, l.cf)([f.A], () => ({
-    guild: f.A.getGuild(),
-    submitting: f.A.isSubmitting()
-  })), o = (0, l.bG)([d.A], () => d.A.can(p.xBc.KICK_MEMBERS, t)), h = false, j = null;
-  return o || (null == (e = g.default.editedIntegration) ? true : e.expire_behavior) !== i.F.KICK || (h = true, j = (0, r.jsx)(a.Text, {
+  } = (0, l.cf)([g.A], () => ({
+    guild: g.A.getGuild(),
+    submitting: g.A.isSubmitting()
+  })), c = (0, l.bG)([d.A], () => d.A.can(b.xBc.KICK_MEMBERS, t)), x = false, j = null;
+  return c || (null == (e = m.default.editedIntegration) ? true : e.expire_behavior) !== i.F.KICK || (x = true, j = (0, r.jsx)(a.Text, {
     color: "text-feedback-critical",
     variant: "text-md/normal",
-    children: x.intl.string(x.t["mrO/ZQ"])
+    children: h.intl.string(h.t["mrO/ZQ"])
   })), (0, r.jsx)(s.A, {
     submitting: n,
-    disabled: h,
+    disabled: x,
     errorMessage: j,
     onReset: () => {
-      c.A.init(), b.C8(), null != t && u.A.init(t.id)
+      o.A.init(), p.C8(), null != t && u.A.init(t.id)
     },
     onSave: () => {
       if (null != t) {
-        if (null != g.default.editedIntegration) c.A.saveIntegration(t.id, g.default.editedIntegration);
-        else if (null != g.default.editedWebhook) c.A.saveWebhook(t.id, g.default.editedWebhook);
-        else if (null != g.default.editedCommandId) {
-          let e = g.default.getSectionId(),
-            n = m.A.getEditedApplication();
+        if (null != m.default.editedIntegration) o.A.saveIntegration(t.id, m.default.editedIntegration);
+        else if (null != m.default.editedWebhook) o.A.saveWebhook(t.id, m.default.editedWebhook);
+        else if (null != m.default.editedCommandId) {
+          let e = m.default.getSectionId(),
+            n = f.A.getEditedApplication();
           if (null == e || null == n) return;
-          c.A.saveApplicationPermissions(e, t.id, Object.values(n))
+          o.A.saveApplicationPermissions(e, t.id, Object.values(n))
         }
-        f.A.hasChanges() && u.A.saveGuild(t.id, {
+        g.A.hasChanges() && u.A.saveGuild(t.id, {
           features: t.features
         })
       }

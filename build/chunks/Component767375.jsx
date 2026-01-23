@@ -2,7 +2,7 @@
 /** chunk id: 767375, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 }), require("./896048.js"), require("./638769.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,7 +20,7 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk228851 = require("./228851.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,14 +29,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -53,12 +53,12 @@ function O(e, t) {
   return n
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class v extends(r = Chunk64700.PureComponent) {
+class A extends(r = Chunk64700.PureComponent) {
   render() {
     let {
       paymentSource: e,
@@ -107,17 +107,17 @@ class v extends(r = Chunk64700.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), b(this, "handleEditClick", () => {
+    super(...e), y(this, "handleEditClick", () => {
       this.props.onEditClick(this.props.paymentSource.id)
     })
   }
 }
-b(v, "defaultProps", {
+y(A, "defaultProps", {
   isEditing: false,
   hideDivider: false,
   onEditClick: () => {}
 });
-class S extends Chunk64700.PureComponent {
+class I extends Chunk64700.PureComponent {
   renderFooter() {
     let {
       paymentSources: e
@@ -148,7 +148,7 @@ class S extends Chunk64700.PureComponent {
       removing: a,
       submitting: s,
       premiumSubscriptionPaymentSourceId: l
-    } = this.props, u = o().values(n).sort((e, n) => e.id === t ? false : n.id === t ? 1 : p.default.compare(e.id, n.id)), d = this.state.editingPayment, f = u.findIndex(e => e.id === d), _ = u.map((e, n) => (0, i.jsx)(v, {
+    } = this.props, u = o().values(n).sort((e, n) => e.id === t ? false : n.id === t ? 1 : p.default.compare(e.id, n.id)), d = this.state.editingPayment, f = u.findIndex(e => e.id === d), _ = u.map((e, n) => (0, i.jsx)(A, {
       locale: r,
       paymentSource: e,
       isDefault: t === e.id,
@@ -180,38 +180,38 @@ class S extends Chunk64700.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), b(this, "state", {
+    super(...e), y(this, "state", {
       editingPayment: null
-    }), b(this, "handleEditClick", async e => {
+    }), y(this, "handleEditClick", async e => {
       try {
         await u.Gr(e), this.setState({
           editingPayment: e
         })
       } catch (e) {}
-    }), b(this, "handleCancel", () => {
+    }), y(this, "handleCancel", () => {
       this.setState({
         editingPayment: null
       })
-    }), b(this, "handleDelete", async e => {
+    }), y(this, "handleDelete", async e => {
       try {
         await u.JQ(e), this.setState({
           editingPayment: null
         })
       } catch (e) {}
-    }), b(this, "handleSubmit", async (e, t) => {
+    }), y(this, "handleSubmit", async (e, t) => {
       if (null != e) try {
         await u.Ps(e, t), this.setState({
           editingPayment: null
         })
       } catch (e) {}
-    }), b(this, "handlePaymentSourceAdded", async e => {
+    }), y(this, "handlePaymentSourceAdded", async e => {
       await (0, f.c_)(e.id)
-    }), b(this, "handleAddPaymentMethod", () => {
+    }), y(this, "handleAddPaymentMethod", () => {
       (0, c.mMO)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 362111));
-        return t => (0, i.jsx)(e, A(y({}, t), {
+        return t => (0, i.jsx)(e, v(b({}, t), {
           onAddPaymentSource: this.handlePaymentSourceAdded
         }))
       }, {
@@ -223,4 +223,4 @@ class S extends Chunk64700.PureComponent {
     })
   }
 }
-let I = S
+let S = I

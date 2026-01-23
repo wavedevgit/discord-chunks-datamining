@@ -47,8 +47,8 @@ function h(e) {
   } = _(o), E = (0, u.cY)(t, {
     includeSoftDeleted: true
   }), {
-    currentListing: b,
-    nextListing: y
+    currentListing: y,
+    nextListing: b
   } = i.useMemo(() => {
     if ((null == n ? true : n.renewalMutations) == null) return {
       currentListing: true,
@@ -61,14 +61,14 @@ function h(e) {
       nextListing: E.find(e => e.subscription_plans[0].id === t)
     }
   }, [n, E]);
-  if (null == n || null == b || null == y) return null;
+  if (null == n || null == y || null == b) return null;
   let O = () => h(n),
-    A = s()(n.currentPeriodEnd).format(p);
+    v = s()(n.currentPeriodEnd).format(p);
   return (0, r.jsx)(d.A, {
     message: f.intl.format(f.t.chw89X, {
-      currentListing: b.name,
-      nextListing: y.name,
-      changeDate: A
+      currentListing: y.name,
+      nextListing: b.name,
+      changeDate: v
     }),
     error: null == g ? true : g.message,
     onClick: O,

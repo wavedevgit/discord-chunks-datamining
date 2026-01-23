@@ -52,13 +52,13 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y() {
+function b() {
   var e;
   let t = null === o() || true === o() || null == (e = o().os) ? true : e.toString();
   if (null == t || null == c.A) return null;
@@ -75,14 +75,14 @@ function O(e) {
   var t, n, i, s, o;
   let {
     compact: p = false
-  } = e, m = (0, d.GV)(), E = window.GLOBAL_ENV.RELEASE_CHANNEL, O = "488410", A = "adbe4af79b40ef5167e694c392356c627cf3dec9".substring(0, 7), v = null === c.A || true === c.A ? true : c.A.remoteApp.getVersion(), S = null === c.A || true === c.A || null == (t = (n = c.A.remoteApp).getBuildNumber) ? true : t.call(n), I = null === c.A || true === c.A || null == (i = (s = c.A.remoteApp).getAppArch) ? true : i.call(s), T = null == (o = u.A.getCurrentBuildOverride().overrides) ? true : o.discord_web, C = y(), N = [E, O, "(".concat(A, ")")];
-  return (null != v && (N.push("Host ".concat(v)), null != I && N.push(I.toLowerCase()), null != S && N.push("(".concat(S, ")"))), N.push("Build Override: ".concat(null != T ? T.id : "N/A")), null != C && N.push(C), p) ? (0, r.jsxs)(r.Fragment, {
+  } = e, m = (0, d.GV)(), E = window.GLOBAL_ENV.RELEASE_CHANNEL, O = "488463", v = "bdbd7aeeea3941a6ebad4d53d49cf91df71f1601".substring(0, 7), A = null === c.A || true === c.A ? true : c.A.remoteApp.getVersion(), I = null === c.A || true === c.A || null == (t = (n = c.A.remoteApp).getBuildNumber) ? true : t.call(n), S = null === c.A || true === c.A || null == (i = (s = c.A.remoteApp).getAppArch) ? true : i.call(s), T = null == (o = u.A.getCurrentBuildOverride().overrides) ? true : o.discord_web, C = b(), N = [E, O, "(".concat(v, ")")];
+  return (null != A && (N.push("Host ".concat(A)), null != S && N.push(S.toLowerCase()), null != I && N.push("(".concat(I, ")"))), N.push("Build Override: ".concat(null != T ? T.id : "N/A")), null != C && N.push(C), p) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.A, {
       copyValue: N.join(" "),
       text: _.intl.string(_.t["9Al4Qd"]),
       "aria-label": false,
       dataMeticulousIgnore: "true",
-      children: e => (0, r.jsxs)(l.DUT, b(g({}, e), {
+      children: e => (0, r.jsxs)(l.DUT, y(g({}, e), {
         "aria-describedby": m,
         className: a()(h.vk, h.oE),
         children: [(0, r.jsxs)("div", {
@@ -94,17 +94,17 @@ function O(e) {
             color: "text-muted",
             children: [E, " ", O, " ", (0, r.jsxs)("span", {
               className: h.Pc,
-              children: ["(", A, ")"]
+              children: ["(", v, ")"]
             })]
-          }), null != v && (0, r.jsxs)(l.Text, {
+          }), null != A && (0, r.jsxs)(l.Text, {
             tag: "span",
             variant: "text-xxs/normal",
             color: "text-muted",
-            children: [v, null != I && (0, r.jsxs)("span", {
+            children: [A, null != S && (0, r.jsxs)("span", {
               className: h.GI,
-              children: [" ", I.toLowerCase()]
-            }), null != S && (0, r.jsxs)("span", {
-              children: [" (", S, ")"]
+              children: [" ", S.toLowerCase()]
+            }), null != I && (0, r.jsxs)("span", {
+              children: [" (", I, ")"]
             })]
           })]
         }), null != T && (0, r.jsx)(l.Text, {
@@ -127,7 +127,7 @@ function O(e) {
       text: _.intl.string(_.t["9Al4Qd"]),
       "aria-label": false,
       dataMeticulousIgnore: "true",
-      children: e => (0, r.jsx)(l.DUT, b(g({}, e), {
+      children: e => (0, r.jsx)(l.DUT, y(g({}, e), {
         "aria-describedby": m,
         className: a()(h.vk, h.oE),
         children: (0, r.jsxs)("div", {
@@ -140,7 +140,7 @@ function O(e) {
             color: "text-muted",
             children: [E, " ", O, " ", (0, r.jsxs)("span", {
               className: h.Pc,
-              children: ["(", A, ")"]
+              children: ["(", v, ")"]
             })]
           }), " ", null != T && (0, r.jsx)(l.Text, {
             tag: "span",
@@ -151,17 +151,17 @@ function O(e) {
               className: h.Pc,
               children: ["Build Override: ", T.id]
             })
-          }), null != v ? (0, r.jsxs)(r.Fragment, {
+          }), null != A ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)(l.Text, {
               tag: "span",
               className: h.n8,
               variant: "text-xs/normal",
               color: "text-muted",
-              children: ["Host ", v, " ", null != I ? (0, r.jsxs)("span", {
+              children: ["Host ", A, " ", null != S ? (0, r.jsxs)("span", {
                 className: h.GI,
-                children: [I.toLowerCase(), " "]
-              }) : null, null != S ? (0, r.jsxs)("span", {
-                children: ["(", S, ")"]
+                children: [S.toLowerCase(), " "]
+              }) : null, null != I ? (0, r.jsxs)("span", {
+                children: ["(", I, ")"]
               }) : null]
             }), " "]
           }) : null, null != C ? (0, r.jsx)(l.Text, {

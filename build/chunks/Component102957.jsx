@@ -2,7 +2,7 @@
 /** chunk id: 102957, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  r: () => b
+  r: () => y
 }), require("./457529.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -64,7 +64,7 @@ let f = {
   g = "``";
 
 function E() {
-  let [e, t] = i.useState(m(_)), [n, c] = i.useState(_), [p, E] = i.useState(m(h)), [b, y] = i.useState(h), [O, A] = i.useState(null), [v, S] = i.useState((0, r.jsx)(u.a8, {
+  let [e, t] = i.useState(m(_)), [n, c] = i.useState(_), [p, E] = i.useState(m(h)), [y, b] = i.useState(h), [O, v] = i.useState(null), [A, I] = i.useState((0, r.jsx)(u.a8, {
     errorLabel: f.CONFIGURABLE,
     elementOptions: _,
     children: (0, r.jsx)(a.ExpressCheckoutElement, {
@@ -73,11 +73,11 @@ function E() {
       },
       options: h
     })
-  })), I = () => {
+  })), S = () => {
     try {
       let t = JSON.parse(e),
         n = JSON.parse(p);
-      S(null), S((0, r.jsxs)(r.Fragment, {
+      I(null), I((0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)(o.Text, {
           variant: "text-md/normal",
           className: d.cW,
@@ -92,9 +92,9 @@ function E() {
             options: n
           })
         })]
-      })), c(t), y(n), A(null)
+      })), c(t), b(n), v(null)
     } catch (e) {
-      console.error("ConfigurableStripeExpressCheckoutElement - error parsing JSON: ", e), A("Error parsing JSON. Check console for more information.")
+      console.error("ConfigurableStripeExpressCheckoutElement - error parsing JSON: ", e), v("Error parsing JSON. Check console for more information.")
     }
   };
   return (0, r.jsxs)("div", {
@@ -149,7 +149,7 @@ function E() {
         variant: "primary",
         size: "sm",
         text: "Apply Changes",
-        onClick: I
+        onClick: S
       })
     }), (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
@@ -169,12 +169,12 @@ function E() {
       variant: "text-md/normal",
       children: (0, r.jsx)(l.A, {
         className: d.wD,
-        children: "".concat(g, " ").concat(m(b), " ").concat(g)
+        children: "".concat(g, " ").concat(m(y), " ").concat(g)
       })
-    }), v]
+    }), A]
   })
 }
-let b = {
+let y = {
   name: "Stripe Components",
   id: "stripe-components",
   component: function() {

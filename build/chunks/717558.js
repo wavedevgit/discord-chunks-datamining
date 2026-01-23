@@ -36,6 +36,6 @@ function u(e) {
     checkSoundboardSounds: r = true,
     checkIsMuted: c = false,
     context: u
-  } = e, [d, f, p, _] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [o.A, a.A, s.A, i.A], h = f.getVoiceChannelId(), m = null != h ? d.getVoiceStateForChannel(h, t) : null, g = c && ((null == m ? true : m.mute) || (null == m ? true : m.selfMute)), E = p.isSpeaking(t, u) && !g, b = p.isSoundSharing(t) && n;
-  return l(E, _.isUserPlayingSounds(t) && r, b)
+  } = e, [d, f, p, _] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [o.A, a.A, s.A, i.A], h = f.getVoiceChannelId(), m = null != h ? d.getVoiceStateForChannel(h, t) : null, g = c && ((null == m ? true : m.mute) || (null == m ? true : m.selfMute)), E = p.isSpeaking(t, u) && !g, y = p.isSoundSharing(t) && n;
+  return l(E, _.isUserPlayingSounds(t) && r, y)
 }

@@ -1,11 +1,11 @@
 /** Chunk was on 263 **/
-/** chunk id: 230378, original params: e,t,s (module,exports,require) **/
+/** chunk id: 230378, original params: e,t,a (module,exports,require) **/
 module.exports = {
-  kL: "b3785962717537ad",
-  Qs: "ffb30897fd14f7fa",
-  G3: "_103f5ea307c9deb1",
-  y3: "_476eb9a46f869fd7",
-  wH: "_8f44d128220eb057",
-  n1: "da6faec46f618b4f",
-  Z6: "_8f169f3952d38532"
+  kL: "container_afa88e",
+  Qs: "content_afa88e",
+  G3: "bodyText_afa88e",
+  y3: "priceRow_afa88e",
+  wH: "selected_afa88e",
+  n1: "circle_afa88e",
+  Z6: "priceRowText_afa88e"
 }

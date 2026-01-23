@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 181800, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => _
 }), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,18 +24,18 @@ function y(e) {
   let {
     onActivate: t,
     children: n
-  } = e, o = l.useRef(null), d = (0, i.bG)([u.A], () => u.A.hasJoinRequestCoackmark()), f = l.useCallback(() => {
+  } = e, o = l.useRef(null), d = (0, i.bG)([u.A], () => u.A.hasJoinRequestCoackmark()), p = l.useCallback(() => {
     c.Ay.clearCoachmark()
-  }, []), p = (0, s.A)(d), h = l.useRef(null);
+  }, []), h = (0, a.A)(d), f = l.useRef(null);
   return l.useEffect(() => {
-    if (d && d !== p) {
+    if (d && d !== h) {
       var e, n, r, l, i;
-      t(), null == (i = h.current) || null == (l = i.ref) || null == (r = l.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
+      t(), null == (i = f.current) || null == (l = i.ref) || null == (r = l.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
     }
-  }, [h, d, p, t]), (0, r.jsxs)("div", {
+  }, [f, d, h, t]), (0, r.jsxs)("div", {
     className: A.kL,
-    children: [(0, r.jsx)(a.YNO, {
-      ref: h,
+    children: [(0, r.jsx)(s.YNO, {
+      ref: f,
       targetElementRef: o,
       shouldShow: d,
       renderPopout: () => (0, r.jsxs)("div", {
@@ -44,20 +44,20 @@ function y(e) {
           className: A.Bm,
           children: [(0, r.jsxs)("div", {
             className: A.q3,
-            children: [(0, r.jsx)(a.Heading, {
+            children: [(0, r.jsx)(s.Heading, {
               variant: "heading-md/medium",
-              children: m.intl.string(m.t["0YV0YE"])
-            }), (0, r.jsx)(a.Text, {
+              children: b.intl.string(b.t["0YV0YE"])
+            }), (0, r.jsx)(s.Text, {
               variant: "text-xs/normal",
               color: "text-muted",
-              children: m.intl.string(m.t["0UQVDL"])
+              children: b.intl.string(b.t["0UQVDL"])
             })]
-          }), (0, r.jsx)(a.Button, {
+          }), (0, r.jsx)(s.Button, {
             variant: "primary",
             size: "sm",
-            text: m.intl.string(m.t["4r+amb"]),
+            text: b.intl.string(b.t["4r+amb"]),
             fullWidth: true,
-            onClick: f
+            onClick: p
           })]
         }), (0, r.jsx)("div", {
           className: A.ed
@@ -104,46 +104,46 @@ function y(e) {
   })
 }
 
-function O(e) {
+function _(e) {
   let {
     onActivate: t
-  } = e, [n, O] = l.useState(false), j = (0, i.bG)([d.A], () => d.A.getGuildId()), v = (0, i.bG)([u.A], () => u.A.hasFetchedRequestToJoinGuilds), x = (0, h.A)(), E = (0, s.A)(j), _ = l.useMemo(() => {
-    let e = (0, p.xW)({
-      folderId: f.U.PENDING_JOIN_REQUESTS_FOLDER,
-      folderName: m.intl.string(m.t["scsU+l"]),
+  } = e, [n, _] = l.useState(false), O = (0, i.bG)([d.A], () => d.A.getGuildId()), j = (0, i.bG)([u.A], () => u.A.hasFetchedRequestToJoinGuilds), v = (0, f.A)(), x = (0, a.A)(O), E = l.useMemo(() => {
+    let e = (0, h.xW)({
+      folderId: p.U.PENDING_JOIN_REQUESTS_FOLDER,
+      folderName: b.intl.string(b.t["scsU+l"]),
       expanded: n,
       guildIds: []
     });
-    for (let t of x) e.children.push((0, p.EL)(t, e.id));
+    for (let t of v) e.children.push((0, h.EL)(t, e.id));
     return e
-  }, [x, n]);
+  }, [v, n]);
   l.useEffect(() => {
-    n && !v && o.A.fetchRequestToJoinGuilds()
-  }, [n, v]);
-  let C = null != j && x.includes(j);
+    n && !j && o.A.fetchRequestToJoinGuilds()
+  }, [n, j]);
+  let C = null != O && v.includes(O);
   return (l.useEffect(() => {
-    !n && C && E !== j && O(true)
-  }, [n, C, E, j]), 0 === x.length) ? null : (0, r.jsx)(y, {
+    !n && C && x !== O && _(true)
+  }, [n, C, x, O]), 0 === v.length) ? null : (0, r.jsx)(y, {
     onActivate: t,
-    children: (0, r.jsx)(b.A, {
-      folderNode: _,
+    children: (0, r.jsx)(g.A, {
+      folderNode: E,
       expanded: n,
       selected: C,
       draggable: false,
       sorting: false,
       onExpandCollapse: () => {
-        O(!n), c.Ay.clearCoachmark()
+        _(!n), c.Ay.clearCoachmark()
       },
       folderButtonSize: "icon",
       folderButtonContent: (0, r.jsx)("div", {
         className: A.rH,
-        children: (0, r.jsx)(a.Qfk, {
+        children: (0, r.jsx)(s.Qfk, {
           size: "sm",
           color: "currentColor"
         })
       }),
       renderChildNode: function(e, t, n) {
-        return e.type !== p.PJ.GUILD ? null : (0, r.jsx)(g.A, {
+        return e.type !== h.PJ.GUILD ? null : (0, r.jsx)(m.A, {
           guildNode: e,
           "aria-setsize": n,
           "aria-posinset": t

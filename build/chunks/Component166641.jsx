@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 166641, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,10 +17,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk27740 = require("./27740.js"),
   Chunk541318 = require("./541318.js");
-let m = function(e) {
+let A = function(e) {
   let {
     onScroll: t
-  } = e, n = (0, p.A)(), m = i.useMemo(() => n.map(e => {
+  } = e, n = (0, p.A)(), A = i.useMemo(() => n.map(e => {
     var t, n;
     return t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -58,19 +58,19 @@ let m = function(e) {
   return (0, r.jsxs)(u.A, {
     onScroll: t,
     children: [(0, r.jsx)(o.A, {
-      title: h.intl.string(h.t.X5xPlb),
-      description: h.intl.string(h.t["F/IQCI"]),
+      title: g.intl.string(g.t.X5xPlb),
+      description: g.intl.string(g.t["F/IQCI"]),
       children: (0, r.jsx)(s.A, {})
     }), (0, r.jsxs)(c.A, {
       children: [n.length > 0 ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.Heading, {
-          className: A.G,
+          className: f.G,
           variant: "heading-lg/semibold",
           color: "text-strong",
-          children: h.intl.string(h.t["2DfZIQ"])
+          children: g.intl.string(g.t["2DfZIQ"])
         }), (0, r.jsxs)("div", {
-          className: A.Q,
-          children: [m.map(e => (0, r.jsx)(f.nO, {
+          className: f.Q,
+          children: [A.map(e => (0, r.jsx)(h.nO, {
             guild: e,
             onClick: () => a.A.transitionToGuildSync(e.id)
           }, e.id)), (0, r.jsx)(d.A, {
@@ -78,24 +78,24 @@ let m = function(e) {
           })]
         })]
       }) : (0, r.jsx)("div", {
-        className: A.Q,
+        className: f.Q,
         children: (0, r.jsx)(d.A, {
           hasHub: false
         })
       }), (0, r.jsx)("div", {
-        className: g.yF
+        className: m.yF
       }), (0, r.jsxs)("div", {
-        className: g.ed,
+        className: m.ed,
         children: [(0, r.jsxs)(l.Text, {
-          className: g.Qq,
+          className: m.Qq,
           variant: "text-sm/medium",
           color: "text-default",
-          children: [h.intl.string(h.t.O1k9XX), " "]
+          children: [g.intl.string(g.t.O1k9XX), " "]
         }), (0, r.jsx)(l.Text, {
-          className: g.Qq,
+          className: m.Qq,
           variant: "text-sm/medium",
           color: "text-default",
-          children: h.intl.string(h.t.FV5dvh)
+          children: g.intl.string(g.t.FV5dvh)
         })]
       })]
     })]

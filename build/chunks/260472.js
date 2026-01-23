@@ -36,7 +36,7 @@ class E {
     return new Promise((t, n) => {
       this._waitQueue.push(() => {
         try {
-          null == this.functionCache[e.type] && (this.functionCache[e.type] = e => this._dispatchWithDevtools(e), y(this.functionCache[e.type], "dispatch_" + e.type)), this.functionCache[e.type](e), t()
+          null == this.functionCache[e.type] && (this.functionCache[e.type] = e => this._dispatchWithDevtools(e), b(this.functionCache[e.type], "dispatch_" + e.type)), this.functionCache[e.type](e), t()
         } catch (e) {
           n(e)
         }
@@ -131,12 +131,12 @@ class E {
     this._actionHandlers.addDependencies(e, t)
   }
   constructor(e = 0, t, n) {
-    f(this, "_defaultBand", true), f(this, "_interceptors", []), f(this, "_subscriptions", {}), f(this, "_waitQueue", []), f(this, "_processingWaitQueue", false), f(this, "_currentDispatchActionType", null), f(this, "_actionHandlers", new b), f(this, "_sentryUtils", true), f(this, "actionLogger", true), f(this, "functionCache", {}), this._defaultBand = e, this._sentryUtils = n, null != t ? this.actionLogger = t : this.actionLogger = new d.T, this.actionLogger.on("trace", (e, t, n) => {
+    f(this, "_defaultBand", true), f(this, "_interceptors", []), f(this, "_subscriptions", {}), f(this, "_waitQueue", []), f(this, "_processingWaitQueue", false), f(this, "_currentDispatchActionType", null), f(this, "_actionHandlers", new y), f(this, "_sentryUtils", true), f(this, "actionLogger", true), f(this, "functionCache", {}), this._defaultBand = e, this._sentryUtils = n, null != t ? this.actionLogger = t : this.actionLogger = new d.T, this.actionLogger.on("trace", (e, t, n) => {
       s.A.isTracing && n >= m && s.A.mark("\uD83E\uDDA5", t, n)
     })
   }
 }
-class b {
+class y {
   getOrderedActionHandlers(e) {
     var t;
     return null != (t = this._orderedActionHandlers[e.type]) ? t : this._computeOrderedActionHandlers(e.type)
@@ -148,7 +148,7 @@ class b {
     for (let n in t) {
       let r = t[n],
         i = e => r(e);
-      y(i, "".concat(e, "_").concat(n)), s[n] = i
+      b(i, "".concat(e, "_").concat(n)), s[n] = i
     }
     return this._dependencyGraph.addNode(i, {
       name: e,
@@ -216,7 +216,7 @@ class b {
   }
 }
 
-function y(e, t) {
+function b(e, t) {
   Object.defineProperty(e, "name", {
     value: t
   })

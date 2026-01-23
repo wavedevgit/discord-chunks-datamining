@@ -1,5 +1,5 @@
 /** Chunk was on 88615 **/
-/** chunk id: 297407, original params: e,t,l (module,exports,require) **/
+/** chunk id: 297407, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
 });
@@ -14,17 +14,17 @@ var Chunk158954 = require("./158954.js"),
 function u(e) {
   let {
     guildId: t
-  } = e, l = (0, i.A)(t);
-  return 0 === l.length ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(n.DZT, {
+  } = e, n = (0, i.A)(t);
+  return 0 === n.length ? null : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(l.DZT, {
       className: a.w,
       variant: "eyebrow",
       color: "text-subtle",
-      children: o.intl.string(o.t.yM9Krm)
-    }), (0, r.jsx)(n.IpV, {
+      children: s.intl.string(s.t.yM9Krm)
+    }), (0, r.jsx)(l.IpV, {
       className: a.k,
       fade: true,
-      children: l.map((e, t) => (0, r.jsx)(s.A, {
+      children: n.map((e, t) => (0, r.jsx)(o.A, {
         boost: e
       }, "boost-activity-".concat(t)))
     })]

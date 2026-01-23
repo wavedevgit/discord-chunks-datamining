@@ -20,17 +20,17 @@ function f(e) {
     className: n,
     collapsibleContent: a,
     isExpanded: f
-  } = e, [p, _] = i.useState(false), [h, m] = i.useState(true), [g, E] = i.useState(false), b = null != f ? f : p, {
-    ref: y,
+  } = e, [p, _] = i.useState(false), [h, m] = i.useState(true), [g, E] = i.useState(false), y = null != f ? f : p, {
+    ref: b,
     height: O = 0
   } = (0, c.Ay)(), {
-    ref: A,
-    height: v = 0
-  } = (0, c.Ay)(), S = (0, l.zhh)({
-    height: b ? O + v : v,
+    ref: v,
+    height: A = 0
+  } = (0, c.Ay)(), I = (0, l.zhh)({
+    height: y ? O + A : A,
     config: o.config.stiff,
     onRest: () => E(true)
-  }, h ? "animate-never" : "respect-motion-settings"), I = i.useCallback(() => {
+  }, h ? "animate-never" : "respect-motion-settings"), S = i.useCallback(() => {
     _(!p)
   }, [p, _]);
   return i.useLayoutEffect(() => {
@@ -40,26 +40,26 @@ function f(e) {
     return () => clearTimeout(e)
   }, []), (0, r.jsx)("div", {
     className: s()(u.uR, {
-      [u.$M]: b
+      [u.$M]: y
     }, n),
     children: (0, r.jsxs)(o.animated.div, {
       className: s()(u.N0, {
-        [u.Mm]: b && g
+        [u.Mm]: y && g
       }),
-      style: S,
+      style: I,
       children: [(0, r.jsx)("div", {
-        ref: A,
+        ref: v,
         className: s()(u.wx, {
-          [u.$M]: b
+          [u.$M]: y
         }),
         children: t({
-          onClick: I
+          onClick: S
         })
       }), (0, r.jsx)(l.M1G, {
-        enabled: !b,
+        enabled: !y,
         children: (0, r.jsx)("div", {
-          ref: y,
-          "aria-hidden": !b,
+          ref: b,
+          "aria-hidden": !y,
           children: a
         })
       })]

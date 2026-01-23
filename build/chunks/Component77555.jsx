@@ -10,7 +10,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk928039 = require("./928039.js"),
   Chunk61916 = require("./61916.jsx");
 
-function i(e, t) {
+function c(e, t) {
   if (null == e) return {};
   var r, n, a, l = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -35,30 +35,30 @@ function u(e) {
     originChannel: u,
     selectedDestinations: d,
     handleToggleDestination: f,
-    disableSelection: b,
-    rowClassName: p
-  } = e, g = i(e, ["rowData", "message", "originChannel", "selectedDestinations", "handleToggleDestination", "disableSelection", "rowClassName"]), {
-    sections: y,
-    sectionHeight: h,
+    disableSelection: p,
+    rowClassName: b
+  } = e, g = c(e, ["rowData", "message", "originChannel", "selectedDestinations", "handleToggleDestination", "disableSelection", "rowClassName"]), {
+    sections: h,
+    sectionHeight: y,
     renderRow: O,
-    rowHeight: m
-  } = (0, c.s)({
+    rowHeight: _
+  } = (0, i.s)({
     rowData: t,
     message: r,
     originChannel: u,
     selectedDestinations: d,
     handleToggleDestination: f,
-    disableSelection: b,
-    rowClassName: p
-  }), j = a.useRef(null), w = (0, s.A)("forward-modal", j);
+    disableSelection: p,
+    rowClassName: b
+  }), m = a.useRef(null), j = (0, s.A)("forward-modal", m);
   return (0, n.jsx)(l.hD, {
-    navigator: w,
+    navigator: j,
     children: (0, n.jsx)(l.PR, {
       children: e => {
         var t, r;
         let {
           ref: a
-        } = e, l = i(e, ["ref"]);
+        } = e, l = c(e, ["ref"]);
         return (0, n.jsx)(o.OZj, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
@@ -79,13 +79,13 @@ function u(e) {
         }({
           ref: e => {
             var t;
-            j.current = e, a.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
+            m.current = e, a.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           }
         }, l, g), r = r = {
-          sections: y,
-          sectionHeight: h,
+          sections: h,
+          sectionHeight: y,
           renderRow: O,
-          rowHeight: m
+          rowHeight: _
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

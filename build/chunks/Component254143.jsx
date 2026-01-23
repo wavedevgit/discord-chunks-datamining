@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 254143, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 }), require("./896048.js"), require("./492834.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,22 +17,22 @@ var Chunk627968 = require("./627968.js"),
   Chunk641131 = require("./641131.js"),
   Chunk985018 = require("./985018.jsx");
 
-function g(e) {
+function m(e) {
   let {
     channel: t,
-    user: g,
-    guild: m
-  } = e, A = (0, i.bG)([f.A], () => null != g && f.A.isUserBanned(g.id)), y = null != g && null == A, [O, j] = l.useState(y), v = (0, i.bG)([d.A], () => null != g && null != m && (0, u.fJ)(g, m, [d.A]));
+    user: m,
+    guild: b
+  } = e, A = (0, i.bG)([p.A], () => null != m && p.A.isUserBanned(m.id)), y = null != m && null == A, [_, O] = l.useState(y), j = (0, i.bG)([d.A], () => null != m && null != b && (0, u.fJ)(m, b, [d.A]));
   if ((0, c.Ay)(() => {
-      y && o.A.searchGuildBans(t.guild_id, true, [null == g ? true : g.id]).finally(() => j(false))
-    }), !v) return null;
-  let x = true === A ? b.intl.string(h.default.dpfwQ1) : b.intl.string(h.default.ASv23S),
-    E = "ban-user-".concat(null == g ? true : g.id);
-  return (0, r.jsx)(p.A, {
-    text: x,
-    icon: s.wI0,
+      y && o.A.searchGuildBans(t.guild_id, true, [null == m ? true : m.id]).finally(() => O(false))
+    }), !j) return null;
+  let v = true === A ? g.intl.string(f.default.dpfwQ1) : g.intl.string(f.default.ASv23S),
+    x = "ban-user-".concat(null == m ? true : m.id);
+  return (0, r.jsx)(h.A, {
+    text: v,
+    icon: a.wI0,
     onClick: () => {
-      null != g && (0, s.mMO)(async () => {
+      null != m && (0, a.mMO)(async () => {
         let {
           default: e
         } = await n.e("57742").then(n.bind(n, 333179));
@@ -57,7 +57,7 @@ function g(e) {
             return e
           }({}, n), i = i = {
             guildId: t.guild_id,
-            user: g,
+            user: m,
             modReportId: t.id
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
@@ -72,8 +72,8 @@ function g(e) {
         }
       })
     },
-    disabled: true === A || O,
-    submitting: O,
-    color: a.$n.Colors.RED
-  }, E)
+    disabled: true === A || _,
+    submitting: _,
+    color: s.$n.Colors.RED
+  }, x)
 }

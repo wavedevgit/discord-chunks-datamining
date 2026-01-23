@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 418616, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,10 +15,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk324580 = require("./324580.js"),
   Chunk985018 = require("./985018.jsx");
 
-function h(e) {
+function g(e) {
   let {
     loadId: t
-  } = e, n = (0, l.bG)([s.default], () => (0, d.Kv)([s.default])), h = u.A.useField("languageCode"), A = null != h ? h : n, g = i.useCallback(e => {
+  } = e, n = (0, l.bG)([s.default], () => (0, d.Kv)([s.default])), g = u.A.useField("languageCode"), f = null != g ? g : n, m = i.useCallback(e => {
     u.A.setState({
       languageCode: e
     });
@@ -31,19 +31,19 @@ function h(e) {
       query: n,
       languageCode: e
     })
-  }, [t]), m = i.useMemo(() => (0, p.tO)().map(e => ({
+  }, [t]), A = i.useMemo(() => (0, p.tO)().map(e => ({
     id: e.code,
     label: e.name
-  })), []), b = i.useMemo(() => {
+  })), []), _ = i.useMemo(() => {
     var e;
-    let t = (0, p.tO)().find(e => e.code === A);
-    return null != (e = null == t ? true : t.name) ? e : f.intl.string(f.t.LQLMGP)
-  }, [A]);
+    let t = (0, p.tO)().find(e => e.code === f);
+    return null != (e = null == t ? true : t.name) ? e : h.intl.string(h.t.LQLMGP)
+  }, [f]);
   return (0, r.jsx)(a.Ay, {
-    items: m,
-    title: b,
-    onSelect: g,
-    selected: A,
-    "aria-label": f.intl.string(f.t.Ng5cTK)
+    items: A,
+    title: _,
+    onSelect: m,
+    selected: f,
+    "aria-label": h.intl.string(h.t.Ng5cTK)
   })
 }

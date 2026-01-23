@@ -83,15 +83,15 @@ function g(e) {
     showAllDevices: _ = false,
     selectedDeviceId: g,
     menuGroupOverrideProps: E,
-    menuItemOverrideProps: b,
-    computeMenuRadioItemOverrideProps: y
+    menuItemOverrideProps: y,
+    computeMenuRadioItemOverrideProps: b
   } = e, {
     setDevice: O,
-    getLabel: A,
-    getLocation: v
-  } = m(n), [S, I] = i.useState(_), T = v(s[s.length - 1]), [C, N] = (0, l.tR)(n, {
+    getLabel: v,
+    getLocation: A
+  } = m(n), [I, S] = i.useState(_), T = A(s[s.length - 1]), [C, N] = (0, l.tR)(n, {
     location: T
-  }), R = S ? C.concat(N) : C, {
+  }), R = I ? C.concat(N) : C, {
     id: w,
     name: P
   } = (0, l.x5)(n), D = null != g ? g : w, x = i.useMemo(() => C.concat(N).find(e => {
@@ -123,13 +123,13 @@ function g(e) {
           analyticsLocations: s
         })
       }
-    }, null == y ? true : y(i)), "".concat(n, "-").concat(i))
+    }, null == b ? true : b(i)), "".concat(n, "-").concat(i))
   }), j = (0, r.jsx)(a.Drp, {
     id: "SHOW_MORE",
     label: d.intl.string(d.t.E99UMh),
     dontCloseOnAction: true,
     action: () => {
-      I(true), o.default.track(c.HAw.DEVICES_LIST_SHOW_MORE_CLICKED, {
+      S(true), o.default.track(c.HAw.DEVICES_LIST_SHOW_MORE_CLICKED, {
         device_type: n,
         location: T,
         shown_device_count: C.length,
@@ -137,15 +137,15 @@ function g(e) {
         location_stack: s
       })
     }
-  }), M = !S && (null == N ? true : N.length) > 0;
+  }), M = !I && (null == N ? true : N.length) > 0;
   return u ? (0, r.jsxs)(a.Drp, h(p({
     id: "".concat(n, "-devices"),
-    label: A(),
+    label: v(),
     subtext: null != (t = null == x ? true : x.name) ? t : P
-  }, b), {
+  }, y), {
     children: [L, M && j]
   })) : (0, r.jsxs)(a.rXV, h(p({
-    label: A()
+    label: v()
   }, E), {
     children: [L, M && j]
   }))

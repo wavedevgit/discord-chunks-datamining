@@ -2,8 +2,8 @@
 /** chunk id: 359549, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y,
-  J: () => b
+  A: () => b,
+  J: () => y
 }), require("./896048.js"), require("./938796.js");
 var Chunk64700 = require("./64700.js"),
   Chunk665260 = require("./665260.js"),
@@ -43,7 +43,7 @@ function E(e) {
   }, [n, i, a]), i
 }
 
-function b(e) {
+function y(e) {
   let {
     data: t
   } = (0, u.Q)(), n = E(e), {
@@ -60,11 +60,11 @@ function b(e) {
   })))
 }
 
-function y(e) {
+function b(e) {
   let {
     application: t,
     analyticsLocations: n
-  } = e, i = b(t), {
+  } = e, i = y(t), {
     bot: o
   } = null != t ? t : {
     bot: null

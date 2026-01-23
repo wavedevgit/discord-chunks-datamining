@@ -179,13 +179,13 @@ function eE(e) {
   }))
 }
 
-function eb(e) {
+function ey(e) {
   let t, {
       currentUser: n,
       premiumType: i,
       onClose: a
     } = e,
-    s = (0, I.Ay)(n.id),
+    s = (0, S.Ay)(n.id),
     o = (0, d.bG)([g.A], () => g.A.useReducedMotion),
     l = i === z.PremiumTypes.TIER_1,
     c = () => {
@@ -251,27 +251,27 @@ function eb(e) {
   })
 }
 
-function ey(e) {
+function eb(e) {
   var t, n, i;
   let {
     currentUser: a,
     onClose: s
   } = e, o = (0, F.$F)(), {
     analyticsLocations: l
-  } = (0, b.Ay)(E.A.PREMIUM_UNCANCEL_MODAL), c = (0, F.Xb)(), u = null != (t = null == o ? true : o.id) ? t : z.Ac.PREMIUM_TENURE_1_MONTH, d = (0, B.A)(u);
+  } = (0, y.Ay)(E.A.PREMIUM_UNCANCEL_MODAL), c = (0, F.Xb)(), u = null != (t = null == o ? true : o.id) ? t : z.Ac.PREMIUM_TENURE_1_MONTH, d = (0, B.A)(u);
   if (!(0, G.YE)(a, z.PremiumTypes.TIER_2) || null == c) return null;
   let f = null != (n = null == o ? true : o.status) ? n : F.Wo.UPCOMING,
     _ = null != (i = null == o ? true : o.nameUnformatted) ? i : z.VD[z.Ac.PREMIUM_TENURE_1_MONTH].nameUnformatted,
     h = (0, H.I)(u),
     m = X.intl.string(_),
     g = f === F.Wo.EARNED,
-    y = null != o && "daysLeft" in o ? o.daysLeft : 1,
+    b = null != o && "daysLeft" in o ? o.daysLeft : 1,
     O = X.t.pwkxYF;
   if (g) {
     let e = Math.max((0, G.To)(c), 1);
-    e >= 365 ? (y = Math.floor(e / 365), O = X.t["/ojPfi"]) : (y = e, O = X.t.IItWYo)
+    e >= 365 ? (b = Math.floor(e / 365), O = X.t["/ojPfi"]) : (b = e, O = X.t.IItWYo)
   }
-  let A = () => {
+  let v = () => {
     s(), (0, Y.D)({
       analyticsLocations: l,
       displayProfile: null
@@ -281,9 +281,9 @@ function ey(e) {
   };
   return (0, r.jsx)(eg, {
     description: X.intl.format(O, {
-      time: y
+      time: b
     }),
-    onLearnMore: A,
+    onLearnMore: v,
     renderVisual: () => (0, r.jsx)(p.hLv, {
       className: Z.nc,
       color: d,
@@ -299,7 +299,7 @@ function ey(e) {
 function eO(e) {
   let {
     premiumType: t
-  } = e, n = 3, i = (0, d.bG)([g.A], () => g.A.useReducedMotion), a = (0, y.Fj)(null).filter(e => e.type === O.i.GUILD && (e.animated || null != e.guildId)).slice(0, n), s = (0, d.yK)([v.A], () => v.A.stickerFrecencyWithoutFetchingLatest.frequently.slice(0, n - a.length)), o = em().emojiStickersVisual, l = t === z.PremiumTypes.TIER_1, c = () => {
+  } = e, n = 3, i = (0, d.bG)([g.A], () => g.A.useReducedMotion), a = (0, b.Fj)(null).filter(e => e.type === O.i.GUILD && (e.animated || null != e.guildId)).slice(0, n), s = (0, d.yK)([A.A], () => A.A.stickerFrecencyWithoutFetchingLatest.frequently.slice(0, n - a.length)), o = em().emojiStickersVisual, l = t === z.PremiumTypes.TIER_1, c = () => {
     window.open(U.A.getArticleURL(q.MVz.PREMIUM_DETAILS)), M.default.track(q.HAw.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
       action: "emojis_stickers"
     })
@@ -317,7 +317,7 @@ function eO(e) {
         className: Z.d7,
         alt: "",
         src: e
-      }, "emoji-".concat(t)) : null), l ? null : s.map(e => (0, r.jsx)(S.A, {
+      }, "emoji-".concat(t)) : null), l ? null : s.map(e => (0, r.jsx)(I.A, {
         disableAnimation: i,
         sticker: e,
         size: 58,
@@ -331,7 +331,7 @@ function eO(e) {
   })
 }
 
-function eA(e) {
+function ev(e) {
   let {
     premiumType: t,
     onClose: n
@@ -368,9 +368,9 @@ function eA(e) {
       className: Z.Ht,
       children: (0, r.jsxs)("div", {
         className: Z.W5,
-        children: [(0, r.jsx)(A.A, {
+        children: [(0, r.jsx)(v.A, {
           guild: o,
-          size: A.A.Sizes.MEDIUM,
+          size: v.A.Sizes.MEDIUM,
           animate: !a,
           className: Z.Hc
         }), (0, r.jsxs)("div", {
@@ -400,7 +400,7 @@ function eA(e) {
     })
   })
 }
-let ev = () => {
+let eA = () => {
   let e = em().screenShareItemVisual,
     t = () => {
       window.open(U.A.getArticleURL(q.MVz.STREAM_QUALITY_SETTINGS)), M.default.track(q.HAw.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
@@ -417,7 +417,7 @@ let ev = () => {
   })
 };
 
-function eS(e) {
+function eI(e) {
   let {
     premiumType: t
   } = e, n = em().uploadsMessagesItemVisual, i = () => {
@@ -434,10 +434,10 @@ function eS(e) {
     })
   })
 }
-let eI = Chunk64700.createContext({
+let eS = Chunk64700.createContext({
     isPremiumRebrand: false
   }),
-  eT = () => i.useContext(eI).isPremiumRebrand;
+  eT = () => i.useContext(eS).isPremiumRebrand;
 
 function eC(e) {
   let {
@@ -452,58 +452,58 @@ function eC(e) {
       case z.PremiumTypes.TIER_0:
         e.push((0, r.jsx)(eO, {
           premiumType: n
-        }), (0, r.jsx)(eS, {
+        }), (0, r.jsx)(eI, {
           premiumType: n
         }));
         break;
       case z.PremiumTypes.TIER_1:
-        o ? e.push((0, r.jsx)(eb, {
+        o ? e.push((0, r.jsx)(ey, {
           currentUser: t,
           premiumType: n,
           onClose: a
-        }, "profile-item"), (0, r.jsx)(ev, {}, "screen-share-item"), (0, r.jsx)(eA, {
+        }, "profile-item"), (0, r.jsx)(eA, {}, "screen-share-item"), (0, r.jsx)(ev, {
           premiumType: n,
           onClose: a
-        }, "boost-item")) : e.push((0, r.jsx)(eb, {
+        }, "boost-item")) : e.push((0, r.jsx)(ey, {
           currentUser: t,
           premiumType: n,
           onClose: a
         }, "profile-item"), (0, r.jsx)(eO, {
           premiumType: n
-        }, "emoji-stickers-item"), (0, r.jsx)(ev, {}, "screen-share-item"), (0, r.jsx)(eS, {
+        }, "emoji-stickers-item"), (0, r.jsx)(eA, {}, "screen-share-item"), (0, r.jsx)(eI, {
           premiumType: n
-        }, "uploads-item"), (0, r.jsx)(eA, {
+        }, "uploads-item"), (0, r.jsx)(ev, {
           premiumType: n,
           onClose: a
         }, "boost-item"));
         break;
       case z.PremiumTypes.TIER_2:
-        o ? e.push((0, r.jsx)(eb, {
+        o ? e.push((0, r.jsx)(ey, {
           currentUser: t,
           premiumType: n,
           onClose: a
-        }, "profile-item"), (0, r.jsx)(eA, {
+        }, "profile-item"), (0, r.jsx)(ev, {
           premiumType: n,
           onClose: a
-        }, "boost-item"), (0, r.jsx)(ev, {}, "screen-share-item")) : e.push((0, r.jsx)(ey, {
+        }, "boost-item"), (0, r.jsx)(eA, {}, "screen-share-item")) : e.push((0, r.jsx)(eb, {
           currentUser: t,
           onClose: a
-        }, "badge-item"), (0, r.jsx)(eb, {
+        }, "badge-item"), (0, r.jsx)(ey, {
           currentUser: t,
           premiumType: n,
           onClose: a
         }, "profile-item"), (0, r.jsx)(eO, {
           premiumType: n
-        }, "emoji-stickers-item"), (0, r.jsx)(eA, {
+        }, "emoji-stickers-item"), (0, r.jsx)(ev, {
           premiumType: n,
           onClose: a
-        }, "boost-item"), (0, r.jsx)(ev, {}, "screen-share-item"), (0, r.jsx)(eS, {
+        }, "boost-item"), (0, r.jsx)(eA, {}, "screen-share-item"), (0, r.jsx)(eI, {
           premiumType: n
         }, "uploads-item"))
     }
     return e
   }, [n, t, a, o]);
-  return (0, r.jsx)(eI.Provider, {
+  return (0, r.jsx)(eS.Provider, {
     value: {
       isPremiumRebrand: l
     },
@@ -531,20 +531,20 @@ let eN = function(e) {
     isDowngrade: m = false,
     subtitleIcon: g,
     subtitleClassName: E
-  } = e, b = (0, d.bG)([L.default], () => {
+  } = e, y = (0, d.bG)([L.default], () => {
     let e = L.default.getCurrentUser();
     return l()(null != e, "ProfileItem: currentUser cannot be undefined"), e
   });
   i.useEffect(() => {
-    (0, T.A)(b.id, b.getAvatarURL(null, 80))
-  }, [b]);
-  let y = null != h && !_;
+    (0, T.A)(y.id, y.getAvatarURL(null, 80))
+  }, [y]);
+  let b = null != h && !_;
   return (i.useEffect(() => {
-    y && M.default.track(q.HAw.CANCELLATION_FLOW_DISCOUNT_OFFER_PROMPT_VIEWED, {
+    b && M.default.track(q.HAw.CANCELLATION_FLOW_DISCOUNT_OFFER_PROMPT_VIEWED, {
       location_stack: f,
       discount_id: null == h ? true : h.discount_id
     })
-  }, [y, f, h]), _) ? (0, r.jsxs)(r.Fragment, {
+  }, [b, f, h]), _) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(K.A, {
       premiumType: t,
       onClose: o
@@ -574,15 +574,15 @@ let eN = function(e) {
           children: a
         })]
       }), (0, r.jsx)(eC, {
-        currentUser: b,
+        currentUser: y,
         premiumType: t,
         onClose: o,
         isDowngrade: m
       })]
-    }), !y && (0, r.jsx)(p.jlY, {
+    }), !b && (0, r.jsx)(p.jlY, {
       "data-migration-pending": true,
       children: s
-    }), y && (0, r.jsx)(W.A, {
+    }), b && (0, r.jsx)(W.A, {
       churnUserDiscountOffer: h,
       onDiscountClaim: c,
       onContinue: u

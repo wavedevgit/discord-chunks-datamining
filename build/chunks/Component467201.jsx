@@ -23,17 +23,17 @@ var Chunk627968 = require("./627968.js"),
 class E extends Chunk64700.Component {
   renderReasons(e, t, n) {
     return 0 === e.length && 0 === t.length ? null : (0, r.jsx)("div", {
-      className: _.uW,
+      className: b.uW,
       children: (0, r.jsxs)("div", {
-        className: _.f5,
+        className: b.f5,
         children: [e.map(e => (0, r.jsx)("div", {
-          className: _.zA,
-          children: (0, r.jsx)(g.A, {
+          className: b.zA,
+          children: (0, r.jsx)(m.A, {
             reason: e,
             hidePersonalInformation: n
           })
         }, e.type)), t.map(e => (0, r.jsx)("div", {
-          className: _.zA,
+          className: b.zA,
           children: (0, r.jsx)(o.A, {
             reason: e
           })
@@ -46,7 +46,7 @@ class E extends Chunk64700.Component {
       storeListing: e
     } = this.props;
     return null != e.staffNotes ? {
-      type: m.A.Types.STAFF_NOTES,
+      type: A.A.Types.STAFF_NOTES,
       staffNotes: e.staffNotes
     } : null
   }
@@ -61,13 +61,13 @@ class E extends Chunk64700.Component {
     if (0 === e.length && 0 === t.length && null == n.staffNotes) return null;
     let s = this.getReviewToRender();
     return (0, r.jsxs)("div", {
-      className: a()(_.zr, l),
+      className: a()(b.zr, l),
       children: [(0, r.jsx)("div", {
-        className: _.wx,
-        children: b.intl.string(b.t.qABFpX)
-      }), this.renderReasons(e, t, i), null != s ? (0, r.jsx)(m.A, {
+        className: b.wx,
+        children: _.intl.string(_.t.qABFpX)
+      }), this.renderReasons(e, t, i), null != s ? (0, r.jsx)(A.A, {
         data: s,
-        className: _.NQ
+        className: b.NQ
       }) : null]
     })
   }
@@ -77,8 +77,8 @@ let O = Chunk311907.Ay.connectStores([Chunk67480.A, Chunk287809.default, Chunk32
     sku: t
   } = e;
   return {
-    socialReasons: (0, A.my)(t.id, f.A, d.default, c.A, p.A),
-    nonSocialReasons: (0, A.ZH)(t.id, f.A, h.A),
+    socialReasons: (0, f.my)(t.id, h.A, d.default, c.A, p.A),
+    nonSocialReasons: (0, f.ZH)(t.id, h.A, g.A),
     hidePersonalInformation: u.A.hidePersonalInformation
   }
 })(E)

@@ -18,12 +18,12 @@ function m(e, t) {
     m = (0, s.uM)(),
     p = (0, l.bG)([o.A], () => o.A.getProduct(e)),
     h = (0, d.i)(),
-    f = r.Ay.canUseCollectibles(h),
-    x = a.useRef(null),
-    b = a.useCallback(() => {
-      let a = null != p ? (0, c.Br)(p, f, false) : null,
-        l = null != p ? (0, c.c7)(p, f, false) : true;
-      i.default.track(u.HAw.COLLECTIBLES_TILE_IMPRESSION, {
+    x = i.Ay.canUseCollectibles(h),
+    g = a.useRef(null),
+    f = a.useCallback(() => {
+      let a = null != p ? (0, c.Br)(p, x, false) : null,
+        l = null != p ? (0, c.c7)(p, x, false) : true;
+      r.default.track(u.HAw.COLLECTIBLES_TILE_IMPRESSION, {
         collectibles_shop_session_id: null == m ? true : m.sessionId,
         sku_id: e,
         display_price: null == a ? true : a.amount,
@@ -36,15 +36,15 @@ function m(e, t) {
         type: n,
         category_position: null == m ? true : m.categoryPosition
       })
-    }, [null == m ? true : m.sessionId, null == m ? true : m.categoryPosition, null == m ? true : m.pageCategory, null == m ? true : m.pageSection, null == m ? true : m.tilePosition, f, t, p, e, n]),
-    g = a.useCallback(e => {
-      e ? null === x.current && (x.current = setTimeout(() => {
-        b(), x.current = null
-      }, 1e3)) : null !== x.current && (clearTimeout(x.current), x.current = null)
-    }, [b]);
+    }, [null == m ? true : m.sessionId, null == m ? true : m.categoryPosition, null == m ? true : m.pageCategory, null == m ? true : m.pageSection, null == m ? true : m.tilePosition, x, t, p, e, n]),
+    b = a.useCallback(e => {
+      e ? null === g.current && (g.current = setTimeout(() => {
+        f(), g.current = null
+      }, 1e3)) : null !== g.current && (clearTimeout(g.current), g.current = null)
+    }, [f]);
   return a.useEffect(() => () => {
-    null !== x.current && (clearTimeout(x.current), x.current = null)
+    null !== g.current && (clearTimeout(g.current), g.current = null)
   }, []), {
-    handleCardVisibilityChange: g
+    handleCardVisibilityChange: b
   }
 }

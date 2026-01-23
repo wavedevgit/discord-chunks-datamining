@@ -2,15 +2,15 @@
 /** chunk id: 318937, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   MH: () => f,
-  Nm: () => g,
-  Ol: () => m,
+  Nm: () => m,
+  Ol: () => _,
   RB: () => p,
-  Rl: () => b,
+  Rl: () => g,
   W9: () => d,
   ZW: () => c,
   bI: () => h,
   d4: () => u,
-  dk: () => o
+  dk: () => s
 });
 var Chunk158390 = require("./158390.js"),
   Chunk562465 = require("./562465.js"),
@@ -18,41 +18,41 @@ var Chunk158390 = require("./158390.js"),
   Chunk134753 = require("./134753.js"),
   Chunk652215 = require("./652215.js");
 
-function o(e, t, n, l, r) {
+function s(e, t, n, r, l) {
   i.h.dispatch({
     type: "SHARED_CANVAS_DRAW_LINE_POINT",
     channelId: e,
     userId: n,
     lineId: t,
-    streamerId: l,
-    point: r
+    streamerId: r,
+    point: l
   })
 }
 
-function c(e, t, n, l) {
-  return r.Bo.post({
-    url: s.Rsh.SHARED_CANVAS_LINES(e, n),
+function c(e, t, n, r) {
+  return l.Bo.post({
+    url: o.Rsh.SHARED_CANVAS_LINES(e, n),
     body: {
       line_id: t,
-      points: l
+      points: r
     },
     rejectWithError: false
   })
 }
 
-function u(e, t, n, l) {
+function u(e, t, n, r) {
   i.h.dispatch({
     type: "SHARED_CANVAS_UPDATE_LINE_POINTS",
     userId: t,
     lineId: e,
-    newPoints: l,
+    newPoints: r,
     streamerId: n
   })
 }
 
 function d(e, t, n) {
-  return r.Bo.post({
-    url: s.Rsh.SHARED_CANVAS_EMOJI_HOSES(e, t),
+  return l.Bo.post({
+    url: o.Rsh.SHARED_CANVAS_EMOJI_HOSES(e, t),
     body: {
       emoji_hose: n
     },
@@ -61,9 +61,9 @@ function d(e, t, n) {
 }
 
 function f(e, t, n) {
-  r.Bo.del({
-    url: s.Rsh.SHARED_CANVAS_EMOJI_HOSE(e, t, n),
-    backoff: new l.A,
+  l.Bo.del({
+    url: o.Rsh.SHARED_CANVAS_EMOJI_HOSE(e, t, n),
+    backoff: new r.A,
     rejectWithError: true
   })
 }
@@ -77,7 +77,7 @@ function p(e, t) {
   })
 }
 
-function b(e, t, n) {
+function g(e, t, n) {
   i.h.dispatch({
     type: "SHARED_CANVAS_UPDATE_EMOJI_HOSE",
     emojiHose: e,
@@ -86,7 +86,7 @@ function b(e, t, n) {
   })
 }
 
-function g(e, t) {
+function m(e, t) {
   i.h.dispatch({
     type: "SHARED_CANVAS_CLEAR_DRAWABLES",
     drawables: e,
@@ -94,7 +94,7 @@ function g(e, t) {
   })
 }
 
-function m(e) {
+function _(e) {
   i.h.dispatch({
     type: "SHARED_CANVAS_SET_DRAW_MODE",
     drawMode: e

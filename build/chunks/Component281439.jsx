@@ -65,11 +65,11 @@ let x = [Chunk652215.Dmq.PAST_DUE, Chunk652215.Dmq.PAUSED, Chunk652215.Dmq.BILLI
       premiumSubscription: q
     } = t, {
       initialStep: H
-    } = t, V = r.useRef(new i.OH), [B, K] = r.useState(null), Y = null == (n = (0, p.EL)(q)) ? true : n.planId, G = null != Y ? p.Ay.getPremiumType(Y) : null;
+    } = t, B = r.useRef(new i.OH), [V, K] = r.useState(null), Y = null == (n = (0, p.EL)(q)) ? true : n.planId, G = null != Y ? p.Ay.getPremiumType(Y) : null;
     s()(null != G, "Should not be cancelling Nitro without premiumType");
     let Q = G === L.PremiumTypes.TIER_0 || G === L.PremiumTypes.TIER_1 || G === L.PremiumTypes.TIER_2;
     null == H && (H = Q ? w.g.WHAT_YOU_LOSE : w.g.CONFIRM);
-    let [X, Z, $, z] = (0, h.U)(H, q, R), J = (0, f.H)(), tt = (0, O.f9)(), {
+    let [X, Z, $, z] = (0, h.U)(H, q, R), J = (0, _.H)(), tt = (0, O.f9)(), {
       churnUserDiscountOffer: te,
       isFetchingChurnDiscountOffer: tn
     } = (0, O.g5)(!tt || q.status === j.Dmq.CANCELED && X !== w.g.CONFIRM_DISCOUNT), ta = (0, D.tQ)(q, L.gD.PREMIUM_MONTH_TIER_2, te), [tr] = (0, S.Kq)({
@@ -81,21 +81,21 @@ let x = [Chunk652215.Dmq.PAST_DUE, Chunk652215.Dmq.PAUSED, Chunk652215.Dmq.BILLI
     }), ti = null !== tr ? p.Ay.getIntervalForInvoice(tr) : null, tl = (0, p.y8)(L.gD.PREMIUM_MONTH_TIER_2, false, false, {
       currency: q.currency,
       paymentSourceId: q.paymentSourceId
-    }), ts = (0, C.$g)(tl.amount, tl.currency), tu = r.useMemo(() => (0, _.A)(), []);
+    }), ts = (0, C.$g)(tl.amount, tl.currency), to = r.useMemo(() => (0, f.A)(), []);
     r.useEffect(() => {
       y.default.track(j.HAw.CANCELLATION_FLOW_STARTED, k({
         location_stack: R,
-        load_id: tu
+        load_id: to
       }, (0, N.j)(q)))
-    }, [R, q, tu]);
-    let [to, tc] = r.useState(null), td = r.useCallback(() => {
+    }, [R, q, to]);
+    let [tu, tc] = r.useState(null), td = r.useCallback(() => {
       switch (X) {
         case w.g.CONFIRM:
           return (0, a.jsx)(P.r, {});
         case w.g.CONFIRM_DISCOUNT:
-          return (0, a.jsx)(b.M, {});
+          return (0, a.jsx)(A.M, {});
         case w.g.DISCOUNT_APPLIED:
-          return (0, a.jsx)(A.V, {});
+          return (0, a.jsx)(b.V, {});
         case w.g.PREVIEW:
           return (0, a.jsx)(T.E, {});
         case w.g.PAUSE_SELECT:
@@ -109,7 +109,7 @@ let x = [Chunk652215.Dmq.PAST_DUE, Chunk652215.Dmq.PAUSED, Chunk652215.Dmq.BILLI
     }, [X]), tm = r.useCallback(async () => {
       if (y.default.track(j.HAw.CANCELLATION_FLOW_COMPLETED, k({
           location_stack: R,
-          load_id: tu
+          load_id: to
         }, (0, N.j)(q))), x.includes(q.status)) await (0, c.M2)(q.id, R, M);
       else {
         var t, e;
@@ -122,10 +122,10 @@ let x = [Chunk652215.Dmq.PAST_DUE, Chunk652215.Dmq.PAUSED, Chunk652215.Dmq.BILLI
           currency: q.currency
         }, (0, p.UC)(a, q.currency, q.paymentSourceId), R, M)
       }
-      E.Ay.fireSurveyAction(u.w.NITRO_UNSUBBED)
-    }, [q, R, M, tu]), tf = async () => {
+      E.Ay.fireSurveyAction(o.w.NITRO_UNSUBBED)
+    }, [q, R, M, to]), t_ = async () => {
       if (null == te) throw Error("Churn user discount offer is null");
-      q.status === j.Dmq.CANCELED ? await (0, c._D)(q, te) : await o.Bo.post({
+      q.status === j.Dmq.CANCELED ? await (0, c._D)(q, te) : await u.Bo.post({
         url: j.Rsh.USER_OFFER_REDEEM,
         body: {
           user_discount_offer_id: te.id
@@ -146,14 +146,14 @@ let x = [Chunk652215.Dmq.PAST_DUE, Chunk652215.Dmq.PAUSED, Chunk652215.Dmq.BILLI
               step_duration_ms: Date.now() - $,
               flow_duration_ms: Date.now() - z,
               location_stack: R,
-              load_id: tu
+              load_id: to
             }, (0, N.j)(q)))
           },
           transitionState: W,
           premiumSubscription: q,
           analyticsLocations: R,
           analyticsLocation: M,
-          confettiCanvas: B,
+          confettiCanvas: V,
           churnUserDiscountOffer: te,
           isFetchingChurnDiscountOffer: tt && tn,
           fullPrice: ts,
@@ -163,14 +163,14 @@ let x = [Chunk652215.Dmq.PAST_DUE, Chunk652215.Dmq.PAUSED, Chunk652215.Dmq.BILLI
           renewalInvoice: tr,
           renewalInvoiceDetails: ti,
           handleCancellation: tm,
-          applyOffer: tf,
-          pauseDuration: to,
+          applyOffer: t_,
+          pauseDuration: tu,
           setPauseDuration: tc
         },
         children: [(0, a.jsx)(i.Fk, {
           ref: K,
           className: U.L,
-          environment: V.current
+          environment: B.current
         }), td()]
       })
     })

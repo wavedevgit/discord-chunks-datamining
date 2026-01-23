@@ -4,7 +4,7 @@
 require.d(exports, {
   Ay: () => $,
   JU: () => L,
-  fe: () => I
+  fe: () => S
 });
 var r, Chunk607399 = require("./607399.js"),
   Chunk311907 = require("./311907.js"),
@@ -33,7 +33,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,12 +57,12 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = "message_requests",
+let S = "message_requests",
   T = false,
   C = false,
   N = true,
@@ -73,9 +73,9 @@ let I = "message_requests",
 
 function x(e) {
   if (null == e) return null;
-  if ((0, b.jq)(e)) {
+  if ((0, y.jq)(e)) {
     let t = m.A.getGuildId();
-    return null == t ? null : (0, b.Gr)(e, t)
+    return null == t ? null : (0, y.Gr)(e, t)
   }
   return e
 }
@@ -142,7 +142,7 @@ function F(e) {
     channelId: r,
     details: i
   };
-  return t === c.PE.VIEW_MOD_REPORT && (s = S(A({}, s), {
+  return t === c.PE.VIEW_MOD_REPORT && (s = I(v({}, s), {
     baseChannelId: n
   })), R[a] = s, true
 }
@@ -203,7 +203,7 @@ function K() {
     let n = R[t];
     if (n.type === c.PE.VIEW_THREAD || n.type === c.PE.VIEW_CHANNEL) {
       let r = f.A.getChannel(n.channelId);
-      null != r && _.A.can(y.xB.VIEW_CHANNEL, r) || (delete R[t], e = true)
+      null != r && _.A.can(b.xB.VIEW_CHANNEL, r) || (delete R[t], e = true)
     }
   }
   return e

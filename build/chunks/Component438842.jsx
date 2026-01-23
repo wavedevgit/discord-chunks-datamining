@@ -2,7 +2,7 @@
 /** chunk id: 438842, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -32,14 +32,14 @@ function g(e) {
   });
   if (null == a) return null;
   let E = !i,
-    b = (null == n ? true : n.level) === o._.HIGH,
-    y = (0, r.jsx)(c.Text, {
+    y = (null == n ? true : n.level) === o._.HIGH,
+    b = (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "interactive-text-active",
       children: t.name
     }),
     O = (0, r.jsx)(l.m, {
-      __unsupportedReactNodeAsText: y,
+      __unsupportedReactNodeAsText: b,
       position: "bottom",
       "aria-label": t.name,
       shouldShow: E,
@@ -49,7 +49,7 @@ function g(e) {
           className: _.T_,
           src: a,
           alt: t.name
-        }), b && (0, r.jsx)(u.Ay, {
+        }), y && (0, r.jsx)(u.Ay, {
           mask: u.hW.GAMEPLAY_HIGH_ACTIVITY_ICON,
           width: h + 2 * m,
           height: h + 2 * m,
@@ -94,7 +94,7 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     game: t,
     activityLevel: n
@@ -113,7 +113,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     gamesToDisplay: t,
     lastGameToDisplay: n,
@@ -156,7 +156,7 @@ function y(e) {
   }, [n, a, o]);
   return null == t || 0 === t.length ? null : 1 === t.length ? (0, r.jsx)("div", {
     className: _.kL,
-    children: (0, r.jsx)(b, {
+    children: (0, r.jsx)(y, {
       game: t[0],
       activityLevel: o[t[0].id]
     })

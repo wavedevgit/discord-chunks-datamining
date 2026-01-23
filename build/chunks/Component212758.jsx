@@ -1,7 +1,7 @@
 /** Chunk was on 39679 **/
 /** chunk id: 212758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => c
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,21 +13,21 @@ var Chunk627968 = require("./627968.js"),
   Chunk89300 = require("./89300.js"),
   Chunk117816 = require("./117816.js");
 
-function _(e) {
+function c(e) {
   let {
     headerText: t,
     descriptionText: n,
     infoRows: r,
-    onDismissAndStay: _,
+    onDismissAndStay: c,
     onDismissAndLeave: m,
-    leaveButtonText: f,
-    stayButtonText: g,
+    leaveButtonText: g,
+    stayButtonText: f,
     transitionState: x,
     impression: N
   } = e;
-  return (0, s.jsx)(l.ExpressiveModal, {
+  return (0, s.jsx)(o.ExpressiveModal, {
     transitionState: x,
-    onClose: () => (_(), Promise.resolve()),
+    onClose: () => (c(), Promise.resolve()),
     trackingProps: {
       impression: N
     },
@@ -38,19 +38,19 @@ function _(e) {
     title: t,
     subtitle: null != n ? n : true,
     actions: [{
-      text: g,
-      onClick: _,
+      text: f,
+      onClick: c,
       variant: "secondary"
     }, {
-      text: f,
+      text: g,
       onClick: m
     }],
     children: (0, s.jsx)("div", {
-      className: c.Cu,
+      className: _.Cu,
       children: r.map((e, t) => (0, s.jsxs)(i.Fragment, {
         children: [(0, s.jsxs)("div", {
-          className: a()(c.lj, e.className),
-          children: [e.icon, (0, s.jsx)(o.Text, {
+          className: a()(_.lj, e.className),
+          children: [e.icon, (0, s.jsx)(l.Text, {
             variant: "text-md/medium",
             children: e.text
           })]

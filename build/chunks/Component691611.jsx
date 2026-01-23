@@ -78,17 +78,17 @@ let N = Chunk64700.memo(function(e) {
     content: B,
     hasSpoilerEmbeds: H,
     hasBailedAst: F
-  } = (0, A.A)(N, {
+  } = (0, f.A)(N, {
     hideSimpleEmbedContent: P,
     allowList: G || V,
     allowHeading: G || V,
     allowLinks: true,
     previewLinkTarget: true
-  }), Y = (0, s.rm)(N.id), K = (0, p.Ay)(N), z = (0, o.bG)([O.A], () => N.hasFlag(I.pr7.HAS_THREAD) && O.A.getChannel(y.default.castMessageIdAsChannelId(N.id))), W = (0, c.$7)({
+  }), Y = (0, s.rm)(N.id), K = (0, p.Ay)(N), W = (0, o.bG)([O.A], () => N.hasFlag(I.pr7.HAS_THREAD) && O.A.getChannel(y.default.castMessageIdAsChannelId(N.id))), q = (0, c.$7)({
     guildId: w.guild_id,
     roleId: K.iconRoleId
-  }), q = (0, h.fF)(N), Q = (0, h.ZD)(N);
-  return (0, r.jsx)(f.A, C({
+  }), z = (0, g.fF)(N), Q = (0, g.ZD)(N);
+  return (0, r.jsx)(h.A, C({
     compact: false,
     className: a()(T, v.i, {
       [S.M1]: (0, d.ec)(N),
@@ -96,7 +96,7 @@ let N = Chunk64700.memo(function(e) {
     }),
     disableInteraction: U,
     childrenExecutedCommand: (0, E.A)(N, w, false),
-    childrenHeader: (0, b.A)({
+    childrenHeader: (0, _.A)({
       message: N,
       channel: w,
       author: K,
@@ -104,13 +104,13 @@ let N = Chunk64700.memo(function(e) {
       compact: false,
       animateAvatar: R,
       isGroupStart: true,
-      roleIcon: W,
+      roleIcon: q,
       hideTimestamp: true,
       hideGuildTag: false
     }),
-    childrenAccessories: e.hideAccessories ? true : (0, g.J)(e, H, F),
-    childrenMessageContent: (0, m.A)(e, B),
-    childrenSystemMessage: (0, _.A)((i = C({}, e), l = l = {
+    childrenAccessories: e.hideAccessories ? true : (0, m.J)(e, H, F),
+    childrenMessageContent: (0, A.A)(e, B),
+    childrenSystemMessage: (0, b.A)((i = C({}, e), l = l = {
       disableInteraction: U
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
       var n = Object.keys(e);
@@ -124,9 +124,9 @@ let N = Chunk64700.memo(function(e) {
     }), i)),
     onContextMenu: j,
     onClick: x,
-    hasThread: M && null != z && N.hasFlag(I.pr7.HAS_THREAD),
+    hasThread: M && null != W && N.hasFlag(I.pr7.HAS_THREAD),
     hasReply: false,
-    "aria-labelledby": q,
+    "aria-labelledby": z,
     "aria-describedby": Q,
     author: K
   }, Y, k))

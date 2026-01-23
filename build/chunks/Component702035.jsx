@@ -1,7 +1,7 @@
 /** Chunk was on 33957 **/
 /** chunk id: 702035, original params: e,n,l (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => b
+  default: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,11 +14,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk117733 = require("./117733.jsx"),
   Chunk71393 = require("./71393.js");
 let h = (0, Chunk456412.A)(Chunk117733.A),
-  b = function(e) {
+  f = function(e) {
     let {
       guildId: n
-    } = e, l = (0, r.bG)([f.A], () => f.A.getGuild(n), [n]), s = (0, r.bG)([d.A], () => d.A.hasLoadedExperiments), u = (0, o.d)(n);
-    return (a.useEffect(() => {
+    } = e, l = (0, a.bG)([m.A], () => m.A.getGuild(n), [n]), s = (0, a.bG)([o.A], () => o.A.hasLoadedExperiments), u = (0, d.d)(n);
+    return (r.useEffect(() => {
       if (s && !u) return void i.A.escapeToDefaultChannel(n)
     }, [n, s, u]), null != l && u) ? (0, t.jsx)(h, {
       guild: l

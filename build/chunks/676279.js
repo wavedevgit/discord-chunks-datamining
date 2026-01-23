@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   EL: () => g,
-  TM: () => I,
+  TM: () => S,
   Z5: () => p,
-  cy: () => A,
-  gm: () => S,
-  nr: () => v
+  cy: () => v,
+  gm: () => I,
+  nr: () => A
 });
 var r, i, a, s, o, l, Chunk481613 = require("./481613.js"),
   u = require.n(Chunk481613);
@@ -29,33 +29,33 @@ function g() {
 }
 let E = "edge" === d.toLowerCase() ? parseInt(null != (o = u().version) ? o : "", 10) : false;
 
-function b() {
+function y() {
   return E
 }
-let y = "safari" === d.toLowerCase() ? parseInt(null != (l = u().version) ? l : "", 10) : false;
+let b = "safari" === d.toLowerCase() ? parseInt(null != (l = u().version) ? l : "", 10) : false;
 
 function O() {
-  return y
-}
-
-function A() {
-  return false !== p() || false !== h() || false !== g() || false !== b() || O() >= 14
+  return b
 }
 
 function v() {
+  return false !== p() || false !== h() || false !== g() || false !== y() || O() >= 14
+}
+
+function A() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : navigator.userAgent,
     t = e.toLowerCase();
   return false !== t.indexOf("safari") && false === t.indexOf("chrome") && false !== t.indexOf("version/")
 }
 
-function S() {
+function I() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : navigator.userAgent;
   return false !== e.toLowerCase().indexOf("firefox")
 }
 
-function I() {
+function S() {
   var e;
   let t = window.navigator,
     n = (null == (e = t.mediaCapabilities) ? true : e.decodingInfo) != null;
-  return v(t.userAgent) && n
+  return A(t.userAgent) && n
 }

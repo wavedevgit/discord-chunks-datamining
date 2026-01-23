@@ -2,8 +2,8 @@
 /** chunk id: 910607, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S,
-  k: () => v
+  A: () => I,
+  k: () => A
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -26,28 +26,28 @@ var Chunk311907 = require("./311907.js"),
   Chunk996988 = require("./996988.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk380297 = require("./380297.js");
-let v = 3;
+let A = 3;
 
-function S(e) {
+function I(e) {
   let {
     user: t,
     guild: n,
-    channel: S,
-    onAction: I,
+    channel: I,
+    onAction: S,
     onClose: T
   } = e, {
     themeType: C
-  } = (0, g.E)(), N = (0, h.A)(S), R = (0, u.Ay)(S), {
+  } = (0, g.E)(), N = (0, h.A)(I), R = (0, u.Ay)(I), {
     canViewChannel: w,
     canConnect: P
   } = (0, i.cf)([_.A], () => ({
-    canViewChannel: _.A.can(b.xBc.VIEW_CHANNEL, S),
-    canConnect: S.isPrivate() || _.A.can(b.xBc.CONNECT, S)
+    canViewChannel: _.A.can(y.xBc.VIEW_CHANNEL, I),
+    canConnect: I.isPrivate() || _.A.can(y.xBc.CONNECT, I)
   }));
   if (!w) return null;
   let D = () => {
       let e = e => {
-        e.stopPropagation(), (0, p.u)(n.id), null == I || I({
+        e.stopPropagation(), (0, p.u)(n.id), null == S || S({
           action: "OPEN_VOICE_GUILD"
         }), null == T || T()
       };
@@ -58,7 +58,7 @@ function S(e) {
         children: (0, r.jsx)(d.A, {
           guild: n,
           size: d.A.Sizes.SMOL,
-          className: A.$f,
+          className: v.$f,
           onClick: e
         })
       })
@@ -73,13 +73,13 @@ function S(e) {
         })
       });
       let e = e => {
-        e.stopPropagation(), c.default.selectVoiceChannel(S.id), (0, f.iN)(S.id), null == I || I({
+        e.stopPropagation(), c.default.selectVoiceChannel(I.id), (0, f.iN)(I.id), null == S || S({
           action: "OPEN_VOICE_CHANNEL"
         }), null == T || T()
       };
       return (0, r.jsx)(l.DUT, {
         onClick: e,
-        className: A.sd,
+        className: v.sd,
         children: (0, r.jsx)(l.Text, {
           variant: "text-xs/normal",
           color: "text-subtle",
@@ -90,33 +90,33 @@ function S(e) {
         })
       })
     },
-    L = C !== y.d.MODAL && C !== y.d.MODAL_V2 && C !== y.d.SIDEBAR;
+    L = C !== b.d.MODAL && C !== b.d.MODAL_V2 && C !== b.d.SIDEBAR;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m.A, {
-      className: A.Ph
+      className: v.Ph
     }), (0, r.jsxs)("div", {
-      className: A.gx,
+      className: v.gx,
       children: [D(), (0, r.jsx)(l._BQ, {
         size: "xxs",
         color: l.LU0.colors.TEXT_SUBTLE
       }), (0, r.jsxs)("div", {
-        className: A.FH,
+        className: v.FH,
         children: [(0, r.jsx)(E.A, {
-          channel: S,
+          channel: I,
           size: "xxs",
           color: l.LU0.colors.TEXT_SUBTLE,
-          className: A.Ow
+          className: v.Ow
         }), x()]
       }), (0, r.jsx)(s.A, {
         users: N,
         guildId: n.id,
-        channelId: S.id,
-        maxUsers: v,
+        channelId: I.id,
+        maxUsers: A,
         size: l._3J.SIZE_16,
         overflowCountColor: "text-subtle",
-        overflowCountClassName: A.NS,
+        overflowCountClassName: v.NS,
         onClickOverflow: e => {
-          e.stopPropagation(), null == I || I({
+          e.stopPropagation(), null == S || S({
             action: "PRESS_VOICE_CHANNEL_AVATARS"
           })
         },

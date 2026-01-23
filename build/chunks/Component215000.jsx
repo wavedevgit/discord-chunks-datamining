@@ -22,7 +22,7 @@ let c = function() {
       children: "Click the button below to clear your Minor Reward Capping History."
     }), (0, a.jsx)(l.Button, {
       onClick: () => {
-        (0, r.Ov)(), (0, i.pX)(s.BVt.QUEST_HOME_V2)
+        (0, i.Ov)(), (0, r.pX)(s.BVt.QUEST_HOME_V2)
       },
       text: "Clear History"
     }), (0, a.jsx)(l.Text, {

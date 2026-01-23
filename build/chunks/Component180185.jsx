@@ -1,5 +1,5 @@
 /** Chunk was on 88615 **/
-/** chunk id: 180185, original params: e,t,l (module,exports,require) **/
+/** chunk id: 180185, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
 }), require("./228524.js");
@@ -15,7 +15,7 @@ var Chunk934551 = require("./934551.js"),
 function d(e) {
   let {
     notificationConfig: t,
-    markAsDismissed: l
+    markAsDismissed: n
   } = e;
   return (0, r.jsxs)("div", {
     className: u.kL,
@@ -26,12 +26,12 @@ function d(e) {
         size: "md",
         "aria-label": a.intl.string(a.t.cpT0Cq),
         onClick: () => {
-          l(o.i.USER_DISMISS)
+          n(s.i.USER_DISMISS)
         },
-        icon: n.XLargeIcon
+        icon: l.XLargeIcon
       })
-    }), (0, r.jsx)(n.CircleErrorIcon, {
-      color: s.A.colors.TEXT_FEEDBACK_WARNING,
+    }), (0, r.jsx)(l.CircleErrorIcon, {
+      color: o.A.colors.TEXT_FEEDBACK_WARNING,
       className: u.Kk
     }), (0, r.jsx)(i.EYj, {
       variant: "text-md/semibold",

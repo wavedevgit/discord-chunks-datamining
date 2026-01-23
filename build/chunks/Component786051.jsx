@@ -16,42 +16,42 @@ let d = function(e) {
     message: t,
     subtitle: n,
     countdown: d,
-    buttonText: f,
-    buttonIcon: p,
-    buttonSubmitting: h,
-    onButtonClick: b,
-    imageSrc: g,
-    animationSrc: m,
+    buttonText: p,
+    buttonIcon: h,
+    buttonSubmitting: f,
+    onButtonClick: g,
+    imageSrc: m,
+    animationSrc: b,
     secondaryButtonText: A,
     onSecondaryButtonClick: y,
-    children: O,
-    useReducedMotion: j = false,
-    buttonVariant: v
-  } = e, x = (0, a.bG)([c.Ay], () => c.Ay.getState().isMembersOpen);
-  if (i.Fr && x) return null;
+    children: _,
+    useReducedMotion: O = false,
+    buttonVariant: j
+  } = e, v = (0, s.bG)([c.Ay], () => c.Ay.getState().isMembersOpen);
+  if (i.Fr && v) return null;
   if (null == t) return (0, r.jsx)(r.Fragment, {
-    children: l.Children.only(O)
+    children: l.Children.only(_)
   });
-  let E = null;
-  return null != g ? E = (0, r.jsx)("img", {
+  let x = null;
+  return null != m ? x = (0, r.jsx)("img", {
     alt: "",
-    src: g,
+    src: m,
     className: u.Sl
-  }) : null != m && (E = (0, r.jsx)(s.akl, {
-    importData: m,
-    shouldAnimate: !j,
+  }) : null != b && (x = (0, r.jsx)(a.akl, {
+    importData: b,
+    shouldAnimate: !O,
     className: u.lY
   })), (0, r.jsxs)("div", {
     className: u.iE,
     children: [(0, r.jsxs)("div", {
       className: u.Qs,
-      children: [E, (0, r.jsxs)("div", {
+      children: [x, (0, r.jsxs)("div", {
         className: u.Qq,
-        children: [(0, r.jsx)(s.Heading, {
+        children: [(0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           className: u.DD,
           children: t
-        }), null != n && (0, r.jsx)(s.Text, {
+        }), null != n && (0, r.jsx)(a.Text, {
           color: "text-muted",
           variant: "text-xs/normal",
           children: n
@@ -61,20 +61,20 @@ let d = function(e) {
       className: u.UD,
       children: [null != A && (0, r.jsx)("div", {
         className: u.x6,
-        children: (0, r.jsx)(s.QWc, {
+        children: (0, r.jsx)(a.QWc, {
           textVariant: "text-sm/semibold",
           text: A,
           onClick: y
         })
-      }), null != f && (0, r.jsx)("div", {
+      }), null != p && (0, r.jsx)("div", {
         className: u.x6,
-        children: (0, r.jsx)(s.Button, {
-          text: f,
+        children: (0, r.jsx)(a.Button, {
+          text: p,
           size: "sm",
-          variant: null != v ? v : "secondary",
-          onClick: b,
-          loading: h,
-          icon: p
+          variant: null != j ? j : "secondary",
+          onClick: g,
+          loading: f,
+          icon: h
         })
       })]
     }), null != d && (0, r.jsx)(o.A, {

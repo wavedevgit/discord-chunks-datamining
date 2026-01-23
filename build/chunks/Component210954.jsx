@@ -32,11 +32,11 @@ var Chunk503698 = require("./503698.js"),
 function T(e) {
   let {
     isLoading: t
-  } = e, n = (0, s.bG)([E.A], () => E.A.getConnectedFrame()), i = (0, s.bG)([E.A], () => E.A.getFrameLayoutMode()), u = (0, f.h)(null == n ? true : n.applicationId), d = (0, s.bG)([E.A], () => null != u && E.A.isProxyTicketRefreshing(u.id), [u]), T = (0, s.bG)([p.A], () => p.A.getWindowOpen(O.MLl.ACTIVITY_POPOUT)), C = (0, s.bG)([m.A], () => m.A.isFrameHidden()), N = i === y.y.PIP && !C && !T, R = N && null != m.A.pipVideoWindow && null != m.A.pipFrameWindow;
+  } = e, n = (0, s.bG)([E.A], () => E.A.getConnectedFrame()), i = (0, s.bG)([E.A], () => E.A.getFrameLayoutMode()), u = (0, f.h)(null == n ? true : n.applicationId), d = (0, s.bG)([E.A], () => null != u && E.A.isProxyTicketRefreshing(u.id), [u]), T = (0, s.bG)([p.A], () => p.A.getWindowOpen(O.MLl.ACTIVITY_POPOUT)), C = (0, s.bG)([m.A], () => m.A.isFrameHidden()), N = i === b.y.PIP && !C && !T, R = N && null != m.A.pipVideoWindow && null != m.A.pipFrameWindow;
   if (null == n || null == u || T) return null;
   let w = {
     instance_id: "example-cl-instance",
-    platform: A.vu.DESKTOP
+    platform: v.vu.DESKTOP
   };
 
   function P(e) {
@@ -50,8 +50,8 @@ function T(e) {
         onMouseMove: t,
         onMouseDown: t,
         onMouseLeave: i,
-        className: v.OB
-      }), (0, r.jsx)(b.v, {
+        className: A.OB
+      }), (0, r.jsx)(y.v, {
         idle: a,
         onMouseMove: t,
         onMouseDown: t,
@@ -59,7 +59,7 @@ function T(e) {
         onFocus: () => {
           g.A.updateFrameLayoutMode({
             applicationId: n.applicationId,
-            layoutMode: y.y.FOCUSED
+            layoutMode: b.y.FOCUSED
           })
         },
         applicationId: n.applicationId
@@ -75,13 +75,13 @@ function T(e) {
         onForceIdle: f
       } = e;
       return (0, r.jsxs)(_.A, {
-        className: a()(v.zr, {
-          [v.NW]: N,
-          [I.a8]: N,
-          [S.N7]: i,
-          [v.p0]: N,
-          [v.R]: C,
-          [v.Gq]: R
+        className: a()(A.zr, {
+          [A.NW]: N,
+          [S.a8]: N,
+          [I.N7]: i,
+          [A.p0]: N,
+          [A.R]: C,
+          [A.Gq]: R
         }),
         noBorder: !N,
         children: [(0, r.jsx)("div", {
@@ -92,17 +92,17 @@ function T(e) {
             idle: i
           })
         }), t || d ? (0, r.jsx)(o.y$y, {
-          className: a()(v.pU, {
-            [v.p0]: N
+          className: a()(A.pU, {
+            [A.p0]: N
           })
         }) : (0, r.jsx)(c.o, {
           allowPopups: (0, l.b)(u),
           referrerPolicy: "origin",
           url: n.url,
           queryParams: w,
-          className: a()(v.pU, {
-            [v.p0]: N,
-            [v.v8]: N
+          className: a()(A.pU, {
+            [A.p0]: N,
+            [A.v8]: N
           }),
           shouldRefocus: !N
         })]

@@ -64,23 +64,23 @@ let g = Chunk837921.Ay.getEnableHardwareAcceleration() ? Chunk397927.JsQ : Chunk
       avatarPlaceholderSrc: p,
       className: h
     } = e, E = (0, l.Te)(u), {
-      avatarDecorationSrc: b,
-      eventHandlers: y,
+      avatarDecorationSrc: y,
+      eventHandlers: b,
       avatarPlaceholderSrc: O
     } = (0, c.A)({
       user: n,
       avatarDecorationOverride: (null == t ? true : t.type) === s.R.AVATAR_DECORATION ? t : true,
       size: E,
       onlyAnimateOnHoverOrFocus: !i
-    }), A = d.intl.formatToPlainString(d.t.Do2lxE, {
+    }), v = d.intl.formatToPlainString(d.t.Do2lxE, {
       a11y_text: t.label
     });
-    return (0, r.jsx)(g, m(_({}, y), {
-      avatarDecoration: b,
+    return (0, r.jsx)(g, m(_({}, b), {
+      avatarDecoration: y,
       src: i ? null == n ? true : n.getAvatarURL(true, 152, true) : null != p ? p : O,
       imageClassName: i ? f.WG : true,
       className: a()(h, f.my),
       size: u,
-      "aria-label": A
+      "aria-label": v
     }))
   }

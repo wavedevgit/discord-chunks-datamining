@@ -26,7 +26,7 @@ var Chunk835245 = require("./835245.js"),
   Chunk565783 = require("./565783.js"),
   Chunk652215 = require("./652215.js");
 
-function A(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,20 +35,20 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
-let S = 27,
-  I = 15 * Chunk927813.A.Millis.MINUTE,
+let I = 27,
+  S = 15 * Chunk927813.A.Millis.MINUTE,
   T = Chunk927813.A.Millis.SECOND,
   C = "LAST_CLIENT_HEARTBEAT_SESSION",
   N = "user",
@@ -66,7 +66,7 @@ let S = 27,
 
 function U() {
   if (null != w) return;
-  let e = 0 === x ? 0 : I - (performance.now() - x);
+  let e = 0 === x ? 0 : S - (performance.now() - x);
   m.A.addBreadcrumb({
     message: "Received Last Heartbeat Event Timestamp. Time Until Next Heartbeat: ".concat(e / 1e3, " seconds. Scheduling Heartbeat")
   }), w = {
@@ -76,7 +76,7 @@ function U() {
         type: "interval",
         id: setInterval(() => {
           B()
-        }, I)
+        }, S)
       }
     }, e)
   }
@@ -127,17 +127,17 @@ async function B() {
       initialized: t.createdAtTimestamp
     }
   });
-  let r = v({
+  let r = A({
     client_heartbeat_initialization_timestamp: t.createdAtTimestamp,
-    client_heartbeat_version: S
+    client_heartbeat_version: I
   }, (0, g.Q)(), F());
   _.default.track(O.HAw.CLIENT_HEARTBEAT, r), x = performance.now(), (0, l.p)()
 }
 
 function H() {
-  if (!(null != k && (0, y.$)()) || performance.now() - x <= I) return;
+  if (!(null != k && (0, b.$)()) || performance.now() - x <= S) return;
   let e = {
-    client_heartbeat_version: S
+    client_heartbeat_version: I
   };
   _.default.track(O.HAw.CLIENT_HEARTBEAT_SKIPPED, e)
 }
@@ -148,7 +148,7 @@ function W() {
   let e = [];
   return null != k && (M && e.push("foregrounded"), j === O.S7L.RTC_CONNECTED && e.push("rtc_connected")), {
     active: e.length > 0,
-    ver: S,
+    ver: I,
     reasons: e
   }
 }
@@ -165,7 +165,7 @@ function q() {
   null == P && (P = {
     id: setInterval(() => {
       H()
-    }, I),
+    }, S),
     type: "interval"
   })
 }
@@ -180,7 +180,7 @@ function X(e) {
 }
 
 function Z(e) {
-  return null == e ? null : e.version !== b.Ir ? (R.warn("Throwing away client session with invalid version: ".concat(e.version, ", expected ").concat(b.Ir)), null) : e
+  return null == e ? null : e.version !== y.Ir ? (R.warn("Throwing away client session with invalid version: ".concat(e.version, ", expected ").concat(y.Ir)), null) : e
 }
 
 function Q() {
@@ -247,12 +247,12 @@ async function es() {
   }
   return (() => {
     let e = Date.now();
-    if (K() ? ((null == n || (0, b.aE)(n)) && (n = {
+    if (K() ? ((null == n || (0, y.aE)(n)) && (n = {
         uuid: (0, r.A)(),
         createdAtTimestamp: e,
         lastUsedTimestamp: e,
-        version: b.Ir
-      }, D = 0), n.lastUsedTimestamp = e, X(n)) : null != n && (0, b.aE)(n) && (n = null), L = {
+        version: y.Ir
+      }, D = 0), n.lastUsedTimestamp = e, X(n)) : null != n && (0, y.aE)(n) && (n = null), L = {
         state: "loaded",
         session: n
       }, null != n && a !== n.uuid && t) {
@@ -265,5 +265,5 @@ async function es() {
 
 function eo() {
   let e = "uninitialized" === L.state ? Z(s.w.get(C)) : L.session;
-  return null == e || (0, b.aE)(e) ? null : e
+  return null == e || (0, y.aE)(e) ? null : e
 }

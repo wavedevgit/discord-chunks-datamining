@@ -1,5 +1,5 @@
 /** Chunk was on 37548 **/
-/** chunk id: 856103, original params: e,t,n (module,exports,require) **/
+/** chunk id: 856103, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
   default: () => h
 });
@@ -17,49 +17,49 @@ var Chunk627968 = require("./627968.js"),
   Chunk739985 = require("./739985.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk400783 = require("./400783.js");
-let h = function(e) {
+let h = function(t) {
   let {
-    guildId: t,
-    transitionState: n,
+    guildId: n,
+    transitionState: e,
     onClose: h
-  } = e, m = (0, r.bG)([g.A], () => g.A.getRequest(t), [t]), A = (0, r.bG)([u.A], () => u.A.getGuild(t), [t]), k = (0, r.bG)([o.default], () => {
-    var e;
-    return null == (e = o.default.getCurrentUser()) ? true : e.id
-  }), x = (0, r.bG)([d.Ay], () => null != k ? d.Ay.getMember(t, k) : null, [k, t]), j = i.useCallback(() => {
-    h(), null == x && (0, f.A)()
-  }, [x, h]), C = i.useCallback(async () => {
-    if (null == x ? true : x.isPending) {
+  } = t, b = (0, o.bG)([p.A], () => p.A.getRequest(n), [n]), f = (0, o.bG)([u.A], () => u.A.getGuild(n), [n]), x = (0, o.bG)([d.default], () => {
+    var t;
+    return null == (t = d.default.getCurrentUser()) ? true : t.id
+  }), A = (0, o.bG)([s.Ay], () => null != x ? s.Ay.getMember(n, x) : null, [x, n]), j = l.useCallback(() => {
+    h(), null == A && (0, m.A)()
+  }, [A, h]), k = l.useCallback(async () => {
+    if (null == A ? true : A.isPending) {
       try {
-        await c.A.removeGuildJoinRequest(t)
-      } catch (e) {
-        throw e
+        await c.A.removeGuildJoinRequest(n)
+      } catch (t) {
+        throw t
       }
-      h(), (0, b.Ze)(t)
-    } else c.A.resetGuildJoinRequest(t)
-  }, [t, null == x ? true : x.isPending, h]), G = i.useMemo(() => [{
+      h(), (0, g.Ze)(n)
+    } else c.A.resetGuildJoinRequest(n)
+  }, [n, null == A ? true : A.isPending, h]), C = l.useMemo(() => [{
     text: v.intl.string(v.t.I1LYVk),
     variant: "secondary",
-    onClick: C
+    onClick: k
   }, {
     text: v.intl.string(v.t.BddRzS),
     variant: "critical-primary",
     onClick: j
-  }], [C, j]);
-  return (0, l.jsx)(a.Modal, {
-    transitionState: n,
+  }], [k, j]);
+  return (0, i.jsx)(a.Modal, {
+    transitionState: e,
     onClose: h,
-    title: (null == A ? true : A.name) != null ? v.intl.formatToPlainString(v.t["P+/gzA"], {
-      guildName: A.name
+    title: (null == f ? true : f.name) != null ? v.intl.formatToPlainString(v.t["P+/gzA"], {
+      guildName: f.name
     }) : v.intl.string(v.t.gBPcuP),
-    actions: G,
-    children: (null == m ? true : m.rejectionReason) != null && (null == m ? true : m.rejectionReason) !== "" ? (0, l.jsxs)(s.Text, {
+    actions: C,
+    children: (null == b ? true : b.rejectionReason) != null && (null == b ? true : b.rejectionReason) !== "" ? (0, i.jsxs)(r.Text, {
       variant: "text-md/medium",
       color: "text-default",
-      children: [(0, l.jsx)("span", {
-        className: p.Wj,
+      children: [(0, i.jsx)("span", {
+        className: _.Wj,
         children: v.intl.string(v.t.cf1psW)
-      }), (0, l.jsx)("span", {
-        children: null == m ? true : m.rejectionReason
+      }), (0, i.jsx)("span", {
+        children: null == b ? true : b.rejectionReason
       })]
     }) : null
   })

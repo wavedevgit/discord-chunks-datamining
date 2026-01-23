@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => O,
-  j: () => y
+  j: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -75,7 +75,7 @@ function E(e, t) {
   return i
 }
 
-function b(e) {
+function y(e) {
   let {
     title: t,
     body: n
@@ -97,7 +97,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   var t;
   let {
     title: n,
@@ -105,27 +105,27 @@ function y(e) {
     graphic: p,
     size: h = "md",
     actions: E,
-    gradientColor: y,
+    gradientColor: b,
     onRequestClose: O,
-    position: A,
-    caretConfig: v,
-    scrollBehavior: S,
-    showCloseButton: I = true,
+    position: v,
+    caretConfig: A,
+    scrollBehavior: I,
+    showCloseButton: S = true,
     isCaretHoverable: T = false,
     shouldTrapFocus: C = false,
     returnRef: N,
     onNudgeChange: R
-  } = e, w = g(e, ["title", "body", "graphic", "size", "actions", "gradientColor", "onRequestClose", "position", "caretConfig", "scrollBehavior", "showCloseButton", "isCaretHoverable", "shouldTrapFocus", "returnRef", "onNudgeChange"]), [P, D] = i.useState(null != A ? A : "top");
+  } = e, w = g(e, ["title", "body", "graphic", "size", "actions", "gradientColor", "onRequestClose", "position", "caretConfig", "scrollBehavior", "showCloseButton", "isCaretHoverable", "shouldTrapFocus", "returnRef", "onNudgeChange"]), [P, D] = i.useState(null != v ? v : "top");
   i.useEffect(() => {
-    null != A && D(A)
-  }, [A]);
+    null != v && D(v)
+  }, [v]);
   let x = i.useMemo(() => {
       var e;
       return {
-        align: null != (e = null == v ? true : v.align) ? e : "center",
-        customOffset: null == v ? true : v.customOffset
+        align: null != (e = null == A ? true : A.align) ? e : "center",
+        customOffset: null == A ? true : A.customOffset
       }
-    }, [v]),
+    }, [A]),
     L = i.useCallback(() => {
       null == O || O()
     }, [O]),
@@ -143,10 +143,10 @@ function y(e) {
       position: P,
       caretConfig: x,
       onRequestClose: L,
-      gradientColor: y,
+      gradientColor: b,
       onPositionChange: M,
       onNudgeChange: R,
-      scrollBehavior: S,
+      scrollBehavior: I,
       modal: C,
       returnRef: N,
       gradientOffsetBottom: 0,
@@ -160,9 +160,9 @@ function y(e) {
   return (0, r.jsx)(o.x, m(_({}, U), {
     children: (0, r.jsxs)("div", {
       "data-mana-component": "popover",
-      children: [I && (0, r.jsx)(u.q, {
+      children: [S && (0, r.jsx)(u.q, {
         onClick: j,
-        variant: null != y ? "color-mix" : true
+        variant: null != b ? "color-mix" : true
       }), null != p && (0, r.jsx)("div", {
         className: s()(f.graphic, {
           [f["graphic--".concat(h)]]: null != h
@@ -170,7 +170,7 @@ function y(e) {
         children: (0, r.jsx)(d.vYh, m(_({}, p), {
           aspectRatio: null != (t = p.aspectRatio) ? t : "sm" === h ? "2/1" : "16/9"
         }))
-      }), (0, r.jsx)(b, {
+      }), (0, r.jsx)(y, {
         title: n,
         body: a
       }), null != E && E.length > 0 ? (0, r.jsx)(l.Z, {
@@ -182,4 +182,4 @@ function y(e) {
     })
   }))
 }
-let O = y
+let O = b

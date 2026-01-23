@@ -26,7 +26,7 @@ let u = e => {
   let g = r.useCallback(() => {
       m(false)
     }, []),
-    f = r.useCallback(() => {
+    b = r.useCallback(() => {
       m(true)
     }, []);
   return (0, l.jsx)(i.ksK, {
@@ -38,7 +38,7 @@ let u = e => {
     placeholder: s.intl.string(s.t.U2JFHZ),
     name: "emoji_name",
     onBlur: g,
-    onFocus: f,
+    onFocus: b,
     label: u,
     clearable: true,
     required: true

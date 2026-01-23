@@ -2,7 +2,7 @@
 /** chunk id: 654288, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => I
+  A: () => S
 }), require("./747238.js"), require("./812715.js"), require("./866193.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,26 +24,26 @@ var Chunk627968 = require("./627968.js"),
   Chunk18282 = require("./18282.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let v = (e, t, n) => {
-    let r = A.t.LHF6D9,
+let A = (e, t, n) => {
+    let r = v.t.LHF6D9,
       i = u.Ay.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n),
       a = e.extra.media_title;
-    return A.intl.formatToMarkdownString(r, {
+    return v.intl.formatToMarkdownString(r, {
       mediaTitle: a,
       userName: i,
       episodeDescription: e.extra.media_subtitle
     }).replaceAll("*", "")
   },
-  S = (e, t) => A.intl.formatToPlainString(A.t.kCbfbN, {
+  I = (e, t) => v.intl.formatToPlainString(v.t.kCbfbN, {
     username: t.username,
     activity: e.extra.media_title
   }),
-  I = e => {
+  S = e => {
     let {
       channel: t,
       entry: n,
       onReaction: u,
-      onVoiceChannelPreview: I
+      onVoiceChannelPreview: S
     } = e, T = (0, a.bG)([l.default], () => l.default.getUser(n.author_id)), {
       largeImage: C
     } = (0, f.nO)({
@@ -56,7 +56,7 @@ let v = (e, t, n) => {
         entry: n,
         mediaImageSrc: null == C ? true : C.src,
         avatarSrc: T.getAvatarURL(null == t ? true : t.guild_id, 128),
-        description: v(n, t, T),
+        description: A(n, t, T),
         timestamp: (0, p.As)(n, w),
         episodeDescription: D,
         colors: [N, R],
@@ -70,17 +70,17 @@ let v = (e, t, n) => {
         trusted: false
       })
     };
-    return null == T ? null : (0, r.jsxs)(b.YN, {
-      children: [(0, r.jsx)(b.BC, {
+    return null == T ? null : (0, r.jsxs)(y.YN, {
+      children: [(0, r.jsx)(y.BC, {
         channel: t,
         entry: n,
-        userDescription: (0, p.JM)(n) ? A.t["LH+Z3y"] : A.t.YuKgml,
+        userDescription: (0, p.JM)(n) ? v.t["LH+Z3y"] : v.t.YuKgml,
         title: n.extra.media_title,
         subtitle: n.extra.media_subtitle,
-        headerIcons: (0, r.jsx)(y.A, {
+        headerIcons: (0, r.jsx)(b.A, {
           onClick: P,
           Icon: s.kwD,
-          "aria-label": A.intl.string(A.t.jdJYXw)
+          "aria-label": v.intl.string(v.t.jdJYXw)
         }),
         badges: (0, r.jsx)(E.mG, {
           location: E.N5.POPOUT,
@@ -90,14 +90,14 @@ let v = (e, t, n) => {
         }),
         onClickTitle: L,
         onClickThumbnail: L
-      }), (0, r.jsx)(b.Eh, {
-        children: (0, r.jsx)(b.fD, {
+      }), (0, r.jsx)(y.Eh, {
+        children: (0, r.jsx)(y.fD, {
           onReaction: u,
-          onVoiceChannelPreview: I,
+          onVoiceChannelPreview: S,
           user: T,
           channel: t,
           generateReactionImage: x,
-          reactionImageAltText: S(n, T),
+          reactionImageAltText: I(n, T),
           entry: n
         })
       })]

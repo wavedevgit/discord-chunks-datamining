@@ -47,15 +47,15 @@ let d = function(e) {
     onChange: d,
     title: u
   } = e, m = l.useRef(null);
-  return (0, a.jsx)(r.D0$, {
+  return (0, a.jsx)(i.D0$, {
     label: u,
-    children: (0, a.jsx)(r.YNO, {
+    children: (0, a.jsx)(i.YNO, {
       targetElementRef: m,
-      renderPopout: e => (0, a.jsx)(r.VNw, c(o({}, e), {
+      renderPopout: e => (0, a.jsx)(i.VNw, c(o({}, e), {
         value: n,
-        onChange: e => d(t, (0, i.Hl)(e))
+        onChange: e => d(t, (0, r.Hl)(e))
       })),
-      children: e => (0, a.jsx)(r.DUT, c(o({}, e), {
+      children: e => (0, a.jsx)(i.DUT, c(o({}, e), {
         innerRef: m,
         tag: "span",
         "aria-label": "Select a color",
@@ -63,7 +63,7 @@ let d = function(e) {
         style: {
           backgroundColor: n
         },
-        children: (0, a.jsx)(r.dDg, {
+        children: (0, a.jsx)(i.dDg, {
           size: "xs",
           color: "currentColor",
           className: s.WY

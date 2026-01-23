@@ -27,20 +27,20 @@ function E(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let b = Date.now(),
-  y = false,
+let y = Date.now(),
+  b = false,
   O = false,
-  A = false,
   v = false,
-  S = false;
+  A = false,
+  I = false;
 
-function I() {
-  return A || v || (0, _.isAndroid)() && S
+function S() {
+  return v || A || (0, _.isAndroid)() && I
 }
 
 function T() {
   let e = f.cU.getSetting();
-  0 === e || null != r || Date.now() - b > Math.min(e * p.A.Millis.SECOND, m.sdF) || I() ? O || l.h.dispatch({
+  0 === e || null != r || Date.now() - y > Math.min(e * p.A.Millis.SECOND, m.sdF) || S() ? O || l.h.dispatch({
     type: "AFK",
     afk: true
   }) : O && l.h.dispatch({
@@ -50,11 +50,11 @@ function T() {
 }
 
 function C() {
-  Date.now() - b > m.sdF || I() ? y || l.h.dispatch({
+  Date.now() - y > m.sdF || S() ? b || l.h.dispatch({
     type: "IDLE",
     idle: true,
-    idleSince: b
-  }) : y && l.h.dispatch({
+    idleSince: y
+  }) : b && l.h.dispatch({
     type: "IDLE",
     idle: false
   })
@@ -71,7 +71,7 @@ function R() {
         location: "checkNativeIdle"
       }).system_wide_input) {
       let t = Date.now() - e;
-      (null == r || t > r) && (b = Math.max(t, b), r = null)
+      (null == r || t > r) && (y = Math.max(t, y), r = null)
     }
     N(), setTimeout(R, 10 * p.A.Millis.SECOND)
   };
@@ -88,13 +88,13 @@ function w(e) {
 }
 if (!__OVERLAY__) {
   Chunk723702.isPlatformEmbedded && (null === Chunk77729.A || true === Chunk77729.A ? true : Chunk77729.A.remotePowerMonitor) != null ? (R(), Chunk77729.A.remotePowerMonitor.on("resume", () => {
-    A = false, w(false)
-  }), Chunk77729.A.remotePowerMonitor.on("suspend", () => {
-    A = true, w(true), c.default.disconnect()
-  }), Chunk77729.A.remotePowerMonitor.on("lock-screen", () => {
-    v = true, w(true)
-  }), Chunk77729.A.remotePowerMonitor.on("unlock-screen", () => {
     v = false, w(false)
+  }), Chunk77729.A.remotePowerMonitor.on("suspend", () => {
+    v = true, w(true), c.default.disconnect()
+  }), Chunk77729.A.remotePowerMonitor.on("lock-screen", () => {
+    A = true, w(true)
+  }), Chunk77729.A.remotePowerMonitor.on("unlock-screen", () => {
+    A = false, w(false)
   })) : setInterval(N, 30 * Chunk927813.A.Millis.SECOND);
   let e = s()(() => {
     d.A.getConfig({
@@ -105,7 +105,7 @@ if (!__OVERLAY__) {
 }
 
 function P(e) {
-  y = e.idle
+  b = e.idle
 }
 
 function D(e) {
@@ -124,7 +124,7 @@ function L(e) {
   let {
     state: t
   } = e;
-  return S = t === m.g6G.BACKGROUND, r = null, b = Date.now(), N(), false
+  return I = t === m.g6G.BACKGROUND, r = null, y = Date.now(), N(), false
 }
 
 function j(e) {
@@ -132,9 +132,9 @@ function j(e) {
     timestamp: t,
     type: n
   } = e, i = "OVERLAY_SET_NOT_IDLE" === n && null != t;
-  return (!i || !(t <= b)) && (r = null, b = i ? t : Date.now(), __OVERLAY__ ? l.h.dispatch({
+  return (!i || !(t <= y)) && (r = null, y = i ? t : Date.now(), __OVERLAY__ ? l.h.dispatch({
     type: "OVERLAY_SET_NOT_IDLE",
-    timestamp: b
+    timestamp: y
   }) : N(), false)
 }
 
@@ -149,19 +149,19 @@ class k extends(i = Chunk311907.Ay.Store) {
     this.waitFor(h.default)
   }
   isIdle() {
-    return y
+    return b
   }
   isAFK() {
     return O
   }
   getIdleSince() {
-    return y ? b : null
+    return b ? y : null
   }
   getSystemSuspended() {
-    return A
+    return v
   }
   getSystemLocked() {
-    return v
+    return A
   }
 }
 E(k, "displayName", "IdleStore");

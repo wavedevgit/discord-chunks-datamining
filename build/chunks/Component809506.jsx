@@ -17,8 +17,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk502512 = require("./502512.js"),
   Chunk648359 = require("./648359.js");
-let b = (0, Chunk835245.A)(),
-  v = (0, Chunk95701.createChannelRecord)({
+let v = (0, Chunk835245.A)(),
+  h = (0, Chunk95701.createChannelRecord)({
     id: "1",
     type: Chunk652215.rbe.DM
   });
@@ -32,7 +32,7 @@ function q() {
   })
 }
 
-function h(e) {
+function b(e) {
   var A;
   let {
     hasError: t,
@@ -54,7 +54,7 @@ function C(e) {
     "aria-labelledby": t,
     className: l,
     id: i,
-    autoFocus: c,
+    autoFocus: u,
     maxLength: g,
     onChange: m,
     onSubmit: C,
@@ -66,7 +66,7 @@ function C(e) {
     parentModalKey: y,
     label: P,
     errorMessage: K
-  } = e, N = (0, s.xW1)(), [T, F] = n.useState(() => (0, o.x7)(O)), I = n.useRef(true === c), X = null != t ? t : null == N ? true : N.titleId, W = null != (A = null == N ? true : N.errorId) ? A : b;
+  } = e, N = (0, o.xW1)(), [I, F] = n.useState(() => (0, s.x7)(O)), T = n.useRef(true === u), X = null != t ? t : null == N ? true : N.titleId, W = null != (A = null == N ? true : N.errorId) ? A : v;
 
   function Q(e, A, t) {
     m(A), F(t)
@@ -77,9 +77,9 @@ function C(e) {
       alwaysUseLayer: true,
       small: true
     },
-    disableAutoFocus: true !== c,
+    disableAutoFocus: true !== u,
     drafts: {
-      type: u.C.ChannelMessage
+      type: c.C.ChannelMessage
     },
     emojis: {
       button: true
@@ -91,8 +91,8 @@ function C(e) {
       useDisabledStylesOnSubmit: true,
       disableEnterToSubmit: true
     }
-  }), [c]);
-  return (0, r.jsx)(s.D0$, {
+  }), [u]);
+  return (0, r.jsx)(o.D0$, {
     label: P,
     errorMessage: K,
     id: i,
@@ -105,34 +105,34 @@ function C(e) {
         "aria-labelledby": X,
         "aria-errormessage": null == e ? true : e.errorMessageId,
         "aria-invalid": (null == e ? true : e.errorMessageId) != null,
-        className: p.T,
-        innerClassName: a()(l, p.n),
+        className: f.T,
+        innerClassName: a()(l, f.n),
         maxCharacterCount: g,
         onChange: Q,
         placeholder: U,
         required: V,
-        channel: v,
+        channel: h,
         textValue: O,
-        richValue: T,
+        richValue: I,
         type: S,
         onBlur: () => {
-          I.current = false
+          T.current = false
         },
         onFocus: () => {
-          I.current = true
+          T.current = true
         },
-        focused: I.current,
+        focused: T.current,
         onSubmit: null != C ? C : q,
         disableThemedBackground: !x,
         parentModalKey: y,
         emojiPickerCloseOnModalOuterClick: true,
-        children: [true === j && (0, r.jsx)(h, {
+        children: [true === j && (0, r.jsx)(b, {
           hasError: null != N.error || null != g && O.length > g,
           text: O,
           maxLength: g
-        }), null != g && (0, r.jsx)(s.AC4, {
-          id: b,
-          children: f.intl.format(f.t["+DFxLc"], {
+        }), null != g && (0, r.jsx)(o.AC4, {
+          id: v,
+          children: p.intl.format(p.t["+DFxLc"], {
             maxLength: g
           })
         })]

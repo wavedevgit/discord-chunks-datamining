@@ -42,10 +42,10 @@ let Chunk74509 = require("./74509.js"),
       returntrue
     }
     let E = !!i && !n.includePrerelease && !!i.semver.prerelease.length && i.semver,
-      b = !!r && !n.includePrerelease && !!r.semver.prerelease.length && r.semver;
+      y = !!r && !n.includePrerelease && !!r.semver.prerelease.length && r.semver;
     for (let e of (E && 1 === E.prerelease.length && "<" === i.operator && 0 === E.prerelease[0] && (E = false), t)) {
       if (m = m || ">" === e.operator || ">=" === e.operator, h = h || "<" === e.operator || "<=" === e.operator, r) {
-        if (b && e.semver.prerelease && e.semver.prerelease.length && e.semver.major === b.major && e.semver.minor === b.minor && e.semver.patch === b.patch && (b = false), ">" === e.operator || ">=" === e.operator) {
+        if (y && e.semver.prerelease && e.semver.prerelease.length && e.semver.major === y.major && e.semver.minor === y.minor && e.semver.patch === y.patch && (y = false), ">" === e.operator || ">=" === e.operator) {
           if ((d = f(r, e, n)) === e && d !== r) returnfalse
         } else if (">=" === r.operator && !s(r.semver, String(e), n)) returnfalse
       }
@@ -56,7 +56,7 @@ let Chunk74509 = require("./74509.js"),
       }
       if (!e.operator && (i || r) && 0 !== l) returnfalse
     }
-    return (!r || !h || !!i || 0 === l) && (!i || !m || !!r || 0 === l) && !b && !E && true
+    return (!r || !h || !!i || 0 === l) && (!i || !m || !!r || 0 === l) && !y && !E && true
   },
   f = (e, t, n) => {
     if (!e) return t;

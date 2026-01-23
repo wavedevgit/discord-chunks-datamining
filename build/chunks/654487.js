@@ -5,7 +5,7 @@ require.d(exports, {
   B3: () => N,
   BQ: () => L,
   CI: () => E,
-  Fw: () => v,
+  Fw: () => A,
   GD: () => g,
   J6: () => C,
   K3: () => P,
@@ -16,12 +16,12 @@ require.d(exports, {
   TY: () => c.T,
   WQ: () => M,
   ZV: () => p,
-  aJ: () => S,
-  eA: () => A,
-  ej: () => y,
+  aJ: () => I,
+  eA: () => v,
+  ej: () => b,
   fO: () => h,
-  fP: () => b,
-  gB: () => I,
+  fP: () => y,
+  gB: () => S,
   hK: () => T,
   kL: () => D,
   mg: () => O,
@@ -58,17 +58,17 @@ var h = function(e) {
 let m = (0, Chunk562465.TP)(),
   g = false !== m.indexOf("localhost") || false !== m.indexOf("127.0.0.1") ? "".concat(m, "/_cdn_storage/") : "https://cdn.discordapp.com/",
   E = g + "quests/";
-var b = function(e) {
+var y = function(e) {
   return e.COLLAPSED = "collapsed", e.EXPANDED = "expanded", e.CLOSED = "closed", e.SOFT_DISMISSED = "soft-dismissed", e.RESET_TO_PREVIOUS = "reset-to-previous", e
 }({});
-let y = "545364944258990091",
+let b = "545364944258990091",
   O = "{reward_code}";
-var A = function(e) {
+var v = function(e) {
   return e.EXCLUDED_QUEST = "excluded_quest", e.UNKNOWN_QUEST = "unknown_quest", e.NOT_SHAREABLE_QUEST = "not_shareable_quest", e
 }({});
-let v = "1333839522189938740",
-  S = "1410358070831480904",
-  I = "1420556874629251124",
+let A = "1333839522189938740",
+  I = "1410358070831480904",
+  S = "1420556874629251124",
   T = "1402418703554842694",
   C = new Set([Chunk341915.yW.DESKTOP_ACCOUNT_PANEL_AREA, Chunk341915.yW.MOBILE_HOME_DOCK_AREA]),
   N = new Set([Chunk412703.n.STREAM_ON_DESKTOP, Chunk412703.n.PLAY_ON_DESKTOP, Chunk412703.n.PLAY_ON_XBOX, Chunk412703.n.PLAY_ON_PLAYSTATION, Chunk412703.n.PLAY_ON_DESKTOP_V2, Chunk412703.n.PLAY_ACTIVITY]),

@@ -3,10 +3,10 @@
 "use strict";
 require.r(exports), require.d(exports, {
   USER_SETTINGS_MODAL_KEY: () => E,
-  getUserSettingsSectionsByWebUserSettings: () => v,
-  getWebUserSettingsByUserSettingsSections: () => A,
-  openUserSettings: () => b,
-  openUserSettingsFromParsedUrl: () => S
+  getUserSettingsSectionsByWebUserSettings: () => A,
+  getWebUserSettingsByUserSettingsSections: () => v,
+  openUserSettings: () => y,
+  openUserSettingsFromParsedUrl: () => I
 }), require("./896048.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
@@ -77,7 +77,7 @@ function g(e, t) {
   return i
 }
 let E = "USER_SETTINGS_MODAL_MODAL_KEY";
-async function b(e) {
+async function y(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : true,
     s = arguments.length > 2 ? arguments[2] : true,
     [l = {
@@ -109,7 +109,7 @@ async function b(e) {
   }), null == g || g()
 }
 
-function y(e) {
+function b(e) {
   let {
     section: t,
     subsection: n,
@@ -135,7 +135,7 @@ function O(e) {
   })
 }
 
-function A() {
+function v() {
   let e = (0, u.E7)("getWebUserSettingFromSection"),
     t = (0, u.WJ)("getWebUserSettingFromSection"),
     n = new Map([
@@ -178,36 +178,36 @@ function A() {
   return e && !(0, s.Pm)() && n.delete(d.nc_.CLIPS), t || n.delete(d.nc_.CONNECTED_GAMES), n
 }
 
-function v() {
-  let e = A(),
+function A() {
+  let e = v(),
     t = new Map;
   for (let [n, r] of e.entries()) t.set(r, n);
   return t
 }
 
-function S(e) {
+function I(e) {
   let {
     match: t,
     urlOrigin: n,
     analyticsLocations: r
   } = e;
-  y({
+  b({
     section: t.section,
     subsection: t.subsection,
     urlOrigin: n
   });
-  let i = A(),
+  let i = v(),
     a = i.get(t.section);
   if (null == a) {
     O({
       section: t.section,
       subsection: t.subsection,
       urlOrigin: n
-    }), b();
+    }), y();
     return
   } {
     let e = null != t.subsection && "" !== t.subsection ? i.get(d.nc_[t.subsection]) : null;
-    b(null != e ? e : a, {
+    y(null != e ? e : a, {
       section: t.section,
       subsection: t.subsection,
       analyticsLocations: r

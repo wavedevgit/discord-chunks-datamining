@@ -62,8 +62,8 @@ function h(e) {
     m = (0, a.uD)(n.extra.application_id, n.extra.media_assets_large_image, [c.iu.LARGE, c.iu.LARGE]),
     g = n.extra.media_title,
     E = n.extra.media_subtitle,
-    b = (0, o.Hd)(n) ? u.t["LH+Z3y"] : u.t.YuKgml,
-    y = {
+    y = (0, o.Hd)(n) ? u.t["LH+Z3y"] : u.t.YuKgml,
+    b = {
       type: l.a4.CRUNCHYROLL
     },
     O = r.useMemo(() => {
@@ -82,7 +82,7 @@ function h(e) {
     titleClickable: t,
     thumbnailClickable: t,
     subtitle: E,
-    userDescription: b,
-    providerIconProps: y
+    userDescription: y,
+    providerIconProps: b
   })
 }

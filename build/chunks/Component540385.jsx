@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
-  a = require.n(Chunk735438),
+  s = require.n(Chunk735438),
   Chunk114212 = require("./114212.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk525853 = require("./525853.js");
@@ -23,26 +23,26 @@ function u(e) {
   } = e;
   if (l > n) throw Error("generateMessageSpecs: too many attachments relative to messageGroups: ".concat(n, ", ").concat(l));
   let u = i / o.hH7.FONT_SIZE_DEFAULT,
-    d = t ? s.BP : s.B5,
-    f = t ? s.Uj : s._G,
-    p = 0,
-    h = Array(n).fill(null).map(() => {
-      let e = a().random(1, r);
-      return p += c * u, p += d * u, p += (e - 1) * f * u, e
+    d = t ? a.BP : a.B5,
+    p = t ? a.Uj : a._G,
+    h = 0,
+    f = Array(n).fill(null).map(() => {
+      let e = s().random(1, r);
+      return h += c * u, h += d * u, h += (e - 1) * p * u, e
     }),
-    b = h.map((e, t) => t),
-    g = [];
-  for (; g.length < l;) {
+    g = f.map((e, t) => t),
+    m = [];
+  for (; m.length < l;) {
     let e = {
-      width: a().random(140, 400),
-      height: a().random(100, 320)
+      width: s().random(140, 400),
+      height: s().random(100, 320)
     };
-    g.push([b.splice(a().random(0, b.length - 1), 1)[0], e]), p += e.height + s.VF * u
+    m.push([g.splice(s().random(0, g.length - 1), 1)[0], e]), h += e.height + a.VF * u
   }
   return {
-    messages: h,
-    attachmentSpecs: g,
-    totalHeight: p,
+    messages: f,
+    attachmentSpecs: m,
+    totalHeight: h,
     groupSpacing: c
   }
 }
@@ -52,7 +52,7 @@ function d(e) {
     compact: t,
     messages: n,
     attachmentSpecs: i,
-    totalHeight: a,
+    totalHeight: s,
     groupSpacing: o
   } = e;
   return l.useMemo(() => {
@@ -61,14 +61,14 @@ function d(e) {
     return (0, r.jsx)("div", {
       className: c.i,
       style: {
-        height: a
+        height: s
       },
-      children: n.map((n, l) => (0, r.jsx)(s.Ay, {
+      children: n.map((n, l) => (0, r.jsx)(a.Ay, {
         groupSpacing: o,
         compact: t,
         messages: n,
         attachmentSpecs: e[l]
       }, l))
     })
-  }, [t, n, i, a, o])
+  }, [t, n, i, s, o])
 }

@@ -110,15 +110,15 @@ function U(e) {
       let n = t[t.length - 1].id;
       e >= s - 2 && p !== n && ((0, _.CK)(k, n), h(n))
     }, [t, s, p]),
-    y = (0, g.A)("billing-history", l);
+    b = (0, g.A)("billing-history", l);
   return (0, i.jsx)(u.hD, {
-    navigator: y,
+    navigator: b,
     children: (0, i.jsx)(u.PR, {
       children: e => {
         let {
           ref: t
         } = e, a = j(e, ["ref"]);
-        return (0, i.jsx)(b.A, L(D({
+        return (0, i.jsx)(y.A, L(D({
           className: R.GD,
           currentPageIndex: c,
           onChangePage: E,
@@ -130,7 +130,7 @@ function U(e) {
             className: R.Bd,
             ref: l,
             overflow: "auto",
-            children: m.map((e, t) => (0, i.jsx)(S.A, {
+            children: m.map((e, t) => (0, i.jsx)(I.A, {
               className: o()(R.Nj, R.Bd),
               payment: e,
               locale: n,
@@ -163,7 +163,7 @@ class G extends(r = Chunk64700.PureComponent) {
         className: R.Q2,
         children: N.intl.format(N.t.eG0uZB, {
           paymentGatewayName: C.qm[e.paymentGateway],
-          billingHistoryLink: (0, v.tW)(e.paymentGateway, "BILLING_HISTORY")
+          billingHistoryLink: (0, A.tW)(e.paymentGateway, "BILLING_HISTORY")
         })
       })]
     })
@@ -212,12 +212,12 @@ function V(e) {
   var t;
   let n = e.skuId,
     r = null == (t = e.subscription) ? true : t.items[0].planId;
-  return !(null == n || null == r || Object.values(T.pe).includes(n) || (0, v.ys)(r))
+  return !(null == n || null == r || Object.values(T.pe).includes(n) || (0, A.ys)(r))
 }
 
 function F(e) {
-  let t = (0, d.bG)([y.A], () => y.A.getPayments()),
-    n = (0, d.bG)([A.A], () => A.A.getPremiumTypeSubscription()),
+  let t = (0, d.bG)([b.A], () => b.A.getPayments()),
+    n = (0, d.bG)([v.A], () => v.A.getPremiumTypeSubscription()),
     r = a.useMemo(() => new Set(t.filter(V).map(e => {
       let {
         subscription: t
@@ -232,7 +232,7 @@ function F(e) {
     })), [t]),
     o = (0, d.yK)([O.A], () => O.A.getPlanIdsForSkus(Array.from(s))),
     l = a.useCallback(() => o.length === r.size, [o, r]),
-    c = a.useMemo(() => t.filter(e => e.currency !== I.Yri.DISCORD_ORB), [t]);
+    c = a.useMemo(() => t.filter(e => e.currency !== S.Yri.DISCORD_ORB), [t]);
   return a.useEffect(() => {
     l() || p.h.wait(() => {
       s.forEach(e => (0, m.ur)(e, true, true, true, true))

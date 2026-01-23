@@ -1,8 +1,8 @@
 /** Chunk was on 97492 **/
 /** chunk id: 710640, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  fo: () => s,
-  uW: () => a,
+  fo: () => a,
+  uW: () => s,
   vr: () => c,
   z0: () => o
 }), require("./733351.js");
@@ -16,11 +16,11 @@ function i(e, t) {
   }
 }
 
-function a() {
+function s() {
   return i(0, l.intl.string(l.t.uXA573))
 }
 
-function s() {
+function a() {
   return i(0, l.intl.string(l.t.kesTVT))
 }
 

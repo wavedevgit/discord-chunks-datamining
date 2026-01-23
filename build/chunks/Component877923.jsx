@@ -24,8 +24,8 @@ function g(e) {
     giftIntentType: t,
     recipientUser: n,
     channel: g
-  } = e, E = (0, a.bG)([l.A], () => l.A.useReducedMotion), b = i.useRef(null), {
-    createMultipleConfettiAt: y
+  } = e, E = (0, a.bG)([l.A], () => l.A.useReducedMotion), y = i.useRef(null), {
+    createMultipleConfettiAt: b
   } = i.useContext(c.x), O = i.useCallback(e => ({
     size: {
       type: "static-random",
@@ -47,25 +47,25 @@ function g(e) {
   return i.useEffect(() => {
     var e;
     if (E) return;
-    let t = null == (e = b.current) ? true : e.getBoundingClientRect();
+    let t = null == (e = y.current) ? true : e.getBoundingClientRect();
     if (null == t) return;
     let n = O({
         confettiSize: 8
       }),
       r = new s.J_(m, () => {
-        y(t.left + t.width / 2, t.top + t.height / 2, n, 60)
+        b(t.left + t.width / 2, t.top + t.height / 2, n, 60)
       });
     return r.delay(), () => {
       r.cancel()
     }
-  }, [y, b, E, O]), (0, r.jsx)(f.A, {
+  }, [b, y, E, O]), (0, r.jsx)(f.A, {
     contentClassName: _.o9,
     iconContainerClassName: _.zc,
     iconNode: (0, r.jsx)(o.XFE, {
       colorClass: _.Kk
     }),
     children: (0, r.jsx)(u.A, {
-      innerRef: b,
+      innerRef: y,
       giftIntentType: t,
       recipientUser: n,
       analyticsPage: (0, d.DJ)(g),

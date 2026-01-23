@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 827975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,16 +16,16 @@ var Chunk837381 = require("./837381.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk697491 = require("./697491.js");
 
-function h() {
+function f() {
   var e, t;
-  let n = (0, i.bG)([s.A, o.A], () => s.A.unavailableGuilds.filter(e => null == o.A.getGuild(e)).length),
-    h = (0, l.Vd)("unavailable-guilds-button");
+  let n = (0, i.bG)([a.A, o.A], () => a.A.unavailableGuilds.filter(e => null == o.A.getGuild(e)).length),
+    f = (0, l.Vd)("unavailable-guilds-button");
   return n <= 0 ? null : (0, r.jsx)(c.c, {
     children: (0, r.jsx)(u.A, {
-      text: f.intl.format(f.t["TnH05/"], {
+      text: p.intl.format(p.t["TnH05/"], {
         count: n
       }),
-      children: (0, r.jsx)(a.MzZ, (e = function(e) {
+      children: (0, r.jsx)(s.MzZ, (e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -45,12 +45,12 @@ function h() {
       }({
         href: d.qF.STATUS,
         target: "_blank",
-        className: p.h,
-        "aria-label": f.intl.formatToPlainString(f.t["MEpX+2"], {
+        className: h.h,
+        "aria-label": p.intl.formatToPlainString(p.t["MEpX+2"], {
           count: n
         })
-      }, h), t = t = {
-        children: (0, r.jsx)(a.EpV, {
+      }, f), t = t = {
+        children: (0, r.jsx)(s.EpV, {
           color: "currentColor",
           "aria-hidden": true
         })

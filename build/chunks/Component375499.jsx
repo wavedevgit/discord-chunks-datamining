@@ -33,7 +33,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function A(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,13 +57,13 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -109,16 +109,16 @@ function D(e) {
     onContextMenu: p,
     onFocus: h,
     spriteClassName: g,
-    spriteSize: b,
+    spriteSize: y,
     ref: O
-  } = e, v = I(e, ["className", "renderButtonContents", "active", "onMouseEnter", "onMouseLeave", "onContextMenu", "onFocus", "spriteClassName", "spriteSize", "ref"]), [T, C] = i.useState(false), [N, D] = i.useState(50), x = T || a, L = (0, m.t)(y, "emojiButton", x ? "Hovered" : "Normal"), j = P(N, b), M = i.useCallback(() => {
+  } = e, A = S(e, ["className", "renderButtonContents", "active", "onMouseEnter", "onMouseLeave", "onContextMenu", "onFocus", "spriteClassName", "spriteSize", "ref"]), [T, C] = i.useState(false), [N, D] = i.useState(50), x = T || a, L = (0, m.t)(b, "emojiButton", x ? "Hovered" : "Normal"), j = P(N, y), M = i.useCallback(() => {
     if (x) return;
     let e = Math.floor(Math.random() * R);
     C(true), D(e), (0, _.K)(E.Vl.EmojiButtonMouseEntered)
   }, [x, C, D]), k = i.useCallback(() => {
     C(false)
   }, [C]), U = i.useCallback(() => (0, _.K)(E.Vl.EmojiButtonFocused), []), G = (0, l.bG)([f.A], () => f.A.useReducedMotion);
-  return (0, r.jsx)(d.DUT, S(A({
+  return (0, r.jsx)(d.DUT, I(v({
     innerRef: O,
     className: s()(L, t),
     "aria-expanded": a,
@@ -133,7 +133,7 @@ function D(e) {
       U(), null == h || h()
     },
     onContextMenu: p
-  }, v), {
+  }, A), {
     children: null != n ? n() : (0, r.jsx)(d.c7X, {
       config: w,
       to: {
@@ -144,15 +144,15 @@ function D(e) {
           value: t
         } = e;
         return (0, r.jsxs)(o.animated.div, {
-          className: y.spriteContainer,
-          style: S(A({}, j), {
+          className: b.spriteContainer,
+          style: I(v({}, j), {
             transform: t.to([0, 1], [1, 1.14]).to(e => "scale(".concat(e, ")"))
           }),
           children: [(0, r.jsx)("div", {
-            className: s()(y.sprite, y.spriteColored, x ? y.active : y.inactive)
+            className: s()(b.sprite, b.spriteColored, x ? b.active : b.inactive)
           }), (0, r.jsx)("div", {
-            className: s()(y.sprite, y.spriteGreyscale, x ? y.inactive : y.active, {
-              [y.reducedMotion]: G
+            className: s()(b.sprite, b.spriteGreyscale, x ? b.inactive : b.active, {
+              [b.reducedMotion]: G
             }, g)
           })]
         })
@@ -163,15 +163,15 @@ function D(e) {
 
 function x(e) {
   let {
-    "aria-label": t = b.intl.string(b.t.lPHwuQ),
+    "aria-label": t = y.intl.string(y.t.lPHwuQ),
     tooltipText: a,
     active: o,
     onClick: _,
     "aria-controls": m,
     ref: E,
     keyboardShortcut: O,
-    canShowNUXPremiumTooltip: v = false
-  } = e, S = I(e, ["aria-label", "tooltipText", "active", "onClick", "aria-controls", "ref", "keyboardShortcut", "canShowNUXPremiumTooltip"]), T = (0, l.bG)([f.A], () => f.A.useReducedMotion), C = (0, h.k0)(), [N, R] = (0, p.kn)(C ? [c.M.TRIAL_NUX_EMOJI_BUTTON] : [], true, true), w = v && N === c.M.TRIAL_NUX_EMOJI_BUTTON, P = !o && w, x = i.useRef(null), L = null != E ? E : x, j = () => (0, r.jsx)(D, A({
+    canShowNUXPremiumTooltip: A = false
+  } = e, I = S(e, ["aria-label", "tooltipText", "active", "onClick", "aria-controls", "ref", "keyboardShortcut", "canShowNUXPremiumTooltip"]), T = (0, l.bG)([f.A], () => f.A.useReducedMotion), C = (0, h.k0)(), [N, R] = (0, p.kn)(C ? [c.M.TRIAL_NUX_EMOJI_BUTTON] : [], true, true), w = A && N === c.M.TRIAL_NUX_EMOJI_BUTTON, P = !o && w, x = i.useRef(null), L = null != E ? E : x, j = () => (0, r.jsx)(D, v({
     ref: L,
     onMouseLeave: () => {
       w && R(g.i.USER_DISMISS)
@@ -182,14 +182,14 @@ function x(e) {
     "aria-label": t,
     "aria-controls": m,
     active: o,
-    spriteClassName: w ? y.spritePremiumColored : true
-  }, S));
+    spriteClassName: w ? b.spritePremiumColored : true
+  }, I));
   return null == a ? j() : P ? (0, r.jsx)(u.un, {
     targetElementRef: L,
-    body: b.intl.format(b.t["/7R4q4"], {}),
+    body: y.intl.format(y.t["/7R4q4"], {}),
     asset: (0, r.jsx)(d.akl, {
-      className: s()(y.premiumUnlockAnimation, {
-        [y.reducedMotion]: T
+      className: s()(b.premiumUnlockAnimation, {
+        [b.reducedMotion]: T
       }),
       loop: false,
       shouldAnimate: !T,

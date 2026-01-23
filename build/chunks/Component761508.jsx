@@ -49,13 +49,13 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -74,12 +74,12 @@ function O(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let A = {
+let v = {
     side: Chunk704118.Cf,
     top: Chunk704118.Mn,
     "top-pill": Chunk704118.vO
   },
-  v = Chunk64700.forwardRef(function(e, t) {
+  A = Chunk64700.forwardRef(function(e, t) {
     let {
       className: n,
       onClick: r,
@@ -108,7 +108,7 @@ let A = {
     })
   });
 
-function S(e) {
+function I(e) {
   let {
     style: t
   } = e;
@@ -117,12 +117,12 @@ function S(e) {
     style: t
   })
 }
-let I = Chunk64700.forwardRef(function(e, t) {
+let S = Chunk64700.forwardRef(function(e, t) {
   let [n, ...r] = [e, t], {
     children: i,
     id: s
-  } = n, o = y(n, ["children", "id"]), [l] = r;
-  return (0, a.jsx)("div", b(g({}, o), {
+  } = n, o = b(n, ["children", "id"]), [l] = r;
+  return (0, a.jsx)("div", y(g({}, o), {
     ref: l,
     role: "tabpanel",
     id: T(s),
@@ -271,7 +271,7 @@ class R extends(i = Chunk64700.Component) {
     } = this.props;
     return (0, a.jsx)("div", {
       ref: this.tabBarRef,
-      className: l()(e, A[n]),
+      className: l()(e, v[n]),
       style: r,
       role: "tablist",
       "aria-orientation": o,
@@ -324,4 +324,4 @@ class R extends(i = Chunk64700.Component) {
     })
   }
 }
-m(R, "Header", v), m(R, "Item", N), m(R, "Separator", S), m(R, "Panel", I)
+m(R, "Header", A), m(R, "Item", N), m(R, "Separator", I), m(R, "Panel", S)

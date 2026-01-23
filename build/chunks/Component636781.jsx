@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 636781, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,17 +16,17 @@ var Chunk108531 = require("./108531.js"),
   Chunk48686 = require("./48686.js"),
   Chunk652215 = require("./652215.js");
 
-function h(e) {
+function g(e) {
   let {
     channel: t,
     guild: n
-  } = e, o = (0, l.bG)([s.HP], () => s.HP.hasHotspot(s._2.HUB_STUDY_ROOM_NOTICE)), c = (0, p.Q)(t.guild_id), f = (0, a.zhh)({
+  } = e, o = (0, l.bG)([s.HP], () => s.HP.hasHotspot(s._2.HUB_STUDY_ROOM_NOTICE)), c = (0, p.Q)(t.guild_id), h = (0, a.zhh)({
     maxHeight: 300 * !c,
     overflow: "hidden",
     delay: 400
   });
   return (0, r.jsx)(i.animated.div, {
-    style: f,
+    style: h,
     children: o ? (0, r.jsx)(u.A, {
       channel: t,
       guild: n
@@ -36,11 +36,11 @@ function h(e) {
     })
   })
 }
-let A = function(e) {
+let f = function(e) {
   let {
     guild: t
-  } = e, n = (0, l.bG)([o.Ay], () => o.Ay.getChannels(t.id)[o.vM][0]), i = (0, l.bG)([c.A], () => null != n && c.A.can(f.xBc.CONNECT, n.channel));
-  return t.features.has(f.GuildFeatures.HUB) && null != n && i ? (0, r.jsx)(h, {
+  } = e, n = (0, l.bG)([o.Ay], () => o.Ay.getChannels(t.id)[o.vM][0]), i = (0, l.bG)([c.A], () => null != n && c.A.can(h.xBc.CONNECT, n.channel));
+  return t.features.has(h.GuildFeatures.HUB) && null != n && i ? (0, r.jsx)(g, {
     channel: n.channel,
     guild: t
   }) : null

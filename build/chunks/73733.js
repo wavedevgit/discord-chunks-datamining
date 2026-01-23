@@ -28,14 +28,14 @@ function u(e) {
       onIncrement: m,
       onIncrementPage: g,
       onDecrement: E,
-      onDecrementPage: b,
-      onDecrementToMin: y,
+      onDecrementPage: y,
+      onDecrementToMin: b,
       onIncrementToMax: O
     } = e,
-    A = (0, l.o)(c(r.A), "@react-aria/spinbutton"),
-    v = () => clearTimeout(t.current);
-  (0, a.useEffect)(() => () => v(), []);
-  let S = e => {
+    v = (0, l.o)(c(r.A), "@react-aria/spinbutton"),
+    A = () => clearTimeout(t.current);
+  (0, a.useEffect)(() => () => A(), []);
+  let I = e => {
       if (!e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey && !_ && !e.nativeEvent.isComposing) switch (e.key) {
         case "PageUp":
           if (g) {
@@ -47,8 +47,8 @@ function u(e) {
           m && (e.preventDefault(), null == m || m());
           break;
         case "PageDown":
-          if (b) {
-            e.preventDefault(), null == b || b();
+          if (y) {
+            e.preventDefault(), null == y || y();
             break
           }
         case "ArrowDown":
@@ -56,30 +56,30 @@ function u(e) {
           E && (e.preventDefault(), null == E || E());
           break;
         case "Home":
-          y && (e.preventDefault(), null == y || y());
+          b && (e.preventDefault(), null == b || b());
           break;
         case "End":
           O && (e.preventDefault(), null == O || O())
       }
     },
-    I = (0, a.useRef)(false),
+    S = (0, a.useRef)(false),
     T = () => {
-      I.current = true
+      S.current = true
     },
     C = () => {
-      I.current = false
+      S.current = false
     },
-    N = "" === u ? A.format("Empty") : (u || `${n}`).replace("-", "−");
+    N = "" === u ? v.format("Empty") : (u || `${n}`).replace("-", "−");
   (0, a.useEffect)(() => {
-    I.current && ((0, i.pA)("assertive"), (0, i.iP)(N, "assertive"))
+    S.current && ((0, i.pA)("assertive"), (0, i.iP)(N, "assertive"))
   }, [N]);
   let R = (0, s.J)(e => {
-      v(), null == m || m(), t.current = window.setTimeout(() => {
+      A(), null == m || m(), t.current = window.setTimeout(() => {
         (true === f || isNaN(f) || true === n || isNaN(n) || n < f) && R(60)
       }, e)
     }),
     w = (0, s.J)(e => {
-      v(), null == E || E(), t.current = window.setTimeout(() => {
+      A(), null == E || E(), t.current = window.setTimeout(() => {
         (true === d || isNaN(d) || true === n || isNaN(n) || n > d) && w(60)
       }, e)
     }),
@@ -100,7 +100,7 @@ function u(e) {
       "aria-disabled": p || true,
       "aria-readonly": _ || true,
       "aria-required": h || true,
-      onKeyDown: S,
+      onKeyDown: I,
       onFocus: T,
       onBlur: C
     },
@@ -109,7 +109,7 @@ function u(e) {
         R(400), D(window, "contextmenu", P)
       },
       onPressEnd: () => {
-        v(), x()
+        A(), x()
       },
       onFocus: T,
       onBlur: C
@@ -119,7 +119,7 @@ function u(e) {
         w(400), D(window, "contextmenu", P)
       },
       onPressEnd: () => {
-        v(), x()
+        A(), x()
       },
       onFocus: T,
       onBlur: C

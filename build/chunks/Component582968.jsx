@@ -1,20 +1,20 @@
 /** Chunk was on 97492 **/
 /** chunk id: 582968, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => s
+  A: () => a
 });
 var Chunk627968 = require("./627968.js"),
   Chunk503698 = require("./503698.js"),
   i = require.n(Chunk503698),
   Chunk546190 = require("./546190.js");
 
-function s() {
+function a() {
   return (0, r.jsxs)("div", {
-    className: a.kL,
+    className: s.kL,
     children: [(0, r.jsx)("div", {
-      className: i()(a.v9, a.KJ)
+      className: i()(s.v9, s.KJ)
     }), (0, r.jsx)("div", {
-      className: i()(a.v9, a.rx)
+      className: i()(s.v9, s.rx)
     })]
   })
 }

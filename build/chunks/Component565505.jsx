@@ -21,8 +21,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk473169 = require("./473169.js");
 
-function _(e, t, n) {
-  e.preventDefault(), f.default.track(g.HAw.GUILD_TEMPLATE_APP_OPENED, {
+function x(e, t, n) {
+  e.preventDefault(), p.default.track(m.HAw.GUILD_TEMPLATE_APP_OPENED, {
     guild_template_code: t,
     guild_template_name: n.name,
     guild_template_description: n.description,
@@ -30,7 +30,7 @@ function _(e, t, n) {
   });
   let r = h.default.getFingerprint(),
     i = null != r ? r : h.default.getId();
-  c.A.openMobileApp(n.state === m.QB.RESOLVED ? t : true, i)
+  c.A.openMobileApp(n.state === f.QB.RESOLVED ? t : true, i)
 }
 
 function E(e) {
@@ -39,24 +39,24 @@ function E(e) {
   } = e, n = (0, s.bG)([o.A], () => o.A.getGuildTemplate(t));
   return (i.useEffect(() => {
     (0, d.d)("guild_template_mobile")
-  }, []), null == n || n.state === m.QB.RESOLVING) ? (0, r.jsx)(a.Ay, {
+  }, []), null == n || n.state === f.QB.RESOLVING) ? (0, r.jsx)(a.Ay, {
     children: (0, r.jsx)(l.y$y, {})
-  }) : n.state === m.QB.RESOLVED ? (0, r.jsxs)(a.Ay, {
+  }) : n.state === f.QB.RESOLVED ? (0, r.jsxs)(a.Ay, {
     children: [(0, r.jsx)(u.A, {
       guildTemplate: n,
       tall: true
     }), (0, r.jsx)("div", {
-      className: x.QX,
+      className: A.QX,
       children: (0, r.jsx)(l.Button, {
-        text: A.intl.string(A.t["a3Gl+e"]),
+        text: _.intl.string(_.t["a3Gl+e"]),
         fullWidth: true,
-        onClick: e => _(e, t, n)
+        onClick: e => x(e, t, n)
       })
     })]
-  }) : (0, r.jsx)(p.A, {
-    text: A.intl.string(A.t["e/rZ2n"]),
-    buttonCta: A.intl.string(A.t.HAvYn0),
-    onClick: e => _(e, t, n)
+  }) : (0, r.jsx)(g.A, {
+    text: _.intl.string(_.t["e/rZ2n"]),
+    buttonCta: _.intl.string(_.t.HAvYn0),
+    onClick: e => x(e, t, n)
   })
 }
 Chunk311907.Ay.initialize()

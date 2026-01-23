@@ -1,7 +1,7 @@
 /** Chunk was on 67696 **/
 /** chunk id: 881267, original params: l,e,n (module,exports,require) **/
 require.d(exports, {
-  PlaygroundEmbed: () => S
+  PlaygroundEmbed: () => y
 }), require("./896048.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -35,52 +35,52 @@ let v = {
       defaultSubtitle: "Explore the Void Design System"
     }
   },
-  b = null;
+  S = null;
 
-function S(l) {
+function y(l) {
   var e, n;
-  let S = (0, r.bG)([f.default], () => {
+  let y = (0, r.bG)([f.default], () => {
       let l = f.default.getCurrentUser();
       return (null == l ? true : l.isStaff()) || (null == l ? true : l.isStaffPersonal())
     }),
-    y = o.useMemo(() => {
+    C = o.useMemo(() => {
       let e;
       return null == (e = l.url.match(p.S)) || null == e[1] ? null : e[1].toLowerCase()
     }, [l.url]),
-    C = null != y ? (function() {
-      if (null == b)
-        for (let l of (b = new Map, m.componentPlaygroundConfigs))
-          for (let e of l.collections) b.set(e.id.toLowerCase(), e);
-      return b
-    })().get(y) : null,
-    P = null != y ? v[y] : null,
+    P = null != C ? (function() {
+      if (null == S)
+        for (let l of (S = new Map, h.componentPlaygroundConfigs))
+          for (let e of l.collections) S.set(e.id.toLowerCase(), e);
+      return S
+    })().get(C) : null,
+    b = null != C ? v[C] : null,
     j = o.useMemo(() => {
       var e;
       let n;
-      if (null == C) return;
+      if (null == P) return;
       let t = null == (n = l.url.match(p.S)) ? null : null != (e = n[3]) ? e : null;
       if (null != t)
-        for (let l of C.groups) {
+        for (let l of P.groups) {
           let e = l.stories.find(l => l.id === t);
           if (null != e) return e
         }
-    }, [l.url, C]),
-    w = null != (e = null == j ? true : j.name) ? e : null != C ? "".concat(C.name, " Playground") : "Playground",
+    }, [l.url, P]),
+    w = null != (e = null == j ? true : j.name) ? e : null != P ? "".concat(P.name, " Playground") : "Playground",
     E = null != j && null != j.docs ? (0, t.jsx)(a.Anchor, {
       href: j.docs,
       children: "Documentation"
-    }) : null != P ? P.defaultSubtitle : "Explore Components",
+    }) : null != b ? b.defaultSubtitle : "Explore Components",
     z = o.useCallback(() => {
-      null != C && (null != j ? h.PlaygroundStore.setState({
-        selectedCollection: C.id,
+      null != P && (null != j ? m.PlaygroundStore.setState({
+        selectedCollection: P.id,
         selectedStory: j.id
-      }) : h.PlaygroundStore.setState({
-        selectedCollection: C.id,
+      }) : m.PlaygroundStore.setState({
+        selectedCollection: P.id,
         selectedStory: null
       }), (0, c.id)(g.zgK.COMPONENT_PLAYGROUND))
-    }, [j, C]);
-  if (!S || null == C) return null;
-  let k = null != (n = null == P ? true : P.icon) ? n : u.PotionIcon;
+    }, [j, P]);
+  if (!y || null == P) return null;
+  let _ = null != (n = null == b ? true : b.icon) ? n : u.PotionIcon;
   return (0, t.jsx)("div", {
     className: x.z,
     "data-has-story": null != j,
@@ -95,7 +95,7 @@ function S(l) {
           direction: "horizontal",
           align: "start",
           gap: 8,
-          children: [(0, t.jsx)(k, {
+          children: [(0, t.jsx)(_, {
             size: "lg"
           }), (0, t.jsxs)(i.BJc, {
             direction: "vertical",

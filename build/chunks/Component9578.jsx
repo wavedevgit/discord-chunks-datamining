@@ -81,18 +81,18 @@ let g = 1,
       children: p,
       messageId: m,
       channelId: E
-    } = e, b = h(e, ["onClick", "trusted", "title", "href", "children", "messageId", "channelId"]), {
-      analyticsLocations: y
-    } = (0, c.Ay)(l.A.MASKED_LINK), O = i.useCallback(t => (0, u.h)(e, t, y), [y, e]), A = i.useCallback(e => {
+    } = e, y = h(e, ["onClick", "trusted", "title", "href", "children", "messageId", "channelId"]), {
+      analyticsLocations: b
+    } = (0, c.Ay)(l.A.MASKED_LINK), O = i.useCallback(t => (0, u.h)(e, t, b), [b, e]), v = i.useCallback(e => {
       e.button === g && O(e)
-    }, [O]), v = s().sanitizeUrl(d);
-    return (0, r.jsx)(o.MzZ, _(f({}, b), {
+    }, [O]), A = s().sanitizeUrl(d);
+    return (0, r.jsx)(o.MzZ, _(f({}, y), {
       title: a,
       target: "_blank",
       rel: "noreferrer noopener",
-      href: v,
+      href: A,
       onClick: O,
-      onAuxClick: A,
+      onAuxClick: v,
       children: null != p ? p : a
     }))
   })

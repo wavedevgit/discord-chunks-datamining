@@ -2,7 +2,7 @@
 /** chunk id: 963175, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => g
+  A: () => m
 }), require("./228524.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,20 +15,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk238803 = require("./238803.js");
 
-function g(e) {
+function m(e) {
   let {
     intiallyExpanded: t = false,
     title: n,
     description: l,
-    children: g
-  } = e, [b, m] = i.useState(t), p = () => m(e => !e), x = (0, c.GV)();
+    children: m
+  } = e, [p, f] = i.useState(t), b = () => f(e => !e), h = (0, o.GV)();
   return (0, r.jsxs)("div", {
-    className: f.kL,
+    className: g.kL,
     children: [(0, r.jsx)(d.A, {
-      className: s()(f.wx, {
-        [f.OD]: b && null != l
+      className: s()(g.wx, {
+        [g.OD]: p && null != l
       }),
-      onClick: p,
+      onClick: b,
       children: e => {
         let {
           areaRef: t,
@@ -39,31 +39,31 @@ function g(e) {
             variant: "heading-md/semibold",
             children: n
           }), (0, r.jsx)(a.DUT, {
-            onClick: i(p),
+            onClick: i(b),
             "aria-label": u.intl.string(u.t.e5eQOy),
-            "aria-controls": x,
-            "aria-expanded": b,
+            "aria-controls": h,
+            "aria-expanded": p,
             focusProps: {
               ringTarget: t
             },
-            children: (0, r.jsx)(o.A, {
-              className: f.OW,
-              direction: b ? o.A.Directions.UP : o.A.Directions.DOWN
+            children: (0, r.jsx)(c.A, {
+              className: g.OW,
+              direction: p ? c.A.Directions.UP : c.A.Directions.DOWN
             })
           })]
         })
       }
-    }), b && (0, r.jsxs)("div", {
-      id: x,
+    }), p && (0, r.jsxs)("div", {
+      id: h,
       children: [null != l && (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
-        className: f.h_,
+        className: g.h_,
         children: l
       }), (0, r.jsx)("div", {
-        className: f.yF
+        className: g.yF
       }), (0, r.jsx)("div", {
-        className: f.Qs,
-        children: g
+        className: g.Qs,
+        children: m
       })]
     })]
   })

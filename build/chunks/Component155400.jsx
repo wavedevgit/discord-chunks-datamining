@@ -1,7 +1,7 @@
 /** Chunk was on 38663 **/
 /** chunk id: 155400, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -9,11 +9,11 @@ var Chunk435546 = require("./435546.jsx"),
   Chunk466853 = require("./466853.jsx"),
   Chunk742710 = require("./742710.jsx");
 
-function s(e) {
+function o(e) {
   var t, n;
   let {
-    user: s,
-    widget: o,
+    user: o,
+    widget: s,
     guildId: c,
     channelId: u,
     disableInteraction: d
@@ -33,7 +33,7 @@ function s(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(e, ["user", "widget", "guildId", "channelId", "disableInteraction"]), p = o.games[0];
+  }(e, ["user", "widget", "guildId", "channelId", "disableInteraction"]), p = s.games[0];
   return (0, r.jsx)(i.A, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -52,19 +52,19 @@ function s(e) {
     }
     return e
   }({
-    userId: s.id,
-    widget: o,
+    userId: o.id,
+    widget: s,
     disableInteraction: d
   }, f), n = n = {
     children: null != p ? (0, r.jsx)(a.A, {
-      user: s,
-      widgetType: o.type,
+      user: o,
+      widgetType: s.type,
       game: p,
       guildId: c,
       channelId: u,
       disableInteraction: d
     }) : (0, r.jsx)(l.A, {
-      widget: o
+      widget: s
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

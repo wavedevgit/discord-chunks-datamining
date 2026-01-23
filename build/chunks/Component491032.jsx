@@ -2,7 +2,7 @@
 /** chunk id: 491032, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -44,51 +44,51 @@ function u(e, t) {
   }), e
 }
 
-function f(e) {
+function g(e) {
   var t;
   let {
     rule: n,
-    onChangeRule: f,
-    collapsed: g = false
-  } = e, [b, m] = i.useState(!g), p = i.useCallback(() => {
-    m(!b)
-  }, [b, m]), x = i.useCallback(e => {
-    f(u(d({}, n), {
+    onChangeRule: g,
+    collapsed: m = false
+  } = e, [p, f] = i.useState(!m), b = i.useCallback(() => {
+    f(!p)
+  }, [p, f]), h = i.useCallback(e => {
+    g(u(d({}, n), {
       triggerMetadata: u(d({}, n.triggerMetadata), {
         regexPatterns: e
       })
     }))
-  }, [f, n]);
+  }, [g, n]);
   return (0, s.u)(n.triggerType) ? (0, r.jsx)(l.Nt8, {
-    isExpanded: b,
+    isExpanded: p,
     collapsibleContent: (0, r.jsx)(a.A, {
       rule: n,
-      onChangeText: x,
-      className: o.kS,
+      onChangeText: h,
+      className: c.kS,
       initialValue: null == (t = n.triggerMetadata) ? true : t.regexPatterns
     }),
-    className: o.uR,
+    className: c.uR,
     children: e => {
       let {
         onClick: t
       } = e;
       return (0, r.jsx)(l.DUT, {
         onClick: e => {
-          p(), t(e)
+          b(), t(e)
         },
         children: (0, r.jsxs)("div", {
-          className: o.wx,
+          className: c.wx,
           children: [(0, r.jsx)(l.Heading, {
             variant: "text-sm/medium",
-            children: c.intl.string(c.t["dnunm+"])
-          }), b ? (0, r.jsx)(l.tN5, {
+            children: o.intl.string(o.t["dnunm+"])
+          }), p ? (0, r.jsx)(l.tN5, {
             size: "md",
             color: "currentColor",
-            className: o.UE
+            className: c.UE
           }) : (0, r.jsx)(l.abt, {
             size: "md",
             color: "currentColor",
-            className: o.UE
+            className: c.UE
           })]
         })
       })

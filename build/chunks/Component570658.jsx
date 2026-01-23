@@ -36,8 +36,8 @@ function c(e) {
     onConfirm: c,
     onCancel: u
   } = e;
-  i.default.track(s.HAw.OPEN_MODAL, {
-    type: a.PY,
+  i.default.track(a.HAw.OPEN_MODAL, {
+    type: s.PY,
     channel_id: t
   }), (0, l.mMO)(async () => {
     let {

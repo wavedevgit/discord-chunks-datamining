@@ -25,26 +25,26 @@ function E(e) {
     setSearchQuery: t,
     searchContext: n,
     mode: E
-  } = e, b = (0, o.R)(n);
+  } = e, y = (0, o.R)(n);
   return i.useMemo(() => {
     let e = [{
       type: h.LWr.FILTER_FROM,
-      isEligible: b.has(h.LWr.FILTER_FROM),
+      isEligible: y.has(h.LWr.FILTER_FROM),
       icon: a.nys,
       label: m.intl.string(m.t.ktr6z5)
     }, {
       type: h.LWr.FILTER_IN,
-      isEligible: b.has(h.LWr.FILTER_IN),
+      isEligible: y.has(h.LWr.FILTER_IN),
       icon: a.N$i,
       label: m.intl.string(m.t.VMjDvS)
     }, {
       type: h.LWr.FILTER_HAS,
-      isEligible: b.has(h.LWr.FILTER_HAS),
+      isEligible: y.has(h.LWr.FILTER_HAS),
       icon: a.PtA,
       label: m.intl.string(m.t.IhIpc7)
     }, {
       type: h.LWr.FILTER_MENTIONS,
-      isEligible: b.has(h.LWr.FILTER_MENTIONS),
+      isEligible: y.has(h.LWr.FILTER_MENTIONS),
       icon: a.XxR,
       label: m.intl.string(m.t.fpKv9Y)
     }];
@@ -94,5 +94,5 @@ function E(e) {
         onSelect: m
       })
     })
-  }, [b, n, E, t])
+  }, [y, n, E, t])
 }

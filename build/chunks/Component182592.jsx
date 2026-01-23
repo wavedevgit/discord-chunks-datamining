@@ -2,7 +2,7 @@
 /** chunk id: 182592, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v,
+  A: () => A,
   p: () => O
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -23,7 +23,7 @@ var Chunk675100 = require("./675100.js"),
   Chunk517286 = require("./517286.js"),
   Chunk446770 = require("./446770.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,14 +32,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -55,11 +55,11 @@ let O = e => {
       restartMethod: d,
       profileEffectConfig: _,
       noBorderRadius: g = false,
-      delayIntro: b = true,
-      layerData: y
-    } = e, O = i.useRef(null), [A, v] = i.useState([]), [S, I] = i.useState(0), [T, C] = i.useState(0), {
+      delayIntro: y = true,
+      layerData: b
+    } = e, O = i.useRef(null), [v, A] = i.useState([]), [I, S] = i.useState(0), [T, C] = i.useState(0), {
       accessibilityLabel: N
-    } = _, R = b ? 500 : .1, [w, P] = i.useState(-R), {
+    } = _, R = y ? 500 : .1, [w, P] = i.useState(-R), {
       stop: D,
       reset: x,
       ticking: L
@@ -69,19 +69,19 @@ let O = e => {
     i.useEffect(() => {
       j.current = R
     }), i.useEffect(() => {
-      P(-j.current), v((0, h.u)(_.effects))
+      P(-j.current), A((0, h.u)(_.effects))
     }, [_]), i.useEffect(() => {
       let e = 0,
         t = 1 / 0;
-      A.forEach(n => {
+      v.forEach(n => {
         let r = n.start + n.duration;
         r > e && (e = r), n.loop && n.start < t && (t = n.start)
-      }), I(t), C(e)
-    }, [C, A]);
+      }), S(t), C(e)
+    }, [C, v]);
     let [M, k] = i.useState(false);
     return i.useEffect(() => {
-      true === u || l || (D(), P(0)), !l && M && L.current && (D(), P(0)), a && l && !L.current && (x(), _.animationType === o.l.ANIMATION_TYPE_PERSISTENT ? P(d === f.H.FromStart ? 0 : S) : P(0))
-    }, [l, M, S, a, D, x, L, _.animationType, u, d]), (0, r.jsx)("div", {
+      true === u || l || (D(), P(0)), !l && M && L.current && (D(), P(0)), a && l && !L.current && (x(), _.animationType === o.l.ANIMATION_TYPE_PERSISTENT ? P(d === f.H.FromStart ? 0 : I) : P(0))
+    }, [l, M, I, a, D, x, L, _.animationType, u, d]), (0, r.jsx)("div", {
       ref: O,
       className: s()(E.yC, {
         [E.yo]: l && c
@@ -90,7 +90,7 @@ let O = e => {
       role: "img",
       children: (0, r.jsx)("div", {
         className: g ? E.qb : E.vW,
-        children: A.map((e, i) => {
+        children: v.map((e, i) => {
           if (!L.current && _.animationType === o.l.ANIMATION_TYPE_PERSISTENT && null != _.staticFrameSrc && 0 === i && true === u) {
             var a, s, l, c;
             let {
@@ -117,13 +117,13 @@ let O = e => {
             maxLoops: n,
             loopEnd: T,
             bannerAdjustment: t,
-            imageData: null == y ? true : y[e.src]
+            imageData: null == b ? true : b[e.src]
           }, e.src + i)
         })
       })
     })
   },
-  A = e => {
+  v = e => {
     let {
       config: t,
       useThumbnail: n,
@@ -156,7 +156,7 @@ let O = e => {
       })
     })
   },
-  v = e => {
+  A = e => {
     let t = (0, d.j)(),
       n = (0, l.bG)([c.A], () => c.A.useReducedMotion),
       i = (0, _.V)(e.skuId),
@@ -169,18 +169,18 @@ let O = e => {
       } = e,
       E = !!(!t && e.shopPreview || !t && (null == i ? true : i.config.animationType) === o.l.ANIMATION_TYPE_PERSISTENT || n || false === p && false === m),
       {
-        loaded: b,
-        layerData: v
+        loaded: y,
+        layerData: A
       } = (0, g.A)(i, false === E);
-    return null != i && null != f && (t || e.shopPreview || i.config.animationType !== o.l.ANIMATION_TYPE_INTERMITTENT) ? E ? (0, r.jsx)(A, {
+    return null != i && null != f && (t || e.shopPreview || i.config.animationType !== o.l.ANIMATION_TYPE_INTERMITTENT) ? E ? (0, r.jsx)(v, {
       useThumbnail: e.useThumbnail,
       config: f,
       bannerAdjustment: e.bannerAdjustment,
       noBorderRadius: e.noBorderRadius,
       isHovering: e.isHovering,
       useOpacityOnHover: e.useOpacityOnHover
-    }) : b ? (0, r.jsx)(O, y({
+    }) : y ? (0, r.jsx)(O, b({
       profileEffectConfig: f,
-      layerData: v
+      layerData: A
     }, e)) : null : null
   }

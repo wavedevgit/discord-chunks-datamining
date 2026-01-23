@@ -2,17 +2,17 @@
 /** chunk id: 965660, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Kv: () => v,
-  M9: () => y,
+  Kv: () => A,
+  M9: () => b,
   MC: () => O,
   Ot: () => g,
   UW: () => E,
-  Ub: () => b,
-  Wl: () => S,
-  YP: () => I,
+  Ub: () => y,
+  Wl: () => I,
+  YP: () => S,
   jR: () => h,
   kc: () => m,
-  uk: () => A
+  uk: () => v
 }), require("./65821.js"), require("./228524.js"), require("./896048.js"), require("./747238.js"), require("./812715.js");
 var Chunk835245 = require("./835245.js"),
   Chunk773669 = require("./773669.js"),
@@ -143,7 +143,7 @@ function E(e) {
   }
 }
 
-function b(e) {
+function y(e) {
   switch (e) {
     case l.o.FEATURED:
       return l.Iq;
@@ -164,7 +164,7 @@ function b(e) {
   }
 }
 
-function y(e) {
+function b(e) {
   return null == e || Date.now() - e > l.WV
 }
 
@@ -187,7 +187,7 @@ function O(e) {
   }
 }
 
-function A(e) {
+function v(e) {
   return {
     id: e.id,
     name: e.name,
@@ -205,12 +205,12 @@ function A(e) {
   }
 }
 
-function v() {
+function A() {
   var e;
   let [t] = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [i.default], n = (0, l.tO)(), r = t.locale;
   return (null != (e = n.find(e => e.code === r)) ? e : n[0]).code
 }
-async function S(e) {
+async function I(e) {
   let {
     loadId: t,
     guildId: n,
@@ -230,6 +230,6 @@ async function S(e) {
   })
 }
 
-function I() {
+function S() {
   return (0, r.A)().replace(/-/g, "")
 }

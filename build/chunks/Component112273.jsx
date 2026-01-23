@@ -29,7 +29,7 @@ function O(e) {
     party: t,
     onChannelContextMenu: n,
     quest: O
-  } = e, y = (0, _.G)(), {
+  } = e, y = (0, b.G)(), {
     voiceChannels: I,
     currentActivities: v,
     partiedMembers: S,
@@ -50,7 +50,7 @@ function O(e) {
         channel: i,
         guild: l
       } = e;
-      x((0, r.jsx)(b.A.VoiceSection, {
+      x((0, r.jsx)(_.A.VoiceSection, {
         guild: l,
         channel: i,
         members: t,
@@ -66,7 +66,7 @@ function O(e) {
       }, "voice-".concat(i.id)))
     }), t.currentActivities))
     if (null != e) {
-      let t = m.Fm(e);
+      let t = A.Fm(e);
       if (null != t) {
         x(t);
         break
@@ -77,7 +77,7 @@ function O(e) {
       streamUser: n,
       activity: a
     } = e;
-    x((0, r.jsx)(b.A.ApplicationStreamingSection, {
+    x((0, r.jsx)(_.A.ApplicationStreamingSection, {
       guildId: null == N ? true : N.id,
       user: n,
       activity: a,
@@ -87,7 +87,7 @@ function O(e) {
       }
     }, "application-stream-".concat(t.ownerId)))
   }), v.forEach((e, t) => {
-    var n, i, l, p, m, _, y, C, j;
+    var n, i, l, p, A, b, y, C, j;
     let {
       activity: P,
       game: w,
@@ -96,7 +96,7 @@ function O(e) {
     } = e;
     if (null == P || null == P.type) return null;
     if (P.type === E.$pd.PLAYING)
-      if (v.length > 1 && !(0, a.A)(P) && null != w) x((0, r.jsx)(b.A.GameSection, {
+      if (v.length > 1 && !(0, a.A)(P) && null != w) x((0, r.jsx)(_.A.GameSection, {
         icon: w.getIconURL(64),
         name: w.name,
         partySize: {
@@ -110,29 +110,29 @@ function O(e) {
       else if ((0, s.A)(P)) {
       let e = new Set(L.map(e => e.id)),
         t = null == (l = I.find(e => null != e)) ? true : l.channel;
-      null != t && x((0, r.jsx)(b.A.EmbeddedActivitySection, {
+      null != t && x((0, r.jsx)(_.A.EmbeddedActivitySection, {
         activity: P,
         participants: e,
         channel: t,
         guildId: t.guild_id
       }, "embedded-activity-".concat(P.application_id)))
-    } else(0, c.A)(P) ? x((0, r.jsx)(b.A.XboxSection, {
+    } else(0, c.A)(P) ? x((0, r.jsx)(_.A.XboxSection, {
       title: w.name
-    }, "xbox-".concat(null != (p = P.session_id) ? p : t))) : x((0, r.jsx)(b.A.RichPresenceSection, {
+    }, "xbox-".concat(null != (p = P.session_id) ? p : t))) : x((0, r.jsx)(_.A.RichPresenceSection, {
       activity: P,
-      getAssetImage: g.uD,
+      getAssetImage: m.uD,
       user: R
-    }, "rich-presence-".concat(null != (m = P.session_id) ? m : t, "-").concat(R.id)));
+    }, "rich-presence-".concat(null != (A = P.session_id) ? A : t, "-").concat(R.id)));
     else if ((0, u.A)(P)) {
       let e = I.length > 0 && I[0].members.length > 1,
         n = L.length > 1;
-      x((0, r.jsx)(b.A.TwitchSection, {
+      x((0, r.jsx)(_.A.TwitchSection, {
         guildId: null == N ? true : N.id,
         activity: P,
         user: e || n ? R : null,
-        getAssetImage: g.uD
-      }, "streaming-".concat(null != (_ = P.session_id) ? _ : t)))
-    } else P.type === E.$pd.LISTENING && ((0, o.A)(P) ? x((0, r.jsx)(b.A.SpotifySection, {
+        getAssetImage: m.uD
+      }, "streaming-".concat(null != (b = P.session_id) ? b : t)))
+    } else P.type === E.$pd.LISTENING && ((0, o.A)(P) ? x((0, r.jsx)(_.A.SpotifySection, {
       activity: P,
       isSolo: 1 === S.length,
       partySize: {
@@ -140,17 +140,17 @@ function O(e) {
         unknownSize: 0,
         totalSize: L.length
       },
-      getAssetImage: g.uD,
+      getAssetImage: m.uD,
       members: L
-    }, "spotify-".concat(null != (y = P.session_id) ? y : t, "-").concat(R.id))) : (null != P.assets || (0, a.A)(P)) && x((0, r.jsx)(b.A.RichPresenceSection, {
+    }, "spotify-".concat(null != (y = P.session_id) ? y : t, "-").concat(R.id))) : (null != P.assets || (0, a.A)(P)) && x((0, r.jsx)(_.A.RichPresenceSection, {
       activity: P,
-      getAssetImage: g.uD,
+      getAssetImage: m.uD,
       user: R
     }, "rich-presence-".concat(null != (C = P.session_id) ? C : t, "-").concat(R.id))));
-    T && null != O && null != w && (0, h.zS)(P, O) && (null == O.userStatus || !(0, f.gO)(O.userStatus, d.uF.ACTIVITY_PANEL)) && x((0, r.jsx)(A.A, {
+    T && null != O && null != w && (0, g.zS)(P, O) && (null == O.userStatus || !(0, h.gO)(O.userStatus, d.uF.ACTIVITY_PANEL)) && x((0, r.jsx)(f.A, {
       quest: O
     }, "quest-".concat(O.id, "-").concat(null != (j = P.session_id) ? j : t)))
-  }), j.length > 0 ? (0, r.jsx)(b.A.Body, {
+  }), j.length > 0 ? (0, r.jsx)(_.A.Body, {
     children: j
   }) : null
 }

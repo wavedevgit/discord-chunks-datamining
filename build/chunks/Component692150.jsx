@@ -30,63 +30,63 @@ function N(e) {
   let {
     guildId: t
   } = e;
-  (0, m.tR)(t), (0, h.A)(t);
-  let n = (0, x.U)("GameServerPage");
+  (0, g.tR)(t), (0, b.A)(t);
+  let n = (0, _.U)("GameServerPage");
   a.useEffect(() => {
-    (0, b.cq)(t), c.A.getDetectableGames()
+    (0, f.cq)(t), o.A.getDetectableGames()
   }, [t]);
-  let N = (0, f.A)(t),
-    A = (0, i.bG)([j.A], () => j.A.getStateForGuild(t)),
-    E = a.useMemo(() => (null == A ? true : A.instances) == null ? true : 0 === Object.values(A.instances).length ? null : Object.values(A.instances).map((e, n) => (0, r.jsx)(g.Ay, {
+  let N = (0, m.A)(t),
+    A = (0, l.bG)([x.A], () => x.A.getStateForGuild(t)),
+    I = a.useMemo(() => (null == A ? true : A.instances) == null ? true : 0 === Object.values(A.instances).length ? null : Object.values(A.instances).map((e, n) => (0, r.jsx)(j.Ay, {
       guildId: t,
       instance: e
     }, "".concat(e.gameId, "-").concat(n))), [null == A ? true : A.instances, t]),
-    [I, T] = a.useState(false);
+    [C, E] = a.useState(false);
   return a.useEffect(() => {
-    (null == E || E.length > 0) && T(true)
-  }, [E]), (0, r.jsxs)("div", {
-    className: _.kL,
-    children: [(0, r.jsxs)(o.Ay, {
-      className: _.KE,
+    (null == I || I.length > 0) && E(true)
+  }, [I]), (0, r.jsxs)("div", {
+    className: S.kL,
+    children: [(0, r.jsxs)(c.Ay, {
+      className: S.KE,
       toolbar: (0, r.jsx)("div", {}),
-      children: [(0, r.jsx)(o.Ay.Icon, {
-        icon: l.GameControllerIcon,
+      children: [(0, r.jsx)(c.Ay.Icon, {
+        icon: i.GameControllerIcon,
         "aria-label": ""
-      }), (0, r.jsx)(o.Ay.Title, {
-        children: S.intl.string(O.default.vCzwM7)
+      }), (0, r.jsx)(c.Ay.Title, {
+        children: O.intl.string(y.default.vCzwM7)
       }), (0, r.jsx)(s.LpS, {
         disableColor: true,
-        text: S.intl.string(S.t.oW0eUd),
-        className: _.qS
-      }), (0, r.jsx)(o.Ay.Divider, {
-        className: _.yF
+        text: O.intl.string(O.t.oW0eUd),
+        className: S.qS
+      }), (0, r.jsx)(c.Ay.Divider, {
+        className: S.yF
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: S.intl.format(O.default.LiR4eN, {
-          helpCenterUrl: u.A.getArticleURL(y.MVz.GAME_SERVER_HOSTING)
+        children: O.intl.format(y.default.LiR4eN, {
+          helpCenterUrl: u.A.getArticleURL(h.MVz.GAME_SERVER_HOSTING)
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: _.hQ,
+      className: S.hQ,
       children: [(null == A ? true : A.instances) != null ? (0, r.jsxs)("div", {
-        className: _.nd,
+        className: S.nd,
         children: [n && (0, r.jsx)("div", {
-          className: _.MR,
+          className: S.MR,
           children: (0, r.jsx)(d.A, {
             look: d.k.WARNING,
-            children: S.intl.format(O.default.XzXjK2, {})
+            children: O.intl.format(y.default.XzXjK2, {})
           })
         }), (0, r.jsx)(s.IpV, {
           children: (0, r.jsxs)("div", {
-            className: _.Y_,
-            children: [E, I && (0, r.jsx)(v.A, {
+            className: S.Y_,
+            children: [I, C && (0, r.jsx)(v.A, {
               guildId: t
             })]
           })
         })]
       }) : (0, r.jsx)("div", {
-        className: _.dc,
+        className: S.dc,
         children: (0, r.jsx)(s.y$y, {
           type: s.tVU.SPINNING_CIRCLE
         })

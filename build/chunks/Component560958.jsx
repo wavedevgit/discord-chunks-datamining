@@ -23,24 +23,24 @@ class i extends Chunk64700.Component {
         shouldScrollToTop: a
       },
       scrollRef: {
-        current: s
+        current: r
       }
     } = this;
-    null != s && t !== e.location && (null != a ? a(this.props) && (s.scrollTop = 0) : s.scrollTop = 0)
+    null != r && t !== e.location && (null != a ? a(this.props) && (r.scrollTop = 0) : r.scrollTop = 0)
   }
   render() {
     let {
       className: e,
       render: t
     } = this.props;
-    return (0, s.jsx)("div", {
+    return (0, r.jsx)("div", {
       ref: this.scrollRef,
       className: e,
       children: t(this.scrollTo, this.getScrollTop)
     })
   }
   constructor(...e) {
-    super(...e), n(this, "scrollRef", l.createRef()), n(this, "scrollTo", e => {
+    super(...e), n(this, "scrollRef", s.createRef()), n(this, "scrollTo", e => {
       null != this.scrollRef.current && (this.scrollRef.current.scrollTop = e)
     }), n(this, "getScrollTop", () => null == this.scrollRef.current ? 0 : this.scrollRef.current.scrollTop)
   }

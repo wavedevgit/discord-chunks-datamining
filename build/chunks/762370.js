@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 762370, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 });
 var Chunk735438 = require("./735438.js"),
   l = require.n(Chunk735438),
@@ -13,20 +13,20 @@ var Chunk735438 = require("./735438.js"),
   Chunk488926 = require("./488926.js"),
   Chunk652215 = require("./652215.js");
 
-function f(e, t) {
-  return (0, i.bG)([c.A, a.A, s.Ay, o.A], () => {
+function p(e, t) {
+  return (0, i.bG)([c.A, s.A, a.Ay, o.A], () => {
     var n;
-    let r = a.A.getChannel(t);
+    let r = s.A.getChannel(t);
     if (null == r) returnfalse;
     let i = c.A.can(d.xBc.SEND_MESSAGES, r),
-      f = s.Ay.getMember(r.guild_id, e),
-      p = l().keyBy(o.A.getManyRoles(r.guild_id, null != (n = null == f ? true : f.roles) ? n : []), "id"),
-      h = u.$3({
+      p = a.Ay.getMember(r.guild_id, e),
+      h = l().keyBy(o.A.getManyRoles(r.guild_id, null != (n = null == p ? true : p.roles) ? n : []), "id"),
+      f = u.$3({
         permission: d.xBc.STREAM,
         user: e,
         context: r,
-        roles: p
+        roles: h
       });
-    return i && h
+    return i && f
   })
 }

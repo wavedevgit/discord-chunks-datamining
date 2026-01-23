@@ -51,50 +51,50 @@ function P(e) {
       recipientIds: t.id,
       joinCall: true
     })
-  }, [t.id]), f = i.useCallback(() => {
+  }, [t.id]), h = i.useCallback(() => {
     u.A.openPrivateChannel({
       recipientIds: t.id,
       joinCall: true,
       joinCallVideo: true
     })
-  }, [t.id]), h = i.useCallback(() => {
+  }, [t.id]), g = i.useCallback(() => {
     E.A.removeFriend({
       userId: t.id,
       applicationId: l ? n : null,
       location: "Friends"
     })
-  }, [n, l, t.id]), A = i.useCallback(() => {
+  }, [n, l, t.id]), f = i.useCallback(() => {
     let e = l ? T.intl.string(T.t.RLcE6x) : T.intl.string(T.t.cvSt1J);
     c.A.show({
       title: T.intl.formatToPlainString(T.t.fPLvZd, {
-        name: _.Ay.getName(t)
+        name: b.Ay.getName(t)
       }),
       body: T.intl.formatToPlainString(T.t.l5FFq6, {
-        name: _.Ay.getName(t)
+        name: b.Ay.getName(t)
       }),
       confirmText: e,
       confirmVariant: "critical-primary",
       cancelText: T.intl.string(T.t["ETE/oC"]),
-      onConfirm: h
+      onConfirm: g
     })
-  }, [h, l, t]), g = (0, s.bG)([m.A], () => m.A.supports(N.O5.VIDEO)), b = t.isProvisional, O = l ? T.intl.string(T.t.RLcE6x) : T.intl.string(T.t.cvSt1J);
+  }, [g, l, t]), m = (0, s.bG)([A.A], () => A.A.supports(N.O5.VIDEO)), _ = t.isProvisional, O = l ? T.intl.string(T.t.RLcE6x) : T.intl.string(T.t.cvSt1J);
   return (0, r.jsxs)(o.W1t, {
     navId: "friend-row",
     "aria-label": T.intl.string(T.t.liqwPJ),
     onClose: d.Z_,
     onSelect: a,
-    children: [!b && g ? (0, r.jsx)(o.Drp, {
+    children: [!_ && m ? (0, r.jsx)(o.Drp, {
       id: "start-video-call",
       label: T.intl.string(T.t.oCqlGG),
-      action: f
-    }) : null, !b && (0, r.jsx)(o.Drp, {
+      action: h
+    }) : null, !_ && (0, r.jsx)(o.Drp, {
       id: "start-voice-call",
       label: T.intl.string(T.t.focH1t),
       action: p
     }), (0, r.jsx)(o.Drp, {
       id: "remove-friend",
       label: O,
-      action: A,
+      action: f,
       color: "danger"
     })]
   })
@@ -117,16 +117,16 @@ class w extends Chunk64700.PureComponent {
       isGameRelationship: s,
       giftIntentType: c,
       hasFriendAnniversarySection: u,
-      sectionIndex: A
+      sectionIndex: f
     } = this.props, {
-      isActiveRow: g
+      isActiveRow: m
     } = this.state;
-    return (0, f.p)(p.A.FRIENDS_LIST) && c === C.np.FRIEND_ANNIVERSARY && u && 0 === A ? (0, r.jsx)(h.A, {
+    return (0, h.p)(p.A.FRIENDS_LIST) && c === C.np.FRIEND_ANNIVERSARY && u && 0 === f ? (0, r.jsx)(g.A, {
       ref: this.peopleListItemRef,
       isFocused: t,
-      isActive: g,
+      isActive: m,
       recipientUser: e,
-      onOtherHover: () => g ? null : (0, d.Z_)(),
+      onOtherHover: () => m ? null : (0, d.Z_)(),
       onClick: this.handleOpenPrivateChannel,
       giftIntentType: c,
       status: l,
@@ -137,9 +137,9 @@ class w extends Chunk64700.PureComponent {
     }) : (0, r.jsx)(y.A, {
       ref: this.peopleListItemRef,
       isFocused: t,
-      isActive: g,
+      isActive: m,
       user: e,
-      onOtherHover: () => g ? null : (0, d.Z_)(),
+      onOtherHover: () => m ? null : (0, d.Z_)(),
       onClick: this.handleOpenPrivateChannel,
       children: t => (0, r.jsxs)("div", {
         className: j.a4,
@@ -153,7 +153,7 @@ class w extends Chunk64700.PureComponent {
             applicationStream: i,
             status: l,
             user: e,
-            userIgnored: b.A.isIgnored(e.id)
+            userIgnored: _.A.isIgnored(e.id)
           }),
           hovered: t,
           showAccountIdentifier: !s && !e.isProvisional
@@ -182,8 +182,8 @@ class w extends Chunk64700.PureComponent {
         user: t
       } = this.props;
       e.stopPropagation();
-      let n = a().find(g.A.getMutablePrivateChannels(), e => e.type === S.rbe.DM && e.getRecipientId() === t.id);
-      null != n ? (0, A.pX)(S.BVt.CHANNEL(S.ME, n.id)) : u.A.openPrivateChannel({
+      let n = a().find(m.A.getMutablePrivateChannels(), e => e.type === S.rbe.DM && e.getRecipientId() === t.id);
+      null != n ? (0, f.pX)(S.BVt.CHANNEL(S.ME, n.id)) : u.A.openPrivateChannel({
         recipientIds: t.id
       })
     }), x(this, "handleOpenActionsMenu", e => {

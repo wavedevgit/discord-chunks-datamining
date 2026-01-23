@@ -2,7 +2,7 @@
 /** chunk id: 441349, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  l: () => S
+  l: () => I
 });
 var Chunk627968 = require("./627968.js"),
   Chunk503698 = require("./503698.js"),
@@ -29,7 +29,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,24 +54,24 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = v(e, t), Object.getOwnPropertySymbols)
+  if (a = A(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function v(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -79,17 +79,17 @@ function v(e, t) {
   return i
 }
 
-function S(e) {
+function I(e) {
   let {
     value: t,
     onChange: n,
     minValue: i,
     maxValue: E,
-    placeholderValue: y,
-    granularity: v = "day",
-    hourCycle: S,
-    hideTimeZone: I = false
-  } = e, T = A(e, ["value", "onChange", "minValue", "maxValue", "placeholderValue", "granularity", "hourCycle", "hideTimeZone"]), {
+    placeholderValue: b,
+    granularity: A = "day",
+    hourCycle: I,
+    hideTimeZone: S = false
+  } = e, T = v(e, ["value", "onChange", "minValue", "maxValue", "placeholderValue", "granularity", "hourCycle", "hideTimeZone"]), {
     i18n: C
   } = (0, m.G9)(), {
     fieldProps: N
@@ -130,8 +130,8 @@ function S(e) {
   }), B = e => {
     null == n || n(e), M(false)
   };
-  return (0, r.jsx)(p.D, O(b({}, N), {
-    children: e => (0, r.jsx)(h.F, O(b({
+  return (0, r.jsx)(p.D, O(y({}, N), {
+    children: e => (0, r.jsx)(h.F, O(y({
       className: g.LF,
       validation: D,
       ref: x.setReference
@@ -148,10 +148,10 @@ function S(e) {
         isRequired: P,
         minValue: i,
         maxValue: E,
-        placeholderValue: y,
-        granularity: v,
-        hourCycle: S,
-        hideTimeZone: I,
+        placeholderValue: b,
+        granularity: A,
+        hourCycle: I,
+        hideTimeZone: S,
         "data-mana-component": "date-picker",
         className: g.dn,
         children: [(0, r.jsxs)(o.Y, {
@@ -170,7 +170,7 @@ function S(e) {
               color: "currentColor"
             })
           })]
-        }), j && V && (0, r.jsx)("div", O(b({}, U()), {
+        }), j && V && (0, r.jsx)("div", O(y({}, U()), {
           ref: x.setFloating,
           style: L,
           className: g.oO,

@@ -18,7 +18,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk811094 = require("./811094.js");
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,50 +56,50 @@ function A(e) {
     selected: A
   } = e, {
     hasUnread: y,
-    mentionCount: O
+    mentionCount: _
   } = (0, l.cf)([u.Ay], () => ({
-    hasUnread: u.Ay.hasUnread(t.id, p.P.GUILD_EVENT),
-    mentionCount: u.Ay.getMentionCount(t.id, p.P.GUILD_EVENT)
-  }), [t.id]), j = (0, l.bG)([d.Ay], () => d.Ay.isMuteScheduledEventsEnabled(t.id));
-  async function v() {
-    await (0, a.mMO)(async () => {
+    hasUnread: u.Ay.hasUnread(t.id, h.P.GUILD_EVENT),
+    mentionCount: u.Ay.getMentionCount(t.id, h.P.GUILD_EVENT)
+  }), [t.id]), O = (0, l.bG)([d.Ay], () => d.Ay.isMuteScheduledEventsEnabled(t.id));
+  async function j() {
+    await (0, s.mMO)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("51354"), n.e("7453"), n.e("90041")]).then(n.bind(n, 926956));
-      return n => (0, r.jsx)(e, m(g({}, n), {
+      return n => (0, r.jsx)(e, b(m({}, n), {
         guildId: t.id
       }))
     }), (0, o.Dr)(i.M.GUILD_HEADER_EVENT_UPSELL)
   }
-  let x = (0, c.Ay)(t.id),
-    E = x.length > 0 ? h.intl.formatToPlainString(h.t.IBdqSu, {
-      number: x.length
-    }) : h.intl.string(h.t.tlopTM);
-  return (0, r.jsx)(f.G, {
+  let v = (0, c.Ay)(t.id),
+    x = v.length > 0 ? f.intl.formatToPlainString(f.t.IBdqSu, {
+      number: v.length
+    }) : f.intl.string(f.t.tlopTM);
+  return (0, r.jsx)(p.G, {
     id: "upcoming-events-".concat(t.id),
-    renderIcon: e => (0, r.jsx)(a.CTc, {
+    renderIcon: e => (0, r.jsx)(s.CTc, {
       size: "md",
       color: "currentColor",
       className: e
     }),
-    text: E,
+    text: x,
     selected: A,
-    onClick: v,
+    onClick: j,
     onContextMenu: e => {
-      (0, s.L3)(e, async () => {
+      (0, a.L3)(e, async () => {
         let {
           default: e
         } = await n.e("71742").then(n.bind(n, 502029));
-        return n => (0, r.jsx)(e, m(g({}, n), {
+        return n => (0, r.jsx)(e, b(m({}, n), {
           guildId: t.id
         }))
       })
     },
-    showUnread: y && !j,
-    trailing: !j && O > 0 ? (0, r.jsx)(a.hVq, {
-      className: b.Do,
+    showUnread: y && !O,
+    trailing: !O && _ > 0 ? (0, r.jsx)(s.hVq, {
+      className: g.Do,
       disableColor: true,
-      count: O
+      count: _
     }) : null
   })
 }

@@ -15,16 +15,16 @@ let s = Math.ceil(2 * Math.PI * 20),
         used: d
       } = e,
       p = Math.max(0, Math.min(1, d / u)),
-      f = "".concat(Math.floor(100 * p), "%");
+      h = "".concat(Math.floor(100 * p), "%");
     return (0, r.jsx)(i.m, {
       text: l.intl.formatToPlainString(l.t["2eoRMh"], {
-        used: f
+        used: h
       }),
       children: (0, r.jsxs)("div", {
         className: a.iE,
         role: "progressbar",
         "aria-label": l.intl.formatToPlainString(l.t["2eoRMh"], {
-          used: f
+          used: h
         }),
         children: [(0, r.jsxs)("svg", {
           viewBox: "25 25 50 50",
@@ -46,7 +46,7 @@ let s = Math.ceil(2 * Math.PI * 20),
         }), (0, r.jsx)("aside", {
           className: a.Y3,
           "aria-hidden": true,
-          children: f
+          children: h
         })]
       })
     })

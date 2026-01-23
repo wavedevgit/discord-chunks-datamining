@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   k: () => O,
-  o: () => y
+  o: () => b
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,7 +26,7 @@ let g = e => {
       url: n,
       description: i
     } = t;
-    return null == n ? null : (0, r.jsx)(b, {
+    return null == n ? null : (0, r.jsx)(y, {
       url: n,
       description: i
     })
@@ -38,11 +38,11 @@ let g = e => {
     } = e;
     if (!_.Tj.has(a.type)) return null;
     let s = true !== a.video && a.type !== o.A.GIFV ? a.video.url : null != (t = null == (n = a.thumbnail) ? true : n.url) ? t : null == (i = a.image) ? true : i.url;
-    return null == s ? null : (0, r.jsx)(b, {
+    return null == s ? null : (0, r.jsx)(y, {
       url: s
     })
   },
-  b = e => {
+  y = e => {
     let {
       url: t,
       description: n
@@ -61,7 +61,7 @@ let g = e => {
     })
   };
 
-function y(e) {
+function b(e) {
   c.A.pop(), (0, f.r)({
     id: "explicit-media-false-positive-modal",
     text: h.intl.string(h.t.gFsTKu)

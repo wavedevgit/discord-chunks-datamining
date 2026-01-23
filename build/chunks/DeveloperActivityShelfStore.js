@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $: () => p,
-  A: () => S
+  A: () => I
 }), require("./938796.js");
 var r, Chunk665260 = require("./665260.js"),
   Chunk311907 = require("./311907.js"),
@@ -63,7 +63,7 @@ function E(e) {
   f.activityUrlOverride = t
 }
 
-function b(e) {
+function y(e) {
   let {
     applicationId: t,
     timestamp: n
@@ -72,7 +72,7 @@ function b(e) {
   f.lastUsedObject[t] = n
 }
 
-function y(e) {
+function b(e) {
   let {
     applications: t
   } = e;
@@ -86,13 +86,13 @@ function O(e) {
   _ = "ERROR"
 }
 
-function A(e) {
+function v(e) {
   let {
     filter: t
   } = e;
   f.filter = t
 }
-class v extends(r = Chunk311907.Ay.PersistedStore) {
+class A extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     f = u({}, d(), null != e ? e : {})
   }
@@ -124,17 +124,17 @@ class v extends(r = Chunk311907.Ay.PersistedStore) {
     return this.getIsEnabled() && null != h.find(t => t.id === e)
   }
 }
-c(v, "displayName", "DeveloperActivityShelfStore"), c(v, "persistKey", "DeveloperActivityShelfStore"), c(v, "migrations", [e => (delete e.isEnabled, u({}, e))]);
-let S = new v(Chunk73153.h, {
+c(A, "displayName", "DeveloperActivityShelfStore"), c(A, "persistKey", "DeveloperActivityShelfStore"), c(A, "migrations", [e => (delete e.isEnabled, u({}, e))]);
+let I = new A(Chunk73153.h, {
   LOGOUT: m,
   DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE: g,
   DEVELOPER_ACTIVITY_SHELF_SET_ACTIVITY_URL_OVERRIDE: E,
-  DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED: b,
+  DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED: y,
   DEVELOPER_ACTIVITY_SHELF_FETCH_START() {
     _ = "LOADING"
   },
-  DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: y,
+  DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: b,
   DEVELOPER_ACTIVITY_SHELF_FETCH_FAIL: O,
-  DEVELOPER_ACTIVITY_SHELF_UPDATE_FILTER: A,
+  DEVELOPER_ACTIVITY_SHELF_UPDATE_FILTER: v,
   USER_SETTINGS_PROTO_UPDATE() {}
 })

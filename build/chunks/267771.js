@@ -1,13 +1,13 @@
 /** Chunk was on 97492 **/
 /** chunk id: 267771, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => a
+  A: () => s
 });
 var Chunk64700 = require("./64700.js"),
   Chunk568065 = require("./568065.js"),
   Chunk652215 = require("./652215.js");
 
-function a(e) {
+function s(e) {
   return (0, r.useMemo)(() => {
     if (null == e) return 0;
     let t = (null == e ? true : e.features.has(i.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) === true ? 0 : i.M2T[i.TVA.TIER_3],

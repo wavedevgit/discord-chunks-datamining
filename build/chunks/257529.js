@@ -1,5 +1,5 @@
 /** Chunk was on 60222 **/
-/** chunk id: 257529, original params: t,n,i (module,exports,require) **/
+/** chunk id: 257529, original params: t,i,n (module,exports,require) **/
 module.exports = {
-  h: "bce65b176ef68ad3"
+  h: "description_a47d61"
 }

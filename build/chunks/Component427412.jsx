@@ -28,31 +28,31 @@ function u(t) {
       return
     }(0, c.e7)(u, t), i()
   };
-  return (0, r.jsx)(s.ExpressiveModal, {
+  return (0, n.jsx)(r.ExpressiveModal, {
     transitionState: e,
     graphic: {
       type: "image",
       src: p.A
     },
-    title: d.intl.string(d.t.Ul1RJQ),
-    subtitle: d.intl.format(d.t["Z+3bWy"], {
-      stageChannelHook: () => (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(n.qux, {
+    title: h.intl.string(h.t.Ul1RJQ),
+    subtitle: h.intl.format(h.t["Z+3bWy"], {
+      stageChannelHook: () => (0, n.jsxs)(n.Fragment, {
+        children: [(0, n.jsx)(s.qux, {
           size: "custom",
           color: "currentColor",
           height: 14,
           width: 14,
-          className: h.p
+          className: d.p
         }), u.name]
       })
     }),
     onClose: () => (g(true), Promise.resolve()),
     actions: [{
-      text: d.intl.string(d.t.L5eIZ2),
+      text: h.intl.string(h.t.L5eIZ2),
       onClick: () => i(),
       variant: "secondary"
     }, {
-      text: d.intl.string(d.t.MMlhsr),
+      text: h.intl.string(h.t.MMlhsr),
       onClick: () => g(false),
       variant: "active"
     }]

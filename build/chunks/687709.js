@@ -1,7 +1,7 @@
 /** Chunk was on 97492 **/
 /** chunk id: 687709, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 }), require("./134528.js"), require("./947204.js");
 var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
@@ -17,17 +17,17 @@ let d = {
         id: n,
         name: l
       } = e;
-      await a.A.unarchiveThreadIfNecessary(e.id), r.Bo.put({
+      await s.A.unarchiveThreadIfNecessary(e.id), r.Bo.put({
         url: c.Rsh.PIN(n, t),
         rejectWithError: true
       }).catch(t => {
         let n = new i.LG(t),
           r = n.code,
-          a = u.intl.string(u.t.j2d6Km),
-          s = u.intl.string(u.t.fEptJP);
+          s = u.intl.string(u.t.j2d6Km),
+          a = u.intl.string(u.t.fEptJP);
         if (null != r) switch (r) {
           case c.t02.TOO_MANY_PINS_IN_CHANNEL:
-            a = u.intl.string(u.t.HI88Q3), s = e.isPrivate() ? u.intl.formatToPlainString(u.t.Q89oQU, {
+            s = u.intl.string(u.t.HI88Q3), a = e.isPrivate() ? u.intl.formatToPlainString(u.t.Q89oQU, {
               maxPins: c.KL3
             }) : u.intl.formatToPlainString(u.t.NnO1S5, {
               maxPins: c.KL3,
@@ -35,33 +35,33 @@ let d = {
             });
             break;
           case c.t02.INVALID_ACCESS:
-            a = u.intl.string(u.t["25gfQX"]), s = u.intl.string(u.t.QNnTwN);
+            s = u.intl.string(u.t["25gfQX"]), a = u.intl.string(u.t.QNnTwN);
             break;
           case c.t02.INVALID_PIN_MESSAGE_CHANNEL:
-            a = u.intl.string(u.t["Q5G6+m"]), s = u.intl.string(u.t["5hgPfC"]);
+            s = u.intl.string(u.t["Q5G6+m"]), a = u.intl.string(u.t["5hgPfC"]);
             break;
           case c.t02.INVALID_THREAD_ARCHIVE_STATE:
-            a = u.intl.string(u.t.fu6Lbl), s = u.intl.string(u.t.FmrcZM);
+            s = u.intl.string(u.t.fu6Lbl), a = u.intl.string(u.t.FmrcZM);
             break;
           case c.t02.INVALID_ACTION_SYSTEM_MESSAGE:
-            a = u.intl.string(u.t["zV0/FC"]), s = u.intl.string(u.t.C4a7xI);
+            s = u.intl.string(u.t["zV0/FC"]), a = u.intl.string(u.t.C4a7xI);
             break;
           case c.t02.UNKNOWN_MESSAGE:
-            a = u.intl.string(u.t.fkqPro), s = u.intl.string(u.t.H6fRIg);
+            s = u.intl.string(u.t.fkqPro), a = u.intl.string(u.t.H6fRIg);
             break;
           default:
             var d;
-            a = u.intl.string(u.t.HI88Q3), s = null != (d = n.getAnyErrorMessage()) ? d : u.intl.string(u.t.fEptJP)
+            s = u.intl.string(u.t.HI88Q3), a = null != (d = n.getAnyErrorMessage()) ? d : u.intl.string(u.t.fEptJP)
         }
         o.A.show({
-          title: a,
-          body: s,
+          title: s,
+          body: a,
           confirmText: u.intl.string(u.t.BddRzS)
         })
       })
     },
     async unpinMessage(e, t) {
-      await a.A.unarchiveThreadIfNecessary(e.id), r.Bo.del({
+      await s.A.unarchiveThreadIfNecessary(e.id), r.Bo.del({
         url: c.Rsh.PIN(e.id, t),
         oldFormErrors: true,
         rejectWithError: true
@@ -81,26 +81,26 @@ let d = {
     },
     fetchPins(e, t) {
       var n, i;
-      let a = null != (n = null == t ? true : t.reset) && n,
+      let s = null != (n = null == t ? true : t.reset) && n,
         o = null != (i = null == t ? true : t.limit) ? i : 25,
         u = null == t ? true : t.before;
-      (a || function(e, t) {
-        let n = s.A.getPins(e);
+      (s || function(e, t) {
+        let n = a.A.getPins(e);
         if (null == n) returntrue;
         switch (n.state) {
-          case s.e.FAILED:
+          case a.e.FAILED:
             returntrue;
-          case s.e.LOADING:
-          case s.e.LOADED_FINISHED:
+          case a.e.LOADING:
+          case a.e.LOADED_FINISHED:
             returnfalse;
-          case s.e.LOADED_HAS_MORE:
+          case a.e.LOADED_HAS_MORE:
             if (null == t) return 0 === n.items.length;
             return n.items.at(false).pinnedAt === t
         }
       }(e, u)) && (l.h.dispatch({
         type: "LOAD_PINNED_MESSAGES",
         channelId: e,
-        reset: a
+        reset: s
       }), r.Bo.get({
         url: c.Rsh.PINS(e),
         query: {
@@ -125,4 +125,4 @@ let d = {
       }))
     }
   },
-  f = d
+  p = d

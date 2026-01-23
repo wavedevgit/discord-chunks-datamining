@@ -34,31 +34,31 @@ function E(e) {
   m = e, O()
 }
 
-function b() {
+function y() {
   _.clear(), O()
 }
 
-function y() {
+function b() {
   return !m && _.size > 0
 }
 async function O() {
   var e, t, n;
   try {
-    let n = y();
+    let n = b();
     if (h === n || !d.OX) return;
     let r = await (null === s.A || true === s.A || null == (t = s.A.processUtils) || null == (e = t.getGpuProcessId) ? true : e.call(t));
     if (null == r) return;
     l.Ay.SetGPUBoostEnabledByPid(r, n) && (h = n), R.emitChange()
   } catch (e) {
-    (null == (n = e.message) ? true : n.includes("IPC method called after context was released")) && b(), p.error("Error during GPU boost request flush:", e)
+    (null == (n = e.message) ? true : n.includes("IPC method called after context was released")) && y(), p.error("Error during GPU boost request flush:", e)
   }
 }
 
-function A(e) {
+function v(e) {
   g(e.reason, e.enabled)
 }
 
-function v(e) {
+function A(e) {
   let {
     enabled: t,
     mode: n
@@ -66,11 +66,11 @@ function v(e) {
   n === c.x7.DisabledGPUBoost && E(t), n === c.x7.ForceGPUBoost && g(c.y7.DEV_FORCED_GPU_BOOST, t)
 }
 
-function S() {
-  b()
+function I() {
+  y()
 }
 
-function I(e) {
+function S(e) {
   g(c.y7.OVERLAY_UNLOCKED, !e.locked)
 }
 
@@ -79,7 +79,7 @@ function T() {
 }
 
 function C() {
-  b()
+  y()
 }
 class N extends(r = Chunk311907.Ay.Store) {
   initialize() {
@@ -97,11 +97,11 @@ class N extends(r = Chunk311907.Ay.Store) {
 }
 f(N, "displayName", "Overlay-v3-Native-GPU-Boost-Store");
 let R = new N(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {} : {
-    OVERLAY_SET_GPU_BOOST_REQUESTED: A,
-    OVERLAY_RENDER_DEBUG_MODE: v,
-    OVERLAY_CRASHED: S,
+    OVERLAY_SET_GPU_BOOST_REQUESTED: v,
+    OVERLAY_RENDER_DEBUG_MODE: A,
+    OVERLAY_CRASHED: I,
     OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: T,
     OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: C,
-    OVERLAY_SET_INPUT_LOCKED: I
+    OVERLAY_SET_INPUT_LOCKED: S
   }),
   w = R

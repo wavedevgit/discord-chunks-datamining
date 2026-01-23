@@ -1,7 +1,7 @@
 /** Chunk was on 38663 **/
 /** chunk id: 463259, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => X,
+  A: () => B,
   u: () => L
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -78,23 +78,23 @@ function L(e) {
   let {
     widget: t
   } = e, n = G(e, ["widget"]);
-  return t instanceof O.R ? (0, r.jsx)(A.A, k({
+  return t instanceof O.R ? (0, r.jsx)(_.A, k({
     widget: t
-  }, n)) : t instanceof j.Yy ? (0, r.jsx)(S.A, k({
+  }, n)) : t instanceof j.Yy ? (0, r.jsx)(E.A, k({
     widget: t
   }, n)) : null
 }
 
 function U() {
   return (0, r.jsxs)("div", {
-    className: C.mJ,
-    children: [(0, r.jsx)(o.mir, {
+    className: R.mJ,
+    children: [(0, r.jsx)(s.mir, {
       size: "xs"
-    }), (0, r.jsx)(o.Text, {
-      "aria-label": R.intl.string(R.t["7blcz6"]),
+    }), (0, r.jsx)(s.Text, {
+      "aria-label": D.intl.string(D.t["7blcz6"]),
       variant: "text-xs/normal",
       color: "text-muted",
-      children: R.intl.string(R.t["7blcz6"])
+      children: D.intl.string(D.t["7blcz6"])
     })]
   })
 }
@@ -115,7 +115,7 @@ function M() {
         visibleContent: l,
         markAsDismissed: i
       } = e, a = t.find(e => e.dismissibleContent === l);
-      return null == a ? null : (0, r.jsx)(w.A, {
+      return null == a ? null : (0, r.jsx)(A.A, {
         user: n,
         application: a.application,
         onDismiss: i
@@ -129,29 +129,29 @@ function F(e) {
     user: t,
     guildId: n,
     channelId: i
-  } = e, a = (0, v.A)(t.id), o = (0, s.bG)([m.default], () => m.default.getId() === t.id), d = (() => {
-    let [e, t] = (0, s.yK)([y.A], () => [y.A.ipCountryCode, y.A.ipCountryCodeRequest]), n = (0, b.Z)();
+  } = e, a = (0, v.A)(t.id), s = (0, o.bG)([b.default], () => b.default.getId() === t.id), d = (() => {
+    let [e, t] = (0, o.yK)([y.A], () => [y.A.ipCountryCode, y.A.ipCountryCodeRequest]), n = (0, g.Z)();
     return l.useEffect(() => {
       null == e && null == t && n && (0, c.xe)()
     }, [e, t, n]), "GB" === e && n
   })(), p = (0, u.JY)({
     location: "UserProfileModalV2Widgets"
-  }), h = 0 === a.length && o, A = l.useMemo(() => a.filter(j.fu), [a]), w = l.useMemo(() => a.filter(e => e instanceof O.R), [a]);
-  (0, x.Y)(o, A), ((e, t) => {
+  }), h = 0 === a.length && s, _ = l.useMemo(() => a.filter(j.fu), [a]), A = l.useMemo(() => a.filter(e => e instanceof O.R), [a]);
+  (0, x.Y)(s, _), ((e, t) => {
     let n = l.useMemo(() => t.map(e => e.applicationId), [t]);
     (0, f.A)(n);
     let {
       data: r,
       refetch: i
-    } = (0, g.P)(e), a = l.useRef(null !== r);
+    } = (0, m.P)(e), a = l.useRef(null !== r);
     l.useEffect(() => {
       a.current && (a.current = false, i())
     }, [i])
-  })(t.id, w);
-  let E = () => (0, r.jsxs)(r.Fragment, {
-    children: [o && (0, r.jsxs)(r.Fragment, {
+  })(t.id, A);
+  let P = () => (0, r.jsxs)(r.Fragment, {
+    children: [s && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(I.A, {
-        className: C.cG
+        className: R.cG
       }), d && (0, r.jsx)(U, {}), p && (0, r.jsx)(M, {})]
     }), a.map((e, l) => (0, r.jsx)(L, {
       widget: e,
@@ -162,29 +162,29 @@ function F(e) {
     }, e.getUniqueKey()))]
   });
   if (h)
-    if (p) return (0, r.jsx)(T.A, {});
-    else return (0, r.jsx)(D.A, {});
-  return o ? (0, r.jsx)(P.D, {
-    children: E()
-  }) : E()
+    if (p) return (0, r.jsx)(S.A, {});
+    else return (0, r.jsx)(C.A, {});
+  return s ? (0, r.jsx)(w.D, {
+    children: P()
+  }) : P()
 }
 
-function X(e) {
+function B(e) {
   let {
     user: t
   } = e, n = G(e, ["user"]), i = l.useRef(null);
   (0, h.i)({
     containerRef: i
   });
-  let s = (0, _.k)(t.id);
+  let o = (0, T.k)(t.id);
   return (0, r.jsxs)(N.K, {
     "data-scroller": true,
     scrollerRef: i,
-    className: a()(C.XG, {
-      [C.az]: s
+    className: a()(R.XG, {
+      [R.az]: o
     }),
     fade: true,
-    children: [(0, r.jsx)(E.A, {
+    children: [(0, r.jsx)(P.A, {
       scrollerRef: i
     }), (0, r.jsx)(F, k({
       user: t
