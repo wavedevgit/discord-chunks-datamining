@@ -9,7 +9,7 @@ require.d(exports, {
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk131346 = require("./131346.js"),
-  Chunk744818 = require("./744818.js"),
+  Chunk522437 = require("./522437.js"),
   Chunk545059 = require("./545059.js");
 let o = "FRIEND_USER",
   a = "FRIEND_GROUP";

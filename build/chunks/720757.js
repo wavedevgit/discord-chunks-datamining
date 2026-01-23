@@ -7,46 +7,46 @@ require.d(exports, {
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js");
 
-function a(e, t, n) {
-  let a = e,
+function a(e, t, n, a) {
+  let s = e,
     {
-      name: s,
-      kind: o,
-      variations: l,
-      defaultConfig: c
-    } = a;
-  return t.registerExperiment(a), {
-    definition: a,
+      name: o,
+      kind: l,
+      variations: c,
+      defaultConfig: u
+    } = s;
+  return t.registerExperiment(s), {
+    definition: s,
     useConfig: function(e) {
-      var a;
-      let u = n(o, e),
-        [d, f] = (0, i.yK)([t], () => t.getEvaluationAndAssignment(o, u, s), [u]),
+      var n;
+      let s = a(l, e),
+        [d, f] = (0, i.yK)([t], () => t.getEvaluationAndAssignment(l, s, o), [s]),
         p = null == f ? true : f.variantId,
-        _ = null != (a = null == f ? true : f.trackedVariantId) ? a : p,
+        _ = null != (n = null == f ? true : f.trackedVariantId) ? n : p,
         h = null == f ? true : f.revision,
         m = null == f ? true : f.isOverride,
         g = null == f ? true : f.exposureTrackingEnabled;
       if ((0, r.useEffect)(() => {
-          null != d && null != _ && null != h && false === m && true === g && t.trackExperimentExposure(d, s, e.location, o, h, _, u)
-        }, [u, d, _, h, e.location, m, g]), null == p) return c;
+          null != d && null != _ && null != h && false === m && true === g && t.trackExperimentExposure(d, o, e.location, l, h, _, s)
+        }, [s, d, _, h, e.location, m, g]), null == p) return u;
       {
-        let e = l[p];
-        return null != e ? e : c
+        let e = c[p];
+        return null != e ? e : u
       }
     },
     getConfig: function(e) {
       var r;
-      let i = n(o, e),
-        [a, u] = t.getEvaluationAndAssignment(o, i, s),
-        d = null == u ? true : u.variantId,
-        f = null != (r = null == u ? true : u.trackedVariantId) ? r : d,
-        p = null == u ? true : u.revision,
-        _ = null == u ? true : u.isOverride,
-        h = null == u ? true : u.exposureTrackingEnabled;
-      if (null != a && null != f && null != p && false === _ && true === h && t.trackExperimentExposure(a, s, e.location, o, p, f, i), null == d) return c;
+      let i = n(l, e),
+        [a, s] = t.getEvaluationAndAssignment(l, i, o),
+        d = null == s ? true : s.variantId,
+        f = null != (r = null == s ? true : s.trackedVariantId) ? r : d,
+        p = null == s ? true : s.revision,
+        _ = null == s ? true : s.isOverride,
+        h = null == s ? true : s.exposureTrackingEnabled;
+      if (null != a && null != f && null != p && false === _ && true === h && t.trackExperimentExposure(a, o, e.location, l, p, f, i), null == d) return u;
       {
-        let e = l[d];
-        return null != e ? e : c
+        let e = c[d];
+        return null != e ? e : u
       }
     }
   }
