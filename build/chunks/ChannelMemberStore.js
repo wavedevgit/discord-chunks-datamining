@@ -102,19 +102,21 @@ function D(e, t, n, r) {
 function x(e, t, n) {
   let r = n === _.default.getId(),
     i = b.A.isMobileOnline(n),
-    a = r ? O.A.getStatus() : b.A.getStatus(n, e),
-    s = r ? O.A.getActivities() : b.A.getActivities(n, e),
-    o = p.A.getStreamForUser(n, e),
-    l = v.default.getUser(n);
-  return null == l ? null : N(T({
+    a = b.A.isVROnline(n),
+    s = r ? O.A.getStatus() : b.A.getStatus(n, e),
+    o = r ? O.A.getActivities() : b.A.getActivities(n, e),
+    l = p.A.getStreamForUser(n, e),
+    c = v.default.getUser(n);
+  return null == c ? null : N(T({
     type: "MEMBER"
   }, g.Ay.getMember(e, n)), {
-    user: l,
-    status: a,
-    activities: s,
-    applicationStream: o,
+    user: c,
+    status: s,
+    activities: o,
+    applicationStream: l,
     isOwner: t === n,
-    isMobileOnline: i
+    isMobileOnline: i,
+    isVROnline: a
   })
 }
 

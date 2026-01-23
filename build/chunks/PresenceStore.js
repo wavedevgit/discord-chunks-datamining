@@ -530,7 +530,11 @@ class ei extends(r = Chunk311907.Ay.Store) {
   }
   isMobileOnline(e) {
     let t = T[e];
-    return null != t && t[E.xfJ.MOBILE] === E.clD.ONLINE && t[E.xfJ.DESKTOP] !== E.clD.ONLINE
+    return null != t && t[E.xfJ.MOBILE] === E.clD.ONLINE && t[E.xfJ.DESKTOP] !== E.clD.ONLINE && t[E.xfJ.VR] !== E.clD.ONLINE
+  }
+  isVROnline(e) {
+    let t = T[e];
+    return null != t && t[E.xfJ.VR] === E.clD.ONLINE
   }
   getClientStatus(e) {
     return T[e]
