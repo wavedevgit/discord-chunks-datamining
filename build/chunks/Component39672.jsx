@@ -132,6 +132,7 @@ function g(e) {
     className: f.v
   }) : null, [y, g]);
   return (0, r.jsxs)(a.W1t, {
+    "data-menu-mixed": true,
     onSelect: E,
     navId: "subscription-context",
     variant: "fixed",

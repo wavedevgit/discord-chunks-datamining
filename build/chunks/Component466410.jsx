@@ -54,10 +54,10 @@ function O() {
     isDeveloper: t,
     isLoggingGatewayEvents: n,
     isLoggingOverlayEvents: O,
-    isLoggingAnalyticsEvents: v,
-    isTracingRequests: f,
-    isForcedCanary: h,
-    isAxeEnabled: E,
+    isLoggingAnalyticsEvents: f,
+    isTracingRequests: v,
+    isForcedCanary: E,
+    isAxeEnabled: h,
     preventPopoutClose: A,
     onlyShowPreviewAppCollections: j,
     disableAppCollectionsCache: S
@@ -80,12 +80,12 @@ function O() {
   } = (0, o.Or)(), {
     setHorizontalSpacing: w,
     setVerticalSpacing: C
-  } = o.Or.getState(), D = u.HZ.useSetting();
+  } = o.Or.getState(), D = d.HZ.useSetting();
   return t ? [(0, r.jsxs)(l.Drp, {
     id: "overrides",
     label: "Overrides",
     action: () => {
-      (0, g.openUserSettings)(d.X.DEV_OVERRIDES, {
+      (0, g.openUserSettings)(u.X.DEV_OVERRIDES, {
         section: p.nc_.DEVELOPER_OPTIONS
       })
     },
@@ -94,15 +94,15 @@ function O() {
       label: "Always Deliver Ads",
       checked: D,
       action: () => {
-        u.HZ.updateSetting(!D)
+        d.HZ.updateSetting(!D)
       }
     }, "always-deliver"), (0, r.jsx)(l.sLh, {
       id: "forced-canary",
       label: "Forced Canary",
-      checked: h,
+      checked: E,
       action: () => {
         (0, a.x)({
-          canary: !h
+          canary: !E
         })
       }
     }, "forced-canary"), (0, r.jsx)(l.sLh, {
@@ -128,7 +128,7 @@ function O() {
     id: "logging",
     label: "Logging",
     action: () => {
-      (0, g.openUserSettings)(d.X.LOGGING, {
+      (0, g.openUserSettings)(u.X.LOGGING, {
         section: p.nc_.DEVELOPER_OPTIONS
       })
     },
@@ -153,19 +153,19 @@ function O() {
     }, "overlay-events"), (0, r.jsx)(l.sLh, {
       id: "analytics-events",
       label: "Analytics Events",
-      checked: v,
+      checked: f,
       action: () => {
         (0, a.x)({
-          logAnalyticsEvents: !v
+          logAnalyticsEvents: !f
         })
       }
     }, "analytics-events"), (0, r.jsx)(l.sLh, {
       id: "tracing-requests",
       label: "Tracing Requests",
-      checked: f,
+      checked: v,
       action: () => {
         (0, a.x)({
-          trace: !f
+          trace: !v
         })
       }
     }, "tracing-requests"), (0, r.jsx)(l.sLh, {
@@ -182,17 +182,17 @@ function O() {
     id: "design-tools",
     label: "Design/A11y Tools",
     action: () => {
-      (0, g.openUserSettings)(d.X.DESIGN_TOOLS, {
+      (0, g.openUserSettings)(u.X.DESIGN_TOOLS, {
         section: p.nc_.DEVELOPER_OPTIONS
       })
     },
     children: [(0, r.jsx)(l.sLh, {
       id: "accessibility-auditing",
       label: "Accessibility Auditing",
-      checked: E,
+      checked: h,
       action: () => {
         (0, a.x)({
-          axeEnabled: !E
+          axeEnabled: !h
         })
       }
     }, "accessibility-auditing"), (0, r.jsx)(l.sLh, {

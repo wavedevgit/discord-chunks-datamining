@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 830001, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  f: () => v
+  f: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk934551 = require("./934551.js"),
@@ -40,7 +40,7 @@ let p = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
     StronglyDiscouragedCustomComponent: Chunk745109.A,
     buildLayout: () => []
   }),
-  m = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
+  v = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
     usePredicate: () => (0, N.dk)("ProfilePanel"),
     useTitle: () => D.intl.string(D.t["vi7f+q"]),
     notice: {
@@ -52,7 +52,7 @@ let p = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
     }),
     buildLayout: () => [L.I]
   }),
-  v = (0, Chunk419954.i4)(Chunk780964.X.PROFILE_SIDEBAR_ITEM, {
+  m = (0, Chunk419954.i4)(Chunk780964.X.PROFILE_SIDEBAR_ITEM, {
     useTitle: () => D.intl.string(D.t["vi7f+q"]),
     getLegacySearchKey: () => (0, N.WJ)("ProfilePanel") ? true : b.H.PROFILE_CUSTOMIZATION,
     icon: Chunk934551.UserIcon,
@@ -99,5 +99,5 @@ let p = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
       type: Chunk933297.S.BADGE_NEW,
       getDismissibleContentTypes: Chunk368631.Jn
     },
-    buildLayout: () => (0, N.WJ)("ProfilePanel") ? [m] : [p]
+    buildLayout: () => (0, N.WJ)("ProfilePanel") ? [v] : [p]
   })

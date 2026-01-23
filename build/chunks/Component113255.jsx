@@ -21,17 +21,18 @@ let y = (0, Chunk358367.A)(function(e) {
     channel: t,
     guild: n,
     onSelect: l
-  } = e, o = (0, p.A)(t), y = (0, O.A)(t, n), d = (0, u.A)(t, n), j = (0, s.A)(t, n), A = (0, b.A)(t), g = (0, a.A)({
+  } = e, a = (0, p.A)(t), y = (0, O.A)(t, n), d = (0, u.A)(t, n), j = (0, s.A)(t, n), A = (0, b.A)(t), g = (0, o.A)({
     id: t.id,
     label: f.intl.string(f.t.gFHI3k)
   });
   return (0, r.jsxs)(c.W1t, {
+    "data-menu-mixed": true,
     navId: "channel-context",
     onClose: i.Z_,
     "aria-label": f.intl.string(f.t.Xm41aV),
     onSelect: l,
     children: [(0, r.jsx)(c.rXV, {
-      children: o
+      children: a
     }), (0, r.jsxs)(c.rXV, {
       children: [y, d, j]
     }), (0, r.jsx)(c.rXV, {

@@ -71,6 +71,7 @@ function g(e) {
     }))
   }, [t, i, g]);
   return (0, r.jsx)(s.W1t, {
+    "data-menu-migration-ready": true,
     navId: "member-safety-flags",
     onClose: n,
     "aria-label": p.intl.string(p.t.k9m8Rg),

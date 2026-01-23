@@ -22,12 +22,12 @@ let g = {
       onClick: n,
       countdownEndDate: s,
       variant: f
-    } = e, p = l.useMemo(() => {
+    } = e, m = l.useMemo(() => {
       if (null == s) return null;
       let e = s instanceof Date ? s : new Date(s);
       return isNaN(e.getTime()) ? null : e
-    }, [s]), m = (0, o.A)(null != p ? p : 0, 1e3, true, null == p);
-    if (null != p && Object.values(m).every(e => 0 === e)) return null;
+    }, [s]), p = (0, o.A)(null != m ? m : 0, 1e3, true, null == m);
+    if (null != m && Object.values(p).every(e => 0 === e)) return null;
     let _ = null != f ? d[f] : true,
       b = null != f ? d[g[f]] : true;
     return (0, r.jsx)(i.DUT, {
@@ -41,8 +41,8 @@ let g = {
           color: "always-white",
           className: d.message,
           children: t
-        }), null != p && (0, r.jsx)(c.e, {
-          endDate: p,
+        }), null != m && (0, r.jsx)(c.e, {
+          endDate: m,
           size: "md",
           className: b
         })]

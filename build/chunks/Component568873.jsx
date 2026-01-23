@@ -14,14 +14,14 @@ var Chunk311907 = require("./311907.js"),
 
 function u(e) {
   let t = (0, r.bG)([a.Ay], () => a.Ay.isMuteScheduledEventsEnabled(e), [e]);
-  return (0, i.jsx)(s.sLh, {
+  return (0, i.jsx)(d.sLh, {
     id: "mute-events",
     label: l.intl.string(l.t.ONG3Yz),
     action: () => {
       var n;
       return n = {
         mute_scheduled_events: !t
-      }, void d.A.updateGuildNotificationSettings(e, n, c.G_.mutedEvents(n.mute_scheduled_events))
+      }, void s.A.updateGuildNotificationSettings(e, n, c.G_.mutedEvents(n.mute_scheduled_events))
     },
     checked: t
   })

@@ -16,7 +16,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function f(t) {
+function y(t) {
   for (var e = 1; e < arguments.length; e++) {
     var n = null != arguments[e] ? arguments[e] : {},
       l = Object.keys(n);
@@ -35,32 +35,32 @@ function f(t) {
   return t
 }
 
-function y(t, e) {
+function f(t, e) {
   (0, r.showToast)((0, r.createToast)(t, r.ToastType.FAILURE)), s.A.captureException(e)
 }
 
 function E(t, e, n) {
-  if ((0, a.A)(null == e ? true : e.getChannelId()) || (null == n ? true : n.shouldHideMediaOptions) === true || !c.isPlatformEmbedded || null == t || !(0, i.e7)(t, null == n ? true : n.contentType, null == n ? true : n.originalContentType)) return null;
-  let s = (0, i.XW)(t, null == n ? true : n.contentType, null == n ? true : n.originalContentType, i.N7),
+  if ((0, i.A)(null == e ? true : e.getChannelId()) || (null == n ? true : n.shouldHideMediaOptions) === true || !c.isPlatformEmbedded || null == t || !(0, a.e7)(t, null == n ? true : n.contentType, null == n ? true : n.originalContentType)) return null;
+  let s = (0, a.XW)(t, null == n ? true : n.contentType, null == n ? true : n.originalContentType, a.N7),
     E = async () => {
       try {
-        let t = await u.Ay.saveImage(s, null == n ? true : n.contentType, i.N7);
+        let t = await u.Ay.saveImage(s, null == n ? true : n.contentType, a.N7);
         if (t === u._0.ERRORED) throw Error("NativeUtils.saveImage errored for ".concat(s));
-        t === u._0.SAVED && (o.default.track(p.HAw.CONTEXT_MENU_IMAGE_SAVED, f({}, (0, d.N)())), (0, r.showToast)((0, r.createToast)(v.intl.string(v.t.cqpdJW), r.ToastType.SUCCESS)))
+        t === u._0.SAVED && (o.default.track(p.HAw.CONTEXT_MENU_IMAGE_SAVED, y({}, (0, d.N)())), (0, r.showToast)((0, r.createToast)(v.intl.string(v.t.cqpdJW), r.ToastType.SUCCESS)))
       } catch (t) {
-        o.default.track(p.HAw.CONTEXT_MENU_IMAGE_SAVE_FAILED, f({}, (0, d.N)())), y(v.intl.string(v.t["8Ve/S0"]), t)
+        o.default.track(p.HAw.CONTEXT_MENU_IMAGE_SAVE_FAILED, y({}, (0, d.N)())), f(v.intl.string(v.t["8Ve/S0"]), t)
       }
-    }, b = async () => {
+    }, g = async () => {
       try {
-        await u.Ay.copyImage(s, null == n ? true : n.contentType), o.default.track(p.HAw.CONTEXT_MENU_IMAGE_COPIED, f({}, (0, d.N)())), (0, r.showToast)((0, r.createToast)(v.intl.string(v.t.bhUpvC), r.ToastType.SUCCESS))
+        await u.Ay.copyImage(s, null == n ? true : n.contentType), o.default.track(p.HAw.CONTEXT_MENU_IMAGE_COPIED, y({}, (0, d.N)())), (0, r.showToast)((0, r.createToast)(v.intl.string(v.t.bhUpvC), r.ToastType.SUCCESS))
       } catch (t) {
-        y(v.intl.string(v.t.PTPbjx), t), o.default.track(p.HAw.CONTEXT_MENU_IMAGE_COPY_FAILED, f({}, (0, d.N)()))
+        f(v.intl.string(v.t.PTPbjx), t), o.default.track(p.HAw.CONTEXT_MENU_IMAGE_COPY_FAILED, y({}, (0, d.N)()))
       }
     };
-  return [(0, i.PK)(t, null == n ? true : n.contentType, null == n ? true : n.originalContentType) ? (0, l.jsx)(r.Drp, {
+  return [(0, a.PK)(t, null == n ? true : n.contentType, null == n ? true : n.originalContentType) ? (0, l.jsx)(r.Drp, {
     id: "copy-image",
     label: v.intl.string(v.t.tvUqWn),
-    action: b
+    action: g
   }, "copy-image") : null, (0, l.jsx)(r.Drp, {
     id: "save-image",
     label: v.intl.string(v.t.PeXhgO),

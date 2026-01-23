@@ -53,11 +53,11 @@ let f = {
     sortType: Chunk124987.$.RECENCY,
     sortDirection: Chunk401864.A.DESC
   },
-  p = {
+  m = {
     sortType: Chunk124987.$.POPULARITY,
     sortDirection: Chunk401864.A.DESC
   },
-  m = {
+  p = {
     sortType: Chunk124987.$.RELEVANCE,
     sortDirection: Chunk401864.A.DESC
   },
@@ -81,7 +81,7 @@ let f = {
       searchQuery: r,
       itemTypeFilters: l
     } = e;
-    return t.size > 0 || n.size > 0 || "" !== r.trim() ? m : l.size > 0 ? p : f
+    return t.size > 0 || n.size > 0 || "" !== r.trim() ? p : l.size > 0 ? m : f
   },
   h = (0, Chunk353640.v)((0, Chunk499867.eh)((e, t) => d(u({}, _), {
     hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === f.sortType && t().sort.sortDirection === f.sortDirection,
@@ -158,7 +158,7 @@ let f = {
           searchQuery: t,
           queryPageOffset: 0
         });
-        return "" !== t.trim() ? (n.sort = m, n.userHasSelectedSort = false) : e.userHasSelectedSort || (n.sort = b(n)), n
+        return "" !== t.trim() ? (n.sort = p, n.userHasSelectedSort = false) : e.userHasSelectedSort || (n.sort = b(n)), n
       })
     },
     setQueryPageSize: t => {

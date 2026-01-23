@@ -90,6 +90,7 @@ function O(e) {
         closePopout: t
       } = e;
       return (0, r.jsxs)(s.W1t, {
+        "data-menu-migration-ready": true,
         className: m.P,
         onSelect: true,
         navId: "edit-profile-popout",

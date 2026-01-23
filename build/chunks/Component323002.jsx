@@ -17,12 +17,13 @@ function b(e) {
   let {
     guildId: t,
     onSelect: r,
-    onPickerClose: i,
+    onPickerClose: l,
     onInteraction: c
-  } = e, b = (0, u.A)(t, i), p = (0, a.A)();
+  } = e, b = (0, u.A)(t, l), p = (0, a.A)();
   return (0, n.jsx)(o.W1t, {
+    "data-menu-migration-ready": true,
     navId: "user-context",
-    onClose: l.Z_,
+    onClose: i.Z_,
     "aria-label": s.intl.string(s.t.liqwPJ),
     onSelect: r,
     onInteraction: c,
@@ -35,7 +36,7 @@ function b(e) {
 function p(e) {
   let {
     analyticsLocations: t
-  } = (0, c.Ay)(e.sourceAnalyticsLocations, i.A.SOUNDBOARD_CONTEXT_MENU);
+  } = (0, c.Ay)(e.sourceAnalyticsLocations, l.A.SOUNDBOARD_CONTEXT_MENU);
   return (0, n.jsx)(c.f5, {
     value: t,
     children: (0, n.jsx)(b, function(e) {

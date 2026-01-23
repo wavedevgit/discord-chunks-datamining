@@ -42,7 +42,7 @@ let h = e => {
             sourceButton: "shelf block see all",
             categorySkuId: t.categorySkuId,
             isInternalShopDeeplink: true,
-            isOrbsExclusive: (null == E ? true : E.isOrbsExclusive) && s !== m.G2.ORBS
+            isOrbsExclusive: (null == E ? true : E.isOrbsExclusive) && s !== p.G2.ORBS
           })
         }
       })]
@@ -60,8 +60,8 @@ let h = e => {
             },
             children: (0, r.jsx)(f.A, {
               skuId: l,
-              prioritizedCurrency: s === m.G2.ORBS ? p.Hi.ORBS : true,
-              onClickAnalytics: (0, p.UU)(e, s, v)
+              prioritizedCurrency: s === p.G2.ORBS ? m.Hi.ORBS : true,
+              onClickAnalytics: (0, m.UU)(e, s, v)
             }, l)
           }, l)
         })

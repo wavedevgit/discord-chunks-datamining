@@ -15,16 +15,17 @@ var Chunk311907 = require("./311907.js"),
 function d(r) {
   let {
     roles: e
-  } = r, l = (0, i.bG)([a.A], () => a.A.roleStyle);
-  return (0, t.jsx)(n.W1t, {
+  } = r, l = (0, a.bG)([o.A], () => o.A.roleStyle);
+  return (0, t.jsx)(i.W1t, {
+    "data-menu-label-graphic": true,
     navId: "invite-roles-menu",
-    onClose: o.Z_,
+    onClose: n.Z_,
     onSelect: () => {},
     "aria-label": s.intl.string(s.t["LPJmL/"]),
-    children: (0, t.jsx)(n.rXV, {
+    children: (0, t.jsx)(i.rXV, {
       children: e.map(r => {
         var e;
-        return (0, t.jsx)(n.Drp, {
+        return (0, t.jsx)(i.Drp, {
           id: r.id,
           leadingAccessory: {
             type: "roleDot",

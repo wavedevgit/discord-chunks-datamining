@@ -33,12 +33,12 @@ let D = (0, Chunk358367.A)(function(e) {
     webBuildOverride: t,
     onSelect: n,
     onInteraction: c
-  } = e, [s, D] = i.useState(false), _ = (0, E.A)(), m = (0, j.A)(), T = (0, f.A)(), L = (0, v.A)(), I = (0, P.A)(), N = (0, S.A)(), k = (0, h.A)(), V = (0, x.A)(), R = (0, A.A)(), {
+  } = e, [s, D] = i.useState(false), _ = (0, h.A)(), m = (0, j.A)(), T = (0, v.A)(), I = (0, f.A)(), L = (0, P.A)(), N = (0, S.A)(), k = (0, E.A)(), R = (0, x.A)(), V = (0, A.A)(), {
     analyticsLocations: M
-  } = (0, u.Ay)(), U = i.useMemo(() => (0, g.H)(), []);
+  } = (0, d.Ay)(), U = i.useMemo(() => (0, g.H)(), []);
   async function G() {
     try {
-      D(true), await (0, d.iD)(), window.location.reload(true)
+      D(true), await (0, u.iD)(), window.location.reload(true)
     } catch (e) {
       D(false)
     }
@@ -48,12 +48,17 @@ let D = (0, Chunk358367.A)(function(e) {
     F = (0, y.Lu)(),
     Y = i.useMemo(() => {
       let e = [];
-      if (F.forEach(t => {
-          let {
-            section: n,
-            predicate: r
-          } = t;
-          n !== o.Fq.HEADER && n !== o.Fq.CUSTOM && n !== o.Fq.DIVIDER && "logout" !== n && (null == r || r()) && null != H.get(n) && (n === w.nc_.PROFILE_CUSTOMIZATION ? e.unshift(t) : e.push(t))
+      F.forEach(t => {
+        let {
+          section: n,
+          predicate: r
+        } = t;
+        n !== o.Fq.HEADER && n !== o.Fq.CUSTOM && n !== o.Fq.DIVIDER && "logout" !== n && (null == r || r()) && null != H.get(n) && (n === w.nc_.PROFILE_CUSTOMIZATION ? e.unshift(t) : e.push(t))
+      });
+      let t = e.findIndex(e => e.section === w.nc_.ADVANCED);
+      if (false !== t && e.splice(t, 0, {
+          section: w.nc_.STREAMER_MODE,
+          label: C.intl.string(C.t.S5GfOW)
         }), X) {
         let t = e.findIndex(e => e.section === w.nc_.NOTIFICATIONS),
           n = e.findIndex(e => e.section === w.nc_.CONNECTIONS);
@@ -64,9 +69,10 @@ let D = (0, Chunk358367.A)(function(e) {
       }
       return e
     }, [F, H, X]);
-  return (0, r.jsx)(u.f5, {
+  return (0, r.jsx)(d.f5, {
     value: M,
     children: (0, r.jsxs)(l.W1t, {
+      "data-menu-migration-ready": true,
       navId: "user-settings-cog",
       onClose: a.Z_,
       "aria-label": C.intl.string(C.t.opYYHn),
@@ -118,15 +124,15 @@ let D = (0, Chunk358367.A)(function(e) {
               case w.nc_.APPEARANCE:
                 return T;
               case w.nc_.ACCESSIBILITY:
-                return L;
-              case w.nc_.VOICE:
                 return I;
+              case w.nc_.VOICE:
+                return L;
               case w.nc_.TEXT:
                 return N;
               case w.nc_.EXPERIMENTS:
                 return k;
               case w.nc_.DEVELOPER_OPTIONS:
-                return V;
+                return R;
               default:
                 return null
             }
@@ -141,7 +147,7 @@ let D = (0, Chunk358367.A)(function(e) {
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t), c)
-      }), e.user.isStaff() && R, e.user.isStaff() && U.length > 0 ? (0, r.jsx)(l.Drp, {
+      }), e.user.isStaff() && V, e.user.isStaff() && U.length > 0 ? (0, r.jsx)(l.Drp, {
         label: "Build Overrides",
         id: "build_overrides",
         children: (0, r.jsx)(l.rXV, {
@@ -151,7 +157,7 @@ let D = (0, Chunk358367.A)(function(e) {
             label: e.id,
             checked: (null == t ? true : t.id) === e.id,
             action: async () => {
-              (null == t ? true : t.id) === e.id || 200 === (await (0, d.oA)(e.payload)).status && window.location.reload(true)
+              (null == t ? true : t.id) === e.id || 200 === (await (0, u.oA)(e.payload)).status && window.location.reload(true)
             }
           }, "input-".concat(e.payload)))
         })

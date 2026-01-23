@@ -42,17 +42,18 @@ function f(e) {
     selectedTab: n,
     onTabSelect: s,
     onClose: f,
-    showOrbRentalNewBadge: p
+    showOrbRentalNewBadge: m
   } = e, {
-    itemTypeFilters: m
+    itemTypeFilters: p
   } = (0, i.v)(), _ = l.useMemo(() => {
-    if (n === o.G2.CATALOG && m.size > 0) {
-      let e = g[Array.from(m)[0]];
+    if (n === o.G2.CATALOG && p.size > 0) {
+      let e = g[Array.from(p)[0]];
       if (null != e) return e
     }
     return n
-  }, [n, m]);
+  }, [n, p]);
   return (0, r.jsx)(a.W1t, {
+    "data-menu-mixed": true,
     navId: "collectibles-shop-tabs-overflow-menu",
     "aria-label": c.intl.string(c.t["UKOtz+"]),
     hideScroller: true,
@@ -88,8 +89,8 @@ function f(e) {
             })
           }, t)
         }
-        let g = t === o.G2.ORBS && p,
-          m = (0, r.jsxs)("span", {
+        let g = t === o.G2.ORBS && m,
+          p = (0, r.jsxs)("span", {
             style: {
               display: "flex",
               alignItems: "center",
@@ -102,7 +103,7 @@ function f(e) {
           });
         return (0, r.jsx)(a.Drp, {
           id: t,
-          label: m,
+          label: p,
           icon: t === n ? a.yr3 : true,
           action: () => s(t)
         }, t)

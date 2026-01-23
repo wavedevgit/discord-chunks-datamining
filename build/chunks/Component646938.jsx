@@ -1,5 +1,5 @@
 /** Chunk was on 15687 **/
-/** chunk id: 646938, original params: e,l,t (module,exports,require) **/
+/** chunk id: 646938, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
   default: () => r
 });
@@ -11,19 +11,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx");
 
 function r(e) {
-  var l;
-  let t = (0, s.A)({
+  var t;
+  let l = (0, s.A)({
     id: e.id,
     label: e.label,
     shiftId: e.shiftId
   });
   return i.useEffect(() => {
-    null == t && (0, d.Z_)()
-  }, [t]), (0, a.jsx)(n.W1t, {
+    null == l && (0, d.Z_)()
+  }, [l]), (0, a.jsx)(n.W1t, {
+    "data-menu-mixed": true,
     onSelect: e.onSelect,
     navId: "dev-context",
-    "aria-label": null != (l = e["aria-label"]) ? l : c.intl.string(c.t.ogxXGq),
+    "aria-label": null != (t = e["aria-label"]) ? t : c.intl.string(c.t.ogxXGq),
     onClose: d.Z_,
-    children: t
+    children: l
   })
 }

@@ -41,6 +41,7 @@ function p(e) {
     onClose: t
   } = e;
   return (0, r.jsx)(l.W1t, {
+    "data-menu-all-icons": true,
     onSelect: () => {},
     navId: "staff-help-popout",
     variant: "fixed",

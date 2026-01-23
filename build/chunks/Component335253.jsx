@@ -33,11 +33,12 @@ let O = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     channelId: O,
     guildId: o,
     context: E
-  }), [C, h] = (0, f.O)(t, O, o), I = (0, b.A)(t, o, O), x = (0, c.A)({
+  }), [C, h] = (0, f.O)(t, O, o), I = (0, b.A)(t, o, O), m = (0, c.A)({
     id: t.id,
     label: g.intl.string(g.t["/AXYnE"])
-  }), T = (0, d.A)(t.id, n);
+  }), x = (0, d.A)(t.id, n);
   return (0, r.jsx)(i.W1t, {
+    "data-menu-mixed": true,
     navId: "user-context",
     onClose: l.Z_,
     "aria-label": g.intl.string(g.t.liqwPJ),
@@ -47,7 +48,7 @@ let O = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     children: !j && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(i.rXV, {
         children: [p, y]
-      }), T, S, !v && (0, r.jsx)(i.rXV, {
+      }), x, S, !v && (0, r.jsx)(i.rXV, {
         children: (0, r.jsxs)(i.Drp, {
           id: "more-options",
           label: g.intl.string(g.t.PdRCRg),
@@ -56,7 +57,7 @@ let O = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
           }), h]
         })
       }), v && (0, r.jsx)(i.rXV, {
-        children: x
+        children: m
       })]
     })
   })

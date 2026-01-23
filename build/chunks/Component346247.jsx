@@ -28,7 +28,7 @@ function y(e) {
     analyticsLocations: C,
     context: E,
     icon: m
-  } = e, M = g.A.getGuild(t), N = u.default.getId(), x = (0, r.bG)([b.default], () => b.default.getUser(y)), G = (0, r.bG)([A.Ay], () => A.Ay.isGuestOrLurker(t, y), [t, y]);
+  } = e, x = g.A.getGuild(t), M = o.default.getId(), N = (0, r.bG)([b.default], () => b.default.getUser(y)), G = (0, r.bG)([A.Ay], () => A.Ay.isGuestOrLurker(t, y), [t, y]);
   (0, r.bG)([p.A], () => p.A.getGuildVersion(t), [t]);
   let P = i.useMemo(() => ({
     [t]: [y]
@@ -36,16 +36,16 @@ function y(e) {
   (0, d.E)(P, "useChangeIdentityItem");
   let I = E === f.BRT.POPOUT,
     v = (0, c.A)({
-      guild: M,
+      guild: x,
       analyticsLocations: C
     }),
     U = (0, s.aL)();
-  if (null == M || I) return null;
-  let _ = N === y && (p.A.can(f.xBc.CHANGE_NICKNAME, M) || p.A.can(f.xBc.MANAGE_NICKNAMES, M)),
-    S = N === y,
-    T = p.A.canManageUser(f.xBc.MANAGE_NICKNAMES, y, M);
-  if (!(_ || T || S) || null == x || G) return null;
-  let R = M.features.has(f.GuildFeatures.HUB) ? h.intl.string(h.t["+MWrWt"]) : h.intl.string(h.t["PKQB/H"]),
+  if (null == x || I) return null;
+  let _ = M === y && (p.A.can(f.xBc.CHANGE_NICKNAME, x) || p.A.can(f.xBc.MANAGE_NICKNAMES, x)),
+    S = M === y,
+    T = p.A.canManageUser(f.xBc.MANAGE_NICKNAMES, y, x);
+  if (!(_ || T || S) || null == N || G) return null;
+  let R = x.features.has(f.GuildFeatures.HUB) ? h.intl.string(h.t["+MWrWt"]) : h.intl.string(h.t["PKQB/H"]),
     D = S ? R : h.intl.string(h.t.dilOF6);
   return (0, l.jsx)(a.Drp, {
     id: "change-nickname",
@@ -58,7 +58,7 @@ function y(e) {
     }),
     icon: m,
     action: () => {
-      S ? ((0, o.A)(x.id, x.getAvatarURL(t, 80), {
+      S ? ((0, u.A)(N.id, N.getAvatarURL(t, 80), {
         guildId: t
       }), v(), U.dispatch(f.jej.POPOUT_CLOSE), (0, a.s7G)()) : (0, a.mMO)(async () => {
         let {
@@ -85,7 +85,7 @@ function y(e) {
             return e
           }({}, n), r = r = {
             guildId: t,
-            user: x,
+            user: N,
             analyticsSource: j,
             analyticsLocations: C
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

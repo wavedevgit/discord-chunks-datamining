@@ -43,7 +43,7 @@ function O(e) {
     currentPage: N,
     totalCount: R,
     isFetchingResults: P
-  } = (0, m.S)(), B = (0, i.yK)([g.A], () => g.A.getProductsBySkus(k)), w = l.useCallback(() => {
+  } = (0, p.S)(), B = (0, i.yK)([g.A], () => g.A.getProductsBySkus(k)), w = l.useCallback(() => {
     var e;
     null == s || null == (e = s.current) || e.scrollToTop({
       animate: true
@@ -68,7 +68,7 @@ function O(e) {
       setQueryPageSize: U,
       setQueryPageOffset: F,
       queryPageSize: z
-    } = (0, p.v)(),
+    } = (0, m.v)(),
     [V, K] = l.useState(false),
     W = n || P || null == I;
   l.useEffect(() => {

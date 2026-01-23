@@ -180,6 +180,7 @@ function ef(e) {
       } = e;
       return (0, r.jsx)(M.A, {
         children: (0, r.jsx)(a.W1t, {
+          "data-menu-all-icons": true,
           navId: "exit-options",
           "aria-label": eo.intl.string(eo.t["3Uj+2p"]),
           onClose: l,

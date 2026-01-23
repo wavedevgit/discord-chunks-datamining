@@ -1,5 +1,5 @@
 /** Chunk was on 7869 **/
-/** chunk id: 971961, original params: t,e,n (module,exports,require) **/
+/** chunk id: 971961, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y
 });
@@ -14,7 +14,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk691012 = require("./691012.js"),
   Chunk985018 = require("./985018.jsx");
 
-function y(t, e) {
+function y(e, t) {
   let n = a.Q_.useSetting(),
     {
       tidaWebformEnabled: y
@@ -23,9 +23,9 @@ function y(t, e) {
     }, {
       autoTrackExposure: false
     }),
-    f = (0, i.bG)([s.Ay], () => s.Ay.getGuildScheduledEvent(t)),
+    f = (0, i.bG)([s.Ay], () => s.Ay.getGuildScheduledEvent(e)),
     b = null != f ? (0, d.A)(f) : null,
-    p = "event-image" === e.getAttribute("data-type"),
+    p = "event-image" === t.getAttribute("data-type"),
     A = r.useCallback(() => {
       null != b && (0, c.C)(b)
     }, [b]);

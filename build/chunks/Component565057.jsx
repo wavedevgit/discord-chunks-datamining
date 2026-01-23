@@ -62,7 +62,7 @@ let k = e => {
     J({
       isShuffling: false,
       onOutroComplete: () => U(e)
-    }), p.default.track(j.HAw.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
+    }), m.default.track(j.HAw.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: $,
       sort_type: e
     })
@@ -81,7 +81,7 @@ let k = e => {
           position: "top",
           "aria-label": T.intl.string(T.t["3taPdj"]),
           children: (0, r.jsx)(c.DUT, {
-            onClick: () => (0, u.A)(m.A.getArticleURL(j.MVz.DATA_USED_FOR_RECOMMENDED)),
+            onClick: () => (0, u.A)(p.A.getArticleURL(j.MVz.DATA_USED_FOR_RECOMMENDED)),
             className: I.sT,
             children: (0, r.jsx)(c.mir, {
               size: "sm"
@@ -128,7 +128,7 @@ let k = e => {
                 isShuffling: true,
                 onOutroComplete: V,
                 returnRef: ee
-              }), p.default.track(j.HAw.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
+              }), m.default.track(j.HAw.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
                 page_session_id: $
               })
             },

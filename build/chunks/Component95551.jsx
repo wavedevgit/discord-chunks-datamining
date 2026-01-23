@@ -1,4 +1,4 @@
-/** Chunk was on 22477 **/
+/** Chunk was on 65599 **/
 /** chunk id: 95551, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Gs: () => h,
@@ -49,6 +49,7 @@ function m(e) {
   return (0, a.jsx)("div", {
     className: c.wE,
     children: (0, a.jsx)(i.W1t, d({
+      "data-menu-migration-ready": true,
       variant: "fixed",
       hideScroller: true,
       onSelect: true

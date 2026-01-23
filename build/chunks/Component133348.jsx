@@ -46,6 +46,7 @@ function g(e) {
   return (0, l.jsx)("div", {
     className: h.k,
     children: (0, l.jsxs)(s.W1t, {
+      "data-menu-migration-ready": true,
       navId: "sort-and-view",
       "aria-label": v ? u.intl.string(u.t["kQN/bi"]) : u.intl.string(u.t.DJzbkL),
       hideScroller: true,

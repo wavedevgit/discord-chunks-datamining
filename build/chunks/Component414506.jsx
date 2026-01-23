@@ -25,8 +25,9 @@ let _ = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     isViewOnly: b
   } = e, {
     analyticsLocations: E
-  } = (0, a.Ay)(c.A.CONTEXT_MENU), f = null != (t = null == s ? true : s[0]) ? t : E[0], O = (0, d.A)(n.id, o, true, f, b);
+  } = (0, c.Ay)(a.A.CONTEXT_MENU), f = null != (t = null == s ? true : s[0]) ? t : E[0], O = (0, d.A)(n.id, o, true, f, b);
   return (0, r.jsx)(l.W1t, {
+    "data-menu-migration-ready": true,
     navId: "guild-moderation-roles",
     onClose: () => {
       (0, i.Z_)(), null == _ || _()

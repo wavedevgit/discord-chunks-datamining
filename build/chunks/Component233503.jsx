@@ -26,11 +26,11 @@ function f(t) {
     id: O,
     name: j,
     isInExpressionPicker: true
-  }), P = null != m ? (0, l.jsx)(i.Dr, {
+  }), x = null != m ? (0, l.jsx)(i.Dr, {
     id: "copy",
     label: y.intl.string(y.t.ad58UB),
     action: () => (0, g.C)(m)
-  }) : null, x = (0, u.A)({
+  }) : null, P = (0, u.A)({
     id: O,
     shiftId: f === d.g.EMOJI ? "<".concat(v ? "a" : "", ":").concat(null == j ? true : j.split("~")[0], ":").concat(O, ">") : true,
     label: f === d.g.STICKER ? y.intl.string(y.t.SJ3249) : y.intl.string(y.t.Ap2oVy)
@@ -57,13 +57,14 @@ function f(t) {
     icon: o.qYV
   }) : null;
   return (0, l.jsx)(o.W1t, {
+    "data-menu-mixed": true,
     navId: "expression-picker",
     onClose: a.Z_,
     "aria-label": y.intl.string(y.t.XoasSC),
     onSelect: n,
     className: "context-menu",
     children: (0, l.jsxs)(o.rXV, {
-      children: [I, g.p5 && C ? null != P ? P : x : null, g.p5 && C ? w : null]
+      children: [I, g.p5 && C ? null != x ? x : P : null, g.p5 && C ? w : null]
     })
   })
 }

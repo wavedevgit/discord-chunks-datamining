@@ -1,4 +1,4 @@
-/** Chunk was on 22477 **/
+/** Chunk was on 65599 **/
 /** chunk id: 449630, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => el
@@ -297,6 +297,7 @@ function el(e) {
                           size: "sm",
                           "aria-label": ee.intl.string(ee.t["3Uj+2p"]),
                           children: (0, a.jsx)(c.W1t, {
+                            "data-menu-migration-ready": true,
                             navId: "set-status-submenu-mobile-web",
                             variant: "fixed",
                             "aria-label": ee.intl.string(ee.t.E13trI),

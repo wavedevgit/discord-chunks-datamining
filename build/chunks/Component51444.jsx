@@ -22,23 +22,23 @@ function f(e) {
   var t, a;
   let {
     onSelect: f,
-    onClose: b
+    onClose: y
   } = e, {
-    avatarSizeMode: y,
+    avatarSizeMode: b,
     displayNameMode: O,
     displayUserMode: j
-  } = (0, r.cf)([d.default], () => ({
+  } = (0, l.cf)([d.default], () => ({
     avatarSizeMode: d.default.getAvatarSizeMode(),
     displayNameMode: d.default.getDisplayNameMode(),
     displayUserMode: d.default.getDisplayUserMode()
-  })), h = l.useRef(b);
-  l.useEffect(() => {
-    h.current = b
-  }), l.useEffect(() => () => {
+  })), h = r.useRef(y);
+  r.useEffect(() => {
+    h.current = y
+  }), r.useEffect(() => () => {
     var e;
     return null == (e = h.current) ? true : e.call(h)
   }, []);
-  let A = (0, r.bG)([p.A, u.A], () => {
+  let A = (0, l.bG)([p.A, u.A], () => {
       let e = p.A.getWidgetByType(g.uss.VOICE_V3);
       if (null == e) return null;
       let t = u.A.getWidget(e.id);
@@ -54,6 +54,7 @@ function f(e) {
     }))
   }
   return (0, n.jsxs)(i.W1t, {
+    "data-menu-migration-ready": true,
     navId: "overlay-voice-widget-context-menu",
     onClose: o.Z_,
     "aria-label": m.intl.string(m.t.tPfVWi),
@@ -68,7 +69,7 @@ function f(e) {
         name: m.intl.string(m.t.BKIKqx)
       }].map(e => (0, n.jsx)(i.iDA, {
         label: e.name,
-        checked: y === e.value,
+        checked: b === e.value,
         id: "avatar-size-mode-".concat(e.value),
         group: "avatar-size-mode",
         action: () => c.A.setAvatarSizeMode(e.value)
@@ -111,7 +112,7 @@ function f(e) {
         id: "voice-widget-max-users-displayed",
         label: m.intl.string(m.t["X/Uyzc"]),
         control: (e, t) => {
-          var a, l;
+          var a, r;
           return (0, n.jsx)(i.i42, (a = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var a = null != arguments[t] ? arguments[t] : {},
@@ -129,7 +130,7 @@ function f(e) {
               })
             }
             return e
-          }({}, e), l = l = {
+          }({}, e), r = r = {
             ref: t,
             value: S,
             minValue: 0,
@@ -137,15 +138,15 @@ function f(e) {
             onChange: w,
             renderValue: e => e < 1 ? m.intl.string(m.t.nrUzFL) : "".concat(Math.floor(e)),
             "aria-label": m.intl.string(m.t["X/Uyzc"])
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
             var a = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var n = Object.getOwnPropertySymbols(e);
               a.push.apply(a, n)
             }
             return a
-          })(Object(l)).forEach(function(e) {
-            Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(l, e))
+          })(Object(r)).forEach(function(e) {
+            Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(r, e))
           }), a))
         }
       })

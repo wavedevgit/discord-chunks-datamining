@@ -17,22 +17,23 @@ function f(t) {
   let {
     onSelect: e,
     onClose: i
-  } = t, f = (0, c.bG)([r.A], () => r.A.isNotificationDisabled(u.KS.TextChat)), h = a.useRef(i);
-  return a.useEffect(() => {
+  } = t, f = (0, c.bG)([l.A], () => l.A.isNotificationDisabled(d.KS.TextChat)), h = n.useRef(i);
+  return n.useEffect(() => {
     h.current = i
-  }), a.useEffect(() => () => {
+  }), n.useEffect(() => () => {
     var t;
     return null == (t = h.current) ? true : t.call(h)
-  }, []), (0, n.jsx)(s.W1t, {
+  }, []), (0, a.jsx)(s.W1t, {
+    "data-menu-migration-ready": true,
     navId: "overlay-notifications-widget-context-menu",
-    onClose: l.Z_,
-    "aria-label": d.intl.string(d.t.tPfVWi),
+    onClose: r.Z_,
+    "aria-label": u.intl.string(u.t.tPfVWi),
     onSelect: e,
-    children: (0, n.jsx)(s.sLh, {
-      label: d.intl.string(d.t.Fy5kPp),
+    children: (0, a.jsx)(s.sLh, {
+      label: u.intl.string(u.t.Fy5kPp),
       checked: !f,
       id: "overlay-text-chat-notifications",
-      action: () => o.A.setNotificationDisabled(u.KS.TextChat, !f)
+      action: () => o.A.setNotificationDisabled(d.KS.TextChat, !f)
     })
   })
 }

@@ -39,6 +39,7 @@ function p(e) {
     selected: i
   } = e, a = u(e, ["items", "onClose", "onSelect", "selected"]);
   return (0, l.jsx)(o.W1t, {
+    "data-menu-mixed": true,
     className: d.MK,
     navId: "global-discovery-search-filter-options",
     "aria-label": a["aria-label"],

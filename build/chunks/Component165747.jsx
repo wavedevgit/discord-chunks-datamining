@@ -1,5 +1,5 @@
 /** Chunk was on 41072 **/
-/** chunk id: 165747, original params: t,l,n (module,exports,require) **/
+/** chunk id: 165747, original params: t,n,l (module,exports,require) **/
 require.d(exports, {
   default: () => o
 }), require("./321073.js");
@@ -14,16 +14,17 @@ var Chunk397927 = require("./397927.js"),
 
 function o(t) {
   let {
-    role: l,
-    guild: n,
+    role: n,
+    guild: l,
     onSelect: o
-  } = t, p = [], c = (0, r.A)(n, l, u.BEX.INTEGRATIONS);
+  } = t, p = [], c = (0, r.A)(l, n, u.BEX.INTEGRATIONS);
   null != c && p.push(c);
   let h = (0, a.A)({
-    id: l.id,
+    id: n.id,
     label: d.intl.string(d.t.sMsaLg)
   });
-  return (null != h && p.push(h), 0 === p.length) ? null : (0, i.jsx)(e.W1t, {
+  return (null != h && p.push(h), 0 === p.length) ? null : (0, e.jsx)(i.W1t, {
+    "data-menu-mixed": true,
     navId: "guild-integrations-permission-role-context",
     "aria-label": d.intl.string(d.t["337Ja9"]),
     onClose: s.Z_,

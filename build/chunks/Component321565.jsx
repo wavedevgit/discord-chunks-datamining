@@ -50,7 +50,7 @@ function S(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) l = n[i], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (r[l] = e[l]);
     return r
-  }(e, ["onClose", "items", "startingIndex", "enabledContentHarmTypeFlags", "shouldHideMediaOptions", "transitionState"]), [A, v] = i.useState(null != r ? r : 0), [C, I] = i.useState(false), [N, x] = (0, s.zhh)(() => ({
+  }(e, ["onClose", "items", "startingIndex", "enabledContentHarmTypeFlags", "shouldHideMediaOptions", "transitionState"]), [A, v] = i.useState(null != r ? r : 0), [C, I] = i.useState(false), [x, N] = (0, s.zhh)(() => ({
     scale: d.A.useReducedMotion ? 1 : .9,
     x: 0,
     y: 0,
@@ -65,7 +65,7 @@ function S(e) {
     }
   }, [t]), i.useEffect(() => {
     var e, t;
-    T === s.ip4.ENTERING && g(N.scale, 1), T === s.ip4.ENTERED && (u.A.disable(), u.A.enableTemp(c.w)), T === s.ip4.HIDDEN && (g(N.scale, .9), u.A.disable(), u.A.enableTemp(c.b)), T === s.ip4.EXITING && g(N.scale, .9);
+    T === s.ip4.ENTERING && g(x.scale, 1), T === s.ip4.ENTERED && (u.A.disable(), u.A.enableTemp(c.w)), T === s.ip4.HIDDEN && (g(x.scale, .9), u.A.disable(), u.A.enableTemp(c.b)), T === s.ip4.EXITING && g(x.scale, .9);
     let n = () => {
         u.A.disable(), T === s.ip4.ENTERED ? u.A.enableTemp(c.w) : u.A.enableTemp(c.b)
       },
@@ -76,25 +76,25 @@ function S(e) {
     return null == i || i.addEventListener("focus", n), null == i || i.addEventListener("blur", l), () => {
       null == i || i.removeEventListener("focus", n), null == i || i.removeEventListener("blur", l), u.A.disableTemp()
     }
-  }, [T, N]);
+  }, [T, x]);
   let R = i.useCallback(e => {
       v(e), (0, f.Yq)(f.NJ.SELECTED_ITEM_CHANGE)
     }, []),
     P = i.useMemo(() => ({
-      scale: N.scale,
-      x: N.x,
-      y: N.y,
+      scale: x.scale,
+      x: x.x,
+      y: x.y,
       setScale(e, t) {
-        g(N.scale, e, null == t ? true : t.immediate)
+        g(x.scale, e, null == t ? true : t.immediate)
       },
       setOffset(e, t, n) {
-        g(N.x, e, null == n ? true : n.immediate), g(N.y, t, null == n ? true : n.immediate)
+        g(x.x, e, null == n ? true : n.immediate), g(x.y, t, null == n ? true : n.immediate)
       },
       zoomed: C,
       setZoomed(e) {
-        I(e), g(N.scale, e ? 2.5 : 1), e || (g(N.x, 0), g(N.y, 0))
+        I(e), g(x.scale, e ? 2.5 : 1), e || (g(x.x, 0), g(x.y, 0))
       }
-    }), [C, N]);
+    }), [C, x]);
   return (0, l.jsx)(s.NPJ, {
     theme: y.NJ8.MIDNIGHT,
     children: e => {

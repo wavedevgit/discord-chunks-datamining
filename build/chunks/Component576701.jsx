@@ -25,8 +25,8 @@ function j(e) {
       onSelect: h,
       onInteraction: y
     } = e,
-    E = (0, d.A)(),
-    P = p.vL.useSetting(),
+    E = (0, p.A)(),
+    P = d.vL.useSetting(),
     D = (t = null != A ? A : true, n = (0, l.bG)([a.A], () => a.A.getWindow(O.MLl.CHANNEL_CALL_POPOUT)), null == t || null != n ? null : (0, r.jsx)(i.Drp, {
       id: "popout-call",
       label: f.intl.string(f.t.JzWezz),
@@ -37,6 +37,7 @@ function j(e) {
       children: [v, g]
     }) : null);
   return (0, r.jsxs)(i.W1t, {
+    "data-menu-mixed": true,
     navId: "rtc-channel",
     "aria-label": f.intl.string(f.t.ogxXGq),
     onClose: o.Z_,
@@ -46,7 +47,7 @@ function j(e) {
       children: [D, (0, r.jsx)(i.sLh, {
         id: "show-voice-states",
         checked: P,
-        action: () => p.vL.updateSetting(!P),
+        action: () => d.vL.updateSetting(!P),
         label: f.intl.string(f.t.vkbSB0)
       })]
     })]

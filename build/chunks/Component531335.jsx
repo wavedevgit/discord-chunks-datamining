@@ -37,12 +37,12 @@ function b(e) {
     guild: n,
     channel: r,
     stageInstance: i
-  } = e, a = (0, c.bG)([o.A], () => (0, l.K)(o.A, n, r, i)), u = O(t, n, r), s = f(t, r);
-  return a ? u : s
+  } = e, o = (0, c.bG)([a.A], () => (0, l.K)(a.A, n, r, i)), u = O(t, n, r), s = f(t, r);
+  return o ? u : s
 }
 
 function p(e, t) {
-  return null != t && [a.PE1.GUILD_HEADER, a.PE1.GUILD_CONTEXT_MENU].includes(t) || null == e ? u.intl.string(u.t.Sd8Ixw) : e.type === a.rbe.GUILD_VOICE ? u.intl.string(u.t["EE+P0H"]) : u.intl.string(u.t["0jeAXt"])
+  return null != t && [o.PE1.GUILD_HEADER, o.PE1.GUILD_CONTEXT_MENU].includes(t) || null == e ? u.intl.string(u.t.Sd8Ixw) : e.type === o.rbe.GUILD_VOICE ? u.intl.string(u.t["EE+P0H"]) : u.intl.string(u.t["0jeAXt"])
 }
 let O = (e, t, c) => {
     if (null == t) return null;
@@ -51,26 +51,26 @@ let O = (e, t, c) => {
       id: "invite-people",
       label: l,
       color: "brand",
-      icon: e === a.PE1.GUILD_HEADER ? i.DpX : true,
+      icon: e === o.PE1.GUILD_HEADER ? i.DpX : true,
       action: () => (0, i.mMO)(async () => {
         let {
           default: i
         } = await Promise.all([n.e("43600"), n.e("28136"), n.e("42821")]).then(n.bind(n, 234355));
         return n => {
-          var l, o;
-          return (0, r.jsx)(i, (l = s({}, n), o = o = {
+          var l, a;
+          return (0, r.jsx)(i, (l = s({}, n), a = a = {
             guild: t,
             channel: c,
             source: e
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(o)).forEach(function(e) {
-            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
+          })(Object(a)).forEach(function(e) {
+            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
           }), l))
         }
       })
@@ -82,7 +82,7 @@ let O = (e, t, c) => {
       id: "invite-people",
       label: c,
       color: "brand",
-      icon: e === a.PE1.GUILD_HEADER ? i.DpX : true,
+      icon: e === o.PE1.GUILD_HEADER ? i.DpX : true,
       action: () => (0, i.mMO)(async () => {
         let {
           default: e

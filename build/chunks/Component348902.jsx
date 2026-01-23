@@ -27,6 +27,7 @@ let A = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     label: p.intl.string(p.t["FfCL+6"])
   });
   return (0, r.jsxs)(i.W1t, {
+    "data-menu-mixed": true,
     navId: "game-context",
     onClose: c.Z_,
     "aria-label": p.intl.string(p.t.liqwPJ),

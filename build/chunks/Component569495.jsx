@@ -195,6 +195,7 @@ let R = Chunk64700.forwardRef(function(e, t) {
     label: O.intl.string(O.t["FfCL+6"]),
     onSuccess: () => (0, c.showToast)((0, c.createToast)(O.intl.string(O.t.eNjAah), c.ToastType.SUCCESS))
   }), y = l.useCallback((e, t) => (0, r.jsxs)(c.W1t, {
+    "data-menu-mixed": true,
     navId: "application-directory-profile",
     "aria-label": O.intl.string(O.t["/7I4/C"]),
     onClose: t,

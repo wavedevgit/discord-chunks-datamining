@@ -2,7 +2,7 @@
 /** chunk id: 196231, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  S: () => m
+  S: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,15 +16,15 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk201073 = require("./201073.js");
-let m = e => {
-  var t, n, m;
+let p = e => {
+  var t, n, p;
   let _, {
     category: b,
     subblock: h,
     badgeText: E,
     handleTransition: v
   } = e;
-  null != h && (_ = null == (m = c.A.getCategoryByStoreListingId(null == h ? true : h.categoryStoreListingId)) ? true : m.skuId);
+  null != h && (_ = null == (p = c.A.getCategoryByStoreListingId(null == h ? true : h.categoryStoreListingId)) ? true : p.skuId);
   let C = null != (t = null != _ ? _ : null == b ? true : b.skuId) ? t : "",
     {
       handleCardVisibilityChange: A
@@ -38,7 +38,7 @@ let m = e => {
     onChange: A,
     threshold: 0,
     children: (0, r.jsxs)(a.DUT, {
-      className: p.oT,
+      className: m.oT,
       innerRef: S,
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -80,12 +80,12 @@ let m = e => {
       children: [null != E && (0, r.jsx)(a.LpS, {
         disableColor: true,
         text: E,
-        className: p.pv
+        className: m.pv
       }), (0, r.jsx)("div", {
-        className: p.Gh,
+        className: m.Gh,
         children: null != O && (0, r.jsx)(a.Heading, {
           lineClamp: 4,
-          className: p.BN,
+          className: m.BN,
           style: {
             color: null != (n = null == h ? true : h.bannerTextColor) ? n : "white"
           },
@@ -93,7 +93,7 @@ let m = e => {
           children: O
         })
       }), (0, r.jsx)("div", {
-        className: p.b2,
+        className: m.b2,
         children: (0, r.jsx)(a.Button, {
           variant: "overlay-primary",
           text: f.intl.string(f.t.jVcuVY),

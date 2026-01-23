@@ -1,5 +1,5 @@
 /** Chunk was on 99523 **/
-/** chunk id: 41614, original params: t,n,s (module,exports,require) **/
+/** chunk id: 41614, original params: t,a,n (module,exports,require) **/
 require.d(exports, {
   default: () => o
 });
@@ -14,20 +14,21 @@ var Chunk397927 = require("./397927.js"),
 
 function o(t) {
   let {
-    guild: n,
-    onSelect: s
+    guild: a,
+    onSelect: n
   } = t;
-  return (0, i.jsx)(a.W1t, {
+  return (0, i.jsx)(e.W1t, {
+    "data-menu-migration-ready": true,
     navId: "game-shop-context",
-    "aria-label": d.intl.string(d.t.vyaWs7),
-    onClose: e.Z_,
-    onSelect: s,
-    children: (0, i.jsx)(a.rXV, {
-      children: (0, i.jsx)(a.Drp, {
+    "aria-label": c.intl.string(c.t.vyaWs7),
+    onClose: s.Z_,
+    onSelect: n,
+    children: (0, i.jsx)(e.rXV, {
+      children: (0, i.jsx)(e.Drp, {
         id: "game-shop-copy-link",
-        label: d.intl.string(d.t.WqhZss),
+        label: c.intl.string(c.t.WqhZss),
         action: () => {
-          (0, l.C)((0, r.n)(n.id, c.VV.GAME_SHOP))
+          (0, d.C)((0, r.n)(a.id, l.VV.GAME_SHOP))
         }
       })
     })

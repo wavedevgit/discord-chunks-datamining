@@ -51,7 +51,7 @@ let I = {
       onVisibilityChange: P
     } = e, B = (0, i.K)(e => {
       null == P || P(e)
-    }, .1, null != P), w = l.useRef(null), D = (0, x.y)("HeroBlock"), M = (0, u.bG)([m.default], () => m.default.getCurrentUser()), H = (0, b.uM)(), G = l.useMemo(() => {
+    }, .1, null != P), w = l.useRef(null), D = (0, x.y)("HeroBlock"), M = (0, u.bG)([p.default], () => p.default.getCurrentUser()), H = (0, b.uM)(), G = l.useMemo(() => {
       var e;
       return null != N ? N : null == k ? I : {
         rankedSkuIds: null != (e = k.heroRanking) ? e : [],
@@ -79,7 +79,7 @@ let I = {
     let {
       analyticsLocations: ee
     } = (0, g.Ay)(), et = () => {
-      J ? ((0, p.Y)({
+      J ? ((0, m.Y)({
         pageType: j.liQ.SHOP_ORBS_TAB,
         sectionType: j.JJy.ORBS_SHOP_HERO_BLOCK,
         ctaObject: j.ZSU.CTA_TO_QUEST_HOME

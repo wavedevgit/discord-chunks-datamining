@@ -13,12 +13,12 @@ var Chunk311907 = require("./311907.js"),
 
 function u(n, t) {
   let a = (0, d.bG)([l.A], () => l.A.getLaunchOptions(n.id, n.branchId)),
-    u = (0, d.bG)([r.A], () => r.A.getActiveLaunchOptionId(n.id, n.branchId));
+    u = (0, d.bG)([c.A], () => c.A.getActiveLaunchOptionId(n.id, n.branchId));
   return a.length < 2 ? null : a.map(a => (0, i.jsx)(e.Drp, {
     id: a.id,
     label: a.name,
     action: i => {
-      a.id !== u && c.Wp(n.id, n.branchId, a.id), null == t || t(i)
+      a.id !== u && r.Wp(n.id, n.branchId, a.id), null == t || t(i)
     }
   }, a.id))
 }

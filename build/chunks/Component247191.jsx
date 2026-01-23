@@ -1,5 +1,5 @@
 /** Chunk was on 7869 **/
-/** chunk id: 247191, original params: t,e,n (module,exports,require) **/
+/** chunk id: 247191, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => _
 }), require("./228524.js"), require("./747238.js");
@@ -27,12 +27,12 @@ let j = "YYYYMMDDTHHmmss",
   h = "YYYY-MM-DDTHH:mm:ss",
   D = /RRULE:.*/;
 
-function _(t, e, n, r) {
+function _(e, t, n, r) {
   var u, _, w;
-  let N, G = (0, c.bG)([b.Ay], () => b.Ay.isActive(t)),
-    S = (0, p.nh)(null != t ? t : "", r),
-    P = (0, c.bG)([b.Ay], () => b.Ay.getGuildScheduledEvent(t), [t]),
-    x = (0, c.bG)([y.A], () => y.A.getGuild(e), [e]);
+  let N, G = (0, c.bG)([b.Ay], () => b.Ay.isActive(e)),
+    S = (0, p.nh)(null != e ? e : "", r),
+    P = (0, c.bG)([b.Ay], () => b.Ay.getGuildScheduledEvent(e), [e]),
+    x = (0, c.bG)([y.A], () => y.A.getGuild(t), [t]);
   if (G || null == S || null == P) return null;
   N = P.entity_type === E.Ps.EXTERNAL ? P.entity_metadata.location : null != n && null != x ? m.intl.formatToPlainString(m.t["2t8L04"], {
     channelName: n.name,
@@ -50,15 +50,15 @@ function _(t, e, n, r) {
     R = null != (_ = o()(V)) ? _ : T,
     B = null != (w = o()(null != M ? M : V)) ? w : T,
     k = () => {
-      let t = i()();
-      t.createEvent({
+      let e = i()();
+      e.createEvent({
         start: T,
         end: C,
         summary: P.name,
         description: I,
         location: N,
         repeating: U
-      }), f.isPlatformEmbedded ? d.A.fileManager.saveWithDialog(t.toString(), "discord-event.ics") : window.open(t.toURL(), "_blank")
+      }), f.isPlatformEmbedded ? d.A.fileManager.saveWithDialog(e.toString(), "discord-event.ics") : window.open(e.toURL(), "_blank")
     };
   return (0, l.jsxs)(s.Drp, {
     id: m.intl.string(m.t.k5pvjo),
@@ -68,15 +68,15 @@ function _(t, e, n, r) {
       id: m.intl.string(m.t.JKSLRH),
       label: m.intl.string(m.t.JKSLRH),
       action: () => {
-        var t;
-        let e = null == U ? true : U.toString(),
+        var e;
+        let t = null == U ? true : U.toString(),
           n = {
             text: P.name,
             dates: "".concat(T.format(j), "/").concat(C.format(j)),
             details: I,
             action: "TEMPLATE",
             location: N,
-            recur: null != e ? null == (t = D.exec(e)) ? true : t[0] : true
+            recur: null != t ? null == (e = D.exec(t)) ? true : e[0] : true
           },
           l = "https://calendar.google.com/calendar/render?".concat((0, a.stringify)(n));
         window.open(l, "_blank")
@@ -89,7 +89,7 @@ function _(t, e, n, r) {
       id: m.intl.string(m.t.odzaCd),
       label: m.intl.string(m.t.odzaCd),
       action: () => {
-        let t = {
+        let e = {
             v: 60,
             title: P.name,
             st: R.format(j),
@@ -97,14 +97,14 @@ function _(t, e, n, r) {
             desc: I,
             in_loc: N
           },
-          e = "https://calendar.yahoo.com/?".concat((0, a.stringify)(t));
-        window.open(e, "_blank")
+          t = "https://calendar.yahoo.com/?".concat((0, a.stringify)(e));
+        window.open(t, "_blank")
       }
     }), (0, l.jsx)(s.Drp, {
       id: m.intl.string(m.t.rQe8EE),
       label: m.intl.string(m.t.rQe8EE),
       action: () => {
-        let t = {
+        let e = {
             path: "/calendar/action/compose",
             rru: "addevent",
             startdt: R.format(h),
@@ -114,8 +114,8 @@ function _(t, e, n, r) {
             location: N,
             allday: false
           },
-          e = "https://outlook.live.com/calendar/0/deeplink/compose?".concat((0, a.stringify)(t));
-        window.open(e, "_blank")
+          t = "https://outlook.live.com/calendar/0/deeplink/compose?".concat((0, a.stringify)(e));
+        window.open(t, "_blank")
       }
     })]
   })

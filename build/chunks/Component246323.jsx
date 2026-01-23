@@ -17,6 +17,7 @@ function c(e) {
     channelId: _
   } = e, s = (0, a.A)(c, _, i.BRT.POPOUT);
   return (0, r.jsx)(o.W1t, {
+    "data-menu-all-icons": true,
     navId: "activity-popout-overflow-popout",
     onClose: n,
     onSelect: t,

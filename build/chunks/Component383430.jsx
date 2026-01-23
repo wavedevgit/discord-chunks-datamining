@@ -61,6 +61,7 @@ function d(e) {
         closePopout: t
       } = e;
       return (0, r.jsx)(i.W1t, {
+        "data-menu-migration-ready": true,
         navId: "wishlist-overflow-menu",
         onSelect: true,
         onClose: t,

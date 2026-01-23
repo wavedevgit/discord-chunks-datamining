@@ -16,6 +16,7 @@ let s = e => {
     className: o
   } = e;
   return (0, r.jsxs)(i.W1t, {
+    "data-menu-migration-ready": true,
     className: o,
     onClose: s,
     onSelect: true,

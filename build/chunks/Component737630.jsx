@@ -59,7 +59,7 @@ let G = e => {
     let {
       tab: t = B.G2.HOME
     } = e;
-    (0, m.P)(p.a), (0, O.g)();
+    (0, p.P)(m.a), (0, O.g)();
     let n = (0, g.A)((0, i.A)()),
       s = (0, o.bG)([b.default], () => b.default.getCurrentUser());
     (0, _.pE)();

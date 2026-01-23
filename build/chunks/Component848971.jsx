@@ -2,7 +2,7 @@
 /** chunk id: 848971, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => T
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,6 +12,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk73153 = require("./73153.js"),
   Chunk915089 = require("./915089.js"),
   Chunk450232 = require("./450232.jsx"),
+  Chunk358776 = require("./358776.js"),
   Chunk193658 = require("./193658.js"),
   Chunk526162 = require("./526162.js"),
   Chunk603880 = require("./603880.jsx"),
@@ -21,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk638959 = require("./638959.js"),
   Chunk944255 = require("./944255.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,20 +31,20 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function O(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,25 +55,25 @@ function O(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = I(e, t), Object.getOwnPropertySymbols)
+  if (a = S(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -80,55 +81,56 @@ function I(e, t) {
   return i
 }
 
-function S(e) {
+function T(e) {
   let {
     className: t,
     disabled: n,
-    isEditor: y,
-    renderCTAButtons: O
-  } = e, [I] = (0, a.yK)([f.A], () => [f.A.getCurrentDesktopIcon()]), S = i.useRef(null);
-  (0, d.A)(S, h.kq.CUSTOM_APP_ICONS);
-  let T = (0, c.GV)(),
-    C = (0, s._u)({
+    isEditor: b,
+    renderCTAButtons: v
+  } = e, [S] = (0, a.yK)([p.A], () => [p.A.getCurrentDesktopIcon()]), T = (0, d.dk)("AppIconSelectionGroup"), C = i.useRef(null);
+  (0, f.A)(C, m.kq.CUSTOM_APP_ICONS);
+  let N = (0, c.GV)(),
+    R = (0, s._u)({
       orientation: "horizontal",
-      labelledBy: T
+      labelledBy: N
     }),
     {
-      ref: N
-    } = C,
-    R = A(C, ["ref"]),
-    w = e => {
+      ref: w
+    } = R,
+    P = I(R, ["ref"]),
+    D = e => {
       l.h.dispatch({
         type: "APP_ICON_UPDATED",
         id: e
       })
     };
   return (0, r.jsx)("div", {
-    ref: S,
-    children: (0, r.jsx)("div", v(b({}, R), {
-      ref: N,
-      className: g.__invalid_container,
+    ref: C,
+    children: (0, r.jsx)("div", A(O({}, P), {
+      ref: w,
+      className: E.__invalid_container,
       children: (0, r.jsxs)("div", {
         className: t,
         children: [(0, r.jsxs)("div", {
-          className: g.wx,
+          className: E.wx,
           children: [(0, r.jsxs)("div", {
-            className: g.so,
-            children: [!y && (0, r.jsxs)("div", {
-              className: g.DD,
+            className: E.so,
+            children: [!b && (0, r.jsxs)("div", {
+              className: E.DD,
               children: [(0, r.jsx)(o.Heading, {
-                className: g.Qw,
-                variant: "text-lg/medium",
-                children: m.intl.string(m.t.NThqTw)
+                className: E.Qw,
+                variant: T ? "heading-xl/normal" : "text-lg/medium",
+                color: T ? "text-strong" : true,
+                children: g.intl.string(g.t.NThqTw)
               }), (0, r.jsx)(u.A, {
-                className: g.PC
+                className: E.PC
               })]
             }), (0, r.jsx)(o.Heading, {
               variant: "text-sm/normal",
-              className: E.W$,
-              children: m.intl.string(m.t.IgENJo)
+              className: y.W$,
+              children: g.intl.string(g.t.IgENJo)
             })]
-          }), null == O ? true : O()]
+          }), null == v ? true : v()]
         }), (0, r.jsx)(o.BJc, {
           direction: "horizontal",
           wrap: true,
@@ -136,15 +138,15 @@ function S(e) {
           style: {
             marginTop: 16
           },
-          children: (0, _.v8)().filter(e => {
+          children: (0, h.v8)().filter(e => {
             let {
               isHidden: t
             } = e;
             return !t
-          }).map((e, t) => (0, r.jsx)(p.A, {
+          }).map((e, t) => (0, r.jsx)(_.A, {
             icon: e,
-            isSelected: I === e.id,
-            onSelect: e => w(e),
+            isSelected: S === e.id,
+            onSelect: e => D(e),
             disabled: n,
             tabIndex: 0 !== t || n ? true : 0,
             locked: false

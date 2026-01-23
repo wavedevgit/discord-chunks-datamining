@@ -45,6 +45,7 @@ function v(e) {
         closePopout: a
       } = e;
       return (0, r.jsx)(i.W1t, {
+        "data-menu-migration-ready": true,
         navId: "game_server-popout-context-menu",
         onClose: () => {
           (0, l.Z_)(), a()

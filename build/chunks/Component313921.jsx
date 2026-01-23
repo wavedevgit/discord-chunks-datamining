@@ -28,14 +28,14 @@ let h = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     sound: s,
     activeCallGuildId: d,
     onSelect: b
-  } = e, m = function(e, t) {
+  } = e, w = function(e, t) {
     let {
       canManageGuildExpressions: i
     } = (0, l.cf)([p.A], () => null == t ? {
       canManageGuildExpressions: false
-    } : p.A.getGuildPermissionProps(t), [t]), a = o.useCallback(() => {
+    } : p.A.getGuildPermissionProps(t), [t]), c = o.useCallback(() => {
       if ((null == t ? true : t.id) == null) return null;
-      (0, c.mMO)(async () => {
+      (0, a.mMO)(async () => {
         let {
           default: o
         } = await Promise.all([n.e("40556"), n.e("61274")]).then(n.bind(n, 6503));
@@ -74,10 +74,10 @@ let h = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
         }
       })
     }, [t, e]);
-    return i ? (0, r.jsx)(c.Drp, {
+    return i ? (0, r.jsx)(a.Drp, {
       id: "edit-soundboard-sound",
       label: v.intl.string(v.t.ponZcG),
-      action: a
+      action: c
     }, "edit-soundboard-sound") : null
   }(s, t), h = function(e) {
     let {
@@ -101,14 +101,14 @@ let h = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
           l = "".concat(t, ".").concat(o);
         y.isPlatformEmbedded ? await g.Ay.saveFile(e, l) : (0, i.saveAs)(r, l)
       } catch (e) {
-        a.A.show({
+        c.A.show({
           title: v.intl.string(v.t.mK3tDH),
           body: v.intl.string(v.t.jLlfDN),
           confirmText: v.intl.string(v.t.BddRzS)
         })
       }
     }, [t]);
-    return e.guildId === w.mV ? null : (0, r.jsx)(c.Drp, {
+    return e.guildId === m.mV ? null : (0, r.jsx)(a.Drp, {
       id: "download-soundboard-sound",
       label: v.intl.string(v.t["/fzLLK"]),
       action: n
@@ -117,13 +117,14 @@ let h = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     id: s.soundId,
     label: v.intl.string(v.t.HJikXp)
   });
-  return (0, r.jsx)(c.W1t, {
+  return (0, r.jsx)(a.W1t, {
+    "data-menu-mixed": true,
     navId: "sound-button-context",
     onClose: u.Z_,
     "aria-label": v.intl.string(v.t.liqwPJ),
     onSelect: b,
-    children: (0, r.jsxs)(c.rXV, {
-      children: [m, P, h, A]
+    children: (0, r.jsxs)(a.rXV, {
+      children: [w, P, h, A]
     })
   })
 }, {

@@ -59,6 +59,7 @@ function E(e) {
   return (0, r.jsx)(o.A, {
     section: h.JJy.CONTEXT_MENU,
     children: (0, r.jsxs)(s.W1t, {
+      "data-menu-mixed": true,
       onSelect: E,
       navId: "manage-streams",
       onClose: _,

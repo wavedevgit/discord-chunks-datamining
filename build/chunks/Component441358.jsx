@@ -185,6 +185,7 @@ function D(e) {
       }), M(e)
     }, [n, M]);
   return (0, r.jsx)(C.W1t, {
+    "data-menu-migration-ready": true,
     navId: "members-table-join-method-menu",
     onClose: () => {
       i()

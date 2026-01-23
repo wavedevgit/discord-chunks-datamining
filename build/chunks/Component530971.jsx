@@ -29,8 +29,8 @@ function E(e) {
     transitionState: o,
     updateAnalyticsState: c,
     refreshCategories: u
-  } = e, p = v();
-  C(p);
+  } = e, m = v();
+  C(m);
   let E = (0, s.bG)([a.A], () => a.A.useReducedMotion),
     [A, x] = l.useState(true),
     [S, O] = l.useState(true),
@@ -56,11 +56,11 @@ function E(e) {
     {
       searchError: T
     } = (0, d.S)();
-  return null != T ? (0, r.jsx)(_.A, {}) : null != p ? (0, r.jsx)(f.h, {
+  return null != T ? (0, r.jsx)(_.A, {}) : null != m ? (0, r.jsx)(f.h, {
     onRetry: u,
-    errorMessage: p,
+    errorMessage: m,
     errorOrigin: f.A.SHOP_PAGE
-  }) : h.includes(t) ? (0, r.jsx)(m.A, {
+  }) : h.includes(t) ? (0, r.jsx)(p.A, {
     handleTransition: j,
     tab: t,
     transitionState: o
@@ -80,7 +80,7 @@ let v = () => (0, s.bG)([c.A, u.A], () => null != c.A.error ? "shop load fetch c
       {
         noCache: n,
         includeUnpublished: r
-      } = (0, p.A)();
+      } = (0, m.A)();
     l.useEffect(() => {
       var l, s;
       null != e && o.A.captureMessage(e, {

@@ -256,7 +256,7 @@ function et(e) {
       iconToAdd: o.xVQ,
       removeIcon: false
     }),
-    eE = ey((0, w.A)(t, n), {
+    eE = ey((0, x.A)(t, n), {
       removeIcon: false
     }),
     eS = ey((0, F.A)(t, n), {
@@ -273,10 +273,10 @@ function et(e) {
       iconToAdd: o.UaP
     }),
     eT = ey((0, N.A)(t, n)),
-    ew = ey((0, h.A)(t), {
+    ex = ey((0, h.A)(t), {
       iconToAdd: o.cFy
     }),
-    ex = ey((0, A.A)({
+    ew = ey((0, A.A)({
       commandType: c.kc.MESSAGE,
       commandTargetId: t.id,
       channel: n,
@@ -320,7 +320,7 @@ function et(e) {
       iconToAdd: o.iFK,
       removeIcon: false
     }),
-    eq = ey((0, x.A)({
+    eq = ey((0, w.A)({
       type: s,
       id: d,
       name: ee
@@ -376,6 +376,7 @@ function et(e) {
       })
     };
   return eb ? (0, r.jsxs)(o.W1t, {
+    "data-menu-mixed": true,
     navId: es,
     onClose: ec,
     "aria-label": ed,
@@ -383,7 +384,7 @@ function et(e) {
     children: [(0, r.jsxs)(o.rXV, {
       children: ["" === a ? eO : null, eh, eL, eE, eS, e_, eD]
     }), (0, r.jsxs)(o.rXV, {
-      children: [ej, eP, eT, ew, ex, eM, eC, eN, eG, ek, eU]
+      children: [ej, eP, eT, ex, ew, eM, eC, eN, eG, ek, eU]
     }), (0, r.jsx)(o.rXV, {
       children: ev
     }), em ? (0, r.jsxs)(r.Fragment, {
@@ -398,6 +399,7 @@ function et(e) {
       children: [e7, eV, ei && eB, ei && eK, eH]
     })]
   }) : (0, r.jsxs)(o.W1t, {
+    "data-menu-mixed": true,
     navId: es,
     onClose: ec,
     "aria-label": ed,
@@ -411,7 +413,7 @@ function et(e) {
     }), (0, r.jsxs)(o.rXV, {
       children: [eE, eS, e_, eD]
     }), (0, r.jsxs)(o.rXV, {
-      children: [eI, eP, eT, ew, ex, eM, eC, eN, eR, eG, ek, eU]
+      children: [eI, eP, eT, ex, ew, eM, eC, eN, eR, eG, ek, eU]
     }), (0, r.jsxs)(o.rXV, {
       children: [eF, eX, eV, ei && eB, ei && eK, eH]
     }), em ? (0, r.jsxs)(r.Fragment, {

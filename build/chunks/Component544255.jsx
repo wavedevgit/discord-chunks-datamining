@@ -1,5 +1,5 @@
 /** Chunk was on 7869 **/
-/** chunk id: 544255, original params: t,e,n (module,exports,require) **/
+/** chunk id: 544255, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
 }), require("./896048.js");
@@ -14,15 +14,15 @@ var Chunk311907 = require("./311907.js"),
   Chunk563312 = require("./563312.js"),
   Chunk985018 = require("./985018.jsx");
 
-function g(t) {
+function g(e) {
   let {
-    guildEventId: e,
+    guildEventId: t,
     recurrenceId: n,
     guild: g,
     channel: y
-  } = t, f = null != n, {
+  } = e, f = null != n, {
     canManageGuildEvent: b
-  } = (0, u.nr)(null != y ? y : g), [p, A] = (0, r.yK)([o.Ay], () => [o.Ay.isActive(e), o.Ay.getGuildScheduledEvent(e)]), v = (0, c.A)(n, null == A ? true : A.id), E = null != A && b(A), O = (null == A ? true : A.recurrence_rule) != null && !f, m = (0, s.nh)(e, n);
+  } = (0, u.nr)(null != y ? y : g), [p, A] = (0, r.yK)([o.Ay], () => [o.Ay.isActive(t), o.Ay.getGuildScheduledEvent(t)]), v = (0, c.A)(n, null == A ? true : A.id), E = null != A && b(A), O = (null == A ? true : A.recurrence_rule) != null && !f, m = (0, s.nh)(t, n);
   if (!E || p && !O && !f || f && !f || null == A || null == m) return null;
   let {
     startTime: j
@@ -30,50 +30,50 @@ function g(t) {
   if (p && f) {
     var h;
     if (null == j) return null;
-    let t = new Date(null != (h = null == v ? true : v.scheduled_start_time) ? h : j);
-    if (new Date > t) return null
+    let e = new Date(null != (h = null == v ? true : v.scheduled_start_time) ? h : j);
+    if (new Date > e) return null
   }
-  let D = t => {
+  let D = e => {
     (0, i.qfG)(r => {
       var u, o;
-      return (0, l.jsxs)(i.VoidConfirmModal, (u = function(t) {
-        for (var e = 1; e < arguments.length; e++) {
-          var n = null != arguments[e] ? arguments[e] : {},
+      return (0, l.jsxs)(i.VoidConfirmModal, (u = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
             l = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-            return Object.getOwnPropertyDescriptor(n, t).enumerable
-          }))), l.forEach(function(e) {
+          "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), l.forEach(function(t) {
             var l;
-            l = n[e], e in t ? Object.defineProperty(t, e, {
+            l = n[t], t in e ? Object.defineProperty(e, t, {
               value: l,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : t[e] = l
+            }) : e[t] = l
           })
         }
-        return t
+        return e
       }({}, r), o = o = {
         header: d.intl.string(d.t.R5bpin),
-        confirmText: O || t ? d.intl.string(d.t["8ZsNv5"]) : d.intl.string(d.t.B9sJLX),
+        confirmText: O || e ? d.intl.string(d.t["8ZsNv5"]) : d.intl.string(d.t.B9sJLX),
         cancelText: d.intl.string(d.t.oEAioF),
-        onConfirm: () => f && !t ? a.A.deleteRecurrence(g.id, e, n, v) : a.A.deleteGuildEvent(e, g.id),
+        onConfirm: () => f && !e ? a.A.deleteRecurrence(g.id, t, n, v) : a.A.deleteGuildEvent(t, g.id),
         children: [(0, l.jsx)(i.Text, {
           variant: "text-md/normal",
           children: d.intl.string(d.t.v2GWNQ)
-        }), (0, l.jsx)("br", {}), (O || t) && (0, l.jsx)(i.Text, {
+        }), (0, l.jsx)("br", {}), (O || e) && (0, l.jsx)(i.Text, {
           variant: "text-md/normal",
           children: d.intl.format(d.t.ZcpcyO, {})
         })]
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(o)) : (function(t, e) {
-        var n = Object.keys(t);
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+        var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var l = Object.getOwnPropertySymbols(t);
+          var l = Object.getOwnPropertySymbols(e);
           n.push.apply(n, l)
         }
         return n
-      })(Object(o)).forEach(function(t) {
-        Object.defineProperty(u, t, Object.getOwnPropertyDescriptor(o, t))
+      })(Object(o)).forEach(function(e) {
+        Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(o, e))
       }), u))
     })
   };

@@ -120,6 +120,7 @@ function L(e) {
           closePopout: t
         } = e;
         return (0, r.jsxs)(c.W1t, {
+          "data-menu-mixed": true,
           className: T.qp,
           navId: "app-details-more-menu",
           onClose: t,

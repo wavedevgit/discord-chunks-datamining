@@ -218,6 +218,7 @@ let T = new Chunk626584.A("EmojiStudio"),
                 closePopout: t
               } = e;
               return (0, l.jsx)(o.W1t, {
+                "data-menu-mixed": true,
                 navId: "emoji-studio-context-menu",
                 onClose: t,
                 onSelect: t,

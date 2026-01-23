@@ -34,7 +34,7 @@ function A(e) {
       newValue: {
         tilePosition: t
       },
-      children: (0, r.jsx)(m.A, {
+      children: (0, r.jsx)(p.A, {
         skuId: e.skuId,
         skipLimitedTimeCheck: true,
         onClickAnalytics: (0, _.UU)(e, v.G2.CATALOG, g)
@@ -68,7 +68,7 @@ function S(e) {
     currentPage: a,
     handlePageChange: o,
     initialCategoryId: u
-  } = e, d = (0, c.uM)(), f = (0, b.U)(), m = null != (t = null == d ? true : d.sessionId) ? t : "", {
+  } = e, d = (0, c.uM)(), f = (0, b.U)(), p = null != (t = null == d ? true : d.sessionId) ? t : "", {
     noCache: _,
     includeUnpublished: E
   } = (0, h.A)(), A = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
@@ -94,7 +94,7 @@ function S(e) {
   }, [A, a]);
   return (l.useEffect(() => {
     (0, g.z)({
-      sessionId: m,
+      sessionId: p,
       checkpoint: g.t.SHOP_MOUNTED,
       tab: v.G2.CATALOG,
       unpublishedCategoriesShown: E,
@@ -102,13 +102,13 @@ function S(e) {
     })
   }, []), l.useEffect(() => {
     f || 0 === O.length || (0, g.z)({
-      sessionId: m,
+      sessionId: p,
       checkpoint: g.t.SHOP_RENDERED,
       tab: v.G2.CATALOG,
       unpublishedCategoriesShown: E,
       cacheDisabled: _
     })
-  }, [m, E, _, f, O.length]), f) ? (0, r.jsx)(p.A, {}) : (0, r.jsxs)("div", {
+  }, [p, E, _, f, O.length]), f) ? (0, r.jsx)(m.A, {}) : (0, r.jsxs)("div", {
     className: C.LZ,
     children: [O.map((e, t) => (0, r.jsx)("div", {
       ref: t => s(e.skuId, t),

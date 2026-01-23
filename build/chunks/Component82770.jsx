@@ -1,7 +1,7 @@
 /** Chunk was on 97357 **/
 /** chunk id: 82770, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => c
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -11,11 +11,11 @@ var Chunk397927 = require("./397927.js"),
   Chunk488995 = require("./488995.js"),
   Chunk985018 = require("./985018.jsx");
 
-function d(e) {
+function c(e) {
   return (0, i.jsx)(r.Drp, {
     id: "application-directory",
     label: (0, i.jsx)(i.Fragment, {
-      children: c.intl.string(c.t.AKcFUj)
+      children: d.intl.string(d.t.AKcFUj)
     }),
     icon: r.k9F,
     action: () => {

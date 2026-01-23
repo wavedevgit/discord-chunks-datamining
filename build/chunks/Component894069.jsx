@@ -16,7 +16,7 @@ function c(n) {
     id: "role-subscription-copy-link",
     label: o.intl.string(o.t.WqhZss),
     action: () => {
-      (0, l.C)((0, e.n)(n, a.VV.ROLE_SUBSCRIPTIONS))
+      (0, a.C)((0, e.n)(n, l.VV.ROLE_SUBSCRIPTIONS))
     }
   })
 }

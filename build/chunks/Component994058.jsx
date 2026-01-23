@@ -20,14 +20,15 @@ let u = (0, Chunk358367.A)(function(n) {
     id: e.id,
     label: A.intl.string(A.t.gFHI3k)
   });
-  return (0, r.jsxs)(c.W1t, {
+  return (0, r.jsxs)(a.W1t, {
+    "data-menu-mixed": true,
     navId: "channel-context",
-    onClose: a.Z_,
+    onClose: c.Z_,
     "aria-label": A.intl.string(A.t.Xm41aV),
     onSelect: t,
-    children: [(0, r.jsx)(c.rXV, {
+    children: [(0, r.jsx)(a.rXV, {
       children: l
-    }), (0, r.jsx)(c.rXV, {
+    }), (0, r.jsx)(a.rXV, {
       children: i
     })]
   })

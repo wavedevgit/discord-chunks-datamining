@@ -56,7 +56,7 @@ let I = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     userId: n.id,
     guildId: u,
     sourceAnalyticsLocations: x
-  }), H = (0, m.A)(n.id, P), K = (0, O.A)({
+  }), H = (0, j.A)(n.id, P), K = (0, O.A)({
     guildId: u,
     userId: n.id,
     analyticsLocation: null != T ? T : R.location,
@@ -67,7 +67,7 @@ let I = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     guildId: u,
     location: U,
     channelId: c
-  }), W = (0, j.A)({
+  }), W = (0, m.A)({
     user: n,
     guildId: u,
     location: U,
@@ -78,6 +78,7 @@ let I = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     onSuccess: k
   }), Q = (0, v.A)(n, u), J = !!(null == n ? true : n.isNonUserBot());
   return (0, r.jsxs)(a.W1t, {
+    "data-menu-mixed": true,
     navId: "user-context",
     onClose: () => {
       (0, o.Z_)(), null == N || N()

@@ -41,6 +41,7 @@ function g(e) {
   return (0, r.jsx)(l.A, {
     object: _.ZSU.CONTEXT_MENU,
     children: (0, r.jsxs)(o.W1t, {
+      "data-menu-mixed": true,
       onClose: t,
       navId: "video-device-context",
       variant: "fixed",

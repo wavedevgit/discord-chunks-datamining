@@ -89,6 +89,7 @@ let L = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     label: T.intl.string(T.t["/AXYnE"])
   }), ei = t.isNonUserBot();
   return (0, l.jsxs)(i.W1t, {
+    "data-menu-mixed": true,
     navId: "user-context",
     onClose: r.Z_,
     "aria-label": T.intl.string(T.t.liqwPJ),

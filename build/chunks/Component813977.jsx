@@ -1,7 +1,7 @@
 /** Chunk was on 95153 **/
 /** chunk id: 813977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => u
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -13,10 +13,10 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function d(e) {
+function u(e) {
   let t = !c.isPlatformEmbedded,
     n = (0, i.bG)([o.A], () => o.A.getMode()),
-    d = (t, i) => (0, r.jsx)(l.iDA, {
+    u = (t, i) => (0, r.jsx)(l.iDA, {
       id: t,
       group: "input-modes",
       label: i,
@@ -25,5 +25,5 @@ function d(e) {
         analyticsLocations: e
       })
     }, t);
-  return [d(s.TBI.VOICE_ACTIVITY, u.intl.string(u.t.cHCEOJ)), d(s.TBI.PUSH_TO_TALK, t ? u.intl.string(u.t["1AINrB"]) : u.intl.string(u.t.Q8gkVL))]
+  return [u(s.TBI.VOICE_ACTIVITY, d.intl.string(d.t.cHCEOJ)), u(s.TBI.PUSH_TO_TALK, t ? d.intl.string(d.t["1AINrB"]) : d.intl.string(d.t.Q8gkVL))]
 }

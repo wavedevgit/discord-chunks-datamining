@@ -112,6 +112,7 @@ let L = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     onHeightUpdate: V
   }), eg = t.isNonUserBot();
   return (0, r.jsxs)(i.W1t, {
+    "data-menu-mixed": true,
     navId: "user-context",
     onClose: a.Z_,
     "aria-label": B.intl.string(B.t.liqwPJ),

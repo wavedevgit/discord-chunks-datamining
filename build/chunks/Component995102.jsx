@@ -56,40 +56,40 @@ function O(e, t) {
     p = (0, u.M)(l),
     O = (0, A.Ay)(e, true);
 
-  function y(t) {
+  function m(t) {
     t && e.type === b.rbe.GUILD_CATEGORY && (0, s.Gv)(e.id), c.A.updateChannelOverrideSettings(e.guild_id, e.id, {
       muted: t
     }, f.G_.muted(t))
   }
-  let m = v.intl.string(v.t.tbeRRJ),
+  let y = v.intl.string(v.t.tbeRRJ),
     _ = v.intl.string(v.t.OYefme);
   switch (e.type) {
     case b.rbe.GUILD_CATEGORY:
-      m = v.intl.string(v.t.pNMCg2), _ = v.intl.string(v.t.olaBeG);
+      y = v.intl.string(v.t.pNMCg2), _ = v.intl.string(v.t.olaBeG);
       break;
     case b.rbe.GROUP_DM:
-      m = v.intl.string(v.t.LO3kaK), _ = v.intl.string(v.t["s5/5fm"]);
+      y = v.intl.string(v.t.LO3kaK), _ = v.intl.string(v.t["s5/5fm"]);
       break;
     case b.rbe.DM:
-      m = n ? v.intl.format(v.t.byjuJm, {
+      y = n ? v.intl.format(v.t.byjuJm, {
         name: O
       }) : v.intl.string(v.t.LO3kaK), _ = n ? v.intl.format(v.t["eC+9rj"], {
         name: O
       }) : v.intl.string(v.t["s5/5fm"]);
       break;
     default:
-      m = v.intl.string(v.t.tbeRRJ), _ = v.intl.string(v.t.OYefme)
+      y = v.intl.string(v.t.tbeRRJ), _ = v.intl.string(v.t.OYefme)
   }
   return i ? (0, r.jsx)(o.Drp, {
     id: "unmute-channel",
     label: _,
     subtext: p,
-    action: () => y(false)
+    action: () => m(false)
   }) : (0, r.jsx)(o.Drp, {
     id: "mute-channel",
-    label: m,
+    label: y,
     action: () => {
-      y(true)
+      m(true)
     },
     children: g().map(n => {
       let {

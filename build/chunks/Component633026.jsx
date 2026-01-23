@@ -47,10 +47,10 @@ let _ = {
     } = (0, g.Kk)(l), S = null != (t = null == E ? true : E.responsive) && t, O = null == E ? true : E.backgroundStyle;
     return null != h && (n || l !== _) ? (0, r.jsxs)("div", {
       ref: b,
-      className: m.os,
+      className: p.os,
       children: [(0, r.jsx)("div", {
-        className: s()(m.vK, {
-          [m.no]: S
+        className: s()(p.vK, {
+          [p.no]: S
         }),
         style: null != O ? {
           background: O
@@ -61,30 +61,30 @@ let _ = {
           isResponsive: S
         })
       }), (0, r.jsxs)("div", {
-        className: m.xX,
+        className: p.xX,
         children: [(0, r.jsx)("div", {
-          className: s()(m.bC, {
-            [m.no]: S
+          className: s()(p.bC, {
+            [p.no]: S
           }),
           children: n ? (0, r.jsx)("div", {
-            className: m.Hw
+            className: p.Hw
           }) : (0, r.jsx)("div", {
-            className: m.Hw,
+            className: p.Hw,
             children: (0, r.jsxs)("div", {
-              className: m.Wq,
+              className: p.Wq,
               children: [null != C && (0, r.jsx)("img", {
-                className: m.rm,
+                className: p.rm,
                 src: C,
                 alt: l.name,
                 style: null == v ? true : v.toDesktopStyles()
               }), null != l.title && (0, r.jsx)(c.Heading, {
                 variant: "heading-xxl/bold",
-                className: m.DD,
+                className: p.DD,
                 color: "text-strong",
                 children: l.title
               }), "" !== l.summary && (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
-                className: m.Tm,
+                className: p.Tm,
                 style: null != l.bannerTextColor ? {
                   color: l.bannerTextColor
                 } : true,
@@ -92,7 +92,7 @@ let _ = {
               })]
             })
           })
-        }), (0, r.jsx)(p.A, {
+        }), (0, r.jsx)(m.A, {
           isBlockLoading: n,
           heroBlock: l,
           tab: i

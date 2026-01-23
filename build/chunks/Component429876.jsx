@@ -41,13 +41,13 @@ function S(e) {
     } = (0, o.X)(u, t),
     {
       setCategoryRef: f,
-      handleScrollToCategory: m
-    } = (0, p.k0)(u.current),
+      handleScrollToCategory: p
+    } = (0, m.k0)(u.current),
     [b, h] = l.useState(a),
     [E, v] = l.useState(false);
   return l.useEffect(() => {
-    null != s && m(s)
-  }, [s, m]), l.useEffect(() => () => {
+    null != s && p(s)
+  }, [s, p]), l.useEffect(() => () => {
     null != c && c()
   }, []), l.useEffect(() => {
     let e = () => {
@@ -87,14 +87,14 @@ let O = e => {
     filterBarOpen: n,
     setFilterBarOpen: s,
     tab: o,
-    scrollerRef: p,
+    scrollerRef: m,
     sortedCategories: S,
     setCategoryRef: O,
     initialCategoryId: y
   } = e, j = l.useRef(null), T = (0, d.v)(e => e.hasDefaultFilters()), L = (0, u.uM)(), {
     handlePageChange: I,
     currentPage: k
-  } = (0, b.Z)(p), N = l.useCallback(e => {
+  } = (0, b.Z)(m), N = l.useCallback(e => {
     c.default.track(C.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == L ? true : L.sessionId,
       page_section: null == L ? true : L.pageSection,
@@ -138,7 +138,7 @@ let O = e => {
             children: [(0, r.jsx)(i.Text, {
               variant: "text-md/semibold",
               children: A.intl.string(A.t.uaX705)
-            }), (0, r.jsx)(m.A, {})]
+            }), (0, r.jsx)(p.A, {})]
           }), (0, r.jsx)("div", {
             ref: R,
             children: (0, r.jsx)(i.Button, {
@@ -169,7 +169,7 @@ let O = e => {
           })
         })]
       }), T ? (0, v.dF)(o) ? (0, r.jsx)(E.A, {
-        scrollerRef: p,
+        scrollerRef: m,
         tab: o
       }, o) : (0, r.jsx)(u.R9, {
         newValue: {
@@ -183,7 +183,7 @@ let O = e => {
           initialCategoryId: y
         })
       }) : (0, r.jsx)(h.A, {
-        scrollerRef: p,
+        scrollerRef: m,
         tab: o
       }, o)]
     })

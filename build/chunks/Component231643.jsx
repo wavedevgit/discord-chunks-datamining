@@ -1,4 +1,4 @@
-/** Chunk was on 22477 **/
+/** Chunk was on 65599 **/
 /** chunk id: 231643, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => j,
@@ -59,6 +59,7 @@ function v(e) {
       closePopout: t
     } = e;
     return (0, l.jsx)(c.W1t, {
+      "data-menu-mixed": true,
       navId: "devtools-overflow",
       variant: "fixed",
       onClose: t,

@@ -43,7 +43,7 @@ function b(e) {
       "Enter" === e.key && E(v)
     }, [v, E]),
     T = l.useCallback(e => {
-      u.default.track(p.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      u.default.track(m.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == A ? true : A.sessionId,
         page_section: null == A ? true : A.pageSection,
         page_category: null == A ? true : A.pageCategory,
@@ -85,7 +85,7 @@ function b(e) {
       onChange: C,
       onClear: k,
       onBlur: N,
-      placeholder: "en-US" === x ? m.intl.string(m.t.arz34K) : m.intl.string(m.t["hIt/Nm"])
+      placeholder: "en-US" === x ? p.intl.string(p.t.arz34K) : p.intl.string(p.t["hIt/Nm"])
     }),
     w = {
       "--custom-search-bar-width": "".concat(f.rr, "px"),

@@ -63,12 +63,12 @@ function h(e, t) {
   } = (0, u.S)(), {
     createNewEditingRule: _
   } = (0, u.U)(), [D, I] = l.useState(false), [P, T] = (0, c.H6)(t), {
-    rulesByTriggerType: w,
-    updateRule: x
+    rulesByTriggerType: x,
+    updateRule: w
   } = (0, c.wP)(t), M = l.useMemo(() => {
     var e;
-    return null != (e = w[j]) ? e : []
-  }, [w]), C = 0 === M.length, N = n > M.length && !C;
+    return null != (e = x[j]) ? e : []
+  }, [x]), C = 0 === M.length, N = n > M.length && !C;
   if (!l.useMemo(() => (0, d.i_)(t), [t]) || null == e || 0 === e.length || null == t) return null;
   let R = e.split(" "),
     G = R.length;
@@ -96,7 +96,7 @@ function h(e, t) {
           keywordFilter: [...null != (n = null == (r = t.triggerMetadata) ? true : r.keywordFilter) ? n : [], e]
         })
       });
-      await E(l, M), x(l), null != S ? (0, i.showToast)((0, i.createToast)(y.intl.string(y.t.wH6L0r), i.ToastType.FAILURE)) : (0, i.showToast)((0, i.createToast)(y.intl.string(y.t["0rdYm2"]), i.ToastType.SUCCESS))
+      await E(l, M), w(l), null != S ? (0, i.showToast)((0, i.createToast)(y.intl.string(y.t.wH6L0r), i.ToastType.FAILURE)) : (0, i.showToast)((0, i.createToast)(y.intl.string(y.t["0rdYm2"]), i.ToastType.SUCCESS))
     }, U = (0, r.jsx)(i.Drp, {
       id: "automod-rules-loading",
       label: y.intl.string(y.t.ZTNur7)

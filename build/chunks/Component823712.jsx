@@ -29,6 +29,7 @@ let A = e => {
     onClose: i
   } = e;
   return (0, n.jsx)(d.W1t, {
+    "data-menu-mixed": true,
     navId: "members-tabs-overflow-menu",
     "aria-label": v.intl.string(v.t.riPnr0),
     hideScroller: true,

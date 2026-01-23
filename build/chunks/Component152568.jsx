@@ -46,7 +46,7 @@ let O = e => {
     {
       handleCardVisibilityChange: B
     } = (0, b.Z)(P, "home", "marketing wide banner"),
-    w = (0, m.uM)(),
+    w = (0, p.uM)(),
     {
       bannerURL: D
     } = (0, h.w$)(O),
@@ -145,7 +145,7 @@ let O = e => {
             lineClamp: 2,
             variant: M ? "text-md/medium" : "text-sm/medium",
             children: M ? x.intl.format(x.t.SFFP7K, {
-              helpdeskArticle: p.A.getArticleURL(v.MVz.VIRTUAL_CURRENCY_LEARN_MORE)
+              helpdeskArticle: m.A.getArticleURL(v.MVz.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : O.body
           }), G && (0, r.jsxs)("div", {
             className: S.nP,

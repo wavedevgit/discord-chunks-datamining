@@ -102,6 +102,7 @@ function C(e) {
     })
   });
   return (0, n.jsxs)(l.W1t, {
+    "data-menu-migration-ready": true,
     "aria-label": b.intl.string(b.t["+1H47t"]),
     navId: "stream-options",
     onClose: c,

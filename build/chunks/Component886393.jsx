@@ -1,5 +1,5 @@
 /** Chunk was on 99041 **/
-/** chunk id: 886393, original params: n,l,t (module,exports,require) **/
+/** chunk id: 886393, original params: n,t,l (module,exports,require) **/
 require.d(exports, {
   A: () => h
 });
@@ -14,7 +14,7 @@ var Chunk417597 = require("./417597.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function h(n, l, t) {
+function h(n, t, l) {
   let h = (0, e.bG)([s.A], () => null != n ? s.A.getChannel(n.parent_id) : null);
   return null == n ? null : (0, i.jsx)(a.Drp, {
     id: "channel-copy-link",
@@ -25,7 +25,7 @@ function h(n, l, t) {
         location: {
           section: d.JJy.CONTEXT_MENU
         }
-      }), (0, o.C)((0, c.af)(n, h, l, t))
+      }), (0, o.C)((0, c.af)(n, h, t, l))
     }
   })
 }

@@ -91,6 +91,7 @@ function T(e) {
         closePopout: t
       } = e;
       return (0, r.jsx)(s.W1t, {
+        "data-menu-migration-ready": true,
         navId: "user-bot-profile-add-app",
         onClose: t,
         "aria-label": O.intl.string(O.t.dbkxVm),

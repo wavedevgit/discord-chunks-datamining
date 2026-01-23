@@ -29,8 +29,8 @@ function A(e) {
       null == _ && null != h && (0, c.wz)(h)
     }, [_, h]), !(0, d._)(e)) return null;
   null == T && (T = new g.A(null == (v = e.interactionMetadata) ? true : v.user));
-  let w = null;
-  return null != D ? w = (0, r.jsx)(a.Drp, {
+  let x = null;
+  return null != D ? x = (0, r.jsx)(a.Drp, {
     className: O.X,
     disabled: true,
     iconLeft: () => (0, r.jsx)(u.A, {
@@ -42,7 +42,7 @@ function A(e) {
     subtext: y.intl.formatToPlainString(y.t.ShLXXB, {
       application: e.author.username
     })
-  }) : null != _ && (w = (0, r.jsx)(a.Drp, {
+  }) : null != _ && (x = (0, r.jsx)(a.Drp, {
     action: () => (0, f.openUserProfileModal)({
       userId: _.id,
       guildId: P,
@@ -62,7 +62,7 @@ function A(e) {
   })), (0, r.jsxs)(a.Drp, {
     id: "view-interaction-info",
     label: y.intl.string(y.t.Rjezbz),
-    children: [w, null != T ? (0, r.jsx)(a.Drp, {
+    children: [x, null != T ? (0, r.jsx)(a.Drp, {
       action: () => (0, f.openUserProfileModal)({
         userId: T.id,
         guildId: P,

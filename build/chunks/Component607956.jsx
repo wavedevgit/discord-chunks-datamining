@@ -1,7 +1,7 @@
 /** Chunk was on 97717 **/
 /** chunk id: 607956, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => l
+  default: () => u
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -9,11 +9,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk442433 = require("./442433.js"),
   Chunk545059 = require("./545059.js");
 
-function l(e) {
+function u(e) {
   let {
     groupId: t,
-    onSelect: l
-  } = e, u = o.useCallback(() => {
+    onSelect: u
+  } = e, l = o.useCallback(() => {
     (0, c.mMO)(async () => {
       let {
         default: e
@@ -55,14 +55,15 @@ function l(e) {
     i.A.deleteGroup(t), (0, a.Z_)()
   }, [t]);
   return (0, n.jsxs)(c.W1t, {
+    "data-menu-migration-ready": true,
     "aria-label": "Group Context Menu",
     navId: "group-context-menu",
     onClose: a.Z_,
-    onSelect: l,
+    onSelect: u,
     children: [(0, n.jsx)(c.Drp, {
       id: "edit",
       label: "Edit Group",
-      action: u
+      action: l
     }), (0, n.jsx)(c.Drp, {
       id: "delete",
       label: "Delete Group",

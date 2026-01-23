@@ -2,7 +2,7 @@
 /** chunk id: 974544, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => d
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -11,28 +11,25 @@ var Chunk503698 = require("./503698.js"),
   Chunk397927 = require("./397927.js"),
   Chunk780964 = require("./780964.js"),
   Chunk840065 = require("./840065.jsx"),
-  Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk391870 = require("./391870.js");
 
-function f(e) {
+function d(e) {
   let {
     disableButton: t
   } = e, n = () => {
-    true !== t && (0, l.openUserSettings)(o.X.STREAMER_MODE_PANEL, {
-      section: c.nc_.STREAMER_MODE
-    })
+    true !== t && (0, l.openUserSettings)(o.X.STREAMER_MODE_PANEL)
   };
   return (0, r.jsxs)("div", {
-    className: d.IG,
+    className: u.IG,
     children: [(0, r.jsx)("div", {
-      className: d.TE
+      className: u.TE
     }), (0, r.jsx)(s.DUT, {
-      className: a()(d.Ac, {
-        [d.r9]: t
+      className: a()(u.Ac, {
+        [u.r9]: t
       }),
       onClick: n,
-      children: u.intl.string(u.t.Br1ls3)
+      children: c.intl.string(c.t.Br1ls3)
     })]
   })
 }

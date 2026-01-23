@@ -45,7 +45,7 @@ let P = e => {
     } = e, {
       noCache: T,
       includeUnpublished: k
-    } = (0, v.A)(), P = (0, m.rR)("CollectiblesFeedShop") && E === I.G2.ORBS, B = (n = function(e) {
+    } = (0, v.A)(), P = (0, p.rR)("CollectiblesFeedShop") && E === I.G2.ORBS, B = (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -163,8 +163,8 @@ let P = e => {
             break;
           case i.g.WIDE_BANNER:
             if (e.isDismissible) {
-              var m;
-              let t = null != (m = e.dismissibleContentVersion) ? m : 0,
+              var p;
+              let t = null != (p = e.dismissibleContentVersion) ? p : 0,
                 {
                   isDismissed: n
                 } = (0, d.En)(o.M.COLLECTIBLES_SHOP_WIDE_BANNER, t);
@@ -205,7 +205,7 @@ let P = e => {
           default:
             return null
         }
-        return (0, r.jsx)(p.rW, {
+        return (0, r.jsx)(m.rW, {
           blockType: e.type,
           children: (0, r.jsx)("div", {
             className: a()(R.v1, R.Of, {
@@ -224,20 +224,20 @@ let P = e => {
       transitionState: s
     } = e, a = l.useRef(null), {
       handleScroll: i
-    } = (0, u.X)(a, n), o = (0, E.U)(), d = (0, f.uM)(), [p, m] = l.useState(I.md), [_, b] = l.useState(false);
+    } = (0, u.X)(a, n), o = (0, E.U)(), d = (0, f.uM)(), [m, p] = l.useState(I.md), [_, b] = l.useState(false);
     return l.useEffect(() => {
       if (null != a.current) {
         let e = () => {
             if (null == a.current) return;
             let e = a.current.getDistanceFromBottom();
-            p >= 36 ? b(e < 20) : e <= 200 && m(e => e + I.md)
+            m >= 36 ? b(e < 20) : e <= 200 && p(e => e + I.md)
           },
           t = a.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [a, p, m, b]), (0, r.jsx)(c.T7Y, {
+    }, [a, m, p, b]), (0, r.jsx)(c.T7Y, {
       className: R.OW,
       ref: a,
       onScroll: i,
@@ -247,10 +247,10 @@ let P = e => {
           className: R.rb,
           children: [(0, r.jsx)(P, {
             handleTransition: t,
-            numVisibleItems: p,
+            numVisibleItems: m,
             isFetchingCategories: o,
             tab: n
-          }), n !== I.G2.CATALOG && p >= 36 && (0, r.jsxs)("div", {
+          }), n !== I.G2.CATALOG && m >= 36 && (0, r.jsxs)("div", {
             className: R.R$,
             children: [(0, r.jsx)(c.Heading, {
               variant: "heading-md/semibold",

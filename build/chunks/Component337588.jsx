@@ -17,8 +17,8 @@ function s(e) {
     showActivityTicker: l,
     setShowSuggestions: u,
     setShowActivityTicker: b
-  } = (0, o.A)(), p = i.useCallback(() => {
-    (0, c.mMO)(async () => {
+  } = (0, o.A)(), d = i.useCallback(() => {
+    (0, a.mMO)(async () => {
       let {
         default: e
       } = await n.e("51080").then(n.bind(n, 519528));
@@ -42,21 +42,22 @@ function s(e) {
       }({}, t))
     }), t()
   }, [t]);
-  return (0, r.jsxs)(c.W1t, {
+  return (0, r.jsxs)(a.W1t, {
+    "data-menu-migration-ready": true,
     navId: "friends-popout-settings",
     onClose: t,
-    "aria-label": a.intl.string(a.t["3D5yo/"]),
+    "aria-label": c.intl.string(c.t["3D5yo/"]),
     onSelect: () => {},
-    children: [(0, r.jsx)(c.Drp, {
+    children: [(0, r.jsx)(a.Drp, {
       id: "create-group",
       label: "Create Group",
-      action: p
-    }), (0, r.jsx)(c.sLh, {
+      action: d
+    }), (0, r.jsx)(a.sLh, {
       id: "show-suggestions",
       label: "Show Suggestions",
       checked: s,
       action: () => u(!s)
-    }), (0, r.jsx)(c.sLh, {
+    }), (0, r.jsx)(a.sLh, {
       id: "show-activity-ticker",
       label: "Show Activity Ticker",
       checked: l,

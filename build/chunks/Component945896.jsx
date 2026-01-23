@@ -18,6 +18,7 @@ function c(t) {
     onSelect: c
   } = t, u = (0, o.A)(e, n);
   return a.isPlatformEmbedded && null != u ? (0, l.jsx)(i.W1t, {
+    "data-menu-migration-ready": true,
     navId: "image-context",
     onClose: r.Z_,
     "aria-label": s.intl.string(s.t.Zow2V5),

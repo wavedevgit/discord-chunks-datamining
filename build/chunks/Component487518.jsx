@@ -131,6 +131,7 @@ function O(e) {
     null == o && null == r && O(0, null), S(false)
   }, [r, o, O]);
   return (0, l.jsx)(d.W1t, {
+    "data-menu-migration-ready": true,
     navId: "member-safety-guild-member-".concat(g, "-menu"),
     onClose: y,
     "aria-label": p.intl.string(p.t.k9m8Rg),

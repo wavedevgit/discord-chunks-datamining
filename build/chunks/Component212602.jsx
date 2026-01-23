@@ -25,7 +25,7 @@ let E = () => {
     sort: e,
     onSetSort: t,
     hasRelevanceFilters: n
-  } = (0, g.v)(), s = (0, d.uM)(), E = (0, f.y)("CollectiblesSortSelect"), v = n(), C = l.useMemo(() => p.QB.filter(e => e.sortType !== o.$.RELEVANCE || v), [v]), A = l.useCallback(e => {
+  } = (0, g.v)(), s = (0, d.uM)(), E = (0, f.y)("CollectiblesSortSelect"), v = n(), C = l.useMemo(() => m.QB.filter(e => e.sortType !== o.$.RELEVANCE || v), [v]), A = l.useCallback(e => {
     let {
       sortType: t,
       sortDirection: n
@@ -74,7 +74,7 @@ let E = () => {
     }
   })[e], []), S = l.useCallback(e => {
     let n = A(x(e));
-    u.default.track(m.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+    u.default.track(p.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == s ? true : s.sessionId,
       page_section: null == s ? true : s.pageSection,
       page_category: null == s ? true : s.pageCategory,

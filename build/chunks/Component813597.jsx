@@ -73,13 +73,13 @@ function E(e) {
           message_notifications: t
         };
         t === h.orn.ALL_MESSAGES && _ !== O.e.ALL_MESSAGES && (n.flags = (0, u.md)(b.Ay.getGuildFlags(e), y.n3.UNREADS_ALL_MESSAGES)), a.A.updateGuildNotificationSettings(e, n, A.G_.notifications(t))
-      }, L = t => {
+      }, m = t => {
         S(false);
         let n = b.Ay.getGuildFlags(e);
         a.A.updateGuildNotificationSettings(e, {
           flags: (0, u.md)(n, t === O.e.ALL_MESSAGES ? y.n3.UNREADS_ALL_MESSAGES : y.n3.UNREADS_ONLY_MENTIONS)
         }, A.G_.unreads(t))
-      }, m = function(e) {
+      }, L = function(e) {
         let t = (0, o._g)(e),
           n = (0, s.bG)([c.A], () => c.A.getGuildAlertSettings()[e]);
         if (t && null != n) return (0, i.jsxs)(l.Drp, {
@@ -138,13 +138,13 @@ function E(e) {
               group: "unread_setting",
               checked: _ === O.e.ALL_MESSAGES,
               label: f.intl.string(f.t["HVah/3"]),
-              action: () => L(O.e.ALL_MESSAGES)
+              action: () => m(O.e.ALL_MESSAGES)
             }), (0, i.jsx)(l.iDA, {
               id: "unread_setting_mention_only",
               group: "unread_setting",
               checked: _ === O.e.ONLY_MENTIONS,
               label: f.intl.string(f.t["tu+ZWJ"]),
-              action: () => L(O.e.ONLY_MENTIONS),
+              action: () => m(O.e.ONLY_MENTIONS),
               disabled: _ !== O.e.ONLY_MENTIONS && j === h.orn.ALL_MESSAGES,
               subtext: _ !== O.e.ONLY_MENTIONS && j === h.orn.ALL_MESSAGES ? f.intl.string(f.t.eP8yWU) : true
             })]
@@ -171,7 +171,7 @@ function E(e) {
               checked: j === h.orn.NO_MESSAGES,
               action: () => v(h.orn.NO_MESSAGES)
             })]
-          }, "push_settings"), m]
+          }, "push_settings"), L]
         })]
       })
     }(e), (t = e, E = (0, s.cf)([b.Ay], () => ({

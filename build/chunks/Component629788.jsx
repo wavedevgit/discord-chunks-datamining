@@ -18,7 +18,7 @@ var Chunk311907 = require("./311907.js"),
 function f(e, t) {
   let {
     analyticsLocations: n
-  } = (0, l.Ay)(), f = (0, o.bG)([a.default], () => a.default.getCurrentUser()), p = (0, c.GV)(), y = (0, c.GV)();
+  } = (0, l.Ay)(), f = (0, o.bG)([c.default], () => c.default.getCurrentUser()), p = (0, a.GV)(), y = (0, a.GV)();
   return null != t && u.Ay.canUseCustomCallSounds(f) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.Drp, {
       id: p,

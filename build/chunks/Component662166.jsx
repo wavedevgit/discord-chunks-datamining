@@ -34,8 +34,8 @@ function A() {
     enabled: o
   } = (0, f.Z)({
     location: "Shop"
-  }), c = (0, m.uM)(), u = l.useCallback(e => {
-    p.default.track(h.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+  }), c = (0, p.uM)(), u = l.useCallback(e => {
+    m.default.track(h.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == c ? true : c.sessionId,
       page_section: null == c ? true : c.pageSection,
       page_category: null == c ? true : c.pageCategory,

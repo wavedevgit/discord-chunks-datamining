@@ -26,17 +26,18 @@ let _ = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   let {
     channel: n,
     onSelect: t
-  } = e, a = (0, d.A)(n), l = (0, s.A)(n), o = (0, O.m)(n), y = (0, O.y)(n), _ = (0, b.Ay)(n), v = (0, p.A)({
+  } = e, c = (0, d.A)(n), l = (0, s.A)(n), o = (0, O.m)(n), y = (0, O.y)(n), _ = (0, b.Ay)(n), v = (0, p.A)({
     id: n.id,
     label: g.intl.string(g.t.gFHI3k)
   }), E = (0, u.A)(n), m = (0, f.A)(n), x = (0, A.Ay)(n), C = (0, h.os)("ReportToModChannelContextMenu");
   return (0, r.jsxs)(i.W1t, {
+    "data-menu-mixed": true,
     navId: "report-to-mod-channel-context",
-    onClose: c.Z_,
+    onClose: a.Z_,
     "aria-label": g.intl.string(j.default["zp+z/E"]),
     onSelect: t,
     children: [(0, r.jsxs)(i.rXV, {
-      children: [a, o]
+      children: [c, o]
     }, "mark-as-read-or-favorite"), (0, r.jsx)(i.rXV, {
       children: l
     }, "channel-actions"), (0, r.jsxs)(i.rXV, {

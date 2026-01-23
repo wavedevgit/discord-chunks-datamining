@@ -1,4 +1,4 @@
-/** Chunk was on 48666 **/
+/** Chunk was on 65076 **/
 /** chunk id: 877260, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   L: () => v
@@ -74,20 +74,20 @@ function v(e) {
           visibleContent: l
         } = t;
         return (0, n.jsxs)("div", {
-          className: a()(m.pz, e, {
-            [m.Hw]: c.Fr,
-            [m.n7]: v
+          className: a()(h.pz, e, {
+            [h.Hw]: c.Fr,
+            [h.n7]: v
           }),
           children: [(0, n.jsxs)("div", {
-            className: m.gM,
+            className: h.gM,
             children: [c.Fr && (0, n.jsx)("div", {
-              className: m.hg,
+              className: h.hg,
               children: (0, n.jsx)(u.K0, {
                 icon: u.d$L,
                 onClick: o,
                 variant: "icon-only",
                 size: "sm",
-                "aria-label": h.intl.string(h.t.cpT0Cq)
+                "aria-label": m.intl.string(m.t.cpT0Cq)
               })
             }), (0, n.jsx)("div", {
               children: w.map(e => (0, n.jsx)(x, {
@@ -145,11 +145,11 @@ function v(e) {
                     var t;
                     P.current = e, a.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
                   },
-                  className: m.Mt,
+                  className: h.Mt,
                   fade: true
                 }, i), o = o = {
                   children: [(0, n.jsx)("nav", {
-                    className: m.C$,
+                    className: h.C$,
                     children: C.map(e => (0, n.jsx)(x, {
                       section: e,
                       visibleContent: l
@@ -182,12 +182,12 @@ function x(e) {
     hoisted: o = false
   } = e, a = null == (t = r.useTitle) ? true : t.call(r);
   return (0, n.jsxs)("ul", {
-    className: m.uW,
+    className: h.uW,
     "aria-label": a,
     children: [null != a && (0, n.jsx)("div", {
-      className: m.a9,
+      className: h.a9,
       children: (0, n.jsx)(u.Heading, {
-        className: m.Pf,
+        className: h.Pf,
         variant: "heading-sm/medium",
         color: "text-muted",
         children: a
@@ -207,22 +207,22 @@ function S(e) {
   } = e, o = l.useRef(null), [a, i] = (0, b.kn)([s.M.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]), c = l.useCallback(() => {
     r("")
   }, [r]), y = l.useMemo(() => ({
-    title: h.intl.string(h.t.Kv519a),
-    body: h.intl.string(h.t.cTGJBZ),
+    title: m.intl.string(m.t.Kv519a),
+    body: m.intl.string(m.t.cTGJBZ),
     badge: "new",
     position: "right",
     align: "center",
     scrollBehavior: "sticky"
   }), []);
   return (0, n.jsxs)("div", {
-    className: m.PP,
+    className: h.PP,
     children: [(0, n.jsx)(u.IWV, {
       size: "md",
       query: t,
       onChange: r,
       onClear: c
     }), (0, n.jsx)("div", {
-      className: m.To,
+      className: h.To,
       ref: o
     }), (0, n.jsx)(O.A, {
       dismissibleContentType: s.M.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER,

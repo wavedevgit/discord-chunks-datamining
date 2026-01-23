@@ -3,8 +3,8 @@
 require.d(exports, {
   $b: () => M,
   DT: () => S,
-  Io: () => x,
-  Le: () => w,
+  Io: () => w,
+  Le: () => x,
   Nw: () => C,
   RC: () => D,
   S: () => _,
@@ -71,11 +71,11 @@ function T(e, t, n) {
   false === t.pinned ? n.shiftKey ? r.A.pinMessage(e, t.id) : j.A.confirmPin(e, t) : n.shiftKey ? r.A.unpinMessage(e, t.id) : j.A.confirmUnpin(e, t)
 }
 
-function w(e, t) {
+function x(e, t) {
   (0, i.A)(e.id, t.id)
 }
 
-function x(e, t) {
+function w(e, t) {
   (0, v.A)(e, t, true, O.A.getOptions(t.id))
 }
 

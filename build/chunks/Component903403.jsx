@@ -26,7 +26,7 @@ function b(e) {
     catalogBannerStatic: g,
     catalogBannerAnimated: b,
     catalogBannerRive: h
-  } = (0, p.MV)(t), E = l.useRef(null), v = null != h;
+  } = (0, m.MV)(t), E = l.useRef(null), v = null != h;
   return (0, r.jsxs)("div", {
     ref: E,
     className: a()(_.sW, {
@@ -56,7 +56,7 @@ function b(e) {
     }), (0, r.jsx)(f.A, {
       category: t,
       className: _.v0,
-      daysRemainingText: m.t["8gsP5M"]
+      daysRemainingText: p.t["8gsP5M"]
     })]
   })
 }(0, Chunk993408.$b)(90)

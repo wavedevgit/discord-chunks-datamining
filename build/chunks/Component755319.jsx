@@ -22,16 +22,17 @@ function d(n) {
     location: "GuildOnboardingSplashContextMenu"
   }, {
     autoTrackExposure: false
-  }), h = a.useCallback(() => {
+  }), h = e.useCallback(() => {
     (0, c.C)(t)
   }, [t]);
-  return c.p5 && d && p ? (0, e.jsx)(l.W1t, {
+  return c.p5 && d && p ? (0, a.jsx)(l.W1t, {
+    "data-menu-all-icons": true,
     navId: "guild-onboarding-splash-context",
     onClose: o.Z_,
     onSelect: i,
     "aria-label": u.intl.string(u.t.Zow2V5),
-    children: (0, e.jsx)(l.rXV, {
-      children: (0, e.jsx)(l.Drp, {
+    children: (0, a.jsx)(l.rXV, {
+      children: (0, a.jsx)(l.Drp, {
         id: "copy-image-link",
         label: u.intl.string(u.t["8xHmxo"]),
         action: h,

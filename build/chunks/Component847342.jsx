@@ -1,5 +1,5 @@
 /** Chunk was on 4948 **/
-/** chunk id: 847342, original params: e,n,l (module,exports,require) **/
+/** chunk id: 847342, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   default: () => A
 });
@@ -20,49 +20,50 @@ var Chunk621466 = require("./621466.js"),
 
 function A(e) {
   var n;
-  let l, A, v, {
+  let t, A, m, {
       channel: x,
-      message: m,
+      message: v,
       target: _,
       attachment: j,
       onSelect: V
     } = e,
     b = _;
-  if (null != j) A = l = j.url;
+  if (null != j) A = t = j.url;
   else
     for (;
-      (0, r.vq)(b);)(0, r.vq)(b, HTMLImageElement) && null != b.src && (A = b.src), (0, r.vq)(b, HTMLAnchorElement) && null != b.href && (l = b.href, v = b.textContent), b = b.parentNode;
+      (0, i.vq)(b);)(0, i.vq)(b, HTMLImageElement) && null != b.src && (A = b.src), (0, i.vq)(b, HTMLAnchorElement) && null != b.href && (t = b.href, m = b.textContent), b = b.parentNode;
   let k = null == (n = document.getSelection()) ? true : n.toString(),
-    C = (0, d.A)(k),
+    C = (0, a.A)(k),
     X = (0, o.A)(k),
-    w = (0, f.A)(m, x),
-    q = (0, p.A)(m, x),
-    H = (0, h.A)(m, x),
-    I = (0, u.A)(m, x),
-    M = (0, a.A)(null != l ? l : A, v),
-    N = (0, c.A)({
-      id: m.id,
+    w = (0, f.A)(v, x),
+    q = (0, p.A)(v, x),
+    H = (0, h.A)(v, x),
+    I = (0, u.A)(v, x),
+    M = (0, c.A)(null != t ? t : A, m),
+    N = (0, d.A)({
+      id: v.id,
       label: g.intl.string(g.t.zBoHlf),
-      shiftId: "".concat(m.channel_id, "-").concat(m.id)
+      shiftId: "".concat(v.channel_id, "-").concat(v.id)
     }),
-    S = (0, c.A)({
-      id: m.author.id,
+    S = (0, d.A)({
+      id: v.author.id,
       label: g.intl.string(g.t.Muw4wm)
     });
-  return (0, t.jsxs)(i.W1t, {
+  return (0, l.jsxs)(r.W1t, {
+    "data-menu-mixed": true,
     navId: "message",
     onClose: s.Z_,
     "aria-label": g.intl.string(g.t.ChPNkN),
     onSelect: V,
-    children: [(0, t.jsx)(i.rXV, {
+    children: [(0, l.jsx)(r.rXV, {
       children: C
-    }), (0, t.jsx)(i.rXV, {
+    }), (0, l.jsx)(r.rXV, {
       children: X
-    }), (0, t.jsxs)(i.rXV, {
+    }), (0, l.jsxs)(r.rXV, {
       children: [w, q, H, I]
-    }), (0, t.jsx)(i.rXV, {
+    }), (0, l.jsx)(r.rXV, {
       children: M
-    }), (0, t.jsxs)(i.rXV, {
+    }), (0, l.jsxs)(r.rXV, {
       children: [N, S]
     })]
   })

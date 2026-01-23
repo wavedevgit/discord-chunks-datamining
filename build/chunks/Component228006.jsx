@@ -78,7 +78,7 @@ let J = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     context: a
   }), er = (0, y.A)({
     user: n
-  }), el = (0, B.A)(n.id), es = (0, N.A)(n.id, o.id), eo = (0, V.A)(n.id), ea = (0, f.u)({
+  }), el = (0, B.A)(n.id), es = (0, N.A)(n.id, o.id), eo = (0, V.A)(n.id), ea = (0, m.u)({
     userId: n.id,
     channelId: o.id,
     guildId: o.getGuildId()
@@ -93,10 +93,10 @@ let J = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   }), ep = (0, P.A)({
     user: n,
     location: "GroupDMUserContextMenu"
-  }), ef = (0, U.A)({
+  }), em = (0, U.A)({
     user: n,
     location: "GroupDMUserContextMenu"
-  }), em = (0, m.A)({
+  }), ef = (0, f.A)({
     id: n.id,
     label: F.intl.string(F.t["/AXYnE"])
   }), eh = (0, R.A)(n.id), ej = (0, g.A)(n.id), ev = (0, b.A)(o.id), ex = (0, h.A)(n), eO = (0, p.A)(n.id), ey = (0, A.A)(o.id, n.id), eD = (0, I.A)({
@@ -107,6 +107,7 @@ let J = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     onHeightUpdate: W
   }), eC = (0, E.A)(n, o), eI = n.isNonUserBot(), eP = o.isManaged(), ew = null == (t = o.recipients) ? true : t.includes(n.id);
   return (0, i.jsxs)(l.W1t, {
+    "data-menu-mixed": true,
     navId: "user-context",
     onClose: s.Z_,
     "aria-label": F.intl.string(F.t.liqwPJ),
@@ -124,12 +125,12 @@ let J = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
       }), (0, i.jsx)(l.rXV, {
         children: z && eu
       }), (0, i.jsxs)(l.rXV, {
-        children: [X && eo, X && ea, X && ed, eD, z && ec, eA, eb, eg, z && ef, z && ep, X && eO]
+        children: [X && eo, X && ea, X && ed, eD, z && ec, eA, eb, eg, z && em, z && ep, X && eO]
       }), J && (0, i.jsxs)(l.rXV, {
         children: [ey, ev, ej]
       })]
     }), (0, i.jsx)(l.rXV, {
-      children: em
+      children: ef
     })]
   })
 }, {

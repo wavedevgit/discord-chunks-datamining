@@ -16,6 +16,7 @@ function a(e) {
     onClose: s
   } = e;
   return (0, r.jsx)(l.W1t, {
+    "data-menu-mixed": true,
     navId: "global-discovery-tabs-overflow-menu",
     "aria-label": i.intl.string(i.t.riPnr0),
     hideScroller: true,

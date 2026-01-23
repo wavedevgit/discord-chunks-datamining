@@ -342,6 +342,7 @@ function w(e) {
                 }))
               });
             return (0, t.jsxs)(o.W1t, {
+              "data-menu-all-icons": true,
               navId: "set-image-for-action",
               "aria-label": "upload",
               onClose: () => false,

@@ -1,7 +1,7 @@
 /** Chunk was on 49056 **/
 /** chunk id: 97187, original params: t,i,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => E
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,47 +18,48 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function h(t) {
+function E(t) {
   let {
     guild: i,
     onSelect: n
-  } = t, h = i.id, C = (0, o.A)({
+  } = t, E = i.id, h = (0, o.A)({
     id: i.id,
-    label: E.intl.string(E.t["94lLD7"])
-  }), b = (0, e.bG)([u.A], () => u.A.getRequest(h)), m = () => {
-    d.A.removeGuildJoinRequest(h), g.A.getGuildId() === h && (0, c.pX)(A.BVt.ME)
+    label: m.intl.string(m.t["94lLD7"])
+  }), C = (0, e.bG)([p.A], () => p.A.getRequest(E)), b = () => {
+    d.A.removeGuildJoinRequest(E), g.A.getGuildId() === E && (0, c.pX)(A.BVt.ME)
   };
-  return (0, l.jsxs)(a.W1t, {
+  return (0, l.jsxs)(r.W1t, {
+    "data-menu-mixed": true,
     navId: "join-request-guild-context",
     onClose: s.Z_,
-    "aria-label": E.intl.string(E.t.HpQykc),
+    "aria-label": m.intl.string(m.t.HpQykc),
     onSelect: n,
-    children: [(null == b ? true : b.applicationStatus) === p.B5.REJECTED && (0, l.jsx)(a.Drp, {
+    children: [(null == C ? true : C.applicationStatus) === u.B5.REJECTED && (0, l.jsx)(r.Drp, {
       id: "reapply",
-      label: E.intl.string(E.t.rpFCLs),
+      label: m.intl.string(m.t.rpFCLs),
       action: () => {
-        d.A.resetGuildJoinRequest(h).then(() => {
-          (0, c.pX)(A.BVt.GUILD_MEMBER_VERIFICATION(h))
+        d.A.resetGuildJoinRequest(E).then(() => {
+          (0, c.pX)(A.BVt.GUILD_MEMBER_VERIFICATION(E))
         })
       },
       color: "default"
-    }), (0, l.jsx)(a.Drp, {
+    }), (0, l.jsx)(r.Drp, {
       id: "withdraw",
-      label: (null == b ? true : b.applicationStatus) === p.B5.STARTED ? E.intl.string(E.t.OQFlFD) : E.intl.string(E.t.mqtdmQ),
+      label: (null == C ? true : C.applicationStatus) === u.B5.STARTED ? m.intl.string(m.t.OQFlFD) : m.intl.string(m.t.mqtdmQ),
       action: () => {
-        (0, r.A)({
-          title: E.intl.string(E.t.y0CVes),
-          subtitle: (null == b ? true : b.applicationStatus) === p.B5.STARTED ? E.intl.string(E.t.fJwWVt) : E.intl.format(E.t["9ZezpN"], {
+        (0, a.A)({
+          title: m.intl.string(m.t.y0CVes),
+          subtitle: (null == C ? true : C.applicationStatus) === u.B5.STARTED ? m.intl.string(m.t.fJwWVt) : m.intl.format(m.t["9ZezpN"], {
             name: i.name
           }),
-          confirmText: E.intl.string(E.t.p89ACt),
-          cancelText: E.intl.string(E.t.oEAioF),
-          onConfirm: m
+          confirmText: m.intl.string(m.t.p89ACt),
+          cancelText: m.intl.string(m.t.oEAioF),
+          onConfirm: b
         })
       },
       color: "danger"
-    }), (0, l.jsx)(a.rXV, {
-      children: C
+    }), (0, l.jsx)(r.rXV, {
+      children: h
     })]
   })
 }

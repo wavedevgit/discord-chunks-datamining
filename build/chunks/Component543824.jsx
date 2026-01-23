@@ -23,6 +23,7 @@ function s(e) {
     var e;
     return null == (e = f.current) ? true : e.call(f)
   }, []), (0, n.jsxs)(a.W1t, {
+    "data-menu-migration-ready": true,
     navId: "overlay-go-live-widget-context-menu",
     onClose: i.Z_,
     "aria-label": u.intl.string(u.t.tPfVWi),

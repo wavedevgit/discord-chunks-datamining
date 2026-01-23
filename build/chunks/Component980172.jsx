@@ -436,6 +436,7 @@ function eo(e) {
         closePopout: t
       } = e;
       return (0, r.jsx)(f.W1t, {
+        "data-menu-migration-ready": true,
         onClose: t,
         onSelect: true,
         navId: "copy-id",

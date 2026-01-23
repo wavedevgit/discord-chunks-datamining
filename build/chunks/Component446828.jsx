@@ -17,12 +17,13 @@ let f = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   let {
     userId: t,
     onSelect: n
-  } = e, i = (0, a.A)({
+  } = e, i = (0, l.A)({
     id: t,
     label: s.intl.string(s.t["/AXYnE"]),
     showWithoutDeveloperMode: true
   });
   return (0, r.jsx)(o.W1t, {
+    "data-menu-mixed": true,
     navId: "unknown-user-context",
     onClose: c.Z_,
     "aria-label": s.intl.string(s.t.liqwPJ),

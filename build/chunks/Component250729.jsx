@@ -14,11 +14,11 @@ var Chunk311907 = require("./311907.js"),
 
 function u(e) {
   let t = (0, r.bG)([a.Ay], () => a.Ay.hasUnread(e, c.P.GUILD_EVENT), [e]);
-  return (0, i.jsx)(s.Drp, {
+  return (0, i.jsx)(d.Drp, {
     id: "mark-events-read",
     label: l.intl.string(l.t.e6RscS),
     action: function() {
-      (0, d.hK)(e, c.P.GUILD_EVENT)
+      (0, s.hK)(e, c.P.GUILD_EVENT)
     },
     disabled: !t
   })

@@ -18,9 +18,9 @@ var Chunk627968 = require("./627968.js"),
 function p(e, t) {
   let {
     enabled: n
-  } = o.A.useConfig({
+  } = u.A.useConfig({
     location: "useCallTilePopoutItem"
-  }), p = (0, r.bG)([u.A], () => u.A.getParticipant(e, t)), b = (0, r.bG)([u.A], () => u.A.isParticipantPoppedOut(e, t)), f = i.useCallback(() => {
+  }), p = (0, r.bG)([o.A], () => o.A.getParticipant(e, t)), b = (0, r.bG)([o.A], () => o.A.isParticipantPoppedOut(e, t)), f = i.useCallback(() => {
     null != p && ((0, A.Ay)(p) && (0, s.A9)(p.stream, {
       forceMultiple: true
     }), d.A.popoutParticipant(e, p.id), c.openCallTilePopout(e, p.id))

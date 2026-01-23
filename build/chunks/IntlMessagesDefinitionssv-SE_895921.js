@@ -1,3 +1,3 @@
 /** Chunk was on 40938 **/
-/** chunk id: 895921, original params: s (module,exports,require) **/
-module.exports = JSON.parse('{"eoXh7B":["Best\xe4llnings\xf6versikt"]}')
+/** chunk id: 895921, original params: a (module,exports,require) **/
+module.exports = JSON.parse('{"Zxav97":["Totalt att betala"],"pDVleg":["Totala besparingar ",[1,"amount"]],"Tt3O81":["N\xe4sta f\xf6rl\xe4ngning"],"eoXh7B":["Best\xe4llnings\xf6versikt"]}')

@@ -53,6 +53,7 @@ function b(e) {
     }), n))
   }, [t, i]);
   return (0, r.jsx)(s.W1t, {
+    "data-menu-migration-ready": true,
     navId: "members-table-sort-menu",
     onClose: () => {
       null == n || n()

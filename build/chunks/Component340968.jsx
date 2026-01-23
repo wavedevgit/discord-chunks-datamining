@@ -30,11 +30,12 @@ let _ = (0, Chunk358367.A)(function(e) {
     guild: n,
     includeTopic: c = false,
     onSelect: a
-  } = e, _ = (0, E.A)(t), P = (0, A.Ay)(t), w = (0, g.A)(t), D = (0, b.A)(t), x = (0, p.A)(t), m = (0, y.A)(t), N = (0, f.A)(t, n), C = (0, u.A)(t, n), I = (0, d.A)(t, n, h.rbe.GUILD_TEXT), S = (0, d.A)(t, n, h.rbe.GUILD_VOICE), T = (0, O.A)(t), G = (0, o.A)({
+  } = e, _ = (0, E.A)(t), P = (0, A.Ay)(t), w = (0, g.A)(t), D = (0, b.A)(t), x = (0, d.A)(t), m = (0, y.A)(t), N = (0, f.A)(t, n), C = (0, u.A)(t, n), I = (0, p.A)(t, n, h.rbe.GUILD_TEXT), S = (0, p.A)(t, n, h.rbe.GUILD_VOICE), T = (0, O.A)(t), G = (0, o.A)({
     id: t.id,
     label: v.intl.string(v.t.gFHI3k)
   }), M = (0, s.os)("ChannelTitleContextMenu"), L = (0, j.Ay)(t);
   return (0, r.jsxs)(i.W1t, {
+    "data-menu-mixed": true,
     navId: "channel-context",
     onClose: l.Z_,
     "aria-label": v.intl.string(v.t.Xm41aV),

@@ -1,7 +1,7 @@
 /** Chunk was on 52565 **/
 /** chunk id: 345332, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,20 +18,21 @@ var Chunk417597 = require("./417597.js"),
   Chunk746080 = require("./746080.js"),
   Chunk985018 = require("./985018.jsx");
 
-function d(e) {
+function f(e) {
   let {
     guild: t,
     onSelect: r
-  } = e, d = (0, o.bG)([a.A], () => null != t && a.A.can(u.xBc.ADMINISTRATOR, t));
+  } = e, f = (0, o.bG)([l.A], () => null != t && l.A.can(u.xBc.ADMINISTRATOR, t));
   return (0, n.jsx)(c.W1t, {
+    "data-menu-migration-ready": true,
     navId: "guild-shop-context",
-    "aria-label": f.intl.string(f.t.g3KvYF),
+    "aria-label": d.intl.string(d.t.g3KvYF),
     onClose: i.Z_,
     onSelect: r,
     children: (0, n.jsx)(c.rXV, {
       children: (0, n.jsx)(c.Drp, {
         id: "role-subscription-copy-link",
-        label: f.intl.string(f.t.WqhZss),
+        label: d.intl.string(d.t.WqhZss),
         action: () => {
           var e, r;
           s.default.track(u.HAw.GUILD_SHOP_COPY_LINK, (e = function(e) {
@@ -51,8 +52,8 @@ function d(e) {
               })
             }
             return e
-          }({}, (0, l.H$)(t.id)), r = r = {
-            is_admin_or_owner: d,
+          }({}, (0, a.H$)(t.id)), r = r = {
+            is_admin_or_owner: f,
             copy_location: O.lJ.CHANNEL_ROW_CONTEXT_MENU
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
             var r = Object.keys(e);

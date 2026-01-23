@@ -75,9 +75,9 @@ function R(e) {
     showShareAndEdit: N = false
   } = e, H = t[0], U = t.length > 1, {
     analyticsLocations: Z
-  } = (0, s.Ay)(), G = (0, i.bG)([h.Ay, d.A, g.default, p.A], () => h.Ay.getFlattenedGuildIds().some(e => {
-    let t = p.A.getGuild(e);
-    return null != t && (0, u.ie)(t, d.A, g.default).canCreateExpressions
+  } = (0, s.Ay)(), G = (0, i.bG)([h.Ay, p.A, g.default, d.A], () => h.Ay.getFlattenedGuildIds().some(e => {
+    let t = d.A.getGuild(e);
+    return null != t && (0, u.ie)(t, p.A, g.default).canCreateExpressions
   })), q = (0, i.bG)([w.A], () => t.some(e => w.A.isClipExporting(e.id)));
   async function I() {
     (0, l.Z_)();
@@ -88,7 +88,7 @@ function R(e) {
       (0, r.mMO)(async () => {
         let {
           default: i
-        } = await Promise.all([n.e("40556"), n.e("10691")]).then(n.bind(n, 6503)), r = (null == e ? true : e.guild_id) != null ? p.A.getGuild(e.guild_id) : null, l = null != r && (0, u.ie)(r, d.A, g.default).canCreateExpressions, o = null == H.name || "" === H.name ? (0, v.cM)(b.default.extractTimestamp(H.id)) : H.name, s = o.slice(0, j.Ah);
+        } = await Promise.all([n.e("40556"), n.e("10691")]).then(n.bind(n, 6503)), r = (null == e ? true : e.guild_id) != null ? d.A.getGuild(e.guild_id) : null, l = null != r && (0, u.ie)(r, p.A, g.default).canCreateExpressions, o = null == H.name || "" === H.name ? (0, v.cM)(b.default.extractTimestamp(H.id)) : H.name, s = o.slice(0, j.Ah);
         return n => (0, a.jsx)(i, C(D({}, n), {
           showGuildPicker: true,
           guildId: l ? null == e ? true : e.guild_id : true,
@@ -148,6 +148,7 @@ function R(e) {
     }
   }
   return (0, a.jsxs)(r.W1t, {
+    "data-menu-mixed": true,
     navId: "clips-more-options",
     "aria-label": P.intl.string(P.t.PdRCRg),
     onClose: l.Z_,

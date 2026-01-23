@@ -1,5 +1,5 @@
 /** Chunk was on 99041 **/
-/** chunk id: 612856, original params: n,l,t (module,exports,require) **/
+/** chunk id: 612856, original params: n,t,l (module,exports,require) **/
 require.d(exports, {
   default: () => o
 });
@@ -13,16 +13,17 @@ var Chunk397927 = require("./397927.js"),
 
 function o(n) {
   let {
-    channel: l,
-    channelId: t,
+    channel: t,
+    channelId: l,
     originalLink: o,
     messageId: d,
     onSelect: u
-  } = n, h = (0, s.A)(l, o, d), p = (0, r.A)({
-    id: t,
+  } = n, h = (0, s.A)(t, o, d), p = (0, r.A)({
+    id: l,
     label: c.intl.string(c.t.gFHI3k)
   });
   return (0, i.jsxs)(e.W1t, {
+    "data-menu-mixed": true,
     navId: "channel-mention-context",
     onClose: a.Z_,
     onSelect: u,

@@ -12,11 +12,11 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx");
 
 function c(n) {
-  return (0, l.EI)(n) ? (0, r.jsx)(s.Drp, {
+  return (0, a.EI)(n) ? (0, r.jsx)(s.Drp, {
     id: "role-subscription-settings",
     label: o.intl.string(o.t.jMN5ZG),
     action: () => {
-      e.A.open(n.id, a.BEX.ROLE_SUBSCRIPTIONS)
+      e.A.open(n.id, l.BEX.ROLE_SUBSCRIPTIONS)
     }
   }) : null
 }

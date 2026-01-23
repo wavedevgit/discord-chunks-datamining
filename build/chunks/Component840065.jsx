@@ -97,7 +97,7 @@ async function y(e) {
   }) : await (0, i.mMO)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("28979"), n.e("48666")]).then(n.bind(n, 796150));
+    } = await Promise.all([n.e("28979"), n.e("65076")]).then(n.bind(n, 796150));
     return n => (0, r.jsx)(t, h(p({}, n), {
       target: e
     }))

@@ -181,6 +181,7 @@ function k(e) {
     }, [e.quest.id]),
     et = e.shouldShowDisclosure && e.quest.id !== C.Fw;
   return (0, r.jsxs)(s.W1t, {
+    "data-menu-mixed": true,
     variant: "fixed",
     onSelect: K,
     navId: "quests-entry",

@@ -22,6 +22,7 @@ let f = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     onSelect: i
   } = e, a = (0, b.A)(t, r), l = (0, s.A)(t, r), O = (0, u.A)(t, r);
   return (0, n.jsxs)(o.W1t, {
+    "data-menu-migration-ready": true,
     navId: "moderation-raid-context",
     onClose: c.Z_,
     "aria-label": p.intl.string(p.t.liqwPJ),

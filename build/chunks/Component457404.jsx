@@ -15,6 +15,7 @@ let c = e => {
       closePopout: n
     } = e;
     return (0, r.jsx)(s.W1t, {
+      "data-menu-all-icons": true,
       navId: "notification-actions",
       onClose: n,
       onSelect: n,

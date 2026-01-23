@@ -27,9 +27,9 @@ function d(e) {
     canAccessChannel: o.A.can(e.accessPermissions, e),
     canUnlinkChannel: (0, l.n)(e, o.A)
   }), [e]);
-  return !__OVERLAY__ && b && (n || t || d || f) ? (0, r.jsx)(c.Drp, {
+  return !__OVERLAY__ && b && (n || t || d || f) ? (0, r.jsx)(a.Drp, {
     id: "edit-channel",
     label: e.type === s.rbe.GUILD_CATEGORY ? u.intl.string(u.t.zdPFs9) : u.intl.string(u.t["3gUsJb"]),
-    action: () => a.Ay.open(e.id)
+    action: () => c.Ay.open(e.id)
   }) : null
 }

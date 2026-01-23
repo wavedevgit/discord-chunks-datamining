@@ -51,7 +51,7 @@ let B = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     channel: n,
     channelSelected: a = false,
     showMute: o = true,
-    showMediaItems: c = false,
+    showMediaItems: u = false,
     showChannelCallItems: F = false,
     showModalItems: B = true,
     targetIsUser: W = false,
@@ -79,7 +79,7 @@ let B = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     user: t
   }), ed = (0, V.A)({
     user: t
-  }), ec = (0, R.A)(t.id), eu = (0, g.u)({
+  }), eu = (0, R.A)(t.id), ec = (0, g.u)({
     userId: t.id,
     channelId: n.id,
     guildId: n.getGuildId()
@@ -95,7 +95,7 @@ let B = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   }), eh = (0, O.A)({
     id: n.id,
     label: Y.intl.string(Y.t.gFHI3k)
-  }), ej = (0, h.A)(n), eO = (0, f.A)(t.id), ey = (0, A.A)(n.id), ev = (0, _.A)(t), em = (0, b.A)(t.id), e_ = (0, u.A)(n.id, t.id), ex = (0, I.A)({
+  }), ej = (0, h.A)(n), eO = (0, f.A)(t.id), ey = (0, A.A)(n.id), ev = (0, _.A)(t), em = (0, b.A)(t.id), e_ = (0, c.A)(n.id, t.id), ex = (0, I.A)({
     commandType: s.kc.USER,
     commandTargetId: t.id,
     channel: n,
@@ -105,6 +105,7 @@ let B = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     channel: n
   }), eS = n.isManaged(), eM = t.isNonUserBot();
   return (0, r.jsxs)(i.W1t, {
+    "data-menu-mixed": true,
     navId: "user-context",
     onClose: l.Z_,
     "aria-label": Y.intl.string(Y.t.liqwPJ),
@@ -122,11 +123,11 @@ let B = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
       }), (0, p.A)(n.id) && z, et]
     }), !eM && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.rXV, {
-        children: c && ei
+        children: u && ei
       }), (0, r.jsx)(i.rXV, {
         children: B && er
       }), (0, r.jsxs)(i.rXV, {
-        children: [c && ec, B && eu, c && eA, ex, B && en, eo, es, ed, B && eb, B && ef, c && em]
+        children: [u && eu, B && ec, u && eA, ex, B && en, eo, es, ed, B && eb, B && ef, u && em]
       }), (0, r.jsx)(i.rXV, {
         children: o && eg
       }), F && (0, r.jsxs)(i.rXV, {

@@ -200,7 +200,7 @@ class D extends Chunk904986.A {
       else if ("videohook_initialize" === e.type) this.emit(h.yq.VideoHookInitialize, e.backend, e.format, e.framebufferFormat, e.sampleCount, e.success, e.reinitialization);
       else if ("screenshare_finish" === e.type) {
         var t;
-        this.emit(h.yq.ScreenshareFinish, e.screenshareFrames, e.videohookFrames, e.hybridDxgiFrames, e.hybridGdiFrames, e.hybridVideohookFrames, e.hybridGraphicsCaptureFrames, e.hybridCaptureMethodSwitches, e.hybridGdiBitBltFrames, e.hybridGdiPrintWindowFrames, e.quartzFrames, null != (t = e.desktopCapturerType) ? t : e.desktop_capturer_type, e.activity, e.goLiveCameraFrames, e.screenCaptureKitFrames)
+        this.emit(h.yq.ScreenshareFinish, e.screenshareFrames, e.videohookFrames, e.hybridDxgiFrames, e.hybridGdiFrames, e.hybridVideohookFrames, e.hybridGraphicsCaptureFrames, e.hybridCaptureMethodSwitches, e.hybridGdiBitBltFrames, e.hybridGdiPrintWindowFrames, e.hybridGraphicsCaptureFramesUnique, e.hybridDxgiFramesUnique, e.hybridVideohookFramesUnique, e.hybridGdiBitBltFramesUnique, e.hybridGdiPrintWindowFramesUnique, e.quartzFrames, null != (t = e.desktopCapturerType) ? t : e.desktop_capturer_type, e.activity, e.goLiveCameraFrames, e.screenCaptureKitFrames)
       } else "video_state" === e.type ? this.emit(h.yq.VideoState, e.state) : e.type.startsWith("soundshare_") && this.emit(h.yq.SoundshareTrace, e)
     }), this.on("newListener", this.handleNewListenerNative)
   }

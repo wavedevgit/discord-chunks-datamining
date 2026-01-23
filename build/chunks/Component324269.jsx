@@ -29,6 +29,7 @@ function u(e) {
   }, e)), [s, o]);
   return (0, n.jsx)("div", {
     children: (0, n.jsxs)(l.W1t, {
+      "data-menu-migration-ready": true,
       navId: "sort-and-view",
       "aria-label": a.intl.string(a.t["4jfWTK"]),
       hideScroller: true,

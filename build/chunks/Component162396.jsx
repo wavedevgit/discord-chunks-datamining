@@ -1,4 +1,4 @@
-/** Chunk was on 48666 **/
+/** Chunk was on 65076 **/
 /** chunk id: 162396, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -21,6 +21,7 @@ function p(e) {
     onClose: t
   } = e;
   return (0, n.jsx)(i.W1t, {
+    "data-menu-migration-ready": true,
     navId: "settings-footer-more-menu",
     onClose: t,
     onSelect: () => {},

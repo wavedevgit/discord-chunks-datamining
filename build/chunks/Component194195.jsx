@@ -23,6 +23,7 @@ let b = (0, Chunk358367.A)(function(n) {
     label: d.intl.string(d.t.gFHI3k)
   });
   return (0, r.jsxs)(a.W1t, {
+    "data-menu-mixed": true,
     navId: "channel-context",
     onClose: c.Z_,
     "aria-label": d.intl.string(d.t.Xm41aV),

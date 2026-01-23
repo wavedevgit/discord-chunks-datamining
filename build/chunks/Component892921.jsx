@@ -23,6 +23,7 @@ function g(e) {
     allowTerms: g
   } = e;
   return (0, r.jsx)(i.W1t, {
+    "data-menu-migration-ready": true,
     navId: "add-questions",
     className: u.M,
     onClose: l.Z_,

@@ -78,25 +78,26 @@ let C = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     id: t.id,
     label: U.intl.string(U.t["/AXYnE"])
   }), Q = (0, A.A)(t), $ = t.isNonUserBot();
-  return (0, r.jsxs)(l.W1t, {
+  return (0, r.jsxs)(i.W1t, {
+    "data-menu-mixed": true,
     navId: "user-context",
-    onClose: i.Z_,
+    onClose: l.Z_,
     "aria-label": U.intl.string(U.t.liqwPJ),
     onSelect: C,
     onInteraction: L,
     children: [!$ && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l.rXV, {
+      children: [(0, r.jsx)(i.rXV, {
         children: Q
-      }), (0, r.jsxs)(l.rXV, {
+      }), (0, r.jsxs)(i.rXV, {
         children: [G, V, k, M, N, w ? R : null, B]
-      }), a && (0, r.jsx)(l.rXV, {
+      }), a && (0, r.jsx)(i.rXV, {
         children: F
-      }), (0, r.jsx)(l.rXV, {
+      }), (0, r.jsx)(i.rXV, {
         children: W
-      }), (0, r.jsxs)(l.rXV, {
+      }), (0, r.jsxs)(i.rXV, {
         children: [a && X, K, H, J, Y, z, q]
       })]
-    }), (0, r.jsx)(l.rXV, {
+    }), (0, r.jsx)(i.rXV, {
       children: Z
     })]
   })

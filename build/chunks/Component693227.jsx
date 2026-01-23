@@ -16,20 +16,20 @@ function s(e) {
     user: t,
     onAction: n,
     groupId: s
-  } = e, u = t.id, [c, A] = (0, l.yK)([d.A, a.A], () => [d.A.isFriend(u), a.A.getGroups()], [u]);
+  } = e, u = t.id, [c, A] = (0, i.yK)([d.A, a.A], () => [d.A.isFriend(u), a.A.getGroups()], [u]);
   if (!c || 0 === A.length) return null;
   let b = [];
-  return A.length > 0 && b.push((0, r.jsx)(i.Drp, {
+  return A.length > 0 && b.push((0, r.jsx)(l.Drp, {
     id: "add-to-group",
     label: "Add to Group",
-    children: A.map(e => (0, r.jsx)(i.Drp, {
+    children: A.map(e => (0, r.jsx)(l.Drp, {
       id: "add-".concat(e.id),
       label: e.name,
       action: () => {
         null == n || n(), o.A.addUsersToGroup(e.id, u)
       }
     }, e.id))
-  }, "add-to-group")), null != s && b.push((0, r.jsx)(i.Drp, {
+  }, "add-to-group")), null != s && b.push((0, r.jsx)(l.Drp, {
     id: "remove-from-group",
     label: "Remove from Group",
     action: () => {

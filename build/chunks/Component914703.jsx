@@ -21,6 +21,7 @@ function u(e) {
     label: p
   } = e, h = (0, i.A)(t, "Notifications Bell"), f = (0, s.A)(t), g = (0, o.X)(t);
   return (0, r.jsxs)(l.W1t, {
+    "data-menu-migration-ready": true,
     navId: d,
     onClose: n,
     "aria-label": p,

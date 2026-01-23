@@ -30,16 +30,16 @@ function g(e) {
       canAccessChannel: A.A.can(e.accessPermissions, e),
       canManageChannel: A.A.can(e.isThread() ? p.xBc.MANAGE_THREADS : p.xBc.MANAGE_CHANNELS, e)
     }), [e]),
-    y = (0, i.bG)([d.A], () => {
+    m = (0, i.bG)([d.A], () => {
       var t;
       return null != (t = d.A.getCount(e.id)) ? t : 0
     }, [e.id]),
     {
-      firstMessage: m
+      firstMessage: y
     } = (0, i.bG)([c.A], () => c.A.getMessage(e.id), [e.id]),
-    _ = g && h && null == m,
-    j = t && (h || n && y < 1 || _),
-    C = t && n && !h && y > 0 && null != m;
+    _ = g && h && null == y,
+    j = t && (h || n && m < 1 || _),
+    C = t && n && !h && m > 0 && null != y;
   return O && (!g || _) && (h || j || C) ? (0, r.jsx)(l.Drp, {
     id: "delete-channel",
     label: e.type === p.rbe.GUILD_CATEGORY ? v.intl.string(v.t.ifbXnL) : e.isForumPost() ? j ? v.intl.string(v.t.nEOg1N) : v.intl.string(v.t.xwMqD7) : e.isThread() ? v.intl.string(v.t.H7vTe2) : v.intl.string(v.t["8D8Rsb"]),

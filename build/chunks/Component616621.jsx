@@ -1,7 +1,7 @@
 /** Chunk was on 95153 **/
 /** chunk id: 616621, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => u
 }), require("./114821.js"), require("./339614.js");
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -12,7 +12,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk287809 = require("./287809.js"),
   Chunk652215 = require("./652215.js");
 
-function d() {
+function u() {
   if (!(0, i.bG)([s.default], () => {
       var e, t;
       return (null == (e = s.default.getCurrentUser()) ? true : e.isStaff()) === true || (null == (t = s.default.getCurrentUser()) ? true : t.isStaffPersonal()) === true
@@ -25,7 +25,7 @@ function d() {
       c.PlaygroundStore.setState({
         selectedCollection: null,
         selectedStory: null
-      }), (0, a.id)(u.zgK.COMPONENT_PLAYGROUND)
+      }), (0, a.id)(d.zgK.COMPONENT_PLAYGROUND)
     },
     children: (0, r.jsx)(l.rXV, {
       children: e.map(e => (0, r.jsx)(l.Drp, {
@@ -35,7 +35,7 @@ function d() {
           c.PlaygroundStore.setState({
             selectedCollection: e.id,
             selectedStory: null
-          }), (0, a.id)(u.zgK.COMPONENT_PLAYGROUND)
+          }), (0, a.id)(d.zgK.COMPONENT_PLAYGROUND)
         }
       }, e.id))
     }, "design-systems")

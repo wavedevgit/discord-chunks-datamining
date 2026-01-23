@@ -32,7 +32,7 @@ let b = "".concat("#").concat("itemSkuId", "="),
     }, [e, t.pathname])
   },
   C = () => {
-    let e = (0, p.U)(),
+    let e = (0, m.U)(),
       t = r.useRef(null),
       n = (0, l.zy)(),
       a = n.pathname === _.BVt.COLLECTIBLES_SHOP ? i.A.HOME_PAGE_SHOP_TAB : i.A.COLLECTIBLES_SHOP,
@@ -59,7 +59,7 @@ let b = "".concat("#").concat("itemSkuId", "="),
             } = e, s = c.A.getProduct(t), a = c.A.getCategoryForProduct(t);
             if (null != s && null != a) {
               let e = s,
-                o = (0, m.Ak)({
+                o = (0, p.Ak)({
                   product: s
                 }),
                 u = document.getElementById("shop-item-".concat(e.skuId));

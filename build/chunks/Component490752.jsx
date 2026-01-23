@@ -112,6 +112,7 @@ function b(e) {
         closePopout: t
       } = e;
       return (0, r.jsx)(s.W1t, {
+        "data-menu-mixed": true,
         navId: "user-bot-profile-overflow-menu",
         onSelect: true,
         onClose: t,

@@ -1,7 +1,7 @@
 /** Chunk was on 80628 **/
 /** chunk id: 352024, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  JX: () => p,
+  JX: () => d,
   R_: () => g,
   YK: () => f,
   Yo: () => h
@@ -40,7 +40,7 @@ async function f(e) {
   if ("string" != typeof n) throw Error("Unexpected file type");
   return n
 }
-async function p(e) {
+async function d(e) {
   let {
     readPromise: t,
     guildId: n,
@@ -58,7 +58,7 @@ async function p(e) {
     emojiName: l
   })
 }
-async function d(e) {
+async function p(e) {
   let t = [],
     n = function(e) {
       if (1 === e.length) return e[0];
@@ -126,17 +126,17 @@ async function h(e, t) {
     if (0 === n && c === s) return e;
     if (null == u) throw Error("Failed to create audio context");
     let f = Math.floor(n / s * e.length),
-      p = Math.floor(c / s * e.length),
-      d = u.createBuffer(r, p - f, i);
+      d = Math.floor(c / s * e.length),
+      p = u.createBuffer(r, d - f, i);
     for (let t = 0; t < r; t++) {
-      let n = d.getChannelData(t),
+      let n = p.getChannelData(t),
         a = e.getChannelData(t),
         i = 0;
-      for (let e = f; e <= p; e++) n[i] = a[e], i++
+      for (let e = f; e <= d; e++) n[i] = a[e], i++
     }
-    return d
+    return p
   }(await c(e), t);
-  return new File([await d(n)], "sound.ogg", {
+  return new File([await p(n)], "sound.ogg", {
     type: "audio/ogg"
   })
 }
@@ -145,5 +145,5 @@ async function g(e) {
       type: e.type
     }),
     n = await c(t);
-  return await d(n)
+  return await p(n)
 }

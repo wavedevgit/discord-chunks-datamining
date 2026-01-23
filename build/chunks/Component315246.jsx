@@ -96,6 +96,7 @@ function O(e) {
         closePopout: t
       } = e;
       return (0, r.jsx)(s.W1t, {
+        "data-menu-mixed": true,
         navId: b,
         onClose: () => {
           (0, o.Z_)(), t()

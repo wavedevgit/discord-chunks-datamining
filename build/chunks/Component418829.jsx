@@ -1,4 +1,4 @@
-/** Chunk was on 48666 **/
+/** Chunk was on 65076 **/
 /** chunk id: 418829, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   A: () => p
@@ -24,14 +24,14 @@ function d(e) {
     onClose: g,
     sidebarFooter: O,
     onPanelChange: j,
-    emptyState: h,
-    searchQuery: m,
+    emptyState: m,
+    searchQuery: h,
     onSearchChange: v
   } = e, x = f.A.useField("currentPanelKey"), {
     node: S,
     visibleDirectory: P,
     accessibleDirectory: _
-  } = (0, y.Ay)(r, null != m ? m : ""), w = null != d && (null == (t = P.entry(d)) ? true : t.parentPanelKey) != null ? d : p, C = l.useMemo(() => {
+  } = (0, y.Ay)(r, null != h ? h : ""), w = null != d && (null == (t = P.entry(d)) ? true : t.parentPanelKey) != null ? d : p, C = l.useMemo(() => {
     var e;
     let t = null == (e = _.entry(null != x ? x : w)) ? true : e.parentPanelKey;
     if (null != t) return _.getPanelOrThrow(t)
@@ -113,8 +113,8 @@ function d(e) {
         root: S,
         footer: O,
         onClose: N,
-        emptyState: h,
-        searchQuery: m,
+        emptyState: m,
+        searchQuery: h,
         onSearchChange: v
       }), (0, n.jsx)(i.A, {
         onClose: N,

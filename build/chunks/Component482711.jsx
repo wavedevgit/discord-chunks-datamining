@@ -79,6 +79,7 @@ function O(e) {
   return (0, r.jsx)("div", {
     className: h.li,
     children: (0, r.jsxs)(o.W1t, {
+      "data-menu-migration-ready": true,
       navId: "guild-product-context",
       onClose: g,
       "aria-label": _.intl.string(_.t.Z146dM),

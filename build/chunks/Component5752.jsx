@@ -17,18 +17,19 @@ function s(t) {
     backgroundOption: i,
     optionIsInUse: s
   } = t;
-  return (0, e.jsx)(r.W1t, {
+  return (0, e.jsx)(a.W1t, {
+    "data-menu-migration-ready": true,
     navId: "video-background-context",
-    onClose: d.Z_,
+    onClose: r.Z_,
     onSelect: n,
-    "aria-label": o.intl.string(o.t.ptxALO),
-    children: (0, e.jsx)(r.Drp, {
+    "aria-label": l.intl.string(l.t.ptxALO),
+    children: (0, e.jsx)(a.Drp, {
       id: "remove",
       action: () => {
-        (0, l.d1)(i) && ((0, a.pW)(i), (0, l.Eo)(i))
+        (0, o.d1)(i) && ((0, d.pW)(i), (0, o.Eo)(i))
       },
-      label: (0, l.d1)(i) ? s ? o.intl.string(o.t["xh/P/8"]) : o.intl.string(o.t.oKuPwe) : o.intl.string(o.t.hFYUDN),
-      disabled: !(0, l.d1)(i) || s,
+      label: (0, o.d1)(i) ? s ? l.intl.string(l.t["xh/P/8"]) : l.intl.string(l.t.oKuPwe) : l.intl.string(l.t.hFYUDN),
+      disabled: !(0, o.d1)(i) || s,
       color: "danger"
     })
   })

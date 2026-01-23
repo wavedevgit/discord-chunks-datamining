@@ -1,4 +1,4 @@
-/** Chunk was on 48666 **/
+/** Chunk was on 65076 **/
 /** chunk id: 883662, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -23,8 +23,8 @@ function b(e) {
     onPanelChange: g,
     sidebarFooter: O,
     emptyState: j,
-    searchQuery: h,
-    onSearchChange: m
+    searchQuery: m,
+    onSearchChange: h
   } = e, v = function(e, t) {
     if (null == e) return {};
     var r, n, l, o = {};
@@ -82,8 +82,8 @@ function b(e) {
         onPanelChange: g,
         emptyState: j,
         sidebarFooter: O,
-        searchQuery: h,
-        onSearchChange: m
+        searchQuery: m,
+        onSearchChange: h
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);

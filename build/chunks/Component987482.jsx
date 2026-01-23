@@ -65,6 +65,7 @@ let v = [{
         closePopout: a
       } = e;
       return Array.isArray(r) ? (0, n.jsx)(m.W1t, {
+        "data-menu-migration-ready": true,
         navId: "download-app-menu",
         "aria-label": y.intl.string(y.t["+1H47t"]),
         onClose: a,

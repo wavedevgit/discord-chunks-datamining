@@ -49,12 +49,12 @@ function h(e) {
       let t = T(C);
       e = l ? (0, d.Bs)(t, j) : t
     } else x === a.i.RANDOM && (e = I);
-    return h ? (0, m.ex)(L(e)) : L(e)
+    return h ? (0, p.ex)(L(e)) : L(e)
   }, [x, h, L, n, y, T, v, l, j, C, I]);
   return {
     sortType: x,
     setSortType: S,
-    sortedItems: (0, p.X)(R),
+    sortedItems: (0, m.X)(R),
     sortOptions: r.useMemo(() => {
       let e = [{
         value: a.i.POPULAR,

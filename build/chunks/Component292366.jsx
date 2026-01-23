@@ -81,6 +81,7 @@ function I(e) {
     onSelect: n
   } = e;
   return p.p5 && null != t ? (0, r.jsx)(l.W1t, {
+    "data-menu-migration-ready": true,
     navId: "component-button",
     onClose: c.Z_,
     "aria-label": g.intl.string(g.t.tvTXy8),

@@ -21,7 +21,7 @@ function s(e) {
     p = (0, u.V)(b),
     O = (0, o.L)(b),
     f = s ? p : O,
-    y = t === c.BRT.POPOUT ? s ? e ? i.Ts3 : i.A4$ : e ? i.z0P : i.cNw : f.Component;
+    d = t === c.BRT.POPOUT ? s ? e ? i.Ts3 : i.A4$ : e ? i.z0P : i.cNw : f.Component;
   return n.useMemo(() => {
     var e, t;
     return e = function(e) {
@@ -42,7 +42,7 @@ function s(e) {
       }
       return e
     }({}, f), t = t = {
-      Component: y
+      Component: d
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -53,5 +53,5 @@ function s(e) {
     })(Object(t)).forEach(function(r) {
       Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
     }), e
-  }, [f, y])
+  }, [f, d])
 }

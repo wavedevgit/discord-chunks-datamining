@@ -1,14 +1,15 @@
 /** Chunk was on 89346 **/
 /** chunk id: 949881, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => l
+  default: () => i
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk442433 = require("./442433.js"),
   Chunk818348 = require("./818348.js");
-let l = e => (0, r.jsx)(a.W1t, {
+let i = e => (0, r.jsx)(a.W1t, {
+  "data-menu-migration-ready": true,
   onClose: o.Z_,
   navId: "staff-only-entry-debug",
   "aria-label": "staff only content inventory debug",

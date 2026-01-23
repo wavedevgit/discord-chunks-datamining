@@ -72,7 +72,7 @@ function k(e) {
         pageType: z,
         sectionType: y.JJy.ORBS_BALANCE_MENU,
         ctaObject: y.ZSU.CTA_TO_QUEST_HOME
-      }), (0, m.navigateToQuestHome)({
+      }), (0, p.navigateToQuestHome)({
         fromContent: i.u.ORBS_BALANCE_MENU
       })
     }, [z]),
@@ -90,7 +90,7 @@ function k(e) {
     theme: s,
     children: e => (0, r.jsx)("div", {
       ref: P,
-      children: (0, r.jsxs)(p.A, {
+      children: (0, r.jsxs)(m.A, {
         disableDoubleClick: true,
         className: a()(e, I.jr),
         innerClassname: N ? I.vi : true,

@@ -18,20 +18,21 @@ function o(e) {
     summary: d,
     onSelect: n
   } = e;
-  return (0, i.jsx)(t.W1t, {
+  return (0, a.jsx)(i.W1t, {
+    "data-menu-migration-ready": true,
     onSelect: n,
     navId: "channel-summaries-context-menu",
-    "aria-label": u.intl.string(u.t.ogxXGq),
-    onClose: a.Z_,
-    children: (0, i.jsx)(t.rXV, {
-      children: (0, i.jsx)(t.Drp, {
+    "aria-label": c.intl.string(c.t.ogxXGq),
+    onClose: t.Z_,
+    children: (0, a.jsx)(i.rXV, {
+      children: (0, a.jsx)(i.Drp, {
         id: "delete-summary",
         color: "danger",
-        label: u.intl.string(u.t["5AwUIg"]),
+        label: c.intl.string(c.t["5AwUIg"]),
         action: () => {
-          (0, r.O$)(d);
+          (0, s.O$)(d);
           let e = l.A.getChannel(d.channelId);
-          s.default.track(c.HAw.SUMMARY_DELETED, {
+          r.default.track(u.HAw.SUMMARY_DELETED, {
             guild_id: null == e ? true : e.guild_id,
             channel_id: null == e ? true : e.id,
             summary_id: d.id,

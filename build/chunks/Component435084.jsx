@@ -36,6 +36,7 @@ function f(e) {
     }
   });
   return (0, r.jsxs)(a.W1t, {
+    "data-menu-migration-ready": true,
     navId: "mentions-filter",
     "aria-label": h.intl.string(h.t.pEasFX),
     onClose: t,

@@ -1,5 +1,5 @@
 /** Chunk was on 44751 **/
-/** chunk id: 575538, original params: t,l,i (module,exports,require) **/
+/** chunk id: 575538, original params: t,i,l (module,exports,require) **/
 require.d(exports, {
   default: () => h
 });
@@ -17,38 +17,39 @@ var Chunk311907 = require("./311907.js"),
 
 function h(t) {
   let {
-    onSelect: l
+    onSelect: i
   } = t, {
-    clipsLength: i
-  } = (0, e.cf)([o.A], () => o.A.getSettings()), h = (0, s.A)();
-  return (0, n.jsxs)(a.W1t, {
+    clipsLength: l
+  } = (0, a.cf)([c.A], () => c.A.getSettings()), h = (0, s.A)();
+  return (0, n.jsxs)(e.W1t, {
+    "data-menu-migration-ready": true,
     navId: "clips-context",
     "aria-label": p.intl.string(p.t.J1hsY2),
     onClose: r.Z_,
-    onSelect: l,
-    children: [(0, n.jsx)(a.rXV, {
-      children: (0, n.jsx)(a.Drp, {
+    onSelect: i,
+    children: [(0, n.jsx)(e.rXV, {
+      children: (0, n.jsx)(e.Drp, {
         id: "clips-duration",
         label: p.intl.string(p.t.OgfUio),
         children: h.map(t => {
           let {
-            value: l,
-            label: e
+            value: i,
+            label: a
           } = t;
-          return (0, n.jsx)(a.iDA, {
-            id: "clips-duration-".concat(l),
+          return (0, n.jsx)(e.iDA, {
+            id: "clips-duration-".concat(i),
             group: "clips-duration",
-            label: e,
-            action: () => (0, u.h$)(l),
-            checked: l === i
-          }, l)
+            label: a,
+            action: () => (0, u.h$)(i),
+            checked: i === l
+          }, i)
         })
       })
-    }), (0, n.jsx)(a.rXV, {
-      children: (0, n.jsx)(a.Drp, {
+    }), (0, n.jsx)(e.rXV, {
+      children: (0, n.jsx)(e.Drp, {
         id: "clips-settings",
         label: p.intl.string(p.t.J1hsY2),
-        action: () => (0, c.A)(d.J.CLIPS)
+        action: () => (0, o.A)(d.J.CLIPS)
       })
     })]
   })

@@ -102,6 +102,7 @@ function I(e) {
                 onSelect: t
               } = e;
               return (0, i.jsx)(c.W1t, {
+                "data-menu-migration-ready": true,
                 "aria-label": y.intl.string(y.t["41qiDU"]),
                 navId: "manage-multi-account",
                 onClose: d.Z_,

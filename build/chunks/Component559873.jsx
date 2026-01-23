@@ -184,7 +184,9 @@ let S = {
         message: t,
         savedMessage: l
       });
-      return (0, r.jsxs)(a.W1t, v(j({}, n), {
+      return (0, r.jsxs)(a.W1t, v(j({
+        "data-menu-mixed": true
+      }, n), {
         navId: "message-reminder-create",
         "aria-label": _.intl.string(_.t.mJ3P0N),
         onClose: n.closePopout,

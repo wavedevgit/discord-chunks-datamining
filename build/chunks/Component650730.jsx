@@ -15,8 +15,9 @@ function c(n) {
   let {
     guild: t,
     onSelect: i
-  } = n, c = (0, a.A)(t), d = (0, l.A)(t.id);
+  } = n, c = (0, l.A)(t), d = (0, a.A)(t.id);
   return (0, r.jsx)(s.W1t, {
+    "data-menu-migration-ready": true,
     navId: "role-subscription-context",
     "aria-label": o.intl.string(o.t.g3KvYF),
     onClose: e.Z_,

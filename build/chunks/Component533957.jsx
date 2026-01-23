@@ -12,10 +12,10 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function u(e, t) {
-  let u = (0, c.bG)([l.A], () => l.A.can(o.xBc.MANAGE_CHANNELS, e), [e]);
+  let u = (0, c.bG)([l.A], () => l.A.can(a.xBc.MANAGE_CHANNELS, e), [e]);
   return __OVERLAY__ || !u ? null : (0, r.jsx)(i.Drp, {
     id: "clone-channel",
-    label: a.intl.string(a.t.dEaPc4),
+    label: o.intl.string(o.t.dEaPc4),
     action: () => (0, i.mMO)(async () => {
       let {
         default: c

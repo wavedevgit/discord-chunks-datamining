@@ -33,8 +33,8 @@ function x(e) {
     userId: n,
     channelId: l,
     guildId: o,
-    context: s
-  } = e, a = (0, m.A)({
+    context: a
+  } = e, s = (0, m.A)({
     userId: n,
     guildId: o,
     channelId: l,
@@ -43,9 +43,9 @@ function x(e) {
       size: "sm"
     }),
     label: y.intl.string(y.t.iXAna6)
-  }), d = (0, p.A)(n, s, i.oyn), f = (0, v.A)(n), g = (0, O.A)(n), A = (0, c.A)(n), j = (0, u.A)(n), h = (0, b.A)();
+  }), d = (0, p.A)(n, a, i.oyn), f = (0, v.A)(n), g = (0, O.A)(n), A = (0, c.A)(n), j = (0, u.A)(n), h = (0, b.A)();
   return [(0, r.jsxs)(i.rXV, {
-    children: [a, d]
+    children: [s, d]
   }), (0, r.jsxs)(i.rXV, {
     children: [f, g, A, j, t && h]
   })]
@@ -62,13 +62,13 @@ function D(e, t, n) {
       id: e.id,
       label: y.intl.string(y.t["/AXYnE"])
     }),
-    s = (0, j.A)({
+    a = (0, j.A)({
       user: e,
       guildId: n,
       channelId: t,
       location: "GuildVoiceUserContextMenu"
     }),
-    a = (0, A.A)({
+    s = (0, A.A)({
       user: e,
       guildId: n,
       channelId: t,
@@ -78,7 +78,7 @@ function D(e, t, n) {
       children: [l, o]
     });
   return [(0, r.jsxs)(i.rXV, {
-    children: [s, a]
+    children: [a, s]
   }), c]
 }
 let E = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
@@ -86,23 +86,24 @@ let E = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     user: t,
     channel: n,
     onSelect: o,
-    onInteraction: s,
-    context: a
+    onInteraction: a,
+    context: s
   } = e, c = n.id, u = t.isNonUserBot(), d = t.id === g.default.getId(), b = x({
     isOwnSettings: d,
     userId: t.id,
     channelId: c,
-    context: a
+    context: s
   }), A = D(t, c), j = (0, f.A)({
     id: t.id,
     label: y.intl.string(y.t["/AXYnE"])
   });
   return (0, r.jsx)(i.W1t, {
+    "data-menu-mixed": true,
     navId: "user-context",
     onClose: l.Z_,
     "aria-label": y.intl.string(y.t.liqwPJ),
     onSelect: o,
-    onInteraction: s,
+    onInteraction: a,
     variant: "fixed",
     children: !u && (0, r.jsxs)(r.Fragment, {
       children: [b, !d && (0, r.jsx)(i.rXV, {

@@ -1,5 +1,5 @@
 /** Chunk was on 48118 **/
-/** chunk id: 594005, original params: e,s,i (module,exports,require) **/
+/** chunk id: 594005, original params: e,i,n (module,exports,require) **/
 require.d(exports, {
   default: () => x
 });
@@ -17,20 +17,21 @@ var Chunk627968 = require("./627968.js"),
 
 function x(e) {
   let {
-    channel: s,
-    onSelect: i
-  } = e, x = (0, o.b)(s), b = (0, c.A0)(s), f = (0, h.A)(s), j = (0, r.Ay)(s), k = (0, d.A)(s), A = (0, l.os)("NotificationsInboxMessageContextMenu") && p.B4.has(s.type), C = s.isThread() ? (0, n.jsx)(t.rXV, {
+    channel: i,
+    onSelect: n
+  } = e, x = (0, o.b)(i), b = (0, d.A0)(i), f = (0, h.A)(i), g = (0, r.Ay)(i), j = (0, c.A)(i), k = (0, l.os)("NotificationsInboxMessageContextMenu") && u.B4.has(i.type), m = i.isThread() ? (0, s.jsx)(t.rXV, {
     children: f
-  }) : A ? b : (0, n.jsx)(t.rXV, {
+  }) : k ? b : (0, s.jsx)(t.rXV, {
     children: x
   });
-  return (0, n.jsxs)(t.W1t, {
+  return (0, s.jsxs)(t.W1t, {
+    "data-menu-migration-ready": true,
     navId: "notifications-inbox-message-context",
     onClose: a.Z_,
-    "aria-label": u.intl.string(u.t.Xm41aV),
-    onSelect: i,
-    children: [(0, n.jsx)(t.rXV, {
-      children: s.isThread() ? k : j
-    }), C]
+    "aria-label": p.intl.string(p.t.Xm41aV),
+    onSelect: n,
+    children: [(0, s.jsx)(t.rXV, {
+      children: i.isThread() ? j : g
+    }), m]
   })
 }

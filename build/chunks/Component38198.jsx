@@ -171,6 +171,7 @@ function L(e) {
       guild_id: t.guild_id
     })
   }, [t.guild_id, t.id]), (0, r.jsx)(o.W1t, {
+    "data-menu-mixed": true,
     onSelect: L,
     navId: "channel-attach",
     onClose: j,

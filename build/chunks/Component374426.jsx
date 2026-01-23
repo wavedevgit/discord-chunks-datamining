@@ -19,11 +19,11 @@ function b(e, t) {
       canCreateExpressions: b,
       canManageAllExpressions: p
     } = (0, c.nr)(r);
-  return null != e && b && p ? (0, n.jsx)(l.Drp, {
+  return null != e && b && p ? (0, n.jsx)(i.Drp, {
     id: s.intl.string(s.t["154/bL"]),
     label: s.intl.string(s.t["154/bL"]),
     action: () => {
-      i.A.open(e, u.BEX.SOUNDBOARD), null == t || t()
+      l.A.open(e, u.BEX.SOUNDBOARD), null == t || t()
     }
   }) : null
 }

@@ -22,6 +22,7 @@ function c(e) {
     onSelect: o
   } = e, c = (0, a.A)(n, t);
   return 0 === c.length ? null : (0, i.jsx)(r.W1t, {
+    "data-menu-mixed": true,
     navId: "guild-settings-role-context",
     "aria-label": s.intl.string(s.t["337Ja9"]),
     onClose: l.Z_,

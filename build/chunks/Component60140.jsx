@@ -110,7 +110,7 @@ let A = e => {
             pageSection: "top 4",
             categoryPosition: 0
           },
-          children: (0, r.jsx)(m.A, {
+          children: (0, r.jsx)(p.A, {
             skuId: null == e ? true : e.skuId,
             prioritizedCurrency: s === E.G2.ORBS ? _.Hi.ORBS : true,
             onClickAnalytics: (0, _.UU)(e, s, i)
@@ -127,35 +127,35 @@ let A = e => {
         isBlockLoading: d = false
       } = e,
       {
-        products: m
-      } = (t = (0, f.A)(), n = l.useMemo(() => d ? [] : t(i.rankedSkuIds), [d, t, i.rankedSkuIds]), s = (0, g.p)()(n), a = (0, p.X)(s), {
+        products: p
+      } = (t = (0, f.A)(), n = l.useMemo(() => d ? [] : t(i.rankedSkuIds), [d, t, i.rankedSkuIds]), s = (0, g.p)()(n), a = (0, m.X)(s), {
         products: (0, h.od)(a)
       }),
-      _ = l.useMemo(() => !d && 0 !== i.rankedSkuIds.length && !(m.length > 0) && i.rankedSkuIds.every(e => {
+      _ = l.useMemo(() => !d && 0 !== i.rankedSkuIds.length && !(p.length > 0) && i.rankedSkuIds.every(e => {
         var t;
         return (null == (t = u.A.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
-      }), [d, i.rankedSkuIds, m.length]),
+      }), [d, i.rankedSkuIds, p.length]),
       b = d || _;
     switch (o) {
       case "row":
         return (0, r.jsx)(A, {
           heroBlockRecord: i,
           isLoading: b,
-          products: m,
+          products: p,
           tab: c
         });
       case "feed":
         return (0, r.jsx)(x, {
           heroBlockRecord: i,
           isLoading: b,
-          products: m,
+          products: p,
           tab: c
         });
       case "hscroll":
         return (0, r.jsx)(S, {
           heroBlockRecord: i,
           isLoading: b,
-          products: m,
+          products: p,
           tab: c
         })
     }

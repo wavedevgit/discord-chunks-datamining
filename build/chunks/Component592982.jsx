@@ -39,6 +39,7 @@ function E(e) {
     type: T
   } = E, P = (0, l.bG)([u.A], () => u.A.getGuild(E.guild_id), [E.guild_id]), w = (0, l.bG)([d.A], () => d.A.getSelectedParticipant(N)), R = (null == w ? true : w.type) === O.lp.STREAM ? w.stream : null, D = (0, l.bG)([s.A], () => (null == w ? true : w.type) === O.lp.ACTIVITY ? s.A.getApplication(w.applicationId) : true), M = (0, f.A)(N), L = (0, y.A)(N), k = (0, m.A)(E, P, null == R ? true : R.ownerId, null == D ? true : D.id), G = (0, h.A)(N), U = (0, _.A)(), B = (0, c.RQ)(N), V = (0, c.dA)(N), F = (0, A.A)(R, I), H = (0, b.A)(D, N), K = (0, g.A)(), W = (0, a.A)(E), z = (0, p.f)(N);
   return (0, r.jsxs)(i.W1t, {
+    "data-menu-mixed": true,
     className: x.MK,
     onClose: t,
     onSelect: n,

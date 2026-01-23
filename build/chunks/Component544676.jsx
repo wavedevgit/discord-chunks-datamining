@@ -76,7 +76,7 @@ function w(e) {
     guild: t,
     source: x.PE1.GUILD_CONTEXT_MENU,
     channel: null
-  }), T = (0, m.A)(u), R = (0, _.A)(t), k = (0, j.A)(t), U = (0, L.A)(t), C = (0, O.A)({
+  }), T = (0, L.A)(u), R = (0, _.A)(t), k = (0, j.A)(t), U = (0, m.A)(t), C = (0, O.A)({
     guildId: t.id,
     userId: A.default.getId(),
     analyticsLocation: {
@@ -99,6 +99,7 @@ function w(e) {
     })
   }
   return t.features.has(x.GuildFeatures.HUB) ? (0, i.jsxs)(a.W1t, {
+    "data-menu-mixed": true,
     navId: "guild-context",
     onClose: o.Z_,
     "aria-label": D.intl.string(D.t.HpQykc),
@@ -127,6 +128,7 @@ function w(e) {
       children: X
     })]
   }) : (0, i.jsxs)(a.W1t, {
+    "data-menu-mixed": true,
     navId: "guild-context",
     onClose: o.Z_,
     "aria-label": D.intl.string(D.t.HpQykc),

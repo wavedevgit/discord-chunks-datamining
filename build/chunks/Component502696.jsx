@@ -33,6 +33,7 @@ function f(e) {
       games_detected: e
     })
   }), (0, r.jsxs)(i.W1t, {
+    "data-menu-mixed": true,
     navId: "now-playing-menu",
     onClose: n,
     "aria-label": g.intl.string(g.t.ogxXGq),

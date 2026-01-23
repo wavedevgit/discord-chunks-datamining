@@ -48,11 +48,11 @@ function I(e) {
   return e
 }
 
-function N() {
+function x() {
   (0, c.OoC)(A.K)
 }
 
-function x(e) {
+function N(e) {
   let {
     tooltipText: t
   } = e, n = function(e, t) {
@@ -89,7 +89,7 @@ function D() {
     zoomed: e,
     setZoomed: t
   } = (0, T.Q)();
-  return (0, l.jsx)(x, {
+  return (0, l.jsx)(N, {
     onClick: () => {
       (0, _.Yq)(e ? _.NJ.ZOOM_OUT_BUTTON_PRESSED : _.NJ.ZOOM_IN_BUTTON_PRESSED), t(!e)
     },
@@ -110,7 +110,7 @@ function R(e) {
         forwardOptions: {
           onlyEmbedIndices: [a.embedIndex]
         },
-        onRequestSent: N
+        onRequestSent: x
       });
       (0, f.fO)({
         message: o,
@@ -118,11 +118,11 @@ function R(e) {
         forwardOptions: {
           onlyAttachmentIds: [a.attachmentId]
         },
-        onRequestSent: N
+        onRequestSent: x
       })
     }
   }, [o, a]);
-  return null != o && null != a && (0, p.p)(o) ? (0, l.jsx)(x, {
+  return null != o && null != a && (0, p.p)(o) ? (0, l.jsx)(N, {
     onClick: s,
     tooltipText: v.intl.string(v.t.I3ltXO),
     icon: c.tuI
@@ -151,7 +151,7 @@ function P(e) {
       }
     }
   }
-  return (0, l.jsx)(x, {
+  return (0, l.jsx)(N, {
     onClick: p,
     tooltipText: v.intl.string("VIDEO" === t.type ? v.t.JVuuz3 : v.t["S/xNKV"]),
     loading: n,
@@ -165,7 +165,7 @@ function w(e) {
   } = e;
   if (!(0, m.fW)(t.url)) return null;
   let n = (0, m.XW)((0, m.bc)(t.original, t.url), t.contentType, t.originalContentType);
-  return (0, l.jsx)(x, {
+  return (0, l.jsx)(N, {
     onClick: () => {
       (0, _.Yq)(_.NJ.OPEN_LINK_PRESSED), (0, _.RH)(n), (0, h.h)({
         href: n
@@ -223,6 +223,7 @@ function M(e) {
     }
   }
   return (0, l.jsxs)(c.W1t, {
+    "data-menu-mixed": true,
     navId: "image-menu",
     "aria-label": "placeholder",
     onClose: a,
@@ -290,7 +291,7 @@ function G(e) {
       let {
         onClick: t
       } = e;
-      return (0, l.jsx)(x, {
+      return (0, l.jsx)(N, {
         buttonRef: o,
         tooltipText: v.intl.string(v.t["UKOtz+"]),
         onClick: () => {

@@ -1,5 +1,5 @@
 /** Chunk was on 33743 **/
-/** chunk id: 455538, original params: e,n,t (module,exports,require) **/
+/** chunk id: 455538, original params: n,e,t (module,exports,require) **/
 require.d(exports, {
   default: () => p
 });
@@ -12,30 +12,31 @@ var Chunk627968 = require("./627968.js"),
   Chunk957565 = require("./957565.js"),
   Chunk985018 = require("./985018.jsx");
 
-function p(e) {
+function p(n) {
   let {
-    imageUrl: n,
+    imageUrl: e,
     onSelect: t
-  } = e, p = r.Q_.useSetting(), {
+  } = n, p = s.Q_.useSetting(), {
     tidaWebformEnabled: d
   } = c.A.useExperiment({
     location: "RoleIconContextMenu"
   }, {
     autoTrackExposure: false
-  }), x = o.useCallback(() => {
-    (0, s.C)(n)
-  }, [n]);
-  return s.p5 && p && d ? (0, i.jsx)(l.W1t, {
+  }), x = l.useCallback(() => {
+    (0, r.C)(e)
+  }, [e]);
+  return r.p5 && p && d ? (0, i.jsx)(o.W1t, {
+    "data-menu-all-icons": true,
     navId: "role-icon-context",
     onClose: a.Z_,
     onSelect: t,
     "aria-label": u.intl.string(u.t.Zow2V5),
-    children: (0, i.jsx)(l.rXV, {
-      children: (0, i.jsx)(l.Drp, {
+    children: (0, i.jsx)(o.rXV, {
+      children: (0, i.jsx)(o.Drp, {
         id: "copy-image-link",
         label: u.intl.string(u.t["8xHmxo"]),
         action: x,
-        icon: l.qYV
+        icon: o.qYV
       })
     })
   }) : null

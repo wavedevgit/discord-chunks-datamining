@@ -1,7 +1,7 @@
 /** Chunk was on 75149 **/
 /** chunk id: 725756, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => E
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -50,19 +50,20 @@ function C(e) {
   let {
     channel: t,
     onSelect: n
-  } = e, a = (0, A.A)(t), c = (0, j.Ay)(t), s = (0, h.A)(t), y = (0, O.A)(t), f = (0, p.A)(t), g = (0, d.A)(t), P = (0, u.A)(t), w = (0, _.A)(t), C = (0, o.A)({
+  } = e, a = (0, A.A)(t), c = (0, j.Ay)(t), s = (0, h.A)(t), y = (0, O.A)(t), f = (0, p.A)(t), g = (0, d.A)(t), m = (0, u.A)(t), w = (0, P.A)(t), C = (0, o.A)({
     id: t.id,
-    label: m.intl.string(m.t["2visC6"])
-  }), E = (0, b.os)("ChannelCategoryFavoritesMenu"), x = (0, v.Ay)(t);
+    label: _.intl.string(_.t["2visC6"])
+  }), x = (0, b.os)("ChannelCategoryFavoritesMenu"), E = (0, v.Ay)(t);
   return (0, r.jsxs)(i.W1t, {
+    "data-menu-mixed": true,
     navId: "channel-context",
     onClose: l.Z_,
-    "aria-label": m.intl.string(m.t.Xm41aV),
+    "aria-label": _.intl.string(_.t.Xm41aV),
     onSelect: n,
     children: [(0, r.jsxs)(i.rXV, {
-      children: [a, P, g]
+      children: [a, m, g]
     }), (0, r.jsxs)(i.rXV, {
-      children: [c, E ? x : s]
+      children: [c, x ? E : s]
     }), (0, r.jsxs)(i.rXV, {
       children: [y, f]
     }), (0, r.jsx)(i.rXV, {
@@ -73,33 +74,34 @@ function C(e) {
   })
 }
 
-function E(e) {
+function x(e) {
   let {
     channel: t,
     guild: n,
     onSelect: a
-  } = e, c = (0, A.A)(t), s = (0, j.Ay)(t), u = (0, h.A)(t), _ = (0, O.A)(t), w = (0, p.A)(t), C = (0, g.A)(t), E = (0, d.A)(t), x = (0, y.A)(t, n), D = (0, f.A)(t), S = (0, o.A)({
+  } = e, c = (0, A.A)(t), s = (0, j.Ay)(t), u = (0, h.A)(t), P = (0, O.A)(t), w = (0, p.A)(t), C = (0, g.A)(t), x = (0, d.A)(t), E = (0, y.A)(t, n), D = (0, f.A)(t), S = (0, o.A)({
     id: t.id,
-    label: m.intl.string(m.t["2visC6"])
-  }), G = (0, P.A)(t), N = (0, b.os)("ChannelCategoryNormalMenu"), T = (0, v.Ay)(t);
+    label: _.intl.string(_.t["2visC6"])
+  }), G = (0, m.A)(t), N = (0, b.os)("ChannelCategoryNormalMenu"), T = (0, v.Ay)(t);
   return (0, r.jsxs)(i.W1t, {
+    "data-menu-mixed": true,
     navId: "channel-context",
     onClose: l.Z_,
-    "aria-label": m.intl.string(m.t.Xm41aV),
+    "aria-label": _.intl.string(_.t.Xm41aV),
     onSelect: a,
     children: [(0, r.jsx)(i.rXV, {
       children: c
     }, "mark-as-read"), (0, r.jsxs)(i.rXV, {
-      children: [G, _, w]
+      children: [G, P, w]
     }, "channel-actions"), (0, r.jsxs)(i.rXV, {
       children: [s, N ? T : u]
     }, "notifications"), (0, r.jsxs)(i.rXV, {
-      children: [C, E, x, D]
+      children: [C, x, E, D]
     }, "admin-actions"), (0, r.jsx)(i.rXV, {
       children: S
     }, "developer-actions")]
   })
 }
-let x = (0, Chunk358367.A)(function(e) {
-  return (0, s.A)() ? (0, r.jsx)(C, w({}, e)) : (0, r.jsx)(E, w({}, e))
+let E = (0, Chunk358367.A)(function(e) {
+  return (0, s.A)() ? (0, r.jsx)(C, w({}, e)) : (0, r.jsx)(x, w({}, e))
 }, [Chunk793574.A.CONTEXT_MENU, Chunk793574.A.CHANNEL_CATEGORY_MENU])

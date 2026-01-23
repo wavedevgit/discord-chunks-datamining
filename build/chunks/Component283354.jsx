@@ -40,6 +40,7 @@ function h(e) {
     (0, a.Z_)(), null == f || f()
   }
   return (0, r.jsxs)(s.W1t, {
+    "data-menu-mixed": true,
     navId: "guild-entry-context",
     onClose: O,
     "aria-label": p.intl.string(p.t.HpQykc),

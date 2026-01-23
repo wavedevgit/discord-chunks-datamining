@@ -40,8 +40,8 @@ let g = e => {
     null == n || n(e)
   }, .33, null != n), {
     bannerUrl: f,
-    bannerAnimatedUrl: p
-  } = (0, i.qY)(t), m = null != t.textColor ? {
+    bannerAnimatedUrl: m
+  } = (0, i.qY)(t), p = null != t.textColor ? {
     color: t.textColor
   } : true, _ = null != t.body && "" !== t.body, b = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
   return (0, r.jsxs)("div", {
@@ -51,7 +51,7 @@ let g = e => {
       className: u.vK,
       children: null != f && (0, r.jsx)(o.A, {
         bannerStatic: f,
-        bannerAnimated: p
+        bannerAnimated: m
       })
     }), (0, r.jsx)("div", {
       className: u.HQ,
@@ -64,15 +64,15 @@ let g = e => {
           variant: "heading-xxl/bold",
           className: u.DD,
           color: "text-strong",
-          style: d({}, m),
+          style: d({}, p),
           children: t.title
         }), _ || b ? (0, r.jsxs)(s.Text, {
           variant: "text-md/medium",
-          style: d({}, m),
+          style: d({}, p),
           children: [_ && t.body, _ && b && " ", b && (0, r.jsx)(s.MzZ, {
             href: t.helpCenterUrl,
             className: u.CU,
-            style: d({}, m),
+            style: d({}, p),
             children: c.intl.string(c.t.O7ADgv)
           })]
         }) : null]

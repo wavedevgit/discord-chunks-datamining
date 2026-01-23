@@ -23,11 +23,11 @@ let u = e => {
       hours: g,
       minutes: f
     } = (0, i.A)(n),
-    p = [(t = e => "".concat(e.toString().padStart(2, "0")))(d), t(g), t(f)].join(":");
+    m = [(t = e => "".concat(e.toString().padStart(2, "0")))(d), t(g), t(f)].join(":");
   return (0, r.jsxs)("div", {
     className: s()(c.kL, u),
     role: "timer",
-    children: [p.split("").map((e, t) => ":" === e ? (0, r.jsx)(a.Text, {
+    children: [m.split("").map((e, t) => ":" === e ? (0, r.jsx)(a.Text, {
       color: "none",
       variant: "md" === l ? "heading-lg/extrabold" : "heading-xxl/extrabold",
       className: c.eC,

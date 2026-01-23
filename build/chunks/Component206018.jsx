@@ -41,8 +41,8 @@ function C(e) {
     renderOutputDevices: E = false,
     renderOutputVolume: V = false,
     renderInputDevices: M = false,
-    renderInputVolume: U = false,
-    maybeRenderInputMeter: x = false,
+    renderInputVolume: x = false,
+    maybeRenderInputMeter: U = false,
     renderSettingsButton: N = false
   } = e, {
     analyticsLocations: L
@@ -65,17 +65,17 @@ function C(e) {
       analyticsLocations: L,
       asSubmenu: true
     }),
-    K = (0, u.bG)([d.A], () => d.A.getActiveInputProfile()),
+    K = (0, u.bG)([y.A], () => y.A.getActiveInputProfile()),
     X = (0, f.A)(L),
     H = (0, O.A)(L),
-    G = (0, y.A)(L),
+    G = (0, d.A)(L),
     J = i.x.DEFAULT,
-    Y = d.A.isSelfDeaf(J),
-    Z = (0, u.bG)([d.A], () => d.A.getMode()),
+    Y = y.A.isSelfDeaf(J),
+    Z = (0, u.bG)([y.A], () => y.A.getMode()),
     q = Z === A.TBI.VOICE_ACTIVITY ? A.TBI.PUSH_TO_TALK : A.TBI.VOICE_ACTIVITY,
-    Q = (0, u.bG)([d.A, g.Ay], () => {
+    Q = (0, u.bG)([y.A, g.Ay], () => {
       var e;
-      let t = (null == (e = d.A.getModeOptions().shortcut) ? true : e.length) > 0,
+      let t = (null == (e = y.A.getModeOptions().shortcut) ? true : e.length) > 0,
         r = null != g.Ay.getKeybindForAction(A.hCu.PUSH_TO_TALK, false, true),
         n = null != g.Ay.getKeybindForAction(A.hCu.PUSH_TO_TALK_PRIORITY, false, true);
       return t || r || n
@@ -84,6 +84,7 @@ function C(e) {
   return (0, n.jsx)(c.A, {
     object: A.ZSU.CONTEXT_MENU,
     children: (0, n.jsxs)(l.W1t, {
+      "data-menu-mixed": true,
       onSelect: C,
       onInteraction: r,
       onClose: D,
@@ -94,7 +95,7 @@ function C(e) {
       children: [(0, n.jsxs)(l.rXV, {
         children: [M && B, I && X, E && F]
       }), (0, n.jsxs)(l.rXV, {
-        children: [U && H, x && W && (0, n.jsx)(l.aK1, {
+        children: [x && H, U && W && (0, n.jsx)(l.aK1, {
           id: "input-device-meter",
           control: () => (0, n.jsx)(j.A, {
             notchBackground: j.V.BLACK,

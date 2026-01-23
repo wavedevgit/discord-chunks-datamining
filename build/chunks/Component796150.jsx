@@ -1,4 +1,4 @@
-/** Chunk was on 48666 **/
+/** Chunk was on 65076 **/
 /** chunk id: 796150, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   default: () => S
@@ -64,7 +64,7 @@ function S(e) {
       originPanel: null
     }), f.current = e)
   });
-  let m = l.useCallback(e => {
+  let h = l.useCallback(e => {
       b.A.setState({
         query: e
       })
@@ -78,8 +78,8 @@ function S(e) {
         i.A.logout("settings")
       })
     };
-    return y._.subscribe(h.jej.SETTINGS_TRIGGER_LOGOUT, e), () => {
-      y._.unsubscribe(h.jej.SETTINGS_TRIGGER_LOGOUT, e)
+    return y._.subscribe(m.jej.SETTINGS_TRIGGER_LOGOUT, e), () => {
+      y._.unsubscribe(m.jej.SETTINGS_TRIGGER_LOGOUT, e)
     }
   }, []), v) ? null : (0, n.jsx)(s.A, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -112,7 +112,7 @@ function S(e) {
     target: t,
     defaultTarget: d.X.ACCOUNT_PANEL,
     searchQuery: a,
-    onSearchChange: m
+    onSearchChange: h
   }, r))
 }
 
@@ -122,11 +122,11 @@ function P() {
     children: [(0, n.jsx)(a.Text, {
       variant: "text-sm/semibold",
       color: "text-strong",
-      children: m.intl.string(m.t.zihbmv)
+      children: h.intl.string(h.t.zihbmv)
     }), (0, n.jsx)(a.Text, {
       variant: "text-sm/normal",
       color: "text-subtle",
-      children: m.intl.string(m.t.XclvsB)
+      children: h.intl.string(h.t.XclvsB)
     })]
   })
 }

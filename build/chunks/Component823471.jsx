@@ -113,6 +113,7 @@ function P(e) {
     (0, O.iN)(t.id)
   }
   return (0, r.jsxs)(i.W1t, {
+    "data-menu-mixed": true,
     navId: "thread-context",
     onClose: n,
     "aria-label": S.intl.string(S.t["1NBjqb"]),

@@ -40,6 +40,7 @@ function b(e) {
       } = e;
       return (0, r.jsx)(c.A, {
         children: (0, r.jsx)(s.W1t, {
+          "data-menu-all-icons": true,
           navId: "exit-options",
           onSelect: () => {},
           "aria-label": m.intl.string(m.t["K6/mk3"]),

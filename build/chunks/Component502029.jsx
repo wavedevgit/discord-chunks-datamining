@@ -19,12 +19,13 @@ function o(e) {
     analyticsContext: n,
     onSelect: o
   } = e, h = (0, a.A)(t), v = (0, c.A)(t);
-  return (0, i.jsx)(d.A, {
+  return (0, i.jsx)(s.A, {
     context: n,
     object: l.ZSU.CONTEXT_MENU,
     children: (0, i.jsxs)(r.W1t, {
+      "data-menu-migration-ready": true,
       navId: "user-context",
-      onClose: s.Z_,
+      onClose: d.Z_,
       "aria-label": u.intl.string(u.t.liqwPJ),
       onSelect: o,
       children: [(0, i.jsx)(r.rXV, {

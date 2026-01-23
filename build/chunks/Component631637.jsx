@@ -17,7 +17,7 @@ var Chunk311907 = require("./311907.js"),
 function A(e) {
   let {
     channel: t
-  } = e, n = (0, i.bG)([u.default], () => u.default.getCurrentUser()), A = (0, s.P)(t), f = (0, a.y)(t), b = (0, c.Q)(t), g = (0, d.m)(t), p = (0, o.B)(t);
+  } = e, n = (0, i.bG)([c.default], () => c.default.getCurrentUser()), A = (0, s.P)(t), f = (0, a.y)(t), b = (0, u.Q)(t), g = (0, d.m)(t), p = (0, o.B)(t);
   return (null == n ? true : n.isStaff()) !== true ? null : (0, r.jsxs)(l.Drp, {
     id: "dev tools",
     label: "Dev Tools",

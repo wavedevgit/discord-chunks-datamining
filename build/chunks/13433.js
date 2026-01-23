@@ -206,26 +206,26 @@ class H extends Chunk767065.A {
           streamKey: this.streamKey
         })), e === D.S7L.RTC_CONNECTED) {
         var r, i, o, c, u, d, f, p;
-        null == (r = this._connection) || r.on(a.yq.ScreenshareFinish, (e, t, n, r, i, a, s, o, l, c, u, d, f, p) => {
-          let _ = this.analyticsContext.getStreamApplicationFromHistory(this.screenshareFinishedCount);
+        null == (r = this._connection) || r.on(a.yq.ScreenshareFinish, (e, t, n, r, i, a, s, o, l, c, u, d, f, p, _, m, g, E, y) => {
+          let b = this.analyticsContext.getStreamApplicationFromHistory(this.screenshareFinishedCount);
           this.screenshareFinishedCount++;
           let {
-            gameName: m,
-            gameId: g,
-            exe: E,
-            distributor: y
-          } = (0, h.wH)(_), b = this.getMediaSessionId(), O = this.getRTCConnectionId();
-          (0, I.w)().then(_ => {
-            let h = null;
-            if (null != _) {
+            gameName: O,
+            gameId: v,
+            exe: A,
+            distributor: T
+          } = (0, h.wH)(b), C = this.getMediaSessionId(), N = this.getRTCConnectionId();
+          (0, I.w)().then(h => {
+            let b = null;
+            if (null != h) {
               let {
                 cpu_brand: e,
                 cpu_vendor: t,
                 cpu_memory: n,
                 gpu_brand: r,
                 gpu_memory: i
-              } = _;
-              h = {
+              } = h;
+              b = {
                 cpu_brand: e,
                 cpu_vendor: t,
                 cpu_memory: n,
@@ -233,7 +233,8 @@ class H extends Chunk767065.A {
                 gpu_memory: i
               }
             }
-            let v = (null != e ? e : 0) + (null != t ? t : 0) + (null != n ? n : 0) + (null != r ? r : 0) + (null != i ? i : 0) + (null != a ? a : 0) + (null != c ? c : 0) + (null != p ? p : 0) + (null != f ? f : 0);
+            let I = (null != e ? e : 0) + (null != t ? t : 0) + (null != n ? n : 0) + (null != r ? r : 0) + (null != i ? i : 0) + (null != a ? a : 0) + (null != _ ? _ : 0) + (null != y ? y : 0) + (null != E ? E : 0),
+              R = (null != c ? c : 0) + (null != u ? u : 0) + (null != d ? d : 0) + (null != f ? f : 0) + (null != p ? p : 0);
             S.default.track(D.HAw.SCREENSHARE_FINISHED, j({
               screenshare_frames: e,
               videohook_frames: t,
@@ -244,23 +245,29 @@ class H extends Chunk767065.A {
               hybrid_capture_method_switches: s,
               hybrid_gdi_bitblt_frames: o,
               hybrid_gdi_printwindow_frames: l,
-              quartz_frames: c,
-              screencapturekit_frames: p,
-              go_live_camera_frames: f,
-              total_frames: v,
-              desktop_capturer_type: u,
-              media_session_id: b,
-              rtc_connection_id: O,
+              hybrid_graphics_capture_frames_unique: c,
+              hybrid_dxgi_frames_unique: u,
+              hybrid_videohook_frames_unique: d,
+              hybrid_gdi_bitblt_frames_unique: f,
+              hybrid_gdi_printwindow_frames_unique: p,
+              quartz_frames: _,
+              screencapturekit_frames: y,
+              go_live_camera_frames: E,
+              total_frames: I,
+              total_frames_unique: R,
+              desktop_capturer_type: m,
+              media_session_id: C,
+              rtc_connection_id: N,
               context: x.x.STREAM,
-              activity: d,
+              activity: g,
               soundshare_session: this.soundshareStats.getStats().soundshare_last_session,
               picker_type_used: null != this.analyticsContext.nativePickerStyleUsed ? "native" : "internal",
               duration: this.analyticsContext.getDuration(),
-              share_game_name: m,
-              share_game_id: g,
-              share_game_exe: E,
-              share_game_distributor: y
-            }, h))
+              share_game_name: O,
+              share_game_id: v,
+              share_game_exe: A,
+              share_game_distributor: T
+            }, b))
           })
         }), null == (i = this._connection) || i.on(a.yq.SoundshareAttached, () => {
           let e = b.A.getGoLiveSource();

@@ -32,6 +32,7 @@ function f(e) {
         closePopout: t
       } = e;
       return (0, r.jsx)(o.W1t, {
+        "data-menu-mixed": true,
         navId: "user-profile-widget-context-menu",
         onClose: () => {
           (0, s.Z_)(), t()

@@ -20,6 +20,7 @@ let p = function(e) {
     onSelect: d
   } = e, O = null != (t = null == p ? true : p.id) ? t : s.dJq, y = (0, c.bG)([a.A], () => null != p && a.A.canManageUser(s.xBc.BAN_MEMBERS, u, p), [p, u]);
   return (0, n.jsx)(o.W1t, {
+    "data-menu-all-icons": true,
     navId: "member-application-context-menu",
     onClose: i.Z_,
     "aria-label": b.intl.string(b.t.liqwPJ),

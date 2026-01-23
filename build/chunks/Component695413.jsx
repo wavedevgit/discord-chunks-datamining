@@ -47,7 +47,7 @@ let v = e => {
   return (0, r.jsx)(a.A, {
     gap: "xl",
     children: I ? (0, r.jsx)(r.Fragment, {
-      children: [true, true, true, true, true].map((e, t) => (0, r.jsx)(m.A, {}, t))
+      children: [true, true, true, true, true].map((e, t) => (0, r.jsx)(p.A, {}, t))
     }) : (0, r.jsxs)(r.Fragment, {
       children: [N && k && (0, r.jsx)(i.R9, {
         newValue: {
@@ -69,8 +69,8 @@ let v = e => {
           },
           children: (0, r.jsx)(f.A, {
             skuId: null == e ? true : e.skuId,
-            prioritizedCurrency: S === E.G2.ORBS ? p.Hi.ORBS : true,
-            onClickAnalytics: (0, p.UU)(e, S, O)
+            prioritizedCurrency: S === E.G2.ORBS ? m.Hi.ORBS : true,
+            onClickAnalytics: (0, m.UU)(e, S, O)
           }, e.skuId)
         }, null == e ? true : e.skuId)
       })]
