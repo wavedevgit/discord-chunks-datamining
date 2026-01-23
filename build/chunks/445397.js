@@ -14,5 +14,5 @@ let i = {
   2: "installation"
 };
 var a = function(e) {
-  return e[e.IsOverride = 1] = "IsOverride", e[e.ExposureTrackingEnabled = 2] = "ExposureTrackingEnabled", e[e.DependentExperiment = 4] = "DependentExperiment", e
+  return e[e.IsOverride = 1] = "IsOverride", e[e.ExposureTrackingEnabled = 2] = "ExposureTrackingEnabled", e[e.DependentExperiment = 4] = "DependentExperiment", e[e.UseAsEligibility = 8] = "UseAsEligibility", e
 }({})
